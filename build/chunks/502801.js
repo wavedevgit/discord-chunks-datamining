@@ -2,14 +2,14 @@
 t.d(e, {
   default: () => M
 }), t(653041), t(230036), t(47120);
-var i = t(200651),
-  l = t(192379),
+var l = t(200651),
+  i = t(192379),
   r = t(120356),
   E = t.n(r),
   a = t(442837),
   d = t(952265),
-  o = t(481060),
-  _ = t(493683),
+  _ = t(481060),
+  o = t(493683),
   u = t(700582),
   s = t(100527),
   c = t(906732),
@@ -30,29 +30,29 @@ var i = t(200651),
   G = t(407316),
   O = t(937784),
   m = t(388032),
-  v = t(609008),
-  Z = t(138715),
-  H = t(979770);
+  Z = t(417254),
+  H = t(138715),
+  x = t(979770);
 
-function x(n) {
+function p(n) {
   let {
     channel: e,
     ChannelIcon: t,
-    selected: l,
+    selected: i,
     onClick: r
   } = n, E = (0, C.ZP)(e);
-  return (0, i.jsxs)(o.P3F, {
-    className: v.channelRow,
+  return (0, l.jsxs)(_.P3F, {
+    className: Z.channelRow,
     onClick: () => r(e.id),
-    children: [l ? (0, i.jsx)(f.Z, {
-      className: v.radioIcon
-    }) : (0, i.jsx)(R.Z, {
-      className: v.radioIcon
-    }), (0, i.jsx)(t, {
-      className: v.icon,
+    children: [i ? (0, l.jsx)(f.Z, {
+      className: Z.radioIcon
+    }) : (0, l.jsx)(R.Z, {
+      className: Z.radioIcon
+    }), (0, l.jsx)(t, {
+      className: Z.icon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(o.Text, {
+    }), (0, l.jsx)(_.Text, {
       variant: "text-md/medium",
       color: "interactive-active",
       children: E
@@ -60,39 +60,39 @@ function x(n) {
   })
 }
 
-function p(n) {
+function v(n) {
   let {
     guildId: e,
     selectedChannelId: t,
     onSelectChannelId: r
   } = n, d = (0, a.e7)([h.Z], () => h.Z.getChannelId()), {
-    guildChannels: _
-  } = (0, a.cj)([T.Z], () => T.Z.getGuildWithoutChangingGuildActionRows(e)), u = l.useMemo(() => {
+    guildChannels: o
+  } = (0, a.cj)([T.Z], () => T.Z.getGuildWithoutChangingGuildActionRows(e)), u = i.useMemo(() => {
     let n = [];
-    return _.forEachChannel(e => {
+    return o.forEachChannel(e => {
       !1 !== (0, G.W)(e.id) && ((0, N.r8)(e.type) || (0, N.bw)(e.type)) && n.push(e)
     }), n.sort((n, e) => n.id === d ? -1 : +(e.id === d))
-  }, [_, d]);
-  return 0 === u.length ? null : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)("div", {
-      className: E()(v.divider, v.bottomDivider)
-    }), (0, i.jsx)(o.Text, {
+  }, [o, d]);
+  return 0 === u.length ? null : (0, l.jsxs)(l.Fragment, {
+    children: [(0, l.jsx)("div", {
+      className: E()(Z.divider, Z.bottomDivider)
+    }), (0, l.jsx)(_.Text, {
       variant: "eyebrow",
       color: "interactive-normal",
-      className: v.contentPadding,
+      className: Z.contentPadding,
       children: m.NW.string(m.t.SOtDeX)
-    }), (0, i.jsx)(o.aVo, {
+    }), (0, l.jsx)(_.aVo, {
       sections: [u.length],
       sectionHeight: 0,
       renderRow: n => {
         let {
           section: e,
-          row: l
+          row: i
         } = n;
         if (e > 0) return null;
-        let E = u[l],
+        let E = u[i],
           a = (0, A.KS)(E);
-        return null == a ? null : (0, i.jsx)(x, {
+        return null == a ? null : (0, l.jsx)(p, {
           channel: E,
           ChannelIcon: a,
           selected: t === E.id,
@@ -101,7 +101,7 @@ function p(n) {
       },
       rowHeight: (n, e) => n > 0 ? 0 : 56 * (null != u[e]),
       renderSection: () => null,
-      className: E()(v.channelList, v.contentPadding),
+      className: E()(Z.channelList, Z.contentPadding),
       fade: !0
     })]
   })
@@ -113,20 +113,20 @@ function b(n) {
     searchQuery: t,
     disabled: r,
     onShareClip: d
-  } = n, _ = l.useMemo(() => 0 === t.length ? e : e.filter(n => n.username.toLowerCase().includes(t.toLowerCase())), [e, t]), s = (0, a.e7)([L.Z], () => L.Z.theme);
-  return 0 === _.length ? (0, i.jsxs)(o.ubH, {
+  } = n, o = i.useMemo(() => 0 === t.length ? e : e.filter(n => n.username.toLowerCase().includes(t.toLowerCase())), [e, t]), s = (0, a.e7)([L.Z], () => L.Z.theme);
+  return 0 === o.length ? (0, l.jsxs)(_.ubH, {
     theme: s,
-    className: v.emptyStateContainer,
-    children: [(0, i.jsx)(o.oxh, {
+    className: Z.emptyStateContainer,
+    children: [(0, l.jsx)(_.oxh, {
       width: 415,
       height: 75,
-      lightSrc: H,
-      darkSrc: Z
-    }), (0, i.jsx)(o.OZU, {
+      lightSrc: x,
+      darkSrc: H
+    }), (0, l.jsx)(_.OZU, {
       note: m.NW.string(m.t["+Zg0lZ"])
     })]
-  }) : (0, i.jsx)(o.aVo, {
-    sections: [_.length],
+  }) : (0, l.jsx)(_.aVo, {
+    sections: [o.length],
     sectionHeight: 0,
     renderRow: n => {
       let {
@@ -134,33 +134,33 @@ function b(n) {
         row: t
       } = n;
       if (e > 0) return null;
-      let l = _[t],
-        E = _[t].username;
-      return (0, i.jsxs)("div", {
-        className: v.userRow,
-        children: [(0, i.jsx)(u.Z, {
-          user: l
-        }), (0, i.jsx)(o.Text, {
-          className: v.username,
+      let i = o[t],
+        E = o[t].username;
+      return (0, l.jsxs)("div", {
+        className: Z.userRow,
+        children: [(0, l.jsx)(u.Z, {
+          user: i
+        }), (0, l.jsx)(_.Text, {
+          className: Z.username,
           variant: "text-md/normal",
           children: E
-        }), (0, i.jsx)(o.zxk, {
+        }), (0, l.jsx)(_.zxk, {
           disabled: r,
-          onClick: () => d(l.id),
-          className: v.__invalid_friendShareButton,
-          look: o.iLD.OUTLINED,
-          size: o.PhG.SMALL,
-          color: o.Ttl.BRAND,
-          children: (0, i.jsx)(o.Text, {
+          onClick: () => d(i.id),
+          className: Z.__invalid_friendShareButton,
+          look: _.iLD.OUTLINED,
+          size: _.PhG.SMALL,
+          color: _.Ttl.BRAND,
+          children: (0, l.jsx)(_.Text, {
             variant: "text-sm/medium",
             children: m.NW.string(m.t.RDE0SU)
           })
         })]
-      }, l.id)
+      }, i.id)
     },
-    rowHeight: (n, e) => n > 0 ? 0 : 52 * (null != _[e]),
+    rowHeight: (n, e) => n > 0 ? 0 : 52 * (null != o[e]),
     renderSection: () => null,
-    className: E()(v.friendsList, v.contentPadding),
+    className: E()(Z.friendsList, Z.contentPadding),
     fade: !0
   })
 }
@@ -171,76 +171,76 @@ function M(n) {
     editMetadata: t,
     transitionState: r,
     onClose: u
-  } = n, [C, A] = l.useState(""), [T, L] = l.useState(!1), [N, h] = l.useState(null), R = (0, a.Wu)([D.Z], () => D.Z.getFriendIDs()), f = (0, a.Wu)([I.Z, P.default], () => R.map(n => P.default.getUser(n)).filter(g.lm).sort((n, e) => {
-    var t, i, l, r;
-    return (null !== (l = null === (t = I.Z.getUserAffinity(e.id)) || void 0 === t ? void 0 : t.affinity) && void 0 !== l ? l : 0) - (null !== (r = null === (i = I.Z.getUserAffinity(n.id)) || void 0 === i ? void 0 : i.affinity) && void 0 !== r ? r : 0)
+  } = n, [C, A] = i.useState(""), [T, L] = i.useState(!1), [N, h] = i.useState(null), R = (0, a.Wu)([D.Z], () => D.Z.getFriendIDs()), f = (0, a.Wu)([I.Z, P.default], () => R.map(n => P.default.getUser(n)).filter(g.lm).sort((n, e) => {
+    var t, l, i, r;
+    return (null != (i = null == (t = I.Z.getUserAffinity(e.id)) ? void 0 : t.affinity) ? i : 0) - (null != (r = null == (l = I.Z.getUserAffinity(n.id)) ? void 0 : l.affinity) ? r : 0)
   }), [R]), G = (0, a.e7)([U.Z], () => U.Z.getGuildId()), {
-    analyticsLocations: Z
+    analyticsLocations: H
   } = (0, c.ZP)(s.Z.CLIPS_SHARE_MODAL);
-  async function H(n) {
-    let i = null != n ? n : N;
-    if (null != i) {
+  async function x(n) {
+    let l = null != n ? n : N;
+    if (null != l) {
       L(!0);
       try {
         await (0, O.e)(e, {
-          channelId: i,
+          channelId: l,
           editMetadata: t,
-          analyticsLocations: Z
-        }), null == n && (0, S.Kh)(i), d.pT()
+          analyticsLocations: H
+        }), null == n && (0, S.Kh)(l), d.pT()
       } catch (n) {} finally {
         L(!1)
       }
     }
   }
-  async function x(n) {
-    let e = await _.Z.openPrivateChannel(n);
-    await H(e)
+  async function p(n) {
+    let e = await o.Z.openPrivateChannel(n);
+    await x(e)
   }
-  return (0, i.jsxs)(o.Y0X, {
-    size: o.CgR.SMALL,
+  return (0, l.jsxs)(_.Y0X, {
+    size: _.CgR.SMALL,
     transitionState: r,
-    children: [(0, i.jsx)(o.X6q, {
-      className: E()(v.title, v.contentPadding),
+    children: [(0, l.jsx)(_.X6q, {
+      className: E()(Z.title, Z.contentPadding),
       variant: "heading-lg/semibold",
       color: "interactive-active",
       children: m.NW.string(m.t["6EcIlJ"])
-    }), (0, i.jsx)(o.Text, {
+    }), (0, l.jsx)(_.Text, {
       variant: "text-md/normal",
       color: "text-normal",
-      className: E()(v.subtitle, v.contentPadding),
+      className: E()(Z.subtitle, Z.contentPadding),
       children: m.NW.string(m.t.Ey7mOT)
-    }), (0, i.jsx)(o.E1j, {
-      className: v.searchBar,
+    }), (0, l.jsx)(_.E1j, {
+      className: Z.searchBar,
       query: C,
       onChange: A,
-      size: o.E1j.Sizes.MEDIUM,
+      size: _.E1j.Sizes.MEDIUM,
       onClear: function() {
         A("")
       },
       placeholder: m.NW.string(m.t.CmSHY2)
-    }), (0, i.jsx)("div", {
-      className: E()(v.divider, v.topDivider)
-    }), (0, i.jsx)(b, {
+    }), (0, l.jsx)("div", {
+      className: E()(Z.divider, Z.topDivider)
+    }), (0, l.jsx)(b, {
       searchQuery: C,
       friends: f,
-      onShareClip: x,
+      onShareClip: p,
       disabled: T
-    }), null != G && (0, i.jsx)(p, {
+    }), null != G && (0, l.jsx)(v, {
       guildId: G,
       selectedChannelId: N,
       onSelectChannelId: h
-    }), (0, i.jsxs)(o.mzw, {
-      children: [(0, i.jsx)(o.zxk, {
+    }), (0, l.jsxs)(_.mzw, {
+      children: [(0, l.jsx)(_.zxk, {
         disabled: null == N,
         submitting: T,
-        color: o.zxk.Colors.BRAND,
-        onClick: () => H(),
+        color: _.zxk.Colors.BRAND,
+        onClick: () => x(),
         children: m.NW.string(m.t.I8lglZ)
-      }), (0, i.jsx)(o.zxk, {
+      }), (0, l.jsx)(_.zxk, {
         submitting: T,
-        look: o.iLD.LINK,
+        look: _.iLD.LINK,
         onClick: u,
-        color: o.Ttl.PRIMARY,
+        color: _.Ttl.PRIMARY,
         children: m.NW.string(m.t["13/7kZ"])
       })]
     })]

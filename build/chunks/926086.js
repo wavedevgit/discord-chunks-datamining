@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => m
 }), n(47120), n(411104);
@@ -12,7 +12,7 @@ var i = n(200651),
   u = n(481060),
   d = n(667142),
   p = n(333031),
-  h = n(492255);
+  h = n(86654);
 let f = {
   mass: 1,
   tension: 600,
@@ -24,7 +24,7 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [v, y] = r.useState(0), O = r.useRef(0), [b, _] = r.useState(0), {
+  } = e, [o, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [b, _] = r.useState(0), {
     timeToLiveMs: E,
     reappearTimeMs: x
   } = d.ZP.useState(e => ({
@@ -36,9 +36,9 @@ function m(e) {
   }, j = r.useRef(I);
   r.useEffect(() => {
     j.current = I
-  }), r.useEffect(() => (O.current = setInterval(() => {
+  }), r.useEffect(() => (v.current = setInterval(() => {
     let e = Date.now();
-    g(e), y(t => {
+    g(e), O(t => {
       if (0 === t) return e;
       let n = e - t,
         i = j.current.timeToLiveMs,
@@ -46,13 +46,13 @@ function m(e) {
       return n > i ? t + r : t
     })
   }, 100), () => {
-    clearInterval(O.current)
+    clearInterval(v.current)
   }), []);
   let C = () => {
       a(Date.now()), _(e => e + 1)
     },
     S = o > 0 && m - o < 1e3,
-    N = (0, u.Yzy)(v > 0 && v < m && m - v < E, {
+    N = (0, u.Yzy)(y > 0 && y < m && m - y < E, {
       from: {
         opacity: 0
       },

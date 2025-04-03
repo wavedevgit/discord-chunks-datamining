@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => g,
   s: () => f
 }), n(47120);
-var i, o = n(200651),
-  r = n(192379),
+var i, r = n(200651),
+  o = n(192379),
   a = n(442837),
   s = n(481060),
   l = n(749210),
@@ -13,7 +13,7 @@ var i, o = n(200651),
   d = n(41776),
   h = n(981631),
   p = n(388032),
-  m = n(425550),
+  m = n(695256),
   f = ((i = {})[i.CHAT = 0] = "CHAT", i[i.REACTIONS = 1] = "REACTIONS", i);
 let g = e => {
   let {
@@ -21,10 +21,10 @@ let g = e => {
     guild: i,
     closePopout: f,
     ctaRef: g
-  } = e, b = (0, c.Dt)(), [v, j] = r.useState(!1), O = (0, a.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
-  r.useEffect(() => {
-    v && !O && f()
-  }, [v, O, f]);
+  } = e, b = (0, c.Dt)(), [j, v] = o.useState(!1), O = (0, a.e7)([d.Z], () => d.Z.isLurking(i.id), [i.id]);
+  o.useEffect(() => {
+    j && !O && f()
+  }, [j, O, f]);
   let y = null,
     T = p.NW.string(p.t.d7b1p6);
   switch (t) {
@@ -39,40 +39,40 @@ let g = e => {
   }
   if (null == y) return null;
   let x = async () => {
-    j(!0);
+    v(!0);
     try {
       await l.Z.joinGuild(i.id, {
         source: h.vtS.CHAT_INPUT_BLOCKER
       }), f()
     } catch (e) {
-      j(!1)
+      v(!1)
     }
   };
-  return (0, o.jsxs)(s.VqE, {
+  return (0, r.jsxs)(s.VqE, {
     className: m.container,
     "aria-labelledby": b,
-    children: [(0, o.jsx)("img", {
+    children: [(0, r.jsx)("img", {
       alt: "",
       className: m.image,
       src: n(64395)
-    }), (0, o.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: m.content,
-      children: [(0, o.jsx)(s.X6q, {
+      children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
         id: b,
         children: y
-      }), (0, o.jsx)(s.Text, {
+      }), (0, r.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         children: T
-      }), (0, o.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: m.buttonContainer,
-        children: [(0, o.jsx)(s.zxk, {
+        children: [(0, r.jsx)(s.zxk, {
           buttonRef: g,
           onClick: x,
-          submitting: v,
+          submitting: j,
           children: p.NW.string(p.t["9VLmlZ"])
-        }), (0, o.jsx)(s.zxk, {
+        }), (0, r.jsx)(s.zxk, {
           onClick: f,
           look: s.zxk.Looks.BLANK,
           className: m.cancel,

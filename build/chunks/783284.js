@@ -1,17 +1,21 @@
 /** Chunk was on 43353 **/
-function e(i, n) {
+function t(i, n) {
   if (void 0 !== i.one && 1 === n) return i.one;
-  var t = n % 10,
-    e = n % 100;
-  return 1 === t && 11 !== e ? i.singularNominative.replace("{{count}}", String(n)) : t >= 2 && t <= 4 && (e < 10 || e > 20) ? i.singularGenitive.replace("{{count}}", String(n)) : i.pluralGenitive.replace("{{count}}", String(n))
+  var e = n % 10,
+    t = n % 100;
+  return 1 === e && 11 !== t ? i.singularNominative.replace("{{count}}", String(n)) : e >= 2 && e <= 4 && (t < 10 || t > 20) ? i.singularGenitive.replace("{{count}}", String(n)) : i.pluralGenitive.replace("{{count}}", String(n))
 }
 
 function a(i) {
-  return function(n, t) {
-    return t && t.addSuffix ? t.comparison && t.comparison > 0 ? i.future ? e(i.future, n) : "за " + e(i.regular, n) : i.past ? e(i.past, n) : e(i.regular, n) + " тому" : e(i.regular, n)
+  return function(n, e) {
+    if (!e || !e.addSuffix) return t(i.regular, n);
+    if (e.comparison && e.comparison > 0)
+      if (i.future) return t(i.future, n);
+      else return "за " + t(i.regular, n);
+    return i.past ? t(i.past, n) : t(i.regular, n) + " тому"
   }
 }
-t.d(n, {
+e.d(n, {
   Z: () => u
 });
 var r = {
@@ -47,7 +51,10 @@ var r = {
     }
   }),
   halfAMinute: function(i, n) {
-    return n && n.addSuffix ? n.comparison && n.comparison > 0 ? "за півхвилини" : "півхвилини тому" : "півхвилини"
+    if (n && n.addSuffix)
+      if (n.comparison && n.comparison > 0) return "за півхвилини";
+      else return "півхвилини тому";
+    return "півхвилини"
   },
   lessThanXMinutes: a({
     regular: {
@@ -188,6 +195,6 @@ var r = {
     }
   })
 };
-let u = function(i, n, t) {
-  return t = t || {}, r[i](n, t)
+let u = function(i, n, e) {
+  return e = e || {}, r[i](n, e)
 }

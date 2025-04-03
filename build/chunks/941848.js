@@ -7,7 +7,7 @@ var n = a(200651),
   s = a(481060),
   i = a(458044),
   o = a(388032),
-  c = a(953362);
+  c = a(895080);
 
 function l(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -247,7 +247,7 @@ function N(e) {
     o(0)
   }, [t]), r.useEffect(() => {
     var e;
-    0 === a && (null == g ? void 0 : null === (e = g.current) || void 0 === e ? void 0 : e.clientHeight) != null && o(g.current.clientHeight - 40)
+    0 === a && (null == g || null == (e = g.current) ? void 0 : e.clientHeight) != null && o(g.current.clientHeight - 40)
   }, [a]), (0, n.jsxs)("div", {
     className: c.container,
     role: "image",

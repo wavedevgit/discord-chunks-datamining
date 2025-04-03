@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   i: () => e0
 }), n(653041), n(47120);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(990547),
   s = n(704215),
   a = n(692547),
-  o = n(481060),
-  l = n(570140),
+  l = n(481060),
+  o = n(570140),
   c = n(893776),
   d = n(37234),
   u = n(809206),
@@ -25,8 +25,8 @@ var i = n(990547),
   j = n(377171),
   O = n(540059),
   C = n(621628),
-  v = n(243778),
-  S = n(18438),
+  S = n(243778),
+  v = n(18438),
   T = n(778825),
   I = n(665166),
   y = n(442933),
@@ -61,8 +61,8 @@ var i = n(990547),
   ei = n(799071),
   es = n(601433),
   ea = n(154022),
-  eo = n(393681),
-  el = n(309739),
+  el = n(393681),
+  eo = n(309739),
   ec = n(64914),
   ed = n(501348),
   eu = n(795594),
@@ -79,8 +79,8 @@ var i = n(990547),
   ej = n(389650),
   eO = n(649157),
   eC = n(593648),
-  ev = n(327885),
-  eS = n(595242),
+  eS = n(327885),
+  ev = n(595242),
   eT = n(463153),
   eI = n(36192),
   ey = n(889029),
@@ -101,9 +101,9 @@ var i = n(990547),
   eF = n(46140),
   eH = n(65154),
   ez = n(388032),
-  eY = n(884479),
-  eK = n(378392),
-  eq = n(710105);
+  eY = n(622802),
+  eK = n(332495),
+  eq = n(539452);
 let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BADGE],
   eJ = () => {
     let e = [];
@@ -115,14 +115,14 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
   },
   eQ = () => {
     let e = eJ(),
-      [t] = (0, v.US)(e);
+      [t] = (0, S.US)(e);
     return t === s.z.NAMEPLATE_USER_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(P.Z, {}) : t === s.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE ? (0, r.jsx)(U.Z, {}) : null
   },
   e$ = eD.Z,
   e0 = e => {
     let {
       unseenGiftCount: t,
-      showPrepaidPaymentPastDueWarning: v,
+      showPrepaidPaymentPastDueWarning: S,
       impressionSource: y,
       numOfPendingFamilyRequests: P,
       isOverlaySupported: M,
@@ -144,8 +144,8 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       hypeSquadRemoved: ti,
       hasIgnoredUsers: ts,
       hasBlockedUsers: ta,
-      isAllowGameFriendDMsVisible: to,
-      useRefreshedVoiceAndVideo: tl,
+      isAllowGameFriendDMsVisible: tl,
+      useRefreshedVoiceAndVideo: to,
       isEligibleForSensitiveContentDefaults: tc
     } = e;
     return Object.freeze({
@@ -163,7 +163,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [ez.NW.string(ez.t["JAIM/v"])],
         label: ez.NW.string(ez.t["JAIM/v"]),
         ariaLabel: ez.NW.string(ez.t["JAIM/v"]),
-        element: eo.Z,
+        element: el.Z,
         url: eG.Z5c.SETTINGS("account")
       },
       [eV.s6.ACCOUNT_PROFILE]: {
@@ -301,8 +301,8 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
           element: w.Z
         },
         onSettingsClose: () => {
-          l.Z.wait(() => {
-            (0, S.It)(), (0, u.P6)(), m.Z.clearSubsection(eG.oAB.PROFILE_CUSTOMIZATION)
+          o.Z.wait(() => {
+            (0, v.It)(), (0, u.P6)(), m.Z.clearSubsection(eG.oAB.PROFILE_CUSTOMIZATION)
           })
         },
         url: eG.Z5c.SETTINGS("profile-customization")
@@ -368,7 +368,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [ez.NW.string(ez.t.oPyABA)],
         parent: eV.s6.CONTENT_SOCIAL,
-        predicate: () => to
+        predicate: () => tl
       },
       [eV.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS]: {
         section: eG.oAB.CONTENT_AND_SOCIAL,
@@ -379,7 +379,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.CONTENT_AND_SOCIAL,
         searchableTitles: [ez.NW.string(ez.t["/U8Iwc"])],
         parent: eV.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
-        predicate: () => to
+        predicate: () => tl
       },
       [eV.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY]: {
         section: eG.oAB.CONTENT_AND_SOCIAL,
@@ -486,7 +486,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         ariaLabel: ez.NW.string(eK.Z.gntCQU),
         element: eN.Z,
         badgeCount: P,
-        newIndicator: (0, r.jsx)(o.IGR, {
+        newIndicator: (0, r.jsx)(l.IGR, {
           text: ez.NW.string(ez.t.y2b7CA),
           color: j.Z.BG_BRAND
         }),
@@ -588,7 +588,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.GUILD_BOOSTING,
         searchableTitles: [ez.NW.string(ez.t["+CbP2t"])],
         label: ez.NW.string(ez.t["+CbP2t"]),
-        element: eS.Z
+        element: ev.Z
       },
       [eV.s6.SUBSCRIPTIONS]: {
         section: eG.oAB.SUBSCRIPTIONS,
@@ -596,7 +596,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [ez.NW.string(ez.t.trSpHR)],
         label: ez.NW.string(ez.t.trSpHR),
         element: Z.Z,
-        icon: v ? (0, r.jsx)(o.P4T, {
+        icon: S ? (0, r.jsx)(l.P4T, {
           size: "xs",
           color: a.Z.unsafe_rawColors.YELLOW_300.css
         }) : null
@@ -667,7 +667,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         label: ez.NW.string(ez.t["iHH+k5"]),
         ariaLabel: ez.NW.string(ez.t["iHH+k5"]),
         element: ed.Z,
-        newIndicator: (0, r.jsx)(o.lBU, {
+        newIndicator: (0, r.jsx)(l.lBU, {
           text: ez.NW.string(ez.t.y2b7CA)
         }),
         newIndicatorDismissibleContentTypes: eX(),
@@ -697,7 +697,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.APPEARANCE,
         searchableTitles: ["List Spacing"],
         parent: eV.s6.APPEARANCE,
-        newIndicator: (0, r.jsx)(o.IGR, {
+        newIndicator: (0, r.jsx)(l.IGR, {
           text: ez.NW.string(ez.t.y2b7CA),
           color: j.Z.BG_BRAND
         }),
@@ -849,36 +849,36 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.K3lovL), ez.NW.string(ez.t.NiTd0d)],
         parent: eV.s6.VOICE_AND_VIDEO,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_VIDEO_TAB]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.FlNoSU)],
         parent: eV.s6.VOICE_AND_VIDEO,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.ABjMWF)],
         parent: eV.s6.VOICE_AND_VIDEO,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_DEBUG_TAB]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.OFpL3d)],
         parent: eV.s6.VOICE_AND_VIDEO,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.KDdjoq), ez.NW.string(ez.t.FeUKeH)],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_VOICE]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.K3lovL), ez.NW.string(ez.t.NiTd0d)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_TAB : eV.s6.VOICE_AND_VIDEO
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_TAB : eV.s6.VOICE_AND_VIDEO
       },
       [eV.s6.VOICE_AND_VIDEO_DEVICES]: {
         section: eG.oAB.VOICE,
@@ -909,12 +909,12 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.e7LIiY)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO
       },
       [eV.s6.VOICE_AND_VIDEO_SOUNDS]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.nzUc3N)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB : eV.s6.VOICE_AND_VIDEO
+        parent: to ? eV.s6.VOICE_AND_VIDEO_SOUNDBOARD_TAB : eV.s6.VOICE_AND_VIDEO
       },
       [eV.s6.VOICE_AND_VIDEO_SOUNDBOARD]: {
         section: eG.oAB.VOICE,
@@ -929,7 +929,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_VIDEO]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.LKzQSE)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VIDEO_TAB : eV.s6.VOICE_AND_VIDEO
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VIDEO_TAB : eV.s6.VOICE_AND_VIDEO
       },
       [eV.s6.VOICE_AND_VIDEO_VIDEO_CAMERA]: {
         section: eG.oAB.VOICE,
@@ -957,24 +957,24 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t["8/udY2"])],
         parent: eV.s6.VOICE_AND_VIDEO_VIDEO_TAB,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t["8/udY2"])],
         parent: eV.s6.VOICE_AND_VIDEO_VOICE_TAB,
-        predicate: () => tl
+        predicate: () => to
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_AUDIO]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.DSGme3)],
         parent: eV.s6.VOICE_AND_VIDEO_ADVANCED,
-        predicate: () => !tl
+        predicate: () => !to
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.Tceiq6)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264]: {
         section: eG.oAB.VOICE,
@@ -1006,12 +1006,12 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t["/jwMtr"])],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
       },
       [eV.s6.VOICE_AND_VIDEO_STREAM_PREVIEWS]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.OBwCXF)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION]: {
         section: eG.oAB.VOICE,
@@ -1034,25 +1034,25 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_QOS]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.uancuL)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => H.Z.supports(eH.AN.QOS)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.oSdBvb)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => H.Z.supports(eH.AN.ATTENUATION)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SUBSYSTEM]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.wVBHr6)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => H.Z.supports(eH.AN.LEGACY_AUDIO_SUBSYSTEM) || H.Z.supports(eH.AN.EXPERIMENTAL_AUDIO_SUBSYSTEM)
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.KDdjoq), ez.NW.string(ez.t.NMCIf3), ez.NW.string(ez.t.FeUKeH)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VIDEO_STREAMING : eV.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => H.Z.supportsVideoHook() || H.Z.supportsExperimentalSoundshare() || H.Z.supportsSystemScreensharePicker() && (0, X.isMac)()
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK]: {
@@ -1076,13 +1076,13 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_SILENCE_WARNING]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t["aP1N/v"])],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
+        parent: to ? eV.s6.VOICE_AND_VIDEO_VOICE_ADVANCED : eV.s6.VOICE_AND_VIDEO_ADVANCED,
         predicate: () => X.isPlatformEmbedded
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t.OFpL3d)],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_DEBUG_TAB : eV.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: to ? eV.s6.VOICE_AND_VIDEO_DEBUG_TAB : eV.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY]: {
         section: eG.oAB.VOICE,
@@ -1111,7 +1111,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS]: {
         section: eG.oAB.VOICE,
         searchableTitles: [ez.NW.string(ez.t["/RXu6+"])],
-        parent: tl ? eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING : eV.s6.VOICE_AND_VIDEO_ADVANCED
+        parent: to ? eV.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING : eV.s6.VOICE_AND_VIDEO_ADVANCED
       },
       [eV.s6.CLICKER_GAME]: {
         url: eG.Z5c.SETTINGS("clicker-game"),
@@ -1447,7 +1447,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         parent: eV.s6.STREAMER_MODE,
         predicate: () => {
           var e, t, n;
-          return null !== (n = null === p.Z || void 0 === p.Z ? void 0 : null === (t = p.Z.window) || void 0 === t ? void 0 : null === (e = t.supportsContentProtection) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n && n
+          return null != (n = null === p.Z || void 0 === p.Z || null == (t = p.Z.window) || null == (e = t.supportsContentProtection) ? void 0 : e.call(t)) && n
         }
       },
       [eV.s6.SETTINGS_ADVANCED]: {
@@ -1491,7 +1491,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         searchableTitles: [ez.NW.string(ez.t.Cq98yM)],
         label: ez.NW.string(ez.t.Cq98yM),
         ariaLabel: ez.NW.string(ez.t.Cq98yM),
-        element: el.Z,
+        element: eo.Z,
         predicate: () => !e0,
         url: eG.Z5c.SETTINGS("activity-privacy")
       },
@@ -1526,7 +1526,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         section: eG.oAB.OVERLAY,
         searchableTitles: [ez.NW.string(ez.t["9cb1U1"]), ez.NW.string(ez.t.HcoRu7)],
         label: ez.NW.string(ez.t["9cb1U1"]),
-        element: ev.Z,
+        element: eS.Z,
         predicate: () => !e0 && M
       },
       [eV.s6.CHANGELOG]: {
@@ -1871,9 +1871,9 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
       [eV.s6.LOGOUT]: {
         section: "logout",
         onClick: () => {
-          (0, o.h7j)(e => {
+          (0, l.h7j)(e => {
             var t, n;
-            return (0, r.jsx)(o.ConfirmModal, (t = function(e) {
+            return (0, r.jsx)(l.ConfirmModal, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   r = Object.keys(n);
@@ -1897,7 +1897,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
               onCancel: e.onClose,
               onConfirm: () => c.Z.logout()
             }, e), n = n = {
-              children: (0, r.jsx)(o.Text, {
+              children: (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
                 children: ez.NW.string(ez.t.SUnWBA)
               })
@@ -1915,7 +1915,7 @@ let eX = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
         },
         label: ez.NW.string(ez.t["2jxGen"]),
         ariaLabel: ez.NW.string(ez.t["2jxGen"]),
-        icon: (0, r.jsx)(o.PBZ, {
+        icon: (0, r.jsx)(l.PBZ, {
           size: "xs",
           color: "currentColor"
         })

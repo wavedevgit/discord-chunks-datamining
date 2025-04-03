@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(749210),
   i = n(336197),
   a = n(592125),
-  o = n(430824),
-  l = n(626135),
+  l = n(430824),
+  o = n(626135),
   s = n(900849),
   c = n(981631);
 async function u(e) {
@@ -17,15 +17,15 @@ async function u(e) {
     d = e.messageReference.message_id,
     p = a.Z.getChannel(u),
     m = !1;
-  if (null == p && null != n && null == o.Z.getGuild(n)) try {
+  if (null == p && null != n && null == l.Z.getGuild(n)) try {
     await (0, s.Ub)(n, {
       object: c.qAy.FORWARD_BREADCRUMB
     }, {
       shouldNavigate: !1
     }), m = !0, await (0, r.V)(n), p = a.Z.getChannel(u)
   } catch (e) {}
-  l.default.track(c.rMx.FORWARD_BREADCRUMB_CLICKED, {
-    guild_id: null === (t = a.Z.getBasicChannel(e.channel_id)) || void 0 === t ? void 0 : t.guild_id,
+  o.default.track(c.rMx.FORWARD_BREADCRUMB_CLICKED, {
+    guild_id: null == (t = a.Z.getBasicChannel(e.channel_id)) ? void 0 : t.guild_id,
     channel_id: e.channel_id,
     message_id: e.id,
     breadcrumb_guild_id: n,

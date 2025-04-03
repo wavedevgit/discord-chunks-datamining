@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => h
 });
@@ -7,20 +7,20 @@ n(192379);
 var i = n(524437),
   s = n(481060),
   a = n(63063),
-  o = n(78451),
-  l = n(695346),
+  l = n(78451),
+  o = n(695346),
   c = n(838436),
   d = n(973005),
   u = n(726985),
   m = n(981631),
   g = n(388032),
-  p = n(600386);
+  p = n(889652);
 
 function h() {
   var e;
-  let t = l.Xr.useSetting(),
-    n = l.UP.useSetting(),
-    h = t !== i.Xr.DEFAULT_UNSET ? t : null !== (e = d.O7.get(n)) && void 0 !== e ? e : i.Xr.NON_FRIENDS;
+  let t = o.Xr.useSetting(),
+    n = o.UP.useSetting(),
+    h = t !== i.Xr.DEFAULT_UNSET ? t : null != (e = d.O7.get(n)) ? e : i.Xr.NON_FRIENDS;
   return (0, r.jsxs)(c.U, {
     setting: u.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
     children: [(0, r.jsx)(c.H, {
@@ -32,12 +32,12 @@ function h() {
       className: p.radioGroup,
       radioItemClassName: p.radioGroupItem,
       value: h,
-      options: (0, o.c7)(),
+      options: (0, l.c7)(),
       onChange: e => {
         let {
           value: t
         } = e;
-        return l.Xr.updateSetting(t)
+        return o.Xr.updateSetting(t)
       }
     })]
   })

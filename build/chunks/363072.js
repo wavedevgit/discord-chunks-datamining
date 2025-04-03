@@ -40,7 +40,7 @@ class a {
       if (n = e.charAt(s), (t = null != (i = t.suffix[n]) ? i : null != this.trie.suffix[n] ? this.trie.suffix[n] : this.trie).isWord) {
         var c, a;
         let n = t.strategy,
-          i = s + 1 - (null !== (a = null === (c = t.value) || void 0 === c ? void 0 : c.length) && void 0 !== a ? a : 0),
+          i = s + 1 - (null != (a = null == (c = t.value) ? void 0 : c.length) ? a : 0),
           u = s;
         if ((0, r.BD)(e, i, u, n)) {
           let t = (0, r.jO)(e, i, u, n);

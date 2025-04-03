@@ -6,23 +6,23 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   i = n(481060),
   s = n(594174),
   c = n(381585),
   u = n(597688),
   d = n(709999),
   b = n(388032),
-  p = n(719458);
+  p = n(806734);
 let f = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: l
-  } = e, f = (0, a.e7)([s.default], () => s.default.getCurrentUser());
+  } = e, f = (0, o.e7)([s.default], () => s.default.getCurrentUser());
   return null == f ? null : (0, r.jsxs)("div", {
-    className: o()(p.shelfBlockContainer, p.centeredSection),
+    className: a()(p.shelfBlockContainer, p.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: p.blockHeader,
       children: [(0, r.jsx)(i.X6q, {
@@ -40,17 +40,17 @@ let f = e => {
       className: p.feed,
       children: (0, r.jsx)(r.Fragment, {
         children: t.rankedSkuIds.map((e, n) => {
-          let o = u.Z.getCategoryForProduct(e),
-            a = u.Z.getProduct(e);
-          return null == o || null == a ? null : (0, r.jsx)(c.k0, {
+          let a = u.Z.getCategoryForProduct(e),
+            o = u.Z.getProduct(e);
+          return null == a || null == o ? null : (0, r.jsx)(c.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
             children: (0, r.jsx)(d.Z, {
-              product: a,
-              category: o,
+              product: o,
+              category: a,
               user: f,
               tab: l,
               isInFeedView: !0

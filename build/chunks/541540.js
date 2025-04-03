@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => _
 }), n(47120), n(411104);
@@ -6,15 +6,15 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(533307),
-  l = n(600164),
+  l = n(533307),
+  o = n(600164),
   c = n(930114),
   d = n(246946),
   u = n(626135),
   m = n(669079),
   g = n(981631),
   p = n(388032),
-  h = n(324777);
+  h = n(423953);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -77,7 +77,7 @@ class x extends i.Component {
         children: p.NW.string(p.t.SeKIoa)
       }), (0, r.jsx)("form", {
         onSubmit: this.handleSubmit,
-        children: (0, r.jsxs)(l.Z, {
+        children: (0, r.jsxs)(o.Z, {
           children: [(0, r.jsx)(a.oil, {
             type: e ? "password" : "text",
             value: t,
@@ -120,17 +120,14 @@ class x extends i.Component {
       } = this.state;
       if ("" === t) return;
       let n = (0, m.JT)(t);
-      if (null == n) {
-        this.setState({
-          hasError: !0
-        });
-        return
-      }
+      if (null == n) return void this.setState({
+        hasError: !0
+      });
       this.setState({
         submitting: !0
       });
       try {
-        let e = await o.Z.resolveGiftCode(n);
+        let e = await l.Z.resolveGiftCode(n);
         if (null != e && null != e.giftCode.promotion) throw this.setState({
           isPromoCode: !0
         }), Error("Cannnot redeem promotion code as gift");

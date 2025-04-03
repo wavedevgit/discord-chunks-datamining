@@ -31,8 +31,8 @@ let a = e => {
       return l
     }(e, ["size", "width", "height", "color", "colorClass"]);
   let v = (0, o.m)(c),
-    g = null !== (a = null == v ? void 0 : v.width) && void 0 !== a ? a : u,
-    b = null !== (s = null == v ? void 0 : v.height) && void 0 !== s ? s : d;
+    g = null != (a = null == v ? void 0 : v.width) ? a : u,
+    b = null != (s = null == v ? void 0 : v.height) ? s : d;
   return (0, r.jsx)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

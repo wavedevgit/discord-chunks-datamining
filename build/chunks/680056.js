@@ -24,16 +24,16 @@ let o = e => {
       } = e;
       n(r.id);
       try {
-        var d, p, m, f, b, v, g, j, h, y;
+        var d, p, m, f, b, g, j, h, y, x;
         let e = (0, a.W)(t);
         await (0, i.e)(r, {
           channelId: e ? t : void 0,
           analyticsLocations: o,
           editMetadata: {
-            start: null !== (v = null !== (b = null == l ? void 0 : l.start) && void 0 !== b ? b : null === (d = r.editMetadata) || void 0 === d ? void 0 : d.start) && void 0 !== v ? v : 0,
-            end: null !== (j = null !== (g = null == l ? void 0 : l.end) && void 0 !== g ? g : null === (p = r.editMetadata) || void 0 === p ? void 0 : p.end) && void 0 !== j ? j : r.length / 1e3,
-            applicationAudio: null === (h = null != s ? s : null === (m = r.editMetadata) || void 0 === m ? void 0 : m.applicationAudio) || void 0 === h || h,
-            voiceAudio: null === (y = null != c ? c : null === (f = r.editMetadata) || void 0 === f ? void 0 : f.voiceAudio) || void 0 === y || y
+            start: null != (g = null != (b = null == l ? void 0 : l.start) ? b : null == (d = r.editMetadata) ? void 0 : d.start) ? g : 0,
+            end: null != (h = null != (j = null == l ? void 0 : l.end) ? j : null == (p = r.editMetadata) ? void 0 : p.end) ? h : r.length / 1e3,
+            applicationAudio: null == (y = null != s ? s : null == (m = r.editMetadata) ? void 0 : m.applicationAudio) || y,
+            voiceAudio: null == (x = null != c ? c : null == (f = r.editMetadata) ? void 0 : f.voiceAudio) || x
           }
         })
       } catch (e) {} finally {

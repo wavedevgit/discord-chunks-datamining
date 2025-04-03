@@ -17,9 +17,9 @@ var n = r(192379),
   p = r(240864),
   h = r(863663),
   m = r(981631),
-  v = r(388032);
+  b = r(388032);
 
-function b(e, t, r) {
+function v(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -35,7 +35,7 @@ function C(e) {
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
       return Object.getOwnPropertyDescriptor(r, e).enumerable
     }))), n.forEach(function(t) {
-      b(e, t, r[t])
+      v(e, t, r[t])
     })
   }
   return e
@@ -57,7 +57,7 @@ let x = new u.Z("ProductAttachmentManager");
 class j {
   addAttachment(e, t) {
     let r = this.target.getMaxAttachmentsCount();
-    if (this.uploads.length >= r) throw a.uv.announce(v.NW.formatToPlainString(v.t["0QDZ4O"], {
+    if (this.uploads.length >= r) throw a.uv.announce(b.NW.formatToPlainString(b.t["0QDZ4O"], {
       maxAttachmentsCount: r
     })), Error("Too many attachments");
     e.target = c.e.GUILD_PRODUCT_ATTACHMENT;
@@ -67,11 +67,11 @@ class j {
       r === m.evJ.ENTITY_TOO_LARGE && this.onFileSizeError();
       let o = "number" == typeof r && r > 0 ? -r : -1,
         l = (0, h.kg)(o),
-        i = null === (A = e.file) || void 0 === A ? void 0 : A.name;
-      null != i ? a.uv.announce(v.NW.formatToPlainString(v.t["+YVkfX"], {
+        i = null == (A = e.file) ? void 0 : A.name;
+      null != i ? a.uv.announce(b.NW.formatToPlainString(b.t["+YVkfX"], {
         filename: i,
         reason: l
-      })) : a.uv.announce(v.NW.formatToPlainString(v.t.mBkf6e, {
+      })) : a.uv.announce(b.NW.formatToPlainString(b.t.mBkf6e, {
         reason: l
       })), t(e => q(C({}, e), {
         [n.id]: o
@@ -117,7 +117,7 @@ class j {
       s = this.uploads.filter(e => this.existingAttachmentIds.has(e.id)).map(e => {
         var t;
         return {
-          filename: null === (t = e.item.file) || void 0 === t ? void 0 : t.name,
+          filename: null == (t = e.item.file) ? void 0 : t.name,
           id: e.id
         }
       }),
@@ -144,7 +144,7 @@ class j {
     onFileSizeError: r
   }) {
     var n;
-    b(this, "guildId", void 0), b(this, "isEdit", void 0), b(this, "target", new f.Z), b(this, "createCloudUploader", void 0), b(this, "onFileSizeError", void 0), b(this, "existingAttachmentIds", new Set), b(this, "uploads", []), b(this, "generateInitialProgresses", () => {
+    v(this, "guildId", void 0), v(this, "isEdit", void 0), v(this, "target", new f.Z), v(this, "createCloudUploader", void 0), v(this, "onFileSizeError", void 0), v(this, "existingAttachmentIds", new Set), v(this, "uploads", []), v(this, "generateInitialProgresses", () => {
       let e = {};
       for (let t of this.uploads) e[t.id] = 1;
       return e
@@ -152,7 +152,7 @@ class j {
     let A = null == t ? m.ANM.GUILD_PRODUCTS(e) : m.ANM.GUILD_PRODUCT_LISTINGS(e, t),
       a = null == t ? "POST" : "PATCH";
     this.createCloudUploader = () => (0, d.F)(A, a), this.guildId = e, this.onFileSizeError = r;
-    let o = null === (n = p.Z.getGuildProduct(null != t ? t : "")) || void 0 === n ? void 0 : n.attachments;
+    let o = null == (n = p.Z.getGuildProduct(null != t ? t : "")) ? void 0 : n.attachments;
     null != o && (this.uploads = o.map(t => {
       var r;
       this.existingAttachmentIds.add(t.id);
@@ -162,7 +162,7 @@ class j {
         file: {
           name: t.filename,
           lastModified: 0,
-          size: null !== (r = t.size) && void 0 !== r ? r : 0
+          size: null != (r = t.size) ? r : 0
         }
       }, e);
       return n.status = i.m.COMPLETED, n
@@ -184,13 +184,13 @@ function N(e, t) {
   n.useLayoutEffect(() => {
     f(d.generateInitialProgresses())
   }, [d]);
-  let [h, v] = n.useState(), [b, q] = n.useState(), x = n.useCallback(e => {
+  let [h, b] = n.useState(), [v, q] = n.useState(), x = n.useCallback(e => {
     d.deleteAttachment(e) && p({})
   }, [d]), N = n.useCallback(e => {
     d.addAttachment(e, f), p({})
   }, [d]), O = n.useCallback(async e => {
     try {
-      v(e), q(void 0);
+      b(e), q(void 0);
       let t = await d.saveProductWithAttachments(e);
       return null != t && c({
         editSkuId: t.id,
@@ -204,7 +204,7 @@ function N(e, t) {
         }
       }))
     } finally {
-      v(void 0)
+      b(void 0)
     }
   }, [d, o]), U = n.useCallback(() => {
     d.cancelUnusedUploads(), p({})
@@ -224,9 +224,9 @@ function N(e, t) {
     saveProductWithAttachments: O,
     isSaving: null != h,
     changesSaving: h,
-    saveError: b,
+    saveError: v,
     hasUnsavedAttachmentChanges: y,
     canAttachFiles: P.length < d.target.getMaxAttachmentsCount(),
-    canAttachArchives: null !== (r = null == i ? void 0 : i.hasFeature(m.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && void 0 !== r && r
+    canAttachArchives: null != (r = null == i ? void 0 : i.hasFeature(m.oNc.GUILD_PRODUCTS_ALLOW_ARCHIVED_FILE)) && r
   }
 }

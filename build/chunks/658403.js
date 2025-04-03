@@ -10,15 +10,15 @@ function o(e) {
 }
 var r = {
   lastWeek: function(e, i, t) {
-    var r, d = e.getUTCDay();
-    return (0, a.Z)(e, i, t) ? o(d) : 0 === (r = d) ? "'domenica scorsa alle' p" : "'" + n[r] + " scorso alle' p"
+    var r = e.getUTCDay();
+    return (0, a.Z)(e, i, t) ? o(r) : 0 === r ? "'domenica scorsa alle' p" : "'" + n[r] + " scorso alle' p"
   },
   yesterday: "'ieri alle' p",
   today: "'oggi alle' p",
   tomorrow: "'domani alle' p",
   nextWeek: function(e, i, t) {
-    var r, d = e.getUTCDay();
-    return (0, a.Z)(e, i, t) ? o(d) : 0 === (r = d) ? "'domenica prossima alle' p" : "'" + n[r] + " prossimo alle' p"
+    var r = e.getUTCDay();
+    return (0, a.Z)(e, i, t) ? o(r) : 0 === r ? "'domenica prossima alle' p" : "'" + n[r] + " prossimo alle' p"
   },
   other: "P"
 };

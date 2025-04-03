@@ -34,8 +34,8 @@ function l(e) {
         r = e;
       for (; null != r;) {
         var a, l;
-        let e = null == r ? void 0 : null === (a = r._debugSource) || void 0 === a ? void 0 : a.fileName,
-          i = null == r ? void 0 : null === (l = r._debugSource) || void 0 === l ? void 0 : l.lineNumber;
+        let e = null == r || null == (a = r._debugSource) ? void 0 : a.fileName,
+          i = null == r || null == (l = r._debugSource) ? void 0 : l.lineNumber;
         if (null != e && null != i) {
           let r = "".concat(e, ":").concat(i);
           if (t) {

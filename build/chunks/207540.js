@@ -9,45 +9,38 @@ var i = n(200651),
   l = n(933557),
   s = n(156699),
   _ = n(734893),
-  o = n(693196),
-  p = n(66999),
+  p = n(693196),
+  o = n(66999),
   N = n(575830),
   T = n(554747),
   I = n(434404),
   E = n(144140),
-  g = n(314897),
-  u = n(430824),
+  u = n(314897),
+  g = n(430824),
   m = n(496675),
   c = n(981631),
   U = n(388032),
-  C = n(546980);
+  C = n(356407);
 let L = e => {
   let {
     channel: t,
     onClose: n,
     onConfirm: L,
     transitionState: G
-  } = e, D = (0, l.ZP)(t, !0), W = t.id, y = t.isForumPost(), O = (0, r.e7)([u.Z], () => u.Z.getGuild(t.getGuildId())), z = (0, T.u1)(W), {
+  } = e, D = (0, l.ZP)(t, !0), W = t.id, y = t.isForumPost(), O = (0, r.e7)([g.Z], () => g.Z.getGuild(t.getGuildId())), z = (0, T.u1)(W), {
     isSubscriptionGated: S
-  } = (0, p.Z)(t.id), A = (0, N.Z)(O, t), [h, v] = d.useState(), x = (0, r.e7)([g.default], () => t.isOwner(g.default.getId()), [t]), f = (0, r.e7)([m.Z], () => m.Z.can(t.isThread() ? c.Plq.MANAGE_THREADS : c.Plq.MANAGE_CHANNELS, t), [t]), R = (0, r.e7)([E.Z], () => {
+  } = (0, o.Z)(t.id), A = (0, N.Z)(O, t), [h, v] = d.useState(), x = (0, r.e7)([u.default], () => t.isOwner(u.default.getId()), [t]), f = (0, r.e7)([m.Z], () => m.Z.can(t.isThread() ? c.Plq.MANAGE_THREADS : c.Plq.MANAGE_CHANNELS, t), [t]), R = (0, r.e7)([E.Z], () => {
     var e;
-    return null !== (e = E.Z.getCount(t.id)) && void 0 !== e ? e : 0
+    return null != (e = E.Z.getCount(t.id)) ? e : 0
   }, [t.id]), H = y && (f || x && R < 1), B = z.length > 0 && (t.type === c.d4z.GUILD_VOICE || t.type === c.d4z.GUILD_STAGE_VOICE);
   if (d.useEffect(() => {
       (async () => {
-        if (!await (0, s.C)(t.getGuildId(), W)) {
-          v(_.j.DEFAULT);
-          return
-        }
-        let e = await (0, o.T)(t.getGuildId(), W);
-        if (null != e) {
-          v(e);
-          return
-        }
+        if (!await (0, s.C)(t.getGuildId(), W)) return v(_.j.DEFAULT);
+        let e = await (0, p.T)(t.getGuildId(), W);
+        if (null != e) return v(e)
       })()
     }, [t, W]), null != h) {
-    let e;
-    let t = U.NW.string(U.t.iWlB6u);
+    let e, t = U.NW.string(U.t.iWlB6u);
     return e = h === _.j.TODO ? U.t["/rjozM"] : h === _.j.RESOURCE ? U.t.Nf5pt7 : U.t.ajiBwM, (0, i.jsxs)(a.Y0X, {
       transitionState: G,
       "aria-label": U.NW.string(U.t["TY/V+P"]),

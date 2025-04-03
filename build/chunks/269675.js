@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(873546),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(355467),
   c = n(270237),
   u = n(252618),
@@ -21,17 +21,17 @@ var r = n(200651),
   E = n(772021),
   O = n(396828),
   N = n(293423),
-  v = n(20967),
-  y = n(504762),
-  I = n(807152),
+  y = n(20967),
+  I = n(504762),
+  v = n(807152),
   C = n(176505),
   S = n(388032),
-  T = n(586164);
+  T = n(86492);
 
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, o.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, o.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([f.Z], () => f.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), Z = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), x = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: L,
     restrictionsLoading: w
   } = (0, h.uP)(t), R = null == n || !x || Z || w;
@@ -45,8 +45,8 @@ function P(e) {
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, C.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(v.z, {
+    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(y.z, {
       errorType: e
     })
   }
@@ -56,24 +56,24 @@ function P(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: T.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, a.GSL)(O.Z),
+        icon: (0, o.GSL)(O.Z),
         "aria-hidden": !0
       }), (0, r.jsx)(g.Z.Title, {
         children: S.NW.string(S.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
-      id: I.v
+      id: v.v
     }), (0, r.jsx)("div", {
       className: T.content,
-      children: j ? (0, r.jsx)(a.u2D, {
+      children: j ? (0, r.jsx)(o.u2D, {
         className: T.scroller,
         children: (0, r.jsx)("div", {
           className: T.scrollerContent,
-          children: R ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(N.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(N.Z, {
             guild: n
           })
         })
-      }) : (0, r.jsx)(y.Z, {})
+      }) : (0, r.jsx)(I.Z, {})
     })]
   })
 }

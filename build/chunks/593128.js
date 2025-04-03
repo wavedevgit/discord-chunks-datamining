@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => k
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(94963),
   j = n(745628),
   N = n(950279),
-  v = n(796918),
-  _ = n(513532),
+  _ = n(796918),
+  v = n(513532),
   C = n(741595),
   O = n(974842),
   y = n(359380),
@@ -30,7 +30,7 @@ var r = n(200651),
   E = n(981631),
   S = n(231338),
   T = n(388032),
-  P = n(327066);
+  P = n(35511);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -134,10 +134,8 @@ let Z = e => [{
       className: P.deleteItem,
       "aria-label": T.NW.string(T.t.vc5h39),
       onClick: () => {
-        if (a) {
-          g.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
-          return
-        }(0, o.ZDy)(async () => {
+        if (a) return void g.S.dispatch(E.CkL.EMPHASIZE_NOTICE);
+        (0, o.ZDy)(async () => {
           let {
             ConfirmModal: e
           } = await Promise.resolve().then(n.bind(n, 481060));
@@ -208,7 +206,7 @@ let Z = e => [{
       return {
         initialSettings: t.initialSettings,
         settings: t.settings,
-        errors: null !== (e = t.errors) && void 0 !== e ? e : {},
+        errors: null != (e = t.errors) ? e : {},
         submitting: t.submitting,
         dirty: t.dirty
       }
@@ -319,7 +317,7 @@ let Z = e => [{
                     title: T.NW.string(T.t.t6Mbq6),
                     description: T.NW.string(T.t.E7Ymwc),
                     onUpdateGames: z,
-                    gameApplicationIds: null !== (e = W.gameApplicationIds) && void 0 !== e ? e : new Set,
+                    gameApplicationIds: null != (e = W.gameApplicationIds) ? e : new Set,
                     error: L.gameApplicationIds,
                     guildId: t,
                     includeSuggestedGames: !0
@@ -341,7 +339,7 @@ let Z = e => [{
                     progress: W
                   });
                 case I.Wy.INTERESTS:
-                  return (0, r.jsx)(v.Z, {
+                  return (0, r.jsx)(_.Z, {
                     guildId: t,
                     handleUpdate: Y,
                     progress: W,
@@ -366,7 +364,7 @@ let Z = e => [{
                     inSettings: !0
                   });
                 case I.Wy.MEMBER_APPLICATION:
-                  return (0, r.jsx)(_.Z, {
+                  return (0, r.jsx)(v.Z, {
                     guildId: t,
                     inSettings: !0,
                     error: L.verificationForm

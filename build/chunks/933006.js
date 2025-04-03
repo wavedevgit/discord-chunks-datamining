@@ -16,7 +16,7 @@ var r = n(200651),
   f = n(981631),
   d = n(871465),
   y = n(388032),
-  C = n(1789);
+  C = n(416922);
 
 function j(t) {
   var e, j, {
@@ -43,7 +43,7 @@ function j(t) {
     } = (0, s.ZP)(),
     [N, v] = o.useState(!1);
   o.useEffect(() => {
-    !N && (p.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
+    N || (p.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
       type: b.cd.CUSTOM_NOTIFICATION_SOUNDS_UPSELL,
       location: m.location,
       location_stack: S

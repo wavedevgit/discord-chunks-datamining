@@ -20,16 +20,16 @@ var r = n(200651),
   N = n(328977),
   p = n(412222),
   C = n(223312),
-  v = n(768762),
-  _ = n(171368),
-  g = n(598077),
+  _ = n(768762),
+  g = n(171368),
+  v = n(598077),
   T = n(430824),
   E = n(51144),
   I = n(388032),
-  S = n(895372),
-  y = n(826486),
-  R = n(130237),
-  P = n(67769);
+  S = n(555405),
+  y = n(710931),
+  R = n(771429),
+  P = n(350381);
 
 function O(e) {
   let {
@@ -76,12 +76,12 @@ function w(e) {
             variant: "eyebrow",
             color: "interactive-normal",
             children: I.NW.string(I.t.EZ5QWF)
-          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(v.Z, {
+          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(_.Z, {
             className: S.sortIcon,
-            direction: v.Z.Directions.UP
-          }) : (0, r.jsx)(v.Z, {
+            direction: _.Z.Directions.UP
+          }) : (0, r.jsx)(_.Z, {
             className: S.sortIcon,
-            direction: v.Z.Directions.DOWN
+            direction: _.Z.Directions.DOWN
           })]
         })
       }), (0, r.jsx)("th", {
@@ -103,7 +103,7 @@ let M = l.memo(function(e) {
       joinRequestId: i,
       guildId: a
     } = t, s = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, _.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, g.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i
       })
@@ -154,7 +154,7 @@ let M = l.memo(function(e) {
       guildId: s,
       createdAt: m,
       applicationStatus: x
-    } = t, h = l.useMemo(() => new g.Z(t.user), [t.user]), j = (0, N.L)({
+    } = t, h = l.useMemo(() => new v.Z(t.user), [t.user]), j = (0, N.L)({
       guildId: s
     }), f = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), p = x === b.wB.SUBMITTED, C = e => {
       (0, u.jW)(e, async () => {

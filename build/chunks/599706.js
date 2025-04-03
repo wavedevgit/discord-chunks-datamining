@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => g
 }), n(653041);
@@ -6,13 +6,13 @@ var r = n(200651);
 n(192379);
 var i = n(392711),
   a = n.n(i),
-  o = n(481060),
-  l = n(100527),
+  l = n(481060),
+  o = n(100527),
   s = n(184301),
   c = n(347475),
   u = n(463618),
   d = n(823379),
-  p = n(741288);
+  p = n(88729);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,21 +60,21 @@ let h = e => {
       })
     }) : (0, r.jsx)("div", {
       className: p.partyMemberKnown,
-      children: (0, r.jsx)(o.yRy, {
+      children: (0, r.jsx)(l.yRy, {
         preload: () => (0, s.Z)(t.id, t.getAvatarURL(i, 80), {
           guildId: i
         }),
         renderPopout: e => (0, r.jsx)(c.Z, f(m({}, e), {
           userId: t.id,
           guildId: i,
-          newAnalyticsLocations: [l.Z.AVATAR]
+          newAnalyticsLocations: [o.Z.AVATAR]
         })),
         position: "left",
         clickTrap: !0,
-        children: e => (0, r.jsx)(o.qEK, f(m({}, e), {
+        children: e => (0, r.jsx)(l.qEK, f(m({}, e), {
           src: t.getAvatarURL(i, 24),
           "aria-label": t.username,
-          size: o.EFr.SIZE_24,
+          size: l.EFr.SIZE_24,
           className: p.partyMember
         }))
       })
@@ -85,32 +85,32 @@ let h = e => {
       partySize: t,
       members: n,
       minAvatarsShown: i = 1,
-      maxAvatarsShown: o = 2,
-      guildId: l
+      maxAvatarsShown: l = 2,
+      guildId: o
     } = e, {
       unknownSize: s,
       totalSize: c,
       knownSize: u
     } = t;
     if (c < i) return null;
-    let m = a()(n).filter(d.lm).take(o).map(e => (0, r.jsx)(h, {
+    let m = a()(n).filter(d.lm).take(l).map(e => (0, r.jsx)(h, {
       member: e,
-      guildId: l
+      guildId: o
     }, e.id)).value();
-    for (let e = 0; e < s && m.length < o; e++) m.push((0, r.jsx)(h, {
-      guildId: l
+    for (let e = 0; e < s && m.length < l; e++) m.push((0, r.jsx)(h, {
+      guildId: o
     }, "unknown-member-".concat(e)));
     let f = c - u - s;
-    for (let e = 0; e < f && m.length < o; e++) m.push((0, r.jsx)(h, {
+    for (let e = 0; e < f && m.length < l; e++) m.push((0, r.jsx)(h, {
       empty: !0,
-      guildId: l
+      guildId: o
     }, "empty-member-".concat(e)));
     let g = Math.max(Math.min(c - m.length, 99), 0);
     if (1 === g) {
-      let e = n[o];
+      let e = n[l];
       m.push((0, r.jsx)(h, {
         member: e,
-        guildId: l
+        guildId: o
       }, e.id))
     }
     return (0, r.jsx)("div", {

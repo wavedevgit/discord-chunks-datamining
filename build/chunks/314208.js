@@ -23,7 +23,7 @@ var r = n(200651),
   p = n(91159),
   b = n(217702),
   T = n(388032),
-  y = n(512342);
+  y = n(915298);
 
 function P(e) {
   return e.isActiveThread() ? (0, r.jsx)(w, {
@@ -67,7 +67,7 @@ function C(e) {
   });
   let c = (0, s.e7)([j.default], () => {
       var e;
-      return null !== (e = j.default.getUser(n.author.id)) && void 0 !== e ? e : n.author
+      return null != (e = j.default.getUser(n.author.id)) ? e : n.author
     }),
     {
       nick: g,
@@ -122,13 +122,13 @@ function I(e) {
   var t, n, a;
   let {
     channel: d
-  } = e, u = (0, s.e7)([f.ZP], () => f.ZP.lastMessageId(d.id)), h = null == u ? new Date(null !== (n = null === (t = d.threadMetadata) || void 0 === t ? void 0 : t.archiveTimestamp) && void 0 !== n ? n : Date.now()).getTime() : v.default.extractTimestamp(u);
+  } = e, u = (0, s.e7)([f.ZP], () => f.ZP.lastMessageId(d.id)), h = null == u ? new Date(null != (n = null == (t = d.threadMetadata) ? void 0 : t.archiveTimestamp) ? n : Date.now()).getTime() : v.default.extractTimestamp(u);
   (0, o.$)({
     [d.guild_id]: [d.ownerId]
   });
   let m = (0, s.e7)([j.default], () => j.default.getUser(d.ownerId)),
     x = (0, s.e7)([g.ZP], () => g.ZP.getMember(d.guild_id, d.ownerId)),
-    N = null !== (a = (0, c.KS)(d)) && void 0 !== a ? a : l.or_;
+    N = null != (a = (0, c.KS)(d)) ? a : l.or_;
   return (0, r.jsx)(l.Text, {
     className: y.subtext,
     variant: "text-sm/normal",
@@ -155,8 +155,8 @@ function I(e) {
           var n, a;
           return (0, r.jsx)(l.PUh, {
             className: y.startedByName,
-            color: null !== (n = null == x ? void 0 : x.colorString) && void 0 !== n ? n : void 0,
-            name: null !== (a = null == x ? void 0 : x.nick) && void 0 !== a ? a : Z.ZP.getName(m)
+            color: null != (n = null == x ? void 0 : x.colorString) ? n : void 0,
+            name: null != (a = null == x ? void 0 : x.nick) ? a : Z.ZP.getName(m)
           }, t)
         }
       }), (0, r.jsx)("span", {

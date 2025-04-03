@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -21,16 +21,16 @@ var r = n(200651),
   x = n(251625),
   j = n(226951),
   N = n(51144),
-  v = n(434404),
-  _ = n(372454),
+  _ = n(434404),
+  v = n(372454),
   C = n(999382),
   O = n(84613),
   y = n(740903),
   I = n(1080),
   E = n(981631),
   S = n(388032),
-  T = n(347405),
-  P = n(968484);
+  T = n(69214),
+  P = n(588866);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -213,13 +213,13 @@ class k extends i.PureComponent {
     })
   }
   handleModerationClick() {
-    v.Z.setSection(E.pNK.SAFETY), (0, O.K)(y.u.DM_AND_SPAM_PROTECTION)
+    _.Z.setSection(E.pNK.SAFETY), (0, O.K)(y.u.DM_AND_SPAM_PROTECTION)
   }
   handleQueryChange(e) {
-    v.Z.setSearchQuery(e)
+    _.Z.setSearchQuery(e)
   }
   handleQueryClear() {
-    v.Z.setSearchQuery("")
+    _.Z.setSearchQuery("")
   }
   constructor(...e) {
     super(...e), w(this, "getSortedBans", (0, x.oH)((e, t) => {
@@ -240,7 +240,7 @@ class k extends i.PureComponent {
       } = this.props, s = this.getSortedBans(r, i);
       if (0 === s.length && 1 === t) return 56;
       let a = s[t],
-        l = null == r ? void 0 : r.get(null !== (n = null == a ? void 0 : a.id) && void 0 !== n ? n : "");
+        l = null == r ? void 0 : r.get(null != (n = null == a ? void 0 : a.id) ? n : "");
       return 56 * (null != a && null != l)
     }), w(this, "renderRow", e => {
       var t;
@@ -259,7 +259,7 @@ class k extends i.PureComponent {
         type: c.$jN.Type.SPINNING_CIRCLE
       }, "spinner");
       let d = this.getSortedBans(s, o)[i],
-        u = null == s ? void 0 : s.get(null !== (t = null == d ? void 0 : d.id) && void 0 !== t ? t : "");
+        u = null == s ? void 0 : s.get(null != (t = null == d ? void 0 : d.id) ? t : "");
       if (null != d && null != u) return (0, r.jsx)(A, {
         user: d,
         ban: u,
@@ -274,8 +274,7 @@ class k extends i.PureComponent {
       return null == t ? 462 : 120
     }), w(this, "renderSection", () => {
       var e;
-      let t;
-      let {
+      let t, {
         bans: i,
         theme: s,
         searchQuery: a
@@ -296,7 +295,7 @@ class k extends i.PureComponent {
           children: S.NW.string(S.t.ZEiY1N)
         })]
       }));
-      let l = null !== (e = null == i ? void 0 : i.size) && void 0 !== e ? e : 0;
+      let l = null != (e = null == i ? void 0 : i.size) ? e : 0;
       return (0, r.jsxs)(c.hjN, {
         tag: c.RB0.H1,
         title: S.NW.formatToPlainString(S.t["bW+JJy"], {
@@ -348,8 +347,8 @@ function L() {
     guild: t
   } = (0, o.e7)([C.Z], () => C.Z.getProps(), [], l.isEqual), {
     enabled: n
-  } = _.T.useExperiment({
-    guildId: null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : E.lds,
+  } = v.T.useExperiment({
+    guildId: null != (e = null == t ? void 0 : t.id) ? e : E.lds,
     location: "4d6318_1"
   }, {
     autoTrackExposure: !0

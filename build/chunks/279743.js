@@ -1,6 +1,6 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,36 +11,36 @@ var r = n(200651),
   c = n(481060),
   u = n(442837),
   d = n(607070),
-  _ = n(663389),
-  p = n(30095);
+  p = n(663389),
+  _ = n(834166);
 
-function h(e) {
+function f(e) {
   let {
     children: t,
     className: n,
     onFlashEnd: o,
     animationDelay: u = 500
-  } = e, _ = c.TVs.colors.TEXT_LINK, h = (0, c.dQu)(_).spring({
+  } = e, p = c.TVs.colors.TEXT_LINK, f = (0, c.dQu)(p).spring({
     opacity: 0
-  }), f = (0, c.dQu)(_).spring({
+  }), h = (0, c.dQu)(p).spring({
     opacity: .1
-  }), m = (0, c.dQu)(_).spring({
+  }), m = (0, c.dQu)(p).spring({
     opacity: 0
-  }), g = (0, c.dQu)(_).spring({
+  }), b = (0, c.dQu)(p).spring({
     opacity: 1
-  }), [b, E] = (0, c.q_F)(() => ({
+  }), [g, E] = (0, c.q_F)(() => ({
     from: {
-      backgroundColor: h,
-      borderColor: h
+      backgroundColor: f,
+      borderColor: f
     }
   }), "animate-never"), C = {
-    startColor: h,
+    startColor: f,
     handleRest: e => {
       e.finished && (null == o || o())
     },
     endColor: m,
-    targetBorderColor: g,
-    targetColor: f,
+    targetBorderColor: b,
+    targetColor: h,
     animationDelay: u
   }, O = i.useRef(C);
   return i.useEffect(() => {
@@ -92,21 +92,21 @@ function h(e) {
       onRest: t
     })
   }, [E]), (0, r.jsx)(s.animated.div, {
-    style: b,
-    className: l()(p.settingsItemHighlight, n),
+    style: g,
+    className: l()(_.settingsItemHighlight, n),
     children: t
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     children: t,
     scrollPosition: n,
     animationDelay: o
-  } = e, l = (0, u.e7)([_.Z], () => _.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
+  } = e, l = (0, u.e7)([p.Z], () => p.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
   return (i.useEffect(() => {
     l && a(!0)
-  }, [l]), s) ? (0, r.jsx)(h, {
+  }, [l]), s) ? (0, r.jsx)(f, {
     animationDelay: o,
     onFlashEnd: () => a(!1),
     children: t

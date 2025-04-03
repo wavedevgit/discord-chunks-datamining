@@ -1,9 +1,9 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(47120), n(789020);
-var r, i, a, o = n(442837),
-  l = n(433517),
+var r, i, a, l = n(442837),
+  o = n(433517),
   s = n(570140),
   c = n(314897),
   u = n(592125),
@@ -15,21 +15,21 @@ var r, i, a, o = n(442837),
 let g = "ChannelFollowingBumpChannels",
   _ = new Set,
   b = new Set;
-class v extends(r = o.ZP.Store) {
+class x extends(r = l.ZP.Store) {
   initialize() {
-    this.waitFor(c.default), _ = new Set(l.K.get(g))
+    this.waitFor(c.default), _ = new Set(o.K.get(g))
   }
   shouldShowBump(e) {
     return b.has(e)
   }
 }
-a = "ChannelFollowingPublishBumpStore", (i = "displayName") in v ? Object.defineProperty(v, i, {
+a = "ChannelFollowingPublishBumpStore", (i = "displayName") in x ? Object.defineProperty(x, i, {
   value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : v[i] = a;
-let x = new v(s.Z, {
+}) : x[i] = a;
+let y = new x(s.Z, {
   MESSAGE_CREATE: function(e) {
     var t;
     let {
@@ -39,8 +39,8 @@ let x = new v(s.Z, {
     } = e;
     if (i || _.has(n)) return !1;
     let a = u.Z.getChannel(n),
-      o = p.default.getCurrentUser();
-    if (!(null != a && a.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != o && (null === (t = r.author) || void 0 === t ? void 0 : t.id) === o.id ? d.Z.can(h.Plq.SEND_MESSAGES, a) : d.Z.can(h.Plq.MANAGE_MESSAGES, a)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
+      l = p.default.getCurrentUser();
+    if (!(null != a && a.type === h.d4z.GUILD_ANNOUNCEMENT && (0, f.Z)(r) && (null != l && (null == (t = r.author) ? void 0 : t.id) === l.id ? d.Z.can(h.Plq.SEND_MESSAGES, a) : d.Z.can(h.Plq.MANAGE_MESSAGES, a)) && !m.yE(Number(r.flags), h.iLy.CROSSPOSTED))) return !1;
     b.add(r.id)
   },
   MESSAGE_UPDATE: function(e) {
@@ -62,6 +62,6 @@ let x = new v(s.Z, {
     let {
       channelId: t
     } = e;
-    _.add(t), l.K.set(g, _), b.clear()
+    _.add(t), o.K.set(g, _), b.clear()
   }
 })

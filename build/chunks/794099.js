@@ -1,7 +1,7 @@
 /** Chunk was on 85342 **/
 r.d(t, {
   F4: () => i,
-  vc: () => o
+  vc: () => s
 });
 let n = (0, r(818083).B)({
     kind: "user",
@@ -46,7 +46,7 @@ let n = (0, r(818083).B)({
   }, {
     autoTrackExposure: !1
   }),
-  o = () => n.getCurrentConfig({
+  s = () => n.getCurrentConfig({
     location: "83ca1a_4"
   }, {
     autoTrackExposure: !1

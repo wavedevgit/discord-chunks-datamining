@@ -1,6 +1,6 @@
-/** Chunk was on 10530 **/
+/** Chunk was on 33312 **/
 n.d(t, {
-  default: () => T
+  default: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -28,23 +28,20 @@ var r = n(200651),
   j = n(723359),
   L = n(981631),
   R = n(388032),
-  v = n(136441);
+  T = n(951408);
 
-function T(e) {
+function v(e) {
   let {
     transitionState: t,
     source: a
-  } = e, l = (0, d.e7)([E.default], () => E.default.getCurrentUser()), T = (0, d.e7)([b.Z, N.Z], () => N.Z.getChannel(b.Z.getChannelId())), [S, p] = i.useState(null), [M, G] = i.useState(null), [W, w] = i.useState(!1), [I, Z] = i.useState(0), Y = i.createRef(), D = i.createRef(), F = (0, _.Dt)(), P = (0, z.Kt)(), {
+  } = e, l = (0, d.e7)([E.default], () => E.default.getCurrentUser()), v = (0, d.e7)([b.Z, N.Z], () => N.Z.getChannel(b.Z.getChannelId())), [S, p] = i.useState(null), [M, G] = i.useState(null), [W, w] = i.useState(!1), [I, Z] = i.useState(0), Y = i.createRef(), D = i.createRef(), F = (0, _.Dt)(), P = (0, z.Kt)(), {
     verifyAgreementButtonText: U,
     verifyGateDescription: B
   } = (0, z.a1)(), q = null != S ? o()().diff(S, "years") : null;
 
   function K() {
-    if (a === j.L0.NSFW_SERVER_INVITE_EMBED) {
-      (0, y.qV)(a);
-      return
-    }
-    let e = null == T ? void 0 : T.getGuildId();
+    if (a === j.L0.NSFW_SERVER_INVITE_EMBED) return void(0, y.qV)(a);
+    let e = null == v ? void 0 : v.getGuildId();
     f.Z.nsfwReturnToSafety(e), (0, y.qV)(a)
   }
   async function O() {
@@ -55,15 +52,12 @@ function T(e) {
       if (null != t.body && null != t.body.date_of_birth)(0, y.C8)(a, t.body.date_of_birth);
       else {
         var e;
-        (null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.username) != null ? G(R.NW.string(R.t["TGg/2t"])) : G(null == t ? void 0 : t.body.message), w(!1)
+        (null == t || null == (e = t.body) ? void 0 : e.username) != null ? G(R.NW.string(R.t["TGg/2t"])) : G(null == t ? void 0 : t.body.message), w(!1)
       }
     }
   }
   async function V() {
-    if (s()(null != q, "Cannot submit if we haven't been able to calculate age."), q < 18) {
-      Z(1);
-      return
-    }
+    if (s()(null != q, "Cannot submit if we haven't been able to calculate age."), q < 18) return void Z(1);
     await O()
   }
   async function X(e) {
@@ -85,7 +79,7 @@ function T(e) {
     }, [p]),
     H = i.useCallback(() => {
       var e;
-      null === (e = D.current) || void 0 === e || e.focus()
+      null == (e = D.current) || e.focus()
     }, [D]),
     $ = i.useCallback(() => {
       h.Z.showAgeVerificationGetStartedModal(m.cU.NSFW_AGE_GATE)
@@ -98,14 +92,14 @@ function T(e) {
     size: u.CgR.SMALL,
     children: [(0, r.jsx)(u.hzk, {
       children: (0, r.jsxs)("div", {
-        className: v.container,
+        className: T.container,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: n(462991),
-          className: v.img
+          src: n(559325),
+          className: T.img
         }), (0, r.jsx)(u.X6q, {
           variant: "heading-xl/semibold",
-          className: v.title,
+          className: T.title,
           children: R.NW.string(R.t.ZmwvDQ)
         }), (0, r.jsx)(u.Text, {
           color: "header-secondary",
@@ -149,14 +143,14 @@ function T(e) {
       "aria-labelledby": F,
       children: [(0, r.jsxs)(u.hzk, {
         children: [(0, r.jsxs)("div", {
-          className: v.container,
+          className: T.container,
           children: [(0, r.jsx)("img", {
             alt: "",
-            src: n(462991),
-            className: v.img
+            src: n(559325),
+            className: T.img
           }), (0, r.jsx)(u.X6q, {
             variant: "heading-xl/semibold",
-            className: v.title,
+            className: T.title,
             id: F,
             children: e
           }), (0, r.jsx)(u.Text, {
@@ -168,7 +162,7 @@ function T(e) {
           onSubmit: X,
           children: (0, r.jsx)(C.Z, {
             label: R.NW.string(R.t.rhBeKS),
-            wrapperClassName: v.birthday,
+            wrapperClassName: T.birthday,
             name: "date_of_birth",
             onChange: J,
             onPopulated: H,
@@ -202,10 +196,10 @@ function T(e) {
     "aria-labelledby": F,
     children: [(0, r.jsx)(u.hzk, {
       children: (0, r.jsxs)("div", {
-        className: v.confirmContainer,
+        className: T.confirmContainer,
         children: [(0, r.jsx)(u.X6q, {
           variant: "heading-xl/semibold",
-          className: v.confirmTitle,
+          className: T.confirmTitle,
           id: F,
           children: R.NW.format(R.t.wumolZ, {
             age: q
@@ -219,7 +213,7 @@ function T(e) {
         })]
       })
     }), (0, r.jsxs)(u.mzw, {
-      className: v.confirmFooter,
+      className: T.confirmFooter,
       children: [(0, r.jsx)(u.zxk, {
         look: u.zxk.Looks.LINK,
         size: u.zxk.Sizes.NONE,

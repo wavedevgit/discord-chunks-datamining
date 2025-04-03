@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => b
 });
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(481060),
-  l = n(665149),
+  l = n(481060),
+  o = n(665149),
   s = n(618158),
   c = n(819640),
   u = n(131951),
@@ -22,15 +22,15 @@ function b(e) {
   let {
     canShowReminder: t = !1,
     className: b
-  } = e, v = (0, m.Z)(u.Z), {
-    showClipsHeaderEntrypoint: x
+  } = e, x = (0, m.Z)(u.Z), {
+    showClipsHeaderEntrypoint: y
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: !1
   }), {
-    hasClips: y,
-    hasNewClips: E,
+    hasClips: E,
+    hasNewClips: v,
     lastClipsSession: O,
     remindersEnabled: N,
     hasAnyClipAnimations: j
@@ -46,10 +46,10 @@ function b(e) {
   } = (0, s.Y)("animation");
 
   function w() {
-    (0, o.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("57822")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("89129")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -72,17 +72,17 @@ function b(e) {
       modalKey: g.Qr
     })
   }
-  return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), x && v && y) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != I && t && N && C && !(0, o.$sL)() && !T && (0, r.jsx)(h.Z, {
+  return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), y && x && E) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != I && t && N && C && !(0, l.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: I,
       lastClipsSession: O,
       onOpenClipsGallery: w
     }), (0, r.jsx)("div", {
       ref: S,
-      children: (0, r.jsx)(l.JO, {
+      children: (0, r.jsx)(o.JO, {
         className: b,
-        icon: o.AlX,
-        showBadge: E,
+        icon: l.AlX,
+        showBadge: v,
         tooltip: _.NW.string(_.t.MXaLEB),
         onClick: w
       })

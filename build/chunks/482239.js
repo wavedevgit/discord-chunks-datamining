@@ -1,22 +1,22 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(739566),
   a = n(834129),
-  o = n(388032);
+  l = n(388032);
 
-function l(e) {
+function o(e) {
   let {
     message: t,
-    channel: l,
+    channel: o,
     targetUser: s,
     actorUsernameHook: c,
     targetUsernameHook: u,
     compact: d
-  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, l), f = c(p), h = u(null != m ? m : void 0), g = o.NW.format(o.t["32QI5+"], {
+  } = e, p = (0, i.ZP)(t), m = (0, i.Sw)(s, o), f = c(p), h = u(null != m ? m : void 0), g = l.NW.format(l.t["32QI5+"], {
     actorName: p.nick,
     actorHook: f,
     targetName: null == m ? void 0 : m.nick,

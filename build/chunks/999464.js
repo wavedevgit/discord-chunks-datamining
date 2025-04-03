@@ -1,6 +1,6 @@
 /** Chunk was on 95468 **/
 n.d(t, {
-  Z: () => v
+  Z: () => _
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -13,21 +13,21 @@ var l = n(200651),
   u = n(888592),
   m = n(981631),
   N = n(388032),
-  x = n(92582);
+  x = n(257356);
 let h = (0, d.hQ)(),
-  v = e => {
+  _ = e => {
     let {
       email: t,
       setStep: n,
       onBack: i,
       school: d,
-      setSchool: v
-    } = e, [_, g] = r.useState(null), [f, p] = r.useState(!1), E = async () => {
-      g(null), p(!0);
+      setSchool: _
+    } = e, [g, f] = r.useState(null), [v, p] = r.useState(!1), E = async () => {
+      f(null), p(!0);
       try {
         await o.Z.signup(t, d), n(u.tF.EMAIL_WAITLIST)
       } catch (e) {
-        g(new c.Hx(e))
+        f(new c.Hx(e))
       } finally {
         p(!1)
       }
@@ -59,9 +59,9 @@ let h = (0, d.hQ)(),
           onKeyPress: S,
           placeholder: N.NW.string(N.t.Y1btJS),
           onChange: e => {
-            v(e)
+            _(e)
           },
-          error: null == _ ? void 0 : _.getAnyErrorMessage(),
+          error: null == g ? void 0 : g.getAnyErrorMessage(),
           "aria-labelledby": h
         })]
       }), (0, l.jsxs)("div", {
@@ -78,7 +78,7 @@ let h = (0, d.hQ)(),
           size: a.zxk.Sizes.MEDIUM,
           color: a.zxk.Colors.BRAND,
           className: x.__invalid_submitButton,
-          submitting: f,
+          submitting: v,
           children: N.NW.string(N.t.PDsYAg)
         })]
       })]

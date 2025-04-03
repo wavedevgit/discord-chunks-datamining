@@ -14,7 +14,7 @@ var n = s(200651),
   x = s(789662),
   h = s(981631),
   u = s(388032),
-  j = s(657530);
+  j = s(699343);
 
 function g(e) {
   let {
@@ -23,7 +23,7 @@ function g(e) {
     dismissable: c,
     guildPain: g,
     myUsage: _
-  } = e, [v, b] = i.useState(o.O.Intro), {
+  } = e, [b, v] = i.useState(o.O.Intro), {
     submitted: f,
     submitting: p,
     saveSettings: C
@@ -42,25 +42,25 @@ function g(e) {
     "aria-label": u.NW.string(u.t.HcoRu7),
     size: r.CgR.DYNAMIC,
     children: [(0, n.jsx)(o.Z, {
-      selectedTab: v,
-      onClick: b,
+      selectedTab: b,
+      onClick: v,
       submitted: f
-    }), v === o.O.Intro ? (0, n.jsx)(d.Z, {
+    }), b === o.O.Intro ? (0, n.jsx)(d.Z, {
       ref: w
-    }) : v === o.O.Customize ? (0, n.jsx)(N, {
+    }) : b === o.O.Customize ? (0, n.jsx)(N, {
       guildPlans: W,
       overrideGuild: T,
       getDebug: y
     }) : (0, n.jsx)(m.Z, {
       count: Object.values(W).filter(e => {
         var t;
-        return (null !== (t = e.overrideMode) && void 0 !== t ? t : e.mode) === x.AR.UseGreyDot
+        return (null != (t = e.overrideMode) ? t : e.mode) === x.AR.UseGreyDot
       }).length
     }), (0, n.jsxs)(r.mzw, {
       className: j.buttons,
       children: [(0, n.jsxs)("div", {
         className: j.__invalid_left,
-        children: [c || v !== o.O.Tips && v !== o.O.Customize ? null : (0, n.jsx)(r.eee, {
+        children: [c || b !== o.O.Tips && b !== o.O.Customize ? null : (0, n.jsx)(r.eee, {
           className: j.dismiss,
           href: "https://dis.gd/better-muting",
           children: (0, n.jsx)(r.Text, {
@@ -68,7 +68,7 @@ function g(e) {
             color: "interactive-normal",
             children: u.NW.string(u.t.hvVgAQ)
           })
-        }), c && v === o.O.Intro ? (0, n.jsx)(r.P3F, {
+        }), c && b === o.O.Intro ? (0, n.jsx)(r.P3F, {
           className: j.dismiss,
           onClick: t,
           children: (0, n.jsx)(r.Text, {
@@ -76,7 +76,7 @@ function g(e) {
             color: "interactive-normal",
             children: u.NW.string(u.t.WAI6xs)
           })
-        }) : null, c && v === o.O.Customize ? (0, n.jsx)(r.P3F, {
+        }) : null, c && b === o.O.Customize ? (0, n.jsx)(r.P3F, {
           className: j.dismiss,
           onClick: t,
           children: (0, n.jsx)(r.Text, {
@@ -87,30 +87,30 @@ function g(e) {
         }) : null]
       }), (0, n.jsxs)("div", {
         className: j.right,
-        children: [v === o.O.Customize ? (0, n.jsx)(r.Text, {
+        children: [b === o.O.Customize ? (0, n.jsx)(r.Text, {
           className: j.warning,
           variant: "text-xs/medium",
           color: "text-muted",
           children: u.NW.string(u.t.nlpqxM)
-        }) : null, v !== o.O.Customize || f ? null : (0, n.jsxs)(r.zxk, {
-          onClick: () => b(o.O.Intro),
+        }) : null, b !== o.O.Customize || f ? null : (0, n.jsxs)(r.zxk, {
+          onClick: () => v(o.O.Intro),
           color: r.zxk.Colors.TRANSPARENT,
           children: [(0, n.jsx)(r.whL, {
             size: "xs",
             color: "currentColor"
           }), " ", u.NW.string(u.t["13/7kZ"])]
-        }), v === o.O.Intro ? (0, n.jsxs)(r.zxk, {
+        }), b === o.O.Intro ? (0, n.jsxs)(r.zxk, {
           onClick: () => {
             var e;
-            (null === (e = w.current) || void 0 === e ? void 0 : e.maybeChangeToAfterTab()) && b(o.O.Customize)
+            (null == (e = w.current) ? void 0 : e.maybeChangeToAfterTab()) && v(o.O.Customize)
           },
           children: [u.NW.string(u.t.uw9zIy), " ", (0, n.jsx)(r.ZSh, {
             size: "xs",
             color: "currentColor"
           })]
-        }) : v === o.O.Customize ? (0, n.jsxs)(r.zxk, {
+        }) : b === o.O.Customize ? (0, n.jsxs)(r.zxk, {
           onClick: () => {
-            b(o.O.Tips), C(W)
+            v(o.O.Tips), C(W)
           },
           children: [u.NW.string(u.t["1Qm829"]), " ", (0, n.jsx)(r.dz2, {
             size: "xs",

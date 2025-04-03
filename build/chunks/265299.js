@@ -1,16 +1,16 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(113434),
-  l = n(497505),
+  l = n(113434),
+  o = n(497505),
   s = n(37303),
   c = n(722334),
   u = n(683650),
-  d = n(338014);
+  d = n(626314);
 
 function p(e) {
   let {
@@ -19,7 +19,7 @@ function p(e) {
     quests: n,
     excludedQuests: p,
     isFetchingCurrentQuests: m
-  } = (0, o.J2)({
+  } = (0, l.J2)({
     fetchPolicy: "cache-or-network"
   }), f = i.useMemo(() => n.find(e => e.id === t), [t, n]), h = i.useMemo(() => p.find(e => e.id === t), [t, p]);
   return m ? (0, r.jsx)(a.$jN, {
@@ -30,6 +30,6 @@ function p(e) {
     questId: t
   }) : (0, r.jsx)(s.Z, {
     quest: f,
-    location: l.jn.QUESTS_EMBED
+    location: o.jn.QUESTS_EMBED
   }, f.id)
 }

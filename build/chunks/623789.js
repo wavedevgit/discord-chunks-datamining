@@ -67,5 +67,8 @@ var i = {
 };
 let a = function(t, e, n) {
   var a, r = i[t];
-  return (a = "string" == typeof r ? r : 1 === e ? r.one : r.other.replace("{{count}}", String(e)), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? a + "内" : a + "前" : a
+  if (a = "string" == typeof r ? r : 1 === e ? r.one : r.other.replace("{{count}}", String(e)), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return a + "内";
+    else return a + "前";
+  return a
 }

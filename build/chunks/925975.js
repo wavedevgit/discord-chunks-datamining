@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   g: () => b
 }), n(566702), n(47120), n(301563), n(757143), n(627494);
@@ -79,7 +79,7 @@ let f = /\\([*?+/])/g,
         if (null == l || null == l.id) return {
           content: ""
         };
-        let [, a, s] = Array.from(null !== (n = e.match(this.match.regex)) && void 0 !== n ? n : []);
+        let [, a, s] = Array.from(null != (n = e.match(this.match.regex)) ? n : []);
         a = a.replace(f, (e, t) => t);
         let c = !1;
         (s = s.replace(f, (e, t) => t)).endsWith("/g") && (s = s.slice(0, -2), c = !0);
@@ -109,7 +109,7 @@ function b(e, t) {
     let i = m[r];
     if (null != i.match) {
       var n;
-      if (null === (n = i.match.regex) || void 0 === n ? void 0 : n.test(e)) return g(r, i, e, t);
+      if (null == (n = i.match.regex) ? void 0 : n.test(e)) return g(r, i, e, t);
       continue
     }
     if (d.dN.getSetting() && "/" === e[0]) {

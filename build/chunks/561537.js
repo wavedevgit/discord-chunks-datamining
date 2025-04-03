@@ -1,33 +1,33 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  l: () => l
+  l: () => o
 });
 var r = n(200651),
   i = n(192379),
   s = n(557533),
   a = n.n(s),
-  o = n(293302);
+  l = n(603116);
 
-function l(e) {
+function o(e) {
   let {
     className: t,
     header: n,
     headerClassName: s,
-    children: l
+    children: o
   } = e, c = i.useMemo(() => {
     let e = !1;
-    return i.Children.forEach(l, t => {
+    return i.Children.forEach(o, t => {
       null != t && (e = !0)
     }), e
-  }, [l]);
+  }, [o]);
   return (0, r.jsxs)("div", {
-    className: a()(o.wrapper, t),
+    className: a()(l.wrapper, t),
     children: [(0, r.jsx)("div", {
-      className: a()(o.header, s),
+      className: a()(l.header, s),
       children: n
     }), c && (0, r.jsx)("div", {
-      className: o.content,
-      children: l
+      className: l.content,
+      children: o
     })]
   })
 }

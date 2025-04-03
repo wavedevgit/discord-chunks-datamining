@@ -76,7 +76,7 @@ function Z(e) {
 
 function w(e, t) {
   var n;
-  let i = null !== (n = e.flags) && void 0 !== n ? n : 0;
+  let i = null != (n = e.flags) ? n : 0;
   if (!((0, a.yE)(i, P.udG.EMBEDDED_RELEASED) || (0, a.yE)(i, P.udG.EMBEDDED_FIRST_PARTY))) return;
   let r = t.client_platform_config[(0, b.Z)((0, u.getOS)())].release_phase;
   return g.eB.includes(r) ? r.replace("_", " ").replace(/(^\w|\s\w)/g, e => e.toUpperCase()) : void 0

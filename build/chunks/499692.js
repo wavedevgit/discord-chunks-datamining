@@ -1,6 +1,6 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => P
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -18,10 +18,10 @@ var r = n(200651),
   f = n(425986),
   _ = n(881294),
   b = n(523311),
-  v = n(797908),
-  x = n(292191),
+  x = n(797908),
+  v = n(292191),
   C = n(981631),
-  j = n(640149);
+  j = n(537833);
 let y = s.Y.APPLICATION_DIRECTORY;
 
 function O(e) {
@@ -64,7 +64,7 @@ function O(e) {
       children: t.title
     }), (0, r.jsx)("div", {
       className: j.content,
-      children: t.application_directory_collection_items.map((e, t) => e.type !== c.C.APPLICATION || null == e.application ? null : (0, r.jsx)(v.Z, {
+      children: t.application_directory_collection_items.map((e, t) => e.type !== c.C.APPLICATION || null == e.application ? null : (0, r.jsx)(x.Z, {
         application: e.application,
         onSelectApplication: () => s(e.application.id, t),
         showCategory: !0
@@ -72,7 +72,7 @@ function O(e) {
     })]
   })
 }
-let P = function(e) {
+let I = function(e) {
   let {
     onSelectApplication: t
   } = e, n = (0, u.e7)([h.default], () => h.default.onlyShowPreviewAppCollections) ? o.E.PREVIEW : o.E.ACTIVE, i = (0, u.e7)([f.Z], () => f.Z.getFetchState({
@@ -91,7 +91,7 @@ let P = function(e) {
   let s = a.useMemo(() => null == l ? void 0 : l.filter(e => e.type !== d.o.GALLERY), [l]);
   return i === f.M.ERROR ? (0, r.jsx)("div", {
     className: j.errorContainer,
-    children: (0, r.jsx)(x.Z, {
+    children: (0, r.jsx)(v.Z, {
       className: j.error
     })
   }) : (0, r.jsx)(b.Z, {

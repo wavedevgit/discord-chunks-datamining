@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(47120), n(266796), n(566702);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(544891),
+  l = n(442837),
+  o = n(544891),
   c = n(704215),
   d = n(481060),
   u = n(230711),
@@ -23,14 +23,16 @@ var r = n(200651),
   E = n(981631),
   j = n(921944),
   O = n(388032),
-  C = n(616130);
+  C = n(232696);
 
-function v() {
-  let e;
-  let {
-    currentSession: t,
-    otherSessions: n
-  } = (0, h.h)(), s = (0, o.e7)([b.Z], () => b.Z.hidePersonalInformation), a = (0, o.e7)([N.default], () => N.default.getCurrentUser()), [u, g] = i.useState(!1);
+function S() {
+  let e, {
+      currentSession: t,
+      otherSessions: n
+    } = (0, h.h)(),
+    s = (0, l.e7)([b.Z], () => b.Z.hidePersonalInformation),
+    a = (0, l.e7)([N.default], () => N.default.getCurrentUser()),
+    [u, g] = i.useState(!1);
   i.useEffect(() => {
     (0, f.EW)(c.z.AUTH_SESSIONS_NEW, {
       dismissAction: j.L.AUTO
@@ -41,12 +43,12 @@ function v() {
     }
   }, []);
   let x = () => {
-      l.tn.post({
+      o.tn.post({
         url: E.ANM.AUTH_SESSION_NOTIFICATIONS_DEBUG,
         rejectWithError: !0
       })
     },
-    [_, v] = i.useState(new Set);
+    [_, S] = i.useState(new Set);
   return s ? (0, r.jsx)(m.Z, {}) : (e = null == t && 0 === n.length ? u ? (0, r.jsx)("div", {
     className: C.loading,
     children: (0, r.jsx)(d.$jN, {})
@@ -57,7 +59,7 @@ function v() {
         tag: d.RB0.H5,
         title: O.NW.string(O.t.LLS19v),
         titleClassName: C.groupTitle,
-        children: null != t ? (0, r.jsx)(S, {
+        children: null != t ? (0, r.jsx)(v, {
           session: t,
           current: !0
         }) : null
@@ -66,13 +68,13 @@ function v() {
         title: O.NW.string(O.t.xx1MWV),
         titleClassName: C.groupTitle,
         className: C.otherSessions,
-        children: [n.map(e => (0, r.jsx)(S, {
+        children: [n.map(e => (0, r.jsx)(v, {
           session: e,
           useChecks: _.size > 0,
           checked: _.has(e.id_hash),
           setChecked: t => {
             let n = new Set(_);
-            t ? n.add(e.id_hash) : n.delete(e.id_hash), v(n)
+            t ? n.add(e.id_hash) : n.delete(e.id_hash), S(n)
           }
         }, e.id_hash)), (null == a ? void 0 : a.mfaEnabled) ? null : (0, r.jsx)(T, {})]
       })]
@@ -134,15 +136,15 @@ function v() {
   }))
 }
 
-function S(e) {
-  var t, n, i, s, o;
+function v(e) {
+  var t, n, i, s, l;
   let {
-    session: l,
+    session: o,
     current: c,
     setChecked: u,
     checked: m,
     useChecks: g
-  } = e, f = null !== (o = null === (t = l.client_info) || void 0 === t ? void 0 : t.location) && void 0 !== o ? o : null === (n = l.client_info) || void 0 === n ? void 0 : n.ip, b = null === (i = l.client_info) || void 0 === i ? void 0 : i.platform, {
+  } = e, f = null != (l = null == (t = o.client_info) ? void 0 : t.location) ? l : null == (n = o.client_info) ? void 0 : n.ip, b = null == (i = o.client_info) ? void 0 : i.platform, {
     text: N,
     icon: x
   } = function(e) {
@@ -163,7 +165,7 @@ function S(e) {
           text: e, icon: d.pzj
         }
     }
-  }(null === (s = l.client_info) || void 0 === s ? void 0 : s.os), E = c ? null : (0, h.p)(l.approx_last_used_time), j = [N, b].filter(_.lm), v = [f, E].filter(_.lm);
+  }(null == (s = o.client_info) ? void 0 : s.os), E = c ? null : (0, h.p)(o.approx_last_used_time), j = [N, b].filter(_.lm), S = [f, E].filter(_.lm);
   return (0, r.jsxs)("div", {
     className: a()(C.session, c ? C.currentSession : null),
     children: [(0, r.jsx)("div", {
@@ -190,12 +192,12 @@ function S(e) {
         variant: "text-sm/medium",
         className: C.sessionInfoRow,
         children: [(0, r.jsx)("span", {
-          children: v[0]
-        }), v.length > 1 && (0, r.jsxs)(r.Fragment, {
+          children: S[0]
+        }), S.length > 1 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("span", {
             children: "\xb7"
           }), (0, r.jsx)("span", {
-            children: v[1]
+            children: S[1]
           })]
         })]
       })]
@@ -210,7 +212,7 @@ function S(e) {
     }) : (0, r.jsx)(d.P3F, {
       className: C.sessionMoreButton,
       onClick: e => {
-        e.shiftKey ? null == u || u(!0) : (0, p.L$)(l.id_hash)
+        e.shiftKey ? null == u || u(!0) : (0, p.L$)(o.id_hash)
       },
       "aria-label": O.NW.string(O.t.E4MJNj),
       children: (0, r.jsx)(d.Dio, {
@@ -218,7 +220,7 @@ function S(e) {
         color: "currentColor"
       })
     })]
-  }, l.id_hash)
+  }, o.id_hash)
 }
 
 function T() {

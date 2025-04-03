@@ -1,10 +1,10 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   Fo: () => L,
   KY: () => C,
   Uo: () => m,
-  fU: () => v,
-  qw: () => b,
+  fU: () => b,
+  qw: () => v,
   tn: () => M
 }), n(733860);
 var r = n(192379),
@@ -16,14 +16,14 @@ var r = n(192379),
   E = n(704215),
   c = n(45114),
   u = n(740504),
-  d = n(605236),
-  _ = n(931261),
+  _ = n(605236),
+  d = n(931261),
   A = n(540126),
   T = n(671098),
   N = n(703656),
   I = n(592125),
-  g = n(324067),
-  O = n(306680),
+  O = n(324067),
+  g = n(306680),
   f = n(709054),
   R = n(981631),
   p = n(176505),
@@ -37,7 +37,7 @@ function D(e, t) {
 
 function L(e, t, n, l) {
   l = l.toLowerCase();
-  let s = (0, _.g)(e),
+  let s = (0, d.g)(e),
     i = r.useCallback((e, t) => !(s && e.channel.hasFlag(p.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== R.d4z.GUILD_DIRECTORY && (0 === t.length || a()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [s]);
   return r.useMemo(() => {
     let e = {
@@ -66,7 +66,7 @@ function C(e) {
   for (let r = A.wd; r < e.voiceChannelsSectionNumber; r++)
     if (t[r] > 0) {
       var n;
-      let t = null === (n = e.getChannelFromSectionRow(r, 0)) || void 0 === n ? void 0 : n.channel;
+      let t = null == (n = e.getChannelFromSectionRow(r, 0)) ? void 0 : n.channel;
       if (null != t) return t.id
     } return null
 }
@@ -76,12 +76,12 @@ function m(e, t) {
   (0, T.n)(e, t), (0, c.y5)(t.map(e => ({
     channelId: e,
     readStateType: h.W.CHANNEL,
-    messageId: O.ZP.lastMessageId(e)
+    messageId: g.ZP.lastMessageId(e)
   }))), null != n && (0, N.uL)(R.Z5c.CHANNEL(e, n))
 }
 
 function M(e, t, n, r) {
-  let l = (0, d.wE)(E.z.CHANNEL_BROWSER_NUX),
+  let l = (0, _.wE)(E.z.CHANNEL_BROWSER_NUX),
     a = (0, o.cj)([I.Z], () => {
       let t = {},
         n = I.Z.getMutableGuildChannelsForGuild(e);
@@ -91,7 +91,7 @@ function M(e, t, n, r) {
         } = n[e];
         if (null != l) {
           var r;
-          t[l] = (null !== (r = t[l]) && void 0 !== r ? r : 0) + 1
+          t[l] = (null != (r = t[l]) ? r : 0) + 1
         }
       }
       return t
@@ -109,19 +109,19 @@ function M(e, t, n, r) {
   }), s
 }
 
-function v(e) {
+function b(e) {
   var t, n;
-  let r = (0, o.e7)([g.Z], () => g.Z.getCategories(e)),
+  let r = (0, o.e7)([O.Z], () => O.Z.getCategories(e)),
     l = r._categories.length,
     a = r._categories[r._categories.length - 1];
   if (null == a) return 0;
-  let s = r[null !== (n = null === (t = a.channel) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : "null"];
+  let s = r[null != (n = null == (t = a.channel) ? void 0 : t.id) ? n : "null"];
   return null == s ? 0 : 0 === s.length ? a.index + 2 - l : s[s.length - 1].index + 2 - l
 }
 
-function b(e) {
+function v(e) {
   var t;
   return U.NW.formatToPlainString(U.t["8N0BHR"], {
-    timeAgo: i()(f.default.extractTimestamp(null !== (t = O.ZP.lastMessageId(e)) && void 0 !== t ? t : e)).fromNow()
+    timeAgo: i()(f.default.extractTimestamp(null != (t = g.ZP.lastMessageId(e)) ? t : e)).fromNow()
   })
 }

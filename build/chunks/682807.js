@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => h
 });
@@ -13,7 +13,7 @@ var a = n(120356),
   d = n(726542),
   u = n(881294),
   p = n(388032),
-  m = n(851674);
+  m = n(845958);
 
 function h(e) {
   var t, n;
@@ -21,7 +21,7 @@ function h(e) {
     application: a,
     className: l,
     innerClassName: s
-  } = e, c = null !== (n = null === (t = a.directory_entry) || void 0 === t ? void 0 : t.external_urls) && void 0 !== n ? n : [];
+  } = e, c = null != (n = null == (t = a.directory_entry) ? void 0 : t.external_urls) ? n : [];
   return null != a.terms_of_service_url || null != a.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
     className: i()(m.container, l),
     children: [(0, r.jsx)(o.X6q, {
@@ -51,7 +51,7 @@ function g(e) {
   let {
     url: a,
     children: i
-  } = e, s = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(s) ? null == u ? void 0 : null === (t = u.icon) || void 0 === t ? void 0 : t.darkSVG : null == u ? void 0 : null === (n = u.icon) || void 0 === n ? void 0 : n.lightSVG;
+  } = e, s = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(s) ? null == u || null == (t = u.icon) ? void 0 : t.darkSVG : null == u || null == (n = u.icon) ? void 0 : n.lightSVG;
   return (0, r.jsx)(f, {
     icon: void 0 === p ? o.xPt : void 0,
     imageSrc: p,

@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(200651),
   l = n(192379),
   s = n(481060),
-  o = n(211266),
-  r = n(332664),
+  r = n(211266),
+  o = n(332664),
   i = n(626135),
   c = n(900735),
   u = n(987562),
@@ -18,7 +18,7 @@ function m(e) {
   let {
     onClose: t,
     transitionState: m
-  } = e, f = (0, o.Z)(u.CE);
+  } = e, f = (0, r.Z)(u.CE);
   l.useEffect(() => {
     i.default.track(d.rMx.OPEN_MODAL, {
       type: "Block User Feedback"
@@ -28,10 +28,10 @@ function m(e) {
     var t;
     let {
       rating: l,
-      problem: o,
-      feedback: r
+      problem: r,
+      feedback: o
     } = e, i = null == l;
-    (0, c.t)(l, r, null !== (t = null == o ? void 0 : o.value) && void 0 !== t ? t : null, i), i || (0, s.ZDy)(async () => {
+    (0, c.t)(l, o, null != (t = null == r ? void 0 : r.value) ? t : null, i), i || (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("14466").then(n.bind(n, 729328));
@@ -57,7 +57,7 @@ function m(e) {
       }, t))
     })
   }, []);
-  return (0, a.jsx)(r.Z, {
+  return (0, a.jsx)(o.Z, {
     modalType: "block_user",
     header: _.NW.string(_.t["+2qQAQ"]),
     body: _.NW.string(_.t["+0Rsvb"]),

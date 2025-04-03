@@ -15,7 +15,7 @@ var s = r(200651),
   h = r(710845),
   N = r(424071),
   m = r(388032),
-  C = r(363234);
+  C = r(475286);
 let j = new h.Z("TwoWayLink");
 
 function k(e) {
@@ -50,10 +50,7 @@ function k(e) {
       callbackCode: r,
       callbackState: s
     } = e;
-    if (s !== h) {
-      j.warn("".concat(a, " link: received mismatching callback state!"));
-      return
-    }
+    if (s !== h) return void j.warn("".concat(a, " link: received mismatching callback state!"));
     k({
       callbackCode: r,
       callbackState: s

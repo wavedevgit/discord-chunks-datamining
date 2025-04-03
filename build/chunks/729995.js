@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => y
@@ -22,8 +22,8 @@ var i = n(442837),
   x = n(974513),
   j = n(677892),
   N = n(981631),
-  v = n(388032),
-  _ = n(667324);
+  _ = n(388032),
+  v = n(276);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -95,7 +95,7 @@ function y(e) {
       },
       disableGoodStatus: n
     }), (0, r.jsx)(d.Z, {
-      className: _.divider
+      className: v.divider
     }), (0, r.jsx)(j.ap, {
       guildId: t,
       onEdit: () => {
@@ -106,7 +106,7 @@ function y(e) {
       },
       disableGoodStatus: n
     }), (0, r.jsx)(d.Z, {
-      className: _.divider
+      className: v.divider
     }), (0, r.jsx)(j.P_, {
       guildId: t,
       onEdit: () => {
@@ -123,7 +123,7 @@ function y(e) {
       guildId: t,
       handlePreview: h
     }), (0, r.jsx)(E, {}), (0, r.jsxs)("div", {
-      className: _.content,
+      className: v.content,
       children: [(0, r.jsx)(S, {
         guildId: t,
         handleOnboardingToggle: u
@@ -131,7 +131,7 @@ function y(e) {
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: _.content,
+      className: v.content,
       children: [(0, r.jsx)(T, {
         guildId: t,
         handleOnboardingToggle: u,
@@ -152,34 +152,34 @@ function I(e) {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      className: _.header,
-      children: v.NW.string(v.t.mhxUsL)
+      className: v.header,
+      children: _.NW.string(_.t.mhxUsL)
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      className: _.subheader,
-      children: v.NW.string(v.t.GtWdQE)
+      className: v.subheader,
+      children: _.NW.string(_.t.GtWdQE)
     }), (0, r.jsxs)("div", {
-      className: _.help,
+      className: v.help,
       children: [(0, r.jsx)(s.eee, {
         target: "_blank",
         href: N.EYA.GUILD_ONBOARDING_EXAMPLES,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: v.NW.string(v.t.Ok55Ki)
+          children: _.NW.string(_.t.Ok55Ki)
         })
       }), (0, r.jsx)("div", {
-        className: _.helpSeparator
+        className: v.helpSeparator
       }), (0, r.jsx)(s.eee, {
         onClick: n,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: v.NW.string(v.t["6gsjdH"])
+          children: _.NW.string(_.t["6gsjdH"])
         })
       }), (0, r.jsx)("div", {
-        className: _.helpSeparator
+        className: v.helpSeparator
       }), (0, r.jsx)(x.Wu, {
         guildId: t
       })]
@@ -190,25 +190,25 @@ function I(e) {
 function E() {
   let e = "• ";
   return (0, r.jsxs)("div", {
-    className: _.notice,
+    className: v.notice,
     children: [(0, r.jsx)("img", {
-      className: _.wumpus,
+      className: v.wumpus,
       src: n(33631),
       alt: "wumpus"
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        className: _.header,
-        children: v.NW.string(v.t.WslWRE)
+        className: v.header,
+        children: _.NW.string(_.t.WslWRE)
       }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [e, v.NW.string(v.t.z9k21N)]
+        children: [e, _.NW.string(_.t.z9k21N)]
       }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [e, v.NW.string(v.t.t1LelZ)]
+        children: [e, _.NW.string(_.t.t1LelZ)]
       })]
     })]
   })
@@ -220,16 +220,16 @@ function S(e) {
     handleOnboardingToggle: n
   } = e, a = (0, j.$$)(t), l = (0, i.e7)([o.Z], () => o.Z.getEnabled(t));
   return (0, r.jsxs)("div", {
-    className: _.review,
+    className: v.review,
     children: [(0, r.jsxs)("div", {
-      className: _.reviewHeaderText,
+      className: v.reviewHeaderText,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
-        children: l ? v.NW.string(v.t.MBdTCQ) : v.NW.string(v.t.Wslim5)
+        children: l ? _.NW.string(_.t.MBdTCQ) : _.NW.string(_.t.Wslim5)
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: l ? v.NW.string(v.t.LokpLi) : v.NW.string(v.t.nBIyJi)
+        children: l ? _.NW.string(_.t.LokpLi) : _.NW.string(_.t.nBIyJi)
       })]
     }), (0, r.jsx)(s.rsf, {
       checked: l,
@@ -246,30 +246,30 @@ function T(e) {
     handlePreview: a
   } = e, l = (0, j.$$)(t), o = (0, i.e7)([h.Z], () => h.Z.getSettings()), d = (0, c.uo)(o);
   return (0, r.jsxs)("div", {
-    className: _.reviewHeader,
+    className: v.reviewHeader,
     children: [(0, r.jsxs)("div", {
-      className: _.reviewHeaderText,
+      className: v.reviewHeaderText,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-md/semibold",
-        children: l ? v.NW.string(v.t.FcIcT0) : v.NW.string(v.t.R09tJy)
+        children: l ? _.NW.string(_.t.FcIcT0) : _.NW.string(_.t.R09tJy)
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
-        children: l ? v.NW.string(v.t.ockHVV) : v.NW.string(v.t["u/ji09"])
+        children: l ? _.NW.string(_.t.ockHVV) : _.NW.string(_.t["u/ji09"])
       })]
     }), (0, r.jsxs)("div", {
-      className: _.reviewActions,
+      className: v.reviewActions,
       children: [(0, r.jsx)(s.zxk, {
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.PRIMARY,
         look: s.zxk.Looks.OUTLINED,
         onClick: a,
-        children: v.NW.string(v.t["6gsjdH"])
+        children: _.NW.string(_.t["6gsjdH"])
       }), (0, r.jsx)(s.zxk, {
         size: s.zxk.Sizes.SMALL,
         color: s.zxk.Colors.BRAND,
         onClick: () => n(d),
         disabled: !l,
-        children: v.NW.string(v.t.Yz7hsL)
+        children: _.NW.string(_.t.Yz7hsL)
       })]
     })]
   })
@@ -280,15 +280,15 @@ function P(e) {
     guildId: t
   } = e, n = (0, i.e7)([u.Z], () => u.Z.getGuild(t));
   return null == n || n.verificationLevel < N.sFg.VERY_HIGH ? null : (0, r.jsxs)("div", {
-    className: _.rolesWarning,
+    className: v.rolesWarning,
     children: [(0, r.jsx)(s.P4T, {
       size: "xs",
       color: "currentColor",
-      className: _.warningIcon
+      className: v.warningIcon
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: v.NW.string(v.t.HVoKZ2)
+      children: _.NW.string(_.t.HVoKZ2)
     })]
   })
 }

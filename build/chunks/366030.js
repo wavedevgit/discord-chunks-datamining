@@ -1,4 +1,4 @@
-/** Chunk was on 6536 **/
+/** Chunk was on 35397 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -34,7 +34,7 @@ var r = n(200651),
   k = n(981631),
   M = n(228168),
   R = n(388032),
-  E = n(864166);
+  E = n(933466);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -105,14 +105,13 @@ function D(e) {
   return (0, r.jsx)(r.Fragment, {
     children: Object.keys(a).map(e => {
       var t, s;
-      let c;
-      let l = a[e],
+      let c, l = a[e],
         u = l.filter(e => null != e.operator),
         g = l.find(e => null != e.application),
         f = _.Z.get(e),
         b = null == g ? void 0 : g.application,
         h = (null == b ? void 0 : b.bot) != null ? new O.Z(b.bot) : null;
-      return j.SJ.includes(null !== (t = null == b ? void 0 : b.id) && void 0 !== t ? t : "") ? c = (0, r.jsx)(I.Z, {
+      return j.SJ.includes(null != (t = null == b ? void 0 : b.id) ? t : "") ? c = (0, r.jsx)(I.Z, {
         className: E.botTag,
         color: o,
         size: 16
@@ -134,7 +133,7 @@ function D(e) {
           }) : null, (0, r.jsx)(p.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
-            children: null !== (s = null == f ? void 0 : f.name) && void 0 !== s ? s : null == b ? void 0 : b.name
+            children: null != (s = null == f ? void 0 : f.name) ? s : null == b ? void 0 : b.name
           }), c]
         }), u.map(e => {
           let {
@@ -175,7 +174,7 @@ function B(e) {
   }, [s, c, u, d]);
   let g = (0, l.e7)([x.ZP], () => {
     var e, t;
-    return null !== (t = null === (e = x.ZP.getSelfMember(d)) || void 0 === e ? void 0 : e.roles.includes(c)) && void 0 !== t && t
+    return null != (t = null == (e = x.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(c)) && t
   }, [d, c]);
   return t = 1 === i.length && 1 === i[0].length ? R.NW.string(R.t.jDym4O) : 1 === i.length ? R.NW.format(R.t["0eBj39"], {}) : R.NW.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,

@@ -8,8 +8,8 @@ var r = n(200651),
   a = n(454585),
   o = n(273744),
   s = n(388032),
-  c = n(136827),
-  d = n(685786);
+  c = n(232890),
+  d = n(20493);
 let u = e => {
     var t, n;
     let {
@@ -55,7 +55,7 @@ let u = e => {
     }), t))), [j, N] = l.useState(""), [y, O] = l.useState("");
     l.useEffect(() => {
       var e;
-      N(null !== (e = null == _ ? void 0 : _.value) && void 0 !== e ? e : "")
+      N(null != (e = null == _ ? void 0 : _.value) ? e : "")
     }, [_]);
     let Z = l.useCallback(e => {
       let t = null != b ? new RegExp(b) : null;
@@ -105,7 +105,7 @@ let u = e => {
       return (0, r.jsx)(u, {
         data: e.data,
         onChange: e => n(i, e.value, e.isValid),
-        initialText: null !== (t = null == l ? void 0 : l[i]) && void 0 !== t ? t : void 0,
+        initialText: null != (t = null == l ? void 0 : l[i]) ? t : void 0,
         isRequired: e.should_submit_data
       }, i)
     });

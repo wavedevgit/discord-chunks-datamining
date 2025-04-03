@@ -22,18 +22,15 @@ function c(e, t) {
   return {
     handleMouseUp: r.useCallback((e, t, n) => {
       if (d(e, t, n), null != m.current) {
-        if (null != p) {
-          var r;
-          r = Date.now() - m.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
-            feature_name: "".concat(u.QP.SHARED_CANVAS, "_").concat(e.type),
-            feature_tier: u.h1.FREE,
-            media_session_id: p.getMediaSessionId(),
-            parent_media_session_id: p.parentMediaSessionId,
-            guild_id: p.guildId,
-            duration: r
-          })
-        }
-        m.current = null
+        var r;
+        null != p && (r = Date.now() - m.current, o.default.track(s.rMx.PREMIUM_FEATURE_USAGE, {
+          feature_name: "".concat(u.QP.SHARED_CANVAS, "_").concat(e.type),
+          feature_tier: u.h1.FREE,
+          media_session_id: p.getMediaSessionId(),
+          parent_media_session_id: p.parentMediaSessionId,
+          guild_id: p.guildId,
+          duration: r
+        })), m.current = null
       }
     }, [d, p]),
     handleMouseDown: g,

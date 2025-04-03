@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => m
 });
@@ -7,11 +7,11 @@ n(192379);
 var i = n(481060),
   s = n(626135),
   a = n(503899),
-  o = n(292352),
-  l = n(981631),
-  c = n(378392),
+  l = n(292352),
+  o = n(981631),
+  c = n(332495),
   d = n(388032),
-  u = n(887966);
+  u = n(289581);
 
 function m() {
   return (0, r.jsxs)(i.zxk, {
@@ -40,8 +40,8 @@ function m() {
           }
           return e
         }({}, t))
-      }), s.default.track(l.rMx.FAMILY_CENTER_ACTION, {
-        action: o.YC.ShowQRCodeModal
+      }), s.default.track(o.rMx.FAMILY_CENTER_ACTION, {
+        action: l.YC.ShowQRCodeModal
       })
     },
     children: [(0, r.jsx)(a.Z, {}), d.NW.string(c.Z.Ta9byc)]

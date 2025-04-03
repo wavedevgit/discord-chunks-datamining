@@ -42,7 +42,7 @@ var r = n(200651),
   L = n(743294),
   Z = n(981631),
   V = n(388032),
-  Q = n(549401);
+  Q = n(921183);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -87,7 +87,7 @@ function z(e) {
     null != m.current && (i && l && (m.current.currentTime = 0), m.current.play())
   }, [m, l, i]);
   let h = x(n.id),
-    b = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null && h === v.iw.COMPLETED,
+    b = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null && h === v.iw.COMPLETED,
     j = !b && (!i || l);
   return (0, r.jsxs)(u.P3F, {
     className: Q.videoQuestPreviewCont,
@@ -283,7 +283,7 @@ function Y(e) {
             controls: !1,
             children: (0, r.jsx)("source", {
               src: b.url,
-              type: null !== (t = b.mimetype) && void 0 !== t ? t : void 0
+              type: null != (t = b.mimetype) ? t : void 0
             })
           })
         }
@@ -321,7 +321,7 @@ function G(e) {
     onCtxMenuOpen: g,
     onCtxMenuClose: h,
     onCtxMenuSelect: v
-  } = e, _ = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, x.z)(n), [w, S, P] = (0, x.me)(n, s), N = o.useRef(null), Z = (0, x.B6)(n.config.expiresAt), F = (0, x._s)({
+  } = e, _ = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, C = s.percentComplete > 0, O = (0, x.z)(n), [w, S, P] = (0, x.me)(n, s), N = o.useRef(null), Z = (0, x.B6)(n.config.expiresAt), F = (0, x._s)({
     quest: n
   }), X = (0, j.q8)(n), K = (0, x.Jf)(n), Y = o.useCallback(() => {
     (0, T.openVideoQuestModal)(n)
@@ -446,7 +446,7 @@ let J = o.forwardRef(function(e, t) {
       questContent: b.jn.QUEST_BAR_V2,
       questContentCTA: t
     }), w && (0, T.openVideoQuestModal)(_), S && e && (0, m.uL)(Z.Z5c.ACTIVITY_DETAILS(_.config.application.id))
-  }, [_, w, S]), N = (null === (n = _.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, E = d && u;
+  }, [_, w, S]), N = (null == (n = _.userStatus) ? void 0 : n.enrolledAt) != null, E = d && u;
   return (0, r.jsxs)(i.animated.div, {
     "aria-hidden": !E,
     className: a()(l, Q.contentExpanded, {

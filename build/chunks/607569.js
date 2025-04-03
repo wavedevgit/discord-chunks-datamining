@@ -16,7 +16,7 @@ var r = n(200651),
   b = n(915509),
   g = n(592286),
   h = n(388032),
-  x = n(572418);
+  x = n(98847);
 let _ = "MULTIPLE_CHOICE",
   f = e => {
     let {
@@ -41,7 +41,7 @@ let _ = "MULTIPLE_CHOICE",
         var r;
         let {
           index: l
-        } = e, o = null === (r = b.current) || void 0 === r ? void 0 : r.getBoundingClientRect(), a = t.getClientOffset();
+        } = e, o = null == (r = b.current) ? void 0 : r.getBoundingClientRect(), a = t.getClientOffset();
         if (null == o || null == a) return;
         let i = (o.bottom - o.top) / 2,
           c = a.y - o.top;
@@ -104,7 +104,7 @@ let _ = "MULTIPLE_CHOICE",
       field: i,
       onSave: c,
       onClose: m
-    } = e, [_, j] = l.useState(null !== (t = null == i ? void 0 : i.label) && void 0 !== t ? t : ""), [C, y] = l.useState(null !== (n = null == i ? void 0 : i.choices) && void 0 !== n ? n : [""]), [v, N] = l.useState(null), [I, O] = l.useState(null), k = (e, t) => {
+    } = e, [_, j] = l.useState(null != (t = null == i ? void 0 : i.label) ? t : ""), [C, y] = l.useState(null != (n = null == i ? void 0 : i.choices) ? n : [""]), [v, N] = l.useState(null), [I, O] = l.useState(null), k = (e, t) => {
       null != v && N(null);
       let n = e.replace(/(\r\n|\n|\r)/g, " ");
       n.length > g.au && (n = n.slice(0, g.au));
@@ -123,14 +123,8 @@ let _ = "MULTIPLE_CHOICE",
     }, E = async () => {
       null != v && N(null);
       let e = _.trim();
-      if ("" === e) {
-        N(h.NW.string(h.t["G+TI4+"]));
-        return
-      }
-      if (0 === C.map(e => e.trim()).filter(e => "" !== e).length) {
-        N(h.NW.string(h.t.jZoHgI));
-        return
-      }
+      if ("" === e) return void N(h.NW.string(h.t["G+TI4+"]));
+      if (0 === C.map(e => e.trim()).filter(e => "" !== e).length) return void N(h.NW.string(h.t.jZoHgI));
       let t = {
         field_type: p.QJ.MULTIPLE_CHOICE,
         label: e,

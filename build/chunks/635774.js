@@ -5,8 +5,8 @@ r.d(t, {
 var n = r(200651);
 r(192379);
 var i = r(120356),
-  o = r.n(i),
-  s = r(442837),
+  s = r.n(i),
+  o = r(442837),
   a = r(481060),
   l = r(230711),
   c = r(706454),
@@ -14,17 +14,17 @@ var i = r(120356),
   d = r(347649),
   g = r(981631),
   m = r(388032),
-  f = r(40609);
+  f = r(927687);
 
 function E(e) {
   let {
     onClose: t,
     handleStartFlow: r
-  } = e, i = (0, d.CC)(), E = (0, s.e7)([c.default], () => c.default.locale);
+  } = e, i = (0, d.CC)(), E = (0, o.e7)([c.default], () => c.default.locale);
   return (0, n.jsxs)("div", {
     className: f.infoContainer,
     children: [(0, n.jsx)(a.X6q, {
-      className: o()(f.finishTitle, {
+      className: s()(f.finishTitle, {
         [f.finishTitlePadding]: i
       }),
       color: "header-primary",

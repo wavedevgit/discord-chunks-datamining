@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => p
 }), n(47120), n(266796);
@@ -6,13 +6,13 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(931240),
-  o = n(550271),
-  l = n(314852),
+  l = n(550271),
+  o = n(314852),
   c = n(65361),
   d = n(300284),
   u = n(526761),
   m = n(388032),
-  g = n(856764);
+  g = n(729495);
 let p = i.memo(function(e) {
   let {
     fetchGuildProfile: t,
@@ -22,11 +22,11 @@ let p = i.memo(function(e) {
     scrollPosition: u.Y_.GUILD_TAG
   }), [f, b] = i.useState(!1);
   if (i.useEffect(() => {
-      n === l.a.NOT_FETCHED && t()
+      n === o.a.NOT_FETCHED && t()
     }, [t, n]), null === p) return null;
   async function N() {
     var t;
-    b(!0), await (0, a.nE)(e.guildId, !0), b(!1), null === (t = e.onClose) || void 0 === t || t.call(e)
+    b(!0), await (0, a.nE)(e.guildId, !0), b(!1), null == (t = e.onClose) || t.call(e)
   }
   return (0, r.jsxs)("div", {
     className: g.container,
@@ -37,7 +37,7 @@ let p = i.memo(function(e) {
       className: g.tagContainer,
       children: (0, r.jsxs)("div", {
         className: g.tag,
-        children: [null !== p.badge && null !== p.badgeColorPrimary && null !== p.badgeColorSecondary && (0, r.jsx)(o.A, {
+        children: [null !== p.badge && null !== p.badgeColorPrimary && null !== p.badgeColorSecondary && (0, r.jsx)(l.A, {
           className: g.badge,
           badge: p.badge,
           width: 40,
@@ -68,7 +68,7 @@ let p = i.memo(function(e) {
       className: g.editButton,
       onClick: function() {
         var t;
-        null === (t = e.onClose) || void 0 === t || t.call(e), h()
+        null == (t = e.onClose) || t.call(e), h()
       },
       children: m.NW.string(m.t.s5vZlZ)
     })]

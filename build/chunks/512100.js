@@ -5,10 +5,10 @@ l.d(n, {
 var t = l(200651);
 l(192379);
 var r = l(409794),
-  i = l(777207),
-  s = l(541822),
+  s = l(777207),
+  i = l(541822),
   a = l(330711),
-  o = l(182353);
+  o = l(845533);
 
 function c(e) {
   let {
@@ -23,7 +23,7 @@ function c(e) {
   } : void 0;
   return (0, t.jsx)("div", {
     className: o.container,
-    children: (0, t.jsx)(s.Z, {
+    children: (0, t.jsx)(i.Z, {
       className: o.scroller,
       children: (0, t.jsxs)("div", {
         className: o.scrollContent,
@@ -54,7 +54,7 @@ function c(e) {
               color: "header-primary",
               variant: "heading-xl/semibold",
               children: d
-            }), null != l && "" !== l && (0, t.jsx)(i.x, {
+            }), null != l && "" !== l && (0, t.jsx)(s.x, {
               color: "text-normal",
               variant: "text-md/normal",
               className: o.description,
@@ -62,7 +62,7 @@ function c(e) {
             })]
           }), null != n && (0, t.jsxs)("div", {
             className: o.benefits,
-            children: [(0, t.jsx)(i.x, {
+            children: [(0, t.jsx)(s.x, {
               color: "header-secondary",
               variant: "eyebrow",
               children: a.Z.Messages.STOREFRONT_BENEFITS_TITLE

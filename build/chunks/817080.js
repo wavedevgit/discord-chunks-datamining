@@ -75,10 +75,7 @@ var t = t || function(e) {
           });
           return
         }
-        if (e.chrome && m && m !== f && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, f), S = !0), c && "download" !== s && (s += ".download"), (m === f || c) && (w = e), !u) {
-          E();
-          return
-        }
+        if (e.chrome && m && m !== f && (t = (t.slice || t.webkitSlice).call(t, 0, t.size, f), S = !0), c && "download" !== s && (s += ".download"), (m === f || c) && (w = e), !u) return void E();
         l += t.size, u(e.TEMPORARY, l, O(function(e) {
           e.root.getDirectory("saved", R, O(function(e) {
             var n = function() {

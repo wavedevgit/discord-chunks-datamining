@@ -5,13 +5,13 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(748780),
+  a = n.n(l),
+  o = n(748780),
   s = n(91192),
   c = n(481060),
   u = n(239091),
   d = n(617015),
-  p = n(348799);
+  p = n(962632);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,19 +49,19 @@ function g(e, t) {
 }
 class m extends i.PureComponent {
   componentWillLeave(e) {
-    a.Z.parallel([a.Z.timing(this.state.opacity, {
+    o.Z.parallel([o.Z.timing(this.state.opacity, {
       toValue: 0,
       duration: 200
-    }), a.Z.timing(this.state.height, {
+    }), o.Z.timing(this.state.height, {
       toValue: 0,
       duration: 200
     })]).start(e)
   }
   componentWillEnter(e) {
-    this.state.opacity.setValue(0), this.state.height.setValue(0), a.Z.parallel([a.Z.timing(this.state.opacity, {
+    this.state.opacity.setValue(0), this.state.height.setValue(0), o.Z.parallel([o.Z.timing(this.state.opacity, {
       toValue: 1,
       duration: 200
-    }), a.Z.timing(this.state.height, {
+    }), o.Z.timing(this.state.height, {
       toValue: d.NV,
       duration: 200
     })]).start(e)
@@ -87,8 +87,8 @@ class m extends i.PureComponent {
           left: -8,
           right: -8
         },
-        children: (0, r.jsx)(a.Z.div, g(f({
-          className: o()(m, p.peopleListItem, null != b ? {
+        children: (0, r.jsx)(o.Z.div, g(f({
+          className: a()(m, p.peopleListItem, null != b ? {
             [b]: h || i
           } : null, {
             [p.active]: h || i
@@ -109,8 +109,8 @@ class m extends i.PureComponent {
   }
   constructor(...e) {
     super(...e), h(this, "state", {
-      height: new a.Z.Value(d.NV),
-      opacity: new a.Z.Value(1),
+      height: new o.Z.Value(d.NV),
+      opacity: new o.Z.Value(1),
       hovered: !1,
       isContextMenuActive: !1
     }), h(this, "handleMouseEnter", () => {
@@ -134,7 +134,7 @@ class m extends i.PureComponent {
       }), (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("67110")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, g(f({}, n), {
           user: t
         }))

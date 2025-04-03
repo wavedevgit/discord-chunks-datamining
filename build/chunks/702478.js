@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => T
@@ -21,10 +21,10 @@ var r = n(200651),
   x = n(146596),
   j = n(559368),
   N = n(999382),
-  v = n(981631),
-  _ = n(190378),
+  _ = n(981631),
+  v = n(190378),
   C = n(388032),
-  O = n(849910);
+  O = n(24304);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,7 +58,7 @@ let I = function(e, t, n) {
   },
   E = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return t || e === v.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
+    return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
       className: O.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
@@ -74,13 +74,13 @@ let I = function(e, t, n) {
       className: O.developerPortalCta,
       onClick: () => {
         t(!0), (function(e) {
-          b.default.track(v.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+          b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
             guild_id: e
           });
-          let t = null == e ? v.E07.DEVELOPER_PORTAL : v.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
+          let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
             n = (0, s.Z)();
           return o.tn.post({
-            url: v.ANM.HANDOFF,
+            url: _.ANM.HANDOFF,
             body: {
               key: n
             },
@@ -88,7 +88,7 @@ let I = function(e, t, n) {
             rejectWithError: !0
           }).then(e => {
             let r = e.body.handoff_token;
-            window.open(v.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
+            window.open(_.EYA.DEVELOPER_PORTAL_LOGIN_HANDOFF(n, r, t))
           }, () => {
             window.open(t)
           })
@@ -113,11 +113,11 @@ let I = function(e, t, n) {
         errorCode: j.Z.getError()
       })),
       b = (0, l.e7)([f.Z], () => f.Z.getSettings().enabled),
-      T = null == t || null == n || null != t && t < 500 && null != n && !n.hasFeature(v.oNc.PARTNERED) && !n.hasFeature(v.oNc.VERIFIED);
+      T = null == t || null == n || null != t && t < 500 && null != n && !n.hasFeature(_.oNc.PARTNERED) && !n.hasFeature(_.oNc.VERIFIED);
     i.useEffect(() => {
       null == e || T || ((0, x.Vk)(e), (0, x.SR)(e), (0, x.xl)(e))
     }, [e, T]), i.useEffect(() => {
-      (0, m.Kw)(_.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
+      (0, m.Kw)(v.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let P = null != a ? (0, r.jsx)("div", {
       className: O.__invalid_guildAnalyticsOverviewWrapper,

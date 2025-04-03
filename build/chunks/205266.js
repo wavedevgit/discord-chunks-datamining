@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   t: () => u
 });
@@ -7,13 +7,13 @@ n(192379);
 var i = n(704215),
   s = n(231757),
   a = n(63063),
-  o = n(249881),
-  l = n(981631),
+  l = n(249881),
+  o = n(981631),
   c = n(388032),
   d = n(359734);
 let u = () => {
-  let e = a.Z.getArticleURL(l.BhN.PS_CONNECTION);
-  return (0, r.jsx)(o.t, {
+  let e = a.Z.getArticleURL(o.BhN.PS_CONNECTION);
+  return (0, r.jsx)(l.t, {
     title: c.NW.string(c.t.v20wws),
     body: c.NW.format(c.t.lTZBio, {
       help_article: e
@@ -26,7 +26,7 @@ let u = () => {
     }),
     newIndicatorDismissibleContent: i.z.PS_ONE_WAY_RECONNECT,
     onClick: () => (0, s.Z)({
-      platformType: l.ABu.PLAYSTATION,
+      platformType: o.ABu.PLAYSTATION,
       location: "PS two way upsell"
     })
   })

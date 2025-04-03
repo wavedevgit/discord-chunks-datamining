@@ -28,8 +28,8 @@ var r = n(200651),
   I = n(981631),
   E = n(616922),
   w = n(388032),
-  Z = n(745867),
-  S = n(530742);
+  Z = n(292199),
+  S = n(610220);
 let T = (e, t, n) => {
   let {
     artist: r,
@@ -55,7 +55,7 @@ function A(e) {
     let {
       start: n,
       end: r
-    } = null !== (e = t.timestamps) && void 0 !== e ? e : {};
+    } = null != (e = t.timestamps) ? e : {};
     if (null == n || null == r) return {};
     let a = Math.min(r, l),
       i = r - n,
@@ -119,7 +119,7 @@ function _(e) {
     Y = a.useCallback(() => {
       var e;
       if (null == Z || null == B) return;
-      let t = null === (e = L.timestamps) || void 0 === e ? void 0 : e.start,
+      let t = null == (e = L.timestamps) ? void 0 : e.start,
         n = (0, v.T_)(null != t ? {
           start: t
         } : _, Date.now());
@@ -147,7 +147,7 @@ function _(e) {
     (0, c.Z5)(L, B.id)
   }, n = () => {
     var e;
-    null !== (e = null == F ? void 0 : F()) && void 0 !== e || (0, c.aG)(L)
+    null != (null == F ? void 0 : F()) || (0, c.aG)(L)
   }, q = (0, r.jsx)(d.Z, {
     artists: U,
     canOpen: null != L.sync_id,
@@ -176,7 +176,7 @@ function _(e) {
     onClickTitle: g,
     subtitle: q,
     badges: null,
-    children: (null === (t = L.timestamps) || void 0 === t ? void 0 : t.start) != null && (0, r.jsx)(A, {
+    children: (null == (t = L.timestamps) ? void 0 : t.start) != null && (0, r.jsx)(A, {
       activity: L
     })
   });

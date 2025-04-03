@@ -1,4 +1,4 @@
-/** Chunk was on 89590 **/
+/** Chunk was on 15820 **/
 n.d(t, {
   Z: () => B
 }), n(47120);
@@ -21,12 +21,12 @@ var a = n(200651),
   O = n(49012),
   h = n(358085),
   S = n(998502),
-  v = n(254109),
-  C = n(212459),
-  E = n(369171),
+  C = n(254109),
+  E = n(212459),
+  v = n(369171),
   T = n(701865),
   j = n(388032),
-  P = n(711461);
+  P = n(505348);
 
 function x() {
   return (x = Object.assign || function(e) {
@@ -128,10 +128,10 @@ function w() {
   let {
     zoomed: e,
     setZoomed: t
-  } = (0, C.Y)();
+  } = (0, E.Y)();
   return (0, a.jsx)(N, {
     onClick: () => {
-      (0, v.yg)(e ? v.uG.ZOOM_OUT_BUTTON_PRESSED : v.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
+      (0, C.yg)(e ? C.uG.ZOOM_OUT_BUTTON_PRESSED : C.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
     },
     tooltipText: e ? j.NW.string(j.t.vOFof3) : j.NW.string(j.t.Kt4gZ2),
     icon: e ? s.BlJ : s.OyE
@@ -142,19 +142,17 @@ function A(e) {
   var t, n;
   let {
     item: o
-  } = e, i = null === (t = o.sourceMetadata) || void 0 === t ? void 0 : t.message, c = null === (n = o.sourceMetadata) || void 0 === n ? void 0 : n.identifier, l = r.useCallback(() => {
+  } = e, i = null == (t = o.sourceMetadata) ? void 0 : t.message, c = null == (n = o.sourceMetadata) ? void 0 : n.identifier, l = r.useCallback(() => {
     if (null != i && null != c) {
-      if ((0, v.yg)(v.uG.FORWARD_PRESSED), "embed" === c.type) {
-        (0, m.l8)({
-          message: i,
-          source: "media-viewer",
-          forwardOptions: {
-            onlyEmbedIndices: [c.embedIndex]
-          },
-          onRequestSent: D
-        });
-        return
-      }(0, m.l8)({
+      if ((0, C.yg)(C.uG.FORWARD_PRESSED), "embed" === c.type) return void(0, m.l8)({
+        message: i,
+        source: "media-viewer",
+        forwardOptions: {
+          onlyEmbedIndices: [c.embedIndex]
+        },
+        onRequestSent: D
+      });
+      (0, m.l8)({
         message: i,
         source: "media-viewer",
         forwardOptions: {
@@ -184,7 +182,7 @@ function L(e) {
   if (!("VIDEO" === t.type || h.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, _.gS)(t.url))) return null;
   let i = (0, _.s$)(t.url);
   async function c() {
-    if ((0, v.yg)(v.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, O.q)({
+    if ((0, C.yg)(C.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, O.q)({
         href: i
       }), "IMAGE" === t.type) {
       o(!0);
@@ -211,10 +209,10 @@ function R(e) {
     item: n
   } = e;
   if (!(0, _.Jj)(n.url)) return null;
-  let r = (0, _.s$)(null !== (t = n.original) && void 0 !== t ? t : n.url);
+  let r = (0, _.s$)(null != (t = n.original) ? t : n.url);
   return (0, a.jsx)(N, {
     onClick: () => {
-      (0, v.yg)(v.uG.OPEN_LINK_PRESSED), (0, O.q)({
+      (0, C.yg)(C.uG.OPEN_LINK_PRESSED), (0, O.q)({
         href: r
       })
     },
@@ -231,7 +229,7 @@ function k(e) {
     canCopyLink: i,
     onClose: c,
     onSelect: l
-  } = e, d = (null === (n = r.sourceMetadata) || void 0 === n ? void 0 : null === (t = n.identifier) || void 0 === t ? void 0 : t.type) === "attachment" ? r.sourceMetadata.identifier.attachmentId : null, p = (0, u.Z)({
+  } = e, d = (null == (n = r.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? r.sourceMetadata.identifier.attachmentId : null, p = (0, u.Z)({
     id: d,
     label: j.NW.string(j.t.nwg3lZ)
   }), m = function(e) {
@@ -246,7 +244,7 @@ function k(e) {
     }), l = Z(j.NW.string(j.t.sPO3io), "size"), u = Z(j.NW.string(j.t.eOB2eX), "alt", {
       subtextLineClamp: 2
     });
-    if ((null == r ? void 0 : null === (t = r.identifier) || void 0 === t ? void 0 : t.type) !== "attachment") return null;
+    if ((null == r || null == (t = r.identifier) ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
       p = (0, b.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
@@ -260,7 +258,7 @@ function k(e) {
     }, "media-viewer-details")
   }(r);
   async function f() {
-    (0, v.yg)(v.uG.COPY_IMAGE_PRESSED);
+    (0, C.yg)(C.uG.COPY_IMAGE_PRESSED);
     let e = (0, _.s$)(r.url);
     try {
       await S.ZP.copyImage(e), (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.bhUpvL), s.ToastType.SUCCESS))
@@ -285,8 +283,8 @@ function k(e) {
         icon: s.xPt,
         action: function() {
           var e;
-          (0, v.yg)(v.uG.COPY_LINK_PRESSED);
-          let t = (0, _.s$)(null !== (e = r.original) && void 0 !== e ? e : r.url);
+          (0, C.yg)(C.uG.COPY_LINK_PRESSED);
+          let t = (0, _.s$)(null != (e = r.original) ? e : r.url);
           h.isPlatformEmbedded ? S.ZP.copy(t) : window.navigator.clipboard.writeText(t), (0, s.showToast)((0, s.createToast)(j.NW.string(j.t["L/PwZW"]), s.ToastType.SUCCESS))
         }
       }, "media-viewer-copy-link")]
@@ -315,7 +313,7 @@ function G(e) {
   let {
     item: o
   } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = f.Sb.useSetting(), d = "IMAGE" === o.type && h.isPlatformEmbedded && null == o.children && S.ZP.canCopyImage() && (0, _.Lz)(o.url), p = (0, _.Jj)(o.url);
-  return u || d || p || (null === (n = o.sourceMetadata) || void 0 === n ? void 0 : null === (t = n.identifier) || void 0 === t ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
+  return u || d || p || (null == (n = o.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
     targetElementRef: i,
     shouldShow: c,
     align: "left",
@@ -337,7 +335,7 @@ function G(e) {
         ref: i,
         tooltipText: j.NW.string(j.t.UKOtz8),
         onClick: () => {
-          (0, v.yg)(v.uG.MORE_BUTTON_PRESSED), l(!c)
+          (0, C.yg)(C.uG.MORE_BUTTON_PRESSED), l(!c)
         },
         selected: c,
         icon: s.xhG
@@ -351,10 +349,10 @@ let B = r.memo(function(e) {
     hideMediaOptions: n
   } = e, o = (0, c.e7)([l.Z], () => l.Z.keyboardModeEnabled), s = r.useRef(null), u = r.useCallback(() => {
     var e;
-    !o && (null === (e = s.current) || void 0 === e ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
+    !o && (null == (e = s.current) ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
   }, [o]);
-  return ("IMAGE" === t.type || !n) && (0, a.jsx)(E.ZP, {
-    mode: E.lx.FOCUS_SENSITIVE,
+  return ("IMAGE" === t.type || !n) && (0, a.jsx)(v.ZP, {
+    mode: v.lx.FOCUS_SENSITIVE,
     children: e => (0, a.jsxs)("div", {
       ref: s,
       className: i()(P.actionButtons, e),

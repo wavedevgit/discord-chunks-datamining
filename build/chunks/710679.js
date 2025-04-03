@@ -14,9 +14,9 @@ var i = t(442837),
   d = t(19780),
   g = t(594174),
   p = t(15274),
-  v = t(924301),
-  h = t(951539),
-  f = t(146768),
+  h = t(924301),
+  f = t(951539),
+  v = t(146768),
   m = t(592126),
   j = t(236373),
   b = t(230900),
@@ -45,9 +45,9 @@ function P(e) {
     entity_type: R,
     image: M,
     recurrence_rule: U
-  } = C, H = (0, y.DK)(C), A = (0, i.e7)([v.ZP], () => v.ZP.isInterestedInEventRecurrence(T, H), [T, H]), z = (0, i.e7)([o.Z], () => o.Z.isLurking(_), [_]), B = (0, i.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), X = (0, i.e7)([s.Z], () => s.Z.getChannel(D), [D]), J = (0, i.e7)([g.default], () => g.default.getUser(G), [G]), {
+  } = C, H = (0, y.DK)(C), A = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(T, H), [T, H]), z = (0, i.e7)([o.Z], () => o.Z.isLurking(_), [_]), B = (0, i.e7)([a.Z], () => a.Z.getStageInstanceByChannel(D), [D]), X = (0, i.e7)([s.Z], () => s.Z.getChannel(D), [D]), J = (0, i.e7)([g.default], () => g.default.getUser(G), [G]), {
     speakers: V
-  } = (0, f.Z)({
+  } = (0, v.Z)({
     id: D,
     data: {
       guild: null,
@@ -59,7 +59,7 @@ function P(e) {
       guildId: _,
       instance: B
     }
-  }), q = (0, i.e7)([d.Z], () => d.Z.getChannelId()), K = (0, v.xt)(C), F = q === D && null != q && K, Q = V.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.CONNECT, X), [X]), ee = (0, h.ZP)(C), {
+  }), q = (0, i.e7)([d.ZP], () => d.ZP.getChannelId()), K = (0, h.xt)(C), F = q === D && null != q && K, Q = V.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.CONNECT, X), [X]), ee = (0, f.ZP)(C), {
     isMember: en,
     guild: et
   } = (0, m.Z)(_, T), er = (0, O.Z)({
@@ -98,7 +98,7 @@ function P(e) {
     name: W,
     entityType: R,
     description: null != L ? L : void 0,
-    location: null !== (n = (0, b.cS)(C)) && void 0 !== n ? n : void 0,
+    location: null != (n = (0, b.cS)(C)) ? n : void 0,
     imageSource: null != M ? (0, x.Z)(C) : void 0,
     imageLocation: Z.Q.THUMBNAIL,
     isActive: K,

@@ -33,7 +33,7 @@ function o(e) {
       let t = e.getBoundingClientRect();
       return t.height > 0 && t.width > 0 || "hidden" != r.getComputedStyle(e).overflow && Array.from(e.childNodes).some(e => 3 === e.nodeType || a(e) && i(e))
     }
-    return !!(t || i(o)) && !(!t && function e(t) {
+    return (!!t || !!i(o)) && !(!t && function e(t) {
       return "hidden" == function e(t) {
         let a, o = t.getBoundingClientRect(),
           n = t.ownerDocument,
@@ -55,8 +55,8 @@ function o(e) {
         function d(e) {
           var r, t;
           return 9 === e.nodeType ? {
-            x: (null === (r = e.defaultView) || void 0 === r ? void 0 : r.pageXOffset) || 0,
-            y: (null === (t = e.defaultView) || void 0 === t ? void 0 : t.pageYOffset) || 0
+            x: (null == (r = e.defaultView) ? void 0 : r.pageXOffset) || 0,
+            y: (null == (t = e.defaultView) ? void 0 : t.pageYOffset) || 0
           } : {
             x: e.scrollLeft,
             y: e.scrollTop

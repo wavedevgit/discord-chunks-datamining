@@ -21,8 +21,8 @@ function p(e, t) {
     reducedMotion: n
   } = i.useContext(a.Sfi), f = (0, u.$R)(t), g = (0, l.e7)([d.Z], () => d.Z.can(m.Plq.MANAGE_MESSAGES, t) && f, [t, f]), p = e.reactions.reduce((e, t) => {
     var n;
-    return (null === (n = t.count_details) || void 0 === n ? void 0 : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
-  }, []), v = (n, r) => {
+    return (null == (n = t.count_details) ? void 0 : n.vote) != null || null != e.find(e => null != e.id && e.id === t.emoji.id || e.name === t.emoji.name) ? e : [...e, t.emoji]
+  }, []), y = (n, r) => {
     n.shiftKey ? (0, c.$E)(t.id, e.id, r) : o.Z.show({
       title: b.NW.string(b.t["73GqT0"]),
       body: b.NW.string(b.t.dmy5bm),
@@ -40,9 +40,9 @@ function p(e, t) {
     children: p.map(e => {
       var t, i;
       return (0, r.jsx)(a.sNh, {
-        id: "remove-emoji-reactions-".concat(null !== (t = e.name) && void 0 !== t ? t : e.id),
+        id: "remove-emoji-reactions-".concat(null != (t = e.name) ? t : e.id),
         label: null == e.id ? e.name : ":".concat(e.name, ":"),
-        action: t => v(t, e),
+        action: t => y(t, e),
         icon: t => {
           var i, l;
           return (0, r.jsx)(h, (i = function(e) {
@@ -77,7 +77,7 @@ function p(e, t) {
           }), i))
         },
         dontCloseOnActionIfHoldingShiftKey: !0
-      }, null !== (i = e.name) && void 0 !== i ? i : e.id)
+      }, null != (i = e.name) ? i : e.id)
     })
   })
 }
@@ -96,7 +96,7 @@ function h(e) {
       id: n.id,
       animated: n.animated && (!i || a),
       size: 18
-    }) : g.ZP.getURL(null !== (t = n.name) && void 0 !== t ? t : ""),
+    }) : g.ZP.getURL(null != (t = n.name) ? t : ""),
     alt: ""
   })
 }

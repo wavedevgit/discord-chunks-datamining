@@ -1,6 +1,6 @@
 /** Chunk was on 42483 **/
 n.d(t, {
-  E: () => o,
+  E: () => c,
   l: () => d
 });
 var i, s = n(149765),
@@ -9,7 +9,7 @@ var i, s = n(149765),
   r = n(388032),
   d = ((i = {}).CREATE = "CREATE", i.GAMING = "GAMING", i.FRIENDS = "FRIENDS", i.STUDY = "STUDY", i.CLUBS = "CLUBS", i.CREATORS = "CREATORS", i.LOCAL_COMMUNITY = "LOCAL_COMMUNITY", i.SCHOOL_CLUB = "SCHOOL_CLUB", i);
 
-function o() {
+function c() {
   return {
     CREATE: {
       id: "CREATE",

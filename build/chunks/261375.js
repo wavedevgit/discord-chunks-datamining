@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 }), n(47120), n(653041);
@@ -6,8 +6,8 @@ var r = n(768433),
   i = n(710845),
   s = n(38618),
   a = n(131704),
-  o = n(314897),
-  l = n(592125),
+  l = n(314897),
+  o = n(592125),
   c = n(430824),
   d = n(496675),
   u = n(386438),
@@ -38,13 +38,13 @@ let b = new class {
         for (let [r, i] of e)(i ? t : n).push(r);
         return [t, n]
       }(r),
-      o = new Set(s);
-    return this.synced = o, h.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(o.size, " unsynced: ").concat(a.length, ")")), {
+      l = new Set(s);
+    return this.synced = l, h.verbose("loaded in ".concat(i, "ms (guilds: ").concat(n.length, ", synced: ").concat(l.size, " unsynced: ").concat(a.length, ")")), {
       all: n,
       stale: a,
       channels: n.filter(e => {
         let [t, n] = e;
-        return o.has(t)
+        return l.has(t)
       })
     }
   }
@@ -55,7 +55,7 @@ let b = new class {
     null != e.channel.guild_id && this.unsync(e.channel.guild_id, t)
   }
   handleChannelUpdates(e, t) {
-    for (let n of e.channels.filter(e => null != e.guild_id)) f(l.Z.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
+    for (let n of e.channels.filter(e => null != e.guild_id)) f(o.Z.getBasicChannel(n.id), n) && this.unsync(n.guild_id, t)
   }
   handleBackgroundSync(e, t) {
     for (let s of e.guilds) switch (s.data_mode) {
@@ -64,7 +64,7 @@ let b = new class {
       case "partial":
         var n, r, i;
         let e = e => (0, a.q_)(e, s.id);
-        this.onGuildUpdate(s.id, null !== (r = null === (n = s.partial_updates.channels) || void 0 === n ? void 0 : n.map(e)) && void 0 !== r ? r : [], null !== (i = s.partial_updates.deleted_channel_ids) && void 0 !== i ? i : [], t);
+        this.onGuildUpdate(s.id, null != (r = null == (n = s.partial_updates.channels) ? void 0 : n.map(e)) ? r : [], null != (i = s.partial_updates.deleted_channel_ids) ? i : [], t);
         break;
       default:
         this.onGuildSync(s.id, t)
@@ -84,7 +84,7 @@ let b = new class {
       if (!this.synced.has(r)) {
         h.verbose("optimstically writing basic_channels (guild: ".concat(r, ")"));
         try {
-          await l.o.loadGuildIds([r]), await t.transaction(e => this.syncOne(r, e), "handlePostConnectionOpen")
+          await o.o.loadGuildIds([r]), await t.transaction(e => this.syncOne(r, e), "handlePostConnectionOpen")
         } catch (e) {
           h.warn("couldn't optimstically write basic_channel:", e);
           return
@@ -111,7 +111,7 @@ let b = new class {
     (null == r || n.permissions !== r.permissions) && this.unsync(e.guildId, t)
   }
   handleGuildMemberUpdate(e, t) {
-    e.user.id === o.default.getId() && this.unsync(e.guildId, t)
+    e.user.id === l.default.getId() && this.unsync(e.guildId, t)
   }
   handleWriteCaches(e, t) {
     this.sync(t)
@@ -120,7 +120,7 @@ let b = new class {
     this.synced = null
   }
   onGuildUpdate(e, t, n, r) {
-    (n.length > 0 || t.some(e => f(l.Z.getBasicChannel(e.id), e))) && this.unsync(e, r)
+    (n.length > 0 || t.some(e => f(o.Z.getBasicChannel(e.id), e))) && this.unsync(e, r)
   }
   onGuildSync(e, t) {
     this.unsync(e, t)
@@ -130,7 +130,7 @@ let b = new class {
   }
   unsync(e, t) {
     var n;
-    null === (n = this.synced) || void 0 === n || n.delete(e), m.Z.basicChannelsTransaction(t).delete(e), m.Z.syncedBasicChannelsTransaction(t).put(e, !1), g.Z.invalidate(e)
+    null == (n = this.synced) || n.delete(e), m.Z.basicChannelsTransaction(t).delete(e), m.Z.syncedBasicChannelsTransaction(t).put(e, !1), g.Z.invalidate(e)
   }
   sync(e) {
     h.verbose("Starting to write all basic channels");
@@ -145,7 +145,7 @@ let b = new class {
   }
   syncOne(e, t) {
     var n, r, i;
-    return !(null == c.Z.getGuild(e) || (null === (n = this.synced) || void 0 === n ? void 0 : n.has(e))) && (null === (r = this.synced) || void 0 === r || r.add(e), m.Z.basicChannelsTransaction(t).put(e, (i = e, Object.values(l.Z.getMutableGuildChannelsForGuild(i)).map(e => ({
+    return !(null == c.Z.getGuild(e) || (null == (n = this.synced) ? void 0 : n.has(e))) && (null == (r = this.synced) || r.add(e), m.Z.basicChannelsTransaction(t).put(e, (i = e, Object.values(o.Z.getMutableGuildChannelsForGuild(i)).map(e => ({
       id: e.id,
       type: e.type,
       guild_id: e.guild_id,

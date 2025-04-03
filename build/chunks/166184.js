@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(768581),
   p = n(624138),
   h = n(388032),
-  f = n(105702),
+  f = n(192639),
   b = n(129512),
   x = n(330065);
 let j = [16, 16, 14, 14, 12, 10, 8],
@@ -25,16 +25,16 @@ let j = [16, 16, 14, 14, 12, 10, 8],
     let {
       guild: s,
       disabled: N,
-      small: v,
-      loading: _ = !1,
+      small: _,
+      loading: v = !1,
       description: C,
       memberCount: O,
       presenceCount: y,
       className: I
     } = e, E = (0, c.ZP)(), [S, T] = i.useState(!1);
-    if (null == s || _) return (0, r.jsx)("div", {
+    if (null == s || v) return (0, r.jsx)("div", {
       className: a()(I, f.card, f.cardPlaceholder, {
-        [f.cardSmall]: v,
+        [f.cardSmall]: _,
         [f.cardDisabled]: N
       })
     });
@@ -44,11 +44,11 @@ let j = [16, 16, 14, 14, 12, 10, 8],
       id: s.id,
       splash: s.discoverySplash,
       size: 240 * (0, m.x_)()
-    }), R = (0, l.wj)(E) ? b : x, Z = null !== (t = g.ZP.getGuildIconURL({
+    }), R = (0, l.wj)(E) ? b : x, Z = null != (t = g.ZP.getGuildIconURL({
       id: s.id,
       icon: s.icon,
       size: 40
-    })) && void 0 !== t ? t : void 0, D = null != s.description ? s.description : C, A = null != O ? O : null == s ? void 0 : s.memberCount, k = null != y ? y : null == s ? void 0 : s.presenceCount, W = null;
+    })) ? t : void 0, D = null != s.description ? s.description : C, A = null != O ? O : null == s ? void 0 : s.memberCount, k = null != y ? y : null == s ? void 0 : s.presenceCount, W = null;
     if (null != Z) W = (0, r.jsx)("img", {
       src: Z,
       alt: "",
@@ -61,7 +61,7 @@ let j = [16, 16, 14, 14, 12, 10, 8],
         children: (0, r.jsx)(o.Text, {
           className: f.acronym,
           style: {
-            fontSize: null !== (n = j[e.length]) && void 0 !== n ? n : j[j.length - 1]
+            fontSize: null != (n = j[e.length]) ? n : j[j.length - 1]
           },
           variant: "text-sm/normal",
           children: e
@@ -70,7 +70,7 @@ let j = [16, 16, 14, 14, 12, 10, 8],
     }
     return (0, r.jsxs)("div", {
       className: a()(I, f.card, {
-        [f.cardSmall]: v,
+        [f.cardSmall]: _,
         [f.cardDisabled]: N,
         [f.splashLoaded]: S
       }),
@@ -133,7 +133,7 @@ let j = [16, 16, 14, 14, 12, 10, 8],
               className: f.dotOnline
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
-              children: v ? h.NW.formatToPlainString(h.t.YMor7u, {
+              children: _ ? h.NW.formatToPlainString(h.t.YMor7u, {
                 count: k
               }) : h.NW.formatToPlainString(h.t["LC+S+v"], {
                 membersOnline: k
@@ -145,7 +145,7 @@ let j = [16, 16, 14, 14, 12, 10, 8],
               className: f.dotOffline
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
-              children: v ? h.NW.formatToPlainString(h.t.YMor7u, {
+              children: _ ? h.NW.formatToPlainString(h.t.YMor7u, {
                 count: A
               }) : h.NW.formatToPlainString(h.t.zRl6XV, {
                 count: A

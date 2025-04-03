@@ -38,7 +38,7 @@ function c(e) {
     {
       enabled: n
     } = r.useExperiment({
-      guildId: null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : a.lds,
+      guildId: null != (t = null == e ? void 0 : e.id) ? t : a.lds,
       location: "dd4beb_3"
     }, {
       autoTrackExposure: !0

@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(756647),
   l = n(481060),
-  o = n(570140),
-  a = n(355467),
+  a = n(570140),
+  o = n(355467),
   s = n(899742),
   c = n(493683),
   u = n(457330),
@@ -22,9 +22,9 @@ var i = n(756647),
   E = n(962220),
   O = n(69580),
   N = n(703656),
-  v = n(314897),
-  y = n(553795),
-  I = n(594174),
+  y = n(314897),
+  I = n(553795),
+  v = n(594174),
   C = n(626135),
   S = n(585483),
   T = n(591759),
@@ -75,7 +75,7 @@ let w = {
       if (null == n) throw new j.Z({
         errorCode: Z.lTL.INVALID_INVITE
       }, "Invalid invite id: ".concat(t));
-      return v.default.isAuthenticated() ? o.Z.dispatch({
+      return y.default.isAuthenticated() ? a.Z.dispatch({
         type: "INVITE_MODAL_OPEN",
         invite: n,
         code: t,
@@ -94,7 +94,7 @@ let w = {
           code: t
         }
       } = e;
-      if (null == I.default.getCurrentUser()) return;
+      if (null == v.default.getCurrentUser()) return;
       let {
         guildTemplate: i
       } = await E.Z.resolveGuildTemplate(t);
@@ -104,7 +104,7 @@ let w = {
       return P.ZP.focus(), (0, l.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("10778"), n.e("25289")]).then(n.bind(n, 766775));
+        } = await Promise.all([n.e("10778"), n.e("44044")]).then(n.bind(n, 766775));
         return t => {
           var n, l;
           return (0, r.jsx)(e, (n = x({}, t), l = l = {
@@ -135,10 +135,10 @@ let w = {
         }
       } = e;
       return new Promise((e, i) => {
-        o.Z.wait(() => {
+        a.Z.wait(() => {
           d.Z.resolveGiftCode(t, !0, !0).then(i => {
             let {
-              giftCode: o
+              giftCode: a
             } = i;
             P.ZP.focus(), C.default.track(Z.rMx.OPEN_MODAL, {
               type: "gift_accept",
@@ -146,12 +146,12 @@ let w = {
             }), (0, l.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("92446"), n.e("63153")]).then(n.bind(n, 409858));
+              } = await Promise.all([n.e("92446"), n.e("43310")]).then(n.bind(n, 409858));
               return n => (0, r.jsx)(e, x({
                 code: t
               }, n))
             }), e({
-              giftCode: o
+              giftCode: a
             })
           }).catch(() => i(new j.Z({
             errorCode: Z.lTL.INVALID_GIFT_CODE
@@ -233,9 +233,9 @@ let w = {
             let i = h.ZP.getCurrentEmbeddedActivity();
             if ((null == i ? void 0 : i.applicationId) === e) return;
             let l = await b.ZP.fetchApplication(n.applicationId),
-              o = null == l ? void 0 : null === (r = l.bot) || void 0 === r ? void 0 : r.id;
-            if (null == o) return;
-            let a = await c.Z.openPrivateChannel(o),
+              a = null == l || null == (r = l.bot) ? void 0 : r.id;
+            if (null == a) return;
+            let o = await c.Z.openPrivateChannel(a),
               s = new URL(t),
               {
                 customId: u,
@@ -243,7 +243,7 @@ let w = {
               } = await (0, g.u)(e, s.searchParams.get("link_id"), s.searchParams.get("custom_id"), s.searchParams.get("referrer_id"));
             await (0, f.Z)({
               targetApplicationId: e,
-              channelId: a,
+              channelId: o,
               analyticsLocations: [m.Z.DEEPLINK],
               customId: u,
               referrerId: d
@@ -279,11 +279,11 @@ let w = {
       } = e;
       if (!_.g.getCurrentConfig({
           location: "private.CONNECTIONS_CALLBACK"
-        }).enabled && !y.Z.hasPendingAuthorizedState(l)) throw new j.Z({
+        }).enabled && !I.Z.hasPendingAuthorizedState(l)) throw new j.Z({
         errorCode: Z.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
-        return y.Z.deletePendingAuthorizedState(l), await u.Z.callback(t, {
+        return I.Z.deletePendingAuthorizedState(l), await u.Z.callback(t, {
           code: n,
           openid_params: r,
           iss: i,
@@ -307,7 +307,7 @@ let w = {
           query: r
         }
       } = e;
-      return (0, a.rt)({
+      return (0, o.rt)({
         paymentSourceType: Z.HeQ.PAYPAL,
         state: t,
         path: n,
@@ -326,7 +326,7 @@ let w = {
           payment_source_type: i
         }
       } = e;
-      return (0, a.rt)({
+      return (0, o.rt)({
         paymentSourceType: i,
         state: t,
         path: n,

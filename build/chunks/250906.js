@@ -18,7 +18,7 @@ class r {
   }
   drop() {
     var t;
-    null === (t = this.native) || void 0 === t || t.drop(), this.native = null
+    null == (t = this.native) || t.drop(), this.native = null
   }
   requireFrame(t) {
     null != this.native && (this.renderedFrames.has(t) || (this.paint(t), this.renderedFrames.add(t)), this.renderedFrames.size === this.frameCount && this.drop())
@@ -28,7 +28,7 @@ class r {
       var e;
       let i = new ImageData(this.native.get_bgra(t, this.frameWidth, this.frameHeight), this.frameWidth, this.frameHeight),
         [n, r, s, h] = a(t, this.frameWidth, this.frameHeight, this.cells);
-      null === (e = this.context) || void 0 === e || e.putImageData(i, n, r, 0, 0, s, h)
+      null == (e = this.context) || e.putImageData(i, n, r, 0, 0, s, h)
     }
   }
   constructor(t, e, i, r) {

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -18,14 +18,14 @@ var r, i, s, a = n(442837),
   x = n(981631);
 let j = new Set,
   N = f.PG.LANDING,
-  v = null;
+  _ = null;
 
-function _(e) {
+function v(e) {
   let {
     subsection: t
   } = e;
-  if (d.Z.getGuildId() === v) return !1;
-  N = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, v = d.Z.getGuildId()
+  if (d.Z.getGuildId() === _) return !1;
+  N = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, _ = d.Z.getGuildId()
 }
 class C extends(r = a.ZP.Store) {
   initialize() {
@@ -38,24 +38,27 @@ class C extends(r = a.ZP.Store) {
     return N
   }
   hasChanges() {
-    if (null == v) return !1;
-    let e = o.Z.isAdvancedMode(v);
-    return N === f.PG.DEFAULT_CHANNELS ? e ? g.Z.hasChanges() || h.Z.hasChanges() : g.Z.hasChanges() : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.hasChanges() : N === f.PG.HOME_SETTINGS && p.Z.hasChanges()
+    if (null == _) return !1;
+    let e = o.Z.isAdvancedMode(_);
+    if (N === f.PG.DEFAULT_CHANNELS)
+      if (e) return g.Z.hasChanges() || h.Z.hasChanges();
+      else return g.Z.hasChanges();
+    return N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.hasChanges() : N === f.PG.HOME_SETTINGS && p.Z.hasChanges()
   }
   hasConfiguredAnythingForCurrentStep() {
-    return null != v && (N === f.PG.SAFETY_CHECK || (N === f.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.editedOnboardingPrompts.length > 0 : N === f.PG.HOME_SETTINGS && !(0, c.av)(p.Z.getSettings())))
+    return null != _ && (N === f.PG.SAFETY_CHECK || (N === f.PG.DEFAULT_CHANNELS ? g.Z.editedDefaultChannelIds.size > 0 : N === f.PG.CUSTOMIZATION_QUESTIONS ? h.Z.editedOnboardingPrompts.length > 0 : N === f.PG.HOME_SETTINGS && !(0, c.av)(p.Z.getSettings())))
   }
   hasErrors() {
     return N === f.PG.CUSTOMIZATION_QUESTIONS && null != h.Z.errors.find(e => null != e)
   }
   showNotice() {
-    if (null == v) return !1;
-    if ((0, b.C)(v)) return this.hasChanges();
+    if (null == _) return !1;
+    if ((0, b.C)(_)) return this.hasChanges();
     let e = u.Z.getCurrentPage();
     return (N !== f.PG.SAFETY_CHECK || e === m.u.OVERVIEW) && null != N && N !== f.PG.LANDING
   }
   canCloseEarly() {
-    return null == v || !this.hasErrors() && (!(0, b.C)(v) || !this.hasChanges())
+    return null == _ || !this.hasErrors() && (!(0, b.C)(_) || !this.hasChanges())
   }
 }
 s = "GuildSettingsOnboardingStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
@@ -65,8 +68,8 @@ s = "GuildSettingsOnboardingStore", (i = "displayName") in C ? Object.defineProp
   writable: !0
 }) : C[i] = s;
 let O = new C(l.Z, {
-  GUILD_SETTINGS_INIT: _,
-  GUILD_SETTINGS_SET_SECTION: _,
+  GUILD_SETTINGS_INIT: v,
+  GUILD_SETTINGS_SET_SECTION: v,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {
     let {
       step: t

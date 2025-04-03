@@ -87,8 +87,8 @@ function x(e) {
       } = e;
       i && (0, s.Kw)(u.v.VOICE_FILTER_FEEDBACK), null != o && (0, l.Z)(c.rMx.VOICE_FILTER_FEEDBACK, {
         rating: o,
-        reasonCode: null !== (t = null == a ? void 0 : a.code) && void 0 !== t ? t : null,
-        reasonDescription: null !== (n = null == a ? void 0 : a.value) && void 0 !== n ? n : null,
+        reasonCode: null != (t = null == a ? void 0 : a.code) ? t : null,
+        reasonDescription: null != (n = null == a ? void 0 : a.value) ? n : null,
         feedback: d,
         analyticsData: r
       })

@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   i = n(512969),
-  l = n(215569);
+  c = n(215569);
 
-function c(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -72,21 +72,21 @@ class u extends o.Component {
         let t = e.props,
           {
             component: r,
-            render: l
+            render: c
           } = t,
           h = a(t, ["component", "render"]),
           p = h.path || h.from;
-        null != (f = null != p ? (0, i.LX)(n.pathname, s(c({}, h), {
+        null != (f = null != p ? (0, i.LX)(n.pathname, s(l({}, h), {
           path: p
-        })) : null) && (h = s(c({}, h), {
+        })) : null) && (h = s(l({}, h), {
           key: p,
           location: n,
           match: f,
           history: u,
           staticContext: d
-        }), null != r ? b = o.createElement(r, h) : null != l && (b = l(h)))
+        }), null != r ? b = o.createElement(r, h) : null != c && (b = c(h)))
       }
-    }), (0, r.jsx)(l.W, s(c({}, p), {
+    }), (0, r.jsx)(c.W, s(l({}, p), {
       children: b
     }))
   }

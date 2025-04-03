@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(175470),
   f = n(569545),
   m = n(314910),
-  p = n(764777);
+  p = n(83773);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -36,11 +36,11 @@ function g(e) {
 let E = {
     visibility: "hidden"
   },
-  v = {
+  h = {
     precision: 1e-4,
     duration: 300
   },
-  h = {
+  v = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
@@ -62,7 +62,7 @@ function S(e) {
   }, [Z]);
   let N = () => {
       var e;
-      let t = null === (e = y.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
+      let t = null == (e = y.current) ? void 0 : e.getBoundingClientRect();
       return null == t || n ? E : {
         width: t.width,
         height: t.height,
@@ -94,7 +94,7 @@ function S(e) {
       enter: {
         opacity: 0
       },
-      config: v
+      config: h
     }, "animate-always"),
     R = (0, l.useRef)(null),
     A = (0, s.Yzy)(j, {
@@ -120,7 +120,7 @@ function S(e) {
           left: x.current.left + 12
         }
       })())),
-      config: S.enabled ? b : h,
+      config: S.enabled ? b : v,
       onRest: (e, t) => {
         null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(Z, t.item.timestamp)
       }

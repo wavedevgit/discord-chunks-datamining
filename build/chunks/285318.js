@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -8,7 +8,7 @@ var r = n(200651),
   s = n(481060),
   a = n(273504),
   l = n(388032),
-  o = n(294955);
+  o = n(274117);
 
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -103,7 +103,7 @@ function m(e) {
   let {
     rule: n,
     onChangeRule: s
-  } = e, [l, o] = i.useState(new Set(null == n ? void 0 : null === (t = n.triggerMetadata) || void 0 === t ? void 0 : t.presets)), m = i.useMemo(() => e => {
+  } = e, [l, o] = i.useState(new Set(null == n || null == (t = n.triggerMetadata) ? void 0 : t.presets)), m = i.useMemo(() => e => {
     s(d(c({}, n), {
       triggerMetadata: d(c({}, n.triggerMetadata), {
         presets: e

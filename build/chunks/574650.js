@@ -19,8 +19,8 @@ var i = n(120356),
   O = n(981631),
   T = n(176505),
   S = n(388032),
-  p = n(597704),
-  f = n(936958);
+  p = n(246752),
+  f = n(240211);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -46,9 +46,9 @@ let R = () => {
     R = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
     P = (0, a.e7)([N.Z], () => null != i ? N.Z.getRequest(i) : null, [i]),
     C = (0, o.TH)(),
-    g = (null === (e = (0, o.LX)(C.pathname, O.Z5c.CHANNEL(null == R ? void 0 : R.id, T.oC.GUILD_ONBOARDING))) || void 0 === e ? void 0 : e.isExact) === !0;
+    g = (null == (e = (0, o.LX)(C.pathname, O.Z5c.CHANNEL(null == R ? void 0 : R.id, T.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
   if (null == R || !(0, I.Dc)(R) || g) return null;
-  let m = null !== (t = null == P ? void 0 : P.applicationStatus) && void 0 !== t ? t : _.wB.STARTED,
+  let m = null != (t = null == P ? void 0 : P.applicationStatus) ? t : _.wB.STARTED,
     D = null,
     y = null,
     h = null,

@@ -21,7 +21,7 @@ function u(e) {
   }, [n]), (0, r.jsx)(l.v2r, {
     onSelect: e.onSelect,
     navId: "dev-context",
-    "aria-label": null !== (t = e["aria-label"]) && void 0 !== t ? t : o.NW.string(o.t.ogxXGh),
+    "aria-label": null != (t = e["aria-label"]) ? t : o.NW.string(o.t.ogxXGh),
     onClose: a.Zy,
     children: n
   })

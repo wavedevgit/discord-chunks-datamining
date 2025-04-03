@@ -18,7 +18,7 @@ var r = n(200651),
   E = n(981631),
   y = n(689079),
   O = n(388032),
-  m = n(410769);
+  m = n(547607);
 let g = e => {
   let t, {
       commandType: n,
@@ -35,16 +35,16 @@ let g = e => {
       guildId: null == Z ? void 0 : Z.id,
       context: N
     }),
-    R = i.useMemo(() => ({
+    P = i.useMemo(() => ({
       channel: g,
       type: "channel"
     }), [g]),
     {
-      commands: T,
-      sectionDescriptors: P,
+      commands: R,
+      sectionDescriptors: T,
       loading: _
     } = d.wi({
-      context: R,
+      context: P,
       filters: {
         commandTypes: [n]
       },
@@ -57,12 +57,12 @@ let g = e => {
       sections: S
     } = i.useMemo(() => {
       let e = {};
-      return P.forEach(t => {
+      return T.forEach(t => {
         e[t.id] = t
       }), {
         sections: e
       }
-    }, [P]),
+    }, [T]),
     j = i.useRef(_);
   i.useEffect(() => {
     _ !== j.current && (j.current = _, null == b || b())
@@ -98,16 +98,15 @@ let g = e => {
       id: "menu-commands-placeholder",
       render: () => (0, r.jsx)(p.Z, {}),
       disabled: !0
-    }, "menu-commands-placeholder") : (t = 0 === T.length ? (0, r.jsx)(u.sNh, {
+    }, "menu-commands-placeholder") : (t = 0 === R.length ? (0, r.jsx)(u.sNh, {
       id: "menu-commands-empty",
       label: O.NW.string(O.t.YSNlV1),
       disabled: !0
-    }, "menu-commands-empty") : T.map(U), null != I && I.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
+    }, "menu-commands-empty") : R.map(U), null != I && I.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(u.Clw, {}, "separator"), I]
-    }))), !E.TPd.TEXTUAL.has(g.type)) {
+    }))), !E.TPd.TEXTUAL.has(g.type))
     if (null == I) return null;
-    t = I
-  }
+    else t = I;
   return (0, r.jsx)(u.sNh, {
     id: "apps",
     label: O.NW.string(O.t.PHjkRE),

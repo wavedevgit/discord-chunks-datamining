@@ -26,8 +26,8 @@ function i(e, t) {
     stream: o,
     speaking: u,
     ringing: c,
-    muted: null !== (n = null == s ? void 0 : s.isVoiceMuted()) && void 0 !== n && n,
-    deafen: null !== (i = null == s ? void 0 : s.isVoiceDeafened()) && void 0 !== i && i,
+    muted: null != (n = null == s ? void 0 : s.isVoiceMuted()) && n,
+    deafen: null != (i = null == s ? void 0 : s.isVoiceDeafened()) && i,
     mirror: e.type === l.fO.USER && e.user.id === t,
     hasVideo: (0, r.ZP)(e)
   }

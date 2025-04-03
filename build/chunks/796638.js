@@ -1,7 +1,7 @@
 /** Chunk was on 75862 **/
 n.d(t, {
-  ZB: () => v,
-  ZP: () => h,
+  ZB: () => h,
+  ZP: () => v,
   cF: () => m
 }), n(47120), n(653041);
 var r = n(200651),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(823379),
   c = n(27457),
   d = n(354459),
-  f = n(124197);
+  f = n(921500);
 let m = 112,
   p = 16 / 9 * 112 + 8,
   g = 10 * s.Z.Millis.SECOND;
@@ -21,10 +21,10 @@ let m = 112,
 function E(e) {
   var t;
   let n = o.default.getId();
-  return e.type === d.fO.USER && e.user.id === n && (null === (t = e.voiceState) || void 0 === t ? void 0 : t.selfVideo)
+  return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? void 0 : t.selfVideo)
 }
 
-function v(e, t) {
+function h(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
       tileWidth: p,
       tileMinWidth: 124,
@@ -40,10 +40,10 @@ function v(e, t) {
       cropSelfVideo: f,
       version: m
     } = n,
-    [v, h] = l.useState(Date.now());
+    [h, v] = l.useState(Date.now());
   l.useEffect(() => {
     let e = setTimeout(() => {
-      h(Date.now())
+      v(Date.now())
     }, g);
     return () => {
       clearTimeout(e)
@@ -68,16 +68,16 @@ function v(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < g ? r = "\x04" : (null === (n = e.voiceState) || void 0 === n ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < g ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
         [m, p] = (0, i.partition)(l, d.Io),
-        v = m.findIndex(E),
-        h = null; - 1 !== v && (h = m[v], m.splice(v, 1));
-      let S = null == h || f ? e : e - r - s,
+        h = m.findIndex(E),
+        v = null; - 1 !== h && (v = m[h], m.splice(h, 1));
+      let S = null == v || f ? e : e - r - s,
         y = Math.max(0, Math.min(Math.floor((S - s) / (o + s)), c, t.length)),
         O = Math.min((S - s) / y - s, r),
         Z = Math.max(0, y - p.length),
@@ -97,22 +97,21 @@ function v(e, t) {
           x[t] = n
         }
       }
-      let N = x.filter(u.lm),
-        _ = (0, i.keyBy)((0, i.range)(N.length), e => N[e].id);
-      b.current = _;
-      let w = [...I, ...N];
-      return null != h && (f && w.length >= y ? w[Math.max(0, w.length - 1)] = h : w.push(h)), {
-        visibleParticipants: w,
+      let N = x.filter(u.lm);
+      b.current = (0, i.keyBy)((0, i.range)(N.length), e => N[e].id);
+      let _ = [...I, ...N];
+      return null != v && (f && _.length >= y ? _[Math.max(0, _.length - 1)] = v : _.push(v)), {
+        visibleParticipants: _,
         participantTileWidth: O
       }
-    }, [e, t, v, m, f, c, s, o, r]);
+    }, [e, t, h, m, f, c, s, o, r]);
   return {
     visibleParticipants: S,
     participantTileWidth: y
   }
 }
 
-function h(e) {
+function v(e) {
   let {
     participants: t,
     participantTileWidth: n,

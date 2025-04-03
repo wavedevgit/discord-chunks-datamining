@@ -13,8 +13,8 @@ var l = n(557533),
   u = n(777207),
   s = n(692547),
   c = n(330711),
-  d = n(496922),
-  p = n(739011);
+  d = n(812743),
+  p = n(820468);
 let f = 5;
 
 function b(e) {
@@ -24,9 +24,9 @@ function b(e) {
     renderPurchaseButton: l,
     onPurchase: b,
     title: O,
-    onDetails: v,
-    benefitItems: m,
-    benefitsSummary: y,
+    onDetails: m,
+    benefitItems: y,
+    benefitsSummary: v,
     subtitle: g,
     maxBenefits: h = f
   } = e;
@@ -35,7 +35,7 @@ function b(e) {
       className: i()(d.container, p.hoverCard),
       tabIndex: 0,
       onClick: () => {
-        null != v ? v() : null != b && b()
+        null != m ? m() : null != b && b()
       },
       children: [(0, r.jsx)("div", {
         className: d.card,
@@ -68,16 +68,16 @@ function b(e) {
             children: t
           })]
         })
-      }), null != y && (0, r.jsx)("div", {
+      }), null != v && (0, r.jsx)("div", {
         className: d.benefitsSummary,
         children: (0, r.jsx)(u.x, {
           color: "interactive-normal",
           variant: "text-sm/medium",
           children: c.Z.Messages.STOREFRONT_BENEFITS_SUMMARY.format({
-            count: y
+            count: v
           })
         })
-      }), null != m && m.length > 0 && (0, r.jsx)("div", {
+      }), null != y && y.length > 0 && (0, r.jsx)("div", {
         className: d.benefits,
         children: (0, r.jsx)("div", {
           className: d.benefitsContainer,
@@ -87,15 +87,15 @@ function b(e) {
               color: "header-secondary",
               variant: "eyebrow",
               children: c.Z.Messages.STOREFRONT_BENEFITS_TITLE
-            }), m.length > h ? (0, r.jsxs)(r.Fragment, {
-              children: [m.slice(0, h), (0, r.jsx)(u.x, {
+            }), y.length > h ? (0, r.jsxs)(r.Fragment, {
+              children: [y.slice(0, h), (0, r.jsx)(u.x, {
                 variant: "text-md/semibold",
                 color: "text-secondary",
                 children: c.Z.Messages.STOREFRONT_MORE_BENEFITS.format({
-                  count: m.length - h
+                  count: y.length - h
                 })
               })]
-            }) : m]
+            }) : y]
           })
         })
       })]

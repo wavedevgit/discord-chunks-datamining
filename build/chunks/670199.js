@@ -14,7 +14,7 @@ var s = t(120356),
   x = t(97568),
   m = t(800530),
   N = t(388032),
-  u = t(676181);
+  u = t(91463);
 
 function h(e) {
   var n, t;
@@ -26,7 +26,7 @@ function h(e) {
     className: p,
     onClose: g,
     onNext: j
-  } = e, I = (0, c.n)(), k = null !== (n = null == s ? void 0 : s.explainer_link) && void 0 !== n ? n : "", E = null != s && null != s.flagged_content && s.flagged_content.length > 0, T = (0, o.c7)(null == s ? void 0 : s.description), v = !_ && !C, f = null != s && ((0, o.FB)(s) || E);
+  } = e, I = (0, c.n)(), k = null != (n = null == s ? void 0 : s.explainer_link) ? n : "", E = null != s && null != s.flagged_content && s.flagged_content.length > 0, T = (0, o.c7)(null == s ? void 0 : s.description), f = !_ && !C, S = null != s && ((0, o.FB)(s) || E);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       direction: r.Z.Direction.VERTICAL,
@@ -46,10 +46,10 @@ function h(e) {
         onClick: g
       })]
     }), (0, i.jsxs)(l.hzk, {
-      className: a()(u.modalContent, !f && u.evidenceOffset, p),
+      className: a()(u.modalContent, !S && u.evidenceOffset, p),
       paddingFix: !1,
-      children: [f && (0, i.jsx)(x.s, {
-        flaggedContent: null !== (t = s.flagged_content) && void 0 !== t ? t : []
+      children: [S && (0, i.jsx)(x.s, {
+        flaggedContent: null != (t = s.flagged_content) ? t : []
       }), (0, i.jsx)(l.Text, {
         className: u.optionHeader,
         color: "header-secondary",
@@ -73,12 +73,12 @@ function h(e) {
         text: N.NW.string(N.t["Vtyn//"]),
         url: k,
         onClick: () => I(m.n0.ClickLearnMoreLink)
-      }), v && h && (0, i.jsx)(l.Text, {
+      }), f && h && (0, i.jsx)(l.Text, {
         className: u.learnMore,
         variant: "text-xs/normal",
         children: N.NW.format(N.t.WMUgCQ, {})
       })]
-    }), v && (0, i.jsx)(l.mzw, {
+    }), f && (0, i.jsx)(l.mzw, {
       children: (0, i.jsx)(l.zxk, {
         onClick: j,
         color: l.zxk.Colors.BRAND,

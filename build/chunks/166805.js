@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   P: () => C
@@ -21,16 +21,16 @@ var r = n(200651),
   x = n(24318),
   j = n(822693),
   N = n(388032),
-  v = n(457980);
+  _ = n(832721);
 
-function _(e) {
+function v(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: g,
-    fetchStatus: _
-  } = (0, m.u)(t), C = _ !== u.a.FETCHED, {
+    fetchStatus: v
+  } = (0, m.u)(t), C = v !== u.a.FETCHED, {
     fetchedEmbed: O,
     embedEnabled: y,
     embedChannelId: I
@@ -67,11 +67,11 @@ function _(e) {
     }), R ? (0, r.jsx)(a.xv, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: v.subtext,
+      className: _.subtext,
       children: Z ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: v.divider
+        className: _.divider
       }), (0, r.jsx)(o.vwX, {
         children: N.NW.string(N.t.LUo0Q0)
       }), (0, r.jsx)(j.m, {
@@ -82,19 +82,19 @@ function _(e) {
       }), (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: v.subtext,
+        className: _.subtext,
         children: N.NW.string(N.t.LxVR9P)
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.TRyLUl)
           }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.VECJcH)
           }), (0, r.jsx)(d.Z, {
@@ -102,11 +102,11 @@ function _(e) {
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: v.divider
+        className: _.divider
       }), (0, r.jsxs)("div", {
-        className: v.twoColumns,
+        className: _.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: v.column,
+          className: _.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
@@ -114,11 +114,11 @@ function _(e) {
           }), (0, r.jsx)(a.xv, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            className: v.subtext,
+            className: _.subtext,
             children: N.NW.string(N.t["+baN19"])
           })]
         }), (0, r.jsx)("img", {
-          className: v.column,
+          className: _.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -137,9 +137,9 @@ function C(e) {
     children: [(0, r.jsx)(a.xv, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: v.description,
+      className: _.description,
       children: N.NW.string(N.t["dNn/1t"])
-    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
+    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
       guildId: t
     })]
   })

@@ -9,13 +9,13 @@ var i = n(200651),
   l = n(481060),
   r = n(493683),
   d = n(881052),
-  o = n(600164),
-  c = n(313201),
+  c = n(600164),
+  o = n(313201),
   C = n(565138),
   m = n(984933),
   p = n(430824),
   N = n(388032),
-  u = n(624265);
+  u = n(78389);
 
 function L(e) {
   let {
@@ -24,10 +24,10 @@ function L(e) {
     onClose: L,
     onChannelPromptCompleted: _,
     isSlideReady: g
-  } = e, [x, T] = s.useState(""), [E, h] = s.useState(null), [I, G] = s.useState(!1), W = (0, c.Dt)(), D = (0, a.e7)([p.Z], () => p.Z.getGuild(t), [t]), y = s.useRef(null);
+  } = e, [x, T] = s.useState(""), [E, h] = s.useState(null), [I, G] = s.useState(!1), W = (0, o.Dt)(), D = (0, a.e7)([p.Z], () => p.Z.getGuild(t), [t]), y = s.useRef(null);
   s.useEffect(() => {
     var e;
-    g && (null === (e = y.current) || void 0 === e || e.focus())
+    g && (null == (e = y.current) || e.focus())
   }, [g]);
   let U = s.useCallback(async e => {
       if (e.preventDefault(), null == D) return;
@@ -62,7 +62,7 @@ function L(e) {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.xBx, {
         className: u.header,
-        direction: o.Z.Direction.VERTICAL,
+        direction: c.Z.Direction.VERTICAL,
         separator: !1,
         children: [null != D && (0, i.jsx)(C.Z, {
           guild: D

@@ -25,7 +25,7 @@ var l = n(200651),
   g = n(280501),
   N = n(892902),
   h = n(359232);
-let v = e => {
+let O = e => {
     switch (e.type) {
       case d.re.BUTTON:
         return e.style !== d.ZJ.LINK;
@@ -40,19 +40,19 @@ let v = e => {
         return !1
     }
   },
-  O = function(e, t) {
+  A = function(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
       l = g.gH.NORMAL;
-    return null != e && e.state !== T.F.FAILED && (e.data.interactionType === d.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? l = g.gH.LOADING : v(t) && (l = g.gH.DISABLED)), n && (l = g.gH.DISABLED), l
+    return null != e && e.state !== T.F.FAILED && (e.data.interactionType === d.B8.MESSAGE_COMPONENT && e.data.componentId === t.id ? l = g.gH.LOADING : O(t) && (l = g.gH.DISABLED)), n && (l = g.gH.DISABLED), l
   },
-  A = e => {
+  v = e => {
     let t = S.Z.getChannel(e),
       n = (0, r.e7)([C.Z], () => (null == t ? void 0 : t.guild_id) == null || C.Z.canChatInGuild(t.guild_id), [t]),
       l = (0, r.e7)([p.Z], () => (null == t ? void 0 : t.guild_id) != null && p.Z.isLurking(t.guild_id), [t]),
       i = (0, r.e7)([f.ZP, _.default], () => {
         var e, n;
         let l = _.default.getCurrentUser();
-        return null !== (n = (null == t ? void 0 : t.guild_id) != null && null != l ? null === (e = f.ZP.getMember(null == t ? void 0 : t.guild_id, l.id)) || void 0 === e ? void 0 : e.isPending : null) && void 0 !== n && n
+        return null != (n = (null == t ? void 0 : t.guild_id) != null && null != l ? null == (e = f.ZP.getMember(null == t ? void 0 : t.guild_id, l.id)) ? void 0 : e.isPending : null) && n
       }),
       [, u] = (0, s.AB)(null == t ? void 0 : t.guild_id),
       a = (0, m.tc)(t);
@@ -69,9 +69,9 @@ function L(e, t) {
   return i.useEffect(() => {
     var e;
     let l = () => a(t);
-    return null === (e = n.validators) || void 0 === e || e.add(l), () => {
+    return null == (e = n.validators) || e.add(l), () => {
       var e;
-      null === (e = n.validators) || void 0 === e || e.delete(l)
+      null == (e = n.validators) || e.delete(l)
     }
   }, [n.validators, a, t]), {
     error: l,
@@ -83,12 +83,12 @@ function R(e, t, n, l) {
   var u;
   let a = (0, r.e7)([N.Z], () => N.Z.getInteractionComponentState(e.id, n.id)),
     o = (0, r.e7)([E.ZP], () => E.ZP.getInteraction(e), [e]),
-    d = A(e.channel_id) || t,
+    d = v(e.channel_id) || t,
     {
       error: c,
       validate: s
     } = L(n, a),
-    T = null !== (u = e.applicationId) && void 0 !== u ? u : e.author.id;
+    T = null != (u = e.applicationId) ? u : e.author.id;
   return {
     state: a,
     executeStateUpdate: i.useCallback(t => {
@@ -107,7 +107,7 @@ function R(e, t, n, l) {
       }), !0
     }, [e.channel_id, e.flags, e.id, n.customId, n.type, n.id, T, s]),
     isDisabled: d,
-    visualState: O(o, n),
+    visualState: A(o, n),
     error: c
   }
 }

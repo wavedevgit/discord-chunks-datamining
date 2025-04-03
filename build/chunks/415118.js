@@ -9,8 +9,8 @@ var i = n(481060),
   o = n(883385),
   a = n(108843),
   s = n(947440),
-  d = n(100527),
-  u = n(299206),
+  u = n(100527),
+  d = n(299206),
   c = n(976192),
   f = n(276022),
   g = n(777658),
@@ -18,13 +18,13 @@ var i = n(481060),
   b = n(44652),
   O = n(185457),
   m = n(933409),
-  v = n(389052),
-  N = n(24311),
-  h = n(158508),
-  E = n(710631),
-  j = n(297047),
-  p = n(88966),
-  P = n(712301),
+  N = n(389052),
+  h = n(24311),
+  E = n(158508),
+  j = n(710631),
+  v = n(297047),
+  P = n(88966),
+  p = n(712301),
   y = n(47091),
   S = n(991307),
   C = n(37258),
@@ -39,7 +39,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     guildId: n,
     showModalItems: o = !0,
     showMediaItems: a = !1,
-    showChatItems: d = !0,
+    showChatItems: u = !0,
     context: _,
     onSelect: U
   } = e, D = {
@@ -49,7 +49,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
   }, L = (0, C.Z)({
     userId: t.id,
     guildId: n
-  }), W = (0, j.Z)(t, n, _), w = (0, p.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, N.Z)({
+  }), W = (0, v.Z)(t, n, _), w = (0, P.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, h.Z)({
     user: t,
     context: _
   }), B = (0, O.Z)({
@@ -66,7 +66,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
   }), Y = (0, f.Z)({
     user: t,
     guildId: n
-  }), H = (0, E.Z)({
+  }), H = (0, j.Z)({
     user: t,
     guildId: n
   }), Q = (0, s.Z)(null, t), K = (0, g.Z)({
@@ -75,15 +75,15 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     user: t
   }), X = (0, y.Z)({
     user: t
-  }), z = (0, v.Z)({
+  }), z = (0, N.Z)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), $ = (0, h.Z)({
+  }), $ = (0, E.Z)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, m.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, P.Z)(t, n), el = (0, u.Z)({
+  }), ee = (0, m.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, p.Z)(t, n), el = (0, d.Z)({
     id: t.id,
     label: T.NW.string(T.t["/AXYnJ"])
   }), ei = t.isNonUserBot();
@@ -94,7 +94,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     onSelect: U,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [o && L, d && W, w, R, o && B, o && V, k]
+        children: [o && L, u && W, w, R, o && B, o && V, k]
       }), a && (0, l.jsx)(i.kSQ, {
         children: q
       }), (0, l.jsx)(i.kSQ, {
@@ -112,4 +112,4 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
   })
 }, {
   object: A.qAy.CONTEXT_MENU
-}), [d.Z.CONTEXT_MENU, d.Z.GUILD_USER_MENU])
+}), [u.Z.CONTEXT_MENU, u.Z.GUILD_USER_MENU])

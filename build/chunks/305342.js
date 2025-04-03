@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   Z: () => M,
   c: () => A
@@ -17,8 +17,8 @@ var r = n(200651),
   f = n(817460),
   p = n(584825),
   g = n(290348),
-  v = n(934826),
-  h = n(768318),
+  h = n(934826),
+  v = n(768318),
   b = n(570533),
   y = n(971792),
   x = n(629262),
@@ -31,7 +31,7 @@ var r = n(200651),
   P = n(293810),
   S = n(981631),
   w = n(388032),
-  T = n(683362);
+  T = n(492077);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -132,7 +132,7 @@ let Z = e => {
               height: 24,
               alt: e.name
             }))
-          }, null !== (n = e.id) && void 0 !== n ? n : t)
+          }, null != (n = e.id) ? n : t)
         })
       })]
     })
@@ -215,10 +215,10 @@ let Z = e => {
     } = (0, E.Z)(b, a, d, m), Z = (0, l.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: D,
       activeSubscriptionListing: M
-    } = (0, v.Z)(d), F = (null == M ? void 0 : M.id) === n, R = (null == D ? void 0 : D.status) === S.O0b.CANCELED, [B, z] = i.useState(!1), [U, V] = i.useState(!1), H = i.useCallback(e => {
+    } = (0, h.Z)(d), F = (null == M ? void 0 : M.id) === n, R = (null == D ? void 0 : D.status) === S.O0b.CANCELED, [B, z] = i.useState(!1), [U, V] = i.useState(!1), H = i.useCallback(e => {
       let t = !1;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), V(t)
-    }, []), [G] = g._T(n), [Y] = g.PK(n), [q] = g.TT(n), [X] = g.F2(n), K = (0, h.Z)(a, n), J = null != q && null == D && K, Q = (0, c.Z)(P.iP), [$, ee] = i.useState(!1), et = $ || !Q, en = (0, l.e7)([u.Z], () => u.Z.isViewingServerShop(a)), er = (null == b ? void 0 : b.published) === !0, ei = (null == b ? void 0 : b.soft_deleted) === !0, ea = w.NW.string(w.t.KzmEAw);
+    }, []), [G] = g._T(n), [Y] = g.PK(n), [q] = g.TT(n), [X] = g.F2(n), K = (0, v.Z)(a, n), J = null != q && null == D && K, Q = (0, c.Z)(P.iP), [$, ee] = i.useState(!1), et = $ || !Q, en = (0, l.e7)([u.Z], () => u.Z.isViewingServerShop(a)), er = (null == b ? void 0 : b.published) === !0, ei = (null == b ? void 0 : b.soft_deleted) === !0, ea = w.NW.string(w.t.KzmEAw);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: T.container,
       "aria-label": G,
@@ -263,7 +263,7 @@ let Z = e => {
               children: R ? w.NW.string(w.t.iKHmu7) : w.NW.string(w.t.XvAuMj)
             }) : (0, r.jsx)(s.ua7, {
               text: x ? null : C,
-              "aria-label": null !== (t = x && C) && void 0 !== t && t,
+              "aria-label": null != (t = x && C) && t,
               children: e => (0, r.jsx)(j.Z, k(L({}, e), {
                 fullWidth: !0,
                 disabled: !x || Z,

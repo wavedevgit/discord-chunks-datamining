@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => g
 });
@@ -15,14 +15,14 @@ var i = n(442837),
   p = n(854698),
   h = n(688641),
   f = n(388032),
-  m = n(77399);
+  m = n(268813);
 
 function g(e) {
   let {
     channelId: t
   } = e, g = (0, i.e7)([s.Z], () => s.Z.getChannel(t), [t]), b = (0, d.sz)(t), _ = null != (0, d.qY)(t), {
     canManageGuildEvent: C
-  } = (0, a.XJ)(g), v = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
+  } = (0, a.XJ)(g), y = (0, i.cj)([u.ZP], () => b.reduce((e, t) => (e[t.id] = u.ZP.getUserCount(t.id, (0, p.DK)(t)), e), {}));
   return b.length < 1 || _ ? null : (0, r.jsx)(r.Fragment, {
     children: b.map(e => (0, r.jsx)(h.Z, {
       icon: (0, r.jsx)(o.Que, {
@@ -42,7 +42,7 @@ function g(e) {
         C(e) ? (0, o.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("22347"), n.e("84722"), n.e("23581")]).then(n.bind(n, 296864));
+          } = await Promise.all([n.e("22347"), n.e("84722"), n.e("30057")]).then(n.bind(n, 296864));
           return n => {
             var i, l;
             return (0, r.jsx)(t, (i = function(e) {
@@ -80,7 +80,7 @@ function g(e) {
           parentGuildId: e.guild_id
         })
       },
-      userCount: v[e.id],
+      userCount: y[e.id],
       className: m.eventPrompt
     }, e.id))
   })

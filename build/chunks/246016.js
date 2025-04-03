@@ -7,8 +7,8 @@ var n = r(192379),
   s = r(699516),
   i = r(594174),
   a = r(372460),
-  o = r(320582);
-let c = [];
+  c = r(320582);
+let o = [];
 
 function u(e) {
   let {
@@ -16,11 +16,11 @@ function u(e) {
     location: r
   } = e, u = (0, l.e7)([s.Z, i.default], () => {
     var e;
-    return s.Z.isFriend(t) || (null === (e = i.default.getUser(t)) || void 0 === e ? void 0 : e.isProvisional)
-  }), d = (0, o.ML)(t), m = (0, a.wn)({
+    return s.Z.isFriend(t) || (null == (e = i.default.getUser(t)) ? void 0 : e.isProvisional)
+  }), d = (0, c.ML)(t), m = (0, a.wn)({
     location: r
   });
-  return n.useMemo(() => !m || u ? c : d.map(e => {
+  return n.useMemo(() => !m || u ? o : d.map(e => {
     let {
       applicationId: t
     } = e;

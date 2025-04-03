@@ -116,11 +116,9 @@ var c = r(697352),
           i = e.onCut,
           a = e.onCopy,
           u = o({}, I.edit);
-        n && (u.onPaste = n), i && (u.onCut = i), a && (u.onCopy = a);
-        var s = o({}, I, {
+        n && (u.onPaste = n), i && (u.onCut = i), a && (u.onCopy = a), r._handler = o({}, I, {
           edit: u
-        });
-        r._handler = s[t]
+        })[t]
       }), u(a(r), "exitCurrentMode", function() {
         r.setMode("edit")
       }), u(a(r), "restoreEditorDOM", function(t) {

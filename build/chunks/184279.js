@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => f
 });
@@ -11,7 +11,7 @@ var i = n(481060),
   s = n(534091),
   c = n(967128),
   u = n(388032),
-  d = n(807147),
+  d = n(559267),
   p = n(191986);
 let h = () => (0, r.jsx)("svg", {
   width: "46",
@@ -28,7 +28,7 @@ function f(e) {
   var t;
   let {
     channel: n
-  } = e, f = null !== (t = (0, o.ZP)(n)) && void 0 !== t ? t : "";
+  } = e, f = null != (t = (0, o.ZP)(n)) ? t : "";
   return (0, r.jsxs)("div", {
     id: (0, s.p)(n.id, n.id),
     className: d.headerContainer,

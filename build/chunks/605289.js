@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  o = n(481060),
-  l = n(706454),
+  l = n(481060),
+  o = n(706454),
   c = n(78839),
   d = n(985754),
   u = n(222727),
@@ -16,12 +16,12 @@ var i = n(120356),
   g = n(409100),
   p = n(474936),
   h = n(981631),
-  f = n(160961);
+  f = n(614075);
 let b = function(e) {
   let {
     localizedPricingPromo: t,
     smallGap: n
-  } = e, i = t.countryCode, b = (0, a.e7)([l.default], () => l.default.locale);
+  } = e, i = t.countryCode, b = (0, a.e7)([o.default], () => o.default.locale);
   (0, u.U)(h.jXE.SETTINGS_PREMIUM_BANNER, i);
   let N = (0, a.e7)([c.ZP], () => c.ZP.getPremiumTypeSubscription()),
     {
@@ -40,13 +40,13 @@ let b = function(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: s()(f[E], f.bannerImageContainer)
-    }), (0, r.jsx)(o.X6q, {
+    }), (0, r.jsx)(l.X6q, {
       className: f.bannerHeading,
       variant: "heading-xl/semibold",
       children: x
     }), (0, r.jsx)("div", {
       className: f.textContainer,
-      children: (0, r.jsx)(o.Text, {
+      children: (0, r.jsx)(l.Text, {
         color: "none",
         variant: "text-md/normal",
         className: f.bannerBody,

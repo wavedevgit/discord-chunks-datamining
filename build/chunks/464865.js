@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   V: () => b
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(859481),
   p = n(981631),
   h = n(388032),
-  f = n(703645);
+  f = n(50986);
 
 function b(e) {
   let {
@@ -26,17 +26,17 @@ function b(e) {
     vanityURLUses: x,
     originalVanityURLCode: j,
     errorDetails: N,
-    fetched: v
+    fetched: _
   } = (0, s.cj)([u.Z], () => ({
     vanityURLCode: u.Z.vanityURLCode,
     vanityURLUses: u.Z.vanityURLUses,
     originalVanityURLCode: u.Z.originalVanityURLCode,
     errorDetails: u.Z.errorDetails,
     fetched: u.Z.fetchedVanityURL
-  })), _ = null == t ? void 0 : t.id;
+  })), v = null == t ? void 0 : t.id;
   return (i.useEffect(() => {
-    null == _ || v || (0, d.U5)(_)
-  }, [v, _]), null == t) ? null : n ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
+    null == v || _ || (0, d.U5)(v)
+  }, [_, v]), null == t) ? null : n ? (0, r.jsx)(l.Z, {}) : (0, r.jsxs)(a.hjN, {
     children: [(0, r.jsxs)(a.vwX, {
       className: f.title,
       children: [h.NW.string(h.t["5XZKy8"]), (0, r.jsx)(m.xl, {

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => A
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(921801),
   s = n(63063),
   a = n(10298),
-  o = n(924356),
-  l = n(945627),
+  l = n(924356),
+  o = n(945627),
   c = n(24400),
   d = n(122897),
   u = n(821035),
@@ -25,9 +25,9 @@ var i = n(921801),
   j = n(919539),
   O = n(726985),
   C = n(981631),
-  v = n(388032);
-let S = () => (0, r.jsx)(f.Z, {
-    title: v.NW.string(v.t["y62Z/f"]),
+  S = n(388032);
+let v = () => (0, r.jsx)(f.Z, {
+    title: S.NW.string(S.t["y62Z/f"]),
     webSetting: O.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: (0, r.jsxs)(h.Z, {
       children: [(0, r.jsx)(i.F, {
@@ -37,30 +37,30 @@ let S = () => (0, r.jsx)(f.Z, {
     })
   }),
   T = () => (0, r.jsxs)(f.Z, {
-    title: v.NW.string(v.t.xVRG4O),
+    title: S.NW.string(S.t.xVRG4O),
     webSetting: O.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(o.Z, {}), (0, r.jsx)(N.Z, {})]
+    children: [(0, r.jsx)(u.P, {}), (0, r.jsx)(d.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(c.Z, {}), (0, r.jsx)(l.Z, {}), (0, r.jsx)(N.Z, {})]
   }),
   I = () => (0, r.jsxs)(f.Z, {
-    title: v.NW.string(v.t["1Qn8iY"]),
+    title: S.NW.string(S.t["1Qn8iY"]),
     webSetting: O.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, r.jsx)(m.Z, {}), (0, r.jsx)(b.ZP, {})]
   }),
   y = () => {
-    let e = v.NW.format(v.t.VaxeGh, {
+    let e = S.NW.format(S.t.VaxeGh, {
       helpdeskArticle: s.Z.getArticleURL(C.BhN.SLAYER_GAME_FRIENDS)
     });
     return (0, r.jsx)(f.Z, {
-      title: v.NW.string(v.t.oPyABA),
+      title: S.NW.string(S.t.oPyABA),
       description: e,
       webSetting: O.s6.PRIVACY_AND_SAFETY_GAME_FRIENDS_CATEGORY,
-      children: (0, r.jsx)(l.Z, {})
+      children: (0, r.jsx)(o.Z, {})
     })
   };
 
 function A() {
   return (0, r.jsxs)(a.N, {
-    header: v.NW.string(v.t["+o1pDQ"]),
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(S, {}), (0, r.jsx)(I, {}), (0, r.jsx)(y, {})]
+    header: S.NW.string(S.t["+o1pDQ"]),
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(v, {}), (0, r.jsx)(I, {}), (0, r.jsx)(y, {})]
   })
 }

@@ -11,7 +11,7 @@ var i = n(200651),
   o = n(481060),
   u = n(686546),
   d = n(3682),
-  f = n(344783);
+  f = n(630403);
 let p = {},
   b = 1 / 4;
 
@@ -159,7 +159,7 @@ let g = {
     } = r.useMemo(() => {
       var e;
       let t = "".concat(O, "-").concat(b);
-      return null !== (e = p[t]) && void 0 !== e ? e : function(e, t, n) {
+      return null != (e = p[t]) ? e : function(e, t, n) {
         let i = o.ny6[e],
           r = i.size / (d.z3 + d.o),
           a = r * d.z3,

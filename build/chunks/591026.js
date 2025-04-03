@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(620436),
   u = n(273504),
   m = n(388032),
-  g = n(552016);
+  g = n(694705);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ function f(e) {
   let {
     rule: f,
     onChangeRule: b
-  } = e, [x, j] = i.useState(null === (t = f.triggerMetadata) || void 0 === t ? void 0 : t.mentionTotalLimit), N = (0, a.a)(f.guildId, !1);
+  } = e, [x, j] = i.useState(null == (t = f.triggerMetadata) ? void 0 : t.mentionTotalLimit), N = (0, a.a)(f.guildId, !1);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
@@ -117,7 +117,7 @@ function f(e) {
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(s.XZJ, {
             type: s.XZJ.Types.INVERTED,
-            value: null === (n = f.triggerMetadata) || void 0 === n ? void 0 : n.mentionRaidProtectionEnabled,
+            value: null == (n = f.triggerMetadata) ? void 0 : n.mentionRaidProtectionEnabled,
             onChange: (e, t) => {
               b(h(p({}, f), {
                 triggerMetadata: h(p({}, f.triggerMetadata), {

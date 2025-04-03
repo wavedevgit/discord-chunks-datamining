@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => I
 });
@@ -16,11 +16,11 @@ var i = n(200651),
   f = n(145597),
   m = n(830917),
   g = n(353038),
-  v = n(306381),
-  y = n(610394),
-  O = n(561064),
+  y = n(306381),
+  O = n(610394),
+  v = n(561064),
   b = n(981631),
-  _ = n(231463);
+  _ = n(816530);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,8 +62,8 @@ let I = r.memo(function(e) {
     resizeValidation: j,
     className: C,
     dragContainerClassName: S
-  } = e, N = u.Z.getWidgetConfig(t.type), Z = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), w = (0, O.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(w))), T = r.useCallback((e, t, n, i, r) => {
-    let o = p.Z.windowSize((0, m.ZY)((0, O.i)())),
+  } = e, N = u.Z.getWidgetConfig(t.type), Z = (0, a.e7)([d.default], () => d.default.isLocked((0, f.getPID)())), w = (0, v.Z)(), P = (0, a.e7)([p.Z], () => p.Z.windowSize((0, m.ZY)(w))), T = r.useCallback((e, t, n, i, r) => {
+    let o = p.Z.windowSize((0, m.ZY)((0, v.i)())),
       l = (0, h.jL)(n, o),
       a = (0, h.Ox)(i, o);
     (0, s.Os)(t), (0, s.nv)({
@@ -109,7 +109,7 @@ let I = r.memo(function(e) {
   })), [t, n, C]), Q = r.useCallback(e => null != o || null != I ? (0, i.jsxs)("div", {
     className: _.extrasContainer,
     children: [null == o ? void 0 : o(t), null == I ? void 0 : I(t, e)]
-  }) : null, [t, o, I]), K = (0, a.e7)([y.ZP], () => y.ZP.hasRenderDebugMode(v.G.WidgetAreas)), X = r.useMemo(() => {
+  }) : null, [t, o, I]), K = (0, a.e7)([O.ZP], () => O.ZP.hasRenderDebugMode(y.G.WidgetAreas)), X = r.useMemo(() => {
     if (null != j) return e => j(x(E({}, e), {
       widget: t
     }))

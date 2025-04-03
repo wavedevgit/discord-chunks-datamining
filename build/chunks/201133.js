@@ -9,21 +9,20 @@ var a = n(314897),
   i = n(703558);
 n(62817), n(960048);
 let o = async function(e, t) {
-  var o;
-  let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    c = arguments.length > 3 ? arguments[3] : void 0,
-    u = arguments.length > 4 ? arguments[4] : void 0,
-    d = l.Z.getChannel(t);
-  if (a.default.getToken(), r.ZP.parse(d, ""), s);
+  let o = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
+    s = arguments.length > 3 ? arguments[3] : void 0,
+    c = arguments.length > 4 ? arguments[4] : void 0,
+    u = l.Z.getChannel(t);
+  if (a.default.getToken(), r.ZP.parse(u, ""), o);
   else {
     if (null == l.Z.getChannel(t)) throw Error("AtomicReactor sendUtils: Couldn't resolve channel with id ".concat(t));
     {
       let r = n(966390).Z;
-      e.description = c, await r.uploadFiles({
+      e.description = s, await r.uploadFiles({
         channelId: t,
         uploads: [e],
         draftType: i.d.ChannelMessage,
-        parsedMessage: u
+        parsedMessage: c
       })
     }
   }

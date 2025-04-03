@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(210887),
   u = n(617136),
@@ -21,15 +21,15 @@ var r = n(200651),
   E = n(566078),
   O = n(602667),
   N = n(65443),
-  v = n(611855),
-  y = n(670638),
-  I = n(667105),
+  y = n(611855),
+  I = n(670638),
+  v = n(667105),
   C = n(860151),
   S = n(341907),
   T = n(46140),
   P = n(981631),
   j = n(388032),
-  A = n(728529);
+  A = n(396896);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ function x(e) {
   var t;
   let {
     quest: n
-  } = e, i = (0, p.B6)(n.config.expiresAt), l = (0, p.B6)(E.r.build(n.config).rewardsExpireAt), o = (0, a.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(o) ? P.BRd.DARK : P.BRd.LIGHT, d = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null;
+  } = e, i = (0, p.B6)(n.config.expiresAt), l = (0, p.B6)(E.r.build(n.config).rewardsExpireAt), a = (0, o.e7)([c.Z], () => c.Z.getState().theme), u = (0, s.wjy)(a) ? P.BRd.DARK : P.BRd.LIGHT, d = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null;
   return (0, r.jsxs)("div", {
     className: A.heading,
     children: [(0, r.jsx)("img", {
@@ -87,7 +87,7 @@ function L(e) {
   let {
     nodeRef: _,
     quest: E
-  } = e, O = (0, u.O5)(), P = (0, a.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [L, w] = i.useState(!1), R = i.useCallback(() => w(!0), []), D = i.useCallback(() => w(!1), []), k = i.useCallback(e => {
+  } = e, O = (0, u.O5)(), P = (0, o.e7)([h.Z], () => h.Z.isEnrolling(E.id), [E]), [L, w] = i.useState(!1), R = i.useCallback(() => w(!0), []), D = i.useCallback(() => w(!1), []), k = i.useCallback(e => {
     e.stopPropagation()
   }, []), M = i.useCallback(() => {
     (0, d.AH)(E.id, {
@@ -112,10 +112,10 @@ function L(e) {
       fromContent: f.jn.ACTIVITY_PANEL,
       questId: E.id
     })
-  }, [E.id, O]), W = (0, I.hf)({
+  }, [E.id, O]), W = (0, v.hf)({
     quest: E,
     location: f.jn.ACTIVITY_PANEL
-  }), V = (0, p.tP)(E), B = (null === (t = E.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, H = (null === (n = E.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, F = (null === (l = E.userStatus) || void 0 === l ? void 0 : l.claimedAt) != null, z = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), Y = (0, p.Rf)(E), K = (0, b.DD)({
+  }), V = (0, p.tP)(E), B = (null == (t = E.userStatus) ? void 0 : t.enrolledAt) != null, H = (null == (n = E.userStatus) ? void 0 : n.completedAt) != null, F = (null == (l = E.userStatus) ? void 0 : l.claimedAt) != null, z = (null == E ? void 0 : E.userStatus) != null && (0, g.zE)(E.userStatus, f.jn.ACTIVITY_PANEL), Y = (0, p.Rf)(E), K = (0, b.DD)({
     quest: E,
     taskDetails: Y,
     location: T.dr.ACTIVITY_PANEL,
@@ -127,7 +127,7 @@ function L(e) {
     ref: e => {
       _.current = e
     },
-    className: o()(A.wrapper, {
+    className: a()(A.wrapper, {
       [A.wrapperQuestAccepted]: B
     }),
     onClick: k,
@@ -140,10 +140,10 @@ function L(e) {
       className: A.utils,
       children: [B ? (0, r.jsx)(x, {
         quest: E
-      }) : (0, r.jsx)(v.Z, {}), (0, r.jsx)(y.r, {
+      }) : (0, r.jsx)(y.Z, {}), (0, r.jsx)(I.r, {
         quest: E,
         questContent: f.jn.ACTIVITY_PANEL,
-        shouldShowDisclosure: (null === (c = E.userStatus) || void 0 === c ? void 0 : c.enrolledAt) == null,
+        shouldShowDisclosure: (null == (c = E.userStatus) ? void 0 : c.enrolledAt) == null,
         showShareLink: !0,
         children: e => {
           var t, n;

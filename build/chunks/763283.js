@@ -1,17 +1,17 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651),
   i = n(120356),
   s = n.n(i),
   a = n(793030),
-  o = n(275260);
+  l = n(883851);
 
-function l(e) {
+function o(e) {
   var t, n, {
       children: i,
-      className: l,
+      className: o,
       color: c
     } = e,
     d = function(e, t) {
@@ -47,8 +47,8 @@ function l(e) {
     }
     return e
   }({}, d), n = n = {
-    className: s()(l, o.text, {
-      [o.colorClickerGameBrand]: "clicker-game-brand" === c
+    className: s()(o, l.text, {
+      [l.colorClickerGameBrand]: "clicker-game-brand" === c
     }),
     color: "clicker-game-brand" === c ? "none" : c,
     children: i

@@ -1,16 +1,16 @@
-/** Chunk was on 93034 **/
-n.d(e, {
+/** Chunk was on 70657 **/
+t.d(n, {
   Z: () => a
 });
-var i = n(442837),
-  d = n(430824),
-  _ = n(981631);
+var i = t(442837),
+  r = t(430824),
+  l = t(981631);
 
-function a(t) {
-  return (0, i.e7)([d.Z], () => {
-    var e;
-    if (null == t) return !1;
-    let n = d.Z.getGuild(t);
-    return null !== (e = null == n ? void 0 : n.hasFeature(_.oNc.HUB)) && void 0 !== e && e
-  }, [t])
+function a(e) {
+  return (0, i.e7)([r.Z], () => {
+    var n;
+    if (null == e) return !1;
+    let t = r.Z.getGuild(e);
+    return null != (n = null == t ? void 0 : t.hasFeature(l.oNc.HUB)) && n
+  }, [e])
 }

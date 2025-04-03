@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Y: () => v
+  Y: () => y
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
@@ -14,7 +14,7 @@ var r, i = n(200651),
   h = n(513202),
   f = n(981631),
   m = n(388032),
-  g = n(588235);
+  g = n(968216);
 let b = ["embedded_cover"],
   _ = {
     tension: 800,
@@ -22,29 +22,29 @@ let b = ["embedded_cover"],
   };
 var C = ((r = C || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
-function v(e) {
+function y(e) {
   var t;
   let {
     context: n,
     activityItem: r,
     onClick: o,
     aspectRatio: C = 0,
-    animatedDivClass: v,
-    commandOrigin: y
+    animatedDivClass: y,
+    commandOrigin: x
   } = e, {
-    onActivityItemSelected: x,
+    onActivityItemSelected: v,
     imageBackground: j,
     activityAction: O,
     labelType: E
   } = (0, u.ZP)({
     context: n,
     activityItem: r,
-    guildId: null !== (t = n.channel.getGuildId()) && void 0 !== t ? t : void 0,
+    guildId: null != (t = n.channel.getGuildId()) ? t : void 0,
     locationObject: {},
     onActivityItemSelected: o,
     embeddedActivitiesManager: h.Z,
     assetNames: b,
-    commandOrigin: y
+    commandOrigin: x
   }), [N, I] = l.useState(!1), P = l.useCallback(() => {
     I(!0)
   }, [I]), S = l.useCallback(() => {
@@ -89,7 +89,7 @@ function v(e) {
     }
   }, [O]);
   return (0, i.jsx)(c.zxk, {
-    onClick: x,
+    onClick: v,
     color: "transparent",
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
@@ -113,7 +113,7 @@ function v(e) {
         return (0, i.jsx)(c.f6W, {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
-            className: a()(e, g.activityItem, v, {
+            className: a()(e, g.activityItem, y, {
               [g.activityItem_13_11]: 0 === C,
               [g.activityItem_16_9]: 1 === C
             }),
@@ -132,4 +132,4 @@ function v(e) {
     })
   })
 }
-v.AspectRatio = C
+y.AspectRatio = C

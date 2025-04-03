@@ -6,8 +6,7 @@ var n = r(439853),
   a = r(65183),
   u = r(192379),
   s = r(606166);
-a.List;
-var c = function(t) {
+a.List, t.exports = function(t) {
   function e() {
     return t.apply(this, arguments) || this
   }
@@ -69,5 +68,4 @@ var c = function(t) {
       })
     }, _)
   }, e
-}(u.Component);
-t.exports = c
+}(u.Component)

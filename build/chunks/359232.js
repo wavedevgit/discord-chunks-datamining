@@ -18,17 +18,15 @@ let r = (e, t) => {
       if (t.values.length < n) return a.NW.formatToPlainString(a.t.Jmwzd3, {
         count: n
       });
-      if (t.values.length > l) return a.NW.formatToPlainString(a.t.LDvfRE, {
+      else if (t.values.length > l) return a.NW.formatToPlainString(a.t.LDvfRE, {
         count: l
       })
-    } else {
-      if (t.selectedOptions.length < n) return a.NW.formatToPlainString(a.t.Jmwzd3, {
-        count: n
-      });
-      if (t.selectedOptions.length > l) return a.NW.formatToPlainString(a.t.LDvfRE, {
-        count: l
-      })
-    }
+    } else if (t.selectedOptions.length < n) return a.NW.formatToPlainString(a.t.Jmwzd3, {
+      count: n
+    });
+    else if (t.selectedOptions.length > l) return a.NW.formatToPlainString(a.t.LDvfRE, {
+      count: l
+    });
     return null
   },
   o = (e, t) => {

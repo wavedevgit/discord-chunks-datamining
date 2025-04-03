@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   m = n(63063),
   g = n(981631),
   b = n(388032),
-  _ = n(939082);
+  _ = n(857651);
 
 function C(e) {
   let {
@@ -25,13 +25,13 @@ function C(e) {
     channelId: n
   } = e, l = (0, a.e7)([f.default], () => {
     var e;
-    return (null === (e = f.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed) === !1
+    return (null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed) === !1
   }), o = (0, p.Kt)(), {
     verifyAgreementButtonText: C,
-    verifyGateDescription: v
-  } = (0, p.a1)(), y = i.useCallback(() => {
+    verifyGateDescription: y
+  } = (0, p.a1)(), x = i.useCallback(() => {
     null != t && c.Z.nsfwReturnToSafety(t.id)
-  }, [t]), x = i.useCallback(() => {
+  }, [t]), v = i.useCallback(() => {
     null != t && c.Z.nsfwAgree(t.id)
   }, [t]), j = i.useCallback(() => {
     u.Z.showAgeVerificationGetStartedModal(d.cU.NSFW_GUILD)
@@ -41,9 +41,9 @@ function C(e) {
     channelId: n,
     modalType: d.it.NSFW_CHANNEL_AGE_VERIFY,
     onAgree: j,
-    onDisagree: y,
+    onDisagree: x,
     title: b.NW.string(b.t.ZmwvDQ),
-    description: v,
+    description: y,
     agreement: C,
     agreementButtonColor: s.zxk.Colors.BRAND,
     disagreement: b.NW.string(b.t["/g10LC"]),
@@ -52,8 +52,8 @@ function C(e) {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: d.it.NSFW_CHANNEL_UNDERAGE,
-    onAgree: x,
-    onDisagree: y,
+    onAgree: v,
+    onDisagree: x,
     title: b.NW.string(b.t.NEabBQ),
     description: b.NW.format(b.t["2kHZen"], {
       helpURL: m.Z.getArticleURL(g.BhN.NSFW_AGE_GATING)
@@ -65,15 +65,15 @@ function C(e) {
     guildId: null == t ? void 0 : t.id,
     channelId: n,
     modalType: d.it.NSFW_CHANNEL_VERIFIED,
-    onAgree: x,
-    onDisagree: y,
+    onAgree: v,
+    onDisagree: x,
     title: b.NW.string(b.t.ZmwvDQ),
     description: b.NW.string(b.t.E4Cd5O),
     agreement: b.NW.string(b.t.wVq7ur),
     disagreement: b.NW.string(b.t["/g10LC"])
   })
 }
-let v = function(e) {
+let y = function(e) {
   let {
     guild: t,
     channelId: n,

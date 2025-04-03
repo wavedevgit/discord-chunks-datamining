@@ -1,11 +1,11 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => g
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(366598),
   s = n(821864),
   c = n(905753),
@@ -13,24 +13,24 @@ var r = n(200651),
   u = n(469880),
   p = n(665578),
   m = n(388032),
-  b = n(560207);
+  b = n(883685);
 
 function g(e) {
   let {
     application: t,
     canNavigate: n,
     guildId: d
-  } = e, p = (0, o.e7)([c.Z], () => c.Z.isUnavailable());
+  } = e, p = (0, l.e7)([c.Z], () => c.Z.isUnavailable());
   return (i.useEffect(() => (s.I4(t.id), s.kZ), [t.id]), i.useEffect(() => {
     s.gq(t.id, d, t.id), s.Sn(d, t.id)
   }, [t.id, d]), p) ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(a.Z, {
-      icon: (0, r.jsx)(l.SsZ, {
+      icon: (0, r.jsx)(o.SsZ, {
         size: "md",
         color: "currentColor"
       }),
       title: m.NW.string(m.t.RGoJND)
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
       children: m.NW.string(m.t.sCkD3d)
@@ -52,8 +52,8 @@ function f(e) {
     guildId: n
   } = e, {
     originalApplicationPermissions: i,
-    editedTargetPermissions: o,
-    selectedPermissionCount: l
+    editedTargetPermissions: l,
+    selectedPermissionCount: o
   } = (0, d.Z)(n, t);
   return (0, r.jsx)("div", {
     className: b.applicationPermissions,
@@ -61,9 +61,9 @@ function f(e) {
       applicationId: t,
       guildId: n,
       inModal: !1,
-      editedTargetPermissions: o,
+      editedTargetPermissions: l,
       originalApplicationPermissions: i,
-      selectedPermissionCount: l
+      selectedPermissionCount: o
     })
   })
 }

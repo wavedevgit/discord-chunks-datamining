@@ -14,11 +14,11 @@ function s(e) {
     user: t,
     onAction: s,
     appContext: u
-  } = e, d = t.id, [c, g] = (0, l.Wu)([a.Z], () => {
+  } = e, c = t.id, [d, g] = (0, l.Wu)([a.Z], () => {
     var e;
-    return [a.Z.isFriend(d), null !== (e = a.Z.getNickname(d)) && void 0 !== e ? e : null]
-  }, [d]);
-  if (!c) return null;
+    return [a.Z.isFriend(c), null != (e = a.Z.getNickname(c)) ? e : null]
+  }, [c]);
+  if (!d) return null;
   let f = null == g ? o.NW.string(o.t.BGYkaG) : o.NW.string(o.t["8pOYUF"]);
   return (0, i.jsx)(r.sNh, {
     id: null == g ? "add-friend-nickname" : "edit-friend-nickname",

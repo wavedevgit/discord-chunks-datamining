@@ -19,7 +19,7 @@ var n = l(200651),
   p = l(4434),
   j = l(981631),
   C = l(388032),
-  v = l(440882);
+  v = l(671593);
 let N = e => {
   var t, l;
   let {
@@ -45,7 +45,7 @@ let N = e => {
     }).filter(e => null != e), [D]),
     R = r.useMemo(() => {
       var e;
-      return (null == D ? void 0 : null === (e = D[0]) || void 0 === e ? void 0 : e.premiumGuildSubscription) != null
+      return (null == D || null == (e = D[0]) ? void 0 : e.premiumGuildSubscription) != null
     }, [D]),
     B = () => {
       S("SUCCESS" === w), x.default.track(j.rMx.MODAL_DISMISSED, {
@@ -200,14 +200,14 @@ let N = e => {
     transitionState: y,
     className: v.modal,
     size: a.CgR.SMALL,
-    children: [null === (t = _.header) || void 0 === t ? void 0 : t.call(_), (0, n.jsx)(a.hzk, {
+    children: [null == (t = _.header) ? void 0 : t.call(_), (0, n.jsx)(a.hzk, {
       className: _.bodyClass,
       children: (0, n.jsx)(a.qBt, {
         step: w,
         steps: P,
         children: _.body()
       })
-    }), null === (l = _.footer) || void 0 === l ? void 0 : l.call(_), (0, n.jsx)(a.olH, {
+    }), null == (l = _.footer) ? void 0 : l.call(_), (0, n.jsx)(a.olH, {
       className: v.modalCloseButton,
       onClick: B
     })]

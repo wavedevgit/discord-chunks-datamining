@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,18 +6,18 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(835473),
-  o = n(739566),
-  l = n(942951),
+  l = n(739566),
+  o = n(942951),
   s = n(834129),
   c = n(388032),
-  u = n(928181);
+  u = n(583512);
 
 function d(e) {
   let {
     message: t,
     channel: n,
     compact: d
-  } = e, p = (0, o.ZP)(t), m = (0, l.l)({
+  } = e, p = (0, l.ZP)(t), m = (0, o.l)({
     user: t.author,
     channelId: n.id,
     guildId: n.guild_id,

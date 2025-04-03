@@ -4,8 +4,8 @@ r.d(t, {
 }), r(47120);
 var n = r(192379),
   i = r(399606),
-  o = r(544891),
-  a = r(570140),
+  a = r(544891),
+  o = r(570140),
   s = r(367907),
   l = r(430824),
   c = r(496675),
@@ -57,16 +57,16 @@ let I = +u.Z.Millis.DAY,
         t && function(e) {
           var t;
           let r = Date.now(),
-            n = null !== (t = A.get(e)) && void 0 !== t ? t : 0;
-          !(r < n + I) && (A.set(e, r), o.tn.post({
+            n = null != (t = A.get(e)) ? t : 0;
+          r < n + I || (A.set(e, r), a.tn.post({
             url: p.ANM.GUILD_MIGRATE_COMMAND_SCOPE(e),
             rejectWithError: !0
           }).then(t => {
             var r, n;
-            a.Z.dispatch({
+            o.Z.dispatch({
               type: "COMMANDS_MIGRATION_UPDATE_SUCCESS",
               guildId: e,
-              integrationIdsWithAppCommands: null !== (n = null === (r = t.body) || void 0 === r ? void 0 : r.integration_ids_with_app_commands) && void 0 !== n ? n : []
+              integrationIdsWithAppCommands: null != (n = null == (r = t.body) ? void 0 : r.integration_ids_with_app_commands) ? n : []
             })
           }, () => {
             A.set(e, n)
@@ -77,29 +77,29 @@ let I = +u.Z.Millis.DAY,
       return t && r
     },
     dismissNotice(e) {
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "COMMANDS_MIGRATION_NOTICE_DISMISSED",
         guildId: e
       })
     },
     dismissOverviewTooltip(e, t) {
       var r;
-      a.Z.dispatch({
+      o.Z.dispatch({
         type: "COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED",
         guildId: e,
         integrationId: t.id
       }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, s.hH)(e)), {
-        application_id: null === (r = t.application) || void 0 === r ? void 0 : r.id,
+        application_id: null == (r = t.application) ? void 0 : r.id,
         location: "overview"
       }))
     },
     dismissToggleTooltip(e, t) {
       var r;
-      void 0 !== t && (a.Z.dispatch({
+      void 0 !== t && (o.Z.dispatch({
         type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
         integrationId: t.id
       }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, s.hH)(e)), {
-        application_id: null === (r = t.application) || void 0 === r ? void 0 : r.id,
+        application_id: null == (r = t.application) ? void 0 : r.id,
         location: "toggle"
       })))
     }

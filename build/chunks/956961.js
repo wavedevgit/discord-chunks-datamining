@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(913527),
-  s = n.n(l),
+  l = n.n(a),
+  o = n(913527),
+  s = n.n(o),
   c = n(442837),
   u = n(524437),
   d = n(481060),
@@ -18,13 +18,13 @@ var r = n(200651),
   g = n(768943),
   _ = n(695346),
   b = n(592125),
-  v = n(655354),
-  x = n(324081),
-  y = n(791914),
-  E = n(981631),
+  x = n(655354),
+  y = n(324081),
+  E = n(791914),
+  v = n(981631),
   O = n(388032),
-  N = n(371507),
-  j = n(199225);
+  N = n(829444),
+  j = n(384323);
 let C = {
   offset: {
     left: 4,
@@ -36,10 +36,10 @@ function I(e) {
   let {
     setTab: t,
     closePopout: n
-  } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [o, l] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = o ? a : s;
+  } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [l, o] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = l ? a : s;
   return (0, r.jsxs)("div", {
     className: N.container,
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: u.X.TODOS,
       setTab: t,
       closePopout: n
@@ -47,13 +47,13 @@ function I(e) {
       className: N.headerText,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-lg/bold",
-        children: o ? O.NW.string(O.t["0KeMAw"]) : O.NW.string(O.t.j5ZHEB)
+        children: l ? O.NW.string(O.t["0KeMAw"]) : O.NW.string(O.t.j5ZHEB)
       }), (0, r.jsx)(d.eee, {
-        onClick: () => l(!o),
+        onClick: () => o(!l),
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-link",
-          children: o ? O.NW.formatToPlainString(O.t["/VlKx8"], {
+          children: l ? O.NW.formatToPlainString(O.t["/VlKx8"], {
             count: s.length
           }) : O.NW.formatToPlainString(O.t.QEO4Ii, {
             count: a.length
@@ -73,19 +73,19 @@ function S(e) {
       messageReminder: i
     } = e,
     a = i.saveData,
-    l = i.message,
+    o = i.message,
     u = (0, c.e7)([b.Z], () => b.Z.getChannel(a.channelId)),
     g = () => {
-      (0, f.uL)(E.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
+      (0, f.uL)(v.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
     },
-    y = null;
-  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", y = O.NW.formatToPlainString(O.t.H4gnX1, {
+    E = null;
+  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", E = O.NW.formatToPlainString(O.t.H4gnX1, {
     duration: s().duration(a.dueAt.getTime() - Date.now(), "millisecond").humanize()
-  })) : (t = "text-danger", y = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
+  })) : (t = "text-danger", E = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
     duration: s().duration(Date.now() - a.dueAt.getTime(), "millisecond").humanize()
-  }))), null == l || null == u) ? null : (0, r.jsxs)("div", {
+  }))), null == o || null == u) ? null : (0, r.jsxs)("div", {
     className: j.container,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(y.Z, {
       channel: u,
       gotoChannel: g,
       children: (0, r.jsxs)("div", {
@@ -99,10 +99,10 @@ function S(e) {
             size: "xxs",
             color: "currentColor"
           }), i.saveData.notes]
-        }) : null, null != y ? (0, r.jsx)(d.Text, {
+        }) : null, null != E ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: t,
-          children: y
+          children: E
         }) : null, (0, r.jsx)(d.DY3, {
           text: O.NW.string(O.t.GtBCn5),
           children: (0, r.jsx)(d.P3F, {
@@ -130,7 +130,7 @@ function S(e) {
                   }
                   return e
                 }({}, t), i = i = {
-                  message: l
+                  message: o
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -166,19 +166,19 @@ function S(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: o()(j.messageContainer, N.unloadedMessage),
-      children: [(0, r.jsx)(v.Z, {
+      className: l()(j.messageContainer, N.unloadedMessage),
+      children: [(0, r.jsx)(x.Z, {
         className: j.jumpMessageButton,
         onJump: g
       }), (0, r.jsx)(m.Z, {
-        message: l,
+        message: o,
         channel: u,
         className: j.message,
         compact: _.jU.getSetting(),
         animateAvatar: !1,
         focusProps: C,
         trackAnnouncementViews: !0
-      }, l.id)]
+      }, o.id)]
     })]
   })
 }

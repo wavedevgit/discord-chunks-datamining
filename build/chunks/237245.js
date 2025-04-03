@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   w: () => E
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(658666),
   j = n(384632),
   N = n(386885),
-  v = n(981631),
-  _ = n(128449),
+  _ = n(981631),
+  v = n(128449),
   C = n(388032);
 
 function O(e) {
@@ -66,10 +66,10 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null !== (t = (0, g.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: I.id
-  })) && void 0 !== t ? t : 0, k = i.useCallback(() => {
-    Z(null), h.Z.init(T, v.pNK.ACCESS)
+  })) ? t : 0, k = i.useCallback(() => {
+    Z(null), h.Z.init(T, _.pNK.ACCESS)
   }, [T]), W = i.useCallback(async e => {
     try {
       w(!0), await e(), Z(null)
@@ -83,7 +83,7 @@ function I(e) {
       })
     } catch (e) {
       throw "object" == typeof e && "message" in e ? Z(e.message) : Z(C.NW.formatToPlainString(C.t.aTVNen, {
-        statusPageURL: v.yXt.STATUS
+        statusPageURL: _.yXt.STATUS
       })), e
     }
   }, [T]), M = i.useCallback(async (e, t) => {
@@ -107,9 +107,9 @@ function I(e) {
         termRules: t = []
       } = s, n = t.map(e => e.value.trim()).filter(e => "" !== e);
       W(async () => {
-        if (I.hasFeature(v.oNc.DISCOVERABLE)) {
+        if (I.hasFeature(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
-          e.delete(v.oNc.DISCOVERABLE), await L({
+          e.delete(_.oNc.DISCOVERABLE), await L({
             features: e
           })
         }
@@ -121,9 +121,9 @@ function I(e) {
       } = s;
       if (null == e) return;
       W(async () => {
-        if (I.hasFeature(v.oNc.DISCOVERABLE)) {
+        if (I.hasFeature(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
-          e.delete(v.oNc.DISCOVERABLE), await L({
+          e.delete(_.oNc.DISCOVERABLE), await L({
             features: e
           })
         }
@@ -140,7 +140,7 @@ function I(e) {
         if (f.verificationDirty && await G(e, n), f.guildDirty) {
           (0, b.UA)(I, x);
           let e = new Set(I.features);
-          e.add(v.oNc.DISCOVERABLE), e.delete(v.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await L({
+          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await L({
             features: e,
             discoverySplash: I.discoverySplash,
             description: I.description,
@@ -157,58 +157,42 @@ function I(e) {
       })
     }
   }, [s, W, I, f, L, G, S, M, x, E]), B = i.useCallback(() => {
-    let e = e => {
-        if (s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED) {
-          (0, a.ZDy)(async () => {
-            let {
-              default: t
-            } = await n.e("67376").then(n.bind(n, 207252));
-            return n => (0, r.jsx)(t, y(O({}, n), {
-              guildId: T,
-              onConfirm: e
-            }))
-          });
-          return
-        }
+    var e;
+    let t = e => {
+        if (s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED) return void(0, a.ZDy)(async () => {
+          let {
+            default: t
+          } = await n.e("67376").then(n.bind(n, 207252));
+          return n => (0, r.jsx)(t, y(O({}, n), {
+            guildId: T,
+            onConfirm: e
+          }))
+        });
         e()
       },
-      t = e => {
-        if (D && A > 0 && s.joinType !== j.A.APPLY) {
-          (0, a.ZDy)(async () => {
-            let {
-              default: t
-            } = await n.e("55009").then(n.bind(n, 826390));
-            return n => (0, r.jsx)(t, y(O({}, n), {
-              guildId: T,
-              submittedGuildJoinRequestsCount: A,
-              onConfirm: e
-            }))
-          });
-          return
-        }
+      i = e => {
+        if (D && A > 0 && s.joinType !== j.A.APPLY) return void(0, a.ZDy)(async () => {
+          let {
+            default: t
+          } = await n.e("55009").then(n.bind(n, 826390));
+          return n => (0, r.jsx)(t, y(O({}, n), {
+            guildId: T,
+            submittedGuildJoinRequestsCount: A,
+            onConfirm: e
+          }))
+        });
         e()
       };
-    return (e => {
-      if (s.joinType === j.A.INVITE || s.joinType === j.A.DISCOVERABLE) {
-        let {
-          requireTerms: e,
-          termRules: t = []
-        } = s;
-        if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) {
-          Z(C.NW.string(C.t.TCHkcX));
-          return
-        }
-      }
-      if (s.joinType === j.A.APPLY) {
-        var t;
-        if (!(null === (t = s.pendingVerificationFields) || void 0 === t ? void 0 : t.some(e => (0, m._C)(e)))) {
-          Z(C.NW.string(C.t.HGVrIy));
-          return
-        }
-      }
-      e()
-    })(() => t(() => e(U)))
-  }, [D, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== _.o3 && E.keywords.length > 0;
+    if (s.joinType === j.A.INVITE || s.joinType === j.A.DISCOVERABLE) {
+      let {
+        requireTerms: e,
+        termRules: t = []
+      } = s;
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(C.NW.string(C.t.TCHkcX))
+    }
+    if (s.joinType === j.A.APPLY && !(null == (e = s.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(C.NW.string(C.t.HGVrIy));
+    i(() => t(U))
+  }, [D, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== v.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
     message: F ? C.NW.string(C.t.V2G2Ym) : void 0,
     onSaveText: F ? C.NW.string(C.t["qjtt/v"]) : void 0,
@@ -248,7 +232,7 @@ function E() {
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === N.U.INELIGIBLE ? (0, r.jsx)(l.Z, {
     message: C.NW.string(C.t.TEXwRk),
-    onReset: () => h.Z.init(n.id, v.pNK.ACCESS)
+    onReset: () => h.Z.init(n.id, _.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,
     dirtyState: t,

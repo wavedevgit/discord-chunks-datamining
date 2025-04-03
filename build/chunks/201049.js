@@ -14,10 +14,10 @@ var o = t(200651),
   m = t(339085),
   j = t(984933),
   p = t(883429),
-  v = t(981631),
-  x = t(185923),
+  x = t(981631),
+  v = t(185923),
   b = t(388032),
-  h = t(989684);
+  h = t(875485);
 
 function g(e) {
   var n;
@@ -27,7 +27,7 @@ function g(e) {
     channelId: N,
     guildId: k,
     tag: f
-  } = e, y = (0, s.Dt)(), C = null != f, [O, _] = l.useState(null !== (n = null == f ? void 0 : f.name) && void 0 !== n ? n : ""), [P, z] = l.useState(null != f ? {
+  } = e, y = (0, s.Dt)(), C = null != f, [O, _] = l.useState(null != (n = null == f ? void 0 : f.name) ? n : ""), [P, z] = l.useState(null != f ? {
     id: f.emojiId,
     name: f.emojiName
   } : null), [I, w] = l.useState(null == f ? void 0 : f.moderated), B = (0, i.e7)([m.ZP], () => (null == P ? void 0 : P.id) != null ? m.ZP.getUsableCustomEmojiById(P.id) : null), E = (null == f ? void 0 : f.name) !== O || (null == f ? void 0 : f.emojiId) !== (null == P ? void 0 : P.id) || (null == f ? void 0 : f.emojiName) !== (null == P ? void 0 : P.name) || I !== (null == f ? void 0 : f.moderated), Z = () => {
@@ -89,7 +89,7 @@ function g(e) {
                 onSelectEmoji: (e, t) => {
                   S(e), t && n()
                 },
-                pickerIntention: x.Hz.COMMUNITY_CONTENT,
+                pickerIntention: v.Hz.COMMUNITY_CONTENT,
                 onNavigateAway: g,
                 channel: t
               })
@@ -122,7 +122,7 @@ function g(e) {
               }({}, e), l = l = {
                 onClick: n => {
                   var t;
-                  null === (t = e.onClick) || void 0 === t || t.call(e, n)
+                  null == (t = e.onClick) || t.call(e, n)
                 },
                 active: i,
                 className: h.emojiButton,
@@ -154,7 +154,7 @@ function g(e) {
           onChange: T,
           autoFocus: !0,
           onKeyDown: e => {
-            e.keyCode === v.yXg.ENTER && O.length > 0 && (O.length > 0 && Z(), e.preventDefault())
+            e.keyCode === x.yXg.ENTER && O.length > 0 && (O.length > 0 && Z(), e.preventDefault())
           }
         }), O.length > 0 || null != P ? (0, o.jsx)(r.zxk, {
           "aria-label": b.NW.string(b.t.o8lsHR),

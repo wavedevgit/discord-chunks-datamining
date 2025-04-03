@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r, i = n(200651),
   a = n(192379),
-  o = n(846519);
+  l = n(846519);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,11 +31,10 @@ class s extends(r = a.Component) {
     this.stopTimer()
   }
   componentDidUpdate(e, t) {
-    let n;
     let {
-      props: r
-    } = this, i = (n = this.state, !r.disable && !(n.hovered && r.pauseOnHover)), a = !e.disable && !(t.hovered && e.pauseOnHover);
-    i && !a || e.interval !== r.interval ? this.startTimer() : !i && a && this.stopTimer()
+      props: n
+    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), a = r(e, t);
+    i && !a || e.interval !== n.interval ? this.startTimer() : !i && a && this.stopTimer()
   }
   startTimer() {
     let {
@@ -43,7 +42,7 @@ class s extends(r = a.Component) {
       onInterval: t,
       disable: n
     } = this.props;
-    !n && this.timer.start(e, () => {
+    n || this.timer.start(e, () => {
       t()
     })
   }
@@ -56,7 +55,7 @@ class s extends(r = a.Component) {
       children: n,
       className: r,
       disable: a
-    } = this.props, o = a ? null : {
+    } = this.props, l = a ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
@@ -69,11 +68,11 @@ class s extends(r = a.Component) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          l(e, t, n[t])
+          o(e, t, n[t])
         })
       }
       return e
-    }({}, o), t = t = {
+    }({}, l), t = t = {
       className: r,
       children: n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -88,20 +87,20 @@ class s extends(r = a.Component) {
     }), e))
   }
   constructor(...e) {
-    super(...e), l(this, "timer", new o.Xp), l(this, "state", {
+    super(...e), o(this, "timer", new l.Xp), o(this, "state", {
       hovered: !1
-    }), l(this, "handlePause", () => {
+    }), o(this, "handlePause", () => {
       this.state.hovered || this.setState({
         hovered: !0
       })
-    }), l(this, "handleResume", () => {
+    }), o(this, "handleResume", () => {
       this.setState({
         hovered: !1
       })
     })
   }
 }
-l(s, "defaultProps", {
+o(s, "defaultProps", {
   disable: !1,
   pauseOnHover: !1
 });

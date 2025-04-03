@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(727429),
   _ = n(665149),
   C = n(359110),
-  v = n(585483),
-  y = n(739830),
-  x = n(488131),
+  y = n(585483),
+  x = n(739830),
+  v = n(488131),
   j = n(981631),
   O = n(388032);
 
@@ -98,7 +98,7 @@ function P(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), y = (0, h.Z)(t), x = (0, f.Z)(t), E = (0, o.Z)(t), N = (0, c.Z)(t), I = (0, p.Z)(t.id), P = (0, d.Z)(t), S = (0, a.Z)(t), Z = (0, g.Z)({
+  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, h.Z)(t), v = (0, f.Z)(t), E = (0, o.Z)(t), N = (0, c.Z)(t), I = (0, p.Z)(t.id), P = (0, d.Z)(t), S = (0, a.Z)(t), Z = (0, g.Z)({
     id: t.id,
     label: O.NW.string(O.t.DQ797u)
   }), T = (0, m.Z)(t);
@@ -118,7 +118,7 @@ function P(e) {
         action: A
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [y, x]
+      children: [x, v]
     }), (0, r.jsxs)(l.kSQ, {
       children: [P, _, I]
     }), (0, r.jsxs)(l.kSQ, {
@@ -128,7 +128,7 @@ function P(e) {
         icon: l.rgF,
         action: function() {
           A(), setTimeout(() => {
-            v.S.dispatch(j.CkL.FOCUS_SEARCH, {
+            y.S.dispatch(j.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: !1
             })
           }, 2e3)
@@ -138,7 +138,7 @@ function P(e) {
         label: O.NW.string(O.t["2BSH7u"]),
         icon: l.rgF,
         action: function() {
-          A(), v.S.dispatch(j.CkL.TOGGLE_CHANNEL_PINS)
+          A(), y.S.dispatch(j.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
@@ -155,14 +155,14 @@ function S(e) {
     baseChannelId: n
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [t.isForumPost() ? null : (0, r.jsx)(y.Z, {
+    children: [t.isForumPost() ? null : (0, r.jsx)(x.Z, {
       channel: t
     }), (0, r.jsx)(I, {
       channel: t
     }), (0, r.jsx)(_.ZP.Icon, {
       icon: l.Dio,
       tooltip: O.NW.string(O.t.cpT0Cg),
-      onClick: () => (0, x.vN)((0, b.e)(t), null != n ? n : t.parent_id)
+      onClick: () => (0, v.vN)((0, b.e)(t), null != n ? n : t.parent_id)
     })]
   })
 }

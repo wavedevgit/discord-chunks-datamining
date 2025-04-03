@@ -1,10 +1,10 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Hr: () => x,
   Hz: () => C,
   To: () => E,
-  XG: () => _,
+  XG: () => v,
   _N: () => h,
   ad: () => N,
   bj: () => P,
@@ -14,7 +14,7 @@ n.d(t, {
   mM: () => y,
   oo: () => I,
   q6: () => T,
-  r2: () => v,
+  r2: () => _,
   vR: () => f
 }), n(13667), n(390547);
 var r = n(392711),
@@ -84,7 +84,7 @@ async function N(e, t, n, r) {
     }), Promise.resolve(r.body)
   } catch (t) {
     var o;
-    let e = i().flatMap(null !== (o = t.body) && void 0 !== o ? o : {}, e => e);
+    let e = i().flatMap(null != (o = t.body) ? o : {}, e => e);
     return l.Z.show({
       title: p.NW.string(p.t["6nCZyM"]),
       body: p.NW.format(p.t.dYCPDw, {
@@ -96,14 +96,14 @@ async function N(e, t, n, r) {
   }
 }
 
-function v(e) {
+function _(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL",
     resourceChannel: e
   })
 }
 
-function _(e, t) {
+function v(e, t) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_UPDATE_RESOURCE_CHANNEL",
     channelId: e,
@@ -142,7 +142,7 @@ async function y(e, t, n) {
     }), r.body
   } catch (t) {
     var r;
-    let e = i().flatMap(null !== (r = t.body) && void 0 !== r ? r : {}, e => e);
+    let e = i().flatMap(null != (r = t.body) ? r : {}, e => e);
     l.Z.show({
       title: p.NW.string(p.t["6nCZyM"]),
       body: p.NW.format(p.t.dYCPDw, {
@@ -165,14 +165,10 @@ function I(e, t) {
 function E(e, t) {
   var n, r;
   let i = o.Z.getSettings(e);
-  if (t && !(0, c.uo)(i)) {
-    l.Z.show({
-      title: p.NW.string(p.t["6nCZyM"]),
-      body: p.NW.string(p.t.JuhUTU)
-    });
-    return
-  }
-  return a.Z.dispatch({
+  return t && !(0, c.uo)(i) ? void l.Z.show({
+    title: p.NW.string(p.t["6nCZyM"]),
+    body: p.NW.string(p.t.JuhUTU)
+  }) : (a.Z.dispatch({
     type: "GUILD_HOME_SETTINGS_TOGGLE_ENABLED",
     guildId: e,
     enabled: t
@@ -204,7 +200,7 @@ function E(e, t) {
     return n
   })(Object(r)).forEach(function(e) {
     Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-  }), n))
+  }), n)))
 }
 async function S(e, t) {
   var n, r, o, u, m, h, f, b, x;
@@ -225,15 +221,15 @@ async function S(e, t) {
       homeSettings: l
     }), d.default.track(g.rMx.GUILD_SETTINGS_GUIDE_UPDATED, {
       guild_id: e,
-      welcome_message_author_id: (null !== (u = null == l ? void 0 : null === (n = l.welcomeMessage) || void 0 === n ? void 0 : n.authorIds) && void 0 !== u ? u : [])[0],
-      welcome_message_length: null !== (m = null == l ? void 0 : null === (o = l.welcomeMessage) || void 0 === o ? void 0 : null === (r = o.message) || void 0 === r ? void 0 : r.length) && void 0 !== m ? m : 0,
-      member_action_channel_ids: (null !== (h = null == l ? void 0 : l.newMemberActions) && void 0 !== h ? h : []).map(e => e.channelId),
-      member_action_channel_actions: (null !== (f = null == l ? void 0 : l.newMemberActions) && void 0 !== f ? f : []).map(e => e.actionType),
-      resource_channel_ids: (null !== (b = null == l ? void 0 : l.resourceChannels) && void 0 !== b ? b : []).map(e => e.channelId),
+      welcome_message_author_id: (null != (u = null == l || null == (n = l.welcomeMessage) ? void 0 : n.authorIds) ? u : [])[0],
+      welcome_message_length: null != (m = null == l || null == (o = l.welcomeMessage) || null == (r = o.message) ? void 0 : r.length) ? m : 0,
+      member_action_channel_ids: (null != (h = null == l ? void 0 : l.newMemberActions) ? h : []).map(e => e.channelId),
+      member_action_channel_actions: (null != (f = null == l ? void 0 : l.newMemberActions) ? f : []).map(e => e.actionType),
+      resource_channel_ids: (null != (b = null == l ? void 0 : l.resourceChannels) ? b : []).map(e => e.channelId),
       enabled: null == l ? void 0 : l.enabled
     }), i.body
   } catch (t) {
-    let e = i().flatMap(null !== (x = t.body) && void 0 !== x ? x : {}, e => e);
+    let e = i().flatMap(null != (x = t.body) ? x : {}, e => e);
     a.Z.dispatch({
       type: "GUILD_HOME_SETTINGS_UPDATE_FAIL"
     }), l.Z.show({

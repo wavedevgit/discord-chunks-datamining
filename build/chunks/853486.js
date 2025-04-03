@@ -14,7 +14,7 @@ var r = n(200651),
   m = n(673885),
   p = n(981631),
   f = n(388032),
-  x = n(666300);
+  x = n(237259);
 let h = function(e) {
   let {
     guild: t,
@@ -23,7 +23,7 @@ let h = function(e) {
     onClose: j
   } = e, _ = a.useMemo(() => {
     var e;
-    return null !== (e = h.formResponses) && void 0 !== e ? e : []
+    return null != (e = h.formResponses) ? e : []
   }, [h.formResponses]), g = t.hasFeature(p.oNc.CLAN) && h.applicationStatus === s.wB.SUBMITTED, v = a.useCallback(() => (0, i.ZDy)(async () => {
     let {
       default: e

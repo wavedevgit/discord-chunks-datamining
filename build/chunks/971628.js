@@ -18,7 +18,7 @@ var n = r(200651),
   b = r(537383),
   y = r(71080),
   f = r(388032),
-  p = r(697808);
+  p = r(208838);
 let g = (0, u.hQ)(),
   j = (0, u.hQ)();
 
@@ -135,13 +135,13 @@ function T(e) {
   } = e, B = l.useRef(null), D = l.useRef(null), W = [w.length, R.length, O.length, N.length], [$, U] = l.useState(!1), [_, q] = l.useState(0), [F, G] = l.useState(-1);
   l.useEffect(() => {
     var e;
-    null === (e = B.current) || void 0 === e || e.focus()
+    null == (e = B.current) || e.focus()
   }, []);
   let Q = l.useCallback(function(e, t) {
       let r = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2];
       if (q(e), G(t), r) {
         var n;
-        null === (n = D.current) || void 0 === n || n.scrollToIndex({
+        null == (n = D.current) || n.scrollToIndex({
           section: null != e ? e : 0,
           row: null != t ? t : 0,
           padding: 8
@@ -156,14 +156,14 @@ function T(e) {
     }, [w, u, s]),
     Y = l.useCallback(e => {
       var t;
-      null != e && e.rowType !== y.aC.EMPTY_STATE && (u(e), s(""), null === (t = B.current) || void 0 === t || t.focus())
+      null != e && e.rowType !== y.aC.EMPTY_STATE && (u(e), s(""), null == (t = B.current) || t.focus())
     }, [u, s]),
     J = l.useMemo(() => Object.keys(r), [r]),
     X = l.useMemo(() => R.some(e => !e.disabled) || w.some(e => !e.disabled) || O.some(e => !e.disabled) || N.some(e => !e.disabled), [R, w, O, N]) || "" === i.trim();
 
   function H() {
     var e;
-    U(!(null === (e = D.current) || void 0 === e ? void 0 : e.isScrolledToTop()) && X)
+    U(!(null == (e = D.current) ? void 0 : e.isScrolledToTop()) && X)
   }
   return l.useEffect(() => {
     H()

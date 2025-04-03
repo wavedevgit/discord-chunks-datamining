@@ -1,17 +1,17 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   m: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(91192),
+  l = n.n(i),
+  o = n(91192),
   a = n(589440),
   s = n(481060),
-  c = n(523446),
-  u = n(779635),
-  d = n(277701);
+  c = n(440185),
+  u = n(915887),
+  d = n(768107);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,27 +53,27 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: v,
-      background: y,
-      showUnread: _ = !1
+      trailing: y,
+      background: _,
+      showUnread: v = !1
     } = e,
     O = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
-  let j = (0, l.JA)(n),
-    x = null !== (t = (0, a.qg)(m)) && void 0 !== t ? t : "";
+  let j = (0, o.JA)(n),
+    x = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)(s.kL8, h(p({}, O), {
       buttonProps: h(p({}, j), {
@@ -92,13 +92,13 @@ function f(e) {
       onContextMenu: null != O.onContextMenu ? O.onContextMenu : e => {
         e.stopPropagation()
       },
-      className: o()(u.containerDefault, d.wrapper, {
+      className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y, _ ? (0, r.jsx)("div", {
-        className: o()(d.unread, d.unreadImportant)
+      children: [_, v ? (0, r.jsx)("div", {
+        className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
-        className: o()([d.link, d.basicChannelRowLink, f]),
+        className: l()([d.link, d.basicChannelRowLink, f]),
         children: (0, r.jsxs)("div", {
           className: c.content,
           children: [(0, r.jsx)("div", {
@@ -108,7 +108,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), v]
+          }), y]
         })
       })]
     }))

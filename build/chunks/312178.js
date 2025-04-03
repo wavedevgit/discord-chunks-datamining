@@ -252,7 +252,7 @@ function N(e, t) {
 let Z = s.ZP.connectStores([u.Z, h.Z], () => {
   var e;
   return {
-    layout: null !== (e = u.Z.getLayout(f.OVERLAY_LAYOUT_ID)) && void 0 !== e ? e : void 0,
+    layout: null != (e = u.Z.getLayout(f.OVERLAY_LAYOUT_ID)) ? e : void 0,
     layoutSize: h.Z.windowSize(),
     renderWidget: N
   }

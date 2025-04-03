@@ -1,4 +1,4 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
   h: () => u
 }), n(47120), n(653041), n(230036);
@@ -35,7 +35,7 @@ function u(e, t) {
         }
         return e
       }({}, e), i = i = {
-        isUserApp: null !== (n = null == t ? void 0 : t.some(t => t.application.id === e.id)) && void 0 !== n && n
+        isUserApp: null != (n = null == t ? void 0 : t.some(t => t.application.id === e.id)) && n
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -48,17 +48,17 @@ function u(e, t) {
       }), r
     }), [e, t]),
     d = r.useMemo(() => null == t ? void 0 : t.filter(t => !e.some(e => e.id === t.application.id)), [e, t]),
-    _ = r.useMemo(() => {
+    p = r.useMemo(() => {
       var e;
       null == d || d.forEach(e => {
         let t = s.default.extractTimestamp(e.id);
         null == n.getEntry(e.application.id) && n.track(e.application.id, t)
       }), n.compute();
-      let t = null !== (e = null == d ? void 0 : d.map(e => (0, o.X0)(e.application, !0))) && void 0 !== e ? e : [],
+      let t = null != (e = null == d ? void 0 : d.map(e => (0, o.X0)(e.application, !0))) ? e : [],
         r = [...u];
       return r.push(...t), r.sort((e, t) => {
         var r, i;
-        let o = (null !== (r = n.getScore(t.id)) && void 0 !== r ? r : 0) - (null !== (i = n.getScore(e.id)) && void 0 !== i ? i : 0);
+        let o = (null != (r = n.getScore(t.id)) ? r : 0) - (null != (i = n.getScore(e.id)) ? i : 0);
         return 0 !== o ? o : e.name.localeCompare(t.name)
       }), r
     }, [u, n, d]);
@@ -70,10 +70,10 @@ function u(e, t) {
       (null == o || t > o) && (i = e, o = t)
     }), u.forEach(e => {
       var t, r;
-      let l = Math.max(...null !== (r = null === (t = n.getEntry(e.id)) || void 0 === t ? void 0 : t.recentUses) && void 0 !== r ? r : []);
+      let l = Math.max(...null != (r = null == (t = n.getEntry(e.id)) ? void 0 : t.recentUses) ? r : []);
       (null == o || l > o) && (i = e, o = l)
     });
-    let l = null !== (r = null == i ? void 0 : null === (e = i.application) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : "";
-    return [..._.filter(e => e.id === l), ..._.filter(e => e.id !== l)]
-  }, [_, u, n, t])
+    let l = null != (r = null == i || null == (e = i.application) ? void 0 : e.id) ? r : "";
+    return [...p.filter(e => e.id === l), ...p.filter(e => e.id !== l)]
+  }, [p, u, n, t])
 }

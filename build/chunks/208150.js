@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => I
@@ -22,8 +22,8 @@ var i = n(442837),
   x = n(981631),
   j = n(611480),
   N = n(388032),
-  v = n(454741);
-let _ = {
+  _ = n(776739);
+let v = {
     page: x.ZY5.GUILD_SETTINGS,
     section: x.jXE.GUILD_SETTINGS_STICKERS,
     object: x.qAy.BOOSTING_BANNER
@@ -35,30 +35,30 @@ let _ = {
       analyticsLocations: n
     } = (0, l.ZP)(), i = (0, u.Z)(t.id).available, a = x.oCV[x.Eu4.TIER_1] - i;
     return (0, r.jsxs)("div", {
-      className: v.upsellContainer,
+      className: _.upsellContainer,
       children: [(0, r.jsx)(s.X6q, {
-        className: v.upsellHeader,
+        className: _.upsellHeader,
         variant: "heading-xl/semibold",
         children: N.NW.string(N.t.hzCkys)
       }), (0, r.jsx)(s.Text, {
-        className: v.upsellDescription,
+        className: _.upsellDescription,
         variant: "text-md/normal",
         children: N.NW.string(N.t.jcesAA)
       }), (0, r.jsxs)("div", {
-        className: v.upsellButtons,
+        className: _.upsellButtons,
         children: [(0, r.jsx)(s.zxk, {
-          className: v.upsellButtonPrimary,
-          innerClassName: v.upsellButton,
+          className: _.upsellButtonPrimary,
+          innerClassName: _.upsellButton,
           color: s.zxk.Colors.WHITE,
           onClick: () => (0, d.Z)({
             analyticsLocations: n,
-            analyticsLocation: _,
+            analyticsLocation: v,
             guildId: t.id,
             totalNumberOfSlotsToAssign: a
           }),
           children: N.NW.string(N.t.Q5dbTk)
         }), (0, r.jsx)(s.zxk, {
-          innerClassName: v.upsellButton,
+          innerClassName: _.upsellButton,
           color: s.zxk.Colors.WHITE,
           onClick: () => (0, o.f)({
             guildId: t.id,
@@ -120,7 +120,7 @@ let _ = {
     let e = (0, i.e7)([b.Z], () => b.Z.getGuild()),
       t = (0, i.e7)([m.Z], () => {
         var t;
-        return null != e && null !== (t = m.Z.getStickersByGuildId(e.id)) && void 0 !== t ? t : []
+        return null != e && null != (t = m.Z.getStickersByGuildId(e.id)) ? t : []
       }, [e]),
       {
         analyticsLocations: n
@@ -140,7 +140,7 @@ let _ = {
         }) : (0, r.jsx)(C, {
           guild: e
         }), (0, r.jsx)(s.$i$, {
-          className: v.divider
+          className: _.divider
         }), (0, r.jsx)(g.Z, {
           guild: e
         })]

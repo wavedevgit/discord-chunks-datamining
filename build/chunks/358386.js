@@ -12,8 +12,8 @@ var l = n(442837),
 
 function c(e, t) {
   let c = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
-    d = (0, l.e7)([a.Z], () => a.Z.getGuild(t));
-  return null == d || null == c || e.id === d.ownerId || e.bot || !d.isOwnerWithRequiredMfaLevel(c) ? null : (0, r.jsx)(i.sNh, {
+    s = (0, l.e7)([a.Z], () => a.Z.getGuild(t));
+  return null == s || null == c || e.id === s.ownerId || e.bot || !s.isOwnerWithRequiredMfaLevel(c) ? null : (0, r.jsx)(i.sNh, {
     id: "transfer-ownership",
     color: "danger",
     label: u.NW.string(u.t.Z5s7PD),
@@ -41,7 +41,7 @@ function c(e, t) {
           }
           return e
         }({}, n), i = i = {
-          guild: d,
+          guild: s,
           fromUser: c,
           toUser: e
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

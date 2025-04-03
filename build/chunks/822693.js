@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   m: () => j
@@ -27,7 +27,7 @@ function j(e) {
     widgetChannelId: s,
     className: h,
     enableLocalUpdate: j
-  } = e, N = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), v = i.useMemo(() => {
+  } = e, N = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), _ = i.useMemo(() => {
     let e = [...N[c.sH], ...N[c.Zb]].filter(e => {
       let {
         channel: n
@@ -51,13 +51,13 @@ function j(e) {
       value: b,
       label: f.NW.string(f.t.u197b2)
     }), e
-  }, [N, t, s]), _ = i.useCallback(e => {
+  }, [N, t, s]), v = i.useCallback(e => {
     j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
   }, [t, n, j]);
   return (0, r.jsx)(l.q4e, {
-    options: v,
+    options: _,
     value: s,
-    onChange: _,
+    onChange: v,
     className: h
   })
 }

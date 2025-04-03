@@ -14,7 +14,7 @@ function c(e) {
     channel: r
   } = e, c = n.useRef([]);
   return n.useEffect(() => {
-    !(0, l.E)(c.current, t.participants) && (c.current = t.participants, t.participants.filter(e => null == a.default.getUser(e)).forEach(e => {
+    (0, l.E)(c.current, t.participants) || (c.current = t.participants, t.participants.filter(e => null == a.default.getUser(e)).forEach(e => {
       null == r.guild_id ? (0, i.PR)(e) : o.Z.requestMember(r.guild_id, e)
     }))
   }, [t, r.guild_id]), {}

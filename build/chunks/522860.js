@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(194082),
-  o = n(739566),
-  l = n(834129),
+  l = n(739566),
+  o = n(834129),
   s = n(388032);
 
 function c(e) {
@@ -19,7 +19,7 @@ function c(e) {
     onJoinStream: d,
     usernameHook: p,
     compact: m
-  } = e, f = (0, o.ZP)(n), h = null === (t = n.call) || void 0 === t ? void 0 : t.duration, g = p(f), _ = s.NW.format(s.t.FKXvaG, {
+  } = e, f = (0, l.ZP)(n), h = null == (t = n.call) ? void 0 : t.duration, g = p(f), _ = s.NW.format(s.t.FKXvaG, {
     username: f.nick,
     activityName: null != u ? u.name : "unknown",
     onJoinStream: d,
@@ -30,7 +30,7 @@ function c(e) {
     duration: h.humanize(),
     channelName: c.name,
     usernameHook: g
-  })), (0, r.jsx)(l.Z, {
+  })), (0, r.jsx)(o.Z, {
     iconNode: null != h ? (0, r.jsx)(i.g5r, {
       size: "custom",
       color: "currentColor",

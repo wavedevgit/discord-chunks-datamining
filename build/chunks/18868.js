@@ -11,7 +11,7 @@ var r = n(200651),
   s = n(310752),
   c = n(897842),
   d = n(731994),
-  u = n(887277);
+  u = n(792351);
 let m = () => {
     (0, o.ZDy)(async () => {
       let {
@@ -56,13 +56,10 @@ let m = () => {
     }, []), _ = a.useCallback(async e => {
       x(e), h(!1);
       let t = e.dataTransfer;
-      if (null == t) {
-        m();
-        return
-      }
+      if (null == t) return void m();
       let r = await Promise.all(Array.from(t.items).map(e => {
         var t;
-        return null !== (t = e.webkitGetAsEntry()) && void 0 !== t ? t : e.getAsEntry()
+        return null != (t = e.webkitGetAsEntry()) ? t : e.getAsEntry()
       })).then(e => e.filter(e => null != e));
       r.length > 0 ? n(r) : m()
     }, [n]);

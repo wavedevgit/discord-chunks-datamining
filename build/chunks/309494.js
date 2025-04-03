@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => p
 });
@@ -7,13 +7,13 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(320161),
-  l = n(572004),
+  l = n(320161),
+  o = n(572004),
   c = n(51144),
   d = n(785717),
   u = n(475413),
   m = n(388032),
-  g = n(127912);
+  g = n(517895);
 
 function p(e) {
   let {
@@ -22,7 +22,7 @@ function p(e) {
   } = e, {
     trackUserProfileAction: i
   } = (0, d.KZ)();
-  return l.wS ? (0, r.jsx)(o.Z, {
+  return o.wS ? (0, r.jsx)(l.Z, {
     text: m.NW.string(m.t.y5MwJy),
     delay: 0,
     "aria-label": !1,

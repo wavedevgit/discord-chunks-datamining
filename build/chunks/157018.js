@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -36,6 +36,6 @@ function u(e) {
     }
     case o.Qs.INTANGIBLE:
       var t;
-      return null !== (t = e.name) && void 0 !== t ? t : ""
+      return null != (t = e.name) ? t : ""
   }
 }

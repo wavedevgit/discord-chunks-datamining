@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => R
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(512722),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(570140),
   d = n(497321),
   u = n(100527),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(18438),
   O = n(778825),
   C = n(856607),
-  v = n(594496),
-  S = n(856768),
+  S = n(594496),
+  v = n(856768),
   T = n(981631),
   I = n(388032);
 
@@ -62,7 +62,7 @@ function A(e, t) {
 }
 
 function P(e) {
-  (0, l.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
       default: t
     } = await n.e("84509").then(n.bind(n, 933696));
@@ -79,10 +79,10 @@ function R(e) {
     selectedGuild: t
   } = e, {
     analyticsLocations: n
-  } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, o.e7)([x.default], () => {
+  } = (0, g.ZP)(u.Z.GUILD_PROFILE), s = (0, l.e7)([x.default], () => {
     let e = x.default.getCurrentUser();
     return a()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
-  }), R = (0, o.e7)([b.Z], () => !b.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, o.e7)([N.Z], () => N.Z.hidePersonalInformation), Z = (0, o.cj)([O.Z], () => A(y({}, O.Z.getAllPending()), {
+  }), R = (0, l.e7)([b.Z], () => !b.Z.isFetchingProfile(s.id, null == t ? void 0 : t.id)), D = (0, l.e7)([N.Z], () => N.Z.hidePersonalInformation), Z = (0, l.cj)([O.Z], () => A(y({}, O.Z.getAllPending()), {
     source: O.Z.getSource()
   })), {
     source: w,
@@ -113,13 +113,13 @@ function R(e) {
     })
   }, [w]), D) ? (0, r.jsx)(d.Z, {}) : R ? (0, r.jsxs)(g.Gt, {
     value: n,
-    children: [(0, r.jsx)(l.Text, {
+    children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       children: I.NW.format(I.t["/PTB2N"], {
         helpCenterLink: _.Z.getArticleURL(T.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(S.Z, {
+      children: [(0, r.jsx)(v.Z, {
         guildId: t.id,
         onChange: e => {
           null != e && (0, j.HP)(e)
@@ -135,8 +135,8 @@ function R(e) {
           canUsePremiumCustomization: E.ZP.canUsePremiumProfileCustomization(s),
           onUpsellClick: P
         })),
-        children: (0, r.jsx)(v.Z, {})
+        children: (0, r.jsx)(S.Z, {})
       })]
     }) : (0, r.jsx)(C.Z, {})]
-  }) : (0, r.jsx)(l.$jN, {})
+  }) : (0, r.jsx)(o.$jN, {})
 }

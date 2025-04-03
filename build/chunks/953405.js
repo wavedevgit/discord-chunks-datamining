@@ -9,7 +9,7 @@ var r = n(200651),
   s = n(755007),
   o = n(231338),
   c = n(388032),
-  u = n(31453);
+  u = n(651726);
 
 function d(e) {
   var t;
@@ -28,7 +28,7 @@ function d(e) {
         children: d
       }), (0, r.jsx)(a.Z, {})]
     }), (0, r.jsx)(s.Z, {
-      orbAmount: null !== (t = null == n ? void 0 : n.amount) && void 0 !== t ? t : 1 / 0,
+      orbAmount: null != (t = null == n ? void 0 : n.amount) ? t : 1 / 0,
       className: m ? u.disabled : void 0
     })]
   })
@@ -60,7 +60,7 @@ function m(e) {
       nitroUpsell: f,
       className: f ? u.nitroUpsell : void 0
     }), n.length > 1 && n[1].currency === o.pK.DISCORD_ORB && (0, r.jsx)(s.Z, {
-      orbAmount: null !== (t = n[1].amount) && void 0 !== t ? t : 1 / 0,
+      orbAmount: null != (t = n[1].amount) ? t : 1 / 0,
       className: p || !m ? u.disabled : void 0
     })]
   })

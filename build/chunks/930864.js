@@ -1,4 +1,4 @@
-/** Chunk was on 44300 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   ForwardModal: () => L
 }), n(47120);
@@ -21,12 +21,12 @@ var a = n(200651),
   y = n(346610),
   E = n(895442),
   I = n(757853),
-  v = n(388275),
-  S = n(912332),
-  C = n(646746),
-  O = n(819727),
+  S = n(388275),
+  C = n(912332),
+  O = n(646746),
+  v = n(819727),
   x = n(388032),
-  A = n(480310),
+  A = n(691176),
   N = n(621054);
 
 function T(e) {
@@ -94,8 +94,8 @@ function L(e) {
     location: "ForwardModal"
   }), G = r.useMemo(() => (0, u.dL)(k), [k]), [U, z] = r.useState(!1), H = (0, i.e7)([p.Z], () => {
     var e;
-    return null !== (e = p.Z.getMessage(t.channel_id, t.id)) && void 0 !== e ? e : t
-  }, [t]), Q = (0, i.e7)([m.Z], () => m.Z.getChannel(k), [k]), V = (0, b.ZF)(), B = (0, b.mh)(), q = r.useRef(0), K = r.useRef(0), [X, Y] = r.useState(L), J = X.length, $ = J >= O.G, [ee, et] = r.useState(""), {
+    return null != (e = p.Z.getMessage(t.channel_id, t.id)) ? e : t
+  }, [t]), Q = (0, i.e7)([m.Z], () => m.Z.getChannel(k), [k]), V = (0, b.ZF)(), B = (0, b.mh)(), q = r.useRef(0), K = r.useRef(0), [X, Y] = r.useState(L), J = X.length, $ = J >= v.G, [ee, et] = r.useState(""), {
     results: en,
     updateSearchText: ea
   } = (0, d.s)({
@@ -113,7 +113,7 @@ function L(e) {
     }), w()
   }, [k, M, w]), ei = r.useCallback(() => {
     var e;
-    let t = null === (e = m.Z.getChannel(k)) || void 0 === e ? void 0 : e.guild_id,
+    let t = null == (e = m.Z.getChannel(k)) ? void 0 : e.guild_id,
       n = (0, h.wR)(t, k, M);
     (0, s.showToast)((0, s.createToast)(x.NW.string(x.t["L/PwZW"]), s.ToastType.LINK)), (0, g.JG)(n), (0, b.xp)(k, M)
   }, [k, M]), es = r.useCallback(() => {
@@ -122,7 +122,7 @@ function L(e) {
   r.useEffect(() => {
     if ("" === ee) {
       var e;
-      null === (e = eo.current) || void 0 === e || e.focus()
+      null == (e = eo.current) || e.focus()
     }
   }, [ee]);
   let ec = r.useMemo(() => (0, l.throttle)(() => {
@@ -151,11 +151,8 @@ function L(e) {
         withMessage: l,
         transitionToDestination: i,
         closeAfterSend: d
-      } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = null !== (r = p.Z.getMessage(k, M)) && void 0 !== r ? r : t;
-      if (null == h) {
-        (0, s.showToast)((0, s.createToast)(x.NW.string(x.t.R0RpRU), s.ToastType.FAILURE));
-        return
-      }
+      } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = null != (r = p.Z.getMessage(k, M)) ? r : t;
+      if (null == h) return void(0, s.showToast)((0, s.createToast)(x.NW.string(x.t.R0RpRU), s.ToastType.FAILURE));
       z(!0);
       let g = (await Promise.all(e.map(u.qx))).filter(_.lm);
       if ((0, E.Z)(h, g) && !await new Promise(e => {
@@ -168,11 +165,8 @@ function L(e) {
               onBack: () => e(!1)
             }))
           })
-        })) {
-        z(!1);
-        return
-      }
-      d && (0, S.mc)(), null == Z || Z(), i && (await o.Z.fetchMessages({
+        })) return void z(!1);
+      d && (0, C.mc)(), null == Z || Z(), i && (await o.Z.fetchMessages({
         channelId: g[0]
       }), (0, c.Kh)(g[0], {
         openTextInVoiceIfVoiceChannel: !0
@@ -211,10 +205,10 @@ function L(e) {
         numQueryChanges: K.current,
         anyDestinationHasSlowmode: I
       });
-      let v = e.filter((e, t) => "rejected" === y[t].status);
-      (0, S.Np)({
+      let S = e.filter((e, t) => "rejected" === y[t].status);
+      (0, C.Np)({
         message: h,
-        failedDestinations: v,
+        failedDestinations: S,
         forwardOptions: j
       })
     }, [k, j, M, t, Z, ec]),
@@ -281,7 +275,7 @@ function L(e) {
               variant: "text-sm/normal",
               color: "text-warning",
               children: x.NW.format(x.t["3Fbkio"], {
-                count: O.G
+                count: v.G
               })
             }) : (R || F) && (0, a.jsx)(s.X6q, {
               variant: "heading-sm/normal",
@@ -295,7 +289,7 @@ function L(e) {
         })]
       }), R && W && (0, a.jsx)("div", {
         className: A.forwardPreviewWrapperInset,
-        children: (0, a.jsx)(C.O, {
+        children: (0, a.jsx)(O.O, {
           message: H,
           forwardOptions: j
         })
@@ -309,7 +303,7 @@ function L(e) {
         "aria-label": x.NW.string(x.t["5h0QOD"]),
         autoFocus: !0
       })]
-    }), eg, !R && (F ? (0, a.jsx)(v.n, {
+    }), eg, !R && (F ? (0, a.jsx)(S.n, {
       message: H,
       forwardOptions: j,
       sendLabel: e_,

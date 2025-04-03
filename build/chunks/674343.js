@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => u
 }), n(266796);
@@ -7,17 +7,17 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(313201),
-  l = n(36703),
-  c = n(555428);
-let d = (0, o.hQ)();
+  l = n(313201),
+  o = n(36703),
+  c = n(193452);
+let d = (0, l.hQ)();
 
 function u(e) {
   let {
     volume: t,
     title: n,
     description: i,
-    label: o,
+    label: l,
     onVolumeChange: u,
     refreshStyles: m = !1
   } = e;
@@ -36,10 +36,10 @@ function u(e) {
     }), (0, r.jsx)("div", {
       className: c.soundboardColumn,
       children: (0, r.jsx)(a.xJW, {
-        title: o,
+        title: l,
         titleId: d,
         children: (0, r.jsx)(a.iRW, {
-          initialValue: (0, l.P)(t),
+          initialValue: (0, o.P)(t),
           maxValue: 100,
           onValueRender: e => "".concat(e.toFixed(0), "%"),
           onValueChange: u,

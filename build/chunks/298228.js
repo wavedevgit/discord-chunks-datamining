@@ -1,13 +1,13 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  O: () => a
+  O: () => o
 }), n(47120), n(653041);
 var r = n(192379),
   l = n(399606),
-  o = n(1870);
-let a = e => {
-  let t = (0, l.e7)([o.Z], () => o.Z.purchases);
+  a = n(1870);
+let o = e => {
+  let t = (0, l.e7)([a.Z], () => a.Z.purchases);
   return (0, r.useMemo)(() => {
     let n = [],
       r = [];

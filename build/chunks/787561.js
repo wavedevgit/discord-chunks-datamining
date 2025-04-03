@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   X: () => Z,
@@ -22,14 +22,14 @@ var r = n(200651),
   x = n(430824),
   j = n(496675),
   N = n(699516),
-  v = n(594174),
-  _ = n(434404),
+  _ = n(594174),
+  v = n(434404),
   C = n(999382),
   O = n(54842),
   y = n(929834),
   I = n(981631),
   E = n(388032),
-  S = n(855689),
+  S = n(90386),
   T = n(922905);
 
 function P(e) {
@@ -65,23 +65,24 @@ function w(e, t) {
 }
 let R = "dismissedCommunityFeaturesUpsell",
   Z = () => {
-    let e;
-    let {
-      guild: t,
-      submitting: n,
-      errors: i
-    } = (0, l.cj)([C.Z], () => ({
-      submitting: C.Z.isSubmitting(),
-      guild: C.Z.getGuild(),
-      errors: C.Z.getErrors()
-    })), s = Object.keys(i), a = s.length > 0 ? s[0] : null;
+    let e, {
+        guild: t,
+        submitting: n,
+        errors: i
+      } = (0, l.cj)([C.Z], () => ({
+        submitting: C.Z.isSubmitting(),
+        guild: C.Z.getGuild(),
+        errors: C.Z.getErrors()
+      })),
+      s = Object.keys(i),
+      a = s.length > 0 ? s[0] : null;
     return e = "rules_channel_id" === a ? E.NW.string(E.t["7IrBYm"]) : null != a ? i[a] : void 0, (0, r.jsx)(u.Z, {
       submitting: n,
       onReset: () => {
-        null != t && _.Z.init(t.id)
+        null != t && v.Z.init(t.id)
       },
       onSave: () => {
-        null != t && _.Z.saveGuild(t.id, {
+        null != t && v.Z.saveGuild(t.id, {
           rulesChannelId: t.rulesChannelId,
           preferredLocale: t.preferredLocale,
           safetyAlertsChannelId: t.safetyAlertsChannelId,
@@ -100,7 +101,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       guild: s
     } = e, [a, u] = i.useState(!0 === c.K.get(R)), g = (0, l.e7)([b.Z], () => {
       var e;
-      return null !== (e = b.Z.getMemberCount(s.id)) && void 0 !== e ? e : 0
+      return null != (e = b.Z.getMemberCount(s.id)) ? e : 0
     }), [p, f] = i.useState(!1);
     (0, m.ZP)(() => {
       o.tn.get({
@@ -113,14 +114,14 @@ let R = "dismissedCommunityFeaturesUpsell",
     let j = (0, l.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
       N = s.isCommunity() && g >= 1e3 && p && null == j;
     if (t && n && !N) return null;
-    let v = async () => {
+    let _ = async () => {
       try {
         let e = await o.tn.post({
           url: I.ANM.JOIN_ADMIN_SERVER(s.id),
           oldFormErrors: !0,
           rejectWithError: !0
         });
-        _.Z.close(), (0, h.X)(e.body.id)
+        v.Z.close(), (0, h.X)(e.body.id)
       } catch (e) {}
     };
     return a && !N ? null : (0, r.jsxs)("div", {
@@ -158,20 +159,20 @@ let R = "dismissedCommunityFeaturesUpsell",
         className: S.upsellFooter,
         children: [N && (0, r.jsx)(d.zxk, {
           size: d.zxk.Sizes.SMALL,
-          onClick: v,
+          onClick: _,
           className: S.upsellButton,
           children: E.NW.string(E.t.iF1Asr)
         }), n ? null : (0, r.jsx)(d.zxk, {
           size: d.zxk.Sizes.SMALL,
           onClick: () => {
-            _.Z.setSection(I.pNK.ONBOARDING)
+            v.Z.setSection(I.pNK.ONBOARDING)
           },
           className: S.upsellButton,
           children: E.NW.string(E.t["S/DfiY"])
         }), t ? null : (0, r.jsx)(d.zxk, {
           size: d.zxk.Sizes.SMALL,
           onClick: () => {
-            _.Z.setSection(I.pNK.DISCOVERY)
+            v.Z.setSection(I.pNK.DISCOVERY)
           },
           className: S.upsellButton,
           color: d.zxk.Colors.PRIMARY,
@@ -179,7 +180,7 @@ let R = "dismissedCommunityFeaturesUpsell",
         }), (0, r.jsx)(d.zxk, {
           size: d.zxk.Sizes.SMALL,
           onClick: () => {
-            _.Z.setSection(I.pNK.ANALYTICS)
+            v.Z.setSection(I.pNK.ANALYTICS)
           },
           className: S.upsellButton,
           color: d.zxk.Colors.PRIMARY,
@@ -208,23 +209,23 @@ let R = "dismissedCommunityFeaturesUpsell",
       } = e;
       t.type === I.d4z.GUILD_TEXT && m.push({
         value: t.id,
-        label: (0, g.F6)(t, v.default, N.Z, !0)
+        label: (0, g.F6)(t, _.default, N.Z, !0)
       })
     });
     let h = () => {
-        _.Z.init(e.id), _.Z.open(e.id, I.pNK.MEMBER_VERIFICATION)
+        v.Z.init(e.id), v.Z.open(e.id, I.pNK.MEMBER_VERIFICATION)
       },
       b = () => {
         if (null == e) return;
         let t = new Set(e.features);
-        t.delete(I.oNc.COMMUNITY), t.delete(I.oNc.DISCOVERABLE), (0, p.K2)(e.id, "disableCommunity") || e.hasFeature(I.oNc.CLAN) || t.delete(I.oNc.MEMBER_VERIFICATION_GATE_ENABLED), t.delete(I.oNc.PREVIEW_ENABLED), _.Z.updateGuild({
+        t.delete(I.oNc.COMMUNITY), t.delete(I.oNc.DISCOVERABLE), (0, p.K2)(e.id, "disableCommunity") || e.hasFeature(I.oNc.CLAN) || t.delete(I.oNc.MEMBER_VERIFICATION_GATE_ENABLED), t.delete(I.oNc.PREVIEW_ENABLED), v.Z.updateGuild({
           features: t,
           rulesChannelId: null,
           publicUpdatesChannelId: null
         })
       },
       x = e => {
-        _.Z.updateGuild({
+        v.Z.updateGuild({
           description: e
         })
       },
@@ -294,7 +295,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             value: e.rulesChannelId,
             options: m,
             onChange: e => {
-              _.Z.updateGuild({
+              v.Z.updateGuild({
                 rulesChannelId: e
               })
             },
@@ -321,7 +322,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             value: e.publicUpdatesChannelId,
             options: m,
             onChange: e => {
-              _.Z.updateGuild({
+              v.Z.updateGuild({
                 publicUpdatesChannelId: e
               })
             },
@@ -348,7 +349,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             value: e.safetyAlertsChannelId,
             options: m,
             onChange: e => {
-              _.Z.updateGuild({
+              v.Z.updateGuild({
                 safetyAlertsChannelId: e
               })
             },
@@ -375,7 +376,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             value: e.preferredLocale,
             options: o,
             onChange: e => {
-              _.Z.updateGuild({
+              v.Z.updateGuild({
                 preferredLocale: e
               })
             },
@@ -395,7 +396,7 @@ let R = "dismissedCommunityFeaturesUpsell",
             type: d.geA.DESCRIPTION,
             children: E.NW.string(E.t["/B6PR0"])
           }), (0, r.jsx)(d.Kx8, {
-            value: null !== (n = e.description) && void 0 !== n ? n : "",
+            value: null != (n = e.description) ? n : "",
             placeholder: E.NW.string(E.t.Nvfows),
             onChange: x,
             maxLength: 120,

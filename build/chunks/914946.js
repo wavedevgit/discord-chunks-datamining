@@ -8,9 +8,9 @@ n.d(t, {
   YK: () => er,
   YS: () => et,
   _J: () => Y,
-  _f: () => ea,
+  _f: () => eo,
   aE: () => z,
-  bu: () => eo,
+  bu: () => ea,
   kb: () => K,
   s9: () => q,
   t9: () => $,
@@ -20,8 +20,8 @@ n.d(t, {
   zy: () => X
 }), n(301563), n(474991), n(398202), n(47120), n(653041), n(411104), n(757143), n(789020), n(230036), n(392711);
 var r, i, l = n(729594),
-  o = n(243814),
-  a = n(544891),
+  a = n(243814),
+  o = n(544891),
   s = n(63023),
   c = n(433517),
   u = n(904245),
@@ -36,9 +36,9 @@ var r, i, l = n(729594),
   E = n(592125),
   O = n(430824),
   N = n(131951),
-  v = n(375954),
-  y = n(158776),
-  I = n(594174),
+  y = n(375954),
+  I = n(158776),
+  v = n(594174),
   C = n(979651),
   S = n(70956),
   T = n(5192),
@@ -80,7 +80,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = null !== (i = null === (r = j.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) || void 0 === r ? void 0 : r.host) && void 0 !== i ? i : "localhost",
+let D = null != (i = null == (r = j.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? void 0 : r.host) ? i : "localhost",
   k = function() {
     let e = D.split(":")[0];
     if (!e.includes(".")) return e;
@@ -109,13 +109,13 @@ function H(e, t) {
   let n = [],
     r = e.getGuildId();
   return [L.d4z.GUILD_CATEGORY, ...b.tx].includes(e.type) || n.push(new Promise(t => {
-    v.Z.whenReady(e.id, () => t()), u.Z.fetchMessages({
+    y.Z.whenReady(e.id, () => t()), u.Z.fetchMessages({
       channelId: e.id,
       limit: L.AQB
     })
   })), Promise.all(n).then(() => {
     var n;
-    let i = (!e.isNSFW() || (null === (n = I.default.getCurrentUser()) || void 0 === n ? void 0 : n.nsfwAllowed) === !0) && t ? v.Z.getMessages(e.id).toArray().map(F) : [],
+    let i = (!e.isNSFW() || (null == (n = v.default.getCurrentUser()) ? void 0 : n.nsfwAllowed) === !0) && t ? y.Z.getMessages(e.id).toArray().map(F) : [],
       l = Object.values(C.Z.getVoiceStatesForChannel(e.id)).map(t => z(r, e.id, t));
     return {
       id: e.id,
@@ -166,10 +166,10 @@ function z(e, t, n) {
     mute: r,
     deaf: i,
     selfMute: l,
-    selfDeaf: o,
-    suppress: a,
+    selfDeaf: a,
+    suppress: o,
     userId: s
-  } = n, c = I.default.getUser(s);
+  } = n, c = v.default.getUser(s);
   if (null == c) throw Error("Invalid user id: ".concat(s));
   return {
     nick: T.ZP.getName(e, t, c),
@@ -180,8 +180,8 @@ function z(e, t, n) {
       mute: r,
       deaf: i,
       self_mute: l,
-      self_deaf: o,
-      suppress: a
+      self_deaf: a,
+      suppress: o
     },
     user: (0, Z.Z)(c)
   }
@@ -192,7 +192,7 @@ function Y(e, t) {
     type: e,
     user: (0, Z.Z)(t),
     presence: {
-      status: y.Z.getStatus(t.id, null),
+      status: I.Z.getStatus(t.id, null),
       activity: null
     }
   }
@@ -202,7 +202,7 @@ function K(e, t) {
   var n;
   return null == t ? e : R(w({}, e), {
     presence: R(w({}, e.presence), {
-      activity: null !== (n = y.Z.getApplicationActivity(e.user.id, t)) && void 0 !== n ? n : null
+      activity: null != (n = I.Z.getApplicationActivity(e.user.id, t)) ? n : null
     })
   })
 }
@@ -222,7 +222,7 @@ function q(e) {
 
 function Q(e, t, n) {
   let r = O.Z.getGuild(e.getGuildId());
-  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(o.x.MESSAGES_READ) > -1
+  return (null != r ? r.getApplicationId() : e.getApplicationId()) === t || n.indexOf(a.x.MESSAGES_READ) > -1
 }
 
 function X(e) {
@@ -245,9 +245,9 @@ function J(e) {
     } = e,
     l = 0;
   n && (l |= L.xjy.INSTANCE), (null == r ? void 0 : r.join) != null && (l |= L.xjy.JOIN);
-  let o = g.cP.getSetting(),
-    a = g.Ou.getSetting();
-  return t ? (l |= L.xjy.EMBEDDED, o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === L.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (o && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), a && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
+  let a = g.cP.getSetting(),
+    o = g.Ou.getSetting();
+  return t ? (l |= L.xjy.EMBEDDED, a && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)) : ((null == i ? void 0 : i.privacy) === L.RYY.PUBLIC || c.K.get("ACTIVITIES_FORCE_PUBLIC")) && (a && (l |= L.xjy.PARTY_PRIVACY_FRIENDS), o && (l |= L.xjy.PARTY_PRIVACY_VOICE_CHANNEL)), l
 }
 
 function $(e, t, n) {
@@ -255,7 +255,7 @@ function $(e, t, n) {
 }
 
 function ee(e) {
-  return a.tn.get({
+  return o.tn.get({
     url: L.ANM.APPLICATION_RPC(e),
     oldFormErrors: !0,
     retries: 3,
@@ -273,7 +273,7 @@ function ee(e) {
 }
 async function et(e, t, n) {
   let r = p.Z.getApplication(t);
-  if ("string" == typeof n) {
+  if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, d.ZP)(t);
       if (null == e || !B(n, [e])) throw new A.Z({
@@ -284,21 +284,19 @@ async function et(e, t, n) {
       if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new A.Z({
         closeCode: L.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    }
-  }
-  null == r && (r = m.ZP.createFromServer(await ee(t)));
+    } null == r && (r = m.ZP.createFromServer(await ee(t)));
   let {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   } = r;
   e.application = {
     id: i,
     name: l,
-    icon: o,
-    coverImage: a,
+    icon: a,
+    coverImage: o,
     flags: s
   }
 }
@@ -361,13 +359,13 @@ function el(e, t) {
   }
 }
 
-function eo(e) {
+function ea(e) {
   if (e !== x.He.POST_MESSAGE) throw new A.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, 'command not available from "'.concat(e, " transport"))
 }
 
-function ea(e) {
+function eo(e) {
   if (null == e.id) throw new A.Z({
     errorCode: L.lTL.INVALID_COMMAND
   }, "Invalid application");

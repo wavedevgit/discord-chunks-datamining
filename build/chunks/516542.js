@@ -1,6 +1,6 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => y
+  Z: () => O
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -16,25 +16,25 @@ var i = n(200651),
   f = n(849522),
   m = n(145597),
   g = n(981631),
-  v = n(103325);
+  y = n(842304);
 
-function y(e) {
+function O(e) {
   let {
     id: t,
     replyToMessageId: n,
-    channel: y,
-    onSend: O
+    channel: O,
+    onSend: v
   } = e, b = (0, f.Z)(), {
     placeholder: _,
     accessibilityLabel: E
   } = (0, c.Z)({
-    channel: y
+    channel: O
   }), [x, I] = r.useState(() => (0, d.H2)()), {
     textValue: j,
     richValue: C
   } = x, [S, N] = r.useState(!1), Z = r.useCallback(() => N(!0), []), w = r.useCallback(() => N(!1), []);
   (0, s.ZP)(() => {
-    (0, a.In)(y.id, !0, !0, n, {
+    (0, a.In)(O.id, !0, !0, n, {
       section: g.jXE.OVERLAY
     })
   });
@@ -47,18 +47,18 @@ function y(e) {
     T = r.useCallback(e => {
       "Escape" === e.key && l.Z.updateNotificationStatus(t, g._1z.ACTIVE)
     }, [t]),
-    k = r.useCallback(() => (j.length > b || (o.Z.sendMessage(y.id, h.ZP.parse(y, j), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == O || O(j)), Promise.resolve({
+    k = r.useCallback(() => (j.length > b || (o.Z.sendMessage(O.id, h.ZP.parse(O, j), !1), l.Z.setInputLocked(!0, (0, m.getPID)()), l.Z.updateNotificationStatus(t, g._1z.DISMISSED), null == v || v(j)), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
-    })), [j, b, y, t, O]);
+    })), [j, b, O, t, v]);
   return (0, i.jsx)("div", {
-    className: v.container,
+    className: y.container,
     children: (0, i.jsx)(p.Z, {
-      innerClassName: v.textArea,
+      innerClassName: y.textArea,
       onChange: P,
       placeholder: _,
       accessibilityLabel: E,
-      channel: y,
+      channel: O,
       textValue: j,
       richValue: C,
       type: u.Ie.OVERLAY_INLINE_REPLY,

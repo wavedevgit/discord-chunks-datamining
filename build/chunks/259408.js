@@ -21,7 +21,7 @@ function m(e, r) {
     guildId: null != x ? x : d.aIL,
     channelId: e.id,
     channelName: (0, a.F6)(e, l.default, c.Z),
-    guildName: null !== (t = null == p ? void 0 : p.name) && void 0 !== t ? t : u.NW.string(u.t.LJpTRE),
+    guildName: null != (t = null == p ? void 0 : p.name) ? t : u.NW.string(u.t.LJpTRE),
     muted: o.Z.isSelfMute(),
     deafened: o.Z.isSelfDeaf(),
     nonce: m

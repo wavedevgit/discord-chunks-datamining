@@ -16,7 +16,7 @@ function o(e) {
 
 function i(e) {
   var t;
-  return e && e.prototype && "function" == typeof e.prototype.render || (null == e ? void 0 : null === (t = e.$$typeof) || void 0 === t ? void 0 : t.toString()) === "Symbol(react.forward_ref)"
+  return e && e.prototype && "function" == typeof e.prototype.render || (null == e || null == (t = e.$$typeof) ? void 0 : t.toString()) === "Symbol(react.forward_ref)"
 }
 
 function a(e, t) {}

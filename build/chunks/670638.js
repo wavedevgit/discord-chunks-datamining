@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(341907),
   b = n(46140),
   C = n(981631),
-  v = n(231338),
-  N = n(388032);
+  N = n(231338),
+  v = n(388032);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,10 +72,8 @@ function T(e) {
       handleOverrideDeliveryClick: _
     } = (0, x.kJ)(e.quest.id),
     I = s.useCallback(() => {
-      if (e.quest.id === b.V6) {
-        window.open(u.Z.getArticleURL(C.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
-        return
-      }(0, f.FE)(e.quest, {
+      if (e.quest.id === b.V6) return void window.open(u.Z.getArticleURL(C.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      (0, f.FE)(e.quest, {
         content: e.questContent,
         ctaContent: d.jZ.CONTEXT_MENU_OPEN_GAME_LINK,
         impressionId: q
@@ -87,11 +85,11 @@ function T(e) {
         position: e.questContentPosition,
         ctaContent: d.jZ.CONTEXT_MENU_COPY_LINK,
         impressionId: q
-      }), (0, i.showToast)((0, i.createToast)(N.NW.string(N.t["+5kSoa"]), i.ToastType.SUCCESS))
+      }), (0, i.showToast)((0, i.createToast)(v.NW.string(v.t["+5kSoa"]), i.ToastType.SUCCESS))
     }, [q, e.quest.id, e.questContent, e.questContentPosition]),
     M = e => (0, i.showToast)((0, i.createToast)(new l.Z(e, e.status).message, i.ToastType.FAILURE)),
     A = () => (0, p.is)(e.quest.id).catch(M),
-    W = s.useMemo(() => y ? N.t.lwQdjI : N.t.hvVgAQ, [y]),
+    W = s.useMemo(() => y ? v.t.lwQdjI : v.t.hvVgAQ, [y]),
     Z = s.useMemo(() => (0, r.jsx)(i.S89, {
       id: "delivery",
       label: "Show in Quest Bar",
@@ -105,24 +103,24 @@ function T(e) {
       null != e.onSelect ? e.onSelect() : (0, a.Zy)()
     },
     navId: "quests-entry",
-    "aria-label": N.NW.string(N.t.ogxXGh),
-    onClose: null !== (t = null == e ? void 0 : e.onClose) && void 0 !== t ? t : v.dG,
+    "aria-label": v.NW.string(v.t.ogxXGh),
+    onClose: null != (t = null == e ? void 0 : e.onClose) ? t : N.dG,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [(0, r.jsx)(i.sNh, {
         id: "play-game",
-        label: N.NW.string(W),
+        label: v.NW.string(W),
         action: I,
         icon: i.zFc
       }), !0 === e.showShareLink && (0, r.jsx)(i.sNh, {
         id: "share-link",
-        label: N.NW.string(N.t.RDE0SU),
+        label: v.NW.string(v.t.RDE0SU),
         action: D,
         icon: i.TIy
       }), !1]
     }, "major-actions"), (0, r.jsxs)(i.kSQ, {
       children: [!e.hideLearnMore && (0, r.jsx)(i.sNh, {
         id: "learn-more",
-        label: N.NW.string(N.t.Ws2Bl5),
+        label: v.NW.string(v.t.Ws2Bl5),
         action: () => {
           E({
             questId: e.quest.id,
@@ -137,7 +135,7 @@ function T(e) {
         icon: i.qDn
       }), k && (0, r.jsx)(i.sNh, {
         id: "display-disclosure",
-        label: N.NW.string(N.t.GcsZKC),
+        label: v.NW.string(v.t.GcsZKC),
         action: () => {
           (0, j.openDisclosureModal)(e.quest, {
             content: e.questContent,
@@ -148,7 +146,7 @@ function T(e) {
         }
       }), c && (0, r.jsx)(i.sNh, {
         id: "hide-entrypoint",
-        label: N.NW.string(N.t.NN79Ex),
+        label: v.NW.string(v.t.NN79Ex),
         action: () => {
           E({
             questId: e.quest.id,
@@ -157,7 +155,7 @@ function T(e) {
             questContentCTA: d.jZ.CONTEXT_MENU_HIDE_CONTENT
           }), (0, f.GN)(e.questContent) && ((0, p.gl)(e.quest.id, e.questContent), T && O && (0, j.maybeShowSurveyForQuest)(e.quest))
         },
-        subtext: N.NW.string(N.t["1u3YPD"])
+        subtext: v.NW.string(v.t["1u3YPD"])
       })]
     }, "minor-actions"), e.quest.preview && (0, r.jsxs)(i.kSQ, {
       label: "Preview Controls",

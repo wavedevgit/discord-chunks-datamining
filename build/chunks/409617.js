@@ -15,8 +15,8 @@ var i = t(200651),
   N = t(613734),
   u = t(800530),
   h = t(388032),
-  _ = t(529410),
-  C = t(676181);
+  _ = t(473787),
+  C = t(91463);
 
 function p(e) {
   let {
@@ -25,12 +25,12 @@ function p(e) {
     onClose: a,
     onNext: p,
     onBack: g
-  } = e, j = (0, N.U0)(), I = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [k, E] = s.useState(""), [T, v] = s.useState(!1);
+  } = e, j = (0, N.U0)(), I = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [k, E] = s.useState(""), [T, f] = s.useState(!1);
   s.useEffect(() => {
-    E(null != I ? I : ""), v(j === u.bK.SOMETHING_ELSE)
+    E(null != I ? I : ""), f(j === u.bK.SOMETHING_ELSE)
   }, [I, j, t]);
-  let f = e => {
-      v(e === u.bK.SOMETHING_ELSE), e !== u.bK.SOMETHING_ELSE && (E(""), c.Z.dispatch({
+  let S = e => {
+      f(e === u.bK.SOMETHING_ELSE), e !== u.bK.SOMETHING_ELSE && (E(""), c.Z.dispatch({
         type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
         userInput: ""
       })), c.Z.dispatch({
@@ -38,7 +38,7 @@ function p(e) {
         signal: e
       })
     },
-    S = u.RY.map(e => ({
+    v = u.RY.map(e => ({
       value: e,
       name: (0, m.ox)(e)
     }));
@@ -68,12 +68,12 @@ function p(e) {
         radioItemClassName: C.radioItem,
         size: o.FXm.Sizes.NOT_SET,
         value: j,
-        options: S,
+        options: v,
         onChange: e => {
           let {
             value: n
           } = e;
-          return f(n)
+          return S(n)
         }
       }), t && T && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(o.Kx8, {

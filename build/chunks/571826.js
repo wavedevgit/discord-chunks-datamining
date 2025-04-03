@@ -38,7 +38,7 @@ function u(e) {
 
 function l(e) {
   var t;
-  return null === (t = a.Z.getChannel(e)) || void 0 === t ? void 0 : t.guild_id
+  return null == (t = a.Z.getChannel(e)) ? void 0 : t.guild_id
 }
 
 function s(e) {

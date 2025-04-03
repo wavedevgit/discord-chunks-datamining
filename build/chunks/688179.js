@@ -1,19 +1,19 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  m: () => l
+  m: () => o
 });
 var r = n(806966),
   i = n(585483),
   a = n(981631),
-  o = n(957825);
+  l = n(957825);
 
-function l(e) {
+function o(e) {
   let {
     stickerPack: t,
     stickerPickerCategories: n
   } = e;
   i.S.dispatchToLastSubscribed(a.CkL.OPEN_EXPRESSION_PICKER, {
-    activeView: o.X1.STICKER
+    activeView: l.X1.STICKER
   });
-  let l = n.findIndex(e => e.id === t.id); - 1 !== l && r.ZN.setActiveCategoryIndex(l)
+  let o = n.findIndex(e => e.id === t.id); - 1 !== o && r.ZN.setActiveCategoryIndex(o)
 }

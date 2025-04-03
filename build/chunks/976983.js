@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  B: () => v,
+  B: () => _,
   Z: () => N
 }), n(266796), n(47120);
 var r = n(200651);
@@ -19,7 +19,7 @@ var i = n(120356),
   p = n(570961),
   h = n(290511),
   f = n(388032),
-  b = n(721898);
+  b = n(311400);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,8 +58,8 @@ function N(e) {
   let {
     guild: u,
     prompt: N,
-    singleColumn: v,
-    promptIndex: _,
+    singleColumn: _,
+    promptIndex: v,
     option: C,
     hasError: O,
     onDragStart: y,
@@ -80,13 +80,13 @@ function N(e) {
   }), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, m.Z)(null === (t = C.emoji) || void 0 === t ? void 0 : t.id, null === (i = C.emoji) || void 0 === i ? void 0 : i.name);
+  } = (0, m.Z)(null == (t = C.emoji) ? void 0 : t.id, null == (i = C.emoji) ? void 0 : i.name);
   return (0, h.Oq)(C.emoji) || null != D || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
       [b.hasError]: O || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,
       [b.dropIndicatorAfter]: null != w && T > w,
-      [b.singleColumn]: v
+      [b.singleColumn]: _
     }),
     onClick: () => (0, o.ZDy)(async () => {
       let {
@@ -96,7 +96,7 @@ function N(e) {
         guild: u,
         prompt: N,
         option: C,
-        index: _,
+        index: v,
         onSave: e => {
           (0, p.Kk)(u, N.id, {
             options: N.options.map(t => t.id === C.id ? e : t)
@@ -124,8 +124,8 @@ function N(e) {
       children: [(0, r.jsx)("div", {
         className: b.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null === (a = C.emoji) || void 0 === a ? void 0 : a.id,
-          emojiName: null === (c = C.emoji) || void 0 === c ? void 0 : c.name,
+          emojiId: null == (a = C.emoji) ? void 0 : a.id,
+          emojiName: null == (c = C.emoji) ? void 0 : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -150,7 +150,7 @@ function N(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guild: t,
     prompt: i,

@@ -17,7 +17,7 @@ var d = a(442837),
   b = a(463031),
   u = a(981631),
   m = a(388032),
-  g = a(849456);
+  g = a(767826);
 let j = function(t) {
   let {
     guildId: e,
@@ -27,12 +27,12 @@ let j = function(t) {
   } = (0, r.O)(e, j), y = (0, d.e7)([p.Z], () => p.Z.getAccount(null, u.ABu.RIOT_GAMES)), _ = (0, d.e7)([p.Z], () => p.Z.getAccount(null, u.ABu.LEAGUE_OF_LEGENDS)), B = (0, l.Z)({
     guildId: e,
     leaderboardId: j
-  }), v = j === b.z;
-  if ((!v || null != y && null != _) && !h) return null;
-  let x = f.Z.get(u.ABu.RIOT_GAMES),
-    O = v && null == y && null == _,
-    N = v && null != y && null == _,
-    S = v && null == y && null != _,
+  }), x = j === b.z;
+  if ((!x || null != y && null != _) && !h) return null;
+  let v = f.Z.get(u.ABu.RIOT_GAMES),
+    O = x && null == y && null == _,
+    N = x && null != y && null == _,
+    S = x && null == y && null != _,
     Z = N || S;
   return (0, c.jsxs)(c.Fragment, {
     children: [(0, c.jsx)(o.Z, {
@@ -99,9 +99,9 @@ let j = function(t) {
           }
         }))
       },
-      children: [v && !h && (0, c.jsx)("img", {
+      children: [x && !h && (0, c.jsx)("img", {
         alt: "Riot Games",
-        src: x.icon.whiteSVG,
+        src: v.icon.whiteSVG,
         className: g.riotIcon
       }), O ? m.NW.string(m.t.w6VSSE) : Z ? m.NW.string(m.t.CHNBdn) : m.NW.string(m.t["0yRXHx"])]
     })]

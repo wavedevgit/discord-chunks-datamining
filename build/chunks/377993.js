@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => L
 }), n(47120), n(653041);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(347475),
   _ = n(158776),
   C = n(699516),
-  v = n(111583),
-  y = n(594174),
-  x = n(626135),
+  y = n(111583),
+  x = n(594174),
+  v = n(626135),
   j = n(585483),
   O = n(233870),
   E = n(51144),
@@ -29,7 +29,7 @@ var r = n(200651),
   I = n(276264),
   P = n(981631),
   S = n(388032),
-  Z = n(205145);
+  Z = n(11847);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,11 +71,11 @@ function M(e) {
     channel: i,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([v.Z], () => null != v.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([y.default], () => y.default.getCurrentUser()), x = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([C.Z], () => C.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
+  } = e, p = (0, o.e7)([y.Z], () => null != y.Z.getTypingUsers(i.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([C.Z], () => C.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("17111")]).then(n.bind(n, 354589));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("14126")]).then(n.bind(n, 354589));
       return n => (0, r.jsx)(e, A(T({}, n), {
         user: t,
         channel: i
@@ -118,7 +118,7 @@ function M(e) {
       applicationStream: N,
       channel: i,
       onContextMenu: Z,
-      isMobile: x,
+      isMobile: v,
       nick: O,
       nameplate: w
     }, e), t.id)
@@ -138,18 +138,18 @@ function k(e, t) {
 function L(e) {
   let {
     channel: t
-  } = e, n = y.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
+  } = e, n = x.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, o.e7)([C.Z, y.default, _.Z], () => {
-    let e = (0, O.T)(t.recipients, y.default),
+  } = (0, o.e7)([C.Z, x.default, _.Z], () => {
+    let e = (0, O.T)(t.recipients, x.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      C.Z.isFriend(t.id) || t.id === (null === (r = y.default.getCurrentUser()) || void 0 === r ? void 0 : r.id) ? n[t.id] = {
-        status: null !== (i = _.Z.getStatus(t.id)) && void 0 !== i ? i : P.Skl.OFFLINE,
-        activities: null !== (l = _.Z.getActivities(t.id)) && void 0 !== l ? l : w
+      C.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
+        status: null != (i = _.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
+        activities: null != (l = _.Z.getActivities(t.id)) ? l : w
       } : n[t.id] = {
         status: P.Skl.OFFLINE,
         activities: w
@@ -169,7 +169,7 @@ function L(e) {
     }
   }, [t], k);
   i.useEffect(() => {
-    x.default.track(P.rMx.MEMBER_LIST_VIEWED, {
+    v.default.track(P.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

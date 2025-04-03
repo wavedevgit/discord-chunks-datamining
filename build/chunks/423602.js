@@ -1,15 +1,15 @@
 /** Chunk was on 43353 **/
-t.r(n), t.d(n, {
+e.r(n), e.d(n, {
   default: () => l
 });
-var e = t(783284),
-  a = t(356580),
-  r = t(936432),
-  u = t(759063),
-  o = t(660998);
+var t = e(783284),
+  a = e(356580),
+  r = e(936432),
+  u = e(759063),
+  o = e(660998);
 let l = {
   code: "uk",
-  formatDistance: e.Z,
+  formatDistance: t.Z,
   formatLong: a.Z,
   formatRelative: r.Z,
   localize: u.Z,

@@ -10,16 +10,16 @@ var i = n(442837),
   o = n(40851),
   u = n(549879),
   s = n(314897),
-  d = n(981631),
-  c = n(388032);
+  c = n(981631),
+  d = n(388032);
 
 function g(e, t, n) {
   let g = (0, o.Aq)();
-  return (0, i.e7)([s.default], () => s.default.getId() === e) || t === d.IlC.POPOUT ? null : (0, l.jsx)(r.sNh, {
+  return (0, i.e7)([s.default], () => s.default.getId() === e) || t === c.IlC.POPOUT ? null : (0, l.jsx)(r.sNh, {
     id: "message-user",
-    label: c.NW.string(c.t.OAJQlJ),
+    label: d.NW.string(d.t.OAJQlJ),
     action: () => {
-      (0, u.i)(t, !0), a.Z.openPrivateChannel(e), g.dispatch(d.CkL.POPOUT_CLOSE), (0, r.pTH)()
+      (0, u.i)(t, !0), a.Z.openPrivateChannel(e), g.dispatch(c.CkL.POPOUT_CLOSE), (0, r.pTH)()
     },
     icon: n
   })

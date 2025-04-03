@@ -24,8 +24,8 @@ function g(e) {
   } = e, {
     subscriptionMetadataRequest: g,
     selectedSku: x,
-    selectedStoreListing: v,
-    application: N
+    selectedStoreListing: N,
+    application: v
   } = (0, d.JL)(), j = (0, a.Z)(b.i), y = (0, l.e7)([u.Z], () => u.Z.getGuild(null == g ? void 0 : g.guild_id)), C = i.useCallback(() => t(m.h8.REVIEW), [t]);
   if (null == x) return null;
   let O = (0, o.KW)(x.flags);
@@ -43,15 +43,15 @@ function g(e) {
         }),
         showOpenDiscord: !1
       }) : (0, r.jsx)(s.Oc, {
-        icon: null == v ? void 0 : v.thumbnail,
-        storeListingBenefits: null == v ? void 0 : v.benefits,
-        application: null != N ? N : void 0,
+        icon: null == N ? void 0 : N.thumbnail,
+        storeListingBenefits: null == N ? void 0 : N.benefits,
+        application: null != v ? v : void 0,
         title: h.NW.format(h.t.haiCxc, {
           tier: x.name
         }),
         subtitle: O ? h.NW.string(h.t.RvtbPz) : h.NW.string(h.t.zY39Zm),
         description: O ? h.NW.formatToPlainString(h.t.QCe4ra, {
-          applicationName: null == N ? void 0 : N.name
+          applicationName: null == v ? void 0 : v.name
         }) : h.NW.string(h.t.n1Pu8P)
       })
     }), !j && (0, r.jsx)(p.O3, {

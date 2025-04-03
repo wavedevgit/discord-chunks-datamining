@@ -18,7 +18,7 @@ function o(e) {
         }) : (0, h.iG)(e),
         isDefault: e.interval === i.rV.DAY && 7 === e.interval_count
       })),
-      n = null != e ? null === (t = r.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) || void 0 === t ? void 0 : t.value : e;
+      n = null != e ? null == (t = r.find(t => null != t.value && t.value.interval === e.interval && t.value.interval_count === e.interval_count)) ? void 0 : t.value : e;
     return {
       options: r,
       selectedOption: n

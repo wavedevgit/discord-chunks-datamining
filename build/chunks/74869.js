@@ -58,10 +58,7 @@ function j() {
     [t, r] = i.useState(""),
     [o, a] = i.useState([]);
   i.useEffect(() => {
-    if (0 === t.trim().length) {
-      a(e);
-      return
-    }
+    if (0 === t.trim().length) return void a(e);
     a(e.filter(e => l()(t, e.experiment.title.toLowerCase())))
   }, [e, t]);
   let d = i.useMemo(() => o.filter(e => {

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,15 +6,15 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(481060),
-  l = n(385499),
+  l = n(481060),
+  o = n(385499),
   s = n(739566),
   c = n(464891),
   u = n(83561),
   d = n(834129),
   p = n(674563),
   m = n(388032),
-  f = n(60292);
+  f = n(126759);
 
 function h(e) {
   let {
@@ -25,12 +25,12 @@ function h(e) {
     avatarSrc: _,
     eventHandlers: {
       onMouseEnter: b,
-      onMouseLeave: v
+      onMouseLeave: x
     }
   } = (0, u.m)(!0);
   return (0, r.jsx)("div", {
     onMouseEnter: b,
-    onMouseLeave: v,
+    onMouseLeave: x,
     children: (0, r.jsx)(d.Z, {
       className: a()(f.mainContainer, {
         [f.compact]: n
@@ -52,13 +52,13 @@ function h(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: f.spanCorrection,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(l.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
               className: f.username,
               children: m.NW.string(m.t.hG1StL)
-            }), (0, r.jsx)(l.Z, {
+            }), (0, r.jsx)(o.Z, {
               type: p.Hb.SYSTEM_DM,
               className: f.systemTag
             })]

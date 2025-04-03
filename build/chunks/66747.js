@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(715903),
   g = n(69882),
   x = n(189357),
-  v = n(493892),
-  y = n(433355),
+  y = n(493892),
+  v = n(433355),
   O = n(430824),
   N = n(496675),
   _ = n(594174),
@@ -41,7 +41,7 @@ var r = n(200651),
   k = n(285173),
   A = n(981631),
   B = n(388032),
-  W = n(67769);
+  W = n(350381);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -123,7 +123,7 @@ let z = l.memo(function(e) {
             color: d.Z.colors.TEXT_DANGER.css
           })
         }
-      }), (0, v.He)(t.userId) && (0, r.jsx)(C.ua7, {
+      }), (0, y.He)(t.userId) && (0, r.jsx)(C.ua7, {
         text: B.NW.string(B.t.PK9FQ0),
         children: e => {
           let {
@@ -231,7 +231,7 @@ let z = l.memo(function(e) {
             className: W.nameContainer,
             children: [(0, r.jsx)(C.PUh, {
               name: S.ZP.getName(n.guildId, null, o),
-              color: null !== (t = n.colorString) && void 0 !== t ? t : void 0,
+              color: null != (t = n.colorString) ? t : void 0,
               className: W.memberNameText
             }), (0, r.jsx)(f.ZP, {
               primaryGuild: null == o ? void 0 : o.primaryGuild,
@@ -338,12 +338,12 @@ let X = l.memo(function(e) {
       selectedUserIds: p,
       addUsers: f,
       removeUser: h
-    } = (0, E.Z)(t.guildId), j = (0, I.xC)(t.guildId), g = (0, I.hB)(t.guildId, j, t.userId), v = (0, x.m)(t.guildId), y = (0, u.e7)([P.Z], () => {
+    } = (0, E.Z)(t.guildId), j = (0, I.xC)(t.guildId), g = (0, I.hB)(t.guildId, j, t.userId), y = (0, x.m)(t.guildId), v = (0, u.e7)([P.Z], () => {
       var e;
-      return null !== (e = P.Z.getSearchStateByGuildId(t.guildId).selectedSort) && void 0 !== e ? e : L.d$.ORDER_BY_UNSPECIFIED
+      return null != (e = P.Z.getSearchStateByGuildId(t.guildId).selectedSort) ? e : L.d$.ORDER_BY_UNSPECIFIED
     }, [t.guildId], c()), _ = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != t && g && (p.has(t.userId) ? h(t.userId) : f([t.userId]))
-    }, [f, g, t, h, p]), H = y === L.d$.ORDER_BY_GUILD_JOINED_AT_ASC, S = y === L.d$.ORDER_BY_USER_ID_ASC || y === L.d$.ORDER_BY_USER_ID_DESC;
+    }, [f, g, t, h, p]), H = v === L.d$.ORDER_BY_GUILD_JOINED_AT_ASC, S = v === L.d$.ORDER_BY_USER_ID_ASC || v === L.d$.ORDER_BY_USER_ID_DESC;
     return (0, r.jsxs)(r.Fragment, {
       children: [j && (0, r.jsx)(C.ua7, {
         tooltipClassName: W.disabledActionTooltip,
@@ -418,7 +418,7 @@ let X = l.memo(function(e) {
         children: (0, r.jsxs)("div", {
           className: W.actionCell,
           children: [(0, r.jsx)(C.ua7, {
-            text: v ? B.NW.string(B.t.nHfkf3) : B.NW.string(B.t.uTre29),
+            text: y ? B.NW.string(B.t.nHfkf3) : B.NW.string(B.t.uTre29),
             children: e => {
               let {
                 onMouseEnter: t,
@@ -429,7 +429,7 @@ let X = l.memo(function(e) {
                 onMouseLeave: n,
                 onClick: d,
                 className: W.button,
-                children: v ? (0, r.jsx)(w.Z, {
+                children: y ? (0, r.jsx)(w.Z, {
                   width: Q,
                   height: Q
                 }) : (0, r.jsx)(C.tBG, {
@@ -477,7 +477,7 @@ let X = l.memo(function(e) {
       isLoading: C = !1,
       isHoldingAdvancedInfoKey: m = !1,
       compact: b = !1
-    } = e, p = (0, u.e7)([y.ZP], () => y.ZP.getGuildSidebarState(n), [n]), f = (null == p ? void 0 : p.details.userId) === t, h = (0, u.e7)([P.Z], () => P.Z.getEnhancedMember(n, t), [n, t]), j = (0, T.zq)(h), g = (0, u.e7)([_.default], () => _.default.getUser(t), [t]), x = (0, T.RN)(null != h ? h : void 0), v = l.useCallback(e => {
+    } = e, p = (0, u.e7)([v.ZP], () => v.ZP.getGuildSidebarState(n), [n]), f = (null == p ? void 0 : p.details.userId) === t, h = (0, u.e7)([P.Z], () => P.Z.getEnhancedMember(n, t), [n, t]), j = (0, T.zq)(h), g = (0, u.e7)([_.default], () => _.default.getUser(t), [t]), x = (0, T.RN)(null != h ? h : void 0), y = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), x(e)
     }, [x]), O = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != h && (null == s || s(h))
@@ -491,13 +491,13 @@ let X = l.memo(function(e) {
       className: a()(W.roundedRow, W.memberRowContainer, d && W.selected, f && W.memberSelected, C && W.loading),
       equalityFn: H,
       onClick: O,
-      onContextMenu: v,
+      onContextMenu: y,
       children: (0, r.jsx)(J, {
         member: h,
         user: g,
         highestRole: j,
         isHoldingAdvancedInfoKey: m,
-        onOpenModerationMenu: v,
+        onOpenModerationMenu: y,
         onOpenProfileMenu: N,
         compact: b
       })

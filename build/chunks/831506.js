@@ -1,11 +1,11 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
 var r, i = n(392711),
   a = n.n(i),
-  o = n(442837),
-  l = n(570140),
+  l = n(442837),
+  o = n(570140),
   s = n(314897),
   c = n(699516),
   u = n(885110),
@@ -24,7 +24,7 @@ let m = {},
 
 function h(e, t) {
   var n;
-  return (null !== (n = m[e]) && void 0 !== n ? n : {})[t]
+  return (null != (n = m[e]) ? n : {})[t]
 }
 
 function g(e, t) {
@@ -39,16 +39,16 @@ function g(e, t) {
 function _(e, t, n, r) {
   let i = n.find(e => null != e.party && e.party.id),
     a = null != i && null != i.party ? i.party.id : null,
-    o = h(t, e);
-  if (null == a || r === d.Skl.OFFLINE) return null != o && void g(t, e);
-  if (null != o) {
-    if (o === a) return !1;
+    l = h(t, e);
+  if (null == a || r === d.Skl.OFFLINE) return null != l && void g(t, e);
+  if (null != l) {
+    if (l === a) return !1;
     g(t, e)
   }! function(e, t, n) {
     var r;
     let i = m[e];
     if (null == i && (i = m[e] = {}), i[t] = n, c.Z.isBlocked(e) || c.Z.isIgnored(e)) return;
-    let a = null !== (r = f[n]) && void 0 !== r ? r : new Set;
+    let a = null != (r = f[n]) ? r : new Set;
     f[n] = a, a.add(e)
   }(t, e, a)
 }
@@ -66,20 +66,20 @@ function b(e) {
   return n
 }
 
-function v(e, t) {
+function x(e, t) {
   let n = !1;
   return t.forEach(t => {
     null != t && _(e, t.user.id, t.activities, t.status) && (n = !0)
   }), n
 }
 
-function x() {
+function y() {
   let e = s.default.getId(),
     t = u.Z.getActivities();
   return _(d.ME, e, t)
 }
 
-function y(e) {
+function E(e) {
   let {
     relationship: t
   } = e;
@@ -91,9 +91,9 @@ function y(e) {
     null != n && n.delete(t.id)
   }
 }
-class E extends(r = o.ZP.Store) {
+class v extends(r = l.ZP.Store) {
   initialize() {
-    this.syncWith([u.Z], x), this.waitFor(u.Z, c.Z)
+    this.syncWith([u.Z], y), this.waitFor(u.Z, c.Z)
   }
   getParty(e) {
     return null != e && null != f[e] ? f[e] : null
@@ -105,8 +105,8 @@ class E extends(r = o.ZP.Store) {
     return f
   }
 }
-p(E, "displayName", "GamePartyStore");
-let O = new E(l.Z, {
+p(v, "displayName", "GamePartyStore");
+let O = new v(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,
@@ -172,17 +172,17 @@ let O = new E(l.Z, {
       guildId: t,
       members: n
     } = e;
-    return v(t, n.map(e => e.presence))
+    return x(t, n.map(e => e.presence))
   },
   THREAD_MEMBERS_UPDATE: function(e) {
     let {
       guildId: t,
       addedMembers: n
     } = e;
-    return null != n && v(t, n.map(e => e.presence))
+    return null != n && x(t, n.map(e => e.presence))
   },
-  RELATIONSHIP_ADD: y,
-  RELATIONSHIP_UPDATE: y,
+  RELATIONSHIP_ADD: E,
+  RELATIONSHIP_UPDATE: E,
   RELATIONSHIP_REMOVE: function(e) {
     let {
       relationship: t

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => f
 });
@@ -17,12 +17,12 @@ class h extends(l = s.ZP.Store) {
     var e;
     let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
       n = this.getRegions(t);
-    return null != n ? null !== (e = n.find(e => {
+    return null != n ? null != (e = n.find(e => {
       let {
         optimal: t
       } = e;
       return t
-    })) && void 0 !== e ? e : a().sample(n) : null
+    })) ? e : a().sample(n) : null
   }
   getOptimalRegionId() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,

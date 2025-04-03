@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => O
 }), n(47120);
 var i = n(200651),
-  o = n(192379),
-  r = n(48026),
+  r = n(192379),
+  o = n(48026),
   a = n(642128),
   s = n(748780),
   l = n(481060),
@@ -15,7 +15,7 @@ var i = n(200651),
   p = n(768581),
   m = n(176354),
   f = n(675654),
-  g = n(803781);
+  g = n(403122);
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function v(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = [];
+let v = [];
 
 function O(e) {
   let {
@@ -56,9 +56,9 @@ function O(e) {
     emoji: n,
     startPosition: O,
     targetPosition: y
-  } = e, [T, x] = o.useState(0), [_, S] = o.useState(0), [E, N] = o.useState(null), {
+  } = e, [T, x] = r.useState(0), [_, S] = r.useState(0), [E, N] = r.useState(null), {
     confettiCanvas: P
-  } = o.useContext(u.h), C = (0, r.uR)(P, E), R = o.useMemo(() => [{
+  } = r.useContext(u.h), C = (0, o.uR)(P, E), R = r.useMemo(() => [{
     src: null == n.id ? m.ZP.getURL(n.name) : p.ZP.getEmojiURL({
       id: n.id,
       animated: !1,
@@ -107,8 +107,8 @@ function O(e) {
       x(t)
     }
   });
-  return o.useEffect(() => {
-    T > 0 && _ > 0 && C.createConfetti(v(b({}, f.We), {
+  return r.useEffect(() => {
+    T > 0 && _ > 0 && C.createConfetti(j(b({}, f.We), {
       position: {
         type: "static",
         value: {
@@ -118,10 +118,10 @@ function O(e) {
       }
     }))
   }, [C, T, _]), (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(r.Ji, {
+    children: [(0, i.jsx)(o.Ji, {
       ref: N,
       sprites: R,
-      colors: j,
+      colors: v,
       spriteWidth: f.Ko,
       spriteHeight: f.Ko
     }), (0, i.jsx)(d.ZP, {
@@ -129,7 +129,7 @@ function O(e) {
         style: b({}, Z),
         className: g.emojiContainer,
         children: (0, i.jsx)(a.animated.div, {
-          style: v(b({}, A), {
+          style: j(b({}, A), {
             opacity: A.opacity
           }),
           children: (0, i.jsx)(c.Z, {

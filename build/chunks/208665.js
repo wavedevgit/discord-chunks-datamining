@@ -57,7 +57,7 @@ let x = new S(c.Z, {
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: E,
   GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED: function(e) {
     var t;
-    p = null !== (t = e.errors) && void 0 !== t ? t : [], h = !1
+    p = null != (t = e.errors) ? t : [], h = !1
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_EDIT: function(e) {
     let {
@@ -70,7 +70,7 @@ let x = new S(c.Z, {
   },
   GUILD_SETTINGS_ONBOARDING_PROMPTS_ERRORS: function(e) {
     var t;
-    p = null !== (t = e.errors) && void 0 !== t ? t : []
+    p = null != (t = e.errors) ? t : []
   },
   GUILD_SETTINGS_ONBOARDING_SET_MODE: function(e) {
     let {

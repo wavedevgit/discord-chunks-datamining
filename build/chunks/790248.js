@@ -1,11 +1,10 @@
 /** Chunk was on 77298 **/
 "use strict";
 var n = {}.propertyIsEnumerable,
-  e = Object.getOwnPropertyDescriptor,
-  o = e && !n.call({
-    1: 2
-  }, 1);
-r.f = o ? function(t) {
+  e = Object.getOwnPropertyDescriptor;
+r.f = e && !n.call({
+  1: 2
+}, 1) ? function(t) {
   var r = e(this, t);
   return !!r && r.enumerable
 } : n

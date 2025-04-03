@@ -7,8 +7,8 @@ var t = l(200651),
   a = l(120356),
   i = l.n(a),
   s = l(442837),
-  o = l(692547),
-  c = l(481060),
+  c = l(692547),
+  o = l(481060),
   d = l(410030),
   u = l(565138),
   m = l(523751),
@@ -20,8 +20,8 @@ var t = l(200651),
   b = l(768581),
   j = l(981631),
   C = l(388032),
-  v = l(908269),
-  _ = l(63190),
+  _ = l(18314),
+  v = l(63190),
   I = l(102219);
 let Z = e => {
   let n = r.useMemo(() => null == e ? null : b.ZP.getGuildHomeHeaderURL({
@@ -41,21 +41,21 @@ function N(e) {
   } = e, l = () => {
     g.Z.open(n.id, j.pNK.ONBOARDING, void 0, j.KsC.SERVER_GUIDE)
   };
-  return n.hasFeature(j.oNc.BANNER) ? (0, t.jsxs)(c.zxk, {
-    className: v.editButton,
-    innerClassName: v.editButtonInner,
+  return n.hasFeature(j.oNc.BANNER) ? (0, t.jsxs)(o.zxk, {
+    className: _.editButton,
+    innerClassName: _.editButtonInner,
     type: "button",
-    size: c.zxk.Sizes.MEDIUM,
-    color: c.zxk.Colors.BRAND,
+    size: o.zxk.Sizes.MEDIUM,
+    color: o.zxk.Colors.BRAND,
     onClick: l,
-    children: [(0, t.jsx)(c.FmF, {
+    children: [(0, t.jsx)(o.FmF, {
       size: "xs",
-      color: o.Z.unsafe_rawColors.WHITE_500.css
+      color: c.Z.unsafe_rawColors.WHITE_500.css
     }), C.NW.string(C.t.b0y3DA)]
-  }) : (0, t.jsxs)(c.gtL, {
-    color: c.zxk.Colors.GREEN,
-    className: v.editButton,
-    innerClassName: v.editButtonInner,
+  }) : (0, t.jsxs)(o.gtL, {
+    color: o.zxk.Colors.GREEN,
+    className: _.editButton,
+    innerClassName: _.editButtonInner,
     onClick: l,
     children: [(0, t.jsx)(p.Z, {
       height: 16,
@@ -69,51 +69,51 @@ let y = r.memo(function(e) {
     titleClassName: r
   } = e, {
     homeHeaderImage: a,
-    isHomeHeaderImageSet: o
+    isHomeHeaderImageSet: c
   } = Z(n), g = (0, h.b$)(n.id), p = (0, s.e7)([x.Z], () => (0, f.b)(x.Z, n)), b = (0, d.ZP)();
   return (0, t.jsxs)("div", {
-    className: v.header,
+    className: _.header,
     children: [(0, t.jsxs)("div", {
-      className: v.headerArtWrapper,
+      className: _.headerArtWrapper,
       children: [(0, t.jsx)("div", {
-        className: i()(v.headerArt, {
-          [v.headerArtPlaceholder]: !o
+        className: i()(_.headerArt, {
+          [_.headerArtPlaceholder]: !c
         }),
         style: {
-          backgroundImage: "url(".concat(o ? a : "dark" === b ? _ : I, ")")
+          backgroundImage: "url(".concat(c ? a : "dark" === b ? v : I, ")")
         }
       }), g && (0, t.jsx)(N, {
         guild: n
       })]
     }), (0, t.jsx)("div", {
-      className: v.titleWrapper,
+      className: _.titleWrapper,
       children: (0, t.jsxs)("div", {
         className: r,
         children: [(0, t.jsx)(u.Z, {
-          className: v.headerIcon,
+          className: _.headerIcon,
           guild: n,
           size: u.Z.Sizes.XLARGE,
           active: !0
-        }), (0, t.jsx)(c.y5t, {
+        }), (0, t.jsx)(o.y5t, {
           children: (0, t.jsxs)("div", {
-            className: v.headerName,
-            children: [(0, t.jsx)(c.X6q, {
-              className: v.headerName,
+            className: _.headerName,
+            children: [(0, t.jsx)(o.X6q, {
+              className: _.headerName,
               variant: "heading-xxl/bold",
               children: n.name
             }), (0, t.jsx)(m.Z, {
               size: 24,
               guild: n,
               tooltipPosition: "bottom",
-              tooltipColor: c.ua7.Colors.PRIMARY
-            }), p && (0, t.jsx)(c.zxk, {
-              className: v.inviteButton,
-              size: c.zxk.Sizes.MEDIUM,
-              color: c.zxk.Colors.PRIMARY,
-              onClick: () => (0, c.ZDy)(async () => {
+              tooltipColor: o.ua7.Colors.PRIMARY
+            }), p && (0, t.jsx)(o.zxk, {
+              className: _.inviteButton,
+              size: o.zxk.Sizes.MEDIUM,
+              color: o.zxk.Colors.PRIMARY,
+              onClick: () => (0, o.ZDy)(async () => {
                 let {
                   default: e
-                } = await Promise.all([l.e("7654"), l.e("27155")]).then(l.bind(l, 560114));
+                } = await Promise.all([l.e("7654"), l.e("17439")]).then(l.bind(l, 560114));
                 return l => {
                   var r, a;
                   return (0, t.jsx)(e, (r = function(e) {

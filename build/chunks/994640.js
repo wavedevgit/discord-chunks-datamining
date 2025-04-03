@@ -1,6 +1,6 @@
 /** Chunk was on 95468 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 }), n(47120);
 var l = n(200651),
   r = n(192379),
@@ -14,27 +14,27 @@ var l = n(200651),
   m = n(888592),
   N = n(981631),
   x = n(388032),
-  h = n(88125);
-let v = (0, d.hQ)(),
-  _ = e => {
+  h = n(167150);
+let _ = (0, d.hQ)(),
+  g = e => {
     let {
       setStep: t,
       setGuildsInfo: n,
       email: i,
       setEmail: d,
-      setGuildId: _,
-      invite: g,
-      onClose: f,
+      setGuildId: g,
+      invite: f,
+      onClose: v,
       isNUXFlow: p
     } = e, [E, S] = r.useState(null), [I, j] = r.useState(!1), y = async e => {
       e.preventDefault(), S(null), j(!0);
       try {
         var l, r, s, a, d;
-        let e = null !== (d = null !== (a = null == g ? void 0 : null === (l = g.guild) || void 0 === l ? void 0 : l.id) && void 0 !== a ? a : null === (r = u.Z.getChannel(null == g ? void 0 : null === (s = g.channel) || void 0 === s ? void 0 : s.id)) || void 0 === r ? void 0 : r.getGuildId()) && void 0 !== d ? d : void 0;
+        let e = null != (d = null != (a = null == f || null == (l = f.guild) ? void 0 : l.id) ? a : null == (r = u.Z.getChannel(null == f || null == (s = f.channel) ? void 0 : s.id)) ? void 0 : r.getGuildId()) ? d : void 0;
         e === m.fQ && (e = void 0);
         let c = await o.Z.sendVerificationEmail(i, !0, e),
           N = c.guilds_info;
-        c.has_matching_guild ? (_(e), t(m.tF.VERIFY_PIN)) : 0 === N.length ? t(m.tF.SUBMIT_SCHOOL) : 1 === N.length ? (_(N[0].id), await o.Z.sendVerificationEmail(i, !0, N[0].id), t(m.tF.VERIFY_PIN)) : (n(N), t(m.tF.SELECT_SCHOOL))
+        c.has_matching_guild ? (g(e), t(m.tF.VERIFY_PIN)) : 0 === N.length ? t(m.tF.SUBMIT_SCHOOL) : 1 === N.length ? (g(N[0].id), await o.Z.sendVerificationEmail(i, !0, N[0].id), t(m.tF.VERIFY_PIN)) : (n(N), t(m.tF.SELECT_SCHOOL))
       } catch (e) {
         S(new c.Hx(e))
       } finally {
@@ -42,13 +42,13 @@ let v = (0, d.hQ)(),
       }
     }, C = x.NW.string(x.t.H1jCHB), T = x.NW.string(x.t.YfeHRE);
     if (p) C = x.NW.string(x.t.LVyxND), T = x.NW.string(x.t.ECd7Rk);
-    else if ((null == g ? void 0 : g.guild) != null && g.guild.id !== m.fQ && (null == g ? void 0 : g.approximate_member_count) != null) {
+    else if ((null == f ? void 0 : f.guild) != null && f.guild.id !== m.fQ && (null == f ? void 0 : f.approximate_member_count) != null) {
       let {
         name: e
-      } = g.guild;
+      } = f.guild;
       C = x.NW.formatToPlainString(x.t["4T4+p6"], {
         guildName: e,
-        count: g.approximate_member_count
+        count: f.approximate_member_count
       })
     }
     return (0, l.jsxs)("div", {
@@ -72,7 +72,7 @@ let v = (0, d.hQ)(),
         onSubmit: y,
         children: [(0, l.jsxs)(a.xJW, {
           children: [(0, l.jsx)(a.vwX, {
-            id: v,
+            id: _,
             children: x.NW.string(x.t.kmCxkZ)
           }), (0, l.jsx)(a.oil, {
             placeholder: x.NW.string(x.t.ImAOh4),
@@ -80,7 +80,7 @@ let v = (0, d.hQ)(),
               d(e)
             },
             error: null == E ? void 0 : E.getAnyErrorMessage(),
-            "aria-labelledby": v
+            "aria-labelledby": _
           })]
         }), (0, l.jsx)(a.Text, {
           color: "header-secondary",
@@ -104,7 +104,7 @@ let v = (0, d.hQ)(),
           })
         }), p && (0, l.jsx)(a.zxk, {
           look: a.zxk.Looks.LINK,
-          onClick: f,
+          onClick: v,
           className: h.cancelButton,
           children: x.NW.string(x.t.hO6qJy)
         })]

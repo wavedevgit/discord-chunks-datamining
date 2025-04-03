@@ -15,7 +15,7 @@ var r = n(200651),
   x = n(598948),
   h = n(428936),
   j = n(41586),
-  b = n(826486);
+  b = n(710931);
 
 function f(e) {
   let {
@@ -39,11 +39,11 @@ function N(e) {
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, N = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(N), [N]), C = (0, d.$j)(N), v = (0, d.M3)(N), _ = l.useCallback(e => {
+  } = e, N = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(N), [N]), C = (0, d.$j)(N), _ = (0, d.M3)(N), g = l.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), g = (0, m.xb)(v, C, p), T = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
+  }, [s]), v = (0, m.xb)(_, C, p), T = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
     var e;
-    null === (e = T.current) || void 0 === e || e.resetSearchText()
+    null == (e = T.current) || e.resetSearchText()
   }, []);
   return (0, r.jsx)("div", {
     className: a()(b.mainTableContainer, n),
@@ -58,10 +58,10 @@ function N(e) {
         guild: t
       }), (0, r.jsx)(x.Z, {
         guild: t,
-        onSelectRow: _,
-        searchState: g,
+        onSelectRow: g,
+        searchState: v,
         onResetForNewMembers: I
-      }), g !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
+      }), v !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
         guildId: t.id,
         onPageChange: i
       })]

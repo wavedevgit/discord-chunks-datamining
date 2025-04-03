@@ -26,7 +26,7 @@ var n = r(200651),
   E = r(981631),
   S = r(494831),
   T = r(388032),
-  w = r(697808);
+  w = r(208838);
 
 function R(e) {
   var t = function(e, t) {
@@ -223,10 +223,7 @@ function M(e) {
     }, []), null == S || null == R) return null;
   let O = d && 0 === Object.keys(g).length;
   async function k() {
-    if (null == S || 0 === Object.keys(g).length) {
-      r();
-      return
-    }
+    if (null == S || 0 === Object.keys(g).length) return void r();
     p(!0);
     try {
       await

@@ -54,7 +54,7 @@ class o {
     s(this, "canvas", void 0), s(this, "canvasContext", void 0), s(this, "animation", null), s(this, "dropped", void 0), s(this, "currentFrame", void 0), s(this, "currentFrameTime", void 0), s(this, "frameDuration", void 0), s(this, "key", void 0), s(this, "animate", void 0), s(this, "visible", void 0), s(this, "requestAnimationFrameId", void 0), s(this, "hasInitialFrame", void 0), s(this, "onInitialDraw", void 0), s(this, "onError", void 0), s(this, "onInitialAnimationTick", t => {
       if (this.requestAnimationFrameId = null, (performance.now() - t < 30 || h) && this.draw(0)) {
         var e;
-        this.resumeAnimation(), null === (e = this.onInitialDraw) || void 0 === e || e.call(this), this.hasInitialFrame = !0
+        this.resumeAnimation(), null == (e = this.onInitialDraw) || e.call(this), this.hasInitialFrame = !0
       }
       this.scheduleOrCancelTick()
     }), s(this, "onAnimationTick", t => {

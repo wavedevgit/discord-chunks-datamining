@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 39149 **/
 "use strict";
-var r = {
-  wrapper: "wrapper__4106a"
-};
-e.exports = r
+e.exports = {
+  paymentSections: "paymentSections__72707"
+}

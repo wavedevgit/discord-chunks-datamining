@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -21,11 +21,11 @@ var r = n(200651),
   x = n(268350),
   j = n(926491),
   N = n(386937),
-  v = n(316350),
-  _ = n(863562),
+  _ = n(316350),
+  v = n(863562),
   C = n(981631),
   O = n(388032),
-  y = n(282646);
+  y = n(145635);
 let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.TIER_1) ? C.Eu4.TIER_1 : e < (0, b.A3)(C.Eu4.TIER_2) ? C.Eu4.TIER_2 : e < (0, b.A3)(C.Eu4.TIER_3) || null != t && t.hasFeature(C.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? C.Eu4.TIER_3 : C.Eu4.NONE,
   E = e => {
     let {
@@ -55,7 +55,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
     (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93626"), n.e("97994")]).then(n.bind(n, 136735));
+      } = await Promise.all([n.e("93626"), n.e("64386")]).then(n.bind(n, 136735));
       return n => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -114,7 +114,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
       guild: t
     } = e, [s, c] = i.useState(!0), d = (0, l.e7)([j.Z], () => {
       var e;
-      return null !== (e = j.Z.getStickersByGuildId(t.id)) && void 0 !== e ? e : []
+      return null != (e = j.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: f
     } = (0, u.ZP)(), S = (0, h.Z)(t.id).available, w = t.hasFeature(C.oNc.MORE_STICKERS) ? C.Eu4.TIER_3 : t.premiumTier, R = t.hasFeature(C.oNc.MORE_STICKERS) ? C.oCV[C.Eu4.TIER_3] : S;
@@ -221,7 +221,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
           }
         }) : L && (i = (0, r.jsx)(P, {
           guild: t
-        })), (0, r.jsxs)(v.Z, {
+        })), (0, r.jsxs)(_.Z, {
           subscriptionCount: R,
           tier: c,
           onSetRef: l,
@@ -233,7 +233,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
           guildId: t.id,
           children: [M && (0, r.jsxs)("div", {
             className: y.grid,
-            children: [D.map(e => (0, r.jsx)(_.Z, {
+            children: [D.map(e => (0, r.jsx)(v.Z, {
               isDisabled: k,
               sticker: e,
               canManageSticker: f(e)

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => eC,
   u: () => eO
@@ -7,8 +7,8 @@ var r, i = n(200651);
 n(192379);
 var s = n(399606),
   a = n(704215),
-  o = n(481060),
-  l = n(230711),
+  l = n(481060),
+  o = n(230711),
   c = n(410030),
   d = n(607070),
   u = n(100527),
@@ -25,8 +25,8 @@ var s = n(399606),
   j = n(78839),
   O = n(424218),
   C = n(63063),
-  v = n(74538),
-  S = n(715037),
+  S = n(74538),
+  v = n(715037),
   T = n(780525),
   I = n(314684),
   y = n(687362),
@@ -45,7 +45,7 @@ var s = n(399606),
   V = n(526761),
   G = n(332325),
   F = n(388032),
-  H = n(579139),
+  H = n(344253),
   z = n(660372),
   Y = n(926433),
   K = n(302036),
@@ -61,8 +61,8 @@ var s = n(399606),
   ei = n(132015),
   es = n(142416),
   ea = n(607762),
-  eo = n(474106),
-  el = n(572501),
+  el = n(474106),
+  eo = n(572501),
   ec = n(755590),
   ed = n(909910),
   eu = n(637810),
@@ -85,30 +85,30 @@ let eC = () => {
     useKibibytes: !0
   }), {
     premiumSubscription: eC,
-    isEligibleForReward: ev
+    isEligibleForReward: eS
   } = (0, s.cj)([j.ZP], () => ({
     premiumSubscription: j.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: j.ZP.getIsSubscriptionEligibleForReward()
-  })), eS = null != eC ? v.ZP.getPremiumPlanItem(eC) : null, eT = (null != eS ? v.ZP.getSkuIdForPlan(eS.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), ey = (0, v.I5)(eI, W.p9.TIER_2), eA = (0, v.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
+  })), ev = null != eC ? S.ZP.getPremiumPlanItem(eC) : null, eT = (null != ev ? S.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), ey = (0, S.I5)(eI, W.p9.TIER_2), eA = (0, S.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
     showAnimations: !0
   }), eR = null != eP ? eP.initialPercentage : void 0, eD = null != eP ? eP.percentage : void 0, eZ = (0, p.Z)(_.Z), ew = (0, y.a)(), ek = (0, I.Kb)(L.qY), {
     isFractionalPremiumActive: eW
   } = (0, g.Z)(), eL = null != eC && eC.hasPremiumAtLeast(W.p9.TIER_2), eB = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
     enabled: eM
-  } = S.Z.useExperiment({
+  } = v.Z.useExperiment({
     location: "usePerksDiscoverabilityCards"
   }), eU = (0, b.Z)({
     scrollPosition: V.Y_.TRY_IT_OUT,
     analyticsLocations: e
   }), eV = () => {
-    l.Z.open(B.oAB.VOICE, V.GA, {
+    o.Z.open(B.oAB.VOICE, V.GA, {
       openWithoutBackstack: !0,
       analyticsLocations: e
     })
   }, eG = () => {
     (0, N.uL)(B.Z5c.COLLECTIBLES_SHOP)
   }, eF = () => {
-    l.Z.open(B.oAB.APPEARANCE, null, {
+    o.Z.open(B.oAB.APPEARANCE, null, {
       scrollPosition: V.h1.CUSTOM_APP_ICONS
     })
   }, eH = {
@@ -119,7 +119,7 @@ let eC = () => {
       description: F.NW.string(F.t.jBTTws),
       descriptionCta: F.NW.string(F.t.jVcuVV),
       onCtaClick: () => {
-        l.Z.open(B.oAB.APPEARANCE, null, {
+        o.Z.open(B.oAB.APPEARANCE, null, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -241,7 +241,7 @@ let eC = () => {
       }) : F.NW.string(F.t.jsyNHh),
       descriptionCta: F.NW.string(F.t.jVcuVV),
       onCtaClick: eW ? void 0 : () => {
-        l.Z.open(B.oAB.GUILD_BOOSTING, null, {
+        o.Z.open(B.oAB.GUILD_BOOSTING, null, {
           openWithoutBackstack: !0,
           analyticsLocations: e
         })
@@ -334,7 +334,7 @@ let eC = () => {
       name: "upcomingDropUntimed",
       title: F.NW.string(F.t.O5R3ho),
       pillText: F.NW.string(F.t.yhEY5O),
-      backgroundImage: eo
+      backgroundImage: el
     },
     badge: {
       name: "badge",
@@ -418,7 +418,7 @@ let eC = () => {
       }),
       descriptionCta: F.NW.string(F.t.JST6jo),
       isPremiumGetCta: !eT || void 0,
-      perkImage: el
+      perkImage: eo
     },
     serverProfiles: {
       name: "serverProfiles",
@@ -454,24 +454,24 @@ let eC = () => {
       description: r,
       pillText: s,
       ctaDescription: a,
-      dismissibleContentType: o
-    } = ew, l = (0, i.jsx)("div", {
-      className: H.cardComponent,
-      children: (0, i.jsx)(D.ZP, {
-        progressCircleVariation: D.Qo.AVATAR_DECO,
-        avatarDecoAssetId: L.VA,
-        avatarDecoAssetDescription: F.NW.string(F.t["9o4F4+"]),
-        showAnimations: !0,
-        percentage: eD,
-        initialPercentage: eR
-      })
-    });
+      dismissibleContentType: l
+    } = ew;
     eH.tenureRewardCollectible = {
       name: "tenureRewardCollectible",
       title: t,
       subtitle: n,
       description: r,
-      perkComponent: l,
+      perkComponent: (0, i.jsx)("div", {
+        className: H.cardComponent,
+        children: (0, i.jsx)(D.ZP, {
+          progressCircleVariation: D.Qo.AVATAR_DECO,
+          avatarDecoAssetId: L.VA,
+          avatarDecoAssetDescription: F.NW.string(F.t["9o4F4+"]),
+          showAnimations: !0,
+          percentage: eD,
+          initialPercentage: eR
+        })
+      }),
       descriptionCta: a,
       onCtaClick: () => {
         null != ek && (0, h.Z)({
@@ -484,7 +484,7 @@ let eC = () => {
       },
       cardVariant: w.zW.REWARD,
       pillText: s,
-      dismissibleContentType: o
+      dismissibleContentType: l
     }
   }
   let {
@@ -499,7 +499,7 @@ let eC = () => {
     onClick: () => (0, R.k)({
       analyticsLocations: e
     })
-  }), ev && eM && (eH.collectibleDeco = {
+  }), eS && eM && (eH.collectibleDeco = {
     name: "collectibleDeco",
     title: F.NW.string(F.t.fzn5eH),
     subtitle: F.NW.format(F.t["8Ud+Qk"], {
@@ -510,7 +510,7 @@ let eC = () => {
       image: r ? ex.Z : eN.Z,
       cta: F.NW.string(F.t.s0w7a2),
       onClick: () => {
-        (0, o.ZDy)(async () => {
+        (0, l.ZDy)(async () => {
           let {
             default: e
           } = await n.e("74824").then(n.bind(n, 817357));

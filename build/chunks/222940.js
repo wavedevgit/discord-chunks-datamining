@@ -1,17 +1,17 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(399606),
-  o = n(846519),
-  l = n(481060),
+  l = n(846519),
+  o = n(481060),
   s = n(317632),
   c = n(174767),
   u = n(594174),
   d = n(388032),
-  p = n(9865);
+  p = n(950127);
 
 function m(e) {
   let {
@@ -21,22 +21,20 @@ function m(e) {
   return (i.useEffect(() => {
     n && f(!1)
   }, [n]), i.useEffect(() => {
-    if (null == h) {
-      f(!1);
-      return
-    }(0, c.Br)(h), f(!0);
-    let e = new o.V7;
+    if (null == h) return void f(!1);
+    (0, c.Br)(h), f(!0);
+    let e = new l.V7;
     return e.start(5e3, () => {
       f(!1)
     }), () => {
       e.stop()
     }
-  }, [h]), m && null != h && null != g) ? (0, r.jsxs)(l.Cys, {
+  }, [h]), m && null != h && null != g) ? (0, r.jsxs)(o.Cys, {
     tooltipClassName: p.tooltip,
     tooltipContentClassName: p.tooltipContent,
     targetElementRef: t,
     position: "bottom",
-    color: l.FGA.BLACK,
+    color: o.FGA.BLACK,
     children: [(0, r.jsxs)("div", {
       className: p.iconContainer,
       children: [(0, r.jsx)("img", {
@@ -45,22 +43,22 @@ function m(e) {
         alt: "Game Invite"
       }), (0, r.jsx)("div", {
         className: p.offsetAvatarContainer,
-        children: (0, r.jsx)(l.qEK, {
+        children: (0, r.jsx)(o.qEK, {
           "aria-label": "Inviter",
           className: p.inviterImage,
           src: g.getAvatarURL(null, 24),
-          size: l.EFr.SIZE_24
+          size: o.EFr.SIZE_24
         })
       })]
     }), (0, r.jsxs)("div", {
       className: p.titleContainer,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         className: p.__invalid_title,
         variant: "text-xs/semibold",
         children: d.NW.format(d.t["8gTZ8v"], {
           username: g.username
         })
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(o.Text, {
         className: p.__invalid_subtitle,
         variant: "text-xxs/medium",
         children: h.application_name

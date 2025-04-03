@@ -2,7 +2,7 @@
 n.d(t, {
   Z: () => et
 }), n(47120);
-var i, r = n(200651),
+var r, i = n(200651),
   o = n(192379),
   l = n(120356),
   s = n.n(l),
@@ -47,7 +47,7 @@ var i, r = n(200651),
   H = n(981631),
   G = n(501787),
   V = n(388032),
-  J = n(896065);
+  J = n(728294);
 
 function Y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,10 +61,10 @@ function Y(e, t, n) {
 function Q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
+    }))), r.forEach(function(t) {
       Y(e, t, n[t])
     })
   }
@@ -75,15 +75,15 @@ function X(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class $ extends(i = o.Component) {
+class $ extends(r = o.Component) {
   componentDidMount() {
     let {
       guestWindow: e
@@ -116,15 +116,15 @@ class $ extends(i = o.Component) {
     let {
       clientThemesCSS: e,
       guestWindow: t
-    } = this.props, n = t.document, i = n.head;
-    u()(null != i, "Window document ".concat("head", " was null"));
-    let r = i.querySelector("style[".concat(E.PQ, "]"));
-    if (null != r) {
-      r.textContent = e;
+    } = this.props, n = t.document, r = n.head;
+    u()(null != r, "Window document ".concat("head", " was null"));
+    let i = r.querySelector("style[".concat(E.PQ, "]"));
+    if (null != i) {
+      i.textContent = e;
       return
     }
     let o = n.createElement("style");
-    o.setAttribute(E.PQ, "true"), o.textContent = e, i.appendChild(o)
+    o.setAttribute(E.PQ, "true"), o.textContent = e, r.appendChild(o)
   }
   registerPopoutGlobalKeybinds() {
     let {
@@ -142,49 +142,49 @@ class $ extends(i = o.Component) {
       focused: e,
       forcedColors: t,
       children: n,
-      windowKey: i,
+      windowKey: r,
       isFullScreen: o,
       isRefreshEnabled: l,
       withTitleBar: a,
       guestWindow: u,
       clientThemesClassName: h,
       contentClassName: p
-    } = this.props, m = (0, U.getPlatform)(), v = a && !o, g = i === G.$J ? L.Z : S.Z;
-    return (0, r.jsx)(d.VK, {
-      children: (0, r.jsx)(A.w, {
-        windowKey: i,
-        children: (0, r.jsx)(x.Z, {
-          children: (0, r.jsxs)(b.JcV, {
+    } = this.props, m = (0, U.getPlatform)(), v = a && !o, g = r === G.$J ? L.Z : S.Z;
+    return (0, i.jsx)(d.VK, {
+      children: (0, i.jsx)(A.w, {
+        windowKey: r,
+        children: (0, i.jsx)(x.Z, {
+          children: (0, i.jsxs)(b.JcV, {
             containerRef: this.rootRef,
-            children: [(0, r.jsx)(ee, {
+            children: [(0, i.jsx)(ee, {
               guestWindow: u,
               className: h,
-              children: (0, r.jsxs)(g, {
-                children: [(0, r.jsx)(Z.Co, {}), (0, r.jsx)(y.Wu, {
+              children: (0, i.jsxs)(g, {
+                children: [(0, i.jsx)(Z.Co, {}), (0, i.jsx)(y.Wu, {
                   appContext: H.IlC.POPOUT,
                   renderWindow: u,
-                  children: (0, r.jsx)(N.m, {
-                    children: (0, r.jsxs)(R.yP, {
-                      children: [(0, r.jsxs)("div", {
+                  children: (0, i.jsx)(N.m, {
+                    children: (0, i.jsxs)(R.yP, {
+                      children: [(0, i.jsxs)("div", {
                         className: J.popout,
-                        children: [l && v && (0, r.jsx)(z.T, {
-                          windowKey: i,
+                        children: [l && v && (0, i.jsx)(z.T, {
+                          windowKey: r,
                           short: !0
-                        }), !l && v && null != m ? (0, r.jsx)(T.Z, {
+                        }), !l && v && null != m ? (0, i.jsx)(T.Z, {
                           focused: e,
                           type: m,
-                          windowKey: i,
+                          windowKey: r,
                           macOSFrame: !0
-                        }) : null, (0, r.jsx)("div", {
+                        }) : null, (0, i.jsx)("div", {
                           className: s()(J.content, p),
                           children: n
                         })]
-                      }), (0, r.jsx)(b.nKe, {}), (0, r.jsx)(f.Z, {}), (0, r.jsx)(R.Un, {})]
+                      }), (0, i.jsx)(b.nKe, {}), (0, i.jsx)(f.Z, {}), (0, i.jsx)(R.Un, {})]
                     })
                   })
                 })]
               })
-            }), (0, r.jsx)(c.OU, {})]
+            }), (0, i.jsx)(c.OU, {})]
           })
         })
       }, t)
@@ -206,7 +206,7 @@ class $ extends(i = o.Component) {
       }
     }), Y(this, "handleBlur", () => {
       var e, t;
-      null === (e = (t = this.props).onBlur) || void 0 === e || e.call(t)
+      null == (e = (t = this.props).onBlur) || e.call(t)
     })
   }
 }
@@ -216,7 +216,7 @@ Y($, "defaultProps", {
 let ee = o.forwardRef(function(e, t) {
     let {
       guestWindow: n,
-      className: i,
+      className: r,
       children: l
     } = e, {
       lang: c,
@@ -229,17 +229,17 @@ let ee = o.forwardRef(function(e, t) {
     }, [n, a]), o.useEffect(() => {
       let e = n.document.documentElement;
       u()(null != e, "Window document element was null"), e.setAttribute("lang", c)
-    }, [n, c]), (0, r.jsx)("div", {
+    }, [n, c]), (0, i.jsx)("div", {
       "data-popout-root": !0,
       ref: t,
-      className: s()(d, i),
+      className: s()(d, r),
       children: l
     })
   }),
   et = o.forwardRef(function(e, t) {
     let {
       guestWindow: n,
-      focused: i,
+      focused: r,
       isFullScreen: o
     } = (0, m.cj)([B.Z], () => ({
       guestWindow: B.Z.getWindow(e.windowKey),
@@ -262,14 +262,14 @@ let ee = o.forwardRef(function(e, t) {
       clientThemesClassName: d,
       clientThemesCSS: h
     } = (0, E.ZP)();
-    return null == n ? null : (0, r.jsx)(b.Sle, {
-      children: (0, r.jsx)(k.Gt, {
+    return null == n ? null : (0, i.jsx)(b.Sle, {
+      children: (0, i.jsx)(k.Gt, {
         value: a,
-        children: (0, r.jsx)($, X(Q({
+        children: (0, i.jsx)($, X(Q({
           ref: t
         }, e), {
           guestWindow: n,
-          focused: i,
+          focused: r,
           isFullScreen: o,
           forcedColors: s,
           connectedEmbeddedActivity: c,

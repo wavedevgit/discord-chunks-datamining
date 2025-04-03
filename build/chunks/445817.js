@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => N
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(570140),
-  l = n(2052),
+  l = n(570140),
+  o = n(2052),
   c = n(932724),
   d = n(716161),
   u = n(672339),
@@ -16,32 +16,36 @@ var r = n(200651),
   p = n(594174),
   h = n(981631),
   f = n(388032),
-  b = n(305653);
+  b = n(959963);
+let N = {
+  width: 387,
+  height: 218
+};
 
-function N(e) {
+function x(e) {
   let {
     previewEnabled: t,
     onEnablePreview: n,
-    onCancelPreview: N
-  } = e, x = g.Z.getCameraComponent(), [_, E] = i.useState((0, c.P)(p.default.getCurrentUser())), j = i.useRef(!1), O = i.useRef(_), C = (0, l.O)(), v = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
+    onCancelPreview: x
+  } = e, _ = g.Z.getCameraComponent(), [E, j] = i.useState((0, c.P)(p.default.getCurrentUser())), O = i.useRef(!1), C = i.useRef(E), S = (0, o.O)(), v = (0, s.e7)([g.Z], () => g.Z.isVideoAvailable());
   return i.useEffect(() => () => {
-    j.current && o.Z.wait(() => (0, d.Up)(O.current))
+    O.current && l.Z.wait(() => (0, d.Up)(C.current))
   }, []), (0, r.jsx)(m.Z, {
-    selectedBackgroundOption: _,
+    selectedBackgroundOption: E,
     onSelectBackgroundOption: e => {
-      j.current = !0, O.current = e, E(e), (0, u.wG)(e, {
-        location: C.location
+      O.current = !0, C.current = e, j(e), (0, u.wG)(e, {
+        location: S.location
       }).catch(h.dG4)
     },
-    onCancelPreview: N,
+    onCancelPreview: x,
     renderCamera: e => t ? (0, r.jsx)("div", {
       className: b.cameraWrapper,
       children: (0, r.jsxs)("div", {
         className: b.camera,
-        children: [(0, r.jsx)(x, {
+        children: [(0, r.jsx)(_, {
           deviceId: e,
-          width: 387,
-          height: 218,
+          width: N.width,
+          height: N.height,
           disabled: !t
         }), (0, r.jsx)(m.S, {})]
       })

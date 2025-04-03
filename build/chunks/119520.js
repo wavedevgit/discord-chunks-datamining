@@ -5,10 +5,10 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(558381),
-  o = n(480916),
-  a = n(986035),
+  a = n(480916),
+  o = n(986035),
   s = n(388032),
-  c = n(440425);
+  c = n(576823);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,8 +27,8 @@ class d extends i.PureComponent {
     } = this.props;
     return (0, r.jsx)("div", {
       className: c.matureListing,
-      children: (0, r.jsx)(a.Z, {
-        modalType: o.it.NSFW_APP_LISTING,
+      children: (0, r.jsx)(o.Z, {
+        modalType: a.it.NSFW_APP_LISTING,
         onAgree: this.handleAgree,
         onDisagree: this.handleDisagree,
         title: s.NW.formatToPlainString(s.t.n5PGER, {

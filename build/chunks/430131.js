@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => m
 });
@@ -7,11 +7,11 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(993413),
-  o = n(496675),
-  l = n(52597),
+  l = n(496675),
+  o = n(52597),
   c = n(981631),
   d = n(388032),
-  u = n(787516);
+  u = n(784740);
 
 function m(e) {
   let {
@@ -20,7 +20,7 @@ function m(e) {
     currentNick: m,
     username: g,
     guild: p
-  } = e, h = null != n ? n : m, f = (0, i.e7)([o.Z], () => o.Z.can(c.Plq.CHANGE_NICKNAME, p) || o.Z.can(c.Plq.MANAGE_NICKNAMES, p));
+  } = e, h = null != n ? n : m, f = (0, i.e7)([l.Z], () => l.Z.can(c.Plq.CHANGE_NICKNAME, p) || l.Z.can(c.Plq.MANAGE_NICKNAMES, p));
   return (0, r.jsxs)(a.Z, {
     title: d.NW.string(d.t.me1lRk),
     errors: t,
@@ -29,7 +29,7 @@ function m(e) {
       placeholder: g,
       maxLength: c.l$U,
       onChange: function(e) {
-        (0, l.wi)(e, m)
+        (0, o.wi)(e, m)
       },
       disabled: !f
     }), !f && (0, r.jsx)(s.R94, {

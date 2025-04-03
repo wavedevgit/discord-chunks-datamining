@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -29,27 +29,27 @@ function C(e, t) {
   }
 }
 
-function v(e) {
+function y(e) {
   var t;
   let {
     userId: n,
-    guildId: v,
-    onClose: y,
-    analyticsLocation: x,
+    guildId: y,
+    onClose: x,
+    analyticsLocation: v,
     className: j
-  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(v), [v]), E = null !== (t = null == O ? void 0 : O.details.modViewPanel) && void 0 !== t ? t : b.k.INFO, N = (0, c.Z)(n), I = null == E ? null : E === b.k.INFO ? "backwards" : "forwards", P = (0, d.Z)(I), {
+  } = e, O = (0, o.e7)([p.ZP], () => p.ZP.getGuildSidebarState(y), [y]), E = null != (t = null == O ? void 0 : O.details.modViewPanel) ? t : b.k.INFO, N = (0, c.Z)(n), I = null == E ? null : E === b.k.INFO ? "backwards" : "forwards", P = (0, d.Z)(I), {
     reducedMotion: S
   } = i.useContext(a.S), Z = i.useCallback(e => {
-    null != O && (0, h.r)(v, n, O.baseChannelId, {
+    null != O && (0, h.r)(y, n, O.baseChannelId, {
       modViewPanel: e
     })
-  }, [O, v, n]), T = i.useMemo(() => ({
+  }, [O, y, n]), T = i.useMemo(() => ({
     [_.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
-      action: () => E === b.k.INFO ? y() : Z(b.k.INFO)
+      action: () => E === b.k.INFO ? x() : Z(b.k.INFO)
     }
-  }), [y, E, Z]);
+  }), [x, E, Z]);
   i.useEffect(() => (u.Z.enable(), u.Z.enableTemp(T), () => u.Z.disableTemp()), [T]);
   let A = (0, s.Yzy)(E, {
     value: 0,
@@ -101,31 +101,31 @@ function v(e) {
           width: "100%",
           height: "100%"
         }, S.enabled ? {
-          opacity: null === (o = e.value) || void 0 === o ? void 0 : o.to(e => 1 - Math.abs(e))
+          opacity: null == (o = e.value) ? void 0 : o.to(e => 1 - Math.abs(e))
         } : {
-          left: null === (a = e.value) || void 0 === a ? void 0 : a.to(C("left", P)),
-          right: null === (s = e.value) || void 0 === s ? void 0 : s.to(C("right", P))
+          left: null == (a = e.value) ? void 0 : a.to(C("left", P)),
+          right: null == (s = e.value) ? void 0 : s.to(C("right", P))
         }),
         children: function(e) {
           switch (e) {
             case b.k.INFO:
               return (0, r.jsx)(f.Z, {
                 userId: n,
-                guildId: v,
+                guildId: y,
                 onNavigate: Z,
                 className: j
               });
             case b.k.MESSAGE_HISTORY:
               return (0, r.jsx)(m.Z, {
                 userId: n,
-                guildId: v,
+                guildId: y,
                 onNavigate: () => Z(b.k.INFO),
                 className: j
               });
             case b.k.PERMISSIONS:
               return (0, r.jsx)(g.Z, {
                 userId: n,
-                guildId: v,
+                guildId: y,
                 onNavigate: () => Z(b.k.INFO),
                 className: j
               });

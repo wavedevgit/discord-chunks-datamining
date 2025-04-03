@@ -35,7 +35,8 @@ var v = f(function(t, n) {
             o && o(t)
           } catch (n) {
             throw t.preventDefault(), n
-          }!t.defaultPrevented && 0 === t.button && (!u || "_self" === u) && !(t.metaKey || t.altKey || t.ctrlKey || t.shiftKey) && (t.preventDefault(), r())
+          }
+          t.defaultPrevented || 0 !== t.button || u && "_self" !== u || t.metaKey || t.altKey || t.ctrlKey || t.shiftKey || (t.preventDefault(), r())
         }
       });
     return p !== f ? l.ref = n || e : l.ref = e, i.createElement("a", l)

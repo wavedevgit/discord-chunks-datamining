@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(969632),
   u = n(430677),
   m = n(388032),
-  g = n(83843);
+  g = n(773100);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -106,7 +106,7 @@ let j = function(e) {
     guildId: t
   } = e, n = (0, s.Wu)([d.Z], () => {
     var e;
-    return null !== (e = d.Z.getSettings().newMemberActions) && void 0 !== e ? e : f
+    return null != (e = d.Z.getSettings().newMemberActions) ? e : f
   }), a = i.useCallback((e, n) => {
     (0, c.vR)(e);
     let r = d.Z.getSettings();
@@ -119,7 +119,7 @@ let j = function(e) {
     })
   }, [t]), m = i.useCallback((e, r, i, s) => {
     var a;
-    let l = null === (a = n[e]) || void 0 === a ? void 0 : a.channelId;
+    let l = null == (a = n[e]) ? void 0 : a.channelId;
     if (null == l) return;
     let o = d.Z.getSettings();
     null != o && ((0, c.el)(l, r), (0, c.oo)(t, o, !0).then(() => {
@@ -127,22 +127,22 @@ let j = function(e) {
     }))
   }, [n, t]), j = i.useCallback(e => {
     var r;
-    let i = null === (r = n[e]) || void 0 === r ? void 0 : r.channelId;
+    let i = null == (r = n[e]) ? void 0 : r.channelId;
     if (null == i) return;
     (0, c.Hr)(i);
     let s = d.Z.getSettings();
     (0, c.oo)(t, s, !0)
   }, [n, t]), N = n.map(e => h(p({}, e), {
     id: e.channelId
-  })), v = i.useCallback(e => {
+  })), _ = i.useCallback(e => {
     (0, c.hS)(e);
     let n = d.Z.getSettings();
     null != n && (0, c.oo)(t, n, !0)
   }, [t]), {
-    handleDragStart: _,
+    handleDragStart: v,
     handleDragReset: C,
     handleDragComplete: O
-  } = (0, l.Z)(N, v);
+  } = (0, l.Z)(N, _);
   return (0, r.jsxs)("div", {
     className: g.section,
     children: [n.map((e, n) => (0, r.jsx)(u.Z, {
@@ -151,7 +151,7 @@ let j = function(e) {
       actionIndex: n,
       onChange: m,
       onDelete: j,
-      onDragStart: _,
+      onDragStart: v,
       onDragReset: C,
       onDragComplete: O
     }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {

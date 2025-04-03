@@ -119,7 +119,7 @@ let O = l.ZP.connectStores([u.Z, c.Z], e => {
     applicationId: n
   } = e, r = (0, d.uF)(n, c.Z, u.Z);
   return {
-    skus: (null !== (t = u.Z.getForApplication(n)) && void 0 !== t ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
+    skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
 })(N)

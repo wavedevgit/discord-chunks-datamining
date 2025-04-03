@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   n: () => h
 }), n(411104);
@@ -6,13 +6,13 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(481060),
-  l = n(910111),
+  l = n(481060),
+  o = n(910111),
   s = n(732559),
   c = n(723851),
   u = n(981631),
   d = n(388032),
-  p = n(317642);
+  p = n(516417);
 let m = {
   [u.TaA.WINDOWS]: {
     icon: c.Z,
@@ -23,7 +23,7 @@ let m = {
     getLabel: () => d.NW.string(d.t.E4u4n5)
   },
   [u.TaA.LINUX]: {
-    icon: l.Z,
+    icon: o.Z,
     getLabel: () => d.NW.string(d.t.tcawo6)
   }
 };
@@ -35,7 +35,7 @@ function f(e) {
   } = e, i = m[t];
   if (null == i) throw Error("Unexpected operating system: ".concat(t));
   let a = i.icon;
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(l.ua7, {
     text: i.getLabel(),
     children: e => {
       var t, i;

@@ -13,7 +13,7 @@ var i = n(120356),
   u = n(623633),
   d = n(930180),
   E = n(388032),
-  _ = n(279032);
+  _ = n(957991);
 
 function I(e) {
   let t = s.Z.getVoiceChannelId();
@@ -26,7 +26,7 @@ function N(e) {
   var t, n;
   let {
     channelId: i
-  } = e, o = null !== (t = (0, d._d)(i)) && void 0 !== t ? t : 0, a = null !== (n = (0, d.K3)(i)) && void 0 !== n ? n : 0;
+  } = e, o = null != (t = (0, d._d)(i)) ? t : 0, a = null != (n = (0, d.K3)(i)) ? n : 0;
   return o > 0 && a > 0 ? (0, r.jsx)("div", {
     className: _.blocked,
     children: (0, r.jsx)("div", {

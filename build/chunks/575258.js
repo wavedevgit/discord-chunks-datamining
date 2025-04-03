@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -34,8 +34,8 @@ function p(e) {
   if (null != t) {
     var i, s;
     g = d = {
-      description: null !== (i = t.description) && void 0 !== i ? i : "",
-      channels: null !== (s = t.welcome_channels) && void 0 !== s ? s : [],
+      description: null != (i = t.description) ? i : "",
+      channels: null != (s = t.welcome_channels) ? s : [],
       enabled: null == r ? void 0 : r.hasFeature(l.oNc.WELCOME_SCREEN_ENABLED)
     }
   } else g = d = c;

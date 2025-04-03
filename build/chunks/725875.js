@@ -1,11 +1,11 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => g
 }), n(653041), n(47120), n(230036);
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  l = n(139387),
+  l = n(481060),
+  o = n(139387),
   a = n(933557),
   s = n(699516),
   c = n(594174),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(936726),
   p = n(981631),
   m = n(388032),
-  b = n(686556);
+  b = n(274008);
 
 function g(e) {
   let {
@@ -26,7 +26,7 @@ function g(e) {
   } = e, j = i.useMemo(() => Object.values(n).map(e => ({
     value: e.id,
     label: (0, a.F6)(e, c.default, s.Z, !0)
-  })), [n]), v = i.useMemo(() => {
+  })), [n]), N = i.useMemo(() => {
     let e = {};
     for (let r of t)
       if (r.channel_id in e) e[r.channel_id].webhooks.push(r);
@@ -37,12 +37,12 @@ function g(e) {
           webhooks: [r]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), N = i.useCallback(e => {
-    x() && (e === (null == f ? void 0 : f.id) ? l.Z.stopEditingWebhook() : l.Z.startEditingWebhook(e))
+  }, [n, t]), O = i.useCallback(e => {
+    x() && (e === (null == f ? void 0 : f.id) ? o.Z.stopEditingWebhook() : o.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, r.jsx)("div", {
     className: b.__invalid_list,
-    children: v.map(e => {
+    children: N.map(e => {
       let {
         channel: t,
         webhooks: n
@@ -52,13 +52,13 @@ function g(e) {
           channel: t,
           webhooks: n,
           channelOptions: i,
-          lastCreatedWebhookId: l,
+          lastCreatedWebhookId: o,
           editedWebhook: g,
           errors: f,
           toggleWebhookExpand: h
         } = e;
         return (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(o.vwX, {
+          children: [(0, r.jsx)(l.vwX, {
             className: b.groupHeader,
             children: m.NW.format(m.t.TKDIZm, {
               channelHook: () => (0, r.jsx)("span", {
@@ -81,7 +81,7 @@ function g(e) {
               editedWebhook: g,
               channelOptions: i,
               isExpanded: (null == g ? void 0 : g.id) === e.id,
-              isNew: l === e.id,
+              isNew: o === e.id,
               onToggleExpand: () => h(e.id),
               errors: f
             }, e.id)
@@ -94,7 +94,7 @@ function g(e) {
         lastCreatedWebhookId: g,
         editedWebhook: f,
         errors: h,
-        toggleWebhookExpand: N
+        toggleWebhookExpand: O
       })
     })
   })

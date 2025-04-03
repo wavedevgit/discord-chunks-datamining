@@ -1,12 +1,12 @@
 /** Chunk was on 30634 **/
 n.d(t, {
-  Z: () => o
+  Z: () => u
 }), n(47120), n(653041);
 var r = n(485589),
   a = n(424706),
   l = n(14160),
   i = n(247123);
-let o = {
+let u = {
   id: "nested-interactive",
   selector: "button, a, ".concat(Array.from(r.roles.entries()).reduce((e, t) => {
     let [n, r] = t;
@@ -32,20 +32,18 @@ let o = {
               case "INPUT":
                 return "hidden" !== e.getAttribute("type")
             }
-            return function(e) {
-              switch ((0, a.cY)(e)) {
-                case "link":
-                  return e.hasAttribute("href");
-                case "audio":
-                  return e.hasAttribute("controls");
-                case "img":
-                  return e.hasAttribute("usemap");
-                case "button":
-                  return !0;
-                default:
-                  return !1
-              }
-            }(e)
+            switch ((0, a.cY)(e)) {
+              case "link":
+                return e.hasAttribute("href");
+              case "audio":
+                return e.hasAttribute("controls");
+              case "img":
+                return e.hasAttribute("usemap");
+              case "button":
+                return !0;
+              default:
+                return !1
+            }
           }(n)) return !1;
         n = t.nextNode()
       }

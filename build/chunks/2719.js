@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => ee
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(512722),
-  l = n.n(o),
+  l = n(512722),
+  o = n.n(l),
   c = n(442837),
   d = n(692547),
   u = n(481060),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(918505),
   O = n(332473),
   C = n(921801),
-  v = n(485341),
-  S = n(687158),
+  S = n(485341),
+  v = n(687158),
   T = n(518950),
   I = n(184325),
   y = n(867176),
@@ -41,7 +41,7 @@ var r = n(200651),
   B = n(815660),
   M = n(801461),
   U = n(388032),
-  V = n(923359);
+  V = n(556780);
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -79,17 +79,17 @@ let H = Z.ZP.getEnableHardwareAcceleration() ? u.Xo$ : u.qEK;
 function z(e) {
   var t, s;
   let {
-    className: o,
-    user: l
-  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, _.gS)(), h = null !== (s = null == p ? void 0 : null === (t = p.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== s ? s : null, [f, b] = i.useState(!1);
+    className: l,
+    user: o
+  } = e, c = i.useRef(null), m = (0, j.o9)(), g = (0, O.b)(), p = (0, _.gS)(), h = null != (s = null == p || null == (t = p.nick) ? void 0 : t[0]) ? s : null, [f, b] = i.useState(!1);
   i.useEffect(() => {
     b(null != c.current && c.current.scrollWidth > c.current.clientWidth)
-  }, [l.username]);
-  let N = !l.isClaimed(),
-    x = m && !l.isPomelo() && !l.hasVerifiedEmailOrPhone() || N,
+  }, [o.username]);
+  let N = !o.isClaimed(),
+    x = m && !o.isPomelo() && !o.hasVerifiedEmailOrPhone() || N,
     E = x ? U.NW.string(U.t["7Ngnys"]) : void 0;
   return (0, r.jsxs)("div", {
-    className: a()(V.field, o),
+    className: a()(V.field, l),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -104,12 +104,12 @@ function z(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: l.username
-          }), !l.isPomelo() && (0, r.jsxs)(u.Text, {
+            children: o.username
+          }), !o.isPomelo() && (0, r.jsxs)(u.Text, {
             tag: "span",
             color: "header-secondary",
             variant: "text-md/normal",
-            children: ["#", l.discriminator]
+            children: ["#", o.discriminator]
           })]
         })]
       })
@@ -150,7 +150,7 @@ function z(e) {
           if (g) {
             let {
               default: e
-            } = await Promise.all([n.e("85342"), n.e("41155")]).then(n.bind(n, 193049));
+            } = await Promise.all([n.e("85342"), n.e("69525")]).then(n.bind(n, 193049));
             return t => (0, r.jsx)(e, G({
               source: M.Kq.USER_SETTINGS_EDIT
             }, t))
@@ -171,12 +171,12 @@ function Y(e) {
   var t, n;
   let {
     user: s,
-    className: o
-  } = e, l = (0, _.gS)(), c = null !== (n = null == l ? void 0 : null === (t = l.nick) || void 0 === t ? void 0 : t[0]) && void 0 !== n ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
+    className: l
+  } = e, o = (0, _.gS)(), c = null != (n = null == o || null == (t = o.nick) ? void 0 : t[0]) ? n : null, m = D.ZP.getGlobalName(s), g = i.useRef(null), [p, h] = i.useState(!1);
   return i.useEffect(() => {
     h(null != g.current && g.current.scrollWidth > g.current.clientWidth)
   }, [m]), (0, r.jsxs)("div", {
-    className: a()(V.field, o),
+    className: a()(V.field, l),
     children: [(0, r.jsx)("div", {
       className: V.constrainedRow,
       children: (0, r.jsxs)("div", {
@@ -225,15 +225,15 @@ function K(e) {
     censor: n,
     revealLabel: s,
     hideLabel: a
-  } = e, [o, l] = i.useState(!1), c = o ? t : n(t);
+  } = e, [l, o] = i.useState(!1), c = l ? t : n(t);
   return (0, r.jsxs)(r.Fragment, {
     children: [c, (0, r.jsx)(u.zxk, {
       look: u.zxk.Looks.LINK,
       size: u.zxk.Sizes.MIN,
       color: u.zxk.Colors.LINK,
-      "aria-label": o ? a : s,
-      onClick: () => l(!o),
-      children: o ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
+      "aria-label": l ? a : s,
+      onClick: () => o(!l),
+      children: l ? U.NW.string(U.t.fgq1go) : U.NW.string(U.t.dcztdX)
     })]
   })
 }
@@ -243,7 +243,7 @@ function q(e) {
     className: i,
     user: s
   } = e;
-  if (s.isClaimed()) {
+  if (s.isClaimed())
     if (null == s.email) t = {
       buttonText: U.NW.string(U.t.OYkgVl),
       buttonAriaLabel: U.NW.string(U.t["pvBD+f"]),
@@ -252,7 +252,7 @@ function q(e) {
       handleClick: () => (0, u.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("9343"), n.e("63097")]).then(n.bind(n, 642298));
+        } = await Promise.all([n.e("9343"), n.e("39809")]).then(n.bind(n, 642298));
         return t => (0, r.jsx)(e, G({}, t))
       })
     };
@@ -273,12 +273,12 @@ function q(e) {
         handleClick: () => (0, u.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("9343"), n.e("63097")]).then(n.bind(n, 642298));
+          } = await Promise.all([n.e("9343"), n.e("39809")]).then(n.bind(n, 642298));
           return t => (0, r.jsx)(e, G({}, t))
         })
       }
     }
-  } else t = {
+  else t = {
     buttonText: U.NW.string(U.t.BleMPD),
     buttonAriaLabel: U.NW.string(U.t.BleMPD),
     buttonColor: u.zxk.Colors.BRAND,
@@ -320,11 +320,11 @@ function X(e) {
   } = e;
   if (!s.isClaimed()) return null;
   let {
-    phone: o,
-    email: l
-  } = s, c = null != o;
+    phone: l,
+    email: o
+  } = s, c = null != l;
   return t = c ? (0, r.jsx)(K, {
-    text: o,
+    text: l,
     censor: k.n,
     revealLabel: U.NW.string(U.t.eY3xlZ),
     hideLabel: U.NW.string(U.t.jllbv7)
@@ -347,7 +347,7 @@ function X(e) {
       })
     }), (0, r.jsxs)("div", {
       className: V.fieldButtonList,
-      children: [c && null != l ? (0, r.jsx)(u.zxk, {
+      children: [c && null != o ? (0, r.jsx)(u.zxk, {
         className: a()(V.fieldButton, V.removeButton),
         size: u.zxk.Sizes.SMALL,
         look: u.zxk.Looks.LINK,
@@ -424,7 +424,7 @@ function Q() {
 function $(e) {
   let {
     className: t
-  } = e, n = (0, b.l6)(), s = (0, b.Jm)(), o = !n || s, l = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
+  } = e, n = (0, b.l6)(), s = (0, b.Jm)(), l = !n || s, o = i.useMemo(() => n ? s ? U.NW.string(U.t.dJOmCw) : U.NW.string(U.t["Y0A/1N"]) : U.NW.string(U.t.Qdv3DA), [n, s]);
   return (0, r.jsxs)("div", {
     className: a()(V.field, t),
     children: [(0, r.jsx)("div", {
@@ -438,11 +438,11 @@ function $(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: l
+            children: o
           })
         })]
       })
-    }), o && (0, r.jsx)(u.zxk, {
+    }), l && (0, r.jsx)(u.zxk, {
       className: V.fieldButton,
       size: u.zxk.Sizes.SMALL,
       color: u.zxk.Colors.PRIMARY,
@@ -457,13 +457,13 @@ function ee() {
   var e;
   let t = (0, c.e7)([P.default], () => {
       let e = P.default.getCurrentUser();
-      return l()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
+      return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
     }),
-    n = (0, S.ZP)(t.id),
-    i = (0, v.Z)(n),
+    n = (0, v.ZP)(t.id),
+    i = (0, S.Z)(n),
     s = w.co.useSetting(),
     a = (0, c.e7)([A.Z], () => A.Z.getErrors()),
-    o = null == a ? void 0 : null === (e = a.avatar) || void 0 === e ? void 0 : e[0],
+    l = null == a || null == (e = a.avatar) ? void 0 : e[0],
     {
       avatarSrc: d,
       avatarDecorationSrc: m
@@ -513,11 +513,11 @@ function ee() {
       })]
     }), (0, r.jsxs)("div", {
       className: V.background,
-      children: [null != o ? (0, r.jsx)(u.Text, {
+      children: [null != l ? (0, r.jsx)(u.Text, {
         className: V.avatarError,
         variant: "text-xs/normal",
         color: "text-danger",
-        children: o
+        children: l
       }) : null, (0, r.jsxs)("div", {
         className: V.fieldList,
         children: [(0, r.jsx)(C.F, {

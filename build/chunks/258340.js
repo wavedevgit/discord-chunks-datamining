@@ -56,16 +56,16 @@ let s = e => Math.round(4 * e) / 4,
       DRAG: p,
       Y_POS: h,
       PARTICLES_PER_EMISSION: y,
-      MAX_PARTICLES: v,
-      tickRate: w,
+      MAX_PARTICLES: w,
+      tickRate: v,
       improvePerformance: x
     } = o(e), E = {
-      particles: n.useRef(Array(v)),
-      particleStates: n.useRef(new Uint8Array(v)),
+      particles: n.useRef(Array(w)),
+      particleStates: n.useRef(new Uint8Array(w)),
       sortedParticles: n.useRef(new Uint16Array(Array.from({
-        length: v
+        length: w
       }, (e, t) => t))),
-      freeParticles: n.useRef(v),
+      freeParticles: n.useRef(w),
       activeParticles: n.useRef(0)
     }, S = n.useRef(!1);
     return {
@@ -73,7 +73,7 @@ let s = e => Math.round(4 * e) / 4,
         if (0 === E.activeParticles.current) return;
         let n = E.particleStates.current,
           a = E.particles.current;
-        for (let i = 0; i < v; i++) {
+        for (let i = 0; i < w; i++) {
           if (0 === n[i]) continue;
           let l = a[i];
           l.position.x -= l.velocity.x * t, l.position.y -= l.velocity.y * t, l.velocity.x *= p ** t, l.velocity.y *= p ** t, l.rotation += l.angularVelocity * t, l.velocity.y -= r * t, f(l, e) && (E.particleStates.current[i] = 0, E.activeParticles.current -= 1, E.freeParticles.current += 1)
@@ -90,7 +90,7 @@ let s = e => Math.round(4 * e) / 4,
         let r = E.particleStates.current,
           n = E.particles.current,
           a = E.sortedParticles.current;
-        for (let e = 0; e < v; e++) {
+        for (let e = 0; e < w; e++) {
           var u;
           let o = a[e];
           if (0 === r[o]) continue;
@@ -104,7 +104,7 @@ let s = e => Math.round(4 * e) / 4,
           } = d;
           if (p >= 1.3 && t.setFilter({
               blur: s((d.scale - 1) * 3)
-            }), p >= 1.3 && (p = p ** 2), null === (u = t.assetMap) || void 0 === u ? void 0 : u.has(d.key)) {
+            }), p >= 1.3 && (p = p ** 2), null == (u = t.assetMap) ? void 0 : u.has(d.key)) {
             let e = {
                 w: 32 * p,
                 h: 32 * p
@@ -175,7 +175,7 @@ let s = e => Math.round(4 * e) / 4,
               y: n.y + n.h / 2 + (0, a.random)(-e, e)
             }
           }
-          for (let e = 0; e < v; e += 1)
+          for (let e = 0; e < w; e += 1)
             if (0 === E.particleStates.current[e]) {
               E.particles.current[e] = {
                 key: r,
@@ -190,7 +190,7 @@ let s = e => Math.round(4 * e) / 4,
         }
         S.current = !0
       },
-      tickRate: w,
+      tickRate: v,
       improvePerformance: x,
       shouldTick: S
     }

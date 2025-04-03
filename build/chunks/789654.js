@@ -19,7 +19,7 @@ var r = n(200651),
   b = n(58755),
   f = n(246992),
   _ = n(500949),
-  g = n(906577);
+  g = n(770378);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -249,7 +249,7 @@ function O(e) {
       var n;
       let {
         semanticColorOverrides: r
-      } = t, a = null !== (n = r[e]) && void 0 !== n ? n : (0, _.$R)(e);
+      } = t, a = null != (n = r[e]) ? n : (0, _.$R)(e);
       return j(v({}, t), {
         semanticColorOverrides: j(v({}, r), {
           [e]: a

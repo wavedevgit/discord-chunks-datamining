@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -16,7 +16,7 @@ var i = n(852229),
   m = n(613810),
   g = n(391181),
   p = n(388032),
-  h = n(418307);
+  h = n(520880);
 let f = "guild-product-listings-header";
 
 function b(e) {
@@ -59,15 +59,15 @@ function b(e) {
         productName: i
       }, n))
     })
-  }, v = (e, t) => {
+  }, _ = (e, t) => {
     (0, i.J)((0, d.ar)(e, t))
-  }, _ = b.length > 0;
+  }, v = b.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.vwX, {
       className: h.productListingsHeader,
       id: f,
-      children: _ ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
-    }), _ ? (0, r.jsx)("ul", {
+      children: v ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
+    }), v ? (0, r.jsx)("ul", {
       className: h.productListings,
       "aria-labelledby": f,
       children: b.map(e => (0, r.jsx)("li", {
@@ -77,7 +77,7 @@ function b(e) {
           onEditProduct: () => u(e.id),
           onUnpublishProduct: () => j(e.id),
           onDeleteProduct: () => N(e.id, e.name),
-          onCopyProductLink: () => v(t, e.id),
+          onCopyProductLink: () => _(t, e.id),
           onTestDownload: () => m.Z.open({
             guildId: t,
             productId: e.id

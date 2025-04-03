@@ -12,7 +12,7 @@ var r = n(913527),
 let c = e => {
     var t;
     if (!u(e)) return !1;
-    let n = null === (t = a.Z.settings.userContent) || void 0 === t ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
+    let n = null == (t = a.Z.settings.userContent) ? void 0 : t.safetyUserSentimentNoticeDismissedAt,
       r = null != n ? l.E.toDate(n) : void 0,
       o = null != r ? i()().diff(r, "days") : null;
     if (null != n && !(null != o && o > 30)) return !1;

@@ -24,8 +24,8 @@ function d(e) {
     hasFetchedSubscriptions: h,
     hasFetchedSubscriptionPlans: g,
     currencyLoading: x,
-    selectedSkuId: v,
-    setSelectedSkuId: N,
+    selectedSkuId: N,
+    setSelectedSkuId: v,
     setSelectedPlanId: j,
     priceOptions: y,
     setSubscriptionMetadataRequest: C
@@ -41,7 +41,7 @@ function d(e) {
   }, [d, C]), i.useEffect(() => {
     j(n);
     let e = null != n ? a.Z.get(n) : null;
-    !S && !p && (m(t => {
+    S || p || (m(t => {
       var n, r;
       let i = null != e ? (0, o.aS)(e.id, !1, O, y) : void 0;
       return n = function(e) {
@@ -76,8 +76,8 @@ function d(e) {
       })(Object(r)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
       }), n
-    }), null != e && (N(null == e ? void 0 : e.skuId), b(t)))
-  }, [p, n, O, S, y, v, m, j, N, b, t]), S) ? (0, r.jsx)(u.Z, {}) : p ? (0, r.jsx)(l.Vq, {
+    }), null != e && (v(null == e ? void 0 : e.skuId), b(t)))
+  }, [p, n, O, S, y, N, m, j, v, b, t]), S) ? (0, r.jsx)(u.Z, {}) : p ? (0, r.jsx)(l.Vq, {
     onClose: f
   }) : null
 }

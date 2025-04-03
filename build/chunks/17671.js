@@ -13,9 +13,9 @@ var r = t(200651),
   d = t(313201),
   g = t(597),
   p = t(147754),
-  v = t(984933),
-  h = t(720202),
-  f = t(430824),
+  h = t(984933),
+  f = t(720202),
+  v = t(430824),
   m = t(306680),
   j = t(626135),
   b = t(823379);
@@ -31,18 +31,18 @@ var y = t(709054),
   k = t(981631),
   w = t(490897),
   I = t(388032),
-  S = t(755862);
+  S = t(781324);
 
 function T(e) {
   let {
     transitionState: n,
     onClose: l,
     guildId: T
-  } = e, _ = (0, d.Dt)(), D = (0, c.e7)([f.Z], () => f.Z.getGuild(T)), G = (0, Z.Z)(null == D ? void 0 : D.id), W = (0, O.ZP)(T), L = i.useRef(m.ZP.ackMessageId(T, w.W.GUILD_EVENT)), R = (0, C.Z)();
+  } = e, _ = (0, d.Dt)(), D = (0, c.e7)([v.Z], () => v.Z.getGuild(T)), G = (0, Z.Z)(null == D ? void 0 : D.id), W = (0, O.ZP)(T), L = i.useRef(m.ZP.ackMessageId(T, w.W.GUILD_EVENT)), R = (0, C.Z)();
   return i.useEffect(() => {
     W.forEach(e => x.Z.getGuildEventUserCounts(T, e.id, [])), x.Z.getGuildEventsForCurrentUser(T)
   }, [W, T]), i.useEffect(() => {
-    let e = f.Z.getGuild(T);
+    let e = v.Z.getGuild(T);
     if (!(null == e ? void 0 : e.hasFeature(k.oNc.HUB))) return;
     let {
       showHubEventsList: n
@@ -51,7 +51,7 @@ function T(e) {
       location: "d3755f_1"
     });
     if (!n) return;
-    let t = v.ZP.getDefaultChannel(T);
+    let t = h.ZP.getDefaultChannel(T);
     null != t && g.c(t.id)
   }, [T]), (0, u.ZP)(() => {
     j.default.track(k.rMx.OPEN_MODAL, {
@@ -61,7 +61,7 @@ function T(e) {
     })
   }), i.useEffect(() => {
     o()(W).map(e => e.creator_id).filter(b.lm).uniq().forEach(e => {
-      h.Z.requestMember(T, e)
+      f.Z.requestMember(T, e)
     })
   }, [T, W]), i.useEffect(() => {
     null != T && (0, s.Ju)(T, w.W.GUILD_EVENT)
@@ -91,7 +91,7 @@ function T(e) {
             (0, a.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([t.e("49049"), t.e("82758"), t.e("58023"), t.e("16958")]).then(t.bind(t, 779250));
+              } = await Promise.all([t.e("49049"), t.e("82758"), t.e("58023"), t.e("91463")]).then(t.bind(t, 779250));
               return n => {
                 var t, i;
                 return (0, r.jsx)(e, (t = function(e) {

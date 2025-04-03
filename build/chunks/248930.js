@@ -1,6 +1,6 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
-  Z: () => I
+  Z: () => j
 });
 var r = t(200651);
 t(192379);
@@ -16,17 +16,17 @@ var o = t(120356),
   p = t(652853),
   b = t(64621),
   y = t(382405),
-  v = t(386019),
-  m = t(228168),
-  g = t(24981);
+  m = t(386019),
+  g = t(228168),
+  I = t(227832);
 
-function I(e) {
+function j(e) {
   let {
     user: n,
     entry: t,
     profileGuildId: o,
-    className: I,
-    onClose: j,
+    className: j,
+    onClose: v,
     hideContextMenu: h = !1
   } = e, {
     analyticsLocations: _
@@ -44,7 +44,7 @@ function I(e) {
   return null != x && (0, c.Rh)(t) ? (0, r.jsx)(s.Gt, {
     value: _,
     children: (0, r.jsx)(b.Z, {
-      sourceType: m.n_.ACTIVITY,
+      sourceType: g.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(u.Z, {
         user: n,
@@ -53,29 +53,29 @@ function I(e) {
         sourceId: t.id,
         entry: t,
         onAction: P,
-        sourceType: m.n_.ACTIVITY,
+        sourceType: g.n_.ACTIVITY,
         children: () => (0, r.jsx)(f.Z, {
           user: n,
-          className: g.toolbarContainer,
+          className: I.toolbarContainer,
           interactionSourceId: t.id,
-          sourceType: m.n_.ACTIVITY,
+          sourceType: g.n_.ACTIVITY,
           onAction: P,
           onShowToolbar: () => P({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(v.Z, {
+          renderMoreButtonPopout: h ? void 0 : e => (0, r.jsx)(m.Z, {
             display: "recent",
             entry: t,
             user: n,
-            onClose: j,
+            onClose: v,
             children: e
           }),
           children: (0, r.jsx)(y.Z, {
             entry: t,
             user: n,
-            onClose: j,
-            className: i()(I, {
-              [g.hoisted]: O === m.n_.ACTIVITY && Z === t.id
+            onClose: v,
+            className: i()(j, {
+              [I.hoisted]: O === g.n_.ACTIVITY && Z === t.id
             })
           })
         })

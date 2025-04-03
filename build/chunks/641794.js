@@ -107,5 +107,8 @@ let p = function(i, e, a) {
     s = n ? i.replace(n[0], "") : i,
     o = (null == a ? void 0 : a.comparison) !== void 0 && a.comparison > 0,
     d = u[i];
-  return (r = "string" == typeof d ? d : 1 === e ? d.one(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_one", o) : d.other(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_other", o), n && (r = t[n[0].toLowerCase()] + " " + r), null != a && a.addSuffix) ? a.comparison && a.comparison > 0 ? "po " + r : "prieš " + r : r
+  if (r = "string" == typeof d ? d : 1 === e ? d.one(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_one", o) : d.other(e, (null == a ? void 0 : a.addSuffix) === !0, s.toLowerCase() + "_other", o), n && (r = t[n[0].toLowerCase()] + " " + r), null != a && a.addSuffix)
+    if (a.comparison && a.comparison > 0) return "po " + r;
+    else return "prieš " + r;
+  return r
 }

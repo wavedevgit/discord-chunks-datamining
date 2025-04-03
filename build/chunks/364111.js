@@ -5,18 +5,18 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   l = n(353926),
-  o = n(358085),
-  a = n(335131),
+  a = n(358085),
+  o = n(335131),
   s = n(52030),
   c = n(228624);
 
 function u(e, t) {
   let n = (0, i.e7)([l.Z], () => l.Z.hasLoadedExperiments),
     u = (0, c.hv)("useMaybeFetchCollectiblesShopHome"),
-    d = (0, o.isDesktop)() || (0, o.isWeb)(),
+    d = (0, a.isDesktop)() || (0, a.isWeb)(),
     [p, h, f, g, m, b, _] = (0, i.Wu)([s.Z], () => {
       var t, n;
-      return [s.Z.getShopBlocks(e), null !== (t = s.Z.getLastSuccessfulFetch(e)) && void 0 !== t ? t : 0, null !== (n = s.Z.getLastErrorTimestamp(e)) && void 0 !== n ? n : 0, s.Z.getLastFetchOptions(e), s.Z.getFetchShopHomeError(e), s.Z.getIsFetchingShopHome(e), s.Z.getShopHomeConfigOverride()]
+      return [s.Z.getShopBlocks(e), null != (t = s.Z.getLastSuccessfulFetch(e)) ? t : 0, null != (n = s.Z.getLastErrorTimestamp(e)) ? n : 0, s.Z.getLastFetchOptions(e), s.Z.getFetchShopHomeError(e), s.Z.getIsFetchingShopHome(e), s.Z.getShopHomeConfigOverride()]
     }),
     E = (0, r.useMemo)(() => {
       var e, n;
@@ -54,18 +54,18 @@ function u(e, t) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
       }), e
     }, [t, u, d, _]),
-    O = (0, r.useMemo)(() => !(0, a.oc)(g, E), [g, E]),
+    O = (0, r.useMemo)(() => !(0, o.oc)(g, E), [g, E]),
     N = (0, r.useMemo)(() => Date.now() - h < 6e5, [h]);
   return (0, r.useEffect)(() => {
     if (!n || b) return;
     let t = Date.now() - f < 6e5;
-    (null == m || !t) && (O || !N) && (0, a.Ov)(e, E)
+    null != m && t || (O || !N) && (0, o.Ov)(e, E)
   }, [n, b, m, f, N, O, E, e]), {
     isFetchingShopHome: b,
     fetchShopHomeError: m,
     shopBlocks: p,
     refreshShopHome: (0, r.useCallback)(() => {
-      (0, a.Ov)(e, E)
+      (0, o.Ov)(e, E)
     }, [e, E])
   }
 }

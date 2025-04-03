@@ -27,7 +27,7 @@ function f(e, t, n, r, i) {
 function g(e, t) {
   var n;
   let r = (0, a.tc)(e),
-    [, s] = (0, l.AB)(null !== (n = null == e ? void 0 : e.getGuildId()) && void 0 !== n ? n : void 0),
+    [, s] = (0, l.AB)(null != (n = null == e ? void 0 : e.getGuildId()) ? n : void 0),
     c = (0, i.e7)([o.Z], () => null != e && null != t && d(e, t, o.Z));
   return null != e && null != t && f(e, t, c, s, r)
 }
@@ -37,6 +37,6 @@ function m(e, t) {
   let r = (0, a.kn)(e),
     i = d(e, t, o.Z),
     c = s.default.getCurrentUser(),
-    [, u] = (0, l.s5)(null == c ? void 0 : c.id, null !== (n = e.getGuildId()) && void 0 !== n ? n : void 0);
+    [, u] = (0, l.s5)(null == c ? void 0 : c.id, null != (n = e.getGuildId()) ? n : void 0);
   return f(e, t, i, u, r)
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 70205 **/
-i.d(t, {
+n.d(t, {
   Z: () => g
 });
-var n, l, a, o = i(442837),
-  r = i(570140),
-  u = i(818083),
-  s = i(314897);
+var i, l, a, r = n(442837),
+  o = n(570140),
+  u = n(818083),
+  s = n(314897);
 let d = {},
   c = (0, u.B)({
     kind: "user",
@@ -22,7 +22,7 @@ let d = {},
       }
     }]
   });
-class f extends(a = o.ZP.Store) {
+class f extends(a = r.ZP.Store) {
   areSlayerNotificationsSuppressed() {
     if (c.getCurrentConfig({
         location: "Store"
@@ -34,13 +34,13 @@ class f extends(a = o.ZP.Store) {
     return !1
   }
 }
-l = "RpcNotificationSettingsStore", (n = "displayName") in f ? Object.defineProperty(f, n, {
+l = "RpcNotificationSettingsStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : f[n] = l;
-let g = new f(r.Z, {
+}) : f[i] = l;
+let g = new f(o.Z, {
   RPC_APP_DISCONNECTED: function(e) {
     delete d[e.socketId]
   },

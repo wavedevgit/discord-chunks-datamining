@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Q5: () => S,
@@ -22,10 +22,10 @@ var r, i = n(200651),
   x = n(409059),
   j = n(518936),
   N = n(999382),
-  v = n(58346),
-  _ = n(388032),
-  C = n(951432),
-  O = n(685786);
+  _ = n(58346),
+  v = n(388032),
+  C = n(651412),
+  O = n(20493);
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ class I extends(r = d.ZP.Store) {
     let e = N.Z.getProps().guild;
     if (null == e) return null;
     let t = x.Z.getForGuild(e.id);
-    return null != t && t.state !== v.Rj.RESOLVING ? t : null
+    return null != t && t.state !== _.Rj.RESOLVING ? t : null
   }
   showNotice() {
     let e = this.getTemplate();
@@ -51,7 +51,7 @@ class I extends(r = d.ZP.Store) {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
-        this.name = null !== (t = e.name) && void 0 !== t ? t : this.name, this.description = null !== (n = e.description) && void 0 !== n ? n : this.description
+        this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
     }), y(this, "setName", e => {
@@ -85,12 +85,12 @@ function T() {
     children: (0, i.jsxs)(m.y5t, {
       component: (0, i.jsx)(m.vwX, {
         tag: m.RB0.H1,
-        children: _.NW.string(_.t.KUw7Sk)
+        children: v.NW.string(v.t.KUw7Sk)
       }),
       children: [(0, i.jsx)(m.R94, {
         className: O.marginBottom20,
         type: m.geA.DESCRIPTION,
-        children: _.NW.format(_.t.c0m8bG, {})
+        children: v.NW.format(v.t.c0m8bG, {})
       }), (0, i.jsx)(w, {}), (0, i.jsx)(m.$i$, {
         className: C.divider
       }), (0, i.jsx)(P, {})]
@@ -111,14 +111,14 @@ function P() {
     } = function(e) {
       let [t, n] = s.useState(!0);
       return s.useEffect(() => {
-        (async function() {
+        !async function() {
           n(!0);
           try {
             await b.Z.loadTemplatesForGuild(e), n(!1)
           } catch (e) {
             E.setError(new f.Hx(e))
           }
-        })()
+        }()
       }, [e]), {
         loading: t,
         guildTemplate: (0, d.e7)([x.Z], () => x.Z.getForGuild(e), [e])
@@ -128,7 +128,7 @@ function P() {
       if (n && !a) {
         if (null != l) {
           var e, t;
-          E.setName(null !== (e = l.name) && void 0 !== e ? e : ""), E.setDescription(null !== (t = l.description) && void 0 !== t ? t : "")
+          E.setName(null != (e = l.name) ? e : ""), E.setDescription(null != (t = l.description) ? t : "")
         }
         r(!1)
       }
@@ -162,7 +162,7 @@ function w() {
       className: C.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
-        children: _.NW.string(_.t["f8u+VF"])
+        children: v.NW.string(v.t["f8u+VF"])
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
@@ -170,7 +170,7 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t.K2tn19)]
+        }), v.NW.string(v.t.K2tn19)]
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
@@ -178,7 +178,7 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t.om5gNj)]
+        }), v.NW.string(v.t.om5gNj)]
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
@@ -186,13 +186,13 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t["/VNqdH"])]
+        }), v.NW.string(v.t["/VNqdH"])]
       })]
     }), (0, i.jsxs)("div", {
       className: C.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
-        children: _.NW.string(_.t["8zhJEh"])
+        children: v.NW.string(v.t["8zhJEh"])
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
@@ -200,7 +200,7 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t.WOKI6u)]
+        }), v.NW.string(v.t.WOKI6u)]
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
@@ -208,7 +208,7 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t.ddhDJC)]
+        }), v.NW.string(v.t.ddhDJC)]
       }), (0, i.jsxs)("div", {
         className: C.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
@@ -216,7 +216,7 @@ function w() {
           className: C.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
-        }), _.NW.string(_.t["6Q/DHh"])]
+        }), v.NW.string(v.t["6Q/DHh"])]
       })]
     })]
   })
@@ -229,15 +229,15 @@ function R(e) {
   } = e;
   return (0, i.jsx)(m.sYh, {
     dismissable: !0,
-    header: _.NW.string(_.t["cN/RFB"]),
-    confirmText: _.NW.string(_.t["cN/RFB"]),
-    cancelText: _.NW.string(_.t["ETE/oK"]),
+    header: v.NW.string(v.t["cN/RFB"]),
+    confirmText: v.NW.string(v.t["cN/RFB"]),
+    cancelText: v.NW.string(v.t["ETE/oK"]),
     onCancel: t,
     onConfirm: n,
     children: (0, i.jsx)(m.Text, {
       variant: "text-md/normal",
       color: "text-normal",
-      children: _.NW.string(_.t.apCQv7)
+      children: v.NW.string(v.t.apCQv7)
     })
   })
 }
@@ -249,22 +249,22 @@ function Z() {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
       className: O.marginBottom20,
-      title: _.NW.string(_.t.z1a9R0),
+      title: v.NW.string(v.t.z1a9R0),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("name"),
       children: (0, i.jsx)(m.oil, {
         value: e,
         onChange: e => E.setName(e),
-        placeholder: _.NW.string(_.t.bMlpvr),
+        placeholder: v.NW.string(v.t.bMlpvr),
         maxLength: 100
       })
     }), (0, i.jsx)(m.xJW, {
       className: O.marginBottom20,
-      title: _.NW.string(_.t.GxirWV),
+      title: v.NW.string(v.t.GxirWV),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("description"),
       children: (0, i.jsx)(m.Kx8, {
         value: t,
         onChange: e => E.setDescription(e),
-        placeholder: _.NW.string(_.t.n1FBXl),
+        placeholder: v.NW.string(v.t.n1FBXl),
         maxLength: 120
       })
     })]
@@ -280,7 +280,7 @@ function D(e) {
     guild: t
   }) : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
-      title: _.NW.string(_.t.zGGcLy),
+      title: v.NW.string(v.t.zGGcLy),
       children: (0, i.jsx)(p.Z, {
         buttonLook: m.zxk.Looks.FILLED,
         buttonColor: m.zxk.Colors.BRAND,
@@ -290,7 +290,7 @@ function D(e) {
       color: "text-warning",
       className: O.marginTop8,
       variant: "text-sm/normal",
-      children: _.NW.string(_.t.aWsjtL)
+      children: v.NW.string(v.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: l()(O.marginTop20, C.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(k, {
@@ -307,7 +307,7 @@ function D(e) {
       })]
     }), n.isDirty && (0, i.jsx)("div", {
       className: C.lastSync,
-      children: _.NW.format(_.t.v0AVur, {
+      children: v.NW.format(v.t.v0AVur, {
         timestamp: new Date(n.updatedAt)
       })
     })]
@@ -331,7 +331,7 @@ function A(e) {
     disabled: !(null != n && n.trim().length >= 2),
     color: m.zxk.Colors.BRAND,
     onClick: l,
-    children: _.NW.string(_.t.Wxdi8P)
+    children: v.NW.string(v.t.Wxdi8P)
   })
 }
 
@@ -352,7 +352,7 @@ function k(e) {
     submitting: r,
     className: C.button,
     onClick: l,
-    children: _.NW.string(_.t["Nw+0Y2"])
+    children: v.NW.string(v.t["Nw+0Y2"])
   })
 }
 
@@ -375,7 +375,7 @@ function W(e) {
       className: C.button,
       color: m.zxk.Colors.RED,
       onClick: () => a(!0),
-      children: _.NW.string(_.t["cN/RFB"])
+      children: v.NW.string(v.t["cN/RFB"])
     }), r ? (0, i.jsx)(R, {
       confirm: l,
       cancel: () => a(!1)
@@ -393,7 +393,7 @@ function L(e) {
     onClick: () => (0, m.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("10778"), n.e("25289")]).then(n.bind(n, 766775));
+      } = await Promise.all([n.e("10778"), n.e("44044")]).then(n.bind(n, 766775));
       return n => {
         var r, s;
         return (0, i.jsx)(e, (r = function(e) {
@@ -421,6 +421,6 @@ function L(e) {
         }), r))
       }
     }),
-    children: _.NW.string(_.t.YI3iV1)
+    children: v.NW.string(v.t.YI3iV1)
   })
 }

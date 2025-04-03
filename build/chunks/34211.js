@@ -98,7 +98,7 @@ let p = c.j_.MAIN_NAVIGATION_MENU,
   }];
 class h extends(n = r.PureComponent) {
   render() {
-    let e = (0, l.f)(this.context.router),
+    let e = (0, l.fQ)(this.context.router),
       {
         isMobile: t,
         isVisible: a,

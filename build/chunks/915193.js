@@ -1,4 +1,4 @@
-/** Chunk was on 91344 **/
+/** Chunk was on 92643 **/
 t.d(n, {
   Z: () => g
 });
@@ -10,9 +10,9 @@ var i = t(442837),
   a = t(493683),
   s = t(129861),
   c = t(700582),
-  d = t(594174),
-  u = t(388032),
-  f = t(972965);
+  u = t(594174),
+  d = t(388032),
+  f = t(837014);
 
 function p(e) {
   let {
@@ -52,15 +52,15 @@ function p(e) {
 }
 
 function g(e, n) {
-  let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  let t = (0, i.e7)([u.default], () => u.default.getCurrentUser());
   return null == t || n.ownerId !== t.id || e.id === t.id ? null : (0, r.jsx)(o.sNh, {
     id: "make-dm-owner",
     color: "danger",
-    label: u.NW.string(u.t["6t3CyM"]),
+    label: d.NW.string(d.t["6t3CyM"]),
     action: () => {
       (0, o.h7j)(i => {
-        var d, g;
-        return (0, r.jsxs)(o.ConfirmModal, (d = function(e) {
+        var u, g;
+        return (0, r.jsxs)(o.ConfirmModal, (u = function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               r = Object.keys(t);
@@ -79,9 +79,9 @@ function g(e, n) {
           return e
         }({
           bodyClassName: f.confirmModal,
-          header: u.NW.string(u.t.WZoUsr),
-          confirmText: u.NW.string(u.t["cY+Ooa"]),
-          cancelText: u.NW.string(u.t["ETE/oK"]),
+          header: d.NW.string(d.t.WZoUsr),
+          confirmText: d.NW.string(d.t["cY+Ooa"]),
+          cancelText: d.NW.string(d.t["ETE/oK"]),
           onConfirm: () => a.Z.setDMOwner(n.id, e.id)
         }, i), g = g = {
           children: [(0, r.jsx)(p, {
@@ -103,7 +103,7 @@ function g(e, n) {
             })]
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: u.NW.format(u.t.gsBb3N, {
+            children: d.NW.format(d.t.gsBb3N, {
               usernameHook: (n, t) => (0, r.jsx)(s.Z, {
                 usernameIcon: (0, r.jsx)(o.qEK, {
                   className: f.avatarIcon,
@@ -118,7 +118,7 @@ function g(e, n) {
               }, t)
             })
           })]
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(d, Object.getOwnPropertyDescriptors(g)) : (function(e, n) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(g)) : (function(e, n) {
           var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
@@ -126,8 +126,8 @@ function g(e, n) {
           }
           return t
         })(Object(g)).forEach(function(e) {
-          Object.defineProperty(d, e, Object.getOwnPropertyDescriptor(g, e))
-        }), d))
+          Object.defineProperty(u, e, Object.getOwnPropertyDescriptor(g, e))
+        }), u))
       })
     }
   })

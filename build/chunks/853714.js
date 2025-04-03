@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => U
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(592125),
   j = n(430824),
   N = n(246946),
-  v = n(594174),
-  _ = n(823379),
+  _ = n(594174),
+  v = n(823379),
   C = n(51144),
   O = n(987707),
   y = n(999382),
@@ -31,9 +31,9 @@ var r = n(200651),
   S = n(603784),
   T = n(981631),
   P = n(388032),
-  w = n(78701),
-  R = n(329306),
-  Z = n(96424);
+  w = n(539101),
+  R = n(319586),
+  Z = n(20795);
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -158,7 +158,7 @@ let L = i.forwardRef((e, t) => {
             }))
           });
         case T.KFR.USER:
-          let o = v.default.getUser(t.targetId);
+          let o = _.default.getUser(t.targetId);
           if (null != o && null != s) return (0, m.jW)(e, async () => {
             let {
               default: e
@@ -235,7 +235,7 @@ class G extends i.PureComponent {
   }
   isScrollerAtBottom() {
     var e;
-    return (null === (e = this._scrollerRef) || void 0 === e ? void 0 : e.isScrolledToBottom()) || !1
+    return (null == (e = this._scrollerRef) ? void 0 : e.isScrolledToBottom()) || !1
   }
   fixScroll() {
     let e = this._scrollerRef;
@@ -266,11 +266,11 @@ class G extends i.PureComponent {
   }
   renderUserQuickSelectValue(e) {
     var t;
-    return null !== (t = e.valueLabel) && void 0 !== t ? t : e.label
+    return null != (t = e.valueLabel) ? t : e.label
   }
   renderActionQuickSelectValue(e) {
     var t;
-    return null !== (t = e.valueLabel) && void 0 !== t ? t : e.label
+    return null != (t = e.valueLabel) ? t : e.label
   }
   renderHeader() {
     return (0, r.jsxs)(r.Fragment, {
@@ -389,7 +389,7 @@ class G extends i.PureComponent {
         }), (0, r.jsx)(d.lo1.Label, {
           children: e.label
         }), (0, r.jsx)(d.lo1.Checkmark, {})]
-      }, null !== (n = e.key) && void 0 !== n ? n : t)
+      }, null != (n = e.key) ? n : t)
     }), D(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
       if (e.user instanceof b.Z) {
@@ -431,7 +431,7 @@ class G extends i.PureComponent {
         }), (0, r.jsx)(d.lo1.Label, {
           children: e.label
         }), (0, r.jsx)(d.lo1.Checkmark, {})]
-      }, null !== (n = e.key) && void 0 !== n ? n : t)
+      }, null != (n = e.key) ? n : t)
     }), D(this, "renderHeaderDropdowns", () => {
       var e, t;
       let {
@@ -442,12 +442,12 @@ class G extends i.PureComponent {
       } = this.props;
       if (i) return null;
       let o = I.Iv(),
-        c = null !== (e = o.find(e => {
+        c = null != (e = o.find(e => {
           let {
             value: t
           } = e;
           return n === t
-        })) && void 0 !== e ? e : o[0],
+        })) ? e : o[0],
         u = {
           label: P.NW.string(P.t.ZRFdsL),
           valueLabel: P.NW.string(P.t.an9Ry8),
@@ -458,12 +458,12 @@ class G extends i.PureComponent {
           value: e.id,
           user: e
         } : e),
-        g = null !== (t = m.find(e => {
+        g = null != (t = m.find(e => {
           let {
             value: t
           } = e;
           return t === s
-        })) && void 0 !== t ? t : u;
+        })) ? t : u;
       return (0, r.jsxs)("div", {
         className: w.quickSelect,
         children: [(0, r.jsx)(d.EFH, {
@@ -549,14 +549,14 @@ class G extends i.PureComponent {
     })
   }
 }
-let U = c.ZP.connectStores([O.Z, y.Z, j.Z, h.Z, N.Z, v.default], () => {
+let U = c.ZP.connectStores([O.Z, y.Z, j.Z, h.Z, N.Z, _.default], () => {
   let e = y.Z.getGuildId(),
     t = j.Z.getGuild(e),
     n = O.Z.logs;
   return {
     guildId: e,
     guild: t,
-    moderators: O.Z.userIds.map(e => v.default.getUser(e)).filter(_.lm),
+    moderators: O.Z.userIds.map(e => _.default.getUser(e)).filter(v.lm),
     isInitialLoading: O.Z.isInitialLoading,
     isLoading: O.Z.isLoading,
     isLoadingNextPage: O.Z.isLoadingNextPage,

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => h
 });
@@ -7,14 +7,14 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(230711),
-  l = n(63063),
+  l = n(230711),
+  o = n(63063),
   c = n(74538),
   d = n(140465),
   u = n(474936),
   m = n(981631),
   g = n(388032),
-  p = n(966908);
+  p = n(132383);
 let h = e => {
   let t, n, {
       premiumSubscription: i,
@@ -26,7 +26,7 @@ let h = e => {
   if (null == i) return null;
   let x = null != i ? c.ZP.getPremiumPlanItem(i) : null;
   if (c.ZP.isBoostOnlySubscription(i) ? t = g.NW.string(g.t.Uj0md3) : null != x && (t = c.ZP.getDisplayPremiumType(x.planId)), null == t) return null;
-  let _ = () => o.Z.open(m.oAB.SUBSCRIPTIONS),
+  let _ = () => l.Z.open(m.oAB.SUBSCRIPTIONS),
     E = (null != x ? c.ZP.getSkuIdForPlan(x.planId) : null) === u.Si.TIER_1;
   return n = null != b ? b : N || f ? "always-white" : "text-normal", (0, r.jsxs)(a.Zbd, {
     className: s()(p.container, h, {
@@ -46,7 +46,7 @@ let h = e => {
       variant: "text-sm/medium",
       color: n,
       children: E ? g.NW.format(g.t["tYuv+f"], {
-        helpdeskArticle: l.Z.getArticleURL(m.BhN.PREMIUM_DETAILS),
+        helpdeskArticle: o.Z.getArticleURL(m.BhN.PREMIUM_DETAILS),
         onSubscriptionsClick: _
       }) : g.NW.format(g.t.xHRgU1, {
         subscriptionName: t,

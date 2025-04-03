@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -25,16 +25,16 @@ function l(e) {
         hasMemberRetention: n.retention_healthy,
         notNSFW: 0 === Object.keys(n.nsfw_properties).length,
         canApply: n.can_apply,
-        isApplicationPending: (null === (t = n.latest_request) || void 0 === t ? void 0 : t.state) === a.X.OPEN,
-        actionRequired: (null === (r = n.latest_request) || void 0 === r ? void 0 : r.state) === a.X.ACTION_REQUIRED,
+        isApplicationPending: (null == (t = n.latest_request) ? void 0 : t.state) === a.X.OPEN,
+        actionRequired: (null == (r = n.latest_request) ? void 0 : r.state) === a.X.ACTION_REQUIRED,
         minimumAgeInDays: n.minimum_age_in_days,
         minimumOwnerAgeInYears: n.minimum_owner_age_in_years,
         minimumSize: n.minimum_size,
         latestRequest: n.latest_request,
         rejection: n.rejection,
-        guildMemberCount: null === (l = n.health_score) || void 0 === l ? void 0 : l.guild_size,
-        communicatorCount: null === (c = n.health_score) || void 0 === c ? void 0 : c.communicators,
-        retentionScore: null === (u = n.health_score) || void 0 === u ? void 0 : u.perc_ret_w1
+        guildMemberCount: null == (l = n.health_score) ? void 0 : l.guild_size,
+        communicatorCount: null == (c = n.health_score) ? void 0 : c.communicators,
+        retentionScore: null == (u = n.health_score) ? void 0 : u.perc_ret_w1
       })
     } catch (e) {
       o(new i.Z(e))

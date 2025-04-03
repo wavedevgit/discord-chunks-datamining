@@ -1,4 +1,4 @@
-/** Chunk was on 89590 **/
+/** Chunk was on 15820 **/
 n.d(t, {
   Z: () => h
 });
@@ -17,7 +17,7 @@ var a = n(200651),
   g = n(369171),
   f = n(545093),
   y = n(388032),
-  b = n(708184);
+  b = n(114047);
 let O = r.memo(function(e) {
   let {
     message: t
@@ -56,7 +56,7 @@ function h(e) {
     item: n,
     hideMediaOptions: r,
     onClose: o
-  } = e, c = null === (t = n.sourceMetadata) || void 0 === t ? void 0 : t.message;
+  } = e, c = null == (t = n.sourceMetadata) ? void 0 : t.message;
   return (0, a.jsxs)("div", {
     className: b.topBar,
     children: [null != c && (0, a.jsx)(O, {

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => S,
@@ -22,11 +22,11 @@ var r = n(200651),
   x = n(496675),
   j = n(699516),
   N = n(594174),
-  v = n(434404),
-  _ = n(449226),
+  _ = n(434404),
+  v = n(449226),
   C = n(981631),
   O = n(388032),
-  y = n(59736);
+  y = n(296205);
 
 function I(e) {
   let {
@@ -34,12 +34,12 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: s,
     className: l
-  } = e, h = (0, g.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([f.Z], () => f.Z.getChannel(s), [s]), v = (0, u.ZP)(N), I = async () => {
+  } = e, h = (0, g.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([f.Z], () => f.Z.getChannel(s), [s]), _ = (0, u.ZP)(N), I = async () => {
     j(!x);
     try {
       var e;
       await (0, m.f6)(t, !b);
-      let n = null !== (e = null != s ? s : t.safetyAlertsChannelId) && void 0 !== e ? e : null;
+      let n = null != (e = null != s ? s : t.safetyAlertsChannelId) ? e : null;
       if (null != n) {
         let e = {
           raid_alert_type: p.wR.JOIN_RAID,
@@ -73,9 +73,9 @@ function I(e) {
         children: [(0, r.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor"
-        }), " ", v]
+        }), " ", _]
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(v.Z, {
       checked: x,
       onChange: I,
       disabled: !h || null == s
@@ -90,7 +90,7 @@ function E(e) {
     selectedChannelId: i,
     setSelectedChannelId: s,
     className: m
-  } = e, g = null !== (t = n.safetyAlertsChannelId) && void 0 !== t ? t : null, h = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
+  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
     let e = b.ZP.getChannels(n.id)[b.sH].filter(e => {
       let {
         channel: t
@@ -109,11 +109,11 @@ function E(e) {
   }, [n.id, g]), f = async e => {
     s(e);
     try {
-      if (e !== g && (await v.Z.saveGuild(n.id, {
+      if (e !== g && (await _.Z.saveGuild(n.id, {
           safetyAlertsChannelId: e
         }, {
           throwErr: !0
-        }), v.Z.updateGuild({
+        }), _.Z.updateGuild({
           safetyAlertsChannelId: e
         })), null != e) {
         let t = {
@@ -154,7 +154,7 @@ function S(e) {
   var t, n;
   let {
     guild: s
-  } = e, [a, l] = i.useState(!1), o = null !== (t = s.safetyAlertsChannelId) && void 0 !== t ? t : null, [c, d] = i.useState(null != o ? o : null !== (n = null == s ? void 0 : s.publicUpdatesChannelId) && void 0 !== n ? n : null);
+  } = e, [a, l] = i.useState(!1), o = null != (t = s.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == s ? void 0 : s.publicUpdatesChannelId) ? n : null);
   return (0, r.jsx)(h.Z, {
     renderHeader: (0, r.jsx)(I, {
       isExpanded: a,
@@ -175,7 +175,7 @@ function T(e) {
   var t, n;
   let {
     guild: s
-  } = e, a = null !== (t = s.safetyAlertsChannelId) && void 0 !== t ? t : null, [l, o] = i.useState(null != a ? a : null !== (n = null == s ? void 0 : s.publicUpdatesChannelId) && void 0 !== n ? n : null);
+  } = e, a = null != (t = s.safetyAlertsChannelId) ? t : null, [l, o] = i.useState(null != a ? a : null != (n = null == s ? void 0 : s.publicUpdatesChannelId) ? n : null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {
       isExpanded: !0,

@@ -1,19 +1,19 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => s
 });
 var r = n(200651),
   i = n(192379),
-  o = n(70097),
-  l = n(576645),
-  a = n(896635);
+  l = n(70097),
+  o = n(576645),
+  a = n(489953);
 
 function s(e) {
   let {
     children: t,
     channel: n
   } = e, s = (0, i.useRef)(null);
-  return ((0, l.J)(n, () => {
+  return ((0, o.J)(n, () => {
     if (null != s.current) {
       let e = s.current;
       e.play();
@@ -34,7 +34,7 @@ function s(e) {
     },
     children: [(0, r.jsx)("div", {
       className: a.videoContainer,
-      children: (0, r.jsx)(o.Z, {
+      children: (0, r.jsx)(l.Z, {
         ref: s,
         className: a.video,
         muted: !0,

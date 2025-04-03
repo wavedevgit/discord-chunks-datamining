@@ -82,8 +82,8 @@ function f(e) {
       spring: 0
     }), "animate-always"),
     x = (0, u.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(),
-    v = (0, u.dQu)(c.Z.colors.CONTROL_BRAND_FOREGROUND).hex(),
-    y = l.useCallback(() => {
+    y = (0, u.dQu)(c.Z.colors.CONTROL_BRAND_FOREGROUND).hex(),
+    v = l.useCallback(() => {
       g({
         spring: 1,
         config: b
@@ -94,11 +94,11 @@ function f(e) {
       })
     }, [g]);
   l.useEffect(() => {
-    !(null == t || null == h || o(t, h)) && y()
-  }, [y, t, h, o]);
+    null != t && null != h && (o(t, h) || v())
+  }, [v, t, h, o]);
   let O = null == j ? void 0 : j.to({
       range: [0, 1],
-      output: ["".concat(x, "00"), "".concat(v, "27")]
+      output: ["".concat(x, "00"), "".concat(y, "27")]
     }),
     N = null != s ? m(C({}, s), {
       backgroundColor: O

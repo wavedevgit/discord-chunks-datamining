@@ -1,9 +1,9 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   $0: () => A,
   j1: () => I,
-  nP: () => g,
-  nj: () => O,
+  nP: () => O,
+  nj: () => g,
   pX: () => N
 }), n(47120);
 var r = n(192379),
@@ -15,8 +15,8 @@ var r = n(192379),
   E = n(481060),
   c = n(410030),
   u = n(564334),
-  d = n(302221),
-  _ = n(308083);
+  _ = n(302221),
+  d = n(308083);
 
 function A(e) {
   let t = a()(e),
@@ -39,10 +39,10 @@ function N(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.S3.Text;
   if (null == e) return;
-  let l = null !== (n = function(e) {
+  let l = null != (n = function(e) {
       var t;
       let n = a()(e);
-      return null === (t = i()(_.ym).map(e => {
+      return null == (t = i()(d.ym).map(e => {
         let {
           primary: t
         } = e;
@@ -60,11 +60,11 @@ function N(e, t) {
           distance: t
         } = e;
         return t
-      })) || void 0 === t ? void 0 : t.primary
-    }(e)) && void 0 !== n ? n : e,
+      })) ? void 0 : t.primary
+    }(e)) ? n : e,
     s = a()(l),
     E = a()(t),
-    c = (0, d.k8)({
+    c = (0, _.k8)({
       colors: [T(s), T(E)],
       ratio: r,
       saturationFactor: 1
@@ -109,7 +109,7 @@ function I(e, t) {
   }({}, n, r)
 }
 
-function g(e, t) {
+function O(e, t) {
   let [n, l = 1] = t, a = (0, c.ZP)();
   return r.useMemo(() => null != e ? e : n.resolve({
     theme: a,
@@ -117,7 +117,7 @@ function g(e, t) {
   }).hex(), [e, n, l, a])
 }
 
-function O(e, t) {
+function g(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
     l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "50%";

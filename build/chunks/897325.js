@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  E: () => l,
-  _: () => o
+  E: () => o,
+  _: () => l
 }), n(627341);
 var r = n(278074),
   i = n(263568),
-  a = n(735236);
+  a = n(228127);
 
-function o(e, t) {
+function l(e, t) {
   let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => a.normalStylesImageOnlyAnswers).otherwise(() => a.normalStylesDefault);
   return {
     styles: {
@@ -23,6 +23,6 @@ function o(e, t) {
   }
 }
 
-function l(e, t) {
+function o(e, t) {
   return e.getAvatarURL(t, 20, !1)
 }

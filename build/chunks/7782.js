@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T
 });
@@ -19,14 +19,14 @@ var r = n(200651),
   b = n(171368),
   _ = n(433355),
   C = n(699516),
-  v = n(594174),
-  y = n(768581),
-  x = n(525541),
+  y = n(594174),
+  x = n(768581),
+  v = n(525541),
   j = n(981631),
   O = n(377668),
   E = n(228168),
   N = n(388032),
-  I = n(789014);
+  I = n(882875);
 let P = e => {
     let {
       userId: t,
@@ -34,7 +34,7 @@ let P = e => {
     } = e, l = (0, o.e7)([g.Z], () => g.Z.getMutualGuilds(t), [t]), s = i.useMemo(() => null != l ? l.slice(0, 3).map((e, t) => {
       let {
         guild: n
-      } = e, i = null != n ? y.ZP.getGuildIconURL({
+      } = e, i = null != n ? x.ZP.getGuildIconURL({
         id: n.id,
         icon: n.icon,
         size: 24
@@ -89,7 +89,7 @@ let P = e => {
       relationshipType: n,
       userId: i,
       showingBanner: l
-    } = e, o = null === (t = v.default.getUser(i)) || void 0 === t ? void 0 : t.bot, c = () => {
+    } = e, o = null == (t = y.default.getUser(i)) ? void 0 : t.bot, c = () => {
       s.Z.addRelationship({
         userId: i,
         context: {
@@ -200,7 +200,7 @@ let P = e => {
       isOptimisticAccepted: f,
       isOptimisticRejected: g
     } = (0, p.m)({
-      user: v.default.getUser(n),
+      user: y.default.getUser(n),
       onError: l,
       onAcceptSuccess: s,
       onRejectSuccess: o
@@ -245,7 +245,7 @@ let P = e => {
         relationshipType: c,
         userId: t,
         showingBanner: i
-      }), !i && (0, r.jsx)(x.Z, {
+      }), !i && (0, r.jsx)(v.Z, {
         otherUserId: t,
         channel: n,
         navigateAwayOnReportSuccess: p

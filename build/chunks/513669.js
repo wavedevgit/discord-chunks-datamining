@@ -9,7 +9,7 @@ var n = r(200651),
   l = r(481060),
   i = r(813197),
   s = r(388032),
-  c = r(211296);
+  c = r(887670);
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -82,8 +82,8 @@ function p(e) {
     savedImageName: p,
     onChange: h,
     uploadButtonLabel: m = s.NW.string(s.t["MsUY/f"]),
-    radioGroupAriaLabel: v = s.NW.string(s.t["0Q0UJi"]),
-    disabled: b = !1
+    radioGroupAriaLabel: b = s.NW.string(s.t["0Q0UJi"]),
+    disabled: v = !1
   } = e, C = a === g, [q, x] = A.useState(C ? r : null), [j, N] = A.useState(null), O = A.useRef(null), U = A.useRef(null);
   A.useEffect(() => {
     p !== g && (x(null), N(null))
@@ -93,11 +93,11 @@ function p(e) {
     }) : s.NW.string(s.t.SNPvSk),
     y = (0, l.arW)({
       orientation: "horizontal",
-      isDisabled: b
+      isDisabled: v
     }),
     V = () => {
       var e;
-      return null === (e = O.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
+      return null == (e = O.current) ? void 0 : e.activateUploadDialogue()
     },
     W = () => {
       a === g && h(t[0].data, t[0].name), x(null), N(null)
@@ -105,7 +105,7 @@ function p(e) {
   return A.useEffect(() => {
     if (C && null != j) {
       var e, t;
-      null === (t = U.current) || void 0 === t || null === (e = t.ref) || void 0 === e || e.focus()
+      null == (t = U.current) || null == (e = t.ref) || e.focus()
     }
   }, [C, j]), (0, n.jsxs)("div", {
     className: c.imageSelectionContainer,
@@ -113,10 +113,10 @@ function p(e) {
       within: !0,
       children: (0, n.jsxs)("div", {
         className: o()(c.uploadButton, {
-          [c.disabled]: b,
+          [c.disabled]: v,
           [c.hidden]: null != q
         }),
-        "aria-disabled": b,
+        "aria-disabled": v,
         children: [(0, n.jsx)(l.FmF, {
           size: "xs",
           color: "currentColor",
@@ -169,21 +169,21 @@ function p(e) {
         }))
       })]
     }), (0, n.jsxs)("div", u(d({
-      "aria-label": v
+      "aria-label": b
     }, y), {
       className: c.radioGroup,
       children: [null != q && (0, n.jsx)(f, {
         ref: U,
         selectedImageName: a,
         onChange: h,
-        disabled: b,
+        disabled: v,
         name: g,
         alt: P,
         data: q
       }), t.map(e => (0, n.jsx)(f, d({
         selectedImageName: a,
         onChange: h,
-        disabled: b
+        disabled: v
       }, e), e.name))]
     }))]
   })

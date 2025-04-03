@@ -1,10 +1,10 @@
 /** Chunk was on 43353 **/
-t.d(n, {
+e.d(n, {
   Z: () => a
 });
-var e = t(261168);
+var t = e(261168);
 let a = {
-  date: (0, e.Z)({
+  date: (0, t.Z)({
     formats: {
       full: "EEEE, do MMMM y 'р.'",
       long: "do MMMM y 'р.'",
@@ -13,7 +13,7 @@ let a = {
     },
     defaultWidth: "full"
   }),
-  time: (0, e.Z)({
+  time: (0, t.Z)({
     formats: {
       full: "H:mm:ss zzzz",
       long: "H:mm:ss z",
@@ -22,7 +22,7 @@ let a = {
     },
     defaultWidth: "full"
   }),
-  dateTime: (0, e.Z)({
+  dateTime: (0, t.Z)({
     formats: {
       full: "{{date}} 'о' {{time}}",
       long: "{{date}} 'о' {{time}}",

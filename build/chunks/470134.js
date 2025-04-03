@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(481060),
   s = n(923726),
   c = n(388032),
-  u = n(814549);
+  u = n(542503);
 
 function d(e) {
   let {
@@ -48,7 +48,7 @@ function p(e) {
     handleScroll: () => h(!0),
     handleSetScrollerRef: e => {
       var t;
-      return o(null == e ? void 0 : null === (t = e.getScrollerState()) || void 0 === t ? void 0 : t.scrollWidth)
+      return o(null == e || null == (t = e.getScrollerState()) ? void 0 : t.scrollWidth)
     },
     handleSetContainerRef: e => n(null == e ? void 0 : e.clientWidth)
   }

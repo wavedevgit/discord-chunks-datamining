@@ -23,18 +23,18 @@ function a(e) {
     p = d.current[t.id],
     g = e => p + e.deltaTime,
     E = e => g(e) + 1500 >= Date.now(),
-    v = e => g(e) <= Date.now() && E(e),
-    h = m.find(v);
-  if (null == h) {
+    h = e => g(e) <= Date.now() && E(e),
+    v = m.find(h);
+  if (null == v) {
     E(t.points[t.points.length - 1]) || f.push(t);
     return
   }
   let b = (e, t) => {
       let r = null;
-      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(h.x, h.y);
+      n.lineWidth = t * window.devicePixelRatio, n.strokeStyle = e, n.beginPath(), n.moveTo(v.x, v.y);
       for (let e = 1; e < m.length; e++) {
         let t = m[e];
-        v(t) && (n.lineTo(t.x, t.y), r = t)
+        h(t) && (n.lineTo(t.x, t.y), r = t)
       }
       return n.stroke(), r
     },
@@ -43,6 +43,6 @@ function a(e) {
       outlineColor: y
     } = (0, r.bg)(t.userId, u, c, s),
     O = b(y, 6 + i.q2),
-    Z = null != O && v(O);
+    Z = null != O && h(O);
   Z && (0, l.I)(n, O.x, O.y, y, i.q2), b(S, 6), Z && (0, l.T)(n, O.x, O.y, t.userId)
 }

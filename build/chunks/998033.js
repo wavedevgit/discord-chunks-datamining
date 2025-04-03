@@ -31,7 +31,7 @@ function O(e, t, n, O) {
     trackClick: j
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null === (v = t.author) || void 0 === v ? void 0 : v.id,
+    notif_user_id: null == (v = t.author) ? void 0 : v.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,

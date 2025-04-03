@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   HJ: () => m,
   Zd: () => p,
@@ -8,26 +8,23 @@ var r = n(213919),
   i = n(544891),
   s = n(570140),
   a = n(893776),
-  o = n(710845),
-  l = n(314897),
+  l = n(710845),
+  o = n(314897),
   c = n(726745),
   d = n(981631);
-let u = new o.Z("MultiAccountActionCreators");
+let u = new l.Z("MultiAccountActionCreators");
 
 function m() {
-  let e = l.default.getId();
+  let e = o.default.getId();
   c.Z.getUsers().forEach(async t => {
     let n, {
         id: a
       } = t,
-      o = r.getToken(a);
-    if (null == o || "" === o) {
-      s.Z.dispatch({
-        type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
-        userId: a
-      });
-      return
-    }
+      l = r.getToken(a);
+    if (null == l || "" === l) return void s.Z.dispatch({
+      type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
+      userId: a
+    });
     s.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST",
       userId: a
@@ -36,7 +33,7 @@ function m() {
       n = await i.tn.get({
         url: d.ANM.ME,
         headers: {
-          authorization: o
+          authorization: l
         },
         retries: 3,
         rejectWithError: !1

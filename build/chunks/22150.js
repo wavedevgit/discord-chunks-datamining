@@ -9,8 +9,8 @@ var n = t(200651),
   o = t(479531),
   i = t(393869),
   c = t(594174),
-  d = t(388032),
-  x = t(320082);
+  x = t(388032),
+  d = t(652297);
 
 function N(e) {
   let {
@@ -31,39 +31,39 @@ function N(e) {
     onSubmit: _,
     children: [(0, n.jsxs)(l.xBx, {
       separator: !1,
-      className: x.header,
+      className: d.header,
       children: [(0, n.jsx)(l.X6q, {
-        className: x.title,
+        className: d.title,
         variant: "heading-xl/extrabold",
-        children: d.NW.string(d.t.uFxYq6)
+        children: x.NW.string(x.t.uFxYq6)
       }), (0, n.jsx)(l.olH, {
         onClick: t,
-        className: x.modalCloseButton
+        className: d.modalCloseButton
       })]
     }), (0, n.jsx)(l.hzk, {
-      className: x.content,
+      className: d.content,
       children: (0, n.jsx)(l.Text, {
-        className: x.description,
+        className: d.description,
         variant: "text-md/normal",
-        children: d.NW.format(d.t.oMFSgo, {
+        children: x.NW.format(x.t.oMFSgo, {
           oldEmail: null == u ? void 0 : u.email
         })
       })
     }), (0, n.jsxs)(l.mzw, {
-      className: x.modalFooter,
+      className: d.modalFooter,
       children: [(0, n.jsx)(l.zxk, {
         type: "submit",
         color: l.zxk.Colors.BRAND,
         size: l.zxk.Sizes.MEDIUM,
         submitting: N,
-        className: x.__invalid_submit,
-        children: d.NW.string(d.t.rXV81N)
+        className: d.__invalid_submit,
+        children: x.NW.string(x.t.rXV81N)
       }), (0, n.jsx)(l.zxk, {
-        className: x.__invalid_cancel,
+        className: d.__invalid_cancel,
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.PRIMARY,
         onClick: t,
-        children: d.NW.string(d.t["ETE/oK"])
+        children: x.NW.string(x.t["ETE/oK"])
       })]
     })]
   })

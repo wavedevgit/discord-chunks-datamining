@@ -19,7 +19,7 @@ var i = n(200651),
   p = n(490897),
   v = n(526761),
   j = n(388032),
-  S = n(454721),
+  S = n(77851),
   f = n(650455);
 
 function b(e) {
@@ -75,10 +75,7 @@ function E(e) {
       n = c.ZP.getMessageNotifications(t);
     return e === p.i.UNSET ? n === N.bL.ALL_MESSAGES ? p.i.ALL_MESSAGES : p.i.ONLY_MENTIONS : e
   }), r = (0, a.e7)([c.ZP], () => c.ZP.getMessageNotifications(t)), [f, E] = (0, s.useState)(!1), T = f ? x.s8.CUSTOM : (0, x.gs)(l, r), L = e => {
-    if (e === x.s8.CUSTOM) {
-      E(!0);
-      return
-    }
+    if (e === x.s8.CUSTOM) return void E(!0);
     E(!1), (0, g.V)(t, e)
   };
   return (0, i.jsxs)("div", {

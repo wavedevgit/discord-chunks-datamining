@@ -21,7 +21,7 @@ var s = r(200651),
   v = r(203377),
   b = r(981631),
   f = r(388032),
-  j = r(625234);
+  j = r(878003);
 let S = RegExp("^[A-Za-z0-9\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF-]+$", "u"),
   y = e => {
     var t;
@@ -30,12 +30,8 @@ let S = RegExp("^[A-Za-z0-9\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF-]+$", "
       guildMetadata: i,
       headerId: c
     } = e, [y, I] = a.useState(!1), C = (0, o.e7)([h.Z], () => "keywords" in h.Z.getErrors()), E = e => {
-      if (S.test(e)) I(!1);
-      else {
-        I(!0);
-        return
-      }
-      if ((null == r ? void 0 : r.id) == null) return;
+      if (!S.test(e)) return void I(!0);
+      if (I(!1), (null == r ? void 0 : r.id) == null) return;
       let {
         keywords: t
       } = i;
@@ -110,7 +106,7 @@ let S = RegExp("^[A-Za-z0-9\\u00A0-\\uD7FF\\uF900-\\uFDCF\\uFDF0-\\uFFEF-]+$", "
           onAddTag: E,
           maxTags: v.G7,
           maxTaxLength: v._0,
-          placeholder: (null == i ? void 0 : null === (t = i.keywords) || void 0 === t ? void 0 : t.length) === 0 ? f.NW.string(f.t.EL4Lho) : ""
+          placeholder: (null == i || null == (t = i.keywords) ? void 0 : t.length) === 0 ? f.NW.string(f.t.EL4Lho) : ""
         }), (0, s.jsx)(d.Text, {
           className: j.error,
           color: "text-danger",

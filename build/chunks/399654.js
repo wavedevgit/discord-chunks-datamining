@@ -1,64 +1,64 @@
 /** Chunk was on 22878 **/
 n.d(t, {
-  a: () => u
+  a: () => s
 });
-var o = n(544891),
-  i = n(570140),
-  r = n(706454),
-  l = n(70956),
+var r = n(544891),
+  l = n(570140),
+  o = n(706454),
+  i = n(70956),
   a = n(844439),
   c = n(981631);
-let d = 10 * l.Z.Millis.MINUTE;
-async function u(e) {
+let u = 10 * i.Z.Millis.MINUTE;
+async function s(e) {
   let {
     channelId: t,
     location: n,
-    withCommands: l
+    withCommands: i
   } = e;
   if (null == t) return;
-  let u = Date.now(),
-    s = a.ZP.getFetchState({
+  let s = Date.now(),
+    d = a.ZP.getFetchState({
       location: n,
       channelId: t,
-      withCommands: l
+      withCommands: i
     }),
     m = a.ZP.getLastFetchTimeMs({
       location: n,
       channelId: t,
-      withCommands: l
+      withCommands: i
     });
-  if (s !== a.M.FETCHING && (null == m || !(m + d > u))) {
-    i.Z.dispatch({
+  if (d !== a.M.FETCHING && (null == m || !(m + u > s))) {
+    l.Z.dispatch({
       type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS",
       location: n,
       channelId: t,
-      withCommands: l
+      withCommands: i
     });
     try {
       var p;
-      let e = await o.tn.get({
+      let e = await r.tn.get({
         url: c.ANM.APP_RECOMMENDATIONS,
         query: {
-          locale: r.default.locale,
+          locale: o.default.locale,
           channel_id: t,
           location: n,
-          with_commands: l
+          with_commands: i
         },
         rejectWithError: !1
       });
-      i.Z.dispatch({
+      l.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS",
         location: n,
         channelId: t,
-        recommendations: null !== (p = e.body) && void 0 !== p ? p : [],
-        withCommands: l
+        recommendations: null != (p = e.body) ? p : [],
+        withCommands: i
       })
     } catch (e) {
-      i.Z.dispatch({
+      l.Z.dispatch({
         type: "APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE",
         location: n,
         channelId: t,
-        withCommands: l
+        withCommands: i
       })
     }
   }

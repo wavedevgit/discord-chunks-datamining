@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(619899),
   u = n(18868),
   m = n(281598),
-  x = n(407121);
+  x = n(63874);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -177,10 +177,7 @@ let p = () => {
       setPreviewEnabled: c
     } = (0, d.N9)(), h = a.useCallback((e, r) => {
       let a = m.Kj[e.name];
-      if (null == a) {
-        t(t => [...t, e.name]);
-        return
-      }
+      if (null == a) return void t(t => [...t, e.name]);
       n(a, e)
     }, [n]), b = a.useCallback(async e => {
       t([]);

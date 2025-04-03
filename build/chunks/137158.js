@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(838221),
   b = n(246364),
   j = n(388032),
-  y = n(6226);
+  y = n(664305);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -164,7 +164,7 @@ function v(e) {
       var r;
       let {
         index: i
-      } = e, o = null === (r = g.current) || void 0 === r ? void 0 : r.getBoundingClientRect(), c = n.getClientOffset();
+      } = e, o = null == (r = g.current) ? void 0 : r.getBoundingClientRect(), c = n.getClientOffset();
       if (null == o || null == c) return;
       let s = (o.bottom - o.top) / 2,
         a = c.y - o.top;

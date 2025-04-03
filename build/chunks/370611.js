@@ -22,14 +22,14 @@ var c = a(200651),
   y = a(371583),
   _ = a(246627),
   B = a(249268),
-  v = a(864138),
-  x = a(473188),
+  x = a(864138),
+  v = a(473188),
   O = a(169080),
   N = a(986398),
   S = a(463031),
   Z = a(206583),
   P = a(388032),
-  E = a(930381);
+  E = a(667450);
 
 function T(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -90,20 +90,20 @@ function R(t) {
       var d, s;
       return {
         userId: e.user_id,
-        value: null !== (s = null === (d = e.statistics[a]) || void 0 === d ? void 0 : d.value) && void 0 !== s ? s : 0,
+        value: null != (s = null == (d = e.statistics[a]) ? void 0 : d.value) ? s : 0,
         rank: c + 1,
         previousRank: t.get(e.user_id)
       }
     })
   }, [e, m]), j = (0, y.r)(e), {
-    primaryColor: v
-  } = (0, i.Z)(j), x = d.useMemo(() => {
-    let t = (0, u.oo)(v),
+    primaryColor: x
+  } = (0, i.Z)(j), v = d.useMemo(() => {
+    let t = (0, u.oo)(x),
       e = I(T({}, (0, u.pz)(t.r, t.g, t.b)), {
         l: 15
       });
     return (0, u.ZJ)(e.h, e.s, e.l)
-  }, [v]), N = d.useMemo(() => null == g.find(t => t.userId === l) && g.length <= 10, [g, l]);
+  }, [x]), N = d.useMemo(() => null == g.find(t => t.userId === l) && g.length <= 10, [g, l]);
   if (d.useEffect(() => {
       O.M.forEach(t => (0, o.po)(t))
     }), 0 === e.users.length) return (0, c.jsx)(w, {
@@ -116,7 +116,7 @@ function R(t) {
   return (0, c.jsxs)("div", {
     className: E.container,
     style: {
-      background: x
+      background: v
     },
     children: [(0, c.jsx)(B.Z, {
       userId: g[0].userId,
@@ -162,7 +162,7 @@ function w(t) {
   let {
     leaderboard: e
   } = t, a = (0, y.r)(e);
-  return (0, c.jsx)(v.z, {
+  return (0, c.jsx)(x.z, {
     imageUrl: a,
     children: (0, c.jsxs)("span", {
       className: E.emptyTitleContainer,
@@ -189,7 +189,7 @@ function D(t) {
     locale: r,
     leaderboard: u,
     trackRankingItemInteraction: h
-  } = t, y = (0, s.e7)([b.default], () => b.default.getUser(e)), _ = m.ZP.getName(o, void 0, y), B = null != p && p > a, [v, R] = d.useState("default"), w = (0, s.e7)([l.Z], () => {
+  } = t, y = (0, s.e7)([b.default], () => b.default.getUser(e)), _ = m.ZP.getName(o, void 0, y), B = null != p && p > a, [x, R] = d.useState("default"), w = (0, s.e7)([l.Z], () => {
     let t = l.Z.getPrimaryActivity(e);
     return (null == t ? void 0 : t.application_id) != null && S.T.includes(t.application_id)
   }), {
@@ -214,12 +214,12 @@ function D(t) {
   }, C = (0, c.jsx)(n.Text, {
     className: E.tooltip,
     variant: "text-sm/medium",
-    children: "copied" === v ? (0, c.jsxs)(c.Fragment, {
+    children: "copied" === x ? (0, c.jsxs)(c.Fragment, {
       children: [(0, c.jsx)(n.kSu, {
         size: "xs",
         color: n.TVs.colors.STATUS_POSITIVE
       }), P.NW.string(P.t.ZO0ku7)]
-    }) : "error" === v ? (0, c.jsxs)(c.Fragment, {
+    }) : "error" === x ? (0, c.jsxs)(c.Fragment, {
       children: [(0, c.jsx)(n.P$X, {
         size: "xs",
         color: n.TVs.colors.STATUS_DANGER
@@ -234,7 +234,7 @@ function D(t) {
       className: E.rankChangeIndicator
     }) : null, (0, c.jsx)("div", {
       className: E.userRank,
-      children: a <= 3 ? (0, c.jsx)(x._, {
+      children: a <= 3 ? (0, c.jsx)(v._, {
         rank: a
       }) : (0, c.jsx)(n.Text, {
         tabularNumbers: !0,

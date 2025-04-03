@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -11,10 +11,10 @@ var r = n(200651),
   o = n(510231),
   c = n(434404),
   d = n(383124),
-  u = n(373425),
+  u = n(795691),
   m = n(388032),
-  g = n(840127),
-  p = n(47882);
+  g = n(210530),
+  p = n(381109);
 let h = () => null;
 
 function f(e) {
@@ -65,7 +65,7 @@ function j(e) {
   let {
     profile: n,
     canManageGuild: s
-  } = e, o = n.id, d = null !== (t = null == n ? void 0 : n.gameApplicationIds) && void 0 !== t ? t : x, h = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : x, h = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -74,7 +74,7 @@ function j(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), N = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
+  }, [o, d]), N = i.useRef(d), _ = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
   return (0, r.jsxs)(l.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -92,7 +92,7 @@ function j(e) {
         handleChange: h,
         disabled: !s
       }), (0, r.jsx)(b, {
-        gameApplicationIds: v,
+        gameApplicationIds: _,
         onRemoveGame: j,
         disabled: !s
       }), (0, r.jsx)(u.Z, {

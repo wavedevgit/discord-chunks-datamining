@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   T: () => O
 }), n(47120), n(653041);
@@ -19,10 +19,10 @@ var r = n(200651),
   b = n(880831),
   _ = n(774168),
   C = n(871499),
-  v = n(981631),
-  y = n(388032);
+  y = n(981631),
+  x = n(388032);
 
-function x(e) {
+function v(e) {
   let t = (0, s.e7)([m.Z], () => !(0, a.isEmpty)(m.Z.getTypingUsers(e)), [e]),
     n = (0, s.e7)([f.Z], () => f.Z.getVoiceChannelId() === e, [e]),
     {
@@ -49,7 +49,7 @@ function j(e) {
     mentionCount: l,
     isTyping: o,
     voiceChannelIsSelected: a
-  } = x(n);
+  } = v(n);
   return (0, r.jsx)(_.Z, {
     className: t,
     unreadCount: i,
@@ -97,7 +97,7 @@ function O(e) {
       unreadCount: t,
       mentionCount: n,
       isTyping: r
-    } = x(e), [l, o] = i.useState(!1);
+    } = v(e), [l, o] = i.useState(!1);
     return i.useEffect(() => {
       o(t > 0);
       let e = setTimeout(() => {
@@ -123,17 +123,17 @@ function O(e) {
     })
   }, [n]), R = i.useCallback(() => {
     var e;
-    null === (e = I.current) || void 0 === e || e.focus()
+    null == (e = I.current) || e.focus()
   }, []);
   (0, g.yp)({
-    event: v.CkL.FOCUS_CHAT_BUTTON,
+    event: y.CkL.FOCUS_CHAT_BUTTON,
     handler: N ? null : R
   });
   let [M, k] = i.useState(!1), L = i.useCallback(() => {
     f && k(!0)
   }, [f]);
   (0, g.yp)({
-    event: v.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
+    event: y.CkL.SHOW_TEXT_IN_VOICE_POPOUT_COMING_SOON_TIP,
     handler: L
   }), i.useEffect(() => {
     let e;
@@ -143,10 +143,10 @@ function O(e) {
       clearTimeout(e)
     }
   }, [M]);
-  let D = [t = f && N ? y.NW.string(y.t.DPgc5u) : P ? y.NW.string(y.t.nthdxM) : y.NW.string(y.t["5KxXrK"])];
-  return T > 0 && D.push(y.NW.formatToPlainString(y.t["3l1GOz"], {
+  let D = [t = f && N ? x.NW.string(x.t.DPgc5u) : P ? x.NW.string(x.t.nthdxM) : x.NW.string(x.t["5KxXrK"])];
+  return T > 0 && D.push(x.NW.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: T
-  })), Z > 0 && D.push(y.NW.string(y.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
+  })), Z > 0 && D.push(x.NW.string(x.t.x5zAGR)), (0, r.jsx)(C.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

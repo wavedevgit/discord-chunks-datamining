@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(770146),
   c = n(600164),
   u = n(424218),
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(843445),
   f = n(981631),
   g = n(388032),
-  m = n(287181);
+  m = n(208039);
 let b = {
   [f.TaA.WINDOWS]: p.PlatformTypes.WINDOWS,
   [f.TaA.MACOS]: p.PlatformTypes.OSX,
@@ -29,11 +29,11 @@ class _ extends i.PureComponent {
       pageSize: n,
       onClick: i
     } = this.props, l = n === h.b.LARGE;
-    return (0, r.jsx)(a.zxk, {
-      size: l ? a.zxk.Sizes.MIN : a.zxk.Sizes.LARGE,
+    return (0, r.jsx)(o.zxk, {
+      size: l ? o.zxk.Sizes.MIN : o.zxk.Sizes.LARGE,
       fullWidth: !l,
       color: e ? m.tabSelectedColor : m.tabNotSelectedColor,
-      className: o()({
+      className: a()({
         [m.tabPageLarge]: l,
         [m.tabPageSmall]: !l,
         [m.tabSelected]: e,

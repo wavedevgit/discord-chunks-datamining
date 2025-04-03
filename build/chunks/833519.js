@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(710845),
   g = n(965048),
   E = n(590293),
-  v = n(863908),
-  h = n(871118),
+  h = n(863908),
+  v = n(871118),
   b = n(517525),
   S = n(352978),
   y = n(576645),
@@ -42,7 +42,7 @@ var r = n(200651),
   U = n(354459),
   F = n(65154),
   V = n(388032),
-  W = n(230808);
+  W = n(519417);
 let Y = new p.Z("StreamTile");
 
 function z(e) {
@@ -94,7 +94,7 @@ function H(e) {
     stream: K,
     user: q,
     streamId: J
-  } = t, X = (0, o.e7)([x.Z], () => x.Z.getChannel(K.channelId)), Q = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(q.id, K.guildId), [q.id, K.guildId]), $ = (0, o.e7)([I.Z], () => I.Z.getAllActiveStreams().length > 0), ee = (0, o.e7)([_.Z], () => _.Z.isFocused()), et = (null == Q ? void 0 : Q.ownerId) === G, en = et && !ee && !b, er = null != Q ? (0, v.Z)(Q, q, q.id === G, en) : null, el = M < 195;
+  } = t, X = (0, o.e7)([x.Z], () => x.Z.getChannel(K.channelId)), Q = (0, o.e7)([I.Z], () => I.Z.getActiveStreamForUser(q.id, K.guildId), [q.id, K.guildId]), $ = (0, o.e7)([I.Z], () => I.Z.getAllActiveStreams().length > 0), ee = (0, o.e7)([_.Z], () => _.Z.isFocused()), et = (null == Q ? void 0 : Q.ownerId) === G, en = et && !ee && !b, er = null != Q ? (0, h.Z)(Q, q, q.id === G, en) : null, el = M < 195;
   (0, d.ZP)(() => {
     !$ && (null == X ? void 0 : X.isGuildStageVoice()) && !et && ((0, c.rn)(K), u.Z.updateStageStreamSize(K.channelId, !1))
   });
@@ -127,7 +127,7 @@ function H(e) {
     className: a()(W.content, W.streamPreview, {
       [W.small]: el
     }),
-    children: [(0, r.jsx)(h.Z, {
+    children: [(0, r.jsx)(v.Z, {
       noImage: !0,
       noText: !0,
       className: a()(W.absoluteFill, {

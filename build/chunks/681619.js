@@ -7,7 +7,7 @@ var r = n(200651),
   l = n(120356),
   i = n.n(l),
   o = n(481060),
-  s = n(890798);
+  s = n(616257);
 
 function c(e) {
   let {
@@ -58,12 +58,12 @@ function c(e) {
             var a, l;
             let i = e.cellClassName,
               o = {
-                width: "calc(".concat(null !== (l = e.cellWidth) && void 0 !== l ? l : "1fr", " - ").concat(16, "px)")
+                width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)")
               };
             return (0, r.jsx)("div", {
               className: i,
               style: o,
-              children: null === (a = e.renderHeader) || void 0 === a ? void 0 : a.call(e, e, n)
+              children: null == (a = e.renderHeader) ? void 0 : a.call(e, e, n)
             }, "dev-tools-th-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-header-".concat(t))
@@ -83,13 +83,13 @@ function c(e) {
             var n, l;
             let i = e.cellClassName,
               o = {
-                width: "calc(".concat(null !== (l = e.cellWidth) && void 0 !== l ? l : "1fr", " - ").concat(16, "px)"),
+                width: "calc(".concat(null != (l = e.cellWidth) ? l : "1fr", " - ").concat(16, "px)"),
                 height: "calc(".concat(m, "px - ").concat(16, "px)")
               };
             return (0, r.jsx)("div", {
               className: i,
               style: o,
-              children: null === (n = e.render) || void 0 === n ? void 0 : n.call(e, a, void 0, t)
+              children: null == (n = e.render) ? void 0 : n.call(e, a, void 0, t)
             }, "dev-tools-td-".concat(t, "-").concat(e.key))
           })
         }, "dev-tools-tr-".concat(t))

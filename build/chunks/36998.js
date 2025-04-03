@@ -7,7 +7,7 @@ var l = e(944486),
 
 function i() {
   var t;
-  let n = null !== (t = l.Z.getCurrentlySelectedChannelId()) && void 0 !== t ? t : void 0;
+  let n = null != (t = l.Z.getCurrentlySelectedChannelId()) ? t : void 0;
   return null != n && (0, r.AB)(n) ? {
     channel_static_route: n
   } : {

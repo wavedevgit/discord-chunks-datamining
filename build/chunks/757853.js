@@ -1,4 +1,4 @@
-/** Chunk was on 44300 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   F: () => Q,
   G: () => W
@@ -21,10 +21,10 @@ var a, r = n(200651),
   y = n(810123),
   E = n(448486),
   I = n(987509),
-  v = n(592125),
-  S = n(430824),
-  C = n(158776),
-  O = n(306680),
+  S = n(592125),
+  C = n(430824),
+  O = n(158776),
+  v = n(306680),
   x = n(699516),
   A = n(594174),
   N = n(626135),
@@ -35,7 +35,7 @@ var a, r = n(200651),
   w = n(981631),
   Z = n(490897),
   D = n(388032),
-  k = n(480310);
+  k = n(691176);
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,13 +99,13 @@ function G(e) {
     onPressDestination: g,
     "aria-setsize": _,
     "aria-posinset": f
-  } = e, b = (0, u.JA)(n.id), [y, E] = l.useState(!1), I = l.useRef(!1), v = l.useCallback(() => {
+  } = e, b = (0, u.JA)(n.id), [y, E] = l.useState(!1), I = l.useRef(!1), S = l.useCallback(() => {
     if ("send" === a) {
       E(!0), I.current = !0;
       return
     }
     null == g || g(n)
-  }, [a, g, n]), S = l.useCallback(() => {
+  }, [a, g, n]), C = l.useCallback(() => {
     N.default.track(w.rMx.FORWARD_ONE_TAP_VIEW, {
       channel_id: t.channel_id,
       message_id: t.id
@@ -113,7 +113,7 @@ function G(e) {
       transitionToDestination: !0,
       closeAfterSend: !0
     })
-  }, [t.channel_id, t.id, g, n]), C = l.useCallback(() => {
+  }, [t.channel_id, t.id, g, n]), O = l.useCallback(() => {
     E(!1), I.current = !1, N.default.track(w.rMx.FORWARD_ONE_TAP_UNDO, {
       channel_id: t.channel_id,
       message_id: t.id
@@ -128,7 +128,7 @@ function G(e) {
     className: s()(k.destinationRow, {
       [k.disabled]: p
     }),
-    onClick: p || y ? void 0 : v,
+    onClick: p || y ? void 0 : S,
     "aria-selected": d,
     "aria-setsize": _,
     "aria-posinset": f
@@ -165,7 +165,7 @@ function G(e) {
         size: m.zxk.Sizes.SMALL,
         color: m.zxk.Colors.PRIMARY,
         look: m.zxk.Looks.LINK,
-        onClick: S,
+        onClick: C,
         children: D.NW.string(D.t["HO/oXl"])
       }) : (0, r.jsx)("div", {
         className: s()((0, m.nYM)({
@@ -177,7 +177,7 @@ function G(e) {
         size: m.zxk.Sizes.SMALL,
         color: m.zxk.Colors.BRAND,
         look: m.zxk.Looks.OUTLINED,
-        onClick: C,
+        onClick: O,
         children: D.NW.string(D.t.KyUKhY)
       })]
     })]
@@ -194,7 +194,7 @@ function U(e) {
       decoration: "never"
     }),
     s = (0, d.e7)([x.Z], () => x.Z.getNickname(t.id)),
-    o = (0, d.e7)([C.Z], () => C.Z.getStatus(t.id));
+    o = (0, d.e7)([O.Z], () => O.Z.getStatus(t.id));
   return (0, r.jsx)(G, R(M({}, a), {
     icon: (0, r.jsx)(p.Z, {
       "aria-hidden": !0,
@@ -231,13 +231,13 @@ function H(e) {
     channel: t,
     subLabel: n
   } = e, a = F(e, ["channel", "subLabel"]);
-  let l = (0, d.e7)([S.Z], () => S.Z.getGuild(null == t ? void 0 : t.guild_id)),
+  let l = (0, d.e7)([C.Z], () => C.Z.getGuild(null == t ? void 0 : t.guild_id)),
     i = (0, f.ZP)(t),
-    s = (0, d.e7)([v.Z, A.default, x.Z], () => {
-      let e = v.Z.getChannel(t.parent_id);
+    s = (0, d.e7)([S.Z, A.default, x.Z], () => {
+      let e = S.Z.getChannel(t.parent_id);
       return null == e ? null : (0, f.F6)(e, A.default, x.Z, !1)
     }),
-    o = (0, d.e7)([O.ZP], () => O.ZP.lastMessageTimestamp(t.id, Z.W.CHANNEL)),
+    o = (0, d.e7)([v.ZP], () => v.ZP.lastMessageTimestamp(t.id, Z.W.CHANNEL)),
     u = null == l ? void 0 : l.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? m.Mmi : m.VL1;
@@ -290,7 +290,7 @@ function Q(e) {
     h = l.useCallback(() => 48, []),
     f = l.useMemo(() => {
       var e;
-      return null !== (e = null == s ? void 0 : s.map(I.hC)) && void 0 !== e ? e : []
+      return null != (e = null == s ? void 0 : s.map(I.hC)) ? e : []
     }, [s]),
     b = l.useCallback(e => {
       let {
@@ -345,7 +345,7 @@ function Q(e) {
         return (0, r.jsx)(m.YAO, R(M({
           scrollerRef: e => {
             var n;
-            y.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+            y.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
           }
         }, n, d), {
           sections: p,

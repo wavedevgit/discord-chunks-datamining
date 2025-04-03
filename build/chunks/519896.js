@@ -4,8 +4,8 @@ l.r(n), l.d(n, {
 }), l(266796);
 var t = l(200651),
   r = l(192379),
-  i = l(269210),
-  s = l(752843),
+  s = l(269210),
+  i = l(752843),
   a = l(481060),
   o = l(757746),
   c = l(930155),
@@ -14,8 +14,8 @@ var t = l(200651),
   m = l(73346),
   x = l(591759),
   h = l(886253),
-  v = l(680005),
-  p = l(938337);
+  p = l(680005),
+  v = l(938337);
 
 function j(e) {
   var n, l;
@@ -33,7 +33,7 @@ function j(e) {
     data: y
   } = (0, o.Z)(b), T = r.useMemo(() => {
     var e;
-    return (null == y ? void 0 : y.thumbnail) != null && null !== (e = x.Z.toURLSafe((0, m._W)(j, y.thumbnail, 256))) && void 0 !== e ? e : void 0
+    return (null == y ? void 0 : y.thumbnail) != null && null != (e = x.Z.toURLSafe((0, m._W)(j, y.thumbnail, 256))) ? e : void 0
   }, [j, null == y ? void 0 : y.thumbnail]), R = r.useMemo(() => {
     let e = null == y ? void 0 : y.benefits;
     if (null != e && 0 !== e.length) return e.map(e => ({
@@ -55,7 +55,7 @@ function j(e) {
     transitionState: g,
     onHeaderTitleClick: null != k ? k : f,
     onClose: f,
-    footer: (0, t.jsx)(v.pV, {
+    footer: (0, t.jsx)(p.pV, {
       onClick: C,
       appId: j,
       subscriptionType: N,
@@ -63,18 +63,18 @@ function j(e) {
       subscriptionPlan: I,
       state: E
     }),
-    children: (0, t.jsx)(p.i, {
+    children: (0, t.jsx)(v.i, {
       appId: j,
       skuId: b,
-      benefits: null != R ? R.map(e => (0, t.jsx)(i.Gm, {
+      benefits: null != R ? R.map(e => (0, t.jsx)(s.Gm, {
         header: e.title,
         icon: e.icon,
         description: e.description
       }, e.id)) : void 0,
-      description: null !== (n = y.description) && void 0 !== n ? n : void 0,
+      description: null != (n = y.description) ? n : void 0,
       imgSrc: T,
-      title: null !== (l = null == I ? void 0 : I.name) && void 0 !== l ? l : y.summary,
-      tag: (0, t.jsx)(s.Z, {
+      title: null != (l = null == I ? void 0 : I.name) ? l : y.summary,
+      tag: (0, t.jsx)(i.Z, {
         type: N
       }),
       FallbackIcon: a.Vh5

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,9 +7,9 @@ n(192379);
 var i = n(481060),
   s = n(37234),
   a = n(703656),
-  o = n(981631),
-  l = n(388032),
-  c = n(483738),
+  l = n(981631),
+  o = n(388032),
+  c = n(765058),
   d = n(322221);
 
 function u() {
@@ -22,17 +22,17 @@ function u() {
     }), (0, r.jsx)(i.X6q, {
       className: c.topSpacing,
       variant: "heading-lg/extrabold",
-      children: l.NW.string(l.t.Z1OZCQ)
+      children: o.NW.string(o.t.Z1OZCQ)
     }), (0, r.jsx)(i.Text, {
       className: c.topSpacing,
       variant: "text-md/normal",
-      children: l.NW.string(l.t.ZSt4Tk)
+      children: o.NW.string(o.t.ZSt4Tk)
     }), (0, r.jsx)(i.zxk, {
       className: c.topSpacing,
       onClick: () => {
-        (0, a.uL)(o.Z5c.GUILD_DISCOVERY), s.xf()
+        (0, a.uL)(l.Z5c.GUILD_DISCOVERY), s.xf()
       },
-      children: l.NW.string(l.t.jQ3pqq)
+      children: o.NW.string(o.t.jQ3pqq)
     })]
   })
 }

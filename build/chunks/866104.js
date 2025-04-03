@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   C: () => S,
   Z: () => I
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(512722),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(481060),
   c = n(131388),
   u = n(357352),
@@ -19,13 +19,13 @@ var r = n(200651),
   g = n(594174),
   _ = n(671533),
   b = n(51144),
-  v = n(506071),
-  x = n(696014),
-  y = n(847033),
-  E = n(544978),
+  x = n(506071),
+  y = n(696014),
+  E = n(847033),
+  v = n(544978),
   O = n(893182),
   N = n(388032),
-  j = n(948002);
+  j = n(414521);
 
 function C(e) {
   let {
@@ -52,7 +52,7 @@ function I(e) {
   let {
     coverImageAsset: t,
     isPreview: n = !1
-  } = e, i = f.QK.useSetting(), a = (0, v.n)() && i, [o, l] = (0, m.Z)(t, a), s = a ? (0, r.jsx)(d.Z, {
+  } = e, i = f.QK.useSetting(), a = (0, x.n)() && i, [l, o] = (0, m.Z)(t, a), s = a ? (0, r.jsx)(d.Z, {
     autoPlay: !0,
     loop: !0,
     className: j.coverImage,
@@ -65,10 +65,10 @@ function I(e) {
     className: j.coverImage
   });
   return (0, r.jsx)("div", {
-    ref: o,
+    ref: l,
     className: j.coverImageContainer,
-    children: null == l || n ? s : (0, r.jsx)("img", {
-      src: l,
+    children: null == o || n ? s : (0, r.jsx)("img", {
+      src: o,
       alt: "",
       className: j.coverImage
     })
@@ -83,22 +83,22 @@ function S(e) {
   } = e, m = a.id, {
     nickname: f,
     nickcolor: _
-  } = (0, l.cj)([h.ZP, g.default], () => {
+  } = (0, o.cj)([h.ZP, g.default], () => {
     var e, t;
     let n = g.default.getCurrentUser();
-    o()(null != n, "user cannot be null");
+    l()(null != n, "user cannot be null");
     let r = h.ZP.getMember(m, n.id);
     return {
-      nickname: null !== (e = null == r ? void 0 : r.nick) && void 0 !== e ? e : b.ZP.getName(n),
-      nickcolor: null !== (t = null == r ? void 0 : r.colorString) && void 0 !== t ? t : void 0
+      nickname: null != (e = null == r ? void 0 : r.nick) ? e : b.ZP.getName(n),
+      nickcolor: null != (t = null == r ? void 0 : r.colorString) ? t : void 0
     }
   }, [m]), {
-    isTruncated: v,
+    isTruncated: x,
     ExpandableTextContainer: S
-  } = (0, x.s)(), T = (null !== (n = null == d ? void 0 : null === (t = d.description) || void 0 === t ? void 0 : t.trim().length) && void 0 !== n ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
+  } = (0, y.s)(), T = (null != (n = null == d || null == (t = d.description) ? void 0 : t.trim().length) ? n : 0) > 0, [P, A] = i.useState(1), w = (0, c.Z)("(max-width: 1439px)"), {
     selectedTab: Z,
     isPhantomPreview: k
-  } = (0, y.m)(), R = Z === E.y.GUILD_PRODUCTS_PREVIEW ? N.NW.string(N.t["LvXy/P"]) : N.NW.string(N.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
+  } = (0, E.m)(), R = Z === v.y.GUILD_PRODUCTS_PREVIEW ? N.NW.string(N.t["LvXy/P"]) : N.NW.string(N.t.XyqKh4), D = T ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(S, {
       lineClamp: w || 2 === P ? 2 : 3,
       children: (0, r.jsx)(s.Text, {
@@ -106,7 +106,7 @@ function S(e) {
         color: "text-normal",
         children: null == d ? void 0 : d.description
       })
-    }), v && (0, r.jsxs)(r.Fragment, {
+    }), x && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.LZC, {
         size: 4
       }), (0, r.jsx)(C, {

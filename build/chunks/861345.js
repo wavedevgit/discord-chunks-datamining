@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   p: () => j,
@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(157018),
   h = n(828656),
   f = n(388032),
-  b = n(394435);
+  b = n(492606);
 
 function x(e) {
   let {
@@ -33,13 +33,13 @@ function x(e) {
     onEdit: p,
     onMove: x,
     disabled: j = !1
-  } = e, N = i.useRef(null), v = i.useRef(null), {
-    drag: _,
+  } = e, N = i.useRef(null), _ = i.useRef(null), {
+    drag: v,
     dragPreview: C,
     drop: O,
     isDragging: y
   } = (0, h.Z)(N, d, u, x);
-  return _(v), C(O(N)), (0, r.jsxs)("div", {
+  return v(_), C(O(N)), (0, r.jsxs)("div", {
     ref: N,
     className: a()(b.card, {
       [b.cardDragging]: y,
@@ -53,7 +53,7 @@ function x(e) {
         emojiName: s,
         className: b.emoji
       }), !j && (0, r.jsx)("div", {
-        ref: v,
+        ref: _,
         className: b.dragIconWrapper,
         "data-dnd-name": g,
         children: (0, r.jsx)(o.Vni, {

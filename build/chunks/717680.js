@@ -1,16 +1,16 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(192379);
 let i = !1,
   a = new Set;
 
-function o(e) {
+function l(e) {
   e !== i && (i = e, a.forEach(e => e(i)))
 }
 
-function l() {
+function o() {
   let [e, t] = r.useState(i);
   return r.useEffect(() => {
     let e = e => {
@@ -22,11 +22,11 @@ function l() {
   }, []), e
 }
 window.addEventListener("keydown", e => {
-  o(e.shiftKey)
+  l(e.shiftKey)
 }), window.addEventListener("keyup", e => {
-  o(e.shiftKey)
+  l(e.shiftKey)
 }), window.addEventListener("mousemove", e => {
-  o(e.shiftKey)
+  l(e.shiftKey)
 }), window.addEventListener("blur", () => {
-  o(!1)
+  l(!1)
 })

@@ -14,8 +14,8 @@ var n = s(200651),
   x = s(186523),
   h = s(553826),
   u = s(388032),
-  j = s(657530),
-  g = s(854140);
+  j = s(699343),
+  g = s(949509);
 
 function N(e) {
   let {
@@ -70,7 +70,7 @@ function N(e) {
       className: g.container,
       children: [(0, n.jsx)(_, {
         hidden: "channel" === s
-      }), (0, n.jsx)(v, {
+      }), (0, n.jsx)(b, {
         hidden: "server" === s
       })]
     })]
@@ -82,7 +82,7 @@ function _(e) {
     hidden: t
   } = e, s = (0, l.e7)([d.Z, o.ZP], () => {
     var e;
-    return null === (e = d.Z.getGuild(o.ZP.getFlattenedGuildIds()[0])) || void 0 === e ? void 0 : e.name
+    return null == (e = d.Z.getGuild(o.ZP.getFlattenedGuildIds()[0])) ? void 0 : e.name
   }), [r, x] = i.useState(0);
   return i.useEffect(() => {
     if (t) return;
@@ -242,7 +242,7 @@ function _(e) {
           })]
         })]
       })
-    }), (0, n.jsx)(b, {
+    }), (0, n.jsx)(v, {
       text: u.NW.string(u.t["C//fOz"]),
       className: g.tipServers2,
       hidden: t || r < 4
@@ -250,7 +250,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     hidden: t
   } = e, [s, r] = i.useState(0);
@@ -362,11 +362,11 @@ function v(e) {
           })]
         })]
       })
-    }), (0, n.jsx)(b, {
+    }), (0, n.jsx)(v, {
       text: u.NW.string(u.t["5Il5fn"]),
       className: g.tipChannels1,
       hidden: t || s < 4
-    }), (0, n.jsx)(b, {
+    }), (0, n.jsx)(v, {
       text: u.NW.string(u.t["+ROcrq"]),
       className: g.tipChannels2,
       hidden: t || s < 4
@@ -374,7 +374,7 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     text: t,
     className: s,

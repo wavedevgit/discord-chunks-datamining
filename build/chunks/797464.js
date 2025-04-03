@@ -9,7 +9,7 @@ var n = a(200651),
   i = a(481060),
   r = a(313201),
   d = a(388032),
-  c = a(459050);
+  c = a(957684);
 
 function u(t) {
   let {
@@ -54,7 +54,7 @@ function u(t) {
         type: "submit",
         color: i.zxk.Colors.BRAND,
         onClick: () => {
-          !m && (h(!0), a(g, N), h(!1), s())
+          m || (h(!0), a(g, N), h(!1), s())
         },
         submitting: m,
         children: d.NW.string(d.t["cY+Ooa"])

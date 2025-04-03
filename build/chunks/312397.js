@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   O: () => J,
@@ -22,8 +22,8 @@ var r = n(200651),
   x = n(906732),
   j = n(34586),
   N = n(600164),
-  v = n(699553),
-  _ = n(65361),
+  _ = n(699553),
+  v = n(65361),
   C = n(536442),
   O = n(142497),
   y = n(345861),
@@ -48,7 +48,7 @@ var r = n(200651),
   z = n(981631),
   H = n(486324),
   V = n(388032),
-  Y = n(850915),
+  Y = n(945745),
   K = n(935653),
   q = n(449874);
 
@@ -84,10 +84,10 @@ let J = () => {
   } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), o = (0, d.e7)([Z.Z], () => Z.Z.getProfileError()), c = i.useMemo(() => {
     var e;
     let t = null == o ? void 0 : o.getAnyErrorMessage();
-    return null !== (e = (0, F.LG)(s)) && void 0 !== e ? e : t
+    return null != (e = (0, F.LG)(s)) ? e : t
   }, [s, o]), u = i.useCallback(async () => {
     if (null == e) return;
-    null != a && null != l && a.visibility !== l.visibility && await (0, v.xV)(e.id, a.visibility);
+    null != a && null != l && a.visibility !== l.visibility && await (0, _.xV)(e.id, a.visibility);
     let n = {
       name: e.name,
       icon: e.icon,
@@ -544,7 +544,7 @@ class $ extends i.PureComponent {
       (0, g.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("3296")]).then(n.bind(n, 73620));
+        } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("64989")]).then(n.bind(n, 73620));
         return n => (0, r.jsx)(i, Q({
           onCrop: e => {
             let {
@@ -557,15 +557,13 @@ class $ extends i.PureComponent {
         }, n))
       })
     }), X(this, "handleHomeHeaderChange", (e, t) => {
-      if (null == e || void 0 === t) {
-        R.Z.updateGuild({
-          homeHeader: null
-        });
-        return
-      }(0, g.ZDy)(async () => {
+      if (null == e || void 0 === t) return void R.Z.updateGuild({
+        homeHeader: null
+      });
+      (0, g.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("91689"), n.e("59732"), n.e("45354")]).then(n.bind(n, 532595));
+        } = await Promise.all([n.e("91689"), n.e("59732"), n.e("77942")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(i, Q({
           imageUri: e,
           file: t,
@@ -626,7 +624,7 @@ function ee() {
     isGuildAdmin: E.Z.can(z.Plq.ADMINISTRATOR, e)
   })), g = (0, j.E)(e), p = (0, d.e7)([S.default], () => S.default.getCurrentUser()), h = null == e ? void 0 : e.id, {
     fetchGuildProfile: N
-  } = (0, _.u)(null == e ? void 0 : e.id);
+  } = (0, v.u)(null == e ? void 0 : e.id);
   return (i.useEffect(() => {
     null != h && N()
   }, [h, N]), o()(null != p, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(x.Gt, {

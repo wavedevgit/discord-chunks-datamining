@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   a: () => u,
   v: () => m
@@ -7,14 +7,14 @@ var r = n(704215),
   i = n(605236),
   s = n(391110),
   a = n(75077),
-  o = n(595878),
-  l = n(314684),
+  l = n(595878),
+  o = n(314684),
   c = n(735825),
   d = n(388032);
 
 function u() {
-  let e = (0, l.Er)(),
-    t = (0, o.cG)({
+  let e = (0, o.Er)(),
+    t = (0, l.cG)({
       location: s.MQ.HOME
     });
   if (null != e && e.tenureRewardType === c.nW.AVATAR_DECO && t) return {
@@ -28,5 +28,5 @@ function u() {
 }
 
 function m(e) {
-  return (null == e ? void 0 : e.showNotification) === !0 && (0, l.rM)(e).some(e => !(0, i.un)(e))
+  return (null == e ? void 0 : e.showNotification) === !0 && (0, o.rM)(e).some(e => !(0, i.un)(e))
 }

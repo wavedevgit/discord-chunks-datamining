@@ -36,7 +36,7 @@ var i = n(200651),
   D = n(701488),
   k = n(987650),
   M = n(388032),
-  A = n(981705);
+  A = n(172519);
 
 function R(e) {
   let {
@@ -119,7 +119,7 @@ function L(e) {
         var i;
         x("sending");
         let e = await c.Z.getOrEnsurePrivateChannel(s.id),
-          r = null !== (i = N.Z.getChannel(e)) && void 0 !== i ? i : null;
+          r = null != (i = N.Z.getChannel(e)) ? i : null;
         o()(null != r, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(r.guild_id, r.id)), await (0, y.p)({
           channel: r,
           content: null != _ ? _ : M.NW.string(M.t.DwAcMz),
@@ -139,7 +139,7 @@ function L(e) {
     var e;
     if (null == s) return;
     let t = await c.Z.getOrEnsurePrivateChannel(s.id),
-      n = null !== (e = N.Z.getChannel(t)) && void 0 !== e ? e : null;
+      n = null != (e = N.Z.getChannel(t)) ? e : null;
     o()(null != n, "Send channel must be defined"), (0, E.uL)(T.Z5c.CHANNEL(n.guild_id, n.id))
   };
   return null == s ? null : (0, i.jsxs)("div", {
@@ -209,8 +209,8 @@ function z(e) {
           var n, i;
           if (e.preventDefault(), null == o.current) return;
           let t = o.current,
-            r = null !== (n = t.selectionStart) && void 0 !== n ? n : 0,
-            s = null !== (i = t.selectionEnd) && void 0 !== i ? i : 0,
+            r = null != (n = t.selectionStart) ? n : 0,
+            s = null != (i = t.selectionEnd) ? i : 0,
             l = t.value;
           t.value = l.substring(0, r) + " " + l.substring(s), t.setSelectionRange(r + 1, r + 1), p(l.length)
         }

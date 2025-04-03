@@ -5,14 +5,14 @@ n.d(t, {
 var i = n(200651),
   r = n(192379),
   l = n(481060),
-  o = n(239091),
-  a = n(973616),
+  a = n(239091),
+  o = n(973616),
   c = n(783097),
   s = n(176412),
-  d = n(570949),
-  u = n(753972),
+  u = n(570949),
+  d = n(753972),
   p = n(532309),
-  m = n(857524),
+  m = n(654715),
   f = n(413097);
 
 function h(e) {
@@ -21,12 +21,12 @@ function h(e) {
     command: n,
     application: h,
     onClick: b,
-    query: v,
-    searchResultsPosition: C
-  } = e, _ = r.useCallback(e => {
+    query: C,
+    searchResultsPosition: _
+  } = e, x = r.useCallback(e => {
     if ((0, c.BQ)(h)) {
-      let t = h instanceof a.ZP ? h : a.ZP.createFromServer(h);
-      (0, o.vq)(e, e => (0, i.jsx)(d.Z, function(e) {
+      let t = h instanceof o.ZP ? h : o.ZP.createFromServer(h);
+      (0, a.vq)(e, e => (0, i.jsx)(u.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -48,32 +48,32 @@ function h(e) {
       }, e)))
     }
   }, [h]), {
-    iconURL: x,
+    iconURL: v,
     name: y,
     description: N
   } = r.useMemo(() => (0, c.sl)(h, {
     fakeAppIconURL: f
   }), [h]), g = r.useMemo(() => {
     var e;
-    let t = null !== (e = null == n ? void 0 : n.displayDescription) && void 0 !== e ? e : N;
+    let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : N;
     return null == t ? null : (0, s.ae)(t, void 0)
   }, [N, null == n ? void 0 : n.displayDescription]), {
     trackSearchResultsItemImpressionRef: j
   } = (0, p.Z)({
     applicationId: h.id,
     commandId: null == n ? void 0 : n.id,
-    query: v,
-    searchResultsPosition: C
+    query: C,
+    searchResultsPosition: _
   });
   return (0, i.jsx)(l.P3F, {
     className: m.clickable,
     innerRef: e => j.current = e,
     onClick: b,
-    onContextMenu: _,
+    onContextMenu: x,
     children: (0, i.jsxs)(l.Rny, {
       className: m.focusBlock,
-      children: [(0, i.jsx)(u.Z, {
-        src: x,
+      children: [(0, i.jsx)(d.Z, {
+        src: v,
         className: m.icon,
         "aria-hidden": !0,
         rendersPlaceholder: !0
@@ -83,7 +83,7 @@ function h(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           lineClamp: 1,
-          children: null !== (t = null == n ? void 0 : n.displayName) && void 0 !== t ? t : y
+          children: null != (t = null == n ? void 0 : n.displayName) ? t : y
         }), (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",

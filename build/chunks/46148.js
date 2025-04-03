@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   s: () => O
 }), n(47120);
 var r = n(200651),
   i = n(704215),
-  o = n(481060),
-  l = n(605236),
+  l = n(481060),
+  o = n(605236),
   a = n(243778),
   s = n(612659),
   c = n(436952),
@@ -15,14 +15,14 @@ var r = n(200651),
   h = n(921944),
   f = n(474936),
   g = n(388032),
-  m = n(817064),
+  m = n(706442),
   b = n(777091);
-let v = (e, t) => {
+let y = (e, t) => {
     let n = null != t && !t.isPreview;
     return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
   },
-  y = e => "has-wallpaper-nitro" === e ? g.NW.string(g.t.T9dXPj) : g.NW.string(g.t.zyvzQ0),
-  _ = e => {
+  _ = e => "has-wallpaper-nitro" === e ? g.NW.string(g.t.T9dXPj) : g.NW.string(g.t.zyvzQ0),
+  v = e => {
     switch (e) {
       case "non-nitro":
         return g.NW.string(g.t.VU8fxM);
@@ -37,7 +37,7 @@ let v = (e, t) => {
       children: t,
       channelId: n,
       selectedChannelId: O
-    } = e, j = (0, l.wE)(i.z.CHAT_WALLPAPERS_PICKER_COACHMARK), x = O === n, {
+    } = e, j = (0, o.wE)(i.z.CHAT_WALLPAPERS_PICKER_COACHMARK), x = O === n, {
       canAccessPicker: C,
       entryPoint: S
     } = (0, u.m)({
@@ -48,10 +48,10 @@ let v = (e, t) => {
     let T = () => {
         N(h.L.USER_DISMISS)
       },
-      A = v(Z, null != w ? w : null),
-      D = y(A),
-      R = _(A);
-    return (0, r.jsx)(o.yRy, {
+      A = y(Z, null != w ? w : null),
+      D = _(A),
+      R = v(A);
+    return (0, r.jsx)(l.yRy, {
       shouldShow: E,
       onRequestClose: T,
       renderPopout: () => (0, r.jsx)(p.Z, {

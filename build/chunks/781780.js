@@ -6,7 +6,7 @@ var r = n(200651),
   o = n(963614),
   i = n(208156),
   l = n(701488),
-  a = n(856100);
+  a = n(839841);
 
 function c(e) {
   var t, n, c;
@@ -16,8 +16,8 @@ function c(e) {
     embeddedActivity: d,
     application: p
   } = e, f = {
-    instance_id: null !== (c = null !== (n = d.compositeInstanceId) && void 0 !== n ? n : d.launchId) && void 0 !== c ? c : "",
-    location_id: null === (t = d.location) || void 0 === t ? void 0 : t.id,
+    instance_id: null != (c = null != (n = d.compositeInstanceId) ? n : d.launchId) ? c : "",
+    location_id: null == (t = d.location) ? void 0 : t.id,
     launch_id: d.launchId,
     referrer_id: d.referrerId,
     custom_id: d.customId

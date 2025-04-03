@@ -22,13 +22,13 @@ var n = r(200651),
   N = r(189648),
   b = r(775194),
   E = r(499848),
-  j = r(724392),
-  C = r(442580),
-  Z = r(770800),
-  P = r(981631),
+  P = r(724392),
+  j = r(442580),
+  C = r(770800),
+  Z = r(981631),
   R = r(65154),
   x = r(388032),
-  F = r(773342);
+  F = r(442122);
 let S = (e, t, r) => (0, n.jsx)(m.Z, {
     align: m.Z.Align.CENTER,
     children: (0, n.jsx)(m.Z.Child, {
@@ -76,23 +76,23 @@ function k(e, t, r, n, a) {
         context: e
       })
     }), null != l && i.push({
-      section: (0, f.J$)(e, P._s_.TRANSPORT, r),
+      section: (0, f.J$)(e, Z._s_.TRANSPORT, r),
       label: x.NW.string(x.t.wU9INz),
-      element: Z.Z,
+      element: C.Z,
       elementProps: {
         context: e,
         index: r
       }
     }), null == d || s().isEmpty(d) || i.push({
-      section: (0, f.J$)(e, P._s_.OUTBOUND, r),
+      section: (0, f.J$)(e, Z._s_.OUTBOUND, r),
       label: x.NW.string(x.t["3u0gIC"]),
-      element: j.Z,
+      element: P.Z,
       elementProps: {
         context: e,
         index: r
       }
     }), null != m && i.push({
-      section: (0, f.J$)(e, P._s_.CAMERA, r),
+      section: (0, f.J$)(e, Z._s_.CAMERA, r),
       label: x.NW.string(x.t["2AGBWF"]),
       element: N.Z,
       elementProps: {
@@ -136,7 +136,7 @@ function B() {
   } = (0, l.e7)([f.ZP], () => ({
     defaultStats: f.ZP.getAllStats(R.Yn.DEFAULT),
     streamStats: f.ZP.getAllStats(R.Yn.STREAM)
-  }), [], l.pF), s = (0, l.e7)([g.Z, h.Z], () => h.Z.getChannel(g.Z.getChannelId())), m = null === (e = r.concat(i).find(e => null != e.screenshare)) || void 0 === e ? void 0 : e.screenshare, y = null === (t = i.find(e => null != e.clips)) || void 0 === t ? void 0 : t.clips, v = (0, l.e7)([p.Z], () => p.Z.theme), D = (0, l.e7)([p.Z], () => p.Z.darkSidebar ? P.BRd.DARK : void 0), N = (0, l.e7)([f.ZP], () => f.ZP.getSection()), E = function(e) {
+  }), [], l.pF), s = (0, l.e7)([g.ZP, h.Z], () => h.Z.getChannel(g.ZP.getChannelId())), m = null == (e = r.concat(i).find(e => null != e.screenshare)) ? void 0 : e.screenshare, y = null == (t = i.find(e => null != e.clips)) ? void 0 : t.clips, v = (0, l.e7)([p.Z], () => p.Z.theme), D = (0, l.e7)([p.Z], () => p.Z.darkSidebar ? Z.BRd.DARK : void 0), N = (0, l.e7)([f.ZP], () => f.ZP.getSection()), E = function(e) {
     let {
       defaultStats: t,
       streamStats: r,
@@ -149,14 +149,14 @@ function B() {
       section: u.ID.DIVIDER
     };
     return null != i && (p.push(y), p.push({
-      section: P._s_.SCREENSHARE,
+      section: Z._s_.SCREENSHARE,
       label: x.NW.string(x.t["gWbr/f"]),
-      element: C.Z,
+      element: j.Z,
       elementProps: {
         screenshare: i
       }
     })), null != s && (h.push(y), h.push({
-      section: P._s_.CLIPS,
+      section: Z._s_.CLIPS,
       label: x.NW.string(x.t.MKrFKC),
       element: b.Z,
       elementProps: {
@@ -176,7 +176,7 @@ function B() {
       element: () => (0, n.jsx)(o.X6q, {
         className: F.channelName,
         variant: "heading-md/normal",
-        children: c === P.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
+        children: c === Z.hes.RTC_CONNECTED ? "Connected" : "Disconnected"
       })
     }, ...d, ...m, ...p, ...h]
   }({
@@ -186,7 +186,7 @@ function B() {
     screenshare: m,
     clips: y,
     channel: s,
-    connectionState: (0, l.e7)([g.Z], () => g.Z.getState())
+    connectionState: (0, l.e7)([g.ZP], () => g.ZP.getState())
   });
   return a.useEffect(() => () => {
     c.xv()

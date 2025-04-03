@@ -20,15 +20,14 @@ function S() {
 }
 
 function s(t) {
-  let e;
-  let n = (0, E.e7)([r.Z], () => r.Z.getClassification(t)),
+  let e, n = (0, E.e7)([r.Z], () => r.Z.getClassification(t)),
     _ = (0, E.e7)([r.Z], () => r.Z.getClassificationRequestState(t)),
     S = (0, E.e7)([r.Z], () => r.Z.getIsDsaEligible()),
     s = (0, E.e7)([r.Z], () => r.Z.getIsAppealEligible()),
     T = (0, A.A)("classification_detail");
   if ((0, u.FB)(n)) {
     var c;
-    e = (null === (c = n.guild_metadata) || void 0 === c ? void 0 : c.member_type) === a.wO.OWNER ? o.qS.GUILD_OWNER : o.qS.GUILD_MEMBER
+    e = (null == (c = n.guild_metadata) ? void 0 : c.member_type) === a.wO.OWNER ? o.qS.GUILD_OWNER : o.qS.GUILD_MEMBER
   } else e = o.qS.USER;
   return i.useEffect(() => {
     void 0 === n && null == _ && l.NA(t)

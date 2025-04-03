@@ -24,7 +24,7 @@ let u = new d(o.Z, {
   SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
     if (s = e.enabled, e.enabled) {
       var t;
-      c = null !== (t = e.keepOpen) && void 0 !== t && t
+      c = null != (t = e.keepOpen) && t
     }
   }
 })

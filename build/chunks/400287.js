@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => x
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(100527),
-  l = n(906732),
+  l = n(100527),
+  o = n(906732),
   c = n(278754),
   d = n(454585),
   u = n(125900),
@@ -18,7 +18,7 @@ var i = n(120356),
   h = n(726985),
   f = n(981631),
   b = n(388032),
-  N = n(685786);
+  N = n(20493);
 
 function x() {
   let e = (0, c.pR)(),
@@ -33,13 +33,13 @@ function x() {
     j = p.vF.useSetting(),
     O = p.H1.useSetting(),
     C = p.ev.useSetting(),
-    v = p.x4.useSetting(),
-    S = p.RS.useSetting(),
+    S = p.x4.useSetting(),
+    v = p.RS.useSetting(),
     T = p.NA.useSetting(),
     I = p.nc.useSetting(),
     {
       analyticsLocations: y
-    } = (0, l.ZP)(o.Z.TEXT_AND_IMAGES);
+    } = (0, o.ZP)(l.Z.TEXT_AND_IMAGES);
   return (0, r.jsxs)(a.hjN, {
     tag: a.RB0.H1,
     title: b.NW.string(b.t["/VQax8"]),
@@ -52,7 +52,7 @@ function x() {
         setting: h.s6.CHAT_INLINE_MEDIA_LINKS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(N.marginTop8, N.marginBottom20),
-          value: S,
+          value: v,
           onChange: p.RS.updateSetting,
           children: b.NW.string(b.t.U47N1t)
         })
@@ -60,7 +60,7 @@ function x() {
         setting: h.s6.CHAT_INLINE_MEDIA_UPLOADS,
         children: (0, r.jsx)(a.j7V, {
           className: s()(N.marginTop8, N.marginBottom20),
-          value: v,
+          value: S,
           note: b.NW.formatToPlainString(b.t.qjjvqK, {
             maxSize: 10
           }),

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => U
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(402113),
   _ = n(592125),
   C = n(271383),
-  v = n(944486),
-  y = n(594174),
-  x = n(585483),
+  y = n(944486),
+  x = n(594174),
+  v = n(585483),
   j = n(51144),
   O = n(566620),
   E = n(317381),
@@ -36,7 +36,7 @@ var r = n(200651),
   R = n(918559),
   M = n(981631),
   k = n(388032),
-  L = n(635707);
+  L = n(199570);
 let D = T.u.SIZE_32,
   W = {
     [R.MI.NO_CHAT]: L.noChat,
@@ -53,7 +53,7 @@ function U(e) {
     location: "ActivityPanelFocusedView"
   }), F = (0, S.Z)(), G = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), Y = (0, N.gb)(G), q = (0, N.uF)(Y), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
-  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null !== (t = f.ZP.activityPanelHeight) && void 0 !== t ? t : l), et = i.useCallback(e => {
+  }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null != (t = f.ZP.activityPanelHeight) ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
@@ -66,8 +66,8 @@ function U(e) {
     let e = new ResizeObserver(() => {
       var e, t, n, r;
       ei({
-        width: null !== (n = null === (e = en.current) || void 0 === e ? void 0 : e.clientWidth) && void 0 !== n ? n : 0,
-        height: null !== (r = null === (t = en.current) || void 0 === t ? void 0 : t.clientHeight) && void 0 !== r ? r : 0
+        width: null != (n = null == (e = en.current) ? void 0 : e.clientWidth) ? n : 0,
+        height: null != (r = null == (t = en.current) ? void 0 : t.clientHeight) ? r : 0
       })
     });
     return e.observe(en.current), () => e.disconnect()
@@ -81,11 +81,11 @@ function U(e) {
       t = er.height;
     el ? ((t = er.width / R.I0) > er.height && (e = (t = er.height) * R.I0), ea = (er.height - t) / 2) : ((e = Math.min(er.height * R.I0)) > er.width && (t = (e = er.width) / R.I0), eo = (er.width - e) / 2)
   }
-  let ec = q.get(null !== (n = null == F ? void 0 : F.id) && void 0 !== n ? n : ""),
-    eu = (0, a.e7)([v.Z], () => v.Z.getChannelId()),
+  let ec = q.get(null != (n = null == F ? void 0 : F.id) ? n : ""),
+    eu = (0, a.e7)([y.Z], () => y.Z.getChannelId()),
     ed = (0, a.Wu)([C.ZP], () => {
       var e;
-      return null == z ? [] : Array.from(null !== (e = null == ec ? void 0 : ec.embeddedActivity.userIds) && void 0 !== e ? e : []).map(e => C.ZP.getMember(z.guild_id, e))
+      return null == z ? [] : Array.from(null != (e = null == ec ? void 0 : ec.embeddedActivity.userIds) ? e : []).map(e => C.ZP.getMember(z.guild_id, e))
     }, [ec, z]),
     ep = i.useMemo(() => {
       let e = new Map;
@@ -145,12 +145,12 @@ function U(e) {
     }(J, $, l);
   if (null == F) return null;
   let ef = [];
-  null != ec && (ef = Array.from(ec.embeddedActivity.userIds).map(e => y.default.getUser(e)).filter(e => null != e && void 0 !== e));
+  null != ec && (ef = Array.from(ec.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && void 0 !== e));
   let em = (e, t) => {
     var n;
     if (null == e || void 0 === e || void 0 === t) return null;
     let i = ep.get(e.id),
-      l = null !== (n = null == i ? void 0 : i.nick) && void 0 !== n ? n : j.ZP.getName(e);
+      l = null != (n = null == i ? void 0 : i.nick) ? n : j.ZP.getName(e);
     return (0, r.jsx)(c.DY3, {
       text: l,
       position: "bottom",
@@ -241,12 +241,12 @@ function U(e) {
         maxHeight: l,
         resizableNode: X,
         onResize: e => {
-          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
+          v.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !0
           }), ee(e)
         },
         onResizeEnd: e => {
-          x.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
+          v.S.dispatch(M.CkL.MANUAL_IFRAME_RESIZING, {
             resizing: !1
           }), et(e)
         }

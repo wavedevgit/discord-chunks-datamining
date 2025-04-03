@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => u
 });
-var r, i, l, o = n(442837),
-  a = n(570140);
+var r, i, l, a = n(442837),
+  o = n(570140);
 let s = {};
-class c extends(l = o.ZP.Store) {
+class c extends(l = a.ZP.Store) {
   getSkuIdForChannel(e) {
     return s[e]
   }
@@ -16,7 +16,7 @@ i = "ChannelSKUStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
   configurable: !0,
   writable: !0
 }) : c[r] = i;
-let u = new c(a.Z, {
+let u = new c(o.Z, {
   CONNECTION_OPEN: function() {
     s = {}
   },

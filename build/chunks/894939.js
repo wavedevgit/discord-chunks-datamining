@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(596454),
   d = n(906732),
   u = n(856768),
@@ -24,20 +24,20 @@ var r = n(200651),
   j = n(918257),
   O = n(970813),
   C = n(726985),
-  v = n(981631),
-  S = n(710111),
+  S = n(981631),
+  v = n(710111),
   T = n(388032),
-  I = n(647222),
-  y = n(685786);
+  I = n(576813),
+  y = n(20493);
 
 function A(e) {
-  return (0, o.e7)([h.Z], () => {
+  return (0, l.e7)([h.Z], () => {
     if (null == e) return null;
     let {
       guildId: t,
       soundId: n
     } = e;
-    return h.Z.getSound(t === S.hY ? S.X8 : t, n)
+    return h.Z.getSound(t === v.hY ? v.X8 : t, n)
   })
 }
 
@@ -54,16 +54,16 @@ function P(e) {
       })]
     }), (0, r.jsxs)(g.F, {
       setting: C.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
-      children: [t ? null : (0, r.jsx)(l.$i$, {
+      children: [t ? null : (0, r.jsx)(o.$i$, {
         className: I.callSoundsDivider
       }), (0, r.jsx)(R, {
         refreshStyles: t
       })]
     })]
   });
-  return t ? n : (0, r.jsx)(l.hjN, {
+  return t ? n : (0, r.jsx)(o.hjN, {
     className: I.container,
-    tag: l.RB0.H1,
+    tag: o.RB0.H1,
     titleClassName: y.__invalid_marginBottom16,
     title: T.NW.string(T.t.ABjMWF),
     children: n
@@ -75,7 +75,7 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(S.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, o.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
   i.useEffect(() => {
     O && (0, f.tt)({
       location: n
@@ -92,11 +92,11 @@ function R(e) {
       }) : null
     }, []),
     P = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(l.xJW, {
+      children: [(0, r.jsx)(o.xJW, {
         title: T.NW.string(T.t.nzUc3N),
-        children: (0, r.jsx)(l.R94, {
+        children: (0, r.jsx)(o.R94, {
           children: T.NW.format(T.t.u9RWmp, {
-            helpdeskArticle: x.Z.getArticleURL(v.BhN.SOUNDBOARD)
+            helpdeskArticle: x.Z.getArticleURL(S.BhN.SOUNDBOARD)
           })
         })
       }), (0, r.jsx)(u.Z, {
@@ -106,10 +106,10 @@ function R(e) {
         }),
         globalOption: {
           label: T.NW.string(T.t.CpEUPz),
-          value: S.hY
+          value: v.hY
         },
         onChange: e => {
-          c(null == e ? S.hY : e.id)
+          c(null == e ? v.hY : e.id)
         },
         renderOptionSuffix: C,
         hideDivider: !0
@@ -118,7 +118,7 @@ function R(e) {
           [y.marginTop20]: !t
         }),
         title: T.NW.format(T.t.I2TsYG, {
-          nitroWheelHook: () => (0, r.jsx)(l.SrA, {
+          nitroWheelHook: () => (0, r.jsx)(o.SrA, {
             size: "md",
             color: "currentColor",
             className: I.nitroWheel
@@ -131,9 +131,9 @@ function R(e) {
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
-        }), O && (0, r.jsx)(l.Wn, {
+        }), O && (0, r.jsx)(o.Wn, {
           className: I.notice,
-          messageType: l.QYI.WARNING,
+          messageType: o.QYI.WARNING,
           children: T.NW.string(T.t.WkPsFR)
         })]
       })]
@@ -146,9 +146,9 @@ function R(e) {
 function D(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([_.Z], () => {
+  } = e, n = (0, l.e7)([_.Z], () => {
     var e, n, r;
-    return null === (r = _.Z.settings.guilds) || void 0 === r ? void 0 : null === (n = r.guilds) || void 0 === n ? void 0 : null === (e = n[t]) || void 0 === e ? void 0 : e.joinSound
+    return null == (r = _.Z.settings.guilds) || null == (n = r.guilds) || null == (e = n[t]) ? void 0 : e.joinSound
   }), i = A(n);
   if (null == n || null == i) return null;
   let {
@@ -161,11 +161,11 @@ function D(e) {
       emojiId: s,
       emojiName: a,
       className: I.pillIcon
-    }) : (0, r.jsx)(l.gj8, {
+    }) : (0, r.jsx)(o.gj8, {
       size: "md",
       color: "currentColor",
       className: I.pillIcon
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(o.Text, {
       className: I.pillText,
       variant: "text-xs/medium",
       children: i.name

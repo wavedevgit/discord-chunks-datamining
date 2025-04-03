@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Lz: () => d,
   MQ: () => s,
@@ -22,13 +22,13 @@ function s(e) {
     createdAt: e.created_at,
     description: e.description,
     primaryCategoryId: e.primary_category_id,
-    name: null === (t = e.guild) || void 0 === t ? void 0 : t.name,
-    icon: null === (n = e.guild) || void 0 === n ? void 0 : n.icon,
-    splash: null === (r = e.guild) || void 0 === r ? void 0 : r.splash,
-    features: new Set(null === (l = e.guild) || void 0 === l ? void 0 : l.features),
-    approximateMemberCount: null === (o = e.guild) || void 0 === o ? void 0 : o.approximate_member_count,
-    approximatePresenceCount: null === (s = e.guild) || void 0 === s ? void 0 : s.approximate_presence_count,
-    featurableInDirectory: null === (c = e.guild) || void 0 === c ? void 0 : c.featurable_in_directory
+    name: null == (t = e.guild) ? void 0 : t.name,
+    icon: null == (n = e.guild) ? void 0 : n.icon,
+    splash: null == (r = e.guild) ? void 0 : r.splash,
+    features: new Set(null == (l = e.guild) ? void 0 : l.features),
+    approximateMemberCount: null == (o = e.guild) ? void 0 : o.approximate_member_count,
+    approximatePresenceCount: null == (s = e.guild) ? void 0 : s.approximate_presence_count,
+    featurableInDirectory: null == (c = e.guild) ? void 0 : c.featurable_in_directory
   }
 }
 let c = 5;

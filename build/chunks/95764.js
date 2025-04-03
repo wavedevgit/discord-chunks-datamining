@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => g
 });
@@ -23,19 +23,16 @@ function g(e) {
     onClick: n
   } = e, g = (0, o.bp)(), b = (0, f.qY)(t), _ = (0, i.e7)([u.Z], () => u.Z.getChannel(t), [t]), {
     canManageGuildEvent: C
-  } = (0, a.XJ)(_), v = C(b);
+  } = (0, a.XJ)(_), y = C(b);
   if (null == b) return null;
-  let y = () => {
-      if (null != _ && (0, h.Z)(_)) {
-        (0, d.lC)(_, g);
-        return
-      }
+  let x = () => {
+      if (null != _ && (0, h.Z)(_)) return void(0, d.lC)(_, g);
       n()
     },
-    x = () => {
+    v = () => {
       p.Z.endEvent(b.id, b.guild_id)
     };
-  return v ? (0, r.jsx)(l.yRy, {
+  return y ? (0, r.jsx)(l.yRy, {
     renderPopout: e => {
       let {
         closePopout: t
@@ -49,7 +46,7 @@ function g(e) {
           children: (0, r.jsx)(l.sNh, {
             id: "end-voice-event",
             color: "danger",
-            action: x,
+            action: v,
             label: m.NW.string(m.t.qaYzPD),
             icon: l.k$p
           })
@@ -65,7 +62,7 @@ function g(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         label: m.NW.string(m.t["6vrfgo"]),
-        onClick: y,
+        onClick: x,
         onPopoutClick: t
       })
     }

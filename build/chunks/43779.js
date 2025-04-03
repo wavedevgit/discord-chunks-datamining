@@ -23,7 +23,7 @@ var r = n(200651),
   y = n(46140),
   _ = n(642145),
   C = n(388032),
-  O = n(98942);
+  O = n(882067);
 let w = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
 function S(e) {
@@ -37,7 +37,7 @@ function S(e) {
     onReceiveErrorHints: R
   } = e, k = (0, f.j)({
     location: y.dr.QUESTS_BAR_MOBILE
-  }), q = o.useMemo(() => g.r.build(N.config), [N.config]), D = q.defaultReward.messages.name, I = q.defaultReward.messages.nameWithArticle, W = k ? D : I, M = (null === (t = N.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
+  }), q = o.useMemo(() => g.r.build(N.config), [N.config]), D = q.defaultReward.messages.name, I = q.defaultReward.messages.nameWithArticle, W = k ? D : I, M = (null == (t = N.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: L,
     scrollHeight: Z
   } = (0, d.Z)(), V = 104 !== Z, {
@@ -73,7 +73,7 @@ function S(e) {
     })(Object(P)).forEach(function(e) {
       Object.defineProperty(S, e, Object.getOwnPropertyDescriptor(P, e))
     }), S)
-  }), U = (null === (n = N.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, H = (null === (s = N.userStatus) || void 0 === s ? void 0 : s.claimedAt) != null, {
+  }), U = (null == (n = N.userStatus) ? void 0 : n.completedAt) != null, H = (null == (s = N.userStatus) ? void 0 : s.claimedAt) != null, {
     completedRatio: z,
     completedRatioDisplay: F
   } = (0, p.I)(N), X = (0, p.Bd)(N), K = o.useCallback(e => (0, r.jsx)(c.Text, {

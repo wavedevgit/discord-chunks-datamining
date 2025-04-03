@@ -1,5 +1,5 @@
 /** Chunk was on 35535 **/
-var i = function() {
+t.exports = function() {
   "use strict";
 
   function t() {
@@ -53,5 +53,4 @@ var i = function() {
       return s
     }
   }, t
-}();
-t.exports = i
+}()

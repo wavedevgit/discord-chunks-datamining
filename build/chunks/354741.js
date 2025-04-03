@@ -1,4 +1,4 @@
-/** Chunk was on 5143 **/
+/** Chunk was on 19549 **/
 n.d(t, {
   default: () => I
 });
@@ -85,7 +85,7 @@ let I = (0, c.Z)((0, l.Z)(function(e) {
               let {
                 imageUri: a
               } = n;
-              i.Z.setIcon(t.id, a), null === (r = e.onClose) || void 0 === r || r.call(e)
+              i.Z.setIcon(t.id, a), null == (r = e.onClose) || r.call(e)
             },
             multiple: !1,
             "aria-label": N.NW.string(N.t["6yrpFR"])

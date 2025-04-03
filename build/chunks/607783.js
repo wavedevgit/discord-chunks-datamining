@@ -9,8 +9,8 @@ var i = n(200651),
   o = n(40851),
   s = n(352954),
   u = n(630759),
-  d = n(441894),
-  c = n(314897),
+  c = n(441894),
+  d = n(314897),
   g = n(388032);
 
 function f(e) {
@@ -19,9 +19,9 @@ function f(e) {
     channelId: n,
     guildId: f,
     simplified: b = !1
-  } = e, Z = (0, d.J)({
+  } = e, Z = (0, c.J)({
     channelId: n
-  }), N = (0, r.e7)([c.default], () => c.default.getId() === t), m = (0, o.bp)(), v = l.useCallback(() => {
+  }), N = (0, r.e7)([d.default], () => d.default.getId() === t), m = (0, o.bp)(), v = l.useCallback(() => {
     s.Z.openSecureFramesUserVerificationModal(t, n, () => (0, u.fz)({
       userId: t,
       channelId: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -21,12 +21,12 @@ var r = n(200651),
   x = n(316350),
   j = n(899667),
   N = n(626135),
-  v = n(267642),
-  _ = n(63063),
+  _ = n(267642),
+  v = n(63063),
   C = n(999382),
   O = n(981631),
   y = n(388032),
-  I = n(230829);
+  I = n(351325);
 
 function E(e) {
   let {
@@ -52,9 +52,9 @@ function S(e) {
   let {
     appliedGuildBoosts: t,
     guildId: n
-  } = e, i = (0, v.gZ)(t, n), s = (0, v.nW)((0, v.Jh)(n));
+  } = e, i = (0, _.gZ)(t, n), s = (0, _.nW)((0, _.Jh)(n));
   if (null == i || null == s) return null;
-  let l = (0, v._k)(t, n);
+  let l = (0, _._k)(t, n);
   return (0, r.jsxs)(a.Wn, {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
@@ -108,7 +108,7 @@ function P() {
         type: a.R94.Types.DESCRIPTION,
         className: I.titleBlurb,
         children: y.NW.format(y.t.hLOkp6, {
-          helpdeskArticle: _.Z.getArticleURL(O.BhN.GUILD_SUBSCRIPTIONS)
+          helpdeskArticle: v.Z.getArticleURL(O.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]
     }), null != e && (0, r.jsx)(f.Z, {
@@ -117,7 +117,7 @@ function P() {
         null != e && ((0, c.xf)(), (0, h.Z)(e.id))
       }
     }), (0, r.jsx)(b.Z, {
-      tiers: (0, v.cP)(null != e && e.hasFeature(O.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= O.B9o),
+      tiers: (0, _.cP)(null != e && e.hasFeature(O.oNc.COMMUNITY) && e.maxStageVideoChannelUsers >= O.B9o),
       renderTier: T
     }), (0, r.jsx)("div", {
       className: I.divider

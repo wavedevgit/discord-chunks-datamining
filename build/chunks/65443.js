@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(566078),
   m = n(46140),
   p = n(388032),
-  x = n(178240);
+  x = n(954353);
 
 function g(e) {
   let {
@@ -25,15 +25,15 @@ function g(e) {
     quest: f
   } = e, j = (0, c.j)({
     location: m.dr.QUESTS_BAR_MOBILE
-  }), b = s.useMemo(() => d.r.build(f.config), [f.config]), C = b.defaultReward.messages.name, v = b.defaultReward.messages.nameWithArticle, N = (0, l.Kr)(f.config), y = (0, u.mK)(f.config);
+  }), b = s.useMemo(() => d.r.build(f.config), [f.config]), C = b.defaultReward.messages.name, N = b.defaultReward.messages.nameWithArticle, v = (0, l.Kr)(f.config), y = (0, u.mK)(f.config);
   return (0, r.jsxs)("div", {
     children: [g && (0, r.jsx)(a.Text, {
       color: n,
       variant: "text-sm/normal",
       children: p.NW.formatToPlainString(p.t["W8/b3d"], {
-        rewardName: j ? C : v
+        rewardName: j ? C : N
       })
-    }), null != N && (0, r.jsxs)("ul", {
+    }), null != v && (0, r.jsxs)("ul", {
       className: i()(x.rewardsDisclosures, {
         [x.rewardsDisclosuresHorizontal]: "horizontal" === t,
         [x.rewardsDisclosuresStack]: "stack" === t
@@ -46,7 +46,7 @@ function g(e) {
         tag: "li",
         variant: "text-xs/medium",
         children: p.NW.formatToPlainString(p.t.coKAb2, {
-          rewardsDuration: N
+          rewardsDuration: v
         })
       }), null != y && (0, r.jsx)(a.Text, {
         className: i()({

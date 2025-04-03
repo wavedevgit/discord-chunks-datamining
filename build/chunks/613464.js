@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(184301),
   _ = n(502762),
   C = n(271383),
-  v = n(594174),
-  y = n(189357),
-  x = n(718617),
+  y = n(594174),
+  x = n(189357),
+  v = n(718617),
   j = n(327250),
-  O = n(668107);
+  O = n(50767);
 
 function E(e) {
   let {
@@ -33,7 +33,7 @@ function E(e) {
     className: E,
     infoPanelClassName: N,
     style: I
-  } = e, P = (0, y.m)(n), S = (0, a.e7)([v.default], () => v.default.getUser(t), [t]), Z = (0, a.e7)([C.ZP], () => C.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == S || null == Z), w = (0, u.Z)(Z), R = i.useRef(null), {
+  } = e, P = (0, x.m)(n), S = (0, a.e7)([y.default], () => y.default.getUser(t), [t]), Z = (0, a.e7)([C.ZP], () => C.ZP.getMember(n, t), [n, t]), [T, A] = i.useState(null == S || null == Z), w = (0, u.Z)(Z), R = i.useRef(null), {
     analyticsLocations: M
   } = (0, f.ZP)(h.Z.GUILD_MEMBER_MOD_VIEW), k = (0, g.ZP)(t, n), L = (0, d.ZP)();
   return (i.useEffect(() => {
@@ -50,13 +50,13 @@ function E(e) {
   }, [T, Z, l]), (0, p.$)({
     [n]: [t]
   }), i.useEffect(() => {
-    (async function() {
+    !async function() {
       let e = [c.Z.requestMembersById(n, [t]), (0, m.nb)(n, [t]), (0, b.Z)(t, void 0, {
         guildId: n,
         dispatchWait: !0
       })];
       await Promise.all(e), A(!1)
-    })()
+    }()
   }, [n, t]), P) ? T || null == S || null == Z ? (0, r.jsx)("div", {
     className: o()(O.sidebarContainer, O.loadingContainer, E),
     style: I,
@@ -82,7 +82,7 @@ function E(e) {
             userId: t,
             guildId: n,
             onClose: l
-          }), (0, r.jsx)(x.Z, {
+          }), (0, r.jsx)(v.Z, {
             userId: t,
             guildId: n,
             onClose: l,

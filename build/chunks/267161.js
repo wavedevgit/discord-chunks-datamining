@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(512969),
-  o = n(230383),
-  a = n(442837),
+  a = n(230383),
+  o = n(442837),
   s = n(481060),
   c = n(230711),
   u = n(174556),
@@ -22,9 +22,9 @@ var r = n(200651),
   E = n(522474),
   O = n(141321),
   N = n(210887),
-  v = n(592125),
-  y = n(430824),
-  I = n(944486),
+  y = n(592125),
+  I = n(430824),
+  v = n(944486),
   C = n(914010),
   S = n(451478),
   T = n(998502),
@@ -33,8 +33,8 @@ var r = n(200651),
   A = n(981631),
   Z = n(741764),
   x = n(388032),
-  L = n(378392),
-  w = n(337310);
+  L = n(332495),
+  w = n(103609);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,17 +67,16 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let k = (0, o.U)(() => ({
+let k = (0, a.U)(() => ({
   isOpen: !0
 }));
 
 function M() {
-  let e;
-  let t = (0, l.TH)(),
-    n = (0, a.e7)([I.Z], () => I.Z.getChannelId()),
-    i = (0, a.e7)([C.Z], () => C.Z.getGuildId()),
-    o = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]),
-    c = y.Z.getGuild(i),
+  let e, t = (0, l.TH)(),
+    n = (0, o.e7)([v.Z], () => v.Z.getChannelId()),
+    i = (0, o.e7)([C.Z], () => C.Z.getGuildId()),
+    a = (0, o.e7)([y.Z], () => y.Z.getChannel(n), [n]),
+    c = I.Z.getGuild(i),
     u = (0, h.Z)(),
     d = null;
   return null != c ? (d = u ? (0, r.jsx)(s.r7p, {
@@ -87,7 +86,7 @@ function M() {
     size: g.Z.Sizes.MINI,
     active: !0,
     className: w.guildIcon
-  }), e = c.name) : null != o && (o.isDM() || o.isGroupDM()) ? (e = x.NW.string(x.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
+  }), e = c.name) : null != a && (a.isDM() || a.isGroupDM()) ? (e = x.NW.string(x.t.YUU0RE), d = (0, r.jsx)(s.gw7, {
     size: "xs"
   })) : t.pathname.startsWith(A.Z5c.GLOBAL_DISCOVERY) ? (e = x.NW.string(x.t["4nEZLi"]), d = (0, r.jsx)(s.Jmo, {
     size: "xs"
@@ -124,8 +123,8 @@ let U = i.memo(function() {
   i.useLayoutEffect(() => {
     T.ZP.setMinimumSize(Z.J, Z.N)
   }, []);
-  let l = (0, a.e7)([N.Z], () => N.Z.darkSidebar ? A.BRd.DARK : void 0);
-  return (0, a.e7)([S.Z, E.Z], () => (0, P.rB)()) ? null : (0, r.jsx)(s.Wdt, {
+  let l = (0, o.e7)([N.Z], () => N.Z.darkSidebar ? A.BRd.DARK : void 0);
+  return (0, o.e7)([S.Z, E.Z], () => (0, P.rB)()) ? null : (0, r.jsx)(s.Wdt, {
     children: e => (0, r.jsx)(s.f6W, {
       theme: l,
       children: i => (0, r.jsx)(j.T, {

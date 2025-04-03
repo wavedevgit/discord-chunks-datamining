@@ -1,4 +1,4 @@
-/** Chunk was on 49522 **/
+/** Chunk was on 32 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -9,8 +9,8 @@ var l = n(200651),
   a = n(481060),
   s = n(981631),
   c = n(388032),
-  u = n(657268),
-  d = n(685786);
+  u = n(937848),
+  d = n(20493);
 let E = 0,
   f = () => "notification-position-selector-".concat(E++),
   p = e => {
@@ -27,9 +27,9 @@ let E = 0,
         return c.NW.string(c.t.AlY4ZW)
     }
   },
-  h = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
+  C = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
-function C(e) {
+function h(e) {
   let {
     position: t,
     onChange: n
@@ -44,7 +44,7 @@ function C(e) {
         className: o()(u.wrapper, {
           [u.disabledSelected]: t === s._vf.DISABLED
         }),
-        children: h.map(e => (0, l.jsxs)("label", {
+        children: C.map(e => (0, l.jsxs)("label", {
           className: o()({
             [u.selected]: e === t,
             [u.disabled]: e === s._vf.DISABLED,
@@ -73,5 +73,5 @@ function C(e) {
     })]
   })
 }
-C.Positions = s._vf;
-let _ = C
+h.Positions = s._vf;
+let _ = h

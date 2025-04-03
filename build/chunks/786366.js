@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => f
 }), t(266796), t(789020);
@@ -10,7 +10,7 @@ var o = t(597312),
   s = t(860719),
   c = t(621853),
   a = t(388032),
-  d = t(799520);
+  d = t(989421);
 
 function u(e) {
   let {
@@ -46,7 +46,7 @@ function f(e) {
     user: n
   } = e, t = (0, i.e7)([c.Z], () => {
     var e;
-    return null === (e = c.Z.getUserProfile(n.id)) || void 0 === e ? void 0 : e.application
+    return null == (e = c.Z.getUserProfile(n.id)) ? void 0 : e.application
   }), {
     hasMessageContent: f,
     hasGuildPresences: p,

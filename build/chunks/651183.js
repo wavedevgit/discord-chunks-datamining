@@ -23,7 +23,7 @@ function c(e) {
     var t;
     let n = null == e ? void 0 : e.avError;
     if (null == n) return null;
-    let r = null === (t = (0, l.hp)(n)) || void 0 === t ? void 0 : t.errorCode,
+    let r = null == (t = (0, l.hp)(n)) ? void 0 : t.errorCode,
       i = u.NW.formatToPlainString(u.t["ejOT9/"], {
         errorCode: r
       });

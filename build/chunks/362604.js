@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(47120), n(86693), n(536091);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(481060),
   c = n(834129),
   u = n(623292),
@@ -17,33 +17,33 @@ var r = n(200651),
   h = n(115610),
   g = n(981631),
   _ = n(388032),
-  b = n(216458);
+  b = n(711643);
 
-function v(e) {
+function x(e) {
   let {
     message: t,
     channel: a,
-    compact: v
-  } = e, x = (0, l.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [y, E] = i.useState(null);
+    compact: x
+  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [E, v] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      x.length > 0 && E(x[Math.floor(Math.random() * x.length)])
+      y.length > 0 && v(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
-  }, [x]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
+  }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: o()(b.mainContainer, {
-        [b.compact]: v
+      className: l()(b.mainContainer, {
+        [b.compact]: x
       }),
       icon: n(570111),
-      compact: v,
+      compact: x,
       children: (0, r.jsx)("div", {
-        className: o()(b.__invalid_content, {
-          [b.compact]: v
+        className: l()(b.__invalid_content, {
+          [b.compact]: x
         }),
         children: (0, r.jsx)("div", {
-          className: o()(b.__invalid_messageContent, {
-            [b.compact]: v
+          className: l()(b.__invalid_messageContent, {
+            [b.compact]: x
           }),
           children: "" !== t.content ? t.content : _.NW.string(_.t.wnn1DQ)
         })
@@ -83,9 +83,9 @@ function v(e) {
               action_type: "sticker"
             }), (0, h.O)(t.id, a)
           },
-          children: null != y ? (0, r.jsx)(p.Z, {
+          children: null != E ? (0, r.jsx)(p.Z, {
             size: 32,
-            sticker: y
+            sticker: E
           }) : (0, r.jsx)(s.EO4, {
             size: "md",
             color: "currentColor"

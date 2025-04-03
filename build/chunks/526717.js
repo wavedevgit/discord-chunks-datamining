@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -20,32 +20,32 @@ function l(e, t, n) {
         let t = new Set;
         return null == e || e.forEach(e => {
           var n;
-          null === (n = e.subscription_listings) || void 0 === n || n.forEach(e => {
+          null == (n = e.subscription_listings) || n.forEach(e => {
             t.add(e.role_id)
           })
         }), t
-      }(null == m ? void 0 : null === (e = m.role_subscription) || void 0 === e ? void 0 : e.group_listings),
-      r = null == m ? void 0 : null === (t = m.role_subscription) || void 0 === t ? void 0 : t.benefit_emojis;
+      }(null == m || null == (e = m.role_subscription) ? void 0 : e.group_listings),
+      r = null == m || null == (t = m.role_subscription) ? void 0 : t.benefit_emojis;
     return null == r ? void 0 : r.filter(e => e.roles.some(e => n.has(e)))
   }, [null == m ? void 0 : m.role_subscription]), p = null == m ? void 0 : m.guild.icon_hash, h = i.ZP.getGuildIconURL({
     id: e,
     icon: p,
     size: n
-  }), f = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? void 0 : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : void 0, N = null == m ? void 0 : null === (l = m.guild) || void 0 === l ? void 0 : l.name, v = null == m ? void 0 : null === (o = m.role_subscription) || void 0 === o ? void 0 : o.subscriber_count, _ = !c && null != N && null != p && null != h;
-  return _ ? {
-    hasAllImperativeDetails: _,
+  }), f = r.useMemo(() => null != g && g.length > t ? g.slice(0, t) : g, [g, t]), b = null != g && g.length > t ? g.length - t : null, x = null == u ? void 0 : u.slug, j = null != x ? a.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(x) : void 0, N = null == m || null == (l = m.guild) ? void 0 : l.name, _ = null == m || null == (o = m.role_subscription) ? void 0 : o.subscriber_count, v = !c && null != N && null != p && null != h;
+  return v ? {
+    hasAllImperativeDetails: v,
     isLoading: c,
     details: {
       guildName: N,
       guildIcon: p,
       guildAvatarUrl: h,
       storePageUrl: j,
-      subscriberCount: v,
+      subscriberCount: _,
       emojisToShow: f,
       notShownEmojiCount: b
     }
   } : {
-    hasAllImperativeDetails: _,
+    hasAllImperativeDetails: v,
     isLoading: c,
     error: d
   }

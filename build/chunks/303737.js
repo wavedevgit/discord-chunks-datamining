@@ -57,7 +57,7 @@ function I(e) {
     r = new Set;
   null != t && t.forEach(e => {
     var t;
-    let i = null === (t = n[e]) || void 0 === t ? void 0 : t.channelBenefits;
+    let i = null == (t = n[e]) ? void 0 : t.channelBenefits;
     null == i || i.forEach(e => {
       null != f.Z.getChannel(e.ref_id) && r.add(e.ref_id)
     })
@@ -86,7 +86,7 @@ function b(e) {
 
 function T(e) {
   var t;
-  (null !== (t = O[e]) && void 0 !== t ? t : I(e)).forEach(e => {
+  (null != (t = O[e]) ? t : I(e)).forEach(e => {
     o.Z.dispatch({
       type: "CHANNEL_DELETE",
       channel: e
@@ -107,7 +107,7 @@ async function h(e, t) {
         i = d.n.getState().listings;
       null != r && r.forEach(e => {
         var n;
-        let r = null === (n = i[e]) || void 0 === n ? void 0 : n.channelBenefits;
+        let r = null == (n = i[e]) ? void 0 : n.channelBenefits;
         null == r || r.forEach(e => {
           e.ref_id === l && (e.ref_id = t.id)
         })
@@ -132,7 +132,7 @@ function N(e, t) {
     hasChangeFromTemplate: null
   };
   let a = o.listings[0];
-  if ((null == i ? void 0 : i.name) !== a.name || (null == i ? void 0 : i.description) !== a.description || (null == i ? void 0 : i.priceTier) !== a.price_tier || (null == i ? void 0 : i.image) !== a.image || (null == i ? void 0 : i.roleColor) !== a.role_color || (null == i ? void 0 : null === (n = i.channelBenefits) || void 0 === n ? void 0 : n.length) !== a.channels.length || (null == i ? void 0 : null === (r = i.intangibleBenefits) || void 0 === r ? void 0 : r.length) !== a.additional_perks.length) return {
+  if ((null == i ? void 0 : i.name) !== a.name || (null == i ? void 0 : i.description) !== a.description || (null == i ? void 0 : i.priceTier) !== a.price_tier || (null == i ? void 0 : i.image) !== a.image || (null == i ? void 0 : i.roleColor) !== a.role_color || (null == i || null == (n = i.channelBenefits) ? void 0 : n.length) !== a.channels.length || (null == i || null == (r = i.intangibleBenefits) ? void 0 : r.length) !== a.additional_perks.length) return {
     templateCategory: o.category,
     hasChangeFromTemplate: !0
   };

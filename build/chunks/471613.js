@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -19,7 +19,7 @@ class g extends(s = a.ZP.Store) {
   }
   getEmojiRevision(e) {
     var t;
-    return null !== (t = d[e]) && void 0 !== t ? t : 0
+    return null != (t = d[e]) ? t : 0
   }
   getEmojis(e) {
     return u[e]
@@ -63,6 +63,6 @@ let p = new g(l.Z, {
     let {
       guildId: n
     } = e;
-    d[n] = (null !== (t = d[n]) && void 0 !== t ? t : 0) + 1
+    d[n] = (null != (t = d[n]) ? t : 0) + 1
   }
 })

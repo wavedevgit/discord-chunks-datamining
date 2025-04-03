@@ -1,10 +1,10 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   II: () => f,
-  Ow: () => y,
+  Ow: () => x,
   P2: () => O,
   mw: () => m,
-  z0: () => x
+  z0: () => v
 }), n(26686), n(47120);
 var r, i = n(192379),
   l = n(788347),
@@ -59,9 +59,9 @@ let b = {
       })
     })
   },
-  v = e => _(t => t.get(e), l.X);
+  y = e => _(t => t.get(e), l.X);
 
-function y(e, t, n) {
+function x(e, t, n) {
   let r = null != n ? n : {};
   switch (t) {
     case "links":
@@ -87,15 +87,15 @@ function y(e, t, n) {
   }
 }
 
-function x(e, t, n) {
+function v(e, t, n) {
   return function(e, t, n, r) {
     let {
       addtionalQuery: l,
       shouldDispatch: o = !1
-    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = v(a), m = (0, c.Z)(a), [_, x] = i.useState({});
+    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = y(a), m = (0, c.Z)(a), [_, v] = i.useState({});
     return i.useEffect(() => {
       if (m !== a) {
-        let r = y(e, n, l),
+        let r = x(e, n, l),
           i = new u.ZP(t, p.aib.GUILD, r);
         C(a, {
           searchFetcher: i,
@@ -110,7 +110,7 @@ function x(e, t, n) {
                 result: n,
                 messageCount: n.total_results,
                 lastMessage: r
-              }), x({}), o) {
+              }), v({}), o) {
               var l, c;
               s.Z.dispatch({
                 type: "MOD_VIEW_SEARCH_FINISH",
@@ -120,8 +120,8 @@ function x(e, t, n) {
                 totalResults: n.total_results,
                 channels: n.channels,
                 messages: n.messages,
-                threads: null !== (l = n.threads) && void 0 !== l ? l : [],
-                members: (null !== (c = n.members) && void 0 !== c ? c : []).map(e => (0, d.Z)(e)),
+                threads: null != (l = n.threads) ? l : [],
+                members: (null != (c = n.members) ? c : []).map(e => (0, d.Z)(e)),
                 hasError: !1,
                 doingHistoricalIndex: n.doing_deep_historical_index,
                 documentsIndexed: n.documents_indexed
@@ -131,7 +131,7 @@ function x(e, t, n) {
             C(a, {
               messageCount: 0,
               lastMessage: null
-            }), x({})
+            }), v({})
           })
         })
       }
@@ -142,7 +142,7 @@ function x(e, t, n) {
 
 function j(e, t, n, r) {
   let l = i.useMemo(() => g(e, t, n, r, !0), [e, t, n, r]),
-    o = v(l),
+    o = y(l),
     a = (0, c.Z)(l);
   return {
     key: l,
@@ -162,11 +162,11 @@ function O(e, t, n) {
   } = j(e, t, "links", n), {
     key: h,
     state: m
-  } = j(e, t, "media", n), g = i.useMemo(() => y(e, "all_counts", n), [e, n]), b = i.useMemo(() => ({
+  } = j(e, t, "media", n), g = i.useMemo(() => x(e, "all_counts", n), [e, n]), b = i.useMemo(() => ({
     tabs: {
-      messages: y(e, "messages", g),
-      links: y(e, "links", g),
-      media: y(e, "media", g)
+      messages: x(e, "messages", g),
+      links: x(e, "links", g),
+      media: x(e, "media", g)
     },
     track_exact_total_hits: !0
   }), [e, g]), _ = i.useCallback(e => {
@@ -174,7 +174,7 @@ function O(e, t, n) {
       n = e.links,
       r = e.media;
     C(a, t), C(c, n), C(h, r)
-  }, [c, h, a]), v = i.useCallback(e => {
+  }, [c, h, a]), y = i.useCallback(e => {
     _({
       messages: e,
       links: e,
@@ -183,7 +183,7 @@ function O(e, t, n) {
   }, [_]);
   i.useEffect(() => {
     let e = new u.tJ(t, p.aib.GUILD, g, b);
-    v({
+    y({
       searchTabFetcher: e,
       messageCount: f,
       lastMessage: null
@@ -196,7 +196,7 @@ function O(e, t, n) {
       } catch (e) {
         t = null
       }
-      if (null == t) v({
+      if (null == t) y({
         messageCount: 0,
         lastMessage: null
       });
@@ -207,16 +207,16 @@ function O(e, t, n) {
           c = t.tabs.media;
         _({
           messages: {
-            messageCount: null !== (n = null == e ? void 0 : e.total_results) && void 0 !== n ? n : 0,
-            lastMessage: null !== (r = null == e ? void 0 : e.messages[0]) && void 0 !== r ? r : null
+            messageCount: null != (n = null == e ? void 0 : e.total_results) ? n : 0,
+            lastMessage: null != (r = null == e ? void 0 : e.messages[0]) ? r : null
           },
           links: {
-            messageCount: null !== (i = null == s ? void 0 : s.total_results) && void 0 !== i ? i : 0,
-            lastMessage: null !== (l = null == s ? void 0 : s.messages[0]) && void 0 !== l ? l : null
+            messageCount: null != (i = null == s ? void 0 : s.total_results) ? i : 0,
+            lastMessage: null != (l = null == s ? void 0 : s.messages[0]) ? l : null
           },
           media: {
-            messageCount: null !== (o = null == c ? void 0 : c.total_results) && void 0 !== o ? o : 0,
-            lastMessage: null !== (a = null == c ? void 0 : c.messages[0]) && void 0 !== a ? a : null
+            messageCount: null != (o = null == c ? void 0 : c.total_results) ? o : 0,
+            lastMessage: null != (a = null == c ? void 0 : c.messages[0]) ? a : null
           }
         })
       }
@@ -225,11 +225,11 @@ function O(e, t, n) {
     return () => {
       e.cancel(), clearTimeout(n)
     }
-  }, [e, t, g, b, v, _]);
-  let [x, O] = i.useState({});
+  }, [e, t, g, b, y, _]);
+  let [v, O] = i.useState({});
   return {
-    messagesCount: null !== (r = null == s ? void 0 : s.messageCount) && void 0 !== r ? r : f,
-    linksCount: null !== (l = null == d ? void 0 : d.messageCount) && void 0 !== l ? l : f,
-    mediaCount: null !== (o = null == m ? void 0 : m.messageCount) && void 0 !== o ? o : f
+    messagesCount: null != (r = null == s ? void 0 : s.messageCount) ? r : f,
+    linksCount: null != (l = null == d ? void 0 : d.messageCount) ? l : f,
+    mediaCount: null != (o = null == m ? void 0 : m.messageCount) ? o : f
   }
 }

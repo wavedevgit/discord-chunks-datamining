@@ -6,8 +6,8 @@ var i = n(200651);
 n(192379);
 var a = n(481060),
   l = n(570140),
-  o = n(103879),
-  r = n(800530);
+  r = n(103879),
+  o = n(800530);
 let s = {
   open(e, t) {
     (0, a.ZDy)(async () => {
@@ -54,6 +54,6 @@ let s = {
   start_verification_check() {
     l.Z.dispatch({
       type: "SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_START_POLL"
-    }), setTimeout(() => (0, o._w)(), r.TX)
+    }), setTimeout(() => (0, r._w)(), o.TX)
   }
 }

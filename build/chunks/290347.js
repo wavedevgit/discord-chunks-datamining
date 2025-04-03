@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(607070),
   u = n(446411),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(981631),
   O = n(921944),
   N = n(388032),
-  v = n(29633);
+  y = n(937976);
 
-function y(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function y(e) {
   return e
 }
 
-function I(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -61,7 +61,7 @@ let C = [],
       className: n
     } = e;
     return (0, r.jsx)(s.IGR, {
-      className: o()(v.tag, n),
+      className: a()(y.tag, n),
       text: t
     })
   },
@@ -71,26 +71,26 @@ let C = [],
       subHeader: n,
       imageSrc: i,
       tagText: l,
-      wideStyle: a
+      wideStyle: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: o()(v.featureCard, {
-        [v.wideStyle]: a
+      className: a()(y.featureCard, {
+        [y.wideStyle]: o
       }),
       children: [null != l ? (0, r.jsx)(S, {
         tagText: l,
-        className: v.featureCardTag
+        className: y.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: o()(v.featureCardImg, {
-          [v.wideStyle]: a
+        className: a()(y.featureCardImg, {
+          [y.wideStyle]: o
         }),
         src: i
       }), (0, r.jsxs)("div", {
-        className: v.featureCardTextGroup,
+        className: y.featureCardTextGroup,
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/extrabold",
-          className: v.featureCardTextHeader,
+          className: y.featureCardTextHeader,
           children: t
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
@@ -119,9 +119,9 @@ function P(e) {
   } = e, {
     onClose: M,
     transitionState: U
-  } = n, G = (0, p.Dt)(), W = w.length % 2 == 0, V = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), eo = i.useRef(!1);
+  } = n, G = (0, p.Dt)(), W = w.length % 2 == 0, V = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), [B, H] = i.useState(Date.now()), [F, z] = i.useState(0), [Y, K] = i.useState(0), [q, Q] = i.useState(!1), [X, J] = i.useState(!0), $ = i.useRef(B), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(X), [ei, el] = i.useState(C), ea = i.useRef(!1);
 
-  function ea() {
+  function eo() {
     let e = Date.now(),
       t = e - $.current,
       n = ee.current,
@@ -133,7 +133,7 @@ function P(e) {
       try {
         var e;
         if ("video" !== l.type || null == l.subtitles) return;
-        let t = null === (e = l.subtitles) || void 0 === e ? void 0 : e.map(async e => {
+        let t = null == (e = l.subtitles) ? void 0 : e.map(async e => {
           let t = await fetch(e.src);
           if (!t.ok) throw Error("Failed to fetch the subtitle file ".concat(e.src));
           let n = await t.text(),
@@ -141,7 +141,7 @@ function P(e) {
               type: "text/vtt"
             }),
             i = URL.createObjectURL(r);
-          return I(y({}, e), {
+          return v(I({}, e), {
             src: i
           })
         });
@@ -150,7 +150,7 @@ function P(e) {
         b.Z.captureException(e), el(C)
       }
     };
-    !0 !== eo.current && e(), eo.current = !0
+    !0 !== ea.current && e(), ea.current = !0
   }, [l, ei]), i.useEffect(() => () => {
     null != ei && ei.forEach(e => {
       URL.revokeObjectURL(e.src)
@@ -159,7 +159,7 @@ function P(e) {
     $.current = B, ee.current = F, et.current = Y, en.current = q, er.current = X
   }, [B, F, Y, q, X]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
-      let [e, t] = ea();
+      let [e, t] = eo();
       m.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: R,
         seconds_played: Math.round(e / 1e3)
@@ -182,22 +182,22 @@ function P(e) {
       })
     }
   }, [P, R]), (0, r.jsxs)(s.Y0X, {
-    className: o()(v.root, t),
+    className: a()(y.root, t),
     transitionState: U,
     "aria-labelledby": G,
     children: [(0, r.jsx)(s.olH, {
-      className: v.closeButton,
+      className: y.closeButton,
       onClick: M
     }), (0, r.jsx)(_.Z, {
-      className: v.splash
+      className: y.splash
     }), null == j ? void 0 : j(), (0, r.jsxs)(s.hzk, {
-      className: v.content,
+      className: y.content,
       children: [(0, r.jsx)(s.X6q, {
         variant: "display-md",
-        className: o()(v.headerText, Z),
+        className: a()(y.headerText, Z),
         children: A
       }), "video" === l.type ? (0, r.jsx)(h.Z, {
-        className: o()(v.video, S),
+        className: a()(y.video, S),
         autoPlay: !V,
         loop: !0,
         muted: !0,
@@ -211,13 +211,13 @@ function P(e) {
           }), H(Date.now()), Q(!0), J(e.currentTarget.muted)
         },
         onEnded: e => {
-          ea(), J(e.currentTarget.muted), Q(!1)
+          eo(), J(e.currentTarget.muted), Q(!1)
         },
         onVolumeChange: e => {
-          ea(), J(e.currentTarget.muted)
+          eo(), J(e.currentTarget.muted)
         },
         onPause: e => {
-          ea(), J(e.currentTarget.muted), Q(!1)
+          eo(), J(e.currentTarget.muted), Q(!1)
         },
         disablePictureInPicture: !0,
         children: null == ei ? void 0 : ei.map(e => {
@@ -231,7 +231,7 @@ function P(e) {
           }, e.locale)
         })
       }) : "embed" === l.type ? (0, r.jsx)(u.BC, {
-        className: o()(v.video, S),
+        className: a()(y.video, S),
         allowFullScreen: !1,
         href: l.href,
         thumbnail: l.thumbnail,
@@ -249,21 +249,21 @@ function P(e) {
         }
       }) : "image" === l.type ? (0, r.jsx)("img", {
         alt: "",
-        className: o()(v.video, S),
+        className: a()(y.video, S),
         src: l.src
       }) : null, (0, r.jsxs)(s.X6q, {
         variant: "heading-lg/semibold",
-        className: v.subHeader,
+        className: y.subHeader,
         children: [x, null == L ? void 0 : L()]
       }), null != k && (0, r.jsx)(s.X6q, {
         variant: "heading-md/medium",
-        className: v.bodyText,
+        className: y.bodyText,
         children: k
       }), w.length > 0 && (0, r.jsx)("div", {
-        className: o()(v.featureCardGroup, {
-          [v.wideStyle]: W
+        className: a()(y.featureCardGroup, {
+          [y.wideStyle]: W
         }),
-        children: w.map((e, t) => (0, r.jsx)(T, I(y({}, e), {
+        children: w.map((e, t) => (0, r.jsx)(T, v(I({}, e), {
           wideStyle: W
         }), "".concat(e.header, "_").concat(t)))
       }), D()]

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => _,
   y: () => g
@@ -14,7 +14,7 @@ var r, i = n(200651),
   p = n(347469),
   h = n(740492),
   f = n(36645),
-  m = n(117282),
+  m = n(354494),
   g = ((r = {})[r.PostSidebar = 0] = "PostSidebar", r[r.ThreadSidebar = 1] = "ThreadSidebar", r[r.CallChatSidebar = 2] = "CallChatSidebar", r[r.MessageRequestSidebar = 3] = "MessageRequestSidebar", r[r.HomeSidebar = 4] = "HomeSidebar", r[r.ParticipantsSidebar = 5] = "ParticipantsSidebar", r);
 
 function b(e) {
@@ -61,14 +61,14 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [C, v] = l.useState(h.ZP[_]), y = l.useCallback(e => {
+  }(t), [C, y] = l.useState(h.ZP[_]), x = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
       [_]: e
     })
-  }, [_]), x = 5 === t ? f.at : f.Co, j = (0, f.WL)({
+  }, [_]), v = 5 === t ? f.at : f.Co, j = (0, f.WL)({
     maxWidth: n,
-    minWidth: x
-  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, x, n), N = j ? E : E + O;
+    minWidth: v
+  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(C, v, n), N = j ? E : E + O;
   l.useEffect(() => {
     null == r || r(E, j)
   }, [E, r, j]);
@@ -90,11 +90,11 @@ function _(e) {
             width: N
           }
         }), !j && (0, i.jsx)(b, {
-          minWidth: x,
+          minWidth: v,
           maxWidth: n,
           resizableNode: g,
-          onResize: v,
-          onResizeEnd: y
+          onResize: y,
+          onResizeEnd: x
         }), (0, i.jsx)("div", {
           ref: g,
           className: a()(m.container, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => j
 }), n(653041), n(47120);
@@ -15,9 +15,9 @@ var r = n(200651),
   h = n(451478),
   f = n(584511),
   m = n(354459),
-  g = n(814525),
-  b = n(913208),
-  _ = n(591775);
+  g = n(95072),
+  b = n(893354),
+  _ = n(565128);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,12 +27,12 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let v = {
+let y = {
     STEPS: 23,
     FRAME_DURATION: 17,
     FRAME_SIZE: 26
   },
-  y = {
+  x = {
     SCALE_MIN: .7,
     SCALE_MAX: 1,
     DURATION_IN: 300,
@@ -40,7 +40,7 @@ let v = {
     EASING_IN: a.Z.Easing.inOut(a.Z.Easing.back()),
     EASING_OUT: a.Z.Easing.quad
   };
-class x extends i.PureComponent {
+class v extends i.PureComponent {
   componentDidMount() {
     this.componentDidAppear()
   }
@@ -58,8 +58,8 @@ class x extends i.PureComponent {
     } = this;
     t.setValue(0), n.setValue(0), a.Z.parallel([a.Z.timing(t, {
       toValue: 1,
-      duration: y.DURATION_IN,
-      easing: y.EASING_IN
+      duration: x.DURATION_IN,
+      easing: x.EASING_IN
     }), a.Z.timing(n, {
       toValue: 1,
       duration: 200
@@ -74,14 +74,14 @@ class x extends i.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let l = [];
-    for (let e = 0; e < v.STEPS; e++) l.push(a.Z.timing(n, {
-      toValue: -v.FRAME_SIZE * e,
-      duration: v.FRAME_DURATION
+    for (let e = 0; e < y.STEPS; e++) l.push(a.Z.timing(n, {
+      toValue: -y.FRAME_SIZE * e,
+      duration: y.FRAME_DURATION
     }));
     a.Z.sequence([a.Z.timing(t, {
       toValue: 0,
-      duration: y.DURATION_OUT,
-      easing: y.EASING_OUT
+      duration: x.DURATION_OUT,
+      easing: x.EASING_OUT
     }), a.Z.sequence(l), a.Z.timing(i, {
       toValue: 0,
       duration: 125
@@ -95,7 +95,7 @@ class x extends i.PureComponent {
       transform: [{
         scale: e.interpolate({
           inputRange: [0, 1],
-          outputRange: [y.SCALE_MIN, y.SCALE_MAX]
+          outputRange: [x.SCALE_MIN, x.SCALE_MAX]
         })
       }],
       opacity: e
@@ -157,7 +157,7 @@ function j(e) {
     onClick: a,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), C = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), v = (0, s.e7)([h.Z], () => h.Z.isFocused()), y = n.map(e => {
+  } = e, _ = (0, p.ZP)(), C = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), y = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -166,15 +166,15 @@ function j(e) {
       speaking: s,
       ringing: c
     } = e;
-    return (0, r.jsx)(x, {
+    return (0, r.jsx)(v, {
       className: g.participant,
       width: (0, d.pxk)(C),
       theme: _,
       children: (0, r.jsx)(f.Z, {
-        src: l.getAvatarURL(b, (0, d.pxk)(C), s && v),
+        src: l.getAvatarURL(b, (0, d.pxk)(C), s && y),
         size: C,
-        muted: null !== (t = null == o ? void 0 : o.isVoiceMuted()) && void 0 !== t && t,
-        deafen: null !== (n = null == o ? void 0 : o.isVoiceDeafened()) && void 0 !== n && n,
+        muted: null != (t = null == o ? void 0 : o.isVoiceMuted()) && t,
+        deafen: null != (n = null == o ? void 0 : o.isVoiceDeafened()) && n,
         speaking: s,
         ringing: c,
         onClick: t => null == a ? void 0 : a(e, t),
@@ -185,6 +185,6 @@ function j(e) {
   return (0, r.jsx)(c.W, {
     component: "div",
     className: o()(g.root, l),
-    children: y
+    children: x
   })
 }

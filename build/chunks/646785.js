@@ -1,15 +1,15 @@
 /** Chunk was on 30634 **/
 n.d(t, {
-  Z: () => u
+  Z: () => o
 }), n(47120);
 var r = n(485589),
   a = n(424706),
   l = n(14160),
   i = n(247123),
-  o = n(207662);
-let u = {
+  u = n(207662);
+let o = {
   id: "aria-allowed-attributes",
-  selector: o.J8,
+  selector: u.J8,
   tags: ["wcag2a", "wcag412"],
   metadata: {
     description: "Only use supported ARIA attributes",
@@ -19,7 +19,7 @@ let u = {
     let t = (0, a.cY)(e),
       n = r.roles.get(t);
     if (null == n) return i.w;
-    for (let r of o.cg)
+    for (let r of u.cg)
       if (e.hasAttribute(r) && !n.props.hasOwnProperty(r)) {
         if ("aria-expanded" === r && e.hasAttribute("aria-controls")) continue;
         if (!(0, l.p)(e)) return i.w;

@@ -8,7 +8,7 @@ var r = t(200651),
   i = t(481060),
   o = t(596454),
   s = t(388032),
-  c = t(722669);
+  c = t(141475);
 
 function d(e) {
   return null != e && (null != e.id || null != e.name)
@@ -40,9 +40,9 @@ function u(e) {
     if (null == e) return;
     let i = p.get(e.value);
     if (null != i && d(i.emoji)) return (0, r.jsx)(o.Z, {
-      emojiId: null === (n = i.emoji) || void 0 === n ? void 0 : n.id,
-      emojiName: null === (t = i.emoji) || void 0 === t ? void 0 : t.name,
-      animated: null !== (a = null === (l = i.emoji) || void 0 === l ? void 0 : l.animated) && void 0 !== a && a
+      emojiId: null == (n = i.emoji) ? void 0 : n.id,
+      emojiName: null == (t = i.emoji) ? void 0 : t.name,
+      animated: null != (a = null == (l = i.emoji) ? void 0 : l.animated) && a
     })
   }, [p]), x = l.useCallback((e, n) => {
     if (null == e || n.inPill) return;

@@ -6,21 +6,21 @@ n.d(t, {
 var i = n(200651),
   r = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   c = n(882485),
   s = n(481060),
-  d = n(115130),
-  u = n(147865),
+  u = n(115130),
+  d = n(147865),
   p = n(427996),
   m = n(906732),
   f = n(706302),
   h = n(812236),
   b = n(835473),
-  v = n(70097),
-  C = n(240991),
-  _ = n(973616),
-  x = n(626135),
+  C = n(70097),
+  _ = n(240991),
+  x = n(973616),
+  v = n(626135),
   y = n(424602),
   N = n(783097),
   g = n(695676),
@@ -29,8 +29,8 @@ var i = n(200651),
   E = n(783685),
   A = n(981631),
   O = n(388032),
-  I = n(749262),
-  S = n(50398);
+  I = n(449549),
+  S = n(73433);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,19 +58,19 @@ function L(e) {
     videoUrl: l,
     imageCoverUrl: c,
     sectionName: s,
-    hasCommands: u
+    hasCommands: d
   } = e, m = r.useMemo(() => {
     var e;
-    return null !== (e = (0, N.jD)(n)) && void 0 !== e ? e : ""
-  }, [n]), f = (0, a.e7)([d.Z], () => d.Z.inDevModeForApplication(n.id)), h = null != l, b = y.PM.useExperiment({
+    return null != (e = (0, N.jD)(n)) ? e : ""
+  }, [n]), f = (0, o.e7)([u.Z], () => u.Z.inDevModeForApplication(n.id)), h = null != l, b = y.PM.useExperiment({
     location: "AppLauncherProfile"
   }), {
-    isSlideReady: C
-  } = (0, g.hH)(), [_, x] = r.useState(!1);
+    isSlideReady: _
+  } = (0, g.hH)(), [x, v] = r.useState(!1);
   return r.useEffect(() => {
-    C && x(!0)
-  }, [C]), (0, i.jsxs)("div", {
-    className: o()({
+    _ && v(!0)
+  }, [_]), (0, i.jsxs)("div", {
+    className: a()({
       [I.experimentLayout]: b.enabled,
       [I.altLayout]: b.altLayout
     }, I.container),
@@ -84,8 +84,8 @@ function L(e) {
     }) : null, (0, i.jsxs)("div", {
       children: [h ? (0, i.jsxs)("div", {
         className: I.videoContainer,
-        children: [_ ? (0, i.jsx)(v.Z, {
-          className: o()(I.videoCover, I.video),
+        children: [x ? (0, i.jsx)(C.Z, {
+          className: a()(I.videoCover, I.video),
           loop: !0,
           muted: !0,
           autoPlay: !0,
@@ -115,7 +115,7 @@ function L(e) {
           application: n,
           sectionName: s,
           isDeveloperOfThisApp: f,
-          hasCommands: u
+          hasCommands: d
         })]
       })]
     }), b.enabled ? null : (0, i.jsx)(R, {
@@ -158,7 +158,7 @@ function w(e) {
   var t;
   let {
     application: n
-  } = e, r = (0, N.BQ)(n) ? n.name : null !== (t = (0, N.$d)(n)) && void 0 !== t ? t : "", l = (0, N.vJ)(n);
+  } = e, r = (0, N.BQ)(n) ? n.name : null != (t = (0, N.$d)(n)) ? t : "", l = (0, N.vJ)(n);
   return (0, i.jsxs)("div", {
     className: I.titleContainer,
     children: [(0, i.jsx)(s.X6q, {
@@ -181,7 +181,7 @@ function k(e) {
     application: t
   } = e, n = r.useMemo(() => {
     var e;
-    return (0, N.BQ)(t) && null !== (e = null == t ? void 0 : t.tags) && void 0 !== e ? e : []
+    return (0, N.BQ)(t) && null != (e = null == t ? void 0 : t.tags) ? e : []
   }, [t]);
   return (0, N.ye)(t) ? (0, i.jsxs)("div", {
     className: I.tagsContainer,
@@ -204,7 +204,7 @@ function Z(e) {
     application: n
   } = e;
   if (!(0, N.ye)(n)) return null;
-  let r = null !== (t = (0, N.BQ)(n) ? n instanceof _.ZP ? n.maxParticipants : n.max_participants : 0) && void 0 !== t ? t : 0;
+  let r = null != (t = (0, N.BQ)(n) ? n instanceof x.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, i.jsxs)("div", {
     className: I.tagContainer,
     children: [(0, i.jsx)(s.BFJ, {
@@ -213,7 +213,7 @@ function Z(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "interactive-normal",
-      children: (0, u.lY)(r)
+      children: (0, d.lY)(r)
     })]
   })
 }
@@ -223,13 +223,13 @@ function M(e) {
   let {
     context: n,
     application: l,
-    sectionName: a,
-    hasCommands: d,
-    isDeveloperOfThisApp: u
-  } = e, p = (0, h.Fs)(n, l.id), v = (0, b.q)(l.id), C = null == v ? void 0 : null === (t = v.bot) || void 0 === t ? void 0 : t.id, _ = (0, f.Z)({
+    sectionName: o,
+    hasCommands: u,
+    isDeveloperOfThisApp: d
+  } = e, p = (0, h.Fs)(n, l.id), C = (0, b.q)(l.id), _ = null == C || null == (t = C.bot) ? void 0 : t.id, x = (0, f.Z)({
     context: n,
     applicationId: l.id,
-    botUserId: C
+    botUserId: _
   }), {
     analyticsLocations: g
   } = (0, m.ZP)(), [j, S] = r.useState(!1), L = y.PM.useExperiment({
@@ -238,18 +238,18 @@ function M(e) {
   if (r.useEffect(() => {
       if (!(0, N.BQ)(l) || !(0, N.ye)(l)) return;
       let e = setTimeout(() => {
-        (null == p || null == C) && x.default.track(A.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        (null == p || null == _) && v.default.track(A.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
           application_id: l.id,
           is_primary_entry_point_command_non_null: null != p,
-          is_bot_user_id_non_null: null != C,
-          show_try_it_out_button: _
+          is_bot_user_id_non_null: null != _,
+          show_try_it_out_button: x
         })
       }, 2e3);
       return () => clearTimeout(e)
-    }, [l, p, C, _]), !(0, N.BQ)(l) || !(0, N.ye)(l)) return null;
+    }, [l, p, _, x]), !(0, N.BQ)(l) || !(0, N.ye)(l)) return null;
   let R = s.PhG.MAX;
-  return null != p && null != C ? (0, i.jsxs)("div", {
-    className: o()({
+  return null != p && null != _ ? (0, i.jsxs)("div", {
+    className: a()({
       [I.experimentLayout]: L.enabled,
       [I.altLayout]: L.altLayout
     }, I.entrypointContainer),
@@ -258,12 +258,12 @@ function M(e) {
       children: (0, i.jsx)(P.Z, {
         context: n,
         application: l,
-        sectionName: a,
+        sectionName: o,
         primaryEntryPointCommand: p,
         buttonSize: R,
         playSolo: j
       })
-    }), _ && null != C ? L.altLayout ? (0, i.jsx)("div", {
+    }), x && null != _ ? L.altLayout ? (0, i.jsx)("div", {
       className: I.altLayout,
       children: (0, i.jsx)("div", {
         className: I.entryPointContainerFlexChild,
@@ -298,13 +298,13 @@ function M(e) {
     }) : (0, i.jsx)("div", {
       className: I.entryPointContainerFlexChild,
       children: (0, i.jsx)(E.Z, {
-        botUserId: C,
+        botUserId: _,
         applicationId: l.id,
         buttonSize: R,
         analyticsLocations: g
       })
     }) : null]
-  }) : u && !d && (0, N.ye)(l) ? (0, i.jsx)(s.Wn, {
+  }) : d && !u && (0, N.ye)(l) ? (0, i.jsx)(s.Wn, {
     className: I.primaryEntryPointWarningMessage,
     messageType: s.QYI.WARNING,
     children: O.NW.format(O.t["s/3hjI"], {})
@@ -316,13 +316,13 @@ function D(e) {
     description: t
   } = e, n = y.PM.useExperiment({
     location: "AppLauncherProfile.Description()"
-  }), [l, o] = r.useState(!0);
-  r.useLayoutEffect(() => o(n.enabled), [n]);
-  let a = r.useMemo(() => (0, C.parseBioReact)(t), [t]),
+  }), [l, a] = r.useState(!0);
+  r.useLayoutEffect(() => a(n.enabled), [n]);
+  let o = r.useMemo(() => (0, _.parseBioReact)(t), [t]),
     {
       ref: c,
-      lineHeight: d,
-      lineCount: u
+      lineHeight: u,
+      lineCount: d
     } = function() {
       let e = r.useRef(null),
         [t, n] = r.useState(null),
@@ -331,7 +331,7 @@ function D(e) {
         let t = e.current;
         if (null === t || 0 === t.clientHeight) return;
         let i = parseInt(getComputedStyle(t).lineHeight);
-        !isNaN(i) && (n(i), l(Math.floor(t.clientHeight / i)))
+        isNaN(i) || (n(i), l(Math.floor(t.clientHeight / i)))
       }, []), {
         ref: e,
         lineHeight: t,
@@ -339,16 +339,16 @@ function D(e) {
       }
     }(),
     p = r.useMemo(() => {
-      if (null == d || null == u) return {
+      if (null == u || null == d) return {
         key: 0
       };
-      let e = d * u;
+      let e = u * d;
       return {
         key: 1,
-        minHeightOverride: Math.min(e, +d),
+        minHeightOverride: Math.min(e, +u),
         maxHeightOverride: e
       }
-    }, [u, d]),
+    }, [d, u]),
     {
       ref: m,
       isTransitioning: f,
@@ -371,11 +371,11 @@ function D(e) {
         style: {
           maxHeight: b ? void 0 : p.minHeightOverride
         },
-        children: a
+        children: o
       })
-    }), null != u && u > 1 && !n.enabled ? (0, i.jsxs)(s.P3F, {
+    }), null != d && d > 1 && !n.enabled ? (0, i.jsxs)(s.P3F, {
       className: I.expandableDescriptionClickable,
-      onClick: () => o(e => !e),
+      onClick: () => a(e => !e),
       children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",

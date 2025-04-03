@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(999153),
   s = n(642128),
   c = n(91192),
@@ -17,21 +17,21 @@ var r = n(200651),
   g = n(624138),
   m = n(727258),
   b = n(276952),
-  v = n(199540),
-  y = n(40153),
-  _ = n(252686),
+  y = n(199540),
+  _ = n(40153),
+  v = n(252686),
   O = n(682662),
   j = n(662146),
   x = n(388032),
-  C = n(108740),
-  S = n(332798);
+  C = n(728492),
+  S = n(335426);
 let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   I = (0, s.animated)(d.Kqy),
   N = i.memo(function(e) {
     let {
       folderNode: t,
       setNodeRef: n,
-      selected: o,
+      selected: l,
       expanded: s,
       mediaState: u,
       mentionCount: g = 0,
@@ -79,9 +79,9 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         n = (0, h.Q3)("FolderItem.useHeight"),
         r = (0, d.dQu)(d.TVs.space.SPACE_XS),
         i = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
-        o = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE),
-        l = n ? r : 8;
-      return e * (t + l) + (n ? (o - i) / 2 - l : 0)
+        l = (0, d.dQu)(d.TVs.modules.guildbar.FOLDER_SIZE),
+        o = n ? r : 8;
+      return e * (t + o) + (n ? (l - i) / 2 - o : 0)
     }(V.length), ei = (0, d.Yzy)(!K && s, {
       from: {
         height: 0
@@ -95,25 +95,25 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: P
       }
-    }), eo = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), el = (0, r.jsxs)(O.H, {
+    }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: K || s,
         hovered: H,
-        selected: o,
+        selected: l,
         unread: Z,
         className: S.pill
       }), (0, r.jsx)(j.Z, {
         text: ee,
         disabled: A,
-        selected: o,
+        selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
           ref: T ? J : void 0,
-          className: l()(C.folderIcon, {
+          className: o()(C.folderIcon, {
             [S.wobble]: !K && Y && !s
           }),
           "data-dnd-name": ee,
-          children: K ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(v.Z, {
+          children: K ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)(y.Z, {
             folderNode: t,
             expanded: s,
             forceCircular: E,
@@ -132,22 +132,22 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
             folderIconContent: G
           })
         })
-      }), T ? (0, r.jsx)(y.ZP, {
+      }), T ? (0, r.jsx)(_.ZP, {
         name: ee,
         targetNode: t,
         onDragOverChanged: X
       }) : null]
     });
     return (0, r.jsxs)("div", {
-      ref: eo,
-      className: l()(C.wrapper, s && C.isExpanded),
+      ref: el,
+      className: o()(C.wrapper, s && C.isExpanded),
       "data-drop-hovering": Y,
       children: [!K && s && (0, r.jsx)("span", {
-        className: l()(C.expandedFolderBackground, {
+        className: o()(C.expandedFolderBackground, {
           [C.collapsed]: !s,
           [C.hover]: Q
         })
-      }), el, ei((e, t, n) => {
+      }), eo, ei((e, t, n) => {
         let {
           key: i
         } = n;
@@ -162,7 +162,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
           role: "group",
           children: V.map(t => M(t, e.height))
         }, i)
-      }), T && s ? (0, r.jsx)(y.Zu, {
+      }), T && s ? (0, r.jsx)(_.Zu, {
         name: ee,
         targetNode: t
       }) : null]

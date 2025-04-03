@@ -1,6 +1,6 @@
 /** Chunk was on 42483 **/
 n.d(t, {
-  M: () => c,
+  M: () => o,
   U: () => C
 });
 var i = n(481060),
@@ -9,15 +9,15 @@ var i = n(481060),
   l = n(940328),
   r = n(888395),
   d = n(389028),
-  o = n(142390);
-let c = {
+  c = n(142390);
+let o = {
     CREATE: l,
     GAMING: d,
     FRIENDS: r,
     STUDY: n(425506),
     CLUBS: a,
     CREATORS: s,
-    LOCAL_COMMUNITY: o,
+    LOCAL_COMMUNITY: c,
     SCHOOL_CLUB: a
   },
   C = {

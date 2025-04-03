@@ -1,11 +1,11 @@
 /** Chunk was on 23657 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 }), n(47120);
 var r = n(70722),
-  i = n(388032);
+  l = n(388032);
 
-function l(e) {
+function i(e) {
   let t = new Set;
   return e.showVibesHoneypot || t.add(r.kr.VIBES_OFF), (function(e) {
     let {
@@ -13,31 +13,31 @@ function l(e) {
     } = e;
     return [{
       value: r.kr.BLACK_SCREEN,
-      label: t ? i.NW.string(i.t["0X5Zbm"]) : i.NW.string(i.t.fxiRNj)
+      label: t ? l.NW.string(l.t["0X5Zbm"]) : l.NW.string(l.t.fxiRNj)
     }, {
       value: r.kr.BLURRY,
-      label: t ? i.NW.string(i.t.VVPQy8) : i.NW.string(i.t.E8jTMD)
+      label: t ? l.NW.string(l.t.VVPQy8) : l.NW.string(l.t.E8jTMD)
     }, {
       value: r.kr.LAGGING,
-      label: t ? i.NW.string(i.t.ObEHd3) : i.NW.string(i.t.VoSJER)
+      label: t ? l.NW.string(l.t.ObEHd3) : l.NW.string(l.t.VoSJER)
     }, {
       value: r.kr.OUT_OF_SYNC,
-      label: t ? i.NW.string(i.t.mYmwDw) : i.NW.string(i.t["+NluQk"])
+      label: t ? l.NW.string(l.t.mYmwDw) : l.NW.string(l.t["+NluQk"])
     }, {
       value: r.kr.AUDIO_MISSING,
-      label: t ? i.NW.string(i.t.Xwv419) : i.NW.string(i.t.G2egzc)
+      label: t ? l.NW.string(l.t.Xwv419) : l.NW.string(l.t.G2egzc)
     }, {
       value: r.kr.AUDIO_POOR,
-      label: t ? i.NW.string(i.t["fHey+f"]) : i.NW.string(i.t.aHOfIi)
+      label: t ? l.NW.string(l.t["fHey+f"]) : l.NW.string(l.t.aHOfIi)
     }, {
       value: r.kr.STREAM_STOPPED,
-      label: i.NW.string(i.t.uEoqQk)
+      label: l.NW.string(l.t.uEoqQk)
     }, {
       value: r.kr.VIBES_OFF,
-      label: i.NW.string(i.t["++JLLy"])
+      label: l.NW.string(l.t["++JLLy"])
     }, {
       value: r.kr.OTHER,
-      label: i.NW.string(i.t["emlT9/"])
+      label: l.NW.string(l.t["emlT9/"])
     }]
   })(e).filter(e => {
     let {

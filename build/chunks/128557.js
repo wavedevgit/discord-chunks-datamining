@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => U,
   i: () => W
@@ -20,9 +20,9 @@ var r = n(200651),
   b = n(330010),
   _ = n(978946),
   C = n(314897),
-  v = n(430824),
-  y = n(594174),
-  x = n(259580),
+  y = n(430824),
+  x = n(594174),
+  v = n(259580),
   j = n(585483),
   O = n(63063),
   E = n(358085),
@@ -31,7 +31,7 @@ var r = n(200651),
   P = n(981631),
   S = n(231873),
   Z = n(388032),
-  T = n(672012),
+  T = n(646863),
   A = n(881454),
   w = n(435921),
   R = n(538548),
@@ -101,9 +101,9 @@ function W(e) {
       className: o()(T.checkmark, {
         [T.animate]: d
       })
-    }) : (0, r.jsx)(x.Z, {
+    }) : (0, r.jsx)(v.Z, {
       className: T.arrow,
-      direction: x.Z.Directions.RIGHT
+      direction: v.Z.Directions.RIGHT
     })]
   })
 }
@@ -111,13 +111,13 @@ function W(e) {
 function U(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([v.Z], () => null != t ? v.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, x = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
     canMessage: H
-  } = (0, m.TE)(t, l), F = (0, s.e7)([y.default], () => {
+  } = (0, m.TE)(t, l), F = (0, s.e7)([x.default], () => {
     var e, t;
-    return (null === (e = y.default.getCurrentUser()) || void 0 === e ? void 0 : e.desktop) === !0 || (null === (t = y.default.getCurrentUser()) || void 0 === t ? void 0 : t.mobile) === !0
+    return (null == (e = x.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = x.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
     guildPopulated: G,
     guildMessaged: V,
@@ -136,7 +136,7 @@ function U(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("7654"), n.e("75710")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
           return n => (0, r.jsx)(t, D(L({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,
@@ -191,7 +191,7 @@ function U(e) {
           return n => {
             var i;
             return (0, r.jsx)(t, D(L({
-              guildId: null !== (i = e.id) && void 0 !== i ? i : ""
+              guildId: null != (i = e.id) ? i : ""
             }, n), {
               analyticsType: c.z.APP_DIRECTORY_SERVER_SETUP_UPSELL_MODAL
             }))
@@ -243,7 +243,7 @@ function U(e) {
       (async () => {
         try {
           var e;
-          let t = await (0, b.i)(null !== (e = null == l ? void 0 : l.id) && void 0 !== e ? e : P.lds);
+          let t = await (0, b.i)(null != (e = null == l ? void 0 : l.id) ? e : P.lds);
           en(t.map(e => e.id))
         } catch (e) {}
       })()
@@ -305,7 +305,7 @@ function U(e) {
       onClick: Q
     })
   }, "addapp")));
-  let eo = x ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);
+  let eo = v ? Z.NW.string(Z.t["1ach9P"]) : Z.NW.string(Z.t["ezm+/v"]);
   p && (eo = Z.NW.string(Z.t["gwyU/P"]));
   let ea = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, r.jsx)(I.ZP, {

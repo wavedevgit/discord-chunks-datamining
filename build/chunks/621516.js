@@ -19,12 +19,12 @@ var r = n(200651),
   p = n(432771),
   x = n(406074),
   b = n(434404),
-  v = n(430824),
-  j = n(63063),
+  j = n(430824),
+  v = n(63063),
   C = n(595433),
   _ = n(981631),
   y = n(388032),
-  N = n(813196),
+  N = n(461238),
   O = n(906739),
   w = n(965358),
   S = n(420196),
@@ -127,7 +127,7 @@ let E = e => {
   var t, n;
   let {
     channel: i
-  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), k = (0, o.e7)([v.Z], () => v.Z.getGuild(i.guild_id)), R = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(i.id)), M = (0, x.C)({
+  } = e, h = (0, u.ZP)(), E = (0, c.wj)(h), k = (0, o.e7)([j.Z], () => j.Z.getGuild(i.guild_id)), R = (0, o.e7)([m.Z], () => m.Z.useReducedMotion), Z = (0, o.e7)([g.Z], () => g.Z.hasHidden(i.id)), M = (0, x.C)({
     guildId: i.guild_id,
     channelId: i.id
   }), {
@@ -144,8 +144,8 @@ let E = e => {
     z = () => {
       b.Z.open(i.guild_id, _.pNK.ROLE_SUBSCRIPTIONS)
     },
-    B = null !== (t = null == k ? void 0 : k.hasFeature(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && void 0 !== t && t ? y.NW.string(y.t.n0q7sL) : y.NW.string(y.t.QoYdiY),
-    H = null !== (n = (null == k ? void 0 : k.hasFeature(_.oNc.CREATOR_MONETIZABLE)) || (null == k ? void 0 : k.hasFeature(_.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) && void 0 !== n && n,
+    B = null != (t = null == k ? void 0 : k.hasFeature(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) && t ? y.NW.string(y.t.n0q7sL) : y.NW.string(y.t.QoYdiY),
+    H = null != (n = (null == k ? void 0 : k.hasFeature(_.oNc.CREATOR_MONETIZABLE)) || (null == k ? void 0 : k.hasFeature(_.oNc.CREATOR_MONETIZABLE_PROVISIONAL))) && n,
     U = H ? y.NW.string(y.t["G/7ciY"]) : y.NW.string(y.t.IFOiio),
     V = H ? y.NW.string(y.t.GjgQOz) : y.NW.string(y.t.E7AO6u);
   return (0, r.jsx)(r.Fragment, {
@@ -214,7 +214,7 @@ let E = e => {
             }), (0, r.jsx)(d.LZC, {
               size: 16
             }), (0, r.jsxs)(d.P3F, {
-              onClick: () => open(j.Z.getCreatorSupportArticleURL(_.BhN.MEDIA_CHANNEL)),
+              onClick: () => open(v.Z.getCreatorSupportArticleURL(_.BhN.MEDIA_CHANNEL)),
               className: N.helpCenterLink,
               children: [(0, r.jsx)(d.Text, {
                 variant: "text-sm/medium",

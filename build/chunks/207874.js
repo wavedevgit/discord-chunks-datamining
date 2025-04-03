@@ -24,7 +24,7 @@ function d(e) {
     let e = e => {
       var t;
       let s = f.current;
-      (null === (t = (0, a.uB)(e)) || void 0 === t ? void 0 : t.activeElement) === document.body && (null == s || s.focus())
+      (null == (t = (0, a.uB)(e)) ? void 0 : t.activeElement) === document.body && (null == s || s.focus())
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [b]), (0, r.jsx)("div", {

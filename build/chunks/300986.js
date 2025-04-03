@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   a = n(692547),
-  o = n(481060),
-  l = n(706454),
+  l = n(481060),
+  o = n(706454),
   s = n(594174),
   c = n(626135),
   u = n(63063),
@@ -20,8 +20,8 @@ let h = new Set(["ko", "ja"]);
 function g(e) {
   let {
     className: t
-  } = e, n = (0, i.e7)([s.default], () => s.default.getCurrentUser()), g = (0, i.e7)([l.default], () => l.default.locale), _ = (0, d.EO)(n);
-  return (0, r.jsx)(o.eee, {
+  } = e, n = (0, i.e7)([s.default], () => s.default.getCurrentUser()), g = (0, i.e7)([o.default], () => o.default.locale), _ = (0, d.EO)(n);
+  return (0, r.jsx)(l.eee, {
     href: u.w,
     target: "_blank",
     tabIndex: -1,
@@ -31,7 +31,7 @@ function g(e) {
       onClick: () => c.default.track(m.rMx.HELP_CLICKED, {
         highlighted: _
       }),
-      icon: o.idN,
+      icon: l.idN,
       tooltipPosition: h.has(g) ? "left" : void 0,
       tooltip: f.NW.string(f.t.cqEoj4)
     })

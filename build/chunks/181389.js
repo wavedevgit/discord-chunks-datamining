@@ -1,6 +1,6 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Jl: () => l,
+  Jl: () => o,
   g9: () => s
 }), n(653041), n(301563);
 var r = n(395041);
@@ -9,24 +9,24 @@ var i = n(999650);
 n(72006);
 var a = n(405656);
 n(981631);
-let o = {
+let l = {
   [i.Qe.FILTER]: r.w,
   [i.Qe.ANSWER]: r.O
 };
 
-function l() {
+function o() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
     t = [];
   return Object.keys(e).forEach(n => {
     let r = e[n];
     t.push({
-      strategy: (e, t, r) => (function(e, t, n, r) {
-        t.findEntityRanges(t => {
-          let n = t.getEntity();
-          return null !== n && e.getEntity(n).getType() === r
-        }, n)
-      })(r, e, t, n),
-      component: o[r.componentType]
+      strategy: (e, t, r) => {
+        e.findEntityRanges(e => {
+          let t = e.getEntity();
+          return null !== t && r.getEntity(t).getType() === n
+        }, t)
+      },
+      component: l[r.componentType]
     })
   }), t
 }

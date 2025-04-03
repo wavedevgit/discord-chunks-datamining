@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(100527),
   g = n(906732),
   E = n(835473),
-  v = n(314897),
-  h = n(592125),
+  h = n(314897),
+  v = n(592125),
   b = n(594174),
   S = n(849171),
   y = n(981631),
   O = n(388032),
-  Z = n(496110);
+  Z = n(164914);
 
 function I(e) {
   let {
@@ -67,7 +67,7 @@ function j(e) {
     channelId: n,
     participant: i,
     applicationId: m
-  } = e, p = (0, S.V_)(t), [I] = (0, S.Ym)(t), j = (0, o.e7)([h.Z], () => h.Z.getChannel(n)), x = (0, o.e7)([b.default, v.default], () => (0, d.J)(i, v.default) ? null : b.default.getUser(i.userId)), N = l.useMemo(() => null != x ? [x] : [], [x]), _ = (0, E.q)(m), {
+  } = e, p = (0, S.V_)(t), [I] = (0, S.Ym)(t), j = (0, o.e7)([v.Z], () => v.Z.getChannel(n)), x = (0, o.e7)([b.default, h.default], () => (0, d.J)(i, h.default) ? null : b.default.getUser(i.userId)), N = l.useMemo(() => null != x ? [x] : [], [x]), _ = (0, E.q)(m), {
     analyticsLocations: w
   } = (0, g.ZP)(), P = (0, u.O)(), R = i.activity.session_id, A = (0, f.Z)(i.activity, y.xjy.EMBEDDED) && (0, f.Z)(i.activity, y.xjy.CONTEXTLESS), [C, T] = l.useState(!1), D = null == x ? void 0 : x.id, M = l.useCallback(async e => {
     e.stopPropagation(), null != m && null != D && (T(!0), await (0, c.Z)({

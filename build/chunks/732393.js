@@ -1,6 +1,6 @@
 /** Chunk was on 22356 **/
 n.d(e, {
-  Z: () => v
+  Z: () => N
 }), n(47120);
 var i = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var r = n(442837),
   h = n(592125),
   g = n(710352),
   f = n(388032),
-  b = n(287826);
+  b = n(939852);
 
 function Z(t) {
   let {
@@ -35,21 +35,21 @@ function Z(t) {
   })
 }
 
-function v(t) {
+function N(t) {
   let e = (0, r.e7)([h.Z], () => h.Z.getChannel(t), [t]),
     n = (0, u.C7)(e),
     s = (0, r.e7)([h.Z], () => h.Z.getChannel(null == e ? void 0 : e.parent_id), [e]),
     o = (0, c.Vm)(s),
     b = (0, c.eV)(e),
-    v = b.length >= g.Cn,
-    N = (0, u.$R)(e);
+    N = b.length >= g.Cn,
+    v = (0, u.$R)(e);
   if (null == e) return (0, l.Zy)(), null;
-  if (!n || __OVERLAY__ || !e.isForumPost() || (null == o ? void 0 : o.length) === 0 || !N) return null;
+  if (!n || __OVERLAY__ || !e.isForumPost() || (null == o ? void 0 : o.length) === 0 || !v) return null;
   let p = t => {
       let n = new Set(b);
       if (n.has(t)) n.delete(t);
       else {
-        if (v) return;
+        if (N) return;
         n.add(t)
       }
       let i = Array.from(n).map(t => t.id);
@@ -62,7 +62,7 @@ function v(t) {
         label: (0, i.jsx)(Z, {
           tag: t
         }),
-        disabled: v && !e,
+        disabled: N && !e,
         action: () => p(t),
         checked: e
       }, t.id)

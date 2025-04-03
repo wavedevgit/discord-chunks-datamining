@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -26,7 +26,7 @@ function m(e) {
     allowSelfRemoveMonetization: f
   } = (0, a.gX)(t), b = m.filter(e => {
     var t;
-    let n = Object.values(null !== (t = e.ppgs) && void 0 !== t ? t : {})[0];
+    let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
   }), x = p.length > 0, j = h.length > 0, N = b.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {

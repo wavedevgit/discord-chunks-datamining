@@ -19,10 +19,10 @@ var l = n(120356),
   m = n(236373),
   p = n(854698),
   g = n(391174),
-  O = n(95291),
-  v = n(306302),
+  v = n(95291),
+  O = n(390966),
   j = n(388032),
-  h = n(520148);
+  h = n(274569);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,14 +63,14 @@ function x(e) {
     guildId: l,
     isNew: s,
     isHub: g = !1,
-    guildEvent: O,
+    guildEvent: v,
     eventPreview: x,
     recurrenceId: P
-  } = e, w = (0, b.Z)(l, O.id, P), E = null != O ? O : x, S = (0, i.e7)([o.ZP], () => o.ZP.getNick(l, null == n ? void 0 : n.id), [l, n]);
+  } = e, w = (0, b.Z)(l, v.id, P), E = null != v ? v : x, S = (0, i.e7)([o.ZP], () => o.ZP.getNick(l, null == n ? void 0 : n.id), [l, n]);
   P = null == E || null != P ? P : (0, p.DK)(E);
   let {
     startTime: T
-  } = (0, f.ZP)(null != O ? O : x, P), D = (0, d.Z)(P, O.id), W = (null == E ? void 0 : E.scheduled_start_time) != null ? (0, p.lh)(D, T, new Date(E.scheduled_start_time)) : null;
+  } = (0, f.ZP)(null != v ? v : x, P), D = (0, d.Z)(P, v.id), W = (null == E ? void 0 : E.scheduled_start_time) != null ? (0, p.lh)(D, T, new Date(E.scheduled_start_time)) : null;
   if (null == E) return null;
   let {
     entity_type: Z,
@@ -79,13 +79,13 @@ function x(e) {
   } = E;
   return (0, r.jsxs)("div", {
     className: a()(h.statusContainer, t),
-    children: [(0, r.jsx)(v.z, {
+    children: [(0, r.jsx)(O.z, {
       startTime: T.toISOString(),
       status: null != W ? W : I,
       eventType: Z,
       isNew: s,
       recurrenceRule: (0, m.KV)(_),
-      guildEventId: O.id,
+      guildEventId: v.id,
       recurrenceId: P
     }), (0, r.jsx)("div", {
       className: h.spacer
@@ -151,7 +151,7 @@ function P(e) {
       })]
     }), null != u && (0, r.jsx)("div", {
       className: h.thumbnailContainer,
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(v.Z, {
         source: u,
         className: h.thumbnail
       })
@@ -179,7 +179,7 @@ function w(e) {
     className: h.container,
     children: [g && null != c ? (0, r.jsx)("div", {
       className: h.thumbnailContainer,
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(v.Z, {
         source: c,
         className: h.thumbnail
       })

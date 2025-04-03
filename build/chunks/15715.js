@@ -67,5 +67,8 @@ var i = {
 };
 let n = function(e, t, a) {
   var n, r = i[e];
-  return (n = "string" == typeof r ? r : 1 === t ? r.one : r.other.replace("{{count}}", String(t)), null != a && a.addSuffix) ? a.comparison && a.comparison > 0 ? "σε " + n : n + " πριν" : n
+  if (n = "string" == typeof r ? r : 1 === t ? r.one : r.other.replace("{{count}}", String(t)), null != a && a.addSuffix)
+    if (a.comparison && a.comparison > 0) return "σε " + n;
+    else return n + " πριν";
+  return n
 }

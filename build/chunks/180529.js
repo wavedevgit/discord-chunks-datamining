@@ -28,15 +28,15 @@ function u(e) {
     bottom: r = 0
   } = e, {
     ref: u,
-    height: d
-  } = l(), g = (0, s.q_F)({
+    height: g
+  } = l(), d = (0, s.q_F)({
     from: {
       height: 0,
       paddingBottom: "0px",
       marginTop: "0px"
     },
     to: {
-      height: t ? d : 0,
+      height: t ? g : 0,
       paddingBottom: t ? "".concat(r, "px") : "0px",
       marginTop: t ? "".concat(o, "px") : "0px"
     },
@@ -59,9 +59,9 @@ function u(e) {
   return (0, i.jsx)(a.animated.div, {
     style: {
       overflow: "hidden",
-      height: g.height,
-      paddingBottom: g.paddingBottom,
-      marginTop: g.marginTop
+      height: d.height,
+      paddingBottom: d.paddingBottom,
+      marginTop: d.marginTop
     },
     children: (0, i.jsx)(a.animated.div, {
       style: {

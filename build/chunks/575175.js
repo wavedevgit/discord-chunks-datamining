@@ -43,30 +43,18 @@ function u(e, t) {
 }
 
 function d(e, t, d) {
-  if (t && (0, a.p)()) {
-    (0, l.ZDy)(async () => {
-      let {
-        default: e
-      } = await n.e("41281").then(n.bind(n, 669732));
-      return t => (0, r.jsx)(e, c({}, t))
-    });
-    return
-  }
-  if (t) {
-    (0, l.h7j)(e => (0, r.jsx)(o.default, u(c({}, e), {
-      title: s.NW.string(s.t.FJSZVF),
-      body: s.NW.string(s.t.etJjgY)
-    })));
-    return
-  }
-  if (e) {
-    (0, l.h7j)(e => (0, r.jsx)(o.default, u(c({}, e), {
-      title: s.NW.string(s.t["+JQCa2"]),
-      body: s.NW.string(s.t.hsNm7e)
-    })));
-    return
-  }
-  i.Z.toggleSelfMute({
+  return t && (0, a.p)() ? void(0, l.ZDy)(async () => {
+    let {
+      default: e
+    } = await n.e("41281").then(n.bind(n, 669732));
+    return t => (0, r.jsx)(e, c({}, t))
+  }) : t ? void(0, l.h7j)(e => (0, r.jsx)(o.default, u(c({}, e), {
+    title: s.NW.string(s.t.FJSZVF),
+    body: s.NW.string(s.t.etJjgY)
+  }))) : e ? void(0, l.h7j)(e => (0, r.jsx)(o.default, u(c({}, e), {
+    title: s.NW.string(s.t["+JQCa2"]),
+    body: s.NW.string(s.t.hsNm7e)
+  }))) : void i.Z.toggleSelfMute({
     location: d
   })
 }

@@ -11,14 +11,14 @@ var c = r(442837),
   l = r(572004),
   s = r(981631),
   u = r(388032),
-  b = r(805193);
+  b = r(766879);
 let p = function(e) {
   var t;
   let {
     guild: p,
     user: d,
     onSelect: y
-  } = e, O = null !== (t = null == p ? void 0 : p.id) && void 0 !== t ? t : s.lds, f = (0, c.e7)([a.Z], () => null != p && a.Z.canManageUser(s.Plq.BAN_MEMBERS, d, p), [p, d]);
+  } = e, O = null != (t = null == p ? void 0 : p.id) ? t : s.lds, f = (0, c.e7)([a.Z], () => null != p && a.Z.canManageUser(s.Plq.BAN_MEMBERS, d, p), [p, d]);
   return (0, n.jsx)(o.v2r, {
     navId: "member-application-context-menu",
     className: b.contextMenu,

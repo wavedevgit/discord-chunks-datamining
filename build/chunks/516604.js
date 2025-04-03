@@ -19,22 +19,22 @@ let o = e => {
     shouldTick: m
   } = (0, l.Z)(e), p = n.useMemo(() => new i.ZP, []), h = n.useCallback(e => {
     e.assetMap = p, r(e)
-  }, [p, r]), [y, v] = n.useState(!1), w = n.useRef(), x = n.useRef(), E = n.useRef(s.Z.lastConfetti);
+  }, [p, r]), [y, w] = n.useState(!1), v = n.useRef(), x = n.useRef(), E = n.useRef(s.Z.lastConfetti);
   return n.useEffect(() => {
     async function e(e) {
       var t;
       let {
         emoji: r,
         boundingRect: n
-      } = e, i = null !== (t = r.id) && void 0 !== t ? t : r.name, l = null == r.id ? c.ZP.getURL(r.name) : u.ZP.getEmojiURL({
+      } = e, i = null != (t = r.id) ? t : r.name, l = null == r.id ? c.ZP.getURL(r.name) : u.ZP.getEmojiURL({
         id: r.id,
         animated: !1,
         size: 64,
         forcePNG: !0
       });
-      await p.loadRemoteImage(i, l), o(i, n), v(!0), null != x.current && clearTimeout(x.current), x.current = setTimeout(() => {
+      await p.loadRemoteImage(i, l), o(i, n), w(!0), null != x.current && clearTimeout(x.current), x.current = setTimeout(() => {
         var e;
-        let t = null === (e = s.Z.lastConfetti) || void 0 === e ? void 0 : e.triggerTime;
+        let t = null == (e = s.Z.lastConfetti) ? void 0 : e.triggerTime;
         (null == t || Date.now() - t > 2500) && a.Z.dispatch({
           type: "POTIONS_SET_CONFETTI_MODE",
           enabled: !1
@@ -50,13 +50,13 @@ let o = e => {
     }), clearTimeout(x.current))
   }, []), n.useEffect(() => {
     let e = () => {
-      m.current ? w.current = setTimeout(e, 1e3) : (v(!1), w.current = null)
+      m.current ? v.current = setTimeout(e, 1e3) : (w(!1), v.current = null)
     };
-    return w.current = setTimeout(e, 1e3), () => {
-      null != w.current && (a.Z.dispatch({
+    return v.current = setTimeout(e, 1e3), () => {
+      null != v.current && (a.Z.dispatch({
         type: "POTIONS_SET_CONFETTI_MODE",
         enabled: !1
-      }), clearTimeout(w.current))
+      }), clearTimeout(v.current))
     }
   }, [y, m]), {
     update: t,

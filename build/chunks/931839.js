@@ -9,7 +9,7 @@ var r = s(120356),
   a = s.n(r),
   l = s(481060),
   c = s(388032),
-  d = s(219801),
+  d = s(923918),
   o = ((n = {})[n.Intro = 0] = "Intro", n[n.Customize = 1] = "Customize", n[n.Tips = 2] = "Tips", n);
 
 function m(e) {

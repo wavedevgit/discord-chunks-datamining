@@ -23,11 +23,11 @@ var r = s(200651),
   x = s(981631),
   m = s(921944),
   h = s(388032),
-  j = s(106511),
+  j = s(742116),
   y = s(482668),
-  v = s(21504);
+  C = s(21504);
 
-function C(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var s = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(s);
@@ -106,7 +106,7 @@ let S = () => (0, r.jsxs)("div", {
       tooltipClassName: j.marketingBadgeTooltip,
       allowOverflow: !0,
       tooltipContentClassName: j.tooltipContent,
-      children: e => (0, r.jsx)("div", P(C({}, e), {
+      children: e => (0, r.jsx)("div", P(v({}, e), {
         children: t
       }))
     })
@@ -136,7 +136,7 @@ let S = () => (0, r.jsxs)("div", {
       tooltipClassName: null,
       allowOverflow: !0,
       tooltipContentClassName: null,
-      children: e => (0, r.jsx)("div", P(C({}, e), {
+      children: e => (0, r.jsx)("div", P(v({}, e), {
         children: (0, r.jsx)(O.Z, {
           copy: h.NW.string(h.t.OS9KPj),
           className: j.greyedOut
@@ -156,7 +156,7 @@ let S = () => (0, r.jsxs)("div", {
       (0, c.EW)(o.z.Q1_2025_MARKETING_MOMENT_REMINDER_COACHMARK, {
         dismissAction: m.L.TAKE_ACTION
       })
-    }, b = n ? v.Z : y.Z;
+    }, b = n ? C.Z : y.Z;
     return (0, r.jsx)(l.yRy, {
       shouldShow: !0,
       onRequestClose: f,

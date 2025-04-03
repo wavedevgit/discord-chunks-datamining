@@ -25,7 +25,7 @@ var r, l = n(200651),
   S = n(768581),
   P = n(463396),
   N = n(981631),
-  w = n(373232);
+  w = n(848697);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -91,7 +91,7 @@ function Z(e) {
     } = e,
     B = o.useRef(null),
     z = o.useContext(b.Z),
-    U = null !== (t = null == f ? void 0 : f.guild_id) && void 0 !== t ? t : z,
+    U = null != (t = null == f ? void 0 : f.guild_id) ? t : z,
     {
       analyticsLocations: H
     } = (0, p.ZP)(m.Z.USERNAME),
@@ -120,9 +120,11 @@ function Z(e) {
     },
     ei = {
       className: a()([w.username, et && er.gradientClassName, et && eo.gradientClassName]),
-      style: Q ? et && null != X ? R({}, er.gradientStyle) : null != J ? {
-        color: J
-      } : void 0 : void 0,
+      style: (() => {
+        if (Q) return et && null != X ? R({}, er.gradientStyle) : null != J ? {
+          color: J
+        } : void 0
+      })(),
       onClick: _,
       onContextMenu: L,
       children: W + q

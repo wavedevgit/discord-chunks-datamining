@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(642128),
+  a = n.n(l),
+  o = n(642128),
   s = n(990547),
   c = n(873546),
   u = n(481060),
@@ -21,11 +21,11 @@ var r = n(200651),
   E = n(441623),
   O = n(317271),
   N = n(674701),
-  v = n(474936),
-  y = n(981631),
-  I = n(388032),
-  C = n(700149),
-  S = n(311244);
+  y = n(474936),
+  I = n(981631),
+  v = n(388032),
+  C = n(26725),
+  S = n(114959);
 let T = {
   width: 14,
   height: 14
@@ -68,7 +68,7 @@ function P(e) {
     D = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
-      m.default.track(y.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? void 0 : r.affinity
       }), (0, h.Z)({
@@ -79,27 +79,27 @@ function P(e) {
         analyticsLocations: j,
         analyticsObject: {
           page: l,
-          section: y.jXE.FRIENDS_LIST_FRIEND_ROW,
-          object: y.qAy.BUTTON_CTA,
-          objectType: y.Qqv.GIFT
+          section: I.jXE.FRIENDS_LIST_FRIEND_ROW,
+          object: I.qAy.BUTTON_CTA,
+          objectType: I.Qqv.GIFT
         },
         giftMessage: k()
       })
     },
-    k = () => n === v.hX.FRIEND_ANNIVERSARY ? I.NW.formatToPlainString(I.t["L2s/Nz"], {
+    k = () => n === y.hX.FRIEND_ANNIVERSARY ? v.NW.formatToPlainString(v.t["L2s/Nz"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    M = () => n === v.hX.FRIEND_ANNIVERSARY ? I.NW.string(I.t["4LohBA"]) : (0, b.Ou)(n),
+    M = () => n === y.hX.FRIEND_ANNIVERSARY ? v.NW.string(v.t["4LohBA"]) : (0, b.Ou)(n),
     U = () => w ? (0, r.jsx)(u.P3F, {
       "aria-label": M(),
       onClick: D,
-      className: o()(S.actionButton, C.popoutButton, {
+      className: a()(S.actionButton, C.popoutButton, {
         [S.highlight]: P,
         [S.actionButtonMobile]: c.tq
       }),
       onMouseEnter: R,
       onMouseLeave: L,
-      children: (0, r.jsx)(a.animated.div, {
+      children: (0, r.jsx)(o.animated.div, {
         className: C.spriteContainer,
         children: (0, r.jsx)("div", {
           className: C.sprite
@@ -143,8 +143,8 @@ function P(e) {
       onMouseLeave: L,
       popoutPosition: e.position,
       analyticsPage: l,
-      analyticsSection: y.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
+      analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
+      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
       glow: !0
     }),
     children: () => U()

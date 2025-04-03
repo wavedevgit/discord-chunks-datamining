@@ -7,7 +7,7 @@ n.d(t, {
   cr: () => x,
   ec: () => P,
   h6: () => h,
-  jd: () => y,
+  jd: () => v,
   qz: () => j
 }), n(653041), n(47120), n(773603), n(789020);
 var r, l = n(192379),
@@ -22,9 +22,9 @@ var r, l = n(192379),
   f = n(106976),
   b = n(307643),
   O = n(488915),
-  v = n(171246),
-  m = n(981631),
-  y = ((r = {})[r.NOT_LOADED = 0] = "NOT_LOADED", r[r.LOADING = 1] = "LOADING", r[r.LOADED = 2] = "LOADED", r[r.ERROR = 3] = "ERROR", r);
+  m = n(171246),
+  y = n(981631),
+  v = ((r = {})[r.NOT_LOADED = 0] = "NOT_LOADED", r[r.LOADING = 1] = "LOADING", r[r.LOADED = 2] = "LOADED", r[r.ERROR = 3] = "ERROR", r);
 let g = e => {
   let {
     guildId: t,
@@ -32,7 +32,7 @@ let g = e => {
     forceRefetch: r = !1
   } = e, o = (0, i.e7)([O.Z], () => null != t ? O.Z.getEntitlementsForGuildFetchState(t) : null, [t]);
   return l.useEffect(() => {
-    if (null == t || t === m.ME) return;
+    if (null == t || t === y.ME) return;
     let e = O.Z.getEntitlementsForGuildFetchState(t);
     n && (e === O.M.NOT_FETCHED || r) && (0, f.i1)(t)
   }, [t, n, r]), {
@@ -42,12 +42,12 @@ let g = e => {
 
 function h(e) {
   var t;
-  let n = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : m.lds,
+  let n = null != (t = null == e ? void 0 : e.id) ? t : y.lds,
     {
       entitlementsLoaded: r
     } = g({
       guildId: n,
-      canFetch: (0, i.e7)([u.Z], () => u.Z.can(m.Plq.ADMINISTRATOR, e))
+      canFetch: (0, i.e7)([u.Z], () => u.Z.can(y.Plq.ADMINISTRATOR, e))
     }),
     o = (0, i.e7)([p.Z], () => p.Z.getLastGuildDismissedTime(n)),
     a = (0, i.Wu)([O.Z], () => {
@@ -69,11 +69,11 @@ let j = () => {
     t(1), Promise.all([(0, o.p0)({
       withSku: !0,
       withApplication: !0,
-      entitlementType: m.qc2.APPLICATION_SUBSCRIPTION
+      entitlementType: y.qc2.APPLICATION_SUBSCRIPTION
     }), (0, o.p0)({
       withSku: !0,
       withApplication: !0,
-      entitlementType: m.qc2.PURCHASE
+      entitlementType: y.qc2.PURCHASE
     })]).catch(() => {
       t(3)
     }).then(() => {
@@ -104,7 +104,7 @@ function I(e, t) {
 }
 let E = e => {
   var t, n;
-  return null !== (n = null === (t = e.renewalMutations) || void 0 === t ? void 0 : t.items) && void 0 !== n ? n : []
+  return null != (n = null == (t = e.renewalMutations) ? void 0 : t.items) ? n : []
 };
 
 function x(e, t) {
@@ -139,8 +139,8 @@ function N(e) {
     bundledSkuIds: u,
     flags: s
   } = r;
-  for (let e of null !== (t = l.getActiveApplicationSubscriptions()) && void 0 !== t ? t : []) {
-    if ((0, v.KK)(s) && null != a && (null === (n = e.metadata) || void 0 === n ? void 0 : n.application_subscription_guild_id) !== a) continue;
+  for (let e of null != (t = l.getActiveApplicationSubscriptions()) ? t : []) {
+    if ((0, m.KK)(s) && null != a && (null == (n = e.metadata) ? void 0 : n.application_subscription_guild_id) !== a) continue;
     let t = o(e).map(e => i.get(e.planId)).find(e => null != e && u.includes(e.skuId));
     if (null != t) return [e, t]
   }

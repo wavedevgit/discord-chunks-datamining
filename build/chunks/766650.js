@@ -10,7 +10,7 @@ var n = r(200651),
   o = r(481060),
   c = r(144114),
   u = r(317175),
-  d = r(899271);
+  d = r(764731);
 
 function h(e) {
   let {
@@ -21,7 +21,7 @@ function h(e) {
   s.useEffect(() => {
     function e() {
       var e, r;
-      m(t && null !== (r = null === (e = h.current) || void 0 === e ? void 0 : e.getBoundingClientRect().width) && void 0 !== r ? r : 0)
+      m(t && null != (r = null == (e = h.current) ? void 0 : e.getBoundingClientRect().width) ? r : 0)
     }
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [t, r, i]);

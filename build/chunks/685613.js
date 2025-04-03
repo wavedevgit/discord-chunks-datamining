@@ -15,7 +15,7 @@ var i = n(120356),
   m = n(475595),
   p = n(78826),
   x = n(981631),
-  g = n(184110),
+  g = n(582835),
   h = ((r = {})[r.SMALL = 24] = "SMALL", r[r.MEDIUM = 32] = "MEDIUM", r),
   f = ((s = {})[s.SMALL = 2] = "SMALL", s[s.MEDIUM = 8] = "MEDIUM", s);
 let j = function(e) {
@@ -28,7 +28,7 @@ let j = function(e) {
     theme: h = x.BRd.DARK,
     withCosponsor: f = !0,
     withGameTile: j = !0
-  } = e, b = (0, u.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, C = (0, d.Gd)(s.id, b), v = f && null != s.config.cosponsorMetadata && null != C;
+  } = e, b = (0, u.wj)(h) ? x.BRd.DARK : x.BRd.LIGHT, C = (0, d.Gd)(s.id, b), N = f && null != s.config.cosponsorMetadata && null != C;
   return (0, o.jsxs)("div", {
     className: a()(g.partnerBranding, t),
     children: [j && (0, o.jsx)(p.Fl, {
@@ -56,12 +56,12 @@ let j = function(e) {
       children: e => (0, o.jsx)("img", {
         ref: e,
         className: a()(g.partnerBrandingLogotype, n, {
-          [g.partnerBrandingLogotypeWithCosponsor]: v
+          [g.partnerBrandingLogotypeWithCosponsor]: N
         }),
         alt: s.config.messages.gameTitle,
         src: (0, m.fh)(s, m.eC.LOGO_TYPE, b).url
       })
-    }), v && (0, o.jsxs)(o.Fragment, {
+    }), N && (0, o.jsxs)(o.Fragment, {
       children: [(0, o.jsx)("div", {
         className: g.cosponsorBrandSeparatorWrapper,
         style: {
@@ -78,7 +78,7 @@ let j = function(e) {
           return (0, o.jsx)("img", {
             ref: e,
             className: a()(g.partnerBrandingLogotype, g.partnerBrandingLogotypeWithCosponsor, n),
-            alt: null !== (r = null === (t = s.config.cosponsorMetadata) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : "",
+            alt: null != (r = null == (t = s.config.cosponsorMetadata) ? void 0 : t.name) ? r : "",
             src: C.url
           })
         }

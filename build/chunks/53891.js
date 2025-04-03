@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => f
 });
@@ -6,24 +6,24 @@ var r = n(200651),
   i = n(442837),
   s = n(704215),
   a = n(481060),
-  o = n(710845),
-  l = n(645041),
+  l = n(710845),
+  o = n(645041),
   c = n(430824),
   d = n(562511),
   u = n(299929),
   m = n(921944),
   g = n(388032);
-let p = new o.Z("GuildTagCoachmark");
+let p = new l.Z("GuildTagCoachmark");
 
 function h(e) {
   let t = (0, i.e7)([c.Z], () => {
     var t;
-    return null === (t = c.Z.getGuild(e.guildId)) || void 0 === t ? void 0 : t.name
+    return null == (t = c.Z.getGuild(e.guildId)) ? void 0 : t.name
   });
 
   function n(t) {
     var n;
-    (0, l.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guildId, !0, m.L.DISMISS), null === (n = e.onDismiss) || void 0 === n || n.call(e, t)
+    (0, o.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guildId, !0, m.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   return (0, r.jsx)(a.yRy, {
     position: "top",

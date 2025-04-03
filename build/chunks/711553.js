@@ -11,10 +11,9 @@ var r = n(120356),
   l = n(518084),
   a = n(981631),
   c = n(388032),
-  u = n(524745);
+  u = n(905763);
 let d = function(e) {
-  let t;
-  let {
+  let t, {
     title: n,
     header: r,
     children: d,

@@ -22,10 +22,10 @@ t.exports = function(t) {
   for (t.setStart(t.startContainer, 0); u(o(t), h) && (d = t.startContainer, g = t.startOffset, d.parentNode || a(!1), t.setStartBefore(d), 1 !== d.nodeType || "inline" === getComputedStyle(d).display););
   for (var y = d, v = g - 1;;) {
     for (var m = y.nodeValue, _ = v; _ >= 0; _--)
-      if (!(null != m && _ > 0 && n.isSurrogatePair(m, _ - 1))) {
+      if (!(null != m && _ > 0 && n.isSurrogatePair(m, _ - 1)))
         if (t.setStart(y, _), u(o(t), h)) d = y, g = _;
-        else break
-      } if (-1 === _ || 0 === y.childNodes.length) break;
+        else break;
+    if (-1 === _ || 0 === y.childNodes.length) break;
     v = function(t) {
       switch (t.nodeType) {
         case Node.DOCUMENT_TYPE_NODE:

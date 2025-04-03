@@ -86,10 +86,7 @@ var n = r(763453),
       b = m.getKey(),
       S = l && (!y.getChildKeys().isEmpty() || !v.getChildKeys().isEmpty());
     r.forEach(function(t, e) {
-      if (e !== a) {
-        d.push(t);
-        return
-      }
+      if (e !== a) return void d.push(t);
       S ? d.push(t) : d.push(f(t, u, o)), o.slice(+!S, g - 1).forEach(function(t) {
         return d.push(t)
       }), d.push(p(t, u, o))

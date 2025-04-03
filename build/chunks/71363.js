@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => v
+  Z: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(622535),
+  l = n(442837),
+  o = n(622535),
   c = n(481060),
   d = n(607070),
   u = n(100527),
@@ -22,13 +22,13 @@ var r = n(200651),
   _ = n(75077),
   E = n(981631),
   j = n(388032),
-  O = n(26526),
+  O = n(614729),
   C = n(865215);
-let v = e => {
+let S = e => {
   let t, n, {
       isAllPerksVisible: s,
-      setIsAllPerksVisible: v,
-      previousComponent: S,
+      setIsAllPerksVisible: S,
+      previousComponent: v,
       isFullScreen: T
     } = e,
     I = i.useRef(null),
@@ -41,7 +41,7 @@ let v = e => {
       analyticsLocations: P
     } = (0, m.ZP)(u.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [R, D] = i.useState(!1),
-    Z = (0, o.e7)([d.Z], () => d.Z.useReducedMotion),
+    Z = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     w = (0, _.mN)(),
     {
       fractionalState: k
@@ -60,9 +60,9 @@ let v = e => {
         children: [(0, r.jsx)(f.Z, {
           className: O.heroHeading,
           onBackClick: () => {
-            v(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
+            S(!1), p.default.track(E.rMx.NITRO_HOME_NAVIGATION, {
               current_component: x.MQ.SEE_ALL,
-              next_component: S,
+              next_component: v,
               interaction_component: "Back Button"
             })
           }
@@ -119,7 +119,7 @@ let v = e => {
           })]
         }), (0, r.jsx)("div", {
           className: O.footerSpacing
-        }), (0, r.jsx)(l.$, {
+        }), (0, r.jsx)(o.$, {
           innerRef: y,
           onChange: e => {
             e && !R && (p.default.track(E.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {

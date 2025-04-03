@@ -26,7 +26,7 @@ async function o(t, e) {
 function p(t, e) {
   let a = (0, c.e7)([s.Z], () => {
     var e, a;
-    return null === (a = s.Z.settings.guilds) || void 0 === a ? void 0 : null === (e = a.guilds) || void 0 === e ? void 0 : e[t]
+    return null == (a = s.Z.settings.guilds) || null == (e = a.guilds) ? void 0 : e[t]
   }, [t]);
   return {
     leaderboardsDisabled: (null == a ? void 0 : a.leaderboardsDisabled) === !0,

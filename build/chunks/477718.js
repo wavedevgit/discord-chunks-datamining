@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => P
 });
@@ -19,13 +19,13 @@ var r = n(200651),
   b = n(501801),
   _ = n(271383),
   C = n(430824),
-  v = n(5192),
-  y = n(776767),
-  x = n(981631),
+  y = n(5192),
+  x = n(776767),
+  v = n(981631),
   j = n(388032),
-  O = n(194317),
-  E = n(580665),
-  N = n(88562);
+  O = n(54433),
+  E = n(44946),
+  N = n(12740);
 
 function I(e) {
   var t;
@@ -35,7 +35,7 @@ function I(e) {
     guild: a
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), y = null === (t = g.V$(x.zUn.REASON, n)) || void 0 === t ? void 0 : t.newValue, N = g.J5(n), I = (0, h.LJ)(n.id), P = (0, c.e7)([_.ZP], () => null != n.userId ? _.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), S = i.useCallback(e => t => {
+  } = (0, p.ZP)(), m = g.nm(n), C = g.QM(n), x = null == (t = g.V$(v.zUn.REASON, n)) ? void 0 : t.newValue, N = g.J5(n), I = (0, h.LJ)(n.id), P = (0, c.e7)([_.ZP], () => null != n.userId ? _.ZP.getMember(l.guildId, n.userId) : null, [l.guildId, n.userId]), S = i.useCallback(e => t => {
     t.preventDefault(), t.stopPropagation(), null != e && (0, f.RE)(e, d)
   }, [d]), Z = i.useCallback(() => null == n.user ? null : (0, r.jsx)(u.ua7, {
     text: j.NW.string(j.t.mvsi9v),
@@ -55,8 +55,8 @@ function I(e) {
           variant: "text-sm/medium",
           tag: "span",
           children: ["@", (0, r.jsx)(u.PUh, {
-            name: v.ZP.getName(l.guildId, null, n.user),
-            color: null !== (t = null == P ? void 0 : P.colorString) && void 0 !== t ? t : void 0
+            name: y.ZP.getName(l.guildId, null, n.user),
+            color: null != (t = null == P ? void 0 : P.colorString) ? t : void 0
           })]
         })
       })
@@ -85,7 +85,7 @@ function I(e) {
           children: I
         })
       })]
-    }), null != y && (0, r.jsx)("div", {
+    }), null != x && (0, r.jsx)("div", {
       className: O.auditLogSecondaryContainer,
       children: (0, r.jsxs)("div", {
         className: O.auditLogReason,
@@ -93,10 +93,10 @@ function I(e) {
           variant: "text-sm/normal",
           color: "text-muted",
           tag: "span",
-          children: y
+          children: x
         })]
       })
-    }), null == y && null != N && (0, r.jsx)("div", {
+    }), null == x && null != N && (0, r.jsx)("div", {
       className: O.auditLogSecondaryContainer,
       children: (0, r.jsxs)("div", {
         className: O.auditLogSecondary,
@@ -107,7 +107,7 @@ function I(e) {
           children: N
         })]
       })
-    }), null == y && null == N && (0, r.jsx)("div", {
+    }), null == x && null == N && (0, r.jsx)("div", {
       className: O.auditLogSecondaryContainer,
       children: (0, r.jsx)("div", {
         className: O.auditLogSecondary,
@@ -135,13 +135,13 @@ function P(e) {
     return null == e || null == n ? [] : g._$(e, n)
   }, [n]);
   return (i.useEffect(() => {
-    (async function(e, t) {
+    !async function(e, t) {
       await d.gV(t, e)
-    })(t.guildId, t.userId)
+    }(t.guildId, t.userId)
   }, [t.guildId, t.userId]), null == n || 0 === l.length) ? null : (0, r.jsx)(u.xJW, {
     title: j.NW.string(j.t.flCxLi),
     titleClassName: N.infoTitle,
-    children: l.length > 0 ? (0, r.jsx)(y.WM, {
+    children: l.length > 0 ? (0, r.jsx)(x.WM, {
       children: l.map(e => (0, r.jsx)(I, {
         log: e,
         member: t,

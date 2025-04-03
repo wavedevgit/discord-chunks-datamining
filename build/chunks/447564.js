@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   default: () => N,
   k: () => O
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(311570),
-  o = n(692547),
-  l = n(481060),
+  l = n(692547),
+  o = n(481060),
   s = n(100527),
   c = n(906732),
   u = n(688465),
@@ -19,11 +19,11 @@ var r = n(200651),
   g = n(937615),
   _ = n(82950),
   b = n(981631),
-  v = n(388032),
-  x = n(580679),
-  y = n(99713);
+  x = n(388032),
+  y = n(668275),
+  E = n(99713);
 
-function E(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,11 +42,11 @@ function E(e) {
   return e
 }
 let O = (e, t) => {
-  (0, m.mx)(t), (0, l.ZDy)(async () => {
+  (0, m.mx)(t), (0, o.ZDy)(async () => {
     let {
       default: t
     } = await Promise.resolve().then(n.bind(n, 447564));
-    return n => (0, r.jsx)(t, E({
+    return n => (0, r.jsx)(t, v({
       channel: e
     }, n))
   }, {
@@ -59,8 +59,8 @@ function N(e) {
     transitionState: t,
     channel: n
   } = e;
-  return (0, r.jsx)(l.Y0X, {
-    size: l.CgR.DYNAMIC,
+  return (0, r.jsx)(o.Y0X, {
+    size: o.CgR.DYNAMIC,
     transitionState: t,
     children: (0, r.jsx)(C, {
       channel: n
@@ -72,22 +72,22 @@ let j = "HD_STREAMING_POTION_MODAL_KEY";
 function C(e) {
   let {
     channel: t
-  } = e, n = (0, m.T$)(t), [o, u] = (0, i.useState)(!1), {
+  } = e, n = (0, m.T$)(t), [l, u] = (0, i.useState)(!1), {
     price: h,
     fetchingPrice: g,
     error: _
   } = (0, m.R2)(f.FX), {
-    entitlement: v,
-    fetchedEntitlement: x,
-    error: y
-  } = (0, m.t6)(f.FX), E = _ || y, {
+    entitlement: x,
+    fetchedEntitlement: y,
+    error: E
+  } = (0, m.t6)(f.FX), v = _ || E, {
     analyticsLocations: O
-  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != v && !v.consumed;
+  } = (0, c.ZP)([s.Z.HD_STREAMING_POTION_MODAL]), N = null != x && !x.consumed;
   (0, i.useEffect)(() => () => {
-    E && (0, p.SN)(f.FX)
-  }, [v, t, o, E]);
+    v && (0, p.SN)(f.FX)
+  }, [x, t, l, v]);
   let j = (0, i.useCallback)(() => {
-      (0, p.Zu)(t.id), (0, l.pTH)()
+      (0, p.Zu)(t.id), (0, o.pTH)()
     }, [t.id]),
     C = (0, i.useCallback)(() => {
       (0, d.Z)({
@@ -97,7 +97,7 @@ function C(e) {
         variantsReturnStyle: a.v.INDIVIDUAL_PRODUCTS
       })
     }, [O, j]),
-    S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == v ? void 0 : v.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!N : 3, [t.isHDStreamSplashed, n, null == v ? void 0 : v.type, N]),
+    S = (0, i.useMemo)(() => () => t.isHDStreamSplashed ? 4 : n ? (null == x ? void 0 : x.type) === b.qc2.DEVELOPER_GIFT ? 1 : 2 * !!N : 3, [t.isHDStreamSplashed, n, null == x ? void 0 : x.type, N]),
     T = (0, i.useMemo)(() => S(), [S]);
   return (0, r.jsx)(I, {
     channel: t,
@@ -106,7 +106,7 @@ function C(e) {
     onActionClick: () => {
       u(!0), (N ? j : C)()
     },
-    loading: g || !x
+    loading: g || !y
   })
 }
 let I = e => {
@@ -115,11 +115,11 @@ let I = e => {
       buttonState: n,
       price: i,
       onActionClick: a,
-      loading: o
+      loading: l
     } = e;
-    return o ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
+    return l ? (0, r.jsx)(Z, {}) : null == i ? (0, r.jsx)(w, {}) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: x.modal,
+        className: y.modal,
         children: [(0, r.jsx)(S, {}), (0, r.jsx)(T, {
           channel: t
         })]
@@ -131,9 +131,9 @@ let I = e => {
     })
   },
   S = () => (0, r.jsx)("img", {
-    className: x.image,
+    className: y.image,
     src: "https://cdn.discordapp.com/assets/premium/roadblocks/hd_streaming.png",
-    alt: v.NW.string(v.t.DdigcX)
+    alt: x.NW.string(x.t.DdigcX)
   }),
   T = e => {
     let {
@@ -141,34 +141,34 @@ let I = e => {
     } = e;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
-        className: x.body,
+        className: y.body,
         children: [(0, r.jsxs)("div", {
-          className: x.heading,
-          children: [(0, r.jsx)(l.X6q, {
+          className: y.heading,
+          children: [(0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
-            children: v.NW.string(v.t.K04rOD)
+            children: x.NW.string(x.t.K04rOD)
           }), (0, r.jsx)(u.Z, {})]
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
-          children: v.NW.string(v.t.lq40Pz)
-        }), (0, r.jsx)(l.Text, {
+          children: x.NW.string(x.t.lq40Pz)
+        }), (0, r.jsx)(o.Text, {
           color: "text-link",
           variant: "text-sm/normal",
-          children: v.NW.format(v.t["1wV4qq"], {
+          children: x.NW.format(x.t["1wV4qq"], {
             helpCenterLink: h.Z.getArticleURL(b.BhN.HD_STREAMING_POTION)
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-xs/medium",
-          children: v.NW.string(v.t.qk07Mj)
+          children: x.NW.string(x.t.qk07Mj)
         })]
       }), (0, r.jsx)("div", {
-        className: x.divider
+        className: y.divider
       }), (0, r.jsxs)("div", {
-        className: x.applyingTo,
-        children: [(0, r.jsx)(l.Text, {
+        className: y.applyingTo,
+        children: [(0, r.jsx)(o.Text, {
           variant: "eyebrow",
-          children: v.NW.string(v.t.tZyXg4)
+          children: x.NW.string(x.t.tZyXg4)
         }), (0, r.jsx)(_.Z, {
           channel: t
         })]
@@ -182,13 +182,13 @@ let I = e => {
       onActionClick: i
     } = e;
     return (0, r.jsxs)("div", {
-      className: x.footer,
-      children: [(0, r.jsx)(l.zxk, {
+      className: y.footer,
+      children: [(0, r.jsx)(o.zxk, {
         onClick: () => {
-          (0, l.Mr3)(j)
+          (0, o.Mr3)(j)
         },
-        color: l.zxk.Colors.PRIMARY,
-        children: v.NW.string(v.t.Avt5KS)
+        color: o.zxk.Colors.PRIMARY,
+        children: x.NW.string(x.t.Avt5KS)
       }), (0, r.jsx)(A, {
         buttonState: t,
         price: n,
@@ -201,20 +201,20 @@ let I = e => {
       buttonState: t,
       price: n,
       onActionClick: i
-    } = e, a = v.NW.formatToPlainString(v.t.S9LAdX, {
+    } = e, a = x.NW.formatToPlainString(x.t.S9LAdX, {
       price: (0, g.T4)(n.amount, n.currency)
     });
     if (3 === t || 4 === t) {
       let e = {
-        3: v.NW.string(v.t.Qrh2BQ),
-        4: v.NW.string(v.t.utRdl5)
+        3: x.NW.string(x.t.Qrh2BQ),
+        4: x.NW.string(x.t.utRdl5)
       } [t];
-      return (0, r.jsx)(l.ua7, {
-        tooltipContentClassName: x.tooltip,
+      return (0, r.jsx)(o.ua7, {
+        tooltipContentClassName: y.tooltip,
         text: e,
         children: e => {
           var t, n;
-          return (0, r.jsx)(l.zxk, (t = E({}, e), n = n = {
+          return (0, r.jsx)(o.zxk, (t = v({}, e), n = n = {
             disabled: !0,
             children: a
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -232,38 +232,38 @@ let I = e => {
     }
     let s = {
       0: a,
-      1: v.NW.string(v.t.sl6Tcn),
-      2: v.NW.string(v.t.XJ9INj)
+      1: x.NW.string(x.t.sl6Tcn),
+      2: x.NW.string(x.t.XJ9INj)
     } [t];
-    return (0, r.jsx)(l.zxk, {
+    return (0, r.jsx)(o.zxk, {
       onClick: i,
       children: (0, r.jsxs)("div", {
-        className: x.buttonCopy,
-        children: [(0, r.jsx)(l.hh5, {
-          color: o.Z.colors.WHITE,
+        className: y.buttonCopy,
+        children: [(0, r.jsx)(o.hh5, {
+          color: l.Z.colors.WHITE,
           size: "sm"
         }), s]
       })
     })
   },
   w = () => (0, r.jsx)("div", {
-    className: x.anomaly,
+    className: y.anomaly,
     children: (0, r.jsxs)("div", {
-      className: x.error,
-      children: [(0, r.jsx)(l.Eep, {
-        src: y,
+      className: y.error,
+      children: [(0, r.jsx)(o.Eep, {
+        src: E,
         width: 178,
         height: 190
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: v.NW.string(v.t.sIA0OD)
+        children: x.NW.string(x.t.sIA0OD)
       })]
     })
   }),
   Z = () => (0, r.jsx)("div", {
-    className: x.anomaly,
+    className: y.anomaly,
     children: (0, r.jsx)("div", {
-      className: x.spinner,
-      children: (0, r.jsx)(l.$jN, {})
+      className: y.spinner,
+      children: (0, r.jsx)(o.$jN, {})
     })
   })

@@ -40,13 +40,10 @@ function b(t) {
     field: g,
     onSave: m,
     onClose: y
-  } = t, [x, h] = o.useState(null !== (e = null == g ? void 0 : g.label) && void 0 !== e ? e : ""), [f, j] = o.useState(null), C = async () => {
+  } = t, [x, h] = o.useState(null != (e = null == g ? void 0 : g.label) ? e : ""), [f, j] = o.useState(null), C = async () => {
     null != f && j(null);
     let t = x.trim();
-    if ("" === t) {
-      j(d.NW.string(d.t["G+TI4+"]));
-      return
-    }
+    if ("" === t) return void j(d.NW.string(d.t["G+TI4+"]));
     try {
       await m({
         field_type: b,

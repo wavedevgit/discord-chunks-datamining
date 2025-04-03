@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(481060),
   x = n(561472),
   b = n(393238),
-  v = n(607070),
-  j = n(933557),
+  j = n(607070),
+  v = n(933557),
   C = n(243778),
   _ = n(71619),
   y = n(898188),
@@ -64,7 +64,7 @@ var r = n(200651),
   es = n(981631),
   eo = n(124368),
   ec = n(388032),
-  ed = n(142418);
+  ed = n(683999);
 
 function eu(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -162,7 +162,7 @@ function eb(e) {
   }, "section-divider")
 }
 
-function ev(e) {
+function ej(e) {
   let {
     section: t,
     coords: n,
@@ -179,7 +179,7 @@ function ev(e) {
   }, a) : null
 }
 
-function ej(e, t) {
+function ev(e, t) {
   return "card-".concat(e, "-").concat(t)
 }
 
@@ -219,7 +219,7 @@ function e_(e) {
     activeThreadIds: m,
     archivedThreadIds: f,
     searchResults: b,
-    canLoadMore: j,
+    canLoadMore: v,
     loadMore: C,
     activeThreadsLoading: _,
     archivedThreadsLoading: y,
@@ -293,23 +293,20 @@ function e_(e) {
         }, []);
       return a.useEffect(() => {
         var e;
-        let t = null === (e = r.current) || void 0 === e ? void 0 : e.getScrollerNode();
+        let t = null == (e = r.current) ? void 0 : e.getScrollerNode();
         if (null != t) return i.current = new IntersectionObserver(e => l(n, e), {
           root: t,
           rootMargin: "0px 100000px 0px 100000px",
           threshold: .5
         }), () => {
           var e;
-          null === (e = i.current) || void 0 === e || e.disconnect(), i.current = null
+          null == (e = i.current) || e.disconnect(), i.current = null
         }
       }, [n, l, r]), {
         observePostVisibilityAnalytics: a.useCallback((e, t) => {
           var r;
-          if (null == e) {
-            (0, V.Ct)(n, t, Date.now());
-            return
-          }
-          null === (r = i.current) || void 0 === r || r.observe(e)
+          if (null == e) return void(0, V.Ct)(n, t, Date.now());
+          null == (r = i.current) || r.observe(e)
         }, [n])
       }
     }({
@@ -339,7 +336,11 @@ function e_(e) {
     let e = Math.ceil(window.innerHeight / (0, en.KW)(ef.getWidth(ew))) * eP;
     return M && eg ? e : 0
   }, [ew, eP, M, eg]), eR = a.useMemo(() => {
-    if (er) return !K && eg ? [1, 0] : Q ? eg ? [1, b.length + ek, 0] : [1, m.length + eI, f.length + eE] : [1, m.length + eI, 0];
+    if (er)
+      if (!K && eg) return [1, 0];
+      else if (!Q) return [1, m.length + eI, 0];
+    else if (eg) return [1, b.length + ek, 0];
+    else return [1, m.length + eI, f.length + eE];
     return !K && eg ? [1, 1] : Q ? eg ? [1, b.length, 0, eT] : [1, m.length, f.length, eT] : [1, m.length, 1]
   }, [er, eg, m.length, f.length, K, Q, eT, b, eI, eE, ek]), eZ = a.useMemo(() => !K && eg ? [
     [],
@@ -391,8 +392,8 @@ function e_(e) {
     let {
       editorHeight: n,
       isGridLayout: r
-    } = ez.current, a = r ? eq : ee, i = null === (e = a.current) || void 0 === e ? void 0 : e.getScrollerState();
-    null != i && !eF && i.scrollTop > n && (null === (t = a.current) || void 0 === t || t.scrollTo({
+    } = ez.current, a = r ? eq : ee, i = null == (e = a.current) ? void 0 : e.getScrollerState();
+    null != i && !eF && i.scrollTop > n && (null == (t = a.current) || t.scrollTo({
       to: 0
     }))
   }, [eF]);
@@ -416,8 +417,8 @@ function e_(e) {
       isShowingSearchResult: h
     } = e, g = a.useCallback(e => n => {
       var r;
-      t.current = n, e.current = null !== (r = null == n ? void 0 : n.getScrollerNode()) && void 0 !== r ? r : null
-    }, [t]), f = a.useCallback(e => ev({
+      t.current = n, e.current = null != (r = null == n ? void 0 : n.getScrollerNode()) ? r : null
+    }, [t]), f = a.useCallback(e => ej({
       section: e.section,
       isShowingSearchResult: h,
       hasActiveThreads: n
@@ -500,7 +501,7 @@ function e_(e) {
         callback() {
           requestAnimationFrame(() => {
             var t;
-            null === (t = document.querySelector(e)) || void 0 === t || t.focus({
+            null == (t = document.querySelector(e)) || t.focus({
               preventScroll: !0
             })
           })
@@ -511,14 +512,14 @@ function e_(e) {
       if (null == t) return;
       let n = R.Z.getChannel(t);
       null != n && i(n, !0)
-    }, [i]), v = a.useCallback(function(e) {
+    }, [i]), j = a.useCallback(function(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
       if (0 === n[e].length) return "section-".concat(e, "-").concat(t);
       {
         let r = n[e][t];
-        return null == r ? ej(e, t) : ej(e, r)
+        return null == r ? ev(e, t) : ev(e, r)
       }
-    }, [n]), j = a.useCallback((e, t, n) => s(e, t, ev({
+    }, [n]), v = a.useCallback((e, t, n) => s(e, t, ej({
       section: e,
       coords: t,
       key: n,
@@ -534,8 +535,8 @@ function e_(e) {
       focusedThreadId: h,
       handleGridFocus: x,
       handleGridSelect: b,
-      getItemKey: v,
-      renderGridSection: j,
+      getItemKey: j,
+      renderGridSection: v,
       renderGridItem: a.useCallback((e, t, a, s, o) => {
         if (0 === e) return null;
         let c = n[e][t];
@@ -592,7 +593,7 @@ function e_(e) {
           let n = i.findIndex(t => t.find(t => t === e)),
             r = t.current.getCoordsMap(),
             a = r["__section__".concat(n)],
-            o = r[ej(n, e)];
+            o = r[ev(n, e)];
           null != a && null != o && t.current.scrollIntoViewRect({
             start: a.top + o.top - 100,
             end: a.top + o.top + o.height + 50
@@ -612,7 +613,7 @@ function e_(e) {
   let e3 = a.useCallback(() => {
       var e, n;
       if (eg) return;
-      let r = er ? null === (e = eq.current) || void 0 === e ? void 0 : e.getScrollerState() : null === (n = ee.current) || void 0 === n ? void 0 : n.getScrollerState();
+      let r = er ? null == (e = eq.current) ? void 0 : e.getScrollerState() : null == (n = ee.current) ? void 0 : n.getScrollerState();
       if (null == r) return;
       (0, G.ab)({
         guildId: t.guild_id,
@@ -621,7 +622,7 @@ function e_(e) {
       let a = r.scrollTop + r.offsetHeight;
       r.scrollHeight - a < (er ? Math.max(200, (0, en.KW)(ew)) : 200) && C()
     }, [eg, er, t.guild_id, t.id, ew, C]),
-    e1 = (0, g.e7)([v.Z], () => v.Z.keyboardModeEnabled),
+    e1 = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
     e6 = (0, ei.ZP)({
       id: "forum-grid-view",
       isEnabled: er && e1,
@@ -670,7 +671,7 @@ function e_(e) {
           children: (0, r.jsx)(p.GMG, eu({
             ref: e => {
               var t;
-              e8.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null, eX(e)
+              e8.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null, eX(e)
             },
             itemGutter: 16,
             padding: 24,
@@ -683,7 +684,7 @@ function e_(e) {
             renderSection: eJ,
             renderItem: eY,
             getSectionProps: e$,
-            onScroll: j ? e3 : void 0,
+            onScroll: v ? e3 : void 0,
             chunkSize: 350
           }, e2, e), A)
         }) : (0, r.jsx)(d.bG, {
@@ -702,7 +703,7 @@ function e_(e) {
                 renderRow: eU,
                 renderSection: eH,
                 chunkSize: 150,
-                onScroll: j ? e3 : void 0,
+                onScroll: v ? e3 : void 0,
                 paddingBottom: 24
               }, a, e), {
                 innerRole: "list"
@@ -719,7 +720,7 @@ function ey(e) {
   let {
     channel: t,
     coords: n
-  } = e, a = (0, j.ZP)(t);
+  } = e, a = (0, v.ZP)(t);
   return (0, r.jsx)("div", {
     className: l()(ed.missingReadHistoryPermission, ed.columnsSpan),
     style: n,
@@ -737,7 +738,7 @@ function eN(e) {
   let {
     channel: t,
     coords: n
-  } = e, a = (0, j.ZP)(t);
+  } = e, a = (0, v.ZP)(t);
   return (0, r.jsx)("div", {
     className: l()(ed.missingReadHistoryPermission, ed.columnsSpan),
     style: n,
@@ -779,7 +780,7 @@ function eS(e) {
   let {
     channel: s,
     isEmpty: x,
-    isSearchLoading: j,
+    isSearchLoading: v,
     numResults: N,
     children: O,
     coords: w,
@@ -814,7 +815,7 @@ function eS(e) {
   }, c.X), {
     tagFilter: U,
     layoutType: V
-  } = (0, B.H)(s.id), q = (0, Y.AF)(), J = (0, B.v)(), $ = (0, g.e7)([M.Z], () => M.Z.canChatInGuild(s.guild_id)), ee = (0, H.r_)(s), en = (0, I.cD)(s), [ea, ei] = a.useState(en), [, el] = (0, _.AB)(null !== (i = s.getGuildId()) && void 0 !== i ? i : void 0), eo = $ && (en || ea && el), eg = s.isMediaChannel();
+  } = (0, B.H)(s.id), q = (0, Y.AF)(), J = (0, B.v)(), $ = (0, g.e7)([M.Z], () => M.Z.canChatInGuild(s.guild_id)), ee = (0, H.r_)(s), en = (0, I.cD)(s), [ea, ei] = a.useState(en), [, el] = (0, _.AB)(null != (i = s.getGuildId()) ? i : void 0), eo = $ && (en || ea && el), eg = s.isMediaChannel();
   a.useEffect(() => {
     en && ei(!0)
   }, [en]);
@@ -835,24 +836,24 @@ function eS(e) {
     handler: ex
   });
   let eb = (0, g.e7)([A.Z], () => A.Z.getUploads(s.id, Z.d.FirstThreadMessage)),
-    ev = (0, H.ql)(s),
-    ej = a.useRef(null),
+    ej = (0, H.ql)(s),
+    ev = a.useRef(null),
     eC = a.useRef(null),
     [e_, ey] = a.useState(0),
     {
       width: eN
     } = (0, g.e7)([L.Z], () => L.Z.windowSize()),
-    eO = null === (n = ej.current) || void 0 === n ? void 0 : null === (t = n.getBoundingClientRect()) || void 0 === t ? void 0 : t.width,
+    eO = null == (n = ev.current) || null == (t = n.getBoundingClientRect()) ? void 0 : t.width,
     eS = a.useRef(null);
   a.useLayoutEffect(() => {
     var e;
     let t = eC.current,
-      n = null == t ? void 0 : null === (e = t.children) || void 0 === e ? void 0 : e[0];
-    if (null != ej.current && null != n && null != n.children) {
+      n = null == t || null == (e = t.children) ? void 0 : e[0];
+    if (null != ev.current && null != n && null != n.children) {
       let {
         left: e,
         top: t
-      } = ej.current.getBoundingClientRect(), r = 0;
+      } = ev.current.getBoundingClientRect(), r = 0;
       for (let a of n.children) {
         let {
           right: n,
@@ -865,8 +866,8 @@ function eS(e) {
       ey(r)
     }
   }, [s.availableTags, eN, eO, U]);
-  let eT = P.length > 0 && !T && (j || null != N),
-    eI = !__OVERLAY__ && !k && !T && E && (0 === R.textValue.trim().length || R.textValue.trim() === ev) && 0 === eb.length;
+  let eT = P.length > 0 && !T && (v || null != N),
+    eI = !__OVERLAY__ && !k && !T && E && (0 === R.textValue.trim().length || R.textValue.trim() === ej) && 0 === eb.length;
   a.useLayoutEffect(() => {
     let e = eT || eI;
     if (!e) return z(0);
@@ -903,7 +904,7 @@ function eS(e) {
     eL = a.useRef(null),
     eW = function() {
       let e = a.useRef(!1),
-        t = (0, g.e7)([v.Z], () => v.Z.keyboardModeEnabled),
+        t = (0, g.e7)([j.Z], () => j.Z.keyboardModeEnabled),
         n = a.useCallback(t => {
           e.current = t.shiftKey
         }, [e]);
@@ -912,7 +913,7 @@ function eS(e) {
     eF = a.useCallback(e => {
       if (eM(), e.target === ef.current && !eW.current) {
         var t;
-        null === (t = eL.current) || void 0 === t || t.focus()
+        null == (t = eL.current) || t.focus()
       }
     }, [eM, ef, eW]);
   return (0, r.jsx)("div", em(eu({
@@ -938,7 +939,7 @@ function eS(e) {
         children: (0, r.jsx)(Q.Z, {
           parentChannel: s,
           onChange: ex,
-          isSearchLoading: j,
+          isSearchLoading: v,
           canCreatePost: eo,
           inputRef: eL
         })
@@ -950,11 +951,11 @@ function eS(e) {
           children: [(0, r.jsx)(p.X6q, {
             variant: "text-xs/normal",
             color: "text-normal",
-            children: j ? ec.NW.string(ec.t["/9i3qq"]) : 0 === N ? ec.NW.string(ec.t.DbgHxs) : ec.NW.formatToPlainString(ec.t["tBz/8f"], {
+            children: v ? ec.NW.string(ec.t["/9i3qq"]) : 0 === N ? ec.NW.string(ec.t.DbgHxs) : ec.NW.formatToPlainString(ec.t["tBz/8f"], {
               numPosts: N,
               query: P
             })
-          }), !j && (0, r.jsx)(p.P3F, {
+          }), !v && (0, r.jsx)(p.P3F, {
             onClick: () => {
               (0, G.zI)({
                 guildId: s.guild_id,
@@ -1006,7 +1007,7 @@ function eS(e) {
         onChange: ex
       }), (0, r.jsxs)("div", {
         className: ed.tagsContainer,
-        ref: ej,
+        ref: ev,
         children: [(0, r.jsx)(eP, {
           channel: s
         }), s.availableTags.length > 0 ? (0, r.jsxs)(r.Fragment, {

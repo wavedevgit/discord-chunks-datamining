@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => I
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(481060),
-  o = n(129861),
-  a = n(607070),
+  a = n(129861),
+  o = n(607070),
   s = n(570928),
   c = n(388905),
   u = n(1585),
@@ -21,8 +21,8 @@ var i = n(442837),
   _ = n(332712),
   E = n(81471),
   O = n(388032),
-  N = n(764908);
-let v = e => {
+  N = n(818816);
+let y = e => {
     let {
       userId: t
     } = e, n = (0, _.O)(t);
@@ -48,15 +48,15 @@ let v = e => {
       })]
     })
   },
-  y = m.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
+  I = m.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function I(e) {
+function v(e) {
   var t;
   let {
     channel: n,
     otherUser: c,
     active: h
-  } = e, m = (0, i.e7)([a.Z], () => a.Z.useReducedMotion), _ = (0, i.e7)([f.Z], () => null == c ? null : f.Z.getNickname(c.id)), I = !m && h, C = (0, b.c)(n), {
+  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([f.Z], () => null == c ? null : f.Z.getNickname(c.id)), v = !m && h, C = (0, b.c)(n), {
     avatarDecorationSrc: S
   } = (0, d.Z)({
     user: c,
@@ -64,17 +64,17 @@ function I(e) {
     onlyAnimateOnHover: !0
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(I, {
       className: N.avatar,
-      src: (0, p.x)(n, 40, I),
+      src: (0, p.x)(n, 40, v),
       avatarDecoration: S,
       size: l.EFr.SIZE_40,
-      "aria-label": null !== (t = null == c ? void 0 : c.username) && void 0 !== t ? t : O.NW.string(O.t["30mdIy"])
+      "aria-label": null != (t = null == c ? void 0 : c.username) ? t : O.NW.string(O.t["30mdIy"])
     }), (0, r.jsxs)("div", {
       className: N.userPreview,
       children: [(0, r.jsxs)("div", {
         className: N.userContainerWithPreview,
-        children: [(0, r.jsx)(o.Z, {
+        children: [(0, r.jsx)(a.Z, {
           nick: _,
           user: c,
           showAccountIdentifier: !0,
@@ -92,7 +92,7 @@ function I(e) {
           channel: n
         }),
         forceHover: h,
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(y, {
           userId: c.id
         })
       })]

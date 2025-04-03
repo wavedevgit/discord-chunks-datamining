@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => D
 }), n(47120), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(301563);
@@ -18,19 +18,19 @@ var r = n(200651),
   f = n(783097),
   _ = n(433534),
   b = n(299206),
-  v = n(276022),
-  x = n(703656),
+  x = n(276022),
+  v = n(703656),
   C = n(706454),
   j = n(594174),
   y = n(626135),
   O = n(572004),
-  P = n(135431),
-  I = n(881294),
-  N = n(258971),
+  I = n(135431),
+  N = n(881294),
+  P = n(258971),
   S = n(98449),
   E = n(981631),
   T = n(388032),
-  A = n(176884);
+  A = n(284944);
 let L = "start_application_install",
   R = "launch_activity";
 
@@ -106,11 +106,11 @@ function Z(e) {
     onClickInstallApplication: d,
     canInstall: u
   } = function(e) {
-    let t = (0, I.nu)(),
+    let t = (0, N.nu)(),
       n = a.useCallback(() => {
         var t;
-        let n = null !== (t = N.z8.getField("guildId")) && void 0 !== t ? t : void 0;
-        (0, P.L)({
+        let n = null != (t = P.z8.getField("guildId")) ? t : void 0;
+        (0, I.L)({
           applicationId: e.id,
           customInstallUrl: e.custom_install_url,
           installParams: e.install_params,
@@ -124,34 +124,31 @@ function Z(e) {
       if (t && "true" === e.searchParams.get(L)) {
         e.searchParams.delete(L);
         let t = e.pathname + e.search;
-        (0, x.dL)(t), n()
+        (0, v.dL)(t), n()
       }
     }, [t, n]), {
       onClickInstallApplication: a.useCallback(() => {
-        if ((0, I.zZ)(E.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
+        if ((0, N.zZ)(E.rMx.APP_DIRECTORY_INSTALL_CLICKED, {
             application_id: e.id
           }), (o.tq || o.Em) && null == e.custom_install_url) {
-          let t = (0, P.E)({
+          let t = (0, I.E)({
             applicationId: e.id,
             customInstallUrl: e.custom_install_url,
             installParams: e.install_params,
             integrationTypesConfig: e.integration_types_config
           });
-          if (null != t) {
-            window.open(t, "_blank");
-            return
-          }
+          if (null != t) return void window.open(t, "_blank")
         }
         if (t) n();
         else {
-          let t = N.z8.getField("guildId");
+          let t = P.z8.getField("guildId");
           y.default.track(E.rMx.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: e.id,
             guild_id: t,
             auth_type: null != e.custom_install_url ? "custom_url" : "in_app",
             source: "product_page",
             device_platform: o.tq ? "mobile_web" : "desktop_web"
-          }), (0, I.rf)({
+          }), (0, N.rf)({
             [L]: "true"
           })
         }
@@ -227,24 +224,24 @@ let D = a.forwardRef(function(e, t) {
     autoTrackExposure: !0
   }).enabled, _ = e => "".concat(location.protocol, "//").concat(location.host).concat(E.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(e)), {
     analyticsLocations: y
-  } = (0, m.ZP)(), P = a.useCallback(() => {
-    (0, I.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+  } = (0, m.ZP)(), I = a.useCallback(() => {
+    (0, N.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
     }), (0, O.JG)(_(n.id)), (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS))
-  }, [n.id]), N = (0, s.e7)([C.default], () => C.default.locale), L = a.useCallback(() => {
+  }, [n.id]), P = (0, s.e7)([C.default], () => C.default.locale), L = a.useCallback(() => {
     (0, d.Z)((0, S.G)({
       id: n.id,
       name: n.name,
-      locale: N
+      locale: P
     }))
-  }, [N, n]), D = (0, b.Z)({
+  }, [P, n]), D = (0, b.Z)({
     id: n.id,
     label: T.NW.string(T.t["FfCL+/"]),
     onSuccess: () => (0, c.showToast)((0, c.createToast)(T.NW.string(T.t.eNjAam), c.ToastType.SUCCESS))
-  }), M = (0, v.Z)({
+  }), M = (0, x.Z)({
     application: n,
     onItemClick: () => {
-      (0, I.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
+      (0, N.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
         application_id: n.id
       })
     }
@@ -259,7 +256,7 @@ let D = a.forwardRef(function(e, t) {
       children: (0, r.jsx)(c.sNh, {
         id: "copy",
         label: T.NW.string(T.t.z4sP5O),
-        action: P,
+        action: I,
         icon: c.xPt
       })
     }) : null, (0, r.jsx)(c.kSQ, {
@@ -272,16 +269,16 @@ let D = a.forwardRef(function(e, t) {
     }), null != D ? (0, r.jsx)(c.kSQ, {
       children: D
     }) : null]
-  }), [D, L, P, o, M]), {
+  }), [D, L, I, o, M]), {
     onClickLaunchActivity: G,
     isSubmitting: B
   } = function(e, t) {
     var n;
     let r = e.id,
-      i = null == e ? void 0 : null === (n = e.bot) || void 0 === n ? void 0 : n.id,
+      i = null == e || null == (n = e.bot) ? void 0 : n.id,
       l = null != i && (0, f.BQ)(e) && (0, f.ye)(e),
       [o, c] = a.useState(!1),
-      d = (0, I.nu)(),
+      d = (0, N.nu)(),
       m = (0, s.e7)([j.default], () => j.default.getCurrentUser()),
       h = (0, s.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()),
       _ = a.useCallback(async (t, n, r) => {
@@ -306,19 +303,16 @@ let D = a.forwardRef(function(e, t) {
       if (d && l && n && null != i && null != m) {
         e.searchParams.delete(R);
         let n = e.pathname + e.search;
-        (0, x.dL)(n), _(i, r, t)
+        (0, v.dL)(n), _(i, r, t)
       }
     }, [d, l, i, r, t, m, _]);
     let b = a.useCallback(async () => {
       if (null != i) {
-        if ((0, I.zZ)(E.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
+        if ((0, N.zZ)(E.rMx.APP_DIRECTORY_LAUNCH_CLICKED, {
             application_id: r
-          }), !d) {
-          (0, I.rf)({
-            [R]: "true"
-          });
-          return
-        }
+          }), !d) return void(0, N.rf)({
+          [R]: "true"
+        });
         await _(i, r, t)
       }
     }, [i, r, t, d, _]);
@@ -350,7 +344,7 @@ let D = a.forwardRef(function(e, t) {
         }),
         innerClassName: A.innerIconButton,
         "aria-label": T.NW.string(T.t.z4sP5O),
-        onClick: P,
+        onClick: I,
         children: (0, r.jsx)(c.xPt, {
           size: "xs",
           color: "currentColor"

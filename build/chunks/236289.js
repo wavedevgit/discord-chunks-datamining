@@ -15,8 +15,8 @@ let S = {},
   },
   c = !1,
   U = !1,
-  d = null,
   p = null,
+  d = null,
   f = !1,
   g = !1,
   C = [],
@@ -50,7 +50,7 @@ class B extends(_ = a.ZP.Store) {
     return T
   }
   getFetchError() {
-    return d
+    return p
   }
   isInitialized() {
     return U
@@ -59,7 +59,7 @@ class B extends(_ = a.ZP.Store) {
     return s[t]
   }
   getAppealClassificationId() {
-    return p
+    return d
   }
   getIsDsaEligible() {
     return f
@@ -123,13 +123,13 @@ let y = new B(r.Z, {
       username: _,
       appealEligibility: l
     } = t;
-    S = A()(e, "id"), T = n, f = i, g = E, c = !1, U = !0, d = null, H = _, C = l
+    S = A()(e, "id"), T = n, f = i, g = E, c = !1, U = !0, p = null, H = _, C = l
   },
   SAFETY_HUB_FETCH_FAILURE: function(t) {
     let {
       error: e
     } = t;
-    c = !1, U = !1, d = e
+    c = !1, U = !1, p = e
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_START: function(t) {
     s[t.classificationId] = u.OY.PENDING, c = !0
@@ -142,23 +142,23 @@ let y = new B(r.Z, {
       username: E,
       isAppealEligible: _
     } = t;
-    S[e.id] = e, s[e.id] = u.OY.SUCCESS, T = n, c = !1, d = null, f = i, g = _, U = !0, H = E
+    S[e.id] = e, s[e.id] = u.OY.SUCCESS, T = n, c = !1, p = null, f = i, g = _, U = !0, H = E
   },
   SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE: function(t) {
     let {
       error: e,
       classificationId: n
     } = t;
-    c = !1, d = e, s[n] = u.OY.FAILED, U = !1
+    c = !1, p = e, s[n] = u.OY.FAILED, U = !1
   },
   SAFETY_HUB_APPEAL_OPEN: function(t) {
     let {
       classificationId: e
     } = t;
-    p = e
+    d = e
   },
   SAFETY_HUB_APPEAL_CLOSE: function() {
-    p = null, R = o.bK.DIDNT_VIOLATE_POLICY, D = ""
+    d = null, R = o.bK.DIDNT_VIOLATE_POLICY, D = ""
   },
   SAFETY_HUB_APPEAL_SIGNAL_SELECT: function(t) {
     let {
@@ -237,6 +237,6 @@ let y = new B(r.Z, {
   LOGOUT: function() {
     c = !1, S = {}, T = {
       state: u.Sn.ALL_GOOD
-    }, p = null, R = o.bK.DIDNT_VIOLATE_POLICY, D = "", C = []
+    }, d = null, R = o.bK.DIDNT_VIOLATE_POLICY, D = "", C = []
   }
 })

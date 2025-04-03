@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(906732),
-  a = n(171368),
+  a = n(906732),
+  o = n(171368),
   s = n(841710),
   c = n(981631),
   u = n(388032);
@@ -48,7 +48,7 @@ function h(e) {
     priorityMembers: t,
     otherMembers: n,
     totalMembers: i,
-    activity: o,
+    activity: a,
     guildId: h,
     sourceAnalyticsLocations: f
   } = e, g = [];
@@ -64,7 +64,7 @@ function h(e) {
       status: n,
       guildId: h
     })),
-    action: () => (0, a.openUserProfileModal)({
+    action: () => (0, o.openUserProfileModal)({
       userId: e.id,
       guildId: h,
       sourceAnalyticsLocations: f,
@@ -80,7 +80,7 @@ function h(e) {
       user: e,
       guildId: h
     })),
-    action: () => (0, a.openUserProfileModal)({
+    action: () => (0, o.openUserProfileModal)({
       userId: e.id,
       guildId: h,
       sourceAnalyticsLocations: f,
@@ -91,7 +91,7 @@ function h(e) {
   }));
   let m = i - g.length;
   return m > 0 && g.push((0, r.jsx)(l.sNh, {
-    id: "unknown-members-".concat(null == o ? void 0 : o.session_id),
+    id: "unknown-members-".concat(null == a ? void 0 : a.session_id),
     render: e => (0, r.jsx)(s.Y, p(d({}, e), {
       label: u.NW.formatToPlainString(u.t["6Kqn9P"], {
         count: m
@@ -104,7 +104,7 @@ function f(e) {
   let {
     priorityMembers: t,
     partiedMembers: n,
-    currentActivities: a,
+    currentActivities: o,
     guildContext: s
   } = e, c = new Set(t.map(e => {
     let {
@@ -113,16 +113,16 @@ function f(e) {
     return t.id
   })), d = n.filter(e => !c.has(e.id)), {
     analyticsLocations: p
-  } = (0, o.ZP)(), f = i.useMemo(() => {
-    let e = a.flatMap(e => {
+  } = (0, a.ZP)(), f = i.useMemo(() => {
+    let e = o.flatMap(e => {
       let {
         playingMembers: t
       } = e;
       return t
     }).map(e => e.id);
     return n.filter(t => !e.includes(t.id))
-  }, [n, a]);
-  if (a.length <= 1 && 0 === f.length) {
+  }, [n, o]);
+  if (o.length <= 1 && 0 === f.length) {
     var g, m;
     return (0, r.jsx)(l.kSQ, {
       label: n.length > 1 ? u.NW.formatToPlainString(u.t.C4WXvb, {
@@ -132,20 +132,20 @@ function f(e) {
         priorityMembers: t,
         otherMembers: d,
         totalMembers: n.length,
-        activity: null !== (m = null === (g = a[0]) || void 0 === g ? void 0 : g.activity) && void 0 !== m ? m : void 0,
+        activity: null != (m = null == (g = o[0]) ? void 0 : g.activity) ? m : void 0,
         guildId: null == s ? void 0 : s.id,
         sourceAnalyticsLocations: p
       })
     })
   }
-  let b = a.map((e, n) => {
+  let b = o.map((e, n) => {
       let {
         playingMembers: i,
-        game: o,
-        activity: a
+        game: a,
+        activity: o
       } = e, u = new Set(i.map(e => e.id));
       return (0, r.jsx)(l.kSQ, {
-        label: "".concat(o.name, " - ").concat(i.length),
+        label: "".concat(a.name, " - ").concat(i.length),
         children: h({
           priorityMembers: t.filter(e => {
             let {
@@ -155,7 +155,7 @@ function f(e) {
           }),
           otherMembers: i.filter(e => !c.has(e.id)),
           totalMembers: i.length,
-          activity: null != a ? a : void 0,
+          activity: null != o ? o : void 0,
           guildId: null == s ? void 0 : s.id,
           sourceAnalyticsLocations: p
         })

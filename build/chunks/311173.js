@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(273504),
   m = n(981631),
   g = n(388032),
-  p = n(260963);
+  p = n(409866);
 let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
 function f(e) {
@@ -53,12 +53,12 @@ function b(e) {
     errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: N
-  } = (0, d.Z)(s, l), [v] = i.useState(() => ({
+  } = (0, d.Z)(s, l), [_] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
     isSelecting: !1
-  })), _ = i.useMemo(() => x.reduce((e, t) => {
+  })), v = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -81,22 +81,22 @@ function b(e) {
     className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: v,
+      initialValue: _,
       onChangeTags: C,
       onChangeNewTagValue: O,
-      tagErrors: _,
+      tagErrors: v,
       maxTags: u.VW
     }), (0, r.jsx)(f, {
       text: g.NW.format(g.t["PGC/AA"], {
         helpArticle: h
       }),
       hasErrors: x.length > 0 || null != b,
-      errorText: null !== (n = null === (t = x.find(e => {
+      errorText: null != (n = null == (t = x.find(e => {
         let {
           pattern: t
         } = e;
         return t === d.r
-      })) || void 0 === t ? void 0 : t.message) && void 0 !== n ? n : null == b ? void 0 : b.message
+      })) ? void 0 : t.message) ? n : null == b ? void 0 : b.message
     })]
   })
 }

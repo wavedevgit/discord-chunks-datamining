@@ -35,7 +35,7 @@ var r = n(200651),
   R = n(981631),
   k = n(701488),
   q = n(388032),
-  D = n(206847);
+  D = n(92503);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -115,7 +115,7 @@ let L = o.forwardRef(function(e, t) {
       ctaContent: g.jZ.OPEN_GAME_LINK,
       impressionId: G
     })
-  }, [G, X]), el = $.features.has(B.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(X), ed = (0, b.Jf)(X), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null === (n = X.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, em = (null === (s = X.userStatus) || void 0 === s ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, y.Xv)(X.config), [X.config]), eg = Q && U, ex = (0, C.DD)({
+  }, [G, X]), el = $.features.has(B.S7.POST_ENROLLMENT_CTA), ec = (0, b.Rf)(X), ed = (0, b.Jf)(X), eu = null != ed ? ed.progress > 0 : ec.progressSeconds > 0, ep = (null == (n = X.userStatus) ? void 0 : n.enrolledAt) != null, em = (null == (s = X.userStatus) ? void 0 : s.completedAt) != null, ef = o.useMemo(() => (0, y.Xv)(X.config), [X.config]), eg = Q && U, ex = (0, C.DD)({
     quest: X,
     taskDetails: ec,
     location: B.dr.QUESTS_BAR,
@@ -293,7 +293,7 @@ let L = o.forwardRef(function(e, t) {
                 controls: !1,
                 children: (0, r.jsx)("source", {
                   src: et.url,
-                  type: null !== (t = et.mimetype) && void 0 !== t ? t : void 0
+                  type: null != (t = et.mimetype) ? t : void 0
                 })
               })
             }

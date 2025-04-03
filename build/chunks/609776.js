@@ -1,12 +1,12 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
   Z: () => P
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
   l = n(913527),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   c = n(481060),
   s = n(493773),
   d = n(933557),
@@ -19,8 +19,8 @@ var r = n(200651),
   x = n(699516),
   f = n(594174),
   p = n(626135),
-  v = n(570188),
-  N = n(427679),
+  N = n(570188),
+  v = n(427679),
   j = n(930180),
   I = n(320596),
   O = n(157925),
@@ -28,7 +28,7 @@ var r = n(200651),
   C = n(765305),
   E = n(190378),
   S = n(388032),
-  T = n(860546);
+  T = n(994208);
 
 function w(e) {
   let {
@@ -74,9 +74,9 @@ function P(e) {
     isEvent: M = !1,
     defaultOptions: U,
     isSlideReady: z = !0
-  } = e, F = i.useMemo(() => N.Z.getStageInstanceByChannel(k.id), [k.id]), [V, H] = i.useState(null !== (n = null !== (t = null == U ? void 0 : U.topic) && void 0 !== t ? t : null == F ? void 0 : F.topic) && void 0 !== n ? n : ""), [q, J] = i.useState(null !== (l = null == U ? void 0 : U.description) && void 0 !== l ? l : ""), [K] = i.useState(M), [Y, X] = i.useState(null !== (x = null == U ? void 0 : U.schedule) && void 0 !== x ? x : {
+  } = e, F = i.useMemo(() => v.Z.getStageInstanceByChannel(k.id), [k.id]), [V, H] = i.useState(null != (n = null != (t = null == U ? void 0 : U.topic) ? t : null == F ? void 0 : F.topic) ? n : ""), [q, J] = i.useState(null != (l = null == U ? void 0 : U.description) ? l : ""), [K] = i.useState(M), [Y, X] = i.useState(null != (x = null == U ? void 0 : U.schedule) ? x : {
     startDate: (0, g.ib)()
-  }), [Q, $] = i.useState(K && (null == U ? void 0 : U.schedule) != null), ee = (0, v.J)(k), et = (0, v.U)(k), en = null == F && ee && !K, [er, ei] = i.useState(en && et), el = (0, a.e7)([b.Z], () => b.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), eo = C.j8.GUILD_ONLY, [ea] = i.useState(null !== (P = null !== (f = null == U ? void 0 : U.privacyLevel) && void 0 !== f ? f : null == F ? void 0 : F.privacy_level) && void 0 !== P ? P : eo), [ec, es] = i.useState(null == U ? void 0 : U.recurrenceRule), ed = (0, j._d)(k.id), eu = (0, j.K3)(k.id), [eh, eg] = i.useState(!1), e_ = (0, u.Q3)("StageChannelSettings"), em = (0, d.ZP)(k), eb = (0, h.q)(A), ex = null != B, ef = eb.length > 1;
+  }), [Q, $] = i.useState(K && (null == U ? void 0 : U.schedule) != null), ee = (0, N.J)(k), et = (0, N.U)(k), en = null == F && ee && !K, [er, ei] = i.useState(en && et), el = (0, o.e7)([b.Z], () => b.Z.hasHotspot(E.v.LIVE_STAGE_NOTIFICATION_BADGE)), ea = C.j8.GUILD_ONLY, [eo] = i.useState(null != (P = null != (f = null == U ? void 0 : U.privacyLevel) ? f : null == F ? void 0 : F.privacy_level) ? P : ea), [ec, es] = i.useState(null == U ? void 0 : U.recurrenceRule), ed = (0, j._d)(k.id), eu = (0, j.K3)(k.id), [eh, eg] = i.useState(!1), e_ = (0, u.Q3)("StageChannelSettings"), em = (0, d.ZP)(k), eb = (0, h.q)(A), ex = null != B, ef = eb.length > 1;
   (0, s.ZP)(() => {
     p.default.track(y.rMx.START_STAGE_OPENED, {
       stage_instance_id: null == F ? void 0 : F.id,
@@ -85,13 +85,10 @@ function P(e) {
     })
   });
   let ep = e => {
-      if (e.preventDefault(), ea === C.j8.PUBLIC && V.length < 20 && !eh) {
-        eg(!0);
-        return
-      }
+      if (e.preventDefault(), eo === C.j8.PUBLIC && V.length < 20 && !eh) return void eg(!0);
       let t = {
         topic: V,
-        privacyLevel: ea,
+        privacyLevel: eo,
         sendStartNotification: er
       };
       if (K) {
@@ -133,12 +130,12 @@ function P(e) {
       null == Z || Z(t)
     },
     {
-      color: ev,
-      text: eN
+      color: eN,
+      text: ev
     } = K ? {
       color: c.zxk.Colors.BRAND,
       text: S.NW.string(S.t["60lJ0N"])
-    } : ea === C.j8.PUBLIC && (null == F ? void 0 : F.privacy_level) !== C.j8.PUBLIC ? {
+    } : eo === C.j8.PUBLIC && (null == F ? void 0 : F.privacy_level) !== C.j8.PUBLIC ? {
       color: c.zxk.Colors.BRAND,
       text: S.NW.string(S.t["3PatS0"])
     } : null == F ? {
@@ -151,9 +148,9 @@ function P(e) {
     ej = i.useRef(null);
   i.useEffect(() => {
     var e;
-    z && (null === (e = ej.current) || void 0 === e || e.focus())
+    z && (null == (e = ej.current) || e.focus())
   }, [z]);
-  let eI = Q && null != Y.startDate && Y.startDate >= o()();
+  let eI = Q && null != Y.startDate && Y.startDate >= a()();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hzk, {
       className: T.modalContent,
@@ -204,7 +201,7 @@ function P(e) {
             recurrenceRule: ec,
             timeSelected: Q,
             onTimeChange: $
-          }), null != Y.startDate && Y.startDate < o()() ? (0, r.jsx)(c.Text, {
+          }), null != Y.startDate && Y.startDate < a()() ? (0, r.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
             className: T.warning,
@@ -238,11 +235,11 @@ function P(e) {
       })]
     }), (0, r.jsxs)(c.mzw, {
       children: [(0, r.jsx)(c.zxk, {
-        color: ev,
+        color: eN,
         onClick: ep,
-        disabled: "" === V || null == ea || M && !eI,
+        disabled: "" === V || null == eo || M && !eI,
         submitting: W,
-        children: eN
+        children: ev
       }), (0, r.jsx)(c.zxk, {
         color: c.zxk.Colors.PRIMARY,
         className: T.cancelButton,

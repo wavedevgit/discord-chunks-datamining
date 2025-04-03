@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n(653041), n(47120);
-var r, i, l, o, a = n(392711),
-  s = n.n(a),
+var r, i, l, a, o = n(392711),
+  s = n.n(o),
   c = n(442837),
   u = n(570140),
   d = n(592125);
@@ -41,7 +41,7 @@ function O(e) {
   } = e;
   delete g[t.id], delete m[t.id]
 }
-class N extends(o = c.ZP.Store) {
+class N extends(a = c.ZP.Store) {
   getActiveChannelsFetchStatus(e) {
     return b[e]
   }
@@ -53,7 +53,7 @@ class N extends(o = c.ZP.Store) {
   }
   shouldFetch(e) {
     var t;
-    return null == f[e] && !(null === (t = b[e]) || void 0 === t ? void 0 : t.loading)
+    return null == f[e] && !(null == (t = b[e]) ? void 0 : t.loading)
   }
 }
 l = "ActiveChannelsStore", (i = "displayName") in(r = N) ? Object.defineProperty(r, i, {
@@ -72,11 +72,11 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = N) ? Object.defineProperty
     if (null == r) return !1;
     r.forEach(e => {
       var t;
-      _(e), (null === (t = g[e]) || void 0 === t ? void 0 : t.length) === 0 && delete g[e]
+      _(e), (null == (t = g[e]) ? void 0 : t.length) === 0 && delete g[e]
     });
     let i = s().chain(Array.from(r)).filter(e => e in g).sortBy(e => {
       var t, n;
-      return -(null !== (n = null === (t = g[e]) || void 0 === t ? void 0 : t.length) && void 0 !== n ? n : 0)
+      return -(null != (n = null == (t = g[e]) ? void 0 : t.length) ? n : 0)
     }).value();
     f[n] = new Set(i)
   },
@@ -89,11 +89,11 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = N) ? Object.defineProperty
       isPushNotification: l
     } = e;
     if (i || l) return !1;
-    let o = d.Z.getChannel(n);
-    if (null == o) return !1;
-    let a = o.guild_id;
-    if (null == a || null == f[a]) return !1;
-    E(a, n, r.id, null === (t = r.author) || void 0 === t ? void 0 : t.id)
+    let a = d.Z.getChannel(n);
+    if (null == a) return !1;
+    let o = a.guild_id;
+    if (null == o || null == f[o]) return !1;
+    E(o, n, r.id, null == (t = r.author) ? void 0 : t.id)
   },
   GUILD_DELETE: function(e) {
     let {

@@ -15,10 +15,10 @@ var n = t(200651),
   m = t(600164),
   x = t(339085),
   h = t(565138),
-  v = t(650774),
-  j = t(271383),
-  g = t(594174),
-  N = t(626135),
+  j = t(650774),
+  g = t(271383),
+  N = t(594174),
+  v = t(626135),
   f = t(768581),
   p = t(944163),
   b = t(246364),
@@ -28,7 +28,7 @@ var n = t(200651),
   k = t(592286),
   C = t(981631),
   W = t(388032),
-  E = t(580633),
+  E = t(916199),
   P = t(419851),
   I = t(296507),
   S = t(866402),
@@ -157,7 +157,7 @@ let M = e => {
       disableVerification: o = !1
     } = e, d = (0, a.e7)([p.Z], () => p.Z.get(t));
     if (null == d) return null;
-    let c = null !== (l = null != r ? r : null == d ? void 0 : d.formFields) && void 0 !== l ? l : [],
+    let c = null != (l = null != r ? r : null == d ? void 0 : d.formFields) ? l : [],
       u = i ? w.W : w.r;
     return (0, n.jsx)(u, {
       guildId: t,
@@ -229,19 +229,19 @@ let M = e => {
       onClose: P,
       onComplete: I,
       isPreview: S = !1
-    } = e, F = null == s ? void 0 : s.guild, z = (0, O.N0)(w, F, S), L = null == s ? void 0 : s.formFields.some(e => e.field_type !== b.QJ.TERMS), _ = (0, a.e7)([g.default], () => g.default.getCurrentUser()), A = null == _ ? void 0 : _.verified, V = null == _ ? void 0 : _.isPhoneVerified(), B = (0, a.e7)([x.ZP], () => x.ZP.getGuildEmoji(w)), {
+    } = e, F = null == s ? void 0 : s.guild, z = (0, O.N0)(w, F, S), L = null == s ? void 0 : s.formFields.some(e => e.field_type !== b.QJ.TERMS), _ = (0, a.e7)([N.default], () => N.default.getCurrentUser()), A = null == _ ? void 0 : _.verified, V = null == _ ? void 0 : _.isPhoneVerified(), B = (0, a.e7)([x.ZP], () => x.ZP.getGuildEmoji(w)), {
       storeMemberCount: X,
       storeOnlineCount: q
-    } = (0, a.cj)([v.Z], () => ({
-      storeMemberCount: v.Z.getMemberCount(w),
-      storeOnlineCount: v.Z.getOnlineCount(w)
-    })), [G, H] = r.useState(null !== (l = null == s ? void 0 : s.formFields) && void 0 !== l ? l : []), [J, U] = r.useState(!1), [K, Y] = r.useState(null), [Q, $] = r.useState(""), [ee, el] = r.useState(""), [et, en] = r.useState(null), [er, es] = r.useState(null), ei = null !== (t = null == z ? void 0 : z.hasFeature(C.oNc.CLAN)) && void 0 !== t && t, {
+    } = (0, a.cj)([j.Z], () => ({
+      storeMemberCount: j.Z.getMemberCount(w),
+      storeOnlineCount: j.Z.getOnlineCount(w)
+    })), [G, H] = r.useState(null != (l = null == s ? void 0 : s.formFields) ? l : []), [J, U] = r.useState(!1), [K, Y] = r.useState(null), [Q, $] = r.useState(""), [ee, el] = r.useState(""), [et, en] = r.useState(null), [er, es] = r.useState(null), ei = null != (t = null == z ? void 0 : z.hasFeature(C.oNc.CLAN)) && t, {
       emojisToRender: ea,
       remainingEmojis: eo,
       numGuildEmoji: ed
     } = r.useMemo(() => {
       var e;
-      let l = [...null !== (e = 0 === B.length ? null == F ? void 0 : F.emojis : B) && void 0 !== e ? e : []].reverse(),
+      let l = [...null != (e = 0 === B.length ? null == F ? void 0 : F.emojis : B) ? e : []].reverse(),
         t = 0,
         n = l.length;
       return n > 12 && null != l && (t = Math.min(n - (l = l.slice(0, 11)).length, 99)), {
@@ -256,12 +256,12 @@ let M = e => {
     (0, O.lk)(G), r.useEffect(() => {
       null != s && H(s.formFields)
     }, [s]), r.useEffect(() => {
-      null != w && N.default.track(C.rMx.OPEN_MODAL, {
+      null != w && v.default.track(C.rMx.OPEN_MODAL, {
         type: k.N4,
         guild_id: w
       })
     }, [w]);
-    let ev = r.useMemo(() => {
+    let ej = r.useMemo(() => {
         if (G.some(e => !(0, y.OA)(e))) return !0;
         if (em || (null == _ ? void 0 : _.isStaff())) return !1;
         switch (null == z ? void 0 : z.verificationLevel) {
@@ -276,9 +276,9 @@ let M = e => {
             return !1
         }
       }, [G, z, em, _, V, A]),
-      ej = (0, a.e7)([u.Z], () => u.Z.useReducedMotion);
+      eg = (0, a.e7)([u.Z], () => u.Z.useReducedMotion);
     if (null == z) return null;
-    let eg = async () => {
+    let eN = async () => {
       U(!0), en(null), es(null);
       try {
         await (0, c.S2)({
@@ -287,13 +287,13 @@ let M = e => {
         }), U(!1), eh(1)
       } catch (t) {
         var e, l;
-        en(null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.email), es(null == t ? void 0 : null === (l = t.body) || void 0 === l ? void 0 : l.password)
+        en(null == t || null == (e = t.body) ? void 0 : e.email), es(null == t || null == (l = t.body) ? void 0 : l.password)
       } finally {
         U(!1)
       }
-    }, eN = async () => {
+    }, ev = async () => {
       U(!0), Y(null);
-      let e = null != _ ? j.ZP.getMember(w, _.id) : null;
+      let e = null != _ ? g.ZP.getMember(w, _.id) : null;
       if (null != e && !e.isPending) {
         null == P || P(!0);
         return
@@ -305,7 +305,7 @@ let M = e => {
       } catch (n) {
         var l, t;
         let e = null == n ? void 0 : n.body;
-        (null == e ? void 0 : null === (l = e.errors) || void 0 === l ? void 0 : l.version) != null || (null == e ? void 0 : null === (t = e.errors) || void 0 === t ? void 0 : t.form_fields) != null ? Y(W.NW.string(W.t.PD09Sk)) : Y(null == e ? void 0 : e.message)
+        (null == e || null == (l = e.errors) ? void 0 : l.version) != null || (null == e || null == (t = e.errors) ? void 0 : t.form_fields) != null ? Y(W.NW.string(W.t.PD09Sk)) : Y(null == e ? void 0 : e.message)
       } finally {
         U(!1)
       }
@@ -423,7 +423,7 @@ let M = e => {
                     formState: G,
                     updateFormState: H,
                     isPreview: S,
-                    useReducedMotion: ej,
+                    useReducedMotion: eg,
                     disableVerification: em
                   })
               }
@@ -438,7 +438,7 @@ let M = e => {
                   className: E.submitButton,
                   type: "submit",
                   submitting: J,
-                  onClick: eg,
+                  onClick: eN,
                   disabled: 0 === Q.length || 0 === ee.length,
                   children: W.NW.string(W.t.PDTjLC)
                 }), (0, n.jsx)(o.Text, {
@@ -456,9 +456,9 @@ let M = e => {
                   className: E.submitButton,
                   type: "submit",
                   submitting: J,
-                  onClick: eN,
+                  onClick: ev,
                   color: o.zxk.Colors.GREEN,
-                  disabled: null == I || ev,
+                  disabled: null == I || ej,
                   children: W.NW.string(W.t.geKm7u)
                 }), null != K && (0, n.jsx)(o.Text, {
                   variant: "text-xs/normal",

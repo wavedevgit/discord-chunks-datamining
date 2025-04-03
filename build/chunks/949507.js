@@ -1,6 +1,6 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -16,16 +16,16 @@ var a = n(120356),
   m = n(768581),
   h = n(981631),
   g = n(388032),
-  f = n(555229),
+  f = n(754726),
   _ = n(129512),
   b = n(330065);
 
-function v(e) {
+function x(e) {
   let {
     guild: t,
     className: n,
     onClick: a
-  } = e, v = (0, o.ZP)(), x = new p.ZP({
+  } = e, x = (0, o.ZP)(), v = new p.ZP({
     name: t.name,
     icon: t.icon
   }), C = m.ZP.getGuildDiscoverySplashURL({
@@ -39,7 +39,7 @@ function v(e) {
       case h.BRd.LIGHT:
         return b
     }
-  }(v), y = m.ZP.getGuildIconURL({
+  }(x), y = m.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 50
@@ -65,7 +65,7 @@ function v(e) {
             children: (0, r.jsx)(c.Z, {
               className: f.__invalid_icon,
               iconSrc: y,
-              guild: x,
+              guild: v,
               size: c.Z.Sizes.LARGE
             })
           })

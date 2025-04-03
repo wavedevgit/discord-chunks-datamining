@@ -11,8 +11,8 @@ var r = a(200651),
   c = a(13245),
   u = a(355863),
   d = a(237997),
-  v = a(610394),
-  p = a(340101),
+  p = a(610394),
+  v = a(340101),
   g = a(501787),
   m = a(981631),
   y = a(388032);
@@ -58,13 +58,13 @@ function j(e) {
   n.useEffect(() => {
     N.current = W
   }), n.useEffect(() => () => N.current(), []);
-  let k = (0, l.e7)([v.ZP, u.Z], () => {
-      let e = v.ZP.getWidgetByType(m.Odu.VOICE_V3);
+  let k = (0, l.e7)([p.ZP, u.Z], () => {
+      let e = p.ZP.getWidgetByType(m.Odu.VOICE_V3);
       if (null == e) return null;
       let t = u.Z.getWidget(e.id);
-      return null != t && (0, p.Aw)(t) ? t : null
+      return null != t && (0, v.Aw)(t) ? t : null
     }),
-    x = null !== (a = null == k ? void 0 : null === (t = k.meta) || void 0 === t ? void 0 : t.voiceStatesMaxShown) && void 0 !== a ? a : g.At;
+    x = null != (a = null == k || null == (t = k.meta) ? void 0 : t.voiceStatesMaxShown) ? a : g.At;
 
   function P(e) {
     null != k && (e < 1 ? (0, s.zG)(k.id, {

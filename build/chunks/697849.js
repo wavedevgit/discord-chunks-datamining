@@ -1,4 +1,4 @@
-/** Chunk was on 5613 **/
+/** Chunk was on 70657 **/
 t.d(n, {
   default: () => z
 }), t(47120);
@@ -15,9 +15,9 @@ var i = t(200651),
   p = t(592125),
   g = t(626135),
   m = t(981888),
-  v = t(897285),
-  I = t(924301),
-  f = t(951539),
+  I = t(897285),
+  f = t(924301),
+  v = t(951539),
   N = t(592126),
   h = t(315416),
   E = t(711373),
@@ -33,7 +33,7 @@ var i = t(200651),
   O = t(462179),
   U = t(765305),
   Z = t(981631),
-  G = t(349008);
+  G = t(40395);
 
 function P(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -63,7 +63,7 @@ function W(e) {
     isHub: d,
     isMember: o,
     recurrenceId: s
-  } = e, c = (0, I.xt)(n), u = (0, l.e7)([I.ZP], () => I.ZP.isInterestedInEventRecurrence(n.id, s), [s, n]), p = (0, f.ZP)(n), g = (0, l.e7)([_.Z], () => _.Z.isLurking(t.id), [t.id]), m = (0, C.T)(null == r ? void 0 : r.id, n.id), v = (0, O.Z)({
+  } = e, c = (0, f.xt)(n), u = (0, l.e7)([f.ZP], () => f.ZP.isInterestedInEventRecurrence(n.id, s), [s, n]), p = (0, v.ZP)(n), g = (0, l.e7)([_.Z], () => _.Z.isLurking(t.id), [t.id]), m = (0, C.T)(null == r ? void 0 : r.id, n.id), I = (0, O.Z)({
     guild: t,
     channel: r,
     guildScheduledEvent: n,
@@ -82,31 +82,31 @@ function W(e) {
     guildName: null == t ? void 0 : t.name,
     isChannelPublic: m,
     canInvite: p
-  }, v)) : (0, i.jsx)(T.ZP, P({
+  }, I)) : (0, i.jsx)(T.ZP, P({
     isActive: c,
     isUserLurking: g,
     rsvped: u,
     isChannelPublic: m,
     canInvite: p,
     entityType: N
-  }, v))
+  }, I))
 }
 let z = e => {
   let {
     guildScheduledEventId: n,
     parentGuildId: t,
     transitionState: _,
-    initialRecurrenceId: f,
+    initialRecurrenceId: v,
     onClose: C
   } = e, T = (0, c.Q3)("GuildScheduledEventModal"), {
     analyticsLocations: L
-  } = (0, o.ZP)(d.Z.GUILD_EVENT_MODAL), [O, P] = r.useState(f), z = (0, l.e7)([I.ZP], () => I.ZP.getGuildScheduledEvent(n), [n]), k = null == z ? void 0 : z.id, A = null == z ? void 0 : z.guild_id, {
+  } = (0, o.ZP)(d.Z.GUILD_EVENT_MODAL), [O, P] = r.useState(v), z = (0, l.e7)([f.ZP], () => f.ZP.getGuildScheduledEvent(n), [n]), k = null == z ? void 0 : z.id, A = null == z ? void 0 : z.guild_id, {
     guild: R,
     isMember: B
   } = (0, N.Z)(A, k), w = (0, u.Z)(t), H = null == z ? void 0 : z.channel_id, M = (0, l.e7)([p.Z], () => p.Z.getChannel(H), [H]), X = (0, s.Dt)(), [V, F] = r.useState(U.fL.EVENT_INFO), Y = (0, E.Z)(k, O), q = (0, h.Z)(A, k, O), [K, {
     loading: J,
     error: Q
-  }] = (0, m.Z)(() => v.Z.getGuildEventUsers(null == z ? void 0 : z.id, O, A));
+  }] = (0, m.Z)(() => I.Z.getGuildEventUsers(null == z ? void 0 : z.id, O, A));
   r.useEffect(() => {
     null == z ? C() : g.default.track(Z.rMx.OPEN_MODAL, {
       type: U.zw,
@@ -118,7 +118,7 @@ let z = e => {
   if (r.useLayoutEffect(() => {
       var e, n;
       let t = 16 * ((null == z ? void 0 : z.recurrence_rule) != null);
-      en((null !== (n = null == $ ? void 0 : null === (e = $.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== n ? n : 0) + t)
+      en((null != (n = null == $ || null == (e = $.current) ? void 0 : e.offsetHeight) ? n : 0) + t)
     }, [$, null == z ? void 0 : z.recurrence_rule]), null == z || null == R || !B && !w) return null;
   let et = e => {
       e !== V && (e === U.fL.RSVP_LIST && K(), F(e))

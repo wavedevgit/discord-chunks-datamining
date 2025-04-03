@@ -21,8 +21,8 @@ var r = t(200651),
   C = t(41776),
   j = t(703656),
   b = t(6025),
-  v = t(592125),
-  N = t(703558),
+  N = t(592125),
+  v = t(703558),
   y = t(731290),
   O = t(430824),
   I = t(375954),
@@ -31,7 +31,7 @@ var r = t(200651),
   P = t(287746),
   E = t(981631),
   S = t(388032),
-  T = t(100416);
+  T = t(560460);
 
 function B(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -71,9 +71,9 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: R = "Split View",
     isResourceChannelView: D
-  } = e, W = (0, a.e7)([v.Z], () => v.Z.getChannel(n)), L = (0, a.e7)([O.Z], () => O.Z.getGuild(null == W ? void 0 : W.getGuildId())), M = (0, a.e7)([Z.default], () => Z.default.getCurrentUser()), H = (0, a.e7)([y.Z], () => y.Z.didAgree(null == W ? void 0 : W.guild_id)), U = (null == M ? void 0 : M.nsfwAllowed) === !0, G = (0, w.ZP)(W), F = (0, a.e7)([C.Z], () => (null == L ? void 0 : L.id) != null && C.Z.isLurking(L.id), [L]), z = (0, f.Z)(n), q = (0, a.e7)([p.Z], () => {
+  } = e, W = (0, a.e7)([N.Z], () => N.Z.getChannel(n)), L = (0, a.e7)([O.Z], () => O.Z.getGuild(null == W ? void 0 : W.getGuildId())), M = (0, a.e7)([Z.default], () => Z.default.getCurrentUser()), H = (0, a.e7)([y.Z], () => y.Z.didAgree(null == W ? void 0 : W.guild_id)), U = (null == M ? void 0 : M.nsfwAllowed) === !0, G = (0, w.ZP)(W), F = (0, a.e7)([C.Z], () => (null == L ? void 0 : L.id) != null && C.Z.isLurking(L.id), [L]), z = (0, f.Z)(n), q = (0, a.e7)([p.Z], () => {
     var e;
-    return null === (e = p.Z.getResourceForChannel(null == L ? void 0 : L.id, n)) || void 0 === e ? void 0 : e.title
+    return null == (e = p.Z.getResourceForChannel(null == L ? void 0 : L.id, n)) ? void 0 : e.title
   }), X = l.useRef(!1);
   if (l.useEffect(() => {
       null == W || X.current || (X.current = !0, (0, d.yw)(E.rMx.CHANNEL_OPENED, k(B({}, (0, d.$H)(W.id)), {
@@ -92,7 +92,7 @@ function A(e) {
   }, "close")), !W.isNSFW() || U && H) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
       channel: W,
-      draftType: N.d.ChannelMessage
+      draftType: v.d.ChannelMessage
     }), (0, r.jsx)(g.ZP, {
       toolbar: V,
       "aria-label": S.NW.string(S.t.BIYAqa),

@@ -21,9 +21,8 @@ var a = ["canDrag", "beginDrag", "isDragging", "endDrag"],
 
     function t(e, r, n) {
       var o = this;
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, t), i(this, "props", null), i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "ref", void 0), i(this, "beginDrag", function() {
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+      i(this, "props", null), i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "ref", void 0), i(this, "beginDrag", function() {
         if (o.props) return o.spec.beginDrag(o.props, o.monitor, o.ref.current)
       }), this.spec = e, this.monitor = r, this.ref = n
     }

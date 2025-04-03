@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 });
@@ -48,9 +48,9 @@ function d(e) {
     h = r.useCallback(e => {
       var r, i, l;
       if (!n.keyboardModeEnabled) return;
-      let o = null === (i = t.current) || void 0 === i ? void 0 : null === (r = i.getScrollerNode()) || void 0 === r ? void 0 : r.ownerDocument,
+      let o = null == (i = t.current) || null == (r = i.getScrollerNode()) ? void 0 : r.ownerDocument,
         a = null == o ? void 0 : o.querySelector(e);
-      null != a && (null === (l = t.current) || void 0 === l || l.scrollIntoViewNode({
+      null != a && (null == (l = t.current) || l.scrollIntoViewNode({
         node: a,
         padding: 4 * c.kQ,
         callback: () => null == a ? void 0 : a.focus()

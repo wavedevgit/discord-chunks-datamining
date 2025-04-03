@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => p
 }), n(266796);
@@ -7,22 +7,22 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(785681),
-  l = n(231994),
-  c = n(378392),
+  l = n(785681),
+  o = n(231994),
+  c = n(332495),
   d = n(388032),
-  u = n(353981),
-  m = n(685786);
+  u = n(634789),
+  m = n(20493);
 let g = e => {
     let {
       header: t,
       description: n,
       icon: i,
-      inModal: o
+      inModal: l
     } = e;
     return (0, r.jsxs)("div", {
       className: s()(u.row, m.marginBottom8, {
-        [u.inModal]: o
+        [u.inModal]: l
       }),
       children: [(0, r.jsx)("div", {
         className: u.iconContainer,
@@ -44,7 +44,7 @@ let g = e => {
   p = e => {
     let {
       inModal: t
-    } = e, n = (0, o.o)(d.NW.string(c.Z.Sm8Gq6), d.NW.string(c.Z.YU7aaW)), i = (0, o.o)(d.NW.string(c.Z["TCzk/f"]), d.NW.string(c.Z["2OqtJC"])), s = (0, o.o)(d.NW.string(c.Z.ASf7XF), d.NW.string(c.Z["82y87e"])), m = (0, o.o)(d.NW.string(c.Z["0QDVFB"]), d.NW.string(c.Z["1xBHHR"]));
+    } = e, n = (0, l.o)(d.NW.string(c.Z.Sm8Gq6), d.NW.string(c.Z.YU7aaW)), i = (0, l.o)(d.NW.string(c.Z["TCzk/f"]), d.NW.string(c.Z["2OqtJC"])), s = (0, l.o)(d.NW.string(c.Z.ASf7XF), d.NW.string(c.Z["82y87e"])), m = (0, l.o)(d.NW.string(c.Z["0QDVFB"]), d.NW.string(c.Z["1xBHHR"]));
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.Text, {
         className: u.groupHeader,
@@ -74,7 +74,7 @@ let g = e => {
       }), (0, r.jsx)(g, {
         header: d.NW.string(c.Z["Z3G+8v"]),
         description: d.NW.string(c.Z.KBgAra),
-        icon: (0, r.jsx)(l.Z, {
+        icon: (0, r.jsx)(o.Z, {
           width: 20,
           height: 20,
           color: a.TVs.colors.TEXT_PRIMARY.css

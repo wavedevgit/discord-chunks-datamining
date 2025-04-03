@@ -1,3 +1,2 @@
-/** Chunk was on 97590 **/
-var r = n(128971)("toUpperCase");
-e.exports = r
+/** Chunk was on 45585 **/
+e.exports = n(128971)("toUpperCase")

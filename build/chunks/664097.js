@@ -1,12 +1,12 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  o: () => a
+  o: () => o
 }), n(230036);
 var i = n(192379),
   r = n(442837),
   l = n(115130),
-  o = n(701488);
-let a = () => {
+  a = n(701488);
+let o = () => {
   let {
     isEnabled: e,
     lastUsedObject: t
@@ -35,7 +35,7 @@ let a = () => {
           })
         }
         return e
-      }({}, o.wT, e.embeddedActivityConfig), n = n = {
+      }({}, a.wT, e.embeddedActivityConfig), n = n = {
         application_id: e.id
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

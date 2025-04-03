@@ -29,16 +29,16 @@ function E(e) {
     }), [e]),
     b = (0, r.e7)([c.Z], () => {
       var t;
-      return null !== (t = c.Z.getCount(e.id)) && void 0 !== t ? t : 0
+      return null != (t = c.Z.getCount(e.id)) ? t : 0
     }, [e.id]),
     {
-      firstMessage: v
+      firstMessage: _
     } = (0, r.e7)([s.Z], () => s.Z.getMessage(e.id), [e.id]),
-    _ = t && (E || n && b < 1),
-    h = t && n && !E && b > 0 && null != v;
-  return N && (E || _ || h) ? (0, i.jsx)(a.sNh, {
+    v = t && (E || n && b < 1),
+    h = t && n && !E && b > 0 && null != _;
+  return N && (E || v || h) ? (0, i.jsx)(a.sNh, {
     id: "delete-channel",
-    label: e.type === O.d4z.GUILD_CATEGORY ? p.NW.string(p.t.ifbXnJ) : e.isForumPost() ? _ ? p.NW.string(p.t.nEOg1N) : p.NW.string(p.t.xwMqDw) : e.isThread() ? p.NW.string(p.t.H7vTe3) : p.NW.string(p.t["8D8Rsb"]),
+    label: e.type === O.d4z.GUILD_CATEGORY ? p.NW.string(p.t.ifbXnJ) : e.isForumPost() ? v ? p.NW.string(p.t.nEOg1N) : p.NW.string(p.t.xwMqDw) : e.isThread() ? p.NW.string(p.t.H7vTe3) : p.NW.string(p.t["8D8Rsb"]),
     color: "danger",
     action: () => {
       (0, u.w)(e, function() {

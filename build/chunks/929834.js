@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   U2: () => i,
@@ -27,8 +27,7 @@ let i = {
 
 function a() {
   return (0, r.u5)().map(e => {
-    let t;
-    let {
+    let t, {
       value: i,
       name: s
     } = e;

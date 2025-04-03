@@ -14,15 +14,15 @@ var r = n(200651),
   p = n(246364),
   b = n(981631),
   h = n(388032),
-  m = n(943672);
+  m = n(51559);
 let g = function(e) {
   let {
     guild: t,
     guildJoinRequest: g,
     user: j,
     transitionState: f,
-    onClose: v
-  } = e, y = (0, o.Dt)(), [x, O] = a.useState(null), [N, P] = a.useState(""), k = (0, i.e7)([l.Z], () => l.Z.canManageUser(b.Plq.BAN_MEMBERS, j, t)), [w, C] = a.useState(!1), W = a.useCallback(() => {
+    onClose: y
+  } = e, v = (0, o.Dt)(), [x, O] = a.useState(null), [N, P] = a.useState(""), k = (0, i.e7)([l.Z], () => l.Z.canManageUser(b.Plq.BAN_MEMBERS, j, t)), [w, C] = a.useState(!1), W = a.useCallback(() => {
     var e;
     d.ZP.reportApplication({
       guild: t,
@@ -30,8 +30,8 @@ let g = function(e) {
       guildJoinRequestUser: j,
       reason: x,
       reasonOther: N,
-      responses: JSON.stringify(null === (e = g.formResponses) || void 0 === e ? void 0 : e.map(e => e.response))
-    }), k && w ? (u.Z.updateGuildJoinRequest(t.id, j.id, g.joinRequestId, p.wB.REJECTED, ""), v(), (0, s.ZDy)(async () => {
+      responses: JSON.stringify(null == (e = g.formResponses) ? void 0 : e.map(e => e.response))
+    }), k && w ? (u.Z.updateGuildJoinRequest(t.id, j.id, g.joinRequestId, p.wB.REJECTED, ""), y(), (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("43350").then(n.bind(n, 98746));
@@ -68,8 +68,8 @@ let g = function(e) {
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a))
       }
-    })) : v()
-  }, [t, g, j, x, N, k, w, v]), E = a.useCallback(e => {
+    })) : y()
+  }, [t, g, j, x, N, k, w, y]), E = a.useCallback(e => {
     O(e.value)
   }, [O]), S = a.useMemo(() => [{
     value: "spam",
@@ -89,10 +89,10 @@ let g = function(e) {
   }], []), D = c.ZP.getName(null, null, j);
   return (0, r.jsxs)(s.Y0X, {
     transitionState: f,
-    "aria-labelledby": y,
+    "aria-labelledby": v,
     children: [(0, r.jsx)(s.xBx, {
       children: (0, r.jsx)(s.X6q, {
-        id: y,
+        id: v,
         variant: "heading-md/semibold",
         children: h.NW.string(h.t["4uon39"])
       })
@@ -130,7 +130,7 @@ let g = function(e) {
       }), (0, r.jsx)(s.zxk, {
         look: s.iLD.LINK,
         color: s.Ttl.PRIMARY,
-        onClick: v,
+        onClick: y,
         children: h.NW.string(h.t["ETE/oK"])
       })]
     })]

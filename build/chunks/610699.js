@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => Q
 }), n(653041), n(47120), n(13667), n(390547), n(301563), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(512722),
-  s = n.n(l),
+  l = n.n(a),
+  o = n(512722),
+  s = n.n(o),
   c = n(442837),
   u = n(477690),
   d = n(481060),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(182906),
   _ = n(884338),
   b = n(100527),
-  v = n(906732),
-  x = n(321231),
-  y = n(758199),
-  E = n(943762),
+  x = n(906732),
+  y = n(321231),
+  E = n(758199),
+  v = n(943762),
   O = n(914498),
   N = n(880251),
   j = n(208444),
@@ -42,7 +42,7 @@ var r = n(200651),
   U = n(981631),
   F = n(245335),
   B = n(388032),
-  G = n(751621);
+  G = n(582909);
 
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function X(e) {
     membersOnline: n,
     isLarge: i,
     isStacked: a,
-    textColor: l
+    textColor: o
   } = e, s = [];
   return null != n && n > 0 && s.push((0, r.jsxs)("div", {
     className: G.statusWrapper,
@@ -94,7 +94,7 @@ function X(e) {
     }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       className: G.count,
-      color: l,
+      color: o,
       children: B.NW.format(B.t["LC+S+v"], {
         membersOnline: n
       })
@@ -106,13 +106,13 @@ function X(e) {
     }), (0, r.jsx)(d.Text, {
       variant: "text-xs/normal",
       className: G.count,
-      color: l,
+      color: o,
       children: B.NW.format(B.t.zRl6XV, {
         count: t
       })
     })]
   }, "memberCount")), (0, r.jsx)("div", {
-    className: o()(G.statusCounts, {
+    className: l()(G.statusCounts, {
       [G.large]: i,
       [G.stacked]: a
     }),
@@ -126,12 +126,12 @@ function q(e) {
     guild: n,
     isStacked: i,
     hasEnded: a,
-    textColor: l
+    textColor: o
   } = e;
   if (null != t && null != n) {
     let e = (0, I.KS)(t, n);
     return (0, r.jsxs)("div", {
-      className: o()(G.channel, {
+      className: l()(G.channel, {
         [G.stacked]: i,
         [G.ended]: a
       }),
@@ -142,7 +142,7 @@ function q(e) {
       }) : null, (0, r.jsx)(S.Z, {
         children: (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
-          color: l,
+          color: o,
           children: B.NW.format(B.t["dc+LW1"], {
             channelName: t.name,
             serverName: n.name
@@ -152,14 +152,14 @@ function q(e) {
     })
   }
   return null != n ? (0, r.jsx)("div", {
-    className: o()(G.channel, {
+    className: l()(G.channel, {
       [G.stacked]: i,
       [G.ended]: a
     }),
     children: (0, r.jsx)(S.Z, {
       children: (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
-        color: l,
+        color: o,
         children: B.NW.format(B.t.u0vaDA, {
           guildName: n.name
         })
@@ -170,16 +170,16 @@ function q(e) {
 
 function Q(e) {
   var t, n, a;
-  let l, u, {
-      invite: y,
-      getAcceptInviteContext: E
+  let o, u, {
+      invite: E,
+      getAcceptInviteContext: v
     } = e,
     {
       approximate_member_count: O,
       approximate_presence_count: N,
       target_type: j,
       target_application: I
-    } = y;
+    } = E;
   s()(j === F.Iq.EMBEDDED_APPLICATION && null != I, "invalid application invite");
   let S = i.useRef(null),
     [L, M] = i.useState(!1),
@@ -191,18 +191,18 @@ function Q(e) {
           var t;
           D.default.track(U.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
             application_id: I.id,
-            invite_inviter_id: null === (t = y.inviter) || void 0 === t ? void 0 : t.id
+            invite_inviter_id: null == (t = E.inviter) ? void 0 : t.id
           })
         }
         return !0
       })
-    }, [null === (t = y.inviter) || void 0 === t ? void 0 : t.id, I.id]),
+    }, [null == (t = E.inviter) ? void 0 : t.id, I.id]),
     en = (0, m.O)(et),
     er = (0, P.Z)(S, en);
   i.useEffect(() => {
     let e = new ResizeObserver(() => (function() {
         var e;
-        let t = null === (e = S.current) || void 0 === e ? void 0 : e.offsetWidth;
+        let t = null == (e = S.current) ? void 0 : e.offsetWidth;
         null != t && (M(t < Y + K), $(t <= 2 * z))
       })()),
       t = S.current;
@@ -210,26 +210,26 @@ function Q(e) {
       e.disconnect()
     }
   }, [S, M, $]);
-  let ei = (0, c.e7)([Z.Z], () => null != y.guild ? Z.Z.getGuild(y.guild.id) : null, [y]),
+  let ei = (0, c.e7)([Z.Z], () => null != E.guild ? Z.Z.getGuild(E.guild.id) : null, [E]),
     ea = (0, C.Z)([I.id])[0],
-    eo = (0, c.e7)([f.ZP], () => {
-      var e;
-      return (null == y ? void 0 : y.channel) != null && (null === (e = f.ZP.getSelfEmbeddedActivityForChannel(y.channel.id)) || void 0 === e ? void 0 : e.applicationId) === I.id
-    }),
     el = (0, c.e7)([f.ZP], () => {
       var e;
-      return ((null === (e = y.channel) || void 0 === e ? void 0 : e.id) != null ? f.ZP.getEmbeddedActivitiesForChannel(y.channel.id) : []).some(e => {
+      return (null == E ? void 0 : E.channel) != null && (null == (e = f.ZP.getSelfEmbeddedActivityForChannel(E.channel.id)) ? void 0 : e.applicationId) === I.id
+    }),
+    eo = (0, c.e7)([f.ZP], () => {
+      var e;
+      return ((null == (e = E.channel) ? void 0 : e.id) != null ? f.ZP.getEmbeddedActivitiesForChannel(E.channel.id) : []).some(e => {
         let {
           applicationId: t
         } = e;
         return I.id === t
       })
     }),
-    es = w.Z.getChannel(null === (n = y.channel) || void 0 === n ? void 0 : n.id),
+    es = w.Z.getChannel(null == (n = E.channel) ? void 0 : n.id),
     ec = (0, c.e7)([k.Z], () => null != es && k.Z.can(U.Plq.USE_EMBEDDED_ACTIVITIES, es), [es]),
     {
       analyticsLocations: eu
-    } = (0, v.ZP)(b.Z.INVITE_EMBED),
+    } = (0, x.ZP)(b.Z.INVITE_EMBED),
     ed = (0, h.Z)({
       applicationId: I.id,
       size: z,
@@ -238,62 +238,62 @@ function Q(e) {
     ep = (0, c.Wu)([f.ZP], () => null != es ? f.ZP.getEmbeddedActivitiesForChannel(es.id).filter(e => e.applicationId === I.id).flatMap(e => Array.from(e.userIds)) : [], [es, I.id]),
     em = (0, c.Wu)([R.default], () => ep.map(e => R.default.getUser(e)).filter(e => null != e), [ep]),
     ef = i.useCallback(() => {
-      (0, p.r$)(y, "accept", eu), p.ZP.acceptInviteAndTransitionToInviteChannel({
-        inviteKey: y.code,
-        context: E("Invite Button Embed"),
+      (0, p.r$)(E, "accept", eu), p.ZP.acceptInviteAndTransitionToInviteChannel({
+        inviteKey: E.code,
+        context: v("Invite Button Embed"),
         analyticsLocations: eu
       })
-    }, [y, eu, E]),
-    eh = y.state === U.r2o.ACCEPTING,
+    }, [E, eu, v]),
+    eh = E.state === U.r2o.ACCEPTING,
     eg = null != ei;
   if (null == ei) {
-    if (null == y.guild) return (0, r.jsx)(W.Z, {});
-    ei = new A.ZP(y.guild)
+    if (null == E.guild) return (0, r.jsx)(W.Z, {});
+    ei = new A.ZP(E.guild)
   }
-  let e_ = eg && !ec || eg && eo;
-  eg && eo && (l = B.NW.string(B.t.wJNK8P)), ec || (l = B.NW.string(B.t.hHGrW1)), u = eo ? B.NW.string(B.t.KC26NT) : el || !eg ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.I0v0Qk);
+  let e_ = eg && !ec || eg && el;
+  eg && el && (o = B.NW.string(B.t.wJNK8P)), ec || (o = B.NW.string(B.t.hHGrW1)), u = el ? B.NW.string(B.t.KC26NT) : eo || !eg ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.I0v0Qk);
   let {
     enabled: eb
-  } = x.G.useExperiment({
+  } = y.G.useExperiment({
     location: "EmbeddedApplicationInvite"
   });
-  return null == y.code || "" === y.code ? null : eb && null != ea ? (0, r.jsx)(J, {
+  return null == E.code || "" === E.code ? null : eb && null != ea ? (0, r.jsx)(J, {
     app: ea,
-    invite: y,
+    invite: E,
     activityUsers: em,
     isMember: eg,
     channel: es,
     guild: ei,
     members: O,
     membersOnline: N,
-    isActivityActive: el,
+    isActivityActive: eo,
     submitting: eh,
     isDisabled: e_,
-    tooltip: l,
+    tooltip: o,
     handleAcceptInvite: ef,
     onView: () => et(!0)
   }) : (0, r.jsxs)("div", {
     className: G.container,
     ref: er,
     children: [(0, r.jsx)("div", {
-      className: o()(G.imgContainer, {
+      className: l()(G.imgContainer, {
         [G.large]: L,
         [G.stacked]: Q
       }),
       children: (0, r.jsx)(g.Z, {
         imageBackground: ed,
-        applicationName: null !== (a = null == ea ? void 0 : ea.name) && void 0 !== a ? a : "",
-        imageClassName: o()(G.img, {
+        applicationName: null != (a = null == ea ? void 0 : ea.name) ? a : "",
+        imageClassName: l()(G.img, {
           [G.large]: L,
           [G.stacked]: Q
         }),
-        imageNotFoundClassName: o()(G.brokenImg, {
+        imageNotFoundClassName: l()(G.brokenImg, {
           [G.large]: L,
           [G.stacked]: Q
         })
       })
     }), (0, r.jsxs)(T.Z, {
-      className: o()(G.content, {
+      className: l()(G.content, {
         [G.large]: L,
         [G.stacked]: Q
       }),
@@ -309,15 +309,15 @@ function Q(e) {
           channel: es,
           guild: ei,
           isStacked: Q,
-          hasEnded: !el
+          hasEnded: !eo
         })]
       }), (0, r.jsxs)("div", {
-        className: o()(G.currentState, {
+        className: l()(G.currentState, {
           [G.large]: L,
-          [G.split]: !el && Q
+          [G.split]: !eo && Q
         }),
-        children: [!el && eg ? (0, r.jsxs)("div", {
-          className: o()(G.endedNote, {
+        children: [!eo && eg ? (0, r.jsxs)("div", {
+          className: l()(G.endedNote, {
             [G.large]: L
           }),
           children: [(0, r.jsx)(d.Text, {
@@ -334,7 +334,7 @@ function Q(e) {
           isStacked: Q
         }), (0, r.jsxs)("div", {
           className: G.cta,
-          children: [null != ei && el ? (0, r.jsx)("div", {
+          children: [null != ei && eo ? (0, r.jsx)("div", {
             className: G.avatars,
             children: (0, r.jsx)(_.Z, {
               guildId: ei.id,
@@ -342,7 +342,7 @@ function Q(e) {
               max: 4
             })
           }) : null, (0, r.jsx)(d.ua7, {
-            text: l,
+            text: o,
             children: e => {
               var {
                 onClick: t
@@ -386,8 +386,8 @@ function J(e) {
     app: t,
     invite: n,
     activityUsers: a,
-    isMember: o,
-    channel: l,
+    isMember: l,
+    channel: o,
     guild: s,
     members: c,
     membersOnline: u,
@@ -399,36 +399,36 @@ function J(e) {
     onView: g
   } = e, _ = new URL(n.code, "https://discord.gg").toString(), {
     bot: b,
-    icon: v
-  } = t, x = L.ZP.getApplicationIconURL({
+    icon: x
+  } = t, y = L.ZP.getApplicationIconURL({
     id: t.id,
-    icon: v,
+    icon: x,
     bot: b
   }), C = (0, j.z)(t), I = (0, N.E)(t), S = a.length, T = i.useMemo(() => {
     let e = [{
-      label: o ? d ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
-      trackingArea: o ? O.j_.PLAY : O.j_.JOIN_SERVER,
+      label: l ? d ? B.NW.string(B.t.VJlc0d) : B.NW.string(B.t.RscU7O) : B.NW.string(B.t["2BP08P"]),
+      trackingArea: l ? O.j_.PLAY : O.j_.JOIN_SERVER,
       submitting: p,
       disabledReason: m && null != f ? f : void 0,
       onClick: h
     }];
     return null != C && e.push(C), e
-  }, [h, d, m, o, p, f, C]);
-  return (0, r.jsx)(y.W, V(H({
+  }, [h, d, m, l, p, f, C]);
+  return (0, r.jsx)(E.W, V(H({
     header: t.name,
     title: B.NW.string(B.t["7vb6n5"]),
-    iconSrc: x,
+    iconSrc: y,
     embedUrl: _
   }, I), {
     info: (0, r.jsxs)("div", {
       className: G.infoWrapper,
       children: [(0, r.jsx)(q, {
-        channel: l,
+        channel: o,
         guild: s,
         isStacked: !1,
         hasEnded: !d,
         textColor: "none"
-      }), o ? S > 0 && (0, r.jsx)(E.K, {
+      }), l ? S > 0 && (0, r.jsx)(v.K, {
         activityUsers: a,
         guildId: s.id,
         activityText: B.NW.string(B.t.BMTj29)

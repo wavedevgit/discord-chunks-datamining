@@ -188,13 +188,17 @@ function d(e) {
       if (l(e, "range")) return (t.add(e), e.hasAttribute("aria-valuetext")) ? e.getAttribute("aria-valuetext") : e.hasAttribute("aria-valuenow") ? e.getAttribute("aria-valuenow") : e.getAttribute("value") || "";
       if ((0, n.xO)(e, ["textbox"])) return t.add(e), (0, n.LL)(e) || (0, n.ZH)(e) ? e.value : e.textContent || ""
     }
-    return (0, n.xO)(e, ["button", "cell", "checkbox", "columnheader", "gridcell", "heading", "label", "legend", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "row", "rowheader", "switch", "tab", "tooltip", "treeitem"]) || (0, n.kK)(e) && r.isReferenced || (0, n.GD)(e) ? (t.add(e), h(e, {
+    if ((0, n.xO)(e, ["button", "cell", "checkbox", "columnheader", "gridcell", "heading", "label", "legend", "link", "menuitem", "menuitemcheckbox", "menuitemradio", "option", "radio", "row", "rowheader", "switch", "tab", "tooltip", "treeitem"]) || (0, n.kK)(e) && r.isReferenced || (0, n.GD)(e)) return t.add(e), h(e, {
       isEmbeddedInLabel: r.isEmbeddedInLabel,
       isReferenced: !1
-    })) : e.nodeType === e.TEXT_NODE ? (t.add(e), e.textContent || "") : r.recursion ? (t.add(e), h(e, {
+    });
+    if (e.nodeType === e.TEXT_NODE) return t.add(e), e.textContent || "";
+    if (r.recursion) return t.add(e), h(e, {
       isEmbeddedInLabel: r.isEmbeddedInLabel,
       isReferenced: !1
-    })) : (t.add(e), "")
+    });
+    var f = null;
+    return null !== f ? (t.add(e), f) : (t.add(e), "")
   }
   return C(e, {
     isEmbeddedInLabel: !1,

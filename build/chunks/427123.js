@@ -1,9 +1,9 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(653041);
-var r, i, a, o = n(392711),
-  l = n.n(o),
+var r, i, a, l = n(392711),
+  o = n.n(l),
   s = n(442837),
   c = n(433517),
   u = n(570140),
@@ -15,10 +15,10 @@ var r, i, a, o = n(392711),
   g = n(594174),
   _ = n(580130),
   b = n(55563),
-  v = n(981631);
-let x = "DetectedOffPlatformPremiumPerksStore",
-  y = {},
+  x = n(981631);
+let y = "DetectedOffPlatformPremiumPerksStore",
   E = {},
+  v = {},
   O = [];
 
 function N() {
@@ -27,7 +27,7 @@ function N() {
       skuId: t,
       applicationId: n
     }
-    of l().values(E)) {
+    of o().values(v)) {
     if (O.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
@@ -39,7 +39,7 @@ function N() {
       b.Z.isFetching(t) || b.Z.didFetchingSkuFail(t) || p.$N(r.id, t);
       continue
     }
-    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = !0) : (y[t] = {
+    _.Z.applicationIdsFetching.has(r.id) || _.Z.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != E[t] && (delete E[t], e = !0) : (E[t] = {
       skuId: t,
       applicationId: n
     }, e = !0)
@@ -49,10 +49,10 @@ function N() {
 class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), O = null !== (e = c.K.get(x)) && void 0 !== e ? e : O
+    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(y)) ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
-    return l().values(y)
+    return o().values(E)
   }
 }
 a = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
@@ -63,7 +63,7 @@ a = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.de
 }) : j[i] = a;
 let C = new j(u.Z, {
   LOGOUT: function() {
-    y = {}, E = {}
+    E = {}, v = {}
   },
   SKU_FETCH_SUCCESS: N,
   ENTITLEMENT_FETCH_APPLICATION_SUCCESS: N,
@@ -73,8 +73,8 @@ let C = new j(u.Z, {
     let {
       skuId: t
     } = e;
-    if (delete y[t], O.includes(t)) return !1;
-    O.push(t), c.K.set(x, O)
+    if (delete E[t], O.includes(t)) return !1;
+    O.push(t), c.K.set(y, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -83,12 +83,12 @@ let C = new j(u.Z, {
         distributor: n
       }
       of h.ZP.getRunningGames())
-      if (null != t && n !== v.GQo.DISCORD)
+      if (null != t && n !== x.GQo.DISCORD)
         for (let {
             skuId: n,
             applicationId: r
           }
-          of v.Lg6) !(r !== t || O.includes(n)) && null == E[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || d.yD(r), E[n] = {
+          of x.Lg6) r !== t || O.includes(n) || null == v[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || d.yD(r), v[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);

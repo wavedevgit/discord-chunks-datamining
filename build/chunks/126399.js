@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 }), n(47120);
 var r = n(544891),
   i = n(570140),
@@ -18,7 +18,7 @@ function p(e, t) {
     handoff_source: t
   })
 }
-class h extends u.Z {
+class g extends u.Z {
   _initialize() {
     i.Z.subscribe("BROWSER_HANDOFF_END", this.handleEnd), i.Z.subscribe("BROWSER_HANDOFF_FROM_APP", this.handleHandoff)
   }
@@ -48,7 +48,7 @@ class h extends u.Z {
       if (null != i && p(!1, s), o.Z.setFingerprint(i), (0, a.lx)(), s === l.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
-          reason: null !== (t = e.message) && void 0 !== t ? t : e.text,
+          reason: null != (t = e.message) ? t : e.text,
           handoff_source: s
         })
       }
@@ -75,4 +75,4 @@ class h extends u.Z {
     }) : this[t] = n
   }
 }
-let g = new h
+let h = new g

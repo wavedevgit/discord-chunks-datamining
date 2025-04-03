@@ -13,8 +13,9 @@ var r = n(668530),
   h = o && o.prototype,
   f = c("species"),
   m = !1,
-  y = a(r.PromiseRejectionEvent),
-  v = i("Promise", function() {
+  y = a(r.PromiseRejectionEvent);
+e.exports = {
+  CONSTRUCTOR: i("Promise", function() {
     var e = s(o),
       t = e !== String(o);
     if (!t && 66 === p || d && !(h.catch && h.finally)) return !0;
@@ -28,9 +29,7 @@ var r = n(668530),
       if ((n.constructor = {})[f] = r, !(m = n.then(function() {}) instanceof r)) return !0
     }
     return !t && (l || u) && !y
-  });
-e.exports = {
-  CONSTRUCTOR: v,
+  }),
   REJECTION_EVENT: y,
   SUBCLASSING: m
 }

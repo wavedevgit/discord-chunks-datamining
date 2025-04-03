@@ -10,8 +10,8 @@ var l = n(442837),
   o = n(40851),
   s = n(740492),
   u = n(314897),
-  d = n(592125),
-  c = n(699516),
+  c = n(592125),
+  d = n(699516),
   g = n(944486),
   f = n(981631),
   b = n(388032);
@@ -24,7 +24,7 @@ function Z(e) {
     joinCallVideo: m,
     id: v,
     onCall: p
-  } = e, O = (0, o.Aq)(), h = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (0, l.e7)([c.Z], () => c.Z.isBlocked(t.id)), x = (0, l.e7)([g.Z, d.Z], () => g.Z.getVoiceChannelId() === d.Z.getDMFromUserId(t.id));
+  } = e, O = (0, o.Aq)(), h = (0, l.e7)([u.default], () => u.default.getId() === t.id), j = (0, l.e7)([d.Z], () => d.Z.isBlocked(t.id)), x = (0, l.e7)([g.Z, c.Z], () => g.Z.getVoiceChannelId() === c.Z.getDMFromUserId(t.id));
   if (h || Z === f.IlC.POPOUT || x || t.bot || t.isProvisional) return null;
   let _ = () => {
       null == p || p(), a.Z.openPrivateChannel(t.id, !0, m), O.dispatch(f.CkL.POPOUT_CLOSE), (0, r.pTH)()

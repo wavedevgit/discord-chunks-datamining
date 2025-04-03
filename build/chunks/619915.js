@@ -26,7 +26,7 @@ function p(e) {
       var n;
       let i = (0, d.pY)(t.embeddedActivity.location);
       if (null == i) return;
-      let r = null !== (n = e.get(i)) && void 0 !== n ? n : [];
+      let r = null != (n = e.get(i)) ? n : [];
       r.push(t), e.set(i, r)
     }), e
   }, [t])
@@ -74,9 +74,9 @@ function v(e) {
       var n, i, r;
       let o = l.Z.findActivity(null == e ? void 0 : e.embeddedActivity.userIds.values().next().value, t => {
         var n;
-        return t.application_id === (null == e ? void 0 : null === (n = e.application) || void 0 === n ? void 0 : n.id)
+        return t.application_id === (null == e || null == (n = e.application) ? void 0 : n.id)
       });
-      t.set(null == e ? void 0 : null === (n = e.application) || void 0 === n ? void 0 : n.id, (i = function(e) {
+      t.set(null == e || null == (n = e.application) ? void 0 : n.id, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);

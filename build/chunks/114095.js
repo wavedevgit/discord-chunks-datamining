@@ -67,5 +67,8 @@ var n = {
 };
 let t = function(i, a, e) {
   var t, r = n[i];
-  return (t = "string" == typeof r ? r : 1 === a ? r.one : r.other.replace("{{count}}", String(a)), null != e && e.addSuffix) ? e.comparison && e.comparison > 0 ? "\xeen " + t : t + " \xeen urmă" : t
+  if (t = "string" == typeof r ? r : 1 === a ? r.one : r.other.replace("{{count}}", String(a)), null != e && e.addSuffix)
+    if (e.comparison && e.comparison > 0) return "\xeen " + t;
+    else return t + " \xeen urmă";
+  return t
 }

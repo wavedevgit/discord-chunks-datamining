@@ -12,12 +12,12 @@ var r = n(200651),
   u = n(129293),
   d = n(388905),
   p = n(17894),
-  h = n(108427),
-  g = n(626135),
-  m = n(981631),
-  f = n(388032),
-  _ = n(55047),
-  b = n(685786);
+  g = n(108427),
+  h = n(626135),
+  f = n(981631),
+  m = n(388032),
+  _ = n(726401),
+  b = n(20493);
 
 function x(e) {
   n.g.location.assign(e)
@@ -29,12 +29,10 @@ function N(e) {
     transitionTo: o = x
   } = e, [l, N] = i.useState("submitting"), v = i.useRef(void 0);
   (0, c.ZP)(() => {
-    (0, h.e)("verify_email");
+    (0, g.e)("verify_email");
     let e = (0, u.Z)(t);
-    if (null == e) {
-      N("failed");
-      return
-    }(async () => {
+    if (null == e) return void N("failed");
+    (async () => {
       try {
         let t = await s.Z.verify(e);
         N("succeeded"), v.current = t
@@ -44,10 +42,10 @@ function N(e) {
     })()
   });
   let E = i.useCallback(() => {
-      o(m.Z5c.LOGIN)
+      o(f.Z5c.LOGIN)
     }, [o]),
     I = i.useCallback(() => {
-      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      h.default.track(f.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: v.current
       }), (0, p.Z)("verify_email")
     }, []);
@@ -57,13 +55,13 @@ function N(e) {
       className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: f.NW.string(f.t.PCgG39)
+      children: m.NW.string(m.t.PCgG39)
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: f.NW.string(f.t.tQpeAw)
+      children: m.NW.string(m.t.tQpeAw)
     }), (0, r.jsx)(d.zx, {
       onClick: E,
-      children: f.NW.string(f.t.dKhVQE)
+      children: m.NW.string(m.t.dKhVQE)
     })]
   }) : "succeeded" === l ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -71,10 +69,10 @@ function N(e) {
       className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom40,
-      children: f.NW.string(f.t.dAfGb2)
+      children: m.NW.string(m.t.dAfGb2)
     }), (0, r.jsx)(d.zx, {
       onClick: I,
-      children: f.NW.string(f.t.uJWIj4)
+      children: m.NW.string(m.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Ee, {
@@ -82,10 +80,10 @@ function N(e) {
       className: a()(_.image, b.marginBottom20)
     }), (0, r.jsx)(d.Dx, {
       className: b.marginBottom8,
-      children: f.NW.string(f.t["0c8+5u"])
+      children: m.NW.string(m.t["0c8+5u"])
     }), (0, r.jsx)(d.DK, {
       className: b.marginBottom40,
-      children: f.NW.string(f.t.ULTCBA)
+      children: m.NW.string(m.t.ULTCBA)
     }), (0, r.jsx)(d.zx, {
       submitting: !0,
       color: d.zx.Colors.PRIMARY

@@ -12,10 +12,10 @@ var r, i = n(200651),
   u = n(873546),
   d = n(442837),
   p = n(481060),
-  h = n(570140),
-  g = n(893776),
-  m = n(899742),
-  f = n(579806),
+  g = n(570140),
+  h = n(893776),
+  f = n(899742),
+  m = n(579806),
   _ = n(743142),
   b = n(254942),
   x = n(388905),
@@ -45,8 +45,8 @@ var r, i = n(200651),
   F = n(981631),
   z = n(58346),
   V = n(388032),
-  H = n(819137),
-  K = n(685786);
+  H = n(555763),
+  K = n(20493);
 
 function q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,13 +106,13 @@ class Q extends(r = o.PureComponent) {
       invite: r,
       location: i
     } = this.props;
-    e && !t ? (0, m.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
+    e && !t ? (0, f.is)() : t && this.loginOrSSO(t, i, !0), D.default.track(F.rMx.LOGIN_VIEWED, Y({
       location: null != r ? "Invite Login Page" : "Non-Invite Login Page",
       login_source: this.loginSource,
       authenticated: t
     }, null != n ? (0, E.Z)(n, !1, !1) : {}), {
       flush: !0
-    }), null == f.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
+    }), null == m.Z && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable && PublicKeyCredential.isConditionalMediationAvailable().then(e => {
       e && (0, Z.us)().then(e => {
         let {
           challenge: t,
@@ -120,14 +120,14 @@ class Q extends(r = o.PureComponent) {
         } = e, r = (0, a.wz)(JSON.parse(t));
         return r.signal = this.state.conditionalMediationAbortController.signal, (0, a.U2)(r).then(e => (this.setState({
           errors: {}
-        }), h.Z.dispatch({
+        }), g.Z.dispatch({
           type: "PASSWORDLESS_START"
         }), D.default.track(F.rMx.LOGIN_ATTEMPTED, {
           source: F.uRl.PASSWORDLESS_CONDITIONAL_UI,
           login_method: "passwordless",
           login_source: this.loginSource,
           gift_code_sku_id: this.giftCodeSKUId
-        }), g.Z.loginWebAuthn({
+        }), h.Z.loginWebAuthn({
           ticket: n,
           credential: JSON.stringify(e),
           source: this.loginSource,
@@ -140,7 +140,7 @@ class Q extends(r = o.PureComponent) {
           if ("AbortError" !== e.name) throw e
         })
       }).catch(() => {})
-    }), g.Z.getLocationMetadata(), (0, A.e)("login")
+    }), h.Z.getLocationMetadata(), (0, A.e)("login")
   }
   componentDidUpdate(e, t) {
     let {
@@ -151,7 +151,7 @@ class Q extends(r = o.PureComponent) {
     } = this.state;
     if (!n || e.authenticated || i || (this.state.conditionalMediationAbortController.abort(), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
       var o, a, l;
-      this.hasError("password") ? null === (o = this.passwordRef) || void 0 === o || o.focus() : this.hasError("email") || this.hasError("login") ? null === (a = this.loginRef) || void 0 === a || a.focus() : this.hasError("code") && (null === (l = this.codeRef) || void 0 === l || l.focus())
+      this.hasError("password") ? null == (o = this.passwordRef) || o.focus() : this.hasError("email") || this.hasError("login") ? null == (a = this.loginRef) || a.focus() : this.hasError("code") && (null == (l = this.codeRef) || l.focus())
     }
   }
   get loginSource() {
@@ -167,8 +167,8 @@ class Q extends(r = o.PureComponent) {
     if (null != t) return "guild_template";
     if (null != n) {
       if (null != n.guild) return "guild_invite";
-      if (null != n.channel) return "dm_invite";
-      if (null != n.inviter) return "friend_invite"
+      else if (null != n.channel) return "dm_invite";
+      else if (null != n.inviter) return "friend_invite"
     }
     return null != i ? (0, _.L)(i) : null
   }
@@ -185,7 +185,7 @@ class Q extends(r = o.PureComponent) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     e && null != t && (this.setState({
       redirecting: !0
-    }), n ? g.Z.verifySSOToken().then(() => this.transitionSSO(t)) : this.transitionSSO(t))
+    }), n ? h.Z.verifySSOToken().then(() => this.transitionSSO(t)) : this.transitionSSO(t))
   }
   transitionSSO(e) {
     let {
@@ -347,16 +347,17 @@ class Q extends(r = o.PureComponent) {
   }
   renderDefaultForm(e) {
     var t;
-    let n;
-    let {
-      invite: r,
-      giftCode: o,
-      loginStatus: a,
-      country: l,
-      showMobileWebHandoff: c,
-      disableAutofocusOnDefaultForm: u
-    } = this.props, d = !this.hasError("email") && this.hasError("password"), h = (null == r ? void 0 : r.stage_instance) != null;
-    return n = null == r || h ? null != o ? (0, i.jsx)(B.Z, {
+    let n, {
+        invite: r,
+        giftCode: o,
+        loginStatus: a,
+        country: l,
+        showMobileWebHandoff: c,
+        disableAutofocusOnDefaultForm: u
+      } = this.props,
+      d = !this.hasError("email") && this.hasError("password"),
+      g = (null == r ? void 0 : r.stage_instance) != null;
+    return n = null == r || g ? null != o ? (0, i.jsx)(B.Z, {
       giftCode: o
     }) : (0, i.jsxs)("div", {
       className: H.header,
@@ -401,7 +402,7 @@ class Q extends(r = o.PureComponent) {
               countryCode: l.code.split(" ")[0],
               className: K.marginBottom20,
               label: V.NW.string(V.t.tUjnxs),
-              error: null !== (t = this.renderError("login")) && void 0 !== t ? t : this.renderError("email"),
+              error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
               onChange: (e, t) => this.setState({
                 login: e,
                 loginPrefix: t
@@ -437,9 +438,9 @@ class Q extends(r = o.PureComponent) {
             }), (0, i.jsx)(x.zx, {
               type: "submit",
               submitting: a === F.u34.LOGGING_IN,
-              color: h ? x.zx.Colors.GREEN : x.zx.Colors.BRAND,
+              color: g ? x.zx.Colors.GREEN : x.zx.Colors.BRAND,
               className: K.marginBottom8,
-              children: h ? V.NW.string(V.t.wvVThI) : V.NW.string(V.t.dKhVQE)
+              children: g ? V.NW.string(V.t.wvVThI) : V.NW.string(V.t.dKhVQE)
             }), (0, i.jsxs)("div", {
               className: K.marginTop4,
               children: [(0, i.jsx)("span", {
@@ -502,7 +503,7 @@ class Q extends(r = o.PureComponent) {
         mfaFinish: this.handleTokenSubmitMFA,
         mfaChallenge: e,
         onEarlyClose: () => {
-          h.Z.dispatch({
+          g.Z.dispatch({
             type: "LOGIN_RESET"
           })
         },
@@ -590,10 +591,9 @@ class Q extends(r = o.PureComponent) {
       case F.u34.NONE:
       default:
         if (null != t && t.state === F.r2o.RESOLVING) return this.renderResolving();
-        if (null != n) {
+        if (null != n)
           if (n.state === z.Rj.RESOLVING) return this.renderResolving();
-          return this.renderGuildTemplate(n)
-        }
+          else return this.renderGuildTemplate(n);
         if (this.canShowChooseAccount && !this.state.dismissedChooseAccount) return this.renderChooseAccount();
         return this.renderDefault()
     }
@@ -603,7 +603,7 @@ class Q extends(r = o.PureComponent) {
     super(e), q(this, "loginRef", void 0), q(this, "passwordRef", void 0), q(this, "codeRef", void 0), q(this, "handleAuthToken", async e => {
       this.setState({
         errors: {}
-      }), await g.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
+      }), await h.Z.loginToken(e, !1), D.default.track(F.rMx.LOGIN_SUCCESSFUL, {
         source: F.uRl.QR_CODE,
         login_source: this.loginSource,
         gift_code_sku_id: this.giftCodeSKUId,
@@ -612,7 +612,7 @@ class Q extends(r = o.PureComponent) {
     }), q(this, "loginReset", () => {
       this.setState({
         errors: {}
-      }), g.Z.loginReset()
+      }), h.Z.loginReset()
     }), q(this, "setLoginRef", e => {
       this.loginRef = e
     }), q(this, "setPasswordRef", e => {
@@ -643,7 +643,7 @@ class Q extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        await g.Z.login({
+        await h.Z.login({
           login: this.getFullLogin(),
           password: t,
           undelete: n,
@@ -666,7 +666,7 @@ class Q extends(r = o.PureComponent) {
         let {
           token: n
         } = await y.Z.verifyPhone(t, e, !1);
-        await g.Z.authorizeIPAddress(n), this.handleLogin()
+        await h.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
           phoneVerifyError: e.body.message
@@ -700,7 +700,7 @@ class Q extends(r = o.PureComponent) {
         data: n,
         ticket: r
       } = e;
-      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), g.Z.loginMFAv2({
+      return k.S.dispatch(F.CkL.WAVE_EMPHASIZE), h.Z.loginMFAv2({
         code: n,
         ticket: r,
         mfaType: t,
@@ -714,7 +714,7 @@ class Q extends(r = o.PureComponent) {
         errors: {}
       });
       try {
-        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
+        if (k.S.dispatch(F.CkL.WAVE_EMPHASIZE), !await h.Z.forgotPassword(t)) return;
         (0, p.h7j)(e => (0, i.jsx)(p.ConfirmModal, J(Y({
           header: V.NW.string(V.t.f5Pi7O),
           confirmText: V.NW.string(V.t.BddRzc),
@@ -737,7 +737,7 @@ class Q extends(r = o.PureComponent) {
     }), q(this, "handleResendCode", () => {
       y.Z.resendCode(this.getFullLogin())
     }), q(this, "handleReset", e => {
-      null != e && e.preventDefault(), g.Z.loginReset(), this.setState({
+      null != e && e.preventDefault(), h.Z.loginReset(), this.setState({
         password: "",
         loginPrefix: "",
         login: "",
@@ -753,17 +753,18 @@ class Q extends(r = o.PureComponent) {
         undelete: !0
       }, this.handleLogin)
     }), q(this, "handleGotoRegister", () => {
-      let e;
-      let {
-        login: t
-      } = this.state, {
-        invite: n,
-        giftCode: r,
-        guildTemplate: i,
-        location: o,
-        transitionTo: a,
-        redirectTo: l
-      } = this.props, s = null != o ? (0, c.parse)(o.search) : {};
+      let e, {
+          login: t
+        } = this.state,
+        {
+          invite: n,
+          giftCode: r,
+          guildTemplate: i,
+          location: o,
+          transitionTo: a,
+          redirectTo: l
+        } = this.props,
+        s = null != o ? (0, c.parse)(o.search) : {};
       "" !== t && (s.email = t), null != n ? (s.mode = "register", e = F.Z5c.INVITE(n.code)) : null != r ? (s.mode = "register", e = F.Z5c.GIFT_CODE(r.code)) : null != i ? e = F.Z5c.GUILD_TEMPLATE(i.code) : null != l ? (e = F.Z5c.REGISTER, s.redirect_to = l) : e = F.Z5c.REGISTER, this.loginReset(), a(e, {
         search: (0, c.stringify)(s)
       }), k.S.dispatch(F.CkL.WAVE_EMPHASIZE)
@@ -773,7 +774,7 @@ class Q extends(r = o.PureComponent) {
       redirecting: e.authenticated,
       checkingHandoff: e.handoffAvailable,
       loginPrefix: "",
-      login: null !== (n = null !== (t = r.email) && void 0 !== t ? t : r.login) && void 0 !== n ? n : "",
+      login: null != (n = null != (t = r.email) ? t : r.login) ? n : "",
       password: "",
       code: "",
       smsCode: "",

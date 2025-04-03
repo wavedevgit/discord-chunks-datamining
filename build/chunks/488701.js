@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(392711),
-  i = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  i = n(442837),
   c = n(668826),
   l = n(359013),
   u = n(120421),
@@ -20,11 +20,11 @@ function g(e) {
     PurchasableComponent: t,
     item: n,
     itemId: o,
-    currentPoints: i,
-    onPurchase: a
+    currentPoints: a,
+    onPurchase: i
   } = e, u = (0, l.Tw)(o), d = (0, s.useCallback)(() => {
-    (0, c.xD)(o), a()
-  }, [a, o]);
+    (0, c.xD)(o), i()
+  }, [i, o]);
   return (0, r.jsx)(t, {
     itemId: o,
     name: n.name,
@@ -33,7 +33,7 @@ function g(e) {
     points: u,
     cost: n.cost,
     iconSrc: n.purchaseIconSrc,
-    currentPoints: i,
+    currentPoints: a,
     onPurchase: d
   })
 }
@@ -43,8 +43,8 @@ function b(e) {
     PurchasableComponent: t,
     upgrade: n,
     upgradeId: o,
-    currentPoints: i,
-    numAlreadyPurchased: a,
+    currentPoints: a,
+    numAlreadyPurchased: i,
     onPurchase: u
   } = e, d = (0, l.p9)(o), f = (0, s.useCallback)(() => {
     (0, c.Z_)(o), u()
@@ -57,10 +57,10 @@ function b(e) {
     pointsDescription: n.pointsDescription,
     points: d,
     cost: n.cost({
-      numAlreadyPurchased: a
+      numAlreadyPurchased: i
     }),
     iconSrc: n.purchaseIconSrc,
-    currentPoints: i,
+    currentPoints: a,
     onPurchase: f
   })
 }
@@ -71,22 +71,22 @@ function y(e) {
     purchasePriority: n,
     itemsShown: o,
     PurchasableComponent: c
-  } = e, l = (0, a.e7)([u.Z], () => u.Z.currentPoints), y = (0, a.e7)([u.Z], () => u.Z.purchasedItems), h = (0, a.e7)([u.Z], () => u.Z.lifetimePoints), v = (0, p.w2)(), x = (0, p.r7)(), N = (0, f.eR)(m), O = (0, s.useMemo)(() => i()(n).filter(e => {
+  } = e, l = (0, i.e7)([u.Z], () => u.Z.currentPoints), y = (0, i.e7)([u.Z], () => u.Z.purchasedItems), h = (0, i.e7)([u.Z], () => u.Z.lifetimePoints), x = (0, p.w2)(), N = (0, p.r7)(), v = (0, f.eR)(m), O = (0, s.useMemo)(() => a()(n).filter(e => {
     switch (e.type) {
       case d.h.ITEM:
         return null == y[e.id];
       case d.h.ITEM_UPGRADE:
         var t, n;
-        let r = x[e.id],
+        let r = N[e.id],
           s = r.itemId,
           o = null != y[s],
-          i = null !== (n = null === (t = y[s]) || void 0 === t ? void 0 : t.upgrades[e.id]) && void 0 !== n ? n : 0;
+          a = null != (n = null == (t = y[s]) ? void 0 : t.upgrades[e.id]) ? n : 0;
         return o && (null == r.predicate || r.predicate({
-          numAlreadyPurchased: i,
+          numAlreadyPurchased: a,
           lifetimePoints: h
         }))
     }
-  }).take(null != o ? o : n.length).value(), [o, h, n, y, x]);
+  }).take(null != o ? o : n.length).value(), [o, h, n, y, N]);
   return 0 === O.length ? null : (0, r.jsx)("div", {
     className: t,
     children: O.map(e => {
@@ -94,21 +94,21 @@ function y(e) {
         case d.h.ITEM:
           return (0, r.jsx)(g, {
             itemId: e.id,
-            item: v[e.id],
+            item: x[e.id],
             currentPoints: l,
             PurchasableComponent: c,
-            onPurchase: N
+            onPurchase: v
           }, "item-".concat(e.id));
         case d.h.ITEM_UPGRADE:
           var t, n;
-          let s = null !== (n = null === (t = y[x[e.id].itemId]) || void 0 === t ? void 0 : t.upgrades[e.id]) && void 0 !== n ? n : 0;
+          let s = null != (n = null == (t = y[N[e.id].itemId]) ? void 0 : t.upgrades[e.id]) ? n : 0;
           return (0, r.jsx)(b, {
             upgradeId: e.id,
-            upgrade: x[e.id],
+            upgrade: N[e.id],
             currentPoints: l,
             numAlreadyPurchased: s,
             PurchasableComponent: c,
-            onPurchase: N
+            onPurchase: v
           }, "item-upgrade-".concat(e.id))
       }
     })

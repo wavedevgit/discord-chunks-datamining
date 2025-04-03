@@ -1,10 +1,10 @@
 /** Chunk was on 22878 **/
 n.d(t, {
-  M: () => u,
+  M: () => s,
   ZP: () => E
 });
-var o, i, r = n(442837),
-  l = n(570140);
+var r, l, o = n(442837),
+  i = n(570140);
 
 function a(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,30 +18,30 @@ function a(e, t, n) {
 function c(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      o = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), o.forEach(function(t) {
+    }))), r.forEach(function(t) {
       a(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, o)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var u = ((o = {})[o.FETCHING = 0] = "FETCHING", o[o.FETCHED = 1] = "FETCHED", o[o.ERROR = 2] = "ERROR", o);
-let s = {},
+var s = ((r = {})[r.FETCHING = 0] = "FETCHING", r[r.FETCHED = 1] = "FETCHED", r[r.ERROR = 2] = "ERROR", r);
+let d = {},
   m = {},
   p = {};
 
@@ -49,63 +49,63 @@ function f(e) {
   let {
     location: t,
     channelId: n,
-    withCommands: o
+    withCommands: r
   } = e;
-  return "location:".concat(t, " channelId:").concat("0", " withCommands:").concat(o)
+  return "location:".concat(t, " channelId:").concat("0", " withCommands:").concat(r)
 }
 let O = Object.freeze([]);
-class b extends(i = r.ZP.Store) {
+class b extends(l = o.ZP.Store) {
   getLastFetchTimeMs(e) {
     let {
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     } = e;
     return p[f({
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     })]
   }
   getFetchState(e) {
     let {
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     } = e;
     return m[f({
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     })]
   }
   getRecommendations(e) {
     var t;
     let {
       location: n,
-      channelId: o,
-      withCommands: i
+      channelId: r,
+      withCommands: l
     } = e;
-    return null !== (t = s[f({
+    return null != (t = d[f({
       location: n,
-      channelId: o,
-      withCommands: i
-    })]) && void 0 !== t ? t : O
+      channelId: r,
+      withCommands: l
+    })]) ? t : O
   }
 }
 a(b, "displayName", void 0);
-let E = new b(l.Z, {
+let E = new b(i.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: function(e) {
     let {
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     } = e;
-    m = d(c({}, m), {
+    m = u(c({}, m), {
       [f({
         location: t,
         channelId: n,
-        withCommands: o
+        withCommands: r
       })]: 0
     })
   },
@@ -113,34 +113,34 @@ let E = new b(l.Z, {
     let {
       recommendations: t,
       location: n,
-      channelId: o,
-      withCommands: i
-    } = e, r = f({
+      channelId: r,
+      withCommands: l
+    } = e, o = f({
       location: n,
-      channelId: o,
-      withCommands: i
+      channelId: r,
+      withCommands: l
     });
-    s = d(c({}, s), {
-      [r]: t
-    }), m = d(c({}, m), {
-      [r]: 1
+    d = u(c({}, d), {
+      [o]: t
+    }), m = u(c({}, m), {
+      [o]: 1
     });
-    let l = Date.now();
-    p = d(c({}, p), {
-      [r]: l
+    let i = Date.now();
+    p = u(c({}, p), {
+      [o]: i
     })
   },
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE: function(e) {
     let {
       location: t,
       channelId: n,
-      withCommands: o
+      withCommands: r
     } = e;
-    m = d(c({}, m), {
+    m = u(c({}, m), {
       [f({
         location: t,
         channelId: n,
-        withCommands: o
+        withCommands: r
       })]: 2
     })
   }

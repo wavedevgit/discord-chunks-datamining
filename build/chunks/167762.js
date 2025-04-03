@@ -20,10 +20,10 @@ var i = n(200651),
   y = n(724757),
   m = n(620662),
   O = n(420660),
-  v = n(326255),
-  S = n(956221),
-  b = n(747017),
-  I = n(297781),
+  S = n(326255),
+  b = n(956221),
+  I = n(747017),
+  v = n(297781),
   E = n(82295),
   j = n(554300),
   C = n(558602),
@@ -43,7 +43,7 @@ var i = n(200651),
   M = n(151459),
   L = n(981631),
   W = n(388032),
-  V = n(309951);
+  V = n(288779);
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -101,7 +101,7 @@ let H = u.EFr.SIZE_32,
     ONLINE: 4,
     OFFLINE: 5
   },
-  B = [I.OV, I.wO, I.f, I.v1, I.pQ],
+  B = [v.OV, v.wO, v.f, v.v1, v.pQ],
   K = r.memo(e => {
     let {
       user: t,
@@ -123,7 +123,7 @@ let H = u.EFr.SIZE_32,
       guildId: null
     }), M = (0, a.JA)("".concat(s)), [q, J] = r.useState(!1), [K, Q] = r.useState({}), X = l.filter(e => e.type === L.IIU.PLAYING && (0, m.Z)(e, L.xjy.JOIN)), $ = (0, c.Wu)([D.Z], () => D.Z.getActivities().filter(e => e.type === L.IIU.PLAYING && (0, m.Z)(e, L.xjy.JOIN))), {
       voiceChannel: ee
-    } = (0, S.Z)({
+    } = (0, b.Z)({
       userId: t.id,
       surface: "friends-popout"
     }), et = (0, c.e7)([U.Z], () => U.Z.getRelationshipType(t.id)), en = (0, w.K)({
@@ -155,15 +155,15 @@ let H = u.EFr.SIZE_32,
           t = Y(z({}, o), {
             traits: e.slice(0, 3)
           });
-        return (0, i.jsx)(I.Gk, {
-          location: I.Gt.FRIENDS_POPOUT,
+        return (0, i.jsx)(v.Gk, {
+          location: v.Gt.FRIENDS_POPOUT,
           className: V.badgesContainer,
           children: B.map((e, n) => (0, i.jsx)(e, {
             entry: t
           }, n))
         })
       }
-      if (!(0, v.Z)({
+      if (!(0, S.Z)({
           activities: l,
           status: ei,
           applicationStream: er,
@@ -178,7 +178,7 @@ let H = u.EFr.SIZE_32,
         }),
         user: t
       });
-      return (0, i.jsx)(b.Z, {
+      return (0, i.jsx)(I.Z, {
         user: t,
         activities: l,
         applicationStream: er,
@@ -192,7 +192,7 @@ let H = u.EFr.SIZE_32,
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("57673")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("70686")]).then(n.bind(n, 881351));
         return n => (0, i.jsx)(e, Y(z({}, n), {
           user: t,
           appContext: P
@@ -285,7 +285,7 @@ let H = u.EFr.SIZE_32,
         var n;
         return (0, i.jsx)(Z.sF, {
           label: K[e.application_id] ? W.NW.string(W.t["8BEiNj"]) : W.NW.formatToPlainString(W.t["KHLo+P"], {
-            channel: null !== (n = t.globalName) && void 0 !== n ? n : t.username,
+            channel: null != (n = t.globalName) ? n : t.username,
             game: e.name
           }),
           icon: K[e.application_id] ? u.dz2 : u.ejJ,
@@ -323,7 +323,7 @@ let H = u.EFr.SIZE_32,
             })),
             name: (0, i.jsx)("span", {
               className: V.username,
-              children: null !== (r = t.globalName) && void 0 !== r ? r : t.username
+              children: null != (r = t.globalName) ? r : t.username
             }),
             subText: ec(),
             selected: l,
@@ -433,8 +433,8 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
       }
       let o = (e, t) => {
         var n, i;
-        let r = (null !== (n = e.user.globalName) && void 0 !== n ? n : e.user.username).toLowerCase(),
-          l = (null !== (i = t.user.globalName) && void 0 !== i ? i : t.user.username).toLowerCase();
+        let r = (null != (n = e.user.globalName) ? n : e.user.username).toLowerCase(),
+          l = (null != (i = t.user.globalName) ? i : t.user.username).toLowerCase();
         return r.localeCompare(l)
       };
       if (r.sameActivity.sort(o), l.size > 0) {
@@ -458,7 +458,7 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
         sameActivity: n.sameActivity,
         online: n.online,
         offline: n.offline,
-        currentActivityName: null !== (r = null == i ? void 0 : i.name) && void 0 !== r ? r : ""
+        currentActivityName: null != (r = null == i ? void 0 : i.name) ? r : ""
       }
     }, [e, t, n, i])
   },
@@ -495,11 +495,11 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
       renderHeader: c,
       autoFocus: d = !1,
       appContext: p = L.IlC.APP
-    } = e, [N, h] = r.useState([J.SUGGESTIONS, J.INCOMING]), m = r.useRef(null), O = (0, y.Z)("friends-popout", m), v = (0, s.k6)(), S = ee(), b = et(S), {
-      searchQuery: I,
+    } = e, [N, h] = r.useState([J.SUGGESTIONS, J.INCOMING]), m = r.useRef(null), O = (0, y.Z)("friends-popout", m), S = (0, s.k6)(), b = ee(), I = et(b), {
+      searchQuery: v,
       setSearchQuery: j,
       handleSearchClear: C
-    } = b, P = q(b, ["searchQuery", "setSearchQuery", "handleSearchClear"]), Z = r.useCallback(e => {
+    } = I, P = q(I, ["searchQuery", "setSearchQuery", "handleSearchClear"]), Z = r.useCallback(e => {
       h(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
     }, []), w = r.useCallback(e => {
       (0, g.jW)(e, async () => {
@@ -519,7 +519,7 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
           n = W.NW.string(W.t.fyA119), r = P.incoming.length;
           break;
         case J.SAME_ACTIVITY:
-          n = S.currentActivityName, r = P.sameActivity.length;
+          n = b.currentActivityName, r = P.sameActivity.length;
           break;
         case J.SUGGESTIONS:
           n = W.NW.string(W.t.qm9dSk), r = P.suggestions.length;
@@ -557,9 +557,8 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
           }) : null]
         })]
       })
-    }, [S.currentActivityName, P.incoming.length, P.sameActivity.length, P.suggestions.length, P.activities.length, P.online.length, P.offline.length, N, Z]), _ = r.useCallback(e => {
-      let t;
-      let n = !1;
+    }, [b.currentActivityName, P.incoming.length, P.sameActivity.length, P.suggestions.length, P.activities.length, P.online.length, P.offline.length, N, Z]), _ = r.useCallback(e => {
+      let t, n = !1;
       return (e.section === J.INCOMING ? (t = P.incoming[e.row], n = !0) : t = e.section === J.SAME_ACTIVITY ? P.sameActivity[e.row] : e.section === J.SUGGESTIONS ? P.suggestions[e.row] : e.section === J.ACTIVITIES ? P.activities[e.row] : e.section === J.ONLINE ? P.online[e.row] : P.offline[e.row], null == t || null == t.user) ? null : (0, i.jsx)(K, Y(z({}, t), {
         index: e.row,
         closeParentPopout: o,
@@ -594,7 +593,7 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
             }),
             className: V.controlButton,
             onClick: () => {
-              f.Z.setSection(L.pJs.ADD_FRIEND), v.push(L.Z5c.FRIENDS), null == o || o()
+              f.Z.setSection(L.pJs.ADD_FRIEND), S.push(L.Z5c.FRIENDS), null == o || o()
             }
           }), (0, i.jsx)(u.M0o, {
             tooltip: W.NW.string(W.t["3D5yo6"]),
@@ -610,7 +609,7 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
       }), (0, i.jsx)("div", {
         className: V.searchContainer,
         children: (0, i.jsx)(u.E1j, {
-          query: I,
+          query: v,
           onChange: j,
           onClear: C,
           placeholder: W.NW.string(W.t["5h0QOD"]),
@@ -638,7 +637,7 @@ let Q = () => (0, c.e7)([U.Z, F.default, G.Z], () => {
                 innerAriaLabel: W.NW.string(W.t.TdEu5e),
                 ref: e => {
                   var n;
-                  m.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+                  m.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
                 },
                 className: l,
                 sectionHeight: 40,

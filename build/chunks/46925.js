@@ -11,7 +11,7 @@ var n = r(620983),
   f = o.isBrowser("IE");
 
 function p(t, e) {
-  for (var r = t, n = r; r;) {
+  for (var r = t, n = r; r;)
     if (l(r) && n.hasAttribute("contenteditable")) return function(t, e) {
       if (!t) return "[empty]";
       var r = function t(e, r) {
@@ -27,8 +27,7 @@ function p(t, e) {
       }(t, e);
       return r.nodeType === Node.TEXT_NODE ? r.textContent : (l(r) || c(!1), r.outerHTML)
     }(r, e);
-    n = r = r.parentNode
-  }
+    else n = r = r.parentNode;
   return "Could not find contentEditable parent of node"
 }
 

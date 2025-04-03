@@ -2,10 +2,10 @@
 n.d(t, {
   w: () => a
 });
-var o = n(200651),
-  i = n(192379),
-  r = n(709014);
-let l = {
+var r = n(200651),
+  l = n(192379),
+  o = n(709014);
+let i = {
     hover: {
       name: "hover",
       start: 0,
@@ -18,54 +18,54 @@ let l = {
     }
   },
   a = () => {
-    let e = i.useRef(null),
-      t = i.useCallback(() => {
+    let e = l.useRef(null),
+      t = l.useCallback(() => {
         null != e.current && e.current.play("click")
       }, []),
-      a = i.useCallback(() => {
+      a = l.useCallback(() => {
         null != e.current && e.current.play("hover")
       }, []);
     return {
       events: {
         onMouseEnter: a,
-        onMouseLeave: i.useCallback(() => {
+        onMouseLeave: l.useCallback(() => {
           null != e.current && e.current.stopIfPlaying("hover")
         }, [])
       },
       play: t,
-      Component: i.useCallback(t => {
-        var i, a;
-        return (0, o.jsx)(r.L, (i = function(e) {
+      Component: l.useCallback(t => {
+        var l, a;
+        return (0, r.jsx)(o.L, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              o = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), o.forEach(function(t) {
-              var o;
-              o = n[t], t in e ? Object.defineProperty(e, t, {
-                value: o,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = o
+              }) : e[t] = r
             })
           }
           return e
         }({}, t), a = a = {
           src: () => n.e("56855").then(n.t.bind(n, 206509, 19)),
           ref: e,
-          markers: l
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+          markers: i
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var o = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, o)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
           return n
         })(Object(a)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-        }), i))
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
+        }), l))
       }, [])
     }
   }

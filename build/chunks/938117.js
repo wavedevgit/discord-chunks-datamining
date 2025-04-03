@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(2052),
-  l = n(594174),
+  l = n(2052),
+  o = n(594174),
   c = n(74538),
   d = n(716161),
   u = n(634041),
@@ -19,7 +19,7 @@ var r = n(200651),
   b = n(981631),
   N = n(869783),
   x = n(388032),
-  _ = n(821288);
+  _ = n(635968);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -58,16 +58,16 @@ function O(e) {
     onLearnMore: t,
     selectedBackgroundOption: O,
     onSelectBackgroundOption: C,
-    currentDeviceId: v,
-    smallerBackgroundOptions: S,
+    currentDeviceId: S,
+    smallerBackgroundOptions: v,
     className: T
-  } = e, I = (0, s.e7)([l.default], () => l.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
+  } = e, I = (0, s.e7)([o.default], () => o.default.getCurrentUser()), [y, A] = i.useState(null), P = (0, p.Z)(), R = c.ZP.canUseCustomBackgrounds(I);
   i.useEffect(() => {
     (0, d.XV)()
   }, []);
   let D = (0, s.cj)([u.Z], () => R ? u.Z.videoFilterAssets : {}),
     Z = i.useMemo(() => Object.values(D).filter(e => e.type === f.xV.BACKGROUND), [D]),
-    w = (0, o.O)(),
+    w = (0, l.O)(),
     k = {
       isVideoBackgroundSupported: P,
       onSelectBackgroundOption: C,
@@ -82,15 +82,15 @@ function O(e) {
       onSelectBackgroundOption: t,
       selectedBackgroundOption: n
     } = W.current;
-    e ? (0, g.FU)(n, v, {
+    e ? (0, g.FU)(n, S, {
       track: !1
     }).catch(() => t(null)) : null != n && t(null)
-  }, [v]);
+  }, [S]);
   let L = e => {
-    C(e), (0, g.FU)(e, v, {
+    C(e), (0, g.FU)(e, S, {
       location: w.location
     }).then(() => A(null)).catch(() => {
-      A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, v, {
+      A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, S, {
         location: w.location
       })
     })
@@ -131,7 +131,7 @@ function O(e) {
           r()
         })
       },
-      smallerOptions: S
+      smallerOptions: v
     })]
   }) : null
 }

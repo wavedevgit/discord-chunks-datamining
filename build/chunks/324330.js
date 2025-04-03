@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   $: () => f,
@@ -17,13 +17,13 @@ var i = n(392711),
   m = n(999382),
   g = n(981631),
   p = n(388032),
-  h = n(905554);
+  h = n(953592);
 
 function f() {
   var e, t;
   let n = (0, s.e7)([m.Z], () => m.Z.getProps().guild, []),
-    i = null !== (e = null == n ? void 0 : n.isCommunity()) && void 0 !== e && e,
-    o = (0, l.K2)(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : g.lds, "GuildSettingsMembersRow") && (null == n ? void 0 : n.hasFeature(g.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)),
+    i = null != (e = null == n ? void 0 : n.isCommunity()) && e,
+    o = (0, l.K2)(null != (t = null == n ? void 0 : n.id) ? t : g.lds, "GuildSettingsMembersRow") && (null == n ? void 0 : n.hasFeature(g.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)),
     d = i || o;
   return (0, r.jsxs)(a.P3F, {
     onClick: e => {
@@ -46,7 +46,7 @@ function b() {
   var e;
   let {
     guild: t
-  } = (0, s.e7)([m.Z], () => m.Z.getProps(), [], i.isEqual), n = null !== (e = null == t ? void 0 : t.id) && void 0 !== e ? e : g.lds;
+  } = (0, s.e7)([m.Z], () => m.Z.getProps(), [], i.isEqual), n = null != (e = null == t ? void 0 : t.id) ? e : g.lds;
   return (0, o.n2)(n) ? (0, r.jsx)(d.Z, {
     guildId: n
   }) : null

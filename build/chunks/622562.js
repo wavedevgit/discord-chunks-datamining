@@ -1,7 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  E: () => E
+  E9: () => y,
+  fu: () => E
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -52,93 +53,120 @@ function h(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let m = (e, t) => void 0 !== t && t > e ? t : e;
+let m = (e, t) => void 0 !== t && t > e ? t : e,
+  g = e => null === e ? null : {
+    top: e.top,
+    bottom: e.bottom,
+    left: e.left,
+    right: e.right
+  };
 
-function g(e) {
+function E(e) {
+  let {
+    onGetElementDimensionsAndBoundingRect: t,
+    targetElementRef: n,
+    shouldPollPositionOnMount: r,
+    positionControlRef: o,
+    debounceTime: a
+  } = e, {
+    hasLayers: d
+  } = (0, l.cj)([u.Z], () => ({
+    hasLayers: u.Z.hasLayers()
+  })), f = i.useRef(null), _ = i.useCallback(() => {
+    let e = n.current;
+    if (null === e) return {
+      height: 0,
+      width: 0,
+      elementBoundingRect: null,
+      hasElementPositionChanged: !1
+    };
+    let t = e.getBoundingClientRect(),
+      r = !(0, s.isEqual)(g(t), g(f.current));
+    return f.current = t, {
+      height: e.offsetHeight,
+      width: e.offsetWidth,
+      elementBoundingRect: t,
+      hasElementPositionChanged: r
+    }
+  }, [n]), p = i.useCallback(() => t(_()), [t, _]), h = i.useMemo(() => (0, s.debounce)(() => {
+    p()
+  }, a), [p, a]);
+  i.useEffect(() => (window.addEventListener("resize", h), () => {
+    window.removeEventListener("resize", h)
+  }), [h]);
+  let m = (0, c.Z)(d),
+    E = i.useRef(null),
+    b = i.useRef(0),
+    y = i.useCallback(() => {
+      (null === E.current || b.current >= 5) && (null != E.current && clearInterval(E.current), E.current = setInterval(() => {
+        if (b.current >= 10) {
+          clearInterval(E.current), E.current = null, b.current = 0;
+          return
+        }
+        p(), b.current++
+      }, 200))
+    }, [p]);
+  return i.useEffect(() => {
+    r ? y() : p()
+  }, [r, y, p]), i.useEffect(() => {
+    m && !d && y()
+  }, [y, d, m]), i.useEffect(() => {
+    void 0 !== o && (o.current = {
+      getElementDimensionsAndBoundingRect: _,
+      updateElementPosition: p,
+      updateElementPositionWithPolling: y
+    })
+  }, [p, y, _, o]), {
+    getElementDimensionsAndBoundingRect: _
+  }
+}
+
+function b(e) {
   let {
     backgroundElementRef: t,
     getOffsetsRelativeToElement: n,
     fallbackAbsoluteOffsets: r,
-    onGetBoundingRect: o = () => {},
-    debounceTime: a = 60,
-    minimumOffsets: d
-  } = e, [f, p] = i.useState(null), {
-    hasLayers: h
-  } = (0, l.cj)([u.Z], () => ({
-    hasLayers: u.Z.hasLayers()
-  })), g = i.useCallback(() => {
-    let e = t.current;
-    return null === e ? {
-      height: 0,
-      width: 0
-    } : {
-      height: e.offsetHeight,
-      width: e.offsetWidth
-    }
-  }, [t]), E = i.useCallback(() => {
-    let e = t.current;
-    if (null === e) return r;
-    let i = _({}, n(g())),
-      a = e.getBoundingClientRect();
-    return void 0 !== i.top && (i.top = m(a.top + i.top, null == d ? void 0 : d.top)), void 0 !== i.left && (i.left = m(a.left + i.left, null == d ? void 0 : d.left)), void 0 !== i.right && (i.right = m(window.innerWidth - a.right + i.right, null == d ? void 0 : d.right)), void 0 !== i.bottom && (i.bottom = m(window.innerHeight - a.bottom + i.bottom, null == d ? void 0 : d.bottom)), o(a), i
-  }, [n, r, g, d, t, o]), b = i.useCallback(() => {
-    let e = E();
-    return (0, s.isEqual)(e, f) || p(e), e
-  }, [E, f]);
-  i.useEffect(() => {
-    b()
-  }, [b]);
-  let y = (0, c.Z)(h),
-    v = i.useRef(null),
-    O = i.useRef(0),
-    I = i.useCallback(() => {
-      (null === v.current || O.current >= 3) && (v.current = setInterval(() => {
-        if (O.current >= 5) {
-          clearInterval(v.current), v.current = null, O.current = 0;
-          return
-        }
-        b(), O.current++
-      }, 200))
-    }, [b]);
-  i.useEffect(() => {
-    y && !h && I()
-  }, [b, I, h, y]);
-  let S = i.useMemo(() => (0, s.debounce)(() => {
-    b()
-  }, a), [b, a]);
-  return i.useEffect(() => (window.addEventListener("resize", S), () => {
-    window.removeEventListener("resize", S)
-  }), [S]), {
-    offsets: f,
-    getElementDimensions: g,
-    getElementOffsets: E,
-    updateElementOffsets: b,
-    updateElementOffsetsWithPolling: I
+    minimumOffsets: o,
+    positionControlRef: a,
+    onGetBoundingRect: l = () => {},
+    debounceTime: c = 60
+  } = e, [u, d] = i.useState(null);
+  return E({
+    onGetElementDimensionsAndBoundingRect: i.useCallback(e => {
+      let {
+        height: t,
+        width: i,
+        elementBoundingRect: a
+      } = e;
+      if (null == a) return r;
+      let c = _({}, n({
+        height: t,
+        width: i
+      }));
+      return void 0 !== c.top && (c.top = m(a.top + c.top, null == o ? void 0 : o.top)), void 0 !== c.left && (c.left = m(a.left + c.left, null == o ? void 0 : o.left)), void 0 !== c.right && (c.right = m(window.innerWidth - a.right + c.right, null == o ? void 0 : o.right)), void 0 !== c.bottom && (c.bottom = m(window.innerHeight - a.bottom + c.bottom, null == o ? void 0 : o.bottom)), l(a), (0, s.isEqual)(c, u) || d(c), c
+    }, [u, n, r, o, l]),
+    targetElementRef: t,
+    positionControlRef: a,
+    debounceTime: c
+  }), {
+    offsets: u
   }
 }
 
-function E(e) {
+function y(e) {
   var {
     children: t,
     style: n,
-    className: o,
-    key: s,
-    offsetControlRef: l
+    className: i,
+    key: o
   } = e;
   let {
-    offsets: c,
-    updateElementOffsets: u,
-    updateElementOffsetsWithPolling: f
-  } = g(_({}, p(e, ["children", "style", "className", "key", "offsetControlRef"]))), h = _({}, c, n);
-  return (i.useEffect(() => {
-    void 0 !== l && (l.current = {
-      updateElementOffsets: u,
-      updateElementOffsetsWithPolling: f
-    })
-  }, [u, f, l]), null === c) ? null : (0, r.jsx)("div", {
-    style: h,
-    className: a()(d.wrapper, o),
+    offsets: s
+  } = b(_({}, p(e, ["children", "style", "className", "key"]))), l = _({}, s, n);
+  return null === s ? null : (0, r.jsx)("div", {
+    style: l,
+    className: a()(d.wrapper, i),
     children: t
-  }, s)
+  }, o)
 }
-E.displayName = "ElementFixedOffsetContentWrapper"
+y.displayName = "ElementFixedOffsetContentWrapper"

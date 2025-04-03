@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(166459),
   x = n(541716),
   b = n(67158),
-  v = n(893718),
-  j = n(472243),
+  j = n(893718),
+  v = n(472243),
   C = n(436660),
   _ = n(284182),
   y = n(795639),
@@ -56,7 +56,7 @@ var r = n(200651),
   $ = n(981631),
   ee = n(176505),
   et = n(388032),
-  en = n(710766);
+  en = n(860128);
 
 function er(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -115,7 +115,7 @@ function el(e) {
     }
   }, c.X), [f, p] = a.useState(null), x = a.useContext(W.oo), b = a.useCallback(() => {
     x.bumpDispatchPriority()
-  }, [x]), v = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.ATTACH_FILES, t)), j = (0, h.Wu)([A.Z], () => A.Z.getUploads(t.id, R.d.FirstThreadMessage)), C = u && v && s, O = (null == t ? void 0 : t.isMediaChannel()) === !0, w = function(e, t) {
+  }, [x]), j = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.ATTACH_FILES, t)), v = (0, h.Wu)([A.Z], () => A.Z.getUploads(t.id, R.d.FirstThreadMessage)), C = u && j && s, O = (null == t ? void 0 : t.isMediaChannel()) === !0, w = function(e, t) {
     let n = (0, X.AF)(),
       r = (0, U.ql)(e);
     return a.useCallback(() => {
@@ -129,7 +129,7 @@ function el(e) {
       !a && (setTimeout(() => {
         if (t.current instanceof g.lcI) {
           var e, n, r, a;
-          null === (n = t.current) || void 0 === n || null === (e = n._textArea) || void 0 === e || e.setSelectionRange(l.length, l.length), null === (a = t.current) || void 0 === a || null === (r = a._textArea) || void 0 === r || r.focus()
+          null == (n = t.current) || null == (e = n._textArea) || e.setSelectionRange(l.length, l.length), null == (a = t.current) || null == (r = a._textArea) || r.focus()
         }
       }, 0), (o && l.length > 0 || s.textValue.trim().length > 0 && s.textValue.trim() !== r || A.Z.getUploads(e.id, R.d.FirstThreadMessage).length > 0) && i())
     }, [n, e.id, r, t])
@@ -164,7 +164,7 @@ function el(e) {
       } = N.ZP.parse(e, t);
       if (t = s, null == r || 0 === r.length) {
         var o;
-        r = null === (o = S.Z.getStickerPreview(e.id, ei.drafts.type)) || void 0 === o ? void 0 : o.map(e => e.id)
+        r = null == (o = S.Z.getStickerPreview(e.id, ei.drafts.type)) ? void 0 : o.map(e => e.id)
       }
       if ((null == a || 0 === a.length) && (a = A.Z.getUploads(e.id, R.d.FirstThreadMessage)), null != a && a.length > 0 && e.isMediaChannel()) {
         let e = a.findIndex(e => !0 === e.isThumbnail);
@@ -205,11 +205,11 @@ function el(e) {
       let {
         content: x,
         stickers: b,
-        uploads: v,
-        hasNameError: j,
+        uploads: j,
+        hasNameError: v,
         hasMessageError: C
       } = i(t, a, l);
-      if (s(j ? (0, z.V_)() : null), o(C ? (0, z.T4)() : null), j || C) return {
+      if (s(v ? (0, z.V_)() : null), o(C ? (0, z.T4)() : null), v || C) return {
         shouldClear: !1,
         shouldRefocus: !0
       };
@@ -220,7 +220,7 @@ function el(e) {
         } = await (0, F.v)({
           content: x,
           stickers: b,
-          uploads: v,
+          uploads: j,
           type: ei,
           channel: e
         });
@@ -228,14 +228,14 @@ function el(e) {
           shouldClear: !1,
           shouldRefocus: !0
         };
-        let n = await r(x, b, v);
+        let n = await r(x, b, j);
         return (0, I.ok)(n), B.Z.resort(e.id), (0, P.qB)(e.id, ei.drafts.type), d(), m(!1), h(!1), H.Z.markAsSeen(e.id), f(!1), {
           shouldClear: !0,
           shouldRefocus: !1
         }
       } catch (t) {
         var _, y;
-        return (null === (_ = t.body) || void 0 === _ ? void 0 : _.code) === $.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, z.Gx)(t.body, e)) : (null === (y = t.body) || void 0 === y ? void 0 : y.code) === $.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, z.Gx)(t.body, e)), {
+        return (null == (_ = t.body) ? void 0 : _.code) === $.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, z.Gx)(t.body, e)) : (null == (y = t.body) ? void 0 : y.code) === $.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, z.Gx)(t.body, e)), {
           shouldClear: !1,
           shouldRefocus: !0
         }
@@ -244,7 +244,7 @@ function el(e) {
       }
     }, [r, i, e, n])
   }(t);
-  return a.useLayoutEffect(i, [u, d, j, i]), (0, r.jsx)(r.Fragment, {
+  return a.useLayoutEffect(i, [u, d, v, i]), (0, r.jsx)(r.Fragment, {
     children: (0, r.jsx)("div", {
       "aria-label": s ? et.NW.string(et.t.dq7mAQ) : et.NW.string(et.t["5h0QOD"]),
       className: l()(en.container, {
@@ -329,7 +329,7 @@ let es = a.memo(function(e) {
       }
     }, c.X), m = (0, X.AF)(), h = (0, U.ql)(t), x = a.useCallback(() => {
       var e;
-      m.getState().resetFormState(), f.Z.clearDraft(t.id, R.d.ThreadSettings), f.Z.clearDraft(t.id, R.d.FirstThreadMessage), p.Z.clearAll(t.id, R.d.FirstThreadMessage), m.getState().setFormOpen(!1), m.getState().setBodyFocused(!1), m.getState().setTitleFocused(!1), m.getState().setHasClickedForm(!1), m.getState().setPreviewing(!1), null === (e = i.current) || void 0 === e || e.blur(), (0, V.Oq)({
+      m.getState().resetFormState(), f.Z.clearDraft(t.id, R.d.ThreadSettings), f.Z.clearDraft(t.id, R.d.FirstThreadMessage), p.Z.clearAll(t.id, R.d.FirstThreadMessage), m.getState().setFormOpen(!1), m.getState().setBodyFocused(!1), m.getState().setTitleFocused(!1), m.getState().setHasClickedForm(!1), m.getState().setPreviewing(!1), null == (e = i.current) || e.blur(), (0, V.Oq)({
         guildId: t.guild_id,
         channelId: t.id
       })
@@ -392,12 +392,12 @@ let es = a.memo(function(e) {
         hasClickedForm: l,
         submitting: s
       }
-    }, c.X), p = (0, X.AF)(), x = null != t.topic && 0 !== t.topic.length, b = H.Z.hasSeen(t.id), v = (0, U.ql)(t), j = (0, h.e7)([L.default], () => L.default.getCurrentUser());
-    o()(null != j, "current user cannot be null"), (0, W.yp)({
+    }, c.X), p = (0, X.AF)(), x = null != t.topic && 0 !== t.topic.length, b = H.Z.hasSeen(t.id), j = (0, U.ql)(t), v = (0, h.e7)([L.default], () => L.default.getCurrentUser());
+    o()(null != v, "current user cannot be null"), (0, W.yp)({
       event: $.CkL.FOCUS_COMPOSER_TITLE,
       handler: () => {
         var e;
-        let t = n.current instanceof g.lcI ? null === (e = n.current) || void 0 === e ? void 0 : e._textArea : n.current;
+        let t = n.current instanceof g.lcI ? null == (e = n.current) ? void 0 : e._textArea : n.current;
         null == t || t.focus(), p.getState().setTitleFocused(!0), p.getState().setFormOpen(!0), p.getState().setHasClickedForm(!0)
       }
     });
@@ -417,7 +417,7 @@ let es = a.memo(function(e) {
         children: u
       }) : (0, r.jsx)(g.Kx8, {
         value: u,
-        placeholder: i ? s || m.textValue.length > 0 && m.textValue.trim() !== v ? et.NW.string(et.t.lU4dDQ) : et.NW.string(et.t.CjmivL) : et.NW.string(et.t["5h0QOD"]),
+        placeholder: i ? s || m.textValue.length > 0 && m.textValue.trim() !== j ? et.NW.string(et.t.lU4dDQ) : et.NW.string(et.t.CjmivL) : et.NW.string(et.t["5h0QOD"]),
         flex: !0,
         autosize: s,
         rows: 1,
@@ -429,7 +429,7 @@ let es = a.memo(function(e) {
           p.getState().setName(n);
           let r = 0 === n.trim().length,
             a = 0 === m.textValue.trim().length,
-            i = m.textValue.trim() === v;
+            i = m.textValue.trim() === j;
           r && (a || i) && p.getState().setHasClickedForm(!1), s || B.Z.updateForumSearchQuery(t.id, n)
         },
         onFocus: () => {
@@ -438,7 +438,7 @@ let es = a.memo(function(e) {
         onBlur: () => {
           p.getState().setTitleFocused(!1);
           let e = (0, T.Z)(u, !0);
-          e === u || (p.getState().setName(e), s || B.Z.updateForumSearchQuery(t.id, e))
+          e !== u && (p.getState().setName(e), s || B.Z.updateForumSearchQuery(t.id, e))
         },
         onKeyDown: e => {
           var r, a;
@@ -446,7 +446,7 @@ let es = a.memo(function(e) {
             guildId: t.guild_id,
             channelId: t.id
           }), x && !b && p.getState().setGuidelinesOpen(!0), p.getState().setFormOpenFromUserAction(), u.trim().length > 0 && (p.getState().setBodyFocused(!0), null == l || l.focus())));
-          let o = n.current instanceof g.lcI ? null === (r = n.current) || void 0 === r ? void 0 : r._textArea : n.current;
+          let o = n.current instanceof g.lcI ? null == (r = n.current) ? void 0 : r._textArea : n.current;
           if ("Home" === e.key || "End" === e.key) {
             if (null == o) return;
             if (e.preventDefault(), e.stopPropagation(), "Home" === e.key) o.setSelectionRange(0, 0);
@@ -455,7 +455,7 @@ let es = a.memo(function(e) {
               o.setSelectionRange(e, e)
             }
           }
-          "Escape" !== e.key || p.getState().submitting || (null === (a = n.current) || void 0 === a || a.blur(), p.getState().setFormOpen(!1), p.getState().setTitleFocused(!1), p.getState().setBodyFocused(!1), p.getState().setPreviewing(!1))
+          "Escape" !== e.key || p.getState().submitting || (null == (a = n.current) || a.blur(), p.getState().setFormOpen(!1), p.getState().setTitleFocused(!1), p.getState().setBodyFocused(!1), p.getState().setPreviewing(!1))
         },
         error: _,
         className: en.title,
@@ -556,26 +556,26 @@ let ed = a.memo(function(e) {
         bodyFocused: a,
         formOpen: i
       }
-    }, c.X), j = (0, X.AF)();
+    }, c.X), v = (0, X.AF)();
     a.useEffect(() => () => (0, V.Vn)({
       guildId: t.guild_id,
       channelId: t.id
     }), [t.guild_id, t.id]);
     let _ = a.useCallback(() => {
-        j.getState().setBodyFocused(!0)
-      }, [j]),
+        v.getState().setBodyFocused(!0)
+      }, [v]),
       y = a.useCallback(() => {
-        j.getState().setBodyFocused(!1)
-      }, [j]),
+        v.getState().setBodyFocused(!1)
+      }, [v]),
       N = a.useCallback((e, t, n) => {
         let {
           setTextAreaState: r
-        } = j.getState();
+        } = v.getState();
         r({
           textValue: t,
           richValue: n
         })
-      }, [j]),
+      }, [v]),
       O = a.useCallback(e => {
         let {
           value: t,
@@ -603,7 +603,7 @@ let ed = a.memo(function(e) {
           textValue: p.textValue
         }) : (0, r.jsx)("div", {
           onClick: _,
-          children: (0, r.jsx)(v.Z, {
+          children: (0, r.jsx)(j.Z, {
             type: ei,
             setEditorRef: d,
             channel: t,
@@ -627,7 +627,7 @@ let ed = a.memo(function(e) {
                 if (null == t) return;
                 "Home" === e.key ? C.Q.resetSelectionToStart(t) : C.Q.resetSelectionToEnd(t)
               }
-              b && "Escape" === e.key && !j.getState().submitting && (null == s || s.blur(), j.getState().setFormOpen(!1), j.getState().setTitleFocused(!1), j.getState().setBodyFocused(!1), j.getState().setPreviewing(!1))
+              b && "Escape" === e.key && !v.getState().submitting && (null == s || s.blur(), v.getState().setFormOpen(!1), v.getState().setTitleFocused(!1), v.getState().setBodyFocused(!1), v.getState().setPreviewing(!1))
             },
             autoCompletePosition: "bottom"
           })
@@ -701,7 +701,7 @@ let eg = a.memo(function(e) {
     }
   }, c.X), {
     rateLimitPerUser: d
-  } = t, u = d > 0, m = (0, h.e7)([M.Z], () => M.Z.getSlowmodeCooldownGuess(t.id, M.S.CreateThread)), f = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.MANAGE_THREADS, t) || Z.Z.can($.Plq.MANAGE_CHANNELS, t)), p = t.hasFlag(ee.zZ.REQUIRE_TAG) && 0 === s.size && o.length > 0 && l.textValue.length > 0, x = (0, X.AF)(), v = a.useCallback(() => {
+  } = t, u = d > 0, m = (0, h.e7)([M.Z], () => M.Z.getSlowmodeCooldownGuess(t.id, M.S.CreateThread)), f = (0, h.e7)([Z.Z], () => Z.Z.can($.Plq.MANAGE_THREADS, t) || Z.Z.can($.Plq.MANAGE_CHANNELS, t)), p = t.hasFlag(ee.zZ.REQUIRE_TAG) && 0 === s.size && o.length > 0 && l.textValue.length > 0, x = (0, X.AF)(), j = a.useCallback(() => {
     x.getState().setBodyFocused(!1)
   }, [x]), C = a.useMemo(() => "" !== o.trim() && "" !== l.textValue.trim(), [o, l.textValue]);
   return a.useEffect(() => {
@@ -718,7 +718,7 @@ let eg = a.memo(function(e) {
         className: en.controls,
         children: [(0, r.jsxs)("div", {
           className: en.wrappedControls,
-          children: [(0, r.jsx)(j.Z, {
+          children: [(0, r.jsx)(v.Z, {
             type: ei,
             textValue: l.textValue,
             className: en.characterCount
@@ -739,7 +739,7 @@ let eg = a.memo(function(e) {
       }), (0, r.jsx)(b.Z, {
         type: ei,
         className: en.expressionPicker,
-        onClick: v
+        onClick: j
       }, "expression")]
     }), p && (0, r.jsx)(g.Text, {
       variant: "text-sm/normal",
@@ -837,13 +837,13 @@ function ex(e) {
   }), {
     containerRef: f,
     containerWidth: p
-  } = (0, Y.Z)(), x = a.useRef(null), [b, v] = a.useState(!0), j = (0, U.Vm)(t), [C, _] = a.useState(0);
+  } = (0, Y.Z)(), x = a.useRef(null), [b, j] = a.useState(!0), v = (0, U.Vm)(t), [C, _] = a.useState(0);
   return (a.useLayoutEffect(() => {
     var e;
     let t = x.current,
-      n = null == t ? void 0 : null === (e = t.children) || void 0 === e ? void 0 : e[0],
+      n = null == t || null == (e = t.children) ? void 0 : e[0],
       r = null == t || null == n || n.clientHeight > t.clientHeight;
-    if (r !== b && v(r), r && null != f.current && null != n && null != n.children) {
+    if (r !== b && j(r), r && null != f.current && null != n && null != n.children) {
       let {
         left: e,
         top: t
@@ -859,7 +859,7 @@ function ex(e) {
       }
       _(r)
     }
-  }, [j, b, f, p]), 0 === j.length) ? null : (0, r.jsxs)("div", {
+  }, [v, b, f, p]), 0 === v.length) ? null : (0, r.jsxs)("div", {
     className: en.tagsContainer,
     ref: f,
     children: [(0, r.jsx)(g.lO_, {
@@ -894,7 +894,7 @@ function ex(e) {
               className: en.tagListInner,
               ref: t
             }, a), {
-              children: j.map(e => (0, r.jsx)(K.Z, {
+              children: v.map(e => (0, r.jsx)(K.Z, {
                 ariaLabel: et.NW.formatToPlainString(et.t.FSZVIS, {
                   tagName: e.name
                 }),

@@ -19,9 +19,8 @@ var o = !1,
     var e;
 
     function t(e) {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, t), i(this, "internalMonitor", void 0), i(this, "sourceId", null), this.internalMonitor = e.getMonitor()
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+      i(this, "internalMonitor", void 0), i(this, "sourceId", null), this.internalMonitor = e.getMonitor()
     }
     return e = [{
         key: "receiveHandlerId",

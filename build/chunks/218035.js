@@ -120,12 +120,12 @@ function N(t) {
     N = (0, s.e7)([d.ZP], () => d.ZP.getChannelOverrides(t.guild_id)[t.id], [t.guild_id, t.id]),
     u = null == N ? c.bL.NULL : N.message_notifications,
     L = (0, l.p2)(t),
-    h = u === c.bL.NULL && t.isGuildStageVoice() ? o.NW.format(o.t.L2hmY2, {}) : null === (i = S(t, L)) || void 0 === i ? void 0 : null === (e = i.find(t => {
+    h = u === c.bL.NULL && t.isGuildStageVoice() ? o.NW.format(o.t.L2hmY2, {}) : null == (i = S(t, L)) || null == (e = i.find(t => {
       let {
         setting: e
       } = t;
       return e === g
-    })) || void 0 === e ? void 0 : e.label;
+    })) ? void 0 : e.label;
   return null != r ? (0, n.jsx)(a.sNh, {
     id: "channel-notifications",
     label: o.NW.string(o.t.h850Sk),

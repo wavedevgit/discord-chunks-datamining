@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(392711),
   i = n.n(r),
   l = n(570140),
-  o = n(78687),
-  a = n(315341),
+  a = n(78687),
+  o = n(315341),
   s = n(262847),
   c = n(675478),
   u = n(581883),
   d = n(526761);
 let p = {
   init() {
-    s.Z[d.yP.PRELOADED_USER_SETTINGS] = a.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = o.Z, l.Z.subscribe("CONNECTION_OPEN", h), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", f), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", g), l.Z.subscribe("APP_STATE_UPDATE", m)
+    s.Z[d.yP.PRELOADED_USER_SETTINGS] = o.Z, s.Z[d.yP.FRECENCY_AND_FAVORITES_SETTINGS] = a.Z, l.Z.subscribe("CONNECTION_OPEN", h), l.Z.subscribe("USER_SETTINGS_PROTO_ENQUEUE_UPDATE", f), l.Z.subscribe("USER_SETTINGS_PROTO_LOAD_IF_NECESSARY", g), l.Z.subscribe("APP_STATE_UPDATE", m)
   }
 };
 

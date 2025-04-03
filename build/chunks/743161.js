@@ -1,4 +1,4 @@
-/** Chunk was on 76884 **/
+/** Chunk was on 35794 **/
 n.d(t, {
   default: () => O
 });
@@ -11,8 +11,8 @@ var r = n(200651),
   u = n(421591),
   s = n(496977),
   p = n(314734),
-  d = n(388032),
-  f = n(303417);
+  f = n(388032),
+  d = n(472088);
 let O = o.memo(function(e) {
   var t, n, {
       context: O
@@ -57,8 +57,8 @@ let O = o.memo(function(e) {
       }
       return e
     }({
-      className: f.root,
-      "aria-label": d.NW.string(d.t.shUONj),
+      className: d.root,
+      "aria-label": f.NW.string(f.t.shUONj),
       size: i.CgR.DYNAMIC
     }, b), n = n = {
       children: (0, r.jsx)(u.Z, {

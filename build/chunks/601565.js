@@ -48,7 +48,7 @@ function a(e) {
           query: n,
           resultTypes: r
         } = e;
-        (null == i.resultTypes || (t = i.resultTypes, !(r.length === t.size && r.every(e => t.has(e))))) && (i.setResultTypes(r), i.setLimit(1 === r.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
+        null != i.resultTypes && (t = i.resultTypes, r.length === t.size && r.every(e => t.has(e))) || (i.setResultTypes(r), i.setLimit(1 === r.length ? 50 : 20)), i.search("" === n.trim() ? "" : n)
       }, [i])
     }, n)
 }

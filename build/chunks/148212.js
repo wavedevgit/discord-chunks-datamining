@@ -5,11 +5,11 @@ n.d(t, {
 var r = n(200651),
   s = n(359013),
   o = n(529942),
-  i = n(26141),
-  a = n(3072),
+  a = n(26141),
+  i = n(3072),
   c = n(401258),
   l = n(477839),
-  u = n(413076),
+  u = n(364491),
   d = n(979233),
   f = n(975620);
 let p = n(972479);
@@ -26,7 +26,7 @@ function m(e) {
     maxSpeed: 40,
     imageSize: 80,
     isPaused: t,
-    children: e => (0, r.jsx)(i.Z, {
+    children: e => (0, r.jsx)(a.Z, {
       className: "left" === e ? u.imageFlipped : u.image,
       isPaused: t,
       interval: 150,
@@ -40,7 +40,7 @@ function g(e) {
     isPaused: t,
     width: n
   } = e, o = s.Mq[l.yN.ANT];
-  return (0, a.is)(p, t), (0, r.jsxs)(r.Fragment, {
+  return (0, i.is)(p, t), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
       interval: 1e3,
       pointsPerInterval: o.points,

@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(685072),
   l = n(287734),
-  o = n(906732),
-  a = n(522651),
+  a = n(906732),
+  o = n(522651),
   s = n(15274),
   c = n(389303),
   u = n(881824),
@@ -22,7 +22,7 @@ function f(e) {
     onClick: s
   } = e, {
     parentAnalyticsLocation: c
-  } = (0, o.ZP)(), {
+  } = (0, a.ZP)(), {
     events: u,
     Component: d
   } = (0, i.K)();
@@ -46,7 +46,7 @@ function f(e) {
   }({
     tooltipText: l,
     onClick: () => {
-      (0, a.v)(c, a.d.DISCONNECT), s()
+      (0, o.v)(c, o.d.DISCONNECT), s()
     }
   }, u), n = n = {
     icon: (0, r.jsx)(d, {
@@ -71,10 +71,7 @@ function g(e) {
   return (0, r.jsx)(f, {
     tooltipText: h.NW.string(h.t.SMKyio),
     onClick: () => {
-      if ((0, d.Z)(t)) {
-        (0, u.Us)(t);
-        return
-      }
+      if ((0, d.Z)(t)) return void(0, u.Us)(t);
       l.default.disconnect()
     }
   })
@@ -87,10 +84,7 @@ function m(e) {
   return (0, r.jsx)(f, {
     tooltipText: h.NW.string(h.t["6vrfgo"]),
     onClick: () => {
-      if ((0, c.Z)(t)) {
-        (0, s.lC)(t);
-        return
-      }
+      if ((0, c.Z)(t)) return void(0, s.lC)(t);
       l.default.disconnect()
     }
   })

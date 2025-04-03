@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(392711),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(524437),
   c = n(481060),
   u = n(317632),
@@ -15,20 +15,20 @@ var r = n(200651),
   m = n(791914),
   f = n(326838),
   h = n(388032),
-  g = n(499800);
+  g = n(175646);
 
 function _(e) {
   let {
     setTab: t,
     badgeState: a,
     closePopout: _
-  } = e, v = (0, l.Wu)([u.Z], () => u.Z.getInvites()), x = (0, l.e7)([u.Z], () => u.Z.getInviteStatuses()), [y, E] = i.useMemo(() => o().partition(v, e => {
+  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => l().partition(x, e => {
     var t;
-    return (null === (t = x[e.invite_id]) || void 0 === t ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
-  }), [v, x]);
+    return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
+  }), [x, y]);
   return (i.useEffect(() => {
     (0, d.sJ)()
-  }), 0 === v.length) ? (0, r.jsxs)("div", {
+  }), 0 === x.length) ? (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(m.Z, {
       tab: s.X.GAME_INVITES,
@@ -102,20 +102,20 @@ function _(e) {
     }), (0, r.jsx)(c.h21, {
       children: (0, r.jsxs)("div", {
         className: g.invitesContainer,
-        children: [y.length > 0 && (0, r.jsxs)(r.Fragment, {
+        children: [E.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.NW.string(h.t.yflAJS)
           }), (0, r.jsx)(r.Fragment, {
-            children: y.map(e => (0, r.jsx)(f.Z, {
+            children: E.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !1
             }, e.invite_id))
           })]
-        }), E.length > 0 && (0, r.jsxs)(r.Fragment, {
+        }), v.length > 0 && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(b, {
             title: h.NW.string(h.t.f0Ia4e)
           }), (0, r.jsx)(r.Fragment, {
-            children: E.map(e => (0, r.jsx)(f.Z, {
+            children: v.map(e => (0, r.jsx)(f.Z, {
               invite: e,
               expired: !0
             }, e.invite_id))

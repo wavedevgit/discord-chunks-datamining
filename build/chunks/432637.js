@@ -1,4 +1,7 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 1272 **/
 e.exports = {
-  tags: "tags_e5a45e"
+  container: "container__577c3",
+  image: "image__577c3",
+  links: "links__577c3",
+  agreementDescription: "agreementDescription__577c3"
 }

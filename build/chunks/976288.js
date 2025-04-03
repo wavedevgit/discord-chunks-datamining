@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   d: () => Z
@@ -21,11 +21,11 @@ var r = n(200651),
   x = n(936735),
   j = n(654351),
   N = n(557359),
-  v = n(386885),
-  _ = n(203377),
+  _ = n(386885),
+  v = n(203377),
   C = n(929834),
   O = n(388032),
-  y = n(482330);
+  y = n(356941);
 
 function I() {
   return (0, r.jsx)(l.Text, {
@@ -115,7 +115,7 @@ function E(e) {
           children: O.NW.string(O.t["6Y9q8f"])
         }), (0, r.jsx)(l.Kx8, {
           className: y.editableSection,
-          value: null !== (t = n.description) && void 0 !== t ? t : "",
+          value: null != (t = n.description) ? t : "",
           placeholder: O.NW.string(O.t.Nvfows),
           onChange: p,
           maxLength: s.Us
@@ -206,9 +206,9 @@ function T(e) {
     let {
       keywords: r
     } = n;
-    r.length >= _.G7 || (m(null), (0, c.zH)(t, [...r, e]))
+    r.length >= v.G7 || (m(null), (0, c.zH)(t, [...r, e]))
   }, [t, n]), h = i.useMemo(() => (0, j.P5)(n.primaryCategoryId).filter(e => !n.keywords.includes(e)).map(e => {
-    let t = n.keywords.length >= _.G7;
+    let t = n.keywords.length >= v.G7;
     return {
       text: e,
       onClick: () => p(e),
@@ -234,8 +234,8 @@ function T(e) {
         onRemoveTag: g,
         onAddTag: p,
         onAddTagError: m,
-        maxTags: _.G7,
-        maxTaxLength: _._0,
+        maxTags: v.G7,
+        maxTaxLength: v._0,
         placeholder: n.keywords.length < 1 ? O.NW.string(O.t.EL4Lho) : void 0
       }), null != f ? (0, r.jsx)(l.Text, {
         color: "text-danger",
@@ -356,7 +356,7 @@ function Z(e) {
     }
   });
   if (null == o) return null;
-  let c = i === v.U.ELIGIBLE_DISABLED;
+  let c = i === _.U.ELIGIBLE_DISABLED;
   return (0, r.jsxs)("div", {
     className: y.settings,
     children: [(0, r.jsx)(E, {

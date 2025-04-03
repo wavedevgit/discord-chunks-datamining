@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(916001),
   m = n(981631),
   x = n(388032),
-  f = n(833942);
+  f = n(721692);
 let h = "expanded-area";
 
 function j(e) {
@@ -71,9 +71,9 @@ function _(e) {
   var t;
   let {
     listing: n
-  } = e, a = null !== (t = n.attachments) && void 0 !== t ? t : [], s = (0, i.e7)([l.Z], () => {
+  } = e, a = null != (t = n.attachments) ? t : [], s = (0, i.e7)([l.Z], () => {
     var e;
-    return l.Z.getRole(n.guild_id, null !== (e = n.role_id) && void 0 !== e ? e : m.lds)
+    return l.Z.getRole(n.guild_id, null != (e = n.role_id) ? e : m.lds)
   }), o = !n.has_entitlement;
   return 0 === a.length && null == s ? null : 0 === a.length && null != s ? (0, r.jsx)(u.Z, {
     role: s,

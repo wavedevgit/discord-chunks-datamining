@@ -1,11 +1,11 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   t: () => d
 });
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  l = n(296023),
+  l = n(481060),
+  o = n(296023),
   a = n(768581),
   s = n(585835);
 
@@ -39,18 +39,18 @@ function d(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["channel", "application", "showApplicationImage"]);
-  let b = (0, l.w)(d),
-    g = i.useCallback(() => (0, o.ZDy)(async () => {
+  let b = (0, o.w)(d),
+    g = i.useCallback(() => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("30019").then(n.bind(n, 719498));
@@ -71,7 +71,7 @@ function d(e) {
         }), n))
       }
     }), [u, d]),
-    f = p ? null !== (t = u.getIconURL(48)) && void 0 !== t ? t : a.pK["0"] : void 0;
+    f = p ? null != (t = u.getIconURL(48)) ? t : a.pK["0"] : void 0;
   return (0, r.jsx)(s.Z, c({
     imageSrc: f,
     onButtonClick: g,

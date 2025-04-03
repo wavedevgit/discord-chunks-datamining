@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(116175),
   h = n(308083),
   f = n(388032),
-  b = n(302489),
-  x = n(128662);
+  b = n(420003),
+  x = n(130116);
 let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.ZD.LIGHTNING, p.ZD.LEAF, p.ZD.HEART, p.ZD.FIRE, p.ZD.COMPASS, p.ZD.CROSSHAIRS, p.ZD.FLOWER, p.ZD.FORCE, p.ZD.GEM, p.ZD.LAVA, p.ZD.PSYCHIC, p.ZD.SMOKE, p.ZD.SNOW, p.ZD.SOUND, p.ZD.SUN, p.ZD.WIND],
   N = e => {
     let {
@@ -27,8 +27,8 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
       primaryColor: s,
       secondaryColor: l,
       tag: N,
-      error: v,
-      furthestStep: _,
+      error: _,
+      furthestStep: v,
       inSettings: C
     } = e, O = i.useMemo(() => {
       let e = (0, p.yf)();
@@ -58,11 +58,11 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
         })
       }, [t]);
     return i.useEffect(() => {
-      _ !== h.Wy.CUSTOMIZE_TAG_BADGE || C || t({
+      v !== h.Wy.CUSTOMIZE_TAG_BADGE || C || t({
         brandPrimaryColor: O.primary,
         brandSecondaryColor: O.secondary
       })
-    }, [t, O.primary, O.secondary, _, s, l, C]), (0, r.jsxs)("div", {
+    }, [t, O.primary, O.secondary, v, s, l, C]), (0, r.jsxs)("div", {
       className: x.slideContent,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xxl/medium",
@@ -192,11 +192,11 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
             variant: "text-xs/semibold",
             color: "text-muted",
             children: f.NW.string(f.t["3eZP8/"])
-          }), null != v && (0, r.jsx)(d.Text, {
+          }), null != _ && (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "status-danger",
             className: x.errorText,
-            children: v
+            children: _
           }), (0, r.jsx)(d.oil, {
             className: b.tagInputWrapper,
             inputClassName: b.tagInput,

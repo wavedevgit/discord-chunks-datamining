@@ -14,8 +14,8 @@ var i = t(200651),
   m = t(613734),
   N = t(981631),
   u = t(388032),
-  h = t(610016),
-  _ = t(676181);
+  h = t(67164),
+  _ = t(91463);
 
 function C(e) {
   let {
@@ -26,19 +26,19 @@ function C(e) {
     onBack: g
   } = e, j = (0, a.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: I
-  } = (0, m.YG)(null != j ? j : N.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, a.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, a.e7)([d.Z], () => d.Z.getAppealSignal()), v = (0, a.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [f, S] = s.useState(!1), [A, L] = s.useState(""), Z = s.useCallback(e => {
+  } = (0, m.YG)(null != j ? j : N.lds), k = (0, x.c7)(null == I ? void 0 : I.description), E = (0, a.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, a.e7)([d.Z], () => d.Z.getAppealSignal()), f = (0, a.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [S, v] = s.useState(!1), [A, L] = s.useState(""), Z = s.useCallback(e => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: e
     })
   }, []), b = s.useCallback(async () => {
     if (null !== j) try {
-      L(""), await c.uR(j, T, v), null == p || p()
+      L(""), await c.uR(j, T, f), null == p || p()
     } catch (n) {
       var e;
-      L((0, x.Zs)(null === (e = n.body) || void 0 === e ? void 0 : e.code))
+      L((0, x.Zs)(null == (e = n.body) ? void 0 : e.code))
     }
-  }, [j, T, v, p]);
+  }, [j, T, f, p]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(l.xBx, {
       direction: o.Z.Direction.VERTICAL,
@@ -62,7 +62,7 @@ function C(e) {
       paddingFix: !1,
       children: [(0, i.jsx)("ul", {
         className: h.listContainer,
-        children: [(0, x.ox)(T), v].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
+        children: [(0, x.ox)(T), f].filter(e => e.length > 0).map((e, n) => (0, i.jsx)("li", {
           className: h.listItem,
           children: (0, i.jsx)(l.Text, {
             tag: "span",
@@ -73,17 +73,17 @@ function C(e) {
       }), t && (0, i.jsx)("div", {
         className: h.anchorContainer,
         children: (0, i.jsx)(l.eee, {
-          onClick: () => S(e => !e),
+          onClick: () => v(e => !e),
           children: (0, i.jsx)(l.X6q, {
             variant: "heading-md/normal",
             color: "text-link",
-            children: v.length > 0 ? u.NW.string(u.t.tnE3bW) : u.NW.string(u.t.uoQFIi)
+            children: f.length > 0 ? u.NW.string(u.t.tnE3bW) : u.NW.string(u.t.uoQFIi)
           })
         })
-      }), f && t && (0, i.jsx)("div", {
+      }), S && t && (0, i.jsx)("div", {
         className: h.inputContainer,
         children: (0, i.jsx)(l.Kx8, {
-          value: v,
+          value: f,
           onChange: Z
         })
       }), (0, i.jsx)("div", {

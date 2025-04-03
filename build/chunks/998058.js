@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   i: () => l
 });
@@ -9,15 +9,14 @@ var n = r(544891),
 let l = async e => {
   try {
     var t;
-    let r = await n.tn.get({
-        url: i.ANM.SIMILAR_GAMES(e),
-        rejectWithError: !1
-      }),
-      o = (null !== (t = r.body.similar_games) && void 0 !== t ? t : []).filter(t => t !== e);
+    let r = (null != (t = (await n.tn.get({
+      url: i.ANM.SIMILAR_GAMES(e),
+      rejectWithError: !1
+    })).body.similar_games) ? t : []).filter(t => t !== e);
     a.Z.dispatch({
       type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
       applicationId: e,
-      games: o
+      games: r
     })
   } catch (e) {
     throw new o.Hx(e)

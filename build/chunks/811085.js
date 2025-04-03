@@ -14,7 +14,7 @@ var a = s(200651),
   m = s(959562),
   h = s(800530),
   x = s(388032),
-  g = s(710904);
+  g = s(627577);
 
 function j() {
   let e = (0, u.P)(),
@@ -27,18 +27,18 @@ function j() {
       [d.Sn.AT_RISK]: null,
       [d.Sn.SUSPENDED]: null
     }),
-    v = n.useCallback(() => {
+    p = n.useCallback(() => {
       j(Math.max(Math.max(...Object.values(N.current).map(e => {
         var t;
-        return null !== (t = null == e ? void 0 : e.getBoundingClientRect().height) && void 0 !== t ? t : 36
+        return null != (t = null == e ? void 0 : e.getBoundingClientRect().height) ? t : 36
       })), 36))
     }, []);
   n.useEffect(() => {
-    v();
-    let e = (0, i.debounce)(v, 100);
+    p();
+    let e = (0, i.debounce)(p, 100);
     window.addEventListener("resize", e)
-  }, [v]);
-  let p = {
+  }, [p]);
+  let v = {
       [d.Sn.ALL_GOOD]: {
         title: x.t.uaKrRk,
         description: x.NW.format(x.t.pEdBDw, {
@@ -83,8 +83,8 @@ function j() {
       description: S,
       color: b,
       Icon: T
-    } = p[e.state],
-    E = Object.keys(p).length;
+    } = v[e.state],
+    E = Object.keys(v).length;
   return (0, a.jsxs)(c.Zbd, {
     className: g.container,
     outline: !1,
@@ -123,7 +123,7 @@ function j() {
         },
         children: [(0, a.jsx)("div", {
           className: g.line
-        }), Object.entries(p).map((t, s) => {
+        }), Object.entries(v).map((t, s) => {
           let [n, i] = t, r = parseInt(n) === e.state;
           return (0, a.jsxs)("div", {
             className: g.statusOption,

@@ -18,7 +18,7 @@ var r = n(200651),
   m = n(823379),
   y = n(207003),
   g = n(388032),
-  j = n(280356),
+  j = n(277580),
   x = n(621054);
 
 function O(e) {
@@ -64,7 +64,7 @@ function O(e) {
   l.useEffect(() => {
     if ("" === R) {
       var e;
-      null === (e = B.current) || void 0 === e || e.focus()
+      null == (e = B.current) || e.focus()
     }
   }, [R]);
   let F = l.useCallback(() => {

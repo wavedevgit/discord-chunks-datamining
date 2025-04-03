@@ -109,100 +109,99 @@ var m = function(t, e) {
       contentEditable: i.customEditable,
       suppressContentEditableWarning: !0
     })), u
-  },
-  k = function(t) {
-    function e() {
-      for (var e, r = arguments.length, n = Array(r), i = 0; i < r; i++) n[i] = arguments[i];
-      return a(function(t) {
-        if (void 0 === t) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
-        return t
-      }(e = t.call.apply(t, [this].concat(n)) || this), "wrapperRef", c.createRef()), e
-    }
-    e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
-    var r = e.prototype;
-    return r.shouldComponentUpdate = function(t) {
-      var e = this.props,
-        r = e.block,
-        n = e.direction,
-        i = e.tree,
-        o = !r.getChildKeys().isEmpty(),
-        a = r !== t.block || i !== t.tree || n !== t.direction || m(t.selection, t.block.getKey()) && t.forceSelection;
-      return o || a
-    }, r.componentDidMount = function() {
-      var t, e = this.props.selection,
-        r = e.getEndKey();
-      if (e.getHasFocus() && r === this.props.block.getKey()) {
-        var n = this.wrapperRef.current;
-        if (n) {
-          var i = f.getScrollParent(n),
-            o = h(i);
-          if (i === window) {
-            var a = p(n);
-            (t = a.y + a.height - d().height) > 0 && window.scrollTo(o.x, o.y + t + 10)
-          } else v(n) || y(!1), (t = n.offsetHeight + n.offsetTop - (i.offsetHeight + o.y)) > 0 && l.setTop(i, l.getTop(i) + t + 10)
-        }
+  };
+t.exports = function(t) {
+  function e() {
+    for (var e, r = arguments.length, n = Array(r), i = 0; i < r; i++) n[i] = arguments[i];
+    return a(function(t) {
+      if (void 0 === t) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
+      return t
+    }(e = t.call.apply(t, [this].concat(n)) || this), "wrapperRef", c.createRef()), e
+  }
+  e.prototype = Object.create(t.prototype), e.prototype.constructor = e, e.__proto__ = t;
+  var r = e.prototype;
+  return r.shouldComponentUpdate = function(t) {
+    var e = this.props,
+      r = e.block,
+      n = e.direction,
+      i = e.tree,
+      o = !r.getChildKeys().isEmpty(),
+      a = r !== t.block || i !== t.tree || n !== t.direction || m(t.selection, t.block.getKey()) && t.forceSelection;
+    return o || a
+  }, r.componentDidMount = function() {
+    var t, e = this.props.selection,
+      r = e.getEndKey();
+    if (e.getHasFocus() && r === this.props.block.getKey()) {
+      var n = this.wrapperRef.current;
+      if (n) {
+        var i = f.getScrollParent(n),
+          o = h(i);
+        if (i === window) {
+          var a = p(n);
+          (t = a.y + a.height - d().height) > 0 && window.scrollTo(o.x, o.y + t + 10)
+        } else v(n) || y(!1), (t = n.offsetHeight + n.offsetTop - (i.offsetHeight + o.y)) > 0 && l.setTop(i, l.getTop(i) + t + 10)
       }
-    }, r.render = function() {
-      var t = this,
-        r = this.props,
-        n = r.block,
-        a = r.blockRenderMap,
-        l = r.blockRendererFn,
-        f = r.blockStyleFn,
-        p = r.contentState,
-        h = r.decorator,
-        d = r.editorKey,
-        g = r.editorState,
-        y = r.customStyleFn,
-        v = r.customStyleMap,
-        k = r.direction,
-        E = r.forceSelection,
-        C = r.selection,
-        D = r.tree,
-        O = null;
-      n.children.size && (O = n.children.reduce(function(r, n) {
-        var i = s.encode(n, 0, 0),
-          u = p.getBlockForKey(n),
-          h = w(u, l),
-          y = h.CustomComponent || e,
-          v = S(u, a),
-          m = v.Element,
-          k = v.wrapperTemplate,
-          E = x(u, d, i, f, h, null),
-          C = o({}, t.props, {
-            tree: g.getBlockTree(n),
-            blockProps: h.customProps,
-            offsetKey: i,
-            block: u
-          });
-        return r.push(c.createElement(m, E, c.createElement(y, C))), !k || _(u, p) || b(k, m, r), r
-      }, []));
-      var K = n.getKey(),
-        T = s.encode(K, 0, 0),
-        M = w(n, l),
-        A = M.CustomComponent,
-        I = null != A ? c.createElement(A, i({}, this.props, {
-          tree: g.getBlockTree(K),
-          blockProps: M.customProps,
-          offsetKey: T,
-          block: n
-        })) : c.createElement(u, {
-          block: n,
-          children: O,
-          contentState: p,
-          customStyleFn: y,
-          customStyleMap: v,
-          decorator: h,
-          direction: k,
-          forceSelection: E,
-          hasSelection: m(C, K),
-          selection: C,
-          tree: D
+    }
+  }, r.render = function() {
+    var t = this,
+      r = this.props,
+      n = r.block,
+      a = r.blockRenderMap,
+      l = r.blockRendererFn,
+      f = r.blockStyleFn,
+      p = r.contentState,
+      h = r.decorator,
+      d = r.editorKey,
+      g = r.editorState,
+      y = r.customStyleFn,
+      v = r.customStyleMap,
+      k = r.direction,
+      E = r.forceSelection,
+      C = r.selection,
+      D = r.tree,
+      O = null;
+    n.children.size && (O = n.children.reduce(function(r, n) {
+      var i = s.encode(n, 0, 0),
+        u = p.getBlockForKey(n),
+        h = w(u, l),
+        y = h.CustomComponent || e,
+        v = S(u, a),
+        m = v.Element,
+        k = v.wrapperTemplate,
+        E = x(u, d, i, f, h, null),
+        C = o({}, t.props, {
+          tree: g.getBlockTree(n),
+          blockProps: h.customProps,
+          offsetKey: i,
+          block: u
         });
-      if (n.getParentKey()) return I;
-      var B = S(n, a).Element,
-        L = x(n, d, T, f, M, this.wrapperRef);
-      return c.createElement(B, L, I)
-    }, e
-  }(c.Component);
-t.exports = k
+      return r.push(c.createElement(m, E, c.createElement(y, C))), !k || _(u, p) || b(k, m, r), r
+    }, []));
+    var K = n.getKey(),
+      T = s.encode(K, 0, 0),
+      M = w(n, l),
+      A = M.CustomComponent,
+      I = null != A ? c.createElement(A, i({}, this.props, {
+        tree: g.getBlockTree(K),
+        blockProps: M.customProps,
+        offsetKey: T,
+        block: n
+      })) : c.createElement(u, {
+        block: n,
+        children: O,
+        contentState: p,
+        customStyleFn: y,
+        customStyleMap: v,
+        decorator: h,
+        direction: k,
+        forceSelection: E,
+        hasSelection: m(C, K),
+        selection: C,
+        tree: D
+      });
+    if (n.getParentKey()) return I;
+    var B = S(n, a).Element,
+      L = x(n, d, T, f, M, this.wrapperRef);
+    return c.createElement(B, L, I)
+  }, e
+}(c.Component)

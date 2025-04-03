@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(493683),
-  l = n(447543),
+  l = n(493683),
+  o = n(447543),
   s = n(100527),
   c = n(906732),
   u = n(955415),
@@ -17,35 +17,35 @@ var r = n(200651),
   h = n(51144),
   g = n(981631),
   _ = n(388032),
-  b = n(949862);
+  b = n(273254);
 
-function v(e) {
+function x(e) {
   var t;
   let {
     invite: n,
-    getAcceptInviteContext: v
-  } = e, x = (0, a.e7)([p.default], () => p.default.getId()), y = (null === (t = n.inviter) || void 0 === t ? void 0 : t.id) === x, E = n.state === g.r2o.ACCEPTING, {
+    getAcceptInviteContext: x
+  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), E = (null == (t = n.inviter) ? void 0 : t.id) === y, v = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), N = (0, a.e7)([f.Z], () => {
     var e;
-    return null != n.inviter && f.Z.isFriend(null === (e = n.inviter) || void 0 === e ? void 0 : e.id)
+    return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
   }), j = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel([n.inviter.id])), (0, l.r$)(n, e, O)
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", l.Z.openPrivateChannel([n.inviter.id])), (0, o.r$)(n, e, O)
   }, [n, O]), C = i.useCallback(() => {
-    (0, l.r$)(n, "accept", O);
-    let e = v("Invite Button Embed");
-    l.ZP.acceptInviteAndTransitionToInviteChannel({
+    (0, o.r$)(n, "accept", O);
+    let e = x("Invite Button Embed");
+    o.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, O, v]);
+  }, [n, O, x]);
   if (null == n.inviter) return null;
   let I = N ? j : C,
     S = _.NW.string(_.t.ib7Ng4),
     T = u.Z.Button.Colors.GREEN;
-  N ? (S = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : y && (S = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
-  let P = y ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
+  N ? (S = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : E && (S = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
+  let P = E ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
     A = null != n.inviter ? "".concat(n.inviter.username) : "",
     w = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
@@ -64,8 +64,8 @@ function v(e) {
         })]
       }), (0, r.jsx)(u.Z.Button, {
         onClick: I,
-        submitting: E,
-        isDisabled: y,
+        submitting: v,
+        isDisabled: E,
         color: T,
         children: S
       })]

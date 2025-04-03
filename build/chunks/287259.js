@@ -2,7 +2,7 @@
 n.d(t, {
   JZ: () => l,
   fS: () => i,
-  wX: () => o
+  wX: () => a
 });
 var r = n(570140);
 
@@ -21,7 +21,7 @@ function l(e) {
   })
 }
 
-function o(e) {
+function a(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   r.Z.dispatch({
     type: "LIBRARY_TABLE_ACTIVE_ROW_ID_UPDATE",

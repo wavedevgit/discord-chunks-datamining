@@ -15,7 +15,7 @@ var a = r(200651),
   _ = r(371651),
   x = r(981631),
   h = r(388032),
-  g = r(645831);
+  g = r(933150);
 
 function p(e) {
   let {
@@ -25,11 +25,11 @@ function p(e) {
     gameId: v
   } = e, [N, k] = n.useState("unreported"), [j, C] = n.useState(""), [b, f] = n.useState(!1), [y, R] = n.useState(!1), [S, z] = n.useState(!1), [I, w] = n.useState(!1), A = (0, s.e7)([u.Z, d.ZP], () => {
     var e;
-    let t = null != v ? v : null === (e = d.ZP.getCurrentGameForAnalytics()) || void 0 === e ? void 0 : e.id;
+    let t = null != v ? v : null == (e = d.ZP.getCurrentGameForAnalytics()) ? void 0 : e.id;
     return null == t ? null : u.Z.getDetectableGame(t)
   }), M = (0, s.e7)([_.default], () => {
     var e;
-    let t = null !== (e = null === _.default || void 0 === _.default ? void 0 : _.default.getMostRecentOverlayRenderMethod()) && void 0 !== e ? e : void 0;
+    let t = null != (e = null === _.default || void 0 === _.default ? void 0 : _.default.getMostRecentOverlayRenderMethod()) ? e : void 0;
     return null != t ? l.gl[t] : void 0
   }), P = n.useMemo(() => {
     let e = {

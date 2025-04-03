@@ -13,7 +13,7 @@ var r = n(481060),
 function d(t) {
   var e, n;
   if (!(0, l.Xb)(t) || t.type !== s.d4z.PRIVATE_THREAD) return null;
-  let d = null === (n = null === (e = t.threadMetadata) || void 0 === e ? void 0 : e.invitable) || void 0 === n || n;
+  let d = null == (n = null == (e = t.threadMetadata) ? void 0 : e.invitable) || n;
   return (0, i.jsx)(r.S89, {
     id: "toggle-thread-invitable",
     label: o.NW.string(o.t.s2rpNT),

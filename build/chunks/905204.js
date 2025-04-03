@@ -26,7 +26,7 @@ let g = {};
 function x(e) {
   let n = (0, i.e7)([h.Z], () => {
     var n;
-    return null !== (n = h.Z.getPendingResponseOptions(e)) && void 0 !== n ? n : g
+    return null != (n = h.Z.getPendingResponseOptions(e)) ? n : g
   }, [e]);
   return r.useEffect(() => (f(e), () => f(e)), [e]), r.useEffect(() => {
     null != n && 0 !== Object.keys(n).length && m.Z.updateOnboardingResponses(e)
@@ -42,8 +42,8 @@ function x(e) {
             m = [];
           if (e.singleSelect && t) {
             let t = e.options.find(e => r.includes(e.id));
-            d = a().difference(null !== (l = n.roleIds) && void 0 !== l ? l : [], null !== (i = null == t ? void 0 : t.roleIds) && void 0 !== i ? i : []), m = a().difference(null !== (o = null == t ? void 0 : t.roleIds) && void 0 !== o ? o : [], null !== (s = n.roleIds) && void 0 !== s ? s : [])
-          } else if (t) d = null !== (c = n.roleIds) && void 0 !== c ? c : [], m = [];
+            d = a().difference(null != (l = n.roleIds) ? l : [], null != (i = null == t ? void 0 : t.roleIds) ? i : []), m = a().difference(null != (o = null == t ? void 0 : t.roleIds) ? o : [], null != (s = n.roleIds) ? s : [])
+          } else if (t) d = null != (c = n.roleIds) ? c : [], m = [];
           else {
             let t = e.options.filter(e => r.includes(e.id)),
               l = t.filter(e => n.id !== e.id),
@@ -70,8 +70,8 @@ function x(e) {
           } = e, f = [], g = [];
           if (c.singleSelect && m) {
             let e = c.options.find(e => p.includes(e.id));
-            f = a().difference(null !== (n = d.channelIds) && void 0 !== n ? n : [], null !== (t = null == e ? void 0 : e.channelIds) && void 0 !== t ? t : []), g = a().difference(null !== (r = null == e ? void 0 : e.channelIds) && void 0 !== r ? r : [], null !== (l = d.channelIds) && void 0 !== l ? l : [])
-          } else if (m) f = null !== (i = d.channelIds) && void 0 !== i ? i : [], g = [];
+            f = a().difference(null != (n = d.channelIds) ? n : [], null != (t = null == e ? void 0 : e.channelIds) ? t : []), g = a().difference(null != (r = null == e ? void 0 : e.channelIds) ? r : [], null != (l = d.channelIds) ? l : [])
+          } else if (m) f = null != (i = d.channelIds) ? i : [], g = [];
           else {
             let e = c.options.filter(e => p.includes(e.id)),
               n = e.filter(e => d.id !== e.id),

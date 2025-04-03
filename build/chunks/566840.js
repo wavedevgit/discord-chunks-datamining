@@ -1,12 +1,12 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Eg: () => u,
   XL: () => p
 });
 var r = n(192379);
 if (12633 == n.j) var i = n(788347);
-var o = n(372793),
-  l = n(731965);
+var l = n(372793),
+  o = n(731965);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, o.F)(e => ({
+let c = (0, l.F)(e => ({
   upsellsByGuildId: {}
 }));
 
@@ -47,7 +47,7 @@ function u(e) {
   return c(t => {
     var n;
     let r = {};
-    return null == e ? r : null !== (n = t.upsellsByGuildId[e]) && void 0 !== n ? n : r
+    return null == e ? r : null != (n = t.upsellsByGuildId[e]) ? n : r
   }, i.X)
 }
 
@@ -65,21 +65,21 @@ function p(e, t) {
     i = r.useRef(null);
   return r.useLayoutEffect(() => {
     let r = i.current,
-      o = () => {
+      l = () => {
         requestAnimationFrame(() => {
-          var r, o, u;
-          let d = null !== (o = null === (r = i.current) || void 0 === r ? void 0 : r.getBoundingClientRect()) && void 0 !== o ? o : null;
+          var r, l, u;
+          let d = null != (l = null == (r = i.current) ? void 0 : r.getBoundingClientRect()) ? l : null;
           u = {
             name: t,
             guildId: e,
             disabled: n,
             boundingRect: null != d ? d : null
-          }, (0, l.j)(() => {
+          }, (0, o.j)(() => {
             c.setState(e => {
               var t, n;
               return {
-                upsellsByGuildId: s(a({}, null !== (t = e.upsellsByGuildId) && void 0 !== t ? t : {}), {
-                  [u.guildId]: s(a({}, null !== (n = e.upsellsByGuildId[u.guildId]) && void 0 !== n ? n : {}), {
+                upsellsByGuildId: s(a({}, null != (t = e.upsellsByGuildId) ? t : {}), {
+                  [u.guildId]: s(a({}, null != (n = e.upsellsByGuildId[u.guildId]) ? n : {}), {
                     [u.name]: u
                   })
                 })
@@ -88,16 +88,16 @@ function p(e, t) {
           })
         })
       };
-    if (null == r) return o(), () => {};
+    if (null == r) return l(), () => {};
     let u = function(e) {
       let t = e.parentNode;
       for (; null != t && t !== document.body && !d(t);) t = t.parentNode;
       return d(t) ? t : null
     }(r);
-    return o(), null == u || u.addEventListener("scroll", o, {
+    return l(), null == u || u.addEventListener("scroll", l, {
       passive: !0
     }), () => {
-      null == u || u.removeEventListener("scroll", o)
+      null == u || u.removeEventListener("scroll", l)
     }
   }, [e, t, n]), i
 }

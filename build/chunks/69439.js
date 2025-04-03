@@ -20,7 +20,7 @@ var r = n(200651),
   b = n(284851),
   j = n(46140),
   v = n(388032),
-  y = n(967116);
+  y = n(142468);
 let _ = [{
   value: j.cd.DESKTOP,
   get label() {
@@ -74,7 +74,7 @@ function O(e) {
   } = (0, i.cj)([m.Z], () => ({
     isClaiming: m.Z.isClaimingReward(w.id) || m.Z.isFetchingRewardCode(w.id),
     isEnrolling: m.Z.isEnrolling(w.id)
-  })), M = (null === (t = w.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, L = (null === (n = w.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, Z = L && (null === (s = w.userStatus) || void 0 === s ? void 0 : s.claimedAt) == null, V = (0, g.iQ)(w), Q = !(0, g.zi)(w), U = (0, p._Q)(w), H = (0, g.Xv)(w.config), z = (0, g.q8)(w), F = (0, g.Vl)(w), X = (0, p.Rf)(w), [K, Y, G] = (0, p.me)(w, X), J = Q && U === p.OH.ACCEPTED, $ = J && K === f.LI.SELECT, ee = J && !$ && Y.length > 1, et = o.useCallback(e => {
+  })), M = (null == (t = w.userStatus) ? void 0 : t.enrolledAt) != null, L = (null == (n = w.userStatus) ? void 0 : n.completedAt) != null, Z = L && (null == (s = w.userStatus) ? void 0 : s.claimedAt) == null, V = (0, g.iQ)(w), Q = !(0, g.zi)(w), U = (0, p._Q)(w), H = (0, g.Xv)(w.config), z = (0, g.q8)(w), F = (0, g.Vl)(w), X = (0, p.Rf)(w), [K, Y, G] = (0, p.me)(w, X), J = Q && U === p.OH.ACCEPTED, $ = J && K === f.LI.SELECT, ee = J && !$ && Y.length > 1, et = o.useCallback(e => {
     G(e), e === j.cd.DESKTOP && P([])
   }, [G, P]), {
     text: en,
@@ -106,7 +106,7 @@ function O(e) {
     afterRequest: e => {
       B.stopAnimation(), P(e)
     }
-  }), ea = (null === (O = w.userStatus) || void 0 === O ? void 0 : O.claimedAt) != null, ei = null;
+  }), ea = (null == (O = w.userStatus) ? void 0 : O.claimedAt) != null, ei = null;
   return (V && Z ? ei = (0, r.jsx)(l.zxk, {
     color: l.Ttl.BRAND,
     submitting: I,

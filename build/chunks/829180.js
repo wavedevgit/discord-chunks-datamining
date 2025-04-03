@@ -19,9 +19,8 @@ var a = ["canDrop", "hover", "drop"],
     var e;
 
     function t(e, r, n) {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, t), i(this, "props", null), i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "ref", void 0), this.spec = e, this.monitor = r, this.ref = n
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+      i(this, "props", null), i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "ref", void 0), this.spec = e, this.monitor = r, this.ref = n
     }
     return e = [{
         key: "receiveProps",

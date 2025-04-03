@@ -5,21 +5,21 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
+  a = n.n(l),
+  o = n(392711),
   s = n(481060),
   c = n(367907),
   u = n(626135),
   d = n(981631),
   p = n(388032),
-  h = n(885492);
-let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
+  h = n(29504);
+let f = (0, o.debounce)(c.ZP.trackWithMetadata, 500),
   g = function(e) {
     let {
       guild: t,
       title: n,
       message: l,
-      image: a,
+      image: o,
       type: g,
       imageStyles: m,
       imageMarginX: b,
@@ -27,9 +27,9 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       trackingSource: E,
       undismissable: O,
       onDismissed: N,
-      onClick: v,
-      cta: y,
-      ctaColor: I,
+      onClick: y,
+      cta: I,
+      ctaColor: v,
       centerText: C,
       className: S
     } = e;
@@ -40,7 +40,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
       })
     }, [t.id, g]);
     let T = null;
-    "function" == typeof y ? T = y() : null != y && (T = (0, r.jsx)(s.zxk, {
+    "function" == typeof I ? T = I() : null != I && (T = (0, r.jsx)(s.zxk, {
       className: h.button,
       size: s.zxk.Sizes.SMALL,
       onClick: () => {
@@ -48,18 +48,18 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
           source: E,
           guild_id: t.id,
           notice_type: g
-        }), null == v || v()
+        }), null == y || y()
       },
       fullWidth: !0,
-      color: I,
-      children: y
+      color: v,
+      children: I
     }));
     let P = null;
     "function" == typeof n ? P = n() : null != n && (P = (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: o()(h.title, {
-        [h.noImageTitle]: null == a
+      className: a()(h.title, {
+        [h.noImageTitle]: null == o
       }, {
         [h.center]: C
       }),
@@ -67,7 +67,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
     }));
     let j = null;
     "function" == typeof l ? j = l() : null != l && (j = (0, r.jsx)(s.Text, {
-      className: o()({
+      className: a()({
         [h.center]: C
       }),
       variant: "text-sm/normal",
@@ -76,7 +76,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
     }));
     let A = null != b ? "".concat(b, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: o()(h.container, S),
+      className: a()(h.container, S),
       children: [!0 === O ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(d.rMx.CHANNEL_NOTICE_CLOSED, {
@@ -90,7 +90,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
           color: "currentColor",
           className: h.closeIcon
         })
-      }), null != a && (0, r.jsx)("div", {
+      }), null != o && (0, r.jsx)("div", {
         className: h.imageContainer,
         style: {
           marginTop: "".concat(_, "px"),
@@ -100,7 +100,7 @@ let f = (0, a.debounce)(c.ZP.trackWithMetadata, 500),
         children: (0, r.jsx)("img", {
           className: h.image,
           style: m,
-          src: a,
+          src: o,
           alt: ""
         })
       }), (0, r.jsxs)("div", {

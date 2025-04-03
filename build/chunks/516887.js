@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 });
@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(481060),
   s = n(826298),
   c = n(540059),
-  u = n(859597);
+  u = n(881046);
 let d = i.memo(function(e) {
   var t;
   let {
@@ -17,7 +17,7 @@ let d = i.memo(function(e) {
     channel: i,
     section: l
   } = e, d = (0, c.R6)("ChannelApplicationIcon"), p = null != l ? (0, s.ky)(l) : null, h = null != p ? (0, r.jsx)(a.ua7, {
-    text: null !== (t = null == l ? void 0 : l.name) && void 0 !== t ? t : "",
+    text: null != (t = null == l ? void 0 : l.name) ? t : "",
     position: "top",
     children: e => {
       var t, n;

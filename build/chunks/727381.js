@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(120356),
   m = n(301242),
   g = n(467014),
   b = n(388032),
-  _ = n(88562);
+  _ = n(12740);
 
 function C() {
   return (0, r.jsxs)("div", {
@@ -42,32 +42,32 @@ function C() {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     userId: t,
     guildId: n,
     location: i,
     className: u,
     onNavigate: b
-  } = e, v = (0, o.e7)([c.default], () => c.default.getUser(t), [t]), y = (0, o.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
-  return null == v || null == y ? null : (0, r.jsxs)("div", {
+  } = e, y = (0, o.e7)([c.default], () => c.default.getUser(t), [t]), x = (0, o.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
+  return null == y || null == x ? null : (0, r.jsxs)("div", {
     className: l()(_.container, u),
     children: [(0, r.jsx)(C, {}), (0, r.jsxs)(a.Ttm, {
       className: _.innerContainer,
       children: [(0, r.jsx)(m.Z, {
-        member: y
+        member: x
       }), (0, r.jsx)(g.Z, {
         userId: t,
         guildId: n
       }), (0, r.jsx)(f.Z, {
-        member: y,
+        member: x,
         onNavigate: b
       }), (0, r.jsx)(p.Z, {
-        member: y
+        member: x
       }), (0, r.jsx)(d.Z, {
-        member: y
+        member: x
       }), (0, r.jsx)(h.Z, {
-        member: y
+        member: x
       })]
     })]
   })

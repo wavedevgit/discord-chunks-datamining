@@ -16,7 +16,7 @@ var n = e(481060),
   h = e(981631),
   T = e(474936),
   g = e(388032),
-  E = e(748549);
+  E = e(783328);
 
 function I(t) {
   var i;
@@ -26,7 +26,7 @@ function I(t) {
       onClose: m
     } = t,
     L = o.Z.getGuild(I.guild_id),
-    S = null !== (i = null == L ? void 0 : L.maxStageVideoChannelUsers) && void 0 !== i ? i : 0,
+    S = null != (i = null == L ? void 0 : L.maxStageVideoChannelUsers) ? i : 0,
     N = !!(null == L ? void 0 : L.isCommunity()),
     f = g.NW.string(g.t.pqPQLy),
     p = N ? S < h.TU7 : (null == L ? void 0 : L.premiumTier) !== h.Eu4.TIER_3 && S <= h.eez,

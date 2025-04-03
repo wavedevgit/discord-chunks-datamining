@@ -20,7 +20,7 @@ var s = n(200651),
   N = n(445507),
   g = n(981631),
   k = n(388032),
-  y = n(24166);
+  y = n(170141);
 
 function C(e) {
   let {
@@ -48,10 +48,8 @@ function C(e) {
     null != i.current && (i.current.email = e, o(e), x(null))
   }, [i, x]), w = l.useCallback(() => {
     if (null != t && null != i.current) {
-      if (c.length < 3 || -1 === c.indexOf("@")) {
-        x(k.NW.string(k.t["3dVrwc"]));
-        return
-      }(0, j.o)({
+      if (c.length < 3 || -1 === c.indexOf("@")) return void x(k.NW.string(k.t["3dVrwc"]));
+      (0, j.o)({
         targetKey: n,
         dismissibleContent: a,
         data: i.current,

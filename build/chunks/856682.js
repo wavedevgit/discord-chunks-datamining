@@ -11,7 +11,7 @@ var n = r(200651),
   c = r(393238),
   u = r(410030),
   d = r(231338),
-  f = r(478095);
+  f = r(703505);
 let m = {
     mass: 1,
     tension: 400,
@@ -146,13 +146,13 @@ function x(e) {
   let {
     children: i,
     fullHeight: x = !1
-  } = e, [j, v] = l.useState(!1), {
-    height: b,
-    ref: y
+  } = e, [j, b] = l.useState(!1), {
+    height: y,
+    ref: v
   } = (0, c.Z)(), {
     height: O,
     ref: C
-  } = (0, c.Z)(), w = x ? O : 59 + (null != b ? b : 100) + 101, N = (0, o.q_F)({
+  } = (0, c.Z)(), w = x ? O : 59 + (null != y ? y : 100) + 101, N = (0, o.q_F)({
     from: {
       height: 0
     },
@@ -161,7 +161,7 @@ function x(e) {
     },
     config: m,
     delay: 800 * !j,
-    onRest: () => v(!0)
+    onRest: () => b(!0)
   }), P = (0, o.q_F)({
     from: {
       opacity: 0
@@ -213,7 +213,7 @@ function x(e) {
         axleColor: D
       }), (0, n.jsx)("div", {
         className: a()(f.content, x && f.fullHeight),
-        ref: y,
+        ref: v,
         children: (0, n.jsx)("div", {
           className: a()(f.innerContent, x && f.fullHeight),
           style: {

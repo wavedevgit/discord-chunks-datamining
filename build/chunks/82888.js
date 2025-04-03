@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => u
 });
@@ -24,13 +24,13 @@ function u(e) {
     let t = o.ZP.getConnectedActivityChannelId();
     return {
       connectedChannelId: t,
-      connectedActivity: null != t && null !== (e = o.ZP.getSelfEmbeddedActivityForChannel(t)) && void 0 !== e ? e : void 0,
+      connectedActivity: null != t && null != (e = o.ZP.getSelfEmbeddedActivityForChannel(t)) ? e : void 0,
       activityPanelMode: o.ZP.getActivityPanelMode()
     }
   });
   if (!(0, l.NX)(u)) return null;
   let h = null == d ? void 0 : d.applicationId;
-  return p !== c.Ez.PANEL || null == h ? null : null == u || null == d || (0, a.Z)(u) ? null : (0, r.jsx)(s.Z, {
+  return p !== c.Ez.PANEL || null == h || null == u || null == d || (0, a.Z)(u) ? null : (0, r.jsx)(s.Z, {
     maxHeight: t,
     connectedLocation: d.location,
     renderExternalHeader: n

@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(412899),
   x = n(493773),
   b = n(447003),
-  v = n(605436),
-  j = n(621516),
+  j = n(605436),
+  v = n(621516),
   C = n(430824),
   _ = n(186523),
   y = n(585483),
@@ -38,7 +38,7 @@ var r = n(200651),
   M = n(710352),
   A = n(981631),
   L = n(388032),
-  W = n(728085);
+  W = n(354094);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -279,9 +279,9 @@ let G = e => {
           s = (null == t ? void 0 : t.isMediaChannel()) === !0;
         return null == e || null == t || s || null == o || a.addStep(function(e, t, a, i) {
           let l = (0, b.Z)(a) ? m.$e(A.Plq.VIEW_CHANNEL, A.Plq.SEND_MESSAGES) : A.Plq.SEND_MESSAGES,
-            s = null != e ? (0, P.E$)(e, t, a, l).filter(t => a.permissionOverwrites.hasOwnProperty(t.id) || (0, v.pM)(e.id, t.id)) : [],
+            s = null != e ? (0, P.E$)(e, t, a, l).filter(t => a.permissionOverwrites.hasOwnProperty(t.id) || (0, j.pM)(e.id, t.id)) : [],
             o = s.length > 0,
-            c = s.some(t => (0, v.pM)(e.id, t.id));
+            c = s.some(t => (0, j.pM)(e.id, t.id));
           return {
             name: L.NW.string(L.t["/Ax2go"]),
             description: L.NW.string(L.t.oMIexc),
@@ -321,7 +321,7 @@ let G = e => {
   },
   es = () => a.useCallback(e => {
     var t;
-    null === (t = e.clickHandler) || void 0 === t || t.call(e)
+    null == (t = e.clickHandler) || t.call(e)
   }, []),
   eo = e => {
     let {
@@ -376,7 +376,7 @@ let G = e => {
     } = (0, T.H)(n.id), s = (0, h.e7)([C.Z], () => C.Z.getGuild(n.getGuildId())), o = (0, I.r_)(n), {
       transitions: m,
       setVisible: f
-    } = en(), p = er(a), b = es(), v = J(n.id, f), {
+    } = en(), p = er(a), b = es(), j = J(n.id, f), {
       onboardingSteps: y,
       isDismissed: N,
       isHidden: O,
@@ -385,9 +385,9 @@ let G = e => {
       guild: s,
       channel: n,
       hasAnyThread: t,
-      handleHide: v
+      handleHide: j
     }), S = !O && !N, P = (0, Z.AF)(), E = n.isMediaChannel(), k = e => P.getState().setOnboardingExpanded(e);
-    return (ee(w, S, v), et({
+    return (ee(w, S, j), et({
       isAllDone: w,
       isVisible: S,
       canManageChannel: o,
@@ -395,7 +395,7 @@ let G = e => {
       channel: n
     }), Q(N, O, f), (0, x.ZP)(() => {
       t && S || k(!0)
-    }), null == s) ? null : S && o ? E ? t ? null : (0, r.jsx)(j.Z, {
+    }), null == s) ? null : S && o ? E ? t ? null : (0, r.jsx)(v.Z, {
       channel: n
     }) : (0, r.jsx)(r.Fragment, {
       children: m((e, t) => t ? (0, r.jsx)(c.animated.div, {
@@ -429,7 +429,7 @@ let G = e => {
                 expanded: a,
                 onClick: () => k(!a)
               }), (0, r.jsx)(eo, {
-                handleHide: v
+                handleHide: j
               })]
             })
           }), p((e, t) => t ? (0, r.jsx)(c.animated.div, {

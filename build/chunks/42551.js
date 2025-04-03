@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(527379),
   g = n(285173),
   x = n(388032),
-  v = n(3866),
-  y = n(67769);
+  y = n(506192),
+  v = n(350381);
 let O = new Set;
 
 function N(e) {
@@ -35,20 +35,20 @@ function N(e) {
     return (0, r.jsx)(b.lo1, {
       value: l.id,
       children: (0, r.jsxs)("div", {
-        className: v.roleNameContainer,
+        className: y.roleNameContainer,
         children: [(0, r.jsxs)("div", {
-          className: v.roleLabel,
+          className: y.roleLabel,
           children: [(0, r.jsx)("div", {
-            className: a()(v.labelBackground, n && v.selected)
+            className: a()(y.labelBackground, n && y.selected)
           }), (0, r.jsx)(b.lo1.Label, {
             children: (0, r.jsx)(g.Z, {
-              className: y.roleTooltipItem,
+              className: v.roleTooltipItem,
               role: l,
               guildId: t
             }, l.id)
           })]
         }), (0, r.jsx)("div", {
-          className: v.checkboxContainer,
+          className: y.checkboxContainer,
           children: (0, r.jsx)(b.lo1.Checkbox, {
             checked: n
           })
@@ -69,7 +69,7 @@ function N(e) {
     d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), S(t)
   }, [c, S]);
   return (0, r.jsx)(b.DBG, {
-    className: v.rolePopout,
+    className: y.rolePopout,
     placeholder: x.NW.string(x.t.ZveC7e),
     value: c,
     onChange: D,

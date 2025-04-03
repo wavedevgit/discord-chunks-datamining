@@ -62,7 +62,7 @@ class h extends(i = o.ZP.Store) {
   getLastPing(e) {
     var t;
     let n = this.getPings(e);
-    return 0 === n.length ? 0 : null === (t = n[n.length - 1]) || void 0 === t ? void 0 : t.value
+    return 0 === n.length ? 0 : null == (t = n[n.length - 1]) ? void 0 : t.value
   }
   getOutboundLossRate(e) {
     return d(e, e => {

@@ -39,7 +39,7 @@ async function o(e) {
           let t = new FileReader;
           t.onload = t => {
             var r;
-            let n = null === (r = t.target) || void 0 === r ? void 0 : r.result;
+            let n = null == (r = t.target) ? void 0 : r.result;
             "string" == typeof n ? e(n) : e("")
           }, t.readAsDataURL(i)
         }))), p.terminate()

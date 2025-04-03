@@ -19,5 +19,5 @@ function c(e) {
     p = (0, d.U)(),
     v = (null == t ? void 0 : t.isStaff()) !== !0,
     h = (0, s.h)(e).length > 0;
-  if ((p || !v) && !n && !c && !h) return f
+  if (!(!p && v) && !n && !c && !h) return f
 }

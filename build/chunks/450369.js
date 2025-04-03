@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Q: () => U,
   Z: () => F
@@ -20,9 +20,9 @@ var r = n(200651),
   b = n(358221),
   _ = n(795318),
   C = n(258609),
-  v = n(569545),
-  y = n(102172),
-  x = n(352978),
+  y = n(569545),
+  x = n(102172),
+  v = n(352978),
   j = n(880395),
   O = n(184301),
   E = n(347475),
@@ -34,10 +34,10 @@ var r = n(200651),
   T = n(979651),
   A = n(88751),
   w = n(252132),
-  R = n(329262),
+  R = n(248400),
   M = n(981631),
   k = n(354459),
-  L = n(50730);
+  L = n(820573);
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -145,9 +145,9 @@ let U = 16 / 9,
       selectedParticipant: null != l ? b.Z.getSelectedParticipant(l.id) : null,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), N = i.useCallback((e, t) => {
-      if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, v.V9)(t) === e.id && t.state !== M.jm8.ENDED).length) {
-        if (!(0, y.p9)(l, T.Z, S.Z, Z.Z, C.Z)[0]) return;
-        (0, p.rn)((0, v.my)(e.id), {
+      if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, y.V9)(t) === e.id && t.state !== M.jm8.ENDED).length) {
+        if (!(0, x.p9)(l, T.Z, S.Z, Z.Z, C.Z)[0]) return;
+        (0, p.rn)((0, y.my)(e.id), {
           forceMultiple: t.shiftKey
         })
       }(null == O ? void 0 : O.id) === e.id ? E ? (u.Z.selectParticipant(l.id, null), u.Z.updateStageStreamSize(l.id, !1)) : u.Z.updateStageStreamSize(l.id, !0) : (u.Z.updateStageStreamSize(l.id, !1), u.Z.selectParticipant(l.id, e.id))
@@ -155,7 +155,7 @@ let U = 16 / 9,
     return (0, r.jsx)(w.Z, {
       participant: n,
       aspectRatio: U,
-      fit: n.type === k.fO.USER ? x.L.COVER : void 0,
+      fit: n.type === k.fO.USER ? v.L.COVER : void 0,
       blocked: g,
       ignored: _,
       channel: l,
@@ -178,15 +178,15 @@ let U = 16 / 9,
       width: c
     } = e, {
       newestAnalyticsLocation: u
-    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), C = l.getGuildId(), v = P.default.getId(), {
-      simplifiedSettingsEnabled: y
+    } = (0, m.ZP)(f.Z.STAGE_TILE), p = (0, h.bp)(), C = l.getGuildId(), y = P.default.getId(), {
+      simplifiedSettingsEnabled: x
     } = (0, N.Z)({
       location: "StageTile"
     });
     o()(null != C, "Channel cannot be guildless");
     let {
-      user: x
-    } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), E = (0, s.e7)([A.ZP], () => A.ZP.isModerator(x.id, l.id), [l.id, x.id]);
+      user: v
+    } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), E = (0, s.e7)([A.ZP], () => A.ZP.isModerator(v.id, l.id), [l.id, v.id]);
     if (null == O || O.type === k.fO.ACTIVITY || O.type === k.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
     let I = e => {
         (0, g.h)({
@@ -194,7 +194,7 @@ let U = 16 / 9,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: x.id === v,
+            is_tile_owner: v.id === y,
             tile_type: e
           }
         })
@@ -213,7 +213,7 @@ let U = 16 / 9,
                 exitFullscreen: () => {},
                 onInteraction: (0, _.u)("StreamContextMenu", u, {
                   entrypoint: o,
-                  targetUserId: x.id,
+                  targetUserId: v.id,
                   tileType: k.TH.STREAM
                 })
               }))
@@ -223,29 +223,29 @@ let U = 16 / 9,
             return;
           case k.fO.USER:
           default:
-            if (I(k.TH.USER), y && i) return (0, j.D)(t, x, l, {
+            if (I(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: k.A5.THREE_DOT,
-              targetUserId: x.id,
+              targetUserId: v.id,
               location: u,
               tileType: k.TH.USER
             }));
             (0, d.jW)(t, async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387));
+              } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, W(D({}, t), {
-                user: x,
+                user: v,
                 guildId: C,
                 channel: l,
                 showMediaItems: !0,
                 showStageChannelItems: !0,
                 showChatItems: !1,
                 onInteraction: (0, _.u)("GuildChannelUserContextMenu", u, {
-                  targetUserId: x.id,
+                  targetUserId: v.id,
                   tileType: k.TH.USER
                 })
               }))
@@ -254,12 +254,12 @@ let U = 16 / 9,
             })
         }
       };
-    return O.type !== k.fO.USER || (null === (t = O.voiceState) || void 0 === t ? void 0 : t.selfVideo) ? (0, r.jsx)(H, {
+    return O.type !== k.fO.USER || (null == (t = O.voiceState) ? void 0 : t.selfVideo) ? (0, r.jsx)(H, {
       stageParticipant: i,
       rtcParticipant: O,
       channel: l,
       guildId: C,
-      user: x,
+      user: v,
       width: c,
       isModerator: E,
       onContextMenu: S,
@@ -269,7 +269,7 @@ let U = 16 / 9,
       rtcParticipant: O,
       channel: l,
       guildId: C,
-      user: x,
+      user: v,
       width: c,
       isModerator: E,
       onContextMenu: S,

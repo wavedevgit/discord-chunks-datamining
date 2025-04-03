@@ -1,7 +1,7 @@
 /** Chunk was on 73628 **/
 r.d(t, {
   YP: () => f,
-  ZP: () => v,
+  ZP: () => b,
   aN: () => h
 });
 var n = r(200651);
@@ -15,7 +15,7 @@ var A = r(512722),
   c = r(470209),
   d = r(981631),
   u = r(388032),
-  g = r(533547);
+  g = r(165639);
 
 function f() {
   return {
@@ -128,15 +128,15 @@ function m(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     newRoleParams: t,
     setNewRoleParams: A,
     guildId: o,
     productId: d,
     listingRoleId: f,
-    error: v
-  } = e, b = (0, l.e7)([s.Z], () => null != f ? s.Z.getRole(o, f) : void 0);
+    error: b
+  } = e, v = (0, l.e7)([s.Z], () => null != f ? s.Z.getRole(o, f) : void 0);
   return null === t ? (0, n.jsxs)(i.xJW, {
     title: (0, n.jsxs)("div", {
       className: g.warningTitle,
@@ -146,7 +146,7 @@ function v(e) {
       }), u.NW.string(u.t.ovXIrK)]
     }),
     tag: "label",
-    error: v,
+    error: b,
     titleClassName: g.roleHeader,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
@@ -157,7 +157,7 @@ function v(e) {
     }), (0, n.jsxs)("div", {
       className: g.reattachRoleRow,
       children: [(0, n.jsx)(p, {
-        role: b,
+        role: v,
         onRemove: void 0
       }), (0, n.jsx)(i.LZC, {
         horizontal: !0,
@@ -184,7 +184,7 @@ function v(e) {
   }) : null != f ? (0, n.jsxs)(i.xJW, {
     title: u.NW.string(u.t.zIg9t7),
     tag: "label",
-    error: v,
+    error: b,
     titleClassName: g.roleHeader,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-xs/normal",
@@ -193,9 +193,9 @@ function v(e) {
     }), (0, n.jsx)(i.LZC, {
       size: 8
     }), (0, n.jsx)(p, {
-      role: b,
+      role: v,
       onRemove: () => {
-        a()(null != d, "productId cannot be null"), a()(null != b, "no role attached"),
+        a()(null != d, "productId cannot be null"), a()(null != v, "no role attached"),
           function(e) {
             let {
               onConfirm: t,
@@ -233,7 +233,7 @@ function v(e) {
               }, r))
             })
           }({
-            roleName: b.name,
+            roleName: v.name,
             onConfirm: () => A(null)
           })
       }
@@ -242,7 +242,7 @@ function v(e) {
     required: !0,
     title: u.NW.string(u.t.xZvFpK),
     tag: "label",
-    error: v,
+    error: b,
     titleClassName: g.roleHeader,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-xs/normal",

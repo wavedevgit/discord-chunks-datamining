@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => h
 });
@@ -6,15 +6,15 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(67390),
-  o = n(896835),
-  l = n(447564),
+  l = n(896835),
+  o = n(447564),
   s = n(63063),
   c = n(739566),
   u = n(942951),
   d = n(834129),
   p = n(981631),
   m = n(388032),
-  f = n(670965);
+  f = n(861477);
 
 function h(e) {
   let {
@@ -26,7 +26,7 @@ function h(e) {
     channelId: n.channel_id,
     guildId: h.guild_id,
     messageId: n.id
-  })(g), b = (0, o.j)("HDStreamingUpgradedMessage"), v = () => (0, l.k)(h, "HDStreamingUpgradedMessage"), x = b ? v : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
+  })(g), b = (0, l.j)("HDStreamingUpgradedMessage"), x = () => (0, o.k)(h, "HDStreamingUpgradedMessage"), y = b ? x : s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: f.parentContainer,
@@ -43,7 +43,7 @@ function h(e) {
       })
     }), (0, r.jsxs)(i.P3F, {
       onClick: () => {
-        b ? v() : window.open(s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION), "_blank")
+        b ? x() : window.open(s.Z.getArticleURL(p.BhN.HD_STREAMING_POTION), "_blank")
       },
       className: f.embed,
       children: [(0, r.jsx)(a.Z, {}), (0, r.jsxs)("div", {
@@ -57,7 +57,7 @@ function h(e) {
           color: "text-primary",
           variant: "text-xs/normal",
           children: m.NW.format(m.t["bmGF+f"], {
-            helpCenterLink: x
+            helpCenterLink: y
           })
         })]
       })]

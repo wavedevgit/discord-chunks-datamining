@@ -6,14 +6,14 @@ var r = n(200651);
 n(192379);
 var i = n(990547),
   l = n(399606),
-  o = n(213609),
-  a = n(434404),
+  a = n(213609),
+  o = n(434404),
   s = n(970731),
   c = n(430824),
   u = n(594174),
   d = n(981631),
   p = n(388032),
-  h = n(35019),
+  h = n(644909),
   f = n(968153);
 
 function g(e) {
@@ -25,7 +25,7 @@ function g(e) {
       n = c.Z.getGuild(t);
     return (null == n ? void 0 : n.isOwner(e)) === !0
   });
-  return (0, o.Z)({
+  return (0, a.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
     properties: {
@@ -47,7 +47,7 @@ function g(e) {
       }),
       buttonCTA: p.NW.string(p.t.OgQQbG),
       onClick: () => {
-        a.Z.open(t, d.pNK.ROLE_SUBSCRIPTIONS)
+        o.Z.open(t, d.pNK.ROLE_SUBSCRIPTIONS)
       },
       secondaryButtonCTA: p.NW.string(p.t.WAI6xs),
       markAsDismissed: n

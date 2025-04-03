@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => N
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(498607),
-  o = n.n(a),
-  l = n(692547),
+  l = n.n(a),
+  o = n(692547),
   c = n(481060),
   d = n(220082),
   u = n(687158),
@@ -17,7 +17,7 @@ var i = n(120356),
   p = n(193528),
   h = n(993413),
   f = n(388032),
-  b = n(704616);
+  b = n(732391);
 
 function N(e) {
   let {
@@ -32,17 +32,17 @@ function N(e) {
     showResetThemeButton: j = !1,
     forcedDivider: O
   } = e, C = (0, u.ZP)(t.id, x), {
-    primaryColor: v,
-    secondaryColor: S
+    primaryColor: S,
+    secondaryColor: v
   } = (0, m.Z)({
     user: t,
     displayProfile: C,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(l.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
-  if (null == v || null == S) return null;
+  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  if (null == S || null == v) return null;
   let P = e => {
-    a(o()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
+    a(l()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
@@ -55,8 +55,8 @@ function N(e) {
       children: [(0, r.jsx)("div", {
         className: b.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => P([e, S]),
-          color: v,
+          onChange: e => P([e, v]),
+          color: S,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {
@@ -70,8 +70,8 @@ function N(e) {
       }), (0, r.jsx)("div", {
         className: b.sparkleContainer,
         children: (0, r.jsx)(p.Z, {
-          onChange: e => P([v, e]),
-          color: S,
+          onChange: e => P([S, e]),
+          color: v,
           suggestedColors: A,
           showEyeDropper: !0,
           label: (0, r.jsx)(c.Text, {

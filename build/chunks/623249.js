@@ -22,7 +22,7 @@ var r = n(200651),
   j = n(667105),
   v = n(981631),
   y = n(388032),
-  _ = n(181119),
+  _ = n(912621),
   C = n(708901);
 
 function O(e) {
@@ -53,7 +53,7 @@ function w(e) {
     onClose: P
   } = e, N = (0, g.sf)(n);
   null == N && P();
-  let [E, T] = (0, o.useState)(s), A = (0, g.KX)(), B = (0, m.O5)(), R = null === (t = (0, f.WD)()) || void 0 === t ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
+  let [E, T] = (0, o.useState)(s), A = (0, g.KX)(), B = (0, m.O5)(), R = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: k,
     className: _.colorTransition
   }), D = E.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(N), W = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(W) ? v.BRd.DARK : v.BRd.LIGHT, {

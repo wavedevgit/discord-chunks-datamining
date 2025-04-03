@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -19,20 +19,18 @@ var r = n(200651),
   f = n(486324),
   b = n(200299),
   x = n(388032),
-  j = n(83843);
+  j = n(773100);
 let N = function(e) {
   let {
     guild: t
-  } = e, N = t.hasFeature(p.oNc.BANNER), v = i.useCallback((e, i) => {
-    if (null == e || void 0 === i) {
-      g.Z.saveGuild(t.id, {
-        homeHeader: null
-      });
-      return
-    }(0, s.ZDy)(async () => {
+  } = e, N = t.hasFeature(p.oNc.BANNER), _ = i.useCallback((e, i) => {
+    if (null == e || void 0 === i) return void g.Z.saveGuild(t.id, {
+      homeHeader: null
+    });
+    (0, s.ZDy)(async () => {
       let {
         default: s
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("3296")]).then(n.bind(n, 73620));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("25005"), n.e("64989")]).then(n.bind(n, 73620));
       return n => (0, r.jsx)(s, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -64,7 +62,7 @@ let N = function(e) {
         uploadType: f.pC.HOME_HEADER
       }, n))
     })
-  }, [t.id]), _ = i.useCallback(e => {
+  }, [t.id]), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, a.yw)(p.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: {
         section: p.jXE.GUILD_SETTINGS_ONBOARDING,
@@ -89,7 +87,7 @@ let N = function(e) {
       homeHeader: e
     }) : null,
     disabled: !N,
-    onChange: v,
+    onChange: _,
     hint: x.NW.string(x.t.NyXznp),
     enabled: N,
     maxFileSizeBytes: b.B
@@ -105,7 +103,7 @@ let N = function(e) {
         className: j.boostIndicator,
         guild: t,
         guildFeature: p.oNc.BANNER,
-        onClick: _
+        onClick: v
       })]
     }), (0, r.jsxs)("div", {
       className: j.section,
@@ -119,7 +117,7 @@ let N = function(e) {
           color: s.Ttl.BRAND,
           className: j.uploadButton,
           buttonCTA: x.NW.string(x.t.yG2pUl),
-          onChange: v,
+          onChange: _,
           maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {
@@ -137,7 +135,7 @@ let N = function(e) {
         className: j.boostIndicator,
         guild: t,
         guildFeature: p.oNc.BANNER,
-        onClick: _
+        onClick: v
       })]
     }), (0, r.jsxs)("div", {
       className: j.section,
@@ -151,7 +149,7 @@ let N = function(e) {
           className: j.upsellButton,
           innerClassName: j.upsellButtonInner,
           color: s.zxk.Colors.GREEN,
-          onClick: _,
+          onClick: v,
           children: [(0, r.jsx)(u.Z, {
             height: 16,
             width: 16
@@ -165,7 +163,7 @@ let N = function(e) {
         children: (0, r.jsx)(s.P3F, {
           "aria-hidden": !0,
           tabIndex: -1,
-          onClick: _,
+          onClick: v,
           children: C
         })
       })]

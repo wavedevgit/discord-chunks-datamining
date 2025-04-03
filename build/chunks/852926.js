@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(13245),
   i = n(615287),
   l = n(371651),
-  o = n(610394),
-  a = n(998502),
+  a = n(610394),
+  o = n(998502),
   s = n(13140),
   c = n(996106),
   u = n(914946),
@@ -19,7 +19,7 @@ var r = n(13245),
 let h = ["207646673902501888"];
 
 function f(e) {
-  return null != e && l.default.isOverlayOOPEnabledForPid(e) && o.ZP.isReady(e) && o.ZP.getOverlayState(e) === i.mM.OVERLAY_RENDERING
+  return null != e && l.default.isOverlayOOPEnabledForPid(e) && a.ZP.isReady(e) && a.ZP.getOverlayState(e) === i.mM.OVERLAY_RENDERING
 }
 
 function g(e) {
@@ -31,9 +31,9 @@ function g(e) {
       r.Z.setInputLocked(!0, e)
     },
     context: p.IlC.POPOUT
-  }) : (a.ZP.focus(null, !0), {
+  }) : (o.ZP.focus(null, !0), {
     lock() {
-      a.ZP.setForegroundProcess(e)
+      o.ZP.setForegroundProcess(e)
     },
     context: p.IlC.APP
   })
@@ -43,7 +43,7 @@ let m = async (e, t, n) => {
   if (null == n || "" === n) return Promise.reject(new c.Z({
     closeCode: p.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
-  let r = a.ZP.releaseChannel !== p.R5N.CANARY && !h.includes(n) && e.transport !== d.He.POST_MESSAGE;
+  let r = o.ZP.releaseChannel !== p.R5N.CANARY && !h.includes(n) && e.transport !== d.He.POST_MESSAGE;
   return await (0, u.vv)(n, r), (0, u.YS)(e, n, t)
 }, b = () => (0, u.tr)(e => {
   let t = [];
@@ -52,7 +52,7 @@ let m = async (e, t, n) => {
     return {
       type: e[0],
       code: e[1],
-      name: null !== (t = (0, s.H9)(e)) && void 0 !== t ? t : "unknown"
+      name: null != (t = (0, s.H9)(e)) ? t : "unknown"
     }
   })), t
 }), _ = e => (0, u.FJ)(e, e => {

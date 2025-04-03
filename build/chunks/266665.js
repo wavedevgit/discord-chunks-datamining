@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => Z
@@ -21,14 +21,14 @@ var r = n(200651),
   x = n(325476),
   j = n(496675),
   N = n(671533),
-  v = n(946724),
-  _ = n(970129),
+  _ = n(946724),
+  v = n(970129),
   C = n(712181),
   O = n(420966),
   y = n(203377),
   I = n(981631),
   E = n(388032),
-  S = n(528333);
+  S = n(563836);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -73,14 +73,14 @@ function R(e) {
       onClick: x,
       currentPosition: j,
       onDragStart: N,
-      onDragReset: v,
+      onDragReset: _,
       onDragComplete: C,
       roleStyle: O
     } = e,
-    y = (0, _.T)(d, p, g),
+    y = (0, v.T)(d, p, g),
     E = (0, f.pM)(d.id, g.id),
     R = null == y && !E,
-    Z = (null === (t = g.tags) || void 0 === t ? void 0 : t.guild_connections) !== void 0,
+    Z = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
     [, D] = (0, l.c)({
       type: w,
       item: () => (N(g.id), {
@@ -90,10 +90,7 @@ function R(e) {
       canDrag: () => R,
       end: (e, t) => {
         let n = t.getDropResult();
-        if (null == n) {
-          v();
-          return
-        }
+        if (null == n) return void _();
         C(n.roleId)
       }
     }),
@@ -114,7 +111,7 @@ function R(e) {
         roleId: g.id
       })
     }),
-    W = null !== (i = g.colorString) && void 0 !== i ? i : (0, c.Rf)(I.p6O);
+    W = null != (i = g.colorString) ? i : (0, c.Rf)(I.p6O);
   return s = Z ? (0, r.jsx)(b.Z, {
     size: 12,
     color: g.colorString,
@@ -148,9 +145,9 @@ function R(e) {
     "aria-label": g.name,
     clickableRef: e => {
       var t;
-      return D(k(null !== (t = null == e ? void 0 : e.ref) && void 0 !== t ? t : null))
+      return D(k(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
-    children: [s, null != y ? (0, r.jsx)(_.Z, {
+    children: [s, null != y ? (0, r.jsx)(v.Z, {
       className: S.lock,
       tooltipText: y
     }) : null, (0, r.jsx)(u.Text, {
@@ -168,8 +165,8 @@ function Z(e) {
     currentRoleId: n,
     setCurrentRoleId: s,
     setSelectedSection: l
-  } = e, o = (0, d.e7)([v.Z], () => v.Z.roles), c = (0, d.e7)([j.Z], () => j.Z.getHighestRole(t)), m = (0, d.e7)([h.Z], () => h.Z.roleStyle), [f, b] = i.useState(o.length), {
-    scrolledToTop: _,
+  } = e, o = (0, d.e7)([_.Z], () => _.Z.roles), c = (0, d.e7)([j.Z], () => j.Z.getHighestRole(t)), m = (0, d.e7)([h.Z], () => h.Z.roleStyle), [f, b] = i.useState(o.length), {
+    scrolledToTop: v,
     handleScroll: I
   } = (0, O.V)(), {
     handleDragStart: w,
@@ -178,7 +175,7 @@ function Z(e) {
   } = (0, C.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
-    null === (n = A.current) || void 0 === n || null === (t = n.getScrollerNode()) || void 0 === t || t.scrollTo({
+    null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
@@ -196,7 +193,7 @@ function Z(e) {
       className: S.container,
       children: [(0, r.jsxs)("div", {
         className: a()(S.titleContainer, {
-          [S.titleElevated]: !_
+          [S.titleElevated]: !v
         }),
         children: [(0, r.jsxs)(u.P3F, {
           className: S.title,

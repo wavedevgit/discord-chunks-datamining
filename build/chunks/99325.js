@@ -1,11 +1,11 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Dr: () => _,
   Rq: () => g,
   So: () => b,
   Su: () => C,
   YZ: () => h,
-  _Q: () => v,
+  _Q: () => y,
   bF: () => f,
   c$: () => p,
   kx: () => m
@@ -98,14 +98,11 @@ function m(e, t) {
   })
 }
 let g = i()(async (e, t) => {
-    if (!c.Z.shouldFetch(e, t)) {
-      a.Z.dispatch({
-        type: "GUILD_DIRECTORY_CACHED_SEARCH",
-        channelId: e,
-        query: t
-      });
-      return
-    }
+    if (!c.Z.shouldFetch(e, t)) return void a.Z.dispatch({
+      type: "GUILD_DIRECTORY_CACHED_SEARCH",
+      channelId: e,
+      query: t
+    });
     try {
       a.Z.dispatch({
         type: "GUILD_DIRECTORY_SEARCH_START",
@@ -158,7 +155,7 @@ let g = i()(async (e, t) => {
       channelId: e,
       categoryId: t
     })
-  }, v = async (e, t) => {
+  }, y = async (e, t) => {
     try {
       let n = await o.tn.get({
         url: d.ANM.DIRECTORY_CHANNEL_LIST_BY_ID(e),

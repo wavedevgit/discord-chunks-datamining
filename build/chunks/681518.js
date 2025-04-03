@@ -14,7 +14,7 @@ var a = r(120356),
   d = r(259674),
   u = r(981631),
   m = r(388032),
-  g = r(625234);
+  g = r(878003);
 let p = e => {
   var t;
   let {
@@ -57,7 +57,7 @@ let p = e => {
         children: m.NW.string(m.t["6jNp19"])
       }), (0, s.jsx)(c.Kx8, {
         autoFocus: !0,
-        value: null !== (t = r.description) && void 0 !== t ? t : "",
+        value: null != (t = r.description) ? t : "",
         placeholder: m.NW.string(m.t.Nvfows),
         onChange: e => {
           l.Z.updateGuild({

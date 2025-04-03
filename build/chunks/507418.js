@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => p
 }), n(301563);
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(512722),
   a = n.n(i),
-  o = n(83474),
-  l = n(245315),
+  l = n(83474),
+  o = n(245315),
   s = n(556041),
   c = n(347475),
   u = n(592125),
@@ -15,17 +15,17 @@ var i = n(512722),
 
 function p(e, t) {
   var n, i, p, m;
-  if ((0, l.cp)(t)) return (0, r.jsx)(s.Z, {});
+  if ((0, o.cp)(t)) return (0, r.jsx)(s.Z, {});
   if ((0, d.Z)(t)) {
-    let a = (null !== (i = null == t ? void 0 : null === (n = t.author) || void 0 === n ? void 0 : n.username) && void 0 !== i ? i : "").split(" ").slice(0, -1).join(" "),
+    let a = (null != (i = null == t || null == (n = t.author) ? void 0 : n.username) ? i : "").split(" ").slice(0, -1).join(" "),
       {
-        guild_id: l,
+        guild_id: o,
         channel_id: s,
         message_id: c
       } = t.messageReference;
-    if (null != l) return (0, r.jsx)(o.ZP, {
+    if (null != o) return (0, r.jsx)(l.ZP, {
       setPopoutRef: e.setPopoutRef,
-      guildId: l,
+      guildId: o,
       channelId: s,
       messageId: c,
       name: a

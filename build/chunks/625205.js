@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(392711),
   s = n.n(i),
   a = n(442837),
-  o = n(780384),
-  l = n(481060),
+  l = n(780384),
+  o = n(481060),
   c = n(846027),
   d = n(906732),
   u = n(687058),
@@ -19,38 +19,41 @@ var i = n(392711),
   f = n(962100),
   b = n(65154),
   N = n(388032),
-  x = n(815120),
-  _ = n(685786);
+  x = n(209782),
+  _ = n(20493);
 
 function E() {
-  let e, t;
-  let {
-    analyticsLocations: i
-  } = (0, d.ZP)(), E = (0, a.e7)([h.Z], () => h.Z.theme), {
-    canSetInputDevice: j,
-    canSetOutputDevice: O,
-    inputDeviceId: C,
-    outputDeviceId: v
-  } = (0, a.cj)([p.Z], () => ({
-    canSetInputDevice: p.Z.supports(b.AN.AUDIO_INPUT_DEVICE),
-    canSetOutputDevice: p.Z.supports(b.AN.AUDIO_OUTPUT_DEVICE),
-    inputDeviceId: p.Z.getInputDeviceId(),
-    outputDeviceId: p.Z.getOutputDeviceId()
-  })), S = (0, u.Z)(), T = (0, m.Z)();
-  j || (e = (0, r.jsx)(l.R94, {
-    type: l.R94.Types.DESCRIPTION,
+  let e, t, {
+      analyticsLocations: i
+    } = (0, d.ZP)(),
+    E = (0, a.e7)([h.Z], () => h.Z.theme),
+    {
+      canSetInputDevice: j,
+      canSetOutputDevice: O,
+      inputDeviceId: C,
+      outputDeviceId: S
+    } = (0, a.cj)([p.Z], () => ({
+      canSetInputDevice: p.Z.supports(b.AN.AUDIO_INPUT_DEVICE),
+      canSetOutputDevice: p.Z.supports(b.AN.AUDIO_OUTPUT_DEVICE),
+      inputDeviceId: p.Z.getInputDeviceId(),
+      outputDeviceId: p.Z.getOutputDeviceId()
+    })),
+    v = (0, u.Z)(),
+    T = (0, m.Z)();
+  j || (e = (0, r.jsx)(o.R94, {
+    type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
     children: N.NW.format(N.t["1iK6UV"], {
       onDownloadClick: () => (0, f.y)("Help Text Input Devices")
     })
-  })), O || (t = (0, r.jsx)(l.R94, {
-    type: l.R94.Types.DESCRIPTION,
+  })), O || (t = (0, r.jsx)(o.R94, {
+    type: o.R94.Types.DESCRIPTION,
     className: _.marginTop8,
     children: N.NW.format(N.t.Ow0dbG, {
       onDownloadClick: () => (0, f.y)("Help Text Output Devices")
     })
   }));
-  let I = s()(S).values().first(),
+  let I = s()(v).values().first(),
     y = null != I ? I.disabled : null != e,
     A = s()(T).values().first(),
     P = null != A ? A.disabled : null != t;
@@ -61,7 +64,7 @@ function E() {
       value: s
     } = e;
     if (g.Z.isCertified(s)) {
-      let e = (0, o.ap)(E) ? n(561259) : n(887695);
+      let e = (0, l.ap)(E) ? n(561259) : n(887695);
       t = (0, r.jsx)("img", {
         src: e,
         alt: "Certified",
@@ -84,15 +87,15 @@ function E() {
     className: x.devices,
     children: [(0, r.jsx)("div", {
       className: x.column,
-      children: (0, r.jsxs)(l.xJW, {
+      children: (0, r.jsxs)(o.xJW, {
         title: N.NW.string(N.t.hHMYbW),
-        children: [(0, r.jsx)(l.q4e, {
+        children: [(0, r.jsx)(o.q4e, {
           value: C,
           onChange: e => c.Z.setInputDevice(e, {
             location: "Settings",
             analyticsLocations: i
           }),
-          options: s().map(S, e => {
+          options: s().map(v, e => {
             let {
               id: t,
               name: n
@@ -109,10 +112,10 @@ function E() {
       })
     }), (0, r.jsx)("div", {
       className: x.column,
-      children: (0, r.jsxs)(l.xJW, {
+      children: (0, r.jsxs)(o.xJW, {
         title: N.NW.string(N.t.dl18zc),
-        children: [(0, r.jsx)(l.q4e, {
-          value: v,
+        children: [(0, r.jsx)(o.q4e, {
+          value: S,
           onChange: e => c.Z.setOutputDevice(e, {
             location: "Settings",
             analyticsLocations: i

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -6,25 +6,25 @@ var r = n(200651),
   i = n(192379),
   s = n(704215),
   a = n(481060),
-  o = n(906732),
-  l = n(243778),
+  l = n(906732),
+  o = n(243778),
   c = n(158947),
   d = n(318110),
   u = n(150039),
   m = n(993413),
   g = n(921944),
   p = n(388032),
-  h = n(802266);
+  h = n(388898);
 
 function f(e) {
   let {
     user: t
   } = e, {
     analyticsLocations: n
-  } = (0, o.ZP)(), f = t.nameplate, {
+  } = (0, l.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: N
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, l.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, o.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
     E(g.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })

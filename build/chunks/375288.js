@@ -1,6 +1,6 @@
 /** Chunk was on 3277 **/
 n.d(t, {
-  Z: () => o
+  Z: () => r
 });
 var i = n(99887),
   a = {
@@ -66,7 +66,10 @@ var i = n(99887),
       other: "लगभग {{count}} वर्ष"
     }
   };
-let o = function(e, t, n) {
-  var o, r = a[e];
-  return (o = "string" == typeof r ? r : 1 === t ? r.one : r.other.replace("{{count}}", (0, i.N4)(t)), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? o + "मे " : o + " पहले" : o
+let r = function(e, t, n) {
+  var r, o = a[e];
+  if (r = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", (0, i.N4)(t)), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return r + "मे ";
+    else return r + " पहले";
+  return r
 }

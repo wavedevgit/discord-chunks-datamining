@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(230711),
-  o = n(574755),
-  l = n(663389),
+  l = n(574755),
+  o = n(663389),
   c = n(309739),
   d = n(293389),
   u = n(327885),
@@ -16,11 +16,11 @@ var i = n(442837),
   g = n(332325),
   p = n(981631),
   h = n(388032),
-  f = n(296304);
+  f = n(881328);
 
 function b() {
   let e = (0, m.b)(),
-    t = (0, i.e7)([l.Z], () => l.Z.getSubsection()),
+    t = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     n = null != t && e.some(e => e.id === t) ? t : e[0].id;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6q, {
@@ -51,7 +51,7 @@ function b() {
     }), (() => {
       switch (n) {
         case g.Z.CLIPS:
-          return (0, r.jsx)(o.Z, {
+          return (0, r.jsx)(l.Z, {
             className: f.body,
             showHeader: !1
           });

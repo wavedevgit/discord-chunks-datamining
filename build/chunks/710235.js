@@ -25,7 +25,7 @@ let p = function(e) {
   }), g = o.useMemo(() => {
     var e;
     let n = t.config.messages.gameTitle,
-      o = (null === (e = t.userStatus) || void 0 === e ? void 0 : e.completedAt) != null;
+      o = (null == (e = t.userStatus) ? void 0 : e.completedAt) != null;
     return [{
       renderContent: () => (0, r.jsx)(c.y3, {
         children: u.NW.formatToPlainString(u.t["26nQp6"], {

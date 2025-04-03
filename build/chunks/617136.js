@@ -198,7 +198,7 @@ function D() {
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: y(E({}, l, N(r, o, a)), {
+      properties: y(E({}, (0, f.eE)(l), N(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s,

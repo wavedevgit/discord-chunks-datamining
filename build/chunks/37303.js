@@ -16,7 +16,7 @@ var l = n(497505),
   m = n(206044),
   p = n(266843),
   x = n(46140),
-  g = n(639723);
+  g = n(463910);
 
 function h(e) {
   let {
@@ -24,7 +24,7 @@ function h(e) {
     location: n,
     initiallyExpanded: h,
     contentPosition: f
-  } = e, [j, b] = s.useState(!1), C = s.useCallback(() => b(!0), []), v = s.useCallback(() => b(!1), []), N = (0, a.tP)(t), {
+  } = e, [j, b] = s.useState(!1), C = s.useCallback(() => b(!0), []), N = s.useCallback(() => b(!1), []), v = (0, a.tP)(t), {
     containerRef: y,
     size: O,
     height: T
@@ -56,15 +56,15 @@ function h(e) {
       className: g.questsCard,
       onFocus: C,
       onMouseEnter: C,
-      onBlur: v,
-      onMouseLeave: v,
+      onBlur: N,
+      onMouseLeave: N,
       children: (0, r.jsxs)("div", {
         ref: t => {
           e.current = t, y.current = t
         },
         children: [(0, r.jsx)(m.Z, {
           isFocused: j,
-          isQuestExpired: N,
+          isQuestExpired: v,
           location: n,
           quest: t,
           size: O,
@@ -76,7 +76,7 @@ function h(e) {
           toggleExpanded: w
         }), (0, r.jsx)(d.Z, {
           quest: t,
-          isQuestExpired: N,
+          isQuestExpired: v,
           location: n,
           size: O,
           isFocused: j,

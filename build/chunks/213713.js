@@ -29,8 +29,8 @@ var r = n(200651),
   O = n(650613),
   k = n(789086),
   E = n(206583),
-  w = n(400907),
-  P = n(890798);
+  w = n(403542),
+  P = n(616257);
 let I = [{
   key: "type",
   cellClassName: i()(w.cell, w.cellType),
@@ -74,7 +74,7 @@ function Z(e) {
   var t, n;
   let {
     type: a
-  } = e, l = (0, u.e7)([S.Z], () => S.Z.getFilters()), i = null !== (n = null == l ? void 0 : null === (t = l.types) || void 0 === t ? void 0 : t.has(a)) && void 0 !== n && n;
+  } = e, l = (0, u.e7)([S.Z], () => S.Z.getFilters()), i = null != (n = null == l || null == (t = l.types) ? void 0 : t.has(a)) && n;
   return (0, r.jsx)(x.XZJ, {
     value: i,
     onClick: function() {
@@ -106,22 +106,22 @@ function R() {
           entries: n
         }
       })
-    }(null == n ? void 0 : null === (e = n.entries) || void 0 === e ? void 0 : e.map(e => e.content)),
+    }(null == n || null == (e = n.entries) ? void 0 : e.map(e => e.content)),
     c = (0, u.e7)([S.Z], () => {
       var e;
-      return (null === (e = S.Z.getFeedState(E.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.loading) === !0
+      return (null == (e = S.Z.getFeedState(E.YN.GLOBAL_FEED)) ? void 0 : e.loading) === !0
     }),
     [Z, R] = a.useState(""),
     D = (0, u.e7)([j.Z, p.Z], () => {
       var e, t, n;
-      return parseInt(Z) > 0 ? Z : null !== (n = null === (e = j.Z.getGameByName(Z)) || void 0 === e ? void 0 : e.id) && void 0 !== n ? n : null === (t = p.Z.getApplicationByName(Z)) || void 0 === t ? void 0 : t.id
+      return parseInt(Z) > 0 ? Z : null != (n = null == (e = j.Z.getGameByName(Z)) ? void 0 : e.id) ? n : null == (t = p.Z.getApplicationByName(Z)) ? void 0 : t.id
     }, [Z]),
     A = (0, v.Z)({
       applicationId: D,
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
-    B = Object.entries(null !== (t = m.K.get("GameProfileModal")) && void 0 !== t ? t : {}).filter(e => {
+    B = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {

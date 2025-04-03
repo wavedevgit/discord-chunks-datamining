@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,14 +19,14 @@ var r = n(200651),
   b = n(82965),
   _ = n(643720),
   C = n(127379),
-  v = n(981631),
-  y = n(535780);
-let x = e => {
+  y = n(981631),
+  x = n(393740);
+let v = e => {
   let {
     channel: t,
     className: n,
     whichPopoutIsOpen: l,
-    setWhichPopoutIsOpen: x
+    setWhichPopoutIsOpen: v
   } = e, {
     isHovered: j,
     setIsHovered: O,
@@ -53,8 +53,8 @@ let x = e => {
   }, [P, w, E]), U = i.useCallback(() => {
     P || N()
   }, [N, P]), B = i.useCallback((e, t) => {
-    I(), S(!P), l === C.D.EMOJI ? null == x || x(void 0) : null == x || x(C.D.EMOJI), (!j || P) && (null == t || t(e))
-  }, [I, P, j, x, l]), H = (j || P) && (l === C.D.EMOJI || null == l);
+    I(), S(!P), l === C.D.EMOJI ? null == v || v(void 0) : null == v || v(C.D.EMOJI), (!j || P) && (null == t || t(e))
+  }, [I, P, j, v, l]), H = (j || P) && (l === C.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
     shouldShow: H,
     animation: M ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
@@ -63,7 +63,7 @@ let x = e => {
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      O(!1), S(!1), null == x || x(void 0)
+      O(!1), S(!1), null == v || v(void 0)
     },
     renderPopout: e => {
       let {
@@ -88,9 +88,9 @@ let x = e => {
         color: P ? k ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
         totalCooldownSeconds: T,
         remainingCooldownSeconds: A,
-        className: o()(!M && y.controlButton, n),
+        className: o()(!M && x.controlButton, n),
         onKeyDown: e => {
-          e.keyCode === v.yXg.ENTER && e.keyCode === v.yXg.SPACE && B(e, i)
+          e.keyCode === y.yXg.ENTER && e.keyCode === y.yXg.SPACE && B(e, i)
         },
         onClick: e => {
           (0, d.v)(D, d.d.EMOJI), B(e, t)

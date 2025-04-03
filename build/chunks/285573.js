@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(442837),
   s = n(239091),
   c = n(146773),
@@ -16,15 +16,15 @@ var r = n(200651),
   f = n(473403),
   g = n(981631),
   m = n(490897),
-  b = n(779635);
-let v = (0, c.B)(function(e) {
+  b = n(915887);
+let y = (0, c.B)(function(e) {
   let {
     guild: t,
-    selectedChannelId: o,
+    selectedChannelId: l,
     position: c,
-    disableManageChannels: v,
-    sorting: y,
-    sortingType: _,
+    disableManageChannels: y,
+    sorting: _,
+    sortingType: v,
     sortingPosition: O,
     connectChannelDragSource: j,
     connectChannelDropTarget: x,
@@ -32,7 +32,7 @@ let v = (0, c.B)(function(e) {
   } = e, S = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
-  }), P = (0, a.e7)([u.Z], () => u.Z.getChannel(null == S ? void 0 : S.parent_id)), I = o === (null == S ? void 0 : S.id), N = (0, a.e7)([p.Z], () => null != P ? p.Z.can(g.Plq.MANAGE_CHANNELS, P) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
+  }), P = (0, a.e7)([u.Z], () => u.Z.getChannel(null == S ? void 0 : S.parent_id)), I = l === (null == S ? void 0 : S.id), N = (0, a.e7)([p.Z], () => null != P ? p.Z.can(g.Plq.MANAGE_CHANNELS, P) : null != t && p.Z.can(g.Plq.MANAGE_CHANNELS, t)), Z = i.useCallback(e => {
     null != S && (0, s.jW)(e, async () => {
       let {
         default: e
@@ -73,9 +73,9 @@ let v = (0, c.B)(function(e) {
   }, [S]);
   if (null == S) return null;
   let w = (0, h.jo)(c, O),
-    E = (0, h.CN)(S, y, _),
+    E = (0, h.CN)(S, _, v),
     T = (0, r.jsx)("div", {
-      className: l()(w, {
+      className: o()(w, {
         [b.disabled]: E,
         [b.selected]: I
       }),
@@ -93,7 +93,7 @@ let v = (0, c.B)(function(e) {
           tabIndex: C
         }), (0, r.jsx)(h.hR, {
           channel: S,
-          disableManageChannels: v,
+          disableManageChannels: y,
           tabIndex: C
         })]
       })

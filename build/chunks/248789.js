@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Y: () => _
 }), n(47120);
@@ -53,26 +53,26 @@ function _(e) {
     channelId: t,
     warningId: _,
     senderId: C
-  } = e, v = i.useCallback(() => {
+  } = e, y = i.useCallback(() => {
     (0, u.T)(t, [_])
-  }, [t, _]), y = (0, o.e7)([c.Z], () => c.Z.isBlocked(C)), x = i.useMemo(() => ({
+  }, [t, _]), x = (0, o.e7)([c.Z], () => c.Z.isBlocked(C)), v = i.useMemo(() => ({
     channelId: t,
     warningId: _,
     senderId: C,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
   }), [t, _, C]);
   i.useEffect(() => {
-    (0, p.KQ)(b(g({}, x), {
+    (0, p.KQ)(b(g({}, v), {
       viewName: p.pb.SAFETY_WARNING_BANNER
     })), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [x]);
+  }, [v]);
   let j = i.useCallback(e => {
-      (0, p.qc)(b(g({}, x), {
+      (0, p.qc)(b(g({}, v), {
         cta: e
       }))
-    }, [x]),
+    }, [v]),
     O = i.useCallback(() => {
       (0, a.ZDy)(async () => {
         let {
@@ -97,11 +97,11 @@ function _(e) {
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
     }, [t, C, _, j]),
     E = i.useCallback(() => {
-      v(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
-    }, [v, j]),
+      y(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
+    }, [y, j]),
     N = i.useCallback(() => {
-      v(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
-    }, [v, j]),
+      y(), j(p.NM.USER_BANNER_BLOCK_AND_REPORT_CONFIRM)
+    }, [y, j]),
     I = i.useCallback(() => {
       (0, a.ZDy)(async () => {
         let {
@@ -133,12 +133,12 @@ function _(e) {
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.NW.string(m.t.ZzlB5u),
     description: m.NW.string(m.t["D1aU+v"]),
-    onDismiss: v,
+    onDismiss: y,
     buttons: [{
       text: m.NW.string(m.t.Qyu4UF),
       color: a.zxk.Colors.BRAND,
       onclick: O
-    }, ...y ? [] : [{
+    }, ...x ? [] : [{
       text: m.NW.string(m.t["7q0bNT"]),
       color: a.zxk.Colors.PRIMARY,
       onclick: I

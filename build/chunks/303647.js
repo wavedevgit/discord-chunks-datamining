@@ -10,7 +10,7 @@ var i = a(200651),
   c = a(99325),
   o = a(75666),
   d = a(388032),
-  u = a(579443);
+  u = a(685554);
 
 function h(e) {
   var t, a;
@@ -18,7 +18,7 @@ function h(e) {
     transitionState: h,
     onClose: m,
     entry: x
-  } = e, [b, p] = n.useState(null !== (t = x.description) && void 0 !== t ? t : ""), [g, N] = n.useState(null !== (a = x.primaryCategoryId) && void 0 !== a ? a : o.AR.UNCATEGORIZED), [I, j] = n.useState(!1), [k, _] = n.useState(null), f = async () => {
+  } = e, [b, p] = n.useState(null != (t = x.description) ? t : ""), [g, N] = n.useState(null != (a = x.primaryCategoryId) ? a : o.AR.UNCATEGORIZED), [I, j] = n.useState(!1), [k, _] = n.useState(null), f = async () => {
     if (_(null), b !== x.description || g !== x.primaryCategoryId) {
       j(!0);
       try {

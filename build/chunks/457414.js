@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   S: () => c,
@@ -34,7 +34,7 @@ let c = e => {
   },
   u = (e, t) => {
     var n;
-    return null !== (n = null == t ? void 0 : t.name) && void 0 !== n ? n : a.I6[e].getDefaultRuleName()
+    return null != (n = null == t ? void 0 : t.name) ? n : a.I6[e].getDefaultRuleName()
   },
   m = (e, t) => {
     if ((0, s.Vb)(t) && (0, s.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.NW.formatToPlainString(o.t.xZUvxc, {
@@ -80,10 +80,10 @@ let c = e => {
 function f(e, t) {
   var n, i, s, a, l;
   return null != e && d(e) ? {
-    headerText: null !== (n = u(e, t)) && void 0 !== n ? n : "",
-    headerSubtext: null !== (i = m(e, t)) && void 0 !== i ? i : "",
-    descriptionText: null !== (s = g(e)) && void 0 !== s ? s : "",
-    descriptionSubtext: null !== (a = p(e)) && void 0 !== a ? a : "",
-    icon: null !== (l = h(e)) && void 0 !== l ? l : r.xPt
+    headerText: null != (n = u(e, t)) ? n : "",
+    headerSubtext: null != (i = m(e, t)) ? i : "",
+    descriptionText: null != (s = g(e)) ? s : "",
+    descriptionSubtext: null != (a = p(e)) ? a : "",
+    icon: null != (l = h(e)) ? l : r.xPt
   } : null
 }

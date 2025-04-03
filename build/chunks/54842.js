@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => R
@@ -17,12 +17,12 @@ var r = n(200651),
   p = n(981631),
   h = n(190378),
   f = n(388032),
-  b = n(691374),
+  b = n(239721),
   x = n(438825),
   j = n(236140),
   N = n(37069),
-  v = n(518513),
-  _ = n(168179),
+  _ = n(518513),
+  v = n(168179),
   C = n(348986),
   O = n(930065),
   y = n(345669);
@@ -104,12 +104,12 @@ let S = () => [{
     faded: !0,
     rightAlign: !0
   }, {
-    iconSrc: v,
+    iconSrc: _,
     name: "Learn Latin",
     position: [-280, -30],
     faded: !0
   }, {
-    iconSrc: _,
+    iconSrc: v,
     name: "r/leagueoflegends",
     position: [-320, -30],
     rightAlign: !0
@@ -187,7 +187,7 @@ let S = () => [{
   R = e => {
     let {
       guild: t
-    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, v] = i.useState(), _ = (0, l.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), C = null == N ? void 0 : N.offsetWidth, O = null == N ? void 0 : N.offsetHeight;
+    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, _] = i.useState(), v = (0, l.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), C = null == N ? void 0 : N.offsetWidth, O = null == N ? void 0 : N.offsetHeight;
     i.useEffect(() => {
       null != C && s(C / 2), null != O && o(O / 2)
     }, [C, O, s, o]), i.useEffect(() => {
@@ -200,7 +200,7 @@ let S = () => [{
       className: b.container,
       children: [(0, r.jsxs)("div", {
         className: b.banner,
-        ref: e => v(e),
+        ref: e => _(e),
         children: [T.map(e => (0, r.jsx)(w, E(I({}, e), {
           imageCoordinates: [n, a]
         }), e.name)), (0, r.jsx)("img", {
@@ -224,12 +224,12 @@ let S = () => [{
           helpdeskArticle: g.Z.getArticleURL(p.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
         })
       }), (0, r.jsx)(c.ua7, {
-        text: _ ? null : f.NW.string(f.t["pjG+T0"]),
-        "aria-label": _ ? void 0 : f.NW.string(f.t["pjG+T0"]),
+        text: v ? null : f.NW.string(f.t["pjG+T0"]),
+        "aria-label": v ? void 0 : f.NW.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)(c.zxk, E(I({
           onClick: y,
           className: b.button,
-          disabled: !_
+          disabled: !v
         }, e), {
           children: f.NW.string(f.t.LhlgY2)
         }))

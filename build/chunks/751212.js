@@ -38,7 +38,7 @@ var i = n(200651),
   R = n(981631),
   w = n(969943),
   G = n(388032),
-  D = n(696766);
+  D = n(529651);
 
 function U(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ class B extends s.PureComponent {
       let e = i.contentDomRef.current;
       if (null != this._scroller && (0, d.k)(e, HTMLElement)) {
         var s;
-        null === (s = this._scroller) || void 0 === s || s.scrollIntoViewNode({
+        null == (s = this._scroller) || s.scrollIntoViewNode({
           node: e,
           animate: !0,
           padding: 20,
@@ -178,7 +178,7 @@ class B extends s.PureComponent {
       muted: t,
       muteConfig: n,
       guild: s
-    } = this.props, l = null !== (e = null == n ? void 0 : n.selected_time_window) && void 0 !== e ? e : w.Oe.ALWAYS;
+    } = this.props, l = null != (e = null == n ? void 0 : n.selected_time_window) ? e : w.Oe.ALWAYS;
     return null == s ? null : (0, i.jsxs)(h.xJW, {
       className: D.largeSpacing,
       children: [(0, i.jsx)(h.j7V, {

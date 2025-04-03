@@ -47,7 +47,7 @@ t.exports = {
       r = [];
     return (Array.isArray(e) || o(!1), Array.isArray(e) && e.length) ? (a(e, function(t) {
       var e = n({}, t);
-      (!u(t) || (e.depth = e.depth || 0, s(t), null == t.children || !(t.children.length > 0))) && (delete e.children, r.push(e))
+      u(t) && (e.depth = e.depth || 0, s(t), null != t.children && t.children.length > 0) || (delete e.children, r.push(e))
     }), t.blocks = r, n({}, t, {
       blocks: r
     })) : t
@@ -61,10 +61,7 @@ t.exports = {
         s = n({}, t, {
           children: []
         });
-      if (!o) {
-        e.push(s);
-        return
-      }
+      if (!o) return void e.push(s);
       var c = r[0];
       if (null == c && 0 === a) e.push(s);
       else if (null == c || c.depth < a - 1) {

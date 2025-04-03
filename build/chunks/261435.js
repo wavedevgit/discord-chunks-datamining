@@ -174,7 +174,7 @@ let ec = new ea(a.Z, {
     let {
       nudges: n
     } = e;
-    if (N.default.hasChangedRenderMode(null !== (t = L.default.getFocusedPID()) && void 0 !== t ? t : (0, B.getPID)())) return;
+    if (N.default.hasChangedRenderMode(null != (t = L.default.getFocusedPID()) ? t : (0, B.getPID)())) return;
     let i = function(e) {
       switch (e.type) {
         case H.nc.OOP_WELCOME:
@@ -208,9 +208,9 @@ let ec = new ea(a.Z, {
     let {
       channelId: r,
       message: o
-    } = e, l = _.Z.getChannel(r), a = A.default.getUser(null === (t = o.author) || void 0 === t ? void 0 : t.id);
+    } = e, l = _.Z.getChannel(r), a = A.default.getUser(null == (t = o.author) ? void 0 : t.id);
     if (null == l || null == a) return !1;
-    if ((null === (n = o.activity) || void 0 === n ? void 0 : n.type) === G.mFx.JOIN || (null === (i = o.activity) || void 0 === i ? void 0 : i.type) === G.mFx.JOIN_REQUEST) {
+    if ((null == (n = o.activity) ? void 0 : n.type) === G.mFx.JOIN || (null == (i = o.activity) ? void 0 : i.type) === G.mFx.JOIN_REQUEST) {
       if (!(0, b.eF)(o, r, !0, !0)) return !1;
       let e = function(e, t, n) {
         let i, r;
@@ -309,7 +309,7 @@ let ec = new ea(a.Z, {
     let {
       contentInventoryEntries: n
     } = e;
-    if (0 === n.length || Z.Z.isNotificationDisabled(E.OverlayNotificationDisabledSetting.GAME_ACTIVITY) || N.default.hasChangedRenderMode(null !== (t = L.default.getFocusedPID()) && void 0 !== t ? t : (0, B.getPID)())) return;
+    if (0 === n.length || Z.Z.isNotificationDisabled(E.OverlayNotificationDisabledSetting.GAME_ACTIVITY) || N.default.hasChangedRenderMode(null != (t = L.default.getFocusedPID()) ? t : (0, B.getPID)())) return;
     let i = F.Z.getGame();
     if (null == i) return;
     let {

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => s
 });
@@ -10,8 +10,8 @@ function s(e) {
   var t, n, {
       width: s = 80,
       height: a = 20,
-      color: o = "currentColor",
-      foreground: l
+      color: l = "currentColor",
+      foreground: o
     } = e,
     c = function(e, t) {
       if (null == e) return {};
@@ -56,8 +56,8 @@ function s(e) {
       children: (0, r.jsx)("path", {
         d: "m0 0h8v20h-8zm4 2c-1.1045695 0-2 .8954305-2 2v12c0 1.1045695.8954305 2 2 2s2-.8954305 2-2v-12c0-1.1045695-.8954305-2-2-2z",
         fillRule: "evenodd",
-        fill: o,
-        className: l
+        fill: l,
+        className: o
       })
     }), (0, r.jsx)("rect", {
       fill: "url(#pill-frame-pattern)",

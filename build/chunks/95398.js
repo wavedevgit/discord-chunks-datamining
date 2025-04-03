@@ -378,7 +378,9 @@ class A extends i.PureComponent {
       } = this.props;
       null != n && n()
     }), g(this, "handleToggleObscurity", e => {
-      if (e.stopPropagation(), e.nativeEvent.stopPropagation(), this.props.shouldAgeVerify) return void c.Z.showAgeVerificationGetStartedModal(u.cU.OBSCURED_MEDIA);
+      if (e.stopPropagation(), e.nativeEvent.stopPropagation(), (0, f.Jl)({
+          obscure: this.state.visible
+        }), this.props.shouldAgeVerify) return void c.Z.showAgeVerificationGetStartedModal(u.cU.OBSCURED_MEDIA);
       let {
         onToggleObscurity: t
       } = this.props;

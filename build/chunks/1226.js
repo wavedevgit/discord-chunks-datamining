@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   BO: () => u,
   cq: () => p,
@@ -49,7 +49,7 @@ let c = (0, o.H)(() => ({
 function u(e) {
   var t, n;
   let i = (0, l.V9)(e);
-  return null !== (n = null === (t = c.useState(e => e.streams, r())[i]) || void 0 === t ? void 0 : t.zoom) && void 0 !== n ? n : 100
+  return null != (n = null == (t = c.useState(e => e.streams, r())[i]) ? void 0 : t.zoom) ? n : 100
 }
 
 function d(e) {
@@ -64,7 +64,7 @@ function p(e, t) {
       streams: s(a({}, e.streams), {
         [n]: {
           zoom: t,
-          fitOverride: null === (i = e.streams[n]) || void 0 === i ? void 0 : i.fitOverride
+          fitOverride: null == (i = e.streams[n]) ? void 0 : i.fitOverride
         }
       })
     })
@@ -78,7 +78,7 @@ function h(e, t) {
     return s(a({}, e), {
       streams: s(a({}, e.streams), {
         [n]: {
-          zoom: null === (i = e.streams[n]) || void 0 === i ? void 0 : i.zoom,
+          zoom: null == (i = e.streams[n]) ? void 0 : i.zoom,
           fitOverride: t
         }
       })
@@ -89,5 +89,5 @@ function h(e, t) {
 function f(e) {
   var t;
   let n = (0, l.V9)(e);
-  return null === (t = c.useState(e => e.streams, r())[n]) || void 0 === t ? void 0 : t.fitOverride
+  return null == (t = c.useState(e => e.streams, r())[n]) ? void 0 : t.fitOverride
 }

@@ -66,8 +66,8 @@ class u {
   toJSON() {
     var t, e;
     return Object.assign({}, this.data, {
-      delegatedTo: (null === (t = this.data.delegatedTo) || void 0 === t ? void 0 : t.email()) || null,
-      delegatedFrom: (null === (e = this.data.delegatedFrom) || void 0 === e ? void 0 : e.email()) || null,
+      delegatedTo: (null == (t = this.data.delegatedTo) ? void 0 : t.email()) || null,
+      delegatedFrom: (null == (e = this.data.delegatedFrom) ? void 0 : e.email()) || null,
       x: this.x()
     })
   }

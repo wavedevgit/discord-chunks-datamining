@@ -45,13 +45,10 @@ async function j(e, t) {
   let n = a.Z.getEnabled(e),
     s = Array.from(f.Z.editedDefaultChannelIds).filter(e => null != N.Z.getChannel(e)),
     [o, d] = (0, c.d9)(e, [...s]);
-  if (n && t === x.Un.ONBOARDING_DEFAULT && (d.length < x.md || o.length < x.X)) {
-    r.Z.show({
-      title: T.NW.string(T.t.iLdiqa),
-      body: T.NW.string(T.t.JOT74e)
-    });
-    return
-  }
+  if (n && t === x.Un.ONBOARDING_DEFAULT && (d.length < x.md || o.length < x.X)) return void r.Z.show({
+    title: T.NW.string(T.t.iLdiqa),
+    body: T.NW.string(T.t.JOT74e)
+  });
   try {
     await (0, p.n_)(e, {
       mode: t
@@ -61,7 +58,7 @@ async function j(e, t) {
     let {
       fieldName: e,
       error: t
-    } = null !== (u = new i.Z(n).getAnyErrorMessageAndField()) && void 0 !== u ? u : {};
+    } = null != (u = new i.Z(n).getAnyErrorMessageAndField()) ? u : {};
     r.Z.show({
       title: T.NW.string(T.t.iLdiqa),
       body: [e, t].filter(I.lm).join(": ")

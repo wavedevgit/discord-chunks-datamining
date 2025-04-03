@@ -22,7 +22,7 @@ function d(e) {
     onClose: m
   } = e, b = (0, s.K)(t, n, d), p = (0, s.b)(t, n, f), {
     reportFalsePositive: h,
-    isReportFalsePositiveLoading: v
+    isReportFalsePositiveLoading: y
   } = (0, o.$)({
     onSuccess: () => (0, c.s)(m),
     onError: () => {
@@ -35,7 +35,7 @@ function d(e) {
   return b.length > 0 || p.length > 0 || m(), (0, r.jsx)(c.$, {
     messageId: n,
     channelId: t,
-    isReportFalsePositiveLoading: v,
+    isReportFalsePositiveLoading: y,
     analyticsContext: a.UU.EXPLICIT_MEDIA_OBSCURED_FALSE_POSITIVE_FLOW,
     onConfirmPress: h,
     attachmentPreview: 1 === b.length && 0 === p.length ? b[0] : void 0,

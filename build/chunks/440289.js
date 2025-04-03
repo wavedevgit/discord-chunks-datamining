@@ -68,5 +68,8 @@ var a = {
   r = ["noll", "en", "tv\xe5", "tre", "fyra", "fem", "sex", "sju", "\xe5tta", "nio", "tio", "elva", "tolv"];
 let i = function(e, t, n) {
   var i, o = a[e];
-  return (i = "string" == typeof o ? o : 1 === t ? o.one : n && n.onlyNumeric ? o.other.replace("{{count}}", String(t)) : o.other.replace("{{count}}", t < 13 ? r[t] : String(t)), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? "om " + i : i + " sedan" : i
+  if (i = "string" == typeof o ? o : 1 === t ? o.one : n && n.onlyNumeric ? o.other.replace("{{count}}", String(t)) : o.other.replace("{{count}}", t < 13 ? r[t] : String(t)), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return "om " + i;
+    else return i + " sedan";
+  return i
 }

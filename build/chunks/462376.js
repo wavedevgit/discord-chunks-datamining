@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 n.d(t, {
   d: () => S,
-  k: () => f
+  k: () => j
 }), n(47120);
 var l = n(200651),
   i = n(192379),
@@ -15,13 +15,13 @@ var l = n(200651),
   h = n(751771),
   g = n(699516),
   m = n(594174),
-  v = n(768581),
-  x = n(624138),
+  x = n(768581),
+  v = n(624138),
   p = n(51144),
   N = n(388032),
-  I = n(478740);
+  I = n(821022);
 
-function j(e, t, n) {
+function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,32 +29,34 @@ function j(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let f = 44;
+let j = 44;
 class S extends i.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
   renderUserOrChannel() {
-    let e, t, n;
-    let {
+    let e, t, n, {
       user: i,
       channel: s
     } = this.props;
     if (null != i) t = i.getAvatarURL(null == s ? void 0 : s.guild_id, 32), n = p.ZP.getName(i);
     else if (null != s && (t = (0, o.x)(s), n = (0, d.F6)(s, m.default, g.Z), null == t && null != s.guild_id)) {
       let n = c.Z.getGuild(s.guild_id);
-      null != n && (null != n.icon ? t = v.ZP.getGuildIconURL({
+      null != n && (null != n.icon ? t = x.ZP.getGuildIconURL({
         id: s.guild_id,
         icon: n.icon,
         size: 32
-      }) : e = (0, x.Zg)(n.name))
+      }) : e = (0, v.Zg)(n.name))
     }
-    return null == t || null == n ? null != e ? (0, l.jsx)(r.Text, {
-      variant: "text-md/medium",
-      className: I.acronym,
-      "aria-hidden": !0,
-      children: e
-    }) : null : (0, l.jsx)(r.qEK, {
+    if (null == t || null == n)
+      if (null != e) return (0, l.jsx)(r.Text, {
+        variant: "text-md/medium",
+        className: I.acronym,
+        "aria-hidden": !0,
+        children: e
+      });
+      else return null;
+    return (0, l.jsx)(r.qEK, {
       src: t,
       "aria-label": n,
       size: r.EFr.SIZE_32,
@@ -62,15 +64,15 @@ class S extends i.Component {
     })
   }
   render() {
-    let e;
-    let {
-      user: t,
-      channel: n
-    } = this.props, {
-      sending: i,
-      invited: a,
-      hovered: o
-    } = this.state;
+    let e, {
+        user: t,
+        channel: n
+      } = this.props,
+      {
+        sending: i,
+        invited: a,
+        hovered: o
+      } = this.state;
     return e = a ? (0, l.jsx)(r.zxk, {
       look: r.zxk.Looks.LINK,
       size: r.zxk.Sizes.SMALL,
@@ -99,25 +101,25 @@ class S extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "state", {
+    super(...e), f(this, "state", {
       sending: !1,
       invited: !1,
       hovered: !1
-    }), j(this, "handleMouseEnter", () => {
+    }), f(this, "handleMouseEnter", () => {
       this.setState({
         hovered: !0
       })
-    }), j(this, "handleMouseLeave", () => {
+    }), f(this, "handleMouseLeave", () => {
       this.setState({
         hovered: !1
       })
-    }), j(this, "getSuggestedProps", () => {
+    }), f(this, "getSuggestedProps", () => {
       var e;
       let {
         row: t
       } = this.props;
-      return null !== (e = null != t ? h.Z.getSelectedInviteMetadata(t) : null) && void 0 !== e ? e : null
-    }), j(this, "handleClickInvite", () => {
+      return null != (e = null != t ? h.Z.getSelectedInviteMetadata(t) : null) ? e : null
+    }), f(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

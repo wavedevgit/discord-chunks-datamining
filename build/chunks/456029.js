@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(772848),
-  i = n(442837),
-  a = n(481060),
+  a = n(442837),
+  i = n(481060),
   c = n(359013),
   l = n(120421),
   u = n(284539),
@@ -16,11 +16,11 @@ var r = n(200651),
   m = n(81829),
   g = n(892689),
   b = n(477839),
-  y = n(884479),
+  y = n(622802),
   h = n(388032),
-  v = n(150837),
-  x = n(255785),
-  N = n(938998);
+  x = n(81050),
+  N = n(255785),
+  v = n(938998);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function O(e) {
   }
   return e
 }
-let j = n(917680),
+let j = n(748549),
   Z = [b.FK.WEED];
 
 function _(e) {
@@ -49,12 +49,12 @@ function _(e) {
     height: _,
     width: P,
     isPaused: C
-  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(), I = (0, i.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null !== (t = M.count) && void 0 !== t ? t : 0;
+  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(), I = (0, a.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null != (t = M.count) ? t : 0;
   (0, d.Z)(Z, R);
   let A = (0, p.eR)(j),
     T = e => {
       var t;
-      null === (t = S.current) || void 0 === t || t.removeDrop(e), A(), W({
+      null == (t = S.current) || t.removeDrop(e), A(), W({
         count: R + 1
       })
     },
@@ -66,14 +66,14 @@ function _(e) {
     isPaused: C,
     itemId: b.yN.WEEDS,
     chance: .2,
-    points: null !== (n = k.points) && void 0 !== n ? n : 0,
+    points: null != (n = k.points) ? n : 0,
     height: _,
     width: P,
     dropPadding: 60,
     onPointsAdded: () => {
       var e, t, n;
       E((t = O({}, w), n = n = {
-        [(0, o.Z)()]: null !== (e = k.points) && void 0 !== e ? e : 0
+        [(0, o.Z)()]: null != (e = k.points) ? e : 0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -89,12 +89,12 @@ function _(e) {
       children: [(0, r.jsx)(m.Z, {
         renderedPoints: w,
         onRemovePoint: L
-      }), (0, r.jsx)(a.P3F, {
+      }), (0, r.jsx)(i.P3F, {
         onClick: () => T(e),
-        className: v.clickable,
+        className: x.clickable,
         children: (0, r.jsx)(f.Z, {
-          sources: [x, N],
-          className: v.weed,
+          sources: [N, v],
+          className: x.weed,
           "aria-label": h.NW.string(y.Z.QBujOj),
           isPaused: C,
           interval: 1e3

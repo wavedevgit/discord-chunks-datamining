@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(48026),
-  l = n(481060),
+  l = n(48026),
+  o = n(481060),
   c = n(975298),
   d = n(695349),
   u = n(314684),
@@ -18,14 +18,14 @@ var r = n(200651),
   f = n(391110),
   b = n(75077),
   N = n(320319),
-  x = n(816617);
+  x = n(847408);
 let _ = e => {
     let {
       showAllPerksButton: t,
       leftAlignHeaders: n,
       title: i,
       headerClassname: s
-    } = e, a = (0, r.jsx)(l.X6q, {
+    } = e, a = (0, r.jsx)(o.X6q, {
       variant: "heading-xxl/extrabold",
       color: "header-primary",
       className: null != s ? s : x.heading,
@@ -54,8 +54,8 @@ let _ = e => {
       leftAlignHeaders: j = !1,
       showAllPerksButton: O,
       headerClassname: C,
-      isFullScreen: v = !0,
-      shouldAutoScroll: S = !1
+      isFullScreen: S = !0,
+      shouldAutoScroll: v = !1
     } = e, T = i.useRef(null), I = (0, u.Er)(), y = (0, m.v)(I), A = s === f.R0.WHATS_NEW, P = (0, u.IY)(), R = (0, p.x)();
     i.useEffect(() => {
       A && !y && (P(), R())
@@ -66,7 +66,7 @@ let _ = e => {
       Z = y && A;
     (0, g.r)({
       ref: T,
-      shouldScroll: Z || S,
+      shouldScroll: Z || v,
       onScrollEnd: D,
       onCleanup: D
     });
@@ -80,7 +80,7 @@ let _ = e => {
       M = (0, b.sP)({
         perksCards: k,
         variant: s,
-        isFullScreen: v,
+        isFullScreen: S,
         showTenureCard: null == I ? void 0 : I.showCard,
         isPremiumSubscriber: W,
         fractionalState: L,
@@ -88,9 +88,9 @@ let _ = e => {
       }),
       U = M.some(e => null != e.pillText),
       [V, G] = i.useState(null),
-      F = i.useRef(new o.qA);
+      F = i.useRef(new l.qA);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(null == k ? void 0 : null === (t = k.tenureRewardCollectible) || void 0 === t ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(o.O_, {
+      children: [(null == k || null == (t = k.tenureRewardCollectible) ? void 0 : t.name) === h.u.TENURE_REWARD_COLLECTIBLE && (0, r.jsx)(l.O_, {
         ref: G,
         className: x.confettiCanvas,
         environment: F.current
@@ -105,7 +105,7 @@ let _ = e => {
           leftAlignHeaders: j,
           title: w.title,
           headerClassname: C
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
           className: a()(x.subtitle, {
@@ -122,8 +122,8 @@ let _ = e => {
           children: O
         }), (0, r.jsx)("div", {
           className: a()({
-            [x.cardContainer]: v,
-            [x.cardContainerNarrowWidth]: !v
+            [x.cardContainer]: S,
+            [x.cardContainerNarrowWidth]: !S
           }),
           children: M.map((e, t) => {
             var n, i;

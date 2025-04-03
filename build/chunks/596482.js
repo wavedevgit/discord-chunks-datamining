@@ -13,11 +13,11 @@ var r = n(200651),
   d = n(226192),
   C = n(223606),
   m = n(388032),
-  b = n(485519);
+  b = n(708210);
 
 function p(e) {
   var t;
-  if (null == (null !== (t = e.dmsDisabledUntil) && void 0 !== t ? t : e.invitesDisabledUntil)) return "";
+  if (null == (null != (t = e.dmsDisabledUntil) ? t : e.invitesDisabledUntil)) return "";
   let n = null != e.dmsDisabledUntil,
     r = null != e.invitesDisabledUntil;
   switch (!0) {
@@ -38,7 +38,7 @@ function f(e) {
     onHandleEnableLockdown: n,
     onHandleReportFalseAlarm: l,
     incidentData: i
-  } = e, s = null !== (t = i.raidDetectedAt) && void 0 !== t ? t : i.dmSpamDetectedAt;
+  } = e, s = null != (t = i.raidDetectedAt) ? t : i.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
     className: b.subheaderContainer,
     children: [(0, r.jsxs)("div", {

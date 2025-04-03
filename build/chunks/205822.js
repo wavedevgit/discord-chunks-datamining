@@ -11,8 +11,8 @@ var n = r(200651),
   a = r(310752),
   s = r(531643),
   c = r(388032),
-  f = r(421957),
-  p = r(591775);
+  f = r(948979),
+  p = r(565128);
 
 function Z(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ class d extends h.Component {
     }), Z(this, "dragOverTimeout", null), Z(this, "elementDOMRef", h.createRef()), Z(this, "isAllDropFiles", e => {
       for (let r = 0; r < e.length; r++) try {
         var t;
-        let n = null !== (t = e[r].webkitGetAsEntry()) && void 0 !== t ? t : e[r].getAsEntry();
+        let n = null != (t = e[r].webkitGetAsEntry()) ? t : e[r].getAsEntry();
         if (null == n) return u.warn("Dropped item is null or undefined"), !1;
         if (!n.isFile) return !1
       } catch (e) {}
@@ -119,8 +119,8 @@ class d extends h.Component {
       if (!this.preventUnwantedDrop(e)) return !1;
       let h = e.dataTransfer;
       if (null != h) {
-        if ("move" === h.effectAllowed ? h.dropEffect = "move" : h.dropEffect = "copy", (0, l.nfh)(s.A) && (0, l.Mr3)(s.A), e.stopPropagation(), e.preventDefault(), null === (t = (r = this.props).onDragOver) || void 0 === t || t.call(r, e), !this.state.isDragging) {
-          let e = null === (n = this.elementDOMRef.current) || void 0 === n ? void 0 : n.ownerDocument.defaultView;
+        if ("move" === h.effectAllowed ? h.dropEffect = "move" : h.dropEffect = "copy", (0, l.nfh)(s.A) && (0, l.Mr3)(s.A), e.stopPropagation(), e.preventDefault(), null == (t = (r = this.props).onDragOver) || t.call(r, e), !this.state.isDragging) {
+          let e = null == (n = this.elementDOMRef.current) ? void 0 : n.ownerDocument.defaultView;
           (null != e && h.types instanceof e.DOMStringList && h.types.contains("application/x-moz-file") || -1 !== h.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: !0
           })
@@ -129,7 +129,7 @@ class d extends h.Component {
           var e, t;
           this.setState({
             isDragging: !1
-          }), null === (e = (t = this.props).onDragClear) || void 0 === e || e.call(t)
+          }), null == (e = (t = this.props).onDragClear) || e.call(t)
         }, 1e3)
       }
     }), Z(this, "handleDragOverZone", () => {
@@ -147,7 +147,7 @@ class d extends h.Component {
       this.setState({
         isDragging: !1,
         isOverZone: !1
-      }), null === (e = (t = this.props).onDragClear) || void 0 === e || e.call(t)
+      }), null == (e = (t = this.props).onDragClear) || e.call(t)
     }), Z(this, "handleDrop", e => {
       if (!this.preventUnwantedDrop(e, !0)) return !1;
       let t = e.dataTransfer;

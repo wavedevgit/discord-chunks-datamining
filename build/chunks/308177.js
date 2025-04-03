@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => j
+  Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,13 @@ var r = n(200651),
   m = n(12779),
   g = n(450369),
   b = n(388032),
-  _ = n(256374);
-let C = (e, t) => {
+  _ = n(816395);
+let C = {
+    singleSpeaker: 424,
+    twoSpeakers: 624,
+    threeSpeakers: 824
+  },
+  y = (e, t) => {
     let n = Math.floor(e / t - 8),
       r = Math.floor(n / g.Q);
     return {
@@ -26,17 +31,17 @@ let C = (e, t) => {
       speakerTileHeight: r
     }
   },
-  v = (e, t) => e < 424 ? 1 : e < 624 ? 2 : e < 824 ? 3 : t ? 3 : 4,
-  y = e => Math.floor((e - 32) / 102);
+  x = (e, t) => e < C.singleSpeaker ? 1 : e < C.twoSpeakers ? 2 : e < C.threeSpeakers || t ? 3 : 4,
+  v = e => Math.floor((e - 32) / 102);
 
-function x(e) {
+function j(e) {
   return e.type === u.Ui.VOICE
 }
-let j = (0, o.Z)(e => {
+let O = (0, o.Z)(e => {
   var t, n;
   let {
     channel: o,
-    width: j,
+    width: C,
     onScroll: O
   } = e, {
     selectedParticipantId: E,
@@ -46,14 +51,14 @@ let j = (0, o.Z)(e => {
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(x), w = null != T.find(e => e.type === u.Ui.STREAM), R = y(j), M = v(j, I), k = {
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), M = x(C, I), k = {
     [u.pV.SPEAKER]: M,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
-  }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, k, L), U = [Math.max(null !== (t = D[0]) && void 0 !== t ? t : 1, 1), Math.max(null !== (n = D[1]) && void 0 !== n ? n : 1, 1), D[2]], {
+  }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, k, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: H
-  } = C(j, M), F = N ? j - 32 : Math.min(j - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = y(C, M), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {

@@ -210,7 +210,7 @@ function S(t) {
     },
     [r.Pl.USE_SOUNDBOARD.toString()]: {
       title: n.NW.string(n.t.Bco7ND),
-      description: null !== (E = null == t ? void 0 : t.SOUNDBOARD_DESCRIPTION) && void 0 !== E ? E : n.t["+8p+fX"],
+      description: null != (E = null == t ? void 0 : t.SOUNDBOARD_DESCRIPTION) ? E : n.t["+8p+fX"],
       flag: r.Pl.USE_SOUNDBOARD
     },
     [r.Pl.USE_EXTERNAL_SOUNDS.toString()]: {
@@ -225,7 +225,7 @@ function S(t) {
     },
     [r.Pl.PRIORITY_SPEAKER.toString()]: {
       title: n.NW.string(n.t.BVK71t),
-      description: null !== (i = null == t ? void 0 : t.PRIORITY_SPEAKER_DESCRIPTION) && void 0 !== i ? i : n.t.OJkrrq,
+      description: null != (i = null == t ? void 0 : t.PRIORITY_SPEAKER_DESCRIPTION) ? i : n.t.OJkrrq,
       flag: r.Pl.PRIORITY_SPEAKER
     },
     [r.Pl.MUTE_MEMBERS.toString()]: {
@@ -298,8 +298,7 @@ function S(t) {
 }
 
 function s(t) {
-  let E;
-  let i = S(t),
+  let E, i = S(t),
     s = [function(t, E) {
       let i = [r.Pl.VIEW_CHANNEL, r.Pl.MANAGE_CHANNELS, r.Pl.MANAGE_ROLES, r.Pl.CREATE_GUILD_EXPRESSIONS, r.Pl.MANAGE_GUILD_EXPRESSIONS, r.Pl.VIEW_AUDIT_LOG, r.Pl.VIEW_GUILD_ANALYTICS];
       return E.showCreatorMonetizationAnalyticsPermission && i.push(r.Pl.VIEW_CREATOR_MONETIZATION_ANALYTICS), i.push(r.Pl.MANAGE_WEBHOOKS), i.push(r.Pl.MANAGE_GUILD), l({

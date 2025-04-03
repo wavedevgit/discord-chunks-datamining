@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -19,7 +19,7 @@ var r = n(200651),
   f = n(574085),
   b = n(293810),
   x = n(388032),
-  j = n(630290);
+  j = n(301849);
 
 function N(e) {
   let {
@@ -27,7 +27,7 @@ function N(e) {
   } = e, {
     editStateId: n,
     guildId: N
-  } = (0, o.N)(), [v, _] = c.UE(n), [C, O] = c.R7(n), y = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+  } = (0, o.N)(), [_, v] = c.UE(n), [C, O] = c.R7(n), y = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: I
   } = (0, d.Z)(N), E = (0, a.Dt)(), S = (0, l.mY)();
   return (0, r.jsxs)(u.Z, {
@@ -42,18 +42,18 @@ function N(e) {
         disabled: S,
         children: x.NW.string(x.t.kHalVF)
       }), (0, r.jsx)(m.Z, {
-        channelBenefits: v,
+        channelBenefits: _,
         intangibleBenefits: C,
         subscriptionListings: y,
         onImport: function(e, t) {
-          _(t => t.concat(e)), O(e => e.concat(t))
+          v(t => t.concat(e)), O(e => e.concat(t))
         }
       }), (0, r.jsx)(s.LZC, {
         size: 8
       }), (0, r.jsx)(m.w, {
         guildId: N,
         onImport: function(e) {
-          _(t => {
+          v(t => {
             let n = new Set(t.map(e => {
               let {
                 ref_id: t

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Br: () => s,
@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(198139);
 let i = e => {
   var t, n;
-  let r = Object.values(null !== (n = null == e ? void 0 : e.ppgs) && void 0 !== n ? n : {})[0],
+  let r = Object.values(null != (n = null == e ? void 0 : e.ppgs) ? n : {})[0],
     i = null == r ? void 0 : r.status,
-    s = null == r ? void 0 : null === (t = r.payout) || void 0 === t ? void 0 : t.status;
+    s = null == r || null == (t = r.payout) ? void 0 : t.status;
   return {
     ppgStatus: i,
     payoutStatus: s,
@@ -20,8 +20,7 @@ let i = e => {
 };
 
 function s(e) {
-  let t, n;
-  let {
+  let t, n, {
     ppgStatus: s
   } = i(e[0]);
   return s === r.x_.OPEN ? [t, ...n] = e : n = e, {

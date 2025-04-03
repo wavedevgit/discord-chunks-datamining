@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => I
 });
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(546247),
   _ = n(496675),
   C = n(146085),
-  v = n(979339),
-  y = n(643632),
-  x = n(939863),
+  y = n(979339),
+  x = n(643632),
+  v = n(939863),
   j = n(388032),
-  O = n(442170);
+  O = n(941188);
 
 function E(e) {
   let {
@@ -55,7 +55,7 @@ function N(e) {
   } = e, {
     participants: n,
     usersInSummary: i
-  } = (0, v.Z)(t.id);
+  } = (0, y.Z)(t.id);
   return (0, r.jsxs)("div", {
     className: O.audienceSummary,
     children: [(0, r.jsx)(u.Z, {
@@ -92,9 +92,9 @@ function I(e) {
     onContinueClick: n
   } = e, l = (0, a.e7)([_.Z], () => _.Z.can(C.yP, t), [t]), s = (0, d.Q3)("StartStageChannelCallView"), u = t.guild_id, {
     canCreateGuildEvent: p
-  } = (0, g.XJ)(t), I = (0, y.Z)(t.id), {
+  } = (0, g.XJ)(t), I = (0, x.Z)(t.id), {
     usersInSummary: P
-  } = (0, v.Z)(t.id), S = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
+  } = (0, y.Z)(t.id), S = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: o()(O.container, {
       [O.withRive]: S
@@ -104,7 +104,7 @@ function I(e) {
       eventTargetRef: Z
     }), (0, r.jsxs)("div", {
       className: O.content,
-      children: [s ? null : (0, r.jsx)(x.Z, {
+      children: [s ? null : (0, r.jsx)(v.Z, {
         children: (0, r.jsx)("div", {
           className: O.iconBackground,
           children: (0, r.jsx)(c.ewx, {

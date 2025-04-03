@@ -13,7 +13,7 @@ function o(t) {
   var e;
   let n = (0, l.C7)(t),
     o = (0, l.tc)(t);
-  if (t.isArchivedThread() ? o : n) return (null === (e = t.threadMetadata) || void 0 === e ? void 0 : e.archived) ? (0, i.jsx)(r.sNh, {
+  if (t.isArchivedThread() ? o : n) return (null == (e = t.threadMetadata) ? void 0 : e.archived) ? (0, i.jsx)(r.sNh, {
     id: "unarchive-thread",
     label: t.isForumPost() ? s.NW.string(s.t.cnRubW) : s.NW.string(s.t.S9E4Gx),
     action: () => a.Z.unarchiveThread(t, !1)

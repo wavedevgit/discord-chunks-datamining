@@ -26,10 +26,10 @@ var n = r(192379),
   }();
 let s = function(e) {
   var t = function(t) {
+    if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
+
     function r(e) {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, r);
+      if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
       var t = function(e, t) {
         if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
         return t && ("object" == typeof t || "function" == typeof t) ? t : e
@@ -48,17 +48,14 @@ let s = function(e) {
         e(t, r)
       }, 100), t
     }
-    return ! function(e, t) {
-      if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-      e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-          value: e,
-          enumerable: !1,
-          writable: !0,
-          configurable: !0
-        }
-      }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }(r, t), l(r, [{
+    return r.prototype = Object.create(t && t.prototype, {
+      constructor: {
+        value: r,
+        enumerable: !1,
+        writable: !0,
+        configurable: !0
+      }
+    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(r, t) : r.__proto__ = t), l(r, [{
       key: "render",
       value: function() {
         var t = {};

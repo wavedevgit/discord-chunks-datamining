@@ -19,14 +19,14 @@ var s = n(120356),
   h = n(918701),
   f = n(667105),
   j = n(388032),
-  b = n(233736);
+  b = n(166246);
 let C = e => 0 === e.length ? b.warning : b.danger,
-  v = (e, t) => 0 === e.length ? j.NW.formatToPlainString(j.t.gX0Qc3, {
+  N = (e, t) => 0 === e.length ? j.NW.formatToPlainString(j.t.gX0Qc3, {
     gameTitle: t
   }) : j.NW.formatToPlainString(j.t["28Ql29"], {
     gameTitle: t
   }),
-  N = e => {
+  v = e => {
     let {
       quest: t,
       location: n,
@@ -114,9 +114,9 @@ let C = e => 0 === e.length ? b.warning : b.danger,
             height: 16
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
-            children: v(y, t)
+            children: N(y, t)
           })]
-        }), N({
+        }), v({
           quest: e.quest,
           errors: y,
           gameTitle: t,

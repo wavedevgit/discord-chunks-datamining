@@ -16,19 +16,18 @@ var o = a(t(477546)),
   m = a(t(909872)),
   f = a(t(698481)),
   b = a(t(566954)),
-  v = a(t(644301)),
-  h = new o.default([
-    ["command", n.default],
-    ["composite", l.default],
-    ["input", i.default],
-    ["landmark", s.default],
-    ["range", u.default],
-    ["roletype", d.default],
-    ["section", c.default],
-    ["sectionhead", p.default],
-    ["select", m.default],
-    ["structure", f.default],
-    ["widget", b.default],
-    ["window", v.default]
-  ]);
-r.default = h
+  v = a(t(644301));
+r.default = new o.default([
+  ["command", n.default],
+  ["composite", l.default],
+  ["input", i.default],
+  ["landmark", s.default],
+  ["range", u.default],
+  ["roletype", d.default],
+  ["section", c.default],
+  ["sectionhead", p.default],
+  ["select", m.default],
+  ["structure", f.default],
+  ["widget", b.default],
+  ["window", v.default]
+])

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => m
 }), n(47120), n(230036), n(653041);
@@ -6,9 +6,9 @@ var r = n(200651),
   i = n(192379),
   s = n(772848),
   a = n(481060),
-  o = n(259580),
-  l = n(991346),
-  c = n(367443);
+  l = n(259580),
+  o = n(991346),
+  c = n(152049);
 
 function d(e) {
   let {
@@ -25,13 +25,13 @@ function u(e) {
   let {
     setting: t,
     children: n,
-    depth: l
-  } = e, [m, g] = i.useState(1 === l), p = i.useCallback(() => {
+    depth: o
+  } = e, [m, g] = i.useState(1 === o), p = i.useCallback(() => {
     g(!m)
   }, [m, g]);
   if (0 === n.length) return (0, r.jsx)("div", {
     style: {
-      marginLeft: 8 * l
+      marginLeft: 8 * o
     },
     className: c.settingNode,
     children: (0, r.jsx)(d, {
@@ -44,12 +44,12 @@ function u(e) {
     children: n.sort((e, t) => e.setting.localeCompare(t.setting)).sort((e, t) => e.children.length - t.children.length).map(e => (0, r.jsx)(u, {
       setting: e.setting,
       children: e.children,
-      depth: l + 1
+      depth: o + 1
     }, (0, s.Z)()))
   }) : null;
   return (0, r.jsxs)("div", {
     style: {
-      marginLeft: 8 * l
+      marginLeft: 8 * o
     },
     className: c.settingNode,
     children: [(0, r.jsxs)(a.P3F, {
@@ -58,8 +58,8 @@ function u(e) {
       children: [(0, r.jsx)(d, {
         setting: t,
         hasChildren: n.length > 0
-      }), (0, r.jsx)(o.Z, {
-        direction: m ? o.Z.Directions.DOWN : o.Z.Directions.RIGHT,
+      }), (0, r.jsx)(l.Z, {
+        direction: m ? l.Z.Directions.DOWN : l.Z.Directions.RIGHT,
         className: c.headerCaret
       })]
     }), h]
@@ -67,8 +67,10 @@ function u(e) {
 }
 
 function m() {
-  let e = (0, l.Pt)(),
-    t = [],
+  let e = (0, o.Pt)(),
+    t = {
+      children: []
+    },
     n = Object.keys(e).filter(t => {
       let n = e[t];
       return null == n.predicate || null != n.predicate && n.predicate()
@@ -76,16 +78,16 @@ function m() {
       var n;
       return {
         setting: t,
-        parent: null !== (n = e[t].parent) && void 0 !== n ? n : null
+        parent: null != (n = e[t].parent) ? n : null
       }
     });
   n.filter(e => null === e.parent).forEach(e => {
-    t.push({
+    t.children.push({
       setting: e.setting,
       children: []
     })
   });
-  let i = [...t];
+  let i = [...t.children];
   for (; i.length > 0;) {
     let e = i.shift();
     if (null == e) continue;
@@ -102,7 +104,7 @@ function m() {
       children: "Settings Tree"
     }), (0, r.jsx)("div", {
       className: c.tree,
-      children: t.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, r.jsx)(u, {
+      children: t.children.sort((e, t) => e.setting.localeCompare(t.setting)).map(e => (0, r.jsx)(u, {
         setting: e.setting,
         children: e.children,
         depth: 1

@@ -11,8 +11,8 @@ var i = n(120356),
   o = n(948851),
   d = n(868728),
   u = n(388032),
-  c = n(478740),
-  h = n(685786);
+  c = n(821022),
+  h = n(20493);
 let g = e => {
   let {
     handleDone: t,
@@ -20,13 +20,13 @@ let g = e => {
     modalState: i,
     shouldHideTemporaryInviteToggle: g,
     onGenerateNewLink: m,
-    onToggleTemporary: v,
-    onSelectMaxAge: x,
+    onToggleTemporary: x,
+    onSelectMaxAge: v,
     onSelectMaxUses: p,
     isGuestInviteCreationToggleEnabled: N,
     onSetInviteFlags: I
-  } = e, j = (0, a.ZP)(), {
-    maxAge: f,
+  } = e, f = (0, a.ZP)(), {
+    maxAge: j,
     maxUses: S,
     temporary: E,
     flags: T
@@ -49,11 +49,11 @@ let g = e => {
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: g,
-      maxAge: f,
+      maxAge: j,
       maxUses: S,
       temporary: E,
-      onToggleTemporary: v,
-      onSelectMaxAge: x,
+      onToggleTemporary: x,
+      onSelectMaxAge: v,
       onSelectMaxUses: p,
       onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: N,
@@ -62,7 +62,7 @@ let g = e => {
     }), (0, l.jsx)(r.mzw, {
       className: c.settingsFooter,
       children: (0, l.jsx)(d.Z, {
-        theme: j,
+        theme: f,
         onConfirm: () => {
           m(), t()
         },

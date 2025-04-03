@@ -21,7 +21,7 @@ function u(e) {
     if (null == r || null == l || null != r.error) continue;
     let o = function(e) {
       var t, n;
-      return "".concat(null !== (t = e.major) && void 0 !== t ? t : 0, ".").concat(null !== (n = e.minor) && void 0 !== n ? n : 0, ".0")
+      return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (n = e.minor) ? n : 0, ".0")
     }(r);
     if (!i().satisfies(o, l)) return !0
   }

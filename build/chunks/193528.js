@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => x
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(772848),
-  l = n(866442),
+  l = n(772848),
+  o = n(866442),
   c = n(692547),
   d = n(481060),
   u = n(699682),
@@ -15,7 +15,7 @@ var r = n(200651),
   g = n(654904),
   p = n(981631),
   h = n(388032),
-  f = n(122645);
+  f = n(768402);
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,9 +60,9 @@ function x(e) {
     colorPickerMiddle: j,
     colorPickerFooter: O,
     showEyeDropper: C
-  } = e, v = i.useRef(null), S = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, l.Rf)(s), A = y === S ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, o.Z)());
+  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
-    (R !== j || D !== O) && w((0, o.Z)())
+    (R !== j || D !== O) && w((0, l.Z)())
   }, [O, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
     renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
@@ -93,7 +93,7 @@ function x(e) {
         return i
       }(e, ["onClick"]);
       return (0, r.jsxs)("div", {
-        ref: v,
+        ref: S,
         className: a()(f.colorSwatch, {
           [f.disabled]: _
         }),
@@ -107,7 +107,7 @@ function x(e) {
           className: f.swatch,
           "aria-label": h.NW.string(h.t.Qp04hI),
           focusProps: {
-            ringTarget: v
+            ringTarget: S
           },
           children: (0, r.jsx)(d.vdY, {
             size: "custom",

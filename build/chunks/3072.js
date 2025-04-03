@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   eR: () => m,
   hW: () => b,
@@ -8,8 +8,8 @@ var r = n(192379),
   i = n(442837),
   s = n(304809),
   a = n(120421),
-  o = n(284539),
-  l = n(477839);
+  l = n(284539),
+  o = n(477839);
 let c = (0, s.N)();
 async function d(e) {
   let t = await fetch(e),
@@ -38,31 +38,31 @@ function g(e) {
 function p(e, t) {
   let n = (0, r.useRef)(null),
     s = (0, r.useRef)(c.createGain()),
-    o = (0, i.e7)([a.Z], () => a.Z.volume),
-    l = (0, i.e7)([a.Z], () => a.Z.isMuted),
+    l = (0, i.e7)([a.Z], () => a.Z.volume),
+    o = (0, i.e7)([a.Z], () => a.Z.isMuted),
     d = (0, r.useRef)(!0);
   (0, r.useEffect)(() => {
     (async () => {
-      null != n.current && g(n), t || (n.current = await u(e, s.current), n.current.loop = !0, d.current || g(n))
+      null != n.current && g(n), !t && (n.current = await u(e, s.current), n.current.loop = !0, d.current || g(n))
     })()
   }, [t, e]), (0, r.useEffect)(() => {
-    s.current.gain.value = l ? 0 : o
-  }, [l, o]), (0, r.useEffect)(() => () => {
+    s.current.gain.value = o ? 0 : l
+  }, [o, l]), (0, r.useEffect)(() => () => {
     d.current = !1, g(n)
   }, [])
 }
 let h = n(956294),
   f = {
-    [l.Vx.DEFAULT]: n(635154),
-    [l.Vx.CAT]: n(382399),
-    [l.Vx.SWORD]: n(730602),
-    [l.Vx.PIZZA]: n(84171)
+    [o.Vx.DEFAULT]: n(635154),
+    [o.Vx.CAT]: n(382399),
+    [o.Vx.SWORD]: n(730602),
+    [o.Vx.PIZZA]: n(84171)
   };
 
 function b() {
   var e;
   let t = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
-    [n] = (0, o.Z)(l.yN.CURSORS),
-    r = null !== (e = n.selectedCursor) && void 0 !== e ? e : l.Vx.DEFAULT;
+    [n] = (0, l.Z)(o.yN.CURSORS),
+    r = null != (e = n.selectedCursor) ? e : o.Vx.DEFAULT;
   return m(t ? h : f[r])
 }

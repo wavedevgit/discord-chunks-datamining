@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => H
 }), n(47120), n(411104);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(540059),
   _ = n(605236),
   C = n(536442),
-  v = n(79390),
-  y = n(216789),
-  x = n(665906),
+  y = n(79390),
+  x = n(216789),
+  v = n(665906),
   j = n(695346),
   O = n(433355),
   E = n(819640),
@@ -38,7 +38,7 @@ var r = n(200651),
   k = n(356659),
   L = n(921944),
   D = n(388032),
-  W = n(928942);
+  W = n(911777);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -87,7 +87,7 @@ let H = i.memo(function(e) {
   }, {
     autoTrackExposure: !1
   }), en = (0, a.e7)([C.qc], () => C.qc.hasHotspot(C.v6.CLIPS_CHANNEL_ATTACH_REMINDER)), er = (0, c.s9z)(e => (0, c.DEQ)(e, k.Qr)), ei = (0, a.e7)([E.Z], () => E.Z.hasLayers()), el = (0, a.e7)([m.Z], () => m.Z.hasClips()), [eo, ea] = i.useState(null), es = (0, f.Go)() && (Q || el), ec = F.isPrivate(), eu = (0, a.e7)([I.Z], () => ec || I.Z.can(M.Plq.ATTACH_FILES, F) && I.Z.can(M.Plq.SEND_MESSAGES, F)), ed = (0, d.Z)(J);
-  (null == ed ? void 0 : ed.newClipIds.length) !== (null == J ? void 0 : J.newClipIds.length) && (null !== (t = null == J ? void 0 : J.newClipIds.length) && void 0 !== t ? t : 0) > 0 && null == eo && en && ee && !er && !et && !ei && ea("recentClips");
+  (null == ed ? void 0 : ed.newClipIds.length) !== (null == J ? void 0 : J.newClipIds.length) && (null != (t = null == J ? void 0 : J.newClipIds.length) ? t : 0) > 0 && null == eo && en && ee && !er && !et && !ei && ea("recentClips");
   let ep = (e, t, n) => {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(F, []) : (0, T.d)(e, F, G, {
         requireConfirm: !0,
@@ -100,7 +100,7 @@ let H = i.memo(function(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("82898")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("71248")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, B(U({}, t), {
         channelId: F.id
       }))
@@ -111,22 +111,22 @@ let H = i.memo(function(e) {
   i.useEffect(() => {
     let e = () => {
       var e;
-      return null === (e = K.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
+      return null == (e = K.current) ? void 0 : e.activateUploadDialogue()
     };
     return S.S.subscribe(M.CkL.UPLOAD_FILE, e), () => {
       S.S.unsubscribe(M.CkL.UPLOAD_FILE, e)
     }
   });
-  let em = (0, x.NE)(F),
-    eg = (0, x.Xu)(F),
+  let em = (0, v.NE)(F),
+    eg = (0, v.Xu)(F),
     eb = !j.dN.useSetting() && !(0, Z.isAndroidWeb)() && null != window.ResizeObserver,
-    e_ = (0, v.UI)(null != F ? F : void 0),
+    e_ = (0, y.UI)(null != F ? F : void 0),
     eC = (0, h.qB)(),
-    ev = (0, y.Us)({
+    ey = (0, x.Us)({
       location: "ChannelAttachButton"
     }),
-    ey = null !== (l = null == $ ? void 0 : $.length) && void 0 !== l ? l : 0,
-    ex = (0, R.Z)({
+    ex = null != (l = null == $ ? void 0 : $.length) ? l : 0,
+    ev = (0, R.Z)({
       canAttachFiles: eu,
       canStartThreads: em || eg,
       useSlate: eb,
@@ -134,15 +134,15 @@ let H = i.memo(function(e) {
       canUseApplicationCommands: !Y,
       channel: F,
       activities: X,
-      newClipsCount: ey,
+      newClipsCount: ex,
       canPostPolls: e_,
       canLaunchActivities: eC,
       appContext: q,
-      canSendScheduledMessages: ev
+      canSendScheduledMessages: ey
     }),
     ej = (0, b.Q3)("ChannelAttachButton"),
     eO = (0, b.R6)("ChannelAttachButton");
-  if (0 === ex.length) return null;
+  if (0 === ev.length) return null;
   let eE = (0, r.jsx)(c.oFk, {
       size: ej ? "refresh_sm" : void 0,
       color: "currentColor",
@@ -180,11 +180,11 @@ let H = i.memo(function(e) {
           case "attachMenu":
             return (0, r.jsx)(w.Z, B(U({}, e), {
               onClose: () => ea(null),
-              options: ex,
+              options: ev,
               channel: F,
               onFileUpload: () => {
                 var e;
-                return null === (e = K.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
+                return null == (e = K.current) ? void 0 : e.activateUploadDialogue()
               },
               draftType: G,
               editorTextContent: V,
@@ -203,7 +203,7 @@ let H = i.memo(function(e) {
         "aria-label": D.NW.string(D.t.d56gCQ),
         onDoubleClick: eu ? () => {
           var e;
-          return null === (e = K.current) || void 0 === e ? void 0 : e.activateUploadDialogue()
+          return null == (e = K.current) ? void 0 : e.activateUploadDialogue()
         } : void 0,
         focusProps: {
           offset: eN

@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => c
 });
@@ -20,7 +20,7 @@ function c(e, t, n, c, u) {
     body: m
   } = (0, o.Xi)(e, t, n), {
     trackView: g,
-    trackClick: v
+    trackClick: y
   } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -45,14 +45,14 @@ function c(e, t, n, c, u) {
       i.Z.join({
         userId: n.id,
         sessionId: p,
-        applicationId: null !== (a = c.altId) && void 0 !== a ? a : c.id,
+        applicationId: null != (a = c.altId) ? a : c.id,
         channelId: e.id,
         messageId: t.id,
         activity: u
-      }), r.Z.updateNotificationStatus(l), v("join")
+      }), r.Z.updateNotificationStatus(l), y("join")
     },
     onDismissClick: () => {
-      v("dismiss")
+      y("dismiss")
     }
   }
 }

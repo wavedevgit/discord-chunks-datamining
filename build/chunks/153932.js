@@ -17,7 +17,7 @@ var n = s(200651),
   h = s(626135),
   g = s(981631),
   N = s(388032),
-  O = s(219997);
+  O = s(511515);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,20 +56,26 @@ function _(e) {
     user: t,
     status: s,
     ignoredUser: r
-  } = e, a = o.useContext(h.AnalyticsContext), {
-    analyticsLocations: b
-  } = (0, l.ZP)(), f = e => {
-    e.stopPropagation(), c.Z.cancelFriendRequest(t.id, {
-      location: "Spam requests modal"
-    })
-  }, y = e => {
-    e.stopPropagation(), c.Z.addRelationship({
-      userId: t.id,
-      context: {
+  } = e;
+  let a = o.useContext(h.AnalyticsContext),
+    {
+      analyticsLocations: b
+    } = (0, l.ZP)(),
+    f = e => {
+      e.stopPropagation(), c.Z.cancelFriendRequest(t.id, {
         location: "Spam requests modal"
-      }
-    })
-  }, _ = s === g.Skl.OFFLINE ? g.Skl.UNKNOWN : s, j = r ? N.NW.string(N.t.pO68Oz) : N.NW.string(N.t["gp+Yt7"]);
+      })
+    },
+    y = e => {
+      e.stopPropagation(), c.Z.addRelationship({
+        userId: t.id,
+        context: {
+          location: "Spam requests modal"
+        }
+      })
+    },
+    _ = s === g.Skl.OFFLINE ? g.Skl.UNKNOWN : s,
+    j = r ? N.NW.string(N.t.pO68Oz) : N.NW.string(N.t["gp+Yt7"]);
   return (0, n.jsx)("div", {
     className: O.spamRequest,
     children: (0, n.jsx)(u.Z, {

@@ -17,7 +17,7 @@ var l = t(200651),
   f = t(594174),
   p = t(981631),
   O = t(388032),
-  m = t(7918);
+  m = t(965385);
 
 function N(e) {
   let {
@@ -26,8 +26,8 @@ function N(e) {
     analyticsLocation: h,
     analyticsLocations: j,
     context: P,
-    icon: v
-  } = e, x = Z.Z.getGuild(n), y = d.default.getId(), _ = (0, i.e7)([f.default], () => f.default.getUser(N)), E = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, N), [n, N]);
+    icon: x
+  } = e, v = Z.Z.getGuild(n), y = d.default.getId(), _ = (0, i.e7)([f.default], () => f.default.getUser(N)), E = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, N), [n, N]);
   (0, i.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
   let C = r.useMemo(() => ({
     [n]: [N]
@@ -35,16 +35,16 @@ function N(e) {
   (0, o.$)(C);
   let I = P === p.IlC.POPOUT,
     T = (0, s.Z)({
-      guild: x,
+      guild: v,
       analyticsLocation: h
     }),
     S = (0, u.Aq)();
-  if (null == x || I) return null;
-  let U = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, x) || b.Z.can(p.Plq.MANAGE_NICKNAMES, x)),
+  if (null == v || I) return null;
+  let U = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, v) || b.Z.can(p.Plq.MANAGE_NICKNAMES, v)),
     W = y === N,
-    A = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, x);
+    A = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, v);
   if (!(U || A || W) || null == _ || E) return null;
-  let R = x.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
+  let R = v.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
     w = W ? R : O.NW.string(O.t.dilOFx);
   return (0, l.jsx)(a.sNh, {
     id: "change-nickname",
@@ -55,7 +55,7 @@ function N(e) {
         children: w
       })
     }),
-    icon: v,
+    icon: x,
     action: () => {
       W ? ((0, c.Z)(_.id, _.getAvatarURL(n, 80), {
         guildId: n

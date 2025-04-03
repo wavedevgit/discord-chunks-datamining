@@ -16,7 +16,7 @@ var o = n(120356),
   m = n(788284),
   f = n(46140),
   g = n(388032),
-  x = n(428254);
+  x = n(192214);
 let h = function(e) {
   var t;
   let {
@@ -26,7 +26,7 @@ let h = function(e) {
     isExpansionAnimationComplete: b,
     quest: j,
     useReducedMotion: v
-  } = e, y = (null === (t = j.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, {
+  } = e, y = (null == (t = j.userStatus) ? void 0 : t.enrolledAt) != null, {
     percentComplete: _
   } = (0, l.Rf)(j), C = (0, l.Jf)(j), O = null != C ? C.percentComplete > 0 : _ > 0;
   return (0, r.jsxs)(a.animated.div, {

@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   R: () => g
 });
@@ -14,7 +14,7 @@ var r = n(200651),
   _ = n(378441),
   m = n(358820),
   f = n(388032),
-  p = n(934656);
+  p = n(690410);
 
 function g() {
   let {
@@ -39,11 +39,11 @@ function g() {
           downloadedBytes: r,
           totalBytes: i
         } = e;
-        return null !== (t = n === d.L.DOWNLOADING ? r : i) && void 0 !== t ? t : 0
+        return null != (t = n === d.L.DOWNLOADING ? r : i) ? t : 0
       }).sum().value(),
       l = (0, i.sumBy)(n, e => {
         var t;
-        return null !== (t = null == e ? void 0 : e.totalBytes) && void 0 !== t ? t : 0
+        return null != (t = null == e ? void 0 : e.totalBytes) ? t : 0
       });
     return {
       showProgressBar: r,

@@ -7,49 +7,49 @@ t(192379);
 var o = t(512722),
   a = t.n(o),
   l = t(593473),
-  i = t(186231),
-  c = t(159277),
+  c = t(186231),
+  i = t(159277),
   u = t(478677),
   s = t(457330),
-  d = t(702493),
-  p = t(77987),
+  p = t(702493),
+  d = t(77987),
   b = t(275759),
   f = t(710845),
   y = t(807675),
   O = t(69580),
   h = t(787025),
-  v = t(591759),
-  w = t(981631),
+  w = t(591759),
+  v = t(981631),
   P = t(602091);
 let g = new f.Z("LinkAuthorize");
 async function j(e, r, t, n) {
-  var o, l, i, c, d;
-  let p = null;
+  var o, l, c, i, p;
+  let d = null;
   try {
     let {
       body: e
     } = await s.Z.authorize(n, {
       twoWayLinkType: u.g.WEB
     });
-    p = e.url
+    d = e.url
   } catch (e) {
-    throw Error("error at authorize with code ".concat(null !== (l = null == e ? void 0 : null === (o = e.body) || void 0 === o ? void 0 : o.code) && void 0 !== l ? l : 0))
+    throw Error("error at authorize with code ".concat(null != (l = null == e || null == (o = e.body) ? void 0 : o.code) ? l : 0))
   }
   let f = null;
   try {
-    a()(null != p, "No URL in authorize response");
+    a()(null != d, "No URL in authorize response");
     let {
       state: e
-    } = (0, b.xp)(p);
+    } = (0, b.xp)(d);
     a()(null != e, "Authorize URL state query parameter must be present"), f = e
   } catch (e) {
     throw Error("error at authorize parsing callback params")
   }
   try {
     let o = await s.Z.completeTwoWayLink(n, e, r, f, t);
-    return null == o ? void 0 : null === (i = o.body) || void 0 === i ? void 0 : i.redirect
+    return null == o || null == (c = o.body) ? void 0 : c.redirect
   } catch (e) {
-    throw Error("error at callback with code ".concat(null !== (d = null == e ? void 0 : null === (c = e.body) || void 0 === c ? void 0 : c.code) && void 0 !== d ? d : 0))
+    throw Error("error at callback with code ".concat(null != (p = null == e || null == (i = e.body) ? void 0 : i.code) ? p : 0))
   }
 }
 
@@ -58,10 +58,10 @@ function m(e) {
   let {
     platformType: o
   } = e;
-  (0, d.Z)();
+  (0, p.Z)();
   let a = (0, y.y)(window.location.search),
     {
-      code: c,
+      code: i,
       token_redirect_uri: u
     } = l.parse(window.location.search),
     s = async e => {
@@ -72,16 +72,16 @@ function m(e) {
       let {
         error: t
       } = l.parse(r), n = null;
-      if (null == t && null != c) try {
-        n = await j(r, c, u, o)
+      if (null == t && null != i) try {
+        n = await j(r, i, u, o)
       } catch (t) {
         var a;
         g.error("Error Creating Discord link", null == t ? void 0 : t.message);
-        let e = v.Z.toURLSafe(r);
+        let e = w.Z.toURLSafe(r);
         if (null == e) return;
-        e.searchParams.delete("code"), e.searchParams.set("error", "two_way_link_error"), e.searchParams.set("error_description", null !== (a = null == t ? void 0 : t.message) && void 0 !== a ? a : "unknown_error"), r = e.toString()
+        e.searchParams.delete("code"), e.searchParams.set("error", "two_way_link_error"), e.searchParams.set("error_description", null != (a = null == t ? void 0 : t.message) ? a : "unknown_error"), r = e.toString()
       }
-      window.location = null == n || n === i.b.OAUTH_REDIRECT ? r : n
+      window.location = null == n || n === c.b.OAUTH_REDIRECT ? r : n
     };
   return (0, n.jsx)(h.G, {
     removeChildWrapper: !0,
@@ -119,13 +119,13 @@ function m(e) {
     }), r))
   })
 }
-let A = (0, p.e)(function(e) {
+let A = (0, d.e)(function(e) {
   let {
     match: r
   } = e, t = r.params.type, {
     client_id: o = ""
-  } = l.parse(window.location.search), a = t === w.ABu.PLAYSTATION && o === c.t.PLAYSTATION_APPLICATION_ID, i = t === w.ABu.PLAYSTATION_STAGING && o === c.t.PLAYSTATION_STAGING_APPLICATION_ID;
-  return a || i ? (0, n.jsx)(m, {
+  } = l.parse(window.location.search), a = t === v.ABu.PLAYSTATION && o === i.t.PLAYSTATION_APPLICATION_ID, c = t === v.ABu.PLAYSTATION_STAGING && o === i.t.PLAYSTATION_STAGING_APPLICATION_ID;
+  return a || c ? (0, n.jsx)(m, {
     platformType: t
   }) : null
 })

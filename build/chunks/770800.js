@@ -1,6 +1,6 @@
 /** Chunk was on 80960 **/
 r.d(t, {
-  Z: () => P
+  Z: () => Z
 }), r(571269), r(298267);
 var n = r(200651),
   a = r(192379),
@@ -22,9 +22,9 @@ var n = r(200651),
   N = r(513547),
   b = r(65154),
   E = r(388032),
-  j = r(773342),
-  C = r(685786);
-class Z extends a.PureComponent {
+  P = r(442122),
+  j = r(20493);
+class C extends a.PureComponent {
   render() {
     var e, t;
     let {
@@ -72,7 +72,7 @@ class Z extends a.PureComponent {
         }, t)
       }),
       p = s().map(d.receiverReports, e => {
-        let t = Array.isArray(e.bitrate) ? null === (n = e.bitrate.at(-1)) || void 0 === n ? void 0 : n.value : e.bitrate,
+        let t = Array.isArray(e.bitrate) ? null == (n = e.bitrate.at(-1)) ? void 0 : n.value : e.bitrate,
           r = y.default.getUser(e.id);
         var n, a = g.ZP.getNickname(m.Z.getGuildId(), void 0, r);
         return null == a && (a = null != r ? r.username : e.id), {
@@ -110,22 +110,22 @@ class Z extends a.PureComponent {
     return (0, n.jsxs)(o.hjN, {
       tag: o.RB0.H2,
       title: E.NW.string(E.t.wU9INz) + (null != a ? " - " + a : ""),
-      className: j.allowSelection,
+      className: P.allowSelection,
       children: [(0, v.a)(u), 0 === f.length ? null : (0, n.jsx)(o.$i$, {
-        className: C.marginBottom20
+        className: j.marginBottom20
       }), (0, v.a)(f)]
     })
   }
 }
-let P = l.ZP.connectStores([u.ZP, d.Z, h.Z, p.Z], e => {
+let Z = l.ZP.connectStores([u.ZP, d.ZP, h.Z, p.Z], e => {
   let {
     context: t,
     index: r
-  } = e, n = u.ZP.getAllStats(t)[r], a = t === b.Yn.STREAM ? p.Z.getHostname(p.Z.getActiveStreamKey()) : d.Z.getHostname();
+  } = e, n = u.ZP.getAllStats(t)[r], a = t === b.Yn.STREAM ? p.Z.getHostname(p.Z.getActiveStreamKey()) : d.ZP.getHostname();
   return {
     hidePersonalInformation: h.Z.hidePersonalInformation,
     transport: null != n ? n.transport : null,
-    mediaSessionId: d.Z.getMediaSessionId(),
+    mediaSessionId: d.ZP.getMediaSessionId(),
     hostname: f.Z.getShortHostname(a)
   }
-})(Z)
+})(C)

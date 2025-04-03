@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(224706),
   l = n(710845),
-  o = n(77498);
-let a = {};
+  a = n(77498);
+let o = {};
 
 function s(e) {
   let {
@@ -14,14 +14,12 @@ function s(e) {
     hash: n,
     missingData: r
   } = e;
-  for (let e of (o.Z.markGameReported(t), r)) {
+  for (let e of (a.Z.markGameReported(t), r))
     if ("icon" === e) {
-      let e = a[t];
+      let e = o[t];
       null != e && i.Z.uploadIcon(t, n, e);
       return
-    }
-    new l.Z("GameStoreIconManager").log("Could not find missing data key: ".concat(e))
-  }
+    } else new l.Z("GameStoreIconManager").log("Could not find missing data key: ".concat(e))
 }
 
 function c(e) {
@@ -29,7 +27,7 @@ function c(e) {
     gameName: t,
     icon: n
   } = e;
-  a[t] = n
+  o[t] = n
 }
 let u = {
   initialize() {

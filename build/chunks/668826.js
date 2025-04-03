@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  KH: () => o,
+  KH: () => l,
   TD: () => d,
   YM: () => h,
   Z_: () => c,
   Zj: () => p,
   cn: () => u,
   jA: () => g,
-  xD: () => l,
+  xD: () => o,
   yW: () => m
 }), n(301563);
 var r = n(544891),
@@ -15,7 +15,7 @@ var r = n(544891),
   s = n(120421),
   a = n(981631);
 
-function o(e, t) {
+function l(e, t) {
   return i.Z.dispatch({
     type: "CLICKER_GAME_ADD_POINTS",
     numPoints: t,
@@ -23,7 +23,7 @@ function o(e, t) {
   })
 }
 
-function l(e) {
+function o(e) {
   return i.Z.dispatch({
     type: "CLICKER_GAME_PURCHASE_ITEM",
     id: e

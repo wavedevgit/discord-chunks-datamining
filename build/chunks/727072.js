@@ -6,8 +6,8 @@ n.d(t, {
   pH: () => A
 }), n(653041), n(47120);
 var r = n(192379),
-  i = n(788347),
-  l = n(372793),
+  l = n(788347),
+  i = n(372793),
   a = n(731965),
   u = n(881052),
   o = n(36459),
@@ -34,7 +34,7 @@ function E(e) {
   return e
 }
 
-function d(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function d(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {},
+let d = {},
   S = e => {
     let t = {
       [c.fX.KEYWORD]: [],
@@ -61,26 +61,26 @@ let g = {},
       let {
         triggerType: r
       } = e;
-      null === (n = t[r]) || void 0 === n || n.push(e)
+      null == (n = t[r]) || n.push(e)
     }), t
   },
-  O = (0, l.F)((e, t) => ({
+  O = (0, i.F)((e, t) => ({
     rules: {},
     fetching: !1,
     error: null,
     updateRule: n => {
-      var r, i;
+      var r, l;
       let {
-        guildId: l,
+        guildId: i,
         id: u,
         triggerType: o
       } = n, {
         rules: c
-      } = t(), f = null !== (r = c[l]) && void 0 !== r ? r : {}, g = null !== (i = f[o]) && void 0 !== i ? i : [], S = g.some(e => e.id === u), O = g.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = S ? O.map(e => e.id === u ? n : e) : [...O, n];
+      } = t(), f = null != (r = c[i]) ? r : {}, d = null != (l = f[o]) ? l : [], S = d.some(e => e.id === u), O = d.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = S ? O.map(e => e.id === u ? n : e) : [...O, n];
       (0, a.j)(() => {
         e({
-          rules: d(E({}, c), {
-            [l]: d(E({}, f), {
+          rules: g(E({}, c), {
+            [i]: g(E({}, f), {
               [o]: j
             })
           }),
@@ -90,16 +90,16 @@ let g = {},
     },
     removeRule: (n, r) => {
       let {
-        rules: i
-      } = t(), l = i[r], u = Object.keys(l).reduce((e, t) => {
+        rules: l
+      } = t(), i = l[r], u = Object.keys(i).reduce((e, t) => {
         var r;
-        let i = Number(t),
-          a = null !== (r = l[i]) && void 0 !== r ? r : [];
-        return e[i] = a.filter(e => e.id !== n), e
-      }, l);
+        let l = Number(t),
+          a = null != (r = i[l]) ? r : [];
+        return e[l] = a.filter(e => e.id !== n), e
+      }, i);
       (0, a.j)(() => {
         e({
-          rules: d(E({}, i), {
+          rules: g(E({}, l), {
             [r]: u
           }),
           error: null
@@ -110,17 +110,17 @@ let g = {},
       if (function(e) {
           var t;
           let n = Date.now();
-          return n - (null !== (t = g[e]) && void 0 !== t ? t : 0) > 2e4
+          return n - (null != (t = d[e]) ? t : 0) > 2e4
         }(n)) {
-        g[n] = Date.now();
+        d[n] = Date.now();
         try {
           let r = await (0, o.$Y)(n),
-            i = S(r),
-            l = t().rules;
+            l = S(r),
+            i = t().rules;
           (0, a.j)(() => {
             e({
-              rules: d(E({}, l), {
-                [n]: i
+              rules: g(E({}, i), {
+                [n]: l
               }),
               error: null
             })
@@ -138,18 +138,18 @@ let g = {},
   })),
   j = (e, t) => {
     var n, r;
-    return (null !== (r = null === (n = O.getState().rules[e]) || void 0 === n ? void 0 : n[t]) && void 0 !== r ? r : []).length
+    return (null != (r = null == (n = O.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
   };
 
 function N(e) {
-  let [t, n] = r.useState(!1), [l, a] = O(e => [e.syncRules, e.fetching], i.X);
+  let [t, n] = r.useState(!1), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
-      n(!0), await l(e)
+      n(!0), await i(e)
     } finally {
       n(!1)
     }
-  }, [e, a, l])]
+  }, [e, a, i])]
 }
 
 function p(e) {
@@ -165,9 +165,9 @@ function A(e) {
   return O(t => {
     var n;
     return {
-      rulesByTriggerType: null !== (n = t.rules[null != e ? e : f.lds]) && void 0 !== n ? n : {},
+      rulesByTriggerType: null != (n = t.rules[null != e ? e : f.lds]) ? n : {},
       updateRule: t.updateRule,
       removeRule: t.removeRule
     }
-  }, i.X)
+  }, l.X)
 }

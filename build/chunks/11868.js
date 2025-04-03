@@ -1,6 +1,6 @@
 /** Chunk was on 84414 **/
 n.d(t, {
-  Qt: () => M,
+  Qt: () => L,
   ZP: () => j
 }), n(266796);
 var r = n(200651),
@@ -30,25 +30,25 @@ var r = n(200651),
   D = n(139712),
   y = n(765305),
   h = n(388032),
-  b = n(338251);
+  b = n(690606);
 let U = (e, t) => n => {
     n.stopPropagation(), u.default.selectVoiceChannel(e.channel_id, !1), null == t || t(n)
   },
-  v = (e, t) => n => {
+  M = (e, t) => n => {
     let r = N.Z.getChannel(e.channel_id);
     null != r && (n.stopPropagation(), (0, _.Cq)(r), null == t || t(n))
   },
-  M = (e, t) => {
+  L = (e, t) => {
     switch (null == e ? void 0 : e.entity_type) {
       case y.WX.STAGE_INSTANCE:
-        return v(e, t);
+        return M(e, t);
       case y.WX.VOICE:
         return U(e, t)
     }
     return () => {}
   },
-  L = (e, t) => t && [y.WX.STAGE_INSTANCE, y.WX.VOICE].includes(null == e ? void 0 : e.entity_type),
-  Z = i.memo(function(e) {
+  Z = (e, t) => t && [y.WX.STAGE_INSTANCE, y.WX.VOICE].includes(null == e ? void 0 : e.entity_type),
+  k = i.memo(function(e) {
     var t;
     let {
       guild: n,
@@ -57,11 +57,11 @@ let U = (e, t) => n => {
       isMember: u
     } = e, _ = (0, a.e7)([O.Z], () => {
       var e;
-      return null == n ? null : null !== (e = O.Z.getGuild(n.id)) && void 0 !== e ? e : new I.ZP(n)
+      return null == n ? null : null != (e = O.Z.getGuild(n.id)) ? e : new I.ZP(n)
     }, [n]), N = (0, m.u)(l, o), T = i.useCallback(e => {
       u && null != l && (e.stopPropagation(), (0, c.Bk)(l))
     }, [u, l]), S = i.useCallback(e => {
-      M(l)(e)
+      L(l)(e)
     }, [l]);
     if (null == _) return null;
     let f = null == N ? void 0 : N.IconComponent,
@@ -73,7 +73,7 @@ let U = (e, t) => n => {
         }), (0, r.jsx)(s.Text, {
           className: b.channelDescription,
           variant: "text-xs/normal",
-          children: (0, p.m)(null !== (t = null == N ? void 0 : N.locationName) && void 0 !== t ? t : "", !0)
+          children: (0, p.m)(null != (t = null == N ? void 0 : N.locationName) ? t : "", !0)
         })]
       });
     return (0, r.jsxs)("div", {
@@ -102,7 +102,7 @@ let U = (e, t) => n => {
           })]
         }), (0, r.jsx)("div", {
           className: b.channelInfoContainer,
-          children: L(l, u) ? (0, r.jsx)(s.P3F, {
+          children: Z(l, u) ? (0, r.jsx)(s.P3F, {
             className: b.channelLocationLink,
             onClick: S,
             children: A
@@ -111,7 +111,7 @@ let U = (e, t) => n => {
       })]
     })
   }),
-  k = i.memo(function(e) {
+  v = i.memo(function(e) {
     let {
       guildId: t,
       guildScheduledEventId: n,
@@ -197,7 +197,7 @@ let U = (e, t) => n => {
           className: b.banner
         }), (0, r.jsx)(g.ZP, {
           name: n.name,
-          description: null !== (t = n.description) && void 0 !== t ? t : void 0,
+          description: null != (t = n.description) ? t : void 0,
           descriptionClassName: b.eventDescription,
           guildId: n.guild_id,
           creator: O,
@@ -206,12 +206,12 @@ let U = (e, t) => n => {
           recurrenceId: I
         }), (0, r.jsxs)("div", {
           className: b.footerContainer,
-          children: [(0, r.jsx)(Z, {
+          children: [(0, r.jsx)(k, {
             guild: l,
             channel: a,
             guildScheduledEvent: n,
             isMember: c
-          }), (0, r.jsx)(k, {
+          }), (0, r.jsx)(v, {
             isActive: m,
             isEnded: D,
             isMember: c,

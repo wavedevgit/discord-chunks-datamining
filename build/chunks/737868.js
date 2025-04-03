@@ -19,16 +19,16 @@ var t = l(200651),
   p = l(339085),
   b = l(592125),
   N = l(984933),
-  v = l(699516),
-  g = l(594174),
-  C = l(700785),
-  _ = l(995532),
+  g = l(699516),
+  C = l(594174),
+  _ = l(700785),
+  v = l(995532),
   k = l(514698),
   O = l(845606),
   y = l(981631),
   E = l(185923),
   S = l(388032),
-  P = l(281290);
+  P = l(495084);
 let T = e => {
   var n, l;
   let {
@@ -40,7 +40,7 @@ let T = e => {
   } = e, I = (0, j.Dt)(), [D, L] = i.useState(null != Z ? Z.channel_id : null), [B, A] = i.useState(null != Z ? Z.description : ""), [H, R] = i.useState(null != Z ? {
     id: Z.emoji_id,
     name: Z.emoji_name
-  } : null), [M, K] = i.useState(!1), Y = (0, o.e7)([p.ZP], () => (null == H ? void 0 : H.id) != null ? p.ZP.getUsableCustomEmojiById(H.id) : null), q = (0, o.e7)([N.ZP], () => N.ZP.getChannels(T)[N.sH], [T]), G = (0, o.e7)([_.Z], () => _.Z.get(T)), V = null !== (l = null == G ? void 0 : null === (n = G.welcome_channels) || void 0 === n ? void 0 : n.map(e => e.channel_id)) && void 0 !== l ? l : [], [X, $] = i.useState(!1);
+  } : null), [M, K] = i.useState(!1), Y = (0, o.e7)([p.ZP], () => (null == H ? void 0 : H.id) != null ? p.ZP.getUsableCustomEmojiById(H.id) : null), q = (0, o.e7)([N.ZP], () => N.ZP.getChannels(T)[N.sH], [T]), G = (0, o.e7)([v.Z], () => v.Z.get(T)), V = null != (l = null == G || null == (n = G.welcome_channels) ? void 0 : n.map(e => e.channel_id)) ? l : [], [X, $] = i.useState(!1);
   i.useEffect(() => {
     r.K.get(O.S) || setTimeout(() => $(!0), 300)
   }, []);
@@ -49,9 +49,9 @@ let T = e => {
     let {
       channel: n
     } = e;
-    C.Uu(y.Plq.VIEW_CHANNEL, n) && ((null == Z ? void 0 : Z.channel_id) === n.id || !V.includes(n.id)) && U.push({
+    _.Uu(y.Plq.VIEW_CHANNEL, n) && ((null == Z ? void 0 : Z.channel_id) === n.id || !V.includes(n.id)) && U.push({
       value: n.id,
-      label: (0, u.F6)(n, g.default, v.Z)
+      label: (0, u.F6)(n, C.default, g.Z)
     })
   });
   let F = () => {
@@ -60,16 +60,13 @@ let T = e => {
     J = i.useCallback(e => A(e), []),
     Q = e => {
       var n, l, t;
-      if (null == e) {
-        R(null);
-        return
-      }
+      if (null == e) return void R(null);
       R(null != e.id ? {
-        id: null !== (n = e.id) && void 0 !== n ? n : null,
-        name: null !== (l = e.name) && void 0 !== l ? l : null
+        id: null != (n = e.id) ? n : null,
+        name: null != (l = e.name) ? l : null
       } : {
         id: null,
-        name: null !== (t = e.optionallyDiverseSequence) && void 0 !== t ? t : null
+        name: null != (t = e.optionallyDiverseSequence) ? t : null
       })
     },
     ee = i.useCallback(() => {
@@ -101,7 +98,7 @@ let T = e => {
               if (null === e) return null;
               let l = e.value,
                 i = b.Z.getChannel(l),
-                o = null !== (n = (0, d.KS)(i)) && void 0 !== n ? n : a.VL1;
+                o = null != (n = (0, d.KS)(i)) ? n : a.VL1;
               return (0, t.jsx)(o, {
                 className: P.channelTitleIcon,
                 size: "xs",
@@ -194,7 +191,7 @@ let T = e => {
                     }({}, e), i = i = {
                       onClick: n => {
                         var l;
-                        ee(), null === (l = e.onClick) || void 0 === l || l.call(e, n)
+                        ee(), null == (l = e.onClick) || l.call(e, n)
                       },
                       active: o,
                       className: P.emojiButton,

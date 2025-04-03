@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(626135),
   d = n(981631),
   p = n(388032),
-  h = n(252201),
-  f = n(50398);
+  h = n(41281),
+  f = n(73433);
 
 function m(e) {
   let {
@@ -23,7 +23,7 @@ function m(e) {
     channel: b,
     analyticsType: _,
     popoutText: C,
-    animation: v
+    animation: y
   } = e;
   i.useEffect(() => {
     u.default.track(d.rMx.OPEN_POPOUT, function(e) {
@@ -47,21 +47,20 @@ function m(e) {
       type: _
     }, (0, s.v_)(b)))
   }, [_, b]);
-  let y = i.useCallback(() => {
+  let x = i.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
-    x = i.useCallback(() => {
+    v = i.useCallback(() => {
       null == g || g(), t()
     }, [g, t]),
     j = i.useRef(null);
   return i.useEffect(() => {
-    let e;
-    let t = c.Z.theme,
+    let e, t = c.Z.theme,
       r = !1;
-    return null != v && (async () => {
+    return null != y && (async () => {
       let [{
         default: i
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? v.dark() : v.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? y.dark() : y.light()]);
       r || null == j.current || (e = i.loadAnimation({
         container: j.current,
         renderer: "svg",
@@ -72,14 +71,14 @@ function m(e) {
     })(), () => {
       r = !0, null != e && (e.destroy(), e = void 0)
     }
-  }, [v]), (0, r.jsx)(a.VqE, {
+  }, [y]), (0, r.jsx)(a.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, r.jsxs)("form", {
       className: h.contentWarningPopout,
-      onSubmit: y,
+      onSubmit: x,
       children: [(0, r.jsxs)("div", {
         className: h.body,
-        children: [null != v && (0, r.jsx)("div", {
+        children: [null != y && (0, r.jsx)("div", {
           className: h.animation,
           ref: j
         }), (0, r.jsxs)("div", {
@@ -99,7 +98,7 @@ function m(e) {
               children: [(0, r.jsx)(a.zxk, {
                 className: h.button,
                 color: a.zxk.Colors.PRIMARY,
-                onClick: x,
+                onClick: v,
                 children: p.NW.string(p.t.fsBWmZ)
               }), (0, r.jsx)(a.Text, {
                 variant: "text-xs/normal",
@@ -110,7 +109,7 @@ function m(e) {
               className: h.buttonContainer,
               children: [(0, r.jsx)(a.zxk, {
                 className: h.button,
-                onClick: y,
+                onClick: x,
                 type: "submit",
                 autoFocus: !0,
                 children: p.NW.string(p.t.KJnHq6)

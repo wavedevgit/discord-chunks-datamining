@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   BG: () => h,
@@ -36,13 +36,10 @@ async function b(e) {
     [h, f] = (0, l.d9)(e.id, [...t]),
     b = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts),
     x = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts, l.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) {
-    i.Z.show({
-      title: p.NW.string(p.t.iLdiqa),
-      body: p.NW.string(p.t.JOT74e)
-    });
-    return
-  }
+  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
+    title: p.NW.string(p.t.iLdiqa),
+    body: p.NW.string(p.t.JOT74e)
+  });
   if (d.Z.hasChanges()) {
     r.Z.dispatch({
       type: "GUILD_SETTINGS_DEFAULT_CHANNELS_SUBMIT"
@@ -60,7 +57,7 @@ async function b(e) {
       let {
         fieldName: e,
         error: t
-      } = null !== (j = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== j ? j : {};
+      } = null != (j = new s.Hx(n).getAnyErrorMessageAndField()) ? j : {};
       i.Z.show({
         title: p.NW.string(p.t.iLdiqa),
         body: [e, t].filter(c.lm).join(": ")

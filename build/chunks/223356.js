@@ -1,29 +1,29 @@
 /** Chunk was on 83051 **/
-i.d(t, {
+r.d(t, {
   Tj: () => m,
   WG: () => u,
-  ZD: () => v,
+  ZD: () => h,
   pD: () => d
-}), i(653041), i(266796);
-var r = i(990547);
-i(804098);
-var n = i(544891),
-  l = i(729345),
-  a = i(210887);
-i(358085);
-var o = i(573261),
-  s = i(981631),
-  c = i(388032);
+}), r(653041), r(266796);
+var n = r(990547);
+r(804098);
+var i = r(544891),
+  l = r(729345),
+  a = r(210887);
+r(358085);
+var o = r(573261),
+  s = r(981631),
+  c = r(388032);
 async function u() {
-  return (await n.tn.get({
+  return (await i.tn.get({
     url: s.ANM.BUG_REPORTS,
     rejectWithError: !1
   })).body
 }
 
 function d(e) {
-  var t, i;
-  return null !== (i = null !== (t = null == e ? void 0 : e.name) && void 0 !== t ? t : "" + (null == e ? void 0 : e.squad)) && void 0 !== i ? i : ""
+  var t, r;
+  return null != (r = null != (t = null == e ? void 0 : e.name) ? t : "" + (null == e ? void 0 : e.squad)) ? r : ""
 }
 
 function m() {
@@ -49,8 +49,8 @@ function m() {
     value: 3
   }]
 }
-async function v(e, t, i) {
-  var n, c;
+async function h(e, t, r) {
+  var i, c;
   let u = [{
     name: "name",
     value: e.name
@@ -74,12 +74,12 @@ async function v(e, t, i) {
     name: "build_override",
     value: e.buildOverride
   });
-  let d = null === (n = e.feature) || void 0 === n ? void 0 : n.asana_inbox_id;
+  let d = null == (i = e.feature) ? void 0 : i.asana_inbox_id;
   null != d && "" !== d && u.push({
     name: "asana_inbox_id",
     value: "".concat(d)
   });
-  let m = null === (c = e.feature) || void 0 === c ? void 0 : c.name;
+  let m = null == (c = e.feature) ? void 0 : c.name;
   null != m && "" !== m && u.push({
     name: "feature_name",
     value: m
@@ -108,10 +108,10 @@ async function v(e, t, i) {
   try {
     return await o.Z.post({
       url: s.ANM.BUG_REPORTS,
-      attachments: i,
+      attachments: r,
       fields: u,
       trackedActionData: {
-        event: r.NetworkActionNames.BUG_REPORT_SUBMIT,
+        event: n.NetworkActionNames.BUG_REPORT_SUBMIT,
         properties: {
           priority: e.priority,
           asana_inbox_id: d

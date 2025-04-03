@@ -7,14 +7,14 @@ n(192379);
 var l = n(392711),
   i = n(481060),
   a = n(388032),
-  o = n(417557);
+  o = n(646727);
 let s = e => {
   let t = (0, l.flatMap)(e.history, e => {
     var t;
     let {
       destination: [n],
       multiSelect: r
-    } = e, l = [null, null], i = Object.values(null !== (t = null == r ? void 0 : r.state) && void 0 !== t ? t : {});
+    } = e, l = [null, null], i = Object.values(null != (t = null == r ? void 0 : r.state) ? t : {});
     return i.length > 0 && (l[0] = i.join(", ")), "" !== n && (l[1] = n), l
   }).filter(e => null != e);
   return 0 === t.length ? null : (0, r.jsxs)("div", {

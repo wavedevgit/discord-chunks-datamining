@@ -18,7 +18,7 @@ var r = n(200651),
   b = n(981631),
   j = n(486324),
   x = n(388032),
-  h = n(771869);
+  h = n(240639);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -191,7 +191,7 @@ function A(e) {
       (0, c.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("59732"), n.e("10938")]).then(n.bind(n, 532595));
+        } = await Promise.all([n.e("59732"), n.e("58989")]).then(n.bind(n, 712451));
         return n => (0, r.jsx)(t, y({
           imageUri: o,
           file: new File([s], u, {
@@ -251,9 +251,9 @@ function A(e) {
   return (l.useEffect(() => {
     (0, p.N)()
   }, []), l.useEffect(() => {
-    !k && (g.length < w.current && null != T.current && requestAnimationFrame(() => {
+    k || (g.length < w.current && null != T.current && requestAnimationFrame(() => {
       var e;
-      null === (e = T.current) || void 0 === e || e.focus()
+      null == (e = T.current) || e.focus()
     }), w.current = g.length)
   }, [g.length, k]), O) ? (0, r.jsx)(c.$jN, {
     className: h.spinner

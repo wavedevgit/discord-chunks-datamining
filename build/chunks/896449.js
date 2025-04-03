@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(26033),
   m = n(178762),
   p = n(388032),
-  h = n(851386);
+  h = n(442826);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,7 +69,7 @@ function x(e) {
     label: p.NW.string(p.t["FfCL+/"])
   }), w = (0, d.dX)(y), Z = (0, c.Z)({
     location: "ContentPopoutContextMenu",
-    applicationId: w && !0 !== P ? null === (t = y.extra) || void 0 === t ? void 0 : t.application_id : void 0,
+    applicationId: w && !0 !== P ? null == (t = y.extra) ? void 0 : t.application_id : void 0,
     source: s.m1.ActivityCardContextMenu,
     trackEntryPointImpression: !0,
     sourceUserId: y.author_id

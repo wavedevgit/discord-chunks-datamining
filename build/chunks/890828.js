@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => G
 }), n(13667), n(390547), n(47120), n(230036), n(566702), n(653041), n(86693), n(536091);
@@ -16,9 +16,9 @@ var i = n(200651),
   f = n(473403),
   m = n(99214),
   g = n(46145),
-  v = n(886118),
-  y = n(301801),
-  O = n(814443),
+  y = n(886118),
+  O = n(301801),
+  v = n(814443),
   b = n(752048),
   _ = n(592125),
   E = n(984933),
@@ -31,7 +31,7 @@ var i = n(200651),
   Z = n(136015),
   w = n(981631),
   P = n(388032),
-  T = n(597646);
+  T = n(688095);
 let k = e => [e.userId, ... function(e) {
     let t = C.default.getUser(e.userId);
     if (null == t) return [];
@@ -40,21 +40,21 @@ let k = e => [e.userId, ... function(e) {
     return Array.from(new Set([n, i.nick, ...Object.values(i.names)].flat().filter(N.lm)))
   }(e)],
   D = {
-    searchType: v.S.FUZZY,
-    sortType: v.E.JARO_WINKLER,
+    searchType: y.S.FUZZY,
+    sortType: y.E.JARO_WINKLER,
     searchStringGenerator: e => {
       var t, n;
       let {
         channel: i,
         voiceStates: r
       } = e;
-      return [i.name, i.id, i.guild_id, null !== (n = null === (t = x.Z.getGuild(i.guild_id)) || void 0 === t ? void 0 : t.name) && void 0 !== n ? n : "", ...r.flatMap(e => k(e))].filter(N.lm)
+      return [i.name, i.id, i.guild_id, null != (n = null == (t = x.Z.getGuild(i.guild_id)) ? void 0 : t.name) ? n : "", ...r.flatMap(e => k(e))].filter(N.lm)
     },
     throttleMs: 100
   },
   A = {
-    searchType: v.S.FUZZY,
-    sortType: v.E.JARO_WINKLER,
+    searchType: y.S.FUZZY,
+    sortType: y.E.JARO_WINKLER,
     searchStringGenerator: k,
     throttleMs: 100
   },
@@ -63,14 +63,14 @@ let k = e => [e.userId, ... function(e) {
       channel: t,
       query: n
     } = e, [o] = (0, a.e7)([S.Z], () => [S.Z.getVoiceStatesForChannel(t.id), S.Z.getVoiceStateVersion()], [t.id], Z.Q), [l, c] = r.useState([]);
-    (0, y.BO)(n, Object.values(o), c, A);
+    (0, O.BO)(n, Object.values(o), c, A);
     let u = (0, a.Wu)([S.Z, C.default, b.Z, j.Z], () => Object.values(S.Z.getVoiceStatesForChannel(t.id)).map(e => C.default.getUser(e.userId)).filter(N.lm).sort((e, t) => {
         var i, r, o, a;
         if (l.length > 0 && "" !== n.trim()) {
           if (l.some(t => t.userId === e.id)) return -1;
           if (l.some(e => e.userId === t.id)) return 1
         }
-        return j.Z.isFriend(e.id) && !j.Z.isFriend(t.id) ? -1 : !j.Z.isFriend(e.id) && j.Z.isFriend(t.id) ? 1 : (null !== (o = null === (i = b.Z.getUserAffinity(t.id)) || void 0 === i ? void 0 : i.vcProbability) && void 0 !== o ? o : 0) - (null !== (a = null === (r = b.Z.getUserAffinity(e.id)) || void 0 === r ? void 0 : r.vcProbability) && void 0 !== a ? a : 0)
+        return j.Z.isFriend(e.id) && !j.Z.isFriend(t.id) ? -1 : !j.Z.isFriend(e.id) && j.Z.isFriend(t.id) ? 1 : (null != (o = null == (i = b.Z.getUserAffinity(t.id)) ? void 0 : i.vcProbability) ? o : 0) - (null != (a = null == (r = b.Z.getUserAffinity(e.id)) ? void 0 : r.vcProbability) ? a : 0)
       }), [t.id, l, n]),
       d = t.getGuildId(),
       p = Math.max(l.length, 2);
@@ -111,7 +111,7 @@ let k = e => [e.userId, ... function(e) {
         className: T.guildIconWrapper,
         children: (0, i.jsx)(d.b, {
           guildId: o.id,
-          guildName: null !== (t = o.name) && void 0 !== t ? t : P.NW.string(P.t.DmIUGB),
+          guildName: null != (t = o.name) ? t : P.NW.string(P.t.DmIUGB),
           guildIcon: o.icon,
           iconSize: 32
         })
@@ -128,7 +128,7 @@ let k = e => [e.userId, ... function(e) {
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([_.Z], () => _.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), v = (0, a.e7)([x.Z], () => x.Z.getGuild(g), [g]), y = (0, u.KS)(m, v), O = (null == o ? void 0 : o.id) === n, b = O ? "text-positive" : r ? "interactive-active" : "text-muted", E = O ? s.TVs.colors.TEXT_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
+    } = e, m = (0, a.e7)([_.Z], () => _.Z.getChannel(n), [n]), g = null == m ? void 0 : m.getGuildId(), y = (0, a.e7)([x.Z], () => x.Z.getGuild(g), [g]), O = (0, u.KS)(m, y), v = (null == o ? void 0 : o.id) === n, b = v ? "text-positive" : r ? "interactive-active" : "text-muted", E = v ? s.TVs.colors.TEXT_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
     return null == m ? null : (0, i.jsxs)(s.kL8, {
       className: l()(T.channelItemContainer, r && T.channelItemHighlighted),
       "aria-label": m.name,
@@ -144,20 +144,20 @@ let k = e => [e.userId, ... function(e) {
         className: T.channelItemNameContainer,
         children: [(0, i.jsxs)("div", {
           className: T.channelItemName,
-          children: [null != y ? (0, i.jsx)(y, {
+          children: [null != O ? (0, i.jsx)(O, {
             color: E,
             size: "xs",
             className: T.channelIcon
           }) : void 0, (0, i.jsx)(s.Text, {
-            variant: O ? "text-sm/semibold" : "text-sm/medium",
+            variant: v ? "text-sm/semibold" : "text-sm/medium",
             color: b,
             className: T.channelItemNameText,
             children: (0, c.F6)(m, C.default, j.Z)
           })]
         }), (0, i.jsx)(s.Text, {
-          variant: O ? "text-xs/semibold" : "text-xs/medium",
+          variant: v ? "text-xs/semibold" : "text-xs/medium",
           color: b,
-          children: null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : m.name
+          children: null != (t = null == y ? void 0 : y.name) ? t : m.name
         })]
       }), (0, i.jsx)("div", {
         className: T.channelItemAvatars,
@@ -233,9 +233,9 @@ function z(e) {
     friendVoiceChannelIds: c
   } = function() {
     let e = function() {
-        let e = (0, a.Wu)([C.default, j.Z, O.Z], () => j.Z.getFriendIDs().sort((e, t) => {
+        let e = (0, a.Wu)([C.default, j.Z, v.Z], () => j.Z.getFriendIDs().sort((e, t) => {
           var n, i, r, o;
-          return null == e && null == t ? 0 : null == e ? 1 : null == t ? -1 : (null !== (r = null === (n = O.Z.getUserAffinity(t)) || void 0 === n ? void 0 : n.affinity) && void 0 !== r ? r : 0) - (null !== (o = null === (i = O.Z.getUserAffinity(e)) || void 0 === i ? void 0 : i.affinity) && void 0 !== o ? o : 0)
+          return null == e && null == t ? 0 : null == e ? 1 : null == t ? -1 : (null != (r = null == (n = v.Z.getUserAffinity(t)) ? void 0 : n.affinity) ? r : 0) - (null != (o = null == (i = v.Z.getUserAffinity(e)) ? void 0 : i.affinity) ? o : 0)
         }).reduce((e, t) => {
           let n = C.default.getUser(t);
           return null != n && e.push(n), e
@@ -303,7 +303,7 @@ function G(e) {
     channel: e,
     voiceStates: Object.values(S.Z.getVoiceStatesForChannel(e.id)).filter(e => j.Z.isFriend(e.userId))
   })), []), [d, p] = r.useState(""), [h, f] = r.useState([]);
-  (0, y.BO)(d, u, f, D);
+  (0, O.BO)(d, u, f, D);
   let m = r.useCallback(e => {
       "Escape" === e.key && l()
     }, [l]),
@@ -313,10 +313,10 @@ function G(e) {
   r.useEffect(() => (document.addEventListener("keydown", m, !0), () => {
     document.removeEventListener("keydown", m, !0)
   }), [l, m]);
-  let v = "" !== d.trim(),
-    O = h.length > 20,
+  let y = "" !== d.trim(),
+    v = h.length > 20,
     b = {
-      count: O ? 20 : h.length
+      count: v ? 20 : h.length
     },
     _ = r.useMemo(() => ({
       onMouseDown: U,
@@ -364,15 +364,15 @@ function G(e) {
           "aria-label": P.NW.string(P.t.UyA6SU)
         }
       })
-    }), v ? (0, i.jsx)(V, {
-      sectionHeader: O ? P.NW.format(P.t.qdXiQ0, b) : P.NW.format(P.t["Aq+8wM"], b),
+    }), y ? (0, i.jsx)(V, {
+      sectionHeader: v ? P.NW.format(P.t.qdXiQ0, b) : P.NW.format(P.t["Aq+8wM"], b),
       channelIds: h.map(e => {
         let {
           channel: t
         } = e;
         return t.id
       }).slice(0, 20),
-      hasQuery: v,
+      hasQuery: y,
       query: d,
       currentVoiceChannel: o,
       onSelect: g

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => C,
@@ -22,26 +22,26 @@ var r = n(200651),
   x = n(981631),
   j = n(290511),
   N = n(388032),
-  v = n(80840);
+  _ = n(795808);
 
-function _(e) {
+function v(e) {
   let {
     guildId: t,
     prompts: n
   } = e, l = (0, s.e7)([m.Z], () => m.Z.editedDefaultChannelIds), [c, u] = (0, d.dF)(t, n, [...l]), g = c.length, p = c.length + u.length, h = g / p * 100, f = Math.max(Math.ceil(85 * p / 100) - g, 0), [b, x] = i.useState(!1), j = b ? a.CJ0 : a.u04;
   return (0, r.jsxs)("div", {
-    className: v.channelCoverage,
+    className: _.channelCoverage,
     children: [(0, r.jsxs)(a.P3F, {
-      className: v.coverageHeader,
+      className: _.coverageHeader,
       onClick: () => x(!b),
       children: [(0, r.jsxs)("div", {
-        className: v.warningTextContainer,
+        className: _.warningTextContainer,
         children: [h <= 85 && (0, r.jsx)(a.P4T, {
           size: "xs",
           color: "currentColor",
-          className: v.warning
+          className: _.warning
         }), (0, r.jsx)(a.Text, {
-          className: v.coverageTitle,
+          className: _.coverageTitle,
           variant: "text-xs/medium",
           color: "text-muted",
           children: N.NW.format(N.t.nMVKCQ, {
@@ -49,32 +49,32 @@ function _(e) {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: v.progressContainer,
+        className: _.progressContainer,
         children: [(0, r.jsx)(a.Exd, {
-          className: v.coverageProgress,
+          className: _.coverageProgress,
           foregroundColor: h > 85 ? "var(--status-positive)" : "var(--status-warning)",
           percent: h
         }), (0, r.jsx)(j, {
           size: "md",
           color: "currentColor",
-          className: v.caret
+          className: _.caret
         })]
       })]
     }), b ? (0, r.jsxs)("div", {
-      className: v.channelCoverageDetails,
+      className: _.channelCoverageDetails,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
         children: N.NW.string(N.t["0FM4i4"])
       }), (0, r.jsx)("div", {
-        className: v.channels,
+        className: _.channels,
         children: u.map(e => {
           var t;
-          let n = null !== (t = (0, o.KS)(e)) && void 0 !== t ? t : a.VL1;
+          let n = null != (t = (0, o.KS)(e)) ? t : a.VL1;
           return (0, r.jsx)("div", {
-            className: v.channelPill,
+            className: _.channelPill,
             children: (0, r.jsxs)(a.Text, {
-              className: v.channel,
+              className: _.channel,
               variant: "text-xs/normal",
               color: "interactive-active",
               children: [(0, r.jsx)(n, {
@@ -85,7 +85,7 @@ function _(e) {
           }, e.id)
         })
       }), (0, r.jsx)("div", {
-        className: v.channelCoverageHint,
+        className: _.channelCoverageHint,
         children: f > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.P4T, {
             size: "xs",
@@ -142,7 +142,7 @@ function O(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
-      className: v.header,
+      className: _.header,
       variant: "heading-lg/extrabold",
       children: d ? N.NW.string(N.t.AGjtFh) : N.NW.string(N.t.dqCzoa)
     }), (0, r.jsx)(a.Text, {
@@ -150,7 +150,7 @@ function O(e) {
       color: "header-secondary",
       children: N.NW.string(N.t["q/6MLC"])
     }), (0, r.jsxs)("div", {
-      className: v.links,
+      className: _.links,
       children: [(0, r.jsx)(a.eee, {
         target: "_blank",
         href: x.EYA.GUILD_ONBOARDING_EXAMPLES,
@@ -160,7 +160,7 @@ function O(e) {
           children: N.NW.string(N.t.Ok55Ki)
         })
       }), (0, r.jsx)("div", {
-        className: v.dot
+        className: _.dot
       }), (0, r.jsx)(a.eee, {
         onClick: C,
         children: (0, r.jsx)(a.Text, {
@@ -169,15 +169,15 @@ function O(e) {
           children: N.NW.string(N.t["6gsjdH"])
         })
       }), (0, r.jsx)("div", {
-        className: v.dot
+        className: _.dot
       }), (0, r.jsx)(f.Wu, {
         guildId: t.id
       })]
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(v, {
       guildId: t.id,
       prompts: o
     }), (0, r.jsx)("div", {
-      className: v.prompts,
+      className: _.prompts,
       children: l ? (0, r.jsx)(a.$jN, {}) : (0, r.jsx)(b.Z, {
         postjoinOnly: d,
         guildId: t.id

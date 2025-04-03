@@ -1,18 +1,18 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   s = n(192379),
   o = n(668826),
-  i = n(18582),
-  a = n(3072),
+  a = n(18582),
+  i = n(3072),
   c = n(763283),
   l = n(892689),
   u = n(477839),
-  d = n(884479),
+  d = n(622802),
   f = n(388032),
-  p = n(81781),
+  p = n(416927),
   m = n(733),
   g = n(768675),
   b = n(624868);
@@ -22,20 +22,20 @@ function h() {
   return 100 * Math.round(5e3 * Math.random() / 100)
 }
 
-function v(e) {
+function x(e) {
   let {
     isPaused: t,
     width: n,
-    height: v
-  } = e, x = (0, s.useRef)(), N = (0, s.useRef)(-1), [O, j] = (0, s.useState)(!1), Z = (0, s.useRef)(h()), _ = (0, a.eR)(y), P = e => {
+    height: x
+  } = e, N = (0, s.useRef)(), v = (0, s.useRef)(-1), [O, j] = (0, s.useState)(!1), Z = (0, s.useRef)(h()), _ = (0, i.eR)(y), P = e => {
     var t;
-    null === (t = x.current) || void 0 === t || t.removeDrop(e), Z.current = h(), j(!1), clearTimeout(N.current)
+    null == (t = N.current) || t.removeDrop(e), Z.current = h(), j(!1), clearTimeout(v.current)
   }, C = e => {
-    j(!0), _(), (0, o.KH)(u.yN.LOOTBOXES, Z.current), N.current = setTimeout(() => {
+    j(!0), _(), (0, o.KH)(u.yN.LOOTBOXES, Z.current), v.current = setTimeout(() => {
       P(e)
     }, 1e3)
   };
-  (0, s.useEffect)(() => () => clearTimeout(N.current), []);
+  (0, s.useEffect)(() => () => clearTimeout(v.current), []);
   let w = e => O ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.points,
@@ -52,7 +52,7 @@ function v(e) {
       width: 100,
       height: 100
     })]
-  }) : (0, r.jsx)(i.Z, {
+  }) : (0, r.jsx)(a.Z, {
     onClick: () => C(e),
     children: (0, r.jsx)("img", {
       src: g,
@@ -62,13 +62,13 @@ function v(e) {
     })
   });
   return (0, r.jsx)(l.Z, {
-    ref: x,
+    ref: N,
     isPaused: t,
     itemId: u.yN.LOOTBOXES,
     chance: .2,
     points: 0,
     width: n,
-    height: v,
+    height: x,
     dropPadding: 200,
     maxDrops: 1,
     children: e => (0, r.jsx)("div", {

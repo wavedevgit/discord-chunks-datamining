@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -18,7 +18,7 @@ function d(e) {
       let r = u.Z.getQuery(e),
         o = u.Z.getRawResults(e);
       if (null == r || null == o) return [];
-      let c = (0, i.nC)(null !== (n = r.content) && void 0 !== n ? n : "");
+      let c = (0, i.nC)(null != (n = r.content) ? n : "");
       return o.map(e => e.map(e => {
         let n = l.Z.getMessage(e.id, e.channel_id),
           r = (0, a.e5)(e);

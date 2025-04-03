@@ -1,77 +1,77 @@
-/** Chunk was on 96977 **/
-n.d(t, {
-  Z: () => g
+/** Chunk was on 77942 **/
+n.d(e, {
+  Z: () => f
 });
-var i = n(200651),
-  o = n(192379),
-  r = n(120356),
-  a = n.n(r),
+var o = n(200651),
+  r = n(192379),
+  i = n(120356),
+  a = n.n(i),
   l = n(53691),
   c = n(378879),
   s = n(981631),
-  d = n(486324),
-  u = n(388032),
-  _ = n(537993);
+  u = n(486324),
+  _ = n(388032),
+  d = n(826756);
 
-function g(e) {
+function f(t) {
   var {
-    uploadType: t,
+    uploadType: e,
     className: n
-  } = e, r = function(e, t) {
-    if (null == e) return {};
-    var n, i, o = function(e, t) {
-      if (null == e) return {};
-      var n, i, o = {},
-        r = Object.keys(e);
-      for (i = 0; i < r.length; i++) n = r[i], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
-    }(e, t);
+  } = t, i = function(t, e) {
+    if (null == t) return {};
+    var n, o, r = function(t, e) {
+      if (null == t) return {};
+      var n, o, r = {},
+        i = Object.keys(t);
+      for (o = 0; o < i.length; o++) n = i[o], e.indexOf(n) >= 0 || (r[n] = t[n]);
+      return r
+    }(t, e);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < r.length; i++) n = r[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      var i = Object.getOwnPropertySymbols(t);
+      for (o = 0; o < i.length; o++) n = i[o], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (r[n] = t[n])
     }
-    return o
-  }(e, ["uploadType", "className"]);
-  let g = o.useCallback(() => {
-      (0, c.s)(t, void 0)
-    }, [t]),
-    b = o.useMemo(() => {
-      switch (t) {
-        case d.pC.AVATAR:
-          return u.NW.format(u.t["pvw/HB"], {
-            onClick: g
+    return r
+  }(t, ["uploadType", "className"]);
+  let f = r.useCallback(() => {
+      (0, c.s)(e, void 0)
+    }, [e]),
+    m = r.useMemo(() => {
+      switch (e) {
+        case u.pC.AVATAR:
+          return _.NW.format(_.t["pvw/HB"], {
+            onClick: f
           });
-        case d.pC.BANNER:
-          return u.NW.format(u.t.aCrz1d, {
-            onClick: g
+        case u.pC.BANNER:
+          return _.NW.format(_.t.aCrz1d, {
+            onClick: f
           });
         default:
           return ""
       }
-    }, [t, g]);
-  return t !== d.pC.AVATAR && t !== d.pC.BANNER ? null : (0, i.jsx)(l.p, function(e) {
-    for (var t = 1; t < arguments.length; t++) {
-      var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+    }, [e, f]);
+  return e !== u.pC.AVATAR && e !== u.pC.BANNER ? null : (0, o.jsx)(l.p, function(t) {
+    for (var e = 1; e < arguments.length; e++) {
+      var n = null != arguments[e] ? arguments[e] : {},
+        o = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+        return Object.getOwnPropertyDescriptor(n, t).enumerable
+      }))), o.forEach(function(e) {
+        var o;
+        o = n[e], e in t ? Object.defineProperty(t, e, {
+          value: o,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = i
+        }) : t[e] = o
       })
     }
-    return e
+    return t
   }({
-    text: b,
-    button: u.NW.string(u.t.BmJkbW),
+    text: m,
+    button: _.NW.string(_.t.BmJkbW),
     buttonAnalyticsObject: {
       section: s.jXE.USER_PROFILE
     },
-    className: a()(_.container, n)
-  }, r))
+    className: a()(d.container, n)
+  }, i))
 }

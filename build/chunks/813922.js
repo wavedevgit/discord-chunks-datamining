@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(620436),
   m = n(273504),
   g = n(388032),
-  p = n(294269);
+  p = n(461367);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,21 +51,21 @@ function f(e, t) {
 function b(e) {
   var t, n, b, x, j, N;
   let {
-    rule: v,
-    onChangeRule: _
+    rule: _,
+    onChangeRule: v
   } = e, C = i.useCallback(e => {
-    _(f(h({}, v), {
-      triggerMetadata: f(h({}, v.triggerMetadata), {
+    v(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
-  }, [_, v]), O = i.useCallback(e => {
-    _(f(h({}, v), {
-      triggerMetadata: f(h({}, v.triggerMetadata), {
+  }, [v, _]), O = i.useCallback(e => {
+    v(f(h({}, _), {
+      triggerMetadata: f(h({}, _.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [_, v]);
+  }, [v, _]);
   return (0, r.jsxs)("div", {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
@@ -74,16 +74,16 @@ function b(e) {
       children: [(0, r.jsx)(o.Z, {
         onChangeText: C,
         maxWordCount: m.RH,
-        initialValue: null === (t = v.triggerMetadata) || void 0 === t ? void 0 : t.keywordFilter
+        initialValue: null == (t = _.triggerMetadata) ? void 0 : t.keywordFilter
       }), (0, r.jsx)(l.Z, {
-        rule: v,
-        onChangeRule: _,
-        collapsed: (null == v ? void 0 : null === (n = v.triggerMetadata) || void 0 === n ? void 0 : n.regexPatterns) == null || (null == v ? void 0 : null === (b = v.triggerMetadata) || void 0 === b ? void 0 : b.regexPatterns.length) === 0
+        rule: _,
+        onChangeRule: v,
+        collapsed: (null == _ || null == (n = _.triggerMetadata) ? void 0 : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? void 0 : b.regexPatterns.length) === 0
       }), (0, r.jsx)(s.Z, {
         onChange: O,
-        initialValue: null === (x = v.triggerMetadata) || void 0 === x ? void 0 : x.allowList,
+        initialValue: null == (x = _.triggerMetadata) ? void 0 : x.allowList,
         maxWordCount: m.n4,
-        collapsed: (null === (j = v.triggerMetadata) || void 0 === j ? void 0 : j.allowList) == null || (null === (N = v.triggerMetadata) || void 0 === N ? void 0 : N.allowList.length) === 0
+        collapsed: (null == (j = _.triggerMetadata) ? void 0 : j.allowList) == null || (null == (N = _.triggerMetadata) ? void 0 : N.allowList.length) === 0
       })]
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.ARROW_DOWN
@@ -91,8 +91,8 @@ function b(e) {
       step: 2,
       header: g.NW.string(g.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
-        rule: v,
-        onChangeRule: _
+        rule: _,
+        onChangeRule: v
       })
     }), (0, r.jsx)(u.Z, {
       type: u.Z.Type.CROSS
@@ -100,8 +100,8 @@ function b(e) {
       step: 3,
       header: g.NW.string(g.t.u5xPPT),
       children: (0, r.jsx)(c.Z, {
-        rule: v,
-        onChangeRule: _,
+        rule: _,
+        onChangeRule: v,
         onlyRoles: !0
       })
     })]

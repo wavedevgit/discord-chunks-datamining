@@ -5,13 +5,13 @@ r.d(t, {
 }), r(47120), r(411104);
 var n = r(200651),
   l = r(192379),
-  i = r(481060),
-  s = r(447097),
+  s = r(481060),
+  i = r(447097),
   o = r(873124),
   a = r(248902),
   c = r(160511),
-  d = r(51693),
-  u = r(973810),
+  u = r(51693),
+  d = r(973810),
   f = r(388032);
 
 function h(e) {
@@ -54,7 +54,7 @@ function p(e) {
     onEarlyClose: g,
     onClose: b,
     width: j = 440
-  } = e, [y, x] = l.useState(null !== (r = null === (t = f.methods[0]) || void 0 === t ? void 0 : t.type) && void 0 !== r ? r : "select"), [v, S] = l.useState(y), O = async e => {
+  } = e, [y, x] = l.useState(null != (r = null == (t = f.methods[0]) ? void 0 : t.type) ? r : "select"), [S, v] = l.useState(y), O = async e => {
     let {
       mfaType: t,
       data: r
@@ -70,35 +70,35 @@ function p(e) {
     setSlide: x,
     onClose: g
   };
-  return (0, n.jsxs)(i.MyZ, {
+  return (0, n.jsxs)(s.MyZ, {
     activeSlide: y,
     width: j,
-    onSlideReady: S,
-    children: [(0, n.jsx)(i.Mi4, {
+    onSlideReady: v,
+    children: [(0, n.jsx)(s.Mi4, {
       id: "select",
       children: (0, n.jsx)(a.Z, h({}, C))
-    }), (0, n.jsx)(i.Mi4, {
+    }), (0, n.jsx)(s.Mi4, {
       id: "webauthn",
-      children: (0, n.jsx)(u.Z, h({}, C))
-    }), (0, n.jsx)(i.Mi4, {
+      children: (0, n.jsx)(d.Z, h({}, C))
+    }), (0, n.jsx)(s.Mi4, {
       id: "totp",
-      children: (0, n.jsx)(d.Z, m(h({}, C), {
-        isSlideReady: "totp" === v
+      children: (0, n.jsx)(u.Z, m(h({}, C), {
+        isSlideReady: "totp" === S
       }))
-    }), (0, n.jsx)(i.Mi4, {
+    }), (0, n.jsx)(s.Mi4, {
       id: "sms",
       children: (0, n.jsx)(c.Z, m(h({}, C), {
-        isSlideReady: "sms" === v
+        isSlideReady: "sms" === S
       }))
-    }), (0, n.jsx)(i.Mi4, {
+    }), (0, n.jsx)(s.Mi4, {
       id: "backup",
-      children: (0, n.jsx)(s.Z, m(h({}, C), {
-        isSlideReady: "backup" === v
+      children: (0, n.jsx)(i.Z, m(h({}, C), {
+        isSlideReady: "backup" === S
       }))
-    }), (0, n.jsx)(i.Mi4, {
+    }), (0, n.jsx)(s.Mi4, {
       id: "password",
       children: (0, n.jsx)(o.Z, m(h({}, C), {
-        isSlideReady: "password" === v
+        isSlideReady: "password" === S
       }))
     })]
   })
@@ -109,23 +109,23 @@ function g(e) {
     mfaChallenge: t,
     finish: r,
     transitionState: l,
-    onClose: s
+    onClose: i
   } = e;
-  return (0, n.jsx)(i.Y0X, {
+  return (0, n.jsx)(s.Y0X, {
     transitionState: l,
-    size: i.CgR.SMALL,
+    size: s.CgR.SMALL,
     "aria-label": f.NW.string(f.t.saHocH),
     children: (0, n.jsx)(p, {
       mfaChallenge: t,
       mfaFinish: r,
-      onClose: s,
-      onEarlyClose: s
+      onClose: i,
+      onEarlyClose: i
     })
   })
 }
 
 function b(e, t, r) {
-  (0, i.h7j)(r => (0, n.jsx)(g, h({
+  (0, s.h7j)(r => (0, n.jsx)(g, h({
     finish: t,
     mfaChallenge: e
   }, r)), {

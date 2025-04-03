@@ -13,10 +13,8 @@ function t() {
 }
 
 function s() {
-  if (null == window.GLOBAL_ENV.DEV_SESSION_KEY) {
-    console.log("Meticulous token not found");
-    return
-  }(0, n.Rl)({
+  if (null == window.GLOBAL_ENV.DEV_SESSION_KEY) return void console.log("Meticulous token not found");
+  (0, n.Rl)({
     recordingToken: window.GLOBAL_ENV.DEV_SESSION_KEY,
     isProduction: !1
   }), null != window.DiscordDevSession && (window.DiscordDevSession.started = !0), console.log("Meticulous session recording started")

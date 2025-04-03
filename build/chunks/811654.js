@@ -13,8 +13,8 @@ var n = r(524846),
   c = r(594174),
   s = r(483360),
   u = r(823379),
-  d = r(5192),
-  p = r(280501);
+  p = r(5192),
+  d = r(280501);
 r(892902);
 let f = 1e3;
 
@@ -40,14 +40,14 @@ function b(e, t, r) {
     });
   return [...c.map(e => {
     var t;
-    let l = d.ZP.getNickname(n.getGuildId(), r, e.user);
+    let l = p.ZP.getNickname(n.getGuildId(), r, e.user);
     return {
-      type: p.tM.USER,
+      type: d.tM.USER,
       value: e.user.id,
-      label: null !== (t = null != l ? l : e.user.globalName) && void 0 !== t ? t : e.user.username
+      label: null != (t = null != l ? l : e.user.globalName) ? t : e.user.username
     }
   }), ...u.map(e => ({
-    type: p.tM.ROLE,
+    type: d.tM.ROLE,
     value: e.id,
     label: e.name
   }))]
@@ -61,7 +61,7 @@ function O(e, t, r) {
     channelTypes: r,
     limit: 15
   }).channels.map(e => ({
-    type: p.tM.CHANNEL,
+    type: d.tM.CHANNEL,
     value: e.id,
     label: e.name
   }))
@@ -79,9 +79,9 @@ function y(e, t) {
         if (null == r) return null;
         let n = null != l ? o.ZP.getNick(l.id, r.id) : void 0;
         return {
-          type: p.tM.USER,
+          type: d.tM.USER,
           value: r.id,
-          label: null !== (t = null != n ? n : r.globalName) && void 0 !== t ? t : r.username
+          label: null != (t = null != n ? n : r.globalName) ? t : r.username
         }
       }
       case n.$.ROLE: {
@@ -89,7 +89,7 @@ function y(e, t) {
         let t = a.Z.getRole(l.id, e.id);
         if (null == t) return null;
         return {
-          type: p.tM.ROLE,
+          type: d.tM.ROLE,
           value: t.id,
           label: t.name
         }
@@ -99,7 +99,7 @@ function y(e, t) {
         let t = i.Z.getChannel(e.id);
         if (null == t || t.guild_id !== l.id || r.length > 0 && !r.includes(t.type)) return null;
         return {
-          type: p.tM.CHANNEL,
+          type: d.tM.CHANNEL,
           value: t.id,
           label: t.name
         }

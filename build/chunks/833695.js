@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -34,16 +34,16 @@ function N(e) {
   var t, n, l;
   let {
     guildId: h
-  } = e, N = (0, f.Z)(h), v = (0, a.f3)(), _ = (0, i.e7)([p.Z], () => p.Z.getGuild());
-  return N.loading || null == _ ? (0, r.jsx)(s.$jN, {}) : null == N.application ? (0, r.jsx)(u.Z, {
-    guild: _
+  } = e, N = (0, f.Z)(h), _ = (0, a.f3)(), v = (0, i.e7)([p.Z], () => p.Z.getGuild());
+  return N.loading || null == v ? (0, r.jsx)(s.$jN, {}) : null == N.application ? (0, r.jsx)(u.Z, {
+    guild: v
   }) : (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(c.Z, {
       revenue: N.metrics.revenue,
       revenueTrend: N.metrics.revenuePctChange,
       summaryMetricLabel: x.NW.string(x.t.R3PCmZ),
-      summaryMetricValue: null !== (n = N.metrics.paymentsCount) && void 0 !== n ? n : "-",
-      summaryMetricTrend: null !== (l = N.metrics.paymentsCountChange) && void 0 !== l ? l : 0,
+      summaryMetricValue: null != (n = N.metrics.paymentsCount) ? n : "-",
+      summaryMetricTrend: null != (l = N.metrics.paymentsCountChange) ? l : 0,
       summaryMetricTrendIsPercent: !1,
       children: (0, r.jsx)(b.Z, {
         guildId: h,
@@ -54,11 +54,11 @@ function N(e) {
       children: (0, r.jsx)(o.Z, {
         ListingIdLabel: j,
         payoutsByPeriod: N.payoutsByPeriod,
-        team: null === (t = N.application) || void 0 === t ? void 0 : t.team
+        team: null == (t = N.application) ? void 0 : t.team
       })
     }), (0, r.jsx)(s.hjN, {
       title: x.NW.string(x.t.O8cDAA),
-      disabled: v,
+      disabled: _,
       children: (0, r.jsx)(m.Z, {
         guildId: h,
         application: N.application

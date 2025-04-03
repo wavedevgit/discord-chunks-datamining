@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  M: () => y
+  M: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -20,7 +20,7 @@ var r = n(200651),
   _ = n(981631),
   C = n(388032);
 
-function v(e) {
+function y(e) {
   let {
     senderId: t,
     channelId: n,
@@ -54,40 +54,40 @@ function v(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     channelId: t,
-    warningId: y,
-    senderId: x
+    warningId: x,
+    senderId: v
   } = e, {
     isBlocked: j
   } = (0, o.cj)([p.Z], () => ({
-    isBlocked: p.Z.isBlocked(x)
-  }), [x]), O = i.useCallback(() => {
-    (0, h.T)(t, [y])
-  }, [t, y]), E = (0, b.C2)(), N = i.useCallback(e => () => {
-    s.Z.blockUser(x, {
+    isBlocked: p.Z.isBlocked(v)
+  }), [v]), O = i.useCallback(() => {
+    (0, h.T)(t, [x])
+  }, [t, x]), E = (0, b.C2)(), N = i.useCallback(e => () => {
+    s.Z.blockUser(v, {
       location: b.zr
     }).then(() => {
       O()
     }), (0, m.qc)({
       channelId: t,
-      warningId: y,
-      senderId: x,
+      warningId: x,
+      senderId: v,
       warningType: f.pj.STRANGER_DANGER,
       cta: e
     })
-  }, [O, t, y, x]);
+  }, [O, t, x, v]);
   i.useEffect(() => {
     (0, m.MC)(_.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: y,
-      senderId: x,
+      warningId: x,
+      senderId: v,
       warningType: f.pj.STRANGER_DANGER
     }), c.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     })
-  }, [t, y, x]);
+  }, [t, x, v]);
   let I = () => {
       (0, a.ZDy)(async () => {
         let {
@@ -102,8 +102,8 @@ function y(e) {
             transitionState: i,
             onClose: l,
             channelId: t,
-            warningId: y,
-            senderId: x,
+            warningId: x,
+            senderId: v,
             description: C.NW.string(C.t.DJMZX1),
             safetyTipRows: E.map((e, t) => (0, r.jsx)(u.q, {
               index: t,
@@ -111,10 +111,10 @@ function y(e) {
               title: e
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(v, {
-                senderId: x,
+              children: [(0, r.jsx)(y, {
+                senderId: v,
                 channelId: t,
-                warningId: y
+                warningId: x
               }, "more-tips-button"), (0, r.jsx)(d.ZP, {
                 title: C.NW.string(C.t["5QYPOz"]),
                 description: C.NW.string(C.t.G08MKi),
@@ -133,7 +133,7 @@ function y(e) {
       (0, a.ZDy)(async () => {
         let {
           default: o
-        } = await Promise.all([n.e("97652"), n.e("66357")]).then(n.bind(n, 744373));
+        } = await Promise.all([n.e("97652"), n.e("3078")]).then(n.bind(n, 744373));
         return n => {
           var a, s;
           return (0, r.jsx)(o, (a = function(e) {
@@ -154,13 +154,13 @@ function y(e) {
             }
             return e
           }({}, n), s = s = {
-            userId: x,
+            userId: v,
             confirmBlock: N(e),
             onCancel: () => {
               null == l || l(), (0, m.qc)({
                 channelId: t,
-                warningId: y,
-                senderId: x,
+                warningId: x,
+                senderId: v,
                 warningType: f.pj.STRANGER_DANGER,
                 cta: i
               })
@@ -180,8 +180,8 @@ function y(e) {
     };
   return (0, r.jsx)(g.Q, {
     channelId: t,
-    warningId: y,
-    senderId: x,
+    warningId: x,
+    senderId: v,
     warningType: f.pj.STRANGER_DANGER,
     header: C.NW.string(C.t.iOkDpK),
     description: C.NW.string(C.t.ISUbcH),
@@ -192,8 +192,8 @@ function y(e) {
       onclick: () => {
         I(), (0, m.qc)({
           channelId: t,
-          warningId: y,
-          senderId: x,
+          warningId: x,
+          senderId: v,
           warningType: f.pj.STRANGER_DANGER,
           cta: m.NM.OPEN_MORE_TIPS
         })

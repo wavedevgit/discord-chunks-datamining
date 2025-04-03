@@ -30,7 +30,7 @@ var l = n(200651),
   b = n(308083),
   D = n(372897),
   C = n(388032),
-  G = n(283197);
+  G = n(411114);
 
 function A(e) {
   var {
@@ -126,7 +126,7 @@ function L(e) {
     if (null != f) return () => (0, T.gp)(f.guild_id, f.id)
   }, [f]);
   if (null == f || !S) return null;
-  let O = null !== (t = (0, d.KS)(f)) && void 0 !== t ? t : o.VL1;
+  let O = null != (t = (0, d.KS)(f)) ? t : o.VL1;
   return (0, l.jsx)(A, {
     variant: "channel",
     channelId: s,
@@ -145,10 +145,10 @@ function P(e) {
   var t;
   let {
     guildId: n
-  } = e, i = (0, a.e7)([O.Z], () => O.Z.getNewMemberActions(n), [n]), c = (0, a.e7)([_.Z], () => _.Z.getCompletedActions(n)), d = (0, a.e7)([g.ZP], () => g.ZP.getSelfMember(n)), I = (0, a.e7)([f.Z], () => f.Z.getGuild(n)), p = null != I ? (0, m.ky)(I.id, null === (t = I.profile) || void 0 === t ? void 0 : t.badge, b.NC.SIZE_16) : null, E = (0, a.e7)([h.Z], () => h.Z.getRequest(n));
+  } = e, i = (0, a.e7)([O.Z], () => O.Z.getNewMemberActions(n), [n]), c = (0, a.e7)([_.Z], () => _.Z.getCompletedActions(n)), d = (0, a.e7)([g.ZP], () => g.ZP.getSelfMember(n)), I = (0, a.e7)([f.Z], () => f.Z.getGuild(n)), p = null != I ? (0, m.ky)(I.id, null == (t = I.profile) ? void 0 : t.badge, b.NC.SIZE_16) : null, E = (0, a.e7)([h.Z], () => h.Z.getRequest(n));
   r.useEffect(() => {
     var e;
-    null == c && (null == d ? void 0 : d.flags) != null && (0, x.yE)(null !== (e = d.flags) && void 0 !== e ? e : 0, D.q.STARTED_HOME_ACTIONS) && (0, T.Fg)(n)
+    null == c && (null == d ? void 0 : d.flags) != null && (0, x.yE)(null != (e = d.flags) ? e : 0, D.q.STARTED_HOME_ACTIONS) && (0, T.Fg)(n)
   }, [c, n, null == d ? void 0 : d.flags]);
   let S = r.useCallback(() => {
     null != I && null != I.rulesChannelId && (0, T.gp)(I.id, I.rulesChannelId)

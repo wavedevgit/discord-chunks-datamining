@@ -151,7 +151,7 @@ function C(e) {
       hasNonShopLayer: e
     }
   }), v = m || b && y;
-  return (0, r.jsx)(f.E, g(h({
+  return (0, r.jsx)(f.E9, g(h({
     backgroundElementRef: t,
     onGetBoundingRect: _.dG4
   }, A), {

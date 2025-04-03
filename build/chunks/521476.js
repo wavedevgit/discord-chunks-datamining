@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   h: () => p
 }), n(47120);
@@ -11,7 +11,7 @@ var i = n(481060),
   s = n(295474),
   c = n(981631),
   u = n(388032),
-  d = n(592442);
+  d = n(269200);
 
 function p(e) {
   var t, n;
@@ -20,7 +20,7 @@ function p(e) {
   } = e, {
     analyticsLocations: h
   } = (0, o.ZP)(l.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [f, m] = (0, s.ww)({
-    guildId: null !== (t = null == p ? void 0 : p.id) && void 0 !== t ? t : c.lds,
+    guildId: null != (t = null == p ? void 0 : p.id) ? t : c.lds,
     analyticsLocations: h,
     openWithoutBackstack: !0
   }), g = m ? u.NW.string(u.t["9ph2v7"]) : u.NW.string(u.t.ldh9Cg), b = m ? u.NW.string(u.t["/PGQf3"]) : u.NW.string(u.t.WikgZ2);
@@ -32,7 +32,7 @@ function p(e) {
         className: d.bannerIcon
       }),
       bannerHeader: u.NW.format(u.t.kcYdTk, {
-        guildName: null !== (n = null == p ? void 0 : p.name) && void 0 !== n ? n : ""
+        guildName: null != (n = null == p ? void 0 : p.name) ? n : ""
       }),
       bannerSubtext: g,
       containerStyles: d.bannerContainer,

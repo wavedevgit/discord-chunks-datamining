@@ -12,8 +12,8 @@ var i, r = n(200651),
   c = n.n(a),
   u = n(481060),
   d = n(981631),
-  h = n(85482),
-  p = n(913208);
+  h = n(556875),
+  p = n(893354);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -175,11 +175,11 @@ b.Background = e => {
       if ("string" == typeof t.type) return s.cloneElement(t, {
         style: l
       });
-      if (i.includes(t.type)) return (0, r.jsx)(O.Provider, {
-        value: l,
-        children: t
-      });
       {
+        if (i.includes(t.type)) return (0, r.jsx)(O.Provider, {
+          value: l,
+          children: t
+        });
         let e = t.type.displayName;
         throw Error("Widget.Background cannot be wrapped around ".concat(e, ". Pass a DOM node or one of ").concat(i.map(e => "Widget." + e.name).join(",")))
       }

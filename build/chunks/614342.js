@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -18,7 +18,7 @@ function d(e) {
       return {
         visibility: t, noticeText: c.NW.string(c.t["0Z2Qxs"]), ctaLabel: c.NW.string(c.t.BOJpl5), ctaClickable: null != e, onCtaClicked() {
           var t;
-          i()(null != e, "Guild must be not null open COMMUNITY settings"), a.Z.open(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "", o.pNK.COMMUNITY)
+          i()(null != e, "Guild must be not null open COMMUNITY settings"), a.Z.open(null != (t = null == e ? void 0 : e.id) ? t : "", o.pNK.COMMUNITY)
         }
       };
     case l.d5.WAITLIST_ONLY:

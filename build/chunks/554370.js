@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => er
 }), n(653041), n(47120);
@@ -16,9 +16,9 @@ var i = n(200651),
   f = n(70097),
   m = n(74299),
   g = n(199902),
-  v = n(592125),
-  y = n(430824),
-  O = n(131951),
+  y = n(592125),
+  O = n(430824),
+  v = n(131951),
   b = n(944486),
   _ = n(556296),
   E = n(808506),
@@ -45,7 +45,7 @@ var i = n(200651),
   G = n(987650),
   F = n(757744),
   B = n(981631),
-  H = n(689273);
+  H = n(960972);
 let Y = !C.isPlatformEmbedded && !1,
   Q = Y ? (0, i.jsx)(f.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
@@ -209,11 +209,11 @@ function er(e) {
     let e = r.useRef(!1),
       t = (0, V.pL)(),
       n = b.Z.getVoiceChannelId(),
-      i = v.Z.getChannel(n),
-      o = null != i ? y.Z.getGuild(i.guild_id) : null,
+      i = y.Z.getChannel(n),
+      o = null != i ? O.Z.getGuild(i.guild_id) : null,
       l = null != g.Z.getCurrentUserActiveStream(),
       a = null != n,
-      s = (0, m.Z)(O.Z) && !l && null != t,
+      s = (0, m.Z)(v.Z) && !l && null != t,
       c = a && null != o && null != n,
       {
         allowActivityWidget: u
@@ -222,7 +222,7 @@ function er(e) {
       var i;
       if (e.current) return;
       e.current = !0;
-      let r = null !== (i = E.default.getFocusedPID()) && void 0 !== i ? i : (0, N.getPID)();
+      let r = null != (i = E.default.getFocusedPID()) ? i : (0, N.getPID)();
       if (R.default.hasChangedRenderMode(r)) return;
       let l = W.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.WELCOME_GENERAL),
         a = W.Z.isNotificationDisabled(w.OverlayNotificationDisabledSetting.GO_LIVE_NUDGE),

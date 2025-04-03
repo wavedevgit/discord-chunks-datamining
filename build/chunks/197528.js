@@ -16,17 +16,16 @@ var a = n(200651),
   h = n(314897),
   x = n(643366),
   m = n(94628),
-  v = n(659154),
-  b = n(581690),
+  b = n(659154),
+  v = n(581690),
   C = n(902928),
   _ = n(521937),
   g = n(981631),
-  N = n(781385);
+  N = n(350730);
 let y = n(575703);
 
 function j() {
-  let e;
-  let t = (0, l.TH)(),
+  let e, t = (0, l.TH)(),
     [n, d] = r.useState(() => {
       if (t.pathname === g.Z5c.ACTIVATE_HANDOFF) {
         let {
@@ -72,7 +71,7 @@ function j() {
     I = !0;
   switch (n.type) {
     case "handoff":
-      e = (0, a.jsx)(b.c, {
+      e = (0, a.jsx)(v.c, {
         code: n.code
       }), I = !1;
       break;
@@ -97,7 +96,7 @@ function j() {
       });
       break;
     case "error":
-      e = (0, a.jsx)(v.c, {
+      e = (0, a.jsx)(b.c, {
         onTryAgain: w
       });
       break;

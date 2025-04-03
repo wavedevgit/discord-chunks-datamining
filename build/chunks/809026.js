@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 function r(e) {
   if ((null == e ? void 0 : e.fields) == null) return null;
   let t = {},
@@ -30,7 +30,7 @@ function r(e) {
   }
   if (null != n.name) {
     var r;
-    n.animated = null !== (r = n.animated) && void 0 !== r && r, t.victorEmoji = n
+    n.animated = null != (r = n.animated) && r, t.victorEmoji = n
   }
   return t
 }

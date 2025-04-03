@@ -5,21 +5,21 @@ n.d(t, {
 var i = n(200651),
   r = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   c = n(481060),
   s = n(367907),
-  d = n(895924),
-  u = n(970321),
+  u = n(895924),
+  d = n(970321),
   p = n(311819),
   m = n(433534),
   f = n(299206),
   h = n(726721),
   b = n(726521),
-  v = n(973616),
-  C = n(914010),
-  _ = n(594174),
-  x = n(626135),
+  C = n(973616),
+  _ = n(914010),
+  x = n(594174),
+  v = n(626135),
   y = n(572004),
   N = n(630388),
   g = n(135431),
@@ -29,7 +29,7 @@ var i = n(200651),
   A = n(314734),
   O = n(981631),
   I = n(388032),
-  S = n(172772);
+  S = n(640724);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,16 +70,16 @@ function R(e) {
     context: R,
     className: w,
     sectionName: k
-  } = e, Z = r.useRef(null), M = (0, a.e7)([j.Z], () => j.Z.entrypoint()), D = (0, P.L1)(l), W = (0, m.E)(D), U = (0, u.R)(l.id), B = (0, a.e7)([C.Z], () => {
+  } = e, Z = r.useRef(null), M = (0, o.e7)([j.Z], () => j.Z.entrypoint()), D = (0, P.L1)(l), W = (0, m.E)(D), U = (0, d.R)(l.id), B = (0, o.e7)([_.Z], () => {
     var e;
-    return null !== (e = C.Z.getGuildId()) && void 0 !== e ? e : void 0
+    return null != (e = _.Z.getGuildId()) ? e : void 0
   }, []), H = {
-    location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
+    location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: l.id,
     section_name: k,
     source: j.Z.lastShownEntrypoint()
-  }, V = _.default.getCurrentUser(), F = h.Z.useExperiment({
-    location: d.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
+  }, V = x.default.getCurrentUser(), F = h.Z.useExperiment({
+    location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
   }, {
     autoTrackExposure: !0
   }).enabled, z = (0, f.Z)({
@@ -87,7 +87,7 @@ function R(e) {
     label: I.NW.string(I.t["+NP/b2"])
   }), G = (0, E.P)({
     application: l
-  }), q = (0, N.yE)(null !== (t = l.flags) && void 0 !== t ? t : 0, O.udG.EMBEDDED), X = "channel" === R.type ? R.channel : void 0;
+  }), q = (0, N.yE)(null != (t = l.flags) ? t : 0, O.udG.EMBEDDED), X = "channel" === R.type ? R.channel : void 0;
   return (0, i.jsxs)("div", {
     className: S.container,
     children: [(0, i.jsx)(c.P3F, {
@@ -98,12 +98,12 @@ function R(e) {
         }) : (0, p.J)(T({
           id: l.id
         }, D));
-        (0, y.JG)(e), x.default.track(O.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, y.JG)(e), v.default.track(O.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: M
         }), (0, c.showToast)((0, c.createToast)(I.NW.string(I.t["L/PwZW"]), c.ToastType.SUCCESS))
       },
-      className: o()(S.clickable, w),
+      className: a()(S.clickable, w),
       "aria-label": I.NW.string(I.t.WqhZsr),
       children: (0, i.jsx)(c.xPt, {
         size: "sm",
@@ -129,7 +129,7 @@ function R(e) {
                 (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([n.e("74891"), n.e("77803"), n.e("65057")]).then(n.bind(n, 7225));
+                  } = await Promise.all([n.e("74891"), n.e("77803"), n.e("53458")]).then(n.bind(n, 7225));
                   return t => (0, i.jsx)(e, {
                     transitionState: t.transitionState,
                     onClose: t.onClose,
@@ -152,7 +152,7 @@ function R(e) {
                   source: "app_launcher_app_details"
                 }))
               }
-            }) : null, F && l instanceof v.ZP ? (0, i.jsx)(c.sNh, {
+            }) : null, F && l instanceof C.ZP ? (0, i.jsx)(c.sNh, {
               id: "report-app",
               color: "danger",
               label: I.NW.string(I.t.jhJze3),
@@ -161,7 +161,7 @@ function R(e) {
                 (0, b.uu)({
                   application: l,
                   entrypoint: "app_launcher",
-                  contextualGuildId: null !== (e = null == X ? void 0 : X.getGuildId()) && void 0 !== e ? e : void 0,
+                  contextualGuildId: null != (e = null == X ? void 0 : X.getGuildId()) ? e : void 0,
                   contextualChannelId: null == X ? void 0 : X.id
                 })
               }
@@ -177,7 +177,7 @@ function R(e) {
         innerRef: Z
       }, e), {
         onClick: e.onClick,
-        className: o()(S.clickable, w),
+        className: a()(S.clickable, w),
         "aria-label": I.NW.string(I.t.UKOtz8),
         children: (0, i.jsx)(c.xhG, {
           size: "sm",

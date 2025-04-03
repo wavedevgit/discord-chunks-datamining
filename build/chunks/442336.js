@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -57,12 +57,12 @@ function b(e) {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let v = e => {
+  let y = e => {
       e.shiftKey ? a.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !n
       }, u.UE.muted(!n)) : C(e => !e)
     },
-    y = f.NW.string(f.t.h850Sk);
+    x = f.NW.string(f.t.h850Sk);
   return (0, r.jsx)(o.yRy, {
     shouldShow: _,
     animation: o.yRy.Animation.NONE,
@@ -81,10 +81,10 @@ function b(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(d.ZP.Icon, g(m({}, e), {
-        onClick: v,
-        tooltip: i ? null : y,
+        onClick: y,
+        tooltip: i ? null : x,
         icon: n || b !== h.bL.ALL_MESSAGES ? o.owu : o.Dkj,
-        "aria-label": y,
+        "aria-label": x,
         selected: i
       }))
     }

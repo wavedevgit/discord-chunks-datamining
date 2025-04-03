@@ -1,18 +1,18 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => g
 }), n(411104), n(266796);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(149765),
   s = n(481060),
   c = n(208884),
   d = n(453628),
   u = n(996987),
-  p = n(669866),
-  m = n(685786);
+  p = n(326946),
+  m = n(20493);
 class b extends i.PureComponent {
   getOverwriteValue(e) {
     let {
@@ -79,34 +79,34 @@ class b extends i.PureComponent {
       title: t,
       description: n,
       helpdeskArticleId: i,
-      flag: o
+      flag: l
     } = e, {
       permissions: a,
       locked: d,
       permissionRender: m
-    } = this.props, b = null == m ? void 0 : m(o), g = !!(d || b), f = "string" == typeof b ? this.renderDisabledIndicator(b) : null, h = l()({
+    } = this.props, b = null == m ? void 0 : m(l), g = !!(d || b), f = "string" == typeof b ? this.renderDisabledIndicator(b) : null, h = o()({
       [p.title]: null != f
     });
     return null == a ? (0, r.jsxs)(u.Z, {
       disabled: g,
-      value: this.getOverwriteValue(o),
-      onChange: e => this.handleChange(o, e),
+      value: this.getOverwriteValue(l),
+      onChange: e => this.handleChange(l, e),
       note: (0, c._u)(n),
       helpdeskArticleId: i,
       children: [f, (0, r.jsx)("span", {
         className: h,
         children: t
       })]
-    }, String(o)) : (0, r.jsxs)(s.j7V, {
+    }, String(l)) : (0, r.jsxs)(s.j7V, {
       disabled: g,
-      value: this.getPermissionValue(o, a),
-      onChange: e => this.handleChange(o, e),
+      value: this.getPermissionValue(l, a),
+      onChange: e => this.handleChange(l, e),
       note: (0, c._u)(n),
       children: [f, (0, r.jsx)("span", {
         className: h,
         children: t
       })]
-    }, String(o))
+    }, String(l))
   }
   render() {
     let {

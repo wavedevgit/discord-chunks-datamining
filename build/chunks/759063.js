@@ -1,15 +1,15 @@
 /** Chunk was on 43353 **/
-t.d(n, {
+e.d(n, {
   Z: () => a
 });
-var e = t(799761);
+var t = e(799761);
 let a = {
   ordinalNumber: function(i, n) {
-    var t, e = String(null == n ? void 0 : n.unit),
+    var e, t = String(null == n ? void 0 : n.unit),
       a = Number(i);
-    return t = "date" === e ? 3 === a || 23 === a ? "-є" : "-е" : "minute" === e || "second" === e || "hour" === e ? "-а" : "-й", a + t
+    return e = "date" === t ? 3 === a || 23 === a ? "-є" : "-е" : "minute" === t || "second" === t || "hour" === t ? "-а" : "-й", a + e
   },
-  era: (0, e.Z)({
+  era: (0, t.Z)({
     values: {
       narrow: ["до н.е.", "н.е."],
       abbreviated: ["до н. е.", "н. е."],
@@ -17,7 +17,7 @@ let a = {
     },
     defaultWidth: "wide"
   }),
-  quarter: (0, e.Z)({
+  quarter: (0, t.Z)({
     values: {
       narrow: ["1", "2", "3", "4"],
       abbreviated: ["1-й кв.", "2-й кв.", "3-й кв.", "4-й кв."],
@@ -28,7 +28,7 @@ let a = {
       return i - 1
     }
   }),
-  month: (0, e.Z)({
+  month: (0, t.Z)({
     values: {
       narrow: ["С", "Л", "Б", "К", "Т", "Ч", "Л", "С", "В", "Ж", "Л", "Г"],
       abbreviated: ["січ.", "лют.", "берез.", "квіт.", "трав.", "черв.", "лип.", "серп.", "верес.", "жовт.", "листоп.", "груд."],
@@ -42,7 +42,7 @@ let a = {
     },
     defaultFormattingWidth: "wide"
   }),
-  day: (0, e.Z)({
+  day: (0, t.Z)({
     values: {
       narrow: ["Н", "П", "В", "С", "Ч", "П", "С"],
       short: ["нд", "пн", "вт", "ср", "чт", "пт", "сб"],
@@ -51,7 +51,7 @@ let a = {
     },
     defaultWidth: "wide"
   }),
-  dayPeriod: (0, e.Z)({
+  dayPeriod: (0, t.Z)({
     values: {
       narrow: {
         am: "ДП",

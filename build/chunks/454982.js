@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
@@ -6,10 +6,10 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(484614),
-  o = n(313201),
-  l = n(518638),
+  l = n(313201),
+  o = n(518638),
   c = n(388032),
-  d = n(673611);
+  d = n(302291);
 
 function u(e) {
   let {
@@ -48,11 +48,11 @@ let m = function(e) {
     code: m,
     outboundPromotion: g,
     transitionState: p
-  } = e, [h, f] = i.useState(null), b = (0, o.Dt)();
+  } = e, [h, f] = i.useState(null), b = (0, l.Dt)();
   return i.useEffect(() => {
-    null == m && (0, l.A2)(g.id).then(e => n(e)).catch(e => {
+    null == m && (0, o.A2)(g.id).then(e => n(e)).catch(e => {
       var t;
-      return f(null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.code)
+      return f(null == e || null == (t = e.body) ? void 0 : t.code)
     })
   }, [m, g.id, n]), (0, r.jsx)(s.Y0X, {
     transitionState: p,
@@ -99,7 +99,7 @@ let m = function(e) {
         children: [(0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.BRAND,
           onClick: () => {
-            let e = (0, l.BU)(m, g);
+            let e = (0, o.BU)(m, g);
             window.open(e, "_blank")
           },
           children: c.NW.string(c.t["+zx47e"])

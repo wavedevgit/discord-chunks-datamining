@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(142550),
   g = n(981631),
   x = n(388032),
-  v = n(625184);
+  v = n(304222);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -123,7 +123,7 @@ let b = (e, t) => {
         },
         r = n => {
           var r;
-          null == n.target || (null == t ? void 0 : null === (r = t.current) || void 0 === r ? void 0 : r.contains(null == n ? void 0 : n.target)) || e()
+          null != n.target && ((null == t || null == (r = t.current) ? void 0 : r.contains(null == n ? void 0 : n.target)) || e())
         };
       return document.addEventListener("keydown", n), document.addEventListener("mousedown", r), () => {
         document.removeEventListener("keydown", n), document.removeEventListener("mousedown", r)

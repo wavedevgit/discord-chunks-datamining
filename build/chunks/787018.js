@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   W: () => N
 }), t(47120), t(266796);
@@ -15,16 +15,16 @@ var r = t(200651),
   p = t(5192),
   b = t(785717),
   y = t(221292),
-  v = t(687158),
-  m = t(471879),
-  g = t(502762),
-  I = t(848780),
-  j = t(907179);
+  m = t(687158),
+  g = t(471879),
+  I = t(502762),
+  j = t(848780),
+  v = t(907179);
 t(475413);
 var h = t(228168),
   _ = t(981631),
   x = t(388032),
-  O = t(63408),
+  O = t(17291),
   Z = t(161068);
 
 function P(e) {
@@ -73,7 +73,7 @@ function N(e) {
   }, {
     icon: c.owK,
     description: x.NW.string(L ? x.t.QxrDY2 : x.t.W6fjkZ)
-  }], U = (0, v.ZP)(n.id, C ? w : void 0), D = o.createRef();
+  }], U = (0, m.ZP)(n.id, C ? w : void 0), D = o.createRef();
   return (0, r.jsx)(d.Gt, {
     value: R,
     children: (0, r.jsx)(b.Mt, {
@@ -83,7 +83,7 @@ function N(e) {
         className: O.root,
         hideShadow: !0,
         "aria-label": x.NW.string(x.t["3N/J2t"]),
-        children: (0, r.jsx)(g.Z, {
+        children: (0, r.jsx)(I.Z, {
           user: n,
           displayProfile: U,
           profileType: h.y0.FULL_SIZE,
@@ -97,7 +97,7 @@ function N(e) {
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
               className: l()(O.body, O.bodySpacing),
-              children: [(0, r.jsx)(m.i, {
+              children: [(0, r.jsx)(g.i, {
                 user: n,
                 guildId: w
               }), (0, r.jsxs)("div", {
@@ -128,7 +128,7 @@ function N(e) {
                 })
               }), (0, r.jsxs)(c.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(j.Z, {
+                children: [(0, r.jsx)(v.Z, {
                   size: c.PhG.MEDIUM,
                   isBlocked: L,
                   onClick: () => {
@@ -137,7 +137,7 @@ function N(e) {
                       analyticsLocations: R
                     }, M))
                   }
-                }), (0, r.jsx)(I.Z, {
+                }), (0, r.jsx)(j.Z, {
                   userId: n.id,
                   onClick: () => {
                     null == T || T(), (0, y.pQ)(P({

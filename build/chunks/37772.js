@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => F
 });
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(481060),
   c = n(25610),
   u = n(628238),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(592125),
   _ = n(699516),
   b = n(709054),
-  v = n(594173),
-  x = n(786761),
-  y = n(493892),
-  E = n(901461),
+  x = n(594173),
+  y = n(786761),
+  E = n(493892),
+  v = n(901461),
   O = n(739566),
   N = n(443877),
   j = n(492593),
@@ -36,8 +36,8 @@ var r = n(200651),
   k = n(834129),
   R = n(981631),
   D = n(388032),
-  L = n(577178),
-  M = n(649547);
+  L = n(758010),
+  M = n(30804);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,52 +72,72 @@ function U(e, t) {
 }
 let F = i.memo(function e(t) {
   var n, i;
-  let a;
-  let {
-    channel: s,
-    message: k,
-    compact: L = !1,
-    className: F,
-    onContextMenu: G,
-    onClick: H,
-    disableInteraction: V = !1,
-    hasThread: z,
-    treatSpam: K
-  } = t, Y = R.OBS.has(k.type) ? k.messageReference : void 0, X = (0, l.e7)([f.Z], () => f.Z.getMessageByReference(Y)), q = (0, l.e7)([g.Z], () => k.type === R.uaV.THREAD_STARTER_MESSAGE && X.state === f.Y.LOADED ? g.Z.getChannel(X.message.channel_id) : null), Q = h.x4.useSetting(), J = h.RS.useSetting(), $ = h.NA.useSetting(), ee = h.QK.useSetting(), et = (0, u.A)((null !== (n = k.editedTimestamp) && void 0 !== n ? n : k.timestamp).valueOf()), en = (0, d.Z)(null == s ? void 0 : s.id), {
-    disableReactionCreates: er
-  } = (0, N.Z)(s), {
-    content: ei,
-    hasSpoilerEmbeds: ea
-  } = (0, I.Z)(k, {
-    hideSimpleEmbedContent: J && $,
-    allowList: et,
-    allowHeading: et,
-    allowLinks: !0,
-    previewLinkTarget: !0
-  }), eo = (0, O.ZP)(k), el = null !== (i = k.getGuildId()) && void 0 !== i ? i : void 0, es = (0, m.Z)(eo), ec = (0, l.e7)([g.Z], () => k.hasFlag(R.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(k.id))), eu = k.type === R.uaV.THREAD_STARTER_MESSAGE && X.state === f.Y.LOADED && null != q, ed = !eu && void 0 === a, ep = (0, S.Z)({
-    message: k,
-    channel: s,
-    enabled: ed
-  }), em = (0, c.V)(s.id, k.author.id), ef = (0, v.ro)(k.id, k.channel_id), eh = (0, p.Z)(k);
+  let a, {
+      channel: s,
+      message: k,
+      compact: L = !1,
+      className: F,
+      onContextMenu: G,
+      onClick: H,
+      disableInteraction: V = !1,
+      hasThread: z,
+      treatSpam: K
+    } = t,
+    Y = R.OBS.has(k.type) ? k.messageReference : void 0,
+    X = (0, o.e7)([f.Z], () => f.Z.getMessageByReference(Y)),
+    q = (0, o.e7)([g.Z], () => k.type === R.uaV.THREAD_STARTER_MESSAGE && X.state === f.Y.LOADED ? g.Z.getChannel(X.message.channel_id) : null),
+    Q = h.x4.useSetting(),
+    J = h.RS.useSetting(),
+    $ = h.NA.useSetting(),
+    ee = h.QK.useSetting(),
+    et = (0, u.A)((null != (n = k.editedTimestamp) ? n : k.timestamp).valueOf()),
+    en = (0, d.Z)(null == s ? void 0 : s.id),
+    {
+      disableReactionCreates: er
+    } = (0, N.Z)(s),
+    {
+      content: ei,
+      hasSpoilerEmbeds: ea
+    } = (0, I.Z)(k, {
+      hideSimpleEmbedContent: J && $,
+      allowList: et,
+      allowHeading: et,
+      allowLinks: !0,
+      previewLinkTarget: !0
+    }),
+    el = (0, O.ZP)(k),
+    eo = null != (i = k.getGuildId()) ? i : void 0,
+    es = (0, m.Z)(el),
+    ec = (0, o.e7)([g.Z], () => k.hasFlag(R.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(k.id))),
+    eu = k.type === R.uaV.THREAD_STARTER_MESSAGE && X.state === f.Y.LOADED && null != q,
+    ed = !eu && void 0 === a,
+    ep = (0, S.Z)({
+      message: k,
+      channel: s,
+      enabled: ed
+    }),
+    em = (0, c.V)(s.id, k.author.id),
+    ef = (0, x.ro)(k.id, k.channel_id),
+    eh = (0, p.Z)(k);
   return eu ? (0, r.jsx)(e, U(W({}, t), {
     message: X.message,
     channel: q,
     hasThread: !1
-  })) : (_.Z.isBlockedForMessage(k) ? a = D.t["+FcYMz"] : _.Z.isIgnoredForMessage(k) ? a = D.t.VFWjc3 : (0, y.DQ)(k) && K && (a = D.t.xfkfTE), void 0 !== a) ? (0, r.jsx)(B, {
+  })) : (_.Z.isBlockedForMessage(k) ? a = D.t["+FcYMz"] : _.Z.isIgnoredForMessage(k) ? a = D.t.VFWjc3 : (0, E.DQ)(k) && K && (a = D.t.xfkfTE), void 0 !== a) ? (0, r.jsx)(B, {
     className: F,
     compact: L,
     count: 1,
     collapsedReason: a
   }) : (0, r.jsx)(j.Z, {
     compact: L,
-    className: o()(F, {
-      [M.ephemeral]: (0, x.Pv)(k),
+    className: l()(F, {
+      [M.ephemeral]: (0, y.Pv)(k),
       [M.disableInteraction]: V,
       [M.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, Z.Z)(k, s, Y, X, L),
     childrenHeader: (0, P.Z)(U(W({}, t), {
-      author: eo,
+      author: el,
       guildId: s.guild_id
     })),
     childrenAccessories: (0, r.jsx)(C.BB, {
@@ -151,9 +171,9 @@ let F = i.memo(function e(t) {
     onClick: H,
     hasThread: !1 !== z && null != ec && k.hasFlag(R.iLy.HAS_THREAD),
     hasReply: k.type === R.uaV.REPLY,
-    isSystemMessage: (0, E.Z)(k),
+    isSystemMessage: (0, v.Z)(k),
     messageRef: ep,
-    guildId: el,
+    guildId: eo,
     authorHasGradientRole: es
   })
 });

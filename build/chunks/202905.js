@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  r: () => v
+  r: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -19,7 +19,7 @@ var r = n(200651),
   f = n(651390),
   b = n(981631),
   x = n(388032),
-  j = n(217288);
+  j = n(98574);
 let N = {
   id: "0",
   name: "",
@@ -40,25 +40,25 @@ let N = {
   badgeColorSecondary: null
 };
 
-function v(e) {
+function _(e) {
   let {
     pendingFields: t
   } = e, {
     guild: n,
-    guildProfile: v
+    guildProfile: _
   } = (0, l.cj)([p.Z], () => ({
     guild: p.Z.getGuild(),
     guildProfile: p.Z.getGuildProfile()
-  })), _ = null == n ? void 0 : n.id, C = (0, l.e7)([c.Z], () => c.Z.get(_)), {
+  })), v = null == n ? void 0 : n.id, C = (0, l.e7)([c.Z], () => c.Z.get(v)), {
     fetchGuildProfile: O
-  } = (0, d.u)(_), y = (null == v ? void 0 : v.visibility) == null || !s.Y.VISIBLE.has(null == v ? void 0 : v.visibility), I = (null == v ? void 0 : v.visibility) === s.k.PUBLIC_WITH_RECRUITMENT, E = (0, g.Dj)({
-    guildId: _,
+  } = (0, d.u)(v), y = (null == _ ? void 0 : _.visibility) == null || !s.Y.VISIBLE.has(null == _ ? void 0 : _.visibility), I = (null == _ ? void 0 : _.visibility) === s.k.PUBLIC_WITH_RECRUITMENT, E = (0, g.Dj)({
+    guildId: v,
     location: "recruitment"
   });
   i.useEffect(() => {
-    null != _ && O()
-  }, [_, O]);
-  let S = i.useMemo(() => null == n || null == v ? N : v, [n, v]),
+    null != v && O()
+  }, [v, O]);
+  let S = i.useMemo(() => null == n || null == _ ? N : _, [n, _]),
     T = i.useCallback(() => {
       (null == n ? void 0 : n.id) != null && (I ? m.Z.updateGuildProfile(n.id, {
         visibility: s.k.PUBLIC

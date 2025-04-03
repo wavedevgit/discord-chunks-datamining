@@ -28,8 +28,7 @@ let E = "YYYYMMDDTHHmmss",
 
 function _(e, t, n, l) {
   var o, _, w;
-  let T;
-  let W = (0, u.e7)([p.ZP], () => p.ZP.isActive(e)),
+  let T, W = (0, u.e7)([p.ZP], () => p.ZP.isActive(e)),
     Z = (0, v.zI)(null != e ? e : "", l),
     S = (0, u.e7)([p.ZP], () => p.ZP.getGuildScheduledEvent(e), [e]),
     x = (0, u.e7)([f.Z], () => f.Z.getGuild(t), [t]);
@@ -40,15 +39,15 @@ function _(e, t, n, l) {
   }) : j.NW.string(j.t.VSgOVl);
   let D = c()(S.scheduled_start_time),
     A = null != S.scheduled_end_time ? c()(S.scheduled_end_time) : D,
-    I = null != S.description && "" !== S.description ? g.ZP.unparse(S.description, null !== (o = null == n ? void 0 : n.id) && void 0 !== o ? o : N.lds, !0) : "",
+    I = null != S.description && "" !== S.description ? g.ZP.unparse(S.description, null != (o = null == n ? void 0 : n.id) ? o : N.lds, !0) : "",
     C = (0, h.KV)(S.recurrence_rule),
     R = null != C ? (0, y.Ho)(C) : null,
     {
       startTime: M,
       endTime: k
     } = Z,
-    G = null !== (_ = c()(M)) && void 0 !== _ ? _ : D,
-    U = null !== (w = c()(null != k ? k : M)) && void 0 !== w ? w : D,
+    G = null != (_ = c()(M)) ? _ : D,
+    U = null != (w = c()(null != k ? k : M)) ? w : D,
     L = () => {
       let e = i()();
       e.createEvent({
@@ -76,7 +75,7 @@ function _(e, t, n, l) {
             details: I,
             action: "TEMPLATE",
             location: T,
-            recur: null != t ? null === (e = P.exec(t)) || void 0 === e ? void 0 : e[0] : void 0
+            recur: null != t ? null == (e = P.exec(t)) ? void 0 : e[0] : void 0
           },
           r = "https://calendar.google.com/calendar/render?".concat((0, a.stringify)(n));
         window.open(r, "_blank")

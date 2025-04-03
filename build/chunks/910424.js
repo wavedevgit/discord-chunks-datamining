@@ -17,7 +17,7 @@ var l = n(442837),
   m = n(915863),
   g = n(981631),
   b = n(388032),
-  O = n(515914);
+  O = n(128746);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -97,7 +97,7 @@ function v(e) {
       children: e => (0, r.jsx)(m.Z, h(y(h(y({}, e), {
         onClick: () => {
           var t;
-          null === (t = e.onClick) || void 0 === t || t.call(e), C(!0)
+          null == (t = e.onClick) || t.call(e), C(!0)
         }
       }), A), {
         className: O.iconButton,

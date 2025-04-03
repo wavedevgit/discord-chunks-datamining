@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(410030),
   p = n(607070),
   h = n(466794),
-  f = n(390674),
+  f = n(70547),
   m = n(546240),
   g = n(952009);
 
@@ -25,9 +25,9 @@ function b(e) {
     canToggle: b,
     iconAltText: _,
     onChange: C,
-    tooltipColor: v,
-    className: y,
-    id: x = "fancybutton-toggle",
+    tooltipColor: y,
+    className: x,
+    id: v = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != v ? v : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != y ? y : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -58,12 +58,12 @@ function b(e) {
         }
         "function" == typeof O && O()
       },
-      id: x,
+      id: v,
       type: "checkbox",
       disabled: E
     }), (0, r.jsxs)("label", {
-      htmlFor: x,
-      className: o()(f.label, y, {
+      htmlFor: v,
+      className: o()(f.label, x, {
         [f.transition]: I,
         [f.labelChecked]: t,
         [f.labelUnchecked]: !t && !b

@@ -14,7 +14,7 @@ class p extends(l = o.ZP.Store) {
   }
   getTemplateWithCategory(e, t) {
     var n;
-    return null === (n = c[e]) || void 0 === n ? void 0 : n.find(e => e.category === t)
+    return null == (n = c[e]) ? void 0 : n.find(e => e.category === t)
   }
   getChannel(e) {
     return d[e]

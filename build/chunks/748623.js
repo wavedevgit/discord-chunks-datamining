@@ -25,7 +25,7 @@ function f(e) {
   return (0, r.jsx)(l.Z, {
     withTitleBar: a.isPlatformEmbedded && !b,
     windowKey: n,
-    title: null !== (t = null == f ? void 0 : f.name) && void 0 !== t ? t : p.NW.string(p.t.IC5Anp),
+    title: null != (t = null == f ? void 0 : f.name) ? t : p.NW.string(p.t.IC5Anp),
     children: (0, r.jsx)(s.Z, {})
   })
 }

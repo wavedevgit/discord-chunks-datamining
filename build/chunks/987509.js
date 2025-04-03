@@ -61,21 +61,20 @@ function g(e) {
 }
 
 function j(e, t) {
-  let n;
-  let r = new Set;
+  let n, r = new Set;
   if (null != t)
     for (let e of t) r.add(e);
   let l = [];
   for (let t of e)
-    if (null != t) {
-      if (t.type === s.h8.HEADER) n = t;
-      else {
-        let {
-          id: e
-        } = t.record;
-        r.has(e) || (r.add(e), null != n && (l.push(n), n = void 0), l.push(t))
-      }
-    } return l
+    if (null == t) continue;
+    else if (t.type === s.h8.HEADER) n = t;
+  else {
+    let {
+      id: e
+    } = t.record;
+    r.has(e) || (r.add(e), null != n && (l.push(n), n = void 0), l.push(t))
+  }
+  return l
 }
 
 function x(e, t) {

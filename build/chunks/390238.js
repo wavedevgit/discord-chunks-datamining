@@ -6,8 +6,8 @@ var r = n(200651),
   t = n(192379),
   o = n(120356),
   d = n.n(o),
-  i = n(48026),
-  s = n(442837),
+  s = n(48026),
+  i = n(442837),
   l = n(481060),
   c = n(607070),
   u = n(530618),
@@ -19,10 +19,10 @@ var r = n(200651),
   x = n(566078),
   N = n(644646),
   j = n(114732),
-  v = n(46140),
-  _ = n(675654),
+  _ = n(46140),
+  v = n(675654),
   w = n(388032),
-  p = n(468983);
+  p = n(502896);
 
 function R(e) {
   var a;
@@ -32,7 +32,7 @@ function R(e) {
     quest: h,
     location: g,
     reward: N
-  } = e, v = t.useRef(null), [w, R] = t.useState(null), S = t.useRef(new i.qA), y = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), A = t.useMemo(() => (0, f.fh)(h, f.eC.HERO), [h]), M = (null === (a = h.userStatus) || void 0 === a ? void 0 : a.claimedAt) != null, [T, q] = t.useState(M ? "claimed" : "loading");
+  } = e, _ = t.useRef(null), [w, R] = t.useState(null), S = t.useRef(new s.qA), y = (0, i.e7)([c.Z], () => c.Z.useReducedMotion), A = t.useMemo(() => (0, f.fh)(h, f.eC.HERO), [h]), M = (null == (a = h.userStatus) ? void 0 : a.claimedAt) != null, [T, q] = t.useState(M ? "claimed" : "loading");
   t.useEffect(() => {
     if (!M) {
       let e = x.r.build(h.config),
@@ -42,12 +42,12 @@ function R(e) {
   }, [h, g, M]);
   let B = "loading" === T;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.O_, {
+    children: [(0, r.jsx)(s.O_, {
       ref: R,
       className: p.confettiCanvas,
       environment: S.current
     }), (0, r.jsx)("div", {
-      ref: v,
+      ref: _,
       children: (0, r.jsx)(l.Y0X, {
         transitionState: n,
         size: l.CgR.DYNAMIC,
@@ -68,10 +68,10 @@ function R(e) {
         })
       })
     }), !y && !M && "claimed" === T && (0, r.jsx)(u.Z, {
-      confettiTarget: v.current,
+      confettiTarget: _.current,
       confettiCanvas: w,
-      sprites: _.CA,
-      colors: _.Br
+      sprites: v.CA,
+      colors: v.Br
     })]
   })
 }
@@ -106,7 +106,7 @@ function k(e) {
             learnMoreStyle: null,
             quest: a,
             questContent: o,
-            location: v.dr.INGAME_REWARD_MODAL
+            location: _.dr.INGAME_REWARD_MODAL
           })
         }), (0, r.jsx)(l.olH, {
           className: p.close,
@@ -143,12 +143,12 @@ function S(e) {
     location: n,
     onClose: o,
     transitionState: d
-  } = e, i = t.useMemo(() => (0, g.K)(a.config), [a]);
-  return null == i ? null : (0, r.jsx)(R, {
+  } = e, s = t.useMemo(() => (0, g.K)(a.config), [a]);
+  return null == s ? null : (0, r.jsx)(R, {
     onClose: o,
     transitionState: d,
     quest: a,
     location: n,
-    reward: i
+    reward: s
   })
 }

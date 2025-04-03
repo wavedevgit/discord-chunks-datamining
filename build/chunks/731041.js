@@ -19,41 +19,37 @@ function i(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 var l = t.active = function(e) {
-  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "span";
-  return function(r) {
-    function n() {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, n);
-      for (var r, l, s, u = arguments.length, c = Array(u), p = 0; p < u; p++) c[p] = arguments[p];
-      return l = s = i(this, (r = n.__proto__ || Object.getPrototypeOf(n)).call.apply(r, [this].concat(c))), s.state = {
+  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "span",
+    r = a.default.Component;
+  if ("function" != typeof r && null !== r) throw TypeError("Super expression must either be null or a function, not " + typeof r);
+
+  function n() {
+    if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
+    for (var r, l, s, u = arguments.length, c = Array(u), p = 0; p < u; p++) c[p] = arguments[p];
+    return l = s = i(this, (r = n.__proto__ || Object.getPrototypeOf(n)).call.apply(r, [this].concat(c))), s.state = {
+      active: !1
+    }, s.handleMouseDown = function() {
+      return s.setState({
+        active: !0
+      })
+    }, s.handleMouseUp = function() {
+      return s.setState({
         active: !1
-      }, s.handleMouseDown = function() {
-        return s.setState({
-          active: !0
-        })
-      }, s.handleMouseUp = function() {
-        return s.setState({
-          active: !1
-        })
-      }, s.render = function() {
-        return a.default.createElement(t, {
-          onMouseDown: s.handleMouseDown,
-          onMouseUp: s.handleMouseUp
-        }, a.default.createElement(e, o({}, s.props, s.state)))
-      }, i(s, l)
+      })
+    }, s.render = function() {
+      return a.default.createElement(t, {
+        onMouseDown: s.handleMouseDown,
+        onMouseUp: s.handleMouseUp
+      }, a.default.createElement(e, o({}, s.props, s.state)))
+    }, i(s, l)
+  }
+  return n.prototype = Object.create(r && r.prototype, {
+    constructor: {
+      value: n,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
     }
-    return ! function(e, t) {
-      if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-      e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-          value: e,
-          enumerable: !1,
-          writable: !0,
-          configurable: !0
-        }
-      }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }(n, r), n
-  }(a.default.Component)
+  }), r && (Object.setPrototypeOf ? Object.setPrototypeOf(n, r) : n.__proto__ = r), n
 };
 t.default = l

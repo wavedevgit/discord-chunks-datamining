@@ -1,8 +1,8 @@
 /** Chunk was on 98350 **/
 n.d(t, {
-  ZP: () => _,
+  ZP: () => v,
   k: () => b,
-  u9: () => v
+  u9: () => _
 }), n(47120);
 var i = n(200651);
 n(192379);
@@ -39,7 +39,7 @@ let b = () => [{
     value: E.Oe.ALWAYS,
     label: N.NW.string(N.t.r3LawM)
   }],
-  v = e => {
+  _ = e => {
     let t = e > 0 ? a()().add(e, "second").toISOString() : null;
     return {
       muted: !0,
@@ -50,10 +50,10 @@ let b = () => [{
     }
   };
 
-function _(e, t) {
+function v(e, t) {
   let [n, r] = (0, l.Wu)([f.ZP], () => [f.ZP.isChannelMuted(e.guild_id, e.id), f.ZP.getChannelMuteConfig(e.guild_id, e.id)]), a = (0, d.U)(r), E = (0, O.ZP)(e, !0);
 
-  function _(t) {
+  function v(t) {
     t && e.type === p.d4z.GUILD_CATEGORY && (0, u.c4)(e.id), s.Z.updateChannelOverrideSettings(e.guild_id, e.id, {
       muted: t
     }, g.UE.muted(t))
@@ -81,12 +81,12 @@ function _(e, t) {
     id: "unmute-channel",
     label: y,
     subtext: a,
-    action: () => _(!1)
+    action: () => v(!1)
   }) : (0, i.jsx)(o.sNh, {
     id: "mute-channel",
     label: h,
     action: () => {
-      _(!0), (0, c.s)({
+      v(!0), (0, c.s)({
         channelId: e.id,
         location: "channel_context_menu"
       })
@@ -101,7 +101,7 @@ function _(e, t) {
         label: a,
         action: () => (function(n) {
           e.type === p.d4z.GUILD_CATEGORY && (0, u.c4)(e.id);
-          let i = v(n);
+          let i = _(n);
           s.Z.updateChannelOverrideSettings(e.guild_id, e.id, i, g.ZB.Muted, t)
         })(r)
       }, r)

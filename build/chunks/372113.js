@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(467628),
   b = n(75137),
   C = n(373370),
-  v = n(566078),
-  N = n(65443),
+  N = n(566078),
+  v = n(65443),
   y = n(160766),
   O = n(340100),
   T = n(644646),
@@ -33,7 +33,7 @@ var r = n(200651),
   R = n(46140),
   _ = n(981631),
   I = n(388032),
-  D = n(127999);
+  D = n(717735);
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -122,7 +122,7 @@ function k(e) {
         color: l.Ttl.BRAND,
         disabled: null == b.onClick,
         submitting: p,
-        onClick: null !== (t = b.onClick) && void 0 !== t ? t : () => {},
+        onClick: null != (t = b.onClick) ? t : () => {},
         children: (0, r.jsx)("div", {
           className: D.ctaButtonInner,
           children: b.text
@@ -145,7 +145,7 @@ let L = e => {
     xboxAndPlaystationAccounts: J
   } = (0, x.z6)(), $ = (0, p.O5)(), ee = (0, j.j)({
     location: R.dr.QUESTS_BAR_MOBILE
-  }), et = s.useMemo(() => v.r.build(t.config), [t.config]), en = (0, x.Rf)(t), er = (0, C.DD)({
+  }), et = s.useMemo(() => N.r.build(t.config), [t.config]), en = (0, x.Rf)(t), er = (0, C.DD)({
     quest: t,
     taskDetails: en,
     location: R.dr.QUESTS_CARD,
@@ -205,7 +205,7 @@ let L = e => {
           children: g ? I.NW.formatToPlainString(I.t["ge+AJi"], {
             questName: t.config.messages.questName
           }) : K
-        }), ee ? (0, r.jsx)(N.Z, {
+        }), ee ? (0, r.jsx)(v.Z, {
           textColor: "text-muted",
           quest: t,
           withRewardName: !0
@@ -221,19 +221,19 @@ let L = e => {
               sharedQuestFields: u,
               withCopySimplification: p,
               collectibleQuestRewardDescription: g
-            } = e, h = (null === (t = a.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, j = h && (null === (n = a.userStatus) || void 0 === n ? void 0 : n.claimedAt) != null, C = (0, x.B6)(null === (r = a.userStatus) || void 0 === r ? void 0 : r.completedAt, {
+            } = e, h = (null == (t = a.userStatus) ? void 0 : t.completedAt) != null, j = h && (null == (n = a.userStatus) ? void 0 : n.claimedAt) != null, C = (0, x.B6)(null == (r = a.userStatus) ? void 0 : r.completedAt, {
               year: "numeric",
               month: "long",
               day: "numeric"
-            }), v = (0, f.oo)({
+            }), N = (0, f.oo)({
               quest: a
-            }), N = u.defaultReward.messages.nameWithArticle, y = u.defaultReward.messages.nameWithArticle, O = p ? y : N, T = (0, f.Kr)(a.config), E = (0, f.b7)(a), q = (0, b.U)();
+            }), v = u.defaultReward.messages.nameWithArticle, y = u.defaultReward.messages.nameWithArticle, O = p ? y : v, T = (0, f.Kr)(a.config), E = (0, f.b7)(a), q = (0, b.U)();
             if (j) {
-              let e = v ? (0, f.o9)({
+              let e = N ? (0, f.o9)({
                   quest: a,
-                  idx: null === (s = a.userStatus) || void 0 === s ? void 0 : s.claimedTier
+                  idx: null == (s = a.userStatus) ? void 0 : s.claimedTier
                 }) : null,
-                t = null !== (o = null == e ? void 0 : e.messages.nameWithArticle) && void 0 !== o ? o : null;
+                t = null != (o = null == e ? void 0 : e.messages.nameWithArticle) ? o : null;
               return null != t ? I.NW.formatToPlainString(I.t.RrxtPT, {
                 reward: t,
                 date: C
@@ -242,18 +242,18 @@ let L = e => {
                 date: C
               })
             }
-            if (h) return v ? I.NW.formatToPlainString(I.t.l1jCMz, {
+            if (h) return N ? I.NW.formatToPlainString(I.t.l1jCMz, {
               date: C
             }) : I.NW.formatToPlainString(I.t.zNoqRU, {
               reward: O,
               date: C
             });
-            let S = v ? (0, f.o9)({
+            let S = N ? (0, f.o9)({
               quest: a,
               idx: 0
             }) : null;
             return c ? I.NW.formatToPlainString(I.t.DT3aub, {
-              reward: null !== (i = null == S ? void 0 : S.messages.nameWithArticle) && void 0 !== i ? i : O
+              reward: null != (i = null == S ? void 0 : S.messages.nameWithArticle) ? i : O
             }) : null != S && null != S.approximateCount ? I.NW.format(I.t["4bMK19"], {
               maxReward: S.messages.nameWithArticle,
               maxRewardCount: (0, m.Bs)(S.approximateCount, l),

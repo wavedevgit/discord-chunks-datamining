@@ -11,39 +11,38 @@ var r = function() {
         return t[0] === e && (n = r, !0)
       }), n
     }
-    return function() {
-      function e() {
-        this.__entries__ = []
+
+    function e() {
+      this.__entries__ = []
+    }
+    return Object.defineProperty(e.prototype, "size", {
+      get: function() {
+        return this.__entries__.length
+      },
+      enumerable: !0,
+      configurable: !0
+    }), e.prototype.get = function(e) {
+      var n = t(this.__entries__, e),
+        r = this.__entries__[n];
+      return r && r[1]
+    }, e.prototype.set = function(e, n) {
+      var r = t(this.__entries__, e);
+      ~r ? this.__entries__[r][1] = n : this.__entries__.push([e, n])
+    }, e.prototype.delete = function(e) {
+      var n = this.__entries__,
+        r = t(n, e);
+      ~r && n.splice(r, 1)
+    }, e.prototype.has = function(e) {
+      return !!~t(this.__entries__, e)
+    }, e.prototype.clear = function() {
+      this.__entries__.splice(0)
+    }, e.prototype.forEach = function(t, e) {
+      void 0 === e && (e = null);
+      for (var n = 0, r = this.__entries__; n < r.length; n++) {
+        var i = r[n];
+        t.call(e, i[1], i[0])
       }
-      return Object.defineProperty(e.prototype, "size", {
-        get: function() {
-          return this.__entries__.length
-        },
-        enumerable: !0,
-        configurable: !0
-      }), e.prototype.get = function(e) {
-        var n = t(this.__entries__, e),
-          r = this.__entries__[n];
-        return r && r[1]
-      }, e.prototype.set = function(e, n) {
-        var r = t(this.__entries__, e);
-        ~r ? this.__entries__[r][1] = n : this.__entries__.push([e, n])
-      }, e.prototype.delete = function(e) {
-        var n = this.__entries__,
-          r = t(n, e);
-        ~r && n.splice(r, 1)
-      }, e.prototype.has = function(e) {
-        return !!~t(this.__entries__, e)
-      }, e.prototype.clear = function() {
-        this.__entries__.splice(0)
-      }, e.prototype.forEach = function(t, e) {
-        void 0 === e && (e = null);
-        for (var n = 0, r = this.__entries__; n < r.length; n++) {
-          var i = r[n];
-          t.call(e, i[1], i[0])
-        }
-      }, e
-    }()
+    }, e
   }(),
   i = "undefined" != typeof window && "undefined" != typeof document && window.document === document,
   o = void 0 !== n.g && n.g.Math === Math ? n.g : "undefined" != typeof self && self.Math === Math ? self : "undefined" != typeof window && window.Math === Math ? window : Function("return this")(),
@@ -223,7 +222,7 @@ var b = function() {
       if ("undefined" != typeof Element && Element instanceof Object) {
         if (!(t instanceof f(t).Element)) throw TypeError('parameter 1 is not of type "Element".');
         var e = this.observations_;
-        !e.has(t) && (e.set(t, new b(t)), this.controller_.addObserver(this), this.controller_.refresh())
+        e.has(t) || (e.set(t, new b(t)), this.controller_.addObserver(this), this.controller_.refresh())
       }
     }, t.prototype.unobserve = function(t) {
       if (!arguments.length) throw TypeError("1 argument required, but only 0 present.");

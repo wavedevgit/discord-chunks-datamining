@@ -11,7 +11,7 @@ var n = r(200651),
   s = r(241209),
   u = r(807693),
   d = r(388032),
-  p = r(308289);
+  p = r(539752);
 
 function f(e) {
   var t;
@@ -23,7 +23,7 @@ function f(e) {
   l.useEffect(() => {
     (0, c.N)(r)
   }, [r]);
-  let b = null !== (t = null == g ? void 0 : g.name) && void 0 !== t ? t : d.NW.string(d.t.ZTNur6),
+  let b = null != (t = null == g ? void 0 : g.name) ? t : d.NW.string(d.t.ZTNur6),
     m = null != g ? (0, n.jsx)(s.Z, {
       children: g.content,
       className: p.markdown

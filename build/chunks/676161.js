@@ -1,20 +1,20 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(230036);
 var i = n(192379),
   r = n(700089),
   l = n(654455),
-  o = n(496158);
+  a = n(496158);
 
-function a(e) {
+function o(e) {
   let {
     context: t,
     commands: n,
-    limit: a = n.length
-  } = e, c = (0, o.D)(t), s = (0, r.R)(c), d = i.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
-  return i.useMemo(() => s.map(e => d[e]).filter(e => null != e).sort((e, t) => {
+    limit: o = n.length
+  } = e, c = (0, a.D)(t), s = (0, r.R)(c), u = i.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+  return i.useMemo(() => s.map(e => u[e]).filter(e => null != e).sort((e, t) => {
     let n = l.ZP.getScoreWithoutLoadingLatest(c, e);
     return l.ZP.getScoreWithoutLoadingLatest(c, t) - n
-  }).slice(0, a), [s, d, c, a])
+  }).slice(0, o), [s, u, c, o])
 }

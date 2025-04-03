@@ -9,6 +9,6 @@ function i(e) {
   let t = e.id;
   return (0, r.e7)([l.Z], () => {
     for (let e of l.Z.getActiveErrors().values())
-      if ("streamKey" in e && "streamError" in e && e.streamKey === t) return e.streamError
+      if ("streamKey" in e && "videoError" in e && e.streamKey === t) return e.videoError
   }, [t])
 }

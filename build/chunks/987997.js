@@ -1,17 +1,17 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  s = n(96394);
+  s = n(261623);
 
 function a(e) {
   var t, n, {
       children: a
     } = e,
-    o = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -43,7 +43,7 @@ function a(e) {
       })
     }
     return e
-  }({}, o), n = n = {
+  }({}, l), n = n = {
     size: i.zxk.Sizes.SMALL,
     color: i.zxk.Colors.BRAND_INVERTED,
     className: s.button,

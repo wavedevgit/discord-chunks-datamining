@@ -4,17 +4,17 @@ l.d(t, {
 });
 var n = l(200651),
   i = l(192379),
-  r = l(120356),
-  a = l.n(r),
-  s = l(481060),
+  s = l(120356),
+  a = l.n(s),
+  r = l(481060),
   o = l(53281),
-  u = l(248400);
+  u = l(121746);
 
 function c(e) {
   let {
     filename: t,
     className: l,
-    filters: r,
+    filters: s,
     buttonText: c,
     placeholder: d,
     onFileSelect: m
@@ -28,18 +28,18 @@ function c(e) {
       placeholder: d,
       type: "text",
       value: t
-    }), (0, n.jsxs)(s.zxk, {
-      size: s.zxk.Sizes.MIN,
+    }), (0, n.jsxs)(r.zxk, {
+      size: r.zxk.Sizes.MIN,
       className: u.fileUploadButton,
       children: [c, (0, n.jsx)(o.Z, {
         ref: f,
         tabIndex: -1,
         onChange: e => {
           var t;
-          m(null === (t = e.currentTarget.files) || void 0 === t ? void 0 : t[0])
+          m(null == (t = e.currentTarget.files) ? void 0 : t[0])
         },
         multiple: !1,
-        filters: r
+        filters: s
       })]
     })]
   })

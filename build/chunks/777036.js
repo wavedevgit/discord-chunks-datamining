@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => m
 });
@@ -21,8 +21,8 @@ function m(e) {
     m = (0, l.x)(e),
     g = (0, u.Z)(e),
     {
-      trackView: v,
-      trackClick: y
+      trackView: y,
+      trackClick: O
     } = (0, d.R)(p.n0.IncomingCall, {
       notif_type: p.n0.IncomingCall,
       notif_user_id: g,
@@ -37,10 +37,10 @@ function m(e) {
     confirmText: f.NW.string(f.t["0D/6R0"]),
     cancelText: f.NW.string(f.t.BVN4pK),
     onNotificationShow: () => {
-      v()
+      y()
     },
     onConfirmClick: (t, n) => {
-      if (y("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
+      if (O("join"), h.TPd.CALLABLE.has(e.type)) i.Z.call(e.id, !1, !1);
       else {
         if (e.type !== h.d4z.GUILD_VOICE) return;
         o.default.selectVoiceChannel(e.id)
@@ -53,10 +53,10 @@ function m(e) {
       })
     },
     onCancelClick: () => {
-      y("decline"), i.Z.stopRinging(e.id)
+      O("decline"), i.Z.stopRinging(e.id)
     },
     onDismissClick: () => {
-      y("dismiss")
+      O("dismiss")
     }
   }
 }

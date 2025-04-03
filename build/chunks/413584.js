@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => G
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(471445),
   j = n(339085),
   N = n(565138),
-  v = n(372769),
-  _ = n(690221),
+  _ = n(372769),
+  v = n(690221),
   C = n(524329),
   O = n(575258),
   y = n(514698),
@@ -35,7 +35,7 @@ var r = n(200651),
   R = n(981631),
   Z = n(231338),
   D = n(388032),
-  A = n(792302);
+  A = n(983459);
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,20 +77,20 @@ let L = "WELCOME_CHANNEL",
         onEdit: h,
         onChannelReorder: f,
         isDropHovered: N,
-        index: v
+        index: _
       } = e,
-      [_, C] = i.useState(!1),
+      [v, C] = i.useState(!1),
       O = i.useRef(null),
       S = (0, u.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
       P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
-      M = null !== (t = (0, x.KS)(S)) && void 0 !== t ? t : m.VL1,
+      M = null != (t = (0, x.KS)(S)) ? t : m.VL1,
       G = (0, b.ZP)(S, !1),
       [, U] = (0, c.c)({
         type: L,
         item: {
           channel: o,
-          index: v
+          index: _
         },
         end: (e, t) => {
           null == e || t.didDrop() || f(e.channel, null, !0)
@@ -99,10 +99,10 @@ let L = "WELCOME_CHANNEL",
       [, B] = (0, d.L)({
         accept: L,
         hover: e => {
-          f(e.channel, v, !1)
+          f(e.channel, _, !1)
         },
         drop: e => {
-          f(e.channel, v, !0)
+          f(e.channel, _, !0)
         }
       });
     return i.useLayoutEffect(() => (U(B(O)), () => {
@@ -136,7 +136,7 @@ let L = "WELCOME_CHANNEL",
             onChannelReorder: f,
             setShowConfirmModal: C,
             onEdit: h,
-            index: v
+            index: _
           }))
         })
       },
@@ -175,7 +175,7 @@ let L = "WELCOME_CHANNEL",
           onCloseRequest: () => Z.Vq
         }),
         children: D.NW.string(D.t.bt75u7)
-      }), _ && (0, r.jsx)(y.Z, {
+      }), v && (0, r.jsx)(y.Z, {
         onConfirm: () => h(),
         onCancel: () => C(!1),
         channelId: o.channel_id
@@ -268,7 +268,7 @@ let L = "WELCOME_CHANNEL",
           children: [(0, r.jsx)(E.Z, {
             className: A.noticeIcon
           }), D.NW.format(D.t.oj2vi4, {
-            onboardingLink: e => (0, r.jsx)(_.Z, {
+            onboardingLink: e => (0, r.jsx)(v.Z, {
               onClick: V,
               children: e
             })
@@ -312,7 +312,7 @@ let L = "WELCOME_CHANNEL",
             children: D.NW.format(D.t["0aydCA"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
-                children: [(0, r.jsx)(v.Z, {
+                children: [(0, r.jsx)(_.Z, {
                   guild: t,
                   className: A.headerGuildBadge,
                   flowerStarClassName: A.flowerStar

@@ -14,7 +14,7 @@ let a = (e, t, n) => {
       type: l.lJ.Attachment,
       media: e
     }, (0, l.HH)(s));
-    return null !== (o = null == s ? void 0 : null === (a = s.attachments) || void 0 === a ? void 0 : a.filter(c)) && void 0 !== o ? o : []
+    return null != (o = null == s || null == (a = s.attachments) ? void 0 : a.filter(c)) ? o : []
   },
   o = (e, t, n) => {
     var a, o;
@@ -24,5 +24,5 @@ let a = (e, t, n) => {
       type: l.lJ.Embed,
       media: e
     }, (0, l.HH)(s));
-    return null !== (o = null == s ? void 0 : null === (a = s.embeds) || void 0 === a ? void 0 : a.filter(c)) && void 0 !== o ? o : []
+    return null != (o = null == s || null == (a = s.embeds) ? void 0 : a.filter(c)) ? o : []
   }

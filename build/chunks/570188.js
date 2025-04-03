@@ -1,15 +1,15 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
-  J: () => a,
+  J: () => o,
   U: () => c
 });
 var r = n(442837),
   i = n(650774),
   l = n(496675),
-  o = n(231338);
+  a = n(231338);
 
-function a(e) {
-  return (0, r.e7)([l.Z], () => null != e && l.Z.can(o.Pl.MENTION_EVERYONE, e), [e])
+function o(e) {
+  return (0, r.e7)([l.Z], () => null != e && l.Z.can(a.Pl.MENTION_EVERYONE, e), [e])
 }
 
 function c(e) {

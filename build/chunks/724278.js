@@ -1,4 +1,4 @@
-/** Chunk was on 5613 **/
+/** Chunk was on 70657 **/
 t.d(n, {
   Z: () => G
 }), t(266796);
@@ -15,9 +15,9 @@ var i = t(200651),
   p = t(171368),
   g = t(271383),
   m = t(430824),
-  v = t(51144),
-  I = t(897285),
-  f = t(978227),
+  I = t(51144),
+  f = t(897285),
+  v = t(978227),
   N = t(894017),
   h = t(79874),
   E = t(315416),
@@ -25,11 +25,11 @@ var i = t(200651),
   b = t(854698),
   x = t(391174),
   T = t(810561),
-  y = t(306302),
+  y = t(390966),
   L = t(390072),
   j = t(981631),
   S = t(388032),
-  D = t(278685);
+  D = t(244231);
 
 function O(e) {
   var n;
@@ -45,7 +45,7 @@ function O(e) {
     children: [(0, i.jsx)(o.qEK, {
       size: o.EFr.SIZE_20,
       src: t.getAvatarURL(r, 20),
-      "aria-label": null !== (n = null == s ? void 0 : s.nick) && void 0 !== n ? n : v.ZP.getName(t),
+      "aria-label": null != (n = null == s ? void 0 : s.nick) ? n : I.ZP.getName(t),
       className: D.icon
     }), (0, i.jsx)(o.Text, {
       color: "header-secondary",
@@ -68,8 +68,8 @@ function O(e) {
             tag: "span",
             role: "link",
             children: (0, i.jsx)(o.PUh, {
-              name: null !== (e = null == s ? void 0 : s.nick) && void 0 !== e ? e : v.ZP.getName(t),
-              color: null !== (n = null == s ? void 0 : s.colorString) && void 0 !== n ? n : void 0
+              name: null != (e = null == s ? void 0 : s.nick) ? e : I.ZP.getName(t),
+              color: null != (n = null == s ? void 0 : s.colorString) ? n : void 0
             })
           }, "open-user-profile")
         }
@@ -153,15 +153,15 @@ function G(e) {
     isHub: _ = !1,
     containerRef: p,
     recurrenceId: g,
-    setRecurrenceId: v
+    setRecurrenceId: I
   } = e, j = (0, d.e7)([m.Z], () => null != m.Z.getGuild(t.id), [t.id]), {
     startTime: S,
     endTime: G
   } = (0, h.ZP)(n, g), P = (0, E.Z)(n.guild_id, n.id, g), W = r.useCallback(e => {
     e.stopPropagation(), null != n && (0, s.Bk)(n)
-  }, [n]), z = (0, N.Z)(g, n.id), k = (0, f.Z)(n);
+  }, [n]), z = (0, N.Z)(g, n.id), k = (0, v.Z)(n);
   r.useEffect(() => {
-    I.Z.getGuildEventUserCounts(t.id, n.id, null != g ? [g] : []), I.Z.getGuildEventsForCurrentUser(t.id)
+    f.Z.getGuildEventUserCounts(t.id, n.id, null != g ? [g] : []), f.Z.getGuildEventsForCurrentUser(t.id)
   }, [t.id, n.id, g]);
   let A = (0, C.KV)(n.recurrence_rule),
     R = (null == n ? void 0 : n.scheduled_start_time) != null ? (0, b.lh)(z, S, new Date(null == n ? void 0 : n.scheduled_start_time)) : null;
@@ -214,7 +214,7 @@ function G(e) {
       guildId: t.id,
       recurrenceRule: A,
       guildEventId: n.id,
-      onRecurrenceClick: v,
+      onRecurrenceClick: I,
       hideScroller: !0,
       activeRecurrenceId: g
     })]

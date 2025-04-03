@@ -18,20 +18,20 @@ var r = n(200651),
   p = n(430824),
   g = n(496675),
   _ = n(914010),
-  v = n(594174),
-  j = n(938475),
+  j = n(594174),
+  v = n(938475),
   b = n(823379),
   S = n(102172),
   C = n(981631),
-  N = n(690452),
+  N = n(843874),
   y = n(388032),
-  Z = n(943181);
+  Z = n(152965);
 
 function I(e) {
   let {
     result: t,
     onSelectChannel: n
-  } = e, l = (0, i.e7)([p.Z], () => p.Z.getGuild(t.record.guild_id)), o = (0, i.Wu)([j.ZP, v.default], () => j.ZP.getVoiceStatesForChannel(t.record).map(e => v.default.getUser(e.user.id)).filter(b.lm));
+  } = e, l = (0, i.e7)([p.Z], () => p.Z.getGuild(t.record.guild_id)), o = (0, i.Wu)([v.ZP, j.default], () => v.ZP.getVoiceStatesForChannel(t.record).map(e => j.default.getUser(e.user.id)).filter(b.lm));
   return (0, r.jsxs)(s.P3F, {
     className: Z.channelResult,
     onClick: () => n(t.record.id),
@@ -69,12 +69,12 @@ function w(e) {
   } = e, {
     search: n,
     query: c,
-    results: v
+    results: j
   } = (0, u.Z)({
     searchOptions: {
       frecencyBoosters: !0
     }
-  }), j = (0, i.Wu)([_.Z, x.ZP, m.Z, p.Z, g.Z], () => {
+  }), v = (0, i.Wu)([_.Z, x.ZP, m.Z, p.Z, g.Z], () => {
     let e = [],
       t = _.Z.getGuildId();
     if (null == t) return e;
@@ -94,9 +94,9 @@ function w(e) {
     return e
   }), T = l.useMemo(() => {
     let e = new Set(w.map(e => e.id)),
-      t = new Set(j.map(e => e.id));
-    return [...j.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...w.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
-  }, [w, j]), E = "" !== c ? v : T;
+      t = new Set(v.map(e => e.id));
+    return [...v.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? -1 : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, a.Z)(e.id)).filter(b.lm), ...w.filter(e => !t.has(e.id)).map(e => (0, a.Z)(e.id)).filter(b.lm)]
+  }, [w, v]), E = "" !== c ? j : T;
   return (0, r.jsxs)("div", {
     className: Z.root,
     children: [(0, r.jsx)(s.E1j, {

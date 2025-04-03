@@ -1,17 +1,17 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(430824);
 
-function o(e) {
+function l(e) {
   var {
     onCloseCallback: t,
-    analyticsLocations: o
-  } = e, l = function(e, t) {
+    analyticsLocations: l
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -49,8 +49,8 @@ function o(e) {
           })
         }
         return e
-      }({}, t, l), i = i = {
-        analyticsLocations: o,
+      }({}, t, o), i = i = {
+        analyticsLocations: l,
         guildCount: a.Z.getGuildCount(),
         "aria-labelledby": "nitro-guild-cap-upsell"
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

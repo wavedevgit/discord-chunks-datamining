@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => R
 });
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(663924),
   _ = n(533379),
   C = n(404295),
-  v = n(540059),
-  y = n(605236),
-  x = n(819640),
+  y = n(540059),
+  x = n(605236),
+  v = n(819640),
   j = n(291407),
   O = n(685006),
   E = n(61356),
@@ -29,7 +29,7 @@ var r = n(200651),
   I = n(314734),
   P = n(921944),
   S = n(388032),
-  Z = n(714010),
+  Z = n(560163),
   T = n(795361);
 let A = i.forwardRef(function(e, t) {
   var n, l;
@@ -43,17 +43,17 @@ let A = i.forwardRef(function(e, t) {
   }, {
     autoTrackExposure: !0
   }), {
-    Component: x,
+    Component: v,
     events: j,
     play: O
-  } = (0, c.w)(), E = (0, v.Q3)("ChannelAppLauncherButton");
+  } = (0, c.w)(), E = (0, y.Q3)("ChannelAppLauncherButton");
   i.useImperativeHandle(b, () => ({
     animate: () => {
       j.onMouseEnter()
     }
   }), [j]);
   let T = i.useCallback(() => {
-    (0, p.yw)(N.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED), _ ? h.yT(m.ti.DISMISSED) : ((0, y.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
+    (0, p.yw)(N.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED), _ ? h.yT(m.ti.DISMISSED) : ((0, x.EW)(s.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
       dismissAction: P.L.TAKE_ACTION
     }), h.__(m._b.TEXT, g)), O()
   }, [_, g, O]);
@@ -99,7 +99,7 @@ let A = i.forwardRef(function(e, t) {
       children: C ? (0, r.jsx)(u.iWm, {
         size: E ? "refresh_sm" : void 0,
         color: "currentColor"
-      }) : (0, r.jsx)(x, {
+      }) : (0, r.jsx)(v, {
         size: E ? "refresh_sm" : void 0,
         color: "currentColor"
       })
@@ -120,7 +120,7 @@ function w(e) {
   let {
     showAppLauncherPopup: t,
     children: n
-  } = e, i = (0, a.e7)([x.Z], () => x.Z.hasLayers()), {
+  } = e, i = (0, a.e7)([v.Z], () => v.Z.hasLayers()), {
     enabled: l,
     shouldShow: s,
     applicationDetails: c,

@@ -13,9 +13,9 @@ var s = n(200651),
   d = n(7557),
   u = n(200357),
   p = n(388032),
-  E = n(626959),
-  m = n(913208),
-  R = n(685786);
+  E = n(282287),
+  m = n(893354),
+  R = n(20493);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,8 +42,7 @@ class g extends i.PureComponent {
     null != this._animItem && (this._animItem.destroy(), this._animItem = void 0)
   }
   render() {
-    let e, t, n;
-    let {
+    let e, t, n, {
       error: i,
       working: r,
       transitionState: l,

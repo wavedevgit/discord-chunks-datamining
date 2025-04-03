@@ -9,7 +9,7 @@ var r = n(271383),
 
 function o(e, t, n) {
   var o, s;
-  if (t.type === i.fO.ACTIVITY) return null !== (s = null == n ? void 0 : n.name) && void 0 !== s ? s : null;
-  let u = r.ZP.isGuestOrLurker(e.guild_id, null === (o = t.user) || void 0 === o ? void 0 : o.id);
+  if (t.type === i.fO.ACTIVITY) return null != (s = null == n ? void 0 : n.name) ? s : null;
+  let u = r.ZP.isGuestOrLurker(e.guild_id, null == (o = t.user) ? void 0 : o.id);
   return l.ZP.getName(e.getGuildId(), e.id, t.user) + (u ? " ".concat(a.NW.string(a.t["pFO/Pj"])) : "")
 }

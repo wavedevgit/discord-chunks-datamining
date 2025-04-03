@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 }), n(978209);
@@ -6,16 +6,16 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(442837),
-  l = n(435064),
-  s = n(45732);
+  l = n(442837),
+  o = n(435064),
+  s = n(892983);
 
 function c() {
   var e, t;
-  let n = (0, o.Wu)([l.Z], () => {
+  let n = (0, l.Wu)([o.Z], () => {
     var e;
-    let t = null === (e = l.Z.getLastClipsSession()) || void 0 === e ? void 0 : e.newClipIds;
-    return null == t ? [] : l.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
+    let t = null == (e = o.Z.getLastClipsSession()) ? void 0 : e.newClipIds;
+    return null == t ? [] : o.Z.getClips().slice(0, 4).filter(e => t.includes(e.id))
   });
   return (0, r.jsx)("div", {
     className: a()(s.thumbnailStack, {

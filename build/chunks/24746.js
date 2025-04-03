@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => b
 }), n(266796), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(241209),
   u = n(547563),
   p = n(388032),
-  m = n(464557);
+  m = n(582735);
 let h = s().parserFor(u.Z),
   g = s().reactFor(s().ruleOutput(u.Z, "react"));
 
@@ -25,7 +25,7 @@ function f(e) {
     if (null == s.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      o((null !== (n = null === (e = s.current) || void 0 === e ? void 0 : e.scrollHeight) && void 0 !== n ? n : 0) - (null !== (r = null === (t = s.current) || void 0 === t ? void 0 : t.clientHeight) && void 0 !== r ? r : 0) > 1)
+      o((null != (n = null == (e = s.current) ? void 0 : e.scrollHeight) ? n : 0) - (null != (r = null == (t = s.current) ? void 0 : t.clientHeight) ? r : 0) > 1)
     });
     return e.observe(s.current), () => e.disconnect()
   }, []);
@@ -93,7 +93,7 @@ let b = function(e) {
   var t, n;
   let {
     application: i
-  } = e, l = null === (t = i.directory_entry) || void 0 === t ? void 0 : t.detailed_description, o = null === (n = i.directory_entry) || void 0 === n ? void 0 : n.short_description, s = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
+  } = e, l = null == (t = i.directory_entry) ? void 0 : t.detailed_description, o = null == (n = i.directory_entry) ? void 0 : n.short_description, s = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
     description: l,
     supportsMarkdown: !0
   }) : null != o && o.length > 0 ? (0, r.jsx)(f, {

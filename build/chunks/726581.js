@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(304106),
   c = n(649974),
   u = n(246946),
@@ -18,7 +18,7 @@ var r = n(200651),
   m = n(733789),
   b = n(4962),
   _ = n(388032),
-  E = n(542287);
+  E = n(868454);
 class O extends i.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
@@ -58,20 +58,20 @@ class O extends i.Component {
       className: l
     } = this.props;
     if (0 === e.length && 0 === t.length && null == n.staffNotes) return null;
-    let a = this.getReviewToRender();
+    let o = this.getReviewToRender();
     return (0, r.jsxs)("div", {
-      className: o()(E.root, l),
+      className: a()(E.root, l),
       children: [(0, r.jsx)("div", {
         className: E.header,
         children: _.NW.string(_.t.qABFpa)
-      }), this.renderReasons(e, t, i), null != a ? (0, r.jsx)(b.Z, {
-        data: a,
+      }), this.renderReasons(e, t, i), null != o ? (0, r.jsx)(b.Z, {
+        data: o,
         className: E.review
       }) : null]
     })
   }
 }
-let N = a.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
+let N = o.ZP.connectStores([h.Z, d.default, f.Z, c.Z, p.Z, u.Z], e => {
   let {
     sku: t
   } = e;

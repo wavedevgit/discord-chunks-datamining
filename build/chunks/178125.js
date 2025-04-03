@@ -16,7 +16,7 @@ var t = l(200651),
   v = l(593214),
   m = l(378337),
   x = l(388032),
-  g = l(598920);
+  g = l(918492);
 
 function j(e) {
   let {
@@ -85,7 +85,7 @@ function p(e) {
   } = e, r = (0, d.e7)([s.Z], () => s.Z.getCategories(n)), c = (0, m.Z)(r), u = i.useRef(null);
   return i.useEffect(() => {
     var e;
-    null == u || null === (e = u.current) || void 0 === e || e.scroll({
+    null == u || null == (e = u.current) || e.scroll({
       top: 0
     })
   }, [n]), (0, t.jsx)("div", {

@@ -9,7 +9,7 @@ var a = n(200651),
   i = n(885006),
   s = n(981631),
   c = n(388032),
-  d = n(923871);
+  d = n(679895);
 let u = n(412998),
   f = n(515695),
   p = "".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT.split("//")[1]).concat(s.Z5c.ACTIVATE),
@@ -123,7 +123,7 @@ let m = e => {
               variant: "heading-xxl/bold",
               color: "header-primary",
               className: d.fallbackContentCode,
-              children: null === (t = n.match(/.{1,4}/g)) || void 0 === t ? void 0 : t.join(" ")
+              children: null == (t = n.match(/.{1,4}/g)) ? void 0 : t.join(" ")
             })]
           })]
         })]

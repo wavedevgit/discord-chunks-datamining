@@ -3,8 +3,8 @@ n(47120);
 var r = n(442837),
   i = n(570140),
   l = n(513418),
-  o = n(710845),
-  a = n(592125),
+  a = n(710845),
+  o = n(592125),
   s = n(375954),
   c = n(625236);
 
@@ -17,20 +17,20 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 let d = -1 / 0,
-  p = new o.Z("MessagePreviewStore");
+  p = new a.Z("MessagePreviewStore");
 class h extends r.ZP.Store {
   isLatest(e, t) {
     var n;
     let r = this.guilds.get(null != e ? e : null);
-    return null !== (n = null == r ? void 0 : r.isLatest(t, this.generation)) && void 0 !== n && n
+    return null != (n = null == r ? void 0 : r.isLatest(t, this.generation)) && n
   }
   isLocalFetchNeeded(e) {
     var t, n;
-    return null === (n = null === (t = this.guilds.get(e)) || void 0 === t ? void 0 : t.localNeeded) || void 0 === n || n
+    return null == (n = null == (t = this.guilds.get(e)) ? void 0 : t.localNeeded) || n
   }
   message(e, t) {
     var n, r;
-    return null !== (r = null === (n = this.guilds.get(e)) || void 0 === n ? void 0 : n.messageRecord(t)) && void 0 !== r ? r : null
+    return null != (r = null == (n = this.guilds.get(e)) ? void 0 : n.messageRecord(t)) ? r : null
   }
   data(e) {
     return this.guilds.has(e) || this.guilds.set(e, new c.B), this.guilds.get(e)
@@ -38,7 +38,7 @@ class h extends r.ZP.Store {
   handleOneGuildCreate(e) {
     var t, n;
     let r = this.data(e.id);
-    r.putMany(null !== (t = e.lastMessages) && void 0 !== t ? t : [], this.generation), r.putMany(null !== (n = e.threadMessages) && void 0 !== n ? n : [], this.generation), null != e.lastMessages && (r.localNeeded = !1)
+    r.putMany(null != (t = e.lastMessages) ? t : [], this.generation), r.putMany(null != (n = e.threadMessages) ? n : [], this.generation), null != e.lastMessages && (r.localNeeded = !1)
   }
   handleConnectionOpen(e) {
     for (let t of (this.generation += 1, e.guilds)) this.handleOneGuildCreate(t)
@@ -52,12 +52,12 @@ class h extends r.ZP.Store {
   handleMessageCreate(e) {
     var t;
     if (e.optimistic || e.isPushNotification) return !1;
-    this.data(null !== (t = e.guildId) && void 0 !== t ? t : null).put(e.message.channel_id, e.message, this.generation)
+    this.data(null != (t = e.guildId) ? t : null).put(e.message.channel_id, e.message, this.generation)
   }
   handleMessageDelete(e) {
     var t, n;
-    let r = null !== (n = e.guildId) && void 0 !== n ? n : null;
-    if ((null === (t = this.data(r)) || void 0 === t ? void 0 : t.messageId(e.channelId)) === e.id) {
+    let r = null != (n = e.guildId) ? n : null;
+    if ((null == (t = this.data(r)) ? void 0 : t.messageId(e.channelId)) === e.id) {
       let t = s.Z.getMessages(e.channelId),
         n = t.hasMoreAfter ? null : t.last();
       null != n ? this.data(r).put(e.channelId, n, this.generation) : this.data(r).delete(e.channelId)
@@ -65,7 +65,7 @@ class h extends r.ZP.Store {
   }
   handleMessageUpdate(e) {
     var t;
-    let n = null !== (t = e.guildId) && void 0 !== t ? t : null,
+    let n = null != (t = e.guildId) ? t : null,
       r = e.message.channel_id,
       i = e.message.id;
     if (null == r || null == i) return !1;
@@ -75,19 +75,19 @@ class h extends r.ZP.Store {
   }
   handleThreadListSync(e) {
     var t;
-    this.data(e.guildId).putMany(null !== (t = e.mostRecentMessages) && void 0 !== t ? t : [], this.generation)
+    this.data(e.guildId).putMany(null != (t = e.mostRecentMessages) ? t : [], this.generation)
   }
   handleLoadMessagesSuccess(e) {
     var t, n;
-    let r = a.Z.getBasicChannel(e.channelId);
+    let r = o.Z.getBasicChannel(e.channelId);
     if (null == r) return !1;
-    (0, l.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null !== (n = e.messages[0]) && void 0 !== n ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null !== (t = e.messages[0]) && void 0 !== t ? t : null, this.generation)
+    (0, l.Z)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
   }
   handleLocalMessagesLoaded(e) {
-    let t = a.Z.getBasicChannel(e.channelId);
+    let t = o.Z.getBasicChannel(e.channelId);
     if (null != t) {
       var n;
-      (0, l.Z)(e.messages), this.data(t.guild_id).putNew(e.channelId, null !== (n = e.messages[0]) && void 0 !== n ? n : null, d)
+      (0, l.Z)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)
     }
   }
   handleMessagePreviewsLoaded(e) {

@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   s = n(192379),
   o = n(120356),
-  i = n.n(o),
-  a = n(642128),
+  a = n.n(o),
+  i = n(642128),
   c = n(481060),
   l = n(100527),
   u = n(906732),
@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(814322),
   m = n(178043),
   g = n(477839),
-  b = n(186338);
+  b = n(499152);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,13 +42,13 @@ let h = {
   [g.Vx.PIZZA]: b.cursorPizza
 };
 
-function v(e) {
+function x(e) {
   var t;
-  let [n, o] = (0, s.useState)(!1), v = (0, s.useCallback)(e => o(e), []);
-  (0, f.Z)(v);
+  let [n, o] = (0, s.useState)(!1), x = (0, s.useCallback)(e => o(e), []);
+  (0, f.Z)(x);
   let {
-    analyticsLocations: x
-  } = (0, u.ZP)(l.Z.CLICKER_GAME), [N] = (0, d.Z)(g.yN.CURSORS), O = null !== (t = N.selectedCursor) && void 0 !== t ? t : g.Vx.DEFAULT, j = (0, c.Yzy)(n, {
+    analyticsLocations: N
+  } = (0, u.ZP)(l.Z.CLICKER_GAME), [v] = (0, d.Z)(g.yN.CURSORS), O = null != (t = v.selectedCursor) ? t : g.Vx.DEFAULT, j = (0, c.Yzy)(n, {
     from: {
       opacity: 0
     },
@@ -58,18 +58,18 @@ function v(e) {
     leave: {
       opacity: 0
     },
-    config: a.config.gentle
+    config: i.config.gentle
   });
   return (0, r.jsx)(u.Gt, {
-    value: x,
+    value: N,
     children: (0, r.jsxs)("div", {
-      className: i()(b.container, h[O]),
+      className: a()(b.container, h[O]),
       children: [(0, r.jsx)("div", {
         className: b.background,
         children: (0, r.jsx)("div", {
           className: b.backgroundGradient
         })
-      }), j((t, n) => (0, r.jsx)(a.animated.div, {
+      }), j((t, n) => (0, r.jsx)(i.animated.div, {
         style: t,
         className: b.animationContainer,
         children: n ? (0, r.jsx)(m.Z, y({}, e)) : (0, r.jsx)(p.Z, y({}, e))

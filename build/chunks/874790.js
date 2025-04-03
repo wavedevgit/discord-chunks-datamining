@@ -1,6 +1,6 @@
 /** Chunk was on 68880 **/
 "use strict";
-var n = function(t) {
+t.exports = function(t) {
   function e() {
     return t.apply(this, arguments) || this
   }
@@ -17,5 +17,4 @@ var n = function(t) {
   type: "TOKEN",
   mutability: "IMMUTABLE",
   data: Object
-}));
-t.exports = n
+}))

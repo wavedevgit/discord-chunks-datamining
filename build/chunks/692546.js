@@ -45,7 +45,7 @@ function x(e, t) {
     if (null != n && (0, a.Z)(n.zone, t.zone)) return;
     0 === v.size && window.addEventListener("mousemove", O), v.set(e, t)
   }
-  if (f.isPlatformEmbedded) {
+  if (f.isPlatformEmbedded)
     if (d.default.isCurrentPidOutOfProcess()) {
       let e = Array.from(v.values()).map(e => {
         let {
@@ -77,7 +77,6 @@ function x(e, t) {
         null != i && (y || (m.x = t, m.y = n), i.instance.click())
       }), b = !0)
     }
-  }
 }
 let b = !1;
 class S extends(i = r.PureComponent) {

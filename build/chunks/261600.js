@@ -18,22 +18,22 @@ function h(e) {
     activity: h
   } = e, {
     channelId: f
-  } = null !== (t = (0, c.rq)(h)) && void 0 !== t ? t : {}, p = (0, i.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), v = l.useCallback(() => {
+  } = null != (t = (0, c.rq)(h)) ? t : {}, p = (0, i.e7)([u.Z], () => u.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), N = l.useCallback(() => {
     let e = a.Z.getChannel(f);
     null != e && s.Cq(e)
-  }, [f]), N = null !== (n = null == p ? void 0 : p.topic) && void 0 !== n ? n : h.name, y = d.NW.formatToPlainString(d.t["T+DNAA"], {
-    channel: N
+  }, [f]), y = null != (n = null == p ? void 0 : p.topic) ? n : h.name, O = d.NW.formatToPlainString(d.t["T+DNAA"], {
+    channel: y
   });
   return (0, r.jsx)("div", {
     ref: g,
     children: (0, r.jsx)(o.P3F, {
-      onClick: v,
+      onClick: N,
       focusProps: {
         ringTarget: g
       },
       children: (0, r.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
-        children: y
+        children: O
       })
     })
   })

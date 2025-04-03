@@ -14,14 +14,14 @@ var l = n(200651),
   h = n(471445),
   g = n(114487),
   m = n(313201),
-  v = n(65361),
-  x = n(246946),
+  x = n(65361),
+  v = n(246946),
   p = n(934415),
   N = n(572004),
   I = n(366980),
-  j = n(76234),
-  f = n(388032),
-  S = n(244557);
+  f = n(76234),
+  j = n(388032),
+  S = n(942558);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ function C(e) {
   } = e, {
     guildProfile: r,
     fetchGuildProfile: a
-  } = (0, v.u)(n.id);
+  } = (0, x.u)(n.id);
   i.useEffect(() => {
     a()
   }, [a]);
@@ -97,7 +97,7 @@ function C(e) {
       }), (0, l.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "header-muted",
-        children: f.NW.format(f.t["LC+S+v"], {
+        children: j.NW.format(j.t["LC+S+v"], {
           membersOnline: r.onlineCount
         })
       })]
@@ -108,7 +108,7 @@ function C(e) {
       }), (0, l.jsx)(u.Text, {
         variant: "text-xs/medium",
         color: "header-muted",
-        children: f.NW.format(f.t.zRl6XV, {
+        children: j.NW.format(j.t.zRl6XV, {
           count: r.memberCount
         })
       })]
@@ -165,7 +165,7 @@ function y(e) {
   let {
     className: s,
     guild: h,
-    channel: v,
+    channel: x,
     inviteTarget: p,
     sendInvite: y,
     inviteKey: O,
@@ -175,7 +175,7 @@ function y(e) {
     isApplicationBypassAllowed: w,
     isGuestInviteAllowed: k,
     isTemporaryInviteAllowed: R
-  } = e, [M] = (0, o.Wu)([x.Z], () => [x.Z.hideInstantInvites]), [W, L] = i.useState(!1), [D, U] = i.useState(!1), V = i.useRef(null), B = (0, m.Dt)(), z = (0, m.Dt)(), F = (0, m.Dt)(), G = (0, I.Z)(O), H = M ? f.NW.string(f.t["6HzNgY"]) : G, q = i.useCallback(() => (L(!0), (0, N.JG)(G), V.current = setTimeout(() => {
+  } = e, [M] = (0, o.Wu)([v.Z], () => [v.Z.hideInstantInvites]), [W, L] = i.useState(!1), [D, U] = i.useState(!1), V = i.useRef(null), B = (0, m.Dt)(), z = (0, m.Dt)(), F = (0, m.Dt)(), G = (0, I.Z)(O), H = M ? j.NW.string(j.t["6HzNgY"]) : G, q = i.useCallback(() => (L(!0), (0, N.JG)(G), V.current = setTimeout(() => {
     L(!1)
   }, 1e3), () => {
     null !== V.current && clearTimeout(V.current)
@@ -199,7 +199,7 @@ function y(e) {
     })
   }, [A]), Q = i.useCallback(e => {
     var t;
-    let i = null === (t = e.target) || void 0 === t ? void 0 : t.getBoundingClientRect(),
+    let i = null == (t = e.target) ? void 0 : t.getBoundingClientRect(),
       {
         left: s = 0,
         width: r = 0
@@ -214,7 +214,7 @@ function y(e) {
         onChangeMaxUses: K
       }))
     })
-  }, [Z, Y, K]), $ = j.H.find(e => {
+  }, [Z, Y, K]), $ = f.H.find(e => {
     let {
       value: t
     } = e;
@@ -234,12 +234,12 @@ function y(e) {
         })
       }), (0, l.jsx)(C, {
         guild: h,
-        channel: v,
+        channel: x,
         inviteTarget: p,
         isStreamerMode: M
       }), (0, l.jsx)(u.ua7, {
         position: "top",
-        text: f.NW.string(f.t["4QuV7O"]),
+        text: j.NW.string(j.t["4QuV7O"]),
         children: e => (0, l.jsx)(u.zxk, T(E({
           size: u.zxk.Sizes.ICON,
           look: u.zxk.Looks.BLANK,
@@ -247,7 +247,7 @@ function y(e) {
         }, e), {
           onClick: () => {
             var t;
-            null == e || null === (t = e.onClick) || void 0 === t || t.call(e), U(!D)
+            null == e || null == (t = e.onClick) || t.call(e), U(!D)
           },
           children: (0, l.jsx)(u.ewm, {
             size: "md",
@@ -262,10 +262,10 @@ function y(e) {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
             variant: "heading-md/medium",
-            children: f.NW.string(f.t.YlT5MT)
+            children: j.NW.string(j.t.YlT5MT)
           }), (0, l.jsx)(u.ua7, {
             position: "top",
-            text: f.NW.string(f.t.efLzgY),
+            text: j.NW.string(j.t.efLzgY),
             children: e => (0, l.jsx)(u.idN, T(E({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -276,7 +276,7 @@ function y(e) {
           children: [(0, l.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "header-muted",
-            children: null !== (t = null == $ ? void 0 : $.label) && void 0 !== t ? t : null
+            children: null != (t = null == $ ? void 0 : $.label) ? t : null
           }), (0, l.jsx)(u.Fbu, {
             size: "xs",
             color: d.Z.colors.INTERACTIVE_NORMAL
@@ -288,10 +288,10 @@ function y(e) {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
             variant: "heading-md/medium",
-            children: f.NW.string(f.t.EPIOl5)
+            children: j.NW.string(j.t.EPIOl5)
           }), (0, l.jsx)(u.ua7, {
             position: "top",
-            text: f.NW.string(f.t["jvd/LC"]),
+            text: j.NW.string(j.t["jvd/LC"]),
             children: e => (0, l.jsx)(u.idN, T(E({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -308,10 +308,10 @@ function y(e) {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
             variant: "heading-md/medium",
-            children: f.NW.string(f.t.NKqlpq)
+            children: j.NW.string(j.t.NKqlpq)
           }), (0, l.jsx)(u.ua7, {
             position: "top",
-            text: f.NW.string(f.t.pBOevb),
+            text: j.NW.string(j.t.pBOevb),
             children: e => (0, l.jsx)(u.idN, T(E({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -328,10 +328,10 @@ function y(e) {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
             variant: "heading-md/medium",
-            children: f.NW.string(f.t.UL177u)
+            children: j.NW.string(j.t.UL177u)
           }), (0, l.jsx)(u.ua7, {
             position: "top",
-            text: f.NW.string(f.t.cl1HNT),
+            text: j.NW.string(j.t.cl1HNT),
             children: e => (0, l.jsx)(u.idN, T(E({}, e), {
               size: "xs",
               color: d.Z.colors.INTERACTIVE_NORMAL
@@ -359,21 +359,21 @@ function y(e) {
         }, e), {
           onClick: () => {
             var t;
-            null == e || null === (t = e.onClick) || void 0 === t || t.call(e), q()
+            null == e || null == (t = e.onClick) || t.call(e), q()
           },
           children: W ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(u.dz2, {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: f.NW.string(f.t["+5kSoa"])
+              children: j.NW.string(j.t["+5kSoa"])
             })]
           }) : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(u.xPt, {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: f.NW.string(f.t.WqhZsr)
+              children: j.NW.string(j.t.WqhZsr)
             })]
           })
         }))
@@ -383,7 +383,7 @@ function y(e) {
         onClick: () => y(),
         disabled: P,
         children: [(0, l.jsx)("span", {
-          children: f.NW.string(f.t.BcAABg)
+          children: j.NW.string(j.t.BcAABg)
         }), (0, l.jsx)(u.Uuj, {
           size: "xs",
           color: "currentColor"

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => eR
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(637853),
   j = n(352981),
   N = n(610403),
-  v = n(923726),
-  _ = n(303737),
+  _ = n(923726),
+  v = n(303737),
   C = n(15030),
   O = n(220685),
   y = n(536442),
@@ -75,15 +75,15 @@ var r = n(200651),
   ex = n(237245),
   ej = n(658666),
   eN = n(224726),
-  ev = n(308619),
-  e_ = n(254925),
+  e_ = n(308619),
+  ev = n(254925),
   eC = n(209402),
   eO = n(981631),
   ey = n(308083),
   eI = n(49898),
   eE = n(135899),
   eS = n(388032),
-  eT = n(535435);
+  eT = n(474913);
 
 function eP(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -135,18 +135,18 @@ let eR = {
         ariaLabel: eS.NW.string(eS.t["KzCF//"])
       },
       ek = t.guild.hasFeature(eO.oNc.COMMUNITY) && t.canViewGuildAnalytics,
-      eW = (null === (eR = t.guild.profile) || void 0 === eR ? void 0 : eR.badge) != null ? (0, c.ky)(t.guild.id, t.guild.profile.badge, ey.NC.SIZE_16) : null;
+      eW = (null == (eR = t.guild.profile) ? void 0 : eR.badge) != null ? (0, c.ky)(t.guild.id, t.guild.profile.badge, ey.NC.SIZE_16) : null;
     switch (e) {
       case eO.pNK.PROFILE:
         return {
           section: eO.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: eS.NW.string(eS.t.txdaxc), ariaLabel: eS.NW.string(eS.t.txdaxc), element: eN.Z, type: o.bT.SCROLLABLE_CUSTOM, notice: {
             stores: [k.Z],
-            element: ev.Z
+            element: e_.Z
           }
         };
       case eO.pNK.TAG:
         return {
-          section: eO.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eS.NW.string(eS.t["2QmKZ2"]), ariaLabel: eS.NW.string(eS.t["2QmKZ2"]), element: e_.ZP, predicate() {
+          section: eO.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eS.NW.string(eS.t["2QmKZ2"]), ariaLabel: eS.NW.string(eS.t["2QmKZ2"]), element: ev.ZP, predicate() {
             let e = (0, E.gV)(t.guild.id, "guild_settings");
             return t.canManageGuild && e
           }, notice: {
@@ -286,7 +286,7 @@ let eR = {
             }), (0, l.xf)()
           }, predicate() {
             var e;
-            return null !== (e = t.canAccessClanSettings) && void 0 !== e && e
+            return null != (e = t.canAccessClanSettings) && e
           }, icon: null != eW ? (0, r.jsx)(u.KQ, {
             src: eW
           }) : null
@@ -342,7 +342,7 @@ let eR = {
             element: X.J
           }, type: o.bT.CUSTOM, predicate() {
             var e;
-            return t.canManageGuild && (t.guild.hasFeature(eO.oNc.DISCOVERABLE) || !!(null === (e = t.guildMetadata) || void 0 === e ? void 0 : e.isPublished))
+            return t.canManageGuild && (t.guild.hasFeature(eO.oNc.DISCOVERABLE) || !!(null == (e = t.guildMetadata) ? void 0 : e.isPublished))
           }
         };
       case eO.pNK.COMMUNITY_WELCOME:
@@ -358,15 +358,15 @@ let eR = {
           element: C.Z,
           type: o.bT.CUSTOM,
           predicate: t.monetizationPredicate,
-          newIndicatorDismissibleContentTypes: (0, _.sO)(t.guild) ? [s.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
+          newIndicatorDismissibleContentTypes: (0, v.sO)(t.guild) ? [s.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
         });
       case eO.pNK.GUILD_PRODUCTS:
         return {
-          section: eO.pNK.GUILD_PRODUCTS, label: eS.NW.string(eS.t.X6h2g4), ariaLabel: eS.NW.string(eS.t.X6h2g4), element: N.Z, predicate: () => t.monetizationPredicate() && (0, j.p)(t.guild.id, "guild_product_settings_predicate") && (0, v.sy)(t.guild)
+          section: eO.pNK.GUILD_PRODUCTS, label: eS.NW.string(eS.t.X6h2g4), ariaLabel: eS.NW.string(eS.t.X6h2g4), element: N.Z, predicate: () => t.monetizationPredicate() && (0, j.p)(t.guild.id, "guild_product_settings_predicate") && (0, _.sy)(t.guild)
         };
       case eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eS.NW.string(eS.t.ipTYsr), ariaLabel: eS.NW.string(eS.t.ipTYsr), element: O.Z, predicate: () => t.monetizationPredicate() && (0, v.sy)(t.guild)
+          section: eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eS.NW.string(eS.t.ipTYsr), ariaLabel: eS.NW.string(eS.t.ipTYsr), element: O.Z, predicate: () => t.monetizationPredicate() && (0, _.sy)(t.guild)
         };
       case eO.pNK.GUILD_PREMIUM:
         return {

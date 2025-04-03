@@ -70,7 +70,7 @@ var N = n(605236),
   ef = n(981631),
   ep = n(206583),
   eh = n(388032),
-  em = n(102185);
+  em = n(411961);
 
 function ev(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ function eb(e) {
   (0, g.jW)(e, async () => {
     let {
       default: e
-    } = await n.e("92780").then(n.bind(n, 80697));
+    } = await n.e("92780").then(n.bind(n, 930381));
     return t => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -170,10 +170,7 @@ class eO extends a.Component {
       initialized: t
     } = this.props;
     if (t) {
-      if (t && !e.initialized) {
-        this.initialSetup();
-        return
-      }
+      if (t && !e.initialized) return void this.initialSetup();
       if (!e.locked && this.props.locked) {
         if (window.addEventListener("contextmenu", ey, !1), null != eg) {
           let e = Date.now() - eg;
@@ -235,7 +232,7 @@ class eO extends a.Component {
         var p;
         e.setPerfInfoCallback(e => {
           y.Z.track(ef.rMx.OVERLAY_PERF_INFO, e)
-        }), null === (p = e.broadcastCommand) || void 0 === p || p.call(e, {
+        }), null == (p = e.broadcastCommand) || p.call(e, {
           message: "set_perf_report_interval",
           interval: 15 * Q.Z.Millis.MINUTE
         })

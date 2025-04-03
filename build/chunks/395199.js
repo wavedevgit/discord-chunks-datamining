@@ -14,7 +14,7 @@ var n, r = l(200651),
   x = l(78839),
   h = l(709054),
   g = l(388032),
-  f = l(814273);
+  f = l(304586);
 
 function p(e, t, l) {
   return t in e ? Object.defineProperty(e, t, {
@@ -193,7 +193,7 @@ p(y, "Header", j), p(y, "ApplyBody", N), p(y, "TransferBody", function(e) {
     onDismissError: u,
     slotCount: x = 1,
     canceledCount: p = 0
-  } = e, j = s.useRef(o), N = null === (t = j.current) || void 0 === t ? void 0 : t.length, b = null === (l = j.current) || void 0 === l ? void 0 : l.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
+  } = e, j = s.useRef(o), N = null == (t = j.current) ? void 0 : t.length, b = null == (l = j.current) ? void 0 : l.reduce((e, t) => (e.hasOwnProperty(t.id) || (e[t.id] = []), e[t.id].push(t), e), {});
   return (0, r.jsxs)(C, {
     imageClass: n,
     error: c,

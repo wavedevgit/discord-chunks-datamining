@@ -26,7 +26,7 @@ function c(e, t, n) {
   r.useEffect(() => {
     h(e, n)
   }, [h, n, e]), r.useEffect(() => {
-    (async function(e, t) {
+    !async function(e, t) {
       if (null == t) return;
       let n = e.current,
         r = new Set(n.keys()),
@@ -34,15 +34,15 @@ function c(e, t, n) {
       if (0 !== a.length) try {
         var i, l, o;
         let t = await s.V6(a);
-        e.current = (i = new Map(n), l = a, o = null == t ? void 0 : t.embeds, null == o || o.forEach(e => {
+        i = new Map(n), l = a, o = null == t ? void 0 : t.embeds, null == o || o.forEach(e => {
           var t, n;
           let r = (t = l, n = e, t.find(e => (null == n ? void 0 : n.url) != null && e.startsWith(n.url)));
           if (null == r) return;
           let a = i.get(r);
           null == a ? i.set(r, [e]) : a.push(e)
-        }), i), d({})
+        }), e.current = i, d({})
       } catch (e) {}
-    })(c, u)
+    }(c, u)
   }, [u]);
   let g = (0, i.Z)(c),
     f = r.useMemo(() => {

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(692547),
-  a = n(481060),
+  a = n(692547),
+  o = n(481060),
   s = n(906732),
   c = n(812206),
   u = n(925329),
@@ -21,16 +21,16 @@ var r = n(200651),
   E = n(170245),
   O = n(981631),
   N = n(388032),
-  v = n(668888);
+  y = n(53487);
 
-function y(e) {
+function I(e) {
   var t;
   let {
     user: n,
     applicationId: l,
     isGameRelationship: s,
     active: c
-  } = e, u = (null === (t = h.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()) && (null == n ? void 0 : n.isStaff()), {
+  } = e, u = (null == (t = h.default.getCurrentUser()) ? void 0 : t.isStaff()) && (null == n ? void 0 : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
   } = (0, m.u)({
@@ -45,19 +45,19 @@ function y(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: v.staffIndicator,
-      children: (0, r.jsx)(a.IGR, {
-        color: o.Z.unsafe_rawColors.BRAND_500.css,
+      className: y.staffIndicator,
+      children: (0, r.jsx)(o.IGR, {
+        color: a.Z.unsafe_rawColors.BRAND_500.css,
         text: N.NW.string(N.t.oMx98P)
       })
     }), (0, r.jsx)(b.Z, {
-      icon: a.dz2,
+      icon: o.dz2,
       actionType: b.Z.ActionTypes.ACCEPT,
       tooltip: N.NW.string(N.t.ZcibdX),
       onClick: f,
       shouldHighlight: c
     }), (0, r.jsx)(b.Z, {
-      icon: a.Dio,
+      icon: o.Dio,
       actionType: b.Z.ActionTypes.DENY,
       tooltip: N.NW.string(N.t.xuio0N),
       onClick: g,
@@ -66,12 +66,12 @@ function y(e) {
   })
 }
 
-function I(e) {
+function v(e) {
   let {
     userId: t,
     applicationId: n,
     isGameRelationship: l,
-    active: o
+    active: a
   } = e, {
     cancelFriendRequest: s
   } = (0, m.u)({
@@ -83,11 +83,11 @@ function I(e) {
     e.stopPropagation(), s()
   }, [s]);
   return (0, r.jsx)(b.Z, {
-    icon: a.Dio,
+    icon: o.Dio,
     actionType: b.Z.ActionTypes.DENY,
     tooltip: N.NW.string(N.t.eaq81d),
     onClick: c,
-    shouldHighlight: o
+    shouldHighlight: a
   })
 }
 
@@ -95,12 +95,12 @@ function C(e) {
   let {
     isGameRelationship: t,
     applicationId: n,
-    userTag: o,
+    userTag: a,
     isProvisional: s
-  } = e, p = i.useMemo(() => t ? N.NW.string(N.t["Uv/eT0"]) : o, [t, o]), h = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? N.NW.string(N.t["Uv/eT0"]) : a, [t, a]), h = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: v.applicationSublabel,
-    children: [!s && (0, r.jsx)(a.Text, {
+    className: y.applicationSublabel,
+    children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       children: p
@@ -111,7 +111,7 @@ function C(e) {
       }), (0, r.jsx)(u.Z, {
         game: h,
         size: u.Z.Sizes.XXSMALL
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         children: h.name
@@ -126,8 +126,8 @@ function S(e) {
     hovered: n,
     status: i,
     isGameRelationship: l,
-    applicationId: o
-  } = e, a = g.ZP.useUserTag(t);
+    applicationId: a
+  } = e, o = g.ZP.useUserTag(t);
   return (0, r.jsx)(E.Z, {
     user: t,
     hovered: n,
@@ -136,8 +136,8 @@ function S(e) {
     subText: (0, r.jsx)(C, {
       isGameRelationship: l,
       isProvisional: t.isProvisional,
-      applicationId: o,
-      userTag: a
+      applicationId: a,
+      userTag: o
     })
   })
 }
@@ -147,8 +147,8 @@ function T(e) {
     user: t,
     type: n,
     status: l,
-    isFocused: o,
-    applicationId: a,
+    isFocused: a,
+    applicationId: o,
     isGameRelationship: c
   } = e, u = i.useContext(f.AnalyticsContext), {
     analyticsLocations: d
@@ -158,27 +158,27 @@ function T(e) {
     analyticsLocation: u.location
   }), [u.location, d, t.id]);
   return (0, r.jsx)(_.Z, {
-    isFocused: o,
+    isFocused: a,
     user: t,
     onClick: g,
     children: e => (0, r.jsxs)("div", {
-      className: v.listItemContents,
+      className: y.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
         status: h,
         isGameRelationship: c,
-        applicationId: a
+        applicationId: o
       }), (0, r.jsx)("div", {
-        className: v.actions,
-        children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
+        className: y.actions,
+        children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(I, {
           user: t,
-          applicationId: a,
+          applicationId: o,
           isGameRelationship: c,
           active: e
-        }) : (0, r.jsx)(I, {
+        }) : (0, r.jsx)(v, {
           userId: t.id,
-          applicationId: a,
+          applicationId: o,
           isGameRelationship: c,
           active: e
         })

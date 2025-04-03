@@ -42,14 +42,13 @@ function p(e) {
       o = c.ZP.getMember(r, l),
       a = (0, _.Ow)(null == o ? void 0 : o.flags);
     if (0 === a.size) return t;
-    if (a.has(N.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
+    if (a.has(N.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
         var d;
         t.nick = [T.NW.formatToPlainString(T.t.WBUh3N, {
-          guildName: null !== (d = i.name) && void 0 !== d ? d : ""
+          guildName: null != (d = i.name) ? d : ""
         })]
-      } else t.nick = [T.NW.string(T.t.EPZCrK)]
-    }
+      } else t.nick = [T.NW.string(T.t.EPZCrK)];
     return a.has(N.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [T.NW.string(T.t.dZh1v7)]), t
   }, [e])
 }

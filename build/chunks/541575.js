@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -18,7 +18,7 @@ var i = n(780384),
   p = n(981631),
   h = n(30513),
   f = n(388032),
-  b = n(301556);
+  b = n(18346);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,8 +55,8 @@ let N = function(e) {
   let {
     guild: t,
     disabled: N,
-    role: v
-  } = e, _ = (0, a.ZP)(), C = (0, u.oC)(t.id, v), {
+    role: _
+  } = e, v = (0, a.ZP)(), C = (0, u.oC)(t.id, _), {
     analyticsLocations: O
   } = (0, o.ZP)(), y = () => {
     (0, s.ZDy)(async () => {
@@ -65,8 +65,8 @@ let N = function(e) {
       } = await n.e("22942").then(n.bind(n, 660727));
       return n => (0, r.jsx)(e, j(x({}, n), {
         guildId: t.id,
-        onUploadIcon: e => (0, g._l)(v.id, e, null),
-        onSelectUnicodeEmoji: e => (0, g._l)(v.id, null, e)
+        onUploadIcon: e => (0, g._l)(_.id, e, null),
+        onSelectUnicodeEmoji: e => (0, g._l)(_.id, null, e)
       }))
     })
   }, I = t.features.has(p.oNc.ROLE_ICONS), E = e => {
@@ -123,7 +123,7 @@ let N = function(e) {
         })
       }), (0, r.jsx)(s.zxk, {
         className: b.button,
-        color: (0, i.ap)(_) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.WHITE,
+        color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.WHITE,
         look: s.zxk.Looks.OUTLINED,
         onClick: () => t.hasFeature(p.oNc.ROLE_ICONS) ? y() : E({
           object: p.qAy.UPLOAD_IMAGE
@@ -132,10 +132,10 @@ let N = function(e) {
         children: f.NW.string(f.t.mD1oGB)
       }), null != C ? (0, r.jsx)(s.zxk, {
         className: b.button,
-        color: (0, i.ap)(_) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.TRANSPARENT,
+        color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.TRANSPARENT,
         look: s.zxk.Looks.BLANK,
         onClick: () => {
-          (0, g._l)(v.id, null, null)
+          (0, g._l)(_.id, null, null)
         },
         disabled: N,
         children: f.NW.string(f.t["uY+Nk5"])

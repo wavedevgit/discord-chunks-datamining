@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   e: () => d
 }), n(47120), n(301563);
@@ -35,7 +35,7 @@ let c = new class {
       }({}, function() {
         var e, t, n;
         let r = "--campaign-id=";
-        for (let a of null !== (n = null === i.Z || void 0 === i.Z ? void 0 : null === (t = i.Z.processUtils) || void 0 === t ? void 0 : null === (e = t.getMainArgvSync) || void 0 === e ? void 0 : e.call(t)) && void 0 !== n ? n : [])
+        for (let a of null != (n = null === i.Z || void 0 === i.Z || null == (t = i.Z.processUtils) || null == (e = t.getMainArgvSync) ? void 0 : e.call(t)) ? n : [])
           if (a.startsWith(r)) return {
             referrer: a.substr(r.length)
           };

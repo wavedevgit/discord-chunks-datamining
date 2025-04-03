@@ -16,7 +16,7 @@ function u(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     u = (0, a.Z)(),
     d = (0, l.e7)([s.Z], () => s.Z.getOutputDeviceId()),
-    p = null === (t = u[d]) || void 0 === t ? void 0 : t.name,
+    p = null == (t = u[d]) ? void 0 : t.name,
     f = Object.values(u).map(t => {
       let {
         id: n,

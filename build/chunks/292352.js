@@ -5,8 +5,8 @@ n.d(e, {
   Mu: () => M,
   Of: () => T,
   QH: () => b,
-  TX: () => Y,
-  Wz: () => O,
+  TX: () => O,
+  Wz: () => m,
   YC: () => D,
   _6: () => Z,
   _w: () => p,
@@ -21,9 +21,9 @@ n.d(e, {
   vH: () => A,
   zE: () => I
 }), n(47120);
-var r, i, o, a, s, l, d, E = n(860911),
+var r, i, a, o, s, l, d, E = n(860911),
   u = n(70956),
-  c = n(378392),
+  c = n(332495),
   _ = n(388032);
 let T = 30 * u.Z.Millis.SECOND,
   S = 8,
@@ -40,8 +40,8 @@ let T = 30 * u.Z.Millis.SECOND,
   }), [":", "?", "@"]);
 var h = ((r = {})[r.PENDING = 1] = "PENDING", r[r.ACTIVE = 2] = "ACTIVE", r[r.INACTIVE = 3] = "INACTIVE", r[r.DECLINED = 4] = "DECLINED", r[r.EXPIRED = 5] = "EXPIRED", r),
   L = ((i = {})[i.USER_ADD = 1] = "USER_ADD", i[i.GUILD_ADD = 2] = "GUILD_ADD", i[i.USER_INTERACTION = 3] = "USER_INTERACTION", i[i.GUILD_INTERACTION = 4] = "GUILD_INTERACTION", i[i.USER_CALLED = 5] = "USER_CALLED", i),
-  R = ((o = {}).ACTIVITY = "ACTIVITY", o.REQUESTS = "REQUESTS", o.SETTINGS = "SETTINGS", o),
-  b = ((a = {})[a.ACTIVITY = 0] = "ACTIVITY", a[a.REQUESTS = 1] = "REQUESTS", a[a.SETTINGS = 2] = "SETTINGS", a),
+  R = ((a = {}).ACTIVITY = "ACTIVITY", a.REQUESTS = "REQUESTS", a.SETTINGS = "SETTINGS", a),
+  b = ((o = {})[o.ACTIVITY = 0] = "ACTIVITY", o[o.REQUESTS = 1] = "REQUESTS", o[o.SETTINGS = 2] = "SETTINGS", o),
   M = ((s = {}).SIDENAV = "SIDENAV", s.SETTINGS = "SETTINGS", s),
   Z = ((l = {})[l.SIDENAV = 0] = "SIDENAV", l[l.SETTINGS = 1] = "SETTINGS", l),
   D = ((d = {})[d.TabChange = 0] = "TabChange", d[d.ShowQRCodeModal = 1] = "ShowQRCodeModal", d[d.RevealQRCode = 2] = "RevealQRCode", d[d.ScanQRCodeButton = 3] = "ScanQRCodeButton", d[d.ScanQRCode = 4] = "ScanQRCode", d[d.LoadMore = 5] = "LoadMore", d[d.SelectTeen = 6] = "SelectTeen", d[d.HideQRCode = 7] = "HideQRCode", d);
@@ -95,18 +95,18 @@ let U = new Map([
   }],
   [4, {
     tooltipHeader: () => _.NW.string(c.Z.CcrbCw),
-    tooltipDescription: v,
+    tooltipDescription: Y,
     sectionHeader: t => _.NW.formatToPlainString(c.Z.rcPInZ, {
       count: t
     }),
-    sectionDescription: v
+    sectionDescription: Y
   }]
 ]);
 
-function v(t, e) {
+function Y(t, e) {
   return t ? e ? _.NW.string(c.Z.c0NgBQ) : _.NW.string(c.Z.dcvNX1) : e ? _.NW.string(c.Z.DLVyFx) : _.NW.string(c.Z["823ugY"])
 }
-let Y = () => ({
+let O = () => ({
     seconds: _.NW.string(c.Z.CJdoeX),
     minutes: c.Z.InzMn5,
     hours: c.Z.ErkYCA,
@@ -114,7 +114,7 @@ let Y = () => ({
     days: c.Z.pWig19,
     date: c.Z.MP3kho
   }),
-  O = () => ({
+  m = () => ({
     seconds: _.NW.string(c.Z.BqsamZ),
     minutes: c.Z.kX3wJi,
     hours: c.Z.J18GbG,

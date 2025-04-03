@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => m
 }), n(301563);
@@ -14,7 +14,7 @@ var i = n(120356),
   d = n(600164),
   p = n(158776),
   h = n(51144),
-  f = n(347235);
+  f = n(900054);
 
 function m(e) {
   var t, n;
@@ -25,9 +25,9 @@ function m(e) {
     comparator: b,
     selected: _,
     checked: C,
-    onClick: v,
-    onMouseEnter: y,
-    "aria-setsize": x,
+    onClick: y,
+    onMouseEnter: x,
+    "aria-setsize": v,
     "aria-posinset": j
   } = e, O = (0, a.e7)([p.Z], () => p.Z.getStatus(i.id)), E = (0, o.JA)(String(i.id));
   return (0, r.jsx)(s.P3F, (t = function(e) {
@@ -51,15 +51,15 @@ function m(e) {
     id: "user-row-".concat(m),
     className: f.friendWrapper,
     onClick: () => {
-      null != v && v(i.id)
+      null != y && y(i.id)
     },
     onMouseEnter: () => {
-      null != y && y(m)
+      null != x && x(m)
     }
   }, E), n = n = {
     role: "option",
     "aria-selected": C,
-    "aria-setsize": x,
+    "aria-setsize": v,
     "aria-posinset": j,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846027),
   i = n(365023),
   l = n(565799),
-  o = n(501655),
-  a = n(368442),
+  a = n(501655),
+  o = n(368442),
   s = n(829750),
   c = n(560688),
   u = n(173507),
@@ -22,24 +22,24 @@ function b() {
   if (!(0, i.l)()) return;
   let n = p.Z.isVideoEnabled(),
     b = Object.values(p.Z.getVideoDevices())[0],
-    _ = !1 === (null === (t = null == b ? void 0 : b.disabled) || void 0 === t || t),
+    _ = !1 === (null == (t = null == b ? void 0 : b.disabled) || t),
     E = p.Z.supportsInApp(m.AN.VIDEO) && p.Z.supportsInApp(m.AN.DESKTOP_CAPTURE),
-    O = d.Z.getChannel(h.Z.getChannelId()),
-    N = null === (e = f.default.getCurrentUser()) || void 0 === e ? void 0 : e.id;
+    O = d.Z.getChannel(h.ZP.getChannelId()),
+    N = null == (e = f.default.getCurrentUser()) ? void 0 : e.id;
   if (null == O || null == N) return;
   let {
-    reachedLimit: v
+    reachedLimit: y
   } = (0, s.t)(O);
-  if (!v) {
+  if (!y) {
     if (O.isGuildStageVoice()) {
-      let e = l.Z.getMutableParticipants(O.id, o.pV.SPEAKER),
+      let e = l.Z.getMutableParticipants(O.id, a.pV.SPEAKER),
         t = null == e ? void 0 : e.find(e => {
           let {
             user: t
           } = e;
           return t.id === N
         });
-      if (!(0, a.tu)(O.guild_id) || !E || null == t || t.voiceState.suppress) return
+      if (!(0, o.tu)(O.guild_id) || !E || null == t || t.voiceState.suppress) return
     }
     return n ? r.Z.setVideoEnabled(!1) : !n && _ ? (0, u.Z)(() => {
       r.Z.setVideoEnabled(!0)

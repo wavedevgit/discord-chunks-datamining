@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(594174),
   _ = n(251625),
   C = n(823379),
-  v = n(665149),
-  y = n(981631),
-  x = n(228168),
+  y = n(665149),
+  x = n(981631),
+  v = n(228168),
   j = n(388032),
-  O = n(657957);
+  O = n(479367);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,11 +71,11 @@ class N {
   }) {
     E(this, "userId", void 0), E(this, "user", void 0), E(this, "channelId", void 0), E(this, "analyticsLocations", void 0), E(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
       var t;
-      return o()(m.ZP.getNicknameGuildsMapping(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : this.userId)).toPairs().map(e => {
+      return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? void 0 : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
-          return null === (t = g.Z.getGuild(e)) || void 0 === t ? void 0 : t.name
+          return null == (t = g.Z.getGuild(e)) ? void 0 : t.name
         }).filter(C.lm)]
       }).value()
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
@@ -95,9 +95,9 @@ class N {
         userId: this.userId,
         channelId: this.channelId,
         sourceAnalyticsLocations: this.analyticsLocations,
-        section: x.oh.MUTUAL_GUILDS,
+        section: v.oh.MUTUAL_GUILDS,
         analyticsLocation: {
-          section: y.jXE.CHANNEL_HEADER
+          section: x.jXE.CHANNEL_HEADER
         }
       })
     }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = i
@@ -135,7 +135,7 @@ function I(e) {
     className: O.spacer
   }) : (0, r.jsxs)(d.Gt, {
     value: f,
-    children: [(0, r.jsx)(v.iz, {
+    children: [(0, r.jsx)(y.iz, {
       className: O.divider
     }), (0, r.jsx)(s.IGR, {
       text: j.NW.string(j.t.l1QVfn),
@@ -150,7 +150,7 @@ function I(e) {
         let o = m.user,
           a = l[n];
         return null == a || null == o ? null : (0, r.jsx)(s.DY3, {
-          text: null === (i = g.Z.getGuild(a)) || void 0 === i ? void 0 : i.name,
+          text: null == (i = g.Z.getGuild(a)) ? void 0 : i.name,
           position: "bottom",
           children: (0, r.jsx)("img", {
             alt: "",

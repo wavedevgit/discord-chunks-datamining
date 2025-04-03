@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => L
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(692547),
+  l = n(442837),
+  o = n(692547),
   c = n(481060),
   d = n(224706),
   u = n(225433),
@@ -23,11 +23,11 @@ var r = n(200651),
   E = n(210887),
   j = n(981631),
   O = n(388032),
-  C = n(664516),
-  v = n(96424),
-  S = n(913208),
-  T = n(968484),
-  I = n(685786);
+  C = n(443474),
+  S = n(20795),
+  v = n(893354),
+  T = n(588866),
+  I = n(20493);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = o.ZP.connectStores([E.Z], () => ({
+let P = l.ZP.connectStores([E.Z], () => ({
     theme: E.Z.theme
   }))(c.ubH),
   R = (0, _.isWindows)();
@@ -68,20 +68,20 @@ let P = o.ZP.connectStores([E.Z], () => ({
 function D(e) {
   let {
     onClose: t
-  } = e, n = (0, o.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, l] = i.useState(null), u = n.map(e => ({
+  } = e, n = (0, l.e7)([g.ZP], () => g.ZP.getCandidateGames()), [s, o] = i.useState(null), u = n.map(e => ({
     key: e.pid,
     value: e,
     label: null != e.name ? e.name : ""
   }));
   return (0, r.jsxs)(c.VqE, {
-    className: a()(C.addGamePopout, v.elevationBorderHigh),
+    className: a()(C.addGamePopout, S.elevationBorderHigh),
     "aria-label": O.NW.string(O.t.GTCx0t),
     children: [(0, r.jsx)(c.VcW, {
       placeholder: O.NW.string(O.t.XqMe3N),
       value: s,
       options: u,
       onChange: function(e) {
-        l(e)
+        o(e)
       },
       renderOptionLabel: e => (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
@@ -92,7 +92,7 @@ function D(e) {
     }), (0, r.jsx)(c.$i$, {
       className: a()(I.marginTop8, I.marginBottom8)
     }), (0, r.jsxs)("div", {
-      className: a()(C.actions, S.horizontal),
+      className: a()(C.actions, v.horizontal),
       children: [(0, r.jsx)(c.zxk, {
         className: C.cancelButton,
         look: c.iLD.LINK,
@@ -116,7 +116,7 @@ function Z(e) {
     rawGame: n,
     nowPlaying: s = !1,
     isOverride: p
-  } = e, x = (0, o.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [_, E] = i.useState(!1), [v, I] = i.useState(null !== (t = x.name) && void 0 !== t ? t : "???"), P = a()(S.flexCenter, {
+  } = e, x = (0, l.cj)([g.ZP, f.Z, b.Z], () => (0, g.FZ)(n, [g.ZP, f.Z, b.Z])), [_, E] = i.useState(!1), [S, I] = i.useState(null != (t = x.name) ? t : "???"), P = a()(v.flexCenter, {
     [C.game]: !s,
     [C.activeGame]: s,
     [T.card]: !s,
@@ -140,7 +140,7 @@ function Z(e) {
   return (0, r.jsxs)("div", {
     className: P,
     children: [(0, r.jsxs)("div", {
-      className: a()(C.gameNameLastPlayed, S.vertical),
+      className: a()(C.gameNameLastPlayed, v.vertical),
       children: [x.verified && !p ? (0, r.jsxs)("div", {
         className: C.detectedApplication,
         children: [(0, r.jsx)("div", {
@@ -151,13 +151,13 @@ function Z(e) {
           children: e => (0, r.jsx)(h.Z, A(y({
             className: C.gameVerifiedIcon,
             size: 18,
-            color: l.Z.unsafe_rawColors.BRAND_500.css
+            color: o.Z.unsafe_rawColors.BRAND_500.css
           }, e), {
             children: (0, r.jsx)(c.kmB, {
               size: "custom",
               width: 18,
               height: 18,
-              color: l.Z.unsafe_rawColors.WHITE_500.css
+              color: o.Z.unsafe_rawColors.WHITE_500.css
             })
           }))
         })]
@@ -165,17 +165,16 @@ function Z(e) {
         className: a()(C.gameName, C.gameNameInput),
         type: "text",
         maxLength: 128,
-        value: v,
+        value: S,
         onBlur: function() {
-          x.name !== v && d.Z.editName(x, v)
+          x.name !== S && d.Z.editName(x, S)
         },
         onKeyDown: function(e) {
           13 === e.keyCode && (e.currentTarget.blur(), e.preventDefault())
         },
         onChange: e => I(e.target.value)
       }), function() {
-        let e;
-        let {
+        let e, {
           played: t,
           exePath: n
         } = x;
@@ -189,8 +188,8 @@ function Z(e) {
           })
         })
       }()]
-    }), p ? null : _ ? null : (0, r.jsx)("div", {
-      className: a()(S.flexCenter, S.noWrap, S.justifyBetween, C.toggleContainer),
+    }), p || _ ? null : (0, r.jsx)("div", {
+      className: a()(v.flexCenter, v.noWrap, v.justifyBetween, C.toggleContainer),
       children: (0, r.jsx)(c.ua7, {
         text: O.NW.string(O.t["y0B+lp"]),
         children: e => {
@@ -228,7 +227,7 @@ function Z(e) {
         colorClass: C.fill
       });
       return (0, r.jsx)("div", {
-        className: a()(S.flexCenter, S.noWrap, S.justifyBetween, C.toggleContainer),
+        className: a()(v.flexCenter, v.noWrap, v.justifyBetween, C.toggleContainer),
         children: (0, r.jsx)(c.ua7, {
           text: O.NW.string(O.t.QmitzM),
           children: e => {
@@ -269,7 +268,7 @@ function Z(e) {
         }, e))
       }) : null;
       return (0, r.jsxs)("div", {
-        className: a()(S.flexCenter, S.noWrap, S.justifyBetween, C.toggleContainer),
+        className: a()(v.flexCenter, v.noWrap, v.justifyBetween, C.toggleContainer),
         children: [i, (0, r.jsx)(c.ua7, {
           text: O.NW.string(O.t["1+O+Tk"]),
           children: t => {
@@ -302,9 +301,9 @@ function Z(e) {
 
 function w() {
   return (0, r.jsx)("div", {
-    className: a()(S.flexCenter, C.notDetected, C.activeGame),
+    className: a()(v.flexCenter, C.notDetected, C.activeGame),
     children: (0, r.jsxs)("div", {
-      className: a()(C.gameNameLastPlayed, S.vertical),
+      className: a()(C.gameNameLastPlayed, v.vertical),
       children: [(0, r.jsx)("div", {
         className: C.gameName,
         children: O.NW.string(O.t["H68X9/"])
@@ -338,10 +337,10 @@ let W = (0, x.oH)(function() {
     let {
       className: t,
       showHeader: n = !0
-    } = e, s = (0, o.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
-      runningGame: l,
+    } = e, s = (0, l.Wu)([g.ZP], () => g.ZP.getGamesSeen(!0)), {
+      runningGame: o,
       overrideExePaths: d
-    } = (0, o.cj)([g.ZP], () => ({
+    } = (0, l.cj)([g.ZP], () => ({
       runningGame: g.ZP.getVisibleGame(),
       overrideExePaths: W(...g.ZP.getOverrides())
     }));
@@ -349,11 +348,11 @@ let W = (0, x.oH)(function() {
       tag: "h1",
       title: n ? O.NW.string(O.t.AVDyEh) : null,
       className: t,
-      children: [null != l ? (0, r.jsx)(Z, {
-        rawGame: l,
-        isOverride: d.has(l.exePath),
+      children: [null != o ? (0, r.jsx)(Z, {
+        rawGame: o,
+        isOverride: d.has(o.exePath),
         nowPlaying: !0
-      }, (0, g.rH)(l)) : (0, r.jsx)(w, {}), (0, r.jsxs)("div", {
+      }, (0, g.rH)(o)) : (0, r.jsx)(w, {}), (0, r.jsxs)("div", {
         className: a()(C.nowPlayingAdd, I.marginReset, I.marginTop8, I.marginBottom20),
         children: [(0, r.jsx)("span", {
           children: O.NW.string(O.t.xwhoqK)

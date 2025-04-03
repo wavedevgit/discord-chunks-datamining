@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   FJ: () => s,
   HL: () => u,
@@ -9,8 +9,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(834129),
-  o = n(388032),
-  l = n(365502);
+  l = n(388032),
+  o = n(794446);
 
 function s(e) {
   let {
@@ -22,8 +22,8 @@ function s(e) {
     icon: n(508933),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: l.messageContent,
-    children: o.NW.format(o.t.bYdG3d, {
+    contentClassName: o.messageContent,
+    children: l.NW.format(l.t.bYdG3d, {
       onClick: s
     })
   })
@@ -38,8 +38,8 @@ function c(e) {
     icon: n(324606),
     timestamp: t.timestamp,
     compact: i,
-    contentClassName: l.messageContent,
-    children: o.NW.string(o.t.tu6tOT)
+    contentClassName: o.messageContent,
+    children: l.NW.string(l.t.tu6tOT)
   })
 }
 
@@ -54,12 +54,12 @@ function u(e) {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: l.alertIcon
+      className: o.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: l.messageContent,
-    children: o.NW.string(o.t.vzfXqq)
+    contentClassName: o.messageContent,
+    children: l.NW.string(l.t.vzfXqq)
   })
 }
 
@@ -74,11 +74,11 @@ function d(e) {
       width: 20,
       height: 20,
       color: "currentColor",
-      className: l.alertIcon
+      className: o.alertIcon
     }),
     timestamp: t.timestamp,
     compact: n,
-    contentClassName: l.messageContent,
-    children: o.NW.string(o.t["/Tfvyc"])
+    contentClassName: o.messageContent,
+    children: l.NW.string(l.t["/Tfvyc"])
   })
 }

@@ -1,19 +1,19 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(481060),
-  l = n(668781),
+  l = n(481060),
+  o = n(668781),
   s = n(431583),
   c = n(91372),
   u = n(19780),
   d = n(35818),
   p = n(665149),
   m = n(388032),
-  f = n(216426);
+  f = n(220705);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,7 +31,7 @@ class g extends i.PureComponent {
     } : null
   }
   handleDownloadApps() {
-    (0, o.h7j)(e => (0, r.jsx)(s.default, function(e) {
+    (0, l.h7j)(e => (0, r.jsx)(s.default, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -54,7 +54,7 @@ class g extends i.PureComponent {
           tooltip: m.NW.string(m.t["zp9d//"]),
           foreground: f.downloadArrow,
           background: f.cloud,
-          icon: o._8t,
+          icon: l._8t,
           className: this.props.className
         });
       case "UPDATE_MANUALLY":
@@ -63,7 +63,7 @@ class g extends i.PureComponent {
           tooltip: m.NW.string(m.t.u18OXF),
           foreground: f.updateIconForeground,
           onClick: this.handleInstallDownload,
-          icon: o._8t,
+          icon: l._8t,
           className: this.props.className
         });
       default:
@@ -75,7 +75,7 @@ class g extends i.PureComponent {
       memoizedMode: this.props.mode,
       clicked: !1
     }), h(this, "handleInstallDownload", () => {
-      u.Z.isConnected() ? l.Z.show({
+      u.ZP.isConnected() ? o.Z.show({
         title: m.NW.string(m.t.tiu1l5),
         body: m.NW.string(m.t["zK+lqa"]),
         onConfirm: this.doUpdate,

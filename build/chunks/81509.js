@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => v
 });
 var r = n(200651);
 n(192379);
@@ -17,7 +17,7 @@ var i = n(120356),
   g = n(594278),
   p = n(549631),
   h = n(388032),
-  f = n(701627);
+  f = n(748812);
 
 function b(e) {
   let {
@@ -153,7 +153,7 @@ function N(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     highlightedCreatorGuild: t
   } = e, {
@@ -176,8 +176,8 @@ function v(e) {
     guildAvatarUrl: p,
     subscriberCount: h,
     emojisToShow: b,
-    notShownEmojiCount: v,
-    storePageUrl: _
+    notShownEmojiCount: _,
+    storePageUrl: v
   } = o.details;
   return (0, r.jsxs)("div", {
     className: f.guildCard,
@@ -192,13 +192,13 @@ function v(e) {
       quoteAttributionTitle: l
     }), (0, r.jsx)(N, {
       emojisToShow: b,
-      notShownEmojiCount: v,
-      storePageUrl: _
+      notShownEmojiCount: _,
+      storePageUrl: v
     })]
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     highlightedCreators: t
   } = e;
@@ -212,7 +212,7 @@ function _(e) {
     }), (0, r.jsx)(g.Z, {
       carouselClassName: f.creatorGuildCarousel,
       items: t,
-      renderItem: e => (0, r.jsx)(v, {
+      renderItem: e => (0, r.jsx)(_, {
         highlightedCreatorGuild: e
       }),
       intervalBetweenAutomaticItemRotations: 7e3

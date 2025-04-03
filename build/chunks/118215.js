@@ -12,7 +12,7 @@ class E extends(l = u.ZP.Store) {
   }
   passesChecklist(e) {
     var i;
-    return !s && (null === (i = a[e]) || void 0 === i ? void 0 : i.sufficient)
+    return !s && (null == (i = a[e]) ? void 0 : i.sufficient)
   }
   isPendingSuccess(e) {
     let i = a[e];
@@ -56,7 +56,7 @@ let c = new E(o.Z, {
       engagementHealthy: t.engagement_healthy,
       minimumGuildSize: null != t.minimum_size ? t.minimum_size : 1e3,
       healthScore: t.health_score,
-      minimumGuildAge: null !== (i = t.minimum_age) && void 0 !== i ? i : 0,
+      minimumGuildAge: null != (i = t.minimum_age) ? i : 0,
       age: t.age
     }
   }

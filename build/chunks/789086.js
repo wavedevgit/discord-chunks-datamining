@@ -13,14 +13,14 @@ var r = n(200651),
 function d() {
   let e = (0, a.e7)([o.Z], () => {
       var e;
-      return (null === (e = o.Z.getFeed(c.YN.GLOBAL_FEED)) || void 0 === e ? void 0 : e.refresh_stale_inbox_after_ms) != null
+      return (null == (e = o.Z.getFeed(c.YN.GLOBAL_FEED)) ? void 0 : e.refresh_stale_inbox_after_ms) != null
     }),
     {
       loading: t,
       nextFetchDate: n
     } = (0, a.cj)([o.Z], () => {
       var e;
-      return null !== (e = o.Z.getFeedState(c.YN.GLOBAL_FEED)) && void 0 !== e ? e : {
+      return null != (e = o.Z.getFeedState(c.YN.GLOBAL_FEED)) ? e : {
         loading: !1
       }
     }),

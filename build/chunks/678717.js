@@ -52,8 +52,8 @@ var g = n(392750),
   K = n(56706),
   J = n(621060),
   q = n(388032),
-  $ = n(241675),
-  Q = n(890798);
+  $ = n(736967),
+  Q = n(616257);
 
 function ee(e) {
   let {
@@ -217,7 +217,7 @@ function et() {
       selectedTabId: i
     } = (0, J.Z)({
       tabs: t,
-      initialSelectedTabId: null !== (e = f.Z.lastOpenTabId) && void 0 !== e ? e : void 0,
+      initialSelectedTabId: null != (e = f.Z.lastOpenTabId) ? e : void 0,
       onChangeTab: e => {
         (0, b.Qh)({
           lastOpenTabId: e

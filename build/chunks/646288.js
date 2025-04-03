@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => a
 });
@@ -11,5 +11,8 @@ function a(e) {
   if (!e.available) return i.NW.string(i.t.RWouSU);
   if (e.premium && !n) return i.NW.string(i.t.QGUSz8);
   let a = e.getPrice(null, t);
-  return null != a ? a.amount > 0 ? (0, r.T4)(a.amount, a.currency) : i.NW.string(i.t.QQsaCQ) : i.NW.string(i.t.RWouSU)
+  if (null != a)
+    if (a.amount > 0) return (0, r.T4)(a.amount, a.currency);
+    else return i.NW.string(i.t.QQsaCQ);
+  return i.NW.string(i.t.RWouSU)
 }

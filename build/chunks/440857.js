@@ -1,6 +1,6 @@
 /** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => y
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(256003),
   h = n(981631),
   j = n(388032),
-  g = n(556633);
+  g = n(571031);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -39,7 +39,7 @@ function x(e) {
   return e
 }
 
-function v(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,16 +52,16 @@ function v(e, t) {
   }), e
 }
 
-function y(e) {
+function v(e) {
   let {
     guildId: t
-  } = e, y = (0, p.xC)(t), {
+  } = e, v = (0, p.xC)(t), {
     selectedUserIds: O,
     clearSelection: N
   } = (0, f.Z)(t), _ = O.size > 0, H = async (e, t, n, r) => {
     try {
       let l = await c.Z.banMultipleUsers(e, t, n, r);
-      (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
+      (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, y(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...O],
         mod_user_id: C.default.getId(),
@@ -106,13 +106,13 @@ function y(e) {
       children: j.NW.string(j.t["2a50fH"])
     })]
   });
-  return y ? (0, r.jsx)(a.W, {
+  return v ? (0, r.jsx)(a.W, {
     component: "div",
     className: g.saveNoticeContainer,
     children: _ && (0, r.jsx)(s.oXn, {
       children: (0, r.jsx)(u.Z, {
         onSave: () => {
-          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, v(x({}, (0, d.hH)(t)), {
+          m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, y(x({}, (0, d.hH)(t)), {
             action_type: b.jQ.BAN,
             target_user_ids: [...O],
             mod_user_id: C.default.getId(),
@@ -121,9 +121,9 @@ function y(e) {
             let {
               default: e
             } = await n.e("43350").then(n.bind(n, 98746));
-            return n => (0, r.jsx)(e, v(x({}, n), {
+            return n => (0, r.jsx)(e, y(x({}, n), {
               guildId: t,
-              canBulkBan: y,
+              canBulkBan: v,
               userIds: O,
               onBanMultiple: H
             }))

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => B
 }), n(47120), n(566702);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(658722),
-  l = n.n(o),
+  l = n(658722),
+  o = n.n(l),
   c = n(442837),
   d = n(524437),
   u = n(780384),
@@ -24,17 +24,17 @@ var r = n(200651),
   j = n(358085),
   O = n(709054),
   C = n(362352),
-  v = n(413182),
-  S = n(695346),
+  S = n(413182),
+  v = n(695346),
   T = n(726985),
   I = n(981631),
   y = n(388032),
-  A = n(894884),
-  P = n(685786);
+  A = n(187382),
+  P = n(20493);
 
 function R(e) {
   let t = () => {
-    S.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -80,17 +80,17 @@ function R(e) {
 }
 
 function D() {
-  let e = S.G6.useSetting(),
-    t = S.Wz.useSetting(),
+  let e = v.G6.useSetting(),
+    t = v.Wz.useSetting(),
     n = (0, C.Yd)("activity privacy tab"),
     i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
-      S.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
+      v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
     },
-    o = e => {
-      S.Wz.updateSetting(e), R(e !== d.E5.OFF)
+    l = e => {
+      v.Wz.updateSetting(e), R(e !== d.E5.OFF)
     },
-    l = [{
+    o = [{
       value: d.E5.ON,
       label: y.NW.string(y.t.UzGMHx)
     }, {
@@ -109,7 +109,7 @@ function D() {
         children: y.NW.string(y.t["8ka8lp"])
       }), (0, r.jsx)(m.j7V, {
         value: e,
-        onChange: e => S.G6.updateSetting(e),
+        onChange: e => v.G6.updateSetting(e),
         note: i,
         children: y.NW.string(y.t["4q/Ewc"])
       }), n ? (0, r.jsxs)(m.xJW, {
@@ -123,9 +123,9 @@ function D() {
             helpdeskArticle: E.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS)
           })
         }), (0, r.jsx)(m.q4e, {
-          options: l,
+          options: o,
           value: t,
-          onChange: e => o(e)
+          onChange: e => l(e)
         })]
       }) : (0, r.jsx)(m.j7V, {
         value: t === d.E5.OFF,
@@ -142,8 +142,8 @@ function D() {
 }
 
 function Z() {
-  let e = S.cP.useSetting(),
-    t = S.Ou.useSetting();
+  let e = v.cP.useSetting(),
+    t = v.Ou.useSetting();
   return (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
@@ -155,12 +155,12 @@ function Z() {
       }), (0, r.jsx)(m.j7V, {
         value: e,
         note: y.NW.string(y.t.Hdh7sb),
-        onChange: e => S.cP.updateSetting(e),
+        onChange: e => v.cP.updateSetting(e),
         children: y.NW.string(y.t.WEWQQk)
       }), (0, r.jsx)(m.j7V, {
         value: t,
         note: y.NW.string(y.t.Czr3Bg),
-        onChange: e => S.Ou.updateSetting(e),
+        onChange: e => v.Ou.updateSetting(e),
         children: y.NW.string(y.t.UUvJVl)
       })]
     })
@@ -206,7 +206,7 @@ function W(e) {
   i.useEffect(() => {
     s(t.showActivity)
   }, [t]);
-  let o = h.Z.get(t.type);
+  let l = h.Z.get(t.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.j7V, {
       className: A.switchRowContainer,
@@ -218,17 +218,17 @@ function W(e) {
       children: (0, r.jsxs)("div", {
         className: A.activitySwitchRow,
         children: [(0, r.jsx)("img", {
-          alt: o.name,
+          alt: l.name,
           className: A.connectionIcon,
-          src: (0, u.wj)(a) ? o.icon.darkSVG : o.icon.lightSVG
+          src: (0, u.wj)(a) ? l.icon.darkSVG : l.icon.lightSVG
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(m.Text, {
             variant: "text-md/semibold",
-            children: o.name
+            children: l.name
           }), (0, r.jsxs)(m.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: ['"', k(o), '"']
+            children: ['"', k(l), '"']
           })]
         })]
       })
@@ -244,7 +244,7 @@ function L() {
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
-      return "" === e ? t : t.filter(t => l()(e, h.Z.get(t.type).name.toLowerCase()))
+      return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
   return 0 === t.length ? null : (0, r.jsx)(N.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
@@ -272,7 +272,7 @@ function B(e) {
     showHeader: n = !0
   } = e, {
     showRedesign: i
-  } = v.b.useExperiment({
+  } = S.b.useExperiment({
     location: "activity privacy tab"
   }), {
     showPerGuildActivityStatusSetting: s

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  i = n(512722),
-  a = n.n(i),
+  a = n(512722),
+  i = n.n(a),
   o = n(442837),
   s = n(481060),
   u = n(596454),
@@ -18,13 +18,13 @@ var r = n(200651),
   b = n(594174),
   j = n(626135),
   x = n(720449),
-  v = n(684269),
-  S = n(678865),
-  g = n(875425),
+  S = n(684269),
+  g = n(678865),
+  v = n(875425),
   O = n(981631),
   _ = n(185923),
   y = n(388032),
-  N = n(544501);
+  N = n(403773);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -134,7 +134,7 @@ class k extends l.PureComponent {
             }
           })
         }), (0, r.jsx)(s.oil, {
-          maxLength: g.s0,
+          maxLength: v.s0,
           value: t,
           inputClassName: N.input,
           placeholder: y.NW.string(y.t["zYR38/"]),
@@ -174,7 +174,7 @@ class k extends l.PureComponent {
         placeholder: y.NW.string(y.t.E45wvL),
         maxVisibleItems: 5,
         value: e,
-        options: g.wS.map(e => P(w({}, e), {
+        options: v.wS.map(e => P(w({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
@@ -193,7 +193,7 @@ class k extends l.PureComponent {
       children: (0, r.jsx)(s.q4e, {
         maxVisibleItems: 4,
         value: e,
-        options: g.Df.map(e => P(w({}, e), {
+        options: v.Df.map(e => P(w({}, e), {
           value: e.value,
           key: e.value,
           label: e.label()
@@ -250,8 +250,8 @@ class k extends l.PureComponent {
     super(...e), C(this, "state", {
       emojiInfo: null != this.props.customStatus ? this.props.customStatus.emoji : null,
       text: null != this.props.customStatus && null != this.props.customStatus.state ? this.props.customStatus.state : "",
-      clearAfter: (0, v.Z)(),
-      status: (0, S.Z)()
+      clearAfter: (0, S.Z)(),
+      status: (0, g.Z)()
     }), C(this, "handleClearStatus", () => {
       this.setState({
         emojiInfo: null,
@@ -293,11 +293,11 @@ class k extends l.PureComponent {
         emojiInfo: n,
         text: r,
         clearAfter: l,
-        status: i
-      } = this.state, a = h.co.getSetting();
-      a !== i && (0, m.Z)({
-        nextStatus: i,
-        prevStatus: a,
+        status: a
+      } = this.state, i = h.co.getSetting();
+      i !== a && (0, m.Z)({
+        nextStatus: a,
+        prevStatus: i,
         analyticsContext: e
       }), (0, x.Z)({
         text: r,
@@ -326,7 +326,7 @@ class k extends l.PureComponent {
 }
 let E = o.ZP.connectStores([f.Z, b.default], () => {
   let e = b.default.getCurrentUser();
-  return a()(null != e, "CustomStatusModal: user cannot be null"), {
+  return i()(null != e, "CustomStatusModal: user cannot be null"), {
     customStatus: f.Z.getCustomStatusActivity(),
     user: e
   }

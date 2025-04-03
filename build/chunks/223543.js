@@ -9,7 +9,7 @@ var r = n(200651),
   l = n(388905),
   s = n(108427),
   c = n(388032),
-  u = n(685786);
+  u = n(20493);
 
 function d(e) {
   let {
@@ -18,10 +18,8 @@ function d(e) {
   return (i.useEffect(() => {
     (0, s.e)("authorize_payment");
     let e = (0, a.Z)(t);
-    if (null == e) {
-      p("failed");
-      return
-    }(async () => {
+    if (null == e) return void p("failed");
+    (async () => {
       try {
         await o.Z.authorizePayment(e), p("succeeded")
       } catch (e) {

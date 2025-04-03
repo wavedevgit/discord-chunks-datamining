@@ -1,7 +1,7 @@
-/** Chunk was on 75347 **/
-"use strict";
+/** Chunk was on 74669 **/
 e.exports = {
-  container: "container__3167a",
-  pageContainer: "pageContainer__3167a",
-  nagbar: "nagbar__3167a"
+  upsellOverlayContainer: "upsellOverlayContainer__0f7dc",
+  upsellOverlay: "upsellOverlay__0f7dc",
+  upsellImage: "upsellImage__0f7dc",
+  upsellTextContainer: "upsellTextContainer__0f7dc"
 }

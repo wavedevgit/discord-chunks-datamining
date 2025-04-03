@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => R
 });
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(687158),
   _ = n(899007),
   C = n(648052),
-  v = n(867176),
-  y = n(280885),
-  x = n(900927),
+  y = n(867176),
+  x = n(280885),
+  v = n(900927),
   j = n(678738),
   O = n(502762),
   E = n(530),
@@ -30,8 +30,8 @@ var r = n(200651),
   P = n(171368),
   S = n(228168),
   Z = n(388032),
-  T = n(402977),
-  A = n(258630);
+  T = n(204340),
+  A = n(969627);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function R(e) {
             })
           }), (0, r.jsxs)("header", {
             className: T.header,
-            children: [(0, r.jsx)(v.Z, {
+            children: [(0, r.jsx)(y.Z, {
               user: t,
               displayProfile: M,
               profileType: S.y0.PANEL,
@@ -116,7 +116,7 @@ function R(e) {
               children: [(0, r.jsx)(j.Z, {
                 heading: Z.NW.string(Z.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(y.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userBio: null == M ? void 0 : M.bio,
                   userId: t.id,
                   animateOnHover: !0,
@@ -125,7 +125,7 @@ function R(e) {
               }), (0, r.jsx)(j.Z, {
                 heading: Z.NW.string(Z.t["A//N4u"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userId: t.id
                 })
               })]

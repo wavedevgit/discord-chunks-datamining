@@ -16,7 +16,7 @@ let c = {
     getPreEnrollmentBackgroundColor: e => void 0,
     canCollapseOnBlur: e => {
       var t;
-      return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.completedAt) == null
+      return (null == (t = e.userStatus) ? void 0 : t.completedAt) == null
     },
     shouldExpandOnQuestComplete: e => !0,
     getVerticalPadding: () => 8
@@ -26,7 +26,7 @@ let c = {
     component: s.Z,
     getCollapsedHeight: e => {
       var t;
-      return (null === (t = e.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null ? 66 : 40
+      return (null == (t = e.userStatus) ? void 0 : t.enrolledAt) != null ? 66 : 40
     },
     getPreEnrollmentExpandedHeight: () => 270,
     getPostEnrollmentBackgroundImage: () => "linear-gradient(90deg, ".concat(l.aY, ", ").concat(l.v6, ")"),
@@ -37,7 +37,7 @@ let c = {
   },
   p = (e, t, n) => {
     var s;
-    let i = (null === (s = e.userStatus) || void 0 === s ? void 0 : s.enrolledAt) != null,
+    let i = (null == (s = e.userStatus) ? void 0 : s.enrolledAt) != null,
       l = !i && t === o.P.V2 || i && n === o.P.V2 || (0, a.a)(e),
       d = l ? u : c;
     return {

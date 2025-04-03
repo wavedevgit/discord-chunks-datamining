@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => k
 }), n(47120);
@@ -19,16 +19,16 @@ var r = n(200651),
   b = n(347475),
   _ = n(271383),
   C = n(496675),
-  v = n(158776),
-  y = n(471253),
-  x = n(431328),
+  y = n(158776),
+  x = n(471253),
+  v = n(431328),
   j = n(145834),
   O = n(590415),
   E = n(614173),
   N = n(618896),
   I = n(231338),
   P = n(388032),
-  S = n(303728);
+  S = n(916396);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -95,35 +95,35 @@ let A = i.memo(function(e) {
       let e = setTimeout(() => C(!1), 1e3);
       return () => clearTimeout(e)
     });
-    let x = t.getGuildId();
-    s()(null != x, "Channel cannot be guildless");
+    let v = t.getGuildId();
+    s()(null != v, "Channel cannot be guildless");
     let {
       isMobile: E,
       status: N
-    } = (0, c.cj)([v.Z], () => ({
-      isMobile: v.Z.isMobileOnline(l.user.id),
-      status: v.Z.getStatus(l.user.id, x)
-    })), I = (0, c.e7)([_.ZP], () => _.ZP.getMember(x, l.user.id)), A = i.useMemo(() => ({
-      [x]: [l.user.id]
-    }), [x, l.user.id]);
+    } = (0, c.cj)([y.Z], () => ({
+      isMobile: y.Z.isMobileOnline(l.user.id),
+      status: y.Z.getStatus(l.user.id, v)
+    })), I = (0, c.e7)([_.ZP], () => _.ZP.getMember(v, l.user.id)), A = i.useMemo(() => ({
+      [v]: [l.user.id]
+    }), [v, l.user.id]);
     (0, f.$)(A);
     let w = l.rtsState === O.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
     function R() {
-      (0, y.DT)(t, l.user.id, !1)
+      (0, x.DT)(t, l.user.id, !1)
     }
 
     function M() {
-      (0, y.DT)(t, l.user.id, !0)
+      (0, x.DT)(t, l.user.id, !0)
     }
     let k = e => {
       (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
         return n => (0, r.jsx)(e, T(Z({}, n), {
           user: l.user,
-          guildId: x,
+          guildId: v,
           channel: t,
           showMediaItems: !0
         }))
@@ -138,7 +138,7 @@ let A = i.memo(function(e) {
         }),
         renderPopout: e => (0, r.jsx)(b.Z, T(Z({}, e), {
           userId: l.user.id,
-          guildId: x,
+          guildId: v,
           channelId: t.id
         })),
         position: "left",
@@ -160,7 +160,7 @@ let A = i.memo(function(e) {
               className: S.participantTextContainer,
               children: [(0, r.jsx)(u.PUh, {
                 name: l.userNick,
-                color: null !== (t = null == I ? void 0 : I.colorString) && void 0 !== t ? t : void 0,
+                color: null != (t = null == I ? void 0 : I.colorString) ? t : void 0,
                 className: S.participantName
               }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
@@ -231,7 +231,7 @@ function k(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, x.Fd)(t.id), a = [+!!(0, c.e7)([C.Z], () => C.Z.can(I.Pl.MANAGE_CHANNELS, t) || C.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([C.Z], () => C.Z.can(I.Pl.MANAGE_CHANNELS, t) || C.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: o()(S.container, {
       [S.chatOpen]: i

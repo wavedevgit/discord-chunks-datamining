@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => h
 }), n(301563);
 var r = n(512722),
   i = n.n(r),
   a = n(924301),
-  o = n(430824),
-  l = n(699516),
+  l = n(430824),
+  o = n(699516),
   s = n(594174),
   c = n(624138),
   u = n(51144),
@@ -31,33 +31,33 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, v, x, y, E, O, N, j, C;
+  var t, n, r, h, g, _, b, x, y, E, v, O, N, j, C;
   let {
     item: I,
     renderApplication: S
-  } = e, T = null !== (r = null === (t = I.other_user) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : p.lds, P = u.ZP.getName(s.default.getUser(null === (n = I.other_user) || void 0 === n ? void 0 : n.id)), A = I.applicationId;
+  } = e, T = null != (r = null == (t = I.other_user) ? void 0 : t.id) ? r : p.lds, P = u.ZP.getName(s.default.getUser(null == (n = I.other_user) ? void 0 : n.id)), A = I.applicationId;
   switch (I.type) {
     case d.O7.FRIEND_REQUESTS_GROUPED:
-      let w = u.ZP.getName(s.default.getUser(null === (g = I.other_users) || void 0 === g ? void 0 : null === (h = g[0]) || void 0 === h ? void 0 : h.id)),
-        Z = u.ZP.getName(s.default.getUser(null === (b = I.other_users) || void 0 === b ? void 0 : null === (_ = b[1]) || void 0 === _ ? void 0 : _.id)),
-        k = Math.max((null !== (x = null === (v = I.other_users) || void 0 === v ? void 0 : v.length) && void 0 !== x ? x : 0) - 2, 0);
+      let w = u.ZP.getName(s.default.getUser(null == (g = I.other_users) || null == (h = g[0]) ? void 0 : h.id)),
+        Z = u.ZP.getName(s.default.getUser(null == (b = I.other_users) || null == (_ = b[1]) ? void 0 : _.id)),
+        k = Math.max((null != (y = null == (x = I.other_users) ? void 0 : x.length) ? y : 0) - 2, 0);
       return m.NW.format(m.t.g5xyIC, {
         user: w,
         user2: Z,
         count: k
       });
     case d.O7.MOBILE_NATIVE_UPDATE_AVAILABLE:
-      let R = null !== (E = null === (y = I.local_id) || void 0 === y ? void 0 : y.split("_").pop()) && void 0 !== E ? E : "unknown";
+      let R = null != (v = null == (E = I.local_id) ? void 0 : E.split("_").pop()) ? v : "unknown";
       return "Update to build ".concat(R, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
-      return l.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null !== (O = I.body) && void 0 !== O ? O : "";
+      return o.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null != (O = I.body) ? O : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = I.guild_scheduled_event_id,
         L = null != D ? a.ZP.getGuildScheduledEvent(D) : null,
         M = null == L ? void 0 : L.name,
-        W = null === (N = o.Z.getGuild(null == L ? void 0 : L.guild_id)) || void 0 === N ? void 0 : N.name,
+        W = null == (N = l.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : N.name,
         U = (0, a.Z2)(null != L ? L : void 0);
-      return (0, c.Ew)(W) || (0, c.Ew)(M) || !U ? null !== (j = I.body) && void 0 !== j ? j : "" : m.NW.format(m.t.AyvfXV, {
+      return (0, c.Ew)(W) || (0, c.Ew)(M) || !U ? null != (j = I.body) ? j : "" : m.NW.format(m.t.AyvfXV, {
         event_name: M,
         guild_name: W
       });
@@ -102,5 +102,5 @@ function h(e) {
         applicationName: () => S(A)
       })
   }
-  return null !== (C = I.body) && void 0 !== C ? C : ""
+  return null != (C = I.body) ? C : ""
 }

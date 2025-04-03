@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,9 +6,9 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(838436),
-  c = n(173652);
+  l = n(481060),
+  o = n(838436),
+  c = n(169957);
 
 function d(e) {
   let {
@@ -18,7 +18,7 @@ function d(e) {
     note: d,
     title: u,
     disabled: m
-  } = e, g = i.useRef(null), p = i.useRef(null), h = i.useId(), f = (0, r.jsx)(o.rsf, {
+  } = e, g = i.useRef(null), p = i.useRef(null), h = i.useId(), f = (0, r.jsx)(l.rsf, {
     id: h,
     checked: t,
     onChange: n,
@@ -32,7 +32,7 @@ function d(e) {
     className: a()(c.container, s, {
       [c.disabled]: m
     }),
-    children: (0, r.jsx)(o.tEY, {
+    children: (0, r.jsx)(l.tEY, {
       within: !0,
       offset: -4,
       focusTarget: g,
@@ -40,7 +40,7 @@ function d(e) {
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: c.text,
-          children: (0, r.jsx)(l.H, {
+          children: (0, r.jsx)(o.H, {
             header: u,
             description: d,
             relatedId: h,

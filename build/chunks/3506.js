@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => D
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(512722),
   s = n.n(i),
   a = n(392711),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   c = n(481060),
   d = n(660216),
   u = n(13245),
@@ -25,12 +25,12 @@ var i = n(512722),
   j = n(556296),
   O = n(808506),
   C = n(237997),
-  v = n(626135);
+  S = n(626135);
 n(63063);
-var S = n(13140),
+var v = n(13140),
   T = n(981631),
   I = n(388032),
-  y = n(549745);
+  y = n(967122);
 let A = P(null);
 
 function P(e) {
@@ -44,10 +44,10 @@ function P(e) {
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
-    hotkey: null != i ? (0, S.BB)(i.shortcut) : null,
-    text_activation_hotkey: null != s ? (0, S.BB)(s.shortcut) : null,
+    hotkey: null != i ? (0, v.BB)(i.shortcut) : null,
+    text_activation_hotkey: null != s ? (0, v.BB)(s.shortcut) : null,
     text_opacity_slider: C.default.getTextWidgetOpacity(),
-    old_enabled: null !== (t = null == e ? void 0 : e.enabled) && void 0 !== t ? t : O.default.enabled
+    old_enabled: null != (t = null == e ? void 0 : e.enabled) ? t : O.default.enabled
   }
 }
 
@@ -70,27 +70,24 @@ function D(e) {
   } = e, {
     oopEnabled: i,
     legacyEnabled: a
-  } = (0, l.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
+  } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
     avatarSizeMode: O,
-    displayNameMode: S,
+    displayNameMode: v,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
     shouldShowKeybindIndicators: k
-  } = (0, l.cj)([C.default, _.Z], () => ({
+  } = (0, o.cj)([C.default, _.Z], () => ({
     avatarSizeMode: C.default.getAvatarSizeMode(),
     displayNameMode: C.default.getDisplayNameMode(),
     displayUserMode: C.default.getDisplayUserMode(),
     notificationPositionMode: C.default.getNotificationPositionMode(),
     shouldShowKeybindIndicators: C.default.showKeybindIndicators,
     textChatDisabled: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
-  })), W = (0, l.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, N.Z)({
+  })), W = (0, o.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, N.Z)({
     location: "overlay_user_settings"
-  }), B = (0, g.$1)();
-  return ! function() {
-    let e = P(A);
-    o().isEqual(e, A) || (v.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, e), A = e)
-  }(), (0, r.jsxs)(r.Fragment, {
+  }), B = (0, g.$1)(), M = P(A);
+  return l().isEqual(M, A) || (S.default.track(T.rMx.OVERLAY_SETTINGS_UPDATED, M), A = M), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.hjN, {
       className: t,
       tag: c.RB0.H1,
@@ -109,7 +106,7 @@ function D(e) {
             onChange: function(e) {
               var t, n;
               u.Z.setEnabled(e, i);
-              let r = null !== (n = null === (t = p.ZP.getCurrentGameForAnalytics()) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : null;
+              let r = null != (n = null == (t = p.ZP.getCurrentGameForAnalytics()) ? void 0 : t.id) ? n : null;
               (0, f.ou)(e, f.AE.LEGACY, r), !e && a && (0, E.l)(f.AE.LEGACY, r)
             },
             children: I.NW.string(I.t.vSP6c3)
@@ -191,7 +188,7 @@ function D(e) {
             } = e;
             return u.Z.setDisplayNameMode(t)
           },
-          value: S
+          value: v
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.swsWWF),

@@ -10,11 +10,11 @@ var n, l = r(200651),
   c = r(481060),
   s = r(911969),
   u = r(739754),
-  d = r(970184),
-  p = r(280501),
+  p = r(970184),
+  d = r(280501),
   f = r(388032),
-  b = r(124887),
-  O = r(176129);
+  b = r(749778),
+  O = r(950386);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,10 +78,10 @@ function g(e) {
     visualState: U,
     isDisabled: W,
     error: F
-  } = (0, d.Ee)(n, {
+  } = (0, p.Ee)(n, {
     type: v,
     selectedOptions: Array.from(I.values())
-  }), H = U === p.gH.LOADING;
+  }), H = U === d.gH.LOADING;
   i.useEffect(() => {
     if ((null == A ? void 0 : A.type) === s.re.USER_SELECT || (null == A ? void 0 : A.type) === s.re.ROLE_SELECT || (null == A ? void 0 : A.type) === s.re.MENTIONABLE_SELECT || (null == A ? void 0 : A.type) === s.re.CHANNEL_SELECT) {
       let e = new Map(A.selectedOptions.map(e => [e.value, e]));
@@ -95,7 +95,7 @@ function g(e) {
     }) && T(new Set(I.keys()))
   }, [M, v, I]);
   i.useEffect(() => {
-    !(S || E || I.size === Z.size && Array.from(I.keys()).every(e => Z.has(e))) && G()
+    !S && !E && (I.size === Z.size && Array.from(I.keys()).every(e => Z.has(e)) || G())
   }, [S, E, Z, I, G]);
   let z = 0 === I.size || S,
     B = {

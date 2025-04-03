@@ -18,7 +18,7 @@ var r = n(200651),
   g = n(768581),
   h = n(153066),
   j = n(388032),
-  b = n(809666);
+  b = n(676011);
 let N = e => {
     let {
       text: t,
@@ -62,7 +62,7 @@ let N = e => {
       expired: d = !1,
       user: v,
       className: g
-    } = e, j = null !== (t = (0, c.ZP)(s)) && void 0 !== t ? t : "", N = f.QK.useSetting();
+    } = e, j = null != (t = (0, c.ZP)(s)) ? t : "", N = f.QK.useSetting();
     if (d) return (0, r.jsx)("div", {
       className: b.guildIconExpired
     });

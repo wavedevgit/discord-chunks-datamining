@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(970731),
-  o = n(388032),
-  a = n(348026);
+  a = n(388032),
+  o = n(212314);
 
 function s(e) {
   let {
@@ -15,25 +15,25 @@ function s(e) {
     markAsDismissed: s
   } = e;
   return (0, r.jsx)(l.ZP, {
-    className: a.container,
+    className: o.container,
     asset: (0, r.jsx)("img", {
-      className: a.image,
+      className: o.image,
       src: n(297806),
       alt: ""
     }),
-    header: o.NW.string(o.t["2l9beX"]),
-    headerClassName: a.header,
-    content: o.NW.string(o.t.gdqdND),
-    buttonCTA: o.NW.string(o.t.RzWDqa),
+    header: a.NW.string(a.t["2l9beX"]),
+    headerClassName: o.header,
+    content: a.NW.string(a.t.gdqdND),
+    buttonCTA: a.NW.string(a.t.RzWDqa),
     buttonProps: {
       color: i.Ttl.WHITE,
-      innerClassName: a.primaryButton
+      innerClassName: o.primaryButton
     },
     onClick: () => {
       (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("5863"), n.e("10305")]).then(n.bind(n, 751212));
+        } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = function(e) {
@@ -68,7 +68,7 @@ function s(e) {
         }
       })
     },
-    secondaryButtonCTA: o.NW.string(o.t.TulDPj),
+    secondaryButtonCTA: a.NW.string(a.t.TulDPj),
     secondaryButtonProps: {
       look: i.iLD.LINK,
       color: i.Ttl.WHITE

@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => d
 });
@@ -8,14 +8,14 @@ var r = n(200651),
   l = n(581364),
   o = n(665692),
   s = n(388032),
-  c = n(657319);
+  c = n(744939);
 
 function d(e) {
   let {
     application: t
   } = e, n = a.useMemo(() => {
     var e;
-    let n = null === (e = t.directory_entry) || void 0 === e ? void 0 : e.popular_application_commands;
+    let n = null == (e = t.directory_entry) ? void 0 : e.popular_application_commands;
     return null != n ? n.map(e => (0, l.Z8)({
       rootCommand: e,
       command: e,

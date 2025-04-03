@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(873546),
   l = n(442837),
-  o = n(625128),
-  a = n(362762),
+  a = n(625128),
+  o = n(362762),
   s = n(531517),
   c = n(314897),
   u = n(981631);
@@ -21,14 +21,14 @@ function p(e) {
     search: h
   } = e, f = (0, s.L)(), g = (0, l.e7)([c.default], () => {
     var e;
-    return null !== (e = c.default.getFingerprint()) && void 0 !== e ? e : c.default.getId()
-  }), m = (0, l.e7)([a.Z], () => a.Z.getState(i), [i]), b = r.useMemo(() => null == p ? {
+    return null != (e = c.default.getFingerprint()) ? e : c.default.getId()
+  }), m = (0, l.e7)([o.Z], () => o.Z.getState(i), [i]), b = r.useMemo(() => null == p ? {
     path: i,
     fingerprint: g,
     search: h
   } : p(i, g, h), [i, p, g, h]);
   return r.useEffect(() => {
-    !d && f && null == m && o.Z.openNativeAppModal(i, u.Etm.DEEP_LINK, {
+    !d && f && null == m && a.Z.openNativeAppModal(i, u.Etm.DEEP_LINK, {
       type: n,
       params: b
     })

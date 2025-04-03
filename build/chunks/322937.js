@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   $: () => o
 });
@@ -12,15 +12,9 @@ function o(e) {
     userId: n,
     guildId: o
   } = null != e ? e : {}, a = (0, i.Z)(null != t ? Date.parse(t) : Date.now()), s = a.seconds, c = (0, r.useRef)(null);
-  return (0, r.useEffect)(() => {
-    if (null == e || null == o || null == n) {
-      clearTimeout(c.current);
-      return
-    }
-    return s <= 0 && null == c.current && (c.current = setTimeout(() => {
-      l.Z.clearGuildMemberTimeout(o, n)
-    }, 1e3)), () => {
-      null != c.current && (clearTimeout(c.current), c.current = null)
-    }
-  }, [o, n, s, t, e]), a
+  return (0, r.useEffect)(() => null == e || null == o || null == n ? void clearTimeout(c.current) : (s <= 0 && null == c.current && (c.current = setTimeout(() => {
+    l.Z.clearGuildMemberTimeout(o, n)
+  }, 1e3)), () => {
+    null != c.current && (clearTimeout(c.current), c.current = null)
+  }), [o, n, s, t, e]), a
 }

@@ -1,14 +1,14 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(283836),
-  l = n(728345),
+  l = n(283836),
+  o = n(728345),
   s = n(388032),
-  c = n(388891);
+  c = n(75905);
 
 function u(e) {
   let {
@@ -16,7 +16,7 @@ function u(e) {
     guildId: n
   } = e, {
     data: i
-  } = (0, l.IX)(t);
+  } = (0, o.IX)(t);
   return null == i ? null : (0, r.jsx)(d, {
     app: i,
     guildId: n
@@ -26,14 +26,14 @@ function u(e) {
 function d(e) {
   let {
     app: t,
-    guildId: l
+    guildId: o
   } = e;
-  (0, o.q)(t.id);
+  (0, l.q)(t.id);
   let u = i.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("77803"), n.e("31188")]).then(n.bind(n, 7225));
+      } = await Promise.all([n.e("77803"), n.e("83372")]).then(n.bind(n, 7225));
       return n => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -53,10 +53,10 @@ function d(e) {
         return e
       }({
         appId: t.id,
-        guildId: l
+        guildId: o
       }, n))
     })
-  }, [t, l]);
+  }, [t, o]);
   return (0, r.jsx)(a.zxk, {
     color: a.zxk.Colors.BRAND,
     size: a.zxk.Sizes.SMALL,

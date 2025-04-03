@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => S
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(100527),
   d = n(906732),
   u = n(357355),
@@ -23,8 +23,8 @@ var r = n(200651),
   E = n(635921),
   j = n(474936),
   O = n(388032),
-  C = n(2317);
-let v = e => {
+  C = n(909176);
+let S = e => {
     let t, {
       trialOffer: n,
       discountOffer: i
@@ -33,37 +33,37 @@ let v = e => {
         percent: i.discount.amount
       })), null != t) return (0, r.jsx)("div", {
       className: C.premiumOfferPill,
-      children: (0, r.jsx)(l.Text, {
+      children: (0, r.jsx)(o.Text, {
         variant: "redesign/heading-18/bold",
         color: "always-white",
         children: t
       })
     })
   },
-  S = i.forwardRef((e, t) => {
+  v = i.forwardRef((e, t) => {
     var n, i;
     let {
       isFullscreen: s,
-      className: S,
+      className: v,
       buttonClassName: T,
       subscriptionTier: I,
       entrypoint: y,
       isDarkMode: A
     } = e, {
       analyticsLocations: P
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, b.Vi)(), L = (0, o.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === j.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, b.Vi)(), L = (0, l.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === j.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
     return (0, r.jsx)(d.Gt, {
       value: P,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: a()(C.container, C.marketingPageV2Container, S),
+        className: a()(C.container, C.marketingPageV2Container, v),
         "data-testid": "v2-marketing-page-hero-header",
         children: (0, r.jsxs)("div", {
           className: C.marketingPageV2TextContainer,
-          children: [k && (0, r.jsx)(v, {
+          children: [k && (0, r.jsx)(S, {
             trialOffer: w,
             discountOffer: D
-          }), (0, r.jsx)(l.X6q, {
+          }), (0, r.jsx)(o.X6q, {
             className: C.marketingPageV2Heading,
             variant: "display-sm",
             color: "header-primary",
@@ -87,7 +87,7 @@ let v = e => {
               forceWhite: !0
             })
           }) : (0, r.jsx)(E.PK, {
-            subscriptionTier: null !== (i = null != I ? I : null == w ? void 0 : null === (n = w.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== i ? i : Z,
+            subscriptionTier: null != (i = null != I ? I : null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) ? i : Z,
             inOfferExperience: k,
             containerClassName: a()(C.marketingPageV2CTAContainer, {
               [C.marketingPageV2CTAMargin]: !(U || M)

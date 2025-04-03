@@ -14,7 +14,7 @@ var n = i(200651),
   p = i(313741),
   g = i(526079),
   C = i(388032),
-  G = i(664505);
+  G = i(352897);
 
 function b(e) {
   let {
@@ -45,9 +45,9 @@ function m(e) {
     subsection: C
   } = e, m = (0, a.Dt)(), {
     canCreateGuild: h,
-    createGuildCta: v,
-    createGuildDescription: S,
-    selectGuildCta: Z,
+    createGuildCta: S,
+    createGuildDescription: Z,
+    selectGuildCta: v,
     title: f,
     description: x,
     isGuildSupported: N
@@ -98,20 +98,20 @@ function m(e) {
             s()(null != j, "Guild ID must not be null on click"), o.Z.open(j, g, void 0, C), null == i || i()
           },
           disabled: null == j,
-          children: Z
+          children: v
         })]
       }), h && (0, n.jsxs)(n.Fragment, {
         children: [(0, n.jsx)(u.LZC, {
           size: 32
         }), (0, n.jsx)(u.Text, {
           variant: "text-md/medium",
-          children: S
+          children: Z
         }), (0, n.jsx)(u.LZC, {
           size: 8
         }), (0, n.jsx)(u.zxk, {
           onClick: F,
           submitting: I,
-          children: v
+          children: S
         })]
       })]
     })]

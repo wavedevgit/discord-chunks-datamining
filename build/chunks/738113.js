@@ -24,9 +24,8 @@ var o = function() {
   var e;
 
   function t(e, n, r) {
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t), i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "connector", void 0), this.spec = e, this.monitor = n, this.connector = r
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+    i(this, "spec", void 0), i(this, "monitor", void 0), i(this, "connector", void 0), this.spec = e, this.monitor = n, this.connector = r
   }
   return e = [{
       key: "beginDrag",
@@ -34,7 +33,7 @@ var o = function() {
         var e, t = this.spec,
           n = this.monitor,
           i = null;
-        return null !== (e = "object" === r(t.item) ? t.item : "function" == typeof t.item ? t.item(n) : {}) && void 0 !== e ? e : null
+        return null != (e = "object" === r(t.item) ? t.item : "function" == typeof t.item ? t.item(n) : {}) ? e : null
       }
     }, {
       key: "canDrag",

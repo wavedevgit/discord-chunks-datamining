@@ -1,6 +1,6 @@
 /** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => v
+  Z: () => h
 }), n(653041);
 var r = n(192379),
   l = n(846519),
@@ -17,8 +17,8 @@ var r = n(192379),
   g = n(813900);
 let E = 1e3 / 60;
 
-function v(e, t, n, v) {
-  let h = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
+function h(e, t, n, h) {
+  let v = (0, a.dQu)(i.Z.unsafe_rawColors.BRAND_500).hex(),
     b = (0, a.dQu)(i.Z.unsafe_rawColors.BLACK_500).hex(),
     S = (0, a.dQu)(i.Z.unsafe_rawColors.WHITE_500).hex(),
     y = r.useRef({}),
@@ -44,13 +44,11 @@ function v(e, t, n, v) {
         if (null == g) return;
         let {
           width: E,
-          height: v
-        } = f.getBoundingClientRect(), h = [];
+          height: h
+        } = f.getBoundingClientRect(), v = [];
         n.forEach(e => {
-          if (null == s.Z.getVoiceStateForChannel(a, e.userId)) {
-            h.push(e);
-            return
-          }! function(e) {
+          if (null == s.Z.getVoiceStateForChannel(a, e.userId)) return void v.push(e);
+          ! function(e) {
             let {
               drawable: t,
               context: n,
@@ -93,26 +91,26 @@ function v(e, t, n, v) {
             drawable: e,
             context: g,
             canvasWidth: E,
-            canvasHeight: v,
+            canvasHeight: h,
             fallbackColor: r,
             outlineColorDark: o,
             outlineColorLight: c,
             linesDrawnAt: l,
-            deadDrawables: h,
+            deadDrawables: v,
             streamerId: i
           })
-        }), h.length > 0 && (0, u.fW)(h, i)
+        }), v.length > 0 && (0, u.fW)(v, i)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: h,
+        fallbackColor: v,
         linesDrawnAt: y,
         streamerId: t,
         outlineColorDark: b,
         outlineColorLight: S,
-        channelId: v
+        channelId: h
       })
-    }, [e, v, h, b, S]);
+    }, [e, h, v, b, S]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;

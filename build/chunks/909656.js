@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => k
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(345861),
   j = n(208567),
   N = n(73346),
-  v = n(624138),
-  _ = n(584825),
+  _ = n(624138),
+  v = n(584825),
   C = n(723047),
   O = n(927954),
   y = n(164e3),
@@ -30,7 +30,7 @@ var r = n(200651),
   E = n(293810),
   S = n(333866),
   T = n(388032),
-  P = n(863738);
+  P = n(779382);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = (0, v.Mg)(m.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
+let Z = (0, _.Mg)(m.Z.GUILD_SETTINGS_ROLE_SUBSCRIPTIONS_OVERVIEW_SETTINGS_MAX_WIDTH);
 
 function D() {
   return [{
@@ -133,14 +133,14 @@ function k(e) {
     isGuildProducts: s = !1
   } = e, {
     format: a
-  } = (0, y.Z)(n.id), l = (0, _.YB)(n.id), c = i.useCallback(() => {
+  } = (0, y.Z)(n.id), l = (0, v.YB)(n.id), c = i.useCallback(() => {
     var e;
-    return (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) == null ? null : (0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z)
-  }, [l]), [m, h] = i.useState(a), [f, v] = i.useState(null !== (t = null == l ? void 0 : l.description) && void 0 !== t ? t : ""), [D, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
+    return (null == l || null == (e = l.cover_image_asset) ? void 0 : e.application_id) == null ? null : (0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z)
+  }, [l]), [m, h] = i.useState(a), [f, _] = i.useState(null != (t = null == l ? void 0 : l.description) ? t : ""), [D, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
     loading: U,
     error: B,
     updateSubscriptionsSettings: F
-  } = (0, _.QV)(), {
+  } = (0, v.QV)(), {
     imageCTA: z,
     imageAriaLabel: H,
     setFilename: V
@@ -151,12 +151,12 @@ function k(e) {
   }
   let Q = i.useMemo(() => {
       var e;
-      return null != f && f !== (null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : "") || (null == D ? void 0 : D.startsWith("data:")) === !0 || m !== a || (null == l ? void 0 : l.store_page_guild_products_default_sort) !== W || (null == l ? void 0 : l.server_shop_tab_order) !== M
+      return null != f && f !== (null != (e = null == l ? void 0 : l.description) ? e : "") || (null == D ? void 0 : D.startsWith("data:")) === !0 || m !== a || (null == l ? void 0 : l.store_page_guild_products_default_sort) !== W || (null == l ? void 0 : l.server_shop_tab_order) !== M
     }, [D, a, f, l, m, W, M]),
     J = null != f && "" !== f && null != D;
   i.useEffect(() => {
     var e;
-    (null == l ? void 0 : null === (e = l.cover_image_asset) || void 0 === e ? void 0 : e.application_id) != null && k((0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z))
+    (null == l || null == (e = l.cover_image_asset) ? void 0 : e.application_id) != null && k((0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, Z))
   }, [null == l ? void 0 : l.cover_image_asset]);
   let $ = (0, C.mY)(),
     ee = i.useMemo(() => S.kL.map(e => ({
@@ -217,7 +217,7 @@ function k(e) {
         value: f,
         rows: 2,
         autosize: !0,
-        onChange: v,
+        onChange: _,
         "aria-labelledby": K,
         disabled: $
       })
@@ -301,7 +301,7 @@ function k(e) {
           disabled: !J,
           onReset: () => {
             var e;
-            h(a), v(null !== (e = null == l ? void 0 : l.description) && void 0 !== e ? e : ""), k(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), G(null == l ? void 0 : l.server_shop_tab_order)
+            h(a), _(null != (e = null == l ? void 0 : l.description) ? e : ""), k(c), L(null == l ? void 0 : l.store_page_guild_products_default_sort), G(null == l ? void 0 : l.server_shop_tab_order)
           },
           onSave: () => {
             o()(null != l, "Settings must be defined");

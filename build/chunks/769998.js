@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -14,28 +14,28 @@ var i = n(442837),
   d = n(981631),
   u = n(590433),
   m = n(388032),
-  g = n(742390);
+  g = n(467397);
 
 function p(e) {
-  var t, n, p;
+  var t;
   let {
-    action: h,
-    triggerType: f,
-    guildId: b,
-    toggled: x,
-    onToggleAction: j
-  } = e, N = e => () => j(e), v = (0, o.c)(h.type, h, f), _ = null === (t = h.metadata) || void 0 === t ? void 0 : t.durationSeconds, C = null != _ ? (0, u.L9)(_) : null, O = (0, i.e7)([l.Z, a.Z], () => l.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(b)), [b]);
-  if (null == v) return null;
+    action: n,
+    triggerType: p,
+    guildId: h,
+    toggled: f,
+    onToggleAction: b
+  } = e, x = e => () => b(e), j = (0, o.c)(n.type, n, p), N = null == (t = n.metadata) ? void 0 : t.durationSeconds, _ = null != N ? (0, u.L9)(N) : null, v = (0, i.e7)([l.Z, a.Z], () => l.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
+  if (null == j) return null;
   let {
-    headerText: y,
-    descriptionText: I,
-    icon: E
-  } = v;
+    headerText: C,
+    descriptionText: O,
+    icon: y
+  } = j;
   return (0, r.jsxs)("div", {
     className: g.actionContainer,
     children: [(0, r.jsx)("div", {
       className: g.actionIconContainer,
-      children: (0, r.jsx)(E, {
+      children: (0, r.jsx)(y, {
         size: "md",
         color: "currentColor",
         className: g.actionIcon
@@ -44,20 +44,20 @@ function p(e) {
       className: g.actionTextContainer,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-sm/semibold",
-        children: y
+        children: C
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: I
-      }), x && (0, r.jsxs)(s.Text, {
+        children: O
+      }), f && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [(n = f, null === (p = C) ? null : n === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
-          friendlyDurationString: p
+        children: [null === _ ? null : p === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
+          friendlyDurationString: _
         }) : m.NW.format(m.t.mvHxzc, {
-          friendlyDurationString: p
-        })), O && (0, r.jsx)(s.P3F, {
-          onClick: N(!0),
+          friendlyDurationString: _
+        }), v && (0, r.jsx)(s.P3F, {
+          onClick: x(!0),
           className: g.editChannel,
           tag: "span",
           role: "link",
@@ -67,7 +67,7 @@ function p(e) {
     }), (0, r.jsx)(s.ua7, {
       text: m.NW.format(m.t.wx6Vb2, {}),
       "aria-label": m.NW.formatToMarkdownString(m.t.wx6Vb2, {}),
-      shouldShow: !O,
+      shouldShow: !v,
       children: e => {
         var t, n;
         return (0, r.jsx)("div", (t = function(e) {
@@ -90,9 +90,9 @@ function p(e) {
         }({}, e), n = n = {
           children: (0, r.jsx)(s.XZJ, {
             type: s.XZJ.Types.INVERTED,
-            value: x,
-            onChange: N(!1),
-            disabled: !O,
+            value: f,
+            onChange: x(!1),
+            disabled: !v,
             className: g.__invalid_actionCheckbox
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -14,7 +14,7 @@ var i = t(200651),
   m = t(670199),
   N = t(800530),
   u = t(981631),
-  h = t(428690);
+  h = t(704906);
 
 function _(e) {
   let {
@@ -32,14 +32,14 @@ function _(e) {
   let T = s.useCallback(() => {
       d.Z.close(), C()
     }, [C]),
-    v = s.useCallback(() => {
-      var e;
-      let n = null === (e = N.JQ[p]) || void 0 === e ? void 0 : e.next;
-      n ? g(n) : T()
-    }, [p, T]),
     f = s.useCallback(() => {
       var e;
-      let n = null === (e = N.JQ[p]) || void 0 === e ? void 0 : e.prev;
+      let n = null == (e = N.JQ[p]) ? void 0 : e.next;
+      n ? g(n) : T()
+    }, [p, T]),
+    S = s.useCallback(() => {
+      var e;
+      let n = null == (e = N.JQ[p]) ? void 0 : e.prev;
       n ? g(n) : T()
     }, [p, T]);
   return (0, i.jsx)(l.Y0X, {
@@ -58,7 +58,7 @@ function _(e) {
           children: (0, i.jsx)(m.Z, {
             classification: j,
             onClose: T,
-            onNext: v,
+            onNext: f,
             isSpam: k,
             isCoppa: E,
             isDsaEligible: I
@@ -70,8 +70,8 @@ function _(e) {
           children: (0, i.jsx)(o.Z, {
             isDsaEligible: I,
             onClose: T,
-            onNext: v,
-            onBack: f
+            onNext: f,
+            onBack: S
           })
         }), (0, i.jsx)(l.Mi4, {
           id: N.Cs.CONFIRM_SUBMISSION,
@@ -80,15 +80,15 @@ function _(e) {
           children: (0, i.jsx)(c.Z, {
             isDsaEligible: I,
             onClose: T,
-            onNext: v,
-            onBack: f
+            onNext: f,
+            onBack: S
           })
         }), (0, i.jsx)(l.Mi4, {
           id: N.Cs.REQUEST_SENT,
           impressionName: a.ImpressionNames.APPEAL_INGESTION_REQUEST_SENT,
           impressionProperties: N.ZW,
           children: (0, i.jsx)(x.Z, {
-            onNext: v
+            onNext: f
           })
         })]
       })

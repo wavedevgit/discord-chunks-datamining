@@ -98,9 +98,7 @@ async function T(e, t) {
           channelIds: l,
           emoji: function(e) {
             var t;
-            if (null != e) {
-              if ((null === (t = e.emoji) || void 0 === t ? void 0 : t.id) == null || null != a.ZP.getCustomEmojiById(e.emoji.id)) return e.emoji
-            }
+            if (null != e && ((null == (t = e.emoji) ? void 0 : t.id) == null || null != a.ZP.getCustomEmojiById(e.emoji.id))) return e.emoji
           }(t)
         })
       });
@@ -144,7 +142,7 @@ async function T(e, t) {
     let {
       fieldName: e,
       error: t
-    } = null !== (T = new s.Hx(n).getAnyErrorMessageAndField()) && void 0 !== T ? T : {};
+    } = null != (T = new s.Hx(n).getAnyErrorMessageAndField()) ? T : {};
     throw i.Z.show({
       title: I.NW.string(I.t.iLdiqa),
       body: [e, t].filter(u.lm).join(": ")
@@ -170,7 +168,7 @@ async function O(e, t) {
     let {
       fieldName: e,
       error: t
-    } = null !== (n = new s.Hx(l).getAnyErrorMessageAndField()) && void 0 !== n ? n : {};
+    } = null != (n = new s.Hx(l).getAnyErrorMessageAndField()) ? n : {};
     i.Z.show({
       title: I.NW.string(I.t.iLdiqa),
       body: [e, t].filter(u.lm).join(": ")
@@ -198,14 +196,14 @@ function j(e, t, n) {
 function v(e, t, n, l) {
   var r, i, s;
   if (n.singleSelect) {
-    let e = new Set(null !== (r = l.roleIds) && void 0 !== r ? r : []);
+    let e = new Set(null != (r = l.roleIds) ? r : []);
     for (let l of t)
       if (l.id !== n.id) {
         for (let t of l.options)
           if (null != t.roleIds && t.roleIds.some(t => e.has(t))) return I.NW.string(I.t.rKxyvb)
       }
   }
-  let a = (null !== (i = l.roleIds) && void 0 !== i ? i : []).filter(t => null != d.Z.getRole(e.id, t)),
-    o = (null !== (s = l.channelIds) && void 0 !== s ? s : []).filter(e => null != c.Z.getChannel(e));
+  let a = (null != (i = l.roleIds) ? i : []).filter(t => null != d.Z.getRole(e.id, t)),
+    o = (null != (s = l.channelIds) ? s : []).filter(e => null != c.Z.getChannel(e));
   return 0 === a.length && 0 === o.length ? I.NW.string(I.t.F6SUWF) : null
 }

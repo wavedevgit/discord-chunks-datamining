@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   a: () => _,
   r: () => f
@@ -14,7 +14,7 @@ var r, a = n(200651),
   p = n(822857),
   m = n(594174),
   h = n(744695),
-  g = n(288032),
+  g = n(296026),
   f = ((r = {}).DEFAULT = "DEFAULT", r.SEARCH = "SEARCH", r);
 
 function _(e) {
@@ -26,13 +26,13 @@ function _(e) {
     onAvailableWidthChange: f,
     icon: _,
     children: b
-  } = e, v = (0, d.ZP)(), x = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (null == x ? void 0 : x.isStaff()) || (null == x ? void 0 : x.isStaffPersonal()), {
+  } = e, x = (0, d.ZP)(), v = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? void 0 : v.isStaff()) || (null == v ? void 0 : v.isStaffPersonal()), {
     enabled: j
   } = (0, p.W)({
     location: "global_discovery_header_bar"
   });
   return (0, a.jsx)(c.f6W, {
-    theme: v,
+    theme: x,
     children: e => (0, a.jsxs)(u.Z, {
       className: o()(e, g.headerBar),
       innerClassname: j ? g.headerBarInner : void 0,

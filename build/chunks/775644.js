@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(544891),
   i = n(570140),
   a = n(881052),
-  o = n(122289),
-  l = n(981631);
+  l = n(122289),
+  o = n(981631);
 let s = Object.freeze({}),
   c = {
     redeemGiftCode: async function(e) {
@@ -25,11 +25,11 @@ let s = Object.freeze({}),
       });
       try {
         let e = await r.tn.post({
-          url: l.ANM.GIFT_CODE_REDEEM(t),
+          url: o.ANM.GIFT_CODE_REDEEM(t),
           body: {
             channel_id: d,
             payment_source_id: null == p ? void 0 : p.id,
-            gateway_checkout_context: await (0, o.cn)(p)
+            gateway_checkout_context: await (0, l.cn)(p)
           },
           oldFormErrors: !0,
           rejectWithError: !1

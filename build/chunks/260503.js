@@ -20,7 +20,7 @@ function i(e) {
       padding: n,
       callback: () => {
         var t;
-        null === (t = document.querySelector(e)) || void 0 === t || t.focus({
+        null == (t = document.querySelector(e)) || t.focus({
           preventScroll: !0
         })
       }

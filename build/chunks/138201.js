@@ -1,16 +1,16 @@
 /** Chunk was on 94989 **/
 r.d(t, {
   ZP: () => u,
-  rT: () => c
+  rT: () => o
 }), r(266796);
 var n = r(200651);
 r(192379);
 var l = r(120356),
   s = r.n(l),
   i = r(481060),
-  a = r(368299);
+  a = r(754363);
 
-function o(e) {
+function c(e) {
   let {
     title: t
   } = e;
@@ -21,17 +21,17 @@ function o(e) {
   })
 }
 
-function c(e) {
+function o(e) {
   let {
     children: t,
     title: r,
     description: l,
     accessibilityRole: s = "none",
-    accessibilityLabel: c
+    accessibilityLabel: o
   } = e;
   return (0, n.jsxs)("div", {
     className: a.tableRowGroup,
-    children: [null != r && (0, n.jsx)(o, {
+    children: [null != r && (0, n.jsx)(c, {
       title: r
     }), null != l && (0, n.jsx)(i.Text, {
       variant: "text-sm/normal",
@@ -40,7 +40,7 @@ function c(e) {
     }), (0, n.jsx)("div", {
       className: a.content,
       role: s,
-      "aria-label": c,
+      "aria-label": o,
       children: t
     })]
   })
@@ -51,8 +51,8 @@ function u(e) {
     icon: t,
     title: r,
     titleVariant: l = "text-md/semibold",
-    description: o,
-    descriptionVariant: c = "text-xs/medium",
+    description: c,
+    descriptionVariant: o = "text-xs/medium",
     iconClassName: u,
     color: d,
     buttonText: m,
@@ -102,10 +102,10 @@ function u(e) {
         variant: l,
         color: "header-primary",
         children: r
-      }), null != o && (0, n.jsx)(i.Text, {
-        variant: c,
+      }), null != c && (0, n.jsx)(i.Text, {
+        variant: o,
         color: "text-secondary",
-        children: o
+        children: c
       })]
     }), null != N && N]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 let r;
 n.d(t, {
   Z: () => H
@@ -16,9 +16,9 @@ var i, l, o, a = n(392711),
   b = n(592125),
   _ = n(480294),
   C = n(580005),
-  v = n(699516),
-  y = n(594174),
-  x = n(981631);
+  y = n(699516),
+  x = n(594174),
+  v = n(981631);
 let j = !1,
   O = "",
   E = 0,
@@ -41,8 +41,8 @@ function A() {
   if (0 === O.trim().length) {
     var t;
     let n;
-    return null != r && r.clearQuery(), t = e, n = v.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), N = n.reduce((e, t) => {
-      let n = y.default.getUser(t);
+    return null != r && r.clearQuery(), t = e, n = y.Z.getFriendIDs(), (null == t ? void 0 : t.isPrivate()) && (n = n.filter(e => !t.recipients.includes(e))), N = n.reduce((e, t) => {
+      let n = x.default.getUser(t);
       return null == n || n.isProvisional || e.push({
         user: n,
         comparator: g.ZP.getName(n)
@@ -65,7 +65,7 @@ function A() {
     return e.forEach(e => {
       let r = C.Z.getScoreWithoutFetchingLatest(e.id),
         i = e.getRecipientId(),
-        l = .2 * !!v.Z.isFriend(i),
+        l = .2 * !!y.Z.isFriend(i),
         o = .1 * (null != b.Z.getDMFromUserId(i));
       n[i] = 1 + r / t + l + o
     }), n
@@ -75,14 +75,14 @@ function A() {
 function w() {
   if (!j) return !1;
   let e = I;
-  return (I = s().some(v.Z.getRelationships(), e => e === x.OGo.FRIEND)) !== e
+  return (I = s().some(y.Z.getRelationships(), e => e === v.OGo.FRIEND)) !== e
 }
 
 function R(e, t) {
-  if (_.Z.hasConsented(x.pjP.PERSONALIZATION)) {
+  if (_.Z.hasConsented(v.pjP.PERSONALIZATION)) {
     var n, r, i, l;
-    let o = null !== (i = null === (n = h.Z.getUserAffinity(e.user.id)) || void 0 === n ? void 0 : n.communicationProbability) && void 0 !== i ? i : 0,
-      a = null !== (l = null === (r = h.Z.getUserAffinity(t.user.id)) || void 0 === r ? void 0 : r.communicationProbability) && void 0 !== l ? l : 0;
+    let o = null != (i = null == (n = h.Z.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? i : 0,
+      a = null != (l = null == (r = h.Z.getUserAffinity(t.user.id)) ? void 0 : r.communicationProbability) ? l : 0;
     if (o !== a) return a - o
   }
   return (0, m._I)(g.ZP.getName(e.user).toLocaleLowerCase()).localeCompare((0, m._I)(g.ZP.getName(t.user).toLocaleLowerCase()))
@@ -99,7 +99,7 @@ function M(e) {
       comparator: r
     }
     of t) {
-    let t = y.default.getUser(e);
+    let t = x.default.getUser(e);
     null != t && n.push({
       user: t,
       comparator: r
@@ -113,12 +113,12 @@ function k() {
 }
 
 function L(e) {
-  if (e.key !== x.vTt) return !1;
+  if (e.key !== v.vTt) return !1;
   j = !0, w(), r = k(), S = null, T("")
 }
 
 function D(e) {
-  if (e.key !== x.vTt) return !1;
+  if (e.key !== v.vTt) return !1;
   W()
 }
 
@@ -127,7 +127,7 @@ function W() {
 }
 class U extends(i = c.ZP.Store) {
   initialize() {
-    this.waitFor(y.default, b.Z, v.Z, p.Z, _.Z), this.syncWith([y.default, b.Z], A), this.syncWith([v.Z], w)
+    this.waitFor(x.default, b.Z, y.Z, p.Z, _.Z), this.syncWith([x.default, b.Z], A), this.syncWith([y.Z], w)
   }
   getResults() {
     return N

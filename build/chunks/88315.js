@@ -54,7 +54,7 @@ function g(e, t, n, r) {
   var s;
   let c = o.default.getUser(e),
     d = null == c ? void 0 : c.getAvatarURL(null, u.Ks),
-    f = null != d ? null === (s = a.SR.getState().palette[d]) || void 0 === s ? void 0 : s[0] : null,
+    f = null != d ? null == (s = a.SR.getState().palette[d]) ? void 0 : s[0] : null,
     m = null != f ? "#".concat(l()({
       r: f[0],
       g: f[1],

@@ -1,4 +1,4 @@
-/** Chunk was on 53154 **/
+/** Chunk was on 91081 **/
 n.d(t, {
   $Z: () => U,
   Cp: () => k,
@@ -61,8 +61,7 @@ let y = Object.freeze({
 
 function O(e) {
   var t;
-  let n;
-  let [l, i] = (n = null !== (t = y[e.charAt(0)]) && void 0 !== t ? t : null, [e.replace(b, ""), n]);
+  let n, [l, i] = (n = null != (t = y[e.charAt(0)]) ? t : null, [e.replace(b, ""), n]);
   return {
     query: l,
     queryMode: i

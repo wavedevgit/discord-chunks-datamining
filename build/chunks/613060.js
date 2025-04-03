@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => c
 });
 var r, i = n(442837),
-  o = n(570140);
+  l = n(570140);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,8 +27,8 @@ class s extends(r = i.ZP.PersistedStore) {
     return null != a[e]
   }
 }
-l(s, "displayName", "ViewHistoryStore"), l(s, "persistKey", "ViewHistoryStore");
-let c = new s(o.Z, {
+o(s, "displayName", "ViewHistoryStore"), o(s, "persistKey", "ViewHistoryStore");
+let c = new s(l.Z, {
   VIEW_HISTORY_MARK_VIEW: function(e) {
     let {
       key: t

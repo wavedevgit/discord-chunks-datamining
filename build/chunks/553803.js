@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   A: () => a
 });
@@ -16,7 +16,7 @@ function a(e) {
       default: e
     } = await n.e("74590").then(n.bind(n, 651081));
     return n => {
-      var i, o;
+      var i, l;
       return (0, r.jsx)(e, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -34,18 +34,18 @@ function a(e) {
           })
         }
         return e
-      }({}, n), o = o = {
+      }({}, n), l = l = {
         message: t,
         initialAnswerId: a
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
       }), i))
     }
   })

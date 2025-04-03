@@ -7,8 +7,8 @@ r(192379);
 var l = r(442837),
   i = r(481060),
   o = r(239091),
-  d = r(749210),
-  a = r(664915),
+  a = r(749210),
+  d = r(664915),
   s = r(771845),
   c = r(181945),
   u = r(945983),
@@ -23,7 +23,7 @@ function p(e) {
     folderColor: g,
     unread: m,
     onSelect: O
-  } = e, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildFolderById(p), [p]), y = (0, u.Z)(null !== (t = null == h ? void 0 : h.guildIds) && void 0 !== t ? t : []), k = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders().size > 0);
+  } = e, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildFolderById(p), [p]), y = (0, u.Z)(null != (t = null == h ? void 0 : h.guildIds) ? t : []), k = (0, l.e7)([d.Z], () => d.Z.getExpandedFolders().size > 0);
   return (0, n.jsxs)(i.v2r, {
     navId: "guild-context",
     "aria-label": f.NW.string(f.t.HpQykZ),
@@ -90,7 +90,7 @@ function p(e) {
       }), k && (0, n.jsx)(i.sNh, {
         id: "folder-collapse",
         label: f.NW.string(f.t.rCPsbm),
-        action: () => d.Z.collapseAllFolders()
+        action: () => a.Z.collapseAllFolders()
       })]
     })]
   })

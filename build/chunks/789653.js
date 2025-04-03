@@ -1,17 +1,17 @@
 /** Chunk was on 62629 **/
-t.d(n, {
+e.d(n, {
   Z: () => a
 });
-var e = t(475637);
+var t = e(475637);
 let a = {
-  ordinalNumber: (0, t(925300).Z)({
+  ordinalNumber: (0, e(925300).Z)({
     matchPattern: /^(\d+)(-?(е|я|й|ое|ье|ая|ья|ый|ой|ий|ый))?/i,
     parsePattern: /\d+/i,
     valueCallback: function(i) {
       return parseInt(i, 10)
     }
   }),
-  era: (0, e.Z)({
+  era: (0, t.Z)({
     matchPatterns: {
       narrow: /^((до )?н\.?\s?э\.?)/i,
       abbreviated: /^((до )?н\.?\s?э\.?)/i,
@@ -23,7 +23,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  quarter: (0, e.Z)({
+  quarter: (0, t.Z)({
     matchPatterns: {
       narrow: /^[1234]/i,
       abbreviated: /^[1234](-?[ыои]?й?)? кв.?/i,
@@ -38,7 +38,7 @@ let a = {
       return i + 1
     }
   }),
-  month: (0, e.Z)({
+  month: (0, t.Z)({
     matchPatterns: {
       narrow: /^[яфмаисонд]/i,
       abbreviated: /^(янв|фев|март?|апр|ма[йя]|июн[ья]?|июл[ья]?|авг|сент?|окт|нояб?|дек)\.?/i,
@@ -51,7 +51,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  day: (0, e.Z)({
+  day: (0, t.Z)({
     matchPatterns: {
       narrow: /^[впсч]/i,
       short: /^(вс|во|пн|по|вт|ср|чт|че|пт|пя|сб|су)\.?/i,
@@ -65,7 +65,7 @@ let a = {
     },
     defaultParseWidth: "any"
   }),
-  dayPeriod: (0, e.Z)({
+  dayPeriod: (0, t.Z)({
     matchPatterns: {
       narrow: /^([дп]п|полн\.?|полд\.?|утр[оа]|день|дня|веч\.?|ноч[ьи])/i,
       abbreviated: /^([дп]п|полн\.?|полд\.?|утр[оа]|день|дня|веч\.?|ноч[ьи])/i,

@@ -227,8 +227,7 @@ class B {
     t.__wbg_blockeddomainsstore_free(e, 0)
   }
   static isBlockedDomain(e) {
-    let n;
-    let _ = g(e, t.__wbindgen_malloc, t.__wbindgen_realloc),
+    let n, _ = g(e, t.__wbindgen_malloc, t.__wbindgen_realloc),
       r = d,
       c = t.blockeddomainsstore_isBlockedDomain(_, r);
     return 0 !== c[0] && (n = o(c[0], c[1]).slice(), t.__wbindgen_free(c[0], +c[1], 1)), n
@@ -590,8 +589,7 @@ function eL(e, n, _) {
 
 function eQ(e, n) {
   let _ = g(function e(n) {
-      let _;
-      let t = typeof n;
+      let _, t = typeof n;
       if ("number" == t || "boolean" == t || null == n) return "".concat(n);
       if ("string" == t) return '"'.concat(n, '"');
       if ("symbol" == t) {

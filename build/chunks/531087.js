@@ -1,13 +1,13 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(325767),
-  a = n(525627);
+  l = n.n(i),
+  o = n(325767),
+  a = n(58482);
 
 function s(e) {
   var t, n, {
@@ -22,13 +22,13 @@ function s(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["width", "height", "color", "foreground", "className"]);
@@ -50,8 +50,8 @@ function s(e) {
     }
     return e
   }({
-    className: o()(a.updateAvailable, u)
-  }, (0, l.Z)(p)), n = n = {
+    className: l()(a.updateAvailable, u)
+  }, (0, o.Z)(p)), n = n = {
     width: i,
     height: s,
     viewBox: "0 0 24 24",

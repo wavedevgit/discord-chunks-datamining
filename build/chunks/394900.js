@@ -22,10 +22,10 @@ function u(e, {
   let h = r;
   r = e.space.getFormat(r) ?? e.space.getFormat("default") ?? n.Z.DEFAULT_FORMAT;
   let p = e.coords.slice();
-  if ((f ||= r.toGamut) && !(0, i.Z)(e) && (p = (0, c.Z)((0, l.Z)(e), !0 === f ? void 0 : f).coords), "custom" === r.type) {
+  if ((f ||= r.toGamut) && !(0, i.Z)(e) && (p = (0, c.Z)((0, l.Z)(e), !0 === f ? void 0 : f).coords), "custom" === r.type)
     if (b.precision = t, r.serialize) d = r.serialize(p, e.alpha, b);
-    else throw TypeError(`format ${h} can only be used to parse colors, not for serialization`)
-  } else {
+    else throw TypeError(`format ${h} can only be used to parse colors, not for serialization`);
+  else {
     let n = r.name || "color";
     r.serializeCoords ? p = r.serializeCoords(p, t) : null !== t && (p = p.map(e => a.zL(e, {
       precision: t

@@ -19,7 +19,7 @@ function u(e, t) {
       let n = c.Z.getKeywordTrie();
       if ("" === e) return [];
       let r = (0, a.F)(e).toLowerCase();
-      return Object.values(null !== (t = null == n ? void 0 : n.search(r)) && void 0 !== t ? t : {})
+      return Object.values(null != (t = null == n ? void 0 : n.search(r)) ? t : {})
     }(e);
     if (0 === n.length) return e;
     return n.forEach(e => {

@@ -105,12 +105,12 @@ function p(e) {
       })
     }(e),
     S = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
-    N = null === (p = b()) || void 0 === p ? void 0 : null === (t = p.find(e => {
+    N = null == (p = b()) || null == (t = p.find(e => {
       let {
         setting: t
       } = e;
       return t === S
-    })) || void 0 === t ? void 0 : t.label,
+    })) ? void 0 : t.label,
     O = (0, o.U)();
   return null != f ? (0, i.jsx)(s.sNh, {
     id: "guild-notifications",
@@ -121,7 +121,7 @@ function p(e) {
     action: () => (0, s.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("5863"), n.e("38464")]).then(n.bind(n, 751212));
+      } = await Promise.all([n.e("5863"), n.e("99922")]).then(n.bind(n, 751212));
       return n => {
         var r, s;
         return (0, i.jsx)(t, (r = function(e) {

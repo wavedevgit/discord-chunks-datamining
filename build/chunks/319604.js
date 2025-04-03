@@ -23,7 +23,7 @@ let d = e => {
   },
   m = e => {
     var t;
-    let n = null === (t = (0, o.PJ)(e, r.N.AGGREGATE_COUNT)) || void 0 === t ? void 0 : t.count;
+    let n = null == (t = (0, o.PJ)(e, r.N.AGGREGATE_COUNT)) ? void 0 : t.count;
     return null == n ? [] : [{
       iconPath: c.eF,
       text: u.NW.formatToPlainString(u.t.HtifnJ, {
@@ -97,41 +97,38 @@ let d = e => {
             w: c.nx
           }, 8)
         })(e, d), (t = e).drawRoundedImage("MediaImage", {
-            x: c.sB,
-            y: c.sB
-          }, {
-            w: c.Pu,
-            h: c.Pu
-          }, 8, {
-            fillMode: l.JU.Contain
-          }) === l.vP.Failure && t.drawPath(a.Cv, {
-            x: c.sB,
-            y: c.sB
-          }, !0, 2 + 2 / 3),
-          function(e) {
-            e.drawRoundedImage("AvatarImage", {
-              x: c.Iq,
-              y: c.sB
-            }, {
-              w: c.$S,
-              h: c.$S
-            }, 50)
-          }(e), n = e, r = u, n.setColor("white"), n.setFont({
-            size: 16,
-            family: c.I8,
-            weight: c.Ue,
-            truncate: l.GX.Wrap
-          }), n.drawText(r, {
-            x: c.Iq,
-            y: 64,
-            h: 32,
-            w: c.kC
-          }, !0), (0, s.J)({
-            canvas: e,
-            badges: m,
-            startPosition: c.Iq,
-            maxWidth: c.kC
-          })
+          x: c.sB,
+          y: c.sB
+        }, {
+          w: c.Pu,
+          h: c.Pu
+        }, 8, {
+          fillMode: l.JU.Contain
+        }) === l.vP.Failure && t.drawPath(a.Cv, {
+          x: c.sB,
+          y: c.sB
+        }, !0, 2 + 2 / 3), e.drawRoundedImage("AvatarImage", {
+          x: c.Iq,
+          y: c.sB
+        }, {
+          w: c.$S,
+          h: c.$S
+        }, 50), n = e, r = u, n.setColor("white"), n.setFont({
+          size: 16,
+          family: c.I8,
+          weight: c.Ue,
+          truncate: l.GX.Wrap
+        }), n.drawText(r, {
+          x: c.Iq,
+          y: 64,
+          h: 32,
+          w: c.kC
+        }, !0), (0, s.J)({
+          canvas: e,
+          badges: m,
+          startPosition: c.Iq,
+          maxWidth: c.kC
+        })
       },
       exportConfigs: {
         format: l.kH.CloudUpload,

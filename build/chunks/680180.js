@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => d
 });
@@ -8,7 +8,7 @@ var r = n(200651),
   l = n.n(i),
   o = n(481060),
   s = n(49898),
-  c = n(453355);
+  c = n(109188);
 
 function d(e) {
   let {
@@ -25,7 +25,7 @@ function d(e) {
   }, [h]), _ = a.useCallback(() => {
     u(), setTimeout(() => {
       var e;
-      return null === (e = g.current) || void 0 === e ? void 0 : e.focus()
+      return null == (e = g.current) ? void 0 : e.focus()
     })
   }, [u]);
   return t === s.GlobalDiscoverySearchBarState.COLLAPSED ? (0, r.jsx)(o.P3F, {

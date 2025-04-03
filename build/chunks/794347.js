@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => N,
   _: () => h
@@ -6,13 +6,13 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(692547),
+  l = n.n(a),
+  o = n(692547),
   c = n(477690),
   d = n(393238),
   u = n(162168),
   m = n(624138),
-  g = n(321979);
+  g = n(182323);
 let p = (0, m.Mg)(c.Z.GRADIENT_PROGRESS_NOTCH_WIDTH);
 var h = ((r = {}).BLACK = "BLACK", r.GRAY = "GRAY", r);
 let f = {
@@ -28,8 +28,8 @@ function N(e) {
   let {
     notchBackground: t,
     progress: n,
-    gradientStart: r = l.Z.unsafe_rawColors.YELLOW_260.css,
-    gradientEnd: a = l.Z.unsafe_rawColors.GREEN_360.css,
+    gradientStart: r = o.Z.unsafe_rawColors.YELLOW_260.css,
+    gradientEnd: a = o.Z.unsafe_rawColors.GREEN_360.css,
     className: c,
     children: m
   } = e, {
@@ -48,14 +48,14 @@ function N(e) {
     className: g.wrapper,
     ref: p,
     children: [(0, i.jsxs)("div", {
-      className: o()(g.container, c),
+      className: l()(g.container, c),
       style: _,
       children: [(0, i.jsx)("div", {
         className: g.progress,
         style: x
       }), 0 !== N && (0, i.jsx)(u.Z, {
         width: N,
-        className: o()(g.notches, f[t])
+        className: l()(g.notches, f[t])
       })]
     }), m]
   })

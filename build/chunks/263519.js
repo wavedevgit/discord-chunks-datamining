@@ -15,9 +15,9 @@ var r = n(192379),
   f = n(509545),
   b = n(55563),
   O = n(551428),
-  v = n(270144),
-  m = n(488915),
-  y = n(171246),
+  m = n(270144),
+  y = n(488915),
+  v = n(171246),
   g = n(929011);
 
 function h(e) {
@@ -28,21 +28,21 @@ function h(e) {
     skuId: j,
     onComplete: S,
     disableGuildSelector: P
-  } = e, I = (0, o.e7)([b.Z], () => null != j ? b.Z.get(j) : void 0, [j]), E = (0, o.e7)([O.Z], () => null != j ? O.Z.getForSKU(j) : void 0, [j]), x = null === (t = (0, o.Wu)([f.Z], () => null != j ? f.Z.getForSKU(j) : [], [j])[0]) || void 0 === t ? void 0 : t.id, Z = (0, o.e7)([b.Z], () => null != j ? b.Z.getParentSKU(j) : void 0, [j]), N = null == Z ? void 0 : Z.bundledSkuIds, w = (0, o.Wu)([f.Z], () => {
+  } = e, I = (0, o.e7)([b.Z], () => null != j ? b.Z.get(j) : void 0, [j]), E = (0, o.e7)([O.Z], () => null != j ? O.Z.getForSKU(j) : void 0, [j]), x = null == (t = (0, o.Wu)([f.Z], () => null != j ? f.Z.getForSKU(j) : [], [j])[0]) ? void 0 : t.id, Z = (0, o.e7)([b.Z], () => null != j ? b.Z.getParentSKU(j) : void 0, [j]), N = null == Z ? void 0 : Z.bundledSkuIds, w = (0, o.Wu)([f.Z], () => {
     var e;
-    return null !== (e = null == N ? void 0 : N.flatMap(f.Z.getForSKU)) && void 0 !== e ? e : []
-  }, [N]), A = r.useMemo(() => w.map(e => e.id), [w]), k = (0, y.KK)(null !== (n = null == I ? void 0 : I.flags) && void 0 !== n ? n : 0), _ = (0, o.e7)([m.Z], () => null != l && !1 !== k && m.Z.getEntitlementsForGuild(l, !0).some(e => e.skuId === j), [k, j, l]), C = null == I ? void 0 : I.applicationId, D = (null == E ? void 0 : E.published) === !0 && (null == I ? void 0 : I.isAvailable()) === !0, {
+    return null != (e = null == N ? void 0 : N.flatMap(f.Z.getForSKU)) ? e : []
+  }, [N]), A = r.useMemo(() => w.map(e => e.id), [w]), k = (0, v.KK)(null != (n = null == I ? void 0 : I.flags) ? n : 0), _ = (0, o.e7)([y.Z], () => null != l && !1 !== k && y.Z.getEntitlementsForGuild(l, !0).some(e => e.skuId === j), [k, j, l]), C = null == I ? void 0 : I.applicationId, D = (null == E ? void 0 : E.published) === !0 && (null == I ? void 0 : I.isAvailable()) === !0, {
     app: L
   } = (0, d.Rt)(C), {
     analyticsLocations: T
-  } = (0, s.ZP)(), R = (0, v.Ev)(Z, null != l ? l : void 0), F = null == R ? void 0 : R.subscription, M = null == R ? void 0 : R.subscriptionPlan, U = (0, v.cr)(Z, null != l ? l : void 0), G = null == U ? void 0 : U.subscriptionPlan, {
+  } = (0, s.ZP)(), R = (0, m.Ev)(Z, null != l ? l : void 0), F = null == R ? void 0 : R.subscription, M = null == R ? void 0 : R.subscriptionPlan, U = (0, m.cr)(Z, null != l ? l : void 0), G = null == U ? void 0 : U.subscriptionPlan, {
     entitlementsLoaded: B
-  } = (0, v.LM)({
+  } = (0, m.LM)({
     guildId: l
   });
   null == l && (B = !0);
   let K = (0, p.Z)(),
-    W = null != F && (0, y.Jf)(F, I),
+    W = null != F && (0, v.Jf)(F, I),
     H = r.useMemo(() => {
       if (!B || null == L || null == j) return c.rf.LOADING;
       if (!D) return c.rf.UNAVAILABLE;
@@ -53,9 +53,9 @@ function h(e) {
       return c.rf.AVAILABLE
     }, [null == M ? void 0 : M.skuId, D, L, B, W, k, null == G ? void 0 : G.skuId, j]);
   return r.useEffect(() => {
-    D && null != j && K && !(f.Z.isFetchingForSKU(j) || f.Z.isLoadedForSKU(j)) && a.Z.wait(() => {
+    D && null != j && K && (f.Z.isFetchingForSKU(j) || f.Z.isLoadedForSKU(j) || a.Z.wait(() => {
       (0, u.GZ)(j)
-    })
+    }))
   }, [D, j, K]), {
     openModal: r.useCallback(() => {
       i()(null != L, "No application"), i()(null != j, "No SKU ID"), i()(D, "Cannot purchase this unpublished plan"), (0, g.H)({

@@ -1,6 +1,6 @@
 /** Chunk was on 86872 **/
 t.d(n, {
-  R: () => v
+  R: () => h
 }), t(47120);
 var i = t(200651),
   l = t(192379),
@@ -16,21 +16,21 @@ var i = t(200651),
   p = t(731971),
   N = t(981631),
   x = t(388032),
-  g = t(61286);
-let v = () => {
+  g = t(190981);
+let h = () => {
   var e;
   let [n, t] = l.useState(!1), a = c.G6.useSetting(), {
-    nickname: v,
-    dmsAllowed: h,
-    showActivity: E,
-    mutedServer: I,
-    setNickname: f,
+    nickname: h,
+    dmsAllowed: E,
+    showActivity: I,
+    mutedServer: f,
+    setNickname: v,
     setDmsAllowed: j,
     setShowActivity: S,
     setMutedServer: C,
     guildId: A,
     inviteCode: T
-  } = (0, p.XW)(), L = null === (e = o.Z.getProps().invite) || void 0 === e ? void 0 : e.is_nickname_changeable, P = (0, _.m4)({
+  } = (0, p.XW)(), L = null == (e = o.Z.getProps().invite) ? void 0 : e.is_nickname_changeable, P = (0, _.m4)({
     location: "InviteSettingsControls"
   });
   return (0, i.jsxs)("div", {
@@ -84,20 +84,20 @@ let v = () => {
         }), (0, i.jsx)(s.oil, {
           placeholder: x.NW.string(x.t["09Q8ys"]),
           maxLength: N.l$U,
-          value: v,
-          onChange: f
+          value: h,
+          onChange: v
         })]
       }), (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t["/2ed39"]),
-        value: h,
+        value: E,
         onChange: j
       }), a && (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t.bN4m1N),
-        value: E,
+        value: I,
         onChange: S
       }), P && (0, i.jsx)(u.Z, {
         title: x.NW.string(x.t["0nZCqK"]),
-        value: I,
+        value: f,
         onChange: C
       })]
     })]

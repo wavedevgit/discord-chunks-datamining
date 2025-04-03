@@ -19,10 +19,10 @@ var n = r(192379),
   i = [38, 40],
   l = 1;
 let s = function(e) {
+  if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function, not " + typeof e);
+
   function t(e) {
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t);
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
     var r = function(e, t) {
       if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
       return t && ("object" == typeof t || "function" == typeof t) ? t : e
@@ -57,17 +57,14 @@ let s = function(e) {
       blurValue: String(e.value).toUpperCase()
     }, r.inputId = "rc-editable-input-" + l++, r
   }
-  return ! function(e, t) {
-    if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-    e.prototype = Object.create(t && t.prototype, {
-      constructor: {
-        value: e,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
-      }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-  }(t, e), a(t, [{
+  return t.prototype = Object.create(e && e.prototype, {
+    constructor: {
+      value: t,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), a(t, [{
     key: "componentDidUpdate",
     value: function(e, t) {
       this.props.value !== this.state.value && (e.value !== this.props.value || t.value !== this.state.value) && (this.input === document.activeElement ? this.setState({
@@ -86,7 +83,7 @@ let s = function(e) {
     key: "getValueObjectWithLabel",
     value: function(e) {
       var t, r;
-      return t = {}, (r = this.props.label) in t ? Object.defineProperty(t, r, {
+      return t = {}, r = this.props.label, r in t ? Object.defineProperty(t, r, {
         value: e,
         enumerable: !0,
         configurable: !0,

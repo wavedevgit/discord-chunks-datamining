@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 });
@@ -21,16 +21,16 @@ var r = n(200651),
 let C = i.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, u.Z)(), l = (0, a.e7)([f.Z], () => f.Z.isInChannel(t.id)), C = (0, a.e7)([f.Z], () => !o().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), v = (0, a.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: y
-  } = (0, d.Z)(t.id), x = (0, p.$R)(t), j = i.useCallback(() => {
+  } = e, n = (0, u.Z)(), l = (0, a.e7)([f.Z], () => f.Z.isInChannel(t.id)), C = (0, a.e7)([f.Z], () => !o().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), y = (0, a.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+    needSubscriptionToAccess: x
+  } = (0, d.Z)(t.id), v = (0, p.$R)(t), j = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: y,
+      needSubscriptionToAccess: x,
       locked: !1
     })
-  }, [t, l, y]);
+  }, [t, l, x]);
   return (i.useEffect(() => (m.S.subscribe(b.CkL.CALL_START, j), () => {
     m.S.unsubscribe(b.CkL.CALL_START, j)
   }), [j]), p.tM.useExperiment({
@@ -38,7 +38,7 @@ let C = i.memo(function(e) {
     location: "63250c_1"
   }, {
     autoTrackExposure: !1
-  }).enabled && !n && !l && v && x && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
+  }).enabled && !n && !l && y && v && t.isVocalThread()) ? (0, r.jsx)(g.ZP.Icon, {
     icon: s.Csw,
     onClick: j,
     tooltip: C ? _.NW.string(_.t.fdEeb2) : _.NW.string(_.t.focH1t)

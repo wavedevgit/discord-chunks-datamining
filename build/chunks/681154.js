@@ -30,5 +30,5 @@ function o(e, t) {
 
 function c(e, t) {
   var n;
-  return null == e || 0 === e.type && null != t.content && t.content.trim().length > 0 || 2 === e.type && null != t.tags && t.tags.length > 0 ? null : null !== (n = e.message) && void 0 !== n ? n : null
+  return null == e || 0 === e.type && null != t.content && t.content.trim().length > 0 || 2 === e.type && null != t.tags && t.tags.length > 0 ? null : null != (n = e.message) ? n : null
 }

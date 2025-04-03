@@ -10,15 +10,15 @@ var i = o(200651),
   s = o(946458),
   c = o(185923),
   d = o(388032),
-  m = o(611448);
+  m = o(815461);
 let u = e => {
   var t, o, u;
   let {
     channel: j,
     onClose: x,
     transitionState: b
-  } = e, [h, v] = n.useState(null !== (u = j.defaultReactionEmoji) && void 0 !== u ? u : null), [p, N] = n.useState(!1), [f, g] = n.useState(!1), y = (null === (t = j.defaultReactionEmoji) || void 0 === t ? void 0 : t.emojiId) !== (null == h ? void 0 : h.emojiId) || (null === (o = j.defaultReactionEmoji) || void 0 === o ? void 0 : o.emojiName) !== (null == h ? void 0 : h.emojiName), k = e => {
-    v(null == e ? null : (null == e ? void 0 : e.id) != null ? {
+  } = e, [h, p] = n.useState(null != (u = j.defaultReactionEmoji) ? u : null), [v, N] = n.useState(!1), [f, g] = n.useState(!1), y = (null == (t = j.defaultReactionEmoji) ? void 0 : t.emojiId) !== (null == h ? void 0 : h.emojiId) || (null == (o = j.defaultReactionEmoji) ? void 0 : o.emojiName) !== (null == h ? void 0 : h.emojiName), k = e => {
+    p(null == e ? null : (null == e ? void 0 : e.id) != null ? {
       emojiId: e.id,
       emojiName: void 0
     } : {
@@ -99,7 +99,7 @@ let u = e => {
               size: l.zxk.Sizes.SMALL,
               onClick: t => {
                 var o;
-                null === (o = e.onClick) || void 0 === o || o.call(e, t)
+                null == (o = e.onClick) || o.call(e, t)
               },
               children: d.NW.string(d.t["59QgaG"])
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -138,7 +138,7 @@ let u = e => {
         className: m.button,
         onClick: O,
         disabled: !y,
-        submitting: p,
+        submitting: v,
         autoFocus: !0,
         children: d.NW.string(d.t.R3BPHx)
       }), (0, i.jsx)(l.zxk, {

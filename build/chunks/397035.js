@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => d
+  Z: () => p
 });
 var n = r(192379),
   l = r(835473),
@@ -11,27 +11,27 @@ var n = r(192379),
   s = r(701488),
   u = r(388032);
 
-function d(e) {
+function p(e) {
   var t, r;
-  let d, {
-      entry: p,
+  let p, {
+      entry: d,
       baseEntryData: f
     } = e,
-    b = (0, l.q)(p.extra.application_id),
+    b = (0, l.q)(d.extra.application_id),
     O = null == b ? void 0 : b.getIconURL(128),
-    y = (0, i.xF)(p.extra.application_id, p.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
-    m = p.extra.media_title,
-    j = p.extra.media_subtitle,
-    g = (0, a.Jg)(p) ? u.t["LH+Z39"] : u.t.YuKgmp,
+    y = (0, i.xF)(d.extra.application_id, d.extra.media_assets_large_image, [s.Si.LARGE, s.Si.LARGE]),
+    m = d.extra.media_title,
+    j = d.extra.media_subtitle,
+    g = (0, a.Jg)(d) ? u.t["LH+Z39"] : u.t.YuKgmp,
     h = {
       type: c.kG.CRUNCHYROLL
     },
     v = n.useMemo(() => {
-      if (null == p.extra.url) return;
-      let e = o.Z.safeParseWithQuery(p.extra.url);
+      if (null == d.extra.url) return;
+      let e = o.Z.safeParseWithQuery(d.extra.url);
       if (null != e && null != e.protocol && null != e.hostname) return e
-    }, [p.extra.url]);
-  return null != v && (d = {
+    }, [d.extra.url]);
+  return null != v && (p = {
     href: o.Z.format(v),
     ariaDescription: u.NW.formatToPlainString(u.t.aFFQ3t, {
       title: m
@@ -56,8 +56,8 @@ function d(e) {
   }({}, f), r = r = {
     thumbnailUrl: null != y ? y : O,
     title: m,
-    titleClickable: d,
-    thumbnailClickable: d,
+    titleClickable: p,
+    thumbnailClickable: p,
     subtitle: j,
     userDescription: g,
     providerIconProps: h

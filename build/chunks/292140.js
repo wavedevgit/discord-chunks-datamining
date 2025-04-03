@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(493773),
-  o = n(626135),
-  a = n(144145),
+  a = n(626135),
+  o = n(144145),
   s = n(555927),
   c = n(738762),
   u = n(244080),
@@ -22,13 +22,13 @@ function m(e) {
     party: t,
     close: n,
     onSelect: m
-  } = e, b = (0, c.Z)(t), _ = (0, p.Z)(t), E = (0, d.Z)(t), O = (0, u.Z)(t), N = (0, a.Z)(t), v = (0, s.Z)(t);
+  } = e, b = (0, c.Z)(t), _ = (0, p.Z)(t), E = (0, d.Z)(t), O = (0, u.Z)(t), N = (0, o.Z)(t), y = (0, s.Z)(t);
   return (0, l.ZP)(() => {
     let e = t.currentActivities.filter(e => {
       var t, n;
-      return (null === (t = e.game) || void 0 === t ? void 0 : t.name) != null && (null === (n = e.game) || void 0 === n ? void 0 : n.type) === f.wW.GAME
+      return (null == (t = e.game) ? void 0 : t.name) != null && (null == (n = e.game) ? void 0 : n.type) === f.wW.GAME
     }).map(e => e.game.name);
-    o.default.track(h.rMx.OPEN_POPOUT, {
+    a.default.track(h.rMx.OPEN_POPOUT, {
       type: "Now Playing Card Popout",
       games_detected: e
     })
@@ -43,6 +43,6 @@ function m(e) {
       children: O
     }), (0, r.jsx)(i.kSQ, {
       children: N
-    }), v]
+    }), y]
   })
 }

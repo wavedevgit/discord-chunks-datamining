@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   V: () => j,
   Z: () => O
@@ -19,9 +19,9 @@ var r = n(200651),
   g = n(21825),
   b = n(232495),
   _ = n(10401),
-  C = n(934700);
+  C = n(322274);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -30,20 +30,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -97,7 +97,7 @@ class j extends i.PureComponent {
       default:
         l.offsetY = -i
     }
-    l.offsetX += null !== (e = this.props.offset.x) && void 0 !== e ? e : 0, l.offsetY += null !== (t = this.props.offset.y) && void 0 !== t ? t : 0, this.setState(l)
+    l.offsetX += null != (e = this.props.offset.x) ? e : 0, l.offsetY += null != (t = this.props.offset.y) ? t : 0, this.setState(l)
   }
   handleSkipTips() {
     p.Z.suppressAll()
@@ -127,7 +127,7 @@ class j extends i.PureComponent {
     } = l, {
       offsetX: b,
       offsetY: _
-    } = this.state, v = {
+    } = this.state, y = {
       left: null != b ? i.x + b : void 0,
       top: null != _ ? i.y + _ : void 0
     }, j = e => {
@@ -153,7 +153,7 @@ class j extends i.PureComponent {
         [C.highPriority]: u
       }
     }, E = this.getTutorialPopoutText();
-    return (0, r.jsx)(h.ZP, x(y({
+    return (0, r.jsx)(h.ZP, v(x({
       position: m,
       renderMedia: a,
       textAlign: s,
@@ -169,9 +169,9 @@ class j extends i.PureComponent {
         let {
           isShown: n
         } = t;
-        return (0, r.jsx)(d.P3F, x(y({}, e), {
+        return (0, r.jsx)(d.P3F, v(x({}, e), {
           className: C.indicator,
-          style: v,
+          style: y,
           innerRef: this.contentRef,
           children: (0, r.jsxs)("div", {
             className: o()(C.animationContainer, O(n)),
@@ -186,10 +186,10 @@ class j extends i.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), v(this, "state", {
+    super(...e), y(this, "state", {
       offsetX: null,
       offsetY: null
-    }), v(this, "contentRef", i.createRef()), v(this, "handleDismiss", () => {
+    }), y(this, "contentRef", i.createRef()), y(this, "handleDismiss", () => {
       p.Z.dismiss(this.props.tutorialId)
     })
   }
@@ -209,7 +209,7 @@ let O = 12633 == n.j ? function() {
   return i ? (0, r.jsx)(r.Fragment, {
     children: Object.entries(e).map(e => {
       let [i, l] = e, o = t[i];
-      return s()(null != o, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, y({
+      return s()(null != o, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(j, x({
         tutorialId: i,
         tutorialDefinition: o,
         focused: n

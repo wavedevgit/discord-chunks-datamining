@@ -81,14 +81,14 @@ let u = e => {
   var t, r, n, h, v, i;
   return {
     tag: e.tag,
-    gameApplicationIds: new Set(null !== (n = e.game_application_ids) && void 0 !== n ? n : []),
-    interests: new Set(null !== (h = e.search_terms) && void 0 !== h ? h : []),
+    gameApplicationIds: new Set(null != (n = e.game_application_ids) ? n : []),
+    interests: new Set(null != (h = e.search_terms) ? h : []),
     playstyle: e.play_style,
     description: e.description,
     wildcardDescriptors: e.wildcard_descriptors,
     verificationForm: {
-      description: null !== (v = null === (t = e.verification_form) || void 0 === t ? void 0 : t.description) && void 0 !== v ? v : "",
-      formFields: null !== (i = null === (r = e.verification_form) || void 0 === r ? void 0 : r.form_fields) && void 0 !== i ? i : [],
+      description: null != (v = null == (t = e.verification_form) ? void 0 : t.description) ? v : "",
+      formFields: null != (i = null == (r = e.verification_form) ? void 0 : r.form_fields) ? i : [],
       version: ""
     },
     badgeKind: e.badge,
@@ -126,10 +126,10 @@ async function d(e, t) {
         tag: t.tag,
         description: t.description,
         play_style: t.playstyle,
-        search_terms: Array.from(null !== (i = t.interests) && void 0 !== i ? i : new Set),
-        game_application_ids: Array.from(null !== (l = t.gameApplicationIds) && void 0 !== l ? l : new Set),
+        search_terms: Array.from(null != (i = t.interests) ? i : new Set),
+        game_application_ids: Array.from(null != (l = t.gameApplicationIds) ? l : new Set),
         verification_form: {
-          form_fields: null !== (o = null === (r = t.verificationForm) || void 0 === r ? void 0 : r.formFields) && void 0 !== o ? o : []
+          form_fields: null != (o = null == (r = t.verificationForm) ? void 0 : r.formFields) ? o : []
         },
         badge: t.badgeKind,
         badge_color_primary: t.badgePrimaryColor,

@@ -1,11 +1,11 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(544891),
   i = n(570140),
   a = n(981631);
-let o = {
+let l = {
   createChannelFollower: (e, t) => r.tn.post({
     url: a.ANM.CHANNEL_FOLLOWERS(t),
     body: {

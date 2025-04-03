@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -10,7 +10,7 @@ var r = n(200651),
   l = n(481060),
   o = n(981631),
   c = n(388032),
-  d = n(212955);
+  d = n(306447);
 let u = e => {
   var t, n, {
       className: s,
@@ -39,7 +39,7 @@ let u = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [v, _] = i.useState(null != m ? m : ""), C = u.map((e, t) => (0, r.jsxs)("span", {
+  let [_, v] = i.useState(null != m ? m : ""), C = u.map((e, t) => (0, r.jsxs)("span", {
     className: d.tag,
     children: [e, !x && (0, r.jsx)(l.P3F, {
       className: d.closeWrapper,
@@ -51,25 +51,25 @@ let u = e => {
       })
     })]
   }, t)), O = i.useCallback(() => {
-    let e = v.trim();
+    let e = _.trim();
     if (0 !== e.length) {
       if (null != b && u.length >= b) {
         null == h || h(c.NW.string(c.t.Xx7XeH));
         return
       }
-      p(e), _("")
+      p(e), v("")
     }
-  }, [v, b, p, h, u.length]), y = i.useCallback(e => {
+  }, [_, b, p, h, u.length]), y = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
-        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
+        0 === _.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
         break;
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
         e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [O, v.length, g, u.length]);
+  }, [O, _.length, g, u.length]);
   return (0, r.jsxs)("div", {
     className: a()(s, d.inputWrapper, {
       [d.disabled]: x
@@ -95,9 +95,9 @@ let u = e => {
       className: d.inputOuter,
       inputClassName: d.inputInner
     }, N), n = n = {
-      value: v,
+      value: _,
       onKeyDown: y,
-      onChange: _,
+      onChange: v,
       maxLength: f,
       disabled: x,
       onBlur: O,

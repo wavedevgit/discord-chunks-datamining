@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(471445),
   l = n(8426),
   o = n(388032),
-  c = n(83843);
+  c = n(773100);
 let d = function(e) {
   var t;
   let {
@@ -23,7 +23,7 @@ let d = function(e) {
       emoji: null,
       icon: null
     })
-  }, [n]), m = null !== (t = (0, a.KS)(n)) && void 0 !== t ? t : s.VL1;
+  }, [n]), m = null != (t = (0, a.KS)(n)) ? t : s.VL1;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: c.suggestedChannel,

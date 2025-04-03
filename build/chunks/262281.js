@@ -90,10 +90,10 @@ function y(e, {
       if (m.coords[1] = e, p && (0, c.Z)(m, t, {
           epsilon: 0
         })) f = e;
-      else if (g = u(m), (y = (0, i.Z)(g, m)) < .02) {
+      else if (g = u(m), (y = (0, i.Z)(g, m)) < .02)
         if (.02 - y < 1e-4) break;
-        p = !1, f = e
-      } else b = e
+        else p = !1, f = e;
+      else b = e
     }
     return g
   }(e, {

@@ -4,8 +4,8 @@ n.d(t, {
 });
 var o = n(200651);
 n(192379);
-var i = n(442837),
-  r = n(481060),
+var r = n(442837),
+  i = n(481060),
   c = n(100527),
   a = n(970606),
   l = n(313201),
@@ -26,30 +26,30 @@ let C = function(e) {
     } = e,
     O = function(e, t) {
       if (null == e) return {};
-      var n, o, i = function(e, t) {
+      var n, o, r = function(e, t) {
         if (null == e) return {};
-        var n, o, i = {},
-          r = Object.keys(e);
-        for (o = 0; o < r.length; o++) n = r[o], t.indexOf(n) >= 0 || (i[n] = e[n]);
-        return i
+        var n, o, r = {},
+          i = Object.keys(e);
+        for (o = 0; o < i.length; o++) n = i[o], t.indexOf(n) >= 0 || (r[n] = e[n]);
+        return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        for (o = 0; o < r.length; o++) n = r[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (o = 0; o < i.length; o++) n = i[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
-      return i
+      return r
     }(e, ["guildId", "transitionState"]);
   let T = (0, l.Dt)(),
-    A = (0, i.e7)([f.Z], () => f.Z.getRequest(C), [C]),
-    y = (0, i.e7)([s.Z], () => s.Z.getGuild(C), [C]),
-    h = (0, i.e7)([u.default], () => {
+    A = (0, r.e7)([f.Z], () => f.Z.getRequest(C), [C]),
+    y = (0, r.e7)([s.Z], () => s.Z.getGuild(C), [C]),
+    h = (0, r.e7)([u.default], () => {
       var e;
-      return null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.id
+      return null == (e = u.default.getCurrentUser()) ? void 0 : e.id
     }),
-    P = (0, i.e7)([d.ZP], () => null != h ? d.ZP.getMember(C, h) : null, [h, C]),
+    P = (0, r.e7)([d.ZP], () => null != h ? d.ZP.getMember(C, h) : null, [h, C]),
     j = async () => {
       var e;
-      if (null !== (e = null == y ? void 0 : y.hasFeature(g.oNc.CLAN)) && void 0 !== e && e && (0, a.Vr)({
+      if (null != (e = null == y ? void 0 : y.hasFeature(g.oNc.CLAN)) && e && (0, a.Vr)({
           guildId: C,
           source: c.Z.CLAN_REAPPLY
         }), null == P ? void 0 : P.isPending) {
@@ -61,8 +61,8 @@ let C = function(e) {
         O.onClose(), (0, _.hk)(C)
       } else b.Z.resetGuildJoinRequest(C)
     };
-  return (0, o.jsx)(r.Y0X, {
-    size: r.CgR.DYNAMIC,
+  return (0, o.jsx)(i.Y0X, {
+    size: i.CgR.DYNAMIC,
     transitionState: N,
     "aria-labelledby": T,
     children: (0, o.jsx)(p.Z, (t = function(e) {

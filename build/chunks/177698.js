@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(531826),
-  o = n(812206),
-  a = n(69580),
+  a = n(812206),
+  o = n(69580),
   s = n(358085),
   c = n(998502),
   u = n(996106),
@@ -29,13 +29,13 @@ let f = (0, d.Z)(e => {
     guildId: E,
     channelId: O,
     prompt: N,
-    disableGuildSelect: v,
-    disclosures: y,
-    integrationType: I,
+    disableGuildSelect: y,
+    disclosures: I,
+    integrationType: v,
     pid: C
-  } = e, S = "OAuth2Authorize_".concat(n, "_").concat(E, "_").concat(O), T = null != I ? null == s ? void 0 : s.get(I) : void 0, P = null !== (t = null == T ? void 0 : T.application) && void 0 !== t ? t : o.Z.getApplication(n);
+  } = e, S = "OAuth2Authorize_".concat(n, "_").concat(E, "_").concat(O), T = null != v ? null == s ? void 0 : s.get(v) : void 0, P = null != (t = null == T ? void 0 : T.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let o = (0, p.jU)(C),
+    let a = (0, p.jU)(C),
       T = !1,
       j = r => {
         let {
@@ -44,15 +44,15 @@ let f = (0, d.Z)(e => {
         } = r;
         (null == i || i === n) && (T = !0, null != location ? e(l) : t(new u.Z({
           errorCode: h.lTL.OAUTH2_ERROR
-        }, "User cancelled authorization")), o.lock())
+        }, "User cancelled authorization")), a.lock())
       },
       A = i.z1l;
     null != P && null != (0, l.ZP)({
       application: P,
       channelId: O
-    }) ? A = i.u1M : o.context === h.IlC.POPOUT && (A = i.u1M), (0, i.h7j)(e => {
+    }) ? A = i.u1M : a.context === h.IlC.POPOUT && (A = i.u1M), (0, i.h7j)(e => {
       var t, i;
-      return (0, r.jsx)(a.OAuth2AuthorizeModal, (t = function(e) {
+      return (0, r.jsx)(o.OAuth2AuthorizeModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -73,7 +73,7 @@ let f = (0, d.Z)(e => {
         authorizations: s,
         clientId: n,
         scopes: null != c ? c : [],
-        disclosures: null != y ? y : [],
+        disclosures: null != I ? I : [],
         callback: j,
         responseType: f,
         redirectUri: g,
@@ -84,8 +84,8 @@ let f = (0, d.Z)(e => {
         guildId: E,
         channelId: O,
         prompt: N,
-        disableGuildSelect: "boolean" == typeof v ? v : "true" === v,
-        integrationType: I
+        disableGuildSelect: "boolean" == typeof y ? y : "true" === y,
+        integrationType: v
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -102,9 +102,9 @@ let f = (0, d.Z)(e => {
         (0, i.Mr3)(S)
       },
       onCloseCallback: () => {
-        !T && (t(new u.Z({
+        T || (t(new u.Z({
           errorCode: h.lTL.OAUTH2_ERROR
-        }, "User cancelled authorization")), o.lock())
+        }, "User cancelled authorization")), a.lock())
       }
     }, A)
   })

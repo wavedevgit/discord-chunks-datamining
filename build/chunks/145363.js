@@ -1,5 +1,5 @@
 /** Chunk was on 33156 **/
-n.d(e, {
+n.d(t, {
   Z: () => r
 });
 var a = {
@@ -69,8 +69,11 @@ var a = {
     other: "{{count}}年近く"
   }
 };
-let r = function(t, e, n) {
+let r = function(e, t, n) {
   n = n || {};
-  var r, o = a[t];
-  return (r = "string" == typeof o ? o : 1 === e ? n.addSuffix && o.oneWithSuffix ? o.oneWithSuffix : o.one : n.addSuffix && o.otherWithSuffix ? o.otherWithSuffix.replace("{{count}}", String(e)) : o.other.replace("{{count}}", String(e)), n.addSuffix) ? n.comparison && n.comparison > 0 ? r + "後" : r + "前" : r
+  var r, i = a[e];
+  if (r = "string" == typeof i ? i : 1 === t ? n.addSuffix && i.oneWithSuffix ? i.oneWithSuffix : i.one : n.addSuffix && i.otherWithSuffix ? i.otherWithSuffix.replace("{{count}}", String(t)) : i.other.replace("{{count}}", String(t)), n.addSuffix)
+    if (n.comparison && n.comparison > 0) return r + "後";
+    else return r + "前";
+  return r
 }

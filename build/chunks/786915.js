@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -39,13 +39,13 @@ function C(e) {
   return e
 }
 
-function v(e) {
+function y(e) {
   var {
     applicationId: t,
     stream: i,
-    channel: v,
-    exitFullScreen: y,
-    appContext: x,
+    channel: y,
+    exitFullScreen: x,
+    appContext: v,
     analyticsLocation: j,
     guildScheduledEvent: O,
     shouldPrioritizeGroupPlusIcon: E = !1,
@@ -73,7 +73,7 @@ function v(e) {
     {
       parentAnalyticsLocation: w
     } = (0, d.ZP)(),
-    R = null == v ? void 0 : v.getGuildId(),
+    R = null == y ? void 0 : y.getGuildId(),
     M = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R) : null, [R]),
     k = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : void 0);
   return null != k && (null == N ? void 0 : N.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
@@ -86,9 +86,9 @@ function v(e) {
     look: P,
     size: S,
     buttonText: Z
-  }) : null != M && null != v && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, v) ? (0, r.jsx)(g.Z, C({
+  }) : null != M && null != y && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(g.Z, C({
     onClick: () => {
-      l()(null != M, "guild cannot be null"), l()(null != v, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
+      l()(null != M, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -103,7 +103,7 @@ function v(e) {
           null == c || c(), (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("7654"), n.e("75710")]).then(n.bind(n, 560114));
+            } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
             return n => {
               var a, s;
               return (0, r.jsx)(e, (a = C({}, n), s = s = {
@@ -131,11 +131,11 @@ function v(e) {
           })
         }({
           guild: M,
-          channel: v,
+          channel: y,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
-          appContext: null != x ? x : A,
-          exitFullScreen: y,
+          appContext: null != v ? v : A,
+          exitFullScreen: x,
           analyticsLocation: j,
           guildScheduledEvent: O
         })

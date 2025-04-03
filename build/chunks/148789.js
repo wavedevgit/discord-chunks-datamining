@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(298213),
-  l = n(388032),
-  s = n(819783);
+  l = n(298213),
+  o = n(388032),
+  s = n(884492);
 
 function c(e) {
   let {
@@ -16,7 +16,7 @@ function c(e) {
   } = e, [c, u] = i.useState(!1), [d, p] = i.useState(!1), m = i.useCallback(async e => {
     e.stopPropagation(), p(!0);
     try {
-      await o.Z.cancelFriendRequest({
+      await l.Z.cancelFriendRequest({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -27,7 +27,7 @@ function c(e) {
   }, [n, t]), f = i.useCallback(async e => {
     e.stopPropagation(), u(!0);
     try {
-      await o.Z.maybeConfirmFriendRequestAccept({
+      await l.Z.maybeConfirmFriendRequestAccept({
         userId: t,
         applicationId: n,
         location: "ActionButtonFriendRequest"
@@ -49,7 +49,7 @@ function c(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: l.NW.string(l.t.ZcibdX)
+        children: o.NW.string(o.t.ZcibdX)
       })
     }), (0, r.jsx)(a.zxk, {
       className: s.ignoreButton,
@@ -62,7 +62,7 @@ function c(e) {
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: l.NW.string(l.t.xuio0N)
+        children: o.NW.string(o.t.xuio0N)
       })
     })]
   })

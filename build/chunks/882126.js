@@ -4,8 +4,8 @@ t.d(n, {
 });
 var l = t(200651),
   a = t(192379),
-  r = t(586826),
-  i = t(990792);
+  i = t(586826),
+  r = t(990792);
 let s = a.memo(function(e) {
   let {
     fineTuning: n,
@@ -14,8 +14,8 @@ let s = a.memo(function(e) {
   } = e, {
     file: s,
     audio: o
-  } = (0, r.p)();
-  return (0, l.jsx)(i.Z, {
+  } = (0, i.p)();
+  return (0, l.jsx)(r.Z, {
     file: s,
     audio: o,
     waveformSettings: {

@@ -10,7 +10,7 @@ var s = r(200651),
   a = r(771845),
   c = r(981631),
   h = r(388032),
-  p = r(325793);
+  p = r(48025);
 
 function d(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ class m extends n.PureComponent {
   constructor(...e) {
     var t;
     super(...e), d(this, "state", {
-      name: null !== (t = this.props.folderName) && void 0 !== t ? t : "",
+      name: null != (t = this.props.folderName) ? t : "",
       color: this.props.folderColor
     }), d(this, "close", () => {
       this.props.onClose()

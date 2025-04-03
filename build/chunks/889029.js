@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => N
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  o = n(481060),
-  l = n(223245),
+  l = n(481060),
+  o = n(223245),
   c = n(230711),
   d = n(921801),
   u = n(246946),
@@ -16,8 +16,8 @@ var i = n(120356),
   g = n(726985),
   p = n(981631),
   h = n(388032),
-  f = n(574315),
-  b = n(685786);
+  f = n(700195),
+  b = n(20493);
 
 function N() {
   let {
@@ -46,25 +46,25 @@ function N() {
     }
     return e
   })({}, u.Z.getSettings())), j = (e, t) => {
-    l.Z.update({
+    o.Z.update({
       [e]: t
     })
   };
-  return (0, r.jsxs)(o.hjN, {
+  return (0, r.jsxs)(l.hjN, {
     className: f.container,
-    tag: o.RB0.H1,
+    tag: l.RB0.H1,
     title: h.NW.string(h.t.S5GfOT),
     children: [(0, r.jsx)(d.F, {
       setting: g.s6.STREAMER_MODE_INTEGRATIONS,
-      children: (0, r.jsx)(o.ToO, {
+      children: (0, r.jsx)(l.ToO, {
         className: b.marginBottom40,
         iconClassName: f.noticeIcon,
-        type: o.Dd5.PRIMARY,
+        type: l.Dd5.PRIMARY,
         imageData: {
           src: n(560264),
           width: 184,
           height: 110,
-          position: o.SwA.RIGHT
+          position: l.SwA.RIGHT
         },
         title: h.NW.string(h.t.bxGbHB),
         body: h.NW.format(h.t["4rmZn5"], {
@@ -73,7 +73,7 @@ function N() {
       })
     }), (0, r.jsxs)(d.F, {
       setting: g.s6.STREAMER_MODE_ENABLE,
-      children: [(0, r.jsx)(o.j7V, {
+      children: [(0, r.jsx)(l.j7V, {
         value: e,
         onChange: e => j("enabled", e),
         note: h.NW.format(h.t.MLVL2N, {
@@ -83,7 +83,7 @@ function N() {
         }),
         children: h.NW.string(h.t.p9ZAJS)
       }), (() => {
-        if (m.isPlatformEmbedded) return (0, r.jsx)(o.j7V, {
+        if (m.isPlatformEmbedded) return (0, r.jsx)(l.j7V, {
           value: t,
           onChange: e => j("autoToggle", e),
           note: h.NW.string(h.t.ZPi4lJ),
@@ -91,12 +91,12 @@ function N() {
         })
       })()]
     }), (0, r.jsxs)("div", {
-      children: [(0, r.jsx)(o.vwX, {
+      children: [(0, r.jsx)(l.vwX, {
         className: s()(b.marginTop40, b.marginBottom8, f.sectionLabel),
         children: h.NW.string(h.t["+1H47u"])
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_HIDE_PERSONAL_INFORMATION,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           value: N,
           onChange: e => j("hidePersonalInformation", e),
           note: h.NW.string(h.t["+9Lra2"]),
@@ -104,7 +104,7 @@ function N() {
         })
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_HIDE_INVITE_LINKS,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           value: i,
           onChange: e => j("hideInstantInvites", e),
           note: h.NW.string(h.t.m7mS2d),
@@ -112,7 +112,7 @@ function N() {
         })
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_DISABLE_SOUNDS,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           value: x,
           onChange: e => j("disableSounds", e),
           note: h.NW.string(h.t.eAkaio),
@@ -120,7 +120,7 @@ function N() {
         })
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_DISABLE_NOTIFICATIONS,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           value: _,
           onChange: e => j("disableNotifications", e),
           note: h.NW.string(h.t.ZAmpQ0),
@@ -128,7 +128,7 @@ function N() {
         })
       }), (0, r.jsx)(d.F, {
         setting: g.s6.STREAMER_MODE_HIDE_DISCORD_WINDOW_FROM_SCREEN_CAPTURE,
-        children: (0, r.jsx)(o.j7V, {
+        children: (0, r.jsx)(l.j7V, {
           value: E,
           onChange: e => j("enableContentProtection", e),
           note: h.NW.string(h.t.P4vj0t),

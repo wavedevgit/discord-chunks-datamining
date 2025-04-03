@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => Y
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(693546),
   _ = n(881952),
   C = n(305325),
-  v = n(246364),
-  y = n(983736),
-  x = n(937111),
+  y = n(246364),
+  x = n(983736),
+  v = n(937111),
   j = n(270801),
   O = n(652730),
   E = n(41776),
@@ -41,7 +41,7 @@ var r = n(200651),
   W = n(981631),
   U = n(815660),
   B = n(388032),
-  H = n(341741);
+  H = n(628829);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -118,8 +118,8 @@ class z extends i.PureComponent {
       showLurkerModeUpsellPopout: b,
       showMemberVerificationModal: _,
       useReducedMotion: C,
-      isStaff: y,
-      guildJoinRequest: x
+      isStaff: x,
+      guildJoinRequest: v
     } = this.props, {
       shouldShowLurkerModeUpsellPopout: j,
       shouldShowLurkerModeSuccessPopout: O
@@ -136,11 +136,11 @@ class z extends i.PureComponent {
       }
       E.buttonText = B.NW.string(B.t["3aOv+v"]), E.onButtonClick = this.handleFollowAnnouncement, E.imageSrc = n(485195), t && (E.onSecondaryButtonClick = this.handleJoinServer, E.secondaryButtonText = B.NW.string(B.t["RLch7+"]))
     } else if (l) E.message = B.NW.string(B.t["Eg3/c3"]), E.buttonText = B.NW.string(B.t.fiNVio), E.onButtonClick = _ ? this.handleShowMemberVerification : this.handleClaimAccount, E.imageSrc = n(102811);
-    else if (_) switch (null == x ? void 0 : x.applicationStatus) {
-      case v.wB.SUBMITTED:
+    else if (_) switch (null == v ? void 0 : v.applicationStatus) {
+      case y.wB.SUBMITTED:
         E.message = B.NW.string(B.t["5iLvS0"]), E.subtitle = B.NW.string(B.t.FdsK4u), E.buttonText = B.NW.string(B.t.mqtdmZ), E.onButtonClick = this.handleCancelApplication, E.imageSrc = n(281958);
         break;
-      case v.wB.REJECTED:
+      case y.wB.REJECTED:
         E.message = B.NW.string(B.t.lk30cX), E.buttonText = B.NW.string(B.t["8RrsHh"]), E.onButtonClick = this.handleViewApplicationRejection, E.imageSrc = n(809844);
         break;
       default:
@@ -150,7 +150,7 @@ class z extends i.PureComponent {
           } = e;
           return t
         })
-    } else o && !y ? (E.message = B.NW.string(B.t["2dThMD"]), E.buttonText = B.NW.string(B.t["50gfOj"]), E.onButtonClick = this.handleVerifyPhone, E.imageSrc = n(98063)) : a ? (E.message = B.NW.string(B.t.FkGPS0), E.buttonText = B.NW.string(B.t.lm1UKi), E.onButtonClick = this.handleResendVerification, E.imageSrc = n(102811)) : c ? (E.message = B.NW.formatToPlainString(B.t.IH7RMD, {
+    } else o && !x ? (E.message = B.NW.string(B.t["2dThMD"]), E.buttonText = B.NW.string(B.t["50gfOj"]), E.onButtonClick = this.handleVerifyPhone, E.imageSrc = n(98063)) : a ? (E.message = B.NW.string(B.t.FkGPS0), E.buttonText = B.NW.string(B.t.lm1UKi), E.onButtonClick = this.handleResendVerification, E.imageSrc = n(102811)) : c ? (E.message = B.NW.formatToPlainString(B.t.IH7RMD, {
       min: W.YeM.MEMBER_AGE
     }), E.countdown = u) : d && (E.message = B.NW.formatToPlainString(B.t["2JA2GB"], {
       min: W.YeM.ACCOUNT_AGE
@@ -236,7 +236,7 @@ class z extends i.PureComponent {
       (0, s.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("76540"), n.e("71776")]).then(n.bind(n, 607018));
+        } = await Promise.all([n.e("76540"), n.e("84575")]).then(n.bind(n, 607018));
         return t => (0, r.jsx)(e, G({
           reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
@@ -246,7 +246,7 @@ class z extends i.PureComponent {
     }), F(this, "handleResendVerification", () => {
       var e;
       c.Z.verifyResend();
-      let t = null === (e = k.default.getCurrentUser()) || void 0 === e ? void 0 : e.email;
+      let t = null == (e = k.default.getCurrentUser()) ? void 0 : e.email;
       null != t && (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, V(G({}, e), {
         header: B.NW.string(B.t.LykQYm),
         confirmText: B.NW.string(B.t.BddRzc),
@@ -312,7 +312,7 @@ class z extends i.PureComponent {
       let {
         guild: e,
         guildJoinRequest: t
-      } = this.props, n = (null == t ? void 0 : t.applicationStatus) === v.wB.APPROVED;
+      } = this.props, n = (null == t ? void 0 : t.applicationStatus) === y.wB.APPROVED;
       if (null == e || null == t || !n || (0, _.d3)(t)) return null;
       let i = () => {
         b.Z.ackUserGuildJoinRequest(e.id, t.joinRequestId)
@@ -339,14 +339,14 @@ function Y(e) {
   let {
     channel: l,
     children: o
-  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null !== (t = null == b ? void 0 : b.isStaff()) && void 0 !== t && t, j = (0, a.e7)([A.ZP], () => {
+  } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([k.default], () => k.default.getCurrentUser()), C = null != (t = null == b ? void 0 : b.isStaff()) && t, j = (0, a.e7)([A.ZP], () => {
     var e, t;
-    return null != b && null !== (t = null === (e = A.ZP.getMember(s, b.id)) || void 0 === e ? void 0 : e.isPending) && void 0 !== t && t
-  }), N = !!(0, y.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([x.Z], () => x.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === v.wB.APPROVED, Y = i.useRef(B);
+    return null != b && null != (t = null == (e = A.ZP.getMember(s, b.id)) ? void 0 : e.isPending) && t
+  }), N = !!(0, x.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([M.Z], () => M.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([v.Z], () => v.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === y.wB.APPROVED, Y = i.useRef(B);
   i.useEffect(() => {
     Y.current = B
   }), i.useEffect(() => {
-    !(!(0, m.EJ)(c) || !F || (0, _.d3)(D)) && null == H && Y.current()
+    !(0, m.EJ)(c) || !F || (0, _.d3)(D) || null == H && Y.current()
   }, [c, F, D, H]);
   let q = V(G({}, u), {
     guild: c,
@@ -359,7 +359,7 @@ function Y(e) {
     channelFollowingUsersSeen: null != h ? h.usersSeenEver : null,
     hasVerificationGate: N,
     showMemberVerificationModal: I,
-    guildJoinRequestStatus: null !== (n = null == D ? void 0 : D.applicationStatus) && void 0 !== n ? n : v.wB.STARTED,
+    guildJoinRequestStatus: null != (n = null == D ? void 0 : D.applicationStatus) ? n : y.wB.STARTED,
     guildJoinRequest: D,
     useReducedMotion: p.Z.useReducedMotion,
     isStaff: C,

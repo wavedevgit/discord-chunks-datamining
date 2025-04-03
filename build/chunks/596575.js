@@ -2,8 +2,7 @@
 "use strict";
 t(306872)(r, "__esModule", {
   value: !0
-}), r.default = void 0;
-var a = {
+}), r.default = void 0, r.default = {
   abstract: !1,
   accessibleNameRequired: !0,
   baseConcepts: [],
@@ -74,5 +73,4 @@ var a = {
     ["roletype", "widget", "composite", "select"],
     ["roletype", "structure", "section", "group", "select"]
   ]
-};
-r.default = a
+}

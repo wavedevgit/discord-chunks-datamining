@@ -5,27 +5,26 @@ n.d(t, {
 var r = n(200651),
   o = n(192379),
   i = n(593473),
-  l = n(512969),
-  c = n(489863),
+  c = n(512969),
+  l = n(489863),
   s = n(787025),
   a = n(397394),
   u = n(388032);
 
 function d() {
-  let e;
-  let t = (0, l.TH)(),
+  let e, t = (0, c.TH)(),
     [n, d] = o.useState(!1),
     [h, p] = o.useState(!1);
   return o.useEffect(() => {
-    (async function() {
+    !async function() {
       let e = (0, i.parse)(t.search);
       try {
         var n;
-        await (0, c.g)(null !== (n = e.token) && void 0 !== n ? n : ""), d(!0)
+        await (0, l.g)(null != (n = e.token) ? n : ""), d(!0)
       } catch (e) {
         p(!0)
       }
-    })()
+    }()
   }, [t.search]), e = n ? (0, r.jsx)(a.c7, {
     message: u.NW.string(u.t.Tqu3OT),
     showsCloseWindowText: !0

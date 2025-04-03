@@ -135,7 +135,7 @@ function U(e) {
   let t = u.Z.getChannel(e);
   if (null == t) return null;
   let n = h.Z.isVideoEnabled(),
-    r = E.Z.getMediaSessionId();
+    r = E.ZP.getMediaSessionId();
   return D({
     channel_id: t.id,
     channel_type: t.type,

@@ -1,64 +1,64 @@
-/** Chunk was on 96977 **/
-n.d(t, {
-  Z: () => m
+/** Chunk was on 77942 **/
+n.d(e, {
+  Z: () => b
 });
-var i = n(200651);
+var o = n(200651);
 n(192379);
-var o = n(442837),
-  r = n(481060),
+var r = n(442837),
+  i = n(481060),
   a = n(906732),
   l = n(48217),
   c = n(26323),
   s = n(430824),
-  d = n(914010),
-  u = n(709586),
-  _ = n(981631),
-  g = n(30513),
-  b = n(388032),
-  f = n(242955);
+  u = n(914010),
+  _ = n(709586),
+  d = n(981631),
+  f = n(30513),
+  m = n(388032),
+  p = n(273233);
 
-function m(e) {
+function b(t) {
   let {
-    analyticsSection: t,
+    analyticsSection: e,
     analyticsPage: n,
-    isGIF: m,
-    banner: p
-  } = e, h = (0, o.e7)([d.Z], () => d.Z.getGuildId()), v = (0, o.e7)([s.Z], () => s.Z.getGuild(h)), {
-    analyticsLocations: N
+    isGIF: b,
+    banner: g
+  } = t, C = (0, r.e7)([u.Z], () => u.Z.getGuildId()), N = (0, r.e7)([s.Z], () => s.Z.getGuild(C)), {
+    analyticsLocations: v
   } = (0, a.ZP)();
-  return null == v || v.hasFeature(_.oNc.ANIMATED_BANNER) || !m && v.hasFeature(_.oNc.BANNER) ? null : (0, i.jsxs)("div", {
-    className: f.container,
-    children: [(0, i.jsx)(u.Z, {
-      className: f.guildBoostingIcon
-    }), (0, i.jsx)(r.Text, {
+  return null == N || N.hasFeature(d.oNc.ANIMATED_BANNER) || !b && N.hasFeature(d.oNc.BANNER) ? null : (0, o.jsxs)("div", {
+    className: p.container,
+    children: [(0, o.jsx)(_.Z, {
+      className: p.guildBoostingIcon
+    }), (0, o.jsx)(i.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: b.NW.string(b.t["56M7xc"])
-    }), (0, i.jsx)(r.zxk, {
-      look: r.zxk.Looks.LINK,
-      color: r.zxk.Colors.LINK,
-      className: f.subscribeButton,
+      children: m.NW.string(m.t["56M7xc"])
+    }), (0, o.jsx)(i.zxk, {
+      look: i.zxk.Looks.LINK,
+      color: i.zxk.Colors.LINK,
+      className: p.subscribeButton,
       onClick: () => {
-        if (null == v) return;
-        let e = {
-          section: t,
+        if (null == N) return;
+        let t = {
+          section: e,
           page: n,
-          object: _.qAy.UPSELL_HEADER
+          object: d.qAy.UPSELL_HEADER
         };
-        null != p ? (0, l.c)({
-          analyticsLocations: N,
-          analyticsLocation: e,
-          guild: v,
-          isGIF: m,
-          banner: p
+        null != g ? (0, l.c)({
+          analyticsLocations: v,
+          analyticsLocation: t,
+          guild: N,
+          isGIF: b,
+          banner: g
         }) : (0, c.Z)({
-          analyticsLocations: N,
-          analyticsSourceLocation: e,
-          guild: v,
-          perks: m ? (0, g.zC)() : (0, g.XO)()
+          analyticsLocations: v,
+          analyticsSourceLocation: t,
+          guild: N,
+          perks: b ? (0, f.zC)() : (0, f.XO)()
         })
       },
-      children: b.NW.string(b.t.WUHdZW)
+      children: m.NW.string(m.t.WUHdZW)
     })]
   })
 }

@@ -53,12 +53,12 @@ function N(e) {
   let {
     channelId: n,
     messages: r
-  } = e, i = null === (t = u.Z.getChannel(n)) || void 0 === t ? void 0 : t.getGuildId();
+  } = e, i = null == (t = u.Z.getChannel(n)) ? void 0 : t.getGuildId();
   if (null == i) return !1;
   let l = S[i],
     o = r.reduce((e, t) => {
       var n;
-      return t.type === f.uaV.AUTO_MODERATION_ACTION && (null === (n = t.embeds) || void 0 === n ? void 0 : n.some(e => {
+      return t.type === f.uaV.AUTO_MODERATION_ACTION && (null == (n = t.embeds) ? void 0 : n.some(e => {
         let {
           type: t
         } = e;
@@ -80,18 +80,18 @@ class C extends(r = i.ZP.PersistedStore) {
   }
   getMessage(e) {
     var t;
-    return null == e ? null : null !== (t = b(e)) && void 0 !== t ? t : null
+    return null == e ? null : null != (t = b(e)) ? t : null
   }
   getMessagesVersion() {
     return O
   }
   getMentionRaidDetected(e) {
     var t;
-    return null !== (t = g[e]) && void 0 !== t ? t : null
+    return null != (t = g[e]) ? t : null
   }
   getLastIncidentAlertMessage(e) {
     var t;
-    return null !== (t = S[e]) && void 0 !== t ? t : null
+    return null != (t = S[e]) ? t : null
   }
 }
 E(C, "displayName", "GuildAutomodMessageStore"), E(C, "persistKey", "GuildAutomodMessages");

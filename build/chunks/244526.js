@@ -1,11 +1,11 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => x
 }), n(266796);
 var r, i, s, a = n(200651),
-  o = n(192379),
-  l = n(120356),
-  c = n.n(l),
+  l = n(192379),
+  o = n(120356),
+  c = n.n(o),
   d = n(481060),
   u = n(987032),
   m = n(600164),
@@ -14,8 +14,8 @@ var r, i, s, a = n(200651),
   h = n(122289),
   f = n(624138),
   b = n(388032),
-  N = n(159200);
-class x extends(r = o.PureComponent) {
+  N = n(943617);
+class x extends(r = l.PureComponent) {
   get typeString() {
     let {
       paymentSource: e
@@ -68,7 +68,7 @@ class x extends(r = o.PureComponent) {
     return e instanceof p.dm ? n = b.NW.formatToPlainString(b.t["8rTTub"], {
       month: (0, h.E2)(e.expiresMonth, t),
       year: e.expiresYear
-    }) : e instanceof p.qo ? n = e.email : e instanceof p.Sf ? n = e.email : e instanceof p.Vg ? n = e.email : e instanceof p.Xc ? n = "@" + e.username : e instanceof p.u_ && (n = e.username), n
+    }) : e instanceof p.qo || e instanceof p.Sf || e instanceof p.Vg ? n = e.email : e instanceof p.Xc ? n = "@" + e.username : e instanceof p.u_ && (n = e.username), n
   }
   render() {
     let {
@@ -78,7 +78,7 @@ class x extends(r = o.PureComponent) {
       isForSubscription: r,
       showPaymentSourceIcon: i,
       showLabels: s
-    } = this.props, o = this.renderSubText();
+    } = this.props, l = this.renderSubText();
     return (0, a.jsxs)(m.Z, {
       children: [i && (0, a.jsx)(g.ZP, {
         type: this.typeString
@@ -97,9 +97,9 @@ class x extends(r = o.PureComponent) {
             className: N.invalidIndicator,
             children: b.NW.string(b.t["851k9/"])
           }) : null]
-        }), n && null != o ? (0, a.jsx)("div", {
+        }), n && null != l ? (0, a.jsx)("div", {
           className: N.subText,
-          children: o
+          children: l
         }) : null]
       })]
     })

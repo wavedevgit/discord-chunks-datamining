@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,20 +7,20 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(579806),
-  o = n(435064),
-  l = n(39604),
+  l = n(435064),
+  o = n(39604),
   c = n(442334),
   d = n(388032),
-  u = n(133881),
-  m = n(793803);
+  u = n(802454),
+  m = n(948865);
 
 function g() {
-  let e = (0, i.e7)([o.Z], () => o.Z.getSettings().storageLocation),
+  let e = (0, i.e7)([l.Z], () => l.Z.getSettings().storageLocation),
     t = async () => {
       let e = await a.Z.fileManager.showOpenDialog({
         properties: ["openDirectory", "createDirectory"]
       });
-      e.length > 0 && l.T1(e[0])
+      e.length > 0 && o.T1(e[0])
     };
   return (0, r.jsx)(s.hjN, {
     children: (0, r.jsx)(c.O, {

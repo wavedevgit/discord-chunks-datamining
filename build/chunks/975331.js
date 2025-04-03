@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -17,18 +17,18 @@ var r = n(200651),
   p = n(22902),
   h = n(783454),
   f = n(388032),
-  b = n(630290);
+  b = n(301849);
 
 function x() {
   var e;
   let {
     editStateId: t
   } = (0, u.N)(), [n, s] = m.TT(t), [x, j] = m.F2(t), N = (0, c.oC)(t), {
-    options: v
-  } = (0, p.Z)(null !== (e = null == N ? void 0 : N.active_trial) && void 0 !== e ? e : null), _ = (0, g.Z)(), C = null != n, O = i.useCallback(e => {
-    let t = v.find(e => e.isDefault);
+    options: _
+  } = (0, p.Z)(null != (e = null == N ? void 0 : N.active_trial) ? e : null), v = (0, g.Z)(), C = null != n, O = i.useCallback(e => {
+    let t = _.find(e => e.isDefault);
     a()(null != t, "Missing default trial duartion option"), s(e ? t.value : null)
-  }, [s, v]), y = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
+  }, [s, _]), y = (0, d.mY)(), I = (0, o.Dt)(), E = (0, o.Dt)();
   return (0, r.jsxs)(h.Z, {
     title: f.NW.string(f.t["6antoq"]),
     description: f.NW.string(f.t.urVijY),
@@ -51,7 +51,7 @@ function x() {
         size: 8
       }), (0, r.jsx)(l.q4e, {
         "aria-labelledby": I,
-        options: v,
+        options: _,
         className: b.formInput,
         placeholder: f.NW.string(f.t.WZG1BQ),
         value: n,
@@ -73,7 +73,7 @@ function x() {
         children: f.NW.string(f.t.Cg5eBg)
       }), (0, r.jsx)(l.q4e, {
         "aria-labelledby": E,
-        options: _,
+        options: v,
         className: b.formInput,
         value: x,
         onChange: j,

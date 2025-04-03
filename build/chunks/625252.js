@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => x
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(780384),
   a = n(481060),
-  o = n(37234),
-  l = n(410030),
+  l = n(37234),
+  o = n(410030),
   c = n(626135),
   d = n(617136),
   u = n(497505),
@@ -16,11 +16,11 @@ var r = n(200651),
   p = n(46140),
   h = n(981631),
   f = n(388032),
-  b = n(335371),
+  b = n(31903),
   N = n(66094);
 
 function x() {
-  let e = (0, s.wj)((0, l.ZP)()),
+  let e = (0, s.wj)((0, o.ZP)()),
     t = (0, m.y)({
       location: p.dr.USER_SETTINGS_GIFT_INVENTORY
     }),
@@ -28,7 +28,7 @@ function x() {
       backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
     }), []),
     x = i.useCallback(() => {
-      (0, o.xf)(), (0, g.navigateToQuestHome)({
+      (0, l.xf)(), (0, g.navigateToQuestHome)({
         fromContent: u.jn.QUEST_HOME_MOVE_CALLOUT
       }), c.default.track(h.rMx.QUEST_CONTENT_CLICKED, function(e) {
         for (var t = 1; t < arguments.length; t++) {

@@ -8,9 +8,8 @@ var a = function() {
 
   function r() {
     var e, t, a = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
-    ! function(e, r) {
-      if (!(e instanceof r)) throw TypeError("Cannot call a class as a function")
-    }(this, r), t = void 0, (e = "items") in this ? Object.defineProperty(this, e, {
+    if (!(this instanceof r)) throw TypeError("Cannot call a class as a function");
+    t = void 0, (e = "items") in this ? Object.defineProperty(this, e, {
       value: t,
       enumerable: !0,
       configurable: !0,

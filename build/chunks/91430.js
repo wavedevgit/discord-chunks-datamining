@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   MM: () => V,
   Yn: () => H,
@@ -9,8 +9,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(512722),
-  l = n.n(o),
+  l = n(512722),
+  o = n.n(l),
   c = n(913527),
   d = n.n(c),
   u = n(442837),
@@ -27,8 +27,8 @@ var r = n(200651),
   j = n(301766),
   O = n(594174),
   C = n(626135),
-  v = n(63063),
-  S = n(74538),
+  S = n(63063),
+  v = n(74538),
   T = n(212895),
   I = n(374649),
   y = n(160913),
@@ -38,23 +38,23 @@ var r = n(200651),
   D = n(592889),
   Z = n(981631),
   w = n(388032),
-  k = n(537014);
+  k = n(772526);
 
 function W(e) {
   let t, {
       subscription: n,
       renewalInvoicePreview: i,
       fromStandaloneBillingPage: s = !0,
-      className: o
+      className: l
     } = e,
     c = (0, u.e7)([O.default], () => {
       let e = O.default.getCurrentUser();
-      return l()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
+      return o()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
-  if (0 === (0, S.uV)(n.additionalPlans)) return null;
+  if (0 === (0, v.uV)(n.additionalPlans)) return null;
   let {
     status: d
-  } = n, m = (0, S.v6)(n);
+  } = n, m = (0, v.v6)(n);
   if (m) t = k.guildBoostingSubscriptionRowCanceled;
   else switch (d) {
     case Z.O0b.PAST_DUE:
@@ -71,7 +71,7 @@ function W(e) {
   }
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: a()(t, o),
+      className: a()(t, l),
       children: [(0, r.jsx)("div", {
         className: k.guildBoostingSubscriptionRowBackground
       }), (0, r.jsx)("div", {
@@ -83,7 +83,7 @@ function W(e) {
             [k.canceled]: m
           })
         }), (0, r.jsx)("div", {
-          children: (0, S.bt)({
+          children: (0, v.bt)({
             subscription: n,
             renewalInvoicePreview: i,
             user: c
@@ -197,7 +197,7 @@ function U(e) {
       className: k.detailBlockHeader,
       children: w.NW.string(w.t.KXQjfX)
     }), (0, r.jsx)("div", {
-      children: S.ZP.getBillingInformationString(t, n, !1, s)
+      children: v.ZP.getBillingInformationString(t, n, !1, s)
     })]
   })
 }
@@ -235,8 +235,8 @@ function G(e) {
     analyticsLocation: n,
     paymentSource: i,
     busy: s,
-    fromStandaloneBillingPage: o,
-    showInvalidPaymentMethod: l,
+    fromStandaloneBillingPage: l,
+    showInvalidPaymentMethod: o,
     showNoPaymentMethod: c,
     fetchedCurrentInvoicePreview: d,
     fetchedRenewalInvoicePreview: u
@@ -271,7 +271,7 @@ function G(e) {
       }), (0, r.jsx)(W, {
         subscription: t,
         renewalInvoicePreview: b,
-        fromStandaloneBillingPage: o,
+        fromStandaloneBillingPage: l,
         className: k.guildSubscriptionRow
       })]
     }), (0, r.jsx)("div", {
@@ -289,7 +289,7 @@ function G(e) {
             fractionalPremiumInfo: E
           }), (0, r.jsxs)("div", {
             className: a()(k.detailsBlock, {
-              [k.redBorder]: l
+              [k.redBorder]: o
             }),
             children: [(0, r.jsx)(g.vwX, {
               tag: "h3",
@@ -300,7 +300,7 @@ function G(e) {
             }), (0, r.jsx)(R.Z, {
               subscription: t,
               onPaymentSourceAdded: T.i1,
-              highlightAddPaymentMethodButton: c || l,
+              highlightAddPaymentMethodButton: c || o,
               analyticsLocation: n,
               currentInvoicePreview: b,
               dropdownClassName: k.paymentDropdown
@@ -329,7 +329,7 @@ function H() {
       className: k.duplicateSubscriptionsBannerText,
       variant: "text-sm/normal",
       children: w.NW.format(w.t["6eXiiI"], {
-        helpCenterLink: v.Z.getArticleURL(Z.BhN.NITRO)
+        helpCenterLink: S.Z.getArticleURL(Z.BhN.NITRO)
       })
     })]
   })
@@ -341,8 +341,8 @@ function z(e) {
     subscription: i,
     subscriptions: s,
     paymentSource: a,
-    busy: o,
-    fromStandaloneBillingPage: l = !0,
+    busy: l,
+    fromStandaloneBillingPage: o = !0,
     analyticsLocation: c
   } = e;
   null != s && null != s[0] && (i = s[0]);
@@ -361,8 +361,8 @@ function z(e) {
     analyticsLocation: c
   }), x = null == a ? void 0 : a.invalid, _ = (0, u.e7)([O.default], () => {
     var e;
-    return null === (e = O.default.getCurrentUser()) || void 0 === e ? void 0 : e.hasFreePremium()
-  }), E = d()(i.currentPeriodEnd), C = null != i.paymentSourceId, v = null !== (t = null == N ? void 0 : N.total) && void 0 !== t ? t : 0, S = !C && v > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !_ && !i.isPurchasedExternally, T = x && i.status === Z.O0b.PAST_DUE && !_ && !i.isPurchasedExternally, A = (0, y.U)(), P = !_ && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [W] = (0, I.Ox)({
+    return null == (e = O.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
+  }), E = d()(i.currentPeriodEnd), C = null != i.paymentSourceId, S = null != (t = null == N ? void 0 : N.total) ? t : 0, v = !C && S > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !_ && !i.isPurchasedExternally, T = x && i.status === Z.O0b.PAST_DUE && !_ && !i.isPurchasedExternally, A = (0, y.U)(), P = !_ && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [W] = (0, I.Ox)({
     subscriptionId: i.id,
     preventFetch: !P
   });
@@ -378,7 +378,7 @@ function z(e) {
         tag: "h1",
         children: w.NW.string(w.t["/gs+Pz"])
       }),
-      children: [S ? (0, r.jsx)(L, {}) : null, T ? (0, r.jsx)(B, {}) : null, P && null != W ? (0, r.jsx)(M, {
+      children: [v ? (0, r.jsx)(L, {}) : null, T ? (0, r.jsx)(B, {}) : null, P && null != W ? (0, r.jsx)(M, {
         daysPastDue: R,
         subscription: i,
         openInvoiceId: W.id
@@ -394,9 +394,9 @@ function z(e) {
             subscription: i,
             analyticsLocation: c,
             paymentSource: a,
-            busy: o,
-            fromStandaloneBillingPage: l,
-            showNoPaymentMethod: S,
+            busy: l,
+            fromStandaloneBillingPage: o,
+            showNoPaymentMethod: v,
             showInvalidPaymentMethod: T,
             fetchedCurrentInvoicePreview: b,
             fetchedRenewalInvoicePreview: N
@@ -411,9 +411,9 @@ function z(e) {
             subscription: e,
             analyticsLocation: c,
             paymentSource: a,
-            busy: o,
-            fromStandaloneBillingPage: l,
-            showNoPaymentMethod: S,
+            busy: l,
+            fromStandaloneBillingPage: o,
+            showNoPaymentMethod: v,
             showInvalidPaymentMethod: T,
             fetchedCurrentInvoicePreview: null,
             fetchedRenewalInvoicePreview: null

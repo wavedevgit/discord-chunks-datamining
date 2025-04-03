@@ -1,12 +1,12 @@
 /** Chunk was on 30634 **/
 n.d(t, {
-  Z: () => o
+  Z: () => u
 });
 var r = n(424706),
   a = n(14160),
   l = n(247123),
   i = n(207662);
-let o = {
+let u = {
   id: "button-name",
   selector: 'button, [role="button"], [role="link"], [role="menuitem"], [role="tab"]',
   tags: ["wcag2a", "wcag412", "section508", "section508.22.a", "ACT"],

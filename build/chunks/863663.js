@@ -63,7 +63,7 @@ function s(e) {
     newRoleParams: s,
     hasUnsavedAttachmentChanges: c
   } = e, d = {};
-  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null !== (t = null == n ? void 0 : n.description) && void 0 !== t ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != s && "" !== s.name.trim() ? d.createNewRole = !0 : null === s && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || c)) && (d.image = o, d.imageName = a);
+  (null == n ? void 0 : n.name) !== r && "" !== r.trim() && (d.name = r), (null != (t = null == n ? void 0 : n.description) ? t : "") !== l && (d.description = l), (null == n ? void 0 : n.price_tier) !== i && null != i && (d.priceTier = i), null != s && "" !== s.name.trim() ? d.createNewRole = !0 : null === s && (d.unlinkRole = !0), o.startsWith("data:") && (u || null == n && (Object.keys(d).length > 0 || c)) && (d.image = o, d.imageName = a);
   let p = Object.keys(d).length > 0 || c;
   return {
     changes: d,

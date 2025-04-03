@@ -24,7 +24,7 @@ var r = n(200651),
   C = n(146463),
   y = n(981631),
   N = n(388032),
-  T = n(122158);
+  T = n(9375);
 
 function I(e) {
   let {
@@ -109,9 +109,9 @@ function w(e) {
     guildId: w
   }), B = (0, h.L)({
     guildId: w
-  }), k = null !== (t = (0, _.A)({
+  }), k = null != (t = (0, _.A)({
     guildId: w
-  })) && void 0 !== t ? t : 0, {
+  })) ? t : 0, {
     guildJoinRequests: F
   } = (0, j.j)({
     guildId: w,
@@ -132,7 +132,7 @@ function w(e) {
   }, [S, R]), a.useEffect(() => {
     if (U.current && 0 !== F.length && "REVIEW_APPLICATION" !== R) {
       var e;
-      U.current = !1, m.Z.setSelectedGuildJoinRequest(w, F[0]), null === (e = P.current) || void 0 === e || e.scrollToTop()
+      U.current = !1, m.Z.setSelectedGuildJoinRequest(w, F[0]), null == (e = P.current) || e.scrollToTop()
     }
   }, [w, F, B, R]);
   let L = a.useCallback(async e => {
@@ -148,10 +148,10 @@ function w(e) {
     J = a.useCallback(async () => {
       var e;
       if ("REVIEW_APPLICATION" === R) return;
-      let t = null === (e = P.current) || void 0 === e ? void 0 : e.getScrollerState();
+      let t = null == (e = P.current) ? void 0 : e.getScrollerState();
       null != t && t.scrollHeight - t.scrollTop - t.offsetHeight < 200 && await W(S, R)
     }, [R, S, W]),
-    G = null !== (n = null == q ? void 0 : q.hasFeature(y.oNc.CLAN)) && void 0 !== n && n;
+    G = null != (n = null == q ? void 0 : q.hasFeature(y.oNc.CLAN)) && n;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(v.Z, {
       currentTab: R,

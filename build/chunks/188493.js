@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(89182),
-  a = n(706454),
+  a = n(89182),
+  o = n(706454),
   s = n(762692),
   c = n(959165),
   u = n(164991),
@@ -17,7 +17,7 @@ var r = n(200651),
 function f(e) {
   let {
     loadId: t
-  } = e, n = (0, l.e7)([a.default], () => (0, d.Xp)([a.default])), f = u.Z.useField("languageCode"), g = null != f ? f : n, m = i.useCallback(e => {
+  } = e, n = (0, l.e7)([o.default], () => (0, d.Xp)([o.default])), f = u.Z.useField("languageCode"), g = null != f ? f : n, m = i.useCallback(e => {
     u.Z.setState({
       languageCode: e
     });
@@ -36,9 +36,9 @@ function f(e) {
   })), []), _ = i.useMemo(() => {
     var e;
     let t = (0, p.Cf)().find(e => e.code === g);
-    return null !== (e = null == t ? void 0 : t.name) && void 0 !== e ? e : h.NW.string(h.t.LQLMGB)
+    return null != (e = null == t ? void 0 : t.name) ? e : h.NW.string(h.t.LQLMGB)
   }, [g]);
-  return (0, r.jsx)(o.ZP, {
+  return (0, r.jsx)(a.ZP, {
     items: b,
     title: _,
     onSelect: m,

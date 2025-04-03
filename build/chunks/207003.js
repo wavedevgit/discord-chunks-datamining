@@ -33,7 +33,7 @@ var r = n(200651),
   w = n(981631),
   k = n(490897),
   T = n(388032),
-  D = n(280356);
+  D = n(277580);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -239,7 +239,7 @@ function H(e) {
     c = l.useCallback(() => 48, []),
     f = l.useMemo(() => {
       var e;
-      return null !== (e = null == n ? void 0 : n.map(j.hC)) && void 0 !== e ? e : []
+      return null != (e = null == n ? void 0 : n.map(j.hC)) ? e : []
     }, [n]),
     h = l.useCallback(e => {
       let {
@@ -296,7 +296,7 @@ function H(e) {
         return (0, r.jsx)(d.YAO, M(R({
           scrollerRef: e => {
             var n;
-            m.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+            m.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
           }
         }, n, i), {
           sections: o,

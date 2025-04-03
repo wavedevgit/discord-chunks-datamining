@@ -5,6 +5,7 @@ n.d(t, {
   HH: () => x,
   Hc: () => Y,
   IV: () => K,
+  Jl: () => en,
   KP: () => j,
   Ks: () => ee,
   OP: () => W,
@@ -400,4 +401,13 @@ function et() {
   let e = (0, g.UQ)("explicit_media_redaction_utils"),
     t = (0, o.L5)();
   return e && t
+}
+
+function en(e) {
+  let {
+    obscure: t
+  } = e;
+  (0, o.M$)() && p.default.track(b.rMx.EXPLICIT_MEDIA_OBSCURITY_TOGGLE_V2, {
+    toggle_direction: t ? "hide" : "show"
+  })
 }

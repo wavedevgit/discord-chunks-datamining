@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => S
 }), t(47120);
@@ -15,19 +15,19 @@ var r = t(200651),
   p = t(899007),
   b = t(648052),
   y = t(867176),
-  v = t(280885),
-  m = t(900927),
-  g = t(678738),
-  I = t(502762),
-  j = t(530),
+  m = t(280885),
+  g = t(900927),
+  I = t(678738),
+  j = t(502762),
+  v = t(530),
   h = t(679332),
   _ = t(544989),
   x = t(228168),
   O = t(981631),
   Z = t(388032),
-  P = t(84695),
-  N = t(323954),
-  E = t(237043);
+  P = t(405666),
+  N = t(349966),
+  E = t(923243);
 
 function S(e) {
   let {
@@ -60,7 +60,7 @@ function S(e) {
         className: P.root,
         hideShadow: !0,
         "aria-label": Z.NW.string(Z.t["3N/J2t"]),
-        children: [(0, r.jsxs)(I.Z, {
+        children: [(0, r.jsxs)(j.Z, {
           user: n,
           displayProfile: B,
           profileType: x.y0.FULL_SIZE,
@@ -87,7 +87,7 @@ function S(e) {
             })]
           }), (0, r.jsxs)("div", {
             className: P.body,
-            children: [(0, r.jsx)(j.Z, {
+            children: [(0, r.jsx)(v.Z, {
               user: n,
               profileType: x.y0.FULL_SIZE,
               nickname: d.ZP.getName(M, S, n),
@@ -98,7 +98,7 @@ function S(e) {
                 profileType: x.y0.FULL_SIZE,
                 onClose: L
               })
-            }), (0, r.jsx)(I.Z.Overlay, {
+            }), (0, r.jsx)(j.Z.Overlay, {
               className: P.overlay,
               children: (0, r.jsxs)("div", {
                 className: E.container,
@@ -119,13 +119,13 @@ function S(e) {
                 }), (0, r.jsxs)(i.zJl, {
                   fade: !0,
                   className: N.scroller,
-                  children: [(0, r.jsx)(v.Z, {
+                  children: [(0, r.jsx)(m.Z, {
                     userId: n.id,
                     userBio: null == B ? void 0 : B.bio,
                     setLineClamp: !1
-                  }), (0, r.jsx)(g.Z, {
+                  }), (0, r.jsx)(I.Z, {
                     heading: Z.NW.string(Z.t["A//N4u"]),
-                    children: (0, r.jsx)(m.Z, {
+                    children: (0, r.jsx)(g.Z, {
                       userId: n.id,
                       guildId: M,
                       tooltipDelay: x.vB

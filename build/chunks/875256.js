@@ -20,9 +20,8 @@ var u = function() {
 
   function t(e) {
     var n = this;
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t), a(this, "hooks", (0, i.p)({
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+    a(this, "hooks", (0, i.p)({
       dropTarget: function(e, t) {
         n.clearDropTarget(), n.dropTargetOptions = t, (0, o.d)(e) ? n.dropTargetRef = e : n.dropTargetNode = e, n.reconnect()
       }

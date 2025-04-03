@@ -1,4 +1,4 @@
-/** Chunk was on 60246 **/
+/** Chunk was on 61007 **/
 let r, o;
 n.d(t, {
   Z: () => D
@@ -16,7 +16,7 @@ var i = n(200651),
   f = n(782605),
   N = n(981631),
   I = n(388032),
-  T = n(966912),
+  T = n(400024),
   E = n(216019),
   S = n(286359);
 let O = "hTKzmak",
@@ -64,15 +64,12 @@ function D(e) {
   } = e, [o, a] = l.useState(""), [p, m] = l.useState(!1), [N, E] = l.useState(null), S = l.useRef(null);
   l.useEffect(() => {
     var e;
-    r && (null === (e = S.current) || void 0 === e || e.focus())
+    r && (null == (e = S.current) || e.focus())
   }, [r]);
   let D = e => {
     e.preventDefault();
     let t = o.trim();
-    if ("" === t) {
-      E(I.NW.string(I.t.IRq5am));
-      return
-    }
+    if ("" === t) return void E(I.NW.string(I.t.IRq5am));
     E(null), m(!0);
     let r = t.split("/"),
       i = r[r.length - 1];
@@ -82,10 +79,7 @@ function D(e) {
       let {
         invite: t
       } = e;
-      if (m(!1), null == t) {
-        E(I.NW.string(I.t["GEYI+f"]));
-        return
-      }
+      if (m(!1), null == t) return void E(I.NW.string(I.t["GEYI+f"]));
       if (null != t.channel) {
         let e = u.ZP.getInviteContext("Join Guild", t);
         u.ZP.acceptInvite({

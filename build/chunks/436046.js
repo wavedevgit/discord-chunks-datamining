@@ -1,4 +1,4 @@
-/** Chunk was on 77805 **/
+/** Chunk was on 57015 **/
 s.d(t, {
   Z: () => h
 }), s(47120), s(266796);
@@ -16,14 +16,14 @@ var n = s(200651),
   f = s(981631),
   m = s(723359),
   b = s(388032),
-  N = s(552960);
+  N = s(965851);
 
 function h(e) {
   let {
     onComplete: t,
     onClose: s
   } = e, [a, h] = o.useState(null), [x, E] = o.useState(null), [C, j] = o.useState(!1), T = (0, i.e7)([u.default], () => u.default.getCurrentUser()), I = o.createRef();
-  async function v(e) {
+  async function g(e) {
     e.preventDefault(), r()(null != a, "Cannot submit null birthday."), j(!0);
     try {
       await d.Av(a, m.L0.NEW_USER_FLOW), t()
@@ -31,7 +31,7 @@ function h(e) {
       if (null != e.body && null != e.body.date_of_birth) d.wE(m.L0.NEW_USER_FLOW), d.hp(m.L0.NEW_USER_FLOW), s();
       else {
         var n;
-        (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.username) != null ? E(b.NW.string(b.t["TGg/2t"])) : E(null == e ? void 0 : e.body.message)
+        (null == e || null == (n = e.body) ? void 0 : n.username) != null ? E(b.NW.string(b.t["TGg/2t"])) : E(null == e ? void 0 : e.body.message)
       }
     }
     j(!1)
@@ -39,16 +39,16 @@ function h(e) {
   o.useEffect(() => {
     null != T && null != T.nsfwAllowed && t()
   }, [T, t]);
-  let g = o.useCallback(e => {
+  let v = o.useCallback(e => {
       h(e)
     }, [h]),
     O = o.useCallback(() => {
       var e;
-      null === (e = I.current) || void 0 === e || e.focus()
+      null == (e = I.current) || e.focus()
     }, [I]);
   return null == T ? null : (0, n.jsxs)("form", {
     className: N.content,
-    onSubmit: v,
+    onSubmit: g,
     children: [(0, n.jsx)(c.gw7, {
       size: "custom",
       width: 56,
@@ -74,7 +74,7 @@ function h(e) {
         wrapperClassName: N.formItem,
         label: b.NW.string(b.t.rhBeKS),
         name: "birthday",
-        onChange: g,
+        onChange: v,
         onPopulated: O,
         error: x,
         value: a

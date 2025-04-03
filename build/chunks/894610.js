@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -8,7 +8,7 @@ var r = n(200651),
   s = n(755930),
   a = n(267101),
   l = n(388032),
-  o = n(108696);
+  o = n(963877);
 let c = (0, s.Yn)([(0, s.nn)({
   key: "LISTING_NAME",
   cellClassName: o.listingNameColumn,
@@ -25,7 +25,7 @@ let c = (0, s.Yn)([(0, s.nn)({
   getCount: e => e.paymentsCount,
   sort: (0, s.Qg)(e => {
     var t;
-    return null !== (t = e.paymentsCount) && void 0 !== t ? t : 0
+    return null != (t = e.paymentsCount) ? t : 0
   })
 }), (0, s.i$)({
   key: "PRICE",
@@ -41,7 +41,7 @@ let c = (0, s.Yn)([(0, s.nn)({
   },
   sort: (0, s.Qg)(e => {
     var t;
-    return null !== (t = e.listing.price_tier) && void 0 !== t ? t : 0
+    return null != (t = e.listing.price_tier) ? t : 0
   })
 })]);
 
@@ -74,7 +74,7 @@ function d(e) {
     }({}, null != i ? i : {}), r = r = {
       key: e.id,
       listing: e,
-      paymentsCount: null !== (t = null == i ? void 0 : i.purchase_count) && void 0 !== t ? t : 0
+      paymentsCount: null != (t = null == i ? void 0 : i.purchase_count) ? t : 0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

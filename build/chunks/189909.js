@@ -16,9 +16,8 @@ var i = function() {
   var e;
 
   function t(e, n) {
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t), r(this, "spec", void 0), r(this, "monitor", void 0), this.spec = e, this.monitor = n
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+    r(this, "spec", void 0), r(this, "monitor", void 0), this.spec = e, this.monitor = n
   }
   return e = [{
       key: "canDrop",

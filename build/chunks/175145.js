@@ -1,7 +1,7 @@
 /** Chunk was on 23357 **/
 "use strict";
 n.d(t, {
-  default: () => y3
+  default: () => y7
 });
 var r, o, a = n(976913),
   i = n(392357),
@@ -881,7 +881,7 @@ var tB = function() {
       if (!n) throw Error("Component could not mount. Root node was not found.");
       return this._node ? this.unmount() : this.props.modules && this.props.modules.analytics && !this.props.isDropin && this.props.modules.analytics.send({
         containerWidth: this._node && this._node.offsetWidth,
-        component: null !== (t = this.constructor.analyticsType) && void 0 !== t ? t : this.constructor.type,
+        component: null != (t = this.constructor.analyticsType) ? t : this.constructor.type,
         flavor: "components"
       }), this._node = n, this._component = this.render(), (0, ec.sY)(this._component, n), this
     }
@@ -1484,13 +1484,13 @@ var nk = function(e) {
       key: "setElementStatus",
       value: function(e, t) {
         var n;
-        return null === (n = this.elementRef) || void 0 === n || n.setStatus(e, t), this
+        return null == (n = this.elementRef) || n.setStatus(e, t), this
       }
     }, {
       key: "setStatus",
       value: function(e, t) {
         var n;
-        return null !== (n = this.componentRef) && void 0 !== n && n.setStatus && this.componentRef.setStatus(e, t), this
+        return null != (n = this.componentRef) && n.setStatus && this.componentRef.setStatus(e, t), this
       }
     }, {
       key: "submitPayment",
@@ -1524,7 +1524,7 @@ var nk = function(e) {
         var t, n, r, o, a = (n = [], r = Y()(t = l()(e)).call(t, function(t, r) {
           return O()(ny).call(ny, r) ? t[r] = e[r] : n.push(r), t
         }, {}), n.length && console.warn("The following properties should not be passed to the client: ".concat(n.join(", "))), r);
-        a.action ? this.elementRef.handleAction(a.action) : (null === (o = a.order) || void 0 === o || null === (o = o.remainingAmount) || void 0 === o ? void 0 : o.value) > 0 ? this.handleOrder(a) : this.elementRef.handleFinalResult(a)
+        a.action ? this.elementRef.handleAction(a.action) : (null == (o = a.order) || null == (o = o.remainingAmount) ? void 0 : o.value) > 0 ? this.handleOrder(a) : this.elementRef.handleFinalResult(a)
       }
     }, {
       key: "updateParent",
@@ -1541,7 +1541,7 @@ var nk = function(e) {
       key: "icon",
       get: function() {
         var e;
-        return null !== (e = this.props.icon) && void 0 !== e ? e : this.resources.getImage()(this.constructor.type)
+        return null != (e = this.props.icon) ? e : this.resources.getImage()(this.constructor.type)
       }
     }, {
       key: "displayName",
@@ -1992,9 +1992,9 @@ var nB = function(e) {
       o = e.alt,
       a = e.height,
       i = e.width,
-      s = null === (t = nT()({
+      s = null == (t = nT()({
         imageFolder: "components/"
-      })) || void 0 === t ? void 0 : t(n);
+      })) ? void 0 : t(n);
     return (0, ec.h)("img", {
       className: ep()("adyen-checkout__icon", void 0 === r ? "" : r),
       alt: void 0 === o ? "" : o,
@@ -2245,7 +2245,7 @@ var rk = function(e) {
   },
   rC = function(e, t, n, r) {
     var o, a;
-    return r && null !== (o = e[n]) && void 0 !== o && null !== (o = o[t]) && void 0 !== o && o.formatterFn ? null : (null === (a = e[n]) || void 0 === a || null === (a = a[t]) || void 0 === a ? void 0 : a.maxlength) || 30
+    return r && null != (o = e[n]) && null != (o = o[t]) && o.formatterFn ? null : (null == (a = e[n]) || null == (a = a[t]) ? void 0 : a.maxlength) || 30
   },
   rZ = function(e) {
     return !(null != e && !/^[\s]*$/.test(e))
@@ -2403,7 +2403,7 @@ var rE = function() {
     }, {
       key: "getRulesFor",
       value: function(e) {
-        var t, n = null !== (t = this.rules[e]) && void 0 !== t ? t : this.rules.default;
+        var t, n = null != (t = this.rules[e]) ? t : this.rules.default;
         return ew()(n) || (n = [n]), n
       }
     }, {
@@ -2454,7 +2454,7 @@ var rB = function(e, t) {
   rD = function(e, t, n, r, o) {
     return Y()(t).call(t, function(e, t) {
       var a, i, s;
-      return rT(rT({}, e), {}, (0, w.Z)({}, t, null !== (a = null !== (i = null !== (s = e[t]) && void 0 !== s ? s : null == o ? void 0 : o[t]) && void 0 !== i ? i : null == r ? void 0 : r[t]) && void 0 !== a ? a : n))
+      return rT(rT({}, e), {}, (0, w.Z)({}, t, null != (a = null != (i = null != (s = e[t]) ? s : null == o ? void 0 : o[t]) ? i : null == r ? void 0 : r[t]) ? a : n))
     }, e)
   };
 
@@ -2468,7 +2468,7 @@ function rL(e) {
         valid: !1,
         errors: null,
         data: null,
-        fieldProblems: null !== (t = null == o ? void 0 : o[e]) && void 0 !== t ? t : null
+        fieldProblems: null != (t = null == o ? void 0 : o[e]) ? t : null
       };
       var t, a, i = r({
           key: e,
@@ -2486,7 +2486,7 @@ function rL(e) {
         valid: l.isValid && !(null != o && o[e]) || !1,
         errors: l.hasError() ? l.getError() : null,
         data: c,
-        fieldProblems: null !== (a = null == o ? void 0 : o[e]) && void 0 !== a ? a : null
+        fieldProblems: null != (a = null == o ? void 0 : o[e]) ? a : null
       }
     },
     i = Y()(t).call(t, function(e, t) {
@@ -2568,13 +2568,13 @@ function rV(e) {
             errors: rT(rT({}, e.errors), {}, (0, w.Z)({}, r, o))
           });
         case "setFieldProblems":
-          return null !== (b = null == e || null === (_ = e.schema) || void 0 === _ ? void 0 : Y()(_).call(_, function(t, n) {
+          return null != (b = null == e || null == (_ = e.schema) ? void 0 : Y()(_).call(_, function(t, n) {
             var r, o;
             return rT(rT({}, t), {}, {
-              fieldProblems: rT(rT({}, e.fieldProblems), {}, (0, w.Z)({}, n, null !== (r = null == u ? void 0 : u[n]) && void 0 !== r ? r : null)),
-              valid: rT(rT({}, e.valid), {}, (0, w.Z)({}, n, (null === (o = e.valid) || void 0 === o ? void 0 : o[n]) && !u[n]))
+              fieldProblems: rT(rT({}, e.fieldProblems), {}, (0, w.Z)({}, n, null != (r = null == u ? void 0 : u[n]) ? r : null)),
+              valid: rT(rT({}, e.valid), {}, (0, w.Z)({}, n, (null == (o = e.valid) ? void 0 : o[n]) && !u[n]))
             })
-          }, e)) && void 0 !== b ? b : e;
+          }, e)) ? b : e;
         case "updateField":
           var h = p({
               key: r,
@@ -2623,9 +2623,9 @@ function rV(e) {
               errors: rB(e.errors, F),
               valid: rB(e.valid, F)
             },
-            I = rD(rB(e.data, R), F, null, A.data, null === (S = e.local) || void 0 === S ? void 0 : S.data),
-            M = rD(rB(e.valid, R), F, !1, A.valid, null === (N = e.local) || void 0 === N ? void 0 : N.valid),
-            T = rD(rB(e.errors, R), F, null, A.errors, null === (x = e.local) || void 0 === x ? void 0 : x.errors);
+            I = rD(rB(e.data, R), F, null, A.data, null == (S = e.local) ? void 0 : S.data),
+            M = rD(rB(e.valid, R), F, !1, A.valid, null == (N = e.local) ? void 0 : N.valid),
+            T = rD(rB(e.errors, R), F, null, A.errors, null == (x = e.local) ? void 0 : x.errors);
           return rT(rT({}, e), {}, {
             schema: i,
             data: I,
@@ -2779,11 +2779,11 @@ function rq(e) {
     }, [null == r ? void 0 : r.onKeyUp]),
     g = t6(function(e) {
       var t, n, o;
-      null == r || null === (t = r.onBlurHandler) || void 0 === t || t.call(r, e), r.trimOnBlur && (e.target.value = eP()(o = e.target.value).call(o)), null == r || null === (n = r.onBlur) || void 0 === n || n.call(r, e)
+      null == r || null == (t = r.onBlurHandler) || t.call(r, e), r.trimOnBlur && (e.target.value = eP()(o = e.target.value).call(o)), null == r || null == (n = r.onBlur) || n.call(r, e)
     }, [r.onBlur, r.onBlurHandler]),
     b = t6(function(e) {
       var t;
-      null == r || null === (t = r.onFocusHandler) || void 0 === t || t.call(r, e)
+      null == r || null == (t = r.onFocusHandler) || t.call(r, e)
     }, [r.onFocusHandler]),
     _ = ep()("adyen-checkout__input", ["adyen-checkout__input--".concat(u)], h, {
       "adyen-checkout__input--invalid": i,
@@ -2870,7 +2870,7 @@ function rY(e) {
     f = c.errors,
     m = c.isValid,
     y = t8({});
-  l()(y.current).length || null === (t = e.setComponentRef) || void 0 === t || t.call(e, y.current), y.current.showValidation = function() {
+  l()(y.current).length || null == (t = e.setComponentRef) || t.call(e, y.current), y.current.showValidation = function() {
     d()
   };
   var v = function(e) {
@@ -3169,7 +3169,7 @@ function oi(e) {
     i = e.visibility,
     s = nl().i18n,
     c = t8({});
-  l()(c.current).length || null === (t = e.setComponentRef) || void 0 === t || t.call(e, c.current);
+  l()(c.current).length || null == (t = e.setComponentRef) || t.call(e, c.current);
   var u = t4(rJ, []),
     d = rV({
       schema: a,
@@ -3421,7 +3421,7 @@ var os = ["street", "houseNumberOrName", "postalCode", "city", "stateOrProvince"
   ok = {
     postalCode: {
       formatterFn: function(e, t) {
-        var n, r = null === (n = oC[t.state.data.country]) || void 0 === n ? void 0 : n.postalCode.formatterFn;
+        var n, r = null == (n = oC[t.state.data.country]) ? void 0 : n.postalCode.formatterFn;
         return r ? r(e) : e
       }
     },
@@ -3648,11 +3648,11 @@ var os = ["street", "houseNumberOrName", "postalCode", "city", "stateOrProvince"
           translationKey: "invalidFormatExpects",
           translationObject: {
             values: {
-              format: (null === (r = oC[t]) || void 0 === r ? void 0 : r.postalCode.format) || null
+              format: (null == (r = oC[t]) ? void 0 : r.postalCode.format) || null
             }
           }
         }, rZ(e)) return null;
-      var r, o, a = null === (o = oS[t]) || void 0 === o ? void 0 : o.pattern;
+      var r, o, a = null == (o = oS[t]) ? void 0 : o.pattern;
       return a ? a.test(e) : !!e
     }
     return !rZ(e) || null
@@ -3756,7 +3756,7 @@ var os = ["street", "houseNumberOrName", "postalCode", "city", "stateOrProvince"
       },
       houseNumberOrName: {
         validate: function(t, n) {
-          var r, o = null === (r = n.state) || void 0 === r || null === (r = r.data) || void 0 === r ? void 0 : r.country;
+          var r, o = null == (r = n.state) || null == (r = r.data) ? void 0 : r.country;
           return o && e.countryHasOptionalField(o, "houseNumberOrName") || !rZ(t) || null
         },
         modes: ["blur"],
@@ -4655,13 +4655,13 @@ function ad(e) {
     b = I()(t = "".concat(n.get(v))).call(t, g),
     k = function(e, t, n) {
       var r, o;
-      if ("object" === (0, _.Z)(null === (r = e[t]) || void 0 === r ? void 0 : r.errorMessage)) {
+      if ("object" === (0, _.Z)(null == (r = e[t]) ? void 0 : r.errorMessage)) {
         var a = e[t].errorMessage,
           i = a.translationKey,
           s = a.translationObject;
         return n.get(i, s)
       }
-      return n.get(null === (o = e[t]) || void 0 === o ? void 0 : o.errorMessage) || !!e[t]
+      return n.get(null == (o = e[t]) ? void 0 : o.errorMessage) || !!e[t]
     }(i, c, n);
   switch (c) {
     case "country":
@@ -4743,43 +4743,43 @@ var af = function() {
       key: "countryHasDataset",
       value: function(e) {
         var t;
-        return !(null === (t = this.specifications) || void 0 === t || null === (t = t[e]) || void 0 === t || !t.hasDataset)
+        return !(null == (t = this.specifications) || null == (t = t[e]) || !t.hasDataset)
       }
     }, {
       key: "countryHasOptionalField",
       value: function(e, t) {
         var n;
-        return !(null === (n = this.specifications) || void 0 === n || null === (n = n[e]) || void 0 === n || null === (n = n.optionalFields) || void 0 === n || !O()(n).call(n, t))
+        return !(null == (n = this.specifications) || null == (n = n[e]) || null == (n = n.optionalFields) || !O()(n).call(n, t))
       }
     }, {
       key: "getAddressSchemaForCountry",
       value: function(e) {
         var t;
-        return (null === (t = this.specifications) || void 0 === t || null === (t = t[e]) || void 0 === t ? void 0 : t.schema) || this.specifications.default.schema
+        return (null == (t = this.specifications) || null == (t = t[e]) ? void 0 : t.schema) || this.specifications.default.schema
       }
     }, {
       key: "getAddressLabelsForCountry",
       value: function(e) {
         var t;
-        return (null === (t = this.specifications) || void 0 === t || null === (t = t[e]) || void 0 === t ? void 0 : t.labels) || this.specifications.default.labels
+        return (null == (t = this.specifications) || null == (t = t[e]) ? void 0 : t.labels) || this.specifications.default.labels
       }
     }, {
       key: "getOptionalFieldsForCountry",
       value: function(e) {
         var t, n;
-        return (null === (t = this.specifications) || void 0 === t || null === (t = t[e]) || void 0 === t ? void 0 : t.optionalFields) || (null === (n = this.specifications.default) || void 0 === n ? void 0 : n.optionalFields) || []
+        return (null == (t = this.specifications) || null == (t = t[e]) ? void 0 : t.optionalFields) || (null == (n = this.specifications.default) ? void 0 : n.optionalFields) || []
       }
     }, {
       key: "getKeyForField",
       value: function(e, t) {
         var n, r;
-        return (null === (n = this.specifications) || void 0 === n || null === (n = n[t]) || void 0 === n || null === (n = n.labels) || void 0 === n ? void 0 : n[e]) || (null === (r = this.specifications) || void 0 === r || null === (r = r.default) || void 0 === r || null === (r = r.labels) || void 0 === r ? void 0 : r[e]) || e
+        return (null == (n = this.specifications) || null == (n = n[t]) || null == (n = n.labels) ? void 0 : n[e]) || (null == (r = this.specifications) || null == (r = r.default) || null == (r = r.labels) ? void 0 : r[e]) || e
       }
     }, {
       key: "getPlaceholderKeyForField",
       value: function(e, t) {
         var n, r;
-        return (null === (n = this.specifications) || void 0 === n || null === (n = n[t]) || void 0 === n || null === (n = n.placeholders) || void 0 === n ? void 0 : n[e]) || (null === (r = this.specifications) || void 0 === r || null === (r = r.default) || void 0 === r || null === (r = r.placeholders) || void 0 === r ? void 0 : r[e])
+        return (null == (n = this.specifications) || null == (n = n[t]) || null == (n = n.placeholders) ? void 0 : n[e]) || (null == (r = this.specifications) || null == (r = r.default) || null == (r = r.placeholders) ? void 0 : r[e])
       }
     }, {
       key: "getAddressSchemaForCountryFlat",
@@ -4912,7 +4912,7 @@ function ab(e) {
     c = e.iOSFocusedField,
     u = void 0 === c ? null : c,
     d = t8({});
-  l()(d.current).length || null === (n = e.setComponentRef) || void 0 === n || n.call(e, d.current);
+  l()(d.current).length || null == (n = e.setComponentRef) || n.call(e, d.current);
   var p = t4(function() {
       return new af(e.specifications)
     }, [e.specifications]),
@@ -4959,7 +4959,7 @@ function ab(e) {
         });
       N()(i).call(i, function(e) {
         var n;
-        B(e, "input")(null !== (n = t[e]) && void 0 !== n ? n : "")
+        B(e, "input")(null != (n = t[e]) ? n : "")
       }), t.postalCode && B("postalCode", "blur")(F.postalCode)
     }, [F.country]), t1(function() {
       var e = O()(i).call(i, "stateOrProvince"),
@@ -5097,9 +5097,9 @@ function aw(e) {
     label: s.get("creditCard.holderName")
   }, (0, ec.h)(aC, {
     name: "consentCheckbox",
-    classNameModifiers: I()(t = []).call(t, (0, H.Z)(null !== (n = c.classNameModifiers) && void 0 !== n ? n : c.classNameModifiers = []), ["consentCheckbox"]),
+    classNameModifiers: I()(t = []).call(t, (0, H.Z)(null != (n = c.classNameModifiers) ? n : c.classNameModifiers = []), ["consentCheckbox"]),
     onInput: i,
-    value: null == c || null === (r = c.data) || void 0 === r ? void 0 : r.consentCheckbox,
+    value: null == c || null == (r = c.data) ? void 0 : r.consentCheckbox,
     label: a,
     checked: c.checked
   }))
@@ -5125,15 +5125,14 @@ var aS = ["companyDetails", "personalDetails", "billingAddress", "deliveryAddres
     switch (i) {
       case "gender":
       case "dateOfBirth":
-        return function(e, t) {
-          switch (e) {
-            case "gender":
-            case "dateOfBirth":
-              return t.get(e);
-            default:
-              return null
-          }
-        }(i, t)
+        var u = i;
+        switch (u) {
+          case "gender":
+          case "dateOfBirth":
+            return t.get(u);
+          default:
+            return null
+        }
     }
     return null
   },
@@ -5566,19 +5565,51 @@ var aS = ["companyDetails", "personalDetails", "billingAddress", "deliveryAddres
   aR = function(e) {
     return e.replace(/[^a-zA-Z0-9]/g, "").toUpperCase()
   },
-  aF = function() {
+  aF = function(e, t) {
+    if (null === t || !aP[t] || !aP[t].structure) return !1;
+    var n, r = aP[t].structure,
+      o = J()(n = r.match(/(.{3})/g)).call(n, function(e) {
+        var t, n, r = em()(e).call(e, 0, 1),
+          o = ee()(em()(e).call(e, 1), 10);
+        switch (r) {
+          case "A":
+            n = "0-9A-Za-z";
+            break;
+          case "B":
+            n = "0-9A-Z";
+            break;
+          case "C":
+            n = "A-Za-z";
+            break;
+          case "F":
+            n = "0-9";
+            break;
+          case "L":
+            n = "a-z";
+            break;
+          case "U":
+            n = "A-Z";
+            break;
+          case "W":
+            n = "0-9a-z"
+        }
+        return I()(t = "([".concat(n, "]{")).call(t, o, "})")
+      });
+    return new RegExp("^".concat(o.join(""), "$"))
+  },
+  aO = function() {
     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
     return e && aP[e] && aP[e].example ? aA(aP[e].example) : "AB00 1234 5678 9012 3456 7890"
   },
-  aO = function(e) {
+  aE = function(e) {
     return em()(e).call(e, 0, 2)
   };
 
-function aE(e) {
+function aI(e) {
   var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   this.status = e, this.code = t
 }
-var aI = function(e) {
+var aM = function(e) {
     var t, n, r, o = aR(e);
     return 1 === function(e) {
       for (var t, n = e; n.length > 2;) t = em()(n).call(n, 0, 9), n = ee()(t, 10) % 97 + em()(n).call(n, t.length);
@@ -5586,50 +5617,19 @@ var aI = function(e) {
     }((n = (n = (n = o).toUpperCase()).substr(4) + n.substr(0, 4), J()(t = n.split("")).call(t, function(e) {
       var t = e.charCodeAt(0);
       return t >= 65 && t <= 90 ? t - 65 + 10 : e
-    }).join(""))) && ((r = function(e, t) {
-      if (null === t || !aP[t] || !aP[t].structure) return !1;
-      var n, r = aP[t].structure,
-        o = J()(n = r.match(/(.{3})/g)).call(n, function(e) {
-          var t, n, r = em()(e).call(e, 0, 1),
-            o = ee()(em()(e).call(e, 1), 10);
-          switch (r) {
-            case "A":
-              n = "0-9A-Za-z";
-              break;
-            case "B":
-              n = "0-9A-Z";
-              break;
-            case "C":
-              n = "A-Za-z";
-              break;
-            case "F":
-              n = "0-9";
-              break;
-            case "L":
-              n = "a-z";
-              break;
-            case "U":
-              n = "A-Z";
-              break;
-            case "W":
-              n = "0-9a-z"
-          }
-          return I()(t = "([".concat(n, "]{")).call(t, o, "})")
-        });
-      return new RegExp("^".concat(o.join(""), "$"))
-    }(0, em()(o).call(o, 0, 2))).test && r.test(em()(o).call(o, 4)) || !1)
-  },
-  aM = function(e) {
-    var t, n = aR(e);
-    if (e.length < 2) return new aE("no-validate", "TOO_SHORT");
-    var r = !(!(t = aO(n)) || !aP[t]) && aP[t];
-    return r ? n.length > r.length ? new aE("invalid", "TOO_LONG") : n.length === r.length ? aI(e) ? new aE("valid", "VALID") : new aE("invalid", "INVALID_IBAN") : new aE("no-validate", "UNKNOWN") : new aE("invalid", "INVALID_COUNTRY")
+    }).join(""))) && ((r = aF(0, em()(o).call(o, 0, 2))).test && r.test(em()(o).call(o, 4)) || !1)
   },
   aT = function(e) {
+    var t, n = aR(e);
+    if (e.length < 2) return new aI("no-validate", "TOO_SHORT");
+    var r = !(!(t = aE(n)) || !aP[t]) && aP[t];
+    return r ? n.length > r.length ? new aI("invalid", "TOO_LONG") : n.length === r.length ? aM(e) ? new aI("valid", "VALID") : new aI("invalid", "INVALID_IBAN") : new aI("no-validate", "UNKNOWN") : new aI("invalid", "INVALID_COUNTRY")
+  },
+  aB = function(e) {
     return !rZ(e) || null
   };
 
-function aB(e, t) {
+function aD(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -5640,28 +5640,28 @@ function aB(e, t) {
   return n
 }
 
-function aD(e) {
+function aL(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = aB(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = aD(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = aB(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = aD(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var aL = {
+var aV = {
     isValid: !1,
     errorMessage: "ach.accountHolderNameField.invalid",
     error: "ach.accountHolderNameField.invalid"
   },
-  aV = {
+  aj = {
     isValid: !1,
     errorMessage: "sepaDirectDebit.ibanField.invalid",
     error: "sepaDirectDebit.ibanField.invalid"
   },
-  aj = function(e) {
+  aU = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -5685,37 +5685,37 @@ var aL = {
       if ((0, C.Z)(this, r), i = n.call(this, e), (0, w.Z)((0, eo.Z)(i), "ibanNumber", void 0), (0, w.Z)((0, eo.Z)(i), "setData", function(e, t, n) {
           i.setState(function(n) {
             return {
-              data: aD(aD({}, n.data), {}, (0, w.Z)({}, e, t))
+              data: aL(aL({}, n.data), {}, (0, w.Z)({}, e, t))
             }
           }, n)
         }), (0, w.Z)((0, eo.Z)(i), "setError", function(e, t, n) {
           i.setState(function(n) {
             return {
-              errors: aD(aD({}, n.errors), {}, (0, w.Z)({}, e, t))
+              errors: aL(aL({}, n.errors), {}, (0, w.Z)({}, e, t))
             }
           }, n)
         }), (0, w.Z)((0, eo.Z)(i), "setValid", function(e, t, n) {
           i.setState(function(n) {
             return {
-              valid: aD(aD({}, n.valid), {}, (0, w.Z)({}, e, t))
+              valid: aL(aL({}, n.valid), {}, (0, w.Z)({}, e, t))
             }
           }, n)
         }), (0, w.Z)((0, eo.Z)(i), "handleHolderInput", function(e) {
           i.setState(function(t) {
             return {
-              data: aD(aD({}, t.data), {}, {
+              data: aL(aL({}, t.data), {}, {
                 ownerName: e
               })
             }
           }, function() {
-            var e = aT(i.state.data.ownerName);
-            i.setError("holder", null == e || e ? null : aL, i.onChange)
+            var e = aB(i.state.data.ownerName);
+            i.setError("holder", null == e || e ? null : aV, i.onChange)
           })
         }), (0, w.Z)((0, eo.Z)(i), "handleIbanInput", function(e) {
           var t = aR(e.target.value),
             n = aA(t),
-            r = aM(n).status,
-            o = aO(t),
+            r = aT(n).status,
+            o = aE(t),
             a = function(e, t, n) {
               if (0 === e || !t.length) return 0;
               var r = t.length - n.length,
@@ -5728,14 +5728,14 @@ var aL = {
             }(e.target.selectionStart, n, i.state.data.ibanNumber);
           i.setState(function(e) {
             return {
-              data: aD(aD({}, e.data), {}, {
+              data: aL(aL({}, e.data), {}, {
                 ibanNumber: n,
                 countryCode: o
               }),
-              errors: aD(aD({}, e.errors), {}, {
-                iban: "invalid" === r ? aV : null
+              errors: aL(aL({}, e.errors), {}, {
+                iban: "invalid" === r ? aj : null
               }),
-              valid: aD(aD({}, e.valid), {}, {
+              valid: aL(aL({}, e.valid), {}, {
                 iban: "valid" === r
               })
             }
@@ -5745,15 +5745,15 @@ var aL = {
         }), (0, w.Z)((0, eo.Z)(i), "handleIbanBlur", function(e) {
           var t = e.target.value;
           if (t.length > 0) {
-            var n = aM(t).status;
-            i.setError("iban", "valid" !== n ? aV : null, i.onChange)
+            var n = aT(t).status;
+            i.setError("iban", "valid" !== n ? aj : null, i.onChange)
           } else i.setError("iban", null, i.onChange)
         }), i.state = {
           status: "ready",
           data: {
-            ownerName: (null == e || null === (t = e.data) || void 0 === t ? void 0 : t.ownerName) || "",
-            ibanNumber: (null == e || null === (o = e.data) || void 0 === o ? void 0 : o.ibanNumber) || "",
-            countryCode: (null == e || null === (a = e.data) || void 0 === a ? void 0 : a.countryCode) || ""
+            ownerName: (null == e || null == (t = e.data) ? void 0 : t.ownerName) || "",
+            ibanNumber: (null == e || null == (o = e.data) ? void 0 : o.ibanNumber) || "",
+            countryCode: (null == e || null == (a = e.data) ? void 0 : a.countryCode) || ""
           },
           isValid: !1,
           cursor: 0,
@@ -5764,8 +5764,8 @@ var aL = {
         i.state.data.ibanNumber = aA(s)
       }
       if (i.state.data.ibanNumber || i.state.data.ownerName) {
-        var c = i.props.holderName ? aT(i.state.data.ownerName) : "",
-          l = (i.state.data.ibanNumber ? "valid" === aM(i.state.data.ibanNumber).status : "") && c,
+        var c = i.props.holderName ? aB(i.state.data.ownerName) : "",
+          l = (i.state.data.ibanNumber ? "valid" === aT(i.state.data.ibanNumber).status : "") && c,
           u = {
             data: i.state.data,
             isValid: l
@@ -5784,8 +5784,8 @@ var aL = {
     }, {
       key: "onChange",
       value: function() {
-        var e = !this.props.holderName || aT(this.state.data.ownerName),
-          t = "valid" === aM(this.state.data.ibanNumber).status && e,
+        var e = !this.props.holderName || aB(this.state.data.ownerName),
+          t = "valid" === aT(this.state.data.ibanNumber).status && e,
           n = {
             data: this.state.data,
             isValid: t,
@@ -5796,9 +5796,9 @@ var aL = {
     }, {
       key: "showValidation",
       value: function() {
-        var e = aM(this.state.data.ibanNumber).status,
-          t = aT(this.state.data.ownerName);
-        this.setError("iban", "valid" !== e ? aV : null), this.setError("holder", t ? null : aL, this.onChange)
+        var e = aT(this.state.data.ibanNumber).status,
+          t = aB(this.state.data.ownerName);
+        this.setError("iban", "valid" !== e ? aj : null), this.setError("holder", t ? null : aV, this.onChange)
       }
     }, {
       key: "render",
@@ -5851,7 +5851,7 @@ var aL = {
           name: "ibanNumber",
           className: "adyen-checkout__iban-input__iban-number",
           classNameModifiers: ["large"],
-          placeholder: "ibanNumber" in r ? r.ibanNumber : aF(o),
+          placeholder: "ibanNumber" in r ? r.ibanNumber : aO(o),
           value: a.ibanNumber,
           onInput: this.handleIbanInput,
           "aria-invalid": !!this.state.errors.iban,
@@ -5865,7 +5865,7 @@ var aL = {
     }]), r
   }();
 
-function aU(e, t) {
+function aq(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -5874,26 +5874,26 @@ function aU(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(aj, "defaultProps", {
+}(0, w.Z)(aU, "defaultProps", {
   onChange: function() {},
   countryCode: null,
   holderName: !0,
   placeholders: {},
   label: null
 });
-var aq = function(e) {
+var aH = function(e) {
     var t, n = rd[e];
     return n || (n = D()(t = l()(rd)).call(t, function(t) {
       return rd[t] === e
     })) || e
   },
-  aH = function(e, t) {
+  aK = function(e, t) {
     var n, r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n, r, o = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = aU(Object(o), !0)).call(n, function(t) {
+        t % 2 ? N()(n = aq(Object(o), !0)).call(n, function(t) {
           (0, w.Z)(e, t, o[t])
-        }) : m() ? v()(e, m()(o)) : N()(r = aU(Object(o))).call(r, function(t) {
+        }) : m() ? v()(e, m()(o)) : N()(r = aq(Object(o))).call(r, function(t) {
           b()(e, t, h()(o, t))
         })
       }
@@ -5904,7 +5904,7 @@ var aq = function(e) {
       return (z()(r).call(r, "sf-") > -1 || z()(r).call(r, "gen.01") > -1) && (e[r] = t.get(r)), e
     }, {})), r
   },
-  aK = function(e, t) {
+  az = function(e, t) {
     var n, r, o, a, i, s, c, l = e.i18n,
       u = e.fieldTypeMappingFn,
       d = e.SRPanelRef,
@@ -5963,56 +5963,56 @@ var aq = function(e) {
       action: "none"
     }
   },
-  az = (0, ec.kr)({
+  aW = (0, ec.kr)({
     srPanel: null,
     setSRMessagesFromObjects: null,
     setSRMessagesFromStrings: null,
     clearSRPanel: null,
     shouldMoveFocusSR: null
   }),
-  aW = function(e, t) {
+  aY = function(e, t) {
     var n = [];
     return e && "function" == typeof e.querySelectorAll && (n = em()([]).call(e.querySelectorAll(t))), n
   },
-  aY = function(e, t) {
+  aG = function(e, t) {
     if (e) return e.querySelector(t)
   },
-  aG = function(e, t) {
+  a$ = function(e, t) {
     if (e) return e.getAttribute(t)
   },
-  a$ = function(e, t, n, r) {
+  aQ = function(e, t, n, r) {
     if ("function" != typeof e.addEventListener) {
       if (!e.attachEvent) throw Error(": Unable to bind ".concat(t, "-event"));
       e.attachEvent("on".concat(t), n)
     } else e.addEventListener(t, n, r)
   },
-  aQ = function(e, t, n, r) {
+  aJ = function(e, t, n, r) {
     if ("function" == typeof e.addEventListener) e.removeEventListener(t, n, r);
     else {
       if (!e.attachEvent) throw Error(": Unable to unbind ".concat(t, "-event"));
       e.detachEvent("on".concat(t), n)
     }
   },
-  aJ = function(e, t) {
-    var n = aY(document, e),
+  aX = function(e, t) {
+    var n = aG(document, e),
       r = "issuer" === t ? "issuer-list" : t;
     if ("country" === r || "stateOrProvince" === r || "issuer-list" === r) {
-      var o = aY(n, ".adyen-checkout__field--".concat(r, " .adyen-checkout__filter-input"));
+      var o = aG(n, ".adyen-checkout__field--".concat(r, " .adyen-checkout__filter-input"));
       null == o || o.focus()
     } else {
-      var a = aY(n, '[name="'.concat(r, '"]'));
+      var a = aG(n, '[name="'.concat(r, '"]'));
       null == a || a.focus()
     }
   };
 
-function aX(e) {
+function a0(e) {
   var t = t8();
   return t1(function() {
     t.current = e
   }, [e]), t.current
 }
 
-function a0(e, t, n) {
+function a1(e, t, n) {
   var r, o = n || "id";
   return 1 !== e.length || t || (r = e), e.length > (null == t ? void 0 : t.length) && (r = P()(e).call(e, function(e) {
     var n = e[o];
@@ -6021,15 +6021,15 @@ function a0(e, t, n) {
     })
   })), r
 }
-var a1 = function() {
+var a2 = function() {
     var e = nl().i18n;
     return (0, ec.h)("p", {
       className: "adyen-checkout-form-instruction"
     }, e.get("form.instruction"))
   },
-  a2 = ["companyDetails", "personalDetails", "bankAccount", "billingAddress", "deliveryAddress"];
+  a8 = ["companyDetails", "personalDetails", "bankAccount", "billingAddress", "deliveryAddress"];
 
-function a8(e, t) {
+function a4(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6040,31 +6040,31 @@ function a8(e, t) {
   return n
 }
 
-function a4(e) {
+function a6(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = a8(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = a4(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = a8(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = a4(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var a6 = {
+var a5 = {
   isValid: !1,
   errorMessage: "consent.checkbox.invalid",
   error: "consent.checkbox.invalid"
 };
 
-function a5(e) {
+function a3(e) {
   var t, n, r = e.countryCode,
     o = e.visibility,
     a = nl().i18n,
     i = t8({});
-  l()(i.current).length || null === (n = e.setComponentRef) || void 0 === n || n.call(e, i.current);
+  l()(i.current).length || null == (n = e.setComponentRef) || n.call(e, i.current);
   var s = t8(!1),
-    c = t5(az),
+    c = t5(aW),
     u = c.setSRMessagesFromObjects,
     d = c.setSRMessagesFromStrings,
     p = c.clearSRPanel,
@@ -6089,7 +6089,7 @@ function a5(e) {
       return !g[e]
     }),
     x = "editable" === o.deliveryAddress && "hidden" !== o.billingAddress,
-    A = tX(a4(a4({}, e.data), Z && {
+    A = tX(a6(a6({}, e.data), Z && {
       consentCheckbox: !1
     })),
     R = (0, q.Z)(A, 2),
@@ -6114,11 +6114,11 @@ function a5(e) {
   i.current.showValidation = function() {
     s.current = !0, N()(aS).call(aS, function(e) {
       C[e].current && C[e].current.showValidation()
-    }), D(a4({}, Z && {
-      consentCheckbox: F.consentCheckbox ? null : a6
+    }), D(a6({}, Z && {
+      consentCheckbox: F.consentCheckbox ? null : a5
     }))
   }, i.current.setStatus = G;
-  var et = aX(X);
+  var et = a0(X);
   t1(function() {
     var t, n, r, o, a, i, c, u, y, v, b = eg()(t = l()(g)).call(t, function(e) {
         return !g[e] || !!j[e]
@@ -6135,25 +6135,25 @@ function a5(e) {
       A = B.bankAccount,
       R = B.billingAddress,
       E = B.deliveryAddress,
-      M = (0, k.Z)(B, a2),
+      M = (0, k.Z)(B, a8),
       T = E ? Y()(v = e0()(E)).call(v, function(e, t) {
         var n, r = (0, q.Z)(t, 2),
           o = r[0],
           a = r[1];
         return a && (e[I()(n = "".concat(S)).call(n, o)] = a), e
       }, {}) : null,
-      D = a4(a4(a4(a4(a4(a4({}, "object" === (0, _.Z)(N) && N), "object" === (0, _.Z)(x) && x), "object" === (0, _.Z)(A) && A), "object" === (0, _.Z)(R) && R), "object" === (0, _.Z)(T) && T), M),
-      L = null !== (o = e.personalDetailsRequiredFields) && void 0 !== o ? o : oa,
+      D = a6(a6(a6(a6(a6(a6({}, "object" === (0, _.Z)(N) && N), "object" === (0, _.Z)(x) && x), "object" === (0, _.Z)(A) && A), "object" === (0, _.Z)(R) && R), "object" === (0, _.Z)(T) && T), M),
+      L = null != (o = e.personalDetailsRequiredFields) ? o : oa,
       V = P()(oa).call(oa, function(e) {
         return null == L ? void 0 : O()(L).call(L, e)
       }),
-      U = m.getAddressSchemaForCountryFlat(null === (a = F.billingAddress) || void 0 === a ? void 0 : a.country),
-      H = m.getAddressSchemaForCountryFlat(null === (i = F.deliveryAddress) || void 0 === i ? void 0 : i.country),
+      U = m.getAddressSchemaForCountryFlat(null == (a = F.billingAddress) ? void 0 : a.country),
+      H = m.getAddressSchemaForCountryFlat(null == (i = F.deliveryAddress) ? void 0 : i.country),
       K = J()(H).call(H, function(e) {
         return "".concat(S).concat(e)
       }),
       z = I()(rW).call(rW, V, ["holder", "iban"], U, K, ["consentCheckbox"]),
-      W = m.getAddressLabelsForCountry(null !== (c = null === (u = F.billingAddress) || void 0 === u ? void 0 : u.country) && void 0 !== c ? c : null === (y = F.deliveryAddress) || void 0 === y ? void 0 : y.country),
+      W = m.getAddressLabelsForCountry(null != (c = null == (u = F.billingAddress) ? void 0 : u.country) ? c : null == (y = F.deliveryAddress) ? void 0 : y.country),
       G = null == f ? void 0 : f({
         errors: D,
         isValidating: s.current,
@@ -6163,12 +6163,12 @@ function a5(e) {
       $ = null == G ? void 0 : G.currentErrorsSortedByLayout;
     switch (ee($), null == G ? void 0 : G.action) {
       case rf:
-        h && aJ(".adyen-checkout__open-invoice", G.fieldToFocus), eu()(function() {
+        h && aX(".adyen-checkout__open-invoice", G.fieldToFocus), eu()(function() {
           s.current = !1
         }, 300);
         break;
       case rm:
-        var Q = a0($, et, "field"),
+        var Q = a1($, et, "field"),
           X = null == Q ? void 0 : Q[0];
         X ? d("shopperEmail.invalid" === X.errorCode ? X.errorMessage : null) : p()
     }
@@ -6182,17 +6182,17 @@ function a5(e) {
   var en = function(e) {
     return function(t) {
       E(function(n) {
-        return a4(a4({}, n), {}, (0, w.Z)({}, e, t.data))
+        return a6(a6({}, n), {}, (0, w.Z)({}, e, t.data))
       }), U(function(n) {
-        return a4(a4({}, n), {}, (0, w.Z)({}, e, t.isValid))
+        return a6(a6({}, n), {}, (0, w.Z)({}, e, t.isValid))
       }), D(function(n) {
-        return a4(a4({}, n), {}, (0, w.Z)({}, e, t.errors))
+        return a6(a6({}, n), {}, (0, w.Z)({}, e, t.errors))
       })
     }
   };
   return (0, ec.h)("div", {
     className: "adyen-checkout__open-invoice"
-  }, e.showFormInstruction && (0, ec.h)(a1, null), g.companyDetails && (0, ec.h)(rY, {
+  }, e.showFormInstruction && (0, ec.h)(a2, null), g.companyDetails && (0, ec.h)(rY, {
     data: e.data.companyDetails,
     label: "companyDetails",
     onChange: en("companyDetails"),
@@ -6205,7 +6205,7 @@ function a5(e) {
     onChange: en("personalDetails"),
     setComponentRef: C.personalDetails,
     visibility: o.personalDetails
-  }), g.bankAccount && (0, ec.h)(aj, {
+  }), g.bankAccount && (0, ec.h)(aU, {
     holderName: !0,
     label: "bankAccount",
     data: F.bankAccount,
@@ -6232,7 +6232,7 @@ function a5(e) {
     name: "separateDeliveryAddress",
     onChange: function() {
       b(function(e) {
-        return a4(a4({}, e), {}, {
+        return a6(a6({}, e), {}, {
           deliveryAddress: !g.deliveryAddress
         })
       })
@@ -6252,15 +6252,15 @@ function a5(e) {
     onChange: function(e) {
       var t = e.target.checked;
       E(function(e) {
-        return a4(a4({}, e), {}, {
+        return a6(a6({}, e), {}, {
           consentCheckbox: t
         })
       }), U(function(e) {
-        return a4(a4({}, e), {}, {
+        return a6(a6({}, e), {}, {
           consentCheckbox: t
         })
       }), D(function(e) {
-        return a4(a4({}, e), {}, {
+        return a6(a6({}, e), {}, {
           consentCheckbox: !t
         })
       })
@@ -6272,7 +6272,7 @@ function a5(e) {
     label: a.get("confirmPurchase")
   }))
 }
-var a3 = function(e) {
+var a7 = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -6326,25 +6326,25 @@ var a3 = function(e) {
       }
     }]), r
   }(),
-  a7 = Object.prototype.toString;
+  a9 = Object.prototype.toString;
 
-function a9(e) {
+function ie(e) {
   return "object" === (0, _.Z)(e) && null !== e && "[object Array]" === Object.prototype.toString.call(e)
 }
 
-function ie(e) {
+function it(e) {
   return null != e
 }
 
-function it(e) {
-  return !1 !== e && ie(e)
+function ir(e) {
+  return !1 !== e && it(e)
 }
 
-function ir(e) {
+function io(e) {
   return !!e && "object" === (0, _.Z)(e)
 }
 
-function io() {
+function ia() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
   var r = t.shift();
   return function() {
@@ -6352,16 +6352,16 @@ function io() {
     return r.apply(this, I()(t).call(t, n))
   }
 }
-var ia = function(e) {
+var ii = function(e) {
   var t = e.srPanel,
     n = e.children,
     r = nl().i18n,
     o = t.moveFocus;
-  return (0, ec.h)(az.Provider, {
+  return (0, ec.h)(aW.Provider, {
     value: {
       srPanel: t,
       setSRMessagesFromObjects: function(e) {
-        return io(aK, {
+        return ia(az, {
           SRPanelRef: t,
           i18n: r,
           fieldTypeMappingFn: e.fieldTypeMappingFn
@@ -6378,7 +6378,7 @@ var ia = function(e) {
   }, n)
 };
 
-function ii(e, t) {
+function is(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6389,18 +6389,18 @@ function ii(e, t) {
   return n
 }
 
-function is(e) {
+function ic(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = ii(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = is(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = ii(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = is(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var ic = function(e) {
+var il = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -6430,15 +6430,15 @@ var ic = function(e) {
   }, {
     key: "formatProps",
     value: function(e) {
-      var t, n = e.countryCode || (null === (t = e.data) || void 0 === t || null === (t = t.billingAddress) || void 0 === t ? void 0 : t.countryCode);
-      return is(is({}, e), {}, {
+      var t, n = e.countryCode || (null == (t = e.data) || null == (t = t.billingAddress) ? void 0 : t.countryCode);
+      return ic(ic({}, e), {}, {
         allowedCountries: [n],
-        visibility: is(is({}, r.defaultProps.visibility), e.visibility),
-        data: is(is({}, e.data), {}, {
-          billingAddress: is(is({}, e.data.billingAddress), {}, {
+        visibility: ic(ic({}, r.defaultProps.visibility), e.visibility),
+        data: ic(ic({}, e.data), {}, {
+          billingAddress: ic(ic({}, e.data.billingAddress), {}, {
             country: n
           }),
-          deliveryAddress: is(is({}, e.data.deliveryAddress), {}, {
+          deliveryAddress: ic(ic({}, e.data.deliveryAddress), {}, {
             country: n
           })
         })
@@ -6454,7 +6454,7 @@ var ic = function(e) {
         o = t.billingAddress,
         a = t.deliveryAddress,
         i = t.bankAccount;
-      return is(is(is(is(is({
+      return ic(ic(ic(ic(ic({
         paymentMethod: {
           type: this.constructor.type
         }
@@ -6473,13 +6473,13 @@ var ic = function(e) {
   }, {
     key: "render",
     value: function() {
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ia, {
+      }, (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(a5, (0, er.Z)({
+      }, (0, ec.h)(a3, (0, er.Z)({
         setComponentRef: this.setComponentRef
       }, this.props, this.state, {
         onChange: this.setState,
@@ -6490,7 +6490,7 @@ var ic = function(e) {
   }]), r
 }();
 
-function il(e) {
+function iu(e) {
   var t = nl().i18n,
     n = t.get("paymentConditions"),
     r = t.get("afterPay.agreement").split("%@"),
@@ -6505,7 +6505,7 @@ function il(e) {
   }, n), i) : (0, ec.h)("span", {
     className: "adyen-checkout__checkbox__label"
   }, t.get("privacyPolicy"))
-}(0, w.Z)(ic, "defaultProps", {
+}(0, w.Z)(il, "defaultProps", {
   onChange: function() {},
   data: {
     companyDetails: {},
@@ -6523,9 +6523,9 @@ function il(e) {
   },
   showFormInstruction: !0
 });
-var iu = ["BE", "NL"];
+var id = ["BE", "NL"];
 
-function id(e, t) {
+function ip(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6536,19 +6536,19 @@ function id(e, t) {
   return n
 }
 
-function ip(e) {
+function ih(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = id(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ip(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = id(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ip(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var ih = function(e) {
-  (0, ea.Z)(r, ic);
+var im = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -6573,17 +6573,17 @@ var ih = function(e) {
     key: "formatProps",
     value: function(e) {
       var t, n, o, a;
-      return ip(ip({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : iu,
-        consentCheckboxLabel: (0, ec.h)(il, {
-          url: (n = e.countryCode, "en" === (null == (o = null === (t = e.i18n) || void 0 === t ? void 0 : t.locale) ? void 0 : em()(a = o.toLowerCase()).call(a, 0, 2)) ? "https://www.afterpay.nl/en/algemeen/pay-with-afterpay/payment-conditions" : "be" === (null == n ? void 0 : n.toLowerCase()) ? "https://www.afterpay.be/be/footer/betalen-met-afterpay/betalingsvoorwaarden" : "https://www.afterpay.nl/nl/algemeen/betalen-met-afterpay/betalingsvoorwaarden")
+      return ih(ih({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : id,
+        consentCheckboxLabel: (0, ec.h)(iu, {
+          url: (n = e.countryCode, "en" === (null == (o = null == (t = e.i18n) ? void 0 : t.locale) ? void 0 : em()(a = o.toLowerCase()).call(a, 0, 2)) ? "https://www.afterpay.nl/en/algemeen/pay-with-afterpay/payment-conditions" : "be" === (null == n ? void 0 : n.toLowerCase()) ? "https://www.afterpay.be/be/footer/betalen-met-afterpay/betalingsvoorwaarden" : "https://www.afterpay.nl/nl/algemeen/betalen-met-afterpay/betalingsvoorwaarden")
         })
       })
     }
   }]), r
 }();
 
-function im(e, t) {
+function iy(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6594,19 +6594,19 @@ function im(e, t) {
   return n
 }
 
-function iy(e) {
+function iv(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = im(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iy(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = im(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iy(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(ih, "type", "afterpay_default");
-var iv = function(e) {
-  (0, ea.Z)(r, ic);
+}(0, w.Z)(im, "type", "afterpay_default");
+var ig = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -6630,9 +6630,9 @@ var iv = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return iy(iy({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : iu,
-        consentCheckboxLabel: (0, ec.h)(il, {
+      return iv(iv({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : id,
+        consentCheckboxLabel: (0, ec.h)(iu, {
           url: "https://www.afterpay.nl/nl/algemeen/zakelijke-partners/betalingsvoorwaarden-zakelijk"
         })
       })
@@ -6640,7 +6640,7 @@ var iv = function(e) {
   }]), r
 }();
 
-function ig() {
+function ib() {
   var e = tO(window, "screen.colorDepth") || "",
     t = !!tO(window, "navigator.javaEnabled") && window.navigator.javaEnabled(),
     n = tO(window, "screen.height") || "",
@@ -6656,7 +6656,7 @@ function ig() {
     userAgent: o,
     timeZoneOffset: (new Date).getTimezoneOffset()
   }
-}(0, w.Z)(iv, "type", "afterpay_b2b"), (0, w.Z)(iv, "defaultProps", {
+}(0, w.Z)(ig, "type", "afterpay_b2b"), (0, w.Z)(ig, "defaultProps", {
   onChange: function() {},
   data: {
     companyDetails: {},
@@ -6672,15 +6672,15 @@ function ig() {
   },
   showFormInstruction: !0
 });
-var ib = {
+var i_ = {
     EU: "EUR",
     UK: "GBP",
     US: "USD"
   },
-  i_ = ["en_GB", "de_DE", "fr_FR", "it_IT", "es_ES"],
-  ik = ["en_US"];
+  ik = ["en_GB", "de_DE", "fr_FR", "it_IT", "es_ES"],
+  iC = ["en_US"];
 
-function iC(e, t) {
+function iZ(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6691,19 +6691,19 @@ function iC(e, t) {
   return n
 }
 
-function iZ(e) {
+function iw(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iC(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iZ(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iC(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iZ(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function iw(e, t, n) {
+function iS(e, t, n) {
   var r;
   return o6({
     loadingContext: e,
@@ -6711,7 +6711,7 @@ function iw(e, t, n) {
   }, n)
 }
 
-function iS(e, t) {
+function iN(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6722,19 +6722,19 @@ function iS(e, t) {
   return n
 }
 
-function iN(e) {
+function ix(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iS(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iN(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iS(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iN(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function ix(e) {
+function iP(e) {
   var t, n, r, o, a, i, s, c, l, u, d, p, h, f, m, y, v = this,
     g = nl().loadingContext,
     b = e.amazonRef,
@@ -6744,44 +6744,44 @@ function ix(e) {
     Z = (0, q.Z)(C, 2),
     w = Z[0],
     S = Z[1],
-    N = (n = e.addressDetails, r = e.cancelUrl, o = e.checkoutMode, a = e.deliverySpecifications, i = e.returnUrl, s = e.merchantMetadata, c = e.chargePermissionType, l = e.recurringMetadata, u = e.configuration.storeId, p = (d = "ProcessOrder" === o) ? {
-      amount: String(tA((t = e.amount).value, t.currency)),
-      currencyCode: t.currency
-    } : null, iZ(iZ(iZ(iZ(iZ({
-      storeId: u,
-      chargePermissionType: c,
-      webCheckoutDetails: iZ(iZ(iZ({}, d ? {
-        checkoutResultReturnUrl: i
+    N = (a = e.addressDetails, i = e.cancelUrl, s = e.checkoutMode, c = e.deliverySpecifications, l = e.returnUrl, u = e.merchantMetadata, d = e.chargePermissionType, p = e.recurringMetadata, h = e.configuration.storeId, m = (f = "ProcessOrder" === s) ? {
+      amount: String(tA((o = e.amount).value, o.currency)),
+      currencyCode: o.currency
+    } : null, iw(iw(iw(iw(iw({
+      storeId: h,
+      chargePermissionType: d,
+      webCheckoutDetails: iw(iw(iw({}, f ? {
+        checkoutResultReturnUrl: l
       } : {
-        checkoutReviewReturnUrl: i
-      }), r && {
-        checkoutCancelUrl: r
-      }), d && {
-        checkoutMode: o
+        checkoutReviewReturnUrl: l
+      }), i && {
+        checkoutCancelUrl: i
+      }), f && {
+        checkoutMode: s
       })
-    }, d && {
+    }, f && {
       paymentDetails: {
-        chargeAmount: p,
+        chargeAmount: m,
         paymentIntent: "Confirm",
-        presentmentCurrency: p.currencyCode,
-        totalOrderAmount: p
+        presentmentCurrency: m.currencyCode,
+        totalOrderAmount: m
       }
-    }), l && {
-      recurringMetadata: l
-    }), s && {
-      merchantMetadata: s
+    }), p && {
+      recurringMetadata: p
+    }), u && {
+      merchantMetadata: u
+    }), c && {
+      deliverySpecifications: c
     }), a && {
-      deliverySpecifications: a
-    }), n && {
-      addressDetails: n
+      addressDetails: a
     })),
-    x = iZ(iZ(iZ({}, e.buttonColor && {
+    x = iw(iw(iw({}, e.buttonColor && {
       buttonColor: e.buttonColor
     }), e.design && {
       design: "noTagline" === e.design ? "C0001" : null
     }), {}, {
-      checkoutLanguage: (f = e.locale, y = "US" === (m = e.configuration.region) ? ik : i_, O()(y).call(y, f) ? f : "US" === m ? "en_US" : "en_GB"),
-      ledgerCurrency: ib[e.configuration.region] || e.currency || (null === (h = e.amount) || void 0 === h ? void 0 : h.currency),
+      checkoutLanguage: (t = e.locale, r = "US" === (n = e.configuration.region) ? iC : ik, O()(r).call(r, t) ? t : "US" === n ? "en_US" : "en_GB"),
+      ledgerCurrency: i_[e.configuration.region] || e.currency || (null == (y = e.amount) ? void 0 : y.currency),
       merchantId: e.configuration.merchantId,
       productType: e.productType,
       placement: e.placement,
@@ -6798,7 +6798,7 @@ function ix(e) {
       publicKeyId: k.publicKeyId,
       signature: w
     };
-    b.Pay.initCheckout(iN(iN({}, x), {}, {
+    b.Pay.initCheckout(ix(ix({}, x), {}, {
       createCheckoutSessionConfig: e
     }))
   }, t1(function() {
@@ -6820,7 +6820,7 @@ function ix(e) {
   }) : null
 }
 
-function iP(e) {
+function iA(e) {
   var t = nl().i18n,
     n = e.amazonRef,
     r = e.amazonCheckoutSessionId;
@@ -6835,7 +6835,7 @@ function iP(e) {
   }, t.get("amazonpay.changePaymentDetails"))
 }
 
-function iA(e) {
+function iR(e) {
   var t = this,
     n = nl(),
     r = n.i18n,
@@ -6861,7 +6861,7 @@ function iA(e) {
       path: I()(r = "".concat("v1/AmazonPayUtility/updateCheckoutSession", "?clientKey=")).call(r, s)
     }, n)).then(function(e) {
       var t;
-      if (null == e || null === (t = e.action) || void 0 === t || !t.type) return console.error(e.errorMessage || "Could not get the AmazonPay URL");
+      if (null == e || null == (t = e.action) || !t.type) return console.error(e.errorMessage || "Could not get the AmazonPay URL");
       "redirect" === e.action.type && window.location.assign(e.action.url)
     }).catch(function(n) {
       e.onError && e.onError(n, t.componentRef)
@@ -6873,7 +6873,7 @@ function iA(e) {
   })
 }
 
-function iR(e) {
+function iF(e) {
   var t = nl().i18n;
   return (0, ec.h)("button", {
     type: "button",
@@ -6885,7 +6885,7 @@ function iR(e) {
     }
   }, t.get("amazonpay.signout"))
 }
-var iF = (0, Z.Z)(function e(t) {
+var iO = (0, Z.Z)(function e(t) {
   var n = this,
     r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "body",
     o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
@@ -6911,7 +6911,7 @@ var iF = (0, Z.Z)(function e(t) {
   }), this.src = t, this.node = r, this.attributes = o, this.dataAttributes = a
 });
 
-function iO(e) {
+function iE(e) {
   var t, n, r = tX("pending"),
     o = (0, q.Z)(r, 2),
     a = o[0],
@@ -6924,7 +6924,7 @@ function iO(e) {
   return this.submit = function() {
     return s.current && s.current.initCheckout ? s.current.initCheckout() : c.current && c.current.createOrder ? c.current.createOrder() : void 0
   }, t1(function() {
-    var t = new iF("US" === e.configuration.region ? "https://static-na.payments-amazon.com/checkout.js" : "https://static-eu.payments-amazon.com/checkout.js");
+    var t = new iO("US" === e.configuration.region ? "https://static-na.payments-amazon.com/checkout.js" : "https://static-eu.payments-amazon.com/checkout.js");
     return window.amazon ? l() : t.load().then(l),
       function() {
         t.remove()
@@ -6935,33 +6935,33 @@ function iO(e) {
     className: "adyen-checkout__amazonpay__status adyen-checkout__amazonpay__status--pending"
   }, (0, ec.h)(tq, null))) : e.showSignOutButton ? (0, ec.h)("div", {
     className: "adyen-checkout__amazonpay"
-  }, (0, ec.h)(iR, {
+  }, (0, ec.h)(iF, {
     amazonRef: window.amazon,
     onSignOut: e.onSignOut
   })) : e.amazonCheckoutSessionId ? (0, ec.h)("div", {
     className: "adyen-checkout__amazonpay"
-  }, e.showOrderButton && (0, ec.h)(iA, {
+  }, e.showOrderButton && (0, ec.h)(iR, {
     amazonCheckoutSessionId: e.amazonCheckoutSessionId,
     amount: e.amount,
     chargePermissionType: e.chargePermissionType,
     recurringMetadata: e.recurringMetadata,
     clientKey: e.clientKey,
     onError: e.onError,
-    publicKeyId: null === (t = e.configuration) || void 0 === t ? void 0 : t.publicKeyId,
-    region: null === (n = e.configuration) || void 0 === n ? void 0 : n.region,
+    publicKeyId: null == (t = e.configuration) ? void 0 : t.publicKeyId,
+    region: null == (n = e.configuration) ? void 0 : n.region,
     returnUrl: e.returnUrl,
     ref: c
-  }), e.showChangePaymentDetailsButton && (0, ec.h)(iP, {
+  }), e.showChangePaymentDetailsButton && (0, ec.h)(iA, {
     amazonCheckoutSessionId: e.amazonCheckoutSessionId,
     amazonRef: window.amazon
   })) : (0, ec.h)("div", {
     className: "adyen-checkout__amazonpay"
-  }, (0, ec.h)(ix, (0, er.Z)({}, e, {
+  }, (0, ec.h)(iP, (0, er.Z)({}, e, {
     amazonRef: window.amazon,
     ref: s
   })))
 }
-var iE = {
+var iI = {
   cancelUrl: "undefined" != typeof window ? window.location.href : "",
   configuration: {},
   environment: "TEST",
@@ -6981,7 +6981,7 @@ var iE = {
   }
 };
 
-function iI(e, t) {
+function iM(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -6992,18 +6992,18 @@ function iI(e, t) {
   return n
 }
 
-function iM(e) {
+function iT(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iI(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iM(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iI(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iM(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var iT = function(e) {
+var iB = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -7028,7 +7028,7 @@ var iT = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return iM(iM({}, e), {}, {
+      return iT(iT({}, e), {}, {
         checkoutMode: e.isDropin ? "ProcessOrder" : e.checkoutMode,
         environment: e.environment.toUpperCase(),
         locale: e.locale.replace("-", "_"),
@@ -7040,7 +7040,7 @@ var iT = function(e) {
     value: function() {
       var e = this.props.amazonCheckoutSessionId;
       return {
-        paymentMethod: iM({
+        paymentMethod: iT({
           type: r.type
         }, e && {
           checkoutSessionId: e
@@ -7057,7 +7057,7 @@ var iT = function(e) {
         r = void 0 === n ? {} : n,
         o = e.loadingContext,
         a = e.clientKey;
-      return t ? iw(o, a, {
+      return t ? iS(o, a, {
         checkoutSessionId: t,
         getDeliveryAddress: !0,
         publicKeyId: r.publicKeyId,
@@ -7075,7 +7075,7 @@ var iT = function(e) {
         a = t.loadingContext,
         i = t.clientKey;
       if (!n) return console.error("Could handle the decline flow. Missing checkoutSessionId.");
-      iw(a, i, {
+      iS(a, i, {
         checkoutSessionId: n,
         getDeclineFlowUrl: !0,
         publicKeyId: o.publicKeyId,
@@ -7096,7 +7096,7 @@ var iT = function(e) {
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }, {
     key: "submit",
@@ -7113,11 +7113,11 @@ var iT = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(iO, (0, er.Z)({
+      }, (0, ec.h)(iE, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -7125,8 +7125,8 @@ var iT = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(iT, "type", "amazonpay"), (0, w.Z)(iT, "defaultProps", iE);
-var iB = {
+(0, w.Z)(iB, "type", "amazonpay"), (0, w.Z)(iB, "defaultProps", iI);
+var iD = {
     "apple-pay": "ApplePayButton-module_apple-pay__gYjuP",
     "apple-pay-button": "ApplePayButton-module_apple-pay-button__l5g-d",
     "apple-pay-button-black": "ApplePayButton-module_apple-pay-button-black__istwW",
@@ -7147,7 +7147,7 @@ var iB = {
     "apple-pay-button--type-tip": "ApplePayButton-module_apple-pay-button--type-tip__bdzGK",
     "apple-pay-button--type-top-up": "ApplePayButton-module_apple-pay-button--type-top-up__Eb3qR"
   },
-  iD = function(e) {
+  iL = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -7178,14 +7178,14 @@ var iB = {
           type: "button",
           "aria-label": this.props.i18n.get("payButton"),
           lang: this.props.i18n.languageCode,
-          className: ep()("adyen-checkout__applepay__button", "adyen-checkout__applepay__button--".concat(t), "adyen-checkout__applepay__button--".concat(n), [iB["apple-pay"]], [iB["apple-pay-button"]], [iB["apple-pay-button-".concat(t)]], [iB["apple-pay-button--type-".concat(n)]]),
+          className: ep()("adyen-checkout__applepay__button", "adyen-checkout__applepay__button--".concat(t), "adyen-checkout__applepay__button--".concat(n), [iD["apple-pay"]], [iD["apple-pay-button"]], [iD["apple-pay-button-".concat(t)]], [iD["apple-pay-button--type-".concat(n)]]),
           onClick: this.props.onClick
         })
       }
     }]), r
   }();
 
-function iL(e, t) {
+function iV(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7196,22 +7196,22 @@ function iL(e, t) {
   return n
 }
 
-function iV(e) {
+function ij(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iL(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iV(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iL(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iV(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(iD, "defaultProps", {
+}(0, w.Z)(iL, "defaultProps", {
   onClick: function() {},
   buttonColor: "black",
   buttonType: "plain"
 });
-var ij = function() {
+var iU = function() {
     function e(t, n) {
       var r = this;
       (0, C.Z)(this, e), (0, w.Z)(this, "session", void 0), (0, w.Z)(this, "options", void 0), this.options = n, this.session = new ApplePaySession(n.version, t), this.session.onvalidatemerchant = function(e) {
@@ -7253,13 +7253,13 @@ var ij = function() {
           return t(n, r, e)
         }).then(function(e) {
           var t;
-          n.session.completePayment(iV(iV({}, e), {}, {
-            status: null !== (t = null == e ? void 0 : e.status) && void 0 !== t ? t : ApplePaySession.STATUS_SUCCESS
+          n.session.completePayment(ij(ij({}, e), {}, {
+            status: null != (t = null == e ? void 0 : e.status) ? t : ApplePaySession.STATUS_SUCCESS
           }))
         }).catch(function(e) {
           var t;
-          n.session.completePayment(iV(iV({}, e), {}, {
-            status: null !== (t = null == e ? void 0 : e.status) && void 0 !== t ? t : ApplePaySession.STATUS_FAILURE
+          n.session.completePayment(ij(ij({}, e), {}, {
+            status: null != (t = null == e ? void 0 : e.status) ? t : ApplePaySession.STATUS_FAILURE
           }))
         })
       }
@@ -7306,12 +7306,12 @@ var ij = function() {
       }
     }]), e
   }(),
-  iU = ["countryCode", "companyName", "amount"],
-  iq = function(e) {
+  iq = ["countryCode", "companyName", "amount"],
+  iH = function(e) {
     var t = e.countryCode;
     e.companyName;
     var n = e.amount,
-      r = (0, k.Z)(e, iU),
+      r = (0, k.Z)(e, iq),
       o = String(tA(n.value, n.currency));
     return {
       countryCode: t,
@@ -7336,7 +7336,7 @@ var ij = function() {
     }
   };
 
-function iH(e, t) {
+function iK(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7347,18 +7347,18 @@ function iH(e, t) {
   return n
 }
 
-function iK(e) {
+function iz(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iH(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iK(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iH(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iK(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var iz = function(e) {
+var iW = function(e) {
   (0, ea.Z)(o, nk);
   var t, n, r = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -7394,7 +7394,7 @@ var iz = function(e) {
             return console.warn(e), null
           }
         }(0),
-        i = null !== (t = e.brands) && void 0 !== t && t.length ? (r = e.brands, o = {
+        i = null != (t = e.brands) && t.length ? (r = e.brands, o = {
           mc: "masterCard",
           amex: "amex",
           visa: "visa",
@@ -7411,18 +7411,18 @@ var iz = function(e) {
         }, Y()(r).call(r, function(e, t) {
           return o[t] && !O()(e).call(e, o[t]) && e.push(o[t]), e
         }, [])) : e.supportedNetworks;
-      return iK(iK({}, e), {}, {
+      return iz(iz({}, e), {}, {
         configuration: e.configuration,
         supportedNetworks: i,
         version: a,
-        totalPriceLabel: e.totalPriceLabel || (null === (n = e.configuration) || void 0 === n ? void 0 : n.merchantName)
+        totalPriceLabel: e.totalPriceLabel || (null == (n = e.configuration) ? void 0 : n.merchantName)
       })
     }
   }, {
     key: "formatData",
     value: function() {
       return {
-        paymentMethod: iK({
+        paymentMethod: iz({
           type: o.type
         }, this.state)
       }
@@ -7442,7 +7442,7 @@ var iz = function(e) {
         i = n.onPaymentMethodSelected,
         s = n.onShippingMethodSelected,
         c = n.onShippingContactSelected,
-        l = new ij(iq(iK({
+        l = new iU(iH(iz({
           companyName: this.props.configuration.merchantName
         }, this.props)), {
           version: r,
@@ -7462,7 +7462,7 @@ var iz = function(e) {
           onValidateMerchant: a || this.validateMerchant,
           onPaymentAuthorized: function(n, r, a) {
             var i;
-            null != a && null !== (i = a.payment) && void 0 !== i && null !== (i = i.token) && void 0 !== i && i.paymentData && t.setState({
+            null != a && null != (i = a.payment) && null != (i = i.token) && i.paymentData && t.setState({
               applePayToken: btoa(V()(a.payment.token.paymentData))
             }), (0, ey.Z)((0, es.Z)(o.prototype), "submit", t).call(t), e(n, r, a)
           }
@@ -7527,7 +7527,7 @@ var iz = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.showPayButton ? (0, ec.h)(iD, {
+      return this.props.showPayButton ? (0, ec.h)(iL, {
         i18n: this.props.i18n,
         buttonColor: this.props.buttonColor,
         buttonType: this.props.buttonType,
@@ -7539,7 +7539,7 @@ var iz = function(e) {
   }]), o
 }();
 
-function iW(e, t) {
+function iY(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7550,17 +7550,17 @@ function iW(e, t) {
   return n
 }
 
-function iY(e) {
+function iG(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iW(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iY(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iW(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iY(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(iz, "type", "applepay"), (0, w.Z)(iz, "defaultProps", {
+}(0, w.Z)(iW, "type", "applepay"), (0, w.Z)(iW, "defaultProps", {
   amount: {
     currency: "USD",
     value: 0
@@ -7597,21 +7597,21 @@ function iY(e) {
   buttonColor: "black",
   showPayButton: !0
 });
-var iG = {
+var i$ = {
     labels: (0, w.Z)({}, oc, "address"),
     schema: [oc, [
       [oh, 70],
       [ou, 30]
     ]]
   },
-  i$ = ["ID", "PH", "TH", "VN", "JP", "TW", "KR", "SG", "MY", "HK"],
-  iQ = Y()(oy).call(oy, function(e, t) {
-    return iY(iY({}, e), {}, (0, w.Z)({}, t, iG))
+  iQ = ["ID", "PH", "TH", "VN", "JP", "TW", "KR", "SG", "MY", "HK"],
+  iJ = Y()(oy).call(oy, function(e, t) {
+    return iG(iG({}, e), {}, (0, w.Z)({}, t, i$))
   }, {
-    default: iG
+    default: i$
   });
 
-function iJ(e, t) {
+function iX(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7622,19 +7622,19 @@ function iJ(e, t) {
   return n
 }
 
-function iX(e) {
+function i0(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = iJ(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = iX(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = iJ(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = iX(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var i0 = function(e) {
-  (0, ea.Z)(r, ic);
+var i1 = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -7658,22 +7658,22 @@ var i0 = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return iX(iX({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, iX(iX({}, e), {
+      return i0(i0({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, i0(i0({}, e), {
         visibility: {
           deliveryAddress: "hidden",
           companyDetails: "hidden"
         }
       }))), {}, {
-        allowedCountries: i$,
+        allowedCountries: iQ,
         personalDetailsRequiredFields: ["firstName", "lastName", "telephoneNumber"],
         billingAddressRequiredFields: ["country", "street", "postalCode"],
-        billingAddressSpecification: iQ
+        billingAddressSpecification: iJ
       })
     }
   }]), r
 }();
 
-function i1(e) {
+function i2(e) {
   var t = e.name,
     n = e.id,
     r = e.icon,
@@ -7696,8 +7696,8 @@ function i1(e) {
   }), (0, ec.h)("span", {
     className: "adyen-checkout__issuer-button-text"
   }, t))
-}(0, w.Z)(i0, "type", "atome");
-var i2 = function(e) {
+}(0, w.Z)(i1, "type", "atome");
+var i8 = function(e) {
   var t = e.items,
     n = void 0 === t ? [] : t,
     r = e.selectedIssuerId,
@@ -7714,7 +7714,7 @@ var i2 = function(e) {
     role: "group",
     "aria-label": a.get("idealIssuer.selectField.placeholder")
   }, J()(n).call(n, function(e) {
-    return (0, ec.h)(i1, (0, er.Z)({
+    return (0, ec.h)(i2, (0, er.Z)({
       key: e.id
     }, e, {
       selected: r === e.id,
@@ -7723,7 +7723,7 @@ var i2 = function(e) {
   }))
 };
 
-function i8(e) {
+function i4(e) {
   var t, n = e.label,
     r = e.classNames,
     o = nl().i18n;
@@ -7731,7 +7731,7 @@ function i8(e) {
     className: ep().apply(void 0, I()(t = ["adyen-checkout__content-separator"]).call(t, (0, H.Z)(void 0 === r ? [] : r)))
   }, o.get(void 0 === n ? "qrCodeOrApp" : n))
 }
-var i4 = function(e) {
+var i6 = function(e) {
   var t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
   try {
     t = new(e7())(e)
@@ -7741,12 +7741,12 @@ var i4 = function(e) {
   return n && "http:" === t.protocol || "https:" === t.protocol
 };
 
-function i6(e) {
+function i5(e) {
   var t = e.message,
     n = e.urls,
     r = "string" == typeof t,
     o = eg()(n).call(n, function(e) {
-      return "string" == typeof e && i4(e)
+      return "string" == typeof e && i6(e)
     });
   return r && o ? (0, ec.h)("span", {
     className: "adyen-checkout-disclaimer__label"
@@ -7761,9 +7761,9 @@ function i6(e) {
     }
   }))) : null
 }
-var i5 = ["items", "placeholder", "issuer", "highlightedIds"];
+var i3 = ["items", "placeholder", "issuer", "highlightedIds"];
 
-function i3(e, t) {
+function i7(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7773,16 +7773,16 @@ function i3(e, t) {
   }
   return n
 }
-var i7 = function(e, t) {
+var i9 = function(e, t) {
     var n, r, o = e.issuer,
       a = e.items,
-      i = null === (n = D()(a).call(a, function(e) {
+      i = null == (n = D()(a).call(a, function(e) {
         return e.id === o
-      })) || void 0 === n ? void 0 : n.name;
+      })) ? void 0 : n.name;
     return o && i ? I()(r = "".concat(t.get("continueTo"), " ")).call(r, i) : t.get("continue")
   },
-  i9 = ["issuer"],
-  se = {
+  se = ["issuer"],
+  st = {
     issuer: {
       validate: function(e) {
         return !!e && e.length > 0
@@ -7791,22 +7791,22 @@ var i7 = function(e, t) {
       modes: ["blur"]
     }
   },
-  st = ((sg = st || {})[sg.ButtonGroup = 0] = "ButtonGroup", sg[sg.Dropdown = 1] = "Dropdown", sg);
+  sn = ((sb = sn || {})[sb.ButtonGroup = 0] = "ButtonGroup", sb[sb.Dropdown = 1] = "Dropdown", sb);
 
-function sn(e) {
+function sr(e) {
   var t, n, r = e.items,
     o = e.placeholder,
     a = e.issuer,
     i = e.highlightedIds,
     s = void 0 === i ? [] : i,
-    c = (0, k.Z)(e, i5),
+    c = (0, k.Z)(e, i3),
     l = nl().i18n,
     u = rV({
-      schema: i9,
+      schema: se,
       defaultData: {
         issuer: a
       },
-      rules: se
+      rules: st
     }),
     d = u.handleChangeFor,
     p = u.triggerValidation,
@@ -7818,11 +7818,11 @@ function sn(e) {
     Z = (0, q.Z)(C, 2),
     S = Z[0],
     x = Z[1],
-    P = tX(st.Dropdown),
+    P = tX(sn.Dropdown),
     A = (0, q.Z)(P, 2),
     R = A[0],
     F = A[1],
-    E = t5(az),
+    E = t5(aW),
     M = E.setSRMessagesFromObjects,
     T = E.shouldMoveFocusSR,
     B = null == M ? void 0 : M({});
@@ -7845,7 +7845,7 @@ function sn(e) {
       errors: g,
       isValidating: !0
     });
-    (null == e ? void 0 : e.action) === rf && T && aJ(".adyen-checkout__issuer-list", e.fieldToFocus)
+    (null == e ? void 0 : e.action) === rf && T && aX(".adyen-checkout__issuer-list", e.fieldToFocus)
   }, [f, y, g, _]), this.showValidation = function() {
     p()
   };
@@ -7853,9 +7853,9 @@ function sn(e) {
     return O()(s).call(s, t.id) && e.highlightedItems.push(function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n, r, o = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = i3(Object(o), !0)).call(n, function(t) {
+        t % 2 ? N()(n = i7(Object(o), !0)).call(n, function(t) {
           (0, w.Z)(e, t, o[t])
-        }) : m() ? v()(e, m()(o)) : N()(r = i3(Object(o))).call(r, function(t) {
+        }) : m() ? v()(e, m()(o)) : N()(r = i7(Object(o))).call(r, function(t) {
           b()(e, t, h()(o, t))
         })
       }
@@ -7866,36 +7866,36 @@ function sn(e) {
   }).highlightedItems;
   return (0, ec.h)("div", {
     className: "adyen-checkout__issuer-list"
-  }, !!L.length && (0, ec.h)(ec.HY, null, (0, ec.h)(i2, {
-    selectedIssuerId: R === st.ButtonGroup ? f.issuer : null,
+  }, !!L.length && (0, ec.h)(ec.HY, null, (0, ec.h)(i8, {
+    selectedIssuerId: R === sn.ButtonGroup ? f.issuer : null,
     items: L,
-    onChange: D(st.ButtonGroup)
-  }), (0, ec.h)(i8, null)), (0, ec.h)(r_, {
+    onChange: D(sn.ButtonGroup)
+  }), (0, ec.h)(i4, null)), (0, ec.h)(r_, {
     errorMessage: (t = g.issuer) && t.errorMessage ? l.get(t.errorMessage) : !!t,
     classNameModifiers: ["issuer-list"],
     name: "issuer"
   }, (0, ec.h)(ac, {
     items: r,
-    selectedValue: R === st.Dropdown ? f.issuer : null,
+    selectedValue: R === sn.Dropdown ? f.issuer : null,
     placeholder: l.get(void 0 === o ? "idealIssuer.selectField.placeholder" : o),
     name: "issuer",
     className: "adyen-checkout__issuer-list__dropdown",
-    onChange: D(st.Dropdown)
+    onChange: D(sn.Dropdown)
   })), c.termsAndConditions && (0, ec.h)("div", {
     className: "adyen-checkout__issuer-list__termsAndConditions"
-  }, (0, ec.h)(i6, {
+  }, (0, ec.h)(i5, {
     message: l.get(c.termsAndConditions.translationKey),
     urls: c.termsAndConditions.urls
   })), c.showPayButton && c.payButton({
     status: S,
-    label: i7({
+    label: i9({
       issuer: f.issuer,
       items: I()(n = []).call(n, (0, H.Z)(r), (0, H.Z)(L))
     }, l)
   }))
 }
 
-function sr(e, t) {
+function so(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7905,17 +7905,17 @@ function sr(e, t) {
   }
   return n
 }
-sn.defaultProps = {
+sr.defaultProps = {
   onChange: function() {}
 };
-var so = function(e, t, n) {
+var sa = function(e, t, n) {
     return function(r) {
       return r ? n(function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = sr(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = so(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = sr(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = so(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -7926,9 +7926,9 @@ var so = function(e, t, n) {
       }, e))(r) : null
     }
   },
-  sa = ["label", "icon", "payButton", "onSubmit", "amount", "name"];
+  si = ["label", "icon", "payButton", "onSubmit", "amount", "name"];
 
-function si(e, t) {
+function ss(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7939,19 +7939,19 @@ function si(e, t) {
   return n
 }
 
-function ss(e) {
+function sc(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = si(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ss(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = si(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ss(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function sc(e) {
+function sl(e) {
   var t, n, r = e.label,
     o = e.icon,
     a = e.payButton,
@@ -7959,7 +7959,7 @@ function sc(e) {
     s = e.amount,
     c = void 0 === s ? null : s,
     l = e.name,
-    u = (0, k.Z)(e, sa),
+    u = (0, k.Z)(e, si),
     d = nl().i18n,
     p = tX("ready"),
     h = (0, q.Z)(p, 2),
@@ -7967,7 +7967,7 @@ function sc(e) {
     m = h[1];
   return this.setStatus = function(e) {
     m(e)
-  }, (0, ec.h)(ec.HY, null, a(ss(ss({}, u), {}, {
+  }, (0, ec.h)(ec.HY, null, a(sc(sc({}, u), {}, {
     status: f,
     icon: void 0 === o ? null : o,
     classNameModifiers: ["standalone"],
@@ -7976,7 +7976,7 @@ function sc(e) {
   })))
 }
 
-function sl(e, t) {
+function su(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -7987,18 +7987,18 @@ function sl(e, t) {
   return n
 }
 
-function su(e) {
+function sd(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sl(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = su(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sl(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = su(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var sd = function(e) {
+var sp = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -8020,13 +8020,13 @@ var sd = function(e) {
   function r(e) {
     var t;
     if ((0, C.Z)(this, r), (t = n.call(this, e)).props.showImage) {
-      var o, a = so({
+      var o, a = sa({
         loadingContext: t.props.loadingContext
       }, t.constructor.type, function(e) {
         return t.resources.getImage(e)
       });
       t.props.issuers = J()(o = t.props.issuers).call(o, function(e) {
-        return su(su({}, e), {}, {
+        return sd(sd({}, e), {}, {
           icon: a(e.id)
         })
       })
@@ -8039,7 +8039,7 @@ var sd = function(e) {
       var t, n = e.details && e.details.length && (D()(t = e.details).call(t, function(e) {
         return "issuer" === e.key
       }) || {}).items || e.issuers || [];
-      return su(su({}, e), {}, {
+      return sd(sd({}, e), {}, {
         issuers: n
       })
     }
@@ -8050,7 +8050,7 @@ var sd = function(e) {
       return {
         paymentMethod: {
           type: this.constructor.type,
-          issuer: null === (e = this.state) || void 0 === e || null === (e = e.data) || void 0 === e ? void 0 : e.issuer
+          issuer: null == (e = this.state) || null == (e = e.data) ? void 0 : e.issuer
         }
       }
     }
@@ -8058,7 +8058,7 @@ var sd = function(e) {
     key: "isValid",
     get: function() {
       var e;
-      return 0 === this.props.issuers.length || !(null === (e = this.state) || void 0 === e || !e.isValid)
+      return 0 === this.props.issuers.length || !(null == (e = this.state) || !e.isValid)
     }
   }, {
     key: "brands",
@@ -8075,13 +8075,13 @@ var sd = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.issuers.length > 0 ? (0, ec.h)(ia, {
+      }, this.props.issuers.length > 0 ? (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(sn, (0, er.Z)({
+      }, (0, ec.h)(sr, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         },
@@ -8093,7 +8093,7 @@ var sd = function(e) {
         onChange: this.setState,
         onSubmit: this.submit,
         payButton: this.payButton
-      }))) : this.props.showPayButton && (0, ec.h)(sc, (0, er.Z)({
+      }))) : this.props.showPayButton && (0, ec.h)(sl, (0, er.Z)({
         name: this.props.name
       }, this.props, {
         onSubmit: this.submit,
@@ -8106,7 +8106,7 @@ var sd = function(e) {
   }]), r
 }();
 
-function sp(e, t) {
+function sh(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8117,17 +8117,17 @@ function sp(e, t) {
   return n
 }
 
-function sh(e) {
+function sf(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sp(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = sh(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sp(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = sh(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(sd, "defaultProps", {
+}(0, w.Z)(sp, "defaultProps", {
   showImage: !0,
   onValid: function() {},
   issuers: [],
@@ -8136,8 +8136,8 @@ function sh(e) {
   showPaymentMethodItemImages: !1,
   showPayButton: !0
 });
-var sf = function(e) {
-  (0, ea.Z)(r, sd);
+var sm = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -8161,14 +8161,14 @@ var sf = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return sh(sh({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return sf(sf({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }]), r
 }();
 
-function sm(e, t) {
+function sy(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8179,19 +8179,19 @@ function sm(e, t) {
   return n
 }
 
-function sy(e) {
+function sv(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sm(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = sy(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sm(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = sy(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(sf, "type", "billdesk_online");
-var sv = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(sm, "type", "billdesk_online");
+var sg = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -8215,27 +8215,27 @@ var sv = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return sy(sy({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return sv(sv({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1,
         placeholder: "issuerList.wallet.placeholder"
       })
     }
   }]), r
 }();
-(0, w.Z)(sv, "type", "billdesk_wallet");
-var sg, sb, s_, sk, sC, sZ = function(e, t) {
+(0, w.Z)(sg, "type", "billdesk_wallet");
+var sb, s_, sk, sC, sZ, sw = function(e, t) {
     return t === nL ? (e[nV] = !1, e[nj] = !1) : e[t] = !1, e
   },
-  sw = (0, Z.Z)(function e(t) {
+  sS = (0, Z.Z)(function e(t) {
     (0, C.Z)(this, e), (0, w.Z)(this, "callbacks", void 0), (0, w.Z)(this, "config", void 0), (0, w.Z)(this, "props", void 0), (0, w.Z)(this, "state", void 0), (0, w.Z)(this, "validateForm", void 0), (0, w.Z)(this, "handleBrandFromBinLookup", void 0), (0, w.Z)(this, "callbacksHandler", void 0), (0, w.Z)(this, "configHandler", void 0), (0, w.Z)(this, "createCardSecuredFields", void 0), (0, w.Z)(this, "createNonCardSecuredFields", void 0), (0, w.Z)(this, "createSecuredFields", void 0), (0, w.Z)(this, "destroySecuredFields", void 0), (0, w.Z)(this, "handleIOSTouchEvents", void 0), (0, w.Z)(this, "destroyTouchendListener", void 0), (0, w.Z)(this, "destroyTouchstartListener", void 0), (0, w.Z)(this, "handleBinValue", void 0), (0, w.Z)(this, "handleEncryption", void 0), (0, w.Z)(this, "handleFocus", void 0), (0, w.Z)(this, "handleIframeConfigFeedback", void 0), (0, w.Z)(this, "handleValidation", void 0), (0, w.Z)(this, "handleSFShiftTab", void 0), (0, w.Z)(this, "handleShiftTab", void 0), (0, w.Z)(this, "isConfigured", void 0), (0, w.Z)(this, "postMessageToAllIframes", void 0), (0, w.Z)(this, "processAutoComplete", void 0), (0, w.Z)(this, "processBrand", void 0), (0, w.Z)(this, "sendBrandToCardSF", void 0), (0, w.Z)(this, "sendExpiryDatePolicyToSF", void 0), (0, w.Z)(this, "setFocusOnFrame", void 0), (0, w.Z)(this, "setupSecuredField", void 0), (0, w.Z)(this, "touchendListener", void 0), (0, w.Z)(this, "touchstartListener", void 0), (0, w.Z)(this, "hasGenuineTouchEvents", void 0), (0, w.Z)(this, "encryptedAttrName", void 0), (0, w.Z)(this, "hasRedundantCVCField", void 0), (0, w.Z)(this, "isSingleBrandedCard", void 0), (0, w.Z)(this, "securityCode", void 0), this.props = t, this.state = {}, this.config = {}, this.callbacks = {}
   }),
-  sS = "undefined" != typeof window && window.console && window.console.error && R()(sb = window.console.error).call(sb, window.console);
-"undefined" != typeof window && window.console && window.console.info && R()(s_ = window.console.info).call(s_, window.console);
-var sN = "undefined" != typeof window && window.console && window.console.log && R()(sk = window.console.log).call(sk, window.console),
-  sx = "undefined" != typeof window && window.console && window.console.warn && R()(sC = window.console.warn).call(sC, window.console);
+  sN = "undefined" != typeof window && window.console && window.console.error && R()(s_ = window.console.error).call(s_, window.console);
+"undefined" != typeof window && window.console && window.console.info && R()(sk = window.console.info).call(sk, window.console);
+var sx = "undefined" != typeof window && window.console && window.console.log && R()(sC = window.console.log).call(sC, window.console),
+  sP = "undefined" != typeof window && window.console && window.console.warn && R()(sZ = window.console.warn).call(sZ, window.console);
 
-function sP(e) {
-  this.config.cardGroupTypes = a9(s = e.cardGroupTypes) && s.length ? s : nG;
+function sA(e) {
+  this.config.cardGroupTypes = ie(s = e.cardGroupTypes) && s.length ? s : nG;
   var t = e.loadingContext;
   if (t) {
     this.config.loadingContext = "/" === t.charAt(t.length - 1) ? t : "".concat(t, "/"), this.config.isCreditCardType = !1 === O()(n$).call(n$, e.type), this.config.iframeUIConfig = e.iframeUIConfig, this.config.allowedDOMAccess = !1 !== e.allowedDOMAccess && "false" !== e.allowedDOMAccess, this.config.autoFocus = !1 !== e.autoFocus && "false" !== e.autoFocus, this.config.showWarnings = !0 === e.showWarnings || "true" === e.showWarnings, this.config.trimTrailingSeparator = !1 !== e.trimTrailingSeparator && "false" !== e.trimTrailingSeparator, this.config.keypadFix = !1 !== e.keypadFix && "false" !== e.keypadFix, this.config.legacyInputMode = e.legacyInputMode || null, this.config.minimumExpiryDate = e.minimumExpiryDate || null, this.config.implementationType = e.implementationType, this.config.sfLogAtStart = !0 === window._b$dl;
@@ -8245,15 +8245,15 @@ function sP(e) {
       u = !!e.forceCompat || "function" != typeof window.TextEncoder,
       d = I()(n = "".concat(c)).call(n, u ? "Compat" : "");
     this.config.iframeSrc = I()(r = I()(o = I()(a = I()(i = "".concat(this.config.loadingContext, "securedfields/")).call(i, e.clientKey, "/")).call(a, "4.5.1", "/securedFields.html?type=")).call(o, d, "&d=")).call(r, l), this.config.maskSecurityCode = e.maskSecurityCode, this.config.shouldDisableIOSArrowKeys = e.shouldDisableIOSArrowKeys
-  } else sx("WARNING Config :: no loadingContext has been specified!")
+  } else sP("WARNING Config :: no loadingContext has been specified!")
 }
-var sA = function() {};
+var sR = function() {};
 
-function sR() {
+function sF() {
   var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-  this.callbacks.onLoad = e.onLoad ? e.onLoad : sA, this.callbacks.onConfigSuccess = e.onConfigSuccess ? e.onConfigSuccess : sA, this.callbacks.onFieldValid = e.onFieldValid ? e.onFieldValid : sA, this.callbacks.onAllValid = e.onAllValid ? e.onAllValid : sA, this.callbacks.onBrand = e.onBrand ? e.onBrand : sA, this.callbacks.onError = e.onError ? e.onError : sA, this.callbacks.onFocus = e.onFocus ? e.onFocus : sA, this.callbacks.onBinValue = e.onBinValue ? e.onBinValue : sA, this.callbacks.onAutoComplete = e.onAutoComplete ? e.onAutoComplete : sA, this.callbacks.onAdditionalSFConfig = e.onAdditionalSFConfig ? e.onAdditionalSFConfig : sA, this.callbacks.onAdditionalSFRemoved = e.onAdditionalSFRemoved ? e.onAdditionalSFRemoved : sA, this.callbacks.onTouchstartIOS = e.onTouchstartIOS ? e.onTouchstartIOS : sA
+  this.callbacks.onLoad = e.onLoad ? e.onLoad : sR, this.callbacks.onConfigSuccess = e.onConfigSuccess ? e.onConfigSuccess : sR, this.callbacks.onFieldValid = e.onFieldValid ? e.onFieldValid : sR, this.callbacks.onAllValid = e.onAllValid ? e.onAllValid : sR, this.callbacks.onBrand = e.onBrand ? e.onBrand : sR, this.callbacks.onError = e.onError ? e.onError : sR, this.callbacks.onFocus = e.onFocus ? e.onFocus : sR, this.callbacks.onBinValue = e.onBinValue ? e.onBinValue : sR, this.callbacks.onAutoComplete = e.onAutoComplete ? e.onAutoComplete : sR, this.callbacks.onAdditionalSFConfig = e.onAdditionalSFConfig ? e.onAdditionalSFConfig : sR, this.callbacks.onAdditionalSFRemoved = e.onAdditionalSFRemoved ? e.onAdditionalSFRemoved : sR, this.callbacks.onTouchstartIOS = e.onTouchstartIOS ? e.onTouchstartIOS : sR
 }
-var sF = function(e) {
+var sO = function(e) {
     return {
       fieldType: e.fieldType,
       encryptedFieldName: e.encryptedFieldName,
@@ -8263,7 +8263,7 @@ var sF = function(e) {
       rootNode: e.rootNode
     }
   },
-  sO = function(e, t, n, r, o) {
+  sE = function(e, t, n, r, o) {
     if (!ng(e, "error")) return null;
     var a = {
         rootNode: r,
@@ -8275,9 +8275,9 @@ var sF = function(e) {
     return i || t.hasError ? t.errorType === rd[rn] ? null : (a.error = i ? e.error : "", a.type = n, t.hasError = i, t.errorType = a.error, o(a), a) : null
   };
 
-function sE(e) {
+function sI(e) {
   var t, n, r, o, a = e.fieldType;
-  if ("card" === this.state.type && ng(e, "cvcPolicy") && ie(e.cvcPolicy) && ng(this.state.securedFields, nU) && (this.state.securedFields[nU].cvcPolicy = e.cvcPolicy), sO(e, this.state.securedFields[a], this.state.type, this.props.rootNode, this.callbacks.onError), this.state.securedFields[a].isEncrypted) {
+  if ("card" === this.state.type && ng(e, "cvcPolicy") && it(e.cvcPolicy) && ng(this.state.securedFields, nU) && (this.state.securedFields[nU].cvcPolicy = e.cvcPolicy), sE(e, this.state.securedFields[a], this.state.type, this.props.rootNode, this.callbacks.onError), this.state.securedFields[a].isEncrypted) {
     t = function(e) {
       var t, n, r, o = e.fieldType,
         a = e.txVariant,
@@ -8288,7 +8288,7 @@ function sE(e) {
         u = s ? 2 : 1;
       for (t = 0; t < u; t += 1) {
         r = s ? l[t] : o, n = I()(d = "".concat(a, "-encrypted-")).call(d, r);
-        var d, p = sF({
+        var d, p = sO({
           fieldType: o,
           encryptedFieldName: s ? r : o,
           uuid: n,
@@ -8304,24 +8304,24 @@ function sE(e) {
       txVariant: this.state.type,
       rootNode: this.props.rootNode
     }), a === nD && (t[0].endDigits = "");
-    for (var i = 0, s = t.length; i < s; i += 1) this.config.allowedDOMAccess && (n = this.props.rootNode, r = t[i].uid, o = void 0, (o = aY(n, "#".concat(r))) && n.removeChild(o)), this.callbacks.onFieldValid(t[i]);
+    for (var i = 0, s = t.length; i < s; i += 1) this.config.allowedDOMAccess && (n = this.props.rootNode, r = t[i].uid, o = void 0, (o = aG(n, "#".concat(r))) && n.removeChild(o)), this.callbacks.onFieldValid(t[i]);
     this.state.securedFields[a].isEncrypted = !1
   }
   this.validateForm(), ng(e, "brand") && this.processBrand(e)
 }
-var sI, sM = function(e, t, n) {
+var sM, sT = function(e, t, n) {
   if (t) {
     var r = V()(e);
     t.postMessage(r, n)
   }
 };
 
-function sT(e, t) {
+function sB(e, t) {
   var n;
-  return (null === (n = e.securedFields[t]) || void 0 === n ? void 0 : n.iframeContentWindow) || null
+  return (null == (n = e.securedFields[t]) ? void 0 : n.iframeContentWindow) || null
 }
 
-function sB(e) {
+function sD(e) {
   var t, n, r = e.fieldType;
   this.config.autoFocus && ("year" !== e.type && r !== nj || this.setFocusOnFrame(nU), r === nV && this.setFocusOnFrame(nj));
   var o = e[r];
@@ -8329,9 +8329,9 @@ function sB(e) {
     var r, o, a, i, s;
     for (r = 0; r < e.length; r += 1) {
       var c, l = e[r];
-      a = l.encryptedFieldName, o = I()(c = "".concat(t, "-encrypted-")).call(c, a), i = l.blob, s = void 0, (s = aY(n, "#".concat(o))) || ((s = document.createElement("input")).type = "hidden", s.name = a, s.id = o, n.appendChild(s)), s.setAttribute("value", i)
+      a = l.encryptedFieldName, o = I()(c = "".concat(t, "-encrypted-")).call(c, a), i = l.blob, s = void 0, (s = aG(n, "#".concat(o))) || ((s = document.createElement("input")).type = "hidden", s.name = a, s.id = o, n.appendChild(s)), s.setAttribute("value", i)
     }
-  }(o, this.state.type, this.props.rootNode), sO({
+  }(o, this.state.type, this.props.rootNode), sE({
     error: "",
     fieldType: r
   }, this.state.securedFields[r], this.state.type, this.props.rootNode, this.callbacks.onError);
@@ -8343,7 +8343,7 @@ function sB(e) {
       u = [];
     for (t = 0; t < l.length; t += 1) {
       o = (r = l[t]).encryptedFieldName, n = I()(d = "".concat(s, "-encrypted-")).call(d, o), a = r.blob;
-      var d, p = sF({
+      var d, p = sO({
         fieldType: i,
         encryptedFieldName: o,
         uuid: n,
@@ -8360,212 +8360,212 @@ function sB(e) {
     rootNode: this.props.rootNode,
     encryptedObjArr: o
   });
-  for (r === nV && ng(this.state.securedFields, nj) && sM({
+  for (r === nV && ng(this.state.securedFields, nj) && sT({
       txVariant: this.state.type,
       code: e.code,
       blob: o[0].blob,
       fieldType: nj,
       numKey: this.state.securedFields[nj].numKey
-    }, sT(this.state, nj), this.config.loadingContext), r === nD && it(e.endDigits) && (a[0].endDigits = e.endDigits), r === nD && it(e.issuerBin) && (a[0].issuerBin = +e.issuerBin), t = 0, n = a.length; t < n; t += 1) this.callbacks.onFieldValid(a[t]);
+    }, sB(this.state, nj), this.config.loadingContext), r === nD && ir(e.endDigits) && (a[0].endDigits = e.endDigits), r === nD && ir(e.issuerBin) && (a[0].issuerBin = +e.issuerBin), t = 0, n = a.length; t < n; t += 1) this.callbacks.onFieldValid(a[t]);
   this.validateForm()
 }
-var sD = {
+var sL = {
   __NO_BRAND: "noBrand",
   cards: []
 };
-sD.cards.push({
+sL.cards.push({
   cardType: "mc",
   startingRules: [51, 52, 53, 54, 55, 22, 23, 24, 25, 26, 27],
   permittedLengths: [16],
   pattern: /^(5[1-5][0-9]{0,14}|2[2-7][0-9]{0,14})$/,
   securityCode: "CVC"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "visadankort",
   startingRules: [4571],
   permittedLengths: [16],
   pattern: /^(4571)[0-9]{0,12}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "visa",
   startingRules: [4],
   permittedLengths: [13, 16, 19],
   pattern: /^4[0-9]{0,18}$/,
   securityCode: "CVV"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "amex",
   startingRules: [34, 37],
   permittedLengths: [15],
   pattern: /^3[47][0-9]{0,13}$/,
   securityCode: "CID"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "diners",
   startingRules: [36],
   permittedLengths: [14],
   pattern: /^(36)[0-9]{0,12}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "maestrouk",
   startingRules: [6759],
   permittedLengths: [16, 18, 19],
   pattern: /^(6759)[0-9]{0,15}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "solo",
   startingRules: [6767],
   permittedLengths: [16, 18, 19],
   pattern: /^(6767)[0-9]{0,15}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "laser",
   startingRules: [6304, 6706, 677117, 677120],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(6304|6706|6709|6771)[0-9]{0,15}$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "discover",
   startingRules: [6011, 644, 645, 646, 647, 648, 649, 65],
   permittedLengths: [16],
   pattern: /^(6011[0-9]{0,12}|(644|645|646|647|648|649)[0-9]{0,13}|65[0-9]{0,14})$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "jcb",
   startingRules: [3528, 3529, 353, 354, 355, 356, 357, 358],
   permittedLengths: [16, 19],
   pattern: /^(352[8,9]{1}[0-9]{0,15}|35[4-8]{1}[0-9]{0,16})$/,
   securityCode: "CAV"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "bcmc",
   startingRules: [6703, 479658, 606005],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^((6703)[0-9]{0,15}|(479658|606005)[0-9]{0,13})$/,
   cvcPolicy: "hidden"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "bijcard",
   startingRules: [5100081],
   permittedLengths: [16],
   pattern: /^(5100081)[0-9]{0,9}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "dankort",
   startingRules: [5019],
   permittedLengths: [16],
   pattern: /^(5019)[0-9]{0,12}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "hipercard",
   startingRules: [606282],
   permittedLengths: [16],
   pattern: /^(606282)[0-9]{0,10}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "cup",
   startingRules: [62, 81],
   permittedLengths: [14, 15, 16, 17, 18, 19],
   pattern: /^(62|81)[0-9]{0,17}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "maestro",
   startingRules: [50, 56, 57, 58, 6],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(5[0|6-8][0-9]{0,17}|6[0-9]{0,18})$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "elo",
   startingRules: [506699, 50670, 50671, 50672, 50673, 50674, 50675, 50676, 506770, 506771, 506772, 506773, 506774, 506775, 506776, 506777, 506778, 401178, 438935, 451416, 457631, 457632, 504175, 627780, 636297, 636368],
   permittedLengths: [16],
   pattern: /^((((506699)|(506770)|(506771)|(506772)|(506773)|(506774)|(506775)|(506776)|(506777)|(506778)|(401178)|(438935)|(451416)|(457631)|(457632)|(504175)|(627780)|(636368)|(636297))[0-9]{0,10})|((50676)|(50675)|(50674)|(50673)|(50672)|(50671)|(50670))[0-9]{0,11})$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "uatp",
   startingRules: [1],
   permittedLengths: [15],
   pattern: /^1[0-9]{0,14}$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "cartebancaire",
   startingRules: [4, 5, 6],
   permittedLengths: [16],
   pattern: /^[4-6][0-9]{0,15}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "visaalphabankbonus",
   startingRules: [450903],
   permittedLengths: [16],
   pattern: /^(450903)[0-9]{0,10}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "mcalphabankbonus",
   startingRules: [510099],
   permittedLengths: [16],
   pattern: /^(510099)[0-9]{0,10}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "hiper",
   startingRules: [637095, 637568, 637599, 637609, 637612],
   permittedLengths: [16],
   pattern: /^(637095|637568|637599|637609|637612)[0-9]{0,10}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "oasis",
   startingRules: [982616],
   permittedLengths: [16],
   pattern: /^(982616)[0-9]{0,10}$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "karenmillen",
   startingRules: [0x5db59d9],
   permittedLengths: [16],
   pattern: /^(98261465)[0-9]{0,8}$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "warehouse",
   startingRules: [982633],
   permittedLengths: [16],
   pattern: /^(982633)[0-9]{0,10}$/,
   cvcPolicy: "optional"
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "mir",
   startingRules: [220],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(220)[0-9]{0,16}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "codensa",
   startingRules: [590712],
   permittedLengths: [16],
   pattern: /^(590712)[0-9]{0,10}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "naranja",
   startingRules: [377798, 377799, 402917, 402918, 527571, 527572, 589562],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(37|40|5[28])([279])\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "cabal",
   startingRules: [589657, 600691, 603522, 6042, 6043, 636908],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(58|6[03])([03469])\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "shopping",
   startingRules: [2799, 589407, 603488],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(27|58|60)([39])\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "argencard",
   startingRules: [501],
   permittedLengths: [16, 17, 18, 19],
   pattern: /^(50)(1)\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "troy",
   startingRules: [9792],
   permittedLengths: [16],
   pattern: /^(97)(9)\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "forbrugsforeningen",
   startingRules: [600722],
   permittedLengths: [16],
   pattern: /^(60)(0)\d*$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "vpay",
   startingRules: [401, 408, 413, 434, 435, 437, 439, 441, 442, 443, 444, 446, 447, 455, 458, 460, 461, 463, 466, 471, 479, 482, 483, 487],
   permittedLengths: [13, 14, 15, 16, 17, 18, 19],
   pattern: /^(40[1,8]|413|43[4,5]|44[1,2,3,4,6,7]|45[5,8]|46[0,1,3,6]|47[1,9]|48[2,3,7])[0-9]{0,16}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "rupay",
   startingRules: [508528],
   permittedLengths: [16],
   pattern: /^(100003|508(2|[5-9])|60(69|[7-8])|652(1[5-9]|[2-5][0-9]|8[5-9])|65300[3-4]|8172([0-1]|[3-5]|7|9)|817(3[3-8]|40[6-9]|410)|35380([0-2]|[5-6]|9))[0-9]{0,12}$/
-}), sD.cards.push({
+}), sL.cards.push({
   cardType: "ticket",
   expiryDatePolicy: "hidden"
 });
-var sL = {
+var sV = {
     detectCard: function(e, t) {
-      if (t && (n = P()(a = P()(i = sD.cards).call(i, function(e) {
+      if (t && (n = P()(a = P()(i = sL.cards).call(i, function(e) {
           return O()(t).call(t, e.cardType)
         })).call(a, function(t) {
           return ng(t, "pattern") && e.match(t.pattern)
@@ -8582,14 +8582,14 @@ var sL = {
         })
       }
       return {
-        cardType: sD.__NO_BRAND
+        cardType: sL.__NO_BRAND
       }
     },
     detectCardLength: function(e, t) {
       var n, r, o, a = 0,
         i = !1,
         s = t,
-        c = e.cardType !== sD.__NO_BRAND ? e.permittedLengths[e.permittedLengths.length - 1] : 0;
+        c = e.cardType !== sL.__NO_BRAND ? e.permittedLengths[e.permittedLengths.length - 1] : 0;
       if (c && s > c && (a = s.length - c) > 0 && (o = s = s.substring(0, s.length - a)), N()(n = e.permittedLengths).call(n, function(e) {
           s.length === e && (i = !0)
         }), s.length === c) {
@@ -8603,18 +8603,18 @@ var sL = {
       }
     },
     getShortestPermittedCardLength: function() {
-      if (!sI) {
+      if (!sM) {
         var e, t = [];
-        N()(e = sD.cards).call(e, function(e) {
+        N()(e = sL.cards).call(e, function(e) {
           var n;
-          t = I()(t).call(t, null !== (n = e.permittedLengths) && void 0 !== n ? n : [])
-        }), sI = Math.min.apply(null, t)
+          t = I()(t).call(t, null != (n = e.permittedLengths) ? n : [])
+        }), sM = Math.min.apply(null, t)
       }
-      return sI
+      return sM
     },
     getCardByBrand: function(e) {
       var t;
-      return P()(t = sD.cards).call(t, function(t) {
+      return P()(t = sL.cards).call(t, function(t) {
         return t.cardType === e
       })[0]
     },
@@ -8622,14 +8622,14 @@ var sL = {
       if (!e) throw Error("Error: isGenericCardType: type param has not been specified");
       return "card" === e || "scheme" === e
     },
-    __NO_BRAND: sD.__NO_BRAND,
-    allCards: sD.cards
+    __NO_BRAND: sL.__NO_BRAND,
+    allCards: sL.cards
   },
-  sV = (0, Z.Z)(function e() {
+  sj = (0, Z.Z)(function e() {
     (0, C.Z)(this, e), (0, w.Z)(this, "sfConfig", void 0), (0, w.Z)(this, "fieldType", void 0), (0, w.Z)(this, "iframeSrc", void 0), (0, w.Z)(this, "loadingContext", void 0), (0, w.Z)(this, "holderEl", void 0), (0, w.Z)(this, "iframeRef", void 0), (0, w.Z)(this, "loadToConfigTimeout", void 0), (0, w.Z)(this, "_errorType", void 0), (0, w.Z)(this, "_hasError", void 0), (0, w.Z)(this, "_isValid", void 0), (0, w.Z)(this, "_cvcPolicy", void 0), (0, w.Z)(this, "_expiryDatePolicy", void 0), (0, w.Z)(this, "_iframeContentWindow", void 0), (0, w.Z)(this, "_isEncrypted", void 0), (0, w.Z)(this, "_numKey", void 0), (0, w.Z)(this, "_iframeOnLoadListener", void 0), (0, w.Z)(this, "_postMessageListener", void 0), (0, w.Z)(this, "onIframeLoadedCallback", void 0), (0, w.Z)(this, "onConfigCallback", void 0), (0, w.Z)(this, "onEncryptionCallback", void 0), (0, w.Z)(this, "onValidationCallback", void 0), (0, w.Z)(this, "onFocusCallback", void 0), (0, w.Z)(this, "onBinValueCallback", void 0), (0, w.Z)(this, "onTouchstartCallback", void 0), (0, w.Z)(this, "onShiftTabCallback", void 0), (0, w.Z)(this, "onAutoCompleteCallback", void 0), this.sfConfig = {}
   });
 
-function sj(e, t) {
+function sU(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8640,18 +8640,18 @@ function sj(e, t) {
   return n
 }
 
-function sU(e) {
+function sq(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sj(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = sU(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sj(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = sU(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var sq = function(e, t) {
+var sH = function(e, t) {
   var n = "card" === e ? "nocard" : e || "nocard";
   return t.getImage({
     type: n,
@@ -8659,39 +8659,39 @@ var sq = function(e, t) {
   })(n)
 };
 
-function sH(e) {
+function sK(e) {
   return "object" === (0, _.Z)(e) && null !== e && "[object Array]" === Object.prototype.toString.call(e)
 }
 
-function sK() {
+function sz() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  var r = sH(t[0]) ? t[0] : t;
+  var r = sK(t[0]) ? t[0] : t;
   return {
     from: function(e) {
       var t;
       return Y()(t = J()(r).call(r, function(t) {
         return t in e ? (0, w.Z)({}, t, e[t]) : {}
       })).call(t, function(e, t) {
-        return sU(sU({}, e), t)
+        return sq(sq({}, e), t)
       }, {})
     }
   }
 }
 
-function sz() {
+function sW() {
   for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-  var r = sH(t[0]) ? t[0] : t;
+  var r = sK(t[0]) ? t[0] : t;
   return {
     from: function(e) {
       var t, n = P()(t = l()(e)).call(t, function(e) {
         return !O()(r).call(r, e)
       });
-      return sK.apply(void 0, (0, H.Z)(n)).from(e)
+      return sz.apply(void 0, (0, H.Z)(n)).from(e)
     }
   }
 }
 
-function sW(e, t) {
+function sY(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8702,19 +8702,19 @@ function sW(e, t) {
   return n
 }
 
-function sY(e) {
+function sG(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sW(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = sY(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sW(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = sY(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function sG(e, t) {
+function s$(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8725,19 +8725,19 @@ function sG(e, t) {
   return n
 }
 
-function s$(e) {
+function sQ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sG(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = s$(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sG(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = s$(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function sQ(e, t) {
+function sJ(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -8748,19 +8748,19 @@ function sQ(e, t) {
   return n
 }
 
-function sJ(e) {
+function sX(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = sQ(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = sJ(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = sQ(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = sJ(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var sX = function(e) {
-  (0, ea.Z)(r, sV);
+var s0 = function(e) {
+  (0, ea.Z)(r, sj);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -8781,11 +8781,11 @@ var sX = function(e) {
   function r(e, t) {
     (0, C.Z)(this, r), o = n.call(this);
     var o, a = ["fieldType", "iframeSrc", "cvcPolicy", "expiryDatePolicy", "loadingContext", "holderEl"],
-      i = sz(a).from(e);
-    o.sfConfig = sJ(sJ(sJ({}, o.sfConfig), i), {}, {
-      iframeUIConfig: sJ({}, i.iframeUIConfig)
+      i = sW(a).from(e);
+    o.sfConfig = sX(sX(sX({}, o.sfConfig), i), {}, {
+      iframeUIConfig: sX({}, i.iframeUIConfig)
     });
-    var s = sK(a).from(e);
+    var s = sz(a).from(e);
     return o.fieldType = s.fieldType, o.cvcPolicy = s.cvcPolicy, o.expiryDatePolicy = s.expiryDatePolicy, o.iframeSrc = s.iframeSrc, o.loadingContext = s.loadingContext, o.holderEl = s.holderEl, o.isValid = !1, o.iframeContentWindow = null, o.numKey = function() {
       if (!window.crypto) return 0x100000000 * Math.random() | 0;
       var e = new Uint32Array(1);
@@ -8795,14 +8795,14 @@ var sX = function(e) {
   return (0, Z.Z)(r, [{
     key: "init",
     value: function(e) {
-      var t, n, r, o, a, i, s, c, l, u, d, p, h, f, m, y, v, g, b, _, k, C, Z, S, N, x = (t = this.sfConfig, n = this.fieldType, i = O()(r = ["ach", "giftcard"]).call(r, t.txVariant) ? t.txVariant : "creditCard", s = e.get(I()(o = "".concat(i, ".")).call(o, n, ".aria.iframeTitle")), c = e.get(I()(a = "".concat(i, ".")).call(a, n, ".aria.label")), l = e.locale, u = aH({
+      var t, n, r, o, a, i, s, c, l, u, d, p, h, f, m, y, v, g, b, _, k, C, Z, S, N, x = (t = this.sfConfig, n = this.fieldType, i = O()(r = ["ach", "giftcard"]).call(r, t.txVariant) ? t.txVariant : "creditCard", s = e.get(I()(o = "".concat(i, ".")).call(o, n, ".aria.iframeTitle")), c = e.get(I()(a = "".concat(i, ".")).call(a, n, ".aria.label")), l = e.locale, u = aK({
         iframeTitle: s,
         label: c
-      }, e), sY(sY({}, l && {
+      }, e), sG(sG({}, l && {
         lang: l
       }), {}, (0, w.Z)({}, n, u)));
       this.sfConfig.iframeUIConfig.ariaConfig = x;
-      var P = (d = this.sfConfig, p = this.fieldType, y = d.txVariant, "ach.accountNumberField.placeholder" === ((0, w.Z)(h = {}, nD, e.get && e.get("creditCard.numberField.placeholder")), (0, w.Z)(h, nL, e.get && e.get("creditCard.expiryDateField.placeholder")), (0, w.Z)(h, nV, e.get && e.get("creditCard.expiryDateField.month.placeholder")), (0, w.Z)(h, nj, e.get && e.get("creditCard.expiryDateField.year.placeholder")), (0, w.Z)(h, nU, e.get && e.get("creditCard.cvcField.placeholder")), (0, w.Z)(h, nz, e.get && e.get("creditCard.cvcField.placeholder.3digits")), (0, w.Z)(h, nW, e.get && e.get("creditCard.cvcField.placeholder.4digits")), (0, w.Z)(h, nq, e.get && e.get("creditCard.encryptedPassword.placeholder")), (0, w.Z)(h, nH, e.get && e.get("ach.accountNumberField.placeholder")), (0, w.Z)(h, nK, e.get && e.get("ach.accountLocationId.placeholder")), f = h)[nH] && (f[nH] = ""), "ach.accountLocationId.placeholder" === f[nK] && (f[nK] = ""), v = f, s$(s$(s$({}, p !== nU && (0, w.Z)({}, p, v[p])), p === nU && y === nY && (0, w.Z)({}, p, v[p])), p === nU && y !== nY && ((0, w.Z)(m = {}, nz, v[nz]), (0, w.Z)(m, nW, v[nW]), m)));
+      var P = (d = this.sfConfig, p = this.fieldType, y = d.txVariant, "ach.accountNumberField.placeholder" === ((0, w.Z)(h = {}, nD, e.get && e.get("creditCard.numberField.placeholder")), (0, w.Z)(h, nL, e.get && e.get("creditCard.expiryDateField.placeholder")), (0, w.Z)(h, nV, e.get && e.get("creditCard.expiryDateField.month.placeholder")), (0, w.Z)(h, nj, e.get && e.get("creditCard.expiryDateField.year.placeholder")), (0, w.Z)(h, nU, e.get && e.get("creditCard.cvcField.placeholder")), (0, w.Z)(h, nz, e.get && e.get("creditCard.cvcField.placeholder.3digits")), (0, w.Z)(h, nW, e.get && e.get("creditCard.cvcField.placeholder.4digits")), (0, w.Z)(h, nq, e.get && e.get("creditCard.encryptedPassword.placeholder")), (0, w.Z)(h, nH, e.get && e.get("ach.accountNumberField.placeholder")), (0, w.Z)(h, nK, e.get && e.get("ach.accountLocationId.placeholder")), f = h)[nH] && (f[nH] = ""), "ach.accountLocationId.placeholder" === f[nK] && (f[nK] = ""), v = f, sQ(sQ(sQ({}, p !== nU && (0, w.Z)({}, p, v[p])), p === nU && y === nY && (0, w.Z)({}, p, v[p])), p === nU && y !== nY && ((0, w.Z)(m = {}, nz, v[nz]), (0, w.Z)(m, nW, v[nW]), m)));
       this.sfConfig.iframeUIConfig.placeholders = P;
       var A = (b = (g = {
         src: this.iframeSrc,
@@ -8810,13 +8810,13 @@ var sX = function(e) {
         policy: "origin"
       }).src, k = void 0 === (_ = g.title) ? "iframe element" : _, C = g.policy, Z = g.styleStr, (S = document.createElement("iframe")).setAttribute("src", b), S.setAttribute("class", "js-iframe"), "" === k || 0 === eP()(k).call(k).length || "none" === k ? S.setAttribute("role", "presentation") : S.setAttribute("title", k), S.setAttribute("allowtransparency", "true"), S.setAttribute("style", void 0 === Z ? "border: none; height:100%; width:100%; overflow:hidden;" : Z), S.setAttribute("referrerpolicy", void 0 === C ? "origin" : C), N = document.createTextNode("<p>Your browser does not support iframes.</p>"), S.appendChild(N), S);
       this.holderEl.appendChild(A);
-      var R = aY(this.holderEl, ".js-iframe");
-      return R && (this.iframeContentWindow = R.contentWindow, this.iframeOnLoadListener = this.iframeOnLoadListenerFn, a$(R, "load", this.iframeOnLoadListener, !1)), this.iframeRef = R, this
+      var R = aG(this.holderEl, ".js-iframe");
+      return R && (this.iframeContentWindow = R.contentWindow, this.iframeOnLoadListener = this.iframeOnLoadListenerFn, aQ(R, "load", this.iframeOnLoadListener, !1)), this.iframeRef = R, this
     }
   }, {
     key: "iframeOnLoadListenerFn",
     value: function() {
-      this.postMessageListener = this.postMessageListenerFn, a$(window, "message", this.postMessageListener, !1);
+      this.postMessageListener = this.postMessageListenerFn, aQ(window, "message", this.postMessageListener, !1);
       var e = {
         fieldType: this.fieldType,
         extraFieldData: this.sfConfig.extraFieldData,
@@ -8837,19 +8837,19 @@ var sX = function(e) {
         maskSecurityCode: this.sfConfig.maskSecurityCode,
         disableIOSArrowKeys: this.sfConfig.disableIOSArrowKeys
       };
-      window._b$dl && console.log("### SecuredField:::: onIframeLoaded:: created configObj=", e), sM(e, this.iframeContentWindow, this.loadingContext), this.onIframeLoadedCallback()
+      window._b$dl && console.log("### SecuredField:::: onIframeLoaded:: created configObj=", e), sT(e, this.iframeContentWindow, this.loadingContext), this.onIframeLoadedCallback()
     }
   }, {
     key: "postMessageListenerFn",
     value: function(e) {
       var t, n, r, o, a, i, s, c, l;
-      if (t = this.loadingContext, n = this.sfConfig.showWarnings, r = e.origin, i = (a = (o = z()(t).call(t, "/checkoutshopper/")) > -1 ? t.substring(0, o) : t).length - 1, "/" === a.charAt(i) && (a = a.substring(0, i)), r === a || (n && (sx("WARNING postMessageValidation: postMessage listener for iframe::origin mismatch!\n Received message with origin:", r, "but the only allowed origin for messages to CSF is", a), sx("### event.data=", e.data)), 0)) {
+      if (t = this.loadingContext, n = this.sfConfig.showWarnings, r = e.origin, i = (a = (o = z()(t).call(t, "/checkoutshopper/")) > -1 ? t.substring(0, o) : t).length - 1, "/" === a.charAt(i) && (a = a.substring(0, i)), r === a || (n && (sP("WARNING postMessageValidation: postMessage listener for iframe::origin mismatch!\n Received message with origin:", r, "but the only allowed origin for messages to CSF is", a), sP("### event.data=", e.data)), 0)) {
         try {
           s = JSON.parse(e.data)
         } catch (t) {
-          return e.data && e.data.type && "string" == typeof e.data.type && z()(c = e.data.type).call(c, "webpack") > -1 ? void(this.sfConfig.showWarnings && sN("### SecuredField::postMessageListenerFn:: PARSE FAIL - WEBPACK")) : e.data && "string" == typeof e.data && z()(l = e.data).call(l, "cvox") > -1 ? void(this.sfConfig.showWarnings && sN("### SecuredField::postMessageListenerFn:: PARSE FAIL - CHROMEVOX")) : void(this.sfConfig.showWarnings && sN("### SecuredField::postMessageListenerFn:: PARSE FAIL - UNKNOWN REASON: event.data=", e.data))
+          return e.data && e.data.type && "string" == typeof e.data.type && z()(c = e.data.type).call(c, "webpack") > -1 ? void(this.sfConfig.showWarnings && sx("### SecuredField::postMessageListenerFn:: PARSE FAIL - WEBPACK")) : e.data && "string" == typeof e.data && z()(l = e.data).call(l, "cvox") > -1 ? void(this.sfConfig.showWarnings && sx("### SecuredField::postMessageListenerFn:: PARSE FAIL - CHROMEVOX")) : void(this.sfConfig.showWarnings && sx("### SecuredField::postMessageListenerFn:: PARSE FAIL - UNKNOWN REASON: event.data=", e.data))
         }
-        if (ng(s, "action") && ng(s, "numKey")) {
+        if (ng(s, "action") && ng(s, "numKey"))
           if (this.numKey === s.numKey) switch (s.action) {
             case "encryption":
               this.isValid = !0, this.onEncryptionCallback(s);
@@ -8874,14 +8874,14 @@ var sX = function(e) {
               break;
             default:
               this.isValid = !1, this.onValidationCallback(s)
-          } else this.sfConfig.showWarnings && sx("WARNING SecuredField :: postMessage listener for iframe :: data mismatch! (Probably a message from an unrelated securedField)")
-        } else this.sfConfig.showWarnings && sx("WARNING SecuredField :: postMessage listener for iframe :: data mismatch!")
+          } else this.sfConfig.showWarnings && sP("WARNING SecuredField :: postMessage listener for iframe :: data mismatch! (Probably a message from an unrelated securedField)");
+          else this.sfConfig.showWarnings && sP("WARNING SecuredField :: postMessage listener for iframe :: data mismatch!")
       }
     }
   }, {
     key: "destroy",
     value: function() {
-      aQ(window, "message", this.postMessageListener, !1), aQ(this.iframeRef, "load", this.iframeOnLoadListener, !1), this.iframeContentWindow = null,
+      aJ(window, "message", this.postMessageListener, !1), aJ(this.iframeRef, "load", this.iframeOnLoadListener, !1), this.iframeContentWindow = null,
         function(e) {
           for (; e.firstChild;) e.removeChild(e.firstChild)
         }(this.holderEl)
@@ -9047,18 +9047,18 @@ var sX = function(e) {
   }]), r
 }();
 
-function s0() {
+function s1() {
   this.encryptedAttrName = n6;
-  var e = aW(this.props.rootNode, "[".concat(this.encryptedAttrName, "]"));
+  var e = aY(this.props.rootNode, "[".concat(this.encryptedAttrName, "]"));
   return this.config.isCreditCardType ? (this.isSingleBrandedCard = !1, this.securityCode = "", this.createCardSecuredFields(e, n2, n2)) : this.createNonCardSecuredFields(e), e.length
 }
 
-function s1(e) {
-  return s2.apply(this, arguments)
+function s2(e) {
+  return s8.apply(this, arguments)
 }
 
-function s2() {
-  return (s2 = (0, a.Z)(s().mark(function e(t) {
+function s8() {
+  return (s8 = (0, a.Z)(s().mark(function e(t) {
     var n, r;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {
@@ -9083,17 +9083,17 @@ function s2() {
   }))).apply(this, arguments)
 }
 
-function s8(e, t, n) {
-  return s4.apply(this, arguments)
+function s4(e, t, n) {
+  return s6.apply(this, arguments)
 }
 
-function s4() {
-  return (s4 = (0, a.Z)(s().mark(function e(t, n, r) {
+function s6() {
+  return (s6 = (0, a.Z)(s().mark(function e(t, n, r) {
     var o, a, i, c, l, u = this;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {
         case 0:
-          "card" === (o = this.state.type) && 1 === this.config.cardGroupTypes.length && (o = this.config.cardGroupTypes[0], this.state.type = o), this.isSingleBrandedCard = "card" !== o, this.isSingleBrandedCard && (ie(a = sL.getCardByBrand(o)) ? (n = a.cvcPolicy || n2, r = a.expiryDatePolicy || n2, this.securityCode = a.securityCode) : this.state.type = "unrecognised-single-brand"), i = 0;
+          "card" === (o = this.state.type) && 1 === this.config.cardGroupTypes.length && (o = this.config.cardGroupTypes[0], this.state.type = o), this.isSingleBrandedCard = "card" !== o, this.isSingleBrandedCard && (it(a = sV.getCardByBrand(o)) ? (n = a.cvcPolicy || n2, r = a.expiryDatePolicy || n2, this.securityCode = a.securityCode) : this.state.type = "unrecognised-single-brand"), i = 0;
         case 5:
           if (!(i < t.length)) {
             e.next = 14;
@@ -9126,15 +9126,15 @@ function s4() {
   }))).apply(this, arguments)
 }
 
-function s6(e, t, n) {
+function s5(e, t, n) {
   var r = this;
   return new(T())(function(o, a) {
-    var i = aG(e, r.encryptedAttrName);
+    var i = a$(e, r.encryptedAttrName);
     i === nj && (r.state.hasSeparateDateFields = !0);
-    var s = new sX({
+    var s = new s0({
       fieldType: i,
-      extraFieldData: aG(e, n5),
-      uid: aG(e, n3),
+      extraFieldData: a$(e, n5),
+      uid: a$(e, n3),
       cvcPolicy: t,
       holderEl: e,
       expiryDatePolicy: n,
@@ -9188,7 +9188,7 @@ function s6(e, t, n) {
     r.state.securedFields[i] = s
   })
 }
-var s5 = {
+var s3 = {
     __IS_ANDROID: "undefined" != typeof navigator && /(android)/i.test(navigator.userAgent),
     __IS_IE: "undefined" != typeof navigator && function() {
       var e = navigator.userAgent,
@@ -9205,7 +9205,7 @@ var s5 = {
     __IS_FIREFOX: "undefined" != typeof navigator && /(firefox)/i.test(navigator.userAgent),
     __IS_SAFARI: "undefined" != typeof navigator && /(safari)/i.test(navigator.userAgent) && !/(chrome)/i.test(navigator.userAgent)
   },
-  s3 = function(e) {
+  s7 = function(e) {
     var t = e.target;
     if (t instanceof HTMLInputElement || HTMLTextAreaElement && t instanceof HTMLTextAreaElement) {
       var n = t.value,
@@ -9227,7 +9227,7 @@ var s5 = {
       fieldClick: !0
     })
   },
-  s7 = function(e) {
+  s9 = function(e) {
     this.hasGenuineTouchEvents = !0;
     var t = e.target;
     if (t instanceof HTMLInputElement || t instanceof HTMLSpanElement) {
@@ -9235,30 +9235,30 @@ var s5 = {
         fieldType: "webInternalElement",
         checkoutTouchEvent: !0
       });
-      var n, r, o, a = null !== (n = t.getAttribute("name")) && void 0 !== n ? n : t.getAttribute("data-id");
-      null === (r = (o = this.callbacks).onTouchstartIOS) || void 0 === r || r.call(o, {
+      var n, r, o, a = null != (n = t.getAttribute("name")) ? n : t.getAttribute("data-id");
+      null == (r = (o = this.callbacks).onTouchstartIOS) || r.call(o, {
         fieldType: "webInternalElement",
         name: a
       })
     }
   },
-  s9 = function() {
-    var e = aY(document, "body");
-    e.style.cursor = "pointer", a$(e, "touchend", this.touchendListener), this.state.registerFieldForIos = !0
-  },
   ce = function() {
-    if (s5.__IS_IOS) {
-      var e = aY(document, "body");
-      e.style.cursor = "auto", aQ(e, "touchend", this.touchendListener)
-    }
+    var e = aG(document, "body");
+    e.style.cursor = "pointer", aQ(e, "touchend", this.touchendListener), this.state.registerFieldForIos = !0
   },
   ct = function() {
-    s5.__IS_IOS && aQ(document, "touchstart", this.touchstartListener)
+    if (s3.__IS_IOS) {
+      var e = aG(document, "body");
+      e.style.cursor = "auto", aJ(e, "touchend", this.touchendListener)
+    }
   },
-  cn = function(e, t, n) {
+  cn = function() {
+    s3.__IS_IOS && aJ(document, "touchstart", this.touchstartListener)
+  },
+  cr = function(e, t, n) {
     return function(e) {
       var t = !(arguments.length > 1 && void 0 !== arguments[1]) || arguments[1],
-        n = em()(Array.prototype).call(aW(document, "*[data-cse], a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), object, embed, *[tabindex], *[contenteditable]")),
+        n = em()(Array.prototype).call(aY(document, "*[data-cse], a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), object, embed, *[tabindex], *[contenteditable]")),
         r = [];
       N()(n).call(n, function(e) {
         var t = e.getAttribute("tabindex"),
@@ -9275,9 +9275,9 @@ var s5 = {
         return t === e || e.contains(t)
       });
       return r[o + (t ? -1 : 1)]
-    }(aY(t, "[data-cse=".concat(e, "]")), n)
+    }(aG(t, "[data-cse=".concat(e, "]")), n)
   },
-  cr = function(e) {
+  co = function(e) {
     switch (this.state.type) {
       case "ach":
         var t;
@@ -9291,7 +9291,7 @@ var s5 = {
           var n, r;
           switch (e) {
             case nD:
-              n = cn(nD, t);
+              n = cr(nD, t);
               break;
             case nU:
               r = nD
@@ -9307,7 +9307,7 @@ var s5 = {
           var r, o;
           switch (e) {
             case nD:
-              r = cn(nD, t);
+              r = cr(nD, t);
               break;
             case nL:
             case nV:
@@ -9321,7 +9321,7 @@ var s5 = {
               break;
             case nq:
             case "encryptedPin":
-              r = cn(e, t)
+              r = cr(e, t)
           }
           return {
             fieldToFocus: o,
@@ -9331,7 +9331,7 @@ var s5 = {
           var o, a;
           switch (e) {
             case nD:
-              o = cn(nD, t);
+              o = cr(nD, t);
               break;
             case nL:
             case nV:
@@ -9341,7 +9341,7 @@ var s5 = {
               a = nV;
               break;
             case nU:
-              1 === r ? o = cn(nU, t) : a = n ? nj : nL
+              1 === r ? o = cr(nU, t) : a = n ? nj : nL
           }
           return {
             fieldToFocus: a,
@@ -9353,11 +9353,11 @@ var s5 = {
       a = n.additionalField;
     o ? this.setFocusOnFrame(o, !1) : a && (r = a) && (r.focus(), r.blur(), r.focus())
   },
-  co = function(e) {
-    (s5.__IS_FIREFOX || s5.__IS_IE && s5.__IS_IE <= 11) && this.handleShiftTab(e)
+  ca = function(e) {
+    (s3.__IS_FIREFOX || s3.__IS_IE && s3.__IS_IE <= 11) && this.handleShiftTab(e)
   };
 
-function ca(e, t) {
+function ci(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9368,62 +9368,62 @@ function ca(e, t) {
   return n
 }
 
-function ci(e) {
+function cs(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = ca(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ci(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = ca(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ci(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function cs(e) {
-  ng(this.state.securedFields, nD) && sM(ci(ci({
+function cc(e) {
+  ng(this.state.securedFields, nD) && sT(cs(cs({
     txVariant: this.state.type
   }, e), {}, {
     fieldType: nD,
     numKey: this.state.securedFields[nD].numKey
-  }), sT(this.state, nD), this.config.loadingContext)
+  }), sB(this.state, nD), this.config.loadingContext)
 }
 
-function cc(e) {
+function cl(e) {
   var t = this,
     n = ng(this.state.securedFields, nV) && ng(this.state.securedFields, nj) ? [nV, nj] : [nL];
   N()(n).call(n, function(n) {
-    sM(ci(ci({
+    sT(cs(cs({
       txVariant: t.state.type
     }, e), {}, {
       fieldType: n,
       numKey: t.state.securedFields[n].numKey
-    }), sT(t.state, n), t.config.loadingContext)
+    }), sB(t.state, n), t.config.loadingContext)
   })
 }
 
-function cl(e, t) {
+function cu(e, t) {
   var n, r, o = "card" === this.state.type;
   if (!e || !l()(e).length) return o ? (this.sendBrandToCardSF({
     brand: "reset"
   }), this.sendExpiryDatePolicyToSF({
     expiryDatePolicy: n2
-  })) : t && this.processBrand(ci(ci({}, t), {}, {
+  })) : t && this.processBrand(cs(cs({}, t), {}, {
     fieldType: nD
   })), void("card" === this.state.type && ng(this.state.securedFields, nL) && (this.state.securedFields[nL].expiryDatePolicy = n2));
   var a = e.supportedBrands[0],
     i = a.brand,
-    s = null !== (n = a.expiryDatePolicy) && void 0 !== n ? n : !0 === a.showExpiryDate ? n2 : n4,
+    s = null != (n = a.expiryDatePolicy) ? n : !0 === a.showExpiryDate ? n2 : n4,
     c = {
       brand: i,
       cvcPolicy: a.cvcPolicy,
       expiryDatePolicy: s,
       cvcText: "Security code",
-      showSocialSecurityNumber: null !== (r = a.showSocialSecurityNumber) && void 0 !== r && r,
+      showSocialSecurityNumber: null != (r = a.showSocialSecurityNumber) && r,
       fieldType: nD
     };
   if (this.processBrand(c), o) {
-    var u = ci({
+    var u = cs({
       brand: i,
       enableLuhnCheck: !1 !== e.supportedBrands[0].enableLuhnCheck
     }, (null == a ? void 0 : a.panLength) && {
@@ -9436,18 +9436,18 @@ function cl(e, t) {
   ng(this.state.securedFields, nU) && (this.state.securedFields[nU].cvcPolicy = a.cvcPolicy), ng(this.state.securedFields, nL) ? this.state.securedFields[nL].expiryDatePolicy = s : ng(this.state.securedFields, nV) && ng(this.state.securedFields, nj) && (this.state.securedFields[nV].expiryDatePolicy = s, this.state.securedFields[nj].expiryDatePolicy = s), this.validateForm()
 }
 
-function cu(e, t, n) {
+function cd(e, t, n) {
   var r = e.csfState,
     o = e.csfConfig;
-  ng(r.securedFields, t) && sM({
+  ng(r.securedFields, t) && sT({
     txVariant: r.type,
     fieldType: t,
     focus: !0,
     numKey: r.securedFields[t].numKey
-  }, sT(r, t), o.loadingContext)
+  }, sB(r, t), o.loadingContext)
 }
 
-function cd(e, t) {
+function cp(e, t) {
   var n = e.csfState,
     r = e.csfConfig,
     o = l()(t || {});
@@ -9461,12 +9461,12 @@ function cd(e, t) {
       };
       N()(o).call(o, function(e) {
         a[e] = t[e]
-      }), sM(a, sT(n, e), r.loadingContext)
+      }), sT(a, sB(n, e), r.loadingContext)
     })
   }
 }
 
-function cp(e, t) {
+function ch(e, t) {
   var n = e.csfState,
     r = e.csfConfig,
     o = e.csfProps,
@@ -9487,20 +9487,20 @@ function cp(e, t) {
       }(i, n.brand);
     if (!s) return null;
     var c = "card" === n.type || "bcmc" === n.type;
-    c && s && (n.brand = i, ng(n.securedFields, nU)) && sM({
+    c && s && (n.brand = i, ng(n.securedFields, nU)) && sT({
       txVariant: n.type,
       brand: i.brand,
       fieldType: nU,
       cvcPolicy: t.cvcPolicy,
       numKey: n.securedFields[nU].numKey
-    }, sT(n, nU), r.loadingContext);
-    var u = c ? sK(["brand", "cvcPolicy", "cvcText", "expiryDatePolicy", "showSocialSecurityNumber"]).from(t) : null;
+    }, sB(n, nU), r.loadingContext);
+    var u = c ? sz(["brand", "cvcPolicy", "cvcText", "expiryDatePolicy", "showSocialSecurityNumber"]).from(t) : null;
     return u && u.brand && (u.type = n.type, u.rootNode = o.rootNode, a.onBrand(u)), !0
   }
   return !1
 }
 
-function ch(e, t) {
+function cf(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9511,7 +9511,7 @@ function ch(e, t) {
   return n
 }
 
-function cf(e, t) {
+function cm(e, t) {
   var n = e.csfState,
     r = e.csfConfig,
     o = e.csfCallbacks;
@@ -9519,9 +9519,9 @@ function cf(e, t) {
     var a = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n, r, o = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = ch(Object(o), !0)).call(n, function(t) {
+        t % 2 ? N()(n = cf(Object(o), !0)).call(n, function(t) {
           (0, w.Z)(e, t, o[t])
-        }) : m() ? v()(e, m()(o)) : N()(r = ch(Object(o))).call(r, function(t) {
+        }) : m() ? v()(e, m()(o)) : N()(r = cf(Object(o))).call(r, function(t) {
           b()(e, t, h()(o, t))
         })
       }
@@ -9538,28 +9538,28 @@ function cf(e, t) {
     if (!((4 === (null == l ? void 0 : l.length) || 2 === (null == l ? void 0 : l.length)) && !isNaN(ee()(l)))) return !1;
     var u = em()(l).call(l, -2),
       d = I()(i = "".concat(c, "/")).call(i, u);
-    return ng(n.securedFields, nL) ? sM({
+    return ng(n.securedFields, nL) ? sT({
       txVariant: n.type,
       fieldType: nL,
       autoComplete: d,
       numKey: n.securedFields[nL].numKey
-    }, sT(n, nL), r.loadingContext) : (ng(n.securedFields, nV) && sM({
+    }, sB(n, nL), r.loadingContext) : (ng(n.securedFields, nV) && sT({
       txVariant: n.type,
       fieldType: nV,
       autoComplete: c,
       numKey: n.securedFields[nV].numKey
-    }, sT(n, nV), r.loadingContext), ng(n.securedFields, nj) && eu()(function() {
-      sM({
+    }, sB(n, nV), r.loadingContext), ng(n.securedFields, nj) && eu()(function() {
+      sT({
         txVariant: n.type,
         fieldType: nj,
         autoComplete: u,
         numKey: n.securedFields[nj].numKey
-      }, sT(n, nj), r.loadingContext)
+      }, sB(n, nj), r.loadingContext)
     }, 0)), !0
   }
 }
 
-function cm(e, t) {
+function cy(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9570,16 +9570,16 @@ function cm(e, t) {
   return n
 }
 
-function cy(e, t) {
+function cv(e, t) {
   var n = e.csfState,
     r = e.csfProps,
     o = e.csfCallbacks,
     a = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n, r, o = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = cm(Object(o), !0)).call(n, function(t) {
+        t % 2 ? N()(n = cy(Object(o), !0)).call(n, function(t) {
           (0, w.Z)(e, t, o[t])
-        }) : m() ? v()(e, m()(o)) : N()(r = cm(Object(o))).call(r, function(t) {
+        }) : m() ? v()(e, m()(o)) : N()(r = cy(Object(o))).call(r, function(t) {
           b()(e, t, h()(o, t))
         })
       }
@@ -9587,10 +9587,10 @@ function cy(e, t) {
     }({}, t);
   delete a.numKey, a.rootNode = r.rootNode, a.type = n.type;
   var i = a.fieldType;
-  a.focus ? n.currentFocusObject !== i && (n.currentFocusObject = i, s5.__IS_IOS && !n.registerFieldForIos && this.handleIOSTouchEvents()) : n.currentFocusObject === i && (n.currentFocusObject = null), a.currentFocusObject = n.currentFocusObject, o.onFocus(a)
+  a.focus ? n.currentFocusObject !== i && (n.currentFocusObject = i, s3.__IS_IOS && !n.registerFieldForIos && this.handleIOSTouchEvents()) : n.currentFocusObject === i && (n.currentFocusObject = null), a.currentFocusObject = n.currentFocusObject, o.onFocus(a)
 }
 
-function cv(e, t, n) {
+function cg(e, t, n) {
   var r = e.csfState,
     o = e.csfCallbacks;
   if (r.iframeConfigCount += 1, window._b$dl && console.log("### handleIframeConfigFeedback::csfState.iframeConfigCount:: ", r.iframeConfigCount, "who=", n.fieldType), r.isConfigured) {
@@ -9604,7 +9604,7 @@ function cv(e, t, n) {
   return !1
 }
 
-function cg(e, t) {
+function cb(e, t) {
   var n = e.csfState,
     r = e.csfConfig,
     o = e.csfProps,
@@ -9616,13 +9616,13 @@ function cg(e, t) {
     rootNode: o.rootNode
   };
   if (a.onConfigSuccess(i), 1 === n.numIframes && r.isCreditCardType) {
-    if ("card" === n.type) return void sS("ERROR: Payment method with a single secured field - but 'type' has not been set to a specific card brand");
-    var s, c = sL.getCardByBrand(n.type);
-    c && (null !== (s = c.cvcPolicy) && void 0 !== s ? s : n2) !== n2 && t()
+    if ("card" === n.type) return void sN("ERROR: Payment method with a single secured field - but 'type' has not been set to a specific card brand");
+    var s, c = sV.getCardByBrand(n.type);
+    c && (null != (s = c.cvcPolicy) ? s : n2) !== n2 && t()
   }
 }
 
-function cb(e) {
+function c_(e) {
   var t = e.csfState,
     n = e.csfProps,
     r = e.csfCallbacks,
@@ -9642,7 +9642,7 @@ function cb(e) {
   }
 }
 
-function c_(e, t) {
+function ck(e, t) {
   var n = e.csfState,
     r = e.csfCallbacks,
     o = t.binValue,
@@ -9655,7 +9655,7 @@ function c_(e, t) {
   a && (s.encryptedBin = a, s.uuid = i), r.onBinValue(s)
 }
 
-function ck() {
+function cC() {
   var e = this;
   this.postMessageToAllIframes({
     destroy: !0
@@ -9666,11 +9666,11 @@ function ck() {
     n && n.destroy(), e.state.securedFields[t] = null
   }), this.destroyTouchendListener(), this.destroyTouchstartListener(), this.state.securedFields = {}
 }
-var cC = function() {
-    sx("".concat(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "You cannot use secured fields", " - they are not yet configured. Use the 'onConfigSuccess' callback to know when this has happened."))
+var cZ = function() {
+    sP("".concat(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "You cannot use secured fields", " - they are not yet configured. Use the 'onConfigSuccess' callback to know when this has happened."))
   },
-  cZ = function(e) {
-    (0, ea.Z)(r, sw);
+  cw = function(e) {
+    (0, ea.Z)(r, sS);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
       if ("function" == typeof Proxy) return !0;
@@ -9716,14 +9716,14 @@ var cC = function() {
         csfProps: t.props,
         csfCallbacks: t.callbacks
       };
-      return t.configHandler = sP, t.callbacksHandler = sR, t.validateForm = io(cb, o), t.isConfigured = io(cg, o, t.validateForm), t.handleIframeConfigFeedback = io(cv, o, t.isConfigured), t.processBrand = io(cp, o), t.handleValidation = sE, t.handleEncryption = sB, t.createSecuredFields = s0, t.createNonCardSecuredFields = s1, t.createCardSecuredFields = s8, t.setupSecuredField = s6, t.postMessageToAllIframes = io(cd, o), t.setFocusOnFrame = io(cu, o), t.handleFocus = io(cy, o), t.handleIOSTouchEvents = s9, t.touchendListener = R()(s3).call(s3, (0, eo.Z)(t)), t.destroyTouchendListener = ce, t.touchstartListener = R()(s7).call(s7, (0, eo.Z)(t)), t.destroyTouchstartListener = ct, t.handleSFShiftTab = co, t.handleShiftTab = cr, t.destroySecuredFields = ck, t.processAutoComplete = io(cf, o), t.handleBinValue = io(c_, o), t.handleBrandFromBinLookup = cl, t.sendBrandToCardSF = cs, t.sendExpiryDatePolicyToSF = cc, t.init(), t
+      return t.configHandler = sA, t.callbacksHandler = sF, t.validateForm = ia(c_, o), t.isConfigured = ia(cb, o, t.validateForm), t.handleIframeConfigFeedback = ia(cg, o, t.isConfigured), t.processBrand = ia(ch, o), t.handleValidation = sI, t.handleEncryption = sD, t.createSecuredFields = s1, t.createNonCardSecuredFields = s2, t.createCardSecuredFields = s4, t.setupSecuredField = s5, t.postMessageToAllIframes = ia(cp, o), t.setFocusOnFrame = ia(cd, o), t.handleFocus = ia(cv, o), t.handleIOSTouchEvents = ce, t.touchendListener = R()(s7).call(s7, (0, eo.Z)(t)), t.destroyTouchendListener = ct, t.touchstartListener = R()(s9).call(s9, (0, eo.Z)(t)), t.destroyTouchstartListener = cn, t.handleSFShiftTab = ca, t.handleShiftTab = co, t.destroySecuredFields = cC, t.processAutoComplete = ia(cm, o), t.handleBinValue = ia(ck, o), t.handleBrandFromBinLookup = cu, t.sendBrandToCardSF = cc, t.sendExpiryDatePolicyToSF = cl, t.init(), t
     }
     return (0, Z.Z)(r, [{
       key: "init",
       value: function() {
         this.configHandler(this.props), this.callbacksHandler(this.props.callbacks);
         var e = this.createSecuredFields();
-        this.state.numIframes = this.state.originalNumIframes = e, this.state.isKCP = !!this.props.isKCP, s5.__IS_IOS && this.config.shouldDisableIOSArrowKeys && (this.hasGenuineTouchEvents = !1, a$(document, "touchstart", this.touchstartListener))
+        this.state.numIframes = this.state.originalNumIframes = e, this.state.isKCP = !!this.props.isKCP, s3.__IS_IOS && this.config.shouldDisableIOSArrowKeys && (this.hasGenuineTouchEvents = !1, aQ(document, "touchstart", this.touchstartListener))
       }
     }, {
       key: "createReturnObject",
@@ -9733,38 +9733,38 @@ var cC = function() {
           updateStyles: function(t) {
             e.state.isConfigured ? e.postMessageToAllIframes({
               styleObject: t
-            }) : sx("You cannot update the secured fields styling - they are not yet configured. Use the 'onConfigSuccess' callback to know when this has happened.")
+            }) : sP("You cannot update the secured fields styling - they are not yet configured. Use the 'onConfigSuccess' callback to know when this has happened.")
           },
           setFocusOnFrame: function(t) {
-            e.state.isConfigured ? e.setFocusOnFrame(t) : cC("You cannot set focus on any secured field")
+            e.state.isConfigured ? e.setFocusOnFrame(t) : cZ("You cannot set focus on any secured field")
           },
           isValidated: function(t, n) {
-            e.state.isConfigured ? ng(e.state.securedFields, t) && (e.state.securedFields[t].hasError = !0, "" === e.state.securedFields[t].errorType && (e.state.securedFields[t].errorType = "isValidated"), sM({
+            e.state.isConfigured ? ng(e.state.securedFields, t) && (e.state.securedFields[t].hasError = !0, "" === e.state.securedFields[t].errorType && (e.state.securedFields[t].errorType = "isValidated"), sT({
               txVariant: e.state.type,
               fieldType: t,
               externalValidation: !0,
               code: n,
               numKey: e.state.securedFields[t].numKey
-            }, sT(e.state, t), e.config.loadingContext)) : cC("You cannot set validated on any secured field")
+            }, sB(e.state, t), e.config.loadingContext)) : cZ("You cannot set validated on any secured field")
           },
           hasUnsupportedCard: function(t, n) {
-            e.state.isConfigured ? ng(e.state.securedFields, t) && (e.state.securedFields[t].hasError = !!n, e.state.securedFields[t].errorType = n, sM({
+            e.state.isConfigured ? ng(e.state.securedFields, t) && (e.state.securedFields[t].hasError = !!n, e.state.securedFields[t].errorType = n, sT({
               txVariant: e.state.type,
               fieldType: t,
               unsupportedCard: !!n,
               code: n,
               numKey: e.state.securedFields[t].numKey
-            }, sT(e.state, t), e.config.loadingContext)) : cC("You cannot set hasUnsupportedCard on any secured field")
+            }, sB(e.state, t), e.config.loadingContext)) : cZ("You cannot set hasUnsupportedCard on any secured field")
           },
           destroy: function() {
-            e.state.isConfigured ? e.destroySecuredFields() : cC("You cannot destroy secured fields")
+            e.state.isConfigured ? e.destroySecuredFields() : cZ("You cannot destroy secured fields")
           },
           brandsFromBinLookup: function(t, n) {
             if (!e.config.isCreditCardType) return null;
-            e.state.isConfigured ? e.handleBrandFromBinLookup(t, n) : cC("You cannot set pass brands to secured fields")
+            e.state.isConfigured ? e.handleBrandFromBinLookup(t, n) : cZ("You cannot set pass brands to secured fields")
           },
           addSecuredField: function(t) {
-            var n = aY(e.props.rootNode, '[data-cse="'.concat(t, '"]'));
+            var n = aG(e.props.rootNode, '[data-cse="'.concat(t, '"]'));
             n && (e.state.numIframes += 1, e.setupSecuredField(n))
           },
           removeSecuredField: function(t) {
@@ -9789,7 +9789,7 @@ var cC = function() {
     }]), r
   }();
 
-function cw(e, t) {
+function cS(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9799,38 +9799,38 @@ function cw(e, t) {
   }
   return n
 }
-var cS = function(e) {
+var cN = function(e) {
     if (!e) throw Error("No securedFields configuration object defined");
     var t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n, r, o = null != arguments[t] ? arguments[t] : {};
-        t % 2 ? N()(n = cw(Object(o), !0)).call(n, function(t) {
+        t % 2 ? N()(n = cS(Object(o), !0)).call(n, function(t) {
           (0, w.Z)(e, t, o[t])
-        }) : m() ? v()(e, m()(o)) : N()(r = cw(Object(o))).call(r, function(t) {
+        }) : m() ? v()(e, m()(o)) : N()(r = cS(Object(o))).call(r, function(t) {
           b()(e, t, h()(o, t))
         })
       }
       return e
     }({}, e);
     try {
-      var n = sL.isGenericCardType(t.type);
+      var n = sV.isGenericCardType(t.type);
       t.type = n ? "card" : t.type
     } catch (e) {
       t.type = "card"
     }
-    if (!ng(t, "rootNode")) return sS('ERROR: SecuredFields configuration object is missing a "rootNode" property');
+    if (!ng(t, "rootNode")) return sN('ERROR: SecuredFields configuration object is missing a "rootNode" property');
     if (function(e) {
-        return !it(e) || !(!("number" == typeof e || ir(e) && "[object Number]" === a7.call(e)) || 0 !== e && !e4()(e)) || !(!a9(e) && !("string" == typeof e || ir(e) && "[object String]" === a7.call(e)) || 0 !== e.length) || !(!ir(e) || 0 !== l()(e).length)
-      }(t.clientKey)) return sx('WARNING: AdyenCheckout configuration object is missing a "clientKey" property.');
-    var r = cN(t.rootNode);
-    return r ? (t.rootNode = r, new cZ(t).createReturnObject()) : sS("ERROR: SecuredFields cannot find a valid rootNode element for ".concat(t.type))
+        return !ir(e) || !(!("number" == typeof e || io(e) && "[object Number]" === a9.call(e)) || 0 !== e && !e4()(e)) || !(!ie(e) && !("string" == typeof e || io(e) && "[object String]" === a9.call(e)) || 0 !== e.length) || !(!io(e) || 0 !== l()(e).length)
+      }(t.clientKey)) return sP('WARNING: AdyenCheckout configuration object is missing a "clientKey" property.');
+    var r = cx(t.rootNode);
+    return r ? (t.rootNode = r, new cw(t).createReturnObject()) : sN("ERROR: SecuredFields cannot find a valid rootNode element for ".concat(t.type))
   },
-  cN = function(e) {
+  cx = function(e) {
     var t;
-    return "object" === (0, _.Z)(e) && (t = e), "string" != typeof e || (t = aY(document, e)) ? t : null
+    return "object" === (0, _.Z)(e) && (t = e), "string" != typeof e || (t = aG(document, e)) ? t : null
   };
 
-function cx(e, t) {
+function cP(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9841,25 +9841,25 @@ function cx(e, t) {
   return n
 }
 
-function cP(e) {
+function cA(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = cx(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = cP(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = cx(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = cP(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function cA(e, t, n, r) {
+function cR(e, t, n, r) {
   return (t !== n8 && t !== n4 || 0 !== n[e]) && r[e]
 }
-var cR = function(e) {
+var cF = function(e) {
     this.numCharsInField[e.fieldType] = e.numChars, this.props.onFocus(e)
   },
-  cF = function(e) {
+  cO = function(e) {
     var t = this;
     return !this.state.detectedUnsupportedBrands && (this.setState({
       isSfpValid: e.allValid
@@ -9869,7 +9869,7 @@ var cR = function(e) {
       }), t.props.onAllValid(e)
     }), !0)
   },
-  cO = function(e) {
+  cE = function(e) {
     var t = this;
     this.setState({
       autoCompleteName: e.value
@@ -9882,14 +9882,14 @@ var cR = function(e) {
       })
     }), this.props.onAutoComplete(e)
   },
-  cE = function(e) {
+  cI = function(e) {
     var t = this;
     return (!this.state.detectedUnsupportedBrands || e.fieldType !== nD) && (this.setState(function(t) {
       var n;
       return {
-        data: cP(cP({}, t.data), {}, (0, w.Z)({}, e.encryptedFieldName, e.blob)),
-        valid: cP(cP({}, t.valid), {}, (0, w.Z)({}, e.encryptedFieldName, e.valid)),
-        errors: cP(cP({}, t.errors), {}, (0, w.Z)({}, e.fieldType, null !== (n = t.errors[e.fieldType]) && void 0 !== n && n))
+        data: cA(cA({}, t.data), {}, (0, w.Z)({}, e.encryptedFieldName, e.blob)),
+        valid: cA(cA({}, t.valid), {}, (0, w.Z)({}, e.encryptedFieldName, e.valid)),
+        errors: cA(cA({}, t.errors), {}, (0, w.Z)({}, e.fieldType, null != (n = t.errors[e.fieldType]) && n))
       }
     }, function() {
       t.props.onChange(t.state, {
@@ -9898,7 +9898,7 @@ var cR = function(e) {
       }), t.props.onFieldValid(e)
     }), !0)
   },
-  cI = function(e) {
+  cM = function(e) {
     var t = this;
     clearTimeout(this.csfLoadFailTimeout), this.csfLoadFailTimeout = null, this.props.onLoad(e), this.csfConfigFailTimeout = eu()(function() {
       "ready" !== t.state.status && (t.setState({
@@ -9906,7 +9906,7 @@ var cR = function(e) {
       }), t.props.onError(new nv("ERROR", "secured fields have failed to configure")))
     }, this.csfConfigFailTimeoutMS)
   },
-  cM = function(e) {
+  cT = function(e) {
     var t = this;
     clearTimeout(this.csfConfigFailTimeout), this.csfConfigFailTimeout = null, this.setState({
       status: "ready"
@@ -9914,41 +9914,41 @@ var cR = function(e) {
       t.props.onConfigSuccess(e)
     })
   },
-  cT = function(e) {
+  cB = function(e) {
     var t = this;
     this.setState(function(n) {
-      var r, o, a = cA(nU, e.cvcPolicy, t.numCharsInField, n.errors),
-        i = 1 === t.numDateFields ? cA(nL, e.expiryDatePolicy, t.numCharsInField, n.errors) : null,
-        s = 2 === t.numDateFields ? cA(nV, e.expiryDatePolicy, t.numCharsInField, n.errors) : null,
-        c = 2 === t.numDateFields ? cA(nj, e.expiryDatePolicy, t.numCharsInField, n.errors) : null;
+      var r, o, a = cR(nU, e.cvcPolicy, t.numCharsInField, n.errors),
+        i = 1 === t.numDateFields ? cR(nL, e.expiryDatePolicy, t.numCharsInField, n.errors) : null,
+        s = 2 === t.numDateFields ? cR(nV, e.expiryDatePolicy, t.numCharsInField, n.errors) : null,
+        c = 2 === t.numDateFields ? cR(nj, e.expiryDatePolicy, t.numCharsInField, n.errors) : null;
       return {
         brand: e.brand,
-        cvcPolicy: null !== (r = e.cvcPolicy) && void 0 !== r ? r : n2,
+        cvcPolicy: null != (r = e.cvcPolicy) ? r : n2,
         showSocialSecurityNumber: e.showSocialSecurityNumber,
-        errors: cP(cP(cP(cP(cP({}, n.errors), ie(a) && (0, w.Z)({}, nU, a)), ie(i) && (0, w.Z)({}, nL, i)), ie(s) && (0, w.Z)({}, nV, s)), ie(c) && (0, w.Z)({}, nj, c)),
-        expiryDatePolicy: null !== (o = e.expiryDatePolicy) && void 0 !== o ? o : n2
+        errors: cA(cA(cA(cA(cA({}, n.errors), it(a) && (0, w.Z)({}, nU, a)), it(i) && (0, w.Z)({}, nL, i)), it(s) && (0, w.Z)({}, nV, s)), it(c) && (0, w.Z)({}, nj, c)),
+        expiryDatePolicy: null != (o = e.expiryDatePolicy) ? o : n2
       }
     }, function() {
       t.props.onChange(t.state, {
         event: "handleOnBrand"
       });
-      var n, r, o = null !== (n = null === (r = t.props.brandsConfiguration[e.brand]) || void 0 === r ? void 0 : r.icon) && void 0 !== n ? n : sq(e.brand, t.props.resources);
-      t.props.onBrand(cP(cP({}, e), {}, {
+      var n, r, o = null != (n = null == (r = t.props.brandsConfiguration[e.brand]) ? void 0 : r.icon) ? n : sH(e.brand, t.props.resources);
+      t.props.onBrand(cA(cA({}, e), {}, {
         brandImageUrl: o
       }))
     })
   },
-  cB = function(e) {
+  cD = function(e) {
     var t = this,
       n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
       r = e.error;
     return this.setState(function(t) {
-      return cP(cP(cP({
-        errors: cP(cP({}, t.errors), {}, (0, w.Z)({}, e.fieldType, r || !1))
+      return cA(cA(cA({
+        errors: cA(cA({}, t.errors), {}, (0, w.Z)({}, e.fieldType, r || !1))
       }, n && {
-        data: cP(cP({}, t.data), {}, (0, w.Z)({}, nD, void 0))
+        data: cA(cA({}, t.data), {}, (0, w.Z)({}, nD, void 0))
       }), n && {
-        valid: cP(cP({}, t.valid), {}, (0, w.Z)({}, nD, !1))
+        valid: cA(cA({}, t.valid), {}, (0, w.Z)({}, nD, !1))
       }), n && {
         isSfpValid: !1
       })
@@ -9959,7 +9959,7 @@ var cR = function(e) {
       })
     }), !0
   },
-  cD = function() {
+  cL = function() {
     var e = this;
     this.setState({
       status: "ready"
@@ -9969,12 +9969,12 @@ var cR = function(e) {
       })
     })
   },
-  cL = function(e) {
+  cV = function(e) {
     var t, n;
-    null === (t = (n = this.props).disableIOSArrowKeys) || void 0 === t || t.call(n, e)
+    null == (t = (n = this.props).disableIOSArrowKeys) || t.call(n, e)
   };
 
-function cV(e, t) {
+function cj(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -9985,18 +9985,18 @@ function cV(e, t) {
   return n
 }
 
-function cj(e) {
+function cU(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = cV(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = cj(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = cV(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = cj(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var cU = function(e) {
+var cq = function(e) {
   (0, ea.Z)(r, ec.wA);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -10016,10 +10016,10 @@ var cU = function(e) {
   });
 
   function r(e) {
-    (0, C.Z)(this, r), l = n.call(this, e), (0, w.Z)((0, eo.Z)(l), "csfLoadFailTimeout", void 0), (0, w.Z)((0, eo.Z)(l), "csfLoadFailTimeoutMS", void 0), (0, w.Z)((0, eo.Z)(l), "csfConfigFailTimeout", void 0), (0, w.Z)((0, eo.Z)(l), "csfConfigFailTimeoutMS", void 0), (0, w.Z)((0, eo.Z)(l), "numCharsInField", void 0), (0, w.Z)((0, eo.Z)(l), "rootNode", void 0), (0, w.Z)((0, eo.Z)(l), "numDateFields", void 0), (0, w.Z)((0, eo.Z)(l), "csf", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnLoad", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnConfigSuccess", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnFieldValid", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnAllValid", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnBrand", void 0), (0, w.Z)((0, eo.Z)(l), "handleFocus", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnError", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnAutoComplete", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnNoDataRequired", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnTouchstartIOS", void 0), (0, w.Z)((0, eo.Z)(l), "state", void 0), (0, w.Z)((0, eo.Z)(l), "props", void 0), (0, w.Z)((0, eo.Z)(l), "issuingCountryCode", void 0), (0, w.Z)((0, eo.Z)(l), "setRootNode", function(e) {
+    var t, o, a, i, s, c, l;
+    return (0, C.Z)(this, r), l = n.call(this, e), (0, w.Z)((0, eo.Z)(l), "csfLoadFailTimeout", void 0), (0, w.Z)((0, eo.Z)(l), "csfLoadFailTimeoutMS", void 0), (0, w.Z)((0, eo.Z)(l), "csfConfigFailTimeout", void 0), (0, w.Z)((0, eo.Z)(l), "csfConfigFailTimeoutMS", void 0), (0, w.Z)((0, eo.Z)(l), "numCharsInField", void 0), (0, w.Z)((0, eo.Z)(l), "rootNode", void 0), (0, w.Z)((0, eo.Z)(l), "numDateFields", void 0), (0, w.Z)((0, eo.Z)(l), "csf", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnLoad", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnConfigSuccess", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnFieldValid", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnAllValid", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnBrand", void 0), (0, w.Z)((0, eo.Z)(l), "handleFocus", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnError", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnAutoComplete", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnNoDataRequired", void 0), (0, w.Z)((0, eo.Z)(l), "handleOnTouchstartIOS", void 0), (0, w.Z)((0, eo.Z)(l), "state", void 0), (0, w.Z)((0, eo.Z)(l), "props", void 0), (0, w.Z)((0, eo.Z)(l), "issuingCountryCode", void 0), (0, w.Z)((0, eo.Z)(l), "setRootNode", function(e) {
       l.rootNode = e
-    });
-    var t, o, a, i, s, c, l, u = {
+    }), l.state = {
       status: "loading",
       brand: e.type,
       errors: {},
@@ -10029,8 +10029,7 @@ var cU = function(e) {
       expiryDatePolicy: n2,
       isSfpValid: !1,
       hasKoreanFields: e.hasKoreanFields
-    };
-    return l.state = u, l.csfLoadFailTimeout = null, l.csfLoadFailTimeoutMS = 3e4, l.csfConfigFailTimeout = null, l.csfConfigFailTimeoutMS = 15e3, l.numCharsInField = {}, l.handleOnLoad = R()(cI).call(cI, (0, eo.Z)(l)), l.handleOnConfigSuccess = R()(cM).call(cM, (0, eo.Z)(l)), l.handleOnFieldValid = R()(cE).call(cE, (0, eo.Z)(l)), l.handleOnAllValid = R()(cF).call(cF, (0, eo.Z)(l)), l.handleOnBrand = R()(cT).call(cT, (0, eo.Z)(l)), l.handleFocus = R()(cR).call(cR, (0, eo.Z)(l)), l.handleOnError = R()(cB).call(cB, (0, eo.Z)(l)), l.handleOnNoDataRequired = R()(cD).call(cD, (0, eo.Z)(l)), l.handleOnAutoComplete = R()(cO).call(cO, (0, eo.Z)(l)), l.handleOnTouchstartIOS = R()(cL).call(cL, (0, eo.Z)(l)), l.processBinLookupResponse = R()(t = l.processBinLookupResponse).call(t, (0, eo.Z)(l)), l.setFocusOn = R()(o = l.setFocusOn).call(o, (0, eo.Z)(l)), l.updateStyles = R()(a = l.updateStyles).call(a, (0, eo.Z)(l)), l.handleUnsupportedCard = R()(i = l.handleUnsupportedCard).call(i, (0, eo.Z)(l)), l.showValidation = R()(s = l.showValidation).call(s, (0, eo.Z)(l)), l.destroy = R()(c = l.destroy).call(c, (0, eo.Z)(l)), l
+    }, l.csfLoadFailTimeout = null, l.csfLoadFailTimeoutMS = 3e4, l.csfConfigFailTimeout = null, l.csfConfigFailTimeoutMS = 15e3, l.numCharsInField = {}, l.handleOnLoad = R()(cM).call(cM, (0, eo.Z)(l)), l.handleOnConfigSuccess = R()(cT).call(cT, (0, eo.Z)(l)), l.handleOnFieldValid = R()(cI).call(cI, (0, eo.Z)(l)), l.handleOnAllValid = R()(cO).call(cO, (0, eo.Z)(l)), l.handleOnBrand = R()(cB).call(cB, (0, eo.Z)(l)), l.handleFocus = R()(cF).call(cF, (0, eo.Z)(l)), l.handleOnError = R()(cD).call(cD, (0, eo.Z)(l)), l.handleOnNoDataRequired = R()(cL).call(cL, (0, eo.Z)(l)), l.handleOnAutoComplete = R()(cE).call(cE, (0, eo.Z)(l)), l.handleOnTouchstartIOS = R()(cV).call(cV, (0, eo.Z)(l)), l.processBinLookupResponse = R()(t = l.processBinLookupResponse).call(t, (0, eo.Z)(l)), l.setFocusOn = R()(o = l.setFocusOn).call(o, (0, eo.Z)(l)), l.updateStyles = R()(a = l.updateStyles).call(a, (0, eo.Z)(l)), l.handleUnsupportedCard = R()(i = l.handleUnsupportedCard).call(i, (0, eo.Z)(l)), l.showValidation = R()(s = l.showValidation).call(s, (0, eo.Z)(l)), l.destroy = R()(c = l.destroy).call(c, (0, eo.Z)(l)), l
   }
   return (0, Z.Z)(r, [{
     key: "componentDidMount",
@@ -10040,7 +10039,7 @@ var cU = function(e) {
       var r = (e = this.rootNode) ? J()(t = em()(Array.prototype).call(e.querySelectorAll('[data-cse*="encrypted"]'))).call(t, function(e) {
           return e.getAttribute("data-cse")
         }) : [],
-        o = Y()(r).call(r, sZ, {});
+        o = Y()(r).call(r, sw, {});
       this.setState({
         valid: o
       }), N()(r).call(r, function(e) {
@@ -10101,7 +10100,7 @@ var cU = function(e) {
           maskSecurityCode: this.props.maskSecurityCode,
           shouldDisableIOSArrowKeys: !!this.props.disableIOSArrowKeys
         };
-      this.csf = cS(r), this.csfLoadFailTimeout = eu()(function() {
+      this.csf = cN(r), this.csfLoadFailTimeout = eu()(function() {
         "ready" !== t.state.status && (t.setState({
           status: "csfLoadFailure"
         }), t.props.onError(new nv("ERROR", "secured field iframes have failed to load")))
@@ -10114,16 +10113,16 @@ var cU = function(e) {
         t = !1;
       this.props.koreanAuthenticationRequired && (t = this.issuingCountryCode ? "kr" === this.issuingCountryCode : "kr" === this.props.countryCode), this.state.hasKoreanFields && !t && (this.setState(function(e) {
         return {
-          data: cj(cj({}, e.data), {}, (0, w.Z)({}, nq, void 0)),
-          valid: cj(cj({}, e.valid), {}, (0, w.Z)({}, nq, !1)),
-          errors: cj(cj({}, e.errors), {}, (0, w.Z)({}, nq, !1)),
+          data: cU(cU({}, e.data), {}, (0, w.Z)({}, nq, void 0)),
+          valid: cU(cU({}, e.valid), {}, (0, w.Z)({}, nq, !1)),
+          errors: cU(cU({}, e.errors), {}, (0, w.Z)({}, nq, !1)),
           hasKoreanFields: !1
         }
       }, function() {
         e.props.onChange(e.state)
       }), this.csf.removeSecuredField(nq), this.csf.setKCPStatus(!1)), !this.state.hasKoreanFields && t && (this.setState(function(e) {
         return {
-          valid: cj(cj({}, e.valid), {}, (0, w.Z)({}, nq, !1)),
+          valid: cU(cU({}, e.valid), {}, (0, w.Z)({}, nq, !1)),
           hasKoreanFields: !0,
           isSfpValid: !1
         }
@@ -10196,9 +10195,9 @@ var cU = function(e) {
       var e = this,
         t = l()(this.state.errors);
       return Y()(t).call(t, function(t, n) {
-        return e.state.errors[n] ? t[n] = cj({
+        return e.state.errors[n] ? t[n] = cU({
           isValid: !1,
-          errorMessage: aq(e.state.errors[n]),
+          errorMessage: aH(e.state.errors[n]),
           errorI18n: e.props.i18n.get(e.state.errors[n]),
           error: e.state.errors[n],
           rootNode: e.rootNode
@@ -10213,14 +10212,14 @@ var cU = function(e) {
       var n, r = this;
       this.state.detectedUnsupportedBrands && (this.setState(function(e) {
         return {
-          errors: cj(cj({}, e.errors), {}, (0, w.Z)({}, nD, !1)),
+          errors: cU(cU({}, e.errors), {}, (0, w.Z)({}, nD, !1)),
           detectedUnsupportedBrands: null
         }
       }), this.csf && e) && this.handleUnsupportedCard({
         type: "card",
         fieldType: "encryptedCardNumber",
         error: ""
-      }), this.issuingCountryCode = null == e || null === (n = e.issuingCountryCode) || void 0 === n ? void 0 : n.toLowerCase();
+      }), this.issuingCountryCode = null == e || null == (n = e.issuingCountryCode) ? void 0 : n.toLowerCase();
       var o = (null == t ? void 0 : t.brand) && O()(n1).call(n1, t.brand);
       o && this.setState(t, function() {
         r.props.onChange(r.state)
@@ -10236,7 +10235,7 @@ var cU = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(cU, "defaultProps", {
+(0, w.Z)(cq, "defaultProps", {
   type: "card",
   keypadFix: !0,
   rootNode: null,
@@ -10258,8 +10257,8 @@ var cU = function(e) {
   onAutoComplete: function() {},
   styles: {}
 });
-var cq = ((pd = {}).full = "full", pd.partial = "partial", pd.none = "none", pd),
-  cH = {
+var cH = ((pp = {}).full = "full", pp.partial = "partial", pp.none = "none", pp),
+  cK = {
     type: "card",
     setComponentRef: function() {},
     hasHolderName: !1,
@@ -10270,7 +10269,7 @@ var cq = ((pd = {}).full = "full", pd.partial = "partial", pd.none = "none", pd)
     showBrandsUnderCardNumber: !0,
     positionHolderNameOnTop: !1,
     billingAddressRequired: !1,
-    billingAddressMode: cq.full,
+    billingAddressMode: cH.full,
     billingAddressRequiredFields: ["street", "houseNumberOrName", "postalCode", "city", "stateOrProvince", "country"],
     installmentOptions: {},
     configuration: {
@@ -10296,21 +10295,21 @@ var cq = ((pd = {}).full = "full", pd.partial = "partial", pd.none = "none", pd)
     styles: {},
     placeholders: {}
   },
-  cK = {
+  cz = {
     base: {
       caretColor: "#0075FF"
     }
   };
 
-function cz(e) {
+function cW(e) {
   var t;
   return eP()(t = e.replace(/[^0-9]/g, "")).call(t)
 }
 
-function cW() {
+function cY() {
   var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
   if ("string" != typeof e) return "";
-  var t = cz(e);
+  var t = cW(e);
   return t.length > 11 ? t.replace(/^(\d{2})(\d{3})(\d{3})?(\d{4})?(\d{1,2})?$/g, function(e, t, n, r) {
     var o, a, i, s, c = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "",
       l = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : "";
@@ -10318,17 +10317,17 @@ function cW() {
   }) : t.replace(/\W/gi, "").replace(/(\d{3})(?!$)/g, "$1.").replace(/(.{11}).(\d{1,2})$/g, "$1-$2")
 }
 
-function cY(e) {
+function cG(e) {
   return /(^\d{3}\.\d{3}\.\d{3}-\d{2}$)|(^\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2}$)/.test(e)
 }
-var cG = {
-    socialSecurityNumber: cW
+var c$ = {
+    socialSecurityNumber: cY
   },
-  c$ = {
+  cQ = {
     socialSecurityNumber: [{
       modes: ["blur"],
       validate: function(e) {
-        return rZ(e) ? null : cY(e)
+        return rZ(e) ? null : cG(e)
       },
       errorMessage: "boleto.socialSecurityNumber.invalid"
     }],
@@ -10354,7 +10353,7 @@ var cG = {
     }]
   };
 
-function cQ(e, t) {
+function cJ(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -10364,14 +10363,14 @@ function cQ(e, t) {
   }
   return n
 }
-var cJ = function(e) {
+var cX = function(e) {
     return J()(e).call(e, function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = cQ(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = cJ(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = cQ(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = cJ(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -10379,14 +10378,14 @@ var cJ = function(e) {
       }({}, e)
     })
   },
-  cX = function(e) {
+  c0 = function(e) {
     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "mc",
       n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "visa",
-      r = cJ(e);
+      r = cX(e);
     return r[0].brand !== t && r[0].brand !== n && te()(r).call(r), r.length = 1, r
   };
 
-function c0(e, t, n) {
+function c1(e, t, n) {
   var r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
     o = e.type,
     a = e.cvcPolicy,
@@ -10403,11 +10402,11 @@ function c0(e, t, n) {
         brand: t && "card" !== o ? o : null,
         cvcPolicy: a
       }), void(r.current = 0);
-      if (null !== (n = e.supportedBrands) && void 0 !== n && n.length) {
+      if (null != (n = e.supportedBrands) && n.length) {
         var f, m = (f = e.supportedBrands, Y()(f).call(f, function(e, t) {
             return e || O()(n7).call(n7, t.brand)
           }, !1)),
-          y = m ? cX(e.supportedBrands) : cJ(e.supportedBrands);
+          y = m ? c0(e.supportedBrands) : cX(e.supportedBrands);
         if (y.length > 1) {
           var v = (d = (s = (0, q.Z)(y, 2))[0], h = s[1], {
             dualBrandSelectElements: [{
@@ -10446,25 +10445,25 @@ function c0(e, t, n) {
     }
   }
 }
-var c1 = "holderName",
-  c2 = "socialSecurityNumber",
-  c8 = [nD, nL, nU],
-  c4 = [c1, nD, nL, nU],
-  c6 = [nD, nL, nU, c1],
-  c5 = ["taxNumber", nq],
-  c3 = I()(c8).call(c8, c5),
-  c7 = I()(c4).call(c4, c5),
-  c9 = I()(c6).call(c6, c5),
-  le = I()(c8).call(c8, [c2]),
-  lt = I()(c4).call(c4, [c2]),
-  ln = I()(c6).call(c6, [c2]),
-  lr = function(e, t) {
+var c2 = "holderName",
+  c8 = "socialSecurityNumber",
+  c4 = [nD, nL, nU],
+  c6 = [c2, nD, nL, nU],
+  c5 = [nD, nL, nU, c2],
+  c3 = ["taxNumber", nq],
+  c7 = I()(c4).call(c4, c3),
+  c9 = I()(c6).call(c6, c3),
+  le = I()(c5).call(c5, c3),
+  lt = I()(c4).call(c4, [c8]),
+  ln = I()(c6).call(c6, [c8]),
+  lr = I()(c5).call(c5, [c8]),
+  lo = function(e, t) {
     return t({
       type: "card" === e ? "nocard" : e || "nocard",
       extension: "svg"
     })(e)
   },
-  lo = function(e, t, n) {
+  la = function(e, t, n) {
     switch (e) {
       case "socialSecurityNumber":
         return t.get("boleto.".concat(e));
@@ -10480,11 +10479,11 @@ var c1 = "holderName",
     }
   };
 
-function la(e) {
+function li(e) {
   var t;
-  return null !== (t = n9[e]) && void 0 !== t ? t : e
+  return null != (t = n9[e]) ? t : e
 }
-var li = function(e) {
+var ls = function(e) {
   var t, n = e.children,
     r = e.status,
     o = ep()("adyen-checkout__loading-input__form", "LoadingWrapper-module_loading-input__form__ffCKa", (0, w.Z)({}, "LoadingWrapper-module_loading-input__form--loading__7GmVo", "loading" === r)),
@@ -10500,7 +10499,7 @@ var li = function(e) {
   }, n))
 };
 
-function ls(e) {
+function lc(e) {
   var t = e.frontCVC,
     n = void 0 !== t && t,
     r = e.fieldLabel,
@@ -10583,7 +10582,7 @@ function ls(e) {
     stroke: "#C12424"
   })))
 }
-var lc = {
+var ll = {
   "card-input__wrapper": "CardInput-module_card-input__wrapper__wXSCw",
   "card-input__icon": "CardInput-module_card-input__icon__3Cz5M",
   "card-input__form": "CardInput-module_card-input__form__fRo1r",
@@ -10597,17 +10596,17 @@ var lc = {
   "revolving-plan-installments__disabled": "CardInput-module_revolving-plan-installments__disabled__VhNj2"
 };
 
-function ll(e) {
+function lu(e) {
   var t, n = ((0, w.Z)(t = {}, n6, e.encryptedFieldType), (0, w.Z)(t, n5, e["data-info"]), (0, w.Z)(t, n3, e.uniqueId), (0, w.Z)(t, "className", e.className), t);
   return (0, ec.h)("span", n, e.children)
 }
-var lu = function(e, t) {
+var ld = function(e, t) {
   return (0, ec.h)("div", (0, er.Z)({}, e, {
     "aria-hidden": "true"
   }), t)
 };
 
-function ld(e) {
+function lp(e) {
   var t, n, r = e.label,
     o = e.onFocusField,
     a = void 0 === o ? function() {} : o,
@@ -10624,7 +10623,7 @@ function ld(e) {
     y = nl().i18n,
     v = ep()(void 0 === c ? "" : c, ((0, w.Z)(t = {
       "adyen-checkout__field__cvc": !0
-    }, lc["adyen-checkout__card__cvc__input--hidden"], m === n4), (0, w.Z)(t, "adyen-checkout__field__cvc--optional", m === n8), t)),
+    }, ll["adyen-checkout__card__cvc__input--hidden"], m === n4), (0, w.Z)(t, "adyen-checkout__field__cvc--optional", m === n8), t)),
     g = ep()((0, w.Z)({
       "adyen-checkout__input": !0,
       "adyen-checkout__input--small": !0,
@@ -10632,7 +10631,7 @@ function ld(e) {
       "adyen-checkout__input--error": s,
       "adyen-checkout__input--focus": u,
       "adyen-checkout__input--valid": p
-    }, lc["adyen-checkout__input"], !0)),
+    }, ll["adyen-checkout__input"], !0)),
     b = m !== n8 ? r : y.get("creditCard.cvcField.title.optional");
   return (0, ec.h)(r_, {
     label: b,
@@ -10650,17 +10649,17 @@ function ld(e) {
     i18n: y,
     errorVisibleToScreenReader: !1,
     useLabelElement: !1,
-    renderAlternativeToLabel: lu
-  }, (0, ec.h)(ll, {
+    renderAlternativeToLabel: ld
+  }, (0, ec.h)(lu, {
     encryptedFieldType: nU,
     className: g
-  }), (0, ec.h)(ls, {
+  }), (0, ec.h)(lc, {
     frontCVC: void 0 !== h && h,
     fieldLabel: b
   }))
 }
 
-function lp(e) {
+function lh(e) {
   var t, n, r, o, a = e.brand,
     i = e.hasCVC,
     s = e.onFocusField,
@@ -10693,7 +10692,7 @@ function lp(e) {
     readonly: !0,
     disabled: !0,
     dir: "ltr"
-  })), i && (0, ec.h)(ld, (0, er.Z)({
+  })), i && (0, ec.h)(lp, (0, er.Z)({
     cvcPolicy: u,
     error: c[nU] ? m.get(c[nU]) : null,
     focused: "encryptedSecurityCode" === d,
@@ -10709,7 +10708,7 @@ function lp(e) {
   }))))
 }
 
-function lh(e, t) {
+function lf(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -10720,19 +10719,19 @@ function lh(e, t) {
   return n
 }
 
-function lf(e) {
+function lm(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = lh(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = lf(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = lh(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = lf(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function lm(e) {
+function ly(e) {
   var t, n, r, o, a = nl().i18n,
     i = e.amount,
     s = e.brand,
@@ -10747,7 +10746,7 @@ function lm(e) {
     y = (0, q.Z)(m, 2),
     v = y[0],
     g = y[1],
-    b = null == u || null === (t = u.plans) || void 0 === t ? void 0 : O()(t).call(t, "revolving"),
+    b = null == u || null == (t = u.plans) ? void 0 : O()(t).call(t, "revolving"),
     _ = function(e) {
       f(Number(e.target.value))
     },
@@ -10771,9 +10770,9 @@ function lm(e) {
     };
   return t1(function() {
     var e, t;
-    null != u && null !== (e = $()(u)) && void 0 !== e && O()(e).call(e, h) || f(null !== (t = null == u ? void 0 : u.preselectedValue) && void 0 !== t ? t : null == u ? void 0 : $()(u)[0])
+    null != u && null != (e = $()(u)) && O()(e).call(e, h) || f(null != (t = null == u ? void 0 : u.preselectedValue) ? t : null == u ? void 0 : $()(u)[0])
   }, [s]), t1(function() {
-    var e = lf(lf({
+    var e = lm(lm({
       value: h
     }, b && "revolving" === v && {
       plan: v,
@@ -10805,7 +10804,7 @@ function lm(e) {
     },
     value: v
   }), (0, ec.h)(r_, {
-    className: "".concat("installments" !== v ? lc["revolving-plan-installments__disabled"] : lc["revolving-plan-installments"]),
+    className: "".concat("installments" !== v ? ll["revolving-plan-installments__disabled"] : ll["revolving-plan-installments"]),
     classNameModifiers: ["revolving-plan-installments"],
     name: "",
     useLabelElement: !1,
@@ -10829,15 +10828,15 @@ function lm(e) {
     selectedValue: h,
     onChange: _,
     name: "installments",
-    readonly: 1 === (null == u || null === (r = $()(u)) || void 0 === r ? void 0 : r.length)
+    readonly: 1 === (null == u || null == (r = $()(u)) ? void 0 : r.length)
   }))) : null
 }
-lm.defaultProps = {
+ly.defaultProps = {
   brand: "",
   amount: {},
   onChange: function() {}
 };
-var ly = function(e) {
+var lv = function(e) {
   var t = e.sfpState,
     n = e.setFocusOn,
     r = e.cvcPolicy,
@@ -10852,9 +10851,9 @@ var ly = function(e) {
     p = e.expiryMonth,
     h = e.expiryYear,
     f = e.disclaimerMessage;
-  return (0, ec.h)(li, {
+  return (0, ec.h)(ls, {
     status: t.status
-  }, (0, ec.h)(lp, {
+  }, (0, ec.h)(lh, {
     errors: t.errors,
     brand: t.brand,
     hasCVC: l,
@@ -10865,53 +10864,53 @@ var ly = function(e) {
     lastFour: d,
     expiryMonth: p,
     expiryYear: h
-  }), a && (0, ec.h)(lm, {
+  }), a && (0, ec.h)(ly, {
     amount: c,
     brand: t.brand,
     installmentOptions: u,
     onChange: i,
     type: s ? "amount" : "months"
-  }), f && (0, ec.h)(i6, {
+  }), f && (0, ec.h)(i5, {
     message: f.message.replace("%{linkText}", "%#".concat(f.linkText, "%#")),
     urls: [f.link]
   }))
 };
 
-function lv(e) {
+function lg(e) {
   var t, n, r = e.brand,
     o = e.brandsConfiguration,
     a = nT(),
-    i = null !== (t = null === (n = (void 0 === o ? {} : o)[r]) || void 0 === n ? void 0 : n.icon) && void 0 !== t ? t : lr("card" === r ? "nocard" : r, a);
+    i = null != (t = null == (n = (void 0 === o ? {} : o)[r]) ? void 0 : n.icon) ? t : lo("card" === r ? "nocard" : r, a);
   return (0, ec.h)("img", {
-    className: "".concat(lc["card-input__icon"], " adyen-checkout__card__cardNumber__brandIcon"),
+    className: "".concat(ll["card-input__icon"], " adyen-checkout__card__cardNumber__brandIcon"),
     onError: function(e) {
       e.target.style.cssText = "display: none"
     },
-    alt: la(r),
+    alt: li(r),
     src: i
   })
 }
-var lg = function(e) {
+var lb = function(e) {
   var t, n, r, o = e.brand,
     a = e.onClick,
     i = e.dataValue,
     s = e.notSelected,
     c = e.brandsConfiguration,
     l = nT(),
-    u = null !== (t = null === (n = (void 0 === c ? {} : c)[o]) || void 0 === n ? void 0 : n.icon) && void 0 !== t ? t : lr("card" === o ? "nocard" : o, l);
+    u = null != (t = null == (n = (void 0 === c ? {} : c)[o]) ? void 0 : n.icon) ? t : lo("card" === o ? "nocard" : o, l);
   return (0, ec.h)("img", {
-    className: I()(r = "".concat(lc["card-input__icon"], " ")).call(r, s ? "adyen-checkout__card__cardNumber__brandIcon--not-selected" : "", " adyen-checkout__card__cardNumber__brandIcon"),
+    className: I()(r = "".concat(ll["card-input__icon"], " ")).call(r, s ? "adyen-checkout__card__cardNumber__brandIcon--not-selected" : "", " adyen-checkout__card__cardNumber__brandIcon"),
     onError: function(e) {
       e.target.style.cssText = "display: none"
     },
-    alt: la(o),
+    alt: li(o),
     src: u,
     onClick: a,
     "data-value": i
   })
 };
 
-function lb(e) {
+function l_(e) {
   var t, n = nl().i18n,
     r = e.error,
     o = void 0 === r ? "" : r,
@@ -10938,15 +10937,15 @@ function lb(e) {
     i18n: n,
     errorVisibleToScreenReader: !1,
     useLabelElement: !1,
-    renderAlternativeToLabel: lu
-  }, (0, ec.h)(ll, {
+    renderAlternativeToLabel: ld
+  }, (0, ec.h)(lu, {
     encryptedFieldType: nD,
     className: ep()((t = {
       "adyen-checkout__input": !0,
       "adyen-checkout__input--large": !0,
       "adyen-checkout__card__cardNumber__input": !0
-    }, (0, w.Z)(t, lc["adyen-checkout__input"], !0), (0, w.Z)(t, "adyen-checkout__input--error", o), (0, w.Z)(t, "adyen-checkout__input--focus", e.focused), (0, w.Z)(t, "adyen-checkout__input--valid", i), (0, w.Z)(t, "adyen-checkout__card__cardNumber__input--noBrand", !e.showBrandIcon), t))
-  }, e.showBrandIcon && !l && (0, ec.h)(lv, {
+    }, (0, w.Z)(t, ll["adyen-checkout__input"], !0), (0, w.Z)(t, "adyen-checkout__input--error", o), (0, w.Z)(t, "adyen-checkout__input--focus", e.focused), (0, w.Z)(t, "adyen-checkout__input--valid", i), (0, w.Z)(t, "adyen-checkout__card__cardNumber__input--noBrand", !e.showBrandIcon), t))
+  }, e.showBrandIcon && !l && (0, ec.h)(lg, {
     brandsConfiguration: e.brandsConfiguration,
     brand: e.brand
   })), l && !o && (0, ec.h)("div", {
@@ -10954,7 +10953,7 @@ function lb(e) {
       "adyen-checkout__card__dual-branding__buttons--active": i
     }])
   }, J()(l).call(l, function(t) {
-    return (0, ec.h)(lg, {
+    return (0, ec.h)(lb, {
       key: t.id,
       brand: t.id,
       brandsConfiguration: e.brandsConfiguration,
@@ -10965,7 +10964,7 @@ function lb(e) {
   })))
 }
 
-function l_(e) {
+function lk(e) {
   var t, n, r = e.label,
     o = e.focused,
     a = e.filled,
@@ -10981,7 +10980,7 @@ function l_(e) {
     m = nT(),
     y = ep()(void 0 === s ? "" : s, ((0, w.Z)(t = {
       "adyen-checkout__field__exp-date": !0
-    }, lc["adyen-checkout__card__exp-date__input--hidden"], h === n4), (0, w.Z)(t, "adyen-checkout__field__exp-date--optional", h === n8), t)),
+    }, ll["adyen-checkout__card__exp-date__input--hidden"], h === n4), (0, w.Z)(t, "adyen-checkout__field__exp-date--optional", h === n8), t)),
     v = h !== n8 ? r : I()(n = "".concat(r, " ")).call(n, f.get("field.title.optional"));
   return (0, ec.h)(r_, {
     label: v,
@@ -10999,16 +10998,16 @@ function l_(e) {
     i18n: f,
     errorVisibleToScreenReader: !1,
     useLabelElement: !1,
-    renderAlternativeToLabel: lu
-  }, (0, ec.h)(ll, {
+    renderAlternativeToLabel: ld
+  }, (0, ec.h)(lu, {
     encryptedFieldType: nL,
-    className: ep()("adyen-checkout__input", "adyen-checkout__input--small", "adyen-checkout__card__exp-date__input", [lc["adyen-checkout__input"]], {
+    className: ep()("adyen-checkout__input", "adyen-checkout__input--small", "adyen-checkout__card__exp-date__input", [ll["adyen-checkout__input"]], {
       "adyen-checkout__input--error": l,
       "adyen-checkout__input--focus": o,
       "adyen-checkout__input--valid": d
     })
   }), (0, ec.h)("span", {
-    className: ep()("adyen-checkout__field__exp-date_hint_wrapper", [lc["checkout__field__exp-date_hint_wrapper"]], {
+    className: ep()("adyen-checkout__field__exp-date_hint_wrapper", [ll["checkout__field__exp-date_hint_wrapper"]], {
       "adyen-checkout__field__exp-date_hint_wrapper--hidden": l || d
     })
   }, (0, ec.h)("img", {
@@ -11019,7 +11018,7 @@ function l_(e) {
     alt: v
   })))
 }
-var lk = function(e) {
+var lC = function(e) {
   var t = e.brands,
     n = e.activeBrand;
   return null != t && t.length ? (0, ec.h)("span", {
@@ -11034,12 +11033,12 @@ var lk = function(e) {
       className: "adyen-checkout__card__brands__brand-wrapper"
     }, (0, ec.h)(o7, {
       src: n,
-      alt: la(t)
+      alt: li(t)
     }))
   })) : null
 };
 
-function lC(e) {
+function lZ(e) {
   var t = e.brand,
     n = e.brandsIcons,
     r = e.brandsConfiguration,
@@ -11064,7 +11063,7 @@ function lC(e) {
     });
   return (0, ec.h)("div", {
     className: "adyen-checkout__card__form"
-  }, (0, ec.h)(lb, {
+  }, (0, ec.h)(l_, {
     brand: t,
     brandsConfiguration: r,
     error: v(s, nD),
@@ -11077,12 +11076,12 @@ function lC(e) {
     dualBrandingElements: o,
     dualBrandingChangeHandler: a,
     dualBrandingSelected: i
-  }), f && (0, ec.h)(lk, {
+  }), f && (0, ec.h)(lC, {
     activeBrand: t,
     brands: g
   }), (0, ec.h)("div", {
-    className: ep()("adyen-checkout__card__exp-cvc adyen-checkout__field-wrapper", (0, w.Z)({}, lc["adyen-checkout__card__exp-cvc__exp-date__input--hidden"], d === n4))
-  }, (0, ec.h)(l_, {
+    className: ep()("adyen-checkout__card__exp-cvc adyen-checkout__field-wrapper", (0, w.Z)({}, ll["adyen-checkout__card__exp-cvc__exp-date__input--hidden"], d === n4))
+  }, (0, ec.h)(lk, {
     error: v(s, nL),
     focused: c === nL,
     isValid: !!m.encryptedExpiryMonth && !!m.encryptedExpiryYear,
@@ -11091,7 +11090,7 @@ function lC(e) {
     onFocusField: p,
     className: "adyen-checkout__field--50",
     expiryDatePolicy: d
-  }), l && (0, ec.h)(ld, {
+  }), l && (0, ec.h)(lp, {
     error: v(s, nU),
     focused: c === nU,
     cvcPolicy: u,
@@ -11104,11 +11103,11 @@ function lC(e) {
   })))
 }
 
-function lZ(e) {
+function lw(e) {
   var t, n = nl().i18n,
     r = t4(function() {
       var t;
-      return (null === (t = e.value) || void 0 === t ? void 0 : t.length) > 6 ? n.get("creditCard.taxNumber.labelAlt") : n.get("creditCard.taxNumber.label")
+      return (null == (t = e.value) ? void 0 : t.length) > 6 ? n.get("creditCard.taxNumber.labelAlt") : n.get("creditCard.taxNumber.label")
     }, [e.value]);
   return (0, ec.h)("div", {
     className: "adyen-checkout__card__kcp-authentication"
@@ -11122,7 +11121,7 @@ function lZ(e) {
     name: "kcpTaxNumberOrDOB"
   }, (0, ec.h)(r7, {
     name: "kcpTaxNumberOrDOB",
-    className: "adyen-checkout__card__kcp-taxNumber__input ".concat(lc["adyen-checkout__input"]),
+    className: "adyen-checkout__card__kcp-taxNumber__input ".concat(ll["adyen-checkout__input"]),
     placeholder: n.get("creditCard.taxNumber.placeholder"),
     maxLength: 10,
     minLength: 6,
@@ -11144,16 +11143,16 @@ function lZ(e) {
     isValid: e.encryptedPasswordState.valid,
     dir: "ltr",
     name: "encryptedPassword"
-  }, (0, ec.h)(ll, {
+  }, (0, ec.h)(lu, {
     encryptedFieldType: "encryptedPassword",
     className: ep()((t = {
       "adyen-checkout__input": !0,
       "adyen-checkout__input--large": !0
-    }, (0, w.Z)(t, lc["adyen-checkout__input"], !0), (0, w.Z)(t, "adyen-checkout__input--error", e.encryptedPasswordState.errors), (0, w.Z)(t, "adyen-checkout__input--valid", e.encryptedPasswordState.valid), (0, w.Z)(t, "adyen-checkout__input--focus", "encryptedPassword" === e.focusedElement), t))
+    }, (0, w.Z)(t, ll["adyen-checkout__input"], !0), (0, w.Z)(t, "adyen-checkout__input--error", e.encryptedPasswordState.errors), (0, w.Z)(t, "adyen-checkout__input--valid", e.encryptedPasswordState.valid), (0, w.Z)(t, "adyen-checkout__input--focus", "encryptedPassword" === e.focusedElement), t))
   })))
 }
 
-function lw(e) {
+function lS(e) {
   var t = e.onBlur,
     n = e.onInput,
     r = e.valid,
@@ -11181,11 +11180,11 @@ function lw(e) {
     disabled: void 0 !== c && c
   }))
 }
-var lS = ["storeDetails"];
+var lN = ["storeDetails"];
 
-function lN(e) {
+function lx(e) {
   var t = e.storeDetails,
-    n = (0, k.Z)(e, lS),
+    n = (0, k.Z)(e, lN),
     r = nl().i18n,
     o = tX(void 0 !== t && t),
     a = (0, q.Z)(o, 2),
@@ -11204,7 +11203,7 @@ function lN(e) {
   }))
 }
 
-function lx(e) {
+function lP(e) {
   var t = e.onBlur,
     n = e.onInput,
     r = e.placeholder,
@@ -11223,7 +11222,7 @@ function lx(e) {
     i18n: l
   }, (0, ec.h)(rH, {
     name: "holderName",
-    className: "adyen-checkout__card__holderName__input ".concat(lc["adyen-checkout__input"]),
+    className: "adyen-checkout__card__holderName__input ".concat(ll["adyen-checkout__input"]),
     placeholder: r || l.get("creditCard.holderName.placeholder"),
     autocomplete: "cc-name",
     value: o,
@@ -11233,7 +11232,7 @@ function lx(e) {
     disabled: c
   }))
 }
-var lP = function(e) {
+var lA = function(e) {
   var t = e.data,
     n = e.valid,
     r = e.errors,
@@ -11279,7 +11278,7 @@ var lP = function(e) {
     q = e.showBrandsUnderCardNumber,
     H = e.iOSFocusedField,
     K = e.disclaimerMessage,
-    z = (0, ec.h)(lx, {
+    z = (0, ec.h)(lP, {
       required: D,
       placeholder: V.holderName,
       value: h.holderName,
@@ -11289,9 +11288,9 @@ var lP = function(e) {
       onInput: o("holderName", "input"),
       disabled: H && "holderName" !== H
     });
-  return (0, ec.h)(li, {
+  return (0, ec.h)(ls, {
     status: a.status
-  }, B && j && z, (0, ec.h)(lC, {
+  }, B && j && z, (0, ec.h)(lZ, {
     showBrandIcon: U,
     showBrandsUnderCardNumber: q,
     brand: a.brand,
@@ -11307,7 +11306,7 @@ var lP = function(e) {
     dualBrandingElements: v.length > 0 && v,
     dualBrandingChangeHandler: g.handleDualBrandSelection,
     dualBrandingSelected: b
-  }), B && !j && z, _ && (0, ec.h)(lZ, {
+  }), B && !j && z, _ && (0, ec.h)(lw, {
     onFocusField: i,
     focusedElement: c,
     encryptedPasswordState: {
@@ -11323,7 +11322,7 @@ var lP = function(e) {
     disabled: H && "kcpTaxNumberOrDOB" !== H
   }), k && (0, ec.h)("div", {
     className: "adyen-checkout__card__socialSecurityNumber"
-  }, (0, ec.h)(lw, {
+  }, (0, ec.h)(lS, {
     onBlur: o("socialSecurityNumber", "blur"),
     onInput: o("socialSecurityNumber", "input"),
     error: null == r ? void 0 : r.socialSecurityNumber,
@@ -11331,9 +11330,9 @@ var lP = function(e) {
     data: C,
     required: !0,
     disabled: H && "socialSecurityNumber" !== H
-  })), M && (0, ec.h)(lN, {
+  })), M && (0, ec.h)(lx, {
     onChange: Z
-  }), l && (0, ec.h)(lm, {
+  }), l && (0, ec.h)(ly, {
     amount: A,
     brand: a.brand,
     installmentOptions: L,
@@ -11350,30 +11349,30 @@ var lP = function(e) {
     specifications: x,
     iOSFocusedField: H,
     onAddressLookup: P
-  }), K && (0, ec.h)(i6, {
+  }), K && (0, ec.h)(i5, {
     message: K.message.replace("%{linkText}", "%#".concat(K.linkText, "%#")),
     urls: [K.link]
   }))
 };
 
-function lA(e, t) {
+function lR(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
   return r
 }
-var lR = function(e, t) {
+var lF = function(e, t) {
     var n = e;
     if ("taxNumber" === n && (n = "kcpTaxNumberOrDOB"), "country" === n || "stateOrProvince" === n) {
-      var r = aY(t.current.rootNode, ".adyen-checkout__field--".concat(n, " .adyen-checkout__filter-input"));
+      var r = aG(t.current.rootNode, ".adyen-checkout__field--".concat(n, " .adyen-checkout__filter-input"));
       null == r || r.focus()
     } else {
-      var o = aY(t.current.rootNode, '[name="'.concat(n, '"]'));
+      var o = aG(t.current.rootNode, '[name="'.concat(n, '"]'));
       null == o || o.focus()
     }
   },
-  lF = ["billingAddress"];
+  lO = ["billingAddress"];
 
-function lO(e, t) {
+function lE(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -11384,28 +11383,28 @@ function lO(e, t) {
   return n
 }
 
-function lE(e) {
+function lI(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = lO(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = lE(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = lO(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = lE(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var lI = function(e) {
+var lM = function(e) {
   var t, n, r, o, a, i, s = t8(null),
     c = t8(!1),
     u = nT(),
-    d = t5(az),
+    d = t5(aW),
     p = d.setSRMessagesFromObjects,
     h = d.setSRMessagesFromStrings,
     f = d.clearSRPanel,
     m = d.shouldMoveFocusSR,
     y = null == p ? void 0 : p({
-      fieldTypeMappingFn: lo
+      fieldTypeMappingFn: la
     }),
     v = t8(null),
     g = function(e) {
@@ -11427,14 +11426,14 @@ var lI = function(e) {
     F = (0, q.Z)(R, 2),
     E = F[0],
     M = F[1],
-    B = tX(lE({}, e.holderNameRequired && {
+    B = tX(lI({}, e.holderNameRequired && {
       holderName: !1
     })),
     D = (0, q.Z)(B, 2),
     L = D[0],
     V = D[1],
-    j = tX(lE({}, e.hasHolderName && {
-      holderName: null !== (o = e.data.holderName) && void 0 !== o ? o : ""
+    j = tX(lI({}, e.hasHolderName && {
+      holderName: null != (o = e.data.holderName) ? o : ""
     })),
     U = (0, q.Z)(j, 2),
     K = U[0],
@@ -11471,9 +11470,9 @@ var lI = function(e) {
     eA = (0, q.Z)(eP, 2),
     eR = eA[0],
     eF = eA[1],
-    eO = e.billingAddressMode !== cq.none && e.billingAddressRequired,
-    eE = e.billingAddressMode == cq.partial ? om : null,
-    eI = t8(eE && (null === (a = e.data) || void 0 === a || null === (a = a.billingAddress) || void 0 === a ? void 0 : a.country)),
+    eO = e.billingAddressMode !== cH.none && e.billingAddressRequired,
+    eE = e.billingAddressMode == cH.partial ? om : null,
+    eI = t8(eE && (null == (a = e.data) || null == (a = a.billingAddress) ? void 0 : a.country)),
     eM = tX(!1),
     eB = (0, q.Z)(eM, 2),
     eD = eB[0],
@@ -11503,8 +11502,8 @@ var lI = function(e) {
     e9 = rV({
       schema: [],
       defaultData: e.data,
-      formatters: cG,
-      rules: c$
+      formatters: c$,
+      rules: cQ
     }),
     te = e9.handleChangeFor,
     tt = e9.triggerValidation,
@@ -11516,7 +11515,7 @@ var lI = function(e) {
     tl = e9.setValid,
     tu = e9.setErrors,
     td = !!l()(e.installmentOptions).length && "debit" !== e.fundingSource,
-    tp = null === (i = e.showInstallmentAmounts) || void 0 === i || i,
+    tp = null == (i = e.showInstallmentAmounts) || i,
     th = "kr" === (null != ek ? ek : e.countryCode),
     tf = e.configuration.koreanAuthenticationRequired && th,
     tm = ez && "auto" === e.configuration.socialSecurityNumberMode || "show" === e.configuration.socialSecurityNumberMode,
@@ -11532,19 +11531,19 @@ var lI = function(e) {
           a = void 0 === o ? null : o,
           i = e.billingAddressRequiredFields,
           s = void 0 === i ? null : i,
-          c = c8,
+          c = c4,
           l = t.hasHolderName && t.holderNameRequired;
-        if (l && (c = t.positionHolderNameOnTop ? c4 : c6), n && (c = c3, l && (c = t.positionHolderNameOnTop ? c7 : c9)), r && (c = le, l && (c = t.positionHolderNameOnTop ? lt : ln)), a) {
+        if (l && (c = t.positionHolderNameOnTop ? c6 : c5), n && (c = c7, l && (c = t.positionHolderNameOnTop ? c9 : le)), r && (c = lt, l && (c = t.positionHolderNameOnTop ? ln : lr)), a) {
           var u, d = P()(u = eJ()(a).call(a, 2)).call(u, function(e) {
               return "number" != typeof e
             }),
             p = d;
           s && (p = P()(d).call(d, function(e) {
             return O()(s).call(s, e)
-          })), c = I()(c8).call(c8, p), l && (c = t.positionHolderNameOnTop ? I()(c4).call(c4, p) : I()(c6).call(c6, p))
+          })), c = I()(c4).call(c4, p), l && (c = t.positionHolderNameOnTop ? I()(c6).call(c6, p) : I()(c5).call(c5, p))
         }
         return c
-      }(lE({
+      }(lI({
         props: e,
         showKCP: tf,
         showBrazilianSSN: tm
@@ -11569,10 +11568,10 @@ var lI = function(e) {
             if (!n) {
               if (ew()(e) || (n = function(e, t) {
                   if (e) {
-                    if ("string" == typeof e) return lA(e, void 0);
+                    if ("string" == typeof e) return lR(e, void 0);
                     var n, r = em()(n = Object.prototype.toString.call(e)).call(n, 8, -1);
                     if ("Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r) return tn()(e);
-                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return lA(e, void 0)
+                    if ("Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r)) return lR(e, void 0)
                   }
                 }(e))) {
                 n && (e = n);
@@ -11622,7 +11621,7 @@ var lI = function(e) {
           for (n.s(); !(e = n.n()).done;) {
             var o = e.value;
             if (!O()(nQ).call(nQ, o)) {
-              lR(o, s);
+              lF(o, s);
               break
             }
             if (!s.current.sfIsOptionalOrHidden(o)) {
@@ -11639,7 +11638,7 @@ var lI = function(e) {
       }))
     }),
     tk = t4(function() {
-      return c0(e, {
+      return c1(e, {
         sfp: s
       }, {
         dualBrandSelectElements: eN,
@@ -11662,10 +11661,10 @@ var lI = function(e) {
     var t;
     ts(I()(t = []).call(t, (0, H.Z)(e.hasHolderName ? ["holderName"] : []), (0, H.Z)(tm ? ["socialSecurityNumber"] : []), (0, H.Z)(tf ? ["taxNumber"] : []), (0, H.Z)(eO ? ["billingAddress"] : [])))
   }, [e.hasHolderName, tm, tf]), t1(function() {
-    z(lE(lE({}, K), {}, {
-      holderName: null !== (t = tr.holderName) && void 0 !== t ? t : "",
+    z(lI(lI({}, K), {}, {
+      holderName: null != (t = tr.holderName) ? t : "",
       taxNumber: tr.taxNumber
-    })), eX(tr.socialSecurityNumber), eO && eq(lE({}, tr.billingAddress)), V(lE(lE({}, L), {}, {
+    })), eX(tr.socialSecurityNumber), eO && eq(lI({}, tr.billingAddress)), V(lI(lI({}, L), {}, {
       holderName: !e.holderNameRequired || ta.holderName,
       socialSecurityNumber: !!ta.socialSecurityNumber && ta.socialSecurityNumber,
       taxNumber: !!ta.taxNumber && ta.taxNumber,
@@ -11675,38 +11674,38 @@ var lI = function(e) {
       var n = (0, q.Z)(t, 2)[1];
       return e || null != n
     }, !1);
-    M(lE(lE({}, E), {}, {
+    M(lI(lI({}, E), {}, {
       holderName: e.holderNameRequired && ti.holderName ? ti.holderName : null,
       socialSecurityNumber: tm && ti.socialSecurityNumber ? ti.socialSecurityNumber : null,
       taxNumber: tf && ti.taxNumber ? ti.taxNumber : null,
       billingAddress: eO && r ? ti.billingAddress : null
     }))
   }, [tr, ta, ti]);
-  var tC = aX($);
+  var tC = a0($);
   t1(function() {
     var t, n, r = L.holderName,
       o = !eO || L.billingAddress,
       a = !tf || !!L.taxNumber && !!L.encryptedPassword,
       i = !tm || !!L.socialSecurityNumber,
       l = s.current.mapErrorsToValidationRuleResult(),
-      u = lE(lE({}, E), l),
+      u = lI(lI({}, E), l),
       d = u.billingAddress,
-      p = lE(lE({}, (0, k.Z)(u, lF)), d),
+      p = lI(lI({}, (0, k.Z)(u, lO)), d),
       v = null == y ? void 0 : y({
         errors: p,
         isValidating: c.current,
         layout: tv(),
-        countrySpecificLabels: null !== (t = Z.getAddressLabelsForCountry(null == eU ? void 0 : eU.country)) && void 0 !== t ? t : null == eE || null === (n = eE.default) || void 0 === n ? void 0 : n.labels
+        countrySpecificLabels: null != (t = Z.getAddressLabelsForCountry(null == eU ? void 0 : eU.country)) ? t : null == eE || null == (n = eE.default) ? void 0 : n.labels
       }),
       g = null == v ? void 0 : v.currentErrorsSortedByLayout;
     switch (Q(g), null == v ? void 0 : v.action) {
       case rf:
-        m && (b = c.current, _ = null == v ? void 0 : v.fieldToFocus, b && (O()(nQ).call(nQ, _) ? s.current.setFocusOn(_) : lR(_, s))), eu()(function() {
+        m && (b = c.current, _ = null == v ? void 0 : v.fieldToFocus, b && (O()(nQ).call(nQ, _) ? s.current.setFocusOn(_) : lF(_, s))), eu()(function() {
           c.current = !1
         }, 300);
         break;
       case rm:
-        var b, _, C, w, S = a0(g, tC, "field"),
+        var b, _, C, w, S = a1(g, tC, "field"),
           N = null == S ? void 0 : S[0];
         N ? h((C = N.errorCode, O()(w = ["error.va.sf-cc-num.03", "error.va.sf-cc-dat.01", "error.va.sf-cc-dat.02", "error.va.sf-cc-dat.03"]).call(w, C)) ? null : N.errorMessage) : f()
     }
@@ -11722,8 +11721,8 @@ var lI = function(e) {
       installments: e8
     })
   }, [K, L, E, eR, eD, e8]);
-  var tZ = e.storedPaymentMethodId ? ly : lP;
-  return (0, ec.h)(ec.HY, null, (0, ec.h)(cU, (0, er.Z)({
+  var tZ = e.storedPaymentMethodId ? lv : lA;
+  return (0, ec.h)(ec.HY, null, (0, ec.h)(cq, (0, er.Z)({
     ref: s
   }, {
     allowedDOMAccess: e.allowedDOMAccess,
@@ -11753,19 +11752,19 @@ var lI = function(e) {
     maskSecurityCode: e.maskSecurityCode,
     resources: e.resources
   }, {
-    styles: lE(lE({}, cK), e.styles),
+    styles: lI(lI({}, cz), e.styles),
     koreanAuthenticationRequired: e.configuration.koreanAuthenticationRequired,
     hasKoreanFields: !(!e.configuration.koreanAuthenticationRequired || "kr" !== e.countryCode),
     onChange: function(t, n) {
       if (t.autoCompleteName) {
         if (e.hasHolderName) {
-          var r, o, a, i = (o = "blur", Y()(a = c$.holderName).call(a, function(e, t) {
+          var r, o, a, i = (o = "blur", Y()(a = cQ.holderName).call(a, function(e, t) {
             var n;
             return e.length || O()(n = t.modes).call(n, o) && e.push(t.validate), e
           }, [])[0])(t.autoCompleteName) ? t.autoCompleteName : null;
           i && (tc("holderName", i), tl("holderName", !0), tu("holderName", null))
         }
-      } else e.autoFocus && _.current > 0 && (!L.encryptedCardNumber && null !== (r = t.valid) && void 0 !== r && r.encryptedCardNumber || L.encryptedCardNumber && t.valid.encryptedCardNumber && "handleOnBrand" === n.event) && t_(), z(lE(lE({}, K), t.data)), M(lE(lE({}, E), t.errors)), V(lE(lE({}, L), t.valid)), ei(t.isSfpValid), eg(t.cvcPolicy), eW(t.showSocialSecurityNumber), eh(t.expiryDatePolicy)
+      } else e.autoFocus && _.current > 0 && (!L.encryptedCardNumber && null != (r = t.valid) && r.encryptedCardNumber || L.encryptedCardNumber && t.valid.encryptedCardNumber && "handleOnBrand" === n.event) && t_(), z(lI(lI({}, K), t.data)), M(lI(lI({}, E), t.errors)), V(lI(lI({}, L), t.valid)), ei(t.isSfpValid), eg(t.cvcPolicy), eW(t.showSocialSecurityNumber), eh(t.expiryDatePolicy)
     },
     onBrand: e.onBrand,
     onFocus: ty,
@@ -11778,9 +11777,9 @@ var lI = function(e) {
         ref: a,
         className: ep()((o = {
           "adyen-checkout__card-input": !0
-        }, (0, w.Z)(o, lc["card-input__wrapper"], !0), (0, w.Z)(o, "adyen-checkout__card-input--".concat(null !== (r = e.fundingSource) && void 0 !== r ? r : "credit"), !0), (0, w.Z)(o, "adyen-checkout__card-input--loading", "loading" === x), o)),
+        }, (0, w.Z)(o, ll["card-input__wrapper"], !0), (0, w.Z)(o, "adyen-checkout__card-input--".concat(null != (r = e.fundingSource) ? r : "credit"), !0), (0, w.Z)(o, "adyen-checkout__card-input--loading", "loading" === x), o)),
         role: "form"
-      }, e.showFormInstruction && (0, ec.h)(a1, null), (0, ec.h)(tZ, (0, er.Z)({}, {
+      }, e.showFormInstruction && (0, ec.h)(a2, null), (0, ec.h)(tZ, (0, er.Z)({}, {
         amount: e.amount,
         billingAddressRequired: e.billingAddressRequired,
         billingAddressRequiredFields: e.billingAddressRequiredFields,
@@ -11841,7 +11840,7 @@ var lI = function(e) {
   }))
 };
 
-function lM(e, t) {
+function lT(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -11851,8 +11850,8 @@ function lM(e, t) {
   }
   return n
 }
-lI.defaultProps = cH;
-var lT = function(e) {
+lM.defaultProps = cK;
+var lB = function(e) {
     var t = null;
     return function(n) {
       !1 !== e.props.doBinLookup && (n.encryptedBin && e.props.clientKey ? (t = n.uuid, o6({
@@ -11865,8 +11864,8 @@ var lT = function(e) {
         requestId: n.uuid
       }).then(function(r) {
         var o;
-        if ((null == r ? void 0 : r.requestId) === t) {
-          if (null !== (o = r.brands) && void 0 !== o && o.length) {
+        if ((null == r ? void 0 : r.requestId) === t)
+          if (null != (o = r.brands) && o.length) {
             var a, i, s = Y()(a = r.brands).call(a, function(e, t) {
               return e.detectedBrands.push(t.brand), e.paymentMethodVariants.push(t.paymentMethodVariant), !0 === t.supported && e.supportedBrands.push(t), e
             }, {
@@ -11877,9 +11876,9 @@ var lT = function(e) {
             if (s.supportedBrands.length) return e.processBinLookupResponse(function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n, r, o = null != arguments[t] ? arguments[t] : {};
-                t % 2 ? N()(n = lM(Object(o), !0)).call(n, function(t) {
+                t % 2 ? N()(n = lT(Object(o), !0)).call(n, function(t) {
                   (0, w.Z)(e, t, o[t])
-                }) : m() ? v()(e, m()(o)) : N()(r = lM(Object(o))).call(r, function(t) {
+                }) : m() ? v()(e, m()(o)) : N()(r = lT(Object(o))).call(r, function(t) {
                   b()(e, t, h()(o, t))
                 })
               }
@@ -11904,7 +11903,7 @@ var lT = function(e) {
               var c = {
                 type: "card",
                 fieldType: "encryptedCardNumber",
-                error: aq(rn),
+                error: aH(rn),
                 detectedBrands: s.detectedBrands
               };
               return e.handleUnsupportedCard(c), void e.onBinLookup({
@@ -11921,8 +11920,8 @@ var lT = function(e) {
             supportedBrands: null,
             paymentMethodVariants: null,
             brands: e.props.brands || nG
-          }), e.processBinLookupResponse({}, !0)
-        } else null != r && r.requestId || e.props.onError(r || {
+          }), e.processBinLookupResponse({}, !0);
+        else null != r && r.requestId || e.props.onError(r || {
           errorType: "binLookup",
           message: "unknownError"
         })
@@ -11935,7 +11934,7 @@ var lT = function(e) {
       }))), e.props.onBinValue && e.props.onBinValue(n)
     }
   },
-  lB = function(e) {
+  lD = function(e) {
     (0, ea.Z)(r, e);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -11956,8 +11955,8 @@ var lT = function(e) {
 
     function r(e, t, o) {
       (0, C.Z)(this, r), s = n.call(this), (0, w.Z)((0, eo.Z)(s), "reason", void 0), (0, w.Z)((0, eo.Z)(s), "message", void 0), (0, w.Z)((0, eo.Z)(s), "source", void 0), (0, w.Z)((0, eo.Z)(s), "scheme", void 0);
-      var a, i, s, c = "error" in e ? null == e || null === (a = e.error) || void 0 === a ? void 0 : a.message : null == e ? void 0 : e.message,
-        l = "error" in e ? null == e || null === (i = e.error) || void 0 === i ? void 0 : i.reason : null == e ? void 0 : e.reason;
+      var a, i, s, c = "error" in e ? null == e || null == (a = e.error) ? void 0 : a.message : null == e ? void 0 : e.message,
+        l = "error" in e ? null == e || null == (i = e.error) ? void 0 : i.reason : null == e ? void 0 : e.reason;
       return s.message = c, s.reason = l, s.source = t, s.scheme = o, s
     }
     return (0, Z.Z)(r, [{
@@ -11968,7 +11967,7 @@ var lT = function(e) {
       }
     }]), r
   }((0, eh.Z)(Error)),
-  lD = function() {
+  lL = function() {
     var e, t, n, r, o, i;
 
     function c(e, t) {
@@ -11985,7 +11984,7 @@ var lT = function(e) {
                 e.next = 4;
                 break
               }
-              return this.scriptElement = new iF(this.sdkUrl), e.next = 4, this.scriptElement.load();
+              return this.scriptElement = new iO(this.sdkUrl), e.next = 4, this.scriptElement.load();
             case 4:
               this.assignSdkReference();
             case 5:
@@ -12012,7 +12011,7 @@ var lT = function(e) {
             case 3:
               return n = e.sent, e.abrupt("return", n);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "checkout", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "checkout", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12034,7 +12033,7 @@ var lT = function(e) {
               e.next = 9;
               break;
             case 5:
-              throw e.prev = 5, e.t0 = e.catch(0), new lB(e.t0, "unbindAppInstance", this.schemeName);
+              throw e.prev = 5, e.t0 = e.catch(0), new lD(e.t0, "unbindAppInstance", this.schemeName);
             case 9:
             case "end":
               return e.stop()
@@ -12056,7 +12055,7 @@ var lT = function(e) {
             case 3:
               return t = e.sent, e.abrupt("return", t);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "isRecognized", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "isRecognized", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12078,7 +12077,7 @@ var lT = function(e) {
             case 3:
               return t = e.sent, e.abrupt("return", t);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "initiateIdentityValidation", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "initiateIdentityValidation", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12102,7 +12101,7 @@ var lT = function(e) {
             case 3:
               return n = e.sent, e.abrupt("return", n);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "getSrcProfile", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "getSrcProfile", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12116,7 +12115,7 @@ var lT = function(e) {
     }]), c
   }();
 
-function lL(e, t) {
+function lV(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -12127,23 +12126,23 @@ function lL(e, t) {
   return n
 }
 
-function lV(e) {
+function lj(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = lL(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = lV(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = lL(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = lV(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var lj = {
+var lU = {
     email: "EMAIL",
     telephoneNumber: "MOBILE_NUMBER"
   },
-  lU = function(e) {
-    (0, ea.Z)(c, lD);
+  lq = function(e) {
+    (0, ea.Z)(c, lL);
     var t, n, r, o, i = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
       if ("function" == typeof Proxy) return !0;
@@ -12169,7 +12168,7 @@ var lj = {
       key: "isSdkIsAvailableOnWindow",
       value: function() {
         var e;
-        return !(null === (e = window.vAdapters) || void 0 === e || !e.VisaSRCI)
+        return !(null == (e = window.vAdapters) || !e.VisaSRCI)
       }
     }, {
       key: "assignSdkReference",
@@ -12183,7 +12182,7 @@ var lj = {
         return s().wrap(function(e) {
           for (var o, a, i, s;;) switch (e.prev = e.next) {
             case 0:
-              return r = lV(lV(lV({}, t), (o = this.customSdkConfiguration, a = void 0, i = void 0, s = void 0, {
+              return r = lj(lj(lj({}, t), (o = this.customSdkConfiguration, a = void 0, i = void 0, s = void 0, {
                 dpaTransactionOptions: {
                   dpaLocale: i = void 0 === (a = o.dpaLocale) ? "en_US" : a,
                   payloadTypeIndicator: "NON_PAYMENT",
@@ -12214,12 +12213,12 @@ var lj = {
             case 0:
               return n = t.identityValue, r = t.type, e.prev = 1, o = {
                 identityValue: n,
-                type: lj[r]
+                type: lU[r]
               }, e.next = 5, this.schemeSdk.identityLookup(o);
             case 5:
               return a = e.sent, e.abrupt("return", a);
             case 9:
-              throw e.prev = 9, e.t0 = e.catch(1), new lB(e.t0, "identityLookup", this.schemeName);
+              throw e.prev = 9, e.t0 = e.catch(1), new lD(e.t0, "identityLookup", this.schemeName);
             case 13:
             case "end":
               return e.stop()
@@ -12241,7 +12240,7 @@ var lj = {
             case 3:
               return n = e.sent, e.abrupt("return", n);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "completeIdentityValidation", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "completeIdentityValidation", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12255,7 +12254,7 @@ var lj = {
     }]), c
   }();
 
-function lq(e, t) {
+function lH(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -12266,23 +12265,23 @@ function lq(e, t) {
   return n
 }
 
-function lH(e) {
+function lK(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = lq(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = lH(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = lq(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = lH(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var lK = {
+var lz = {
     email: "EMAIL_ADDRESS",
     telephoneNumber: "MOBILE_PHONE_NUMBER"
   },
-  lz = function(e) {
-    (0, ea.Z)(c, lD);
+  lW = function(e) {
+    (0, ea.Z)(c, lL);
     var t, n, r, o, i = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
       if ("function" == typeof Proxy) return !0;
@@ -12321,7 +12320,7 @@ var lK = {
         return s().wrap(function(e) {
           for (var o, a, i, s;;) switch (e.prev = e.next) {
             case 0:
-              return r = lH(lH(lH({}, t), (o = this.customSdkConfiguration, a = void 0, i = void 0, s = void 0, {
+              return r = lK(lK(lK({}, t), (o = this.customSdkConfiguration, a = void 0, i = void 0, s = void 0, {
                 dpaTransactionOptions: {
                   dpaLocale: i = void 0 === (a = o.dpaLocale) ? "en_US" : a,
                   paymentOptions: {
@@ -12356,14 +12355,14 @@ var lK = {
             case 0:
               return n = t.identityValue, r = t.type, e.prev = 1, o = {
                 identityValue: n,
-                identityType: lK[r]
+                identityType: lz[r]
               }, e.next = 5, this.schemeSdk.identityLookup({
                 consumerIdentity: o
               });
             case 5:
               return a = e.sent, e.abrupt("return", a);
             case 9:
-              throw e.prev = 9, e.t0 = e.catch(1), new lB(e.t0, "identityLookup", this.schemeName);
+              throw e.prev = 9, e.t0 = e.catch(1), new lD(e.t0, "identityLookup", this.schemeName);
             case 13:
             case "end":
               return e.stop()
@@ -12387,7 +12386,7 @@ var lK = {
             case 3:
               return n = e.sent, e.abrupt("return", n);
             case 7:
-              throw e.prev = 7, e.t0 = e.catch(0), new lB(e.t0, "completeIdentityValidation", this.schemeName);
+              throw e.prev = 7, e.t0 = e.catch(0), new lD(e.t0, "completeIdentityValidation", this.schemeName);
             case 11:
             case "end":
               return e.stop()
@@ -12400,22 +12399,22 @@ var lK = {
       })
     }]), c
   }(),
-  lW = function(e) {
+  lY = function(e) {
     return "fulfilled" === e.status
   },
-  lY = function(e) {
+  lG = function(e) {
     return "rejected" === e.status
   },
-  lG = {
-    visa: lU,
-    mc: lz,
+  l$ = {
+    visa: lq,
+    mc: lW,
     default: null
   },
-  l$ = function(e, t, n) {
-    var r = lG[e] || lG.default;
+  lQ = function(e, t, n) {
+    var r = l$[e] || l$.default;
     return r ? new r(t, n) : null
   },
-  lQ = function() {
+  lJ = function() {
     var e;
 
     function t(e, n) {
@@ -12441,14 +12440,14 @@ var lK = {
             case 2:
               return e.abrupt("return", new(T())(function(e, r) {
                 var o, a = J()(o = n.schemes).call(o, function(e) {
-                    return l$(e, t, n.customSdkConfiguration)
+                    return lQ(e, t, n.customSdkConfiguration)
                   }),
                   i = J()(a).call(a, function(e) {
                     return e.loadSdkScript()
                   });
                 T().allSettled(i).then(function(t) {
-                  eg()(t).call(t, lY) && r(new nv("ERROR", "ClickToPay -> SrcSdkLoader # Unable to load network schemes: ".concat(n.schemes.toString()))), e(P()(a).call(a, function(e, n) {
-                    return lW(t[n])
+                  eg()(t).call(t, lG) && r(new nv("ERROR", "ClickToPay -> SrcSdkLoader # Unable to load network schemes: ".concat(n.schemes.toString()))), e(P()(a).call(a, function(e, n) {
+                    return lY(t[n])
                   }))
                 })
               }));
@@ -12462,18 +12461,18 @@ var lK = {
       })
     }]), t
   }(),
-  lJ = {
+  lX = {
     mc: "Mastercard",
     visa: "Visa"
   },
-  lX = function() {
+  l0 = function() {
     function e(t, n, r) {
       (0, C.Z)(this, e), (0, w.Z)(this, "dateOfCardLastUsed", void 0), (0, w.Z)(this, "panLastFour", void 0), (0, w.Z)(this, "srcDigitalCardId", void 0), (0, w.Z)(this, "scheme", void 0), (0, w.Z)(this, "artUri", void 0), (0, w.Z)(this, "srcCorrelationId", void 0), (0, w.Z)(this, "tokenId", void 0), (0, w.Z)(this, "isExpired", void 0), (0, w.Z)(this, "panExpirationMonth", void 0), (0, w.Z)(this, "panExpirationYear", void 0), (0, w.Z)(this, "descriptorName", void 0), (0, w.Z)(this, "status", null), this.dateOfCardLastUsed = t.dateOfCardLastUsed, this.panLastFour = t.panLastFour, this.srcDigitalCardId = t.srcDigitalCardId, this.descriptorName = t.digitalCardData.descriptorName, this.tokenId = t.tokenId, this.scheme = n, this.artUri = t.digitalCardData.artUri, this.srcCorrelationId = r, this.panExpirationMonth = t.panExpirationMonth, this.panExpirationYear = t.panExpirationYear, this.status = t.digitalCardData.status, this.isExpired = this.confirmCardIsExpired()
     }
     return (0, Z.Z)(e, [{
       key: "title",
       get: function() {
-        return "visa" === this.scheme ? lJ[this.scheme] : this.descriptorName || lJ[this.scheme]
+        return "visa" === this.scheme ? lX[this.scheme] : this.descriptorName || lX[this.scheme]
       }
     }, {
       key: "isDcfPopupEmbedded",
@@ -12492,28 +12491,28 @@ var lK = {
       }
     }]), e
   }(),
-  l0 = "ctpIframe";
+  l1 = "ctpIframe";
 
-function l1(e, t) {
+function l2(e, t) {
   var n, r = t.profiles,
     o = t.srcCorrelationId,
     a = Y()(r).call(r, function(e, n) {
       var r, a, i = J()(r = n.maskedCards).call(r, function(e) {
-        return new lX(e, t.scheme, o)
+        return new l0(e, t.scheme, o)
       });
       return I()(a = []).call(a, (0, H.Z)(e), (0, H.Z)(i))
     }, []);
   return I()(n = []).call(n, (0, H.Z)(e), (0, H.Z)(a))
 }
 
-function l2(e, t) {
+function l8(e, t) {
   return new Date(t.dateOfCardLastUsed).getTime() - new Date(e.dateOfCardLastUsed).getTime()
 }
 
-function l8(e, t) {
+function l4(e, t) {
   return t.isExpired ? e.expiredCards.push(t) : e.availableCards.push(t), e
 }
-var l4 = function(e) {
+var l6 = function(e) {
   (0, ea.Z)(r, e);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -12539,7 +12538,7 @@ var l4 = function(e) {
   return (0, Z.Z)(r)
 }((0, eh.Z)(Error));
 
-function l6(e, t) {
+function l5(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -12550,20 +12549,20 @@ function l6(e, t) {
   return n
 }
 
-function l5(e) {
+function l3(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = l6(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = l5(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = l6(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = l5(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var l3 = ((pp = {}).Idle = "Idle", pp.Loading = "Loading", pp.ShopperIdentified = "ShopperIdentified", pp.OneTimePassword = "OneTimePassword", pp.Ready = "Ready", pp.Login = "Login", pp.NotAvailable = "NotAvailable", pp);
+var l7 = ((ph = {}).Idle = "Idle", ph.Loading = "Loading", ph.ShopperIdentified = "ShopperIdentified", ph.OneTimePassword = "OneTimePassword", ph.Ready = "Ready", ph.Login = "Login", ph.NotAvailable = "NotAvailable", ph);
 
-function l7(e, t, n) {
+function l9(e, t, n) {
   var r = new(T())(function(e, r) {
     return eu()(function() {
       return r(n)
@@ -12571,17 +12570,17 @@ function l7(e, t, n) {
   });
   return T().race([e(), r])
 }
-var l9 = function() {
+var ue = function() {
   var e, t, n, r, o, i, c, l, u;
 
   function d(e, t, n, r, o) {
-    (0, C.Z)(this, d), (0, w.Z)(this, "sdkLoader", void 0), (0, w.Z)(this, "schemesConfig", void 0), (0, w.Z)(this, "shopperIdentity", void 0), (0, w.Z)(this, "environment", void 0), (0, w.Z)(this, "onTimeout", void 0), (0, w.Z)(this, "srciTransactionId", tI()), (0, w.Z)(this, "sdks", void 0), (0, w.Z)(this, "validationSchemeSdk", null), (0, w.Z)(this, "stateSubscriber", void 0), (0, w.Z)(this, "state", l3.Idle), (0, w.Z)(this, "shopperCards", null), (0, w.Z)(this, "identityValidationData", null), this.sdkLoader = t, this.schemesConfig = e, this.shopperIdentity = r, this.environment = n, this.onTimeout = o
+    (0, C.Z)(this, d), (0, w.Z)(this, "sdkLoader", void 0), (0, w.Z)(this, "schemesConfig", void 0), (0, w.Z)(this, "shopperIdentity", void 0), (0, w.Z)(this, "environment", void 0), (0, w.Z)(this, "onTimeout", void 0), (0, w.Z)(this, "srciTransactionId", tI()), (0, w.Z)(this, "sdks", void 0), (0, w.Z)(this, "validationSchemeSdk", null), (0, w.Z)(this, "stateSubscriber", void 0), (0, w.Z)(this, "state", l7.Idle), (0, w.Z)(this, "shopperCards", null), (0, w.Z)(this, "identityValidationData", null), this.sdkLoader = t, this.schemesConfig = e, this.shopperIdentity = r, this.environment = n, this.onTimeout = o
   }
   return (0, Z.Z)(d, [{
     key: "shopperAccountFound",
     get: function() {
       var e;
-      return O()(e = [l3.Ready, l3.ShopperIdentified]).call(e, this.state)
+      return O()(e = [l7.Ready, l7.ShopperIdentified]).call(e, this.state)
     }
   }, {
     key: "schemes",
@@ -12595,7 +12594,7 @@ var l9 = function() {
       return s().wrap(function(e) {
         for (;;) switch (e.prev = e.next) {
           case 0:
-            return this.setState(l3.Loading), e.prev = 1, e.next = 4, this.sdkLoader.load(this.environment);
+            return this.setState(l7.Loading), e.prev = 1, e.next = 4, this.sdkLoader.load(this.environment);
           case 4:
             return this.sdks = e.sent, e.next = 7, this.initiateSdks();
           case 7:
@@ -12607,13 +12606,13 @@ var l9 = function() {
             }
             return e.next = 17, this.getShopperProfile(a);
           case 17:
-            return this.setState(l3.Ready), e.abrupt("return");
+            return this.setState(l7.Ready), e.abrupt("return");
           case 19:
             if (this.shopperIdentity) {
               e.next = 22;
               break
             }
-            return this.setState(l3.NotAvailable), e.abrupt("return");
+            return this.setState(l7.NotAvailable), e.abrupt("return");
           case 22:
             return e.next = 24, this.verifyIfShopperIsEnrolled(this.shopperIdentity);
           case 24:
@@ -12621,12 +12620,12 @@ var l9 = function() {
               e.next = 29;
               break
             }
-            return this.setState(l3.ShopperIdentified), e.abrupt("return");
+            return this.setState(l7.ShopperIdentified), e.abrupt("return");
           case 29:
-            this.setState(l3.NotAvailable), e.next = 37;
+            this.setState(l7.NotAvailable), e.next = 37;
             break;
           case 32:
-            e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof lB && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof l4 ? (console.warn(e.t0.toString()), null === (i = this.onTimeout) || void 0 === i || i.call(this, e.t0)) : console.warn(e.t0), this.setState(l3.NotAvailable);
+            e.prev = 32, e.t0 = e.catch(1), e.t0 instanceof lD && console.warn("Error at ClickToPayService # init: ".concat(e.t0.toString())), e.t0 instanceof l6 ? (console.warn(e.t0.toString()), null == (i = this.onTimeout) || i.call(this, e.t0)) : console.warn(e.t0), this.setState(l7.NotAvailable);
           case 37:
           case "end":
             return e.stop()
@@ -12659,8 +12658,8 @@ var l9 = function() {
           case 4:
             t = e.sent.maskedValidationChannel, this.identityValidationData = {
               maskedShopperContact: t.replace(/\*/g, "•"),
-              selectedNetwork: lJ[this.validationSchemeSdk.schemeName]
-            }, this.setState(l3.OneTimePassword);
+              selectedNetwork: lX[this.validationSchemeSdk.schemeName]
+            }, this.setState(l7.OneTimePassword);
           case 8:
           case "end":
             return e.stop()
@@ -12686,7 +12685,7 @@ var l9 = function() {
           case 4:
             return n = e.sent, e.next = 7, this.getShopperProfile([n.idToken]);
           case 7:
-            this.setState(l3.Ready), this.validationSchemeSdk = null;
+            this.setState(l7.Ready), this.validationSchemeSdk = null;
           case 9:
           case "end":
             return e.stop()
@@ -12710,11 +12709,11 @@ var l9 = function() {
           case 2:
             return r = D()(n = this.sdks).call(n, function(e) {
               return e.schemeName === t.scheme
-            }), e.next = 5, r.checkout(l5({
+            }), e.next = 5, r.checkout(l3({
               srcDigitalCardId: t.srcDigitalCardId,
               srcCorrelationId: t.srcCorrelationId
             }, t.isDcfPopupEmbedded && {
-              windowRef: window.frames[l0]
+              windowRef: window.frames[l1]
             }));
           case 5:
             if ("COMPLETE" === (o = e.sent).dcfActionCode) {
@@ -12770,9 +12769,9 @@ var l9 = function() {
             e.next = 11;
             break;
           case 8:
-            e.prev = 8, e.t0 = e.catch(2), e.t0 instanceof lB ? console.warn("Error at ClickToPayService # logout: ".concat(e.t0.toString())) : console.warn(e.t0);
+            e.prev = 8, e.t0 = e.catch(2), e.t0 instanceof lD ? console.warn("Error at ClickToPayService # logout: ".concat(e.t0.toString())) : console.warn(e.t0);
           case 11:
-            this.shopperCards = null, this.identityValidationData = null, this.validationSchemeSdk = null, this.setState(l3.Login);
+            this.shopperCards = null, this.identityValidationData = null, this.validationSchemeSdk = null, this.setState(l7.Login);
           case 15:
           case "end":
             return e.stop()
@@ -12792,12 +12791,12 @@ var l9 = function() {
           case 0:
             return n = t.shopperEmail, e.abrupt("return", new(T())(function(e, t) {
               var o, a = J()(o = r.sdks).call(o, function(o) {
-                var a = l7(function() {
+                var a = l9(function() {
                   return o.identityLookup({
                     identityValue: n,
                     type: "email"
                   })
-                }, 5e3, new l4("ClickToPayService - Timeout during identityLookup() of the scheme '".concat(o.schemeName, "'")));
+                }, 5e3, new l6("ClickToPayService - Timeout during identityLookup() of the scheme '".concat(o.schemeName, "'")));
                 return a.then(function(t) {
                   t.consumerPresent && !r.validationSchemeSdk && (r.setSdkForPerformingShopperIdentityValidation(o), e({
                     isEnrolled: !0
@@ -12824,7 +12823,7 @@ var l9 = function() {
     key: "setState",
     value: function(e) {
       var t;
-      this.state = e, null === (t = this.stateSubscriber) || void 0 === t || t.call(this, this.state)
+      this.state = e, null == (t = this.stateSubscriber) || t.call(this, this.state)
     }
   }, {
     key: "setSdkForPerformingShopperIdentityValidation",
@@ -12843,18 +12842,18 @@ var l9 = function() {
                 return e.getSrcProfile(t)
               });
               T().allSettled(a).then(function(t) {
-                eg()(t).call(t, lY) && r(t[0].reason);
+                eg()(t).call(t, lG) && r(t[0].reason);
                 var o, a, i, s, c, l, u = P()(o = J()(t).call(t, function(e, t) {
-                  return lW(e) && l5(l5({}, e.value), {}, {
+                  return lY(e) && l3(l3({}, e.value), {}, {
                     scheme: n.sdks[t].schemeName
                   })
                 })).call(o, function(e) {
                   return !!e
                 });
-                n.shopperCards = (c = (s = Y()(a = Y()(u).call(u, l1, [])).call(a, l8, {
+                c = (s = Y()(a = Y()(u).call(u, l2, [])).call(a, l4, {
                   availableCards: [],
                   expiredCards: []
-                })).availableCards, l = s.expiredCards, I()(i = []).call(i, (0, H.Z)(e2()(c).call(c, l2)), (0, H.Z)(e2()(l).call(l, l2)))), e()
+                })).availableCards, l = s.expiredCards, n.shopperCards = I()(i = []).call(i, (0, H.Z)(e2()(c).call(c, l8)), (0, H.Z)(e2()(l).call(l, l8))), e()
               })
             }));
           case 1:
@@ -12874,9 +12873,9 @@ var l9 = function() {
           case 0:
             return e.abrupt("return", new(T())(function(e, n) {
               var r, o = J()(r = t.sdks).call(r, function(t) {
-                var r = l7(function() {
+                var r = l9(function() {
                   return t.isRecognized()
-                }, 5e3, new l4("ClickToPayService - Timeout during isRecognized() of the scheme '".concat(t.schemeName, "'")));
+                }, 5e3, new l6("ClickToPayService - Timeout during isRecognized() of the scheme '".concat(t.schemeName, "'")));
                 return r.then(function(t) {
                   return t.recognized && e(t)
                 }).catch(function(e) {
@@ -12906,9 +12905,9 @@ var l9 = function() {
           case 0:
             return n = J()(t = this.sdks).call(t, function(e) {
               var t = r.schemesConfig[e.schemeName];
-              return l7(function() {
+              return l9(function() {
                 return e.init(t, r.srciTransactionId)
-              }, 5e3, new l4("ClickToPayService - Timeout during init() of the scheme '".concat(e.schemeName, "'")))
+              }, 5e3, new l6("ClickToPayService - Timeout during init() of the scheme '".concat(e.schemeName, "'")))
             }), e.next = 3, T().all(n);
           case 3:
           case "end":
@@ -12921,7 +12920,7 @@ var l9 = function() {
   }]), d
 }();
 
-function ue(e, t) {
+function ut(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -12932,41 +12931,41 @@ function ue(e, t) {
   return n
 }
 
-function ut(e) {
+function un(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = ue(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ut(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = ue(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ut(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function un(e, t, n) {
-  var r = uo(e);
+function ur(e, t, n) {
+  var r = ua(e);
   if (!r) return null;
-  var o = ur(null == t ? void 0 : t.shopperEmail, null == t ? void 0 : t.telephoneNumber),
-    a = new lQ(l()(r), {
+  var o = uo(null == t ? void 0 : t.shopperEmail, null == t ? void 0 : t.telephoneNumber),
+    a = new lJ(l()(r), {
       dpaLocale: null == t ? void 0 : t.locale,
       dpaPresentationName: null == t ? void 0 : t.merchantDisplayName
     });
-  return new l9(r, a, n, o, null == t ? void 0 : t.onTimeout)
+  return new ue(r, a, n, o, null == t ? void 0 : t.onTimeout)
 }
-var ur = function(e, t) {
-    var n = ut({}, e && {
+var uo = function(e, t) {
+    var n = un({}, e && {
       shopperEmail: e
     });
     return l()(n).length > 0 ? n : null
   },
-  uo = function(e) {
+  ua = function(e) {
     if (!e) return null;
     var t = e.visaSrciDpaId,
       n = e.visaSrcInitiatorId,
       r = e.mcDpaId,
       o = e.mcSrcClientId,
-      a = ut(ut({}, r && o && {
+      a = un(un({}, r && o && {
         mc: {
           srciDpaId: r,
           srcInitiatorId: o
@@ -12979,7 +12978,7 @@ var ur = function(e, t) {
       });
     return 0 === l()(a).length ? null : a
   },
-  ua = (0, ec.kr)({
+  ui = (0, ec.kr)({
     status: null,
     onSubmit: null,
     onSetStatus: null,
@@ -13001,7 +13000,7 @@ var ur = function(e, t) {
     startIdentityValidation: null,
     finishIdentityValidation: null
   }),
-  ui = function(e) {
+  us = function(e) {
     var t, n, r, o, i, c = e.isStandaloneComponent,
       l = e.clickToPayService,
       u = e.amount,
@@ -13013,7 +13012,7 @@ var ur = function(e, t) {
       y = e.onError,
       v = tX(l),
       g = (0, q.Z)(v, 1)[0],
-      b = tX((null == l ? void 0 : l.state) || l3.NotAvailable),
+      b = tX((null == l ? void 0 : l.state) || l7.NotAvailable),
       _ = (0, q.Z)(b, 2),
       k = _[0],
       C = _[1],
@@ -13036,7 +13035,7 @@ var ur = function(e, t) {
     }, [g]);
     var E = t6(function() {
         var e;
-        O.current || (null === (e = d.onReady) || void 0 === e || e.call(d), O.current = !0)
+        O.current || (null == (e = d.onReady) || e.call(d), O.current = !0)
       }, [d.onReady]),
       I = t6((t = (0, a.Z)(s().mark(function e(t) {
         return s().wrap(function(e) {
@@ -13106,7 +13105,7 @@ var ur = function(e, t) {
           }
         }, e)
       })), [g]);
-    return (0, ec.h)(ua.Provider, {
+    return (0, ec.h)(ui.Provider, {
       value: {
         status: A,
         onSubmit: f,
@@ -13121,8 +13120,8 @@ var ur = function(e, t) {
         verifyIfShopperIsEnrolled: B,
         cards: null == g ? void 0 : g.shopperCards,
         schemes: null == g ? void 0 : g.schemes,
-        otpMaskedContact: null == g || null === (o = g.identityValidationData) || void 0 === o ? void 0 : o.maskedShopperContact,
-        otpNetwork: null == g || null === (i = g.identityValidationData) || void 0 === i ? void 0 : i.selectedNetwork,
+        otpMaskedContact: null == g || null == (o = g.identityValidationData) ? void 0 : o.maskedShopperContact,
+        otpNetwork: null == g || null == (i = g.identityValidationData) ? void 0 : i.selectedNetwork,
         checkout: T,
         logoutShopper: D,
         startIdentityValidation: M,
@@ -13132,10 +13131,10 @@ var ur = function(e, t) {
     }, p)
   };
 
-function us() {
-  return t5(ua)
+function uc() {
+  return t5(ui)
 }
-var uc = {
+var ul = {
     otp: {
       validate: function(e) {
         return !!e && e.length > 0
@@ -13151,7 +13150,7 @@ var uc = {
       modes: ["blur"]
     }
   },
-  ul = function(e) {
+  uu = function(e) {
     var t, n = e.onError,
       r = e.onResendCode,
       o = e.disabled,
@@ -13164,7 +13163,7 @@ var uc = {
       h = p[0],
       f = p[1],
       m = nl().i18n,
-      y = us().startIdentityValidation;
+      y = uc().startIdentityValidation;
     t1(function() {
       var e = null;
       return l > 0 && (e = eu()(function() {
@@ -13221,16 +13220,16 @@ var uc = {
       onClick: v
     }, m.get("ctp.otp.resendCode"))
   },
-  uu = function(e) {
+  ud = function(e) {
     var t = nl().i18n,
-      n = us().configuration.disableOtpAutoFocus,
+      n = uc().configuration.disableOtpAutoFocus,
       r = tX(null),
       o = (0, q.Z)(r, 2),
       a = o[0],
       i = o[1],
       s = rV({
         schema: ["otp"],
-        rules: uc
+        rules: ul
       }),
       c = s.handleChangeFor,
       l = s.data,
@@ -13283,7 +13282,7 @@ var uc = {
     }, [l, d, p]), (0, ec.h)(r_, {
       name: "oneTimePassword",
       label: t.get("ctp.otp.fieldLabel"),
-      labelEndAdornment: !e.hideResendOtpButton && (0, ec.h)(ul, {
+      labelEndAdornment: !e.hideResendOtpButton && (0, ec.h)(uu, {
         disabled: e.isValidatingOtp,
         onError: N,
         onResendCode: S
@@ -13303,11 +13302,11 @@ var uc = {
       onCreateRef: b
     }))
   },
-  ud = function(e) {
+  up = function(e) {
     var t = e.classNameModifiers,
       n = void 0 === t ? [] : t,
       r = nT(),
-      o = us().schemes,
+      o = uc().schemes,
       a = r()("ctp"),
       i = r({
         imageFolder: "components/"
@@ -13329,11 +13328,11 @@ var uc = {
         key: e,
         className: ep()("adyen_checkout-ctp__brand-scheme", "adyen_checkout-ctp__brand-scheme-".concat(e)),
         src: r()(e),
-        alt: "Logo of ".concat(lJ[e])
+        alt: "Logo of ".concat(lX[e])
       })
     }))
   },
-  up = function(e) {
+  uh = function(e) {
     var t, n, r, o, a, i, s, c, l, u = e.modalElement,
       d = e.isOpen,
       p = e.isDismissible,
@@ -13382,8 +13381,8 @@ var uc = {
       handleClickOutside: v
     }
   },
-  uh = ["children", "classNameModifiers", "isOpen", "onClose", "isDismissible", "labelledBy", "describedBy", "focusFirst", "focusAfterClose"],
-  uf = function(e) {
+  uf = ["children", "classNameModifiers", "isOpen", "onClose", "isDismissible", "labelledBy", "describedBy", "focusFirst", "focusAfterClose"],
+  um = function(e) {
     var t = e.children,
       n = e.classNameModifiers,
       r = void 0 === n ? [] : n,
@@ -13394,9 +13393,9 @@ var uc = {
       c = e.describedBy,
       l = e.focusFirst,
       u = e.focusAfterClose,
-      d = (0, k.Z)(e, uh),
+      d = (0, k.Z)(e, uf),
       p = t8(),
-      h = up({
+      h = uh({
         modalElement: p.current,
         isOpen: o,
         isDismissible: void 0 === i || i,
@@ -13425,21 +13424,21 @@ var uc = {
       onCloseModal: f
     })))
   },
-  um = e_()();
+  uy = e_()();
 
-function uy() {
-  return "adyen-".concat(um += 1)
+function uv() {
+  return "adyen-".concat(uy += 1)
 }
-var uv = function(e) {
+var ug = function(e) {
     var t = e.isOpen,
       n = e.onClose,
       r = e.focusAfterClose,
       o = t8(),
       a = nl().i18n,
       i = nT(),
-      s = uy(),
-      c = uy();
-    return (0, ec.h)(uf, {
+      s = uv(),
+      c = uv();
+    return (0, ec.h)(um, {
       onClose: n,
       isOpen: t,
       classNameModifiers: ["ctp"],
@@ -13467,7 +13466,7 @@ var uv = function(e) {
       }, a.get("ctp.infoPopup.subtitle")), (0, ec.h)("ul", {
         className: "adyen-checkout__ctp-modal-text adyen-checkout__ctp-modal-benefits",
         type: "disc"
-      }, (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit1")), (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit2")), (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit3"))), (0, ec.h)(ud, {
+      }, (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit1")), (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit2")), (0, ec.h)("li", null, a.get("ctp.infoPopup.benefit3"))), (0, ec.h)(up, {
         classNameModifiers: ["popup"]
       })), (0, ec.h)(nu, {
         onClick: t,
@@ -13475,7 +13474,7 @@ var uv = function(e) {
       }))
     })
   },
-  ug = function() {
+  ub = function() {
     var e = tX(!1),
       t = (0, q.Z)(e, 2),
       n = t[0],
@@ -13501,22 +13500,22 @@ var uv = function(e) {
       height: "15",
       src: i,
       ariaHidden: !0
-    })), (0, ec.h)(uv, {
+    })), (0, ec.h)(ug, {
       isOpen: n,
       onClose: s,
       focusAfterClose: o.current
     }))
   },
-  ub = function() {
-    var e, t = us(),
+  u_ = function() {
+    var e, t = uc(),
       n = t.ctpState,
       r = t.logoutShopper,
       o = t.status,
       a = t.cards,
       i = nl().i18n;
-    if (!1 === O()(e = [l3.Ready, l3.OneTimePassword]).call(e, n)) return null;
+    if (!1 === O()(e = [l7.Ready, l7.OneTimePassword]).call(e, n)) return null;
     var s = t4(function() {
-      return n === l3.Ready && a.length > 1 ? i.get("ctp.logout.notYourCards") : n === l3.Ready && 1 === a.length ? i.get("ctp.logout.notYourCard") : n === l3.Ready && 0 === a.length ? i.get("ctp.logout.notYourProfile") : i.get("ctp.logout.notYou")
+      return n === l7.Ready && a.length > 1 ? i.get("ctp.logout.notYourCards") : n === l7.Ready && 1 === a.length ? i.get("ctp.logout.notYourCard") : n === l7.Ready && 0 === a.length ? i.get("ctp.logout.notYourProfile") : i.get("ctp.logout.notYou")
     }, [i, n]);
     return (0, ec.h)("span", {
       role: "button",
@@ -13527,18 +13526,18 @@ var uv = function(e) {
       onClick: r
     }, s)
   },
-  u_ = function(e) {
+  uk = function(e) {
     var t = e.children,
-      n = us().isStandaloneComponent;
+      n = uc().isStandaloneComponent;
     return (0, ec.h)("div", {
       className: ep()("adyen-checkout-ctp__section", {
         "adyen-checkout-ctp__section--standalone": n
       })
     }, (0, ec.h)("div", {
       className: "adyen-checkout-ctp__section-brand"
-    }, (0, ec.h)(ud, null), (0, ec.h)(ub, null)), t)
+    }, (0, ec.h)(up, null), (0, ec.h)(u_, null)), t)
   };
-u_.Title = function(e) {
+uk.Title = function(e) {
   var t = e.endAdornment,
     n = e.children;
   return (0, ec.h)("div", {
@@ -13548,16 +13547,16 @@ u_.Title = function(e) {
   }, n), t && (0, ec.h)("span", {
     className: "adyen-checkout-ctp__section-header-adornment"
   }, t))
-}, u_.Text = function(e) {
+}, uk.Text = function(e) {
   var t = e.children;
   return (0, ec.h)("p", {
     className: "adyen-checkout-ctp__section-text"
   }, t)
 };
-var uk = function(e) {
+var uC = function(e) {
     var t = e.onDisplayCardComponent,
       n = nl().i18n,
-      r = us(),
+      r = uc(),
       o = r.finishIdentityValidation,
       i = r.otpMaskedContact,
       c = r.otpNetwork,
@@ -13622,11 +13621,11 @@ var uk = function(e) {
         ])
       })), [p, y, P, t]),
       D = n.get("ctp.otp.subtitle").split("%@");
-    return (0, ec.h)(ec.HY, null, (0, ec.h)(u_.Title, {
-      endAdornment: (0, ec.h)(ug, null)
-    }, n.get("ctp.otp.title")), (0, ec.h)(u_.Text, null, D[0], " ", c, " ", D[1], (0, ec.h)("span", {
+    return (0, ec.h)(ec.HY, null, (0, ec.h)(uk.Title, {
+      endAdornment: (0, ec.h)(ub, null)
+    }, n.get("ctp.otp.title")), (0, ec.h)(uk.Text, null, D[0], " ", c, " ", D[1], (0, ec.h)("span", {
       className: "adyen-checkout-ctp__otp-subtitle--highlighted"
-    }, i), D[2]), (0, ec.h)(uu, {
+    }, i), D[2]), (0, ec.h)(ud, {
       hideResendOtpButton: O,
       onChange: M,
       onSetInputHandlers: I,
@@ -13643,7 +13642,7 @@ var uk = function(e) {
       status: _ && "loading"
     }))
   },
-  uC = function(e) {
+  uZ = function(e) {
     var t = e.card,
       n = e.errorMessage,
       r = nl().i18n,
@@ -13665,20 +13664,20 @@ var uk = function(e) {
       className: "adyen-checkout__error-text"
     }, n))
   },
-  uZ = function() {
+  uw = function() {
     return window.matchMedia("(max-width: 768px)").matches && /Android|iPhone|iPod/.test(navigator.userAgent)
   },
-  uw = ["srcDigitalCardId"],
-  uS = function(e) {
+  uS = ["srcDigitalCardId"],
+  uN = function(e) {
     var t = e.cardSelected,
       n = e.cards,
       r = e.errorMessage,
       o = e.onChangeCard,
       a = nl().i18n,
       i = nT(),
-      s = us().status,
+      s = uc().status,
       c = rV({
-        schema: uw,
+        schema: uS,
         defaultData: {
           srcDigitalCardId: t.srcDigitalCardId
         }
@@ -13690,7 +13689,7 @@ var uk = function(e) {
           var t;
           return {
             icon: e.artUri || i()(e.scheme),
-            name: I()(t = "".concat(uZ() ? "" : e.title, " •••• ")).call(t, e.panLastFour, " "),
+            name: I()(t = "".concat(uw() ? "" : e.title, " •••• ")).call(t, e.panLastFour, " "),
             secondaryText: e.isExpired && a.get("ctp.cards.expiredCard"),
             id: e.srcDigitalCardId,
             disabled: e.isExpired
@@ -13716,16 +13715,16 @@ var uk = function(e) {
     }))
   };
 
-function uN(e, t) {
+function ux(e, t) {
   if (!e) return null;
   var n = t.get("ctp.errors.".concat(e));
   return O()(n).call(n, "ctp.errors") ? t.get("ctp.errors.UNKNOWN_ERROR") : n
 }
-var ux = function(e) {
+var uP = function(e) {
     var t = e.onDisplayCardComponent,
       n = nl().i18n,
       r = nT(),
-      o = us(),
+      o = uc(),
       i = o.amount,
       c = o.cards,
       l = o.checkout,
@@ -13770,7 +13769,7 @@ var ux = function(e) {
               p(e.sent), e.next = 17;
               break;
             case 12:
-              e.prev = 12, e.t0 = e.catch(2), e.t0 instanceof lB && (C(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), console.warn(I()(t = I()(n = "CtP - Checkout: Reason: ".concat(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason, " / Source: ")).call(n, null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.source, " / Scheme: ")).call(t, null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.scheme))), x(!1), f(e.t0);
+              e.prev = 12, e.t0 = e.catch(2), e.t0 instanceof lD && (C(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), console.warn(I()(t = I()(n = "CtP - Checkout: Reason: ".concat(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason, " / Source: ")).call(n, null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.source, " / Scheme: ")).call(t, null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.scheme))), x(!1), f(e.t0);
             case 17:
             case "end":
               return e.stop()
@@ -13784,24 +13783,24 @@ var ux = function(e) {
       }, []),
       R = N && "loading" === d && (null == v ? void 0 : v.isDcfPopupEmbedded);
     return (0, ec.h)(ec.HY, null, (0, ec.h)(nC, {
-      name: l0,
+      name: l1,
       height: "380",
       width: "100%",
       classNameModifiers: [R ? "" : "hidden"]
-    }), ("loading" !== d || !R) && (0, ec.h)(ec.HY, null, (0, ec.h)(u_.Title, null, n.get("ctp.cards.title")), (0, ec.h)(u_.Text, null, n.get("ctp.cards.subtitle")), 0 === c.length && (0, ec.h)("div", {
+    }), ("loading" !== d || !R) && (0, ec.h)(ec.HY, null, (0, ec.h)(uk.Title, null, n.get("ctp.cards.title")), (0, ec.h)(uk.Text, null, n.get("ctp.cards.subtitle")), 0 === c.length && (0, ec.h)("div", {
       className: "adyen-checkout-ctp__empty-cards"
-    }, n.get("ctp.emptyProfile.message")), 1 === c.length && (0, ec.h)(uC, {
+    }, n.get("ctp.emptyProfile.message")), 1 === c.length && (0, ec.h)(uZ, {
       card: c[0],
-      errorMessage: uN(k, n)
-    }), c.length > 1 && (0, ec.h)(uS, {
+      errorMessage: ux(k, n)
+    }), c.length > 1 && (0, ec.h)(uN, {
       cardSelected: v,
       cards: c,
       onChangeCard: A,
-      errorMessage: uN(k, n)
+      errorMessage: ux(k, n)
     }), (0, ec.h)(nm, {
       disabled: Z,
       amount: i,
-      label: v ? uZ() ? null : n.get("payButton.with", {
+      label: v ? uw() ? null : n.get("payButton.with", {
         values: {
           value: nd(n, i),
           maskedData: "•••• ".concat(null == v ? void 0 : v.panLastFour)
@@ -13815,7 +13814,7 @@ var ux = function(e) {
       onClick: P
     })))
   },
-  uP = function() {
+  uA = function() {
     var e = nl().i18n,
       t = nT();
     return (0, ec.h)(ec.HY, null, (0, ec.h)(o7, {
@@ -13830,7 +13829,7 @@ var ux = function(e) {
       className: "adyen-checkout-ctp__loading-subtitle"
     }, e.get("ctp.loading.intro")))
   },
-  uA = {
+  uR = {
     shopperLogin: {
       validate: function(e) {
         return !!e && e.length > 0
@@ -13846,11 +13845,11 @@ var ux = function(e) {
       modes: ["blur"]
     }
   },
-  uR = function(e) {
+  uF = function(e) {
     var t = nl().i18n,
       n = rV({
         schema: ["shopperLogin"],
-        rules: uA
+        rules: uR
       }),
       r = n.handleChangeFor,
       o = n.data,
@@ -13903,9 +13902,9 @@ var ux = function(e) {
       onKeyUp: m
     }))
   },
-  uF = function() {
+  uO = function() {
     var e = nl().i18n,
-      t = us(),
+      t = uc(),
       n = t.isCtpPrimaryPaymentMethod,
       r = t.setIsCtpPrimaryPaymentMethod,
       o = t.verifyIfShopperIsEnrolled,
@@ -13936,7 +13935,7 @@ var ux = function(e) {
       A = t6(function(e) {
         var t, n = e.data,
           o = e.isValid;
-        d(n.shopperLogin), m(o), (null == n || null === (t = n.shopperLogin) || void 0 === t ? void 0 : t.length) > 0 && r(!0)
+        d(n.shopperLogin), m(o), (null == n || null == (t = n.shopperLogin) ? void 0 : t.length) > 0 && r(!0)
       }, []),
       R = t6((0, a.Z)(s().mark(function e() {
         return s().wrap(function(e) {
@@ -13966,7 +13965,7 @@ var ux = function(e) {
               e.next = 25;
               break;
             case 19:
-              e.prev = 19, e.t0 = e.catch(5), e.t0 instanceof lB && console.warn("CtP - Login error: ".concat(e.t0.toString())), e.t0 instanceof l4 && console.warn(e.t0.toString()), b(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), Z(!1);
+              e.prev = 19, e.t0 = e.catch(5), e.t0 instanceof lD && console.warn("CtP - Login error: ".concat(e.t0.toString())), e.t0 instanceof l6 && console.warn(e.t0.toString()), b(null === e.t0 || void 0 === e.t0 ? void 0 : e.t0.reason), Z(!1);
             case 25:
             case "end":
               return e.stop()
@@ -13975,9 +13974,9 @@ var ux = function(e) {
           [5, 19]
         ])
       })), [o, i, u, f, N]);
-    return (0, ec.h)(ec.HY, null, (0, ec.h)(u_.Title, {
-      endAdornment: (0, ec.h)(ug, null)
-    }, e.get("ctp.login.title")), (0, ec.h)(u_.Text, null, e.get("ctp.login.subtitle")), (0, ec.h)(uR, {
+    return (0, ec.h)(ec.HY, null, (0, ec.h)(uk.Title, {
+      endAdornment: (0, ec.h)(ub, null)
+    }, e.get("ctp.login.title")), (0, ec.h)(uk.Text, null, e.get("ctp.login.subtitle")), (0, ec.h)(uF, {
       onChange: A,
       onSetInputHandlers: P,
       disabled: C,
@@ -13992,16 +13991,16 @@ var ux = function(e) {
       }
     }))
   },
-  uO = function(e) {
+  uE = function(e) {
     var t, n = e.onDisplayCardComponent,
-      r = us(),
+      r = uc(),
       o = r.ctpState,
       i = r.onReady,
       c = r.startIdentityValidation,
       l = r.logoutShopper;
     return t1(function() {
       var e;
-      O()(e = [l3.OneTimePassword, l3.Login, l3.Ready]).call(e, o) && i()
+      O()(e = [l7.OneTimePassword, l7.Login, l7.Ready]).call(e, o) && i()
     }, [o, i]), t1(function() {
       function e() {
         return (e = (0, a.Z)(s().mark(function e() {
@@ -14013,7 +14012,7 @@ var ux = function(e) {
                 e.next = 10;
                 break;
               case 5:
-                return e.prev = 5, e.t0 = e.catch(0), e.t0 instanceof lB && console.warn("CtP - Identity Validation error: ".concat(e.t0.toString())), e.next = 10, l();
+                return e.prev = 5, e.t0 = e.catch(0), e.t0 instanceof lD && console.warn("CtP - Identity Validation error: ".concat(e.t0.toString())), e.next = 10, l();
               case 10:
               case "end":
                 return e.stop()
@@ -14023,23 +14022,23 @@ var ux = function(e) {
           ])
         }))).apply(this, arguments)
       }
-      o === l3.ShopperIdentified && function() {
+      o === l7.ShopperIdentified && function() {
         e.apply(this, arguments)
       }()
-    }, [o]), o === l3.NotAvailable ? null : (0, ec.h)(u_, null, O()(t = [l3.Loading, l3.ShopperIdentified]).call(t, o) && (0, ec.h)(uP, null), o === l3.OneTimePassword && (0, ec.h)(uk, {
+    }, [o]), o === l7.NotAvailable ? null : (0, ec.h)(uk, null, O()(t = [l7.Loading, l7.ShopperIdentified]).call(t, o) && (0, ec.h)(uA, null), o === l7.OneTimePassword && (0, ec.h)(uC, {
       onDisplayCardComponent: n
-    }), o === l3.Ready && (0, ec.h)(ux, {
+    }), o === l7.Ready && (0, ec.h)(uP, {
       onDisplayCardComponent: n
-    }), o === l3.Login && (0, ec.h)(uF, null))
+    }), o === l7.Login && (0, ec.h)(uO, null))
   },
-  uE = function(e) {
+  uI = function(e) {
     var t = e.children,
       n = nl().i18n,
       r = tX(null),
       o = (0, q.Z)(r, 2),
       a = o[0],
       i = o[1],
-      s = us(),
+      s = uc(),
       c = s.ctpState,
       l = s.isCtpPrimaryPaymentMethod,
       u = s.setIsCtpPrimaryPaymentMethod,
@@ -14047,16 +14046,16 @@ var ux = function(e) {
       p = null === a && null === l;
     t1(function() {
       if (p) {
-        if (c === l3.ShopperIdentified || c === l3.Ready) return i(!1), void u(!0);
-        c === l3.NotAvailable && (i(!0), u(!1))
+        if (c === l7.ShopperIdentified || c === l7.Ready) return i(!1), void u(!0);
+        c === l7.NotAvailable && (i(!0), u(!1))
       }
     }, [c, p]);
     var h = t6(function() {
       i(!0), u(!1)
     }, []);
-    return c === l3.NotAvailable ? t() : c === l3.Loading || c === l3.ShopperIdentified ? (0, ec.h)(uO, null) : (0, ec.h)(ec.HY, null, (0, ec.h)(uO, {
+    return c === l7.NotAvailable ? t() : c === l7.Loading || c === l7.ShopperIdentified ? (0, ec.h)(uE, null) : (0, ec.h)(ec.HY, null, (0, ec.h)(uE, {
       onDisplayCardComponent: h
-    }), (0, ec.h)(i8, {
+    }), (0, ec.h)(i4, {
       classNames: ["adyen-checkout-ctp__separator"],
       label: n.get("ctp.separatorText")
     }), a ? t(!l) : (0, ec.h)(nu, {
@@ -14066,8 +14065,8 @@ var ux = function(e) {
       onClick: h
     }))
   },
-  uI = ["amount", "configuration", "clickToPayService", "setClickToPayRef", "onSetStatus", "onSubmit", "onError", "isStandaloneComponent"],
-  uM = function(e) {
+  uM = ["amount", "configuration", "clickToPayService", "setClickToPayRef", "onSetStatus", "onSubmit", "onError", "isStandaloneComponent"],
+  uT = function(e) {
     var t = e.amount,
       n = e.configuration,
       r = e.clickToPayService,
@@ -14076,8 +14075,8 @@ var ux = function(e) {
       i = e.onSubmit,
       s = e.onError,
       c = e.isStandaloneComponent,
-      l = (0, k.Z)(e, uI);
-    return (0, ec.h)(ui, {
+      l = (0, k.Z)(e, uM);
+    return (0, ec.h)(us, {
       isStandaloneComponent: c,
       configuration: n,
       amount: t,
@@ -14086,10 +14085,10 @@ var ux = function(e) {
       onSetStatus: a,
       onSubmit: i,
       onError: s
-    }, (0, ec.h)(uE, null, l.children))
+    }, (0, ec.h)(uI, null, l.children))
   };
 
-function uT(e, t) {
+function uB(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -14100,18 +14099,18 @@ function uT(e, t) {
   return n
 }
 
-function uB(e) {
+function uD(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = uT(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = uB(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = uT(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = uB(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var uD = function(e) {
+var uL = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -14135,46 +14134,46 @@ var uD = function(e) {
     return (0, C.Z)(this, r), t = n.call(this, e), (0, w.Z)((0, eo.Z)(t), "clickToPayService", void 0), (0, w.Z)((0, eo.Z)(t), "clickToPayRef", null), (0, w.Z)((0, eo.Z)(t), "setClickToPayRef", function(e) {
       t.clickToPayRef = e
     }), (0, w.Z)((0, eo.Z)(t), "onBrand", function(e) {
-      t.eventEmitter.emit("brand", uB(uB({}, e), {}, {
+      t.eventEmitter.emit("brand", uD(uD({}, e), {}, {
         brand: "card" === e.brand ? null : e.brand
       })), t.props.onBrand && t.props.onBrand(e)
     }), (0, w.Z)((0, eo.Z)(t), "handleClickToPaySubmit", function(e) {
       t.setState({
-        data: uB({}, e),
+        data: uD({}, e),
         valid: {},
         errors: {},
         isValid: !0
       }), t.submit()
-    }), (0, w.Z)((0, eo.Z)(t), "onBinValue", lT((0, eo.Z)(t))), e._disableClickToPay || (t.clickToPayService = un(t.props.configuration, t.props.clickToPayConfiguration, t.props.environment), null === (o = t.clickToPayService) || void 0 === o || o.initialize()), t
+    }), (0, w.Z)((0, eo.Z)(t), "onBinValue", lB((0, eo.Z)(t))), e._disableClickToPay || (t.clickToPayService = ur(t.props.configuration, t.props.clickToPayConfiguration, t.props.environment), null == (o = t.clickToPayService) || o.initialize()), t
   }
   return (0, Z.Z)(r, [{
     key: "setStatus",
     value: function(e, t) {
       var n, r;
-      return null !== (n = this.componentRef) && void 0 !== n && n.setStatus && this.componentRef.setStatus(e, t), null !== (r = this.clickToPayRef) && void 0 !== r && r.setStatus && this.clickToPayRef.setStatus(e, t), this
+      return null != (n = this.componentRef) && n.setStatus && this.componentRef.setStatus(e, t), null != (r = this.clickToPayRef) && r.setStatus && this.clickToPayRef.setStatus(e, t), this
     }
   }, {
     key: "formatProps",
     value: function(e) {
       var t, n, r, o, a, i, s, c, l, u, d, p, h;
-      return uB(uB({}, e), {}, {
+      return uD(uD({}, e), {}, {
         holderNameRequired: !!e.hasHolderName && e.holderNameRequired,
         hasCVC: !(e.brand && "bcmc" === e.brand || e.hideCVC),
         billingAddressRequired: !e.storedPaymentMethodId && e.billingAddressRequired,
         type: "scheme" === e.type ? "card" : e.type,
         countryCode: e.countryCode ? e.countryCode.toLowerCase() : null,
-        configuration: uB(uB({}, e.configuration), {}, {
-          socialSecurityNumberMode: null !== (t = null === (n = e.configuration) || void 0 === n ? void 0 : n.socialSecurityNumberMode) && void 0 !== t ? t : "auto"
+        configuration: uD(uD({}, e.configuration), {}, {
+          socialSecurityNumberMode: null != (t = null == (n = e.configuration) ? void 0 : n.socialSecurityNumberMode) ? t : "auto"
         }),
-        brandsConfiguration: e.brandsConfiguration || (null === (r = e.configuration) || void 0 === r ? void 0 : r.brandsConfiguration) || {},
-        icon: e.icon || (null === (o = e.configuration) || void 0 === o ? void 0 : o.icon),
-        installmentOptions: (null === (a = e.session) || void 0 === a || null === (a = a.configuration) || void 0 === a ? void 0 : a.installmentOptions) || e.installmentOptions,
-        enableStoreDetails: (null === (i = e.session) || void 0 === i || null === (i = i.configuration) || void 0 === i ? void 0 : i.enableStoreDetails) || e.enableStoreDetails,
-        clickToPayConfiguration: uB(uB({}, e.clickToPayConfiguration), {}, {
-          disableOtpAutoFocus: (null === (s = e.clickToPayConfiguration) || void 0 === s ? void 0 : s.disableOtpAutoFocus) || !1,
-          shopperEmail: (null === (c = e.clickToPayConfiguration) || void 0 === c ? void 0 : c.shopperEmail) || (null == e || null === (l = e._parentInstance) || void 0 === l || null === (l = l.options) || void 0 === l || null === (l = l.session) || void 0 === l ? void 0 : l.shopperEmail),
-          telephoneNumber: (null === (u = e.clickToPayConfiguration) || void 0 === u ? void 0 : u.telephoneNumber) || (null == e || null === (d = e._parentInstance) || void 0 === d || null === (d = d.options) || void 0 === d || null === (d = d.session) || void 0 === d ? void 0 : d.telephoneNumber),
-          locale: (null === (p = e.clickToPayConfiguration) || void 0 === p ? void 0 : p.locale) || (null === (h = e.i18n) || void 0 === h || null === (h = h.locale) || void 0 === h ? void 0 : h.replace("-", "_"))
+        brandsConfiguration: e.brandsConfiguration || (null == (r = e.configuration) ? void 0 : r.brandsConfiguration) || {},
+        icon: e.icon || (null == (o = e.configuration) ? void 0 : o.icon),
+        installmentOptions: (null == (a = e.session) || null == (a = a.configuration) ? void 0 : a.installmentOptions) || e.installmentOptions,
+        enableStoreDetails: (null == (i = e.session) || null == (i = i.configuration) ? void 0 : i.enableStoreDetails) || e.enableStoreDetails,
+        clickToPayConfiguration: uD(uD({}, e.clickToPayConfiguration), {}, {
+          disableOtpAutoFocus: (null == (s = e.clickToPayConfiguration) ? void 0 : s.disableOtpAutoFocus) || !1,
+          shopperEmail: (null == (c = e.clickToPayConfiguration) ? void 0 : c.shopperEmail) || (null == e || null == (l = e._parentInstance) || null == (l = l.options) || null == (l = l.session) ? void 0 : l.shopperEmail),
+          telephoneNumber: (null == (u = e.clickToPayConfiguration) ? void 0 : u.telephoneNumber) || (null == e || null == (d = e._parentInstance) || null == (d = d.options) || null == (d = d.session) ? void 0 : d.telephoneNumber),
+          locale: (null == (p = e.clickToPayConfiguration) ? void 0 : p.locale) || (null == (h = e.i18n) || null == (h = h.locale) ? void 0 : h.replace("-", "_"))
         })
       })
     }
@@ -14183,8 +14182,8 @@ var uD = function(e) {
     value: function() {
       var e, t = this.state.selectedBrandValue || this.props.brand,
         n = this.props.enableStoreDetails && void 0 !== this.state.storePaymentMethod;
-      return uB(uB(uB(uB(uB({
-        paymentMethod: uB(uB(uB(uB({
+      return uD(uD(uD(uD(uD({
+        paymentMethod: uD(uD(uD(uD({
           type: r.type
         }, this.state.data), this.props.storedPaymentMethodId && {
           storedPaymentMethodId: this.props.storedPaymentMethodId
@@ -14210,31 +14209,31 @@ var uD = function(e) {
     key: "updateStyles",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.updateStyles && this.componentRef.updateStyles(e), this
+      return null != (t = this.componentRef) && t.updateStyles && this.componentRef.updateStyles(e), this
     }
   }, {
     key: "setFocusOn",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.setFocusOn && this.componentRef.setFocusOn(e), this
+      return null != (t = this.componentRef) && t.setFocusOn && this.componentRef.setFocusOn(e), this
     }
   }, {
     key: "processBinLookupResponse",
     value: function(e) {
       var t, n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-      return null !== (t = this.componentRef) && void 0 !== t && t.processBinLookupResponse && this.componentRef.processBinLookupResponse(e, n), this
+      return null != (t = this.componentRef) && t.processBinLookupResponse && this.componentRef.processBinLookupResponse(e, n), this
     }
   }, {
     key: "handleUnsupportedCard",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.handleUnsupportedCard && this.componentRef.handleUnsupportedCard(e), this
+      return null != (t = this.componentRef) && t.handleUnsupportedCard && this.componentRef.handleUnsupportedCard(e), this
     }
   }, {
     key: "onBinLookup",
     value: function(e) {
       if (!e.isReset) {
-        var t = sz("supportedBrandsRaw").from(e);
+        var t = sW("supportedBrandsRaw").from(e);
         this.props.onBinLookup(t)
       }
     }
@@ -14247,7 +14246,7 @@ var uD = function(e) {
     key: "icon",
     get: function() {
       var e;
-      return null !== (e = this.props.icon) && void 0 !== e ? e : this.resources.getImage()(this.brand)
+      return null != (e = this.props.icon) ? e : this.resources.getImage()(this.brand)
     }
   }, {
     key: "brands",
@@ -14259,7 +14258,7 @@ var uD = function(e) {
       return n ? J()(n).call(n, function(t) {
         var n, o;
         return {
-          icon: null !== (n = null === (o = r[t]) || void 0 === o ? void 0 : o.icon) && void 0 !== n ? n : e.props.modules.resources.getImage()(t),
+          icon: null != (n = null == (o = r[t]) ? void 0 : o.icon) ? n : e.props.modules.resources.getImage()(t),
           name: t
         }
       }) : []
@@ -14282,13 +14281,13 @@ var uD = function(e) {
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }, {
     key: "renderCardInput",
     value: function() {
       var e = !(arguments.length > 0 && void 0 !== arguments[0]) || arguments[0];
-      return (0, ec.h)(lI, (0, er.Z)({
+      return (0, ec.h)(lM, (0, er.Z)({
         setComponentRef: this.setComponentRef
       }, this.props, this.state, {
         onChange: this.setState,
@@ -14306,13 +14305,13 @@ var uD = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ia, {
+      }, (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(uM, {
+      }, (0, ec.h)(uT, {
         amount: this.props.amount,
         configuration: this.props.clickToPayConfiguration,
         clickToPayService: this.clickToPayService,
@@ -14327,15 +14326,15 @@ var uD = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(uD, "type", "scheme"), (0, w.Z)(uD, "defaultProps", {
+(0, w.Z)(uL, "type", "scheme"), (0, w.Z)(uL, "defaultProps", {
   onBinLookup: function() {},
   showBrandsUnderCardNumber: !0,
   showFormInstruction: !0,
   _disableClickToPay: !1
 });
-var uL = ((ph = {}).CustomerDismissed = "CUSTOMER_DISMISSED", ph.CustomerRequestApproved = "CUSTOMER_REQUEST_APPROVED", ph.CustomerRequestDeclined = "CUSTOMER_REQUEST_DECLINED", ph.CustomerRequestFailed = "CUSTOMER_REQUEST_FAILED", ph);
+var uV = ((pf = {}).CustomerDismissed = "CUSTOMER_DISMISSED", pf.CustomerRequestApproved = "CUSTOMER_REQUEST_APPROVED", pf.CustomerRequestDeclined = "CUSTOMER_REQUEST_DECLINED", pf.CustomerRequestFailed = "CUSTOMER_REQUEST_FAILED", pf);
 
-function uV(e, t) {
+function uj(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -14346,19 +14345,19 @@ function uV(e, t) {
   return n
 }
 
-function uj(e) {
+function uU(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = uV(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = uj(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = uV(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = uj(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function uU(e) {
+function uq(e) {
   var t = e.enableStoreDetails,
     n = e.cashAppService,
     r = e.onClick,
@@ -14382,9 +14381,9 @@ function uU(e) {
         case 0:
           return e.prev = 0, e.next = 3, n.initialize();
         case 3:
-          return f.current = [n.subscribeToEvent(uL.CustomerDismissed, function() {
+          return f.current = [n.subscribeToEvent(uV.CustomerDismissed, function() {
             c(new nv("CANCEL", "Customer dismissed the modal"))
-          }), n.subscribeToEvent(uL.CustomerRequestDeclined, (0, a.Z)(s().mark(function e() {
+          }), n.subscribeToEvent(uV.CustomerRequestDeclined, (0, a.Z)(s().mark(function e() {
             return s().wrap(function(e) {
               for (;;) switch (e.prev = e.next) {
                 case 0:
@@ -14396,19 +14395,19 @@ function uU(e) {
                   return e.stop()
               }
             }, e)
-          }))), n.subscribeToEvent(uL.CustomerRequestApproved, function(e) {
+          }))), n.subscribeToEvent(uV.CustomerRequestApproved, function(e) {
             var t, n, r = e.customerProfile,
               o = e.grants;
-            i(uj(uj(uj(uj({}, (null == r ? void 0 : r.id) && {
+            i(uU(uU(uU(uU({}, (null == r ? void 0 : r.id) && {
               customerId: r.id
             }), (null == r ? void 0 : r.cashtag) && {
               cashTag: r.cashtag
-            }), (null == o || null === (t = o.payment) || void 0 === t ? void 0 : t.grantId) && {
+            }), (null == o || null == (t = o.payment) ? void 0 : t.grantId) && {
               grantId: o.payment.grantId
-            }), (null == o || null === (n = o.onFile) || void 0 === n ? void 0 : n.grantId) && {
+            }), (null == o || null == (n = o.onFile) ? void 0 : n.grantId) && {
               onFileGrantId: o.onFile.grantId
             }))
-          }), n.subscribeToEvent(uL.CustomerRequestFailed, function() {
+          }), n.subscribeToEvent(uV.CustomerRequestFailed, function() {
             c(new nv("ERROR", "Customer request failed"))
           })], e.next = 6, n.renderButton(l.current);
         case 6:
@@ -14436,7 +14435,7 @@ function uU(e) {
       }
   }, [n, b]), (0, ec.h)("div", {
     className: "adyen-checkout__cashapp"
-  }, "loading" === p && (0, ec.h)(tq, null), "loading" !== p && t && (0, ec.h)(lN, {
+  }, "loading" === p && (0, ec.h)(tq, null), "loading" !== p && t && (0, ec.h)(lx, {
     storeDetails: v,
     onChange: g
   }), (0, ec.h)("div", {
@@ -14446,7 +14445,7 @@ function uU(e) {
   }))
 }
 
-function uq(e, t) {
+function uH(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -14457,18 +14456,18 @@ function uq(e, t) {
   return n
 }
 
-function uH(e) {
+function uK(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = uq(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = uH(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = uq(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = uH(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var uK = function() {
+var uz = function() {
     var e, t, n, r;
 
     function o(e, t) {
@@ -14528,7 +14527,7 @@ var uK = function() {
             case 0:
               return e.prev = 0, r = (n = this.configuration).button, o = n.useCashAppButtonUi, e.next = 4, this.pay.render(t, {
                 manage: !1,
-                button: !!o && uH({
+                button: !!o && uK({
                   width: "full",
                   shape: "semiround"
                 }, r)
@@ -14574,7 +14573,7 @@ var uK = function() {
               return e.prev = 0, n = (t = this.configuration).referenceId, r = t.amount, o = t.scopeId, i = {
                 referenceId: n,
                 redirectURL: void 0 === (a = t.redirectURL) ? window.location.href : a,
-                actions: uH(uH({}, this.hasOneTimePayment && {
+                actions: uK(uK({}, this.hasOneTimePayment && {
                   payment: {
                     amount: r,
                     scopeId: o
@@ -14619,7 +14618,7 @@ var uK = function() {
       })
     }]), o
   }(),
-  uz = function() {
+  uW = function() {
     var e;
 
     function t() {
@@ -14641,7 +14640,7 @@ var uK = function() {
                 e.next = 5;
                 break
               }
-              return o = new iF(r), e.next = 5, o.load();
+              return o = new iO(r), e.next = 5, o.load();
             case 5:
               return e.abrupt("return", window.CashApp);
             case 6:
@@ -14655,7 +14654,7 @@ var uK = function() {
     }]), t
   }();
 
-function uW(e, t) {
+function uY(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -14666,18 +14665,18 @@ function uW(e, t) {
   return n
 }
 
-function uY(e) {
+function uG(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = uW(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = uY(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = uW(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = uY(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var uG = function(e) {
+var u$ = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -14720,28 +14719,28 @@ var uG = function(e) {
         })
       }
     }), (0, w.Z)((0, eo.Z)(s), "handleOnChangeStoreDetails", function(e) {
-      var t = uY(uY({}, s.state.data), {}, {
+      var t = uG(uG({}, s.state.data), {}, {
         shopperWantsToStore: e
       });
       s.setState({
         data: t
       })
     }), (0, w.Z)((0, eo.Z)(s), "handleAuthorize", function(e) {
-      var t = uY(uY({}, s.state.data), e);
+      var t = uG(uG({}, s.state.data), e);
       s.setState({
         data: t,
         valid: {},
         errors: {},
         isValid: !0
       }), (0, ey.Z)((i = (0, eo.Z)(s), (0, es.Z)(r.prototype)), "submit", i).call(i)
-    }), s.props.enableStoreDetails && s.props.storePaymentMethod && console.warn("CashAppPay: enableStoreDetails AND storePaymentMethod configuration properties should not be used together. That can lead to undesired behavior."), s.props.storedPaymentMethodId ? (0, ei.Z)(s) : (s.cashAppService = new uK(new uz, {
+    }), s.props.enableStoreDetails && s.props.storePaymentMethod && console.warn("CashAppPay: enableStoreDetails AND storePaymentMethod configuration properties should not be used together. That can lead to undesired behavior."), s.props.storedPaymentMethodId ? (0, ei.Z)(s) : (s.cashAppService = new uz(new uW, {
       storePaymentMethod: s.props.storePaymentMethod,
       useCashAppButtonUi: s.props.showPayButton,
       environment: s.props.environment,
       amount: s.props.amount,
       redirectURL: s.props.redirectURL,
-      clientId: null === (t = s.props.configuration) || void 0 === t ? void 0 : t.clientId,
-      scopeId: null === (o = s.props.configuration) || void 0 === o ? void 0 : o.scopeId,
+      clientId: null == (t = s.props.configuration) ? void 0 : t.clientId,
+      scopeId: null == (o = s.props.configuration) ? void 0 : o.scopeId,
       button: s.props.button,
       referenceId: s.props.referenceId
     }), s)
@@ -14750,8 +14749,8 @@ var uG = function(e) {
     key: "formatProps",
     value: function(e) {
       var t;
-      return uY(uY({}, e), {}, {
-        enableStoreDetails: (null === (t = e.session) || void 0 === t || null === (t = t.configuration) || void 0 === t ? void 0 : t.enableStoreDetails) || e.enableStoreDetails
+      return uG(uG({}, e), {}, {
+        enableStoreDetails: (null == (t = e.session) || null == (t = t.configuration) ? void 0 : t.enableStoreDetails) || e.enableStoreDetails
       })
     }
   }, {
@@ -14774,8 +14773,8 @@ var uG = function(e) {
         }
       };
       var d = o && a;
-      return uY({
-        paymentMethod: uY(uY(uY({
+      return uG({
+        paymentMethod: uG(uG(uG({
           type: r.type
         }, n && {
           grantId: n
@@ -14808,13 +14807,13 @@ var uG = function(e) {
     key: "render",
     value: function() {
       var e, t = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         resources: this.resources,
         loadingContext: this.props.loadingContext
-      }, this.props.storedPaymentMethodId ? (0, ec.h)(sc, {
+      }, this.props.storedPaymentMethodId ? (0, ec.h)(sl, {
         label: np(this.props.i18n, this.props.amount),
-        icon: null === (e = this.resources) || void 0 === e ? void 0 : e.getImage({
+        icon: null == (e = this.resources) ? void 0 : e.getImage({
           imageFolder: "components/"
         })("lock"),
         name: this.displayName,
@@ -14824,7 +14823,7 @@ var uG = function(e) {
         ref: function(e) {
           t.componentRef = e
         }
-      }) : (0, ec.h)(uU, {
+      }) : (0, ec.h)(uq, {
         ref: function(e) {
           t.componentRef = e
         },
@@ -14839,7 +14838,7 @@ var uG = function(e) {
   }]), r
 }();
 
-function u$(e, t) {
+function uQ(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -14850,17 +14849,17 @@ function u$(e, t) {
   return n
 }
 
-function uQ(e) {
+function uJ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = u$(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = uQ(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = u$(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = uQ(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(uG, "type", "cashapp"), (0, w.Z)(uG, "defaultProps", {
+}(0, w.Z)(u$, "type", "cashapp"), (0, w.Z)(u$, "defaultProps", {
   onClick: function(e) {
     e.resolve()
   },
@@ -14868,7 +14867,7 @@ function uQ(e) {
   enableStoreDetails: !1,
   storePaymentMethod: !1
 });
-var uJ = function(e) {
+var uX = function(e) {
   (0, ea.Z)(o, nk);
   var t, n, r = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -14891,7 +14890,7 @@ var uJ = function(e) {
     var t, n;
     return (0, C.Z)(this, o), n = r.call(this, e), (0, w.Z)((0, eo.Z)(n), "clickToPayService", void 0), (0, w.Z)((0, eo.Z)(n), "ctpConfiguration", void 0), (0, w.Z)((0, eo.Z)(n), "handleClickToPaySubmit", function(e) {
       n.setState({
-        data: uQ({}, e),
+        data: uJ({}, e),
         valid: {},
         errors: {},
         isValid: !0
@@ -14903,7 +14902,7 @@ var uJ = function(e) {
       locale: n.props.locale,
       onReady: n.props.onReady,
       onTimeout: n.props.onTimeout
-    }, n.clickToPayService = un(n.props.configuration, n.ctpConfiguration, n.props.environment), null === (t = n.clickToPayService) || void 0 === t || t.initialize().catch(function(e) {
+    }, n.clickToPayService = ur(n.props.configuration, n.ctpConfiguration, n.props.environment), null == (t = n.clickToPayService) || t.initialize().catch(function(e) {
       n.handleError(new nv("ERROR", e.toString(), {
         cause: e
       }))
@@ -14917,7 +14916,7 @@ var uJ = function(e) {
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }, {
     key: "formatData",
@@ -14929,7 +14928,7 @@ var uJ = function(e) {
         i = t.srcCheckoutPayload,
         s = t.srcDigitalCardId;
       return {
-        paymentMethod: uQ(uQ(uQ(uQ(uQ({
+        paymentMethod: uJ(uJ(uJ(uJ(uJ({
           type: o.type
         }, n && {
           srcScheme: n
@@ -14943,18 +14942,18 @@ var uJ = function(e) {
           srcDigitalCardId: s
         }),
         browserInfo: this.browserInfo,
-        origin: null === (e = window) || void 0 === e || null === (e = e.location) || void 0 === e ? void 0 : e.origin
+        origin: null == (e = window) || null == (e = e.location) ? void 0 : e.origin
       }
     }
   }, {
     key: "formatProps",
     value: function(e) {
       var t, n, r;
-      return uQ(uQ({}, e), {}, {
+      return uJ(uJ({}, e), {}, {
         disableOtpAutoFocus: e.disableOtpAutoFocus || !1,
-        shopperEmail: e.shopperEmail || (null == e || null === (t = e._parentInstance) || void 0 === t || null === (t = t.options) || void 0 === t || null === (t = t.session) || void 0 === t ? void 0 : t.shopperEmail),
-        telephoneNumber: e.telephoneNumber || (null == e || null === (n = e._parentInstance) || void 0 === n || null === (n = n.options) || void 0 === n || null === (n = n.session) || void 0 === n ? void 0 : n.telephoneNumber),
-        locale: e.locale || (null === (r = e.i18n) || void 0 === r || null === (r = r.locale) || void 0 === r ? void 0 : r.replace("-", "_"))
+        shopperEmail: e.shopperEmail || (null == e || null == (t = e._parentInstance) || null == (t = t.options) || null == (t = t.session) ? void 0 : t.shopperEmail),
+        telephoneNumber: e.telephoneNumber || (null == e || null == (n = e._parentInstance) || null == (n = n.options) || null == (n = n.session) ? void 0 : n.telephoneNumber),
+        locale: e.locale || (null == (r = e.i18n) || null == (r = r.locale) ? void 0 : r.replace("-", "_"))
       })
     }
   }, {
@@ -14978,7 +14977,7 @@ var uJ = function(e) {
           case 4:
             return e.abrupt("return", new(T())(function(e, n) {
               t.clickToPayService.subscribeOnStateChange(function(r) {
-                t.clickToPayService.shopperAccountFound && e(), r !== l3.NotAvailable && r !== l3.Login && r !== l3.Idle || n()
+                t.clickToPayService.shopperAccountFound && e(), r !== l7.NotAvailable && r !== l7.Login && r !== l7.Idle || n()
               })
             }));
           case 5:
@@ -14992,11 +14991,11 @@ var uJ = function(e) {
   }, {
     key: "render",
     value: function() {
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ui, {
+      }, (0, ec.h)(us, {
         isStandaloneComponent: !0,
         configuration: this.ctpConfiguration,
         amount: this.props.amount,
@@ -15005,12 +15004,12 @@ var uJ = function(e) {
         onSetStatus: this.setElementStatus,
         onSubmit: this.handleClickToPaySubmit,
         onError: this.handleError
-      }, (0, ec.h)(uO, null)))
+      }, (0, ec.h)(uE, null)))
     }
   }]), o
 }();
 
-function uX(e, t) {
+function u0(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15021,19 +15020,19 @@ function uX(e, t) {
   return n
 }
 
-function u0(e) {
+function u1(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = uX(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = u0(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = uX(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = u0(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(uJ, "type", "clicktopay");
-var u1 = function(e) {
-  (0, ea.Z)(r, uD);
+}(0, w.Z)(uX, "type", "clicktopay");
+var u2 = function(e) {
+  (0, ea.Z)(r, uL);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -15066,7 +15065,7 @@ var u1 = function(e) {
   }, {
     key: "formatProps",
     value: function(e) {
-      return u0(u0({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return u1(u1({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         type: "bcmc",
         cvcPolicy: n4
       })
@@ -15074,7 +15073,7 @@ var u1 = function(e) {
   }]), r
 }();
 
-function u2(e) {
+function u8(e) {
   var t = e.description,
     n = void 0 === t ? "" : t,
     r = e.name,
@@ -15106,20 +15105,20 @@ function u2(e) {
   }, n, (void 0 === s ? "" : s) && " ›")))
 }
 
-function u8(e) {
+function u4(e) {
   var t = e.url;
   return (0, ec.h)("div", {
     className: "adyen-checkout__campaign"
-  }, !t && (0, ec.h)(u2, e), t && (0, ec.h)("a", {
+  }, !t && (0, ec.h)(u8, e), t && (0, ec.h)("a", {
     href: t,
     className: "adyen-checkout__campaign-link",
     target: "_blank",
     rel: "noopener noreferrer"
-  }, (0, ec.h)(u2, e)))
-}(0, w.Z)(u1, "type", "bcmc"), (0, w.Z)(u1, "defaultProps", u0(u0({}, uD.defaultProps), {}, {
+  }, (0, ec.h)(u8, e)))
+}(0, w.Z)(u2, "type", "bcmc"), (0, w.Z)(u2, "defaultProps", u1(u1({}, uL.defaultProps), {}, {
   brands: ["bcmc", "maestro", "visa"]
 }));
-var u4 = function(e) {
+var u6 = function(e) {
   var t = e.options,
     n = void 0 === t ? [] : t,
     r = e.name,
@@ -15151,7 +15150,7 @@ var u4 = function(e) {
   }))
 };
 
-function u6(e, t) {
+function u5(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15162,19 +15161,19 @@ function u6(e, t) {
   return n
 }
 
-function u5(e) {
+function u3(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = u6(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = u5(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = u6(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = u5(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function u3(e) {
+function u7(e) {
   var t, n = e.amounts,
     r = e.onCancel,
     o = e.onDonate,
@@ -15233,11 +15232,11 @@ function u3(e) {
     className: "adyen-checkout__status__text"
   }, s.get("thanksForYourSupport"))) : (0, ec.h)("div", {
     className: "adyen-checkout__adyen-giving"
-  }, (0, ec.h)(u8, e), (0, ec.h)("div", {
+  }, (0, ec.h)(u4, e), (0, ec.h)("div", {
     className: "adyen-checkout__adyen-giving-actions"
   }, (0, ec.h)("div", {
     className: "adyen-checkout__amounts"
-  }, (0, ec.h)(u4, {
+  }, (0, ec.h)(u6, {
     options: J()(t = $()(n)).call(t, function(e) {
       return {
         value: e,
@@ -15251,12 +15250,12 @@ function u3(e) {
       var t = e.target,
         n = ee()(t.value, 10);
       v(!0), k(function(e) {
-        return u5(u5({}, e), {}, {
+        return u3(u3({}, e), {}, {
           value: n
         })
       })
     }
-  })), i && (0, ec.h)(i6, {
+  })), i && (0, ec.h)(i5, {
     message: i.message.replace("%{linkText}", "%#".concat(i.linkText, "%#")),
     urls: [i.link]
   }), (0, ec.h)(nu, {
@@ -15287,7 +15286,7 @@ function u3(e) {
   })))
 }
 
-function u7(e, t) {
+function u9(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15298,25 +15297,25 @@ function u7(e, t) {
   return n
 }
 
-function u9(e) {
+function de(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = u7(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = u9(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = u7(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = u9(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-u3.defaultProps = {
+u7.defaultProps = {
   onCancel: function() {},
   onChange: function() {},
   onDonate: function() {},
   amounts: {},
   showCancelButton: !0
 };
-var de = function(e) {
+var dt = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -15354,7 +15353,7 @@ var de = function(e) {
   }, {
     key: "setState",
     value: function(e) {
-      this.state = u9(u9({}, this.state), e)
+      this.state = de(de({}, this.state), e)
     }
   }, {
     key: "donate",
@@ -15369,11 +15368,11 @@ var de = function(e) {
   }, {
     key: "render",
     value: function() {
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(u3, (0, er.Z)({}, this.props, {
+      }, (0, ec.h)(u7, (0, er.Z)({}, this.props, {
         ref: this.handleRef,
         onChange: this.setState,
         onDonate: this.donate
@@ -15381,15 +15380,15 @@ var de = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(de, "type", "donation"), (0, w.Z)(de, "defaultProps", {
+(0, w.Z)(dt, "type", "donation"), (0, w.Z)(dt, "defaultProps", {
   onCancel: function() {},
   onDonate: function() {}
 });
-var dt = function() {
+var dn = function() {
   return window.location !== window.parent.location
 };
 
-function dn(e, t) {
+function dr(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15399,7 +15398,7 @@ function dn(e, t) {
   }
   return n
 }
-var dr = function(e) {
+var da = function(e) {
   (0, ea.Z)(r, ec.wA);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -15432,9 +15431,9 @@ var dr = function(e) {
         return e.props.beforeRedirect(t, n, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n, r, o = null != arguments[t] ? arguments[t] : {};
-            t % 2 ? N()(n = dn(Object(o), !0)).call(n, function(t) {
+            t % 2 ? N()(n = dr(Object(o), !0)).call(n, function(t) {
               (0, w.Z)(e, t, o[t])
-            }) : m() ? v()(e, m()(o)) : N()(r = dn(Object(o))).call(r, function(t) {
+            }) : m() ? v()(e, m()(o)) : N()(r = dr(Object(o))).call(r, function(t) {
               b()(e, t, h()(o, t))
             })
           }
@@ -15447,7 +15446,7 @@ var dr = function(e) {
         } : {}))
       }).then(function() {
         var t, n;
-        e.postForm ? e.postForm.submit() : e.props.redirectFromTopWhenInIframe && dt() ? null === (t = (n = window.top.location).assign) || void 0 === t || t.call(n, e.props.url) : window.location.assign(e.props.url)
+        e.postForm ? e.postForm.submit() : e.props.redirectFromTopWhenInIframe && dn() ? null == (t = (n = window.top.location).assign) || t.call(n, e.props.url) : window.location.assign(e.props.url)
       }).catch(function() {})
     }
   }, {
@@ -15467,7 +15466,7 @@ var dr = function(e) {
         ref: function(e) {
           n.postForm = e
         }
-      }, this.props.redirectFromTopWhenInIframe && dt() && {
+      }, this.props.redirectFromTopWhenInIframe && dn() && {
         target: "_top"
       }), J()(t = l()(i)).call(t, function(e) {
         return (0, ec.h)("input", {
@@ -15481,7 +15480,7 @@ var dr = function(e) {
   }]), r
 }();
 
-function da(e, t) {
+function di(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15492,23 +15491,23 @@ function da(e, t) {
   return n
 }
 
-function di(e) {
+function ds(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = da(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = di(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = da(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = di(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dr, "defaultProps", {
+}(0, w.Z)(da, "defaultProps", {
   beforeRedirect: function(e) {
     return e()
   },
   method: "GET"
 });
-var ds = function(e) {
+var dc = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -15533,7 +15532,7 @@ var ds = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return di(di({}, e), {}, {
+      return ds(ds({}, e), {}, {
         showButton: !!e.showPayButton
       })
     }
@@ -15560,11 +15559,11 @@ var ds = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.url && this.props.method ? (0, ec.h)(dr, this.props) : this.props.showButton ? (0, ec.h)(a3, {
+      return this.props.url && this.props.method ? (0, ec.h)(da, this.props) : this.props.showButton ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(sc, (0, er.Z)({}, this.props, {
+      }, (0, ec.h)(sl, (0, er.Z)({}, this.props, {
         onSubmit: this.submit,
         payButton: this.payButton,
         ref: function(t) {
@@ -15575,7 +15574,7 @@ var ds = function(e) {
   }]), r
 }();
 
-function dc(e, t) {
+function dl(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15586,22 +15585,22 @@ function dc(e, t) {
   return n
 }
 
-function dl(e) {
+function du(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dc(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dl(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dc(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dl(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(ds, "type", "redirect"), (0, w.Z)(ds, "defaultProps", {
-  type: ds.type,
+}(0, w.Z)(dc, "type", "redirect"), (0, w.Z)(dc, "defaultProps", {
+  type: dc.type,
   showPayButton: !0
 });
-var du = function(e) {
-  (0, ea.Z)(r, ds);
+var dd = function(e) {
+  (0, ea.Z)(r, dc);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -15626,8 +15625,8 @@ var du = function(e) {
     key: "formatProps",
     value: function(e) {
       var t;
-      return dl(dl({}, e), {}, {
-        showPayButton: null !== (t = e.showButton) && void 0 !== t ? t : e.showPayButton
+      return du(du({}, e), {}, {
+        showPayButton: null != (t = e.showButton) ? t : e.showPayButton
       })
     }
   }, {
@@ -15648,11 +15647,11 @@ var du = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.showPayButton ? (0, ec.h)(a3, {
+      return this.props.showPayButton ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(sc, (0, er.Z)({}, this.props, {
+      }, (0, ec.h)(sl, (0, er.Z)({}, this.props, {
         name: this.displayName,
         onSubmit: this.submit,
         payButton: this.payButton,
@@ -15663,11 +15662,11 @@ var du = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(du, "type", "giropay");
-var dd = ["amount", "countryCode", "totalPriceStatus"],
-  dp = ["configuration"];
+(0, w.Z)(dd, "type", "giropay");
+var dp = ["amount", "countryCode", "totalPriceStatus"],
+  dh = ["configuration"];
 
-function dh(e, t) {
+function df(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15678,31 +15677,31 @@ function dh(e, t) {
   return n
 }
 
-function df(e) {
+function dm(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dh(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = df(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dh(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = df(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function dm(e) {
+function dy(e) {
   var t, n, r, o, a, i = e.configuration,
-    s = (0, k.Z)(e, dp);
+    s = (0, k.Z)(e, dh);
   return {
     apiVersion: 2,
     apiVersionMinor: 0,
-    transactionInfo: (t = s.amount, n = s.countryCode, r = s.totalPriceStatus, o = (0, k.Z)(s, dd), a = String(tA(t.value, t.currency)), df({
+    transactionInfo: (t = s.amount, n = s.countryCode, r = s.totalPriceStatus, o = (0, k.Z)(s, dp), a = String(tA(t.value, t.currency)), dm({
       countryCode: void 0 === n ? "US" : n,
       currencyCode: t.currency,
       totalPrice: a,
       totalPriceStatus: void 0 === r ? "FINAL" : r
     }, o.transactionInfo)),
-    merchantInfo: df(df({
+    merchantInfo: dm(dm({
       merchantId: i.merchantId,
       merchantName: i.merchantName
     }, i.merchantOrigin ? {
@@ -15737,8 +15736,8 @@ function dm(e) {
     callbackIntents: s.callbackIntents
   }
 }
-var dy = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr", "hr", "id", "it", "ja", "ko", "ms", "nl", "no", "pl", "pt", "ru", "sk", "sl", "sr", "sv", "th", "tr", "uk", "zh"],
-  dv = function() {
+var dv = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr", "hr", "id", "it", "ja", "ko", "ms", "nl", "no", "pl", "pt", "ru", "sk", "sl", "sr", "sv", "th", "tr", "uk", "zh"],
+  dg = function() {
     var e;
 
     function t(e) {
@@ -15768,11 +15767,11 @@ var dy = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
         return s().wrap(function(e) {
           for (;;) switch (e.prev = e.next) {
             case 0:
-              if (null !== (n = window.google) && void 0 !== n && n.payments) {
+              if (null != (n = window.google) && n.payments) {
                 e.next = 4;
                 break
               }
-              return r = new iF("https://pay.google.com/gp/p/js/pay.js"), e.next = 4, r.load();
+              return r = new iO("https://pay.google.com/gp/p/js/pay.js"), e.next = 4, r.load();
             case 4:
               return e.abrupt("return", new google.payments.api.PaymentsClient(t));
             case 5:
@@ -15810,7 +15809,7 @@ var dy = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
       key: "prefetchPaymentData",
       value: function(e) {
         if (!this.paymentsClient) throw Error("Google Pay is not available");
-        var t = dm(e);
+        var t = dy(e);
         this.paymentsClient.then(function(e) {
           return e.prefetchPaymentData(t)
         })
@@ -15819,14 +15818,14 @@ var dy = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
       key: "initiatePayment",
       value: function(e) {
         if (!this.paymentsClient) throw Error("Google Pay is not available");
-        var t = dm(e);
+        var t = dy(e);
         return this.paymentsClient.then(function(e) {
           return e.loadPaymentData(t)
         })
       }
     }]), t
   }(),
-  dg = function(e) {
+  db = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -15892,7 +15891,7 @@ var dy = ["en", "ar", "bg", "ca", "cs", "da", "de", "el", "es", "et", "fi", "fr"
     }]), r
   }();
 
-function db(e, t) {
+function d_(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -15903,22 +15902,22 @@ function db(e, t) {
   return n
 }
 
-function d_(e) {
+function dk(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = db(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = d_(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = db(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = d_(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dg, "defaultProps", {
+}(0, w.Z)(db, "defaultProps", {
   buttonColor: "default",
   buttonType: "long",
   buttonSizeMode: "static"
 });
-var dk = function(e) {
+var dC = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -15941,7 +15940,7 @@ var dk = function(e) {
     var e, t, o;
     (0, C.Z)(this, r);
     for (var a = arguments.length, i = Array(a), s = 0; s < a; s++) i[s] = arguments[s];
-    return o = n.call.apply(n, I()(e = [this]).call(e, i)), (0, w.Z)((0, eo.Z)(o), "googlePay", new dv(o.props)), (0, w.Z)((0, eo.Z)(o), "submit", function() {
+    return o = n.call.apply(n, I()(e = [this]).call(e, i)), (0, w.Z)((0, eo.Z)(o), "googlePay", new dg(o.props)), (0, w.Z)((0, eo.Z)(o), "submit", function() {
       var e = o.props.onAuthorized,
         n = void 0 === e ? function() {} : e;
       return new(T())(function(e, t) {
@@ -15977,7 +15976,7 @@ var dk = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      var t, n, r, o, a, i, s = null !== (t = e.brands) && void 0 !== t && t.length ? (a = e.brands, i = {
+      var t, n, r, o, a, i, s = null != (t = e.brands) && t.length ? (a = e.brands, i = {
           mc: "MASTERCARD",
           amex: "AMEX",
           visa: "VISA",
@@ -15986,12 +15985,12 @@ var dk = function(e) {
         }, Y()(a).call(a, function(e, t) {
           return i[t] && !O()(e).call(e, i[t]) && e.push(i[t]), e
         }, [])) : e.allowedCardNetworks,
-        c = null !== (n = e.buttonSizeMode) && void 0 !== n ? n : e.isDropin ? "fill" : "static",
+        c = null != (n = e.buttonSizeMode) ? n : e.isDropin ? "fill" : "static",
         l = function() {
           var e = (arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "").toLowerCase().substring(0, 2);
-          return O()(dy).call(dy, e) ? e : null
-        }(null !== (r = e.buttonLocale) && void 0 !== r ? r : null === (o = e.i18n) || void 0 === o ? void 0 : o.locale);
-      return d_(d_({}, e), {}, {
+          return O()(dv).call(dv, e) ? e : null
+        }(null != (r = e.buttonLocale) ? r : null == (o = e.i18n) ? void 0 : o.locale);
+      return dk(dk({}, e), {}, {
         showButton: !0 === e.showPayButton,
         configuration: e.configuration,
         allowedCardNetworks: s,
@@ -16004,8 +16003,8 @@ var dk = function(e) {
     value: function() {
       var e;
       return {
-        paymentMethod: d_({
-          type: null !== (e = this.props.type) && void 0 !== e ? e : r.type
+        paymentMethod: dk({
+          type: null != (e = this.props.type) ? e : r.type
         }, this.state),
         browserInfo: this.browserInfo
       }
@@ -16018,18 +16017,18 @@ var dk = function(e) {
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }, {
     key: "icon",
     get: function() {
       var e;
-      return null !== (e = this.props.icon) && void 0 !== e ? e : this.resources.getImage()("googlepay")
+      return null != (e = this.props.icon) ? e : this.resources.getImage()("googlepay")
     }
   }, {
     key: "render",
     value: function() {
-      return this.props.showPayButton ? (0, ec.h)(dg, {
+      return this.props.showPayButton ? (0, ec.h)(db, {
         buttonColor: this.props.buttonColor,
         buttonType: this.props.buttonType,
         buttonSizeMode: this.props.buttonSizeMode,
@@ -16041,7 +16040,7 @@ var dk = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(dk, "type", "paywithgoogle"), (0, w.Z)(dk, "defaultProps", {
+(0, w.Z)(dC, "type", "paywithgoogle"), (0, w.Z)(dC, "defaultProps", {
   environment: "TEST",
   existingPaymentMethodRequired: !1,
   buttonColor: "default",
@@ -16079,8 +16078,8 @@ var dk = function(e) {
   shippingOptionParameters: void 0,
   paymentMethods: []
 });
-var dC = function(e) {
-  (0, ea.Z)(r, sd);
+var dZ = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16103,8 +16102,8 @@ var dC = function(e) {
   }
   return (0, Z.Z)(r)
 }();
-(0, w.Z)(dC, "type", "entercash");
-var dZ = {
+(0, w.Z)(dZ, "type", "entercash");
+var dw = {
     telephoneNumber: [{
       validate: function(e) {
         return !!e && e.length <= 11
@@ -16119,16 +16118,16 @@ var dZ = {
       modes: ["blur"]
     }]
   },
-  dw = ["personalDetailsRequired", "data", "onChange", "showPayButton", "payButton"];
+  dS = ["personalDetailsRequired", "data", "onChange", "showPayButton", "payButton"];
 
-function dS(e) {
+function dN(e) {
   var t, n = e.personalDetailsRequired,
     r = void 0 === n || n,
     o = e.data,
     a = e.onChange,
     i = e.showPayButton,
     s = e.payButton,
-    c = (0, k.Z)(e, dw),
+    c = (0, k.Z)(e, dS),
     u = t8(null),
     d = nl().i18n,
     p = tX("ready"),
@@ -16136,14 +16135,14 @@ function dS(e) {
     f = h[0],
     m = h[1],
     y = t8({});
-  l()(y.current).length || null === (t = c.setComponentRef) || void 0 === t || t.call(c, y.current), y.current.showValidation = function() {
+  l()(y.current).length || null == (t = c.setComponentRef) || t.call(c, y.current), y.current.showValidation = function() {
     var e;
-    null === (e = u.current) || void 0 === e || e.showValidation()
+    null == (e = u.current) || e.showValidation()
   }, y.current.setStatus = m;
   var v = r && c.showFormInstruction;
   return (0, ec.h)("div", {
     className: "adyen-checkout__econtext-input__field"
-  }, v && (0, ec.h)(a1, null), r && (0, ec.h)(oi, {
+  }, v && (0, ec.h)(a2, null), r && (0, ec.h)(oi, {
     data: o,
     requiredFields: ["firstName", "lastName", "telephoneNumber", "shopperEmail"],
     onChange: a,
@@ -16151,14 +16150,14 @@ function dS(e) {
     setComponentRef: function(e) {
       u.current = e
     },
-    validationRules: dZ
+    validationRules: dw
   }), i && s({
     status: f,
     label: d.get("confirmPurchase")
   }))
 }
 
-function dN(e) {
+function dx(e) {
   var t, n = ((t = document.createElement("textArea")).readOnly = !0, t.value = e, document.body.appendChild(t), t);
   if (window.navigator.userAgent.match(/ipad|iphone/i)) {
     var r = document.createRange();
@@ -16168,13 +16167,13 @@ function dN(e) {
   } else n.select();
   document.execCommand("copy"), document.body.removeChild(n)
 }
-var dx = ["voucherDetails", "className"];
+var dP = ["voucherDetails", "className"];
 
-function dP(e) {
+function dA(e) {
   var t, n = e.voucherDetails,
     r = void 0 === n ? [] : n,
     o = e.className,
-    a = (0, k.Z)(e, dx),
+    a = (0, k.Z)(e, dP),
     i = nl().i18n,
     s = nT();
   return (0, ec.h)("div", {
@@ -16231,7 +16230,7 @@ function dP(e) {
     variant: "action",
     onClick: function(e, t) {
       var n = t.complete;
-      dN(a.reference), n()
+      dx(a.reference), n()
     },
     icon: s({
       imageFolder: "components/"
@@ -16268,7 +16267,7 @@ function dP(e) {
     }, r))
   }))))
 }
-var dA = function(e) {
+var dR = function(e) {
   var t = e.reference,
     n = e.totalAmount,
     r = e.expiresAt,
@@ -16278,7 +16277,7 @@ var dA = function(e) {
     s = e.collectionInstitutionNumber,
     c = nl().i18n,
     l = nT();
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     paymentMethodType: o,
     reference: t,
     introduction: c.get("voucher.introduction.econtext"),
@@ -16299,7 +16298,7 @@ var dA = function(e) {
   })
 };
 
-function dR(e, t) {
+function dF(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16310,18 +16309,18 @@ function dR(e, t) {
   return n
 }
 
-function dF(e) {
+function dO(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dR(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dF(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dR(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dF(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var dO = function(e) {
+var dE = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -16351,7 +16350,7 @@ var dO = function(e) {
   }, {
     key: "formatData",
     value: function() {
-      return dF(dF({}, this.state.data), {}, {
+      return dO(dO({}, this.state.data), {}, {
         paymentMethod: {
           type: this.props.type || r.type
         }
@@ -16366,15 +16365,15 @@ var dO = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.reference ? (0, ec.h)(dA, (0, er.Z)({
+      }, this.props.reference ? (0, ec.h)(dR, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
-      }, this.props)) : (0, ec.h)(dS, (0, er.Z)({
+      }, this.props)) : (0, ec.h)(dN, (0, er.Z)({
         setComponentRef: this.setComponentRef
       }, this.props, {
         onChange: this.setState,
@@ -16384,13 +16383,13 @@ var dO = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(dO, "type", "econtext"), (0, w.Z)(dO, "defaultProps", {
+(0, w.Z)(dE, "type", "econtext"), (0, w.Z)(dE, "defaultProps", {
   personalDetailsRequired: !0,
   showFormInstruction: !0
 });
-var dE = ["ES", "FR"];
+var dI = ["ES", "FR"];
 
-function dI(e, t) {
+function dM(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16401,19 +16400,19 @@ function dI(e, t) {
   return n
 }
 
-function dM(e) {
+function dT(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dI(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dM(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dI(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dM(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var dT = function(e) {
-  (0, ea.Z)(r, ic);
+var dB = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16437,14 +16436,14 @@ var dT = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return dM(dM({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : dE
+      return dT(dT({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : dI
       })
     }
   }]), r
 }();
 
-function dB(e, t) {
+function dD(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16455,19 +16454,19 @@ function dB(e, t) {
   return n
 }
 
-function dD(e) {
+function dL(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dB(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dD(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dB(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dD(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dT, "type", "facilypay_3x");
-var dL = function(e) {
-  (0, ea.Z)(r, ic);
+}(0, w.Z)(dB, "type", "facilypay_3x");
+var dV = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16491,14 +16490,14 @@ var dL = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return dD(dD({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : dE
+      return dL(dL({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : dI
       })
     }
   }]), r
 }();
 
-function dV(e, t) {
+function dj(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16509,19 +16508,19 @@ function dV(e, t) {
   return n
 }
 
-function dj(e) {
+function dU(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dV(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dj(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dV(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dj(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dL, "type", "facilypay_4x");
-var dU = function(e) {
-  (0, ea.Z)(r, ic);
+}(0, w.Z)(dV, "type", "facilypay_4x");
+var dq = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16545,14 +16544,14 @@ var dU = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return dj(dj({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : dE
+      return dU(dU({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : dI
       })
     }
   }]), r
 }();
 
-function dq(e, t) {
+function dH(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16563,19 +16562,19 @@ function dq(e, t) {
   return n
 }
 
-function dH(e) {
+function dK(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dq(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dH(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dq(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dH(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dU, "type", "facilypay_6x");
-var dK = function(e) {
-  (0, ea.Z)(r, ic);
+}(0, w.Z)(dq, "type", "facilypay_6x");
+var dz = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16599,14 +16598,14 @@ var dK = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return dH(dH({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : dE
+      return dK(dK({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : dI
       })
     }
   }]), r
 }();
 
-function dz(e, t) {
+function dW(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16617,51 +16616,51 @@ function dz(e, t) {
   return n
 }
 
-function dW(e) {
+function dY(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dz(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dW(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dz(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dW(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(dK, "type", "facilypay_10x");
-var dY = function(e) {
-  (0, ea.Z)(r, ic);
-  var t, n = (t = function() {
-    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
-    if ("function" == typeof Proxy) return !0;
-    try {
-      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
-    } catch (e) {
-      return !1
-    }
-  }(), function() {
-    var e, n = (0, es.Z)(r);
-    if (t) {
-      var o = (0, es.Z)(this).constructor;
-      e = en()(n, arguments, o)
-    } else e = n.apply(this, arguments);
-    return (0, ei.Z)(this, e)
-  });
-
-  function r() {
-    return (0, C.Z)(this, r), n.apply(this, arguments)
-  }
-  return (0, Z.Z)(r, [{
-    key: "formatProps",
-    value: function(e) {
-      return dW(dW({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : dE
-      })
-    }
-  }]), r
-}();
-(0, w.Z)(dY, "type", "facilypay_12x");
+}(0, w.Z)(dz, "type", "facilypay_10x");
 var dG = function(e) {
-  (0, ea.Z)(r, sd);
+  (0, ea.Z)(r, il);
+  var t, n = (t = function() {
+    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
+    if ("function" == typeof Proxy) return !0;
+    try {
+      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
+    } catch (e) {
+      return !1
+    }
+  }(), function() {
+    var e, n = (0, es.Z)(r);
+    if (t) {
+      var o = (0, es.Z)(this).constructor;
+      e = en()(n, arguments, o)
+    } else e = n.apply(this, arguments);
+    return (0, ei.Z)(this, e)
+  });
+
+  function r() {
+    return (0, C.Z)(this, r), n.apply(this, arguments)
+  }
+  return (0, Z.Z)(r, [{
+    key: "formatProps",
+    value: function(e) {
+      return dY(dY({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : dI
+      })
+    }
+  }]), r
+}();
+(0, w.Z)(dG, "type", "facilypay_12x");
+var d$ = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -16684,11 +16683,11 @@ var dG = function(e) {
   }
   return (0, Z.Z)(r)
 }();
-(0, w.Z)(dG, "type", "ideal");
-var d$ = ["black", "white"],
-  dQ = ["en_US", "en_AU", "en_GB", "fr_CA", "es_ES", "it_IT", "fr_FR", "de_DE", "pt_BR", "zh_CN", "da_DK", "zh_HK", "id_ID", "he_IL", "ja_JP", "ko_KR", "nl_NL", "no_NO", "pl_PL", "pt_PT", "ru_RU", "sv_SE", "th_TH", "zh_TW"];
+(0, w.Z)(d$, "type", "ideal");
+var dQ = ["black", "white"],
+  dJ = ["en_US", "en_AU", "en_GB", "fr_CA", "es_ES", "it_IT", "fr_FR", "de_DE", "pt_BR", "zh_CN", "da_DK", "zh_HK", "id_ID", "he_IL", "ja_JP", "ko_KR", "nl_NL", "no_NO", "pl_PL", "pt_PT", "ru_RU", "sv_SE", "th_TH", "zh_TW"];
 
-function dJ(e, t) {
+function dX(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16699,25 +16698,25 @@ function dJ(e, t) {
   return n
 }
 
-function dX(e) {
+function d0(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = dJ(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = dX(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = dJ(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = dX(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var d0 = function(e) {
+var d1 = function(e) {
     var t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-    return "paypal" === e ? dX({}, n) : Y()(t = l()(n)).call(t, function(e, t) {
+    return "paypal" === e ? d0({}, n) : Y()(t = l()(n)).call(t, function(e, t) {
       var r = n[t];
-      return ("color" !== t || O()(d$).call(d$, r)) && (e[t] = r), e
+      return ("color" !== t || O()(dQ).call(dQ, r)) && (e[t] = r), e
     }, {})
   },
-  d1 = function(e) {
+  d2 = function(e) {
     var t, n = e.amount,
       r = e.countryCode,
       o = e.debug,
@@ -16727,13 +16726,13 @@ var d0 = function(e) {
       c = e.commit,
       l = e.vault,
       u = e.enableMessages,
-      d = (t = i ? i.replace("-", "_") : null, O()(dQ).call(dQ, t) ? t : null),
+      d = (t = i ? i.replace("-", "_") : null, O()(dJ).call(dJ, t) ? t : null),
       p = n ? n.currency : null,
       h = "test" === (void 0 === a ? "" : a).toLowerCase(),
       f = h ? "AXy9hIzWB6h_LjZUHjHmsbsiicSIbL4GKOrcgomEedVjduUinIU4C2llxkW5p0OG0zTNgviYFceaXEnj" : "AU0Z-TP9t5_9196agaBN6ZD3UAwypdP1IX8ZYH3PcNNAQMXUTDQlChruXqQEhyI6-NKBKowN6ydkj477",
       m = s.merchantId,
       y = s.intent;
-    return dX(dX(dX(dX(dX(dX(dX({}, m && {
+    return d0(d0(d0(d0(d0(d0(d0({}, m && {
       "merchant-id": m
     }), d && {
       locale: d
@@ -16754,9 +16753,9 @@ var d0 = function(e) {
       components: "buttons,funding-eligibility".concat(u ? ",messages" : "")
     })
   },
-  d2 = ["onInit", "onApprove", "onClick", "onCancel", "onError", "onShippingChange", "onSubmit", "isProcessingPayment", "paypalRef", "style"];
+  d8 = ["onInit", "onApprove", "onClick", "onCancel", "onError", "onShippingChange", "onSubmit", "isProcessingPayment", "paypalRef", "style"];
 
-function d8(e, t) {
+function d4(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16767,19 +16766,19 @@ function d8(e, t) {
   return n
 }
 
-function d4(e) {
+function d6(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = d8(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = d4(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = d8(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = d4(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function d6(e) {
+function d5(e) {
   var t, n = e.onInit,
     r = e.onApprove,
     o = e.onClick,
@@ -16790,15 +16789,15 @@ function d6(e) {
     l = e.isProcessingPayment,
     u = e.paypalRef,
     d = e.style,
-    p = (0, k.Z)(e, d2),
+    p = (0, k.Z)(e, d8),
     h = nl().i18n,
-    f = "tokenize" === (null === (t = p.configuration) || void 0 === t ? void 0 : t.intent),
+    f = "tokenize" === (null == (t = p.configuration) ? void 0 : t.intent),
     m = t8(null),
     y = t8(null),
     v = t8(null),
     g = t8(null),
     b = function(e, t) {
-      var l = d4(d4(d4(d4({}, f && {
+      var l = d6(d6(d6(d6({}, f && {
           createBillingAgreement: c
         }), !f && {
           createOrder: c
@@ -16806,7 +16805,7 @@ function d6(e) {
           onShippingChange: s
         }), {}, {
           fundingSource: e,
-          style: d0(e, d),
+          style: d1(e, d),
           onInit: n,
           onClick: o,
           onCancel: a,
@@ -16848,9 +16847,9 @@ function d6(e) {
     inline: !0
   }), " ", h.get("paypal.processingPayment"))))
 }
-var d5 = ["onApprove", "onCancel", "onChange", "onError", "onSubmit"];
+var d3 = ["onApprove", "onCancel", "onChange", "onError", "onSubmit"];
 
-function d3(e, t) {
+function d7(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16861,25 +16860,25 @@ function d3(e, t) {
   return n
 }
 
-function d7(e) {
+function d9(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = d3(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = d7(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = d3(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = d7(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function d9(e) {
+function pe(e) {
   var t = e.onApprove,
     n = e.onCancel,
     r = e.onChange,
     o = e.onError,
     a = e.onSubmit,
-    i = (0, k.Z)(e, d5),
+    i = (0, k.Z)(e, d3),
     s = tX("pending"),
     c = (0, q.Z)(s, 2),
     u = c[0],
@@ -16892,12 +16891,12 @@ function d9(e) {
       d("ready")
     };
   return t1(function() {
-    var e, t, n, r, o = new iF((n = d1(i), r = decodeURIComponent(J()(e = l()(n)).call(e, function(e) {
+    var e, t, n, r, o = new iO((n = d2(i), r = decodeURIComponent(J()(e = l()(n)).call(e, function(e) {
       var t;
       return I()(t = "".concat(e, "=")).call(t, n[e])
-    }).join("&")), I()(t = "".concat("https://www.paypal.com/sdk/js", "?")).call(t, r)), "body", d7({}, i.cspNonce && {
+    }).join("&")), I()(t = "".concat("https://www.paypal.com/sdk/js", "?")).call(t, r)), "body", d9({}, i.cspNonce && {
       nonce: i.cspNonce
-    }), d7({}, i.cspNonce && {
+    }), d9({}, i.cspNonce && {
       cspNonce: i.cspNonce
     }));
     return o.load().then(h),
@@ -16908,7 +16907,7 @@ function d9(e) {
     className: "adyen-checkout__paypal"
   }, "pending" === u ? (0, ec.h)("div", {
     className: "adyen-checkout__paypal__status adyen-checkout__paypal__status--pending"
-  }, (0, ec.h)(tq, null)) : (0, ec.h)(d6, (0, er.Z)({}, i, {
+  }, (0, ec.h)(tq, null)) : (0, ec.h)(d5, (0, er.Z)({}, i, {
     onCancel: n,
     onChange: r,
     onError: o,
@@ -16918,9 +16917,9 @@ function d9(e) {
     paypalRef: window.paypal
   })))
 }
-var pe = "The instance of the PayPal component being used is not the same which started the payment";
+var pt = "The instance of the PayPal component being used is not the same which started the payment";
 
-function pt(e, t) {
+function pn(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16931,18 +16930,18 @@ function pt(e, t) {
   return n
 }
 
-function pn(e) {
+function pr(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = pt(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pn(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = pt(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pn(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var pr = function(e) {
+var po = function(e) {
   var t = e.paypalAddressObject;
   if (!t) return null;
   var n = function() {
@@ -16950,7 +16949,7 @@ var pr = function(e) {
         n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
       return t && n ? I()(e = "".concat(t, ", ")).call(e, n) : t || n || null
     }(t.address_line_1, t.address_line_2),
-    r = pn(pn(pn(pn(pn({}, n && {
+    r = pr(pr(pr(pr(pr({}, n && {
       street: n
     }), t.admin_area_1 && {
       stateOrProvince: t.admin_area_1
@@ -16964,7 +16963,7 @@ var pr = function(e) {
   return l()(r).length > 0 ? r : null
 };
 
-function po(e, t) {
+function pa(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -16975,18 +16974,18 @@ function po(e, t) {
   return n
 }
 
-function pa(e) {
+function pi(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = po(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pa(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = po(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pa(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var pi = function(e) {
+var ps = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -17028,20 +17027,20 @@ var pi = function(e) {
         var t = function(e) {
           if (!e) return null;
           var t, n, r, o, a, i, s, c, u = {
-              firstName: null == e || null === (t = e.payer) || void 0 === t || null === (t = t.name) || void 0 === t ? void 0 : t.given_name,
-              lastName: null == e || null === (n = e.payer) || void 0 === n || null === (n = n.name) || void 0 === n ? void 0 : n.surname
+              firstName: null == e || null == (t = e.payer) || null == (t = t.name) ? void 0 : t.given_name,
+              lastName: null == e || null == (n = e.payer) || null == (n = n.name) ? void 0 : n.surname
             },
-            d = null == e || null === (r = e.payer) || void 0 === r ? void 0 : r.email_address,
-            p = null == e || null === (o = e.payer) || void 0 === o || null === (o = o.address) || void 0 === o ? void 0 : o.country_code,
-            h = null == e || null === (a = e.payer) || void 0 === a || null === (a = a.phone) || void 0 === a || null === (a = a.phone_number) || void 0 === a ? void 0 : a.national_number,
-            f = null == e || null === (i = e.payer) || void 0 === i ? void 0 : i.birth_date,
-            m = pr({
-              paypalAddressObject: null == e || null === (s = e.payer) || void 0 === s ? void 0 : s.address
+            d = null == e || null == (r = e.payer) ? void 0 : r.email_address,
+            p = null == e || null == (o = e.payer) || null == (o = o.address) ? void 0 : o.country_code,
+            h = null == e || null == (a = e.payer) || null == (a = a.phone) || null == (a = a.phone_number) ? void 0 : a.national_number,
+            f = null == e || null == (i = e.payer) ? void 0 : i.birth_date,
+            m = po({
+              paypalAddressObject: null == e || null == (s = e.payer) ? void 0 : s.address
             }),
-            y = pr({
-              paypalAddressObject: null == e || null === (c = e.purchase_units) || void 0 === c || null === (c = c[0].shipping) || void 0 === c ? void 0 : c.address
+            y = po({
+              paypalAddressObject: null == e || null == (c = e.purchase_units) || null == (c = c[0].shipping) ? void 0 : c.address
             }),
-            v = pn(pn(pn(pn(pn(pn(pn({}, u.firstName && {
+            v = pr(pr(pr(pr(pr(pr(pr({}, u.firstName && {
               shopperName: u
             }), d && {
               shopperEmail: d
@@ -17080,9 +17079,9 @@ var pi = function(e) {
       var t, n = e.configuration,
         r = n.merchantId,
         o = n.intent,
-        a = 0 === (null === (t = e.amount) || void 0 === t ? void 0 : t.value) ? "tokenize" : e.intent || o,
+        a = 0 === (null == (t = e.amount) ? void 0 : t.value) ? "tokenize" : e.intent || o,
         i = "tokenize" === a || e.vault;
-      return pa(pa({}, e), {}, {
+      return pi(pi({}, e), {}, {
         vault: i,
         configuration: {
           intent: a,
@@ -17109,13 +17108,13 @@ var pi = function(e) {
   }, {
     key: "handleResolve",
     value: function(e) {
-      if (!this.resolve) return this.handleError(new nv("ERROR", pe));
+      if (!this.resolve) return this.handleError(new nv("ERROR", pt));
       this.resolve(e)
     }
   }, {
     key: "handleReject",
     value: function(e) {
-      if (!this.reject) return this.handleError(new nv("ERROR", pe));
+      if (!this.reject) return this.handleError(new nv("ERROR", pt));
       this.reject(Error(e))
     }
   }, {
@@ -17130,11 +17129,11 @@ var pi = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.showPayButton ? (0, ec.h)(a3, {
+      return this.props.showPayButton ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(d9, (0, er.Z)({
+      }, (0, ec.h)(pe, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -17153,7 +17152,7 @@ var pi = function(e) {
   }]), r
 }();
 
-function ps(e, t) {
+function pc(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17164,21 +17163,21 @@ function ps(e, t) {
   return n
 }
 
-function pc(e) {
+function pl(e) {
   var t, n, r = nl().i18n,
     o = tX("ready"),
     a = (0, q.Z)(o, 2),
     i = a[0],
     s = a[1],
-    c = !(null == e || null === (t = e.items) || void 0 === t || !t.length),
+    c = !(null == e || null == (t = e.items) || !t.length),
     l = rV({
       schema: I()(n = []).call(n, (0, H.Z)(c ? ["phonePrefix"] : []), ["phoneNumber"]),
       defaultData: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = ps(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = pc(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = ps(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = pc(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -17253,7 +17252,7 @@ function pc(e) {
   }))
 }
 
-function pl(e, t) {
+function pu(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17264,17 +17263,17 @@ function pl(e, t) {
   return n
 }
 
-function pu(e) {
+function pd(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = pl(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pu(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = pl(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pu(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(pi, "type", "paypal"), (0, w.Z)(pi, "subtype", "sdk"), (0, w.Z)(pi, "defaultProps", {
+}(0, w.Z)(ps, "type", "paypal"), (0, w.Z)(ps, "subtype", "sdk"), (0, w.Z)(ps, "defaultProps", {
   environment: "TEST",
   status: "loading",
   showPayButton: !0,
@@ -17300,10 +17299,10 @@ function pu(e) {
   onCancel: function() {},
   onError: function() {},
   onShippingChange: function() {}
-}), pc.defaultProps = {
+}), pl.defaultProps = {
   phoneLabel: "telephoneNumber"
 };
-var pd, pp, ph, pf, pm = function(e, t) {
+var pp, ph, pf, pm, py = function(e, t) {
     if (e && t) {
       var n = D()(e).call(e, function(e) {
         return e.code === t
@@ -17312,7 +17311,7 @@ var pd, pp, ph, pf, pm = function(e, t) {
     }
     return !1
   },
-  py = [{
+  pv = [{
     id: "+7",
     name: "Russian Federation",
     code: "RU"
@@ -17414,7 +17413,7 @@ var pd, pp, ph, pf, pm = function(e, t) {
     code: "KR"
   }];
 
-function pv(e, t) {
+function pg(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17425,18 +17424,18 @@ function pv(e, t) {
   return n
 }
 
-function pg(e) {
+function pb(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = pv(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pg(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = pv(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pg(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var pb = function(e) {
+var p_ = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -17466,10 +17465,10 @@ var pb = function(e) {
   }, {
     key: "formatProps",
     value: function(e) {
-      return pg(pg({
+      return pb(pb({
         onValid: function() {}
       }, e), {}, {
-        selected: pm(e.items, e.countryCode)
+        selected: py(e.items, e.countryCode)
       })
     }
   }, {
@@ -17487,11 +17486,11 @@ var pb = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(pc, (0, er.Z)({
+      }, (0, ec.h)(pl, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -17505,7 +17504,7 @@ var pb = function(e) {
   }]), r
 }();
 
-function p_(e, t) {
+function pk(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17516,19 +17515,19 @@ function p_(e, t) {
   return n
 }
 
-function pk(e) {
+function pC(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = p_(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pk(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = p_(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pk(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function pC(e) {
+function pZ(e) {
   var t = this,
     n = t8(null),
     r = tX({}),
@@ -17560,7 +17559,7 @@ function pC(e) {
     A = P[0],
     R = P[1],
     F = t4(function() {
-      return c0(e, {
+      return c1(e, {
         sfp: n
       }, {
         dualBrandSelectElements: S,
@@ -17582,42 +17581,42 @@ function pC(e) {
     e.onChange({
       data: h,
       valid: l,
-      errors: pk(pk({}, a), t),
+      errors: pC(pC({}, a), t),
       isValid: v,
       selectedBrandValue: A
     })
-  }, [h, l, a, A]), (0, ec.h)(cU, (0, er.Z)({
+  }, [h, l, a, A]), (0, ec.h)(cq, (0, er.Z)({
     ref: n
-  }, pZ(e), {
+  }, pw(e), {
     onChange: function(e) {
-      f(pk(pk({}, h), e.data)), i(pk(pk({}, a), e.errors)), u(pk(pk({}, l), e.valid)), g(e.isSfpValid)
+      f(pC(pC({}, h), e.data)), i(pC(pC({}, a), e.errors)), u(pC(pC({}, l), e.valid)), g(e.isSfpValid)
     },
     render: function() {
       return null
     }
   }))
-}(0, w.Z)(pb, "type", "qiwiwallet"), (0, w.Z)(pb, "defaultProps", {
-  items: P()(pf = J()(py).call(py, function(e) {
+}(0, w.Z)(p_, "type", "qiwiwallet"), (0, w.Z)(p_, "defaultProps", {
+  items: P()(pm = J()(pv).call(pv, function(e) {
     if (!e) throw Error("No item passed");
     if (!e.code || !e.id) return !1;
     var t, n, r = e.code.toUpperCase().replace(/./g, function(e) {
       return ti() ? ti()(e.charCodeAt(0) + 127397) : ""
     });
-    return pu(pu({}, e), {}, {
+    return pd(pd({}, e), {}, {
       name: I()(t = I()(n = "".concat(r, " ")).call(n, e.name, " (")).call(t, e.id, ")"),
       selectedOptionName: r
     })
-  })).call(pf, function(e) {
+  })).call(pm, function(e) {
     return !1 !== e
   }),
-  countryCode: py[0].code,
+  countryCode: pv[0].code,
   prefixName: "qiwiwallet.telephoneNumberPrefix",
   phoneName: "qiwiwallet.telephoneNumber"
-}), pC.defaultProps = {
+}), pZ.defaultProps = {
   onChange: function() {},
   onError: function() {}
 };
-var pZ = function(e) {
+var pw = function(e) {
   return {
     allowedDOMAccess: e.allowedDOMAccess,
     autoFocus: e.autoFocus,
@@ -17650,7 +17649,7 @@ var pZ = function(e) {
   }
 };
 
-function pw(e, t) {
+function pS(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17661,18 +17660,18 @@ function pw(e, t) {
   return n
 }
 
-function pS(e) {
+function pN(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = pw(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = pS(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = pw(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = pS(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var pN = function(e) {
+var px = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -17695,12 +17694,12 @@ var pN = function(e) {
     var e, t;
     (0, C.Z)(this, r);
     for (var o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-    return t = n.call.apply(n, I()(e = [this]).call(e, a)), (0, w.Z)((0, eo.Z)(t), "onBinValue", lT((0, eo.Z)(t))), t
+    return t = n.call.apply(n, I()(e = [this]).call(e, a)), (0, w.Z)((0, eo.Z)(t), "onBinValue", lB((0, eo.Z)(t))), t
   }
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return pS(pS({}, e), {}, {
+      return pN(pN({}, e), {}, {
         type: "scheme" === e.type || "securedfields" === e.type ? "card" : e.type
       })
     }
@@ -17709,7 +17708,7 @@ var pN = function(e) {
     value: function() {
       var e = this.state.selectedBrandValue || this.props.brand;
       return {
-        paymentMethod: pS(pS({
+        paymentMethod: pN(pN({
           type: r.type
         }, this.state.data), e && {
           brand: e
@@ -17721,40 +17720,40 @@ var pN = function(e) {
     key: "updateStyles",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.updateStyles && this.componentRef.updateStyles(e), this
+      return null != (t = this.componentRef) && t.updateStyles && this.componentRef.updateStyles(e), this
     }
   }, {
     key: "setFocusOn",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.setFocusOn && this.componentRef.setFocusOn(e), this
+      return null != (t = this.componentRef) && t.setFocusOn && this.componentRef.setFocusOn(e), this
     }
   }, {
     key: "processBinLookupResponse",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.processBinLookupResponse && this.componentRef.processBinLookupResponse(e), this
+      return null != (t = this.componentRef) && t.processBinLookupResponse && this.componentRef.processBinLookupResponse(e), this
     }
   }, {
     key: "dualBrandingChangeHandler",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.dualBrandingChangeHandler && this.componentRef.dualBrandingChangeHandler(e), this
+      return null != (t = this.componentRef) && t.dualBrandingChangeHandler && this.componentRef.dualBrandingChangeHandler(e), this
     }
   }, {
     key: "handleUnsupportedCard",
     value: function(e) {
       var t;
-      return null !== (t = this.componentRef) && void 0 !== t && t.handleUnsupportedCard && this.componentRef.handleUnsupportedCard(e), this
+      return null != (t = this.componentRef) && t.handleUnsupportedCard && this.componentRef.handleUnsupportedCard(e), this
     }
   }, {
     key: "onBinLookup",
     value: function(e) {
       var t, n = this,
-        r = pS({}, e);
-      r.rootNode = this._node, r.isReset || (r.supportedBrandsRaw = null === (t = e.supportedBrandsRaw) || void 0 === t ? void 0 : J()(t).call(t, function(e) {
+        r = pN({}, e);
+      r.rootNode = this._node, r.isReset || (r.supportedBrandsRaw = null == (t = e.supportedBrandsRaw) ? void 0 : J()(t).call(t, function(e) {
         var t, r;
-        return e.brandImageUrl = null !== (t = null === (r = n.props.brandsConfiguration[e.brand]) || void 0 === r ? void 0 : r.icon) && void 0 !== t ? t : sq(e.brand, n.resources), e
+        return e.brandImageUrl = null != (t = null == (r = n.props.brandsConfiguration[e.brand]) ? void 0 : r.icon) ? t : sH(e.brand, n.resources), e
       })), this.props.onBinLookup(r)
     }
   }, {
@@ -17770,17 +17769,17 @@ var pN = function(e) {
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }, {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(pC, (0, er.Z)({
+      }, (0, ec.h)(pZ, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -17795,7 +17794,7 @@ var pN = function(e) {
   }]), r
 }();
 
-function px(e, t) {
+function pP(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -17804,11 +17803,11 @@ function px(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(pN, "type", "scheme"), (0, w.Z)(pN, "analyticsType", "custom-scheme"), (0, w.Z)(pN, "defaultProps", {
+}(0, w.Z)(px, "type", "scheme"), (0, w.Z)(px, "analyticsType", "custom-scheme"), (0, w.Z)(px, "defaultProps", {
   onBinLookup: function() {},
   brandsConfiguration: {}
 });
-var pP = function(e) {
+var pA = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -17836,9 +17835,9 @@ var pP = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = px(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = pP(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = px(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = pP(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -17867,11 +17866,11 @@ var pP = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.showFormInstruction && (0, ec.h)(a1, null), (0, ec.h)(aj, (0, er.Z)({
+      }, this.props.showFormInstruction && (0, ec.h)(a2, null), (0, ec.h)(aU, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -17883,10 +17882,10 @@ var pP = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(pP, "type", "sepadirectdebit"), (0, w.Z)(pP, "defaultProps", {
+(0, w.Z)(pA, "type", "sepadirectdebit"), (0, w.Z)(pA, "defaultProps", {
   showFormInstruction: !0
 });
-var pA = function(e) {
+var pR = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -17944,21 +17943,21 @@ var pA = function(e) {
       }
     }]), r
   }(),
-  pR = {
+  pF = {
     result: {
       transStatus: "U"
     },
     type: "challengeResult",
     errorCode: "timeout"
   },
-  pF = {
+  pO = {
     result: {
       threeDSCompInd: "N"
     },
     type: "fingerPrintResult",
     errorCode: "timeout"
   },
-  pO = {
+  pE = {
     timeout: "ThreeDS2 timed out",
     wrongOrigin: "Result came in the right format but not from the expected origin",
     HTMLElementError: "No proper HTML element was passed",
@@ -17966,14 +17965,14 @@ var pA = function(e) {
     missingProperty: "Result data did not contain the expected properties",
     unknownError: "An unknown error occurred"
   },
-  pE = {
+  pI = {
     "01": ["250px", "400px"],
     "02": ["390px", "400px"],
     "03": ["500px", "600px"],
     "04": ["600px", "400px"],
     "05": ["100%", "100%"]
   },
-  pI = function(e) {
+  pM = function(e) {
     var t = nF.decode(e);
     try {
       return t && JSON.parse(t)
@@ -17981,36 +17980,36 @@ var pA = function(e) {
       throw Error("Could not decode token")
     }
   },
-  pM = function(e) {
+  pT = function(e) {
     if (!e || !l()(e).length) throw Error("No (populated) data object to encode");
     return nF.encode(V()(e))
   },
-  pT = function(e) {
+  pB = function(e) {
     var t = 1 === e.length ? "0".concat(e) : e;
-    return Object.prototype.hasOwnProperty.call(pE, t) ? t : "02"
+    return Object.prototype.hasOwnProperty.call(pI, t) ? t : "02"
   },
-  pB = function(e, t, n) {
+  pD = function(e, t, n) {
     var r;
     return {
-      data: (r = {}, (0, w.Z)(r, e, pM({
+      data: (r = {}, (0, w.Z)(r, e, pT({
         threeDSCompInd: t.threeDSCompInd
       })), (0, w.Z)(r, "paymentData", n), r)
     }
   },
-  pD = function(e, t) {
+  pL = function(e, t) {
     return {
       errorCode: e,
-      message: pO[e] || t || pO.unknownError
+      message: pE[e] || t || pE.unknownError
     }
   },
-  pL = function(e) {
+  pV = function(e) {
     var t = window.btoa(e).split("=")[0];
     return (t = t.replace(/\+/g, "-")).replace(/\//g, "_")
   },
-  pV = ["elementRef"],
-  pj = ["createFromAction", "onAdditionalDetails"],
-  pU = "threeDSIframe",
-  pq = function(e) {
+  pj = ["elementRef"],
+  pU = ["createFromAction", "onAdditionalDetails"],
+  pq = "threeDSIframe",
+  pH = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18038,7 +18037,7 @@ var pA = function(e) {
           actionDescription: "challenge-iframe-loaded"
         })
       });
-      var t, o = pL(V()(t.props.cReqData));
+      var t, o = pV(V()(t.props.cReqData));
       return t.state = {
         base64URLencodedData: o
       }, t
@@ -18055,7 +18054,7 @@ var pA = function(e) {
       key: "componentDidMount",
       value: function() {
         var e = this;
-        this.challengePromise = nZ(6e5, this.get3DS2ChallengePromise(), pR), this.challengePromise.promise.then(function(t) {
+        this.challengePromise = nZ(6e5, this.get3DS2ChallengePromise(), pF), this.challengePromise.promise.then(function(t) {
           window.removeEventListener("message", e.processMessageHandler), e.props.onCompleteChallenge(t)
         }).catch(function(t) {
           window.removeEventListener("message", e.processMessageHandler), e.props.onErrorChallenge(t)
@@ -18080,21 +18079,21 @@ var pA = function(e) {
         return (0, ec.h)("div", {
           className: ep()(["adyen-checkout__threeds2__challenge", "adyen-checkout__threeds2__challenge--".concat(r.challengeWindowSize)])
         }, "iframeLoaded" !== i && (0, ec.h)(tq, null), (0, ec.h)(nC, {
-          name: pU,
+          name: pq,
           width: c,
           height: l,
           callback: this.iframeCallback
-        }), (0, ec.h)(pA, {
+        }), (0, ec.h)(pR, {
           name: "cReqForm",
           action: n,
-          target: pU,
+          target: pq,
           inputName: "creq",
           inputValue: a
         }))
       }
     }]), r
   }(),
-  pH = function(e) {
+  pK = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18119,16 +18118,16 @@ var pA = function(e) {
         var o, a, i, s, c, l, u, d, p, h, f = (a = (o = {
             token: t.props.token,
             size: t.props.challengeWindowSize || t.props.size
-          }).token, i = o.size, c = (s = pI(a)).acsTransID, l = s.acsURL, u = s.messageVersion, d = s.threeDSNotificationURL, p = s.threeDSServerTransID, h = nP(d), {
+          }).token, i = o.size, c = (s = pM(a)).acsTransID, l = s.acsURL, u = s.messageVersion, d = s.threeDSNotificationURL, p = s.threeDSServerTransID, h = nP(d), {
             acsURL: l,
             cReqData: {
               acsTransID: c,
               messageVersion: u,
               threeDSServerTransID: p,
               messageType: "CReq",
-              challengeWindowSize: pT(i)
+              challengeWindowSize: pB(i)
             },
-            iframeSizeArr: pE[pT(i)],
+            iframeSizeArr: pI[pB(i)],
             postMessageDomain: h
           }),
           m = f.cReqData,
@@ -18160,7 +18159,7 @@ var pA = function(e) {
             return {
               data: {
                 details: {
-                  "threeds2.challengeResult": pM({
+                  "threeds2.challengeResult": pT({
                     transStatus: t
                   })
                 },
@@ -18170,7 +18169,7 @@ var pA = function(e) {
           } : function(e, t, n) {
             return {
               data: {
-                details: (0, w.Z)({}, e, pM({
+                details: (0, w.Z)({}, e, pT({
                   transStatus: t,
                   authorisationToken: n
                 }))
@@ -18195,17 +18194,17 @@ var pA = function(e) {
           r = e.onActionHandled,
           o = t.challengeData,
           a = nT();
-        return "retrievingChallengeToken" === this.state.status ? (0, ec.h)(pq, (0, er.Z)({
+        return "retrievingChallengeToken" === this.state.status ? (0, ec.h)(pH, (0, er.Z)({
           onCompleteChallenge: function(e) {
             if (ng(e.result, "errorCode") && e.result.errorCode.length) {
-              var t = pD(e.result.errorCode, e.result.errorDescription);
+              var t = pL(e.result.errorCode, e.result.errorDescription);
               n.props.onError(t)
             }
             n.setStatusComplete(e.result)
           },
           onErrorChallenge: function(e) {
             if (ng(e, "errorCode")) {
-              var t = pD(e.errorCode);
+              var t = pL(e.errorCode);
               return n.props.onError(t), void n.setStatusComplete(e.result)
             }
           }
@@ -18225,12 +18224,12 @@ var pA = function(e) {
       }
     }]), r
   }();
-(0, w.Z)(pH, "defaultProps", {
+(0, w.Z)(pK, "defaultProps", {
   onComplete: function() {},
   onError: function() {},
   onActionHandled: function() {}
 });
-var pK = function(e) {
+var pz = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18260,26 +18259,26 @@ var pK = function(e) {
   }, {
     key: "render",
     value: function() {
-      if (!ie(this.props.paymentData)) {
+      if (!it(this.props.paymentData)) {
         var e = ng(this.props, "useOriginalFlow") ? "paymentData" : "authorisationToken";
         return this.props.onError({
           errorCode: "threeds2.challenge",
           message: "No ".concat(e, " received. Challenge cannot proceed")
         }), null
       }
-      return (0, ec.h)(pH, (0, er.Z)({}, this.props, {
+      return (0, ec.h)(pK, (0, er.Z)({}, this.props, {
         onComplete: this.onComplete
       }))
     }
   }]), r
 }();
-(0, w.Z)(pK, "type", "threeDS2Challenge"), (0, w.Z)(pK, "defaultProps", {
+(0, w.Z)(pz, "type", "threeDS2Challenge"), (0, w.Z)(pz, "defaultProps", {
   dataKey: "threeDSResult",
   size: "02",
   type: "ChallengeShopper"
 });
-var pz = "threeDSMethodIframe",
-  pW = function(e) {
+var pW = "threeDSMethodIframe",
+  pY = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18302,13 +18301,12 @@ var pz = "threeDSMethodIframe",
       (0, C.Z)(this, r), t = n.call(this, e), (0, w.Z)((0, eo.Z)(t), "processMessageHandler", void 0), (0, w.Z)((0, eo.Z)(t), "fingerPrintPromise", void 0);
       var t, o = t.props,
         a = o.threeDSServerTransID,
-        i = o.threeDSMethodNotificationURL,
-        s = pL(V()({
+        i = o.threeDSMethodNotificationURL;
+      return t.state = {
+        base64URLencodedData: pV(V()({
           threeDSServerTransID: a,
           threeDSMethodNotificationURL: i
-        }));
-      return t.state = {
-        base64URLencodedData: s
+        }))
       }, t
     }
     return (0, Z.Z)(r, [{
@@ -18323,7 +18321,7 @@ var pz = "threeDSMethodIframe",
       key: "componentDidMount",
       value: function() {
         var e = this;
-        this.fingerPrintPromise = nZ(1e4, this.get3DS2MethodPromise(), pF), this.fingerPrintPromise.promise.then(function(t) {
+        this.fingerPrintPromise = nZ(1e4, this.get3DS2MethodPromise(), pO), this.fingerPrintPromise.promise.then(function(t) {
           window.removeEventListener("message", e.processMessageHandler), e.props.onCompleteFingerprint(t)
         }).catch(function(t) {
           window.removeEventListener("message", e.processMessageHandler), e.props.onErrorFingerprint(t)
@@ -18347,27 +18345,27 @@ var pz = "threeDSMethodIframe",
             display: "none"
           }
         }, (0, ec.h)(nC, {
-          name: pz,
+          name: pW,
           callback: function() {
             r({
               componentType: "3DS2Fingerprint",
               actionDescription: "fingerprint-iframe-loaded"
             })
           }
-        }), (0, ec.h)(pA, {
+        }), (0, ec.h)(pR, {
           name: "threeDSMethodForm",
           action: n,
-          target: pz,
+          target: pW,
           inputName: "threeDSMethodData",
           inputValue: o
         })))
       }
     }]), r
   }();
-(0, w.Z)(pW, "defaultProps", {
+(0, w.Z)(pY, "defaultProps", {
   showSpinner: !0
 });
-var pY = function(e) {
+var pG = function(e) {
   (0, ea.Z)(r, ec.wA);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18388,30 +18386,26 @@ var pY = function(e) {
 
   function r(e) {
     (0, C.Z)(this, r);
-    var t, o = (t = n.call(this, e)).props,
-      a = o.token,
-      i = o.notificationURL;
-    if (a) {
-      var s, c, l, u, d, p, h, f = (c = (s = {
-        token: a,
-        notificationURL: i
-      }).token, l = s.notificationURL, d = (u = pI(c)).threeDSMethodNotificationURL, p = u.threeDSMethodUrl, h = l || d, {
-        threeDSServerTransID: u.threeDSServerTransID,
-        threeDSMethodURL: p,
-        threeDSMethodNotificationURL: h,
-        postMessageDomain: nP(h)
-      });
-      t.state = {
-        status: "init",
-        fingerPrintData: f
-      }
-    } else t.state = {
+    var t, o, a, i, s, c, l, u, d = (u = n.call(this, e)).props,
+      p = d.token,
+      h = d.notificationURL;
+    return p ? u.state = {
+      status: "init",
+      fingerPrintData: (o = (t = {
+        token: p,
+        notificationURL: h
+      }).token, a = t.notificationURL, s = (i = pM(o)).threeDSMethodNotificationURL, c = i.threeDSMethodUrl, l = a || s, {
+        threeDSServerTransID: i.threeDSServerTransID,
+        threeDSMethodURL: c,
+        threeDSMethodNotificationURL: l,
+        postMessageDomain: nP(l)
+      })
+    } : (u.state = {
       status: "error"
-    }, t.props.onError({
-      errorCode: t.props.dataKey,
+    }, u.props.onError({
+      errorCode: u.props.dataKey,
       message: "Missing fingerprintToken parameter"
-    });
-    return t
+    })), u
   }
   return (0, Z.Z)(r, [{
     key: "componentDidMount",
@@ -18434,12 +18428,12 @@ var pY = function(e) {
           return {
             data: {
               details: {
-                "threeds2.fingerprint": pM(t)
+                "threeds2.fingerprint": pT(t)
               },
               paymentData: n
             }
           }
-        } : pB)(t.props.dataKey, e, t.props.paymentData);
+        } : pD)(t.props.dataKey, e, t.props.paymentData);
         t.props.onComplete(n)
       })
     }
@@ -18450,12 +18444,12 @@ var pY = function(e) {
         r = e.showSpinner,
         o = e.onActionHandled,
         a = t.fingerPrintData;
-      return "retrievingFingerPrint" === this.state.status ? (0, ec.h)(pW, (0, er.Z)({
+      return "retrievingFingerPrint" === this.state.status ? (0, ec.h)(pY, (0, er.Z)({
         onCompleteFingerprint: function(e) {
           n.setStatusComplete(e.result)
         },
         onErrorFingerprint: function(e) {
-          console.debug("### PrepareFingerprint3DS2::fingerprint timed-out:: errorCodeObject=", pD(e.errorCode)), n.setStatusComplete(e.result)
+          console.debug("### PrepareFingerprint3DS2::fingerprint timed-out:: errorCodeObject=", pL(e.errorCode)), n.setStatusComplete(e.result)
         },
         showSpinner: r
       }, a, {
@@ -18465,7 +18459,7 @@ var pY = function(e) {
   }]), r
 }();
 
-function pG(e, t) {
+function p$(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -18476,7 +18470,7 @@ function pG(e, t) {
   return n
 }
 
-function p$(e) {
+function pQ(e) {
   var t = this,
     n = e.data;
   o6({
@@ -18486,15 +18480,15 @@ function p$(e) {
   }, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n, r, o = null != arguments[t] ? arguments[t] : {};
-      t % 2 ? N()(n = pG(Object(o), !0)).call(n, function(t) {
+      t % 2 ? N()(n = p$(Object(o), !0)).call(n, function(t) {
         (0, w.Z)(e, t, o[t])
-      }) : m() ? v()(e, m()(o)) : N()(r = pG(Object(o))).call(r, function(t) {
+      }) : m() ? v()(e, m()(o)) : N()(r = p$(Object(o))).call(r, function(t) {
         b()(e, t, h()(o, t))
       })
     }
     return e
   }({}, n)).then(function(e) {
-    var n, r, o, a = null !== (n = t.props.elementRef) && void 0 !== n ? n : t;
+    var n, r, o, a = null != (n = t.props.elementRef) ? n : t;
     if (a) {
       if (e.action || e.details) {
         if ("completed" === e.type) {
@@ -18505,21 +18499,21 @@ function p$(e) {
             }
           })
         }
-        return "threeDS2" === (null === (r = e.action) || void 0 === r ? void 0 : r.type) ? a.handleAction(e.action, sK("challengeWindowSize").from(t.props)) : "redirect" === (null === (o = e.action) || void 0 === o ? void 0 : o.type) ? a.handleAction(e.action) : void 0
+        return "threeDS2" === (null == (r = e.action) ? void 0 : r.type) ? a.handleAction(e.action, sz("challengeWindowSize").from(t.props)) : "redirect" === (null == (o = e.action) ? void 0 : o.type) ? a.handleAction(e.action) : void 0
       }
       console.error("Handled Error::callSubmit3DS2Fingerprint::FAILED:: resData=", e)
     } else console.error("Handled Error::callSubmit3DS2Fingerprint::FAILED:: actionHandler=", a)
   }).catch(function(e) {
     t.handleError(e)
   })
-}(0, w.Z)(pY, "type", "scheme"), (0, w.Z)(pY, "defaultProps", {
+}(0, w.Z)(pG, "type", "scheme"), (0, w.Z)(pG, "defaultProps", {
   onComplete: function() {},
   onError: function() {},
   paymentData: "",
   showSpinner: !0,
   onActionHandled: function() {}
 });
-var pQ = function(e) {
+var pJ = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18542,7 +18536,7 @@ var pQ = function(e) {
     var e, t;
     (0, C.Z)(this, r);
     for (var o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-    return t = n.call.apply(n, I()(e = [this]).call(e, a)), (0, w.Z)((0, eo.Z)(t), "callSubmit3DS2Fingerprint", R()(p$).call(p$, (0, eo.Z)(t))), t
+    return t = n.call.apply(n, I()(e = [this]).call(e, a)), (0, w.Z)((0, eo.Z)(t), "callSubmit3DS2Fingerprint", R()(pQ).call(pQ, (0, eo.Z)(t))), t
   }
   return (0, Z.Z)(r, [{
     key: "onComplete",
@@ -18552,7 +18546,7 @@ var pQ = function(e) {
   }, {
     key: "render",
     value: function() {
-      return ie(this.props.paymentData) ? (0, ec.h)(pY, (0, er.Z)({}, this.props, {
+      return it(this.props.paymentData) ? (0, ec.h)(pG, (0, er.Z)({}, this.props, {
         onComplete: this.props.useOriginalFlow ? this.onComplete : this.callSubmit3DS2Fingerprint
       })) : (this.props.onError({
         errorCode: r.defaultProps.dataKey,
@@ -18561,30 +18555,30 @@ var pQ = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(pQ, "type", "threeDS2Fingerprint"), (0, w.Z)(pQ, "defaultProps", {
+(0, w.Z)(pJ, "type", "threeDS2Fingerprint"), (0, w.Z)(pJ, "defaultProps", {
   dataKey: "fingerprintResult",
   type: "IdentifyShopper"
 });
-var pJ = function(e) {
+var pX = function(e) {
     var t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 2;
     if (0 === n) return e;
     var r = String(e);
     return r.length >= n ? r : em()(t = tu()("0").call("0", n) + r).call(t, -1 * n)
   },
-  pX = function(e, t) {
+  p0 = function(e, t) {
     var n, r = new Date,
       o = t.getTime() - r.getTime(),
       a = o / 1e3,
       i = (n = t.getTime() - e.getTime(), 100 - Math.round(100 * (r.getTime() - e.getTime()) / n));
     return {
       total: o,
-      minutes: pJ(Math.floor(a / 60 % 60)),
-      seconds: pJ(Math.floor(a % 60)),
+      minutes: pX(Math.floor(a / 60 % 60)),
+      seconds: pX(Math.floor(a % 60)),
       completed: o <= 0,
       percentage: i
     }
   },
-  p0 = function() {
+  p1 = function() {
     function e(t) {
       (0, C.Z)(this, e), (0, w.Z)(this, "TRANSLATION_KEY", "sr.wechatpay.timetopay"), (0, w.Z)(this, "LONG_TIMEOUT", 18e4), (0, w.Z)(this, "MID_TIMEOUT", 6e4), (0, w.Z)(this, "SHORT_TIMEOUT", 3e4), (0, w.Z)(this, "srPanel", void 0), (0, w.Z)(this, "i18n", void 0), (0, w.Z)(this, "srInterval", void 0), (0, w.Z)(this, "timeout", void 0), (0, w.Z)(this, "timeLeft", void 0);
       var n = t.srPanel,
@@ -18659,12 +18653,12 @@ var pJ = function(e) {
       })
     }]), e
   }(),
-  p1 = function(e) {
+  p2 = function(e) {
     var t = nl().i18n,
-      n = t5(az).srPanel,
+      n = t5(aW).srPanel,
       r = t8(null);
     t1(function() {
-      return r.current = new p0({
+      return r.current = new p1({
           i18n: t,
           srPanel: n
         }),
@@ -18680,7 +18674,7 @@ var pJ = function(e) {
       }
     }, [e])
   },
-  p2 = function(e) {
+  p8 = function(e) {
     var t = (new Date).getTime();
     return {
       startTime: new Date(t),
@@ -18688,13 +18682,13 @@ var pJ = function(e) {
     }
   };
 
-function p8(e) {
+function p4(e) {
   var t = e.minutesFromNow,
     n = e.onTick,
     r = void 0 === n ? function() {} : n,
     o = e.onCompleted,
     a = void 0 === o ? function() {} : o,
-    i = t8(p2(t)).current,
+    i = t8(p8(t)).current,
     s = i.startTime,
     c = i.endTime,
     l = tX({
@@ -18704,9 +18698,9 @@ function p8(e) {
     u = (0, q.Z)(l, 2),
     d = u[0],
     p = u[1];
-  return p1(d), t1(function() {
+  return p2(d), t1(function() {
     var e = tc()(function() {
-      var e = pX(s, c),
+      var e = p0(s, c),
         t = e.minutes,
         n = e.seconds,
         o = e.percentage;
@@ -18735,7 +18729,7 @@ function p8(e) {
   }, d.seconds))
 }
 
-function p4(e, t, n) {
+function p6(e, t, n) {
   if (!e || !t) throw Error("Could not check the payment status");
   return o6({
     loadingContext: n,
@@ -18745,7 +18739,7 @@ function p4(e, t, n) {
   })
 }
 
-function p6(e, t) {
+function p5(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -18756,30 +18750,30 @@ function p6(e, t) {
   return n
 }
 
-function p5(e) {
+function p3(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = p6(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = p5(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = p6(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = p5(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var p3 = function(e) {
+var p7 = function(e) {
     switch (e.resultCode.toLowerCase()) {
       case "refused":
       case "error":
       case "cancelled":
         return {
-          type: "error", props: p5(p5({}, e), {}, {
+          type: "error", props: p3(p3({}, e), {}, {
             message: "error.subtitle.refused"
           })
         };
       case "unknown":
         return {
-          type: "error", props: p5(p5({}, e), {}, {
+          type: "error", props: p3(p3({}, e), {}, {
             message: "error.message.unknown"
           })
         };
@@ -18794,8 +18788,8 @@ var p3 = function(e) {
         }
     }
   },
-  p7 = function(e) {
-    if (!e.type && e.resultCode) return p3(e);
+  p9 = function(e) {
+    if (!e.type && e.resultCode) return p7(e);
     if (!e.type) return {
       type: "error",
       props: e
@@ -18806,15 +18800,15 @@ var p3 = function(e) {
           type: "pending", props: e
         };
       case "complete":
-        return p3(e);
+        return p7(e);
       default:
         return {
           type: "error", props: e
         }
     }
   },
-  p9 = function(e) {
-    var t = t5(az).srPanel;
+  he = function(e) {
+    var t = t5(aW).srPanel;
     t1(function() {
       return t.setAriaProps({
           "aria-relevant": "additions text"
@@ -18828,7 +18822,7 @@ var p3 = function(e) {
       t.setMessages(e)
     }, [e])
   },
-  he = function(e) {
+  ht = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -18898,7 +18892,7 @@ var p3 = function(e) {
         return t.props.onError(r)
       }), (0, w.Z)((0, eo.Z)(t), "checkStatus", function() {
         var e = t.props;
-        return p4(e.paymentData, e.clientKey, e.loadingContext).then(p7).catch(function(e) {
+        return p6(e.paymentData, e.clientKey, e.loadingContext).then(p9).catch(function(e) {
           return {
             type: "network-error",
             props: e
@@ -18964,7 +18958,7 @@ var p3 = function(e) {
           k = this.props.qrCodeData ? I()(n = I()(r = "".concat(b)).call(r, "barcode.shtml?barcodeType=qrCode&fileType=png&data=")).call(n, this.props.qrCodeData) : this.props.qrCodeImage,
           C = function(e, t) {
             var n = g.get(t);
-            return p9(n), (0, ec.h)("div", {
+            return he(n), (0, ec.h)("div", {
               className: "adyen-checkout__qr-loader adyen-checkout__qr-loader--result"
             }, (0, ec.h)("img", {
               className: "adyen-checkout__qr-loader__icon adyen-checkout__qr-loader__icon--result",
@@ -18988,7 +18982,7 @@ var p3 = function(e) {
         var Z, w = g.get("wechatpay.timetopay").split("%@"),
           S = (Z = t8(null), t1(function() {
             var e;
-            null === (e = Z.current) || void 0 === e || e.focus()
+            null == (e = Z.current) || e.focus()
           }, []), Z);
         return (0, ec.h)("div", {
           className: I()(o = "\n                    adyen-checkout__qr-loader\n                    adyen-checkout__qr-loader--".concat(p, "\n                    ")).call(o, J()(a = this.props.classNameModifiers).call(a, function(e) {
@@ -19022,7 +19016,7 @@ var p3 = function(e) {
           }
         })), (0, ec.h)("div", {
           className: "adyen-checkout__qr-loader__countdown"
-        }, w[0], "\xa0", (0, ec.h)(p8, {
+        }, w[0], "\xa0", (0, ec.h)(p4, {
           minutesFromNow: d,
           onTick: this.onTick,
           onCompleted: this.onTimeUp
@@ -19035,7 +19029,7 @@ var p3 = function(e) {
           variant: "action",
           onClick: function(e, t) {
             var n = t.complete;
-            dN(i.props.qrCodeData), n()
+            dx(i.props.qrCodeData), n()
           },
           icon: _({
             imageFolder: "components/"
@@ -19043,7 +19037,7 @@ var p3 = function(e) {
           label: g.get("button.copy")
         })), c && (0, ec.h)("div", {
           className: "adyen-checkout__qr-loader__app-link"
-        }, (0, ec.h)(i8, null), (0, ec.h)(nu, {
+        }, (0, ec.h)(i4, null), (0, ec.h)(nu, {
           classNameModifiers: ["qr-loader"],
           onClick: function() {
             return i.redirectToApp(c)
@@ -19054,7 +19048,7 @@ var p3 = function(e) {
     }]), r
   }();
 
-function ht(e, t) {
+function hn(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19063,7 +19057,7 @@ function ht(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(he, "defaultProps", {
+}(0, w.Z)(ht, "defaultProps", {
   delay: 2e3,
   countdownTime: 15,
   onError: function() {},
@@ -19073,7 +19067,7 @@ function ht(e, t) {
   throttledInterval: 1e4,
   introduction: "wechatpay.scanqrcode"
 });
-var hn = function(e) {
+var hr = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -19102,9 +19096,9 @@ var hn = function(e) {
         paymentMethod: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n, r, o = null != arguments[t] ? arguments[t] : {};
-            t % 2 ? N()(n = ht(Object(o), !0)).call(n, function(t) {
+            t % 2 ? N()(n = hn(Object(o), !0)).call(n, function(t) {
               (0, w.Z)(e, t, o[t])
-            }) : m() ? v()(e, m()(o)) : N()(r = ht(Object(o))).call(r, function(t) {
+            }) : m() ? v()(e, m()(o)) : N()(r = hn(Object(o))).call(r, function(t) {
               b()(e, t, h()(o, t))
             })
           }
@@ -19123,13 +19117,13 @@ var hn = function(e) {
     key: "renderQRCode",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ia, {
+      }, (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(he, (0, er.Z)({
+      }, (0, ec.h)(ht, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -19148,11 +19142,11 @@ var hn = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.paymentData ? this.renderQRCode() : this.props.showPayButton ? (0, ec.h)(a3, {
+      return this.props.paymentData ? this.renderQRCode() : this.props.showPayButton ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(sc, {
+      }, (0, ec.h)(sl, {
         name: this.displayName,
         onSubmit: this.submit,
         payButton: this.payButton,
@@ -19164,7 +19158,7 @@ var hn = function(e) {
   }]), r
 }();
 
-function hr(e, t) {
+function ho(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19173,7 +19167,7 @@ function hr(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(hn, "defaultProps", {
+}(0, w.Z)(hr, "defaultProps", {
   qrCodeImage: "",
   amount: null,
   paymentData: null,
@@ -19181,8 +19175,8 @@ function hr(e, t) {
   onComplete: function() {},
   onActionHandled: function() {}
 });
-var ho = function(e) {
-  (0, ea.Z)(r, hn);
+var ha = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -19209,9 +19203,9 @@ var ho = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = hr(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = ho(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = hr(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = ho(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -19224,7 +19218,7 @@ var ho = function(e) {
   }]), r
 }();
 
-function ha(e, t) {
+function hi(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19233,9 +19227,9 @@ function ha(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(ho, "type", "wechatpayQR");
-var hi = function(e) {
-  (0, ea.Z)(r, hn);
+}(0, w.Z)(ha, "type", "wechatpayQR");
+var hs = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -19262,9 +19256,9 @@ var hi = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = ha(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = hi(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = ha(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = hi(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -19277,7 +19271,7 @@ var hi = function(e) {
   }]), r
 }();
 
-function hs(e, t) {
+function hc(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19286,9 +19280,9 @@ function hs(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(hi, "type", "paynow");
-var hc = function(e) {
-  (0, ea.Z)(r, hn);
+}(0, w.Z)(hs, "type", "paynow");
+var hl = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -19315,9 +19309,9 @@ var hc = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = hs(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = hc(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = hs(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = hc(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -19330,34 +19324,9 @@ var hc = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(hc, "type", "bcmc_mobile");
-var hl = function(e) {
-  (0, ea.Z)(r, sd);
-  var t, n = (t = function() {
-    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
-    if ("function" == typeof Proxy) return !0;
-    try {
-      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
-    } catch (e) {
-      return !1
-    }
-  }(), function() {
-    var e, n = (0, es.Z)(r);
-    if (t) {
-      var o = (0, es.Z)(this).constructor;
-      e = en()(n, arguments, o)
-    } else e = n.apply(this, arguments);
-    return (0, ei.Z)(this, e)
-  });
-
-  function r() {
-    return (0, C.Z)(this, r), n.apply(this, arguments)
-  }
-  return (0, Z.Z)(r)
-}();
-(0, w.Z)(hl, "type", "molpay_ebanking_fpx_MY");
+(0, w.Z)(hl, "type", "bcmc_mobile");
 var hu = function(e) {
-  (0, ea.Z)(r, sd);
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -19380,9 +19349,34 @@ var hu = function(e) {
   }
   return (0, Z.Z)(r)
 }();
-(0, w.Z)(hu, "type", "molpay_ebanking_TH");
+(0, w.Z)(hu, "type", "molpay_ebanking_fpx_MY");
 var hd = function(e) {
-  (0, ea.Z)(r, sd);
+  (0, ea.Z)(r, sp);
+  var t, n = (t = function() {
+    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
+    if ("function" == typeof Proxy) return !0;
+    try {
+      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
+    } catch (e) {
+      return !1
+    }
+  }(), function() {
+    var e, n = (0, es.Z)(r);
+    if (t) {
+      var o = (0, es.Z)(this).constructor;
+      e = en()(n, arguments, o)
+    } else e = n.apply(this, arguments);
+    return (0, ei.Z)(this, e)
+  });
+
+  function r() {
+    return (0, C.Z)(this, r), n.apply(this, arguments)
+  }
+  return (0, Z.Z)(r)
+}();
+(0, w.Z)(hd, "type", "molpay_ebanking_TH");
+var hp = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -19406,7 +19400,7 @@ var hd = function(e) {
   return (0, Z.Z)(r)
 }();
 
-function hp(e, t) {
+function hh(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19417,19 +19411,19 @@ function hp(e, t) {
   return n
 }
 
-function hh(e) {
+function hf(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hp(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hh(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hp(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hh(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function hf(e) {
+function hm(e) {
   var t, n, r = nl().i18n,
     o = nT(),
     a = function() {
@@ -19454,9 +19448,9 @@ function hf(e) {
     u = i.valid,
     d = i.errors,
     p = i.isValid,
-    h = so({}, e.type, o),
+    h = sa({}, e.type, o),
     f = J()(n = e.items).call(n, function(e) {
-      return hh(hh({}, e), {}, {
+      return hf(hf({}, e), {}, {
         icon: h(e.id && e.id.toLowerCase())
       })
     }),
@@ -19506,7 +19500,7 @@ function hf(e) {
   }))
 }
 
-function hm(e) {
+function hy(e) {
   var t = e.reference,
     n = e.totalAmount,
     r = e.surcharge,
@@ -19518,8 +19512,8 @@ function hm(e) {
     l = e.paymentMethodType,
     u = nl().i18n,
     d = nT(),
-    p = "dragonpay_otc_philippines" !== l ? so({}, l, d)(c.toLowerCase()) : null;
-  return (0, ec.h)(dP, {
+    p = "dragonpay_otc_philippines" !== l ? sa({}, l, d)(c.toLowerCase()) : null;
+  return (0, ec.h)(dA, {
     reference: t,
     paymentMethodType: l,
     introduction: u.get("voucher.introduction"),
@@ -19539,7 +19533,7 @@ function hm(e) {
   })
 }
 
-function hy(e, t) {
+function hv(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19550,22 +19544,22 @@ function hy(e, t) {
   return n
 }
 
-function hv(e) {
+function hg(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hy(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hv(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hy(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hv(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(hd, "type", "molpay_ebanking_VN"), hf.defaultProps = {
+}(0, w.Z)(hp, "type", "molpay_ebanking_VN"), hm.defaultProps = {
   data: {},
   items: [],
   onChange: function() {}
 };
-var hg = function(e) {
+var hb = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -19598,10 +19592,10 @@ var hg = function(e) {
       var e = this.state.data,
         t = e.issuer,
         n = e.shopperEmail;
-      return hv(hv({}, n && {
+      return hg(hg({}, n && {
         shopperEmail: n
       }), {}, {
-        paymentMethod: hv(hv({}, t && {
+        paymentMethod: hg(hg({}, t && {
           issuer: t
         }), {}, {
           type: this.props.type || r.type
@@ -19612,26 +19606,26 @@ var hg = function(e) {
     key: "formatProps",
     value: function(e) {
       var t, n;
-      return hv(hv({}, e), {}, {
-        issuers: null !== (t = null === (n = e.details) || void 0 === n || null === (n = D()(n).call(n, function(e) {
+      return hg(hg({}, e), {}, {
+        issuers: null != (t = null == (n = e.details) || null == (n = D()(n).call(n, function(e) {
           return "issuer" === e.key
-        })) || void 0 === n ? void 0 : n.items) && void 0 !== t ? t : e.issuers
+        })) ? void 0 : n.items) ? t : e.issuers
       })
     }
   }, {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.reference ? (0, ec.h)(hm, (0, er.Z)({
+      }, this.props.reference ? (0, ec.h)(hy, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         },
         icon: this.icon
-      }, this.props)) : (0, ec.h)(hf, (0, er.Z)({
+      }, this.props)) : (0, ec.h)(hm, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         },
@@ -19645,7 +19639,7 @@ var hg = function(e) {
   }]), r
 }();
 
-function hb(e) {
+function h_(e) {
   var t, n = t8(null),
     r = nl().i18n,
     o = tX("ready"),
@@ -19653,12 +19647,12 @@ function hb(e) {
     i = a[0],
     s = a[1],
     c = t8({});
-  return l()(c.current).length || null === (t = e.setComponentRef) || void 0 === t || t.call(e, c.current), c.current.showValidation = function() {
+  return l()(c.current).length || null == (t = e.setComponentRef) || t.call(e, c.current), c.current.showValidation = function() {
     var e;
-    null === (e = n.current) || void 0 === e || e.showValidation()
+    null == (e = n.current) || e.showValidation()
   }, c.current.setStatus = s, (0, ec.h)("div", {
     className: "adyen-checkout__doku-input__field"
-  }, e.showFormInstruction && (0, ec.h)(a1, null), (0, ec.h)(oi, {
+  }, e.showFormInstruction && (0, ec.h)(a2, null), (0, ec.h)(oi, {
     data: e.data,
     requiredFields: ["firstName", "lastName", "shopperEmail"],
     onChange: e.onChange,
@@ -19670,8 +19664,8 @@ function hb(e) {
     status: i,
     label: r.get("confirmPurchase")
   }))
-}(0, w.Z)(hg, "type", "dragonpay");
-var h_ = function(e) {
+}(0, w.Z)(hb, "type", "dragonpay");
+var hk = function(e) {
   var t = e.reference,
     n = e.expiresAt,
     r = e.instructionsUrl,
@@ -19681,7 +19675,7 @@ var h_ = function(e) {
     s = e.paymentMethodType,
     c = nl().i18n,
     l = nT();
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     paymentMethodType: s,
     reference: t,
     introduction: c.get("voucher.introduction.doku"),
@@ -19702,7 +19696,7 @@ var h_ = function(e) {
   })
 };
 
-function hk(e, t) {
+function hC(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19713,18 +19707,18 @@ function hk(e, t) {
   return n
 }
 
-function hC(e) {
+function hZ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hk(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hC(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hk(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hC(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var hZ = function(e) {
+var hw = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -19754,7 +19748,7 @@ var hZ = function(e) {
   }, {
     key: "formatData",
     value: function() {
-      return hC(hC({}, this.state.data), {}, {
+      return hZ(hZ({}, this.state.data), {}, {
         paymentMethod: {
           type: this.props.type || r.type
         }
@@ -19769,15 +19763,15 @@ var hZ = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.reference ? (0, ec.h)(h_, (0, er.Z)({
+      }, this.props.reference ? (0, ec.h)(hk, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
-      }, this.props)) : (0, ec.h)(hb, (0, er.Z)({
+      }, this.props)) : (0, ec.h)(h_, (0, er.Z)({
         setComponentRef: this.setComponentRef
       }, this.props, {
         onChange: this.setState,
@@ -19787,12 +19781,12 @@ var hZ = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(hZ, "type", "doku"), (0, w.Z)(hZ, "defaultProps", {
+(0, w.Z)(hw, "type", "doku"), (0, w.Z)(hw, "defaultProps", {
   showFormInstruction: !0
 });
-var hw = {
+var hS = {
     socialSecurityNumber: {
-      validate: cY,
+      validate: cG,
       errorMessage: "error.va.gen.02",
       modes: ["blur"]
     },
@@ -19819,13 +19813,13 @@ var hw = {
       modes: ["blur"]
     }
   },
-  hS = {
+  hN = {
     socialSecurityNumber: function(e) {
-      return cW(e)
+      return cY(e)
     }
   };
 
-function hN(e) {
+function hx(e) {
   var t = e.errors,
     n = e.value,
     r = e.onInput,
@@ -19863,7 +19857,7 @@ function hN(e) {
   })))
 }
 
-function hx(e) {
+function hP(e) {
   var t = e.i18n,
     n = e.data,
     r = e.handleChangeFor,
@@ -19902,7 +19896,7 @@ function hx(e) {
     value: n.lastName,
     onInput: r("lastName", "input"),
     onBlur: r("lastName", "blur")
-  })), (0, ec.h)(lw, {
+  })), (0, ec.h)(lS, {
     data: n.socialSecurityNumber,
     error: o.socialSecurityNumber,
     valid: a.socialSecurityNumber,
@@ -19911,7 +19905,7 @@ function hx(e) {
   })))
 }
 
-function hP(e, t) {
+function hA(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -19922,26 +19916,26 @@ function hP(e, t) {
   return n
 }
 
-function hA(e) {
+function hR(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hP(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hA(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hP(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hA(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function hR(e) {
+function hF(e) {
   var t = nl().i18n,
     n = t8(null),
     r = rV({
       schema: ["firstName", "lastName", "socialSecurityNumber", "billingAddress", "shopperEmail"],
       defaultData: e.data,
-      rules: hw,
-      formatters: hS
+      rules: hS,
+      formatters: hN
     }),
     o = r.handleChangeFor,
     a = r.triggerValidation,
@@ -19966,7 +19960,7 @@ function hR(e) {
     C = k[0],
     Z = k[1],
     w = t8({});
-  l()(w.current).length || null === (b = e.setComponentRef) || void 0 === b || b.call(e, w.current), w.current.showValidation = function() {
+  l()(w.current).length || null == (b = e.setComponentRef) || b.call(e, w.current), w.current.showValidation = function() {
     a(), e.billingAddressRequired && n.current.showValidation()
   }, w.current.setStatus = Z, t1(function() {
     var t = !e.billingAddressRequired || !!p.billingAddress;
@@ -19981,7 +19975,7 @@ function hR(e) {
     N = e.showFormInstruction && (e.personalDetailsRequired || e.billingAddressRequired);
   return (0, ec.h)("div", {
     className: "adyen-checkout__boleto-input__field"
-  }, N && (0, ec.h)(a1, null), e.personalDetailsRequired && (0, ec.h)(hx, {
+  }, N && (0, ec.h)(a2, null), e.personalDetailsRequired && (0, ec.h)(hP, {
     i18n: t,
     data: d,
     handleChangeFor: o,
@@ -19990,7 +19984,7 @@ function hR(e) {
   }), e.billingAddressRequired && (0, ec.h)(ab, {
     allowedCountries: ["BR"],
     label: "billingAddress",
-    data: hA(hA({}, e.data.billingAddress), {}, {
+    data: hR(hR({}, e.data.billingAddress), {}, {
       country: "BR"
     }),
     onChange: function(e) {
@@ -20000,7 +19994,7 @@ function hR(e) {
     setComponentRef: function(e) {
       n.current = e
     }
-  }), e.showEmailAddress && (0, ec.h)(hN, {
+  }), e.showEmailAddress && (0, ec.h)(hx, {
     value: d.shopperEmail,
     errors: h.shopperEmail,
     onToggle: function() {
@@ -20014,14 +20008,14 @@ function hR(e) {
     classNameModifiers: S
   }))
 }
-hR.defaultProps = {
+hF.defaultProps = {
   data: {},
   showEmailAddress: !0,
   personalDetailsRequired: !0,
   billingAddressRequired: !0,
   showFormInstruction: !0
 };
-var hF = function(e) {
+var hO = function(e) {
   var t, n = nl(),
     r = n.i18n,
     o = n.loadingContext,
@@ -20033,7 +20027,7 @@ var hF = function(e) {
     u = e.downloadUrl,
     d = i.replace(/[^\d]/g, "").replace(/^(\d{4})(\d{5})\d{1}(\d{10})\d{1}(\d{10})\d{1}(\d{15})$/, "$1$5$2$3$4"),
     p = I()(t = "".concat(o, "barcode.shtml?data=")).call(t, d, "&barcodeType=BT_Int2of5A&fileType=png");
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     reference: i,
     paymentMethodType: "boletobancario",
     barcode: p,
@@ -20049,7 +20043,7 @@ var hF = function(e) {
   })
 };
 
-function hO(e, t) {
+function hE(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20060,18 +20054,18 @@ function hO(e, t) {
   return n
 }
 
-function hE(e) {
+function hI(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hO(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hE(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hO(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hE(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var hI = function(e) {
+var hM = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -20114,7 +20108,7 @@ var hI = function(e) {
         i = t.lastName,
         s = t.socialSecurityNumber,
         c = void 0 === s ? "" : s;
-      return hE(hE(hE(hE({
+      return hI(hI(hI(hI({
         paymentMethod: {
           type: this.props.type || r.type
         }
@@ -20128,20 +20122,20 @@ var hI = function(e) {
           lastName: i
         }
       }), c && {
-        socialSecurityNumber: cz(c)
+        socialSecurityNumber: cW(c)
       })
     }
   }, {
     key: "render",
     value: function() {
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.reference ? (0, ec.h)(hF, (0, er.Z)({
+      }, this.props.reference ? (0, ec.h)(hO, (0, er.Z)({
         ref: this.handleRef,
         icon: this.icon
-      }, this.props)) : (0, ec.h)(hR, (0, er.Z)({
+      }, this.props)) : (0, ec.h)(hF, (0, er.Z)({
         setComponentRef: this.handleRef
       }, this.props, {
         onChange: this.setState,
@@ -20151,8 +20145,8 @@ var hI = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(hI, "type", "boletobancario");
-var hM = function(e) {
+(0, w.Z)(hM, "type", "boletobancario");
+var hT = function(e) {
   var t, n, r = nl(),
     o = r.i18n,
     a = r.loadingContext,
@@ -20175,7 +20169,7 @@ var hM = function(e) {
       label: o.get("voucher.alternativeReference"),
       value: s
     }] : []));
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     amount: d && o.amount(d.value, d.currency),
     barcode: f,
     copyBtn: !0,
@@ -20188,7 +20182,7 @@ var hM = function(e) {
   })
 };
 
-function hT(e, t) {
+function hB(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20199,18 +20193,18 @@ function hT(e, t) {
   return n
 }
 
-function hB(e) {
+function hD(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hT(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hB(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hT(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hB(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var hD = function(e) {
+var hL = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -20255,13 +20249,13 @@ var hD = function(e) {
     key: "render",
     value: function() {
       var e;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.reference ? (0, ec.h)(hM, (0, er.Z)({
+      }, this.props.reference ? (0, ec.h)(hT, (0, er.Z)({
         ref: this.handleRef
-      }, this.props)) : this.props.showPayButton && this.payButton(hB(hB({}, this.props), {}, {
+      }, this.props)) : this.props.showPayButton && this.payButton(hD(hD({}, this.props), {}, {
         classNameModifiers: ["standalone"],
         label: I()(e = "".concat(this.props.i18n.get("continueTo"), " ")).call(e, this.props.name),
         onClick: this.submit
@@ -20269,11 +20263,11 @@ var hD = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(hD, "type", "oxxo"), (0, w.Z)(hD, "defaultProps", {
+(0, w.Z)(hL, "type", "oxxo"), (0, w.Z)(hL, "defaultProps", {
   showPayButton: !1,
   name: "Oxxo"
 });
-var hL = function(e) {
+var hV = function(e) {
   var t, n = nl().i18n,
     r = nT(),
     o = e.entity,
@@ -20293,7 +20287,7 @@ var hL = function(e) {
       label: n.get("voucher.shopperReference"),
       value: s
     }] : []));
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     amount: c && n.amount(c.value, c.currency),
     barcode: null,
     copyBtn: !0,
@@ -20306,7 +20300,7 @@ var hL = function(e) {
   })
 };
 
-function hV(e, t) {
+function hj(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20317,18 +20311,18 @@ function hV(e, t) {
   return n
 }
 
-function hj(e) {
+function hU(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hV(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hj(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hV(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hj(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var hU = function(e) {
+var hq = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -20363,7 +20357,7 @@ var hU = function(e) {
   }, {
     key: "formatProps",
     value: function(e) {
-      return hj(hj({}, e), {}, {
+      return hU(hU({}, e), {}, {
         name: e.name || "Multibanco"
       })
     }
@@ -20380,17 +20374,17 @@ var hU = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.reference ? (0, ec.h)(a3, {
+      return this.props.reference ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(hL, (0, er.Z)({
+      }, (0, ec.h)(hV, (0, er.Z)({
         ref: this.handleRef
-      }, this.props))) : this.props.showPayButton ? (0, ec.h)(a3, {
+      }, this.props))) : this.props.showPayButton ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(sc, {
+      }, (0, ec.h)(sl, {
         name: this.displayName,
         amount: this.props.amount,
         payButton: this.payButton,
@@ -20402,11 +20396,11 @@ var hU = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(hU, "type", "multibanco"), (0, w.Z)(hU, "defaultProps", {
+(0, w.Z)(hq, "type", "multibanco"), (0, w.Z)(hq, "defaultProps", {
   showPayButton: !0
 });
-var hq = function(e) {
-  (0, ea.Z)(r, sd);
+var hH = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -20430,7 +20424,7 @@ var hq = function(e) {
   return (0, Z.Z)(r)
 }();
 
-function hH(e, t) {
+function hK(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20441,19 +20435,19 @@ function hH(e, t) {
   return n
 }
 
-function hK(e) {
+function hz(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hH(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = hK(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hH(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = hK(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(hq, "type", "dotpay");
-var hz = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(hH, "type", "dotpay");
+var hW = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -20477,14 +20471,14 @@ var hz = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return hK(hK({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return hz(hz({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }]), r
 }();
 
-function hW(e) {
+function hY(e) {
   var t = e.children,
     n = e.classNames,
     r = e.type,
@@ -20495,15 +20489,15 @@ function hW(e) {
     className: "adyen-checkout__alert-message__icon",
     type: o
   }), t)
-}(0, w.Z)(hz, "type", "eps");
-var hY = ["brand", "amount", "balance", "transactionLimit"];
+}(0, w.Z)(hW, "type", "eps");
+var hG = ["brand", "amount", "balance", "transactionLimit"];
 
-function hG(e) {
+function h$(e) {
   e.brand;
   var t = e.amount,
     n = e.balance,
     r = e.transactionLimit,
-    o = (0, k.Z)(e, hY),
+    o = (0, k.Z)(e, hG),
     a = nl().i18n,
     i = t.value > (null == r ? void 0 : r.value) ? r : t,
     s = (null == n ? void 0 : n.value) - (null == i ? void 0 : i.value);
@@ -20537,7 +20531,7 @@ function hG(e) {
     }
   })))
 }
-var h$ = function(e) {
+var hQ = function(e) {
     var t, n = e.i18n,
       r = e.classNameModifiers,
       o = e.sfpState,
@@ -20555,7 +20549,7 @@ var h$ = function(e) {
       dir: "ltr",
       name: "encryptedCardNumber",
       errorVisibleToScreenReader: !1
-    }, (0, ec.h)(ll, {
+    }, (0, ec.h)(lu, {
       encryptedFieldType: "encryptedCardNumber",
       "data-info": '{"length":"15-32", "maskInterval":4}',
       className: ep()({
@@ -20567,7 +20561,7 @@ var h$ = function(e) {
       })
     }))
   },
-  hQ = function(e) {
+  hJ = function(e) {
     var t, n = e.i18n,
       r = e.classNameModifiers,
       o = e.sfpState,
@@ -20586,7 +20580,7 @@ var h$ = function(e) {
       dir: "ltr",
       name: "encryptedSecurityCode",
       errorVisibleToScreenReader: !1
-    }, (0, ec.h)(ll, {
+    }, (0, ec.h)(lu, {
       encryptedFieldType: "encryptedSecurityCode",
       "data-info": '{"length":"3-10", "maskInterval": 0}',
       className: ep()({
@@ -20598,7 +20592,7 @@ var h$ = function(e) {
       })
     }))
   },
-  hJ = function(e) {
+  hX = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -20664,8 +20658,8 @@ var h$ = function(e) {
           i = t.transactionLimit,
           s = nl().i18n,
           c = (null == i ? void 0 : i.value) < (null == a ? void 0 : a.value) ? i : a,
-          l = (null == c ? void 0 : c.value) >= (null === (n = this.props.amount) || void 0 === n ? void 0 : n.value);
-        if (c && l) return (0, ec.h)(hG, (0, er.Z)({
+          l = (null == c ? void 0 : c.value) >= (null == (n = this.props.amount) ? void 0 : n.value);
+        if (c && l) return (0, ec.h)(h$, (0, er.Z)({
           balance: a,
           transactionLimit: i,
           onSubmit: e.onSubmit
@@ -20685,9 +20679,9 @@ var h$ = function(e) {
         };
         return (0, ec.h)("div", {
           className: "adyen-checkout__giftcard"
-        }, "error" === this.state.status && (0, ec.h)(hW, {
+        }, "error" === this.state.status && (0, ec.h)(hY, {
           icon: "cross"
-        }, s.get("error.message.unknown")), (0, ec.h)(cU, (0, er.Z)({}, this.props, {
+        }, s.get("error.message.unknown")), (0, ec.h)(cq, (0, er.Z)({}, this.props, {
           ref: function(e) {
             r.sfp = e
           },
@@ -20716,7 +20710,7 @@ var h$ = function(e) {
     }]), r
   }();
 
-function hX(e, t) {
+function h0(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20727,17 +20721,17 @@ function hX(e, t) {
   return n
 }
 
-function h0(e) {
+function h1(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = hX(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = h0(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = hX(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = h0(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(hJ, "defaultProps", {
+}(0, w.Z)(hX, "defaultProps", {
   pinRequired: !0,
   expiryDateRequired: !1,
   onChange: function() {},
@@ -20749,14 +20743,14 @@ function h0(e) {
     return (0, ec.h)("div", {
       ref: t,
       className: "adyen-checkout__field-wrapper"
-    }, (0, ec.h)(h$, (0, er.Z)({}, e, {
+    }, (0, ec.h)(hQ, (0, er.Z)({}, e, {
       classNameModifiers: n ? ["70"] : ["100"]
-    })), n && (0, ec.h)(hQ, (0, er.Z)({}, e, {
+    })), n && (0, ec.h)(hJ, (0, er.Z)({}, e, {
       classNameModifiers: ["30"]
     })))
   }
 });
-var h1 = function(e) {
+var h2 = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -20798,7 +20792,7 @@ var h1 = function(e) {
           o = e.transactionLimit,
           a = void 0 === o ? {} : o;
         if (!r) throw Error("card-error");
-        if ((null == r ? void 0 : r.currency) !== (null === (n = t.props.amount) || void 0 === n ? void 0 : n.currency)) throw Error("currency-error");
+        if ((null == r ? void 0 : r.currency) !== (null == (n = t.props.amount) ? void 0 : n.currency)) throw Error("currency-error");
         if ((null == r ? void 0 : r.value) <= 0) throw Error("no-balance");
         if (t.componentRef.setBalance({
             balance: r,
@@ -20822,7 +20816,7 @@ var h1 = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return h0(h0({}, null == e ? void 0 : e.configuration), e)
+      return h1(h1({}, null == e ? void 0 : e.configuration), e)
     }
   }, {
     key: "formatData",
@@ -20832,8 +20826,8 @@ var h1 = function(e) {
         paymentMethod: {
           type: this.constructor.type,
           brand: this.props.brand,
-          encryptedCardNumber: null === (e = this.state.data) || void 0 === e ? void 0 : e.encryptedCardNumber,
-          encryptedSecurityCode: null === (t = this.state.data) || void 0 === t ? void 0 : t.encryptedSecurityCode
+          encryptedCardNumber: null == (e = this.state.data) ? void 0 : e.encryptedCardNumber,
+          encryptedSecurityCode: null == (t = this.state.data) ? void 0 : t.encryptedSecurityCode
         }
       }
     }
@@ -20846,13 +20840,13 @@ var h1 = function(e) {
     key: "icon",
     get: function() {
       var e;
-      return (null === (e = this.props.brandsConfiguration[this.props.brand]) || void 0 === e ? void 0 : e.icon) || this.props.icon || this.resources.getImage()(this.props.brand)
+      return (null == (e = this.props.brandsConfiguration[this.props.brand]) ? void 0 : e.icon) || this.props.icon || this.resources.getImage()(this.props.brand)
     }
   }, {
     key: "displayName",
     get: function() {
       var e;
-      return (null === (e = this.props.brandsConfiguration[this.props.brand]) || void 0 === e ? void 0 : e.name) || this.props.name
+      return (null == (e = this.props.brandsConfiguration[this.props.brand]) ? void 0 : e.name) || this.props.name
     }
   }, {
     key: "balanceCheck",
@@ -20863,11 +20857,11 @@ var h1 = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(hJ, (0, er.Z)({
+      }, (0, ec.h)(hX, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -20880,11 +20874,11 @@ var h1 = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(h1, "type", "giftcard"), (0, w.Z)(h1, "defaultProps", {
+(0, w.Z)(h2, "type", "giftcard"), (0, w.Z)(h2, "defaultProps", {
   brandsConfiguration: {}
 });
-var h2 = function(e) {
-  (0, ea.Z)(r, ds);
+var h8 = function(e) {
+  (0, ea.Z)(r, dc);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -20908,7 +20902,7 @@ var h2 = function(e) {
   return (0, Z.Z)(r)
 }();
 
-function h8(e, t) {
+function h4(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20919,23 +20913,23 @@ function h8(e, t) {
   return n
 }
 
-function h4(e) {
+function h6(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = h8(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = h4(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = h8(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = h4(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(h2, "type", "vipps"), (0, w.Z)(h2, "defaultProps", {
-  type: h2.type,
+}(0, w.Z)(h8, "type", "vipps"), (0, w.Z)(h8, "defaultProps", {
+  type: h8.type,
   showPayButton: !0,
   name: "Vipps"
 });
-var h6 = function(e) {
-  (0, ea.Z)(r, sd);
+var h5 = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -20959,14 +20953,14 @@ var h6 = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return h4(h4({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return h6(h6({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }]), r
 }();
 
-function h5(e, t) {
+function h3(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -20977,19 +20971,19 @@ function h5(e, t) {
   return n
 }
 
-function h3(e) {
+function h7(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = h5(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = h3(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = h5(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = h3(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(h6, "type", "payu_IN_cashcard");
-var h7 = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(h5, "type", "payu_IN_cashcard");
+var h9 = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -21013,16 +21007,16 @@ var h7 = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return h3(h3({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return h7(h7({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }]), r
 }();
-(0, w.Z)(h7, "type", "payu_IN_nb");
-var h9 = ["AT", "CH", "DE", "NL"];
+(0, w.Z)(h9, "type", "payu_IN_nb");
+var fe = ["AT", "CH", "DE", "NL"];
 
-function fe(e, t) {
+function ft(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21033,19 +21027,19 @@ function fe(e, t) {
   return n
 }
 
-function ft(e) {
+function fn(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fe(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ft(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fe(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ft(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var fn = function(e) {
-  (0, ea.Z)(r, ic);
+var fr = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -21069,14 +21063,14 @@ var fn = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return ft(ft({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : h9
+      return fn(fn({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: e.countryCode ? [e.countryCode] : fe
       })
     }
   }]), r
 }();
 
-function fr(e, t) {
+function fo(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21085,9 +21079,9 @@ function fr(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(fn, "type", "ratepay");
-var fo = function(e) {
-  (0, ea.Z)(r, hn);
+}(0, w.Z)(fr, "type", "ratepay");
+var fa = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -21114,9 +21108,9 @@ var fo = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = fr(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = fo(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = fr(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = fo(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -21129,15 +21123,15 @@ var fo = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(fo, "type", "swish");
-var fa = function(e) {
+(0, w.Z)(fa, "type", "swish");
+var fi = function(e) {
     var t = e.paymentMethodComponent,
       n = e.isLoaded;
     return t && n ? (0, ec.h)("div", {
       className: "adyen-checkout__payment-method__details__content"
     }, t) : null
   },
-  fi = {
+  fs = {
     "adyen-checkout__payment-methods-list": "DropinComponent-module_adyen-checkout__payment-methods-list__mAjAm",
     "adyen-checkout__payment-method": "DropinComponent-module_adyen-checkout__payment-method__nWdwg",
     "adyen-checkout__payment-method__details": "DropinComponent-module_adyen-checkout__payment-method__details__-rsW7",
@@ -21145,24 +21139,24 @@ var fa = function(e) {
     "adyen-checkout__payment-method__image__wrapper": "DropinComponent-module_adyen-checkout__payment-method__image__wrapper__6NWzA",
     "adyen-checkout__payment-method--selected": "DropinComponent-module_adyen-checkout__payment-method--selected__6egZF"
   },
-  fs = ["googlepay", "paywithgoogle"],
-  fc = function(e) {
+  fc = ["googlepay", "paywithgoogle"],
+  fl = function(e) {
     var t = e.src,
       n = e.altDescription,
       r = e.type,
       o = e.disabled;
     return (0, ec.h)("span", {
-      className: ep()("adyen-checkout__payment-method__image__wrapper", fi["adyen-checkout__payment-method__image__wrapper"], {
-        "adyen-checkout__payment-method__image__wrapper--outline": !O()(fs).call(fs, r),
+      className: ep()("adyen-checkout__payment-method__image__wrapper", fs["adyen-checkout__payment-method__image__wrapper"], {
+        "adyen-checkout__payment-method__image__wrapper--outline": !O()(fc).call(fc, r),
         "adyen-checkout__payment-method__image__wrapper--disabled": !!(void 0 !== o && o)
       })
     }, (0, ec.h)(o7, {
-      className: "adyen-checkout__payment-method__image ".concat(fi["adyen-checkout__payment-method__image"]),
+      className: "adyen-checkout__payment-method__image ".concat(fs["adyen-checkout__payment-method__image"]),
       src: t,
       alt: n
     }))
   },
-  fl = function(e) {
+  fu = function(e) {
     var t = e.id,
       n = e.open,
       r = e.onDisable,
@@ -21191,7 +21185,7 @@ var fa = function(e) {
       onClick: o
     }, a.get("storedPaymentMethod.disable.cancelButton")))))
   },
-  fu = function(e) {
+  fd = function(e) {
     var t, n = e.allowedBrands;
     if (e.isPaymentMethodSelected) return null;
     var r = {
@@ -21203,9 +21197,9 @@ var fa = function(e) {
     return (0, ec.h)("span", {
       className: "adyen-checkout__payment-method__brands"
     }, J()(o).call(o, function(e) {
-      return (0, ec.h)(fc, {
+      return (0, ec.h)(fl, {
         key: e.name,
-        altDescription: la(e.name),
+        altDescription: li(e.name),
         type: e.name,
         src: e.icon
       })
@@ -21213,7 +21207,7 @@ var fa = function(e) {
       className: "adyen-checkout__payment-method__brand-number"
     }, "+", a))
   },
-  fd = function(e) {
+  fp = function(e) {
     var t = e.activeBrand,
       n = e.brands,
       r = e.excludedUIBrands,
@@ -21222,22 +21216,22 @@ var fa = function(e) {
       i = P()(n).call(n, function(e) {
         return !(null != r && O()(r).call(r, e.name))
       });
-    return void 0 === a || a ? (0, ec.h)(fu, {
+    return void 0 === a || a ? (0, ec.h)(fd, {
       allowedBrands: i,
       isPaymentMethodSelected: o
     }) : (0, ec.h)("span", {
       className: "adyen-checkout__payment-method__brands"
     }, J()(i).call(i, function(e) {
-      return (0, ec.h)(fc, {
+      return (0, ec.h)(fl, {
         key: e.name,
-        altDescription: la(e.name),
+        altDescription: li(e.name),
         type: e.name,
         src: e.icon,
         disabled: t && t !== e.name
       })
     }))
   },
-  fp = function(e) {
+  fh = function(e) {
     var t = e.displayName,
       n = e.additionalInfo,
       r = e.isSelected;
@@ -21255,7 +21249,7 @@ var fa = function(e) {
       })
     }, n))
   },
-  fh = function(e) {
+  ff = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -21326,7 +21320,7 @@ var fa = function(e) {
         if (!o) return null;
         var p = ep()(((0, w.Z)(r = {
             "adyen-checkout__payment-method": !0
-          }, fi["adyen-checkout__payment-method"], !0), (0, w.Z)(r, "adyen-checkout__payment-method--".concat(o.props.type), !0), (0, w.Z)(r, "adyen-checkout__payment-method--".concat(null !== (n = o.props.fundingSource) && void 0 !== n ? n : "credit"), !0), (0, w.Z)(r, "adyen-checkout__payment-method--selected", a), (0, w.Z)(r, fi["adyen-checkout__payment-method--selected"], a), (0, w.Z)(r, "adyen-checkout__payment-method--loading", c), (0, w.Z)(r, "adyen-checkout__payment-method--disabling", i), (0, w.Z)(r, "adyen-checkout__payment-method--confirming", this.state.showDisableStoredPaymentMethodConfirmation), (0, w.Z)(r, "adyen-checkout__payment-method--standalone", l), (0, w.Z)(r, fi["adyen-checkout__payment-method--loading"], c), (0, w.Z)(r, o._id, !0), (0, w.Z)(r, this.props.className, !0), r)),
+          }, fs["adyen-checkout__payment-method"], !0), (0, w.Z)(r, "adyen-checkout__payment-method--".concat(o.props.type), !0), (0, w.Z)(r, "adyen-checkout__payment-method--".concat(null != (n = o.props.fundingSource) ? n : "credit"), !0), (0, w.Z)(r, "adyen-checkout__payment-method--selected", a), (0, w.Z)(r, fs["adyen-checkout__payment-method--selected"], a), (0, w.Z)(r, "adyen-checkout__payment-method--loading", c), (0, w.Z)(r, "adyen-checkout__payment-method--disabling", i), (0, w.Z)(r, "adyen-checkout__payment-method--confirming", this.state.showDisableStoredPaymentMethodConfirmation), (0, w.Z)(r, "adyen-checkout__payment-method--standalone", l), (0, w.Z)(r, fs["adyen-checkout__payment-method--loading"], c), (0, w.Z)(r, o._id, !0), (0, w.Z)(r, this.props.className, !0), r)),
           h = this.props.showRemovePaymentMethodButton && o.props.oneClick && a,
           f = "remove-".concat(o._id),
           m = "container-".concat(o._id),
@@ -21350,12 +21344,12 @@ var fa = function(e) {
             "adyen-checkout__payment-method__radio--selected": a
           }),
           "aria-hidden": "true"
-        }), (0, ec.h)(fc, (0, er.Z)({}, o.props.oneClick && {
+        }), (0, ec.h)(fl, (0, er.Z)({}, o.props.oneClick && {
           altDescription: o.props.name
         }, {
           type: o.type,
           src: o.icon
-        })), (0, ec.h)(fp, {
+        })), (0, ec.h)(fh, {
           displayName: o.displayName,
           isSelected: a,
           additionalInfo: o.additionalInfo
@@ -21365,36 +21359,36 @@ var fa = function(e) {
           onClick: this.toggleDisableConfirmation,
           "aria-expanded": this.state.showDisableStoredPaymentMethodConfirmation,
           "aria-controls": f
-        }, d.get("storedPaymentMethod.disable.button")), v && (0, ec.h)(fd, {
+        }, d.get("storedPaymentMethod.disable.button")), v && (0, ec.h)(fp, {
           activeBrand: u,
           brands: o.brands,
           excludedUIBrands: n7,
           isPaymentMethodSelected: a,
           isCompactView: o.props.showBrandsUnderCardNumber
         })), (0, ec.h)("div", {
-          className: "adyen-checkout__payment-method__details ".concat(fi["adyen-checkout__payment-method__details"]),
+          className: "adyen-checkout__payment-method__details ".concat(fs["adyen-checkout__payment-method__details"]),
           id: m,
           role: "region"
-        }, h && (0, ec.h)(fl, {
+        }, h && (0, ec.h)(fu, {
           id: f,
           open: this.state.showDisableStoredPaymentMethodConfirmation,
           onDisable: this.onDisableStoredPaymentMethod,
           onCancel: this.toggleDisableConfirmation
-        }), (0, ec.h)(fa, {
+        }), (0, ec.h)(fi, {
           paymentMethodComponent: o.render(),
           isLoaded: s
         })))
       }
     }]), r
   }();
-(0, w.Z)(fh, "defaultProps", {
+(0, w.Z)(ff, "defaultProps", {
   paymentMethod: null,
   isSelected: !1,
   isLoaded: !1,
   isLoading: !1,
   showDisableStoredPaymentMethodConfirmation: !1
 });
-var ff = function(e) {
+var fm = function(e) {
   var t, n = e.order,
     r = e.orderStatus,
     o = e.onOrderCancel,
@@ -21403,7 +21397,7 @@ var ff = function(e) {
     s = nT();
   return (0, ec.h)("div", null, (0, ec.h)("ul", {
     className: "adyen-checkout__order-payment-methods-list"
-  }, null == r || null === (t = r.paymentMethods) || void 0 === t ? void 0 : J()(t).call(t, function(e, t) {
+  }, null == r || null == (t = r.paymentMethods) ? void 0 : J()(t).call(t, function(e, t) {
     var r;
     return (0, ec.h)("li", {
       key: I()(r = "".concat(e.type, "-")).call(r, t),
@@ -21412,7 +21406,7 @@ var ff = function(e) {
       className: "adyen-checkout__order-payment-method__header"
     }, (0, ec.h)("div", {
       className: "adyen-checkout__payment-method__header__title"
-    }, (0, ec.h)(fc, {
+    }, (0, ec.h)(fl, {
       altDescription: e.name,
       type: e.type,
       src: a[e.type] || s()(e.type)
@@ -21438,7 +21432,7 @@ var ff = function(e) {
   }, i.get("partialPayment.warning"), " ", (0, ec.h)("strong", null, i.amount(r.remainingAmount.value, r.remainingAmount.currency))))
 };
 
-function fm(e) {
+function fy(e) {
   var t = e.paymentMethods,
     n = nl().i18n;
   return (0, ec.h)(ec.HY, null, (0, ec.h)("ul", {
@@ -21447,12 +21441,12 @@ function fm(e) {
     return (0, ec.h)("li", {
       key: e.type
     }, e.render())
-  })), (0, ec.h)(i8, {
+  })), (0, ec.h)(i4, {
     label: n.get("orPayWith")
   }))
 }
 
-function fy(e, t) {
+function fv(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21463,18 +21457,18 @@ function fy(e, t) {
   return n
 }
 
-function fv(e) {
+function fg(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fy(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fv(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fy(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fv(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var fg = function(e) {
+var fb = function(e) {
   (0, ea.Z)(r, ec.wA);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -21515,18 +21509,18 @@ var fg = function(e) {
         d = e.isLoading,
         p = e.isDisablingPaymentMethod,
         h = nl().i18n,
-        f = ep()(((0, w.Z)(a = {}, fi["adyen-checkout__payment-methods-list"], !0), (0, w.Z)(a, "adyen-checkout__payment-methods-list", !0), (0, w.Z)(a, "adyen-checkout__payment-methods-list--loading", d), a)),
+        f = ep()(((0, w.Z)(a = {}, fs["adyen-checkout__payment-methods-list"], !0), (0, w.Z)(a, "adyen-checkout__payment-methods-list", !0), (0, w.Z)(a, "adyen-checkout__payment-methods-list--loading", d), a)),
         m = (t = tX({}), r = (n = (0, q.Z)(t, 2))[0], o = n[1], t1(function() {
           o(Y()(s).call(s, function(e, t) {
-            return fv(fv({}, e), t.props.brand && t.icon && (0, w.Z)({}, t.props.brand, t.icon))
+            return fg(fg({}, e), t.props.brand && t.icon && (0, w.Z)({}, t.props.brand, t.icon))
           }, {}))
         }, [s]), r);
-      return (0, ec.h)(ec.HY, null, this.props.orderStatus && (0, ec.h)(ff, {
+      return (0, ec.h)(ec.HY, null, this.props.orderStatus && (0, ec.h)(fm, {
         order: this.props.order,
         orderStatus: this.props.orderStatus,
         onOrderCancel: this.props.onOrderCancel,
         brandLogoConfiguration: m
-      }), !!c.length && (0, ec.h)(fm, {
+      }), !!c.length && (0, ec.h)(fy, {
         paymentMethods: c
       }), (0, ec.h)("ul", {
         className: f,
@@ -21537,7 +21531,7 @@ var fg = function(e) {
         var r = l && l._id === e._id,
           o = e._id in u,
           a = l && n[t + 1] && l._id === n[t + 1]._id;
-        return (0, ec.h)(fh, {
+        return (0, ec.h)(ff, {
           className: ep()({
             "adyen-checkout__payment-method--next-selected": a
           }),
@@ -21556,7 +21550,7 @@ var fg = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(fg, "defaultProps", {
+(0, w.Z)(fb, "defaultProps", {
   instantPaymentMethods: [],
   paymentMethods: [],
   activePaymentMethod: null,
@@ -21567,12 +21561,12 @@ var fg = function(e) {
   isDisablingPaymentMethod: !1,
   isLoading: !1
 });
-var fb = function(e) {
+var f_ = function(e) {
     var t = e.message,
       n = nl().i18n,
       r = nT(),
       o = n.get(t || "creditCard.success");
-    return p9(o), (0, ec.h)("div", {
+    return he(o), (0, ec.h)("div", {
       className: "adyen-checkout__status adyen-checkout__status--success"
     }, (0, ec.h)(o7, {
       height: "88",
@@ -21586,12 +21580,12 @@ var fb = function(e) {
       className: "adyen-checkout__status__text"
     }, o))
   },
-  f_ = function(e) {
+  fk = function(e) {
     var t = e.message,
       n = nl().i18n,
       r = nT(),
       o = n.get(t || "error.message.unknown");
-    return p9(o), (0, ec.h)("div", {
+    return he(o), (0, ec.h)("div", {
       className: "adyen-checkout__status adyen-checkout__status--error"
     }, (0, ec.h)(o7, {
       className: "adyen-checkout__status__icon",
@@ -21606,7 +21600,7 @@ var fb = function(e) {
     }, o))
   };
 
-function fk(e, t) {
+function fC(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21617,18 +21611,18 @@ function fk(e, t) {
   return n
 }
 
-function fC(e) {
+function fZ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fk(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fC(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fk(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fC(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var fZ = function(e) {
+var fw = function(e) {
     (0, ea.Z)(r, ec.wA);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -21712,7 +21706,7 @@ var fZ = function(e) {
         t.setState(function(t) {
           return {
             activePaymentMethod: e,
-            cachedPaymentMethods: fC(fC({}, t.cachedPaymentMethods), {}, (0, w.Z)({}, e._id, !0))
+            cachedPaymentMethods: fZ(fZ({}, t.cachedPaymentMethods), {}, (0, w.Z)({}, e._id, !0))
           }
         })
       }), (0, w.Z)((0, eo.Z)(t), "handleOnSelectPaymentMethod", function(e) {
@@ -21782,19 +21776,19 @@ var fZ = function(e) {
           d = "redirect" === s.type;
         switch (s.type) {
           case "success":
-            return (0, ec.h)(fb, {
-              message: null === (n = s.props) || void 0 === n ? void 0 : n.message
+            return (0, ec.h)(f_, {
+              message: null == (n = s.props) ? void 0 : n.message
             });
           case "error":
-            return (0, ec.h)(f_, {
-              message: null === (r = s.props) || void 0 === r ? void 0 : r.message
+            return (0, ec.h)(fk, {
+              message: null == (r = s.props) ? void 0 : r.message
             });
           case "custom":
-            return null === (o = s.props) || void 0 === o || null === (o = o.component) || void 0 === o ? void 0 : o.render();
+            return null == (o = s.props) || null == (o = o.component) ? void 0 : o.render();
           default:
             return (0, ec.h)("div", {
               className: "adyen-checkout__dropin adyen-checkout__dropin--".concat(s.type)
-            }, d && s.props.component && s.props.component.render(), u && s.props && s.props.component && s.props.component.render(), a && !!a.length && (0, ec.h)(fg, {
+            }, d && s.props.component && s.props.component.render(), u && s.props && s.props.component && s.props.component.render(), a && !!a.length && (0, ec.h)(fb, {
               isLoading: u || d,
               isDisablingPaymentMethod: this.state.isDisabling,
               paymentMethods: a,
@@ -21814,14 +21808,14 @@ var fZ = function(e) {
       }
     }]), r
   }(),
-  fw = ["androidpay", "samsungpay", "clicktopay"],
-  fS = function(e) {
-    return !O()(fw).call(fw, e.constructor.type)
-  },
+  fS = ["androidpay", "samsungpay", "clicktopay"],
   fN = function(e) {
-    return !!e
+    return !O()(fS).call(fS, e.constructor.type)
   },
   fx = function(e) {
+    return !!e
+  },
+  fP = function(e) {
     if (e.isAvailable) {
       var t = new(T())(function(e, t) {
         return eu()(t, 5e3)
@@ -21830,14 +21824,14 @@ var fZ = function(e) {
     }
     return T().resolve(!!e)
   },
-  fP = function() {
+  fA = function() {
     var e, t, n, r = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
       o = arguments.length > 1 ? arguments[1] : void 0,
       a = arguments.length > 2 ? arguments[2] : void 0,
       i = P()(e = P()(t = J()(r).call(r, function(e) {
         return a(e, o)
-      })).call(t, fN)).call(e, fS),
-      s = J()(n = J()(i).call(i, fx)).call(n, function(e) {
+      })).call(t, fx)).call(e, fN),
+      s = J()(n = J()(i).call(i, fP)).call(n, function(e) {
         return e.catch(function(e) {
           return e
         })
@@ -21849,7 +21843,7 @@ var fZ = function(e) {
     })
   };
 
-function fA(e, t) {
+function fR(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21860,19 +21854,19 @@ function fA(e, t) {
   return n
 }
 
-function fR(e) {
+function fF(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fA(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fR(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fA(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fR(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function fF(e, t) {
+function fO(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21883,19 +21877,19 @@ function fF(e, t) {
   return n
 }
 
-function fO(e) {
+function fE(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fF(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fO(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fF(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fO(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function fE(e, t) {
+function fI(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -21906,19 +21900,19 @@ function fE(e, t) {
   return n
 }
 
-function fI(e) {
+function fM(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fE(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fI(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fE(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fI(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var fM = ["paywithgoogle", "googlepay", "applepay"],
-  fT = function(e) {
+var fT = ["paywithgoogle", "googlepay", "applepay"],
+  fB = function(e) {
     (0, ea.Z)(r, nk);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -21947,7 +21941,7 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
           i = t.showPaymentMethods,
           s = t.instantPaymentMethods,
           c = {
-            beforeSubmit: (e = fI(fI({}, a.props), {}, {
+            beforeSubmit: (e = fM(fM({}, a.props), {}, {
               elementRef: a.elementRef
             })).beforeSubmit,
             onSubmit: e.onSubmit,
@@ -21957,14 +21951,14 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
           };
         return [o ? function() {
           var e = arguments.length > 2 ? arguments[2] : void 0;
-          return fP(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [], fR(fR({}, arguments.length > 1 ? arguments[1] : void 0), {}, {
+          return fA(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [], fF(fF({}, arguments.length > 1 ? arguments[1] : void 0), {}, {
             oneClick: !0
           }), e)
-        }(r, c, a._parentInstance.create) : [], i ? fP(n, c, a._parentInstance.create) : [], function() {
+        }(r, c, a._parentInstance.create) : [], i ? fA(n, c, a._parentInstance.create) : [], function() {
           var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [],
             t = arguments.length > 1 ? arguments[1] : void 0,
             n = arguments.length > 2 ? arguments[2] : void 0;
-          return e.length ? fP(e, fO(fO({}, t), {}, {
+          return e.length ? fA(e, fE(fE({}, t), {}, {
             isInstantPayment: !0,
             showPayButton: !0
           }), n) : []
@@ -21980,7 +21974,7 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
       key: "formatProps",
       value: function(e) {
         var t, n, o = P()(t = tn()(new(tp())(e.instantPaymentTypes))).call(t, function(e) {
-            return O()(fM).call(fM, e)
+            return O()(fT).call(fT, e)
           }),
           a = Y()(o).call(o, function(t, n) {
             var r, o, a = D()(r = e.paymentMethods).call(r, function(e) {
@@ -21992,7 +21986,7 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
             var t = e.type;
             return !O()(o).call(o, t)
           });
-        return fI(fI({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        return fM(fM({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
           instantPaymentTypes: o,
           instantPaymentMethods: a,
           paymentMethods: i
@@ -22012,13 +22006,13 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
       key: "setStatus",
       value: function(e) {
         var t, n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        return null === (t = this.dropinRef) || void 0 === t || t.setStatus(e, n), this
+        return null == (t = this.dropinRef) || t.setStatus(e, n), this
       }
     }, {
       key: "activePaymentMethod",
       get: function() {
         var e, t;
-        return null !== (e = this.dropinRef) && void 0 !== e && e.state || null !== (t = this.dropinRef) && void 0 !== t && t.state.activePaymentMethod ? this.dropinRef.state.activePaymentMethod : null
+        return null != (e = this.dropinRef) && e.state || null != (t = this.dropinRef) && t.state.activePaymentMethod ? this.dropinRef.state.activePaymentMethod : null
       }
     }, {
       key: "data",
@@ -22039,9 +22033,9 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
           if (ng(e, "action") && ng(e, "resultCode")) throw Error('handleAction::Invalid Action - the passed action object itself has an "action" property and a "resultCode": have you passed in the whole response object by mistake?');
           throw Error('handleAction::Invalid Action - the passed action object does not have a "type" property')
         }
-        if ("redirect" !== e.type && null !== (t = this.activePaymentMethod) && void 0 !== t && t.updateWithAction) return this.activePaymentMethod.updateWithAction(e);
-        this.elementRef instanceof r && (o = fI(fI({}, null === (n = this.elementRef.activePaymentMethod) || void 0 === n ? void 0 : n.props), o));
-        var a = this._parentInstance.createFromAction(e, fI(fI({}, o), {}, {
+        if ("redirect" !== e.type && null != (t = this.activePaymentMethod) && t.updateWithAction) return this.activePaymentMethod.updateWithAction(e);
+        this.elementRef instanceof r && (o = fM(fM({}, null == (n = this.elementRef.activePaymentMethod) ? void 0 : n.props), o));
+        var a = this._parentInstance.createFromAction(e, fM(fM({}, o), {}, {
           elementRef: this.elementRef,
           onAdditionalDetails: this.handleAdditionalDetails,
           isDropin: !0
@@ -22059,13 +22053,13 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
       key: "render",
       value: function() {
         var e = this;
-        return (0, ec.h)(a3, {
+        return (0, ec.h)(a7, {
           i18n: this.props.i18n,
           loadingContext: this.props.loadingContext,
           resources: this.resources
-        }, (0, ec.h)(ia, {
+        }, (0, ec.h)(ii, {
           srPanel: this.props.modules.srPanel
-        }, (0, ec.h)(fZ, (0, er.Z)({}, this.props, {
+        }, (0, ec.h)(fw, (0, er.Z)({}, this.props, {
           onChange: this.setState,
           elementRef: this.elementRef,
           onCreateElements: this.handleCreate,
@@ -22076,7 +22070,7 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
       }
     }]), r
   }();
-(0, w.Z)(fT, "type", "dropin"), (0, w.Z)(fT, "defaultProps", {
+(0, w.Z)(fB, "type", "dropin"), (0, w.Z)(fB, "defaultProps", {
   isDropin: !0,
   onReady: function() {},
   onComplete: function() {},
@@ -22095,8 +22089,8 @@ var fM = ["paywithgoogle", "googlepay", "applepay"],
   showRemoveStoredPaymentMethodButton: !1,
   showPayButton: !0
 });
-var fB = "AchInput-module_adyen-checkout__input__8WwCR",
-  fD = function(e) {
+var fD = "AchInput-module_adyen-checkout__input__8WwCR",
+  fL = function(e) {
     var t, n = e.id,
       r = e.dataInfo,
       o = e.className,
@@ -22125,16 +22119,16 @@ var fB = "AchInput-module_adyen-checkout__input__8WwCR",
       dir: h,
       name: n,
       errorVisibleToScreenReader: !1
-    }, (0, ec.h)(ll, {
+    }, (0, ec.h)(lu, {
       encryptedFieldType: m,
       "data-info": r,
       className: ep()((t = {
         "adyen-checkout__input": !0,
         "adyen-checkout__input--large": !0
-      }, (0, w.Z)(t, fB, !0), (0, w.Z)(t, "adyen-checkout__input--error", l.length), (0, w.Z)(t, "adyen-checkout__input--focus", i), (0, w.Z)(t, "adyen-checkout__input--valid", d), t))
+      }, (0, w.Z)(t, fD, !0), (0, w.Z)(t, "adyen-checkout__input--error", l.length), (0, w.Z)(t, "adyen-checkout__input--focus", i), (0, w.Z)(t, "adyen-checkout__input--valid", d), t))
     }))
   },
-  fL = function(e) {
+  fV = function(e) {
     var t = e.focusedElement,
       n = e.onFocusField,
       r = e.errors,
@@ -22142,7 +22136,7 @@ var fB = "AchInput-module_adyen-checkout__input__8WwCR",
       a = nl().i18n;
     return (0, ec.h)("div", {
       className: "adyen-checkout__ach-sf__form adyen-checkout__field-wrapper"
-    }, (0, ec.h)(fD, {
+    }, (0, ec.h)(fL, {
       id: "bankAccountNumber",
       focused: "encryptedBankAccountNumber" === t,
       isValid: !!o.encryptedBankAccountNumber,
@@ -22153,7 +22147,7 @@ var fB = "AchInput-module_adyen-checkout__input__8WwCR",
       dataInfo: '{"length":"4-17"}',
       className: "adyen-checkout__field--50",
       dir: "ltr"
-    }), (0, ec.h)(fD, {
+    }), (0, ec.h)(fL, {
       id: "bankLocationId",
       focused: "encryptedBankLocationId" === t,
       isValid: !!o.encryptedBankLocationId,
@@ -22166,13 +22160,13 @@ var fB = "AchInput-module_adyen-checkout__input__8WwCR",
       dir: "ltr"
     }))
   },
-  fV = {
+  fj = {
     base: {
       caretColor: "#0075FF"
     }
   };
 
-function fj(e, t) {
+function fU(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -22183,23 +22177,23 @@ function fj(e, t) {
   return n
 }
 
-function fU(e) {
+function fq(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fj(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fU(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fj(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fU(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function fq(e) {
+function fH(e) {
   return !(arguments.length > 1 && void 0 !== arguments[1] && arguments[1]) || !!e && "string" == typeof e && eP()(e).call(e).length > 0
 }
 
-function fH(e) {
+function fK(e) {
   var t, n = this,
     r = nl().i18n,
     o = e.hasHolderName && (!!e.holderName || !!e.data.holderName),
@@ -22207,13 +22201,13 @@ function fH(e) {
     i = (0, q.Z)(a, 2),
     s = i[0],
     c = i[1],
-    u = tX(fU({}, e.holderNameRequired && {
+    u = tX(fq({}, e.holderNameRequired && {
       holderName: o
     })),
     d = (0, q.Z)(u, 2),
     p = d[0],
     h = d[1],
-    f = tX(fU({}, e.hasHolderName && {
+    f = tX(fq({}, e.hasHolderName && {
       holderName: e.holderName || e.data.holderName
     })),
     m = (0, q.Z)(f, 2),
@@ -22236,18 +22230,18 @@ function fH(e) {
     O = F[0],
     E = F[1],
     I = function(e) {
-      k(fU(fU({}, _), e.data)), h(fU(fU({}, p), {}, {
+      k(fq(fq({}, _), e.data)), h(fq(fq({}, p), {}, {
         billingAddress: e.isValid
       }))
     },
     M = function(t) {
       var n = t.target.value;
-      v(fU(fU({}, y), {}, {
+      v(fq(fq({}, y), {}, {
         holderName: n
-      })), c(fU(fU({}, s), {}, {
-        holderName: !!e.holderNameRequired && !fq(n)
-      })), h(fU(fU({}, p), {}, {
-        holderName: !e.holderNameRequired || fq(n, e.holderNameRequired)
+      })), c(fq(fq({}, s), {}, {
+        holderName: !!e.holderNameRequired && !fH(n)
+      })), h(fq(fq({}, p), {}, {
+        holderName: !e.holderNameRequired || fH(n, e.holderNameRequired)
       }))
     },
     T = t8(null),
@@ -22260,8 +22254,8 @@ function fH(e) {
     j = V[0],
     U = V[1],
     H = t8({});
-  return l()(H.current).length || null === (t = e.setComponentRef) || void 0 === t || t.call(e, H.current), H.current.showValidation = function() {
-    T.current.showValidation(), e.holderNameRequired && !p.holderName && c(fU(fU({}, s), {}, {
+  return l()(H.current).length || null == (t = e.setComponentRef) || t.call(e, H.current), H.current.showValidation = function() {
+    T.current.showValidation(), e.holderNameRequired && !p.holderName && c(fq(fq({}, s), {}, {
       holderName: !0
     })), B.current && B.current.showValidation()
   }, H.current.setStatus = U, t1(function() {
@@ -22270,7 +22264,7 @@ function fH(e) {
         T.current.destroy()
       }
   }, []), t1(function() {
-    var t = fq(y.holderName, e.holderNameRequired),
+    var t = fH(y.holderName, e.holderNameRequired),
       n = !e.billingAddressRequired || !!p.billingAddress;
     e.onChange({
       data: y,
@@ -22280,16 +22274,16 @@ function fH(e) {
     })
   }, [y, p, s, O]), (0, ec.h)("div", {
     className: "adyen-checkout__ach"
-  }, e.showFormInstruction && (0, ec.h)(a1, null), (0, ec.h)(cU, (0, er.Z)({
+  }, e.showFormInstruction && (0, ec.h)(a2, null), (0, ec.h)(cq, (0, er.Z)({
     ref: T
-  }, fK(e), {
-    styles: fU(fU({}, fV), e.styles),
+  }, fz(e), {
+    styles: fq(fq({}, fj), e.styles),
     onChange: function(t) {
       var n = t.autoCompleteName ? t.autoCompleteName : y.holderName;
-      v(fU(fU(fU({}, y), t.data), {}, {
+      v(fq(fq(fq({}, y), t.data), {}, {
         holderName: n
-      })), c(fU(fU({}, s), t.errors)), h(fU(fU(fU({}, p), t.valid), {}, {
-        holderName: !e.holderNameRequired || fq(n, e.holderNameRequired)
+      })), c(fq(fq({}, s), t.errors)), h(fq(fq(fq({}, p), t.valid), {}, {
+        holderName: !e.holderNameRequired || fH(n, e.holderNameRequired)
       })), S(t.isSfpValid)
     },
     onFocus: function(t) {
@@ -22302,7 +22296,7 @@ function fH(e) {
       return (0, ec.h)("div", {
         ref: o,
         className: "adyen-checkout__ach-input ".concat("AchInput-module_sf-input__wrapper__lfdiv")
-      }, (0, ec.h)(li, {
+      }, (0, ec.h)(ls, {
         status: n.status
       }, (0, ec.h)("div", {
         className: ep()(["adyen-checkout__fieldset", "adyen-checkout__fieldset--ach"])
@@ -22315,12 +22309,12 @@ function fH(e) {
         isValid: !!p.holderName,
         name: "holderName"
       }, (0, ec.h)(rH, {
-        className: "adyen-checkout__pm__holderName__input ".concat(fB),
+        className: "adyen-checkout__pm__holderName__input ".concat(fD),
         placeholder: e.placeholders.holderName || r.get("ach.accountHolderNameField.placeholder"),
         value: y.holderName,
         required: e.holderNameRequired,
         onInput: M
-      })), (0, ec.h)(fL, {
+      })), (0, ec.h)(fV, {
         focusedElement: P,
         onFocusField: a,
         errors: n.errors,
@@ -22332,7 +22326,7 @@ function fH(e) {
         allowedCountries: e.billingAddressAllowedCountries,
         requiredFields: e.billingAddressRequiredFields,
         setComponentRef: D
-      }), e.enableStoreDetails && (0, ec.h)(lN, {
+      }), e.enableStoreDetails && (0, ec.h)(lx, {
         onChange: E
       })))
     }
@@ -22341,7 +22335,7 @@ function fH(e) {
     label: r.get("confirmPurchase")
   }))
 }
-fH.defaultProps = {
+fK.defaultProps = {
   type: "ach",
   hasHolderName: !0,
   holderNameRequired: !0,
@@ -22364,7 +22358,7 @@ fH.defaultProps = {
   styles: {},
   placeholders: {}
 };
-var fK = function(e) {
+var fz = function(e) {
   return {
     allowedDOMAccess: e.allowedDOMAccess,
     autoFocus: e.autoFocus,
@@ -22387,7 +22381,7 @@ var fK = function(e) {
   }
 };
 
-function fz(e, t) {
+function fW(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -22398,18 +22392,18 @@ function fz(e, t) {
   return n
 }
 
-function fW(e) {
+function fY(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fz(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = fW(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fz(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = fW(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var fY = function(e) {
+var fG = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -22435,22 +22429,22 @@ var fY = function(e) {
     key: "formatProps",
     value: function(e) {
       var t;
-      return fW(fW({}, e), {}, {
-        holderNameRequired: null !== (t = e.hasHolderName) && void 0 !== t ? t : e.holderNameRequired
+      return fY(fY({}, e), {}, {
+        holderNameRequired: null != (t = e.hasHolderName) ? t : e.holderNameRequired
       })
     }
   }, {
     key: "formatData",
     value: function() {
       var e, t = !!this.props.storedPaymentMethodId,
-        n = fW(fW({
+        n = fY(fY({
           type: r.type
         }, this.state.data), {}, {
-          ownerName: null === (e = this.state.data) || void 0 === e ? void 0 : e.holderName
+          ownerName: null == (e = this.state.data) ? void 0 : e.holderName
         }, t && {
           storedPaymentMethodId: this.props.storedPaymentMethodId
         });
-      return delete n.holderName, fW(fW({
+      return delete n.holderName, fY(fY({
         paymentMethod: n
       }, this.state.billingAddress && {
         billingAddress: this.state.billingAddress
@@ -22488,11 +22482,11 @@ var fY = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.storedPaymentMethodId ? (0, ec.h)(sc, {
+      }, this.props.storedPaymentMethodId ? (0, ec.h)(sl, {
         name: this.displayName,
         amount: this.props.amount,
         payButton: this.payButton,
@@ -22500,7 +22494,7 @@ var fY = function(e) {
         ref: function(t) {
           e.componentRef = t
         }
-      }) : (0, ec.h)(fH, (0, er.Z)({
+      }) : (0, ec.h)(fK, (0, er.Z)({
         setComponentRef: this.setComponentRef
       }, this.props, {
         onChange: this.setState,
@@ -22511,14 +22505,14 @@ var fY = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(fY, "type", "ach");
-var fG = /\b(2\d{1}|(9(3|6|2|1)))\d{7}\b/,
-  f$ = /^(\d){4,}$/,
-  fQ = {
+(0, w.Z)(fG, "type", "ach");
+var f$ = /\b(2\d{1}|(9(3|6|2|1)))\d{7}\b/,
+  fQ = /^(\d){4,}$/,
+  fJ = {
     phoneNumber: {
       modes: ["blur"],
       validate: function(e, t) {
-        var n = "+351" === t.state.data.phonePrefix ? fG : f$;
+        var n = "+351" === t.state.data.phonePrefix ? f$ : fQ;
         return rZ(e) ? null : n.test(e)
       },
       errorMessage: "invalidPhoneNumber"
@@ -22531,7 +22525,7 @@ var fG = /\b(2\d{1}|(9(3|6|2|1)))\d{7}\b/,
       errorMessage: "invalidCountryCode"
     }
   },
-  fJ = {
+  fX = {
     phoneNumber: {
       formatterFn: function(e) {
         return e.replace(rS("^\\d", "g"), "")
@@ -22539,7 +22533,7 @@ var fG = /\b(2\d{1}|(9(3|6|2|1)))\d{7}\b/,
     }
   };
 
-function fX(e, t) {
+function f0(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -22550,30 +22544,30 @@ function fX(e, t) {
   return n
 }
 
-function f0(e) {
+function f1(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = fX(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = f0(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = fX(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = f0(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function f1(e) {
+function f2(e) {
   var t, n, r, o, a, i, s = nl().i18n,
-    c = e.requiredFields || I()(t = []).call(t, (0, H.Z)(null != e && null !== (n = e.items) && void 0 !== n && n.length ? ["phonePrefix"] : []), ["phoneNumber"]),
-    l = O()(c).call(c, "phonePrefix") && !(null == e || null === (r = e.items) || void 0 === r || !r.length),
+    c = e.requiredFields || I()(t = []).call(t, (0, H.Z)(null != e && null != (n = e.items) && n.length ? ["phonePrefix"] : []), ["phoneNumber"]),
+    l = O()(c).call(c, "phonePrefix") && !(null == e || null == (r = e.items) || !r.length),
     u = O()(c).call(c, "phoneNumber"),
-    d = rV(f0(f0({
+    d = rV(f1(f1({
       i18n: s
     }, e), {}, {
       schema: c,
       defaultData: e.data,
-      rules: fQ,
-      formatters: fJ
+      rules: fJ,
+      formatters: fX
     })),
     p = d.handleChangeFor,
     h = d.data,
@@ -22672,7 +22666,7 @@ function f1(e) {
   }, _("phoneNumber"))))
 }
 
-function f2(e) {
+function f8(e) {
   var t, n, r, o, a, i, s, c, l, u, d, p, h, f = nl(),
     m = f.i18n,
     y = f.loadingContext,
@@ -22682,7 +22676,7 @@ function f2(e) {
     _ = (0, q.Z)(b, 2),
     k = _[0],
     C = _[1];
-  this.setStatus = C, this.showValidation = null == v || null === (h = v.current) || void 0 === h ? void 0 : h.triggerValidation;
+  this.setStatus = C, this.showValidation = null == v || null == (h = v.current) ? void 0 : h.triggerValidation;
   var Z = (n = (t = {
       allowedCountries: void 0 === g ? [] : g,
       loadingContext: y,
@@ -22712,11 +22706,11 @@ function f2(e) {
     }),
     w = Z.loadingStatus,
     S = Z.phonePrefixes;
-  return (0, ec.h)(li, {
+  return (0, ec.h)(ls, {
     status: w
   }, (0, ec.h)("div", {
     className: "adyen-checkout__mb-way"
-  }, (0, ec.h)(f1, (0, er.Z)({}, e, {
+  }, (0, ec.h)(f2, (0, er.Z)({}, e, {
     items: S,
     ref: v,
     onChange: function(t) {
@@ -22737,16 +22731,16 @@ function f2(e) {
     label: m.get("confirmPurchase")
   })))
 }
-f1.defaultProps = {
+f2.defaultProps = {
   phoneLabel: "telephoneNumber"
-}, f2.defaultProps = {
+}, f8.defaultProps = {
   onChange: function() {},
   phoneNumberKey: "mobileNumber",
   phoneNumberErrorKey: "mobileNumber.invalid"
 };
-var f8 = ["message"];
+var f4 = ["message"];
 
-function f4(e, t) {
+function f6(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -22757,19 +22751,19 @@ function f4(e, t) {
   return n
 }
 
-function f6(e) {
+function f5(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = f4(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = f6(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = f4(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = f6(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function f5(e) {
+function f3(e) {
   var t, n = this,
     r = nl(),
     o = r.i18n,
@@ -22817,12 +22811,12 @@ function f5(e) {
       C || (e.onActionHandled({
         componentType: e.type,
         actionDescription: "polling-started"
-      }), Z(!0)), p4(t, r, a).then(p7).catch(function(e) {
+      }), Z(!0)), p6(t, r, a).then(p9).catch(function(e) {
         var t = e.message,
-          n = (0, k.Z)(e, f8);
+          n = (0, k.Z)(e, f4);
         return {
           type: "network-error",
-          props: f6(f6({}, t && {
+          props: f5(f5({}, t && {
             message: o.get(t)
           }), n)
         }
@@ -22935,7 +22929,7 @@ function f5(e) {
     }
   })), (0, ec.h)("div", {
     className: "adyen-checkout__await__countdown"
-  }, W[0], "\xa0", (0, ec.h)(p8, {
+  }, W[0], "\xa0", (0, ec.h)(p4, {
     minutesFromNow: e.countdownTime,
     onTick: function(e) {
       F(e.percentage)
@@ -22945,7 +22939,7 @@ function f5(e) {
     }
   }), "\xa0", W[1])), e.url && (0, ec.h)("div", {
     className: "adyen-checkout__await__app-link"
-  }, (0, ec.h)(i8, null), (0, ec.h)(nu, {
+  }, (0, ec.h)(i4, null), (0, ec.h)(nu, {
     classNameModifiers: ["await"],
     onClick: function() {
       var t;
@@ -22955,7 +22949,7 @@ function f5(e) {
   })))
 }
 
-function f3(e, t) {
+function f7(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -22966,18 +22960,18 @@ function f3(e, t) {
   return n
 }
 
-function f7(e) {
+function f9(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = f3(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = f7(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = f3(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = f7(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-f5.defaultProps = {
+f3.defaultProps = {
   countdownTime: 15,
   onError: function() {},
   onComplete: function() {},
@@ -22989,7 +22983,7 @@ f5.defaultProps = {
   classNameModifiers: [],
   url: null
 };
-var f9 = function(e) {
+var me = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -23018,7 +23012,7 @@ var f9 = function(e) {
         n = void 0 === t ? {} : t,
         r = e.placeholders,
         o = void 0 === r ? {} : r;
-      return f7(f7({}, e), {}, {
+      return f9(f9({}, e), {}, {
         data: {
           phoneNumber: n.telephoneNumber || n.phoneNumber,
           phonePrefix: n.phonePrefix || "+351"
@@ -23033,9 +23027,9 @@ var f9 = function(e) {
     value: function() {
       var e;
       return {
-        paymentMethod: f7({
+        paymentMethod: f9({
           type: r.type
-        }, (null === (e = this.state.data) || void 0 === e ? void 0 : e.phoneNumber) && {
+        }, (null == (e = this.state.data) ? void 0 : e.phoneNumber) && {
           telephoneNumber: this.state.data.phonePrefix + this.state.data.phoneNumber
         })
       }
@@ -23054,13 +23048,13 @@ var f9 = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.paymentData ? (0, ec.h)(a3, {
+      return this.props.paymentData ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ia, {
+      }, (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(f5, {
+      }, (0, ec.h)(f3, {
         ref: function(t) {
           e.componentRef = t
         },
@@ -23078,11 +23072,11 @@ var f9 = function(e) {
         throttleTime: 6e4,
         throttleInterval: 1e4,
         onActionHandled: this.props.onActionHandled
-      }))) : (0, ec.h)(a3, {
+      }))) : (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(f2, (0, er.Z)({
+      }, (0, ec.h)(f8, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -23094,12 +23088,12 @@ var f9 = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(f9, "type", "mbway");
-var me = function(e) {
+(0, w.Z)(me, "type", "mbway");
+var mt = function(e) {
   return e.replace(/[^0-9]/g, "")
 };
 
-function mt(e) {
+function mn(e) {
   var t = this,
     n = nl().i18n,
     r = nT(),
@@ -23115,7 +23109,7 @@ function mt(e) {
         }
       },
       formatters: {
-        blikCode: me
+        blikCode: mt
       }
     }),
     a = o.handleChangeFor,
@@ -23167,7 +23161,7 @@ function mt(e) {
   }))
 }
 
-function mn(e, t) {
+function mr(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -23178,23 +23172,23 @@ function mn(e, t) {
   return n
 }
 
-function mr(e) {
+function mo(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mn(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mr(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mn(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mr(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-mt.defaultProps = {
+mn.defaultProps = {
   data: {
     blikCode: ""
   }
 };
-var mo = function(e) {
+var ma = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -23221,10 +23215,10 @@ var mo = function(e) {
     value: function() {
       var e, t = !!this.props.storedPaymentMethodId;
       return {
-        paymentMethod: mr(mr({
+        paymentMethod: mo(mo({
           type: r.type
         }, !t && {
-          blikCode: null === (e = this.state) || void 0 === e || null === (e = e.data) || void 0 === e ? void 0 : e.blikCode
+          blikCode: null == (e = this.state) || null == (e = e.data) ? void 0 : e.blikCode
         }), t && {
           storedPaymentMethodId: this.props.storedPaymentMethodId
         })
@@ -23239,13 +23233,13 @@ var mo = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.paymentData ? (0, ec.h)(a3, {
+      return this.props.paymentData ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ia, {
+      }, (0, ec.h)(ii, {
         srPanel: this.props.modules.srPanel
-      }, (0, ec.h)(f5, {
+      }, (0, ec.h)(f3, {
         ref: function(t) {
           e.componentRef = t
         },
@@ -23263,11 +23257,11 @@ var mo = function(e) {
         throttleTime: 6e4,
         throttleInterval: 1e4,
         onActionHandled: this.props.onActionHandled
-      }))) : (0, ec.h)(a3, {
+      }))) : (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.storedPaymentMethodId ? (0, ec.h)(sc, {
+      }, this.props.storedPaymentMethodId ? (0, ec.h)(sl, {
         name: this.displayName,
         amount: this.props.amount,
         payButton: this.payButton,
@@ -23275,7 +23269,7 @@ var mo = function(e) {
         ref: function(t) {
           e.componentRef = t
         }
-      }) : (0, ec.h)(mt, (0, er.Z)({
+      }) : (0, ec.h)(mn, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -23288,13 +23282,13 @@ var mo = function(e) {
   }]), r
 }();
 
-function ma(e) {
+function mi(e) {
   var t = e.reference,
     n = e.totalAmount,
     r = e.paymentMethodType,
     o = nl().i18n,
     a = nT();
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     paymentMethodType: r,
     introduction: o.get("bankTransfer.instructions"),
     imageUrl: a()(r),
@@ -23315,7 +23309,7 @@ function ma(e) {
   })
 }
 
-function mi(e) {
+function ms(e) {
   var t = nl().i18n,
     n = tX(!1),
     r = (0, q.Z)(n, 2),
@@ -23348,7 +23342,7 @@ function mi(e) {
     className: "adyen-checkout__bankTransfer"
   }, (0, ec.h)("p", {
     className: "adyen-checkout__bankTransfer__introduction"
-  }, t.get("bankTransfer.introduction")), (0, ec.h)(hN, {
+  }, t.get("bankTransfer.introduction")), (0, ec.h)(hx, {
     classNames: "adyen-checkout__bankTransfer__emailField",
     value: l.shopperEmail,
     errors: d.shopperEmail,
@@ -23360,7 +23354,7 @@ function mi(e) {
   }))
 }
 
-function ms(e, t) {
+function mc(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -23369,8 +23363,8 @@ function ms(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(mo, "type", "blik");
-var mc = function(e) {
+}(0, w.Z)(ma, "type", "blik");
+var ml = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -23412,9 +23406,9 @@ var mc = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = ms(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = mc(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = ms(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = mc(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -23430,21 +23424,21 @@ var mc = function(e) {
   }, {
     key: "render",
     value: function() {
-      return this.props.reference ? (0, ec.h)(a3, {
+      return this.props.reference ? (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(ma, (0, er.Z)({
+      }, (0, ec.h)(mi, (0, er.Z)({
         ref: this.handleRef
-      }, this.props))) : (0, ec.h)(a3, {
+      }, this.props))) : (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.showEmailAddress && (0, ec.h)(mi, (0, er.Z)({
+      }, this.props.showEmailAddress && (0, ec.h)(ms, (0, er.Z)({
         ref: this.handleRef
       }, this.props, {
         onChange: this.setState
-      })), this.props.showPayButton && (0, ec.h)(sc, (0, er.Z)({}, this.props, {
+      })), this.props.showPayButton && (0, ec.h)(sl, (0, er.Z)({}, this.props, {
         name: this.displayName,
         onSubmit: this.submit,
         payButton: this.payButton
@@ -23452,13 +23446,13 @@ var mc = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(mc, "type", "bankTransfer_IBAN"), (0, w.Z)(mc, "defaultProps", {
+(0, w.Z)(ml, "type", "bankTransfer_IBAN"), (0, w.Z)(ml, "defaultProps", {
   showPayButton: !0,
   showEmailAddress: !0
 });
-var ml = ["CA", "US"];
+var mu = ["CA", "US"];
 
-function mu(e, t) {
+function md(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -23469,19 +23463,19 @@ function mu(e, t) {
   return n
 }
 
-function md(e) {
+function mp(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mu(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = md(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mu(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = md(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var mp = function(e) {
-  (0, ea.Z)(r, ic);
+var mh = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -23505,17 +23499,17 @@ var mp = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return md(md({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
-        allowedCountries: ml,
+      return mp(mp({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+        allowedCountries: mu,
         personalDetailsRequiredFields: ["firstName", "lastName", "telephoneNumber", "shopperEmail"]
       })
     }
   }]), r
 }();
-(0, w.Z)(mp, "type", "affirm");
-var mh = {
+(0, w.Z)(mh, "type", "affirm");
+var mf = {
     socialSecurityNumber: {
-      validate: cY,
+      validate: cG,
       errorMessage: "",
       modes: ["blur"]
     },
@@ -23527,13 +23521,13 @@ var mh = {
       modes: ["blur"]
     }
   },
-  mf = {
+  mm = {
     socialSecurityNumber: function(e) {
-      return cW(e)
+      return cY(e)
     }
   };
 
-function mm(e) {
+function my(e) {
   var t, n = e.name,
     r = e.data,
     o = e.personalDetailsRequired,
@@ -23546,8 +23540,8 @@ function mm(e) {
     d = rV({
       schema: u,
       defaultData: r,
-      rules: mh,
-      formatters: mf
+      rules: mf,
+      formatters: mm
     }),
     p = d.handleChangeFor,
     h = d.triggerValidation,
@@ -23580,7 +23574,7 @@ function mm(e) {
     style: i || o ? null : {
       display: "none"
     }
-  }, o && (0, ec.h)(hx, {
+  }, o && (0, ec.h)(hP, {
     i18n: l,
     data: m,
     handleChangeFor: p,
@@ -23593,7 +23587,7 @@ function mm(e) {
   }))
 }
 
-function my(e, t) {
+function mv(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -23604,19 +23598,19 @@ function my(e, t) {
   return n
 }
 
-function mv(e) {
+function mg(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = my(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mv(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = my(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mv(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var mg = function(e) {
-  (0, ea.Z)(r, hn);
+var mb = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -23645,7 +23639,7 @@ var mg = function(e) {
   }, {
     key: "formatProps",
     value: function(e) {
-      return mv({
+      return mg({
         copyBtn: !0,
         introduction: "pix.instructions"
       }, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e))
@@ -23659,7 +23653,7 @@ var mg = function(e) {
         r = t.lastName,
         o = t.socialSecurityNumber,
         a = void 0 === o ? "" : o;
-      return mv(mv({
+      return mg(mg({
         paymentMethod: {
           type: this.props.type || this.constructor.type
         }
@@ -23669,18 +23663,18 @@ var mg = function(e) {
           lastName: r
         }
       }), a && {
-        socialSecurityNumber: cz(a)
+        socialSecurityNumber: cW(a)
       })
     }
   }, {
     key: "render",
     value: function() {
       var e = this;
-      return this.props.paymentData ? this.renderQRCode() : (0, ec.h)(a3, {
+      return this.props.paymentData ? this.renderQRCode() : (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(mm, (0, er.Z)({
+      }, (0, ec.h)(my, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -23694,19 +23688,19 @@ var mg = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(mg, "type", "pix"), (0, w.Z)(mg, "defaultProps", mv({
+(0, w.Z)(mb, "type", "pix"), (0, w.Z)(mb, "defaultProps", mg({
   showPayButton: !1,
   personalDetailsRequired: !1,
   countdownTime: 15,
   delay: 2e3
-}, hn.defaultProps));
-var mb = /^(\d){1,8}$/,
-  m_ = /^(\d){6}$/,
-  mk = {
+}, hr.defaultProps));
+var m_ = /^(\d){1,8}$/,
+  mk = /^(\d){6}$/,
+  mC = {
     bankAccountNumber: {
       modes: ["blur", "input"],
       validate: function(e) {
-        return !!e && mb.test(e)
+        return !!e && m_.test(e)
       }
     },
     bankLocationId: [{
@@ -23717,7 +23711,7 @@ var mb = /^(\d){1,8}$/,
     }, {
       modes: ["blur"],
       validate: function(e) {
-        return !!e && m_.test(e)
+        return !!e && mk.test(e)
       }
     }],
     amountConsentCheckbox: {
@@ -23740,22 +23734,22 @@ var mb = /^(\d){1,8}$/,
       }
     }
   },
-  mC = {
-    bankAccountNumber: me,
-    bankLocationId: me
+  mZ = {
+    bankAccountNumber: mt,
+    bankLocationId: mt
   },
-  mZ = "enter-data",
-  mw = "confirm-data";
+  mw = "enter-data",
+  mS = "confirm-data";
 
-function mS(e) {
+function mN(e) {
   var t, n, r, o = this,
     a = nl().i18n,
     i = nT(),
     s = rV({
       schema: ["holderName", "bankAccountNumber", "bankLocationId", "shopperEmail", "amountConsentCheckbox", "accountConsentCheckbox"],
       defaultData: e.data,
-      formatters: mC,
-      rules: mk
+      formatters: mZ,
+      rules: mC
     }),
     c = s.handleChangeFor,
     l = s.triggerValidation,
@@ -23763,7 +23757,7 @@ function mS(e) {
     d = s.valid,
     p = s.errors,
     h = s.isValid,
-    f = tX(mZ),
+    f = tX(mw),
     m = (0, q.Z)(f, 2),
     y = m[0],
     v = m[1];
@@ -23777,9 +23771,9 @@ function mS(e) {
   }, [u, d, p, h]), (0, ec.h)("div", {
     className: ep()({
       "adyen-checkout__bacs": !0,
-      "adyen-checkout__bacs--confirm": y === mw || "loading" === y
+      "adyen-checkout__bacs--confirm": y === mS || "loading" === y
     })
-  }, e.showFormInstruction && (0, ec.h)(a1, null), y == mw && (0, ec.h)("div", {
+  }, e.showFormInstruction && (0, ec.h)(a2, null), y == mS && (0, ec.h)("div", {
     className: ep()({
       "adyen-checkout__bacs--edit": !0,
       "adyen-checkout__bacs--edit-dropin": e.isDropin
@@ -23791,12 +23785,12 @@ function mS(e) {
     "aria-label": a.get("edit"),
     readonly: !0,
     onClick: function() {
-      return o.setStatus(mZ)
+      return o.setStatus(mw)
     }
   })), (0, ec.h)(r_, {
     className: ep()({
       "adyen-checkout__bacs--holder-name": !0,
-      "adyen-checkout__field--inactive": y === mw || "loading" === y
+      "adyen-checkout__field--inactive": y === mS || "loading" === y
     }),
     label: a.get("bacs.accountHolderName"),
     errorMessage: !!p.holderName && a.get("bacs.accountHolderName.invalid"),
@@ -23812,7 +23806,7 @@ function mS(e) {
     "aria-label": a.get("bacs.accountHolderName"),
     "aria-required": "true",
     required: !0,
-    readonly: y === mw || "loading" === y,
+    readonly: y === mS || "loading" === y,
     autocorrect: "off",
     onBlur: c("holderName", "blur"),
     onInput: c("holderName", "input")
@@ -23823,7 +23817,7 @@ function mS(e) {
     label: a.get("bacs.accountNumber"),
     className: ep()({
       "adyen-checkout__bacs--bank-account-number": !0,
-      "adyen-checkout__field--inactive": y === mw || "loading" === y
+      "adyen-checkout__field--inactive": y === mS || "loading" === y
     }),
     classNameModifiers: ["col-70"],
     isValid: d.bankAccountNumber,
@@ -23837,7 +23831,7 @@ function mS(e) {
     "aria-label": a.get("bacs.accountNumber"),
     "aria-required": "true",
     required: !0,
-    readonly: y === mw || "loading" === y,
+    readonly: y === mS || "loading" === y,
     autocorrect: "off",
     onBlur: c("bankAccountNumber", "blur"),
     onInput: c("bankAccountNumber", "input")
@@ -23846,7 +23840,7 @@ function mS(e) {
     label: a.get("bacs.bankLocationId"),
     className: ep()({
       "adyen-checkout__bacs--bank-location-id": !0,
-      "adyen-checkout__field--inactive": y === mw || "loading" === y
+      "adyen-checkout__field--inactive": y === mS || "loading" === y
     }),
     classNameModifiers: ["col-30"],
     isValid: d.bankLocationId,
@@ -23860,7 +23854,7 @@ function mS(e) {
     "aria-label": a.get("bacs.bankLocationId"),
     "aria-required": "true",
     required: !0,
-    readonly: y === mw || "loading" === y,
+    readonly: y === mS || "loading" === y,
     autocorrect: "off",
     onBlur: c("bankLocationId", "blur"),
     onInput: c("bankLocationId", "input")
@@ -23869,7 +23863,7 @@ function mS(e) {
     label: a.get("shopperEmail"),
     className: ep()({
       "adyen-checkout__bacs--shopper-email": !0,
-      "adyen-checkout__field--inactive": y === mw || "loading" === y
+      "adyen-checkout__field--inactive": y === mS || "loading" === y
     }),
     isValid: d.shopperEmail,
     name: "emailAddress",
@@ -23885,18 +23879,18 @@ function mS(e) {
     "aria-label": a.get("shopperEmail"),
     "aria-required": "true",
     required: !0,
-    readonly: y === mw || "loading" === y,
+    readonly: y === mS || "loading" === y,
     autocorrect: "off",
     onInput: c("shopperEmail", "input"),
     onBlur: c("shopperEmail", "blur")
-  })), y === mZ && (0, ec.h)(aw, {
+  })), y === mw && (0, ec.h)(aw, {
     classNameModifiers: ["amountConsentCheckbox"],
     errorMessage: !!p.amountConsentCheckbox,
     label: a.get("bacs.consent.amount"),
     onChange: c("amountConsentCheckbox"),
     checked: !!u.amountConsentCheckbox,
     i18n: a
-  }), y === mZ && (0, ec.h)(aw, {
+  }), y === mw && (0, ec.h)(aw, {
     classNameModifiers: ["accountConsentCheckbox"],
     errorMessage: !!p.accountConsentCheckbox,
     label: a.get("bacs.consent.account"),
@@ -23905,25 +23899,25 @@ function mS(e) {
     i18n: a
   }), e.showPayButton && e.payButton({
     status: y,
-    label: y === mZ ? a.get("continue") : I()(t = "".concat(a.get("bacs.confirm"), " ")).call(t, null !== (n = e.amount) && void 0 !== n && n.value && null !== (r = e.amount) && void 0 !== r && r.currency ? a.amount(e.amount.value, e.amount.currency) : ""),
+    label: y === mw ? a.get("continue") : I()(t = "".concat(a.get("bacs.confirm"), " ")).call(t, null != (n = e.amount) && n.value && null != (r = e.amount) && r.currency ? a.amount(e.amount.value, e.amount.currency) : ""),
     icon: i({
       imageFolder: "components/"
     })("lock"),
     onClick: function() {
-      return h ? y === mZ ? o.setStatus(mw) : y === mw ? e.onSubmit() : void 0 : o.showValidation()
+      return h ? y === mw ? o.setStatus(mS) : y === mS ? e.onSubmit() : void 0 : o.showValidation()
     }
   }))
 }
-mS.defaultProps = {
+mN.defaultProps = {
   data: {},
   placeholders: {}
 };
-var mN = function(e) {
+var mx = function(e) {
   var t = nl().i18n,
     n = nT(),
     r = e.url,
     o = e.paymentMethodType;
-  return (0, ec.h)(dP, {
+  return (0, ec.h)(dA, {
     paymentMethodType: o,
     introduction: t.get("bacs.result.introduction"),
     imageUrl: n()(o),
@@ -23932,7 +23926,7 @@ var mN = function(e) {
   })
 };
 
-function mx(e, t) {
+function mP(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -23943,18 +23937,18 @@ function mx(e, t) {
   return n
 }
 
-function mP(e) {
+function mA(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mx(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mP(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mx(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mP(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var mA = function(e) {
+var mR = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -23988,17 +23982,17 @@ var mA = function(e) {
     key: "formatData",
     value: function() {
       var e, t, n, o;
-      return mP({
-        paymentMethod: mP(mP(mP({
+      return mA({
+        paymentMethod: mA(mA(mA({
           type: r.type
-        }, (null === (e = this.state.data) || void 0 === e ? void 0 : e.holderName) && {
+        }, (null == (e = this.state.data) ? void 0 : e.holderName) && {
           holderName: this.state.data.holderName
-        }), (null === (t = this.state.data) || void 0 === t ? void 0 : t.bankAccountNumber) && {
+        }), (null == (t = this.state.data) ? void 0 : t.bankAccountNumber) && {
           bankAccountNumber: this.state.data.bankAccountNumber
-        }), (null === (n = this.state.data) || void 0 === n ? void 0 : n.bankLocationId) && {
+        }), (null == (n = this.state.data) ? void 0 : n.bankLocationId) && {
           bankLocationId: this.state.data.bankLocationId
         })
-      }, (null === (o = this.state.data) || void 0 === o ? void 0 : o.shopperEmail) && {
+      }, (null == (o = this.state.data) ? void 0 : o.shopperEmail) && {
         shopperEmail: this.state.data.shopperEmail
       })
     }
@@ -24011,18 +24005,18 @@ var mA = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, this.props.url ? (0, ec.h)(mN, {
+      }, this.props.url ? (0, ec.h)(mx, {
         ref: function(t) {
           e.componentRef = t
         },
         icon: this.icon,
         url: this.props.url,
         paymentMethodType: this.props.paymentMethodType
-      }) : (0, ec.h)(mS, (0, er.Z)({
+      }) : (0, ec.h)(mN, (0, er.Z)({
         ref: function(t) {
           e.componentRef = t
         }
@@ -24034,10 +24028,10 @@ var mA = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(mA, "type", "directdebit_GB"), (0, w.Z)(mA, "defaultProps", {
+(0, w.Z)(mR, "type", "directdebit_GB"), (0, w.Z)(mR, "defaultProps", {
   showFormInstruction: !0
 });
-var mR = function(e) {
+var mF = function(e) {
     (0, ea.Z)(r, nk);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -24072,7 +24066,7 @@ var mR = function(e) {
     }, {
       key: "render",
       value: function() {
-        return (0, ec.h)(a3, {
+        return (0, ec.h)(a7, {
           i18n: this.props.i18n,
           loadingContext: this.props.loadingContext,
           resources: this.resources
@@ -24084,7 +24078,7 @@ var mR = function(e) {
       }
     }]), r
   }(),
-  mF = function(e) {
+  mO = function(e) {
     (0, ea.Z)(r, nk);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -24119,11 +24113,11 @@ var mR = function(e) {
     }, {
       key: "render",
       value: function() {
-        return (0, ec.h)(a3, {
+        return (0, ec.h)(a7, {
           i18n: this.props.i18n,
           loadingContext: this.props.loadingContext,
           resources: this.resources
-        }, this.props.showFormInstruction && (0, ec.h)(a1, null), (0, ec.h)(oi, (0, er.Z)({
+        }, this.props.showFormInstruction && (0, ec.h)(a2, null), (0, ec.h)(oi, (0, er.Z)({
           setComponentRef: this.setComponentRef
         }, this.props, {
           onChange: this.setState
@@ -24131,16 +24125,16 @@ var mR = function(e) {
       }
     }]), r
   }();
-(0, w.Z)(mF, "defaultProps", {
+(0, w.Z)(mO, "defaultProps", {
   showFormInstruction: !0
 });
-var mO = ["sdkData", "paymentMethodType", "payButton"];
+var mE = ["sdkData", "paymentMethodType", "payButton"];
 
-function mE(e) {
+function mI(e) {
   var t = e.sdkData;
   e.paymentMethodType;
   var n = e.payButton,
-    r = (0, k.Z)(e, mO),
+    r = (0, k.Z)(e, mE),
     o = t8(null),
     a = tX("ready"),
     i = (0, q.Z)(a, 2),
@@ -24165,7 +24159,7 @@ function mE(e) {
         !e.show_form || e.error ? l() : r.onLoaded()
       })
     };
-    var e = new iF("https://x.klarnacdn.net/kp/lib/v1/api.js");
+    var e = new iO("https://x.klarnacdn.net/kp/lib/v1/api.js");
     return e.load(),
       function() {
         e.remove()
@@ -24199,7 +24193,7 @@ function mE(e) {
   })) : null
 }
 
-function mI(e, t) {
+function mM(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24210,19 +24204,19 @@ function mI(e, t) {
   return n
 }
 
-function mM(e) {
+function mT(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mI(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mM(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mI(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mM(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
 
-function mT(e) {
+function mB(e) {
   var t, n = tX({
       sdkData: e.sdkData,
       paymentMethodType: e.paymentMethodType,
@@ -24235,7 +24229,7 @@ function mT(e) {
     s = (0, q.Z)(i, 2),
     c = s[0],
     l = s[1];
-  return this.setAction = a, this.setStatus = l, o.sdkData ? (0, ec.h)(mE, {
+  return this.setAction = a, this.setStatus = l, o.sdkData ? (0, ec.h)(mI, {
     sdkData: o.sdkData,
     paymentMethodType: o.paymentMethodType,
     paymentData: o.paymentData,
@@ -24243,7 +24237,7 @@ function mT(e) {
     onComplete: e.onComplete,
     onError: e.onError,
     onLoaded: e.onLoaded
-  }) : e.showPayButton ? e.payButton(mM(mM({}, e), {}, {
+  }) : e.showPayButton ? e.payButton(mT(mT({}, e), {}, {
     status: c,
     disabled: "loading" === c,
     classNameModifiers: ["standalone"],
@@ -24251,7 +24245,7 @@ function mT(e) {
   })) : null
 }
 
-function mB(e, t) {
+function mD(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24261,7 +24255,7 @@ function mB(e, t) {
   }
   return n
 }
-var mD = function(e) {
+var mL = function(e) {
   (0, ea.Z)(r, nk);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -24301,9 +24295,9 @@ var mD = function(e) {
         paymentMethod: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n, r, o = null != arguments[t] ? arguments[t] : {};
-            t % 2 ? N()(n = mB(Object(o), !0)).call(n, function(t) {
+            t % 2 ? N()(n = mD(Object(o), !0)).call(n, function(t) {
               (0, w.Z)(e, t, o[t])
-            }) : m() ? v()(e, m()(o)) : N()(r = mB(Object(o))).call(r, function(t) {
+            }) : m() ? v()(e, m()(o)) : N()(r = mD(Object(o))).call(r, function(t) {
               b()(e, t, h()(o, t))
             })
           }
@@ -24330,11 +24324,11 @@ var mD = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
-      }, (0, ec.h)(mT, (0, er.Z)({}, this.props, {
+      }, (0, ec.h)(mB, (0, er.Z)({}, this.props, {
         ref: function(t) {
           e.componentRef = t
         },
@@ -24349,11 +24343,11 @@ var mD = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(mD, "type", "klarna"), (0, w.Z)(mD, "defaultProps", {
+(0, w.Z)(mL, "type", "klarna"), (0, w.Z)(mL, "defaultProps", {
   useKlarnaWidget: !1
 });
-var mL = function(e) {
-  (0, ea.Z)(r, ds);
+var mV = function(e) {
+  (0, ea.Z)(r, dc);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -24402,11 +24396,11 @@ var mL = function(e) {
     }
   }]), r
 }();
-(0, w.Z)(mL, "type", "twint"), (0, w.Z)(mL, "defaultProps", {
-  type: mL.type,
+(0, w.Z)(mV, "type", "twint"), (0, w.Z)(mV, "defaultProps", {
+  type: mV.type,
   showPayButton: !0
 });
-var mV = function(e) {
+var mj = function(e) {
   var t = e.i18n,
     n = e.sfpState,
     r = e.focusedElement,
@@ -24422,9 +24416,9 @@ var mV = function(e) {
     dir: "ltr",
     name: "encryptedExpiryDate",
     errorVisibleToScreenReader: !1
-  }, (0, ec.h)(ll, {
+  }, (0, ec.h)(lu, {
     encryptedFieldType: "encryptedExpiryDate",
-    className: ep()("adyen-checkout__input", "adyen-checkout__input--small", "adyen-checkout__card__exp-date__input", [lc["adyen-checkout__input"]], {
+    className: ep()("adyen-checkout__input", "adyen-checkout__input--small", "adyen-checkout__card__exp-date__input", [ll["adyen-checkout__input"]], {
       "adyen-checkout__input--error": n.errors.encryptedExpiryDate,
       "adyen-checkout__input--focus": "encryptedExpiryDate" === r,
       "adyen-checkout__input--valid": !!n.valid.encryptedExpiryMonth && !!n.valid.encryptedExpiryYear
@@ -24432,7 +24426,7 @@ var mV = function(e) {
   }))
 };
 
-function mj(e, t) {
+function mU(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24443,34 +24437,34 @@ function mj(e, t) {
   return n
 }
 
-function mU(e) {
+function mq(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mj(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mU(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mj(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mU(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var mq = function(e) {
+var mH = function(e) {
   var t = e.setRootNode,
-    n = mU(mU({}, e), {}, {
+    n = mq(mq({}, e), {}, {
       label: e.i18n.get("creditCard.cvcField.title")
     });
   return (0, ec.h)("div", {
     ref: t
-  }, (0, ec.h)(h$, (0, er.Z)({}, e, {
+  }, (0, ec.h)(hQ, (0, er.Z)({}, e, {
     classNameModifiers: ["100"]
   })), (0, ec.h)("div", {
     className: "adyen-checkout__field-wrapper"
-  }, (0, ec.h)(mV, e), (0, ec.h)(hQ, (0, er.Z)({}, n, {
+  }, (0, ec.h)(mj, e), (0, ec.h)(hJ, (0, er.Z)({}, n, {
     classNameModifiers: ["50"]
   }))))
 };
 
-function mH(e, t) {
+function mK(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24481,19 +24475,19 @@ function mH(e, t) {
   return n
 }
 
-function mK(e) {
+function mz(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mH(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mK(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mH(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mK(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var mz = function(e) {
-  (0, ea.Z)(r, h1);
+var mW = function(e) {
+  (0, ea.Z)(r, h2);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -24512,16 +24506,16 @@ var mz = function(e) {
   });
 
   function r(e) {
-    return (0, C.Z)(this, r), n.call(this, mK(mK({}, e), {}, {
+    return (0, C.Z)(this, r), n.call(this, mz(mz({}, e), {}, {
       pinRequired: !0,
       expiryDateRequired: !0,
-      fieldsLayoutComponent: mq
+      fieldsLayoutComponent: mH
     }))
   }
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return mK({
+      return mz({
         brand: e.type
       }, e)
     }
@@ -24533,17 +24527,17 @@ var mz = function(e) {
         paymentMethod: {
           type: this.constructor.type,
           brand: this.props.brand,
-          encryptedCardNumber: null === (e = this.state.data) || void 0 === e ? void 0 : e.encryptedCardNumber,
-          encryptedSecurityCode: null === (t = this.state.data) || void 0 === t ? void 0 : t.encryptedSecurityCode,
-          encryptedExpiryMonth: null === (n = this.state.data) || void 0 === n ? void 0 : n.encryptedExpiryMonth,
-          encryptedExpiryYear: null === (r = this.state.data) || void 0 === r ? void 0 : r.encryptedExpiryYear
+          encryptedCardNumber: null == (e = this.state.data) ? void 0 : e.encryptedCardNumber,
+          encryptedSecurityCode: null == (t = this.state.data) ? void 0 : t.encryptedSecurityCode,
+          encryptedExpiryMonth: null == (n = this.state.data) ? void 0 : n.encryptedExpiryMonth,
+          encryptedExpiryYear: null == (r = this.state.data) ? void 0 : r.encryptedExpiryYear
         }
       }
     }
   }]), r
 }();
 
-function mW(e, t) {
+function mY(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24554,19 +24548,19 @@ function mW(e, t) {
   return n
 }
 
-function mY(e) {
+function mG(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mW(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mY(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mW(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mY(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(mz, "type", "mealVoucher_FR");
-var mG = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(mW, "type", "mealVoucher_FR");
+var m$ = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -24590,26 +24584,26 @@ var mG = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return mY(mY({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return mG(mG({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }, {
     key: "formatData",
     value: function() {
-      return mY(mY({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatData", this).call(this)), {}, {
+      return mG(mG({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatData", this).call(this)), {}, {
         browserInfo: this.browserInfo
       })
     }
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }]), r
 }();
 
-function m$(e, t) {
+function mQ(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24620,19 +24614,19 @@ function m$(e, t) {
   return n
 }
 
-function mQ(e) {
+function mJ(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = m$(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = mQ(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = m$(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = mQ(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(mG, "type", "onlinebanking_IN");
-var mJ = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(m$, "type", "onlinebanking_IN");
+var mX = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -24651,14 +24645,14 @@ var mJ = function(e) {
   });
 
   function r(e) {
-    return (0, C.Z)(this, r), n.call(this, mQ(mQ({}, e), {}, {
+    return (0, C.Z)(this, r), n.call(this, mJ(mJ({}, e), {}, {
       termsAndConditions: r.termsAndConditions
     }))
   }
   return (0, Z.Z)(r)
 }();
 
-function mX(e, t) {
+function m0(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24669,25 +24663,25 @@ function mX(e, t) {
   return n
 }
 
-function m0(e) {
+function m1(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = mX(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = m0(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = mX(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = m0(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(mJ, "type", "onlineBanking_PL"), (0, w.Z)(mJ, "disclaimerUrlsMap", {
+}(0, w.Z)(mX, "type", "onlineBanking_PL"), (0, w.Z)(mX, "disclaimerUrlsMap", {
   regulation: "https://www.przelewy24.pl/regulamin",
   obligation: "https://www.przelewy24.pl/obowiazek-informacyjny-rodo-platnicy"
-}), (0, w.Z)(mJ, "termsAndConditions", {
+}), (0, w.Z)(mX, "termsAndConditions", {
   translationKey: "onlineBankingPL.termsAndConditions",
-  urls: [mJ.disclaimerUrlsMap.regulation, mJ.disclaimerUrlsMap.obligation]
+  urls: [mX.disclaimerUrlsMap.regulation, mX.disclaimerUrlsMap.obligation]
 });
-var m1 = function(e) {
-  (0, ea.Z)(r, ic);
+var m2 = function(e) {
+  (0, ea.Z)(r, il);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -24711,18 +24705,18 @@ var m1 = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return m0(m0({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, m0(m0({}, e), {
+      return m1(m1({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, m1(m1({}, e), {
         visibility: {
           bankAccount: "editable"
         }
       }))), {}, {
-        allowedCountries: e.countryCode ? [e.countryCode] : h9
+        allowedCountries: e.countryCode ? [e.countryCode] : fe
       })
     }
   }]), r
 }();
-(0, w.Z)(m1, "type", "ratepay_directdebit");
-var m2 = {
+(0, w.Z)(m2, "type", "ratepay_directdebit");
+var m8 = {
     virtualPaymentAddress: {
       validate: function(e) {
         return !!e && e.length > 0
@@ -24738,11 +24732,11 @@ var m2 = {
       modes: ["blur"]
     }
   },
-  m8 = function(e) {
+  m4 = function(e) {
     var t = rV({
         schema: ["virtualPaymentAddress"],
         defaultData: e.data,
-        rules: m2
+        rules: m8
       }),
       n = t.handleChangeFor,
       r = t.triggerValidation,
@@ -24781,7 +24775,7 @@ var m2 = {
     }))
   };
 
-function m4(e) {
+function m6(e) {
   var t, n = e.classNameModifiers,
     r = e.selectedValue,
     o = e.disabled,
@@ -24812,19 +24806,19 @@ function m4(e) {
     }, o), t)
   })) : null
 }
-var m6 = ((r = {}).Vpa = "vpa", r.QrCode = "qrCode", r),
-  m5 = {
+var m5 = ((r = {}).Vpa = "vpa", r.QrCode = "qrCode", r),
+  m3 = {
     ButtonId: {
-      VPA: "upi-button-".concat(m6.Vpa),
-      QR: "upi-button-".concat(m6.QrCode)
+      VPA: "upi-button-".concat(m5.Vpa),
+      QR: "upi-button-".concat(m5.QrCode)
     },
     AreaId: {
-      VPA: "upi-area-".concat(m6.Vpa),
-      QR: "upi-area-".concat(m6.QrCode)
+      VPA: "upi-area-".concat(m5.Vpa),
+      QR: "upi-area-".concat(m5.QrCode)
     }
   };
 
-function m3(e) {
+function m7(e) {
   var t = e.defaultMode,
     n = e.onChange,
     r = e.onUpdateMode,
@@ -24857,33 +24851,33 @@ function m3(e) {
     }, [r]);
   return (0, ec.h)(ec.HY, null, (0, ec.h)("p", {
     className: "adyen-checkout_upi-mode-selection-text"
-  }, i.get("upi.modeSelection")), (0, ec.h)(m4, {
+  }, i.get("upi.modeSelection")), (0, ec.h)(m6, {
     onChange: k,
     selectedValue: g,
     disabled: "loading" === f,
     classNameModifiers: ["upi-margin-bottom"],
     options: [{
-      label: uZ() ? "VPA" : "Virtual Payment Address",
-      value: m6.Vpa,
+      label: uw() ? "VPA" : "Virtual Payment Address",
+      value: m5.Vpa,
       htmlProps: {
-        id: m5.ButtonId.VPA,
-        "aria-expanded": g === m6.Vpa,
-        "aria-controls": m5.AreaId.VPA
+        id: m3.ButtonId.VPA,
+        "aria-expanded": g === m5.Vpa,
+        "aria-controls": m3.AreaId.VPA
       }
     }, {
       label: "QR Code",
-      value: m6.QrCode,
+      value: m5.QrCode,
       htmlProps: {
-        id: m5.ButtonId.QR,
-        "aria-expanded": g === m6.QrCode,
-        "aria-controls": m5.AreaId.QR
+        id: m3.ButtonId.QR,
+        "aria-expanded": g === m5.QrCode,
+        "aria-controls": m3.AreaId.QR
       }
     }]
-  }), g === m6.Vpa ? (0, ec.h)("div", {
-    id: m5.AreaId.VPA,
-    "aria-labelledby": m5.ButtonId.VPA,
+  }), g === m5.Vpa ? (0, ec.h)("div", {
+    id: m3.AreaId.VPA,
+    "aria-labelledby": m3.ButtonId.VPA,
     role: "region"
-  }, (0, ec.h)(m8, {
+  }, (0, ec.h)(m4, {
     disabled: "loading" === f,
     onChange: n,
     onSetInputHandlers: _
@@ -24891,8 +24885,8 @@ function m3(e) {
     label: i.get("continue"),
     status: f
   })) : (0, ec.h)("div", {
-    id: m5.AreaId.QR,
-    "aria-labelledby": m5.ButtonId.QR,
+    id: m3.AreaId.QR,
+    "aria-labelledby": m3.ButtonId.QR,
     role: "region"
   }, a && o({
     label: i.get("generateQRCode"),
@@ -24903,7 +24897,7 @@ function m3(e) {
   })))
 }
 
-function m7(e, t) {
+function m9(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -24913,8 +24907,8 @@ function m7(e, t) {
   }
   return n
 }
-var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
-  ye = function(e) {
+var ye = ((o = ye || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
+  yt = function(e) {
     (0, ea.Z)(r, nk);
     var t, n = (t = function() {
       if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -24938,7 +24932,7 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
       (0, C.Z)(this, r);
       for (var o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
       return t = n.call.apply(n, I()(e = [this]).call(e, a)), (0, w.Z)((0, eo.Z)(t), "useQrCodeVariant", void 0), (0, w.Z)((0, eo.Z)(t), "onUpdateMode", function(e) {
-        e === m6.QrCode ? (t.useQrCodeVariant = !0, t.setState({
+        e === m5.QrCode ? (t.useQrCodeVariant = !0, t.setState({
           data: {},
           valid: {},
           errors: {},
@@ -24959,15 +24953,15 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
           paymentMethod: function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n, r, o = null != arguments[t] ? arguments[t] : {};
-              t % 2 ? N()(n = m7(Object(o), !0)).call(n, function(t) {
+              t % 2 ? N()(n = m9(Object(o), !0)).call(n, function(t) {
                 (0, w.Z)(e, t, o[t])
-              }) : m() ? v()(e, m()(o)) : N()(r = m7(Object(o))).call(r, function(t) {
+              }) : m() ? v()(e, m()(o)) : N()(r = m9(Object(o))).call(r, function(t) {
                 b()(e, t, h()(o, t))
               })
             }
             return e
           }({
-            type: this.useQrCodeVariant ? m9.UpiQr : m9.UpiCollect
+            type: this.useQrCodeVariant ? ye.UpiQr : ye.UpiCollect
           }, e && !this.useQrCodeVariant && {
             virtualPaymentAddress: e
           })
@@ -24979,13 +24973,13 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
         var t = this;
         switch (e) {
           case "qrCode":
-            return (0, ec.h)(he, (0, er.Z)({
+            return (0, ec.h)(ht, (0, er.Z)({
               ref: function(e) {
                 t.componentRef = e
               }
             }, this.props, {
               qrCodeData: this.props.qrCodeData ? encodeURIComponent(this.props.qrCodeData) : null,
-              type: m9.UpiQr,
+              type: ye.UpiQr,
               brandLogo: this.props.brandLogo || this.icon,
               onComplete: this.onComplete,
               introduction: this.props.i18n.get("upi.qrCodeWaitingMessage"),
@@ -24993,7 +24987,7 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
               onActionHandled: this.props.onActionHandled
             }));
           case "await":
-            return (0, ec.h)(f5, {
+            return (0, ec.h)(f3, {
               ref: function(e) {
                 t.componentRef = e
               },
@@ -25002,7 +24996,7 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
               paymentData: this.props.paymentData,
               onComplete: this.onComplete,
               brandLogo: this.icon,
-              type: m9.UpiCollect,
+              type: ye.UpiCollect,
               messageText: this.props.i18n.get("upi.vpaWaitingMessage"),
               awaitText: this.props.i18n.get("await.waitForConfirmation"),
               showCountdownTimer: !0,
@@ -25010,7 +25004,7 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
               onActionHandled: this.props.onActionHandled
             });
           default:
-            return (0, ec.h)(m3, {
+            return (0, ec.h)(m7, {
               ref: function(e) {
                 t.componentRef = e
               },
@@ -25026,18 +25020,18 @@ var m9 = ((o = m9 || {}).UpiCollect = "upi_collect", o.UpiQr = "upi_qr", o),
       key: "render",
       value: function() {
         var e = this.props.type;
-        return (0, ec.h)(a3, {
+        return (0, ec.h)(a7, {
           i18n: this.props.i18n,
           loadingContext: this.props.loadingContext,
           resources: this.resources
-        }, (0, ec.h)(ia, {
+        }, (0, ec.h)(ii, {
           srPanel: this.props.modules.srPanel
         }, this.renderContent(e)))
       }
     }]), r
   }();
 
-function yt(e, t) {
+function yn(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25048,21 +25042,21 @@ function yt(e, t) {
   return n
 }
 
-function yn(e) {
+function yr(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yt(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yn(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yt(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yn(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(ye, "type", "upi"), (0, w.Z)(ye, "defaultProps", {
-  defaultMode: m6.Vpa
+}(0, w.Z)(yt, "type", "upi"), (0, w.Z)(yt, "defaultProps", {
+  defaultMode: m5.Vpa
 });
-var yr = function(e) {
-  (0, ea.Z)(r, sd);
+var yo = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25086,26 +25080,26 @@ var yr = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return yn(yn({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return yr(yr({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1
       })
     }
   }, {
     key: "formatData",
     value: function() {
-      return yn(yn({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatData", this).call(this)), {}, {
+      return yr(yr({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatData", this).call(this)), {}, {
         browserInfo: this.browserInfo
       })
     }
   }, {
     key: "browserInfo",
     get: function() {
-      return ig()
+      return ib()
     }
   }]), r
 }();
 
-function yo(e, t) {
+function ya(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25116,19 +25110,19 @@ function yo(e, t) {
   return n
 }
 
-function ya(e) {
+function yi(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yo(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = ya(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yo(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = ya(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(yr, "type", "wallet_IN");
-var yi = function(e) {
-  (0, ea.Z)(r, sd);
+}(0, w.Z)(yo, "type", "wallet_IN");
+var ys = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25152,7 +25146,7 @@ var yi = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return ya(ya({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return yi(yi({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1,
         termsAndConditions: r.termsAndConditions
       })
@@ -25161,12 +25155,12 @@ var yi = function(e) {
     key: "icon",
     get: function() {
       var e;
-      return null !== (e = this.props.icon) && void 0 !== e ? e : this.resources.getImage()("bankTransfer_IBAN")
+      return null != (e = this.props.icon) ? e : this.resources.getImage()("bankTransfer_IBAN")
     }
   }]), r
 }();
 
-function ys(e, t) {
+function yc(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25177,22 +25171,22 @@ function ys(e, t) {
   return n
 }
 
-function yc(e) {
+function yl(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = ys(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yc(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = ys(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yc(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(yi, "type", "onlineBanking_CZ"), (0, w.Z)(yi, "termsAndConditions", {
+}(0, w.Z)(ys, "type", "onlineBanking_CZ"), (0, w.Z)(ys, "termsAndConditions", {
   translationKey: "onlineBanking.termsAndConditions",
   urls: ["https://static.payu.com/sites/terms/files/payu_privacy_policy_cs.pdf"]
 });
-var yl = function(e) {
-  (0, ea.Z)(r, sd);
+var yu = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25216,7 +25210,7 @@ var yl = function(e) {
   return (0, Z.Z)(r, [{
     key: "formatProps",
     value: function(e) {
-      return yc(yc({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
+      return yl(yl({}, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e)), {}, {
         showImage: !1,
         termsAndConditions: r.termsAndConditions
       })
@@ -25225,12 +25219,12 @@ var yl = function(e) {
     key: "icon",
     get: function() {
       var e;
-      return null !== (e = this.props.icon) && void 0 !== e ? e : this.resources.getImage()("bankTransfer_IBAN")
+      return null != (e = this.props.icon) ? e : this.resources.getImage()("bankTransfer_IBAN")
     }
   }]), r
 }();
 
-function yu(e, t) {
+function yd(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25241,22 +25235,22 @@ function yu(e, t) {
   return n
 }
 
-function yd(e) {
+function yp(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yu(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yd(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yu(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yd(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(yl, "type", "onlineBanking_SK"), (0, w.Z)(yl, "termsAndConditions", {
+}(0, w.Z)(yu, "type", "onlineBanking_SK"), (0, w.Z)(yu, "termsAndConditions", {
   translationKey: "onlineBanking.termsAndConditions",
   urls: ["https://static.payu.com/sites/terms/files/payu_privacy_policy_sk.pdf"]
 });
-var yp = function(e) {
-  (0, ea.Z)(r, sd);
+var yh = function(e) {
+  (0, ea.Z)(r, sp);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25275,14 +25269,14 @@ var yp = function(e) {
   });
 
   function r(e) {
-    return (0, C.Z)(this, r), n.call(this, yd(yd({}, e), {}, {
+    return (0, C.Z)(this, r), n.call(this, yp(yp({}, e), {}, {
       showPaymentMethodItemImages: !0
     }))
   }
   return (0, Z.Z)(r)
 }();
 
-function yh(e, t) {
+function yf(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25291,9 +25285,9 @@ function yh(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(yp, "type", "paybybank");
-var yf = function(e) {
-  (0, ea.Z)(r, hn);
+}(0, w.Z)(yh, "type", "paybybank");
+var ym = function(e) {
+  (0, ea.Z)(r, hr);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25320,9 +25314,9 @@ var yf = function(e) {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yh(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yf(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yh(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yf(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -25335,7 +25329,7 @@ var yf = function(e) {
   }]), r
 }();
 
-function ym(e, t) {
+function yy(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25344,52 +25338,52 @@ function ym(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(yf, "type", "promptpay");
-var yy = function(e) {
-  (0, ea.Z)(r, hn);
-  var t, n = (t = function() {
-    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
-    if ("function" == typeof Proxy) return !0;
-    try {
-      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
-    } catch (e) {
-      return !1
-    }
-  }(), function() {
-    var e, n = (0, es.Z)(r);
-    if (t) {
-      var o = (0, es.Z)(this).constructor;
-      e = en()(n, arguments, o)
-    } else e = n.apply(this, arguments);
-    return (0, ei.Z)(this, e)
-  });
-
-  function r() {
-    return (0, C.Z)(this, r), n.apply(this, arguments)
-  }
-  return (0, Z.Z)(r, [{
-    key: "formatProps",
-    value: function(e) {
-      return function(e) {
-        for (var t = 1; t < arguments.length; t++) {
-          var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = ym(Object(o), !0)).call(n, function(t) {
-            (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = ym(Object(o))).call(r, function(t) {
-            b()(e, t, h()(o, t))
-          })
-        }
-        return e
-      }({
-        delay: 2e3,
-        countdownTime: 1.5
-      }, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e))
-    }
-  }]), r
-}();
-(0, w.Z)(yy, "type", "duitnow");
+}(0, w.Z)(ym, "type", "promptpay");
 var yv = function(e) {
-  (0, ea.Z)(r, ds);
+  (0, ea.Z)(r, hr);
+  var t, n = (t = function() {
+    if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
+    if ("function" == typeof Proxy) return !0;
+    try {
+      return Boolean.prototype.valueOf.call(en()(Boolean, [], function() {})), !0
+    } catch (e) {
+      return !1
+    }
+  }(), function() {
+    var e, n = (0, es.Z)(r);
+    if (t) {
+      var o = (0, es.Z)(this).constructor;
+      e = en()(n, arguments, o)
+    } else e = n.apply(this, arguments);
+    return (0, ei.Z)(this, e)
+  });
+
+  function r() {
+    return (0, C.Z)(this, r), n.apply(this, arguments)
+  }
+  return (0, Z.Z)(r, [{
+    key: "formatProps",
+    value: function(e) {
+      return function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+          var n, r, o = null != arguments[t] ? arguments[t] : {};
+          t % 2 ? N()(n = yy(Object(o), !0)).call(n, function(t) {
+            (0, w.Z)(e, t, o[t])
+          }) : m() ? v()(e, m()(o)) : N()(r = yy(Object(o))).call(r, function(t) {
+            b()(e, t, h()(o, t))
+          })
+        }
+        return e
+      }({
+        delay: 2e3,
+        countdownTime: 1.5
+      }, (0, ey.Z)((0, es.Z)(r.prototype), "formatProps", this).call(this, e))
+    }
+  }]), r
+}();
+(0, w.Z)(yv, "type", "duitnow");
+var yg = function(e) {
+  (0, ea.Z)(r, dc);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
     if ("function" == typeof Proxy) return !0;
@@ -25419,7 +25413,7 @@ var yv = function(e) {
     key: "render",
     value: function() {
       var e = this;
-      return (0, ec.h)(a3, {
+      return (0, ec.h)(a7, {
         i18n: this.props.i18n,
         loadingContext: this.props.loadingContext,
         resources: this.resources
@@ -25429,7 +25423,7 @@ var yv = function(e) {
         className: "adyen-checkout-trustly__descriptor"
       }, this.props.i18n.get("trustly.descriptor")), (0, ec.h)("ul", {
         className: "adyen-checkout-trustly__description-list"
-      }, (0, ec.h)("li", null, this.props.i18n.get("trustly.description1")), (0, ec.h)("li", null, this.props.i18n.get("trustly.description2")))), this.props.showPayButton && (0, ec.h)(sc, (0, er.Z)({}, this.props, {
+      }, (0, ec.h)("li", null, this.props.i18n.get("trustly.description1")), (0, ec.h)("li", null, this.props.i18n.get("trustly.description2")))), this.props.showPayButton && (0, ec.h)(sl, (0, er.Z)({}, this.props, {
         name: this.displayName,
         onSubmit: this.submit,
         payButton: this.payButton,
@@ -25441,7 +25435,7 @@ var yv = function(e) {
   }]), r
 }();
 
-function yg(e, t) {
+function yb(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25452,167 +25446,167 @@ function yg(e, t) {
   return n
 }
 
-function yb(e) {
+function y_(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yg(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yb(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yg(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yb(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
-}(0, w.Z)(yv, "type", "trustly");
-var y_ = {
-    address: mR,
-    bankTransfer_IBAN: mc,
-    donation: de,
-    dropin: fT,
-    personal_details: mF,
-    amex: uD,
-    bcmc: u1,
-    card: uD,
-    diners: uD,
-    discover: uD,
-    jcb: uD,
-    kcp: uD,
-    maestro: uD,
-    mc: uD,
-    scheme: uD,
-    storedCard: uD,
-    securedfields: pN,
-    threeDS2Challenge: pK,
-    threeDS2DeviceFingerprint: pQ,
-    visa: uD,
-    ach: fY,
-    directdebit_GB: mA,
-    sepadirectdebit: pP,
-    affirm: mp,
-    afterpay: ih,
-    afterpay_default: ih,
-    afterpay_b2b: iv,
-    atome: i0,
-    facilypay_3x: dT,
-    facilypay_4x: dL,
-    facilypay_6x: dU,
-    facilypay_10x: dK,
-    facilypay_12x: dY,
-    ratepay: fn,
-    ratepay_directdebit: m1,
-    amazonpay: iT,
-    applepay: iz,
-    cashapp: uG,
-    clicktopay: uJ,
-    googlepay: dk,
-    paypal: pi,
-    paywithgoogle: dk,
-    qiwiwallet: pb,
-    boletobancario: hI,
-    boletobancario_bancodobrasil: hI,
-    boletobancario_bradesco: hI,
-    boletobancario_hsbc: hI,
-    boletobancario_itau: hI,
-    boletobancario_santander: hI,
-    doku: hZ,
-    doku_alfamart: hZ,
-    doku_permata_lite_atm: hZ,
-    doku_indomaret: hZ,
-    doku_atm_mandiri_va: hZ,
-    doku_sinarmas_va: hZ,
-    doku_mandiri_va: hZ,
-    doku_cimb_va: hZ,
-    doku_danamon_va: hZ,
-    doku_bri_va: hZ,
-    doku_bni_va: hZ,
-    doku_bca_va: hZ,
-    doku_wallet: hZ,
-    oxxo: hD,
-    primeiropay_boleto: hI,
-    billdesk_online: sf,
-    billdesk_wallet: sv,
-    dotpay: hq,
-    entercash: dC,
-    eps: hz,
-    ideal: dG,
-    molpay_ebanking_fpx_MY: hl,
-    molpay_ebanking_TH: hu,
-    molpay_ebanking_VN: hd,
-    onlineBanking: hq,
-    onlineBanking_CZ: yi,
-    onlinebanking_IN: mG,
-    onlineBanking_PL: mJ,
-    onlineBanking_SK: yl,
-    paybybank: yp,
-    payu_IN_cashcard: h6,
-    payu_IN_nb: h7,
-    wallet_IN: yr,
-    dragonpay_ebanking: hg,
-    dragonpay_otc_banking: hg,
-    dragonpay_otc_non_banking: hg,
-    dragonpay_otc_philippines: hg,
-    econtext_atm: dO,
-    econtext_online: dO,
-    econtext_seven_eleven: dO,
-    econtext_stores: dO,
-    giropay: du,
-    multibanco: hU,
-    redirect: ds,
-    twint: mL,
-    vipps: h2,
-    trustly: yv,
-    klarna: mD,
-    klarna_account: mD,
-    klarna_paynow: mD,
-    bcmc_mobile: hc,
-    bcmc_mobile_QR: hc,
-    pix: mg,
-    swish: fo,
-    wechatpay: ho,
-    wechatpayQR: ho,
-    promptpay: yf,
-    paynow: hi,
-    duitnow: yy,
-    blik: mo,
-    mbway: f9,
-    upi: ye,
-    upi_qr: ye,
-    upi_collect: ye,
-    giftcard: h1,
-    mealVoucher_FR_natixis: mz,
-    mealVoucher_FR_sodexo: mz,
-    mealVoucher_FR_groupeup: mz,
+}(0, w.Z)(yg, "type", "trustly");
+var yk = {
+    address: mF,
+    bankTransfer_IBAN: ml,
+    donation: dt,
+    dropin: fB,
+    personal_details: mO,
+    amex: uL,
+    bcmc: u2,
+    card: uL,
+    diners: uL,
+    discover: uL,
+    jcb: uL,
+    kcp: uL,
+    maestro: uL,
+    mc: uL,
+    scheme: uL,
+    storedCard: uL,
+    securedfields: px,
+    threeDS2Challenge: pz,
+    threeDS2DeviceFingerprint: pJ,
+    visa: uL,
+    ach: fG,
+    directdebit_GB: mR,
+    sepadirectdebit: pA,
+    affirm: mh,
+    afterpay: im,
+    afterpay_default: im,
+    afterpay_b2b: ig,
+    atome: i1,
+    facilypay_3x: dB,
+    facilypay_4x: dV,
+    facilypay_6x: dq,
+    facilypay_10x: dz,
+    facilypay_12x: dG,
+    ratepay: fr,
+    ratepay_directdebit: m2,
+    amazonpay: iB,
+    applepay: iW,
+    cashapp: u$,
+    clicktopay: uX,
+    googlepay: dC,
+    paypal: ps,
+    paywithgoogle: dC,
+    qiwiwallet: p_,
+    boletobancario: hM,
+    boletobancario_bancodobrasil: hM,
+    boletobancario_bradesco: hM,
+    boletobancario_hsbc: hM,
+    boletobancario_itau: hM,
+    boletobancario_santander: hM,
+    doku: hw,
+    doku_alfamart: hw,
+    doku_permata_lite_atm: hw,
+    doku_indomaret: hw,
+    doku_atm_mandiri_va: hw,
+    doku_sinarmas_va: hw,
+    doku_mandiri_va: hw,
+    doku_cimb_va: hw,
+    doku_danamon_va: hw,
+    doku_bri_va: hw,
+    doku_bni_va: hw,
+    doku_bca_va: hw,
+    doku_wallet: hw,
+    oxxo: hL,
+    primeiropay_boleto: hM,
+    billdesk_online: sm,
+    billdesk_wallet: sg,
+    dotpay: hH,
+    entercash: dZ,
+    eps: hW,
+    ideal: d$,
+    molpay_ebanking_fpx_MY: hu,
+    molpay_ebanking_TH: hd,
+    molpay_ebanking_VN: hp,
+    onlineBanking: hH,
+    onlineBanking_CZ: ys,
+    onlinebanking_IN: m$,
+    onlineBanking_PL: mX,
+    onlineBanking_SK: yu,
+    paybybank: yh,
+    payu_IN_cashcard: h5,
+    payu_IN_nb: h9,
+    wallet_IN: yo,
+    dragonpay_ebanking: hb,
+    dragonpay_otc_banking: hb,
+    dragonpay_otc_non_banking: hb,
+    dragonpay_otc_philippines: hb,
+    econtext_atm: dE,
+    econtext_online: dE,
+    econtext_seven_eleven: dE,
+    econtext_stores: dE,
+    giropay: dd,
+    multibanco: hq,
+    redirect: dc,
+    twint: mV,
+    vipps: h8,
+    trustly: yg,
+    klarna: mL,
+    klarna_account: mL,
+    klarna_paynow: mL,
+    bcmc_mobile: hl,
+    bcmc_mobile_QR: hl,
+    pix: mb,
+    swish: fa,
+    wechatpay: ha,
+    wechatpayQR: ha,
+    promptpay: ym,
+    paynow: hs,
+    duitnow: yv,
+    blik: ma,
+    mbway: me,
+    upi: yt,
+    upi_qr: yt,
+    upi_collect: yt,
+    giftcard: h2,
+    mealVoucher_FR_natixis: mW,
+    mealVoucher_FR_sodexo: mW,
+    mealVoucher_FR_groupeup: mW,
     default: null
   },
-  yk = function(e, t) {
-    var n, r = y_[e] || y_.default;
-    return r ? new r(yb(yb({}, t), {}, {
+  yC = function(e, t) {
+    var n, r = yk[e] || yk.default;
+    return r ? new r(y_(y_({}, t), {}, {
       id: I()(n = "".concat(e, "-")).call(n, tI())
     })) : null
   },
-  yC = function(e) {
+  yZ = function(e) {
     var t = e;
     return "scheme" === e && (t = arguments.length > 2 && void 0 !== arguments[2] && arguments[2] ? "storedCard" : "card"), (arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {})[t] || {}
   };
 
-function yZ(e) {
+function yw(e) {
   return !this.length || z()(this).call(this, e.type) > -1
 }
 
-function yw(e) {
+function yS(e) {
   return !this.length || 0 > z()(this).call(this, e.type)
 }
 
-function yS(e) {
+function yN(e) {
   var t;
   return !!e && !!e.supportedShopperInteractions && O()(t = e.supportedShopperInteractions).call(t, "Ecommerce")
 }
-var yN = ["scheme", "blik", "twint", "ach", "cashapp"];
+var yx = ["scheme", "blik", "twint", "ach", "cashapp"];
 
-function yx(e) {
-  return !!e && !!e.type && O()(yN).call(yN, e.type)
+function yP(e) {
+  return !!e && !!e.type && O()(yx).call(yx, e.type)
 }
 
-function yP(e, t) {
+function yA(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25623,23 +25617,23 @@ function yP(e, t) {
   return n
 }
 
-function yA(e) {
+function yR(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yP(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yA(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yP(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yA(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var yR = function(e) {
-    return yA(yA({}, e), {}, {
+var yF = function(e) {
+    return yR(yR({}, e), {}, {
       storedPaymentMethodId: e.id
     })
   },
-  yF = function() {
+  yO = function() {
     function e(t) {
       var n, r, o, a, i, s, c, l, u, d, p, h = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
       (0, C.Z)(this, e), (0, w.Z)(this, "paymentMethods", []), (0, w.Z)(this, "storedPaymentMethods", []),
@@ -25647,8 +25641,8 @@ var yR = function(e) {
         var t, n;
         if ("string" == typeof e) throw Error('paymentMethodsResponse was provided but of an incorrect type (should be an object but a string was provided).Try JSON.parse("{...}") your paymentMethodsResponse.');
         if (e instanceof Array) throw Error("paymentMethodsResponse was provided but of an incorrect type (should be an object but an array was provided).Please check you are passing the whole response.");
-        !e || null != e && null !== (t = e.paymentMethods) && void 0 !== t && t.length || null != e && null !== (n = e.storedPaymentMethods) && void 0 !== n && n.length || console.warn("paymentMethodsResponse was provided but no payment methods were found.")
-      }(t), this.paymentMethods = t ? (n = t.paymentMethods, o = h.allowPaymentMethods, a = h.removePaymentMethods, n ? P()(r = P()(n).call(n, yZ, void 0 === o ? [] : o)).call(r, yw, void 0 === a ? [] : a) : []) : [], this.storedPaymentMethods = t ? (i = t.storedPaymentMethods, d = h.allowPaymentMethods, p = h.removePaymentMethods, i ? J()(s = P()(c = P()(l = P()(u = P()(i).call(i, yx)).call(u, yZ, void 0 === d ? [] : d)).call(l, yw, void 0 === p ? [] : p)).call(c, yS)).call(s, yR) : []) : []
+        !e || null != e && null != (t = e.paymentMethods) && t.length || null != e && null != (n = e.storedPaymentMethods) && n.length || console.warn("paymentMethodsResponse was provided but no payment methods were found.")
+      }(t), this.paymentMethods = t ? (n = t.paymentMethods, o = h.allowPaymentMethods, a = h.removePaymentMethods, n ? P()(r = P()(n).call(n, yw, void 0 === o ? [] : o)).call(r, yS, void 0 === a ? [] : a) : []) : [], this.storedPaymentMethods = t ? (i = t.storedPaymentMethods, d = h.allowPaymentMethods, p = h.removePaymentMethods, i ? J()(s = P()(c = P()(l = P()(u = P()(i).call(i, yP)).call(u, yw, void 0 === d ? [] : d)).call(l, yS, void 0 === p ? [] : p)).call(c, yN)).call(s, yF) : []) : []
     }
     return (0, Z.Z)(e, [{
       key: "mapCreatedComponentType",
@@ -25674,7 +25668,7 @@ var yR = function(e) {
     }]), e
   }();
 
-function yO(e, t) {
+function yE(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25685,34 +25679,34 @@ function yO(e, t) {
   return n
 }
 
-function yE(e) {
+function yI(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yO(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yE(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yO(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yE(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var yI = function(e) {
+var yM = function(e) {
     return function(t, n) {
-      return yk(t.paymentMethodType, yE(yE(yE({}, n), t), {}, {
+      return yC(t.paymentMethodType, yI(yI(yI({}, n), t), {}, {
         onComplete: n.onAdditionalDetails,
         onError: n.onError,
         statusType: e
       }))
     }
   },
-  yM = {
+  yT = {
     redirect: function(e, t) {
-      return yk("redirect", yE(yE(yE({}, t), e), {}, {
+      return yC("redirect", yI(yI(yI({}, t), e), {}, {
         statusType: "redirect"
       }))
     },
     threeDS2Fingerprint: function(e, t) {
-      return yk("threeDS2DeviceFingerprint", yE(yE({
+      return yC("threeDS2DeviceFingerprint", yI(yI({
         createFromAction: t.createFromAction,
         token: e.token,
         paymentData: e.paymentData,
@@ -25728,12 +25722,12 @@ var yI = function(e) {
     },
     threeDS2Challenge: function(e, t) {
       var n;
-      return yk("threeDS2Challenge", yE(yE({}, t), {}, {
+      return yC("threeDS2Challenge", yI(yI({}, t), {}, {
         token: e.token,
         paymentData: e.paymentData,
         onComplete: t.onAdditionalDetails,
         onError: t.onError,
-        size: null !== (n = t.size) && void 0 !== n ? n : "02",
+        size: null != (n = t.size) ? n : "02",
         isDropin: !!t.isDropin,
         type: "ChallengeShopper",
         statusType: "custom",
@@ -25743,7 +25737,7 @@ var yI = function(e) {
     threeDS2: function(e, t) {
       var n = "fingerprint" === e.subtype ? "threeDS2DeviceFingerprint" : "threeDS2Challenge",
         r = "fingerprint" === e.subtype ? e.paymentData : e.authorisationToken;
-      return yk(n, yE({
+      return yC(n, yI({
         token: e.token,
         paymentData: r,
         onActionHandled: t.onActionHandled,
@@ -25757,7 +25751,7 @@ var yI = function(e) {
         challengeWindowSize: t.challengeWindowSize
       }, function(e, t) {
         if ("fingerprint" === e) {
-          var n = sK(t.elementRef ? pV : pj).from(t);
+          var n = sz(t.elementRef ? pj : pU).from(t);
           return n.showSpinner = !t.isDropin, n.statusType = "loading", n
         }
         return {
@@ -25766,23 +25760,12 @@ var yI = function(e) {
         }
       }(e.subtype, t)))
     },
-    voucher: yI("custom"),
-    qrCode: yI("custom"),
-    await: yI("custom"),
-    bankTransfer: yI("custom"),
-    sdk: yI("custom")
+    voucher: yM("custom"),
+    qrCode: yM("custom"),
+    await: yM("custom"),
+    bankTransfer: yM("custom"),
+    sdk: yM("custom")
   };
-
-function yT(e, t) {
-  var n = l()(e);
-  if (d()) {
-    var r = d()(e);
-    t && (r = P()(r).call(r, function(t) {
-      return h()(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
 
 function yB(e, t) {
   var n = l()(e);
@@ -25794,7 +25777,18 @@ function yB(e, t) {
   }
   return n
 }
-var yD = function() {
+
+function yD(e, t) {
+  var n = l()(e);
+  if (d()) {
+    var r = d()(e);
+    t && (r = P()(r).call(r, function(t) {
+      return h()(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+var yL = function() {
     function e() {
       (0, C.Z)(this, e), (0, w.Z)(this, "storage", void 0), this.storage = {}
     }
@@ -25831,13 +25825,13 @@ var yD = function() {
       }
     }]), e
   }(),
-  yL = function() {
+  yV = function() {
     function e(t, n) {
       (0, C.Z)(this, e), (0, w.Z)(this, "prefix", "adyen-checkout__"), (0, w.Z)(this, "key", void 0), (0, w.Z)(this, "storage", void 0);
       try {
         this.storage = n ? window[n] : window.localStorage
       } catch (e) {
-        this.storage = new yD
+        this.storage = new yL
       }
       this.key = this.prefix + t
     }
@@ -25862,7 +25856,7 @@ var yD = function() {
       }
     }]), e
   }(),
-  yV = function(e) {
+  yj = function(e) {
     var t, n = e.loadingContext,
       r = e.clientKey,
       o = e.experiments,
@@ -25874,7 +25868,7 @@ var yD = function() {
     return function() {
       if (t) return t;
       if (!r) return T().reject();
-      var e = new yL("checkout-attempt-id", "sessionStorage"),
+      var e = new yV("checkout-attempt-id", "sessionStorage"),
         n = e.get();
       return ! function(e) {
         if (null == e || !e.id) return !1;
@@ -25890,7 +25884,7 @@ var yD = function() {
       }).catch(function() {}) : T().resolve(n.id)
     }
   },
-  yj = function() {
+  yU = function() {
     function e() {
       (0, C.Z)(this, e), (0, w.Z)(this, "events", [])
     }
@@ -25910,7 +25904,7 @@ var yD = function() {
     }]), e
   }();
 
-function yU(e, t) {
+function yq(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -25921,34 +25915,34 @@ function yU(e, t) {
   return n
 }
 
-function yq(e) {
+function yH(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = yU(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = yq(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = yU(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = yq(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var yH = function() {
+var yK = function() {
   function e(t) {
     var n, r, o = t.loadingContext,
       a = t.locale,
       i = t.clientKey,
       s = t.analytics,
       c = t.amount;
-    (0, C.Z)(this, e), (0, w.Z)(this, "checkoutAttemptId", null), (0, w.Z)(this, "props", void 0), (0, w.Z)(this, "logEvent", void 0), (0, w.Z)(this, "logTelemetry", void 0), (0, w.Z)(this, "queue", new yj), (0, w.Z)(this, "collectId", void 0), this.props = yq(yq({}, e.defaultProps), s), this.logEvent = (n = {
+    (0, C.Z)(this, e), (0, w.Z)(this, "checkoutAttemptId", null), (0, w.Z)(this, "props", void 0), (0, w.Z)(this, "logEvent", void 0), (0, w.Z)(this, "logTelemetry", void 0), (0, w.Z)(this, "queue", new yU), (0, w.Z)(this, "collectId", void 0), this.props = yH(yH({}, e.defaultProps), s), this.logEvent = (n = {
       loadingContext: o,
       locale: a
     }, function(e) {
       var t, r, o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n, r, o = null != arguments[t] ? arguments[t] : {};
-            t % 2 ? N()(n = yT(Object(o), !0)).call(n, function(t) {
+            t % 2 ? N()(n = yB(Object(o), !0)).call(n, function(t) {
               (0, w.Z)(e, t, o[t])
-            }) : m() ? v()(e, m()(o)) : N()(r = yT(Object(o))).call(r, function(t) {
+            }) : m() ? v()(e, m()(o)) : N()(r = yB(Object(o))).call(r, function(t) {
               b()(e, t, h()(o, t))
             })
           }
@@ -25978,17 +25972,17 @@ var yH = function() {
       }, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yB(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yD(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yB(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yD(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
         return e
       }({
         amount: {
-          value: (null === (t = r.amount) || void 0 === t ? void 0 : t.value) || 0,
-          currency: null === (n = r.amount) || void 0 === n ? void 0 : n.currency
+          value: (null == (t = r.amount) ? void 0 : t.value) || 0,
+          currency: null == (n = r.amount) ? void 0 : n.currency
         },
         version: "5.51.0",
         channel: "Web",
@@ -25998,7 +25992,7 @@ var yH = function() {
         referrer: window.location.href,
         screenWidth: window.screen.width
       }, e)) : T().reject()
-    }), this.collectId = yV({
+    }), this.collectId = yj({
       loadingContext: o,
       clientKey: i,
       experiments: this.props.experiments
@@ -26021,7 +26015,7 @@ var yH = function() {
       }).catch(function(e) {
         console.warn("Fetching checkoutAttemptId failed.".concat(e ? " Error=".concat(e) : ""))
       }), !0 === a && (this.queue.add(function(n) {
-        return t.logTelemetry(yq(yq(yq({}, e), o && yq({}, o)), {}, {
+        return t.logTelemetry(yH(yH(yH({}, e), o && yH({}, o)), {}, {
           checkoutAttemptId: n
         })).catch(function() {})
       }), this.checkoutAttemptId && this.queue.run(this.checkoutAttemptId)), this.logEvent(e))
@@ -26029,22 +26023,11 @@ var yH = function() {
   }]), e
 }();
 
-function yK(e) {
+function yz(e) {
   var t;
   return Y()(t = l()(e)).call(t, function(t, n) {
     return O()(o0).call(o0, n) && (t[n] = e[n]), t
   }, {})
-}
-
-function yz(e, t) {
-  var n = l()(e);
-  if (d()) {
-    var r = d()(e);
-    t && (r = P()(r).call(r, function(t) {
-      return h()(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
 }
 
 function yW(e, t) {
@@ -26100,13 +26083,24 @@ function yQ(e, t) {
     })), n.push.apply(n, r)
   }
   return n
-}(0, w.Z)(yH, "defaultProps", {
+}
+
+function yJ(e, t) {
+  var n = l()(e);
+  if (d()) {
+    var r = d()(e);
+    t && (r = P()(r).call(r, function(t) {
+      return h()(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}(0, w.Z)(yK, "defaultProps", {
   enabled: !0,
   telemetry: !0,
   checkoutAttemptId: null,
   experiments: []
 });
-var yJ = function() {
+var yX = function() {
   function e(t, n, r) {
     (0, C.Z)(this, e), (0, w.Z)(this, "session", void 0), (0, w.Z)(this, "storage", void 0), (0, w.Z)(this, "clientKey", void 0), (0, w.Z)(this, "loadingContext", void 0), (0, w.Z)(this, "configuration", void 0);
     var o = function(e) {
@@ -26114,9 +26108,9 @@ var yJ = function() {
       return function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = y$(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yQ(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = y$(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yQ(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -26129,7 +26123,7 @@ var yJ = function() {
     }(t);
     if (!n) throw Error("No clientKey available");
     if (!r) throw Error("No loadingContext available");
-    this.storage = new yL("session", "localStorage"), this.clientKey = n, this.loadingContext = r, this.session = o, this.session.sessionData ? this.storeSession() : this.session = this.getStoredSession()
+    this.storage = new yV("session", "localStorage"), this.clientKey = n, this.loadingContext = r, this.session = o, this.session.sessionData ? this.storeSession() : this.session = this.getStoredSession()
   }
   return (0, Z.Z)(e, [{
     key: "id",
@@ -26153,9 +26147,9 @@ var yJ = function() {
       return (r = I()(t = I()(n = "".concat("v1", "/sessions/")).call(n, this.id, "/setup?clientKey=")).call(t, this.clientKey), o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yY(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yG(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yY(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yG(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -26176,9 +26170,9 @@ var yJ = function() {
         return e.configuration && (a.configuration = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n, r, o = null != arguments[t] ? arguments[t] : {};
-            t % 2 ? N()(n = yQ(Object(o), !0)).call(n, function(t) {
+            t % 2 ? N()(n = yJ(Object(o), !0)).call(n, function(t) {
               (0, w.Z)(e, t, o[t])
-            }) : m() ? v()(e, m()(o)) : N()(r = yQ(Object(o))).call(r, function(t) {
+            }) : m() ? v()(e, m()(o)) : N()(r = yJ(Object(o))).call(r, function(t) {
               b()(e, t, h()(o, t))
             })
           }
@@ -26193,9 +26187,9 @@ var yJ = function() {
       return (r = I()(t = I()(n = "".concat("v1", "/sessions/")).call(n, this.id, "/payments?clientKey=")).call(t, this.clientKey), o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yz(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yW(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yz(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yW(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -26217,9 +26211,9 @@ var yJ = function() {
       return (r = I()(t = I()(n = "".concat("v1", "/sessions/")).call(n, this.id, "/paymentDetails?clientKey=")).call(t, this.clientKey), o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yW(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = yY(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yW(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = yY(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -26241,9 +26235,9 @@ var yJ = function() {
       return (r = I()(t = I()(n = "".concat("v1", "/sessions/")).call(n, this.id, "/paymentMethodBalance?clientKey=")).call(t, this.clientKey), o = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n, r, o = null != arguments[t] ? arguments[t] : {};
-          t % 2 ? N()(n = yG(Object(o), !0)).call(n, function(t) {
+          t % 2 ? N()(n = y$(Object(o), !0)).call(n, function(t) {
             (0, w.Z)(e, t, o[t])
-          }) : m() ? v()(e, m()(o)) : N()(r = yG(Object(o))).call(r, function(t) {
+          }) : m() ? v()(e, m()(o)) : N()(r = y$(Object(o))).call(r, function(t) {
             b()(e, t, h()(o, t))
           })
         }
@@ -26309,7 +26303,7 @@ var yJ = function() {
   }]), e
 }();
 
-function yX(e) {
+function y0(e) {
   var t = e.setComponentRef,
     n = t8({});
   l()(n.current).length || null == t || t(n.current);
@@ -26327,7 +26321,7 @@ function yX(e) {
   })) : null
 }
 
-function y0(e, t) {
+function y1(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -26338,18 +26332,18 @@ function y0(e, t) {
   return n
 }
 
-function y1(e) {
+function y2(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = y0(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = y1(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = y0(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = y1(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var y2 = function(e) {
+var y8 = function(e) {
   (0, ea.Z)(r, tB);
   var t, n = (t = function() {
     if ("undefined" == typeof Reflect || !en() || en().sham) return !1;
@@ -26377,7 +26371,7 @@ var y2 = function(e) {
           var t = null;
           e && (t = ew()(e) ? e : [e]), o.componentRef.setMessages(t)
         }
-      }), o.id = o.props.id, o.showPanel = !1, o._enabled = !1, o._moveFocus = null === (t = o.props.moveFocus) || void 0 === t || t, o.props.enabled) {
+      }), o.id = o.props.id, o.showPanel = !1, o._enabled = !1, o._moveFocus = null == (t = o.props.moveFocus) || t, o.props.enabled) {
       if (o._enabled = !0, !document.querySelector(o.props.node)) throw Error("Component could not mount. Root node was not found.");
       var a = document.getElementById(o.id);
       a && document.querySelector(o.props.node).removeChild(a), o.srPanelContainer = document.createElement("div"), o.srPanelContainer.className = "sr-panel-holder", o.srPanelContainer.id = o.id, document.querySelector(o.props.node).appendChild(o.srPanelContainer), o.mount(o.srPanelContainer)
@@ -26403,8 +26397,8 @@ var y2 = function(e) {
           i = o[1];
         t.setAttribute(a, i)
       }
-      this.props = y1(y1({}, this.props), {}, {
-        ariaAttributes: y1(y1({}, this.props.ariaAttributes), e)
+      this.props = y2(y2({}, this.props), {}, {
+        ariaAttributes: y2(y2({}, this.props.ariaAttributes), e)
       })
     }
   }, {
@@ -26413,13 +26407,13 @@ var y2 = function(e) {
       return this.props.enabled ? (0, ec.h)("div", (0, er.Z)({
         className: this.showPanel ? "adyen-checkout-sr-panel" : "adyen-checkout-sr-panel--sr-only",
         role: "log"
-      }, this.props.ariaAttributes, !1), (0, ec.h)(yX, {
+      }, this.props.ariaAttributes, !1), (0, ec.h)(y0, {
         setComponentRef: this.setComponentRef
       })) : null
     }
   }]), r
 }();
-(0, w.Z)(y2, "type", "srPanel"), (0, w.Z)(y2, "defaultProps", {
+(0, w.Z)(y8, "type", "srPanel"), (0, w.Z)(y8, "defaultProps", {
   enabled: !0,
   node: "body",
   showPanel: !1,
@@ -26430,9 +26424,9 @@ var y2 = function(e) {
     "aria-atomic": "true"
   }
 });
-var y8 = ["amount", "shopperLocale", "paymentMethods"];
+var y4 = ["amount", "shopperLocale", "paymentMethods"];
 
-function y4(e, t) {
+function y6(e, t) {
   var n = l()(e);
   if (d()) {
     var r = d()(e);
@@ -26443,18 +26437,18 @@ function y4(e, t) {
   return n
 }
 
-function y6(e) {
+function y5(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n, r, o = null != arguments[t] ? arguments[t] : {};
-    t % 2 ? N()(n = y4(Object(o), !0)).call(n, function(t) {
+    t % 2 ? N()(n = y6(Object(o), !0)).call(n, function(t) {
       (0, w.Z)(e, t, o[t])
-    }) : m() ? v()(e, m()(o)) : N()(r = y4(Object(o))).call(r, function(t) {
+    }) : m() ? v()(e, m()(o)) : N()(r = y6(Object(o))).call(r, function(t) {
       b()(e, t, h()(o, t))
     })
   }
   return e
 }
-var y5 = function() {
+var y3 = function() {
   function e(t) {
     var n, r, o, a, i, s, c = this;
     (0, C.Z)(this, e), (0, w.Z)(this, "session", void 0), (0, w.Z)(this, "paymentMethodsResponse", void 0), (0, w.Z)(this, "modules", void 0), (0, w.Z)(this, "options", void 0), (0, w.Z)(this, "components", []), (0, w.Z)(this, "loadingContext", void 0), (0, w.Z)(this, "cdnContext", void 0), (0, w.Z)(this, "update", function() {
@@ -26471,7 +26465,7 @@ var y5 = function() {
         return t._id !== e._id
       }), e.unmount(), c
     }), (0, w.Z)(this, "setOptions", function(e) {
-      ng(null == e ? void 0 : e.paymentMethodsConfiguration, "scheme") && console.warn('WARNING: You cannot define a property "scheme" on the paymentMethodsConfiguration object - it should be defined as "card" otherwise it will be ignored'), ng(e, "installmentOptions") && console.warn("WARNING: you are setting installmentOptions directly in the top level configuration object. They should be set via the 'paymentMethodsConfiguration' object or directly on the 'card' component."), c.options = y6(y6({}, c.options), e)
+      ng(null == e ? void 0 : e.paymentMethodsConfiguration, "scheme") && console.warn('WARNING: You cannot define a property "scheme" on the paymentMethodsConfiguration object - it should be defined as "card" otherwise it will be ignored'), ng(e, "installmentOptions") && console.warn("WARNING: you are setting installmentOptions directly in the top level configuration object. They should be set via the 'paymentMethodsConfiguration' object or directly on the 'card' component."), c.options = y5(y5({}, c.options), e)
     }), this.create = R()(n = this.create).call(n, this), this.createFromAction = R()(r = this.createFromAction).call(r, this), this.setOptions(t), this.loadingContext = function() {
       var e = arguments.length > 1 ? arguments[1] : void 0;
       return e || ({
@@ -26482,7 +26476,7 @@ var y5 = function() {
         "live-apse": "https://checkoutshopper-live-apse.adyen.com/checkoutshopper/",
         "live-in": "https://checkoutshopper-live-in.adyen.com/checkoutshopper/"
       })[(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "").toLowerCase()] || "https://checkoutshopper-live.adyen.com/checkoutshopper/"
-    }(this.options.environment, null === (o = this.options.environmentUrls) || void 0 === o ? void 0 : o.api), this.cdnContext = function() {
+    }(this.options.environment, null == (o = this.options.environmentUrls) ? void 0 : o.api), this.cdnContext = function() {
       var e = arguments.length > 1 ? arguments[1] : void 0;
       return e || ({
         beta: "https://cdf6519016.cdn.adyen.com/checkoutshopper/",
@@ -26493,8 +26487,8 @@ var y5 = function() {
         "live-apse": "https://checkoutshopper-live-apse.adyen.com/checkoutshopper/",
         "live-in": "https://checkoutshopper-live-in.adyen.com/checkoutshopper/"
       })[(arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "").toLowerCase()] || nr
-    }(this.options.resourceEnvironment || this.options.environment, null === (a = this.options.environmentUrls) || void 0 === a ? void 0 : a.api);
-    var l, u = null === (i = this.options.clientKey) || void 0 === i ? void 0 : i.substr(0, 4);
+    }(this.options.resourceEnvironment || this.options.environment, null == (a = this.options.environmentUrls) ? void 0 : a.api);
+    var l, u = null == (i = this.options.clientKey) ? void 0 : i.substr(0, 4);
     if (("test" === u || "live" === u) && !O()(s = this.loadingContext).call(s, u)) throw Error(I()(l = "Error: you are using a '".concat(u, "' clientKey against the '")).call(l, this.options.environment, "' environment"));
     window.adyenWebVersion = e.version.version
   }
@@ -26502,12 +26496,12 @@ var y5 = function() {
     key: "initialize",
     value: function() {
       var e = this;
-      return this.options.session ? (this.session = new yJ(this.options.session, this.options.clientKey, this.loadingContext), this.session.setupSession(this.options).then(function(t) {
+      return this.options.session ? (this.session = new yX(this.options.session, this.options.clientKey, this.loadingContext), this.session.setupSession(this.options).then(function(t) {
         var n = t.amount,
           r = t.shopperLocale,
           o = t.paymentMethods,
-          a = (0, k.Z)(t, y8);
-        return e.setOptions(y6(y6({}, a), {}, {
+          a = (0, k.Z)(t, y4);
+        return e.setOptions(y5(y5({}, a), {}, {
           amount: e.options.order ? e.options.order.remainingAmount : n,
           locale: e.options.locale || r
         })), e.createPaymentMethodsList(o), e.createCoreModules(), e
@@ -26522,10 +26516,10 @@ var y5 = function() {
       if (this.options.onAdditionalDetails) return this.options.onAdditionalDetails(e);
       this.session && this.session.submitDetails(e).then(function(e) {
         var n, r;
-        null === (n = (r = t.options).onPaymentCompleted) || void 0 === n || n.call(r, e)
+        null == (n = (r = t.options).onPaymentCompleted) || n.call(r, e)
       }).catch(function(e) {
         var n, r;
-        null === (n = (r = t.options).onError) || void 0 === n || n.call(r, e)
+        null == (n = (r = t.options).onError) || n.call(r, e)
       })
     }
   }, {
@@ -26543,20 +26537,20 @@ var y5 = function() {
         throw Error('createFromAction::Invalid Action - the passed action object does not have a "type" property')
       }
       if (e.type) {
-        var n = yC(e.type, this.options.paymentMethodsConfiguration);
+        var n = yZ(e.type, this.options.paymentMethodsConfiguration);
         return function(e) {
           var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-            n = yM[e.type];
+            n = yT[e.type];
           if (n && "function" == typeof n) return n(e, t);
           throw Error("Invalid Action")
-        }(e, y6(y6(y6({}, yK(this.options)), n), this.getPropsForComponent(t)))
+        }(e, y5(y5(y5({}, yz(this.options)), n), this.getPropsForComponent(t)))
       }
       return this.handleCreateError()
     }
   }, {
     key: "getPropsForComponent",
     value: function(e) {
-      return y6(y6({
+      return y5(y5({
         paymentMethods: this.paymentMethodsResponse.paymentMethods,
         storedPaymentMethods: this.paymentMethodsResponse.storedPaymentMethods
       }, e), {}, {
@@ -26576,19 +26570,19 @@ var y5 = function() {
       if (e.prototype instanceof nk) {
         var n, r = "dropin" !== t.type && !t.isDropin,
           o = r && !t.supportedShopperInteractions ? D()(n = this.paymentMethodsResponse).call(n, t.type) : {},
-          a = r ? yC(t.type, this.options.paymentMethodsConfiguration, !!t.storedPaymentMethodId) : {},
-          i = new e(y6(y6(y6(y6({}, yK(this.options)), o), a), t));
+          a = r ? yZ(t.type, this.options.paymentMethodsConfiguration, !!t.storedPaymentMethodId) : {},
+          i = new e(y5(y5(y5(y5({}, yz(this.options)), o), a), t));
         return t.isDropin || this.components.push(i), i
       }
-      if ("string" == typeof e && y_[e]) return "dropin" === e && ng(t, "paymentMethodsConfiguration") && console.warn("WARNING: You are setting a 'paymentMethodsConfiguration' object in the Dropin configuration options. This object will be ignored."), this.handleCreate(y_[e], y6({
+      if ("string" == typeof e && yk[e]) return "dropin" === e && ng(t, "paymentMethodsConfiguration") && console.warn("WARNING: You are setting a 'paymentMethodsConfiguration' object in the Dropin configuration options. This object will be ignored."), this.handleCreate(yk[e], y5({
         type: e
       }, t));
-      if ("string" == typeof e && this.paymentMethodsResponse.has(e)) return this.handleCreate(y_.redirect, y6({
+      if ("string" == typeof e && this.paymentMethodsResponse.has(e)) return this.handleCreate(yk.redirect, y5({
         type: e
       }, t));
       if ("object" === (0, _.Z)(e) && "string" == typeof e.type) {
-        var s = yC(e.type, this.options.paymentMethodsConfiguration, !!e.storedPaymentMethodId);
-        return this.handleCreate(e.type, y6(y6(y6({}, e), t), s))
+        var s = yZ(e.type, this.options.paymentMethodsConfiguration, !!e.storedPaymentMethodId);
+        return this.handleCreate(e.type, y5(y5(y5({}, e), t), s))
       }
       return this.handleCreateError(e)
     }
@@ -26601,16 +26595,16 @@ var y5 = function() {
   }, {
     key: "createPaymentMethodsList",
     value: function(e) {
-      this.paymentMethodsResponse = new yF(this.options.paymentMethodsResponse || e, this.options)
+      this.paymentMethodsResponse = new yO(this.options.paymentMethodsResponse || e, this.options)
     }
   }, {
     key: "createCoreModules",
     value: function() {
       this.modules || (this.modules = U()({
-        risk: new nI(y6(y6({}, this.options), {}, {
+        risk: new nI(y5(y5({}, this.options), {}, {
           loadingContext: this.loadingContext
         })),
-        analytics: new yH({
+        analytics: new yK({
           loadingContext: this.loadingContext,
           clientKey: this.options.clientKey,
           locale: this.options.locale,
@@ -26619,23 +26613,23 @@ var y5 = function() {
         }),
         resources: new ns(this.cdnContext),
         i18n: new tF(this.options.locale, this.options.translations),
-        srPanel: new y2(this.options.srConfig)
+        srPanel: new y8(this.options.srConfig)
       }))
     }
   }]), e
 }();
 
-function y3(e) {
-  return y7.apply(this, arguments)
+function y7(e) {
+  return y9.apply(this, arguments)
 }
 
-function y7() {
-  return (y7 = (0, a.Z)(s().mark(function e(t) {
+function y9() {
+  return (y9 = (0, a.Z)(s().mark(function e(t) {
     var n;
     return s().wrap(function(e) {
       for (;;) switch (e.prev = e.next) {
         case 0:
-          return n = new y5(t), e.next = 3, n.initialize();
+          return n = new y3(t), e.next = 3, n.initialize();
         case 3:
           return e.abrupt("return", e.sent);
         case 4:
@@ -26644,7 +26638,7 @@ function y7() {
       }
     }, e)
   }))).apply(this, arguments)
-}(0, w.Z)(y5, "version", {
+}(0, w.Z)(y3, "version", {
   version: "5.51.0",
   revision: "7d67e7b",
   branch: "HEAD",

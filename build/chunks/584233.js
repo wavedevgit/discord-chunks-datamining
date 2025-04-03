@@ -1,21 +1,21 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  x: () => o
+  x: () => a
 });
 var r = n(447543),
   i = n(652898),
   l = n(430824);
-async function o(e) {
+async function a(e) {
   let {
     code: t
-  } = e, o = (await (0, i.Z)(t)).invite;
-  if (null == o || null == o.guild || (await new Promise(e => {
+  } = e, a = (await (0, i.Z)(t)).invite;
+  if (null == a || null == a.guild || (await new Promise(e => {
       l.Z.addConditionalChangeListener(() => !l.Z.isLoaded() || (e(), !1))
-    }), null == l.Z.getGuild(o.guild.id))) return;
+    }), null == l.Z.getGuild(a.guild.id))) return;
   let {
-    default: a
+    default: o
   } = await Promise.resolve().then(n.bind(n, 17181));
-  await a({
-    guildId: o.guild.id
-  }), r.ZP.transitionToInvite(o, void 0, !0)
+  await o({
+    guildId: a.guild.id
+  }), r.ZP.transitionToInvite(a, void 0, !0)
 }

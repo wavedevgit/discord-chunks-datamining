@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   M: () => Z
 }), n(653041);
@@ -19,16 +19,16 @@ var r = n(200651),
   b = n(403404),
   _ = n(906732),
   C = n(522651),
-  v = n(243778),
-  y = n(579185),
-  x = n(301076),
+  y = n(243778),
+  x = n(579185),
+  v = n(301076),
   j = n(221241),
   O = n(82965),
   E = n(127379),
   N = n(981631),
   I = n(921944),
   P = n(388032),
-  S = n(535780);
+  S = n(393740);
 
 function Z(e) {
   let {
@@ -41,7 +41,7 @@ function Z(e) {
     setIsHovered: L,
     onMouseEnter: D,
     onMouseLeave: W
-  } = (0, y.Z)(200, 300), U = (0, O.Z)({
+  } = (0, x.Z)(200, 300), U = (0, O.Z)({
     location: "CenterControlTrayActivityButton"
   }), {
     coloredIconsEnabled: B
@@ -64,7 +64,7 @@ function Z(e) {
   M || J.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !M && J.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), M || J.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let $ = i.useRef(!1),
     ee = i.useRef(null);
-  return (0, r.jsx)(v.ZP, {
+  return (0, r.jsx)(y.ZP, {
     contentTypes: J,
     children: e => {
       let {
@@ -126,7 +126,7 @@ function Z(e) {
               }({
                 ref: ee
               }, e), n = n = {
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(v.Z, {
                   disabled: M,
                   "aria-label": R,
                   label: z ? void 0 : R,

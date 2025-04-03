@@ -1,4 +1,4 @@
-/** Chunk was on 59988 **/
+/** Chunk was on 74529 **/
 n.d(t, {
   default: () => d
 }), n(47120), n(266796);
@@ -9,7 +9,7 @@ var r = n(200651),
   s = n(262212),
   c = n(845602),
   l = n(535396),
-  u = n(351638);
+  u = n(384732);
 
 function d(e) {
   var t, n, {
@@ -31,11 +31,9 @@ function d(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [_, m] = o.useState(void 0), g = (0, i.Z)(p), b = o.useMemo(() => {
-    if (p.skuId === l.IN) return (0, r.jsx)(c.Z, {
-      guildId: d
-    })
-  }, [p, d]);
+  let [_, m] = o.useState(void 0), g = (0, i.Z)(p), b = o.useMemo(() => p.skuId === l.IN ? (0, r.jsx)(c.Z, {
+    guildId: d
+  }) : void 0, [p, d]);
   return (0, r.jsxs)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(47120);
 var r = n(192379),
   i = n(166516),
   l = n.n(i),
-  o = n(525654),
-  a = n.n(o),
+  a = n(525654),
+  o = n.n(a),
   s = n(442837),
   c = n(91896),
   u = n(849862),
@@ -22,7 +22,7 @@ var r = n(192379),
 let O = new Set(["Blink", "Gecko", "WebKit"]),
   N = _.dG4;
 if (g.isPlatformEmbedded) N = e => m.ZP.setBadge(e);
-else if (O.has(a().layout)) {
+else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });
@@ -33,7 +33,7 @@ else if (O.has(a().layout)) {
   }
 }
 
-function v() {
+function y() {
   let e = (0, s.e7)([f.Z], () => f.Z.hasIncomingCalls()),
     t = (0, s.e7)([d.default, h.Z, p.Z, c.Z], () => {
       let e = d.default.getTotalMentionCount(),

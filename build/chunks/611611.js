@@ -21,9 +21,9 @@ var r = n(200651),
   j = n(185306),
   y = n(240521),
   x = n(489887),
-  v = n(20281),
-  w = n(388032),
-  _ = n(456222);
+  w = n(20281),
+  v = n(388032),
+  _ = n(735077);
 let P = (0, d.hQ)(),
   C = (0, d.hQ)();
 
@@ -38,11 +38,11 @@ function N(e) {
     children: [(0, r.jsx)(c.vwX, {
       tag: c.RB0.LABEL,
       htmlFor: C,
-      children: w.NW.string(w.t.WBiKnJ)
+      children: v.NW.string(v.t.WBiKnJ)
     }), (0, r.jsx)(c.Kx8, {
       inputRef: i,
       id: C,
-      placeholder: w.NW.string(w.t["/uQqJS"]),
+      placeholder: v.NW.string(v.t["/uQqJS"]),
       value: t,
       className: l()(_.questionInput, {
         [_.hasError]: null != o
@@ -74,9 +74,9 @@ function A(e) {
       color: "header-secondary",
       tag: "label",
       "aria-hidden": !0,
-      children: w.NW.string(w.t.bGHzxc)
+      children: v.NW.string(v.t.bGHzxc)
     }), (0, r.jsx)(c.PhF, {
-      "aria-label": w.NW.formatToPlainString(w.t.nXNHND, {
+      "aria-label": v.NW.formatToPlainString(v.t.nXNHND, {
         duration: o
       }),
       className: _.durationSelect,
@@ -106,7 +106,7 @@ function E(e) {
     onClose: o
   } = e, d = (0, p._N)();
   (0, u.Z)({
-    type: v.n.MODAL,
+    type: w.n.MODAL,
     name: i.z.POLL_EDITOR_VIEWED
   });
   let g = a.useRef(null),
@@ -120,7 +120,7 @@ function E(e) {
         indexToRemove: o,
         numberOfAnswers: l
       } = e;
-      l === x.gY + 1 ? null === (n = I.current) || void 0 === n || null === (t = n.ref) || void 0 === t || t.focus() : null === (a = S.current[o === l - 1 ? o - 1 : o + 1]) || void 0 === a || null === (r = a.ref) || void 0 === r || r.focus()
+      l === x.gY + 1 ? null == (n = I.current) || null == (t = n.ref) || t.focus() : null == (a = S.current[o === l - 1 ? o - 1 : o + 1]) || null == (r = a.ref) || r.focus()
     }, []),
     {
       answers: R,
@@ -157,19 +157,16 @@ function E(e) {
       en(), o()
     }, [o, en]),
     es = a.useCallback(() => {
-      if ((0, p.D$)(W, R, T)) ei();
-      else {
-        (0, y.Z)({
-          title: w.NW.string(w.t.HMrgcn),
-          body: w.NW.string(w.t["Wxa/j4"]),
-          cta: w.NW.string(w.t.TzJA4u),
-          closeLabel: w.NW.string(w.t["2BR5R0"]),
-          onConfirm: () => {
-            ei()
-          }
-        });
-        return
-      }
+      if (!(0, p.D$)(W, R, T)) return void(0, y.Z)({
+        title: v.NW.string(v.t.HMrgcn),
+        body: v.NW.string(v.t["Wxa/j4"]),
+        cta: v.NW.string(v.t.TzJA4u),
+        closeLabel: v.NW.string(v.t["2BR5R0"]),
+        onConfirm: () => {
+          ei()
+        }
+      });
+      ei()
     }, [ei, R, W, T]);
   a.useEffect(() => {
     (0, c.oav)(x.$z, e => {
@@ -207,15 +204,15 @@ function E(e) {
   }, [es, t]), a.useEffect(() => {
     if (R.length > eo.current) {
       var e;
-      null === (e = k.current[R.length - 1]) || void 0 === e || e.focus()
+      null == (e = k.current[R.length - 1]) || e.focus()
     }
     eo.current = R.length
   }, [R.length]), a.useEffect(() => {
     if (ee) {
       var e, t;
-      if ((null == V ? void 0 : V.question) != null) null === (e = g.current) || void 0 === e || e.focus();
+      if ((null == V ? void 0 : V.question) != null) null == (e = g.current) || e.focus();
       else {
-        let e = R.findIndex(e => V["answer-".concat(e.localCreationAnswerId)]); - 1 !== e && (null === (t = k.current[e]) || void 0 === t || t.focus())
+        let e = R.findIndex(e => V["answer-".concat(e.localCreationAnswerId)]); - 1 !== e && (null == (t = k.current[e]) || t.focus())
       }
       et(!1)
     }
@@ -240,7 +237,7 @@ function E(e) {
         variant: "text-lg/semibold",
         className: _.headerText,
         id: P,
-        children: w.NW.string(w.t["GD/8X1"])
+        children: v.NW.string(v.t["GD/8X1"])
       }), (0, r.jsx)(c.olH, {
         onClick: es
       })]
@@ -264,7 +261,7 @@ function E(e) {
         className: l()(_.answerInputsContainer, el ? _.defaultContainer : _.imageOnlyContainer),
         children: [(0, r.jsx)(c.vwX, {
           tag: c.RB0.LEGEND,
-          children: w.NW.string(w.t.oMBfeX)
+          children: v.NW.string(v.t.oMBfeX)
         }), R.map((e, n) => (0, r.jsx)(O.Z, {
           answer: e,
           channelId: t.id,
@@ -288,7 +285,7 @@ function E(e) {
             [_.canRemoveMoreAnswers]: q
           }),
           onClick: K ? X : void 0,
-          "aria-label": w.NW.string(w.t.B2UvmZ),
+          "aria-label": v.NW.string(v.t.B2UvmZ),
           ref: I,
           children: [(0, r.jsx)(c.qJs, {
             size: "md",
@@ -298,7 +295,7 @@ function E(e) {
             variant: "text-md/normal",
             color: "text-muted",
             className: _.addAnswerButtonLabel,
-            children: w.NW.string(w.t.B2UvmZ)
+            children: v.NW.string(v.t.B2UvmZ)
           })]
         })]
       }), (0, r.jsx)(c.LZC, {
@@ -319,7 +316,7 @@ function E(e) {
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
-          children: w.NW.string(w.t["Ux+iQU"])
+          children: v.NW.string(v.t["Ux+iQU"])
         })
       }), (0, r.jsx)(c.zxk, {
         look: c.iLD.FILLED,
@@ -330,7 +327,7 @@ function E(e) {
         children: (0, r.jsx)(c.Text, {
           variant: "text-md/semibold",
           className: _.postButtonText,
-          children: w.NW.string(w.t.JOj8Zm)
+          children: v.NW.string(v.t.JOj8Zm)
         })
       })]
     })]

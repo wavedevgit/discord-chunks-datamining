@@ -1,6 +1,6 @@
 /** Chunk was on 7654 **/
 n.d(t, {
-  default: () => ex
+  default: () => ev
 }), n(789020), n(47120);
 var l, i = n(200651),
   s = n(192379),
@@ -13,13 +13,13 @@ var l, i = n(200651),
   h = n(990547),
   g = n(533800),
   m = n(442837),
-  v = n(902704),
-  x = n(692547),
+  x = n(902704),
+  v = n(692547),
   p = n(481060),
   N = n(447543),
   I = n(247272),
-  j = n(110924),
-  f = n(100527),
+  f = n(110924),
+  j = n(100527),
   S = n(906732),
   E = n(835473),
   T = n(447003),
@@ -56,9 +56,9 @@ var l, i = n(200651),
   et = n(981631),
   en = n(176505),
   el = n(388032),
-  ei = n(478740),
-  es = n(685786),
-  er = n(798847),
+  ei = n(821022),
+  es = n(20493),
+  er = n(264589),
   ea = n(622577);
 
 function eo(e, t, n) {
@@ -119,8 +119,8 @@ class em extends(l = s.PureComponent) {
       modalState: g,
       setModalState: m
     } = this.props, {
-      maxAge: v,
-      maxUses: x,
+      maxAge: x,
+      maxUses: v,
       temporary: p,
       flags: I
     } = g;
@@ -131,8 +131,8 @@ class em extends(l = s.PureComponent) {
         networkError: void 0
       }), N.ZP.createInvite(n, {
         validate: null != t ? t : null,
-        max_age: v,
-        max_uses: x,
+        max_age: x,
+        max_uses: v,
         target_user_id: o,
         target_type: a,
         target_application_id: null == d ? void 0 : d.id,
@@ -198,7 +198,7 @@ class em extends(l = s.PureComponent) {
       children: [(0, i.jsx)(p.P4T, {
         size: "custom",
         className: ei.warningIcon,
-        color: x.Z.unsafe_rawColors.YELLOW_300.css,
+        color: v.Z.unsafe_rawColors.YELLOW_300.css,
         width: 12
       }), (0, i.jsx)(p.Text, {
         variant: "text-xs/normal",
@@ -208,20 +208,22 @@ class em extends(l = s.PureComponent) {
     }) : null
   }
   renderHeader() {
-    let e;
-    let {
-      guild: t,
-      showFriends: n,
-      guildScheduledEvent: l,
-      streamUserId: s,
-      application: r,
-      welcomeToServer: o,
-      inviteChannel: d,
-      modalState: u,
-      handleDone: c
-    } = this.props, {
-      query: h
-    } = u, g = null, m = null;
+    let e, {
+        guild: t,
+        showFriends: n,
+        guildScheduledEvent: l,
+        streamUserId: s,
+        application: r,
+        welcomeToServer: o,
+        inviteChannel: d,
+        modalState: u,
+        handleDone: c
+      } = this.props,
+      {
+        query: h
+      } = u,
+      g = null,
+      m = null;
     if (e = o ? null : null != s ? el.NW.string(el.t["6VQaqa"]) : null != r ? el.NW.formatToPlainString(el.t.ZdK3dX, {
         applicationName: r.name
       }) : null != l ? el.NW.string(el.t.JKV4FB) : (null == d ? void 0 : d.isGuildStageVoice()) ? el.NW.string(el.t.zTrsHx) : el.NW.format(el.t.NvVBJS, {
@@ -352,7 +354,7 @@ class em extends(l = s.PureComponent) {
       application: s
     } = this.props;
     if (n) return this.renderFriendsBody();
-    let r = (0, Y.Z)(null !== (e = this.getInviteKey()) && void 0 !== e ? e : ""),
+    let r = (0, Y.Z)(null != (e = this.getInviteKey()) ? e : ""),
       a = V.default.getCurrentUser();
     d()(null != a, "InstantInviteModal: user cannot be undefined");
     let o = t.isOwner(a) ? el.NW.string(el.t.HFbByM) : el.NW.string(el.t.ueBhAw);
@@ -384,7 +386,7 @@ class em extends(l = s.PureComponent) {
       modalState: d
     } = this.props, {
       maxAge: u
-    } = d, c = null, h = (0, Y.Z)(null !== (e = this.getInviteKey()) && void 0 !== e ? e : "");
+    } = d, c = null, h = (0, Y.Z)(null != (e = this.getInviteKey()) ? e : "");
     if (n) {
       let e = el.NW.string(el.t.MLkj7O);
       null != s ? e = el.NW.string(el.t["1b9nen"]) : null != r ? e = el.NW.string(el.t.iI1gMj) : null != l ? e = el.NW.string(el.t.KaWCyM) : (null == o ? void 0 : o.isGuildStageVoice()) && (e = el.NW.string(el.t["2frWa2"])), c = (0, i.jsxs)(_.Z, {
@@ -425,7 +427,7 @@ class em extends(l = s.PureComponent) {
             className: er.cursorPointer,
             children: (0, i.jsx)(p.ewm, {
               size: "sm",
-              color: x.Z.unsafe_rawColors.PRIMARY_400.css
+              color: v.Z.unsafe_rawColors.PRIMARY_400.css
             })
           })
         }
@@ -528,7 +530,7 @@ class em extends(l = s.PureComponent) {
       let {
         setModalState: n
       } = this.props;
-      null === (t = this._scroller) || void 0 === t || t.scrollTo({
+      null == (t = this._scroller) || t.scrollTo({
         to: 0
       }), (0, I.C)(e), n({
         query: e
@@ -594,7 +596,7 @@ eo(em, "defaultProps", {
   analyticsLocation: et.Sbl.GUILD_CREATE_INVITE_SUGGESTION,
   defaultMaxAge: eh.value
 });
-let ev = s.forwardRef(function(e, t) {
+let ex = s.forwardRef(function(e, t) {
   var n, l;
   let {
     channel: r,
@@ -604,13 +606,13 @@ let ev = s.forwardRef(function(e, t) {
     streamUserId: u,
     applicationId: c,
     transitionState: h,
-    onClose: x,
+    onClose: v,
     welcomeToServer: p,
     page: C,
     analyticsLocation: _
   } = e, {
     analyticsLocations: y
-  } = (0, S.ZP)(f.Z.INSTANT_INVITE_MODAL), O = (0, m.e7)([U.Z, k.Z, R.ZP], () => {
+  } = (0, S.ZP)(j.Z.INSTANT_INVITE_MODAL), O = (0, m.e7)([U.Z, k.Z, R.ZP], () => {
     if (null != r) return r;
     let e = U.Z.getChannelId(),
       t = null == e || (0, en.AB)(e) ? void 0 : k.Z.getChannel(e);
@@ -630,7 +632,7 @@ let ev = s.forwardRef(function(e, t) {
     Y = (0, m.e7)([w.ZP], () => {
       let e = null != O ? O.id : null;
       return null != D ? w.ZP.getProps(D, e) : void 0
-    }, [O, D], v.Z),
+    }, [O, D], x.Z),
     X = (0, m.e7)([L.Z], () => null != O && L.Z.can(et.Plq.CREATE_INSTANT_INVITE, O), [O]),
     J = null === V || !X,
     [Q] = s.useState(() => {
@@ -657,11 +659,11 @@ let ev = s.forwardRef(function(e, t) {
   }, [Q, r, a, c, A]);
   let [ei] = (0, E.Z)(null != c ? [c] : []), es = (0, b.Z)({
     guildId: D
-  }), er = null != V ? V.code : void 0, ea = null == V ? void 0 : V.maxAge, eo = null == V ? void 0 : V.maxUses, eu = null == V ? void 0 : V.temporary, ev = a.vanityURLCode, ex = null != ev && ev.length > 0, ep = !X && !(null == O ? void 0 : O.isGuildVocal()) && ex, eN = (null == O ? void 0 : O.type) === et.d4z.GUILD_VOICE, eI = null !== (n = null == V ? void 0 : V.flags) && void 0 !== n ? n : 0, ej = (0, T.Z)(O);
+  }), er = null != V ? V.code : void 0, ea = null == V ? void 0 : V.maxAge, eo = null == V ? void 0 : V.maxUses, eu = null == V ? void 0 : V.temporary, ex = a.vanityURLCode, ev = null != ex && ex.length > 0, ep = !X && !(null == O ? void 0 : O.isGuildVocal()) && ev, eN = (null == O ? void 0 : O.type) === et.d4z.GUILD_VOICE, eI = null != (n = null == V ? void 0 : V.flags) ? n : 0, ef = (0, T.Z)(O);
   X || (null == el ? void 0 : el.invite_code) == null || (er = el.invite_code);
-  let [ef, eS] = s.useState({
+  let [ej, eS] = s.useState({
     query: "",
-    maxAge: null !== (l = null != ea ? ea : es) && void 0 !== l ? l : eh.value,
+    maxAge: null != (l = null != ea ? ea : es) ? l : eh.value,
     savedMaxAge: ea === ec.value ? null != es ? es : eh.value : ec.value,
     maxUses: null != eo && 0 !== eo ? eo : eg.value,
     temporary: null != eu && eu,
@@ -675,9 +677,9 @@ let ev = s.forwardRef(function(e, t) {
   }, []), eT = s.useCallback(e => {
     eE({
       currentPage: e,
-      lastPage: ef.currentPage
+      lastPage: ej.currentPage
     })
-  }, [ef.currentPage, eE]), eC = eN && !ep && !J && !ej, {
+  }, [ej.currentPage, eE]), eC = eN && !ep && !J && !ef, {
     enabled: eb
   } = P.o.useExperiment({
     guildId: null == a ? void 0 : a.id,
@@ -690,13 +692,13 @@ let ev = s.forwardRef(function(e, t) {
     temporary: eO,
     savedMaxAge: eP,
     flags: eZ
-  } = ef, eA = s.useCallback(() => {
+  } = ej, eA = s.useCallback(() => {
     let {
       currentPage: e,
       lastPage: t
-    } = ef;
-    e === ee.RV.SETTINGS && null != t ? eT(t) : x()
-  }, [eT, ef, x]), ew = s.useCallback(() => {
+    } = ej;
+    e === ee.RV.SETTINGS && null != t ? eT(t) : v()
+  }, [eT, ej, v]), ew = s.useCallback(() => {
     let e = null == O ? void 0 : O.id;
     0 === ey && 0 === e_ && !eO && ep ? eE({
       networkError: void 0,
@@ -718,7 +720,7 @@ let ev = s.forwardRef(function(e, t) {
     }))), e_ !== ec.value && eP !== ec.value && eE({
       savedMaxAge: ec.value
     })
-  }, [ep, X, O, o, null == ei ? void 0 : ei.id, A, u, e_, ey, eO, eE, eP, eZ]), ek = (0, j.Z)(O), eR = (0, j.Z)((0, F.yE)(eZ, g.$.IS_APPLICATION_BYPASS)), eM = null != ek && ek !== O, eW = null != eR && eR !== (0, F.yE)(eZ, g.$.IS_APPLICATION_BYPASS);
+  }, [ep, X, O, o, null == ei ? void 0 : ei.id, A, u, e_, ey, eO, eE, eP, eZ]), ek = (0, f.Z)(O), eR = (0, f.Z)((0, F.yE)(eZ, g.$.IS_APPLICATION_BYPASS)), eM = null != ek && ek !== O, eW = null != eR && eR !== (0, F.yE)(eZ, g.$.IS_APPLICATION_BYPASS);
   s.useEffect(() => {
     !ep && (eM || eW) && ew()
   }, [ew, eM, eW, ep]);
@@ -736,7 +738,7 @@ let ev = s.forwardRef(function(e, t) {
       guild: a,
       guildScheduledEvent: d,
       streamUserId: u,
-      vanityURLCode: ev,
+      vanityURLCode: ex,
       targetType: A,
       targetUserId: u,
       application: ei,
@@ -749,11 +751,11 @@ let ev = s.forwardRef(function(e, t) {
       analyticsLocations: y,
       analyticsLocation: _,
       transitionState: h,
-      onClose: x,
+      onClose: v,
       canShowVanityURL: ep,
       isGuestInviteCreationToggleEnabled: eb && eC,
       shouldHideTemporaryInviteToggle: eb && eC || eD,
-      modalState: ef,
+      modalState: ej,
       setModalState: eE,
       changePage: eT,
       onGenerateNewLink: ew,
@@ -763,11 +765,11 @@ let ev = s.forwardRef(function(e, t) {
   })
 });
 
-function ex(e) {
+function ev(e) {
   let {
     enabled: t
   } = (0, q._k)({
     location: "instant_invite_modal"
-  }), n = t ? X.H : ev;
+  }), n = t ? X.H : ex;
   return (0, i.jsx)(n, ed({}, e))
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(857395),
-  a = n(285008);
+  a = n(857395),
+  o = n(104102);
 let s = function(e) {
   let {
     className: t,
@@ -14,7 +14,7 @@ let s = function(e) {
   } = e, s = i.useCallback((e, t) => {
     e.stopPropagation(), t.onClick(e)
   }, []);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     guildId: n,
     position: "left",
     children: e => {
@@ -40,7 +40,7 @@ let s = function(e) {
         className: t,
         onClick: t => s(t, e),
         children: (0, r.jsx)("div", {
-          className: a.icon,
+          className: o.icon,
           children: (0, r.jsx)(l.bJT, {
             size: "xs",
             color: "currentColor"

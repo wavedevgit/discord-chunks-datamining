@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => R
@@ -21,13 +21,13 @@ var r = n(200651),
   x = n(699516),
   j = n(594174),
   N = n(259580),
-  v = n(51144),
-  _ = n(426563),
+  _ = n(51144),
+  v = n(426563),
   C = n(909746),
   O = n(501801),
   y = n(981631),
   I = n(388032),
-  E = n(4550);
+  E = n(677234);
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,7 +71,7 @@ class P extends i.PureComponent {
       className: E.userHook,
       children: [(0, r.jsx)(d.Text, {
         variant: "text-md/normal",
-        children: v.ZP.getUserTag(e, {
+        children: _.ZP.getUserTag(e, {
           mode: "username"
         })
       }), "0" !== e.discriminator && (0, r.jsxs)(d.Text, {
@@ -83,25 +83,26 @@ class P extends i.PureComponent {
   }
 }
 let w = i.forwardRef((e, t) => {
-  let n;
-  let {
-    log: i,
-    className: s,
-    expanded: o,
-    guildId: f,
-    guild: v,
-    onChannelContextMenu: w,
-    onContentClick: R,
-    onHeaderClick: Z,
-    onTargetContextMenu: D,
-    onUserContextMenu: A,
-    theme: k
-  } = e, W = function() {
-    let {
-      changes: e
-    } = i;
-    return (i.actionType !== y.vB8.DELETE || i.action === y.rsA.MEMBER_BAN_ADD || i.action === y.rsA.MEMBER_KICK || i.action === y.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, O.xO)(i, e))
-  }(), L = E.headerDefault;
+  let n, {
+      log: i,
+      className: s,
+      expanded: o,
+      guildId: f,
+      guild: _,
+      onChannelContextMenu: w,
+      onContentClick: R,
+      onHeaderClick: Z,
+      onTargetContextMenu: D,
+      onUserContextMenu: A,
+      theme: k
+    } = e,
+    W = function() {
+      let {
+        changes: e
+      } = i;
+      return (i.actionType !== y.vB8.DELETE || i.action === y.rsA.MEMBER_BAN_ADD || i.action === y.rsA.MEMBER_KICK || i.action === y.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, O.xO)(i, e))
+    }(),
+    L = E.headerDefault;
   o ? L = E.headerExpanded : W && (L = E.headerClickable);
   let M = i.timestampStart.calendar(),
     G = i.timestampEnd.calendar();
@@ -153,7 +154,7 @@ let w = i.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: E.avatar,
-                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, _.j)() : null === (t = i.user) || void 0 === t ? void 0 : t.getAvatarURL(f, 40),
+                src: i.action === y.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === y.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === y.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === y.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(f, 40),
                 "aria-hidden": !0,
                 size: d.EFr.SIZE_40
               }))
@@ -195,7 +196,7 @@ let w = i.forwardRef((e, t) => {
                     if (null != i.options.integration_type) {
                       var n;
                       let e = u.Z.get(i.options.integration_type);
-                      return null !== (n = null == e ? void 0 : e.name) && void 0 !== n ? n : I.NW.string(I.t["n+olu7"])
+                      return null != (n = null == e ? void 0 : e.name) ? n : I.NW.string(I.t["n+olu7"])
                     }
                     return I.NW.string(I.t["30mdIy"])
                   },
@@ -225,9 +226,9 @@ let w = i.forwardRef((e, t) => {
         }) : null]
       })), o ? (0, r.jsx)("div", {
         className: E.divider
-      }) : null, o && null != v ? (0, r.jsx)(O.tP, {
+      }) : null, o && null != _ ? (0, r.jsx)(O.tP, {
         log: i,
-        guild: v,
+        guild: _,
         onContentClick: R
       }) : null]
     })

@@ -51,7 +51,7 @@ function m(e) {
         } catch (t) {
           var n;
           let e = new s.Hx(t);
-          (0, l.showToast)((0, l.createToast)(null !== (n = e.getAnyErrorMessage()) && void 0 !== n ? n : h.NW.string(h.t.fEptJC), l.ToastType.FAILURE))
+          (0, l.showToast)((0, l.createToast)(null != (n = e.getAnyErrorMessage()) ? n : h.NW.string(h.t.fEptJC), l.ToastType.FAILURE))
         } finally {
           c(!1)
         }

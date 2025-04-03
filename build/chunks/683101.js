@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(294218),
   d = n(592125),
   p = n(388032),
-  h = n(133316);
+  h = n(548185);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ class b extends i.PureComponent {
     }), f(this, "handleMessageClick", e => {
       if (function(e, t) {
           var n;
-          let r = null === (n = window) || void 0 === n ? void 0 : n.getSelection();
+          let r = null == (n = window) ? void 0 : n.getSelection();
           if (null != r && !r.isCollapsed) return !0;
           if (null == e || null == t) return !1;
           for (;
@@ -139,10 +139,7 @@ class b extends i.PureComponent {
             e = e.parentNode
           }
           return !1
-        }(e.target, this.containerRef.current)) {
-        e.stopPropagation();
-        return
-      }
+        }(e.target, this.containerRef.current)) return void e.stopPropagation();
       this.jumpTo(e)
     })
   }

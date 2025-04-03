@@ -33,8 +33,8 @@ var n = r(200651),
   Z = r(176505),
   D = r(20281),
   k = r(388032),
-  T = r(572718),
-  R = r(688044);
+  T = r(663457),
+  R = r(100658);
 
 function E(e) {
   var t;
@@ -50,7 +50,7 @@ function E(e) {
     categoryTabs: C
   } = (0, O.m)(), p = !o || null == s;
   return null == c || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
-    defaultSortOption: null !== (t = null == s ? void 0 : s.store_page_guild_products_default_sort) && void 0 !== t ? t : I.zJ.NAME,
+    defaultSortOption: null != (t = null == s ? void 0 : s.store_page_guild_products_default_sort) ? t : I.zJ.NAME,
     children: (0, n.jsxs)("div", {
       className: T.contentContainer,
       children: [(0, n.jsx)(S.C, {

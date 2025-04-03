@@ -1,16 +1,16 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(406877);
 
-function o(e) {
+function l(e) {
   var t, n, {
-      guildId: o,
-      productId: l,
+      guildId: l,
+      productId: o,
       attachmentId: s
     } = e,
     c = function(e, t) {
@@ -31,7 +31,7 @@ function o(e) {
   let {
     isLoading: u,
     downloadAttachment: d
-  } = (0, a.Z)(o, l);
+  } = (0, a.Z)(l, o);
   return (0, r.jsx)(i.zxk, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

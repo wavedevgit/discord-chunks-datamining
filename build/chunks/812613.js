@@ -6,12 +6,12 @@ t.d(n, {
 }), t(610885), t(126298), t(411104), t(653041), t(951953), t(970173), t(520712), t(268111), t(941497), t(32026), t(480839), t(744285), t(492257), t(873817), t(518263);
 var l = t(512722),
   a = t.n(l),
-  r = t(304809),
-  i = t(70956),
+  i = t(304809),
+  r = t(70956),
   s = t(208049),
   o = t(419202);
 let u = new AudioContext({
-  sampleRate: Math.min((0, r.N)().sampleRate, 48e3)
+  sampleRate: Math.min((0, i.N)().sampleRate, 48e3)
 });
 async function c(e) {
   let n = await e.arrayBuffer();
@@ -38,16 +38,16 @@ async function f(e) {
     guildId: t,
     name: l,
     volume: a,
-    emojiId: r,
-    emojiName: i
+    emojiId: i,
+    emojiName: r
   } = e;
   return (0, s.Dx)({
     guildId: t,
     name: l,
     sound: await n,
     volume: a,
-    emojiId: r,
-    emojiName: i
+    emojiId: i,
+    emojiName: r
   })
 }
 async function m(e) {
@@ -75,16 +75,16 @@ async function m(e) {
       sampleRate: e.sampleRate,
       numberOfFrames: e.length,
       numberOfChannels: e.numberOfChannels,
-      timestamp: 1e6 * e.duration,
+      timestamp: 1e3 * e.duration * 1e3,
       data: t
     }),
-    r = new AudioEncoder({
+    i = new AudioEncoder({
       output: function(t) {
         a()(null != t.duration, "Chunk duration must not be null");
         let l = t.duration / 1e6 * e.sampleRate,
-          r = new Uint8Array(t.byteLength);
-        t.copyTo(r), n.push({
-          buffer: r,
+          i = new Uint8Array(t.byteLength);
+        t.copyTo(i), n.push({
+          buffer: i,
           numSamples: l
         })
       },
@@ -92,11 +92,11 @@ async function m(e) {
         throw Error("Audio encoding error: ".concat(e.message))
       }
     });
-  return r.configure({
+  return i.configure({
     codec: "opus",
     sampleRate: e.sampleRate,
     numberOfChannels: e.numberOfChannels
-  }), r.encode(l), await r.flush(), new Blob([(0, o.Z)(n, {
+  }), i.encode(l), await i.flush(), new Blob([(0, o.Z)(n, {
     channelCount: e.numberOfChannels,
     inputSampleRate: e.sampleRate,
     outputGain: 0,
@@ -112,14 +112,14 @@ async function h(e, n) {
       endMs: l
     } = n, {
       sampleRate: a,
-      numberOfChannels: r,
+      numberOfChannels: i,
       duration: s
-    } = e, o = s * i.Z.Millis.SECOND, c = Math.min(l, o);
+    } = e, o = s * r.Z.Millis.SECOND, c = Math.min(l, o);
     if (0 === t && c === o) return e;
     let d = Math.floor(t / o * e.length),
       f = Math.floor(c / o * e.length),
-      m = u.createBuffer(r, f - d, a);
-    for (let n = 0; n < r; n++) {
+      m = u.createBuffer(i, f - d, a);
+    for (let n = 0; n < i; n++) {
       let t = m.getChannelData(n),
         l = e.getChannelData(n),
         a = 0;

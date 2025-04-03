@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -19,16 +19,16 @@ var i = n(410030),
   g = n(428927),
   b = n(638785),
   _ = n(388032),
-  C = n(272325);
+  C = n(490312);
 
-function v(e) {
+function y(e) {
   let {
     user: t
   } = e, {
     analyticsLocations: n
   } = (0, o.ZP)(), {
-    context: v
-  } = (0, c.KZ)(), y = (0, i.ZP)(), x = (0, l.Z)(), {
+    context: y
+  } = (0, c.KZ)(), x = (0, i.ZP)(), v = (0, l.Z)(), {
     mutualFriendsCount: j,
     mutualFriends: O,
     mutualGuilds: E
@@ -48,7 +48,7 @@ function v(e) {
           user: t,
           guild: n,
           nick: i,
-          theme: y,
+          theme: x,
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
@@ -58,7 +58,7 @@ function v(e) {
       section: "MUTUAL_FRIENDS",
       header: _.NW.string(_.t["0mTJ3t"]),
       listClassName: C.list,
-      onExpand: () => (0, d.Z)(t.id, x),
+      onExpand: () => (0, d.Z)(t.id, v),
       items: null == O ? Array.from({
         length: j
       }).map((e, t) => (0, r.jsxs)("div", {
@@ -98,7 +98,7 @@ function v(e) {
                 })
               }
               return e
-            }({}, v), t = t = {
+            }({}, y), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: n
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

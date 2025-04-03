@@ -15,8 +15,8 @@ var s = n(200651),
   p = n(600164),
   E = n(133080),
   m = n(388032),
-  R = n(293118),
-  f = n(96424);
+  R = n(939175),
+  f = n(20795);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -120,7 +120,7 @@ class C extends i.PureComponent {
       })
     }), g(this, "onClick", e => {
       var t, n;
-      null === (t = (n = this.props).onClick) || void 0 === t || t.call(n, e)
+      null == (t = (n = this.props).onClick) || t.call(n, e)
     }), this.state = {
       query: ""
     }

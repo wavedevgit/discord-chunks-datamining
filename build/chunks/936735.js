@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   k: () => m
@@ -23,8 +23,8 @@ function m(e) {
   } = (0, a.cj)([d.Z], () => {
     var e, t;
     return {
-      memberCount: null !== (e = d.Z.getMemberCount(m)) && void 0 !== e ? e : 1234,
-      onlineCount: null !== (t = d.Z.getOnlineCount(m)) && void 0 !== t ? t : 1234
+      memberCount: null != (e = d.Z.getMemberCount(m)) ? e : 1234,
+      onlineCount: null != (t = d.Z.getOnlineCount(m)) ? t : 1234
     }
   }, [m]), h = i.useRef((0, s.Z)()), f = i.useMemo(() => {
     var e, r;
@@ -66,7 +66,7 @@ function m(e) {
     }), e))
   }, [n, t, g, p]), b = i.useMemo(() => {
     var e;
-    let t = null == f ? void 0 : null === (e = f.emojis) || void 0 === e ? void 0 : e[0];
+    let t = null == f || null == (e = f.emojis) ? void 0 : e[0];
     return null != t ? {
       name: t.require_colons ? ":".concat(t.name, ":") : t.name,
       emojiId: t.id,

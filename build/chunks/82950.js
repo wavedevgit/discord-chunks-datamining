@@ -1,21 +1,21 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(207126),
-  o = n(970821);
+  l = n(763010);
 
-function l(e) {
+function o(e) {
   let {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o.channel,
+    className: l.channel,
     children: [(0, r.jsxs)("div", {
-      className: o.channelLeft,
+      className: l.channelLeft,
       children: [(0, r.jsx)(i.gj8, {}), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         children: t.name

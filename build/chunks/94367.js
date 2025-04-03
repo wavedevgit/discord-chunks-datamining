@@ -42,8 +42,7 @@ function l(e, {
       for (let a of s.Z.all) {
         let s = a.getFormat("color");
         if (s && (n.includes(s.id) || s.ids?.filter(e => n.includes(e)).length)) {
-          let n;
-          let l = Object.keys(a.coords).map((e, t) => r.parsed.args[t] || 0);
+          let n, l = Object.keys(a.coords).map((e, t) => r.parsed.args[t] || 0);
           return s.coordGrammar && (n = c(a, s, "color", l)), t && Object.assign(t, {
             formatId: "color",
             types: n

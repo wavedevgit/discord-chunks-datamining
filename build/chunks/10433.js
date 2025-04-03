@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(873546),
-  o = n(373793),
-  l = n(399606),
+  l = n(373793),
+  o = n(399606),
   s = n(481060),
   c = n(434650),
   u = n(321231),
@@ -18,14 +18,14 @@ var r = n(200651),
   g = n(973616),
   _ = n(914010),
   b = n(626135),
-  v = n(135431),
-  x = n(471518),
-  y = n(370210),
-  E = n(258971),
+  x = n(135431),
+  y = n(471518),
+  E = n(370210),
+  v = n(258971),
   O = n(981631),
   N = n(49898),
   j = n(388032),
-  C = n(560568);
+  C = n(280306);
 
 function I(e) {
   var t, n, I;
@@ -37,9 +37,9 @@ function I(e) {
     enabled: A
   } = u.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
-  }), [w, Z, k] = (0, l.Wu)([y.Z], () => [y.Z.getApplication(S), y.Z.isInvalidApplication(S), y.Z.getApplicationFetchState(S)], [S]), R = (0, l.e7)([h.default], () => h.default.locale), D = (0, l.e7)([_.Z], () => {
+  }), [w, Z, k] = (0, o.Wu)([E.Z], () => [E.Z.getApplication(S), E.Z.isInvalidApplication(S), E.Z.getApplicationFetchState(S)], [S]), R = (0, o.e7)([h.default], () => h.default.locale), D = (0, o.e7)([_.Z], () => {
     var e;
-    return null !== (e = _.Z.getGuildId()) && void 0 !== e ? e : void 0
+    return null != (e = _.Z.getGuildId()) ? e : void 0
   }), [L, M] = i.useState(!1), W = i.useCallback(e => {
     e && M(!0)
   }, []), U = (0, c.O)(W), F = i.useCallback(() => {
@@ -52,9 +52,9 @@ function I(e) {
     })
   }, [S, D, T.author.id, T.channel_id]);
   i.useEffect(() => {
-    (0, x.gZ)(S)
+    (0, y.gZ)(S)
   }, [S]), i.useEffect(() => {
-    L && k === y.M.FETCHED && F()
+    L && k === E.M.FETCHED && F()
   }, [L, k, F]), i.useEffect(() => {
     L && Z && b.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
@@ -76,7 +76,7 @@ function I(e) {
       newSessionState: {
         guildId: D,
         entrypoint: {
-          name: E.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
+          name: v.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
         }
       }
     })
@@ -104,7 +104,7 @@ function I(e) {
       })
     })]
   });
-  if (null == w || k === y.M.FETCHING) return (0, r.jsxs)(f.Z, {
+  if (null == w || k === E.M.FETCHING) return (0, r.jsxs)(f.Z, {
     containerRef: U,
     children: [(0, r.jsx)(f.Z.Header, {
       text: j.NW.string(j.t.m9hXGR)
@@ -116,13 +116,13 @@ function I(e) {
       notation: "compact",
       compactDisplay: "short"
     }),
-    H = null !== (n = null === (t = w.directory_entry) || void 0 === t ? void 0 : t.guild_count) && void 0 !== n ? n : 0,
+    H = null != (n = null == (t = w.directory_entry) ? void 0 : t.guild_count) ? n : 0,
     V = (0, p.E)({
       customInstallUrl: w.custom_install_url,
       installParams: w.install_params,
       integrationTypesConfig: w.integration_types_config
     }),
-    z = o.Y.GUILD_INSTALL in (null !== (I = w.integration_types_config) && void 0 !== I ? I : {}) && V;
+    z = l.Y.GUILD_INSTALL in (null != (I = w.integration_types_config) ? I : {}) && V;
   return (0, r.jsxs)(f.Z, {
     containerRef: U,
     children: [(0, r.jsx)(f.Z.Header, {
@@ -155,7 +155,7 @@ function I(e) {
         })]
       }), V && (0, r.jsx)(f.Z.Button, {
         onClick: () => {
-          null != w && (0, v.L)({
+          null != w && (0, x.L)({
             applicationId: S,
             customInstallUrl: w.custom_install_url,
             installParams: w.install_params,

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -21,13 +21,13 @@ var r = n(200651),
   x = n(723047),
   j = n(416867),
   N = n(903773),
-  v = n(215124),
-  _ = n(326578),
+  _ = n(215124),
+  v = n(326578),
   C = n(981631),
   O = n(674563),
   y = n(829857),
   I = n(388032),
-  E = n(209951);
+  E = n(738309);
 
 function S(e) {
   let {
@@ -62,7 +62,7 @@ function T(e) {
     value: e.id
   })), [n]), f = async () => {
     await d(t, l, O.wW.GUILD_ROLE_SUBSCRIPTIONS) && (g(t.id), (0, j.B)({
-      Icon: _.Z,
+      Icon: v.Z,
       title: I.NW.string(I.t["AP/2qa"]),
       body: I.NW.string(I.t.kHMgaG)
     }))
@@ -97,12 +97,12 @@ let P = e => {
     guild: t
   } = e, n = (0, s.e7)([p.default], () => p.default.getCurrentUser()), c = t.isOwner(n), b = (0, o.Ob)(t), x = (0, s.e7)([h.Z], () => h.Z.isFocused()), {
     teams: j,
-    loading: _
+    loading: v
   } = (0, g.Z)({
     refreshOnDepChange: x
   }), O = i.useMemo(() => j.filter(e => {
     var t;
-    return e.payout_account_status !== y.C.BLOCKED && (0, m.Z)(null !== (t = null == n ? void 0 : n.id) && void 0 !== t ? t : C.lds, e)
+    return e.payout_account_status !== y.C.BLOCKED && (0, m.Z)(null != (t = null == n ? void 0 : n.id) ? t : C.lds, e)
   }), [j, n]), P = O.length > 0, w = i.useCallback(async () => {
     f.default.track(C.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: b,
@@ -116,7 +116,7 @@ let P = e => {
     onClick: w,
     children: e
   }) : e, [w, c]);
-  return _ ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  return v ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [!c && (0, r.jsx)(N.Z, {
       className: E.nonOwnerNotice,
       children: I.NW.string(I.t.t56qWF)
@@ -141,7 +141,7 @@ let P = e => {
     }), (0, r.jsx)(a.hjN, {
       title: I.NW.string(I.t["0n7R2d"]),
       className: E.selfDemonetization,
-      children: (0, r.jsx)(v.Z, {
+      children: (0, r.jsx)(_.Z, {
         guildId: t.id,
         allPeriods: []
       })

@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120), n(301563);
 var o = n(200651),
   i = n(192379),
-  l = n(873546),
-  c = n(442837),
+  c = n(873546),
+  l = n(442837),
   s = n(481060),
   a = n(980591),
   u = n(605782),
@@ -15,7 +15,7 @@ var o = n(200651),
   p = n(353926),
   f = n(703656),
   b = n(981631),
-  m = n(337384);
+  m = n(963865);
 let _ = n(575703),
   E = n(2984),
   O = [b.Z5c.LOGIN, b.Z5c.LOGIN_HANDOFF, b.Z5c.REGISTER, b.Z5c.INVITE(""), b.Z5c.GIFT_CODE(""), b.Z5c.GUILD_TEMPLATE_LOGIN(""), b.Z5c.GUILD_TEMPLATE(""), b.Z5c.DISABLE_EMAIL_NOTIFICATIONS, b.Z5c.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS, b.Z5c.BILLING_PREMIUM_SUBSCRIBE, b.Z5c.BILLING_PAYMENT_SOURCES_CREATE, b.Z5c.BILLING_PAYMENTS, b.Z5c.BILLING_PREMIUM_SWITCH_PLAN, b.Z5c.BILLING_GUILD_SUBSCRIPTIONS_PURCHASE, b.Z5c.VERIFY, b.Z5c.VERIFY_HUB_EMAIL, b.Z5c.REJECT_IP, b.Z5c.REJECT_MFA, b.Z5c.AUTHORIZE_IP, b.Z5c.AUTHORIZE_PAYMENT, b.Z5c.RESET, b.Z5c.HANDOFF, b.Z5c.REPORT, b.Z5c.REPORT_SECOND_LOOK, b.Z5c.ACCOUNT_REVERT("")];
@@ -31,7 +31,7 @@ function T(e) {
   } = e;
   switch (function() {
       var e;
-      let [t, n] = i.useState(!1), [o, l] = i.useState(!0), s = (0, c.e7)([p.Z], () => p.Z.hasLoadedExperiments);
+      let [t, n] = i.useState(!1), [o, c] = i.useState(!0), s = (0, l.e7)([p.Z], () => p.Z.hasLoadedExperiments);
       return ((0, a.Z)(() => {}, 300), void 0 !== r) ? r : !o && s ? (t || n(!0), I((e = 0, "default"))) : o ? I("default") : "loading"
     }()) {
     case "default":
@@ -109,7 +109,7 @@ class Z extends i.Component {
     let {
       isMobileWidth: e
     } = this.state, t = navigator.userAgent.includes("GameLauncher");
-    return e || l.tq || l.Em || t ? this.renderMobile() : this.renderDefault()
+    return e || c.tq || c.Em || t ? this.renderMobile() : this.renderDefault()
   }
   constructor(e) {
     var t, n;

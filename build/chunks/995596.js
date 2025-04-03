@@ -1,6 +1,6 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  Z: () => g
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   b = n(889711),
   f = n(384433),
   N = n(388032),
-  p = n(427923);
+  p = n(86931);
 let C = e => [{
     id: f.e.ALL_MEMBERS,
     label: N.NW.string(N.t.NOOm1d)
@@ -31,7 +31,7 @@ let C = e => [{
     id: f.e.REJECTED,
     label: N.NW.string(N.t.bSZklZ)
   }],
-  v = e => {
+  _ = e => {
     let {
       tabs: t,
       selectedTab: n,
@@ -61,7 +61,7 @@ let C = e => [{
     })
   };
 
-function _(e) {
+function g(e) {
   let {
     onTabSelect: t,
     tabs: n,
@@ -77,7 +77,7 @@ function _(e) {
       let {
         closePopout: l
       } = e;
-      return (0, r.jsx)(v, {
+      return (0, r.jsx)(_, {
         selectedTab: i,
         onClose: l,
         tabs: n,
@@ -140,14 +140,14 @@ function _(e) {
   })
 }
 
-function g(e) {
+function v(e) {
   let {
     guildId: t,
     currentTab: n,
     onTabSelect: i
-  } = e, [a, c] = l.useState(0), u = l.useRef(null), v = l.useRef(a), g = (0, x.A)({
+  } = e, [a, c] = l.useState(0), u = l.useRef(null), _ = l.useRef(a), v = (0, x.A)({
     guildId: t
-  }), T = C(null != g ? g : 0), {
+  }), T = C(null != v ? v : 0), {
     lastVisibleIndex: E,
     onItemLayout: I,
     overflowItemsRef: S
@@ -160,8 +160,8 @@ function g(e) {
     guildId: t
   }), P = l.useMemo(() => n === f.e.ALL_MEMBERS ? y : null != R && null != R.user, [n, y, R]), O = l.useMemo(() => T.slice(0, E + 1), [E, T]), w = l.useMemo(() => T.slice(E + 1), [E, T]), M = l.useCallback(() => {
     var e;
-    let t = null === (e = u.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
-    null != t && v.current !== t.width && (c(t.width), v.current = t.width)
+    let t = null == (e = u.current) ? void 0 : e.getBoundingClientRect();
+    null != t && _.current !== t.width && (c(t.width), _.current = t.width)
   }, []);
   return l.useEffect(() => {
     let e = (0, b.pP)(M);
@@ -186,7 +186,7 @@ function g(e) {
           })
         }, e.id)), (0, r.jsx)("div", {
           ref: S,
-          children: (0, r.jsx)(_, {
+          children: (0, r.jsx)(g, {
             tabs: w,
             onTabSelect: i,
             selectedTab: n
@@ -201,7 +201,7 @@ function g(e) {
           id: e.id,
           "aria-label": e.label,
           children: e.label
-        }, e.id)), 0 !== w.length ? (0, r.jsx)(_, {
+        }, e.id)), 0 !== w.length ? (0, r.jsx)(g, {
           tabs: w,
           onTabSelect: i,
           selectedTab: n

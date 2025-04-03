@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -24,22 +24,22 @@ let m = i.memo(function(e) {
     setEditingRule: f
   } = (0, l.V)(), {
     isLoading: b
-  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), C = i.useCallback(() => {
+  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, v = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), C = i.useCallback(() => {
     h(t.guildId, t.triggerType)
   }, [t.guildId, t.triggerType, h]), O = i.useCallback(e => {
-    !b && f(e, !0)
+    b || f(e, !0)
   }, [b, f]);
   i.useEffect(() => {
     m && f(t, !0)
   }, [m, t, f]);
   let y = i.useCallback(() => {
-    j ? g || f(null) : g ? _(() => {
+    j ? g || f(null) : g ? v(() => {
       f(t)
     }) : f(t)
-  }, [j, g, _, t, f]);
+  }, [j, g, v, t, f]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: v,
+      rule: _,
       forceSetup: x && !j && !N,
       triggerType: t.triggerType,
       isEditMode: j,
@@ -51,7 +51,7 @@ let m = i.memo(function(e) {
     isExpanded: j,
     onExpand: y,
     children: j && (0, r.jsx)(c.Z, {
-      rule: v,
+      rule: _,
       isLoading: b,
       onChangeRule: O
     })

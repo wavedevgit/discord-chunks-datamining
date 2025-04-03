@@ -25,7 +25,7 @@ var r = n(200651),
   g = n(981631),
   b = n(474936),
   O = n(388032),
-  x = n(44020);
+  x = n(231788);
 
 function M(e) {
   let {
@@ -77,7 +77,7 @@ function L(e) {
     sourceAnalyticsLocations: T
   } = (0, p.ZP)(u.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: j
-  } = (0, a.TCT)(), C = (0, c.ap)(j) ? a.zxk.Colors.PRIMARY : a.zxk.Colors.WHITE, A = null == n || null == n.premiumSubscriptionType, R = f.ZP.getPrice(b.Xh.PREMIUM_MONTH_TIER_2, !1, !1, L), D = (0, I.T4)(R.amount, R.currency), Z = (0, P.N)(), v = null == Z ? void 0 : Z.trial_id, w = (null == Z ? void 0 : null === (t = Z.subscription_trial) || void 0 === t ? void 0 : t.sku_id) === b.Si.TIER_2;
+  } = (0, a.TCT)(), C = (0, c.ap)(j) ? a.zxk.Colors.PRIMARY : a.zxk.Colors.WHITE, A = null == n || null == n.premiumSubscriptionType, R = f.ZP.getPrice(b.Xh.PREMIUM_MONTH_TIER_2, !1, !1, L), D = (0, I.T4)(R.amount, R.currency), Z = (0, P.N)(), v = null == Z ? void 0 : Z.trial_id, w = (null == Z || null == (t = Z.subscription_trial) ? void 0 : t.sku_id) === b.Si.TIER_2;
   return l.useEffect(() => {
     S.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
       type: b.cd.GUILD_PREMIUM_UPSELL_MODAL,

@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
   a = n(481060),
-  o = n(475179),
-  l = n(287734),
+  l = n(475179),
+  o = n(287734),
   s = n(933557),
   c = n(124072),
   u = n(703656),
@@ -20,16 +20,16 @@ var i = n(442837),
   _ = n(900849),
   b = n(981631);
 
-function v(e) {
+function x(e) {
   let {
     channel: t,
     onClick: n,
-    beforeTransition: v,
-    className: x,
-    openChatWithoutConnecting: y
-  } = e, E = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
+    beforeTransition: x,
+    className: y,
+    openChatWithoutConnecting: E
+  } = e, v = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
   return (0, r.jsx)(a.ua7, {
-    text: E,
+    text: v,
     position: "top",
     children: e => {
       let {
@@ -38,33 +38,30 @@ function v(e) {
       } = e;
       return (0, r.jsx)(c.Z, {
         role: "link",
-        className: x,
+        className: y,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != v && v(), (0, a.pTH)(), function(e, t) {
+          e.stopPropagation(), null != n ? n() : (null != x && x(), (0, a.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);
-            if ((null == r ? void 0 : r.joinedAt) == null) {
-              _.Ub(e, {}, {
-                channelId: t
-              });
-              return
-            }
+            if ((null == r ? void 0 : r.joinedAt) == null) return _.Ub(e, {}, {
+              channelId: t
+            });
             let i = p.Z.getChannel(t);
             if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                o.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
+                l.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
-              l.default.selectVoiceChannel(i.id);
+              o.default.selectVoiceChannel(i.id);
               return
             }(0, u.uL)(b.Z5c.CHANNEL(e, t))
-          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, y))
+          }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, E))
         },
         onMouseEnter: i,
         onMouseLeave: s,
         iconType: (0, g.wl)(t),
-        children: E
+        children: v
       })
     }
   })

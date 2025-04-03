@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   BV: () => j,
   FW: () => O,
@@ -9,8 +9,8 @@ var r = n(442837),
   i = n(493683),
   s = n(153867),
   a = n(636449),
-  o = n(774226),
-  l = n(122613),
+  l = n(774226),
+  o = n(122613),
   c = n(100527),
   d = n(87005),
   u = n(895924),
@@ -28,7 +28,7 @@ async function E(e, t, n) {
   let r = e.bot;
   if (null == r) try {
     var s;
-    if (r = null === (s = x.Z.getApplication(e.id)) || void 0 === s ? void 0 : s.bot, null == r) {
+    if (r = null == (s = x.Z.getApplication(e.id)) ? void 0 : s.bot, null == r) {
       let t = await (0, N.UM)(e.id);
       e = t, r = p.ZP.createFromServer(t).bot
     }
@@ -37,11 +37,10 @@ async function E(e, t, n) {
     return
   }
   if (null != r) {
-    let s;
-    let d = null == h.Z.getDMFromUserId(r.id);
+    let s, d = null == h.Z.getDMFromUserId(r.id);
     try {
       s = (0, a.R)({
-        isContextless: (0, o.Kb)(e)
+        isContextless: (0, l.Kb)(e)
       }) ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel([r.id], !1, !1, c.Z.APP_DMS_QUICK_LAUNCHER)
     } catch (e) {
       t(void 0)
@@ -50,19 +49,13 @@ async function E(e, t, n) {
         application_id: e.id,
         is_new_dm: d,
         channel_id: s
-      }), null == s) {
-      t(void 0);
-      return
-    }
+      }), null == s) return void t(void 0);
     try {
       await (0, m.ZP)(s, e.id)
     } catch (e) {
-      if (e.message === m.sV) {
-        t(void 0);
-        return
-      }
+      if (e.message === m.sV) return void t(void 0)
     }
-    await (0, l.Z)({
+    await (0, o.Z)({
       targetApplicationId: e.id,
       channelId: s,
       analyticsLocations: n,

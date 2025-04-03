@@ -5,9 +5,9 @@ r.d(t, {
 var n = r(200651);
 r(192379);
 var l = r(481060),
-  i = r(600164),
-  s = r(388032),
-  o = r(366378);
+  s = r(600164),
+  i = r(388032),
+  o = r(895453);
 let a = {
   SlideContent: function(e) {
     let {
@@ -35,33 +35,33 @@ let a = {
     var t, r, {
         mfaChallenge: a,
         setSlide: c,
-        showConfirm: d = !1
+        showConfirm: u = !1
       } = e,
-      u = function(e, t) {
+      d = function(e, t) {
         if (null == e) return {};
         var r, n, l = function(e, t) {
           if (null == e) return {};
           var r, n, l = {},
-            i = Object.keys(e);
-          for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+            s = Object.keys(e);
+          for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
           return l
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+          var s = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
         }
         return l
       }(e, ["mfaChallenge", "setSlide", "showConfirm"]);
     let f = a.methods.length > 1;
-    return f || d ? (0, n.jsxs)(l.mzw, {
+    return f || u ? (0, n.jsxs)(l.mzw, {
       className: o.footer,
-      direction: d && !f ? i.Z.Direction.HORIZONTAL_REVERSE : i.Z.Direction.HORIZONTAL,
+      direction: u && !f ? s.Z.Direction.HORIZONTAL_REVERSE : s.Z.Direction.HORIZONTAL,
       children: [f && (0, n.jsx)(l.zxk, {
         look: l.zxk.Looks.LINK,
         onClick: () => c("select"),
         color: l.zxk.Colors.PRIMARY,
-        children: s.NW.string(s.t.Tot4EB)
-      }), d && (0, n.jsx)(l.zxk, (t = function(e) {
+        children: i.NW.string(i.t.Tot4EB)
+      }), u && (0, n.jsx)(l.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -80,8 +80,8 @@ let a = {
         return e
       }({
         type: "submit"
-      }, u), r = r = {
-        children: s.NW.string(s.t["cY+Ooa"])
+      }, d), r = r = {
+        children: i.NW.string(i.t["cY+Ooa"])
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -100,12 +100,12 @@ let a = {
       onClose: r
     } = e;
     return (0, n.jsxs)(l.xBx, {
-      direction: i.Z.Direction.VERTICAL,
+      direction: s.Z.Direction.VERTICAL,
       className: o.header,
       separator: !1,
       children: [(0, n.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
-        children: s.NW.string(s.t.saHocH)
+        children: i.NW.string(i.t.saHocH)
       }), null != t && (0, n.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-md/normal",

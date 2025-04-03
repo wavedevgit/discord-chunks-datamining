@@ -14,7 +14,7 @@ let l = "undefined" == typeof ResizeObserver ? a.d : ResizeObserver,
       let {
         target: n
       } = e;
-      null === (t = s.get(n)) || void 0 === t || t(e)
+      null == (t = s.get(n)) || t(e)
     })
   }),
   c = () => {

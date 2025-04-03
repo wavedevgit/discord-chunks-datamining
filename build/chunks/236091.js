@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => b
 });
@@ -16,7 +16,7 @@ var i = n(120356),
   h = n(435064),
   f = n(354459),
   m = n(388032),
-  g = n(184667);
+  g = n(811191);
 let b = e => {
   let {
     className: t,
@@ -26,7 +26,7 @@ let b = e => {
     var e;
     if (null == n) return !1;
     let t = d.Z.getCurrentUserActiveStream(),
-      r = null === (e = u.ZP.getVisibleGame()) || void 0 === e ? void 0 : e.windowHandle;
+      r = null == (e = u.ZP.getVisibleGame()) ? void 0 : e.windowHandle;
     return null != t && !!h.Z.getSettings().clipsEnabled && !!i || null != r && !!h.Z.getSettings().decoupledClipsEnabled && !!b || c.Z.getParticipants(n).some(e => e.type === f.fO.USER && h.Z.isClipsEnabledForUser(e.user.id))
   }) ? (0, r.jsxs)(s.DY3, {
     text: m.NW.string(m.t.DJXW3N),

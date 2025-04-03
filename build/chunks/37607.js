@@ -1,11 +1,11 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => j
 });
 var r = n(200651),
   i = n(192379),
-  o = n(392711),
-  l = n.n(o),
+  l = n(392711),
+  o = n.n(l),
   a = n(481060),
   s = n(139387),
   c = n(835473),
@@ -16,7 +16,7 @@ var r = n(200651),
   b = n(466070),
   g = n(981631),
   f = n(388032),
-  h = n(418906);
+  h = n(5692);
 
 function x(e) {
   let {
@@ -40,7 +40,7 @@ function x(e) {
         channel: e,
         application: i,
         name: e.name,
-        icon: null !== (t = (0, d.KS)(e)) && void 0 !== t ? t : void 0,
+        icon: null != (t = (0, d.KS)(e)) ? t : void 0,
         iconWrapperClassName: h.iconwrapper,
         hasNextSection: !0,
         trailing: (0, r.jsx)(a.vdY, {
@@ -54,10 +54,10 @@ function x(e) {
 function j(e) {
   let {
     guild: t
-  } = e, n = (0, p.F)(t.id), o = l().groupBy(n, e => {
+  } = e, n = (0, p.F)(t.id), l = o().groupBy(n, e => {
     var t;
-    return null === (t = e.linkedLobby) || void 0 === t ? void 0 : t.application_id
-  }), c = Object.keys(o);
+    return null == (t = e.linkedLobby) ? void 0 : t.application_id
+  }), c = Object.keys(l);
   return i.useEffect(() => {
     0 === n.length && s.Z.setSection(g.b4C.OVERVIEW)
   }, [n]), (0, r.jsxs)(a.hjN, {
@@ -70,7 +70,7 @@ function j(e) {
       className: h.headerDivider
     }), c.map(e => (0, r.jsx)(x, {
       applicationId: e,
-      channels: o[e]
+      channels: l[e]
     }, e))]
   })
 }

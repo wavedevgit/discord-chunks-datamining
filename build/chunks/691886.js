@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -18,7 +18,7 @@ var r = n(200651),
   h = n(303737),
   f = n(981631),
   b = n(388032),
-  x = n(463561);
+  x = n(621885);
 
 function j(e) {
   return String(e)
@@ -50,7 +50,7 @@ function N(e) {
   })
 }
 
-function v() {
+function _() {
   return (0, r.jsx)(N, {
     icon: (0, r.jsx)(o.qJs, {
       size: "md",
@@ -62,11 +62,11 @@ function v() {
   })
 }
 
-function _(e) {
+function v(e) {
   var t;
   let {
     channelId: n
-  } = e, i = (0, h.m7)(n), s = (0, h.m7)(null !== (t = null == i ? void 0 : i.parent_id) && void 0 !== t ? t : f.lds);
+  } = e, i = (0, h.m7)(n), s = (0, h.m7)(null != (t = null == i ? void 0 : i.parent_id) ? t : f.lds);
   if (null == i) return null;
   let a = (0, d.KS)(i),
     l = (0, c.F6)(i, p.default, g.Z),
@@ -84,9 +84,9 @@ function C(e) {
   let {
     value: t
   } = e;
-  return null != t ? (0, r.jsx)(_, {
+  return null != t ? (0, r.jsx)(v, {
     channelId: t
-  }) : (0, r.jsx)(v, {})
+  }) : (0, r.jsx)(_, {})
 }
 
 function O(e) {
@@ -97,17 +97,17 @@ function O(e) {
     omitChannelIds: d,
     "aria-labelledby": x,
     onChange: N
-  } = e, v = b.NW.string(b.t.d7YJMD), _ = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), O = (0, h.m7)(null != s ? s : f.lds), y = i.useMemo(() => {
+  } = e, _ = b.NW.string(b.t.d7YJMD), v = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), O = (0, h.m7)(null != s ? s : f.lds), y = i.useMemo(() => {
     let e = [{
         value: null,
-        label: v
+        label: _
       }],
       t = !1;
-    for (let n of _._categories)
+    for (let n of v._categories)
       for (let {
           channel: r
         }
-        of _[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
+        of v[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, g.Z)
       })));
@@ -115,7 +115,7 @@ function O(e) {
       value: s,
       label: O.name
     }), e
-  }, [v, s, O, _, d, a]);
+  }, [_, s, O, v, d, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: b.NW.string(b.t.r2pts7),
     options: y,
@@ -123,7 +123,7 @@ function O(e) {
       null == e ? (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("7590"), n.e("45094"), n.e("80440")]).then(n.bind(n, 797671));
+        } = await Promise.all([n.e("7590"), n.e("45094"), n.e("99927")]).then(n.bind(n, 797671));
         return n => {
           var i, s;
           return (0, r.jsx)(e, (i = function(e) {

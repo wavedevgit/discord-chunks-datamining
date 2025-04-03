@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => b
 }), n(266796), n(47120);
@@ -14,7 +14,7 @@ var r = n(200651),
   p = n(359993),
   m = n(981631),
   h = n(388032),
-  g = n(195728);
+  g = n(886141);
 
 function f(e) {
   let {
@@ -62,7 +62,7 @@ function _(e) {
     similarLoadId: _
   } = e, b = (0, p.Z)({
     application: u
-  }), v = null === (t = u.categories) || void 0 === t ? void 0 : t[0], x = a.useMemo(() => o.ZP.getApplicationIconURL({
+  }), x = null == (t = u.categories) ? void 0 : t[0], v = a.useMemo(() => o.ZP.getApplicationIconURL({
     id: u.id,
     icon: u.icon,
     size: 48
@@ -82,7 +82,7 @@ function _(e) {
     children: [(0, r.jsxs)("div", {
       className: g.appHeader,
       children: [(0, r.jsx)("img", {
-        src: x,
+        src: v,
         alt: "",
         className: g.avatar,
         height: 48,
@@ -101,11 +101,11 @@ function _(e) {
             className: g.appName,
             children: u.name
           })
-        }), null != v ? (0, r.jsx)(i.Text, {
+        }), null != x ? (0, r.jsx)(i.Text, {
           className: g.appCategory,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: v.name
+          children: x.name
         }) : null]
       })]
     }), (0, r.jsx)(i.Text, {
@@ -113,7 +113,7 @@ function _(e) {
       variant: "text-sm/medium",
       color: "header-secondary",
       lineClamp: 2,
-      children: null !== (l = null === (n = u.directory_entry) || void 0 === n ? void 0 : n.short_description) && void 0 !== l ? l : u.description
+      children: null != (l = null == (n = u.directory_entry) ? void 0 : n.short_description) ? l : u.description
     }), (0, r.jsx)(d.Z, {
       application: u,
       textVariant: "text-xs/medium",

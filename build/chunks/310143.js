@@ -3,8 +3,7 @@
 var a = t(381811);
 t(306872)(r, "__esModule", {
   value: !0
-}), r.default = void 0;
-var o = new(a(t(477546))).default([
+}), r.default = void 0, r.default = new(a(t(477546))).default([
   ["a", {
     reserved: !1
   }],
@@ -392,5 +391,4 @@ var o = new(a(t(477546))).default([
   ["xmp", {
     reserved: !1
   }]
-]);
-r.default = o
+])

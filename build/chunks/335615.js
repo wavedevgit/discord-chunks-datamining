@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => eh
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(941028),
   _ = n(144144),
   C = n(276264),
-  v = n(607070),
-  y = n(100527),
-  x = n(367907),
+  y = n(607070),
+  x = n(100527),
+  v = n(367907),
   j = n(906732),
   O = n(493324),
   E = n(611064),
@@ -52,7 +52,7 @@ var r = n(200651),
   X = n(998502),
   Q = n(981631),
   J = n(388032),
-  $ = n(205145);
+  $ = n(11847);
 
 function ee(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,8 +141,8 @@ class ea extends i.Component {
         premiumSince: b,
         nameplate: _
       } = e,
-      v = er(e, ["colorString", "colorRoleName", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]),
-      y = null != b ? new Date(b) : null;
+      y = er(e, ["colorString", "colorRoleName", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]),
+      x = null != b ? new Date(b) : null;
     return (0, r.jsx)(m.yRy, {
       clickTrap: !0,
       preload: () => (0, D.Z)(o, {
@@ -168,7 +168,7 @@ class ea extends i.Component {
           activities: s,
           applicationStream: c,
           isOwner: i,
-          premiumSince: y,
+          premiumSince: x,
           colorString: t,
           colorRoleName: n,
           isTyping: f,
@@ -177,7 +177,7 @@ class ea extends i.Component {
           isMobile: g,
           onClickPremiumGuildIcon: this.openGuildSubscriptionModal,
           selected: m,
-          itemProps: v,
+          itemProps: y,
           nameplate: _
         }, e))
       }
@@ -188,7 +188,7 @@ class ea extends i.Component {
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(F.Z.getVoiceChannelId(), this.props.user.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(F.Z.getVoiceChannelId(), this.props.user.id);
         return n => (0, r.jsx)(e, en(et({}, n), {
           user: this.props.user,
           guildId: this.props.guildId,
@@ -235,7 +235,7 @@ let es = i.memo(e => {
       index: o
     } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([V.default], () => V.default.getCurrentUser()), d = (0, h.e7)([H.Z], () => {
       var e;
-      return null != t ? null === (e = H.Z.getRole(i.guild_id, t)) || void 0 === e ? void 0 : e.name : void 0
+      return null != t ? null == (e = H.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
     }, [i, t]), p = (0, k.K)({
       location: "ChannelMembers",
       user: l
@@ -361,7 +361,7 @@ class ed extends i.Component {
                   innerAriaLabel: J.NW.string(J.t["9Oq93t"]),
                   ref: e => {
                     var t;
-                    this._list = e, this.props.listRef.current = e, l.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
+                    this._list = e, this.props.listRef.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
                   },
                   className: o()($.members, {
                     [$.fullWidth]: d.tq
@@ -523,7 +523,7 @@ class ed extends i.Component {
     }, 50)), ee(this, "trackMemberListViewed", () => {
       var e;
       if (this.lastReportedAnalyticsChannel === this.props.channel.id) return;
-      let t = null === (e = this._list) || void 0 === e ? void 0 : e.getItems(),
+      let t = null == (e = this._list) ? void 0 : e.getItems(),
         {
           rowsVisible: n
         } = this.getDimensions();
@@ -538,7 +538,7 @@ class ed extends i.Component {
         num_users_visible_with_activity: 0,
         num_users_visible_with_avatar_decoration: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(Q.rMx.MEMBER_LIST_VIEWED, et({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, v.ZP.trackWithMetadata(Q.rMx.MEMBER_LIST_VIEWED, et({}, i))
     })
   }
 }
@@ -549,7 +549,7 @@ function ep(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, j.ZP)(y.Z.MEMBER_LIST), a = (0, h.e7)([v.Z], () => v.Z.keyboardModeEnabled), s = (0, h.cj)([B.ZP], () => B.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, j.ZP)(x.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([B.ZP], () => B.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: f,
@@ -560,12 +560,12 @@ function ep(e) {
     guildId: t.guild_id
   }), b = i.useRef(null), _ = (0, A.Q3)("ChannelMembers"), {
     density: C
-  } = (0, m.TCT)(), x = _ ? "compact" === C ? 42 : 50 : el, O = i.useCallback((e, t) => {
+  } = (0, m.TCT)(), v = _ ? "compact" === C ? 42 : 50 : el, O = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
       [i, l] = n.getSectionRowFromIndex(r),
-      o = 0 === i && 0 === l ? x : 0;
+      o = 0 === i && 0 === l ? v : 0;
     n.scrollToIndex({
       section: i,
       row: l,
@@ -573,13 +573,13 @@ function ep(e) {
       callback: () => {
         requestAnimationFrame(() => {
           var t;
-          return null === (t = document.querySelector(e)) || void 0 === t ? void 0 : t.focus({
+          return null == (t = document.querySelector(e)) ? void 0 : t.focus({
             preventScroll: !0
           })
         })
       }
     })
-  }, [x]), E = i.useCallback(() => new Promise(e => {
+  }, [v]), E = i.useCallback(() => new Promise(e => {
     let t = b.current;
     if (null == t) return e();
     t.scrollToTop({
@@ -612,7 +612,7 @@ function ep(e) {
           rows: d,
           listRef: b,
           updateMaxContentFeedRowSeen: g,
-          rowHeight: x
+          rowHeight: v
         }))
       })
     })

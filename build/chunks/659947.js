@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => T
 }), n(653041), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(660216),
-  l = n(40908),
+  l = n(660216),
+  o = n(40908),
   c = n(600164),
   d = n(415795),
   u = n(592125),
@@ -16,7 +16,7 @@ var r = n(200651),
   p = n(914010),
   h = n(727785),
   f = n(388032),
-  b = n(873662);
+  b = n(484671);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,13 +76,13 @@ function C() {
   }, "footer")
 }
 
-function v() {
+function S() {
   return (0, r.jsx)(O, {
     height: 8
   }, "header")
 }
 
-function S() {
+function v() {
   return (0, r.jsx)("div", {
     className: b.voiceListSearchEmpty,
     children: (0, r.jsx)(a.Text, {
@@ -98,14 +98,14 @@ function T(e) {
   var t, n;
   let {
     keybind: s
-  } = e, l = i.useRef(s);
+  } = e, o = i.useRef(s);
   i.useEffect(() => {
-    l.current = s
+    o.current = s
   });
-  let [d, u] = i.useState(null !== (n = null === (t = s.params) || void 0 === t ? void 0 : t.channelId) && void 0 !== n ? n : void 0), m = i.useCallback(() => {
+  let [d, u] = i.useState(null != (n = null == (t = s.params) ? void 0 : t.channelId) ? n : void 0), m = i.useCallback(() => {
     (0, a.ZDy)(async () => e => (0, r.jsx)(I, x(N({}, e), {
       onSelect: e => {
-        u(e), o.Z.setKeybind(x(N({}, l.current), {
+        u(e), l.Z.setKeybind(x(N({}, o.current), {
           params: {
             channelId: e
           }
@@ -139,7 +139,7 @@ function I(e) {
   let {
     transitionState: t,
     onClose: n,
-    onSelect: o
+    onSelect: l
   } = e, c = i.useId(), N = i.useRef(null), {
     mouseFocusEnabled: x,
     enableMouseFocus: _,
@@ -161,7 +161,7 @@ function I(e) {
     query: T,
     updateQuery: I,
     queryResults: y
-  } = (0, l.Z)({
+  } = (0, o.Z)({
     visible: !0,
     autocompleterResultTypes: E,
     autocompleterBeforeCreateSearchContext: j
@@ -203,7 +203,7 @@ function I(e) {
     Z = (() => {
       if (null != A) {
         var e;
-        return null === (e = A[P]) || void 0 === e ? void 0 : e.id
+        return null == (e = A[P]) ? void 0 : e.id
       }
       let t = y[P];
       if ((null == t ? void 0 : t.type) === h.h8.VOICE_CHANNEL) return t.record.id
@@ -233,7 +233,7 @@ function I(e) {
                   let e = y[P];
                   if ((null == e ? void 0 : e.type) === h.h8.VOICE_CHANNEL) return e.record
                 })();
-                null == e ? o(void 0) : o(e.id), n();
+                null == e ? l(void 0) : l(e.id), n();
                 break
               }
               case "arrowup":
@@ -251,7 +251,7 @@ function I(e) {
           "aria-autocomplete": "list",
           spellCheck: !1
         })
-      }), 0 === D && "" !== T && (0, r.jsx)(S, {}), (D > 0 || "" === T) && (0, r.jsx)(a.Tvr, {
+      }), 0 === D && "" !== T && (0, r.jsx)(v, {}), (D > 0 || "" === T) && (0, r.jsx)(a.Tvr, {
         innerId: c,
         innerRole: "listbox",
         "aria-label": f.NW.string(f.t["+N3fW1"]),
@@ -275,7 +275,7 @@ function I(e) {
             focused: P === t,
             onMouseEnter: () => x.current && R(t),
             onClick: () => {
-              o(i.id), n()
+              l(i.id), n()
             },
             onFocus: () => R(t),
             children: null != a ? (0, r.jsx)("div", {
@@ -284,7 +284,7 @@ function I(e) {
             }) : null
           }, i.id)
         },
-        renderListHeader: v,
+        renderListHeader: S,
         renderFooter: C,
         sectionHeight: 0,
         rowHeight: 34,
@@ -302,7 +302,7 @@ function y(e) {
   } = e, {
     channel: n,
     category: i,
-    guild: o
+    guild: l
   } = (0, s.cj)([u.Z, g.Z], () => {
     let e = null != t ? u.Z.getChannel(t) : void 0;
     return null != e ? {
@@ -328,9 +328,9 @@ function y(e) {
     onFocus: _,
     onMouseEnter: _,
     focused: !1,
-    children: null != o ? (0, r.jsx)("div", {
+    children: null != l ? (0, r.jsx)("div", {
       className: b.guildName,
-      children: o.name
+      children: l.name
     }) : null
   })
 }

@@ -1,18 +1,18 @@
 /** Chunk was on 22878 **/
 n.d(t, {
-  Q: () => s,
+  Q: () => d,
   h: () => m
 }), n(301563);
-var o = n(192379),
-  i = n(228458),
-  r = n(442837),
-  l = n(895924),
+var r = n(192379),
+  l = n(228458),
+  o = n(442837),
+  i = n(895924),
   a = n(581364),
   c = n(823379),
-  d = n(399654),
-  u = n(844439);
+  u = n(399654),
+  s = n(844439);
 
-function s(e) {
+function d(e) {
   let {
     contentType: t
   } = e;
@@ -35,24 +35,24 @@ function m(e) {
     channelId: t
   } = e, {
     fetchState: n,
-    recommendationsSections: s
+    recommendationsSections: d
   } = function(e) {
     let {
       channelId: t
-    } = e, n = i.I.CONTEXTUAL_IMAGE, l = o.useMemo(() => ({
+    } = e, n = l.I.CONTEXTUAL_IMAGE, i = r.useMemo(() => ({
       channelId: t,
       location: n,
       withCommands: !0
     }), [t, n]);
-    o.useEffect(() => {
-      (0, d.a)(l)
-    }, [l]);
+    r.useEffect(() => {
+      (0, u.a)(i)
+    }, [i]);
     let {
       fetchState: a,
       recommendationsSections: c
-    } = (0, r.cj)([u.ZP], () => ({
-      fetchState: u.ZP.getFetchState(l),
-      recommendationsSections: u.ZP.getRecommendations(l)
+    } = (0, o.cj)([s.ZP], () => ({
+      fetchState: s.ZP.getFetchState(i),
+      recommendationsSections: s.ZP.getRecommendations(i)
     }));
     return {
       fetchState: a,
@@ -63,57 +63,56 @@ function m(e) {
   });
   return {
     fetchState: n,
-    imageRecCommandContexts: o.useMemo(() => {
-      let e = s.length > 0 ? s[0].items : void 0;
+    imageRecCommandContexts: r.useMemo(() => {
+      let e = d.length > 0 ? d[0].items : void 0;
       if (void 0 === e) return [];
       let t = {};
       return e.forEach(e => {
         var n;
-        let o = null !== (n = e.command_metadata) && void 0 !== n ? n : {};
-        Object.keys(o).forEach(e => {
-          t[e] = o[e]
+        let r = null != (n = e.command_metadata) ? n : {};
+        Object.keys(r).forEach(e => {
+          t[e] = r[e]
         })
       }), Object.keys(t).map(t => {
-        var n, o, i, r, c, d, u, s, m, p, f, O, b, E;
-        let v, g;
-        let y = e.find(e => {
+        var n, r, l, o, c, u, s, d, m, p, f, O, b, E;
+        let g, y, h = e.find(e => {
           var n;
-          return null != (v = null === (n = e.commands) || void 0 === n ? void 0 : n.find(e => e.id === t))
+          return null != (g = null == (n = e.commands) ? void 0 : n.find(e => e.id === t))
         });
-        if (null == y) return null;
+        if (null == h) return null;
         let {
-          application: h
-        } = y;
-        if (null == v) return null;
+          application: v
+        } = h;
+        if (null == g) return null;
         let C = (0, a.Z8)({
-            rootCommand: v,
-            command: v,
-            applicationId: h.id
+            rootCommand: g,
+            command: g,
+            applicationId: v.id
           }),
-          P = null === (i = y.command_metadata) || void 0 === i ? void 0 : null === (o = i[t]) || void 0 === o ? void 0 : null === (n = o.overrideSendCommandInfo) || void 0 === n ? void 0 : n.commandId;
+          P = null == (l = h.command_metadata) || null == (r = l[t]) || null == (n = r.overrideSendCommandInfo) ? void 0 : n.commandId;
         if (null != P) {
-          let e = null != P ? null === (f = y.commands) || void 0 === f ? void 0 : f.find(e => e.id === P) : void 0;
-          null != e && (g = (0, a.Z8)({
+          let e = null != P ? null == (f = h.commands) ? void 0 : f.find(e => e.id === P) : void 0;
+          null != e && (y = (0, a.Z8)({
             rootCommand: e,
             command: e,
-            applicationId: h.id
+            applicationId: v.id
           }))
         }
         return {
           command: (b = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
-                o = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), o.forEach(function(t) {
-                var o;
-                o = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: o,
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: !0,
                   configurable: !0,
                   writable: !0
-                }) : e[t] = o
+                }) : e[t] = r
               })
             }
             return e
@@ -122,26 +121,26 @@ function m(e) {
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(b, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var o = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, o)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
           })(Object(E)).forEach(function(e) {
             Object.defineProperty(b, e, Object.getOwnPropertyDescriptor(E, e))
           }), b),
-          imageOption: null === (c = y.command_metadata) || void 0 === c ? void 0 : null === (r = c[t]) || void 0 === r ? void 0 : r.imageOption,
-          overrideSendCommand: g,
-          overrideSendCommandInfo: null === (u = y.command_metadata) || void 0 === u ? void 0 : null === (d = u[t]) || void 0 === d ? void 0 : d.overrideSendCommandInfo,
-          onlyAllowEdit: null === (m = y.command_metadata) || void 0 === m ? void 0 : null === (s = m[t]) || void 0 === s ? void 0 : s.onlyAllowEdit,
+          imageOption: null == (c = h.command_metadata) || null == (o = c[t]) ? void 0 : o.imageOption,
+          overrideSendCommand: y,
+          overrideSendCommandInfo: null == (s = h.command_metadata) || null == (u = s[t]) ? void 0 : u.overrideSendCommandInfo,
+          onlyAllowEdit: null == (m = h.command_metadata) || null == (d = m[t]) ? void 0 : d.onlyAllowEdit,
           section: {
-            type: l.Qi.APPLICATION,
-            id: h.id,
-            icon: h.icon,
-            name: null !== (O = null == h ? void 0 : null === (p = h.bot) || void 0 === p ? void 0 : p.username) && void 0 !== O ? O : h.name,
-            application: h
+            type: i.Qi.APPLICATION,
+            id: v.id,
+            icon: v.icon,
+            name: null != (O = null == v || null == (p = v.bot) ? void 0 : p.username) ? O : v.name,
+            application: v
           }
         }
       }).filter(c.lm)
-    }, [s])
+    }, [d])
   }
 }

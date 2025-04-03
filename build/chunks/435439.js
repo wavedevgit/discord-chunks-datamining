@@ -10,13 +10,13 @@ var n = r(200651),
   c = r(410441),
   s = r(206583),
   u = r(388032);
-let d = {
+let p = {
     [s.kG.SPOTIFY]: a.Z,
     [s.kG.CRUNCHYROLL]: l.omf,
     [s.kG.XBOX]: o.Z,
     [s.kG.PLAYSTATION]: i.Z
   },
-  p = {
+  d = {
     [s.kG.SPOTIFY]: () => u.NW.string(u.t["0ZB/XF"]),
     [s.kG.CRUNCHYROLL]: () => u.NW.string(u.t.jdJYX1),
     [s.kG.XBOX]: () => u.NW.string(u.t["Nfvo7+"]),
@@ -43,9 +43,9 @@ function f(e) {
       }
       return l
     }(e, ["type", "aria-label"]);
-  let s = d[i];
+  let s = p[i];
   if (null == s) return null;
-  let u = null != o ? o : null === (l = p[i]) || void 0 === l ? void 0 : l.call(p);
+  let u = null != o ? o : null == (l = d[i]) ? void 0 : l.call(d);
   return (0, n.jsx)(c.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},

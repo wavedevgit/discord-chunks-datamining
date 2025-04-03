@@ -9,8 +9,8 @@ var n = t(200651),
   o = t(809206),
   i = t(25990),
   c = t(155433),
-  d = t(388032),
-  x = t(320082);
+  x = t(388032),
+  d = t(652297);
 
 function N(e) {
   var s, t;
@@ -31,37 +31,37 @@ function N(e) {
     if (S(!1), null == s ? void 0 : s.ok) E(A);
     else {
       var t, n;
-      (null == s ? void 0 : null === (t = s.body) || void 0 === t ? void 0 : t.username) != null ? (0, c.P)() : (null == s ? void 0 : null === (n = s.body) || void 0 === n ? void 0 : n.email_token) != null && (null == _ || _())
+      (null == s || null == (t = s.body) ? void 0 : t.username) != null ? (0, c.P)() : (null == s || null == (n = s.body) ? void 0 : n.email_token) != null && (null == _ || _())
     }
   }
   return r.useEffect(() => {
     if (m) {
       var e;
-      null === (e = f.current) || void 0 === e || e.focus()
+      null == (e = f.current) || e.focus()
     }
   }, [m]), (0, n.jsxs)("form", {
     onSubmit: g,
     children: [(0, n.jsxs)(l.xBx, {
       separator: !1,
-      className: x.header,
+      className: d.header,
       children: [(0, n.jsx)(l.X6q, {
-        className: x.title,
+        className: d.title,
         variant: "heading-xl/extrabold",
-        children: d.NW.string(d.t.p3280t)
+        children: x.NW.string(x.t.p3280t)
       }), (0, n.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: x.subtitle,
-        children: d.NW.string(d.t["1k44EB"])
+        className: d.subtitle,
+        children: x.NW.string(x.t["1k44EB"])
       }), (0, n.jsx)(l.olH, {
         onClick: u,
-        className: x.modalCloseButton
+        className: d.modalCloseButton
       })]
     }), (0, n.jsxs)(l.hzk, {
-      className: x.content,
+      className: d.content,
       children: [(0, n.jsx)(l.xJW, {
-        title: d.NW.string(d.t["w/qqKC"]),
-        error: null == k ? void 0 : null === (s = k.email) || void 0 === s ? void 0 : s[0],
+        title: x.NW.string(x.t["w/qqKC"]),
+        error: null == k || null == (s = k.email) ? void 0 : s[0],
         children: (0, n.jsx)(l.oil, {
           type: "email",
           value: A,
@@ -69,9 +69,9 @@ function N(e) {
           inputRef: f
         })
       }), (0, n.jsx)(l.xJW, {
-        className: x.password,
-        title: d.NW.string(d.t.TmdnJy),
-        error: null == k ? void 0 : null === (t = k.password) || void 0 === t ? void 0 : t[0],
+        className: d.password,
+        title: x.NW.string(x.t.TmdnJy),
+        error: null == k || null == (t = k.password) ? void 0 : t[0],
         children: (0, n.jsx)(l.oil, {
           type: "password",
           value: C,
@@ -84,19 +84,19 @@ function N(e) {
         color: l.zxk.Colors.BRAND,
         size: l.zxk.Sizes.MEDIUM,
         submitting: j,
-        children: d.NW.string(d.t.i4jeWV)
+        children: x.NW.string(x.t.i4jeWV)
       }), null != _ ? (0, n.jsx)(l.zxk, {
-        className: x.__invalid_cancel,
+        className: d.__invalid_cancel,
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.PRIMARY,
         onClick: _,
-        children: d.NW.string(d.t["13/7kZ"])
+        children: x.NW.string(x.t["13/7kZ"])
       }) : (0, n.jsx)(l.zxk, {
-        className: x.__invalid_cancel,
+        className: d.__invalid_cancel,
         look: l.zxk.Looks.LINK,
         color: l.zxk.Colors.PRIMARY,
         onClick: u,
-        children: d.NW.string(d.t["ETE/oK"])
+        children: x.NW.string(x.t["ETE/oK"])
       })]
     })]
   })

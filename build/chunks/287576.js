@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -20,7 +20,7 @@ function c(e) {
     loading: u
   } = (0, a.Z)(null == n ? void 0 : n.id, {
     groupType: o.uw.GUILD_PRODUCT,
-    teamId: null == n ? void 0 : null === (t = n.team) || void 0 === t ? void 0 : t.id
+    teamId: null == n || null == (t = n.team) ? void 0 : t.id
   }), {
     currentPeriod: m,
     previousPeriods: g,

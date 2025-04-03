@@ -62,7 +62,7 @@ let T = i.forwardRef(function() {
         analyticsLocations: v
       } = (0, f.ZP)(d.Z.USER_SETTINGS);
     i.useEffect(() => {
-      null != n && (n !== y || T !== N) && ! function(e) {
+      null != n && (n !== y || T !== N) && function(e) {
         let {
           destinationPane: t,
           originPane: n = null,

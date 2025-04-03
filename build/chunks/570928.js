@@ -3,10 +3,10 @@ n.d(t, {
   Z: () => d
 });
 var r, i = n(200651),
-  o = n(192379),
-  l = n(120356),
-  a = n.n(l),
-  s = n(482996);
+  l = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  s = n(222465);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -16,14 +16,14 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class u extends(r = o.PureComponent) {
+class u extends(r = l.PureComponent) {
   render() {
     var e, t;
     let n = this.props,
       {
         tag: r,
-        children: o,
-        hoverText: l,
+        children: l,
+        hoverText: o,
         className: u,
         forceHover: d
       } = n,
@@ -32,13 +32,13 @@ class u extends(r = o.PureComponent) {
         var n, r, i = function(e, t) {
           if (null == e) return {};
           var n, r, i = {},
-            o = Object.keys(e);
-          for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+            l = Object.keys(e);
+          for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
           return i
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var o = Object.getOwnPropertySymbols(e);
-          for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+          var l = Object.getOwnPropertySymbols(e);
+          for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
         }
         return i
       }(n, ["tag", "children", "hoverText", "className", "forceHover"]);
@@ -55,15 +55,15 @@ class u extends(r = o.PureComponent) {
       return e
     }({}, p), t = t = {
       className: a()(u, s.hoverRoll, {
-        [s.disabled]: null == l,
+        [s.disabled]: null == o,
         [s.forceHover]: d
       }),
       children: [(0, i.jsx)(r, {
         className: s.hovered,
-        children: l
+        children: o
       }), (0, i.jsx)(r, {
         className: s.default,
-        children: o
+        children: l
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);

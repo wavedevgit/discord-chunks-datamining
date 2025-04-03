@@ -1,7 +1,6 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 88934 **/
 e.exports = {
-  root: "root__6dcca",
-  art: "art__6dcca",
-  hidden: "hidden__6dcca",
-  header: "header__6dcca"
+  aboutContainer: "aboutContainer__17a6d",
+  divider: "divider__17a6d",
+  informationContainer: "informationContainer__17a6d"
 }

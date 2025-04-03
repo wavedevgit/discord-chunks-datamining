@@ -1,29 +1,29 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(722932),
   s = n(824690),
   a = n(674343),
-  o = n(388032);
+  l = n(388032);
 
-function l(e) {
+function o(e) {
   let {
     refreshStyles: t = !1
   } = e, {
     volume: n,
-    onVolumeChange: l
+    onVolumeChange: o
   } = (0, s.Z)();
   return (0, i.X0)({
     location: "UserSettingsSoundmojiVolume"
   }) ? (0, r.jsx)(a.Z, {
-    title: o.NW.string(o.t.w9Hq8P),
-    description: o.NW.string(o.t.INenzc),
-    label: o.NW.string(o.t["2JbvKy"]),
+    title: l.NW.string(l.t.w9Hq8P),
+    description: l.NW.string(l.t.INenzc),
+    label: l.NW.string(l.t["2JbvKy"]),
     volume: n,
-    onVolumeChange: l,
+    onVolumeChange: o,
     refreshStyles: t
   }) : null
 }

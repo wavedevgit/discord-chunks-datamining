@@ -1,22 +1,22 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  B: () => o,
-  W: () => l
+  B: () => l,
+  W: () => o
 });
 var r = n(544891),
   i = n(881052),
   a = n(981631);
-async function o(e) {
+async function l(e) {
   let {
     channelId: t,
     messageId: n,
-    answerIds: o
+    answerIds: l
   } = e;
   try {
     await r.tn.put({
       url: a.ANM.POLL_ANSWERS(t, n),
       body: {
-        answer_ids: o
+        answer_ids: l
       },
       rejectWithError: !1
     })
@@ -24,7 +24,7 @@ async function o(e) {
     throw new i.Hx(e)
   }
 }
-async function l(e) {
+async function o(e) {
   let {
     channelId: t,
     messageId: n

@@ -1,6 +1,6 @@
 /** Chunk was on 68880 **/
 "use strict";
-var n = function(t) {
+t.exports = function(t) {
   function e() {
     return t.apply(this, arguments) || this
   }
@@ -58,5 +58,4 @@ var n = function(t) {
   focusOffset: 0,
   isBackward: !1,
   hasFocus: !1
-}));
-t.exports = n
+}))

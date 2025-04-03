@@ -32,10 +32,10 @@ function u(e) {
   }
 }
 var c = t.Saturation = function(e) {
+  if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function, not " + typeof e);
+
   function t(e) {
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t);
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
     var r = function(e, t) {
       if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
       return t && ("object" == typeof t || "function" == typeof t) ? t : e
@@ -52,17 +52,14 @@ var c = t.Saturation = function(e) {
       e(t, r)
     }, 50), r
   }
-  return ! function(e, t) {
-    if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-    e.prototype = Object.create(t && t.prototype, {
-      constructor: {
-        value: e,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
-      }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-  }(t, e), n(t, [{
+  return t.prototype = Object.create(e && e.prototype, {
+    constructor: {
+      value: t,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), n(t, [{
     key: "componentWillUnmount",
     value: function() {
       this.throttle.cancel(), this.unbindEventListeners()

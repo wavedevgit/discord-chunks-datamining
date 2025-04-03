@@ -8,23 +8,23 @@ var i = n(200651),
   l = n.n(a),
   r = n(481060),
   d = n(600164),
-  o = n(540059),
-  c = n(539379),
+  c = n(540059),
+  o = n(539379),
   C = n(109983),
   m = n(834891),
   p = n(388032),
-  N = n(551042);
+  N = n(867562);
 
 function u(e) {
   let {
     guildTemplate: t,
     onClick: n,
     autoFocus: a
-  } = e, l = (0, o.Q3)("GuildTemplatesItem"), r = s.useCallback(() => {
+  } = e, l = (0, c.Q3)("GuildTemplatesItem"), r = s.useCallback(() => {
     n(t)
   }, [t, n]);
   return (0, i.jsx)(C.Z, {
-    icon: l ? c.U[t.id] : c.M[t.id],
+    icon: l ? o.U[t.id] : o.M[t.id],
     message: t.label,
     onClick: r,
     autoFocus: a
@@ -37,8 +37,8 @@ function L(e) {
     isNewUser: n,
     onClose: s,
     onChooseTemplate: a,
-    onJoin: o
-  } = e, c = (0, m.E)();
+    onJoin: c
+  } = e, o = (0, m.E)();
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(r.xBx, {
       direction: d.Z.Direction.VERTICAL,
@@ -61,7 +61,7 @@ function L(e) {
       className: l()(N.templatesList, t),
       paddingFix: !1,
       children: [(0, i.jsx)(u, {
-        guildTemplate: c[m.l.CREATE],
+        guildTemplate: o[m.l.CREATE],
         onClick: a,
         autoFocus: !0
       }), (0, i.jsx)(r.Text, {
@@ -70,25 +70,25 @@ function L(e) {
         variant: "text-xs/bold",
         children: p.NW.string(p.t.JGDkfn)
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.GAMING],
+        guildTemplate: o[m.l.GAMING],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.FRIENDS],
+        guildTemplate: o[m.l.FRIENDS],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.STUDY],
+        guildTemplate: o[m.l.STUDY],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.SCHOOL_CLUB],
+        guildTemplate: o[m.l.SCHOOL_CLUB],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.LOCAL_COMMUNITY],
+        guildTemplate: o[m.l.LOCAL_COMMUNITY],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: c[m.l.CREATORS],
+        guildTemplate: o[m.l.CREATORS],
         onClick: a
       })]
-    }), null != o && (0, i.jsxs)(r.mzw, {
+    }), null != c && (0, i.jsxs)(r.mzw, {
       className: N.footer,
       children: [(0, i.jsx)(r.X6q, {
         variant: "heading-lg/semibold",
@@ -97,7 +97,7 @@ function L(e) {
       }), (0, i.jsx)(r.zxk, {
         className: N.footerButton,
         color: r.zxk.Colors.PRIMARY,
-        onClick: o,
+        onClick: c,
         children: p.NW.string(p.t.riOUtL)
       })]
     })]

@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => y
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -17,14 +17,14 @@ var r = n(200651),
   b = n(176354),
   p = n(981631),
   h = n(185923),
-  v = n(388032);
+  y = n(388032);
 
-function y(e, t) {
+function N(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(a.Sfi), g = (0, u.$R)(t), y = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(p.Plq.ADD_REACTIONS, t)) && g, [t, g]), O = (0, o.MZ)(t.getGuildId());
-  if (!d.nc.getSetting() || !y || e.type === p.uaV.GUILD_INVITE_REMINDER) return null;
-  let E = O.filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = i.useContext(a.Sfi), g = (0, u.$R)(t), N = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(p.Plq.ADD_REACTIONS, t)) && g, [t, g]), E = (0, o.MZ)(t.getGuildId());
+  if (!d.nc.getSetting() || !N || e.type === p.uaV.GUILD_INVITE_REMINDER) return null;
+  let v = E.filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: h.Hz.REACTION
@@ -32,11 +32,11 @@ function y(e, t) {
     var o, u;
     return (0, r.jsx)(a.sNh, {
       color: "default",
-      id: null !== (u = null !== (o = i.id) && void 0 !== o ? o : i.optionallyDiverseSequence) && void 0 !== u ? u : i.name,
+      id: null != (u = null != (o = i.id) ? o : i.optionallyDiverseSequence) ? u : i.name,
       label: ":".concat(i.name, ":"),
       icon: e => {
         var t, l;
-        return (0, r.jsx)(N, (t = function(e) {
+        return (0, r.jsx)(O, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -75,7 +75,7 @@ function y(e, t) {
   });
   return (0, r.jsx)(a.sNh, {
     id: "add-reaction",
-    label: v.NW.string(v.t.lfIHs7),
+    label: y.NW.string(y.t.lfIHs7),
     action: () => {
       m.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: !0
@@ -83,10 +83,10 @@ function y(e, t) {
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [E, (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+      children: [v, (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
         color: "default",
         id: "other-reactions",
-        label: v.NW.string(v.t["OBCR+v"]),
+        label: y.NW.string(y.t["OBCR+v"]),
         icon: a.EO4,
         action: () => {
           m.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
@@ -98,7 +98,7 @@ function y(e, t) {
   })
 }
 
-function N(e) {
+function O(e) {
   var t;
   let {
     emoji: n,
@@ -112,7 +112,7 @@ function N(e) {
       id: n.id,
       animated: n.animated && (!i || a),
       size: 18
-    }) : b.ZP.getURL(null !== (t = n.optionallyDiverseSequence) && void 0 !== t ? t : ""),
+    }) : b.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""
   })
 }

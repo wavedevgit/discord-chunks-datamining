@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => C
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(704215),
-  o = n(481060),
-  l = n(906732),
+  l = n(481060),
+  o = n(906732),
   c = n(605236),
   d = n(441167),
   u = n(695346),
@@ -20,32 +20,32 @@ var r = n(200651),
   N = n(491758),
   x = n(233685),
   _ = n(388032),
-  E = n(770865),
-  j = n(133881),
-  O = n(685786);
+  E = n(922284),
+  j = n(802454),
+  O = n(20493);
 
 function C(e) {
   let {
     className: t,
     showHeader: n = !0
   } = e, C = u.tU.useSetting(), {
-    enableViewerClipping: v
+    enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "Clips Settings"
   }, {
     autoTrackExposure: !1
   }), {
-    analyticsLocations: S
-  } = (0, l.ZP)(), T = (0, g.Go)(), {
+    analyticsLocations: v
+  } = (0, o.ZP)(), T = (0, g.Go)(), {
     viewerClipsEnabled: I
   } = (0, s.cj)([p.Z], () => p.Z.getSettings()), y = (0, h.Z)(m.Z);
   return i.useEffect(() => {
     (0, c.EW)(a.z.CLIPS_SETTINGS_BETA_TAG)
-  }), (0, r.jsxs)(l.Gt, {
-    value: S,
-    children: [(T || n) && (0, r.jsx)(o.hjN, {
+  }), (0, r.jsxs)(o.Gt, {
+    value: v,
+    children: [(T || n) && (0, r.jsx)(l.hjN, {
       className: t,
-      tag: o.RB0.H1,
+      tag: l.RB0.H1,
       title: n ? (0, r.jsxs)("div", {
         className: E.headerContainer,
         children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(b.Z, {})]
@@ -54,9 +54,9 @@ function C(e) {
         onSubmit: e => e.preventDefault(),
         children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(x.Z, {})]
       })
-    }), T && (0, r.jsx)(o.$i$, {}), (0, r.jsxs)(o.hjN, {
+    }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
       className: n || T ? O.marginTop20 : t,
-      children: [(0, r.jsx)(o.j7V, {
+      children: [(0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: C,
@@ -65,7 +65,7 @@ function C(e) {
           allowVoiceRecording: e
         }),
         children: _.NW.string(_.t.AGDDkJ)
-      }), v && y && (0, r.jsx)(o.j7V, {
+      }), S && y && (0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: I,

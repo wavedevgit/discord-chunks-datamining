@@ -4,12 +4,12 @@ t.d(n, {
 });
 var l = t(200651),
   a = t(192379),
-  r = t(481060),
-  i = t(87686),
+  i = t(481060),
+  r = t(87686),
   s = t(586826),
   o = t(507419),
   u = t(388032),
-  c = t(485574);
+  c = t(359324);
 let d = a.memo(function(e) {
   let {
     sound: n,
@@ -19,7 +19,7 @@ let d = a.memo(function(e) {
   } = e, {
     file: f
   } = (0, s.p)();
-  return (0, l.jsx)(r.hjN, {
+  return (0, l.jsx)(i.hjN, {
     className: c.section,
     title: u.NW.string(u.t.CCRKNz),
     children: (0, l.jsxs)("div", {
@@ -28,7 +28,7 @@ let d = a.memo(function(e) {
         sound: n,
         volume: t,
         disabled: a
-      }), null == n && null != f && (0, l.jsx)(i.Z, {
+      }), null == n && null != f && (0, l.jsx)(r.Z, {
         className: c.audioTrimmer,
         volume: t,
         disabled: a,

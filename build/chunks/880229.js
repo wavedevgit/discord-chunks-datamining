@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   C: () => z,
@@ -22,8 +22,8 @@ var r = n(200651),
   x = n(313201),
   j = n(339085),
   N = n(518738),
-  v = n(131704),
-  _ = n(324067),
+  _ = n(131704),
+  v = n(324067),
   C = n(430824),
   O = n(259580),
   y = n(624138),
@@ -33,7 +33,7 @@ var r = n(200651),
   T = n(686807),
   P = n(981631),
   w = n(388032),
-  R = n(758374);
+  R = n(818771);
 let Z = (0, x.hQ)(),
   D = (0, x.hQ)(),
   A = (0, y.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
@@ -48,7 +48,7 @@ function k(e) {
   return (0, r.jsx)(g.Z, {
     emojiId: n,
     emojiName: i,
-    animated: null !== (t = null == a ? void 0 : a.animated) && void 0 !== t && t,
+    animated: null != (t = null == a ? void 0 : a.animated) && t,
     className: s
   })
 }
@@ -162,7 +162,7 @@ function M(e) {
     onClose: o
   } = e, c = n.role_benefits.benefits, [u, g] = i.useState(() => new Set(c)), p = i.useMemo(() => c.filter(I.rC), [c]), h = (0, S.Z)(p), f = i.useMemo(() => c.filter(I.lL), [c]), b = i.useMemo(() => new Set(h.filter(e => s.some(t => t.ref_id === e.ref_id))), [h, s]), j = i.useMemo(() => new Set(f.filter(e => a.some(t => (0, d.Z)(e, t)))), [a, f]), N = (0, x.Dt)();
 
-  function v(e, t) {
+  function _(e, t) {
     g(n => {
       let r = new Set(n);
       return t ? r.add(e) : r.delete(e), r
@@ -196,14 +196,14 @@ function M(e) {
           benefits: h,
           dupeBenefits: b,
           selectedBenefits: u,
-          onToggleBenefit: v
+          onToggleBenefit: _
         }), (0, r.jsx)(L, {
           title: w.NW.string(w.t.RdwKw8),
           selectAllText: w.NW.string(w.t.aJPLVF),
           benefits: f,
           dupeBenefits: j,
           selectedBenefits: u,
-          onToggleBenefit: v
+          onToggleBenefit: _
         })]
       }), (0, r.jsxs)(m.mzw, {
         children: [(0, r.jsx)(m.zxk, {
@@ -258,7 +258,7 @@ function G(e) {
         size: "custom",
         width: 23,
         height: 23,
-        color: null !== (t = i.colorString) && void 0 !== t ? t : (0, o.Rf)(P.p6O),
+        color: null != (t = i.colorString) ? t : (0, o.Rf)(P.p6O),
         className: R.roleRowIconDefault
       })
     }), (0, r.jsxs)("div", {
@@ -288,11 +288,11 @@ function U(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, s = (0, c.e7)([C.Z], () => C.Z.getRoles(t.id)), a = (0, c.e7)([_.Z], () => _.Z.getCategories(t.id)), o = i.useMemo(() => a._categories.flatMap(e => a[e.channel.id].filter(e => {
+  } = e, s = (0, c.e7)([C.Z], () => C.Z.getRoles(t.id)), a = (0, c.e7)([v.Z], () => v.Z.getCategories(t.id)), o = i.useMemo(() => a._categories.flatMap(e => a[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
-    return v.zS.has(t.type)
+    return _.zS.has(t.type)
   }).map(e => {
     let {
       channel: t
@@ -300,7 +300,7 @@ function U(e) {
     return t
   })), [a]), d = i.useMemo(() => Object.values(s).flatMap(e => {
     var n;
-    if ((0, f.pM)(t.id, e.id) || (null === (n = e.tags) || void 0 === n ? void 0 : n.subscription_listing_id) != null || l.Db(e.permissions, P.TC2)) return [];
+    if ((0, f.pM)(t.id, e.id) || (null == (n = e.tags) ? void 0 : n.subscription_listing_id) != null || l.Db(e.permissions, P.TC2)) return [];
     let r = (0, E.Z)(o, e).length;
     return r > 0 ? {
       role: e,
@@ -358,12 +358,12 @@ function F(e) {
   null != s && (o.current = s);
   let c = null != s ? s : o.current,
     d = (0, p.Z)(() => {
-      let e = _.Z.getCategories(n);
+      let e = v.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
         let {
           channel: t
         } = e;
-        return v.zS.has(t.type)
+        return _.zS.has(t.type)
       }).map(e => {
         let {
           channel: t
@@ -419,7 +419,7 @@ function F(e) {
         className: R.list,
         children: u.map(e => {
           var t;
-          let n = null !== (t = (0, h.Th)(e.type)) && void 0 !== t ? t : m.VL1;
+          let n = null != (t = (0, h.Th)(e.type)) ? t : m.VL1;
           return (0, r.jsx)(W, {
             icon: (0, r.jsx)("div", {
               className: R.rowIcon,

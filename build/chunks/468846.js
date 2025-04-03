@@ -6,7 +6,7 @@ t.d(l, {
 var n, r = t(200651),
   i = t(192379),
   s = t(591759),
-  a = t(817857);
+  a = t(94488);
 
 function o(e) {
   for (var l = 1; l < arguments.length; l++) {
@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function d(e, l) {
+function u(e, l) {
   if (null == e) return {};
   var t, n, r = function(e, l) {
     if (null == e) return {};
@@ -43,7 +43,7 @@ function d(e, l) {
   return r
 }
 
-function u(e, l) {
+function d(e, l) {
   let t = s.Z.toURLSafe(null != e ? e : "");
   if (null === t) return "";
   if (null == l) return t.toString();
@@ -58,22 +58,22 @@ function c(e) {
   var {
     src: l,
     autoMute: t
-  } = e, n = d(e, ["src", "autoMute"]);
+  } = e, n = u(e, ["src", "autoMute"]);
   let s = i.useRef(null),
     a = i.useCallback(e => {
       if (e.data["x-tiktok-player"] && "https://www.tiktok.com" === e.origin && "onPlayerReady" === e.data.type) {
         var l, n, r, i;
-        t && (null === (i = s.current) || void 0 === i || null === (r = i.contentWindow) || void 0 === r || r.postMessage({
+        t && (null == (i = s.current) || null == (r = i.contentWindow) || r.postMessage({
           type: "mute",
           "x-tiktok-player": !0
-        }, e.origin)), null === (n = s.current) || void 0 === n || null === (l = n.contentWindow) || void 0 === l || l.postMessage({
+        }, e.origin)), null == (n = s.current) || null == (l = n.contentWindow) || l.postMessage({
           type: "play",
           "x-tiktok-player": !0
         }, e.origin)
       }
     }, [t]);
   i.useEffect(() => (window.addEventListener("message", a), () => window.removeEventListener("message", a)), [a]);
-  let c = u(l, {
+  let c = d(l, {
     utm_source: "discord.gg"
   });
   return (0, r.jsx)(m, o({
@@ -86,8 +86,8 @@ function h(e) {
   var {
     src: l,
     autoMute: t
-  } = e, n = d(e, ["src", "autoMute"]);
-  let i = u(l, {
+  } = e, n = u(e, ["src", "autoMute"]);
+  let i = d(l, {
     autoplay: "1",
     auto_play: "1",
     mute: t ? "1" : void 0

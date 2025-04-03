@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Gj: () => G,
   Pt: () => V,
@@ -10,8 +10,8 @@ var r = n(192379),
   i = n(442837),
   s = n(704215),
   a = n(493544),
-  o = n(634894),
-  l = n(211242),
+  l = n(634894),
+  o = n(211242),
   c = n(924557),
   d = n(706140),
   u = n(704454),
@@ -28,8 +28,8 @@ var r = n(192379),
   j = n(921157),
   O = n(667172),
   C = n(237292),
-  v = n(314897),
-  S = n(906467),
+  S = n(314897),
+  v = n(906467),
   T = n(283595),
   I = n(699516),
   y = n(663389),
@@ -49,7 +49,7 @@ function U(e) {
   let {
     shouldMergeGameSettings: t,
     showRedesignedThirdPartyAccessSettings: n
-  } = e, r = S.Z.isDeveloper, i = [{
+  } = e, r = v.Z.isDeveloper, i = [{
     header: M.NW.string(M.t.cduTBA),
     settings: n ? [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.THIRD_PARTY_ACCESS, L.s6.SESSIONS, L.s6.CLIPS] : [L.s6.ACCOUNT, L.s6.GAMES, L.s6.PROFILE_CUSTOMIZATION, L.s6.CONTENT_SOCIAL, L.s6.DATA_PRIVACY, L.s6.PRIVACY_FAMILY_CENTER, L.s6.AUTHORIZED_APPS, L.s6.SESSIONS, L.s6.CONNECTIONS, L.s6.CLIPS]
   }, {
@@ -83,7 +83,7 @@ function U(e) {
 
 function V() {
   var e, t, n, a;
-  let S = (0, _.YO)().length,
+  let v = (0, _.YO)().length,
     R = (0, x.U)(),
     W = (0, i.e7)([y.Z], () => y.Z.getProps().impressionSource),
     L = (0, b.gU)(),
@@ -91,10 +91,10 @@ function V() {
     U = (0, c.Go)(),
     [V] = (0, d.cv)(U ? [s.z.CLIPS_SETTINGS_BETA_TAG] : []),
     G = "useGenerateUserSettingsSections";
-  (0, o.j)({
+  (0, l.j)({
     location: G + " auto on",
     autoTrackExposure: !0
-  }), (0, o.j)({
+  }), (0, l.j)({
     location: G + " auto off",
     autoTrackExposure: !1
   });
@@ -104,11 +104,11 @@ function V() {
     location: "settings"
   }), H = (0, p.Xo)({
     location: "settings"
-  }), z = null !== (n = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) && void 0 !== n && n, Y = (0, C.y0)({
+  }), z = null != (n = null == (e = A.default.getCurrentUser()) ? void 0 : e.isStaff()) && n, Y = (0, C.y0)({
     location: "settings"
   }), K = (0, O.v4)({
     location: "settings"
-  }), q = (0, l.Q)(), X = (0, E.Zy)({
+  }), q = (0, o.Q)(), X = (0, E.Zy)({
     location: B.dr.USER_SETTINGS_SEARCH_GIFT_INVENTORY
   }), {
     enabled: J
@@ -116,26 +116,26 @@ function V() {
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([v.default], () => v.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
+  }), Q = (0, i.e7)([T.Z], () => T.Z.hasLibraryApplication()), $ = (0, i.e7)([S.default], () => S.default.hasTOTPEnabled()), ee = D.Sb.useSetting(), et = (0, h.Z)(), {
     hypeSquadRemoved: en
   } = g.Z.useExperiment({
     location: "settings"
-  }), er = null === (a = (0, f.Z)()) || void 0 === a || a, ei = (null === (t = (0, j.s)()) || void 0 === t ? void 0 : t.length) > 0, {
+  }), er = null == (a = (0, f.Z)()) || a, ei = (null == (t = (0, j.s)()) ? void 0 : t.length) > 0, {
     hasBlockedUsers: es,
     hasIgnoredUsers: ea
   } = (0, i.cj)([I.Z], () => ({
     hasBlockedUsers: I.Z.getBlockedIDs().length > 0,
     hasIgnoredUsers: I.Z.getIgnoredIDs().length > 0
-  })), eo = (0, m.B)({
+  })), el = (0, m.B)({
     location: "SettingRendererUtils"
   }), {
-    showRefreshedSettings: el
+    showRefreshedSettings: eo
   } = (0, w.F)({
     location: "SettingRendererUtils",
     autoTrackExposure: !1
   }), ec = (0, u.UQ)("SettingRendererUtils");
   return r.useMemo(() => (0, Z.i)({
-    unseenGiftCount: S,
+    unseenGiftCount: v,
     showPrepaidPaymentPastDueWarning: R,
     impressionSource: W,
     numOfPendingFamilyRequests: L,
@@ -158,10 +158,10 @@ function V() {
     hypeSquadRemoved: en,
     hasIgnoredUsers: ea,
     hasBlockedUsers: es,
-    isAllowGameFriendDMsVisible: eo,
-    useRefreshedVoiceAndVideo: el,
+    isAllowGameFriendDMsVisible: el,
+    useRefreshedVoiceAndVideo: eo,
     isEligibleForSensitiveContentDefaults: ec
-  }), [ee, V, es, ea, Q, ei, $, en, W, er, eo, X, K, Y, H, M, z, et, L, q, F, J, R, S, el, ec])
+  }), [ee, V, es, ea, Q, ei, $, en, W, er, el, X, K, Y, H, M, z, et, L, q, F, J, R, v, eo, ec])
 }
 
 function G(e) {
@@ -181,20 +181,20 @@ function G(e) {
       parent: n
     }] = e;
     return [t, n]
-  })), a = new Set, o = e => {
+  })), a = new Set, l = e => {
     let t = i[e];
     if (null == t) return;
     a.add(e);
     let n = t.parent;
-    null != n && o(n)
-  }, l = e => {
+    null != n && l(n)
+  }, o = e => {
     for (let t of (a.add(e), Object.entries(s).filter(t => {
         let [n, r] = t;
         return r === e
       }).map(e => {
         let [t] = e;
         return t
-      }))) l(t)
+      }))) o(t)
   };
   for (let e of t.filter(e => e in i))
     if (!a.has(e)) {
@@ -202,7 +202,7 @@ function G(e) {
         a.clear();
         break
       }
-      Object.values(s).includes(e) && l(e), o(e)
+      Object.values(s).includes(e) && o(e), l(e)
     } return a
 }
 
@@ -216,7 +216,7 @@ function F(e, t, n) {
         for (; null != r && null != e[r].parent;) r = e[r].parent;
         if (null != r) {
           var i;
-          let e = null !== (i = n.get(r)) && void 0 !== i ? i : 0;
+          let e = null != (i = n.get(r)) ? i : 0;
           n.set(r, e + 1)
         }
       }), n

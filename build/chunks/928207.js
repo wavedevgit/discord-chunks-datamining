@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
-  o = n(512969),
-  a = n(674746),
+  a = n(512969),
+  o = n(674746),
   s = n(442837),
   c = n(780384),
   u = n(481060),
@@ -22,11 +22,11 @@ var i = n(120356),
   E = n(278605),
   O = n(299657),
   N = n(594174),
-  v = n(74538),
-  y = n(981631),
-  I = n(474936),
+  y = n(74538),
+  I = n(981631),
+  v = n(474936),
   C = n(388032),
-  S = n(478208);
+  S = n(881207);
 let T = s.ZP.connectStores([N.default], () => ({
   user: N.default.getCurrentUser()
 }))((0, h.Z)((0, p.Z)(e => {
@@ -35,11 +35,11 @@ let T = s.ZP.connectStores([N.default], () => ({
     user: n
   } = e, {
     analyticsLocations: i
-  } = (0, m.ZP)(g.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, v.I5)(n), h = s && !p, N = (0, f.ZP)();
+  } = (0, m.ZP)(g.Z.HOME_PAGE_PREMIUM_TAB), s = (0, E.xP)("ApplicationStoreHome"), p = (0, y.I5)(n), h = s && !p, N = (0, f.ZP)();
   return t ? (0, r.jsxs)("div", {
     className: S.homeWrapperNormal,
     children: [(0, r.jsx)(d.Z, {
-      section: y.jXE.NAVIGATION,
+      section: I.jXE.NAVIGATION,
       children: (0, r.jsx)(u.f6W, {
         theme: N,
         children: e => (0, r.jsxs)(_.Z, {
@@ -52,7 +52,7 @@ let T = s.ZP.connectStores([N.default], () => ({
           children: [(0, r.jsx)(_.Z.Icon, {
             icon: u.SrA,
             "aria-hidden": !0,
-            color: h ? a.Z.PREMIUM_TIER_2_PINK : void 0
+            color: h ? o.Z.PREMIUM_TIER_2_PINK : void 0
           }), (0, r.jsx)(_.Z.Title, {
             children: C.NW.string(C.t.Ipxkoq)
           })]
@@ -67,10 +67,10 @@ let T = s.ZP.connectStores([N.default], () => ({
           className: S.spinner
         })
       }) : (0, r.jsx)(O.Z, {
-        entrypoint: I.EZ.ApplicationStoreHome
+        entrypoint: v.EZ.ApplicationStoreHome
       })
     })]
-  }) : (0, r.jsx)(o.l_, {
-    to: y.Z5c.LOGIN
+  }) : (0, r.jsx)(a.l_, {
+    to: I.Z5c.LOGIN
   })
 })))

@@ -1,6 +1,6 @@
 /** Chunk was on 38062 **/
 n.d(t, {
-  default: () => v
+  default: () => b
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -19,27 +19,27 @@ var a = n(512722),
   j = n(409110),
   _ = n(226060),
   p = n(388032),
-  g = n(960237);
+  g = n(486893);
 
-function v(e) {
+function b(e) {
   var t, n;
   let {
     transitionState: a,
-    guildProductListingId: v,
-    analyticsLocation: b,
+    guildProductListingId: b,
+    analyticsLocation: v,
     guildId: N,
     onClose: Z
-  } = e, C = (0, l.e7)([f.Z], () => f.Z.getGuildProduct(v));
+  } = e, C = (0, l.e7)([f.Z], () => f.Z.getGuildProduct(b));
   i()(null != C, "guildProductListing cannot be null"), (0, d.Z)({
     type: s.ImpressionTypes.MODAL,
     name: s.ImpressionNames.GUILD_PRODUCT_LISTING_INFO_MODAL,
     properties: {
-      guild_product_listing_id: v,
+      guild_product_listing_id: b,
       has_entitlement: !0 === C.has_entitlement,
-      location: b
+      location: v
     }
   });
-  let y = null !== (t = (0, h.C)(C)) && void 0 !== t ? t : "",
+  let y = null != (t = (0, h.C)(C)) ? t : "",
     I = (0, h.k)(C),
     O = (0, l.e7)([x.Z], () => x.Z.getGuild(N));
   return (0, r.jsxs)(o.Y0X, {
@@ -73,7 +73,7 @@ function v(e) {
           color: "header-secondary",
           children: p.NW.format(p.t.xImSen, {
             productType: y,
-            personName: null !== (n = null == O ? void 0 : O.name) && void 0 !== n ? n : ""
+            personName: null != (n = null == O ? void 0 : O.name) ? n : ""
           })
         }), (0, r.jsx)(o.LZC, {
           size: 16
@@ -102,7 +102,7 @@ function v(e) {
       className: g.footer,
       children: [(0, r.jsx)(_.Z, {
         guildId: N,
-        guildProductListingId: v,
+        guildProductListingId: b,
         sourceAnalyticsLocations: c.Z.GUILD_PRODUCT_INFO_MODAL
       }), (0, r.jsx)(o.Text, {
         tag: "div",

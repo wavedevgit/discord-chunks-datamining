@@ -18,16 +18,16 @@ var n = r(200651),
   g = r(709054),
   x = r(931240),
   j = r(645896),
-  v = r(603368),
-  b = r(532490),
-  y = r(380365),
+  b = r(603368),
+  y = r(532490),
+  v = r(380365),
   O = r(979264),
   C = r(620929),
   w = r(284019),
   N = r(308083),
   P = r(981631),
   S = r(388032),
-  Z = r(416642);
+  Z = r(343574);
 
 function T(e) {
   var t;
@@ -40,10 +40,10 @@ function T(e) {
     let e = g.default.extractTimestamp(r);
     return o()(new Date(e)).format("MMMM YYYY")
   }, [r]), f = l.useMemo(() => new Set(i.games), [i.games]);
-  return (0, n.jsx)(b.Z, {
+  return (0, n.jsx)(y.Z, {
     guildId: r,
-    signHintPosition: b.p.LEFT,
-    primaryColor: null === (t = i.branding) || void 0 === t ? void 0 : t.primaryColor,
+    signHintPosition: y.p.LEFT,
+    primaryColor: null == (t = i.branding) ? void 0 : t.primaryColor,
     signed: s,
     onSignCharter: c,
     children: (0, n.jsxs)("div", {
@@ -94,7 +94,7 @@ function D(e) {
       onClose: o,
       onAccept: g
     } = e,
-    b = function(e, t) {
+    y = function(e, t) {
       if (null == e) return {};
       var r, n, l = function(e, t) {
         if (null == e) return {};
@@ -127,12 +127,12 @@ function D(e) {
     B = (0, c.e7)([h.default], () => h.default.getCurrentUser()),
     R = (0, c.e7)([m.ZP], () => null != B ? m.ZP.getMember(s, B.id) : null),
     I = (0, d.ZP)(),
-    F = (0, v.nP)(null == C ? void 0 : null === (i = C.branding) || void 0 === i ? void 0 : i.primaryColor, [u.TVs.colors.BG_BRAND, .7]),
+    F = (0, b.nP)(null == C || null == (i = C.branding) ? void 0 : i.primaryColor, [u.TVs.colors.BG_BRAND, .7]),
     V = u.TVs.colors.BG_SURFACE_OVERLAY.resolve({
       theme: I,
       saturation: 1
     }).hex(),
-    W = (0, v.nj)(F, V, "top center");
+    W = (0, b.nj)(F, V, "top center");
   return null == A || null == B || null == R || null == C ? null : (0, n.jsx)(u.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -150,8 +150,8 @@ function D(e) {
       })
     }
     return e
-  }({}, b), r = r = {
-    transitionState: b.transitionState,
+  }({}, y), r = r = {
+    transitionState: y.transitionState,
     "aria-labelledby": O,
     className: Z.modal,
     size: u.CgR.DYNAMIC,
@@ -175,7 +175,7 @@ function D(e) {
             variant: "text-md/normal",
             children: S.NW.string(S.t.sZHbAQ)
           })]
-        }), (0, n.jsx)(y.Z, {
+        }), (0, n.jsx)(v.Z, {
           guildId: s,
           isTagAdopted: D,
           onChangeUseTag: E

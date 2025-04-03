@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   i = n(622535),
   s = n(481060),
   c = n(63063),
@@ -15,14 +15,14 @@ var r = n(200651),
   b = n(215023),
   p = n(981631),
   f = n(388032),
-  g = n(719458);
+  g = n(806734);
 let h = e => {
-  var t, n, o;
+  var t, n, a;
   let {
     wideBannerBlock: h,
     handleTransition: m,
-    tab: v
-  } = e, _ = null === (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) || void 0 === t ? void 0 : t.skuId, C = l.useRef(null), x = l.useRef(null), [O, y] = l.useState();
+    tab: _
+  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? void 0 : t.skuId, C = l.useRef(null), x = l.useRef(null), [O, y] = l.useState();
   l.useEffect(() => {
     let e = x.current;
     if (null == e) return;
@@ -33,7 +33,7 @@ let h = e => {
       e.onload = null
     }
   }, []);
-  let j = null != _ ? _ : "",
+  let j = null != v ? v : "",
     {
       handleCardVisibilityChange: k
     } = (0, d.E)(j, "home", "marketing wide banner"),
@@ -44,7 +44,7 @@ let h = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: C,
-      className: a()(g.row, g.between, g.bannerBlockContainer, g.centeredSection),
+      className: o()(g.row, g.between, g.bannerBlockContainer, g.centeredSection),
       children: [(0, r.jsx)("div", {
         className: g.wideBannerBackgroundImg,
         children: (0, r.jsx)("img", {
@@ -68,17 +68,17 @@ let h = e => {
           className: g.wideBannerTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             style: {
-              color: null !== (n = h.bannerTextColor) && void 0 !== n ? n : "var(--text-normal)"
+              color: null != (n = h.bannerTextColor) ? n : "var(--text-normal)"
             },
-            variant: v === b.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
+            variant: _ === b.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
             children: h.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null !== (o = h.bannerTextColor) && void 0 !== o ? o : "var(--text-normal)"
+              color: null != (a = h.bannerTextColor) ? a : "var(--text-normal)"
             },
             lineClamp: 2,
-            variant: v === b.AW.ORBS ? "text-md/medium" : "text-sm/medium",
-            children: v === b.AW.ORBS ? f.NW.format(f.t.SFFP7O, {
+            variant: _ === b.AW.ORBS ? "text-md/medium" : "text-sm/medium",
+            children: _ === b.AW.ORBS ? f.NW.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : h.body
           })]

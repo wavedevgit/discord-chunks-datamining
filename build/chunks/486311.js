@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
   s = n(413335),
   c = n(434479),
@@ -14,11 +14,11 @@ var r = n(200651),
   p = n(933104),
   h = n(332538),
   f = n(535396),
-  g = n(296260),
+  g = n(680278),
   m = n(388032),
-  b = n(277778);
+  b = n(388298);
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function v(e) {
   }
   return e
 }
-let y = {
+let _ = {
     animation: {
       BEG: 0,
       END: 75
@@ -46,35 +46,35 @@ let y = {
       END: 376
     }
   },
-  _ = i.memo(function(e) {
+  v = i.memo(function(e) {
     let {
       guildId: t,
-      selected: o
-    } = e, _ = (0, h.Z)(t), O = i.useCallback(() => {
+      selected: l
+    } = e, v = (0, h.Z)(t), O = i.useCallback(() => {
       (0, u.jd)(t), (0, d.Z)(t)
     }, [t]), j = i.useCallback(() => {
       var e;
-      switch (null == _ ? void 0 : null === (e = _.popout) || void 0 === e ? void 0 : e.type) {
+      switch (null == v || null == (e = v.popout) ? void 0 : e.type) {
         case f.Us.LEVEL:
-          return (0, r.jsx)(p.j, v({
+          return (0, r.jsx)(p.j, y({
             guildId: t
-          }, _.popout));
+          }, v.popout));
         case f.Us.PERK:
-          return (0, r.jsx)(p.$, v({
+          return (0, r.jsx)(p.$, y({
             guildId: t
-          }, _.popout));
+          }, v.popout));
         default:
           return (0, r.jsx)("div", {})
       }
-    }, [t, null == _ ? void 0 : _.popout]), [x, C] = i.useState(!1), [S, P] = i.useState(null), I = null == S ? "animation" : "LOOP";
+    }, [t, null == v ? void 0 : v.popout]), [x, C] = i.useState(!1), [S, P] = i.useState(null), I = null == S ? "animation" : "LOOP";
     i.useEffect(() => {
-      (null == _ ? void 0 : _.popout) == null && P(null)
-    }, [null == _ ? void 0 : _.popout]);
+      (null == v ? void 0 : v.popout) == null && P(null)
+    }, [null == v ? void 0 : v.popout]);
     let N = i.useCallback(e => {
       P(e)
     }, []);
     return (0, r.jsx)(a.yRy, {
-      shouldShow: (null == _ ? void 0 : _.popout) != null && !x,
+      shouldShow: (null == v ? void 0 : v.popout) != null && !x,
       nudgeAlignIntoViewport: !0,
       animationPosition: "bottom",
       position: "right",
@@ -83,7 +83,7 @@ let y = {
       onRequestClose: () => C(!0),
       children: e => {
         var i, u;
-        return (0, r.jsx)(c.m, (i = v({}, e), u = u = {
+        return (0, r.jsx)(c.m, (i = y({}, e), u = u = {
           className: b.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Z, {
@@ -91,12 +91,12 @@ let y = {
             className: e,
             color: "currentColor"
           }),
-          background: (null == _ ? void 0 : _.popout) != null && (0, r.jsx)("div", {
+          background: (null == v ? void 0 : v.popout) != null && (0, r.jsx)("div", {
             className: b.lottieContainer,
             children: (0, r.jsx)(a.kci, {
               nextScene: I,
               className: b.lottie,
-              sceneSegments: y,
+              sceneSegments: _,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: N,
               rendererSettings: {
@@ -105,15 +105,15 @@ let y = {
             })
           }),
           text: (0, r.jsx)("span", {
-            className: l()({
-              [b.textImportant]: (null == _ ? void 0 : _.showUnread) === !0
+            className: o()({
+              [b.textImportant]: (null == v ? void 0 : v.showUnread) === !0
             }),
             children: m.NW.string(g.Z.yv3DJC)
           }),
-          selected: o,
+          selected: l,
           onClick: O,
-          showUnread: (null == _ ? void 0 : _.showUnread) === !0,
-          trailing: null == _ ? void 0 : _.trailing
+          showUnread: (null == v ? void 0 : v.showUnread) === !0,
+          trailing: null == v ? void 0 : v.trailing
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(u)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

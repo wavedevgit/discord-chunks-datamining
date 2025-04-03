@@ -1,17 +1,17 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 }), n(978209), n(47120), n(653041);
 var r, i = n(200651),
-  o = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  l = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(954955),
   c = n.n(s),
   u = n(748780),
   d = n(902704),
   p = n(481060),
-  h = n(78614);
+  h = n(161421);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ let m = {
   friction: 10,
   tension: 300
 };
-class b extends o.Component {
+class b extends l.Component {
   shouldComponentUpdate(e, t) {
     return !(0, d.Z)(this.props, e, ["animate"]) || !(0, d.Z)(this.state, t)
   }
@@ -63,10 +63,7 @@ class b extends o.Component {
     let {
       translateY: e
     } = this.state;
-    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) {
-      e.setValue(0);
-      return
-    }
+    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void e.setValue(0);
     this._timeout = setTimeout(() => {
       u.Z.spring(e, g({
         toValue: 0
@@ -77,10 +74,7 @@ class b extends o.Component {
     let {
       translateY: e
     } = this.state;
-    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) {
-      e.setValue(1);
-      return
-    }
+    if (null != this._timeout && clearTimeout(this._timeout), !this.props.animate) return void e.setValue(1);
     u.Z.spring(e, g({
       toValue: 1
     }, m)).start()
@@ -127,7 +121,7 @@ class b extends o.Component {
     }
   }
 }
-class v extends(r = o.PureComponent) {
+class y extends(r = l.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -144,8 +138,8 @@ class v extends(r = o.PureComponent) {
     } = this.state, {
       textMention: n,
       textUnread: r,
-      reverse: o,
-      className: l,
+      reverse: l,
+      className: o,
       barClassName: s,
       hide: c,
       animate: u
@@ -153,12 +147,12 @@ class v extends(r = o.PureComponent) {
       reducedMotion: d
     } = this.context;
     return (0, i.jsx)("div", {
-      className: null != l ? l : void 0,
+      className: null != o ? o : void 0,
       children: (0, i.jsx)(b, {
         hide: !0 === c || null == e && null == t,
         className: a()(s, null != t ? h.mention : h.unread),
         text: null != t ? n : r,
-        reverse: o,
+        reverse: l,
         animate: u && !d.enabled,
         onClick: this.handleClick
       })
@@ -175,25 +169,25 @@ class v extends(r = o.PureComponent) {
         isVisible: n,
         isUnread: r,
         isMentioned: i,
-        reverse: o,
-        onCalculate: l
+        reverse: l,
+        onCalculate: o
       } = this.props, a = null, s = null, c = [];
       e.forEach(e => {
         "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push("folder:".concat(e.folderId)), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
       });
       let u = e => {
-          null == a && i(e, o, c) && (a = e), null == s && r(e, o, c) && (s = e)
+          null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
         },
-        d = o ? c.length - 1 : 0,
+        d = l ? c.length - 1 : 0,
         p = c[d];
       for (; null != p;) {
         if ("string" == typeof p) {
-          if (n(p, o, c)) break;
+          if (n(p, l, c)) break;
           u(p)
         } else {
           let e = !1;
           for (let t of p) {
-            if (n(t, o, c)) {
+            if (n(t, l, c)) {
               e = !0;
               break
             }
@@ -201,9 +195,9 @@ class v extends(r = o.PureComponent) {
           }
           if (e) break
         }
-        d += o ? -1 : 1, p = c[d]
+        d += l ? -1 : 1, p = c[d]
       }
-      null != l && l(a, s, o), this.setState({
+      null != o && o(a, s, l), this.setState({
         mention: a,
         unread: s
       })
@@ -219,10 +213,10 @@ class v extends(r = o.PureComponent) {
     })
   }
 }
-f(v, "contextType", p.Sfi), f(v, "defaultProps", {
+f(y, "contextType", p.Sfi), f(y, "defaultProps", {
   className: h.container,
   reverse: !1,
   hide: !1,
   animate: !0
 });
-let y = v
+let _ = y

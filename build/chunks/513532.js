@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -13,7 +13,7 @@ var i = n(442837),
   c = n(389134),
   d = n(650461),
   u = n(388032),
-  m = n(128662);
+  m = n(130116);
 let g = e => {
   let {
     guildId: t,
@@ -21,7 +21,7 @@ let g = e => {
     inSettings: g = !1
   } = e, p = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), h = (0, i.e7)([c.Z, d.ZP], () => {
     var e, n;
-    return g ? c.Z.getState().settings.verificationForm : null === (n = d.ZP.getStateForGuild(t)) || void 0 === n ? void 0 : null === (e = n.progress) || void 0 === e ? void 0 : e.verificationForm
+    return g ? c.Z.getState().settings.verificationForm : null == (n = d.ZP.getStateForGuild(t)) || null == (e = n.progress) ? void 0 : e.verificationForm
   });
   return null == p ? null : (0, r.jsxs)("div", {
     className: m.slideContent,

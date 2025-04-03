@@ -9,7 +9,7 @@ var r = n(726542),
 
 function a(e) {
   var t;
-  let n = null !== (t = (0, l.Z)(e)) && void 0 !== t ? t : "";
+  let n = null != (t = (0, l.Z)(e)) ? t : "";
   switch (n) {
     case i.M7m.PS4:
     case i.M7m.PS5:

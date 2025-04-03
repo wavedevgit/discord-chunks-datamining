@@ -48,7 +48,7 @@ let s = a(26507),
   }
   timezone(t) {
     var e;
-    return void 0 === t ? (null === (e = this.data.timezone) || void 0 === e ? void 0 : e.name) || null : ("string" == typeof t ? this.data.timezone = {
+    return void 0 === t ? (null == (e = this.data.timezone) ? void 0 : e.name) || null : ("string" == typeof t ? this.data.timezone = {
       name: t
     } : null === t ? this.data.timezone = null : this.data.timezone = t, this)
   }
@@ -114,11 +114,11 @@ let s = a(26507),
   toString() {
     var t, e;
     let a = "";
-    return a = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-" + this.data.prodId + "\r\n", this.data.url && (a += "URL:" + this.data.url + "\r\n"), this.data.source && (a += "SOURCE;VALUE=URI:" + this.data.source + "\r\n"), this.data.scale && (a += "CALSCALE:" + this.data.scale + "\r\n"), this.data.method && (a += "METHOD:" + this.data.method + "\r\n"), this.data.name && (a += "NAME:" + this.data.name + "\r\n", a += "X-WR-CALNAME:" + this.data.name + "\r\n"), this.data.description && (a += "X-WR-CALDESC:" + this.data.description + "\r\n"), (null === (t = this.data.timezone) || void 0 === t ? void 0 : t.generator) && [...new Set([this.timezone(), ...this.data.events.map(t => t.timezone())])].filter(t => null !== t && !t.startsWith("/")).forEach(t => {
+    return a = "BEGIN:VCALENDAR\r\nVERSION:2.0\r\nPRODID:-" + this.data.prodId + "\r\n", this.data.url && (a += "URL:" + this.data.url + "\r\n"), this.data.source && (a += "SOURCE;VALUE=URI:" + this.data.source + "\r\n"), this.data.scale && (a += "CALSCALE:" + this.data.scale + "\r\n"), this.data.method && (a += "METHOD:" + this.data.method + "\r\n"), this.data.name && (a += "NAME:" + this.data.name + "\r\n", a += "X-WR-CALNAME:" + this.data.name + "\r\n"), this.data.description && (a += "X-WR-CALDESC:" + this.data.description + "\r\n"), (null == (t = this.data.timezone) ? void 0 : t.generator) && [...new Set([this.timezone(), ...this.data.events.map(t => t.timezone())])].filter(t => null !== t && !t.startsWith("/")).forEach(t => {
       var e;
-      if (!(null === (e = this.data.timezone) || void 0 === e ? void 0 : e.generator)) return;
+      if (!(null == (e = this.data.timezone) ? void 0 : e.generator)) return;
       let i = this.data.timezone.generator(t);
       i && (a += i.replace(/\r\n/g, "\n").replace(/\n/g, "\r\n").trim() + "\r\n")
-    }), (null === (e = this.data.timezone) || void 0 === e ? void 0 : e.name) && (a += "TIMEZONE-ID:" + this.data.timezone.name + "\r\n", a += "X-WR-TIMEZONE:" + this.data.timezone.name + "\r\n"), this.data.ttl && (a += "REFRESH-INTERVAL;VALUE=DURATION:" + (0, s.toDurationString)(this.data.ttl) + "\r\n", a += "X-PUBLISHED-TTL:" + (0, s.toDurationString)(this.data.ttl) + "\r\n"), this.data.events.forEach(t => a += t.toString()), a += (0, s.generateCustomAttributes)(this.data), a += "END:VCALENDAR", (0, s.foldLines)(a)
+    }), (null == (e = this.data.timezone) ? void 0 : e.name) && (a += "TIMEZONE-ID:" + this.data.timezone.name + "\r\n", a += "X-WR-TIMEZONE:" + this.data.timezone.name + "\r\n"), this.data.ttl && (a += "REFRESH-INTERVAL;VALUE=DURATION:" + (0, s.toDurationString)(this.data.ttl) + "\r\n", a += "X-PUBLISHED-TTL:" + (0, s.toDurationString)(this.data.ttl) + "\r\n"), this.data.events.forEach(t => a += t.toString()), a += (0, s.generateCustomAttributes)(this.data), a += "END:VCALENDAR", (0, s.foldLines)(a)
   }
 }

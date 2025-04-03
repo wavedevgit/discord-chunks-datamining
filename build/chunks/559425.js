@@ -15,8 +15,8 @@ let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running 
   commitHash: t,
   maxMsToBlockFor: s,
   snippetsBaseUrl: r,
-  forceRecording: c,
-  middleware: d,
+  forceRecording: d,
+  middleware: c,
   responseSanitizers: l,
   isProduction: u
 }) => {
@@ -31,16 +31,10 @@ let n = async e => window.Meticulous?.isRunningAsTest ? (console.debug("Running 
     let p = document.createElement("script");
     p.type = "text/javascript", p.src = new URL("v1/meticulous-manual-init.js", r || "https://snippet.meticulous.ai").href;
     let S = window;
-    S.METICULOUS_RECORDING_TOKEN = o ?? e, void 0 !== i && (S.METICULOUS_UPLOAD_INTERVAL_MS = i), void 0 !== t && (S.METICULOUS_APP_COMMIT_HASH = t), void 0 !== n && (S.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = n), void 0 !== c && (S.METICULOUS_FORCE_RECORDING = c), void 0 !== u && (S.METICULOUS_IS_PRODUCTION_ENVIRONMENT = u), null != l && l.length > 0 && (S.METICULOUS_NETWORK_RESPONSE_SANITIZERS = l), null != d && d.length > 0 && (S.METICULOUS_RECORDER_MIDDLEWARE_V1 = d), p.onload = function() {
-      if (a) {
-        console.debug("Meticulous snippet abandoned due to max blocking time reached.");
-        return
-      }
+    S.METICULOUS_RECORDING_TOKEN = o ?? e, void 0 !== i && (S.METICULOUS_UPLOAD_INTERVAL_MS = i), void 0 !== t && (S.METICULOUS_APP_COMMIT_HASH = t), void 0 !== n && (S.METICULOUS_SNAPSHOT_LINKED_STYLESHEETS = n), void 0 !== d && (S.METICULOUS_FORCE_RECORDING = d), void 0 !== u && (S.METICULOUS_IS_PRODUCTION_ENVIRONMENT = u), null != l && l.length > 0 && (S.METICULOUS_NETWORK_RESPONSE_SANITIZERS = l), null != c && c.length > 0 && (S.METICULOUS_RECORDER_MIDDLEWARE_V1 = c), p.onload = function() {
+      if (a) return void console.debug("Meticulous snippet abandoned due to max blocking time reached.");
       let e = window.__meticulous?.initialiseRecorder;
-      if ("function" != typeof e) {
-        E("Meticulous recorder failed to initialise.");
-        return
-      }
+      if ("function" != typeof e) return void E("Meticulous recorder failed to initialise.");
       try {
         e()
       } catch (e) {

@@ -20,7 +20,7 @@ let s = {
       windowId: o
     }), s.current.initialize()), () => {
       var e;
-      null === (e = s.current) || void 0 === e || e.terminate(), s.current = null
+      null == (e = s.current) || e.terminate(), s.current = null
     }), [n, t, c, o]), s.current
   }
 }

@@ -16,7 +16,7 @@ let u = e => {
     invite: n,
     forceGuildScrollHeight: u = !0,
     isNUXFlow: m
-  } = e, [N, x] = r.useState([d.tF.VERIFY_EMAIL]), [h, v] = r.useState(""), [_, g] = r.useState(""), [f, p] = r.useState(void 0), [E, S] = r.useState([]), I = e => {
+  } = e, [N, x] = r.useState([d.tF.VERIFY_EMAIL]), [h, _] = r.useState(""), [g, f] = r.useState(""), [v, p] = r.useState(void 0), [E, S] = r.useState([]), I = e => {
     x(N.concat(e).slice(-4))
   };
   switch (N[N.length - 1]) {
@@ -25,7 +25,7 @@ let u = e => {
         setGuildsInfo: S,
         setStep: I,
         email: h,
-        setEmail: v,
+        setEmail: _,
         setGuildId: p,
         invite: n,
         onClose: t,
@@ -46,19 +46,19 @@ let u = e => {
         },
         setStep: I,
         email: h,
-        school: _,
-        setSchool: g
+        school: g,
+        setSchool: f
       });
     case d.tF.VERIFY_PIN:
       return (0, l.jsx)(o.Z, {
         email: h,
         onClose: t,
-        guildId: f
+        guildId: v
       });
     case d.tF.EMAIL_WAITLIST:
       return (0, l.jsx)(c.Z, {
         setStep: I,
-        school: _
+        school: g
       });
     default:
       return null

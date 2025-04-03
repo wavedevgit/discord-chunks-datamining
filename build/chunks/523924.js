@@ -3,13 +3,13 @@ n.d(t, {
   Z: () => u
 });
 var o = n(200651),
-  i = n(192379),
-  r = n(442837),
+  r = n(192379),
+  i = n(442837),
   c = n(481060),
   a = n(693546),
   l = n(937111),
   d = n(388032),
-  s = n(580633);
+  s = n(916199);
 let u = e => {
   let {
     headerId: t,
@@ -19,11 +19,11 @@ let u = e => {
     onWithdrawApplication: _,
     rejectionReason: f = null,
     guild: m = null
-  } = e, p = (0, r.e7)([l.Z], () => {
+  } = e, p = (0, i.e7)([l.Z], () => {
     var e;
-    return l.Z.getCooldown(null !== (e = null == m ? void 0 : m.id) && void 0 !== e ? e : "0")
+    return l.Z.getCooldown(null != (e = null == m ? void 0 : m.id) ? e : "0")
   });
-  i.useEffect(() => {
+  r.useEffect(() => {
     null == p && null != m && a.Z.fetchJoinRequestCooldown(m.id)
   }, [p, m]);
   let g = (null != p ? p : 0) > 0,

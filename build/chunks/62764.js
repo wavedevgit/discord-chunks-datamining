@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => k
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(566006),
   _ = n(443877),
   C = n(60174),
-  v = n(216337),
-  y = n(920888),
-  x = n(287151),
+  y = n(216337),
+  x = n(920888),
+  v = n(287151),
   j = n(569471),
   O = n(346479),
   E = n(592125),
@@ -31,8 +31,8 @@ var r = n(200651),
   S = n(228392),
   Z = n(981631),
   T = n(388032),
-  A = n(241390),
-  w = n(933190);
+  A = n(184844),
+  w = n(92254);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -138,7 +138,7 @@ function k(e) {
         }),
         children: [!el && !K && null != ee && (0, r.jsx)("div", {
           className: w.reactions,
-          children: (0, r.jsx)(x.le, {
+          children: (0, r.jsx)(v.le, {
             message: z,
             readOnly: !1,
             useChatFontScaling: !1,
@@ -154,7 +154,7 @@ function k(e) {
             me_burst: !1,
             emojiSize: "reactionLarge"
           })
-        }), (0, r.jsx)(y.Z, {
+        }), (0, r.jsx)(x.Z, {
           message: z,
           channel: V,
           disableReactionCreates: !0,
@@ -234,7 +234,7 @@ function k(e) {
       })]
     }), et && (0, r.jsx)(g.Z, {
       threadId: t
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(y.Z, {
       channel: V,
       isLastItem: l
     })]

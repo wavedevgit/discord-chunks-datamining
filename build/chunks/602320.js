@@ -19,7 +19,7 @@ let a = e => {
     setShowConfirmModal: p,
     index: j,
     onSelect: O
-  } = e, g = (0, o.e7)([l.Z], () => l.Z.get(a)), h = (null !== (t = null == g ? void 0 : g.welcome_channels) && void 0 !== t ? t : []).length - 1, y = e => {
+  } = e, g = (0, o.e7)([l.Z], () => l.Z.get(a)), h = (null != (t = null == g ? void 0 : g.welcome_channels) ? t : []).length - 1, y = e => {
     u(b, e, !0)
   };
   return (0, n.jsxs)(c.v2r, {

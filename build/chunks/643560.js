@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   default: () => f
 });
@@ -54,24 +54,24 @@ function f(e) {
     isEntryAdmin: b,
     canEdit: _,
     canRemove: C
-  } = (0, u.Z)(t), v = (0, a.Z)({
+  } = (0, u.Z)(t), y = (0, a.Z)({
     id: t.guildId,
     label: d.NW.string(d.t["94lLDw"]),
     onSuccess: m
   });
   i.useEffect(() => {
-    _ || C || null != v || (0, o.Zy)()
+    _ || C || null != y || (0, o.Zy)()
   });
-  let y = () => {
+  let x = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function x() {
+  function v() {
     (0, o.Zy)(), null == m || m()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: x,
+    onClose: v,
     "aria-label": d.NW.string(d.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
@@ -86,7 +86,7 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), x()
+          }), v()
         }
       }) : null, C ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
@@ -96,7 +96,7 @@ function f(e) {
             header: d.NW.string(d.t.KUxYWF),
             confirmText: d.NW.string(d.t.N86XcH),
             cancelText: d.NW.string(d.t["ETE/oK"]),
-            onConfirm: y
+            onConfirm: x
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -104,20 +104,20 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), x()
+          }))), v()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: d.NW.string(d.t.Aen9en),
         action: function() {
-          null != t && ((0, s.sq)(t), x())
+          null != t && ((0, s.sq)(t), v())
         },
         icon: l.U65,
         color: "danger"
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: v
+      children: y
     })]
   })
 }

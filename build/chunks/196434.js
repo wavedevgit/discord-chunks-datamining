@@ -1,6 +1,5 @@
 /** Chunk was on 49131 **/
-var r = n(286543),
-  a = n(956656)(function(e, t) {
-    return r(e, 1, t)
-  });
-e.exports = a
+var r = n(286543);
+e.exports = n(956656)(function(e, t) {
+  return r(e, 1, t)
+})

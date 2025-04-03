@@ -1,4 +1,4 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
   CK: () => d,
   SJ: () => u
@@ -60,7 +60,7 @@ function d(e, t) {
   (0, o.ZDy)(async () => {
     let {
       default: i
-    } = await Promise.all([n.e("82158"), n.e("323")]).then(n.bind(n, 717057));
+    } = await Promise.all([n.e("82158"), n.e("67071")]).then(n.bind(n, 717057));
     return n => (0, r.jsx)(i, c(a({}, n), {
       onAccept: () => {
         null != t && s.Z.ackUserGuildJoinRequest(e, t), n.onClose()

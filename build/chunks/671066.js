@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -13,7 +13,7 @@ var i = n(442837),
   c = n(594174),
   d = n(556012),
   u = n(388032),
-  m = n(742390);
+  m = n(467397);
 
 function g(e) {
   var t;
@@ -22,21 +22,21 @@ function g(e) {
     triggerType: g,
     toggled: p,
     onToggleAction: h
-  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, g), x = null === (t = n.metadata) || void 0 === t ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
+  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, g), x = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
     let e = l.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
   if (null == b) return null;
   let {
     headerText: N,
-    descriptionText: v,
-    icon: _
+    descriptionText: _,
+    icon: v
   } = b;
   return (0, r.jsxs)("div", {
     className: m.actionContainer,
     children: [(0, r.jsx)("div", {
       className: m.actionIconContainer,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(v, {
         size: "md",
         color: "currentColor",
         className: m.actionIcon
@@ -49,7 +49,7 @@ function g(e) {
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: v
+        children: _
       }), p && (0, r.jsxs)(s.Text, {
         color: "text-muted",
         variant: "text-xs/medium",

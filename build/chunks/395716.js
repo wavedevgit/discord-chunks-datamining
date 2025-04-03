@@ -17,10 +17,7 @@ function u(e) {
   } = e, [n, u] = a.useState(!1), m = (0, i.e7)([s.Z], () => s.Z.getChannel(t.interviewChannelId)), p = a.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(d.NW.string(d.t.R0RpRU), o.ToastType.FAILURE))
   }, []), f = a.useCallback(async () => {
-    if (null != m) {
-      l.default.selectPrivateChannel(m.id);
-      return
-    }
+    if (null != m) return void l.default.selectPrivateChannel(m.id);
     if (!n) {
       u(!0);
       try {

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => s
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(834129),
-  o = n(388032),
-  l = n(418732);
+  l = n(388032),
+  o = n(482893);
 
 function s(e) {
   let {
@@ -18,10 +18,10 @@ function s(e) {
     iconNode: (0, r.jsx)(i.or_, {
       size: "md",
       color: "currentColor",
-      className: l.icon
+      className: o.icon
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: o.NW.string(o.t.OCs36O)
+    children: l.NW.string(l.t.OCs36O)
   })
 }

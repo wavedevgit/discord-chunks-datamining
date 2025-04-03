@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(846519),
-  o = n(481060),
-  l = n(626135),
+  l = n(481060),
+  o = n(626135),
   c = n(572004),
   d = n(70956),
   u = n(981631),
@@ -25,25 +25,25 @@ function b(e) {
     onCopy: m,
     "aria-label": b,
     delay: N = h
-  } = e, [x, _] = i.useState(0), [E, j] = i.useState(!1), [O, C] = i.useState(!1), [v] = i.useState(() => new a.V7), [S] = i.useState(() => new a.V7);
+  } = e, [x, _] = i.useState(0), [E, j] = i.useState(!1), [O, C] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
-      v.stop(), S.stop()
-    }, [v, S]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      S.stop(), v.stop()
+    }, [S, v]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: d({})
   });
   let T = x >= f.length - 1,
-    I = T ? o.FGA.RED : o.FGA.GREEN,
-    y = E ? I : o.FGA.PRIMARY,
+    I = T ? l.FGA.RED : l.FGA.GREEN,
+    y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), l.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), v.start(g, () => C(!1)), S.start(p, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), S.start(g, () => C(!1)), v.start(p, () => _(0))
     };
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(l.ua7, {
     text: (() => {
       var e;
       if (!E) return t;
       let n = (0, s.clamp)(x - 1, 0, f.length - 1),
-        i = null !== (e = f[n]) && void 0 !== e ? e : f[0];
-      return (0, r.jsx)(o.UkV, {
+        i = null != (e = f[n]) ? e : f[0];
+      return (0, r.jsx)(l.UkV, {
         isShaking: T,
         children: i()
       })
@@ -100,7 +100,7 @@ function b(e) {
             null == i || i();
             return
           }
-          v.stop(), C(!1)
+          S.stop(), C(!1)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

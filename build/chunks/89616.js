@@ -7,7 +7,7 @@ var n = s(200651),
   a = s(481060),
   i = s(365007),
   c = s(388032),
-  o = s(561620);
+  o = s(17379);
 
 function r(e) {
   let {
@@ -28,7 +28,7 @@ function r(e) {
   return l.useEffect(() => {
     if (t === a.Dvm.ENTERED) {
       var e;
-      null === (e = k.current) || void 0 === e || e.focus()
+      null == (e = k.current) || e.focus()
     }
   }, [t]), (0, n.jsxs)(a.Y0X, {
     transitionState: t,

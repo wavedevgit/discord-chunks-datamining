@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   K: () => a
 });
@@ -10,8 +10,8 @@ let a = {
   comboKeysBindGlobal: !0,
   action(e) {
     e.preventDefault(), e.stopPropagation();
-    let t = i.Z.getGuildId(),
-      n = i.Z.getChannelId();
+    let t = i.ZP.getGuildId(),
+      n = i.ZP.getChannelId();
     return null != n && (0, r.K)(null != t ? t : s.ME, n), !1
   }
 }

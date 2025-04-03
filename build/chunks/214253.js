@@ -99,10 +99,9 @@ var r, o = n(67867),
       if ("." === p()) {
         if (0 === n || (d -= n, l > 6)) return;
         for (r = 0; p();) {
-          if (o = null, r > 0) {
+          if (o = null, r > 0)
             if ("." !== p() || !(r < 4)) return;
-            d++
-          }
+            else d++;
           if (!I($, p())) return;
           for (; I($, p());) {
             if (a = R(p(), 10), null === o) o = a;
@@ -329,16 +328,15 @@ eL.prototype = {
             o = eE;
             continue
           }
-          if (":" !== d || c) {
+          if (":" !== d || c)
             if (d === r || "/" === d || "?" === d || "#" === d || "\\" === d && this.isSpecial()) {
               if (this.isSpecial() && "" === i) return z;
               if (t && "" === i && (this.includesCredentials() || null !== this.port)) return;
               if (f = this.parseHost(i)) return f;
               if (i = "", o = eI, t) return;
               continue
-            }
-            "[" === d ? c = !0 : "]" === d && (c = !1), i += d
-          } else {
+            } else "[" === d ? c = !0 : "]" === d && (c = !1), i += d;
+          else {
             if ("" === i) return z;
             if (f = this.parseHost(i)) return f;
             if (i = "", o = eR, t === eA) return
@@ -403,11 +401,11 @@ eL.prototype = {
         case eI:
           if (this.isSpecial()) {
             if (o = eM, "/" !== d && "\\" !== d) continue
-          } else if (t || "?" !== d) {
+          } else if (t || "?" !== d)
             if (t || "#" !== d) {
               if (d !== r && (o = eM, "/" !== d)) continue
-            } else this.fragment = "", o = eD
-          } else this.query = "", o = eB;
+            } else this.fragment = "", o = eD;
+          else this.query = "", o = eB;
           break;
         case eM:
           if (d === r || "/" === d || "\\" === d && this.isSpecial() || !t && ("?" === d || "#" === d)) {

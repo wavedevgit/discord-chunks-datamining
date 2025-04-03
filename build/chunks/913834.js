@@ -1,4 +1,4 @@
-/** Chunk was on 6536 **/
+/** Chunk was on 35397 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(704041),
   l = n(986398),
   u = n(463031),
-  d = n(948557);
+  d = n(791644);
 
 function p(e) {
   let {
@@ -23,7 +23,7 @@ function p(e) {
     intervalOffset: 0
   }), _ = o.useMemo(() => {
     var e;
-    if ((null == f ? void 0 : null === (e = f.guild_settings) || void 0 === e ? void 0 : e.show_winner_crown) !== !0) return !1;
+    if ((null == f || null == (e = f.guild_settings) ? void 0 : e.show_winner_crown) !== !0) return !1;
     let t = f.users[0];
     return n.author.id === (null == t ? void 0 : t.user_id)
   }, [f, n]);

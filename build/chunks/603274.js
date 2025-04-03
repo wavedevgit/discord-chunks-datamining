@@ -1,13 +1,13 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => Z
 }), n(47120), n(13667), n(390547), n(653041);
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  l = n(392711),
-  a = n.n(l),
+  l = n.n(i),
+  o = n(392711),
+  a = n.n(o),
   s = n(442837),
   c = n(481060),
   u = n(317381),
@@ -18,14 +18,14 @@ var i = n(120356),
   g = n(199902),
   m = n(592125),
   b = n(594174),
-  v = n(938475),
-  y = n(823379),
-  _ = n(709054),
+  y = n(938475),
+  _ = n(823379),
+  v = n(709054),
   O = n(853856),
   j = n(981631),
   x = n(388032),
-  C = n(398057),
-  S = n(5601);
+  C = n(714509),
+  S = n(375613);
 
 function P(e, t) {
   return 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -42,17 +42,17 @@ function P(e, t) {
 }
 
 function I() {
-  let e = (0, s.Wu)([O.Z, m.Z], () => _.default.keys(O.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(y.lm)),
+  let e = (0, s.Wu)([O.Z, m.Z], () => v.default.keys(O.Z.getFavoriteChannels()).map(e => m.Z.getChannel(e)).filter(_.lm)),
     t = e.map(e => e.id),
     n = e.filter(e => e.type === j.d4z.GUILD_VOICE),
     i = e.filter(e => e.type === j.d4z.GUILD_STAGE_VOICE).map(e => e.id),
-    o = (0, s.Wu)([v.ZP], () => a().flatMap(n, e => v.ZP.getVoiceStatesForChannel(e).map(e => {
+    l = (0, s.Wu)([y.ZP], () => a().flatMap(n, e => y.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
       } = e;
       return t
     })), [n]),
-    l = (0, s.Wu)([h.Z], () => a().flatMap(i, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
+    o = (0, s.Wu)([h.Z], () => a().flatMap(i, e => h.Z.getMutableParticipants(e, f.pV.SPEAKER).filter(e => e.type === f.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
@@ -67,16 +67,16 @@ function I() {
     S = (0, s.Wu)([u.ZP], () => {
       let e = u.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
-      for (let o of t) {
+      for (let l of t) {
         var r, i;
-        n.push(...null !== (i = null === (r = e.get(o)) || void 0 === r ? void 0 : r.flatMap(e => Array.from(e.userIds))) && void 0 !== i ? i : [])
+        n.push(...null != (i = null == (r = e.get(l)) ? void 0 : r.flatMap(e => Array.from(e.userIds))) ? i : [])
       }
       return n
     }, [t]),
     I = (0, s.Wu)([b.default], () => S.map(e => b.default.getUser(e)), [S]),
     N = (0, s.Wu)([b.default], () => x.map(e => b.default.getUser(e)), [x]),
-    Z = P(c.gj8, o.filter(e => !x.includes(e.id) && !S.includes(e.id))),
-    w = 0 === l.length ? null : (0, r.jsxs)("div", {
+    Z = P(c.gj8, l.filter(e => !x.includes(e.id) && !S.includes(e.id))),
+    w = 0 === o.length ? null : (0, r.jsxs)("div", {
       className: C.row,
       children: [(0, r.jsx)(c.ewx, {
         size: "lg",
@@ -84,7 +84,7 @@ function I() {
         className: C.activityIcon
       }), (0, r.jsx)(d.Z, {
         guildId: void 0,
-        users: l,
+        users: o,
         max: 3
       }), (0, r.jsxs)("div", {
         className: C.stageListenerPill,
@@ -109,9 +109,9 @@ function I() {
 function N() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: o()(C.row, C.rowGuildName),
+      className: l()(C.row, C.rowGuildName),
       children: (0, r.jsx)("span", {
-        className: o()(C.guildNameText, C.guildNameTextLimitedSize),
+        className: l()(C.guildNameText, C.guildNameTextLimitedSize),
         children: x.NW.string(x.t.wMWycn)
       })
     }), (0, r.jsx)(I, {})]
@@ -123,10 +123,10 @@ function Z(e) {
     "aria-label": t = !1,
     onShow: n,
     children: i
-  } = e, o = (0, p.Q3)("FavoritesTooltip");
+  } = e, l = (0, p.Q3)("FavoritesTooltip");
   return (0, r.jsx)(c.ua7, {
     hideOnClick: !0,
-    spacing: o ? 12 : 20,
+    spacing: l ? 12 : 20,
     position: "right",
     text: (0, r.jsx)(N, {}),
     "aria-label": t,

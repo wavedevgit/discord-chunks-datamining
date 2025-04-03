@@ -33,7 +33,8 @@ var c = Object.values || function(e) {
   },
   p = function(e) {
     function t(t, n) {
-      var o, r = (o = e.call(this, t, n) || this).handleExited.bind(l(l(o)));
+      var o = e.call(this, t, n) || this,
+        r = o.handleExited.bind(l(l(o)));
       return o.state = {
         handleExited: r,
         firstRender: !0
@@ -88,6 +89,4 @@ p.childContextTypes = {
   childFactory: function(e) {
     return e
   }
-};
-var d = (0, i.polyfill)(p);
-t.default = d, e.exports = t.default
+}, t.default = (0, i.polyfill)(p), e.exports = t.default

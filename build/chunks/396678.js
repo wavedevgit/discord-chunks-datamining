@@ -15,7 +15,7 @@ function c(e) {
     c = null == n ? void 0 : n.getGuildId(),
     d = (0, r.e7)([i.Z], () => {
       var e;
-      return null != c ? null === (e = i.Z.getGuild(c)) || void 0 === e ? void 0 : e.premiumTier : null
+      return null != c ? null == (e = i.Z.getGuild(c)) ? void 0 : e.premiumTier : null
     });
   return (0, a.Z)(e, t, d)
 }

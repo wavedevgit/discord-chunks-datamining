@@ -28,8 +28,8 @@ var r = n(200651),
   N = n(981631),
   O = n(757744),
   k = n(388032),
-  E = n(113126),
-  w = n(890798);
+  E = n(931207),
+  w = n(616257);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -210,7 +210,7 @@ function A(e) {
       color: "text-secondary",
       children: "Screen Type Resolution: ".concat((e => {
         var t;
-        let n = null === (t = a[e]) || void 0 === t ? void 0 : t.timer;
+        let n = null == (t = a[e]) ? void 0 : t.timer;
         if (null == n || null == n.screenTypeResolutionTimestamp) return "...";
         let r = n.screenTypeResolutionTimestamp - n.startTrackingTimestamp;
         return "".concat(r.toFixed(2), "ms")
@@ -220,7 +220,7 @@ function A(e) {
       color: "text-secondary",
       children: "Window Creation: ".concat((e => {
         var t;
-        let n = null === (t = a[e]) || void 0 === t ? void 0 : t.timer;
+        let n = null == (t = a[e]) ? void 0 : t.timer;
         if (null == n || null == n.moduleTrackingTimestamp || null == n.screenTypeResolutionTimestamp) return "...";
         let r = n.moduleTrackingTimestamp - n.screenTypeResolutionTimestamp;
         return "".concat(r.toFixed(2), "ms")
@@ -230,7 +230,7 @@ function A(e) {
       color: "text-secondary",
       children: "Rendering: ".concat((e => {
         var t;
-        let n = null === (t = a[e]) || void 0 === t ? void 0 : t.timer;
+        let n = null == (t = a[e]) ? void 0 : t.timer;
         if (null == n || null == n.overlayRenderingTimestamp || null == n.moduleTrackingTimestamp) return "...";
         let r = n.overlayRenderingTimestamp - n.moduleTrackingTimestamp;
         return "".concat(r.toFixed(2), "ms")
@@ -311,7 +311,7 @@ function z() {
       var n;
       let [r, a, l] = t;
       if (null == a || null == r) return e;
-      let i = null !== (n = e[r]) && void 0 !== n ? n : [];
+      let i = null != (n = e[r]) ? n : [];
       return (0 === i.length || i[i.length - 1].screenType !== a) && (e[r] = [...i, {
         pid: r,
         screenType: a,
@@ -336,11 +336,11 @@ function z() {
     },
     ea = e => {
       var t, n;
-      return null !== (n = null === (t = Z[e]) || void 0 === t ? void 0 : t.gameName) && void 0 !== n ? n : "Unknown"
+      return null != (n = null == (t = Z[e]) ? void 0 : t.gameName) ? n : "Unknown"
     },
     el = e => {
       var t, n;
-      return null !== (n = null === (t = Z[e]) || void 0 === t ? void 0 : t.fullscreenType) && void 0 !== n ? n : "Unknown"
+      return null != (n = null == (t = Z[e]) ? void 0 : t.fullscreenType) ? n : "Unknown"
     },
     ei = K.filter(e => null == G[e.pid]);
   return (0, r.jsx)(c.w0Z, {
@@ -515,7 +515,7 @@ function z() {
           children: [(0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-primary",
-            children: ["focusedPID: ", null !== (e = null == U ? void 0 : U.toString()) && void 0 !== e ? e : "null"]
+            children: ["focusedPID: ", null != (e = null == U ? void 0 : U.toString()) ? e : "null"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
@@ -523,7 +523,7 @@ function z() {
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-primary",
-            children: ["processPid: ", null !== (t = null == H ? void 0 : H.toString()) && void 0 !== t ? t : "unknown"]
+            children: ["processPid: ", null != (t = null == H ? void 0 : H.toString()) ? t : "unknown"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
@@ -559,7 +559,7 @@ function z() {
                   variant: "text-sm/medium",
                   color: "text-secondary",
                   children: ["Original Screen Type: ", el(e.pid)]
-                }), null === (t = J[e.pid]) || void 0 === t ? void 0 : t.reverse().map(t => {
+                }), null == (t = J[e.pid]) ? void 0 : t.reverse().map(t => {
                   let {
                     screenType: n,
                     timestamp: a

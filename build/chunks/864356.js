@@ -1,5 +1,6 @@
-/** Chunk was on 80437 **/
+/** Chunk was on 45620 **/
+"use strict";
 e.exports = {
-  giftNitro: "giftNitro__58418",
-  giftNitroImage: "giftNitroImage__58418"
+  container: "container__8a8e7",
+  discount: "discount__8a8e7"
 }

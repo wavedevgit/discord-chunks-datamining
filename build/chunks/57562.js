@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   D: () => d,
   T: () => c
@@ -8,8 +8,8 @@ n(192379);
 var i = n(481060),
   s = n(570140),
   a = n(955204),
-  o = n(510273),
-  l = n(388032);
+  l = n(510273),
+  o = n(388032);
 
 function c(e) {
   s.Z.dispatch({
@@ -20,9 +20,9 @@ function c(e) {
 
 function d(e, t) {
   let n = (0, a.oX)(e);
-  null != n && (0, i.showToast)((0, i.createToast)(l.NW.string(l.t.MPpEUF), i.ToastType.CUSTOM, {
+  null != n && (0, i.showToast)((0, i.createToast)(o.NW.string(o.t.MPpEUF), i.ToastType.CUSTOM, {
     position: i.ToastPosition.BOTTOM,
-    component: (0, r.jsx)(o.Z, {
+    component: (0, r.jsx)(l.Z, {
       achievement: n,
       unlocked: t
     }),

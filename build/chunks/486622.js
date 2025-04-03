@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   m: () => b
 }), n(47120);
@@ -23,11 +23,23 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [C, v] = r.useState(!1), [y, x] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = C || y || j, Z = r.useCallback(async e => {
+  } = e, _ = (0, f.Z)(), [C, y] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = C || x || j, Z = r.useCallback(async e => {
+    if (!S) {
+      y(!0);
+      try {
+        await (0, p.e4)(e), N(!0), null == n || n()
+      } catch (t) {
+        let e = new o.Hx(t);
+        null == b || b(e)
+      } finally {
+        y(!1)
+      }
+    }
+  }, [S, n, b]), T = r.useCallback(async e => {
     if (!S) {
       v(!0);
       try {
-        await (0, p.e4)(e), N(!0), null == n || n()
+        await (0, p.gN)(e), P(!0), null == i || i()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -35,21 +47,9 @@ function b(e) {
         v(!1)
       }
     }
-  }, [S, n, b]), T = r.useCallback(async e => {
-    if (!S) {
-      x(!0);
-      try {
-        await (0, p.gN)(e), P(!0), null == i || i()
-      } catch (t) {
-        let e = new o.Hx(t);
-        null == b || b(e)
-      } finally {
-        x(!1)
-      }
-    }
   }, [S, i, b]), A = r.useCallback(async e => {
     if (S) return;
-    x(!0);
+    v(!0);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
@@ -58,7 +58,7 @@ function b(e) {
       let e = new o.Hx(t);
       null == b || b(e)
     } finally {
-      x(!1)
+      v(!1)
     }
   }, [S, i, b]), w = r.useCallback(async e => {
     if (S) return;
@@ -75,7 +75,7 @@ function b(e) {
     }
     let n = async () => {
       var n;
-      let r = null != t ? null === (n = s.Z.getMutualGuilds(t.id)) || void 0 === n ? void 0 : n.map(e => e.guild.id) : [];
+      let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? void 0 : n.map(e => e.guild.id) : [];
       d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
         action: m.cl.ACCEPT_CONFIRMATION_PROMPT,
         channel_id: e,
@@ -88,7 +88,7 @@ function b(e) {
       onConfirm: n,
       onCancel: () => {
         var n;
-        let r = null != t ? null === (n = s.Z.getMutualGuilds(t.id)) || void 0 === n ? void 0 : n.map(e => e.guild.id) : [];
+        let r = null != t ? null == (n = s.Z.getMutualGuilds(t.id)) ? void 0 : n.map(e => e.guild.id) : [];
         d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.DISMISS_CONFIRMATION_PROMPT,
           channel_id: e,
@@ -124,7 +124,7 @@ function b(e) {
     rejectAll: A,
     markAsNotSpam: R,
     isAcceptLoading: C,
-    isRejectLoading: y,
+    isRejectLoading: x,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,
     isOptimisticRejected: I

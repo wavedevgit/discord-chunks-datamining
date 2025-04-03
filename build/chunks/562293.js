@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  H: () => o,
-  Z: () => l
+  H: () => l,
+  Z: () => o
 });
 var r = n(913527),
   i = n.n(r),
   a = n(388032);
 
-function o(e) {
+function l(e) {
   let t = i()();
   if (e <= t) return;
   let n = e.diff(t, "days");
@@ -18,12 +18,12 @@ function o(e) {
   if (r > 1) return a.NW.formatToPlainString(a.t.BWqf0d, {
     hours: r
   });
-  let o = e.diff(t, "minutes");
+  let l = e.diff(t, "minutes");
   return a.NW.formatToPlainString(a.t["3SLXAw"], {
-    minutes: o
+    minutes: l
   })
 }
 
-function l(e) {
-  if (null != e) return o(e)
+function o(e) {
+  if (null != e) return l(e)
 }

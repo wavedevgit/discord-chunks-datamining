@@ -48,9 +48,9 @@ t.exports = function(t, r, n, u, y, x, E) {
     M = D[S] || D["@@iterator"] || y && D[y],
     _ = !m && M || F(y),
     R = "Array" === r && D.entries || M;
-  if (R && (P = f(R.call(new t))) !== Object.prototype && P.next && (i || f(P) === b || (a ? a(P, b) : s(P[S]) || l(P, S, A)), p(P, I, !0, !0), i && (h[I] = A)), d && y === O && M && M.name !== O && (!i && g ? v(D, "name", O) : (L = !0, _ = function() {
+  if (R && (P = f(R.call(new t))) !== Object.prototype && P.next && (!i && f(P) !== b && (a ? a(P, b) : s(P[S]) || l(P, S, A)), p(P, I, !0, !0), i && (h[I] = A)), d && y === O && M && M.name !== O && (!i && g ? v(D, "name", O) : (L = !0, _ = function() {
       return o(M, this)
-    })), y) {
+    })), y)
     if (T = {
         values: F(O),
         keys: x ? _ : F(w),
@@ -61,8 +61,7 @@ t.exports = function(t, r, n, u, y, x, E) {
       target: r,
       proto: !0,
       forced: m || L
-    }, T)
-  }
+    }, T);
   return (!i || E) && D[S] !== _ && l(D, S, _, {
     name: y
   }), h[r] = _, T

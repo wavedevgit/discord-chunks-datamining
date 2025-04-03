@@ -14,14 +14,14 @@ var r = t(200651),
   p = t(905128),
   m = t(27237),
   x = t(51859),
-  v = t(953478),
-  _ = t(460608),
+  _ = t(953478),
+  v = t(460608),
   f = t(279604),
   b = t(332538),
   g = t(535396),
-  j = t(296260),
+  j = t(680278),
   h = t(388032),
-  Z = t(133104);
+  Z = t(782285);
 let N = [g.Us.LEVEL, g.Us.PERK];
 
 function C(e) {
@@ -39,7 +39,7 @@ function C(e) {
   return (o.useEffect(() => {
     var e, r;
     if (null == t) return;
-    let o = null == C ? void 0 : null === (r = C.powerups) || void 0 === r ? void 0 : null === (e = r.get) || void 0 === e ? void 0 : e.call(r, t);
+    let o = null == C || null == (r = C.powerups) || null == (e = r.get) ? void 0 : e.call(r, t);
     null == o || w.current || ((0, f.KE)(n, o), w.current = !0)
   }, [n, t, null == C ? void 0 : C.powerups]), (null == C ? void 0 : C.catalog) == null) ? null : (0, r.jsxs)("div", {
     className: Z.container,
@@ -113,9 +113,9 @@ function C(e) {
         })
       }), (0, r.jsxs)("div", {
         className: Z.sidebarContainer,
-        children: [(0, r.jsx)(v.Z, {
+        children: [(0, r.jsx)(_.Z, {
           guildId: n
-        }), (0, r.jsx)(_.Z, {
+        }), (0, r.jsx)(v.Z, {
           guildId: n
         })]
       })]

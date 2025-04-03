@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => _
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(399606),
   a = n(481060),
-  o = n(906732),
-  l = n(975298),
+  l = n(906732),
+  o = n(975298),
   c = n(125529),
   d = n(879892),
   u = n(124570),
@@ -16,7 +16,7 @@ var r = n(200651),
   p = n(267642),
   h = n(981631),
   f = n(388032),
-  b = n(456985);
+  b = n(122039);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,11 +53,11 @@ let _ = function() {
   let e = i.useRef(null),
     {
       analyticsLocations: t
-    } = (0, o.ZP)(),
+    } = (0, l.ZP)(),
     _ = (0, s.e7)([m.default], () => m.default.getCurrentUser()),
     {
       fractionalState: E
-    } = (0, l.Z)(),
+    } = (0, o.Z)(),
     j = (0, u.y)("guild_boosting_boost_cta", _, E);
 
   function O(n) {
@@ -86,7 +86,7 @@ let _ = function() {
       }
     })
   }
-  let v = (0, p.aq)({
+  let S = (0, p.aq)({
     isBoostManagementDisabledForFractionalPremium: j
   });
   return (0, r.jsxs)("div", {
@@ -101,7 +101,7 @@ let _ = function() {
       variant: "text-sm/medium",
       children: f.NW.format(f.t.kqC5vr, {
         boostAnyGuildHook: (e, t) => {
-          let n = null != v,
+          let n = null != S,
             i = (0, r.jsx)(a.zxk, {
               className: b.cta,
               disabled: n,
@@ -111,8 +111,8 @@ let _ = function() {
               children: e
             }, t);
           return n ? (0, r.jsx)(c.Z, {
-            text: v,
-            "aria-label": v.toString(),
+            text: S,
+            "aria-label": S.toString(),
             children: e => (0, r.jsx)("span", x(N({}, e), {
               children: i
             }))

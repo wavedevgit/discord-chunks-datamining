@@ -1,4 +1,4 @@
-/** Chunk was on 49522 **/
+/** Chunk was on 32 **/
 n.d(t, {
   T: () => p,
   Z: () => f
@@ -19,7 +19,7 @@ function f(e) {
     withVoiceChannels: t = !1,
     withCurrentVoiceChannel: n = !1
   } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, l = arguments.length > 2 ? arguments[2] : void 0;
-  return h(e === E._ || e === d.I_8 ? (0, o.t)() : i.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+  return C(e === E._ || e === d.I_8 ? (0, o.t)() : i.Z.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
     currentVoiceChannelId: u.Z.getVoiceChannelId(),
     selectedChannelId: u.Z.getChannelId()
   }, {
@@ -39,7 +39,7 @@ function p(e, t, n) {
     currentVoiceChannelId: u.Z.getVoiceChannelId(),
     selectedChannelId: u.Z.getChannelId()
   }));
-  return (0, l.useMemo)(() => h(t, {
+  return (0, l.useMemo)(() => C(t, {
     currentVoiceChannelId: f,
     selectedChannelId: p
   }, {
@@ -48,7 +48,7 @@ function p(e, t, n) {
   }, a).map(e => e.id), [t, n, d, E])
 }
 
-function h(e, t) {
+function C(e, t) {
   let {
     currentVoiceChannelId: n,
     selectedChannelId: l

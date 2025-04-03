@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   s = n(239091),
   c = n(901461),
   u = n(592125),
@@ -19,35 +19,35 @@ var i = n(120356),
   g = n(488131),
   _ = n(981631),
   b = n(388032),
-  v = n(481913);
+  x = n(955344);
 
-function x(e) {
+function y(e) {
   let {
     message: t,
     compact: n
-  } = e, i = (0, o.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
-  return null == i ? null : (0, r.jsx)(y, {
+  } = e, i = (0, l.e7)([u.Z], () => u.Z.getChannel(d.default.castMessageIdAsChannelId(t.id)));
+  return null == i ? null : (0, r.jsx)(E, {
     channel: i,
     compact: n,
     isSystemMessage: (0, c.Z)(t)
   })
 }
 
-function y(e) {
+function E(e) {
   let {
     channel: t,
     compact: i,
     isSystemMessage: c
-  } = e, u = (0, o.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
+  } = e, u = (0, l.e7)([m.Z], () => m.Z.getCount(t.id)), d = function(e) {
     var t;
-    let n = (0, o.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
-      i = (0, o.e7)([m.Z], () => m.Z.getCount(e.id)),
+    let n = (0, l.e7)([m.Z], () => m.Z.getMostRecentMessage(e.id)),
+      i = (0, l.e7)([m.Z], () => m.Z.getCount(e.id)),
       a = (0, f.Ok)(e);
-    return (null === (t = e.threadMetadata) || void 0 === t ? void 0 : t.archived) ? b.NW.string(b.t.ZTo4HR) : null == i || 0 === i ? b.NW.string(b.t.HYtNyM) : null == n ? (0, r.jsxs)(r.Fragment, {
+    return (null == (t = e.threadMetadata) ? void 0 : t.archived) ? b.NW.string(b.t.ZTo4HR) : null == i || 0 === i ? b.NW.string(b.t.HYtNyM) : null == n ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("span", {
         children: b.NW.string(b.t.ZTo4HR)
       }), (0, r.jsx)("span", {
-        className: v.timestamp,
+        className: x.timestamp,
         children: (0, f.Ye)(a)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
@@ -55,18 +55,18 @@ function y(e) {
         message: n,
         channel: e
       }), (0, r.jsx)("span", {
-        className: v.timestamp,
+        className: x.timestamp,
         children: (0, f.Ye)(a)
       })]
     })
-  }(t), x = null != u && u > 0;
+  }(t), y = null != u && u > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: a()(v.spine, {
-        [v.cozy]: !i,
-        [v.systemMessageSpine]: c
+      className: a()(x.spine, {
+        [x.cozy]: !i,
+        [x.systemMessageSpine]: c
       })
-    }), (0, r.jsx)(l.P3F, {
+    }), (0, r.jsx)(o.P3F, {
       onClick: function(e) {
         e.stopPropagation(), (0, g.ok)(t, e.shiftKey)
       },
@@ -80,7 +80,7 @@ function y(e) {
         (0, s.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("22356"), n.e("64029")]).then(n.bind(n, 422200));
+          } = await Promise.all([n.e("22356"), n.e("48334")]).then(n.bind(n, 422200));
           return n => (0, r.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -104,28 +104,28 @@ function y(e) {
         })
       },
       "aria-roledescription": b.NW.string(b.t["8ipxiY"]),
-      className: a()(v.container, {
-        [v.systemMessageContainer]: c
+      className: a()(x.container, {
+        [x.systemMessageContainer]: c
       }),
-      children: (0, r.jsxs)(l.nuw, {
+      children: (0, r.jsxs)(o.nuw, {
         children: [(0, r.jsxs)("div", {
-          className: v.topLine,
-          children: [(0, r.jsx)(l.nn4, {
+          className: x.topLine,
+          children: [(0, r.jsx)(o.nn4, {
             children: b.NW.string(b.t["7Xm5QE"])
           }), (0, r.jsx)("span", {
-            className: v.name,
+            className: x.name,
             children: t.name
           }), (0, r.jsx)("span", {
-            className: v.cta,
-            "aria-hidden": !x,
+            className: x.cta,
+            "aria-hidden": !y,
             children: (0, p.WE)(u, t.id)
           })]
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           "aria-hidden": !0,
           lineClamp: 1,
           color: "header-secondary",
-          className: v.bottomLine,
+          className: x.bottomLine,
           children: d
         })]
       })

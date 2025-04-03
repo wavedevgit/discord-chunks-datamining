@@ -11,7 +11,7 @@ var n = a(200651),
   l = a(981631),
   d = a(531578),
   u = a(388032),
-  m = a(246274);
+  m = a(398035);
 
 function _(e) {
   let [t, _] = s.useState(null), b = (0, r.Dt)();
@@ -38,9 +38,8 @@ function _(e) {
         emojiKind: "thumb",
         selectedRating: t,
         onChangeRating: function(t) {
-          var s;
-          _(t), null != (s = t) && ((0, i.Z)({
-            rating: s
+          _(t), null != t && ((0, i.Z)({
+            rating: t
           }), e.onClose(), (0, o.ZDy)(async () => {
             let {
               default: e

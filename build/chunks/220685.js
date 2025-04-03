@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => R
@@ -21,12 +21,12 @@ var r = n(200651),
   x = n(367907),
   j = n(674180),
   N = n(999382),
-  v = n(626135),
-  _ = n(730647),
+  _ = n(626135),
+  v = n(730647),
   C = n(584825),
   O = n(981631),
   y = n(388032),
-  I = n(698142);
+  I = n(111558);
 let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
   S = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
   T = E[4],
@@ -38,10 +38,10 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     } = e, c = (0, C.YB)(s.id), {
       loading: u,
       updateSubscriptionsSettings: N
-    } = (0, C.QV)(), [_, P] = i.useState(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null !== (t = null == c ? void 0 : c.store_page_primary_color) && void 0 !== t ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == Z || null != Z.match(S), [k, W] = i.useState(null !== (n = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== n && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), G = async () => {
+    } = (0, C.QV)(), [v, P] = i.useState(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), [w, R] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : T), [Z, D] = i.useState(null == c ? void 0 : c.store_page_trailer_url), A = null == Z || null != Z.match(S), [k, W] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, M = v !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color) || Z !== (null == c ? void 0 : c.store_page_trailer_url) || null != k && k !== (null == c ? void 0 : c.store_page_show_subscriber_count), G = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
-      _ !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = _), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), k !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = k), !d().isEmpty(e) && (await N(s.id, e), "store_page_enabled" in e && v.default.track(O.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      v !== s.hasFeature(O.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = v), ((null == c ? void 0 : c.store_page_primary_color) == null && w !== T || (null == c ? void 0 : c.store_page_primary_color) != null && w !== (null == c ? void 0 : c.store_page_primary_color)) && (e.store_page_primary_color = w), Z !== (null == c ? void 0 : c.store_page_trailer_url) && (e.store_page_trailer_url = Z), k !== (null == c ? void 0 : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = k), !d().isEmpty(e) && (await N(s.id, e), "store_page_enabled" in e && _.default.track(O.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,7 +59,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         }
         return e
       }({
-        enabled: _
+        enabled: v
       }, (0, x.hH)(s.id))))
     }, U = O.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != Z && Z === (null == c ? void 0 : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: F
@@ -73,9 +73,9 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         children: y.NW.string(y.t["uU/69/"])
       }), (0, r.jsx)(p.j7V, {
         className: I.enableSwitch,
-        value: _,
-        disabled: F || !_ && !l,
-        tooltipNote: _ || l ? void 0 : y.NW.string(y.t.mIgfEh),
+        value: v,
+        disabled: F || !v && !l,
+        tooltipNote: v || l ? void 0 : y.NW.string(y.t.mIgfEh),
         hideBorder: !0,
         onChange: e => P(e),
         children: (0, r.jsx)(p.Text, {
@@ -200,7 +200,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             submitting: u,
             onReset: () => {
               var e, t;
-              P(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), R(null !== (e = null == c ? void 0 : c.store_page_primary_color) && void 0 !== e ? e : T), D(null == c ? void 0 : c.store_page_trailer_url), W(null !== (t = null == c ? void 0 : c.store_page_show_subscriber_count) && void 0 !== t && t)
+              P(s.hasFeature(O.oNc.CREATOR_STORE_PAGE)), R(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : T), D(null == c ? void 0 : c.store_page_trailer_url), W(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
             },
             onSave: G,
             disabled: z
@@ -212,7 +212,7 @@ let E = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
 
 function w() {
   let e = (0, u.e7)([N.Z], () => N.Z.getGuild()),
-    t = (0, _.f)(),
+    t = (0, v.f)(),
     n = (0, C.qi)(null == e ? void 0 : e.id).some(e => e.published);
   return null != e && t ? (0, r.jsx)(P, {
     guild: e,
@@ -222,7 +222,7 @@ function w() {
 
 function R() {
   let e = (0, u.e7)([N.Z], () => N.Z.getGuild());
-  return (0, r.jsx)(_.l, {
+  return (0, r.jsx)(v.l, {
     guildId: null == e ? void 0 : e.id,
     refetchOnMount: !0,
     children: (0, r.jsx)(w, {})

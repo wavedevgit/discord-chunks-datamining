@@ -14,7 +14,7 @@ function u(e) {
   return (0, i.e7)([a.Z], () => {
     let t = l()(e).map(e => {
       var t;
-      return null === (t = a.Z.getDetectableGame(e)) || void 0 === t ? void 0 : t.name
+      return null == (t = a.Z.getDetectableGame(e)) ? void 0 : t.name
     }).filter(s.lm).value();
     return (0, o.f6)(t, c.uw)
   })

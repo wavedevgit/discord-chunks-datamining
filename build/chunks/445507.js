@@ -1,22 +1,22 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Q3: () => d,
   Zl: () => u,
-  mC: () => l,
+  mC: () => o,
   mU: () => a,
   qJ: () => s,
-  u9: () => o,
+  u9: () => l,
   xQ: () => c,
   z5: () => p
 }), n(26686);
 var r = n(704215),
   i = n(388032);
 
-function o(e) {
+function l(e) {
   return "user" === e.type
 }
 
-function l(e) {
+function o(e) {
   return "guild" === e.type
 }
 

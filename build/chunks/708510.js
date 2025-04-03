@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  O: () => _
+  O: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -20,9 +20,9 @@ var r = n(200651),
   b = n(307375),
   x = n(384632),
   j = n(388032),
-  N = n(372937);
+  N = n(162193);
 
-function v(e) {
+function _(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(!1), s = i.useCallback(async e => {
@@ -52,7 +52,7 @@ function v(e) {
   }
 }
 
-function _() {
+function v() {
   let e = (0, s.e7)([c.Z], () => c.Z.getProps().guild),
     t = (0, s.e7)([f.Z], () => f.Z.pendingState);
   i.useEffect(() => {
@@ -78,7 +78,7 @@ function _() {
     }), (0, r.jsx)("div", {
       className: N.divider
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(_, {
         pendingState: t
       })
     })]

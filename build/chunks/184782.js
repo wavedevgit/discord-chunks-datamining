@@ -23,17 +23,17 @@ var i = a(200651),
   k = a(524329),
   E = a(995532),
   Z = a(845606),
-  v = a(981631),
-  f = a(231338),
+  f = a(981631),
+  v = a(231338),
   I = a(388032),
-  S = a(305411);
+  S = a(62311);
 let P = e => {
     var l;
     let {
       channelData: a,
       onClose: n,
       trackOptionClick: r
-    } = e, d = (0, s.e7)([x.Z], () => x.Z.getChannel(a.channel_id)), h = (0, s.e7)([_.Z], () => null != d && _.Z.can(f.Pl.VIEW_CHANNEL, d)), j = (0, s.e7)([m.ZP], () => null != a.emoji_id ? m.ZP.getCustomEmojiById(a.emoji_id) : null, [a.emoji_id]), p = null != a.emoji_name ? u.ZP.getByName(u.ZP.convertSurrogateToName(a.emoji_name, !1)) : null, g = null !== (l = (0, c.KS)(d)) && void 0 !== l ? l : o.VL1;
+    } = e, d = (0, s.e7)([x.Z], () => x.Z.getChannel(a.channel_id)), h = (0, s.e7)([_.Z], () => null != d && _.Z.can(v.Pl.VIEW_CHANNEL, d)), j = (0, s.e7)([m.ZP], () => null != a.emoji_id ? m.ZP.getCustomEmojiById(a.emoji_id) : null, [a.emoji_id]), p = null != a.emoji_name ? u.ZP.getByName(u.ZP.convertSurrogateToName(a.emoji_name, !1)) : null, g = null != (l = (0, c.KS)(d)) ? l : o.VL1;
     return null != d && h ? (0, i.jsxs)(o.P3F, {
       className: S.optionContainer,
       onClick: () => {
@@ -93,20 +93,20 @@ let P = e => {
     }, [x, _, a, N]), n.useEffect(() => {
       N === E.a && !1 === x && a()
     }, [a, N, x]), n.useEffect(() => {
-      !0 !== m && g.default.track(v.rMx.OPEN_MODAL, {
+      !0 !== m && g.default.track(f.rMx.OPEN_MODAL, {
         type: Z._,
         guild_id: c
       })
     }, [c, m]);
-    let f = n.useCallback(e => {
+    let v = n.useCallback(e => {
       var l;
       if (null == N || !0 === m) return;
       let a = [],
         i = [],
         n = !1;
-      null === (l = N.welcome_channels) || void 0 === l || l.forEach(e => {
+      null == (l = N.welcome_channels) || l.forEach(e => {
         a.push(e.description), i.push(e.channel_id), null != e.emoji_id && (n = !0)
-      }), g.default.track(v.rMx.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
+      }), g.default.track(f.rMx.GUILD_WELCOME_SCREEN_OPTION_SELECTED, {
         index: e,
         guild_id: c,
         options: a,
@@ -169,9 +169,9 @@ let P = e => {
         children: I.NW.string(I.t["haj5+v"])
       }), (0, i.jsx)("div", {
         className: S.options,
-        children: null === (l = N.welcome_channels) || void 0 === l ? void 0 : l.map((e, l) => (0, i.jsx)(P, {
+        children: null == (l = N.welcome_channels) ? void 0 : l.map((e, l) => (0, i.jsx)(P, {
           channelData: e,
-          trackOptionClick: () => f(l),
+          trackOptionClick: () => v(l),
           onClose: a
         }, "".concat(e.channel_id, "-").concat(l)))
       }), (0, i.jsx)(o.zxk, {

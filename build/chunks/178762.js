@@ -180,7 +180,7 @@ let z = e => {
           entry: n
         }));
       case s.s.LEADERBOARD:
-        return (null === (t = a.channel) || void 0 === t ? void 0 : t.guild_id) != null ? (0, r.jsx)(g.Z, {
+        return (null == (t = a.channel) ? void 0 : t.guild_id) != null ? (0, r.jsx)(g.Z, {
           guildId: a.channel.guild_id,
           leaderboardId: n.extra.leaderboard_id,
           source: h.Z.MEMBER_LIST,
@@ -196,7 +196,7 @@ let z = e => {
         index: l
       } = e,
       h = L(e, ["index"]);
-    let [g, x] = a.useState("default"), v = (0, o.JA)("".concat(l)), P = null === (t = y.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff(), {
+    let [g, x] = a.useState("default"), v = (0, o.JA)("".concat(l)), P = null == (t = y.default.getCurrentUser()) ? void 0 : t.isStaff(), {
       isRich: O,
       appName: b
     } = (0, _.n)(h.entry), C = a.useMemo(() => ({

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(401430),
-  l = n(100527),
+  l = n(401430),
+  o = n(100527),
   c = n(415439),
   d = n(921801),
   u = n(695103),
@@ -42,10 +42,10 @@ function _() {
   let [e] = i.useState(() => m.ZP.getEnableHardwareAcceleration()), t = p.bm.useSetting(), n = p.Sb.useSetting(), _ = (0, s.e7)([u.Z], () => u.Z.testModeApplicationId), E = (0, s.e7)([g.ZP], () => g.ZP.showPlayAgain), j = i.useCallback(e => {
     p.bm.updateSetting(!e)
   }, []), O = i.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : o.mc()
+    e ? (0, a.h7j)(e => (0, r.jsx)(h.Z, x({}, e))) : l.mc()
   }, []), C = i.useCallback(e => {
-    (0, c.BV)(e, l.Z.USER_SETTINGS)
-  }, []), v = i.useCallback(e => {
+    (0, c.BV)(e, o.Z.USER_SETTINGS)
+  }, []), S = i.useCallback(e => {
     (0, a.h7j)(t => {
       var n, i;
       return (0, r.jsx)(a.ConfirmModal, (n = x({
@@ -87,7 +87,7 @@ function _() {
       setting: f.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, r.jsx)(a.j7V, {
         value: e,
-        onChange: v,
+        onChange: S,
         note: N.NW.string(N.t.Afc7l5),
         children: N.NW.string(N.t["eOC/Fx"])
       })

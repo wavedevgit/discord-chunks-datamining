@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -21,20 +21,19 @@ var r = n(200651),
   x = n(598622),
   j = n(921944),
   N = n(388032),
-  v = n(59736);
+  _ = n(296205);
 
-function _() {
-  let e;
-  let t = (0, s.e7)([m.Z], () => m.Z.getGuildId()),
+function v() {
+  let e, t = (0, s.e7)([m.Z], () => m.Z.getGuildId()),
     n = (0, s.e7)([u.Z], () => u.Z.getGuild(t)),
-    _ = (0, s.e7)([p.Z], () => p.Z.getCurrentPage());
+    v = (0, s.e7)([p.Z], () => p.Z.getCurrentPage());
   if (i.useEffect(() => {
       (0, o.EW)(a.z.COMMUNITY_GUILD_SETTINGS_SAFETY, {
         dismissAction: j.L.AUTO
       })
     }, []), null == n) return null;
   let C = (0, x.Q)(n);
-  switch (_) {
+  switch (v) {
     case h.u.OVERVIEW:
       e = (0, r.jsx)(f.Z, {
         guild: n
@@ -64,16 +63,16 @@ function _() {
       })
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [_ !== h.u.OVERVIEW && (0, r.jsxs)(l.zxk, {
-      className: v.back,
-      innerClassName: v.backButton,
+    children: [v !== h.u.OVERVIEW && (0, r.jsxs)(l.zxk, {
+      className: _.back,
+      innerClassName: _.backButton,
       look: l.zxk.Looks.BLANK,
       size: l.zxk.Sizes.MIN,
       onClick: () => {
         (0, g.K)(h.u.OVERVIEW)
       },
       children: [(0, r.jsx)(d.Z, {
-        className: v.__invalid_arrow,
+        className: _.__invalid_arrow,
         direction: d.Z.Directions.LEFT
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",

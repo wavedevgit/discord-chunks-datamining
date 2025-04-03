@@ -1,6 +1,6 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
-  default: () => v
+  default: () => m
 }), t(47120);
 var r = t(200651),
   o = t(192379),
@@ -46,7 +46,7 @@ function b(e, n) {
 }
 let y = [l.Z.BITE_SIZE_PROFILE_POPOUT, l.Z.PROFILE_PANEL];
 
-function v(e) {
+function m(e) {
   var {
     user: n
   } = e, t = function(e, n) {
@@ -66,22 +66,22 @@ function v(e) {
   }(e, ["user"]);
   let {
     isBlocked: l,
-    isIgnored: v
+    isIgnored: m
   } = (0, i.cj)([c.Z], () => ({
     isBlocked: c.Z.isBlocked(n.id),
     isIgnored: c.Z.isIgnored(n.id)
-  })), [m, g] = o.useState(l || v || l);
+  })), [g, I] = o.useState(l || m || l);
   o.useEffect(() => {
-    g(v || l)
-  }, [v, l]);
-  let I = !y.some(e => {
+    I(m || l)
+  }, [m, l]);
+  let j = !y.some(e => {
       var n;
-      return (null !== (n = t.sourceAnalyticsLocations) && void 0 !== n ? n : []).includes(e)
+      return (null != (n = t.sourceAnalyticsLocations) ? n : []).includes(e)
     }),
-    j = s.Rt.useSetting();
-  return m && I && !(v && j) ? (0, r.jsx)(a.W, p({
+    v = s.Rt.useSetting();
+  return g && j && !(m && v) ? (0, r.jsx)(a.W, p({
     user: n,
-    onViewBlockedProfileClick: () => g(!1)
+    onViewBlockedProfileClick: () => I(!1)
   }, t)) : n.isNonUserBot() ? (0, r.jsx)(u.Z, b(p({}, t), {
     user: n
   })) : n.bot ? (0, r.jsx)(d.Z, b(p({}, t), {

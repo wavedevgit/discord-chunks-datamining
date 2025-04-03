@@ -31,7 +31,7 @@ var i = s(200651),
   T = s(135899),
   w = s(981631),
   y = s(388032),
-  R = s(939781),
+  R = s(341190),
   L = s(289575),
   M = s(371411),
   P = s(112847),
@@ -567,7 +567,7 @@ let J = e => {
       guild: a
     } = (0, o.cj)([h.Z], () => h.Z.getProps()), c = (0, o.e7)([g.Z], () => g.Z.theme), [d, u] = n.useState(!1), [v, E] = n.useState(!T.$X.some(e => W.oz(e, a))), [O, L] = n.useState(T.b4), [M, P] = n.useState(T.b4), [Z] = n.useState(null == a ? void 0 : a.defaultMessageNotifications), [A] = n.useState(null == a ? void 0 : a.verificationLevel), [k] = n.useState(null == a ? void 0 : a.explicitContentFilter), [U] = n.useState(v), Y = (0, o.e7)([C.Z], () => null != a ? C.Z.getRole(a.id, a.getEveryoneRoleId()) : void 0), H = (0, o.e7)([j.ZP], () => null != a ? j.ZP.getChannels(a.id) : null), z = (0, N.Dt)(), {
       enabled: V
-    } = (0, m.D2)(null !== (t = null == a ? void 0 : a.id) && void 0 !== t ? t : w.lds);
+    } = (0, m.D2)(null != (t = null == a ? void 0 : a.id) ? t : w.lds);
     if (null == a) return null;
     let K = [{
       value: T.b4,
@@ -612,23 +612,17 @@ let J = e => {
         disableVerificationLevel: Q,
         disableContentFilter: $,
         onAcceptVerificationLevel: (e, t) => {
-          if (!t) {
-            f.Z.updateGuild({
-              verificationLevel: A
-            });
-            return
-          }
+          if (!t) return void f.Z.updateGuild({
+            verificationLevel: A
+          });
           t && f.Z.updateGuild({
             verificationLevel: w.sFg.LOW
           })
         },
         onAcceptContentFilter: (e, t) => {
-          if (!t) {
-            f.Z.updateGuild({
-              explicitContentFilter: k
-            });
-            return
-          }
+          if (!t) return void f.Z.updateGuild({
+            explicitContentFilter: k
+          });
           f.Z.updateGuild({
             explicitContentFilter: w.lxg.ALL_MEMBERS
           })
@@ -671,19 +665,13 @@ let J = e => {
         policyAccepted: d,
         everyoneRolePermissionsAccepted: v,
         onAcceptPolicy: (e, t) => {
-          if (t) {
-            u(!0);
-            return
-          }
+          if (t) return void u(!0);
           u(!1)
         },
         onAcceptDefaultNotifications: (e, t) => {
-          if (!t) {
-            f.Z.updateGuild({
-              defaultMessageNotifications: Z
-            });
-            return
-          }
+          if (!t) return void f.Z.updateGuild({
+            defaultMessageNotifications: Z
+          });
           f.Z.updateGuild({
             defaultMessageNotifications: w.bL.ONLY_MENTIONS
           })

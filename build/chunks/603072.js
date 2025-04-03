@@ -21,16 +21,16 @@ var r = t(200651),
   C = t(703656),
   j = t(433355),
   b = t(592125),
-  v = t(430824),
-  N = t(944486),
+  N = t(430824),
+  v = t(944486),
   y = t(31445),
   O = t(59350),
   I = t(290511),
   Z = t(176505),
   w = t(921944),
   P = t(388032),
-  E = t(262498),
-  S = t(688044);
+  E = t(56044),
+  S = t(100658);
 
 function T(e) {
   let {
@@ -99,11 +99,11 @@ function B(e) {
   let {
     guildId: n,
     selectedSection: t
-  } = e, a = (0, o.e7)([v.Z], () => v.Z.getGuild(n)), s = (0, y.Z)(a), [u, m] = l.useState(null != t ? t : I.l7.CUSTOMIZE);
+  } = e, a = (0, o.e7)([N.Z], () => N.Z.getGuild(n)), s = (0, y.Z)(a), [u, m] = l.useState(null != t ? t : I.l7.CUSTOMIZE);
   l.useEffect(() => {
     null != t && m(t)
   }, [t]);
-  let h = (0, o.e7)([N.Z], () => N.Z.getLastSelectedChannelId(n)),
+  let h = (0, o.e7)([v.Z], () => v.Z.getLastSelectedChannelId(n)),
     p = (0, o.e7)([j.ZP], () => j.ZP.getCurrentSidebarChannelId(Z.oC.CHANNEL_BROWSER)),
     f = null != p && u === I.l7.BROWSE,
     C = (0, o.e7)([b.Z], () => b.Z.getChannel(h)),

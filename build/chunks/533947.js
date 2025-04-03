@@ -3,8 +3,8 @@ let r, i, l;
 n.d(t, {
   Z: () => Z
 }), n(653041), n(47120);
-var o, a = n(392711),
-  s = n.n(a),
+var a, o = n(392711),
+  s = n.n(o),
   c = n(442837),
   u = n(570140),
   d = n(308063),
@@ -38,9 +38,9 @@ function _(e) {
 let E = [],
   O = null,
   N = !1,
-  v = m.QZA.CLOSED,
-  y = {},
-  I = !1,
+  y = m.QZA.CLOSED,
+  I = {},
+  v = !1,
   C = null;
 
 function S() {
@@ -48,10 +48,10 @@ function S() {
     let e = P(O.id);
     null != e && (O = e)
   }
-  v = m.QZA.OPEN, y = {}, I = !1
+  y = m.QZA.OPEN, I = {}, v = !1
 }
 let T = s().debounce(() => {
-  I && ((null == O || s().isEqual(O, P(O.id))) && (I = !1), I || A.emitChange())
+  v && ((null == O || s().isEqual(O, P(O.id))) && (v = !1), v || A.emitChange())
 }, 500);
 
 function P(e) {
@@ -62,12 +62,12 @@ function P(e) {
     return n === e
   })
 }
-class j extends(o = c.ZP.Store) {
+class j extends(a = c.ZP.Store) {
   initialize() {
     this.waitFor(p.Z, h.Z, g.Z, f.Z)
   }
   hasChanges() {
-    return I
+    return v
   }
   get webhooks() {
     return E
@@ -76,7 +76,7 @@ class j extends(o = c.ZP.Store) {
     return O
   }
   get formState() {
-    return v
+    return y
   }
   getWebhook(e) {
     return P(e)
@@ -86,14 +86,14 @@ class j extends(o = c.ZP.Store) {
   }
   getProps() {
     return {
-      submitting: v === m.QZA.SUBMITTING,
+      submitting: y === m.QZA.SUBMITTING,
       webhooks: E,
       editedWebhook: O,
       section: l,
       sectionId: C,
       hasChanges: this.hasChanges(),
       isFetching: N,
-      errors: y
+      errors: I
     }
   }
 }
@@ -124,20 +124,20 @@ let A = new j(u.Z, __OVERLAY__ ? {} : {
         webhookId: t
       } = e, n = P(t);
       if (null == n) return !1;
-      O = n, y = {}, I = !1
+      O = n, I = {}, v = !1
     },
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-      O = null, y = {}, I = !1
+      O = null, I = {}, v = !1
     },
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
       let {
         settings: t
       } = e;
       if (null == O) return !1;
-      O = _({}, O), null != t.name && O.name !== t.name && (O.name = t.name, I = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, I = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, I = !0), I && T()
+      O = _({}, O), null != t.name && O.name !== t.name && (O.name = t.name, v = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, v = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, v = !0), v && T()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-      i = null, r = null, E = [], O = null, v = m.QZA.CLOSED
+      i = null, r = null, E = [], O = null, y = m.QZA.CLOSED
     },
     WEBHOOKS_UPDATE: function(e) {
       let {
@@ -145,7 +145,7 @@ let A = new j(u.Z, __OVERLAY__ ? {} : {
         channelId: n,
         webhooks: l
       } = e;
-      if (N = !1, null != r && t === r.id && null != i && n === i.id && null != l && v !== m.QZA.SUBMITTING) {
+      if (N = !1, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.QZA.SUBMITTING) {
         for (let e = E.length - 1; e >= 0; e--) {
           let t = E[e];
           if (null != n && (null == t ? void 0 : t.channel_id) !== n) continue;
@@ -157,7 +157,7 @@ let A = new j(u.Z, __OVERLAY__ ? {} : {
           });
           if (null != r) {
             let n = _({}, t, r);
-            E[e] = n, I || (null == O ? void 0 : O.id) !== n.id || (O = n)
+            E[e] = n, v || (null == O ? void 0 : O.id) !== n.id || (O = n)
           } else(null == O ? void 0 : O.id) === t.id && (O = null), E.splice(e, 1)
         }
         for (let e of l) null == E.find(t => {
@@ -170,12 +170,12 @@ let A = new j(u.Z, __OVERLAY__ ? {} : {
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {
-      v = m.QZA.SUBMITTING, y = {}
+      y = m.QZA.SUBMITTING, I = {}
     },
     INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
       var t;
-      if (v !== m.QZA.SUBMITTING) return !1;
-      v = m.QZA.OPEN, y = null !== (t = e.errors) && void 0 !== t ? t : {}
+      if (y !== m.QZA.SUBMITTING) return !1;
+      y = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
     }
   }),
   Z = A

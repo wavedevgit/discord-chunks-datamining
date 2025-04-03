@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   f = n(347475),
   m = n(237583),
   g = n(768581),
-  b = n(550262);
+  b = n(529853);
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -50,22 +50,22 @@ function C(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     channel: t,
     speaker: l,
     className: m
   } = e, {
-    newestAnalyticsLocation: v
-  } = (0, d.ZP)(), y = (0, u.bp)(), {
-    reducedMotion: x
+    newestAnalyticsLocation: y
+  } = (0, d.ZP)(), x = (0, u.bp)(), {
+    reducedMotion: v
   } = i.useContext(a.Sfi), j = (0, c.Z)({
     userId: l.id
   }), O = null != l.member ? (0, g.CA)(l.member) : null, E = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
       return n => (0, r.jsx)(e, C(_({}, n), {
         user: l.user,
         guildId: t.guild_id,
@@ -73,10 +73,10 @@ function v(e) {
         showMediaItems: !0,
         showStageChannelItems: !0,
         showChatItems: !1,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", v)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", y)
       }))
     }, {
-      context: y
+      context: x
     })
   };
   return (0, r.jsx)(a.yRy, {
@@ -105,14 +105,14 @@ function v(e) {
           size: a.EFr.SIZE_24,
           className: o()(b.avatar, m),
           "aria-label": l.userNick,
-          isSpeaking: j && !x.enabled
+          isSpeaking: j && !v.enabled
         })
       }))
     })
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     speakers: t,
     channel: n
@@ -122,7 +122,7 @@ function y(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(v, {
+    renderUser: (e, t, i) => (0, r.jsx)(y, {
       channel: n,
       speaker: e,
       className: t

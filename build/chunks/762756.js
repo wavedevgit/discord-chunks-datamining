@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(873546),
   c = n(481060),
   u = n(599857),
@@ -14,8 +14,8 @@ var r, i = n(200651),
   h = n(1964),
   f = n(981631),
   g = n(388032),
-  m = n(44499),
-  b = n(685786);
+  m = n(816676),
+  b = n(20493);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ class O extends(r = l.PureComponent) {
       align: d.Z.Align.CENTER,
       direction: d.Z.Direction.VERTICAL,
       children: [(0, i.jsxs)(d.Z, {
-        className: a()(m.container, {
+        className: o()(m.container, {
           [m.isMobile]: s.tq
         }),
         direction: d.Z.Direction.VERTICAL,
@@ -60,10 +60,10 @@ class O extends(r = l.PureComponent) {
         children: [(0, i.jsx)("div", {
           className: m.image
         }), (0, i.jsx)("div", {
-          className: a()(m.title, b.marginTop20),
+          className: o()(m.title, b.marginTop20),
           children: g.NW.string(g.t.Iz0kDg)
         }), (0, i.jsx)("div", {
-          className: a()(m.body, b.marginTop4, b.marginBottom20),
+          className: o()(m.body, b.marginTop4, b.marginBottom20),
           children: g.NW.format(g.t["0rqMV1"], {
             helpCenterURL: E
           })
@@ -74,21 +74,21 @@ class O extends(r = l.PureComponent) {
           children: this.renderFields()
         })]
       }), (0, i.jsx)("div", {
-        className: a()(m.footer, b.marginTop20),
+        className: o()(m.footer, b.marginTop20),
         children: g.NW.string(g.t.qqYun5)
       }), (0, i.jsxs)(d.Z, {
-        className: a()(b.marginTop4, b.marginBottom20),
+        className: o()(b.marginTop4, b.marginBottom20),
         grow: 0,
         children: [(0, i.jsx)("div", {
-          className: a()(m.footer, m.footerAction),
+          className: o()(m.footer, m.footerAction),
           children: g.NW.format(g.t.WL51ZW, {
             supportURL: p.Z.getSubmitRequestURL()
           })
         }), (0, i.jsx)("div", {
-          className: a()(m.footer, m.footerBullet),
+          className: o()(m.footer, m.footerBullet),
           children: "•"
         }), (0, i.jsx)("div", {
-          className: a()(m.footer, m.footerAction),
+          className: o()(m.footer, m.footerAction),
           children: g.NW.format(g.t.Hv7ztb, {
             logoutOnClick: this.props.onLogout
           })

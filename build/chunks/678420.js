@@ -1,4 +1,4 @@
-/** Chunk was on 23115 **/
+/** Chunk was on 73488 **/
 "use strict";
 r.d(t, {
   default: () => h
@@ -13,7 +13,7 @@ var n = r(200651),
   d = r(981631),
   u = r(596401),
   p = r(388032),
-  m = r(236816);
+  m = r(104313);
 
 function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,9 +98,9 @@ function h(e) {
     loaded: r,
     clientTooOld: l
   } = (0, s.E)();
-  return (o.useEffect(() => {
-    if (r && null != t) return () => a.Z.markChangelogAsSeen(t.id, t.date)
-  }, [r, t]), l) ? (0, n.jsx)(i.Y0X, {
+  if (o.useEffect(() => {
+      if (r && null != t) return () => a.Z.markChangelogAsSeen(t.id, t.date)
+    }, [r, t]), l) return (0, n.jsx)(i.Y0X, {
     transitionState: e.transitionState,
     children: (0, n.jsx)("div", {
       className: m.empty,
@@ -109,24 +109,28 @@ function h(e) {
         children: p.NW.string(p.t.V9ospq)
       })
     })
-  }) : null == t ? r ? (0, n.jsx)(i.Y0X, {
-    transitionState: e.transitionState,
-    children: (0, n.jsx)("div", {
-      className: m.empty,
-      children: (0, n.jsx)(i.Text, {
-        variant: "text-md/semibold",
-        children: p.NW.string(p.t.O1iRT0)
+  });
+  if (null == t)
+    if (r) return (0, n.jsx)(i.Y0X, {
+      transitionState: e.transitionState,
+      children: (0, n.jsx)("div", {
+        className: m.empty,
+        children: (0, n.jsx)(i.Text, {
+          variant: "text-md/semibold",
+          children: p.NW.string(p.t.O1iRT0)
+        })
       })
-    })
-  }) : (0, n.jsx)(i.Y0X, {
-    transitionState: e.transitionState,
-    children: (0, n.jsx)("div", {
-      className: m.empty,
-      children: (0, n.jsx)(i.$jN, {
-        type: i.$jN.Type.WANDERING_CUBES
+    });
+    else return (0, n.jsx)(i.Y0X, {
+      transitionState: e.transitionState,
+      children: (0, n.jsx)("div", {
+        className: m.empty,
+        children: (0, n.jsx)(i.$jN, {
+          type: i.$jN.Type.WANDERING_CUBES
+        })
       })
-    })
-  }) : (0, n.jsx)(i.Y0X, {
+    });
+  return (0, n.jsx)(i.Y0X, {
     transitionState: e.transitionState,
     children: (0, n.jsx)(g, {
       changeLog: t

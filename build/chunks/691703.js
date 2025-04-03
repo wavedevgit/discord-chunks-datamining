@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => g
 }), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
@@ -27,7 +27,7 @@ function g(e) {
       r = a.useCallback(async () => {
         try {
           var t;
-          let n = null == e ? void 0 : null === (t = e.guild) || void 0 === t ? void 0 : t.id;
+          let n = null == e || null == (t = e.guild) ? void 0 : t.id;
           if (null != n) {
             (0, d.zZ)(p.rMx.APP_DIRECTORY_SUPPORT_SERVER_JOINED, {
               application_id: e.id,
@@ -50,7 +50,7 @@ function g(e) {
     }, [t, r, n, e]), {
       onGoToSupportServer: a.useCallback(() => {
         var n;
-        null != (null == e ? void 0 : null === (n = e.guild) || void 0 === n ? void 0 : n.id) && (t ? r() : (0, d.rf)({
+        null != (null == e || null == (n = e.guild) ? void 0 : n.id) && (t ? r() : (0, d.rf)({
           [h]: "true"
         }))
       }, [e, r, t])

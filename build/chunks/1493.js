@@ -6,7 +6,7 @@ var t = r(200651),
   a = r(192379),
   s = r(481060),
   l = r(388032),
-  o = r(701989);
+  o = r(910282);
 
 function i(e) {
   let {
@@ -14,8 +14,8 @@ function i(e) {
     onClose: r,
     validationText: i,
     errorText: c,
-    header: x,
-    className: d,
+    header: d,
+    className: x,
     cancelText: u,
     confirmText: h,
     instructionText: p,
@@ -32,20 +32,17 @@ function i(e) {
   }) : null;
   return (0, t.jsx)(s.Y0X, {
     transitionState: m,
-    className: d,
+    className: x,
     children: (0, t.jsxs)("form", {
       onSubmit: function(e) {
-        if (e.preventDefault(), j.toLowerCase() !== i.toLowerCase()) {
-          f(c);
-          return
-        }
+        if (e.preventDefault(), j.toLowerCase() !== i.toLowerCase()) return void f(c);
         null == n || n(), r()
       },
       children: [(0, t.jsx)(s.xBx, {
         separator: !1,
         children: (0, t.jsx)(s.X6q, {
           variant: "heading-lg/semibold",
-          children: x
+          children: d
         })
       }), (0, t.jsxs)(s.hzk, {
         children: [C, (0, t.jsxs)(s.xJW, {

@@ -30,7 +30,7 @@ let h = new class {
     let a = !(arguments.length > 5) || void 0 === arguments[5] || arguments[5];
     return this.getCached(t).then(h => {
       var o;
-      if (this.referenceCounts.set(t, (null !== (o = this.referenceCounts.get(t)) && void 0 !== o ? o : 0) + 1), h) return h;
+      if (this.referenceCounts.set(t, (null != (o = this.referenceCounts.get(t)) ? o : 0) + 1), h) return h;
       let l = {
         key: t,
         promise: s(t, e, i, n, r)

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(266796), n(566702);
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(666572),
   a = n(373793),
-  o = n(399606),
-  l = n(477690),
+  l = n(399606),
+  o = n(477690),
   s = n(481060),
   c = n(100527),
   u = n(906732),
@@ -19,10 +19,10 @@ var i = n(666572),
   g = n(321231),
   _ = n(506895),
   b = n(230171),
-  v = n(835473),
-  x = n(749681),
-  y = n(258971),
-  E = n(914010),
+  x = n(835473),
+  y = n(749681),
+  E = n(258971),
+  v = n(914010),
   O = n(624138),
   N = n(566620),
   j = n(365415),
@@ -32,7 +32,7 @@ var i = n(666572),
   T = n(50523),
   P = n(49898),
   A = n(388032),
-  w = n(164602);
+  w = n(536231);
 
 function Z() {
   return (Z = Object.assign || function(e) {
@@ -43,10 +43,10 @@ function Z() {
     return e
   }).apply(this, arguments)
 }
-let k = (0, O.Mg)(l.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
+let k = (0, O.Mg)(o.Z.ACTIVITY_BOOKMARK_EMBED_IMAGE_WIDTH);
 
 function R(e) {
-  var t, n, l, O;
+  var t, n, o, O;
   let {
     applicationId: R,
     customId: D,
@@ -55,20 +55,20 @@ function R(e) {
     linkId: W
   } = e, {
     analyticsLocations: U
-  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, v.Z)([R]), B = (0, o.e7)([E.Z], () => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_BOOKMARK), [F] = (0, x.Z)([R]), B = (0, l.e7)([v.Z], () => {
     var e;
-    return null !== (e = E.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }), G = null == F ? void 0 : null === (t = F.bot) || void 0 === t ? void 0 : t.id, H = null != F && (0, p.ye)(F), {
+    return null != (e = v.Z.getGuildId()) ? e : void 0
+  }), G = null == F || null == (t = F.bot) ? void 0 : t.id, H = null != F && (0, p.ye)(F), {
     currentChannelId: V,
     instanceId: z,
     isCurrentlyInInstance: K,
     canLaunchInChannel: Y
-  } = (0, _.c)(R), X = (0, C.Z)(), q = (0, I.ZP)(null !== (l = null == F ? void 0 : F.maxParticipants) && void 0 !== l ? l : 0), Q = (0, S.Z)({
+  } = (0, _.c)(R), X = (0, C.Z)(), q = (0, I.ZP)(null != (o = null == F ? void 0 : F.maxParticipants) ? o : 0), Q = (0, S.Z)({
     applicationId: R,
     size: k,
     names: ["embedded_cover"]
-  }), J = null !== (O = null == F ? void 0 : F.id) && void 0 !== O ? O : "0", $ = (0, h.TK)(J, (0, f.PL)(!0, !1)), ee = (0, h.TK)(J, (0, f.LD)(B, !1)), et = async () => {
-    if ((null == F ? void 0 : F.id) != null) {
+  }), J = null != (O = null == F ? void 0 : F.id) ? O : "0", $ = (0, h.TK)(J, (0, f.PL)(!0, !1)), ee = (0, h.TK)(J, (0, f.LD)(B, !1)), et = async () => {
+    if ((null == F ? void 0 : F.id) != null)
       if (Y)(0, N.G6)({
         channelId: null != V ? V : void 0,
         applicationId: F.id,
@@ -91,7 +91,6 @@ function R(e) {
           })
         } catch (e) {}
       }
-    }
   }, {
     enabled: en
   } = g.G.useExperiment({
@@ -117,8 +116,8 @@ function R(e) {
       activityReferrerId: L
     })
   });
-  let eo = Y ? null == z ? A.NW.string(A.t.cnBQPD) : A.NW.string(A.t.VJlc0d) : A.NW.string(A.t.JeK1Wl),
-    el = K ? A.NW.string(A.t.wJNK8P) : void 0,
+  let el = Y ? null == z ? A.NW.string(A.t.cnBQPD) : A.NW.string(A.t.VJlc0d) : A.NW.string(A.t.JeK1Wl),
+    eo = K ? A.NW.string(A.t.wJNK8P) : void 0,
     es = e => {
       var t, n;
       return (0, r.jsx)(s.zxk, (t = function(e) {
@@ -142,9 +141,9 @@ function R(e) {
         onClick: et,
         className: w.button,
         color: s.Ttl.GREEN,
-        disabled: null != el
+        disabled: null != eo
       }, e), n = n = {
-        children: eo
+        children: el
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -176,7 +175,7 @@ function R(e) {
         }), (0, r.jsx)(s.X6q, {
           className: w.description,
           variant: "heading-sm/medium",
-          children: null === (n = F.description) || void 0 === n ? void 0 : n.trim()
+          children: null == (n = F.description) ? void 0 : n.trim()
         }), (0, r.jsxs)("div", {
           className: w.cta,
           children: [(0, r.jsxs)("div", {
@@ -194,12 +193,12 @@ function R(e) {
             children: [null != F && (0, r.jsx)(s.zxk, {
               onClick: () => {
                 var e;
-                null != F && (a.Y.USER_INSTALL in (null !== (e = F.integrationTypesConfig) && void 0 !== e ? e : {}) || $ || ee ? (0, m.X)(F.id) : (0, x.transitionToGlobalDiscovery)({
+                null != F && (a.Y.USER_INSTALL in (null != (e = F.integrationTypesConfig) ? e : {}) || $ || ee ? (0, m.X)(F.id) : (0, y.transitionToGlobalDiscovery)({
                   tab: P.GlobalDiscoveryTab.APPS,
                   applicationId: F.id,
                   newSessionState: {
                     entrypoint: {
-                      name: y.xF.OAUTH2_EMBED
+                      name: E.xF.OAUTH2_EMBED
                     },
                     guildId: B
                   }
@@ -208,13 +207,13 @@ function R(e) {
               className: w.button,
               color: s.Ttl.PRIMARY,
               children: A.NW.string(A.t.fbcCzc)
-            }), null != el ? (0, r.jsx)(s.ua7, {
-              text: el,
+            }), null != eo ? (0, r.jsx)(s.ua7, {
+              text: eo,
               children: e => es(Z({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e)))
-            }, eo) : es()]
+            }, el) : es()]
           })]
         })]
       })]

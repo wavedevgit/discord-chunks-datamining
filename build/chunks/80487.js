@@ -15,7 +15,7 @@ var r = n(200651),
   p = n(889711),
   f = n(246364),
   x = n(388032),
-  h = n(450540);
+  h = n(350907);
 let b = e => {
     let {
       tabs: t,
@@ -161,7 +161,7 @@ let g = function(e) {
     containerWidth: f - 400
   }), I = a.useMemo(() => C.slice(0, y + 1), [y, C]), w = a.useMemo(() => C.slice(y + 1), [y, C]), O = a.useCallback(() => {
     var e;
-    let t = null === (e = g.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
+    let t = null == (e = g.current) ? void 0 : e.getBoundingClientRect();
     null != t && v.current !== t.width && (b(t.width), v.current = t.width)
   }, []);
   return a.useEffect(() => {

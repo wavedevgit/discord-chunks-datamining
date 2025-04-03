@@ -59,7 +59,7 @@ function s(e, t, s) {
       }) : u = i.t.ZVV1go, (0, o.B)(i.NW.string(i.t["+CT/gY"]), u, a.A.WARNING, g);
       break;
     default:
-      let f = null !== (d = e.getFirstFieldErrorMessage(["published"])) && void 0 !== d ? d : (null === (c = e.hasFieldErrors) || void 0 === c ? void 0 : c.call(e)) ? void 0 : e.message;
+      let f = null != (d = e.getFirstFieldErrorMessage(["published"])) ? d : (null == (c = e.hasFieldErrors) ? void 0 : c.call(e)) ? void 0 : e.message;
       null != f && (0, o.B)(i.NW.string(i.t.bvWf8f), f, a.A.WARNING)
   }
 }

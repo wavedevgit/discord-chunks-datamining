@@ -69,9 +69,9 @@ function P(t) {
   }), [m, h]), w = (0, f.Go)(), C = (0, o.e7)([O.Z], () => e === d.S.STICKER && null != n ? O.Z.getStickerById(n) : null), k = null != C && w.includes(C.id), x = (0, o.e7)([s.ZP], () => {
     if (e === d.S.EMOJI) {
       if (null != n) return s.ZP.getDisambiguatedEmojiContext().getById(n);
-      if (null != P) {
+      else if (null != P) {
         var t;
-        return null !== (t = N(P)) && void 0 !== t ? t : N(b.ZP.convertSurrogateToName(P))
+        return null != (t = N(P)) ? t : N(b.ZP.convertSurrogateToName(P))
       }
     }
   }), A = (0, u.C1)(null, x);

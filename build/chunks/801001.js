@@ -3,9 +3,9 @@ n.d(t, {
   default: () => y
 }), n(47120), n(266796), n(230036);
 var r = n(200651),
-  i = n(192379),
-  o = n(392711),
-  l = n.n(o),
+  l = n(192379),
+  i = n(392711),
+  o = n.n(i),
   s = n(442837),
   a = n(481060),
   c = n(706371),
@@ -14,44 +14,44 @@ var r = n(200651),
   m = n(661824),
   h = n(984933),
   j = n(430824),
-  v = n(823379),
-  x = n(402148),
-  p = n(570961),
-  g = n(208665),
+  x = n(823379),
+  p = n(402148),
+  g = n(570961),
+  v = n(208665),
   N = n(460117),
   f = n(290511),
   b = n(388032),
-  I = n(272340);
+  I = n(663362);
 
 function y(e) {
   let {
     transitionState: t,
     onClose: n,
-    onSave: o,
+    onSave: i,
     onDelete: j,
-    option: v,
-    guild: x,
+    option: x,
+    guild: p,
     prompt: y,
     index: k
-  } = e, C = (0, u.Dt)(), P = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(x.id)), [S, _] = i.useState(() => {
+  } = e, C = (0, u.Dt)(), P = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(p.id)), [S, _] = l.useState(() => {
     var e;
-    return null !== (e = null == v ? void 0 : v.emoji) && void 0 !== e ? e : null
-  }), [z, w] = i.useState(() => {
+    return null != (e = null == x ? void 0 : x.emoji) ? e : null
+  }), [z, w] = l.useState(() => {
     var e;
-    return null !== (e = null == v ? void 0 : v.title) && void 0 !== e ? e : ""
-  }), [W, B] = i.useState(() => {
+    return null != (e = null == x ? void 0 : x.title) ? e : ""
+  }), [W, B] = l.useState(() => {
     var e;
-    return null !== (e = null == v ? void 0 : v.description) && void 0 !== e ? e : ""
-  }), [E, T] = i.useState(() => {
+    return null != (e = null == x ? void 0 : x.description) ? e : ""
+  }), [E, T] = l.useState(() => {
     var e;
-    return new Set(null !== (e = null == v ? void 0 : v.channelIds) && void 0 !== e ? e : [])
-  }), [R, Z] = i.useState(() => {
+    return new Set(null != (e = null == x ? void 0 : x.channelIds) ? e : [])
+  }), [R, Z] = l.useState(() => {
     var e;
-    return new Set(null !== (e = null == v ? void 0 : v.roleIds) && void 0 !== e ? e : [])
-  }), [H, L] = i.useState({}), D = i.useRef(null);
-  return i.useLayoutEffect(() => {
+    return new Set(null != (e = null == x ? void 0 : x.roleIds) ? e : [])
+  }), [H, L] = l.useState({}), D = l.useRef(null);
+  return l.useLayoutEffect(() => {
     var e;
-    return null === (e = D.current) || void 0 === e ? void 0 : e.focus()
+    return null == (e = D.current) ? void 0 : e.focus()
   }, []), (0, r.jsxs)(a.Y0X, {
     transitionState: t,
     "aria-labelledby": C,
@@ -98,14 +98,14 @@ function y(e) {
         variant: "heading-md/semibold",
         children: b.NW.string(b.t.TtIbPD)
       }), (0, r.jsx)(c.Z, {
-        guildId: x.id,
+        guildId: p.id,
         selectedChannelIds: E,
         placeholder: b.NW.string(b.t.vephiI),
         onChange: T,
         helperText: b.NW.string(b.t.SoT6wc),
         className: I.searchInput
       }), (0, r.jsx)(d.Z, {
-        guildId: x.id,
+        guildId: p.id,
         selectedRoleIds: R,
         disableEveryoneRole: !0,
         placeholder: b.NW.string(b.t.aFO1Iy),
@@ -116,7 +116,7 @@ function y(e) {
       }), null == H.roles ? null : (0, r.jsx)(a.pdY, {
         error: H.roles
       }), (0, r.jsx)(O, {
-        guild: x,
+        guild: p,
         roleIds: R
       }), (0, r.jsx)(m.Z, {
         className: I.divider
@@ -164,7 +164,7 @@ function y(e) {
             onClick: () => {
               var e;
               let t = {
-                  id: null !== (e = null == v ? void 0 : v.id) && void 0 !== e ? e : "".concat(Date.now()),
+                  id: null != (e = null == x ? void 0 : x.id) ? e : "".concat(Date.now()),
                   title: z,
                   description: W,
                   channelIds: Array.from(E).sort(),
@@ -172,12 +172,12 @@ function y(e) {
                   emoji: null == S ? void 0 : S
                 },
                 r = function(e, t, n, r) {
-                  let i = {};
-                  r.title.length <= 0 && (i.title = b.NW.string(b.t.p3PKzM));
-                  let o = (0, p.en)(e, t, n, r);
-                  return null != o && (i.roles = o), i
-                }(x, g.Z.editedOnboardingPrompts, y, t);
-              L(r), l().isEmpty(r) && (o(t), n())
+                  let l = {};
+                  r.title.length <= 0 && (l.title = b.NW.string(b.t.p3PKzM));
+                  let i = (0, g.en)(e, t, n, r);
+                  return null != i && (l.roles = i), l
+                }(p, v.Z.editedOnboardingPrompts, y, t);
+              L(r), o().isEmpty(r) && (i(t), n())
             },
             children: b.NW.string(b.t.R3BPHx)
           })]
@@ -191,8 +191,8 @@ function O(e) {
   let {
     guild: t,
     roleIds: n
-  } = e, i = (0, s.e7)([j.Z], () => j.Z.getRoles(t.id)), o = Array.from(n).map(e => i[e]).filter(v.lm).find(x.F);
-  return null == o ? null : (0, r.jsx)("div", {
+  } = e, l = (0, s.e7)([j.Z], () => j.Z.getRoles(t.id)), i = Array.from(n).map(e => l[e]).filter(x.lm).find(p.F);
+  return null == i ? null : (0, r.jsx)("div", {
     className: I.notice,
     children: (0, r.jsxs)("div", {
       className: I.noticeMessage,
@@ -205,7 +205,7 @@ function O(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: b.NW.format(b.t["5zPJER"], {
-          permissions: (0, x.i)(t, o).join(", ")
+          permissions: (0, p.i)(t, i).join(", ")
         })
       })]
     })

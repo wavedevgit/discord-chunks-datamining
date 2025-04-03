@@ -14,8 +14,8 @@ var n = r(120356),
   u = r(837748),
   o = r(58346),
   C = r(388032),
-  m = r(971209),
-  N = r(685786);
+  m = r(704983),
+  N = r(20493);
 
 function L() {
   return (0, s.jsx)(c.Z, {
@@ -101,7 +101,7 @@ function f(e) {
       children: r.description
     }), (0, s.jsx)(x, {
       className: L,
-      count: null !== (t = r.usageCount) && void 0 !== t ? t : 0,
+      count: null != (t = r.usageCount) ? t : 0,
       creator: r.creator.username,
       verifiedName: (0, d.R)(r.code)
     })]

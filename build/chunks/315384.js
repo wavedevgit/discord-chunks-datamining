@@ -8,7 +8,7 @@ var r = n(200651),
   i = n(481060),
   o = n(317951),
   s = n(959546),
-  c = n(224355);
+  c = n(208220);
 let d = "/users/@me/debug/consumables/",
   u = {
     [o.FX]: "HD Streaming Potion",
@@ -16,8 +16,9 @@ let d = "/users/@me/debug/consumables/",
   };
 
 function m() {
-  let e;
-  let [t, n] = (0, a.useState)([]), [m, x] = (0, a.useState)(null), [h, p] = (0, a.useState)(!1);
+  let e, [t, n] = (0, a.useState)([]),
+    [m, x] = (0, a.useState)(null),
+    [h, p] = (0, a.useState)(!1);
   return (0, a.useEffect)(() => ((async () => {
     try {
       let e = (await l.tn.get(d)).body.entitlements.map(e => s.Z.createFromServer(e));

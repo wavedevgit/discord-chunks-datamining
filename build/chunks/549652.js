@@ -14,8 +14,8 @@ var n = s(200651),
   f = s(314897),
   u = s(981631),
   p = s(388032),
-  N = s(366773),
-  g = s(685786);
+  N = s(396096),
+  g = s(20493);
 
 function m(e, t, s) {
   return t in e ? Object.defineProperty(e, t, {
@@ -103,8 +103,7 @@ class E extends r.PureComponent {
     })
   }
   render() {
-    let e;
-    let {
+    let e, {
       stage: t
     } = this.state;
     switch (t) {
@@ -142,7 +141,7 @@ class E extends r.PureComponent {
       search: s
     } = e.location, n = null != s && "" !== s ? (0, i.parse)(s) : {};
     this.state = {
-      key: null !== (t = n.key) && void 0 !== t ? t : "",
+      key: null != (t = n.key) ? t : "",
       stage: "true" === n.done ? D.DONE : D.HANDOFF
     }
   }

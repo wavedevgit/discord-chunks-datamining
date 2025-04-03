@@ -1,14 +1,14 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => m
 });
-var r, i, a, o = n(442837),
-  l = n(570140),
+var r, i, a, l = n(442837),
+  o = n(570140),
   s = n(186901);
 let c = null,
   u = [s.ff.REDISTRIBUTABLE_INSTALL_FAILED, s.ff.POST_INSTALL_FAILED, s.ff.POST_INSTALL_CANCELLED],
   d = [s.ff.APPLICATION_NOT_FOUND, s.ff.APPLICATION_LOAD_FAILED, s.ff.INTERRUPTED, s.ff.DESERIALIZATION_FAILED];
-class p extends(a = o.ZP.Store) {
+class p extends(a = l.ZP.Store) {
   getLastError() {
     return c
   }
@@ -19,7 +19,7 @@ i = "DispatchApplicationErrorStore", (r = "displayName") in p ? Object.definePro
   configurable: !0,
   writable: !0
 }) : p[r] = i;
-let m = new p(l.Z, {
+let m = new p(o.Z, {
   DISPATCH_APPLICATION_LAUNCH_SETUP_START: function() {
     null != c && null != c.code && u.includes(c.code) && (c = null)
   },

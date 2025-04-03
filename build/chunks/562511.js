@@ -1,6 +1,6 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
-  A2: () => _,
+  A2: () => p,
   S3: () => d
 });
 var r = n(442837),
@@ -22,17 +22,16 @@ function d(e) {
       let r = a.default.getCurrentUser();
       if (void 0 === r) return !1;
       let i = l.ZP.getMember(e, r.id);
-      return null != i && function(e, t, n) {
-        if (!(0, c.u)(e) || null == e.profile || n.isPending) return !1;
-        if (null == t.primaryGuild) return !0;
-        let r = null != n.joinedAt ? new Date(n.joinedAt) : null,
-          i = null != r && Date.now() - r.getTime() <= 2592e5;
-        return null == t.primaryGuild.identityGuildId && !i
-      }(n, r, i)
+      if (null == i) return !1;
+      if (!(0, c.u)(n) || null == n.profile || i.isPending) return !1;
+      if (null == r.primaryGuild) return !0;
+      let o = null != i.joinedAt ? new Date(i.joinedAt) : null,
+        u = null != o && Date.now() - o.getTime() <= 2592e5;
+      return null == r.primaryGuild.identityGuildId && !u
     }, [t, e]) && !t
   }(e) ? null : "available"
 }
 
-function _(e) {
+function p(e) {
   return null !== d(e)
 }

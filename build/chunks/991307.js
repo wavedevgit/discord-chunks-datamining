@@ -10,20 +10,20 @@ var l = n(442837),
   o = n(846027),
   s = n(763296),
   u = n(131951),
-  d = n(19780),
-  c = n(914010),
+  c = n(19780),
+  d = n(914010),
   g = n(594174),
   f = n(626135),
   b = n(981631),
   Z = n(65154),
   N = n(388032),
-  m = n(201476);
+  m = n(752420);
 
 function v(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Z.Yn.DEFAULT,
     n = (0, l.e7)([g.default], () => {
       var t;
-      return (null === (t = g.default.getCurrentUser()) || void 0 === t ? void 0 : t.id) === e
+      return (null == (t = g.default.getCurrentUser()) ? void 0 : t.id) === e
     }),
     v = (0, l.e7)([s.Z], () => s.Z.isLocalSoundboardMuted(e)),
     {
@@ -43,16 +43,13 @@ function v(e) {
       id: "disable-video",
       label: N.NW.string(N.t["4MMsWF"]),
       action: () => {
-        if (j) {
-          a.Z.show({
-            title: N.NW.string(N.t.m2Hyj4),
-            body: N.NW.string(N.t.EhaK6O),
-            confirmText: N.NW.string(N.t.ND1my8),
-            cancelText: N.NW.string(N.t.jEqEh4),
-            onConfirm: () => o.Z.setDisableLocalVideo(e, b.ZUi.MANUAL_ENABLED)
-          });
-          return
-        }
+        if (j) return void a.Z.show({
+          title: N.NW.string(N.t.m2Hyj4),
+          body: N.NW.string(N.t.EhaK6O),
+          confirmText: N.NW.string(N.t.ND1my8),
+          cancelText: N.NW.string(N.t.jEqEh4),
+          onConfirm: () => o.Z.setDisableLocalVideo(e, b.ZUi.MANUAL_ENABLED)
+        });
         let n = h ? b.ZUi.MANUAL_ENABLED : b.ZUi.DISABLED;
         o.Z.setDisableLocalVideo(e, n, t)
       },
@@ -71,9 +68,9 @@ function v(e) {
       id: "soundboard-sound-mute",
       label: N.NW.string(N.t.LxhEuL),
       action: () => {
-        let n = d.Z.getRTCConnection();
+        let n = c.ZP.getRTCConnection();
         f.default.track(b.rMx.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
-          guild_id: c.Z.getGuildId(),
+          guild_id: d.Z.getGuildId(),
           target_user_id: e,
           media_session_id: null == n ? void 0 : n.getMediaSessionId(),
           parent_media_session_id: null == n ? void 0 : n.parentMediaSessionId,

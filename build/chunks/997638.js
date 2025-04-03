@@ -1,8 +1,8 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   ZP: () => j,
-  cy: () => y,
-  iu: () => v
+  cy: () => x,
+  iu: () => y
 }), n(47120);
 var r, i, l, o = n(200651),
   a = n(192379),
@@ -14,7 +14,7 @@ var r, i, l, o = n(200651),
   h = n(600164),
   f = n(981631),
   m = n(388032),
-  g = n(532671);
+  g = n(840440);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -50,9 +50,9 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((i = {}).CENTER = "center", i.LEFT = "left", i),
-  y = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
-class x extends a.PureComponent {
+var y = ((i = {}).CENTER = "center", i.LEFT = "left", i),
+  x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
+class v extends a.PureComponent {
   componentDidMount() {
     let {
       uniqueId: e
@@ -189,7 +189,7 @@ class j extends(r = a.PureComponent) {
       } = this.props, s = null != a;
       return (0, o.jsx)(d.f6W, {
         theme: r,
-        children: e => (0, o.jsx)(x, C(_({}, this.props), {
+        children: e => (0, o.jsx)(v, C(_({}, this.props), {
           className: c()({
             [g.bottom]: "bottom" === n,
             [g.contentNarrowNoMedia]: !i && !s,
@@ -210,6 +210,6 @@ class j extends(r = a.PureComponent) {
     })
   }
 }
-b(j, "TextAlignments", v), b(j, "defaultProps", {
+b(j, "TextAlignments", y), b(j, "defaultProps", {
   textAlign: "left"
 })

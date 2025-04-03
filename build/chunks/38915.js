@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 }), n(47120), n(230036);
@@ -7,37 +7,37 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(536442),
-  o = n(406826);
+  l = n(797685);
 
-function l(e) {
+function o(e) {
   let {
     hotspotLocation: t
-  } = e, [n, l] = (0, i.Wu)([a.qc], () => [a.qc.hasHotspot(t, !0), a.qc.getHotspotOverride(t)]);
+  } = e, [n, o] = (0, i.Wu)([a.qc], () => [a.qc.hasHotspot(t, !0), a.qc.getHotspotOverride(t)]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xJW, {
       title: t,
-      className: o.hotspotSwitch,
+      className: l.hotspotSwitch,
       children: [n ? (0, r.jsx)(s.DY3, {
-        className: o.iconContainer,
+        className: l.iconContainer,
         element: "span",
         text: "Active",
         children: (0, r.jsx)(s.dz2, {
           size: "md",
           color: "currentColor",
-          className: o.checkmark
+          className: l.checkmark
         })
       }) : (0, r.jsx)(s.DY3, {
-        className: o.iconContainer,
+        className: l.iconContainer,
         element: "span",
         text: "Inactive",
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",
-          className: o.xmark
+          className: l.xmark
         })
       }), (0, r.jsx)(s.q4e, {
-        className: o.overrideSelect,
-        value: l,
+        className: l.overrideSelect,
+        value: o,
         options: [{
           value: void 0,
           label: "No Override"
@@ -63,11 +63,11 @@ function c(e) {
     tag: s.RB0.H1,
     className: t,
     children: [(0, r.jsx)(s.Text, {
-      className: o.helpText,
+      className: l.helpText,
       tag: "p",
       variant: "text-sm/normal",
       children: 'All the "hotspots" in app, and their current status. Use the select menu to override them on or off.'
-    }), Object.keys(a.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(l, {
+    }), Object.keys(a.v6).sort((e, t) => e.localeCompare(t)).map(e => (0, r.jsx)(o, {
       hotspotLocation: e
     }, e))]
   })

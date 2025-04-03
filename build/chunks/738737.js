@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   Z: () => s
 });
@@ -21,8 +21,8 @@ function s(e) {
     analyticsLocations: f,
     analyticsSubscriptionType: p,
     renderHeader: g,
-    renderPurchaseConfirmation: v,
-    planGroup: h,
+    renderPurchaseConfirmation: h,
+    planGroup: v,
     reviewWarningMessage: b,
     skuId: y
   } = e;
@@ -33,7 +33,7 @@ function s(e) {
       PaymentModal: i
     } = await Promise.resolve().then(n.bind(n, 791785)), {
       STEPS: l
-    } = await Promise.all([n.e("17938"), n.e("57301")]).then(n.bind(n, 7305));
+    } = await Promise.all([n.e("17938"), n.e("8854")]).then(n.bind(n, 7305));
     return n => {
       var x, j, {
           onClose: C
@@ -87,8 +87,8 @@ function s(e) {
               analyticsSubscriptionType: p,
               skuId: y,
               renderHeader: g,
-              renderPurchaseConfirmation: v,
-              planGroup: h,
+              renderPurchaseConfirmation: h,
+              planGroup: v,
               trialId: c,
               trialFooterMessageOverride: d,
               reviewWarningMessage: b

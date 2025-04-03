@@ -13,7 +13,7 @@ var i = r(730647),
   d = r(36246),
   u = r(305342),
   C = r(981631),
-  p = r(898404);
+  p = r(603598);
 
 function f(e) {
   var t;
@@ -21,7 +21,7 @@ function f(e) {
     guildId: r
   } = e, i = (0, o.GG)(r)[0], {
     editStateIds: f
-  } = s.B7(null !== (t = null == i ? void 0 : i.id) && void 0 !== t ? t : null, r), {
+  } = s.B7(null != (t = null == i ? void 0 : i.id) ? t : null, r), {
     activeSubscription: b
   } = (0, c.Z)(null == i ? void 0 : i.id);
   return (0, n.jsxs)("div", {
@@ -37,7 +37,7 @@ function f(e) {
         var t;
         return (0, n.jsx)(u.Z, {
           guildId: r,
-          groupListingId: null !== (t = null == i ? void 0 : i.id) && void 0 !== t ? t : "",
+          groupListingId: null != (t = null == i ? void 0 : i.id) ? t : "",
           listingId: e,
           analyticsLocation: C.Sbl.ROLE_SUBSCRIPTIONS_TAB
         }, e)

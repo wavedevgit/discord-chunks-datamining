@@ -36,7 +36,7 @@ var r = t(200651),
   R = t(955335),
   M = t(981631),
   D = t(388032),
-  _ = t(57078);
+  _ = t(695025);
 
 function A(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -91,7 +91,7 @@ function U(e) {
       size: 1024,
       canAnimate: !1
     });
-    return null != n && null !== (e = N.Z.toURLSafe(n)) && void 0 !== e ? e : void 0
+    return null != n && null != (e = N.Z.toURLSafe(n)) ? e : void 0
   }, [m]), v = i.useMemo(() => {
     var e;
     if ((null == m ? void 0 : m.banner) == null) return;
@@ -101,7 +101,7 @@ function U(e) {
       size: 1024,
       canAnimate: !0
     });
-    return null != n && null !== (e = N.Z.toURLSafe(n)) && void 0 !== e ? e : void 0
+    return null != n && null != (e = N.Z.toURLSafe(n)) ? e : void 0
   }, [m]), g = (0, u.e7)([c.Z], () => c.Z.useReducedMotion), j = i.useMemo(() => [...s.map(e => e.skuId), ...o.map(e => e.skuId)], [s, o]), {
     analyticsLocations: f
   } = (0, p.ZP)(d.Z.APP_STOREFRONT);
@@ -174,7 +174,7 @@ function L(e) {
     onDetails: j
   } = e, {
     data: O
-  } = (0, g.H)(d.skuId), I = null == O ? void 0 : O[0], P = (0, u.e7)([y.Z], () => y.Z.get(d.skuId), [d.skuId]), k = (0, u.e7)([x.Z], () => x.Z.getGuild(c), [c]), S = (0, u.e7)([y.Z], () => y.Z.getParentSKU(d.skuId), [d.skuId]), N = (0, b.Ev)(S, c), w = null == N ? void 0 : N.subscription, E = (0, b.cr)(S, c), R = null != w && (0, v.Jf)(w, P), U = null != E && (null == N ? void 0 : null === (n = N.subscriptionPlan) || void 0 === n ? void 0 : n.id) !== (null == E ? void 0 : E.subscriptionPlan.id), W = !1 === R && (null == E ? void 0 : E.subscriptionPlan.skuId) === d.skuId, L = (null == N ? void 0 : N.subscriptionPlan.skuId) === d.skuId, {
+  } = (0, g.H)(d.skuId), I = null == O ? void 0 : O[0], P = (0, u.e7)([y.Z], () => y.Z.get(d.skuId), [d.skuId]), k = (0, u.e7)([x.Z], () => x.Z.getGuild(c), [c]), S = (0, u.e7)([y.Z], () => y.Z.getParentSKU(d.skuId), [d.skuId]), N = (0, b.Ev)(S, c), w = null == N ? void 0 : N.subscription, E = (0, b.cr)(S, c), R = null != w && (0, v.Jf)(w, P), U = null != E && (null == N || null == (n = N.subscriptionPlan) ? void 0 : n.id) !== (null == E ? void 0 : E.subscriptionPlan.id), W = !1 === R && (null == E ? void 0 : E.subscriptionPlan.skuId) === d.skuId, L = (null == N ? void 0 : N.subscriptionPlan.skuId) === d.skuId, {
     openModal: B,
     subscriptionPurchaseButtonState: z,
     isGuildSubscribed: G
@@ -184,7 +184,7 @@ function L(e) {
     analyticsLocation: M.Sbl.APP_STOREFRONT
   }), q = i.useMemo(() => {
     var e;
-    return null === (e = d.benefits) || void 0 === e ? void 0 : e.map(e => ({
+    return null == (e = d.benefits) ? void 0 : e.map(e => ({
       id: e.id,
       title: e.name,
       description: e.description,
@@ -222,7 +222,7 @@ function L(e) {
     title: d.summary,
     subtitle: H,
     maxBenefits: null != H ? o.ZI - 1 : o.ZI,
-    description: null !== (l = d.description) && void 0 !== l ? l : void 0,
+    description: null != (l = d.description) ? l : void 0,
     imgSrc: V,
     onPurchase: B,
     renderPurchaseButton: K,
@@ -234,7 +234,7 @@ function L(e) {
       (0, a.ZDy)(async () => {
         let {
           SubscriptionDetailsModal: e
-        } = await Promise.all([t.e("86282"), t.e("36234")]).then(t.bind(t, 519896));
+        } = await Promise.all([t.e("86282"), t.e("93287")]).then(t.bind(t, 519896));
         return n => (0, r.jsx)(e, A({
           appId: s,
           subscriptionType: p,
@@ -256,9 +256,9 @@ function B(e) {
     analyticsLocations: v
   } = (0, p.ZP)(d.Z.APP_STOREFRONT), g = (0, u.e7)([O.Z], () => O.Z.getForSKU(c), [c]), f = (0, u.e7)([y.Z], () => y.Z.get(c), [c]), h = (0, E.M)(c);
   if (null == f) return null;
-  let x = null !== (i = f.name) && void 0 !== i ? i : "",
-    I = null !== (l = null == g ? void 0 : null === (n = g.description) || void 0 === n ? void 0 : n.trim()) && void 0 !== l ? l : void 0,
-    P = (null == g ? void 0 : g.headerBackground) != null && null !== (o = N.Z.toURLSafe((0, k._W)(m, g.headerBackground, 256))) && void 0 !== o ? o : void 0,
+  let x = null != (i = f.name) ? i : "",
+    I = null != (l = null == g || null == (n = g.description) ? void 0 : n.trim()) ? l : void 0,
+    P = (null == g ? void 0 : g.headerBackground) != null && null != (o = N.Z.toURLSafe((0, k._W)(m, g.headerBackground, 256))) ? o : void 0,
     w = f.type === M.epS.DURABLE && h,
     Z = f.type === M.epS.DURABLE ? w ? D.NW.string(D.t.bm82mp) : D.NW.string(D.t["6gprwc"]) : void 0,
     {

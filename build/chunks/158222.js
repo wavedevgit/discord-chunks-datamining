@@ -1,15 +1,15 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   V6: () => c,
-  fn: () => l,
+  fn: () => o,
   xP: () => s
 });
 var r = n(544891),
   i = n(570140),
   a = n(881052),
-  o = n(981631);
+  l = n(981631);
 
-function l(e) {
+function o(e) {
   i.Z.dispatch({
     type: "DISMISS_MEDIA_POST_SHARE_PROMPT",
     threadId: e
@@ -22,7 +22,7 @@ async function s(e) {
   });
   try {
     let t = (await r.tn.get({
-      url: o.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
+      url: l.ANM.MEDIA_POST_RESHARE_GET_PREVIEW(e),
       rejectWithError: !0
     })).body;
     i.Z.dispatch({
@@ -40,7 +40,7 @@ async function s(e) {
 async function c(e) {
   try {
     return (await r.tn.post({
-      url: o.ANM.UNFURL_EMBED_URLS,
+      url: l.ANM.UNFURL_EMBED_URLS,
       body: {
         urls: e
       },

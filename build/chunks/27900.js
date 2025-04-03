@@ -10,16 +10,16 @@ var l = n(481060),
   a = n(108843),
   u = n(947440),
   c = n(100527),
-  d = n(299206),
-  s = n(819403),
+  s = n(299206),
+  d = n(819403),
   f = n(777658),
   g = n(858488),
   b = n(933409),
   O = n(389052),
   E = n(24311),
-  v = n(158508),
-  _ = n(710631),
-  y = n(494439),
+  _ = n(158508),
+  y = n(710631),
+  v = n(494439),
   h = n(991307),
   Z = n(700994),
   m = n(332031),
@@ -68,7 +68,7 @@ function P(e) {
     onShowProfile: p,
     onWatchStream: j,
     appContext: N
-  } = e, P = (0, y.Z)({
+  } = e, P = (0, v.Z)({
     onAction: () => {
       null == p || p()
     }
@@ -78,7 +78,7 @@ function P(e) {
   }), T = (0, g.Z)({
     user: t,
     appContext: N
-  }), I = (0, m.Z)(t.id, j), M = (0, Z.Z)(t.id), D = (0, h.Z)(t.id, a), C = (0, _.Z)({
+  }), I = (0, m.Z)(t.id, j), M = (0, Z.Z)(t.id), D = (0, h.Z)(t.id, a), C = (0, y.Z)({
     user: t
   }), w = (0, u.Z)(null, t), x = (0, f.Z)({
     user: t,
@@ -86,13 +86,13 @@ function P(e) {
   }), U = (0, O.Z)({
     user: t,
     appContext: N
-  }), k = (0, v.Z)({
+  }), k = (0, _.Z)({
     user: t,
     appContext: N
-  }), W = (0, d.Z)({
+  }), W = (0, s.Z)({
     id: t.id,
     label: S.NW.string(S.t["/AXYnJ"])
-  }), R = (0, s.Z)(t), L = (0, b.Z)(t, n, o), B = t.isNonUserBot();
+  }), R = (0, d.Z)(t), L = (0, b.Z)(t, n, o), B = t.isNonUserBot();
   return (0, r.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: i.Zy,
@@ -126,7 +126,7 @@ function A(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: b
-  } = e, p = (0, y.Z)({
+  } = e, p = (0, v.Z)({
     onAction: () => {
       null == a || a()
     }
@@ -136,7 +136,7 @@ function A(e) {
   }), N = (0, g.Z)({
     user: t,
     appContext: b
-  }), P = (0, m.Z)(t.id, c), A = (0, Z.Z)(t.id), T = (0, h.Z)(t.id, n), I = (0, _.Z)({
+  }), P = (0, m.Z)(t.id, c), A = (0, Z.Z)(t.id), T = (0, h.Z)(t.id, n), I = (0, y.Z)({
     user: t
   }), M = (0, u.Z)(null, t), D = (0, f.Z)({
     user: t,
@@ -144,13 +144,13 @@ function A(e) {
   }), C = (0, O.Z)({
     user: t,
     appContext: b
-  }), w = (0, v.Z)({
+  }), w = (0, _.Z)({
     user: t,
     appContext: b
-  }), x = (0, d.Z)({
+  }), x = (0, s.Z)({
     id: t.id,
     label: S.NW.string(S.t["/AXYnJ"])
-  }), U = (0, s.Z)(t), k = t.isNonUserBot();
+  }), U = (0, d.Z)(t), k = t.isNonUserBot();
   return (0, r.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: i.Zy,

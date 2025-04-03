@@ -1,24 +1,24 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(388032),
-  o = n(433498);
+  a = n(865096);
 
-function a(e) {
+function o(e) {
   let {
     sendStartNotification: t,
     setSendStartNotification: n
-  } = e, a = t ? l.NW.string(l.t.xAT8lJ) : l.NW.string(l.t["Y+18hY"]);
+  } = e, o = t ? l.NW.string(l.t.xAT8lJ) : l.NW.string(l.t["Y+18hY"]);
   return (0, r.jsx)("div", {
-    className: o.notificationToggle,
+    className: a.notificationToggle,
     children: (0, r.jsx)(i.XZJ, {
       type: i.XZJ.Types.INVERTED,
       size: 14,
-      className: o.__invalid_checkbox,
+      className: a.__invalid_checkbox,
       value: t,
       onChange: function() {
         n(!t)
@@ -28,7 +28,7 @@ function a(e) {
         variant: "text-sm/normal",
         children: (0, r.jsx)(i.ua7, {
           position: "bottom",
-          tooltipClassName: o.tooltip,
+          tooltipClassName: a.tooltip,
           text: l.NW.string(l.t["4A/xnZ"]),
           "aria-label": l.NW.string(l.t["4A/xnZ"]),
           children: e => {
@@ -51,7 +51,7 @@ function a(e) {
               }
               return e
             }({}, e), n = n = {
-              children: a
+              children: o
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

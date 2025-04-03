@@ -1,10 +1,10 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => m
 }), n(47120);
 var r, i = n(442837),
-  o = n(570140),
-  l = n(430824),
+  l = n(570140),
+  o = n(430824),
   a = n(823379),
   s = n(905128),
   c = n(19394),
@@ -63,20 +63,20 @@ d(g, "displayName", "GuildPowerupsNotificationStore"), d(g, "persistKey", "Guild
   }) : r;
   e[n] = i
 }), e)]);
-let m = new g(o.Z, {
+let m = new g(l.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
-    var t, n, r, i, o, d, g, m;
+    var t, n, r, i, l, d, g, m;
     let {
       guildId: b
-    } = e, v = null !== (i = null === (t = l.Z.getGuild(b)) || void 0 === t ? void 0 : t.premiumSubscriberCount) && void 0 !== i ? i : 0, y = s.Z.getStateForGuild(b), _ = (0, c.h)(null !== (o = null == y ? void 0 : y.unlocked) && void 0 !== o ? o : new Map), O = new Set(Array.from(null !== (d = null == y ? void 0 : null === (n = y.unlocked) || void 0 === n ? void 0 : n.values()) && void 0 !== d ? d : []).map(e => {
+    } = e, y = null != (i = null == (t = o.Z.getGuild(b)) ? void 0 : t.premiumSubscriberCount) ? i : 0, _ = s.Z.getStateForGuild(b), v = (0, c.h)(null != (l = null == _ ? void 0 : _.unlocked) ? l : new Map), O = new Set(Array.from(null != (d = null == _ || null == (n = _.unlocked) ? void 0 : n.values()) ? d : []).map(e => {
       var t, n;
-      let r = null == y ? void 0 : null === (n = y.powerups) || void 0 === n ? void 0 : null === (t = n.get) || void 0 === t ? void 0 : t.call(n, e.sku_id);
+      let r = null == _ || null == (n = _.powerups) || null == (t = n.get) ? void 0 : t.call(n, e.sku_id);
       return (null == r ? void 0 : r.type) === u.Us.LEVEL ? r.skuId : void 0
-    }).filter(a.lm)), j = new Set((null !== (g = null == y ? void 0 : null === (r = y.catalog) || void 0 === r ? void 0 : r.get(u.Us.PERK)) && void 0 !== g ? g : []).map(e => e.skuId));
+    }).filter(a.lm)), j = new Set((null != (g = null == _ || null == (r = _.catalog) ? void 0 : r.get(u.Us.PERK)) ? g : []).map(e => e.skuId));
     f = h(p({}, f), {
       [b]: {
-        lastSeenWarningNotification: null !== (m = _[_.length - 1]) && void 0 !== m ? m : Date.now(),
-        lastBoostCount: v,
+        lastSeenWarningNotification: null != (m = v[v.length - 1]) ? m : Date.now(),
+        lastBoostCount: y,
         seenLevelSkuIds: O,
         seenPerkSkuIds: j
       }

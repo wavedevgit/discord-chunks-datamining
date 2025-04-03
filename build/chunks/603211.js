@@ -1,23 +1,23 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(192379),
   i = n(999153),
-  o = n(584922);
+  l = n(584922);
 
-function l(e) {
+function o(e) {
   let {
     type: t,
     index: n,
-    optionId: l,
+    optionId: o,
     onDragStart: a,
     onDragComplete: s,
     onDragReset: c
   } = e, [d, u] = r.useState(!1), [, p] = (0, i.c)({
     type: t,
-    item: () => (a(l), {
-      id: l,
+    item: () => (a(o), {
+      id: o,
       position: n
     }),
     canDrag: () => d,
@@ -26,15 +26,12 @@ function l(e) {
     }),
     end: (e, t) => {
       let n = t.getDropResult();
-      if (null == n) {
-        c();
-        return
-      }
+      if (null == n) return void c();
       s(n.optionId)
     }
   }), [{
     dragSourcePosition: m
-  }, b] = (0, o.L)({
+  }, b] = (0, l.L)({
     accept: t,
     canDrop: () => !0,
     collect: e => {
@@ -46,7 +43,7 @@ function l(e) {
       }
     },
     drop: () => ({
-      optionId: l
+      optionId: o
     })
   });
   return {

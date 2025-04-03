@@ -1,6 +1,6 @@
-/** Chunk was on 72581 **/
+/** Chunk was on 69620 **/
 n.d(t, {
-  Z: () => C,
+  Z: () => v,
   f: () => O
 }), n(47120);
 var a, i = n(200651),
@@ -17,7 +17,7 @@ var a, i = n(200651),
   h = n(695346),
   _ = n(572004),
   f = n(388032),
-  b = n(269358);
+  b = n(559297);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,15 +50,15 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var x = ((a = x || {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a);
+var C = ((a = C || {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a);
 
-function C(e) {
+function v(e) {
   let {
     tag: t,
     size: a = 1,
     disabled: o,
-    className: x,
-    onClick: C,
+    className: C,
+    onClick: v,
     onRemove: O,
     selected: j,
     ariaLabel: T
@@ -66,13 +66,13 @@ function C(e) {
     name: P,
     emojiId: E,
     emojiName: I
-  } = t, w = null != O, [S, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != E ? g.ZP.getUsableCustomEmojiById(E) : null), D = w || null != C, N = (!w || !S) && (null != E || null != I), k = 0 === a, z = r.useRef(null), L = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
+  } = t, w = null != O, [S, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != E ? g.ZP.getUsableCustomEmojiById(E) : null), D = w || null != v, N = (!w || !S) && (null != E || null != I), k = 0 === a, z = r.useRef(null), L = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
     let a = h.Sb.getSetting();
     _.wS && a && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("29646").then(n.bind(n, 955116));
-      return n => (0, i.jsx)(e, v(y({}, n), {
+      return n => (0, i.jsx)(e, x(y({}, n), {
         tag: t
       }))
     })
@@ -105,15 +105,15 @@ function C(e) {
       [b.clickable]: D,
       [b.small]: k,
       [b.selected]: j
-    }, x),
+    }, C),
     onClick: e => {
-      null == C || C(e), null == O || O(t), L || null == z.current || z.current.blur()
+      null == v || v(e), null == O || O(t), L || null == z.current || z.current.blur()
     },
     onContextMenu: e => Z(e),
     onMouseEnter: () => w && M(!0),
     onMouseLeave: () => w && M(!1)
   }, B = (0, s.JA)("forum-tag-".concat(t.id));
-  return D ? (0, i.jsx)(d.P3F, v(y(v(y({}, B), {
+  return D ? (0, i.jsx)(d.P3F, x(y(x(y({}, B), {
     innerRef: z,
     focusProps: {
       ringTarget: z
@@ -125,7 +125,7 @@ function C(e) {
     "aria-pressed": j
   }), U), {
     children: R
-  })) : (0, i.jsx)("div", v(y({}, U), {
+  })) : (0, i.jsx)("div", x(y({}, U), {
     children: R
   }))
 }
@@ -139,13 +139,13 @@ function O(e) {
   return (0, i.jsx)(d.ua7, {
     "aria-label": f.NW.string(f.t["P/y+sr"]),
     text: (0, i.jsx)(i.Fragment, {
-      children: t.map(e => (0, i.jsx)(C, {
+      children: t.map(e => (0, i.jsx)(v, {
         tag: e,
         className: b.tooltipPill,
-        size: C.Sizes.SMALL
+        size: v.Sizes.SMALL
       }, e.id))
     }),
-    children: e => (0, i.jsx)("div", v(y({}, e), {
+    children: e => (0, i.jsx)("div", x(y({}, e), {
       className: l()(b.pill, {
         [b.small]: r
       }),
@@ -156,4 +156,4 @@ function O(e) {
     }))
   })
 }
-C.Sizes = x
+v.Sizes = C

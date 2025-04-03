@@ -23,9 +23,9 @@ var r = n(200651),
   _ = n(552958),
   g = n(981631),
   j = n(921944),
-  v = n(871465),
-  m = n(388032),
-  x = n(368732);
+  m = n(871465),
+  v = n(388032),
+  x = n(394049);
 
 function C(e, t) {
   let n = b.Y.useExperiment({
@@ -50,7 +50,7 @@ function P() {
     [t] = (0, s.cv)([a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE]);
   return e.enabled && e.nestedEntry && t === a.z.PREMIUM_CUSTOM_NOTIFICATION_SOUNDS_GUILD_BADGE && (0, r.jsx)(o.IGR, {
     className: x.newBadge,
-    text: m.NW.string(m.t.y2b7CA)
+    text: v.NW.string(v.t.y2b7CA)
   })
 }
 
@@ -61,7 +61,7 @@ function T(e, t, a, C) {
     S = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
     A = f.ZP.canUseCustomNotificationSounds(S),
-    D = A ? null != E ? E : T : v.YC.CLASSIC,
+    D = A ? null != E ? E : T : m.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -77,18 +77,18 @@ function T(e, t, a, C) {
       M && G(j.L.TAKE_ACTION)
     }, [M, G]), !U) return null;
   let W = n => {
-      if (k(n), G(j.L.TAKE_ACTION), !A && n !== v.YC.CLASSIC) {
+      if (k(n), G(j.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
         (0, h.Z)(n, "contextMenu"), (0, N.Z)();
         return
       }
       null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
     },
     F = A ? o.Text : O.Z,
-    Y = (0, v.LB)(),
-    z = null !== (P = null === (I = Y.find(e => e.value === D)) || void 0 === I ? void 0 : I.label) && void 0 !== P ? P : m.NW.string(m.t.p3Hg5e),
+    Y = (0, m.LB)(),
+    z = null != (P = null == (I = Y.find(e => e.value === D)) ? void 0 : I.label) ? P : v.NW.string(v.t.p3Hg5e),
     B = (0, r.jsx)(o.IGR, {
       className: x.newBadge,
-      text: m.NW.string(m.t.y2b7CA)
+      text: v.NW.string(v.t.y2b7CA)
     });
   return (0, r.jsx)(o.sNh, {
     id: "notification-sounds",
@@ -105,7 +105,7 @@ function T(e, t, a, C) {
               className: x.text,
               color: t ? "always-white" : void 0,
               variant: "text-sm/medium",
-              children: m.NW.string(m.t.mrqSOj)
+              children: v.NW.string(v.t.mrqSOj)
             }), (0, r.jsx)(o.SrA, {
               size: "xs",
               className: x.nitroWheel,
@@ -123,7 +123,7 @@ function T(e, t, a, C) {
     action: e !== g.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("5863"), n.e("77953")]).then(n.bind(n, 751212));
+      } = await Promise.all([n.e("5863"), n.e("48445")]).then(n.bind(n, 751212));
       return n => {
         var i, l;
         return (0, r.jsx)(t, (i = function(e) {
@@ -160,10 +160,10 @@ function T(e, t, a, C) {
     hasSubmenu: !0,
     children: (0, r.jsxs)(o.kSQ, {
       children: [Y.map((e, t) => (0, r.jsxs)(i.Fragment, {
-        children: [A || e.value === v.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
+        children: [A || e.value === m.YC.CLASSIC ? (0, r.jsx)(o.k5B, {
           id: e.label,
           group: "notification-preset",
-          checked: (null != D ? D : v.YC.CLASSIC) === e.value,
+          checked: (null != D ? D : m.YC.CLASSIC) === e.value,
           label: e.label,
           action: () => W(e.value)
         }) : (0, r.jsx)(o.sNh, {
@@ -185,14 +185,14 @@ function T(e, t, a, C) {
             })
           },
           action: () => W(e.value)
-        }), e.value === v.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
+        }), e.value === m.YC.CLASSIC ? (0, r.jsx)(o.Clw, {}) : null]
       }, t)), w && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
           id: "label",
           label: (0, r.jsx)(o.Text, {
             className: x.mutedLabel,
             variant: "text-sm/medium",
-            children: m.NW.string(m.t["a9G/ER"])
+            children: v.NW.string(v.t["a9G/ER"])
           })
         })]
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   P: () => N
 }), n(733860);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(524437),
   s = n(481060),
   a = n(168107),
-  o = n(480916),
-  l = n(247206),
+  l = n(480916),
+  o = n(247206),
   c = n(294602),
   d = n(880257),
   u = n(63063),
@@ -17,11 +17,11 @@ var i = n(524437),
   p = n(726985),
   h = n(981631),
   f = n(388032),
-  b = n(612094);
+  b = n(298136);
 
 function N() {
   var e;
-  let t = null === (e = (0, d.Z)()) || void 0 === e || e,
+  let t = null == (e = (0, d.Z)()) || e,
     {
       explicitContentGuilds: n,
       explicitContentFriendDm: N,
@@ -29,10 +29,8 @@ function N() {
     } = (0, c.B)(),
     _ = e => {
       let t = Object.values(e);
-      if ((0, l.Ks)() && t.includes(i.Q4.SHOW)) {
-        a.Z.showAgeVerificationGetStartedModal(o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
-        return
-      }(0, l.zj)(e)
+      if ((0, o.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
+      (0, o.zj)(e)
     },
     E = [{
       value: i.Q4.BLUR,

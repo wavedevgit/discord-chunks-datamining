@@ -8,7 +8,7 @@ let o = {};
 class d extends(i = l.ZP.Store) {
   getBranches(e) {
     var t;
-    return null !== (t = o[e]) && void 0 !== t ? t : []
+    return null != (t = o[e]) ? t : []
   }
 }
 r = "ApplicationBranchStore", (s = "displayName") in d ? Object.defineProperty(d, s, {

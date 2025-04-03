@@ -54,7 +54,7 @@ class v extends(r = a.ZP.Store) {
   }
   getFiles(e) {
     var t;
-    return null !== (t = u[e]) && void 0 !== t ? t : c
+    return null != (t = u[e]) ? t : c
   }
   getMessageForFile(e) {
     return m[e]
@@ -83,7 +83,7 @@ let y = new v(l.Z, {
       message: o
     } = e;
     if (i._aborted || i._errored) return;
-    let h = null !== (t = u[a]) && void 0 !== t ? t : c;
+    let h = null != (t = u[a]) ? t : c;
     d[l.id] = i, u[a] = [...h, l], m[l.id] = o;
     let {
       items: f
@@ -136,7 +136,7 @@ let y = new v(l.Z, {
     if (null == n) return !1;
     setImmediate(() => {
       var e;
-      return null === (e = n.cancel) || void 0 === e ? void 0 : e.call(n)
+      return null == (e = n.cancel) ? void 0 : e.call(n)
     })
   },
   UPLOAD_ITEM_CANCEL_REQUEST: function(e) {

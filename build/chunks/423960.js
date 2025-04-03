@@ -22,10 +22,7 @@ let x = function(e, t, r, x, y, m, w) {
   var Z = (0, v.Z)(e, r),
     E = (0, v.Z)(t, r),
     C = w.get(E);
-  if (C) {
-    (0, n.Z)(e, r, C);
-    return
-  }
+  if (C) return void(0, n.Z)(e, r, C);
   var O = m ? m(Z, E, r + "", e, t, w) : void 0,
     _ = void 0 === O;
   if (_) {

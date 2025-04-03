@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   R: () => o
 });
@@ -15,7 +15,7 @@ function o(e) {
   } = (0, r.cj)([i.Z], () => {
     var e;
     return {
-      activeCommand: (null === (e = n.commands) || void 0 === e ? void 0 : e.enabled) ? i.Z.getActiveCommand(t.id) : null
+      activeCommand: (null == (e = n.commands) ? void 0 : e.enabled) ? i.Z.getActiveCommand(t.id) : null
     }
   });
   return null == a && o

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   z: () => u
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(772848),
   a = n(481060),
-  o = n(159351),
-  l = n(667),
+  l = n(159351),
+  o = n(667),
   s = n(626135),
   c = n(981631);
 
@@ -71,7 +71,7 @@ function u(e) {
         is_gift: !1,
         sku_id: f,
         location_stack: Array.isArray(d) ? d : [d]
-      }), (0, o.fw)(), (0, l.p)()
+      }), (0, l.fw)(), (0, o.p)()
     },
     onCloseRequest: c.dG4
   })

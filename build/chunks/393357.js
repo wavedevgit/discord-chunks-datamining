@@ -17,8 +17,8 @@ function m(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, m = (0, i.e7)([l.Z], () => l.Z.getGuild(n)), x = (0, i.e7)([s.Z], () => s.Z.hasLoadedExperiments), v = (0, d.Z)(n), _ = (0, c.Ek)(n, "GuildPowerupsPage");
-  return x && null != v && null != m ? _ ? v ? (0, r.jsx)(u.Z, {
+  } = e, m = (0, i.e7)([l.Z], () => l.Z.getGuild(n)), x = (0, i.e7)([s.Z], () => s.Z.hasLoadedExperiments), _ = (0, d.Z)(n), v = (0, c.Ek)(n, "GuildPowerupsPage");
+  return x && null != _ && null != m ? v ? _ ? (0, r.jsx)(u.Z, {
     guildId: n,
     powerupSkuId: t
   }) : (0, r.jsx)(a.Z, {

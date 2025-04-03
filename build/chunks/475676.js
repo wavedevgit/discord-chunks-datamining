@@ -1,4 +1,4 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -11,17 +11,17 @@ var r = n(200651),
   c = n(443487),
   u = n(314897),
   d = n(594174),
-  _ = n(626135),
-  p = n(5192),
-  h = n(873128),
-  f = n(246627),
+  p = n(626135),
+  _ = n(5192),
+  f = n(873128),
+  h = n(246627),
   m = n(709737),
-  g = n(69589),
-  b = n(531501),
+  b = n(69589),
+  g = n(531501),
   E = n(981631),
   C = n(701488),
   O = n(388032),
-  y = n(833865);
+  y = n(24158);
 
 function v(e) {
   let {
@@ -43,59 +43,59 @@ function v(e) {
 }
 
 function N(e) {
-  var t, n, b, C, y;
+  var t, n, g, C, y;
   let N, {
       selected: x,
       channel: I,
       entry: T
     } = e,
     L = I.guild_id,
-    j = (0, h.Z)({
+    P = (0, f.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
-      rankChanges: P
-    } = (0, f.Z)({
+      rankChanges: j
+    } = (0, h.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
-      intervalStart: null !== (C = null == j ? void 0 : j.interval_start) && void 0 !== C ? C : ""
+      intervalStart: null != (C = null == P ? void 0 : P.interval_start) ? C : ""
     }),
     A = (0, o.e7)([u.default], () => u.default.getId()),
     [R, w] = i.useMemo(() => {
-      let e = P.find(e => e.userId === A),
-        t = P[0],
+      let e = j.find(e => e.userId === A),
+        t = j[0],
         n = null != e ? e : t,
-        r = null == j ? void 0 : j.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
+        r = null == P ? void 0 : P.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
-    }, [j, P, A]),
+    }, [P, j, A]),
     k = (0, o.e7)([d.default], () => d.default.getUser(null == R ? void 0 : R.userId)),
-    M = p.ZP.getName(L, void 0, k);
+    M = _.ZP.getName(L, void 0, k);
   ! function(e) {
     let {
       leaderboard: t,
       guildId: n
     } = e, r = null == t ? void 0 : t.leaderboard_id;
     i.useEffect(() => {
-      null != r && _.default.track(E.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
+      null != r && p.default.track(E.rMx.LEADERBOARD_MEMBERLIST_CARD_VIEWED, {
         leaderboard_id: r,
         guild_id: n
       })
     }, [r, n])
   }({
-    leaderboard: j,
+    leaderboard: P,
     guildId: L
   });
-  let Z = (0, s.q)(null == j ? void 0 : null === (t = j.settings) || void 0 === t ? void 0 : t.application_id);
-  if (null == j || null == Z) return null;
-  if (0 === j.users.length || null == R || null == k) return (0, r.jsx)(S, {
+  let Z = (0, s.q)(null == P || null == (t = P.settings) ? void 0 : t.application_id);
+  if (null == P || null == Z) return null;
+  if (0 === P.users.length || null == R || null == k) return (0, r.jsx)(S, {
     application: Z,
     selected: x
   });
   let {
     sort_by_statistic_id: D
-  } = j.guild_settings, U = null !== (y = null == w ? void 0 : null === (b = w.statistics) || void 0 === b ? void 0 : null === (n = b[D]) || void 0 === n ? void 0 : n.value) && void 0 !== y ? y : 0, {
+  } = P.guild_settings, U = null != (y = null == w || null == (g = w.statistics) || null == (n = g[D]) ? void 0 : n.value) ? y : 0, {
     currentRank: V
   } = R;
   return N = R.userId === A ? O.NW.formatToPlainString(O.t["eU+JxM"], {
@@ -119,7 +119,7 @@ function N(e) {
           statisticId: D
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(b.Z, {
       user: k,
       rank: V
     })]
@@ -146,7 +146,7 @@ function S(e) {
           text: O.NW.string(O.t.zX8HUl)
         })
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(g.Z, {
       color: "#5B5A56",
       children: (0, r.jsx)("img", {
         src: "https://cdn.discordapp.com/assets/content/173a83bdbe0a455bf0d251f4cc9c2c027cd3da855384773916f3eb08298a880c.png",

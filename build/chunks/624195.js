@@ -1,16 +1,16 @@
 /** Chunk was on 53937 **/
 t.d(l, {
-  Z: () => u
+  Z: () => d
 }), t(474991), t(398202), t(301563);
 var n = t(200651);
 t(192379);
 var r = t(120356),
   i = t.n(r),
   s = t(729594),
-  a = t(817857);
+  a = t(94488);
 let o = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)");
 
-function d(e) {
+function u(e) {
   let l = null,
     t = null,
     n = null;
@@ -22,7 +22,7 @@ function d(e) {
   return null != n && o.test(null != l ? l : "") && null != t ? n : null
 }
 
-function u(e) {
+function d(e) {
   let {
     className: l,
     embed: {
@@ -31,15 +31,15 @@ function u(e) {
     }
   } = e;
   if (null == t || null == r) return null;
-  let s = d(t);
+  let s = u(t);
   if (null == s) return null;
   let o = s.query.iframe_url;
-  if (null == o || Array.isArray(o) || null == d(o)) return null;
+  if (null == o || Array.isArray(o) || null == u(o)) return null;
   let {
-    width: u,
+    width: d,
     height: c
-  } = r, h = u, m = c;
-  return (u > 500 || c > 400) && (u > c ? (h = 500, m = 500 * c / u) : (h = 400 * u / c, m = 400)), (0, n.jsx)("iframe", {
+  } = r, h = d, m = c;
+  return (d > 500 || c > 400) && (d > c ? (h = 500, m = 500 * c / d) : (h = 400 * d / c, m = 400)), (0, n.jsx)("iframe", {
     className: i()(a.embedAmazonMusic, l),
     src: o,
     style: {

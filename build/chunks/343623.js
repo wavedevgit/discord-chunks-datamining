@@ -75,22 +75,22 @@ var c = r(105500),
     return t.concat(i.reverse())
   },
   E = function(t, e) {
-    var r = t.blocks.find(function(t) {
+    var r, a = t.blocks.find(function(t) {
         return Array.isArray(t.children) && t.children.length > 0
       }),
-      a = v && !r ? s.fromRawStateToRawTreeState(t).blocks : t.blocks;
-    return v ? a.map(x).reduce(function(t, r, i) {
+      u = v && !a ? s.fromRawStateToRawTreeState(t).blocks : t.blocks;
+    return v ? u.map(x).reduce(function(t, r, i) {
       Array.isArray(r.children) || y(!1);
-      var u = r.children.map(x),
+      var a = r.children.map(x),
         s = new o(n({}, S(r, e), {
-          prevSibling: 0 === i ? null : a[i - 1].key,
-          nextSibling: i === a.length - 1 ? null : a[i + 1].key,
-          children: m(u.map(function(t) {
+          prevSibling: 0 === i ? null : u[i - 1].key,
+          nextSibling: i === u.length - 1 ? null : u[i + 1].key,
+          children: m(a.map(function(t) {
             return t.key
           }))
         }));
       t = t.set(s.getKey(), s);
-      for (var c = k([], u, s); c.length > 0;) {
+      for (var c = k([], a, s); c.length > 0;) {
         var l = c.pop(),
           f = l.parentRef,
           p = f.getChildKeys(),
@@ -112,10 +112,10 @@ var c = r(105500),
         t = t.set(v.getKey(), v), c = k(c, g, v)
       }
       return t
-    }, b()) : b((r ? s.fromRawTreeStateToRawState(t).blocks : a).map(function(t) {
+    }, b()) : (r = a ? s.fromRawTreeStateToRawState(t).blocks : u, b(r.map(function(t) {
       var r = new i(S(t, e));
       return [r.getKey(), r]
-    }))
+    })))
   },
   C = function(t) {
     var e = t.entityMap,

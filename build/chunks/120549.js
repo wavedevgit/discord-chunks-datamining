@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   V: () => _,
   Z: () => f
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(678694),
   p = n(216780),
   m = n(388032),
-  h = n(458294);
+  h = n(129826);
 
 function g(e) {
   let {
@@ -51,14 +51,14 @@ function f(e) {
     selectedCategoryId: i
   } = e, l = (0, o.e7)([u.Z], () => u.Z.getCategories()), s = a.useMemo(() => [(0, p.KQ)(), ...l.filter(e => {
     var n;
-    return (null !== (n = t[e.id]) && void 0 !== n ? n : 0) !== 0
+    return (null != (n = t[e.id]) ? n : 0) !== 0
   })], [l, t]);
   return 0 === s.length ? null : (0, r.jsx)("div", {
     className: h.categories,
     children: s.map(e => {
       var a;
       let l = e.id,
-        o = null !== (a = t[l]) && void 0 !== a ? a : 0;
+        o = null != (a = t[l]) ? a : 0;
       return (0, r.jsx)(g, {
         category: e,
         count: o,
@@ -77,7 +77,7 @@ function _(e) {
     selectedCategoryId: l
   } = e, d = (0, o.e7)([u.Z], () => u.Z.getCategories()), g = a.useMemo(() => [(0, p.KQ)(), ...d.filter(e => {
     var t;
-    return (null !== (t = n[e.id]) && void 0 !== t ? t : 0) !== 0
+    return (null != (t = n[e.id]) ? t : 0) !== 0
   })], [d, n]), f = a.useMemo(() => g.map(e => ({
     id: "".concat(e.id),
     label: (0, r.jsx)(c.iG, {
@@ -96,7 +96,7 @@ function _(e) {
       children: m.NW.string(m.t.f09BQE)
     }), (0, r.jsx)(c.ZP, {
       items: f,
-      title: null !== (t = null == b ? void 0 : b.name) && void 0 !== t ? t : "",
+      title: null != (t = null == b ? void 0 : b.name) ? t : "",
       onSelect: _,
       selected: "".concat(l),
       "aria-label": m.NW.string(m.t.WHdCwc),

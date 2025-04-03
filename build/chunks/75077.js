@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Dp: () => p,
   Gw: () => f,
@@ -13,8 +13,8 @@ var r = n(278074),
   i = n(442837),
   s = n(780384),
   a = n(594174),
-  o = n(78839),
-  l = n(74538),
+  l = n(78839),
+  o = n(74538),
   c = n(781320),
   d = n(391110),
   u = n(474936),
@@ -80,12 +80,12 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
         card: n
       } = e;
       t.length < s && t.push(n)
-    }, o = () => {
+    }, l = () => {
       a({
         card: n.specialShopPerks
       })
     }, {
-      enabled: l
+      enabled: o
     } = c.G.getCurrentConfig({
       location: "getWhatsNewRow"
     }, {
@@ -97,9 +97,9 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.tenureBadge
     }), null != n.tenureRewardCollectible && !0 === i && a({
       card: n.tenureRewardCollectible
-    }), l && a({
+    }), o && a({
       card: n.permadecos
-    }), r && d ? (0 === t.length && o(), a({
+    }), r && d ? (0 === t.length && l(), a({
       card: n.newAppStylesUpdateJune2024
     }), a({
       card: n.serverProfiles
@@ -111,7 +111,7 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.serverProfiles
     })), a({
       card: n.earlyAccess
-    }), o(), a({
+    }), l(), a({
       card: n.unlimitedSuperReactions
     }), t
   },
@@ -122,14 +122,14 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
       isFullScreen: i,
       showTenureCard: s,
       isPremiumSubscriber: a,
-      fractionalState: o,
-      isInReverseTrial: l
+      fractionalState: l,
+      isInReverseTrial: o
     } = e, c = [];
     switch (n) {
       case d.R0.PERKS_DISCOVERABILITY:
         c = (0, r.EQ)({
           isPremiumSubscriber: a,
-          fractionalState: o
+          fractionalState: l
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.profiles, t.moreEmojiPower, t.largeUploads, t.hdVideo, t.clientThemes, t.customAppIcons]).with({
@@ -154,26 +154,26 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
       case d.R0.CARD_CAROUSEL_SECOND_ROW:
         c = (0, r.EQ)({
           isPremiumSubscriber: a,
-          fractionalState: o
+          fractionalState: l
         }).with({
           isPremiumSubscriber: !1
         }, () => [t.customSoundsEverywhere, t.specialStickerAccess]).with({
           fractionalState: u.a$.FP_ONLY
-        }, () => l ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]).otherwise(() => [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]);
+        }, () => o ? [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions] : [t.greyServerBoosts, t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]).otherwise(() => [t.earlyAccessSeeAllVariant, t.specialMemberPricingSeeAllVariant, t.largeUploads, t.hdVideo, t.superReactions]);
         break;
       case d.R0.CARD_CAROUSEL_THIRD_ROW:
         c = (0, r.EQ)({
-          fractionalState: o
+          fractionalState: l
         }).with({
           fractionalState: u.a$.FP_ONLY
-        }, () => l ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge]).otherwise(() => [t.entranceSoundsSeeAllVariation, t.badge])
+        }, () => o ? [t.entranceSoundsSeeAllVariation] : [t.entranceSoundsSeeAllVariation, t.greyBadge]).otherwise(() => [t.entranceSoundsSeeAllVariation, t.badge])
     }
     return i || (c = c.filter(e => !e.hideOnNarrowScreen)), c
   },
   E = e => {
-    let t = (0, i.e7)([o.ZP], () => o.ZP.getPremiumTypeSubscription()),
-      n = null != t ? l.ZP.getPremiumPlanItem(t) : null,
-      r = (null != n ? l.ZP.getSkuIdForPlan(n.planId) : null) === u.Si.TIER_2;
+    let t = (0, i.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
+      n = null != t ? o.ZP.getPremiumPlanItem(t) : null,
+      r = (null != n ? o.ZP.getSkuIdForPlan(n.planId) : null) === u.Si.TIER_2;
     return e ? r ? {
       title: g.NW.string(g.t.Aw5DRk),
       subtitle: g.NW.string(g.t.aHdO6u)
@@ -187,9 +187,9 @@ let N = (e, t, n) => (0, s.wj)(e) ? t : n,
   },
   j = () => {
     let e = (0, i.e7)([a.default], () => a.default.getCurrentUser());
-    return (0, l.I5)(e)
+    return (0, o.I5)(e)
   },
   O = () => {
     let e = a.default.getCurrentUser();
-    return (0, l.M5)(e, u.p9.TIER_2)
+    return (0, o.M5)(e, u.p9.TIER_2)
   }

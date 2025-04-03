@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => C
@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(434404),
   h = n(185923),
   f = n(388032),
-  b = n(806794),
-  x = n(47882);
+  b = n(186667),
+  x = n(381109);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ let N = {
   label: ""
 };
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     trait: n,
@@ -57,13 +57,13 @@ function v(e) {
     p(t, s, {
       emoji: null != n ? n : void 0
     }), r && e()
-  }, [t, s, p]), v = i.useMemo(() => {
+  }, [t, s, p]), _ = i.useMemo(() => {
     let e = n.emoji,
       t = null == e || null == e.name ? null : () => {
         var t;
         let n = g.ZP.isCustomEmoji(e) ? e.name : e.surrogates;
         return (0, r.jsx)(o.Z, {
-          animated: null !== (t = e.animated) && void 0 !== t && t,
+          animated: null != (t = e.animated) && t,
           emojiId: e.id,
           emojiName: n
         })
@@ -112,7 +112,7 @@ function v(e) {
         }
       })
     })
-  }, [n.emoji, f, x, N]), [_, C] = i.useState(!1), O = i.useCallback(() => C(!0), []), y = i.useCallback(() => C(!1), []), I = i.useCallback(e => {
+  }, [n.emoji, f, x, N]), [v, C] = i.useState(!1), O = i.useCallback(() => C(!0), []), y = i.useCallback(() => C(!1), []), I = i.useCallback(e => {
     p(t, s, {
       label: e
     })
@@ -123,16 +123,16 @@ function v(e) {
     value: n.label,
     onChange: I,
     maxLength: 24,
-    prefixElement: v,
+    prefixElement: _,
     className: a()(b.traitContainer, {
-      [b.traitContainerFocused]: _
+      [b.traitContainerFocused]: v
     }),
     inputClassName: b.traitInput,
     onFocus: O,
     onBlur: y
   })
 }
-let _ = [0, 1, 2, 3, 4];
+let v = [0, 1, 2, 3, 4];
 
 function C(e) {
   let {
@@ -156,11 +156,11 @@ function C(e) {
       })]
     }), (0, r.jsx)("div", {
       className: b.grid,
-      children: _.map(e => {
+      children: v.map(e => {
         var i;
-        return (0, r.jsx)(v, {
+        return (0, r.jsx)(_, {
           guildId: t.id,
-          trait: null !== (i = s[e]) && void 0 !== i ? i : N,
+          trait: null != (i = s[e]) ? i : N,
           index: e,
           onTraitUpdate: a,
           disabled: !n

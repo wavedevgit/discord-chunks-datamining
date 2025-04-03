@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => f
 }), n(230036), n(978209);
 var r = n(544891),
   i = n(710845),
   a = n(569471),
-  o = n(346479),
-  l = n(592125),
+  l = n(346479),
+  o = n(592125),
   s = n(375954),
   c = n(306680),
   u = n(594174),
@@ -23,8 +23,8 @@ async function f(e, t) {
   i.forAll(e => {
     d.default.compare(e.id, h) > 0 && (0, c.Ex)(e, n) && g++
   });
-  let _ = l.Z.getChannel(e);
-  null != _ && _.isThread() && (_.isArchivedThread() && await o.Z.unarchiveThread(_, !1), a.Z.hasJoined(e) || await o.Z.joinThread(_, "Mark Unread")), m.log("Marking unread", {
+  let _ = o.Z.getChannel(e);
+  null != _ && _.isThread() && (_.isArchivedThread() && await l.Z.unarchiveThread(_, !1), a.Z.hasJoined(e) || await l.Z.joinThread(_, "Mark Unread")), m.log("Marking unread", {
     channelId: e,
     messageId: t
   }), r.tn.post({

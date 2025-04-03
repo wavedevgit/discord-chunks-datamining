@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(990547),
+  a = n.n(l),
+  o = n(990547),
   s = n(442837),
   c = n(481060),
   u = n(607070),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(374939),
   O = n(233374),
   N = n(611928),
-  v = n(763433),
-  y = n(283293),
-  I = n(822857),
+  y = n(763433),
+  I = n(283293),
+  v = n(822857),
   C = n(775451),
   S = n(63063),
   T = n(113434),
@@ -38,7 +38,7 @@ var r = n(200651),
   D = n(981631),
   k = n(215023),
   M = n(388032),
-  U = n(783505),
+  U = n(87671),
   G = n(13299),
   W = n(843385);
 
@@ -55,14 +55,14 @@ function B() {
     n = i.useRef(null);
   return (i.useEffect(() => {
     var e, r, i, l;
-    null != n && (!t || (null === (e = n.current) || void 0 === e ? void 0 : e.paused) ? !t && (null === (r = n.current) || void 0 === r ? void 0 : r.paused) && (null === (l = n.current) || void 0 === l || l.play()) : null === (i = n.current) || void 0 === i || i.pause())
+    null != n && (!t || (null == (e = n.current) ? void 0 : e.paused) ? !t && (null == (r = n.current) ? void 0 : r.paused) && (null == (l = n.current) || l.play()) : null == (i = n.current) || i.pause())
   }, [t]), e) ? (0, r.jsx)(g.Z, {
     ref: n,
     autoPlay: !t,
     loop: !0,
     muted: !0,
     playsInline: !0,
-    className: o()(U.bannerAsset, U.orbsBannerAsset),
+    className: a()(U.bannerAsset, U.orbsBannerAsset),
     controls: !1,
     children: (0, r.jsx)("source", {
       src: W.Z,
@@ -70,7 +70,7 @@ function B() {
     })
   }) : (0, r.jsx)("img", {
     src: G.ZP,
-    className: o()(U.bannerAsset, U.oversizedImg),
+    className: a()(U.bannerAsset, U.oversizedImg),
     alt: ""
   })
 }
@@ -92,8 +92,8 @@ let H = function() {
       current: t
     } = P;
     (0, p.h)({
-      name: a.ImpressionNames.QUEST_HOME,
-      type: a.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.QUEST_HOME,
+      type: o.ImpressionTypes.VIEW,
       properties: {
         utm_source_current: t.utmSourceCurrent,
         utm_medium_current: t.utmMediumCurrent,
@@ -105,13 +105,10 @@ let H = function() {
   }, [e]);
   let {
     enabled: A
-  } = (0, I.W)({
+  } = (0, v.W)({
     location: R.dr.QUEST_HOME_DESKTOP
   }), G = V(), W = i.useCallback(() => {
-    if (G) {
-      window.open(S.Z.getArticleURL(D.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
-      return
-    }
+    if (G) return void window.open(S.Z.getArticleURL(D.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
     window.open(S.Z.getArticleURL(D.BhN.QUESTS_LEARN_MORE))
   }, [G]);
   (0, f.Tt)({
@@ -121,9 +118,9 @@ let H = function() {
     F = G ? M.NW.format(M.t.U9FY0N, {}) : M.NW.string(M.t.oWCrBg);
   return (0, r.jsx)("div", {
     className: U.container,
-    children: A ? (0, r.jsxs)(y.Z, {
+    children: A ? (0, r.jsxs)(I.Z, {
       onScroll: l,
-      children: [(0, r.jsx)(v.a, {
+      children: [(0, r.jsx)(y.a, {
         selectedTabId: e,
         handleTransition: t,
         tabs: n,
@@ -147,11 +144,11 @@ let H = function() {
           text: M.NW.string(M.t.hvVgAQ),
           onClick: W
         }),
-        className: o()(U.bannerContainer, {
+        className: a()(U.bannerContainer, {
           [U.orbsContainer]: G
         }),
         children: [(0, r.jsx)("div", {
-          className: o()(U.bannerGradient, {
+          className: a()(U.bannerGradient, {
             [U.orbsGradient]: G
           })
         }), (0, r.jsx)(B, {})]
@@ -170,7 +167,7 @@ let H = function() {
         }), (0, r.jsx)(N.aV, {
           icon: c.qDn
         })]
-      }), (0, r.jsxs)(y.Z, {
+      }), (0, r.jsxs)(I.Z, {
         onScroll: l,
         children: [(0, r.jsxs)(_.Z, {
           title: H,
@@ -179,11 +176,11 @@ let H = function() {
             text: M.NW.string(M.t.hvVgAQ),
             onClick: W
           }),
-          className: o()(U.bannerContainer, {
+          className: a()(U.bannerContainer, {
             [U.orbsContainer]: G
           }),
           children: [(0, r.jsx)("div", {
-            className: o()(U.bannerGradient, {
+            className: a()(U.bannerGradient, {
               [U.orbsGradient]: G
             })
           }), (0, r.jsx)(B, {})]

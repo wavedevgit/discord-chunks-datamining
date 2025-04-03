@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => g
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(512722),
   a = n.n(i),
-  o = n(399606),
-  l = n(481060),
+  l = n(399606),
+  o = n(481060),
   s = n(607070),
   c = n(430824),
   u = n(506071),
@@ -22,12 +22,12 @@ function g(e) {
     guildId: t,
     guildProductListingId: n,
     sourceAnalyticsLocations: i
-  } = e, g = (0, o.e7)([p.Z], () => p.Z.getGuildProduct(n)), _ = (0, o.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), v = (0, u.n)();
-  return (a()(null != _, "guild cannot be null"), a()(null != g, "guildProductListing cannot be null"), (0, d.SO)(_)) ? (0, r.jsx)(l.ua7, {
+  } = e, g = (0, l.e7)([p.Z], () => p.Z.getGuildProduct(n)), _ = (0, l.e7)([c.Z], () => c.Z.getGuild(t), [t]), b = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), x = (0, u.n)();
+  return (a()(null != _, "guild cannot be null"), a()(null != g, "guildProductListing cannot be null"), (0, d.SO)(_)) ? (0, r.jsx)(o.ua7, {
     text: h.NW.string(h.t.sAJr9f),
     children: e => {
       var t, n;
-      return (0, r.jsx)(l.zxk, (t = function(e) {
+      return (0, r.jsx)(o.zxk, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -45,7 +45,7 @@ function g(e) {
         }
         return e
       }({}, e), n = n = {
-        color: l.zxk.Colors.BRAND,
+        color: o.zxk.Colors.BRAND,
         disabled: !0,
         children: h.NW.string(h.t.xUi3BA)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -62,13 +62,13 @@ function g(e) {
   }) : g.has_entitlement ? null != g.attachments ? (0, r.jsx)(f.Z, {
     guildId: _.id,
     productId: g.id
-  }) : (0, r.jsx)(l.zxk, {
-    color: l.zxk.Colors.PRIMARY,
+  }) : (0, r.jsx)(o.zxk, {
+    color: o.zxk.Colors.PRIMARY,
     disabled: !0,
     children: h.NW.string(h.t.RcTOGB)
-  }) : (0, r.jsx)(l.gtL, {
-    shineSize: l.gtL.ShineSizes.SMALL,
-    pauseAnimation: b || !v,
+  }) : (0, r.jsx)(o.gtL, {
+    shineSize: o.gtL.ShineSizes.SMALL,
+    pauseAnimation: b || !x,
     onClick: () => (0, m.z)({
       guildProductListing: g,
       guildId: _.id,

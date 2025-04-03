@@ -23,6 +23,6 @@ function u(e) {
   }, [l, s, u.emoji], a());
   return {
     reactors: m,
-    hasMore: (null !== (n = null === (t = u.count_details) || void 0 === t ? void 0 : t.vote) && void 0 !== n ? n : 0) > m.length
+    hasMore: (null != (n = null == (t = u.count_details) ? void 0 : t.vote) ? n : 0) > m.length
   }
 }

@@ -1,12 +1,12 @@
 /** Chunk was on 35755 **/
 n.d(t, {
   gc: () => l,
-  hH: () => a,
-  uX: () => o
+  hH: () => o,
+  uX: () => a
 });
 var i, r = n(192379),
   l = ((i = {}).HOME = "home", i.LIST = "list", i.APPLICATION = "application", i);
-let o = r.createContext({
+let a = r.createContext({
   history: [],
   discard: {},
   currentView: void 0,
@@ -17,6 +17,6 @@ let o = r.createContext({
   setSlideReady: () => {}
 });
 
-function a() {
-  return r.useContext(o)
+function o() {
+  return r.useContext(a)
 }

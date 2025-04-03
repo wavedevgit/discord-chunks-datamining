@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => j
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(608787),
   s = n(793030),
   a = n(442837),
-  o = n(481060),
-  l = n(607070),
+  l = n(481060),
+  o = n(607070),
   c = n(522474),
   d = n(788983),
   u = n(668826),
@@ -15,9 +15,9 @@ var r = n(200651),
   g = n(324815),
   p = n(763283),
   h = n(981631),
-  f = n(884479),
+  f = n(622802),
   b = n(388032),
-  N = n(538755),
+  N = n(753514),
   x = n(450890),
   _ = n(145133);
 let E = (0, i.Un)({
@@ -38,7 +38,7 @@ function j() {
       })
     },
     j = () => {
-      l.Z.useReducedMotion ? (0, o.ZDy)(async () => {
+      o.Z.useReducedMotion ? (0, l.ZDy)(async () => {
         let {
           ConfirmModal: e
         } = await Promise.resolve().then(n.bind(n, 481060));
@@ -66,7 +66,7 @@ function j() {
             confirmText: b.NW.string(f.Z.vLz9lJ),
             cancelText: b.NW.string(f.Z["+Mgv5O"]),
             onConfirm: i,
-            confirmButtonColor: o.zxk.Colors.GREEN,
+            confirmButtonColor: l.zxk.Colors.GREEN,
             children: (0, r.jsx)(s.xv, {
               variant: "text-md/normal",
               children: b.NW.string(f.Z["v6v/BQ"])

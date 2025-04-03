@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(481060),
-  l = n(540059),
+  l = n(481060),
+  o = n(540059),
   s = n(317632),
   c = n(602478),
   u = n(665149),
@@ -17,21 +17,21 @@ var r = n(200651),
   h = n(222940),
   g = n(490897),
   _ = n(388032),
-  b = n(498539);
+  b = n(264634);
 
-function v(e) {
+function x(e) {
   let {
     onOpen: t,
     onClose: n,
-    className: v,
-    "data-jump-section": x
-  } = e, y = i.useRef(null), E = (0, a.e7)([m.default], () => m.default.getCurrentUser()), O = (0, l.Q3)("RecentsButton"), N = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
+    className: x,
+    "data-jump-section": y
+  } = e, E = i.useRef(null), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), N = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: C
   } = c.Z.useExperiment({
     location: "RecentsButton"
   }, {
     autoTrackExposure: !1
-  }), I = (0, a.e7)([s.Z], () => C && s.Z.getUnseenInviteCount() > 0), S = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE);
+  }), I = (0, a.e7)([s.Z], () => C && s.Z.getUnseenInviteCount() > 0), S = (0, l.dQu)(l.TVs.modules.chat.INPUT_ICON_SIZE);
   return (0, r.jsx)(f.k, {
     onOpen: t,
     onClose: n,
@@ -41,7 +41,7 @@ function v(e) {
     popoutPosition: "bottom",
     popoutAlign: "right",
     children: (e, t, n, i) => {
-      var a, l;
+      var a, o;
       return (0, r.jsxs)("div", {
         ref: N,
         className: b.recentsIcon,
@@ -50,7 +50,7 @@ function v(e) {
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
-          targetElementRef: y,
+          targetElementRef: E,
           children: (0, r.jsx)(u.JO, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -68,26 +68,26 @@ function v(e) {
               })
             }
             return e
-          }({}, n), l = l = {
-            ref: y,
-            className: v,
+          }({}, n), o = o = {
+            ref: E,
+            className: x,
             onClick: e,
-            icon: o.xx7,
+            icon: l.xx7,
             iconSize: O ? S : void 0,
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,
             showBadge: j || I || i,
-            "data-jump-section": x
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+            "data-jump-section": y
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(o, e))
           }), a))
         })]
       })

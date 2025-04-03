@@ -13,7 +13,7 @@ var a = n(200651),
   u = n(511540),
   f = n(828878),
   p = n(388032),
-  h = n(831641);
+  h = n(949463);
 
 function x(e) {
   let {
@@ -24,13 +24,13 @@ function x(e) {
       user_code: e
     } = i.parse(window.location.search);
     return n && null != e ? e : ""
-  }), m = (0, s.TH)(), v = r.useCallback(() => {
+  }), m = (0, s.TH)(), b = r.useCallback(() => {
     (0, d.c$)(m)
   }, [m]), {
-    manualSubmit: b,
+    manualSubmit: v,
     error: C,
     submitting: _
-  } = (0, u.c)(o, t, v);
+  } = (0, u.c)(o, t, b);
   return (0, a.jsxs)("div", {
     className: h.content,
     children: [(0, a.jsxs)("div", {
@@ -62,7 +62,7 @@ function x(e) {
     }), (0, a.jsx)(c.zxk, {
       fullWidth: !0,
       color: c.zxk.Colors.BRAND,
-      onClick: b,
+      onClick: v,
       submitting: _,
       disabled: o.length !== f.A.USER_CODE_LENGTH,
       children: (0, a.jsx)(c.Text, {

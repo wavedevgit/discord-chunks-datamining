@@ -1,0 +1,98 @@
+/**
+  Module ID: 14126
+  Original File Name: 858bb42fa4408d24
+**/
+.confirmModal__1b38b {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px
+}
+
+.discordTag__1b38b {
+    display: inline-grid;
+    grid-auto-flow: column
+}
+
+.avatarIcon__1b38b {
+    margin-right: 3px
+}
+
+.username__1b38b {
+    display: flex;
+    color: var(--header-primary)
+}
+
+.discriminator__1b38b {
+    color: var(--header-secondary)
+}
+
+.fromToWrapper__1b38b {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: no-repeat 50% 0
+}
+
+.from__1b38b,.to__1b38b {
+    border-radius: 50%
+}
+
+.from__1b38b {
+    margin-right: -27px;
+    opacity: .3
+}
+
+.to__1b38b {
+    position: relative;
+    z-index: 1
+}
+
+@keyframes outgoing-call-pulse__3751b {
+    0% {
+        opacity: .2
+    }
+
+    50% {
+        opacity: .9
+    }
+
+    to {
+        opacity: .2
+    }
+}
+
+.menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
+    color: var(--white)
+}
+
+.label__3751b,.subtext__3751b {
+    display: flex;
+    align-items: center;
+    gap: 4px
+}
+
+.ringing__3751b {
+    opacity: .3;
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite
+}
+
+.channelName__3751b {
+    color: var(--text-secondary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+    color: var(--header-primary)
+}
+
+.videoPaused_afb275 {
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+/*# sourceMappingURL=858bb42fa4408d24.css.map*/

@@ -48,7 +48,7 @@ async function S(e) {
       contextKey: m,
       onComplete: t => {
         var n;
-        e(null !== (n = null == t ? void 0 : t.entitlements) && void 0 !== n ? n : [])
+        e(null != (n = null == t ? void 0 : t.entitlements) ? n : [])
       },
       onClose: e => {
         e || t()

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -16,8 +16,8 @@ var r = n(200651),
   g = n(18100),
   p = n(308083),
   h = n(388032),
-  f = n(808460),
-  b = n(128662);
+  f = n(203514),
+  b = n(130116);
 let x = e => {
   let {
     guildId: t,
@@ -26,7 +26,7 @@ let x = e => {
     error: x
   } = e, {
     interests: j
-  } = s, [N, v] = i.useState(""), [_, C] = i.useState(0), O = (0, c.e7)([d.default], () => d.default.getId()), y = i.useMemo(() => (0, l.chunk)((0, u.XV)(p.i6, O), 9), [O]), I = [...y[_], ...y[(_ + 1) % y.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !p.WZ.has(e) && !p.gh.has(e)), [E]), T = e => {
+  } = s, [N, _] = i.useState(""), [v, C] = i.useState(0), O = (0, c.e7)([d.default], () => d.default.getId()), y = i.useMemo(() => (0, l.chunk)((0, u.XV)(p.i6, O), 9), [O]), I = [...y[v], ...y[(v + 1) % y.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !p.WZ.has(e) && !p.gh.has(e)), [E]), T = e => {
     let t = new Set(j);
     t.delete(e), n({
       interests: t
@@ -38,7 +38,7 @@ let x = e => {
     let r = new Set(j);
     r.add(t), n({
       interests: r
-    }), v("")
+    }), _("")
   }, [n, N, j]), w = i.useCallback(e => {
     switch (e.key) {
       case "Enter":
@@ -80,7 +80,7 @@ let x = e => {
             inputClassName: b.input,
             value: N,
             onKeyDown: w,
-            onChange: v,
+            onChange: _,
             placeholder: h.NW.string(h.t.axCpsL),
             maxLength: p.Sq,
             disabled: j.size === p.c4

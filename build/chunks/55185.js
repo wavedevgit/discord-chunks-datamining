@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   I: () => A,
   N: () => T
 }), n(47120);
 var r, i = n(200651),
-  o = n(192379),
-  l = n(793030),
+  l = n(192379),
+  o = n(793030),
   a = n(442837),
   s = n(381499),
   c = n(481060),
@@ -17,9 +17,9 @@ var r, i = n(200651),
   g = n(885110),
   m = n(63063),
   b = n(981631),
-  v = n(67560),
-  y = n(388032),
-  _ = n(532153),
+  y = n(676654),
+  _ = n(388032),
+  v = n(22275),
   O = n(204794);
 async function j(e) {
   await f.hW.updateAsync("status", t => {
@@ -35,22 +35,22 @@ function x(e) {
     shouldShowStatus: n = !1
   } = e, r = (0, a.e7)([g.Z], () => g.Z.getStatus());
   return (0, i.jsxs)("div", {
-    className: _.toggleContainer,
+    className: v.toggleContainer,
     children: [(0, i.jsxs)("div", {
-      className: _.toggleContainerText,
+      className: v.toggleContainerText,
       children: [(0, i.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
-        children: y.NW.string(y.t.KY0ilp)
+        children: _.NW.string(_.t.KY0ilp)
       }), n && (0, i.jsxs)("div", {
-        className: _.toggleContainerOnlineRow,
+        className: v.toggleContainerOnlineRow,
         children: [(0, i.jsx)(c.qbd, {
           status: c.Skl.ONLINE,
           size: 8
         }), (0, i.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: r === c.Skl.INVISIBLE ? y.NW.string(v.Z.a3AofX) : y.NW.string(y.t.WbGtnJ)
+          children: r === c.Skl.INVISIBLE ? _.NW.string(y.Z.a3AofX) : _.NW.string(_.t.WbGtnJ)
         })]
       })]
     }), (0, i.jsx)(c.rsf, {
@@ -66,18 +66,18 @@ function C(e) {
   let {
     children: t,
     closePopout: n
-  } = e, r = (0, o.useRef)(null);
+  } = e, r = (0, l.useRef)(null);
   return (0, c.Tbt)(r), (0, i.jsxs)("div", {
-    className: _.wrapper,
+    className: v.wrapper,
     ref: r,
     children: [null != n && (0, i.jsx)("div", {
-      className: _.gradient
+      className: v.gradient
     }), (0, i.jsxs)("div", {
-      className: _.content,
+      className: v.content,
       children: [null != n && (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(c.zxk, {
-          className: _.closeButton,
-          "aria-label": y.NW.string(y.t.cpT0Cg),
+          className: v.closeButton,
+          "aria-label": _.NW.string(_.t.cpT0Cg),
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.NONE,
           onClick: n,
@@ -88,12 +88,12 @@ function C(e) {
         }), (0, i.jsx)("img", {
           alt: "",
           src: O.Z,
-          className: _.controllerImage
-        }), (0, i.jsx)(l.X6, {
+          className: v.controllerImage
+        }), (0, i.jsx)(o.X6, {
           variant: "heading-md/bold",
           color: "header-primary",
-          className: _.nuxTitle,
-          children: y.NW.string(y.t.PRjSRk)
+          className: v.nuxTitle,
+          children: _.NW.string(_.t.PRjSRk)
         })]
       }), t]
     })]
@@ -111,8 +111,8 @@ function S(e) {
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
-      children: y.NW.format(y.t.nEgjjo, {
+      className: v.nuxContent,
+      children: _.NW.format(_.t.nEgjjo, {
         onClickSettings: () => {
           t(), u.Z.open(b.oAB.ACTIVITY_PRIVACY, null, {
             analyticsLocations: n
@@ -120,7 +120,7 @@ function S(e) {
         }
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(x, {
         showCurrentGame: r
       })
@@ -135,15 +135,15 @@ function P(e) {
     analyticsLocations: n
   } = (0, p.ZP)(d.Z.SHARING_CONTROLS_COACHMARK), r = h.G6.useSetting();
   return (0, i.jsxs)(C, {
-    children: [(0, i.jsx)(l.X6, {
+    children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: _.controlTitle,
-      children: y.NW.string(y.t["6x5uWV"])
+      className: v.controlTitle,
+      children: _.NW.string(_.t["6x5uWV"])
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: y.NW.format(y.t.nEgjjo, {
+      children: _.NW.format(_.t.nEgjjo, {
         onClickSettings: () => {
           t(), u.Z.open(b.oAB.ACTIVITY_PRIVACY, null, {
             analyticsLocations: n
@@ -151,7 +151,7 @@ function P(e) {
         }
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(x, {
         showCurrentGame: r
       })
@@ -168,12 +168,12 @@ function I(e) {
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
-      children: y.NW.format(y.t.fF2TbW, {
+      className: v.nuxContent,
+      children: _.NW.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(x, {
         showCurrentGame: n
       })
@@ -190,12 +190,12 @@ function N(e) {
     children: [(0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      className: _.nuxContent,
-      children: y.NW.format(y.t.fF2TbW, {
+      className: v.nuxContent,
+      children: _.NW.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)("div", {
-      className: _.toggleContainerWrapper,
+      className: v.toggleContainerWrapper,
       children: (0, i.jsx)(x, {
         showCurrentGame: n,
         shouldShowStatus: !0
@@ -210,11 +210,11 @@ function Z() {
     children: [(0, i.jsx)(x, {
       showCurrentGame: e
     }), (0, i.jsx)(c.$i$, {
-      className: _.divider
+      className: v.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: y.NW.format(y.t.fF2TbW, {
+      children: _.NW.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })]
@@ -226,19 +226,19 @@ function w(e) {
     closePopout: t
   } = e;
   return (0, i.jsxs)(C, {
-    children: [(0, i.jsx)(l.X6, {
+    children: [(0, i.jsx)(o.X6, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      className: _.controlTitle,
-      children: y.NW.string(v.Z.qKDqen)
+      className: v.controlTitle,
+      children: _.NW.string(y.Z.qKDqen)
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: y.NW.format(y.t.fF2TbW, {
+      children: _.NW.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     }), (0, i.jsx)(c.zxk, {
-      className: _.goOnlineButton,
+      className: v.goOnlineButton,
       look: c.zxk.Looks.FILLED,
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
@@ -246,7 +246,7 @@ function w(e) {
         t(), j(c.Skl.ONLINE)
       },
       fullWidth: !0,
-      children: y.NW.string(v.Z.Poezn5)
+      children: _.NW.string(y.Z.Poezn5)
     })]
   })
 }
@@ -258,11 +258,11 @@ function E() {
       showCurrentGame: e,
       shouldShowStatus: !0
     }), (0, i.jsx)(c.$i$, {
-      className: _.divider
+      className: v.divider
     }), (0, i.jsx)(c.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: y.NW.format(y.t.fF2TbW, {
+      children: _.NW.format(_.t.fF2TbW, {
         helpDeskUrl: m.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })]
@@ -275,10 +275,10 @@ function A(e) {
     popoutState: t,
     closePopout: n,
     onOpen: r
-  } = e, [l] = (0, o.useState)(t);
-  switch ((0, o.useEffect)(() => {
+  } = e, [o] = (0, l.useState)(t);
+  switch ((0, l.useEffect)(() => {
       r()
-    }, [r]), l) {
+    }, [r]), o) {
     case 0:
       return (0, i.jsx)(S, {
         closePopout: n

@@ -25,7 +25,7 @@ var l = n(200651),
   _ = n(709054),
   v = n(981631),
   y = n(388032),
-  S = n(838870);
+  S = n(455864);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -185,7 +185,7 @@ class O extends r.PureComponent {
       guildToFollow: t,
       channelNameToFollow: n,
       channel: r
-    } = this.props, s = null !== (e = (0, u.KS)(r)) && void 0 !== e ? e : o.MqZ;
+    } = this.props, s = null != (e = (0, u.KS)(r)) ? e : o.MqZ;
     return (0, l.jsxs)(o.xBx, {
       className: S.header,
       children: [(0, l.jsx)(m.Z, {

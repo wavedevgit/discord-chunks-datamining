@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -18,12 +18,12 @@ var i = n(120356),
   p = n(937615),
   h = n(474936),
   f = n(388032),
-  b = n(157635);
+  b = n(67949);
 let x = e => {
   var t;
   let {
     className: n
-  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.ZP], () => u.ZP.getPremiumTypeSubscription()), N = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), v = null !== (t = (0, a.e7)([d.Z], () => null != N ? d.Z.getForSkuAndInterval((0, g.Wz)(h.Si.GUILD), N.interval, N.intervalCount) : void 0)) && void 0 !== t ? t : h.GP[h.Xh.PREMIUM_MONTH_GUILD];
+  } = e, i = (0, a.e7)([c.default], () => c.default.getCurrentUser()), x = (0, a.e7)([o.default], () => o.default.locale), j = (0, a.e7)([u.ZP], () => u.ZP.getPremiumTypeSubscription()), N = (0, a.e7)([d.Z], () => null != j ? d.Z.get(j.planId) : void 0), _ = null != (t = (0, a.e7)([d.Z], () => null != N ? d.Z.getForSkuAndInterval((0, g.Wz)(h.Si.GUILD), N.interval, N.intervalCount) : void 0)) ? t : h.GP[h.Xh.PREMIUM_MONTH_GUILD];
   return (0, r.jsxs)("div", {
     className: s()(b.wrapper, n),
     children: [(0, r.jsx)(l.X6q, {
@@ -63,9 +63,9 @@ let x = e => {
       }({
         currentUser: i,
         locale: x,
-        guildBoostingPlanId: v.id,
-        interval: v.interval,
-        intervalCount: v.intervalCount
+        guildBoostingPlanId: _.id,
+        interval: _.interval,
+        intervalCount: _.intervalCount
       })
     })]
   })

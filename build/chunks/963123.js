@@ -44,7 +44,7 @@ var r = n(200651),
   U = n(981631),
   q = n(217702),
   Y = n(388032),
-  W = n(72482);
+  W = n(844136);
 let Q = new Set([U.IyS.FIVE_G, U.IyS.FOUR_G, U.IyS.UNKNOWN]),
   G = {
     tension: 250,
@@ -149,11 +149,11 @@ function X(e) {
     targetRef: eO
   } = (0, B.Yy)(), [eh, eS] = l.useState(!0 === ei ? R.rq.PLAYING : R.rq.PAUSED), [eC, ej] = l.useState(!1), ey = (0, y.il)(er), [e_, ex] = l.useState(ey.percentComplete), [eN, eD] = l.useState(!1), [eP, eT] = l.useState(!0), [ek, ew] = l.useState(!1), [eA, eI] = l.useState([]), [eL, eR] = l.useState(E.Z.getEffectiveConnectionSpeed()), [eM, eV] = l.useState(0), [eB, eF] = l.useState(0), [eZ, eU] = l.useState(!1), [eq, eY] = l.useState(!1), eW = l.useRef(!0), eQ = l.useRef(null), eG = l.useRef(null), ez = (0, _.km)(e => {
     var t;
-    return null !== (t = e.videoProgress[er.id]) && void 0 !== t ? t : {
+    return null != (t = e.videoProgress[er.id]) ? t : {
       timestampSec: 0,
       duration: 10
     }
-  }, c.X), eH = (0, _.km)(e => e.setVideoProgress), eK = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null === (t = er.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e4, e7] = l.useState(null), [e8, e9] = l.useState(!1), [e3, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null !== (b = null === (n = eJ.current) || void 0 === n ? void 0 : n.duration) && void 0 !== b ? b : 0 : Math.max(ez.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, N.T)({
+  }, c.X), eH = (0, _.km)(e => e.setVideoProgress), eK = (0, _.km)(e => e.muted), eX = (0, _.km)(e => e.volume), e$ = (0, d.e7)([v.Z], () => v.Z.useReducedMotion), eJ = (0, l.useRef)(null), e0 = (0, l.useRef)(null), e1 = l.useRef(!0), e2 = (null == (t = er.userStatus) ? void 0 : t.completedAt) != null, e6 = (0, _.km)(e => e.transcript), [e4, e7] = l.useState(null), [e8, e9] = l.useState(!1), [e3, e5] = l.useState(!1), [te, tt] = l.useState(null), tn = e2 ? null != (b = null == (n = eJ.current) ? void 0 : n.duration) ? b : 0 : Math.max(ez.maxTimestampSec, ey.progressSeconds), tr = l.useMemo(() => (0, N.T)({
     quest: er,
     location: Z.dr.VIDEO_MODAL
   }), [er]), {
@@ -161,10 +161,10 @@ function X(e) {
     subtitle: to
   } = function(e) {
     var t, n, r, l, o, i, a, s;
-    let c = null !== (o = null === (t = e.config.videoMetadata) || void 0 === t ? void 0 : t.messages.videoEndCtaTitle) && void 0 !== o ? o : Y.NW.string(Y.t.iiTtpK),
-      d = null !== (a = null !== (i = null === (n = e.config.videoMetadata) || void 0 === n ? void 0 : n.messages.videoEndCtaButtonLabel) && void 0 !== i ? i : null === (r = e.config.videoMetadata) || void 0 === r ? void 0 : r.messages.videoEndCtaSubtitle) && void 0 !== a ? a : Y.NW.string(Y.t.mxaHf3),
+    let c = null != (o = null == (t = e.config.videoMetadata) ? void 0 : t.messages.videoEndCtaTitle) ? o : Y.NW.string(Y.t.iiTtpK),
+      d = null != (a = null != (i = null == (n = e.config.videoMetadata) ? void 0 : n.messages.videoEndCtaButtonLabel) ? i : null == (r = e.config.videoMetadata) ? void 0 : r.messages.videoEndCtaSubtitle) ? a : Y.NW.string(Y.t.mxaHf3),
       m = (0, y.B2)(e.config),
-      p = null !== (s = null === (l = e.config.videoMetadata) || void 0 === l ? void 0 : l.messages.videoEndCtaSubtitle) && void 0 !== s ? s : Y.NW.string(Y.t.mxaHf3),
+      p = null != (s = null == (l = e.config.videoMetadata) ? void 0 : l.messages.videoEndCtaSubtitle) ? s : Y.NW.string(Y.t.mxaHf3),
       f = e.config.features.includes(u.S.VIDEO_QUEST_FORCE_END_CARD_CTA_SWAP);
     return {
       title: f ? m : c,
@@ -183,7 +183,7 @@ function X(e) {
     let i = l.useRef(!1),
       s = l.useRef(null),
       c = (0, x.z)(e, Z.dr.VIDEO_MODAL),
-      u = null === (o = e.config.videoMetadata) || void 0 === o ? void 0 : o.assets,
+      u = null == (o = e.config.videoMetadata) ? void 0 : o.assets,
       d = l.useMemo(() => null != u ? c && a.ZP.isSupported() && null != u.videoPlayerVideoHls ? T.i.VIDEO_PLAYER_VIDEO_HLS : Q.has(n) || null == u.videoPlayerVideoLowRes ? T.i.VIDEO_PLAYER_VIDEO : T.i.VIDEO_PLAYER_VIDEO_LOW_RES : null, [u, n, c]),
       m = l.useMemo(() => null != d ? (0, T.z)(d, e) : null, [e, d]),
       p = () => {
@@ -224,7 +224,7 @@ function X(e) {
     trackQuestVideoVolumeChanged: tj
   } = (0, F.Z)(er, eJ, tc, el, ta), ty = l.useCallback(() => {
     var e, t;
-    return null !== (t = null === (e = eJ.current) || void 0 === e ? void 0 : e.currentTime) && void 0 !== t ? t : null
+    return null != (t = null == (e = eJ.current) ? void 0 : e.currentTime) ? t : null
   }, []), {
     forceSendCurrentSegment: t_
   } = (0, P.Z)({
@@ -254,7 +254,7 @@ function X(e) {
   }, [ev, eg, eh, tv]);
   let tN = l.useCallback(e => {
     var t;
-    e2 || (null === (t = er.userStatus) || void 0 === t ? void 0 : t.enrolledAt) == null || (tr.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, y.FI)(er, e)), tm()
+    e2 || (null == (t = er.userStatus) ? void 0 : t.enrolledAt) == null || (tr.info("[QV] sendServerProgressUpdate: ".concat(e)), (0, y.FI)(er, e)), tm()
   }, [e2, er, tr, tm]);
   l.useEffect(() => {
     ea !== p.Dvm.HIDDEN && ea !== p.Dvm.EXITING && ea !== p.Dvm.EXITED && (null == ea || !eE || eb || e2) && (!eg || ev || e2) || null == eJ.current || eh !== R.rq.PLAYING || (tr.info("[QV] | Pausing video | playerState: ".concat(eh, ", parentTransitionState: ").concat(ea, ", visible: ").concat(eb, ", focused: ").concat(ev, ", isQuestCompleted: ").concat(e2)), tx(R.rq.PAUSED), e2 || e7(j.yE.LOST_FOCUS))
@@ -265,7 +265,7 @@ function X(e) {
     tk = l.useCallback(() => {
       var e;
       tr.info("[QV] | handleFullScreenExit");
-      let t = (0, h.fn)(null === (e = eJ.current) || void 0 === e ? void 0 : e.parentNode, eJ.current);
+      let t = (0, h.fn)(null == (e = eJ.current) ? void 0 : e.parentNode, eJ.current);
       null == t || (0, h.rB)(t) || (t.removeEventListener(h.NO, tk), ef(!1), tS(!1))
     }, [ef, tr, tS]),
     tw = () => {
@@ -357,7 +357,7 @@ function X(e) {
   l.useEffect(() => {
     var e, t;
     return tW({
-      captionHeightSpring: ed && null != te && null !== (t = null === (e = tq.current) || void 0 === e ? void 0 : e.clientHeight) && void 0 !== t ? t : 0,
+      captionHeightSpring: ed && null != te && null != (t = null == (e = tq.current) ? void 0 : e.clientHeight) ? t : 0,
       immediate: e$
     }), () => {
       tY.stop()
@@ -370,17 +370,15 @@ function X(e) {
   }), [tT, tU, e$, eZ, tZ]);
   let tQ = eh === R.rq.ENDED,
     tG = l.useCallback(e => {
-      if (tg(e, S.jZ.LEARN_MORE), er.id === Z.V6) {
-        window.open(O.Z.getArticleURL(U.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
-        return
-      }(0, y.FE)(er, {
+      if (tg(e, S.jZ.LEARN_MORE), er.id === Z.V6) return void window.open(O.Z.getArticleURL(U.BhN.VIRTUAL_CURRENCY_LEARN_MORE));
+      (0, y.FE)(er, {
         content: e,
         ctaContent: S.jZ.LEARN_MORE
       })
     }, [er, tg]),
     tz = l.useMemo(() => (0, T.z)(T.i.VIDEO_PLAYER_THUMBNAIL, er), [er]),
     tH = l.useMemo(() => (0, T.z)(T.i.VIDEO_PLAYER_CAPTION, er), [er]),
-    tK = e2 || ez.maxTimestampSec >= (null !== (k = null === (o = eJ.current) || void 0 === o ? void 0 : o.currentTime) && void 0 !== k ? k : 0) + 1;
+    tK = e2 || ez.maxTimestampSec >= (null != (k = null == (o = eJ.current) ? void 0 : o.currentTime) ? k : 0) + 1;
   return (0, r.jsx)(p.P3F, {
     className: W.videoCont,
     "data-fullscreen": ep,
@@ -395,9 +393,9 @@ function X(e) {
         location: Z.dr.VIDEO_MODAL
       }) ? (0, r.jsx)(A.Z, {
         quest: er,
-        title: null !== (ee = null === (X = er.config.videoMetadata) || void 0 === X ? void 0 : X.messages.videoEndCtaTitle) && void 0 !== ee ? ee : Y.NW.string(Y.t.Ka526u),
-        subtitle: null !== (et = null === ($ = er.config.videoMetadata) || void 0 === $ ? void 0 : $.messages.videoEndCtaSubtitle) && void 0 !== et ? et : Y.NW.string(Y.t.tKMcAg),
-        ctaBtnLabel: null !== (en = null === (J = er.config.videoMetadata) || void 0 === J ? void 0 : J.messages.videoEndCtaButtonLabel) && void 0 !== en ? en : Y.NW.string(Y.t.iiTtpK),
+        title: null != (ee = null == (X = er.config.videoMetadata) ? void 0 : X.messages.videoEndCtaTitle) ? ee : Y.NW.string(Y.t.Ka526u),
+        subtitle: null != (et = null == ($ = er.config.videoMetadata) ? void 0 : $.messages.videoEndCtaSubtitle) ? et : Y.NW.string(Y.t.tKMcAg),
+        ctaBtnLabel: null != (en = null == (J = er.config.videoMetadata) ? void 0 : J.messages.videoEndCtaButtonLabel) ? en : Y.NW.string(Y.t.iiTtpK),
         onCTAClick: () => tG(j.jn.VIDEO_MODAL_END_CARD)
       }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(H, {
@@ -456,7 +454,7 @@ function X(e) {
           for (let e = 0; e < eJ.current.buffered.length; e++) {
             let n = eJ.current.buffered.start(e),
               r = eJ.current.buffered.end(e);
-            !(r - n < 1) && t.push({
+            r - n < 1 || t.push({
               start: n / eJ.current.duration,
               size: (r - n) / eJ.current.duration
             })
@@ -565,7 +563,7 @@ function X(e) {
           interactionEnabled: e2 && eq,
           backgroundColor: tT ? void 0 : "rgba(0, 0, 0, 0.0)",
           preloadedBuffers: tT ? eA : void 0,
-          duration: null !== (V = null === (m = eJ.current) || void 0 === m ? void 0 : m.duration) && void 0 !== V ? V : 1,
+          duration: null != (V = null == (m = eJ.current) ? void 0 : m.duration) ? V : 1,
           maxSeekableTime: tT && eq ? tn : void 0,
           onClick: e => {
             tI(e), eh === R.rq.ENDED && tx(R.rq.PLAYING)
@@ -611,7 +609,7 @@ function X(e) {
               var e;
               let t = !ep;
               tr.info("[QV] | handleFullScreenButtonClick | shouldBeEnabled: ".concat(t));
-              let n = (0, h.fn)(null === (e = eJ.current) || void 0 === e ? void 0 : e.parentNode, eJ.current);
+              let n = (0, h.fn)(null == (e = eJ.current) ? void 0 : e.parentNode, eJ.current);
               t && null != n ? ((0, h.Dj)(n), n.addEventListener(h.NO, tk), tS(!0)) : t || null == n || (n.removeEventListener(h.NO, tk), tS(!1), (0, h.Pr)(n)), ef(t)
             },
             handleSeekBackBtnClick: tw,

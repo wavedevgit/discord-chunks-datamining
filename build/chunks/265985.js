@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   h: () => x,
   x: () => j
@@ -18,20 +18,20 @@ var i = n(120356),
   f = n(584825),
   p = n(570533),
   g = n(629262),
-  v = n(575460),
-  h = n(293810),
+  h = n(575460),
+  v = n(293810),
   b = n(388032),
-  y = n(81127);
+  y = n(506222);
 let x = e => {
     let {
       onClose: t,
       listing: n,
       step: i,
       guildId: o
-    } = e, s = (0, f.YB)(o), u = (0, c.Z)(h.Xy), m = (() => {
+    } = e, s = (0, f.YB)(o), u = (0, c.Z)(v.Xy), m = (() => {
       var e;
       if (u) return null;
-      let t = (null == s ? void 0 : null === (e = s.cover_image_asset) || void 0 === e ? void 0 : e.application_id) != null ? (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, 440) : void 0;
+      let t = (null == s || null == (e = s.cover_image_asset) ? void 0 : e.application_id) != null ? (0, _._W)(s.cover_image_asset.application_id, s.cover_image_asset, 440) : void 0;
       return null == t && i !== d.h8.CONFIRM ? null : null == t ? (0, r.jsx)("div", {
         className: y.headerImageEmpty
       }) : (0, r.jsx)("img", {
@@ -97,7 +97,7 @@ let x = e => {
           children: b.NW.string(b.t.w0CQ09)
         }), (0, r.jsx)("div", {
           className: y.confirmationBenefits,
-          children: _.map(e => (0, r.jsx)(v.Z, {
+          children: _.map(e => (0, r.jsx)(h.Z, {
             benefit: e,
             guildId: i,
             onClick: () => t(!0)
@@ -118,7 +118,7 @@ let x = e => {
             children: [(0, r.jsx)(s.Z, {
               emojiId: t.id,
               emojiName: t.name,
-              animated: null !== (e = t.animated) && void 0 !== e && e,
+              animated: null != (e = t.animated) && e,
               className: y.emojiImage
             }), (0, r.jsxs)("div", {
               children: [(0, r.jsx)(l.Text, {

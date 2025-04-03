@@ -1,41 +1,41 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(739566),
   a = n(834129),
-  o = n(388032);
+  l = n(388032);
 
-function l(e) {
+function o(e) {
   let t, {
-      message: l,
+      message: o,
       usernameHook: s,
       otherUser: c,
       otherUsernameHook: u,
       compact: d,
       channel: p
     } = e,
-    m = (0, i.ZP)(l),
+    m = (0, i.ZP)(o),
     f = m.nick,
     h = s(m),
     g = (0, i.Sw)(c, p);
   if (null != g && null != u) {
     let e = u(g);
-    t = o.NW.format(o.t.L2FyVl, {
+    t = l.NW.format(l.t.L2FyVl, {
       username: f,
       usernameHook: h,
       otherUsername: g.nick,
       otherUsernameHook: e
     })
-  } else t = o.NW.format(o.t["5v2xa2"], {
+  } else t = l.NW.format(l.t["5v2xa2"], {
     username: f,
     usernameHook: h
   });
   return (0, r.jsx)(a.Z, {
     icon: n(474019),
-    timestamp: l.timestamp,
+    timestamp: o.timestamp,
     compact: d,
     children: t
   })

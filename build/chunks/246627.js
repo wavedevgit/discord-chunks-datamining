@@ -1,39 +1,39 @@
-/** Chunk was on 92457 **/
-n.d(t, {
-  Z: () => a
-}), n(47120), n(653041);
-var r = n(192379),
-  l = n(442837),
-  i = n(235587);
+/** Chunk was on 95287 **/
+r.d(t, {
+  Z: () => i
+}), r(47120), r(653041);
+var n = r(192379),
+  a = r(442837),
+  o = r(235587);
 
-function a(e) {
+function i(e) {
   let {
     guildId: t,
-    leaderboardId: n,
-    intervalStart: a
-  } = e, o = (0, l.Wu)([i.Z], () => {
-    var e, r;
-    return null !== (r = null === (e = i.Z.getPrevLeaderboardRanks(t, n, a)) || void 0 === e ? void 0 : e.ranks) && void 0 !== r ? r : []
-  }, [t, a, n]), s = (0, l.Wu)([i.Z], () => {
-    var e, r;
-    return null !== (r = null === (e = i.Z.getCurrentLeaderboardRanks(t, n, a)) || void 0 === e ? void 0 : e.ranks) && void 0 !== r ? r : []
-  }, [t, a, n]);
+    leaderboardId: r,
+    intervalStart: i
+  } = e, l = (0, a.Wu)([o.Z], () => {
+    var e, n;
+    return null != (n = null == (e = o.Z.getPrevLeaderboardRanks(t, r, i)) ? void 0 : e.ranks) ? n : []
+  }, [t, i, r]), s = (0, a.Wu)([o.Z], () => {
+    var e, n;
+    return null != (n = null == (e = o.Z.getCurrentLeaderboardRanks(t, r, i)) ? void 0 : e.ranks) ? n : []
+  }, [t, i, r]);
   return {
-    rankChanges: r.useMemo(() => {
+    rankChanges: n.useMemo(() => {
       let e = new Map;
-      o.forEach((t, n) => {
-        e.set(t, n + 1)
+      l.forEach((t, r) => {
+        e.set(t, r + 1)
       });
       let t = [];
-      return s.forEach((n, r) => {
-        let l = r + 1,
-          i = e.get(n);
-        i !== l && t.push({
-          userId: n,
-          currentRank: l,
-          previousRank: i
+      return s.forEach((r, n) => {
+        let a = n + 1,
+          o = e.get(r);
+        o !== a && t.push({
+          userId: r,
+          currentRank: a,
+          previousRank: o
         })
       }), t
-    }, [o, s])
+    }, [l, s])
   }
 }

@@ -2,7 +2,7 @@
 n.d(t, {
   Ar: () => R,
   DO: () => E,
-  Fn: () => g,
+  Fn: () => d,
   Jq: () => O,
   QO: () => p,
   Vb: () => A,
@@ -11,11 +11,11 @@ n.d(t, {
   ep: () => j,
   km: () => N,
   nC: () => S,
-  vo: () => d
+  vo: () => g
 }), n(47120), n(411104);
 var r = n(581364),
-  i = n(314897),
-  l = n(866830),
+  l = n(314897),
+  i = n(866830),
   a = n(539573),
   u = n(727072),
   o = n(85960),
@@ -23,8 +23,8 @@ var r = n(581364),
   c = n(388032);
 let f = (e, t) => "".concat(e, "-").concat(t, "-new-rule"),
   E = e => (null == e ? void 0 : e.triggerType) === s.fX.KEYWORD,
-  d = e => (null == e ? void 0 : e.triggerType) === s.fX.ML_SPAM,
-  g = e => (null == e ? void 0 : e.triggerType) === s.fX.DEFAULT_KEYWORD_LIST,
+  g = e => (null == e ? void 0 : e.triggerType) === s.fX.ML_SPAM,
+  d = e => (null == e ? void 0 : e.triggerType) === s.fX.DEFAULT_KEYWORD_LIST,
   S = e => (null == e ? void 0 : e.triggerType) === s.fX.MENTION_SPAM,
   O = e => (null == e ? void 0 : e.triggerType) === s.fX.USER_PROFILE;
 
@@ -39,8 +39,8 @@ function j(e, t) {
       triggerType: t,
       triggerMetadata: r,
       enabled: !0,
-      creatorId: i.default.getId(),
-      actions: (0, l.qR)(n),
+      creatorId: l.default.getId(),
+      actions: (0, i.qR)(n),
       position: 0,
       exemptChannels: new Set,
       exemptRoles: new Set
@@ -66,29 +66,26 @@ function N(e, t) {
 function p(e) {
   if (E(e)) {
     var t, n;
-    let r = null !== (t = e.triggerMetadata.keywordFilter) && void 0 !== t ? t : [],
-      i = null !== (n = e.triggerMetadata.regexPatterns) && void 0 !== n ? n : [];
-    if (0 === r.length && 0 === i.length) throw Error(c.NW.string(c.t.kz2Av7));
-    N(r, s.RH),
-      function(e) {
-        if (e.length > s.VW) throw Error(c.NW.formatToPlainString(c.t.tDjhFx, {
-          limit: s.VW
-        }));
-        e.forEach(e => {
-          if (e.length > s.aj || e.length < s.uE) throw new a.uS(c.NW.formatToPlainString(c.t["WR0m9/"], {
-            regex: e,
-            max: s.aj,
-            min: s.uE
-          }))
-        })
-      }(i)
+    let r = null != (t = e.triggerMetadata.keywordFilter) ? t : [],
+      l = null != (n = e.triggerMetadata.regexPatterns) ? n : [];
+    if (0 === r.length && 0 === l.length) throw Error(c.NW.string(c.t.kz2Av7));
+    if (N(r, s.RH), l.length > s.VW) throw Error(c.NW.formatToPlainString(c.t.tDjhFx, {
+      limit: s.VW
+    }));
+    l.forEach(e => {
+      if (e.length > s.aj || e.length < s.uE) throw new a.uS(c.NW.formatToPlainString(c.t["WR0m9/"], {
+        regex: e,
+        max: s.aj,
+        min: s.uE
+      }))
+    })
   }
   if (0 === e.actions.length) throw Error(c.NW.string(c.t["t+gj5e"]))
 }
 
 function A(e) {
   var t;
-  return (0, r.BH)(null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : "INVALID_SNOWFLAKE")
+  return (0, r.BH)(null != (t = null == e ? void 0 : e.id) ? t : "INVALID_SNOWFLAKE")
 }
 
 function _(e) {

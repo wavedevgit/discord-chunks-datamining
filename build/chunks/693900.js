@@ -37,7 +37,7 @@ function m(e) {
   } = o.useContext(u), f = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), {
     ref: g,
     height: x = null
-  } = (0, l.Z)(), h = null !== (t = (0, c.Z)(x)) && void 0 !== t ? t : null, [{
+  } = (0, l.Z)(), h = null != (t = (0, c.Z)(x)) ? t : null, [{
     height: b
   }, j] = (0, i.q_F)(() => ({
     from: {

@@ -1,18 +1,18 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  u: () => l
+  u: () => o
 });
 var r = n(211739),
   i = n(680089),
   s = n(984933),
   a = n(914010),
-  o = n(981631);
-let l = {
+  l = n(981631);
+let o = {
   binds: ["mod+shift+a"],
   comboKeysBindGlobal: !0,
   action() {
     let e = a.Z.getGuildId();
-    return null != e && (s.ZP.getChannels(e)[o.d4z.GUILD_CATEGORY].some(e => {
+    return null != e && (s.ZP.getChannels(e)[l.d4z.GUILD_CATEGORY].some(e => {
       let {
         channel: t
       } = e;

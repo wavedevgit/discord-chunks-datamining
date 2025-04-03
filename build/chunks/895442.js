@@ -1,4 +1,4 @@
-/** Chunk was on 44300 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   Z: () => o
 });
@@ -20,9 +20,9 @@ function s(e) {
 
 function o(e, t) {
   var n;
-  if (!(null === (n = l.default.getCurrentUser()) || void 0 === n ? void 0 : n.isStaff())) return !1;
+  if (!(null == (n = l.default.getCurrentUser()) ? void 0 : n.isStaff())) return !1;
   let r = a.Z.getChannel(e.channel_id);
-  return !!(null != r && s(r)) && t.some(e => {
+  return null != r && !!s(r) && t.some(e => {
     let t = a.Z.getChannel(e);
     return !(null == t || t.isPrivate()) && !s(t)
   })

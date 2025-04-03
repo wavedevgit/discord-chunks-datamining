@@ -1,18 +1,18 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(481060),
-  l = n(782568),
+  l = n(481060),
+  o = n(782568),
   s = n(31336),
   c = n(906467),
   u = n(63063),
   d = n(665149),
   p = n(388032);
-let m = () => (0, o.ZDy)(async () => {
+let m = () => (0, l.ZDy)(async () => {
   let {
     default: e
   } = await n.e("83051").then(n.bind(n, 115072));
@@ -47,9 +47,9 @@ function f(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: () => b(!0),
     onMouseLeave: () => b(!1),
-    children: (0, r.jsx)(o.yRy, {
+    children: (0, r.jsx)(l.yRy, {
       shouldShow: f,
-      animation: o.yRy.Animation.NONE,
+      animation: l.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: !1,
@@ -60,28 +60,28 @@ function f(e) {
           onClose: t,
           isDiscordDeveloper: n
         } = e;
-        return (0, r.jsx)(o.v2r, {
+        return (0, r.jsx)(l.v2r, {
           onSelect: () => {},
           navId: "staff-help-popout",
           variant: "fixed",
           onClose: t,
           "aria-label": p.NW.string(p.t.HpQykZ),
-          children: (0, r.jsxs)(o.kSQ, {
-            children: [(0, r.jsx)(o.sNh, {
+          children: (0, r.jsxs)(l.kSQ, {
+            children: [(0, r.jsx)(l.sNh, {
               id: "staff-help-bug-reporter",
               label: p.NW.string(p.t["5Lqopa"]),
-              icon: o.nnZ,
+              icon: l.nnZ,
               action: m
-            }), n && (0, r.jsx)(o.sNh, {
+            }), n && (0, r.jsx)(l.sNh, {
               id: "staff-devtools",
               label: "Toggle DevTools",
-              icon: o.Ymb,
+              icon: l.Ymb,
               action: () => (0, s.SO)()
-            }), (0, r.jsx)(o.sNh, {
+            }), (0, r.jsx)(l.sNh, {
               id: "staff-help-center",
               label: "Go to Help Center",
-              icon: o.rgF,
-              action: () => (0, l.Z)(u.w)
+              icon: l.rgF,
+              action: () => (0, o.Z)(u.w)
             })]
           })
         })
@@ -95,7 +95,7 @@ function f(e) {
         } = n;
         return (0, r.jsx)(d.JO, {
           onClick: m,
-          icon: o.nnZ,
+          icon: l.nnZ,
           "aria-label": p.NW.string(p.t.cqEoj4),
           selected: i,
           className: t

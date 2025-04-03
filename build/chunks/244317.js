@@ -5,18 +5,18 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(873546),
-  o = n(481060),
-  a = n(358085),
+  a = n(481060),
+  o = n(358085),
   s = n(289341),
   c = n(981631),
   u = n(186901),
   d = n(388032),
-  p = n(762525);
+  p = n(278812);
 
 function h(e) {
   let {
     applicationId: t
-  } = e.match.params, [h, f] = i.useState(!1), g = i.useRef(!1), [m, b] = i.useState(null), _ = !a.isPlatformEmbedded && !l.tq && !h;
+  } = e.match.params, [h, f] = i.useState(!1), g = i.useRef(!1), [m, b] = i.useState(null), _ = !o.isPlatformEmbedded && !l.tq && !h;
   return (i.useEffect(() => {
     _ && !0 !== g.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
@@ -34,23 +34,23 @@ function h(e) {
     }), g.current = !0)
   }, [t, _]), _ && !1 !== m) ? !0 === m ? (0, r.jsxs)("div", {
     className: p.container,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xxl/bold",
       children: d.NW.string(d.t.csrAMD)
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-xs/semibold",
       children: d.NW.string(d.t["m1+IBg"])
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       onClick: () => f(!0),
-      color: o.zxk.Colors.BRAND,
+      color: a.zxk.Colors.BRAND,
       children: d.NW.string(d.t.fIv16O)
     })]
   }) : (0, r.jsxs)("div", {
     className: p.container,
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xxl/bold",
       children: d.NW.string(d.t["Z+hCVV"])
-    }), (0, r.jsx)(o.$jN, {})]
+    }), (0, r.jsx)(a.$jN, {})]
   }) : (0, r.jsx)(s.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

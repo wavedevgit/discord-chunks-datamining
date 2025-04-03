@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => s
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(499033),
-  o = n(388032),
-  l = n(977613);
+  l = n(388032),
+  o = n(35539);
 
 function s(e) {
   let {
@@ -17,20 +17,20 @@ function s(e) {
     disableStars: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: l.container,
+    className: o.container,
     children: [(0, r.jsxs)("div", {
-      className: l.iconContainer,
+      className: o.iconContainer,
       children: [(0, r.jsx)(t, {
         color: "currentColor",
         size: "custom",
-        className: l.icon,
+        className: o.icon,
         width: 36,
         height: 36
       }), c ? null : (0, r.jsx)(a.Z, {
-        className: l.stars
+        className: o.stars
       })]
     }), (0, r.jsx)(i.X6q, {
-      className: l.header,
+      className: o.header,
       variant: "heading-xl/semibold",
       children: n
     }), (0, r.jsxs)(i.Text, {
@@ -38,10 +38,10 @@ function s(e) {
       variant: "text-xs/normal",
       children: [c ? null : (0, r.jsxs)(i.Text, {
         tag: "span",
-        className: l.protip,
+        className: o.protip,
         variant: "text-xs/bold",
         color: "text-positive",
-        children: [o.NW.string(o.t["8tvIiI"]), ":", " "]
+        children: [l.NW.string(l.t["8tvIiI"]), ":", " "]
       }), s]
     })]
   })

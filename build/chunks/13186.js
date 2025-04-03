@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => a
 });
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  l = n(451387);
+  l = n(481060),
+  o = n(341402);
 let a = i.forwardRef(function(e, t) {
   let {
     body: n,
@@ -27,25 +27,25 @@ let a = i.forwardRef(function(e, t) {
         className: s,
         children: p
       }), (0, r.jsxs)("div", {
-        className: l.body,
-        children: [(0, r.jsx)(o.X6q, {
-          className: l.header,
+        className: o.body,
+        children: [(0, r.jsx)(l.X6q, {
+          className: o.header,
           variant: "heading-md/bold",
           color: "always-white",
           children: i
-        }), null == n ? null : "string" == typeof n ? (0, r.jsx)(o.Text, {
+        }), null == n ? null : "string" == typeof n ? (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "always-white",
           children: n
         }) : n]
       }), (0, r.jsx)("div", {
-        className: l.buttonContainer,
-        children: (0, r.jsx)(o.zxk, {
-          className: l.button,
+        className: o.buttonContainer,
+        children: (0, r.jsx)(l.zxk, {
+          className: o.button,
           onClick: e => {
             null == u || u(e)
           },
-          color: o.zxk.Colors.BRAND,
+          color: l.zxk.Colors.BRAND,
           children: c
         })
       }), (0, r.jsx)("div", {

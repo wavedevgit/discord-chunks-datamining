@@ -25,8 +25,8 @@ var s = n(200651),
   b = n(933557),
   O = n(636816),
   f = n(605436),
-  v = n(185413),
-  S = n(313201),
+  S = n(185413),
+  v = n(313201),
   A = n(540059),
   T = n(688465),
   D = n(456269),
@@ -50,7 +50,7 @@ var s = n(200651),
   Y = n(710352),
   X = n(231338),
   q = n(388032),
-  K = n(607971);
+  K = n(37448);
 
 function J(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,7 +112,7 @@ function et(e) {
     t(a)
   }, [a, t]), null == d) ? null : (0, s.jsx)(N.hzk, {
     className: K.addMembersContainer,
-    children: (0, s.jsx)(v.U, {
+    children: (0, s.jsx)(S.U, {
       guild: d,
       channel: null,
       permission: c ? _.yP : (0, z.CG)(i),
@@ -190,14 +190,15 @@ class en extends r.PureComponent {
   }
   renderHeader() {
     var e;
-    let t;
-    let {
-      cloneChannel: n,
-      categoryId: r,
-      onClose: i
-    } = this.props, {
-      channelType: l
-    } = this.state, a = null != n ? q.NW.string(q.t.dEaPc3) : l === V.d4z.GUILD_CATEGORY ? q.NW.string(q.t["ISN+ND"]) : q.NW.string(q.t["fUYU+v"]);
+    let t, {
+        cloneChannel: n,
+        categoryId: r,
+        onClose: i
+      } = this.props,
+      {
+        channelType: l
+      } = this.state,
+      a = null != n ? q.NW.string(q.t.dEaPc3) : l === V.d4z.GUILD_CATEGORY ? q.NW.string(q.t["ISN+ND"]) : q.NW.string(q.t["fUYU+v"]);
     if (null != r) {
       let n = G.Z.getChannel(r);
       t = (0, s.jsx)(N.Text, {
@@ -205,7 +206,7 @@ class en extends r.PureComponent {
         color: "header-secondary",
         className: K.subtitle,
         children: q.NW.format(q.t.L1zJgY, {
-          categoryName: null !== (e = null == n ? void 0 : n.name) && void 0 !== e ? e : ""
+          categoryName: null != (e = null == n ? void 0 : n.name) ? e : ""
         })
       })
     }
@@ -226,14 +227,14 @@ class en extends r.PureComponent {
     })
   }
   renderName() {
-    let e;
-    let {
-      cloneChannel: t,
-      guildId: r
-    } = this.props, {
-      errors: i,
-      channelType: l
-    } = this.state;
+    let e, {
+        cloneChannel: t,
+        guildId: r
+      } = this.props,
+      {
+        errors: i,
+        channelType: l
+      } = this.state;
     (null == i ? void 0 : i.name) != null && (e = (0, s.jsx)(N.Text, {
       variant: "text-xs/normal",
       color: "text-danger",
@@ -266,7 +267,7 @@ class en extends r.PureComponent {
         })
       }) : null,
       c = this.getIconComponent();
-    return (0, s.jsx)(S.FG, {
+    return (0, s.jsx)(v.FG, {
       children: t => (0, s.jsxs)(N.xJW, {
         title: o,
         tag: "label",
@@ -531,15 +532,15 @@ class en extends r.PureComponent {
     }, "privacy-switch")
   }
   renderError(e) {
-    let t;
-    let {
-      channelType: n,
-      isPrivate: r,
-      errors: i
-    } = this.state, {
-      canConnect: a,
-      canViewChannels: o
-    } = this.props;
+    let t, {
+        channelType: n,
+        isPrivate: r,
+        errors: i
+      } = this.state,
+      {
+        canConnect: a,
+        canViewChannels: o
+      } = this.props;
     if (Object.values(i).length > 0) {
       if (null != i.message && "" !== i.message) t = i.message;
       else if (e || null == i.name) {
@@ -558,15 +559,16 @@ class en extends r.PureComponent {
     })
   }
   renderFooter() {
-    let e;
-    let {
-      channelType: t,
-      onClose: n
-    } = this.props, {
-      channelType: r
-    } = this.state, {
-      isPrivate: i
-    } = this.state;
+    let e, {
+        channelType: t,
+        onClose: n
+      } = this.props,
+      {
+        channelType: r
+      } = this.state,
+      {
+        isPrivate: i
+      } = this.state;
     e = t === V.d4z.GUILD_CATEGORY ? q.NW.string(q.t["ISN+ND"]) : q.NW.string(q.t["fUYU+v"]);
     let l = i || r === V.d4z.GUILD_STAGE_VOICE;
     return (0, s.jsxs)(N.mzw, {
@@ -594,12 +596,12 @@ class en extends r.PureComponent {
     })
   }
   renderAddMemberFooter() {
-    let e;
-    let {
-      channelType: t
-    } = this.props, {
-      pendingPermissionOverwrites: n
-    } = this.state;
+    let e, {
+        channelType: t
+      } = this.props,
+      {
+        pendingPermissionOverwrites: n
+      } = this.state;
     return e = 0 === Object.keys(n).length ? q.NW.string(q.t["5WxrcX"]) : t === V.d4z.GUILD_CATEGORY ? q.NW.string(q.t["ISN+ND"]) : q.NW.string(q.t["fUYU+v"]), (0, s.jsxs)(N.mzw, {
       children: [(0, s.jsx)(N.zxk, {
         type: "submit",
@@ -720,7 +722,7 @@ class en extends r.PureComponent {
     })
   }
   constructor(e) {
-    super(e), J(this, "headerId", (0, S.hQ)()), J(this, "_input", void 0), J(this, "setInputRef", e => {
+    super(e), J(this, "headerId", (0, v.hQ)()), J(this, "_input", void 0), J(this, "setInputRef", e => {
       this._input = e
     }), J(this, "handleNameChange", e => {
       let {
@@ -872,12 +874,12 @@ let es = r.forwardRef(function(e, t) {
       canCreateAnnouncementChannel: null != l && l.hasFeature(V.oNc.NEWS),
       user: a,
       owner: d,
-      memberRoles: null !== (t = null === (e = P.ZP.getMember(r, a.id)) || void 0 === e ? void 0 : e.roles) && void 0 !== t ? t : [],
+      memberRoles: null != (t = null == (e = P.ZP.getMember(r, a.id)) ? void 0 : e.roles) ? t : [],
       canViewChannels: R.Z.can(V.Plq.VIEW_CHANNEL, l),
       canConnect: R.Z.can(V.Plq.CONNECT, l),
       isAdmin: c,
       cloneChannel: h,
-      channelType: null !== (s = null == h ? void 0 : h.type) && void 0 !== s ? s : n,
+      channelType: null != (s = null == h ? void 0 : h.type) ? s : n,
       canManageRoles: R.Z.can(V.Plq.MANAGE_ROLES, l),
       canManageChannels: R.Z.can(V.Plq.MANAGE_CHANNELS, l)
     }

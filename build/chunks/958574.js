@@ -3,8 +3,7 @@
 var a = t(381811);
 t(306872)(r, "__esModule", {
   value: !0
-}), r.default = void 0;
-var o = new(a(t(477546))).default([
+}), r.default = void 0, r.default = new(a(t(477546))).default([
   ["aria-activedescendant", {
     type: "id"
   }],
@@ -162,5 +161,4 @@ var o = new(a(t(477546))).default([
   ["aria-valuetext", {
     type: "string"
   }]
-]);
-r.default = o
+])

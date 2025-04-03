@@ -1,6 +1,6 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  W: () => o
+  W: () => l
 });
 var r = n(818083),
   i = n(846573);
@@ -20,7 +20,7 @@ let a = (0, r.B)({
   }]
 });
 
-function o(e) {
+function l(e) {
   let {
     location: t
   } = e, {

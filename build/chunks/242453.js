@@ -17,22 +17,26 @@ let a = {
       case 4:
         return "IV"
     } else if ("day" === e) switch (i) {
-        case 1:
-          return "thứ 2";
-        case 2:
-          return "thứ 3";
-        case 3:
-          return "thứ 4";
-        case 4:
-          return "thứ 5";
-        case 5:
-          return "thứ 6";
-        case 6:
-          return "thứ 7";
-        case 7:
-          return "chủ nhật"
-      } else if ("week" === e) return 1 === i ? "thứ nhất" : "thứ " + i;
-      else if ("dayOfYear" === e) return 1 === i ? "đầu ti\xean" : "thứ " + i;
+      case 1:
+        return "thứ 2";
+      case 2:
+        return "thứ 3";
+      case 3:
+        return "thứ 4";
+      case 4:
+        return "thứ 5";
+      case 5:
+        return "thứ 6";
+      case 6:
+        return "thứ 7";
+      case 7:
+        return "chủ nhật"
+    } else if ("week" === e)
+      if (1 === i) return "thứ nhất";
+      else return "thứ " + i;
+    else if ("dayOfYear" === e)
+      if (1 === i) return "đầu ti\xean";
+      else return "thứ " + i;
     return String(i)
   },
   era: (0, e.Z)({

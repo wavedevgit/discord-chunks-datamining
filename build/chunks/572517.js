@@ -1,4 +1,4 @@
-/** Chunk was on 57301 **/
+/** Chunk was on 8854 **/
 n.d(t, {
   c: () => p
 });
@@ -11,14 +11,14 @@ var r = n(200651),
   C = n(987209),
   d = n(286961),
   c = n(897942),
-  u = n(746385);
+  u = n(42154);
 
 function p() {
   var e;
   let t = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     n = (0, o.ZP)(),
     p = (0, l.wj)(n),
-    _ = null === (e = (0, d.Z)()) || void 0 === e ? void 0 : e.planSelectionBanner,
+    _ = null == (e = (0, d.Z)()) ? void 0 : e.planSelectionBanner,
     {
       claimableRewards: x
     } = (0, C.wD)();

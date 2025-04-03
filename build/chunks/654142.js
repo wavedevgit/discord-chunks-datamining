@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(239091),
+  l = n(442837),
+  o = n(239091),
   a = n(749210),
   s = n(905423),
   c = n(664915),
@@ -47,30 +47,30 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = i.memo(function(e) {
+let y = i.memo(function(e) {
   var {
     folderNode: t
-  } = e, v = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["folderNode"]);
   let {
-    id: y,
-    name: _,
+    id: _,
+    name: v,
     color: O,
     children: j
-  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), S = (0, o.e7)([c.Z], () => c.Z.isFolderExpanded(y)), P = function(e) {
+  } = t, x = j.map(e => e.id), C = (0, s.Z)(e => e.guildId), S = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(_)), P = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -84,26 +84,26 @@ let v = i.memo(function(e) {
     mentionCount: N,
     isMentionLowImportance: Z,
     unread: w
-  } = (0, o.cj)([u.default], () => ({
+  } = (0, l.cj)([u.default], () => ({
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
   })), E = i.useCallback(() => {
-    a.Z.toggleGuildFolderExpand(y)
-  }, [y]), T = i.useCallback(e => {
-    (0, l.jW)(e, async () => {
+    a.Z.toggleGuildFolderExpand(_)
+  }, [_]), T = i.useCallback(e => {
+    (0, o.jW)(e, async () => {
       let {
         default: e
       } = await n.e("52590").then(n.bind(n, 205784));
       return t => (0, r.jsx)(e, b(m({}, t), {
-        folderId: y,
-        folderName: _,
+        folderId: _,
+        folderName: v,
         folderColor: O,
         unread: w || N > 0
       }))
     })
-  }, [y, _, O, w, N]);
-  return (0, r.jsx)(h.Z, b(m({}, v), {
+  }, [_, v, O, w, N]);
+  return (0, r.jsx)(h.Z, b(m({}, y), {
     folderNode: t,
     expanded: S,
     selected: null != C && x.includes(C),

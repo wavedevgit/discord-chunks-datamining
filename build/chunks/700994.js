@@ -10,16 +10,16 @@ var l = n(442837),
   o = n(131951),
   s = n(594174),
   u = n(36703),
-  d = n(358085),
-  c = n(65154),
+  c = n(358085),
+  d = n(65154),
   g = n(388032);
 
 function f(e) {
   var t;
-  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.Yn.DEFAULT,
+  let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.Yn.DEFAULT,
     f = (0, l.e7)([o.Z], () => o.Z.getLocalVolume(e, n), [e, n]),
-    b = e === (null === (t = s.default.getCurrentUser()) || void 0 === t ? void 0 : t.id),
-    Z = n === c.Yn.STREAM;
+    b = e === (null == (t = s.default.getCurrentUser()) ? void 0 : t.id),
+    Z = n === d.Yn.STREAM;
   return b ? null : (0, i.jsx)(r.II_, {
     id: "user-volume",
     label: Z ? g.NW.string(g.t.t4JBnJ) : g.NW.string(g.t.m7TNdH),
@@ -45,7 +45,7 @@ function f(e) {
       }({}, t), s = s = {
         ref: l,
         value: (0, u.P)(f),
-        maxValue: d.isPlatformEmbedded ? 200 : 100,
+        maxValue: c.isPlatformEmbedded ? 200 : 100,
         onChange: t => a.Z.setLocalVolume(e, (0, u.A)(t), n),
         "aria-label": Z ? g.NW.string(g.t.t4JBnJ) : g.NW.string(g.t.m7TNdH)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {

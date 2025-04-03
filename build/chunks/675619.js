@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   r: () => a
 });
@@ -10,8 +10,8 @@ let a = e => {
     ref: t,
     shouldScroll: n,
     scrollOpts: a,
-    onScrollEnd: o,
-    onCleanup: l
+    onScrollEnd: l,
+    onCleanup: o
   } = e, c = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), d = r.useRef(!1);
   r.useEffect(() => {
     let e = t.current;
@@ -36,10 +36,10 @@ let a = e => {
         return e
       }({
         behavior: c ? "auto" : "smooth"
-      }, a)), d.current = !0, null == o || o()
+      }, a)), d.current = !0, null == l || l()
     });
     return () => {
-      cancelAnimationFrame(r), null == l || l(), d.current = !0
+      cancelAnimationFrame(r), null == o || o(), d.current = !0
     }
-  }, [t, a, n, c, o, l])
+  }, [t, a, n, c, l, o])
 }

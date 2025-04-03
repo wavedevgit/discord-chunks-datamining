@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  i: () => y
+  i: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(704215),
+  l = n(442837),
+  o = n(704215),
   a = n(952265),
   s = n(481060),
   c = n(570140),
@@ -17,24 +17,24 @@ var r = n(200651),
   g = n(479766),
   m = n(331663),
   b = n(921944),
-  v = n(46140);
+  y = n(46140);
 
-function y() {
+function _() {
   let {
     hasLayers: e
-  } = (0, o.cj)([h.Z], () => ({
+  } = (0, l.cj)([h.Z], () => ({
     hasLayers: h.Z.hasLayers()
   })), {
     onboardingModalOpenedPrior: t
-  } = (0, o.cj)([g.Z], () => ({
+  } = (0, l.cj)([g.Z], () => ({
     onboardingModalOpenedPrior: g.Z.onboardingModalOpenedPrior
   })), {
-    enabled: y
+    enabled: _
   } = (0, f.W)({
     location: "virtual_currency_announcement_modal"
-  }), [_, O] = (0, d.US)(y ? [l.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
+  }), [v, O] = (0, d.US)(_ ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    y && !t && _ === l.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && !e && !j && (c.Z.dispatch({
+    _ && !t && v === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || j || (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -49,14 +49,14 @@ function y() {
           transitionState: i,
           onClose: n,
           ctaOnClick: () => {
-            O(b.L.USER_DISMISS_ALL), (0, u.EW)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            O(b.L.USER_DISMISS_ALL), (0, u.EW)(o.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: b.L.USER_DISMISS_ALL,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
-            }), (0, u.EW)(l.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+            }), (0, u.EW)(o.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
               dismissAction: b.L.USER_DISMISS_ALL,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, p.navigateToQuestHome)({
-              questId: v.V6
+              questId: y.V6
             }), n()
           }
         })
@@ -65,6 +65,6 @@ function y() {
       onCloseCallback: () => {
         O(b.L.USER_DISMISS)
       }
-    }))
-  }, [_, y, t, O, e, j])
+    })))
+  }, [v, _, t, O, e, j])
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 38542 **/
 n.d(t, {
-  Z: () => v
+  Z: () => N
 });
 var r = n(200651),
   l = n(192379),
@@ -14,19 +14,19 @@ var r = n(200651),
   h = n(190054),
   f = n(760373),
   p = n(388032),
-  g = n(244652);
+  g = n(764229);
 
-function v(e) {
+function N(e) {
   let {
     channelId: t
-  } = e, n = (0, i.e7)([a.Z], () => {
+  } = e, n = (0, i.e7)([a.ZP], () => {
     var e;
-    return null === (e = a.Z.getSecureFramesState()) || void 0 === e ? void 0 : e.epochAuthenticator
-  }), v = (0, u.W)({
+    return null == (e = a.ZP.getSecureFramesState()) ? void 0 : e.epochAuthenticator
+  }), N = (0, u.W)({
     fingerprintBase64: n,
     chunkSize: f.y6,
     desiredLength: f.YP
-  }), N = l.useCallback(() => {
+  }), y = l.useCallback(() => {
     (0, s.PM)({
       channelId: t
     })
@@ -53,14 +53,14 @@ function v(e) {
         variant: "text-sm/bold",
         color: "header-primary",
         children: p.NW.string(p.t.cTQI5u)
-      }), null != v && (0, r.jsx)(h.H, {
-        chunks: v,
+      }), null != N && (0, r.jsx)(h.H, {
+        chunks: N,
         color: o.TVs.colors.INTERACTIVE_NORMAL.css,
-        onCopy: N
+        onCopy: y
       })]
     }), (0, r.jsx)(d.b, {
       className: g.code,
-      chunks: v,
+      chunks: N,
       columns: f.WK
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",

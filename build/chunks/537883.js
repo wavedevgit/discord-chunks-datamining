@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => h
 });
-var r, i, l, o = n(442837),
-  a = n(570140),
+var r, i, l, a = n(442837),
+  o = n(570140),
   s = n(331114),
   c = n(356164);
 let u = [];
@@ -11,7 +11,7 @@ let u = [];
 function d() {
   u = []
 }
-class p extends(l = o.ZP.Store) {
+class p extends(l = a.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, c.Z)
   }
@@ -25,7 +25,7 @@ i = "GlobalDiscoveryServersSearchLayoutStore", (r = "displayName") in p ? Object
   configurable: !0,
   writable: !0
 }) : p[r] = i;
-let h = new p(a.Z, {
+let h = new p(o.Z, {
   CONNECTION_OPEN: d,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_LAYOUT_RESET: d,
   GLOBAL_DISCOVERY_SERVERS_SEARCH_COUNT_SUCCESS: function(e) {

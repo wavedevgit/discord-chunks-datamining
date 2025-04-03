@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => j
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(37234),
   d = n(153867),
   u = n(425493),
@@ -19,7 +19,7 @@ var r = n(200651),
   b = n(210887),
   N = n(981631),
   x = n(388032),
-  _ = n(912937);
+  _ = n(560030);
 let E = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
@@ -47,10 +47,10 @@ function j() {
   let [e, t] = i.useState(Math.round(window.outerWidth / window.innerWidth * 100)), {
     platformZoom: n,
     theme: s
-  } = (0, o.cj)([b.Z, g.Z], () => ({
+  } = (0, l.cj)([b.Z, g.Z], () => ({
     theme: b.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, O] = i.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], v = new Map([
+  })), [j, O] = i.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -62,10 +62,10 @@ function j() {
       t(Math.round(window.outerWidth / window.innerWidth * 100))
     })
   }, []);
-  let S = f.isPlatformEmbedded ? n : e,
-    T = (0, o.e7)([p.C], () => {
+  let v = f.isPlatformEmbedded ? n : e,
+    T = (0, l.e7)([p.C], () => {
       var e, t;
-      return (0, h.fD)() ? null === (t = p.C.getCurrentBuildOverride()) || void 0 === t ? void 0 : null === (e = t.overrides) || void 0 === e ? void 0 : e.discord_web : null
+      return (0, h.fD)() ? null == (t = p.C.getCurrentBuildOverride()) || null == (e = t.overrides) ? void 0 : e.discord_web : null
     }),
     [I, y] = (0, m.R)("playground-overrideText", null),
     [A, P] = (0, m.R)("playground-defaultText", E[0].value),
@@ -84,19 +84,19 @@ function j() {
       "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
       "--playground-font-style": "italic" === j ? "italic" : "normal"
     },
-    children: (0, r.jsxs)(l.hjN, {
-      tag: l.RB0.H1,
+    children: (0, r.jsxs)(o.hjN, {
+      tag: o.RB0.H1,
       children: [(0, r.jsxs)("div", {
         className: _.toolbar,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsxs)(l.Text, {
+          children: [(0, r.jsxs)(o.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
               display: "inline-block"
             },
-            children: ["Zoom: ", S, "%"]
-          }), null != T ? (0, r.jsxs)(l.Text, {
+            children: ["Zoom: ", v, "%"]
+          }), null != T ? (0, r.jsxs)(o.Text, {
             tag: "div",
             variant: "heading-lg/bold",
             style: {
@@ -106,24 +106,24 @@ function j() {
             color: "header-secondary",
             children: ["(", T.id, ")"]
           }) : null]
-        }), (0, r.jsx)(l.xJW, {
-          children: (0, r.jsx)(l.q4e, {
+        }), (0, r.jsx)(o.xJW, {
+          children: (0, r.jsx)(o.q4e, {
             className: _.select,
             options: E,
             onChange: e => R(e),
             value: A
           })
-        }), (0, r.jsx)(l.xJW, {
+        }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)("div", {
             className: _.input,
-            children: (0, r.jsx)(l.oil, {
+            children: (0, r.jsx)(o.oil, {
               placeholder: "Enter custom input...",
               value: null != I ? I : "",
               onChange: R
             })
           })
-        }), (0, r.jsx)(l.xJW, {
-          children: (0, r.jsx)(l.FXm, {
+        }), (0, r.jsx)(o.xJW, {
+          children: (0, r.jsx)(o.FXm, {
             withTransparentBackground: !0,
             className: _.theme,
             orientation: "horizontal",
@@ -141,8 +141,8 @@ function j() {
             },
             value: s
           })
-        }), (0, r.jsx)(l.xJW, {
-          children: (0, r.jsx)(l.FXm, {
+        }), (0, r.jsx)(o.xJW, {
+          children: (0, r.jsx)(o.FXm, {
             withTransparentBackground: !0,
             className: _.theme,
             orientation: "horizontal",
@@ -169,24 +169,24 @@ function j() {
         className: _.textGrid,
         children: [(0, r.jsx)("div", {}), C.map(e => (0, r.jsx)("div", {
           className: _.columnHeading,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, r.jsx)(o.X6q, {
             variant: "eyebrow",
             children: e
           })
         }, e)), [10, 12, 14, 15, 16, 18, 20, 24].map(e => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsxs)("div", {
             className: _.fontSize,
-            children: [(0, r.jsxs)(l.X6q, {
+            children: [(0, r.jsxs)(o.X6q, {
               variant: "eyebrow",
               children: [e, "px"]
-            }), 100 !== S ? (0, r.jsxs)(l.X6q, {
+            }), 100 !== v ? (0, r.jsxs)(o.X6q, {
               variant: "eyebrow",
               color: "text-muted",
-              children: ["(", e * S / 100, ")"]
+              children: ["(", e * v / 100, ")"]
             }) : null]
           }, e), C.map(t => {
             var n;
-            let i = null !== (n = "custom" === A ? I : A) && void 0 !== n ? n : "";
+            let i = null != (n = "custom" === A ? I : A) ? n : "";
             return (0, r.jsx)("div", {
               className: _.textSample,
               children: (0, r.jsxs)("div", {
@@ -196,7 +196,7 @@ function j() {
                 }),
                 style: {
                   fontSize: e,
-                  fontWeight: v.get(t)
+                  fontWeight: S.get(t)
                 },
                 children: [(0, r.jsx)("p", {
                   children: i

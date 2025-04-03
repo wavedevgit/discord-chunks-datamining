@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   J: () => s
 });
@@ -7,5 +7,5 @@ var r = n(442837),
 let s = () => (0, r.e7)([i.default], () => {
   var e;
   let t = i.default.getCurrentUser();
-  return null !== (e = null == t ? void 0 : t.nsfwAllowed) && void 0 !== e ? e : null
+  return null != (e = null == t ? void 0 : t.nsfwAllowed) ? e : null
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,18 +6,18 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(197115),
-  o = n(834129),
-  l = n(981631),
+  l = n(834129),
+  o = n(981631),
   s = n(474936),
   c = n(388032),
-  u = n(243005);
+  u = n(806725);
 
 function d(e) {
   let {
     message: t,
     channel: n
-  } = e, d = null != n.guild_id ? l.jXE.TEXT_IN_VOICE : l.jXE.CHANNEL_TEXT_AREA;
-  return (0, r.jsx)(o.Z, {
+  } = e, d = null != n.guild_id ? o.jXE.TEXT_IN_VOICE : o.jXE.CHANNEL_TEXT_AREA;
+  return (0, r.jsx)(l.Z, {
     contentClassName: u.messageContentContainer,
     iconContainerClassName: u.iconContainer,
     iconNode: (0, r.jsx)(i.Dkj, {
@@ -50,7 +50,7 @@ function d(e) {
           size: i.zxk.Sizes.SMALL,
           premiumModalAnalyticsLocation: {
             section: d,
-            object: l.qAy.MESSAGE
+            object: o.qAy.MESSAGE
           }
         })
       })]

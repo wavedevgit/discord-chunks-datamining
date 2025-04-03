@@ -14,7 +14,7 @@ var n = r(200651),
   f = r(240864),
   g = r(981631),
   p = r(388032),
-  b = r(963463);
+  b = r(862892);
 
 function m(e) {
   let {
@@ -22,7 +22,7 @@ function m(e) {
     guildId: r
   } = e, o = (0, a.e7)([u.Z], () => {
     var e;
-    return u.Z.getRole(r, null !== (e = null == t ? void 0 : t.role_id) && void 0 !== e ? e : g.lds)
+    return u.Z.getRole(r, null != (e = null == t ? void 0 : t.role_id) ? e : g.lds)
   });
   return null == o ? null : (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(l.X6q, {

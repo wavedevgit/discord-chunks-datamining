@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(481060),
   u = n(100527),
   d = n(600164),
@@ -20,9 +20,9 @@ var r = n(200651),
   _ = n(115530),
   E = n(981631),
   O = n(388032),
-  N = n(591733);
+  N = n(457755);
 
-function v(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -31,20 +31,20 @@ function v(e, t, n) {
   }) : e[t] = n, e
 }
 
-function y(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      v(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
 }
 
-function I(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -117,16 +117,16 @@ class S extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "renderPartyMember", (e, t) => {
+    super(...e), y(this, "renderPartyMember", (e, t) => {
       let n;
       if (null == e) return null;
       let {
         host: l,
-        onUserContextMenu: a
+        onUserContextMenu: o
       } = this.props;
       return n = (null == l ? void 0 : l.id) === e.id ? O.NW.string(O.t.N9bqDw) : O.NW.string(O.t.Z2Y4c3), (0, r.jsx)(c.yRy, {
         preload: () => (0, p.Z)(e.id, e.getAvatarURL(void 0, 80)),
-        renderPopout: t => (s()(null != e, ""), (0, r.jsx)(h.Z, I(y({}, t), {
+        renderPopout: t => (s()(null != e, ""), (0, r.jsx)(h.Z, v(I({}, t), {
           userId: e.id,
           newAnalyticsLocations: [u.Z.AVATAR]
         }))),
@@ -140,20 +140,20 @@ class S extends i.PureComponent {
               onMouseEnter: r,
               onMouseLeave: s
             } = n;
-            return (0, i.createElement)(c.qEK, I(y({}, l), {
+            return (0, i.createElement)(c.qEK, v(I({}, l), {
               key: e.id,
               src: e.getAvatarURL(void 0, 24),
               size: c.EFr.SIZE_24,
-              className: o()(N.avatar, t),
+              className: a()(N.avatar, t),
               "aria-label": e.username,
               onMouseEnter: r,
               onMouseLeave: s,
-              onContextMenu: t => void(null != e && (null == a || a(t, e)))
+              onContextMenu: t => void(null != e && (null == o || o(t, e)))
             }))
           }
         })
       }, e.id)
-    }), v(this, "renderPartyMemberOverflow", (e, t, n) => {
+    }), y(this, "renderPartyMemberOverflow", (e, t, n) => {
       let {
         renderOverflowPopout: i
       } = this.props;
@@ -161,8 +161,8 @@ class S extends i.PureComponent {
         renderPopout: i,
         children: n => (0, r.jsx)(c.ua7, {
           text: O.NW.string(O.t.Zf4NPT),
-          children: i => (0, r.jsx)("div", I(y({
-            className: o()(N.overflow, t)
+          children: i => (0, r.jsx)("div", v(I({
+            className: a()(N.overflow, t)
           }, i, n), {
             children: e
           }))

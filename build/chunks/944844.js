@@ -24,7 +24,7 @@ async function u(e, t, n) {
     });
     h = e.url
   } catch (e) {
-    throw await f(n, null !== (r = null == e ? void 0 : null === (a = e.body) || void 0 === a ? void 0 : a.code) && void 0 !== r ? r : 0, "authorize"), Error("error during two way authorize")
+    throw await f(n, null != (r = null == e || null == (a = e.body) ? void 0 : a.code) ? r : 0, "authorize"), Error("error during two way authorize")
   }
   let x = null;
   try {
@@ -42,7 +42,7 @@ async function u(e, t, n) {
       state: x
     })
   } catch (e) {
-    throw await f(n, null !== (u = null == e ? void 0 : null === (c = e.body) || void 0 === c ? void 0 : c.code) && void 0 !== u ? u : 0, "callback"), Error("error during two way callback")
+    throw await f(n, null != (u = null == e || null == (c = e.body) ? void 0 : c.code) ? u : 0, "callback"), Error("error during two way callback")
   }
 }
 async function f(e, t, n) {

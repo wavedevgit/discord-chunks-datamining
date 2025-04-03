@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 }), n(47120), n(301563);
@@ -6,15 +6,15 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(570140),
-  l = n(401430),
+  l = n(570140),
+  o = n(401430),
   c = n(155268),
   d = n(600164),
   u = n(313201),
   m = n(695103),
   g = n(388032),
-  p = n(200301),
-  h = n(685786);
+  p = n(458240),
+  h = n(20493);
 let f = /^\d+$|^$/;
 
 function b(e) {
@@ -29,9 +29,9 @@ function b(e) {
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != b ? b : ""), [j, O] = i.useState("8080"), [C, v] = i.useState("localhost"), S = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != b ? b : ""), [j, O] = i.useState("8080"), [C, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
   async function I() {
-    l.q$();
+    o.q$();
     let e = function(e, t, n) {
       if (null == e) return null;
       switch (e) {
@@ -41,21 +41,21 @@ function b(e) {
           return (0, c.ZP)(n)
       }
     }(C, j, _);
-    null != await l.Wt(_, e) && t()
+    null != await o.Wt(_, e) && t()
   }
-  i.useEffect(() => () => o.Z.wait(() => l.q$()), []);
+  i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
   let y = null != b && b === _,
     A = y ? function() {
-      l.mc(), E(""), v(null)
+      o.mc(), E(""), S(null)
     } : I;
   return (0, r.jsxs)(a.Y0X, {
-    "aria-labelledby": S,
+    "aria-labelledby": v,
     transitionState: n,
     children: [(0, r.jsxs)(a.xBx, {
       justify: d.Z.Justify.BETWEEN,
       separator: !1,
       children: [(0, r.jsx)(a.vwX, {
-        id: S,
+        id: v,
         tag: "h1",
         className: h.marginReset,
         children: g.NW.string(g.t.f8fzk5)
@@ -107,7 +107,7 @@ function b(e) {
                 key: "proxy"
               }],
               onChange: function(e) {
-                v(e)
+                S(e)
               },
               placeholder: "URL Origin Type"
             })

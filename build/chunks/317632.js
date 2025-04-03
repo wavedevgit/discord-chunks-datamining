@@ -1,11 +1,11 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
 var r, i = n(442837),
   a = n(570140),
-  o = n(823379),
-  l = n(981631);
+  l = n(823379),
+  o = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,7 +40,7 @@ function f(e) {
   } catch (e) {
     return null
   }
-  if (e.platform_type === l.ABu.XBOX) {
+  if (e.platform_type === o.ABu.XBOX) {
     var n, r;
     let i = null == t ? void 0 : t.titleId,
       a = null == t ? void 0 : t.inviteToken;
@@ -71,11 +71,11 @@ class h extends(r = i.ZP.Store) {
   }
   isInviteGameInstalled(e) {
     var t;
-    return null === (t = d[e.invite_id]) || void 0 === t ? void 0 : t.installed
+    return null == (t = d[e.invite_id]) ? void 0 : t.installed
   }
   isInviteJoinable(e) {
     var t;
-    return null === (t = d[e.invite_id]) || void 0 === t ? void 0 : t.joinable
+    return null == (t = d[e.invite_id]) ? void 0 : t.joinable
   }
   getLastUnseenInvite() {
     return p
@@ -90,7 +90,7 @@ let g = new h(a.Z, {
     let {
       gameInvites: t
     } = e;
-    u = t.map(f).filter(o.lm)
+    u = t.map(f).filter(l.lm)
   },
   GAME_INVITE_CREATE: function(e) {
     let {

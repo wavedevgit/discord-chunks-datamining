@@ -15,19 +15,19 @@ let m = e => {
   var a, l, m, u, h, g;
   let x;
   x = t(481060).TVs;
-  let v = (0, i.e7)([o.Z], () => o.Z.saturation),
-    [N, p] = (0, c.Cf)(e, null !== (g = null == x ? void 0 : null === (h = x.colors) || void 0 === h ? void 0 : null === (u = h.BACKGROUND_FLOATING) || void 0 === u ? void 0 : null === (m = u.resolve) || void 0 === m ? void 0 : null === (l = m.call(u, {
+  let N = (0, i.e7)([o.Z], () => o.Z.saturation),
+    [p, f] = (0, c.Cf)(e, null != (g = null == x || null == (h = x.colors) || null == (u = h.BACKGROUND_FLOATING) || null == (m = u.resolve) || null == (l = m.call(u, {
       theme: d.BRd.DARK,
-      saturation: v
-    })) || void 0 === l ? void 0 : null === (a = l.hex) || void 0 === a ? void 0 : a.call(l)) && void 0 !== g ? g : "#000");
+      saturation: N
+    })) || null == (a = l.hex) ? void 0 : a.call(l)) ? g : "#000");
   return n.useMemo(() => {
-    let e = (0, r._i)(N),
-      a = (0, r._i)(p);
+    let e = (0, r._i)(p),
+      a = (0, r._i)(f);
     for (let a = 1; a < 8 && !((0, r.Bd)(e) >= .725); a++) e = s()(e).darken(.5).num();
     for (let e = 1; e < 8 && !((0, r.Bd)(a) >= .725); e++) a = s()(a).darken(.5).num();
     return {
       primaryColor: (0, r.Rf)(e),
       secondaryColor: (0, r.Rf)(a)
     }
-  }, [N, p])
+  }, [p, f])
 }

@@ -52,15 +52,12 @@ function P(e) {
 
 function N() {
   var e;
-  let t = f.Z.getChannelId();
+  let t = f.ZP.getChannelId();
   if (null == t) return !1;
-  let n = null === (e = p.Z.getChannel(t)) || void 0 === e ? void 0 : e.getGuildId(),
+  let n = null == (e = p.Z.getChannel(t)) ? void 0 : e.getGuildId(),
     r = !1;
   return j.forEach(e => {
-    if (null != g.Z.getVoiceStateForChannel(t, e)) {
-      j.delete(e);
-      return
-    }
+    if (null != g.Z.getVoiceStateForChannel(t, e)) return void j.delete(e);
     let l = m.default.getUser(e);
     null != l && (r = !0, j.delete(e), S(l, n, t))
   }), r
@@ -71,7 +68,7 @@ function I() {
 }
 class E extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], N)
+    this.waitFor(g.Z, m.default, p.Z, f.ZP), this.syncWith([m.default], N)
   }
   get desyncedVoiceStatesCount() {
     return h.size()
@@ -108,7 +105,7 @@ let Z = new E(s.Z, {
   VOICE_STATE_UPDATES: function(e) {
     let {
       voiceStates: t
-    } = e, n = f.Z.getChannelId();
+    } = e, n = f.ZP.getChannelId();
     return null != n && t.reduce((e, t) => {
       let {
         userId: r,

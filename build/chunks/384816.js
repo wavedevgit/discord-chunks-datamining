@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => Z
 });
@@ -16,15 +16,15 @@ var o = t(442837),
   p = t(250822),
   b = t(771362),
   y = t(280885),
-  v = t(819602),
-  m = t(78806),
-  g = t(900927),
-  I = t(678738),
-  j = t(652853),
+  m = t(819602),
+  g = t(78806),
+  I = t(900927),
+  j = t(678738),
+  v = t(652853),
   h = t(179828),
   _ = t(228168),
   x = t(388032),
-  O = t(323954);
+  O = t(349966);
 
 function Z(e) {
   let {
@@ -35,7 +35,7 @@ function Z(e) {
     onClose: N
   } = e, {
     theme: E
-  } = (0, j.z)(), {
+  } = (0, v.z)(), {
     trackUserProfileAction: S
   } = (0, f.KZ)(), T = null == Z ? void 0 : Z.guildId, C = (0, o.e7)([d.Z], () => null != T ? d.Z.getGuild(T) : null), A = (0, o.e7)([u.Z], () => u.Z.getGuildId()), w = (0, s.Y)({
     userId: n.id,
@@ -55,31 +55,31 @@ function Z(e) {
     }), n.isProvisional && (0, r.jsx)(c.WR, {
       userId: n.id,
       headingColor: "header-secondary"
-    }), w.length > 0 && (0, r.jsx)(I.Z, {
+    }), w.length > 0 && (0, r.jsx)(j.Z, {
       heading: x.NW.string(x.t["Uv/eT0"]),
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         applicationIds: w
       })
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(j.Z, {
       heading: x.NW.string(x.t.a6XYDw),
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(I.Z, {
         userId: n.id,
         guildId: null == Z ? void 0 : Z.guildId,
         tooltipDelay: _.vB
       })
-    }), R.length > 0 && (0, r.jsx)(I.Z, {
+    }), R.length > 0 && (0, r.jsx)(j.Z, {
       heading: x.NW.string(x.t["3fe7U1"]),
       scrollIntoView: P === _.Tb.CONNECTIONS,
-      children: (0, r.jsx)(v.OA, {
+      children: (0, r.jsx)(m.OA, {
         connectedAccounts: R,
         className: O.connections,
         userId: n.id,
         theme: E,
         locale: L
       })
-    }), M.length > 0 && (0, r.jsx)(I.Z, {
+    }), M.length > 0 && (0, r.jsx)(j.Z, {
       heading: x.NW.string(x.t.PHjkRE),
-      children: M.map(e => (0, r.jsx)(v.tH, {
+      children: M.map(e => (0, r.jsx)(m.tH, {
         className: O.appsConnections,
         applicationRoleConnection: e,
         locale: L,
@@ -90,7 +90,7 @@ function Z(e) {
         },
         selectedGuildId: null != A ? A : void 0
       }, e.application.id))
-    }), (0, r.jsx)(I.Z, {
+    }), (0, r.jsx)(j.Z, {
       heading: x.NW.string(x.t["mQKv+v"]),
       scrollIntoView: P === _.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {

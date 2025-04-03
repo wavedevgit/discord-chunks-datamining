@@ -1,6 +1,6 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
-  J: () => h
+  J: () => v
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(481060),
   d = n(70956),
   u = n(388032),
-  _ = n(176120);
+  _ = n(819496);
 
 function m(e) {
   if (null != e) {
@@ -153,7 +153,7 @@ let f = e => {
       })]
     })
   },
-  v = e => {
+  h = e => {
     let {
       countdown: t
     } = e;
@@ -169,7 +169,7 @@ let f = e => {
     })
   };
 
-function h(e) {
+function v(e) {
   let {
     textVariant: t,
     className: n,
@@ -204,7 +204,7 @@ function h(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.digitsContainer,
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(h, {
         countdown: s
       })
     })]

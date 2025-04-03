@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   G: () => a,
   Z: () => s
@@ -57,24 +57,20 @@ function s(e, t) {
         focusedIndex: e.itemCount - 1
       });
     case "UPDATE_ITEM_COUNT":
-      return function(e, t) {
-        let {
-          itemCount: n
-        } = t;
-        return o(l({}, e), {
-          itemCount: n,
-          focusedIndex: Math.min(n - 1, e.focusedIndex)
-        })
-      }(e, t);
+      let {
+        itemCount: n
+      } = t;
+      return o(l({}, e), {
+        itemCount: n,
+        focusedIndex: Math.min(n - 1, e.focusedIndex)
+      });
     case "SET_FOCUSED_INDEX":
-      return function(e, t) {
-        let {
-          index: n
-        } = t;
-        return o(l({}, e), {
-          focusedIndex: Math.max(0, Math.min(n, e.itemCount - 1))
-        })
-      }(e, t);
+      let {
+        index: r
+      } = t;
+      return o(l({}, e), {
+        focusedIndex: Math.max(0, Math.min(r, e.itemCount - 1))
+      });
     case i.Us.SELECT_FOCUSED_ITEM:
       break;
     default:

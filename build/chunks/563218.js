@@ -1,6 +1,6 @@
 /** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => v
+  Z: () => h
 });
 var r = n(200651),
   l = n(192379),
@@ -21,18 +21,18 @@ let E = (e, t) => {
   })
 };
 
-function v(e) {
+function h(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    v = (0, i.e7)([s.Z], () => s.Z.getWindow(g.KJ3.CHANNEL_CALL_POPOUT)),
-    h = (0, m.Z)(),
+    h = (0, i.e7)([s.Z], () => s.Z.getWindow(g.KJ3.CHANNEL_CALL_POPOUT)),
+    v = (0, m.Z)(),
     b = (0, i.e7)([c.ZP], () => c.ZP.getActivityPanelMode());
-  if (null == h || (0, f.Z)((0, d.pY)(h.location)) || b !== p.Ez.PANEL) {
+  if (null == v || (0, f.Z)((0, d.pY)(v.location)) || b !== p.Ez.PANEL) {
     var S;
-    t = null !== (S = null == v ? void 0 : v.window) && void 0 !== S ? S : window
+    t = null != (S = null == h ? void 0 : h.window) ? S : window
   } else t = window;
   let y = l.useRef(null),
     O = l.useMemo(() => {
@@ -40,7 +40,7 @@ function v(e) {
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          E(n, null !== (r = null === (t = y.current) || void 0 === t ? void 0 : t.getBoundingClientRect()) && void 0 !== r ? r : null), e = null
+          E(n, null != (r = null == (t = y.current) ? void 0 : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);

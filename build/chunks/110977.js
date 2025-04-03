@@ -1,25 +1,25 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   S: () => m
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
   s = n(540059),
   c = n(593214),
   u = n(981631),
   d = n(388032),
-  p = n(903082),
-  h = n(398057),
-  f = n(5601);
+  p = n(761168),
+  h = n(714509),
+  f = n(375613);
 
 function g() {
   return (0, r.jsx)("div", {
-    className: l()(h.row, h.rowGuildName),
+    className: o()(h.row, h.rowGuildName),
     children: (0, r.jsx)("span", {
-      className: l()(h.guildNameText, h.guildNameTextLimitedSize, p.tooltipText),
+      className: o()(h.guildNameText, h.guildNameTextLimitedSize, p.tooltipText),
       children: d.NW.string(d.t["4tSWQk"])
     })
   })
@@ -28,7 +28,7 @@ let m = i.memo(function(e) {
   let {
     "aria-label": t = !1,
     children: n
-  } = e, o = (0, s.Q3)("FavoritesAddedTooltip"), l = function() {
+  } = e, l = (0, s.Q3)("FavoritesAddedTooltip"), o = function() {
     let {
       favoriteAdded: e,
       clearFavoriteAdded: t
@@ -45,10 +45,10 @@ let m = i.memo(function(e) {
     }, [e, t]), e
   }();
   return (0, r.jsx)(a.ua7, {
-    forceOpen: l,
+    forceOpen: o,
     color: a.FGA.GREEN,
     hideOnClick: !0,
-    spacing: o ? 12 : 20,
+    spacing: l ? 12 : 20,
     position: "right",
     align: "center",
     text: (0, r.jsx)(g, {}),

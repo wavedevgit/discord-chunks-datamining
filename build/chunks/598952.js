@@ -1,17 +1,17 @@
 /** Chunk was on 53162 **/
 n.d(e, {
-  Z: () => i
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var a = n(481060),
-  o = n(774786);
+  o = n(170086);
 
-function i(t) {
+function l(t) {
   var e;
   let {
     attachment: n
-  } = t, i = Math.round((null !== (e = n.size) && void 0 !== e ? e : 0) / 1024 / 1024 * 100) / 100;
+  } = t, l = Math.round((null != (e = n.size) ? e : 0) / 1024 / 1024 * 100) / 100;
   return (0, r.jsxs)("div", {
     className: o.container,
     children: [(0, r.jsx)(a.ZKT, {
@@ -37,7 +37,7 @@ function i(t) {
     }), (0, r.jsxs)(a.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: [i, "MB"]
+      children: [l, "MB"]
     })]
   })
 }

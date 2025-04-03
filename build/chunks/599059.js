@@ -1,4 +1,4 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
@@ -7,7 +7,7 @@ var r = n(200651),
   a = n(120356),
   s = n.n(a),
   i = n(981631),
-  o = n(508289);
+  o = n(516459);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,26 +21,26 @@ class c extends l.Component {
   componentDidUpdate(e, t) {
     if (t.focused !== this.state.focused && this.state.focused) {
       var n;
-      null === (n = this.inputRef.current) || void 0 === n || n.focus()
+      null == (n = this.inputRef.current) || n.focus()
     }
     null !== this.props.value && this.props.value !== e.value && this.props.value !== this.state.value && u(this.props.value, this.props, this.state) && this.setState({
       value: this.props.value
     })
   }
   render() {
-    let e;
-    let {
-      className: t,
-      name: n,
-      autoComplete: l,
-      maxLen: a,
-      disabled: i
-    } = this.props, E = {
-      position: "absolute",
-      left: 0,
-      width: "100%",
-      opacity: 1
-    };
+    let e, {
+        className: t,
+        name: n,
+        autoComplete: l,
+        maxLen: a,
+        disabled: i
+      } = this.props,
+      E = {
+        position: "absolute",
+        left: 0,
+        width: "100%",
+        opacity: 1
+      };
     return this.state.focused ? e = {
       visibility: "hidden",
       pointerEvents: "none"
@@ -106,7 +106,7 @@ class c extends l.Component {
     }), E(this, "handleKeyPress", e => {
       if (e.which === i.yXg.ENTER) {
         var t;
-        null === (t = this.inputRef.current) || void 0 === t || t.blur()
+        null == (t = this.inputRef.current) || t.blur()
       }
     })
   }

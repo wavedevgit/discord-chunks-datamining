@@ -9,7 +9,7 @@ var n = r(442837),
 
 function c(e) {
   var t;
-  let r = null !== (t = null == e ? void 0 : e.id) && void 0 !== t ? t : null;
+  let r = null != (t = null == e ? void 0 : e.id) ? t : null;
   return (0, n.Wu)([l.ZP, i.Z], () => l.ZP.getChannels(r)[l.Zb].reduce((e, t) => {
     let r = t.channel;
     return r.isGuildStageVoice() && function(e) {

@@ -1,10 +1,10 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 }), n(47120);
 var r = n(284539),
   i = n(477839),
-  s = n(944714);
+  s = n(771382);
 let a = {
   [i.Vx.DEFAULT]: s.default,
   [i.Vx.CAT]: s.cat,
@@ -12,8 +12,8 @@ let a = {
   [i.Vx.PIZZA]: s.pizza
 };
 
-function o() {
+function l() {
   var e;
   let [t] = (0, r.Z)(i.yN.CURSORS);
-  return a[null !== (e = t.selectedCursor) && void 0 !== e ? e : i.Vx.DEFAULT]
+  return a[null != (e = t.selectedCursor) ? e : i.Vx.DEFAULT]
 }

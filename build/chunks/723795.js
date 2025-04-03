@@ -1,4 +1,4 @@
-/** Chunk was on 68562 **/
+/** Chunk was on 9501 **/
 n.d(t, {
   default: () => k
 }), n(47120);
@@ -22,7 +22,7 @@ var a = n(200651),
   h = n(44272),
   I = n(308083),
   y = n(388032),
-  T = n(124254);
+  T = n(179471);
 let v = {
     mass: 1,
     tension: 600,
@@ -66,9 +66,9 @@ let k = function(e) {
     position: w,
     transitionState: q,
     onClose: N
-  } = e, S = (0, l.Dt)(), O = (0, c.e7)([m.Z], () => m.Z.get(k.id)), [R, D] = o.useState(null !== (n = null == O ? void 0 : O.formFields) && void 0 !== n ? n : []), [P, G] = o.useState(!1), [M, W] = o.useState(!1), [A, Z] = o.useState(!1), z = (0, c.e7)([C.default], () => C.default.getCurrentUser()), L = (0, c.e7)([f.ZP], () => f.ZP.isMember(k.id, null == z ? void 0 : z.id), [k, z]), E = (0, c.e7)([p.Z], () => {
+  } = e, S = (0, l.Dt)(), O = (0, c.e7)([m.Z], () => m.Z.get(k.id)), [R, D] = o.useState(null != (n = null == O ? void 0 : O.formFields) ? n : []), [P, G] = o.useState(!1), [M, W] = o.useState(!1), [A, Z] = o.useState(!1), z = (0, c.e7)([C.default], () => C.default.getCurrentUser()), L = (0, c.e7)([f.ZP], () => f.ZP.isMember(k.id, null == z ? void 0 : z.id), [k, z]), E = (0, c.e7)([p.Z], () => {
     var e;
-    return (null === (e = p.Z.getRequest(k.id)) || void 0 === e ? void 0 : e.applicationStatus) === u.wB.SUBMITTED
+    return (null == (e = p.Z.getRequest(k.id)) ? void 0 : e.applicationStatus) === u.wB.SUBMITTED
   }), [Y, V] = o.useState(""), H = o.useRef(() => (0, x._v)({
     guildId: k.id,
     position: w
@@ -131,7 +131,7 @@ let k = function(e) {
       }
     }, [X, N, O, R]),
     J = R.some(e => !(0, _.OA)(e)),
-    K = (null !== (b = null == O ? void 0 : null === (t = O.guild) || void 0 === t ? void 0 : t.approximate_member_count) && void 0 !== b ? b : 0) >= I.Du,
+    K = (null != (b = null == O || null == (t = O.guild) ? void 0 : t.approximate_member_count) ? b : 0) >= I.Du,
     $ = (0, c.e7)([d.Z], () => d.Z.useReducedMotion),
     ee = (0, r.q_F)({
       from: {

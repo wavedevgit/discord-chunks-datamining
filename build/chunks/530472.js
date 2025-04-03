@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,9 +6,9 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(824203),
-  o = n(981631),
-  l = n(388032),
-  s = n(894670);
+  l = n(981631),
+  o = n(388032),
+  s = n(806518);
 
 function c(e) {
   var t;
@@ -17,20 +17,20 @@ function c(e) {
       onDeleteMessage: u,
       children: d
     } = e,
-    p = null === (t = c.interactionMetadata) || void 0 === t ? void 0 : t.ephemerality_reason,
+    p = null == (t = c.interactionMetadata) ? void 0 : t.ephemerality_reason,
     m = () => u(c, !0);
   if (null != p) {
     let e = (0, a.i)(p);
     n = (0, r.jsx)("div", {
       className: s.userAppsBetaContent,
-      children: l.NW.format(l.t.wx1tLS, {
+      children: o.NW.format(o.t.wx1tLS, {
         handleDelete: m,
         reason: e
       })
     })
-  } else n = c.type === o.uaV.STAGE_RAISE_HAND ? l.NW.format(l.t["qDAX+/"], {
+  } else n = c.type === l.uaV.STAGE_RAISE_HAND ? o.NW.format(o.t["qDAX+/"], {
     handleDelete: m
-  }) : l.NW.format(l.t.uX3ecH, {
+  }) : o.NW.format(o.t.uX3ecH, {
     count: 1,
     countMessages: 1,
     handleDelete: m

@@ -1,38 +1,42 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => u
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(747545),
-  l = n(131951),
+  l = n(747545),
+  o = n(131951),
   c = n(388032),
-  d = n(305653);
+  d = n(959963);
+let u = {
+  width: 387,
+  height: 218
+};
 
-function u() {
-  let e = l.Z.getCameraComponent(),
-    t = (0, s.e7)([l.Z], () => l.Z.getVideoDeviceId()),
-    [n, u] = i.useState(!1),
-    m = (0, s.e7)([l.Z], () => l.Z.isVideoAvailable());
+function m() {
+  let e = o.Z.getCameraComponent(),
+    t = (0, s.e7)([o.Z], () => o.Z.getVideoDeviceId()),
+    [n, m] = i.useState(!1),
+    g = (0, s.e7)([o.Z], () => o.Z.isVideoAvailable());
   return n ? (0, r.jsx)("div", {
     className: d.cameraWrapper,
     children: (0, r.jsxs)("div", {
       className: d.camera,
       children: [(0, r.jsx)(e, {
         deviceId: t,
-        width: 387,
-        height: 218,
+        width: u.width,
+        height: u.height,
         disabled: !n
-      }), (0, r.jsx)(o.S, {})]
+      }), (0, r.jsx)(l.S, {})]
     })
   }) : (0, r.jsxs)("div", {
     className: d.cameraWrapper,
     children: [(0, r.jsx)("div", {
       className: d.previewImage
     }), (0, r.jsx)(a.ua7, {
-      text: m ? null : c.NW.string(c.t["8jSzSU"]),
+      text: g ? null : c.NW.string(c.t["8jSzSU"]),
       children: e => {
         var t, n;
         return (0, r.jsx)(a.zxk, (t = function(e) {
@@ -53,8 +57,8 @@ function u() {
           }
           return e
         }({}, e), n = n = {
-          onClick: () => u(!0),
-          disabled: !m,
+          onClick: () => m(!0),
+          disabled: !g,
           children: c.NW.string(c.t.JIf4v7)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p,
@@ -37,7 +37,7 @@ async function u(e) {
           let r = new FileReader;
           r.onload = e => {
             var r;
-            "string" == typeof(null === (r = e.target) || void 0 === r ? void 0 : r.result) ? t(e.target.result): n(Error("Failed to read file"))
+            "string" == typeof(null == (r = e.target) ? void 0 : r.result) ? t(e.target.result): n(Error("Failed to read file"))
           }, r.readAsDataURL(e)
         }
       }),
@@ -94,23 +94,23 @@ let g = e => {
       setLoading: f
     } = e, b = i.createRef(), x = i.useRef(null), [j, N] = i.useState(!1);
     i.useEffect(() => {
-      j && v()
+      j && _()
     }, [j]);
-    let v = () => {
+    let _ = () => {
         null !== x.current && ((0, s.Mr3)(x.current), x.current = null)
       },
-      _ = async e => {
+      v = async e => {
         null == f || f(!0), await m(e, t), N(!0), null == f || f(!1)
       }, C = async e => {
         var t, i, a;
-        if (e.stopPropagation(), e.preventDefault(), (null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null || (null === (a = e.currentTarget) || void 0 === a ? void 0 : null === (i = a.files) || void 0 === i ? void 0 : i.length) === 0) return;
+        if (e.stopPropagation(), e.preventDefault(), (null == (t = e.currentTarget) ? void 0 : t.files) == null || (null == (a = e.currentTarget) || null == (i = a.files) ? void 0 : i.length) === 0) return;
         let l = e.currentTarget.files;
         x.current = await (0, s.ZDy)(async () => {
           let {
             default: e
           } = await n.e("16169").then(n.bind(n, 935333));
           return t => (0, r.jsx)(e, d({
-            processFiles: () => _(l)
+            processFiles: () => v(l)
           }, t))
         })
       };

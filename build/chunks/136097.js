@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   h: () => d,
   p: () => u
@@ -7,16 +7,16 @@ var r = n(192379),
   i = n(913527),
   s = n.n(i),
   a = n(442837),
-  o = n(314897),
-  l = n(673096),
+  l = n(314897),
+  o = n(673096),
   c = n(388032);
 
 function d() {
-  let e = (0, a.cj)([l.Z], () => l.Z.getSessions());
+  let e = (0, a.cj)([o.Z], () => o.Z.getSessions());
   return r.useMemo(() => {
     let t = [...e],
       n = null,
-      r = o.default.getAuthSessionIdHash();
+      r = l.default.getAuthSessionIdHash();
     if (null != r) {
       let e = t.findIndex(e => e.id_hash === r);
       e >= 0 && (n = t.splice(e, 1)[0])

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 }), n(266796);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(600164),
-  o = n(339325),
-  l = n(685786);
+  l = n(841111),
+  o = n(20493);
 
 function c(e) {
   let {
@@ -17,17 +17,17 @@ function c(e) {
   return (0, r.jsx)(r.Fragment, {
     children: t.map((e, t) => (0, r.jsxs)(a.Z, {
       align: a.Z.Align.CENTER,
-      className: s()(l.marginTop20, o.feature, {
-        [o.featureBorder]: 0 !== t
+      className: s()(o.marginTop20, l.feature, {
+        [l.featureBorder]: 0 !== t
       }),
       children: [null != e.icon ? (0, r.jsx)("div", {
-        className: s()(o.icon, e.icon)
+        className: s()(l.icon, e.icon)
       }) : null, (0, r.jsxs)("div", {
         children: [null != e.title ? (0, r.jsx)("div", {
-          className: s()(l.marginBottom8, o.title),
+          className: s()(o.marginBottom8, l.title),
           children: e.title
         }) : null, (0, r.jsx)("div", {
-          className: o.description,
+          className: l.description,
           children: e.description
         })]
       })]

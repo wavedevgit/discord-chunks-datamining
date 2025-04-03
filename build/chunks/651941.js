@@ -19,7 +19,7 @@ let c = {};
 class u extends(r = l.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    c = null !== (t = null == e ? void 0 : e.users) && void 0 !== t ? t : {}
+    c = null != (t = null == e ? void 0 : e.users) ? t : {}
   }
   getState() {
     return {
@@ -29,7 +29,7 @@ class u extends(r = l.ZP.PersistedStore) {
   getKeyTrustedAt(e, t) {
     var n;
     let r = (0, i.MK)(t);
-    return null === (n = c[e]) || void 0 === n ? void 0 : n[r]
+    return null == (n = c[e]) ? void 0 : n[r]
   }
   isKeyVerified(e, t) {
     return null != this.getKeyTrustedAt(e, t)
@@ -49,7 +49,7 @@ let d = new u(o.Z, {
       key: n
     } = e, r = function(e) {
       var t;
-      let n = null !== (t = c[e]) && void 0 !== t ? t : {};
+      let n = null != (t = c[e]) ? t : {};
       return c[e] = n, n
     }(t), l = new Uint8Array(n);
     r[(0, i.MK)(l)] = Date.now()

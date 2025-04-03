@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => N
 }), n(789020);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(601911),
-  o = n(887818),
-  l = n(824856),
+  l = n(887818),
+  o = n(824856),
   c = n(565138),
   d = n(430824),
   u = n(55563),
@@ -17,7 +17,7 @@ var i = n(442837),
   p = n(63487),
   h = n(981631),
   f = n(388032),
-  b = n(499746);
+  b = n(831169);
 
 function N(e) {
   var t;
@@ -29,7 +29,7 @@ function N(e) {
     navigateToHome: _,
     subscriptionGroup: E,
     renewalSkuId: j
-  } = e, O = (0, a.y)(n, 100), C = (0, m.KK)(E.flags), v = C ? s.QTo : s.tBG, S = C ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null === (t = g.metadata) || void 0 === t ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => C && null != T ? d.Z.getGuild(T) : void 0, [T, C]), y = (0, i.e7)([u.Z], () => {
+  } = e, O = (0, a.y)(n, 100), C = (0, m.KK)(E.flags), S = C ? s.QTo : s.tBG, v = C ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null == (t = g.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => C && null != T ? d.Z.getGuild(T) : void 0, [T, C]), y = (0, i.e7)([u.Z], () => {
     if (null != j) return u.Z.get(j)
   }, [j]), A = (0, p.p)(g.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -49,10 +49,10 @@ function N(e) {
           children: [(0, r.jsxs)(s.X6q, {
             variant: "heading-md/normal",
             className: b.subInfoType,
-            children: [(0, r.jsx)(v, {
+            children: [(0, r.jsx)(S, {
               size: "xs",
               color: "currentColor"
-            }), " ", S]
+            }), " ", v]
           }), null != I && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/normal",
@@ -73,7 +73,7 @@ function N(e) {
           })]
         })]
       })]
-    }), (0, r.jsx)(o.Z, {
+    }), (0, r.jsx)(l.Z, {
       children: e => (0, r.jsxs)("div", {
         className: b.planNotice,
         children: [(0, r.jsx)(s.Text, {
@@ -87,13 +87,13 @@ function N(e) {
             variant: "text-md/normal",
             children: f.NW.format(f.t.sqowY2, {})
           })]
-        }), (0, r.jsx)(o.Z.Toggle, {
+        }), (0, r.jsx)(l.Z.Toggle, {
           text: e ? f.NW.string(f.t["1Rkq/P"]) : f.NW.string(f.t.WsTHkZ)
         })]
       })
     }), (0, r.jsxs)("div", {
       className: b.subscriptions,
-      children: [(0, r.jsx)(l.Z, {
+      children: [(0, r.jsx)(o.Z, {
         storeListing: h,
         className: b.activeSubscriptionCard,
         cta: (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function N(e) {
             })
           })]
         })
-      }), N.map(e => e.skuId === j ? (0, r.jsx)(l.Z, {
+      }), N.map(e => e.skuId === j ? (0, r.jsx)(o.Z, {
         storeListing: e,
         cta: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
@@ -142,7 +142,7 @@ function x(e) {
     disableGuildSelector: !0,
     onComplete: i
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(o.Z, {
     storeListing: t,
     cta: (0, r.jsx)(s.zxk, {
       size: s.zxk.Sizes.SMALL,

@@ -22,7 +22,7 @@ var n, s = r(200651),
   v = r(251423),
   C = r(981631),
   O = r(388032),
-  b = r(988827),
+  b = r(576052),
   y = ((n = {})[n.LOGIN_REQUIRED = 0] = "LOGIN_REQUIRED", n[n.SWITCHED = 1] = "SWITCHED", n[n.REMOVED = 2] = "REMOVED", n);
 
 function E(e) {
@@ -81,10 +81,7 @@ function E(e) {
         className: b.userActions,
         children: [!E && (0, s.jsx)(c.zxk, {
           onClick: function() {
-            if (S) {
-              n(0, r.id);
-              return
-            }
+            if (S) return void n(0, r.id);
             x.default.track(C.rMx.MULTI_ACCOUNT_SWITCH_ATTEMPT, {
               location: {
                 section: C.jXE.MANAGE_ACCOUNTS_MODAL
@@ -109,15 +106,13 @@ function E(e) {
                   id: "remove-account",
                   label: O.NW.string(O.t.lSLMaW),
                   action: () => {
-                    (function() {
-                      u.Z.logout(null, r.id).finally(() => {
-                        N.Zd(r.id)
-                      });
-                      let e = {};
-                      null != i ? e.section = C.jXE.MANAGE_ACCOUNTS_MODAL : e.page = C.Usc.LOGIN, x.default.track(C.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
-                        location: e
-                      }), n(2, r.id)
-                    })(), null != t && t()
+                    u.Z.logout(null, r.id).finally(() => {
+                      N.Zd(r.id)
+                    });
+                    let e = {};
+                    null != i ? e.section = C.jXE.MANAGE_ACCOUNTS_MODAL : e.page = C.Usc.LOGIN, x.default.track(C.rMx.MULTI_ACCOUNT_ACCOUNT_REMOVE, {
+                      location: e
+                    }), n(2, r.id), null != t && t()
                   },
                   color: "danger"
                 })

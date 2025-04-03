@@ -1,7 +1,7 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => E,
-  z: () => O
+  z: () => v
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -16,9 +16,9 @@ var i = n(200651),
   h = n(752802),
   f = n(340101),
   m = n(981631),
-  g = n(13923);
+  g = n(678270);
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -37,7 +37,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = 8,
+let v = 8,
   b = e => {
     let {
       participant: t,
@@ -93,11 +93,11 @@ let O = 8,
       widgetId: t,
       height: C,
       pinned: j
-    })), N = (0, c.Z)(n), Z = o === f.C5.VERTICAL, w = 0, P = 0, T = (0, s.Yzy)(Z ? S.map((e, t) => y(v({}, e), {
-      y: (w += e.height + (t > 0 ? O : 0)) - e.height,
+    })), N = (0, c.Z)(n), Z = o === f.C5.VERTICAL, w = 0, P = 0, T = (0, s.Yzy)(Z ? S.map((e, t) => O(y({}, e), {
+      y: (w += e.height + (t > 0 ? v : 0)) - e.height,
       x: 0
-    })) : S.map((e, t) => y(v({}, e), {
-      x: (P += e.width + (t > 0 ? O : 0)) - e.width,
+    })) : S.map((e, t) => O(y({}, e), {
+      x: (P += e.width + (t > 0 ? v : 0)) - e.width,
       y: 0
     })), {
       key: e => e.key,

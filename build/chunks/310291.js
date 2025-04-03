@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -28,10 +28,7 @@ let l = e => {
       groupType: n,
       teamId: i
     } = t, [s, o] = r.useState(!0), [c, d] = r.useState([]), u = r.useCallback(async () => {
-      if (d([]), null == e) {
-        o(!1);
-        return
-      }
+      if (d([]), null == e) return void o(!1);
       try {
         o(!0);
         let t = await a.C(e, {

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => y
@@ -10,7 +10,7 @@ var i = n(780384),
   a = n(410030),
   l = n(293810),
   o = n(388032),
-  c = n(81885),
+  c = n(752651),
   d = n(934961),
   u = n(568294),
   m = n(867861),
@@ -53,7 +53,7 @@ function N() {
   })
 }
 
-function v() {
+function _() {
   let e = (0, a.ZP)();
 
   function t(e) {
@@ -148,7 +148,7 @@ function v() {
   })
 }
 
-function _() {
+function v() {
   return (0, r.jsxs)("div", {
     className: c.earningBenefitCard,
     children: [(0, r.jsx)(s.Text, {
@@ -159,7 +159,7 @@ function _() {
       size: 32
     }), (0, r.jsx)(N, {}), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(_, {})]
   })
 }
 
@@ -219,7 +219,7 @@ function y() {
       size: 24
     }), (0, r.jsxs)("div", {
       className: c.creatorBenefitsContainer,
-      children: [(0, r.jsx)(_, {}), (0, r.jsx)(C, {}), (0, r.jsx)(O, {})]
+      children: [(0, r.jsx)(v, {}), (0, r.jsx)(C, {}), (0, r.jsx)(O, {})]
     })]
   })
 }

@@ -47,7 +47,7 @@ var t = r(200651),
   B = r(474936),
   G = r(981631),
   Y = r(388032),
-  q = r(82235),
+  q = r(18908),
   H = r(834982),
   Q = r(912450),
   X = r(703548),
@@ -277,7 +277,7 @@ function ef(e) {
       u()(e).map("premiumGuildSubscription").map("guildId").forEach(e => {
         if (null != P.Z.getGuild(e)) {
           var r;
-          let t = null !== (r = s.get(e)) && void 0 !== r ? r : 0;
+          let t = null != (r = s.get(e)) ? r : 0;
           s.set(e, t + 1)
         }
       });

@@ -39,7 +39,7 @@ var i = l(120356),
   F = l(228168),
   U = l(981631),
   L = l(616922),
-  z = l(24981);
+  z = l(227832);
 
 function w(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -282,7 +282,7 @@ function D(e) {
   }), _ = (0, S.Z)({
     userId: i.id,
     onAction: v
-  }), I = null === (n = s.extra.entries[0]) || void 0 === n ? void 0 : n.media;
+  }), I = null == (n = s.extra.entries[0]) ? void 0 : n.media;
   return null == I ? null : (0, t.jsxs)(k.Z, {
     ref: _,
     className: c,
@@ -315,12 +315,12 @@ function D(e) {
               }
             }), (0, t.jsx)(G.Z, {
               variant: "text-xs/normal",
-              text: null === (l = I.artists[0]) || void 0 === l ? void 0 : l.name,
+              text: null == (l = I.artists[0]) ? void 0 : l.name,
               onClick: () => {
                 var e;
                 v({
                   action: "OPEN_SPOTIFY_ARTIST"
-                }), (0, f.o)(L.Hw.ARTIST, null === (e = I.artists[0]) || void 0 === e ? void 0 : e.external_id)
+                }), (0, f.o)(L.Hw.ARTIST, null == (e = I.artists[0]) ? void 0 : e.external_id)
               }
             })]
           }), (0, t.jsx)(N.Gk, {

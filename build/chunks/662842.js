@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(692547),
   c = n(481060),
   u = n(232567),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(554747),
   O = n(230900),
   N = n(854698),
-  v = n(703656),
-  y = n(922482),
-  I = n(565799),
+  y = n(703656),
+  I = n(922482),
+  v = n(565799),
   C = n(501655),
   S = n(427679),
   T = n(448206),
@@ -35,7 +35,7 @@ var r = n(200651),
   L = n(981631),
   w = n(765305),
   R = n(388032),
-  D = n(885492);
+  D = n(29504);
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -73,17 +73,17 @@ function U(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = !1
-  } = e, l = (0, _.y)(t.id), U = (0, E.k5)(t.id), G = (0, a.e7)([S.Z], () => S.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), U = (0, E.k5)(t.id), G = (0, o.e7)([S.Z], () => S.Z.getStageInstanceByChannel(null == l ? void 0 : l.id), [l]), {
     isStageNoticeHidden: W,
     isEventNoticeHidden: V
-  } = (0, a.cj)([m.Z], () => ({
+  } = (0, o.cj)([m.Z], () => ({
     isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       stageId: null == G ? void 0 : G.id
     }),
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == U ? void 0 : U.id
     })
-  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, a.Wu)([I.Z], () => [...new Set(I.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, a.e7)([I.Z], () => null != B ? I.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, a.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, a.e7)([Z.default], () => Z.default.getUser(K), [K]);
+  }), [G, U]), B = null == l ? void 0 : l.id, H = (0, o.Wu)([v.Z], () => [...new Set(v.Z.getMutableParticipants(B, C.pV.SPEAKER).map(e => e.user))], [B]), F = (0, o.e7)([v.Z], () => null != B ? v.Z.getParticipantCount(B, C.pV.AUDIENCE) : 0, [B]), z = (0, o.e7)([A.Z], () => A.Z.can(L.Plq.CONNECT, l)), Y = (0, T.Z)(null == l ? void 0 : l.id), K = null == U ? void 0 : U.creator_id, q = (0, o.e7)([Z.default], () => Z.default.getUser(K), [K]);
   i.useEffect(() => {
     null != K && (0, u.PR)(K)
   }, [K]);
@@ -103,8 +103,8 @@ function U(e) {
       stageInstance: n,
       activeChannel: i,
       canConnect: l,
-      myRole: o,
-      eventCreator: a,
+      myRole: a,
+      eventCreator: o,
       speakers: s,
       listenerCount: u,
       isEventNoticeHidden: d,
@@ -131,7 +131,7 @@ function U(e) {
     if (null == t || d) {
       if (_) {
         let e = R.NW.string(R.t.ZYO5OD);
-        return (null == o ? void 0 : o.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != o && (e = R.NW.string(R.t.btSGOj)), {
+        return (null == a ? void 0 : a.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != a && (e = R.NW.string(R.t.btSGOj)), {
           noticeType: 0,
           title: n.topic,
           location: i.name,
@@ -165,117 +165,113 @@ function U(e) {
           })
         }
       }
-    } else {
-      if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
-        let e = R.NW.string(R.t.ZYO5OD);
-        return (null == o ? void 0 : o.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != o && (e = R.NW.string(R.t.btSGOj)), {
-          noticeType: 0,
-          title: n.topic,
-          location: i.name,
-          locationIcon: (0, r.jsx)(c.ewx, {
+    } else if (t.entity_type === w.WX.STAGE_INSTANCE && _) {
+      let e = R.NW.string(R.t.ZYO5OD);
+      return (null == a ? void 0 : a.speaker) ? e = R.NW.string(R.t["/cnSFR"]) : null != a && (e = R.NW.string(R.t.btSGOj)), {
+        noticeType: 0,
+        title: n.topic,
+        location: i.name,
+        locationIcon: (0, r.jsx)(c.ewx, {
+          size: "custom",
+          color: "currentColor",
+          width: 16,
+          height: 16,
+          className: D.locationIcon
+        }),
+        canListenIn: l,
+        buttonText: e,
+        onClose: () => (0, g.ji)({
+          stageId: null == n ? void 0 : n.id
+        }),
+        users: s.length > 5 ? s.slice(0, 5) : s,
+        overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
+          className: D.pill,
+          children: [(0, r.jsx)(c.VWR, {
             size: "custom",
             color: "currentColor",
-            width: 16,
-            height: 16,
-            className: D.locationIcon
-          }),
-          canListenIn: l,
-          buttonText: e,
-          onClose: () => (0, g.ji)({
-            stageId: null == n ? void 0 : n.id
-          }),
-          users: s.length > 5 ? s.slice(0, 5) : s,
-          overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
-            className: D.pill,
-            children: [(0, r.jsx)(c.VWR, {
-              size: "custom",
-              color: "currentColor",
-              width: 12,
-              height: 12,
-              className: D.pillIcon
-            }), (0, r.jsx)(c.Text, {
-              variant: "text-xs/medium",
-              color: "header-secondary",
-              className: D.pillLabel,
-              children: u
-            })]
-          })
-        }
+            width: 12,
+            height: 12,
+            className: D.pillIcon
+          }), (0, r.jsx)(c.Text, {
+            variant: "text-xs/medium",
+            color: "header-secondary",
+            className: D.pillLabel,
+            children: u
+          })]
+        })
       }
-      if (t.entity_type === w.WX.EXTERNAL) {
-        let e = (0, O.cS)(t);
-        if (null == e) return {
-          noticeType: null
-        };
-        let n = f.ZP.getUserCount(t.id, E);
-        return {
-          noticeType: 1,
-          title: t.name,
-          location: (0, b.m)(e, !0),
-          locationIcon: (0, r.jsx)(c._tJ, {
+    } else if (t.entity_type === w.WX.EXTERNAL) {
+      let e = (0, O.cS)(t);
+      if (null == e) return {
+        noticeType: null
+      };
+      let n = f.ZP.getUserCount(t.id, E);
+      return {
+        noticeType: 1,
+        title: t.name,
+        location: (0, b.m)(e, !0),
+        locationIcon: (0, r.jsx)(c._tJ, {
+          size: "custom",
+          color: "currentColor",
+          width: 16,
+          height: 16,
+          className: D.locationIcon
+        }),
+        canListenIn: !1,
+        buttonText: R.NW.string(R.t.iW6Xur),
+        onClose: () => (0, g.ji)({
+          eventId: null == t ? void 0 : t.id
+        }),
+        users: null == o ? [] : [o],
+        overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
+          className: D.pill,
+          children: [(0, r.jsx)(c.r7p, {
             size: "custom",
             color: "currentColor",
-            width: 16,
-            height: 16,
-            className: D.locationIcon
-          }),
-          canListenIn: !1,
-          buttonText: R.NW.string(R.t.iW6Xur),
-          onClose: () => (0, g.ji)({
-            eventId: null == t ? void 0 : t.id
-          }),
-          users: null == a ? [] : [a],
-          overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
-            className: D.pill,
-            children: [(0, r.jsx)(c.r7p, {
-              size: "custom",
-              color: "currentColor",
-              width: 12,
-              height: 12,
-              className: D.pillIcon
-            }), (0, r.jsx)(c.Text, {
-              variant: "text-xs/medium",
-              color: "header-secondary",
-              className: D.pillLabel,
-              children: n
-            })]
-          })
-        }
+            width: 12,
+            height: 12,
+            className: D.pillIcon
+          }), (0, r.jsx)(c.Text, {
+            variant: "text-xs/medium",
+            color: "header-secondary",
+            className: D.pillLabel,
+            children: n
+          })]
+        })
       }
-      if (t.entity_type === w.WX.VOICE && null != i) {
-        let e = (0, p.KS)(i),
-          n = f.ZP.getUserCount(t.id, E);
-        return {
-          noticeType: 2,
-          title: t.name,
-          location: i.name,
-          locationIcon: null != e ? (0, r.jsx)(e, {
-            size: "xs",
+    } else if (t.entity_type === w.WX.VOICE && null != i) {
+      let e = (0, p.KS)(i),
+        n = f.ZP.getUserCount(t.id, E);
+      return {
+        noticeType: 2,
+        title: t.name,
+        location: i.name,
+        locationIcon: null != e ? (0, r.jsx)(e, {
+          size: "xs",
+          color: "currentColor",
+          className: D.locationIcon
+        }) : null,
+        canListenIn: l,
+        buttonText: R.NW.string(R.t.nxUtoa),
+        onClose: () => (0, g.ji)({
+          eventId: null == t ? void 0 : t.id
+        }),
+        users: null == o ? [] : [o],
+        overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
+          className: D.pill,
+          children: [(0, r.jsx)(c.r7p, {
+            size: "custom",
             color: "currentColor",
-            className: D.locationIcon
-          }) : null,
-          canListenIn: l,
-          buttonText: R.NW.string(R.t.nxUtoa),
-          onClose: () => (0, g.ji)({
-            eventId: null == t ? void 0 : t.id
-          }),
-          users: null == a ? [] : [a],
-          overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
-            className: D.pill,
-            children: [(0, r.jsx)(c.r7p, {
-              size: "custom",
-              color: "currentColor",
-              width: 12,
-              height: 12,
-              className: D.pillIcon
-            }), (0, r.jsx)(c.Text, {
-              variant: "text-xs/medium",
-              color: "header-secondary",
-              className: D.pillLabel,
-              children: n
-            })]
-          })
-        }
+            width: 12,
+            height: 12,
+            className: D.pillIcon
+          }), (0, r.jsx)(c.Text, {
+            variant: "text-xs/medium",
+            color: "header-secondary",
+            className: D.pillLabel,
+            children: n
+          })]
+        })
       }
     }
     return {
@@ -339,7 +335,7 @@ function U(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: o()(D.title, D.live),
+      className: a()(D.title, D.live),
       children: X
     }), (0, r.jsxs)("div", {
       className: D.locationContainer,
@@ -353,7 +349,7 @@ function U(e) {
       size: c.zxk.Sizes.SMALL,
       color: c.zxk.Colors.GREEN,
       onClick: () => {
-        if (ee) null != l && null != l.getGuildId() && ((0, y.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+        if (ee) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
         else {
           if (null == U) return;
           (0, h.bO)({

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   DI: () => I,
@@ -21,9 +21,9 @@ var r = n(200651),
   b = n(691886),
   x = n(185923),
   j = n(388032),
-  N = n(204695);
+  N = n(656147);
 
-function v(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -96,7 +96,7 @@ function C(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)("div", _(v({
+      return (0, r.jsxs)("div", v(_({
         className: N.emojiInputContainer
       }, e), {
         children: [(0, r.jsx)(m.Z, {
@@ -128,14 +128,14 @@ function O(e) {
     onDelete: g,
     transitionState: p,
     onClose: h
-  } = e, f = (0, u.Dt)(), b = (0, u.Dt)(), x = (0, u.Dt)(), [v, _] = i.useState(null !== (t = null == s ? void 0 : s.description) && void 0 !== t ? t : ""), [O, y] = i.useState(() => ({
+  } = e, f = (0, u.Dt)(), b = (0, u.Dt)(), x = (0, u.Dt)(), [_, v] = i.useState(null != (t = null == s ? void 0 : s.description) ? t : ""), [O, y] = i.useState(() => ({
     id: null == s ? void 0 : s.emoji_id,
     name: null == s ? void 0 : s.emoji_name
-  })), I = c && "" !== v && (null != O.id || null != O.name);
+  })), I = c && "" !== _ && (null != O.id || null != O.name);
   return (0, r.jsx)("form", {
     onSubmit: function(e) {
       e.preventDefault(), I && (m({
-        description: v,
+        description: _,
         emojiId: O.id,
         emojiName: O.name
       }), h())
@@ -161,10 +161,10 @@ function O(e) {
           titleId: b,
           children: (0, r.jsx)(o.Kx8, {
             placeholder: l,
-            value: v,
+            value: _,
             rows: 1,
             autosize: !0,
-            onChange: _,
+            onChange: v,
             "aria-labelledby": b
           })
         }), (0, r.jsx)(o.LZC, {
@@ -249,7 +249,7 @@ function y(e) {
     descriptionPlaceholder: j.NW.string(j.t.J8O1Li),
     canSubmit: null != g,
     onSave: function(e) {
-      a()(null != g, "Cannot submit null channel"), l(_(v({}, e), {
+      a()(null != g, "Cannot submit null channel"), l(v(_({}, e), {
         channelId: g
       }))
     },
@@ -268,7 +268,7 @@ function I(e) {
     onClose: c,
     onDelete: d,
     guildId: m
-  } = e, [g, p] = i.useState(null !== (t = null == n ? void 0 : n.name) && void 0 !== t ? t : ""), h = (0, u.Dt)(), f = (0, r.jsx)(o.hjN, {
+  } = e, [g, p] = i.useState(null != (t = null == n ? void 0 : n.name) ? t : ""), h = (0, u.Dt)(), f = (0, r.jsx)(o.hjN, {
     title: j.NW.string(j.t.NPOJra),
     titleId: h,
     children: (0, r.jsx)(o.Kx8, {
@@ -288,7 +288,7 @@ function I(e) {
     descriptionPlaceholder: j.NW.string(j.t.ucP4Tk),
     canSubmit: "" !== g,
     onSave: function(e) {
-      a()("" !== g, "Cannot submit empty name"), s(_(v({}, e), {
+      a()("" !== g, "Cannot submit empty name"), s(v(_({}, e), {
         name: g
       }))
     },

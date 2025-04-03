@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   k: () => S
@@ -21,9 +21,9 @@ var r = n(200651),
   x = n(540457),
   j = n(681460),
   N = n(592286),
-  v = n(981631),
-  _ = n(388032),
-  C = n(776360);
+  _ = n(981631),
+  v = n(388032),
+  C = n(350612);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -70,7 +70,7 @@ function E(e) {
     isDropHovered: b,
     focused: x,
     onFocus: j,
-    previewEnabled: v,
+    previewEnabled: _,
     isDragEnabled: O
   } = e, y = i.useRef(null), E = i.useRef(null), [{
     textValue: S,
@@ -90,7 +90,7 @@ function E(e) {
       var n;
       let {
         index: r
-      } = e, i = null === (n = y.current) || void 0 === n ? void 0 : n.getBoundingClientRect(), a = t.getClientOffset();
+      } = e, i = null == (n = y.current) ? void 0 : n.getBoundingClientRect(), a = t.getClientOffset();
       if (null == i || null == a) return;
       let l = (i.bottom - i.top) / 2,
         o = a.y - i.top;
@@ -122,7 +122,7 @@ function E(e) {
           textValue: S,
           richValue: T,
           channel: n,
-          placeholder: _.NW.string(_.t["BRkD4+"]),
+          placeholder: v.NW.string(v.t["BRkD4+"]),
           focused: x,
           onChange: (e, t, n) => {
             let r = t;
@@ -132,8 +132,8 @@ function E(e) {
             })
           },
           onKeyDown: o,
-          canMentionChannels: v,
-          canMentionRoles: v,
+          canMentionChannels: _,
+          canMentionRoles: _,
           maxCharacterCount: N.fn,
           onSubmit: () => Promise.resolve({
             shouldClear: !1,
@@ -169,8 +169,8 @@ function S(e) {
     rules: t,
     setRules: n,
     guild: s
-  } = e, a = s.rulesChannelId, l = s.hasFeature(v.oNc.PREVIEW_ENABLED), c = (0, u.e7)([f.Z], () => null != a ? f.Z.getChannel(a) : null), d = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(s.id)), [g, p] = i.useState(null), [h, I] = i.useState(null), S = i.useCallback(e => {
-    if (t.length !== N.X2) {
+  } = e, a = s.rulesChannelId, l = s.hasFeature(_.oNc.PREVIEW_ENABLED), c = (0, u.e7)([f.Z], () => null != a ? f.Z.getChannel(a) : null), d = (0, u.e7)([b.ZP], () => b.ZP.getDefaultChannel(s.id)), [g, p] = i.useState(null), [h, I] = i.useState(null), S = i.useCallback(e => {
+    if (t.length !== N.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
         r[t.length - 1] = y(O({}, r[t.length - 1]), {
@@ -180,7 +180,6 @@ function S(e) {
         id: o()(),
         value: null != e ? e : ""
       }]), I(t.length)
-    }
   }, [t, n]), T = i.useCallback(() => {
     S(void 0)
   }, [S]), P = (e, r) => {
@@ -203,27 +202,27 @@ function S(e) {
     }
     i ? null !== g && p(null) : r !== g && p(r)
   }, [g, t, n]), Z = t.length === N.X2, D = i.useMemo(() => {
-    let e = Z ? _.NW.formatToPlainString(_.t.tU718P, {
+    let e = Z ? v.NW.formatToPlainString(v.t.tU718P, {
       number: N.X2
     }) : void 0;
     return [{
-      text: _.NW.string(_.t.DXq2oa),
-      onClick: () => S(_.NW.string(_.t.XudkSk)),
+      text: v.NW.string(v.t.DXq2oa),
+      onClick: () => S(v.NW.string(v.t.XudkSk)),
       disabled: Z,
       tooltipText: e
     }, {
-      text: _.NW.string(_.t.nSqTjI),
-      onClick: () => S(_.NW.string(_.t.np91jI)),
+      text: v.NW.string(v.t.nSqTjI),
+      onClick: () => S(v.NW.string(v.t.np91jI)),
       disabled: Z,
       tooltipText: e
     }, {
-      text: _.NW.string(_.t.AtRxsL),
-      onClick: () => S(_.NW.string(_.t.PNIDDA)),
+      text: v.NW.string(v.t.AtRxsL),
+      onClick: () => S(v.NW.string(v.t.PNIDDA)),
       disabled: Z,
       tooltipText: e
     }, {
-      text: _.NW.string(_.t["0K5NJi"]),
-      onClick: () => S(_.NW.string(_.t.HolIDw)),
+      text: v.NW.string(v.t["0K5NJi"]),
+      onClick: () => S(v.NW.string(v.t.HolIDw)),
       disabled: Z,
       tooltipText: e
     }]
@@ -245,13 +244,13 @@ function S(e) {
         isDragEnabled: t.length > 1
       }, e.id))
     }), !Z && (0, r.jsx)(x.A, {
-      text: _.NW.string(_.t.Cq5Jub),
+      text: v.NW.string(v.t.Cq5Jub),
       onClick: T
     }), (0, r.jsx)(m.X6q, {
       variant: "text-xs/bold",
       color: "text-muted",
       className: C.exampleRulesTitle,
-      children: _.NW.string(_.t.XHWj8f)
+      children: v.NW.string(v.t.XHWj8f)
     }), (0, r.jsx)(j.j, {
       pills: D,
       pillClassName: C.pill

@@ -19,10 +19,7 @@ t.exports = function(t, e) {
   var r = t._latestEditorState,
     n = e.data;
   if (n) {
-    if (t.props.handleBeforeInput && u(t.props.handleBeforeInput(n, r, e.timeStamp))) {
-      e.preventDefault();
-      return
-    }
+    if (t.props.handleBeforeInput && u(t.props.handleBeforeInput(n, r, e.timeStamp))) return void e.preventDefault();
     var o = r.getSelection(),
       h = o.getStartOffset(),
       d = o.getAnchorKey();
@@ -48,15 +45,15 @@ t.exports = function(t, e) {
         return e.get("decoratorKey") !== l || e.get("leaves").size !== r.get("leaves").size || o !== s || u !== c || null != l && c - s != a - i
       })
     }
-    if (!y && (y = f && ("'" == n || "/" == n)), y || (y = c(g.getDirectionMap()).get(d) !== c(r.getDirectionMap()).get(d)), y) {
+    if (y || (y = f && ("'" == n || "/" == n)), y || (y = c(g.getDirectionMap()).get(d) !== c(r.getDirectionMap()).get(d)), y) {
       e.preventDefault(), g = i.set(g, {
         forceSelection: !0
       }), t.update(g);
       return
     }
-    g = i.set(g, {
+    t._pendingStateFromBeforeInput = g = i.set(g, {
       nativelyRenderedContent: g.getCurrentContent()
-    }), t._pendingStateFromBeforeInput = g, l(function() {
+    }), l(function() {
       void 0 !== t._pendingStateFromBeforeInput && (t.update(t._pendingStateFromBeforeInput), t._pendingStateFromBeforeInput = void 0)
     })
   }

@@ -120,7 +120,7 @@ var e = n(67867),
       p(tn, t) && (!r || p(H, t)) && tr(e, tn[t])
     }), e
   };
-f || (P(U = (K = function() {
+!f && (P(U = (K = function() {
   if (v(U, this)) throw new Y("Symbol is not a constructor");
   var t = arguments.length && void 0 !== arguments[0] ? x(arguments[0]) : void 0,
     r = L(t),

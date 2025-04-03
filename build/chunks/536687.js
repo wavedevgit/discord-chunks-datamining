@@ -30,7 +30,7 @@ var r = n(200651),
   D = n(46140),
   P = n(981631),
   T = n(388032),
-  k = n(72482);
+  k = n(844136);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function I(e) {
   } = e, V = (0, b.il)(N), B = (0, a.e7)([d.Z], () => d.Z.getState().theme), F = (0, s.wj)(B) ? P.BRd.DARK : P.BRd.LIGHT, Z = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), U = (0, p.aM)(), [q, Y] = l.useState(V.progressSeconds), [W, Q] = l.useState(!1), {
     completedRatio: G,
     completedRatioDisplay: z
-  } = (0, f.I)(N), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = null != (0, b.LM)(N.config), $ = (null === (t = N.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null ? X ? T.NW.string(T.t.WYchdX) : T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), J = l.useCallback(() => {
+  } = (0, f.I)(N), [H, K] = (0, y.G6)(T.NW.string(T.t.RDE0SU), T.NW.string(T.t["+5kSoa"]), 1700), X = null != (0, b.LM)(N.config), $ = (null == (t = N.userStatus) ? void 0 : t.claimedAt) != null ? X ? T.NW.string(T.t.WYchdX) : T.NW.string(T.t.vTgCW1) : T.NW.string(T.t.cfY4PD), J = l.useCallback(() => {
     (0, b.f2)(N.id, {
       content: g.jn.VIDEO_MODAL,
       ctaContent: m.jZ.COPY_QUEST_URL,
@@ -184,8 +184,8 @@ function I(e) {
                 size: c.zxk.Sizes.MEDIUM,
                 quest: N,
                 useReducedMotion: Z,
-                isExpanded: (null === (n = N.userStatus) || void 0 === n ? void 0 : n.completedAt) != null,
-                disabled: (null === (o = N.userStatus) || void 0 === o ? void 0 : o.completedAt) == null,
+                isExpanded: (null == (n = N.userStatus) ? void 0 : n.completedAt) != null,
+                disabled: (null == (o = N.userStatus) ? void 0 : o.completedAt) == null,
                 ctaLabel: $,
                 onClick: () => {
                   ((0, b.xN)(N.config) || (0, b.Bg)(N.config)) && C()

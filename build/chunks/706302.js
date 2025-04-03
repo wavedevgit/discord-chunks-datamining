@@ -10,12 +10,12 @@ function l(e) {
     context: t,
     applicationId: n,
     botUserId: l
-  } = e, o = (0, i.ms)({
+  } = e, a = (0, i.ms)({
     context: t,
     applicationId: n,
     botUserId: l
-  }), a = (0, r.Z)({
+  }), o = (0, r.Z)({
     context: t
   });
-  return o && null != l && !a
+  return a && null != l && !o
 }

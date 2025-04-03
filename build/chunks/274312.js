@@ -25,7 +25,7 @@ class a extends n.Component {
     } = this.state;
     if (null !== t) {
       for (var e, r, n = arguments.length, i = Array(n), a = 0; a < n; a++) i[a] = arguments[a];
-      null === (e = (r = this.props).onReset) || void 0 === e || e.call(r, {
+      null == (e = (r = this.props).onReset) || e.call(r, {
         args: i,
         reason: "imperative-api"
       }), this.setState(o)
@@ -33,7 +33,7 @@ class a extends n.Component {
   }
   componentDidCatch(t, e) {
     var r, n;
-    null === (r = (n = this.props).onError) || void 0 === r || r.call(n, t, e)
+    null == (r = (n = this.props).onError) || r.call(n, t, e)
   }
   componentDidUpdate(t, e) {
     let {
@@ -47,7 +47,7 @@ class a extends n.Component {
         return t.length !== e.length || t.some((t, r) => !Object.is(t, e[r]))
       }(t.resetKeys, n)) {
       var i, a;
-      null === (i = (a = this.props).onReset) || void 0 === i || i.call(a, {
+      null == (i = (a = this.props).onReset) || i.call(a, {
         next: n,
         prev: t.resetKeys,
         reason: "keys"

@@ -1,13 +1,13 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
-  Z: () => v
+  Z: () => N
 }), n(266796), n(653041);
 var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(481060),
-  o = n(594174),
-  a = n(311888),
+  a = n(594174),
+  o = n(311888),
   c = n(63063),
   s = n(5192),
   d = n(431328),
@@ -16,7 +16,7 @@ var i = n(442837),
   g = n(981631),
   _ = n(765305),
   m = n(388032),
-  b = n(808856);
+  b = n(158170);
 
 function x(e) {
   let {
@@ -55,18 +55,18 @@ function p(e) {
   let {
     guild: n,
     channel: l,
-    stageData: a
-  } = e, c = (0, i.e7)([o.default], () => o.default.getCurrentUser(), []), g = {
+    stageData: o
+  } = e, c = (0, i.e7)([a.default], () => a.default.getCurrentUser(), []), g = {
     id: "1337",
     guild_id: n.id,
     channel_id: l.id,
-    topic: a.topic,
-    description: a.description,
-    privacy_level: null !== (t = a.privacyLevel) && void 0 !== t ? t : _.j8.PUBLIC
+    topic: o.topic,
+    description: o.description,
+    privacy_level: null != (t = o.privacyLevel) ? t : _.j8.PUBLIC
   }, m = (0, d.w8)(l.id, u.pV.SPEAKER), x = (0, d.Rk)(l.id, u.pV.AUDIENCE), f = m.slice(0, 5);
   return null == f.find(e => {
     var t;
-    return (null === (t = e.user) || void 0 === t ? void 0 : t.id) === (null == c ? void 0 : c.id)
+    return (null == (t = e.user) ? void 0 : t.id) === (null == c ? void 0 : c.id)
   }) && f.push({
     user: c,
     userNick: s.ZP.getName(n.id, l.id, c)
@@ -89,12 +89,12 @@ function p(e) {
   })
 }
 
-function v(e) {
+function N(e) {
   let {
     guild: t,
     channel: n,
     stageData: i,
-    headerId: o,
+    headerId: a,
     loading: s,
     onNext: d,
     onCancel: u,
@@ -110,7 +110,7 @@ function v(e) {
       children: [(0, r.jsxs)("div", {
         className: b.header,
         children: [(0, r.jsx)(l.X6q, {
-          id: o,
+          id: a,
           className: b.__invalid_title,
           variant: "heading-xl/semibold",
           children: m.NW.string(m.t.GXpXTE)
@@ -138,7 +138,7 @@ function v(e) {
           }),
           text: m.NW.string(m.t.mgGOT0)
         }), (0, r.jsx)(f, {
-          icon: (0, r.jsx)(a.Z, {
+          icon: (0, r.jsx)(o.Z, {
             className: b.badgeIconBackground,
             foreground: b.badgeIconForeground,
             width: 40,

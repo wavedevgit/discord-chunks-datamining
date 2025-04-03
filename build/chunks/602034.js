@@ -1,7 +1,7 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C,
-  r: () => v
+  r: () => y
 });
 var r = n(200651),
   i = n(192379),
@@ -52,7 +52,7 @@ function C(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     parentChannel: t
   } = e, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 });
@@ -23,7 +23,7 @@ function d() {
         optimistic: o,
         reactionType: s
       } = n;
-      !o && s === u.O.BURST && e && !t && (0, a.T6)({
+      o || s !== u.O.BURST || !e || t || (0, a.T6)({
         channelId: i,
         messageId: r,
         emoji: l,

@@ -85,7 +85,7 @@ function N(e) {
     fetchesApplication: E
   }), S = (0, w.Q)(j), N = (0, a.e7)([h.Z], () => h.Z.entrypoint()), T = o.useMemo(() => {
     var e, i, r;
-    if ("channel" !== t.type || g) return null !== (r = null === (e = n.bot) || void 0 === e ? void 0 : e.id) && void 0 !== r ? r : null === (i = (0, b.If)(t, n.id).descriptor) || void 0 === i ? void 0 : i.botId
+    if ("channel" !== t.type || g) return null != (r = null == (e = n.bot) ? void 0 : e.id) ? r : null == (i = (0, b.If)(t, n.id).descriptor) ? void 0 : i.botId
   }, [t, n.id, n.bot, g]), D = (0, p.w1)({
     applicationId: n.id,
     botUserIdForAppDM: T,

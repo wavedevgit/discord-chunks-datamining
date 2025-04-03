@@ -20,10 +20,10 @@ var r = n(200651),
   j = n(272008),
   g = n(497505),
   O = n(918701),
-  C = n(46140),
-  v = n(215023),
+  v = n(46140),
+  C = n(215023),
   x = n(388032),
-  w = n(72523),
+  w = n(696693),
   N = n(557256),
   S = n(639118),
   _ = n(942847);
@@ -35,7 +35,7 @@ function k() {
   a.useEffect(() => {
     if (!t && !e) {
       var n;
-      null === (n = o.current) || void 0 === n || n.play()
+      null == (n = o.current) || n.play()
     }
   }, [t, e]);
   let u = (0, s.q_F)({
@@ -198,10 +198,7 @@ function Z(e) {
         !c && null != i && null != s && i > s && l(!0)
       }, [i, s, c]), a.useEffect(() => {
         (0, j.QB)(e, g.y$.CROSS_PLATFORM, n).then(e => {
-          if ((null == e ? void 0 : e.claimedAt) != null) {
-            o("success");
-            return
-          }
+          if ((null == e ? void 0 : e.claimedAt) != null) return void o("success");
           o("error")
         }).catch(() => {
           o("error")
@@ -222,9 +219,9 @@ function Z(e) {
     w = a.useCallback(() => {
       x(!0), (0, m.mK)({
         openInLayer: !1,
-        tab: v.AW.ORBS,
+        tab: C.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: o.id === C.V6 ? f.Z.INTRO_TO_ORBS_QUEST : f.Z.QUEST_HOME_PAGE
+        analyticsSource: o.id === v.V6 ? f.Z.INTRO_TO_ORBS_QUEST : f.Z.QUEST_HOME_PAGE
       }), b({
         delayMS: 300
       })

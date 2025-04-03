@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => m
 });
 var r = n(200651),
   i = n(192379),
-  o = n(636977),
-  l = n(481060),
+  l = n(636977),
+  o = n(481060),
   a = n(571457),
   s = n(836768),
   c = n(749681),
@@ -20,8 +20,8 @@ let m = i.forwardRef(function(e, t) {
     selected: n,
     onClick: m,
     questId: b,
-    className: v
-  } = e, y = i.useCallback(() => {
+    className: y
+  } = e, _ = i.useCallback(() => {
     (0, a.k5)({
       source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
     });
@@ -31,7 +31,7 @@ let m = i.forwardRef(function(e, t) {
         return (0, c.transitionToGlobalDiscovery)({
           tab: p.GlobalDiscoveryTab.QUESTS,
           location: f.dr.DISCOVERY_COMPASS,
-          questContent: o.j.DISCOVERY_COMPASS,
+          questContent: l.j.DISCOVERY_COMPASS,
           questId: b
         });
       case p.GlobalDiscoveryTab.SERVERS:
@@ -58,12 +58,12 @@ let m = i.forwardRef(function(e, t) {
   return (0, r.jsx)(d.Z, {
     id: "guild-discover-button",
     ref: t,
-    className: v,
+    className: y,
     onClick: () => {
-      y(), void 0 !== m && m()
+      _(), void 0 !== m && m()
     },
     selected: n,
     tooltip: g.NW.string(g.t["4nEZLi"]),
-    icon: l.Jmo
+    icon: o.Jmo
   })
 })

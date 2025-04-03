@@ -1,17 +1,17 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   $: () => h,
   j: () => f
 });
 var r = n(200651),
   i = n(793030),
-  o = n(970731),
-  l = n(713081),
+  l = n(970731),
+  o = n(713081),
   a = n(441536),
   s = n(279604),
-  c = n(296260),
+  c = n(680278),
   u = n(388032),
-  d = n(607936),
+  d = n(423151),
   p = n(942570);
 
 function h(e) {
@@ -20,7 +20,7 @@ function h(e) {
     powerup: n,
     availableBoostCount: i
   } = e, {
-    onActivate: o,
+    onActivate: l,
     isLoading: a
   } = (0, s.ZP)(t, n);
   return (0, r.jsx)(g, {
@@ -41,8 +41,8 @@ function h(e) {
       submitting: a
     },
     secondaryButtonCTA: u.NW.string(c.Z.ivpkNT),
-    onSecondaryClick: () => (0, l.jd)(t),
-    onClick: o
+    onSecondaryClick: () => (0, o.jd)(t),
+    onClick: l
   })
 }
 
@@ -70,7 +70,7 @@ function f(e) {
 
 function g(e) {
   var t, n, {
-      header: l,
+      header: o,
       content: a
     } = e,
     s = function(e, t) {
@@ -78,17 +78,17 @@ function g(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["header", "content"]);
-  return (0, r.jsx)(o.ZP, (t = function(e) {
+  return (0, r.jsx)(l.ZP, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -108,7 +108,7 @@ function g(e) {
   }({}, s), n = n = {
     header: (0, r.jsx)(i.xv, {
       variant: "text-md/semibold",
-      children: l
+      children: o
     }),
     content: (0, r.jsx)(i.xv, {
       variant: "text-sm/medium",
@@ -118,7 +118,7 @@ function g(e) {
     className: d.container,
     headerClassName: d.header,
     contentClassName: d.header,
-    caretPosition: o.DF.LEFT_TOP
+    caretPosition: l.DF.LEFT_TOP
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

@@ -10,7 +10,7 @@ function l(e, t) {
     let e;
     if (Array.isArray(n) ? n.length > 0 && (e = n[0].uri) : e = n.uri, null != e) {
       var l;
-      return null !== (l = r.Z.toURLSafe(e)) && void 0 !== l ? l : void 0
+      return null != (l = r.Z.toURLSafe(e)) ? l : void 0
     }
   }
 }

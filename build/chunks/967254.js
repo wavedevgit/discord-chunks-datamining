@@ -17,11 +17,11 @@ var a = s(200651),
   g = s(788080),
   j = s(467432),
   N = s(451284),
-  v = s(613734),
-  p = s(800530),
+  p = s(613734),
+  v = s(800530),
   f = s(981631),
   S = s(388032),
-  b = s(264130);
+  b = s(202719);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -145,12 +145,12 @@ let E = e => {
           children: e
         })
       };
-      return (0, g.FB)(t) ? (null == t ? void 0 : null === (e = t.guild_metadata) || void 0 === e ? void 0 : e.member_type) !== h.wO.OWNER ? S.NW.format(S.t.rmpEPD, {
-        guildName: null == t ? void 0 : null === (n = t.guild_metadata) || void 0 === n ? void 0 : n.name,
+      return (0, g.FB)(t) ? (null == t || null == (e = t.guild_metadata) ? void 0 : e.member_type) !== h.wO.OWNER ? S.NW.format(S.t.rmpEPD, {
+        guildName: null == t || null == (n = t.guild_metadata) ? void 0 : n.name,
         classification_type: o.description,
         classificationHook: o.descriptionHook
       }) : S.NW.format(S.t.Lb0HVl, (i = T({}, o), r = r = {
-        guildName: null == t ? void 0 : null === (s = t.guild_metadata) || void 0 === s ? void 0 : s.name
+        guildName: null == t || null == (s = t.guild_metadata) ? void 0 : s.name
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var s = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -167,10 +167,10 @@ let E = e => {
         (0, c.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([s.e("25292"), s.e("95477"), s.e("11212"), s.e("22878"), s.e("6536"), s.e("46097"), s.e("25183"), s.e("18831"), s.e("22723")]).then(s.bind(s, 41164));
+          } = await Promise.all([s.e("25292"), s.e("95477"), s.e("11212"), s.e("22878"), s.e("35397"), s.e("46097"), s.e("25183"), s.e("18831"), s.e("74096")]).then(s.bind(s, 41164));
           return t => (0, a.jsx)(e, T({
             classificationId: i,
-            source: p.s.StandingTab
+            source: v.s.StandingTab
           }, t))
         })
       },
@@ -195,10 +195,10 @@ let E = e => {
     } = e, [i, r] = n.useState(!1), [o, d] = n.useState(3), m = (0, N.P)(), h = (0, l.e7)([x.Z], () => x.Z.getIsDsaEligible()), g = n.useMemo(() => s.slice(0, o), [s, o]);
     n.useEffect(() => {
       i && u.default.track(f.rMx.SAFETY_HUB_ACTION, {
-        action: p.n0.ViewViolationsDropdown,
+        action: v.n0.ViewViolationsDropdown,
         account_standing: m.state,
         classification_ids: g.map(e => Number(e.id)),
-        source: p.s.StandingTab,
+        source: v.s.StandingTab,
         is_violative_content_shown: !1,
         is_dsa_eligible: h
       })
@@ -238,8 +238,8 @@ let E = e => {
     })
   },
   w = () => {
-    let e = (0, v.y9)(),
-      t = (0, v.KM)();
+    let e = (0, p.y9)(),
+      t = (0, p.KM)();
     return 0 === e.length && 0 === t.length ? null : (0, a.jsxs)("div", {
       children: [(0, a.jsx)(P, {
         status: "active",

@@ -17,17 +17,15 @@ var i = r(984933),
 function b(e) {
   var t, r;
   let n = (0, u.r1)(e),
-    i = null !== (r = null === (t = o.ZP.getSelfMember(e)) || void 0 === t ? void 0 : t.flags) && void 0 !== r ? r : 0,
+    i = null != (r = null == (t = o.ZP.getSelfMember(e)) ? void 0 : t.flags) ? r : 0,
     a = (0, c.yE)(i, s.q.COMPLETED_ONBOARDING),
     b = l.ZP.getOptedInChannels(e).size > 0;
   return !n && !a && !b
 }
 
 function O(e) {
-  if (b(e)) {
-    f(e);
-    return
-  } {
+  if (b(e)) return void f(e);
+  {
     let t = (0, u.r1)(e);
     (0, a.QG)(e, !t)
   }

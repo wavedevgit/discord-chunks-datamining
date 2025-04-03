@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(266910),
   g = n(352978),
   E = n(928518),
-  v = n(518950),
-  h = n(470956),
+  h = n(518950),
+  v = n(470956),
   b = n(314897),
   S = n(271383),
   y = n(131951),
@@ -29,7 +29,7 @@ var r = n(200651),
   x = n(981631),
   N = n(65154),
   _ = n(388032),
-  w = n(230808);
+  w = n(519417);
 let P = s.EFr.SIZE_80,
   R = s.EFr.SIZE_40;
 
@@ -38,7 +38,7 @@ function A(e) {
     channelId: t,
     participant: n
   } = e;
-  return (0, h.Eu)(t, n.id) ? (0, r.jsx)(s.ua7, {
+  return (0, v.Eu)(t, n.id) ? (0, r.jsx)(s.ua7, {
     text: _.NW.string(_.t.HFwRpq),
     position: "bottom",
     color: s.FGA.GREY,
@@ -86,7 +86,7 @@ function C(e) {
     channel: n,
     inCall: i,
     width: s,
-    paused: h,
+    paused: v,
     selected: A,
     fit: C,
     onVideoResize: T,
@@ -102,7 +102,7 @@ function C(e) {
   } = t, H = W.id === V, G = (0, I.ZP)(t), B = (0, o.e7)([O.Z], () => O.Z.isFocused()), K = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(x.KJ3.CHANNEL_CALL_POPOUT)), q = (0, o.e7)([y.Z], () => null != W.id && y.Z.isLocalVideoDisabled(W.id, (0, f.Z)(t.type)), [W.id, t.type]), J = (0, o.e7)([S.ZP], () => S.ZP.isGuestOrLurker(n.guild_id, W.id)), X = Z.ZP.getName(n.getGuildId(), n.id, W) + (J ? " ".concat(_.NW.string(_.t["pFO/Pj"])) : ""), Q = z && (K || B), $ = s < 124 ? R : P, {
     avatarSrc: ee,
     avatarDecorationSrc: et
-  } = (0, v.Z)({
+  } = (0, h.Z)({
     user: W,
     guildId: n.guild_id,
     size: $,
@@ -134,7 +134,7 @@ function C(e) {
     streamId: Y,
     videoComponent: F,
     fit: C,
-    paused: h,
+    paused: v,
     videoSpinnerContext: W.id === V ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
     userId: W.id
   }, Y) : (0, r.jsx)("div", {

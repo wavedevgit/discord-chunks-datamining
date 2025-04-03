@@ -21,9 +21,9 @@ var C = B(200651),
   n = B(742409),
   M = B(981631),
   L = B(116175),
-  s = B(155174),
+  s = B(817239),
   X = B(388032),
-  c = B(86986);
+  c = B(602268);
 let H = [L.ZD.LEAF, L.ZD.SWORD, L.ZD.HEART, L.ZD.FIRE, L.ZD.WATER_DROP, L.ZD.SKULL, L.ZD.MOON, L.ZD.LIGHTNING, L.ZD.COMPASS, L.ZD.TOADSTOOL],
   G = [{
     primary: "#ff1c90",
@@ -83,15 +83,15 @@ let H = [L.ZD.LEAF, L.ZD.SWORD, L.ZD.HEART, L.ZD.FIRE, L.ZD.WATER_DROP, L.ZD.SKU
     if (null == b || null == Y) return null;
     let N = (0, E.u)(b),
       i = !N || (null == Y ? void 0 : Y.tag) == null,
-      K = null !== (A = Y.badge) && void 0 !== A ? A : H[0],
-      y = null !== (g = Y.badgeColorPrimary) && void 0 !== g ? g : G[0].primary,
-      T = null !== (B = Y.badgeColorSecondary) && void 0 !== B ? B : G[0].secondary,
+      K = null != (A = Y.badge) ? A : H[0],
+      y = null != (g = Y.badgeColorPrimary) ? g : G[0].primary,
+      T = null != (B = Y.badgeColorSecondary) ? B : G[0].secondary,
       O = (0, C.jsxs)(C.Fragment, {
         children: [(0, C.jsx)(t.Z, {
           className: c.section,
           guildId: b.id,
           isDisabled: i,
-          tag: null !== (L = Y.tag) && void 0 !== L ? L : "",
+          tag: null != (L = Y.tag) ? L : "",
           badge: K,
           primaryColor: y,
           secondaryColor: T
@@ -138,7 +138,7 @@ let H = [L.ZD.LEAF, L.ZD.SWORD, L.ZD.HEART, L.ZD.FIRE, L.ZD.WATER_DROP, L.ZD.SKU
                   if (i) {
                     var A;
                     P.Z.updateGuildProfile(b.id, {
-                      tag: null !== (A = Y.tag) && void 0 !== A ? A : "",
+                      tag: null != (A = Y.tag) ? A : "",
                       badge: K,
                       badgeColorPrimary: y,
                       badgeColorSecondary: T

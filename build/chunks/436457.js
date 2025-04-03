@@ -1,4 +1,4 @@
-/** Chunk was on 77805 **/
+/** Chunk was on 57015 **/
 let n, o;
 s.d(t, {
   Z: () => E
@@ -16,7 +16,7 @@ var a = s(200651),
   m = s(782605),
   b = s(981631),
   N = s(388032),
-  h = s(740160);
+  h = s(145575);
 let x = (n = window.GLOBAL_ENV.INVITE_HOST, o = "", null == n && (n = location.host, o = b.Z5c.INVITE("")), "".concat(location.protocol, "//").concat(n).concat(o, "/"));
 
 function E(e) {
@@ -25,18 +25,15 @@ function E(e) {
     onComplete: s,
     onConnect: n,
     isSlideReady: o
-  } = e, [i, E] = r.useState(""), [C, j] = r.useState(!1), [T, I] = r.useState(null), v = r.useRef(null);
+  } = e, [i, E] = r.useState(""), [C, j] = r.useState(!1), [T, I] = r.useState(null), g = r.useRef(null);
   r.useEffect(() => {
     var e;
-    o && (null === (e = v.current) || void 0 === e || e.focus())
+    o && (null == (e = g.current) || e.focus())
   }, [o]);
-  let g = r.useCallback(e => {
+  let v = r.useCallback(e => {
     e.preventDefault();
     let t = i.trim();
-    if ("" === t) {
-      I(N.NW.string(N.t.IRq5am));
-      return
-    }
+    if ("" === t) return void I(N.NW.string(N.t.IRq5am));
     I(null), j(!0);
     let n = t.split("/"),
       o = n[n.length - 1];
@@ -46,10 +43,7 @@ function E(e) {
       let {
         invite: t
       } = e;
-      if (j(!1), null == t) {
-        I(N.NW.string(N.t["GEYI+f"]));
-        return
-      }
+      if (j(!1), null == t) return void I(N.NW.string(N.t["GEYI+f"]));
       if (null != t.channel) {
         let e = d.ZP.getInviteContext("Join Guild", t);
         d.ZP.acceptInvite({
@@ -86,7 +80,7 @@ function E(e) {
         })]
       }), (0, a.jsxs)(c.hzk, {
         children: [(0, a.jsx)("form", {
-          onSubmit: g,
+          onSubmit: v,
           className: h.inputForm,
           children: (0, a.jsx)(c.xJW, {
             title: N.NW.string(N.t.qreV29),
@@ -99,7 +93,7 @@ function E(e) {
               onChange: E,
               className: h.input,
               inputClassName: h.inputInner,
-              inputRef: v
+              inputRef: g
             })
           })
         }), (0, a.jsx)(c.Text, {
@@ -123,7 +117,7 @@ function E(e) {
     footer: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(c.zxk, {
         color: c.zxk.Colors.BRAND,
-        onClick: g,
+        onClick: v,
         disabled: 0 === i.length,
         submitting: C,
         children: N.NW.string(N.t.VJlc0d)

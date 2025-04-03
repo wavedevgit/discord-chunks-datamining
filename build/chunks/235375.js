@@ -1,4 +1,4 @@
-/** Chunk was on 23115 **/
+/** Chunk was on 73488 **/
 "use strict";
 r.r(t), r.d(t, {
   baseRules: () => O,
@@ -57,8 +57,7 @@ let f = l().defaultRules.link,
     link: {
       parse(e, t, r) {
         var n, o;
-        let i;
-        let a = e[2],
+        let i, a = e[2],
           s = a.startsWith("https://discordapp.com/nitro") || a.startsWith("https://discord.com/nitro"),
           l = a.startsWith("https://discordapp.com/hypesquad") || a.startsWith("https://discord.com/hypesquad"),
           p = a.startsWith("/shop/fullscreen?source=1") || a.startsWith("/activities");

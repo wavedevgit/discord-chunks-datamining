@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -17,8 +17,7 @@ var r = n(192379),
   p = n(388032);
 
 function h(e) {
-  let t;
-  let n = (0, o.Ob)(e),
+  let t, n = (0, o.Ob)(e),
     h = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
     f = null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE),
     b = (0, i.e7)([a.default], () => {
@@ -29,10 +28,10 @@ function h(e) {
       error: x,
       loading: j,
       createEnableRequest: N,
-      submittedRequest: v
+      submittedRequest: _
     } = (0, c.Z)(null == e ? void 0 : e.id),
     {
-      loading: _,
+      loading: v,
       error: C,
       refresh: O,
       eligibility: y
@@ -45,7 +44,7 @@ function h(e) {
     {
       isMonetizationReapplicationDisabled: T
     } = (0, s.eC)(null == e ? void 0 : e.id),
-    P = v || (null == y ? void 0 : y.isApplicationPending) === !0,
+    P = _ || (null == y ? void 0 : y.isApplicationPending) === !0,
     w = (null == y ? void 0 : y.canApply) === !0,
     R = p.NW.format(p.t.aJUdOj, {
       faqUrl: l.Z.getArticleURL(g.BhN.CREATOR_FAQ)
@@ -69,8 +68,8 @@ function h(e) {
     resubmissionError: x,
     isGuildOwner: b,
     createEnableRequest: N,
-    resubmittedRequest: v,
-    eligibilityLoading: _,
+    resubmittedRequest: _,
+    eligibilityLoading: v,
     eligibilityError: C,
     refreshEligibility: O,
     eligibility: y,

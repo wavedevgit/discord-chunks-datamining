@@ -42,7 +42,7 @@ function c(e) {
   }({
     className: u
   }, f)) : (0, n.jsx)(a.Z, {
-    color: null !== (r = c.colorString) && void 0 !== r ? r : (0, i.Rf)(s.p6O),
+    color: null != (r = c.colorString) ? r : (0, i.Rf)(s.p6O),
     className: u,
     size: d
   })

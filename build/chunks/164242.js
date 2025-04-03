@@ -1,13 +1,13 @@
 /** Chunk was on 22042 **/
 e.r(a), e.d(a, {
-  default: () => d
+  default: () => u
 });
 var n = e(114095),
   t = e(350666),
   r = e(291642),
   o = e(37391),
   m = e(472189);
-let d = {
+let u = {
   code: "ro",
   formatDistance: n.Z,
   formatLong: t.Z,

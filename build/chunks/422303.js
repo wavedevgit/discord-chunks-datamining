@@ -7,11 +7,11 @@ n.d(t, {
   se: () => s
 }), n(301563), n(757143), n(566702), n(47120), n(230036), n(627494);
 let r = /[\t\n,]/g,
-  i = /\s{2,}/g,
-  l = /[*"']/g;
+  l = /\s{2,}/g,
+  i = /[*"']/g;
 
 function a(e) {
-  return e.split(r).map(e => e.replace(i, " ").trim()).filter(e => e.length > 0)
+  return e.split(r).map(e => e.replace(l, " ").trim()).filter(e => e.length > 0)
 }
 
 function u(e) {
@@ -20,8 +20,8 @@ function u(e) {
 
 function o(e) {
   return e.sort((e, t) => {
-    let n = e.replaceAll(l, ""),
-      r = t.replaceAll(l, "");
+    let n = e.replaceAll(i, ""),
+      r = t.replaceAll(i, "");
     return n.localeCompare(r)
   })
 }

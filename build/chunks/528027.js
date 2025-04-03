@@ -10,7 +10,7 @@ var h = r(120356),
   l = r(377171),
   o = r(403910),
   a = r(549631),
-  s = r(350715);
+  s = r(366523);
 
 function c(e) {
   var t;
@@ -23,7 +23,7 @@ function c(e) {
   return null != p || null != c ? (0, n.jsx)(i.Z, {
     emojiId: null == p ? void 0 : p.id,
     emojiName: null != c ? c : null == p ? void 0 : p.name,
-    animated: null !== (t = null == p ? void 0 : p.animated) && void 0 !== t && t,
+    animated: null != (t = null == p ? void 0 : p.animated) && t,
     className: v()(s.emojiIcon, f)
   }) : (0, n.jsx)(a.Z, {
     className: v()(s.emojiIcon, f),

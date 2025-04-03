@@ -26,9 +26,9 @@ var s = n(200651),
   Z = n(626135),
   C = n(981631),
   I = n(388032),
-  _ = n(199509),
-  E = n(968484),
-  O = n(685786);
+  _ = n(612657),
+  E = n(588866),
+  O = n(20493);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -217,7 +217,7 @@ class S extends r.PureComponent {
     } = this.props;
     return l()(this.state.invites).sortBy(e => {
       var t;
-      return (null !== (t = e.inviter.username) && void 0 !== t ? t : "").toLocaleLowerCase()
+      return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
     }).map(n => (0, s.jsx)(R, {
       invite: n,
       hideDiscriminator: e,

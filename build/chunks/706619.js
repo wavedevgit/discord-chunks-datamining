@@ -20,7 +20,7 @@ function s(e) {
     var e;
     let n = t.current;
     if (null == n) return;
-    let r = new i.TimelineGraphView(n, null !== (e = window.devicePixelRatio) && void 0 !== e ? e : 1);
+    let r = new i.TimelineGraphView(n, null != (e = window.devicePixelRatio) ? e : 1);
     r.backgroundColor = u, r.textColor = d, r.gridColor = h, r.timeOptions = {
       timeStyle: "short"
     }, r.fontFamily = "gg sans", r.fontSize = 11, c.setColor(f), r.addDataSeries(c), r.updateEndDate(), s(r)

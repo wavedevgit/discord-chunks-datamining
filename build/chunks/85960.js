@@ -4,12 +4,12 @@ n.d(t, {
   V9: () => S,
   Z6: () => j,
   jp: () => N,
-  r5: () => g,
+  r5: () => d,
   vT: () => c,
   vh: () => E,
   yU: () => O
 }), n(47120), n(789020), n(411104);
-var r, i, l = n(192379),
+var r, l, i = n(192379),
   a = n(467319),
   u = n(676317),
   o = n(273504),
@@ -80,12 +80,12 @@ let f = {
     defaultActionTypes: new Set
   }
 };
-var E = ((i = {}).MEMBERS = "members", i.CONTENT = "content", i);
-let d = {
+var E = ((l = {}).MEMBERS = "members", l.CONTENT = "content", l);
+let g = {
     members: [f[o.fX.USER_PROFILE]],
     content: [f[o.fX.SERVER_POLICY], f[o.fX.MENTION_SPAM], f[o.fX.ML_SPAM], f[o.fX.DEFAULT_KEYWORD_LIST], f[o.fX.KEYWORD]]
   },
-  g = (e, t) => f[e].flags.has(t);
+  d = (e, t) => f[e].flags.has(t);
 
 function S(e) {
   return Array.from(f[e].availableActionTypes)
@@ -95,18 +95,18 @@ function O(e, t) {
   let {
     id: n,
     eventType: r,
-    triggerType: i,
-    actions: l
-  } = e, a = f[i];
-  if (t.filter(e => n !== e.id && e.triggerType === i).length > a.perGuildMaxCount) throw Error("You have exceeded the maximum number of rules of type ".concat(i));
-  if (l.some(e => !a.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
+    triggerType: l,
+    actions: i
+  } = e, a = f[l];
+  if (t.filter(e => n !== e.id && e.triggerType === l).length > a.perGuildMaxCount) throw Error("You have exceeded the maximum number of rules of type ".concat(l));
+  if (i.some(e => !a.availableActionTypes.has(e.type))) throw Error("You have provided an action that is not available for this trigger type");
   if (r !== a.eventType) throw Error("You have provided an event type that is not available for this trigger type")
 }
 
 function j(e) {
   let t = (0, u.oA)(e);
-  return l.useMemo(() => Object.keys(d).reduce((e, n) => {
-    let r = d[n].filter(e => e.type !== o.fX.SERVER_POLICY && (e.type !== o.fX.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
+  return i.useMemo(() => Object.keys(g).reduce((e, n) => {
+    let r = g[n].filter(e => e.type !== o.fX.SERVER_POLICY && (e.type !== o.fX.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
     return e[n] = r, e
   }, {
     members: [],

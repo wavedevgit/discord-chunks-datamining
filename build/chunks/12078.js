@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -19,7 +19,7 @@ var r = n(200651),
   f = n(981631),
   b = n(570911),
   x = n(388032),
-  j = n(705566);
+  j = n(364313);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function N(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function v(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   let {
     profile: t,
     canManageGuild: n,
@@ -62,7 +62,7 @@ function _(e) {
   } = e, l = (0, c.dQu)(o.Z.colors.BG_BASE_TERTIARY), u = (0, d.q)(t, l.hex());
   return (0, r.jsx)(c.ua7, {
     text: x.NW.string(x.t.W4Nd7e),
-    children: e => (0, r.jsx)(c.P3F, v(N({}, e), {
+    children: e => (0, r.jsx)(c.P3F, _(N({}, e), {
       "aria-disabled": !n,
       tabIndex: n ? 0 : -1,
       "aria-label": x.NW.string(x.t.W4Nd7e),
@@ -144,7 +144,7 @@ function O(e) {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: o
-  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null !== (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && void 0 !== t && t, p = n.id, O = i.useCallback(e => () => {
+  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null != (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && t, p = n.id, O = i.useCallback(e => () => {
     h.Z.updateGuildProfile(p, {
       brandColorPrimary: e,
       customBanner: null
@@ -154,7 +154,7 @@ function O(e) {
     title: x.NW.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: j.grid,
-      children: [(0, r.jsx)(_, {
+      children: [(0, r.jsx)(v, {
         profile: n,
         canManageGuild: o,
         handleClick: O(null),
@@ -166,7 +166,7 @@ function O(e) {
         } = e;
         return (0, r.jsx)(c.ua7, {
           text: t,
-          children: e => (0, r.jsx)(c.P3F, v(N({}, e), {
+          children: e => (0, r.jsx)(c.P3F, _(N({}, e), {
             "aria-disabled": !o,
             tabIndex: o ? 0 : -1,
             "aria-label": t,

@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(913527),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(481060),
   c = n(727637),
   u = n(782568),
@@ -15,16 +15,16 @@ var r = n(200651),
   m = n(594174),
   f = n(55935),
   h = n(388032),
-  g = n(762312);
+  g = n(8298);
 
 function _(e) {
   let {
     invite: t,
     expired: n
-  } = e, a = (0, l.e7)([m.default], () => {
+  } = e, a = (0, o.e7)([m.default], () => {
     var e, n;
-    return null !== (n = null === (e = m.default.getUser(t.inviter_id)) || void 0 === e ? void 0 : e.username) && void 0 !== n ? n : ""
-  }), u = (0, f.vc)(o()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
+    return null != (n = null == (e = m.default.getUser(t.inviter_id)) ? void 0 : e.username) ? n : ""
+  }), u = (0, f.vc)(l()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -88,7 +88,7 @@ function b(e) {
     expired: t,
     invite: n,
     isHoveringInvite: a
-  } = e, o = (0, l.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, l.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
+  } = e, l = (0, o.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, o.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
     f(!0);
     try {
       await (0, p.MH)(n)
@@ -101,14 +101,17 @@ function b(e) {
     } catch (e) {}
     f(!1)
   }, [n]);
-  return t ? o && a ? (0, r.jsx)(s.zxk, {
-    className: g.primaryButton,
-    color: s.Ttl.TRANSPARENT,
-    disabled: m,
-    size: s.PhG.SMALL,
-    onClick: _,
-    children: h.NW.string(h.t["s+J8Dg"])
-  }) : null : o && c ? (0, r.jsx)(s.zxk, {
+  if (t)
+    if (l && a) return (0, r.jsx)(s.zxk, {
+      className: g.primaryButton,
+      color: s.Ttl.TRANSPARENT,
+      disabled: m,
+      size: s.PhG.SMALL,
+      onClick: _,
+      children: h.NW.string(h.t["s+J8Dg"])
+    });
+    else return null;
+  return l && c ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     color: s.Ttl.GREEN,
     disabled: m,

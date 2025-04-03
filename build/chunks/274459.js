@@ -1,6 +1,6 @@
 /** Chunk was on 75862 **/
 n.d(t, {
-  Z: () => v
+  Z: () => h
 }), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -11,20 +11,20 @@ var r = n(200651),
   u = n(607070),
   c = n(70956),
   d = n(456631),
-  f = n(164341);
+  f = n(209767);
 let m = 6 * c.Z.Millis.SECOND,
   p = 2 * c.Z.Millis.SECOND,
   g = 2 * c.Z.Millis.SECOND,
   E = e => "scale(".concat(1 - -(e / 120), ") rotate(").concat(e, "deg)");
 
-function v(e) {
+function h(e) {
   let {
     userId: t,
     voiceChannelEffect: n,
     onComplete: c
   } = e, {
-    emoji: v,
-    sentAt: h
+    emoji: h,
+    sentAt: v
   } = n, b = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), [S, y] = l.useState(!0), O = !b, Z = (0, o.Yzy)(S, {
     from: {
       rotate: -120
@@ -45,12 +45,12 @@ function v(e) {
   });
   return (l.useEffect(() => {
     let e;
-    return Date.now() - h >= g ? (0, d.H)(t) : e = setTimeout(() => {
+    return Date.now() - v >= g ? (0, d.H)(t) : e = setTimeout(() => {
       y(!1), O && (0, d.H)(t)
     }, O ? p : m), () => {
       null != e && clearTimeout(e)
     }
-  }, [h, t, O]), O) ? null : Z((e, t) => {
+  }, [v, t, O]), O) ? null : Z((e, t) => {
     var n;
     let {
       rotate: l
@@ -62,9 +62,9 @@ function v(e) {
       },
       children: (0, r.jsx)(s.Z, {
         className: f.voiceChannelEffectEmoji,
-        emojiId: v.id,
-        emojiName: v.name,
-        animated: null !== (n = v.animated) && void 0 !== n && n
+        emojiId: h.id,
+        emojiName: h.name,
+        animated: null != (n = h.animated) && n
       })
     })
   })

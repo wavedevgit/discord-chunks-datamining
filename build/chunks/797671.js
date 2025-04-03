@@ -1,4 +1,4 @@
-/** Chunk was on 80440 **/
+/** Chunk was on 99927 **/
 a.d(t, {
   default: () => j
 }), a(653041), a(266796), a(47120), a(773603);
@@ -20,13 +20,13 @@ var n = a(200651),
   x = a(324067),
   N = a(430824),
   g = a(259580),
-  v = a(934415),
-  I = a(700785),
+  I = a(934415),
+  v = a(700785),
   B = a(573261),
   C = a(981631),
   W = a(231338),
   E = a(388032),
-  L = a(499687);
+  L = a(720848);
 
 function j(e) {
   var t, a;
@@ -110,7 +110,7 @@ function j(e) {
       value: t.id,
       label: t.name
     }
-  }), [J]), K = null !== (a = null === (t = q.find(e => e.value === U)) || void 0 === t ? void 0 : t.channelIcon) && void 0 !== a ? a : W.Vq, $ = "" !== H;
+  }), [J]), K = null != (a = null == (t = q.find(e => e.value === U)) ? void 0 : t.channelIcon) ? a : W.Vq, $ = "" !== H;
   return (0, n.jsx)("form", {
     onSubmit: function(e) {
       if (e.preventDefault(), !$) return;
@@ -122,7 +122,7 @@ function j(e) {
         permission_overwrites: [{
           id: j,
           type: s.BN.ROLE,
-          allow: I.Hn,
+          allow: v.Hn,
           deny: C.Plq.VIEW_CHANNEL
         }]
       };
@@ -136,8 +136,8 @@ function j(e) {
             var t, a;
             return (0, l.iG)({
               is_private: !0,
-              channel_id: null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.id,
-              channel_type: null == e ? void 0 : null === (a = e.body) || void 0 === a ? void 0 : a.type
+              channel_id: null == e || null == (t = e.body) ? void 0 : t.id,
+              channel_type: null == e || null == (a = e.body) ? void 0 : a.type
             })
           }
         },
@@ -196,7 +196,7 @@ function j(e) {
           children: (0, n.jsx)(c.oil, {
             value: H,
             onChange: function(e) {
-              (0, m.zi)(U) && (e = (0, v.Nj)(e)), P(e)
+              (0, m.zi)(U) && (e = (0, I.Nj)(e)), P(e)
             },
             maxLength: C.HN8,
             placeholder: E.NW.string(E.t["bw/b8P"]),

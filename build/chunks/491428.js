@@ -42,7 +42,7 @@ function E(e, t) {
       event: r.NetworkActionNames.USER_SURVEY_FETCH,
       properties: e => {
         var t;
-        let n = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.survey;
+        let n = null == e || null == (t = e.body) ? void 0 : t.survey;
         return (0, i.iG)({
           key: null == n ? void 0 : n.key
         })
@@ -53,7 +53,7 @@ function E(e, t) {
     var t;
     l.Z.dispatch({
       type: "SURVEY_FETCHED",
-      survey: null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.survey
+      survey: null == e || null == (t = e.body) ? void 0 : t.survey
     })
   }, () => {
     l.Z.dispatch({

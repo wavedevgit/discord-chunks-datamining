@@ -1,4 +1,4 @@
-/** Chunk was on 82218 **/
+/** Chunk was on 15284 **/
 "use strict";
 r.d(t, {
   default: () => x
@@ -18,7 +18,7 @@ var n = r(200651),
   f = r(576386),
   m = r(981631),
   h = r(388032),
-  g = r(112184);
+  g = r(637635);
 
 function x(e) {
   let {
@@ -66,7 +66,7 @@ function y(e) {
     onClose: u
   } = e, p = o.find(e => {
     var r, n;
-    return e.skuId === (null == t ? void 0 : null === (n = t.collectibles) || void 0 === n ? void 0 : null === (r = n.nameplate) || void 0 === r ? void 0 : r.skuId)
+    return e.skuId === (null == t || null == (n = t.collectibles) || null == (r = n.nameplate) ? void 0 : r.skuId)
   }), {
     pendingNameplate: b
   } = (0, d._A)(), [m, x] = (0, i.useState)(() => void 0 !== b ? b : null != p ? p : null), [y, _] = (0, i.useState)(null != m), O = (0, i.useCallback)(e => {

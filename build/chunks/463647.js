@@ -66,6 +66,9 @@ var a = {
   }
 };
 let i = function(e, t, n) {
-  var i, o = a[e];
-  return (i = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", t.toString()), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? i + " 후" : i + " 전" : i
+  var i, r = a[e];
+  if (i = "string" == typeof r ? r : 1 === t ? r.one : r.other.replace("{{count}}", t.toString()), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return i + " 후";
+    else return i + " 전";
+  return i
 }

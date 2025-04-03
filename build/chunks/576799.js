@@ -1,18 +1,18 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(616780),
-  l = n(905405),
+  l = n(616780),
+  o = n(905405),
   s = n(937889),
   c = n(267128),
   u = n(123145),
   d = n(699516),
   p = n(217702),
-  m = n(373232);
+  m = n(848697);
 
 function f(e) {
   let {
@@ -24,10 +24,10 @@ function f(e) {
   } = (0, a.cj)([d.Z], () => ({
     isBlocked: d.Z.isBlockedForMessage(t),
     isIgnored: d.Z.isIgnoredForMessage(t)
-  }), [t]), g = (0, l.p)(), _ = i.useMemo(() => ({
+  }), [t]), g = (0, o.p)(), _ = i.useMemo(() => ({
     [n.guild_id]: [t.author.id]
   }), [n.guild_id, t.author.id]);
-  (0, o.$)(_);
+  (0, l.$)(_);
   let b = i.useMemo(() => null != t.content && "" !== t.content ? (0, s.ZP)(t, {
     formatInline: !0,
     shouldFilterKeywords: g
@@ -47,8 +47,8 @@ function f(e) {
       children: function(e, t, n, i) {
         let {
           contentPlaceholder: a,
-          renderedContent: o,
-          leadingIcon: l,
+          renderedContent: l,
+          leadingIcon: o,
           trailingIcon: s
         } = (0, c.f)(e, t, n, i, m.threadMessageAccessoryContent, {
           trailingIconClass: m.threadMessageAccessoryContentTrailingIcon,
@@ -56,7 +56,7 @@ function f(e) {
           iconSize: p.WW
         });
         return (0, r.jsxs)(r.Fragment, {
-          children: [l, null != o ? o : (0, r.jsx)("span", {
+          children: [o, null != l ? l : (0, r.jsx)("span", {
             className: m.threadMessageAccessoryPlaceholder,
             children: a
           }), s]

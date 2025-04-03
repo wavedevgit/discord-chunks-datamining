@@ -20,7 +20,7 @@ var i = t(200651),
   k = t(981631),
   x = t(372897),
   C = t(388032),
-  Z = t(45257);
+  Z = t(875606);
 
 function A(e) {
   var n;
@@ -28,15 +28,15 @@ function A(e) {
     onClose: t,
     transitionState: A,
     guildId: E
-  } = e, m = (0, l.e7)([c.default], () => c.default.getId()), R = (0, l.e7)([N.ZP], () => N.ZP.getMember(E, m), [E, m]), O = (0, l.e7)([_.Z], () => _.Z.getGuild(E), [E]), P = null !== (n = null == O ? void 0 : O.name) && void 0 !== n ? n : "", p = (0, h.no)(R), {
-    analyticsLocations: v
-  } = (0, d.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [L, M] = (0, I.ww)({
+  } = e, m = (0, l.e7)([c.default], () => c.default.getId()), R = (0, l.e7)([N.ZP], () => N.ZP.getMember(E, m), [E, m]), O = (0, l.e7)([_.Z], () => _.Z.getGuild(E), [E]), P = null != (n = null == O ? void 0 : O.name) ? n : "", p = (0, h.no)(R), {
+    analyticsLocations: L
+  } = (0, d.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [M, U] = (0, I.ww)({
     guildId: E,
-    analyticsLocations: v,
+    analyticsLocations: L,
     openWithoutBackstack: !0
-  }), U = p.has(x.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? C.NW.string(C.t.SpDXIy) : C.NW.string(C.t["QRN+Sk"]);
-  M || (U = C.NW.string(C.t.FFj5Dg));
-  let j = M ? C.NW.string(C.t["/PGQf3"]) : C.NW.string(C.t.WikgZ2);
+  }), j = p.has(x.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? C.NW.string(C.t.SpDXIy) : C.NW.string(C.t["QRN+Sk"]);
+  U || (j = C.NW.string(C.t.FFj5Dg));
+  let v = U ? C.NW.string(C.t["/PGQf3"]) : C.NW.string(C.t.WikgZ2);
   return ((0, o.ZP)(() => {
     g.default.track(k.rMx.OPEN_MODAL, {
       type: f.dc,
@@ -44,10 +44,7 @@ function A(e) {
       other_user_id: m
     })
   }), r.useEffect(() => {
-    if (null == O) {
-      t();
-      return
-    }
+    if (null == O) return void t()
   }, [O, t]), null == O) ? null : (0, i.jsxs)(s.Y0X, {
     transitionState: A,
     size: s.CgR.SMALL,
@@ -82,17 +79,17 @@ function A(e) {
         children: (0, i.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: U
+          children: j
         })
       })
     }), (0, i.jsxs)(s.mzw, {
       children: [(0, i.jsx)(s.zxk, {
         onClick: () => {
-          L(), t()
+          M(), t()
         },
         color: s.zxk.Colors.BRAND,
         look: s.zxk.Looks.FILLED,
-        children: j
+        children: v
       }), (0, i.jsx)(s.zxk, {
         onClick: t,
         color: s.zxk.Colors.PRIMARY,

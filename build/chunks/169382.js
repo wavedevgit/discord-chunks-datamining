@@ -1,11 +1,11 @@
 /** Chunk was on 67127 **/
 n.d(t, {
-  l: () => c
+  l: () => o
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var r = n(192379),
-  o = n(512969);
+  c = n(512969);
 
-function c() {
-  let e = (0, o.TH)();
+function o() {
+  let e = (0, c.TH)();
   return r.useMemo(() => new URLSearchParams(e.search), [e.search])
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => b
+  Z: () => I
 });
 var i, r = n(442837),
   l = n(570140),
@@ -78,7 +78,7 @@ function O(e) {
       if (null == r) return m(t.id);
       let l = h[t.id];
       null != l && l.gameId !== r && m(t.id);
-      let s = null !== (i = null === (n = e.timestamps) || void 0 === n ? void 0 : n.start) && void 0 !== i ? i : Date.now(),
+      let s = null != (i = null == (n = e.timestamps) ? void 0 : n.start) ? i : Date.now(),
         a = {
           userId: t.id,
           activity: e,
@@ -98,23 +98,19 @@ function O(e) {
   }), r
 }
 
-function v() {
-  let e = !1;
-  if (!s.Z.needsRefresh() && !f) {
-    let t;
-    N = {}, h = {}, t = !1, a.Z.getUserIds().forEach(e => {
-      let n = c.default.getUser(e);
-      null != n && (t = O({
-        user: n,
-        activities: a.Z.getActivities(e)
-      }) || t)
-    }), e = t
-  }
-  return f = !s.Z.needsRefresh(), e
+function S() {
+  let e, t = !1;
+  return s.Z.needsRefresh() || f || (N = {}, h = {}, e = !1, a.Z.getUserIds().forEach(t => {
+    let n = c.default.getUser(t);
+    null != n && (e = O({
+      user: n,
+      activities: a.Z.getActivities(t)
+    }) || e)
+  }), t = e), f = !s.Z.needsRefresh(), t
 }
-class S extends(i = r.ZP.Store) {
+class b extends(i = r.ZP.Store) {
   initialize() {
-    this.waitFor(s.Z), this.syncWith([s.Z], v)
+    this.waitFor(s.Z), this.syncWith([s.Z], S)
   }
   get games() {
     return N
@@ -132,8 +128,8 @@ class S extends(i = r.ZP.Store) {
     return h[e]
   }
 }
-d(S, "displayName", "NowPlayingStore");
-let b = new S(l.Z, {
+d(b, "displayName", "NowPlayingStore");
+let I = new b(l.Z, {
   CONNECTION_OPEN: function() {
     N = {}, h = {}
   },

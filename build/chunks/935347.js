@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(392711),
+  s = n.n(o),
   c = n(442837),
   u = n(433517),
   d = n(481060),
@@ -21,11 +21,11 @@ var r = n(200651),
   E = n(215427),
   O = n(820254),
   N = n(358085),
-  v = n(998502),
-  y = n(905656),
-  I = n(981631),
+  y = n(998502),
+  I = n(905656),
+  v = n(981631),
   C = n(388032),
-  S = n(276026);
+  S = n(64648);
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -52,9 +52,9 @@ class P extends i.PureComponent {
       problems: i
     } = this.state, {
       connected: l,
-      soundpack: o
-    } = this.props, a = l && n && !r && !i;
-    e.soundpack !== o && (this._connectedSound = this.createSound()), e.connected !== l || a ? (l && null != this.videoRef && u.K.get(I.wli) && this._connectedSound.play(), this.setState({
+      soundpack: a
+    } = this.props, o = l && n && !r && !i;
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && null != this.videoRef && u.K.get(v.wli) && this._connectedSound.play(), this.setState({
       problems: !1,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -86,12 +86,12 @@ class P extends i.PureComponent {
         },
         children: [(0, r.jsxs)("div", {
           className: S.content,
-          children: [(0, r.jsx)(y.Z, {
+          children: [(0, r.jsx)(I.Z, {
             autoPlay: !0,
             loop: !e,
             setRef: this.setVideoRef,
             onReady: this.handleReady,
-            className: o()(S.spinner, this.state.ready ? S.ready : "")
+            className: a()(S.spinner, this.state.ready ? S.ready : "")
           }), (0, r.jsxs)("div", {
             className: S.text,
             children: [null != t ? null : (0, r.jsx)("div", {
@@ -106,7 +106,7 @@ class P extends i.PureComponent {
             })]
           })]
         }), (0, r.jsxs)("div", {
-          className: o()(S.problems, {
+          className: a()(S.problems, {
             [S.slideIn]: this.state.problems
           }),
           children: [(0, r.jsx)("div", {
@@ -115,7 +115,7 @@ class P extends i.PureComponent {
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsxs)(d.eee, {
               className: S.twitterLink,
-              href: I.yXt.TWITTER_SUPPORT,
+              href: v.yXt.TWITTER_SUPPORT,
               target: "_blank",
               children: [(0, r.jsx)(d.TAi, {
                 size: "xs",
@@ -124,7 +124,7 @@ class P extends i.PureComponent {
               }), C.NW.string(C.t.KlyTbm)]
             }), (0, r.jsxs)(d.eee, {
               className: S.statusLink,
-              href: I.yXt.STATUS,
+              href: v.yXt.STATUS,
               target: "_blank",
               children: [(0, r.jsx)(O.Z, {
                 className: S.icon
@@ -205,7 +205,7 @@ class P extends i.PureComponent {
     }()), T(this, "handleReady", () => {
       this.setState({
         ready: !0
-      }), (0, N.isDesktop)() && (v.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), v.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+      }), (0, N.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
     }), T(this, "setVideoRef", e => {
       this.videoRef = e
     }), T(this, "setProblemsTimeout", () => {
@@ -238,10 +238,10 @@ let j = c.ZP.connectStores([f.Z, E.Z, b.Z, h.Z], () => ({
     connected: n,
     incident: i,
     soundpack: l,
-    reducedMotion: o
+    reducedMotion: a
   } = e;
   return t ? (0, r.jsx)(P, {
-    reducedMotion: o,
+    reducedMotion: a,
     soundpack: l,
     connected: n,
     incident: i

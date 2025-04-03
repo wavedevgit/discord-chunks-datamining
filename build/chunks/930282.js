@@ -1,4 +1,4 @@
-/** Chunk was on 72581 **/
+/** Chunk was on 69620 **/
 n.d(t, {
   HR: () => f,
   L5: () => _,
@@ -15,8 +15,8 @@ var a = n(200651),
   u = n(318713),
   m = n(981631),
   p = n(388032),
-  g = n(373232),
-  h = n(50398);
+  g = n(848697),
+  h = n(73433);
 
 function _(e, t) {
   return e.type === m.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(m.iLy.SOURCE_MESSAGE_DELETED) ? p.NW.string(p.t.JOtgS0) : t
@@ -29,7 +29,7 @@ function f(e, t) {
   } = t, {
     message: r
   } = e;
-  return (0, c.Z)(e, t, ["message"]) && i.content === r.content && i.state === r.state && (null === (n = i.editedTimestamp) || void 0 === n ? void 0 : n.toString()) === (null === (a = r.editedTimestamp) || void 0 === a ? void 0 : a.toString())
+  return (0, c.Z)(e, t, ["message"]) && i.content === r.content && i.state === r.state && (null == (n = i.editedTimestamp) ? void 0 : n.toString()) === (null == (a = r.editedTimestamp) ? void 0 : a.toString())
 }
 let b = i.memo(function(e) {
   var t;
@@ -40,7 +40,7 @@ let b = i.memo(function(e) {
     content: c,
     onUpdate: f,
     contentRef: b
-  } = e, y = r.isEdited(), v = r.state === m.yb.SEND_FAILED, x = r.state === m.yb.SENDING, C = r.isCommandType(), O = null === (t = r.editedTimestamp) || void 0 === t ? void 0 : t.toString(), j = i.useRef(!1);
+  } = e, y = r.isEdited(), x = r.state === m.yb.SEND_FAILED, C = r.state === m.yb.SENDING, v = r.isCommandType(), O = null == (t = r.editedTimestamp) ? void 0 : t.toString(), j = i.useRef(!1);
   return i.useLayoutEffect(() => {
     j.current ? null != f && f() : j.current = !0
   }, [f, r.content, c, O, l]), (0, a.jsxs)("div", {
@@ -48,9 +48,9 @@ let b = i.memo(function(e) {
     ref: b,
     className: o()(n, h.markup, {
       [g.messageContent]: !0,
-      [g.isSending]: x && !C,
+      [g.isSending]: C && !v,
       [g.markupRtl]: "rtl" === s()(r.content),
-      [g.isFailed]: v,
+      [g.isFailed]: x,
       [g.isUnsupported]: r.isUnsupported
     }),
     children: [null != l ? l : _(r, c), y && null != r.editedTimestamp && (0, a.jsxs)(a.Fragment, {

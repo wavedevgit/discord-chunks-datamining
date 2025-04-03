@@ -1,12 +1,12 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
 var r, i = n(442837),
   s = n(570140),
   a = n(626135),
-  o = n(477839),
-  l = n(981631);
+  l = n(477839),
+  o = n(981631);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -33,12 +33,12 @@ function d(e) {
 function u(e, t, n) {
   return {
     pointsByItem: {
-      [o.yN.CLICKER_BUTTON]: 0
+      [l.yN.CLICKER_BUTTON]: 0
     },
     pointsSpent: 0,
     itemContributions: {},
     purchasedItems: {
-      [o.yN.CLICKER_BUTTON]: {
+      [l.yN.CLICKER_BUTTON]: {
         upgrades: {}
       }
     },
@@ -66,21 +66,19 @@ function f() {
 }
 class b extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    if (null != e) {
-      var t, n;
-      t = d({}, u(), e), n = n = {
-        unlockedAchievements: new Set(e.unlockedAchievements)
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(n)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), m = t
-    }
+    var t, n;
+    null != e && (t = d({}, u(), e), n = n = {
+      unlockedAchievements: new Set(e.unlockedAchievements)
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+      var n = Object.keys(e);
+      if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
+      }
+      return n
+    })(Object(n)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+    }), m = t)
   }
   getState() {
     return m
@@ -99,7 +97,7 @@ class b extends(r = i.ZP.PersistedStore) {
   }
   getContributionsForItem(e) {
     var t;
-    return null !== (t = m.itemContributions[e]) && void 0 !== t ? t : 0
+    return null != (t = m.itemContributions[e]) ? t : 0
   }
   get numPurchases() {
     return Object.values(m.purchasedItems).reduce((e, t) => e + Object.values(t.upgrades).reduce((e, t) => e + t, 1), 0)
@@ -119,18 +117,18 @@ class b extends(r = i.ZP.PersistedStore) {
   getNumPurchasesForItemUpgrade(e, t) {
     var n;
     let r = m.purchasedItems[e];
-    return null == r ? 0 : null !== (n = r.upgrades[t]) && void 0 !== n ? n : 0
+    return null == r ? 0 : null != (n = r.upgrades[t]) ? n : 0
   }
   getPurchasedUpgradesForItem(e) {
     var t, n;
-    return null !== (n = null === (t = m.purchasedItems[e]) || void 0 === t ? void 0 : t.upgrades) && void 0 !== n ? n : {}
+    return null != (n = null == (t = m.purchasedItems[e]) ? void 0 : t.upgrades) ? n : {}
   }
   hasUnlockedAchievement(e) {
     return m.unlockedAchievements.has(e)
   }
   getItemMetadata(e) {
     var t;
-    return null === (t = m.purchasedItems[e]) || void 0 === t ? void 0 : t.metadata
+    return null == (t = m.purchasedItems[e]) ? void 0 : t.metadata
   }
   getLastAction() {
     return m.lastAction
@@ -169,17 +167,17 @@ let N = new b(s.Z, {
   CLICKER_GAME_PURCHASE_ITEM: function(e) {
     let {
       id: t
-    } = e, n = (0, o.w2)()[t];
+    } = e, n = (0, l.w2)()[t];
     if (!(f() < n.cost) && (m.pointsSpent += n.cost, m.purchasedItems[t] = {
         upgrades: {}
       }, m.purchasedItems = d({}, m.purchasedItems), m.lastAction = {
         type: "purchase-item",
         id: t
-      }, t === o.yN.COMPLETE_GAME)) {
+      }, t === l.yN.COMPLETE_GAME)) {
       var r;
-      m.endTime = Date.now(), a.default.track(l.rMx.CLICKER_GAME_COMPLETED, {
+      m.endTime = Date.now(), a.default.track(o.rMx.CLICKER_GAME_COMPLETED, {
         duration: Math.floor((m.endTime - m.startTime) / 1e3),
-        num_clicks: null !== (r = m.itemContributions[o.yN.CLICKER_BUTTON]) && void 0 !== r ? r : 0,
+        num_clicks: null != (r = m.itemContributions[l.yN.CLICKER_BUTTON]) ? r : 0,
         total_score: Math.floor(h())
       })
     }
@@ -188,16 +186,16 @@ let N = new b(s.Z, {
     var t, n, r;
     let {
       id: i
-    } = e, s = (0, o.r7)()[i], a = null === (t = m.purchasedItems[s.itemId]) || void 0 === t ? void 0 : t.upgrades;
+    } = e, s = (0, l.r7)()[i], a = null == (t = m.purchasedItems[s.itemId]) ? void 0 : t.upgrades;
     if (null == a) return;
-    let l = null !== (r = a[i]) && void 0 !== r ? r : 0,
+    let o = null != (r = a[i]) ? r : 0,
       c = h();
-    if (null != s.predicate && !(null === (n = s.predicate) || void 0 === n ? void 0 : n.call(s, {
-        numAlreadyPurchased: l,
+    if (null != s.predicate && !(null == (n = s.predicate) ? void 0 : n.call(s, {
+        numAlreadyPurchased: o,
         lifetimePoints: c
       }))) return;
     let u = s.cost({
-      numAlreadyPurchased: l
+      numAlreadyPurchased: o
     });
     f() < u || (m.pointsSpent += u, a[i] = null != a[i] ? a[i] + 1 : 1, m.purchasedItems[s.itemId].upgrades = d({}, a), m.purchasedItems = d({}, m.purchasedItems), m.lastAction = {
       type: "purchase-item-upgrade",

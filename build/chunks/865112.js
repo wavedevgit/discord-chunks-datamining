@@ -1,16 +1,16 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   RB: () => O,
-  VH: () => x,
+  VH: () => y,
   Vi: () => N,
   Vu: () => j,
-  q7: () => E
+  q7: () => v
 });
 var r = n(692547),
   i = n(497089),
   a = n(650473),
-  o = n(389765),
-  l = n(137492),
+  l = n(389765),
+  o = n(137492),
   s = n(387661),
   c = n(659953),
   u = n(319707),
@@ -22,25 +22,25 @@ var r = n(692547),
   g = n(178561),
   _ = n(39863),
   b = n(130312);
-let v = {
+let x = {
     CHECKED: s,
     FRIENDS: u,
     SHARE_SCREEN: _,
     NEW_MESSAGE: h,
     GAME_RELATIONSHIP: p
   },
-  x = {
+  y = {
     MISSED_MESSAGES: f,
     FRIEND_REQUEST_REMINDER: d,
     SCHEDULED_GUILD_EVENT: c,
     TOP_MESSAGES: m,
-    NOTIFICATION_CENTER: l,
+    NOTIFICATION_CENTER: o,
     UPDATE_PROFILE: b,
-    FIND_FRIENDS: o,
-    ADD_FRIEND: o,
+    FIND_FRIENDS: l,
+    ADD_FRIEND: l,
     FIRST_MESSAGE: g
   },
-  y = e => {
+  E = e => {
     switch (e.item_enum) {
       case i.AM.ADD_FRIEND:
         return "ADD_FRIEND";
@@ -54,10 +54,10 @@ let v = {
         return "NOTIFICATION_CENTER"
     }
   },
-  E = e => {
+  v = e => {
     switch (e.type) {
       case "lifecycle_item":
-        return y(e);
+        return E(e);
       case "missed_messages":
         return "MISSED_MESSAGES";
       case "friend_request_reminder":
@@ -75,31 +75,31 @@ let v = {
     switch (e) {
       case i.DY.GO_LIVE_PUSH:
         return {
-          icon: v.SHARE_SCREEN, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: x.SHARE_SCREEN, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.FRIEND_REQUEST_ACCEPTED:
       case i.DY.GAME_FRIEND_REQUEST_ACCEPTED:
         return {
-          icon: v.CHECKED, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
+          icon: x.CHECKED, color: r.Z.colors.STATUS_POSITIVE_BACKGROUND
         };
       case i.DY.FRIEND_REQUEST_PENDING:
       case i.DY.FRIEND_SUGGESTION_CREATED:
         return {
-          icon: v.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: x.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.DY.DM_FRIEND_NUDGE:
         return {
-          icon: v.NEW_MESSAGE, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: x.NEW_MESSAGE, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_FRIEND_REQUESTS:
       case i.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: v.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: x.FRIENDS, color: r.Z.colors.BACKGROUND_ACCENT
         };
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS:
       case i.O7.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
         return {
-          icon: v.GAME_RELATIONSHIP, color: r.Z.colors.BACKGROUND_ACCENT
+          icon: x.GAME_RELATIONSHIP, color: r.Z.colors.BACKGROUND_ACCENT
         };
       default:
         return null

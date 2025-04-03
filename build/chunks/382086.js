@@ -10,10 +10,10 @@ var s = n(481060),
   l = n(540059),
   r = n(626135),
   d = n(109983),
-  o = n(675999),
-  c = n(981631),
+  c = n(675999),
+  o = n(981631),
   C = n(388032),
-  m = n(940553),
+  m = n(661711),
   p = n(43236),
   N = n(142390);
 let u = .5 > Math.random();
@@ -33,9 +33,9 @@ function L(e) {
   });
 
   function T(e) {
-    r.default.track(c.rMx.GUILD_CREATION_INTENT_SELECTED, {
+    r.default.track(o.rMx.GUILD_CREATION_INTENT_SELECTED, {
       skipped: null == e,
-      is_community: e === o.lr.COMMUNITY
+      is_community: e === c.lr.COMMUNITY
     }), L(e)
   }
   return {
@@ -63,21 +63,21 @@ function L(e) {
           children: [(0, i.jsx)(d.Z, {
             icon: g ? s.Nye : p,
             message: C.NW.string(C.t.uE7zcn),
-            onClick: () => T(o.lr.FRIENDS)
+            onClick: () => T(c.lr.FRIENDS)
           }), (0, i.jsx)(d.Z, {
             icon: g ? s.q3d : N,
             message: C.NW.string(C.t.h9Q1lJ),
-            onClick: () => T(o.lr.COMMUNITY)
+            onClick: () => T(c.lr.COMMUNITY)
           })]
         }) : (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: g ? s.q3d : N,
             message: C.NW.string(C.t.h9Q1lJ),
-            onClick: () => T(o.lr.COMMUNITY)
+            onClick: () => T(c.lr.COMMUNITY)
           }), (0, i.jsx)(d.Z, {
             icon: g ? s.Nye : p,
             message: C.NW.string(C.t.uE7zcn),
-            onClick: () => T(o.lr.FRIENDS)
+            onClick: () => T(c.lr.FRIENDS)
           })]
         }), (0, i.jsx)(s.Text, {
           className: m.skip,

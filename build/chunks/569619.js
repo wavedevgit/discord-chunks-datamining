@@ -155,10 +155,7 @@ function I(e) {
 }
 
 function P(e, t) {
-  if (M(e)) {
-    window.scrollTo(0, t);
-    return
-  }
+  if (M(e)) return void window.scrollTo(0, t);
   e.scrollTop = t
 }
 
@@ -1916,7 +1913,7 @@ var eF = {
           o = t.blurInputOnSelect,
           r = t.isMulti,
           i = n.state.selectValue;
-        if (r) {
+        if (r)
           if (n.isOptionSelected(e, i)) {
             var a = n.getOptionValue(e);
             n.setValue(i.filter(function(e) {
@@ -1938,8 +1935,8 @@ var eF = {
             context: {
               value: n.getOptionLabel(e)
             }
-          }))
-        } else n.isOptionDisabled(e, i) ? n.announceAriaLiveSelection({
+          }));
+        else n.isOptionDisabled(e, i) ? n.announceAriaLiveSelection({
           event: "select-option",
           context: {
             value: n.getOptionLabel(e),
@@ -2033,7 +2030,7 @@ var eF = {
           n.focusInput(), r ? (n.inputIsHiddenAfterUpdate = !o, n.onMenuClose()) : n.openMenu("first"), e.preventDefault(), e.stopPropagation()
         }
       }), g(A(A(n)), "onClearIndicatorMouseDown", function(e) {
-        (!e || "mousedown" !== e.type || 0 === e.button) && (n.clearValue(), e.stopPropagation(), n.openAfterFocus = !1, setTimeout(function() {
+        e && "mousedown" === e.type && 0 !== e.button || (n.clearValue(), e.stopPropagation(), n.openAfterFocus = !1, setTimeout(function() {
           return n.focusInput()
         }))
       }), g(A(A(n)), "onScroll", function(e) {
@@ -2083,10 +2080,7 @@ var eF = {
           isFocused: !0
         }), (n.openAfterFocus || n.props.openMenuOnFocus) && n.openMenu("first"), n.openAfterFocus = !1
       }), g(A(A(n)), "onInputBlur", function(e) {
-        if (n.menuListRef && n.menuListRef.contains(document.activeElement)) {
-          n.inputRef.focus();
-          return
-        }
+        if (n.menuListRef && n.menuListRef.contains(document.activeElement)) return void n.inputRef.focus();
         n.props.onBlur && n.props.onBlur(e), n.onInputChange("", {
           action: "input-blur"
         }), n.onMenuClose(), n.setState({
@@ -2094,7 +2088,7 @@ var eF = {
           isFocused: !1
         })
       }), g(A(A(n)), "onOptionHover", function(e) {
-        !n.blockOptionHover && n.state.focusedOption !== e && n.setState({
+        n.blockOptionHover || n.state.focusedOption === e || n.setState({
           focusedOption: e
         })
       }), g(A(A(n)), "shouldHideSelectedOptions", function() {
@@ -2897,8 +2891,8 @@ var eF = {
           i = t.isMulti,
           a = t.name,
           u = this.state.selectValue;
-        if (a && !r) {
-          if (i) {
+        if (a && !r)
+          if (i)
             if (n) {
               var s = u.map(function(t) {
                 return e.getOptionValue(t)
@@ -2908,20 +2902,21 @@ var eF = {
                 type: "hidden",
                 value: s
               })
-            }
-            var l = u.length > 0 ? u.map(function(t, n) {
-              return o.createElement("input", {
-                key: "i-".concat(n),
+            } else {
+              var l = u.length > 0 ? u.map(function(t, n) {
+                return o.createElement("input", {
+                  key: "i-".concat(n),
+                  name: a,
+                  type: "hidden",
+                  value: e.getOptionValue(t)
+                })
+              }) : o.createElement("input", {
                 name: a,
-                type: "hidden",
-                value: e.getOptionValue(t)
-              })
-            }) : o.createElement("input", {
-              name: a,
-              type: "hidden"
-            });
-            return o.createElement("div", null, l)
-          }
+                type: "hidden"
+              });
+              return o.createElement("div", null, l)
+            }
+        else {
           var c = u[0] ? this.getOptionValue(u[0]) : "";
           return o.createElement("input", {
             name: a,
@@ -3233,7 +3228,8 @@ var e_ = function() {
     var t, n;
     return n = t = function(t) {
       function n(e) {
-        h(this, n), g(A(A(t = S(this, C(n).call(this, e)))), "select", void 0), g(A(A(t)), "onChange", function(e, n) {
+        var t;
+        return h(this, n), g(A(A(t = S(this, C(n).call(this, e)))), "select", void 0), g(A(A(t)), "onChange", function(e, n) {
           var o = t.props,
             r = o.getNewOptionData,
             i = o.inputValue,
@@ -3255,11 +3251,9 @@ var e_ = function() {
             return
           }
           u(e, n)
-        });
-        var t, o = e.options || [];
-        return t.state = {
+        }), t.state = {
           newOption: void 0,
-          options: o
+          options: e.options || []
         }, t
       }
       return y(n, t), v(n, [{

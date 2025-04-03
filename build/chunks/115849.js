@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(512722),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(512722),
+  s = n.n(o),
   c = n(481060),
   u = n(194359),
   d = n(313201),
@@ -16,8 +16,8 @@ var r = n(200651),
   f = n(981631),
   g = n(420212),
   m = n(388032),
-  b = n(319975),
-  _ = n(685786);
+  b = n(28898),
+  _ = n(20493);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,26 +51,26 @@ function O(e, t) {
   }), e
 }
 let N = n(349181),
-  v = {
+  y = {
     canSend: !1,
     hint: null,
     success: null,
     error: null
   },
-  y = (0, d.hQ)(),
-  I = "".concat(y, "-decription"),
-  C = "".concat(y, "-error");
+  I = (0, d.hQ)(),
+  v = "".concat(I, "-decription"),
+  C = "".concat(I, "-error");
 
 function S(e, t) {
   switch (t.type) {
     case "RESET":
-      return v;
+      return y;
     case "SUCCESS":
-      return O(E({}, v), {
+      return O(E({}, y), {
         success: t.text
       });
     case "HINT":
-      return O(E({}, v), {
+      return O(E({}, y), {
         canSend: !0,
         hint: t.text
       });
@@ -85,9 +85,9 @@ function S(e, t) {
 function T() {
   let e = i.createRef(),
     t = i.createRef(),
-    [n, l] = i.useReducer(S, v),
+    [n, l] = i.useReducer(S, y),
     {
-      canSend: a,
+      canSend: o,
       hint: d,
       success: E,
       error: O
@@ -101,13 +101,10 @@ function T() {
       let n = e.current.value.trim();
       !n.includes("#") && n.startsWith("@") && (n = n.substring(1));
       let r = (0, h.Zy)(n);
-      if (null != r) {
-        l({
-          type: "ERROR",
-          text: r
-        });
-        return
-      }
+      if (null != r) return void l({
+        type: "ERROR",
+        text: r
+      });
       u.Z.sendRequest({
         discordTag: n,
         context: {
@@ -122,7 +119,7 @@ function T() {
         var t;
         return l({
           type: "ERROR",
-          text: (0, h.NF)(null === (t = e.body) || void 0 === t ? void 0 : t.code, n)
+          text: (0, h.NF)(null == (t = e.body) ? void 0 : t.code, n)
         })
       })
     },
@@ -130,7 +127,7 @@ function T() {
     children: [(0, r.jsxs)("div", {
       className: b.addFriendWumpusWrapper,
       children: [(0, r.jsx)(c.R94, {
-        id: I,
+        id: v,
         type: c.R94.Types.DESCRIPTION,
         children: (0, r.jsx)(c.Text, {
           tag: "div",
@@ -147,12 +144,12 @@ function T() {
       ringClassName: b.ring,
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: o()(b.addFriendInputWrapper, {
+        className: a()(b.addFriendInputWrapper, {
           [b.success]: E,
           [b.error]: O
         }),
         children: [(0, r.jsx)(c.oil, {
-          id: y,
+          id: I,
           inputRef: e,
           className: b.addFriendInput,
           inputClassName: b.input,
@@ -163,17 +160,14 @@ function T() {
               let r = n.indexOf("#"),
                 i = e.current.selectionStart,
                 l = t.key === g.mR.Backspace || t.key === g.mR.ArrowRight || t.key === g.mR.ArrowLeft,
-                o = t.which >= 48 && t.which <= 57;
-              null != i && i > r && /^(.+?#\d{4})$/.test(n) && !l ? t.preventDefault() : null == i || !(i > r) || o || l || t.preventDefault()
+                a = t.which >= 48 && t.which <= 57;
+              null != i && i > r && /^(.+?#\d{4})$/.test(n) && !l ? t.preventDefault() : null == i || !(i > r) || a || l || t.preventDefault()
             }
           },
           onChange: e => {
-            if (e.length <= 0) {
-              l({
-                type: "RESET"
-              });
-              return
-            }
+            if (e.length <= 0) return void l({
+              type: "RESET"
+            });
             let t = "",
               [, n] = e.split("#");
             null != n && (t = e + f.LYt.slice(null != n ? n.length + 1 : 0)), l({
@@ -191,14 +185,14 @@ function T() {
           placeholder: m.NW.string(m.t["Rn/sLi"]),
           "aria-label": m.NW.string(m.t["Rn/sLi"]),
           "aria-invalid": null != O || void 0,
-          "aria-describedby": null != O ? C : I
+          "aria-describedby": null != O ? C : v
         }), null != d && (0, r.jsx)("div", {
           className: b.addFriendHint,
           "aria-hidden": !0,
           children: d
         }), (0, r.jsx)(c.zxk, {
           size: c.zxk.Sizes.SMALL,
-          disabled: !a,
+          disabled: !o,
           type: "submit",
           children: m.NW.string(m.t["PMsq/f"])
         })]

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => b
 });
@@ -23,21 +23,21 @@ function b(e) {
   let {
     channel: _,
     children: C
-  } = e, v = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
+  } = e, y = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
   (0, a.Z)(_.id);
-  let y = (0, s.Z)(_.id),
-    x = _.isSystemDM(),
-    j = v && !x && !_.isMultiUserDM(),
+  let x = (0, s.Z)(_.id),
+    v = _.isSystemDM(),
+    j = y && !v && !_.isMultiUserDM(),
     O = {};
-  if (x) {
-    let e = y ? (0, r.jsxs)(r.Fragment, {
+  if (v) {
+    let e = x ? (0, r.jsxs)(r.Fragment, {
       children: [g.NW.string(g.t["+KSnWV"]), (0, r.jsx)(l.rgF, {
         size: "xs",
         color: c.Z.HEADER_PRIMARY
       })]
     }) : g.NW.string(g.t.hvVgAQ);
     O.message = g.NW.string(g.t.Bt2N7O), O.subtitle = g.NW.string(g.t["n/Vzk5"]), O.buttonText = e, O.onButtonClick = () => {
-      if (y) {
+      if (x) {
         open(m.D2), d.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
           target: m.D2

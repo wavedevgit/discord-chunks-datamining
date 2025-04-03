@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(695346),
   g = n(494620),
   _ = n(592125),
-  v = n(650774),
-  j = n(430824),
+  j = n(650774),
+  v = n(430824),
   b = n(131951),
   S = n(944486),
   C = n(594174),
@@ -41,8 +41,8 @@ var r = n(200651),
   D = n(981631),
   G = n(526761),
   U = n(388032),
-  B = n(162251),
-  z = n(740400);
+  B = n(14383),
+  z = n(347226);
 
 function F(e) {
   let {
@@ -89,7 +89,7 @@ function H(e) {
   let {
     onChange: t,
     guildId: n
-  } = e, l = (0, o.e7)([j.Z], () => j.Z.getGuild(n));
+  } = e, l = (0, o.e7)([v.Z], () => v.Z.getGuild(n));
   return null == l ? (t(), null) : (0, r.jsx)(a.xJW, {
     title: U.NW.string(U.t.WC3u3t),
     className: z.modalContent,
@@ -137,9 +137,9 @@ function V(e) {
 function Y(e) {
   let {
     guildId: t
-  } = e, n = (0, o.e7)([v.Z], () => {
+  } = e, n = (0, o.e7)([j.Z], () => {
     var e;
-    return null !== (e = v.Z.getMemberCount(t)) && void 0 !== e ? e : 0
+    return null != (e = j.Z.getMemberCount(t)) ? e : 0
   }), i = p.eo.useSetting(), c = l.useCallback((e, t) => {
     p.eo.updateSetting(t), y.default.track(D.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: t
@@ -215,8 +215,8 @@ function K(e) {
     selectSource: h,
     selectGuild: x,
     sound: p,
-    previewDisabled: v,
-    onClose: j,
+    previewDisabled: j,
+    onClose: v,
     onChangeSelectedFPS: N,
     onChangeSelectedResolution: y,
     onChangeSelectedPreset: Z,
@@ -272,7 +272,7 @@ function K(e) {
       className: B.hardwareWarning,
       children: U.NW.format(U.t.zCLXws, {
         onClick: () => {
-          j(), c.Z.open(D.oAB.VOICE, null, {
+          v(), c.Z.open(D.oAB.VOICE, null, {
             scrollPosition: G.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         }
@@ -282,13 +282,13 @@ function K(e) {
       selectedFPS: n,
       selectedResolution: a,
       targetGuildPremiumTier: m,
-      onClose: j,
+      onClose: v,
       onFPSChange: N,
       onResolutionChange: y,
       onPresetChange: Z,
       captureDeviceSelected: et
     }), (0, r.jsx)(X, {
-      enabled: v,
+      enabled: j,
       onChange: z
     })]
   })

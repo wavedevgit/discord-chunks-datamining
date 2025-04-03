@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   l: () => F
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   f = n(659580),
   p = n(795318),
   g = n(53691),
-  v = n(457165),
-  h = n(221241),
+  h = n(457165),
+  v = n(221241),
   b = n(594174),
   y = n(626135),
   x = n(111361),
@@ -33,9 +33,9 @@ var r = n(200651),
   T = n(981631),
   L = n(354459),
   k = n(474936),
-  Z = n(938779),
+  Z = n(722565),
   D = n(388032),
-  A = n(113124);
+  A = n(130802);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,7 +130,7 @@ function F(e) {
   });
   let {
     simplifiedSettingsEnabled: en
-  } = (0, h.Z)({
+  } = (0, v.Z)({
     location: "VoiceFiltersPopout"
   }), er = i.useCallback(() => R(""), [R]);
   return (0, r.jsx)(m.Gt, {
@@ -189,7 +189,7 @@ function F(e) {
               showUpsell: !0,
               text: D.NW.format(D.t["XMDm8/"], {
                 nitroTierName: (0, j.Px)(k.p9.TIER_2),
-                onClick: () => (0, v.i)()
+                onClick: () => (0, h.i)()
               }),
               button: D.NW.string(D.t.cRCCJy),
               buttonAnalyticsObject: {
@@ -233,7 +233,7 @@ function F(e) {
               var n;
               y.default.track(T.rMx.VOICE_FILTER_VOICE_SETTINGS_CLICKED, {
                 active_voice_filter_id: null != J ? J : null
-              }), null === (n = e.onClick) || void 0 === n || n.call(e, t)
+              }), null == (n = e.onClick) || n.call(e, t)
             },
             children: (0, r.jsx)(c.Huf, {
               size: "custom",

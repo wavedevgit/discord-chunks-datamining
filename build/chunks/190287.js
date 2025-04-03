@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(999382),
   m = n(185923),
   g = n(388032),
-  p = n(157264);
+  p = n(727138);
 let h = e => {
     var t;
     let {
@@ -27,14 +27,14 @@ let h = e => {
       reasonMaxLength: x,
       placeholder: j,
       position: N
-    } = e, [v, _] = i.useState(!1), C = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
+    } = e, [_, v] = i.useState(!1), C = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: p.reasonContainer,
       children: [(0, r.jsx)(a.yRy, {
         onRequestClose: () => {
-          _(!1)
+          v(!1)
         },
-        shouldShow: v,
+        shouldShow: _,
         position: "right",
         align: "top",
         animation: a.yRy.Animation.NONE,
@@ -55,7 +55,7 @@ let h = e => {
           children: (0, r.jsx)(o.Z, {
             active: !1,
             onClick: () => {
-              _(!0)
+              v(!0)
             },
             tabIndex: 0,
             renderButtonContents: null != d ? () => (0, r.jsx)(l.Z, {
@@ -76,7 +76,7 @@ let h = e => {
             g(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(N, "-").concat(C)), (null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0) > 0 || null != d ? (0, r.jsx)(a.zxk, {
+        }, "text-input-".concat(N, "-").concat(C)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != d ? (0, r.jsx)(a.zxk, {
           className: p.clearStatusButton,
           onClick: f,
           look: a.zxk.Looks.BLANK,

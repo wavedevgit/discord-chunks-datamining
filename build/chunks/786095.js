@@ -1,6 +1,6 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => E
+  Z: () => v
 }), n(47120), n(301563);
 var r = n(200651),
   i = n(192379),
@@ -17,9 +17,9 @@ var r = n(200651),
   b = n(981631),
   p = n(273504),
   h = n(388032),
-  v = n(629349);
+  y = n(466745);
 
-function y(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function N(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,13 +50,13 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = p.fX.KEYWORD;
+let E = p.fX.KEYWORD;
 
-function E(e, t) {
+function v(e, t) {
   let {
     perGuildMaxCount: n
-  } = c.I6[O], {
-    isLoading: E,
+  } = c.I6[E], {
+    isLoading: v,
     saveRule: j,
     errorMessage: S
   } = (0, d.w)(), {
@@ -66,7 +66,7 @@ function E(e, t) {
     updateRule: M
   } = (0, s.pH)(t), w = i.useMemo(() => {
     var e;
-    return null !== (e = T[O]) && void 0 !== e ? e : []
+    return null != (e = T[E]) ? e : []
   }, [T]), A = 0 === w.length, D = n > w.length && !A;
   if (!i.useMemo(() => (0, u.ze)(t), [t]) || null == e || 0 === e.length || null == t) return null;
   let C = e.split(" "),
@@ -78,7 +78,7 @@ function E(e, t) {
   }
   let L = () => {
       null != t && ((0, a.Zy)(), m.Z.open(t, b.pNK.GUILD_AUTOMOD), setTimeout(() => {
-        P(t, O, {
+        P(t, E, {
           triggerMetadata: {
             keywordFilter: [e],
             regexPatterns: [],
@@ -90,9 +90,9 @@ function E(e, t) {
     k = async t => {
       var n, r;
       if ((0, a.Zy)(), !await (0, g.XN)(t.name, e)) return;
-      let i = N(y({}, t), {
-        triggerMetadata: N(y({}, t.triggerMetadata), {
-          keywordFilter: [...null !== (r = null === (n = t.triggerMetadata) || void 0 === n ? void 0 : n.keywordFilter) && void 0 !== r ? r : [], e]
+      let i = O(N({}, t), {
+        triggerMetadata: O(N({}, t.triggerMetadata), {
+          keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? void 0 : n.keywordFilter) ? r : [], e]
         })
       });
       await j(i, w), M(i), null != S ? (0, l.showToast)((0, l.createToast)(h.NW.string(h.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(h.NW.string(h.t["0rdYm5"]), l.ToastType.SUCCESS))
@@ -105,9 +105,9 @@ function E(e, t) {
       id: "add-first-rule",
       label: h.NW.string(h.t.f72Zqa),
       action: L,
-      disabled: E
+      disabled: v
     }), w.map(e => {
-      let t = (0, c.V9)(O).reduce((t, n) => {
+      let t = (0, c.V9)(E).reduce((t, n) => {
         let r = e.actions.find(e => {
           let {
             type: t
@@ -123,13 +123,13 @@ function E(e, t) {
         label: e.name,
         subtext: (0, r.jsx)(l.Text, {
           color: "text-muted",
-          className: v.actionTextHeader,
+          className: y.actionTextHeader,
           variant: "text-xs/normal",
           children: t.slice(2)
         }),
         group: "automod-rule-selection",
         checked: !1,
-        disabled: E,
+        disabled: v,
         action: () => k(e)
       }, e.id)
     }), D && (0, r.jsxs)(r.Fragment, {
@@ -137,7 +137,7 @@ function E(e, t) {
         id: "add-another-rule",
         label: h.NW.string(h.t["0K5jDA"]),
         action: L,
-        disabled: E
+        disabled: v
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
@@ -146,7 +146,7 @@ function E(e, t) {
       keywordCount: W
     }),
     onFocus: () => {
-      !Z && (I(!0), _())
+      Z || (I(!0), _())
     },
     children: R
   })

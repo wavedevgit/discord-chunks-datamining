@@ -1,14 +1,10 @@
-/** Chunk was on 77046 **/
-t.exports = {
-  animation: "animation_bdbb1b",
-  modalContent: "modalContent_bdbb1b",
-  subheader: "subheader_bdbb1b",
-  icon: "icon_bdbb1b",
-  wandIcon: "wandIcon_bdbb1b icon_bdbb1b",
-  robotIcon: "robotIcon_bdbb1b icon_bdbb1b",
-  smileIcon: "smileIcon_bdbb1b icon_bdbb1b",
-  listContainer: "listContainer_bdbb1b",
-  listItem: "listItem_bdbb1b",
-  modalFooter: "modalFooter_bdbb1b",
-  divider: "divider_bdbb1b"
+/** Chunk was on 74669 **/
+e.exports = {
+  root: "root__52b47",
+  lifted: "lifted__52b47",
+  stop1: "stop1__52b47",
+  stop2: "stop2__52b47",
+  stop3: "stop3__52b47",
+  stop4: "stop4__52b47",
+  stop5: "stop5__52b47"
 }

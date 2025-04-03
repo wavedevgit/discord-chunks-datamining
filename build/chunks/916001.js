@@ -1,45 +1,45 @@
-/** Chunk was on 83379 **/
-n.d(t, {
-  Z: () => s
+/** Chunk was on 73628 **/
+r.d(t, {
+  Z: () => i
 });
-var r = n(200651);
-n(192379);
-var i = n(866442),
-  a = n(481060),
-  o = n(388032),
-  l = n(724577);
+var n = r(200651);
+r(192379);
+var A = r(866442),
+  a = r(481060),
+  o = r(388032),
+  l = r(838997);
 
-function s(e) {
+function i(e) {
   let {
     locked: t,
-    role: n,
-    textVariant: s = "text-xs/medium"
-  } = e, c = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
-  return (0, r.jsx)("div", {
+    role: r,
+    textVariant: i = "text-xs/medium"
+  } = e, s = (0, a.dQu)(a.TVs.colors.INTERACTIVE_NORMAL).hex();
+  return (0, n.jsx)("div", {
     className: l.roleTagContainer,
-    children: (0, r.jsxs)("div", {
+    children: (0, n.jsxs)("div", {
       className: l.roleTag,
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: l.roleColor,
         style: {
-          backgroundColor: (0, i.Rf)(n.color)
+          backgroundColor: (0, A.Rf)(r.color)
         }
-      }), (0, r.jsx)(a.LZC, {
+      }), (0, n.jsx)(a.LZC, {
         size: 8,
         horizontal: !0
-      }), (0, r.jsxs)(a.Text, {
-        variant: s,
+      }), (0, n.jsxs)(a.Text, {
+        variant: i,
         color: "text-normal",
-        children: [(0, r.jsx)(a.nn4, {
+        children: [(0, n.jsx)(a.nn4, {
           children: o.NW.string(o.t.RnyseH)
-        }), n.name]
-      }), !0 === t && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.LZC, {
+        }), r.name]
+      }), !0 === t && (0, n.jsxs)(n.Fragment, {
+        children: [(0, n.jsx)(a.LZC, {
           size: 8,
           horizontal: !0
-        }), (0, r.jsx)(a.mBM, {
+        }), (0, n.jsx)(a.mBM, {
           size: "md",
-          color: c
+          color: s
         })]
       })]
     })

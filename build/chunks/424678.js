@@ -1,36 +1,36 @@
-/** Chunk was on 83379 **/
-n.d(t, {
+/** Chunk was on 95287 **/
+r.d(t, {
   Z: () => s
-}), n(47120), n(301563);
-var r = n(200651),
-  i = n(192379),
-  a = n(481060);
+}), r(47120), r(301563);
+var n = r(200651),
+  a = r(192379),
+  o = r(481060);
 
-function o(e, t, n) {
+function i(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: r,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : e[t] = r, e
 }
-class l extends i.PureComponent {
+class l extends a.PureComponent {
   render() {
     let {
       text: e,
       lastItem: t,
-      className: n
+      className: r
     } = this.props;
-    return (0, r.jsxs)("span", {
-      children: [(0, r.jsx)(a.eee, {
-        className: n,
+    return (0, n.jsxs)("span", {
+      children: [(0, n.jsx)(o.eee, {
+        className: r,
         onClick: this.handleClick,
         children: e
       }), t ? "" : ", "]
     })
   }
   constructor(...e) {
-    super(...e), o(this, "handleClick", () => {
+    super(...e), i(this, "handleClick", () => {
       let {
         onClick: e,
         index: t
@@ -39,21 +39,21 @@ class l extends i.PureComponent {
     })
   }
 }
-class s extends i.PureComponent {
+class s extends a.PureComponent {
   render() {
     let e = this.props.artists.split(";");
     if (!this.props.canOpen) return e.join(", ");
     let t = e.length - 1;
-    return e.map((e, n) => (0, r.jsx)(l, {
+    return e.map((e, r) => (0, n.jsx)(l, {
       text: e,
-      index: n,
-      lastItem: n === t,
+      index: r,
+      lastItem: r === t,
       onClick: this.handleOpenSpotifyArtist,
       className: this.props.linkClassName
-    }, "spotify-artist-".concat(n)))
+    }, "spotify-artist-".concat(r)))
   }
   constructor(...e) {
-    super(...e), o(this, "handleOpenSpotifyArtist", e => {
+    super(...e), i(this, "handleOpenSpotifyArtist", e => {
       let {
         onOpenSpotifyArtist: t
       } = this.props;

@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(200651),
   i = n(192379),
   a = n(692547),
-  o = n(481060),
-  l = n(375954),
+  l = n(481060),
+  o = n(375954),
   s = n(876338),
   c = n(912332),
   u = n(245216),
@@ -20,7 +20,7 @@ function p(e) {
     targetKind: m,
     embedIndex: f
   } = e, h = i.useCallback(() => {
-    let e = l.Z.getMessage(n, p);
+    let e = o.Z.getMessage(n, p);
     if (null == e) return;
     let t = (0, s.j)(e, {
       targetKind: m,
@@ -32,10 +32,10 @@ function p(e) {
       forwardOptions: t
     })
   }, [n, f, p, m]);
-  return (0, r.jsx)(o.M0o, {
+  return (0, r.jsx)(l.M0o, {
     className: t,
     tooltip: d.NW.string(d.t.I3ltXF),
-    color: o.YX$.SECONDARY,
+    color: l.YX$.SECONDARY,
     icon: (0, r.jsx)(u.Z, {
       size: "xs",
       color: a.Z.colors.INTERACTIVE_NORMAL

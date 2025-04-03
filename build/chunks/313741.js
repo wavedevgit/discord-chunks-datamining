@@ -26,7 +26,7 @@ let o = {
 
 function p(e) {
   var t;
-  let [i] = n.useState(null == e ? void 0 : o[e]), l = c.useIsGuildSupported(), r = null == i ? void 0 : null === (t = i.useIsGuildSupported) || void 0 === t ? void 0 : t.call(i), s = function(e) {
+  let [i] = n.useState(null == e ? void 0 : o[e]), l = c.useIsGuildSupported(), r = null == i || null == (t = i.useIsGuildSupported) ? void 0 : t.call(i), s = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var i = null != arguments[t] ? arguments[t] : {},
         n = Object.keys(i);

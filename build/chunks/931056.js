@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 }), n(653041), n(47120);
@@ -18,17 +18,14 @@ function d(e, t) {
       r = [];
     return (e.forEach(e => {
       var t, i;
-      let l = null === (t = e.application) || void 0 === t ? void 0 : t.id,
-        o = null === (i = e.activity) || void 0 === i ? void 0 : i.party_id;
+      let l = null == (t = e.application) ? void 0 : t.id,
+        o = null == (i = e.activity) ? void 0 : i.party_id;
       if (null != l && null != o) {
         let t = e.author.id;
         if (null != a.Z.findActivity(t, e => {
             var t;
-            return e.application_id === l && (null === (t = e.party) || void 0 === t ? void 0 : t.id) === o
-          }, null, !0)) {
-          n.push(e.id);
-          return
-        }
+            return e.application_id === l && (null == (t = e.party) ? void 0 : t.id) === o
+          }, null, !0)) return void n.push(e.id);
         let i = e.timestamp.getTime(),
           s = {
             userId: t,

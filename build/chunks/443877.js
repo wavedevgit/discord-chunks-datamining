@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => p
 }), n(47120);
 var i = n(442837),
-  o = n(715903),
-  r = n(71619),
+  r = n(715903),
+  o = n(71619),
   a = n(41776),
   s = n(665906),
   l = n(271383),
@@ -20,8 +20,8 @@ function p(e) {
     f = (0, i.e7)([a.Z], () => null != p && a.Z.isLurking(p), [p]),
     g = (0, i.e7)([l.ZP], () => null != p && l.ZP.isCurrentUserGuest(p), [p]),
     b = (0, i.e7)([u.Z], () => m && u.Z.can(h.Plq.ADD_REACTIONS, e), [m, e]),
-    v = (0, o.ux)(p),
-    [, j] = (0, r.AB)(p),
+    j = (0, r.ux)(p),
+    [, v] = (0, o.AB)(p),
     O = (0, s.$R)(e);
   return null == e ? {
     disableReactionReads: !0,
@@ -54,9 +54,9 @@ function p(e) {
     canAddNewReactions: b,
     isLurking: f,
     isGuest: g,
-    communicationDisabled: j,
+    communicationDisabled: v,
     isActiveChannelOrUnarchivableThread: O,
-    isAutomodQuarantined: v
+    isAutomodQuarantined: j
   })), n = n = {
     isLurking: f,
     isGuest: g,

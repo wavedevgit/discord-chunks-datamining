@@ -17,8 +17,8 @@ var n = r(200651),
   u = r(481060),
   i = r(493773),
   o = r(38618),
-  d = r(357029),
-  m = r(890798);
+  d = r(917356),
+  m = r(616257);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,10 +96,10 @@ function T(e) {
   }), [a.useCallback(function() {
     let e = performance.now(),
       a = e - r.current;
-    r.current = e, !u.current && (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < j && (c.current += 1), l.current = (l.current + 1) % j)
+    r.current = e, u.current || (n.current -= t.current[l.current], t.current[l.current] = a, n.current += a, c.current < j && (c.current += 1), l.current = (l.current + 1) % j)
   }, []), (e, t) => {
     var r;
-    let a = null !== (r = c.current) && void 0 !== r ? r : 1;
+    let a = null != (r = c.current) ? r : 1;
     return Math.abs(e * t - n.current / a * a) / t
   }, () => {
     n.current = 0, c.current = 0, t.current.fill(0), r.current = performance.now(), l.current = 0
@@ -275,14 +275,11 @@ function R(e) {
     isAverageFrameTime: r,
     onToggleAverageFrameTime: c
   } = e, [l, s] = a.useState(t.dispatcher.getIsRequestIdleCallbackEnabled()), i = a.useRef(null);
-  a.useEffect(() => {
-    let e = setInterval(() => {
-      s(t.dispatcher.getIsRequestIdleCallbackEnabled())
-    }, p);
-    return i.current = e, () => {
-      null != i.current && clearInterval(i.current)
-    }
-  }, [t.dispatcher]);
+  a.useEffect(() => (i.current = setInterval(() => {
+    s(t.dispatcher.getIsRequestIdleCallbackEnabled())
+  }, p), () => {
+    null != i.current && clearInterval(i.current)
+  }), [t.dispatcher]);
   let o = e => {
     t.dispatcher.toggleRequestIdleCallback(e), s(e)
   };

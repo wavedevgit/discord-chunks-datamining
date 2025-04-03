@@ -25,7 +25,7 @@ class h extends a.PureComponent {
     if (null == r || null == e || 0 === e.length) return (0, n.jsx)(s.$jN, {
       type: s.$jN.Type.SPINNING_CIRCLE
     });
-    let c = o.Z.getGuildId(),
+    let c = o.ZP.getGuildId(),
       h = d.default.getUser(r),
       y = l.ZP.getNick(c, r),
       g = null == h ? p.NW.string(p.t.SJmZam) : "".concat(p.NW.string(p.t.SJmZam), " — ").concat(null != y ? y : u.ZP.getName(h));
@@ -48,7 +48,7 @@ let y = i.ZP.connectStores([c.ZP], e => {
   let s = null;
   if (null != a && null != a.rtp.inbound) {
     var l;
-    s = null !== (l = a.rtp.inbound[i]) && void 0 !== l ? l : []
+    s = null != (l = a.rtp.inbound[i]) ? l : []
   }
   return {
     mediaEngineConnectionId: null == a ? void 0 : a.mediaEngineConnectionId,

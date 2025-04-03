@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => x
 }), n(653041), n(47120);
@@ -16,10 +16,10 @@ var i = n(200651),
   f = n(371467),
   m = n(981631),
   g = n(388032),
-  v = n(571677);
-let y = [];
+  y = n(76932);
+let O = [];
 
-function O(e) {
+function v(e) {
   return e.notification.id
 }
 
@@ -40,7 +40,7 @@ function b(e, t, n, r) {
 
 function _(e) {
   return (0, i.jsx)("div", {
-    className: v.container,
+    className: y.container,
     children: e
   })
 }
@@ -50,7 +50,7 @@ let E = e => r.useState(() => new h.AS(e))[0],
       locked: t,
       showEmpty: n = !0
     } = e, p = (0, o.e7)([f.Z, c.Z], () => {
-      if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return y;
+      if (c.Z.isNotificationDisabled(a.OverlayNotificationDisabledSetting.TEXT_CHAT)) return O;
       let e = [],
         n = 0;
       for (let i of f.Z.getNotifications()) {
@@ -62,13 +62,13 @@ let E = e => r.useState(() => new h.AS(e))[0],
         }), n++)
       }
       return e
-    }, [t], u.E6), v = E(t);
-    return (r.useLayoutEffect(() => v.updateState(p, t)), r.useLayoutEffect(() => (v.initialize((0, d.i)()), () => v.cleanUp()), [v]), 0 !== p.length || t) ? (0, i.jsx)(h.S4.Provider, {
-      value: v,
+    }, [t], u.E6), y = E(t);
+    return (r.useLayoutEffect(() => y.updateState(p, t)), r.useLayoutEffect(() => (y.initialize((0, d.i)()), () => y.cleanUp()), [y]), 0 !== p.length || t) ? (0, i.jsx)(h.S4.Provider, {
+      value: y,
       children: (0, i.jsx)(l.W3x, {
         items: p,
         renderItem: b,
-        getItemKey: O,
+        getItemKey: v,
         wrapChildren: _
       })
     }) : n ? t ? null : (0, i.jsx)(s.E, {

@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(173511),
   a = n(481060);
 
-function o() {
+function l() {
   let [e, t] = i.useState("");
   return (0, r.jsxs)(a.hjN, {
     title: "Text components",

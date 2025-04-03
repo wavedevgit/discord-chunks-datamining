@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => _
 }), n(301563);
@@ -57,7 +57,7 @@ let f = /^discord.gg\/[a-zA-Z0-9-]+/,
               context: {
                 location: "Application Directory"
               }
-            }), null === (e = n.closeModal) || void 0 === e || e.call(n)
+            }), null == (e = n.closeModal) || e.call(n)
           }
         }
       },

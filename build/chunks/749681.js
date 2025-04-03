@@ -10,9 +10,9 @@ n.r(t), n.d(t, {
         let _ = t.selectedServersTab;
         return null != _ ? l.Z.setState({
           selectedTab: _,
-          entrypoint: null !== (n = t.entrypoint) && void 0 !== n ? n : h.Qq.UNKNOWN
+          entrypoint: null != (n = t.entrypoint) ? n : h.Qq.UNKNOWN
         }) : l.Z.setState({
-          entrypoint: null !== (p = t.entrypoint) && void 0 !== p ? p : h.Qq.UNKNOWN
+          entrypoint: null != (p = t.entrypoint) ? p : h.Qq.UNKNOWN
         }), (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_SERVERS, t.extra);
       case u.GlobalDiscoveryTab.APPS:
         if (null != t.newSessionState) {
@@ -30,7 +30,7 @@ n.r(t), n.d(t, {
               source: null == i ? void 0 : i.name,
               session_id: n,
               guild_id: l,
-              user_id: null === (b = s.default.getCurrentUser()) || void 0 === b ? void 0 : b.id
+              user_id: null == (b = s.default.getCurrentUser()) ? void 0 : b.id
             }), t.newSessionState.restorePreviousView) return e(function() {
             let {
               lastItem: e
@@ -47,7 +47,7 @@ n.r(t), n.d(t, {
               case r.m_.SEARCH:
                 var t;
                 return {
-                  tab: u.GlobalDiscoveryTab.APPS, query: null !== (t = e.query) && void 0 !== t ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : void 0
+                  tab: u.GlobalDiscoveryTab.APPS, query: null != (t = e.query) ? t : "", page: e.page, categoryId: null != e.categoryId ? Number(e.categoryId) : void 0
                 }
             }
             return {
@@ -56,10 +56,9 @@ n.r(t), n.d(t, {
           }())
         }
         if (null != t.applicationId) {
-          if (t.section === x.GlobalDiscoveryAppsSections.STORE) {
+          if (t.section === x.GlobalDiscoveryAppsSections.STORE)
             if (null != t.skuId) return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t.applicationId, t.skuId));
-            return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, x.GlobalDiscoveryAppsSections.STORE))
-          }
+            else return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t.applicationId, x.GlobalDiscoveryAppsSections.STORE));
           return (0, o.uL)(m.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE(t.applicationId))
         }
         if (null != t.query) {

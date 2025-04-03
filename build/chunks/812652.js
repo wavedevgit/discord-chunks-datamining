@@ -18,9 +18,9 @@ var r = n(200651),
   p = n(156582),
   g = n(396678),
   _ = n(37113),
-  v = n(690452),
-  j = n(388032),
-  b = n(434500);
+  j = n(843874),
+  v = n(388032),
+  b = n(864443);
 let S = [{
     value: _.tI.PRESET_VIDEO,
     canUse: e => !0
@@ -73,14 +73,14 @@ function Z(e) {
     fps: P,
     sourceType: R,
     audioSourceId: W
-  }, k] = (0, x.E_)(), A = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null !== (n = (0, g.Z)(_.tI.PRESET_VIDEO)) && void 0 !== n ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, U] = null !== (l = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) && void 0 !== l ? l : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
+  }, k] = (0, x.E_)(), A = (0, c.Z)(), M = (0, h.Z)(), [L, D] = null != (n = (0, g.Z)(_.tI.PRESET_VIDEO)) ? n : [_.LY.RESOLUTION_720, _.ws.FPS_30], [G, U] = null != (l = (0, g.Z)(_.tI.PRESET_DOCUMENTS)) ? l : [_.LY.RESOLUTION_SOURCE, _.ws.FPS_15];
   return (0, r.jsxs)(o.v2r, {
-    "aria-label": j.NW.string(j.t["+1H47u"]),
+    "aria-label": v.NW.string(v.t["+1H47u"]),
     navId: "stream-options",
     onClose: b,
     onSelect: Z,
     children: [(0, r.jsx)(o.kSQ, {
-      label: j.NW.string(v.Z.P2pjm5),
+      label: v.NW.string(j.Z.P2pjm5),
       children: S.filter(e => {
         let {
           canUse: t
@@ -98,12 +98,12 @@ function Z(e) {
           subtext: function(e) {
             switch (e) {
               case _.tI.PRESET_VIDEO:
-                return j.NW.format(v.Z.G5O1Mz, {
+                return v.NW.format(j.Z.G5O1Mz, {
                   resolution: (0, m.M)(L),
                   frameRate: D
                 });
               case _.tI.PRESET_DOCUMENTS:
-                return j.NW.format(v.Z["8tcFLy"], {
+                return v.NW.format(j.Z["8tcFLy"], {
                   resolution: (0, m.M)(G),
                   frameRate: U
                 });
@@ -122,7 +122,7 @@ function Z(e) {
     }), T === _.tI.PRESET_CUSTOM && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.sNh, {
         id: "resolution",
-        label: j.NW.string(v.Z.IG5n0d),
+        label: v.NW.string(j.Z.IG5n0d),
         children: C.filter(e => {
           let {
             canUse: t
@@ -152,7 +152,7 @@ function Z(e) {
         })
       }), (0, r.jsx)(o.sNh, {
         id: "frame-rate",
-        label: j.NW.string(j.t.SkkeIi),
+        label: v.NW.string(v.t.SkkeIi),
         children: N.map(e => (0, r.jsx)(o.k5B, {
           group: "frame-rate",
           id: "stream-option-frame-rate-".concat(e),
@@ -174,15 +174,15 @@ function Z(e) {
     }), (0, r.jsx)(o.Clw, {}), (0, r.jsx)(o.S89, {
       id: "stream-option-mute",
       checked: O,
-      label: j.NW.string(v.Z["b0+Ira"]),
+      label: v.NW.string(j.Z["b0+Ira"]),
       action: () => k({
         type: "set_mute_audio",
         value: !O
       })
     }), R === s.vA.CAMERA && (0, r.jsx)(o.sNh, {
       id: "device-audio-input",
-      label: j.NW.string(v.Z.YSdHV1),
-      subtext: null === (t = A[null != W ? W : ""]) || void 0 === t ? void 0 : t.name,
+      label: v.NW.string(j.Z.YSdHV1),
+      subtext: null == (t = A[null != W ? W : ""]) ? void 0 : t.name,
       subtextLineClamp: 1,
       children: i().map(A, e => {
         let {
@@ -202,11 +202,11 @@ function Z(e) {
       })
     }), (0, r.jsxs)(o.sNh, {
       id: "advanced-items",
-      label: j.NW.string(v.Z.eYyK1t),
+      label: v.NW.string(j.Z.eYyK1t),
       children: [(0, r.jsx)(o.S89, {
         id: "stream-option-share-preview",
         checked: w,
-        label: j.NW.string(v.Z.H3Qjqa),
+        label: v.NW.string(j.Z.H3Qjqa),
         action: () => k({
           type: "set_hide_preview",
           hidePreview: !w
@@ -214,7 +214,7 @@ function Z(e) {
       }), (0, r.jsx)(o.S89, {
         id: "stream-option-notify",
         checked: I,
-        label: j.NW.string(v.Z.SiHtX1),
+        label: v.NW.string(j.Z.SiHtX1),
         action: () => k({
           type: "set_notify_friends",
           value: !I

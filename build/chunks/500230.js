@@ -13,9 +13,9 @@ var C = B(200651),
   P = B(434404),
   r = B(254925),
   e = B(116175),
-  o = B(155174),
+  o = B(817239),
   t = B(388032),
-  d = B(86986);
+  d = B(602268);
 let n = function(A) {
   let {
     className: g,
@@ -42,7 +42,7 @@ let n = function(A) {
         }),
         onClick: () => c(A),
         children: (0, C.jsx)(v.A, {
-          badge: r.QV["0"],
+          badge: w,
           width: 32,
           height: 32,
           primaryTintColor: A.primary,

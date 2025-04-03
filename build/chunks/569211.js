@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => s
 }), n(47120);
@@ -28,7 +28,7 @@ function s(e) {
   return r.useEffect(() => {
     if (!h) return;
     let e = setTimeout(() => {
-      !t && u(null)
+      t || u(null)
     }, 3e3);
     return () => {
       clearTimeout(e)
@@ -46,7 +46,7 @@ function s(e) {
         let {
           applicationId: n
         } = e;
-        (null === (t = d.current) || void 0 === t ? void 0 : t.id) === n && (u(null), d.current = null)
+        (null == (t = d.current) ? void 0 : t.id) === n && (u(null), d.current = null)
       };
     return i.S.subscribe(a.CkL.SHOW_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, e), i.S.subscribe(a.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, n), () => {
       i.S.unsubscribe(a.CkL.SHOW_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, e), i.S.unsubscribe(a.CkL.HIDE_APP_LAUNCHER_BUTTON_APP_INSTALLED_EDUCATION, n)

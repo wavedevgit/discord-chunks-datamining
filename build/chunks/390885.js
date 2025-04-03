@@ -76,12 +76,12 @@ function x(e) {
 function h(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let v = "UserFlowAnalyticsStore_current",
-  _ = "UserFlowAnalyticsStore";
+let _ = "UserFlowAnalyticsStore_current",
+  g = "UserFlowAnalyticsStore";
 
-function g(e) {
+function f(e) {
   if (e === c.MK.UNKNOWN) return null;
-  let t = s.K.get("".concat(_, "-").concat(e));
+  let t = s.K.get("".concat(g, "-").concat(e));
   if (null == t) return null;
   let {
     version: n
@@ -89,29 +89,29 @@ function g(e) {
   return 1 !== n ? null : l
 }
 new a.Z("UserFlowAnalytics");
-let f = (0, l.U)()((0, r.XR)((e, t) => ({
+let v = (0, l.U)()((0, r.XR)((e, t) => ({
   flows: {},
   currentFlow: null,
   activeFlow: () => {
     var e;
-    let n = null !== (e = t().currentFlow) && void 0 !== e ? e : s.K.get(v);
+    let n = null != (e = t().currentFlow) ? e : s.K.get(_);
     if (null == n) return null;
     let {
       [n]: l
-    } = t().flows, r = null != l ? l : g(n);
+    } = t().flows, r = null != l ? l : f(n);
     return (null == r ? void 0 : r.currentStep) != null ? n : null
   }
 })));
 
 function p(e, t) {
-  let n = f.getState().flows,
+  let n = v.getState().flows,
     {
       [e]: l
     } = n,
     r = N(n, [e].map(x)),
-    s = null != l ? l : g(e);
+    s = null != l ? l : f(e);
   ((null == s ? void 0 : s.currentStep) == null || s.currentStep !== t) && (0, i.j)(() => {
-    f.setState({
+    v.setState({
       flows: m(u({}, r), {
         [e]: {
           type: e,
@@ -132,16 +132,16 @@ function E(e, t) {
     l = e;
   if (e === c.MK.ANY) {
     var r;
-    l = null !== (r = f.getState().activeFlow()) && void 0 !== r ? r : c.MK.UNKNOWN
+    l = null != (r = v.getState().activeFlow()) ? r : c.MK.UNKNOWN
   }
-  let s = f.getState().flows,
+  let s = v.getState().flows,
     {
       [l]: a
     } = s,
     o = N(s, [l].map(x)),
-    d = null != a ? a : g(l);
+    d = null != a ? a : f(l);
   null != d && null != d.currentStep && d.currentStep !== t && (0, i.j)(() => {
-    f.setState({
+    v.setState({
       flows: m(u({}, o), {
         [l]: m(u({}, d), {
           lastStep: d.currentStep,
@@ -157,27 +157,27 @@ function E(e, t) {
 }
 
 function S() {
-  return null != f.getState().activeFlow()
+  return null != v.getState().activeFlow()
 }
-f.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
+v.subscribe(e => null != e.currentFlow ? e.flows[e.currentFlow] : void 0, e => {
   var t;
   if (null != e && (! function(e) {
       if (e.type === c.MK.UNKNOWN) return;
-      let t = "".concat(_, "-").concat(e.type);
-      e.ended ? (s.K.remove(t), s.K.remove(v)) : (s.K.set("".concat(_, "-").concat(e.type), m(u({}, e), {
+      let t = "".concat(g, "-").concat(e.type);
+      e.ended ? (s.K.remove(t), s.K.remove(_)) : (s.K.set("".concat(g, "-").concat(e.type), m(u({}, e), {
         version: 1
-      })), s.K.set(v, e.type))
+      })), s.K.set(_, e.type))
     }(e), o.default.track(d.rMx.NUO_TRANSITION, {
       flow_type: e.type,
       from_step: e.lastStep,
       to_step: e.currentStep,
-      seconds_on_from_step: "function" != typeof(null === (t = e.lastTimestamp) || void 0 === t ? void 0 : t.getTime) ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
+      seconds_on_from_step: "function" != typeof(null == (t = e.lastTimestamp) ? void 0 : t.getTime) ? 0 : (e.currentTimestamp.getTime() - e.lastTimestamp.getTime()) / 1e3
     }, {
       flush: !0
     }), e.ended)) {
-    let t = u({}, f.getState().flows);
+    let t = u({}, v.getState().flows);
     delete t[e.type], (0, i.j)(() => {
-      f.setState({
+      v.setState({
         flows: t,
         currentFlow: null
       })

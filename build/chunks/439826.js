@@ -31,7 +31,7 @@ var r = n(200651),
   E = n(642145),
   T = n(981631),
   A = n(388032),
-  B = n(337733);
+  B = n(508936);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function q(e) {
   } = e, {
     ref: c,
     height: p = 0
-  } = (0, u.Z)([s]), f = (null === (t = n.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, g = (0, h.z)(n), {
+  } = (0, u.Z)([s]), f = (null == (t = n.userStatus) ? void 0 : t.completedAt) != null, g = (0, h.z)(n), {
     type: x,
     hints: b
   } = o.useMemo(() => f || g ? {
@@ -148,7 +148,7 @@ function D(e) {
     controls: !1,
     children: (0, r.jsx)("source", {
       src: n.url,
-      type: null !== (t = n.mimetype) && void 0 !== t ? t : void 0
+      type: null != (t = n.mimetype) ? t : void 0
     })
   })
 }
@@ -163,10 +163,10 @@ function I(e) {
     onCtxMenuClose: W,
     onCtxMenuOpen: M,
     onCtxMenuSelect: L
-  } = e, Z = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, z = (0, h.tP)(m), F = (null === (t = m.userStatus) || void 0 === t ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
+  } = e, Z = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, z = (0, h.tP)(m), F = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
     month: "numeric",
     day: "numeric"
-  }), G = (null === (n = m.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, J = (null === (s = m.userStatus) || void 0 === s ? void 0 : s.completedAt) != null, $ = (0, v.h)(m, N.dr.QUEST_HOME_DESKTOP), ee = o.useCallback(() => {
+  }), G = (null == (n = m.userStatus) ? void 0 : n.enrolledAt) != null, J = (null == (s = m.userStatus) ? void 0 : s.completedAt) != null, $ = (0, v.h)(m, N.dr.QUEST_HOME_DESKTOP), ee = o.useCallback(() => {
     Z && ((0, j.zi)(m) || G || (0, x.AH)(m.id, {
       questContent: b.jn.QUEST_HOME_DESKTOP,
       questContentCTA: g.jZ.ACCEPT_QUEST
@@ -175,7 +175,7 @@ function I(e) {
   o.useEffect(() => {
     if (V.isAnimated && null != K.current) return X.current !== C && (C && !H ? K.current.play() : (K.current.pause(), K.current.currentTime = 0)), X.current = C, () => {
       var e;
-      null === (e = K.current) || void 0 === e || e.pause()
+      null == (e = K.current) || e.pause()
     }
   }, [C, V, H]);
   let et = o.useMemo(() => (0, _.z)(_.i.QUEST_HOME_VIDEO, m), [m]);
@@ -197,7 +197,7 @@ function I(e) {
             controls: !1,
             children: (0, r.jsx)("source", {
               src: V.url,
-              type: null !== (t = V.mimetype) && void 0 !== t ? t : void 0
+              type: null != (t = V.mimetype) ? t : void 0
             })
           })
         }
@@ -275,7 +275,7 @@ function I(e) {
             variant: "text-sm/medium",
             color: U ? "text-muted" : "always-white",
             children: A.NW.format(A.t.buEvBw, {
-              brandName: null !== (u = null === (i = m.config.cosponsorMetadata) || void 0 === i ? void 0 : i.name) && void 0 !== u ? u : m.config.messages.gamePublisher
+              brandName: null != (u = null == (i = m.config.cosponsorMetadata) ? void 0 : i.name) ? u : m.config.messages.gamePublisher
             })
           }), z || F ? null : (0, r.jsx)(d.Text, {
             variant: "text-sm/medium",

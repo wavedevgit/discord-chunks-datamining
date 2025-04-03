@@ -32,11 +32,11 @@ var u = n(623292),
   b = n(626135),
   p = n(934415),
   h = n(572004),
-  v = n(585483),
-  y = n(709054),
-  N = n(111618),
-  O = n(50284),
-  E = n(730954),
+  y = n(585483),
+  N = n(709054),
+  O = n(111618),
+  E = n(50284),
+  v = n(730954),
   j = n(981631);
 
 function S(e) {
@@ -64,14 +64,11 @@ function x(e, t) {
 }
 
 function _(e, t) {
-  (0, O.Z)(e.id, t.id)
+  (0, E.Z)(e.id, t.id)
 }
 
 function T(e, t, n) {
-  if (!1 === t.pinned) {
-    n.shiftKey ? r.Z.pinMessage(e, t.id) : l.Z.confirmPin(e, t);
-    return
-  }
+  if (!1 === t.pinned) return void(n.shiftKey ? r.Z.pinMessage(e, t.id) : l.Z.confirmPin(e, t));
   n.shiftKey ? r.Z.unpinMessage(e, t.id) : l.Z.confirmUnpin(e, t)
 }
 
@@ -80,7 +77,7 @@ function M(e, t) {
 }
 
 function w(e, t) {
-  (0, E.Z)(e, t, void 0, N.Z.getOptions(t.id))
+  (0, v.Z)(e, t, void 0, O.Z.getOptions(t.id))
 }
 
 function A(e, t, n) {
@@ -91,7 +88,7 @@ function A(e, t, n) {
     message: t,
     shouldMention: !n.shiftKey && !i,
     showMentionToggle: !r && !i
-  }), v.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
+  }), y.S.dispatchToLastSubscribed(j.CkL.TEXTAREA_FOCUS)
 }
 
 function D(e, t) {
@@ -99,7 +96,7 @@ function D(e, t) {
 }
 
 function C(e, t) {
-  let n = m.Z.getChannel(y.default.castMessageIdAsChannelId(t.id));
+  let n = m.Z.getChannel(N.default.castMessageIdAsChannelId(t.id));
   null != n && (0, f.ok)(n)
 }
 

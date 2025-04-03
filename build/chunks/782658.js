@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => k
 });
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(447543),
-  l = n(410575),
+  l = n(447543),
+  o = n(410575),
   s = n(758119),
   c = n(622822),
   u = n(906732),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(885714),
   _ = n(131704),
   b = n(314897),
-  v = n(430824),
-  x = n(701190),
-  y = n(411198),
-  E = n(610699),
+  x = n(430824),
+  y = n(701190),
+  E = n(411198),
+  v = n(610699),
   O = n(313876),
   N = n(778333),
   j = n(949981),
@@ -42,12 +42,12 @@ function k(e) {
   } = e, {
     invite: R,
     inviteError: D
-  } = (0, a.cj)([x.Z], () => ({
-    invite: x.Z.getInvite(t),
-    inviteError: x.Z.getInviteError(t)
+  } = (0, a.cj)([y.Z], () => ({
+    invite: y.Z.getInvite(t),
+    inviteError: y.Z.getInviteError(t)
   }), [t]), L = null == R;
   i.useEffect(() => {
-    L && o.ZP.resolveInvite(t)
+    L && l.ZP.resolveInvite(t)
   }, [t, L]);
   let M = null != R ? R : {
       state: w.r2o.RESOLVING,
@@ -57,22 +57,19 @@ function k(e) {
       analyticsLocations: W
     } = (0, u.ZP)(),
     U = (0, d.O)(),
-    F = (0, a.e7)([v.Z], () => (null == R ? void 0 : R.guild) != null ? v.Z.getGuild(R.guild.id) : null, [R]),
+    F = (0, a.e7)([x.Z], () => (null == R ? void 0 : R.guild) != null ? x.Z.getGuild(R.guild.id) : null, [R]),
     B = (0, a.e7)([b.default], () => b.default.getId()),
     G = (0, a.e7)([p.ZP], () => {
       var e;
-      return p.ZP.getGuildScheduledEvent(null === (e = M.guild_scheduled_event) || void 0 === e ? void 0 : e.id)
+      return p.ZP.getGuildScheduledEvent(null == (e = M.guild_scheduled_event) ? void 0 : e.id)
     }, [M]),
     H = () => {
-      null != M.channel && o.ZP.transitionToInviteSync(M)
+      null != M.channel && l.ZP.transitionToInviteSync(M)
     },
     V = () => {
       if (null == F && (null == R ? void 0 : R.guild) != null) {
-        let e = y.Qs(R.guild);
-        if ((0, c.bN)() && (0, c.Yt)(e)) {
-          (0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED);
-          return
-        }
+        let e = E.Qs(R.guild);
+        if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, h.yU)() ? (0, g.Z)({
         analyticsSource: {
           page: w.ZY5.INVITE_EMBED
@@ -82,7 +79,7 @@ function k(e) {
           section: w.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: W
-      }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
+      }) : l.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
         context: k("Invite Button Embed")
       })
@@ -163,7 +160,7 @@ function k(e) {
             });
             break
           }
-          if ((0, f.P1)(M) && (z = (0, r.jsx)(E.Z, {
+          if ((0, f.P1)(M) && (z = (0, r.jsx)(v.Z, {
               invite: M,
               getAcceptInviteContext: k
             })), U) {
@@ -179,7 +176,7 @@ function k(e) {
           }
       }
   }
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(o.Z, {
     section: w.jXE.INVITE_LINK,
     children: z
   })

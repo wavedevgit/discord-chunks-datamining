@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(622535),
   c = n(481060),
   u = n(668781),
@@ -23,14 +23,14 @@ var r = n(200651),
   E = n(372769),
   O = n(582404),
   N = n(134432),
-  v = n(695346),
-  y = n(768581),
-  I = n(356164),
+  y = n(695346),
+  I = n(768581),
+  v = n(356164),
   C = n(890064),
   S = n(826946),
   T = n(981631),
   P = n(388032),
-  j = n(800773),
+  j = n(727615),
   A = n(129512),
   Z = n(330065),
   x = n(755386);
@@ -39,8 +39,8 @@ function L(e) {
   let {
     guild: t,
     onClick: l,
-    onView: a
-  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, I] = i.useState(!1), [L, w] = i.useState(!1), [R, D] = i.useState(!1), k = i.useRef(null), M = i.useCallback(async () => {
+    onView: o
+  } = e, b = (0, g.Q3)("BaseGlobalDiscoveryServersCard"), [_, v] = i.useState(!1), [L, w] = i.useState(!1), [R, D] = i.useState(!1), k = i.useRef(null), M = i.useCallback(async () => {
     w(!0);
     try {
       await l(t.id)
@@ -49,14 +49,14 @@ function L(e) {
       let t = new p.Hx(n);
       u.Z.show({
         title: P.NW.string(P.t.R0RpRU),
-        body: null !== (e = t.getAnyErrorMessage()) && void 0 !== e ? e : P.NW.string(P.t.eAn6z8)
+        body: null != (e = t.getAnyErrorMessage()) ? e : P.NW.string(P.t.eAn6z8)
       })
     } finally {
       w(!1)
     }
   }, [t.id, l]), U = i.useCallback(e => {
-    e && !_ && (I(!0), null == a || a(t.id))
-  }, [t.id, _, a]), G = i.useCallback(e => {
+    e && !_ && (v(!0), null == o || o(t.id))
+  }, [t.id, _, o]), G = i.useCallback(e => {
     (0, d.jW)(e, async () => {
       let {
         default: e
@@ -95,7 +95,7 @@ function L(e) {
       }
     })
   }, [t]), W = (0, h.ZP)(), V = t.features.has(T.oNc.HUB), B = i.useMemo(() => {
-    let e = y.ZP.getGuildDiscoverySplashURL({
+    let e = I.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
       size: 300 * (0, N.x_)()
@@ -108,11 +108,11 @@ function L(e) {
       case T.BRd.LIGHT:
         return Z
     }
-  }, [t.discoverySplash, t.id, V, W]), H = b ? 48 : 40, F = i.useMemo(() => y.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, V, W]), H = b ? 48 : 40, F = i.useMemo(() => I.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: H
-  }), [t.icon, t.id, H]), z = v.Sb.useSetting(), Y = (0, O.A)({
+  }), [t.icon, t.id, H]), z = y.Sb.useSetting(), Y = (0, O.A)({
     location: "GlobalDiscoveryServersCard"
   });
   return (0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function L(e) {
         children: [(0, r.jsxs)("div", {
           className: j.header,
           children: [(0, r.jsx)("div", {
-            className: o()(j.banner, {
+            className: a()(j.banner, {
               [j.loaded]: R
             }),
             children: (0, r.jsx)("img", {
@@ -231,7 +231,7 @@ function w(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, a.e7)([I.Z], () => I.Z.getGuild(t));
+  } = e, l = (0, o.e7)([v.Z], () => v.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(L, {
     guild: l,
     onClick: n,
@@ -244,8 +244,8 @@ function R(e) {
     guildId: t,
     index: n,
     onClick: l,
-    onView: o
-  } = e, a = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(_.Z, {
+    onView: a
+  } = e, o = i.useRef(null == t), s = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(_.Z, {
     state: n,
     cleanUp: i,
     children: (0, r.jsx)(b.Z, {
@@ -254,15 +254,15 @@ function R(e) {
   }, e) : (0, r.jsx)(_.Z, {
     state: n,
     cleanUp: i,
-    animate: a.current,
+    animate: o.current,
     children: (0, r.jsx)(w, {
       guildId: t.guildId,
       onClick: l,
-      onView: o
+      onView: a
     })
-  }, e), [l, o]), u = i.useCallback(e => {
+  }, e), [l, a]), u = i.useCallback(e => {
     var t;
-    return null !== (t = e.guildId) && void 0 !== t ? t : "".concat(e.index)
+    return null != (t = e.guildId) ? t : "".concat(e.index)
   }, []), d = i.useMemo(() => [{
     guildId: t,
     index: n

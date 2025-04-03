@@ -3,12 +3,12 @@ n.d(t, {
   M: () => E,
   Z: () => p
 }), n(653041), n(47120);
-var u, i, r, l, c = n(442837),
+var u, r, l, i, c = n(442837),
   o = n(759174),
   d = n(570140),
   a = n(70956),
   s = n(709054),
-  E = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCHING", i[i.FETCHED = 2] = "FETCHED", i);
+  E = ((r = {})[r.NOT_FETCHED = 0] = "NOT_FETCHED", r[r.FETCHING = 1] = "FETCHING", r[r.FETCHED = 2] = "FETCHED", r);
 let C = {},
   _ = {},
   f = {},
@@ -32,7 +32,7 @@ let U = new o.h(e => {
 class G extends(u = c.ZP.Store) {
   getGuildProductsForGuildFetchState(e) {
     var t;
-    return null !== (t = C[e]) && void 0 !== t ? t : 0
+    return null != (t = C[e]) ? t : 0
   }
   getGuildProduct(e) {
     return U.get(e)
@@ -45,19 +45,19 @@ class G extends(u = c.ZP.Store) {
   }
   getGuildProductFetchState(e) {
     var t;
-    return null !== (t = _[e]) && void 0 !== t ? t : 0
+    return null != (t = _[e]) ? t : 0
   }
   isGuildProductsCacheExpired(e) {
     var t;
-    return Date.now() - (null !== (t = f[e]) && void 0 !== t ? t : 0) > D
+    return Date.now() - (null != (t = f[e]) ? t : 0) > D
   }
 }
-l = "GuildProductsStore", (r = "displayName") in G ? Object.defineProperty(G, r, {
-  value: l,
+i = "GuildProductsStore", (l = "displayName") in G ? Object.defineProperty(G, l, {
+  value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : G[r] = l;
+}) : G[l] = i;
 let p = new G(d.Z, {
   CONNECTION_OPEN: function() {
     U.clear(), C = {}, _ = {}, f = {}

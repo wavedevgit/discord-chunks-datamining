@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(252258),
   i = n(45792),
   l = n(230711),
-  o = n(782568),
-  a = n(636449),
+  a = n(782568),
+  o = n(636449),
   s = n(317381),
   c = n(611577),
   u = n(840074),
@@ -21,20 +21,20 @@ var r = n(252258),
   E = n(452426),
   O = n(186901),
   N = n(981631),
-  v = n(701488),
-  y = n(674563);
-let I = new Set([v.Fu, v.JT]),
+  y = n(701488),
+  I = n(674563);
+let v = new Set([y.Fu, y.JT]),
   C = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
   S = new Map([
-    [y.Vt, {
+    [I.Vt, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
-    [y.fd, {
+    [I.fd, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
-    [y.He, {
+    [I.He, {
       trustedHosts: C,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }]
@@ -60,7 +60,7 @@ let I = new Set([v.Fu, v.JT]),
           let e = new URL(n),
             t = e.toString();
           if (m.isPlatformEmbedded) {
-            let e = (0, a.R)({
+            let e = (0, o.R)({
               isContextless: (null == i ? void 0 : i.location.kind) === r.E.CONTEXTLESS
             }) ? N.KJ3.ACTIVITY_POPOUT : null;
             h.Z.focus(e, !0)
@@ -68,14 +68,14 @@ let I = new Set([v.Fu, v.JT]),
           let l = p.Z.getApplication(null == i ? void 0 : i.applicationId),
             s = (0, d.pY)(null == i ? void 0 : i.location),
             u = (null == l ? void 0 : l.id) !== void 0 ? S.get(l.id) : void 0;
-          if (void 0 !== u && u.trustedUntilEpochMs >= Date.now() && u.trustedHosts.has(e.host)) return (0, o.Z)(t), Promise.resolve({
+          if (void 0 !== u && u.trustedUntilEpochMs >= Date.now() && u.trustedHosts.has(e.host)) return (0, a.Z)(t), Promise.resolve({
             opened: !0
           });
           return new Promise(e => (0, g.q)({
             href: t,
             shouldConfirm: !0,
             onConfirm: () => {
-              (0, o.Z)(t), e({
+              (0, a.Z)(t), e({
                 opened: !0
               })
             },
@@ -106,7 +106,7 @@ let I = new Set([v.Fu, v.JT]),
         } = e;
         (0, _.bu)(t.transport);
         let n = (0, _._f)(t.application);
-        if (!I.has(n)) throw new b.Z({
+        if (!v.has(n)) throw new b.Z({
           errorCode: N.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         l.Z.open(N.oAB.CONNECTIONS)
@@ -124,20 +124,20 @@ let I = new Set([v.Fu, v.JT]),
             custom_id: r,
             message: i,
             link_id: l,
-            referrer_id: o
+            referrer_id: a
           }
         } = e;
         (0, _.bu)(n.transport);
-        let a = (0, _._f)(n.application);
-        if (null == a) throw new b.Z({
+        let o = (0, _._f)(n.application);
+        if (null == o) throw new b.Z({
           errorCode: N.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, f.yE)(null !== (t = n.application.flags) && void 0 !== t ? t : 0, N.udG.EMBEDDED)) throw new b.Z({
+        if (!(0, f.yE)(null != (t = n.application.flags) ? t : 0, N.udG.EMBEDDED)) throw new b.Z({
           errorCode: N.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, u._)({
-            applicationId: a,
+            applicationId: o,
             customId: r,
             linkId: l,
             message: i,
@@ -148,7 +148,7 @@ let I = new Set([v.Fu, v.JT]),
                 didSendMessage: t
               })
             },
-            referrerId: o
+            referrerId: a
           })
         })
       }

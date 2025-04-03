@@ -1,6 +1,6 @@
 /** Chunk was on 84414 **/
 n.d(t, {
-  O: () => M,
+  O: () => L,
   Z: () => j
 }), n(301563);
 var r = n(200651);
@@ -31,7 +31,7 @@ var i = n(120356),
   D = n(35583),
   y = n(981631),
   h = n(176505),
-  b = n(216426);
+  b = n(220705);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ function U(e) {
   return e
 }
 
-function v(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,15 +64,15 @@ function v(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function M() {
+async function L() {
   if ((0, R.isMac)() && R.isPlatformEmbedded) {
     var e, t, n;
-    let r = null !== (n = await (null === (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) || void 0 === e ? void 0 : e.call(t))) && void 0 !== n ? n : "Maximize";
+    let r = null != (n = await (null == (e = (t = window.DiscordNative.remoteApp).getDefaultDoubleClickAction) ? void 0 : e.call(t))) ? n : "Maximize";
     "Minimize" === r ? P.ZP.minimize() : "Maximize" === r && P.ZP.maximize()
   }
 }
 
-function L(e) {
+function Z(e) {
   let {
     children: t,
     className: n,
@@ -83,10 +83,10 @@ function L(e) {
     transparent: R = !1,
     toolbar: P,
     mobileToolbar: U,
-    "aria-label": v,
-    "aria-labelledby": L,
-    scrollable: Z,
-    role: k,
+    "aria-label": M,
+    "aria-labelledby": Z,
+    scrollable: k,
+    role: v,
     hideSearch: j,
     showDivider: x
   } = e, F = null == i || (0, h.AB)(i) ? null : i, V = (0, a.e7)([A.Z], () => A.Z.isInChannel(F) || !1), G = (0, a.e7)([E.Z], () => null != F && E.Z.getParticipantsListOpen(F)), {
@@ -125,16 +125,16 @@ function L(e) {
       })
     }(),
     transparent: R,
-    onDoubleClick: M,
-    "aria-label": v,
-    "aria-labelledby": L,
-    role: k,
-    scrollable: Z,
+    onDoubleClick: L,
+    "aria-label": M,
+    "aria-labelledby": Z,
+    role: v,
+    scrollable: k,
     children: t
   })
 }
 
-function Z(e) {
+function k(e) {
   let {
     children: t,
     className: n,
@@ -144,7 +144,7 @@ function Z(e) {
   } = e;
   return (0, r.jsx)(C.ZP, {
     className: n,
-    onDoubleClick: M,
+    onDoubleClick: L,
     "aria-label": i,
     "aria-labelledby": l,
     role: o,
@@ -152,7 +152,7 @@ function Z(e) {
   })
 }
 
-function k(e) {
+function v(e) {
   var {
     isAuthenticated: t = !0
   } = e, n = function(e, t) {
@@ -177,12 +177,12 @@ function k(e) {
   });
   return (0, r.jsx)(u.Gt, {
     value: i,
-    children: t ? (0, r.jsx)(L, v(U({}, n), {
+    children: t ? (0, r.jsx)(Z, M(U({}, n), {
       className: o
-    })) : (0, r.jsx)(Z, v(U({}, n), {
+    })) : (0, r.jsx)(k, M(U({}, n), {
       className: o
     }))
   })
 }
-k.Title = C.ZP.Title, k.Icon = C.ZP.Icon, k.Divider = C.ZP.Divider, k.Caret = C.ZP.Caret;
-let j = k
+v.Title = C.ZP.Title, v.Icon = C.ZP.Icon, v.Divider = C.ZP.Divider, v.Caret = C.ZP.Caret;
+let j = v

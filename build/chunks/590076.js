@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(822183),
   d = n(364125),
   f = n(90753),
-  m = n(883739);
+  m = n(613050);
 
 function p(e) {
   let {
@@ -24,8 +24,8 @@ function p(e) {
   a()(null != g, "user cannot be null"), (0, f.Z)(p, g, i, n);
   let {
     handleClick: E,
-    handleMouseDown: v,
-    handleMouseEnter: h,
+    handleMouseDown: h,
+    handleMouseEnter: v,
     handleMouseMove: b,
     handleMouseUp: S
   } = (0, d.Z)({
@@ -40,8 +40,8 @@ function p(e) {
     children: (0, r.jsx)("canvas", {
       ref: p,
       onClick: E,
-      onMouseDown: v,
-      onMouseEnter: h,
+      onMouseDown: h,
+      onMouseEnter: v,
       onMouseMove: b,
       onMouseUp: S,
       className: m.sharedCanvas

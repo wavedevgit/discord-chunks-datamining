@@ -5,22 +5,22 @@ n.d(t, {
 var i = n(200651),
   r = n(192379),
   l = n(481060),
-  o = n(911969),
-  a = n(388032),
-  c = n(285617);
+  a = n(911969),
+  o = n(388032),
+  c = n(261773);
 
 function s(e) {
   let {
     labelType: t,
     collapsed: n = !1
-  } = e, s = t === o.ww.NEW ? a.NW.string(a.t.y2b7CA) : a.NW.string(a.t["/qdhkp"]), d = t === o.ww.NEW ? c.activityNewBadge : c.activityUpdatedBadge, [u, p] = r.useState(n ? "" : s);
+  } = e, s = t === a.ww.NEW ? o.NW.string(o.t.y2b7CA) : o.NW.string(o.t["/qdhkp"]), u = t === a.ww.NEW ? c.activityNewBadge : c.activityUpdatedBadge, [d, p] = r.useState(n ? "" : s);
   return (r.useEffect(() => {
-    n ? p("") : t === o.ww.NEW ? p(a.NW.string(a.t.y2b7CA)) : t === o.ww.UPDATED && p(a.NW.string(a.t["/qdhkp"]))
-  }, [n, t]), t === o.ww.NONE) ? null : (0, i.jsx)(l.IGR, {
-    className: d,
+    n ? p("") : t === a.ww.NEW ? p(o.NW.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.NW.string(o.t["/qdhkp"]))
+  }, [n, t]), t === a.ww.NONE) ? null : (0, i.jsx)(l.IGR, {
+    className: u,
     disableColor: !0,
     text: (0, i.jsx)("span", {
-      children: u
+      children: d
     })
   })
 }

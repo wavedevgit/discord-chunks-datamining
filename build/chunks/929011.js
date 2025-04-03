@@ -20,14 +20,14 @@ async function b(e) {
     sku: o,
     subscriptionGroupPlanIds: b,
     initialSubscribeForGuild: O,
-    analyticsLocations: v,
-    analyticsLocation: m,
-    disableGuildSelector: y = !1
+    analyticsLocations: m,
+    analyticsLocation: y,
+    disableGuildSelector: v = !1
   } = e, {
     promise: g,
     resolve: h
   } = Promise.withResolvers();
-  if ((0, d.KK)(o.flags) && !1 === y) {
+  if ((0, d.KK)(o.flags) && !1 === v) {
     let {
       promise: e,
       resolve: t
@@ -65,8 +65,8 @@ async function b(e) {
       onClose: () => t(!1)
     }),
     analyticsSubscriptionType: f.NYc.APPLICATION,
-    analyticsLocations: v,
-    analyticsLocation: m,
+    analyticsLocations: m,
+    analyticsLocation: y,
     onComplete: h,
     showBenefitsFirst: !1,
     forcesTransitionToGuild: !1

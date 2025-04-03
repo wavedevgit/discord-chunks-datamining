@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -21,16 +21,16 @@ function p(e) {
     var n, i, a, u;
     let p;
     if (!e.managed) return null;
-    let h = null === (n = e.tags) || void 0 === n ? void 0 : n.bot_id,
-      f = null === (i = e.tags) || void 0 === i ? void 0 : i.integration_id,
-      b = (null === (a = e.tags) || void 0 === a ? void 0 : a.premium_subscriber) !== void 0,
-      x = (null === (u = e.tags) || void 0 === u ? void 0 : u.guild_connections) !== void 0;
+    let h = null == (n = e.tags) ? void 0 : n.bot_id,
+      f = null == (i = e.tags) ? void 0 : i.integration_id,
+      b = (null == (a = e.tags) ? void 0 : a.premium_subscriber) !== void 0,
+      x = (null == (u = e.tags) ? void 0 : u.guild_connections) !== void 0;
     if (null != h ? p = null == t ? void 0 : t.find(e => {
         var t;
         let {
           application: n
         } = e;
-        return (null == n ? void 0 : null === (t = n.bot) || void 0 === t ? void 0 : t.id) === h
+        return (null == n || null == (t = n.bot) ? void 0 : t.id) === h
       }) : null != f && (p = null == t ? void 0 : t.find(e => {
         let {
           id: t

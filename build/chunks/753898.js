@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => _
 });
@@ -16,7 +16,7 @@ var i = n(442837),
   h = n(518950),
   f = n(967128),
   m = n(388032),
-  g = n(588207);
+  g = n(906667);
 
 function b(e) {
   let {
@@ -42,10 +42,10 @@ function _(e) {
     channel: d,
     children: p,
     user: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = null !== (t = (0, s.ZP)(d)) && void 0 !== t ? t : "", {
+  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = null != (t = (0, s.ZP)(d)) ? t : "", {
     avatarDecorationSrc: C,
-    eventHandlers: v,
-    isAnimating: y
+    eventHandlers: y,
+    isAnimating: x
   } = (0, h.Z)({
     user: m,
     size: l.EFr.SIZE_80,
@@ -70,9 +70,9 @@ function _(e) {
     return e
   }({
     channelId: d.id
-  }, v), c = c = {
+  }, y), c = c = {
     children: [(() => {
-      let e = !g && y;
+      let e = !g && x;
       return d.isMultiUserDM() ? (0, r.jsx)(u.Z, {
         channel: d,
         size: l.EFr.SIZE_80,

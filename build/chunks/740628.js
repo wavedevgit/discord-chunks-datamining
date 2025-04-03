@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => h
 }), t(47120);
@@ -15,12 +15,12 @@ var r = t(200651),
   p = t(384816),
   b = t(389190),
   y = t(428927),
-  v = t(228168),
-  m = t(388032),
-  g = t(662553),
-  I = t(237043);
+  m = t(228168),
+  g = t(388032),
+  I = t(301150),
+  j = t(923243);
 
-function j(e) {
+function v(e) {
   let {
     section: n,
     subsection: t,
@@ -30,21 +30,21 @@ function j(e) {
     guildId: s,
     onClose: c
   } = e;
-  return n === v.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
+  return n === m.oh.ACTIVITY ? (0, r.jsx)(f.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
     guildId: s,
     onClose: c
-  }) : n === v.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
+  }) : n === m.oh.MUTUAL_FRIENDS ? (0, r.jsx)(b.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.MUTUAL_GUILDS ? (0, r.jsx)(y.Z, {
+  }) : n === m.oh.MUTUAL_GUILDS ? (0, r.jsx)(y.Z, {
     user: o,
     onClose: c
-  }) : n === v.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
+  }) : n === m.oh.BOT_DATA_ACCESS ? (0, r.jsx)(d.Z, {
     user: o
-  }) : n === v.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
+  }) : n === m.oh.BOT_INFO ? (0, r.jsx)(u.Z, {
     user: o,
     currentUser: i,
     displayProfile: l,
@@ -67,7 +67,7 @@ function h(e) {
     displayProfile: p,
     guildId: b,
     items: y,
-    initialSection: h = v.oh.USER_INFO,
+    initialSection: h = m.oh.USER_INFO,
     initialSubsection: _,
     onClose: x
   } = e, {
@@ -76,12 +76,12 @@ function h(e) {
     section: P,
     subsection: N
   }, E] = o.useState({
-    section: null !== (d = null === (n = y.find(e => {
+    section: null != (d = null == (n = y.find(e => {
       let {
         section: n
       } = e;
       return n === h
-    })) || void 0 === n ? void 0 : n.section) && void 0 !== d ? d : null === (t = y[0]) || void 0 === t ? void 0 : t.section,
+    })) ? void 0 : n.section) ? d : null == (t = y[0]) ? void 0 : t.section,
     subsection: _
   });
   o.useEffect(() => {
@@ -100,20 +100,20 @@ function h(e) {
     })
   }, [O, E]);
   return Z ? (0, r.jsx)("div", {
-    className: I.container,
+    className: j.container,
     children: (0, r.jsxs)("div", {
-      className: g.empty,
+      className: I.empty,
       children: [(0, r.jsx)("div", {
-        className: g.emptyIconStreamerMode
+        className: I.emptyIconStreamerMode
       }), (0, r.jsx)("div", {
-        className: g.emptyText,
-        children: m.NW.string(m.t.Br1ls7)
+        className: I.emptyText,
+        children: g.NW.string(g.t.Br1ls7)
       })]
     })
   }) : (0, r.jsxs)("div", {
-    className: I.container,
+    className: j.container,
     children: [(0, r.jsx)(l.n, {
-      className: I.tabBar,
+      className: j.tabBar,
       type: "top",
       selectedItem: P,
       onItemSelect: S,
@@ -123,7 +123,7 @@ function h(e) {
           text: t
         } = e;
         return (0, r.jsx)(l.n.Item, {
-          className: I.tabBarItem,
+          className: j.tabBarItem,
           id: n,
           "aria-label": t,
           children: (0, r.jsx)(s.Text, {
@@ -132,7 +132,7 @@ function h(e) {
           })
         }, n)
       })
-    }), (0, r.jsx)(j, {
+    }), (0, r.jsx)(v, {
       items: y,
       section: P,
       subsection: N,

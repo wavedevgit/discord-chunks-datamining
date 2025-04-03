@@ -18,10 +18,7 @@ var n = r(7298),
     }
   },
   l = function(t, e, r, o) {
-    if (t instanceof n) {
-      r.push(c(t, e));
-      return
-    }
+    if (t instanceof n) return void r.push(c(t, e));
     t instanceof i || s(!1);
     var a = t.getParentKey(),
       u = o[t.getKey()] = function(t) {
@@ -44,10 +41,7 @@ var n = r(7298),
       }({}, c(t, e), {
         children: []
       });
-    if (a) {
-      o[a].children.push(u);
-      return
-    }
+    if (a) return void o[a].children.push(u);
     r.push(u)
   },
   f = function(t, e) {

@@ -22,12 +22,12 @@ var r = n(200651),
   j = n(358085),
   y = n(79390),
   x = n(885001),
-  v = n(35463),
-  w = n(489887),
+  w = n(35463),
+  v = n(489887),
   _ = n(185923),
   P = n(957825),
   C = n(388032),
-  N = n(32275);
+  N = n(687852);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -138,16 +138,16 @@ function D(e) {
   } = e, O = (0, s.e7)([g.Z], () => g.Z.getChannel(t)), {
     emoji: j,
     isLoadingMedia: x,
-    hasUpload: w,
+    hasUpload: v,
     mediaUrl: k,
     mediaFilename: D
-  } = (0, v.Z)({
+  } = (0, w.Z)({
     channelId: t,
     localCreationAnswerId: n,
     image: o
-  }), R = u === i.C.DEFAULT, W = w || null != j, T = a.useCallback(() => {
+  }), R = u === i.C.DEFAULT, W = v || null != j, T = a.useCallback(() => {
     f(m)
-  }, [f, m]), L = a.useMemo(() => w ? C.NW.formatToPlainString(C.t.vcC7Qk, {
+  }, [f, m]), L = a.useMemo(() => v ? C.NW.formatToPlainString(C.t.vcC7Qk, {
     imageName: (0, y.fw)(D),
     answerNumber: m + 1
   }) : null != j ? C.NW.formatToPlainString(C.t.ncOAhY, {
@@ -155,7 +155,7 @@ function D(e) {
     answerNumber: m + 1
   }) : C.NW.formatToPlainString(C.t.emdpNj, {
     answerNumber: m + 1
-  }), [w, j, m, D]), B = a.useCallback(e => {
+  }), [v, j, m, D]), B = a.useCallback(e => {
     let {
       closePopout: t
     } = e;
@@ -184,7 +184,7 @@ function D(e) {
   }, [T, h]), U = x ? (0, r.jsx)(c.$jN, {
     className: R ? N.spinnerWrapperDefault : N.spinnerWrapperImageOnly
   }) : (0, r.jsx)(I, {
-    hasUpload: w,
+    hasUpload: v,
     mediaUrl: k,
     mediaFilename: D,
     imageClassName: l()(N.media, R ? N.gifDefault : N.gifJumbo),
@@ -256,20 +256,20 @@ function R(e) {
     id: a
   } = e, o = (() => {
     var e;
-    let t = null !== (e = null == n ? void 0 : n.length) && void 0 !== e ? e : 0;
-    return w.WA - t
+    let t = null != (e = null == n ? void 0 : n.length) ? e : 0;
+    return v.WA - t
   })();
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: N.characterCount,
       "aria-hidden": "true",
-      children: [null !== (t = null == n ? void 0 : n.length) && void 0 !== t ? t : 0, " / ", w.WA]
+      children: [null != (t = null == n ? void 0 : n.length) ? t : 0, " / ", v.WA]
     }), (0, r.jsxs)(c.nn4, {
       id: a,
       children: [C.NW.format(C.t.fR1coa, {
         remainingCharacters: o
       }), " ", C.NW.format(C.t["+DFxLS"], {
-        maxLength: w.WA
+        maxLength: v.WA
       })]
     })]
   })
@@ -281,7 +281,7 @@ let W = a.forwardRef(function(e, t) {
     index: p,
     layout: b,
     isLastAnswer: g,
-    onAnswerTextChange: v,
+    onAnswerTextChange: w,
     onEmojiSelect: _,
     onEmojiRemove: P,
     canRemoveAnswer: E,
@@ -300,7 +300,7 @@ let W = a.forwardRef(function(e, t) {
     }(0, c.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("2538").then(n.bind(n, 92254));
+      } = await n.e("2538").then(n.bind(n, 89619));
       return n => (0, r.jsx)(t, A({
         channelId: o,
         answer: d,
@@ -315,7 +315,7 @@ let W = a.forwardRef(function(e, t) {
     switch (e.key.toLowerCase()) {
       case "enter":
         var r;
-        g && (e.preventDefault(), ((0, y.cS)(d, b) || "macos" !== (0, j.getOS)() ? t : n) ? (e.stopPropagation(), W()) : S()), null === (r = T.current[p + 1]) || void 0 === r || r.focus();
+        g && (e.preventDefault(), ((0, y.cS)(d, b) || "macos" !== (0, j.getOS)() ? t : n) ? (e.stopPropagation(), W()) : S()), null == (r = T.current[p + 1]) || r.focus();
         break;
       case "e":
         ("macos" === (0, j.getOS)() ? n : t) && (e.preventDefault(), e.stopPropagation(), q())
@@ -348,13 +348,13 @@ let W = a.forwardRef(function(e, t) {
         value: d.text,
         className: N.defaultTextInput,
         inputClassName: N.defaultTextInput,
-        onChange: e => v({
+        onChange: e => w({
           text: e,
           index: p,
           localCreationAnswerId: d.localCreationAnswerId
         }),
         onKeyDown: X,
-        maxLength: w.WA,
+        maxLength: v.WA,
         "aria-invalid": z,
         "aria-describedby": z ? U : M,
         focusProps: k,

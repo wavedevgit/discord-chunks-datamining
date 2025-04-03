@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(278323),
+  a = n(481060),
+  o = n(278323),
   s = n(287734),
   c = n(230711),
   u = n(726542),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(417363),
   O = n(626135),
   N = n(804739),
-  v = n(346329),
-  y = n(981631),
-  I = n(388032);
+  y = n(346329),
+  I = n(981631),
+  v = n(388032);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,7 +56,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = u.Z.get(y.ABu.XBOX).name;
+let T = u.Z.get(I.ABu.XBOX).name;
 
 function P(e) {
   let {
@@ -64,16 +64,16 @@ function P(e) {
   } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([m.Z], () => m.Z.getAccounts().some(e => e.type === u.Z.get(y.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([m.Z], () => m.Z.getAccounts().some(e => e.type === u.Z.get(I.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
       return (0, h.Z)(t)
     });
-    return n || !i ? null : (0, r.jsx)(o.sNh, {
+    return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
-      action: () => c.Z.open(y.oAB.CONNECTIONS),
-      label: I.NW.formatToPlainString(I.t.XWSHTU, {
+      action: () => c.Z.open(I.oAB.CONNECTIONS),
+      label: v.NW.formatToPlainString(v.t.XWSHTU, {
         platform: T
       })
     })
@@ -88,7 +88,7 @@ function P(e) {
       } = e, i = _.Z.getActiveLibraryApplication(r.id);
       return S(C({}, e), {
         libraryApplication: i,
-        canJoin: null != t && (0, d.Z)(t, y.xjy.JOIN) && t.type === y.IIU.PLAYING,
+        canJoin: null != t && (0, d.Z)(t, I.xjy.JOIN) && t.type === I.IIU.PLAYING,
         canPlay: (0, N.t)({
           LibraryApplicationStore: _.Z,
           LaunchableGameStore: g.Z,
@@ -116,19 +116,19 @@ function P(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await a.Z.sendActivityInviteUser({
-          type: y.mFx.JOIN_REQUEST,
+        let e = await o.Z.sendActivityInviteUser({
+          type: I.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
-          location: y.Sbl.PROFILE_POPOUT
+          location: I.Sbl.PROFILE_POPOUT
         });
         null != e && s.default.selectPrivateChannel(e.id)
       }
-      return (0, r.jsx)(o.sNh, {
+      return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
-        label: t ? I.NW.formatToPlainString(I.t.wFAvxM, {
+        label: t ? v.NW.formatToPlainString(v.t.wFAvxM, {
           name: l.toString()
-        }) : I.NW.string(I.t.OKsSCQ),
+        }) : v.NW.string(v.t.OKsSCQ),
         action: c
       })
     }(e, n), function(e, t) {
@@ -136,31 +136,31 @@ function P(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: a,
+        location: o,
         canPlay: s,
         isRunning: c,
         isLaunching: u
       } = e;
       if (!s || null == n) return null;
-      let d = c ? I.NW.formatToPlainString(I.t["gBme//"], {
+      let d = c ? v.NW.formatToPlainString(v.t["gBme//"], {
         name: i.name
-      }) : u ? I.NW.formatToPlainString(I.t.WtSQwM, {
+      }) : u ? v.NW.formatToPlainString(v.t.WtSQwM, {
         name: i.name
       }) : void 0;
-      return (0, r.jsx)(o.sNh, {
+      return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, v.playApplication)(i.id, l, {
+          (0, y.playApplication)(i.id, l, {
             analyticsParams: {
-              location: S(C({}, a), {
-                object: y.qAy.LIST_ITEM
+              location: S(C({}, o), {
+                object: I.qAy.LIST_ITEM
               })
             }
           })
         },
-        label: t ? I.NW.formatToPlainString(I.t.ZDZEJC, {
+        label: t ? v.NW.formatToPlainString(v.t.ZDZEJC, {
           name: i.name
-        }) : I.NW.string(I.t.XKUw8v),
+        }) : v.NW.string(v.t.XKUw8v),
         subtext: d
       })
     }(e, n))

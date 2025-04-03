@@ -5,8 +5,8 @@ n.d(t, {
 var a = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(332664),
-  r = n(142497),
+  r = n(332664),
+  o = n(142497),
   c = n(626135),
   s = n(672655),
   u = n(768015),
@@ -35,8 +35,8 @@ function p(e) {
       source: "Activity End"
     })
   }, [h]);
-  let j = (null === (t = h.embeddedActivityConfig) || void 0 === t ? void 0 : t.displays_advertisements) === !0;
-  return (0, a.jsx)(o.Z, {
+  let j = (null == (t = h.embeddedActivityConfig) ? void 0 : t.displays_advertisements) === !0;
+  return (0, a.jsx)(r.Z, {
     modalType: "activity",
     header: _.NW.formatToPlainString(_.t.QXYwoK, {
       applicationName: h.name
@@ -49,7 +49,7 @@ function p(e) {
       var t;
       let {
         rating: i,
-        problem: o,
+        problem: r,
         dontShowAgain: s,
         feedback: d
       } = e;
@@ -61,12 +61,12 @@ function p(e) {
         c.default.track(m.rMx.ACTIVITY_REPORT_DONT_SHOW, {
           application_id: t,
           rating: n
-        }), (0, r.Kw)(b.v.POST_ACTIVITY_FEEDBACK)
+        }), (0, o.Kw)(b.v.POST_ACTIVITY_FEEDBACK)
       }({
         rating: i,
         applicationId: h.id
       }), null != i && ((0, u.Z)({
-        problem: null !== (t = null == o ? void 0 : o.value) && void 0 !== t ? t : null,
+        problem: null != (t = null == r ? void 0 : r.value) ? t : null,
         channel: p,
         embeddedActivityLocation: x,
         feedback: d,
@@ -74,7 +74,7 @@ function p(e) {
         analyticsData: g,
         location: "Activity End",
         rating: i
-      }), null != o && (0, l.ZDy)(async () => {
+      }), null != r && (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));

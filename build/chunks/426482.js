@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   C: () => p,
   Z: () => d
@@ -9,7 +9,7 @@ var n, a = r(200651),
   l = r.n(i),
   s = r(793030),
   c = r(388032),
-  u = r(279998),
+  u = r(376377),
   d = ((n = {})[n.SMALL = 0] = "SMALL", n[n.LARGE = 1] = "LARGE", n);
 
 function p(e) {
@@ -19,7 +19,7 @@ function p(e) {
     application: n,
     size: i,
     className: d
-  } = e, [p, f] = o.useState(!1), m = null !== (t = null == n ? void 0 : n.name) && void 0 !== t ? t : r.name, g = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
+  } = e, [p, f] = o.useState(!1), m = null != (t = null == n ? void 0 : n.name) ? t : r.name, g = null != r.firstReleaseDate ? new Date(r.firstReleaseDate) : null;
   return null == r.coverImageUrl || p ? (0, a.jsxs)("div", {
     className: l()(u.fallback, d),
     children: [(0, a.jsx)("div", {

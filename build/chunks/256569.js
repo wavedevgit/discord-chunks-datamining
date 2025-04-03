@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(853276),
   u = n(596390),
   m = n(870472),
-  g = n(507212);
+  g = n(673569);
 
 function p(e) {
   let {
@@ -77,8 +77,8 @@ function f(e) {
     placeholder: p,
     className: f,
     maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), v = (0, m.V)(n), {
-    handlePasteEvent: _,
+  } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), _ = (0, m.V)(n), {
+    handlePasteEvent: v,
     handleInputChange: C,
     handleKeyDown: O,
     handleContainerKeyUp: y,
@@ -88,7 +88,7 @@ function f(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, m.Q)(v, {
+  } = (0, m.Q)(_, {
     scrollerRef: N,
     mainInputRef: x,
     mainContainerRef: j
@@ -99,16 +99,16 @@ function f(e) {
       selections: D,
       isSelecting: A
     }
-  } = v, k = (0, o.Z)(Z), [W, L] = i.useState(!1), M = i.useCallback(() => {
+  } = _, k = (0, o.Z)(Z), [W, L] = i.useState(!1), M = i.useCallback(() => {
     var e;
-    L(!1), P(), null === (e = x.current) || void 0 === e || e.focus({
+    L(!1), P(), null == (e = x.current) || e.focus({
       preventScroll: !0
     })
   }, [P]);
   i.useEffect(() => {
     k !== Z && s(Z)
   }, [s, k, Z]), i.useEffect(() => {
-    !W && c(R)
+    W || c(R)
   }, [c, R, W]);
   let G = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
@@ -118,11 +118,11 @@ function f(e) {
       if (t) {
         var n;
         let t = D.includes(Z[e]);
-        null === (n = x.current) || void 0 === n || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
+        null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
-          null === (e = x.current) || void 0 === e || e.blur(), setTimeout(() => {
+          null == (e = x.current) || e.blur(), setTimeout(() => {
             var e;
-            return null === (e = j.current) || void 0 === e ? void 0 : e.focus()
+            return null == (e = j.current) ? void 0 : e.focus()
           }, 16)
         }))
       } else T(e, !0), L(!0)
@@ -152,7 +152,7 @@ function f(e) {
         ref: x,
         onChange: C,
         onKeyDownCapture: O,
-        onPaste: _,
+        onPaste: v,
         onBlur: w,
         placeholder: 0 === Z.length ? p : void 0,
         value: R
@@ -161,7 +161,7 @@ function f(e) {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null !== (t = null == Z ? void 0 : Z.length) && void 0 !== t ? t : 0, "/", b]
+      children: [null != (t = null == Z ? void 0 : Z.length) ? t : 0, "/", b]
     })]
   })
 }

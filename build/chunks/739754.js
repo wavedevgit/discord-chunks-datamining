@@ -1,4 +1,4 @@
-/** Chunk was on 44812 **/
+/** Chunk was on 40617 **/
 n.d(t, {
   ZP: () => T,
   c4: () => S,
@@ -12,11 +12,11 @@ var i = n(200651),
   c = n(442837),
   s = n(481060),
   _ = n(292419),
-  d = n(282397),
-  u = n(188597),
+  u = n(282397),
+  d = n(188597),
   p = n(981631),
   f = n(388032),
-  I = n(651972);
+  I = n(964732);
 
 function m(e) {
   return {
@@ -63,11 +63,11 @@ let T = o.memo(function(e) {
     message: t,
     className: n,
     component: r
-  } = e, a = (0, l.Z)(), s = (0, c.e7)([d.ZP], () => d.ZP.getInteraction(t), [t]);
+  } = e, a = (0, l.Z)(), s = (0, c.e7)([u.ZP], () => u.ZP.getInteraction(t), [t]);
   o.useEffect(() => {
     let e = null;
     if (t.hasFlag(p.iLy.LOADING) && null != s) {
-      let n = (0, u.ow)(t.id) - Date.now();
+      let n = (0, d.ow)(t.id) - Date.now();
       n > 0 && (e = setTimeout(() => a(), 1e3 + n))
     }
     return () => {
@@ -76,16 +76,16 @@ let T = o.memo(function(e) {
   }, [a, s, t]);
   let I = null;
   if (null == r) I = function(e, t) {
-    switch ((0, u.t$)(t, e)) {
-      case u.rQ.SENDING:
+    switch ((0, d.t$)(t, e)) {
+      case d.rQ.SENDING:
         return m(f.NW.string(f.t.RiLfBQ));
-      case u.rQ.CREATED:
+      case d.rQ.CREATED:
         return m(f.NW.formatToPlainString(f.t["7ePV4u"], {
           applicationName: t.author.username
         }));
-      case u.rQ.TIMED_OUT:
+      case d.rQ.TIMED_OUT:
         return S(f.NW.string(f.t.h8hzPT));
-      case u.rQ.FAILED:
+      case d.rQ.FAILED:
         return S(t.interactionError)
     }
   }(s, t);

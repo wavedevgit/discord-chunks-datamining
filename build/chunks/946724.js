@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 let r, i, s;
 n.d(t, {
@@ -19,7 +19,7 @@ var a, l = n(392711),
   j = n(999382),
   N = n(981631);
 
-function v(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function v(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = new Set,
+let v = new Set,
   C = N.QZA.CLOSED,
   O = !1,
   y = !1,
@@ -75,7 +75,7 @@ function Z(e) {
 
 function D() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-  r = j.Z.getProps().guild, O = !1, y = !1, s = void 0, _.clear(), C = N.QZA.OPEN, E = [...I = null != r ? o()(h.Z.getRoles(r.id)).values().sortBy(e => {
+  r = j.Z.getProps().guild, O = !1, y = !1, s = void 0, v.clear(), C = N.QZA.OPEN, E = [...I = null != r ? o()(h.Z.getRoles(r.id)).values().sortBy(e => {
     let {
       position: t
     } = e;
@@ -86,15 +86,15 @@ function D() {
 }
 let A = o().debounce(() => {
   let e = !1;
-  !y || (y = R().length > 0) || (e = !0), [..._].forEach(t => {
+  y && ((y = R().length > 0) || (e = !0)), [...v].forEach(t => {
     var n;
     o().isEqual(W(t), (n = t, E.find(e => {
       let {
         id: t
       } = e;
       return t === n
-    }))) && (_.delete(t), e = !0)
-  }), 0 === _.size && (O = !1), S && o().isEqual(P, w) && (e = !0, S = !1), e && G.emitChange()
+    }))) && (v.delete(t), e = !0)
+  }), 0 === v.size && (O = !1), S && o().isEqual(P, w) && (e = !0, S = !1), e && G.emitChange()
 }, 500);
 
 function k(e, t) {
@@ -107,12 +107,12 @@ function k(e, t) {
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        v(e, t, n[t])
+        _(e, t, n[t])
       })
     }
     return e
   }({}, e, t);
-  I[n] = r, I = [...I], O = !0, _.add(r.id), A()
+  I[n] = r, I = [...I], O = !0, v.add(r.id), A()
 }
 
 function W(e) {
@@ -136,7 +136,7 @@ function L(e) {
       position: t
     } = e;
     return t
-  }).reverse().value()), _.forEach(e => {
+  }).reverse().value()), v.forEach(e => {
     let t = W(e),
       r = -1;
     null == n.find((t, n) => {
@@ -144,8 +144,8 @@ function L(e) {
         id: i
       } = t;
       if (i === e) return r = n, !0
-    }) || null == t ? _.delete(e) : n[r] = t
-  }), 0 === _.size && (O = !1), y = !1, I = [...n]
+    }) || null == t ? v.delete(e) : n[r] = t
+  }), 0 === v.size && (O = !1), y = !1, I = [...n]
 }
 class M extends(a = u.ZP.Store) {
   initialize() {
@@ -167,7 +167,7 @@ class M extends(a = u.ZP.Store) {
     return r
   }
   get editedRoleIds() {
-    return Array.from(_)
+    return Array.from(v)
   }
   get editedRoleIdsForConfigurations() {
     return T
@@ -194,7 +194,7 @@ class M extends(a = u.ZP.Store) {
     return w
   }
 }
-v(M, "displayName", "GuildSettingsRolesStore");
+_(M, "displayName", "GuildSettingsRolesStore");
 let G = new M(m.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => D(),
     GUILD_SETTINGS_INIT: Z,
@@ -307,10 +307,7 @@ let G = new M(m.Z, __OVERLAY__ ? {} : {
         searchQuery: n
       } = e;
       if (i = n, null != t) {
-        if (null != W(t.id)) {
-          k(t, t);
-          return
-        }
+        if (null != W(t.id)) return void k(t, t);
         I = [...I, t], A()
       }
     },
@@ -333,7 +330,7 @@ let G = new M(m.Z, __OVERLAY__ ? {} : {
       S = !0, T.add(r.id), w.set(r.id, n), A()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, E = I = [], P.clear(), _.clear(), w.clear(), T = new Set, O = !1, y = !1, S = !1, C = N.QZA.CLOSED
+      r = null, E = I = [], P.clear(), v.clear(), w.clear(), T = new Set, O = !1, y = !1, S = !1, C = N.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: L,
     GUILD_ROLE_UPDATE: L,

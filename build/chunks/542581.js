@@ -16,14 +16,14 @@ var r = n(200651),
   h = n(470623),
   g = n(981631),
   f = n(388032),
-  p = n(707744),
-  x = n(50398);
+  p = n(761852),
+  x = n(73433);
 let b = a.memo(function(e) {
   let {
     channel: t,
     onChange: i
   } = e, b = (0, h.AF)(), {
-    guidelinesOpen: v
+    guidelinesOpen: j
   } = (0, h.xH)(e => {
     let {
       guidelinesOpen: t
@@ -31,21 +31,21 @@ let b = a.memo(function(e) {
     return {
       guidelinesOpen: t
     }
-  }, o.X), j = (0, m.r_)(t), [C, _] = a.useState(!1), y = a.useCallback(e => {
+  }, o.X), v = (0, m.r_)(t), [C, _] = a.useState(!1), y = a.useCallback(e => {
     if (null == e) return;
     let t = e.clientHeight >= 220;
     t !== C && _(t)
   }, [C]);
   a.useLayoutEffect(() => {
     setTimeout(i, 350)
-  }, [v, i]);
-  let [N, O] = a.useState(!v), w = (0, c.q_F)({
-    opacity: +!!v,
-    maxHeight: 500 * !!v,
+  }, [j, i]);
+  let [N, O] = a.useState(!j), w = (0, c.q_F)({
+    opacity: +!!j,
+    maxHeight: 500 * !!j,
     config: {
       duration: 300
     },
-    onRest: () => O(!v)
+    onRest: () => O(!j)
   });
   return null != t.topic && t.topic.length > 0 ? (0, r.jsx)(s.animated.div, {
     style: w,
@@ -62,7 +62,7 @@ let b = a.memo(function(e) {
             color: "currentColor",
             width: 20,
             height: 20
-          }), f.NW.string(f.t["4d4T4u"]), j && (0, r.jsx)(c.P3F, {
+          }), f.NW.string(f.t["4d4T4u"]), v && (0, r.jsx)(c.P3F, {
             onClick: () => {
               d.ZP.open(t.id, void 0, g.ZfP.TOPIC)
             },

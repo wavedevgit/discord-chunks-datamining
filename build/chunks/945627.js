@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => O
 }), n(47120), n(653041);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(442837),
-  o = n(481060),
-  l = n(230711),
+  l = n(481060),
+  o = n(230711),
   c = n(835473),
   d = n(372460),
   u = n(91896),
@@ -20,7 +20,7 @@ var r = n(200651),
   N = n(726985),
   x = n(981631),
   _ = n(388032),
-  E = n(985680);
+  E = n(652045);
 
 function j() {
   let e = (0, a.e7)([u.Z], () => u.Z.getGameFriendCount()),
@@ -77,7 +77,7 @@ function j() {
       return e
     }, [p]),
     b = i.useCallback(() => {
-      l.Z.open(x.oAB.AUTHORIZED_APPS)
+      o.Z.open(x.oAB.AUTHORIZED_APPS)
     }, []);
   return (0, r.jsxs)("div", {
     className: E.header,
@@ -85,13 +85,13 @@ function j() {
       className: E.gameRelationships,
       children: [(0, r.jsxs)("div", {
         className: E.gameRelationshipsDetails,
-        children: [(0, r.jsx)(o.Text, {
+        children: [(0, r.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "header-primary",
           children: _.NW.format(_.t.iPZSeX, {
             count: e
           })
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: h
@@ -102,16 +102,16 @@ function j() {
       })]
     }), (0, r.jsx)("div", {
       className: E.divider
-    }), (0, r.jsxs)(o.P3F, {
+    }), (0, r.jsxs)(l.P3F, {
       onClick: b,
       className: E.manageGamesLink,
-      children: [(0, r.jsx)(o.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "interactive-normal",
         children: _.NW.format(_.t.oYaYOT, {})
-      }), (0, r.jsx)(o.Fbu, {
+      }), (0, r.jsx)(l.Fbu, {
         size: "xxs",
-        color: o.TVs.colors.INTERACTIVE_NORMAL,
+        color: l.TVs.colors.INTERACTIVE_NORMAL,
         className: E.manageGamesChevron
       })]
     })]

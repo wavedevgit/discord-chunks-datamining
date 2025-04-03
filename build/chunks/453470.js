@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  M: () => x
+  M: () => v
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -19,24 +19,24 @@ var r = n(200651),
   b = n(276060),
   _ = n(870991),
   C = n(981631),
-  v = n(134612),
-  y = n(388032);
+  y = n(134612),
+  x = n(388032);
 
-function x(e) {
+function v(e) {
   let {
     channelId: t,
-    warningId: x,
+    warningId: v,
     senderId: j
   } = e, O = (0, _.E4)(), E = i.useCallback(() => {
-    (0, p.T)(t, [x])
-  }, [t, x]), N = (0, b.t)({
-    location: v.zr
+    (0, p.T)(t, [v])
+  }, [t, v]), N = (0, b.t)({
+    location: y.zr
   }), I = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
     }, g.ZB.Muted), c.Z.showMuteSuccessToast(j, t), (0, f.qc)({
       channelId: t,
-      warningId: x,
+      warningId: v,
       senderId: j,
       warningType: h.pj.LIKELY_ATO,
       cta: e
@@ -55,9 +55,9 @@ function x(e) {
           transitionState: i,
           onClose: l,
           channelId: t,
-          warningId: x,
+          warningId: v,
           senderId: j,
-          description: y.NW.string(y.t["/uid3t"]),
+          description: x.NW.string(x.t["/uid3t"]),
           safetyTipRows: O.map((e, t) => (0, r.jsx)(u.q, {
             listType: "numbered",
             index: t,
@@ -65,9 +65,9 @@ function x(e) {
             description: e.description
           }, t)),
           actionRows: [(0, r.jsx)(d.ZP, {
-            title: y.NW.string(y.t.ftIK2N),
-            description: y.NW.string(y.t.w2ve0t),
-            buttonText: y.NW.string(y.t.ftIK2N),
+            title: x.NW.string(x.t.ftIK2N),
+            description: x.NW.string(x.t.w2ve0t),
+            buttonText: x.NW.string(x.t.ftIK2N),
             onButtonPress: () => {
               I(f.NM.USER_MODAL_MUTE), l()
             }
@@ -75,7 +75,7 @@ function x(e) {
           learnMore: (0, r.jsx)(o.P3F, {
             onClick: () => (0, f.qc)({
               channelId: t,
-              warningId: x,
+              warningId: v,
               senderId: j,
               warningType: h.pj.LIKELY_ATO,
               cta: f.NM.USER_MODAL_LEARN_MORE
@@ -83,7 +83,7 @@ function x(e) {
             children: (0, r.jsx)(o.X6q, {
               variant: "heading-sm/medium",
               color: "text-link",
-              children: y.NW.format(y.t.UkH129, {
+              children: x.NW.format(x.t.UkH129, {
                 learnMoreLink: _.D8
               })
             })
@@ -95,34 +95,34 @@ function x(e) {
   return (i.useEffect(() => {
     N && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
-      warningId: x,
+      warningId: v,
       senderId: j,
       warningType: h.pj.LIKELY_ATO
     }), s.Z.increment({
       name: l.V.SAFETY_WARNING_VIEW
     }))
-  }, [t, x, j, N]), N) ? (0, r.jsx)(m.Q, {
+  }, [t, v, j, N]), N) ? (0, r.jsx)(m.Q, {
     channelId: t,
-    warningId: x,
+    warningId: v,
     senderId: j,
     warningType: h.pj.LIKELY_ATO,
-    header: y.NW.string(y.t.R8UsiI),
-    description: y.NW.string(y.t.lI8nQk),
+    header: x.NW.string(x.t.R8UsiI),
+    description: x.NW.string(x.t.lI8nQk),
     onDismiss: E,
     buttons: [{
-      text: y.NW.string(y.t.tC1pvL),
+      text: x.NW.string(x.t.tC1pvL),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
         P(), (0, f.qc)({
           channelId: t,
-          warningId: x,
+          warningId: v,
           senderId: j,
           warningType: h.pj.LIKELY_ATO,
           cta: f.NM.OPEN_MORE_TIPS
         })
       }
     }, {
-      text: y.NW.string(y.t.ftIK2N),
+      text: x.NW.string(x.t.ftIK2N),
       color: o.zxk.Colors.PRIMARY,
       onclick: () => I(f.NM.USER_BANNER_MUTE)
     }]

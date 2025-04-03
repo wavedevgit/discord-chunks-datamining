@@ -1,7 +1,7 @@
 /** Chunk was on 84414 **/
 n.d(t, {
   Z: () => U,
-  d: () => v
+  d: () => M
 });
 var r = n(200651);
 n(192379);
@@ -29,7 +29,7 @@ var i = n(120356),
   g = n(302463),
   m = n(293810),
   D = n(388032),
-  y = n(792021);
+  y = n(800515);
 
 function h(e) {
   let {
@@ -85,9 +85,9 @@ function U() {
           return D.NW.string(D.t.MTIXho)
       }
     }(i),
-    v = i === P.pNK.ROLE_SUBSCRIPTIONS ? D.NW.string(D.t.hZUCzc) : D.NW.string(D.t["/djIh4"]),
-    M = t === C.oC.GUILD_ONBOARDING,
-    L = t => {
+    M = i === P.pNK.ROLE_SUBSCRIPTIONS ? D.NW.string(D.t.hZUCzc) : D.NW.string(D.t["/djIh4"]),
+    L = t === C.oC.GUILD_ONBOARDING,
+    Z = t => {
       let {
         backToSettings: n
       } = t;
@@ -97,7 +97,7 @@ function U() {
     color: s.DM8.BRAND,
     className: y.notice,
     children: [(0, r.jsxs)(h, {
-      onClick: () => L({
+      onClick: () => Z({
         backToSettings: !0
       }),
       className: y.backButton,
@@ -107,7 +107,7 @@ function U() {
         direction: T.Z.Directions.LEFT,
         className: y.backArrow
       }), U]
-    }), M && l ? (0, r.jsx)("div", {
+    }), L && l ? (0, r.jsx)("div", {
       className: y.noticeContents,
       children: (0, r.jsx)("div", {
         className: y.noticeText,
@@ -133,7 +133,7 @@ function U() {
           } = e;
           return (0, r.jsxs)(h, {
             onClick: t,
-            children: [v, (0, r.jsx)(S.Z, {
+            children: [M, (0, r.jsx)(S.Z, {
               width: 16,
               height: 16,
               direction: S.Z.Directions.DOWN,
@@ -160,14 +160,14 @@ function U() {
         })
       })]
     }), l || i === P.pNK.ROLE_SUBSCRIPTIONS ? null : (0, r.jsx)(b, {
-      onClick: () => L({
+      onClick: () => Z({
         backToSettings: !1
       })
     })]
   })
 }
 
-function v(e) {
+function M(e) {
   let {
     guildId: t
   } = e;

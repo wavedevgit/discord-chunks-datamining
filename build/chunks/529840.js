@@ -8,7 +8,7 @@ var s = r(120356),
   i = r.n(s),
   n = r(481060),
   l = r(518950),
-  o = r(691783);
+  o = r(675465);
 
 function C(e) {
   var t;
@@ -23,7 +23,7 @@ function C(e) {
   } = (0, l.Z)({
     user: r,
     size: n.EFr.SIZE_32
-  }), f = null !== (t = r.globalName) && void 0 !== t ? t : r.username;
+  }), f = null != (t = r.globalName) ? t : r.username;
   return (0, a.jsxs)("div", {
     className: o.container,
     children: [(0, a.jsxs)("div", {

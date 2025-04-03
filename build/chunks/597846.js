@@ -31,7 +31,7 @@ let u = {
     let {
       ticking: h,
       stop: y,
-      reset: v
+      reset: w
     } = (0, i.Z)(e => {
       if (null != p.current) {
         let {
@@ -47,8 +47,8 @@ let u = {
       }
     }, f);
     return a.useEffect(() => {
-      o && !h.current && v(), o || y()
-    }, [o, v, y, h]), (0, n.jsx)("div", {
+      o && !h.current && w(), o || y()
+    }, [o, w, y, h]), (0, n.jsx)("div", {
       children: (0, n.jsx)("canvas", {
         ref: m
       })

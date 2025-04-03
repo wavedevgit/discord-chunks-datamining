@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => u
 });
@@ -23,7 +23,7 @@ class c extends(r = i.ZP.PersistedStore) {
   }
   getToastsEnabled(e) {
     var t;
-    return null === (t = s.toastsEnabledForChannel[e]) || void 0 === t || t
+    return null == (t = s.toastsEnabledForChannel[e]) || t
   }
   getState() {
     return s

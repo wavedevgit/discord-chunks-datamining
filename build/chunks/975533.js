@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(570140),
   i = n(846027),
   l = n(13245),
-  o = n(287734),
-  a = n(872810),
+  a = n(287734),
+  o = n(872810),
   s = n(223245),
   c = n(479837),
   u = n(317770),
@@ -21,9 +21,9 @@ var r = n(570140),
   E = n(199902),
   O = n(131951),
   N = n(246946),
-  v = n(808506),
-  y = n(237997),
-  I = n(626135),
+  y = n(808506),
+  I = n(237997),
+  v = n(626135),
   C = n(554174),
   S = n(981631),
   T = n(65154);
@@ -113,7 +113,7 @@ let P = {
   [S.kg4.TOGGLE_OVERLAY_INPUT_LOCK]: {
     onTrigger() {
       let e = (0, C.Z)();
-      null != e && l.Z.setInputLocked(!y.default.isLocked(e), e)
+      null != e && l.Z.setInputLocked(!I.default.isLocked(e), e)
     },
     keyEvents: {
       keyup: !0,
@@ -122,9 +122,9 @@ let P = {
   },
   [S.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET]: {
     onTrigger() {
-      let e = v.default.getFocusedPID(),
+      let e = y.default.getFocusedPID(),
         t = null != e;
-      null != e && t && y.default.isPinned(S.Odu.TEXT) && y.default.isLocked(e) && v.default.isReady(e) && l.Z.activateRegion(S.O0n.TEXT_WIDGET)
+      null != e && t && I.default.isPinned(S.Odu.TEXT) && I.default.isLocked(e) && y.default.isReady(e) && l.Z.activateRegion(S.O0n.TEXT_WIDGET)
     },
     keyEvents: {
       keyup: !0,
@@ -134,7 +134,7 @@ let P = {
   [S.kg4.TOGGLE_GO_LIVE_STREAMING]: {
     onTrigger() {
       let e = E.Z.getCurrentUserActiveStream();
-      if (null != e) return (0, a.g)((0, h.V9)(e));
+      if (null != e) return (0, o.g)((0, h.V9)(e));
       (0, f.Z)()
     },
     keyEvents: {
@@ -172,13 +172,12 @@ let P = {
   [S.kg4.SOUNDBOARD]: {
     onTrigger: () => {
       let e = (0, C.Z)();
-      if (null != e) {
+      if (null != e)
         if (m.Z.enabled)(0, _.oZ)(e);
         else {
           if (!(0, b.D)()) return;
           (0, _.IN)(!0, e)
         }
-      }
     },
     keyEvents: {
       keyup: !0,
@@ -203,7 +202,7 @@ let P = {
   },
   [S.kg4.SAVE_CLIP]: {
     onTrigger: () => {
-      (0, d.ln)() && (I.default.track(S.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, p.C1)())
+      (0, d.ln)() && (v.default.track(S.rMx.CLIP_SAVE_KEYBIND_PRESSED), (0, p.C1)())
     },
     keyEvents: {
       keyup: !1,
@@ -217,7 +216,7 @@ let P = {
           channelId: n
         }
       } = t;
-      null != n && o.default.selectVoiceChannel(n)
+      null != n && a.default.selectVoiceChannel(n)
     },
     keyEvents: {
       keyup: !0,
@@ -228,7 +227,7 @@ let P = {
   },
   [S.kg4.DISCONNECT_FROM_VOICE_CHANNEL]: {
     onTrigger() {
-      o.default.selectVoiceChannel(null)
+      a.default.selectVoiceChannel(null)
     },
     keyEvents: {
       keyup: !0,

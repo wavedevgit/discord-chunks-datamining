@@ -3,8 +3,8 @@ r.d(t, {
   default: () => C
 });
 var n = r(200651),
-  o = r(192379),
-  l = r(481060),
+  l = r(192379),
+  o = r(481060),
   a = r(230711),
   i = r(782568),
   s = r(168107),
@@ -16,7 +16,7 @@ var n = r(200651),
   u = r(981631),
   f = r(526761),
   h = r(388032),
-  m = r(4473),
+  m = r(618386),
   A = r(444812);
 let C = e => {
   let {
@@ -24,23 +24,23 @@ let C = e => {
     messageId: C,
     transitionState: N,
     onClose: g
-  } = e, R = (0, _.Z)(), v = (0, c.Jm)(), L = (0, E.m8)(), b = o.useMemo(() => v && L, [v, L]), x = o.useCallback(e => {
+  } = e, R = (0, _.Z)(), L = (0, c.Jm)(), b = (0, E.m8)(), x = l.useMemo(() => L && b, [L, b]), v = l.useCallback(e => {
     (0, E.aP)({
       action: e,
       channelId: t,
       messageId: C
     })
   }, [t, C]);
-  return o.useEffect(() => {
+  return l.useEffect(() => {
     (0, E.aP)({
       action: E.Yy.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
       channelId: t,
       messageId: C
     })
-  }, [t, C]), (0, n.jsxs)(l.Y0X, {
+  }, [t, C]), (0, n.jsxs)(o.Y0X, {
     transitionState: N,
     "aria-label": h.NW.string(h.t.xdm3XF),
-    children: [(0, n.jsx)(l.xBx, {
+    children: [(0, n.jsx)(o.xBx, {
       separator: !1,
       className: m.modalHeader,
       children: (0, n.jsx)("img", {
@@ -48,58 +48,58 @@ let C = e => {
         alt: h.NW.string(h.t.id3fND),
         className: m.headerImg
       })
-    }), (0, n.jsxs)(l.hzk, {
+    }), (0, n.jsxs)(o.hzk, {
       className: m.modalBody,
-      children: [(0, n.jsx)(l.X6q, {
+      children: [(0, n.jsx)(o.X6q, {
         variant: "heading-lg/bold",
         className: m.modalInteriorHeader,
         children: h.NW.string(h.t.sGW77u)
-      }), (0, n.jsx)(l.Text, {
+      }), (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: b ? h.NW.string(h.t.H2kKw8) : R ? h.NW.string(h.t.XW3vjo) : h.NW.string(h.t.i4daNj)
+        children: x ? h.NW.string(h.t.H2kKw8) : R ? h.NW.string(h.t.XW3vjo) : h.NW.string(h.t.i4daNj)
       }), (0, n.jsxs)("div", {
         className: m.buttonContainer,
-        children: [b ? (0, n.jsx)(l.zxk, {
-          color: l.zxk.Colors.BRAND,
+        children: [x ? (0, n.jsx)(o.zxk, {
+          color: o.zxk.Colors.BRAND,
           onClick: function() {
-            g(), x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
+            g(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal(d.cU.SENSITIVE_MEDIA_LEARN_MORE)
           },
           fullWidth: !0,
           children: h.NW.string(h.t["+2/AhI"])
-        }) : R ? (0, n.jsx)(l.zxk, {
-          color: l.zxk.Colors.BRAND,
+        }) : R ? (0, n.jsx)(o.zxk, {
+          color: o.zxk.Colors.BRAND,
           onClick: function() {
-            x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), a.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
+            v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), a.Z.open(u.oAB.CONTENT_AND_SOCIAL, null, {
               scrollPosition: f.FY.EXPLICIT_MEDIA_REDACTION_V2
             }), g()
           },
           fullWidth: !0,
           children: h.NW.string(h.t["9D+zGR"])
-        }) : (0, n.jsx)(l.zxk, {
-          color: l.zxk.Colors.BRAND,
+        }) : (0, n.jsx)(o.zxk, {
+          color: o.zxk.Colors.BRAND,
           onClick: () => {
             (0, i.Z)(I.Z.getArticleURL(u.BhN.EXPLICIT_MEDIA_REDACTION))
           },
           fullWidth: !0,
           children: h.NW.string(h.t.hvVgAQ)
-        }), (0, n.jsx)(l.zxk, {
-          color: l.zxk.Colors.PRIMARY,
+        }), (0, n.jsx)(o.zxk, {
+          color: o.zxk.Colors.PRIMARY,
           onClick: function() {
-            g(), x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
+            g(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS)
           },
           fullWidth: !0,
           children: h.NW.string(h.t.bmbHPD)
-        }), (0, n.jsx)(l.Text, {
+        }), (0, n.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: b ? h.NW.format(h.t["3HvI8P"], {
+          children: x ? h.NW.format(h.t["3HvI8P"], {
             handleOnHelpUrlHook: () => {
-              s.Z.openUrl(I.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+              s.Z.openUrl(I.Z.getArticleURL(u.BhN.TIGGER_PAWTECT_UK_AND_AUS_ONLY_LEARN_MORE)), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
             }
           }) : h.NW.format(h.t.Ge0HUl, {
             handleFalsePositiveHook: () => {
-              g(), x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, l.ZDy)(async () => {
+              g(), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
                 let {
                   default: e
                 } = await r(788679);
@@ -124,7 +124,7 @@ let C = e => {
                   channelId: t,
                   messageId: C
                 }, r))
-              }), x(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
+              }), v(E.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE)
             }
           })
         })]

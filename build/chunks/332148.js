@@ -55,7 +55,7 @@ let u = {
     fetchPins(e) {
       let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = a.Z.getPinnedMessages(e);
-      (t || null == n || !n.loaded && !n.loading) && (i.Z.dispatch({
+      !t && null != n && (n.loaded || n.loading) || (i.Z.dispatch({
         type: "LOAD_PINNED_MESSAGES",
         channelId: e
       }), r.tn.get({

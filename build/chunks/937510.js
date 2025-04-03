@@ -5,12 +5,12 @@ n.d(t, {
 }), n(47120), n(653041);
 var r = n(192379),
   l = n(952639),
-  o = n.n(l),
-  a = n(399606),
+  a = n.n(l),
+  o = n(399606),
   i = n(1870),
   s = n(724994);
 let c = e => {
-  let t = (0, a.e7)([i.Z], () => i.Z.purchases);
+  let t = (0, o.e7)([i.Z], () => i.Z.purchases);
   return (0, r.useMemo)(() => {
     let t = [
       [],
@@ -26,6 +26,6 @@ let c = e => {
       } = (0, s.U)(i.Z, n);
       t[r ? 2 : l ? 1 : 3 * !!e].push(n)
     }
-    return o()(t)
+    return a()(t)
   }, [t, e])
 }

@@ -44,7 +44,7 @@ function N(e, t) {
   let n = {};
   T.forEach(i => {
     var o;
-    i !== O.Z.getGuildId() && i !== b.Z.getGuildId() && i !== (null == (o = h.Z.getChannel(v.Z.getChannelId())) ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
+    i !== O.Z.getGuildId() && i !== b.ZP.getGuildId() && i !== (null == (o = h.Z.getChannel(v.Z.getChannelId())) ? void 0 : o.getGuildId()) && (null == r || r.guildId !== i) && (T.clearWithoutFlushing(i, e), t && (n[i] = T.get(i)))
   }), a().isEmpty(n) || l.Z.dispatch({
     type: "GUILD_SUBSCRIPTIONS_FLUSH",
     subscriptions: n
@@ -221,7 +221,7 @@ function K(e) {
 }
 class z extends(i = s.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, E.Z, O.Z, v.Z, b.Z, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
+    this.waitFor(h.Z, E.Z, O.Z, v.Z, b.ZP, f.default, p.ZP, u.Z), this.syncWith([d.Z], Y), this.syncWith([p.ZP], Z)
   }
   getSubscribedThreadIds() {
     return T.getSubscribedThreadIds()

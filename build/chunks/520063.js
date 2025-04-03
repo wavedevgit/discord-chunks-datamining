@@ -56,13 +56,13 @@ function h(e, n, h) {
   }), [n, e.id]);
   (0, o.$)(j), (0, i.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
   let P = (0, i.e7)([g.Z], () => g.Z.getChannel(h)),
-    v = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
-    x = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
+    x = (0, i.e7)([Z.Z], () => Z.Z.getGuild(n), [n]),
+    v = (0, i.e7)([f.default], () => f.default.getCurrentUser()),
     y = (0, u.Z)(P, "Context Menu"),
     _ = (0, d.Xb)(P);
-  if ((null == x ? void 0 : x.id) === e.id) return [y];
-  if (null == v || null == P || null == x) return [];
-  let E = _ || P.ownerId === x.id && P.type === p.d4z.PRIVATE_THREAD;
+  if ((null == v ? void 0 : v.id) === e.id) return [y];
+  if (null == x || null == P || null == v) return [];
+  let E = _ || P.ownerId === v.id && P.type === p.d4z.PRIVATE_THREAD;
   return [E ? (0, l.jsx)(a.sNh, {
     id: "remove",
     label: P.isForumPost() ? O.NW.formatToPlainString(O.t.v2KNNz, {
@@ -72,7 +72,7 @@ function h(e, n, h) {
     }),
     color: "danger",
     action: () => c.Z.removeMember(P, e.id, "Context Menu")
-  }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
+  }) : null, (0, s.BK)(e, x) ? (0, l.jsx)(a.sNh, {
     id: "kick",
     label: E ? O.NW.formatToPlainString(O.t["1Ie87u"], {
       user: e.username
@@ -85,11 +85,11 @@ function h(e, n, h) {
         default: n
       } = await t.e("5454").then(t.bind(t, 854360));
       return t => (0, l.jsx)(n, N(m({}, t), {
-        guildId: v.id,
+        guildId: x.id,
         user: e
       }))
     })
-  }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
+  }) : null, (0, s.mm)(e, x) ? (0, l.jsx)(a.sNh, {
     id: "ban",
     label: E ? O.NW.formatToPlainString(O.t.i62APT, {
       user: e.username
@@ -102,7 +102,7 @@ function h(e, n, h) {
         default: n
       } = await t.e("43350").then(t.bind(t, 98746));
       return t => (0, l.jsx)(n, N(m({}, t), {
-        guildId: v.id,
+        guildId: x.id,
         user: e
       }))
     })

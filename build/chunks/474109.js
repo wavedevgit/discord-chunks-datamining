@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(18998),
+  l = n(442837),
+  o = n(18998),
   a = n(664915),
   s = n(888369),
   c = n(358652),
@@ -18,22 +18,22 @@ var r = n(200651),
 let m = "app-download-item",
   b = "add-server-item";
 
-function v() {
+function y() {
   return !1
 }
 
-function y(e) {
+function _(e) {
   var t;
   let n = s.default.getMutableGuildStates();
-  return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null === (t = n[null != e ? e : "null"]) || void 0 === t ? void 0 : t.highImportanceMentionCount) > 0
+  return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
 }
-let _ = (0, h.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
+let v = (0, h.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY_BADGE, m]),
   O = i.forwardRef(function(e, t) {
     var n, i;
-    let d = (0, o.Wu)([u.ZP, c.Z, s.default], () => _(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
-      h = (0, o.e7)([p.Z], () => p.Z.isFocused()),
-      f = (0, o.e7)([a.Z], () => a.Z.getExpandedFolders());
-    return (0, r.jsx)(l.Z, (n = function(e) {
+    let d = (0, l.Wu)([u.ZP, c.Z, s.default], () => v(u.ZP.getGuildFolders(), c.Z.getUnreadPrivateChannelIds(), s.default.getStoreChangeSentinel())),
+      h = (0, l.e7)([p.Z], () => p.Z.isFocused()),
+      f = (0, l.e7)([a.Z], () => a.Z.getExpandedFolders());
+    return (0, r.jsx)(o.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -53,10 +53,10 @@ let _ = (0, h.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY
     }({}, e), i = i = {
       ref: t,
       items: d,
-      isUnread: v,
+      isUnread: y,
       textUnread: g.NW.string(g.t.y2b7CA),
       textMention: g.NW.string(g.t.y2b7CA),
-      isMentioned: y,
+      isMentioned: _,
       animate: h,
       expandedFolders: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

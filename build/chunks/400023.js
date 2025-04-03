@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => V
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(580747),
   _ = n(135938),
   C = n(160404),
-  v = n(765104),
-  y = n(695346),
-  x = n(314897),
+  y = n(765104),
+  x = n(695346),
+  v = n(314897),
   j = n(323873),
   O = n(607744),
   E = n(375954),
@@ -39,7 +39,7 @@ var r = n(200651),
   L = n(406534),
   D = n(981631),
   W = n(388032),
-  U = n(310048);
+  U = n(977659);
 
 function B(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,9 +99,9 @@ let G = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: v,
-      uploads: y,
-      hasUnreads: x,
+      channelStream: y,
+      uploads: x,
+      hasUnreads: v,
       editingMessageId: j,
       fontSize: O,
       keyboardModeEnabled: E,
@@ -127,7 +127,7 @@ let G = i.memo(function(e) {
       messages: m,
       channel: f,
       compact: _,
-      hasUnreads: x,
+      hasUnreads: v,
       focusId: j,
       placeholderHeight: G.totalHeight,
       canLoadMore: null == I,
@@ -150,8 +150,8 @@ let G = i.memo(function(e) {
       unreadCount: g,
       showNewMessagesBar: b,
       messageDisplayCompact: _,
-      channelStream: v,
-      uploads: y,
+      channelStream: y,
+      uploads: x,
       loadMore: V.loadMore,
       scrollManager: V,
       specs: G,
@@ -162,7 +162,7 @@ let G = i.memo(function(e) {
       jumpToPresent: () => {
         if (m.hasPresent()) {
           var e;
-          null === (e = V.ref.current) || void 0 === e || e.scrollToBottom({
+          null == (e = V.ref.current) || e.scrollToBottom({
             animate: !h.Z.useReducedMotion
           })
         } else u.Z.jumpToPresent(f.id, D.AQB)
@@ -172,17 +172,17 @@ let G = i.memo(function(e) {
     ! function(e) {
       let t = i.useCallback(() => {
           var t;
-          return null === (t = e.current) || void 0 === t ? void 0 : t.scrollToBottom()
+          return null == (t = e.current) ? void 0 : t.scrollToBottom()
         }, [e]),
         n = i.useCallback(() => {
           var t;
-          return null === (t = e.current) || void 0 === t ? void 0 : t.scrollPageUp({
+          return null == (t = e.current) ? void 0 : t.scrollPageUp({
             animate: !h.Z.useReducedMotion
           })
         }, [e]),
         r = i.useCallback(() => {
           var t;
-          return null === (t = e.current) || void 0 === t ? void 0 : t.scrollPageDown({
+          return null == (t = e.current) ? void 0 : t.scrollPageDown({
             animate: !h.Z.useReducedMotion
           })
         }, [e]);
@@ -205,7 +205,7 @@ let G = i.memo(function(e) {
       en = F(ee, ["ref"]),
       er = (0, p.Z)(e => {
         var t;
-        V.ref.current = e, et.current = null !== (t = null == e ? void 0 : e.getScrollerNode()) && void 0 !== t ? t : null
+        V.ref.current = e, et.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
       });
     return (0, r.jsxs)(a.bG, {
       navigator: z,
@@ -238,7 +238,7 @@ let G = i.memo(function(e) {
               className: o()({
                 [U.scrollerSpacer]: !P,
                 [U.empty]: 0 === m.length && !m.loadingMore,
-                [U.emptyForum]: 1 === m.length && !m.loadingMore && f.isForumPost() && (null === (t = m.first()) || void 0 === t ? void 0 : t.isFirstMessageInForumPost(f))
+                [U.emptyForum]: 1 === m.length && !m.loadingMore && f.isForumPost() && (null == (t = m.first()) ? void 0 : t.isFirstMessageInForumPost(f))
               })
             })]
           }))]
@@ -280,8 +280,8 @@ let G = i.memo(function(e) {
       renderSpoilers: k,
       keyboardModeEnabled: L
     } = function() {
-      let e = y.jU.useSetting(),
-        t = y.cC.useSetting(),
+      let e = x.jU.useSetting(),
+        t = x.cC.useSetting(),
         {
           messageGroupSpacing: n,
           fontSize: r,
@@ -315,7 +315,7 @@ let G = i.memo(function(e) {
       let r = (0, s.e7)([E.Z], () => E.Z.getMessages(e.id), [e.id]),
         l = (0, s.e7)([I.ZP], () => {
           var t;
-          return null !== (t = I.ZP.getOldestUnreadMessageId(e.id)) && void 0 !== t ? t : null
+          return null != (t = I.ZP.getOldestUnreadMessageId(e.id)) ? t : null
         }, [e.id]),
         {
           enabled: o
@@ -324,14 +324,14 @@ let G = i.memo(function(e) {
         }, {
           autoTrackExposure: !1
         }),
-        a = null !== (n = null === (t = S.default.getUser(x.default.getId())) || void 0 === t ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && void 0 !== n && n,
+        a = null != (n = null == (t = S.default.getUser(v.default.getId())) ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && n,
         c = (0, d.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
-        p = (0, s.Wu)([v.Z], () => {
+        p = (0, s.Wu)([y.Z], () => {
           var t;
-          return c && u && null !== (t = v.Z.summaries(e.id)) && void 0 !== t ? t : []
+          return c && u && null != (t = y.Z.summaries(e.id)) ? t : []
         }, [c, e.id, u]),
-        h = (0, s.e7)([v.Z], () => c ? v.Z.selectedSummary(e.id) : null, [c, e.id]),
+        h = (0, s.e7)([y.Z], () => c ? y.Z.selectedSummary(e.id) : null, [c, e.id]),
         g = function(e) {
           let t = i.useMemo(() => {
             let t = new Set;
@@ -341,7 +341,7 @@ let G = i.memo(function(e) {
           }, [e]);
           return (0, m.Z)(t)
         }(r),
-        [C, y] = (0, f.Z)(r, e),
+        [C, x] = (0, f.Z)(r, e),
         O = i.useMemo(() => (0, A.Z)({
           channel: e,
           messages: r,
@@ -356,7 +356,7 @@ let G = i.memo(function(e) {
         oldestUnreadMessageId: l,
         editingMessageId: (0, s.e7)([j.Z], () => {
           var t;
-          return null === (t = j.Z.getEditingMessage(e.id)) || void 0 === t ? void 0 : t.id
+          return null == (t = j.Z.getEditingMessage(e.id)) ? void 0 : t.id
         })
       }
     }(t);

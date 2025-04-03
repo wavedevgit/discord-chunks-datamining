@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => w
 });
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(524437),
   c = n(481060),
   u = n(235820),
@@ -18,17 +18,17 @@ var r = n(200651),
   g = n(216789),
   _ = n(695346),
   b = n(592125),
-  v = n(731290),
-  x = n(944486),
-  y = n(455199),
-  E = n(655354),
+  x = n(731290),
+  y = n(944486),
+  E = n(455199),
+  v = n(655354),
   O = n(999671),
   N = n(324081),
   j = n(240126),
   C = n(791914),
   I = n(981631),
   S = n(388032),
-  T = n(199225);
+  T = n(384323);
 let P = {
   offset: {
     left: 4,
@@ -37,11 +37,11 @@ let P = {
 };
 
 function A(e, t, n) {
-  let r = t ? y.Z.guildFilter : null,
-    i = t ? y.Z.roleFilter : null,
-    a = t ? y.Z.everyoneFilter : null,
-    o = null;
-  null != e && null != r && (o = r === I.NgX.ALL_SERVERS ? null : e.getGuildId()), u.Z.fetchRecentMentions(n, I.DJj, o, i, a)
+  let r = t ? E.Z.guildFilter : null,
+    i = t ? E.Z.roleFilter : null,
+    a = t ? E.Z.everyoneFilter : null,
+    l = null;
+  null != e && null != r && (l = r === I.NgX.ALL_SERVERS ? null : e.getGuildId()), u.Z.fetchRecentMentions(n, I.DJj, l, i, a)
 }
 
 function w(e) {
@@ -50,28 +50,26 @@ function w(e) {
     onJump: n,
     badgeState: a,
     closePopout: c
-  } = e, h = (0, l.e7)([b.Z, x.Z], () => b.Z.getChannel(x.Z.getChannelId())), {
+  } = e, h = (0, o.e7)([b.Z, y.Z], () => b.Z.getChannel(y.Z.getChannelId())), {
     messages: _,
-    hasMore: v,
-    loading: E,
+    hasMore: x,
+    loading: v,
     guildFilter: N,
     roleFilter: j,
     everyoneFilter: P
-  } = (0, l.cj)([y.Z], () => ({
-    messages: y.Z.getMentions(),
-    hasMore: y.Z.hasMore,
-    loading: y.Z.loading,
-    guildFilter: y.Z.guildFilter,
-    roleFilter: y.Z.roleFilter,
-    everyoneFilter: y.Z.everyoneFilter
+  } = (0, o.cj)([E.Z], () => ({
+    messages: E.Z.getMentions(),
+    hasMore: E.Z.hasMore,
+    loading: E.Z.loading,
+    guildFilter: E.Z.guildFilter,
+    roleFilter: E.Z.roleFilter,
+    everyoneFilter: E.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
   }), k = (0, m.Z)(N), D = (0, m.Z)(j), L = (0, m.Z)(P);
   i.useEffect(() => {
-    if (!y.Z.hasLoadedEver) {
-      A(h, !0);
-      return
-    }(null != k && N !== k || null != D && j !== D || null != L && P !== L) && A(h, !0)
+    if (!E.Z.hasLoadedEver) return void A(h, !0);
+    (null != k && N !== k || null != D && j !== D || null != L && P !== L) && A(h, !0)
   }, [k, N, D, j, L, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (u.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
@@ -85,7 +83,7 @@ function w(e) {
     children: (0, r.jsx)(O.Z, {})
   }), [!0, t, a, c]);
   return (0, r.jsx)(d.ZP, {
-    className: o()(T.recentMentionsPopout, {
+    className: l()(T.recentMentionsPopout, {
       [T.widerInbox]: w
     }),
     scrollerClassName: T.scroller,
@@ -96,8 +94,8 @@ function w(e) {
     },
     channel: h,
     messages: _,
-    loading: E,
-    hasMore: v,
+    loading: v,
+    hasMore: x,
     analyticsName: "Recent Mentions",
     loadMore: function() {
       A(h, !0, null != _ && _.length > 0 ? _[_.length - 1].id : null)
@@ -128,8 +126,8 @@ function k(e) {
   if (null == t) return null;
   let a = b.Z.getChannel(t.channel_id);
   if (null == a) return null;
-  let o = v.Z.didAgree(a.getGuildId()),
-    l = !!a.isNSFW() && !o;
+  let l = x.Z.didAgree(a.getGuildId()),
+    o = !!a.isNSFW() && !l;
   return (0, r.jsxs)("div", {
     className: T.container,
     children: [(0, r.jsx)(N.Z, {
@@ -147,14 +145,14 @@ function k(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: T.messageContainer,
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(v.Z, {
         className: T.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {
         message: t,
         channel: a,
         className: T.message,
-        hideAccessories: l,
+        hideAccessories: o,
         compact: _.jU.getSetting(),
         animateAvatar: !1,
         focusProps: P,

@@ -1,6 +1,6 @@
 /** Chunk was on 76233 **/
 e.d(n, {
-  default: () => N
+  default: () => v
 }), e(47120);
 var l = e(200651),
   s = e(192379),
@@ -17,57 +17,57 @@ var l = e(200651),
   x = e(590433),
   f = e(981631),
   b = e(388032),
-  v = e(645055);
+  N = e(209564);
 
-function N(t) {
+function v(t) {
   var n, e;
   let {
-    guildId: N,
+    guildId: v,
     userId: k,
     anaylticsLocations: g,
     transitionState: _,
     onClose: C
   } = t, w = (0, d.Dt)(), {
     analyticsLocations: y
-  } = (0, c.ZP)(), j = null !== (e = null !== (n = null == g ? void 0 : g[0]) && void 0 !== n ? n : null == y ? void 0 : y[0]) && void 0 !== e ? e : null, D = (0, a.e7)([h.default], () => h.default.getUser(k), [k]), [T, W] = (0, p.ZP)(k, N), [I, P] = s.useState(!1), z = s.useCallback(async () => {
+  } = (0, c.ZP)(), j = null != (e = null != (n = null == g ? void 0 : g[0]) ? n : null == y ? void 0 : y[0]) ? e : null, D = (0, a.e7)([h.default], () => h.default.getUser(k), [k]), [T, W] = (0, p.ZP)(k, v), [I, P] = s.useState(!1), z = s.useCallback(async () => {
     if (null != D) {
       P(!0);
       try {
-        await o.Z.setCommunicationDisabledDuration(N, k, null, null, j), (0, i.showToast)((0, i.createToast)(b.NW.string(b.t["/Mmbfn"]), i.ToastType.SUCCESS)), C()
+        await o.Z.setCommunicationDisabledDuration(v, k, null, null, j), (0, i.showToast)((0, i.createToast)(b.NW.string(b.t["/Mmbfn"]), i.ToastType.SUCCESS)), C()
       } catch (t) {
         (0, i.showToast)((0, i.createToast)(b.NW.string(b.t.epyCur), i.ToastType.FAILURE))
       } finally {
         P(!1)
       }
     }
-  }, [N, D, k, C, j]), E = s.useCallback(() => {
+  }, [v, D, k, C, j]), E = s.useCallback(() => {
     W || C()
   }, [W, C]);
   return ((0, r.ZP)(() => {
     null != D && m.default.track(f.rMx.OPEN_MODAL, {
       type: x.av,
-      guild_id: N,
+      guild_id: v,
       other_user_id: D.id
     })
   }), s.useEffect(() => {
-    (null == D || null == N) && C()
-  }), null == D || null == N) ? null : (0, l.jsxs)(i.Y0X, {
+    (null == D || null == v) && C()
+  }), null == D || null == v) ? null : (0, l.jsxs)(i.Y0X, {
     transitionState: _,
     "aria-labelledby": w,
     children: [(0, l.jsxs)(i.xBx, {
-      className: v.header,
+      className: N.header,
       separator: !1,
       children: [(0, l.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         children: b.NW.string(b.t["+ZD3oq"])
       }), (0, l.jsx)(i.P3F, {
         onClick: C,
-        className: v.closeButton,
+        className: N.closeButton,
         "aria-label": b.NW.string(b.t.cpT0Cg),
         children: (0, l.jsx)(i.Dio, {
           size: "xs",
           color: "currentColor",
-          className: v.closeIcon
+          className: N.closeIcon
         })
       })]
     }), (0, l.jsxs)(i.hzk, {
@@ -77,7 +77,7 @@ function N(t) {
         children: b.NW.format(b.t["t+abNT"], {
           username: D.username,
           countdown: t => null == T ? null : (0, l.jsx)(u.Z, {
-            className: v.countdown,
+            className: N.countdown,
             deadline: new Date(T),
             onInterval: E,
             showUnits: !0,
@@ -85,7 +85,7 @@ function N(t) {
           })
         })
       }), (0, l.jsx)(i.Text, {
-        className: v.cta,
+        className: N.cta,
         variant: "text-md/normal",
         color: "interactive-normal",
         children: b.NW.format(b.t.KtENkJ, {

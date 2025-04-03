@@ -1,16 +1,16 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(682662),
-  o = n(806600);
+  l = n(287170);
 
-function l() {
+function o() {
   return (0, r.jsx)(i.H, {
     children: (0, r.jsx)("div", {
-      className: o.guildSeparator
+      className: l.guildSeparator
     })
   })
 }

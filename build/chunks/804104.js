@@ -17,24 +17,24 @@ var e = n(476508),
       l = 5 === t || p;
     return function(y, h, x, d) {
       for (var g, b, m = u(y), S = i(m), w = s(S), O = e(h, x), j = 0, A = d || c, E = r ? A(y, w) : n || v ? A(y, 0) : void 0; w > j; j++)
-        if ((l || j in S) && (b = O(g = S[j], j, m), t)) {
+        if ((l || j in S) && (b = O(g = S[j], j, m), t))
           if (r) E[j] = b;
           else if (b) switch (t) {
-            case 3:
-              return !0;
-            case 5:
-              return g;
-            case 6:
-              return j;
-            case 2:
-              f(E, g)
-          } else switch (t) {
-            case 4:
-              return !1;
-            case 7:
-              f(E, g)
-          }
-        } return p ? -1 : o || a ? a : E
+        case 3:
+          return !0;
+        case 5:
+          return g;
+        case 6:
+          return j;
+        case 2:
+          f(E, g)
+      } else switch (t) {
+        case 4:
+          return !1;
+        case 7:
+          f(E, g)
+      }
+      return p ? -1 : o || a ? a : E
     }
   };
 t.exports = {

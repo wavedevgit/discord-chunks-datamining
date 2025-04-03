@@ -16,21 +16,21 @@ var r = n(200651),
   h = n(430824),
   f = n(937615),
   j = n(495437),
-  v = n(240864),
-  p = n(942833),
+  p = n(240864),
+  v = n(942833),
   g = n(598952),
   C = n(392739),
   N = n(400916),
   b = n(916001),
   Z = n(388032),
-  y = n(534628);
+  y = n(165209);
 
 function _(e) {
   let {
     guildProductListing: t,
     guildId: n,
     skuPricePreview: a
-  } = e, i = (0, p.C)(t), s = (0, f.T4)(a.amount, a.currency), l = (0, o.e7)([h.Z], () => h.Z.getGuild(n));
+  } = e, i = (0, v.C)(t), s = (0, f.T4)(a.amount, a.currency), l = (0, o.e7)([h.Z], () => h.Z.getGuild(n));
   return c()(null != l, "guild cannot be null"), (0, r.jsxs)("div", {
     className: y.purchaseSummaryContainer,
     children: [(0, r.jsx)(u.Z, {
@@ -83,7 +83,7 @@ function z(e) {
   let {
     guildProductListing: n,
     guildId: a
-  } = e, i = null !== (t = n.attachments) && void 0 !== t ? t : [], l = i.length > 1;
+  } = e, i = null != (t = n.attachments) ? t : [], l = i.length > 1;
   return 0 === i.length ? null : (0, r.jsx)(C.Z, {
     label: Z.NW.string(Z.t.HOkHPD),
     children: (0, r.jsxs)("div", {
@@ -134,9 +134,9 @@ function T(e) {
     guildProductListingId: s,
     guildId: l,
     skuPricePreview: u
-  } = e, f = (0, o.e7)([v.Z], () => v.Z.getGuildProduct(s));
+  } = e, f = (0, o.e7)([p.Z], () => p.Z.getGuildProduct(s));
   c()(null != f, "guildProductListing cannot be null");
-  let [p, g] = a.useState(!1);
+  let [v, g] = a.useState(!1);
   a.useEffect(() => {
     !async function() {
       try {
@@ -151,7 +151,7 @@ function T(e) {
       }
     }()
   }, [l, s, n]);
-  let C = (null !== (t = f.attachments) && void 0 !== t ? t : []).length > 0,
+  let C = (null != (t = f.attachments) ? t : []).length > 0,
     N = f.role_id,
     b = (0, o.e7)([h.Z], () => null != N ? h.Z.getRole(l, N) : void 0);
   return (0, r.jsx)(m.Y0X, {
@@ -162,7 +162,7 @@ function T(e) {
     children: (0, r.jsx)(m.hzk, {
       children: (0, r.jsx)("div", {
         className: y.container,
-        children: p ? (0, r.jsx)(m.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+        children: v ? (0, r.jsx)(m.$jN, {}) : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
             className: y.header,
             children: [(0, r.jsx)(m.X6q, {

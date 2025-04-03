@@ -35,10 +35,10 @@ function f(e) {
     if (t.type === u.nc.NEWS) {
       var n, i, r, s, o, l, a, c;
       return {
-        icon: null !== (o = null === (n = t.news) || void 0 === n ? void 0 : n.icon) && void 0 !== o ? o : e.icon,
-        title: null !== (l = null === (i = t.news) || void 0 === i ? void 0 : i.title) && void 0 !== l ? l : e.title,
-        body: null !== (a = null === (r = t.news) || void 0 === r ? void 0 : r.body) && void 0 !== a ? a : e.body,
-        hint: null !== (c = null === (s = t.news) || void 0 === s ? void 0 : s.hint) && void 0 !== c ? c : e.hint,
+        icon: null != (o = null == (n = t.news) ? void 0 : n.icon) ? o : e.icon,
+        title: null != (l = null == (i = t.news) ? void 0 : i.title) ? l : e.title,
+        body: null != (a = null == (r = t.news) ? void 0 : r.body) ? a : e.body,
+        hint: null != (c = null == (s = t.news) ? void 0 : s.hint) ? c : e.hint,
         notifType: null != t.news ? u.n0.NewsNudge : e.notifType
       }
     }

@@ -13,7 +13,7 @@ var s = n(200651),
   d = n(5192),
   x = n(981631),
   m = n(388032),
-  b = n(554361);
+  b = n(221166);
 
 function h() {
   return [{
@@ -51,7 +51,7 @@ function g(e) {
     transitionState: f,
     onClose: j,
     canBulkBan: C = !1
-  } = e, [W, v] = l.useState(k), [S, z] = l.useState(""), [_, I] = l.useState(0), [R, L] = l.useState(!1), Z = (0, c.sE)(t, {
+  } = e, [v, W] = l.useState(k), [S, z] = l.useState(""), [_, I] = l.useState(0), [R, L] = l.useState(!1), Z = (0, c.sE)(t, {
     location: g,
     targetUserId: null == u ? void 0 : u.id,
     targets: p
@@ -60,18 +60,15 @@ function g(e) {
   }).enabled, M = l.useCallback(() => {
     if (null != N) {
       if (!(null != p && (null == p ? void 0 : p.size) > 0 && C) || R) return;
-      if ("" === S.trim() && !R) {
-        L(!0);
-        return
-      }
-      N(t, [...p], W, S)
+      if ("" === S.trim() && !R) return void L(!0);
+      N(t, [...p], v, S)
     } else {
       if (null == u) return;
-      r.Z.banUser(t, null == u ? void 0 : u.id, W, S)
+      r.Z.banUser(t, null == u ? void 0 : u.id, v, S)
     }
     Z(c.jQ.BAN), j()
-  }, [N, Z, j, p, C, R, S, t, W, u]), y = l.useCallback(e => {
-    v(e)
+  }, [N, Z, j, p, C, R, S, t, v, u]), y = l.useCallback(e => {
+    W(e)
   }, []), Y = l.useCallback(e => {
     let {
       value: t
@@ -178,7 +175,7 @@ function g(e) {
         title: m.NW.string(m.t["8l3W09"]),
         children: (0, s.jsx)(a.q4e, {
           options: h(),
-          value: W,
+          value: v,
           onChange: y
         })
       })]

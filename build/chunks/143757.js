@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(239091),
   u = n(317381),
@@ -21,10 +21,10 @@ var r = n(200651),
   E = n(626135),
   O = n(823379),
   N = n(415439),
-  v = n(981631),
-  y = n(388032),
-  I = n(792714),
-  C = n(824706);
+  y = n(981631),
+  I = n(388032),
+  v = n(872436),
+  C = n(555614);
 
 function S() {
   return (S = Object.assign || function(e) {
@@ -67,9 +67,9 @@ function P(e) {
       })
     },
     icon: n ? s.BRu : s.qJs,
-    className: I.plusIconContainer,
-    iconClassName: I.plusIcon,
-    tooltip: y.NW.string(y.t.qJvTKS),
+    className: v.plusIconContainer,
+    iconClassName: v.plusIcon,
+    tooltip: I.NW.string(I.t.qJvTKS),
     tooltipPosition: "top"
   })
 }
@@ -80,25 +80,24 @@ function j(e) {
     loadingAppId: n,
     setLoadingAppId: l,
     analyticsLocations: c
-  } = e, p = (0, a.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), h = null != p && p.applicationId === t.id, f = n === t.id, m = null != n, b = i.useCallback(() => {
-    if (!m) {
+  } = e, p = (0, o.e7)([u.ZP], () => u.ZP.getCurrentEmbeddedActivity()), h = null != p && p.applicationId === t.id, f = n === t.id, m = null != n, b = i.useCallback(() => {
+    if (!m)
       if (h) {
         let e = p.location;
         (0, d.Z)("guild_id" in e ? e.guild_id : null, e)
       } else(0, N.Kt)(t, l, c)
-    }
   }, [h, c, t, l, p, m]);
   return (0, r.jsx)(s.P3F, {
-    className: o()(I.clickable, {
-      [I.disabledClickable]: m
+    className: a()(v.clickable, {
+      [v.disabledClickable]: m
     }),
     onClick: b,
-    "aria-label": y.NW.formatToPlainString(y.t["zLhr9/"], {
+    "aria-label": I.NW.formatToPlainString(I.t["zLhr9/"], {
       applicationName: t.name,
       applicationDescription: t.description
     }),
     children: (0, r.jsx)(s.ua7, {
-      tooltipContentClassName: I.tooltipContent,
+      tooltipContentClassName: v.tooltipContent,
       text: t.name,
       children: e => {
         var n, i, l = S({}, function(e) {
@@ -106,17 +105,17 @@ function j(e) {
           return e
         }(e));
         return (0, r.jsxs)("div", (n = T({
-          className: I.iconContainer
+          className: v.iconContainer
         }, l), i = i = {
           children: [(0, r.jsx)(g.Z, {
             application: t,
-            className: I.iconCard,
+            className: v.iconCard,
             "aria-hidden": !0,
             rendersPlaceholder: !0
           }), f || h ? (0, r.jsx)(s.$jN, {
             type: s.$jN.Type.PULSING_ELLIPSIS,
-            className: I.spinner,
-            itemClassName: h ? I.spinnerInnerRunning : void 0
+            className: v.spinner,
+            itemClassName: h ? v.spinnerInnerRunning : void 0
           }) : null]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
@@ -141,7 +140,7 @@ function A(e) {
     analyticsLocations: l
   } = e;
   return (0, r.jsx)("div", {
-    className: I.itemContainer,
+    className: v.itemContainer,
     children: t.map(e => (0, r.jsx)(j, {
       application: e,
       loadingAppId: n,
@@ -164,30 +163,30 @@ function x(e) {
     bottomDivider: t
   } = e, {
     frecentApps: n
-  } = (0, N.ZC)(), [l, a] = i.useState(void 0), {
+  } = (0, N.ZC)(), [l, o] = i.useState(void 0), {
     analyticsLocations: s
   } = (0, f.ZP)(h.Z.APP_DMS_QUICK_LAUNCHER_FRECENCY), c = i.useRef(!1), u = i.useMemo(() => n.filter(O.lm).slice(0, 8), [n]);
   return i.useLayoutEffect(() => {
     var e;
-    !c.current && (c.current = !0, E.default.track(v.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION, {
-      apps_dm_quick_launcher_application_ids_frecency_v2: null !== (e = u.map(e => e.id)) && void 0 !== e ? e : []
+    c.current || (c.current = !0, E.default.track(y.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION, {
+      apps_dm_quick_launcher_application_ids_frecency_v2: null != (e = u.map(e => e.id)) ? e : []
     }))
   }, [u]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: I.container,
+      className: v.container,
       onContextMenu: Z,
       children: [(0, r.jsxs)(m.Z, {
-        className: o()(I.headerContainer, C.privateChannelsHeaderContainer),
+        className: a()(v.headerContainer, C.privateChannelsHeaderContainer),
         children: [(0, r.jsx)("span", {
           className: C.headerText,
-          children: y.NW.string(y.t.vayAzs)
+          children: I.NW.string(I.t.vayAzs)
         }), (0, r.jsx)(P, {
           analyticsLocations: s
         })]
       }), (0, r.jsx)(A, {
         frecentApps: u,
         loadingAppId: l,
-        setLoadingAppId: a,
+        setLoadingAppId: o,
         analyticsLocations: s
       })]
     }), t]

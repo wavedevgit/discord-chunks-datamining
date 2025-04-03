@@ -10,10 +10,7 @@ t.exports = function(t, e) {
   var r, c = t._latestEditorState,
     l = c.getSelection(),
     f = e.target;
-  if (l.isCollapsed()) {
-    e.preventDefault();
-    return
-  }
+  if (l.isCollapsed()) return void e.preventDefault();
   s(f) && (r = u(o.getScrollParent(f)));
   var p = a(c);
   t.setClipboard(p), t.setMode("cut"), setTimeout(function() {

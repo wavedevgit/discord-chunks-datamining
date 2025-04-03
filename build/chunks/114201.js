@@ -22,9 +22,9 @@ var d = a(99815),
   h = a(463031),
   y = a(981631),
   _ = a(388032),
-  B = a(940410);
+  B = a(333329);
 
-function v(t) {
+function x(t) {
   for (var e = 1; e < arguments.length; e++) {
     var a = null != arguments[e] ? arguments[e] : {},
       c = Object.keys(a);
@@ -43,7 +43,7 @@ function v(t) {
   return t
 }
 
-function x(t, e) {
+function v(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var a = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -160,7 +160,7 @@ function O(t) {
                 let {
                   default: t
                 } = await a.e("73217").then(a.bind(a, 139964));
-                return a => (0, c.jsx)(t, x(v({}, a), {
+                return a => (0, c.jsx)(t, v(x({}, a), {
                   guildId: e,
                   leaderboard: P
                 }))
@@ -174,7 +174,7 @@ function O(t) {
                 let {
                   default: t
                 } = await a.e("25526").then(a.bind(a, 262918));
-                return a => (0, c.jsx)(t, x(v({}, a), {
+                return a => (0, c.jsx)(t, v(x({}, a), {
                   guildId: e,
                   leaderboardId: O
                 }))
@@ -186,7 +186,7 @@ function O(t) {
     },
     children: t => (0, c.jsx)(n.ua7, {
       text: _.NW.string(_.t.UKOtz8),
-      children: e => (0, c.jsx)(n.P3F, x(v(x(v({}, e), {
+      children: e => (0, c.jsx)(n.P3F, v(x(v(x({}, e), {
         className: B.menuIcon
       }), t), {
         children: (0, c.jsx)(n.xhG, {

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -45,7 +45,7 @@ i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.definePrope
 let p = new g(l.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
-    d = o = null !== (t = e.code) && void 0 !== t ? t : "", c = e.uses, u = null !== (n = e.error) && void 0 !== n ? n : null, m = !0
+    d = o = null != (t = e.code) ? t : "", c = e.uses, u = null != (n = e.error) ? n : null, m = !0
   },
   GUILD_SETTINGS_CLOSE: function() {
     d = o = null, c = 0, u = null, m = !1

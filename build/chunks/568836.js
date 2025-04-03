@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   $G: () => d,
   OR: () => p,
@@ -8,8 +8,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(345898),
-  l = n(54336);
+  l = n(345898),
+  o = n(433962);
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,10 +43,10 @@ function c(e, t) {
   }), e
 }
 let u = 660,
-  d = e => (0, r.jsx)(o.Z, c(s({}, e), {
+  d = e => (0, r.jsx)(l.Z, c(s({}, e), {
     className: a()(e.className, {
-      [l.embedVertical]: !e.isHorizontal,
-      [l.embedHorizontal]: e.isHorizontal
+      [o.embedVertical]: !e.isHorizontal,
+      [o.embedHorizontal]: e.isHorizontal
     })
   })),
   p = e => {
@@ -55,19 +55,19 @@ let u = 660,
     } = e;
     return (0, r.jsx)(d, c(s({}, e), {
       media: () => (0, r.jsx)("div", {
-        className: l.loadingDescription,
+        className: o.loadingDescription,
         children: (0, r.jsx)("div", {
-          className: a()(l.loadingBackgroundWrapper, {
-            [l.loadingBackgroundWrapperHorizontal]: t
+          className: a()(o.loadingBackgroundWrapper, {
+            [o.loadingBackgroundWrapperHorizontal]: t
           }),
           children: (0, r.jsx)("div", {
-            className: l.loadingBackground
+            className: o.loadingBackground
           })
         })
       }),
       title: () => (0, r.jsx)("div", {
-        className: a()(l.loadingImage, {
-          [l.loadingImageHorizontal]: t
+        className: a()(o.loadingImage, {
+          [o.loadingImageHorizontal]: t
         })
       })
     }))

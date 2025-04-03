@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => f
+  Z: () => m
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -12,14 +12,14 @@ var r = n(200651),
   u = n(108427),
   d = n(844800),
   p = n(580497),
-  h = n(981631),
-  g = n(388032),
-  m = n(532368);
+  g = n(981631),
+  h = n(388032),
+  f = n(742834);
 
-function f(e) {
+function m(e) {
   let {
     location: t
-  } = e, [f, _] = i.useState(!1), {
+  } = e, [m, _] = i.useState(!1), {
     verifySuccess: b,
     verifyErrors: x,
     redirectGuildId: N
@@ -31,53 +31,53 @@ function f(e) {
   let v = () => {
     (0, p.Z)(N), _(!0)
   };
-  return f ? (0, r.jsxs)(s.ZP, {
+  return m ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Dx, {
-      className: m.title,
-      children: g.NW.string(g.t.csrAMD)
+      className: f.title,
+      children: h.NW.string(h.t.csrAMD)
     }), (0, r.jsx)(s.DK, {
-      className: m.subtitle,
-      children: g.NW.string(g.t["m1+IBg"])
+      className: f.subtitle,
+      children: h.NW.string(h.t["m1+IBg"])
     }), (0, r.jsx)(s.zx, {
-      className: m.spacedButton,
-      onClick: () => (0, c.uL)(h.Z5c.CHANNEL(N)),
-      children: g.NW.string(g.t.fIv16O)
+      className: f.spacedButton,
+      onClick: () => (0, c.uL)(g.Z5c.CHANNEL(N)),
+      children: h.NW.string(h.t.fIv16O)
     })]
   }) : b ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
-      className: m.image,
+      className: f.image,
       src: n(73962)
     }), (0, r.jsx)(s.Dx, {
-      className: m.title,
-      children: g.NW.string(g.t.dAfGb2)
+      className: f.title,
+      children: h.NW.string(h.t.dAfGb2)
     }), (0, r.jsx)(s.zx, {
       onClick: v,
-      children: g.NW.string(g.t.uJWIj4)
+      children: h.NW.string(h.t.uJWIj4)
     })]
   }) : null != x ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
-      className: m.image,
+      className: f.image,
       src: n(375673)
     }), (0, r.jsx)(s.Dx, {
-      className: m.title,
-      children: g.NW.string(g.t.PCgG39)
+      className: f.title,
+      children: h.NW.string(h.t.PCgG39)
     }), (0, r.jsx)(s.DK, {
-      className: m.subtitle,
-      children: g.NW.string(g.t.tQpeAw)
+      className: f.subtitle,
+      children: h.NW.string(h.t.tQpeAw)
     }), (0, r.jsx)(s.zx, {
       onClick: v,
-      children: g.NW.string(g.t.uJWIj4)
+      children: h.NW.string(h.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
-      className: m.image,
+      className: f.image,
       src: n(892235)
     }), (0, r.jsx)(s.Dx, {
-      className: m.title,
-      children: g.NW.string(g.t["0c8+5u"])
+      className: f.title,
+      children: h.NW.string(h.t["0c8+5u"])
     }), (0, r.jsx)(s.DK, {
-      className: m.subtitle,
-      children: g.NW.string(g.t.ULTCBA)
+      className: f.subtitle,
+      children: h.NW.string(h.t.ULTCBA)
     }), (0, r.jsx)(s.zx, {
       submitting: !0,
       color: s.zx.Colors.PRIMARY

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => Z
@@ -21,13 +21,13 @@ var r = n(200651),
   x = n(237583),
   j = n(899667),
   N = n(271383),
-  v = n(430824),
-  _ = n(594174),
+  _ = n(430824),
+  v = n(594174),
   C = n(267642),
   O = n(624138),
   y = n(981631),
   I = n(388032),
-  E = n(832921);
+  E = n(824302);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,7 +76,7 @@ class R extends i.Component {
     window.removeEventListener("resize", this.measure)
   }
   componentDidUpdate() {
-    !(null != this.state.tierPositions || Object.values(this.tierRefs).some(e => null == e)) && this.measure()
+    null == this.state.tierPositions && (Object.values(this.tierRefs).some(e => null == e) || this.measure())
   }
   renderProgressBar(e) {
     let {
@@ -96,7 +96,7 @@ class R extends i.Component {
         return {
           numRequired: y.oCV[e.tier],
           name: (0, C.nW)(e.tier),
-          y: null !== (n = t[e.tier]) && void 0 !== n ? n : 0,
+          y: null != (n = t[e.tier]) ? n : 0,
           key: e.tier
         }
       });
@@ -208,7 +208,7 @@ class R extends i.Component {
           user: e.user,
           nick: e.nick
         }),
-        "aria-label": null !== (i = e.nick) && void 0 !== i ? i : e.user.tag,
+        "aria-label": null != (i = e.nick) ? i : e.user.tag,
         children: n => (0, r.jsx)(u.qEK, P(T({}, n), {
           tabIndex: -1,
           src: null != e ? e.user.getAvatarURL(this.props.guildId, 32) : null,
@@ -245,13 +245,13 @@ class R extends i.Component {
     }, n))
   }
 }
-let Z = c.ZP.connectStores([v.Z, h.Z, p.Z, j.Z, _.default, N.ZP], () => {
+let Z = c.ZP.connectStores([_.Z, h.Z, p.Z, j.Z, v.default, N.ZP], () => {
   let e = p.Z.getGuildId(),
     t = (0, f.I)(e),
     n = null != e ? j.Z.getAppliedGuildBoostsForGuild(e) : null,
     r = o()(null != n ? n : []).uniqBy(e => e.userId),
     i = r.map(t => ({
-      user: _.default.getUser(t.userId),
+      user: v.default.getUser(t.userId),
       nick: N.ZP.getNick(e, t.userId)
     })).filter(e => null != e.user).value();
   return {

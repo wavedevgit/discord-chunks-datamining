@@ -8,7 +8,7 @@ var s = i(512722),
   r = i(921608),
   o = i(693824);
 
-function l(t, e, i) {
+function h(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: !0,
@@ -17,14 +17,14 @@ function l(t, e, i) {
   }) : t[e] = i, t
 }
 
-function h(t) {
+function l(t) {
   for (var e = 1; e < arguments.length; e++) {
     var i = null != arguments[e] ? arguments[e] : {},
       s = Object.keys(i);
     "function" == typeof Object.getOwnPropertySymbols && (s = s.concat(Object.getOwnPropertySymbols(i).filter(function(t) {
       return Object.getOwnPropertyDescriptor(i, t).enumerable
     }))), s.forEach(function(e) {
-      l(t, e, i[e])
+      h(t, e, i[e])
     })
   }
   return t
@@ -58,19 +58,19 @@ class d {
     if (null != a && null != a[n]) return a[n];
     if (this.needsReset && this.reset(), e.width > this.MAX_ROW_WIDTH || e.height > this.MAX_HEIGHT) throw Error("Image: ".concat(t, " is too wide to use with offscreen canvas. (").concat(e.width, " x ").concat(e.height));
     (this.nextX + e.width + 4 > this.MAX_ROW_WIDTH || this.nextY + e.height + 4 > this.MAX_HEIGHT) && this.breakToNewRow(!0), this.context.save(), null != i && (this.context.filter = i), this.context.drawImage(e, this.nextX, this.nextY, e.width, e.height), this.context.restore();
-    let r = null !== (s = this.imageMap.get(t)) && void 0 !== s ? s : {},
+    let r = null != (s = this.imageMap.get(t)) ? s : {},
       o = {
         x: this.nextX,
         y: this.nextY,
         w: e.width,
         h: e.height
       };
-    return this.imageMap.set(t, c(h({}, r), {
+    return this.imageMap.set(t, c(l({}, r), {
       [n]: o
     })), e.height > this.tallestImageHeight && (this.tallestImageHeight = e.height), this.nextX += e.width + 4, this.nextX > this.MAX_ROW_WIDTH && this.breakToNewRow(), o
   }
   constructor() {
-    l(this, "MAX_ROW_WIDTH", 2176), l(this, "MAX_HEIGHT", 2176), l(this, "nextX", 0), l(this, "nextY", 0), l(this, "tallestImageHeight", 0), l(this, "needsReset", !1), l(this, "canvas", void 0), l(this, "context", void 0), l(this, "imageMap", void 0), this.imageMap = new Map, u ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
+    h(this, "MAX_ROW_WIDTH", 2176), h(this, "MAX_HEIGHT", 2176), h(this, "nextX", 0), h(this, "nextY", 0), h(this, "tallestImageHeight", 0), h(this, "needsReset", !1), h(this, "canvas", void 0), h(this, "context", void 0), h(this, "imageMap", void 0), this.imageMap = new Map, u ? this.canvas = new OffscreenCanvas(this.MAX_ROW_WIDTH, this.MAX_HEIGHT) : (this.canvas = document.createElement("canvas"), this.canvas.width = this.MAX_ROW_WIDTH, this.canvas.height = this.MAX_HEIGHT);
     let t = this.canvas.getContext("2d", {
       alpha: !0,
       willReadFrequently: !1
@@ -148,17 +148,17 @@ class f extends a.Z {
     var s, a;
     if (null == this.context) return;
     this.setContextProperties();
-    let l = null !== (s = e.w) && void 0 !== s ? s : this.canvas.width - e.x,
-      h = this.context.measureText(t),
+    let h = null != (s = e.w) ? s : this.canvas.width - e.x,
+      l = this.context.measureText(t),
       c = !1,
       u = this.font.size,
       d = (t, e) => {
         null != this.context && (i ? this.context.fillText(t, e.x, e.y) : this.context.strokeText(t, e.x, e.y))
       },
       f = t => {
-        if (null == this.context || h.width <= r.F) return "";
+        if (null == this.context || l.width <= r.F) return "";
         let e = "".concat(t);
-        for (; h.width + r.F > l;) e = e.slice(0, -4), h = this.context.measureText(e), c = !0;
+        for (; l.width + r.F > h;) e = e.slice(0, -4), l = this.context.measureText(e), c = !0;
         return c && (e += "..."), e
       };
     if (this.font.truncate === o.GX.None && d(t, e), this.font.truncate === o.GX.Truncate && d(t = f(t), e), this.font.truncate === o.GX.Wrap) {
@@ -167,12 +167,12 @@ class f extends a.Z {
         r = "",
         o = 0;
       for (null != e.h && (s = e.h / u, n()(s > 0, "DiscordCavas: boundingBox.h of ".concat(e.h, " results in 0 visible lines with font size of ").concat(u))); i.length > 0;)
-        if ((h = this.context.measureText(r + " " + i[0])).width > l) {
+        if ((l = this.context.measureText(r + " " + i[0])).width > h) {
           let t = !1;
           if (o + 1 >= s && i.length > 0 && (t = !0), "" !== r ? (d(t ? f(r + "...") : r, {
               x: e.x,
               y: e.y + u * o
-            }), r = "") : d(f(null !== (a = i.shift()) && void 0 !== a ? a : ""), {
+            }), r = "") : d(f(null != (a = i.shift()) ? a : ""), {
               x: e.x,
               y: e.y + u * o
             }), t) break;
@@ -185,8 +185,8 @@ class f extends a.Z {
     return {
       x: e.x,
       y: e.y,
-      w: h.width,
-      h: h.actualBoundingBoxAscent + h.actualBoundingBoxDescent
+      w: l.width,
+      h: l.actualBoundingBoxAscent + l.actualBoundingBoxDescent
     }
   }
   drawFormattedMessage(t, e, i) {
@@ -207,12 +207,12 @@ class f extends a.Z {
             x: a,
             y: r,
             w: o,
-            h: l
-          } = e, h = null != o ? o - s : void 0, c = n(t, {
+            h
+          } = e, l = null != o ? o - s : void 0, c = n(t, {
             x: a + s,
             y: r,
-            w: h,
-            h: l
+            w: l,
+            h
           }, i);
           null != c && (s += c.w)
         }), {
@@ -238,8 +238,7 @@ class f extends a.Z {
     if (null == r) return o.vP.ImageNotLoaded;
     if (null != i) {
       if (a === o.JU.Contain) {
-        let s;
-        let n = {
+        let s, n = {
             w: r.width,
             h: r.height
           },
@@ -274,27 +273,26 @@ class f extends a.Z {
         }), o.vP.Success
       }
       if (a === o.JU.Cover) {
-        var l, u, d, f;
-        let n;
-        let a = {
+        var h, u, d, f;
+        let n, a = {
             w: r.width,
             h: r.height
           },
-          v = +(a.w / a.h).toFixed(1),
-          x = +(i.w / i.h).toFixed(1);
-        if (x > v) {
-          let t = a.w / x;
-          n = c(h({}, {
+          x = +(a.w / a.h).toFixed(1),
+          g = +(i.w / i.h).toFixed(1);
+        if (g > x) {
+          let t = a.w / g;
+          n = c(l({}, {
             x: 0,
-            y: (a.h - t) * (null !== (u = null == s ? void 0 : null === (l = s.focus) || void 0 === l ? void 0 : l.y) && void 0 !== u ? u : .5)
+            y: (a.h - t) * (null != (u = null == s || null == (h = s.focus) ? void 0 : h.y) ? u : .5)
           }), {
             w: r.width,
             h: t
           })
         } else {
-          let t = a.h * x;
-          n = c(h({}, {
-            x: (r.width - t) * (null !== (f = null == s ? void 0 : null === (d = s.focus) || void 0 === d ? void 0 : d.x) && void 0 !== f ? f : .5),
+          let t = a.h * g;
+          n = c(l({}, {
+            x: (r.width - t) * (null != (f = null == s || null == (d = s.focus) ? void 0 : d.x) ? f : .5),
             y: 0
           }), {
             w: t,
@@ -322,19 +320,19 @@ class f extends a.Z {
       x: a,
       y: r
     } = e, {
-      w: l,
-      h
+      w: h,
+      h: l
     } = i;
     this.context.save();
     let c = new Path2D;
-    c.roundRect(a, r, l, h, s), this.context.clip(c);
+    c.roundRect(a, r, h, l, s), this.context.clip(c);
     let u = this.drawImage(t, e, i, n);
     return this.restoreContext(), u
   }
   drawCroppedImage(t, e, i) {
     var s;
     if (null != this.offscreenCanvasCache && this.drawCroppedCachedImage(t, e, i), null == this.context) return o.vP.Failure;
-    let n = null === (s = this.assetMap) || void 0 === s ? void 0 : s.get(t);
+    let n = null == (s = this.assetMap) ? void 0 : s.get(t);
     if (null == n) return o.vP.ImageNotLoaded;
     if (null != this.offscreenCanvasCache) return this.drawCroppedCachedImage(t, e, i);
     {
@@ -345,11 +343,11 @@ class f extends a.Z {
         h: r
       } = e, {
         x: o,
-        y: l,
-        w: h,
+        y: h,
+        w: l,
         h: c
       } = i;
-      this.context.drawImage(n, t, s, a, r, o, l, h, c)
+      this.context.drawImage(n, t, s, a, r, o, h, l, c)
     }
     return o.vP.Success
   }
@@ -358,8 +356,8 @@ class f extends a.Z {
     if (n()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), n()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return o.vP.Failure;
     let r = this.assetMap.get(t);
     if (null == r) return o.vP.ImageNotLoaded;
-    let l = this.offscreenCanvasCache.getImage(t.toString(), r, this.getFilterString());
-    return null == l ? o.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, l.x, l.y, l.w, l.h, e.x, e.y, null !== (s = null == i ? void 0 : i.w) && void 0 !== s ? s : l.w, null !== (a = null == i ? void 0 : i.h) && void 0 !== a ? a : l.h), o.vP.Success)
+    let h = this.offscreenCanvasCache.getImage(t.toString(), r, this.getFilterString());
+    return null == h ? o.vP.Failure : (this.context.drawImage(this.offscreenCanvasCache.canvas, h.x, h.y, h.w, h.h, e.x, e.y, null != (s = null == i ? void 0 : i.w) ? s : h.w, null != (a = null == i ? void 0 : i.h) ? a : h.h), o.vP.Success)
   }
   drawCroppedCachedImage(t, e, i) {
     if (n()(null != this.assetMap, "DiscordCavas: `drawImage` requires an AssetMap to be initialized."), n()(null != this.offscreenCanvasCache, "DiscordCavas: `drawCachedImage` requires an offscreen canvas being initialized."), null == this.context) return o.vP.Failure;
@@ -369,16 +367,16 @@ class f extends a.Z {
     if (null == a) return o.vP.Failure;
     let {
       x: r,
-      y: l,
-      w: h,
+      y: h,
+      w: l,
       h: c
     } = e, {
       x: u,
       y: d,
       w: f,
-      h: v
+      h: x
     } = i;
-    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + r, a.y + l, h, c, u, d, f, v), o.vP.Success
+    return this.context.drawImage(this.offscreenCanvasCache.canvas, a.x + r, a.y + h, l, c, u, d, f, x), o.vP.Success
   }
   drawPath(t, e) {
     let i = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
@@ -450,6 +448,6 @@ class f extends a.Z {
     }
   }
   constructor(t, e) {
-    super(t, e), l(this, "canvas", void 0), l(this, "context", void 0), l(this, "offscreenCanvasCache", void 0), l(this, "_warnedAboutFilters", !1), this.canvas = t, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
+    super(t, e), h(this, "canvas", void 0), h(this, "context", void 0), h(this, "offscreenCanvasCache", void 0), h(this, "_warnedAboutFilters", !1), this.canvas = t, this.context = this.canvas.getContext("2d"), null != this.context && (this.context.imageSmoothingQuality = "high")
   }
 }

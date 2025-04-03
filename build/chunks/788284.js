@@ -12,7 +12,7 @@ var r = n(200651),
   d = n(481060),
   u = n(451478),
   p = n(302221),
-  m = n(774119);
+  m = n(464121);
 let f = [0, .5, 1],
   g = {
     "layers[1].shapes[1].g.k.k": [0, .522, .278, .776, .5, .522, .278, .776, 1, .522, .278, .776],
@@ -26,7 +26,7 @@ async function x(e, t) {
       if (null == t) continue;
       let o = t.map((e, t) => {
         var r;
-        return null !== (r = n[t]) && void 0 !== r ? r : e
+        return null != (r = n[t]) ? r : e
       });
       l().set(e, r, o)
     }
@@ -50,10 +50,10 @@ function h(e) {
       },
       n = f.reduce((e, n) => [...e, n, t.r, t.g, t.b], []);
     return x(i.id, n)
-  }, [i]), y = (null === (t = i.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, _ = !l && g;
+  }, [i]), y = (null == (t = i.userStatus) ? void 0 : t.enrolledAt) != null, _ = !l && g;
   o.useEffect(() => {
     var e, t, n, r;
-    g ? _ && (null === (r = h.current) || void 0 === r || null === (n = r.animation) || void 0 === n || n.play()) : null === (t = h.current) || void 0 === t || null === (e = t.animation) || void 0 === e || e.goToAndStop(0, !0)
+    g ? _ && (null == (r = h.current) || null == (n = r.animation) || n.play()) : null == (t = h.current) || null == (e = t.animation) || e.goToAndStop(0, !0)
   }, [_, g]);
   let C = o.useCallback(() => {
     j(!0)

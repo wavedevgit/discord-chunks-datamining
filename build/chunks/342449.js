@@ -10,7 +10,7 @@ var r = n(200651),
   o = n(487894),
   c = n(300234),
   d = n(388032),
-  u = n(133473);
+  u = n(258033);
 let h = new Set;
 
 function m(e) {
@@ -46,27 +46,30 @@ function m(e) {
     }, e.section) : (0, r.jsx)(g, {
       text: d.NW.string(d.t["wUNQ+/"])
     }, e.section), [f.length, x.length]),
-    y = a.useCallback(e => 1 === e && f.length > 0 ? 64 : 2 === e && (f.length > 0 || x.length > 0) ? 64 : 32, [f.length, x.length]),
+    y = a.useCallback(e => 1 === e && f.length > 0 || 2 === e && (f.length > 0 || x.length > 0) ? 64 : 32, [f.length, x.length]),
     P = a.useCallback(() => {
       var e;
-      let t = null === (e = p.current) || void 0 === e ? void 0 : e.getScrollerState();
+      let t = null == (e = p.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 200 && N()
     }, [N]);
-  return 0 === f.length && 0 === x.length && 0 === j.length ? Z ? (0, r.jsx)("div", {
-    className: u.list,
-    children: (0, r.jsx)(l.$jN, {
-      className: u.spinner
-    })
-  }) : (0, r.jsx)("div", {
-    className: u.list,
-    children: (0, r.jsx)(o.Z, {
-      channel: t,
-      header: d.NW.string(d.t.HgTQ8v),
-      startThread: n
-    })
-  }) : (0, r.jsx)(l.aVo, {
+  if (0 === f.length && 0 === x.length && 0 === j.length)
+    if (Z) return (0, r.jsx)("div", {
+      className: u.list,
+      children: (0, r.jsx)(l.$jN, {
+        className: u.spinner
+      })
+    });
+    else return (0, r.jsx)("div", {
+      className: u.list,
+      children: (0, r.jsx)(o.Z, {
+        channel: t,
+        header: d.NW.string(d.t.HgTQ8v),
+        startThread: n
+      })
+    });
+  return (0, r.jsx)(l.aVo, {
     ref: p,
     className: u.list,
     fade: !0,

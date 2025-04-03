@@ -1,4 +1,3 @@
 /** Chunk was on 23357 **/
 "use strict";
-var r = n(420910);
-e.exports = r
+e.exports = n(420910)

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   AT: () => h,
   fC: () => _,
@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r, i = n(192379),
   a = n(913527),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(493683),
   c = n(336197),
   u = n(131704),
@@ -29,17 +29,17 @@ function h(e) {
   };
   let i = 0 === r ? m.t.TjNWND : m.t.H4gnX1,
     a = 0 === r ? m.t.haia19 : m.t["Uq7Y+/"],
-    l = n > t;
+    o = n > t;
   return {
-    dueInText: m.NW.formatToPlainString(l ? a : i, {
-      duration: o().duration(t.getTime() - n.getTime(), "millisecond").humanize()
+    dueInText: m.NW.formatToPlainString(o ? a : i, {
+      duration: l().duration(t.getTime() - n.getTime(), "millisecond").humanize()
     }),
-    isOverdue: l
+    isOverdue: o
   }
 }
 
 function g(e) {
-  let t = (0, l.e7)([d.Z], () => d.Z.getChannel(e.saveData.channelId));
+  let t = (0, o.e7)([d.Z], () => d.Z.getChannel(e.saveData.channelId));
   return i.useMemo(() => null != t ? t : null != e.message ? new u.nl({
     id: e.saveData.channelId,
     guild_id: e.saveData.guildId,

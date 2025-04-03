@@ -13,7 +13,7 @@ var o = l(200651),
   d = l(592125),
   p = l(486324),
   h = l(388032),
-  m = l(485417);
+  m = l(285580);
 
 function x(e) {
   let {
@@ -29,7 +29,7 @@ function x(e) {
         (0, i.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([l.e("91689"), l.e("55849"), l.e("46003")]).then(l.bind(l, 192277));
+          } = await Promise.all([l.e("91689"), l.e("55849"), l.e("90851")]).then(l.bind(l, 192277));
           return n => (0, o.jsx)(e, function(e) {
             for (var n = 1; n < arguments.length; n++) {
               var l = null != arguments[n] ? arguments[n] : {},
@@ -90,10 +90,10 @@ let j = function(e) {
     channelId: l,
     onClose: c,
     transitionState: p
-  } = e, j = (0, u.Dt)(), g = (0, t.e7)([d.Z], () => d.Z.getChannel(l)), b = (null !== (n = null == g ? void 0 : g.name) && void 0 !== n ? n : "").length > 0, C = (0, s.ZP)(g), f = (0, s.cO)(g), [v, _] = r.useState(b && null != C ? C : ""), [y, k] = r.useState(null);
+  } = e, j = (0, u.Dt)(), g = (0, t.e7)([d.Z], () => d.Z.getChannel(l)), b = (null != (n = null == g ? void 0 : g.name) ? n : "").length > 0, C = (0, s.ZP)(g), f = (0, s.cO)(g), [_, v] = r.useState(b && null != C ? C : ""), [y, k] = r.useState(null);
   return null == g ? null : (0, o.jsx)("form", {
     onSubmit: e => {
-      e.preventDefault(), v !== g.name && a.Z.setName(l, v), null != y && a.Z.setIcon(l, y), c()
+      e.preventDefault(), _ !== g.name && a.Z.setName(l, _), null != y && a.Z.setIcon(l, y), c()
     },
     children: (0, o.jsxs)(i.Y0X, {
       transitionState: p,
@@ -118,8 +118,8 @@ let j = function(e) {
           onIconChange: k
         }), (0, o.jsx)(i.oil, {
           placeholder: null != f ? f : "",
-          value: v,
-          onChange: _,
+          value: _,
+          onChange: v,
           autoFocus: !0
         })]
       }), (0, o.jsxs)(i.mzw, {

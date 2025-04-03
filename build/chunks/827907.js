@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   EH: () => m,
@@ -29,11 +29,11 @@ function m(e, t) {
 function g(e, t) {
   let n = (0, r.e7)([s.Z], () => {
       var n;
-      return (null === (n = s.Z.getGuild(e)) || void 0 === n ? void 0 : n.rulesChannelId) === t
+      return (null == (n = s.Z.getGuild(e)) ? void 0 : n.rulesChannelId) === t
     }),
     a = (0, r.e7)([i.Z], () => {
       var e;
-      return null === (e = i.Z.getChannel(t)) || void 0 === e ? void 0 : e.isGuildVocal()
+      return null == (e = i.Z.getChannel(t)) ? void 0 : e.isGuildVocal()
     });
   return n ? c.NW.string(c.t["2XWEKy"]) : a ? c.NW.string(c.t.t6iJLS) : void 0
 }

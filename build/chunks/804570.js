@@ -4,10 +4,10 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
-  s = n(799046);
+  s = n(632374);
 let c = i.memo(function(e) {
   let {
     emptyText: t,
@@ -15,7 +15,7 @@ let c = i.memo(function(e) {
     absolute: i = !1
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(s.emptyWidgetContainer, i && s.absolute),
+    className: o()(s.emptyWidgetContainer, i && s.absolute),
     children: (0, r.jsx)(a.ua7, {
       text: t,
       children: e => {

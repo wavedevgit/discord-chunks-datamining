@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => N
 }), n(653041);
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(470956),
   _ = n(430824),
   C = n(496675),
-  v = n(434488),
-  y = n(27457),
-  x = n(251564),
+  y = n(434488),
+  x = n(27457),
+  v = n(251564),
   j = n(695492),
   O = n(981631),
-  E = n(5168);
+  E = n(600295);
 
 function N(e) {
   let {
@@ -39,16 +39,16 @@ function N(e) {
     paused: A = !1
   } = e, w = (0, c.bp)() === O.IlC.POPOUT, R = (0, a.e7)([_.Z], () => _.Z.getGuild(P.guild_id), [P.guild_id]), {
     dismissedActivityEntryPointTileChannel: M
-  } = (0, x.d)(), k = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), L = (0, b.bt)(P.id, t), D = i.useCallback(() => {
+  } = (0, v.d)(), k = (0, a.e7)([h.Z], () => h.Z.getUserParticipantCount(P.id), [P]), L = (0, b.bt)(P.id, t), D = i.useCallback(() => {
     (0, o.j)(() => {
-      x.d.setState({
+      v.d.setState({
         dismissedActivityEntryPointTileChannel: P.id
       })
     })
   }, [P.id]);
   i.useEffect(() => {
     null != M && P.id !== M && (0, o.j)(() => {
-      x.d.setState({
+      v.d.setState({
         dismissedActivityEntryPointTileChannel: null
       })
     })
@@ -60,7 +60,7 @@ function N(e) {
     F = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
     G = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != M && M === P.id,
-    z = L.map(e => t => (0, r.jsx)(y.ZP, {
+    z = L.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
       channel: P,
       className: E.tile,
@@ -83,7 +83,7 @@ function N(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(k >= 2) || !H || G || F || V ? B && 1 === k && W && (H && !G ? z.push(e => (0, r.jsx)(v.h, {
+  }, []), null != R && !U && (!(k >= 2) || !H || G || F || V ? B && 1 === k && W && (H && !G ? z.push(e => (0, r.jsx)(y.h, {
     channel: P,
     guild: R,
     width: e,
@@ -95,7 +95,7 @@ function N(e) {
     channel: P,
     guild: R,
     inPopout: w
-  }))) : z.push(e => (0, r.jsx)(v.h, {
+  }))) : z.push(e => (0, r.jsx)(y.h, {
     channel: P,
     guild: R,
     width: e,
@@ -105,7 +105,7 @@ function N(e) {
   })));
   let Y = i.useCallback(e => {
     var t, n;
-    return null !== (n = null === (t = L[e]) || void 0 === t ? void 0 : t.id) && void 0 !== n ? n : "empty-tile"
+    return null != (n = null == (t = L[e]) ? void 0 : t.id) ? n : "empty-tile"
   }, [L]);
   return (0, r.jsx)(g.Z, {
     className: S,

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   XX: () => D,
   ZP: () => B,
@@ -20,9 +20,9 @@ var r, i = n(200651),
   b = n(258609),
   _ = n(257115),
   C = n(569545),
-  v = n(102172),
-  y = n(525925),
-  x = n(701362),
+  y = n(102172),
+  x = n(525925),
+  v = n(701362),
   j = n(184301),
   O = n(347475),
   E = n(597998),
@@ -34,7 +34,7 @@ var r, i = n(200651),
   T = n(927923),
   A = n(70722),
   w = n(388032),
-  R = n(394488);
+  R = n(587382);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -116,7 +116,7 @@ class U extends(r = l.PureComponent) {
       channel: e,
       isStreaming: t
     } = this.props;
-    return t && (0, v.p9)(e, S.Z, I.Z, P.Z, b.Z)[0]
+    return t && (0, y.p9)(e, S.Z, I.Z, P.Z, b.Z)[0]
   }
   render() {
     let {
@@ -187,7 +187,7 @@ class U extends(r = l.PureComponent) {
         channelId: t.id,
         guildId: t.guild_id
       };
-      N.default.getId() !== e.id && p.default.selectVoiceChannel(t.id), n ? ((0, y.Z)(i), u.Z.selectParticipant(i.channelId, (0, C.V9)(i))) : (0, h.iV)(i), null == r || r(e.id)
+      N.default.getId() !== e.id && p.default.selectVoiceChannel(t.id), n ? ((0, x.Z)(i), u.Z.selectParticipant(i.channelId, (0, C.V9)(i))) : (0, h.iV)(i), null == r || r(e.id)
     }), M(this, "handleJoinVoice", () => {
       let {
         user: e,
@@ -203,7 +203,7 @@ class U extends(r = l.PureComponent) {
       (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
         return n => (0, i.jsx)(e, L(k({}, n), {
           user: r,
           guildId: t.guild_id,
@@ -233,7 +233,7 @@ class U extends(r = l.PureComponent) {
         previewIsOpen: n,
         location: r
       } = this.props;
-      return (0, i.jsx)(x.Z, {
+      return (0, i.jsx)(v.Z, {
         user: e,
         channel: t,
         onWatch: this.handleWatchStream,
@@ -257,9 +257,9 @@ class U extends(r = l.PureComponent) {
         collapsed: g,
         isStreaming: b,
         isGuest: C,
-        nick: v,
-        video: y,
-        serverMute: x,
+        nick: y,
+        video: x,
+        serverMute: v,
         serverDeaf: j,
         tabIndex: O,
         embeddedApplication: N,
@@ -278,14 +278,14 @@ class U extends(r = l.PureComponent) {
         localVideoDisabled: u,
         isStreaming: b,
         isGuest: C,
-        video: y,
+        video: x,
         priority: m,
         ringing: P,
         deaf: f,
-        nick: v,
+        nick: y,
         collapsed: g,
         overlap: g,
-        serverMute: x,
+        serverMute: v,
         serverDeaf: j,
         tabIndex: O,
         otherClientSessionType: n,
@@ -307,7 +307,7 @@ class U extends(r = l.PureComponent) {
       if (t) {
         var W;
         return (0, i.jsx)(c.ua7, {
-          text: null !== (W = (0, _.Z)(n)) && void 0 !== W ? W : w.NW.string(w.t.IyYqqa),
+          text: null != (W = (0, _.Z)(n)) ? W : w.NW.string(w.t.IyYqqa),
           children: e => {
             var {
               onClick: t,

@@ -1,9 +1,9 @@
-/** Chunk was on 65057 **/
+/** Chunk was on 53458 **/
 i.d(e, {
   i1: () => u,
   rx: () => p,
-  sB: () => d,
-  vY: () => _
+  sB: () => _,
+  vY: () => d
 }), i(266796), i(47120);
 var n = i(570140),
   r = i(821849),
@@ -37,7 +37,7 @@ function a(t) {
     sku: l(t),
     summary: t.description,
     description: t.description,
-    benefits: null !== (e = t.store_listing_benefits) && void 0 !== e ? e : [],
+    benefits: null != (e = t.store_listing_benefits) ? e : [],
     thumbnail: t.image_asset,
     published: t.published
   }
@@ -69,7 +69,7 @@ async function p(t, e) {
       type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS",
       applicationId: t,
       groupListing: r
-    }), c(null !== (i = r.subscription_listings) && void 0 !== i ? i : []), r
+    }), c(null != (i = r.subscription_listings) ? i : []), r
   } catch (e) {
     n.Z.dispatch({
       type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE",
@@ -97,13 +97,13 @@ async function u(t) {
   }
 }
 
-function d(t) {
+function _(t) {
   n.Z.dispatch({
     type: "APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED",
     guildId: t
   })
 }
-async function _(t) {
+async function d(t) {
   n.Z.dispatch({
     type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN",
     planId: t
@@ -115,7 +115,7 @@ async function _(t) {
       type: "APPLICATION_SUBSCRIPTIONS_FETCH_LISTING_FOR_PLAN_SUCCESS",
       groupListing: i
     });
-    let o = null !== (e = i.subscription_listings) && void 0 !== e ? e : [];
+    let o = null != (e = i.subscription_listings) ? e : [];
     await Promise.all(o.map(e => {
       if (e.subscription_plans[0].id === t) return r.GZ(e.id, void 0, void 0, !0)
     })), c(o)

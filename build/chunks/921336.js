@@ -36,7 +36,7 @@ function l(t, e) {
 }
 
 function f(t) {
-  s = !0, !(t.metaKey || !(0, n.V5)() && t.altKey || t.ctrlKey || "Control" === t.key || "Shift" === t.key || "Meta" === t.key) && l("keyboard", t)
+  s = !0, t.metaKey || !(0, n.V5)() && t.altKey || t.ctrlKey || "Control" === t.key || "Shift" === t.key || "Meta" === t.key || l("keyboard", t)
 }
 
 function p(t) {
@@ -97,7 +97,7 @@ function v(t) {
         }), e.current.observer = new MutationObserver(() => {
           if (e.current.isFocused && n.disabled) {
             var t;
-            null === (t = e.current.observer) || void 0 === t || t.disconnect();
+            null == (t = e.current.observer) || t.disconnect();
             let r = n === document.activeElement ? null : document.activeElement;
             n.dispatchEvent(new FocusEvent("blur", {
               relatedTarget: r

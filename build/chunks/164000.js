@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -15,7 +15,7 @@ function c(e) {
       let t = a.Z.getGuild(e);
       return null != t ? a.Z.getRole(t.id, t.getEveryoneRoleId()) : void 0
     }),
-    n = r.useMemo(() => null == t ? l.e3.SOME_CHANNELS : i.e$(t.permissions, o) ? l.e3.SOME_CHANNELS : l.e3.ALL_CHANNELS, [t]),
+    n = r.useMemo(() => null == t || i.e$(t.permissions, o) ? l.e3.SOME_CHANNELS : l.e3.ALL_CHANNELS, [t]),
     c = n === l.e3.ALL_CHANNELS;
   return {
     format: n,

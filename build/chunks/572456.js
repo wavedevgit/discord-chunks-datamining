@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(481060);
+var l = n(481060);
 
-function l(e) {
+function i(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,41 +42,41 @@ function a(e, t) {
 
 function u(e) {
   return new Promise(t => {
-    (0, i.ZDy)(() => e(() => {
+    (0, l.ZDy)(() => e(() => {
       t(!0)
     }, e => (t(!1), e())))
   })
 }
-let o = e => u(async (t, i) => {
+let o = e => u(async (t, l) => {
     let {
       default: u
     } = await n.e("44462").then(n.bind(n, 478472));
-    return n => (0, r.jsx)(u, a(l({}, n), {
+    return n => (0, r.jsx)(u, a(i({}, n), {
       ruleName: e,
       onConfirm: t,
-      onClose: () => i(n.onClose),
-      onCancel: () => i(n.onClose)
+      onClose: () => l(n.onClose),
+      onCancel: () => l(n.onClose)
     }))
   }),
-  s = (e, t) => u(async (i, u) => {
+  s = (e, t) => u(async (l, u) => {
     let {
       default: o
     } = await n.e("92575").then(n.bind(n, 601787));
-    return n => (0, r.jsx)(o, a(l({}, n), {
+    return n => (0, r.jsx)(o, a(i({}, n), {
       ruleName: e,
       keyword: t,
-      onConfirm: i,
+      onConfirm: l,
       onClose: () => u(n.onClose),
       onCancel: () => u(n.onClose)
     }))
   }),
-  c = e => t => u(async (i, u) => {
+  c = e => t => u(async (l, u) => {
     let {
       default: o
     } = await n.e("83613").then(n.bind(n, 449675)), s = () => {
-      t(), i()
+      t(), l()
     };
-    return t => (0, r.jsx)(o, a(l({
+    return t => (0, r.jsx)(o, a(i({
       ruleName: e
     }, t), {
       onConfirm: s,

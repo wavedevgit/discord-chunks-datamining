@@ -1,15 +1,15 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   M: () => h,
   Z: () => _
 }), n(411104), n(566702);
 var r, i = n(200651),
   a = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   s = n(481060),
   c = n(388032),
-  u = n(422887);
+  u = n(953928);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,7 +65,7 @@ class g extends(r = a.PureComponent) {
       navId: n,
       focusedIndex: r,
       onSelectQuery: a,
-      onSelectSearchEverywhere: o,
+      onSelectSearchEverywhere: l,
       onHighlightQuery: d,
       hideQuery: f,
       searchFavorites: g
@@ -74,7 +74,7 @@ class g extends(r = a.PureComponent) {
     let _ = -1 === r;
     return (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(s.P3F, m(p({
-        className: l()(u.queryContainer, {
+        className: o()(u.queryContainer, {
           [u.focused]: _
         })
       }, h(n, -1, _)), {
@@ -95,12 +95,12 @@ class g extends(r = a.PureComponent) {
           })
         })]
       })), g && (0, i.jsxs)(s.P3F, m(p({
-        className: l()(u.queryContainer, {
+        className: o()(u.queryContainer, {
           [u.focused]: _
         })
       }, h(n, -1, _)), {
         onMouseEnter: d,
-        onClick: o,
+        onClick: l,
         children: [(0, i.jsx)("div", {
           className: u.queryText,
           children: c.NW.string(c.t.FtSUxc)

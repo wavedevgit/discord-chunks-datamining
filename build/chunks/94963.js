@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -21,9 +21,9 @@ var r = n(200651),
   x = n(995119),
   j = n(116175),
   N = n(308083),
-  v = n(388032),
-  _ = n(627911),
-  C = n(128662);
+  _ = n(388032),
+  v = n(249818),
+  C = n(130116);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -104,14 +104,14 @@ let I = [{
       children: [s ? (0, r.jsx)(m.V3v, {
         size: "md"
       }) : (0, r.jsx)("div", {
-        className: _.brandItemCircle,
+        className: v.brandItemCircle,
         style: {
           background: "linear-gradient(-45deg, ".concat(i, " 50%, ").concat(n, " 50% )")
         }
       }), (0, r.jsx)(m.Text, {
         variant: "text-sm/medium",
         color: "interactive-normal",
-        className: _.noWrap,
+        className: v.noWrap,
         children: t
       })]
     })
@@ -128,7 +128,7 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null !== (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) && void 0 !== t ? t : 0, A = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null != (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) ? t : 0, A = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
     }), [T, P]), k = i.useMemo(() => {
@@ -138,11 +138,11 @@ let I = [{
       return 0
     }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === k, G = 1 === k, U = i.useMemo(() => {
       if (M) return A;
-      if (G) return {
-        primary: null != w ? w : j.Nh,
-        secondary: null != R ? R : j.vY
-      };
       {
+        if (G) return {
+          primary: null != w ? w : j.Nh,
+          secondary: null != R ? R : j.vY
+        };
         let e = N.ym[k - 2];
         return {
           primary: e.primary,
@@ -168,7 +168,7 @@ let I = [{
       var e, t, n;
       return y(O({}, s), {
         id: l,
-        name: null !== (e = null == Z ? void 0 : Z.name) && void 0 !== e ? e : "",
+        name: null != (e = null == Z ? void 0 : Z.name) ? e : "",
         icon: null == Z ? void 0 : Z.icon,
         memberCount: D,
         games: Array.from(s.gameApplicationIds),
@@ -180,8 +180,8 @@ let I = [{
           secondaryColor: null != R ? R : N.K_
         },
         branding: {
-          primaryColor: null !== (t = U.primary) && void 0 !== t ? t : N.OH,
-          secondaryColor: null !== (n = U.secondary) && void 0 !== n ? n : N.K_
+          primaryColor: null != (t = U.primary) ? t : N.OH,
+          secondaryColor: null != (n = U.secondary) ? n : N.K_
         },
         gameActivity: Array.from(s.gameApplicationIds).reduce((e, t) => (e[t] = {
           level: c.m.HIGH,
@@ -194,28 +194,28 @@ let I = [{
       children: [(0, r.jsx)(m.X6q, {
         variant: "heading-xxl/medium",
         className: C.title,
-        children: v.NW.string(v.t.kPwMOz)
+        children: _.NW.string(_.t.kPwMOz)
       }), (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         className: C.subtitle,
-        children: v.NW.string(v.t["E+KhDA"])
+        children: _.NW.string(_.t["E+KhDA"])
       }), (0, r.jsxs)("div", {
-        className: _.content,
+        className: v.content,
         children: [(0, r.jsx)("div", {
-          className: _.leftColumn,
+          className: v.leftColumn,
           children: (0, r.jsxs)("div", {
-            className: _.colorsContainer,
+            className: v.colorsContainer,
             children: [(0, r.jsx)(x.Z, {
               onClick: B
             }), (0, r.jsxs)("div", {
-              className: _.colorPickerContainer,
+              className: v.colorPickerContainer,
               children: [(0, r.jsx)(m.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
-                children: v.NW.string(v.t.Ul1tIS)
+                children: _.NW.string(_.t.Ul1tIS)
               }), (0, r.jsxs)("div", {
-                className: _.colorPickerGrid,
+                className: v.colorPickerGrid,
                 children: [(0, r.jsx)(b.Z, {
                   showSecondaryColor: !0,
                   palette: A,
@@ -235,11 +235,11 @@ let I = [{
                     onClick: () => {
                       L(e => !e)
                     },
-                    className: o()(_.brandItemContainer, {
-                      [_.brandItemContainerSelected]: 0 === k
+                    className: o()(v.brandItemContainer, {
+                      [v.brandItemContainerSelected]: 0 === k
                     }),
                     children: (0, r.jsx)(E, {
-                      name: v.NW.string(v.t.AemVoa),
+                      name: _.NW.string(_.t.AemVoa),
                       isCustom: !0
                     })
                   }))
@@ -250,11 +250,11 @@ let I = [{
                       brandSecondaryColor: null != R ? R : N.K_
                     })
                   },
-                  className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: 1 === k
+                  className: o()(v.brandItemContainer, {
+                    [v.brandItemContainerSelected]: 1 === k
                   }),
                   children: (0, r.jsx)(E, {
-                    name: v.NW.string(v.t["1Pvr/v"]),
+                    name: _.NW.string(_.t["1Pvr/v"]),
                     primaryColor: w,
                     secondaryColor: R
                   })
@@ -266,8 +266,8 @@ let I = [{
                       brandSecondaryColor: N.ym[t].secondary
                     })
                   },
-                  className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: k === t + 2
+                  className: o()(v.brandItemContainer, {
+                    [v.brandItemContainerSelected]: k === t + 2
                   }),
                   children: (0, r.jsx)(E, {
                     name: e.name,
@@ -277,13 +277,13 @@ let I = [{
                 }, t))]
               })]
             }), (0, r.jsxs)("div", {
-              className: _.bannerPickerContainer,
+              className: v.bannerPickerContainer,
               children: [(0, r.jsx)(m.Text, {
                 variant: "text-xs/semibold",
                 color: "text-muted",
-                children: v.NW.string(v.t.nH6S2d)
+                children: _.NW.string(_.t.nH6S2d)
               }), (0, r.jsx)("div", {
-                className: _.bannerPickerGrid,
+                className: v.bannerPickerGrid,
                 children: I.map((e, t) => (0, r.jsxs)(m.P3F, {
                   "aria-label": e.name,
                   onClick: () => {
@@ -291,15 +291,15 @@ let I = [{
                       banner: e.bannerKind
                     })
                   },
-                  className: o()(_.bannerItemContainer, {
-                    [_.bannerItemContainerSelected]: e.bannerKind === S
+                  className: o()(v.bannerItemContainer, {
+                    [v.bannerItemContainerSelected]: e.bannerKind === S
                   }),
                   children: [(0, r.jsx)(e.icon, {
                     size: "md"
                   }), (0, r.jsx)(m.Text, {
                     variant: "text-sm/medium",
                     color: "interactive-normal",
-                    className: _.noWrap,
+                    className: v.noWrap,
                     children: e.name
                   })]
                 }, t))
@@ -307,13 +307,13 @@ let I = [{
             })]
           })
         }), (0, r.jsx)("div", {
-          className: _.clanCardWrapper,
+          className: v.clanCardWrapper,
           children: (0, r.jsx)(h.x, {
             bannerComponent: (0, r.jsx)(f.Z, {
               banner: S,
               primaryTintColor: U.primary,
               secondaryTintColor: U.secondary,
-              className: _.clanBannerPreview
+              className: v.clanBannerPreview
             }),
             clan: F
           })

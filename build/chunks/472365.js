@@ -17,11 +17,11 @@ var i = t(200651),
   N = t(792766),
   x = t(600164),
   g = t(436774),
-  v = t(313201),
-  h = t(44609),
-  E = t(731971),
-  I = t(451603),
-  f = t(885714),
+  h = t(313201),
+  E = t(44609),
+  I = t(731971),
+  f = t(451603),
+  v = t(885714),
   j = t(973616),
   S = t(594174),
   C = t(855981),
@@ -35,8 +35,8 @@ var i = t(200651),
   Z = t(981631),
   z = t(474936),
   D = t(388032),
-  M = t(637577),
-  k = t(685786);
+  M = t(911042),
+  k = t(20493);
 
 function O() {
   let {
@@ -52,7 +52,7 @@ function O() {
       location_stack: n
     })
   }, [n]), (0, i.jsxs)(c.P3F, {
-    onClick: () => (0, f.Z)({
+    onClick: () => (0, v.Z)({
       analyticsSource: {
         page: Z.Sbl.EXTERNAL_INVITE_LINK_MODAL
       },
@@ -101,7 +101,7 @@ function U(e) {
 function y(e) {
   let {
     transitionState: n
-  } = e, t = (0, v.Dt)(), {
+  } = e, t = (0, h.Dt)(), {
     analyticsLocations: l
   } = (0, _.ZP)(m.Z.INVITE_MODAL);
   return (0, i.jsx)(_.Gt, {
@@ -137,12 +137,12 @@ function F(e) {
   let t, a, r, {
       transitionState: g
     } = e,
-    f = (0, h.WR)({
+    v = (0, E.WR)({
       location: "AcceptInviteModal"
     });
   (0, o.e7)([S.default], () => {
     var e;
-    return null === (e = S.default.getCurrentUser()) || void 0 === e ? void 0 : e.premiumType
+    return null == (e = S.default.getCurrentUser()) ? void 0 : e.premiumType
   });
   let C = (0, o.e7)([S.default], () => S.default.getCurrentUser()),
     {
@@ -153,16 +153,16 @@ function F(e) {
   l.useEffect(() => {
     if (null != A && null != A.guild) {
       var e;
-      (0, E.pB)(null !== (e = A.approximate_member_count) && void 0 !== e ? e : 0, A.code, A.guild.id)
+      (0, I.pB)(null != (e = A.approximate_member_count) ? e : 0, A.code, A.guild.id)
     }
-  }, [A, null == A ? void 0 : A.approximate_member_count, null == A ? void 0 : A.code, null == A ? void 0 : null === (n = A.guild) || void 0 === n ? void 0 : n.id]);
+  }, [A, null == A ? void 0 : A.approximate_member_count, null == A ? void 0 : A.code, null == A || null == (n = A.guild) ? void 0 : n.id]);
   let {
     nickname: F
-  } = (0, E.XW)();
+  } = (0, I.XW)();
   l.useEffect(() => {
     !__OVERLAY__ && P.isPlatformEmbedded && ((0, P.isWindows)() ? b.ZP.minimize() : b.ZP.restore(), b.ZP.focus())
   }, []);
-  let G = (0, v.Dt)(),
+  let G = (0, h.Dt)(),
     {
       analyticsLocations: V
     } = (0, _.ZP)(m.Z.INVITE_MODAL);
@@ -187,8 +187,8 @@ function F(e) {
     splash: w.splash
   });
   else if ((null == (t = K.name) || "" === t) && null != Y && (t = Y.username), null == t) throw Error("no name for group DM invite");
-  let J = (0, I.yU)();
-  return r = Q ? D.NW.string(D.t["5UKyUl"]) : f ? D.NW.format(D.t["9sWQNT"], {
+  let J = (0, f.yU)();
+  return r = Q ? D.NW.string(D.t["5UKyUl"]) : v ? D.NW.format(D.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
       children: null != F && "" !== F.trim() ? F : C.globalName
     })
@@ -248,7 +248,7 @@ function F(e) {
                   onMouseLeave: t,
                   children: J ? D.NW.string(D.t.ZNCziI) : (0, i.jsxs)("div", {
                     className: M.acceptAs,
-                    children: [f && (0, i.jsx)(d.Z, {
+                    children: [v && (0, i.jsx)(d.Z, {
                       "aria-hidden": !0,
                       size: c.EFr.SIZE_16,
                       user: C,
@@ -284,7 +284,7 @@ function F(e) {
                   var e;
                   T.default.track(Z.rMx.INVITE_ACCEPT_DISMISSED, {
                     invite_code: null == A ? void 0 : A.code,
-                    guild_id: null == A ? void 0 : null === (e = A.guild) || void 0 === e ? void 0 : e.id
+                    guild_id: null == A || null == (e = A.guild) ? void 0 : e.id
                   }), R.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,

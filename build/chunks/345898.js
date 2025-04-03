@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => s
 }), n(266796);
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(481060),
-  l = n(8390);
+  l = n(481060),
+  o = n(360044);
 let s = e => {
   let {
     renderTitle: t,
@@ -18,24 +18,24 @@ let s = e => {
     isHorizontal: u = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l.tile, {
-      [l.tileHorizontal]: u
+    className: a()(o.tile, {
+      [o.tileHorizontal]: u
     }, c),
     children: [(0, r.jsx)("div", {
-      className: a()(l.media, {
-        [l.mediaHorizontal]: u
+      className: a()(o.media, {
+        [o.mediaHorizontal]: u
       }),
       children: null == s ? void 0 : s()
     }), (0, r.jsxs)("div", {
-      className: l.description,
-      children: [(0, r.jsx)(o.H, {
-        className: l.title,
+      className: o.description,
+      children: [(0, r.jsx)(l.H, {
+        className: o.title,
         children: null == t ? void 0 : t()
       }), (0, r.jsx)("div", {
-        className: l.tagline,
+        className: o.tagline,
         children: null == n ? void 0 : n()
       }), (0, r.jsx)("div", {
-        className: l.actions,
+        className: o.actions,
         children: null == i ? void 0 : i()
       })]
     })]

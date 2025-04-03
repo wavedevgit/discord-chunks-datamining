@@ -21,8 +21,8 @@ var r = t(200651),
   C = t(44315),
   j = t(160404),
   b = t(240991),
-  v = t(703656),
-  N = t(687158),
+  N = t(703656),
+  v = t(687158),
   y = t(287008),
   O = t(484459),
   I = t(271383),
@@ -47,9 +47,9 @@ var r = t(200651),
   z = t(176505),
   q = t(490897),
   X = t(388032),
-  V = t(502349),
-  J = t(688044),
-  Y = t(50398);
+  V = t(273810),
+  J = t(100658),
+  Y = t(73433);
 
 function K(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -91,7 +91,7 @@ function ee(e) {
     user: o,
     size: (0, x.y9)(Q),
     onlyAnimateOnHover: !p
-  }), C = (0, d.e7)([I.ZP], () => I.ZP.getSelfMember(a.id)), j = (0, d.Wu)([I.ZP], () => I.ZP.getMemberRoleWithPendingUpdates(a.id, o.id)), v = (0, d.e7)([Z.Z], () => Z.Z.getRoles(a.id)), w = s()(j).filter(e => v.hasOwnProperty(e)).map(e => v[e]).orderBy("position", "desc").value(), P = (0, N.ZP)(o.id, a.id);
+  }), C = (0, d.e7)([I.ZP], () => I.ZP.getSelfMember(a.id)), j = (0, d.Wu)([I.ZP], () => I.ZP.getMemberRoleWithPendingUpdates(a.id, o.id)), N = (0, d.e7)([Z.Z], () => Z.Z.getRoles(a.id)), w = s()(j).filter(e => N.hasOwnProperty(e)).map(e => N[e]).orderBy("position", "desc").value(), P = (0, v.ZP)(o.id, a.id);
   (0, f.ZP)(() => {
     (0, O.Z)(o.id, o.getAvatarURL(a.id, (0, m.pxk)(Q)), {
       guildId: a.id
@@ -131,7 +131,7 @@ function ee(e) {
         variant: "text-lg/medium",
         color: "header-primary",
         className: V.username,
-        children: null !== (n = null == C ? void 0 : C.nick) && void 0 !== n ? n : S.ZP.getName(o)
+        children: null != (n = null == C ? void 0 : C.nick) ? n : S.ZP.getName(o)
       }), (0, r.jsx)(m.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
@@ -152,7 +152,7 @@ function ee(e) {
             return (0, r.jsxs)("div", {
               className: V.role,
               children: [(0, r.jsx)(m.xko, {
-                color: null !== (n = e.colorString) && void 0 !== n ? n : (0, c.Rf)(F.p6O),
+                color: null != (n = e.colorString) ? n : (0, c.Rf)(F.p6O),
                 className: V.roleDot
               }), (0, r.jsx)(m.Text, {
                 variant: "text-xs/medium",
@@ -172,7 +172,7 @@ function en(e) {
   let {
     prompt: t,
     guild: a
-  } = e, [o, s] = l.useState(null), [c, u] = l.useState(new Set), h = null == t ? void 0 : null === (n = t.options) || void 0 === n ? void 0 : n.filter(e => c.has(e.id)), p = (0, R.L6)(h), f = (0, R.dX)(h), g = (0, d.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(a.id, t.id)), {
+  } = e, [o, s] = l.useState(null), [c, u] = l.useState(new Set), h = null == t || null == (n = t.options) ? void 0 : n.filter(e => c.has(e.id)), p = (0, R.L6)(h), f = (0, R.dX)(h), g = (0, d.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(a.id, t.id)), {
     helpText: x,
     helpTextAdditional: _
   } = (0, W.p)({
@@ -189,7 +189,7 @@ function en(e) {
     handleSelectOption: j
   } = (0, D.Z)(a.id), b = t.options.map(e => K({
     value: e.id
-  }, e)), v = t.options.filter(e => g.includes(e.id)).map(e => e.id);
+  }, e)), N = t.options.filter(e => g.includes(e.id)).map(e => e.id);
   return (0, r.jsxs)("div", {
     className: V.prompt,
     "data-new": t.isNew,
@@ -209,7 +209,7 @@ function en(e) {
       }) : null]
     }), (0, r.jsx)(U.Z, {
       options: b,
-      value: v,
+      value: N,
       onChange: e => {
         let n = e.find(e => !g.includes(e.id)),
           r = e.map(e => e.id);
@@ -217,12 +217,9 @@ function en(e) {
         else {
           let e = g.filter(e => !r.includes(e)),
             n = t.options.filter(n => e.includes(n.id));
-          if (g.length <= n.length && t.required) {
-            s({
-              type: $
-            });
-            return
-          }
+          if (g.length <= n.length && t.required) return void s({
+            type: $
+          });
           n.forEach(e => {
             j(t, e, !1), c.delete(e.id)
           })
@@ -244,7 +241,7 @@ function et(e) {
   let {
     prompt: t,
     guild: a
-  } = e, [o, s] = l.useState(null), [c, u] = l.useState(new Set), h = null == t ? void 0 : null === (n = t.options) || void 0 === n ? void 0 : n.filter(e => c.has(e.id)), p = (0, R.L6)(h), f = (0, R.dX)(h), g = (0, d.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(a.id, t.id)), {
+  } = e, [o, s] = l.useState(null), [c, u] = l.useState(new Set), h = null == t || null == (n = t.options) ? void 0 : n.filter(e => c.has(e.id)), p = (0, R.L6)(h), f = (0, R.dX)(h), g = (0, d.Wu)([A.Z], () => A.Z.getOnboardingResponsesForPrompt(a.id, t.id)), {
     helpText: x,
     helpTextAdditional: _
   } = (0, W.p)({
@@ -260,12 +257,9 @@ function et(e) {
   }), {
     handleSelectOption: j
   } = (0, D.Z)(a.id), b = (e, n) => {
-    if (!n && 1 === g.length && t.required) {
-      s({
-        type: $
-      });
-      return
-    }
+    if (!n && 1 === g.length && t.required) return void s({
+      type: $
+    });
     j(t, e, null != n && n), t.singleSelect && n && t.options.forEach(e => c.delete(e.id)), n ? c.add(e.id) : c.delete(e.id), u(new Set(c)), s(null)
   };
   return (0, r.jsxs)("div", {
@@ -309,11 +303,11 @@ function er(e) {
     guildId: n,
     onBrowseChannels: t
   } = e, a = (0, u.wj)((0, g.ZP)()), o = (0, d.e7)([Z.Z], () => Z.Z.getGuild(n)), s = (0, d.e7)([P.default], () => P.default.getCurrentUser()), c = (0, p.Z)("(min-width: 1344px)") && null != s, f = l.useCallback(() => {
-    (0, v.uL)(F.Z5c.CHANNEL(n, z.oC.CHANNEL_BROWSER)), null == t || t()
+    (0, N.uL)(F.Z5c.CHANNEL(n, z.oC.CHANNEL_BROWSER)), null == t || t()
   }, [n, t]), x = (0, d.e7)([w.ZP], () => w.ZP.hasUnread(n, q.W.GUILD_ONBOARDING_QUESTION)), {
     onboardingPromptsRaw: _,
     newOnboardingPrompts: b,
-    onboardingPromptsWithNewAnswers: N,
+    onboardingPromptsWithNewAnswers: v,
     newAnswersCount: y,
     onboardingPrompts: O
   } = (0, L.Z)(n);
@@ -371,7 +365,7 @@ function er(e) {
     fade: !0,
     children: [(0, r.jsxs)("div", {
       className: V.pageBody,
-      children: [(b.length > 0 || N.length > 0) && (0, r.jsxs)(r.Fragment, {
+      children: [(b.length > 0 || v.length > 0) && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           children: (0, r.jsx)(m.X6q, {
             variant: "heading-md/semibold",
@@ -380,7 +374,7 @@ function er(e) {
               count: b.length + y
             })
           })
-        }), b.map(I), N.map(I), (0, r.jsx)("div", {
+        }), b.map(I), v.map(I), (0, r.jsx)("div", {
           className: V.sectionSeparator
         })]
       }), O.length > 0 && (0, r.jsxs)(r.Fragment, {

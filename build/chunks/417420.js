@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,19 +7,19 @@ n(192379);
 var i = n(481060),
   s = n(921801),
   a = n(626135),
-  o = n(695346),
-  l = n(726985),
+  l = n(695346),
+  o = n(726985),
   c = n(981631),
   d = n(388032);
 
 function u() {
-  let e = o.qF.useSetting();
+  let e = l.qF.useSetting();
   return (0, r.jsx)(s.F, {
-    setting: l.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
+    setting: o.s6.VOICE_AND_VIDEO_VIDEO_CAMERA_PREVIEW,
     children: (0, r.jsx)(i.j7V, {
       note: d.NW.string(d.t.WNbX4O),
       onChange: e => {
-        o.qF.updateSetting(e), a.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
+        l.qF.updateSetting(e), a.default.track(c.rMx.UPDATE_USER_SETTINGS_LOCAL, {
           always_preview_video: e
         })
       },

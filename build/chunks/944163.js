@@ -1,4 +1,4 @@
-/** Chunk was on 99840 **/
+/** Chunk was on 16350 **/
 t.d(n, {
   Z: () => h,
   t: () => d
@@ -29,7 +29,7 @@ class m extends(r = a.ZP.Store) {
   }
   getRulesPrompt(e) {
     var n;
-    return i().find(null === (n = u[e]) || void 0 === n ? void 0 : n.formFields, l.J)
+    return i().find(null == (n = u[e]) ? void 0 : n.formFields, l.J)
   }
 }
 c(m, "displayName", "MemberVerificationFormStore");
@@ -46,7 +46,7 @@ let h = new m(s.Z, {
       var o;
       return u[r.id] = {
         version: t.version,
-        description: null !== (o = t.description) && void 0 !== o ? o : "",
+        description: null != (o = t.description) ? o : "",
         formFields: t.form_fields,
         guild: r
       }, !0
@@ -61,7 +61,7 @@ let h = new m(s.Z, {
     if (null == n) u[t] = d;
     else {
       var r;
-      let e = null !== (r = u[t]) && void 0 !== r ? r : d;
+      let e = null != (r = u[t]) ? r : d;
       u[t] = function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},
@@ -81,7 +81,7 @@ let h = new m(s.Z, {
     let {
       guildId: t
     } = e;
-    u[t] = null !== (n = u[t]) && void 0 !== n ? n : d
+    u[t] = null != (n = u[t]) ? n : d
   },
   GUILD_DELETE: function(e) {
     let {

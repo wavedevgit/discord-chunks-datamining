@@ -26,7 +26,7 @@ function b(e, t) {
         (0, l.showToast)((0, l.createToast)(m.NW.string(m.t.xsfC2d), l.ToastType.FAILURE))
       }
     }, [t.id, e.id]),
-    v = i.useCallback(() => {
+    y = i.useCallback(() => {
       f.default.track(g.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
         location: s.MG.MessageContextMenu
       }), (0, c.s)({
@@ -41,6 +41,6 @@ function b(e, t) {
     id: "add-confetti-potion",
     label: m.NW.string(m.t.icaJW1),
     icon: l.l22,
-    action: v
+    action: y
   }) : null
 }

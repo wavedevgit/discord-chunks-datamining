@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   c: () => f
@@ -28,7 +28,7 @@ function f(e) {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), v = i.useCallback(e => {
+  }, []), _ = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: b,
@@ -49,6 +49,6 @@ function f(e) {
     })]
   }) : (0, r.jsx)(d.P, {
     className: f,
-    onClick: v
+    onClick: _
   })
 }

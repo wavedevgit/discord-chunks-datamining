@@ -1,12 +1,4 @@
-/** Chunk was on 88119 **/
+/** Chunk was on 74669 **/
 e.exports = {
-  stickyContainer: "stickyContainer__57d3f",
-  stickyBannerContainer: "stickyBannerContainer__57d3f",
-  stickyBanner: "stickyBanner__57d3f",
-  bannerBackground: "bannerBackground__57d3f",
-  backButtonContainer: "backButtonContainer__57d3f",
-  moreMenuButtonContainer: "moreMenuButtonContainer__57d3f",
-  headerButton: "headerButton__57d3f",
-  nameContainer: "nameContainer__57d3f",
-  textApplicationName: "textApplicationName__57d3f"
+  image: "image__0c271"
 }

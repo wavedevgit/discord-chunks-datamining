@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => w,
@@ -22,20 +22,20 @@ var r = n(200651),
   x = n(999382),
   j = n(743475),
   N = n(889369),
-  v = n(570961),
-  _ = n(208665),
+  _ = n(570961),
+  v = n(208665),
   C = n(868814),
   O = n(974513),
   y = n(2348),
   I = n(353890),
   E = n(716130),
   S = n(388032),
-  T = n(664310);
+  T = n(19567);
 
 function P(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, C.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [v, _] = i.useState(!1);
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, C.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [_, v] = i.useState(!1);
   i.useEffect(() => {
     h || l || (0, g.S)(t.id)
   }, [t.id, h, l]);
@@ -79,7 +79,7 @@ function P(e) {
       }
     })
   };
-  return v || 0 === x.length ? null : (0, r.jsxs)("div", {
+  return _ || 0 === x.length ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
@@ -93,7 +93,7 @@ function P(e) {
         children: S.NW.string(S.t["3Uuql5"])
       }), (0, r.jsxs)(a.P3F, {
         className: T.dismissAll,
-        onClick: () => _(!0),
+        onClick: () => v(!0),
         children: [(0, r.jsx)(a.dz2, {
           size: "xxs",
           color: "currentColor",
@@ -169,7 +169,7 @@ function P(e) {
 function w(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([_.Z], () => _.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
+  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([v.Z], () => v.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
   return (i.useEffect(() => {
     N.current = n
   }), i.useEffect(() => {
@@ -179,7 +179,7 @@ function w(e) {
       } = N;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          u && (0, v.rS)(e, {
+          u && (0, _.rS)(e, {
             ignoreDefaultPrompt: !0
           }).catch(() => {})
         }).catch(() => {})
@@ -255,11 +255,11 @@ function w(e) {
 function R() {
   let e = (0, s.e7)([x.Z], () => x.Z.getProps().guild),
     t = (0, s.e7)([N.Z], () => N.Z.submitting),
-    n = (0, s.e7)([_.Z], () => _.Z.advancedMode);
+    n = (0, s.e7)([v.Z], () => v.Z.advancedMode);
   return null == e ? null : (0, r.jsx)(l.Z, {
     onSave: () => {
       (0, j.DO)(e).then(() => {
-        n && (0, v.rS)(e, {
+        n && (0, _.rS)(e, {
           ignoreDefaultPrompt: !0
         }).catch(() => {})
       }).catch(() => {})

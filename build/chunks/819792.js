@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(642128),
   l = n(442837),
-  o = n(481060),
-  a = n(536442),
+  a = n(481060),
+  o = n(536442),
   s = n(984933),
   c = n(496675),
   u = n(51382),
@@ -19,7 +19,7 @@ function f(e) {
   let {
     channel: t,
     guild: n
-  } = e, s = (0, l.e7)([a.qc], () => a.qc.hasHotspot(a.v6.HUB_STUDY_ROOM_NOTICE)), c = (0, p.r)(t.guild_id), h = (0, o.q_F)({
+  } = e, s = (0, l.e7)([o.qc], () => o.qc.hasHotspot(o.v6.HUB_STUDY_ROOM_NOTICE)), c = (0, p.r)(t.guild_id), h = (0, a.q_F)({
     maxHeight: 300 * !c,
     overflow: "hidden",
     delay: 400

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => f
 });
@@ -6,14 +6,14 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(529103),
-  o = n(377171),
-  l = n(497089),
+  l = n(377171),
+  o = n(497089),
   s = n(849862),
   c = n(703656),
   u = n(626135),
   d = n(981631),
   p = n(388032),
-  m = n(131988);
+  m = n(145983);
 
 function f(e) {
   let {
@@ -25,7 +25,7 @@ function f(e) {
       className: m.friendRequestsButton,
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: l.ud.FRIEND_REQUESTS_BUTTON_CLICK
+          action_type: o.ud.FRIEND_REQUESTS_BUTTON_CLICK
         }), (0, c.uL)(d.Z5c.FRIENDS), a.Z.setSection(d.pJs.PENDING), t()
       },
       children: [(0, r.jsx)(i.iFz, {
@@ -33,7 +33,7 @@ function f(e) {
         color: "currentColor"
       }), (0, r.jsx)(i.mAB, {
         count: n,
-        color: o.Z.BACKGROUND_ACCENT
+        color: l.Z.BACKGROUND_ACCENT
       })]
     })
   })

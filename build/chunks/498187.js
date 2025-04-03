@@ -10,8 +10,8 @@ var n = r(876215),
   c = r(561308),
   s = r(206583),
   u = r(96513),
-  d = r(701488),
-  p = r(388032);
+  p = r(701488),
+  d = r(388032);
 let f = {
     [l.z.XBOX]: s.kG.XBOX,
     [l.z.PLAYSTATION]: s.kG.PLAYSTATION
@@ -28,7 +28,7 @@ function O(e) {
       baseEntryData: O
     } = e,
     y = (0, i.q)(s.extra.application_id),
-    m = null == y ? void 0 : y.getIconURL(d.Si.LARGE),
+    m = null == y ? void 0 : y.getIconURL(p.Si.LARGE),
     j = s.extra.game_name;
   if (null != s.extra.platform) {
     let e = f[s.extra.platform];
@@ -36,7 +36,7 @@ function O(e) {
       type: e
     })
   }
-  o = s.content_type === n.s.PLAYED_GAME && (0, c.kr)(s) && !(0, c.n2)(s) ? p.t.vPg1JS : p.t.rPqqtr;
+  o = s.content_type === n.s.PLAYED_GAME && (0, c.kr)(s) && !(0, c.n2)(s) ? d.t.vPg1JS : d.t.rPqqtr;
   let g = b[u],
     h = {
       onClick: (0, a.Z)({
@@ -46,7 +46,7 @@ function O(e) {
         trackEntryPointImpression: !0,
         sourceUserId: s.author_id
       }),
-      ariaDescription: p.NW.formatToPlainString(p.t["9sZWVl"], {
+      ariaDescription: d.NW.formatToPlainString(d.t["9sZWVl"], {
         gameName: j
       })
     };

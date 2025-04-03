@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => j
 }), n(47120), n(230036);
@@ -16,11 +16,11 @@ var r = n(200651),
   f = n(75666),
   m = n(981631),
   g = n(388032),
-  b = n(802122),
-  _ = n(980271),
+  b = n(400816),
+  _ = n(104402),
   C = n(584354),
-  v = n(725060);
-let y = e => {
+  y = n(725060);
+let x = e => {
   let {
     searchQuery: t,
     setSearchQuery: n,
@@ -36,7 +36,7 @@ let y = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: _.headerImage,
-      src: d ? v : C
+      src: d ? y : C
     }), (0, r.jsx)("div", {
       className: _.headerContentWrapper,
       children: (0, r.jsxs)("div", {
@@ -69,7 +69,7 @@ let y = e => {
   })
 };
 
-function x(e) {
+function v(e) {
   let {
     guild: t,
     directoryEntries: n,
@@ -80,7 +80,7 @@ function x(e) {
     u = u.concat(e.entries)
   }), u.sort((e, t) => {
     var n, r;
-    return (null !== (n = t.approximateMemberCount) && void 0 !== n ? n : 0) - (null !== (r = e.approximateMemberCount) && void 0 !== r ? r : 0)
+    return (null != (n = t.approximateMemberCount) ? n : 0) - (null != (r = e.approximateMemberCount) ? r : 0)
   });
   let f = p.ZP.getGuildSplashURL({
     id: t.id,
@@ -134,12 +134,12 @@ let j = e => {
     handleClearSearch: d,
     handleSearchKeyPress: p,
     currentCategoryId: C,
-    handleSelectCategory: v,
+    handleSelectCategory: y,
     categoryCounts: j,
     allEntriesCount: O,
     isLoading: E
   } = e, N = (0, a.e7)([u.Z], () => u.Z.getGuild(t.getGuildId()));
-  return null != N && N.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(x, {
+  return null != N && N.hasFeature(m.oNc.SHARD) ? (0, r.jsx)(v, {
     guild: N,
     directoryEntries: n,
     handleCreateOrAddGuild: l,
@@ -148,7 +148,7 @@ let j = e => {
     className: b.pageContainer,
     children: (0, r.jsxs)(s.yWw, {
       className: b.scroller,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(x, {
         searchQuery: o,
         setSearchQuery: c,
         handleClearSearch: d,
@@ -161,7 +161,7 @@ let j = e => {
           look: "brand",
           selectedItem: C,
           onItemSelect: e => {
-            v(e)
+            y(e)
           },
           children: [(0, r.jsx)(s.njP.Item, {
             className: _.tabBarItem,

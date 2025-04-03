@@ -11,7 +11,7 @@ var t = a(512722),
   s = a(23551),
   r = a(122021),
   p = a(388032),
-  d = a(766408);
+  d = a(625276);
 
 function u(n) {
   let {
@@ -38,7 +38,7 @@ function m(n) {
   if (null == e || null == a) return null;
   let t = e.filter(n => {
     var e;
-    return (null === (e = n.application) || void 0 === e ? void 0 : e.roleConnectionsVerificationUrl) != null
+    return (null == (e = n.application) ? void 0 : e.roleConnectionsVerificationUrl) != null
   });
   return 0 === t.length ? null : (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(c.Text, {

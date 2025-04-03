@@ -1,6 +1,6 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => N
+  Z: () => P
 }), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
 var r = n(200651),
   a = n(192379),
@@ -18,19 +18,19 @@ var r = n(200651),
   f = n(258971),
   _ = n(133743),
   b = n(680474),
-  v = n(571737),
-  x = n(796150),
+  x = n(571737),
+  v = n(796150),
   C = n(946542),
   j = n(213746),
   y = n(979007),
   O = n(981631),
-  P = n(388032),
-  I = n(192580);
-let N = function(e) {
+  I = n(388032),
+  N = n(714002);
+let P = function(e) {
   let {
     applicationId: t,
     onSelectApplication: n,
-    onScroll: N,
+    onScroll: P,
     initialTab: S,
     onButtonsVisibilityChange: E
   } = e, T = a.useRef(null), A = (0, i.e7)([u.Z], () => u.Z.getApplication(t)), L = (0, i.e7)([u.Z], () => u.Z.getApplicationFetchState(t));
@@ -50,7 +50,7 @@ let N = function(e) {
     [w, Z] = a.useState(null != S ? S : y.GlobalDiscoveryAppsSections.ABOUT),
     k = a.useCallback(e => {
       var t;
-      null === (t = T.current) || void 0 === t || t.scrollTo({
+      null == (t = T.current) || t.scrollTo({
         to: 0
       }), Z(y.GlobalDiscoveryAppsSections.ABOUT), n(e)
     }, [n]);
@@ -87,10 +87,10 @@ let N = function(e) {
   }, [null == A ? void 0 : A.id, M]);
   let U = a.useMemo(() => [{
       id: y.GlobalDiscoveryAppsSections.ABOUT,
-      label: P.NW.string(P.t.DkyHMD)
+      label: I.NW.string(I.t.DkyHMD)
     }, {
       id: y.GlobalDiscoveryAppsSections.STORE,
-      label: P.NW.string(P.t.jgEXGB)
+      label: I.NW.string(I.t.jgEXGB)
     }], []),
     F = a.useMemo(() => {
       if (null == A) return null;
@@ -113,30 +113,30 @@ let N = function(e) {
     }, [t]),
     H = w === y.GlobalDiscoveryAppsSections.ABOUT;
   return (0, r.jsx)(c.Z, {
-    onScroll: N,
+    onScroll: P,
     ref: T,
     children: (0, r.jsx)(o.Z, {
       children: null == A ? null == L || L === u.M.FETCHING ? (0, r.jsx)("div", {
-        className: I.centerContainer,
+        className: N.centerContainer,
         children: (0, r.jsx)(h.Z, {
           loading: !0
         })
       }) : (0, r.jsx)("div", {
-        className: I.centerContainer,
+        className: N.centerContainer,
         children: (0, r.jsx)(g.Z, {
-          className: I.error
+          className: N.error
         })
       }) : (0, r.jsxs)("div", {
-        className: I.detailContainer,
-        children: [(0, r.jsx)(v.Z, {
+        className: N.detailContainer,
+        children: [(0, r.jsx)(x.Z, {
           application: A,
           onButtonsVisibilityChange: E
         }), (0, r.jsxs)("div", {
-          className: I.contentContainer,
+          className: N.contentContainer,
           children: [(0, r.jsxs)("div", {
-            className: I.contentTabsContainer,
+            className: N.contentTabsContainer,
             children: [R && (0, r.jsx)("div", {
-              className: I.contentTabs,
+              className: N.contentTabs,
               children: (0, r.jsx)(s.Z, {
                 tabs: U,
                 onTabSelect: V,
@@ -149,8 +149,8 @@ let N = function(e) {
               onSelectApplication: k,
               similarLoadId: null == z ? void 0 : z.loadId
             })]
-          }), H && (0, r.jsx)(x.Z, {
-            className: I.sidebar,
+          }), H && (0, r.jsx)(v.Z, {
+            className: N.sidebar,
             application: A,
             view: "side"
           })]

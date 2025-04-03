@@ -21,7 +21,7 @@ var n, s = r(200651),
   v = r(585483),
   C = r(981631),
   O = r(388032),
-  b = r(685786);
+  b = r(20493);
 
 function y(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -208,10 +208,7 @@ class E extends(n = i.PureComponent) {
           token: o,
           source: a
         });
-        if (null != s) {
-          s(r);
-          return
-        }
+        if (null != s) return void s(r);
         d.Z.dispatch({
           type: "LOGIN_SUCCESS",
           token: r
@@ -225,12 +222,9 @@ class E extends(n = i.PureComponent) {
       let {
         replaceWith: e
       } = this.props;
-      if (c.Em || c.tq) {
-        this.setState({
-          success: !0
-        });
-        return
-      }
+      if (c.Em || c.tq) return void this.setState({
+        success: !0
+      });
       e(C.Z5c.APP)
     }), y(this, "handleGoToLogin", () => {
       let {
@@ -249,7 +243,7 @@ class E extends(n = i.PureComponent) {
       }
       return null
     });
-    let r = (null === (t = this.props.location) || void 0 === t ? void 0 : t.search) != null && "" !== this.props.location.search ? (0, o.parse)(this.props.location.search) : null;
+    let r = (null == (t = this.props.location) ? void 0 : t.search) != null && "" !== this.props.location.search ? (0, o.parse)(this.props.location.search) : null;
     this.state = {
       method: "",
       password: "",

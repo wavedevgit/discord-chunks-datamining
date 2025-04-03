@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => G
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(753206),
   j = n(598077),
   N = n(496675),
-  v = n(764260),
-  _ = n(95242),
+  _ = n(764260),
+  v = n(95242),
   C = n(541575),
   O = n(420966),
   y = n(337344),
@@ -30,15 +30,15 @@ var r = n(200651),
   E = n(203377),
   S = n(981631),
   T = n(388032),
-  P = n(843001),
-  w = n(640453),
+  P = n(275302),
+  w = n(877248),
   R = n(179517),
   Z = n(79829);
 let D = (0, g.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 797967)),
     webpackId: 797967
   }),
-  A = o().debounce((e, t) => (0, v.Uv)(e, t), 200);
+  A = o().debounce((e, t) => (0, _.Uv)(e, t), 200);
 
 function k(e) {
   let {
@@ -80,8 +80,8 @@ function W(e) {
       value: t.color,
       disabled: n,
       onChange: e => {
-        var n, r;
-        return n = t, r = e, void(n.color !== r && (r !== S.p6O || 0 !== n.color) && (r === S.p6O && (r = 0), (0, v.OW)(n.id, r)))
+        var n;
+        return n = e, void(t.color !== n && (n !== S.p6O || 0 !== t.color) && (n === S.p6O && (n = 0), (0, _.OW)(t.id, n)))
       },
       customPickerPosition: "right"
     }, t.id)]
@@ -137,15 +137,15 @@ function L(e) {
   }, [o])), N = {
     nick: g.author.username,
     colorStrings: {
-      primaryColor: null === (t = c.colorStrings) || void 0 === t ? void 0 : t.primaryColor,
-      secondaryColor: null === (s = c.colorStrings) || void 0 === s ? void 0 : s.secondaryColor,
-      tertiaryColor: null === (a = c.colorStrings) || void 0 === a ? void 0 : a.tertiaryColor
+      primaryColor: null == (t = c.colorStrings) ? void 0 : t.primaryColor,
+      secondaryColor: null == (s = c.colorStrings) ? void 0 : s.secondaryColor,
+      tertiaryColor: null == (a = c.colorStrings) ? void 0 : a.tertiaryColor
     },
-    colorString: null !== (l = c.colorString) && void 0 !== l ? l : void 0
-  }, v = {
+    colorString: null != (l = c.colorString) ? l : void 0
+  }, _ = {
     src: R,
     name: c.name
-  }, _ = {
+  }, v = {
     src: Z,
     name: c.name
   }, C = (0, h.oC)(m, c), O = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
@@ -163,7 +163,7 @@ function L(e) {
             children: (0, r.jsx)(x.Z, {
               author: N,
               message: g,
-              roleIcon: null != C ? C : (0, d.ap)(e) ? _ : v,
+              roleIcon: null != C ? C : (0, d.ap)(e) ? v : _,
               isGroupStart: !0
             })
           })
@@ -182,7 +182,7 @@ function M(e) {
     children: [(0, r.jsx)(u.j7V, {
       disabled: n,
       value: t.hoist,
-      onChange: e => (0, v.we)(t.id, e, t.mentionable),
+      onChange: e => (0, _.we)(t.id, e, t.mentionable),
       hideBorder: !0,
       children: T.NW.string(T.t.vceJPj)
     }), (0, r.jsx)(u.$i$, {
@@ -190,7 +190,7 @@ function M(e) {
     }), (0, r.jsx)(u.j7V, {
       disabled: n,
       value: t.mentionable,
-      onChange: e => (0, v.we)(t.id, t.hoist, e),
+      onChange: e => (0, _.we)(t.id, t.hoist, e),
       note: T.NW.string(T.t.kRg5W1),
       hideBorder: !0,
       children: T.NW.format(T.t.DTXoJS, {})
@@ -207,7 +207,7 @@ function G(e) {
   } = e, l = (0, m.pM)(null == t ? void 0 : t.id, n.id), o = i || l, d = (0, c.e7)([N.Z], () => N.Z.canImpersonateRole(t, n)), {
     headerHeight: g,
     headerRef: p
-  } = (0, _.Z)(0), {
+  } = (0, v.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
   } = (0, O.V)();

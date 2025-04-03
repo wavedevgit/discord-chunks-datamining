@@ -17,8 +17,8 @@ var a = s(200651),
   g = s(811085),
   j = s(967254),
   N = s(981631),
-  v = s(388032),
-  p = s(891816);
+  p = s(388032),
+  v = s(618983);
 
 function f() {
   let e = (0, x.Z)(),
@@ -41,13 +41,13 @@ function f() {
     children: (0, a.jsx)(r.$jN, {})
   }) : null != f ? (0, a.jsxs)(r.qXd, {
     color: r.DM8.DANGER,
-    className: p.nagbar,
-    children: [v.NW.string(v.t.TDRvqq), (0, a.jsx)(r.EyT, {
+    className: v.nagbar,
+    children: [p.NW.string(p.t.TDRvqq), (0, a.jsx)(r.EyT, {
       onClick: () => d.yq(),
-      children: v.NW.string(v.t.R1AN4O)
+      children: p.NW.string(p.t.R1AN4O)
     })]
   }) : (0, a.jsxs)("div", {
-    className: p.container,
+    className: v.container,
     children: [(0, a.jsx)(g.Z, {}), (0, a.jsx)(j.N, {})]
   })
 }

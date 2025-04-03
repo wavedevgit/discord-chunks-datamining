@@ -67,5 +67,8 @@ var t = {
 };
 let o = function(e, a, n) {
   var o, i = t[e];
-  return (o = "string" == typeof i ? i : 1 === a ? i.one : i.other.replace("{{count}}", a.toString()), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? "en " + o : "hace " + o : o
+  if (o = "string" == typeof i ? i : 1 === a ? i.one : i.other.replace("{{count}}", a.toString()), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return "en " + o;
+    else return "hace " + o;
+  return o
 }

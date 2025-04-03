@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(169525),
   x = n(255269),
   b = n(930282),
-  v = n(524444),
-  j = n(695346),
+  j = n(524444),
+  v = n(695346),
   C = n(433355),
   _ = n(592125),
   y = n(496675),
@@ -38,7 +38,7 @@ var r = n(200651),
   M = n(710352),
   A = n(981631),
   L = n(388032),
-  W = n(436781);
+  W = n(365494);
 
 function F(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -107,7 +107,7 @@ function B(e) {
     gridCoords: g,
     gridSectionBoundaries: f,
     observePostVisibilityAnalytics: p
-  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), v = n.id, S = a.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
+  } = e, b = (0, o.e7)([_.Z], () => _.Z.getChannel(n.parent_id)), j = n.id, S = a.useRef(null), I = (0, o.e7)([C.ZP], () => C.ZP.getCurrentSidebarChannelId(n.parent_id) === n.id), {
     firstMessage: D,
     loaded: z
   } = (0, O.cl)(n), {
@@ -130,11 +130,11 @@ function B(e) {
     channel: n
   });
   a.useEffect(() => {
-    null == p || p(S.current, v)
-  }, [p, v]);
+    null == p || p(S.current, j)
+  }, [p, j]);
   let Q = (0, o.e7)([y.Z], () => y.Z.can(A.Plq.MANAGE_MESSAGES, n)),
-    $ = j.QK.useSetting(),
-    ee = j.cC.useSetting(),
+    $ = v.QK.useSetting(),
+    ee = v.cC.useSetting(),
     et = (0, x.Z)(ee, Q),
     en = (0, w.aU)(D, b, !1),
     [er, ea] = (0, T.rI)(h.width - 2 * T.LT),
@@ -312,7 +312,7 @@ function H(e) {
 let U = e => e.preventDefault(),
   V = a.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
-      children: (0, v.Yi)(D(F({}, e), {
+      children: (0, j.Yi)(D(F({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
       }))
     })
@@ -332,13 +332,13 @@ let U = e => e.preventDefault(),
       numAttachments: x.length,
       containerWidth: i,
       containerHeight: s
-    }), v = (0, I.S$)({
+    }), j = (0, I.S$)({
       imageContainerStyles: b,
       containerWidth: i,
       containerHeight: s
-    }), j = (0, g.m)(), C = a.useMemo(() => x.map((e, t) => {
+    }), v = (0, g.m)(), C = a.useMemo(() => x.map((e, t) => {
       var a;
-      let [i, s] = (0, p.As)(e, !n, j), g = (0, p.MC)(s), x = D(F({}, v[t]), {
+      let [i, s] = (0, p.As)(e, !n, v), g = (0, p.MC)(s), x = D(F({}, j[t]), {
         src: e.src,
         width: e.width,
         height: e.height,
@@ -353,7 +353,7 @@ let U = e => e.preventDefault(),
           src: _,
           backgroundSrc: C,
           aspectRatio: x.maxWidth / x.maxHeight,
-          alt: null !== (a = x.alt) && void 0 !== a ? a : "",
+          alt: null != (a = x.alt) ? a : "",
           className: l()(W.mediaPostContainer, {
             [W.obscured]: i
           }),
@@ -378,7 +378,7 @@ let U = e => e.preventDefault(),
           })
         })]
       }, e.src)
-    }), [o, m, u, n, b, v, x, c, j]);
+    }), [o, m, u, n, b, j, x, c, v]);
     return (0, r.jsxs)("div", {
       className: W.bodyMedia,
       style: {

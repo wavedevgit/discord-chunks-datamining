@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 }), n(266796);
@@ -8,8 +8,8 @@ var r = n(200651),
   o = n.n(l),
   a = n(481060),
   s = n(480916),
-  c = n(297612),
-  u = n(685786);
+  c = n(352075),
+  u = n(20493);
 let d = function(e) {
   let {
     title: t,
@@ -30,7 +30,7 @@ let d = function(e) {
   let C = i.useCallback(() => {
       (0, s.qd)(s.iP.NSFW_CHANNEL_DISAGREE_CTA, g, b, _), null == h || h()
     }, [h, g, b, _]),
-    v = i.useCallback(() => {
+    y = i.useCallback(() => {
       (0, s.qd)(s.iP.NSFW_CHANNEL_AGREE_CTA, g, b, _), null == p || p()
     }, [p, g, b, _]);
   return (0, r.jsxs)(a.Kqy, {
@@ -58,7 +58,7 @@ let d = function(e) {
         children: d
       }) : null, null != l && null != p ? (0, r.jsx)(a.zxk, {
         color: m,
-        onClick: v,
+        onClick: y,
         children: l
       }) : null]
     })]

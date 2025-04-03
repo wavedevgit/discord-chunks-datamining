@@ -1,38 +1,41 @@
-/** Chunk was on 93886 **/
-n.d(t, {
+/** Chunk was on 95287 **/
+r.d(t, {
   C: () => i,
-  s: () => o
+  s: () => l
 });
-var r = n(939639),
-  a = n(99815),
-  l = n(388032);
+var n = r(939639),
+  a = r(99815),
+  o = r(388032);
 
 function i(e) {
   var t;
-  return null !== (t = ({
-    [a.E.LOL_TOTAL_KILLS]: l.NW.string(l.t.aIbY2N),
-    [a.E.LOL_TOTAL_DEATHS]: l.NW.string(l.t.Jec90d),
-    [a.E.LOL_TOTAL_ASSISTS]: l.NW.string(l.t["8+lHWV"]),
-    [a.E.LOL_TOTAL_DAMAGE_DEALT]: l.NW.string(l.t["XEmO+P"]),
-    [a.E.LOL_TOTAL_DAMAGE_TAKEN]: l.NW.string(l.t["TcQ7//"]),
-    [a.E.LOL_TOTAL_WINS]: l.NW.string(l.t["/QfLjI"]),
-    [a.E.LOL_MAX_CREEP_SCORE]: l.NW.string(l.t.M5pp7e)
-  })[e]) && void 0 !== t ? t : l.NW.string(l.t["IraB/v"])
+  return null != (t = ({
+    [a.E.LOL_TOTAL_KILLS]: o.NW.string(o.t.aIbY2N),
+    [a.E.LOL_TOTAL_DEATHS]: o.NW.string(o.t.Jec90d),
+    [a.E.LOL_TOTAL_ASSISTS]: o.NW.string(o.t["8+lHWV"]),
+    [a.E.LOL_TOTAL_DAMAGE_DEALT]: o.NW.string(o.t["XEmO+P"]),
+    [a.E.LOL_TOTAL_DAMAGE_TAKEN]: o.NW.string(o.t["TcQ7//"]),
+    [a.E.LOL_TOTAL_WINS]: o.NW.string(o.t["/QfLjI"]),
+    [a.E.LOL_MAX_CREEP_SCORE]: o.NW.string(o.t.M5pp7e)
+  })[e]) ? t : o.NW.string(o.t["IraB/v"])
 }
 
-function o(e) {
+function l(e) {
   let {
     statisticId: t,
-    sortDesc: n,
+    sortDesc: r,
     aggregationType: a
-  } = e, o = i(t);
-  return a === r.k.MAX ? n ? l.NW.formatToPlainString(l.t.nJYOFx, {
-    statisticName: o
-  }) : l.NW.formatToPlainString(l.t.SYKIbW, {
-    statisticName: o
-  }) : n ? l.NW.formatToPlainString(l.t.M9sOp6, {
-    statisticName: o
-  }) : l.NW.formatToPlainString(l.t.USfwd3, {
-    statisticName: o
+  } = e, l = i(t);
+  if (a === n.k.MAX)
+    if (r) return o.NW.formatToPlainString(o.t.nJYOFx, {
+      statisticName: l
+    });
+    else return o.NW.formatToPlainString(o.t.SYKIbW, {
+      statisticName: l
+    });
+  return r ? o.NW.formatToPlainString(o.t.M9sOp6, {
+    statisticName: l
+  }) : o.NW.formatToPlainString(o.t.USfwd3, {
+    statisticName: l
   })
 }

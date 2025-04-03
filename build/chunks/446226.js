@@ -12,6 +12,6 @@ function l() {
     var e;
     let t = r.default.getId(),
       n = a.Z.getRemoteSessionId();
-    return null !== (e = d.Z.getVoiceStateForSession(t, n)) && void 0 !== e ? e : void 0
+    return null != (e = d.Z.getVoiceStateForSession(t, n)) ? e : void 0
   }, [])
 }

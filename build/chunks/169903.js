@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => a
@@ -30,10 +30,10 @@ function a(e, t) {
         })
       }
       return e
-    }({}, null !== (n = null == t ? void 0 : t.ppgs[e.id]) && void 0 !== n ? n : {}), i = i = {
+    }({}, null != (n = null == t ? void 0 : t.ppgs[e.id]) ? n : {}), i = i = {
       key: e.id,
       subscriptionListing: e,
-      roleMemberCount: null == s ? void 0 : null == a ? void 0 : a[s]
+      roleMemberCount: null == s || null == a ? void 0 : a[s]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

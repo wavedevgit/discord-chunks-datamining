@@ -1,5 +1,5 @@
 /** Chunk was on 35535 **/
-var i = function() {
+t.exports = function() {
   "use strict";
 
   function t(t, i) {
@@ -97,10 +97,7 @@ var i = function() {
         this.layoutLabels_(n, h)
       },
       layoutLabels_: function(t, i) {
-        if (i - t < 1024) {
-          this.layoutLabelsBasic_(t, i, 2);
-          return
-        }
+        if (i - t < 1024) return void this.layoutLabelsBasic_(t, i, 2);
         var e = ["", "k", "M", "G", "T", "P"],
           s = 1;
         for (t /= 1024, i /= 1024; e[s + 1] && i - t >= 1024;) t /= 1024, i /= 1024, ++s;
@@ -163,5 +160,4 @@ var i = function() {
     }, t
   }();
   return t
-}();
-t.exports = i
+}()

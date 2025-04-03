@@ -20,10 +20,10 @@ let d = {
       name: d,
       permissionOverwrites: g = [],
       bitrate: f,
-      userLimit: v,
-      parentId: y,
-      skuId: E,
-      branchId: b
+      userLimit: y,
+      parentId: E,
+      skuId: b,
+      branchId: v
     } = e;
     a.Z.dispatch({
       type: "CREATE_CHANNEL_MODAL_SUBMIT",
@@ -35,9 +35,9 @@ let d = {
       name: d,
       permission_overwrites: g
     };
-    if (null != f && f !== p.epw && (N.bitrate = f), null != v && v > 0 && (N.user_limit = v), null != y && (N.parent_id = y), l === p.d4z.GUILD_STORE) {
-      if (null == E) throw Error("Unexpected missing SKU");
-      N.sku_id = E, N.branch_id = b
+    if (null != f && f !== p.epw && (N.bitrate = f), null != y && y > 0 && (N.user_limit = y), null != E && (N.parent_id = E), l === p.d4z.GUILD_STORE) {
+      if (null == b) throw Error("Unexpected missing SKU");
+      N.sku_id = b, N.branch_id = v
     }
     return u.Z.post({
       url: p.ANM.GUILD_CHANNELS(t),
@@ -49,8 +49,8 @@ let d = {
           var t, l;
           return (0, r.iG)({
             is_private: g.length > 0,
-            channel_id: null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.id,
-            channel_type: null == e ? void 0 : null === (l = e.body) || void 0 === l ? void 0 : l.type
+            channel_id: null == e || null == (t = e.body) ? void 0 : t.id,
+            channel_type: null == e || null == (l = e.body) ? void 0 : l.type
           })
         }
       },
@@ -78,8 +78,8 @@ let d = {
         var t, l;
         return (0, r.iG)({
           is_private: !0,
-          channel_id: null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.id,
-          channel_type: null == e ? void 0 : null === (l = e.body) || void 0 === l ? void 0 : l.type
+          channel_id: null == e || null == (t = e.body) ? void 0 : t.id,
+          channel_type: null == e || null == (l = e.body) ? void 0 : l.type
         })
       }
     },

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   $A: () => O,
   ZP: () => N,
@@ -22,15 +22,15 @@ var i = n(512722),
   b = n(592125),
   _ = n(496675),
   C = n(881824),
-  v = n(146085),
-  y = n(427679),
-  x = n(354459),
+  y = n(146085),
+  x = n(427679),
+  v = n(354459),
   j = n(388032);
 
 function O(e) {
   let t = (0, o.e7)([b.Z], () => b.Z.getChannel(e), [e]),
-    n = (0, o.e7)([_.Z], () => _.Z.can(v.yP, t)),
-    i = (0, o.e7)([y.Z], () => y.Z.getStageInstanceByChannel(e), [e]),
+    n = (0, o.e7)([_.Z], () => _.Z.can(y.yP, t)),
+    i = (0, o.e7)([x.Z], () => x.Z.getStageInstanceByChannel(e), [e]),
     l = (0, s.bp)(),
     c = () => null != t && (0, C.T)(t, l);
   return (null == t ? void 0 : t.isGuildStageVoice()) && n ? null != i ? (0, r.jsx)(a.sNh, {
@@ -60,7 +60,7 @@ function N(e) {
     appContext: i,
     onSelect: l,
     onInteraction: s
-  } = e, f = (0, o.e7)([c.Z], () => c.Z.getSelectedParticipant(t)), m = (null == f ? void 0 : f.type) === x.fO.STREAM ? f.stream : null, g = (0, h.Z)(t);
+  } = e, f = (0, o.e7)([c.Z], () => c.Z.getSelectedParticipant(t)), m = (null == f ? void 0 : f.type) === v.fO.STREAM ? f.stream : null, g = (0, h.Z)(t);
   return (0, r.jsxs)(a.v2r, {
     navId: "stage-channel-call-overflow-popout",
     onClose: n,

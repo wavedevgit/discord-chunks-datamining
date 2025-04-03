@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   $: () => h,
   Q: () => p
@@ -19,7 +19,7 @@ function p(e) {
       var t, n;
       let {
         channel: r
-      } = e, i = r.getGuildId(), l = null !== (n = null === (t = o.Z.getGuild(i)) || void 0 === t ? void 0 : t.maxVideoChannelUsers) && void 0 !== n ? n : -1, d = c.ZP.countVoiceStatesForChannel(r.id), p = null != i && s.Z.hasVideo(r.id) && l > 0 && d >= l + 1;
+      } = e, i = r.getGuildId(), l = null != (n = null == (t = o.Z.getGuild(i)) ? void 0 : t.maxVideoChannelUsers) ? n : -1, d = c.ZP.countVoiceStatesForChannel(r.id), p = null != i && s.Z.hasVideo(r.id) && l > 0 && d >= l + 1;
       return a.Z.can(u.Plq.MOVE_MEMBERS, r) && a.Z.can(u.Plq.CONNECT, r) && !p
     },
     drop(e, t) {

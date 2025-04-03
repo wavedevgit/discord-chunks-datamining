@@ -43,7 +43,7 @@ function g(e, t) {
     allowLinks: c || o.allowLinks,
     allowEmojiLinks: c,
     mentionChannels: e.mentionChannels,
-    soundboardSounds: null !== (n = e.soundboardSounds) && void 0 !== n ? n : []
+    soundboardSounds: null != (n = e.soundboardSounds) ? n : []
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -100,7 +100,7 @@ function d(e) {
       escapeReplacement: !0,
       messageId: t.id,
       channelId: t.channel_id,
-      authorId: null === (o = t.author) || void 0 === o ? void 0 : o.id
+      authorId: null == (o = t.author) ? void 0 : o.id
     }) : w, !0, g(t, n), (e, n) => {
       var i, o;
       return Array.isArray(e) || (e = [e]), k && (e = function(e, t) {

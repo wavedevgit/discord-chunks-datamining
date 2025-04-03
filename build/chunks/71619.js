@@ -1,4 +1,4 @@
-/** Chunk was on 72581 **/
+/** Chunk was on 69620 **/
 n.d(t, {
   AB: () => l,
   ZP: () => d,
@@ -20,7 +20,7 @@ function s(e, t, n) {
 
 function c(e) {
   var t;
-  return [null !== (t = null == e ? void 0 : e.communicationDisabledUntil) && void 0 !== t ? t : null, (0, o.b)(e)]
+  return [null != (t = null == e ? void 0 : e.communicationDisabledUntil) ? t : null, (0, o.b)(e)]
 }
 
 function d(e, t) {

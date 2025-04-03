@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => O
 });
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(314734),
   _ = n(981631),
   C = n(388032),
-  v = n(714878);
-let y = {
+  y = n(760420);
+let x = {
   height: b.lv
 };
 
-function x() {
+function v() {
   h.yT(f.ti.DISMISSED)
 }
 
@@ -36,9 +36,9 @@ function j(e) {
   } = e, u = i.useRef(null), {
     renderWindow: h,
     windowDispatch: C
-  } = i.useContext(s.ZP), v = null != c, y = (0, o.Jw)(null != c ? c : ""), j = i.useCallback(e => {
+  } = i.useContext(s.ZP), y = null != c, x = (0, o.Jw)(null != c ? c : ""), j = i.useCallback(e => {
     var t;
-    if (!v && (0, o.$s)() || v && !(y && n)) return;
+    if (!y && (0, o.$s)() || y && !(x && n)) return;
     let {
       target: r
     } = e;
@@ -46,22 +46,19 @@ function j(e) {
     for (;
       (0, l.k)(r);) {
       if (r === u.current) return;
-      if (r.classList.contains(b.t4) || r.classList.contains(b.Id)) {
-        e.preventDefault();
-        return
-      }
+      if (r.classList.contains(b.t4) || r.classList.contains(b.Id)) return void e.preventDefault();
       if (r.classList.contains(b.NN)) return;
       r = r.parentNode
     }
-    x();
-    let i = null === (t = (0, p.uB)(e)) || void 0 === t ? void 0 : t.activeElement;
+    v();
+    let i = null == (t = (0, p.uB)(e)) ? void 0 : t.activeElement;
     (null == i || "BODY" === i.tagName) && d.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS)
-  }, [n, y, v]);
-  i.useLayoutEffect(() => (h.addEventListener("mousedown", j), h.addEventListener("contextmenu", j), C.subscribe(_.CkL.POPOUT_CLOSE, x), () => {
-    h.removeEventListener("mousedown", j), h.removeEventListener("contextmenu", j), C.unsubscribe(_.CkL.POPOUT_CLOSE, x)
+  }, [n, x, y]);
+  i.useLayoutEffect(() => (h.addEventListener("mousedown", j), h.addEventListener("contextmenu", j), C.subscribe(_.CkL.POPOUT_CLOSE, v), () => {
+    h.removeEventListener("mousedown", j), h.removeEventListener("contextmenu", j), C.unsubscribe(_.CkL.POPOUT_CLOSE, v)
   }), [j, h, C]), (0, a.Tbt)(u), i.useEffect(() => {
-    (!v && (0, o.$s)() || v && !y) && x()
-  }, [y, v]);
+    (!y && (0, o.$s)() || y && !x) && v()
+  }, [x, y]);
   let O = (0, g.Z)();
   return (0, r.jsx)(m.Z, {
     ref: u,
@@ -95,7 +92,7 @@ let O = i.memo(function(e) {
   return (0, r.jsx)("span", {
     style: b.u$,
     children: (0, r.jsx)(u.W5, {
-      className: v.positionLayer,
+      className: y.positionLayer,
       targetRef: t,
       position: "top",
       align: "right",
@@ -107,9 +104,9 @@ let O = i.memo(function(e) {
           isPositioned: t
         } = e;
         return (0, r.jsx)("section", {
-          className: v.positionContainer,
+          className: y.positionContainer,
           role: "dialog",
-          style: y,
+          style: x,
           "aria-label": C.NW.string(C.t["3CNGLC"]),
           children: t && (0, r.jsx)(j, function(e) {
             for (var t = 1; t < arguments.length; t++) {

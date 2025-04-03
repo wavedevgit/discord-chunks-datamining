@@ -6,13 +6,13 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(367907),
-  o = n(70097),
-  a = n(970731),
+  a = n(70097),
+  o = n(970731),
   s = n(626135),
   c = n(63063),
   u = n(981631),
   d = n(388032),
-  p = n(860678);
+  p = n(966651);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,10 +51,10 @@ function f(e) {
       })
     })]
   });
-  return (0, r.jsx)(a.ZP, {
+  return (0, r.jsx)(o.ZP, {
     header: d.NW.string(d.t.fW7UqK),
     content: g,
-    asset: (0, r.jsx)(o.Z, {
+    asset: (0, r.jsx)(a.Z, {
       className: p.video,
       src: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
       autoPlay: !0,
@@ -65,7 +65,7 @@ function f(e) {
       s.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, h({}, (0, l.hH)(t))), (0, i.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("45094"), n.e("46122")]).then(n.bind(n, 218613));
+        } = await Promise.all([n.e("45094"), n.e("45822")]).then(n.bind(n, 218613));
         return n => {
           var i, l;
           return (0, r.jsx)(e, (i = h({}, n), l = l = {

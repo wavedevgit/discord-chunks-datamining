@@ -13,19 +13,19 @@ var r = n(200651),
   d = n(430824),
   C = n(496675),
   m = n(388032),
-  b = n(681152);
+  b = n(201367);
 let p = e => {
   let {
     guild: t,
     transitionState: n,
     onClose: o
-  } = e, [p, f] = l.useState(7), [h, j] = l.useState(null), [g, x] = l.useState([]), v = l.useCallback(async () => {
+  } = e, [p, f] = l.useState(7), [h, j] = l.useState(null), [g, x] = l.useState([]), y = l.useCallback(async () => {
     j(null), j(await c.Z.updateEstimate(t.id, p, g))
   }, [p, t.id, g]);
   l.useEffect(() => {
-    v()
-  }, [v]);
-  let y = (0, i.Wu)([C.Z, d.Z], () => {
+    y()
+  }, [y]);
+  let v = (0, i.Wu)([C.Z, d.Z], () => {
     let e = C.Z.getHighestRole(t);
     return a()(d.Z.getRoles(t.id)).sortBy(e => e.position).filter(e => !(0, u.pM)(t.id, e.id)).filter(n => C.Z.isRoleHigher(t, e, n)).value().map(e => {
       let {
@@ -80,7 +80,7 @@ let p = e => {
             multi: !0,
             value: g,
             onChange: e => x(e),
-            options: y
+            options: v
           })
         })
       }), (0, r.jsx)(s.R94, {

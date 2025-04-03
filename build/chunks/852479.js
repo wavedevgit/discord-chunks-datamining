@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(893966),
   C = n(527379),
   m = n(388032),
-  b = n(67769),
-  p = n(393046);
+  b = n(350381),
+  p = n(93163);
 
 function f(e) {
   let {
@@ -63,7 +63,7 @@ function f(e) {
         }), n))
       }
     })
-  }, [g, j]), v = new Intl.NumberFormat(m.NW.currentLocale).format(f), y = (0, u.nX)(t.id), O = (0, u.xC)(t.id), N = l.useMemo(() => 1 + +!!y + +!!O, [y, O]);
+  }, [g, j]), y = new Intl.NumberFormat(m.NW.currentLocale).format(f), v = (0, u.nX)(t.id), O = (0, u.xC)(t.id), N = l.useMemo(() => 1 + +!!v + +!!O, [v, O]);
   return 0 === f ? null : (0, r.jsxs)("tr", {
     className: p.newMembersNotice,
     onClick: x,
@@ -73,7 +73,7 @@ function f(e) {
         variant: "text-sm/normal",
         color: "always-white",
         children: m.NW.format(m.t["/i5uJy"], {
-          count: v,
+          count: y,
           date: h
         })
       })

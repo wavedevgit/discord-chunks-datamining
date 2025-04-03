@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => f
 });
@@ -7,14 +7,14 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(512722),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   c = n(481060),
   d = n(600164),
   u = n(594174),
   m = n(418632),
   g = n(388032),
-  p = n(400215);
+  p = n(231829);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -44,9 +44,9 @@ function f(e) {
     isClaimed: f,
     isVerified: b,
     hasEmail: N
-  } = (0, l.cj)([u.default], () => {
+  } = (0, o.cj)([u.default], () => {
     let e = u.default.getCurrentUser();
-    return o()(null != e, "EmailNotice: currentUser cannot be undefined"), {
+    return l()(null != e, "EmailNotice: currentUser cannot be undefined"), {
       isClaimed: e.isClaimed(),
       isVerified: e.verified,
       hasEmail: null != e.email
@@ -57,7 +57,7 @@ function f(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("9343"), n.e("63097")]).then(n.bind(n, 642298));
+      } = await Promise.all([n.e("9343"), n.e("39809")]).then(n.bind(n, 642298));
       return t => (0, r.jsx)(e, h({}, t))
     })
   }

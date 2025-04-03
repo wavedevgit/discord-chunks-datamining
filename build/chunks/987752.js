@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(120356),
-  i = n.n(o),
-  a = n(442837),
+  a = n.n(o),
+  i = n(442837),
   c = n(481060),
   l = n(120421),
   u = n(340078),
@@ -16,18 +16,18 @@ var r = n(200651),
   m = n(424984),
   g = n(477839),
   b = n(231338),
-  y = n(884479),
+  y = n(622802),
   h = n(388032),
-  v = n(860067),
-  x = n(733),
-  N = n(35356);
+  x = n(313273),
+  N = n(733),
+  v = n(35356);
 
 function O(e) {
   let {
     children: t
   } = e;
   return (0, r.jsx)("td", {
-    className: v.statColumn,
+    className: x.statColumn,
     children: t
   })
 }
@@ -38,41 +38,41 @@ function j(e) {
     iconSrc: n,
     valueTotal: s,
     valuePerSecond: o
-  } = e, a = o >= 0 ? y.Z.QMkrPj : y.Z.VN4aTU;
+  } = e, i = o >= 0 ? y.Z.QMkrPj : y.Z.VN4aTU;
   return (0, r.jsxs)("tr", {
-    className: v.statRow,
+    className: x.statRow,
     children: [(0, r.jsx)(O, {
       children: (0, r.jsx)("img", {
-        className: v.statIcon,
+        className: x.statIcon,
         src: n,
         alt: ""
       })
     }), (0, r.jsx)(O, {
       children: (0, r.jsx)(p.Z, {
         variant: "text-xs/medium",
-        className: v.statName,
+        className: x.statName,
         children: t
       })
     }), (0, r.jsx)(O, {
       children: (0, r.jsxs)("div", {
-        className: v.statValue,
+        className: x.statValue,
         children: [(0, r.jsx)("img", {
-          className: v.pointsIcon,
-          src: x,
+          className: x.pointsIcon,
+          src: N,
           alt: ""
         }), (0, r.jsx)(c.Text, {
-          className: v.monospace,
+          className: x.monospace,
           variant: "text-xs/medium",
           children: (0, u.v)(Math.floor(s))
         })]
       })
     }), (0, r.jsx)(O, {
       children: (0, r.jsx)(c.Text, {
-        className: i()(v.statValuePerSecond, v.monospace),
+        className: a()(x.statValuePerSecond, x.monospace),
         variant: "text-xs/medium",
-        children: h.NW.format(a, {
+        children: h.NW.format(i, {
           points: Math.abs(o),
-          grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, v.pointsIcon)
+          grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, x.pointsIcon)
         })
       })
     })]
@@ -83,14 +83,14 @@ function Z(e) {
   let {
     itemId: t,
     isPaused: n
-  } = e, s = (0, a.e7)([l.Z], () => {
+  } = e, s = (0, i.e7)([l.Z], () => {
     var e;
-    return null !== (e = l.Z.pointsByItem[t]) && void 0 !== e ? e : 0
-  }), o = (0, g.w2)()[t], i = (0, f.Z)(s, n);
+    return null != (e = l.Z.pointsByItem[t]) ? e : 0
+  }), o = (0, g.w2)()[t], a = (0, f.Z)(s, n);
   return (0, r.jsx)(j, {
     name: o.name,
     valueTotal: s,
-    valuePerSecond: i,
+    valuePerSecond: a,
     iconSrc: o.purchaseIconSrc
   })
 }
@@ -99,9 +99,9 @@ function _(e) {
   let {
     transitionState: t,
     isPaused: n
-  } = e, o = (0, a.e7)([l.Z], () => l.Z.pointsByItem), i = (0, a.e7)([l.Z], () => l.Z.lifetimePoints), u = (0, f.Z)(i, n), d = (0, a.e7)([l.Z], () => l.Z.pointsByItem), m = (0, s.useMemo)(() => Object.keys(o).sort((e, t) => {
+  } = e, o = (0, i.e7)([l.Z], () => l.Z.pointsByItem), a = (0, i.e7)([l.Z], () => l.Z.lifetimePoints), u = (0, f.Z)(a, n), d = (0, i.e7)([l.Z], () => l.Z.pointsByItem), m = (0, s.useMemo)(() => Object.keys(o).sort((e, t) => {
     var n, r;
-    return (null !== (n = null == d ? void 0 : d[t]) && void 0 !== n ? n : 0) - (null !== (r = null == d ? void 0 : d[e]) && void 0 !== r ? r : 0)
+    return (null != (n = null == d ? void 0 : d[t]) ? n : 0) - (null != (r = null == d ? void 0 : d[e]) ? r : 0)
   }), []);
   return (0, r.jsx)(c.f6W, {
     theme: b.BR.DARK,
@@ -110,24 +110,24 @@ function _(e) {
       className: e,
       transitionState: t,
       children: [(0, r.jsxs)(c.xBx, {
-        className: v.header,
+        className: x.header,
         separator: !1,
         children: [(0, r.jsx)(p.Z, {
           variant: "heading-lg/semibold",
           children: h.NW.string(y.Z.bS8cBA)
         }), (0, r.jsx)(p.Z, {
-          className: v.subtitle,
+          className: x.subtitle,
           variant: "text-xs/medium",
           children: h.NW.string(y.Z.fdvpl5)
         })]
       }), (0, r.jsx)(c.hzk, {
         children: (0, r.jsx)("table", {
-          className: v.statsTable,
+          className: x.statsTable,
           children: (0, r.jsxs)("tbody", {
             children: [(0, r.jsx)(j, {
               name: h.NW.string(y.Z.wAfrVl),
-              iconSrc: x,
-              valueTotal: i,
+              iconSrc: N,
+              valueTotal: a,
               valuePerSecond: u
             }), m.map(e => (0, r.jsx)(Z, {
               itemId: e,
@@ -145,7 +145,7 @@ function P(e) {
     isPaused: t
   } = e;
   return (0, r.jsx)(m.O, {
-    iconSrc: N,
+    iconSrc: v,
     title: h.NW.string(y.Z.bS8cBA),
     onClick: () => {
       (0, c.ZDy)(() => Promise.resolve(e => {

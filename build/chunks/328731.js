@@ -10,10 +10,10 @@ var n = r(200651),
   c = r(5192),
   s = r(192918),
   u = r(256139),
-  d = r(91907),
-  p = r(866040),
+  p = r(91907),
+  d = r(866040),
   f = r(388032),
-  b = r(901647);
+  b = r(103395);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ function m(e) {
   return (0, n.jsxs)("div", {
     className: i()(b.container, l),
     children: [m.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(p.Z, {
+      children: [(0, n.jsx)(d.Z, {
         participants: v,
         channel: r,
         children: e => (0, n.jsx)(o.P3F, y(O({
@@ -90,17 +90,17 @@ function m(e) {
         user0: c.ZP.getName(r.guild_id, r.id, P[0]),
         user1: c.ZP.getName(r.guild_id, r.id, P[1]),
         countOthers: h,
-        name0Hook: (e, t) => (0, n.jsx)(d.Z, {
+        name0Hook: (e, t) => (0, n.jsx)(p.Z, {
           text: e,
           user: P[0],
           channel: r
         }, t),
-        name1Hook: (e, t) => (0, n.jsx)(d.Z, {
+        name1Hook: (e, t) => (0, n.jsx)(p.Z, {
           text: e,
           user: P[1],
           channel: r
         }, t),
-        countOthersHook: (e, t) => (0, n.jsx)(p.Z, {
+        countOthersHook: (e, t) => (0, n.jsx)(d.Z, {
           participants: v,
           channel: r,
           children: t => (0, n.jsx)(u.Z, y(O({}, t), {

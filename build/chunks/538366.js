@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(228392),
   u = n(981631),
   m = n(388032),
-  h = n(243621);
+  h = n(272219);
 
 function g(e) {
   let {
@@ -21,7 +21,7 @@ function g(e) {
     guildId: g,
     tagFilter: f,
     channel: p
-  } = e, x = (0, c.r_)(p), b = (0, l.cD)(p), v = p.isMediaChannel(), j = a.useCallback(() => {
+  } = e, x = (0, c.r_)(p), b = (0, l.cD)(p), j = p.isMediaChannel(), v = a.useCallback(() => {
     (0, d.qz)(), (0, i.ZDy)(async () => {
       let {
         default: e
@@ -59,7 +59,7 @@ function g(e) {
         }), n))
       }
     })
-  }, [g]), C = f.size > 0, _ = b || x, y = !C && x && !v, N = a.useCallback(() => y ? j() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [j, y, b]);
+  }, [g]), C = f.size > 0, _ = b || x, y = !C && x && !j, N = a.useCallback(() => y ? v() : b ? void o.S.dispatch(u.CkL.FOCUS_COMPOSER_TITLE) : (0, u.VqG)(), [v, y, b]);
   return (0, r.jsxs)("div", {
     className: h.container,
     children: [(0, r.jsxs)("div", {

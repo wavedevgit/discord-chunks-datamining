@@ -66,7 +66,7 @@ var a = t(147693),
 function l(e, r) {
   return ["aria-atomic", "aria-busy", "aria-controls", "aria-current", "aria-describedby", "aria-details", "aria-dropeffect", "aria-flowto", "aria-grabbed", "aria-hidden", "aria-keyshortcuts", "aria-label", "aria-labelledby", "aria-live", "aria-owns", "aria-relevant", "aria-roledescription"].some(function(t) {
     var a;
-    return e.hasAttribute(t) && !(null !== (a = n[r]) && void 0 !== a && a.has(t))
+    return e.hasAttribute(t) && !(null != (a = n[r]) && a.has(t))
   })
 }
 

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -16,7 +16,7 @@ var i = n(442837),
   m = n(331146),
   g = n(798680),
   p = n(388032),
-  h = n(630290);
+  h = n(301849);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,8 +55,8 @@ function x() {
     editStateId: e,
     guildId: t
   } = (0, o.N)(), [x, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
-    setCurrentTab: v
-  } = (0, g.dw)(), _ = () => v(g.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), O = null == C ? void 0 : C.getMaxRoleSubscriptionEmojiSlots();
+    setCurrentTab: _
+  } = (0, g.dw)(), v = () => _(g.ue.EMOJIS), C = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), O = null == C ? void 0 : C.getMaxRoleSubscriptionEmojiSlots();
 
   function y(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
@@ -77,7 +77,7 @@ function x() {
       children: [p.NW.format(p.t.zuwel5, {
         premiumEmojiMaximum: O
       }), (0, r.jsx)("br", {}), p.NW.format(p.t.sEkgBg, {
-        handleTransitionToManageEmoji: _
+        handleTransitionToManageEmoji: v
       })]
     }), (0, r.jsx)(m.E, {
       tierEmojiIds: x,
@@ -107,7 +107,7 @@ function x() {
             initialTierEmojiIds: x,
             onSubmit: y,
             transitionToManageEmoji: () => {
-              _(), n.onClose()
+              v(), n.onClose()
             }
           }))
         })

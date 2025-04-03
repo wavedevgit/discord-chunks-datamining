@@ -3,8 +3,8 @@ n.d(t, {
   default: () => f
 }), n(47120);
 var r = n(200651),
-  i = n(192379),
-  s = n(442837),
+  s = n(192379),
+  i = n(442837),
   o = n(481060),
   a = n(660216),
   l = n(825209),
@@ -14,15 +14,15 @@ var r = n(200651),
   h = n(710111),
   p = n(981631),
   b = n(388032),
-  m = n(203028);
+  m = n(267205);
 
 function f(e) {
   var t;
   let {
     transitionState: n,
     onClose: f
-  } = e, g = (0, s.e7)([d.ZP], () => d.ZP.getKeybindForAction(p.kg4.SOUNDBOARD_HOLD)), [_, N] = i.useState(null !== (t = null == g ? void 0 : g.shortcut) && void 0 !== t ? t : []);
-  return i.useEffect(() => (c.Z.disable(), () => {
+  } = e, g = (0, i.e7)([d.ZP], () => d.ZP.getKeybindForAction(p.kg4.SOUNDBOARD_HOLD)), [_, N] = s.useState(null != (t = null == g ? void 0 : g.shortcut) ? t : []);
+  return s.useEffect(() => (c.Z.disable(), () => {
     c.Z.enable()
   }), []), (0, r.jsxs)(o.Y0X, {
     transitionState: n,

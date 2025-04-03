@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   F: () => E,
   I: () => j
@@ -7,8 +7,8 @@ var r = n(200651),
   i = n(192379),
   s = n(722770),
   a = n(481060),
-  o = n(440051),
-  l = n(734934),
+  l = n(440051),
+  o = n(734934),
   c = n(158238),
   d = n(695346),
   u = n(70956),
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(246133),
   p = n(981631),
   h = n(388032),
-  f = n(400905);
+  f = n(659233);
 let b = [{
     duration: 15 * u.Z.Millis.MINUTE,
     label: () => h.NW.string(h.t["8ot6go"])
@@ -66,12 +66,12 @@ function _(e) {
     currentStatus: n,
     description: s
   } = e, {
-    showTempStatusOptions: l,
+    showTempStatusOptions: o,
     hasDefaultClickOption: c,
     hasButtonStyling: d
-  } = o.Y.useExperiment({
+  } = l.Y.useExperiment({
     location: "AccountProfilePopout"
-  }), h = l && t !== p.Skl.ONLINE, [x, _] = i.useState(null), E = null != x && t === n, j = (0, r.jsx)(r.Fragment, {
+  }), h = o && t !== p.Skl.ONLINE, [x, _] = i.useState(null), E = null != x && t === n, j = (0, r.jsx)(r.Fragment, {
     children: b.map(e => {
       let {
         duration: i,
@@ -175,9 +175,9 @@ function E(e) {
 function j(e) {
   let {
     hasNewStrings: t
-  } = o.Y.useExperiment({
+  } = l.Y.useExperiment({
     location: "AccountProfilePopout"
-  }), n = d.Cr.useSetting(), i = (0, l.p)(), u = c.e.useExperiment({
+  }), n = d.Cr.useSetting(), i = (0, o.p)(), u = c.e.useExperiment({
     location: "AccountProfilePopout"
   }).allowQuietMode || i, m = d.fv.useSetting(), g = e === p.Skl.DND, N = r => {
     let i = E(n);
@@ -200,7 +200,7 @@ function j(e) {
         id: "".concat(e, "-").concat(n),
         label: i(),
         action: () => {
-          (0, l.oW)(!0, n)
+          (0, o.oW)(!0, n)
         },
         dontCloseOnAction: !0
       }, n)
@@ -216,13 +216,13 @@ function j(e) {
     status: p.Skl.DND,
     currentStatus: e,
     description: N(p.Skl.DND)
-  }), v = _({
+  }), S = _({
     status: p.Skl.INVISIBLE,
     currentStatus: e,
     description: N(p.Skl.INVISIBLE)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), O, C, v, u || i ? (0, r.jsxs)(r.Fragment, {
+    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), O, C, S, u || i ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(a.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -253,7 +253,7 @@ function j(e) {
           })]
         }),
         action: () => {
-          (0, l.oW)(!i)
+          (0, o.oW)(!i)
         },
         dontCloseOnAction: !0,
         children: x

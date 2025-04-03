@@ -9,8 +9,8 @@ var n = t(200651),
   o = t(479531),
   i = t(393869),
   c = t(25990),
-  d = t(388032),
-  x = t(320082);
+  x = t(388032),
+  d = t(652297);
 
 function N(e) {
   var s;
@@ -25,7 +25,7 @@ function N(e) {
   r.useEffect(() => {
     if (t) {
       var e;
-      null === (e = f.current) || void 0 === e || e.focus()
+      null == (e = f.current) || e.focus()
     }
   }, [t]);
   let g = async e => {
@@ -44,7 +44,7 @@ function N(e) {
     if (!j) {
       S(!0);
       try {
-        await (0, i.i)(!0), (0, l.showToast)((0, l.createToast)(d.NW.string(d.t["84yeo6"]), l.ToastType.SUCCESS))
+        await (0, i.i)(!0), (0, l.showToast)((0, l.createToast)(x.NW.string(x.t["84yeo6"]), l.ToastType.SUCCESS))
       } catch (s) {
         let e = new o.Z(s).getAnyErrorMessage();
         null != e && (0, l.showToast)((0, l.createToast)(e, l.ToastType.FAILURE))
@@ -57,34 +57,34 @@ function N(e) {
     onSubmit: g,
     children: [(0, n.jsxs)(l.xBx, {
       separator: !1,
-      className: x.header,
+      className: d.header,
       children: [(0, n.jsx)(l.X6q, {
-        className: x.title,
+        className: d.title,
         variant: "heading-xl/extrabold",
-        children: d.NW.string(d.t.jMGc4O)
+        children: x.NW.string(x.t.jMGc4O)
       }), (0, n.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: x.subtitle,
-        children: d.NW.string(d.t.SZJow8)
+        className: d.subtitle,
+        children: x.NW.string(x.t.SZJow8)
       }), (0, n.jsx)(l.olH, {
         onClick: E,
-        className: x.modalCloseButton
+        className: d.modalCloseButton
       })]
     }), (0, n.jsxs)(l.hzk, {
-      className: x.content,
+      className: d.content,
       children: [(0, n.jsx)(l.xJW, {
-        title: d.NW.string(d.t["8mZX6O"]),
-        error: null != N ? N : null == k ? void 0 : null === (s = k.email_token) || void 0 === s ? void 0 : s[0],
+        title: x.NW.string(x.t["8mZX6O"]),
+        error: null != N ? N : null == k || null == (s = k.email_token) ? void 0 : s[0],
         children: (0, n.jsx)(l.oil, {
           value: C,
           onChange: p,
           inputRef: f
         })
       }), (0, n.jsx)(l.Text, {
-        className: x.help,
+        className: d.help,
         variant: "text-sm/normal",
-        children: d.NW.format(d.t.P0sak5, {
+        children: x.NW.format(x.t.P0sak5, {
           onResend: M
         })
       })]
@@ -94,7 +94,7 @@ function N(e) {
         color: l.zxk.Colors.BRAND,
         size: l.zxk.Sizes.MEDIUM,
         submitting: A,
-        children: d.NW.string(d.t.PDTjLC)
+        children: x.NW.string(x.t.PDTjLC)
       })
     })]
   })

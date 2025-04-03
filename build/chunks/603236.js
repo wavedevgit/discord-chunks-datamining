@@ -5,8 +5,8 @@ n.d(t, {
 }), n(789020);
 var r = n(200651),
   l = n(192379),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   s = n(533800),
   o = n(442837),
   c = n(481060),
@@ -20,8 +20,8 @@ var r = n(200651),
   f = n(245335),
   p = n(981631),
   j = n(388032),
-  N = n(478740),
-  b = n(685786);
+  N = n(821022),
+  b = n(20493);
 let y = o.ZP.connectStores([m.Z], () => ({
     hideValue: m.Z.hideInstantInvites
   }))(e => {
@@ -29,22 +29,22 @@ let y = o.ZP.connectStores([m.Z], () => ({
       value: t,
       autoFocus: n,
       hideValue: l,
-      onCopy: i,
-      disabled: a
+      onCopy: a,
+      disabled: i
     } = e;
     return (0, r.jsx)(u.Z, {
       value: l ? j.NW.string(j.t["6HzNgY"]) : t,
       buttonColor: c.zxk.Colors.BRAND,
-      onCopy: i,
+      onCopy: a,
       autoFocus: n,
-      disabled: a
+      disabled: i
     })
   }),
   O = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
-      showFriends: i,
+      showFriends: a,
       onClose: o,
       modalState: u,
       isApplicationBypassToggleEnabled: m,
@@ -77,7 +77,7 @@ let y = o.ZP.connectStores([m.Z], () => ({
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y, {
         value: E,
-        autoFocus: i,
+        autoFocus: a,
         onCopy: A,
         disabled: W
       }), m && (0, r.jsxs)(r.Fragment, {
@@ -122,14 +122,14 @@ let y = o.ZP.connectStores([m.Z], () => ({
         })]
       }), n || D ? null : (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
-        className: a()(b.marginTop8, N.footerText),
-        children: [(0, h.Vg)(Z, k), " ", i ? (0, r.jsx)(c.eee, {
+        className: i()(b.marginTop8, N.footerText),
+        children: [(0, h.Vg)(Z, k), " ", a ? (0, r.jsx)(c.eee, {
           onClick: () => C(f.RV.SETTINGS),
           children: j.NW.string(j.t.VNe8Pz)
         }) : null]
-      }), !n && i && D ? (0, r.jsxs)(c.Text, {
+      }), !n && a && D ? (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
-        className: a()(b.marginTop8, N.footerText),
+        className: i()(b.marginTop8, N.footerText),
         children: [j.NW.string(j.t["0M2U9/"]), " "]
       }) : null, null != _ ? (0, r.jsx)(v.W, {
         guild: t,

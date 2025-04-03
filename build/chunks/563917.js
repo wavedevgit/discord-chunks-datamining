@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651),
   i = n(192379),
   a = n(447543),
-  o = n(100527),
-  l = n(906732),
+  l = n(100527),
+  o = n(906732),
   s = n(792766),
   c = n(955415);
 let u = e => {
@@ -19,7 +19,7 @@ let u = e => {
     onAcceptInstantInvite: m
   } = e, {
     analyticsLocations: f
-  } = (0, l.ZP)(o.Z.INVITE_EMBED), h = i.useCallback(() => {
+  } = (0, o.ZP)(l.Z.INVITE_EMBED), h = i.useCallback(() => {
     let e = "noop";
     d ? (p(), e = "transition") : (m(), e = "accept"), (0, a.r$)(t, e, f)
   }, [t, f, d, p, m]);

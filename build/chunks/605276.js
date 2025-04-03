@@ -7,8 +7,8 @@ var t = l(200651),
   a = l(399606),
   i = l(481060),
   s = l(904245),
-  o = l(368844),
-  c = l(249842),
+  c = l(368844),
+  o = l(249842),
   d = l(838367),
   u = l(576306),
   m = l(65361),
@@ -20,16 +20,16 @@ var t = l(200651),
   b = l(768581),
   j = l(526120),
   C = l(825334),
-  v = l(981631),
-  _ = l(388032),
-  I = l(522812);
+  _ = l(981631),
+  v = l(388032),
+  I = l(617449);
 
 function Z(e) {
   let {
     guild: n
   } = e, l = (0, a.e7)([d.Z], () => d.Z.getGuild(n.id), [n]);
   return r.useEffect(() => {
-    null == l && (0, c.P)(n.id)
+    null == l && (0, o.P)(n.id)
   }, [n.id, l]), (0, t.jsx)(i.Zbd, {
     className: I.sidebarCardWrapper,
     children: (0, t.jsxs)("div", {
@@ -38,7 +38,7 @@ function Z(e) {
         className: I.sidebarCardHeader,
         variant: "heading-md/bold",
         color: "header-primary",
-        children: _.NW.string(_.t["6YriCA"])
+        children: v.NW.string(v.t["6YriCA"])
       }), (0, t.jsx)(i.Text, {
         className: I.guildDescription,
         variant: "text-md/normal",
@@ -53,7 +53,7 @@ function Z(e) {
             className: I.guildInfoText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: _.NW.format(_.t.QAdRCw, {
+            children: v.NW.format(v.t.QAdRCw, {
               online: null == l ? void 0 : l.presenceCount,
               total: null == l ? void 0 : l.memberCount
             })
@@ -92,8 +92,8 @@ let y = r.memo(function(e) {
     let {
       channelId: n,
       title: l,
-      icon: c
-    } = e, d = (0, a.e7)([f.Z], () => f.Z.getChannel(n)), u = (0, a.e7)([x.Z], () => x.Z.getMessages(n)), m = (0, a.e7)([p.Z], () => p.Z.can(v.Plq.VIEW_CHANNEL, d)), h = u.first(), C = (0, o.zy)(h, !1), _ = (null == C ? void 0 : C.length) > 0 ? C[0] : null, Z = null != d && null == h && !u.loadingMore && !u.ready && !u.hasFetched && m;
+      icon: o
+    } = e, d = (0, a.e7)([f.Z], () => f.Z.getChannel(n)), u = (0, a.e7)([x.Z], () => x.Z.getMessages(n)), m = (0, a.e7)([p.Z], () => p.Z.can(_.Plq.VIEW_CHANNEL, d)), h = u.first(), C = (0, c.zy)(h, !1), v = (null == C ? void 0 : C.length) > 0 ? C[0] : null, Z = null != d && null == h && !u.loadingMore && !u.ready && !u.hasFetched && m;
     r.useEffect(() => {
       Z && s.Z.fetchMessages({
         channelId: n,
@@ -114,17 +114,17 @@ let y = r.memo(function(e) {
         children: [(() => {
           let e = b.ZP.getResourceChannelIconURL({
             channelId: n,
-            icon: c
+            icon: o
           });
-          return null != c && null != e ? (0, t.jsx)("img", {
+          return null != o && null != e ? (0, t.jsx)("img", {
             src: e,
             className: I.resourceImage,
             alt: "",
             "aria-hidden": !0
-          }) : null != _ ? (0, t.jsx)("img", {
+          }) : null != v ? (0, t.jsx)("img", {
             className: I.resourceImage,
-            src: _.src,
-            alt: _.alt
+            src: v.src,
+            alt: v.alt
           }) : (0, t.jsx)("div", {
             className: I.placeholderImage,
             children: (0, t.jsx)(i.hH0, {
@@ -153,7 +153,7 @@ let y = r.memo(function(e) {
           className: I.sidebarCardHeader,
           variant: "heading-md/bold",
           color: "header-primary",
-          children: _.NW.string(_.t.xwY4LS)
+          children: v.NW.string(v.t.xwY4LS)
         }), (0, t.jsx)("div", {
           className: I.resourceChannelsList,
           children: l.map(e => (0, t.jsx)(O, {

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -19,11 +19,11 @@ var r = n(200651),
   b = n(271383),
   _ = n(594174),
   C = n(189432),
-  v = n(356778),
-  y = n(370595),
-  x = n(50493),
-  j = n(88562),
-  O = n(749589);
+  y = n(356778),
+  x = n(370595),
+  v = n(50493),
+  j = n(12740),
+  O = n(450355);
 
 function E(e) {
   var t, n;
@@ -33,7 +33,7 @@ function E(e) {
     location: N,
     className: I,
     onNavigate: P
-  } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null !== (t = null == Z ? void 0 : Z.details.additionalSearchQuery) && void 0 !== t ? t : {}), R = (0, v.z0)(l, E, {
+  } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, y.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
   }), M = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), k = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
@@ -41,20 +41,18 @@ function E(e) {
     let e = null == Z ? void 0 : Z.details.scrollOffset;
     if (null != e) {
       var t;
-      null === (t = S.current) || void 0 === t || t.scrollTo({
+      null == (t = S.current) || t.scrollTo({
         to: e,
         animate: !1
       })
     }
   });
   let L = i.useCallback(e => {
-      if (null == Z) return;
-      let t = e.target.scrollTop;
-      T.current = t, (0, C.r)(E, l, Z.baseChannelId, {
-        modViewPanel: x.k.MESSAGE_HISTORY,
+      null != Z && (T.current = e.target.scrollTop, (0, C.r)(E, l, Z.baseChannelId, {
+        modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: A,
         scrollOffset: T.current
-      })
+      }))
     }, [E, l, Z, A]),
     D = (0, a.throttle)(L, 300),
     W = i.useCallback(e => {
@@ -90,12 +88,12 @@ function E(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
       w(r), (0, C.r)(E, l, Z.baseChannelId, {
-        modViewPanel: x.k.MESSAGE_HISTORY,
+        modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: T.current
       })
     }, [E, l, Z, A]),
-    U = null !== (n = null == A ? void 0 : A.offset) && void 0 !== n ? n : 0,
+    U = null != (n = null == A ? void 0 : A.offset) ? n : 0,
     B = (0, s.e7)([p.Z], () => {
       if (null == R.result) return [];
       let e = R.result.messages,
@@ -126,12 +124,12 @@ function E(e) {
         showBlockedResults: !1,
         showNoResultsAlt: !1
       } : {
-        documentsIndexed: null !== (e = R.result.documents_indexed) && void 0 !== e ? e : 0,
+        documentsIndexed: null != (e = R.result.documents_indexed) ? e : 0,
         isSearching: !1,
-        isIndexing: null !== (t = R.result.doing_deep_historical_index) && void 0 !== t && t,
-        isHistoricalIndexing: null !== (n = R.result.doing_deep_historical_index) && void 0 !== n && n,
+        isIndexing: null != (t = R.result.doing_deep_historical_index) && t,
+        isHistoricalIndexing: null != (n = R.result.doing_deep_historical_index) && n,
         offset: U,
-        totalResults: null !== (r = R.result.total_results) && void 0 !== r ? r : 0,
+        totalResults: null != (r = R.result.total_results) ? r : 0,
         hasError: !1,
         showBlockedResults: !1,
         showNoResultsAlt: !1
@@ -139,7 +137,7 @@ function E(e) {
     }, [R.result, U]);
   return null == M || null == k || null == H ? null : (0, r.jsxs)("div", {
     className: o()(j.container, I),
-    children: [(0, r.jsx)(y.Z, {
+    children: [(0, r.jsx)(x.Z, {
       guildId: E,
       userId: l,
       onNavigate: P

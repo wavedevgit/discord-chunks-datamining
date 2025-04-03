@@ -1,13 +1,13 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   default: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(933557),
-  l = n(388032),
-  a = n(641355);
+  l = n(933557),
+  o = n(388032),
+  a = n(331884);
 
 function s(e) {
   var t, n, {
@@ -19,18 +19,18 @@ function s(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["channel", "category"]);
-  let d = (0, o.ZP)(s, !0),
-    p = (0, o.ZP)(c);
+  let d = (0, l.ZP)(s, !0),
+    p = (0, l.ZP)(c);
   return (0, r.jsx)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -49,16 +49,16 @@ function s(e) {
     }
     return e
   }({
-    header: l.NW.string(l.t.YWMtRU),
-    confirmText: l.NW.string(l.t.eW8Gy8),
-    cancelText: l.NW.string(l.t.s4uM3d),
+    header: o.NW.string(o.t.YWMtRU),
+    confirmText: o.NW.string(o.t.eW8Gy8),
+    cancelText: o.NW.string(o.t.s4uM3d),
     confirmButtonColor: i.zxk.Colors.BRAND
   }, u), n = n = {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
       className: a.message,
       selectable: !1,
-      children: l.NW.format(l.t["iKW+jY"], {
+      children: o.NW.format(o.t["iKW+jY"], {
         channelName: d,
         categoryName: p
       })

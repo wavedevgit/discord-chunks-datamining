@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => P
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(100527),
   d = n(906732),
   u = n(518950),
@@ -23,10 +23,10 @@ var r = n(200651),
   E = n(938736),
   j = n(981631),
   O = n(388032),
-  C = n(161872),
-  v = n(691766);
+  C = n(357885),
+  S = n(691766);
 
-function S(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -66,25 +66,25 @@ let I = e => {
       eventHandlers: s
     } = (0, u.Z)({
       user: t,
-      size: l.EFr.SIZE_32,
+      size: o.EFr.SIZE_32,
       animateOnHover: !0
-    }), a = null != t, o = a ? (0, r.jsx)(l.qEK, S({
+    }), a = null != t, l = a ? (0, r.jsx)(o.qEK, v({
       src: i,
       "aria-label": t.username,
-      size: l.EFr.SIZE_32
-    }, s)) : (0, r.jsx)(l.X6q, {
+      size: o.EFr.SIZE_32
+    }, s)) : (0, r.jsx)(o.X6q, {
       variant: "heading-md/semibold",
       className: C.userAvatarProgressBarUnitNum,
       children: n
     });
-    return (0, r.jsx)(l.ua7, {
+    return (0, r.jsx)(o.ua7, {
       text: O.NW.string(O.t.UnKHdn),
       shouldShow: !a,
       tooltipContentClassName: C.unsentTooltipContent,
-      children: e => (0, r.jsx)("div", T(S({
+      children: e => (0, r.jsx)("div", T(v({
         className: C.userAvatarProgressBarUnit
       }, e), {
-        children: o
+        children: l
       }))
     })
   },
@@ -132,7 +132,7 @@ let I = e => {
   P = e => {
     let {
       isInSettings: t = !1
-    } = e, s = (0, o.e7)([f.Z], () => f.Z.getRecipientStatus()), {
+    } = e, s = (0, l.e7)([f.Z], () => f.Z.getRecipientStatus()), {
       referralSentUsers: u
     } = (0, N.G)(), I = i.useMemo(() => u.map(e => new m.Z(e)), [u]), {
       subscriberHomeVariant: y
@@ -166,7 +166,7 @@ let I = e => {
           })
         }), (0, r.jsxs)("div", {
           className: C.expandedProgressBarContent,
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(o.X6q, {
             variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
             className: C.expandedProgressBarHeader,
             children: (0, E.$s)({
@@ -174,7 +174,7 @@ let I = e => {
             })
           }), (0, r.jsx)(A, {
             userRecords: I
-          }), (0, r.jsx)(l.Text, {
+          }), (0, r.jsx)(o.Text, {
             variant: t ? "text-sm/normal" : "text-lg/medium",
             children: (0, E.Hg)({
               helpdeskArticle: Z,
@@ -185,24 +185,24 @@ let I = e => {
               [C.expandedProgressBarButtonContainerLayout]: !t
             }),
             children: [!t && !P && (0, r.jsx)(x.Z, {
-              color: l.Ttl.CUSTOM,
+              color: o.Ttl.CUSTOM,
               buttonText: O.NW.string(O.t.Ve9Ge3),
               className: a()(C.expandedProgressBarGiftingCTA, {
                 [C.expandedProgressBarGiftingCTALayout]: !t
               }),
-              look: l.iLD.OUTLINED,
+              look: o.iLD.OUTLINED,
               isGift: !0
-            }), (0, r.jsx)(l.gtL, {
+            }), (0, r.jsx)(o.gtL, {
               className: C.expandedProgressBarSelectFriendsCTA,
-              color: l.Ttl.CUSTOM,
+              color: o.Ttl.CUSTOM,
               onClick: () => {
                 g.default.track(j.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
                   location_stack: w
-                }), (0, l.ZDy)(async () => {
+                }), (0, o.ZDy)(async () => {
                   let {
                     default: e
                   } = await n.e("47435").then(n.bind(n, 204387));
-                  return t => (0, r.jsx)(e, T(S({}, t), {
+                  return t => (0, r.jsx)(e, T(v({}, t), {
                     sourceAnalyticsLocations: w
                   }))
                 })
@@ -211,7 +211,7 @@ let I = e => {
               children: (0, r.jsxs)("div", {
                 className: C.expandedProgressBarSelectFriendsCTAInner,
                 children: [(0, r.jsx)("img", {
-                  src: v,
+                  src: S,
                   alt: "",
                   className: C.expandedProgressBarSelectFriendsIcon
                 }), D ? O.NW.string(O.t.SY9tyM) : O.NW.string(O.t.Lm2nFR)]

@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 r.d(t, {
   al: () => N,
-  ck: () => C
+  ck: () => j
 }), r(47120), r(653041), r(571269), r(298267);
 var n = r(200651),
   a = r(192379),
@@ -264,7 +264,7 @@ let N = {
     videoEntropy: D
   },
   E = e => e,
-  j = e => {
+  P = e => {
     let [t] = a.useState([]);
     return t.push({
       value: e.value,
@@ -276,26 +276,26 @@ let N = {
     })
   };
 
-function C(e) {
+function j(e) {
   var t, r, a;
   let {
     label: i,
     value: s,
     section: u
-  } = e, m = null !== (r = b[i]) && void 0 !== r ? r : E, p = l.Pz[i] && (Array.isArray(s) && s.length > 0 && "number" == typeof s[0].value ? (0, n.jsx)(o.Z, {
+  } = e, m = null != (r = b[i]) ? r : E, p = l.Pz[i] && (Array.isArray(s) && s.length > 0 && "number" == typeof s[0].value ? (0, n.jsx)(o.Z, {
     dataPoints: s,
     width: 300,
     height: 100
-  }) : "number" == typeof s ? (0, n.jsx)(j, {
+  }) : "number" == typeof s ? (0, n.jsx)(P, {
     value: s,
     width: 300,
     height: 100
-  }) : void 0), h = Array.isArray(s) ? null === (t = s.at(-1)) || void 0 === t ? void 0 : t.value : s;
+  }) : void 0), h = Array.isArray(s) ? null == (t = s.at(-1)) ? void 0 : t.value : s;
   return (0, n.jsx)(c.Z, {
     label: i,
     valueRendered: m(h),
     section: u,
     renderGraph: p,
-    children: null !== (a = d[i]) && void 0 !== a ? a : i
+    children: null != (a = d[i]) ? a : i
   })
 }

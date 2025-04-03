@@ -1,4 +1,4 @@
-/** Chunk was on 60246 **/
+/** Chunk was on 61007 **/
 n.d(t, {
   Z: () => E
 }), n(47120);
@@ -17,7 +17,7 @@ var r = n(200651),
   f = n(867581),
   N = n(675999),
   I = n(981631),
-  T = n(254952);
+  T = n(98078);
 
 function E(e) {
   let {
@@ -44,10 +44,7 @@ function E(e) {
     }, []),
     j = o.useCallback(() => b(N._m.JOIN_GUILD), [b]),
     P = o.useCallback(() => {
-      if (C === N._m.CUSTOMIZE_GUILD) {
-        b(N._m.CREATION_INTENT);
-        return
-      }
+      if (C === N._m.CUSTOMIZE_GUILD) return void b(N._m.CREATION_INTENT);
       b(N._m.GUILD_TEMPLATES), A(null)
     }, [C]),
     M = o.useCallback(e => {

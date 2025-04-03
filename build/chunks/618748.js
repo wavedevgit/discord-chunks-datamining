@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => W
@@ -22,8 +22,8 @@ var i = n(442837),
   x = n(584825),
   j = n(723047),
   N = n(303737),
-  v = n(568074),
-  _ = n(411667),
+  _ = n(568074),
+  v = n(411667),
   C = n(903773),
   O = n(822531),
   y = n(909656),
@@ -35,7 +35,7 @@ var i = n(442837),
   w = n(176505),
   R = n(829857),
   Z = n(388032),
-  D = n(887650);
+  D = n(173409);
 
 function A(e) {
   let {
@@ -86,7 +86,7 @@ function k(e) {
     refreshOnDepChange: !1
   }), i = n.find(e => {
     var n;
-    return e.id === (null == t ? void 0 : null === (n = t.team) || void 0 === n ? void 0 : n.id)
+    return e.id === (null == t || null == (n = t.team) ? void 0 : n.id)
   }), a = [R.C.ACTION_REQUIRED, R.C.BLOCKED, R.C.SUSPENDED];
   return (null == i ? void 0 : i.payout_account_status) != null && a.includes(null == i ? void 0 : i.payout_account_status) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.LZC, {
@@ -136,7 +136,7 @@ function L(e) {
     } = (0, S.dw)(),
     j = (0, b.f)(),
     C = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
-    I = (0, v.Z)(n.id),
+    I = (0, _.Z)(n.id),
     R = n.isOwner(C),
     W = () => {
       let e = p.Z.getRole(n.id, n.getEveryoneRoleId());
@@ -187,7 +187,7 @@ function L(e) {
       }), (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,
         children: Z.NW.string(Z.t.KyGv0t)
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(v.Z, {
         guild: n
       }), c && (0, r.jsx)(k, {
         application: l

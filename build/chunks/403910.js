@@ -9,6 +9,6 @@ let v = function(e, t) {
     var r;
     if (null == t) return null;
     let n = h.ZP.getDisambiguatedEmojiContext(e);
-    return null !== (r = n.getById(t)) && void 0 !== r ? r : n.getByName(t)
+    return null != (r = n.getById(t)) ? r : n.getByName(t)
   }, [e, t])
 }

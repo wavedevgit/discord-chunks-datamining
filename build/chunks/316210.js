@@ -11,7 +11,7 @@ var n = r(200651),
   l = r(918701),
   d = r(981631),
   m = r(388032),
-  u = r(502616),
+  u = r(698657),
   x = r(708901);
 let f = e => {
   switch (e) {
@@ -43,7 +43,7 @@ function g(e) {
       isTargetedDisclosure: null != j,
       gamePublisher: g.config.messages.gamePublisher,
       gameTitle: g.config.messages.gameTitle,
-      cosponsorName: null === (e = g.config.cosponsorMetadata) || void 0 === e ? void 0 : e.name
+      cosponsorName: null == (e = g.config.cosponsorMetadata) ? void 0 : e.name
     })
   }, [g, j]);
   return (0, n.jsxs)(a.Y0X, {

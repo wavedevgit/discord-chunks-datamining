@@ -1,13 +1,13 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  O: () => I
+  O: () => T
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(693789),
   a = n(481060),
-  o = n(37234),
-  l = n(100527),
+  l = n(37234),
+  o = n(100527),
   c = n(906732),
   d = n(335131),
   u = n(703656),
@@ -24,22 +24,21 @@ var r = n(200651),
   j = n(931928),
   O = n(450272),
   C = n(981631),
-  v = n(388032),
-  S = n(71541),
-  T = n(655464);
+  S = n(388032),
+  v = n(751318);
 
-function I() {
+function T() {
   let {
     enabled: e
   } = (0, h.W)({
     location: "revenue_storybook"
   });
   return (0, r.jsxs)("div", {
-    children: [e && (0, r.jsx)(A, {}), (0, r.jsx)(y, {}), (0, r.jsx)(P, {})]
+    children: [e && (0, r.jsx)(y, {}), (0, r.jsx)(I, {}), (0, r.jsx)(A, {})]
   })
 }
 
-function y() {
+function I() {
   let {
     openIntroToOrbsClaimedCoachmark: e
   } = (0, g.l)({
@@ -57,7 +56,7 @@ function y() {
     }
   }, {
     analyticsLocations: y
-  } = (0, c.ZP)(l.Z.PAYMENT_FLOW_TEST_PAGE);
+  } = (0, c.ZP)(o.Z.PAYMENT_FLOW_TEST_PAGE);
   return (0, r.jsxs)(O.$0, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/semibold",
@@ -65,7 +64,7 @@ function y() {
     }), (0, r.jsx)(O.E_, {
       label: "Balance Widget Menu",
       children: (0, r.jsx)(N.V9, {
-        ctaText: v.NW.string(v.t["J+vlIS"]),
+        ctaText: S.NW.string(S.t["J+vlIS"]),
         ctaOnClick: C.dG4,
         isCoachmarkEnabled: !1
       })
@@ -82,10 +81,10 @@ function y() {
         })
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, o.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
-            analyticsSource: l.Z.REVENUE_STORYBOOK_TEST_PAGE
+            analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), setTimeout(() => {
             (0, m.S6)()
           }, 500)
@@ -112,10 +111,10 @@ function y() {
         })]
       }), (0, r.jsx)(s.zx, {
         onClick: () => {
-          (0, o.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
+          (0, l.xf)(), (0, u.s1)().location.pathname.includes(C.Z5c.COLLECTIBLES_SHOP) || (0, d.mK)({
             openInLayer: !1,
             analyticsLocations: y,
-            analyticsSource: l.Z.REVENUE_STORYBOOK_TEST_PAGE
+            analyticsSource: o.Z.REVENUE_STORYBOOK_TEST_PAGE
           }), e({
             forceOpen: !0,
             delayMS: 200
@@ -152,14 +151,14 @@ function y() {
         },
         children: "Enter a number and click Set Balance to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: S.numberInput,
+        className: v.numberInput,
         value: t,
         onChange: e => n(e)
       }), (0, r.jsx)(s.zx, {
         onClick: () => h(t),
         children: "Set Balance"
       }), (0, r.jsx)("div", {
-        className: S.interactivePillContainer,
+        className: v.interactivePillContainer,
         children: (0, r.jsx)(x.A4, {
           balance: p,
           balanceWidgetMode: j,
@@ -172,7 +171,7 @@ function y() {
         },
         children: "Enter a number (loading time in milliseconds) and click Simulate Loading State to see the balance widget pill update:"
       }), (0, r.jsx)(a.FiK, {
-        className: S.numberInput,
+        className: v.numberInput,
         value: _,
         onChange: e => E(e)
       }), (0, r.jsx)(s.zx, {
@@ -183,7 +182,7 @@ function y() {
         },
         children: "Simulate Loading State"
       }), (0, r.jsx)("div", {
-        className: S.interactivePillContainer,
+        className: v.interactivePillContainer,
         children: (0, r.jsx)(x.A4, {
           balance: p,
           balanceWidgetMode: j,
@@ -193,15 +192,15 @@ function y() {
     }), (0, r.jsx)(O.E_, {
       label: "Balance Widget Card",
       children: (0, r.jsx)(b.L, {
-        ctaText: v.NW.string(v.t["H57f4+"]),
-        linkText: v.NW.string(v.t["7f4H7O"]),
+        ctaText: S.NW.string(S.t["H57f4+"]),
+        linkText: S.NW.string(S.t["7f4H7O"]),
         ctaOnClick: C.dG4
       })
     })]
   })
 }
 
-function A() {
+function y() {
   let [e, t] = i.useState("1144308439720394944");
   return (0, r.jsxs)(O.$0, {
     children: [(0, r.jsx)(a.X6q, {
@@ -243,7 +242,7 @@ function A() {
   })
 }
 
-function P() {
+function A() {
   let {
     resetOnboardingAnnouncementModal: e
   } = (0, p.Z)();
@@ -329,27 +328,16 @@ function P() {
       })]
     }), (0, r.jsxs)(O.E_, {
       label: "Onboarding Coachmark",
-      direction: "vertical",
+      direction: "horizontal",
       children: [(0, r.jsx)(j.ED, {
+        onClose: C.dG4
+      }), (0, r.jsx)(j.ED, {
         onClose: C.dG4,
-        renderTail: !1
-      }), (0, r.jsxs)("div", {
-        className: T.horizontalContainer,
-        children: [(0, r.jsx)(j.ED, {
-          onClose: C.dG4,
-          renderTail: !0
-        }), (0, r.jsx)(j.ED, {
-          onClose: C.dG4,
-          renderTail: !0,
-          invertCoachmark: !0
-        })]
+        invertCoachmark: !0
       })]
     }), (0, r.jsx)(O.E_, {
       label: "Balance Widget Coachmark",
-      children: (0, r.jsx)(E.E, {
-        ctaOnClick: C.dG4,
-        secondaryCtaOnClick: C.dG4
-      })
+      children: (0, r.jsx)(E.E, {})
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -14,13 +14,13 @@ var i = n(442837),
   d = n(974513),
   u = n(290511),
   m = n(388032),
-  g = n(114065);
+  g = n(974283);
 
 function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, v = p ? x.length : f.length, _ = N < u.md, C = v >= u.X, O = j.length - b.length, y = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, _ = p ? x.length : f.length, v = N < u.md, C = _ >= u.X, O = j.length - b.length, y = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,
@@ -30,7 +30,7 @@ function p(e) {
     className: g.icon,
     color: s.Z.colors.WHITE.css,
     secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css
-  }), E = [Math.min(u.X, v) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !_ && C ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
+  }), E = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !v && C ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -39,7 +39,7 @@ function p(e) {
         variant: "text-xs/bold",
         color: "text-brand",
         children: m.NW.format(m.t.kvroKC, {
-          count: v
+          count: _
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-xs/bold",
@@ -54,7 +54,7 @@ function p(e) {
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [_ ? I : y, (0, r.jsx)(a.Text, {
+      children: [v ? I : y, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.NW.format(m.t.k0COZW, {

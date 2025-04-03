@@ -10,23 +10,23 @@ var n = r(200651),
   c = r(570140),
   s = r(171246),
   u = r(509545),
-  d = r(55563),
-  p = r(551428),
+  p = r(55563),
+  d = r(551428),
   f = r(74538),
   b = r(937615),
   O = r(147496),
   y = r(519896),
   m = r(981631),
   j = r(388032);
-let g = (0, i.Kb)([d.Z, u.Z, p.Z], {
+let g = (0, i.Kb)([p.Z, u.Z, d.Z], {
   queryId: e => m.McO.APP_PREMIUM_BUTTON(e),
   get: e => {
     var t;
     if (null == e) return;
-    let r = d.Z.get(e),
-      n = null !== (t = u.Z.getForSKU(e)) && void 0 !== t ? t : [],
-      l = p.Z.getForSKU(e),
-      i = d.Z.getParentSKU(e);
+    let r = p.Z.get(e),
+      n = null != (t = u.Z.getForSKU(e)) ? t : [],
+      l = d.Z.getForSKU(e),
+      i = p.Z.getParentSKU(e);
     if (null != r && null != l && (null == r || r.type !== m.epS.SUBSCRIPTION || null != i)) return {
       parentSku: i,
       sku: r,
@@ -79,7 +79,7 @@ function h(e) {
         guildId: null
       })
     })
-  }, [null == i ? void 0 : i.applicationId, null == i ? void 0 : i.id, null == i ? void 0 : i.flags]), d = l.useCallback(() => {
+  }, [null == i ? void 0 : i.applicationId, null == i ? void 0 : i.id, null == i ? void 0 : i.flags]), p = l.useCallback(() => {
     if (null == i) return null;
     (0, a.h7j)(e => {
       let {
@@ -124,7 +124,7 @@ function h(e) {
         skuName: i.name,
         price: (0, b.T4)(i.price.amount, i.price.currency)
       }),
-      onClick: d
+      onClick: p
     }
   }
 }

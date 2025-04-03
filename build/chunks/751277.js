@@ -1,12 +1,12 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(512969),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(893607),
   s = n(601964),
   c = n(701190),
@@ -19,9 +19,9 @@ function f(e) {
   var t;
   let {
     isOnHubVerificationRoute: n
-  } = e, f = (0, i.LX)(null !== (t = window.location.pathname) && void 0 !== t ? t : "", {
+  } = e, f = (0, i.LX)(null != (t = window.location.pathname) ? t : "", {
     path: p.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(a.Hw.guildId(), ":inviteCode")
-  }), g = (0, o.e7)([c.Z], () => {
+  }), g = (0, l.e7)([c.Z], () => {
     if (null == f) return null;
     let {
       inviteCode: e
@@ -34,6 +34,6 @@ function f(e) {
   }) : (0, r.jsx)(d.Z, {
     tooltip: h.NW.string(h.t.rn9HIS),
     id: "guild-hub-button",
-    icon: l.aVH
+    icon: o.aVH
   }) : null
 }

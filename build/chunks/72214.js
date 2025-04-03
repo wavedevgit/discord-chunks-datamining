@@ -55,7 +55,7 @@ function p(e) {
     m({
       query: t,
       resultTypes: n
-    }), _(null !== (e = N.current) && void 0 !== e ? e : [])
+    }), _(null != (e = N.current) ? e : [])
   }, [m, j]), (0, i.D)();
   let E = (0, l.e7)([u.Z], () => u.Z.getFrequentlyWithoutFetchingLatest()),
     P = (0, l.e7)([s.Z], () => s.Z.isConnected()),

@@ -11,12 +11,12 @@ var l = r(120356),
   c = r(442550),
   s = r(435439),
   u = r(206295),
-  d = r(297781),
-  p = r(313201),
+  p = r(297781),
+  d = r(313201),
   f = r(231338),
   b = r(388032),
-  O = r(631040),
-  y = r(35484);
+  O = r(217440),
+  y = r(72378);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -56,7 +56,7 @@ function g(e) {
     clickableClassName: r,
     clickable: l,
     children: a
-  } = e, c = (0, p.Dt)();
+  } = e, c = (0, d.Dt)();
   if (null != l && "href" in l) {
     let {
       ariaDescription: e,
@@ -130,7 +130,7 @@ function v(e) {
     thumbnailClickable: x,
     providerIconProps: w,
     style: S = {}
-  } = e, C = (0, p.Dt)(), {
+  } = e, C = (0, d.Dt)(), {
     primaryColor: E,
     secondaryColor: N
   } = (0, u.Z)(j);
@@ -185,10 +185,10 @@ function v(e) {
               children: y
             })
           })]
-        }) : null, (0, n.jsx)(d.PZ, {
+        }) : null, (0, n.jsx)(p.PZ, {
           className: O.badges,
           entry: t,
-          location: d.Gt.EMBED
+          location: p.Gt.EMBED
         })]
       }), (0, n.jsx)("div", {
         className: O.headerIcons,

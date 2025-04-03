@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => Z
 });
@@ -19,9 +19,9 @@ var r = n(192379),
   b = n(607744),
   _ = n(375954),
   C = n(496675),
-  v = n(572004),
-  y = n(585483),
-  x = n(358085),
+  y = n(572004),
+  x = n(585483),
+  v = n(358085),
   j = n(709054),
   O = n(418476),
   E = n(901461),
@@ -50,7 +50,7 @@ let Z = function(e, t, n) {
         r && (S(k) || M.canDeleteOwnMessage(L)) && (n.preventDefault(), (0, I.$Z)(k, M, n));
         break;
       case "c":
-        ((0, x.isMac)() ? w : A) && v.wS && (n.preventDefault(), (0, v.JG)(M.content));
+        ((0, v.isMac)() ? w : A) && y.wS && (n.preventDefault(), (0, y.JG)(M.content));
         break;
       case "e":
         r && !k.isSystemDM() && (0, O.Z)(M, L) && (n.preventDefault(), (0, I.Hd)(k, M));
@@ -74,7 +74,7 @@ let Z = function(e, t, n) {
               isActiveChannelOrUnarchivableThread: (0, u.RG)(e)
             });
           return !r && n
-        }(k) && (n.preventDefault(), y.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, M.id, {
+        }(k) && (n.preventDefault(), x.S.dispatchKeyed(P.LPv.TOGGLE_REACTION_POPOUT, M.id, {
           emojiPicker: !0
         }));
         break;
@@ -102,7 +102,7 @@ let Z = function(e, t, n) {
         T && (n.preventDefault(), (0, I.B8)(k, M));
         break;
       case "escape":
-        m.Z.isEditing(k.id, M.id) ? i.Z.endEditMessage(k.id) : y.S.dispatch(P.CkL.TEXTAREA_FOCUS)
+        m.Z.isEditing(k.id, M.id) ? i.Z.endEditMessage(k.id) : x.S.dispatch(P.CkL.TEXTAREA_FOCUS)
     }
   }, [e, t])
 }

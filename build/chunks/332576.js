@@ -1,6 +1,6 @@
 /** Chunk was on 98783 **/
 n.d(t, {
-  Z: () => c
+  Z: () => d
 });
 var i = n(200651);
 n(192379);
@@ -10,9 +10,9 @@ var l = n(442837),
   o = n(358221),
   s = n(979651),
   u = n(981631),
-  d = n(388032);
+  c = n(388032);
 
-function c(e, t) {
+function d(e, t) {
   let n = (0, l.e7)([o.Z], () => e === o.Z.getSelectedParticipantId(t), [t, e]);
   return (0, l.e7)([o.Z, s.Z], () => {
     let n = s.Z.isInChannel(t, e) && s.Z.hasVideo(t),
@@ -21,7 +21,7 @@ function c(e, t) {
     return !n || l
   }, [t, e]) ? null : (0, i.jsx)(r.sNh, {
     id: "focus-video",
-    label: n ? d.NW.string(d.t.KJPKUV) : d.NW.string(d.t["77cRNz"]),
+    label: n ? c.NW.string(c.t.KJPKUV) : c.NW.string(c.t["77cRNz"]),
     action: () => a.Z.selectParticipant(t, n ? null : e)
   })
 }

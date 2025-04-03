@@ -1,7 +1,7 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => R,
-  r: () => P
+  r: () => I
 }), n(47120);
 var r, a = n(200651),
   i = n(192379),
@@ -18,9 +18,9 @@ var r, a = n(200651),
   f = n(124347),
   _ = n(283756),
   b = n(524444),
-  v = n(585483),
-  x = n(981631),
-  C = n(793677);
+  x = n(585483),
+  v = n(981631),
+  C = n(361183);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ function O() {
     return n
   }, n
 }
-let P = {
+let I = {
     SMALL: {
       width: 640,
       height: 360,
@@ -67,11 +67,11 @@ let P = {
       margin: 20
     }
   },
-  I = {
+  N = {
     width: 1920,
     height: 1080
   },
-  N = {
+  P = {
     width: 1280,
     height: 720
   },
@@ -105,11 +105,11 @@ let P = {
       onVolumeChange: f,
       onMute: _
     } = e;
-    if (i.type === x.s9s.YOUTUBE_VIDEO) t = y({
-      url: (0, x.n8r)(i.youtubeVideoId)
-    }, I), n = y({
-      url: "".concat((0, x.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
-    }, N), r = p.pn.YOUTUBE;
+    if (i.type === v.s9s.YOUTUBE_VIDEO) t = y({
+      url: (0, v.n8r)(i.youtubeVideoId)
+    }, N), n = y({
+      url: "".concat((0, v.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
+    }, P), r = p.pn.YOUTUBE;
     else {
       let e = null != i.width ? i.width : 0,
         r = null != i.height ? i.height : 0;
@@ -124,7 +124,7 @@ let P = {
         height: r
       }
     }
-    let v = (0, a.jsx)(u.BC, {
+    let x = (0, a.jsx)(u.BC, {
       href: null,
       thumbnail: t,
       video: n,
@@ -145,10 +145,10 @@ let P = {
       renderImageComponent: E,
       renderLinkComponent: b.iT
     });
-    return m ? v : (0, a.jsx)(c.P3F, {
+    return m ? x : (0, a.jsx)(c.P3F, {
       className: C.itemImageWrapper,
       onClick: d,
-      children: v
+      children: x
     })
   },
   A = () => (0, a.jsx)("div", {
@@ -161,10 +161,10 @@ let P = {
   });
 class L extends(r = i.PureComponent) {
   componentDidMount() {
-    v.S.subscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.subscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
+    x.S.subscribe(v.CkL.CAROUSEL_PREV, this.manualPrevious), x.S.subscribe(v.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   componentWillUnmount() {
-    v.S.unsubscribe(x.CkL.CAROUSEL_PREV, this.manualPrevious), v.S.unsubscribe(x.CkL.CAROUSEL_NEXT, this.manualNext)
+    x.S.unsubscribe(v.CkL.CAROUSEL_PREV, this.manualPrevious), x.S.unsubscribe(v.CkL.CAROUSEL_NEXT, this.manualNext)
   }
   getStyle(e, t) {
     let n = t.interpolate({
@@ -231,7 +231,7 @@ class L extends(r = i.PureComponent) {
     })
   }
   getPaginationSrc(e) {
-    return e.type === x.s9s.YOUTUBE_VIDEO ? (0, x.n8r)(e.youtubeVideoId) : e.type === x.s9s.IMG ? e.src : e.type === x.s9s.VIDEO ? e.thumbnailSrc : null
+    return e.type === v.s9s.YOUTUBE_VIDEO ? (0, v.n8r)(e.youtubeVideoId) : e.type === v.s9s.IMG ? e.src : e.type === v.s9s.VIDEO ? e.thumbnailSrc : null
   }
   render() {
     let {
@@ -277,8 +277,8 @@ class L extends(r = i.PureComponent) {
     }), j(this, "getItemSize", () => {
       let {
         width: e
-      } = this.props, t = P.MEDIUM;
-      return null != e && e < t.width && (t = P.SMALL), t
+      } = this.props, t = I.MEDIUM;
+      return null != e && e < t.width && (t = I.SMALL), t
     }), j(this, "setItem", (e, t) => {
       let {
         props: {
@@ -353,7 +353,7 @@ class L extends(r = i.PureComponent) {
         style: null != n ? this.getStyle(t, n) : null,
         onMouseEnter: c ? null : () => this.handleEdgeItemMouseEnter(t),
         onMouseLeave: c ? null : this.handleEdgeItemMouseLeave,
-        children: e.type === x.s9s.VIDEO || e.type === x.s9s.YOUTUBE_VIDEO ? (0, a.jsx)(T, {
+        children: e.type === v.s9s.VIDEO || e.type === v.s9s.YOUTUBE_VIDEO ? (0, a.jsx)(T, {
           item: e,
           size: this.getItemSize(),
           onPlay: this.handlePlay,
@@ -377,7 +377,7 @@ class L extends(r = i.PureComponent) {
           className: C.storePaginationImg,
           src: this.getPaginationSrc(e),
           draggable: !1
-        }), e.type === x.s9s.YOUTUBE_VIDEO || e.type === x.s9s.VIDEO ? (0, a.jsx)(A, {}) : null, r ? (0, a.jsx)("div", {
+        }), e.type === v.s9s.YOUTUBE_VIDEO || e.type === v.s9s.VIDEO ? (0, a.jsx)(A, {}) : null, r ? (0, a.jsx)("div", {
           className: C.overlappingBorder
         }) : null]
       }, "page-".concat(t))

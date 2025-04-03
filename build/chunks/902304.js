@@ -38,7 +38,7 @@ let T = new c.Z("GameConsoleManager"),
   A = 6e4,
   C = 18e4;
 async function R(e) {
-  let t = f.Z.getChannelId();
+  let t = f.ZP.getChannelId();
   i()(null == t, "Syncing to remote while in voice!"), e.selfMute !== d.Z.isSelfMute() && await s.Z.toggleSelfMute({
     syncRemote: !1
   }), e.selfDeaf !== d.Z.isSelfDeaf() && s.Z.toggleSelfDeaf({

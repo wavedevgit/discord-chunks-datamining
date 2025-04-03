@@ -13,7 +13,7 @@ var s = r(200651),
   x = r(69580),
   u = r(424071),
   h = r(388032),
-  N = r(363234);
+  N = r(475286);
 let m = new d.Z("TwoWayLinkDiscordConsentWeb");
 
 function C(e) {
@@ -38,7 +38,7 @@ function C(e) {
       r = await c.Z.completeTwoWayLink(a, t, l, n)
     } catch (e) {
       var o;
-      m.error("".concat(a, " link error:"), e), s = null === (o = e.body) || void 0 === o ? void 0 : o.code
+      m.error("".concat(a, " link error:"), e), s = null == (o = e.body) ? void 0 : o.code
     }
     null != r ? C() : j(s)
   }, [a, d, C, j]), {

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => _
 }), n(627341), n(47120);
@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(834129),
   h = n(981631),
   f = n(388032),
-  m = n(577178),
-  g = n(649547);
+  m = n(758010),
+  g = n(30804);
 
 function b(e) {
   let {
@@ -74,17 +74,17 @@ let _ = i.memo(function(e) {
     collapsedReason: c
   } = e, {
     hasJumpTarget: p = !1
-  } = n, [f, _] = i.useState(p), C = i.useCallback(() => _(e => !e), []), v = n.hasUnread ? n.content.length - 1 : n.content.length;
+  } = n, [f, _] = i.useState(p), C = i.useCallback(() => _(e => !e), []), y = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
     className: o()({
       [g.groupStart]: !0,
       [m.expanded]: f
     }),
-    children: [n.hasUnread && (!f || (null === (t = n.content[0]) || void 0 === t ? void 0 : t.type) === h.ys_.DIVIDER) ? (0, r.jsx)(d.Z, {
+    children: [n.hasUnread && (!f || (null == (t = n.content[0]) ? void 0 : t.type) === h.ys_.DIVIDER) ? (0, r.jsx)(d.Z, {
       isUnread: !0,
       id: s
     }, "divider") : null, (0, r.jsx)(b, {
-      count: v,
+      count: y,
       compact: a,
       expanded: f,
       onClick: C,
@@ -92,7 +92,7 @@ let _ = i.memo(function(e) {
     }, "collapsed-message-item"), f ? n.content.map((e, t) => {
       if (e.type === h.ys_.DIVIDER && t > 0) {
         var i, o;
-        let e = null !== (o = null === (i = n.content[t + 1]) || void 0 === i ? void 0 : i.isGroupStart) && void 0 !== o && o;
+        let e = null != (o = null == (i = n.content[t + 1]) ? void 0 : i.isGroupStart) && o;
         return (0, r.jsx)(d.Z, {
           isUnread: !0,
           isBeforeGroup: e,

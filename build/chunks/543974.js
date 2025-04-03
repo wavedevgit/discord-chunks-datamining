@@ -5,17 +5,17 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(512722),
-  o = n.n(a),
-  l = n(990547),
-  s = n(442837),
+  l = n.n(a),
+  s = n(990547),
+  o = n(442837),
   c = n(481060),
   d = n(668781),
   m = n(494620),
   u = n(961842),
   f = n(254238),
   h = n(258609),
-  v = n(388032),
-  p = n(829374),
+  p = n(388032),
+  v = n(285990),
   j = n(505913);
 
 function x(e) {
@@ -24,9 +24,9 @@ function x(e) {
     subText: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.deviceItemName,
+    className: v.deviceItemName,
     children: [(0, r.jsx)(u.Z, {
-      className: p.deviceItemIcon
+      className: v.deviceItemIcon
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/semibold",
@@ -43,8 +43,8 @@ function C(e) {
     onFinished: n,
     selectedDeviceId: i,
     onSelectDeviceId: a,
-    transferring: o
-  } = e, l = t.map(e => {
+    transferring: l
+  } = e, s = t.map(e => {
     let {
       id: t,
       name: n,
@@ -61,25 +61,25 @@ function C(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: p.modalHeaderContainer,
+      className: v.modalHeaderContainer,
       children: [(0, r.jsx)(c.X6q, {
-        className: p.modalHeader,
+        className: v.modalHeader,
         color: "header-primary",
         variant: "heading-xl/bold",
-        children: v.NW.string(v.t["+d9SHx"])
+        children: p.NW.string(p.t["+d9SHx"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: v.NW.string(v.t["5DtaWl"])
+        children: p.NW.string(p.t["5DtaWl"])
       })]
     }), (0, r.jsxs)(c.hzk, {
-      className: p.content,
+      className: v.content,
       children: [(0, r.jsx)(c.FXm, {
         radioPosition: "right",
-        radioItemClassName: p.deviceItem,
+        radioItemClassName: v.deviceItem,
         size: c.FXm.Sizes.NOT_SET,
         value: i,
-        options: l,
+        options: s,
         onChange: e => {
           let {
             value: t
@@ -87,14 +87,14 @@ function C(e) {
           return a(t)
         }
       }), (0, r.jsx)(m.Z, {
-        children: v.NW.string(v.t.dI4HFh)
+        children: p.NW.string(p.t.dI4HFh)
       })]
     }), (0, r.jsx)(c.mzw, {
       children: (0, r.jsx)(c.zxk, {
         disabled: null == i,
-        submitting: o,
+        submitting: l,
         onClick: n,
-        children: v.NW.string(v.t.FJR4bG)
+        children: p.NW.string(p.t.FJR4bG)
       })
     })]
   })
@@ -104,19 +104,19 @@ function g() {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: p.modalHeaderContainer,
+      className: v.modalHeaderContainer,
       children: [(0, r.jsx)(c.X6q, {
-        className: p.modalHeader,
+        className: v.modalHeader,
         color: "header-primary",
         variant: "heading-xl/bold",
-        children: v.NW.string(v.t.OkJf1d)
+        children: p.NW.string(p.t.OkJf1d)
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: v.NW.string(v.t["of/l5e"])
+        children: p.NW.string(p.t["of/l5e"])
       })]
     }), (0, r.jsx)(c.hzk, {
-      className: p.emptyArt,
+      className: v.emptyArt,
       children: (0, r.jsx)("img", {
         src: j,
         width: "189",
@@ -134,18 +134,18 @@ function b(e) {
       transitionState: m,
       onClose: u
     } = e,
-    j = (0, s.e7)([h.Z], () => h.Z.getDevicesForPlatform(a), [a]),
-    x = (0, s.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(a)),
+    j = (0, o.e7)([h.Z], () => h.Z.getDevicesForPlatform(a), [a]),
+    x = (0, o.e7)([h.Z], () => h.Z.getLastSelectedDeviceByPlatform(a)),
     b = i.useMemo(() => Object.values(j), [j]),
-    y = (0, s.e7)([h.Z], () => h.Z.getFetchingDevices(a)),
-    O = (0, s.e7)([h.Z], () => {
+    y = (0, o.e7)([h.Z], () => h.Z.getFetchingDevices(a)),
+    O = (0, o.e7)([h.Z], () => {
       var e;
-      return null === (e = h.Z.getAwaitingRemoteSessionInfo()) || void 0 === e ? void 0 : e.deviceId
+      return null == (e = h.Z.getAwaitingRemoteSessionInfo()) ? void 0 : e.deviceId
     }),
     [N, _] = i.useState(!1),
     [I, w] = i.useState(() => {
       var e, t;
-      return null !== (t = null === (e = j[null != O ? O : ""]) || void 0 === e ? void 0 : e.id) && void 0 !== t ? t : null
+      return null != (t = null == (e = j[null != O ? O : ""]) ? void 0 : e.id) ? t : null
     });
   i.useEffect(() => {
     f.LO(a)
@@ -154,20 +154,20 @@ function b(e) {
   }, [b, x]);
   let S = async () => {
     let e = j[null != I ? I : ""];
-    o()(null != e, "Cannot transfer without selected device");
+    l()(null != e, "Cannot transfer without selected device");
     try {
       _(!0), await f.sh(a, e.id, n), u()
     } catch (t) {
       _(!1), d.Z.show({
-        title: v.NW.string(v.t["QL1y9/"]),
-        body: v.NW.formatToPlainString(v.t["6ZyNHx"], {
+        title: p.NW.string(p.t["QL1y9/"]),
+        body: p.NW.formatToPlainString(p.t["6ZyNHx"], {
           deviceName: e.name
         })
       })
     }
   };
   return t = y ? (0, r.jsx)("div", {
-    className: p.spinnerContainer,
+    className: v.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {})
   }) : 0 === b.length ? (0, r.jsx)(g, {}) : (0, r.jsx)(C, {
     devices: b,
@@ -179,13 +179,13 @@ function b(e) {
     }
   }), (0, r.jsxs)(c.Y0X, {
     size: c.CgR.DYNAMIC,
-    className: p.modalRoot,
+    className: v.modalRoot,
     transitionState: m,
     impression: {
-      impressionName: l.ImpressionNames.GAME_CONSOLE_DEVICE_LIST
+      impressionName: s.ImpressionNames.GAME_CONSOLE_DEVICE_LIST
     },
     children: [t, (0, r.jsx)(c.olH, {
-      className: p.closeButton,
+      className: v.closeButton,
       onClick: u
     })]
   })

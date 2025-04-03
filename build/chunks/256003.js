@@ -43,7 +43,7 @@ let s = (0, l.F)((e, t) => ({
       var l;
       let {
         selectedUserIds: s
-      } = t(), c = new Set([...null !== (l = s[n]) && void 0 !== l ? l : new Set, ...r]);
+      } = t(), c = new Set([...null != (l = s[n]) ? l : new Set, ...r]);
       (0, o.j)(() => {
         e({
           selectedUserIds: i(a({}, s), {
@@ -85,7 +85,7 @@ function u(e) {
   return s(t => {
     var n;
     return {
-      selectedUserIds: null !== (n = t.selectedUserIds[e]) && void 0 !== n ? n : c,
+      selectedUserIds: null != (n = t.selectedUserIds[e]) ? n : c,
       addUsers: n => {
         t.addUsers(e, n)
       },

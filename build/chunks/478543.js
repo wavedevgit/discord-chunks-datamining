@@ -109,7 +109,7 @@ function S(e) {
   } = o.targetBuildOverride, v = null != g ? g : b;
   l()(null != v, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(v, i) ? (n = E.NW.string(E.t.tX4xrq), t = s, r = c.zxk.Colors.RED) : (n = E.NW.string(E.t.nOunHB), t = a, r = c.zxk.Colors.GREEN);
   let O = () => {
-    d.Z.isConnected() ? u.Z.show({
+    d.ZP.isConnected() ? u.Z.show({
       title: E.NW.string(E.t.tiu1l5),
       body: E.NW.string(E.t["zK+lqa"]),
       onConfirm: t,

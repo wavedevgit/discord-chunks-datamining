@@ -61,8 +61,8 @@ function h(e) {
       } = e;
       c && (0, s.Kw)(p.v.VOICE_CALL_FEEDBACK), null != r && ((0, u.Z)(d.rMx.CALL_REPORT_PROBLEM, {
         rating: r,
-        reasonCode: null !== (t = null == l ? void 0 : l.code) && void 0 !== t ? t : null,
-        reasonDescription: null !== (i = null == l ? void 0 : l.value) && void 0 !== i ? i : null,
+        reasonCode: null != (t = null == l ? void 0 : l.code) ? t : null,
+        reasonDescription: null != (i = null == l ? void 0 : l.value) ? i : null,
         feedback: b,
         analyticsData: f
       }), null != l && (0, a.ZDy)(async () => {

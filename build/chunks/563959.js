@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   P: () => _,
   e: () => b
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(739566),
-  l = n(942951),
+  l = n(739566),
+  o = n(942951),
   s = n(834129),
   c = n(184301),
   u = n(347475),
@@ -48,8 +48,8 @@ function h(e, t) {
 }
 
 function g(e, t) {
-  return i.useCallback(n => (i, o) => {
-    let l = d.ZP.getApplicationIconURL({
+  return i.useCallback(n => (i, l) => {
+    let o = d.ZP.getApplicationIconURL({
         id: n.id,
         icon: n.icon,
         bot: n.bot,
@@ -60,7 +60,7 @@ function g(e, t) {
       } = n;
     return null == s ? i : (0, r.jsx)(a.yRy, {
       position: "right",
-      preload: () => (0, c.Z)(s.id, l, {
+      preload: () => (0, c.Z)(s.id, o, {
         guildId: e.guild_id,
         channelId: e.id
       }),
@@ -74,7 +74,7 @@ function g(e, t) {
       children: e => (0, r.jsx)(a.eee, h(f({}, e), {
         children: i
       }))
-    }, o)
+    }, l)
   }, [e, t.id])
 }
 
@@ -83,7 +83,7 @@ function _(e) {
     message: t,
     channel: i,
     compact: a
-  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
+  } = e, c = (0, l.ZP)(t), u = t.application, d = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,
@@ -107,7 +107,7 @@ function b(e) {
     message: t,
     channel: i,
     compact: a
-  } = e, c = (0, o.ZP)(t), u = t.application, d = (0, l.l)({
+  } = e, c = (0, l.ZP)(t), u = t.application, d = (0, o.l)({
     user: t.author,
     channelId: i.id,
     guildId: i.guild_id,

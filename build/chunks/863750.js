@@ -32,13 +32,13 @@ class o extends(i = s.ZP.DeviceSettingsStore) {
   initialize(e) {
     for (var t in a) {
       var n, i;
-      let s = null !== (i = null == e ? void 0 : null === (n = e.toggleStates) || void 0 === n ? void 0 : n[t]) && void 0 !== i && i;
+      let s = null != (i = null == e || null == (n = e.toggleStates) ? void 0 : n[t]) && i;
       d[t] = s
     }
   }
   get(e) {
     var t;
-    return null !== (t = d[e]) && void 0 !== t && t
+    return null != (t = d[e]) && t
   }
   set(e, t) {
     return d[e] = t, t

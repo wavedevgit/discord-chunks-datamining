@@ -10,15 +10,15 @@ function s(e) {
     onInterval: n,
     interval: s,
     onIntervalSet: o,
-    onIntervalCleared: i
+    onIntervalCleared: a
   } = e;
   (0, r.useEffect)(() => {
     if (!t) {
       null == o || o();
       let e = setInterval(n, s);
       return () => {
-        null == i || i(), clearInterval(e)
+        null == a || a(), clearInterval(e)
       }
     }
-  }, [s, t, n, i, o])
+  }, [s, t, n, a, o])
 }

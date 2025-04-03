@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => x
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(906732),
+  l = n(481060),
+  o = n(906732),
   c = n(642619),
   d = n(626135),
   u = n(74538),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(981631),
   f = n(474936),
   b = n(388032),
-  N = n(314634);
+  N = n(482470);
 
 function x(e) {
   let {
@@ -30,9 +30,9 @@ function x(e) {
     showBorder: j = !1,
     isTryItOutFlow: O = !1,
     initialSelectedEffectId: C
-  } = e, v = (0, m.Kg)(t, n), S = u.ZP.canUsePremiumProfileCustomization(t), {
+  } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
-  } = (0, l.ZP)(), {
+  } = (0, o.ZP)(), {
     pendingProfileEffectId: I,
     errors: y
   } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
@@ -41,13 +41,13 @@ function x(e) {
     guild: n
   }), [T, C, n]);
   i.useEffect(() => {
-    S && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
+    v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
       location_stack: T
     })
-  }, [S, T]);
+  }, [v, T]);
   let P = null != n,
-    R = E ? o.gtL : o.zxk;
+    R = E ? l.gtL : l.zxk;
   return (0, r.jsx)(g.Z, {
     forcedDivider: _,
     borderType: p.Y.PREMIUM,
@@ -59,19 +59,19 @@ function x(e) {
     children: (0, r.jsxs)("div", {
       className: N.buttonsContainer,
       children: [(0, r.jsx)(R, {
-        size: o.zxk.Sizes.SMALL,
+        size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
           [N.buttonHighlighted]: E
         }),
         children: b.NW.string(b.t["0nEVoK"])
-      }), (O || void 0 !== I ? null != I : null != v) && (0, r.jsx)(o.zxk, {
+      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
         className: N.removeButton,
-        color: o.zxk.Colors.PRIMARY,
-        look: o.zxk.Looks.LINK,
-        size: o.zxk.Sizes.SMALL,
+        color: l.zxk.Colors.PRIMARY,
+        look: l.zxk.Looks.LINK,
+        size: l.zxk.Sizes.SMALL,
         onClick: function() {
-          (0, m.s6)(null, v, null == n ? void 0 : n.id)
+          (0, m.s6)(null, S, null == n ? void 0 : n.id)
         },
         children: P ? b.NW.string(b.t.GJ3Fcn) : b.NW.string(b.t["Ld+f5e"])
       })]

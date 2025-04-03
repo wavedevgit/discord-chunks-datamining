@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(789020);
@@ -42,9 +42,9 @@ let C = [{
     sends: 10,
     viewTime: 30 * d.Z.Millis.MINUTE
   }],
-  v = 5 * C[C.length - 1].viewTime,
-  y = d.Z.Millis.WEEK,
-  x = {
+  y = 5 * C[C.length - 1].viewTime,
+  x = d.Z.Millis.WEEK,
+  v = {
     channels: {}
   },
   j = new Set,
@@ -55,7 +55,7 @@ let C = [{
 function I() {
   if (null == O || !Z(O)) return !1;
   let e = S(O);
-  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > v) return !1;
+  if (e.lastActionTime > Date.now() - d.Z.Millis.DAY && e.viewDuration > y) return !1;
   let t = Date.now();
   e.lastActionTime = t, e.viewDuration += t - E, E = t
 }
@@ -67,11 +67,11 @@ function P() {
 }
 
 function S(e) {
-  return e in x.channels || (x.channels[e] = {
+  return e in v.channels || (v.channels[e] = {
     lastActionTime: 0,
     viewDuration: 0,
     numSends: 0
-  }), x.channels[e]
+  }), v.channels[e]
 }
 
 function Z(e) {
@@ -89,14 +89,14 @@ function T(e, t) {
 }
 class A extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (x.channels = e.channels), this.syncWith([u.ZP], P), this.waitFor(u.ZP, c.Z, a.Z)
+    null != e && (v.channels = e.channels), this.syncWith([u.ZP], P), this.waitFor(u.ZP, c.Z, a.Z)
   }
   getState() {
-    return x
+    return v
   }
   getLastActionTime(e) {
     var t, n;
-    return null !== (n = null === (t = x.channels[e]) || void 0 === t ? void 0 : t.lastActionTime) && void 0 !== n ? n : 0
+    return null != (n = null == (t = v.channels[e]) ? void 0 : t.lastActionTime) ? n : 0
   }
   maybeAutoUpgradeChannel(e) {
     if (!Z(e)) return !1;
@@ -104,14 +104,14 @@ class A extends(r = i.ZP.PersistedStore) {
     return null != t && null != t.guild_id && !! function(e) {
       var t;
       let n = s.Z.getGuild(e.guild_id),
-        r = null !== (t = null == n ? void 0 : n.joinedAt) && void 0 !== t ? t : new Date,
+        r = null != (t = null == n ? void 0 : n.joinedAt) ? t : new Date,
         i = Math.min(h.default.age(e.id), Date.now() - r.getTime()),
-        l = x.channels[e.id];
-      if (null == l || l.lastActionTime < Date.now() - y) return !1;
+        l = v.channels[e.id];
+      if (null == l || l.lastActionTime < Date.now() - x) return !1;
       for (let e of C)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
       return !1
-    }(t) && (delete x.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
+    }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
   }
 }
 _(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSettingNoticeStore2");
@@ -122,17 +122,17 @@ let w = new A(l.Z, {
     },
     CONNECTION_OPEN: function() {
       O = c.Z.getChannelId(), E = Date.now(), P();
-      let e = Date.now() - y;
-      h.default.forEach(x.channels, (t, n) => {
+      let e = Date.now() - x;
+      h.default.forEach(v.channels, (t, n) => {
         let {
           lastActionTime: r
         } = t;
-        r < e && delete x.channels[n]
+        r < e && delete v.channels[n]
       })
     },
     MESSAGE_CREATE: function(e) {
       var t;
-      if (e.optimistic || e.isPushNotification || (null === (t = e.message.author) || void 0 === t ? void 0 : t.id) !== o.default.getId() || !Z(e.channelId)) return !1;
+      if (e.optimistic || e.isPushNotification || (null == (t = e.message.author) ? void 0 : t.id) !== o.default.getId() || !Z(e.channelId)) return !1;
       let n = S(e.channelId);
       n.lastActionTime = Date.now(), n.numSends++
     }

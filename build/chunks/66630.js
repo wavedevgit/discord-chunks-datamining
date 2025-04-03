@@ -4,8 +4,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   o = n(442837),
   s = n(481060),
   u = n(596454),
@@ -18,15 +18,15 @@ var r = n(200651),
   b = n(626135),
   j = n(368326),
   x = n(720449),
-  v = n(684269),
-  S = n(429467),
-  g = n(676035),
+  S = n(684269),
+  g = n(429467),
+  v = n(676035),
   O = n(926563),
   _ = n(875425),
   y = n(981631),
   N = n(185923),
   C = n(388032),
-  w = n(667333);
+  w = n(782628);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ let k = [_.HO.ADD_STATUS, _.HO.WHATS_ON_YOUR_MIND];
 function E(e) {
   var t, n;
   let {
-    transitionState: i,
+    transitionState: a,
     onClose: E,
     sourceAnalyticsContext: T,
     sourceAnalyticsLocations: D,
@@ -73,8 +73,8 @@ function E(e) {
     location: "CustomStatusModalWithPreview"
   }), A = (0, o.e7)([f.default], () => {
     var e;
-    return null !== (e = f.default.getCurrentUser()) && void 0 !== e ? e : null
-  }), z = (0, g.a)(), [M, R] = l.useState(null !== (t = null == z ? void 0 : z.state) && void 0 !== t ? t : ""), [W, L] = l.useState(null !== (n = null == z ? void 0 : z.emoji) && void 0 !== n ? n : null), [U, H] = l.useState((0, v.Z)()), F = l.useRef(null), Y = l.useRef(null), K = l.useRef(null), [q, G] = l.useState(null != B ? B : null), V = M.length > 0 || null != W, X = Z && null != q ? q.label() : C.NW.string(C.t["xod36+"]), [$, Q] = l.useState(X), {
+    return null != (e = f.default.getCurrentUser()) ? e : null
+  }), z = (0, v.a)(), [M, R] = l.useState(null != (t = null == z ? void 0 : z.state) ? t : ""), [W, L] = l.useState(null != (n = null == z ? void 0 : z.emoji) ? n : null), [U, H] = l.useState((0, S.Z)()), F = l.useRef(null), Y = l.useRef(null), K = l.useRef(null), [q, G] = l.useState(null != B ? B : null), V = M.length > 0 || null != W, X = Z && null != q ? q.label() : C.NW.string(C.t["xod36+"]), [$, Q] = l.useState(X), {
     ref: J,
     width: ee
   } = (0, c.Z)(X);
@@ -97,7 +97,7 @@ function E(e) {
     })
   }, [D]), (0, d.ZP)(() => {
     var e, t;
-    null === (e = F.current) || void 0 === e || e.focus(), null === (t = F.current) || void 0 === t || t.setSelection(M.length, M.length)
+    null == (e = F.current) || e.focus(), null == (t = F.current) || t.setSelection(M.length, M.length)
   });
   let et = e => {
       null != e && L(null != e.id ? {
@@ -126,9 +126,9 @@ function E(e) {
       animated: !!W.animated
     }),
     el = Z ? C.NW.string(C.t.rp0aho) : C.NW.string(C.t.UcdRn5),
-    ei = "custom-status-placeholder-text";
+    ea = "custom-status-placeholder-text";
   return (0, r.jsxs)(s.Y0X, {
-    transitionState: i,
+    transitionState: a,
     children: [(0, r.jsxs)(s.xBx, {
       separator: !1,
       className: w.header,
@@ -152,7 +152,7 @@ function E(e) {
           previewText: M,
           previewEmoji: W,
           placeHolderText: X,
-          transitionState: i
+          transitionState: a
         })
       }), (0, r.jsxs)(s.hjN, {
         className: w.formGroup,
@@ -200,7 +200,7 @@ function E(e) {
             })
           }), (0, r.jsx)(s.Kx8, {
             autosize: !0,
-            "aria-describedby": ei,
+            "aria-describedby": ea,
             value: M,
             maxLength: _.s0,
             rows: 1,
@@ -215,7 +215,7 @@ function E(e) {
             className: w.input,
             inputRef: F
           }), (0, r.jsx)(s.nn4, {
-            id: ei,
+            id: ea,
             children: "".concat(C.NW.string(C.t.EVV6ub), ": ").concat(X)
           }), (M.length > 0 || null != W) && (0, r.jsx)("div", {
             className: w.clearButtonWrapper,
@@ -244,9 +244,9 @@ function E(e) {
         }), Z && (0, r.jsxs)(s.P3F, {
           ignoreKeyPress: V,
           "aria-disabled": V,
-          className: a()(w.needInspiration, V && w.needInspirationDisabled),
+          className: i()(w.needInspiration, V && w.needInspirationDisabled),
           onClick: V ? void 0 : () => {
-            let e = (0, S.Z)((null == q ? void 0 : q.value) != null ? new Set([q.value, ...k]) : void 0);
+            let e = (0, g.Z)((null == q ? void 0 : q.value) != null ? new Set([q.value, ...k]) : void 0);
             b.default.track(y.rMx.CUSTOM_STATUS_RANDOMIZER_CLICKED, {
               previous_prompt_type: null == q ? void 0 : q.value,
               new_prompt_type: null == e ? void 0 : e.value,

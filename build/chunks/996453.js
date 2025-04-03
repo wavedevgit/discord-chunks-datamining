@@ -15,7 +15,7 @@ var s = n(200651),
   m = n(458879),
   x = n(981631),
   C = n(388032),
-  h = n(579443);
+  h = n(685554);
 
 function g(e) {
   var t;
@@ -28,10 +28,10 @@ function g(e) {
     isSlideReady: j,
     hasFooter: N = !0,
     isCommunity: b = !1
-  } = e, [L, I] = i.useState(u.Z.getGuildNameSuggestion()), [y, v] = i.useState(null), [Z, S] = i.useState(!1), [T, E] = i.useState(null), k = !!(null === (t = d.default.getCurrentUser()) || void 0 === t ? void 0 : t.isStaff()), [O, B] = i.useState(k), M = (0, c.Dt)(), H = i.useRef(null);
+  } = e, [L, I] = i.useState(u.Z.getGuildNameSuggestion()), [y, v] = i.useState(null), [Z, S] = i.useState(!1), [T, E] = i.useState(null), k = !!(null == (t = d.default.getCurrentUser()) ? void 0 : t.isStaff()), [O, B] = i.useState(k), M = (0, c.Dt)(), H = i.useRef(null);
   i.useEffect(() => {
     var e;
-    j && (null === (e = H.current) || void 0 === e || e.focus())
+    j && (null == (e = H.current) || e.focus())
   }, [j]);
   let D = i.useCallback(async e => {
       if (e.preventDefault(), null != n) {

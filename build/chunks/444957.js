@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   h: () => o
 }), n(230036);
@@ -14,5 +14,5 @@ function o(e) {
     o = (0, i.h)(e);
   if (!t || !n) return;
   let a = o.filter(e => null != e.dismiss_timestamp);
-  if (0 !== a.length) return a.sort((e, t) => e.type > t.type ? 1 : e.dismiss_timestamp < t.dismiss_timestamp ? 1 : -1)[0]
+  if (0 !== a.length) return a.sort((e, t) => e.type > t.type || e.dismiss_timestamp < t.dismiss_timestamp ? 1 : -1)[0]
 }

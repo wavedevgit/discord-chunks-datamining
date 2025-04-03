@@ -69,7 +69,7 @@ var c = n(442837),
   eo = n(206583),
   es = n(981631),
   ec = n(388032),
-  eu = n(530742);
+  eu = n(610220);
 
 function ed(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -303,7 +303,7 @@ function ex(e) {
       n = (0, c.e7)([L.Z], () => L.Z.getChannel((0, v.pY)(null == e ? void 0 : e.location))),
       a = (0, c.Wu)([H.default], () => {
         var t, n;
-        return null !== (n = null == e ? void 0 : null === (t = e.participants) || void 0 === t ? void 0 : t.map(e => H.default.getUser(e.userId))) && void 0 !== n ? n : []
+        return null != (n = null == e || null == (t = e.participants) ? void 0 : t.map(e => H.default.getUser(e.userId))) ? n : []
       });
     return null != e && null != t && null != n && D.sR.has(n.type) ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
@@ -367,7 +367,7 @@ function ex(e) {
       else {
         var a;
         let e = await p.Z.getOrEnsurePrivateChannel(n.id);
-        r = null !== (a = L.Z.getChannel(e)) && void 0 !== a ? a : null
+        r = null != (a = L.Z.getChannel(e)) ? a : null
       }
       return s()(null != r, "Send channel must be defined"), eP({
         reply: ":".concat(e.name, ":"),
@@ -652,7 +652,7 @@ function eP(e) {
     entry: v
   } = x, y = (0, X.dX)(v), j = (0, w.Z)({
     location: "ContentPopout",
-    applicationId: y && !p ? null === (t = v.extra) || void 0 === t ? void 0 : t.application_id : void 0,
+    applicationId: y && !p ? null == (t = v.extra) ? void 0 : t.application_id : void 0,
     source: E.m1.ActivityCard,
     trackEntryPointImpression: !0,
     sourceUserId: v.author_id
@@ -736,7 +736,7 @@ function eO(e) {
     P = (0, X.dX)(j),
     O = (0, w.Z)({
       location: "ContentPopout",
-      applicationId: P ? null === (t = j.extra) || void 0 === t ? void 0 : t.application_id : void 0,
+      applicationId: P ? null == (t = j.extra) ? void 0 : t.application_id : void 0,
       source: E.m1.ActivityCard,
       trackEntryPointImpression: !0,
       sourceUserId: j.author_id

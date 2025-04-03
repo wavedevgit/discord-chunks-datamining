@@ -1,8 +1,8 @@
 /** Chunk was on 68880 **/
 "use strict";
 r.d(e, {
-  V5: () => c,
-  Zj: () => h,
+  V5: () => p,
+  Zj: () => v,
   bt: () => o,
   dG: () => s,
   iW: () => a
@@ -44,31 +44,105 @@ function s(...t) {
   }
   return e
 }
+let c = null;
 
-function c() {
-  var t, e;
-  return t = /^Mac/i, "undefined" != typeof window && null != window.navigator && t.test((null === (e = window.navigator.userAgentData) || void 0 === e ? void 0 : e.platform) || window.navigator.platform)
+function l(t) {
+  var e;
+  return "undefined" != typeof window && null != window.navigator && ((null == (e = window.navigator.userAgentData) ? void 0 : e.brands.some(e => t.test(e.brand))) || t.test(window.navigator.userAgent))
 }
-let l = new Map,
-  f = new Set;
+
+function f(t) {
+  var e;
+  return "undefined" != typeof window && null != window.navigator && t.test((null == (e = window.navigator.userAgentData) ? void 0 : e.platform) || window.navigator.platform)
+}
 
 function p() {
+  return f(/^Mac/i)
+}
+
+function h(t, e, r = !0) {
+  var n, i;
+  let {
+    metaKey: o,
+    ctrlKey: a,
+    altKey: u,
+    shiftKey: s
+  } = e;
+  l(/Firefox/i) && (null == (i = window.event) || null == (n = i.type) ? void 0 : n.startsWith("key")) && "_blank" === t.target && (p() ? o = !0 : a = !0);
+  let d = l(/AppleWebKit/i) && !l(/Chrome/i) && p() && !(f(/^iPad/i) || p() && navigator.maxTouchPoints > 1) && 1 ? new KeyboardEvent("keydown", {
+    keyIdentifier: "Enter",
+    metaKey: o,
+    ctrlKey: a,
+    altKey: u,
+    shiftKey: s
+  }) : new MouseEvent("click", {
+    metaKey: o,
+    ctrlKey: a,
+    altKey: u,
+    shiftKey: s,
+    bubbles: !0,
+    cancelable: !0
+  });
+  if (h.isOpening = r, function() {
+      if (null == c) {
+        c = !1;
+        try {
+          document.createElement("div").focus({
+            get preventScroll() {
+              return c = !0, !0
+            }
+          })
+        } catch (t) {}
+      }
+      return c
+    }()) t.focus({
+    preventScroll: !0
+  });
+  else {
+    let e = function(t) {
+      for (var e = t.parentNode, r = [], n = document.scrollingElement || document.documentElement; e instanceof HTMLElement && e !== n;)(e.offsetHeight < e.scrollHeight || e.offsetWidth < e.scrollWidth) && r.push({
+        element: e,
+        scrollTop: e.scrollTop,
+        scrollLeft: e.scrollLeft
+      }), e = e.parentNode;
+      return n instanceof HTMLElement && r.push({
+        element: n,
+        scrollTop: n.scrollTop,
+        scrollLeft: n.scrollLeft
+      }), r
+    }(t);
+    t.focus(),
+      function(t) {
+        for (let {
+            element: e,
+            scrollTop: r,
+            scrollLeft: n
+          }
+          of t) e.scrollTop = r, e.scrollLeft = n
+      }(e)
+  }
+  t.dispatchEvent(d), h.isOpening = !1
+}
+h.isOpening = !1;
+let d = new Map,
+  g = new Set;
+
+function y() {
   if ("undefined" == typeof window) return;
   let t = e => {
-    let r = l.get(e.target);
-    if (r && (r.delete(e.propertyName), 0 === r.size && (e.target.removeEventListener("transitioncancel", t), l.delete(e.target)), 0 === l.size)) {
-      for (let t of f) t();
-      f.clear()
+    let r = d.get(e.target);
+    if (r && (r.delete(e.propertyName), 0 === r.size && (e.target.removeEventListener("transitioncancel", t), d.delete(e.target)), 0 === d.size)) {
+      for (let t of g) t();
+      g.clear()
     }
   };
   document.body.addEventListener("transitionrun", e => {
-    let r = l.get(e.target);
-    r || (r = new Set, l.set(e.target, r), e.target.addEventListener("transitioncancel", t)), r.add(e.propertyName)
+    let r = d.get(e.target);
+    r || (r = new Set, d.set(e.target, r), e.target.addEventListener("transitioncancel", t)), r.add(e.propertyName)
   }), document.body.addEventListener("transitionend", t)
 }
 
-function h(t) {
-  var e, r;
-  return 0 === t.mozInputSource && !!t.isTrusted || ((e = /Android/i, "undefined" != typeof window && null != window.navigator && ((null === (r = window.navigator.userAgentData) || void 0 === r ? void 0 : r.brands.some(t => e.test(t.brand))) || e.test(window.navigator.userAgent)) && t.pointerType) ? "click" === t.type && 1 === t.buttons : 0 === t.detail && !t.pointerType)
+function v(t) {
+  return 0 === t.mozInputSource && !!t.isTrusted || (l(/Android/i) && t.pointerType ? "click" === t.type && 1 === t.buttons : 0 === t.detail && !t.pointerType)
 }
-"undefined" != typeof document && ("loading" !== document.readyState ? p() : document.addEventListener("DOMContentLoaded", p)), "undefined" != typeof document && window.visualViewport
+"undefined" != typeof document && ("loading" !== document.readyState ? y() : document.addEventListener("DOMContentLoaded", y)), "undefined" != typeof document && window.visualViewport

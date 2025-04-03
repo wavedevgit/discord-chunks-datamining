@@ -7,12 +7,12 @@ var n = r(200651),
   s = r(192379),
   i = r(481060),
   a = r(816814),
-  o = r(600164),
-  c = r(198993),
+  c = r(600164),
+  o = r(198993),
   l = r(594174),
   d = r(287880),
   u = r(388032),
-  h = r(118203);
+  h = r(366293);
 
 function g(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,18 +29,18 @@ let p = e => {
     text: s,
     children: a
   } = e;
-  return (0, n.jsxs)(o.Z, {
+  return (0, n.jsxs)(c.Z, {
     className: h.spacing,
-    children: [(0, n.jsx)(o.Z, {
+    children: [(0, n.jsx)(c.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: o.Z.Justify.CENTER,
+      justify: c.Z.Justify.CENTER,
       className: h.image,
       children: t
-    }), (0, n.jsx)(o.Z, {
-      direction: o.Z.Direction.VERTICAL,
-      justify: o.Z.Justify.CENTER,
+    }), (0, n.jsx)(c.Z, {
+      direction: c.Z.Direction.VERTICAL,
+      justify: c.Z.Justify.CENTER,
       children: (0, n.jsxs)("div", {
         children: [(0, n.jsx)(i.vwX, {
           tag: "h5",
@@ -64,11 +64,11 @@ class f extends s.PureComponent {
       totpSecret: a,
       code: g,
       isVerifying: f
-    } = this.state, b = null === (e = l.default.getCurrentUser()) || void 0 === e ? void 0 : e.email, x = (0, d.U0)(null != b ? b : "", a), m = (0, n.jsx)("form", {
+    } = this.state, b = null == (e = l.default.getCurrentUser()) ? void 0 : e.email, x = (0, d.U0)(null != b ? b : "", a), m = (0, n.jsx)("form", {
       onSubmit: this.handleActivate,
-      children: (0, n.jsxs)(o.Z, {
+      children: (0, n.jsxs)(c.Z, {
         className: h.inputContainer,
-        align: o.Z.Align.START,
+        align: c.Z.Align.START,
         children: [(0, n.jsx)(i.oil, {
           value: g,
           className: h.input,
@@ -78,7 +78,7 @@ class f extends s.PureComponent {
           onChange: this.handleCodeChange,
           error: this.state.error,
           autoFocus: !0
-        }), (0, n.jsx)(o.Z.Child, {
+        }), (0, n.jsx)(c.Z.Child, {
           grow: 0,
           shrink: 0,
           children: (0, n.jsx)(i.zxk, {
@@ -95,7 +95,7 @@ class f extends s.PureComponent {
       className: h.customWidth,
       children: [(0, n.jsxs)(i.xBx, {
         separator: !1,
-        children: [(0, n.jsxs)(o.Z.Child, {
+        children: [(0, n.jsxs)(c.Z.Child, {
           grow: 1,
           shrink: 1,
           children: [(0, n.jsx)(i.X6q, {
@@ -106,7 +106,7 @@ class f extends s.PureComponent {
             className: h.subHeader,
             children: u.NW.string(u.t["7NGwtL"])
           })]
-        }), (0, n.jsx)(o.Z.Child, {
+        }), (0, n.jsx)(c.Z.Child, {
           grow: 0,
           children: (0, n.jsx)(i.olH, {
             onClick: s
@@ -128,7 +128,7 @@ class f extends s.PureComponent {
         }), (0, n.jsx)(i.$i$, {
           className: h.divider
         }), (0, n.jsx)(p, {
-          image: (0, n.jsx)(c.ZP, {
+          image: (0, n.jsx)(o.ZP, {
             text: x
           }),
           label: u.NW.string(u.t["91InFx"]),

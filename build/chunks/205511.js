@@ -23,7 +23,7 @@ var r = n(200651),
   y = n(795057),
   _ = n(46140),
   C = n(388032),
-  O = n(201756);
+  O = n(22559);
 
 function w(e) {
   return (0, r.jsx)(c.Text, {
@@ -148,7 +148,7 @@ let P = function(e) {
     let o = c.length > 0,
       s = o && (0, h.Bz)(t),
       i = t.config.messages.gameTitle,
-      l = (null === (e = t.userStatus) || void 0 === e ? void 0 : e.completedAt) != null;
+      l = (null == (e = t.userStatus) ? void 0 : e.completedAt) != null;
     return {
       steps: [{
         renderContent: () => {

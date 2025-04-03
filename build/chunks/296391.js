@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => x
 });
@@ -16,13 +16,13 @@ var o = t(442837),
   p = t(678738),
   b = t(151545),
   y = t(744802),
-  v = t(493043),
-  m = t(864141),
-  g = t(228168),
-  I = t(981631),
-  j = t(388032),
-  h = t(992211),
-  _ = t(662553);
+  m = t(493043),
+  g = t(864141),
+  I = t(228168),
+  j = t(981631),
+  v = t(388032),
+  h = t(316879),
+  _ = t(301150);
 
 function x(e) {
   let {
@@ -55,12 +55,12 @@ function x(e) {
     className: h.scroller,
     fade: !0,
     children: [!R && (M || B) ? (0, r.jsxs)(p.Z, {
-      children: [B && (0, r.jsx)(m.Z, {
+      children: [B && (0, r.jsx)(g.Z, {
         user: n,
         currentUser: t,
         voiceChannel: C,
         onClose: P
-      }), null != T && (0, r.jsx)(v.Z, {
+      }), null != T && (0, r.jsx)(m.Z, {
         location: "UserProfileModalActivity",
         user: n,
         currentUser: t,
@@ -75,14 +75,14 @@ function x(e) {
         profileGuildId: null == x ? void 0 : x.guildId
       }, "live-".concat(o)))]
     }) : null, U ? (0, r.jsx)(p.Z, {
-      heading: j.NW.string(j.t.M0zgnZ),
-      subheading: L ? j.NW.format(j.t["4bk9Ag"], {
+      heading: v.NW.string(v.t.M0zgnZ),
+      subheading: L ? v.NW.format(v.t["4bk9Ag"], {
         learnMoreHook: (e, n) => (0, r.jsx)(i.eee, {
-          href: d.Z.getArticleURL(I.BhN.ACTIVITY_STATUS_SETTINGS),
+          href: d.Z.getArticleURL(j.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : void 0,
-      scrollIntoView: Z === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: Z === I.Tb.RECENT_ACTIVITY,
       children: S.map(e => (0, r.jsx)(y.Z, {
         location: "UserProfileModalActivity",
         user: n,

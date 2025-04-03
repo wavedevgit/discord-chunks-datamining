@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(115215),
   u = n(151480),
   d = n(680783),
-  p = n(443491);
+  p = n(24848);
 
 function h(e) {
   let {
@@ -24,10 +24,8 @@ function h(e) {
     null == n && t.isViewable && s.Z.shouldFetchWallpapers && (0, u.k9)()
   }, [n, t.isViewable]), i.useEffect(() => {
     if (c !== n) {
-      if (null == n) {
-        d(null);
-        return
-      }(0, a.p)(n, e => {
+      if (null == n) return void d(null);
+      (0, a.p)(n, e => {
         e === n && d(e)
       })
     }
@@ -43,7 +41,7 @@ function f(e) {
   let {
     channel: t
   } = e, n = (0, d.Z)(t.id);
-  return !(null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || c.t(t) && !n.isPreview) ? (0, r.jsx)(h, {
+  return null == n || !n.isViewable || !t.isDM() && !t.isMultiUserDM() && !t.isGroupDM() || c.t(t) && !n.isPreview ? null : (0, r.jsx)(h, {
     chatWallpaperState: n
-  }) : null
+  })
 }

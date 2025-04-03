@@ -15,15 +15,15 @@ var r = n(200651),
   m = n(100527),
   f = n(906732),
   b = n(213609),
-  v = n(709054),
-  g = n(435064),
-  j = n(39604),
-  h = n(680056),
-  y = n(10217),
-  x = n(410426),
+  g = n(709054),
+  j = n(435064),
+  h = n(39604),
+  y = n(680056),
+  x = n(10217),
+  v = n(410426),
   O = n(207346),
   C = n(356659),
-  N = n(944753);
+  N = n(684668);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ function w(e) {
     channelId: t,
     onClose: a,
     transitionState: o
-  } = e, [w, E] = l.useState(""), [S, Z] = l.useState("descending"), [D, L] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(w), _ = (0, u.e7)([g.Z], () => g.Z.getClips()), z = (0, u.e7)([g.Z], () => g.Z.getPendingClips()), R = (0, u.e7)([g.Z], () => g.Z.getSettings().storageLocation), A = (0, u.Wu)([g.Z], () => g.Z.getNewClipIds()), {
+  } = e, [w, E] = l.useState(""), [S, Z] = l.useState("descending"), [D, L] = l.useState(!0), [I, T] = l.useState(null), M = l.useDeferredValue(w), _ = (0, u.e7)([j.Z], () => j.Z.getClips()), z = (0, u.e7)([j.Z], () => j.Z.getPendingClips()), R = (0, u.e7)([j.Z], () => j.Z.getSettings().storageLocation), A = (0, u.Wu)([j.Z], () => j.Z.getNewClipIds()), {
     analyticsLocations: H
   } = (0, f.ZP)(m.Z.CLIPS_GALLERY), V = l.useMemo(() => [...z, ..._], [_, z]);
   (0, b.Z)({
@@ -73,19 +73,19 @@ function w(e) {
     }
   }, {
     disableTrack: D
-  }, [V.length, D]), l.useEffect(() => ((0, j.eL)(), () => {
-    (0, j.eL)(), (0, j.zq)()
+  }, [V.length, D]), l.useEffect(() => ((0, h.eL)(), () => {
+    (0, h.eL)(), (0, h.zq)()
   }), []);
   let W = l.useMemo(() => s()(V).filter(e => {
     if ("" === M.trim()) return !0;
     let t = M.toLowerCase();
     return null != e.name && "" !== e.name && i()(t, e.name.toLowerCase()) || i()(t, e.applicationName.toLowerCase())
-  }).sort((e, t) => "ascending" === S ? v.default.compare(e.id, t.id) : "descending" === S ? v.default.compare(t.id, e.id) : 0).chunk(3).value(), [V, M, S]);
+  }).sort((e, t) => "ascending" === S ? g.default.compare(e.id, t.id) : "descending" === S ? g.default.compare(t.id, e.id) : 0).chunk(3).value(), [V, M, S]);
   l.useEffect(() => {
     !async function() {
       L(!0);
       try {
-        await j.jv(R)
+        await h.jv(R)
       } finally {
         L(!1)
       }
@@ -106,7 +106,7 @@ function w(e) {
     }, [t]),
     {
       onShareClick: F
-    } = (0, h.Z)({
+    } = (0, y.Z)({
       channelId: t,
       setExporting: T
     }),
@@ -131,7 +131,7 @@ function w(e) {
         className: N.clipsRow,
         children: n.map(e => {
           let t = 0 === e.length;
-          return (0, r.jsx)(y.Z, {
+          return (0, r.jsx)(x.Z, {
             actionsDisabled: null != I || t,
             exporting: I === e.id,
             isNew: A.includes(e.id),
@@ -155,7 +155,7 @@ function w(e) {
       sectionHeight: 0,
       rowHeight: 328.25,
       renderRow: G
-    }) : (0, r.jsx)(x.Z, {
+    }) : (0, r.jsx)(v.Z, {
       isEmptyBecauseQuery: V.length > 0,
       closePopout: a
     });

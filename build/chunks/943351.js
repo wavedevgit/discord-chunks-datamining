@@ -1,8 +1,8 @@
 /** Chunk was on 56035 **/
 t.d(n, {
   V3: () => a,
-  bp: () => i,
-  hp: () => r,
+  bp: () => r,
+  hp: () => i,
   nl: () => l
 }), t(26686), t(47120);
 let l = {
@@ -16,5 +16,5 @@ let l = {
     let t = "".concat(e[0], "-").concat(e[e.length - 1], "-").concat(e.byteLength);
     return "".concat(t, "-").concat(JSON.stringify(n))
   },
-  r = e => "".concat(e.name, "-").concat(e.size, "-").concat(e.lastModified),
-  i = new Set(["audio/mpeg", "audio/mp3", "audio/wav", "audio/x-wav", "audio/ogg", "video/mp4"])
+  i = e => "".concat(e.name, "-").concat(e.size, "-").concat(e.lastModified),
+  r = new Set(["audio/mpeg", "audio/mp3", "audio/wav", "audio/x-wav", "audio/ogg", "video/mp4"])

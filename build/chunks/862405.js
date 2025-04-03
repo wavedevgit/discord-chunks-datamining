@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(642128),
-  i = n(442837),
-  a = n(481060),
+  a = n(442837),
+  i = n(481060),
   c = n(313201),
   l = n(668826),
   u = n(120421),
@@ -17,10 +17,10 @@ var r = n(200651),
   g = n(3072),
   b = n(763283),
   y = n(477839),
-  h = n(884479),
-  v = n(388032),
-  x = n(475865);
-let N = n(450862),
+  h = n(622802),
+  x = n(388032),
+  N = n(182643);
+let v = n(450862),
   O = [y.FK.LEVEL_1, y.FK.LEVEL_2, y.FK.LEVEL_3, y.FK.LEVEL_4];
 
 function j(e) {
@@ -44,7 +44,7 @@ function Z(e) {
 function _(e) {
   let {
     percent: t
-  } = e, n = (0, c.Dt)(), s = (0, a.q_F)({
+  } = e, n = (0, c.Dt)(), s = (0, i.q_F)({
     width: t / 100 * 372
   });
   return (0, r.jsxs)("svg", {
@@ -92,10 +92,10 @@ function _(e) {
 
 function P() {
   var e, t;
-  let n = (0, i.e7)([u.Z], () => u.Z.lifetimePoints),
-    [o, a] = (0, f.Z)(y.yN.LEVELING),
-    c = null !== (e = null == o ? void 0 : o.lastLevelClaimed) && void 0 !== e ? e : 0,
-    Z = null !== (t = null == o ? void 0 : o.pointsWhenUnlocked) && void 0 !== t ? t : n,
+  let n = (0, a.e7)([u.Z], () => u.Z.lifetimePoints),
+    [o, i] = (0, f.Z)(y.yN.LEVELING),
+    c = null != (e = null == o ? void 0 : o.lastLevelClaimed) ? e : 0,
+    Z = null != (t = null == o ? void 0 : o.pointsWhenUnlocked) ? t : n,
     P = n - Z,
     C = function e(t, n) {
       return t >= j(n) ? e(t, n + 1) : n
@@ -106,47 +106,47 @@ function P() {
     I = E - w,
     k = c + 1,
     M = Math.floor(.1 * (j(k) - j(k - 1))),
-    W = (0, g.eR)(N);
+    W = (0, g.eR)(v);
   (0, p.Z)(O, C);
   let R = (0, s.useCallback)(() => {
-    a({
+    i({
       lastLevelClaimed: k
     }), (0, l.KH)(y.yN.LEVELING, M), W()
-  }, [k, M, W, a]);
+  }, [k, M, W, i]);
   return (0, s.useEffect)(() => {
-    (null == o ? void 0 : o.pointsWhenUnlocked) == null && a({
+    (null == o ? void 0 : o.pointsWhenUnlocked) == null && i({
       pointsWhenUnlocked: n
     })
   }, []), (0, r.jsxs)("div", {
-    className: x.leveling,
+    className: N.leveling,
     children: [(0, r.jsxs)("div", {
-      className: x.levelInfo,
+      className: N.levelInfo,
       children: [(0, r.jsx)(b.Z, {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
-        children: v.NW.format(h.Z.IG6UGB, {
+        children: x.NW.format(h.Z.IG6UGB, {
           level: C
         })
       }), (0, r.jsx)(b.Z, {
-        className: x.experience,
+        className: N.experience,
         variant: "text-sm/medium",
         color: "clicker-game-brand",
-        children: v.NW.format(h.Z.Rfy3Cg, {
+        children: x.NW.format(h.Z.Rfy3Cg, {
           currentExperience: Math.floor(S),
           requiredExperience: I,
           experienceHook: (e, t) => (0, r.jsx)("span", {
-            className: x.monospace,
+            className: N.monospace,
             children: e
           }, t),
-          grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, x.experienceIcon)
+          grassIconHook: (e, t, n) => (0, d.Z)(e, t, n, N.experienceIcon)
         })
       })]
     }), (0, r.jsx)(_, {
       percent: S / I * 100
     }), k < C ? (0, r.jsx)(m.Z, {
-      className: x.claimButton,
+      className: N.claimButton,
       onClick: R,
-      children: v.NW.format(h.Z.IUF6np, {
+      children: x.NW.format(h.Z.IUF6np, {
         points: M,
         grassIconHook: d.Z
       })

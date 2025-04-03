@@ -23,7 +23,7 @@ var i = n(200651),
   x = n(707878),
   b = n(518084),
   S = n(388032),
-  E = n(530487);
+  E = n(901939);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -40,8 +40,7 @@ class N extends r.Component {
     })
   }
   renderCallButton() {
-    let e, t;
-    let {
+    let e, t, {
       channel: n,
       channelHasActiveCall: r,
       userIsInChannelCall: s,

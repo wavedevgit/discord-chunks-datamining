@@ -27,11 +27,11 @@ let n = a(26507);
     if (void 0 === t && "number" == typeof this.data.trigger) return -1 * this.data.trigger;
     if (void 0 === t && this.data.trigger) return this.data.trigger;
     if (void 0 === t) return null;
-    if (t) {
+    if (t)
       if ("number" == typeof t && isFinite(t)) this.data.trigger = -1 * t;
       else if ("number" == typeof t) throw Error("`trigger` is not correct, must be a finite number or a supported date!");
-      else this.data.trigger = (0, n.checkDate)(t, "trigger")
-    } else this.data.trigger = null;
+    else this.data.trigger = (0, n.checkDate)(t, "trigger");
+    else this.data.trigger = null;
     return this
   }
   triggerAfter(t) {

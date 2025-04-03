@@ -1,8 +1,8 @@
 /** Chunk was on 70205 **/
-i.d(t, {
-  Y: () => n
+n.d(t, {
+  Y: () => i
 });
-let n = (0, i(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2024-04_custom_notification_sound_web",
   label: "Custom Notification Sound for Desktop",

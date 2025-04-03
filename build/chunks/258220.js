@@ -6,14 +6,14 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(153867),
-  a = n(835473),
+  a = n(153867),
+  o = n(835473),
   s = n(600164),
   c = n(626135),
   u = n(998502),
   d = n(981631),
   p = n(388032),
-  h = n(154330);
+  h = n(607919);
 let f = "Activity Encourages Hardware Acceleration";
 
 function g(e) {
@@ -35,15 +35,15 @@ function g(e) {
       }
       return i
     }(e, ["applicationId"]);
-  let [_, E] = i.useState(!1), [O] = (0, a.Z)([m]), N = null !== (g = null == O ? void 0 : O.name) && void 0 !== g ? g : "This Activity";
+  let [_, E] = i.useState(!1), [O] = (0, o.Z)([m]), N = null != (g = null == O ? void 0 : O.name) ? g : "This Activity";
   i.useEffect(() => {
     c.default.track(d.rMx.OPEN_MODAL, {
       type: f
     })
   }, []);
-  let v = () => {
+  let y = () => {
     let e = "temporary";
-    _ && (e = "permanent", o.ZP.updatedUnsyncedSettings({
+    _ && (e = "permanent", a.ZP.updatedUnsyncedSettings({
       disableActivityHardwareAccelerationPrompt: !0
     })), c.default.track(d.rMx.MODAL_DISMISSED, {
       type: f,
@@ -78,7 +78,7 @@ function g(e) {
         variant: "text-lg/normal",
         children: p.NW.string(p.t.NQkK4u)
       }), (0, r.jsx)(l.olH, {
-        onClick: v,
+        onClick: y,
         className: h.closeButton
       })]
     }), (0, r.jsx)(l.hzk, {
@@ -104,7 +104,7 @@ function g(e) {
         })
       }), (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.PRIMARY,
-        onClick: v,
+        onClick: y,
         children: p.NW.string(p.t["Ibf5/v"])
       }), (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,

@@ -1,4 +1,4 @@
-/** Chunk was on 6536 **/
+/** Chunk was on 35397 **/
 "use strict";
 n.d(t, {
   Z: () => y
@@ -18,16 +18,16 @@ var r = n(200651),
   f = n(235894),
   _ = n(981631),
   b = n(388032),
-  h = n(66330);
+  h = n(277586);
 let y = e => {
   var t;
   let {
     message: n
-  } = e, y = o.useRef(null), v = (0, p.p7)("Message Header") && n.hasPotions(), O = s.Z.getChannel(n.getChannelId()), x = null === (t = n.potions) || void 0 === t ? void 0 : t[0], C = o.useMemo(() => {
+  } = e, y = o.useRef(null), v = (0, p.p7)("Message Header") && n.hasPotions(), O = s.Z.getChannel(n.getChannelId()), x = null == (t = n.potions) ? void 0 : t[0], C = o.useMemo(() => {
     var e;
     if (null == x) return null;
     let t = c.default.getUser(x.used_by);
-    return null !== (e = (0, u.y)(null == O ? void 0 : O.getGuildId(), null == O ? void 0 : O.id, t)) && void 0 !== e ? e : null == t ? void 0 : t.globalName
+    return null != (e = (0, u.y)(null == O ? void 0 : O.getGuildId(), null == O ? void 0 : O.id, t)) ? e : null == t ? void 0 : t.globalName
   }, [x, O]), j = o.useCallback(() => {
     if (null != y.current && (0, f.Uw)(n)) {
       let {

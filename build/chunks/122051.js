@@ -17,8 +17,8 @@ var r = n(200651),
   j = n(755340),
   y = n(449226),
   m = n(388032),
-  g = n(59736),
-  O = n(888719);
+  g = n(296205),
+  O = n(874327);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -86,7 +86,7 @@ function x(e) {
     (0, a.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("68044")]).then(n.bind(n, 645264));
+      } = await Promise.all([n.e("99916"), n.e("80026"), n.e("92531"), n.e("67360")]).then(n.bind(n, 645264));
       return n => (0, r.jsx)(e, v(h({}, n), {
         guildId: t.id,
         isPreview: !0
@@ -165,9 +165,9 @@ function N(e) {
     verificationForm: h
   } = e, [v, N] = i.useState(p), C = i.useRef(!1), E = i.useCallback(() => {
     C.current = !0
-  }, []), S = null !== (t = (0, b.A)({
+  }, []), S = null != (t = (0, b.A)({
     guildId: a.id
-  })) && void 0 !== t ? t : 0, D = (0, s.e7)([d.Z], () => null != h ? h : d.Z.get(a.id)), R = null !== (n = null == D ? void 0 : D.formFields) && void 0 !== n ? n : [];
+  })) ? t : 0, D = (0, s.e7)([d.Z], () => null != h ? h : d.Z.get(a.id)), R = null != (n = null == D ? void 0 : D.formFields) ? n : [];
   i.useEffect(() => {
     u.ZP.fetchVerificationForm(a.id)
   }, [a.id]);
@@ -198,7 +198,7 @@ function N(e) {
         isClanContext: p,
         onFieldsSave: null != y ? y : P,
         onDescriptionSave: null != m ? m : w,
-        formDescription: null !== (o = null == D ? void 0 : D.description) && void 0 !== o ? o : ""
+        formDescription: null != (o = null == D ? void 0 : D.description) ? o : ""
       })
     })
   })

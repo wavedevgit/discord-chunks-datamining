@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   IV: () => s,
   P: () => u,
@@ -9,10 +9,10 @@ n.d(t, {
 var r = n(166459),
   i = n(966390),
   a = n(476326),
-  o = n(703558),
-  l = n(398805);
+  l = n(703558),
+  o = n(398805);
 async function s(e, t, n) {
-  let r = (0, l.Yk)(t, n),
+  let r = (0, o.Yk)(t, n),
     i = await fetch(n);
   return c(e, t, new File([await i.blob()], r, {
     type: "image/gif"
@@ -29,14 +29,14 @@ function c(e, t, n) {
   r.Z.addFile({
     file: i,
     channelId: e,
-    draftType: o.d.Poll
+    draftType: l.d.Poll
   })
 }
 async function u(e, t, n) {
-  r.Z.remove(e, t, o.d.Poll)
+  r.Z.remove(e, t, l.d.Poll)
 }
 async function d(e) {
-  r.Z.clearAll(e, o.d.Poll)
+  r.Z.clearAll(e, l.d.Poll)
 }
 async function p(e) {
   let {
@@ -44,12 +44,12 @@ async function p(e) {
     items: n,
     poll: r,
     nonce: a,
-    maxSizeCallback: l
+    maxSizeCallback: o
   } = e;
   return i.Z.uploadFiles({
     channelId: t.id,
     uploads: n,
-    draftType: o.d.Poll,
+    draftType: l.d.Poll,
     parsedMessage: {
       content: "",
       tts: !1,

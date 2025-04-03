@@ -17,7 +17,7 @@ var i = n(200651),
   x = n(621600),
   N = n(981631),
   p = n(388032),
-  v = n(696766);
+  v = n(529651);
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,8 +70,7 @@ class S extends s.PureComponent {
     })
   }
   renderName() {
-    let e, t;
-    let {
+    let e, t, {
       channel: n
     } = this.props;
     null != n.parent_id && (e = u.Z.getChannel(n.parent_id));

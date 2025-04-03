@@ -114,5 +114,8 @@ var s = {
 let k = function(a, e, t) {
   var i = s[a],
     n = 1 === e ? i.one : i.other.replace("{{count}}", String(e));
-  return null != t && t.addSuffix ? t.comparison && t.comparison > 0 ? i.futureTense(n) + " kuluttua" : n + " sitten" : n
+  if (null != t && t.addSuffix)
+    if (t.comparison && t.comparison > 0) return i.futureTense(n) + " kuluttua";
+    else return n + " sitten";
+  return n
 }

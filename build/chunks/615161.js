@@ -2,7 +2,7 @@
 n.d(t, {
   E_: () => S,
   Ti: () => b,
-  Yw: () => j
+  Yw: () => v
 }), n(411104), n(47120);
 var r = n(200651),
   l = n(192379),
@@ -68,7 +68,7 @@ let p = {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
 
-function v(e, t) {
+function j(e, t) {
   switch (t.type) {
     case "set_mute_audio":
       return x(h({}, e), {
@@ -124,7 +124,7 @@ function v(e, t) {
   }
 }
 
-function j(e) {
+function v(e) {
   let {
     dispatch: t,
     state: n,
@@ -144,15 +144,15 @@ function b(e, t, n) {
   let {
     preset: g,
     resolution: _,
-    fps: j,
+    fps: v,
     soundshareEnabled: b
-  } = (0, s.cj)([c.Z], () => c.Z.getState()), S = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()), C = null !== (r = a.I0.useSetting()) && void 0 !== r && r, N = null !== (i = a.eo.useSetting()) && void 0 !== i && i;
-  (0, u.Z)(f.tI.PRESET_CUSTOM, _, j, t, n) || (_ = f.LY.RESOLUTION_720, j = f.ws.FPS_30);
-  let [y, Z] = l.useReducer(v, x(h({}, p), {
+  } = (0, s.cj)([c.Z], () => c.Z.getState()), S = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()), C = null != (r = a.I0.useSetting()) && r, N = null != (i = a.eo.useSetting()) && i;
+  (0, u.Z)(f.tI.PRESET_CUSTOM, _, v, t, n) || (_ = f.LY.RESOLUTION_720, v = f.ws.FPS_30);
+  let [y, Z] = l.useReducer(j, x(h({}, p), {
     muteStreamAudio: !b,
     preset: g,
     resolution: _,
-    fps: j,
+    fps: v,
     hidePreview: C,
     notifyFriends: N,
     selectedSource: e,

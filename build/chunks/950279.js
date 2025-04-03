@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(92373),
   u = n(308083),
   m = n(388032),
-  g = n(371137),
-  p = n(128662);
+  g = n(932270),
+  p = n(130116);
 
 function h(e) {
   let {
@@ -27,12 +27,12 @@ function h(e) {
     options: f,
     matchSorterOptions: b
   } = (0, c.h)(), x = i.useMemo(() => Array.from(t), [t]), j = i.useCallback(e => {
-    !(e.length < o) && s(new Set(e))
+    e.length < o || s(new Set(e))
   }, [o, s]), N = i.useCallback(e => {
     if (n) return;
     let r = new Set(t);
     t.has(e) ? r.delete(e) : r.add(e), s(r)
-  }, [n, t, s]), v = i.useCallback(() => null, []);
+  }, [n, t, s]), _ = i.useCallback(() => null, []);
   return (0, r.jsx)("div", {
     className: g.inputContainer,
     children: (0, r.jsxs)(l.xJW, {
@@ -50,7 +50,7 @@ function h(e) {
         matchSorterOptions: b,
         clearQueryOnSelect: !0,
         customPillContainerClassName: g.pills,
-        renderCustomPill: v
+        renderCustomPill: _
       }), x.length > 0 && (0, r.jsxs)("div", {
         className: g.gamesContainer,
         children: [(0, r.jsx)(l.Text, {

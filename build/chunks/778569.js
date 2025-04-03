@@ -20,10 +20,7 @@ function o(e) {
     } = d;
     null != t && (0, r.Vh)(t).then(t => {
       for (let [n, a] of(u(!1), Object.entries(t)))
-        if (null != a && "" !== a.id && e.includes(a.name)) {
-          c(a.id);
-          return
-        }
+        if (null != a && "" !== a.id && e.includes(a.name)) return void c(a.id)
     })
   }, [t]), {
     url: _,

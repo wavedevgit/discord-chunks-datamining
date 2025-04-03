@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -26,7 +26,7 @@ function s(e, t, n, s) {
       let a = e.current.getBoundingClientRect(),
         l = (a.bottom - a.top) / 2,
         o = r.getClientOffset().y - a.top;
-      (!(i < n) || !(o < l)) && (!(i > n) || !(o > l)) && (s(i, n), t.index = n)
+      (!(i < n) || !(o < l)) && (i > n && o > l || (s(i, n), t.index = n))
     }
   });
   return {

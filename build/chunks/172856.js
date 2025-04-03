@@ -1,12 +1,12 @@
 /** Chunk was on 33156 **/
-n.d(e, {
+n.d(t, {
   Z: () => r
 });
 var a = n(799761);
 let r = {
-  ordinalNumber: function(t, e) {
-    var n = Number(t);
-    switch (String(null == e ? void 0 : e.unit)) {
+  ordinalNumber: function(e, t) {
+    var n = Number(e);
+    switch (String(null == t ? void 0 : t.unit)) {
       case "year":
         return "".concat(n, "年");
       case "quarter":
@@ -42,8 +42,8 @@ let r = {
       wide: ["第1四半期", "第2四半期", "第3四半期", "第4四半期"]
     },
     defaultWidth: "wide",
-    argumentCallback: function(t) {
-      return Number(t) - 1
+    argumentCallback: function(e) {
+      return Number(e) - 1
     }
   }),
   month: (0, a.Z)({

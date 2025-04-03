@@ -7,8 +7,8 @@ var r, i, l, o = n(442837),
   u = n(570140),
   s = n(358085),
   a = n(998502),
-  d = n(869614),
-  c = n(281083),
+  c = n(869614),
+  d = n(281083),
   f = n(672598);
 let v = !1,
   p = !0,
@@ -16,7 +16,7 @@ let v = !1,
 class g extends(l = o.ZP.Store) {
   initialize() {
     !s.isPlatformEmbedded || __OVERLAY__ || a.ZP.getGPUDriverVersions().then(e => {
-      v = (0, f.Z)(e), p = (0, d.Z)(e), h = (0, c.Z)(e), this.emitChange()
+      v = (0, f.Z)(e), p = (0, c.Z)(e), h = (0, d.Z)(e), this.emitChange()
     })
   }
   get GPUDriversOutdated() {

@@ -53,7 +53,7 @@ function b() {
     var e;
     return {
       layoutDebuggingEnabled: s.default.layoutDebuggingEnabled,
-      isStaff: (null === (e = u.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff()) === !0,
+      isStaff: (null == (e = u.default.getCurrentUser()) ? void 0 : e.isStaff()) === !0,
       isDeveloper: l.Z.isDeveloper
     }
   }), {

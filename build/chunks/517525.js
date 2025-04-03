@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(906732),
   g = n(194082),
   E = n(484459),
-  v = n(594174),
-  h = n(626135),
+  h = n(594174),
+  v = n(626135),
   b = n(74538),
   S = n(557457),
   y = n(475674),
   O = n(981631),
   Z = n(474936),
   I = n(388032),
-  j = n(790640);
+  j = n(374336);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -114,7 +114,7 @@ let _ = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: M
       } = (0, m.O)(),
-      k = (0, u.e7)([v.default], () => v.default.getCurrentUser()),
+      k = (0, u.e7)([h.default], () => h.default.getCurrentUser()),
       L = s && !b.ZP.isPremium(k, Z.p9.TIER_1) && !b.ZP.canStreamQuality(b.ZP.StreamQuality.MID, k),
       U = l.useCallback(() => {
         L && D && (0, f.ZDy)(async () => {
@@ -127,7 +127,7 @@ let _ = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         })
       }, [L, D, M]);
     if (l.useEffect(() => {
-        !_ && D && (h.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !_ && D && (v.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: Z.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
@@ -173,23 +173,23 @@ let _ = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
       className: u,
       premiumIndicator: c
     } = e, [d, m] = l.useState(!1), p = (0, S.Wc)(t), {
-      reducedMotion: v
-    } = l.useContext(f.Sfi), h = n && null != p;
+      reducedMotion: h
+    } = l.useContext(f.Sfi), v = n && null != p;
     l.useEffect(() => {
       (0, E.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: !0
       })
     }, [t]);
-    let b = (0, f.Yzy)(h, {
+    let b = (0, f.Yzy)(v, {
         enter: {
-          from: v.enabled ? R : w,
-          to: v.enabled ? A : P
+          from: h.enabled ? R : w,
+          to: h.enabled ? A : P
         },
-        leave: v.enabled ? R : w,
+        leave: h.enabled ? R : w,
         config: D
       }, "animate-always"),
       y = (0, f.q_F)({
-        to: h ? T : C,
+        to: v ? T : C,
         config: D
       }, "animate-always");
     return (e => {
@@ -218,7 +218,7 @@ let _ = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: s,
-            shape: h ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
+            shape: v ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
           })
         })]
       }))

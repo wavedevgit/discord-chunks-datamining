@@ -20,10 +20,10 @@ var r = n(200651),
   p = n(703558),
   x = n(117530),
   b = n(585483),
-  v = n(127654),
-  j = n(228392),
+  j = n(127654),
+  v = n(228392),
   C = n(981631),
-  _ = n(375755);
+  _ = n(933897);
 let y = {
     scale: .95,
     opacity: 0
@@ -52,14 +52,14 @@ function S(e) {
     className: _.uploadInput,
     onMouseEnter: s,
     onClick: () => {
-      (0, j.N3)({
+      (0, v.N3)({
         isMobile: !1
       }), null == n || n()
     },
     onKeyPress: e => {
       if ("Enter" === e.key) {
         var t;
-        null === (t = u.current) || void 0 === t || t.activateUploadDialogue(), (0, j.N3)({
+        null == (t = u.current) || t.activateUploadDialogue(), (0, v.N3)({
           isMobile: !1
         })
       }
@@ -68,7 +68,7 @@ function S(e) {
       className: _.fileInput,
       ref: u,
       onChange: e => {
-        null == i || i(), (0, v.d)(e.currentTarget.files, m, p.d.FirstThreadMessage, {
+        null == i || i(), (0, j.d)(e.currentTarget.files, m, p.d.FirstThreadMessage, {
           requireConfirm: !0
         }), b.S.dispatch(C.CkL.TEXTAREA_FOCUS), e.currentTarget.value = null
       },

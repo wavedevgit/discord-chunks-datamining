@@ -12,13 +12,13 @@ var n = r(200651),
   u = r(493773),
   d = r(285888),
   p = r(388032),
-  h = r(812560);
+  h = r(65546);
 let f = s()().localeData().months(),
-  v = Array.from(Array(31).keys()).map(e => ({
+  b = Array.from(Array(31).keys()).map(e => ({
     value: e + 1,
     label: "".concat(e + 1)
   })),
-  b = Array.from(Array(12).keys()).map(e => ({
+  v = Array.from(Array(12).keys()).map(e => ({
     value: e + 1,
     label: f[e]
   })),
@@ -121,15 +121,15 @@ let O = a.forwardRef(function(e, t) {
     D = a.useMemo(g, []),
     W = a.useCallback(() => {
       var e, t, r, n;
-      switch (null === (e = D[M]) || void 0 === e ? void 0 : e.type) {
+      switch (null == (e = D[M]) ? void 0 : e.type) {
         case "day":
-          null === (t = S.current) || void 0 === t || t.focus();
+          null == (t = S.current) || t.focus();
           break;
         case "month":
-          null === (r = P.current) || void 0 === r || r.focus();
+          null == (r = P.current) || r.focus();
           break;
         case "year":
-          null === (n = G.current) || void 0 === n || n.focus()
+          null == (n = G.current) || n.focus()
       }
     }, [M, S, P, G, D]);
   (0, u.ZP)(() => {
@@ -166,7 +166,7 @@ let O = a.forwardRef(function(e, t) {
         F.push({
           key: "day",
           input: (0, n.jsx)(y, {
-            options: v,
+            options: b,
             selectOption: _,
             children: (0, n.jsx)(d.Z, {
               ref: S,
@@ -177,7 +177,7 @@ let O = a.forwardRef(function(e, t) {
                 "aria-hidden": !0,
                 children: p.NW.string(p.t.Voklra)
               }),
-              options: v,
+              options: b,
               value: E,
               onChange: t => {
                 let {
@@ -194,7 +194,7 @@ let O = a.forwardRef(function(e, t) {
         F.push({
           key: "month",
           input: (0, n.jsx)(y, {
-            options: b,
+            options: v,
             selectOption: A,
             children: (0, n.jsx)(d.Z, {
               ref: P,
@@ -205,7 +205,7 @@ let O = a.forwardRef(function(e, t) {
                 "aria-hidden": !0,
                 children: p.NW.string(p.t.UDlN8f)
               }),
-              options: b,
+              options: v,
               value: k,
               onChange: t => {
                 let {

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -21,13 +21,13 @@ var r = n(200651),
   x = n(440857),
   j = n(472596),
   N = n(598948),
-  v = n(428936),
-  _ = n(41586),
+  _ = n(428936),
+  v = n(41586),
   C = n(918192),
   O = n(981631),
   y = n(388032),
-  I = n(238329),
-  E = n(329306);
+  I = n(881786),
+  E = n(319586);
 
 function S(e) {
   let {
@@ -45,7 +45,7 @@ function S(e) {
     })
   }, [s]), w = i.useRef(null), R = i.useCallback(() => {
     var e;
-    null === (e = w.current) || void 0 === e || e.resetSearchText()
+    null == (e = w.current) || e.resetSearchText()
   }, []);
   if (null == n) return null;
   let Z = (0, j.xb)(!1, !1, T);
@@ -78,7 +78,7 @@ function S(e) {
                     guild: n
                   }), S ? (0, r.jsxs)("div", {
                     className: I.mainTableContainer,
-                    children: [(0, r.jsx)(_.Z, {
+                    children: [(0, r.jsx)(v.Z, {
                       guild: n,
                       ref: w
                     }), (0, r.jsx)(N.Z, {
@@ -87,7 +87,7 @@ function S(e) {
                       compact: !0,
                       onSelectRow: P,
                       onResetForNewMembers: R
-                    }), Z !== j.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(v.Z, {
+                    }), Z !== j.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(_.Z, {
                       guildId: n.id
                     })]
                   }) : (0, r.jsx)("div", {

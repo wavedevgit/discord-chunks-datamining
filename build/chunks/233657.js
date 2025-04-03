@@ -1,12 +1,12 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  o = n(704215),
-  l = n(481060),
+  l = n(704215),
+  o = n(481060),
   a = n(239091),
   s = n(605236),
   c = n(554747),
@@ -15,7 +15,7 @@ var i = n(442837),
   p = n(434479),
   h = n(490897),
   f = n(388032),
-  g = n(277701);
+  g = n(768107);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -49,26 +49,26 @@ function b(e, t) {
   }), e
 }
 
-function v(e) {
+function y(e) {
   let {
     guild: t,
-    selected: v
+    selected: y
   } = e, {
-    hasUnread: y,
-    mentionCount: _
+    hasUnread: _,
+    mentionCount: v
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
   }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
   async function j() {
-    await (0, l.ZDy)(async () => {
+    await (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("67210")]).then(n.bind(n, 17671));
+      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("79010")]).then(n.bind(n, 17671));
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
-    }), (0, s.EW)(o.z.GUILD_HEADER_EVENT_UPSELL)
+    }), (0, s.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
   let x = (0, c.ZP)(t.id),
     C = x.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
@@ -76,13 +76,13 @@ function v(e) {
     }) : f.NW.string(f.t.tlopTE);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
-    renderIcon: e => (0, r.jsx)(l.Que, {
+    renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     text: C,
-    selected: v,
+    selected: y,
     onClick: j,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
@@ -94,11 +94,11 @@ function v(e) {
         }))
       })
     },
-    showUnread: y && !O,
-    trailing: !O && _ > 0 ? (0, r.jsx)(l.mAB, {
+    showUnread: _ && !O,
+    trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,
-      count: _
+      count: v
     }) : null
   })
 }

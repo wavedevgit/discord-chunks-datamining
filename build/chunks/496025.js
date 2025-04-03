@@ -20,8 +20,8 @@ var r = n(200651),
   _ = n(98357),
   g = n(432877),
   v = n(246992),
-  j = n(17080),
-  y = n(890798);
+  j = n(750540),
+  y = n(616257);
 
 function C() {
   var e;
@@ -43,10 +43,10 @@ function C() {
     g = a.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
-      let t = (0, f.x9)(null !== (e = i.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+      let t = (0, f.x9)(null != (e = i.recipientFlags) ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
       m.Z.updatePrivateChannelRecipientFlags(i.id, t)
     }, [i]),
-    y = null != i && !!i.isPrivate() && (0, f.yE)(null !== (e = i.recipientFlags) && void 0 !== e ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
+    y = null != i && !!i.isPrivate() && (0, f.yE)(null != (e = i.recipientFlags) ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/semibold",

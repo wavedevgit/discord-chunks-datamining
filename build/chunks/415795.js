@@ -1,10 +1,10 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   $W: () => T,
   Mx: () => A,
   PZ: () => I,
   h4: () => P,
-  ic: () => S,
+  ic: () => v,
   n5: () => y,
   rU: () => R,
   s8: () => D
@@ -12,8 +12,8 @@ n.d(t, {
 var r, i = n(200651),
   s = n(192379),
   a = n(481060),
-  o = n(456100),
-  l = n(815372),
+  l = n(456100),
+  o = n(815372),
   c = n(43267),
   d = n(933557),
   u = n(471445),
@@ -28,7 +28,7 @@ var r, i = n(200651),
   _ = n(594174),
   E = n(51144),
   j = n(388032),
-  O = n(512547);
+  O = n(212522);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -38,7 +38,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class v extends s.PureComponent {
+class S extends s.PureComponent {
   componentDidMount() {
     let {
       focused: e,
@@ -64,12 +64,12 @@ class v extends s.PureComponent {
       score: n,
       onContextMenu: r,
       id: s,
-      "aria-label": o
+      "aria-label": l
     } = this.props;
     return (0, i.jsxs)(a.P3F, {
       role: "option",
       id: s,
-      "aria-label": o,
+      "aria-label": l,
       "aria-selected": e,
       focusProps: {
         enabled: !1
@@ -107,7 +107,7 @@ class v extends s.PureComponent {
     })
   }
 }
-class S extends s.Component {
+class v extends s.Component {
   renderIcon() {
     let {
       guild: e
@@ -163,10 +163,10 @@ class S extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -185,7 +185,7 @@ class T extends(r = s.Component) {
       channel: t
     } = this.props, n = (0, u.KS)(t);
     if (null == n) return null;
-    let r = null !== (e = (0, m.Z)(t)) && void 0 !== e ? e : "";
+    let r = null != (e = (0, m.Z)(t)) ? e : "";
     return (0, i.jsx)("div", {
       className: O.iconContainer,
       role: "img",
@@ -198,8 +198,7 @@ class T extends(r = s.Component) {
     })
   }
   renderName() {
-    let e, t;
-    let {
+    let e, t, {
       mentions: n,
       category: r,
       channel: s,
@@ -258,7 +257,7 @@ class T extends(r = s.Component) {
     var e;
     let {
       channel: t
-    } = this.props, n = null === (e = N.Z.getGuild(this.props.channel.guild_id)) || void 0 === e ? void 0 : e.name, r = (0, d.F6)(t, _.default, x.Z), i = (0, m.Z)(t);
+    } = this.props, n = null == (e = N.Z.getGuild(this.props.channel.guild_id)) ? void 0 : e.name, r = (0, d.F6)(t, _.default, x.Z), i = (0, m.Z)(t);
     return j.NW.formatToPlainString(j.t["Vw/da2"], {
       name: r,
       type: i,
@@ -273,10 +272,10 @@ class T extends(r = s.Component) {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -306,8 +305,7 @@ class I extends s.Component {
     })
   }
   renderName() {
-    let e;
-    let {
+    let e, {
       mentions: t,
       channel: n
     } = this.props;
@@ -355,10 +353,10 @@ class I extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -385,19 +383,19 @@ class y extends s.Component {
     })
   }
   getDisplayNickname() {
-    let e;
-    let {
-      user: t,
-      comparator: n
-    } = this.props, r = x.Z.getNickname(t.id);
+    let e, {
+        user: t,
+        comparator: n
+      } = this.props,
+      r = x.Z.getNickname(t.id);
     return ((e = n === t.tag || null == n || "" === n ? t.username : n) === t.username || e === t.id) && (e = null != r ? r : E.ZP.getName(t)), e
   }
   renderName() {
-    let e;
-    let {
-      user: t,
-      mentions: n
-    } = this.props, r = this.getDisplayNickname();
+    let e, {
+        user: t,
+        mentions: n
+      } = this.props,
+      r = this.getDisplayNickname();
     return null != n && n > 0 && (e = (0, i.jsx)(g.Z, {
       className: O.badge,
       value: n
@@ -447,10 +445,10 @@ class y extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       "aria-label": this.getAccessibilityLabel(),
       onMouseEnter: e,
       onClick: t,
@@ -492,7 +490,7 @@ class A extends s.Component {
       focused: r,
       id: s
     } = this.props;
-    return (0, i.jsx)(v, {
+    return (0, i.jsx)(S, {
       id: s,
       onMouseEnter: e,
       onClick: t,
@@ -518,11 +516,11 @@ class P extends s.Component {
 }
 class R extends s.Component {
   renderContent() {
-    let e, t;
-    let {
-      link: n,
-      children: r
-    } = this.props, s = (0, f.Qj)(n.path);
+    let e, t, {
+        link: n,
+        children: r
+      } = this.props,
+      s = (0, f.Qj)(n.path);
     return null == s || void 0 === s.messageId ? (e = j.NW.string(j.t.qbSCqq), t = (0, i.jsx)(a.xPt, {
       size: "xs",
       color: "currentColor"
@@ -551,10 +549,10 @@ class R extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       onMouseEnter: e,
       onClick: t,
       onFocus: n,
@@ -567,45 +565,46 @@ class R extends s.Component {
 }
 class D extends s.Component {
   renderContent() {
-    let e, t;
-    let {
-      navigationRecord: n,
-      children: r
-    } = this.props, {
-      enabled: s
-    } = o.c.getCurrentConfig({
-      location: "QuickSwitcherResults"
-    }, {
-      autoTrackExposure: !0
-    }), c = s ? a.iWm : a.jje;
+    let e, t, {
+        navigationRecord: n,
+        children: r
+      } = this.props,
+      {
+        enabled: s
+      } = l.c.getCurrentConfig({
+        location: "QuickSwitcherResults"
+      }, {
+        autoTrackExposure: !0
+      }),
+      c = s ? a.iWm : a.jje;
     switch (n.type) {
-      case l.Ky.SHOP:
+      case o.Ky.SHOP:
         e = j.NW.string(j.t.pWG4zc), t = (0, i.jsx)(a.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.NITRO_HOME:
+      case o.Ky.NITRO_HOME:
         e = j.NW.string(j.t.Ipxkoq), t = (0, i.jsx)(a.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.QUEST_HOME:
+      case o.Ky.QUEST_HOME:
         e = j.NW.string(j.t.JALI2N), t = (0, i.jsx)(a.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.APPS_HOME:
+      case o.Ky.APPS_HOME:
         e = j.NW.string(j.t.PHjkRE), t = (0, i.jsx)(c, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case l.Ky.SETTINGS:
+      case o.Ky.SETTINGS:
         var d;
-        e = null !== (d = n.label) && void 0 !== d ? d : j.NW.string(j.t["3D5yo6"]), t = (0, i.jsx)(a.ewm, {
+        e = null != (d = n.label) ? d : j.NW.string(j.t["3D5yo6"]), t = (0, i.jsx)(a.ewm, {
           size: "xs",
           color: "currentColor"
         });
@@ -638,10 +637,10 @@ class D extends s.Component {
       onContextMenu: r,
       focused: s,
       score: a,
-      id: o
+      id: l
     } = this.props;
-    return (0, i.jsx)(v, {
-      id: o,
+    return (0, i.jsx)(S, {
+      id: l,
       onMouseEnter: e,
       onClick: t,
       onFocus: n,

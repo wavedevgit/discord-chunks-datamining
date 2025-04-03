@@ -5,13 +5,13 @@ r.d(t, {
 var n = r(200651),
   a = r(192379),
   i = r(894582),
-  o = r(29978),
-  c = r(772848),
+  c = r(29978),
+  o = r(772848),
   s = r(286379),
   p = r(343817),
   l = r(797614),
-  d = r(626135),
-  u = r(353250),
+  u = r(626135),
+  d = r(353250),
   h = r(599857),
   f = r(981631);
 
@@ -75,10 +75,10 @@ let v = e => {
     return a
   }(e, ["captchaService", "sitekey", "rqdata", "onRender", "onVerify", "onError", "onOpen", "onClose", "onChalExpired", "size", "userflow"]);
   let x = a.useRef(null),
-    P = (0, c.Z)(),
+    P = (0, o.Z)(),
     [S, k] = a.useState(!1),
     A = a.useCallback(e => {
-      d.default.track(f.rMx.CAPTCHA_EVENT, {
+      u.default.track(f.rMx.CAPTCHA_EVENT, {
         captcha_event_name: e,
         captcha_service: t,
         sitekey: r,
@@ -94,9 +94,9 @@ let v = e => {
     D = a.useCallback(() => {
       if (t === p.hP.HCAPTCHA) {
         var e, r;
-        null != v && "" !== v && null != x.current && (null === (e = x.current) || void 0 === e || e.setData({
+        null != v && "" !== v && null != x.current && (null == (e = x.current) || e.setData({
           rqdata: v
-        })), "invisible" === w && null != x.current && (null === (r = x.current) || void 0 === r || r.execute())
+        })), "invisible" === w && null != x.current && (null == (r = x.current) || r.execute())
       }
     }, [v, x, w, t]),
     N = a.useCallback(() => {
@@ -114,10 +114,10 @@ let v = e => {
       A("verify"), I("verify"), O(e)
     }, [I, O, A]),
     T = a.useCallback(() => {
-      A("render"), (0, u.emitCaptchaDistributionMetric)(R), null == m || m()
+      A("render"), (0, d.emitCaptchaDistributionMetric)(R), null == m || m()
     }, [m, A, R]),
     Z = a.useCallback(() => {
-      A("open"), I("open"), (0, u.emitCaptchaDistributionMetric)(R), null == C || C()
+      A("open"), I("open"), (0, d.emitCaptchaDistributionMetric)(R), null == C || C()
     }, [I, C, A, R]),
     M = a.useCallback(() => {
       A("close"), null == E || E(), D()
@@ -125,7 +125,7 @@ let v = e => {
     q = a.useCallback(() => {
       A("chal-expire"), null == j || j()
     }, [j, A]);
-  return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(o.Z, b(y({}, _), {
+  return ((null == r || "" === r) && (r = f.OL7), t === p.hP.RECAPTCHA) ? (0, n.jsx)(c.Z, b(y({}, _), {
     onLoad: N,
     onRender: T,
     onVerify: V,
@@ -150,7 +150,7 @@ let v = e => {
     onClose: M,
     size: w,
     reCaptchaCompat: !1
-  })) : (0, n.jsx)(o.Z, b(y({}, _), {
+  })) : (0, n.jsx)(c.Z, b(y({}, _), {
     sitekey: r,
     onLoad: N,
     onRender: T,

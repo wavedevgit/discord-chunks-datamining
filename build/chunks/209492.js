@@ -16,10 +16,7 @@ var r = n(544891),
   h = n(981631);
 async function f() {
   if (null == i) {
-    if (!(u.isPlatformEmbedded && ((0, u.isMac)() || (0, u.isWindows)()))) {
-      new l.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
-      return
-    }
+    if (!(u.isPlatformEmbedded && ((0, u.isMac)() || (0, u.isWindows)()))) return void new l.Z("CloudSyncUtils").warn("CloudSync is not supported on this platform");
     await p.ZP.ensureModule("discord_cloudsync"), (i = new(p.ZP.getCloudSync())).on("state", t => o.Z.dispatch({
       type: "GAME_CLOUD_SYNC_UPDATE",
       state: t
@@ -39,7 +36,7 @@ function y(t, e) {
     }(),
     u = c.Z.getState(t, e);
   if (null == u) throw Error("No dispatch state for ".concat(t, ":").concat(e));
-  let p = null !== (n = u.storage) && void 0 !== n ? n : {},
+  let p = null != (n = u.storage) ? n : {},
     f = (0, d.Tu)(t, e),
     y = s.default.getToken();
   if (null == y) throw Error("Cannot use cloud sync when not authenticated.");

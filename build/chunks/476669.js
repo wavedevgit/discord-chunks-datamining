@@ -5,16 +5,16 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(239091),
-  a = n(129861),
+  a = n(239091),
+  o = n(129861),
   s = n(600164),
-  c = n(610969);
+  c = n(983184);
 class u extends i.PureComponent {
   handleContextMenu(e, t) {
-    (0, o.jW)(e, async () => {
+    (0, a.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("67110")]).then(n.bind(n, 881351));
+      } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -61,7 +61,7 @@ class u extends i.PureComponent {
         "aria-label": e.username,
         size: l.EFr.SIZE_24,
         className: c.avatar
-      }), (0, r.jsx)(a.Z, {
+      }), (0, r.jsx)(o.Z, {
         user: e,
         className: c.tag,
         usernameClass: c.username,

@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => E
 }), t(47120);
@@ -16,18 +16,18 @@ var o = t(481060),
   p = t(681837),
   b = t(502762),
   y = t(530),
-  v = t(871604),
-  m = t(952124),
-  g = t(53558),
-  I = t(544989),
-  j = t(934861),
+  m = t(871604),
+  g = t(952124),
+  I = t(53558),
+  j = t(544989),
+  v = t(934861),
   h = t(4517),
   _ = t(740628),
   x = t(398145),
   O = t(228168),
   Z = t(981631),
   P = t(388032),
-  N = t(84695);
+  N = t(405666);
 
 function E(e) {
   let {
@@ -67,9 +67,9 @@ function E(e) {
           user: n,
           displayProfile: D,
           profileType: O.y0.FULL_SIZE,
-          children: [(0, r.jsx)(I.Z, {
+          children: [(0, r.jsx)(j.Z, {
             profileType: O.y0.FULL_SIZE,
-            children: (0, r.jsx)(m.Z, {
+            children: (0, r.jsx)(g.Z, {
               user: n,
               guildId: U,
               onCloseProfile: M
@@ -95,18 +95,18 @@ function E(e) {
                 onCloseProfile: M
               }), (0, r.jsxs)("div", {
                 className: N.headerButtons,
-                children: [(0, r.jsx)(j.c, {
+                children: [(0, r.jsx)(v.c, {
                   userId: n.id,
                   onClose: M,
                   className: N.messageTextButton
-                }), (0, r.jsx)(j.v, {
+                }), (0, r.jsx)(v.v, {
                   userId: n.id,
                   onClose: M,
                   tooltipContainerClassName: N.messageIconButton
-                }), (0, r.jsx)(g.Z, {
+                }), (0, r.jsx)(I.Z, {
                   user: n,
                   guildId: U
-                }), (0, r.jsx)(v.Z, {
+                }), (0, r.jsx)(m.Z, {
                   user: n
                 })]
               })]

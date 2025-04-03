@@ -15,7 +15,7 @@ var n = l(200651),
   x = l(713081),
   h = l(905128),
   g = l(151494),
-  f = l(328472);
+  f = l(632149);
 class p extends r.PureComponent {
   render() {
     let {
@@ -59,7 +59,7 @@ function C(e) {
     subscriptionChange: s
   } = e, c = (0, o.e7)([h.Z], () => null != h.Z.getStateForGuild(t.id));
   return r.useEffect(() => {
-    !c && (0, x.Fm)(t.id)
+    c || (0, x.Fm)(t.id)
   }, [c, t.id]), (0, n.jsxs)("div", {
     className: i()(f.subscription, l),
     children: [(0, n.jsx)(a.Z, {

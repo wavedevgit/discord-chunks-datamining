@@ -10,7 +10,7 @@ var a = n(200651),
   l = n(626135),
   c = n(981631),
   d = n(388032),
-  N = n(490126);
+  N = n(589061);
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,13 +41,13 @@ class h extends i.Component {
     t.displayName !== e.device.displayName && this.track()
   }
   renderBody() {
-    let e;
-    let {
-      device: t,
-      certifiedDeviceMetadata: n
-    } = this.props, {
-      devicePreference: r
-    } = this.state;
+    let e, {
+        device: t,
+        certifiedDeviceMetadata: n
+      } = this.props,
+      {
+        devicePreference: r
+      } = this.state;
     switch (t.type) {
       case c.QyF.INPUT:
         e = null != n ? d.NW.format(d.t.NqNqy8, {

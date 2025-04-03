@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => a
@@ -13,16 +13,12 @@ function a() {
     createGuildApplication: async (e, n, r, o) => {
       a(void 0);
       try {
-        if (t(!0), null == l.current) {
-          let t = await s.ZP.createApplication({
-            name: o,
-            guildId: e.id,
-            type: r,
-            teamId: n
-          });
-          l.current = t
-        }
-        return await s.ZP.getApplicationsForGuild(e.id, {
+        return t(!0), null == l.current && (l.current = await s.ZP.createApplication({
+          name: o,
+          guildId: e.id,
+          type: r,
+          teamId: n
+        })), await s.ZP.getApplicationsForGuild(e.id, {
           type: r,
           includeTeam: !0
         }), !0

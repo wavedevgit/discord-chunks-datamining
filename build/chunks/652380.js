@@ -33,7 +33,7 @@ var r = n(200651),
   T = n(749912),
   A = n(815183),
   B = n(899457),
-  R = n(660207);
+  R = n(409667);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,7 +81,7 @@ function L(e) {
     platform: f.y$.CROSS_PLATFORM,
     userId: "123",
     questId: e.id,
-    claimedAt: null !== (n = null === (t = e.userStatus) || void 0 === t ? void 0 : t.claimedAt) && void 0 !== n ? n : ""
+    claimedAt: null != (n = null == (t = e.userStatus) ? void 0 : t.claimedAt) ? n : ""
   }
 }
 
@@ -187,16 +187,18 @@ function U() {
   }, e => e.rewardsConfig.rewards).exhaustive());
 
   function el(e, t) {
-    var n, r;
-    ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) && J(D(q({}, Y), {
-      config: (n = Y.config, r = {
-        [e]: t
-      }, (0, i.EQ)(n).with({
-        configVersion: 2
-      }, e => D(q({}, e), {
-        assets: q({}, e.assets, r)
-      })).exhaustive())
-    }))
+    if ("hero" === e || "questBarHero" === e || "gameTile" === e || "logotype" === e || "heroVideo" === e || "questBarHeroVideo" === e) {
+      var n, r;
+      J(D(q({}, Y), {
+        config: (n = Y.config, r = {
+          [e]: t
+        }, (0, i.EQ)(n).with({
+          configVersion: 2
+        }, e => D(q({}, e), {
+          assets: q({}, e.assets, r)
+        })).exhaustive())
+      }))
+    }
   }
 
   function ec(e, t) {
@@ -204,8 +206,8 @@ function U() {
     J(D(q({}, Y), {
       config: D(q({}, Y.config), {
         videoMetadata: D(q({}, Y.config.videoMetadata), {
-          messages: null !== (o = null === (n = Y.config.videoMetadata) || void 0 === n ? void 0 : n.messages) && void 0 !== o ? o : {},
-          assets: D(q({}, null === (r = Y.config.videoMetadata) || void 0 === r ? void 0 : r.assets), {
+          messages: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.messages) ? o : {},
+          assets: D(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.assets), {
             [e]: t
           })
         })
@@ -214,16 +216,18 @@ function U() {
   }
 
   function ed(e, t) {
-    var n, r;
-    ("questName" === e || "gameTitle" === e || "gamePublisher" === e) && J(D(q({}, Y), {
-      config: (n = Y.config, r = {
-        [e]: t
-      }, (0, i.EQ)(n).with({
-        configVersion: 2
-      }, e => D(q({}, e), {
-        messages: q({}, e.messages, r)
-      })).exhaustive())
-    }))
+    if ("questName" === e || "gameTitle" === e || "gamePublisher" === e) {
+      var n, r;
+      J(D(q({}, Y), {
+        config: (n = Y.config, r = {
+          [e]: t
+        }, (0, i.EQ)(n).with({
+          configVersion: 2
+        }, e => D(q({}, e), {
+          messages: q({}, e.messages, r)
+        })).exhaustive())
+      }))
+    }
   }
 
   function eu(e, t) {
@@ -231,8 +235,8 @@ function U() {
     J(D(q({}, Y), {
       config: D(q({}, Y.config), {
         videoMetadata: D(q({}, Y.config.videoMetadata), {
-          assets: null !== (o = null === (n = Y.config.videoMetadata) || void 0 === n ? void 0 : n.assets) && void 0 !== o ? o : {},
-          messages: D(q({}, null === (r = Y.config.videoMetadata) || void 0 === r ? void 0 : r.messages), {
+          assets: null != (o = null == (n = Y.config.videoMetadata) ? void 0 : n.assets) ? o : {},
+          messages: D(q({}, null == (r = Y.config.videoMetadata) ? void 0 : r.messages), {
             [e]: t
           })
         })
@@ -241,20 +245,22 @@ function U() {
   }
 
   function ep(e, t, n) {
-    var r, o;
-    ("name" === e || "nameWithArticle" === e) && J(D(q({}, Y), {
-      config: (r = Y.config, o = {
-        [e]: t
-      }, (0, i.EQ)(r).with({
-        configVersion: 2
-      }, e => D(q({}, e), {
-        rewardsConfig: D(q({}, e.rewardsConfig), {
-          rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? D(q({}, e), {
-            messages: q({}, e.messages, o)
-          }) : e)
-        })
-      })).exhaustive())
-    }))
+    if ("name" === e || "nameWithArticle" === e) {
+      var r, o;
+      J(D(q({}, Y), {
+        config: (r = Y.config, o = {
+          [e]: t
+        }, (0, i.EQ)(r).with({
+          configVersion: 2
+        }, e => D(q({}, e), {
+          rewardsConfig: D(q({}, e.rewardsConfig), {
+            rewards: e.rewardsConfig.rewards.map((e, t) => t === n ? D(q({}, e), {
+              messages: q({}, e.messages, o)
+            }) : e)
+          })
+        })).exhaustive())
+      }))
+    }
   }
 
   function em(e, t) {
@@ -345,17 +351,17 @@ function U() {
           title: "Video Title",
           assetKey: "videoTitle",
           onMessageChange: eu,
-          initialValue: null === (e = Y.config.videoMetadata) || void 0 === e ? void 0 : e.messages.videoTitle
+          initialValue: null == (e = Y.config.videoMetadata) ? void 0 : e.messages.videoTitle
         }), (0, r.jsx)(N.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
           onMessageChange: eu,
-          initialValue: null === (t = Y.config.videoMetadata) || void 0 === t ? void 0 : t.messages.videoEndCtaTitle
+          initialValue: null == (t = Y.config.videoMetadata) ? void 0 : t.messages.videoEndCtaTitle
         }), (0, r.jsx)(N.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
           onMessageChange: eu,
-          initialValue: null === (s = Y.config.videoMetadata) || void 0 === s ? void 0 : s.messages.videoEndCtaSubtitle
+          initialValue: null == (s = Y.config.videoMetadata) ? void 0 : s.messages.videoEndCtaSubtitle
         })]
       })]
     }), (0, r.jsx)(p.X6q, {
@@ -375,7 +381,7 @@ function U() {
         assetKey: "heroVideo",
         onFileChange: el,
         filters: M,
-        initialValue: null !== (F = Y.config.assets.heroVideo) && void 0 !== F ? F : void 0
+        initialValue: null != (F = Y.config.assets.heroVideo) ? F : void 0
       }), (0, r.jsx)(P.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
@@ -387,7 +393,7 @@ function U() {
         assetKey: "questBarHeroVideo",
         onFileChange: el,
         filters: M,
-        initialValue: null !== (X = Y.config.assets.questBarHeroVideo) && void 0 !== X ? X : void 0
+        initialValue: null != (X = Y.config.assets.questBarHeroVideo) ? X : void 0
       }), (0, r.jsx)(P.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
@@ -406,31 +412,31 @@ function U() {
           assetKey: "videoPlayerVideo",
           onFileChange: ec,
           filters: M,
-          initialValue: null === (d = Y.config.videoMetadata) || void 0 === d ? void 0 : d.assets.videoPlayerVideo
+          initialValue: null == (d = Y.config.videoMetadata) ? void 0 : d.assets.videoPlayerVideo
         }), (0, r.jsx)(P.Z, {
           title: "Quest Video (Low Resolution)",
           assetKey: "videoPlayerVideoLowRes",
           onFileChange: ec,
           filters: M,
-          initialValue: null === (u = Y.config.videoMetadata) || void 0 === u ? void 0 : u.assets.videoPlayerVideoLowRes
+          initialValue: null == (u = Y.config.videoMetadata) ? void 0 : u.assets.videoPlayerVideoLowRes
         }), (0, r.jsx)(P.Z, {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: ec,
           filters: W,
-          initialValue: null === (L = Y.config.videoMetadata) || void 0 === L ? void 0 : null === (k = L.assets) || void 0 === k ? void 0 : k.videoPlayerThumbnail
+          initialValue: null == (L = Y.config.videoMetadata) || null == (k = L.assets) ? void 0 : k.videoPlayerThumbnail
         }), (0, r.jsx)(P.Z, {
           title: "Quest Bar Preview Video (optional)",
           assetKey: "questBarPreviewVideo",
           onFileChange: ec,
           filters: M,
-          initialValue: null === (V = Y.config.videoMetadata) || void 0 === V ? void 0 : V.assets.questBarPreviewVideo
+          initialValue: null == (V = Y.config.videoMetadata) ? void 0 : V.assets.questBarPreviewVideo
         }), (0, r.jsx)(P.Z, {
           title: "Quest Home Video (optional)",
           assetKey: "questHomeVideo",
           onFileChange: ec,
           filters: M,
-          initialValue: null === (U = Y.config.videoMetadata) || void 0 === U ? void 0 : U.assets.questHomeVideo
+          initialValue: null == (U = Y.config.videoMetadata) ? void 0 : U.assets.questHomeVideo
         })]
       })]
     }), ei.map((e, t) => (0, r.jsxs)("div", {
@@ -454,19 +460,21 @@ function U() {
           title: "Asset",
           assetKey: "asset",
           onFileChange: (e, n) => (function(e, t, n) {
-            var r;
-            "asset" === e && J(D(q({}, Y), {
-              config: (r = Y.config, (0, i.EQ)(r).with({
-                configVersion: 2
-              }, e => D(q({}, e), {
-                rewardsConfig: D(q({}, e.rewardsConfig), {
-                  rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? D(q({}, e), {
-                    asset: t,
-                    skuId: ""
-                  }) : e)
-                })
-              })).exhaustive())
-            }))
+            if ("asset" === e) {
+              var r;
+              J(D(q({}, Y), {
+                config: (r = Y.config, (0, i.EQ)(r).with({
+                  configVersion: 2
+                }, e => D(q({}, e), {
+                  rewardsConfig: D(q({}, e.rewardsConfig), {
+                    rewards: e.rewardsConfig.rewards.map((e, r) => r === n ? D(q({}, e), {
+                      asset: t,
+                      skuId: ""
+                    }) : e)
+                  })
+                })).exhaustive())
+              }))
+            }
           })(e, n, t),
           filters: M,
           initialValue: e.asset
@@ -578,7 +586,7 @@ function U() {
           children: "Quest Bar"
         }), (0, r.jsxs)("div", {
           className: R.questBarPreviewWrapper,
-          children: [(null === (H = Y.userStatus) || void 0 === H ? void 0 : H.claimedAt) != null && (0, r.jsx)(p.Text, {
+          children: [(null == (H = Y.userStatus) ? void 0 : H.claimedAt) != null && (0, r.jsx)(p.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
@@ -616,7 +624,7 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Channel Call Header"
-        }), (null === (z = Y.userStatus) || void 0 === z ? void 0 : z.claimedAt) != null && (0, r.jsx)(p.Text, {
+        }), (null == (z = Y.userStatus) ? void 0 : z.claimedAt) != null && (0, r.jsx)(p.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
@@ -678,13 +686,13 @@ function U() {
             (0, p.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([n.e("29976"), n.e("32249"), n.e("51643")]).then(n.bind(n, 536687));
+              } = await Promise.all([n.e("29976"), n.e("32249"), n.e("63942")]).then(n.bind(n, 536687));
               return t => {
                 var n;
                 return (0, r.jsx)(e, D(q({}, t), {
                   openStartClockTime: performance.now(),
                   videoSessionId: "fake-quest-session-id",
-                  questId: null !== (n = Y.id) && void 0 !== n ? n : "fake-quest-id",
+                  questId: null != (n = Y.id) ? n : "fake-quest-id",
                   overrideQuest: Y,
                   autoplay: !0
                 }))

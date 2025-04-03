@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(65912),
   u = n(564488),
   m = n(388032),
-  g = n(281614);
+  g = n(914661);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,9 +53,9 @@ function f(e) {
     triggerType: n
   } = e, f = i.useMemo(() => () => (0, o.ep)(t, n), [t, n]), [b] = i.useState(f), [x, j] = i.useState(!1), {
     editingRule: N,
-    createNewEditingRule: v
+    createNewEditingRule: _
   } = (0, d.V)(), {
-    getDefaultRuleName: _
+    getDefaultRuleName: v
   } = c.I6[n], C = !(0, o.Vb)(N) && (null == N ? void 0 : N.triggerType) === n, [O, y] = i.useState(C ? N : b), I = (0, l.q_F)({
     opacity: +!C,
     pointerEvents: C ? "none" : "all",
@@ -93,7 +93,7 @@ function f(e) {
       children: (0, r.jsxs)(l.P3F, {
         className: g.addAnotherRuleCardContainer,
         onClick: () => {
-          v(t, n)
+          _(t, n)
         },
         children: [(0, r.jsx)(l.oFk, {
           size: "custom",
@@ -105,7 +105,7 @@ function f(e) {
           variant: "text-md/semibold",
           color: "text-link",
           children: m.NW.format(m.t.dNjRAQ, {
-            ruleName: _()
+            ruleName: v()
           })
         })]
       })

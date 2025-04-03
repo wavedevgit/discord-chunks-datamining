@@ -1,6 +1,6 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 });
 var i = n(200651),
   r = n(481060),
@@ -15,24 +15,24 @@ var i = n(200651),
   h = n(620954),
   f = n(987650),
   m = n(388032),
-  g = n(718238);
+  g = n(484762);
 
-function v(e, t, n) {
-  var v;
-  let y = d.default.getUser(e);
-  if (null == y) return null;
-  let O = u.Z.getCurrentlySelectedChannelId(),
-    b = c.Z.getChannel(O),
+function y(e, t, n) {
+  var y;
+  let O = d.default.getUser(e);
+  if (null == O) return null;
+  let v = u.Z.getCurrentlySelectedChannelId(),
+    b = c.Z.getChannel(v),
     _ = l.Z.getApplication(t),
     E = a.ZP.getRunningGames().find(e => e.id === t),
-    x = null !== (v = null == E ? void 0 : E.name) && void 0 !== v ? v : null == _ ? void 0 : _.name,
-    I = (0, p.oY)(null == b ? void 0 : b.guild_id, null == b ? void 0 : b.id, y),
+    x = null != (y = null == E ? void 0 : E.name) ? y : null == _ ? void 0 : _.name,
+    I = (0, p.oY)(null == b ? void 0 : b.guild_id, null == b ? void 0 : b.id, O),
     j = (0, i.jsxs)("div", {
       className: g.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: g.nowPlayingNotificationIcon,
         children: (0, i.jsx)(o.Z, {
-          user: y,
+          user: O,
           "aria-hidden": !0,
           size: r.EFr.SIZE_24
         })
@@ -43,7 +43,7 @@ function v(e, t, n) {
           color: "interactive-normal",
           className: g.bodyText,
           children: m.NW.format(m.t["q7/rgo"], {
-            username: null != I ? I : y.username,
+            username: null != I ? I : O.username,
             gameName: x,
             gameIcon: () => null != _ || null != E ? (0, i.jsx)(s.Z, {
               game: _,
@@ -60,7 +60,7 @@ function v(e, t, n) {
       trackClick: S
     } = (0, h.R)(f.n0.NowPlayingNotification, {
       notif_type: f.n0.NowPlayingNotification,
-      notif_user_id: y.id,
+      notif_user_id: O.id,
       activity_type: n.type,
       activity_name: null != x ? x : n.name
     });

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => p
 });
@@ -20,7 +20,7 @@ let c = {},
 class d extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    c = null !== (t = null == e ? void 0 : e.selectedResourceChannelIdByGuildId) && void 0 !== t ? t : {}
+    c = null != (t = null == e ? void 0 : e.selectedResourceChannelIdByGuildId) ? t : {}
   }
   getState() {
     return {
@@ -32,7 +32,7 @@ class d extends(r = i.ZP.PersistedStore) {
   }
   getHomeNavigationChannelId(e) {
     var t;
-    return null == e ? null : null !== (t = c[e]) && void 0 !== t ? t : u[e]
+    return null == e ? null : null != (t = c[e]) ? t : u[e]
   }
 }
 s(d, "displayName", "GuildOnboardingHomeNavigationStore"), s(d, "persistKey", "GuildOnboardingHomeNavigationStore");
@@ -46,7 +46,7 @@ let p = new d(l.Z, {
     let r = o.Z.getChannel(t),
       i = c[n],
       l = u[n];
-    !((null == r ? void 0 : r.isThread()) && (null == r ? void 0 : r.parent_id) != null && [l, i].includes(null == r ? void 0 : r.parent_id)) && (t !== i && delete c[n], t !== l && delete u[n])
+    (null == r ? void 0 : r.isThread()) && (null == r ? void 0 : r.parent_id) != null && [l, i].includes(null == r ? void 0 : r.parent_id) || (t !== i && delete c[n], t !== l && delete u[n])
   },
   SELECT_HOME_RESOURCE_CHANNEL: function(e) {
     let {

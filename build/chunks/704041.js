@@ -1,7 +1,7 @@
 /** Chunk was on 11212 **/
 "use strict";
 a.d(e, {
-  Z: () => v
+  Z: () => x
 }), a(47120);
 var c = a(200651),
   d = a(192379),
@@ -19,7 +19,7 @@ var c = a(200651),
   g = a(701488),
   j = a(231338),
   h = a(388032),
-  y = a(887712);
+  y = a(75923);
 
 function _(t) {
   let {
@@ -68,7 +68,7 @@ function B(t) {
     })]
   })
 }
-let v = t => {
+let x = t => {
   var e;
   let {
     guildId: a,
@@ -76,7 +76,7 @@ let v = t => {
     previewMode: o = !1,
     source: l,
     trackRankingItemInteraction: g
-  } = t, [j, v] = d.useState(o), x = d.useRef(null), O = (0, p.Z)({
+  } = t, [j, x] = d.useState(o), v = d.useRef(null), O = (0, p.Z)({
     guildId: a,
     leaderboardId: i,
     intervalOffset: 0
@@ -85,7 +85,7 @@ let v = t => {
     leaderboardId: i,
     intervalOffset: -1
   });
-  (0, s.Tbt)(x),
+  (0, s.Tbt)(v),
   function(t) {
     let {
       guildId: e,
@@ -106,8 +106,7 @@ let v = t => {
     d.useEffect(() => {
       n.current = s
     }), d.useEffect(() => {
-      let t, a;
-      let {
+      let t, a, {
         leaderboard: d,
         prevLeaderboard: s
       } = n.current;
@@ -117,7 +116,7 @@ let v = t => {
         var o, p;
         let e = s.guild_settings.sort_by_statistic_id,
           c = s.users[0];
-        t = null == c ? void 0 : c.user_id, a = null == c ? void 0 : null === (p = c.statistics) || void 0 === p ? void 0 : null === (o = p[e]) || void 0 === o ? void 0 : o.value
+        t = null == c ? void 0 : c.user_id, a = null == c || null == (p = c.statistics) || null == (o = p[e]) ? void 0 : o.value
       }
       f.default.track(m.rMx.LEADERBOARD_POPOUT_VIEWED, {
         guild_id: e,
@@ -129,7 +128,7 @@ let v = t => {
         ordered_leaderboard_user_ids: d.users.map(t => t.user_id),
         ordered_leaderboard_user_values: d.users.map(t => {
           var e, a;
-          return null !== (a = null === (e = t.statistics[i]) || void 0 === e ? void 0 : e.value) && void 0 !== a ? a : 0
+          return null != (a = null == (e = t.statistics[i]) ? void 0 : e.value) ? a : 0
         }),
         opened_from_source: c,
         last_interval_champion_id: t,
@@ -141,11 +140,11 @@ let v = t => {
     leaderboardId: i,
     source: l
   });
-  let S = (0, n.q)(null == O ? void 0 : null === (e = O.settings) || void 0 === e ? void 0 : e.application_id);
+  let S = (0, n.q)(null == O || null == (e = O.settings) ? void 0 : e.application_id);
   return null == O || null == S ? null : (0, c.jsx)(_, {
     children: (0, c.jsxs)("div", {
       className: y.popout,
-      ref: x,
+      ref: v,
       children: [(0, c.jsxs)("div", {
         className: y.content,
         children: [(0, c.jsx)(B, {
@@ -166,7 +165,7 @@ let v = t => {
           })]
         })]
       }), j ? (0, c.jsx)(s.P3F, {
-        onClick: () => v(!1),
+        onClick: () => x(!1),
         children: (0, c.jsx)("div", {
           className: y.exitPreviewModeButton,
           children: (0, c.jsx)(s.Text, {

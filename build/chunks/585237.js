@@ -1,17 +1,17 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => d
 });
 var r, i = n(200651);
 n(192379);
 var a = n(481060),
-  o = n(600164),
-  l = n(572752),
+  l = n(600164),
+  o = n(106887),
   s = ((r = s || {}).SMALL = "SMALL", r.MEDIUM = "MEDIUM", r.LARGE = "LARGE", r);
 let c = {
-    SMALL: l.dropdownSmall,
-    MEDIUM: l.dropdownMedium,
-    LARGE: l.dropdownLarge
+    SMALL: o.dropdownSmall,
+    MEDIUM: o.dropdownMedium,
+    LARGE: o.dropdownLarge
   },
   u = e => {
     var t, n, {
@@ -53,9 +53,9 @@ let c = {
       }
       return e
     }({}, p), n = n = {
-      children: (0, i.jsxs)(o.Z, {
-        align: o.Z.Align.CENTER,
-        children: [(0, i.jsx)(o.Z.Child, {
+      children: (0, i.jsxs)(l.Z, {
+        align: l.Z.Align.CENTER,
+        children: [(0, i.jsx)(l.Z.Child, {
           className: u,
           children: s
         }), null != r ? (0, i.jsxs)(a.P3F, {
@@ -64,11 +64,11 @@ let c = {
             e.stopPropagation(), null != r && r(e)
           },
           children: [(0, i.jsx)("div", {
-            className: l.arrowSeparator
+            className: o.arrowSeparator
           }), (0, i.jsx)(a.CJ0, {
             size: "md",
             color: "currentColor",
-            className: l.dropdownArrow
+            className: o.dropdownArrow
           })]
         }) : null]
       })

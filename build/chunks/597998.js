@@ -35,7 +35,7 @@ var r = n(200651),
   T = n(354459),
   A = n(927923),
   D = n(388032),
-  _ = n(174832);
+  _ = n(850999);
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -220,8 +220,8 @@ let M = l.forwardRef(function(e, t) {
     collapsed: V,
     mute: F,
     serverMute: B,
-    guildId: G,
-    nick: Y,
+    guildId: Y,
+    nick: G,
     isGuest: z,
     flipped: H,
     className: J,
@@ -240,7 +240,7 @@ let M = l.forwardRef(function(e, t) {
   return l.useEffect(() => {
     let e = !1,
       t = () => {
-        e === I.Z.isOpen() || (e = I.Z.isOpen()) || eo(!1)
+        e !== I.Z.isOpen() && ((e = I.Z.isOpen()) || eo(!1))
       };
     return I.Z.addChangeListener(t), () => I.Z.removeChangeListener(t)
   }, []), (0, r.jsx)(s.kL8, {
@@ -271,7 +271,7 @@ let M = l.forwardRef(function(e, t) {
       null == M || M(e, q)
     },
     onKeyDown: Z,
-    "aria-label": null !== (n = null != X ? X : Y) && void 0 !== n ? n : q.username,
+    "aria-label": null != (n = null != X ? X : G) ? n : q.username,
     focusProps: {
       offset: {
         right: 4
@@ -295,7 +295,7 @@ let M = l.forwardRef(function(e, t) {
           [_.avatarSpeaking]: R
         }),
         style: {
-          backgroundImage: "url(".concat(q.getAvatarURL(G, d === C.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(q.getAvatarURL(Y, d === C.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
@@ -304,7 +304,7 @@ let M = l.forwardRef(function(e, t) {
               [_.username]: !0,
               [_.usernameSpeaking]: !F && !B && R
             }),
-            children: [null != Y ? Y : w.ZP.getName(q), z ? (0, r.jsxs)("span", {
+            children: [null != G ? G : w.ZP.getName(q), z ? (0, r.jsxs)("span", {
               className: _.guestSuffix,
               children: ["\xa0", D.NW.string(D.t["pFO/Pj"])]
             }) : ""]
@@ -312,7 +312,7 @@ let M = l.forwardRef(function(e, t) {
           l = {
             primaryGuild: q.primaryGuild,
             userId: q.id,
-            contextGuildId: G,
+            contextGuildId: Y,
             isOverlay: O,
             disableTooltip: !0,
             className: o()(_.clanTag, O && _.isOverlay),
@@ -344,7 +344,7 @@ let M = l.forwardRef(function(e, t) {
             [_.optionsActive]: ei
           }),
           onClick: function(e) {
-            null != G && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, v.D)(e, q, en, {
+            null != Y && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, v.D)(e, q, en, {
               context: et
             }, (e, t) => {
               (0, b.o)({
@@ -418,7 +418,7 @@ function R(e) {
   } = e, u = [];
   if (n) {
     let e;
-    e = i ? s.v0G : l ? s.v0G : s.nRN;
+    e = i || l ? s.v0G : s.nRN;
     let n = (0, r.jsx)(e, {
       className: o()(_.icon, t, {
         [_.iconServer]: i

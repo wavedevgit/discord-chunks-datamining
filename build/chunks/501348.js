@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => er
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(704215),
+  l = n(442837),
+  o = n(704215),
   c = n(524437),
   d = n(780384),
   u = n(481060),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(540059),
   O = n(605236),
   C = n(786761),
-  v = n(3148),
-  S = n(739566),
+  S = n(3148),
+  v = n(739566),
   T = n(753206),
   I = n(311476),
   y = n(921801),
@@ -41,8 +41,8 @@ var r = n(200651),
   B = n(921944),
   M = n(959517),
   U = n(388032),
-  V = n(379673),
-  G = n(685786);
+  V = n(716827),
+  G = n(20493);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,31 +88,31 @@ let Y = {
   J = "1337",
   Q = e => {
     let t = 0;
-    return [(0, C.e5)(z(H({}, (0, v.ZP)({
+    return [(0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.oZxkEh)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, v.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: (0, d.wj)(e) ? U.NW.string(U.t["WGb/v7"]) : U.NW.string(U.t["62m4m5"])
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, v.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.a0Byo6)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, v.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.bmwEWF)
     })), {
       state: L.yb.SENT,
       id: "".concat(t++)
-    })), (0, C.e5)(z(H({}, (0, v.ZP)({
+    })), (0, C.e5)(z(H({}, (0, S.ZP)({
       channelId: J,
       content: U.NW.string(U.t.hK9QW1)
     })), {
@@ -122,7 +122,7 @@ let Y = {
   },
   $ = () => {
     let e = (0, j.Q3)("ThemeTitle"),
-      t = (0, o.e7)([x.Z], () => x.Z.isPreview),
+      t = (0, l.e7)([x.Z], () => x.Z.isPreview),
       {
         enabled: n
       } = I.Z.useExperiment({
@@ -261,7 +261,7 @@ class ee extends i.Component {
         outline: !0,
         "aria-hidden": !0,
         children: s.map((t, n) => (0, r.jsx)(T.Z, {
-          author: (0, S.ZH)(t),
+          author: (0, v.ZH)(t),
           message: t,
           compact: e,
           isGroupStart: n % 2 == 0,
@@ -604,7 +604,7 @@ class et extends ee {
       }), this.renderMessageGroupSpacingSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), o = (0, r.jsxs)(y.F, {
+    }), l = (0, r.jsxs)(y.F, {
       setting: W.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, r.jsx)(u.Text, {
         variant: "text-lg/medium",
@@ -613,7 +613,7 @@ class et extends ee {
       }), this.renderFontScaleSlider(), this.renderZoomSlider(), (0, r.jsx)(u.$i$, {
         className: V.divider
       })]
-    }), l = (0, r.jsx)(y.F, {
+    }), o = (0, r.jsx)(y.F, {
       setting: W.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), d = (0, r.jsx)(u.Text, {
@@ -628,7 +628,7 @@ class et extends ee {
     return (0, r.jsxs)(u.hjN, {
       tag: u.RB0.H1,
       title: U.NW.string(U.t["iHH+k5"]),
-      children: [this.renderVisualRefreshOverride(), t, n, s, a, o, l, d]
+      children: [this.renderVisualRefreshOverride(), t, n, s, a, l, o, d]
     })
   }
 }
@@ -647,9 +647,9 @@ function er() {
     s = Z.hg.useSetting(),
     a = Z.YC.useSetting();
   (0, p.ZP)(() => {
-    en(l.z.CLIENT_THEMES_SETTINGS_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(l.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
+    en(o.z.CLIENT_THEMES_SETTINGS_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_BADGE), en(o.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK)
   });
-  let c = (0, o.cj)([R.Z, D.ZP, b.Z, A.default, x.Z], () => {
+  let c = (0, l.cj)([R.Z, D.ZP, b.Z, A.default, x.Z], () => {
       var e, t;
       return {
         theme: R.Z.theme,
@@ -660,7 +660,7 @@ function er() {
         zoom: b.Z.zoom,
         messageGroupSpacing: b.Z.messageGroupSpacing,
         displayCompactAvatars: D.ZP.displayCompactAvatars,
-        isStaff: null !== (t = null === (e = A.default.getCurrentUser()) || void 0 === e ? void 0 : e.isStaff) && void 0 !== t && t,
+        isStaff: null != (t = null == (e = A.default.getCurrentUser()) ? void 0 : e.isStaff) && t,
         gradientPreset: x.Z.gradientPreset
       }
     }),

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Kt: () => m,
   Yt: () => p,
@@ -8,15 +8,15 @@ n.d(t, {
 var r = n(81643),
   i = n(974814),
   a = n(594174),
-  o = n(709054),
-  l = n(981631),
+  l = n(709054),
+  o = n(981631),
   s = n(388032);
 let c = new Date("06/16/2020"),
-  u = [l.V_K.AGE_RESTRICTED, l.V_K.EXPLICIT];
+  u = [o.V_K.AGE_RESTRICTED, o.V_K.EXPLICIT];
 
 function d() {
   let e = a.default.getCurrentUser();
-  return null != e && o.default.extractTimestamp(e.id) > c.getTime() && null == e.nsfwAllowed
+  return null != e && l.default.extractTimestamp(e.id) > c.getTime() && null == e.nsfwAllowed
 }
 
 function p(e) {

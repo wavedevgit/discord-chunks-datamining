@@ -10,11 +10,11 @@ var n, s, r, l = a(200651),
   u = a(982905),
   p = a(66037),
   _ = a(231338),
-  h = a(61860);
+  h = a(82212);
 let m = _.j_.MAIN_NAVIGATION_MENU;
 class N extends(r = i.PureComponent) {
   render() {
-    let e = (0, d.f)(this.context.router),
+    let e = (0, d.fQ)(this.context.router),
       {
         isOpen: t,
         dropdownLinks: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => h
 });
@@ -11,21 +11,21 @@ var i = n(200651),
   c = n(603618),
   u = n(388627),
   d = n(981631),
-  p = n(693396);
+  p = n(852266);
 
 function h(e) {
   let {
     locked: t
-  } = e, n = (0, u.II)(), h = null == n ? void 0 : n.id, f = null == n ? void 0 : n.altId, m = (0, o.e7)([s.default], () => s.default.getCurrentUser()), g = null != f ? f : h, v = (0, o.e7)([a.Z], () => null == g ? null : a.Z.getApplicationActivity(g), [g]), y = (0, r.useCallback)(() => {}, []), O = (0, r.useCallback)(() => (0, i.jsx)(c.lE, {
-    activity: v,
+  } = e, n = (0, u.II)(), h = null == n ? void 0 : n.id, f = null == n ? void 0 : n.altId, m = (0, o.e7)([s.default], () => s.default.getCurrentUser()), g = null != f ? f : h, y = (0, o.e7)([a.Z], () => null == g ? null : a.Z.getApplicationActivity(g), [g]), O = (0, r.useCallback)(() => {}, []), v = (0, r.useCallback)(() => (0, i.jsx)(c.lE, {
+    activity: y,
     currentUser: m,
     showInviteButton: !1
-  }), [v, m]);
+  }), [y, m]);
   return t ? null : (0, i.jsx)(l.r1, {
     containerClassName: p.container,
     listClassName: p.list,
-    closePopout: y,
-    renderHeader: O,
+    closePopout: O,
+    renderHeader: v,
     appContext: d.IlC.OVERLAY
   })
 }

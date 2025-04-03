@@ -10,8 +10,8 @@ var r = n(268146),
   u = n(695346),
   s = n(361291),
   a = n(592125),
-  d = n(430824),
-  c = n(131951),
+  c = n(430824),
+  d = n(131951),
   f = n(944486),
   v = n(594174),
   p = n(358085),
@@ -26,11 +26,11 @@ async function O(e, t) {
     A = f.Z.getVoiceChannelId(),
     N = a.Z.getChannel(A),
     _ = null == N ? void 0 : N.getGuildId(),
-    j = null === (n = d.Z.getGuild(_)) || void 0 === n ? void 0 : n.premiumTier;
+    j = null == (n = c.Z.getGuild(_)) ? void 0 : n.premiumTier;
   if (null == R || null == N || null == A) return [!1, "no user or channel"];
   let k = null;
   if (null == (k = "number" == typeof e ? l.ZP.getGameForPID(e) : e)) return [!1, "no source"];
-  if (!c.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(w.Eu.SCREEN_RECORDING, {
+  if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(w.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     })) return [!1, "no permission"];
   let {
@@ -38,7 +38,7 @@ async function O(e, t) {
     resolution: G,
     fps: L,
     soundshareEnabled: V
-  } = s.Z.getState(), M = null !== (P = null == t ? void 0 : t.preset) && void 0 !== P ? P : W, [x, U] = null !== (E = (0, g.Z)(M, R, j)) && void 0 !== E ? E : [], T = null !== (S = null != x ? x : null == t ? void 0 : t.resolution) && void 0 !== S ? S : G, H = null !== (y = null != U ? U : null == t ? void 0 : t.fps) && void 0 !== y ? y : L, Y = null !== (Z = null == t ? void 0 : t.previewDisabled) && void 0 !== Z ? Z : u.I0.getSetting(), F = null !== (I = null == t ? void 0 : t.soundshareEnabled) && void 0 !== I ? I : V;
+  } = s.Z.getState(), M = null != (P = null == t ? void 0 : t.preset) ? P : W, [x, U] = null != (E = (0, g.Z)(M, R, j)) ? E : [], T = null != (S = null != x ? x : null == t ? void 0 : t.resolution) ? S : G, H = null != (y = null != U ? U : null == t ? void 0 : t.fps) ? y : L, Y = null != (Z = null == t ? void 0 : t.previewDisabled) ? Z : u.I0.getSetting(), F = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : V;
   return (0, h.Z)(M, T, H, R, j, N) || (M = m.tI.PRESET_VIDEO, T = m.LY.RESOLUTION_720, H = m.ws.FPS_30), (0, i.Rc)({
     preset: M,
     resolution: T,
@@ -75,7 +75,7 @@ async function O(e, t) {
       sourceIcon: e.icon
     }
   }(k)), D = D = {
-    audioSourceId: (null === (O = k.id) || void 0 === O ? void 0 : O.startsWith(r.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
+    audioSourceId: (null == (O = k.id) ? void 0 : O.startsWith(r.vA.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
     sound: F,
     previewDisabled: Y,
     goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs

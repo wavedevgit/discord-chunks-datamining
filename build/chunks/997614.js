@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(82965),
   _ = n(294629),
   C = n(390322),
-  v = n(871499),
-  y = n(131951),
-  x = n(459273),
+  y = n(871499),
+  x = n(131951),
+  v = n(459273),
   j = n(522651),
   O = n(795318),
   E = n(304388),
@@ -78,7 +78,7 @@ function T(e) {
   } = (0, a.j)(), D = t.getGuildId(), {
     mute: W,
     suppress: U
-  } = (0, _.Z)(t), B = (0, l.e7)([y.Z], () => y.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
+  } = (0, _.Z)(t), B = (0, l.e7)([x.Z], () => x.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
     isSoundboardButtonDisabled: H
   }), [G, V] = (0, d.cv)(F), {
     analyticsLocations: z
@@ -115,9 +115,9 @@ function T(e) {
   let $ = i.useRef(null),
     ee = i.useCallback(() => {
       var e;
-      null === (e = $.current) || void 0 === e || e.hidePopout()
+      null == (e = $.current) || e.hidePopout()
     }, []);
-  return (0, x.yp)({
+  return (0, v.yp)({
     event: N.CkL.TOGGLE_SOUNDBOARD,
     handler: ee
   }), (0, r.jsx)(E.Z, {
@@ -143,7 +143,7 @@ function T(e) {
         })
       })
     },
-    children: e => q ? (0, r.jsx)(v.d, Z(S({
+    children: e => q ? (0, r.jsx)(y.d, Z(S({
       themeable: T,
       label: Q(),
       iconComponent: M,
@@ -161,7 +161,7 @@ function T(e) {
       },
       color: e.isActive ? K ? "primaryDark" : Y === m.BK.GroupedButtonsRedMic || X ? "green" : void 0 : void 0,
       className: ""
-    })) : (0, r.jsx)(v.Z, Z(S({
+    })) : (0, r.jsx)(y.Z, Z(S({
       themeable: T,
       label: Q(),
       iconComponent: s.KY1,

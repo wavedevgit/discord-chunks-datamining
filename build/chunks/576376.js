@@ -1,7 +1,6 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 function r(e) {
-  let t;
-  let n = !1;
+  let t, n = !1;
   return function() {
     for (var r = arguments.length, i = Array(r), s = 0; s < r; s++) i[s] = arguments[s];
     return n || (n = !0, t = e(...i)), t

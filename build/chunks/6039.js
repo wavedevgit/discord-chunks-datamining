@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(393238),
+  a = n(481060),
+  o = n(393238),
   s = n(877604),
   c = n(998730),
   u = n(703656),
@@ -21,35 +21,35 @@ var r = n(200651),
   E = n(523924),
   O = n(390500),
   N = n(981631),
-  v = n(898625),
-  y = n(388032),
-  I = n(460950);
+  y = n(898625),
+  I = n(388032),
+  v = n(74816);
 
 function C(e) {
   let {
     guild: t,
     width: n,
     height: l
-  } = e, o = i.useMemo(() => (null == t ? void 0 : t.splash) != null ? p.ZP.getGuildSplashURL({
+  } = e, a = i.useMemo(() => (null == t ? void 0 : t.splash) != null ? p.ZP.getGuildSplashURL({
     id: null == t ? void 0 : t.id,
     splash: null == t ? void 0 : t.splash
-  }) : null, [null == t ? void 0 : t.splash, null == t ? void 0 : t.id]), a = (0, c.N)(o);
-  return null == o ? (0, r.jsx)("div", {
-    className: I.defaultGradient
+  }) : null, [null == t ? void 0 : t.splash, null == t ? void 0 : t.id]), o = (0, c.N)(a);
+  return null == a ? (0, r.jsx)("div", {
+    className: v.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Z, {
-      className: I.splash,
-      src: o,
-      imageClassName: I.cover,
+      className: v.splash,
+      src: a,
+      imageClassName: v.cover,
       width: n,
       height: l
-    }), null != a && (0, r.jsx)("div", {
-      className: I.splashGradient,
+    }), null != o && (0, r.jsx)("div", {
+      className: v.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(a, .16), " 0%, ").concat((0, h.aD)(a, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
-      className: I.splashGradient
+      className: v.splashGradient
     })]
   })
 }
@@ -60,7 +60,7 @@ let S = e => {
     ref: n,
     width: s,
     height: c
-  } = (0, a.Z)(), [p, h] = i.useState(v.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.Z)(), [p, h] = i.useState(y.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: j
   } = (0, l.cj)([b.Z], () => ({
@@ -73,12 +73,12 @@ let S = e => {
     P || f.Z.fetchRequestToJoinGuilds()
   }, [P]);
   let A = i.useCallback(() => {
-      h(Math.max(p, v.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(N.Z5c.ME)
+      h(Math.max(p, y.hO.FILLING)), f.Z.removeGuildJoinRequest(t), (0, u.uL)(N.Z5c.ME)
     }, [t, p]),
     Z = (e, t) => () => {
-      (0, o.h7j)(n => {
+      (0, a.h7j)(n => {
         var i, l;
-        return (0, r.jsx)(o.ConfirmModal, (i = function(e) {
+        return (0, r.jsx)(a.ConfirmModal, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -96,13 +96,13 @@ let S = e => {
           }
           return e
         }({
-          header: y.NW.string(y.t.y0CVen),
-          cancelText: y.NW.string(y.t.oEAioK),
+          header: I.NW.string(I.t.y0CVen),
+          cancelText: I.NW.string(I.t.oEAioK),
           onConfirm: t,
-          confirmText: y.NW.string(y.t.p89ACg),
-          confirmButtonColor: o.zxk.Colors.RED
+          confirmText: I.NW.string(I.t.p89ACg),
+          confirmButtonColor: a.zxk.Colors.RED
         }, n), l = l = {
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             children: e
@@ -121,20 +121,20 @@ let S = e => {
     },
     x = async () => {
       await f.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
-    }, L = Z(y.NW.format(y.t["9ZezpK"], {
+    }, L = Z(I.NW.format(I.t["9ZezpK"], {
       name: null == j ? void 0 : j.name
-    }), A), w = Z(y.NW.format(y.t.fJwWVl, {
+    }), A), w = Z(I.NW.format(I.t.fJwWVl, {
       name: null == j ? void 0 : j.name
     }), A);
   return (0, r.jsxs)("div", {
-    className: I.page,
+    className: v.page,
     ref: n,
     children: [(0, r.jsx)(C, {
       guild: j,
       height: c,
       width: s
     }), (0, r.jsx)("div", {
-      className: I.contentWrapper,
+      className: v.contentWrapper,
       children: (() => {
         if (null == S) return null;
         switch (S.applicationStatus) {
@@ -145,9 +145,9 @@ let S = e => {
             });
           case m.wB.REJECTED:
             return (0, r.jsx)(E.Z, {
-              reapplyText: y.NW.string(y.t.I1LYVl),
+              reapplyText: I.NW.string(I.t.I1LYVl),
               onReapply: x,
-              confirmText: y.NW.string(y.t.g9tK0t),
+              confirmText: I.NW.string(I.t.g9tK0t),
               onWithdrawApplication: L,
               rejectionReason: S.rejectionReason,
               guild: j
@@ -161,7 +161,7 @@ let S = e => {
         }
       })()
     }), (0, r.jsx)("div", {
-      className: I.dragRegion
+      className: v.dragRegion
     })]
   })
 }

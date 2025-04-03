@@ -4,8 +4,8 @@ t.d(n, {
 }), t(47120);
 var l = t(200651),
   a = t(192379),
-  r = t(120356),
-  i = t.n(r),
+  i = t(120356),
+  r = t.n(i),
   s = t(481060),
   o = t(70956),
   u = t(747071),
@@ -13,7 +13,7 @@ var l = t(200651),
   d = t(622594),
   f = t(174727),
   m = t(710111),
-  h = t(342482);
+  h = t(891694);
 let g = {
     startPositionMs: 0,
     endPositionMs: 2 * (10 * o.Z.Millis.SECOND),
@@ -23,11 +23,11 @@ let g = {
     let {
       className: n,
       volume: t,
-      disabled: r = !1,
+      disabled: i = !1,
       onChange: p
     } = e, {
       audio: b
-    } = (0, c.p)(), [v, y] = a.useState(!1), [x, j] = a.useState(g), {
+    } = (0, c.p)(), [y, v] = a.useState(!1), [x, j] = a.useState(g), {
       playheadPositionMs: N,
       endPositionMs: w,
       startPositionMs: C
@@ -38,41 +38,38 @@ let g = {
         endPositionMs: b.duration * o.Z.Millis.SECOND,
         startPositionMs: 0
       }), () => {
-        b.pause(), y(!1)
+        b.pause(), v(!1)
       }
     }, [b]);
     let k = a.useCallback(e => {
-        null != b && (b.pause(), null != e && (b.currentTime = e), y(!1))
+        null != b && (b.pause(), null != e && (b.currentTime = e), v(!1))
       }, [b]),
-      Z = a.useCallback(() => {
+      E = a.useCallback(() => {
         if (null != b) {
-          if (v) {
-            k();
-            return
-          }
-          N >= w ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(N), b.volume = (0, u.Z)(t), b.play(), y(!0)
+          if (y) return void k();
+          N >= w ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(N), b.volume = (0, u.Z)(t), b.play(), v(!0)
         }
-      }, [b, w, k, N, v, C, t]),
-      M = a.useCallback(e => {
+      }, [b, w, k, N, y, C, t]),
+      Z = a.useCallback(e => {
         j(e), null == p || p({
           startMs: e.startPositionMs,
           endMs: e.endPositionMs
         })
       }, [p]),
-      E = a.useCallback(e => {
+      M = a.useCallback(e => {
         null != b && (b.currentTime = e)
       }, [b]);
     return (0, l.jsxs)("div", {
-      className: i()(h.container, {
+      className: r()(h.container, {
         [h.initialized]: S,
-        [h.disabled]: !S || r
+        [h.disabled]: !S || i
       }, n),
       children: [(0, l.jsxs)("div", {
         className: h.playButtonContainer,
         children: [(0, l.jsx)(s.P3F, {
           className: h.playButton,
-          onClick: S ? Z : void 0,
-          children: v ? (0, l.jsx)(s.wNq, {
+          onClick: S ? E : void 0,
+          children: y ? (0, l.jsx)(s.wNq, {
             size: "xs",
             color: "currentColor",
             className: h.playButtonIcon
@@ -91,11 +88,11 @@ let g = {
           })
         })]
       }), (0, l.jsx)(d.Z, {
-        playing: v,
-        onPlaybackChange: E,
+        playing: y,
+        onPlaybackChange: M,
         onPausePlayback: k,
-        onChangePosition: M,
-        disabled: r
+        onChangePosition: Z,
+        disabled: i
       })]
     })
   })

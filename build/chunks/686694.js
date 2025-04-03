@@ -16,7 +16,7 @@ var s, n = i(200651),
   m = i(810847),
   v = i(898625),
   g = i(981631),
-  w = i(522592);
+  w = i(183624);
 
 function b(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
@@ -103,7 +103,7 @@ class E extends(s = a.Component) {
       var e;
       if (null == t) return;
       this.canvas = t, this.canvasContext = this.canvas.getContext("2d");
-      let i = null !== (e = window.devicePixelRatio) && void 0 !== e ? e : 1,
+      let i = null != (e = window.devicePixelRatio) ? e : 1,
         s = this.canvasContext.webkitBackingStorePixelRatio || this.canvasContext.mozBackingStorePixelRatio || this.canvasContext.msBackingStorePixelRatio || this.canvasContext.oBackingStorePixelRatio || this.canvasContext.backingStorePixelRatio || 1;
       this.ratio = i / s, this.resizeCanvas()
     }), b(this, "resizeCanvas", () => {

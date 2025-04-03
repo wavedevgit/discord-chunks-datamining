@@ -128,12 +128,10 @@ async function f(t, e, n) {
       a(b, 0, x, e, f), g()
     })
   }
-  return o.iA || (0, o.l1)(x),
-    function(t, e, n, r, o) {
-      let h = (0, s.n)(i.JQ, t, n, {
-        c: 1,
-        dkLen: e
-      });
-      return n.fill(0), r.fill(0), o.fill(0), h
-    }(t, l, p, d, b)
+  o.iA || (0, o.l1)(x);
+  let w = (0, s.n)(i.JQ, t, p, {
+    c: 1,
+    dkLen: l
+  });
+  return p.fill(0), d.fill(0), b.fill(0), w
 }

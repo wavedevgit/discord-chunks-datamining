@@ -1,18 +1,18 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   E: () => c
 });
 var r = n(192379),
   i = n(361213),
   a = n(778569),
-  o = n(783097),
-  l = n(768581),
+  l = n(783097),
+  o = n(768581),
   s = n(758199);
 
 function c(e) {
   let {
     bot: t
-  } = e, n = (0, o.ye)(e), {
+  } = e, n = (0, l.ye)(e), {
     url: c
   } = (0, a.Z)({
     applicationId: n ? e.id : void 0,
@@ -20,18 +20,17 @@ function c(e) {
     names: ["embedded_cover"]
   });
   return r.useMemo(() => {
-    let r, a;
-    let u = s.u.BOT;
+    let r, a, u = s.u.BOT;
     if (null != t) {
       let {
         banner: e
       } = t;
-      r = (0, l.aN)({
+      r = (0, o.aN)({
         id: t.id,
         banner: e,
         size: 512,
         canAnimate: !1
-      }), (0, l.xR)(e) && null == c && (a = (0, l.aN)({
+      }), (0, o.xR)(e) && null == c && (a = (0, o.aN)({
         id: t.id,
         banner: e,
         size: 512,
@@ -39,7 +38,7 @@ function c(e) {
       }))
     }
     if (n) {
-      let t = (0, o.yJ)(e);
+      let t = (0, l.yJ)(e);
       null != c && (r = c, u = s.u.ACTIVITY);
       let n = null == t ? void 0 : t.activity_preview_video_asset_id;
       null != n && (a = (0, i.Z)(e.id, n), u = s.u.ACTIVITY)

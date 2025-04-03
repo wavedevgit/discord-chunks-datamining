@@ -1,15 +1,15 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   GF: () => C,
-  ZP: () => S,
-  yo: () => v
+  ZP: () => v,
+  yo: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   c = n(194359),
   d = n(99690),
   u = n(100527),
@@ -21,7 +21,7 @@ var r = n(200651),
   b = n(726985),
   N = n(981631),
   x = n(388032),
-  _ = n(519385);
+  _ = n(569834);
 
 function E(e) {
   let {
@@ -32,14 +32,14 @@ function E(e) {
     className: _.header,
     children: [(0, r.jsx)("div", {
       className: _.iconContainer,
-      children: i ? (0, r.jsx)(l.t6m, {}) : (0, r.jsx)(l.kZF, {})
+      children: i ? (0, r.jsx)(o.t6m, {}) : (0, r.jsx)(o.kZF, {})
     }), (0, r.jsxs)("div", {
       className: _.text,
-      children: [(0, r.jsx)(l.Text, {
+      children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
         children: x.NW.string(i ? x.t.PFOUKS : x.t["93ZDWF"])
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         children: i ? x.NW.format(x.t["r91W/v"], {
@@ -57,7 +57,7 @@ function j(e) {
   let {
     userId: n,
     last: s
-  } = e, p = (0, o.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, o.e7)([g.default], () => g.default.getUser(n)), [f, b] = i.useState(!1), N = i.useCallback(() => {
+  } = e, p = (0, l.e7)([m.Z], () => m.Z.isBlocked(n)), h = (0, l.e7)([g.default], () => g.default.getUser(n)), [f, b] = i.useState(!1), N = i.useCallback(() => {
     b(!0), p ? c.Z.unblockUser(n).catch(() => {
       b(!1)
     }) : c.Z.unignoreUser(n, u.Z.USER_SETTINGS).catch(() => {
@@ -72,21 +72,21 @@ function j(e) {
       className: _.userInfo,
       children: [(0, r.jsx)(d.Z, {
         user: h,
-        size: l.EFr.SIZE_40
+        size: o.EFr.SIZE_40
       }), (0, r.jsxs)("div", {
         className: _.text,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: null !== (t = h.globalName) && void 0 !== t ? t : h.username
-        }), (0, r.jsx)(l.Text, {
+          children: null != (t = h.globalName) ? t : h.username
+        }), (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: null != h.globalName ? h.username : null
         })]
       })]
-    }), (0, r.jsx)(l.zxk, {
-      color: l.Ttl.PRIMARY,
+    }), (0, r.jsx)(o.zxk, {
+      color: o.Ttl.PRIMARY,
       onClick: N,
       submitting: f,
       children: x.NW.string(p ? x.t.XyHpKC : x.t["8wXU9P"])
@@ -99,7 +99,7 @@ function O(e) {
     setting: t,
     userIds: n,
     listType: s
-  } = e, [a, o] = i.useState(5);
+  } = e, [a, l] = i.useState(5);
   return (0, r.jsx)(h.U, {
     setting: t,
     children: (0, r.jsxs)("div", {
@@ -115,12 +115,12 @@ function O(e) {
         }, e))
       }), a < n.length ? (0, r.jsx)("div", {
         className: _.loadMoreContainer,
-        children: (0, r.jsx)(l.P3F, {
+        children: (0, r.jsx)(o.P3F, {
           onClick: () => {
-            o(e => e + 5)
+            l(e => e + 5)
           },
           className: _.loadMoreButton,
-          children: (0, r.jsx)(l.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-normal",
             children: x.NW.format(x.t.jULEDg, {
@@ -134,7 +134,7 @@ function O(e) {
 }
 
 function C() {
-  let e = (0, o.Wu)([m.Z], () => m.Z.getBlockedIDs());
+  let e = (0, l.Wu)([m.Z], () => m.Z.getBlockedIDs());
   return (0, r.jsx)(O, {
     setting: b.s6.BLOCKED_USERS,
     userIds: e,
@@ -142,8 +142,8 @@ function C() {
   })
 }
 
-function v() {
-  let e = (0, o.Wu)([m.Z], () => m.Z.getIgnoredIDs());
+function S() {
+  let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
   return (0, r.jsx)(O, {
     setting: b.s6.IGNORED_USERS,
     userIds: e,
@@ -151,7 +151,7 @@ function v() {
   })
 }
 
-function S() {
+function v() {
   return (0, r.jsxs)(h.U, {
     setting: b.s6.RESTRICTED_USERS,
     scrollPosition: f.FY.RESTRICTED_ACCOUNTS,
@@ -161,6 +161,6 @@ function S() {
       description: x.NW.format(x.t["0aNQo6"], {
         helpArticle: p.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, r.jsx)(C, {}), (0, r.jsx)(v, {})]
+    }), (0, r.jsx)(C, {}), (0, r.jsx)(S, {})]
   })
 }

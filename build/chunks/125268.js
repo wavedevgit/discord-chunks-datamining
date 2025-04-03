@@ -4,7 +4,7 @@ n.d(t, {
   BR: () => d,
   Bo: () => E,
   Df: () => f,
-  LT: () => v,
+  LT: () => h,
   ZZ: () => m,
   cV: () => c,
   fW: () => g,
@@ -100,7 +100,7 @@ function E(e) {
   })
 }
 
-function v() {
+function h() {
   i.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })

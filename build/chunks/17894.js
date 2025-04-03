@@ -16,9 +16,9 @@ var r = n(525654),
   p = n(981631);
 async function b(e) {
   var t, n;
-  let r = null === (t = i().os) || void 0 === t ? void 0 : t.family;
+  let r = null == (t = i().os) ? void 0 : t.family;
   if ("Android" === r || "iOS" === r) {
-    let t = null !== (n = u.default.getFingerprint()) && void 0 !== n ? n : u.default.getId(),
+    let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
       r = (0, a.WS)();
     if (null == t && u.default.isAuthenticated()) try {
       await (0, s.k)(), t = u.default.getId()

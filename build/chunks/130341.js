@@ -1,11 +1,11 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  UT: () => _,
+  UT: () => v,
   _4: () => f,
   cm: () => b,
   e: () => j,
-  eg: () => v,
+  eg: () => _,
   lJ: () => x,
   rY: () => N,
   uo: () => C
@@ -41,7 +41,7 @@ function x(e, t) {
       var r;
       let n = i[s.userId];
       null != n && t.push({
-        name: null !== (r = s.nick) && void 0 !== r ? r : m.ZP.getName(n),
+        name: null != (r = s.nick) ? r : m.ZP.getName(n),
         userTag: m.ZP.getUserTag(n),
         id: s.userId,
         avatarSource: n.getAvatarSource(e),
@@ -75,12 +75,12 @@ function N(e, t) {
   }, [e, t])
 }
 
-function v(e, t) {
+function _(e, t) {
   let n = e.trim().toLowerCase();
   return t.id === n || s()(n, t.name.toLowerCase()) || s()(n, t.userTag.toLowerCase())
 }
 
-function _(e) {
+function v(e) {
   switch (e) {
     case p.ZI.MEMBERS:
       return "Members";

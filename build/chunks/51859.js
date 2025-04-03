@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => _
+  Z: () => v
 }), t(47120), t(266796);
 var r = t(200651),
   o = t(192379),
@@ -12,41 +12,41 @@ var r = t(200651),
   d = t(838968),
   u = t(262212),
   p = t(279604),
-  m = t(296260),
+  m = t(680278),
   x = t(388032),
-  v = t(728214);
+  _ = t(117172);
 
-function _(e) {
+function v(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, i = null != (0, c.Z)(n, t), [_, f] = o.useState(void 0), b = (0, l.Z)(t);
-  return (0, p.KT)(_), (0, r.jsxs)(d.Z, {
+  } = e, i = null != (0, c.Z)(n, t), [v, f] = o.useState(void 0), b = (0, l.Z)(t);
+  return (0, p.KT)(v), (0, r.jsxs)(d.Z, {
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)("div", {
-      className: v.imageContainer,
+      className: _.imageContainer,
       children: (0, r.jsx)("img", {
-        className: v.image,
+        className: _.image,
         alt: "",
         src: b
       })
     }), (0, r.jsxs)("div", {
-      className: v.contentContainer,
+      className: _.contentContainer,
       children: [(0, r.jsxs)("div", {
-        className: v.headerContainer,
+        className: _.headerContainer,
         children: [(0, r.jsx)(a.X6, {
           variant: "heading-md/bold",
           children: t.title
         }), t.bundle && (0, r.jsx)(a.xv, {
-          className: s()(v.bundle, {
-            [v.active]: i
+          className: s()(_.bundle, {
+            [_.active]: i
           }),
           variant: "text-xs/semibold",
           children: x.NW.string(m.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
-        className: v.description,
+        className: _.description,
         variant: "text-sm/medium",
         children: t.description
       }), (0, r.jsx)(d.u, {
@@ -54,7 +54,7 @@ function _(e) {
         powerup: t
       })]
     }), (0, r.jsx)("div", {
-      className: v.buttonContainer,
+      className: _.buttonContainer,
       children: (0, r.jsx)(u.ZP, {
         guildId: n,
         powerup: t,

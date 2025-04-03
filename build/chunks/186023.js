@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(185625),
   m = n(255514),
   x = n(981631),
-  p = n(591347);
+  p = n(864012);
 let f = e => {
   let {
     reportType: t,
@@ -33,13 +33,10 @@ let f = e => {
     let {
       destination: a
     } = e, [, s] = a, u = j[s];
-    if (void 0 === u) {
-      c.Z.increment({
-        name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
-      });
-      return
-    }
-    if (u.elements.some(e => "skip" === e.type) && (null === (n = u.button) || void 0 === n ? void 0 : n.type) === "next") return D((r = function(e) {
+    if (void 0 === u) return void c.Z.increment({
+      name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
+    });
+    if (u.elements.some(e => "skip" === e.type) && (null == (n = u.button) ? void 0 : n.type) === "next") return D((r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -82,14 +79,14 @@ let f = e => {
   }, R = async e => {
     var r;
     let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], _),
-      i = null == l ? void 0 : null === (r = l.body) || void 0 === r ? void 0 : r.report_id;
+      i = null == l || null == (r = l.body) ? void 0 : r.report_id;
     null != i && L(i), A(j[e.nodeRef].report_type), null == b || b(i)
   }, M = () => {
     var e, n;
     if (k.length < 1) return;
     let r = [...k],
       l = r.pop(),
-      i = null !== (n = null == l ? void 0 : l.nodeRef) && void 0 !== n ? n : N;
+      i = null != (n = null == l ? void 0 : l.nodeRef) ? n : N;
     if (t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
       o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
@@ -100,7 +97,7 @@ let f = e => {
         next_node: j[i].id
       })
     }
-    T(null == l ? void 0 : null === (e = l.multiSelect) || void 0 === e ? void 0 : e.state), P(null == l ? void 0 : l.textInput), I(i), E(r), null == h || h("..")
+    T(null == l || null == (e = l.multiSelect) ? void 0 : e.state), P(null == l ? void 0 : l.textInput), I(i), E(r), null == h || h("..")
   }, B = l.useMemo(() => {
     let e = [],
       t = [];
@@ -108,12 +105,12 @@ let f = e => {
       var n, r, l;
       let a = j[i];
       if (a.id !== y && a.id !== O && a.id !== N) {
-        if (a.key.endsWith("_SUBMIT") || (null === (n = a.button) || void 0 === n ? void 0 : n.type) === "submit") {
+        if (a.key.endsWith("_SUBMIT") || (null == (n = a.button) ? void 0 : n.type) === "submit") {
           t.push(a);
           continue
         }
-        if (e.push(a), (null === (r = a.button) || void 0 === r ? void 0 : r.type) === "next") {
-          let t = null === (l = a.button) || void 0 === l ? void 0 : l.target,
+        if (e.push(a), (null == (r = a.button) ? void 0 : r.type) === "next") {
+          let t = null == (l = a.button) ? void 0 : l.target,
             n = e.indexOf(j[t]); - 1 !== n && (e.splice(n, 1), e.push(j[t]))
         }
       }

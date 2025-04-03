@@ -10,5 +10,5 @@ let i = () => {
     slurs: n = !1,
     sexualContent: i = !1
   } = r.gw.getSetting();
-  return null !== (e = t || n || i) && void 0 !== e && e
+  return null != (e = t || n || i) && e
 }

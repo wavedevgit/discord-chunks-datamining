@@ -1,4 +1,4 @@
-/** Chunk was on 5613 **/
+/** Chunk was on 70657 **/
 t.d(n, {
   Z: () => u
 }), t(653041);
@@ -9,7 +9,7 @@ var i = t(200651),
   d = t(481060),
   o = t(765305),
   s = t(388032),
-  c = t(854734);
+  c = t(645331);
 
 function u(e) {
   let {
@@ -22,17 +22,17 @@ function u(e) {
   } = e, g = r.useRef(null);
   r.useEffect(() => {
     var e, n, t;
-    return null === (t = g.current) || void 0 === t ? void 0 : null === (n = t.ref) || void 0 === n ? void 0 : null === (e = n.blur) || void 0 === e ? void 0 : e.call(n)
+    return null == (t = g.current) || null == (n = t.ref) || null == (e = n.blur) ? void 0 : e.call(n)
   }, []);
   let m = s.NW.formatToPlainString(s.t["ZrTT/P"], {
       userCount: u
     }),
-    v = [(0, i.jsx)(d.njP.Item, {
+    I = [(0, i.jsx)(d.njP.Item, {
       className: c.tabBarItem,
       id: o.fL.EVENT_INFO,
       children: s.NW.string(s.t.iW6Xur)
     }, "event-details")];
-  return p || v.push((0, i.jsx)(d.njP.Item, {
+  return p || I.push((0, i.jsx)(d.njP.Item, {
     className: c.tabBarItem,
     id: o.fL.RSVP_LIST,
     children: m
@@ -54,7 +54,7 @@ function u(e) {
       selectedItem: t,
       type: "top",
       onItemSelect: l,
-      children: v
+      children: I
     })]
   })
 }

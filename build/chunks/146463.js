@@ -20,7 +20,7 @@ var a = n(120356),
   b = n(571728),
   j = n(762660),
   _ = n(388032),
-  g = n(805193);
+  g = n(766879);
 let v = () => null;
 
 function C(e) {
@@ -72,9 +72,9 @@ let y = function(e) {
     atMaxMemberCapacity: N
   } = e, T = (0, l.e7)([d.Z], () => d.Z.getGuild(u), [u]), I = (0, l.e7)([f.Z], () => f.Z.isFetching()), w = I ? [a.length + 25] : [a.length], O = (0, h.L)({
     guildId: u
-  }), P = null !== (t = (0, b.A)({
+  }), P = null != (t = (0, b.A)({
     guildId: u
-  })) && void 0 !== t ? t : 0, R = (0, c.Z)("guild-join-requests"), E = e => {
+  })) ? t : 0, R = (0, c.Z)("guild-join-requests"), E = e => {
     let {
       row: t
     } = e, o = a[t];
@@ -158,7 +158,7 @@ let y = function(e) {
             innerAriaLabel: _.NW.string(_.t["9Oq93t"]),
             ref: e => {
               var n;
-              y.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+              y.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
             },
             paddingTop: 0,
             paddingBottom: 16,

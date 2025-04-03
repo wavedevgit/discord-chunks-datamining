@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => f
 });
@@ -76,7 +76,7 @@ function f(e) {
         totalCooldownSeconds: m,
         remainingCooldownSeconds: g,
         onMouseEnter: e => {
-          b || t(e)
+          !b && t(e)
         },
         onClick: e => {
           (0, p.v)(n, p.d.EMOJI), i(e)

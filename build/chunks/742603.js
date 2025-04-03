@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => G
 }), n(47120);
@@ -20,9 +20,9 @@ var i = n(120356),
   b = n(854698),
   _ = n(897669),
   C = n(665149),
-  v = n(984370),
-  y = n(910611),
-  x = n(454585),
+  y = n(984370),
+  x = n(910611),
+  v = n(454585),
   j = n(134483),
   O = n(210975),
   E = n(809244),
@@ -37,8 +37,8 @@ var i = n(120356),
   R = n(981631),
   M = n(231338),
   k = n(388032),
-  L = n(820638),
-  D = n(50398);
+  L = n(610633),
+  D = n(73433);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -196,7 +196,7 @@ function G(e) {
           className: l()(L.channelStatus, D.markup, {
             [L.hoverable]: B
           }),
-          children: x.Z.parseVoiceChannelStatus(S, !0, {
+          children: v.Z.parseVoiceChannelStatus(S, !0, {
             channelId: t.id
           })
         }), B && (0, r.jsx)(a.vdY, {
@@ -229,7 +229,7 @@ function G(e) {
     children: [(0, r.jsx)(a.f6W, {
       theme: M.BR.DARK,
       children: e => (0, r.jsxs)(C.ZP, {
-        onDoubleClick: v.O,
+        onDoubleClick: y.O,
         transparent: !0,
         className: e,
         childrenBottom: H,
@@ -257,7 +257,7 @@ function G(e) {
               }))
             })]
           })
-        }), (0, r.jsx)(y.TS, {
+        }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: i
         }), (0, r.jsx)(F, {

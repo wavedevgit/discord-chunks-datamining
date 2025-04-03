@@ -5,10 +5,10 @@ r.d(t, {
 var n = r(200651);
 r(192379);
 var l = r(481060),
-  i = r(507453),
-  s = r(48550),
+  s = r(507453),
+  i = r(48550),
   o = r(388032),
-  a = r(366378);
+  a = r(895453);
 
 function c(e) {
   let {
@@ -17,10 +17,10 @@ function c(e) {
     onClose: c
   } = e;
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(i.Z.SlideHeader, {
+    children: [(0, n.jsx)(s.Z.SlideHeader, {
       subtitle: o.NW.string(o.t["XQaT+/"]),
       onClose: c
-    }), (0, n.jsx)(i.Z.SlideContent, {
+    }), (0, n.jsx)(s.Z.SlideContent, {
       children: t.methods.map(e => (0, n.jsxs)(l.P3F, {
         className: a.listItemContainer,
         onClick: () => {
@@ -29,7 +29,7 @@ function c(e) {
         children: [(0, n.jsx)(l.Text, {
           className: a.listItemText,
           variant: "text-md/semibold",
-          children: s.P[e.type]
+          children: i.P[e.type]
         }), (0, n.jsx)(l.Fbu, {
           size: "custom",
           color: "currentColor",

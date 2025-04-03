@@ -2,16 +2,16 @@
 var r = n(442837),
   i = n(570140),
   l = n(38618);
-let o = Object.freeze({
+let a = Object.freeze({
     online: null,
     total: null
   }),
-  a = {},
+  o = {},
   s = null;
 class c extends r.ZP.Store {
   getMemberCount(e) {
     var t;
-    return null !== (t = a[e]) && void 0 !== t ? t : o
+    return null != (t = o[e]) ? t : a
   }
   requestCount(e, t) {
     s = {
@@ -22,7 +22,7 @@ class c extends r.ZP.Store {
 }
 new c(i.Z, {
   CONNECTION_OPEN: function() {
-    a = {}, null != s && l.Z.getSocket().requestChannelMemberCount(s.guildId, s.channelId)
+    o = {}, null != s && l.Z.getSocket().requestChannelMemberCount(s.guildId, s.channelId)
   },
   CHANNEL_MEMBER_COUNT_UPDATE: function(e) {
     let {
@@ -30,7 +30,7 @@ new c(i.Z, {
       online: n,
       total: r
     } = e;
-    return (null != n || null != r) && (a[t] = {
+    return (null != n || null != r) && (o[t] = {
       online: n,
       total: r
     }), !0

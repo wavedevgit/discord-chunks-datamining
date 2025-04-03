@@ -1,12 +1,12 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => h
 });
 var r, i = n(442837),
   s = n(570140),
   a = n(314897),
-  o = n(57562),
-  l = n(351780),
+  l = n(57562),
+  o = n(351780),
   c = n(843693);
 
 function d(e, t, n) {
@@ -48,7 +48,7 @@ class p extends(r = i.ZP.PersistedStore) {
   }
   getUnlocked(e) {
     var t;
-    return null !== (t = g.unlockedAchievements[e]) && void 0 !== t ? t : null
+    return null != (t = g.unlockedAchievements[e]) ? t : null
   }
 }
 d(p, "displayName", "PoggermodeAchievementStore"), d(p, "persistKey", "PoggermodeAchievementStore");
@@ -57,10 +57,10 @@ let h = new p(s.Z, {
     let {
       achievementId: t
     } = e;
-    if (!l.Z.isEnabled()) return !1;
+    if (!o.Z.isEnabled()) return !1;
     ! function(e) {
       var t, n;
-      if (null == g.unlockedAchievements[e]) g.unlockedAchievements = (t = u({}, g.unlockedAchievements), n = n = {
+      if (null == g.unlockedAchievements[e]) t = u({}, g.unlockedAchievements), n = n = {
         [e]: {
           achievementId: e,
           dateUnlocked: Date.now()
@@ -74,8 +74,8 @@ let h = new p(s.Z, {
         return n
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-      }), t), setTimeout(() => {
-        (0, o.D)(e, !0)
+      }), g.unlockedAchievements = t, setTimeout(() => {
+        (0, l.D)(e, !0)
       }, 2e3)
     }(t)
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -11,7 +11,7 @@ var r = n(200651),
   o = n(442837),
   c = n(210753),
   d = n(77498),
-  u = n(48567);
+  u = n(686964);
 
 function m(e) {
   let {
@@ -27,7 +27,7 @@ function m(e) {
     coverImageWidth: 252
   }), h = (0, o.e7)([d.Z], () => {
     var e, n;
-    return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+    return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
   }), f = i.useCallback(() => {
     null == s || s(t)
   }, [t, s]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {

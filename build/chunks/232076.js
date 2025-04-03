@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   B: () => g
 });
@@ -6,8 +6,8 @@ var r = n(192379),
   i = n(442837),
   s = n(975298),
   a = n(594174),
-  o = n(111361),
-  l = n(140465),
+  l = n(111361),
+  o = n(140465),
   c = n(775412),
   d = n(276444),
   u = n(912244),
@@ -15,13 +15,13 @@ var r = n(192379),
 let g = function(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = (0, i.e7)([a.default], () => a.default.getCurrentUser()),
-    g = (0, l.t7)(),
+    g = (0, o.t7)(),
     p = (0, c._O)(),
     {
       eligibleToFetch: h
     } = (0, u.N)(e),
     f = (0, s.Z)(),
-    b = h && (null == n ? void 0 : n.verified) === !0 && (0, o.M5)(n, m.p9.TIER_2) && f.fetched && f.fractionalState !== m.a$.FP_ONLY && !g && !p;
+    b = h && (null == n ? void 0 : n.verified) === !0 && (0, l.M5)(n, m.p9.TIER_2) && f.fetched && f.fractionalState !== m.a$.FP_ONLY && !g && !p;
   r.useEffect(() => {
     b && !t && d.Z.checkAndFetchReferralsRemaining()
   }, [b, t])

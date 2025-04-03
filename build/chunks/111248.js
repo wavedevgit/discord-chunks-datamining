@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => _
 }), n(47120);
@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(27457),
   h = n(981631),
   f = n(354459),
-  m = n(639195),
-  g = n(96424);
+  m = n(436992),
+  g = n(20795);
 let b = "CameraPreviewPosition";
 
 function _(e) {
@@ -25,8 +25,8 @@ function _(e) {
     height: l,
     channel: _,
     participants: C,
-    onSelectParticipant: v
-  } = e, [y, x] = function() {
+    onSelectParticipant: y
+  } = e, [x, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
@@ -37,19 +37,19 @@ function _(e) {
   }), [N]);
   i.useLayoutEffect(() => {
     var e;
-    null === (e = j.current) || void 0 === e || e.ensureIsInPosition()
+    null == (e = j.current) || e.ensureIsInPosition()
   }, [C.length]);
   let S = i.useCallback(e => {
       let t = 0 === N ? e : (e - 8 * (N - 1)) / N;
       c.d7(t, f.cL.CAMERA_PREVIEW)
     }, [N]),
     Z = i.useCallback((e, t) => {
-      x(t)
-    }, [x]);
+      v(t)
+    }, [v]);
   return (0, r.jsx)("div", {
     className: m.container,
     children: (0, r.jsx)(u._, {
-      position: y,
+      position: x,
       id: 0,
       width: I,
       ref: j,
@@ -73,7 +73,7 @@ function _(e) {
           inCall: !0,
           inPopout: !1,
           width: 160,
-          onClick: v
+          onClick: y
         }, e.id))
       })
     })

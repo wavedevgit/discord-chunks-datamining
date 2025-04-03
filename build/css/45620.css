@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 8bf8ee6b9eadf37a
+  Original File Name: b904fa6f65678d7b
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -1144,7 +1144,8 @@
 }
 
 .topBlockContainer__08415 {
-    padding-top: 0
+    padding-top: 0;
+    padding-bottom: 0
 }
 
 .centeredSection__08415 {
@@ -1372,7 +1373,8 @@
 .heroHeaderContainer__08415 {
     display: flex;
     flex-direction: row;
-    height: 260px;
+    padding-top: 3px;
+    height: 255px;
     justify-content: space-between;
     align-items: center
 }
@@ -1469,7 +1471,7 @@
     height: 374px;
     margin-left: -50vw;
     margin-right: -50vw;
-    padding: 0 50vw
+    padding: 5px 50vw 25px
 }
 
 .endOfFeed__08415 {
@@ -1597,4 +1599,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=8bf8ee6b9eadf37a.css.map*/
+/*# sourceMappingURL=b904fa6f65678d7b.css.map*/

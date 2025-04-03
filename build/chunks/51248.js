@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -12,7 +12,7 @@ var i = n(215569),
   o = n(727072),
   c = n(65912),
   d = n(388032),
-  u = n(652804);
+  u = n(11532);
 
 function m(e) {
   let {
@@ -27,7 +27,7 @@ function m(e) {
     saveEditingRule: b
   } = (0, c.w)(), {
     updateRule: x
-  } = (0, o.pH)(t), j = null != h, N = j && !(0, l.Vb)(h), v = j || p || N, _ = async () => {
+  } = (0, o.pH)(t), j = null != h, N = j && !(0, l.Vb)(h), _ = j || p || N, v = async () => {
     if (!p && !N) return m();
     null == h || N || x(h);
     let e = n.find(e => {
@@ -53,11 +53,11 @@ function m(e) {
   })), (0, r.jsx)(i.W, {
     component: "div",
     className: u.saveNoticeContainer,
-    children: v && (0, r.jsx)(s.oXn, {
+    children: _ && (0, r.jsx)(s.oXn, {
       children: (0, r.jsx)(a.Z, {
         submitting: g,
         disabled: g,
-        onSave: _,
+        onSave: v,
         onReset: m,
         onResetText: C,
         message: O

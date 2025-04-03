@@ -21,15 +21,15 @@ var r = t(200651),
   C = t(703656),
   j = t(6025),
   b = t(922482),
-  v = t(601070),
-  N = t(216306),
+  N = t(601070),
+  v = t(216306),
   y = t(163),
   O = t(753540),
   I = t(70297),
   Z = t(981631),
   w = t(176505),
   P = t(388032),
-  E = t(434847);
+  E = t(174612);
 
 function S(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -138,7 +138,7 @@ let R = l.memo(function() {
       tooltipDirection: I = "right"
     } = e, {
       isSubscriptionGated: A
-    } = (0, p.Z)(n.id), W = (0, O.Mf)(a.id, n.id, l.id), L = (0, O.t4)(a.id, n.id, l.id), M = (0, O.EH)(a.id, l.id), H = (0, o.e7)([v.Z], () => v.Z.getActiveThreadCount(a.id, n.id)), U = (0, o.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(a.id, n.id)), G = e => {
+    } = (0, p.Z)(n.id), W = (0, O.Mf)(a.id, n.id, l.id), L = (0, O.t4)(a.id, n.id, l.id), M = (0, O.EH)(a.id, l.id), H = (0, o.e7)([N.Z], () => N.Z.getActiveThreadCount(a.id, n.id)), U = (0, o.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(a.id, n.id)), G = e => {
       if (!L) return e.stopPropagation(), y(a.id, n.id, l.id), !0
     }, F = e => {
       n.isGuildVocal() ? (0, u.jW)(e, async () => {
@@ -169,7 +169,7 @@ let R = l.memo(function() {
       }, "thread-count")), k.has(e.type) || t.push((0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
         className: E.channelSubtitle,
-        children: (0, N.qw)(e.id)
+        children: (0, v.qw)(e.id)
       }, "active")), null != e.topic && e.topic.length > 0 && t.push((0, r.jsx)(m.Z, {
         children: (0, r.jsx)(d.Text, {
           className: E.topic,
@@ -293,7 +293,7 @@ function L(e) {
       tooltipDirection: c ? "right" : "top",
       onChannelClick: u
     }, o.channel.id)
-  }, [n, t, m, c, u]), g = (0, I.q)(t.id), x = (0, N.tn)(t.id, n, 64, g);
+  }, [n, t, m, c, u]), g = (0, I.q)(t.id), x = (0, v.tn)(t.id, n, 64, g);
   return (0, r.jsx)(d._2F, {
     className: a,
     innerClassName: i()(o, E.scrollerInner),

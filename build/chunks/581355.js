@@ -1,12 +1,12 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
   default: () => p
 });
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(313201),
+  a = n(481060),
+  o = n(313201),
   c = n(430824),
   s = n(427679),
   d = n(939863),
@@ -16,7 +16,7 @@ var r = n(200651),
   _ = n(180899),
   m = n(157925),
   b = n(388032),
-  x = n(366273);
+  x = n(879656);
 
 function f(e) {
   let {
@@ -24,7 +24,7 @@ function f(e) {
     channel: n,
     stageInstance: i,
     headerId: l,
-    onClose: a,
+    onClose: o,
     loading: c,
     error: s,
     onSave: u,
@@ -37,7 +37,7 @@ function f(e) {
       children: [(0, r.jsx)(d.Z, {
         children: (0, r.jsx)("div", {
           className: x.stageIconBackground,
-          children: (0, r.jsx)(o.ewx, {
+          children: (0, r.jsx)(a.ewx, {
             size: "custom",
             color: "currentColor",
             width: 32,
@@ -45,13 +45,13 @@ function f(e) {
             className: x.stageIcon
           })
         })
-      }), (0, r.jsx)(o.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         id: l,
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: x.headerTitle,
         children: null == i ? b.NW.string(b.t.DDF0cH) : b.NW.string(b.t.YPdQOj)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: x.headerSubtitle,
@@ -63,7 +63,7 @@ function f(e) {
       onSave: u,
       error: s,
       loading: c,
-      onClose: a,
+      onClose: o,
       defaultOptions: g,
       isSlideReady: _
     })]
@@ -91,8 +91,8 @@ function p(e) {
       }
       return i
     }(e, ["channel", "onClose", "transitionState"]);
-  let v = (0, a.Dt)(),
-    N = (0, l.e7)([c.Z], () => c.Z.getGuild(d.guild_id)),
+  let N = (0, o.Dt)(),
+    v = (0, l.e7)([c.Z], () => c.Z.getGuild(d.guild_id)),
     j = i.useMemo(() => s.Z.getStageInstanceByChannel(d.id), [d.id]),
     {
       loading: I,
@@ -114,8 +114,8 @@ function p(e) {
       onSave: y
     });
   return (i.useEffect(() => {
-    null == N && h()
-  }, [N, h]), null == N) ? null : (0, r.jsx)(o.Y0X, (t = function(e) {
+    null == v && h()
+  }, [v, h]), null == v) ? null : (0, r.jsx)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -134,22 +134,22 @@ function p(e) {
     return e
   }({
     transitionState: b,
-    "aria-labelledby": v
+    "aria-labelledby": N
   }, p), n = n = {
-    size: o.CgR.SMALL,
-    children: (0, r.jsxs)(o.MyZ, {
+    size: a.CgR.SMALL,
+    children: (0, r.jsxs)(a.MyZ, {
       activeSlide: C,
       width: 440,
       onSlideReady: T,
-      children: [(0, r.jsx)(o.Mi4, {
+      children: [(0, r.jsx)(a.Mi4, {
         id: m.lv.STAGE_CHANNEL_SETTINGS,
         children: (0, r.jsx)("div", {
           className: x.slideContainer,
           children: (0, r.jsx)(f, {
-            guild: N,
+            guild: v,
             channel: d,
             stageInstance: j,
-            headerId: v,
+            headerId: N,
             onClose: h,
             loading: I,
             error: O,
@@ -158,13 +158,13 @@ function p(e) {
             isSlideReady: S === m.lv.STAGE_CHANNEL_SETTINGS
           })
         })
-      }), (0, r.jsx)(o.Mi4, {
+      }), (0, r.jsx)(a.Mi4, {
         id: m.lv.PUBLIC_STAGE_PREVIEW,
         children: (0, r.jsx)("div", {
           className: x.slideContainer,
           children: (0, r.jsx)(u.Z, {
-            headerId: v,
-            guild: N,
+            headerId: N,
+            guild: v,
             channel: d,
             stageData: w,
             loading: I,

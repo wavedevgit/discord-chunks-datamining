@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => g
 }), n(47120), n(757143), n(301563), n(653041);
@@ -7,27 +7,27 @@ n(192379);
 var i = n(525654),
   s = n.n(i),
   a = n(481060),
-  o = n(579806),
-  l = n(304761),
+  l = n(579806),
+  o = n(304761),
   c = n(320161),
   d = n(998502),
   u = n(388032),
-  m = n(869870);
+  m = n(980832);
 
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "385706",
-    f = "a0dfd407ba779d4145d013db2be5751e8c4617d5".substring(0, 7),
-    b = null === o.Z || void 0 === o.Z ? void 0 : o.Z.remoteApp.getVersion(),
-    N = null === o.Z || void 0 === o.Z ? void 0 : null === (e = (t = o.Z.remoteApp).getBuildNumber) || void 0 === e ? void 0 : e.call(t),
-    x = null === o.Z || void 0 === o.Z ? void 0 : null === (n = (i = o.Z.remoteApp).getAppArch) || void 0 === n ? void 0 : n.call(i),
-    _ = null === (g = l.C.getCurrentBuildOverride().overrides) || void 0 === g ? void 0 : g.discord_web,
+    h = "385887",
+    f = "a5beddf9a3f40f2e818777ae930cc851634fc3d8".substring(0, 7),
+    b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
+    N = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
+    x = null === l.Z || void 0 === l.Z || null == (n = (i = l.Z.remoteApp).getAppArch) ? void 0 : n.call(i),
+    _ = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
     E = function() {
       var e;
-      let t = null === s() || void 0 === s() ? void 0 : null === (e = s().os) || void 0 === e ? void 0 : e.toString();
-      if (null == t || null == o.Z) return null;
-      let n = o.Z.os.release,
+      let t = null === s() || void 0 === s() || null == (e = s().os) ? void 0 : e.toString();
+      if (null == t || null == l.Z) return null;
+      let n = l.Z.os.release,
         [r, i, a] = d.ZP.parsedOSRelease;
       return t.includes("Windows 10") && void 0 !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r - 9)), "".concat(t, " (").concat(n, ")")
     }(),

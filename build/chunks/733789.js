@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(100527),
   c = n(707409),
   u = n(184301),
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(51144),
   f = n(981631),
   g = n(388032),
-  m = n(638750);
+  m = n(629390);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ class N extends i.PureComponent {
     return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
   }
   renderActivityDiscordTag(e) {
-    return (0, r.jsx)(a.yRy, {
+    return (0, r.jsx)(o.yRy, {
       targetElementRef: this.ref,
       preload: () => (0, u.Z)(e),
       renderPopout: t => (0, r.jsx)(d.Z, E(_({}, t), {
@@ -130,7 +130,7 @@ class N extends i.PureComponent {
       userInfo: i
     } = e;
     return 0 === i.length ? null : (0, r.jsxs)("div", {
-      className: o()(m.recommendationActivity, t),
+      className: a()(m.recommendationActivity, t),
       children: [(0, r.jsx)(p.Z, {
         className: m.players,
         users: i.map(e => {
@@ -162,7 +162,7 @@ class N extends i.PureComponent {
     })), b(this, "renderPlayer", (e, t, n, i) => {
       if (null == e) return null;
       let l = this.props.reason.userInfo.find(t => t.user === e);
-      return null == l ? null : (0, r.jsx)(a.yRy, {
+      return null == l ? null : (0, r.jsx)(o.yRy, {
         preload: () => (0, u.Z)(e),
         renderPopout: t => (0, r.jsx)(d.Z, E(_({}, t), {
           userId: e.id,
@@ -170,18 +170,18 @@ class N extends i.PureComponent {
         })),
         position: "right",
         clickTrap: !0,
-        children: t => (0, r.jsx)(a.ua7, {
+        children: t => (0, r.jsx)(o.ua7, {
           text: this.renderUserTooltip(e, l.startTime, l.endTime),
           "aria-label": (0, h.W5)(e, {
             decoration: "never"
           }),
-          children: n => (0, r.jsx)(a.qEK, _({
-            className: o()(m.playerAvatar, {
+          children: n => (0, r.jsx)(o.qEK, _({
+            className: a()(m.playerAvatar, {
               [m.avatarMasked]: !i
             }),
             src: e.getAvatarURL(void 0, 32),
             "aria-label": e.username,
-            size: a.EFr.SIZE_32
+            size: o.EFr.SIZE_32
           }, n, t))
         })
       }, e.id)
@@ -191,4 +191,4 @@ class N extends i.PureComponent {
     }, n))
   }
 }
-let v = N
+let y = N

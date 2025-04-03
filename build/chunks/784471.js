@@ -10,7 +10,7 @@ var o = Number.isNaN || function(e) {
 function r(e, t) {
   if (e.length !== t.length) return !1;
   for (var n, r, i = 0; i < e.length; i++)
-    if (!((n = e[i]) === (r = t[i]) || o(n) && o(r))) return !1;
+    if (!((n = e[i]) === (r = t[i]) || o(n) && o(r)) && 1) return !1;
   return !0
 }
 let i = function(e, t) {

@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   nu: () => p,
   qF: () => h,
@@ -18,7 +18,7 @@ function u(e, t) {
   var n, r, a;
   let i = c.z8.getField("sessionId"),
     l = c.z8.getField("guildId"),
-    d = null === (n = c.z8.getField("entrypoint")) || void 0 === n ? void 0 : n.name,
+    d = null == (n = c.z8.getField("entrypoint")) ? void 0 : n.name,
     u = o.default.getCurrentUser();
   return s.default.track(e, (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {

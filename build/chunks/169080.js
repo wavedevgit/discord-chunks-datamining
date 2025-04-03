@@ -17,7 +17,7 @@ var c = a(200651),
   b = a(986398),
   u = a(69589),
   m = a(388032),
-  g = a(56730);
+  g = a(588799);
 let j = [a(191420), a(774621), a(49274), a(904141)];
 
 function h(t) {
@@ -27,16 +27,16 @@ function h(t) {
     leaderboard: j,
     userId: h,
     guildId: y
-  } = t, _ = (0, f.e7)([p.default], () => p.default.getUser(h)), B = j.guild_settings.sort_by_statistic_id, v = d.useMemo(() => j.users.findIndex(t => t.user_id === h) + 1, [j, h]), x = d.useMemo(() => j.users.find(t => t.user_id === h), [j, h]);
-  n()(null != x, "User row should not be null"), n()(null != _, "User must exist");
+  } = t, _ = (0, f.e7)([p.default], () => p.default.getUser(h)), B = j.guild_settings.sort_by_statistic_id, x = d.useMemo(() => j.users.findIndex(t => t.user_id === h) + 1, [j, h]), v = d.useMemo(() => j.users.find(t => t.user_id === h), [j, h]);
+  n()(null != v, "User row should not be null"), n()(null != _, "User must exist");
   let O = r.ZP.getName(y, void 0, _),
-    N = null !== (a = null === (e = x.statistics[B]) || void 0 === e ? void 0 : e.value) && void 0 !== a ? a : 0;
+    N = null != (a = null == (e = v.statistics[B]) ? void 0 : e.value) ? a : 0;
   return (0, c.jsxs)("div", {
     ref: s,
     className: g.container,
     children: [(0, c.jsx)(u.Z, {
       user: _,
-      rank: v,
+      rank: x,
       avatarClassName: g.avatar,
       rankBadgeVisibility: "visibleWithoutBorder"
     }), (0, c.jsxs)("div", {
@@ -57,7 +57,7 @@ function h(t) {
         variant: "text-md/semibold",
         children: m.NW.format(m.t.tluICw, {
           username: O,
-          rank: v
+          rank: x
         })
       }), (0, c.jsx)(i.LZC, {
         size: 2

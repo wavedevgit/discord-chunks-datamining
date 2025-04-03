@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -19,7 +19,7 @@ var r = n(200651),
   f = n(295708),
   b = n(273504),
   x = n(388032),
-  j = n(965718);
+  j = n(260324);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -40,7 +40,7 @@ function N(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,7 +53,7 @@ function v(e, t) {
   }), e
 }
 
-function _(e) {
+function v(e) {
   let {
     rule: t,
     triggerType: n
@@ -71,7 +71,7 @@ function _(e) {
     return null == a || e.push((0, r.jsx)(h.Z, {
       actionType: i,
       action: a,
-      triggerType: null !== (s = null == t ? void 0 : t.triggerType) && void 0 !== s ? s : n
+      triggerType: null != (s = null == t ? void 0 : t.triggerType) ? s : n
     }, i)), e
   }, []), [t, n]);
   return 0 === s.length ? null : (0, r.jsx)("div", {
@@ -79,7 +79,7 @@ function _(e) {
     children: s
   })
 }
-let C = (e, t) => () => t(v(N({}, e), {
+let C = (e, t) => () => t(_(N({}, e), {
     enabled: !e.enabled
   })),
   O = e => {
@@ -104,7 +104,7 @@ let C = (e, t) => () => t(v(N({}, e), {
       }
       return i
     }(e, ["className", "children"]);
-    return (0, r.jsx)(a.P3F, v(N({
+    return (0, r.jsx)(a.P3F, _(N({
       className: t,
       onClick: O,
       onMouseDown: O,
@@ -135,12 +135,12 @@ function I(e) {
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
         onChange: l,
-        checked: null !== (t = null == n ? void 0 : n.enabled) && void 0 !== t && t
+        checked: null != (t = null == n ? void 0 : n.enabled) && t
       }), (0, r.jsx)(a.ua7, {
         text: x.NW.string(x.t.UKOtz8),
         position: "top",
         "aria-label": x.NW.string(x.t.PdRCRk),
-        children: e => (0, r.jsx)(a.P3F, v(N({}, e), {
+        children: e => (0, r.jsx)(a.P3F, _(N({}, e), {
           onClick: o,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
@@ -174,7 +174,7 @@ function S(e) {
     updateRule: h
   } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), C = (0, s.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
-      let e = v(N({}, t), {
+      let e = _(N({}, t), {
         enabled: !f
       });
       b(!f);
@@ -217,7 +217,7 @@ function S(e) {
         className: j.ruleTextDescription,
         variant: "text-sm/normal",
         children: P
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(v, {
         rule: t,
         triggerType: t.triggerType
       })]
@@ -231,7 +231,7 @@ function S(e) {
         text: x.NW.string(x.t.UKOtz8),
         position: "top",
         "aria-label": x.NW.string(x.t.PdRCRk),
-        children: e => (0, r.jsx)(a.P3F, v(N({}, e), {
+        children: e => (0, r.jsx)(a.P3F, _(N({}, e), {
           onClick: I,
           className: j.menuIconButton,
           children: (0, r.jsx)(a.Huf, {
@@ -278,7 +278,7 @@ function T(e) {
         className: j.ruleTextDescription,
         variant: "text-sm/normal",
         children: o
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(v, {
         triggerType: t
       })]
     }), (0, r.jsx)(y, {

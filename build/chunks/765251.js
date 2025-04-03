@@ -12,10 +12,7 @@ t.exports = function(t, e) {
     u = [];
   t.forEach(function(s) {
     ! function(t, e) {
-      if (!r.g.FileReader || t.type && !(t.type in o)) {
-        e("");
-        return
-      }
+      if (!r.g.FileReader || t.type && !(t.type in o)) return e("");
       if ("" === t.type) {
         var a = "";
         i.test(t.name) && (a = t.name.replace(i, "")), e(a);

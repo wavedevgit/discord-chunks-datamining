@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(192379),
   r = n(392711),
   l = n.n(r),
-  o = n(911969),
-  a = n(254711),
+  a = n(911969),
+  o = n(254711),
   c = n(213459),
   s = n(10718),
-  d = n(148958),
-  u = n(689079);
+  u = n(148958),
+  d = n(689079);
 
 function p(e) {
   var t;
@@ -22,11 +22,11 @@ function p(e) {
   } = s.wi({
     context: n,
     filters: {
-      commandTypes: [o.yU.CHAT, o.yU.PRIMARY_ENTRY_POINT]
+      commandTypes: [a.yU.CHAT, a.yU.PRIMARY_ENTRY_POINT]
     },
     options: {
       placeholderCount: 0,
-      limit: u.tn,
+      limit: d.tn,
       includeFrecency: !0
     },
     allowFetch: !0
@@ -38,22 +38,22 @@ function p(e) {
     return i.length > 0 && e.add(n.id), e
   }, new Set), [m]), b = i.useMemo(() => {
     var e, t;
-    return Object.values(null !== (t = null === (e = p.result) || void 0 === e ? void 0 : e.sections) && void 0 !== t ? t : {}).map(e => {
+    return Object.values(null != (t = null == (e = p.result) ? void 0 : e.sections) ? t : {}).map(e => {
       let {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in a.Tm) && h.has(e.id))
-  }, [null === (t = p.result) || void 0 === t ? void 0 : t.sections, h]), v = (0, d.h)(b);
+    }).filter(e => !(e.id in o.Tm) && h.has(e.id))
+  }, [null == (t = p.result) ? void 0 : t.sections, h]), C = (0, u.h)(b);
   return {
-    appsInThisServer: i.useMemo(() => l().compact(v.map(e => {
+    appsInThisServer: i.useMemo(() => l().compact(C.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [v]),
+    })), [C]),
     isLoading: p.fetchState.fetching || f
   }
 }

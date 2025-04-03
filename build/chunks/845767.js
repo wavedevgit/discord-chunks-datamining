@@ -1,11 +1,11 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(570140),
   i = n(317770),
   l = n(594174);
-class o extends i.Z {
+class a extends i.Z {
   _initialize() {
     r.Z.subscribe("POST_CONNECTION_OPEN", this._maybeStartDevSession), r.Z.subscribe("LOGOUT", this._maybeStopDevSession)
   }
@@ -22,4 +22,4 @@ class o extends i.Z {
     null != window.DiscordDevSession && window.DiscordDevSession.started && window.DiscordDevSession.stop()
   }
 }
-let a = new o
+let o = new a

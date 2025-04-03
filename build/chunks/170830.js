@@ -9,7 +9,7 @@ function s(i) {
       });
       for (t = 1, await i(), t = 2; e.length > 0;) {
         var s;
-        null === (s = e.shift()) || void 0 === s || s()
+        null == (s = e.shift()) || s()
       }
     }
   }

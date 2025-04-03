@@ -1,11 +1,11 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(149765),
-  l = n(442837),
+  l = n(149765),
+  o = n(442837),
   a = n(481060),
   s = n(749210),
   c = n(412899),
@@ -19,30 +19,30 @@ var r = n(200651),
   h = n(823379),
   x = n(700785),
   j = n(388032),
-  v = n(214106);
+  N = n(439478);
 
-function N(e) {
+function O(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: N
-  } = e, O = (0, l.e7)([f.Z], () => f.Z.getRoles(n.id)), {
+    applicationIntegration: O
+  } = e, v = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
     application: y
-  } = N, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, l.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
+  } = O, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, o.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
   let S = i.useMemo(() => {
     var e, t, r;
-    let i = O[n.getEveryoneRoleId()],
-      l = null !== (t = null == C ? void 0 : null === (e = C.roles) || void 0 === e ? void 0 : e.map(e => O[e]).filter(h.lm)) && void 0 !== t ? t : [],
-      a = null !== (r = null == i ? void 0 : i.permissions) && void 0 !== r ? r : x.Hn;
-    for (let e of l) a = o.IH(a, e.permissions);
+    let i = v[n.getEveryoneRoleId()],
+      o = null != (t = null == C || null == (e = C.roles) ? void 0 : e.map(e => v[e]).filter(h.lm)) ? t : [],
+      a = null != (r = null == i ? void 0 : i.permissions) ? r : x.Hn;
+    for (let e of o) a = l.IH(a, e.permissions);
     return a
-  }, [n, O, C]);
+  }, [n, v, C]);
   return null == _ ? null : (0, r.jsx)(a.Zbd, {
     editable: !0,
-    className: v.card,
+    className: N.card,
     children: (0, r.jsxs)(p.Z, {
       direction: p.Z.Direction.VERTICAL,
       children: [(0, r.jsxs)(p.Z, {
@@ -50,7 +50,7 @@ function N(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: _.getAvatarURL(n.id, 32),
-          className: v.iconWrapper
+          className: N.iconWrapper
         }), (0, r.jsx)(a.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
@@ -58,38 +58,38 @@ function N(e) {
             user: _.toString()
           })
         }), (0, r.jsx)(u.Z, {
-          className: v.tag,
+          className: N.tag,
           verified: _.isVerifiedBot()
         })]
       }), function(e, t, n, i) {
-        let l = [],
+        let o = [],
           s = [];
-        for (let e of m.VY) o.e$(i, e) ? l.push(e) : s.push(e);
+        for (let e of m.VY) l.e$(i, e) ? o.push(e) : s.push(e);
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.$i$, {
-            className: v.divider
+            className: N.divider
           }), n.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.vwX, {
-              className: v.permissionHeader,
+              className: N.permissionHeader,
               children: j.NW.format(j.t.PCs0oq, {
                 numRoles: n.length
               })
             }), (0, r.jsx)(c.ZP, {
-              className: v.rolePills,
+              className: N.rolePills,
               user: e,
               guild: t,
               userRoles: n,
               wrap: !1,
               readOnly: !0
             })]
-          }) : null, l.length > 0 || s.length > 0 ? (0, r.jsx)(d.Z, {
-            grantedPermissions: l,
+          }) : null, o.length > 0 || s.length > 0 ? (0, r.jsx)(d.Z, {
+            grantedPermissions: o,
             grantedPermissionsHeader: j.NW.string(j.t["hA4+sr"]),
             disabledPermissions: s,
             disabledPermissionsHeader: j.NW.string(j.t["/rEZ2t"])
           }) : null]
         })
-      }(_, n, null !== (t = null == C ? void 0 : C.roles) && void 0 !== t ? t : [], S)]
+      }(_, n, null != (t = null == C ? void 0 : C.roles) ? t : [], S)]
     })
   })
 }

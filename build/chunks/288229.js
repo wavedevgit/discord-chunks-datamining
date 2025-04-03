@@ -24,7 +24,7 @@ var r = n(200651),
   E = n(341176),
   S = n(981631),
   v = n(388032),
-  P = n(629077);
+  P = n(302597);
 
 function x(e) {
   let {
@@ -100,9 +100,9 @@ function j(e) {
     }
   }, [M]);
   let T = a[N],
-    I = null !== (o = T.sourceMetadata) && void 0 !== o ? o : {},
-    Z = null == I ? void 0 : null === (t = I.message) || void 0 === t ? void 0 : t.id,
-    W = null == I ? void 0 : null === (n = I.message) || void 0 === n ? void 0 : n.channel_id,
+    I = null != (o = T.sourceMetadata) ? o : {},
+    Z = null == I || null == (t = I.message) ? void 0 : t.id,
+    W = null == I || null == (n = I.message) ? void 0 : n.channel_id,
     F = (0, u.e7)([g.Z], () => null != W && null != Z ? g.Z.getMessage(W, Z) : null, [W, Z]),
     U = null != F ? F : null == I ? void 0 : I.message,
     G = (0, i.useCallback)(() => (0, b.yg)(b.uG.FORWARD_PRESSED), []),
@@ -163,7 +163,7 @@ function j(e) {
             }), ("IMAGE" !== t.type || null != t.original) && !j && (0, r.jsxs)("div", {
               className: P.optionsContainer,
               children: [(0, r.jsx)(f.Z, {
-                href: null !== (n = t.original) && void 0 !== n ? n : t.url,
+                href: null != (n = t.original) ? n : t.url,
                 className: P.downloadLink,
                 onClick: () => ((0, b.yg)(b.uG.OPEN_LINK_PRESSED), !1),
                 children: v.NW.string(v.t.q5jLJC)

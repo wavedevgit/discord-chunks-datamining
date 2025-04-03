@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => i
 });
@@ -10,7 +10,7 @@ function i(e, t) {
   for (; null != i;) {
     var l;
     if (i === t || !(0, r.k)(i, HTMLElement)) break;
-    n += null !== (l = i.offsetTop) && void 0 !== l ? l : 0, i = i.offsetParent
+    n += null != (l = i.offsetTop) ? l : 0, i = i.offsetParent
   }
   return n
 }

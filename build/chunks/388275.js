@@ -1,4 +1,4 @@
-/** Chunk was on 44300 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   n: () => y
 }), n(47120);
@@ -17,7 +17,7 @@ var a = n(200651),
   g = n(912332),
   _ = n(646746),
   f = n(388032),
-  b = n(480310);
+  b = n(691176);
 
 function y(e) {
   let {
@@ -26,10 +26,10 @@ function y(e) {
     sendLabel: y,
     canSend: E,
     selectedDestinations: I,
-    isSending: v,
-    onSend: S,
-    showPreview: C
-  } = e, O = (0, d.Z)(), x = (0, p.nm)(I), A = (0, p.y)(I), N = (0, h.Ad)(), T = (0, l.e7)([m.Z], () => m.Z.getDraft(t.channel_id, m.d.ForwardContextMessage)), [P, L] = r.useState(() => (0, c.eK)(T)), {
+    isSending: S,
+    onSend: C,
+    showPreview: O
+  } = e, v = (0, d.Z)(), x = (0, p.nm)(I), A = (0, p.y)(I), N = (0, h.Ad)(), T = (0, l.e7)([m.Z], () => m.Z.getDraft(t.channel_id, m.d.ForwardContextMessage)), [P, L] = r.useState(() => (0, c.eK)(T)), {
     textValue: j,
     richValue: w
   } = P, [Z, D] = r.useState(!1), k = r.useCallback(() => D(!0), []), M = r.useCallback(() => D(!1), []), R = r.useCallback((e, n, a) => {
@@ -38,14 +38,14 @@ function y(e) {
       richValue: a
     }), s.Z.saveDraft(t.channel_id, n, m.d.ForwardContextMessage), N(t.channel_id, t.id)
   }, [N, t]), F = r.useCallback(() => {
-    s.Z.clearDraft(t.channel_id, m.d.ForwardContextMessage), S(j)
-  }, [t.channel_id, S, j]), W = r.useCallback(() => (!E || j.length > O || F(), Promise.resolve({
+    s.Z.clearDraft(t.channel_id, m.d.ForwardContextMessage), C(j)
+  }, [t.channel_id, C, j]), W = r.useCallback(() => (!E || j.length > v || F(), Promise.resolve({
     shouldClear: !1,
     shouldRefocus: !0
-  })), [F, j, O, E]);
+  })), [F, j, v, E]);
   return (0, a.jsxs)(i.mzw, {
     className: b.footerWithMessage,
-    children: [C && (0, a.jsx)("div", {
+    children: [O && (0, a.jsx)("div", {
       className: b.forwardPreviewWrapper,
       children: (0, a.jsx)(_.O, {
         message: t,
@@ -74,8 +74,8 @@ function y(e) {
           disableThemedBackground: !0
         }), (0, a.jsx)(i.zxk, {
           className: b.sendWithMessage,
-          submitting: v,
-          disabled: !E || j.length > O,
+          submitting: S,
+          disabled: !E || j.length > v,
           onClick: F,
           children: y
         })]

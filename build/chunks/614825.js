@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => A
 }), n(266796), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(913527),
-  s = n.n(l),
+  l = n.n(a),
+  o = n(913527),
+  s = n.n(o),
   c = n(873546),
   u = n(442837),
   d = n(481060),
@@ -18,15 +18,15 @@ var r = n(200651),
   g = n(594174),
   _ = n(78839),
   b = n(55935),
-  v = n(63063),
-  x = n(74538),
-  y = n(276444),
-  E = n(93237),
+  x = n(63063),
+  y = n(74538),
+  E = n(276444),
+  v = n(93237),
   O = n(786397),
   N = n(474936),
   j = n(981631),
   C = n(388032),
-  I = n(964309);
+  I = n(271818);
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,13 +53,13 @@ class P extends i.Component {
   renderTitle(e, t, n) {
     let {
       trialOffer: r
-    } = this.props, i = g.default.getUser(r.user_id), a = null != i ? i.username : "???", o = g.default.getUser(r.referrer_id), l = null != o ? o.username : "???";
+    } = this.props, i = g.default.getUser(r.user_id), a = null != i ? i.username : "???", l = g.default.getUser(r.referrer_id), o = null != l ? l.username : "???";
     return e && void 0 === r.redeemed_at ? C.NW.formatToPlainString(C.t.Mptau7, {
       username: a
     }) : t ? n ? C.NW.string(C.t["9SNdf3"]) : C.NW.formatToPlainString(C.t["H0+MxM"], {
-      userName: l
+      userName: o
     }) : C.NW.formatToPlainString(C.t.IiWKws, {
-      senderUserName: l,
+      senderUserName: o,
       recipientUserName: a
     })
   }
@@ -68,21 +68,21 @@ class P extends i.Component {
       trialOffer: r
     } = this.props;
     return e && !n && void 0 === r.redeemed_at ? C.NW.format(C.t.LwCwT0, {
-      helpdeskArticle: v.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
+      helpdeskArticle: x.Z.getArticleURL(j.BhN.REFERRAL_PROGRAM)
     }) : t ? null : C.NW.string(C.t.lQLlOT)
   }
   renderActions(e, t, n) {
     var i, a;
     let {
-      trialOffer: o,
-      currentUser: l,
+      trialOffer: l,
+      currentUser: o,
       analyticsLocations: s
     } = this.props, c = {
       onClick: () => {
-        this.handleStartTrial(o, s)
+        this.handleStartTrial(l, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = l.id !== o.user_id || (0, x.I5)(l) || !l.verified || (0, O.B)(o), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== l.user_id || (0, y.I5)(o) || !o.verified || (0, O.B)(l), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: I.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -93,8 +93,8 @@ class P extends i.Component {
               initialPlanId: null,
               subscriptionTier: N.Si.TIER_2,
               analyticsLocations: s,
-              trialId: o.trial_id,
-              referralTrialOfferId: o.id
+              trialId: l.trial_id,
+              referralTrialOfferId: l.id
             })
           },
           children: C.NW.string(C.t.O0etsL)
@@ -126,7 +126,7 @@ class P extends i.Component {
     let a = new Date("2025-03-27T10:00:00.000-07:00");
     return t ? C.NW.formatToPlainString(C.t.PuSHfX, {
       date: (0, b.vc)(s()(a), "LL")
-    }) : (0, E.F)(a.valueOf())
+    }) : (0, v.F)(a.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -140,7 +140,7 @@ class P extends i.Component {
       recipientHasNitro: n
     } = this.props, i = (0, O.B)(e), a = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
-      className: o()(I.tile, I.container),
+      className: l()(I.tile, I.container),
       children: [(0, r.jsx)("div", {
         className: I.media,
         children: this.renderMedia()
@@ -178,21 +178,21 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: a
-  } = (0, u.cj)([y.Z], () => ({
-    trialOffer: n ? y.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && y.Z.isResolving(t)
-  }), [n, t]), o = g.default.getCurrentUser(), l = (0, u.e7)([g.default], () => null != i && (0, x.I5)(void 0 !== o && i.user_id === o.id ? o : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
+  } = (0, u.cj)([E.Z], () => ({
+    trialOffer: n ? E.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && E.Z.isResolving(t)
+  }), [n, t]), l = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== l && i.user_id === l.id ? l : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
-    return l ? null === (e = _.ZP.getPremiumTypeSubscription()) || void 0 === e ? void 0 : e.trialEndsAt : null
+    return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
   }), {
     analyticsLocations: d
   } = (0, f.ZP)(m.Z.SHARE_NITRO_EMBED);
   return a ? (0, r.jsx)(p.OR, {
     isHorizontal: !c.tq
-  }) : n && null != i && void 0 !== o ? (0, r.jsx)(P, T({
+  }) : n && null != i && void 0 !== l ? (0, r.jsx)(P, T({
     trialOffer: i,
-    currentUser: o,
-    recipientHasNitro: l,
+    currentUser: l,
+    recipientHasNitro: o,
     trialEndsAt: s,
     analyticsLocations: d
   }, e)) : (0, r.jsx)("div", {

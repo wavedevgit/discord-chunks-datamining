@@ -1,14 +1,16 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  categoryItem: "categoryItem_b9ee0c",
-  categoryItemGuildCategory: "categoryItemGuildCategory_b9ee0c categoryItem_b9ee0c",
-  categoryItemDefaultCategory: "categoryItemDefaultCategory_b9ee0c categoryItem_b9ee0c",
-  categoryIcon: "categoryIcon_b9ee0c",
-  categoryItemRecentEmoji: "categoryItemRecentEmoji_b9ee0c",
-  categoryItemDefaultCategorySelected: "categoryItemDefaultCategorySelected_b9ee0c",
-  guildCategorySeparator: "guildCategorySeparator_b9ee0c",
-  unicodeShortcut: "unicodeShortcut_b9ee0c",
-  unicodeShortcutInvisible: "unicodeShortcutInvisible_b9ee0c"
-};
-e.exports = r
+/** Chunk was on 73628 **/
+e.exports = {
+  container: "container_f8a8fa",
+  uploadArea: "uploadArea_f8a8fa",
+  addFileButtonLook: "addFileButtonLook_f8a8fa",
+  addFileButton: "addFileButton_f8a8fa",
+  addFileButtonIcon: "addFileButtonIcon_f8a8fa",
+  separator: "separator_f8a8fa",
+  attachedFilesContainer: "attachedFilesContainer_f8a8fa",
+  attachedFileCard: "attachedFileCard_f8a8fa",
+  attachedFileCardSpinner: "attachedFileCardSpinner_f8a8fa",
+  attachedFileCardError: "attachedFileCardError_f8a8fa",
+  attachedFileCardUploading: "attachedFileCardUploading_f8a8fa",
+  deleteButton: "deleteButton_f8a8fa",
+  deleteButtonInner: "deleteButtonInner_f8a8fa"
+}

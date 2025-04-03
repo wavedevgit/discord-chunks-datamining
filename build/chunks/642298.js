@@ -9,8 +9,8 @@ var n = t(200651),
   o = t(481060),
   i = t(809206),
   c = t(594174),
-  d = t(626135),
-  x = t(706734),
+  x = t(626135),
+  d = t(706734),
   N = t(264119),
   m = t(75788),
   u = t(22150),
@@ -19,7 +19,7 @@ var n = t(200651),
   A = t(526761),
   h = t(981631),
   C = t(308569),
-  p = t(320082),
+  p = t(652297),
   j = t(800010),
   S = t(75277);
 
@@ -28,19 +28,19 @@ function k(e) {
   let {
     transitionState: f,
     onClose: g
-  } = e, M = (0, l.e7)([c.default], () => c.default.getCurrentUser()), I = r.useRef(null !== (s = null == M ? void 0 : M.verified) && void 0 !== s && s);
-  r.useEffect(() => (d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, i.Zy)()), []);
+  } = e, M = (0, l.e7)([c.default], () => c.default.getCurrentUser()), I = r.useRef(null != (s = null == M ? void 0 : M.verified) && s);
+  r.useEffect(() => (x.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_ATTEMPTED), () => (0, i.Zy)()), []);
   let O = null == M ? void 0 : M.verified,
-    v = O ? A.Ax.CONFIRM_START : A.Ax.EMAIL_AND_PASSWORD,
-    [R, T] = r.useState(v),
+    R = O ? A.Ax.CONFIRM_START : A.Ax.EMAIL_AND_PASSWORD,
+    [T, v] = r.useState(R),
     [b, z] = r.useState(null),
     [L, W] = r.useState(null),
     [y, D] = r.useState(null),
     [w, U] = r.useState(""),
     [P, G] = r.useState(),
     [H, Z] = r.useState(""),
-    F = R === A.Ax.CHANGE_EMAIL_WARNING ? p.wumpusExclamationImg : p.emailHeaderImg,
-    B = R === A.Ax.CHANGE_EMAIL_WARNING ? S : j,
+    F = T === A.Ax.CHANGE_EMAIL_WARNING ? p.wumpusExclamationImg : p.emailHeaderImg,
+    B = T === A.Ax.CHANGE_EMAIL_WARNING ? S : j,
     K = {
       impression_group: a.ImpressionGroups.USER_ACCOUNT_EMAIL_CHANGE_FLOW
     };
@@ -52,7 +52,7 @@ function k(e) {
       className: F,
       src: B
     }), (0, n.jsxs)(o.MyZ, {
-      activeSlide: R,
+      activeSlide: T,
       width: 440,
       onSlideReady: e => z(e),
       children: [(0, n.jsx)(o.Mi4, {
@@ -60,7 +60,7 @@ function k(e) {
         impressionName: a.ImpressionNames.USER_ACCOUNT_EMAIL_CHANGE_SEND_CODE,
         impressionProperties: K,
         children: (0, n.jsx)(u.Z, {
-          onNext: () => T(A.Ax.CONFIRM_CODE),
+          onNext: () => v(A.Ax.CONFIRM_CODE),
           onClose: g
         })
       }), (0, n.jsx)(o.Mi4, {
@@ -72,17 +72,17 @@ function k(e) {
           setError: D,
           setEmailToken: W,
           isSlideReady: b === A.Ax.CONFIRM_CODE,
-          onNext: () => T(A.Ax.CHANGE_EMAIL_REASONS),
+          onNext: () => v(A.Ax.CHANGE_EMAIL_REASONS),
           onClose: g
         })
       }), (0, n.jsx)(o.Mi4, {
         id: A.Ax.CHANGE_EMAIL_REASONS,
         impressionName: a.ImpressionNames.USER_ACCOUNT_EMAIL_CHANGE_COLLECT_REASONS,
         impressionProperties: K,
-        children: (0, n.jsx)(x.Z, {
-          onNext: () => (d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, {
+        children: (0, n.jsx)(d.Z, {
+          onNext: () => (x.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_REASON_CONTINUE, {
             change_email_reason_enum: P
-          }), null != P && C.Mr.has(P) ? T(A.Ax.CHANGE_EMAIL_WARNING) : T(A.Ax.EMAIL_AND_PASSWORD)),
+          }), null != P && C.Mr.has(P) ? v(A.Ax.CHANGE_EMAIL_WARNING) : v(A.Ax.EMAIL_AND_PASSWORD)),
           onClose: g,
           reason: P,
           onReasonChange: G,
@@ -95,9 +95,9 @@ function k(e) {
         impressionProperties: K,
         children: (0, n.jsx)(E.Z, {
           onNext: () => {
-            d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE, {
+            x.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_WARNING_CONTINUE, {
               change_email_reason_enum: P
-            }), T(A.Ax.EMAIL_AND_PASSWORD)
+            }), v(A.Ax.EMAIL_AND_PASSWORD)
           },
           onClose: g
         })
@@ -136,12 +136,12 @@ function k(e) {
         children: (0, n.jsx)(_.Z, {
           emailToken: L,
           isSlideReady: b === A.Ax.EMAIL_AND_PASSWORD,
-          onBack: O ? () => T(null != P && C.Mr.has(P) ? A.Ax.CHANGE_EMAIL_WARNING : A.Ax.CHANGE_EMAIL_REASONS) : null,
+          onBack: O ? () => v(null != P && C.Mr.has(P) ? A.Ax.CHANGE_EMAIL_WARNING : A.Ax.CHANGE_EMAIL_REASONS) : null,
           onNext: e => {
-            d.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
+            x.default.track(h.rMx.USER_ACCOUNT_EMAIL_CHANGE_SAVE_NEW_EMAIL, {
               change_email_reason_enum: P,
               free_text_response: H
-            }), U(e), T(A.Ax.COMPLETE)
+            }), U(e), v(A.Ax.COMPLETE)
           },
           onClose: g
         })

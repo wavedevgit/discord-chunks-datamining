@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(114851),
-  a = n(88693),
+  a = n(114851),
+  o = n(88693),
   s = n(611928),
   c = n(763433),
   u = n(922122),
@@ -21,10 +21,10 @@ var r = n(200651),
   E = n(29086),
   O = n(590771),
   N = n(273596),
-  v = n(128449),
-  y = n(49898),
-  I = n(388032),
-  C = n(99698);
+  y = n(128449),
+  I = n(49898),
+  v = n(388032),
+  C = n(398075);
 
 function S() {
   let e = i.useRef((0, g.PM)()),
@@ -32,14 +32,14 @@ function S() {
       onScroll: t,
       scrollPosition: n,
       resetScrollPosition: S
-    } = (0, o.M)(),
+    } = (0, a.M)(),
     {
       tabs: T,
       selectedTab: P,
       setSelectedTab: j
     } = (0, E.Y)(),
     A = (0, g.lg)(P),
-    Z = !v.MU.has(P),
+    Z = !y.MU.has(P),
     {
       searchQuery: x,
       onSearchTextChange: L,
@@ -60,7 +60,7 @@ function S() {
       onCollapsedSearchBarClick: G,
       onSearchBarBlur: W,
       tabsClassName: V
-    } = (0, a.U)({
+    } = (0, o.U)({
       isSearchBarVisible: Z,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: M,
@@ -76,7 +76,7 @@ function S() {
       let {
         id: t
       } = e;
-      return !v.MU.has(t)
+      return !y.MU.has(t)
     }) : T, [T, D]),
     z = i.useRef(new f.Z(A)),
     {
@@ -112,17 +112,17 @@ function S() {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: C.searchResultsHeader,
-        children: I.NW.format(I.t.zHdzqa, {
+        children: v.NW.format(v.t.zHdzqa, {
           query: B
         })
       }), Z && (0, r.jsx)(d.Z, {
         query: x,
-        placeholder: I.NW.string(I.t["5h0QOD"]),
+        placeholder: v.NW.string(v.t["5h0QOD"]),
         onTextChange: L,
         onClear: w,
         onSubmit: R,
         onCollapsedClick: G,
-        state: D ? y.GlobalDiscoverySearchBarState.DEFAULT : M,
+        state: D ? I.GlobalDiscoverySearchBarState.DEFAULT : M,
         onBlur: W
       })]
     }) : (0, r.jsxs)(s.ZP, {
@@ -144,17 +144,17 @@ function S() {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: C.searchResultsHeader,
-        children: I.NW.format(I.t.zHdzqa, {
+        children: v.NW.format(v.t.zHdzqa, {
           query: B
         })
       }), Z && (0, r.jsx)(d.Z, {
         query: x,
-        placeholder: I.NW.string(I.t["5h0QOD"]),
+        placeholder: v.NW.string(v.t["5h0QOD"]),
         onTextChange: L,
         onClear: w,
         onSubmit: R,
         onCollapsedClick: G,
-        state: D ? y.GlobalDiscoverySearchBarState.DEFAULT : M,
+        state: D ? I.GlobalDiscoverySearchBarState.DEFAULT : M,
         onBlur: W
       })]
     }), D ? (0, r.jsx)(N.Z, {

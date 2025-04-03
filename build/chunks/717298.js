@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(89425),
   g = n(100527),
   _ = n(906732),
-  v = n(594190),
-  j = n(695346),
+  j = n(594190),
+  v = n(695346),
   b = n(131951),
   S = n(19780),
   C = n(594174),
@@ -40,9 +40,9 @@ var r = n(200651),
   L = n(801604),
   D = n(577257),
   G = n(70722),
-  U = n(690452),
+  U = n(843874),
   B = n(388032),
-  z = n(976485);
+  z = n(321910);
 
 function F(e) {
   var t;
@@ -82,7 +82,7 @@ function F(e) {
       sourceType: en
     } = Q,
     er = l.useCallback(async e => {
-      j.eo.updateSetting(Q.notifyFriends), j.I0.updateSetting(Q.hidePreview);
+      v.eo.updateSetting(Q.notifyFriends), v.I0.updateSetting(Q.hidePreview);
       let [t, r] = await (0, T.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
         preset: Q.preset,
         fps: Q.fps,
@@ -118,8 +118,8 @@ function F(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: X,
-          application_id: (0, y.isWindows)() ? null === (t = (0, O.Z)(v.ZP, N.Z)) || void 0 === t ? void 0 : t.id : void 0,
-          parent_media_session_id: S.Z.getMediaSessionId()
+          application_id: (0, y.isWindows)() ? null == (t = (0, O.Z)(j.ZP, N.Z)) ? void 0 : t.id : void 0,
+          parent_media_session_id: S.ZP.getMediaSessionId()
         }
       },
       className: s()(z.root, {

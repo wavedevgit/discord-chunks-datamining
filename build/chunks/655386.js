@@ -142,5 +142,8 @@ var t = {
 };
 let i = function(o, e, n) {
   var i, a = t[o];
-  return (i = "string" == typeof a ? a : 1 === e ? null != n && n.addSuffix ? n.comparison && n.comparison > 0 ? a.one.withPrepositionIn : a.one.withPrepositionAgo : a.one.standalone : e % 10 > 1 && e % 10 < 5 && "1" !== String(e).substr(-2, 1) ? a.dual.replace("{{count}}", String(e)) : a.other.replace("{{count}}", String(e)), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? "za " + i : "prije " + i : i
+  if (i = "string" == typeof a ? a : 1 === e ? null != n && n.addSuffix ? n.comparison && n.comparison > 0 ? a.one.withPrepositionIn : a.one.withPrepositionAgo : a.one.standalone : e % 10 > 1 && e % 10 < 5 && "1" !== String(e).substr(-2, 1) ? a.dual.replace("{{count}}", String(e)) : a.other.replace("{{count}}", String(e)), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return "za " + i;
+    else return "prije " + i;
+  return i
 }

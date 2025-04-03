@@ -16,7 +16,7 @@ var r = n(200651),
   h = n(479099),
   g = n(981631),
   f = n(388032),
-  p = n(750246);
+  p = n(414464);
 
 function x() {
   return Promise.resolve()
@@ -27,22 +27,22 @@ function b(e) {
     channel: t,
     closePopout: n,
     setPopoutRef: b
-  } = e, v = (0, u.Vm)(t), {
-    tagFilter: j
+  } = e, j = (0, u.Vm)(t), {
+    tagFilter: v
   } = (0, d.H)(t.id), C = (0, d.v)(), _ = (0, s.e7)([c.Z], () => c.Z.keyboardModeEnabled), y = a.useCallback(e => {
     (0, m.e7)({
       guildId: t.guild_id,
       channelId: t.id,
       tagId: e,
-      filterTagIds: Array.from(j),
-      added: !j.has(e),
+      filterTagIds: Array.from(v),
+      added: !v.has(e),
       location: {
         page: g.ZY5.GUILD_CHANNEL,
         section: g.jXE.FORUM_CHANNEL_HEADER,
         object: g.qAy.CHANNEL_TAG
       }
     }), C.getState().toggleTagFilter(t.id, e)
-  }, [t, j, C]), N = a.useCallback(() => {
+  }, [t, v, C]), N = a.useCallback(() => {
     C.getState().setTagFilter(t.id, new Set), _ || n()
   }, [C, t.id, _, n]), O = (0, i.ZP)({
     id: "".concat(t.id, "-all-tags-dropdown-navigator"),
@@ -78,7 +78,7 @@ function b(e) {
             color: "none",
             variant: "text-xs/medium",
             tabularNumbers: !0,
-            children: j.size
+            children: v.size
           })
         })]
       })
@@ -127,10 +127,10 @@ function b(e) {
             }
           }, i), n = n = {
             className: p.tagContainer,
-            children: v.map(e => (0, r.jsx)(h.Z, {
+            children: j.map(e => (0, r.jsx)(h.Z, {
               className: p.tag,
               tag: e,
-              selected: j.has(e.id),
+              selected: v.has(e.id),
               onClick: () => y(e.id)
             }, e.id))
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

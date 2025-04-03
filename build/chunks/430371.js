@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -19,10 +19,10 @@ var r = n(200651),
   b = n(111248),
   _ = n(312703),
   C = n(796638),
-  v = n(981631),
-  y = n(354459),
-  x = n(684457),
-  j = n(160848);
+  y = n(981631),
+  x = n(354459),
+  v = n(363987),
+  j = n(999976);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -84,16 +84,16 @@ function P(e) {
     [z, Y] = i.useState(null),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = M.type === y.fO.ACTIVITY || M.type === y.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    J = M.type === x.fO.ACTIVITY || M.type === x.fO.PRESENCE_EMBEDDED_ACTIVITY,
     $ = (0, u.Z)(J ? M.applicationId : void 0),
     ee = !J && null != M.streamId,
     et = U <= 2 * I + 144,
     en = k && !et,
     er = (0, c.Z)(en),
-    ei = B === v.AEg.MINIMUM || B === v.AEg.NORMAL,
+    ei = B === y.AEg.MINIMUM || B === y.AEg.NORMAL,
     el = !et && (!ei || J),
     eo = (0, m.Z)(el, 100),
-    ea = (null !== (t = (0, c.Z)(M.id)) && void 0 !== t ? t : M.id) !== M.id,
+    ea = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
   let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
@@ -116,9 +116,9 @@ function P(e) {
         clamp: !0
       }),
       onStart: () => Q(!0),
-      onChange: () => f.S.dispatch(v.CkL.REMEASURE_TARGET),
+      onChange: () => f.S.dispatch(y.CkL.REMEASURE_TARGET),
       onRest: () => {
-        Q(!1), f.S.dispatch(v.CkL.REMEASURE_TARGET)
+        Q(!1), f.S.dispatch(y.CkL.REMEASURE_TARGET)
       }
     }, "animate-always"),
     em = (0, s.q_F)({
@@ -158,13 +158,13 @@ function P(e) {
     eC = i.useCallback(e => {
       Y(e), K(!1)
     }, []),
-    ev = en || D ? [] : (0, _.n3)(Z, M, V),
+    ey = en || D ? [] : (0, _.n3)(Z, M, V),
     {
-      visibleParticipants: ey,
-      participantTileWidth: ex
+      visibleParticipants: ex,
+      participantTileWidth: ev
     } = (0, C.ZB)(W, T);
   return (0, r.jsxs)("div", {
-    className: o()(j.root, x.flexCenter, L),
+    className: o()(j.root, v.flexCenter, L),
     children: [(0, r.jsxs)("div", {
       className: j.tileWrapper,
       style: {
@@ -181,7 +181,7 @@ function P(e) {
           },
           className: j.videoWrapper,
           children: (0, r.jsx)("div", {
-            className: x.videoSizer,
+            className: v.videoSizer,
             style: {
               aspectRatio: ec
             },
@@ -190,13 +190,13 @@ function P(e) {
                 key: i
               } = n;
               return null != t ? (0, r.jsx)(a.animated.div, {
-                className: x.videoWrapperAnimated,
+                className: v.videoWrapperAnimated,
                 style: e,
                 children: (0, r.jsx)(g.ZP, {
                   focused: !0,
                   noBorder: ed >= W || eu >= U,
                   channel: R,
-                  className: x.focusedVideo,
+                  className: v.focusedVideo,
                   videoComponent: G,
                   paused: D,
                   width: W,
@@ -236,20 +236,20 @@ function P(e) {
           onClick: l,
           onContextMenu: P,
           onDoubleClick: S,
-          participants: ey,
-          participantTileWidth: ex,
+          participants: ex,
+          participantTileWidth: ev,
           selectedParticipantId: M.id,
           inCall: w,
           paused: D || X || !k,
           popoutWindow: A
         })
       })]
-    }), ev.length > 0 ? (0, r.jsx)(b.Z, {
+    }), ey.length > 0 ? (0, r.jsx)(b.Z, {
       onContextMenuParticipant: P,
       width: W,
       height: U,
       channel: R,
-      participants: ev,
+      participants: ey,
       onSelectParticipant: l
     }) : null]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -21,12 +21,12 @@ var r = n(200651),
   x = n(130341),
   j = n(981975),
   N = n(660962),
-  v = n(442182),
-  _ = n(322816),
+  _ = n(442182),
+  v = n(322816),
   C = n(266665),
   O = n(203377),
   y = n(981631),
-  I = n(413381);
+  I = n(443185);
 
 function E(e) {
   let t, {
@@ -63,7 +63,7 @@ function E(e) {
       let {
         role: n,
         editRoleId: r
-      } = W.current, i = (0, x.UT)(E), s = null !== (t = null === (e = h.Z.getRoleMemberCount(T.id)) || void 0 === e ? void 0 : e[r]) && void 0 !== t ? t : 0;
+      } = W.current, i = (0, x.UT)(E), s = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
       g.default.track(y.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -104,7 +104,7 @@ function E(e) {
       });
       break;
     case O.ZI.PERMISSIONS:
-      t = (0, r.jsx)(_.ZP, {
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: Z,
@@ -122,7 +122,7 @@ function E(e) {
       });
       break;
     case O.ZI.MEMBERS:
-      t = (0, r.jsx)(v.ZP, {
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: Z,

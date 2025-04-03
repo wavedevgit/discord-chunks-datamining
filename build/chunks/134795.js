@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => m
 });
@@ -7,11 +7,11 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(654904),
-  l = n(993413),
+  l = n(654904),
+  o = n(993413),
   c = n(486324),
   d = n(388032),
-  u = n(904420);
+  u = n(771066);
 
 function m(e) {
   let {
@@ -26,7 +26,7 @@ function m(e) {
     forcedDivider: b,
     withHighlight: N = !1
   } = e, x = N ? a.gtL : a.zxk;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(o.Z, {
     className: g,
     title: d.NW.string(d.t.Vgdusr),
     showPremiumIcon: h,
@@ -40,7 +40,7 @@ function m(e) {
           [u.buttonHighlighted]: N
         }),
         size: a.zxk.Sizes.SMALL,
-        onClick: () => (0, o.$r)(c.pC.BANNER, m, f, void 0),
+        onClick: () => (0, l.$r)(c.pC.BANNER, m, f, void 0),
         children: d.NW.string(d.t.N0bC3N)
       }), t && (0, r.jsx)(a.zxk, {
         className: u.removeButton,

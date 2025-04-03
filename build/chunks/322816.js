@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => P
@@ -21,11 +21,11 @@ var r = n(200651),
   x = n(95242),
   j = n(420966),
   N = n(275296),
-  v = n(203377),
-  _ = n(981631),
+  _ = n(203377),
+  v = n(981631),
   C = n(388032),
-  O = n(111043),
-  y = n(640453);
+  O = n(96878),
+  y = n(877248);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -167,7 +167,7 @@ function P(e) {
     handleScroll: S
   } = (0, j.V)(), P = i.useRef(!1);
   return i.useEffect(() => {
-    !P.current && "" !== d.trimStart() && (g.default.track(_.rMx.SEARCH_STARTED, {
+    P.current || "" === d.trimStart() || (g.default.track(v.rMx.SEARCH_STARTED, {
       search_type: "Permissions"
     }), P.current = !0)
   }, [d]), (0, r.jsx)(c.yWw, {
@@ -186,7 +186,7 @@ function P(e) {
         children: [(0, r.jsx)(j.Z, {
           guild: t,
           role: n,
-          selectedSection: v.ZI.PERMISSIONS,
+          selectedSection: _.ZI.PERMISSIONS,
           setSelectedSection: l
         }), (0, r.jsx)("div", {
           className: O.noticeContainer,

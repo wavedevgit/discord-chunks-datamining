@@ -27,7 +27,7 @@ let p = () => ({
   r = p();
 class l extends(c = d.ZP.PersistedStore) {
   initialize(t) {
-    return r = function(t) {
+    r = function(t) {
       for (var e = 1; e < arguments.length; e++) {
         var a = null != arguments[e] ? arguments[e] : {},
           c = Object.keys(a);
@@ -38,11 +38,11 @@ class l extends(c = d.ZP.PersistedStore) {
         })
       }
       return t
-    }({}, r, null != t ? t : {}), ! function() {
-      let t = Date.now();
-      for (let [e, a] of Object.entries(r.prevLeaderboardRanks))(null == a || t > a.ttl) && delete r.prevLeaderboardRanks[e];
-      for (let [e, a] of Object.entries(r.currentLeaderboardRanks))(null == a || t > a.ttl) && delete r.currentLeaderboardRanks[e]
-    }(), !0
+    }({}, r, null != t ? t : {});
+    let e = Date.now();
+    for (let [t, a] of Object.entries(r.prevLeaderboardRanks))(null == a || e > a.ttl) && delete r.prevLeaderboardRanks[t];
+    for (let [t, a] of Object.entries(r.currentLeaderboardRanks))(null == a || e > a.ttl) && delete r.currentLeaderboardRanks[t];
+    return !0
   }
   getState() {
     return r
@@ -74,7 +74,7 @@ let b = new l(n.Z, {
       ranks: d.users.map(t => t.user_id),
       ttl: f.default.extractTimestamp(d.interval_end)
     }, p = r.currentLeaderboardRanks[n];
-    if ((0, s.E)(i.ranks, null !== (e = null == p ? void 0 : p.ranks) && void 0 !== e ? e : [])) return !1;
+    if ((0, s.E)(i.ranks, null != (e = null == p ? void 0 : p.ranks) ? e : [])) return !1;
     r.prevLeaderboardRanks[n] = p, r.currentLeaderboardRanks[n] = i
   }
 })

@@ -8,12 +8,12 @@ var l = r(399606),
   s = r(481060),
   i = r(275759),
   a = r(565138),
-  o = r(706454),
-  c = r(271383),
+  c = r(706454),
+  o = r(271383),
   u = r(430824),
   d = r(709054),
   m = r(388032),
-  p = r(35307);
+  p = r(209643);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -53,7 +53,7 @@ function b(e) {
     guildId: r,
     textClassName: b,
     tooltipDelay: x
-  } = e, v = (0, l.e7)([o.default], () => o.default.locale), g = (0, l.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, l.e7)([c.ZP], () => null != r ? c.ZP.getMember(r, t) : null), y = (0, i.FI)(d.default.extractTimestamp(t), v), O = (0, i.FI)(null == h ? void 0 : h.joinedAt, v);
+  } = e, v = (0, l.e7)([c.default], () => c.default.locale), g = (0, l.e7)([u.Z], () => null != r ? u.Z.getGuild(r) : null), h = (0, l.e7)([o.ZP], () => null != r ? o.ZP.getMember(r, t) : null), y = (0, i.FI)(d.default.extractTimestamp(t), v), O = (0, i.FI)(null == h ? void 0 : h.joinedAt, v);
   return null == g || null == h ? (0, n.jsx)(s.Text, {
     variant: "text-sm/normal",
     className: b,

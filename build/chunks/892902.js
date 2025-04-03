@@ -12,7 +12,7 @@ let d = new o.Z(196606),
 
 function T(e, t, n) {
   var l;
-  let i = null !== (l = d.get(e)) && void 0 !== l ? l : new Map;
+  let i = null != (l = d.get(e)) ? l : new Map;
   i.set(t, n), d.set(e, i), c++
 }
 
@@ -30,7 +30,7 @@ class p extends(l = a.ZP.Store) {
   getInteractionComponentState(e, t) {
     var n;
     let l = d.get(e);
-    return null == l ? null : null !== (n = l.get(t)) && void 0 !== n ? n : null
+    return null == l ? null : null != (n = l.get(t)) ? n : null
   }
 }
 u = "LocalInteractionComponentStateStore", (i = "displayName") in p ? Object.defineProperty(p, i, {

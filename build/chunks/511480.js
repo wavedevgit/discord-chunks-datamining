@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => B,
@@ -22,8 +22,8 @@ var r = n(200651),
   x = n(768581),
   j = n(900849),
   N = n(434404),
-  v = n(999382),
-  _ = n(718157),
+  _ = n(999382),
+  v = n(718157),
   C = n(450474),
   O = n(209054),
   y = n(118215),
@@ -37,7 +37,7 @@ var r = n(200651),
   Z = n(929834),
   D = n(981631),
   A = n(388032),
-  k = n(212189);
+  k = n(131027);
 
 function W(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -70,13 +70,13 @@ function M(e) {
   }
   return e
 }
-let G = s.ZP.connectStores([v.Z], () => {
+let G = s.ZP.connectStores([_.Z], () => {
   let {
     guild: e,
     originalGuild: t,
     submitting: n,
     guildMetadata: r
-  } = v.Z.getProps();
+  } = _.Z.getProps();
   return {
     guild: e,
     submitting: n,
@@ -298,7 +298,7 @@ class U extends i.PureComponent {
           className: k.description,
           children: A.NW.string(A.t.MSfJlZ)
         })]
-      }), (0, r.jsx)(_.E, {
+      }), (0, r.jsx)(v.E, {
         guildId: i.id,
         guildMetadata: t,
         isDisabled: !e
@@ -451,13 +451,13 @@ class U extends i.PureComponent {
     })
   }
 }
-let B = s.ZP.connectStores([v.Z, h.Z, y.ZP, p.ZP, b.default, f.Z], () => {
+let B = s.ZP.connectStores([_.Z, h.Z, y.ZP, p.ZP, b.default, f.Z], () => {
   let {
     guild: e,
     errors: t,
     submitting: n,
     guildMetadata: r
-  } = v.Z.getProps(), i = h.Z.can(D.Plq.MANAGE_GUILD, e), s = h.Z.can(D.Plq.ADMINISTRATOR, e), a = null != e ? y.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? p.ZP.getChannels(e.id) : null, o = [];
+  } = _.Z.getProps(), i = h.Z.can(D.Plq.MANAGE_GUILD, e), s = h.Z.can(D.Plq.ADMINISTRATOR, e), a = null != e ? y.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? p.ZP.getChannels(e.id) : null, o = [];
   return null != l && l[p.sH].forEach(e => {
     let {
       channel: t

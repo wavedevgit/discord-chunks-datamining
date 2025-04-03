@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var a = n(512722),
   o = n.n(a),
-  i = n(468194),
-  l = n(442837),
+  l = n(468194),
+  i = n(442837),
   c = n(477690),
   s = n(481060),
   u = n(809086),
@@ -16,17 +16,17 @@ var a = n(512722),
   m = n(598952),
   h = n(596211),
   j = n(388032),
-  b = n(894473);
-let p = (0, i.Mg)(c.Z.GUILD_PRODUCT_DOWNLOAD_MODAL_HEADER_IMAGE_WIDTH);
+  b = n(313881);
+let p = (0, l.Mg)(c.Z.GUILD_PRODUCT_DOWNLOAD_MODAL_HEADER_IMAGE_WIDTH);
 
 function x(t) {
   let {
     guildProductListing: e,
     guildId: n,
     onClose: a
-  } = t, o = (0, l.e7)([d.Z], () => {
+  } = t, o = (0, i.e7)([d.Z], () => {
     var t;
-    return null === (t = d.Z.getGuild(n)) || void 0 === t ? void 0 : t.name
+    return null == (t = d.Z.getGuild(n)) ? void 0 : t.name
   });
   return (0, r.jsxs)(s.xBx, {
     className: b.header,
@@ -94,11 +94,11 @@ function O(t) {
   let {
     guildId: n,
     productId: a,
-    onClose: i,
+    onClose: l,
     transitionState: c
-  } = t, u = (0, l.e7)([f.Z], () => f.Z.getGuildProduct(a));
+  } = t, u = (0, i.e7)([f.Z], () => f.Z.getGuildProduct(a));
   o()(null != u, "guildProductListing cannot be null");
-  let d = null !== (e = u.attachments) && void 0 !== e ? e : [];
+  let d = null != (e = u.attachments) ? e : [];
   return (0, r.jsxs)(s.Y0X, {
     className: b.modal,
     size: s.CgR.MEDIUM,
@@ -107,7 +107,7 @@ function O(t) {
     children: [(0, r.jsx)(x, {
       guildId: n,
       guildProductListing: u,
-      onClose: i
+      onClose: l
     }), (0, r.jsx)(s.hzk, {
       children: (0, r.jsx)("ul", {
         className: b.__invalid_attachmentsList,

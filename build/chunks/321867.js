@@ -1,58 +1,58 @@
-/** Chunk was on 96977 **/
-n.d(t, {
-  Z: () => N
+/** Chunk was on 77942 **/
+n.d(e, {
+  Z: () => v
 });
-var i = n(200651),
-  o = n(192379),
-  r = n(442837),
+var o = n(200651),
+  r = n(192379),
+  i = n(442837),
   a = n(481060),
   l = n(100527),
   c = n(906732),
   s = n(118012),
-  d = n(411477),
-  u = n(197115),
-  _ = n(594174),
-  g = n(626135),
-  b = n(74538),
-  f = n(981631),
-  m = n(486324),
-  p = n(474936),
-  h = n(388032),
-  v = n(283714);
+  u = n(411477),
+  _ = n(197115),
+  d = n(594174),
+  f = n(626135),
+  m = n(74538),
+  p = n(981631),
+  b = n(486324),
+  g = n(474936),
+  C = n(388032),
+  N = n(886563);
 
-function N(e) {
+function v(t) {
   let {
-    analyticsSection: t,
+    analyticsSection: e,
     type: n
-  } = e, N = (0, r.e7)([_.default], () => _.default.getCurrentUser()), C = b.ZP.canUseAnimatedAvatar(N), y = b.ZP.canUsePremiumProfileCustomization(N), x = n === m.pC.BANNER && y || n === m.pC.AVATAR && C, {
-    sourceAnalyticsLocations: T
+  } = t, v = (0, i.e7)([d.default], () => d.default.getCurrentUser()), x = m.ZP.canUseAnimatedAvatar(v), A = m.ZP.canUsePremiumProfileCustomization(v), E = n === b.pC.BANNER && A || n === b.pC.AVATAR && x, {
+    sourceAnalyticsLocations: y
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
-  if (o.useEffect(() => {
-      x || g.default.track(f.rMx.PREMIUM_UPSELL_VIEWED, {
-        type: t,
-        location_stack: T
+  if (r.useEffect(() => {
+      E || f.default.track(p.rMx.PREMIUM_UPSELL_VIEWED, {
+        type: e,
+        location_stack: y
       })
-    }, [x, t, T]), x) return null;
-  let E = (0, i.jsx)(u.Z, {
-    className: v.__invalid_getNitroLink,
+    }, [E, e, y]), E) return null;
+  let h = (0, o.jsx)(_.Z, {
+    className: N.__invalid_getNitroLink,
     size: a.zxk.Sizes.SMALL,
     look: a.zxk.Looks.LINK,
     color: a.zxk.Colors.LINK,
-    subscriptionTier: p.Si.TIER_2,
-    buttonText: h.NW.format(h.t["944tDg"], {}),
+    subscriptionTier: g.Si.TIER_2,
+    buttonText: C.NW.format(C.t["944tDg"], {}),
     showIcon: !1,
     premiumModalAnalyticsLocation: {
-      section: t,
-      object: f.qAy.BUTTON_CTA
+      section: e,
+      object: p.qAy.BUTTON_CTA
     },
     disableShine: !0
   });
-  return (0, i.jsx)(d.Z, {
+  return (0, o.jsx)(u.Z, {
     reducedRightPadding: !0,
-    className: v.nitroPreviewUpsell,
-    text: h.NW.format(h.t.Og8039, {}),
+    className: N.nitroPreviewUpsell,
+    text: C.NW.format(C.t.Og8039, {}),
     textSize: s.Z.Sizes.SIZE_14,
     textColor: s.Z.Colors.HEADER_PRIMARY,
-    button: E
+    button: h
   })
 }

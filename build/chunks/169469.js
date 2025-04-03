@@ -160,5 +160,8 @@ var a = {
 };
 let i = function(e, t, n) {
   var i, o = null != n && n.addSuffix ? a[e].withPreposition : a[e].standalone;
-  return (i = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", String(t)), null != n && n.addSuffix) ? n.comparison && n.comparison > 0 ? "in " + i : "vor " + i : i
+  if (i = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", String(t)), null != n && n.addSuffix)
+    if (n.comparison && n.comparison > 0) return "in " + i;
+    else return "vor " + i;
+  return i
 }

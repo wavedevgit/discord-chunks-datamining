@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 }), n(301563), n(411104);
@@ -13,28 +13,27 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let o = null;
-class l extends(r = i.ZP.Store) {
+let l = null;
+class o extends(r = i.ZP.Store) {
   getCurrentPath() {
-    return null != o ? o.pathname : null
+    return null != l ? l.pathname : null
   }
   getCurrentRoute() {
-    return function(e) {
-      let t = null != e && null != e.search ? e.search : "";
-      return null != e ? "".concat(e.pathname).concat(t) : null
-    }(o)
+    var e = l;
+    let t = null != e && null != e.search ? e.search : "";
+    return null != e ? "".concat(e.pathname).concat(t) : null
   }
   reset() {
     throw Error("Should not reset the store this way outside of a test environment")
   }
 }
-a(l, "displayName", "ApplicationStoreLocationStore");
-let c = new l(s.Z, {
+a(o, "displayName", "ApplicationStoreLocationStore");
+let c = new o(s.Z, {
   APPLICATION_STORE_LOCATION_CHANGE: function(e) {
     let {
       location: t
     } = e;
-    o = function(e) {
+    l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -48,6 +47,6 @@ let c = new l(s.Z, {
     }({}, t)
   },
   APPLICATION_STORE_RESET_NAVIGATION: function() {
-    o = null
+    l = null
   }
 })

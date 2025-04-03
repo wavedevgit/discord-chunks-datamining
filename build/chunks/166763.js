@@ -43,8 +43,9 @@ var n = r(310958),
         focusKey: e.getAnchorKey(),
         focusOffset: e.getAnchorOffset(),
         isBackward: !1
-      })), n = e.getAnchorKey(), i = e.getFocusKey(), o = t.getBlockForKey(n), u = t.getBlockForKey(i);
-      var n, i, o, u, s = e.getStartOffset(),
+      })), n = e.getAnchorKey(), i = e.getFocusKey(), o = t.getBlockForKey(n);
+      var n, i, o, u = t.getBlockForKey(i),
+        s = e.getStartOffset(),
         c = e.getEndOffset(),
         l = o.getEntityAt(s),
         f = u.getEntityAt(c - 1);

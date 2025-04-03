@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   ZP: () => d
 }), n(47120);
@@ -18,7 +18,7 @@ function c(e) {
 
 function u(e) {
   var t;
-  null === (t = document.getElementById(e)) || void 0 === t || t.focus()
+  null == (t = document.getElementById(e)) || t.focus()
 }
 
 function d(e) {
@@ -34,18 +34,18 @@ function d(e) {
     focusOnMount: b = !0,
     enabled: _ = !0,
     onDispatch: C
-  } = e, v = r.useCallback((e, t) => {
+  } = e, y = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
     return null != C && C(e, n, t), n
-  }, [C]), [y, x] = r.useReducer(v, {
+  }, [C]), [x, v] = r.useReducer(y, {
     focusedIndex: d,
     itemCount: n
   }), {
     itemCount: j,
     focusedIndex: O
-  } = y, [E] = r.useState(() => (0, o.P2)(x, 16));
+  } = x, [E] = r.useState(() => (0, o.P2)(v, 16));
   return r.useEffect(() => {
-      x({
+      v({
         type: i.G.UPDATE_ITEM_COUNT,
         itemCount: n
       })
@@ -63,10 +63,10 @@ function d(e) {
         includeSetSizes: b,
         focusOnMount: _,
         enabled: C,
-        makeId: v = o.qR,
-        getIndexFromId: y
-      } = e, x = r.useRef(n), j = r.useRef(y);
-      j.current = y, x.current = n;
+        makeId: y = o.qR,
+        getIndexFromId: x
+      } = e, v = r.useRef(n), j = r.useRef(x);
+      j.current = x, v.current = n;
       let O = r.useRef(C);
       r.useEffect(() => {
         O.current = C
@@ -84,11 +84,8 @@ function d(e) {
         }, [h]),
         [S, Z] = r.useState(!0);
       r.useEffect(() => {
-        if (S && !_) {
-          Z(!1);
-          return
-        }
-        P(v(t, d), d)
+        if (S && !_) return void Z(!1);
+        P(y(t, d), d)
       }, [d]);
       let T = r.useCallback(function() {
           let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
@@ -96,8 +93,8 @@ function d(e) {
           n !== d && m({
             type: i.G.SET_FOCUSED_INDEX,
             index: n
-          }), e && P(v(t, n), n)
-        }, [v, d, f, m, t, P]),
+          }), e && P(y(t, n), n)
+        }, [y, d, f, m, t, P]),
         A = r.useCallback(e => {
           if (!O.current) return;
           if (a.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
@@ -129,32 +126,26 @@ function d(e) {
               });
               return;
             case l.Us.SELECT_FOCUSED_ITEM:
-              let r = c(s(v, t, d));
+              let r = c(s(y, t, d));
               if ((null == r ? void 0 : r.ownerDocument.activeElement) !== r || e.repeat) return;
               if (e.preventDefault(), e.stopPropagation(), m({
                   type: n
-                }), null != p) {
-                p(d);
-                return
-              }
+                }), null != p) return void p(d);
               null == r || r.click()
           }
-        }, [v, t, m, d, T, p]),
+        }, [y, t, m, d, T, p]),
         w = r.useCallback(() => {
           E || N(!0)
         }, [E]),
         R = r.useCallback(() => {
-          !E && (g ? P(v(t, d), d) : T(!0))
-        }, [v, t, P, g, E, d, T]),
+          E || (g ? P(y(t, d), d) : T(!0))
+        }, [y, t, P, g, E, d, T]),
         M = r.useCallback(e => {
-          !e.currentTarget.contains(e.relatedTarget) && requestAnimationFrame(() => {
-            if (null == c(s(v, t, d))) {
-              P(t);
-              return
-            }
+          e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
+            if (null == c(s(y, t, d))) return void P(t);
             N(!1)
           })
-        }, [v, t, d, P]),
+        }, [y, t, d, P]),
         k = r.useRef(null);
       r.useLayoutEffect(() => {
         let e = k.current;
@@ -175,13 +166,13 @@ function d(e) {
           } = e;
           return {
             role: "listitem",
-            "aria-setsize": b ? x.current : void 0,
+            "aria-setsize": b ? v.current : void 0,
             "aria-posinset": b ? n + 1 : void 0,
-            id: v(t, n),
+            id: y(t, n),
             tabIndex: g && n === d ? 0 : -1,
-            onFocus: I.get(null != j.current ? v(t, n) : n)
+            onFocus: I.get(null != j.current ? y(t, n) : n)
           }
-        }, [v, t, d, g, I, b]);
+        }, [y, t, d, g, I, b]);
       return r.useMemo(() => ({
         dispatch: m,
         getContainerProps: L,

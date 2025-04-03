@@ -1,7 +1,7 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => j,
-  x: () => v
+  x: () => x
 }), n(653041);
 var r, a = n(200651),
   i = n(192379),
@@ -15,7 +15,7 @@ var r, a = n(200651),
   m = n(768581),
   h = n(624138),
   g = n(388032),
-  f = n(730210);
+  f = n(581330);
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -48,14 +48,14 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var v = ((r = {})[r.SMALL = (0, h.Mg)(c.Z.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", r[r.LARGE = (0, h.Mg)(c.Z.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", r);
-let x = {
-    [v.SMALL]: f.moreGuildsSmall,
-    [v.LARGE]: f.moreGuildsLarge
+var x = ((r = {})[r.SMALL = (0, h.Mg)(c.Z.GUILD_COUNT_SMALL_ICON_SIZE)] = "SMALL", r[r.LARGE = (0, h.Mg)(c.Z.GUILD_COUNT_LARGE_ICON_SIZE)] = "LARGE", r);
+let v = {
+    [x.SMALL]: f.moreGuildsSmall,
+    [x.LARGE]: f.moreGuildsLarge
   },
   C = {
-    [v.SMALL]: f.iconSmall,
-    [v.LARGE]: f.iconLarge
+    [x.SMALL]: f.iconSmall,
+    [x.LARGE]: f.iconLarge
   };
 
 function j(e) {
@@ -67,9 +67,9 @@ function j(e) {
     className: j,
     textVariant: y = "text-sm/normal",
     compact: O,
-    guildIconSize: P = v.LARGE,
-    guildsClassName: I
-  } = e, N = (0, s.e7)([p.default], () => p.default.locale), S = new Intl.ListFormat(N), E = null !== (n = null === (t = l.directory_entry) || void 0 === t ? void 0 : t.guild_count) && void 0 !== n ? n : 0, T = null !== (r = null == c ? void 0 : c.length) && void 0 !== r ? r : 0, A = Math.max(0, E - T), {
+    guildIconSize: I = x.LARGE,
+    guildsClassName: N
+  } = e, P = (0, s.e7)([p.default], () => p.default.locale), S = new Intl.ListFormat(P), E = null != (n = null == (t = l.directory_entry) ? void 0 : t.guild_count) ? n : 0, T = null != (r = null == c ? void 0 : c.length) ? r : 0, A = Math.max(0, E - T), {
     shownMutualGuilds: L,
     hiddenMutualGuilds: R
   } = i.useMemo(() => {
@@ -96,25 +96,25 @@ function j(e) {
       mutualGuildCount: t,
       nonMutualGuildCount: l.format(n)
     })
-  }(E, T, A, N, O);
+  }(E, T, A, P, O);
   return 0 === L.length && null == Z ? null : (0, a.jsxs)("div", {
     className: o()(j, f.wrapper),
     children: [(0, a.jsx)("div", {
-      className: o()(f.icons, I),
+      className: o()(f.icons, N),
       children: L.length > 0 ? (0, a.jsxs)(a.Fragment, {
         children: [L.map((e, t) => {
           let n = t === L.length - 1 && 0 === w,
             r = m.ZP.getGuildIconURL({
               id: e.id,
               icon: e.icon,
-              size: P,
+              size: I,
               canAnimate: !1
             }),
             l = (0, a.jsx)(d.ua7, {
               text: e.name,
               position: "top",
               children: e => (0, a.jsx)("img", b(_({}, e), {
-                className: o()(f.icon, C[P]),
+                className: o()(f.icon, C[I]),
                 src: r,
                 alt: ""
               }))
@@ -123,8 +123,8 @@ function j(e) {
             children: l
           }, e.id) : (0, a.jsx)(u.ZP, {
             className: f.iconMask,
-            height: P,
-            width: P,
+            height: I,
+            width: I,
             mask: u.ZP.Masks.VOICE_USER_SUMMARY_ITEM,
             children: l
           }, e.id)
@@ -134,15 +134,15 @@ function j(e) {
           }),
           position: "top",
           children: e => (0, a.jsxs)("div", b(_({}, e), {
-            className: o()(f.moreGuilds, x[P]),
+            className: o()(f.moreGuilds, v[I]),
             children: ["+", w]
           }))
         }) : null]
       }) : (0, a.jsx)(d.QTo, {
         size: "custom",
         color: "currentColor",
-        width: P,
-        height: P,
+        width: I,
+        height: I,
         className: f.defaultIcon
       })
     }), null != Z ? (0, a.jsx)(d.Text, {

@@ -1,7 +1,9 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 39149 **/
+"use strict";
 e.exports = {
-  "text-sm/normal": "text-sm/normal__6ec1a",
-  topic: "topic__6ec1a text-sm/normal__6ec1a",
-  topicClickTarget: "topicClickTarget__6ec1a",
-  expandable: "expandable__6ec1a"
+  subtext: "subtext__65a39",
+  description: "description__65a39",
+  twoColumns: "twoColumns__65a39",
+  column: "column__65a39",
+  divider: "divider__65a39"
 }

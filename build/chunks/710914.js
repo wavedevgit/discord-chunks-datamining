@@ -5,12 +5,12 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(497505),
   c = n(415104),
   u = n(46140),
-  d = n(398940);
+  d = n(204997);
 
 function p(e) {
   let {
@@ -51,11 +51,11 @@ function p(e) {
       let e = [];
       for (let r of t) {
         var n;
-        r.id === u.V6 && (null === (n = r.userStatus) || void 0 === n ? void 0 : n.claimedAt) == null ? e.unshift(r) : e.push(r)
+        r.id === u.V6 && (null == (n = r.userStatus) ? void 0 : n.claimedAt) == null ? e.unshift(r) : e.push(r)
       }
       return e
     }, [t]);
-  return n && 0 === t.length ? (0, r.jsx)(a.$jN, {
+  return n && 0 === t.length ? (0, r.jsx)(o.$jN, {
     className: d.spinner
   }) : (0, r.jsx)("div", {
     className: d.container,
@@ -66,7 +66,7 @@ function p(e) {
         questContent: s.jn.QUEST_HOME_DESKTOP,
         contentPosition: t,
         rowIndex: n,
-        className: o()(d.questTile, {
+        className: a()(d.questTile, {
           [d.selected]: p && e.id === l,
           [d.unselected]: p && e.id !== l
         })

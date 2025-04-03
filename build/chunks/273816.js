@@ -1,6 +1,6 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(47120);
 var i = n(200651),
   r = n(192379),
@@ -15,9 +15,9 @@ var i = n(200651),
   h = n(333031),
   f = n(610394),
   m = n(501787),
-  g = n(935350);
+  g = n(565655);
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -36,7 +36,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function y(e, t) {
   }), e
 }
 
-function O(e) {
+function v(e) {
   let {
     locked: t,
     pinned: n,
     anchorLeft: o
-  } = e, O = (0, a.e7)([d.Z], () => d.Z.getSocket()), b = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.getSocket()), b = (0, a.e7)([f.ZP], () => f.ZP.isGPUBoosted());
   (0, u.nU)();
   let _ = (0, a.e7)([p.Z], () => p.Z.getWindow(m.$J)),
-    [E, x] = (0, u.m8)(O),
+    [E, x] = (0, u.m8)(v),
     {
       currentFPS: I,
       averageFrameTime: j,
@@ -68,7 +68,7 @@ function O(e) {
       bufferFramecountRef: w,
       frameCheckerEffect: P
     } = (0, u.d6)(!0, E, !0),
-    [T, k, D] = (0, u.ZF)(O),
+    [T, k, D] = (0, u.ZF)(v),
     [A, L] = (0, u.Y5)(T, P, _),
     R = performance.now() - x.current < u.MC,
     W = k(j, w.current);
@@ -183,7 +183,7 @@ function O(e) {
       }), (0, i.jsx)(s.ua7, {
         position: "left",
         text: "The average amount of 'lag' between us rendering a frame and being able to process background tasks. Values constantly above 1-2ms means our main thread is being burried by work and is taking all of its time in animation frames, most likely producing user interaciton blocking jank. (This doesn't work when the app is backgrounded though)",
-        children: e => (0, i.jsx)("div", y(v({}, e), {
+        children: e => (0, i.jsx)("div", O(y({}, e), {
           children: (0, i.jsxs)(s.Text, {
             variant: "text-md/normal",
             color: "text-secondary",
@@ -200,7 +200,7 @@ function O(e) {
     }), R && (0, i.jsx)(s.ua7, {
       position: "left",
       text: "We don't track frames while the app is in the background, because requestAnimationFrame doesn't fire in the background",
-      children: e => (0, i.jsx)("span", y(v({}, e), {
+      children: e => (0, i.jsx)("span", O(y({}, e), {
         children: (0, i.jsx)(s.Text, {
           tag: "span",
           variant: "code",

@@ -108,8 +108,7 @@ function M(e) {
       n = (0, v.Z)(e.ownerId, V.Yn.STREAM);
     return t ? n : null
   }(t), J = function(e) {
-    let t;
-    let n = (0, i.e7)([j.Z], () => null != j.Z.getRemoteSessionId()),
+    let t, n = (0, i.e7)([j.Z], () => null != j.Z.getRemoteSessionId()),
       o = (0, i.e7)([N.Z], () => N.Z.getChannel(e.channelId), [e.channelId]),
       a = _(e),
       u = C.default.getCurrentUser(),

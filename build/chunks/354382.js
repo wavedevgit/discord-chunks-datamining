@@ -1,15 +1,15 @@
 /** Chunk was on 3277 **/
 n.d(t, {
-  Z: () => r
+  Z: () => o
 });
 var i = n(475637),
   a = n(925300),
-  o = n(99887);
-let r = {
+  r = n(99887);
+let o = {
   ordinalNumber: (0, a.Z)({
     matchPattern: /^[०१२३४५६७८९]+/i,
     parsePattern: /^[०१२३४५६७८९]+/i,
-    valueCallback: o.n
+    valueCallback: r.n
   }),
   era: (0, i.Z)({
     matchPatterns: {

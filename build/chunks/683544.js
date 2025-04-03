@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(301563);
@@ -18,8 +18,8 @@ var r = n(200651),
   f = n(258971),
   _ = n(979007),
   b = n(981631),
-  v = n(115803);
-let x = {
+  x = n(175457);
+let v = {
     results: [],
     totalPages: 0,
     loadId: ""
@@ -30,19 +30,19 @@ let x = {
       categoryId: n,
       onSelectApplication: C,
       resetScroll: j
-    } = e, [y, O] = a.useState(1), P = a.useCallback(e => {
+    } = e, [y, O] = a.useState(1), I = a.useCallback(e => {
       O(e)
     }, []);
     a.useEffect(() => {
       O(1)
     }, [n]);
-    let I = a.useMemo(() => ({
+    let N = a.useMemo(() => ({
         query: _.EMPTY_QUERY,
         page: y,
         pageSize: _.PAGE_SIZE,
         categoryId: n
       }), [y, n]),
-      N = (0, l.e7)([u.Z], () => u.Z.getFetchState({
+      P = (0, l.e7)([u.Z], () => u.Z.getFetchState({
         query: _.EMPTY_QUERY,
         page: y,
         pageSize: _.PAGE_SIZE,
@@ -50,14 +50,14 @@ let x = {
       })),
       S = (0, l.cj)([u.Z], () => {
         var e;
-        return null !== (e = u.Z.getSearchResults(I)) && void 0 !== e ? e : x
+        return null != (e = u.Z.getSearchResults(N)) ? e : v
       }),
-      E = null !== (t = (0, s.Z)(S)) && void 0 !== t ? t : x,
+      E = null != (t = (0, s.Z)(S)) ? t : v,
       {
         results: T,
         totalPages: A,
         loadId: L
-      } = a.useMemo(() => N === d.M.FETCHING ? E : S, [N, E, S]),
+      } = a.useMemo(() => P === d.M.FETCHING ? E : S, [P, E, S]),
       R = a.useMemo(() => null == T ? void 0 : T.filter(e => e.type === i.s.APPLICATION), [T]),
       w = a.useCallback(e => {
         let {
@@ -96,15 +96,15 @@ let x = {
         position: t
       }), C(e)
     }, [L, C]);
-    return N === d.M.ERROR ? (0, r.jsx)("div", {
-      className: v.errorContainer,
+    return P === d.M.ERROR ? (0, r.jsx)("div", {
+      className: x.errorContainer,
       children: (0, r.jsx)(g.Z, {
-        className: v.error
+        className: x.error
       })
     }) : (0, r.jsxs)(m.Z, {
-      loading: N === d.M.FETCHING,
+      loading: P === d.M.FETCHING,
       children: [(0, r.jsx)("div", {
-        className: v.content,
+        className: x.content,
         children: null == R ? void 0 : R.map((e, t) => {
           if (e.type === i.s.APPLICATION) {
             let n = e.data;
@@ -116,13 +116,13 @@ let x = {
           return null
         })
       }), (0, r.jsx)(o.DsT, {
-        className: v.paginationInput,
+        className: x.paginationInput,
         totalCount: Math.min(A * _.PAGE_SIZE, _.MAX_PAGES * _.PAGE_SIZE),
         pageSize: _.PAGE_SIZE,
         disablePaginationGap: !0,
         hideMaxPage: !0,
         currentPage: y,
-        onPageChange: P
+        onPageChange: I
       })]
     })
   }

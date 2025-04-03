@@ -38,7 +38,7 @@ var r, l, i = n(200651),
   W = n(701488),
   M = n(981631),
   U = n(388032),
-  R = n(934506);
+  R = n(636424);
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,12 +62,12 @@ function F(e) {
   return e
 }
 var B = ((l = {}).ACTIVITY_FEED = "ActivityFeed", l.STREAM_PREVIEW = "StreamPreview", l.VOICE_CHANNEL = "VoiceChannel", l);
-let G = {
+let Y = {
     StreamPreview: [108, 60],
     VoiceChannel: [108, 60],
     ActivityFeed: [900, 500]
   },
-  Y = (0, f.Z)(class extends o.PureComponent {
+  G = (0, f.Z)(class extends o.PureComponent {
     render() {
       return (0, i.jsx)("div", {
         className: R.timestamp,
@@ -113,13 +113,13 @@ class H extends(r = o.PureComponent) {
     return (0, k.Z)(this.activity) && "ActivityFeed" === this.props.type
   }
   renderHeader(e) {
-    let t;
-    let {
-      hideHeader: n,
-      activityGuild: r,
-      showChannelDetails: l,
-      renderHeaderAccessory: o
-    } = this.props, a = this.activity;
+    let t, {
+        hideHeader: n,
+        activityGuild: r,
+        showChannelDetails: l,
+        renderHeaderAccessory: o
+      } = this.props,
+      a = this.activity;
     if (n || null == a) return null;
     let {
       name: c
@@ -150,7 +150,7 @@ class H extends(r = o.PureComponent) {
     }
     if (null != r) {
       var u;
-      t = (0, x.yE)(null !== (u = null == a ? void 0 : a.flags) && void 0 !== u ? u : 0, M.xjy.EMBEDDED) ? a.type === M.IIU.WATCHING ? U.NW.formatToPlainString(U.t["M/L8oq"], {
+      t = (0, x.yE)(null != (u = null == a ? void 0 : a.flags) ? u : 0, M.xjy.EMBEDDED) ? a.type === M.IIU.WATCHING ? U.NW.formatToPlainString(U.t["M/L8oq"], {
         guildName: r.name
       }) : U.NW.formatToPlainString(U.t["4chKQk"], {
         guildName: r.name
@@ -181,21 +181,21 @@ class H extends(r = o.PureComponent) {
   }
   renderImage(e) {
     var t, n, r;
-    let l, a;
-    let {
-      type: c
-    } = this.props, {
-      assets: u,
-      application_id: d
-    } = e;
+    let l, a, {
+        type: c
+      } = this.props,
+      {
+        assets: u,
+        application_id: d
+      } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, k.Z)(e) && (l = G[c]);
+    (0, k.Z)(e) && (l = Y[c]);
     let f = (0, D.Z)(e),
       m = null != u.large_image ? (0, i.jsx)("img", {
-        alt: null !== (t = u.large_text) && void 0 !== t ? t : "",
+        alt: null != (t = u.large_text) ? t : "",
         src: (0, E.xF)(d, u.large_image, null != l ? l : [W.Si.LARGE, W.Si.LARGE]),
         className: s()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? M.ABu.TWITCH : ""), {
-          [null !== (n = this.getTypeClass("assetsLargeMask")) && void 0 !== n ? n : ""]: null != u.small_image,
+          [null != (n = this.getTypeClass("assetsLargeMask")) ? n : ""]: null != u.small_image,
           [R.assetsLargeImageSpotify]: f
         })
       }) : null;
@@ -211,11 +211,11 @@ class H extends(r = o.PureComponent) {
         width: W.Si.SMALL,
         height: W.Si.SMALL,
         children: (0, i.jsx)("img", {
-          src: null !== (r = Z.ZP.getGuildIconURL({
+          src: null != (r = Z.ZP.getGuildIconURL({
             id: t.guildId,
             icon: u.small_image,
             size: W.Si.SMALL
-          })) && void 0 !== r ? r : void 0,
+          })) ? r : void 0,
           className: R.assetsLargeImageVoiceChannel,
           alt: ""
         })
@@ -245,7 +245,7 @@ class H extends(r = o.PureComponent) {
       children: e => {
         var t;
         return (0, i.jsx)("img", F({
-          alt: null !== (t = u.small_text) && void 0 !== t ? t : "",
+          alt: null != (t = u.small_text) ? t : "",
           src: (0, E.xF)(d, u.small_image, [W.Si.SMALL, W.Si.SMALL]),
           className: this.getTypeClass("assetsSmallImage", null == m ? "WithoutLargeImage" : void 0)
         }, e))
@@ -315,11 +315,12 @@ class H extends(r = o.PureComponent) {
     })
   }
   renderDetails(e) {
-    let t;
-    let {
-      details: n,
-      state: r
-    } = e, l = n, o = n;
+    let t, {
+        details: n,
+        state: r
+      } = e,
+      l = n,
+      o = n;
     if (e.type === M.IIU.CUSTOM_STATUS) l = r;
     else if (!(0, A.Z)(e)) {
       if (l = r, o = r, (0, D.Z)(e) && null != r) l = U.NW.format(U.t.uU9le3, {
@@ -333,7 +334,7 @@ class H extends(r = o.PureComponent) {
       });
       else if ((0, I.dS)(e)) {
         var a;
-        l = null === (a = e.assets) || void 0 === a ? void 0 : a.small_text
+        l = null == (a = e.assets) ? void 0 : a.small_text
       }
     }
     return null == l || "" === l ? null : ((0, k.Z)(e) && (l = U.NW.formatToPlainString(U.t.gmCZRU, {
@@ -389,7 +390,7 @@ class H extends(r = o.PureComponent) {
     let {
       timestamps: n
     } = e;
-    return null == n ? null : (0, T.Z)(e) ? (0, i.jsx)(Y, {
+    return null == n ? null : (0, T.Z)(e) ? (0, i.jsx)(G, {
       timestamps: n
     }) : (0, i.jsx)(P.ZP, {
       start: n.start,
@@ -417,12 +418,13 @@ class H extends(r = o.PureComponent) {
   }
   renderState(e, t) {
     var n, r;
-    let l;
-    let {
-      state: o,
-      party: a,
-      assets: s
-    } = e, c = o, u = o;
+    let l, {
+        state: o,
+        party: a,
+        assets: s
+      } = e,
+      c = o,
+      u = o;
     return (!(0, A.Z)(e) && (c = null == s ? void 0 : s.large_text, u = null == s ? void 0 : s.large_text, (0, D.Z)(e) && null != c && (c = U.NW.format(U.t.vOLBEx, {
       album: u,
       albumHook: (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(p.eee, {
@@ -430,9 +432,9 @@ class H extends(r = o.PureComponent) {
         onClick: this.handleOpenSpotifyAlbum,
         children: u
       }, n) : u
-    }))), null != c && "" !== c && e.type !== M.IIU.CUSTOM_STATUS || (0, I.dS)(e)) ? ((null == a ? void 0 : a.size) == null && [W.Zc].includes(null !== (n = e.application_id) && void 0 !== n ? n : "") ? l = U.NW.formatToPlainString(U.t["u//9Bw"], {
+    }))), null != c && "" !== c && e.type !== M.IIU.CUSTOM_STATUS || (0, I.dS)(e)) ? ((null == a ? void 0 : a.size) == null && [W.Zc].includes(null != (n = e.application_id) ? n : "") ? l = U.NW.formatToPlainString(U.t["u//9Bw"], {
       count: "0",
-      max: null !== (r = null == t ? void 0 : t.getMaxParticipants()) && void 0 !== r ? r : 0
+      max: null != (r = null == t ? void 0 : t.getMaxParticipants()) ? r : 0
     }) : (0, I.dS)(e) && (null == a ? void 0 : a.size) != null ? l = U.NW.formatToPlainString(U.t["JC/3x8"], {
       numSpeakers: a.size[0],
       numListeners: a.size[1] - a.size[0]
@@ -452,15 +454,15 @@ class H extends(r = o.PureComponent) {
     })) : null
   }
   render() {
-    let e;
-    let {
-      type: t,
-      renderActions: n,
-      className: r,
-      application: l,
-      onClose: o,
-      onOpenGameProfileModal: a
-    } = this.props, c = this.activity;
+    let e, {
+        type: t,
+        renderActions: n,
+        className: r,
+        application: l,
+        onClose: o,
+        onOpenGameProfileModal: a
+      } = this.props,
+      c = this.activity;
     if (null == c || c.type === M.IIU.CUSTOM_STATUS) return null;
     let u = "ActivityFeed" === t,
       d = "StreamPreview" === t,
@@ -525,7 +527,7 @@ let J = e => {
   var t, n, r, l, o;
   let a = (0, j.Z)({
     location: "UserActivity",
-    applicationId: null !== (r = null === (t = e.application) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null === (n = e.activity) || void 0 === n ? void 0 : n.application_id,
+    applicationId: null != (r = null == (t = e.application) ? void 0 : t.id) ? r : null == (n = e.activity) ? void 0 : n.application_id,
     source: v.m1.UserProfile,
     sourceUserId: e.user.id,
     trackEntryPointImpression: !0

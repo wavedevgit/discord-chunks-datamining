@@ -55,7 +55,7 @@ async function o() {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_FETCH_FAILURE",
-      error: null !== (n = null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.message) && void 0 !== n ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
     })
   })
 }
@@ -102,7 +102,7 @@ async function S(t) {
     var n, i;
     E.Z.dispatch({
       type: "SAFETY_HUB_FETCH_CLASSIFICATION_FAILURE",
-      error: null !== (i = null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.message) && void 0 !== i ? i : "Unknown error",
+      error: null != (i = null == e || null == (n = e.body) ? void 0 : n.message) ? i : "Unknown error",
       classificationId: t
     })
   })
@@ -149,7 +149,7 @@ async function T(t, e, n) {
     var e, n;
     throw E.Z.dispatch({
       type: "SAFETY_HUB_REQUEST_REVIEW_FAILURE",
-      error: null !== (n = null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.message) && void 0 !== n ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
     }), t
   })
 }
@@ -183,7 +183,7 @@ async function c(t) {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-      error: null !== (n = null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.message) && void 0 !== n ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
     })
   })
 }
@@ -215,7 +215,7 @@ async function U() {
     var e, n;
     E.Z.dispatch({
       type: "SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE",
-      error: null !== (n = null == t ? void 0 : null === (e = t.body) || void 0 === e ? void 0 : e.message) && void 0 !== n ? n : "Unknown error"
+      error: null != (n = null == t || null == (e = t.body) ? void 0 : e.message) ? n : "Unknown error"
     })
   })
 }

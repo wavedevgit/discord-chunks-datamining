@@ -14,9 +14,9 @@ var r = n(200651),
   d = n(827397),
   p = n(279604),
   f = n(535396),
-  b = n(296260),
+  b = n(680278),
   m = n(388032),
-  O = n(9902);
+  O = n(503945);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,7 +66,7 @@ function g(e, t) {
   return o
 }
 
-function v(e) {
+function I(e) {
   let {
     powerup: t,
     isActive: n,
@@ -89,7 +89,7 @@ function v(e) {
   })
 }
 
-function I(e) {
+function v(e) {
   var {
     guildId: t,
     powerup: n
@@ -115,7 +115,7 @@ function y(e) {
   } = e, d = g(e, ["guildId", "powerup", "compact", "onError"]);
   let {
     onActivate: f,
-    isLoading: I,
+    isLoading: v,
     error: y,
     onShowDeactivate: x
   } = (0, p.ZP)(t, n), N = null != (0, u.Z)(t, n), {
@@ -149,9 +149,9 @@ function y(e) {
       "aria-label": m.NW.string(N ? b.Z.TZsu1d : b.Z.gSxlHR),
       disabled: k,
       onClick: N ? x : f,
-      submitting: I
+      submitting: v
     }), d), {
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(I, {
         powerup: n,
         isActive: N,
         compact: s
@@ -175,7 +175,7 @@ function x(e) {
       onError: s,
       grow: l,
       compact: !l
-    }), i && c && (0, r.jsx)(I, {
+    }), i && c && (0, r.jsx)(v, {
       guildId: n,
       powerup: o
     })]

@@ -1,34 +1,32 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  x: () => l
+  x: () => o
 });
 var r = n(675478),
   i = n(915486),
   s = n(428967),
   a = n(605236),
-  o = n(644916);
+  l = n(644916);
 
-function l(e, t) {
+function o(e, t) {
   if (-1 !== s.k.indexOf(e)) {
-    let t = (0, o.t)(e);
-    return function(e, t) {
-      let {
+    let t = (0, l.t)(e),
+      {
         isDismissed: n,
         lastDismissedVersion: i
       } = (0, a.H4)(e);
-      return {
-        isDismissed: n,
-        handleToggleDismissState: function() {
-          n ? (0, r.Z1)(e) : (0, r.Bn)(e, t)
-        },
-        recurringDismissibleContentInfo: {
-          lastDismissedVersion: null != i ? i : void 0,
-          lastDismissedAtMs: void 0
-        }
+    return {
+      isDismissed: n,
+      handleToggleDismissState: function() {
+        n ? (0, r.Z1)(e) : (0, r.Bn)(e, t)
+      },
+      recurringDismissibleContentInfo: {
+        lastDismissedVersion: null != i ? i : void 0,
+        lastDismissedAtMs: void 0
       }
-    }(e, t)
+    }
   }
-  return -1 !== s.N.indexOf(e) ? function(e) {
+  if (-1 !== s.N.indexOf(e)) {
     let {
       isDismissed: t,
       lastDismissedAtMs: n
@@ -43,14 +41,13 @@ function l(e, t) {
         lastDismissedAtMs: null != n ? n : void 0
       }
     }
-  }(e) : function(e, t) {
-    let n = (0, i.jl)(t, e);
-    return {
-      isDismissed: n,
-      handleToggleDismissState: function() {
-        n ? (0, r.w9)(e) : (0, r.nm)(e)
-      },
-      recurringDismissibleContentInfo: null
-    }
-  }(e, t)
+  }
+  let n = (0, i.jl)(t, e);
+  return {
+    isDismissed: n,
+    handleToggleDismissState: function() {
+      n ? (0, r.w9)(e) : (0, r.nm)(e)
+    },
+    recurringDismissibleContentInfo: null
+  }
 }

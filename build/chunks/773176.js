@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => eC
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(407477),
   _ = n(633302),
   C = n(856985),
-  v = n(346610),
-  y = n(868643),
-  x = n(245216),
+  y = n(346610),
+  x = n(868643),
+  v = n(245216),
   j = n(223606),
   O = n(188597),
   E = n(41776),
@@ -62,7 +62,7 @@ var r = n(200651),
   eo = n(921944),
   ea = n(185923),
   es = n(388032),
-  ec = n(589747);
+  ec = n(351131);
 
 function eu(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -166,7 +166,7 @@ let ef = i.memo(function(e) {
           className: ec.emoji,
           canSelect: !1
         })
-      }, "".concat(null !== (i = e.id) && void 0 !== i ? i : 0, ":").concat(e.name))
+      }, "".concat(null != (i = e.id) ? i : 0, ":").concat(e.name))
     })
   })
 });
@@ -209,7 +209,7 @@ function em(e) {
       author: s
     } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, D.$R)(t), m = (0, D.Gu)(t), g = W.nc.useSetting(), b = W.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: C,
-      canAddNewReactions: x
+      canAddNewReactions: v
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
@@ -224,7 +224,7 @@ function em(e) {
         channel: t,
         canChat: _,
         renderReactions: g,
-        canAddNewReactions: x,
+        canAddNewReactions: v,
         isLurking: I,
         isGuest: P,
         isActiveChannelOrUnarchivableThread: p
@@ -236,12 +236,12 @@ function em(e) {
       }),
       {
         canForwardMessages: K
-      } = (0, v.yk)({
+      } = (0, y.yk)({
         location: "useMessageUtilitiesProps"
       }, {
         autoTrackExposure: !1
       }),
-      ee = (0, y.a)(n),
+      ee = (0, x.a)(n),
       {
         enabled: et
       } = k.Z.useExperiment({
@@ -287,13 +287,13 @@ function em(e) {
     ea({
       emojiPicker: !q
     })
-  }, [q, ea]), eC = (0, D.$R)(t), ev = n.hasFlag(el.iLy.CROSSPOSTED), [ey, ex] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ej = ey === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, eE] = i.useState(!1), eN = i.useCallback(() => {
+  }, [q, ea]), eC = (0, D.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [ex, ev] = (0, m.cv)(w ? [u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ej = ex === u.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, eE] = i.useState(!1), eN = i.useCallback(() => {
     eE(!0)
   }, []), eI = i.useCallback(() => {
     eE(!1)
   }, []), eP = i.useCallback((e, t) => {
-    ex(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
-  }, [ex]), {
+    ev(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
+  }, [ev]), {
     canShowReactionsOnMessageHover: eS
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
@@ -388,7 +388,7 @@ function em(e) {
       onClick: () => (0, et.Hd)(t, n)
     }, "edit") : null, w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.I3ltXF),
-      icon: x.Z,
+      icon: v.Z,
       onClick: () => eP(t, n),
       onTooltipShow: eN,
       onTooltipHide: eI,
@@ -402,10 +402,10 @@ function em(e) {
       icon: d.or_,
       onClick: () => (0, et.qe)(t, n)
     }, "view-thread") : null, g ? (0, r.jsx)(ee.sF, {
-      label: ev ? es.NW.string(es.t["1kWJAg"]) : es.NW.string(es.t["MFGE5+"]),
+      label: ey ? es.NW.string(es.t["1kWJAg"]) : es.NW.string(es.t["MFGE5+"]),
       icon: d.MqZ,
       onClick: () => (0, et.Xl)(t, n),
-      disabled: ev
+      disabled: ey
     }, "publish") : null, a && (ed || R) ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.oyYWHB),
       icon: d.XHJ,

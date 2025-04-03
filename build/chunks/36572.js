@@ -18,10 +18,7 @@ e.exports = function(e, t, r, x, y, m, w) {
   var Z = v(e, r),
     E = v(t, r),
     C = w.get(E);
-  if (C) {
-    n(e, r, C);
-    return
-  }
+  if (C) return void n(e, r, C);
   var O = m ? m(Z, E, r + "", e, t, w) : void 0,
     _ = void 0 === O;
   if (_) {

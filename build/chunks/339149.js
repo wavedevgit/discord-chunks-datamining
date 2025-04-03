@@ -1,12 +1,12 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   E: () => N,
   Z: () => Z
 }), n(47120), n(653041);
 var r, i = n(200651),
-  o = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  l = n(192379),
+  o = n(120356),
+  a = n.n(o),
   s = n(748780),
   c = n(442837),
   u = n(692547),
@@ -17,11 +17,11 @@ var r, i = n(200651),
   g = n(703656),
   m = n(417363),
   b = n(941128),
-  v = n(780570),
-  y = n(353042),
-  _ = n(981631),
+  y = n(780570),
+  _ = n(353042),
+  v = n(981631),
   O = n(388032),
-  j = n(883886);
+  j = n(496614);
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,7 +45,7 @@ function C(e) {
   return e
 }
 let S = {
-  [_.vxO.INSTALLING]: {
+  [v.vxO.INSTALLING]: {
     [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
     }),
@@ -62,7 +62,7 @@ let S = {
       timeRemaining: t
     })
   },
-  [_.vxO.UPDATING]: {
+  [v.vxO.UPDATING]: {
     [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["6F9QzM"], {
       name: e
     }),
@@ -79,7 +79,7 @@ let S = {
       timeRemaining: t
     })
   },
-  [_.vxO.REPAIRING]: {
+  [v.vxO.REPAIRING]: {
     [f.J6.NONE]: (e, t) => O.NW.formatToPlainString(O.t["p+2sEx"], {
       name: e
     }),
@@ -97,15 +97,15 @@ let S = {
     })
   }
 };
-class P extends o.PureComponent {
+class P extends l.PureComponent {
   renderText() {
     let {
       state: e,
       isPaused: t
     } = this.props;
-    if (e.type === _.vxO.UPDATING || e.type === _.vxO.REPAIRING || e.type === _.vxO.INSTALLING) {
+    if (e.type === v.vxO.UPDATING || e.type === v.vxO.REPAIRING || e.type === v.vxO.INSTALLING) {
       if (t) return O.NW.string(O.t["5oxtFR"]);
-      if (e.stage === _.f07.PATCHING || e.stage === _.f07.REPAIRING) return (0, i.jsx)(y.Z, {
+      else if (e.stage === v.f07.PATCHING || e.stage === v.f07.REPAIRING) return (0, i.jsx)(_.Z, {
         getHistoricalTotalBytes: m.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
         children: this.renderProgressBody
@@ -124,13 +124,13 @@ class P extends o.PureComponent {
         application: r
       } = this.props, {
         stage: i,
-        progress: o,
-        total: l,
+        progress: l,
+        total: o,
         type: a
       } = n;
-      if (null == o || null == l || null == i) return null;
+      if (null == l || null == o || null == i) return null;
       let s = e[e.length - 1] / t * 1e3,
-        c = 0 !== s ? Math.max(1, (l - o) / s) : null,
+        c = 0 !== s ? Math.max(1, (o - l) / s) : null,
         u = S[a],
         d = null != u ? Object.keys(u) : [],
         {
@@ -145,7 +145,7 @@ class P extends o.PureComponent {
     })
   }
 }
-class I extends(r = o.PureComponent) {
+class I extends(r = l.PureComponent) {
   componentWillAppear(e) {
     this.state.animationScale.setValue(1), e()
   }
@@ -192,8 +192,8 @@ class I extends(r = o.PureComponent) {
         position: "right",
         "aria-label": !1,
         children: n => {
-          var r, o;
-          return (0, i.jsx)("div", (r = C({}, n), o = o = {
+          var r, l;
+          return (0, i.jsx)("div", (r = C({}, n), l = l = {
             children: (0, i.jsx)(p._3P, {
               percent: e,
               colorOverride: t ? u.Z.unsafe_rawColors.PRIMARY_500.css : null,
@@ -203,15 +203,15 @@ class I extends(r = o.PureComponent) {
                 className: j.downloadIcon
               })
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(o)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+          })(Object(l)).forEach(function(e) {
+            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
           }), r))
         }
       })
@@ -224,7 +224,7 @@ class I extends(r = o.PureComponent) {
       let {
         onClick: t
       } = this.props;
-      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(_.Z5c.APPLICATION_LIBRARY)
+      e.preventDefault(), e.stopPropagation(), null != t && t(e), (0, g.uL)(v.Z5c.APPLICATION_LIBRARY)
     })
   }
 }
@@ -234,8 +234,8 @@ function N(e, t) {
     let {
       applicationId: r,
       branchId: i
-    } = n, o = t.getState(r, i);
-    return null != o && e.push(o), e
+    } = n, l = t.getState(r, i);
+    return null != l && e.push(l), e
   }, [])
 }
 x(I, "defaultProps", {
@@ -247,9 +247,9 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
     {
       total: n,
       progress: r
-    } = v.lK(t);
+    } = y.lK(t);
   return {
-    percent: v.xI(r, n),
+    percent: y.xI(r, n),
     isPaused: b.Z.paused,
     firstApplication: e.length > 0 ? h.Z.getApplication(e[0].applicationId) : null,
     firstState: t.length > 0 ? t[0] : null
@@ -262,18 +262,18 @@ let Z = c.ZP.connectStores([b.Z, m.Z, h.Z], () => {
     var n, r, i = function(e, t) {
       if (null == e) return {};
       var n, r, i = {},
-        o = Object.keys(e);
-      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        l = Object.keys(e);
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var o = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      var l = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["determineOwnVisibility"]);
   return t ? (0, i.jsx)(d.W, {
-    component: o.Fragment,
+    component: l.Fragment,
     children: n.percent > 0 && n.percent < 100 ? (0, i.jsx)(I, C({}, n)) : null
   }) : (0, i.jsx)(I, C({}, n))
 })

@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  b: () => v
+  b: () => y
 });
 var r = n(200651),
   i = n(192379),
   l = n(928873),
-  o = n(393238),
-  a = n(100527),
+  a = n(393238),
+  o = n(100527),
   s = n(906732),
   c = n(540059),
   u = n(720734),
@@ -19,13 +19,13 @@ var r = n(200651),
   b = n(410575),
   _ = n(981631),
   E = n(388032),
-  O = n(99670);
+  O = n(128654);
 
 function N(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, s.ZP)(a.Z.ACTIVITY_PANEL), l = (0, g.Z)(e => {
+  } = (0, s.ZP)(o.Z.ACTIVITY_PANEL), l = (0, g.Z)(e => {
     let {
       guildId: t
     } = e;
@@ -64,10 +64,10 @@ function N(e) {
     }), t))
   })
 }
-let v = i.memo(function() {
+let y = i.memo(function() {
   let e = (0, c.Q3)("AppPanels"),
     t = i.useRef(null);
-  return (0, o.P)(t, e => {
+  return (0, a.P)(t, e => {
     let {
       height: t
     } = e;

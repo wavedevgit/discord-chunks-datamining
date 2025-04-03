@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => i
@@ -10,8 +10,8 @@ function i(e) {
   let [n, i] = r.useState(e), s = r.useRef(null);
   return r.useEffect(() => {
     var t, n;
-    i(null !== (n = null === (t = s.current) || void 0 === t ? void 0 : t.offsetHeight) && void 0 !== n ? n : e)
-  }, [e, null === (t = s.current) || void 0 === t ? void 0 : t.offsetHeight]), {
+    i(null != (n = null == (t = s.current) ? void 0 : t.offsetHeight) ? n : e)
+  }, [e, null == (t = s.current) ? void 0 : t.offsetHeight]), {
     headerHeight: n,
     headerRef: s
   }

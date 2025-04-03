@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 }), n(653041);
@@ -17,7 +17,7 @@ var r = n(200651),
   m = n(918559),
   g = n(981631),
   b = n(388032),
-  _ = n(910798);
+  _ = n(408912);
 
 function C(e) {
   var {
@@ -38,12 +38,12 @@ function C(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let v = i.useRef(null),
-    y = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
-    x = i.useCallback(() => {
-      let e = y ? m.MI.NO_CHAT : m.MI.RESIZABLE;
+  let y = i.useRef(null),
+    x = (0, o.e7)([f.ZP], () => f.ZP.getFocusedLayout() === m.MI.RESIZABLE),
+    v = i.useCallback(() => {
+      let e = x ? m.MI.NO_CHAT : m.MI.RESIZABLE;
       (0, h.gC)(e)
-    }, [y]),
+    }, [x]),
     {
       unreadCount: j,
       mentionCount: O
@@ -64,13 +64,13 @@ function C(e) {
     }(t),
     E = i.useCallback(() => {
       var e;
-      null === (e = v.current) || void 0 === e || e.focus()
+      null == (e = y.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: g.CkL.FOCUS_CHAT_BUTTON,
     handler: E
   });
-  let N = y ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
+  let N = x ? b.NW.string(b.t["5MstTk"]) : b.NW.string(b.t.kkKapK),
     I = [N];
   O > 0 && I.push(b.NW.formatToPlainString(b.t["3l1GOz"], {
     mentionCount: O
@@ -98,8 +98,8 @@ function C(e) {
       }
       return e
     }({
-      buttonRef: v,
-      onClick: x,
+      buttonRef: y,
+      onClick: v,
       label: N,
       "aria-label": I.join(", "),
       tooltipPosition: "top",

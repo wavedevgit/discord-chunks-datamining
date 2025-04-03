@@ -7,7 +7,7 @@ var n = e(772848),
   a = e(647425),
   r = e(170830);
 
-function o(i, t, e) {
+function l(i, t, e) {
   return t in i ? Object.defineProperty(i, t, {
     value: e,
     enumerable: !0,
@@ -15,13 +15,13 @@ function o(i, t, e) {
     writable: !0
   }) : i[t] = e, i
 }
-let l = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
+let o = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
   h = "undefined" != typeof OffscreenCanvas,
   d = [],
-  v = new Map,
   u = new Map,
-  c = (0, r.G)(async () => {
-    for (let i = 0; i < l; i++) {
+  c = new Map,
+  v = (0, r.G)(async () => {
+    for (let i = 0; i < o; i++) {
       let i = new Worker(new URL("/assets/" + e.u("94703"), e.b));
       d.push({
         worker: i,
@@ -32,20 +32,20 @@ let l = Math.min(4, Math.ceil(navigator.hardwareConcurrency / 2)),
   I = (0, r.G)(async () => {
     s = (await e.e("57961").then(e.bind(e, 8048))).default
   });
-h ? c() : I();
+h ? v() : I();
 class w {
   get workerIndex() {
-    let i = v.get(this.canvasId);
+    let i = u.get(this.canvasId);
     if (null == i) {
-      let s = u.get(this.assetUrl);
+      let s = c.get(this.assetUrl);
       if (null != s) i = s;
       else {
         var t, e;
-        let s = null !== (e = null === (t = d[0]) || void 0 === t ? void 0 : t.numActive) && void 0 !== e ? e : 0;
+        let s = null != (e = null == (t = d[0]) ? void 0 : t.numActive) ? e : 0;
         for (let [t, e] of d.entries()) e.numActive <= s && (s = e.numActive, i = t);
-        u.set(this.assetUrl, i)
+        c.set(this.assetUrl, i)
       }
-      v.set(this.canvasId, i), d[i].numActive++
+      u.set(this.canvasId, i), d[i].numActive++
     }
     return i
   }
@@ -57,64 +57,64 @@ class w {
   async drop() {
     var i, t, e, s;
     if (await this.initializationPromise, h) {
-      null === (i = this.worker) || void 0 === i || i.removeEventListener("message", this.handleMessage), null === (t = this.worker) || void 0 === t || t.removeEventListener("error", this.handleError), null === (e = this.worker) || void 0 === e || e.postMessage({
+      null == (i = this.worker) || i.removeEventListener("message", this.handleMessage), null == (t = this.worker) || t.removeEventListener("error", this.handleError), null == (e = this.worker) || e.postMessage({
         canvasId: this.canvasId,
         type: a.u.DROP
       });
-      let s = v.get(this.canvasId);
+      let s = u.get(this.canvasId);
       if (null == s) throw Error("No worker index assigned for asset ".concat(this.canvasId));
-      v.delete(this.canvasId), d[s].numActive--
-    } else null === (s = this.lottieView) || void 0 === s || s.drop();
+      u.delete(this.canvasId), d[s].numActive--
+    } else null == (s = this.lottieView) || s.drop();
     this.observer.disconnect()
   }
   setState(i, t) {
     var e, s;
-    this.shouldAnimate = i, this.isInitialized && (h ? null === (e = this.worker) || void 0 === e || e.postMessage({
+    this.shouldAnimate = i, this.isInitialized && (h ? null == (e = this.worker) || e.postMessage({
       canvasId: this.canvasId,
       type: a.u.STATE_CHANGE,
       shouldAnimate: i,
       nextFrame: t
-    }) : null === (s = this.lottieView) || void 0 === s || s.setState(i, t))
+    }) : null == (s = this.lottieView) || s.setState(i, t))
   }
   constructor({
     canvas: i,
     animationId: t,
     assetUrl: e,
     assetData: r,
-    onInitialDraw: l,
+    onInitialDraw: o,
     onError: d
   }) {
-    o(this, "assetUrl", void 0), o(this, "assetData", void 0), o(this, "canvasId", void 0), o(this, "lottieView", void 0), o(this, "observer", void 0), o(this, "isVisible", !1), o(this, "isInitialized", !1), o(this, "initializationPromise", void 0), o(this, "shouldAnimate", !1), o(this, "onInitialDraw", void 0), o(this, "onError", void 0), o(this, "handleVisibilityChange", i => {
+    l(this, "assetUrl", void 0), l(this, "assetData", void 0), l(this, "canvasId", void 0), l(this, "lottieView", void 0), l(this, "observer", void 0), l(this, "isVisible", !1), l(this, "isInitialized", !1), l(this, "initializationPromise", void 0), l(this, "shouldAnimate", !1), l(this, "onInitialDraw", void 0), l(this, "onError", void 0), l(this, "handleVisibilityChange", i => {
       let t = i[i.length - 1].isIntersecting;
       if (t !== this.isVisible) {
         var e, s;
         if (this.isVisible = t, !this.isInitialized) return;
-        h ? null === (e = this.worker) || void 0 === e || e.postMessage({
+        h ? null == (e = this.worker) || e.postMessage({
           canvasId: this.canvasId,
           type: a.u.VISIBILITY_CHANGE,
           isVisible: t
-        }) : null === (s = this.lottieView) || void 0 === s || s.setVisibility(t)
+        }) : null == (s = this.lottieView) || s.setVisibility(t)
       }
-    }), o(this, "handleMessage", i => {
+    }), l(this, "handleMessage", i => {
       var t, e;
-      i.data.type === a.u.FIRST_DRAW && (null === (t = this.onInitialDraw) || void 0 === t || t.call(this)), i.data.type === a.u.ERROR && (null === (e = this.onError) || void 0 === e || e.call(this))
-    }), o(this, "handleError", i => {
+      i.data.type === a.u.FIRST_DRAW && (null == (t = this.onInitialDraw) || t.call(this)), i.data.type === a.u.ERROR && (null == (e = this.onError) || e.call(this))
+    }), l(this, "handleError", i => {
       var t;
-      null === (t = this.onError) || void 0 === t || t.call(this, i)
-    }), this.canvasId = (0, n.Z)(), this.assetUrl = e, this.assetData = r, this.onInitialDraw = l, this.onError = d, this.observer = new IntersectionObserver(this.handleVisibilityChange), this.observer.observe(i), h ? this.initializationPromise = c().then(() => {
-      var s, n, o;
-      null === (s = this.worker) || void 0 === s || s.addEventListener("message", this.handleMessage), null === (n = this.worker) || void 0 === n || n.addEventListener("error", this.handleError);
-      let l = i.transferControlToOffscreen();
-      null === (o = this.worker) || void 0 === o || o.postMessage({
+      null == (t = this.onError) || t.call(this, i)
+    }), this.canvasId = (0, n.Z)(), this.assetUrl = e, this.assetData = r, this.onInitialDraw = o, this.onError = d, this.observer = new IntersectionObserver(this.handleVisibilityChange), this.observer.observe(i), h ? this.initializationPromise = v().then(() => {
+      var s, n, l;
+      null == (s = this.worker) || s.addEventListener("message", this.handleMessage), null == (n = this.worker) || n.addEventListener("error", this.handleError);
+      let o = i.transferControlToOffscreen();
+      null == (l = this.worker) || l.postMessage({
         type: a.u.INITIALIZE,
         animationId: t,
         assetUrl: e,
         assetData: r,
-        canvas: l,
+        canvas: o,
         canvasId: this.canvasId,
         isVisible: this.isVisible,
         shouldAnimate: this.shouldAnimate
-      }, [l]), this.isInitialized = !0
+      }, [o]), this.isInitialized = !0
     }) : this.initializationPromise = I().then(() => {
       this.lottieView = new s({
         canvas: i,
@@ -123,7 +123,7 @@ class w {
         assetData: r,
         isVisible: this.isVisible,
         shouldAnimate: this.shouldAnimate,
-        onInitialDraw: l,
+        onInitialDraw: o,
         onError: d
       }), this.isInitialized = !0
     })

@@ -1,14 +1,14 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(388032),
-  o = n(890437);
+  l = n(499632);
 
-function l(e) {
+function o(e) {
   let {
     message: t
   } = e;
@@ -41,13 +41,13 @@ function l(e) {
         }, n))
       })
     },
-    className: o.accessory,
+    className: l.accessory,
     children: [(0, r.jsx)(i.d3s, {
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      className: o.accessoryText,
+      className: l.accessoryText,
       children: a.NW.string(a.t["2aXnfX"])
     })]
   })

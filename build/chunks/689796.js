@@ -5,11 +5,11 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(77878),
-  o = n(770146),
-  a = n(600164),
+  a = n(770146),
+  o = n(600164),
   s = n(981631),
   c = n(388032),
-  u = n(633717);
+  u = n(719656);
 class d extends i.PureComponent {
   renderContentRatingImage() {
     let {
@@ -90,9 +90,9 @@ class d extends i.PureComponent {
       l = e.descriptors.map(e => i[t][e]).join(", ");
     return (0, r.jsxs)("div", {
       className: n,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(a.Z, {
         children: c.NW.string(c.t.q9Zqgo)
-      }), (0, r.jsxs)(a.Z, {
+      }), (0, r.jsxs)(o.Z, {
         className: u.content,
         children: [this.renderContentRatingImage(), (0, r.jsx)("div", {
           className: u.__invalid_info,

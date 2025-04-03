@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => W
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(999382),
   j = n(743475),
   N = n(983135),
-  v = n(8426),
-  _ = n(969632),
+  _ = n(8426),
+  v = n(969632),
   C = n(570961),
   O = n(208665),
   y = n(359191),
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(976269),
   R = n(981631),
   Z = n(388032),
-  D = n(366675);
+  D = n(179556);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -122,8 +122,8 @@ function L(e) {
     });
   if (W) {
     if (x === I.PG.DEFAULT_CHANNELS) return (0, r.jsx)(T.j, {});
-    if (x === I.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(P.Zm, {});
-    if (x === I.PG.HOME_SETTINGS) return (0, r.jsx)(w.Z, {})
+    else if (x === I.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(P.Zm, {});
+    else if (x === I.PG.HOME_SETTINGS) return (0, r.jsx)(w.Z, {})
   }
   let Q = x === I.xh[I.xh.length - 1],
     J = async () => {
@@ -136,8 +136,8 @@ function L(e) {
           ignoreDefaultPrompt: !0
         });
         else if (x === I.PG.HOME_SETTINGS) {
-          let e = _.Z.getSettings();
-          await (0, v.oo)(t.id, e)
+          let e = v.Z.getSettings();
+          await (0, _.oo)(t.id, e)
         }
       } catch (e) {
         return !1

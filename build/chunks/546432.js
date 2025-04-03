@@ -32,8 +32,8 @@ var r = n(200651),
   N = n(217702),
   M = n(981631),
   T = n(388032),
-  A = n(187174),
-  S = n(190127);
+  A = n(308315),
+  S = n(166011);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -202,7 +202,7 @@ function F(e) {
     location: "MediaMosaicItem"
   }, {
     autoTrackExposure: !0
-  }).imageRecsEnabled, ec = o.useMemo(() => null != et && -1 !== et.indexOf("/") ? et.split("/") : ["unknown", "unknown"], [et]), ed = i.originalItem, em = "IMAGE" === ee && !j.uo.test(i.downloadUrl) && !((j.YG.test(i.downloadUrl) || j.FH.test(i.downloadUrl)) && (0, C.yE)(null !== (t = ed.flags) && void 0 !== t ? t : 0, M.J0y.IS_ANIMATED)), eh = !1;
+  }).imageRecsEnabled, ec = o.useMemo(() => null != et && -1 !== et.indexOf("/") ? et.split("/") : ["unknown", "unknown"], [et]), ed = i.originalItem, em = "IMAGE" === ee && !j.uo.test(i.downloadUrl) && !((j.YG.test(i.downloadUrl) || j.FH.test(i.downloadUrl)) && (0, C.yE)(null != (t = ed.flags) ? t : 0, M.J0y.IS_ANIMATED)), eh = !1;
   if (J) {
     (null == Q || null == K) && (eh = !0);
     let e = (0, w.Dc)({
@@ -217,12 +217,12 @@ function F(e) {
       h(i)
     }, [i, h]),
     ef = o.useCallback(e => {
-      if (em && !eh && !0 !== Y) {
+      if (em && !eh && !0 !== Y)
         if (e && !eo) {
           if (ei(!0), eu) {
             var t;
             (0, c.a)({
-              channelId: null !== (t = null == es ? void 0 : es.id) && void 0 !== t ? t : "",
+              channelId: null != (t = null == es ? void 0 : es.id) ? t : "",
               location: s.I.CONTEXTUAL_IMAGE,
               withCommands: !0
             })
@@ -233,7 +233,6 @@ function F(e) {
             image_recommendations_shown: eu
           })
         } else !e && eo && ei(!1)
-      }
     }, [eo, es, eu, em, eh, Y]),
     eg = o.useCallback(() => {
       if (B === N.hV.MOSAIC) {

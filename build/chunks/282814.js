@@ -39,10 +39,7 @@ var n = r(557958),
         var r = a.set(t._latestEditorState, {
           inCompositionMode: !1
         });
-        if (t.exitCurrentMode(), !e.size) {
-          t.update(r);
-          return
-        }
+        if (t.exitCurrentMode(), !e.size) return void t.update(r);
         var n = r.getCurrentContent();
         e.forEach(function(t, e) {
           var u = o.decode(e),

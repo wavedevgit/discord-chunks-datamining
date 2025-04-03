@@ -18,8 +18,8 @@ var n = s(200651),
   g = s(626135),
   N = s(789662),
   _ = s(981631),
-  v = s(388032),
-  b = s(121849);
+  b = s(388032),
+  v = s(907723);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,21 +62,21 @@ function C(e) {
     return -1 === t ? r.length : t
   }).partition(e => {
     var t;
-    return (null !== (t = e.overrideMode) && void 0 !== t ? t : e.mode) === N.AR.UseGreyDot
+    return (null != (t = e.overrideMode) ? t : e.mode) === N.AR.UseGreyDot
   }).value(), [t, r]), o = i.useCallback(e => {
     var n;
-    return s(e, (null !== (n = t[e].overrideMode) && void 0 !== n ? n : t[e].mode) === N.AR.UseGreyDot ? N.AR.KeepAsIs : N.AR.UseGreyDot)
+    return s(e, (null != (n = t[e].overrideMode) ? n : t[e].mode) === N.AR.UseGreyDot ? N.AR.KeepAsIs : N.AR.UseGreyDot)
   }, [s, t]);
   return (0, n.jsxs)("div", {
-    className: b.container,
+    className: v.container,
     children: [(0, n.jsx)(W, {
-      header: v.NW.string(v.t.tGGAdX),
-      subheader: v.NW.string(v.t["e+d/vr"]),
+      header: b.NW.string(b.t.tGGAdX),
+      subheader: b.NW.string(b.t["e+d/vr"]),
       guildPlans: l,
       onClick: o
     }), (0, n.jsx)(W, {
-      header: v.NW.string(v.t.f6pf39),
-      subheader: v.NW.string(v.t.izeB6e),
+      header: b.NW.string(b.t.f6pf39),
+      subheader: b.NW.string(b.t.izeB6e),
       guildPlans: a,
       onClick: o
     })]
@@ -91,11 +91,11 @@ function W(e) {
     onClick: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: b.column,
+    className: v.column,
     children: [(0, n.jsxs)("div", {
-      className: b.header,
+      className: v.header,
       children: [(0, n.jsxs)(o.Text, {
-        className: b.__invalid_sectionTitle,
+        className: v.__invalid_sectionTitle,
         variant: "text-md/medium",
         color: "header-primary",
         children: [t, " (", i.length, ")"]
@@ -105,9 +105,9 @@ function W(e) {
         children: s
       })]
     }), (0, n.jsx)(o.Ttm, {
-      className: b.scroller,
+      className: v.scroller,
       children: (0, n.jsx)("div", {
-        className: b.guilds,
+        className: v.guilds,
         children: i.map(e => (0, n.jsx)(T, {
           plan: e,
           onClick: r
@@ -124,7 +124,7 @@ function T(e) {
     onClick: i
   } = e, r = (0, d.e7)([h.Z], () => h.Z.getGuild(s.guildId));
   if (null == r) return null;
-  let l = (null !== (t = s.overrideMode) && void 0 !== t ? t : s.mode) === N.AR.UseGreyDot;
+  let l = (null != (t = s.overrideMode) ? t : s.mode) === N.AR.UseGreyDot;
 
   function c() {
     g.default.track(_.rMx.NOTIFICATION_MIGRATION_GUILD_CHANGED, p(f({}, (0, m.hH)(s.guildId)), {
@@ -140,50 +140,50 @@ function T(e) {
         color: "header-primary",
         children: r.name
       }), (0, n.jsxs)("div", {
-        className: b.tooltipRow,
+        className: v.tooltipRow,
         children: [(0, n.jsx)(o.kBi, {
           size: "xxs",
           color: "currentColor"
         }), (0, n.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: s.messagePain ? v.NW.string(v.t["3EQSoK"]) : v.NW.string(v.t["CaR/Eh"])
+          children: s.messagePain ? b.NW.string(b.t["3EQSoK"]) : b.NW.string(b.t["CaR/Eh"])
         })]
       }), (0, n.jsxs)("div", {
-        className: b.tooltipRow,
+        className: v.tooltipRow,
         children: [(0, n.jsx)(o.iFz, {
           size: "xxs",
           color: "currentColor"
         }), (0, n.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: s.visitsALot ? v.NW.string(v.t["6dgvsb"]) : v.NW.string(v.t.fgedbG)
+          children: s.visitsALot ? b.NW.string(b.t["6dgvsb"]) : b.NW.string(b.t.fgedbG)
         })]
       }), (0, n.jsxs)("div", {
-        className: b.tooltipRow,
+        className: v.tooltipRow,
         children: [(0, n.jsx)(o.Dkj, {
           size: "xxs",
           color: "currentColor"
         }), (0, n.jsx)(o.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: s.muted ? v.NW.string(v.t.rdTrHx) : v.NW.string(v.t.sdFUj4)
+          children: s.muted ? b.NW.string(b.t.rdTrHx) : b.NW.string(b.t.sdFUj4)
         })]
       })]
     }),
     "aria-label": s.debugReason,
-    tooltipClassName: b.tooltip,
+    tooltipClassName: v.tooltip,
     children: e => (0, n.jsxs)(o.P3F, p(f({}, e), {
-      className: a()(b.guild, l ? b.selected : void 0),
+      className: a()(v.guild, l ? v.selected : void 0),
       onClick: c,
       children: [(0, n.jsx)(o.owK, {
         size: "xs",
         color: "currentColor",
-        className: b.checkmark,
+        className: v.checkmark,
         secondaryColor: "white"
       }), (0, n.jsx)(x.Z, {
         "aria-hidden": !0,
-        className: b.guildIcon,
+        className: v.guildIcon,
         guild: r,
         size: x.Z.Sizes.MEDIUM,
         active: !0,

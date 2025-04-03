@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -21,11 +21,11 @@ var i = n(793030),
   b = n(166805),
   x = n(981631),
   j = n(388032),
-  N = n(870673);
-let v = function() {
+  N = n(515636);
+let _ = function() {
   let {
     analyticsLocations: e
-  } = (0, o.ZP)(l.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, s.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, s.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), v = (0, c.E)(t), _ = (0, a.l9)(null != t ? t : void 0);
+  } = (0, o.ZP)(l.Z.GUILD_SETTINGS_ENGAGEMENT_PAGE), t = (0, s.e7)([u.Z], () => u.Z.getProps().guild, []), n = (0, s.e7)([d.Z], () => null != t && d.Z.can(x.Plq.MANAGE_GUILD, t)), _ = (0, c.E)(t), v = (0, a.l9)(null != t ? t : void 0);
   return null == t ? null : (0, r.jsx)(o.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
@@ -42,7 +42,7 @@ let v = function() {
           className: N.description,
           children: j.NW.string(j.t.XCGZFh)
         })]
-      }), !0 === _ && (0, r.jsxs)(r.Fragment, {
+      }), !0 === v && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.P, {
           canManageGuild: n,
           features: t.features
@@ -52,11 +52,11 @@ let v = function() {
       }), (0, r.jsx)(f.l, {
         canManageGuild: n,
         guild: t
-      }), void 0 !== v && (0, r.jsxs)(r.Fragment, {
+      }), void 0 !== _ && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: N.divider
         }), (0, r.jsx)(m.q, {
-          isInventoryFeedEnabled: v,
+          isInventoryFeedEnabled: _,
           canManageGuild: n,
           features: t.features
         })]

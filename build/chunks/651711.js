@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -22,7 +22,7 @@ function u(e) {
     isModerationMFAEnabled: g
   } = (0, o.N)(), p = r.useCallback(async () => {
     var e, r;
-    m ? g || await (null == n ? void 0 : null === (r = n.onRequireModeratorMFAClick) || void 0 === r ? void 0 : r.call(n)) : await (null == n ? void 0 : null === (e = n.onEnableMFAClick) || void 0 === e ? void 0 : e.call(n)), null == t || t()
+    m ? g || await (null == n || null == (r = n.onRequireModeratorMFAClick) ? void 0 : r.call(n)) : await (null == n || null == (e = n.onEnableMFAClick) ? void 0 : e.call(n)), null == t || t()
   }, [m, g, t, n]), h = (0, l.R)({
     onEnableMFAClick: p
   });

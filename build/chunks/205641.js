@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -10,7 +10,7 @@ var r, i, s = n(200651),
   c = n(392711),
   d = n.n(c),
   u = n(82923),
-  m = n(596121);
+  m = n(834404);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -105,7 +105,7 @@ class b extends(r = a.Component) {
         duration: h.HOVERING.Y_DURATION,
         easing: u.Z.Easing.inOut(u.Z.Easing.ease)
       });
-    this.currentAnimation = u.Z.parallel([a, s]), await (null === (t = this.currentAnimation) || void 0 === t ? void 0 : t.start()), this.hoverAnimate(e * h.HOVERING.Y_VALUE_MODIFIER)
+    this.currentAnimation = u.Z.parallel([a, s]), await (null == (t = this.currentAnimation) ? void 0 : t.start()), this.hoverAnimate(e * h.HOVERING.Y_VALUE_MODIFIER)
   }
   createShakeAnimation(e, t, n) {
     return f(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : -1))
@@ -145,7 +145,7 @@ class b extends(r = a.Component) {
       }),
       m = this.createFireAnimation(h.FLYING.FIRE_COUNT, h.FLYING.DURATION, h.FLYING.FIRE_MIN_INTENSITY, h.FLYING.FIRE_MAX_INTENSITY),
       g = u.Z.parallel([o, c, d, m]);
-    if (this.currentAnimation = u.Z.sequence([r, l, g]), await (null === (e = this.currentAnimation) || void 0 === e ? void 0 : e.start()), !this.isUnmounted) {
+    if (this.currentAnimation = u.Z.sequence([r, l, g]), await (null == (e = this.currentAnimation) ? void 0 : e.start()), !this.isUnmounted) {
       let {
         onFlyingComplete: e
       } = this.props;

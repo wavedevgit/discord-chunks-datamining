@@ -1,7 +1,7 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => y,
-  i: () => v
+  i: () => x
 }), n(301563), n(47120), n(266796);
 var r = n(200651),
   a = n(192379),
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(241209),
   p = n(73346),
   m = n(388032),
-  h = n(925156);
+  h = n(455660);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function _(e, t) {
   }), e
 }
 let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
-  v = _(f({}, u.Z.rules), {
+  x = _(f({}, u.Z.rules), {
     heading: _(f({}, u.Z.rules.heading), {
       react(e, t, n) {
         let a = "h".concat(Math.min(Math.max(2, e.level + 1), 4));
@@ -87,8 +87,8 @@ let b = /^!\[([^\]]*)\]\(asset:\/\/(\d+)\)/,
       }, n.key)
     }
   }),
-  x = s().parserFor(v),
-  C = s().reactFor(s().ruleOutput(v, "react"));
+  v = s().parserFor(x),
+  C = s().reactFor(s().ruleOutput(x, "react"));
 class j extends a.PureComponent {
   componentDidMount() {
     if (null != this._container) {
@@ -124,7 +124,7 @@ class j extends a.PureComponent {
             children: n
           }), (0, r.jsx)(u.Z, {
             className: h.description,
-            parser: x,
+            parser: v,
             output: C,
             state: {
               assets: i,

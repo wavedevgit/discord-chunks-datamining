@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   Z: () => a
 });
@@ -9,6 +9,6 @@ function a(e, t) {
   let n = (0, i.oC)(t);
   return r.useMemo(() => {
     var e;
-    return null != n && (null == n.max_num_active_trial_users || n.max_num_active_trial_users > (null !== (e = n.num_active_trial_users) && void 0 !== e ? e : 0))
+    return null != n && (null == n.max_num_active_trial_users || n.max_num_active_trial_users > (null != (e = n.num_active_trial_users) ? e : 0))
   }, [n])
 }

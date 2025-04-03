@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   l = n(668781),
-  o = n(493683),
-  a = n(100527),
+  a = n(493683),
+  o = n(100527),
   s = n(906732),
   c = n(835473),
   u = n(703656),
@@ -19,16 +19,16 @@ function g(e) {
   var t, n;
   let {
     match: g
-  } = e, m = null !== (n = (0, u.DR)()) && void 0 !== n ? n : [], {
+  } = e, m = null != (n = (0, u.DR)()) ? n : [], {
     analyticsLocations: b
-  } = (0, s.ZP)([...m, a.Z.ACTIVITY_DETAIL_PAGE]), {
+  } = (0, s.ZP)([...m, o.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: _
-  } = g.params, [E] = (0, c.Z)([_]), O = null == E ? void 0 : null === (t = E.bot) || void 0 === t ? void 0 : t.id, N = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = g.params, [E] = (0, c.Z)([_]), O = null == E || null == (t = E.bot) ? void 0 : t.id, N = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != O && null != N && (async () => {
       try {
         let e = new URL(location.href),
-          t = await o.Z.openPrivateChannel(O),
+          t = await a.Z.openPrivateChannel(O),
           {
             customId: n,
             referrerId: r

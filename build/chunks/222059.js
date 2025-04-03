@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   u: () => L
 }), n(47120);
 var r = n(200651),
   i = n(192379),
-  o = n(91192),
-  l = n(442837),
+  l = n(91192),
+  o = n(442837),
   a = n(433517),
   s = n(481060),
   c = n(339149),
@@ -17,9 +17,9 @@ var r = n(200651),
   g = n(460181),
   m = n(155409),
   b = n(944486),
-  v = n(594174),
-  y = n(431),
-  _ = n(774343),
+  y = n(594174),
+  _ = n(431),
+  v = n(774343),
   O = n(417363),
   j = n(941128),
   x = n(780570),
@@ -32,7 +32,7 @@ var r = n(200651),
   w = n(474936),
   E = n(871465),
   T = n(388032),
-  A = n(491781);
+  A = n(823306);
 let D = {
   origin: {
     x: -16,
@@ -52,20 +52,20 @@ function R(e) {
     selected: h,
     user: f,
     badge: b,
-    link: v,
-    showProgressBadge: y
-  } = e, _ = (0, l.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, o.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
+    link: y,
+    showProgressBadge: _
+  } = e, v = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, j] = i.useState(!1), [x, C] = i.useState(!1), [w, R] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), G = (0, p.Q3)("DefaultHomeButton"), B = () => {
     R(null), k(0), clearTimeout(w)
   };
   if (null == f) return null;
   let U = T.NW.string(T.t.YUU0RE);
   x && (U = a.K.get(Z.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
-  !h && y && (W = (0, r.jsx)(c.Z, {
+  !h && _ && (W = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
-  let V = h || O || _,
+  let V = h || O || v,
     F = (0, r.jsx)(s.aRk, {
       selected: G || V,
       lowerBadge: b > 0 ? (0, N.Ne)(b) : null,
@@ -106,7 +106,7 @@ function R(e) {
         ariaLabel: T.NW.string(T.t.YUU0RE)
       }, M), n = n = {
         to: {
-          pathname: v,
+          pathname: y,
           state: {
             analyticsSource: {
               page: Z.ZY5.GUILD_CHANNEL,
@@ -152,7 +152,7 @@ function R(e) {
 
 function L() {
   let e = (0, C.n)(),
-    t = (0, l.e7)([j.Z, O.Z], () => {
+    t = (0, o.e7)([j.Z, O.Z], () => {
       let e = (0, c.E)(j.Z.activeItems, O.Z),
         {
           total: t,
@@ -164,18 +164,18 @@ function L() {
     n = (0, f.If)(),
     i = Object.keys(w.nG),
     {
-      unviewedTrialCount: o,
+      unviewedTrialCount: l,
       unviewedDiscountCount: a
-    } = (0, l.cj)([y.Z], () => ({
-      unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, o.cj)([_.Z], () => ({
+      unviewedTrialCount: _.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: _.Z.getUnacknowledgedDiscountOffers().length
     })),
-    s = o + a,
-    u = (0, l.e7)([v.default], () => v.default.getCurrentUser()),
+    s = l + a,
+    u = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
     d = (0, h.q)(),
     p = n + s + d,
     g = p === s && s > 0 && n + d === 0,
-    m = _.Z.getHomeLink();
+    m = v.Z.getHomeLink();
   return g && (m = Z.Z5c.APPLICATION_STORE), (0, r.jsx)(R, {
     selected: e,
     user: u,

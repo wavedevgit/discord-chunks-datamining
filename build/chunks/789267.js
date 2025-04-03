@@ -1,17 +1,17 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(739566),
   a = n(834129),
-  o = n(388032);
+  l = n(388032);
 
-function l(e) {
+function o(e) {
   let {
     message: t,
-    compact: l,
+    compact: o,
     missed: s,
     joinable: c,
     usernameHook: u,
@@ -23,29 +23,29 @@ function l(e) {
   return s ? (0, r.jsx)(a.Z, {
     icon: n(154239),
     timestamp: t.timestamp,
-    compact: l,
-    children: null != h ? o.NW.format(o.t.AcqBmJ, {
+    compact: o,
+    children: null != h ? l.NW.format(l.t.AcqBmJ, {
       username: m,
       usernameHook: f,
       callDuration: h
-    }) : o.NW.format(o.t["43phHx"], {
+    }) : l.NW.format(l.t["43phHx"], {
       username: m,
       usernameHook: f
     })
   }) : (0, r.jsxs)(a.Z, {
     icon: n(344163),
     timestamp: t.timestamp,
-    compact: l,
-    children: [null != h ? o.NW.format(o.t["7TeC1N"], {
+    compact: o,
+    children: [null != h ? l.NW.format(l.t["7TeC1N"], {
       username: m,
       usernameHook: f,
       callDuration: h
-    }) : o.NW.format(o.t.LuB5RE, {
+    }) : l.NW.format(l.t.LuB5RE, {
       username: m,
       usernameHook: f
     }), c ? (0, r.jsx)(a.Z.Action, {
       onClick: d,
-      children: o.NW.string(o.t.oa9mvb)
+      children: l.NW.string(l.t.oa9mvb)
     }) : null]
   })
 }

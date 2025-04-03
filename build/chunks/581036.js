@@ -1,17 +1,17 @@
 /** Chunk was on 90508 **/
 t.d(n, {
-  Z: () => m
+  Z: () => h
 }), t(47120);
 var r, l, u, i = t(512722),
-  o = t.n(i),
-  a = t(442837),
+  a = t.n(i),
+  o = t(442837),
   d = t(570140),
   s = t(344185),
   c = t(592125),
   f = t(306680);
 let g = {},
-  v = new Set;
-class Z extends(r = a.ZP.Store) {
+  Z = new Set;
+class m extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(s.Z, c.Z, f.ZP)
   }
@@ -19,18 +19,18 @@ class Z extends(r = a.ZP.Store) {
     return g[e]
   }
   getThreadIdsMissingCounts(e, n) {
-    return o()(s.Z.hasLoaded(e), "must wait for THREAD_LIST_SYNC before calling this"), n.filter(e => !(e in g) && !v.has(e))
+    return a()(s.Z.hasLoaded(e), "must wait for THREAD_LIST_SYNC before calling this"), n.filter(e => !(e in g) && !Z.has(e))
   }
 }
-u = "ForumPostUnreadCountStore", (l = "displayName") in Z ? Object.defineProperty(Z, l, {
+u = "ForumPostUnreadCountStore", (l = "displayName") in m ? Object.defineProperty(m, l, {
   value: u,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : Z[l] = u;
-let m = new Z(d.Z, {
+}) : m[l] = u;
+let h = new m(d.Z, {
   CONNECTION_OPEN: function() {
-    g = {}, v = new Set
+    g = {}, Z = new Set
   },
   THREAD_CREATE: function(e) {
     let {
@@ -76,7 +76,7 @@ let m = new Z(d.Z, {
       let {
         threadId: n
       } = e;
-      return v.add(n)
+      return Z.add(n)
     })
   }
 })

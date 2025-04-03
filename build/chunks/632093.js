@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -6,9 +6,9 @@ var r = n(392711),
   i = n.n(r),
   s = n(710845),
   a = n(9156),
-  o = n(287328);
+  l = n(287328);
 
-function l(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,23 +20,23 @@ let c = new s.Z("ReadStates"),
   d = new class {
     async getAll(e) {
       let t = performance.now(),
-        n = await o.Z.userGuildSettings(e).getMany(),
+        n = await l.Z.userGuildSettings(e).getMany(),
         r = performance.now();
       return c.log("asynchronously loaded in ".concat(r - t, "ms (userGuildSettings: ").concat(n.length, ")")), n
     }
     resetInMemoryState() {}
     handleConnectionOpen(e, t) {
-      e.userGuildSettings.partial || o.Z.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
+      e.userGuildSettings.partial || l.Z.userGuildSettingsTransaction(t).delete(), this.write(e.userGuildSettings.entries, e.userGuildSettings.version, t)
     }
     handleUserGuildSettingsUpdate(e, t) {
       let n = i().max(e.userGuildSettings.map(e => {
         var t;
-        return null !== (t = e.version) && void 0 !== t ? t : -1
+        return null != (t = e.version) ? t : -1
       }));
       null != n && this.write(e.userGuildSettings, n, t)
     }
     write(e, t, n) {
-      let r = o.Z.userGuildSettingsTransaction(n);
+      let r = l.Z.userGuildSettingsTransaction(n);
       for (let t of e) {
         var i;
         let e = function(e, t) {
@@ -57,22 +57,22 @@ let c = new s.Z("ReadStates"),
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              l(e, t, n[t])
+              o(e, t, n[t])
             })
           }
           return e
         }({}, (0, a.wL)(t.guild_id), t), {
           channel_overrides: (0, a.U2)(t.channel_overrides)
         });
-        r.put(null !== (i = t.guild_id) && void 0 !== i ? i : "dm-sentinel", e)
+        r.put(null != (i = t.guild_id) ? i : "dm-sentinel", e)
       }
-      o.Z.nonGuildVersionsTransaction(n).put({
+      l.Z.nonGuildVersionsTransaction(n).put({
         id: "user_guild_settings_version",
         version: t
       })
     }
     constructor() {
-      l(this, "actions", {
+      o(this, "actions", {
         CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
         USER_GUILD_SETTINGS_FULL_UPDATE: (e, t) => this.handleUserGuildSettingsUpdate(e, t)
       })

@@ -15,7 +15,7 @@ var r = n(200651),
   m = n(260483),
   g = n(314208),
   f = n(124368),
-  x = n(512342);
+  x = n(915298);
 let j = a.memo(function(e) {
   let {
     threadId: t,
@@ -28,7 +28,7 @@ let j = a.memo(function(e) {
     onContextMenu: e => (0, i.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("22356"), n.e("64029")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("22356"), n.e("48334")]).then(n.bind(n, 422200));
       return t => {
         var n, a;
         return (0, r.jsx)(e, (n = function(e) {
@@ -86,10 +86,10 @@ function v(e) {
     channel: t
   } = e, n = (0, s.e7)([m.Z], () => {
     var e;
-    return null !== (e = m.Z.getMemberIdsPreview(t.id)) && void 0 !== e ? e : []
+    return null != (e = m.Z.getMemberIdsPreview(t.id)) ? e : []
   }), a = (0, s.e7)([m.Z], () => {
     var e;
-    return null !== (e = m.Z.getMemberCount(t.id)) && void 0 !== e ? e : 0
+    return null != (e = m.Z.getMemberCount(t.id)) ? e : 0
   }), l = (0, s.Wu)([h.default], () => n.map(e => h.default.getUser(e)));
   return ((0, o.ZP)(() => {
     n.filter((e, t) => null == l[t]).forEach(e => {

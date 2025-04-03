@@ -50,17 +50,11 @@ t.exports = function(t, e) {
     if (m && (v = h(m)), !t.props.stripPastedStyles) {
       var S, w, x = t.getClipboard();
       if (r.isRichText() && x) {
-        if (-1 !== _.indexOf(t.getEditorKey()) || 1 === v.length && 1 === x.size && x.first().getText() === m) {
-          t.update(d(t._latestEditorState, x));
-          return
-        }
+        if (-1 !== _.indexOf(t.getEditorKey()) || 1 === v.length && 1 === x.size && x.first().getText() === m) return void t.update(d(t._latestEditorState, x))
       } else {
         if (x && r.types.includes("com.apple.webarchive") && !r.types.includes("text/html") && (S = v, w = x, S.length === w.size && w.valueSeq().every(function(t, e) {
             return t.getText() === S[e]
-          }))) {
-          t.update(d(t._latestEditorState, x));
-          return
-        }
+          }))) return void t.update(d(t._latestEditorState, x))
       }
       if (_) {
         var k = u.processHTML(_, t.props.blockRenderMap);

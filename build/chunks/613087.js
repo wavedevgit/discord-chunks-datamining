@@ -82,7 +82,7 @@ let u = o.createContext({
       v.current !== t && (m(), v.current = t)
     }, [m]);
     (0, i.P)(b, y);
-    let _ = null === (n = h.get(c)) || void 0 === n ? void 0 : n.current,
+    let _ = null == (n = h.get(c)) ? void 0 : n.current,
       C = null;
     return null == _ ? C = null : p && null != x ? C = (0, r.jsxs)(r.Fragment, {
       children: ["collapsed" === d && (0, s.createPortal)((0, r.jsx)(a.animated.div, {
@@ -121,7 +121,7 @@ let u = o.createContext({
     } = e, [i, p] = o.useState({}), [m, f] = o.useState([]), [g, x] = o.useState(() => new Map), h = o.useCallback((e, t, n) => {
       p(r => {
         var o;
-        let s = null !== (o = r[t]) && void 0 !== o ? o : {
+        let s = null != (o = r[t]) ? o : {
           expanded: null,
           collapsed: null
         };
@@ -138,7 +138,7 @@ let u = o.createContext({
       let n = !1;
       p(r => {
         var o;
-        let s = null !== (o = r[e]) && void 0 !== o ? o : {
+        let s = null != (o = r[e]) ? o : {
           expanded: null,
           collapsed: null
         };

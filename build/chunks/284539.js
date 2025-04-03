@@ -1,20 +1,20 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(192379),
   i = n(442837),
   s = n(668826),
   a = n(120421);
 
-function o(e) {
+function l(e) {
   let t = (0, i.e7)([a.Z], () => a.Z.getItemMetadata(e)),
     n = (0, r.useMemo)(() => null != t ? t : {}, [t]),
-    o = (0, r.useRef)(n);
+    l = (0, r.useRef)(n);
   (0, r.useEffect)(() => {
-    o.current = n
+    l.current = n
   }, [n]);
-  let l = (0, r.useCallback)(t => {
+  let o = (0, r.useCallback)(t => {
     (0, s.cn)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -32,7 +32,7 @@ function o(e) {
         })
       }
       return e
-    }({}, o.current, t))
+    }({}, l.current, t))
   }, [e]);
-  return (0, r.useMemo)(() => [n, l], [n, l])
+  return (0, r.useMemo)(() => [n, o], [n, o])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 59150 **/
+/** Chunk was on 45037 **/
 r.d(t, {
   default: () => S
 }), r(47120), r(566702);
@@ -22,7 +22,7 @@ var o = r(200651),
   k = r(71080),
   y = r(377668),
   v = r(388032),
-  R = r(928906);
+  R = r(691);
 
 function j(e) {
   var t = function(e, t) {
@@ -127,7 +127,7 @@ function C(e) {
       let r = m.ZP.getUserTag(e.user);
       return {
         rowType: k.aC.MEMBER,
-        name: null !== (t = e.name) && void 0 !== t ? t : r,
+        name: null != (t = e.name) ? t : r,
         nickname: e.name,
         username: r,
         id: e.id,
@@ -156,7 +156,7 @@ function C(e) {
         className: R.roleContainer,
         children: [(0, o.jsx)(i.lZ8, {
           size: "xs",
-          color: null !== (t = null == M ? void 0 : M.colorString) && void 0 !== t ? t : (0, a.Rf)(p.p6O)
+          color: null != (t = null == M ? void 0 : M.colorString) ? t : (0, a.Rf)(p.p6O)
         }), (0, o.jsx)(i.Text, {
           className: R.roleName,
           color: "text-normal",

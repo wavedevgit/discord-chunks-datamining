@@ -1,4 +1,4 @@
-/** Chunk was on 89590 **/
+/** Chunk was on 15820 **/
 n.r(t), n.d(t, {
   default: () => h
 }), n(47120);
@@ -18,7 +18,7 @@ var a = n(200651),
   f = n(860153),
   y = n(981631),
   b = n(388032),
-  O = n(982860);
+  O = n(269045);
 
 function h(e) {
   var {
@@ -27,9 +27,9 @@ function h(e) {
     startingIndex: o,
     shouldRedactExplicitContent: h,
     shouldHideMediaOptions: S = !1,
-    className: v,
-    transitionState: C
-  } = e, E = function(e, t) {
+    className: C,
+    transitionState: E
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
       if (null == e) return {};
@@ -51,26 +51,26 @@ function h(e) {
     }
   }, [t]), r.useEffect(() => {
     var e, t;
-    C === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), C === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
+    E === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), E === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
     let n = () => {
         u.Z.disable(), u.Z.enableTemp(l.P)
       },
       a = () => {
         u.Z.disableTemp()
       },
-      r = null === (t = M.current) || void 0 === t ? void 0 : null === (e = t.ownerDocument) || void 0 === e ? void 0 : e.defaultView;
+      r = null == (t = M.current) || null == (e = t.ownerDocument) ? void 0 : e.defaultView;
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
     }
-  }, [C]);
+  }, [E]);
   let D = r.useCallback(e => {
       j(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
     }, []),
     N = r.useMemo(() => ({
       zoomed: P,
       setZoomed: x,
-      entering: C === s.Dvm.ENTERING || null == C
-    }), [P, C]),
+      entering: E === s.Dvm.ENTERING || null == E
+    }), [P, E]),
     w = n[T];
   return (0, a.jsx)(s.f6W, {
     theme: I ? y.BRd.MIDNIGHT : y.BRd.DARK,
@@ -96,8 +96,8 @@ function h(e) {
       }({
         hideShadow: !0,
         className: i()(O.carouselModal, e),
-        transitionState: C
-      }, E), o = o = {
+        transitionState: E
+      }, v), o = o = {
         size: s.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
         fullscreenOnMobile: !1,

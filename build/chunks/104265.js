@@ -16,7 +16,7 @@ var r = t(200651),
   p = t(339085),
   f = t(14263),
   g = t(388032),
-  x = t(528977);
+  x = t(136338);
 
 function _(e) {
   let {
@@ -26,11 +26,11 @@ function _(e) {
     onSelect: _,
     hideMemberCount: C,
     canBeNew: j
-  } = e, b = (0, d.wj)((0, h.ZP)()), [v, N] = l.useState(!1), y = v && !C, O = l.useRef(null), {
+  } = e, b = (0, d.wj)((0, h.ZP)()), [N, v] = l.useState(!1), y = N && !C, O = l.useRef(null), {
     reducedMotion: I
   } = l.useContext(u.Sfi), Z = (0, s.e7)([p.ZP], () => {
     var e, n, r, l;
-    return (null === (e = t.emoji) || void 0 === e ? void 0 : e.id) != null && null !== (l = null === (n = p.ZP.getCustomEmojiById(null === (r = t.emoji) || void 0 === r ? void 0 : r.id)) || void 0 === n ? void 0 : n.animated) && void 0 !== l && l
+    return (null == (e = t.emoji) ? void 0 : e.id) != null && null != (l = null == (n = p.ZP.getCustomEmojiById(null == (r = t.emoji) ? void 0 : r.id)) ? void 0 : n.animated) && l
   }), w = (0, f.Z)(n, 1e3), P = null == w || null == t.roleIds ? 0 : Math.max(...t.roleIds.map(e => w[e])), E = j && !a && t.isUnseen, S = (0, u.q_F)({
     transform: a || I.enabled ? "scale(1)" : "scale(0.7)",
     opacity: +!!a,
@@ -67,7 +67,7 @@ function _(e) {
   }, "animate-always"), [R, D] = l.useState(!1);
   l.useEffect(() => {
     if (y) return O.current = setTimeout(() => {
-      N(!1), O.current = null
+      v(!1), O.current = null
     }, 3e3), () => {
       null != O.current && clearTimeout(O.current)
     }
@@ -85,7 +85,7 @@ function _(e) {
     children: (0, r.jsxs)(u.P3F, {
       className: x.optionButton,
       onClick: () => {
-        N(!a), _(!a)
+        v(!a), _(!a)
       },
       onMouseDown: () => D(!0),
       onMouseUp: () => D(!1),

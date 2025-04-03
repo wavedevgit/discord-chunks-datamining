@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(497505),
   b = n(918701),
   C = n(475595),
-  v = n(566078),
-  N = n(685613),
+  N = n(566078),
+  v = n(685613),
   y = n(611855),
   O = n(644646),
   T = n(670638),
@@ -29,7 +29,7 @@ var r = n(200651),
   q = n(46140),
   S = n(231338),
   P = n(388032),
-  w = n(149332);
+  w = n(491821);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -134,11 +134,11 @@ let I = (0, a.animated)(d.CJ0),
       ref: F,
       width: z,
       scrollWidth: G
-    } = (0, m.Z)(), H = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), X = s.useMemo(() => (0, C.fh)(x, C.eC.HERO), [x]), V = s.useRef(null), Y = (0, E.uq)(g), K = g === j.jn.QUESTS_EMBED, J = (0, f.t5)(x, q.dr.QUESTS_CARD, g), $ = (null === (t = x.userStatus) || void 0 === t ? void 0 : t.completedAt) != null, ee = (0, h.O5)(), et = (0, f.B6)(x.config.expiresAt, {
+    } = (0, m.Z)(), H = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), X = s.useMemo(() => (0, C.fh)(x, C.eC.HERO), [x]), V = s.useRef(null), Y = (0, E.uq)(g), K = g === j.jn.QUESTS_EMBED, J = (0, f.t5)(x, q.dr.QUESTS_CARD, g), $ = (null == (t = x.userStatus) ? void 0 : t.completedAt) != null, ee = (0, h.O5)(), et = (0, f.B6)(x.config.expiresAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
-    }), en = (0, f.B6)(v.r.build(x.config).rewardsExpireAt, {
+    }), en = (0, f.B6)(N.r.build(x.config).rewardsExpireAt, {
       year: "numeric",
       month: "long",
       day: "numeric"
@@ -153,12 +153,12 @@ let I = (0, a.animated)(d.CJ0),
     s.useEffect(() => {
       X.isAnimated && null != V.current && (o ? V.current.play() : o || (V.current.pause(), V.current.currentTime = 0))
     }, [o, X]);
-    let eo = (0, r.jsx)(N.ZP, {
+    let eo = (0, r.jsx)(v.ZP, {
       className: w.partnerBranding,
       logotypeClassName: er ? w.partnerBrandingLogotypes : void 0,
-      gameTileSize: N.fF.MEDIUM,
+      gameTileSize: v.fF.MEDIUM,
       quest: x,
-      separatorSpacing: N.US.MEDIUM,
+      separatorSpacing: v.US.MEDIUM,
       theme: S.BR.DARK,
       withGameTile: !K || null == x.config.cosponsorMetadata
     });
@@ -189,7 +189,7 @@ let I = (0, a.animated)(d.CJ0),
         ref: V,
         children: !H && X.isAnimated && (0, r.jsx)("source", {
           src: X.url,
-          type: null !== (n = X.mimetype) && void 0 !== n ? n : void 0
+          type: null != (n = X.mimetype) ? n : void 0
         })
       }), (0, r.jsxs)("div", {
         className: w.header,

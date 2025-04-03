@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => x
+  Z: () => y
 }), n(653041);
 var r = n(544891),
   i = n(433517),
   a = n(570140),
-  o = n(865427),
-  l = n(710845),
+  l = n(865427),
+  o = n(710845),
   s = n(70956),
   c = n(358085),
   u = n(960048),
@@ -28,8 +28,8 @@ let f = +s.Z.Millis.HOUR,
   b = (0, p.W)({
     location: "auto_update_manager"
   }).nativeUpdateCount,
-  v = new l.Z("AutoUpdateManager");
-class x {
+  x = new o.Z("AutoUpdateManager");
+class y {
   destroy() {
     clearInterval(this._checkInterval)
   }
@@ -38,7 +38,7 @@ class x {
   }
   async _requestNewUpdaterBootstrap() {
     let e;
-    v.log("Bootstrapping new updater host...");
+    x.log("Bootstrapping new updater host...");
     try {
       await d.ZP.ensureModule("discord_updater_bootstrap"), e = d.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = e
     } catch (e) {
@@ -48,7 +48,7 @@ class x {
     try {
       this._handleCheckingForUpdates(), await e.bootstrap(d.ZP.releaseChannel, "win"), this.updateAvailable = !0, this.hasNativeUpdate = !0, this._handleUpdateDownloaded(!0)
     } catch (e) {
-      v.log("Failed to bootstrap new updater:", e), this._handleNativeUpdateNotAvailable(), u.Z.captureException(e)
+      x.log("Failed to bootstrap new updater:", e), this._handleNativeUpdateNotAvailable(), u.Z.captureException(e)
     }
   }
   _emitCallbacks() {
@@ -78,8 +78,8 @@ class x {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "a0dfd407ba779d4145d013db2be5751e8c4617d5" === e.body.hash) return this._handleUpdateNotAvailable();
-        if (e.body.required || (0, o.fD)()) return this._handleUpdateDownloaded(!1);
+        if (null == e.body || "a5beddf9a3f40f2e818777ae930cc851634fc3d8" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (e.body.required || (0, l.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : g;
         if (Date.now() - _ > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)
       }, () => this._handleUpdateError())

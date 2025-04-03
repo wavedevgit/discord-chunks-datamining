@@ -1,17 +1,17 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 92457 **/
 n.d(t, {
   Z: () => o
 }), n(653041), n(47120);
 var r = n(192379),
-  a = n(442837),
+  l = n(442837),
   i = n(430824),
-  l = n(204298);
+  a = n(204298);
 
 function o(e) {
   let {
     application: t,
     showMutualGuilds: n = !0
-  } = e, o = (0, a.e7)([l.Z], () => l.Z.getGuildIdsForApplication(null == t ? void 0 : t.id), [t]), s = (0, a.e7)([i.Z], () => i.Z.isLoaded());
+  } = e, o = (0, l.e7)([a.Z], () => a.Z.getGuildIdsForApplication(null == t ? void 0 : t.id), [t]), s = (0, l.e7)([i.Z], () => i.Z.isLoaded());
   return r.useMemo(() => {
     let e = [];
     if (!s || !n || null == o || null == t) return e;

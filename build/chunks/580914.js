@@ -5,8 +5,8 @@ n.d(t, {
 }), n(47120);
 var r = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   i = n(685816),
   s = n(442837),
   c = n(481060),
@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(63063),
   h = n(381585),
   m = n(597688),
-  v = n(884697),
-  _ = n(370039),
+  _ = n(884697),
+  v = n(370039),
   C = n(937510),
   x = n(823941),
   O = n(38900),
@@ -29,7 +29,7 @@ var r = n(200651),
   S = n(215023),
   P = n(981631),
   E = n(388032),
-  w = n(719458);
+  w = n(806734);
 let I = {
     rankedSkuIds: [],
     name: "",
@@ -45,15 +45,15 @@ let I = {
   B = e => {
     var t, n, r, l;
     return null == e ? I : {
-      rankedSkuIds: null !== (t = e.heroRanking) && void 0 !== t ? t : [],
+      rankedSkuIds: null != (t = e.heroRanking) ? t : [],
       name: e.name,
       unpublishedAt: e.unpublishedAt,
-      logoUrl: (0, v.uV)(null !== (r = null !== (n = e.heroLogo) && void 0 !== n ? n : e.logo) && void 0 !== r ? r : "", {
+      logoUrl: (0, _.uV)(null != (r = null != (n = e.heroLogo) ? n : e.logo) ? r : "", {
         size: x.n
       }),
       categorySkuId: e.skuId,
       bannerAsset: e.heroBannerAsset,
-      fallbackBannerUrl: (0, v.uV)(null !== (l = e.heroBanner) && void 0 !== l ? l : "", {
+      fallbackBannerUrl: (0, _.uV)(null != (l = e.heroBanner) ? l : "", {
         size: S.pv,
         format: "jpg"
       }),
@@ -66,21 +66,21 @@ let I = {
     let {
       isLoading: t,
       handleTransition: n,
-      category: o,
+      category: a,
       heroBlock: i,
-      tab: v
-    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, s.e7)([f.Z], () => f.Z.isFocused()), T = (0, s.e7)([p.default], () => p.default.getCurrentUser()), L = (0, k.u)(), Z = l.useMemo(() => null != i ? i : B(o), [i, o]), {
+      tab: _
+    } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, s.e7)([f.Z], () => f.Z.isFocused()), T = (0, s.e7)([p.default], () => p.default.getCurrentUser()), L = (0, k.u)(), Z = l.useMemo(() => null != i ? i : B(a), [i, a]), {
       isPreviewingStaticBanner: R,
       bannerOverrides: A,
       bannerStyleOverrides: F,
       heroLogo: W,
       heroBannerStatic: D,
       heroBannerAnimated: H
-    } = (0, j.hr)(Z), M = null == A ? void 0 : A.heroBanner, V = l.useMemo(() => L(Z.rankedSkuIds), [t, L, Z.rankedSkuIds]), U = (0, _.a)()(V), G = (0, C.l)(U).slice(0, 4), z = v === S.AW.ORBS ? E.NW.string(E.t.hvVgAQ) : E.NW.formatToPlainString(E.t.wvKYCg, {
+    } = (0, j.hr)(Z), M = null == A ? void 0 : A.heroBanner, V = l.useMemo(() => L(Z.rankedSkuIds), [t, L, Z.rankedSkuIds]), U = (0, v.a)()(V), G = (0, C.l)(U).slice(0, 4), z = _ === S.AW.ORBS ? E.NW.string(E.t.hvVgAQ) : E.NW.formatToPlainString(E.t.wvKYCg, {
       category_name: Z.name
     });
     return null != T && (t || Z !== I) ? (0, r.jsxs)("div", {
-      className: a()(w.heroBlock, {
+      className: o()(w.heroBlock, {
         [w.responsiveHero]: null == F ? void 0 : F.responsive
       }),
       children: [(0, r.jsxs)("div", {
@@ -99,14 +99,14 @@ let I = {
           autoPlay: !0,
           loop: !0
         }), (0, r.jsx)("div", {
-          className: a()(w.bannerShadow, w.left, {
+          className: o()(w.bannerShadow, w.left, {
             [w.darker]: null == M ? void 0 : M.darker
           }),
           style: (null == M ? void 0 : M.gradientLeft) != null ? {
             background: null == M ? void 0 : M.gradientLeft
           } : void 0
         }), (0, r.jsx)("div", {
-          className: a()(w.bannerShadow, w.right, {
+          className: o()(w.bannerShadow, w.right, {
             [w.darker]: null == M ? void 0 : M.darker
           }),
           style: (null == M ? void 0 : M.gradientRight) != null ? {
@@ -137,8 +137,8 @@ let I = {
                 className: w.title,
                 children: Z.title
               }), (0, r.jsx)(c.Text, {
-                variant: v === S.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: v === S.AW.ORBS ? w.orbsSubHeaderText : (null == A ? void 0 : A.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
+                variant: _ === S.AW.ORBS ? "text-lg/medium" : "text-md/normal",
+                className: _ === S.AW.ORBS ? w.orbsSubHeaderText : (null == A ? void 0 : A.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
                 style: null != Z.bannerTextColor ? {
                   color: Z.bannerTextColor
                 } : void 0,
@@ -151,14 +151,14 @@ let I = {
               className: w.heroHeaderButton,
               color: c.Ttl.WHITE,
               onClick: () => {
-                v === S.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(P.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", Z.categorySkuId)
+                _ === S.AW.ORBS ? (0, u.Z)(g.Z.getArticleURL(P.BhN.VIRTUAL_CURRENCY_LEARN_MORE)) : n("shop latest category hero", Z.categorySkuId)
               },
               children: z
             })
           })]
         }), (0, r.jsx)("div", {
-          className: a()(w.row, w.feed, {
-            [w.feedSingleRow]: v !== S.AW.ORBS
+          className: o()(w.row, w.feed, {
+            [w.feedSingleRow]: _ !== S.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {
             children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(O.K, {}, t))
@@ -175,7 +175,7 @@ let I = {
                   product: e,
                   category: n,
                   user: T,
-                  tab: v,
+                  tab: _,
                   isInFeedView: !0
                 }, e.skuId)
               }, null == e ? void 0 : e.skuId)

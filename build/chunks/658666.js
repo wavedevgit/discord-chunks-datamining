@@ -68,10 +68,10 @@ function N() {
 function C() {
   var e;
   let i = d.Z.getGuildId();
-  return null == i ? null : null === (e = s.Z.get(i)) || void 0 === e ? void 0 : e.formFields
+  return null == i ? null : null == (e = s.Z.get(i)) ? void 0 : e.formFields
 }
 
-function v() {
+function y() {
   let e = C();
   if (null == e) return;
   let i = e.find(e => (0, E.J)(e));
@@ -84,7 +84,7 @@ function v() {
   }))
 }
 
-function y() {
+function O() {
   let e = C();
   if (null == e) return;
   let i = e.find(e => (0, E.J)(e));
@@ -99,61 +99,60 @@ function y() {
   return [...e]
 }
 
-function O(e) {
+function L(e) {
   return e.hasFeature(S.oNc.DISCOVERABLE) ? f.A.DISCOVERABLE : e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && e.hasFeature(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) ? f.A.APPLY : f.A.INVITE
 }
 
-function L(e, i) {
+function P(e, i) {
   let t = e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) || e.hasFeature(S.oNc.CLAN);
   switch (i) {
     case f.A.INVITE:
       return {
-        joinType: f.A.INVITE, requireTerms: t, termRules: v()
+        joinType: f.A.INVITE, requireTerms: t, termRules: y()
       };
     case f.A.APPLY:
       return {
-        joinType: f.A.APPLY, pendingVerificationFields: y()
+        joinType: f.A.APPLY, pendingVerificationFields: O()
       };
     case f.A.DISCOVERABLE:
       return {
-        joinType: f.A.DISCOVERABLE, settingsView: N(), requireTerms: t, termRules: v()
+        joinType: f.A.DISCOVERABLE, settingsView: N(), requireTerms: t, termRules: y()
       }
   }
 }
 
-function P(e, i) {
+function R(e, i) {
   var t, n, r, l;
   let {
     requireTerms: o,
     termRules: a
   } = i;
   if (e.hasFeature(S.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || e.hasFeature(S.oNc.MEMBER_VERIFICATION_GATE_ENABLED) !== o) return !0;
-  let s = null !== (n = C()) && void 0 !== n ? n : [];
+  let s = null != (n = C()) ? n : [];
   if (s.length > 1) return !0;
-  let c = null !== (r = null === (t = s.find(e => (0, E.J)(e))) || void 0 === t ? void 0 : t.values) && void 0 !== r ? r : [],
-    d = null !== (l = null == a ? void 0 : a.map(e => e.value.trim()).filter(e => "" !== e)) && void 0 !== l ? l : [];
+  let c = null != (r = null == (t = s.find(e => (0, E.J)(e))) ? void 0 : t.values) ? r : [],
+    d = null != (l = null == a ? void 0 : a.map(e => e.value.trim()).filter(e => "" !== e)) ? l : [];
   return !u().isEqual(c, d)
 }
 
-function R() {
+function b() {
   let e = d.Z.getGuild();
   if (null == e || null == n) {
     p = h;
     return
   }
-  let i = O(e) !== n.joinType;
+  let i = L(e) !== n.joinType;
   switch (n.joinType) {
     case f.A.INVITE:
       p = {
-        verificationDirty: P(e, n),
+        verificationDirty: R(e, n),
         guildDirty: i,
         profileDirty: !1
       };
       break;
     case f.A.APPLY:
       var t, r;
-      let l;
-      let o = C(),
+      let l, o = C(),
         {
           pendingVerificationFields: a
         } = n,
@@ -161,25 +160,25 @@ function R() {
       l = null == o ? null != a : null != a && !u().isEqual(o, a), p = {
         verificationDirty: s || l,
         guildDirty: i,
-        profileDirty: (null === (t = c.Z.getProfile(e.id)) || void 0 === t ? void 0 : t.visibility) !== (null === (r = d.Z.getGuildProfile()) || void 0 === r ? void 0 : r.visibility)
+        profileDirty: (null == (t = c.Z.getProfile(e.id)) ? void 0 : t.visibility) !== (null == (r = d.Z.getGuildProfile()) ? void 0 : r.visibility)
       };
       break;
     case f.A.DISCOVERABLE:
       p = {
-        verificationDirty: P(e, n),
+        verificationDirty: R(e, n),
         guildDirty: i || d.Z.hasChanges(),
         profileDirty: !1
       }
   }
 }
 
-function b() {
+function v() {
   if (null == d.Z.getGuildId() || null == n) return !1;
   n = n.joinType === f.A.APPLY ? D(T({}, n), {
-    pendingVerificationFields: y()
+    pendingVerificationFields: O()
   }) : D(T({}, n), {
-    termRules: v()
-  }), R()
+    termRules: y()
+  }), b()
 }
 
 function m(e) {
@@ -190,8 +189,8 @@ function m(e) {
   if (i !== S.pNK.ACCESS) return V();
   let r = d.Z.getGuild();
   if (null == r) return !1;
-  let l = t === S.KsC.ACCESS_DISCOVERABLE && r.hasFeature(S.oNc.COMMUNITY) ? f.A.DISCOVERABLE : O(r);
-  n = L(r, l), R()
+  let l = t === S.KsC.ACCESS_DISCOVERABLE && r.hasFeature(S.oNc.COMMUNITY) ? f.A.DISCOVERABLE : L(r);
+  n = P(r, l), b()
 }
 
 function V() {
@@ -202,12 +201,12 @@ function F() {
   if ((null == n ? void 0 : n.joinType) !== f.A.DISCOVERABLE) return !1;
   n = D(T({}, n), {
     settingsView: N()
-  }), R()
+  }), b()
 }
 class G extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(d.Z, s.Z, I.ZP), this.syncWith([d.Z, s.Z], () => {
-      R()
+      b()
     })
   }
   get pendingState() {
@@ -232,7 +231,7 @@ let j = new G(a.Z, {
     n = D(T({}, n), {
       requireTerms: t,
       termRules: r
-    }), R()
+    }), b()
   },
   GUILD_SETTINGS_JOIN_RULES_APPLY_SET_PENDING_FORM_FIELDS: function(e) {
     let {
@@ -242,7 +241,7 @@ let j = new G(a.Z, {
     if (i !== d.Z.getGuildId() || (null == n ? void 0 : n.joinType) !== f.A.APPLY) return !1;
     n = D(T({}, n), {
       pendingVerificationFields: t
-    }), R()
+    }), b()
   },
   GUILD_SETTINGS_JOIN_RULES_SET_SELECTED_TYPE: function(e) {
     let {
@@ -250,10 +249,10 @@ let j = new G(a.Z, {
       joinType: t
     } = e, r = d.Z.getGuild();
     if (i !== (null == r ? void 0 : r.id)) return !1;
-    n = L(r, t), R()
+    n = P(r, t), b()
   },
-  MEMBER_VERIFICATION_FORM_UPDATE: b,
-  MEMBER_VERIFICATION_FORM_FETCH_FAIL: b,
+  MEMBER_VERIFICATION_FORM_UPDATE: v,
+  MEMBER_VERIFICATION_FORM_FETCH_FAIL: v,
   GUILD_SETTINGS_INIT: m,
   GUILD_SETTINGS_SET_SECTION: m,
   GUILD_SETTINGS_CLOSE: V,

@@ -38,7 +38,7 @@ var r = n(200651),
   D = n(932174),
   B = n(981631),
   R = n(388032),
-  L = n(480702);
+  L = n(951927);
 let W = A.u.SIZE_24;
 
 function Y(e) {
@@ -47,7 +47,7 @@ function Y(e) {
     channelId: n
   } = e, i = (0, a.e7)([d.Z], () => d.Z.getApplication(t)), Y = (0, a.e7)([E.ZP], () => E.ZP.getSelfEmbeddedActivities().get(t)), M = (0, a.e7)([_.Z], () => _.Z.getChannel(n)), z = h.Sb.useSetting(), K = (0, a.Wu)([I.ZP], () => {
     var e;
-    return null == M || null == Y ? [] : Array.from(null !== (e = Y.userIds) && void 0 !== e ? e : []).map(e => I.ZP.getMember(M.guild_id, e))
+    return null == M || null == Y ? [] : Array.from(null != (e = Y.userIds) ? e : []).map(e => I.ZP.getMember(M.guild_id, e))
   }, [Y, M]), V = o.useMemo(() => {
     let e = new Map;
     return K.forEach(t => {
@@ -57,7 +57,7 @@ function Y(e) {
     var n;
     if (null == e) return null;
     let o = V.get(e.id),
-      i = null !== (n = null == o ? void 0 : o.nick) && void 0 !== n ? n : w.ZP.getName(e);
+      i = null != (n = null == o ? void 0 : o.nick) ? n : w.ZP.getName(e);
     return (0, r.jsx)(c.DY3, {
       text: i,
       position: "bottom",

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -15,7 +15,7 @@ var r = n(200651),
   m = n(8426),
   g = n(969632),
   p = n(388032),
-  h = n(83843);
+  h = n(773100);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -55,9 +55,9 @@ let x = function(e) {
     index: x,
     onDragComplete: j,
     onDragStart: N,
-    onDragReset: v
+    onDragReset: _
   } = e, {
-    title: _,
+    title: v,
     channelId: C,
     description: O
   } = s, y = d.Z.getChannel(C), I = null;
@@ -78,7 +78,7 @@ let x = function(e) {
       index: x,
       onDragStart: N,
       onDragComplete: j,
-      onDragReset: v
+      onDragReset: _
     }),
     Z = i.useCallback(e => {
       (0, m.XG)(s.channelId, e)
@@ -135,7 +135,7 @@ let x = function(e) {
           className: h.resourceChannelTitle,
           variant: "text-md/semibold",
           color: "header-primary",
-          children: _
+          children: v
         }), !E && (0, r.jsx)(l.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",

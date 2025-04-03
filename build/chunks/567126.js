@@ -20,8 +20,8 @@ var r = n(200651),
   p = n(594190),
   g = n(751571),
   _ = n(569984),
-  v = n(918701),
-  j = n(977156),
+  j = n(918701),
+  v = n(977156),
   b = n(28798),
   S = n(131951),
   C = n(449224),
@@ -41,7 +41,7 @@ var r = n(200651),
   M = n(46140),
   L = n(65154),
   D = n(388032),
-  G = n(702146);
+  G = n(873270);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ function z(e) {
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
   }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, N] = l.useState(null), [I, w] = l.useState(null), T = null != I && I.length > 0, [E, R] = l.useState(c.vA.WINDOW), [k, U] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
-    let r = (0, j.Zy)({
+    let r = (0, v.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
     return l.useMemo(() => {
@@ -86,8 +86,8 @@ function z(e) {
         var l, i;
         let n = t.find(e => (0, Z.Z)(r.id, e.windowHandle));
         if ((null == n ? void 0 : n.id) == null) continue;
-        let s = (0, v.lQ)(e, n.id);
-        if (null != s && (null === (l = s.userStatus) || void 0 === l ? void 0 : l.enrolledAt) != null && (null === (i = s.userStatus) || void 0 === i ? void 0 : i.completedAt) == null) return {
+        let s = (0, j.lQ)(e, n.id);
+        if (null != s && (null == (l = s.userStatus) ? void 0 : l.enrolledAt) != null && (null == (i = s.userStatus) ? void 0 : i.completedAt) == null) return {
           source: r,
           quest: s
         }
@@ -315,17 +315,17 @@ function V(e) {
       } = e;
       t({
         id: r,
-        name: null !== (n = o[r]) && void 0 !== n ? n : "",
+        name: null != (n = o[r]) ? n : "",
         url: ""
       })
     }, [t, o]),
     x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
     p = (0, N.isMac)(),
     [g, _] = l.useState(!1),
-    v = l.useCallback(() => {
+    j = l.useCallback(() => {
       _(!g)
     }, [g]),
-    j = x ? (0, r.jsx)(F, {
+    v = x ? (0, r.jsx)(F, {
       onSelect: t
     }) : (0, r.jsxs)("div", {
       className: G.nativePickerTypes,
@@ -356,10 +356,10 @@ function V(e) {
       variant: "text-md/semibold",
       color: "interactive-normal",
       children: D.NW.string(D.t.XyYoFR)
-    }), j, 0 === n.length ? null : (0, r.jsxs)("div", {
+    }), v, 0 === n.length ? null : (0, r.jsxs)("div", {
       className: s()(G.nativePickerCaptureSection, g ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
-        onClick: v,
+        onClick: j,
         className: G.nativePickerLabel,
         children: [(0, r.jsx)(f.Text, {
           className: G.nativeCaptureDevicesText,

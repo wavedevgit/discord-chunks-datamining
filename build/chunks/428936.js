@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(893966),
   u = n(527379),
   d = n(388032),
-  C = n(230600);
+  C = n(673285);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,8 +52,8 @@ function p(e) {
   } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), g = (0, s.$j)(t), x = l.useMemo(() => i.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
-  })), []), v = new Intl.NumberFormat(d.NW.currentLocale).format(h), y = d.NW.formatToPlainString(d.t.RNDnQ0, {
-    count: g ? "..." : v
+  })), []), y = new Intl.NumberFormat(d.NW.currentLocale).format(h), v = d.NW.formatToPlainString(d.t.RNDnQ0, {
+    count: g ? "..." : y
   }), O = h > j.pageSize || g, N = h > i.LU["0"];
   return (0, r.jsxs)("div", {
     className: C.paginationContainer,
@@ -65,7 +65,7 @@ function p(e) {
           color: "text-muted",
           children: d.NW.string(d.t.jNwLu7)
         }), (0, r.jsx)(a.PhF, {
-          "aria-label": y,
+          "aria-label": v,
           className: C.pageSizeInput,
           options: x,
           isSelected: e => e === j.pageSize,
@@ -87,7 +87,7 @@ function p(e) {
             color: "text-muted",
             className: C.pageLabel
           }, e), {
-            children: y
+            children: v
           }))
         })]
       }) : (0, r.jsx)(a.Text, {

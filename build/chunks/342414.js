@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => B
 }), n(47120);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(442837),
-  o = n(481060),
-  l = n(100527),
+  l = n(481060),
+  o = n(100527),
   c = n(906732),
   d = n(927359),
   u = n(975298),
@@ -19,18 +19,18 @@ var i = n(120356),
   f = n(63063),
   b = n(775412),
   N = n(695349),
-  x = n(519794),
+  x = n(249689),
   _ = n(520540),
   E = n(501862),
   j = n(533525),
   O = n(197115),
   C = n(823188),
-  v = n(184176),
-  S = n(386733),
+  S = n(184176),
+  v = n(386733),
   T = n(474936),
   I = n(981631),
   y = n(388032),
-  A = n(409241),
+  A = n(734664),
   P = n(872905),
   R = n(578478);
 
@@ -58,7 +58,7 @@ let Z = e => {
     } = e, {
       headingText: n,
       headingTop: i,
-      headingBottom: l
+      headingBottom: o
     } = L(), c = g.default.getCurrentUser(), d = (0, a.e7)([p.ZP], () => p.ZP.getPremiumTypeSubscription()), m = null != d && d.status !== I.O0b.ACCOUNT_HOLD && d.hasAnyPremiumNitro, h = (0, u.Z)(), f = (0, x.$)("nitro-home", c) && h.isFractionalPremiumActive && !m;
     return (0, r.jsxs)("div", {
       className: s()(A.container, t),
@@ -69,19 +69,19 @@ let Z = e => {
         className: A.headerArt
       }), (0, r.jsxs)("div", {
         className: A.content,
-        children: [i, (0, r.jsx)(o.X6q, {
+        children: [i, (0, r.jsx)(l.X6q, {
           variant: "display-lg",
           color: "always-white",
           children: n
-        }), l, (0, r.jsxs)("div", {
+        }), o, (0, r.jsxs)("div", {
           className: A.buttonContainer,
           children: [f && (0, r.jsx)(O.Z, {
-            color: o.Ttl.BRAND,
+            color: l.Ttl.BRAND,
             buttonText: y.NW.string(y.t["2pG5GR"]),
             className: s()(A.button, A.subscribeButton)
           }), (0, r.jsx)(O.Z, {
-            color: f ? o.Ttl.WHITE : o.Ttl.BRAND,
-            look: f ? o.zxk.Looks.OUTLINED : o.zxk.Looks.FILLED,
+            color: f ? l.Ttl.WHITE : l.Ttl.BRAND,
+            look: f ? l.zxk.Looks.OUTLINED : l.zxk.Looks.FILLED,
             buttonText: y.NW.string(y.t["3KomGR"]),
             className: A.button,
             isGift: !0
@@ -102,7 +102,7 @@ let Z = e => {
     }), i = n === _.p.VARIANT_2, {
       headingText: s,
       headingTop: a,
-      headingBottom: l
+      headingBottom: o
     } = L();
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("img", {
@@ -114,19 +114,19 @@ let Z = e => {
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, r.jsxs)("div", {
           className: A.contentV2,
-          children: [a, (0, r.jsx)(o.X6q, {
+          children: [a, (0, r.jsx)(l.X6q, {
             variant: "display-lg",
             color: "always-white",
             children: s
-          }), l, i && (0, r.jsx)("div", {
+          }), o, i && (0, r.jsx)("div", {
             className: A.buttonContainer,
             children: (0, r.jsx)(O.Z, {
-              color: o.Ttl.BRAND,
+              color: l.Ttl.BRAND,
               buttonText: y.NW.string(y.t["3KomGR"]),
               className: A.button,
               isGift: !0
             })
-          }), (0, r.jsx)(S.Z, {})]
+          }), (0, r.jsx)(v.Z, {})]
         })
       })]
     })
@@ -147,12 +147,12 @@ let Z = e => {
           className: A.contentV2,
           children: [(0, r.jsx)("div", {
             className: A.reverseTrialHomeHeader,
-            children: (0, r.jsx)(o.X6q, {
+            children: (0, r.jsx)(l.X6q, {
               variant: "display-lg",
               color: "always-white",
               children: e
             })
-          }), (0, r.jsx)(v.Z, {})]
+          }), (0, r.jsx)(S.Z, {})]
         })
       })]
     })
@@ -164,18 +164,18 @@ let Z = e => {
       location: n
     } = e, {
       analyticsLocations: i
-    } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, N.W)(), o = (0, b._O)(), g = y.NW.string(y.t.qYKftb), p = (0, j.b)(n), h = (0, r.jsx)(Z, {
+    } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_HERO_CTA), a = (0, N.W)(), l = (0, b._O)(), g = y.NW.string(y.t.qYKftb), p = (0, j.b)(n), h = (0, r.jsx)(Z, {
       className: t
     }), x = y.NW.string(y.t.ifwQZW), _ = !1, {
       fractionalState: O,
-      endsAt: v
-    } = (0, u.Z)(), S = (0, d.Z)(v, d.a.ENDS_IN);
+      endsAt: S
+    } = (0, u.Z)(), v = (0, d.Z)(S, d.a.ENDS_IN);
     a ? (x = y.NW.string(y.t.ifwQZW), h = (0, r.jsx)(k, {})) : p && (g = y.NW.string(y.t.qYKftb), x = y.NW.string(y.t.ifwQZW), h = (0, r.jsx)(w, {
       location: n
     }));
     let P = null;
     if (O !== T.a$.NONE && !a) {
-      o = !0, g = y.NW.string(y.t.vaqFvb), _ = !0;
+      l = !0, g = y.NW.string(y.t.vaqFvb), _ = !0;
       let e = y.NW.format(y.t["yR+oDA"], {
         helpCenterLink: f.Z.getArticleURL(I.BhN.FRACTIONAL_PREMIUM_ABOUT)
       });
@@ -189,7 +189,7 @@ let Z = e => {
           return (0, r.jsx)("div", (t = D({}, e), n = n = {
             className: A.pillContainer,
             children: (0, r.jsx)(E.Z, {
-              countdownText: S,
+              countdownText: v,
               showInfoIcon: !0
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -207,7 +207,7 @@ let Z = e => {
     }
     let R = {
         className: s()(A.trialPill, {
-          [A.hidden]: !o
+          [A.hidden]: !l
         }),
         text: g,
         colorOptions: C.VE.PREMIUM_TIER_2_WHITE_FILL

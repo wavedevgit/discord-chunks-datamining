@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  o = n(709014);
-let l = {
+  l = n(709014);
+let o = {
     deafen: {
       name: "deafen",
       start: 0,
@@ -52,7 +52,7 @@ let l = {
       play: s,
       Component: i.useCallback(e => {
         var i, s;
-        return (0, r.jsx)(o.L, (i = function(e) {
+        return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -73,7 +73,7 @@ let l = {
           src: () => n.e("68449").then(n.t.bind(n, 406785, 19)),
           ref: t,
           initialAnimation: a.current,
-          markers: l
+          markers: o
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

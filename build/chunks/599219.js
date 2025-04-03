@@ -1,4 +1,4 @@
-/** Chunk was on 77805 **/
+/** Chunk was on 57015 **/
 s.d(t, {
   default: () => k
 }), s(47120);
@@ -24,12 +24,12 @@ var n = s(200651),
   j = s(436457),
   T = s(877758),
   I = s(701476),
-  v = s(785997),
-  g = s(981631),
+  g = s(785997),
+  v = s(981631),
   O = s(834891),
   A = s(675999),
   F = s(388032),
-  y = s(594797);
+  y = s(299982);
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -89,13 +89,13 @@ function k(e) {
     [D, P] = o.useState(!1),
     w = (0, l.e7)([N.default], () => N.default.getCurrentUser()),
     G = null != w && null == w.nsfwAllowed,
-    [Z, M] = o.useState(G ? v.F.AGE_GATE : v.F.CHOOSE_TEMPLATE),
+    [Z, M] = o.useState(G ? g.F.AGE_GATE : g.F.CHOOSE_TEMPLATE),
     [B, R] = o.useState(null);
   o.useEffect(() => {
-    s(D ? v.F.COMPLETE : Z)
+    s(D ? g.F.COMPLETE : Z)
   }, [s, Z, D]);
   let [U, W] = o.useState(null), [z, H] = o.useState(null), [J, Y] = o.useState(!1), V = (0, l.e7)([x.Z], () => x.Z.getType() === I.M5.INVITE_UNCLAIMED), K = o.useCallback(e => {
-    H(e), M(v.F.CREATION_INTENT), h.default.track(g.rMx.GUILD_TEMPLATE_SELECTED, {
+    H(e), M(g.F.CREATION_INTENT), h.default.track(v.rMx.GUILD_TEMPLATE_SELECTED, {
       template_name: e.label,
       template_code: e.code
     })
@@ -105,10 +105,10 @@ function k(e) {
   } = (0, f.v)({
     hasFooter: !1,
     onBack: () => {
-      H(null), M(v.F.CHOOSE_TEMPLATE)
+      H(null), M(g.F.CHOOSE_TEMPLATE)
     },
     onCreationIntentChosen: e => {
-      Y(e === A.lr.COMMUNITY), M(v.F.CUSTOMIZE_GUILD)
+      Y(e === A.lr.COMMUNITY), M(g.F.CUSTOMIZE_GUILD)
     }
   }), {
     content: Q,
@@ -118,12 +118,12 @@ function k(e) {
     titleClassName: y.customizeGuildTitle,
     hasFooter: !1,
     onGuildCreated: e => {
-      W(e), (null == z ? void 0 : z.id) === O.l.CREATE ? M(v.F.CHANNEL_PROMPT) : P(!0)
+      W(e), (null == z ? void 0 : z.id) === O.l.CREATE ? M(g.F.CHANNEL_PROMPT) : P(!0)
     },
     onBack: () => {
-      M(v.F.CREATION_INTENT)
+      M(g.F.CREATION_INTENT)
     },
-    isSlideReady: B === v.F.CUSTOMIZE_GUILD,
+    isSlideReady: B === g.F.CUSTOMIZE_GUILD,
     isCommunity: J
   }), {
     content: ee,
@@ -134,29 +134,29 @@ function k(e) {
     onChannelPromptCompleted: () => {
       P(!0)
     },
-    isSlideReady: B === v.F.CHANNEL_PROMPT
+    isSlideReady: B === g.F.CHANNEL_PROMPT
   }), {
     content: es,
     footer: en
   } = (0, j.Z)({
-    onBack: () => M(v.F.CHOOSE_TEMPLATE),
+    onBack: () => M(g.F.CHOOSE_TEMPLATE),
     onComplete: () => {
       k()
     },
     onConnect: k,
-    isSlideReady: B === v.F.JOIN_GUILD
+    isSlideReady: B === g.F.JOIN_GUILD
   }), eo = null;
   switch (Z) {
-    case v.F.CUSTOMIZE_GUILD:
+    case g.F.CUSTOMIZE_GUILD:
       eo = $;
       break;
-    case v.F.CHANNEL_PROMPT:
+    case g.F.CHANNEL_PROMPT:
       eo = et;
       break;
-    case v.F.JOIN_GUILD:
+    case g.F.JOIN_GUILD:
       eo = en;
       break;
-    case v.F.CREATION_INTENT:
+    case g.F.CREATION_INTENT:
       eo = X
   }
   let {
@@ -184,7 +184,7 @@ function k(e) {
         step: Z
       })
     }), (0, n.jsx)(c.f6W, {
-      theme: g.BRd.LIGHT,
+      theme: v.BRd.LIGHT,
       children: e => (0, n.jsxs)("div", {
         className: r()(y.content, e),
         ref: ea,
@@ -196,18 +196,18 @@ function k(e) {
             centered: !1,
             width: er,
             children: [(0, n.jsx)(c.Mi4, {
-              id: v.F.AGE_GATE,
+              id: g.F.AGE_GATE,
               children: (0, n.jsx)("div", {
                 className: y.container,
                 children: (0, n.jsx)(E.Z, {
                   onComplete: () => {
-                    V ? k() : M(v.F.CHOOSE_TEMPLATE)
+                    V ? k() : M(g.F.CHOOSE_TEMPLATE)
                   },
                   onClose: k
                 })
               })
             }), (0, n.jsx)(c.Mi4, {
-              id: v.F.CHOOSE_TEMPLATE,
+              id: g.F.CHOOSE_TEMPLATE,
               impressionName: i.ImpressionNames.GUILD_ADD_LANDING,
               impressionProperties: ei,
               children: (0, n.jsx)("div", {
@@ -219,7 +219,7 @@ function k(e) {
                 })
               })
             }), (0, n.jsx)(c.Mi4, {
-              id: v.F.CREATION_INTENT,
+              id: g.F.CREATION_INTENT,
               impressionName: i.ImpressionNames.GUILD_ADD_INTENT_SELECTION,
               impressionProperties: ei,
               children: (0, n.jsx)("div", {
@@ -227,7 +227,7 @@ function k(e) {
                 children: q
               })
             }), (0, n.jsx)(c.Mi4, {
-              id: v.F.CUSTOMIZE_GUILD,
+              id: g.F.CUSTOMIZE_GUILD,
               impressionName: i.ImpressionNames.GUILD_ADD_CUSTOMIZE,
               impressionProperties: ei,
               children: (0, n.jsx)("div", {
@@ -235,7 +235,7 @@ function k(e) {
                 children: Q
               })
             }), (0, n.jsx)(c.Mi4, {
-              id: v.F.CHANNEL_PROMPT,
+              id: g.F.CHANNEL_PROMPT,
               impressionName: i.ImpressionNames.GUILD_ADD_CHANNEL_PROMPT,
               impressionProperties: ei,
               children: (0, n.jsx)("div", {
@@ -243,7 +243,7 @@ function k(e) {
                 children: ee
               })
             }), (0, n.jsx)(c.Mi4, {
-              id: v.F.JOIN_GUILD,
+              id: g.F.JOIN_GUILD,
               impressionName: i.ImpressionNames.GUILD_ADD_JOIN,
               impressionProperties: ei,
               children: (0, n.jsx)("div", {
@@ -252,16 +252,16 @@ function k(e) {
               })
             })]
           })
-        }), Z !== v.F.AGE_GATE ? (0, n.jsx)(c.olH, {
+        }), Z !== g.F.AGE_GATE ? (0, n.jsx)(c.olH, {
           onClick: k,
           className: y.closeButton
-        }) : null, Z === v.F.CHOOSE_TEMPLATE ? (0, n.jsx)(c.mzw, {
+        }) : null, Z === g.F.CHOOSE_TEMPLATE ? (0, n.jsx)(c.mzw, {
           justify: _.Z.Justify.BETWEEN,
           className: r()(y.footer, y.join),
           children: (0, n.jsx)(c.eee, {
             className: y.joinCTA,
             onClick: () => {
-              M(v.F.JOIN_GUILD)
+              M(g.F.JOIN_GUILD)
             },
             children: (0, n.jsxs)(c.Text, {
               variant: "text-sm/medium",

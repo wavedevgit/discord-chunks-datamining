@@ -1,6 +1,6 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => v
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   a = n(192379),
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(79707),
   p = n(49898),
   m = n(388032),
-  h = n(297991);
+  h = n(199462);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -120,7 +120,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function x(e) {
   let {
     className: t,
     selectedTab: n,
@@ -130,8 +130,8 @@ function v(e) {
   } = e, [u, p] = a.useState(0), m = a.useRef(u), {
     lastVisibleIndex: g,
     onItemLayout: f,
-    overflowItemsRef: v,
-    itemWidthsRef: x
+    overflowItemsRef: x,
+    itemWidthsRef: v
   } = (0, o.zP)({
     items: i,
     itemGapPx: 24,
@@ -139,19 +139,19 @@ function v(e) {
     containerWidth: u
   }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), O = a.useCallback(() => {
     var e;
-    let t = null === (e = y.current) || void 0 === e ? void 0 : e.getBoundingClientRect();
+    let t = null == (e = y.current) ? void 0 : e.getBoundingClientRect();
     if (null == t || m.current === t.width) return;
     p(t.width), m.current = t.width;
-    let n = x.current.reduce((e, t, n) => e + t + 24 * (0 !== n)),
+    let n = v.current.reduce((e, t, n) => e + t + 24 * (0 !== n)),
       r = t.width - n;
     null == c || c(r)
-  }, [x, c]);
+  }, [v, c]);
   a.useEffect(() => {
     let e = (0, d.pP)(O);
     return (0, d.YP)(e, document.body), () => (0, d.UC)(e, document.body)
   }, [O]);
-  let P = 0 !== u,
-    I = j.some(e => e.id === n);
+  let I = 0 !== u,
+    N = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
     className: l()(h.container, t),
     ref: y,
@@ -167,15 +167,15 @@ function v(e) {
           handleTransition: s
         }, e.id)
       }, e.id)), (0, r.jsx)("div", {
-        ref: v,
+        ref: x,
         children: (0, r.jsx)(b, {
           tabs: j,
           onTabSelect: s,
           selectedTab: n,
-          selected: I
+          selected: N
         })
       })]
-    }), P && (0, r.jsxs)("div", {
+    }), I && (0, r.jsxs)("div", {
       className: h.tabs,
       children: [C.map(e => (0, r.jsx)(_, {
         id: e.id,
@@ -186,7 +186,7 @@ function v(e) {
         tabs: j,
         onTabSelect: s,
         selectedTab: n,
-        selected: I
+        selected: N
       }) : null]
     })]
   })

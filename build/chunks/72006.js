@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -21,8 +21,8 @@ n.d(t, {
 var r = n(5148),
   i = n(593121),
   a = n.n(i),
-  o = n(668705),
-  l = n.n(o),
+  l = n(668705),
+  o = n.n(l),
   s = n(283852),
   c = n.n(s),
   u = n(115129),
@@ -34,31 +34,30 @@ var r = n(5148),
   g = n(157202),
   _ = n.n(g),
   b = n(473552),
-  v = n.n(b),
-  x = n(634523),
-  y = n.n(x),
-  E = n(302648),
-  O = n.n(E);
+  x = n.n(b),
+  y = n(634523),
+  E = n.n(y),
+  v = n(302648),
+  O = n.n(v);
 
 function N(e, t, n, i) {
   let a = i.getCurrentContent(),
-    o = null;
-  null != e && (o = (a = a.createEntity(...e)).getLastCreatedEntityKey());
-  let l = a.getFirstBlock(),
+    l = null;
+  null != e && (l = (a = a.createEntity(...e)).getLastCreatedEntityKey());
+  let o = a.getFirstBlock(),
     s = new r.SelectionState({
-      anchorKey: l.getKey(),
+      anchorKey: o.getKey(),
       anchorOffset: t,
-      focusKey: l.getKey(),
+      focusKey: o.getKey(),
       focusOffset: n
     });
-  return a = r.Modifier.applyEntity(a, s, o), r.EditorState.set(i, {
+  return a = r.Modifier.applyEntity(a, s, l), r.EditorState.set(i, {
     currentContent: a
   })
 }
 
 function j(e, t, n, i) {
-  let a, o;
-  let s = t.getCurrentContent(),
+  let a, l, s = t.getCurrentContent(),
     c = s.getFirstBlock(),
     u = c.getText();
   "number" == typeof n ? (n > u.length && (n = u.length), null != i && i > u.length && (i = u.length), a = new r.SelectionState({
@@ -68,18 +67,18 @@ function j(e, t, n, i) {
     focusOffset: null != i && 0 !== i ? i : n
   })) : a = t.getSelection();
   let d = t.getCurrentInlineStyle(),
-    p = l()(s, a);
-  return a.isCollapsed() ? (s = r.Modifier.insertText(s, a, e, d, p), o = "insert-characters") : (s = r.Modifier.replaceText(s, a, e, d, p), o = "replace-characters"), r.EditorState.push(t, s, o)
+    p = o()(s, a);
+  return a.isCollapsed() ? (s = r.Modifier.insertText(s, a, e, d, p), l = "insert-characters") : (s = r.Modifier.replaceText(s, a, e, d, p), l = "replace-characters"), r.EditorState.push(t, s, l)
 }
 
 function C(e, t) {
   switch (e) {
     case "delete":
-      return y()(t);
+      return E()(t);
     case "delete-word":
       return m()(t);
     case "backspace":
-      return v()(t);
+      return x()(t);
     case "backspace-word":
       return d()(t);
     case "backspace-to-start-of-line":
@@ -111,32 +110,32 @@ function T(e, t) {
     r = t.getCurrentContent(),
     i = r.getFirstBlock(),
     a = i.getText(),
-    o = [];
+    l = [];
   return i.findEntityRanges(e => null !== e.getEntity(), (e, t) => {
     let n = r.getEntity(i.getEntityAt(e)).getType(),
-      l = a.substring(e, t);
-    o.push({
+      o = a.substring(e, t);
+    l.push({
       processed: !1,
       type: n,
       start: e,
       end: t,
-      text: l
+      text: o
     })
   }), e.forEach(e => {
     let r = !1;
-    if (o.forEach(n => {
+    if (l.forEach(n => {
         let {
           type: i,
           start: a,
-          end: o
-        } = e, l = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === l ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || o > n.start && o <= n.end) && (n.processed = !0, t = N(null, n.start, n.end, t)))
+          end: l
+        } = e, o = e.getFullMatch();
+        !n.processed && (n.type === i && n.start === a && n.text === o ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || l > n.start && l <= n.end) && (n.processed = !0, t = N(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
     t = N([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
-  }), o.forEach(e => {
+  }), l.forEach(e => {
     e.processed || (t = N(null, e.start, e.end, t))
   }), t
 }

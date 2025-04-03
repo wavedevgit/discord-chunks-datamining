@@ -20,9 +20,9 @@ var l = n(442837),
   j = n(607783),
   m = n(786138),
   O = n(435064),
-  v = n(779618),
-  S = n(39604),
-  Z = n(258609),
+  S = n(779618),
+  Z = n(39604),
+  v = n(258609),
   y = n(111672),
   I = n(441167),
   x = n(700994),
@@ -56,10 +56,10 @@ function _(e) {
     simplified: F = !1
   } = e, G = (0, l.cj)([W.default], () => {
     var e;
-    return (null == t ? void 0 : t.ownerId) === (null === (e = W.default.getCurrentUser()) || void 0 === e ? void 0 : e.id)
+    return (null == t ? void 0 : t.ownerId) === (null == (e = W.default.getCurrentUser()) ? void 0 : e.id)
   }), J = function(e) {
     let t = U(e),
-      n = (0, v.Z)(E.Z),
+      n = (0, S.Z)(E.Z),
       o = O.Z.getSettings().clipsEnabled,
       a = e.ownerId === N.default.getId(),
       {
@@ -76,15 +76,14 @@ function _(e) {
       id: "clip-stream",
       disabled: !o || !(a || d) || u,
       label: T.NW.string(T.t.U4URzM),
-      action: () => a ? (0, S.C1)() : (0, S.C1)((0, M.V9)(e))
+      action: () => a ? (0, Z.C1)() : (0, Z.C1)((0, M.V9)(e))
     }) : null
   }(t), Q = U(t), L = function(e) {
     let t = U(e),
       n = (0, x.Z)(e.ownerId, V.Yn.STREAM);
     return t ? n : null
   }(t), Y = function(e, t) {
-    let n;
-    let o = (0, l.e7)([Z.Z], () => null != Z.Z.getRemoteSessionId()),
+    let n, o = (0, l.e7)([v.Z], () => null != v.Z.getRemoteSessionId()),
       a = (0, l.e7)([P.Z], () => P.Z.getChannel(e.channelId), [e.channelId]),
       u = U(e),
       d = W.default.getCurrentUser(),

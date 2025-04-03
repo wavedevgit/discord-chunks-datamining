@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => w
 }), n(47120), n(266796);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n(990547),
+  l = n(392711),
+  o = n(990547),
   c = n(399606),
   d = n(704215),
   u = n(481060),
@@ -24,11 +24,11 @@ var r = n(200651),
   j = n(391110),
   O = n(484239),
   C = n(658370),
-  v = n(735825),
-  S = n(981631),
+  S = n(735825),
+  v = n(981631),
   T = n(921944),
   I = n(388032),
-  y = n(579139);
+  y = n(344253);
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,9 +75,9 @@ let R = {
       forceShadow: x,
       cardType: O,
       confettiCanvas: C
-    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.Er)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE);
+    } = e, w = null == e ? void 0 : e.onCtaClick, k = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), [W, L] = i.useState(!1), [B, M] = i.useState(!1), U = (0, b.Er)(), V = (0, b.IB)(), [G, F] = i.useState(!1), [H, z] = i.useState(t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE);
     i.useEffect(() => {
-      t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === v.EB.REDEEMABLE && z(!0)
+      t === E.u.TENURE_REWARD_COLLECTIBLE && V && (null == U ? void 0 : U.nitroTenureStatus) === S.EB.REDEEMABLE && z(!0)
     }, [V, t, U]);
     let Y = i.useCallback(() => {
         F(!0)
@@ -95,16 +95,16 @@ let R = {
       isEasterEggTriggered: $,
       onHover: ee,
       onUnhover: et
-    } = (0, _.Z)(5), en = (0, o.debounce)(() => {
-      f.default.track(S.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
-        card_type: (0, o.snakeCase)(t),
+    } = (0, _.Z)(5), en = (0, l.debounce)(() => {
+      f.default.track(v.rMx.PREMIUM_MARKETING_WHAT_IS_NEW_CARD_HOVERED, {
+        card_type: (0, l.snakeCase)(t),
         is_tenure_reward: t === E.u.TENURE_REWARD_COLLECTIBLE,
         reward_status: null == U ? void 0 : U.nitroTenureStatus
       })
-    }, 800), er = (0, o.debounce)(() => {
-      null != w && f.default.track(S.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
-        card_type: (0, o.snakeCase)(t),
-        function_name: (0, o.snakeCase)(w.name)
+    }, 800), er = (0, l.debounce)(() => {
+      null != w && f.default.track(v.rMx.PERK_DISCOVERABILITY_CARD_CTA_CLICKED, {
+        card_type: (0, l.snakeCase)(t),
+        function_name: (0, l.snakeCase)(w.name)
       })
     }, 800), ei = i.useRef(null);
     e = P(A({
@@ -116,12 +116,12 @@ let R = {
     });
     let es = X !== s || null == s || B || s === d.z.TENURE_REWARD_REDEEMABLE_CONFETTI;
     return (i.useEffect(() => {
-      k && W && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+      k && W && (M(!0), f.default.track(v.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
       }), null != s && J(T.L.TAKE_ACTION))
     }, [k, W, s, t, J]), (0, g.Z)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
+      type: o.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.PREMIUM_MARKETING_TENURE_REWARD_CARD,
       properties: {
         user_tenure_reward_id: null == U ? void 0 : U.tenureRewardStatusId,
         tenure_reward_id: null == U ? void 0 : U.tenureRewardSkuId,
@@ -132,8 +132,8 @@ let R = {
     }, {
       disableTrack: t !== E.u.TENURE_REWARD_COLLECTIBLE || null == U
     }), (0, g.Z)({
-      type: l.ImpressionTypes.VIEW,
-      name: l.ImpressionNames.PERK_DISCOVERABILITY_CARD,
+      type: o.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.PERK_DISCOVERABILITY_CARD,
       properties: {
         name: t
       }
@@ -206,7 +206,7 @@ let R = {
             [y.reducedMotion]: k
           }),
           onTransitionEnd: e => {
-            W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(S.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
+            W && "transform" === e.propertyName && e.target.classList.contains(y.flipCard) && (M(!0), f.default.track(v.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
               card_type: t
             }), null != s && J(T.L.TAKE_ACTION))
           },
@@ -243,8 +243,8 @@ let Z = i.forwardRef((e, t) => {
   let {
     title: i,
     titleClassName: s = "",
-    subtitle: o = "",
-    description: l = "",
+    subtitle: l = "",
+    description: o = "",
     descriptionCta: c = "",
     isPremiumGetCta: d,
     onCtaClick: m,
@@ -256,11 +256,11 @@ let Z = i.forwardRef((e, t) => {
     onClick: N,
     backgroundImage: _,
     pillText: E,
-    perkImage: v,
-    imageOverlayText: S
-  } = e, T = b === j.R0.CARD_CAROUSEL_FIRST_ROW || b === j.R0.CARD_CAROUSEL_SECOND_ROW || b === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== l || "" !== c || "" !== o && f === j.zW.REWARD, A = (0, x._)(f);
+    perkImage: S,
+    imageOverlayText: v
+  } = e, T = b === j.R0.CARD_CAROUSEL_FIRST_ROW || b === j.R0.CARD_CAROUSEL_SECOND_ROW || b === j.R0.CARD_CAROUSEL_THIRD_ROW, I = "" !== o || "" !== c || "" !== l && f === j.zW.REWARD, A = (0, x._)(f);
   return (0, r.jsxs)(u.P3F, {
-    className: a()(y.card, p, null === (n = A.cardContainer) || void 0 === n ? void 0 : n.className, {
+    className: a()(y.card, p, null == (n = A.cardContainer) ? void 0 : n.className, {
       [y.clickable]: null != N,
       [y.hideOverflow]: T
     }),
@@ -278,20 +278,20 @@ let Z = i.forwardRef((e, t) => {
     }), (0, r.jsx)(O.Z, {
       title: i,
       titleClassName: s,
-      subtitle: o,
-      perkImage: v,
+      subtitle: l,
+      perkImage: S,
       isCarousel: T,
       descriptionCta: c,
       onCtaClick: m,
       perkComponent: h,
       subtitleClassName: y.cardSubtitle,
       cardVariant: f,
-      imageOverlayText: S
+      imageOverlayText: v
     }), I && (0, r.jsx)(C.Z, {
       title: i,
       titleClassName: s,
-      subtitle: o,
-      description: l,
+      subtitle: l,
+      description: o,
       descriptionCta: c,
       isPremiumGetCta: d,
       onCtaClick: m,

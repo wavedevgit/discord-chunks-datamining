@@ -9,7 +9,7 @@ var r = n(200651),
   i = n(642128),
   l = n(113434),
   c = n(95985),
-  d = n(153585);
+  d = n(667904);
 let u = o.forwardRef(function(e, t) {
   var n;
   let {
@@ -19,7 +19,7 @@ let u = o.forwardRef(function(e, t) {
     isExpansionAnimationComplete: m,
     quest: f,
     taskDetails: g
-  } = e, x = (0, l.Jf)(f), h = o.useRef(null), b = (null === (n = f.userStatus) || void 0 === n ? void 0 : n.enrolledAt) != null, j = null != x ? x.percentComplete : g.percentComplete;
+  } = e, x = (0, l.Jf)(f), h = o.useRef(null), b = (null == (n = f.userStatus) ? void 0 : n.enrolledAt) != null, j = null != x ? x.percentComplete : g.percentComplete;
   return (0, r.jsx)(i.animated.div, {
     ref: t,
     "aria-hidden": p && m,

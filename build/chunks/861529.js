@@ -10,9 +10,9 @@ var n = r(200651),
   c = r(937889),
   s = r(970184),
   u = r(985184),
-  d = r(870456),
-  p = r(556208),
-  f = r(50398);
+  p = r(870456),
+  d = r(317997),
+  f = r(73433);
 
 function b(e) {
   let {
@@ -22,15 +22,15 @@ function b(e) {
     let t = (0, s.CJ)();
     return (0, l.useMemo)(() => {
       let r;
-      return null === t ? null : (r = null != t.message ? (0, c.rs)(t.message, d.u) : (0, c.p6)({
+      return null === t ? null : (r = null != t.message ? (0, c.rs)(t.message, p.u) : (0, c.p6)({
         channelId: t.channelId,
-        renderOptions: d.u
+        renderOptions: p.u
       }), a.Z.parse(e, !0, r))
     }, [e, t])
   }(t), b = (0, u.Gt)();
   return (0, n.jsx)("div", {
-    className: o()(r, f.markup, p.markdownContainer, {
-      [p.containerSizedText]: b
+    className: o()(r, f.markup, d.markdownContainer, {
+      [d.containerSizedText]: b
     }),
     children: i
   })

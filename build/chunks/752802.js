@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => M
 }), n(47120);
@@ -16,9 +16,9 @@ var i = n(200651),
   f = n(40851),
   m = n(414910),
   g = n(194082),
-  v = n(979264),
-  y = n(871118),
-  O = n(352978),
+  y = n(979264),
+  O = n(871118),
+  v = n(352978),
   b = n(833519),
   _ = n(839662),
   E = n(199902),
@@ -30,7 +30,7 @@ var i = n(200651),
   N = n(1226),
   Z = n(981631),
   w = n(388032),
-  P = n(63378);
+  P = n(652156);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,7 +144,7 @@ function R(e) {
     onEnablePin: r
   } = e, o = (0, f.bp)(), s = n.user, u = (0, a.e7)([j.default], () => {
     var e;
-    return null !== (e = j.default.getUser(s.id)) && void 0 !== e ? e : s
+    return null != (e = j.default.getUser(s.id)) ? e : s
   }, [s]), d = t ? w.NW.string(w.t.tLxK4u) : w.NW.string(w.t.E5RDnJ);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
@@ -159,7 +159,7 @@ function R(e) {
           className: P.watchButton,
           onClick: () => {
             var t;
-            null === (t = e.onClick) || void 0 === t || t.call(e), (0, h.rn)(n.stream, {
+            null == (t = e.onClick) || t.call(e), (0, h.rn)(n.stream, {
               forceMultiple: !0,
               noFocus: !0
             }), r(), (0, S.Ws)(Z.Odu.GO_LIVE, {
@@ -192,7 +192,7 @@ function R(e) {
             color: "always-white",
             className: P.controlUserName,
             children: C.ZP.getName(n.stream.guildId, n.stream.channelId, s)
-          }), (0, i.jsx)(v.ZP, {
+          }), (0, i.jsx)(y.ZP, {
             primaryGuild: u.primaryGuild,
             userId: u.id,
             containerClassName: P.guildTag,
@@ -240,7 +240,7 @@ let W = new Set([Z.jm8.ENDED, Z.jm8.FAILED, Z.jm8.PAUSED]),
       locked: r,
       widgetId: o,
       pinned: l
-    } = e, s = (0, a.e7)([E.Z], () => E.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && W.has(s.state), h = null != s, m = (0, N.yA)(t.stream), v = (0, N.xN)(t.stream);
+    } = e, s = (0, a.e7)([E.Z], () => E.Z.getActiveStreamForUser(t.user.id, t.stream.guildId), [t.user.id, t.stream.guildId]), u = (0, f.bp)(), d = null != s && W.has(s.state), h = null != s, m = (0, N.yA)(t.stream), y = (0, N.xN)(t.stream);
     return !h && r || d ? null : (0, i.jsxs)("div", {
       className: P.tile,
       children: [h && !r && (0, i.jsx)(g.ZP, {
@@ -261,7 +261,7 @@ let W = new Set([Z.jm8.ENDED, Z.jm8.FAILED, Z.jm8.PAUSED]),
           children: (0, i.jsx)(b.Z, {
             participant: t,
             width: n,
-            fit: null != v ? v : O.L.CONTAIN,
+            fit: null != y ? y : v.L.CONTAIN,
             inPopout: !0,
             focused: !r,
             paused: !1,
@@ -272,7 +272,7 @@ let W = new Set([Z.jm8.ENDED, Z.jm8.FAILED, Z.jm8.PAUSED]),
         })
       }) : (0, i.jsx)("div", {
         className: P.streamPreview,
-        children: (0, i.jsx)(y.Z, {
+        children: (0, i.jsx)(O.Z, {
           noText: !0,
           className: P.absoluteFill,
           stream: t.stream

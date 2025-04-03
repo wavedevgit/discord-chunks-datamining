@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -14,8 +14,8 @@ var r = n(200651),
   u = n(999382),
   m = n(413584),
   g = n(388032),
-  p = n(486292),
-  h = n(305411);
+  p = n(673305),
+  h = n(62311);
 let f = e => {
     let {
       setWelcomeView: t,

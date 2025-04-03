@@ -4,8 +4,8 @@ n.d(t, {
   S4: () => s,
   X4: () => u
 }), n(47120);
-var i = n(192379),
-  r = n(481060);
+var r = n(192379),
+  i = n(481060);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,14 +27,14 @@ class l {
           element: n
         }] of(this.resizeObserver = new e.ResizeObserver(this.handleResize), this.listeners)) {
         var t;
-        null === (t = this.resizeObserver) || void 0 === t || t.observe(n)
+        null == (t = this.resizeObserver) || t.observe(n)
       }
       this.queueCompute()
     }
   }
   cleanUp() {
     var e;
-    null === (e = this.resizeObserver) || void 0 === e || e.disconnect(), this.resizeObserver = void 0, this.listeners.clear()
+    null == (e = this.resizeObserver) || e.disconnect(), this.resizeObserver = void 0, this.listeners.clear()
   }
   queueCompute() {
     this.queuedCompute || (this.queuedCompute = !0, Promise.resolve().then(() => this.computeLayout()))
@@ -44,13 +44,13 @@ class l {
     this.queuedCompute = !1;
     let t = 0,
       n = 0;
-    for (let i of this.items) {
-      let r = this.listeners.get(i.notification.id);
-      if (null == r) continue;
+    for (let r of this.items) {
+      let i = this.listeners.get(r.notification.id);
+      if (null == i) continue;
       let {
         offsetHeight: o
-      } = r.element;
-      (r.top !== t || r.height !== o || r.index !== n) && (e = !0), r.top = t, r.height = o, r.index = n, 0 === t && (this.matchHeight !== o && (e = !0), this.matchHeight = o), t += o + 8, n++
+      } = i.element;
+      (i.top !== t || i.height !== o || i.index !== n) && (e = !0), i.top = t, i.height = o, i.index = n, 0 === t && (this.matchHeight !== o && (e = !0), this.matchHeight = o), t += o + 8, n++
     }
     e && this.broadcastLayoutUpdates()
   }
@@ -67,7 +67,7 @@ class l {
     }
   }
   subscribe(e, t, n) {
-    var i;
+    var r;
     this.listeners.set(e, {
       notificationId: e,
       callback: n,
@@ -75,12 +75,12 @@ class l {
       height: 0,
       top: 0,
       index: 0
-    }), null === (i = this.resizeObserver) || void 0 === i || i.observe(t), this.queueCompute()
+    }), null == (r = this.resizeObserver) || r.observe(t), this.queueCompute()
   }
   unsubscribe(e) {
     var t;
     let n = this.listeners.get(e);
-    null != n && (null === (t = this.resizeObserver) || void 0 === t || t.unobserve(n.element), this.listeners.delete(e), this.queueCompute())
+    null != n && (null == (t = this.resizeObserver) || t.unobserve(n.element), this.listeners.delete(e), this.queueCompute())
   }
   getLayoutSpecs(e) {
     return this.listeners.get(e)
@@ -91,7 +91,7 @@ class l {
     }), this.locked = e
   }
 }
-let s = i.createContext(new l(!0));
+let s = r.createContext(new l(!0));
 
 function c(e, t, n) {
   return t && 0 !== e ? 20 * Math.max(e / 5, 0) : n
@@ -103,7 +103,7 @@ let a = {
 };
 
 function u(e, t, n) {
-  let [o, l] = (0, r.q_F)(() => ({
+  let [o, l] = (0, i.q_F)(() => ({
     from: {
       opacity: 0,
       scale: 1,
@@ -111,14 +111,14 @@ function u(e, t, n) {
       height: 0,
       contentOpacity: 1
     }
-  }), void 0, []), u = i.useRef(l), d = i.useContext(s), h = i.useMemo(() => {
+  }), void 0, []), u = r.useRef(l), d = r.useContext(s), h = r.useMemo(() => {
     let t = !1;
     return n => {
       null == n ? d.unsubscribe(e) : d.subscribe(e, n, e => {
         let {
           locked: n,
-          matchHeight: i,
-          height: r,
+          matchHeight: r,
+          height: i,
           top: o,
           index: l
         } = e, {
@@ -128,15 +128,15 @@ function u(e, t, n) {
           scale: n ? Math.min(1 - l / 4, 1) : 1,
           transform: c(l, n, o),
           contentOpacity: n && l > 0 ? 0 : 1,
-          height: n ? i : r
+          height: n ? r : i
         };
         s({
           from: t ? void 0 : {
             opacity: 0,
             scale: 1.1,
-            transform: -((n ? i : r) * 1),
+            transform: -((n ? r : i) * 1),
             contentOpacity: 1,
-            height: n ? i : r
+            height: n ? r : i
           },
           to: d,
           config: a
@@ -144,13 +144,10 @@ function u(e, t, n) {
       })
     }
   }, [e, d]);
-  return i.useLayoutEffect(() => {
-    if (t === r.pJH.YEETED) {
+  return r.useLayoutEffect(() => {
+    if (t === i.pJH.YEETED) {
       let t = d.getLayoutSpecs(e);
-      if (null == t) {
-        n();
-        return
-      }
+      if (null == t) return void n();
       u.current({
         to: {
           scale: .8,

@@ -45,10 +45,10 @@ var l = {
     return d ? "_" + Math.random().toString(36).substr(2, 12) : void 0
   },
   h = function(e) {
+    if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function, not " + typeof e);
+
     function t(e) {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, t);
+      if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
       var n = function(e, t) {
         if (!e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");
         return t && ("object" == typeof t || "function" == typeof t) ? t : e
@@ -64,17 +64,14 @@ var l = {
         inputId: e.id || f()
       }, n
     }
-    return ! function(e, t) {
-      if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-      e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-          value: e,
-          enumerable: !1,
-          writable: !0,
-          configurable: !0
-        }
-      }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }(t, e), r(t, [{
+    return t.prototype = Object.create(e && e.prototype, {
+      constructor: {
+        value: t,
+        enumerable: !1,
+        writable: !0,
+        configurable: !0
+      }
+    }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), r(t, [{
       key: "componentDidMount",
       value: function() {
         this.mounted = !0, this.copyInputStyles(), this.updateInputWidth()

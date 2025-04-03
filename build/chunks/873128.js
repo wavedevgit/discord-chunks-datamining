@@ -1,15 +1,15 @@
-/** Chunk was on 92457 **/
-n.d(t, {
-  Z: () => i
+/** Chunk was on 95287 **/
+r.d(t, {
+  Z: () => o
 });
-var r = n(442837),
-  l = n(994752);
+var n = r(442837),
+  a = r(994752);
 
-function i(e) {
+function o(e) {
   let {
     guildId: t,
-    leaderboardId: n,
-    intervalOffset: i = 0
+    leaderboardId: r,
+    intervalOffset: o = 0
   } = e;
-  return (0, r.e7)([l.Z], () => l.Z.get(t, n, i))
+  return (0, n.e7)([a.Z], () => a.Z.get(t, r, o))
 }

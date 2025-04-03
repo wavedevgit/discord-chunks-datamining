@@ -1,10 +1,11 @@
-/** Chunk was on 38062 **/
+/** Chunk was on 88934 **/
 e.exports = {
-  modal: "modal__6fa2e",
-  body: "body__6fa2e",
-  seperator: "seperator__6fa2e",
-  description: "description__6fa2e",
-  footer: "footer__6fa2e",
-  headerImage: "headerImage__6fa2e",
-  closeButton: "closeButton__6fa2e"
+  alignCenter: "alignCenter__31873",
+  alignLeft: "alignLeft__31873",
+  horizontalPaginationItemContainer: "horizontalPaginationItemContainer__31873",
+  verticalPaginationItemContainer: "verticalPaginationItemContainer__31873 alignLeft__31873",
+  arrow: "arrow__31873",
+  arrowContainer: "arrowContainer__31873",
+  prevButtonContainer: "prevButtonContainer__31873 arrowContainer__31873",
+  nextButtonContainer: "nextButtonContainer__31873 arrowContainer__31873"
 }

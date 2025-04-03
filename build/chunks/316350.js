@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => _
+  Z: () => v
 }), n(47120), n(266796);
 var r, i, s = n(200651),
   a = n(192379),
@@ -15,7 +15,7 @@ var r, i, s = n(200651),
   p = n(402766),
   h = n(981631),
   f = n(388032),
-  b = n(832921);
+  b = n(824302);
 let x = {
     tension: 200,
     friction: 20
@@ -96,7 +96,7 @@ function N(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     withCardBody: t,
     isAnimatedTo: n,
@@ -110,9 +110,9 @@ function v(e) {
     className: h
   } = e, f = e => {
     null == i || i(e)
-  }, [j, v] = a.useState(0);
+  }, [j, _] = a.useState(0);
   return a.useLayoutEffect(() => {
-    n && v(1)
+    n && _(1)
   }, [n]), (0, s.jsx)(d.AMe, {
     from: {
       unlockedTranslateY: 50
@@ -155,7 +155,7 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   let {
     children: t,
     subscriptionCount: n,
@@ -167,7 +167,7 @@ function _(e) {
     withCardBody: u = !0,
     guildId: p,
     showHeaderLockStatus: x = !0
-  } = e, j = h.oCV[i.tier], N = a && n >= j, _ = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1, C = (e, t) => {
+  } = e, j = h.oCV[i.tier], N = a && n >= j, v = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1, C = (e, t) => {
     var n;
     let {
       Icon: r,
@@ -193,13 +193,13 @@ function _(e) {
           children: e.description
         })]
       })]
-    }, null === (n = e.title) || void 0 === n ? void 0 : n.toString())
+    }, null == (n = e.title) ? void 0 : n.toString())
   };
   return (0, s.jsxs)("div", {
     className: o()(b.tier, {
       [b.tierBottomMargin]: l
     }),
-    children: [(0, s.jsx)(v, {
+    children: [(0, s.jsx)(_, {
       subscriptionCount: n,
       tier: i,
       headerButton: c,
@@ -218,7 +218,7 @@ function _(e) {
         [b.tierBody]: u
       }),
       children: null != t ? t : (0, s.jsxs)(s.Fragment, {
-        children: [_ ? (0, s.jsx)("div", {
+        children: [v ? (0, s.jsx)("div", {
           className: b.previousPerks,
           children: f.NW.string(f.t.oKzyRU)
         }) : null, null != i.perks && (0, s.jsx)("div", {

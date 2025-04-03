@@ -5,15 +5,15 @@ i.d(t, {
 var s, n = i(200651),
   a = i(192379),
   l = i(120356),
-  o = i.n(l),
-  r = i(772848),
+  r = i.n(l),
+  o = i(772848),
   h = i(846519),
   d = i(481060),
   c = i(981631),
   m = i(388032),
-  u = i(820550),
-  g = i(913208),
-  p = i(685786);
+  u = i(944084),
+  g = i(893354),
+  p = i(20493);
 
 function f(e, t, i) {
   return t in e ? Object.defineProperty(e, t, {
@@ -105,35 +105,35 @@ class C extends(s = a.PureComponent) {
     })
   }
   render() {
-    let e;
-    let {
-      resent: t
-    } = this.state, {
-      email: i,
-      canResend: s,
-      transitionState: a
-    } = this.props;
+    let e, {
+        resent: t
+      } = this.state,
+      {
+        email: i,
+        canResend: s,
+        transitionState: a
+      } = this.props;
     return e = t && null != i ? m.NW.format(m.t.JqLgQE, {
       email: i
     }) : s ? m.NW.string(m.t.tSXg8P) : m.NW.string(m.t.KW5DEh), (0, n.jsxs)(d.Y0X, {
       transitionState: a,
       "aria-labelledby": this._headerId,
-      className: o()(u.emailVerificationModal, g.vertical, g.alignCenter, g.justifyCenter, p.marginTop60),
+      className: r()(u.emailVerificationModal, g.vertical, g.alignCenter, g.justifyCenter, p.marginTop60),
       children: [(0, n.jsx)("div", {
         className: u.animationContainer,
         ref: this.setLottieRef
       }), (0, n.jsx)("div", {
         id: this._headerId,
-        className: o()(u.title, p.marginBottom8),
+        className: r()(u.title, p.marginBottom8),
         children: m.NW.string(m.t["1MPz29"])
       }), (0, n.jsx)("div", {
-        className: o()(u.body, p.marginBottom20),
+        className: r()(u.body, p.marginBottom20),
         children: e
       }), s ? this.renderActions() : this.renderInputs()]
     })
   }
   constructor(...e) {
-    super(...e), f(this, "_lottieRef", void 0), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, r.Z)()), f(this, "state", {
+    super(...e), f(this, "_lottieRef", void 0), f(this, "_animItem", null), f(this, "_timeout", new h.V7), f(this, "_headerId", (0, o.Z)()), f(this, "state", {
       resent: !1,
       shouldClose: !1,
       email: "",

@@ -25,9 +25,9 @@ var l = n(192379),
   g = n(970184),
   N = n(471073),
   h = n(892902),
-  v = n(981631),
-  O = n(388032);
-let A = e => {
+  O = n(981631),
+  A = n(388032);
+let v = e => {
   let t = !0;
   return e.forEach(e => {
     e() || (t = !1)
@@ -37,7 +37,7 @@ let A = e => {
 function L(e) {
   var t;
   let n = (0, g.CJ)(),
-    l = null == n ? void 0 : null === (t = n.modal) || void 0 === t ? void 0 : t.components[0];
+    l = null == n || null == (t = n.modal) ? void 0 : t.components[0];
   return (null == l ? void 0 : l.type) === d.re.ACTION_ROW && l.components[0].id === e
 }
 
@@ -65,7 +65,7 @@ function Z(e, t) {
     customId: i,
     components: E
   } = e, m = (0, s.Z)(), [S, f] = l.useState(null), [g, h] = l.useState(null), L = (0, a.e7)([N.Z], () => N.Z.getModalState(g), [g]), Z = (0, c.Z)(() => new Set), y = l.useCallback(() => {
-    f(null), h(null), A(Z) && h(function(e, t) {
+    f(null), h(null), v(Z) && h(function(e, t) {
       let n = _.default.fromTimestamp(Date.now()),
         l = e.channelId,
         i = p.Z.getChannel(l);
@@ -79,7 +79,7 @@ function Z(e, t) {
       });
       let o = () => {
         null != t && t.aborted || r.tn.post({
-          url: v.ANM.INTERACTIONS,
+          url: O.ANM.INTERACTIONS,
           body: {
             type: d.B8.MODAL_SUBMIT,
             application_id: e.application.id,
@@ -106,7 +106,7 @@ function Z(e, t) {
     L === N.i.SUCCEEDED && (o.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), t()), L === N.i.ERRORED && f(O.NW.string(O.t.uJgdEh))
+    }), t()), L === N.i.ERRORED && f(A.NW.string(A.t.uJgdEh))
   }, [g, L, t, i]);
   let {
     applicationIconURL: b,

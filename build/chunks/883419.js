@@ -18,11 +18,11 @@ var r = n(200651),
   h = n(45572),
   g = n(51499),
   x = n(678334),
-  v = n(456251),
-  N = n(614277),
+  N = n(456251),
+  v = n(614277),
   j = n(698708),
   y = n(388032),
-  C = n(374945);
+  C = n(856461);
 
 function O(e) {
   var t, n;
@@ -63,7 +63,7 @@ function O(e) {
     ee = null == Q ? void 0 : Q.guild_id,
     et = (0, o.e7)([f.Z], () => f.Z.getGuild(ee), [ee]),
     [en, er] = i.useState(null),
-    ei = (0, m.KW)(null !== (t = null == z ? void 0 : z.flags) && void 0 !== t ? t : 0);
+    ei = (0, m.KW)(null != (t = null == z ? void 0 : z.flags) ? t : 0);
   i.useEffect(() => {
     null != F && null != X.current && X.current.scrollIntoView({
       behavior: "smooth"
@@ -73,10 +73,10 @@ function O(e) {
       A(e), S(b.h8.CONFIRM)
     }, [S, A]),
     ea = i.useRef(null);
-  return q === h.A.PURCHASING ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)(r.Fragment, {
+  return q === h.A.PURCHASING ? (0, r.jsx)(N.Z, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(g.Z, {
       className: C.breadcrumbs
-    }), (0, r.jsxs)(N.C3, {
+    }), (0, r.jsxs)(v.C3, {
       children: [(0, r.jsx)(j.Z, {}), ei && (0, r.jsxs)("div", {
         className: C.userSubscriptionDetailsContainer,
         children: [(0, r.jsx)(s.Text, {
@@ -103,7 +103,7 @@ function O(e) {
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             lineClamp: 1,
-            children: null !== (n = null == et ? void 0 : et.name) && void 0 !== n ? n : y.NW.string(y.t.dtwqPT)
+            children: null != (n = null == et ? void 0 : et.name) ? n : y.NW.string(y.t.dtwqPT)
           })]
         })]
       }), null == Z ? (0, r.jsx)(u.Z, {
@@ -145,7 +145,7 @@ function O(e) {
         purchaseState: q,
         handleClose: w
       })]
-    }), (0, r.jsx)(N.O3, {
+    }), (0, r.jsx)(v.O3, {
       children: (0, r.jsx)(x.Z, {
         premiumSubscription: null != Z ? Z : null,
         setPurchaseState: Y,

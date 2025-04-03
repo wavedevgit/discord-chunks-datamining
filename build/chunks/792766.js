@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => b,
   y: () => _
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(481060),
+  l = n.n(a),
+  o = n(481060),
   s = n(528144),
   c = n(118012),
   u = n(686546),
@@ -15,26 +15,26 @@ var r = n(200651),
   p = n(601964),
   m = n(598077),
   f = n(388032),
-  h = n(623751);
+  h = n(515230);
 let g = e => {
     var t;
     let {
       speaker: n,
       guildId: i,
       isEmbed: a
-    } = e, o = new m.Z(n.user);
+    } = e, l = new m.Z(n.user);
     return (0, r.jsxs)("div", {
       className: h.speaker,
-      children: [(0, r.jsx)(l.qEK, {
-        src: o.getAvatarURL(i, a ? 16 : 24),
-        size: a ? l.EFr.SIZE_16 : l.EFr.SIZE_24,
+      children: [(0, r.jsx)(o.qEK, {
+        src: l.getAvatarURL(i, a ? 16 : 24),
+        size: a ? o.EFr.SIZE_16 : o.EFr.SIZE_24,
         "aria-label": "".concat(n.nick, "-avatar"),
         className: a ? null : h.avatar
       }), (0, r.jsx)(c.Z, {
         size: a ? c.Z.Sizes.SIZE_12 : c.Z.Sizes.SIZE_14,
         color: c.Z.Colors.HEADER_SECONDARY,
         className: h.username,
-        children: null !== (t = n.nick) && void 0 !== t ? t : o.username
+        children: null != (t = n.nick) ? t : l.username
       })]
     })
   },
@@ -47,7 +47,7 @@ let g = e => {
     let i = new p.ZP(t),
       {
         name: a,
-        description: o
+        description: l
       } = i;
     return (0, r.jsxs)("div", {
       children: [(0, r.jsx)(s.Z, {
@@ -68,14 +68,14 @@ let g = e => {
           })
         }), (0, r.jsxs)("div", {
           className: h.guildInfo,
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(o.X6q, {
             variant: "heading-sm/semibold",
             children: a
           }), (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
               className: h.dot
-            }), null != n && n > 0 ? (0, r.jsx)(l.Text, {
+            }), null != n && n > 0 ? (0, r.jsx)(o.Text, {
               variant: "text-sm/normal",
               children: f.NW.format(f.t["LC+S+v"], {
                 membersOnline: n
@@ -83,11 +83,11 @@ let g = e => {
             }) : null]
           })]
         })]
-      }), null != o && "" !== o && (0, r.jsx)(l.Text, {
+      }), null != l && "" !== l && (0, r.jsx)(o.Text, {
         color: "header-secondary",
         className: h.alignStart,
         variant: "text-sm/normal",
-        children: o
+        children: l
       })]
     })
   },
@@ -99,45 +99,45 @@ let g = e => {
       isCard: m = !1,
       isEmbed: _ = !1,
       onClick: b
-    } = e, v = i.useMemo(() => null == a ? null : a instanceof p.ZP ? a : new p.ZP(a), [a]);
-    if (null == n || null == v) return null;
+    } = e, x = i.useMemo(() => null == a ? null : a instanceof p.ZP ? a : new p.ZP(a), [a]);
+    if (null == n || null == x) return null;
     let {
-      topic: x,
-      speaker_count: y,
-      participant_count: E
-    } = n, O = null !== (t = n.members) && void 0 !== t ? t : [], N = _ ? O.slice(0, 3) : O, j = y - N.length;
+      topic: y,
+      speaker_count: E,
+      participant_count: v
+    } = n, O = null != (t = n.members) ? t : [], N = _ ? O.slice(0, 3) : O, j = E - N.length;
     return _ && (j += O.length - N.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
           className: h.flex,
-          children: [(0, r.jsx)(l.ewx, {
+          children: [(0, r.jsx)(o.ewx, {
             size: "custom",
             color: "currentColor",
             height: 24,
             width: 24,
             className: h.live
-          }), (0, r.jsx)(l.X6q, {
+          }), (0, r.jsx)(o.X6q, {
             variant: "eyebrow",
-            className: o()(h.__invalid_label, h.live),
+            className: l()(h.__invalid_label, h.live),
             children: f.NW.string(f.t["X2K3//"])
           })]
         }), (0, r.jsxs)("div", {
           className: h.background,
-          children: [(0, r.jsx)(l.VWR, {
+          children: [(0, r.jsx)(o.VWR, {
             size: "custom",
             color: "currentColor",
             height: 16,
             width: 16,
             className: h.listeners
-          }), (0, r.jsx)(l.X6q, {
-            className: o()(h.__invalid_label, h.listeners),
+          }), (0, r.jsx)(o.X6q, {
+            className: l()(h.__invalid_label, h.listeners),
             variant: "heading-sm/semibold",
-            children: E
+            children: v
           })]
         })]
       }), _ && (0, r.jsxs)("div", {
-        className: o()(h.guild, {
+        className: l()(h.guild, {
           [h.embed]: _
         }),
         children: [(0, r.jsx)(u.ZP, {
@@ -145,39 +145,39 @@ let g = e => {
           width: 20,
           height: 20,
           children: (0, r.jsx)(d.Z, {
-            guild: v,
+            guild: x,
             size: d.Z.Sizes.MINI,
             active: !0
           })
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           color: "header-secondary",
           className: h.__invalid_label,
           variant: "text-sm/normal",
-          children: v.name
+          children: x.name
         })]
       }), (0, r.jsx)(s.Z, {
         size: m || _ ? s.Z.Sizes.SIZE_16 : s.Z.Sizes.SIZE_20,
-        className: o()(h.header, {
+        className: l()(h.header, {
           [h.embed]: _
         }),
-        children: x
+        children: y
       }), (0, r.jsxs)("div", {
-        className: o()(h.members, {
+        className: l()(h.members, {
           [h.embed]: _
         }),
         children: [N.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
           children: [N.map(e => (0, r.jsx)(g, {
             speaker: e,
-            guildId: v.id,
+            guildId: x.id,
             isEmbed: _
           }, e.user.id)), j > 0 ? (0, r.jsxs)("div", {
             className: h.speaker,
             children: [(0, r.jsx)("div", {
-              className: o()(h.icon, {
+              className: l()(h.icon, {
                 [h.embed]: _
               }),
-              children: (0, r.jsx)(l.S6n, {
+              children: (0, r.jsx)(o.S6n, {
                 size: "custom",
                 color: "currentColor",
                 height: _ ? 12 : 14,
@@ -191,8 +191,8 @@ let g = e => {
               })]
             })]
           }) : null]
-        }), _ && (0, r.jsx)(l.zxk, {
-          color: l.zxk.Colors.GREEN,
+        }), _ && (0, r.jsx)(o.zxk, {
+          color: o.zxk.Colors.GREEN,
           onClick: b,
           className: h.joinButton,
           children: f.NW.string(f.t.ZYO5OD)

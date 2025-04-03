@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(214715),
   m = n(308083),
   g = n(388032),
-  p = n(395619);
+  p = n(579590);
 
 function h(e) {
   let {
@@ -47,8 +47,8 @@ function f(e) {
     onTraitClick: x
   } = e, j = (0, l.e7)([c.Z], () => c.Z.getGuild(n)), {
     interests: N,
-    description: v,
-    playstyle: _,
+    description: _,
+    playstyle: v,
     wildcardDescriptors: C,
     brandPrimaryColor: O
   } = s, y = (0, o.dQu)(o.TVs.colors.TEXT_BRAND), I = Array.from(N), E = i.useMemo(() => null != u ? new Set(u) : new Set, [u]);
@@ -76,7 +76,7 @@ function f(e) {
           variant: "text-xs/normal",
           color: "text-secondary",
           className: p.clanInfoItem,
-          children: null !== (t = (0, m.mv)(_)) && void 0 !== t ? t : g.NW.string(g.t.JijC4O)
+          children: null != (t = (0, m.mv)(v)) ? t : g.NW.string(g.t.JijC4O)
         }), null != j && (0, r.jsx)(d.c, {
           wildcardDescriptors: C,
           primaryColor: null != O ? O : y.hex()
@@ -85,7 +85,7 @@ function f(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         className: p.descriptionText,
-        children: (null == v ? void 0 : v.length) > 0 ? v : g.NW.string(g.t["/pfXKi"])
+        children: (null == _ ? void 0 : _.length) > 0 ? _ : g.NW.string(g.t["/pfXKi"])
       })]
     }), (0, r.jsxs)("div", {
       className: a()(p.tagsContainer, b ? p.traitsBorderMask : void 0),

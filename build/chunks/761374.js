@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => C
 }), n(47120), n(230036);
@@ -16,17 +16,17 @@ var i = n(200651),
   f = n(314897),
   m = n(592125),
   g = n(355863),
-  v = n(944486),
-  y = n(804570),
-  O = n(350663),
+  y = n(944486),
+  O = n(804570),
+  v = n(350663),
   b = n(610394),
   _ = n(340101),
   E = n(388032),
-  x = n(841748);
+  x = n(832985);
 let I = [];
 
 function j(e, t, n, i) {
-  let r = (i - 1) * O.z;
+  let r = (i - 1) * v.z;
   return e === _.C5.HORIZONTAL ? Math.min(Math.max((t - r) / i, 256), Math.max(16 * n / 9, 256)) : Math.min(Math.max(t, 256), Math.max((n - r) / i * 16 / 9, 256))
 }
 
@@ -49,14 +49,14 @@ function C(e) {
   } = {
     width: "number" == typeof n.width ? n.width : 256,
     height: "number" == typeof n.height ? n.height : 144
-  }, W = (0, o.e7)([v.Z], () => v.Z.getVoiceChannelId()), {
+  }, W = (0, o.e7)([y.Z], () => y.Z.getVoiceChannelId()), {
     width: M,
     height: V,
     ref: z
   } = (0, c.Z)(), U = (0, o.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
-    return !!(0, _.ZL)(n) && (null === (e = n.meta.showAllStreams) || void 0 === e || e)
+    return !!(0, _.ZL)(n) && (null == (e = n.meta.showAllStreams) || e)
   }, [t]), G = !w, F = (0, o.e7)([m.Z], () => m.Z.getChannel(W)), B = (0, o.e7)([f.default], () => f.default.getId()), H = T && G || k && w, Y = !T && G || !k && w, {
     participantsVersion: Q,
     activeStreams: K,
@@ -97,7 +97,7 @@ function C(e) {
           case _.C5.HORIZONTAL:
             return r
         }
-        let l = (9 * o / 16 + O.z) * n - O.z;
+        let l = (9 * o / 16 + v.z) * n - v.z;
         return e > 16 * t / 9 ? r : l <= t ? o : 9 * r / 16 <= t ? r : o
       }(n, i, t, o),
       a = j(_.C5.VERTICAL, n, i, t),
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, u.ZP)(() => () => {
     s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), (q || !P) && C) ? null : q && !C ? D ? C ? null : (0, i.jsx)(y.E, {
+  }), (q || !P) && C) ? null : q && !C ? D ? C ? null : (0, i.jsx)(O.E, {
     emptyText: E.NW.string(E.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0
@@ -230,7 +230,7 @@ function C(e) {
       opacity: Z
     },
     ref: z,
-    children: (0, i.jsx)(O.Z, {
+    children: (0, i.jsx)(v.Z, {
       widgetId: t,
       tileWidth: ee,
       locked: C,

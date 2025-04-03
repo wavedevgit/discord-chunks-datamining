@@ -1,15 +1,15 @@
 /** Chunk was on 85342 **/
 r.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var n = r(200651);
 r(192379);
 var i = r(325767);
 
-function o(e) {
+function s(e) {
   var t, r, {
-      width: o = 16,
-      height: s = 16,
+      width: s = 16,
+      height: o = 16,
       color: a = "currentColor",
       foreground: l
     } = e,
@@ -18,13 +18,13 @@ function o(e) {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
@@ -46,8 +46,8 @@ function o(e) {
     }
     return e
   }({}, (0, i.Z)(c)), r = r = {
-    width: o,
-    height: s,
+    width: s,
+    height: o,
     viewBox: "0 0 24 24",
     children: [(0, n.jsx)("g", {
       clipPath: "url(#clip0_3283_145261)",

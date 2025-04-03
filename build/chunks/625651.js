@@ -13,9 +13,9 @@ var n = r(200651),
   d = r(17622),
   m = r(279604),
   b = r(535396),
-  p = r(296260),
+  p = r(680278),
   f = r(388032),
-  x = r(574583);
+  x = r(340114);
 
 function j(e) {
   var t, r, {
@@ -42,22 +42,22 @@ function j(e) {
     error: _,
     isLoading: h
   } = (0, m.ZP)(j, O), {
-    onClose: v
-  } = k, N = o.useCallback(e => {
+    onClose: N
+  } = k, g = o.useCallback(e => {
     I(e).then(() => {
-      null == v || v()
+      null == N || N()
     })
-  }, [v, I]), g = (0, u.Z)(O), C = function(e, t) {
+  }, [N, I]), v = (0, u.Z)(O), C = function(e, t) {
     let r = (0, a.e7)([i.Z], () => i.Z.getMemberCount(e)),
       n = (0, s.Z)(e),
       c = (0, a.e7)([l.Z], () => {
         if (t.skuId !== b.If || null == n) return 0;
         Object.values(l.Z.getRoles(e)).filter(e => {
           var t;
-          return (null === (t = e.colorStrings) || void 0 === t ? void 0 : t.secondaryColor) != null
+          return (null == (t = e.colorStrings) ? void 0 : t.secondaryColor) != null
         }).reduce((e, t) => {
           var r;
-          return e + (null !== (r = n[t.id]) && void 0 !== r ? r : 0)
+          return e + (null != (r = n[t.id]) ? r : 0)
         }, 0)
       }, [e, t.skuId, n]),
       u = o.useMemo(() => {
@@ -126,7 +126,7 @@ function j(e) {
           case b.Us.PERK:
             return (0, n.jsx)("img", {
               alt: "",
-              src: g,
+              src: v,
               className: x.exampleImage
             })
         }
@@ -152,7 +152,7 @@ function j(e) {
         submitting: h,
         color: c.Ttl.RED,
         className: x.button,
-        onClick: N,
+        onClick: g,
         children: f.NW.string(p.Z.PYPdl5)
       }), (0, n.jsx)(c.zxk, {
         color: c.Ttl.PRIMARY,

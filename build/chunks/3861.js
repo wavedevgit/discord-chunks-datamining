@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ var r = n(200651),
   b = n(236564),
   _ = n(45430),
   C = n(981631),
-  v = n(354459),
-  y = n(684457);
-let x = (0, a.Z)(e => {
+  y = n(354459),
+  x = n(363987);
+let v = (0, a.Z)(e => {
   let {
     participants: t,
     filteredParticipants: n,
     selectedParticipant: l,
     participantsVersion: a,
-    layout: x,
+    layout: v,
     onSelectParticipant: j,
     onContextMenuParticipant: O,
     onFullscreenParticipant: E,
@@ -49,7 +49,7 @@ let x = (0, a.Z)(e => {
     p.S.dispatch(C.CkL.REMEASURE_TARGET)
   }, [A, w, D.width, D.height]);
   let W = (0, d.Q3)("ChannelCallContent"),
-    U = i.useMemo(() => n.filter(e => e.type !== v.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
+    U = i.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
   return (null == L ? void 0 : L.channelId) === N.id ? (0, r.jsx)(f.Z, {
     height: w
   }) : (null == N ? void 0 : N.isGuildVocal()) && !S ? (0, r.jsx)(h.Z, {
@@ -59,22 +59,22 @@ let x = (0, a.Z)(e => {
   }) : M === C.WtW.VOICE ? (0, r.jsx)(c.Z, {
     guildId: N.guild_id,
     width: A,
-    className: y.voiceCallWrapper,
+    className: x.voiceCallWrapper,
     participants: t,
     onContextMenu: O
   }) : (n = S ? n : t, null == l) ? 0 === n.length ? W ? (0, r.jsx)(_.Z, {
     channelId: N.id
   }) : (0, r.jsx)(b.Z, {
-    className: o()(y.videoGrid, y.hiddenParticipants),
+    className: o()(x.videoGrid, x.hiddenParticipants),
     channelId: N.id,
     width: A
   }) : (0, r.jsx)(u.Z, {
-    className: y.videoGridWrapper,
+    className: x.videoGridWrapper,
     justify: u.Z.Justify.CENTER,
     align: u.Z.Align.CENTER,
     children: (0, r.jsx)(m.Z, {
       channel: N,
-      className: y.videoGrid,
+      className: x.videoGrid,
       participants: U,
       totalNumberOfParticipants: t.length,
       onClick: j,
@@ -95,7 +95,7 @@ let x = (0, a.Z)(e => {
     idle: R,
     height: w,
     width: A,
-    layout: x,
+    layout: v,
     inCall: S,
     channel: N,
     showParticipants: Z

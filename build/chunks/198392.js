@@ -12,7 +12,7 @@ var n = r(8235),
 function s(t) {
   if ("file" == t.kind) return t.getAsFile()
 }
-var c = function() {
+t.exports = function() {
   function t(t) {
     this.data = t, this.types = t.types ? i(t.types) : []
   }
@@ -27,7 +27,7 @@ var c = function() {
   }, e.getHTML = function() {
     if (this.data.getData) {
       if (!this.types.length) return this.data.getData("Text");
-      if (-1 != this.types.indexOf("text/html")) return this.data.getData("text/html")
+      else if (-1 != this.types.indexOf("text/html")) return this.data.getData("text/html")
     }
   }, e.isLink = function() {
     return this.types.some(function(t) {
@@ -51,5 +51,4 @@ var c = function() {
   }, e.hasFiles = function() {
     return this.getFiles().length > 0
   }, t
-}();
-t.exports = c
+}()

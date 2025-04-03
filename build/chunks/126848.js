@@ -1,7 +1,7 @@
 /** Chunk was on 9710 **/
 "use strict";
 s.d(t, {
-  Z: () => C
+  Z: () => v
 });
 var r = s(200651);
 s(192379);
@@ -23,13 +23,13 @@ var n = s(120356),
   h = s(170671),
   j = s(474936),
   y = s(388032),
-  v = s(430398);
+  C = s(374594);
 
-function C(e) {
+function v(e) {
   let t, {
       decoration: s,
       label: n,
-      isSelected: C
+      isSelected: v
     } = e,
     P = (0, d.N)(),
     S = (0, u.Ng)(),
@@ -44,27 +44,27 @@ function C(e) {
     copy: y.NW.string(y.t.OS9KPj),
     showStars: !1
   }) : w ? (0, r.jsx)(p.Z, {}) : null != S ? (0, r.jsx)(g.GN, {
-    isTabSelected: C,
+    isTabSelected: v,
     userDiscount: S,
     includesAmountOff: !1
   }) : null == P || E ? null != s ? s : _ ? (0, r.jsx)(f.k, {
     entryPoint: f.U.SettingsMenu
   }) : (0, r.jsx)(h.Z, {
-    isSelected: C
+    isSelected: v
   }) : (0, r.jsx)(g.$H, {
-    isTabSelected: C,
+    isTabSelected: v,
     trialOffer: P
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: i()(v.premiumLabel, {
-        [v.selected]: (C || _) && !w
+      className: i()(C.premiumLabel, {
+        [C.selected]: (v || _) && !w
       }),
       children: [n, t]
     }), (0, r.jsx)("div", {
-      className: i()(v.background, {
-        [v.auPromo]: _ && !C,
-        [v.auPromoSelected]: _ && C,
-        [v.selectedBackground]: !_ && !w && C
+      className: i()(C.background, {
+        [C.auPromo]: _ && !v,
+        [C.auPromoSelected]: _ && v,
+        [C.selectedBackground]: !_ && !w && v
       })
     })]
   })

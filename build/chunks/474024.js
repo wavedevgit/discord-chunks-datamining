@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -11,12 +11,12 @@ var r = n(200651),
   o = n(442837),
   c = n(481060),
   d = n(314852),
-  u = n(405222),
+  u = n(330705),
   m = n(323220),
   g = n(434404),
   p = n(981631),
   h = n(388032),
-  f = n(404472);
+  f = n(951767);
 
 function b(e) {
   var t;
@@ -25,16 +25,16 @@ function b(e) {
     canManageGuild: s
   } = e, b = n.id, x = l.Y.VISIBLE.has(n.visibility), j = (0, o.e7)([d.Z], () => {
     var e;
-    return (null === (e = d.Z.getProfile(b)) || void 0 === e ? void 0 : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
+    return (null == (e = d.Z.getProfile(b)) ? void 0 : e.visibility) === u.k.PUBLIC_WITH_RECRUITMENT
   }, [b]), N = i.useCallback(() => {
     x ? g.Z.updateGuildProfile(b, {
       visibility: u.k.RESTRICTED
     }) : g.Z.updateGuildProfile(b, {
       visibility: j ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
     })
-  }, [b, j, x]), v = i.useCallback(() => {
+  }, [b, j, x]), _ = i.useCallback(() => {
     g.Z.setSection(p.pNK.ACCESS, p.KsC.ACCESS_DISCOVERABLE)
-  }, []), _ = null === (t = n.features) || void 0 === t ? void 0 : t.includes(p.oNc.DISCOVERABLE);
+  }, []), v = null == (t = n.features) ? void 0 : t.includes(p.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
     className: f.twoColumnContainer,
     children: [(0, r.jsxs)("div", {
@@ -43,18 +43,18 @@ function b(e) {
         onChange: N,
         value: !x,
         hideBorder: !0,
-        disabled: _ || !s,
+        disabled: v || !s,
         children: h.NW.string(h.t.fjHWen)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
         children: h.NW.string(h.t.J1YOV1)
-      }), _ && (0, r.jsx)(c.Text, {
+      }), v && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: h.NW.format(h.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(c.eee, {
-            onClick: v,
+            onClick: _,
             children: e
           }, t)
         })

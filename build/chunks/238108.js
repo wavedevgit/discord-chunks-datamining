@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => i
 }), n(47120);
@@ -7,10 +7,10 @@ let i = function() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 5,
     [t, n] = r.useState(!1),
     [i, s] = r.useState(0),
-    [a, o] = r.useState(!1),
-    [l, c] = r.useState(0);
+    [a, l] = r.useState(!1),
+    [o, c] = r.useState(0);
   return r.useEffect(() => {
-    i >= e && (o(!0), c(Math.floor(i / e)));
+    i >= e && (l(!0), c(Math.floor(i / e)));
     let t = setTimeout(() => {
       s(0)
     }, 1e3);
@@ -18,7 +18,7 @@ let i = function() {
   }, [i, e]), r.useEffect(() => {
     if (!t) {
       let e = setTimeout(() => {
-        o(!1), c(0)
+        l(!1), c(0)
       }, 1e3);
       return () => clearTimeout(e)
     }
@@ -31,6 +31,6 @@ let i = function() {
       n(!1)
     },
     isEasterEggTriggered: a,
-    easterEggLevel: l
+    easterEggLevel: o
   }
 }

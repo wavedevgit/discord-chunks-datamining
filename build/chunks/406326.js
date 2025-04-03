@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => d
 });
@@ -9,7 +9,7 @@ var i = n(481060),
   o = n(63063),
   a = n(981631),
   s = n(388032),
-  c = n(948679);
+  c = n(107242);
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,8 +57,7 @@ function d(e) {
 }
 
 function p(e) {
-  let t;
-  let {
+  let t, {
     isSearching: n,
     isIndexing: l,
     documentsIndexed: o
@@ -111,16 +110,16 @@ function h(e) {
     color: "header-secondary",
     children: s.NW.string(s.t.uixzLS)
   });
-  if (n) return (0, r.jsx)(i.Text, {
-    variant: d,
-    color: "text-muted",
-    children: (0, r.jsx)(i.eee, {
-      className: c.helpdeskLink,
-      href: o.Z.getArticleURL(a.BhN.SEARCH_INDEXING),
-      children: s.NW.string(s.t["G3EA+/"])
-    })
-  });
   {
+    if (n) return (0, r.jsx)(i.Text, {
+      variant: d,
+      color: "text-muted",
+      children: (0, r.jsx)(i.eee, {
+        className: c.helpdeskLink,
+        href: o.Z.getArticleURL(a.BhN.SEARCH_INDEXING),
+        children: s.NW.string(s.t["G3EA+/"])
+      })
+    });
     let e = u.toLocaleString();
     return (0, r.jsx)(i.Text, {
       variant: d,

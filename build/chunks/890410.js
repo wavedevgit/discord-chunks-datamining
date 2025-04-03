@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => m
 });
@@ -6,12 +6,12 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(367814),
-  l = n(739566),
+  l = n(367814),
+  o = n(739566),
   s = n(492593),
   c = n(930282),
   u = n(464891),
-  d = n(421927);
+  d = n(115997);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -41,9 +41,9 @@ function m(e) {
       compact: g,
       popoutProps: _,
       hideTimestamp: b = !1,
-      withFooter: v = !1
+      withFooter: x = !1
     } = e,
-    x = function(e, t) {
+    y = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -58,15 +58,15 @@ function m(e) {
       }
       return i
     }(e, ["message", "channel", "content", "className", "compact", "popoutProps", "hideTimestamp", "withFooter"]);
-  let y = (0, l.ZP)(i),
-    E = (0, o.Z)(y);
+  let E = (0, o.ZP)(i),
+    v = (0, l.Z)(E);
   return (0, r.jsx)("div", {
     className: a()({
-      [d.withFooter]: v
+      [d.withFooter]: x
     }, d.embedCard, {
       [d.compact]: g
     }, h),
-    children: (0, r.jsx)(s.Z, (t = p({}, x), n = n = {
+    children: (0, r.jsx)(s.Z, (t = p({}, y), n = n = {
       className: a()(d.messageContainer, {
         [d.compact]: g
       }),
@@ -80,7 +80,7 @@ function m(e) {
       childrenHeader: (0, r.jsx)(u.ZP, p({
         message: i,
         channel: m,
-        author: y,
+        author: E,
         guildId: null == m ? void 0 : m.guild_id,
         compact: g,
         hideTimestamp: b,
@@ -90,7 +90,7 @@ function m(e) {
       }, null != _ ? _ : {})),
       compact: g,
       guildId: null == m ? void 0 : m.guild_id,
-      authorHasGradientRole: E
+      authorHasGradientRole: v
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

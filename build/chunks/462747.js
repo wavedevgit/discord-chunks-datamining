@@ -1,4 +1,4 @@
-/** Chunk was on 5613 **/
+/** Chunk was on 70657 **/
 t.d(n, {
   Z: () => O
 });
@@ -16,11 +16,11 @@ var r = t(120356),
   p = t(314897),
   g = t(158776),
   m = t(885110),
-  v = t(594174),
-  I = t(315416),
-  f = t(765305),
+  I = t(594174),
+  f = t(315416),
+  v = t(765305),
   N = t(388032),
-  h = t(74100);
+  h = t(960689);
 
 function E(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -127,7 +127,7 @@ function L(e) {
     eventUser: n,
     guildId: t,
     onContextMenu: r
-  } = e, o = (0, a.e7)([v.default], () => v.default.getUser(n.user_id)), c = (0, a.e7)([m.Z, g.Z, p.default], () => n.user_id === p.default.getId() ? m.Z.getStatus() : g.Z.getStatus(n.user_id, t), [n.user_id, t]);
+  } = e, o = (0, a.e7)([I.default], () => I.default.getUser(n.user_id)), c = (0, a.e7)([m.Z, g.Z, p.default], () => n.user_id === p.default.getId() ? m.Z.getStatus() : g.Z.getStatus(n.user_id, t), [n.user_id, t]);
   return null == o ? null : (0, i.jsx)(d.yRy, {
     preload: () => (0, u.Z)(o.id, o.getAvatarURL(t, 80), {
       guildId: t
@@ -159,7 +159,7 @@ function L(e) {
           user: o,
           className: h.listName,
           discriminatorClass: h.listDiscriminator,
-          nick: null === (u = n.member) || void 0 === u ? void 0 : u.nick
+          nick: null == (u = n.member) ? void 0 : u.nick
         })]
       }))
     }
@@ -218,7 +218,7 @@ function O(e) {
     loading: a,
     error: s,
     containerHeight: c
-  } = e, u = (0, I.Z)(n.guild_id, n.id, r);
+  } = e, u = (0, f.Z)(n.guild_id, n.id, r);
   if (a && 0 === l.length) return (0, i.jsx)(D, {
     height: c,
     children: (0, i.jsx)(d.$jN, {
@@ -231,7 +231,7 @@ function O(e) {
     children: (0, i.jsx)(T, {})
   });
   let _ = 0;
-  return l.length >= f.rC && u > f.rC && (_ = Math.max(u - l.length, 0)), 0 === l.length ? (0, i.jsx)(D, {
+  return l.length >= v.rC && u > v.rC && (_ = Math.max(u - l.length, 0)), 0 === l.length ? (0, i.jsx)(D, {
     height: c,
     children: (0, i.jsx)(x, {})
   }) : (0, i.jsx)(S, {
@@ -242,7 +242,7 @@ function O(e) {
         (0, o.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([t.e("79695"), t.e("69220"), t.e("57673")]).then(t.bind(t, 881351));
+          } = await Promise.all([t.e("79695"), t.e("69220"), t.e("70686")]).then(t.bind(t, 881351));
           return t => (0, i.jsx)(e, C(E({}, t), {
             user: n
           }))

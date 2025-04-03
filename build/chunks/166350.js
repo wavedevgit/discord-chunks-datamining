@@ -1,15 +1,15 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  NR: () => o,
+  NR: () => a,
   Ob: () => s,
-  ZI: () => a,
+  ZI: () => o,
   m1: () => c,
   uc: () => i
 });
 var r = n(987170),
   l = n(987338);
-let o = (0, r.Z)({
+let a = (0, r.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_vanilla",
     label: "CTP collectibles shop open - A/A test - Vanilla",
@@ -25,7 +25,7 @@ let o = (0, r.Z)({
       }
     }]
   }),
-  a = (0, r.Z)({
+  o = (0, r.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_filters",
     label: "CTP collectibles shop open - A/A test - Filters",

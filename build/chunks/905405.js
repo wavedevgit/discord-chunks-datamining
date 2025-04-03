@@ -13,5 +13,5 @@ let i = () => {
   } = (0, l.g)();
   return !!(0, r.Xo)({
     location: "use-should-filter-keywords"
-  }) && null !== (e = t || n || i) && void 0 !== e && e
+  }) && null != (e = t || n || i) && e
 }

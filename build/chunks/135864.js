@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 });
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(636977),
+  a = n.n(l),
+  o = n(636977),
   s = n(481060),
   c = n(456100),
   u = n(31569),
@@ -20,9 +20,9 @@ var r = n(200651),
   _ = n(49898),
   E = n(46140),
   O = n(388032),
-  N = n(93377);
+  N = n(444657);
 
-function v(e) {
+function y(e) {
   let {
     tab: t
   } = e, {
@@ -48,16 +48,16 @@ function v(e) {
           color: "currentColor"
         })
     }
-  })(t, n), [t, n]), v = i.useMemo(() => (0, m.s)(t), [t]), y = l === t, I = i.useCallback(() => {
+  })(t, n), [t, n]), y = i.useMemo(() => (0, m.s)(t), [t]), I = l === t, v = i.useCallback(() => {
     switch (t) {
       case _.GlobalDiscoveryTab.QUESTS:
-        return y && f.Z.resetState(), (0, b.transitionToGlobalDiscovery)({
+        return I && f.Z.resetState(), (0, b.transitionToGlobalDiscovery)({
           tab: _.GlobalDiscoveryTab.QUESTS,
           location: E.dr.DISCOVERY_SIDEBAR,
-          questContent: a.j.DISCOVERY_SIDEBAR
+          questContent: o.j.DISCOVERY_SIDEBAR
         });
       case _.GlobalDiscoveryTab.APPS:
-        if (!y) return (0, b.transitionToGlobalDiscovery)({
+        if (!I) return (0, b.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
@@ -71,7 +71,7 @@ function v(e) {
         });
         return;
       case _.GlobalDiscoveryTab.SERVERS:
-        if (!y) return (0, b.transitionToGlobalDiscovery)({
+        if (!I) return (0, b.transitionToGlobalDiscovery)({
           tab: t
         });
         p.Z.resetState(), h.Z.resetState();
@@ -81,11 +81,11 @@ function v(e) {
           tab: t
         })
     }
-  }, [t, y]);
+  }, [t, I]);
   return (0, r.jsxs)(s.P3F, {
-    onClick: I,
-    className: o()(N.navItem, {
-      [N.selected]: y
+    onClick: v,
+    className: a()(N.navItem, {
+      [N.selected]: I
     }),
     children: [(0, r.jsx)("div", {
       className: N.navItemIcon,
@@ -93,11 +93,11 @@ function v(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "none",
-      children: v
+      children: y
     })]
   })
 }
-let y = function() {
+let I = function() {
   return (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)("div", {
@@ -108,7 +108,7 @@ let y = function() {
       })
     }), (0, r.jsx)("nav", {
       className: N.nav,
-      children: _.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(v, {
+      children: _.GLOBAL_DISCOVERY_TABS.map(e => (0, r.jsx)(y, {
         tab: e
       }, e))
     })]

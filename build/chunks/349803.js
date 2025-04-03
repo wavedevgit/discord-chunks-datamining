@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => f
 });
@@ -7,15 +7,15 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(642128),
-  o = n(481060),
-  l = n(410030),
+  l = n(481060),
+  o = n(410030),
   c = n(104494),
   d = n(639119),
   u = n(318747),
   m = n(409100),
   g = n(474936),
   p = n(981631),
-  h = n(123278);
+  h = n(993229);
 let f = function(e) {
   var t, n;
   let {
@@ -23,7 +23,7 @@ let f = function(e) {
     isFullscreen: f,
     subscriptionTier: b,
     isMarketingPageV2: N
-  } = e, x = null === (t = (0, d.N)()) || void 0 === t ? void 0 : t.subscription_trial, _ = (0, c.Ng)(), E = (0, c.Wp)(_, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, o.q_F)({
+  } = e, x = null == (t = (0, d.N)()) ? void 0 : t.subscription_trial, _ = (0, c.Ng)(), E = (0, c.Wp)(_, g.Si.TIER_2) ? g.Si.TIER_2 : void 0, j = (0, l.q_F)({
     transform: i ? "translateY(-100%)" : "translateY(0%)",
     opacity: +!!i,
     config: {
@@ -32,7 +32,7 @@ let f = function(e) {
     }
   }), O = {
     section: p.jXE.MARKETING_FLOATING_CTA
-  }, C = (0, l.ZP)(), v = (0, o.wjy)(C);
+  }, C = (0, o.ZP)(), S = (0, l.wjy)(C);
   return (0, r.jsx)(a.animated.div, {
     className: s()(h.wrapper, {
       [h.fullscreenWrapper]: f,
@@ -43,9 +43,9 @@ let f = function(e) {
       className: N ? h.innerWrapperV2 : h.innerWrapperV1,
       children: [(0, r.jsx)(m.Z, {
         className: s()(h.button, {
-          [h.subButton]: v
+          [h.subButton]: S
         }),
-        subscriptionTier: null !== (n = null != b ? b : null == x ? void 0 : x.sku_id) && void 0 !== n ? n : E,
+        subscriptionTier: null != (n = null != b ? b : null == x ? void 0 : x.sku_id) ? n : E,
         premiumModalAnalyticsLocation: O,
         isPersistentCTA: !0
       }), (0, r.jsx)(u.Z, {

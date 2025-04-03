@@ -1,6 +1,5 @@
 /** Chunk was on 63288 **/
-var o;
-e = n.nmd(e), o = function() {
+e = n.nmd(e), e.exports = function() {
   return function(e) {
     var t = "/*|*/",
       n = t + "}";
@@ -31,4 +30,4 @@ e = n.nmd(e), o = function() {
       }
     }
   }
-}, e.exports = o()
+}()

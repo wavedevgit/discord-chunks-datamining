@@ -10,7 +10,7 @@ var r = n(200651),
   s = n(424625),
   c = n(823379),
   d = n(246992),
-  u = n(890798);
+  u = n(616257);
 let m = a.forwardRef(function(e, t) {
   let {
     id: n,
@@ -40,13 +40,13 @@ function x(e) {
     let o = [],
       s = i.current.getBoundingClientRect().width;
     if (s !== x.current) {
-      for (let i of (x.current = s, s -= null !== (r = null === (e = h.current.get(n)) || void 0 === e ? void 0 : e.width) && void 0 !== r ? r : 0, t)) i.id !== n && (s -= null !== (l = null === (a = h.current.get(i.id)) || void 0 === a ? void 0 : a.width) && void 0 !== l ? l : 0) < 0 && o.push(i.id);
+      for (let i of (x.current = s, s -= null != (r = null == (e = h.current.get(n)) ? void 0 : e.width) ? r : 0, t)) i.id !== n && (s -= null != (l = null == (a = h.current.get(i.id)) ? void 0 : a.width) ? l : 0) < 0 && o.push(i.id);
       b(o)
     }
   }, [t, n]), _ = a.useRef(null);
   a.useEffect(() => (_.current = new ResizeObserver(() => f()), null != i.current && _.current.observe(i.current), () => {
     var e;
-    null === (e = _.current) || void 0 === e || e.disconnect()
+    null == (e = _.current) || e.disconnect()
   }), [f]);
   let g = a.useCallback(e => {
     let {
@@ -86,10 +86,10 @@ function x(e) {
           selected: n === t,
           ref: e => {
             var n, r, a;
-            let l = null !== (r = null === (n = h.current.get(t)) || void 0 === n ? void 0 : n.width) && void 0 !== r ? r : 0;
+            let l = null != (r = null == (n = h.current.get(t)) ? void 0 : n.width) ? r : 0;
             h.current.set(t, {
               node: e,
-              width: null !== (a = null == e ? void 0 : e.getBoundingClientRect().width) && void 0 !== a ? a : l
+              width: null != (a = null == e ? void 0 : e.getBoundingClientRect().width) ? a : l
             })
           },
           onClick: n !== t ? () => l(t) : void 0,
@@ -154,7 +154,7 @@ function h(e, t) {
     tabs: o,
     initialSelectedTabId: s,
     onChangeTab: c
-  } = e, [d, u] = a.useState(null != s ? s : null === (n = o[0]) || void 0 === n ? void 0 : n.id);
+  } = e, [d, u] = a.useState(null != s ? s : null == (n = o[0]) ? void 0 : n.id);
   return {
     TabBar: a.useCallback(() => (0, r.jsx)(x, {
       tabs: o,
@@ -163,7 +163,7 @@ function h(e, t) {
         u(e), null == c || c(e)
       }
     }), [d, u, c, ...t]),
-    renderSelectedTab: null !== (i = null === (l = o.find(e => e.id === d)) || void 0 === l ? void 0 : l.render) && void 0 !== i ? i : () => null,
+    renderSelectedTab: null != (i = null == (l = o.find(e => e.id === d)) ? void 0 : l.render) ? i : () => null,
     selectedTabId: d
   }
 }

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(793030),
-  i = n(55935),
-  a = n(668826),
+  a = n(55935),
+  i = n(668826),
   c = n(284539),
   l = n(67411),
   u = n(18582),
@@ -14,13 +14,13 @@ var r = n(200651),
   f = n(763283),
   p = n(892689),
   m = n(477839),
-  g = n(884479),
+  g = n(622802),
   b = n(388032),
-  y = n(560691),
+  y = n(737687),
   h = n(358049),
-  v = n(294944),
-  x = n(853021),
-  N = n(292337),
+  x = n(294944),
+  N = n(853021),
+  v = n(292337),
   O = n(733);
 let j = n(974138),
   Z = () => [{
@@ -39,7 +39,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z.o9Mmio),
     username: "gaminggamer",
-    avatar: v,
+    avatar: x,
     responses: [{
       content: b.NW.string(g.Z.eH2eAQ),
       responsePoints: 1e3,
@@ -52,7 +52,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z["tHj27+"]),
     username: "SELLINGEVERYTHING2000",
-    avatar: x,
+    avatar: N,
     responses: [{
       content: b.NW.string(g.Z.amDxf3),
       responsePoints: -1e3,
@@ -78,7 +78,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z.tWaTS0),
     username: "gaminggamer",
-    avatar: v,
+    avatar: x,
     responses: [{
       content: b.NW.string(g.Z.ht6xPD),
       responsePoints: 2e3,
@@ -91,7 +91,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z.WRv94u),
     username: "SELLINGEVERYTHING2000",
-    avatar: x,
+    avatar: N,
     responses: [{
       content: b.NW.string(g.Z.DEmfX1),
       responsePoints: -1e3,
@@ -104,7 +104,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z.TTqFZm),
     username: "lonelyboi",
-    avatar: N,
+    avatar: v,
     responses: [{
       content: b.NW.string(g.Z.ysPB4u),
       responsePoints: 2e3,
@@ -130,7 +130,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z["/drFws"]),
     username: "lonelyboi",
-    avatar: N,
+    avatar: v,
     responses: [{
       content: b.NW.string(g.Z.ETmJEx),
       responsePoints: -500,
@@ -143,7 +143,7 @@ let j = n(974138),
   }, {
     content: b.NW.string(g.Z["Mw+9pa"]),
     username: "SELLINGEVERYTHING2000",
-    avatar: x,
+    avatar: N,
     responses: [{
       content: b.NW.string(g.Z["AW5f+v"]),
       responsePoints: 1e4,
@@ -159,7 +159,7 @@ function _(e) {
   let {
     currentMessage: t,
     response: n,
-    handleResponse: a,
+    handleResponse: i,
     index: c,
     onMount: l
   } = e;
@@ -184,7 +184,7 @@ function _(e) {
           }), (0, r.jsx)(o.xv, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: (0, i.Y4)(new Date)
+            children: (0, a.Y4)(new Date)
           })]
         }), (0, r.jsx)(o.xv, {
           variant: "text-md/normal",
@@ -208,7 +208,7 @@ function _(e) {
         })]
       }) : null == t ? void 0 : t.responses.map((e, t) => (0, r.jsx)(u.Z, {
         className: y.response,
-        onClick: () => a(c, e.responsePoints, e.responseMessage),
+        onClick: () => i(c, e.responsePoints, e.responseMessage),
         children: (0, r.jsx)(f.Z, {
           variant: "text-md/normal",
           children: e.content
@@ -223,21 +223,21 @@ function C(e) {
   var t;
   let {
     isPaused: n
-  } = e, o = (0, s.useRef)(), i = (0, s.useRef)(-1), [u, f] = (0, s.useState)(0), [g, b] = (0, s.useState)(null), y = Z()[u], [h, v] = (0, c.Z)(m.yN.MESSAGES), x = null !== (t = h.count) && void 0 !== t ? t : 0;
-  (0, l.Z)(P, x);
-  let N = (0, d.eR)(j),
+  } = e, o = (0, s.useRef)(), a = (0, s.useRef)(-1), [u, f] = (0, s.useState)(0), [g, b] = (0, s.useState)(null), y = Z()[u], [h, x] = (0, c.Z)(m.yN.MESSAGES), N = null != (t = h.count) ? t : 0;
+  (0, l.Z)(P, N);
+  let v = (0, d.eR)(j),
     O = (e, t, n) => {
       b({
         points: t,
         responseMessage: n
-      }), (0, a.KH)(m.yN.MESSAGES, t), v({
-        count: x + 1
-      }), i.current = setTimeout(() => {
+      }), (0, i.KH)(m.yN.MESSAGES, t), x({
+        count: N + 1
+      }), a.current = setTimeout(() => {
         var t;
-        null === (t = o.current) || void 0 === t || t.removeDrop(e), f(u + 1), b(null)
+        null == (t = o.current) || t.removeDrop(e), f(u + 1), b(null)
       }, 3e3)
     };
-  return ((0, s.useEffect)(() => () => clearTimeout(i.current), []), u >= Z().length) ? null : (0, r.jsx)(p.Z, {
+  return ((0, s.useEffect)(() => () => clearTimeout(a.current), []), u >= Z().length) ? null : (0, r.jsx)(p.Z, {
     ref: o,
     isPaused: n,
     itemId: m.yN.MESSAGES,
@@ -251,7 +251,7 @@ function C(e) {
       response: g,
       handleResponse: O,
       index: e,
-      onMount: N
+      onMount: v
     }, e)
   })
 }

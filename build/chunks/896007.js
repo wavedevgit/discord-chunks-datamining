@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => h,
@@ -31,8 +31,8 @@ function p(e) {
     canUnlinkChannels: x,
     canManageBans: j,
     canAccessMembersPage: N,
-    canViewGuildAnalytics: v,
-    isOwner: _,
+    canViewGuildAnalytics: _,
+    isOwner: v,
     isOwnerWithRequiredMfaLevel: C,
     canAccessClanSettings: O,
     isGuildSettingsFoundationEnabled: y,
@@ -40,7 +40,7 @@ function p(e) {
     canManageGuildExpressions: E
   } = e, S = () => (0, l.X$)({
     guild: c,
-    isOwner: _,
+    isOwner: v,
     canManageGuildRoleSubscriptions: (0, l.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
     isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
@@ -101,7 +101,7 @@ function p(e) {
       section: g.HEADER,
       label: u.NW.string(u.t["5tbTdX"])
     }), e.push(m(d.pNK.SAFETY, T)), e.push(m(d.pNK.MODERATION, T)), e.push(m(d.pNK.AUDIT_LOG, T)), e.push(m(d.pNK.BANS, T)), e.push(m(d.pNK.GUILD_AUTOMOD, T)));
-    let n = c.hasFeature(d.oNc.COMMUNITY) && v,
+    let n = c.hasFeature(d.oNc.COMMUNITY) && _,
       r = S();
     return (p || n || r) && (e.push({
       section: g.DIVIDER
@@ -128,11 +128,11 @@ function p(e) {
     predicate: () => p
   }, m(d.pNK.SAFETY, T), m(d.pNK.MODERATION, T), m(d.pNK.GUILD_AUTOMOD, T), m(d.pNK.AUDIT_LOG, T), m(d.pNK.BANS, T), {
     section: g.DIVIDER,
-    predicate: () => p || v
+    predicate: () => p || _
   }, {
     section: g.HEADER,
     label: u.NW.string(u.t["1g9A/f"]),
-    predicate: () => !O && (p || v)
+    predicate: () => !O && (p || _)
   }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
     section: g.DIVIDER,
     predicate: S

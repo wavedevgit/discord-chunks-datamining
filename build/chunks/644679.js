@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(481060),
   l = n(570140),
-  o = n(317770),
-  a = n(19780),
+  a = n(317770),
+  o = n(19780),
   s = n(594174),
   c = n(960048),
   u = n(699910),
@@ -21,7 +21,7 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 let h = "CollectiblesExpiryModal";
-class f extends o.Z {
+class f extends a.Z {
   _initialize() {
     l.Z.subscribe("POST_CONNECTION_OPEN", this.handleMaybeOpenModal), l.Z.subscribe("CURRENT_USER_UPDATE", this.handleMaybeOpenModal)
   }
@@ -32,15 +32,15 @@ class f extends o.Z {
     super(...e), p(this, "timeout", null), p(this, "handleMaybeOpenModal", () => {
       var e;
       let t = s.default.getCurrentUser(),
-        n = null == t ? void 0 : null === (e = t.avatarDecoration) || void 0 === e ? void 0 : e.expiresAt;
+        n = null == t || null == (e = t.avatarDecoration) ? void 0 : e.expiresAt;
       null != n && (0, u.v)("CollectiblesExpiryManager") && (this.maybeOpenModal() || (null != this.timeout && clearTimeout(this.timeout), this.timeout = setTimeout(this.maybeOpenModal, 1e3 * n - Date.now() + 1e3)))
     }), p(this, "maybeOpenModal", () => {
       var e, t;
       let l = s.default.getCurrentUser(),
-        o = a.Z.getState(),
-        u = null == l ? void 0 : null === (e = l.avatarDecoration) || void 0 === e ? void 0 : e.skuId,
-        f = null == l ? void 0 : null === (t = l.avatarDecoration) || void 0 === t ? void 0 : t.expiresAt;
-      return null != l && !!(null != f && 1e3 * f < Date.now()) && o !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(h), (0, i.ZDy)(async () => {
+        a = o.ZP.getState(),
+        u = null == l || null == (e = l.avatarDecoration) ? void 0 : e.skuId,
+        f = null == l || null == (t = l.avatarDecoration) ? void 0 : t.expiresAt;
+      return null != l && !!(null != f && 1e3 * f < Date.now()) && a !== d.hes.RTC_CONNECTED && ((0, i.Mr3)(h), (0, i.ZDy)(async () => {
         let {
           default: e
         } = await n.e("77370").then(n.bind(n, 83950));

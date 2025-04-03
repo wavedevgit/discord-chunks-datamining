@@ -357,7 +357,7 @@ function tC() {
     ty(e), tO(e), tA(e);
     let i = tb();
     e.setAttenuation(i.attenuation, i.attenuateWhileSpeakingSelf, i.attenuateWhileSpeakingOthers), e.setQoS(i.qos), e.setExperimentalEncoders(i.experimentalEncoders), e.setHardwareH264(null == (t = i.hardwareEncoding) || t), e.setSoftwareH264(null == (n = i.openH264) || n);
-    let a = es.Z.getGuildId(),
+    let a = es.ZP.getGuildId(),
       {
         muteBeforeProcessing: s,
         pttBeforeProcessing: l,
@@ -570,14 +570,14 @@ function tC() {
       time_to_first_frame_ms: e.initializationTimerExpired ? null : Math.round(e.timeToFirstFrame * Q.Z.Millis.SECOND),
       timed_out: e.initializationTimerExpired,
       activity: e.entropy,
-      media_session_id: es.Z.getMediaSessionId(),
-      rtc_connection_id: es.Z.getRTCConnectionId()
+      media_session_id: es.ZP.getMediaSessionId(),
+      rtc_connection_id: es.ZP.getRTCConnectionId()
     })
   }), ej.on(m.aB.AudioInputInitialized, e => {
     z.default.track(ed.rMx.AUDIO_INPUT_INITIALIZED, {
       device_name: e.description.name,
       time_to_initialized_ms: Math.round(e.timeToInitialized * Q.Z.Millis.SECOND),
-      rtc_connection_id: es.Z.getRTCConnectionId()
+      rtc_connection_id: es.ZP.getRTCConnectionId()
     })
   }), ej.on(m.aB.ClipsRecordingRestartNeeded, () => {
     b.Z.dispatch({
@@ -687,7 +687,7 @@ let tD = new class {
   }
   update() {
     let e = tb();
-    !e6 && es.Z.getState() === ed.hes.RTC_CONNECTED && e.mode === ed.pM4.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
+    !e6 && es.ZP.getState() === ed.hes.RTC_CONNECTED && e.mode === ed.pM4.VOICE_ACTIVITY && e.silenceWarning ? this.start() : this.stop()
   }
   reset() {
     this.stop(), this.update()
@@ -912,7 +912,7 @@ function tX(e) {
   let {
     voiceStates: t
   } = e;
-  return t.reduce((e, t) => i === t.sessionId ? (eY = t.mute || t.suppress, eq = t.deaf, ej.eachConnection(tO), tS((null == t.guildId || null == t.channelId || null == ti || ti === t.channelId) && eQ), ti = t.channelId, !0) : (__OVERLAY__ || t.userId !== en.default.getId() || null != es.Z.getChannelId() || tS(!1, null), e), !1)
+  return t.reduce((e, t) => i === t.sessionId ? (eY = t.mute || t.suppress, eq = t.deaf, ej.eachConnection(tO), tS((null == t.guildId || null == t.channelId || null == ti || ti === t.channelId) && eQ), ti = t.channelId, !0) : (__OVERLAY__ || t.userId !== en.default.getId() || null != es.ZP.getChannelId() || tS(!1, null), e), !1)
 }
 
 function tJ(e) {
@@ -1011,10 +1011,10 @@ function t4(e) {
   } = tb(l);
   if (I[u] === ed.ZUi.AUTO_PROBING && d === ed.ZUi.AUTO_ENABLED && (0, V.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), I[u] = d, tx({
       videoToggleStateMap: I
-    }, l, f), d === ed.ZUi.AUTO_PROBING ? null == (n = es.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(u, !0) : null == (r = es.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(u, !1), tu || (ev.info("isAutoDisableAllowed=".concat(tu, " - disabling VideoHealthManager")), null == (o = es.Z.getRTCConnection()) || null == (i = o.getVideoHealthManager()) || i.disable()), v) {
+    }, l, f), d === ed.ZUi.AUTO_PROBING ? null == (n = es.ZP.getRTCConnection()) || n.pauseStatsCollectionForUser(u, !0) : null == (r = es.ZP.getRTCConnection()) || r.pauseStatsCollectionForUser(u, !1), tu || (ev.info("isAutoDisableAllowed=".concat(tu, " - disabling VideoHealthManager")), null == (o = es.ZP.getRTCConnection()) || null == (i = o.getVideoHealthManager()) || i.disable()), v) {
     if (!p && !g || p && !tu) return;
     (0, V.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), p ? tc.add(u) : tc.delete(u)
-  } else O && (g && !p ? (ev.info("disallowing auto-disable for this session because of manual override by user"), tu = !1, null == (s = es.Z.getRTCConnection()) || null == (a = s.getVideoHealthManager()) || a.disable(), (0, V.Z)(u, eh.fC.MANUAL_REENABLE, E)) : (0, V.Z)(u, p ? eh.fC.MANUAL_DISABLE : eh.fC.MANUAL_ENABLE, E));
+  } else O && (g && !p ? (ev.info("disallowing auto-disable for this session because of manual override by user"), tu = !1, null == (s = es.ZP.getRTCConnection()) || null == (a = s.getVideoHealthManager()) || a.disable(), (0, V.Z)(u, eh.fC.MANUAL_REENABLE, E)) : (0, V.Z)(u, p ? eh.fC.MANUAL_DISABLE : eh.fC.MANUAL_ENABLE, E));
   y && !p && tc.delete(u), p ? h[u] = !0 : delete h[u], tx({
     disabledLocalVideos: h
   }, l, f), ej.eachConnection(e => {
@@ -1673,7 +1673,7 @@ function n3(e) {
 }
 
 function n4() {
-  if (!eQ && null == o || null != es.Z.getRTCConnectionId()) return !1;
+  if (!eQ && null == o || null != es.ZP.getRTCConnectionId()) return !1;
   tS(!1, null)
 }
 
@@ -1711,7 +1711,7 @@ class rt extends(s = h.ZP.Store) {
       [eh.AN.VIDEO]: ej.supports(eh.AN.VIDEO),
       [eh.AN.DESKTOP_CAPTURE]: ej.supports(eh.AN.DESKTOP_CAPTURE),
       [eh.AN.HYBRID_VIDEO]: ej.supports(eh.AN.HYBRID_VIDEO)
-    }, this.waitFor(en.default, ei.Z, eo.Z, ea.Z, es.Z, P.ZP, Z.Z.storage, W.Z, C.Z, I.Z)
+    }, this.waitFor(en.default, ei.Z, eo.Z, ea.Z, es.ZP, P.ZP, Z.Z.storage, W.Z, C.Z, I.Z)
   }
   supports(e) {
     return ej.supports(e)

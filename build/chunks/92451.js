@@ -29,10 +29,7 @@ let g = function(e) {
   }]), [y, h] = l.useState(null), O = async () => {
     null != y && h(null);
     let e = x.map(e => e.value.trim()).filter(e => "" !== e);
-    if (0 === e.length) {
-      h(b.NW.string(b.t.TCHkcX));
-      return
-    }
+    if (0 === e.length) return void h(b.NW.string(b.t.TCHkcX));
     let t = {
       field_type: s.QJ.TERMS,
       label: b.NW.string(b.t["9suSIC"]),

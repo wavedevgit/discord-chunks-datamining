@@ -1,16 +1,16 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => p
 });
 var r = n(200651),
   i = n(192379),
-  o = n(481060),
-  l = n(139387),
+  l = n(481060),
+  o = n(139387),
   a = n(726542),
   s = n(434404),
   c = n(486199),
   d = n(13051),
-  u = n(132759);
+  u = n(621057);
 
 function p(e) {
   let {
@@ -23,11 +23,11 @@ function p(e) {
     helpText: f,
     canNavigate: h
   } = e, x = a.Z.get(m), j = i.useCallback(async e => {
-    h() && (await s.Z.enableIntegration(p.id, e.type, e.id), l.Z.startEditingIntegration(e.id))
-  }, [h, p.id]), v = i.useCallback(e => {
-    h() && (e.id === (null == n ? void 0 : n.id) && l.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [h, n, p.id]), N = i.useCallback(e => {
-    h() && (e === (null == n ? void 0 : n.id) ? l.Z.stopEditingIntegration() : l.Z.startEditingIntegration(e))
+    h() && (await s.Z.enableIntegration(p.id, e.type, e.id), o.Z.startEditingIntegration(e.id))
+  }, [h, p.id]), N = i.useCallback(e => {
+    h() && (e.id === (null == n ? void 0 : n.id) && o.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
+  }, [h, n, p.id]), O = i.useCallback(e => {
+    h() && (e === (null == n ? void 0 : n.id) ? o.Z.stopEditingIntegration() : o.Z.startEditingIntegration(e))
   }, [h, n]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.Z, {
@@ -37,7 +37,7 @@ function p(e) {
       iconClassName: u.platformIcon,
       description: g,
       isHeader: !0
-    }), (0, r.jsx)(o.$i$, {
+    }), (0, r.jsx)(l.$i$, {
       className: u.headerDivider
     }), t.map(e => (0, r.jsx)(d.Z, {
       integration: e,
@@ -45,9 +45,9 @@ function p(e) {
       guild: p,
       isExpanded: (null == n ? void 0 : n.id) === e.id,
       onEnable: j,
-      onDisable: v,
-      onToggleExpand: () => N(e.id)
-    }, e.id)), (0, r.jsx)(o.Text, {
+      onDisable: N,
+      onToggleExpand: () => O(e.id)
+    }, e.id)), (0, r.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",
       variant: "text-sm/normal",

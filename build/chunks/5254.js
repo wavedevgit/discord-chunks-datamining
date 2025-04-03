@@ -29,7 +29,7 @@ function y(e) {
   let n = null != e.contact_names && e.contact_names.length >= 2 ? e.contact_names.slice(0, 2) : [];
   return {
     key: e.suggested_user.id,
-    name: null === (t = l().first(e.reasons)) || void 0 === t ? void 0 : t.name,
+    name: null == (t = l().first(e.reasons)) ? void 0 : t.name,
     user: new a.Z(e.suggested_user),
     mutualFriendsCount: e.mutual_friends_count,
     contactNames: n
@@ -55,7 +55,7 @@ class m extends(i = o.ZP.Store) {
 p(m, "displayName", "FriendSuggestionStore");
 let O = new m(s.Z, {
   CONNECTION_OPEN: function(e) {
-    g = {}, (f = e.friendSuggestionCount) > 0 ? (h = !0, N || !h || (N = !0, h = !1, u.Z.fetch())) : (0, d.Z)()
+    g = {}, (f = e.friendSuggestionCount) > 0 ? (h = !0, !N && h && (N = !0, h = !1, u.Z.fetch())) : (0, d.Z)()
   },
   FRIEND_SUGGESTION_CREATE: function(e) {
     var t, n;

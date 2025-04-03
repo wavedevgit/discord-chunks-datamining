@@ -1,6 +1,6 @@
 /** Chunk was on 95468 **/
 n.d(t, {
-  Z: () => v
+  Z: () => _
 });
 var l = n(913527),
   r = n.n(l),
@@ -15,13 +15,13 @@ var l = n(913527),
   N = n(645792),
   x = n(981631),
   h = n(921944);
-let v = {
+let _ = {
   init(e) {
     let {
       hasModalOpen: t,
       openModal: n
     } = e;
-    !u.s.isDisallowPopupsSet() && (0, o.h)(() => {
+    u.s.isDisallowPopupsSet() || (0, o.h)(() => {
       if ((0, s.Z)()) return;
       let e = d.default.getCurrentUser(),
         l = null != e && 7 > r()().diff(r()(m.default.extractTimestamp(e.id)), "days"),

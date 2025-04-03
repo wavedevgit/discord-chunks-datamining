@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   $: () => w,
   Z: () => A
 }), n(47120), n(411104);
 var r, i = n(200651),
   a = n(192379),
-  o = n(568611),
-  l = n(442837),
+  l = n(568611),
+  o = n(442837),
   s = n(481060),
   c = n(558381),
   u = n(410575),
@@ -18,13 +18,13 @@ var r, i = n(200651),
   g = n(112724),
   _ = n(812206),
   b = n(283595),
-  v = n(558314),
-  x = n(55563),
-  y = n(551428),
-  E = n(73346),
+  x = n(558314),
+  y = n(55563),
+  E = n(551428),
+  v = n(73346),
   O = n(981631),
   N = n(388032),
-  j = n(506654);
+  j = n(228016);
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -92,15 +92,15 @@ class I extends(r = a.Component) {
       width: n,
       fetchFailed: r,
       renderFallback: a
-    } = this.props, l = n > f.aL;
+    } = this.props, o = n > f.aL;
     return null == e || null == t ? r ? a() : (0, i.jsx)(f.OR, {
-      isHorizontal: l
+      isHorizontal: o
     }) : e.productLine === O.POd.COLLECTIBLES ? (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
       children: this.renderApplicationTile(e, t)
     }) : (0, i.jsx)(u.Z, {
       section: O.jXE.APPLICATION_EMBED,
-      children: (0, i.jsx)(o.rU, {
+      children: (0, i.jsx)(l.rU, {
         onClick: this.handleLinkClick,
         to: this.getStoreListingLocation(),
         onMouseEnter: this.handleMouseEnter,
@@ -130,7 +130,7 @@ class I extends(r = a.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, E.ZI)(e.id, {
+      return (0, v.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -144,8 +144,8 @@ class I extends(r = a.Component) {
         inLibrary: n,
         width: r,
         renderCustomTitle: a,
-        renderCustomTagline: o,
-        renderCustomMedia: l
+        renderCustomTagline: l,
+        renderCustomMedia: o
       } = this.props, {
         playing: s,
         muted: c
@@ -159,8 +159,8 @@ class I extends(r = a.Component) {
         onToggleMute: this.handleToggleMute,
         renderCustomActions: () => this.renderActions(e),
         renderCustomTitle: a,
-        renderCustomTagline: o,
-        renderCustomMedia: l,
+        renderCustomTagline: l,
+        renderCustomMedia: o,
         isHorizontal: u,
         isEmbed: !0
       })
@@ -170,18 +170,18 @@ class I extends(r = a.Component) {
         application: n,
         skuId: r,
         libraryApplication: a,
-        renderCustomActions: o
+        renderCustomActions: l
       } = this.props;
-      if (null != o) return (0, i.jsx)("div", {
+      if (null != l) return (0, i.jsx)("div", {
         className: j.tileActions,
-        children: o()
+        children: l()
       });
       if (null == n) return null;
-      let l = null != n && n.primarySkuId === r,
+      let o = null != n && n.primarySkuId === r,
         c = null != a && a.hasFlag(O.eHb.HIDDEN);
       return (0, i.jsxs)("div", {
         className: j.tileActions,
-        children: [!l || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
+        children: [!o || c ? this.renderViewInStoreButton() : (0, i.jsx)(d.Z, {
           application: n,
           customDisabledColor: s.zxk.Colors.PRIMARY,
           size: s.zxk.Sizes.SMALL,
@@ -200,21 +200,21 @@ class I extends(r = a.Component) {
 C(I, "defaultProps", {
   renderFallback: O.dG4
 });
-let S = [x.Z, v.Z, b.Z, y.Z];
+let S = [y.Z, x.Z, b.Z, E.Z];
 
 function T(e) {
   let {
     skuId: t
-  } = e, n = x.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
+  } = e, n = y.Z.get(t), r = null != n ? _.Z.getApplication(n.applicationId) : null;
   return {
     sku: n,
     application: r,
-    fetchFailed: x.Z.didFetchingSkuFail(t),
+    fetchFailed: y.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? y.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? E.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }
 let P = (0, g.Z)((0, h.Z)(I)),
-  A = l.ZP.connectStores(S, T)(P),
-  w = (0, h.Z)(l.ZP.connectStores(S, T)(I))
+  A = o.ZP.connectStores(S, T)(P),
+  w = (0, h.Z)(o.ZP.connectStores(S, T)(I))

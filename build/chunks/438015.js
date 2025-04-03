@@ -19,8 +19,7 @@ function a(e, t, n) {
 }
 class c extends r.Component {
   getStyle() {
-    let e, t, n, i;
-    let {
+    let e, t, n, i, {
       props: {
         position: r,
         zIndex: s

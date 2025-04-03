@@ -14,9 +14,9 @@ var r = n(200651),
   f = n(537135),
   m = n(176940),
   h = n(388032),
-  x = n(604500),
-  p = n(740400),
-  g = n(685786);
+  x = n(729497),
+  p = n(347226),
+  g = n(20493);
 
 function _(e) {
   let {
@@ -27,7 +27,7 @@ function _(e) {
   s()(null != t, "Camera capture device cannot be null");
   let o = (0, m.Z)(),
     _ = (0, u.Z)(),
-    [v, j] = l.useState(function(e, t, n) {
+    [j, v] = l.useState(function(e, t, n) {
       if (null != t && null != n) {
         let r = t.find(t => t.id === e);
         if (null == r) return;
@@ -35,7 +35,7 @@ function _(e) {
         if (null != l) return l.id
       }
     }(t.id, o, _));
-  return null != v && i(v), (0, r.jsxs)(d.xJW, {
+  return null != j && i(j), (0, r.jsxs)(d.xJW, {
     title: "Capture Device",
     className: p.modalContent,
     children: [(0, r.jsx)(d.xJW, {
@@ -56,10 +56,10 @@ function _(e) {
       className: g.marginTop8,
       title: h.NW.string(h.t.y4ooen),
       children: (0, r.jsx)(d.q4e, {
-        value: v,
+        value: j,
         className: g.__invalid_marginaTop8,
         onChange: e => {
-          j(e), i(e)
+          v(e), i(e)
         },
         options: a().map(_, e => {
           let {

@@ -342,14 +342,14 @@ a.prototype = {}, a.prototype.getPosition = function() {
   for (; s < i; s++) this.writeUint16(0)
 }, a.prototype.writeString = function(t, e, i) {
   var s = 0;
-  if (null == e || "ASCII" == e) {
+  if (null == e || "ASCII" == e)
     if (null != i) {
       var r = Math.min(t.length, i);
       for (s = 0; s < r; s++) this.writeUint8(t.charCodeAt(s));
       for (; s < i; s++) this.writeUint8(0)
     } else
-      for (s = 0; s < t.length; s++) this.writeUint8(t.charCodeAt(s))
-  } else this.writeUint8Array(new TextEncoder(e).encode(t.substring(0, i)))
+      for (s = 0; s < t.length; s++) this.writeUint8(t.charCodeAt(s));
+  else this.writeUint8Array(new TextEncoder(e).encode(t.substring(0, i)))
 }, a.prototype.writeCString = function(t, e) {
   var i = 0;
   if (null != e) {
@@ -448,11 +448,9 @@ a.prototype = {}, a.prototype.getPosition = function() {
       this.writeUCS2String(e, a.BIG_ENDIAN, r);
       break;
     default:
-      if (3 == t.length) {
+      if (3 == t.length)
         for (var h = t[1], d = 0; d < e.length; d++) this.writeType(h, e[d]);
-        break
-      }
-      this.writeStruct(t, e)
+      else this.writeStruct(t, e)
   }
   null != r && (this.position = o, this._realloc(r), this.position = o + r)
 }, a.prototype.writeUint64 = function(t) {
@@ -509,13 +507,12 @@ o.prototype = new a(new ArrayBuffer, 0, a.BIG_ENDIAN), o.prototype.initialized =
   for (var e = !0, i = 0; i < this.buffers.length; i++) {
     var s = this.buffers[i];
     if (t.fileStart <= s.fileStart) {
-      if (t.fileStart === s.fileStart) {
+      if (t.fileStart === s.fileStart)
         if (t.byteLength > s.byteLength) {
           this.buffers.splice(i, 1), i--;
           continue
-        }
-        r.warn("MultiBufferStream", "Buffer (fileStart: " + t.fileStart + " - Length: " + t.byteLength + ") already appended, ignoring")
-      } else t.fileStart + t.byteLength <= s.fileStart || (t = this.reduceBuffer(t, 0, s.fileStart - t.fileStart)), r.debug("MultiBufferStream", "Appending new buffer (fileStart: " + t.fileStart + " - Length: " + t.byteLength + ")"), this.buffers.splice(i, 0, t), 0 === i && (this.buffer = t);
+        } else r.warn("MultiBufferStream", "Buffer (fileStart: " + t.fileStart + " - Length: " + t.byteLength + ") already appended, ignoring");
+      else t.fileStart + t.byteLength <= s.fileStart || (t = this.reduceBuffer(t, 0, s.fileStart - t.fileStart)), r.debug("MultiBufferStream", "Appending new buffer (fileStart: " + t.fileStart + " - Length: " + t.byteLength + ")"), this.buffers.splice(i, 0, t), 0 === i && (this.buffer = t);
       e = !1;
       break
     }
@@ -877,23 +874,11 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
   this.aux_subtype = t.readUint8Array(e)
 }), d.createBoxCtor("av1C", function(t) {
   var e = t.readUint8();
-  if (e >> 7 & !1) {
-    r.error("av1C marker problem");
-    return
-  }
-  if (this.version = 127 & e, 1 !== this.version) {
-    r.error("av1C version " + this.version + " not supported");
-    return
-  }
-  if (e = t.readUint8(), this.seq_profile = e >> 5 & 7, this.seq_level_idx_0 = 31 & e, e = t.readUint8(), this.seq_tier_0 = e >> 7 & 1, this.high_bitdepth = e >> 6 & 1, this.twelve_bit = e >> 5 & 1, this.monochrome = e >> 4 & 1, this.chroma_subsampling_x = e >> 3 & 1, this.chroma_subsampling_y = e >> 2 & 1, this.chroma_sample_position = 3 & e, e = t.readUint8(), this.reserved_1 = e >> 5 & 7, 0 !== this.reserved_1) {
-    r.error("av1C reserved_1 parsing problem");
-    return
-  }
+  if (e >> 7 & !1) return void r.error("av1C marker problem");
+  if (this.version = 127 & e, 1 !== this.version) return void r.error("av1C version " + this.version + " not supported");
+  if (e = t.readUint8(), this.seq_profile = e >> 5 & 7, this.seq_level_idx_0 = 31 & e, e = t.readUint8(), this.seq_tier_0 = e >> 7 & 1, this.high_bitdepth = e >> 6 & 1, this.twelve_bit = e >> 5 & 1, this.monochrome = e >> 4 & 1, this.chroma_subsampling_x = e >> 3 & 1, this.chroma_subsampling_y = e >> 2 & 1, this.chroma_sample_position = 3 & e, e = t.readUint8(), this.reserved_1 = e >> 5 & 7, 0 !== this.reserved_1) return void r.error("av1C reserved_1 parsing problem");
   if (this.initial_presentation_delay_present = e >> 4 & 1, 1 === this.initial_presentation_delay_present) this.initial_presentation_delay_minus_one = 15 & e;
-  else if (this.reserved_2 = 15 & e, 0 !== this.reserved_2) {
-    r.error("av1C reserved_2 parsing problem");
-    return
-  }
+  else if (this.reserved_2 = 15 & e, 0 !== this.reserved_2) return void r.error("av1C reserved_2 parsing problem");
   var i = this.size - this.hdr_size - 4;
   this.configOBUs = t.readUint8Array(i)
 }), d.createBoxCtor("avcC", function(t) {
@@ -1008,7 +993,7 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
   var e, i, s, r, n = t.readUint8();
   for (e = 0; e < n; e++) {
     var a = [];
-    this.nalu_arrays.push(a), r = t.readUint8(), a.completeness = (128 & r) >> 7, a.nalu_type = 63 & r;
+    this.nalu_arrays.push(a), a.completeness = (128 & (r = t.readUint8())) >> 7, a.nalu_type = 63 & r;
     var o = t.readUint16();
     for (i = 0; i < o; i++) {
       var h = {};
@@ -1318,7 +1303,7 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
     var s = {};
     this.references.push(s);
     var r = t.readUint32();
-    s.reference_type = r >> 31 & 1, s.referenced_size = 0x7fffffff & r, s.subsegment_duration = t.readUint32(), r = t.readUint32(), s.starts_with_SAP = r >> 31 & 1, s.SAP_type = r >> 28 & 7, s.SAP_delta_time = 0xfffffff & r
+    s.reference_type = r >> 31 & 1, s.referenced_size = 0x7fffffff & r, s.subsegment_duration = t.readUint32(), s.starts_with_SAP = (r = t.readUint32()) >> 31 & 1, s.SAP_type = r >> 28 & 7, s.SAP_delta_time = 0xfffffff & r
   }
 }), d.SingleItemTypeReferenceBox = function(t, e, i, s) {
   d.Box.call(this, t, e), this.hdr_size = i, this.start = s
@@ -1403,7 +1388,7 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
 }), d.createBoxCtor("styp", function(t) {
   d.ftypBox.prototype.parse.call(this, t)
 }), d.createFullBoxCtor("stz2", function(t) {
-  if (this.sample_sizes = [], 0 === this.version) {
+  if (this.sample_sizes = [], 0 === this.version)
     if (this.reserved = t.readUint24(), this.field_size = t.readUint8(), i = t.readUint32(), 4 === this.field_size)
       for (e = 0; e < i; e += 2) {
         var e, i, s = t.readUint8();
@@ -1411,9 +1396,8 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
       } else if (8 === this.field_size)
         for (e = 0; e < i; e++) this.sample_sizes[e] = t.readUint8();
       else if (16 === this.field_size)
-      for (e = 0; e < i; e++) this.sample_sizes[e] = t.readUint16();
-    else r.error("BoxParser", "Error in length field in stz2 box")
-  }
+    for (e = 0; e < i; e++) this.sample_sizes[e] = t.readUint16();
+  else r.error("BoxParser", "Error in length field in stz2 box")
 }), d.createFullBoxCtor("subs", function(t) {
   for (e = 0, s = t.readUint32(), this.entries = []; e < s; e++) {
     var e, i, s, r, n = {};
@@ -1785,13 +1769,12 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
 }, d.stszBox.prototype.write = function(t) {
   var e, i = !0;
   if (this.version = 0, this.flags = 0, this.sample_sizes.length > 0)
-    for (e = 0; e + 1 < this.sample_sizes.length;) {
+    for (e = 0; e + 1 < this.sample_sizes.length;)
       if (this.sample_sizes[e + 1] !== this.sample_sizes[0]) {
         i = !1;
         break
-      }
-      e++
-    } else i = !1;
+      } else e++;
+  else i = !1;
   this.size = 8, i || (this.size += 4 * this.sample_sizes.length), this.writeHeader(t), i ? t.writeUint32(this.sample_sizes[0]) : t.writeUint32(0), t.writeUint32(this.sample_sizes.length), i || t.writeUint32Array(this.sample_sizes)
 }, d.sttsBox.prototype.write = function(t) {
   var e;
@@ -1839,14 +1822,15 @@ d.initialize(), d.TKHD_FLAG_ENABLED = 1, d.TKHD_FLAG_IN_MOVIE = 2, d.TKHD_FLAG_I
   var i;
   if (t && !e) return !1;
   for (i in t)
-    if (!(d.DIFF_BOXES_PROP_NAMES.indexOf(i) > -1)) {
-      if (t[i] instanceof d.Box || e[i] instanceof d.Box) continue;
-      else {
-        if (void 0 === t[i] || void 0 === e[i] || "function" == typeof t[i] || "function" == typeof e[i] || t.subBoxNames && t.subBoxNames.indexOf(i.slice(0, 4)) > -1 || e.subBoxNames && e.subBoxNames.indexOf(i.slice(0, 4)) > -1 || "data" === i || "start" === i || "size" === i || "creation_time" === i || "modification_time" === i) continue;
-        if (d.DIFF_PRIMITIVE_ARRAY_PROP_NAMES.indexOf(i) > -1) continue;
-        if (t[i] !== e[i]) return !1
-      }
-    } return !0
+    if (d.DIFF_BOXES_PROP_NAMES.indexOf(i) > -1) continue;
+    else if (t[i] instanceof d.Box || e[i] instanceof d.Box) continue;
+  else if (void 0 === t[i] || void 0 === e[i]) continue;
+  else if ("function" == typeof t[i] || "function" == typeof e[i]) continue;
+  else if (t.subBoxNames && t.subBoxNames.indexOf(i.slice(0, 4)) > -1 || e.subBoxNames && e.subBoxNames.indexOf(i.slice(0, 4)) > -1) continue;
+  else if ("data" === i || "start" === i || "size" === i || "creation_time" === i || "modification_time" === i) continue;
+  else if (d.DIFF_PRIMITIVE_ARRAY_PROP_NAMES.indexOf(i) > -1) continue;
+  else if (t[i] !== e[i]) return !1;
+  return !0
 }, d.boxEqual = function(t, e) {
   if (!d.boxEqualFields(t, e)) return !1;
   for (var i = 0; i < d.DIFF_BOXES_PROP_NAMES.length; i++) {
@@ -1920,30 +1904,29 @@ u.prototype.setSegmentOptions = function(t, e, i) {
 }, u.prototype.parse = function() {
   var t, e, i;
   if (!this.restoreParsePosition || this.restoreParsePosition())
-    for (;;) {
-      if (this.hasIncompleteMdat && this.hasIncompleteMdat()) {
+    for (;;)
+      if (this.hasIncompleteMdat && this.hasIncompleteMdat())
         if (this.processIncompleteMdat()) continue;
-        return
-      }
-      if (this.saveParsePosition && this.saveParsePosition(), (t = d.parseOneBox(this.stream, !1)).code === d.ERR_NOT_ENOUGH_DATA) {
-        if (!this.processIncompleteBox) return;
-        if (this.processIncompleteBox(t)) continue;
-        return
-      }
-      switch (i = "uuid" !== (e = t.box).type ? e.type : e.uuid, this.boxes.push(e), i) {
-        case "mdat":
-          this.mdats.push(e);
-          break;
-        case "moof":
-          this.moofs.push(e);
-          break;
-        case "moov":
-          this.moovStartFound = !0, 0 === this.mdats.length && (this.isProgressive = !0);
-        default:
-          void 0 !== this[i] && r.warn("ISOFile", "Duplicate Box of type: " + i + ", overriding previous occurrence"), this[i] = e
-      }
-      this.updateUsedBytes && this.updateUsedBytes(e, t)
+        else return;
+  else {
+    if (this.saveParsePosition && this.saveParsePosition(), (t = d.parseOneBox(this.stream, !1)).code === d.ERR_NOT_ENOUGH_DATA)
+      if (!this.processIncompleteBox) return;
+      else if (this.processIncompleteBox(t)) continue;
+    else return;
+    switch (i = "uuid" !== (e = t.box).type ? e.type : e.uuid, this.boxes.push(e), i) {
+      case "mdat":
+        this.mdats.push(e);
+        break;
+      case "moof":
+        this.moofs.push(e);
+        break;
+      case "moov":
+        this.moovStartFound = !0, 0 === this.mdats.length && (this.isProgressive = !0);
+      default:
+        void 0 !== this[i] && r.warn("ISOFile", "Duplicate Box of type: " + i + ", overriding previous occurrence"), this[i] = e
     }
+    this.updateUsedBytes && this.updateUsedBytes(e, t)
+  }
 }, u.prototype.checkBuffer = function(t) {
   if (null == t) throw "Buffer must be defined and non empty";
   if (void 0 === t.fileStart) throw "Buffer must have a fileStart property";
@@ -2150,8 +2133,9 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   return s.add("tfhd").set("track_id", t.track_id).set("flags", d.TFHD_FLAG_DEFAULT_BASE_IS_MOOF), s.add("tfdt").set("baseMediaDecodeTime", t.dts - (r.first_dts || 0)), s.add("trun").set("flags", d.TRUN_FLAGS_DATA_OFFSET | d.TRUN_FLAGS_DURATION | d.TRUN_FLAGS_SIZE | d.TRUN_FLAGS_FLAGS | d.TRUN_FLAGS_CTS_OFFSET).set("data_offset", 0).set("first_sample_flags", 0).set("sample_count", 1).set("sample_duration", [t.duration]).set("sample_size", [t.size]).set("sample_flags", [e]).set("sample_composition_time_offset", [t.cts - t.dts]), i
 }, u.prototype.lastMoofIndex = 0, u.prototype.samplesDataSize = 0, u.prototype.resetTables = function() {
   for (t = 0, this.initial_duration = this.moov.mvhd.duration, this.moov.mvhd.duration = 0; t < this.moov.traks.length; t++) {
-    (e = this.moov.traks[t]).tkhd.duration = 0, e.mdia.mdhd.duration = 0, (e.mdia.minf.stbl.stco || e.mdia.minf.stbl.co64).chunk_offsets = [], (i = e.mdia.minf.stbl.stsc).first_chunk = [], i.samples_per_chunk = [], i.sample_description_index = [], (e.mdia.minf.stbl.stsz || e.mdia.minf.stbl.stz2).sample_sizes = [], (s = e.mdia.minf.stbl.stts).sample_counts = [], s.sample_deltas = [], (r = e.mdia.minf.stbl.ctts) && (r.sample_counts = [], r.sample_offsets = []), n = e.mdia.minf.stbl.stss;
-    var t, e, i, s, r, n, a = e.mdia.minf.stbl.boxes.indexOf(n); - 1 != a && (e.mdia.minf.stbl.boxes[a] = null)
+    (e = this.moov.traks[t]).tkhd.duration = 0, e.mdia.mdhd.duration = 0, (e.mdia.minf.stbl.stco || e.mdia.minf.stbl.co64).chunk_offsets = [], (i = e.mdia.minf.stbl.stsc).first_chunk = [], i.samples_per_chunk = [], i.sample_description_index = [], (e.mdia.minf.stbl.stsz || e.mdia.minf.stbl.stz2).sample_sizes = [], (s = e.mdia.minf.stbl.stts).sample_counts = [], s.sample_deltas = [], (r = e.mdia.minf.stbl.ctts) && (r.sample_counts = [], r.sample_offsets = []);
+    var t, e, i, s, r, n = e.mdia.minf.stbl.stss,
+      a = e.mdia.minf.stbl.boxes.indexOf(n); - 1 != a && (e.mdia.minf.stbl.boxes[a] = null)
   }
 }, u.initSampleGroups = function(t, e, i, s, r) {
   var n, a, o, h;
@@ -2166,9 +2150,9 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   }
   if (e) {
     if (r)
-      for (a = 0; a < r.length; a++) r[a].used || !(r[a].version >= 2) || (h = r[a].grouping_type + "/0", (o = new d(r[a].grouping_type, 0)).is_fragment = !0, e.sample_groups_info[h] || (e.sample_groups_info[h] = o))
+      for (a = 0; a < r.length; a++) !r[a].used && r[a].version >= 2 && (h = r[a].grouping_type + "/0", (o = new d(r[a].grouping_type, 0)).is_fragment = !0, e.sample_groups_info[h] || (e.sample_groups_info[h] = o))
   } else
-    for (a = 0; a < s.length; a++) s[a].used || !(s[a].version >= 2) || (h = s[a].grouping_type + "/0", o = new d(s[a].grouping_type, 0), t.sample_groups_info[h] || (t.sample_groups_info[h] = o))
+    for (a = 0; a < s.length; a++) !s[a].used && s[a].version >= 2 && (h = s[a].grouping_type + "/0", o = new d(s[a].grouping_type, 0), t.sample_groups_info[h] || (t.sample_groups_info[h] = o))
 }, u.setSampleGroupProperties = function(t, e, i, s) {
   var r, n, a;
   for (r in e.sample_groups = [], s) e.sample_groups[r] = {}, e.sample_groups[r].grouping_type = s[r].grouping_type, e.sample_groups[r].grouping_type_parameter = s[r].grouping_type_parameter, i >= s[r].last_sample_in_run && (s[r].last_sample_in_run < 0 && (s[r].last_sample_in_run = 0), s[r].entry_index++, s[r].entry_index <= s[r].sbgp.entries.length - 1 && (s[r].last_sample_in_run += s[r].sbgp.entries[s[r].entry_index].sample_count)), s[r].entry_index <= s[r].sbgp.entries.length - 1 ? e.sample_groups[r].group_description_index = s[r].sbgp.entries[s[r].entry_index].group_description_index : e.sample_groups[r].group_description_index = -1, 0 !== e.sample_groups[r].group_description_index && (a = s[r].fragment_description ? s[r].fragment_description : s[r].description, e.sample_groups[r].group_description_index > 0 ? (n = e.sample_groups[r].group_description_index > 65535 ? (e.sample_groups[r].group_description_index >> 16) - 1 : e.sample_groups[r].group_description_index - 1, a && n >= 0 && (e.sample_groups[r].description = a.entries[n])) : a && a.version >= 2 && a.default_group_description_index > 0 && (e.sample_groups[r].description = a.entries[a.default_group_description_index - 1]))
@@ -2181,7 +2165,7 @@ u.prototype.setSegmentOptions = function(t, e, i) {
   if (t.samples = [], t.samples_duration = 0, t.samples_size = 0, i = t.mdia.minf.stbl.stco || t.mdia.minf.stbl.co64, s = t.mdia.minf.stbl.stsc, r = t.mdia.minf.stbl.stsz || t.mdia.minf.stbl.stz2, n = t.mdia.minf.stbl.stts, a = t.mdia.minf.stbl.ctts, o = t.mdia.minf.stbl.stss, h = t.mdia.minf.stbl.stsd, d = t.mdia.minf.stbl.subs, f = t.mdia.minf.stbl.stdp, p = t.mdia.minf.stbl.sbgps, l = t.mdia.minf.stbl.sgpds, U = -1, b = -1, S = -1, v = -1, x = 0, w = 0, E = 0, u.initSampleGroups(t, null, p, l), void 0 !== r) {
     for (e = 0; e < r.sample_sizes.length; e++) {
       var e, i, s, r, n, a, o, h, d, p, l, f, _, c, m, g, y, U, b, S, v, x, w, E, B = {};
-      B.number = e, B.track_id = t.tkhd.track_id, B.timescale = t.mdia.mdhd.timescale, B.alreadyRead = 0, t.samples[e] = B, B.size = r.sample_sizes[e], t.samples_size += B.size, 0 === e ? (c = 1, _ = 0, B.chunk_index = c, B.chunk_run_index = _, y = s.samples_per_chunk[_], g = 0, m = _ + 1 < s.first_chunk.length ? s.first_chunk[_ + 1] - 1 : 1 / 0) : e < y ? (B.chunk_index = c, B.chunk_run_index = _) : (c++, B.chunk_index = c, g = 0, c <= m || (m = ++_ + 1 < s.first_chunk.length ? s.first_chunk[_ + 1] - 1 : 1 / 0), B.chunk_run_index = _, y += s.samples_per_chunk[_]), B.description_index = s.sample_description_index[B.chunk_run_index] - 1, B.description = h.entries[B.description_index], B.offset = i.chunk_offsets[B.chunk_index - 1] + g, g += B.size, e > U && (b++, U < 0 && (U = 0), U += n.sample_counts[b]), e > 0 ? (t.samples[e - 1].duration = n.sample_deltas[b], t.samples_duration += t.samples[e - 1].duration, B.dts = t.samples[e - 1].dts + t.samples[e - 1].duration) : B.dts = 0, a ? (e >= S && (v++, S < 0 && (S = 0), S += a.sample_counts[v]), B.cts = t.samples[e].dts + a.sample_offsets[v]) : B.cts = B.dts, o ? (e == o.sample_numbers[x] - 1 ? (B.is_sync = !0, x++) : (B.is_sync = !1, B.degradation_priority = 0), d && d.entries[w].sample_delta + E == e + 1 && (B.subsamples = d.entries[w].subsamples, E += d.entries[w].sample_delta, w++)) : B.is_sync = !0, u.process_sdtp(t.mdia.minf.stbl.sdtp, B, B.number), f ? B.degradation_priority = f.priority[e] : B.degradation_priority = 0, d && d.entries[w].sample_delta + E == e && (B.subsamples = d.entries[w].subsamples, E += d.entries[w].sample_delta), (p.length > 0 || l.length > 0) && u.setSampleGroupProperties(t, B, e, t.sample_groups_info)
+      B.number = e, B.track_id = t.tkhd.track_id, B.timescale = t.mdia.mdhd.timescale, B.alreadyRead = 0, t.samples[e] = B, B.size = r.sample_sizes[e], t.samples_size += B.size, 0 === e ? (_ = 0, B.chunk_index = c = 1, B.chunk_run_index = _, y = s.samples_per_chunk[_], g = 0, m = _ + 1 < s.first_chunk.length ? s.first_chunk[_ + 1] - 1 : 1 / 0) : e < y ? (B.chunk_index = c, B.chunk_run_index = _) : (B.chunk_index = ++c, g = 0, c <= m || (m = ++_ + 1 < s.first_chunk.length ? s.first_chunk[_ + 1] - 1 : 1 / 0), B.chunk_run_index = _, y += s.samples_per_chunk[_]), B.description_index = s.sample_description_index[B.chunk_run_index] - 1, B.description = h.entries[B.description_index], B.offset = i.chunk_offsets[B.chunk_index - 1] + g, g += B.size, e > U && (b++, U < 0 && (U = 0), U += n.sample_counts[b]), e > 0 ? (t.samples[e - 1].duration = n.sample_deltas[b], t.samples_duration += t.samples[e - 1].duration, B.dts = t.samples[e - 1].dts + t.samples[e - 1].duration) : B.dts = 0, a ? (e >= S && (v++, S < 0 && (S = 0), S += a.sample_counts[v]), B.cts = t.samples[e].dts + a.sample_offsets[v]) : B.cts = B.dts, o ? (e == o.sample_numbers[x] - 1 ? (B.is_sync = !0, x++) : (B.is_sync = !1, B.degradation_priority = 0), d && d.entries[w].sample_delta + E == e + 1 && (B.subsamples = d.entries[w].subsamples, E += d.entries[w].sample_delta, w++)) : B.is_sync = !0, u.process_sdtp(t.mdia.minf.stbl.sdtp, B, B.number), f ? B.degradation_priority = f.priority[e] : B.degradation_priority = 0, d && d.entries[w].sample_delta + E == e && (B.subsamples = d.entries[w].subsamples, E += d.entries[w].sample_delta), (p.length > 0 || l.length > 0) && u.setSampleGroupProperties(t, B, e, t.sample_groups_info)
     }
     e > 0 && (t.samples[e - 1].duration = Math.max(t.mdia.mdhd.duration - t.samples[e - 1].dts, 0), t.samples_duration += t.samples[e - 1].duration)
   }
@@ -2198,7 +2182,7 @@ u.prototype.setSegmentOptions = function(t, e, i) {
                 y = !!(p.tfhd.flags & d.TFHD_FLAG_DEFAULT_BASE_IS_MOOF),
                 U = !!(m.flags & d.TRUN_FLAGS_DATA_OFFSET),
                 b = 0;
-              b = g ? p.tfhd.base_data_offset : y ? h.start : 0 === e ? h.start : o, 0 === e && 0 === i ? U ? _.offset = b + m.data_offset : _.offset = b : _.offset = o, o = _.offset + _.size, (p.sbgps.length > 0 || p.sgpds.length > 0 || l.mdia.minf.stbl.sbgps.length > 0 || l.mdia.minf.stbl.sgpds.length > 0) && u.setSampleGroupProperties(l, _, _.number_in_traf, p.sample_groups_info)
+              b = g ? p.tfhd.base_data_offset : y || 0 === e ? h.start : o, 0 === e && 0 === i ? U ? _.offset = b + m.data_offset : _.offset = b : _.offset = o, o = _.offset + _.size, (p.sbgps.length > 0 || p.sgpds.length > 0 || l.mdia.minf.stbl.sbgps.length > 0 || l.mdia.minf.stbl.sgpds.length > 0) && u.setSampleGroupProperties(l, _, _.number_in_traf, p.sample_groups_info)
             }
           }
           if (p.subs) {

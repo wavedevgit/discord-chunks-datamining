@@ -14,22 +14,22 @@ function c(e) {
       entry: s,
       baseEntryData: u
     } = e,
-    d = s.extra.entries[0].media,
-    p = d.artists[0],
+    p = s.extra.entries[0].media,
+    d = p.artists[0],
     {
       title: f,
       provider: b,
       image_url: O
-    } = d,
-    y = p.name,
+    } = p,
+    y = d.name,
     m = {
-      onClick: () => (0, l.o)(o.Hw.TRACK, d.external_id),
+      onClick: () => (0, l.o)(o.Hw.TRACK, p.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
         itemName: f
       })
     },
     j = {
-      onClick: () => (0, l.o)(o.Hw.ARTIST, p.external_id),
+      onClick: () => (0, l.o)(o.Hw.ARTIST, d.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
         itemName: y
       })

@@ -44,7 +44,7 @@ function u(e, t, n, u, d) {
   let p = (0, o._F)(),
     f = (0, o.O5)(),
     v = (0, r.useRef)(-1),
-    g = (null === (m = e.userStatus) || void 0 === m ? void 0 : m.completedAt) != null,
+    g = (null == (m = e.userStatus) ? void 0 : m.completedAt) != null,
     b = e.id,
     E = r.useCallback(e => {
       null != t.current && p({
@@ -189,8 +189,8 @@ function u(e, t, n, u, d) {
     P = r.useCallback((e, r) => {
       var l, o;
       if (null == t.current) return;
-      let m = null === (l = t.current) || void 0 === l ? void 0 : l.error,
-        f = null === (o = t.current) || void 0 === o ? void 0 : o.networkState,
+      let m = null == (l = t.current) ? void 0 : l.error,
+        f = null == (o = t.current) ? void 0 : o.networkState,
         v = null != t.current ? (0, i.bA)(t.current.currentTime, t.current.duration) : void 0;
       p({
         questId: b,

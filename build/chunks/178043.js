@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(120356),
-  i = n.n(o),
-  a = n(10478),
+  a = n.n(o),
+  i = n(10478),
   c = n(442837),
   l = n(481060),
   u = n(496929),
@@ -18,15 +18,15 @@ var r = n(200651),
   b = n(668826),
   y = n(120421),
   h = n(340078),
-  v = n(324815),
-  x = n(18582),
-  N = n(3072),
+  x = n(324815),
+  N = n(18582),
+  v = n(3072),
   O = n(763283),
   j = n(944548),
   Z = n(477839),
-  _ = n(884479),
+  _ = n(622802),
   P = n(388032),
-  C = n(896021),
+  C = n(652202),
   w = n(300090),
   E = n(965084),
   S = n(702536);
@@ -191,7 +191,7 @@ function M() {
         color: "always-white",
         className: C.tooltipText,
         children: P.NW.format(_.Z.HB1We3, {
-          thanksHook: (e, t) => (0, r.jsx)(x.Z, {
+          thanksHook: (e, t) => (0, r.jsx)(N.Z, {
             className: C.link,
             tag: "a",
             href: "https://neal.fun/",
@@ -206,7 +206,7 @@ function M() {
       shouldShow: e,
       forceOpen: e,
       disableTooltipPointerEvents: !1,
-      children: n => (0, r.jsxs)(x.Z, k(I({
+      children: n => (0, r.jsxs)(N.Z, k(I({
         tag: "g"
       }, n), {
         onClick: () => t(!e),
@@ -322,11 +322,11 @@ function A(e) {
     className: t
   } = e, {
     analyticsLocations: o
-  } = (0, d.ZP)(), [f, p] = (0, s.useState)(!1), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), x = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [j, W] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(x, Z.VU, Z.oK), g.Z.isFetchingForApplication(Z.oK)]);
-  return (0, N.is)(a.Z, !1), (0, s.useEffect)(() => {
+  } = (0, d.ZP)(), [f, p] = (0, s.useState)(!1), h = (0, c.e7)([y.Z], () => y.Z.isRedeemingPrize), N = (0, c.e7)([m.default], () => m.default.getCurrentUser()), [j, W] = (0, c.Wu)([g.Z], () => [g.Z.isEntitledToSku(N, Z.VU, Z.oK), g.Z.isFetchingForApplication(Z.oK)]);
+  return (0, v.is)(i.Z, !1), (0, s.useEffect)(() => {
     (0, u.yD)(Z.oK)
   }, []), (0, r.jsxs)("div", {
-    className: i()(t, C.winScreen),
+    className: a()(t, C.winScreen),
     children: [(0, r.jsx)(O.Z, {
       className: C.header,
       variant: "heading-lg/medium",
@@ -356,7 +356,7 @@ function A(e) {
         className: f ? C.arrowRightActive : void 0,
         src: E,
         alt: ""
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(x.Z, {
         disabled: W || h,
         color: "green",
         onMouseEnter: () => p(!0),

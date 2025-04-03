@@ -7,14 +7,14 @@ var r = n(200651),
   o = n(261833),
   i = n(481060),
   a = n(184299),
-  s = n(72482);
+  s = n(844136);
 
 function c(e) {
   var t;
   let {
     quest: n,
     onClose: c
-  } = e, u = (0, a.km)(e => e.transcript), d = (null == u ? void 0 : u.questId) === n.id && (null == u ? void 0 : u.fetchStatus) === a.iF.SUCCESS && null !== (t = u.text) && void 0 !== t ? t : "", m = l.useMemo(() => d.split("\n").map(e => e.trim()).filter(e => e.length > 0), [d]);
+  } = e, u = (0, a.km)(e => e.transcript), d = (null == u ? void 0 : u.questId) === n.id && (null == u ? void 0 : u.fetchStatus) === a.iF.SUCCESS && null != (t = u.text) ? t : "", m = l.useMemo(() => d.split("\n").map(e => e.trim()).filter(e => e.length > 0), [d]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: s.transcriptHeader,

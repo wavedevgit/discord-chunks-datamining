@@ -1,109 +1,90 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  V9: () => C,
-  ek: () => O
+  V9: () => N,
+  ek: () => b
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(512969),
   l = n(351773),
-  c = n(100527),
-  d = n(906732),
-  u = n(335131),
-  m = n(341907),
-  g = n(23547),
-  p = n(790542),
-  h = n(317257),
-  f = n(120786),
-  b = n(970815),
-  N = n(82856),
-  x = n(981631),
-  _ = n(215023),
-  E = n(388032),
-  j = n(788369);
-let O = {
-    START: j.alignLeft,
-    END: j.alignRight
+  o = n(23547),
+  c = n(790542),
+  d = n(317257),
+  u = n(120786),
+  m = n(970815),
+  g = n(82856),
+  p = n(981631),
+  h = n(388032),
+  f = n(313008);
+let b = {
+    START: f.alignLeft,
+    END: f.alignRight
   },
-  C = e => {
+  N = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      isCoachmarkEnabled: C = !0,
-      linkText: v = E.NW.string(E.t.XRdyj4),
-      cardAlignment: S = O.START,
-      className: T
+      isCoachmarkEnabled: N = !0,
+      linkText: x = h.NW.string(h.t.XRdyj4),
+      cardAlignment: _ = b.START,
+      className: E
     } = e, {
-      balance: I
-    } = (0, p.A)(), [y, A] = i.useState(h.b.DEFAULT), [P, R] = i.useState(!1), [D, Z] = i.useState(!1), w = (0, o.TH)(), {
-      analyticsLocations: k
-    } = (0, d.ZP)(c.Z.VIRTUAL_CURRENCY_BALANCE_WIDGET), W = i.useRef(null), {
-      shouldOpen: L
-    } = (0, N.lJ)({
-      backgroundElementRef: W
+      balance: j
+    } = (0, c.A)(), [O, C] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
+      shouldOpen: A
+    } = (0, g.lJ)({
+      backgroundElementRef: y
     }), {
-      shouldOpen: B
-    } = (0, g.Mm)({
-      backgroundElementRef: W,
-      isCoachmarkEnabled: C,
-      onCloseCallback: x.dG4,
-      onClickPill: x.dG4,
-      secondaryCtaOnClick: () => {
-        (0, m.navigateToQuestHome)()
-      },
-      ctaOnClick: () => {
-        w.pathname !== x.Z5c.COLLECTIBLES_SHOP && (0, u.mK)({
-          openInLayer: !1,
-          tab: _.AW.ORBS,
-          analyticsLocations: k,
-          analyticsSource: c.Z.VIRTUAL_CURRENCY_EARNED_ORBS_COACHMARK
-        })
-      }
-    }), M = B || L;
+      shouldOpen: P
+    } = (0, o.Mm)({
+      backgroundElementRef: y,
+      isCoachmarkEnabled: N,
+      onCloseCallback: p.dG4,
+      onClickPill: p.dG4
+    }), R = P || A;
     i.useEffect(() => {
-      if (!C) return;
-      let e = (0, g.wH)();
-      (0, N.Pe)() || e || M ? (Z(!0), R(!1)) : Z(!1)
-    }, [C, M]);
-    let U = i.useCallback(() => {
-        let e = !P;
-        A(e ? h.b.SELECTED : h.b.DEFAULT), R(e)
-      }, [P]),
-      V = i.useCallback(() => {
-        P && U()
-      }, [P, U]),
-      G = (0, l.Z)(null, V);
+      if (!N) return;
+      let e = (0, o.wH)();
+      (0, g.Pe)() || e || R ? (I(!0), v(!1)) : I(!1)
+    }, [N, R]);
+    let D = i.useCallback(() => {
+        let e = !S;
+        C(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
+      }, [S]),
+      Z = i.useCallback(() => {
+        S && D()
+      }, [S, D]),
+      w = (0, l.Z)(null, Z);
     return (0, r.jsxs)("div", {
-      className: a()(j.container, T, {
-        [j.hidden]: D,
-        [j.visible]: !D
+      className: a()(f.container, E, {
+        [f.hidden]: T,
+        [f.visible]: !T
       }),
-      children: [(0, r.jsx)(b.A4, {
-        ref: W,
-        balance: I,
-        balanceWidgetMode: M ? h.b.DEFAULT : y,
+      children: [(0, r.jsx)(m.A4, {
+        ref: y,
+        balance: j,
+        balanceWidgetMode: R ? d.b.DEFAULT : O,
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: U,
+        onClick: D,
         showNotificationBadge: t
-      }), P && (0, r.jsx)("div", {
-        className: a()(j.cardContainer, S, {
-          [j.hidden]: D,
-          [j.visible]: !D
+      }), S && (0, r.jsx)("div", {
+        className: a()(f.cardContainer, _, {
+          [f.hidden]: T,
+          [f.visible]: !T
         }),
-        ref: G,
-        children: (0, r.jsx)(f.L, {
+        ref: w,
+        children: (0, r.jsx)(u.L, {
           ctaText: n,
           ctaOnClick: () => {
-            U(), s()
+            D(), s()
           },
-          linkText: v
+          linkText: x
         })
       })]
     })
   };
-C.CardAlignment = O
+N.CardAlignment = b

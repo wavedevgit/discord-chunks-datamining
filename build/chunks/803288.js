@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  T: () => v,
+  T: () => _,
   Z: () => C
 }), n(266796);
 var r = n(200651),
@@ -21,8 +21,8 @@ var r = n(200651),
   b = n(859481),
   x = n(981631),
   j = n(388032),
-  N = n(103163);
-let v = s.ZP.connectStores([g.Z, h.Z], () => {
+  N = n(839032);
+let _ = s.ZP.connectStores([g.Z, h.Z], () => {
   let e = h.Z.vanityURLCode,
     t = g.Z.getGuildId();
   return {
@@ -36,7 +36,7 @@ let v = s.ZP.connectStores([g.Z, h.Z], () => {
     }
   }
 })(o.Z);
-class _ extends i.PureComponent {
+class v extends i.PureComponent {
   render() {
     let {
       hide: e,
@@ -87,7 +87,7 @@ function C() {
     } = (0, d.ZP)(c.Z.VANITY_URL);
   return (0, r.jsx)(d.Gt, {
     value: l,
-    children: (0, r.jsx)(_, (e = function(e) {
+    children: (0, r.jsx)(v, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

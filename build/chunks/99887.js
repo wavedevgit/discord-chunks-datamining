@@ -2,7 +2,7 @@
 n.d(t, {
   N4: () => d,
   ZP: () => u,
-  n: () => r
+  n: () => o
 });
 var i = n(799761),
   a = {
@@ -17,7 +17,7 @@ var i = n(799761),
     9: "९",
     0: "०"
   },
-  o = {
+  r = {
     "१": "1",
     "२": "2",
     "३": "3",
@@ -30,9 +30,9 @@ var i = n(799761),
     "०": "0"
   };
 
-function r(e) {
+function o(e) {
   return Number(e.toString().replace(/[१२३४५६७८९०]/g, function(e) {
-    return o[e]
+    return r[e]
   }))
 }
 

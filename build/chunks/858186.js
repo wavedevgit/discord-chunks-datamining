@@ -60,10 +60,7 @@ t.exports = function(t, e) {
     }
     return
   }
-  if ("undo" === w) {
-    _(e, o, t.update);
-    return
-  }
+  if ("undo" === w) return void _(e, o, t.update);
   if (e.preventDefault(), !(t.props.handleKeyCommand && c(t.props.handleKeyCommand(w, o, e.timeStamp)))) {
     var k = function(t, e, r) {
       switch (t) {

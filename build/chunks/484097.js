@@ -20,7 +20,7 @@ let p = e => {
     location: n
   } = e;
   return (0, t.jsx)(i.l_, {
-    to: null !== (l = function e(l) {
+    to: null != (l = function e(l) {
       let n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
         t = c.Z.getChannel(l);
       if (null != t) {
@@ -38,6 +38,6 @@ let p = e => {
         c.Z.addChangeListener(n)
       }
       return null
-    }((0, u.parse)(n.search).channelId)) && void 0 !== l ? l : s.Z.fallbackRoute
+    }((0, u.parse)(n.search).channelId)) ? l : s.Z.fallbackRoute
   })
 }

@@ -13,7 +13,7 @@ var l = n(913527),
   d = n(63063),
   u = n(981631),
   f = n(388032),
-  m = n(460449);
+  m = n(447556);
 
 function h(e) {
   var t;
@@ -39,7 +39,7 @@ function h(e) {
         color: "text-muted",
         variant: "text-sm/medium",
         children: f.NW.format(f.t.NZDuBg, {
-          actorName: null !== (t = l.globalName) && void 0 !== t ? t : l.username,
+          actorName: null != (t = l.globalName) ? t : l.username,
           actorHook: p,
           num: g,
           helpCenterLink: d.Z.getArticleURL(u.BhN.HD_STREAMING_POTION)

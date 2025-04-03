@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => C
@@ -20,7 +20,7 @@ var i = n(481060),
   f = n(215124),
   b = n(981631),
   x = n(388032),
-  j = n(263583);
+  j = n(264054);
 
 function N(e) {
   let {
@@ -44,7 +44,7 @@ function N(e) {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     guildId: t,
     totalPayoutsForPeriod: n
@@ -57,7 +57,7 @@ function v(e) {
     className: j.currentMonthEarningsTable
   })
 }
-let _ = e => {
+let v = e => {
   var t, n;
   let {
     guildId: l,
@@ -65,7 +65,7 @@ let _ = e => {
   } = e, {
     loading: m,
     team: g,
-    currentPeriod: _,
+    currentPeriod: v,
     allPeriods: C,
     metrics: O
   } = (0, d.Z)(l, o), y = (0, u.u)(l), I = (0, c.mY)();
@@ -87,7 +87,7 @@ let _ = e => {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.iY1jW1),
-          value: (0, a.T4)(null !== (t = O.revenue) && void 0 !== t ? t : 0, b.pKx.USD),
+          value: (0, a.T4)(null != (t = O.revenue) ? t : 0, b.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
             value: O.revenuePctChange,
             isPercent: !0
@@ -95,7 +95,7 @@ let _ = e => {
         }), (0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.cXyw29),
           value: (0, r.jsxs)(r.Fragment, {
-            children: [null !== (n = O.subscribers) && void 0 !== n ? n : "-", " ", (0, r.jsx)(i.tBG, {
+            children: [null != (n = O.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
               size: "md",
               color: "currentColor",
               className: j.totalMembersIcon,
@@ -106,9 +106,9 @@ let _ = e => {
             value: O.subscriberChange
           })
         })]
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(_, {
         guildId: l,
-        totalPayoutsForPeriod: _
+        totalPayoutsForPeriod: v
       })]
     }), (0, r.jsx)(i.hjN, {
       title: x.NW.string(x.t["+5Rmho"]),
@@ -139,7 +139,7 @@ let _ = e => {
 function C(e) {
   return (0, r.jsx)(l.l, {
     guildId: e.guildId,
-    children: (0, r.jsx)(_, function(e) {
+    children: (0, r.jsx)(v, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

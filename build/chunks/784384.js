@@ -1,9 +1,9 @@
-/** Chunk was on 44300 **/
+/** Chunk was on 16967 **/
 n.d(t, {
   HY: () => E,
   nm: () => y,
   pU: () => I,
-  y: () => v
+  y: () => S
 }), n(47120), n(13667), n(390547);
 var a = n(192379),
   r = n(106351),
@@ -51,7 +51,7 @@ function E(e, t, n) {
     })];
     if (t.length > 0 && !m.Z.can(f.Plq.USE_EXTERNAL_STICKERS, n) && t.some(e => (function(e, t) {
         let n = o.Z.getStickerById(e.id);
-        return !!(null != n && (0, c.J8)(n)) && (n.guild_id !== t.guild_id || void 0)
+        return null != n && !!(0, c.J8)(n) && (n.guild_id !== t.guild_id || void 0)
       })(e, n))) return {
       label: b.NW.string(b.t["0Yyrub"])
     };
@@ -62,10 +62,10 @@ function E(e, t, n) {
 }
 
 function I(e, t) {
-  return null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(t.can(f.Plq.MANAGE_CHANNELS, e) || t.can(f.Plq.MANAGE_MESSAGES, e))
+  return !!(null != e.rateLimitPerUser && e.rateLimitPerUser > 0) && !(t.can(f.Plq.MANAGE_CHANNELS, e) || t.can(f.Plq.MANAGE_MESSAGES, e))
 }
 
-function v(e) {
+function S(e) {
   let t = (0, l.Wu)([d.Z, m.Z], () => e.map(e => {
     let {
       type: t,

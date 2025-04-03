@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => eh,
   l: () => ef
@@ -19,9 +19,9 @@ var r, i = n(200651),
   b = n(493683),
   _ = n(529103),
   C = n(447543),
-  v = n(708690),
-  y = n(194359),
-  x = n(425493),
+  y = n(708690),
+  x = n(194359),
+  v = n(425493),
   j = n(461745),
   O = n(40851),
   E = n(367907),
@@ -53,8 +53,8 @@ var r, i = n(200651),
   Q = n(575464),
   J = n(981631),
   $ = n(388032),
-  ee = n(170086),
-  et = n(685786);
+  ee = n(382314),
+  et = n(20493);
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -129,9 +129,9 @@ let ec = e => {
     let {
       channel: n,
       onClose: r
-    } = e, l = null !== (t = (0, I.ZP)(n)) && void 0 !== t ? t : "", o = (0, h.e7)([W.ZP], () => {
+    } = e, l = null != (t = (0, I.ZP)(n)) ? t : "", o = (0, h.e7)([W.ZP], () => {
       var e;
-      return null !== (e = W.ZP.lastMessageId(n.id)) && void 0 !== e ? e : n.id
+      return null != (e = W.ZP.lastMessageId(n.id)) ? e : n.id
     });
     return (0, i.jsx)(f.P3F, {
       onClick: () => {
@@ -176,8 +176,8 @@ let ec = e => {
         className: ee.confirmInviteScroller,
         children: l.filter(z.lm).sort((e, t) => {
           var n, r;
-          let i = null !== (n = e.lastMessageId) && void 0 !== n ? n : e.id,
-            l = null !== (r = t.lastMessageId) && void 0 !== r ? r : t.id;
+          let i = null != (n = e.lastMessageId) ? n : e.id,
+            l = null != (r = t.lastMessageId) ? r : t.id;
           return Y.default.compare(l, i)
         }).map(e => (0, i.jsx)(ec, {
           onClose: r.onClose,
@@ -200,7 +200,7 @@ class ed extends(r = l.PureComponent) {
     let {
       channel: e
     } = this.props;
-    m.Z.wait(() => v.Z.open(null == e ? void 0 : e.id));
+    m.Z.wait(() => y.Z.open(null == e ? void 0 : e.id));
     let t = (0, E.v_)(e);
     F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
@@ -209,7 +209,7 @@ class ed extends(r = l.PureComponent) {
     })), V.S.subscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.subscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown)
   }
   componentWillUnmount() {
-    V.S.unsubscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.unsubscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => v.Z.close())
+    V.S.unsubscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.unsubscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => y.Z.close())
   }
   isNotFriends() {
     let {
@@ -326,7 +326,7 @@ class ed extends(r = l.PureComponent) {
         size: j.ZP.Sizes.MEDIUM,
         query: t,
         selectedRow: l,
-        sections: [null !== (e = null == r ? void 0 : r.length) && void 0 !== e ? e : 0],
+        sections: [null != (e = null == r ? void 0 : r.length) ? e : 0],
         tags: a,
         onSelect: this.handleSelect,
         onSelectionChange: this.handleSelectionChange,
@@ -494,7 +494,7 @@ class ed extends(r = l.PureComponent) {
     })
   }
   handleAddFriend(e) {
-    this.props.onClose(), y.Z.sendRequest({
+    this.props.onClose(), x.Z.sendRequest({
       discordTag: q.ZP.getUserTag(e, {
         identifiable: "always"
       }),
@@ -508,7 +508,7 @@ class ed extends(r = l.PureComponent) {
       affinities: e.map(e => {
         var t;
         let n = w.Z.getUserAffinity(e);
-        return null !== (t = null == n ? void 0 : n.communicationProbability) && void 0 !== t ? t : -1
+        return null != (t = null == n ? void 0 : n.communicationProbability) ? t : -1
       })
     }
   }
@@ -518,12 +518,12 @@ class ed extends(r = l.PureComponent) {
       copied: !1
     }), en(this, "copyTimeout", void 0), en(this, "scrollerRef", l.createRef()), en(this, "searchBarRef", l.createRef()), en(this, "_mobileCloseRef", l.createRef()), en(this, "_searchCounter", 0), en(this, "_existingTimeout", null), en(this, "scrollPageUp", () => {
       var e;
-      null === (e = this.scrollerRef.current) || void 0 === e || e.scrollPageUp({
+      null == (e = this.scrollerRef.current) || e.scrollPageUp({
         animate: !0
       })
     }), en(this, "scrollPageDown", () => {
       var e;
-      null === (e = this.scrollerRef.current) || void 0 === e || e.scrollPageDown({
+      null == (e = this.scrollerRef.current) || e.scrollPageDown({
         animate: !0
       })
     }), en(this, "renderMobileCloseButton", () => (0, i.jsx)("div", {
@@ -532,7 +532,7 @@ class ed extends(r = l.PureComponent) {
       children: (0, i.jsx)(f.JcV, {
         containerRef: this._mobileCloseRef,
         children: (0, i.jsx)("div", {
-          children: (0, i.jsx)(x.Z, {
+          children: (0, i.jsx)(v.Z, {
             className: ee.mobileToolsCloseIcon,
             closeAction: this.props.onClose,
             keybind: "ESC"
@@ -578,15 +578,15 @@ class ed extends(r = l.PureComponent) {
       let e = this.searchBarRef.current;
       null == e || e.focus()
     }), en(this, "focusResult", e => {
-      v.Z.select(e)
+      y.Z.select(e)
     }), en(this, "handleSelect", (e, t) => {
       let {
         results: n,
         channel: r
       } = this.props;
-      null == t ? v.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
+      null == t ? y.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
     }), en(this, "handleSelectionChange", (e, t) => {
-      v.Z.select(t);
+      y.Z.select(t);
       let n = this.scrollerRef.current;
       null != n && n.scrollToIndex({
         section: e,
@@ -597,7 +597,7 @@ class ed extends(r = l.PureComponent) {
       let {
         channel: t
       } = this.props, n = (0, E.v_)(t);
-      v.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+      y.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
         F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -606,14 +606,14 @@ class ed extends(r = l.PureComponent) {
       }, 500)
     }), en(this, "handleRemoveUser", e => {
       let t = Array.from(this.props.selectedUsers);
-      v.Z.removeUser(t[e]), this.forceFocus()
+      y.Z.removeUser(t[e]), this.forceFocus()
     }), en(this, "handleClick", e => {
       let {
         selectedUsers: t,
         query: n,
         channel: r
       } = this.props;
-      t.has(e) ? v.Z.removeUser(e) : (v.Z.addUser(e), n.length > 0 && v.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
+      t.has(e) ? y.Z.removeUser(e) : (y.Z.addUser(e), n.length > 0 && y.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
     }), en(this, "handleAddFriendNavigation", () => {
       (0, T.uL)(J.Z5c.FRIENDS), _.Z.setSection(J.pJs.ADD_FRIEND), this.props.onClose()
     }), en(this, "handleScroll", () => {
@@ -639,13 +639,10 @@ class ed extends(r = l.PureComponent) {
     }), en(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
         r = (0, E.v_)(e),
-        i = D.Z.getChannelId() === e.id;
+        i = D.ZP.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, J.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (i) {
-          if (e.isDM() && n !== e.id) {
-            g.Z.call(n, !1, !0);
-            return
-          }
+          if (e.isDM() && n !== e.id) return void g.Z.call(n, !1, !0);
           g.Z.ring(n, t)
         }
       }), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
@@ -731,10 +728,10 @@ function eh(e) {
   l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, C), () => {
     V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, C)
   }), [m, C]);
-  let v = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  let y = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
-  }, []), null !== (t = null == v ? void 0 : v.bot) && void 0 !== t && t || null !== (n = null == v ? void 0 : v.isProvisional) && void 0 !== n && n) ? null : (0, i.jsx)(f.yRy, {
+  }, []), null != (t = null == y ? void 0 : y.bot) && t || null != (n = null == y ? void 0 : y.isProvisional) && n) ? null : (0, i.jsx)(f.yRy, {
     targetElementRef: g,
     renderPopout: e => (0, i.jsx)(ep, ei(er({}, e), {
       onClose: e.closePopout,

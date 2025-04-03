@@ -6,25 +6,48 @@ n.d(t, {
 function r(e) {
   let t = function(e) {
     var t;
-    let n, r, l;
-    let {
-      PI: i,
-      min: s,
-      max: o,
-      cos: a,
-      round: c
-    } = Math, d = e[0] | e[1] << 8 | e[2] << 16, u = e[3] | e[4] << 8, f = (63 & d) / 63, m = (d >> 6 & 63) / 31.5 - 1, h = (d >> 12 & 63) / 31.5 - 1, x = d >> 23, p = u >> 15, g = o(3, p ? x ? 5 : 7 : 7 & u), _ = o(3, p ? 7 & u : x ? 5 : 7), v = x ? (15 & e[5]) / 15 : 1, j = (e[5] >> 4) / 15, b = x ? 6 : 5, S = 0, C = (t, n, r) => {
-      let l = [];
-      for (let i = 0; i < n; i++)
-        for (let s = +!i; s * n < t * (n - i); s++) l.push(((e[b + (S >> 1)] >> ((1 & S++) << 2) & 15) / 7.5 - 1) * r);
-      return l
-    }, N = C(g, _, (d >> 18 & 31) / 31), y = C(3, 3, (u >> 3 & 63) / 63 * 1.25), Z = C(3, 3, (u >> 9 & 63) / 63 * 1.25), I = x && C(5, 5, j), w = (n = (t = e)[3], r = 128 & t[2], ((l = 128 & t[4]) ? r ? 5 : 7 : 7 & n) / (l ? 7 & n : r ? 5 : 7)), O = c(w > 1 ? 32 : 32 * w), T = c(w > 1 ? 32 / w : 32), E = new Uint8Array(O * T * 4), P = [], R = [];
+    let n, r, l, {
+        PI: i,
+        min: s,
+        max: o,
+        cos: a,
+        round: c
+      } = Math,
+      d = e[0] | e[1] << 8 | e[2] << 16,
+      u = e[3] | e[4] << 8,
+      f = (63 & d) / 63,
+      m = (d >> 6 & 63) / 31.5 - 1,
+      h = (d >> 12 & 63) / 31.5 - 1,
+      x = d >> 23,
+      p = u >> 15,
+      g = o(3, p ? x ? 5 : 7 : 7 & u),
+      _ = o(3, p ? 7 & u : x ? 5 : 7),
+      j = x ? (15 & e[5]) / 15 : 1,
+      v = (e[5] >> 4) / 15,
+      b = x ? 6 : 5,
+      S = 0,
+      C = (t, n, r) => {
+        let l = [];
+        for (let i = 0; i < n; i++)
+          for (let s = +!i; s * n < t * (n - i); s++) l.push(((e[b + (S >> 1)] >> ((1 & S++) << 2) & 15) / 7.5 - 1) * r);
+        return l
+      },
+      N = C(g, _, (d >> 18 & 31) / 31),
+      y = C(3, 3, (u >> 3 & 63) / 63 * 1.25),
+      Z = C(3, 3, (u >> 9 & 63) / 63 * 1.25),
+      I = x && C(5, 5, v),
+      w = (n = (t = e)[3], r = 128 & t[2], ((l = 128 & t[4]) ? r ? 5 : 7 : 7 & n) / (l ? 7 & n : r ? 5 : 7)),
+      O = c(w > 1 ? 32 : 32 * w),
+      T = c(w > 1 ? 32 / w : 32),
+      E = new Uint8Array(O * T * 4),
+      P = [],
+      R = [];
     for (let e = 0, t = 0; e < T; e++)
       for (let n = 0; n < O; n++, t += 4) {
         let r = f,
           l = m,
           c = h,
-          d = v;
+          d = j;
         for (let e = 0, t = o(g, x ? 5 : 3); e < t; e++) P[e] = a(i / O * (n + .5) * e);
         for (let t = 0, n = o(_, x ? 5 : 3); t < n; t++) R[t] = a(i / T * (e + .5) * t);
         for (let e = 0, t = 0; e < _; e++)
@@ -39,8 +62,8 @@ function r(e) {
             for (let n = +!e, r = 2 * R[e]; n < 5 - e; n++, t++) d += I[t] * P[n] * r;
         let u = r - 2 / 3 * l,
           p = (3 * r - u + c) / 2,
-          j = p - c;
-        E[t] = o(0, 255 * s(1, p)), E[t + 1] = o(0, 255 * s(1, j)), E[t + 2] = o(0, 255 * s(1, u)), E[t + 3] = o(0, 255 * s(1, d))
+          v = p - c;
+        E[t] = o(0, 255 * s(1, p)), E[t + 1] = o(0, 255 * s(1, v)), E[t + 2] = o(0, 255 * s(1, u)), E[t + 3] = o(0, 255 * s(1, d))
       }
     return {
       w: O,

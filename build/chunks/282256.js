@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(448986),
   u = n(353093),
   d = n(979264),
-  p = n(426781);
+  p = n(464271);
 let f = l.memo(function(e) {
   var t, n, {
       children: i,
@@ -39,28 +39,19 @@ let f = l.memo(function(e) {
     }),
     h = (0, c.Z)(() => {
       var e, t;
-      if (f) {
-        y({
-          maskImage: "none"
-        });
-        return
-      }
-      let n = null === (e = v.current) || void 0 === e ? void 0 : e.getBoundingClientRect(),
-        r = null === (t = b.current) || void 0 === t ? void 0 : t.getBoundingClientRect();
-      if (null == n || null == r) {
-        y({
-          maskImage: "none"
-        });
-        return
-      }
+      if (f) return void y({
+        maskImage: "none"
+      });
+      let n = null == (e = v.current) ? void 0 : e.getBoundingClientRect(),
+        r = null == (t = b.current) ? void 0 : t.getBoundingClientRect();
+      if (null == n || null == r) return void y({
+        maskImage: "none"
+      });
       let l = r.right - n.right,
         i = r.width - l;
-      if (i > r.width) {
-        y({
-          maskImage: "none"
-        });
-        return
-      }
+      if (i > r.width) return void y({
+        maskImage: "none"
+      });
       y({
         maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(i, "px)")
       })

@@ -9,7 +9,7 @@ var i, r = n(200651),
   s = n(468194),
   c = n(471445),
   o = n(686546),
-  u = n(571875),
+  u = n(292895),
   d = ((i = {}).SMALL_32 = "SMALL_32", i);
 let f = {
     SMALL_32: 24
@@ -37,7 +37,7 @@ let f = {
         hasActiveThreads: E
       });
     if (null == S) return null;
-    let A = (0, s.Zg)(null !== (t = null == b ? void 0 : b.toString()) && void 0 !== t ? t : null);
+    let A = (0, s.Zg)(null != (t = null == b ? void 0 : b.toString()) ? t : null);
     return (0, r.jsxs)("div", {
       role: "img",
       className: n,

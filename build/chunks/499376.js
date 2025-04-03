@@ -19,13 +19,13 @@ function c(e, t) {
     width: a,
     height: u
   } = e;
-  if (t && null != a && a > 0 && null != u && u > 0) {
-    var c;
+  if (t && null != a && a > 0 && null != u && u > 0)
     if ((0, o.CO)(n)) return "IMAGE";
-    if (!(0, o.NU)(n) || null == e.proxy_url) return "INVALID";
-    return (0, r.yE)(null !== (c = e.flags) && void 0 !== c ? c : 0, l.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
-  }
-  return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, i.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
+    else {
+      var c;
+      if (!(0, o.NU)(n) || null == e.proxy_url) return "INVALID";
+      return (0, r.yE)(null != (c = e.flags) ? c : 0, l.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
+    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, i.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
 }
 
 function d(e) {
@@ -36,7 +36,7 @@ function d(e) {
   } = e;
   if (null != n && n > 0 && null != r && r > 0) {
     if ((0, o.tw)(t)) return "IMAGE";
-    if ((0, o.X2)(t)) return "VIDEO"
+    else if ((0, o.X2)(t)) return "VIDEO"
   }
   return "VISUAL_PLACEHOLDER"
 }

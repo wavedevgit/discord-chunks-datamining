@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   J: () => y
 }), n(47120);
@@ -16,8 +16,8 @@ var r = n(200651),
   f = n(56848),
   p = n(378441),
   g = n(981631),
-  v = n(388032),
-  h = n(851318);
+  h = n(388032),
+  v = n(905490);
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ let y = e => {
     } = (0, d.Z)(null != S ? S[w] : null, {
       soundId: t.id
     }),
-    A = h[t.styleKey],
+    A = v[t.styleKey],
     W = i.useCallback(() => {
       n || !I ? ((0, _.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, b({
         voice_filter_id: t.id
@@ -75,83 +75,83 @@ let y = e => {
         volume: .5
       }), (.25 > Math.random() || w > 0) && null != S && T(e => (e + 1) % S.length)
     }, [a, k, w, S, t.id]),
-    F = null != j ? v.NW.string(j.name) : "";
+    F = null != j ? h.NW.string(j.name) : "";
   return (0, r.jsxs)("div", {
-    className: o()(h.filter, A, {
-      [h.selected]: C,
-      [h.locked]: I && !C
+    className: o()(v.filter, A, {
+      [v.selected]: C,
+      [v.locked]: I && !C
     }),
     children: [(0, r.jsxs)(s.P3F, {
-      className: h.selector,
+      className: v.selector,
       onClick: W,
       onMouseEnter: D,
       children: [(0, r.jsxs)("div", {
-        className: h.iconTreatmentsWrapper,
+        className: v.iconTreatmentsWrapper,
         children: [(0, r.jsxs)("div", {
-          className: o()(h.profile, {
-            [h.underDevelopment]: t.underDevelopment
+          className: o()(v.profile, {
+            [v.underDevelopment]: t.underDevelopment
           }),
           children: [(0, r.jsx)("img", {
-            className: h.thumbnail,
+            className: v.thumbnail,
             alt: "",
             src: null == j ? void 0 : j.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
-            className: h.insetBorder
+            className: v.insetBorder
           })]
         }), C && (0, r.jsx)("div", {
-          className: h.iconCircle,
+          className: v.iconCircle,
           children: (0, r.jsx)(s.owK, {
             size: "md",
             color: "currentColor",
-            colorClass: h.checkmark,
+            colorClass: v.checkmark,
             secondaryColor: l.Z.unsafe_rawColors.WHITE_500.css
           })
         }), I && !C && (0, r.jsx)("div", {
-          className: o()([h.iconCircle, h.lockedCircle]),
+          className: o()([v.iconCircle, v.lockedCircle]),
           children: (0, r.jsx)(s.mBM, {
             size: "custom",
             height: 16,
             width: 16,
             color: "currentColor",
-            colorClass: h.lockedIcon
+            colorClass: v.lockedIcon
           })
         }), N && (0, r.jsx)("div", {
-          className: o()([h.iconCircle, h.iconBorder]),
+          className: o()([v.iconCircle, v.iconBorder]),
           children: (0, r.jsx)("div", {
-            className: o()([h.clockCircle]),
+            className: o()([v.clockCircle]),
             children: (0, r.jsx)(s.T39, {
               size: "custom",
               height: 16,
               width: 16,
               color: "currentColor",
-              colorClass: h.clockIcon
+              colorClass: v.clockIcon
             })
           })
         }), E && (0, r.jsx)("div", {
-          className: h.spinnerWrapper,
+          className: v.spinnerWrapper,
           children: (0, r.jsx)(s.$jN, {
             type: s.$jN.Type.CHASING_DOTS,
             animated: !0,
-            className: h.spinner
+            className: v.spinner
           })
         })]
       }), (0, r.jsxs)(s.Text, {
-        className: h.filterName,
+        className: v.filterName,
         variant: "text-xs/medium",
         color: t.underDevelopment ? "header-muted" : "header-primary",
         children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", F]
       })]
     }), null != S && (0, r.jsx)(s.ua7, {
-      text: v.NW.string(L ? v.t.ItuPbm : v.t["0gtbEx"]),
+      text: h.NW.string(L ? h.t.ItuPbm : h.t["0gtbEx"]),
       children: e => {
         var t, n;
         return (0, r.jsx)(s.P3F, (t = b({}, e), n = n = {
-          className: o()([h.hoverButtonCircle, h.previewButton], {
-            [h.visible]: L
+          className: o()([v.hoverButtonCircle, v.previewButton], {
+            [v.visible]: L
           }),
           onClick: L ? Z : M,
-          "aria-label": v.NW.formatToPlainString(v.t.gDzvjY, {
+          "aria-label": h.NW.formatToPlainString(h.t.gDzvjY, {
             voiceFilterName: F
           }),
           children: L ? (0, r.jsx)(s.wNq, {

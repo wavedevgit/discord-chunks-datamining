@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   J: () => P,
@@ -22,24 +22,24 @@ var r = n(200651),
   x = n(768581),
   j = n(63063),
   N = n(434404),
-  v = n(999382),
-  _ = n(718157),
+  _ = n(999382),
+  v = n(718157),
   C = n(450474),
   O = n(190287),
   y = n(465520),
   I = n(981631),
   E = n(388032),
-  S = n(332075);
+  S = n(869562);
 let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   P = () => {
     let {
       guild: e,
       guildMetadata: t,
       submitting: n
-    } = (0, s.cj)([v.Z], () => ({
-      submitting: v.Z.isSubmitting(),
-      guild: v.Z.getGuild(),
-      guildMetadata: v.Z.getMetadata()
+    } = (0, s.cj)([_.Z], () => ({
+      submitting: _.Z.isSubmitting(),
+      guild: _.Z.getGuild(),
+      guildMetadata: _.Z.getMetadata()
     }));
     return (0, r.jsx)(d.Z, {
       submitting: n,
@@ -68,7 +68,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   w = () => {
     var e;
     let t = i.useRef(null),
-      d = (0, s.e7)([v.Z], () => v.Z.getGuild()),
+      d = (0, s.e7)([_.Z], () => _.Z.getGuild()),
       [P, w] = i.useState(!1);
     i.useEffect(() => {
       P || null == d || ((0, g.le)(), (0, g.aC)(d.id), (0, g.i3)(d.id), w(!0))
@@ -77,7 +77,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: R
     } = (0, s.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(I.Plq.MANAGE_GUILD, d)
-    })), Z = (0, s.e7)([v.Z], () => v.Z.isGuildMetadataLoaded()), D = (0, s.e7)([v.Z], () => null != d ? v.Z.getMetadata() : null), A = (0, s.e7)([v.Z], () => null != d && (null == D ? void 0 : D.isPublished) ? v.Z.getSlug() : null), [k, W] = i.useState([!0]), [L, M] = i.useState(!0), [G, U] = i.useState([!1]), [B, F] = i.useState([""]), z = e => {
+    })), Z = (0, s.e7)([_.Z], () => _.Z.isGuildMetadataLoaded()), D = (0, s.e7)([_.Z], () => null != d ? _.Z.getMetadata() : null), A = (0, s.e7)([_.Z], () => null != d && (null == D ? void 0 : D.isPublished) ? _.Z.getSlug() : null), [k, W] = i.useState([!0]), [L, M] = i.useState(!0), [G, U] = i.useState([!1]), [B, F] = i.useState([""]), z = e => {
       let t = Object.entries(y.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
@@ -91,8 +91,8 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         var t, n, r, i;
         let s = new URL(e).hostname.split(".");
         if (3 === s.length && "bandcamp" === s[1].toLowerCase()) return y.z.bandcamp.presentation;
-        let a = null !== (n = null === (t = s.shift()) || void 0 === t ? void 0 : t.toLowerCase()) && void 0 !== n ? n : "";
-        if ("www" === a && (a = null !== (i = null === (r = s.shift()) || void 0 === r ? void 0 : r.toLowerCase()) && void 0 !== i ? i : ""), a in y.z) return y.z[a].presentation;
+        let a = null != (n = null == (t = s.shift()) ? void 0 : t.toLowerCase()) ? n : "";
+        if ("www" === a && (a = null != (i = null == (r = s.shift()) ? void 0 : r.toLowerCase()) ? i : ""), a in y.z) return y.z[a].presentation;
         return null
       } catch (e) {
         return null
@@ -110,7 +110,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         }), F(t), W(e), M(e.every(e => !0 === e))
       }
     }, [D]);
-    let V = (0, s.e7)([v.Z], () => null != d ? v.Z.getErrors() : null);
+    let V = (0, s.e7)([_.Z], () => null != d ? _.Z.getErrors() : null);
     if (null == d || null == D) return null;
     let Y = e => {
         N.Z.updateGuild({
@@ -146,10 +146,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             description: d.description
           })
         };
-        if (e) {
-          t();
-          return
-        }
+        if (e) return void t();
         null != d.vanityURLCode ? n.e("66731").then(n.bind(n, 241485)).then(e => {
           e.default.open(t)
         }) : t()
@@ -164,7 +161,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let n = [...D.socialLinks],
           r = n[t],
           i = e;
-        0 === r.length && i.length > 1 && !1 === RegExp("^https?:").test(i) && (i = "https://" + i), !/\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) && (n[t] = i, (0, g.t$)(d.id, n))
+        0 === r.length && i.length > 1 && !1 === RegExp("^https?:").test(i) && (i = "https://" + i), /\.(zip|exe|pdf|dmg|msi|apk|rar|7z|tar|gz|iso|docx?|xlsx?|pptx?|mp4|mp3)$/i.test(i) || (n[t] = i, (0, g.t$)(d.id, n))
       },
       Q = e => {
         let t = [...G];
@@ -270,7 +267,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           className: S.description,
                           children: E.NW.string(E.t.MVXonJ)
                         })]
-                      }), (0, r.jsx)(_.E, {
+                      }), (0, r.jsx)(v.E, {
                         guildId: d.id,
                         guildMetadata: D,
                         isDisabled: !R
@@ -348,7 +345,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       onChange: e => {
                         var t;
                         N.Z.updateGuild({
-                          description: null !== (t = null == e ? void 0 : e.replaceAll("\n", "")) && void 0 !== t ? t : ""
+                          description: null != (t = null == e ? void 0 : e.replaceAll("\n", "")) ? t : ""
                         })
                       },
                       maxLength: 120,
@@ -406,7 +403,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         minLength: 300,
                         maxLength: 2400,
                         disabled: !R,
-                        defaultDirty: (null === (e = D.about) || void 0 === e ? void 0 : e.length) > 0
+                        defaultDirty: (null == (e = D.about) ? void 0 : e.length) > 0
                       }, "text-area-".concat(Z))]
                     }), (null == V ? void 0 : V.about) != null ? (0, r.jsx)(l.Text, {
                       color: "text-danger",
@@ -516,4 +513,4 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       })
     })
   },
-  R = () => null == (0, s.e7)([v.Z], () => v.Z.getGuild()) ? null : (0, r.jsx)(w, {})
+  R = () => null == (0, s.e7)([_.Z], () => _.Z.getGuild()) ? null : (0, r.jsx)(w, {})

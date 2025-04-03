@@ -19,10 +19,10 @@ var n = r(200651),
   j = r(45572),
   f = r(126982),
   y = r(791785),
-  v = r(51499),
-  g = r(612853),
-  C = r(614277),
-  O = r(712297),
+  g = r(51499),
+  C = r(612853),
+  O = r(614277),
+  v = r(712297),
   S = r(982204),
   P = r(653798),
   I = r(594174),
@@ -33,7 +33,7 @@ var n = r(200651),
   R = r(257493),
   A = r(981631),
   D = r(388032),
-  B = r(478431);
+  B = r(363833);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,7 +130,7 @@ let Z = e => {
       skuId: r
     } = e, {
       skusById: l
-    } = (0, O.Z)({
+    } = (0, v.Z)({
       applicationId: A.XAJ,
       skuIDs: [r],
       isGift: !1,
@@ -228,7 +228,7 @@ let Z = e => {
         orbPriceAmount: t,
         submitting: l,
         onClick: s
-      }), (0, n.jsx)(g.Z, {})]
+      }), (0, n.jsx)(C.Z, {})]
     })
   },
   J = e => {
@@ -246,28 +246,28 @@ let Z = e => {
       onRedeemVirtualCurrency: b,
       isRedeeming: h,
       orbRedemptionError: f
-    } = (0, R.C)(), y = (0, N.c)(), g = (0, l.useRef)(y), O = (0, s.e7)([I.default], () => k.ZP.canUseCollectibles(I.default.getCurrentUser()));
+    } = (0, R.C)(), y = (0, N.c)(), C = (0, l.useRef)(y), v = (0, s.e7)([I.default], () => k.ZP.canUseCollectibles(I.default.getCurrentUser()));
     (0, l.useEffect)(() => {
       u === j.A.COMPLETED && r()
     }, [u, r]), (0, l.useEffect)(() => {
-      null != f && null !== g.current && (g.current = null)
+      null != f && null !== C.current && (C.current = null)
     }, [f]);
     let S = (0, l.useCallback)(() => {
-      g.current = y, b(() => {
+      C.current = y, b(() => {
         c(j.A.COMPLETED)
       })
     }, [b, c, y]);
     if (null == i || null == a) return (0, n.jsx)(o.$jN, {
       type: o.$jN.Type.WANDERING_CUBES
     });
-    let P = null !== (t = g.current) && void 0 !== t ? t : y,
+    let P = null != (t = C.current) ? t : y,
       _ = (0, p.T4)({
         product: a,
-        isPremiumUser: O
+        isPremiumUser: v
       }),
       E = null !== _ ? _.amount : null;
     return (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(v.Z, {}), (0, n.jsxs)(C.C3, {
+      children: [(0, n.jsx)(g.Z, {}), (0, n.jsxs)(O.C3, {
         children: [(0, n.jsx)(M, {
           error: f
         }), (0, n.jsx)(z, {
@@ -275,7 +275,7 @@ let Z = e => {
           orbPriceAmount: E,
           orbBalance: P
         })]
-      }), (0, n.jsx)(C.O3, {
+      }), (0, n.jsx)(O.O3, {
         children: (0, n.jsx)(G, {
           orbPriceAmount: E,
           orbBalance: P,

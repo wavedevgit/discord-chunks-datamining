@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -9,7 +9,7 @@ var r = n(581050),
 function s(e) {
   var t, n;
   return {
-    isApplicationRejected: (null == e ? void 0 : null === (t = e.latestRequest) || void 0 === t ? void 0 : t.state) === r.X.REJECTED,
+    isApplicationRejected: (null == e || null == (t = e.latestRequest) ? void 0 : t.state) === r.X.REJECTED,
     requestCooldownDuration: function(e) {
       let t;
       if (null == e) return;
@@ -29,6 +29,6 @@ function s(e) {
       }) : i.NW.formatToPlainString(i.t.iXLF9f, {
         minutes: s
       })
-    }(null == e ? void 0 : null === (n = e.rejection) || void 0 === n ? void 0 : n.can_reapply_at)
+    }(null == e || null == (n = e.rejection) ? void 0 : n.can_reapply_at)
   }
 }

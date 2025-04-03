@@ -7,8 +7,8 @@ var t = l(200651),
   a = l(120356),
   i = l.n(a),
   s = l(442837),
-  o = l(481060),
-  c = l(904245),
+  c = l(481060),
+  o = l(904245),
   d = l(368844),
   u = l(73315),
   m = l(454585),
@@ -20,8 +20,8 @@ var t = l(200651),
   b = l(695346),
   j = l(592125),
   C = l(984933),
-  v = l(375954),
-  _ = l(496675),
+  _ = l(375954),
+  v = l(496675),
   I = l(451478),
   Z = l(768581),
   N = l(526120),
@@ -29,8 +29,8 @@ var t = l(200651),
   O = l(825334),
   P = l(981631),
   w = l(388032),
-  E = l(526002),
-  S = l(50398),
+  E = l(79341),
+  S = l(73433),
   k = l(931057);
 
 function A(e) {
@@ -38,38 +38,38 @@ function A(e) {
       firstMedia: r,
       channelId: a
     } = e,
-    o = (0, s.e7)([j.Z], () => j.Z.getChannel(a)),
-    [c, d] = (0, g.hL)({
+    c = (0, s.e7)([j.Z], () => j.Z.getChannel(a)),
+    [o, d] = (0, g.hL)({
       media: r,
-      channel: o
+      channel: c
     }),
     m = (0, g.MC)(d),
     x = (0, s.e7)([I.Z], () => I.Z.isFocused()),
     p = (0, h.d$)(r.src),
     C = b.QK.useSetting(),
     {
-      src: v,
-      width: _,
+      src: _,
+      width: v,
       height: Z,
       alt: N
     } = r;
-  return Z > _ ? l = 72 : n = 72, (0, t.jsxs)("div", {
+  return Z > v ? l = 72 : n = 72, (0, t.jsxs)("div", {
     className: E.media,
     children: [(0, f.Yi)({
-      src: v,
+      src: _,
       maxHeight: n,
       maxWidth: l,
-      width: _,
+      width: v,
       height: Z,
-      alt: null != N && c && null != m ? m : N,
+      alt: null != N && o && null != m ? m : N,
       autoPlay: C,
-      animated: p && !c && x,
+      animated: p && !o && x,
       containerClassName: E.thumbnailContainer,
       imageClassName: i()({
-        [E.obscured]: c
+        [E.obscured]: o
       }),
       analyticsSource: "ResourceChannelMedia"
-    }), c && (0, t.jsx)(u.Z, {
+    }), o && (0, t.jsx)(u.Z, {
       obscureReason: d,
       iconClassname: E.obscuredTag
     })]
@@ -79,9 +79,9 @@ function A(e) {
 function M(e) {
   let {
     resource: n
-  } = e, l = (0, s.e7)([j.Z], () => j.Z.getChannel(n.channelId)), a = (0, s.e7)([v.Z], () => v.Z.getMessages(n.channelId)), u = (0, s.e7)([_.Z], () => _.Z.can(P.Plq.VIEW_CHANNEL, l)), h = a.first(), g = (0, y.Z)(h), f = (0, d.zy)(h, !1), x = (null == f ? void 0 : f.length) > 0 ? f[0] : null, b = null != l && null == a.first() && !a.loadingMore && !a.ready && !a.hasFetched && u;
+  } = e, l = (0, s.e7)([j.Z], () => j.Z.getChannel(n.channelId)), a = (0, s.e7)([_.Z], () => _.Z.getMessages(n.channelId)), u = (0, s.e7)([v.Z], () => v.Z.can(P.Plq.VIEW_CHANNEL, l)), h = a.first(), g = (0, y.Z)(h), f = (0, d.zy)(h, !1), x = (null == f ? void 0 : f.length) > 0 ? f[0] : null, b = null != l && null == a.first() && !a.loadingMore && !a.ready && !a.hasFetched && u;
   if (r.useEffect(() => {
-      b && c.Z.fetchMessages({
+      b && o.Z.fetchMessages({
         channelId: n.channelId,
         after: n.channelId,
         limit: 5
@@ -92,7 +92,7 @@ function M(e) {
       icon: n.icon
     }),
     I = null == n.description || 0 === n.description.length;
-  return (0, t.jsxs)(o.P3F, {
+  return (0, t.jsxs)(c.P3F, {
     className: E.row,
     onClick: e => {
       null != l && (e.shiftKey ? (0, N.C3)(l.guild_id, l.id) : p.Z.openResourceChannelAsSidebar({
@@ -102,12 +102,12 @@ function M(e) {
     },
     children: [(0, t.jsxs)("div", {
       className: E.content,
-      children: [(0, t.jsx)(o.Text, {
+      children: [(0, t.jsx)(c.Text, {
         className: E.title,
         variant: "text-md/bold",
         color: "header-primary",
         children: n.title
-      }), I && null != g && (0, t.jsx)(o.Text, {
+      }), I && null != g && (0, t.jsx)(c.Text, {
         className: E.messageContent,
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -116,7 +116,7 @@ function M(e) {
           guildId: l.guild_id,
           channelId: l.id
         })
-      }), !I && (0, t.jsx)(o.Text, {
+      }), !I && (0, t.jsx)(c.Text, {
         className: i()(E.messageContent, S.markup),
         variant: "text-sm/normal",
         color: "header-secondary",
@@ -150,7 +150,7 @@ function W(e) {
   } = e, r = (0, O.Z)(n.id);
   return 0 === r.length ? l ? null : (0, t.jsxs)("div", {
     className: E.emptyContainer,
-    children: [(0, t.jsx)(o.X6q, {
+    children: [(0, t.jsx)(c.X6q, {
       variant: "heading-xl/bold",
       color: "header-primary",
       children: w.NW.string(w.t.owvC9f)
@@ -158,7 +158,7 @@ function W(e) {
       className: E.emptyStateImage,
       src: k,
       alt: ""
-    }), (0, t.jsx)(o.zxk, {
+    }), (0, t.jsx)(c.zxk, {
       className: E.emptyStateButton,
       onClick: () => {
         let e = C.ZP.getDefaultChannel(n.id);
@@ -169,7 +169,7 @@ function W(e) {
     })]
   }) : (0, t.jsxs)("div", {
     className: E.container,
-    children: [(0, t.jsx)(o.X6q, {
+    children: [(0, t.jsx)(c.X6q, {
       variant: "heading-lg/bold",
       color: "header-primary",
       children: w.NW.string(w.t.xwY4LS)

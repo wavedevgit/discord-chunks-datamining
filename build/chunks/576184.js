@@ -2,22 +2,22 @@
 s.r(r), s.d(r, {
   default: () => N
 });
-var t = s(200651),
-  o = s(192379),
+var o = s(200651),
+  t = s(192379),
   a = s(120356),
   c = s.n(a),
   i = s(568611),
   n = s(481060),
   d = s(710845),
-  l = s(361207),
-  w = s(954824),
+  w = s(361207),
+  l = s(954824),
   b = s(981631),
   m = s(388032),
-  p = s(945919);
+  p = s(764406);
 let h = [{
     id: "discord",
     getName: () => m.NW.string(m.t.uON9Ul),
-    url: (0, l.t3)()
+    url: (0, w.t3)()
   }, {
     id: "chrome",
     getName: () => m.NW.string(m.t["80Ut6e"]),
@@ -32,54 +32,53 @@ let h = [{
     firefox: "browserFirefox",
     chrome: "browserChrome"
   };
-class u extends o.Component {
+class u extends t.Component {
   render() {
-    let e;
-    let {
+    let e, {
       id: r,
       getName: s,
-      url: o
+      url: t
     } = this.props.browser;
-    return e = null != o ? (0, t.jsx)(n.eee, {
+    return e = null != t ? (0, o.jsx)(n.eee, {
       className: p.btn,
-      href: o,
+      href: t,
       children: m.NW.string(m.t["1WjMbG"])
-    }) : (0, t.jsx)(i.rU, {
+    }) : (0, o.jsx)(i.rU, {
       className: p.btn,
       to: b.Z5c.APPS,
       children: m.NW.string(m.t["1WjMbG"])
-    }), (0, t.jsxs)("li", {
+    }), (0, o.jsxs)("li", {
       className: p.browserItem,
-      children: [(0, t.jsx)("div", {
+      children: [(0, o.jsx)("div", {
         className: c()(p.browserItemText, p.browser, p[_[r]])
-      }), (0, t.jsx)("div", {
+      }), (0, o.jsx)("div", {
         className: p.browserItemText,
         children: s()
       }), e]
     })
   }
 }
-class x extends o.Component {
+class x extends t.Component {
   componentDidMount() {
-    w.Z.launch("discord://" + this.props.location.pathname, e => {
+    l.Z.launch("discord://" + this.props.location.pathname, e => {
       new d.Z("UnsupportedBrowser").log("discord://", e)
     })
   }
   render() {
-    let e = h.map(e => (0, t.jsx)(u, {
+    let e = h.map(e => (0, o.jsx)(u, {
       browser: e
     }, e.id));
-    return (0, t.jsx)("div", {
+    return (0, o.jsx)("div", {
       className: p.unsupportedBrowser,
-      children: (0, t.jsxs)("div", {
+      children: (0, o.jsxs)("div", {
         className: p.wrap,
-        children: [(0, t.jsx)(n.H, {
+        children: [(0, o.jsx)(n.H, {
           className: p.title,
           children: m.NW.string(m.t["3h+n+/"])
-        }), (0, t.jsx)("p", {
+        }), (0, o.jsx)("p", {
           className: p.message,
           children: m.NW.string(m.t.yNDLDA)
-        }), (0, t.jsx)("ul", {
+        }), (0, o.jsx)("ul", {
           className: p.browserList,
           children: e
         })]

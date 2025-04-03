@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   T: () => o,
   h: () => a
@@ -12,8 +12,7 @@ let l = e => e,
       o = a(l, t, n, i),
       s = r.useRef(e);
     return r.useEffect(() => {
-      let t = o(e);
-      s.current = t
+      s.current = o(e)
     }, [e, o]), 0 === t ? e : s.current
   },
   a = function(e, t) {
@@ -22,6 +21,6 @@ let l = e => e,
       o = r.useRef((0, i.throttle)(e, t, l));
     return r.useEffect(() => (o.current = (0, i.throttle)(e, t, l), () => {
       var e;
-      null === (e = o.current) || void 0 === e || e.cancel()
+      null == (e = o.current) || e.cancel()
     }), [e, t, l, ...n]), o.current
   }

@@ -1,8 +1,8 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
-  Hs: () => _,
-  ZP: () => f,
-  qy: () => h
+  Hs: () => p,
+  ZP: () => h,
+  qy: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -12,14 +12,14 @@ var r = n(200651),
   a = n(561308),
   c = n(297781),
   u = n(443487),
-  d = n(220359);
-let _ = [c.E6],
-  p = [o._.WEEK];
+  d = n(522314);
+let p = [c.E6],
+  _ = [o._.WEEK];
 
-function h(e) {
-  return null != e && p.includes(e)
+function f(e) {
+  return null != e && _.includes(e)
 }
-let f = i.memo(e => {
+let h = i.memo(e => {
   let {
     entry: t,
     channel: n,
@@ -29,8 +29,8 @@ let f = i.memo(e => {
   } = (0, l.rv)({
     entry: t,
     showCoverImage: !1
-  }), p = (0, a.Nq)(t);
-  return null != p && h(p) ? (0, r.jsxs)(u.Zb, {
+  }), _ = (0, a.Nq)(t);
+  return null != _ && f(_) ? (0, r.jsxs)(u.Zb, {
     selected: i,
     children: [(0, r.jsxs)(u.e$, {
       children: [(0, r.jsx)(u.F9, {
@@ -41,7 +41,7 @@ let f = i.memo(e => {
         children: t.extra.game_name
       }), (0, r.jsx)(c.Gk, {
         location: c.Gt.CARD,
-        children: _.map((e, n) => (0, r.jsx)(e, {
+        children: p.map((e, n) => (0, r.jsx)(e, {
           entry: t
         }, n))
       })]

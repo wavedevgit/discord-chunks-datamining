@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(481060),
-  i = n(911969),
-  s = n(835473),
+  s = n(911969),
+  i = n(835473),
   o = n(987509),
   u = n(72214),
   c = n(592125),
@@ -18,7 +18,7 @@ var r = n(200651),
   p = n(617266),
   g = n(333861),
   y = n(388032),
-  v = n(958934),
+  v = n(120575),
   j = n(621054);
 
 function x(e) {
@@ -52,7 +52,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let _ = [i.yU.CHAT],
+let _ = [s.yU.CHAT],
   N = () => {
     (0, a.Mr3)(g.s)
   };
@@ -61,18 +61,18 @@ function S(e) {
   let {
     sendLabel: t,
     canSend: n,
-    isSending: i,
-    onSend: s
+    isSending: s,
+    onSend: i
   } = e, o = l.useCallback(() => {
-    s()
-  }, [s]);
+    i()
+  }, [i]);
   return (0, r.jsx)(a.mzw, {
     className: v.footerWithMessage,
     children: (0, r.jsx)("div", {
       className: v.footerButtons,
       children: (0, r.jsx)(a.zxk, {
         className: v.sendWithMessage,
-        submitting: i,
+        submitting: s,
         disabled: !n,
         onClick: o,
         children: t
@@ -84,7 +84,7 @@ function S(e) {
 function P(e) {
   var t, {
       applicationId: n,
-      channel: i,
+      channel: s,
       command: g,
       onClose: P,
       requireLaunchChannel: w,
@@ -106,13 +106,13 @@ function P(e) {
       }
       return l
     }(e, ["applicationId", "channel", "command", "onClose", "requireLaunchChannel", "onShareResult", "previewMessage"]);
-  let L = l.useMemo(() => (0, o.dL)(i.id), [i]),
+  let L = l.useMemo(() => (0, o.dL)(s.id), [s]),
     [D, M] = l.useState(!1),
     {
       commands: T,
       loading: k
     } = (t = {
-      channel: i,
+      channel: s,
       type: "channel"
     }, (0, b.v1)(t, {
       commandTypes: _
@@ -140,7 +140,7 @@ function P(e) {
     X = l.useCallback(() => {
       E(!1), P()
     }, [E, P]),
-    [B] = (0, s.Z)([n]),
+    [B] = (0, i.Z)([n]),
     V = l.useCallback(() => {
       U("")
     }, [U]),
@@ -148,7 +148,7 @@ function P(e) {
   l.useEffect(() => {
     if ("" === q) {
       var e;
-      null === (e = Y.current) || void 0 === e || e.focus()
+      null == (e = Y.current) || e.focus()
     }
   }, [q]);
   let J = l.useCallback(e => {

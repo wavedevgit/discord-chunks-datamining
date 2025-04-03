@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   default: () => H
 }), r(47120), r(26686);
@@ -38,7 +38,7 @@ var n = r(200651),
   D = r(978313),
   W = r(206583),
   R = r(388032),
-  Z = r(231104);
+  Z = r(263930);
 let G = () => (0, n.jsxs)("div", {
   className: Z.gameBadge,
   children: [(0, n.jsx)(d.YqE, {
@@ -72,7 +72,7 @@ function B(e) {
       return t[e]
     }
     return ""
-  }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, h = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), O = null !== (t = r.name) && void 0 !== t ? t : null == o ? void 0 : o.name;
+  }, [r]), m = null == o ? void 0 : o.getIconURL(160, y.$k ? "webp" : "png"), g = j.default.extractTimestamp(o.id), b = s()().diff(s()(g), "days") <= W.G, h = l.some(e => (0, _.ig)(e) === c.o.GLOBAL), O = null != (t = r.name) ? t : null == o ? void 0 : o.name;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: Z.gameArtHero,
@@ -150,7 +150,7 @@ function K(e) {
     children: [(0, n.jsx)(A.Z, {
       entries: o,
       viewId: u,
-      officialGuildId: null == i ? void 0 : null === (t = i.guild) || void 0 === t ? void 0 : t.id,
+      officialGuildId: null == i || null == (t = i.guild) ? void 0 : t.id,
       onClose: c
     }), (0, n.jsx)(T.Z, {
       detectedGame: r,
@@ -212,8 +212,8 @@ let F = e => e.filter(N.z6).slice(0, 5),
       clientThemesClassName: v
     } = (0, g.ZP)(), j = (0, u.e7)([O.default], () => O.default.locale), N = a.useMemo(() => (0, x.fP)(), []), w = (0, u.Wu)([E.Z], () => {
       var e;
-      return (null !== (e = E.Z.getSimilarGames(r)) && void 0 !== e ? e : []).slice(0, 25)
-    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), M = (0, m.q)(r), L = (0, u.e7)([h.Z], () => h.Z.getGame(r)), D = null !== (t = null == L ? void 0 : L.name) && void 0 !== t ? t : null == M ? void 0 : M.name, W = (e, t) => {
+      return (null != (e = E.Z.getSimilarGames(r)) ? e : []).slice(0, 25)
+    }), [C, S] = a.useState(null), T = (0, I.Ns)(r), [A, k] = a.useState(null), M = (0, m.q)(r), L = (0, u.e7)([h.Z], () => h.Z.getGame(r)), D = null != (t = null == L ? void 0 : L.name) ? t : null == M ? void 0 : M.name, W = (e, t) => {
       var n;
       (0, x.UE)({
         gameName: null != D ? D : "",
@@ -221,7 +221,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
         action: e,
         similarGameId: t,
         viewId: N,
-        officialGuildId: null == A ? void 0 : null === (n = A.guild) || void 0 === n ? void 0 : n.id
+        officialGuildId: null == A || null == (n = A.guild) ? void 0 : n.id
       })
     };
     return ((0, f.ZP)(() => {
@@ -265,7 +265,7 @@ let F = e => e.filter(N.z6).slice(0, 5),
         playedFriendIds: T.map(e => e.author_id),
         playedFriendsData: n,
         similarGames: F(w),
-        officialGuildId: null == A ? void 0 : null === (e = A.guild) || void 0 === e ? void 0 : e.id
+        officialGuildId: null == A || null == (e = A.guild) ? void 0 : e.id
       })
     }), null == L || null == M) ? null : (0, n.jsx)(d.Y0X, {
       transitionState: s,

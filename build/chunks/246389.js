@@ -24,7 +24,7 @@ let f = (0, u.Z)((0, i.Z)(function(e) {
     isViewOnly: b
   } = e, {
     analyticsLocations: E
-  } = (0, a.ZP)(c.Z.CONTEXT_MENU), O = null !== (t = null == s ? void 0 : s[0]) && void 0 !== t ? t : E[0], g = (0, d.Z)(n.id, i, !0, O, b);
+  } = (0, a.ZP)(c.Z.CONTEXT_MENU), O = null != (t = null == s ? void 0 : s[0]) ? t : E[0], g = (0, d.Z)(n.id, i, !0, O, b);
   return (0, r.jsx)(l.v2r, {
     navId: "guild-moderation-roles",
     onClose: () => {

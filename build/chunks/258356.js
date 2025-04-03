@@ -1,7 +1,7 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  X: () => g,
-  Z: () => m
+  X: () => h,
+  Z: () => f
 }), n(266796);
 var r = n(200651);
 n(192379);
@@ -13,9 +13,9 @@ var i = n(481060),
   c = n(601964),
   u = n(230224),
   d = n(388032),
-  p = n(516181);
+  p = n(807048);
 
-function h(e) {
+function g(e) {
   var t;
   let {
     guildScheduledEvent: n,
@@ -27,7 +27,7 @@ function h(e) {
     className: p.guildEventCard,
     children: [(0, r.jsx)(l.ZP, {
       name: n.name,
-      description: null !== (t = n.description) && void 0 !== t ? t : void 0,
+      description: null != (t = n.description) ? t : void 0,
       headerVariant: "heading-md/medium",
       descriptionClassName: p.__invalid_channelDescription,
       guildId: n.guild_id,
@@ -49,13 +49,13 @@ function h(e) {
   })
 }
 
-function g(e) {
+function h(e) {
   var t;
   let {
     invite: n
   } = e, l = null != n.guild ? new c.ZP(n.guild) : null;
   if (null == l) return null;
-  let s = null !== (t = l.description) && void 0 !== t ? t : "";
+  let s = null != (t = l.description) ? t : "";
   return (0, r.jsxs)("div", {
     className: p.guildInfoCard,
     children: [(0, r.jsx)(i.X6q, {
@@ -97,7 +97,7 @@ function g(e) {
   })
 }
 
-function m(e) {
+function f(e) {
   let {
     invite: t,
     channel: n,
@@ -106,7 +106,7 @@ function m(e) {
   } = e, {
     guild_scheduled_event: a
   } = t;
-  return null != a ? (0, r.jsx)(h, {
+  return null != a ? (0, r.jsx)(g, {
     guildScheduledEvent: a,
     channel: n,
     isSubmitting: i,

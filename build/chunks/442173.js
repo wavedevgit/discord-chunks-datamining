@@ -75,7 +75,7 @@ function x(e) {
       } = e;
       i && (0, s.Kw)(f.v.IN_APP_REPORTS_FEEDBACK), (0, u.Z)({
         rating: l,
-        problem: null !== (a = null == c ? void 0 : c.value) && void 0 !== a ? a : null,
+        problem: null != (a = null == c ? void 0 : c.value) ? a : null,
         feedback: d,
         reportId: t,
         reportType: x,

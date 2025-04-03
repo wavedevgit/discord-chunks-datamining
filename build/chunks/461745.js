@@ -1,8 +1,8 @@
 /** Chunk was on 80284 **/
 l.d(t, {
-  BK: () => y,
-  Fj: () => v,
-  ZP: () => b
+  BK: () => E,
+  Fj: () => y,
+  ZP: () => v
 }), l(653041), l(47120);
 var n, r, a = l(200651),
   s = l(192379),
@@ -12,7 +12,7 @@ var n, r, a = l(200651),
   c = l(565138),
   p = l(981631),
   h = l(388032),
-  d = l(819880);
+  d = l(708554);
 
 function g(e, t, l) {
   return t in e ? Object.defineProperty(e, t, {
@@ -27,8 +27,8 @@ let f = Object.freeze({
   MEDIUM: d.medium,
   LARGE: d.large
 });
-var v = ((r = {}).MEMBER = "MEMBER", r.ROLE = "ROLE", r.CHANNEL = "CHANNEL", r.GUILD = "GUILD", r.USER = "USER", r);
-let y = e => {
+var y = ((r = {}).MEMBER = "MEMBER", r.ROLE = "ROLE", r.CHANNEL = "CHANNEL", r.GUILD = "GUILD", r.USER = "USER", r);
+let E = e => {
   let {
     hasContent: t,
     onClear: l,
@@ -75,7 +75,7 @@ let y = e => {
     })
   })
 };
-class E extends(n = s.Component) {
+class b extends(n = s.Component) {
   componentDidUpdate(e) {
     let {
       focusAfterReady: t,
@@ -142,7 +142,7 @@ class E extends(n = s.Component) {
       case p.yXg.BACKSPACE:
         if ((null == s || 0 === s.length) && null != o && o.length > 0) {
           var c, h;
-          e.preventDefault(), e.stopPropagation(), null === (c = (h = this.props).onRemoveTag) || void 0 === c || c.call(h, o.length - 1)
+          e.preventDefault(), e.stopPropagation(), null == (c = (h = this.props).onRemoveTag) || c.call(h, o.length - 1)
         }
         break;
       case p.yXg.ARROW_DOWN:
@@ -169,9 +169,9 @@ class E extends(n = s.Component) {
       size: o,
       maxHeight: p,
       tags: f,
-      onActivate: v,
-      className: E,
-      inputProps: b,
+      onActivate: y,
+      className: b,
+      inputProps: v,
       focusAfterReady: N
     } = this.props, C = null != t && t.length > 0, m = !1, R = [];
     return null != f && f.length > 0 && ("string" == typeof f[0] ? f.forEach((e, t) => R.push((0, a.jsxs)(u.eee, {
@@ -218,7 +218,7 @@ class E extends(n = s.Component) {
         theme: n,
         children: c => (0, a.jsx)("div", {
           ref: this.containerRef,
-          className: i()(E, d.container, o, c, {
+          className: i()(b, d.container, o, c, {
             [d.disabled]: r
           }),
           children: (0, a.jsxs)(u.zJl, {
@@ -252,8 +252,8 @@ class E extends(n = s.Component) {
               disabled: r,
               "aria-disabled": r,
               autoFocus: !N && e,
-              onMouseDown: v
-            }, this.defaultInputProps, b)), null != s ? (0, a.jsx)(y, {
+              onMouseDown: y
+            }, this.defaultInputProps, v)), null != s ? (0, a.jsx)(E, {
               size: o,
               themeOverride: n,
               hasContent: C,
@@ -319,7 +319,7 @@ class E extends(n = s.Component) {
     })
   }
 }
-g(E, "Sizes", f), g(E, "defaultProps", {
+g(b, "Sizes", f), g(b, "defaultProps", {
   size: f.SMALL,
   query: "",
   sections: [],
@@ -332,4 +332,4 @@ g(E, "Sizes", f), g(E, "defaultProps", {
   preventEscapePropagation: !0,
   useKeyboardNavigation: !0
 });
-let b = E
+let v = b

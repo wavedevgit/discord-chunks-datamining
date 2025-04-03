@@ -1,7 +1,7 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   TE: () => C,
-  h_: () => v
+  h_: () => y
 }), n(47120);
 var r = n(192379),
   i = n(392711),
@@ -29,27 +29,26 @@ function C(e, t) {
   }), [t, e])
 }
 
-function v(e) {
+function y(e) {
   return {
     guildPopulated: function(e) {
       let t = (0, o.e7)([u.Z], () => u.Z.getChannel(null == e ? void 0 : e.systemChannelId)),
         n = (0, o.Wu)([m.Z], () => null != t ? m.Z.getMessages(t.id).toArray() : []);
       return (0, o.e7)([p.Z], () => {
         var t;
-        let r = null !== (t = p.Z.getMemberCount(null == e ? void 0 : e.id)) && void 0 !== t ? t : 0,
+        let r = null != (t = p.Z.getMemberCount(null == e ? void 0 : e.id)) ? t : 0,
           i = n.some(e => e.type === _.uaV.USER_JOIN);
         return r > 1 || i
       }, [e, n])
     }(e),
     guildMessaged: function(e) {
       let t = (0, o.e7)([u.Z], () => null != e ? u.Z.getMutableBasicGuildChannelsForGuild(e.id) : null);
-      return function(e) {
-        let t = (0, o.e7)([c.default], () => c.default.getId());
-        return (0, o.e7)([m.Z], () => l().some(e, e => {
-          let n = m.Z.getMessages(e.id).toArray();
-          return l().some(n, e => e.author.id === t && !(0, s.Z)(e))
-        }))
-      }(r.useMemo(() => null == t ? [] : l().values(t), [t]))
+      var n = r.useMemo(() => null == t ? [] : l().values(t), [t]);
+      let i = (0, o.e7)([c.default], () => c.default.getId());
+      return (0, o.e7)([m.Z], () => l().some(n, e => {
+        let t = m.Z.getMessages(e.id).toArray();
+        return l().some(t, e => e.author.id === i && !(0, s.Z)(e))
+      }))
     }(e),
     guildPersonalized: function(e) {
       let t = (0, o.e7)([f.Z], () => f.Z.hasLayers()),

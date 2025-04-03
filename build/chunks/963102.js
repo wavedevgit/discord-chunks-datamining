@@ -5,8 +5,8 @@ n.d(t, {
 }), n(653041);
 var r = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   i = n(442837),
   s = n(481060),
   c = n(37234),
@@ -18,22 +18,22 @@ var r = n(200651),
   g = n(775451),
   h = n(594174),
   m = n(471731),
-  v = n(335131),
-  _ = n(215023),
+  _ = n(335131),
+  v = n(215023),
   C = n(388032),
-  x = n(162167);
+  x = n(774457);
 
 function O(e) {
   let {
     tab: t,
     displayText: n,
     selected: l,
-    handleTransition: o
+    handleTransition: a
   } = e;
   return (0, r.jsx)(b.Z.Title, {
-    onClick: () => o(t),
+    onClick: () => a(t),
     wrapperClassName: x.tabWrapper,
-    className: a()(x.tab, {
+    className: o()(x.tab, {
       [x.selected]: l
     }),
     children: n
@@ -44,7 +44,7 @@ function y(e) {
   let {
     isFullScreen: t,
     isLayer: n,
-    onClose: o,
+    onClose: a,
     selectedTab: y,
     handleTransition: j
   } = e, k = (0, d.ZP)(), S = (0, i.e7)([h.default], () => h.default.getCurrentUser()), P = (null == S ? void 0 : S.isStaff()) || (null == S ? void 0 : S.isStaffPersonal()) || !1, {
@@ -52,24 +52,24 @@ function y(e) {
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
   }), w = [{
-    tab: _.AW.HOME,
+    tab: v.AW.HOME,
     displayText: C.NW.string(C.t.ijDDw8)
   }, {
-    tab: _.AW.CATALOG,
+    tab: v.AW.CATALOG,
     displayText: C.NW.string(C.t.xFcotb)
   }];
   E && w.push({
-    tab: _.AW.ORBS,
+    tab: v.AW.ORBS,
     displayText: C.NW.string(C.t["KUYR+P"])
   });
-  let I = n ? v.DR : o,
+  let I = n ? _.DR : a,
     B = l.useCallback(() => {
       t && (I(), (0, c.Ou)()), (0, p.navigateToQuestHome)()
     }, [I, t]);
   return (0, r.jsx)(s.f6W, {
     theme: k,
     children: e => (0, r.jsxs)(b.Z, {
-      className: a()(e, x.headerBar, {
+      className: o()(e, x.headerBar, {
         [x.fullscreenHeaderBar]: t
       }),
       innerClassname: E ? x.headerBarInner : void 0,

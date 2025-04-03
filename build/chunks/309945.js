@@ -10,9 +10,9 @@ var r = t(200651),
   l = t(692547),
   c = t(899667),
   d = t(905128),
-  u = t(296260),
+  u = t(680278),
   p = t(388032),
-  m = t(519175);
+  m = t(45355);
 
 function x(e) {
   let {
@@ -20,12 +20,12 @@ function x(e) {
     powerups: t
   } = e, x = (0, a.e7)([d.Z], () => {
     var e, t;
-    return null !== (t = null === (e = d.Z.getStateForGuild(n)) || void 0 === e ? void 0 : e.appliedBoosts) && void 0 !== t ? t : 0
-  }), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), _ = x - o.useMemo(() => {
+    return null != (t = null == (e = d.Z.getStateForGuild(n)) ? void 0 : e.appliedBoosts) ? t : 0
+  }), _ = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), v = x - o.useMemo(() => {
     var e, n, t;
-    return null !== (t = null == v ? void 0 : null === (n = v.filter) || void 0 === n ? void 0 : null === (e = n.call(v, e => !e.ended && null == e.endsAt)) || void 0 === e ? void 0 : e.length) && void 0 !== t ? t : 0
-  }, [v]);
-  return _ <= 0 ? null : (0, r.jsxs)("div", {
+    return null != (t = null == _ || null == (n = _.filter) || null == (e = n.call(_, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? t : 0
+  }, [_]);
+  return v <= 0 ? null : (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(i.P4T, {
       color: l.Z.colors.TEXT_WARNING,
@@ -37,7 +37,7 @@ function x(e) {
     }), (0, r.jsx)(s.xv, {
       variant: "text-sm/medium",
       children: p.NW.formatToPlainString(u.Z.iAaAiI, {
-        boostCount: _,
+        boostCount: v,
         perksString: t.map(e => e.title).join(", ")
       })
     })]

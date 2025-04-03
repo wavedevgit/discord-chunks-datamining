@@ -22,7 +22,7 @@ function u(e) {
   let {
     countryCode: r
   } = e;
-  null != r && (c = null !== (t = (0, l.Zz)(r)) && void 0 !== t ? t : (0, l.K4)())
+  null != r && (c = null != (t = (0, l.Zz)(r)) ? t : (0, l.K4)())
 }
 class d extends(s = i.ZP.DeviceSettingsStore) {
   initialize(e) {

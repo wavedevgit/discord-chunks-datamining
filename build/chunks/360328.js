@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   s: () => p
 }), n(47120);
@@ -17,10 +17,7 @@ function p(e, t, p, h) {
     (0, o.showToast)((0, o.createToast)(d.NW.string(d.t.R0RpRU), o.ToastType.FAILURE))
   }, []), _ = i.useCallback(async () => {
     if (!f && null != e && null != t && null != p) {
-      if (null != g) {
-        a.default.selectPrivateChannel(g.id);
-        return
-      }
+      if (null != g) return void a.default.selectPrivateChannel(g.id);
       if (!f) {
         m(!0);
         try {

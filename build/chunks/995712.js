@@ -8,7 +8,7 @@ var l = n(481060),
   i = n(686546),
   a = n(768581),
   o = n(388032),
-  s = n(414053);
+  s = n(519582);
 let c = e => {
   var t;
   let {
@@ -17,11 +17,11 @@ let c = e => {
     id: c,
     icon: d,
     name: u
-  } = n, m = null !== (t = a.ZP.getGuildIconURL({
+  } = n, m = null != (t = a.ZP.getGuildIconURL({
     id: c,
     icon: d,
     size: 32
-  })) && void 0 !== t ? t : void 0;
+  })) ? t : void 0;
   return (0, r.jsxs)("div", {
     className: s.container,
     children: [(0, r.jsx)(l.X6q, {

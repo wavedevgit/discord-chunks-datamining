@@ -1,9 +1,9 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
-  RE: () => d,
+  RE: () => _,
   RN: () => A,
   po: () => N,
-  vN: () => _,
+  vN: () => d,
   xb: () => I,
   zq: () => T
 });
@@ -15,7 +15,7 @@ var r, l = n(192379),
   E = n(594174),
   c = n(91047),
   u = n(981631);
-let d = (e, t) => {
+let _ = (e, t) => {
   let {
     guildId: n,
     userId: r,
@@ -33,7 +33,7 @@ let d = (e, t) => {
   })
 };
 
-function _(e, t, n, r) {
+function d(e, t, n, r) {
   let {
     analyticsLocations: a
   } = (0, s.ZP)();
@@ -72,7 +72,7 @@ function T(e) {
     var t;
     if (null == e) return null;
     let n = o.Z.getGuild(e.guildId);
-    return null == n || null == e.highestRoleId ? null : null !== (t = o.Z.getRole(n.id, e.highestRoleId)) && void 0 !== t ? t : null
+    return null == n || null == e.highestRoleId ? null : null != (t = o.Z.getRole(n.id, e.highestRoleId)) ? t : null
   }, [e])
 }
 var N = ((r = {})[r.LOADING = 0] = "LOADING", r[r.SUCCESS_STILL_INDEXING = 1] = "SUCCESS_STILL_INDEXING", r[r.SUCCESS_EMPTY = 2] = "SUCCESS_EMPTY", r[r.SUCCESS_FULL = 3] = "SUCCESS_FULL", r);

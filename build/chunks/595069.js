@@ -10,11 +10,10 @@ var r = n(668530),
   u = r.Symbol,
   d = u && u.iterator,
   p = /^[+-]?0x/i,
-  h = a(p.exec),
-  f = 8 !== l(c + "08") || 22 !== l(c + "0x16") || d && !o(function() {
-    l(Object(d))
-  });
-e.exports = f ? function(e, t) {
+  h = a(p.exec);
+e.exports = 8 !== l(c + "08") || 22 !== l(c + "0x16") || d && !o(function() {
+  l(Object(d))
+}) ? function(e, t) {
   var n = s(i(e));
   return l(n, t >>> 0 || (h(p, n) ? 16 : 10))
 } : l

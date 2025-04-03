@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   N: () => M
 });
@@ -6,8 +6,8 @@ var r = n(399606),
   i = n(780384),
   s = n(230711),
   a = n(410030),
-  o = n(594174),
-  l = n(424218),
+  l = n(594174),
+  o = n(424218),
   c = n(74538),
   d = n(474936),
   u = n(981631),
@@ -24,8 +24,8 @@ var r = n(399606),
   j = n(680313),
   O = n(926433),
   C = n(302036),
-  v = n(994554),
-  S = n(1549),
+  S = n(994554),
+  v = n(1549),
   T = n(13327),
   I = n(59137),
   y = n(405991),
@@ -42,10 +42,10 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
   M = e => {
     let {
       styles: t
-    } = e, n = (0, a.ZP)(), i = (0, r.e7)([o.default], () => {
-      let e = o.default.getCurrentUser();
+    } = e, n = (0, a.ZP)(), i = (0, r.e7)([l.default], () => {
+      let e = l.default.getCurrentUser();
       return c.ZP.canUsePremiumProfileCustomization(e)
-    }), M = (0, l.BU)(d.Uq / 1024, {
+    }), M = (0, o.BU)(d.Uq / 1024, {
       useKibibytes: !0
     });
     return {
@@ -132,19 +132,19 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       stickers: {
         title: g.NW.string(g.t["1c+xwc"]),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersBurst: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.hJG8ZG),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       stickersPerkDiscoverability: {
         title: g.NW.string(g.t.tzdIwM),
         description: g.NW.string(g.t.FXlU29),
-        imageSource: B(n, v, k),
+        imageSource: B(n, S, k),
         imageClassName: t.stickersImage
       },
       streaming: {
@@ -156,7 +156,7 @@ let B = (e, t, n) => (0, i.wj)(e) ? t : n,
       superReactions: {
         title: g.NW.string(g.t.uZt5q6),
         description: g.NW.string(g.t.ZK3Zoa),
-        imageSource: B(n, S, T),
+        imageSource: B(n, v, T),
         imageClassName: t.superReactionsImage
       },
       upload: {

@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   h = n(430824),
   f = n(768581),
   b = n(388032),
-  x = n(83843);
+  x = n(773100);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,8 +51,8 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = function(e) {
-  var t, s, v, _, C;
+let _ = function(e) {
+  var t, s, _, v, C;
   let {
     guildId: O,
     action: y,
@@ -65,7 +65,7 @@ let v = function(e) {
   } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(y.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), {
     customEmoji: D,
     unicodeEmoji: A
-  } = (0, u.Z)(null === (t = y.emoji) || void 0 === t ? void 0 : t.id, null === (s = y.emoji) || void 0 === s ? void 0 : s.name), k = null == y.emoji || null != D || null != A, W = f.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = y.emoji) ? void 0 : t.id, null == (s = y.emoji) ? void 0 : s.name), k = null == y.emoji || null != D || null != A, W = f.ZP.getNewMemberActionIconURL({
     channelId: y.channelId,
     icon: y.icon
   }), L = null;
@@ -96,7 +96,7 @@ let v = function(e) {
     })
   }, [O, y, I, E, S]);
   if (null == R || null == Z) return null;
-  let z = null !== (C = (0, c.KS)(R)) && void 0 !== C ? C : o.VL1;
+  let z = null != (C = (0, c.KS)(R)) ? C : o.VL1;
   return (0, r.jsxs)("div", {
     className: x.actionItemContainer,
     children: [(0, r.jsxs)("div", {
@@ -128,8 +128,8 @@ let v = function(e) {
       }) : (0, r.jsx)("div", {
         className: x.actionItemEmojiWrapper,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null === (v = y.emoji) || void 0 === v ? void 0 : v.id,
-          emojiName: null === (_ = y.emoji) || void 0 === _ ? void 0 : _.name,
+          emojiId: null == (_ = y.emoji) ? void 0 : _.id,
+          emojiName: null == (v = y.emoji) ? void 0 : v.name,
           size: g.R.MEDIUM,
           defaultComponent: (0, r.jsx)(z, {})
         })

@@ -3,8 +3,8 @@ n.d(t, {
   default: () => x
 });
 var a = n(200651),
-  o = n(192379),
-  r = n(442837),
+  r = n(192379),
+  o = n(442837),
   l = n(704215),
   s = n(481060),
   i = n(211266),
@@ -22,8 +22,8 @@ function x(e) {
     transitionState: t,
     onClose: x,
     channel: N
-  } = e, g = (0, i.Z)(m.TL), p = (0, r.e7)([d.default], () => d.default.getUser(N.getRecipientId()));
-  return o.useEffect(() => {
+  } = e, g = (0, i.Z)(m.TL), p = (0, o.e7)([d.default], () => d.default.getUser(N.getRecipientId()));
+  return r.useEffect(() => {
     _.default.track(f.rMx.OPEN_MODAL, {
       type: "DM Mute Feedback Modal"
     })
@@ -43,13 +43,13 @@ function x(e) {
     onSubmit: function(e) {
       let {
         problem: t,
-        dontShowAgain: o,
-        feedback: r,
+        dontShowAgain: r,
+        feedback: o,
         closeClicked: i
       } = e;
-      o && (0, c.EW)(l.z.USER_DM_MUTE_FEEDBACK);
+      r && (0, c.EW)(l.z.USER_DM_MUTE_FEEDBACK);
       let u = null == t || i;
-      (0, h.Z)(t, r, u, o), u || (0, s.ZDy)(async () => {
+      (0, h.Z)(t, o, u, r), u || (0, s.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));

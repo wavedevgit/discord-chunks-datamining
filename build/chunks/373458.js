@@ -11,58 +11,58 @@ var n = r(166763),
   f = a.isEngine("Gecko");
 t.exports = function(t, e) {
   void 0 !== t._pendingStateFromBeforeInput && (t.update(t._pendingStateFromBeforeInput), t._pendingStateFromBeforeInput = void 0);
-  var r, a, p, h, d = t.editor.ownerDocument.defaultView.getSelection(),
-    g = d.anchorNode,
-    y = d.isCollapsed;
-  if ((null == g ? void 0 : g.nodeType) === Node.TEXT_NODE || (null == g ? void 0 : g.nodeType) === Node.ELEMENT_NODE) {
-    if (g.nodeType === Node.TEXT_NODE && (null !== g.previousSibling || null !== g.nextSibling)) {
-      var v = g.parentNode;
-      g.nodeValue = v.textContent;
-      for (var m = v.firstChild; null !== m; m = m.nextSibling) m !== g && v.removeChild(m)
+  var r = t.editor.ownerDocument.defaultView.getSelection(),
+    a = r.anchorNode,
+    p = r.isCollapsed;
+  if ((null == a ? void 0 : a.nodeType) === Node.TEXT_NODE || (null == a ? void 0 : a.nodeType) === Node.ELEMENT_NODE) {
+    if (a.nodeType === Node.TEXT_NODE && (null !== a.previousSibling || null !== a.nextSibling)) {
+      var h = a.parentNode;
+      a.nodeValue = h.textContent;
+      for (var d = h.firstChild; null !== d; d = d.nextSibling) d !== a && h.removeChild(d)
     }
-    var _ = g.textContent,
-      b = t._latestEditorState,
-      S = l(s(g)),
-      w = i.decode(S),
-      x = w.blockKey,
-      k = w.decoratorKey,
-      E = w.leafKey,
-      C = b.getBlockTree(x).getIn([k, "leaves", E]),
-      D = C.start,
-      O = C.end,
-      K = b.getCurrentContent(),
-      T = K.getBlockForKey(x),
-      M = T.getText().slice(D, O);
-    if (_.endsWith("\n\n") && (_ = _.slice(0, -1)), _ === M) {
-      var A = e.nativeEvent.inputType;
-      if (A) {
-        var I, B, L = (I = A, B = b, "deleteContentBackward" === I ? c(B) : B);
-        L !== b && (t.restoreEditorDOM(), t.update(L))
+    var g = a.textContent,
+      y = t._latestEditorState,
+      v = l(s(a)),
+      m = i.decode(v),
+      _ = m.blockKey,
+      b = m.decoratorKey,
+      S = m.leafKey,
+      w = y.getBlockTree(_).getIn([b, "leaves", S]),
+      x = w.start,
+      k = w.end,
+      E = y.getCurrentContent(),
+      C = E.getBlockForKey(_),
+      D = C.getText().slice(x, k);
+    if (g.endsWith("\n\n") && (g = g.slice(0, -1)), g === D) {
+      var O = e.nativeEvent.inputType;
+      if (O) {
+        var K, T, M, A, I = "deleteContentBackward" === O ? c(y) : y;
+        I !== y && (t.restoreEditorDOM(), t.update(I))
       }
       return
     }
-    var R = b.getSelection(),
-      F = R.merge({
-        anchorOffset: D,
-        focusOffset: O,
+    var B = y.getSelection(),
+      L = B.merge({
+        anchorOffset: x,
+        focusOffset: k,
         isBackward: !1
       }),
-      N = T.getEntityAt(D),
-      P = u(N) ? K.getEntity(N) : null,
-      z = "MUTABLE" === (null != P ? P.getMutability() : null),
-      j = n.replaceText(K, F, _, T.getInlineStyleAt(D), z ? T.getEntityAt(D) : null);
-    if (f) h = (p = D + Math.min(r = d.anchorOffset, a = d.focusOffset)) + Math.abs(r - a), r = p, a = h;
+      R = C.getEntityAt(x),
+      F = u(R) ? E.getEntity(R) : null,
+      N = "MUTABLE" === (null != F ? F.getMutability() : null),
+      P = n.replaceText(E, L, g, C.getInlineStyleAt(x), N ? C.getEntityAt(x) : null);
+    if (f) A = (M = x + Math.min(K = r.anchorOffset, T = r.focusOffset)) + Math.abs(K - T), K = M, T = A;
     else {
-      var U = _.length - M.length;
-      p = R.getStartOffset(), h = R.getEndOffset(), r = y ? h + U : p, a = h + U
+      var z = g.length - D.length;
+      M = B.getStartOffset(), A = B.getEndOffset(), K = p ? A + z : M, T = A + z
     }
-    var q = j.merge({
-      selectionBefore: K.getSelectionAfter(),
-      selectionAfter: R.merge({
-        anchorOffset: r,
-        focusOffset: a
+    var j = P.merge({
+      selectionBefore: E.getSelectionAfter(),
+      selectionAfter: B.merge({
+        anchorOffset: K,
+        focusOffset: T
       })
     });
-    t.update(o.push(b, q, z ? "spellcheck-change" : "apply-entity"))
+    t.update(o.push(y, j, N ? "spellcheck-change" : "apply-entity"))
   }
 }

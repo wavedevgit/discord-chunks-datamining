@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => _
 });
@@ -16,12 +16,12 @@ var o = t(442837),
   p = t(91433),
   b = t(944043),
   y = t(502762),
-  v = t(530),
-  m = t(740628),
-  g = t(643518),
-  I = t(228168),
-  j = t(981631),
-  h = t(84695);
+  m = t(530),
+  g = t(740628),
+  I = t(643518),
+  j = t(228168),
+  v = t(981631),
+  h = t(405666);
 
 function _(e) {
   var n;
@@ -43,7 +43,7 @@ function _(e) {
     originApplicationId: s.Z.getOriginApplicationId(t.id)
   })), A = (0, l.vh)(t.id), w = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === _.id, R = (0, a.I5)(_), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, g.Z)({
+  }), L = t.id === _.id, R = (0, a.I5)(_), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, I.Z)({
     user: t,
     currentUser: _,
     guildId: x,
@@ -51,9 +51,9 @@ function _(e) {
   });
   return (0, r.jsxs)("div", {
     className: h.body,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(m.Z, {
       user: t,
-      profileType: I.y0.FULL_SIZE,
+      profileType: j.y0.FULL_SIZE,
       nickname: M,
       pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
@@ -62,15 +62,15 @@ function _(e) {
       }),
       tags: (0, r.jsx)(d.Z, {
         displayProfile: Z,
-        profileType: I.y0.FULL_SIZE,
+        profileType: j.y0.FULL_SIZE,
         onClose: S
       })
-    }), T === j.OGo.PENDING_INCOMING && (0, r.jsx)(y.Z.Overlay, {
+    }), T === v.OGo.PENDING_INCOMING && (0, r.jsx)(y.Z.Overlay, {
       className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
         applicationId: w ? C : void 0,
-        guildId: null !== (n = null == Z ? void 0 : Z.guildId) && void 0 !== n ? n : void 0,
+        guildId: null != (n = null == Z ? void 0 : Z.guildId) ? n : void 0,
         channelId: O,
         friendToken: E,
         className: h.friendRequestBanner
@@ -92,7 +92,7 @@ function _(e) {
       onInteraction: S
     }), (0, r.jsx)(y.Z.Overlay, {
       className: h.overlay,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(g.Z, {
         user: t,
         currentUser: _,
         displayProfile: Z,

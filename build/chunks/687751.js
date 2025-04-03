@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  o = n(317770),
-  a = n(592125),
+  a = n(317770),
+  o = n(592125),
   s = n(944486),
   c = n(914010),
   u = n(594174),
@@ -40,9 +40,9 @@ function b(e, t) {
   var n;
   if (null == e) return;
   let r = u.default.getCurrentUser();
-  (null === (n = a.Z.getChannel(t)) || void 0 === n ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(f.L0.NSFW_CHANNEL)
+  (null == (n = o.Z.getChannel(t)) ? void 0 : n.isNSFW()) && null != r && null == r.nsfwAllowed && (0, d.mN)(f.L0.NSFW_CHANNEL)
 }
-class _ extends o.Z {
+class _ extends a.Z {
   _initialize() {
     l.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), l.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), l.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), l.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), l.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), l.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure)
   }
@@ -66,7 +66,7 @@ class _ extends o.Z {
     (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("63288"), n.e("1337"), n.e("10530")]).then(n.bind(n, 746882));
+      } = await Promise.all([n.e("63288"), n.e("1337"), n.e("33312")]).then(n.bind(n, 746882));
       return n => (0, r.jsx)(e, m({
         source: t
       }, n))

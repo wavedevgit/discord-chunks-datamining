@@ -19,7 +19,7 @@ var n = a(200651),
   p = a(981631),
   h = a(186901),
   x = a(388032),
-  P = a(849660),
+  P = a(984214),
   k = a(74830),
   I = a(13299);
 l.ZP.initialize();
@@ -40,7 +40,7 @@ function f(e) {
     }, [a, e]), t
   }(c);
   s.useEffect(() => {
-    !T && (null == a ? ((0, _.dA)({
+    T || (null == a ? ((0, _.dA)({
       questId: c,
       event: p.rMx.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT
     }), o.Z.openNativeAppModal("quests", p.Etm.DEEP_LINK, {

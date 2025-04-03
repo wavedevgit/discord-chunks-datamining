@@ -18,24 +18,24 @@ async function f(e, t) {
   let {
     channelId: f,
     editMetadata: b,
-    analyticsLocations: v
-  } = t, g = a.Z.getChannel(f);
-  if (null != g) try {
-    var j;
+    analyticsLocations: g
+  } = t, j = a.Z.getChannel(f);
+  if (null != j) try {
+    var h;
     let t = await (0, d.rO)(e, b),
-      n = null !== (j = e.name) && void 0 !== j ? j : (0, p.yl)(s.default.extractTimestamp(e.id)),
+      n = null != (h = e.name) ? h : (0, p.yl)(s.default.extractTimestamp(e.id)),
       r = (0, u.Z)(n);
     (0, c.d)([new File([t], "".concat("" !== r ? r : "clip", ".mp4"), {
       type: "video/mp4"
-    })], g, i.d.ChannelMessage, {
+    })], j, i.d.ChannelMessage, {
       filesMetadata: [{
         clip: e
       }]
     }), o.default.track(m.rMx.CLIP_SHARED, {
-      location_stack: v,
-      guild_id: g.guild_id,
-      channel_id: g.id,
-      channel_type: g.type,
+      location_stack: g,
+      guild_id: j.guild_id,
+      channel_id: j.id,
+      channel_type: j.type,
       application_id: e.applicationId,
       clip_id: e.id
     })

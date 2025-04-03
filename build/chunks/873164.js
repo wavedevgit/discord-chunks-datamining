@@ -5,11 +5,11 @@ n.d(t, {
 var r = n(392711),
   s = n.n(r),
   o = n(570140),
-  i = n(317770),
-  a = n(120421),
+  a = n(317770),
+  i = n(120421),
   c = n(477839),
   l = n(981631),
-  u = n(884479),
+  u = n(622802),
   d = n(388032);
 
 function f(e, t, n) {
@@ -20,12 +20,12 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class p extends i.Z {
+class p extends a.Z {
   _initialize() {
-    this.loaded = !0, this.startingTime = Date.now(), a.Z.addChangeListener(this._onStoreChange)
+    this.loaded = !0, this.startingTime = Date.now(), i.Z.addChangeListener(this._onStoreChange)
   }
   _terminate() {
-    this.loaded = !1, a.Z.removeChangeListener(this._onStoreChange), o.Z.dispatch({
+    this.loaded = !1, i.Z.removeChangeListener(this._onStoreChange), o.Z.dispatch({
       type: "LOCAL_ACTIVITY_UPDATE",
       socketId: "clicker-game",
       activity: void 0
@@ -39,7 +39,7 @@ class p extends i.Z {
         type: l.IIU.PLAYING,
         name: d.NW.string(u.Z["7qZdOz"]),
         details: d.NW.formatToPlainString(u.Z["A3tW/f"], {
-          total: Math.round(a.Z.lifetimePoints)
+          total: Math.round(i.Z.lifetimePoints)
         }),
         state: function(e) {
           if (null == e) return d.NW.string(u.Z.HXxY0N);
@@ -48,7 +48,7 @@ class p extends i.Z {
           });
           if ("purchase-item-upgrade" === e.type) {
             let t = (0, c.r7)()[e.id],
-              n = a.Z.getNumPurchasesForItemUpgrade(t.itemId, e.id),
+              n = i.Z.getNumPurchasesForItemUpgrade(t.itemId, e.id),
               r = "string" == typeof t.name ? t.name : d.NW.formatToPlainString(t.name, {
                 numPurchasing: n
               });
@@ -59,7 +59,7 @@ class p extends i.Z {
           return "unlock-achievement" === e.type ? d.NW.formatToPlainString(u.Z.hUterq, {
             name: (0, c.EC)()[e.id].name
           }) : d.NW.string(u.Z.HXxY0N)
-        }(a.Z.getLastAction()),
+        }(i.Z.getLastAction()),
         timestamps: {
           start: this.startingTime
         }

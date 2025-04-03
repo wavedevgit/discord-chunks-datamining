@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   Z: () => R
 }), r(47120), r(789020);
@@ -90,12 +90,12 @@ async function W(e) {
     };
   null != G && (H.content = null == G ? void 0 : G.content), null != N.Z.getPendingReply(W) && (H.type = k.uaV.REPLY, H.message_reference = B.messageReference, H.allowed_mentions = B.allowedMentions, (0, I.A6)(W));
   let [Q, z] = (0, w.Z)(H.content);
-  Q && (H.content = z, H.flags = (0, T.pj)(null !== (r = H.flags) && void 0 !== r ? r : 0, k.iLy.SUPPRESS_NOTIFICATIONS));
-  let Y = null !== (n = B.nonce) && void 0 !== n ? n : (0, h.r)(),
+  Q && (H.content = z, H.flags = (0, T.pj)(null != (r = H.flags) ? r : 0, k.iLy.SUPPRESS_NOTIFICATIONS));
+  let Y = null != (n = B.nonce) ? n : (0, h.r)(),
     X = (0, _.ZP)({
       channelId: W,
       content: H.content,
-      tts: null !== (d = null == G ? void 0 : G.tts) && void 0 !== d && d,
+      tts: null != (d = null == G ? void 0 : G.tts) && d,
       type: H.type,
       messageReference: H.message_reference,
       flags: H.flags,
@@ -128,10 +128,7 @@ async function W(e) {
         fileItems: e.items,
         failureCode: t,
         errorMessage: null == n ? void 0 : n.msg
-      }), t === k.evJ.EXPLICIT_CONTENT) {
-      i.Z.sendExplicitMediaClydeError(W, null == r ? void 0 : r.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
-      return
-    }
+      }), t === k.evJ.EXPLICIT_CONTENT) return void i.Z.sendExplicitMediaClydeError(W, null == r ? void 0 : r.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
     if (t === k.evJ.AUTOMOD_MESSAGE_BLOCKED) {
       let e = {
           code: t,
@@ -158,7 +155,7 @@ async function W(e) {
         var d;
         (0, s.openUploadError)({
           title: M.NW.string(M.t.B3vFdX),
-          help: null !== (d = null == r ? void 0 : r.message) && void 0 !== d ? d : M.NW.string(M.t.zMEjJi)
+          help: null != (d = null == r ? void 0 : r.message) ? d : M.NW.string(M.t.zMEjJi)
         })
       }
       "" !== H.content && "" === C.Z.getDraft(W, Z) && o.Z.saveDraft(W, H.content, Z), 0 === S.Z.getUploadCount(W, Z) && l.Z.setUploads({
@@ -180,7 +177,7 @@ async function W(e) {
       name: r.name,
       id: r.id
     }, void 0, !0, j.LL.MessageSent))
-  }), null == B || null === (t = B.confettiPotionData) || void 0 === t || t.callback(), await U.uploadFiles(R, H), F.resolve(), F.promise
+  }), null == B || null == (t = B.confettiPotionData) || t.callback(), await U.uploadFiles(R, H), F.resolve(), F.promise
 }
 let R = {
   instantBatchUpload: function(e) {
@@ -248,10 +245,8 @@ let R = {
         }), (0, O.x)({
           fileItems: t.items,
           failureCode: d
-        }), d === k.evJ.EXPLICIT_CONTENT) {
-        i.Z.sendExplicitMediaClydeError(r, null == p ? void 0 : p.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
-        return
-      }(0, s.openUploadError)({
+        }), d === k.evJ.EXPLICIT_CONTENT) return void i.Z.sendExplicitMediaClydeError(r, null == p ? void 0 : p.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
+      (0, s.openUploadError)({
         title: M.NW.string(M.t.B3vFdX),
         help: M.NW.format(M.t.gIlRx8, {
           onClick: () => {

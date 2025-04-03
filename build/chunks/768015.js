@@ -10,8 +10,8 @@ function l(e) {
     problem: t,
     channel: n,
     embeddedActivityLocation: l,
-    feedback: o,
-    activityApplication: r,
+    feedback: r,
+    activityApplication: o,
     analyticsData: c,
     location: s,
     rating: u = null
@@ -37,11 +37,11 @@ function l(e) {
     reason: t,
     guild_id: null == n ? void 0 : n.getGuildId(),
     channel_id: null == n ? void 0 : n.id,
-    application_id: null == r ? void 0 : r.id,
-    application_name: null == r ? void 0 : r.name,
+    application_id: null == o ? void 0 : o.id,
+    application_name: null == o ? void 0 : o.name,
     location: s,
     rating: u,
-    feedback: o,
+    feedback: r,
     embedded_activity_location_kind: l.kind
   }, c))
 }

@@ -9,8 +9,8 @@ var l = r(120356),
   s = r.n(l),
   i = r(780384),
   a = r(481060),
-  o = r(239091),
-  c = r(37234),
+  c = r(239091),
+  o = r(37234),
   u = r(410030),
   d = r(44315),
   m = r(565138),
@@ -21,15 +21,15 @@ var l = r(120356),
   x = r(228168),
   v = r(981631),
   g = r(388032),
-  h = r(662553),
-  y = r(744133);
+  h = r(301150),
+  y = r(67487);
 let O = (0, a.pxk)(a.EFr.SIZE_16);
 
 function N(e) {
   let {
     user: t,
     guild: l,
-    nick: c,
+    nick: o,
     theme: u,
     onSelect: p
   } = e, j = t.hasAvatarForGuild(l.id);
@@ -42,10 +42,10 @@ function N(e) {
     className: h.listRow,
     onClick: p,
     onContextMenu: e => {
-      (0, o.jW)(e, async () => {
+      (0, c.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([r.e("48835"), r.e("25292"), r.e("95477"), r.e("90508"), r.e("11212"), r.e("6536"), r.e("80284"), r.e("20875"), r.e("9710"), r.e("24967"), r.e("7654"), r.e("62117"), r.e("60691"), r.e("76607"), r.e("70205"), r.e("49049"), r.e("44156"), r.e("87185"), r.e("62940"), r.e("6850"), r.e("55666"), r.e("16114"), r.e("58227"), r.e("44088"), r.e("97590"), r.e("93375"), r.e("64679"), r.e("37865"), r.e("21881"), r.e("69760"), r.e("33213"), r.e("76772")]).then(r.bind(r, 545135));
+        } = await Promise.all([r.e("48835"), r.e("25292"), r.e("95477"), r.e("90508"), r.e("11212"), r.e("35397"), r.e("80284"), r.e("20875"), r.e("9710"), r.e("24967"), r.e("7654"), r.e("62117"), r.e("60691"), r.e("76607"), r.e("70205"), r.e("49049"), r.e("44156"), r.e("87185"), r.e("49286"), r.e("6850"), r.e("55666"), r.e("16114"), r.e("58227"), r.e("44088"), r.e("39149"), r.e("93375"), r.e("64679"), r.e("15327"), r.e("21881"), r.e("69760"), r.e("33213"), r.e("79213")]).then(r.bind(r, 545135));
         return t => {
           var r, s;
           return (0, n.jsx)(e, (r = function(e) {
@@ -95,14 +95,14 @@ function N(e) {
       children: [(0, n.jsx)("div", {
         className: h.listName,
         children: l.toString()
-      }), j || null != c ? (0, n.jsxs)("div", {
+      }), j || null != o ? (0, n.jsxs)("div", {
         className: y.guildNick,
         children: [j && (0, n.jsx)(a.qEK, {
           src: t.getAvatarURL(l.id, O),
           size: a.EFr.SIZE_16,
           className: y.guildAvatar,
           "aria-hidden": !0
-        }), null != c ? c : f.ZP.getName(t)]
+        }), null != o ? o : f.ZP.getName(t)]
       }) : null]
     })]
   })
@@ -117,8 +117,8 @@ function P(e) {
   } = (0, j.KZ)(), {
     mutualGuilds: s,
     isFetching: i
-  } = (0, b.Z)(t), o = (0, u.ZP)(), d = e => {
-    (0, p.X)(e), r(), (0, c.xf)()
+  } = (0, b.Z)(t), c = (0, u.ZP)(), d = e => {
+    (0, p.X)(e), r(), (0, o.xf)()
   };
   return (0, n.jsx)(a.zJl, {
     className: h.listScroller,
@@ -135,7 +135,7 @@ function P(e) {
         user: t,
         guild: r,
         nick: s,
-        theme: o,
+        theme: c,
         onSelect: () => {
           l({
             action: "PRESS_MUTUAL_GUILD"

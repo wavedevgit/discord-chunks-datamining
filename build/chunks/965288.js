@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => w,
   y: () => A
@@ -20,14 +20,14 @@ var r = n(200651),
   b = n(213609),
   _ = n(795318),
   C = n(184301),
-  v = n(347475),
-  y = n(314897),
-  x = n(271383),
+  y = n(347475),
+  x = n(314897),
+  v = n(271383),
   j = n(709586),
   O = n(5192),
   E = n(590415),
   N = n(354459),
-  I = n(94583);
+  I = n(387147);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -112,7 +112,7 @@ let Z = i.memo(function(e) {
             [I.invited]: h
           })
         }), (0, r.jsx)("img", {
-          src: null !== (t = s.getAvatarURL(l.guild_id, 56, !1)) && void 0 !== t ? t : void 0,
+          src: null != (t = s.getAvatarURL(l.guild_id, 56, !1)) ? t : void 0,
           alt: s.username,
           "aria-label": s.username,
           className: o()(I.avatar, {
@@ -139,11 +139,11 @@ let Z = i.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, j = l.getGuildId(), O = y.default.getId(), {
+    } = t, j = l.getGuildId(), O = x.default.getId(), {
       newestAnalyticsLocation: E
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), A = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), Z = (0, f.bp)(), A = (0, u.e7)([v.ZP], () => {
       var e;
-      return null != j && (null === (e = x.ZP.getMember(j, a.id)) || void 0 === e ? void 0 : e.premiumSince) != null
+      return null != j && (null == (e = v.ZP.getMember(j, a.id)) ? void 0 : e.premiumSince) != null
     }, [j, a.id]);
     s()(null != j, "Channel cannot be guildless");
     let w = i.useCallback(e => {
@@ -158,7 +158,7 @@ let Z = i.memo(function(e) {
         }), (0, h.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("58244")]).then(n.bind(n, 757387));
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
           return t => (0, r.jsx)(e, S(P({}, t), {
             user: a,
             guildId: j,
@@ -175,7 +175,7 @@ let Z = i.memo(function(e) {
           context: Z
         })
       }, [a, O, Z, j, l, E]),
-      R = i.useCallback(e => (0, r.jsx)(v.Z, S(P({}, e), {
+      R = i.useCallback(e => (0, r.jsx)(y.Z, S(P({}, e), {
         guildId: j,
         channelId: l.id,
         userId: a.id

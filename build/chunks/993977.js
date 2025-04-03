@@ -1,12 +1,12 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => y
+  Z: () => I
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(442837),
-  o = n(481060),
-  a = n(58642),
+  a = n(481060),
+  o = n(58642),
   s = n(600164),
   c = n(695346),
   u = n(490983),
@@ -17,7 +17,7 @@ var r = n(200651),
   g = n(34305),
   m = n(981631),
   b = n(388032),
-  _ = n(473211);
+  _ = n(876733);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,10 +61,10 @@ function N(e) {
           className: _.applicationSubText,
           children: m.EOG[t]
         }) : null]
-      }), (0, r.jsx)(o.P3F, {
+      }), (0, r.jsx)(a.P3F, {
         className: _.restoreButton,
         onClick: () => n(e.libraryApplication),
-        children: (0, r.jsx)(o.Dio, {
+        children: (0, r.jsx)(a.Dio, {
           size: "md",
           color: "currentColor",
           className: _.restoreIcon
@@ -72,15 +72,15 @@ function N(e) {
       })]
     }, e.key)
   });
-  return (0, r.jsxs)(o.hjN, {
+  return (0, r.jsxs)(a.hjN, {
     className: _.hiddenLibraryApplications,
-    children: [(0, r.jsx)(o.vwX, {
+    children: [(0, r.jsx)(a.vwX, {
       className: _.hiddenLibraryApplicationsTitle,
       children: b.NW.string(b.t["5PJtrK"])
     }), i]
   })
 }
-class v extends i.PureComponent {
+class y extends i.PureComponent {
   handleToggleShortcutDesktop(e) {
     c.Xc.updateSetting(e)
   }
@@ -101,12 +101,12 @@ class v extends i.PureComponent {
     return (0, r.jsxs)("div", {
       className: _.body,
       children: [(0, h.Q)() ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(o.j7V, {
+        children: [(0, r.jsx)(a.j7V, {
           value: t,
           onChange: this.handleToggleShortcutDesktop,
           note: b.NW.string(b.t.vT61Nz),
           children: b.NW.string(b.t["9ID+Ki"])
-        }), (0, r.jsx)(o.j7V, {
+        }), (0, r.jsx)(a.j7V, {
           value: n,
           onChange: this.handleToggleShortcutStartMenu,
           note: b.NW.string(b.t.cpYp0N),
@@ -122,7 +122,7 @@ class v extends i.PureComponent {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(f.Z, {
         currentRoute: m.Z5c.APPLICATION_LIBRARY_SETTINGS
-      }), (0, r.jsx)(o.w0Z, {
+      }), (0, r.jsx)(a.w0Z, {
         className: _.scroller,
         children: this.renderBody()
       })]
@@ -131,16 +131,16 @@ class v extends i.PureComponent {
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
-      a.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
+      o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
     })
   }
 }
 
-function y() {
+function I() {
   let e = {
     installShortcutDesktop: c.Xc.useSetting(),
     installShortcutStartMenu: c.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, l.e7)([u.Z], () => u.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, r.jsx)(v, O({}, e))
+  return (0, r.jsx)(y, O({}, e))
 }

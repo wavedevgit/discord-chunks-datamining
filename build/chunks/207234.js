@@ -1,18 +1,18 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  M: () => l,
-  a: () => o
+  M: () => o,
+  a: () => l
 });
 var r = n(392711),
   i = n.n(r),
   s = n(585483),
   a = n(981631);
-let o = {
+let l = {
     binds: ["mod+i"],
     comboKeysBindGlobal: !0,
     action: () => (s.S.dispatch(a.CkL.TOGGLE_INBOX), !1)
   },
-  l = {
+  o = {
     binds: ["mod+shift+e"],
     comboKeysBindGlobal: !0,
     action: i().debounce(() => {

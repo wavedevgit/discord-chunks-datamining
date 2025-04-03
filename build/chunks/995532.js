@@ -1,4 +1,4 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   Z: () => I,
   a: () => o
@@ -9,8 +9,8 @@ let o = {},
   E = {},
   c = {},
   u = !1,
-  d = !1,
-  _ = !1;
+  _ = !1,
+  d = !1;
 
 function A(e) {
   let {
@@ -31,10 +31,10 @@ class N extends(a = s.ZP.Store) {
     if (null != e) return E[e]
   }
   isFetching() {
-    return d
+    return _
   }
   hasError() {
-    return _
+    return d
   }
   hasSeen(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
@@ -76,10 +76,10 @@ let I = new N(i.Z, {
     c[t] = !1
   },
   WELCOME_SCREEN_FETCH_START: function() {
-    d = !0, _ = !1
+    _ = !0, d = !1
   },
   WELCOME_SCREEN_FETCH_SUCCESS: function(e) {
-    d = !1, _ = !1;
+    _ = !1, d = !1;
     let {
       welcomeScreen: t,
       guildId: n
@@ -87,6 +87,6 @@ let I = new N(i.Z, {
     E[n] = null != t ? t : o
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
-    d = !1, _ = !0
+    _ = !1, d = !0
   }
 })

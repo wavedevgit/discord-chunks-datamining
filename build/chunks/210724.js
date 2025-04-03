@@ -28,7 +28,7 @@ var r = n(200651),
   w = n(130653),
   S = n(46140),
   P = n(981631),
-  N = n(122569);
+  N = n(414444);
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -86,14 +86,14 @@ function B(e) {
   }), R = (0, y.qN)({
     quest: s,
     location: S.dr.QUESTS_BAR
-  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), I = o.useMemo(() => (0, x.q8)(s), [s]), W = (null === (t = s.userStatus) || void 0 === t ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(W), L = (null === (n = s.userStatus) || void 0 === n ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
+  }), k = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), q = (0, l.e7)([p.Z], () => p.Z.hasLayers()), D = o.useRef(null), I = o.useMemo(() => (0, x.q8)(s), [s]), W = (null == (t = s.userStatus) ? void 0 : t.enrolledAt) != null, M = (0, d.Z)(W), L = (null == (n = s.userStatus) ? void 0 : n.completedAt) != null, Z = (0, d.Z)(L), {
     hasError: V,
     isLoading: Q
   } = (0, v.d7)(), U = o.useContext(w.T) || B && R && !Q, H = o.useRef(U), z = (0, O.B)(s, U && !V), F = o.useRef(-1), X = o.useRef(!1), [K, Y] = o.useState(!1), [G, J] = o.useState(!1), [$, ee] = o.useState(!0), [et, en] = o.useState(!0), [er, eo] = o.useState(z.preEnrollmentExpandedHeight), es = o.useRef(null), ea = o.useCallback(e => {
     ee(!1), J(e)
   }, []), ei = o.useCallback(() => {
     var e, t;
-    eo((null !== (t = null === (e = es.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== t ? t : 84) + 2 * z.paddingVertical)
+    eo((null != (t = null == (e = es.current) ? void 0 : e.offsetHeight) ? t : 84) + 2 * z.paddingVertical)
   }, [z.paddingVertical]), el = o.useCallback(() => {
     ei(), ea(!0)
   }, [ei, ea]), ec = o.useCallback(() => {
@@ -119,7 +119,7 @@ function B(e) {
       questId: s.id,
       event: P.rMx.QUEST_HOVER,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
-        impression_id: null === (e = D.current) || void 0 === e ? void 0 : e.getId()
+        impression_id: null == (e = D.current) ? void 0 : e.getId()
       }),
       shouldExtendSession: !0
     }), X.current = !0, ep({
@@ -131,7 +131,7 @@ function B(e) {
       questId: s.id,
       event: P.rMx.QUEST_HOVER_OFF,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
-        impression_id: null === (e = D.current) || void 0 === e ? void 0 : e.getId()
+        impression_id: null == (e = D.current) ? void 0 : e.getId()
       })
     }), X.current = !1, ef()
   }, [ef, s]);
@@ -197,14 +197,14 @@ function B(e) {
       event: P.rMx.QUEST_CONTENT_RENDERING_FAILURE,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         reason: "asset_loading_error",
-        impression_id: null === (e = D.current) || void 0 === e ? void 0 : e.getId()
+        impression_id: null == (e = D.current) ? void 0 : e.getId()
       })
     }), B || (0, m.dA)({
       questId: s.id,
       event: P.rMx.QUEST_CONTENT_RENDERING_FAILURE,
       properties: T(E({}, (0, m.mH)(g.jn.QUEST_BAR)), {
         reason: "not_eligible_for_quest",
-        impression_id: null === (t = D.current) || void 0 === t ? void 0 : t.getId()
+        impression_id: null == (t = D.current) ? void 0 : t.getId()
       })
     })
   }, [V, B, s.id]), B && (U || !et || Q) && !V) ? (0, r.jsx)(j.A, {

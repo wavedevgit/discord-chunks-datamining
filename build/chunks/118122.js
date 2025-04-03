@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => C
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(239091),
   s = n(906732),
   c = n(560067),
@@ -17,10 +17,10 @@ var r = n(200651),
   g = n(594174),
   m = n(40153),
   b = n(603592),
-  v = n(981631),
-  y = n(675999),
-  _ = n(388032),
-  O = n(731374);
+  y = n(981631),
+  _ = n(675999),
+  v = n(388032),
+  O = n(176330);
 let j = {
   origin: {
     x: -16,
@@ -64,7 +64,7 @@ function C(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, o.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), S = (0, o.e7)([g.default], () => g.default.getCurrentUser()), P = i.useMemo(() => C.some(e => e.isOwner(S)), [C, S]), I = (0, l.s9z)(e => (0, l.DEQ)(e, y.PU)), {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), P = i.useMemo(() => C.some(e => e.isOwner(S)), [C, S]), I = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
     analyticsLocations: N
   } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
     showPill: !1,
@@ -72,11 +72,11 @@ function C(e) {
     onClick: () => {
       (0, d.yU)() ? (0, p.Z)({
         analyticsSource: {
-          page: v.Sbl.CREATE_JOIN_GUILD_MODAL
+          page: y.Sbl.CREATE_JOIN_GUILD_MODAL
         },
         analyticsLocation: {
-          page: v.Sbl.CREATE_JOIN_GUILD_MODAL,
-          section: v.jXE.GUILD_CAP_UPSELL_MODAL
+          page: y.Sbl.CREATE_JOIN_GUILD_MODAL,
+          section: y.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: N
       }) : c.Z.openCreateGuildModal({
@@ -85,8 +85,8 @@ function C(e) {
     },
     selected: I,
     onContextMenu: x,
-    tooltip: _.NW.string(_.t.l5WIbW),
-    icon: Z ? l.oFk : l.BRu
+    tooltip: v.NW.string(v.t.l5WIbW),
+    icon: Z ? o.oFk : o.BRu
   });
   return t ? w : (0, r.jsx)("div", {
     className: O.tutorialContainer,
@@ -95,7 +95,7 @@ function C(e) {
       inlineSpecs: j,
       position: "right",
       children: [w, null != n && (0, r.jsx)(m.ZP, {
-        name: _.NW.string(_.t["45xjMz"]),
+        name: v.NW.string(v.t["45xjMz"]),
         targetNode: n,
         below: !0,
         noCombine: !0

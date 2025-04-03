@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(990547),
-  o = n(442837),
-  a = n(544891),
+  a = n(442837),
+  o = n(544891),
   s = n(481060),
   c = n(893776),
   u = n(37234),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(1964),
   O = n(762756),
   N = n(308569),
-  v = n(981631),
-  y = n(815660),
-  I = n(388032);
+  y = n(981631),
+  I = n(815660),
+  v = n(388032);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,7 +61,7 @@ function T() {
   let {
     action: e,
     theme: t
-  } = (0, o.cj)([_.Z, b.Z], () => ({
+  } = (0, a.cj)([_.Z, b.Z], () => ({
     action: _.Z.getAction(),
     theme: b.Z.theme
   })), T = E.Z.getVerificationTypes(e), [P, j] = i.useState(0), A = (0, p.Z)(T);
@@ -93,21 +93,21 @@ function T() {
           reason: m.L.USER_ACTION_REQUIRED
         }, t))
       }, {
-        modalKey: y.M,
+        modalKey: I.M,
         Layer: g.ZP
       })
     };
   return i.useEffect(() => (h.Z.disable(), () => {
     h.Z.enable()
   }), []), i.useEffect(() => {
-    (null == A ? void 0 : A[0]) === v.PUi.PHONE && (null == T ? void 0 : T[0]) === v.PUi.EMAIL && (0, s.ZDy)(async () => {
+    (null == A ? void 0 : A[0]) === y.PUi.PHONE && (null == T ? void 0 : T[0]) === y.PUi.EMAIL && (0, s.ZDy)(async () => {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
       return t => (0, r.jsx)(e, S(C({}, t), {
-        title: I.NW.string(I.t.KLnLIC),
-        body: I.NW.string(I.t.XGbCq6),
-        confirmText: I.NW.string(I.t["3oK4q6"])
+        title: v.NW.string(v.t.KLnLIC),
+        body: v.NW.string(v.t.XGbCq6),
+        confirmText: v.NW.string(v.t["3oK4q6"])
       }))
     }, {
       modalKey: N.HR,
@@ -118,8 +118,8 @@ function T() {
     types: T,
     captchaKey: P,
     onCaptchaVerify: e => {
-      a.tn.post({
-        url: v.ANM.CAPTCHA,
+      o.tn.post({
+        url: y.ANM.CAPTCHA,
         body: {
           captcha_key: e
         },
@@ -131,7 +131,7 @@ function T() {
     },
     theme: t,
     onClick: e => {
-      e === v.PUi.EMAIL_OR_PHONE || e === v.PUi.EMAIL || e === v.PUi.REVERIFY_EMAIL ? Z() : x()
+      e === y.PUi.EMAIL_OR_PHONE || e === y.PUi.EMAIL || e === y.PUi.REVERIFY_EMAIL ? Z() : x()
     },
     onLogout: () => {
       (0, s.ZDy)(async () => {
@@ -140,14 +140,14 @@ function T() {
           Text: t
         } = await Promise.resolve().then(n.bind(n, 481060));
         return n => (0, r.jsx)(e, S(C({
-          header: I.NW.string(I.t["2jxGen"]),
-          confirmText: I.NW.string(I.t["2jxGen"]),
-          cancelText: I.NW.string(I.t["ETE/oK"]),
+          header: v.NW.string(v.t["2jxGen"]),
+          confirmText: v.NW.string(v.t["2jxGen"]),
+          cancelText: v.NW.string(v.t["ETE/oK"]),
           onConfirm: () => c.Z.logout()
         }, n), {
           children: (0, r.jsx)(t, {
             variant: "text-md/normal",
-            children: I.NW.string(I.t.SUnWBA)
+            children: v.NW.string(v.t.SUnWBA)
           })
         }))
       }, {

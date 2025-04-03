@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   q: () => N
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(232567),
-  l = n(700582);
+  l = n(232567),
+  o = n(700582);
 n(90641), n(615830);
 var c = n(630759),
   d = n(931500);
@@ -16,7 +16,7 @@ var u = n(171368),
   m = n(594174),
   g = n(51144),
   p = n(388032),
-  h = n(313386);
+  h = n(552312);
 
 function f(e) {
   let {
@@ -28,10 +28,10 @@ function f(e) {
     userId: t
   }), [t]);
   return i.useEffect(() => {
-    (0, o.PR)(t)
+    (0, l.PR)(t)
   }, [t]), (0, r.jsxs)("div", {
     className: h.section,
-    children: [null != d && (0, r.jsx)(l.Z, {
+    children: [null != d && (0, r.jsx)(o.Z, {
       className: h.avatar,
       user: d,
       size: a.EFr.SIZE_40
@@ -67,8 +67,8 @@ function b(e) {
     className: t,
     userId: n,
     verification: s,
-    index: o
-  } = e, l = (0, c.bo)(s.timestamp), d = i.useCallback(() => {
+    index: l
+  } = e, o = (0, c.bo)(s.timestamp), d = i.useCallback(() => {
     (0, c.ZU)(n, s.verifiedKey)
   }, [s.verifiedKey, n]);
   return (0, r.jsxs)("div", {
@@ -79,12 +79,12 @@ function b(e) {
         variant: "text-sm/semibold",
         color: "interactive-active",
         children: p.NW.format(p.t.N4qBBA, {
-          index: o + 1
+          index: l + 1
         })
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: l
+        children: o
       })]
     }), (0, r.jsx)(a.P3F, {
       className: h.icon,
@@ -117,4 +117,4 @@ function N(e) {
     }, "".concat(s, "-").concat(e.timestamp)))]
   })
 }
-n(685786)
+n(20493)

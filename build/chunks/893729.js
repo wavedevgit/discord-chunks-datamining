@@ -16,7 +16,7 @@ var n = r(200651),
   Z = r(5192),
   u = r(981631),
   M = r(388032),
-  d = r(933655);
+  d = r(264700);
 
 function b(e) {
   var t;
@@ -68,7 +68,7 @@ function b(e) {
     }), e))
   }, [V, H]), m = {
     nick: j,
-    colorString: null !== (t = v.colorString) && void 0 !== t ? t : void 0
+    colorString: null != (t = v.colorString) ? t : void 0
   };
   return (0, n.jsx)(o.f6W, {
     theme: b,

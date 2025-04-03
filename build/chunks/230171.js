@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   O: () => k,
   U: () => S.Un
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(373793),
-  o = n(705512),
-  l = n(442837),
+  l = n(705512),
+  o = n(442837),
   s = n(481060),
   c = n(566620),
   u = n(574952),
@@ -19,10 +19,10 @@ var r = n(200651),
   g = n(561308),
   _ = n(567409),
   b = n(706454),
-  v = n(314897),
-  x = n(699516),
-  y = n(914010),
-  E = n(594174),
+  x = n(314897),
+  y = n(699516),
+  E = n(914010),
+  v = n(594174),
   O = n(768581),
   N = n(433534),
   j = n(506895),
@@ -33,20 +33,20 @@ var r = n(200651),
   P = n(880251),
   A = n(208444),
   w = n(388032),
-  Z = n(359092);
+  Z = n(758364);
 
 function k(e) {
   let {
     app: t,
     embedUrl: n,
     linkType: a,
-    activityCustomId: o,
+    activityCustomId: l,
     activityReferrerId: s,
     onView: g
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), x = null == b ? void 0 : b.id, y = (0, f.ye)(t), E = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -54,7 +54,7 @@ function k(e) {
     staticBannerSrc: N,
     videoBannerSrc: I,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), k = (0, l.e7)([v.default], () => null != s ? s : v.default.getId(), [s]), {
+  } = (0, P.E)(t), k = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
     analyticsLocations: L
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
@@ -67,7 +67,7 @@ function k(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), H = null != x && y && G, V = F && y && G, z = (0, A.z)(t), K = i.useMemo(() => {
+  }), H = null != y && E && G, V = F && E && G, z = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return V && e.push({
       label: null == W ? w.NW.string(w.t.cnBQPD) : w.NW.string(w.t.VJlc0d),
@@ -79,7 +79,7 @@ function k(e) {
           isStart: null == W,
           instanceId: null != W ? W : void 0,
           embeddedActivitiesManager: B,
-          customId: o,
+          customId: l,
           referrerId: k,
           analyticsLocations: L
         })
@@ -91,14 +91,14 @@ function k(e) {
       onClick() {
         (0, m.W)({
           appId: t.id,
-          botId: x,
+          botId: y,
           analyticsLocations: L,
-          customId: o,
+          customId: l,
           referrerId: k
         })
       }
     }), null != z && e.push(z), e
-  }, [V, H, z, W, U, M, t.id, B, o, k, L, x]), Y = y ? (0, r.jsx)(D, {
+  }, [V, H, z, W, U, M, t.id, B, l, k, L, y]), Y = E ? (0, r.jsx)(D, {
     app: t
   }) : (0, r.jsx)(R, {
     app: t
@@ -108,7 +108,7 @@ function k(e) {
     staticBannerSrc: N,
     videoBannerSrc: I,
     bannerAspectRatio: Z,
-    iconSrc: E,
+    iconSrc: v,
     embedUrl: n,
     info: Y,
     actions: K,
@@ -116,32 +116,32 @@ function k(e) {
       id: t.id,
       linkType: a,
       referrerId: k,
-      activityCustomId: o,
+      activityCustomId: l,
       onView: g
     }
   })
 }
 
 function R(e) {
-  var t, n, o;
+  var t, n, l;
   let {
     app: c
   } = e, u = (0, N.E)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig
-  }) && null != c.integrationTypesConfig && a.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, l.e7)([b.default], () => b.default.locale, []), p = i.useMemo(() => {
+  }) && null != c.integrationTypesConfig && a.Y.GUILD_INSTALL in c.integrationTypesConfig, d = (0, o.e7)([b.default], () => b.default.locale, []), p = i.useMemo(() => {
     var e, t;
     if (!u) return null;
     let n = new Intl.NumberFormat(d, {
         notation: "compact",
         compactDisplay: "short"
       }),
-      r = null !== (t = null === (e = c.directoryEntry) || void 0 === e ? void 0 : e.guild_count) && void 0 !== t ? t : 0;
+      r = null != (t = null == (e = c.directoryEntry) ? void 0 : e.guild_count) ? t : 0;
     return 0 === r ? null : w.NW.format(w.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
-  }, [null === (t = c.directoryEntry) || void 0 === t ? void 0 : t.guild_count, u, d]), m = null === (o = c.categories) || void 0 === o ? void 0 : null === (n = o.at(0)) || void 0 === n ? void 0 : n.name;
+  }, [null == (t = c.directoryEntry) ? void 0 : t.guild_count, u, d]), m = null == (l = c.categories) || null == (n = l.at(0)) ? void 0 : n.name;
   return (0, r.jsxs)(r.Fragment, {
     children: [null != m && (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
@@ -167,15 +167,15 @@ function D(e) {
   } = e, {
     tags: n,
     maxParticipants: a
-  } = t, c = (0, l.e7)([y.Z], () => {
+  } = t, c = (0, o.e7)([E.Z], () => {
     var e;
-    return null !== (e = y.Z.getGuildId()) && void 0 !== e ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, l.Wu)([E.default, x.Z], () => {
+    return null != (e = E.Z.getGuildId()) ? e : void 0
+  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = E.default.getUser(n.author_id),
-        i = x.Z.isFriend(n.author_id);
+      let r = v.default.getUser(n.author_id),
+        i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e
@@ -185,7 +185,7 @@ function D(e) {
       guildId: c,
       activityText: w.NW.string(w.t["IJa+4+"])
     });
-    if (u.some(e => (0, g.ig)(e) === o.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
+    if (u.some(e => (0, g.ig)(e) === l.o.GLOBAL)) return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.YqE, {
         size: "xxs",
         color: "currentColor"

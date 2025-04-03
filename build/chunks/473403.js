@@ -1,9 +1,9 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   ZP: () => y,
   _W: () => P,
-  ge: () => v,
-  je: () => b
+  ge: () => b,
+  je: () => v
 });
 var r = n(200651),
   l = n(192379),
@@ -14,20 +14,20 @@ var r = n(200651),
   E = n(481060),
   c = n(43267),
   u = n(933557),
-  d = n(471445),
-  _ = n(111028),
+  _ = n(471445),
+  d = n(111028),
   A = n(727429),
   T = n(810123),
   N = n(690221),
   I = n(430824),
-  g = n(158776),
-  O = n(111583),
+  O = n(158776),
+  g = n(111583),
   f = n(594174),
   R = n(998502),
   p = n(981631),
   S = n(490897),
-  h = n(779635),
-  U = n(277701);
+  h = n(915887),
+  U = n(768107);
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -74,7 +74,7 @@ function m(e) {
 }
 let M = R.ZP.getEnableHardwareAcceleration() ? E.Xo$ : E.qEK;
 
-function v(e) {
+function b(e) {
   let {
     channel: t,
     size: n = E.EFr.SIZE_20
@@ -86,19 +86,19 @@ function v(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     channel: t,
     size: n = E.EFr.SIZE_20
-  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(null == t ? void 0 : t.recipients[0])), a = (0, o.e7)([O.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != O.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
+  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(null == t ? void 0 : t.recipients[0])), a = (0, o.e7)([g.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != g.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
     status: s,
     isMobile: i
-  } = (0, o.cj)([g.Z], () => null == l || null == t || t.isMultiUserDM() ? {
+  } = (0, o.cj)([O.Z], () => null == l || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: !1
   } : {
-    status: g.Z.getStatus(l.id),
-    isMobile: g.Z.isMobileOnline(l.id)
+    status: O.Z.getStatus(l.id),
+    isMobile: O.Z.isMobileOnline(l.id)
   });
   return (0, r.jsx)(M, {
     size: n,
@@ -118,8 +118,8 @@ let P = e => {
       locked: a,
       hasActiveThreads: i,
       withGuildIcon: c
-    } = e, u = (0, o.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), _ = l.type === p.d4z.DM || l.type === p.d4z.GROUP_DM, A = null;
-    if (c && null != u && !_) A = (0, r.jsx)(T.Z, {
+    } = e, u = (0, o.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === p.d4z.DM || l.type === p.d4z.GROUP_DM, A = null;
+    if (c && null != u && !d) A = (0, r.jsx)(T.Z, {
       size: T.E.SMALL_32,
       className: U.iconContainerWithGuildIcon,
       iconClassName: U.iconWithGuildIcon,
@@ -133,18 +133,18 @@ let P = e => {
         switch (e.type) {
           case p.d4z.DM:
             return function() {
-              return (0, r.jsx)(b, {
+              return (0, r.jsx)(v, {
                 channel: e
               })
             };
           case p.d4z.GROUP_DM:
             return function() {
-              return (0, r.jsx)(v, {
+              return (0, r.jsx)(b, {
                 channel: e
               })
             };
           default:
-            return (0, d.KS)(e, t, n)
+            return (0, _.KS)(e, t, n)
         }
       }(l, u, {
         locked: a,
@@ -156,14 +156,14 @@ let P = e => {
         className: s()(U.icon, t)
       })
     }
-    let N = c ? null == u ? void 0 : u.name : (0, d.bT)(l, u, a, i),
-      g = c && null != u ? "".concat(u.name, " - ").concat(N, " icon") : "".concat(N, " icon");
+    let N = c ? null == u ? void 0 : u.name : (0, _.bT)(l, u, a, i),
+      O = c && null != u ? "".concat(u.name, " - ").concat(N, " icon") : "".concat(N, " icon");
     return (0, r.jsx)(E.ua7, {
       text: N,
       delay: 500,
       children: e => (0, r.jsx)("div", L(D({}, e), {
         role: "img",
-        "aria-label": g,
+        "aria-label": O,
         className: s()(U.iconContainer, n),
         children: A
       }))
@@ -175,16 +175,16 @@ let P = e => {
       channel: a,
       name: o,
       muted: c,
-      selected: d,
+      selected: _,
       connected: T,
       unread: I,
-      locked: g,
-      hasActiveThreads: O,
+      locked: O,
+      hasActiveThreads: g,
       onClick: f,
       onMouseDown: R,
       onMouseUp: M,
-      onContextMenu: v,
-      connectDragPreview: b,
+      onContextMenu: b,
+      connectDragPreview: v,
       className: y,
       iconClassName: x,
       subtitle: j,
@@ -243,10 +243,10 @@ let P = e => {
             className: x,
             channel: a,
             guild: k,
-            hasActiveThreads: O,
-            locked: g,
+            hasActiveThreads: g,
+            locked: O,
             withGuildIcon: q
-          }), (0, r.jsx)(_.Z, {
+          }), (0, r.jsx)(d.Z, {
             className: s()(U.name, {
               [U.activeEvent]: X
             }),
@@ -280,7 +280,16 @@ let P = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: s()(y, null != f || null != M || null != R || H ? U.wrapper : U.notInteractive, d ? s()(h.selectedChannel, C.SELECTED) : T ? s()(h.selectedChannel, C.CONNECTED) : g ? C.LOCKED : c ? C.MUTED : I ? J ? C.UNREAD_IMPORTANT : C.UNREAD_LESS_IMPORTANT : null, function(e) {
+        className: s()(y, null != f || null != M || null != R || H ? U.wrapper : U.notInteractive, (() => {
+          if (_) return s()(h.selectedChannel, C.SELECTED);
+          if (T) return s()(h.selectedChannel, C.CONNECTED);
+          if (O) return C.LOCKED;
+          if (c) return C.MUTED;
+          if (I)
+            if (J) return C.UNREAD_IMPORTANT;
+            else return C.UNREAD_LESS_IMPORTANT;
+          return null
+        })(), function(e) {
           switch (e) {
             case p.d4z.GUILD_STAGE_VOICE:
             case p.d4z.GUILD_VOICE:
@@ -300,12 +309,12 @@ let P = e => {
         }(null != V ? V : F)),
         onMouseUp: e => null == M ? void 0 : M(e, a),
         onMouseDown: e => null == R ? void 0 : R(e, a),
-        onContextMenu: e => null == v ? void 0 : v(e, a),
+        onContextMenu: e => null == b ? void 0 : b(e, a),
         onMouseEnter: W,
         onMouseLeave: B,
         children: [c || !I ? null : (0, r.jsx)("div", {
           className: s()(U.unread, J ? U.unreadImportant : void 0)
-        }), null !== (n = null == b ? void 0 : b(ei)) && void 0 !== n ? n : ei]
+        }), null != (n = null == v ? void 0 : v(ei)) ? n : ei]
       })
     })
   })

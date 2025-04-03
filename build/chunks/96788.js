@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   V: () => a
@@ -12,7 +12,7 @@ function a(e) {
     n = [];
   if (!(null == t ? void 0 : t.sufficient)) {
     var a;
-    (null == t ? void 0 : t.safeEnvironment) || n.push("TNS"), (!(null == t ? void 0 : t.healthy) || (null == t ? void 0 : t.healthScorePending)) && n.push("HEALTH"), (null == t ? void 0 : t.size) || n.push("MEMBER_COUNT"), Object.keys(null !== (a = null == t ? void 0 : t.nsfwProperties) && void 0 !== a ? a : {}).length > 0 && n.push("BAD_WORDS"), (null == t ? void 0 : t.protected) || n.push("2FA")
+    (null == t ? void 0 : t.safeEnvironment) || n.push("TNS"), (!(null == t ? void 0 : t.healthy) || (null == t ? void 0 : t.healthScorePending)) && n.push("HEALTH"), (null == t ? void 0 : t.size) || n.push("MEMBER_COUNT"), Object.keys(null != (a = null == t ? void 0 : t.nsfwProperties) ? a : {}).length > 0 && n.push("BAD_WORDS"), (null == t ? void 0 : t.protected) || n.push("2FA")
   }
   r.default.track(s.rMx.GUILD_SETTINGS_DISCOVERY_VIEWED, {
     guild_id: e,

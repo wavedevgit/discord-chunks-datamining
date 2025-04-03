@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => _
 });
@@ -7,16 +7,16 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(785681),
-  l = n(841409),
+  l = n(785681),
+  o = n(841409),
   c = n(880257),
   d = n(631885),
   u = n(568671),
   m = n(292352),
-  g = n(378392),
+  g = n(332495),
   p = n(388032),
-  h = n(510676),
-  f = n(494391),
+  h = n(864903),
+  f = n(589608),
   b = n(633488),
   N = n(361848);
 let x = () => {
@@ -24,7 +24,7 @@ let x = () => {
       t = (0, c.Z)(),
       {
         handleTabChange: n
-      } = (0, l.Z)();
+      } = (0, o.Z)();
     return (0, d.VM)() || t && e.length > 0 ? null : (0, r.jsx)("div", {
       className: h.button,
       children: t ? (0, r.jsx)(a.zxk, {
@@ -37,8 +37,8 @@ let x = () => {
   },
   _ = () => {
     let e = (0, c.Z)(),
-      t = (0, o.o)(p.NW.string(g.Z.T7GyW1), p.NW.string(g.Z.goKE2d)),
-      n = (0, o.o)(p.NW.format(g.Z.MXjDSk, {
+      t = (0, l.o)(p.NW.string(g.Z.T7GyW1), p.NW.string(g.Z.goKE2d)),
+      n = (0, l.o)(p.NW.format(g.Z.MXjDSk, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
       }), p.NW.format(g.Z.EMCf6u, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"

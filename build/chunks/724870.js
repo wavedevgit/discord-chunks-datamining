@@ -1,6 +1,6 @@
 /** Chunk was on 74891 **/
 n.d(t, {
-  h: () => y,
+  h: () => v,
   m: () => h
 }), n(789020);
 var r = n(200651);
@@ -17,10 +17,10 @@ var l = n(512722),
   f = n(55563),
   b = n(626135),
   O = n(987209),
-  v = n(107998),
-  m = n(981631);
+  m = n(107998),
+  y = n(981631);
 
-function y(e) {
+function v(e) {
   let {
     initialPlanId: t,
     activeSubscription: l,
@@ -29,7 +29,7 @@ function y(e) {
     analyticsLocations: d,
     analyticsSubscriptionType: p,
     renderHeader: f,
-    planGroup: y,
+    planGroup: v,
     skuId: g,
     guildId: h,
     reviewWarningMessage: j,
@@ -55,7 +55,7 @@ function y(e) {
         activeSubscription: l,
         stepConfigs: s,
         skuIDs: [g],
-        children: (0, r.jsx)(v.c1, {
+        children: (0, r.jsx)(m.c1, {
           children: (0, r.jsx)(O.KB, {
             children: (0, r.jsx)(o, (a = function(e) {
               for (var t = 1; t < arguments.length; t++) {
@@ -82,7 +82,7 @@ function y(e) {
               analyticsLocation: u,
               analyticsSubscriptionType: p,
               renderHeader: f,
-              planGroup: y,
+              planGroup: v,
               reviewWarningMessage: j,
               applicationId: S,
               guildId: null != h ? h : void 0,
@@ -106,9 +106,9 @@ function y(e) {
     }
   }, {
     onCloseCallback: () => {
-      Z || (b.default.track(m.rMx.PAYMENT_FLOW_CANCELED, {
+      Z || (b.default.track(y.rMx.PAYMENT_FLOW_CANCELED, {
         load_id: x,
-        payment_type: m.Zuq[m.GZQ.SUBSCRIPTION],
+        payment_type: y.Zuq[y.GZQ.SUBSCRIPTION],
         location: null != u ? u : i,
         is_gift: !1,
         sku_id: g,
@@ -116,7 +116,7 @@ function y(e) {
         location_stack: d
       }), (0, s.fw)(), (0, c.p)())
     },
-    onCloseRequest: m.dG4
+    onCloseRequest: y.dG4
   })
 }
 let g = async (e, t) => {
@@ -135,17 +135,19 @@ async function h(e) {
   } = e, s = f.Z.get(r), c = p.Z.getForSKU(r);
   i()(null != s, "Failed to find SKU");
   let b = (0, d.KW)(s.flags);
-  i()(b, "Guild application subscriptions unsupported!"), await g(n, r), y({
-    initialPlanId: null != l ? l : null === (t = c[0]) || void 0 === t ? void 0 : t.id,
+  i()(b, "Guild application subscriptions unsupported!"), await g(n, r);
+  let O = {
+    initialPlanId: null != l ? l : null == (t = c[0]) ? void 0 : t.id,
     activeSubscription: null,
     analyticsLocations: a,
     analyticsLocationObject: o,
-    analyticsSubscriptionType: m.NYc.APPLICATION,
+    analyticsSubscriptionType: y.NYc.APPLICATION,
     renderHeader: u,
     planGroup: [],
     skuId: r,
     guildId: null,
     showBenefitsFirst: !1,
     applicationId: n
-  })
+  };
+  v(O)
 }

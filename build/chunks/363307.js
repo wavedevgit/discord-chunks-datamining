@@ -1,12 +1,12 @@
 /** Chunk was on 67544 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(47120);
 var r = n(200651),
   s = n(192379),
   o = n(392711),
-  i = n(772848),
-  a = n(481060),
+  a = n(772848),
+  i = n(481060),
   c = n(377171),
   l = n(668826),
   u = n(18582),
@@ -14,9 +14,9 @@ var r = n(200651),
   f = n(81829),
   p = n(892689),
   m = n(477839),
-  g = n(884479),
+  g = n(622802),
   b = n(388032),
-  y = n(677362);
+  y = n(885270);
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -36,7 +36,7 @@ function h(e) {
   }
   return e
 }
-let v = () => [{
+let x = () => [{
   title: b.NW.string(g.Z.edfgq6),
   color: c.Z.BUTTON_POSITIVE_BACKGROUND,
   primaryButtonCTA: b.NW.string(b.t.BddRzc),
@@ -80,10 +80,10 @@ let v = () => [{
   closeButtonPoints: 200
 }];
 
-function x(e) {
+function N(e) {
   let {
     isPaused: t
-  } = e, n = (0, s.useRef)(), [c, g] = (0, s.useState)((0, o.sample)(v())), [b, x] = (0, s.useState)({}), [N, O] = (0, s.useState)({
+  } = e, n = (0, s.useRef)(), [c, g] = (0, s.useState)((0, o.sample)(x())), [b, N] = (0, s.useState)({}), [v, O] = (0, s.useState)({
     x: 0,
     y: 0
   }), j = (e, t) => {
@@ -91,8 +91,8 @@ function x(e) {
     O({
       x: e.clientX,
       y: e.clientY
-    }), x((n = h({}, b), r = r = {
-      [(0, i.Z)()]: t
+    }), N((n = h({}, b), r = r = {
+      [(0, a.Z)()]: t
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -120,21 +120,21 @@ function x(e) {
           backgroundColor: null == c ? void 0 : c.color
         },
         children: [null == c ? void 0 : c.title, (null == c ? void 0 : c.primaryButtonCTA) != null && (0, r.jsx)(d.Z, {
-          size: a.zxk.Sizes.TINY,
-          look: a.zxk.Looks.OUTLINED,
-          color: a.zxk.Colors.WHITE,
+          size: i.zxk.Sizes.TINY,
+          look: i.zxk.Looks.OUTLINED,
+          color: i.zxk.Colors.WHITE,
           onClick: t => {
             var r;
-            j(t, c.primaryButtonPoints), null === (r = n.current) || void 0 === r || r.removeDrop(e), g((0, o.sample)(v()))
+            j(t, c.primaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
           children: c.primaryButtonCTA
         }), (null == c ? void 0 : c.secondaryButtonCTA) != null && (0, r.jsx)(d.Z, {
-          size: a.zxk.Sizes.TINY,
-          look: a.zxk.Looks.OUTLINED,
-          color: a.zxk.Colors.WHITE,
+          size: i.zxk.Sizes.TINY,
+          look: i.zxk.Looks.OUTLINED,
+          color: i.zxk.Colors.WHITE,
           onClick: t => {
             var r;
-            j(t, c.secondaryButtonPoints), null === (r = n.current) || void 0 === r || r.removeDrop(e), g((0, o.sample)(v()))
+            j(t, c.secondaryButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
           children: c.secondaryButtonCTA
         }), null != c && (0, r.jsx)(u.Z, {
@@ -144,9 +144,9 @@ function x(e) {
           },
           onClick: t => {
             var r;
-            j(t, c.closeButtonPoints), null === (r = n.current) || void 0 === r || r.removeDrop(e), g((0, o.sample)(v()))
+            j(t, c.closeButtonPoints), null == (r = n.current) || r.removeDrop(e), g((0, o.sample)(x()))
           },
-          children: (0, r.jsx)(a.Dio, {
+          children: (0, r.jsx)(i.Dio, {
             size: "md",
             color: "white"
           })
@@ -155,12 +155,12 @@ function x(e) {
     }), (0, r.jsx)(f.Z, {
       renderedPoints: b,
       onRemovePoint: e => {
-        x(t => {
+        N(t => {
           let n = h({}, t);
           return delete n[e], n
         })
       },
-      offset: N,
+      offset: v,
       fullWidth: !1
     })]
   })

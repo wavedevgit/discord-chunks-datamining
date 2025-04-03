@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   h: () => Z
 });
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(895924),
   _ = n(540059),
   C = n(605236),
-  v = n(448239),
-  y = n(626135),
-  x = n(607187),
+  y = n(448239),
+  x = n(626135),
+  v = n(607187),
   j = n(981631),
   O = n(388032),
-  E = n(87574),
+  E = n(413384),
   N = n(359165),
   I = n(334732);
 
@@ -113,7 +113,7 @@ function T(e) {
   };
   return (0, r.jsx)(g.Gt, {
     value: l,
-    children: (0, r.jsxs)(x.Z, {
+    children: (0, r.jsxs)(v.Z, {
       className: E.root,
       children: [(0, r.jsx)(c.ua7, {
         text: O.NW.string(O.t.qJvTKS),
@@ -176,7 +176,7 @@ function A(e) {
     width: s
   } = e;
   i.useEffect(() => {
-    y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity invite",
       n_participants: 1
     })
@@ -195,7 +195,7 @@ function A(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("75710")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(e, S(P({}, n), {
         guild: l,
         channel: t,
@@ -213,13 +213,13 @@ function A(e) {
       analyticsLocations: u
     })
   }
-  let v = h ? c.iWm : c.nG3;
+  let y = h ? c.iWm : c.nG3;
   return (0, r.jsx)(g.Gt, {
     value: u,
     children: (0, r.jsx)(c.f6W, {
       disableAdaptiveTheme: !0,
       theme: j.BRd.MIDNIGHT,
-      children: e => (0, r.jsxs)(x.Z, {
+      children: e => (0, r.jsxs)(v.Z, {
         className: o()(E.root, E.singleUserRoot, e),
         children: [s > 400 && !p ? (0, r.jsx)("img", {
           src: I,
@@ -256,7 +256,7 @@ function A(e) {
             }),
             innerClassName: E.buttonContents,
             onClick: C,
-            children: [(0, r.jsx)(v, {
+            children: [(0, r.jsx)(y, {
               size: "xs",
               color: "currentColor"
             }), O.NW.string(O.t.qnFavb)]
@@ -276,7 +276,7 @@ function w(e) {
     userParticipantCount: d
   } = e, f = (0, _.Q3)("MultiUserTile");
   (0, u.ZP)(() => {
-    y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
+    x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
       n_participants: d
     })
@@ -297,7 +297,7 @@ function w(e) {
     }), [t]);
   return (0, r.jsx)(g.Gt, {
     value: P,
-    children: (0, r.jsxs)(x.Z, {
+    children: (0, r.jsxs)(v.Z, {
       className: E.root,
       children: [s > 480 && !f ? (0, r.jsx)("img", {
         className: E.art,
@@ -321,20 +321,20 @@ function w(e) {
       }), (0, r.jsxs)(c.P3F, {
         className: E.checkboxContainer,
         onClick: function() {
-          y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
           }), (0, C.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
-        children: [(0, r.jsx)(v.Z, {}), (0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           children: O.NW.string(O.t["5E9SBw"])
         })]
       }), (0, r.jsx)(c.P3F, {
         className: E.closeButtonContainer,
         onClick: function() {
-          y.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
+          x.default.track(j.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_CLOSED, {
             tile_type: "activity suggestion",
             close_type: "temporary",
             n_participants: d

@@ -4,8 +4,8 @@ r.d(t, {
 }), r(47120);
 var n = r(200651),
   i = r(192379),
-  o = r(642128),
-  s = r(481060),
+  s = r(642128),
+  o = r(481060),
   a = r(230711),
   l = r(687158),
   c = r(63063),
@@ -14,7 +14,7 @@ var n = r(200651),
   g = r(801461),
   m = r(981631),
   f = r(388032),
-  E = r(40609);
+  E = r(927687);
 
 function h(e) {
   var t, r, {
@@ -27,13 +27,13 @@ function h(e) {
       var r, n, i = function(e, t) {
         if (null == e) return {};
         var r, n, i = {},
-          o = Object.keys(e);
-        for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+          s = Object.keys(e);
+        for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+        var s = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
     }(e, ["userRef", "usernameSuggestionLoading", "oneClickFlow"]);
@@ -41,7 +41,7 @@ function h(e) {
     user: b,
     editState: S,
     onClose: N
-  } = y, v = (0, l.ZP)(b.id), x = function(e, t, r) {
+  } = y, x = (0, l.ZP)(b.id), j = function(e, t, r) {
     switch (e) {
       case g.Wq.EDIT_USERNAME:
         return {
@@ -72,7 +72,7 @@ function h(e) {
           header: f.NW.string(f.t["a/zCWl"]), subtitle: f.NW.string(f.t.gGz0sb)
         }
     }
-  }(S, u.ZP.getName(b), N), [j, T] = (0, s.q_F)(() => ({
+  }(S, u.ZP.getName(b), N), [v, T] = (0, o.q_F)(() => ({
     opacity: 0,
     y: 10
   }));
@@ -87,27 +87,27 @@ function h(e) {
     })
   }, [T, S]), (0, n.jsxs)("div", {
     className: E.displayNameContainer,
-    children: [(0, n.jsxs)(o.animated.div, {
+    children: [(0, n.jsxs)(s.animated.div, {
       style: {
-        opacity: j.opacity,
-        y: j.y
+        opacity: v.opacity,
+        y: v.y
       },
-      children: [(0, n.jsx)(s.X6q, {
+      children: [(0, n.jsx)(o.X6q, {
         className: E.title,
         color: "header-primary",
         variant: "heading-xl/extrabold",
-        children: x.header
+        children: j.header
       }), (0, n.jsxs)("div", {
         className: E.subtitle,
-        children: [(0, n.jsx)(s.X6q, {
+        children: [(0, n.jsx)(o.X6q, {
           color: "header-secondary",
           variant: "heading-sm/medium",
-          children: x.subtitle
-        }), null != x.link && (0, n.jsx)(s.Text, {
+          children: j.subtitle
+        }), null != j.link && (0, n.jsx)(o.Text, {
           className: E.link,
           color: "header-secondary",
           variant: "text-sm/medium",
-          children: x.link
+          children: j.link
         })]
       })]
     }), (0, n.jsx)(d.Z, (t = function(e) {
@@ -128,7 +128,7 @@ function h(e) {
       }
       return e
     }({}, y), r = r = {
-      displayProfile: v,
+      displayProfile: x,
       ref: h,
       usernameSuggestionLoading: O,
       oneClickFlow: p

@@ -8,14 +8,5 @@ var o = a(t(958574)),
   n = a(t(310143)),
   l = a(t(690416)),
   i = a(t(876386)),
-  s = a(t(34790)),
-  u = o.default;
-r.aria = u;
-var d = n.default;
-r.dom = d;
-var c = l.default;
-r.roles = c;
-var p = i.default;
-r.elementRoles = p;
-var m = s.default;
-r.roleElements = m
+  s = a(t(34790));
+r.aria = o.default, r.dom = n.default, r.roles = l.default, r.elementRoles = i.default, r.roleElements = s.default

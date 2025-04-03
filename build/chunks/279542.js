@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => Z,
@@ -23,11 +23,11 @@ var r = n(200651),
   x = n(78451),
   j = n(434404),
   N = n(999382),
-  v = n(181339),
-  _ = n(193544),
+  _ = n(181339),
+  v = n(193544),
   C = n(981631),
   O = n(388032),
-  y = n(608768);
+  y = n(576583);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,7 +96,7 @@ function S(e) {
         variant: "text-sm/normal",
         children: O.NW.format(O.t.iuRk2t, {})
       })]
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(v.Z, {
       changeTitle: O.NW.string(O.t.TxESJC),
       value: null == l ? void 0 : l.value,
       options: a,
@@ -148,7 +148,7 @@ function T(e) {
             helpdeskArticle: b.Z.getArticleURL(C.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(v.Z, {
         changeTitle: O.NW.string(O.t["eBd+Ul"]),
         value: null == m ? void 0 : m.value,
         options: u,
@@ -220,11 +220,11 @@ function R(e) {
     isGuildOwnerWithMFA: t.isOwnerWithRequiredMfaLevel(a),
     showMFAUserTooltip: !a.mfaEnabled && t.isOwner(a)
   }, [a, t]), g = n === C.BpS.ELEVATED, h = (0, l.throttle)(async e => {
-    u && !m && await j.Z.updateMFALevel({
+    u && (m || await j.Z.updateMFALevel({
       guildId: t.id,
       level: e ? C.BpS.ELEVATED : C.BpS.NONE,
       isEnabled: !e
-    })
+    }))
   }, 1e3);
   return s ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$i$, {
@@ -284,7 +284,7 @@ function Z() {
       className: y.divider
     }), (0, r.jsx)("div", {
       className: y.setupContainer,
-      children: (0, r.jsx)(v.w, {
+      children: (0, r.jsx)(_.w, {
         guild: e
       })
     })]

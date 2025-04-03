@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => d
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(481060),
   a = n(401190),
-  o = n(388032),
-  l = n(890975);
+  l = n(388032),
+  o = n(585777);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -23,8 +23,8 @@ class d extends i.PureComponent {
       hasError: e
     } = this.state;
     return e ? (0, r.jsx)("div", {
-      className: l.error,
-      children: o.NW.string(o.t.UUcECA)
+      className: o.error,
+      children: l.NW.string(l.t.UUcECA)
     }) : null
   }
   render() {
@@ -34,17 +34,17 @@ class d extends i.PureComponent {
       isHypeSquadOnlineMember: t
     } = this.props;
     return t ? (0, r.jsxs)("div", {
-      className: l.leaveActionWrapper,
+      className: o.leaveActionWrapper,
       children: [this.renderErrorMessage(), (0, r.jsxs)(s.Text, {
         variant: "text-sm/normal",
-        children: [o.NW.string(o.t.ziWmcH), (0, r.jsx)(s.zxk, {
-          className: l.leaveButton,
+        children: [l.NW.string(l.t.ziWmcH), (0, r.jsx)(s.zxk, {
+          className: o.leaveButton,
           color: s.zxk.Colors.LINK,
           look: s.zxk.Looks.LINK,
           onClick: this.handleLeaveHypeSquadClick,
           size: s.zxk.Sizes.NONE,
           submitting: e,
-          children: o.NW.string(o.t["WH+dho"])
+          children: l.NW.string(l.t["WH+dho"])
         })]
       })]
     }) : null

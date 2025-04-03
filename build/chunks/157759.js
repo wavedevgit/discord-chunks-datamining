@@ -23,7 +23,7 @@ let _ = e => {
     reportId: n
   } = e, [_, g] = l.useState(!1), [v, j] = l.useState(!1), N = (0, i.e7)([f.Z, m.Z], () => {
     var e;
-    return null === (e = m.Z.getChannel(f.Z.getChannelId())) || void 0 === e ? void 0 : e.guild_id
+    return null == (e = m.Z.getChannel(f.Z.getChannelId())) ? void 0 : e.guild_id
   }), [y, O] = l.useState(null);
   l.useEffect(() => {
     null != y && (g(!0), j(!0))
@@ -38,7 +38,7 @@ let _ = e => {
       if (e || null == n) return;
       let r = n.find(e => {
         var n;
-        return (null === (n = e.application) || void 0 === n ? void 0 : n.id) === t.id
+        return (null == (n = e.application) ? void 0 : n.id) === t.id
       });
       null != r && O(r)
     })(), () => {

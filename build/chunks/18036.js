@@ -30,11 +30,7 @@ function g() {
     delete c[e], null != h[n] && h[n].delete(e);
     return
   }
-  if (c[e]++, null == h[n] && (h[n] = new Set), d.ZP.isFavorite(n, e)) {
-    h[n].delete(e);
-    return
-  }
-  if ((null == u[n] || !u[n].has(e)) && c[e] > 50) return h[n].add(e), !0
+  return (c[e]++, null == h[n] && (h[n] = new Set), d.ZP.isFavorite(n, e)) ? void h[n].delete(e) : (null == u[n] || !u[n].has(e)) && c[e] > 50 ? (h[n].add(e), !0) : void 0
 }
 class C extends(i = s.ZP.PersistedStore) {
   initialize(e) {

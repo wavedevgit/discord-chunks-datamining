@@ -19,7 +19,7 @@ var t = i(200651),
   N = i(460838),
   j = i(765305),
   p = i(388032),
-  C = i(71191);
+  C = i(817576);
 
 function y(e) {
   var n;
@@ -58,7 +58,7 @@ function y(e) {
           guild: I,
           channel: w,
           name: a.name,
-          description: null !== (n = a.description) && void 0 !== n ? n : void 0,
+          description: null != (n = a.description) ? n : void 0,
           imageSource: (0, g.Z)(a),
           isActive: !1,
           isUserLurking: T,

@@ -15,8 +15,8 @@ function c(e) {
       baseEntryData: u
     } = e,
     {
-      provider: d,
-      image_url: p
+      provider: p,
+      image_url: d
     } = s.extra.media,
     f = s.extra.artist.name,
     b = {
@@ -31,7 +31,7 @@ function c(e) {
         itemName: f
       })
     };
-  return d === n.p.SPOTIFY && (c = {
+  return p === n.p.SPOTIFY && (c = {
     type: i.kG.SPOTIFY
   }), t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ function c(e) {
     return e
   }({}, u), r = r = {
     title: f,
-    thumbnailUrl: p,
+    thumbnailUrl: d,
     titleClickable: O,
     subtitleClickable: b,
     thumbnailClickable: b,

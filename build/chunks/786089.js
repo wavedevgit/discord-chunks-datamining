@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(979554),
+  a = n.n(l),
+  o = n(979554),
   s = n(887003),
   c = n(442837),
   u = n(780384),
@@ -21,11 +21,11 @@ var r = n(200651),
   E = n(113434),
   O = n(497505),
   N = n(475595),
-  v = n(352084),
-  y = n(685613),
-  I = n(981631),
+  y = n(352084),
+  I = n(685613),
+  v = n(981631),
   C = n(388032),
-  S = n(597851);
+  S = n(45017);
 let T = (0, i.memo)(function(e) {
   var t, n, l, T, P, j;
   let {
@@ -33,10 +33,10 @@ let T = (0, i.memo)(function(e) {
   } = e, [Z, x] = (0, i.useState)(!1), [L, w] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: W,
     height: V = 0
-  } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null === (t = A.userStatus) || void 0 === t ? void 0 : t.claimedAt, {
+  } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null == (t = A.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), F = null !== (P = null === (n = A.userStatus) || void 0 === n ? void 0 : n.claimedTier) && void 0 !== P ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z ? void 0 : null === (T = z.collectibleProduct) || void 0 === T ? void 0 : null === (l = T.items) || void 0 === l ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === a.Z.AVATAR_DECORATION ? q : null;
+  }), F = null != (P = null == (n = A.userStatus) ? void 0 : n.claimedTier) ? P : 0, z = A.config.rewards[F], Y = (null == z ? void 0 : z.type) === s.w.FRACTIONAL_PREMIUM, K = (null == z ? void 0 : z.type) === s.w.COLLECTIBLE, q = null == z || null == (T = z.collectibleProduct) || null == (l = T.items) ? void 0 : l[0], Q = (null == q ? void 0 : q.type) === o.Z.AVATAR_DECORATION ? q : null;
   (0, p.P)(k, e => {
     let {
       height: t
@@ -52,7 +52,7 @@ let T = (0, i.memo)(function(e) {
     $ = (0, i.useMemo)(() => (0, N.fh)(A, N.eC.REWARD), [A]),
     ee = Z ? V + 8 : 0,
     et = () => {
-      x(!0), b.default.track(I.rMx.QUEST_HOVER, function(e) {
+      x(!0), b.default.track(v.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -75,7 +75,7 @@ let T = (0, i.memo)(function(e) {
     },
     en = () => x(!1),
     er = e => {
-      D(!0), b.default.track(I.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      D(!0), b.default.track(v.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
         quest_id: A.id
@@ -89,7 +89,7 @@ let T = (0, i.memo)(function(e) {
       onBlur: en,
       onMouseEnter: et,
       onMouseLeave: en,
-      className: o()(S.container, {
+      className: a()(S.container, {
         [S.hovered]: Z
       }),
       children: [null != G && K && null != Q && (0, r.jsx)("div", {
@@ -103,14 +103,14 @@ let T = (0, i.memo)(function(e) {
           user: G,
           guildId: null
         })
-      }), Y ? (0, r.jsx)(v.Z, {
+      }), Y ? (0, r.jsx)(y.Z, {
         className: S.image
       }) : $.isAnimated ? (0, r.jsx)(g.Z, {
         className: S.assetBlurred,
         autoPlay: !1,
         children: (0, r.jsx)("source", {
           src: $.url,
-          type: null !== (j = $.mimetype) && void 0 !== j ? j : void 0,
+          type: null != (j = $.mimetype) ? j : void 0,
           onError: () => er($.url)
         })
       }) : (0, r.jsx)("img", {
@@ -119,7 +119,7 @@ let T = (0, i.memo)(function(e) {
         alt: A.config.messages.questName,
         onError: () => er($.url)
       }), (0, r.jsx)("div", {
-        className: o()(S.overlay, {
+        className: a()(S.overlay, {
           [S.darkThemeGradient]: X,
           [S.lightThemeGradient]: !X
         })
@@ -129,8 +129,8 @@ let T = (0, i.memo)(function(e) {
         style: {
           transform: "translateY(-".concat(ee, "px)")
         },
-        children: (0, r.jsx)(y.ZP, {
-          logotypeClassName: o()(S.logo, {
+        children: (0, r.jsx)(I.ZP, {
+          logotypeClassName: a()(S.logo, {
             [S.logoWithCosponsor]: J
           }),
           quest: A,

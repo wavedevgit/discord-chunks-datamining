@@ -13,7 +13,7 @@ var n = r(200651),
   c = r(25015),
   f = r(963550),
   p = r(845080),
-  Z = r(649547);
+  Z = r(30804);
 let u = h.memo(function(e) {
   var t, r, h, v;
   let {
@@ -24,7 +24,7 @@ let u = h.memo(function(e) {
     isGroupStart: H,
     hideSimpleEmbedContent: y = !0,
     disableInteraction: V
-  } = e, j = (0, a.ZP)(u), O = null !== (t = u.getGuildId()) && void 0 !== t ? t : void 0, g = (0, o.Z)(j), m = (0, l.A)((null !== (r = u.editedTimestamp) && void 0 !== r ? r : u.timestamp).valueOf()), {
+  } = e, j = (0, a.ZP)(u), O = null != (t = u.getGuildId()) ? t : void 0, g = (0, o.Z)(j), m = (0, l.A)((null != (r = u.editedTimestamp) ? r : u.timestamp).valueOf()), {
     content: x
   } = (0, c.Z)(u, {
     hideSimpleEmbedContent: y,

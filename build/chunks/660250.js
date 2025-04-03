@@ -15,7 +15,7 @@ var n = r(200651),
   f = r(245581),
   p = r(760373),
   m = r(388032),
-  b = r(550282);
+  b = r(268999);
 let j = function(e) {
   let {
     transitionState: t,
@@ -23,12 +23,12 @@ let j = function(e) {
     channelId: j
   } = e, x = (0, c.e7)([s.Z], () => {
     var e;
-    return null === (e = s.Z.getSecureFramesState(r)) || void 0 === e ? void 0 : e.epochAuthenticator
-  }), v = (0, d.W)({
+    return null == (e = s.Z.getSecureFramesState(r)) ? void 0 : e.epochAuthenticator
+  }), y = (0, d.W)({
     fingerprintBase64: x,
     chunkSize: p.y6,
     desiredLength: p.YP
-  }), y = o.useCallback(() => {
+  }), v = o.useCallback(() => {
     (0, l.ih)({
       channelId: j
     })
@@ -45,15 +45,15 @@ let j = function(e) {
           variant: "text-sm/bold",
           color: "header-primary",
           children: m.NW.string(m.t.cgBTyM)
-        }), null != v && (0, n.jsx)(h.H, {
+        }), null != y && (0, n.jsx)(h.H, {
           className: b.copyIcon,
-          chunks: v,
+          chunks: y,
           color: i.TVs.colors.INTERACTIVE_NORMAL,
-          onCopy: y
+          onCopy: v
         })]
       }), (0, n.jsx)(u.b, {
         className: b.code,
-        chunks: v,
+        chunks: y,
         columns: p.WK
       })]
     }), (0, n.jsx)(i.Text, {

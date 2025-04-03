@@ -12,8 +12,8 @@ var l = r(120356),
   c = r(197653),
   s = r(987106),
   u = r(927057),
-  d = r(574597),
-  p = r(378975),
+  p = r(574597),
+  d = r(378975),
   f = r(732586),
   b = r(988075),
   O = r(12067),
@@ -24,7 +24,7 @@ var l = r(120356),
   h = r(889515),
   v = r(985184),
   P = r(892519),
-  x = r(356218);
+  x = r(841806);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,13 +68,13 @@ function C(e) {
       case o.re.BUTTON:
         return (0, n.jsx)(s.Z, w({}, e), t);
       case o.re.STRING_SELECT:
-        return (0, n.jsx)(p.Z, w({}, e), t);
+        return (0, n.jsx)(d.Z, w({}, e), t);
       case o.re.CHANNEL_SELECT:
         return (0, n.jsx)(u.Z, w({}, e), t);
       case o.re.USER_SELECT:
       case o.re.ROLE_SELECT:
       case o.re.MENTIONABLE_SELECT:
-        return (0, n.jsx)(d.Z, w({}, e), t);
+        return (0, n.jsx)(p.Z, w({}, e), t);
       case o.re.TEXT_INPUT:
         return (0, n.jsx)(f.Z, w({}, e), t);
       case o.re.SECTION:

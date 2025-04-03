@@ -99,7 +99,8 @@ function L(e, t, r, a, n, s, o, i, c, l) {
     d = 24 & t,
     h = 512 & t,
     p = b ? void 0 : T(e);
-  return function m() {
+
+  function m() {
     for (var g = arguments.length, v = Array(g), Z = g; Z--;) v[Z] = arguments[Z];
     if (d) var w = q(m),
       k = function(e, t) {
@@ -135,6 +136,7 @@ function L(e, t, r, a, n, s, o, i, c, l) {
       return e
     }(v, i) : h && g > 1 && v.reverse(), u && c < g && (v.length = c), this && this !== M && this instanceof m && (j = p || T(j)), j.apply(E, v)
   }
+  return m
 }
 
 function F(e, t, r, a, n, s, o, i, c, l) {
@@ -173,18 +175,18 @@ var $ = D ? function(e, t, r) {
   return D(e, "toString", {
     configurable: !0,
     enumerable: !1,
-    value: (s = (u = (c = (a = (o = h.match(b)) ? o[1].split(d) : [], n = r, function(e, t) {
+    value: (s = (u = (c = (a = (o = h.match(b)) ? o[1].split(d) : [], n = r, ! function(e, t) {
       for (var r = -1, a = e ? e.length : 0; ++r < a && !1 !== t(e[r], r, e););
     }(l, function(e) {
       var t = "_." + e[0];
       n & e[1] && !((a ? a.length : 0) && function(e, t, r) {
-        if (t != t) return function(e, t, r, a) {
-          for (var n = e.length, s = r + -1; ++s < n;)
-            if (t(e[s], s, e)) return s;
+        if (t != t) {
+          for (var a, n = e.length, s = -1; a ? s-- : ++s < n;)
+            if (O(e[s], s, e)) return s;
           return -1
-        }(e, O, 0);
-        for (var a = r - 1, n = e.length; ++a < n;)
-          if (e[a] === t) return a;
+        }
+        for (var o = r - 1, i = e.length; ++o < i;)
+          if (e[o] === t) return o;
         return -1
       }(a, t, 0) > -1) && a.push(t)
     }), i = a.sort()).length) - 1, i[u] = (c > 1 ? "& " : "") + i[u], i = i.join(c > 2 ? ", " : " "), h.replace(f, "{\n/* [wrapped with " + i + "] */\n")), function() {
@@ -206,19 +208,24 @@ function W(e, t, r) {
       a = n = void 0
     }
     var b = [e, t, r, a, n, u, f, s, o, i];
-    if (e = b[0], t = b[1], r = b[2], a = b[3], n = b[4], (i = b[9] = null == b[9] ? c ? 0 : e.length : P(b[9] - l, 0)) || !(24 & t) || (t &= -25), t && 1 != t) 8 == t || 16 == t ? (d = e, h = t, p = i, m = T(d), B = function e() {
-      for (var t = arguments.length, r = Array(t), a = t, n = q(e); a--;) r[a] = arguments[a];
-      var s = t < 3 && r[0] !== n && r[t - 1] !== n ? [] : C(r, n);
-      return (t -= s.length) < p ? F(d, h, L, e.placeholder, void 0, r, s, void 0, void 0, p - t) : k(this && this !== M && this instanceof e ? m : d, this, r)
-    }) : 32 != t && 33 != t || n.length ? B = L.apply(void 0, b) : (g = e, y = t, v = r, Z = a, w = 1 & y, O = T(g), B = function e() {
-      for (var t = -1, r = arguments.length, a = -1, n = Z.length, s = Array(n + r), o = this && this !== M && this instanceof e ? O : g; ++a < n;) s[a] = Z[a];
+    if (e = b[0], t = b[1], r = b[2], a = b[3], n = b[4], (i = b[9] = null == b[9] ? c ? 0 : e.length : P(b[9] - l, 0)) || !(24 & t) || (t &= -25), t && 1 != t) 8 == t || 16 == t ? j = function(e, t, r) {
+      var a = T(e);
+
+      function n() {
+        for (var s = arguments.length, o = Array(s), i = s, c = q(n); i--;) o[i] = arguments[i];
+        var l = s < 3 && o[0] !== c && o[s - 1] !== c ? [] : C(o, c);
+        return (s -= l.length) < r ? F(e, t, L, n.placeholder, void 0, o, l, void 0, void 0, r - s) : k(this && this !== M && this instanceof n ? a : e, this, o)
+      }
+      return n
+    }(e, t, i) : 32 != t && 33 != t || n.length ? j = L.apply(void 0, b) : (d = e, h = t, p = r, m = a, g = 1 & h, y = T(d), j = function e() {
+      for (var t = -1, r = arguments.length, a = -1, n = m.length, s = Array(n + r), o = this && this !== M && this instanceof e ? y : d; ++a < n;) s[a] = m[a];
       for (; r--;) s[a++] = arguments[++t];
-      return k(o, w ? v : this, s)
+      return k(o, g ? p : this, s)
     });
-    else var d, h, p, m, g, y, v, Z, w, O, E, j, x, R, A, B = (E = e, j = t, x = r, R = 1 & j, A = T(E), function e() {
-      return (this && this !== M && this instanceof e ? A : E).apply(R ? x : this, arguments)
+    else var d, h, p, m, g, y, v, Z, w, O, E, j = (v = e, Z = t, w = r, O = 1 & Z, E = T(v), function e() {
+      return (this && this !== M && this instanceof e ? E : v).apply(O ? w : this, arguments)
     });
-    return $(B, e, t)
+    return $(j, e, t)
   }(e, 8, void 0, void 0, void 0, void 0, void 0, t = r ? void 0 : t);
   return a.placeholder = W.placeholder, a
 }

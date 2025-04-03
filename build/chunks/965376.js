@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   D: () => m
 }), n(47120), n(978209), n(653041);
@@ -34,8 +34,8 @@ function m(e, t) {
       return e.push(p.Sk.ONLINE, p.Sk.OFFLINE), e.map(e => {
         var t, r, i, l;
         return {
-          label: e === p.Sk.ONLINE ? h.NW.string(h.t.WbGtnJ) : e === p.Sk.OFFLINE ? h.NW.string(h.t.Vv0abG) : null !== (i = null == n ? void 0 : null === (t = n[e]) || void 0 === t ? void 0 : t.name) && void 0 !== i ? i : "",
-          userIds: null !== (l = null == m ? void 0 : null === (r = m[e]) || void 0 === r ? void 0 : r.userIds) && void 0 !== l ? l : [],
+          label: e === p.Sk.ONLINE ? h.NW.string(h.t.WbGtnJ) : e === p.Sk.OFFLINE ? h.NW.string(h.t.Vv0abG) : null != (i = null == n || null == (t = n[e]) ? void 0 : t.name) ? i : "",
+          userIds: null != (l = null == m || null == (r = m[e]) ? void 0 : r.userIds) ? l : [],
           id: e,
           roleId: e
         }

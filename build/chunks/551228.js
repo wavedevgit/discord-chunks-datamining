@@ -1,8 +1,8 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
-  ZP: () => f,
-  pi: () => h,
-  te: () => p
+  ZP: () => h,
+  pi: () => f,
+  te: () => _
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -13,26 +13,26 @@ var r = n(200651),
   c = n(442550),
   u = n(297781),
   d = n(443487),
-  _ = n(220359);
-let p = [u.XF];
+  p = n(522314);
+let _ = [u.XF];
 
-function h(e) {
+function f(e) {
   var t, n, r, i;
   let s = (0, o.e7)([a.Z], () => a.Z.getMatchingActivity(e)),
     c = (0, o.e7)([l.default], () => l.default.getUser(e.author_id));
   if (null == s || null == c) return {};
   let u = e.extra.entries[0],
-    d = null !== (r = null !== (n = s.state) && void 0 !== n ? n : null === (t = u.media.artists[0]) || void 0 === t ? void 0 : t.name) && void 0 !== r ? r : u.media.title,
-    _ = null !== (i = s.details) && void 0 !== i ? i : u.media.title;
+    d = null != (r = null != (n = s.state) ? n : null == (t = u.media.artists[0]) ? void 0 : t.name) ? r : u.media.title,
+    p = null != (i = s.details) ? i : u.media.title;
   return {
     activity: s,
     artist: d,
     currentEntry: u,
-    title: _,
+    title: p,
     user: c
   }
 }
-let f = i.memo(function(e) {
+let h = i.memo(function(e) {
   let {
     entry: t,
     channel: n,
@@ -41,8 +41,8 @@ let f = i.memo(function(e) {
   } = e, {
     activity: l,
     artist: a
-  } = h(t), {
-    largeImage: f
+  } = f(t), {
+    largeImage: h
   } = (0, s.rv)({
     entry: t
   });
@@ -57,15 +57,15 @@ let f = i.memo(function(e) {
         children: a
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
-        children: p.map((e, n) => (0, r.jsx)(e, {
+        children: _.map((e, n) => (0, r.jsx)(e, {
           entry: t,
           hovered: o
         }, n))
       })]
     }), (0, r.jsx)(c.f, {
-      src: null == f ? void 0 : f.src,
+      src: null == h ? void 0 : h.src,
       size: 48,
-      className: _.thumbnail
+      className: p.thumbnail
     })]
   })
 })

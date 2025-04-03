@@ -11,7 +11,7 @@ var n = t(200651),
   c = t(472305),
   d = t(981631),
   x = t(388032),
-  h = t(438783);
+  h = t(149388);
 
 function N(e) {
   let {
@@ -37,8 +37,8 @@ function m(e) {
   let {
     onClose: s,
     transitionState: t
-  } = e, [a, m] = o.useState(""), [u, j] = o.useState(""), [k, v] = o.useState(null), [_, g] = o.useState(!1), [p, C] = o.useState("DOMAIN"), b = () => {
-    g(!0), v(null), i.tn.post({
+  } = e, [a, m] = o.useState(""), [u, j] = o.useState(""), [k, _] = o.useState(null), [g, p] = o.useState(!1), [C, v] = o.useState("DOMAIN"), b = () => {
+    p(!0), _(null), i.tn.post({
       url: d.ANM.CONNECTION(d.ABu.DOMAIN, a),
       body: {},
       rejectWithError: !1
@@ -46,9 +46,9 @@ function m(e) {
       s()
     }).catch(e => {
       var s, t, n, o, i, l, r;
-      (null === (s = e.body) || void 0 === s ? void 0 : s.proof) && "DOMAIN" === p ? (j(e.body.proof), C("PROOF_DNS")) : v((null === (l = e.body) || void 0 === l ? void 0 : null === (i = l.errors) || void 0 === i ? void 0 : null === (o = i.domain) || void 0 === o ? void 0 : null === (n = o._errors) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.message) || (null === (r = e.body) || void 0 === r ? void 0 : r.message) || e.message)
+      (null == (s = e.body) ? void 0 : s.proof) && "DOMAIN" === C ? (j(e.body.proof), v("PROOF_DNS")) : _((null == (l = e.body) || null == (i = l.errors) || null == (o = i.domain) || null == (n = o._errors) || null == (t = n[0]) ? void 0 : t.message) || (null == (r = e.body) ? void 0 : r.message) || e.message)
     }).finally(() => {
-      g(!1)
+      p(!1)
     })
   };
   return (0, n.jsxs)(l.Y0X, {
@@ -66,7 +66,7 @@ function m(e) {
         onClick: s
       })]
     }), (0, n.jsxs)(l.MyZ, {
-      activeSlide: p,
+      activeSlide: C,
       width: 440,
       children: [(0, n.jsx)(l.Mi4, {
         id: "DOMAIN",
@@ -89,7 +89,7 @@ function m(e) {
                 placeholder: c.pL,
                 maxLength: 253,
                 value: a,
-                disabled: _,
+                disabled: g,
                 autoFocus: !0
               })
             })]
@@ -97,7 +97,7 @@ function m(e) {
             className: h.footer,
             children: [(0, n.jsx)(l.zxk, {
               type: "submit",
-              submitting: _,
+              submitting: g,
               disabled: "" === a,
               children: x.NW.string(x.t.PDTjLC)
             }), (0, n.jsx)(l.zxk, {
@@ -156,7 +156,7 @@ function m(e) {
             look: l.zxk.Looks.LINK,
             color: l.zxk.Colors.PRIMARY,
             onClick: () => {
-              C("DOMAIN"), v(null)
+              v("DOMAIN"), _(null)
             },
             children: x.NW.string(x.t["13/7kZ"])
           }), (0, n.jsxs)("div", {
@@ -165,12 +165,12 @@ function m(e) {
               look: l.zxk.Looks.LINK,
               color: l.zxk.Colors.PRIMARY,
               onClick: () => {
-                C("PROOF_HTTP"), v(null)
+                v("PROOF_HTTP"), _(null)
               },
               className: h.__invalid_switchButton,
               children: x.NW.string(x.t.CkfdNz)
             }), (0, n.jsx)(l.zxk, {
-              submitting: _,
+              submitting: g,
               onClick: b,
               children: x.NW.string(x.t["13ofGh"])
             })]
@@ -206,7 +206,7 @@ function m(e) {
             look: l.zxk.Looks.LINK,
             color: l.zxk.Colors.PRIMARY,
             onClick: () => {
-              C("DOMAIN"), v(null)
+              v("DOMAIN"), _(null)
             },
             children: x.NW.string(x.t["13/7kZ"])
           }), (0, n.jsxs)("div", {
@@ -215,12 +215,12 @@ function m(e) {
               look: l.zxk.Looks.LINK,
               color: l.zxk.Colors.PRIMARY,
               onClick: () => {
-                C("PROOF_DNS"), v(null)
+                v("PROOF_DNS"), _(null)
               },
               className: h.__invalid_switchButton,
               children: x.NW.string(x.t.RhJMVV)
             }), (0, n.jsx)(l.zxk, {
-              submitting: _,
+              submitting: g,
               onClick: b,
               children: x.NW.string(x.t["13ofGh"])
             })]

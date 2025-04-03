@@ -16,7 +16,7 @@ var l = n(200651),
   h = n(594174),
   I = n(5192),
   g = n(51144),
-  f = n(262621);
+  f = n(82778);
 
 function p(e) {
   let {
@@ -25,7 +25,7 @@ function p(e) {
     className: i
   } = e, p = (0, a.e7)([N.Z], () => N.Z.getGuild(t)), E = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), S = (0, a.e7)([h.default], () => h.default.getUser(null == n ? void 0 : n.authorIds[0])), x = r.useMemo(() => null != p && null != S && (0, u.Y)(p, S) ? S : null, [p, S]), T = (0, a.e7)([h.default], () => h.default.getCurrentUser()), O = r.useMemo(() => {
     var e;
-    return null !== (e = null == n ? void 0 : n.authorIds) && void 0 !== e ? e : []
+    return null != (e = null == n ? void 0 : n.authorIds) ? e : []
   }, [n]);
   r.useEffect(() => {
     c.Z.requestMembersById(t, O)

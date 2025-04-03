@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => A
@@ -21,8 +21,8 @@ var r = n(200651),
   x = n(518738),
   j = n(549631),
   N = n(496675),
-  v = n(626135),
-  _ = n(480608),
+  _ = n(626135),
+  v = n(480608),
   C = n(243730),
   O = n(130341),
   y = n(970129),
@@ -30,8 +30,8 @@ var r = n(200651),
   E = n(203377),
   S = n(981631),
   T = n(388032),
-  P = n(814657),
-  w = n(791887);
+  P = n(521219),
+  w = n(587072);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,11 +78,11 @@ function A(e) {
     query: u
   } = e, m = (0, d.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, d.e7)([N.Z], () => N.Z.getHighestRole(n), [n]), h = u.trim();
   i.useEffect(() => {
-    (0, _.E)(n.id)
+    (0, v.E)(n.id)
   }, [n.id]);
   let f = i.useRef(!1);
   i.useEffect(() => {
-    !f.current && "" !== u.trimStart() && (v.default.track(S.rMx.SEARCH_STARTED, {
+    f.current || "" === u.trimStart() || (_.default.track(S.rMx.SEARCH_STARTED, {
       search_type: "Roles"
     }), f.current = !0)
   }, [u]);
@@ -106,7 +106,7 @@ function A(e) {
         guild: n,
         highestRole: p,
         currentPosition: s,
-        memberCount: null !== (i = null == m ? void 0 : m[o.id]) && void 0 !== i ? i : 0,
+        memberCount: null != (i = null == m ? void 0 : m[o.id]) ? i : 0,
         onDragStart: y,
         onDragReset: E,
         onDragComplete: T,
@@ -150,8 +150,8 @@ function W(e) {
     highestRole: h,
     currentPosition: x,
     memberCount: N,
-    onDragStart: v,
-    onDragReset: _,
+    onDragStart: _,
+    onDragReset: v,
     onDragComplete: C,
     disableHover: O,
     disableDrag: I,
@@ -159,7 +159,7 @@ function W(e) {
     setSelectedSection: A
   } = e, k = (0, y.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: D,
-    item: () => (v(d.id), {
+    item: () => (_(d.id), {
       id: d.id,
       position: x
     }),
@@ -169,13 +169,10 @@ function W(e) {
     }),
     end: (e, t) => {
       let n = t.getDropResult();
-      if (null == n) {
-        _();
-        return
-      }
+      if (null == n) return void v();
       C(n.roleId)
     }
-  }), [d, v, _, C, W, M, x]), [{
+  }), [d, _, v, C, W, M, x]), [{
     isDragging: B
   }, F] = (0, l.c)(U), z = i.useMemo(() => ({
     accept: D,
@@ -242,7 +239,7 @@ function W(e) {
       })
     }), (0, r.jsxs)("div", {
       className: a()(P.roleNameContainer, w.roleNameSpacing),
-      children: [(null === (t = d.tags) || void 0 === t ? void 0 : t.guild_connections) === null ? (0, r.jsx)(p.Z, {
+      children: [(null == (t = d.tags) ? void 0 : t.guild_connections) === null ? (0, r.jsx)(p.Z, {
         className: P.roleFlowerStar,
         color: d.colorString,
         size: 24
@@ -260,10 +257,10 @@ function W(e) {
         color: "header-primary",
         variant: "text-md/medium",
         children: d.name
-      }), (null === (s = d.tags) || void 0 === s ? void 0 : s.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
+      }), (null == (s = d.tags) ? void 0 : s.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
         className: P.subscriptionRoleIcon,
         "aria-label": T.NW.string(T.t.a2Ak8f)
-      }), (null === (c = d.tags) || void 0 === c ? void 0 : c.is_guild_product_role) === !0 && (0, r.jsx)(f.Z, {})]
+      }), (null == (c = d.tags) ? void 0 : c.is_guild_product_role) === !0 && (0, r.jsx)(f.Z, {})]
     }), (0, r.jsx)(u.ua7, {
       text: T.NW.string(T.t.CW75t7),
       "aria-label": T.NW.formatToPlainString(T.t.Fgs8fH, {
@@ -342,7 +339,7 @@ function L(e) {
   })) : (0, r.jsx)(u.lZ8, {
     size: "custom",
     className: a()(o, d),
-    color: null !== (t = i.colorString) && void 0 !== t ? t : (0, c.Rf)(S.p6O),
+    color: null != (t = i.colorString) ? t : (0, c.Rf)(S.p6O),
     width: s,
     height: s
   })

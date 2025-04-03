@@ -7,7 +7,7 @@ var r = n(200651),
   i = n(557533),
   o = n.n(i),
   a = n(349361),
-  u = n(851713);
+  u = n(806726);
 
 function s(e) {
   var t, n, {
@@ -33,7 +33,7 @@ function s(e) {
     [p, f] = l.useState(!0),
     b = () => {
       var e;
-      (null === (e = d.current) || void 0 === e ? void 0 : e.isScrolledToBottom()) === !0 ? f(!1) : f(!0)
+      (null == (e = d.current) ? void 0 : e.isScrolledToBottom()) === !0 ? f(!1) : f(!0)
     };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.h2, (t = function(e) {

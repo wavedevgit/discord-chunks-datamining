@@ -28,7 +28,7 @@ class o extends(i = s.ZP.PersistedStore) {
   }
   isVoiceCategoryExpanded(e) {
     var t;
-    return null !== (t = null != e && a[e]) && void 0 !== t && t
+    return null != (t = null != e && a[e]) && t
   }
   isVoiceCategoryCollapsed(e) {
     return !this.isVoiceCategoryExpanded(e)

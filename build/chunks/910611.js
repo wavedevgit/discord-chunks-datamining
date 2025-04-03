@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   TS: () => L,
   ud: () => w,
@@ -21,9 +21,9 @@ var r = n(200651),
   b = n(703656),
   _ = n(699516),
   C = n(914010),
-  v = n(594174),
-  y = n(768581),
-  x = n(63063),
+  y = n(594174),
+  x = n(768581),
+  v = n(63063),
   j = n(946734),
   O = n(99843),
   E = n(372564),
@@ -32,16 +32,16 @@ var r = n(200651),
   P = n(981631),
   S = n(921944),
   Z = n(388032),
-  T = n(688044);
+  T = n(100658);
 
 function A(e) {
   var t;
   let {
     channel: n,
     children: i
-  } = e, l = (0, u.q)(null === (t = n.linkedLobby) || void 0 === t ? void 0 : t.application_id), [o, a] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
+  } = e, l = (0, u.q)(null == (t = n.linkedLobby) ? void 0 : t.application_id), [o, a] = (0, f.US)([s.z.CHANNEL_LINKED_LOBBY_EDUCATION_TOOLTIP], void 0, !0);
   if (null == l) return null;
-  let d = y.ZP.getApplicationIconURL({
+  let d = x.ZP.getApplicationIconURL({
       id: l.id,
       icon: l.icon,
       size: 14
@@ -56,7 +56,7 @@ function A(e) {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: Z.NW.format(Z.t["16agur"], {
-          helpdeskArticle: x.Z.getArticleURL(P.BhN.CHANNEL_LINKED_LOBBIES)
+          helpdeskArticle: v.Z.getArticleURL(P.BhN.CHANNEL_LINKED_LOBBIES)
         })
       }), (0, r.jsx)(c.P3F, {
         className: T.linkedLobbyEducationTooltipCloseClickContainer,
@@ -133,8 +133,8 @@ function w(e) {
     handleParentContextMenu: g,
     renderFollowButton: b
   } = e, C = (0, h.KS)(t, a), {
-    prefix: y,
-    level: x
+    prefix: x,
+    level: v
   } = function(e, t) {
     var n, r;
     switch (e) {
@@ -148,7 +148,7 @@ function w(e) {
         };
       case P.d4z.GUILD_DIRECTORY:
         return {
-          prefix: null !== (n = null == t ? void 0 : t.name) && void 0 !== n ? n : "", level: 1
+          prefix: null != (n = null == t ? void 0 : t.name) ? n : "", level: 1
         };
       case P.d4z.GUILD_ANNOUNCEMENT:
       case P.d4z.GUILD_TEXT:
@@ -157,7 +157,7 @@ function w(e) {
       case P.d4z.GUILD_STAGE_VOICE:
       case P.d4z.GUILD_VOICE:
         return {
-          prefix: null !== (r = null == t ? void 0 : t.name) && void 0 !== r ? r : "", level: 1
+          prefix: null != (r = null == t ? void 0 : t.name) ? r : "", level: 1
         };
       case P.d4z.ANNOUNCEMENT_THREAD:
       case P.d4z.PUBLIC_THREAD:
@@ -171,14 +171,14 @@ function w(e) {
         }
     }
   }(t.type, a), j = (0, r.jsxs)(r.Fragment, {
-    children: [null != y ? (0, r.jsxs)(c.nn4, {
-      children: [y, ":"]
+    children: [null != x ? (0, r.jsxs)(c.nn4, {
+      children: [x, ":"]
     }) : null, " ", n]
   });
   switch (t.type) {
     case P.d4z.DM:
       return (0, r.jsx)(I.Z, {
-        level: x,
+        level: v,
         channel: t,
         handleClick: u,
         handleContextMenu: d
@@ -208,14 +208,14 @@ function w(e) {
       return null != t.linkedLobby ? (0, r.jsxs)(A, {
         channel: t,
         children: [k(C, t.type === P.d4z.GUILD_ANNOUNCEMENT ? Z.NW.string(Z.t.l1dkSE) : Z.NW.string(Z.t.Pnajj4)), (0, r.jsx)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
           children: j
         })]
       }) : (0, r.jsxs)(i.Fragment, {
         children: [k(C, t.type === P.d4z.GUILD_ANNOUNCEMENT ? Z.NW.string(Z.t.l1dkSE) : Z.NW.string(Z.t.Pnajj4)), (0, r.jsx)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
           children: j
@@ -224,7 +224,7 @@ function w(e) {
     case P.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [k(C, Z.NW.string(Z.t.BVZqJi)), (0, r.jsx)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
           children: j
@@ -233,7 +233,7 @@ function w(e) {
     case P.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
         children: [k(C, Z.NW.string(Z.t.EErMzM)), (0, r.jsx)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
           children: j
@@ -247,18 +247,18 @@ function w(e) {
         let e = (0, h.KS)(l, a);
         E = (0, r.jsxs)(i.Fragment, {
           children: [k(e, Z.NW.string(Z.t.Pnajj4)), (0, r.jsx)(N.Z.Title, {
-            level: x,
+            level: v,
             onContextMenu: g,
             onClick: f,
             className: o()(T.parentChannelName, T.cursorPointer),
-            children: (0, p.F6)(l, v.default, _.Z)
+            children: (0, p.F6)(l, y.default, _.Z)
           }), (0, r.jsx)(N.Z.Caret, {})]
         })
       }
       let S = (null == l ? void 0 : l.type) != null && P.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
         children: [E, k(S ? null : C, Z.NW.string(Z.t["7Xm5QE"])), (0, r.jsx)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
           className: o()({
@@ -278,11 +278,11 @@ function w(e) {
           icon: C,
           "aria-hidden": !0
         }) : null, (0, r.jsxs)(N.Z.Title, {
-          level: x,
+          level: v,
           onContextMenu: d,
           onClick: u,
-          children: [null != y ? (0, r.jsxs)(c.nn4, {
-            children: [y, ":"]
+          children: [null != x ? (0, r.jsxs)(c.nn4, {
+            children: [x, ":"]
           }) : null, " ", w]
         })]
       });
@@ -293,7 +293,7 @@ function w(e) {
 let R = e => {
   let {
     channel: t
-  } = e, n = (0, a.e7)([v.default], () => v.default.getCurrentUser()), i = (0, a.e7)([v.default], () => v.default.getUser(t.getRecipientId()));
+  } = e, n = (0, a.e7)([y.default], () => y.default.getCurrentUser()), i = (0, a.e7)([y.default], () => y.default.getUser(t.getRecipientId()));
   return t.isDM() && (null == n ? void 0 : n.isStaff()) && (null == i ? void 0 : i.isStaff()) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
   }) : null

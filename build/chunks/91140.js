@@ -1,4 +1,4 @@
-/** Chunk was on 85086 **/
+/** Chunk was on 96446 **/
 n.d(t, {
   W: () => u,
   Z: () => d
@@ -9,7 +9,7 @@ var r = n(200651),
   l = n(442550),
   s = n(297781),
   a = n(443487),
-  c = n(220359);
+  c = n(522314);
 let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
   d = i.memo(e => {
     var t;
@@ -17,9 +17,9 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
       entry: n,
       channel: i,
       selected: d,
-      hovered: _
+      hovered: p
     } = e, {
-      largeImage: p
+      largeImage: _
     } = (0, o.rv)({
       entry: n,
       showCoverImage: !1
@@ -37,15 +37,15 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.wO, s.f, s.n8, s.v1, s.pQ],
           location: s.Gt.CARD,
           children: u.map((e, t) => (0, r.jsx)(e, {
             entry: n,
-            hovered: _
+            hovered: p
           }, t))
         })]
       }), (0, r.jsx)(l.f, {
-        alt: null !== (t = null == p ? void 0 : p.text) && void 0 !== t ? t : null == p ? void 0 : p.alt,
-        src: null == p ? void 0 : p.src,
+        alt: null != (t = null == _ ? void 0 : _.text) ? t : null == _ ? void 0 : _.alt,
+        src: null == _ ? void 0 : _.src,
         size: 48,
         className: c.thumbnail,
-        showTooltip: (null == p ? void 0 : p.text) != null
+        showTooltip: (null == _ ? void 0 : _.text) != null
       })]
     })
   })

@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(246992),
   b = n(981631),
   f = n(474936),
-  _ = n(890798),
-  g = n(33647);
+  _ = n(616257),
+  g = n(173166);
 let v = async () => {
   try {
     let {
@@ -98,12 +98,12 @@ function S(e) {
     trial_id: P,
     subscription_trial: I,
     referrer: Z
-  } = u, R = null !== (n = null === (t = m.find(e => {
+  } = u, R = null != (n = null == (t = m.find(e => {
     let {
       value: t
     } = e;
     return t === P
-  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown";
+  })) ? void 0 : t.label) ? n : "Unknown";
   null != Z && (R = "".concat(R, " from @").concat(Z.username));
   let L = null != E,
     D = null != E && new Date(E).getTime() < Date.now(),
@@ -208,8 +208,8 @@ function S(e) {
         variant: "eyebrow",
         color: "always-white",
         children: ["Trial Length:", " ", (0, h.if)({
-          intervalType: null !== (l = null == I ? void 0 : I.interval) && void 0 !== l ? l : f.rV.MONTH,
-          intervalCount: null !== (s = null == I ? void 0 : I.interval_count) && void 0 !== s ? s : 1,
+          intervalType: null != (l = null == I ? void 0 : I.interval) ? l : f.rV.MONTH,
+          intervalCount: null != (s = null == I ? void 0 : I.interval_count) ? s : 1,
           capitalize: !1
         })]
       })
@@ -278,12 +278,12 @@ function N(e) {
     applied_at: N,
     discount_id: O,
     discount: k
-  } = l, E = null !== (n = null === (t = s.find(e => {
+  } = l, E = null != (n = null == (t = s.find(e => {
     let {
       value: t
     } = e;
     return t === O
-  })) || void 0 === t ? void 0 : t.label) && void 0 !== n ? n : "Unknown", w = null != S, P = null != S && new Date(S).getTime() < Date.now(), I = async () => {
+  })) ? void 0 : t.label) ? n : "Unknown", w = null != S, P = null != S && new Date(S).getTime() < Date.now(), I = async () => {
     v(!0), w ? await Z({
       expiresAt: null
     }) : await (0, d.a)(void 0, l), u(), v(!1)

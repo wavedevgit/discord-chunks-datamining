@@ -1,11 +1,11 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => a
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   l = n(347469),
-  o = n(97859);
+  o = n(955229);
 
 function a(e) {
   let {
@@ -17,7 +17,7 @@ function a(e) {
   } = e, [u, d] = i.useState(null);
   i.useEffect(() => {
     var e, n;
-    d(null !== (n = null === (e = t.current) || void 0 === e ? void 0 : e.offsetHeight) && void 0 !== n ? n : null)
+    d(null != (n = null == (e = t.current) ? void 0 : e.offsetHeight) ? n : null)
   }, [t]);
   let p = (0, l.Z)({
     initialElementDimension: u,

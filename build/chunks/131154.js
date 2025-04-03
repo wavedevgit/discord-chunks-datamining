@@ -1,57 +1,57 @@
-/** Chunk was on 93024 **/
-n.d(t, {
-  Z: () => s
+/** Chunk was on 84722 **/
+i.d(n, {
+  Z: () => o
 });
-var r = n(200651);
-n(192379);
-var i = n(120356),
-  l = n.n(i),
-  o = n(481060),
-  a = n(388032),
-  c = n(795691);
+var t = i(200651);
+i(192379);
+var l = i(120356),
+  a = i.n(l),
+  r = i(481060),
+  s = i(388032),
+  c = i(449774);
 
-function s(e) {
+function o(e) {
   let {
-    guild: t,
-    speakers: n,
-    speakerCount: i,
-    className: s
-  } = e, d = n.slice(0, 5), u = d.map(e => {
-    var n, i;
-    return (0, r.jsxs)("div", {
+    guild: n,
+    speakers: i,
+    speakerCount: l,
+    className: o
+  } = e, u = i.slice(0, 5), d = u.map(e => {
+    var i, l;
+    return (0, t.jsxs)("div", {
       className: c.speakerContainer,
-      children: [(0, r.jsx)(o.qEK, {
-        src: null == e ? void 0 : null === (n = e.user) || void 0 === n ? void 0 : n.getAvatarURL(t.id, 20),
-        size: o.EFr.SIZE_20,
+      children: [(0, t.jsx)(r.qEK, {
+        src: null == e || null == (i = e.user) ? void 0 : i.getAvatarURL(n.id, 20),
+        size: r.EFr.SIZE_20,
         className: c.avatar,
         "aria-label": "".concat(null == e ? void 0 : e.userNick, "-avatar")
-      }), (0, r.jsx)("div", {
+      }), (0, t.jsx)("div", {
         className: c.textInGridContainer,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, t.jsx)(r.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
           className: c.textInGrid,
           children: null == e ? void 0 : e.userNick
         })
       })]
-    }, null == e ? void 0 : null === (i = e.user) || void 0 === i ? void 0 : i.id)
-  }), h = i - d.length;
-  return (0, r.jsxs)("div", {
-    className: l()(c.grid, s),
-    children: [u, h > 0 && (0, r.jsxs)("div", {
+    }, null == e || null == (l = e.user) ? void 0 : l.id)
+  }), h = l - u.length;
+  return (0, t.jsxs)("div", {
+    className: a()(c.grid, o),
+    children: [d, h > 0 && (0, t.jsxs)("div", {
       className: c.speakerContainer,
-      children: [(0, r.jsx)("div", {
+      children: [(0, t.jsx)("div", {
         className: c.iconMicrophone,
-        children: (0, r.jsx)(o.S6n, {
+        children: (0, t.jsx)(r.S6n, {
           size: "custom",
           color: "currentColor",
           height: 12
         })
-      }), (0, r.jsx)(o.Text, {
+      }), (0, t.jsx)(r.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
         className: c.textInGrid,
-        children: a.NW.format(a.t["185ggI"], {
+        children: s.NW.format(s.t["185ggI"], {
           count: h
         })
       })]

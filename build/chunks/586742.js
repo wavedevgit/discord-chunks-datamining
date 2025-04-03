@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => D
 }), n(47120);
@@ -16,9 +16,9 @@ var i = n(200651),
   f = n(27457),
   m = n(796638),
   g = n(592125),
-  v = n(131951),
-  y = n(944486),
-  O = n(237997),
+  y = n(131951),
+  O = n(944486),
+  v = n(237997),
   b = n(136015),
   _ = n(444295),
   E = n(906037),
@@ -27,7 +27,7 @@ var i = n(200651),
   j = n(981631),
   C = n(65154),
   S = n(388032),
-  N = n(866381);
+  N = n(884751);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,8 +66,8 @@ let P = r.memo(function(e) {
       participant: n,
       channel: r,
       context: o
-    } = e, l = null === (t = n.user) || void 0 === t ? void 0 : t.id;
-    return (0, a.e7)([v.Z], () => null != n.user && null != o && null != r && v.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(f.ZP, Z({}, e))
+    } = e, l = null == (t = n.user) ? void 0 : t.id;
+    return (0, a.e7)([y.Z], () => null != n.user && null != o && null != r && y.Z.isLocalVideoDisabled(l, o), [l, n.user, o, r]) ? null : (0, i.jsx)(f.ZP, Z({}, e))
   }),
   T = r.memo(function(e) {
     let {
@@ -102,11 +102,11 @@ let P = r.memo(function(e) {
       })
     }, [t]), f = (0, _.ee)(() => new Set(o.map(e => {
       var t;
-      return null === (t = e.user) || void 0 === t ? void 0 : t.id
+      return null == (t = e.user) ? void 0 : t.id
     })), [o]);
     r.useEffect(() => {
       d && (0, _.zi)(j.Odu.VIDEO, {
-        locked: O.default.isInstanceLocked(),
+        locked: v.default.isInstanceLocked(),
         shownUserIds: Array.from(f),
         liveUserIds: Array.from(f),
         contentInventoryIds: []
@@ -156,18 +156,18 @@ let P = r.memo(function(e) {
         isPreviewingInGame: !1
       }, g)
     }, [a, c, g]);
-    let v = r.useMemo(() => ({
+    let y = r.useMemo(() => ({
         opacity: c.opacity
       }), [c.opacity]),
-      y = r.useMemo(() => l()({
+      O = r.useMemo(() => l()({
         [N.videoList]: !0,
         [N.vertical]: !m,
         [N.hidden]: !g && a
       }), [m, g, a]);
     return 0 !== n.length || a ? null == u ? null : (0, i.jsx)("div", {
       ref: f,
-      className: y,
-      style: v,
+      className: O,
+      style: y,
       children: (0, i.jsx)(T, {
         context: t,
         participants: n,
@@ -189,7 +189,7 @@ let P = r.memo(function(e) {
   });
 
 function D(e) {
-  let t = (0, a.e7)([y.Z, g.Z], () => g.Z.getChannel(y.Z.getVoiceChannelId())),
+  let t = (0, a.e7)([O.Z, g.Z], () => g.Z.getChannel(O.Z.getVoiceChannelId())),
     n = null == t ? void 0 : t.id,
     [o, l] = (0, a.e7)([p.Z], () => null == n ? [
       [], 0
@@ -201,8 +201,8 @@ function D(e) {
       ref: f
     } = (0, d.Z)(e.locked, e.widget.pinned),
     {
-      participantTileWidth: v,
-      visibleParticipants: O
+      participantTileWidth: y,
+      visibleParticipants: v
     } = (0, m.ZB)(s ? null != c ? c : e.width : null != h ? h : e.height, o, {
       tileWidth: I.vZ,
       tileMinWidth: I.mo,
@@ -235,10 +235,10 @@ function D(e) {
     })
   }, [s]), (0, i.jsx)(k, w(Z({}, e), {
     channel: t,
-    participants: O,
+    participants: v,
     participantsVersion: l,
-    width: s ? v : null != c ? c : e.width,
-    height: s ? null != h ? h : e.height : v,
+    width: s ? y : null != c ? c : e.width,
+    height: s ? null != h ? h : e.height : y,
     containerRef: f
   }))
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   j: () => a
 });
@@ -11,9 +11,9 @@ function a(e, t) {
     embedIndex: a
   } = t;
   if ("media" === n) {
-    var o, l;
+    var l, o;
     let t = e;
-    return (null === (o = e.messageReference) || void 0 === o ? void 0 : o.type) === i.Uvt.FORWARD && (t = null === (l = e.messageSnapshots[0]) || void 0 === l ? void 0 : l.message), {
+    return (null == (l = e.messageReference) ? void 0 : l.type) === i.Uvt.FORWARD && (t = null == (o = e.messageSnapshots[0]) ? void 0 : o.message), {
       onlyAttachmentIds: null == t ? void 0 : t.attachments.filter(e => {
         let {
           filename: t

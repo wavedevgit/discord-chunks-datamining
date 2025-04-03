@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   s = n(192379),
   o = n(120356),
-  i = n.n(o),
-  a = n(392711),
+  a = n.n(o),
+  i = n(392711),
   c = n(642128),
   l = n(772848),
   u = n(442837),
@@ -18,13 +18,13 @@ var r = n(200651),
   b = n(120421),
   y = n(284539),
   h = n(18582),
-  v = n(3072),
-  x = n(763283),
-  N = n(81829),
+  x = n(3072),
+  N = n(763283),
+  v = n(81829),
   O = n(477839),
-  j = n(884479),
+  j = n(622802),
   Z = n(388032),
-  _ = n(845682);
+  _ = n(574554);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,10 +96,10 @@ function I(e) {
     config: {
       duration: 1e3
     }
-  }, "respect-motion-settings"), i = (0, s.useRef)(n);
+  }, "respect-motion-settings"), a = (0, s.useRef)(n);
   return o((e, n) => n ? (0, r.jsx)(c.animated.div, {
     className: _.affirmation,
-    style: P({}, i.current, e),
+    style: P({}, a.current, e),
     children: t
   }) : null)
 }
@@ -110,8 +110,8 @@ function k(e) {
     pathData: n,
     width: s,
     height: o,
-    gradientWidthScale: i,
-    className: a
+    gradientWidthScale: a,
+    className: i
   } = e, c = (0, p.Dt)(), l = (0, p.Dt)(), u = (0, r.jsx)("path", {
     d: n,
     stroke: t ? "white" : "currentColor",
@@ -119,7 +119,7 @@ function k(e) {
     strokeLinecap: "round"
   });
   return (0, r.jsx)("svg", {
-    className: a,
+    className: i,
     viewBox: "0 0 ".concat(s, " ").concat(o),
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
@@ -173,24 +173,24 @@ function k(e) {
         children: [(0, r.jsx)("rect", {
           x: -s,
           y: "0",
-          width: s * i,
+          width: s * a,
           height: o,
           fill: "url(#".concat(c, ")"),
           children: (0, r.jsx)("animate", {
             attributeName: "x",
-            values: "0;".concat(s * i),
+            values: "0;".concat(s * a),
             dur: "".concat(2, "s"),
             repeatCount: "indefinite"
           })
         }), (0, r.jsx)("rect", {
-          x: "-".concat(s * i),
+          x: "-".concat(s * a),
           y: "0",
-          width: s * i,
+          width: s * a,
           height: o,
           fill: "url(#".concat(c, ")"),
           children: (0, r.jsx)("animate", {
             attributeName: "x",
-            values: "-".concat(s * i, ";0"),
+            values: "-".concat(s * a, ";0"),
             dur: "".concat(2, "s"),
             repeatCount: "indefinite"
           })
@@ -213,8 +213,8 @@ function M(e) {
     R = (0, s.useMemo)(() => W.getPoints(t), [t, W]),
     [A, T] = (0, s.useState)({}),
     [L, B] = (0, y.Z)(O.yN.CLICKER_BUTTON),
-    D = (0, v.eR)(C),
-    F = (0, v.eR)(w);
+    D = (0, x.eR)(C),
+    F = (0, x.eR)(w);
   (0, s.useEffect)(() => {
     M && !L.hasPlayedRainbowSound && (D(), B({
       hasPlayedRainbowSound: !0
@@ -223,7 +223,7 @@ function M(e) {
   let U = (0, s.useCallback)(() => {
       var e, t, n;
       o && (c.push({
-        text: null !== (e = (0, a.sample)(S())) && void 0 !== e ? e : "",
+        text: null != (e = (0, i.sample)(S())) ? e : "",
         variation: 50 * Math.random()
       }), d([...c]), .05 > Math.random() && F()), T((t = P({}, A), n = n = {
         [(0, l.Z)()]: R
@@ -259,7 +259,7 @@ function M(e) {
       isGrass: !0,
       innerRef: n,
       onClick: U,
-      className: i()(_.logo, {
+      className: a()(_.logo, {
         [_.logoGreen]: !M
       }),
       children: [(0, r.jsx)(k, {
@@ -269,14 +269,14 @@ function M(e) {
         width: 62,
         height: 66,
         gradientWidthScale: 1.2
-      }), (0, r.jsxs)(x.Z, {
+      }), (0, r.jsxs)(N.Z, {
         variant: "text-lg/bold",
         color: "clicker-game-brand",
-        className: i()(_.logoText, _.override, {
+        className: a()(_.logoText, _.override, {
           [_.logoGreen]: !M,
           [_.rainbow]: M
         }),
-        children: [Z.NW.format(j.Z["u5OO/f"], {}), (0, r.jsx)(N.Z, {
+        children: [Z.NW.format(j.Z["u5OO/f"], {}), (0, r.jsx)(v.Z, {
           renderedPoints: A,
           onRemovePoint: G
         })]
@@ -289,10 +289,10 @@ function M(e) {
         gradientWidthScale: 2
       })]
     }), c.map((e, t) => {
-      var s, o, i, a;
+      var s, o, a, i;
       return (0, r.jsx)(I, {
         text: e.text,
-        position: P({}, E(e.variation, null === (s = n.current) || void 0 === s ? void 0 : s.offsetTop, null === (o = n.current) || void 0 === o ? void 0 : o.offsetLeft, null === (i = n.current) || void 0 === i ? void 0 : i.offsetWidth, null === (a = n.current) || void 0 === a ? void 0 : a.offsetHeight)[t % Object.keys(E(0)).length])
+        position: P({}, E(e.variation, null == (s = n.current) ? void 0 : s.offsetTop, null == (o = n.current) ? void 0 : o.offsetLeft, null == (a = n.current) ? void 0 : a.offsetWidth, null == (i = n.current) ? void 0 : i.offsetHeight)[t % Object.keys(E(0)).length])
       }, t)
     })]
   })

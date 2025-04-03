@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => o
 });
@@ -9,7 +9,7 @@ var r = n(442837),
 function o(e) {
   let t = (0, r.e7)([i.Z], () => {
     var t;
-    return null !== e ? null === (t = i.Z.getUserProfile(null != e ? e : l.lds)) || void 0 === t ? void 0 : t.application : void 0
+    return null !== e ? null == (t = i.Z.getUserProfile(null != e ? e : l.lds)) ? void 0 : t.application : void 0
   });
   return null != t ? t : void 0
 }

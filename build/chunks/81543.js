@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f,
@@ -10,7 +10,7 @@ var r, i = n(200651),
   l = n.n(a),
   o = n(748780),
   c = n(215569),
-  d = n(13423);
+  d = n(65187);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -42,11 +42,11 @@ let p = {
 class h extends s.PureComponent {
   componentWillEnter(e) {
     var t, n;
-    null === (t = (n = this.props).onAnimationStart) || void 0 === t || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
+    null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
       toValue: 0
     }, p)).start(() => {
       var t, n;
-      e(), null === (t = (n = this.props).onAnimationEnd) || void 0 === t || t.call(n)
+      e(), null == (t = (n = this.props).onAnimationEnd) || t.call(n)
     })
   }
   componentDidAppear() {

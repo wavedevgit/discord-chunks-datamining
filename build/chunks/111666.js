@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(642128),
-  o = n(442837),
-  a = n(481060),
+  a = n(442837),
+  o = n(481060),
   s = n(570140),
   c = n(868781),
   u = n(122943),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(482798),
   O = n(167762),
   N = n(151459),
-  v = n(981631),
-  y = n(388032),
-  I = n(5505);
+  y = n(981631),
+  I = n(388032),
+  v = n(398435);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,7 +60,7 @@ function S(e, t) {
 function T(e) {
   let {
     className: t
-  } = e, n = (0, o.e7)([b.Z], () => b.Z.getPendingCount() > 0), E = (0, d.Q3)("FriendsButton"), T = (0, a.dQu)(a.TVs.modules.chat.INPUT_ICON_SIZE), P = function() {
+  } = e, n = (0, a.e7)([b.Z], () => b.Z.getPendingCount() > 0), E = (0, d.Q3)("FriendsButton"), T = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), P = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, N.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -77,8 +77,8 @@ function T(e) {
             t(null), l.current = null
           }, 1e4)
         },
-        o = (t, n, l) => {
-          var o, a, s, c, u, d, p, h;
+        a = (t, n, l) => {
+          var a, o, s, c, u, d, p, h;
           if (!b.Z.isFriend(t)) return !1;
           let f = _.default.getUser(t);
           if (null == f) return !1;
@@ -88,46 +88,46 @@ function T(e) {
             let i = n.type;
             if (null != i && function(e) {
                 let t = e.type;
-                return t === v.IIU.PLAYING && null != e.application_id || t === v.IIU.LISTENING || t === v.IIU.WATCHING
+                return t === y.IIU.PLAYING && null != e.application_id || t === y.IIU.LISTENING || t === y.IIU.WATCHING
               }(n)) {
-              let l = i === v.IIU.WATCHING || i === v.IIU.LISTENING ? "".concat(i, "-").concat(null !== (c = n.name) && void 0 !== c ? c : "", "-").concat(null !== (u = n.state) && void 0 !== u ? u : "", "-").concat(null !== (d = n.details) && void 0 !== d ? d : "") : "".concat(i, "-").concat(null !== (p = n.name) && void 0 !== p ? p : "");
-              (null === (s = r.current[t]) || void 0 === s ? void 0 : s.presence) !== l && (m = !0, e(t, "presence", l), E = {
+              let l = i === y.IIU.WATCHING || i === y.IIU.LISTENING ? "".concat(i, "-").concat(null != (c = n.name) ? c : "", "-").concat(null != (u = n.state) ? u : "", "-").concat(null != (d = n.details) ? d : "") : "".concat(i, "-").concat(null != (p = n.name) ? p : "");
+              (null == (s = r.current[t]) ? void 0 : s.presence) !== l && (m = !0, e(t, "presence", l), E = {
                 user: f,
                 activity: n
               })
-            } else(null === (a = r.current[t]) || void 0 === a ? void 0 : a.presence) != null && (m = !0, e(t, "presence", null))
+            } else(null == (o = r.current[t]) ? void 0 : o.presence) != null && (m = !0, e(t, "presence", null))
           }
           if (null != l) {
             let n = g.Z.getChannel(l);
             if (null != n) {
               let i = "voice-".concat(n.id);
-              (null === (h = r.current[t]) || void 0 === h ? void 0 : h.voice) !== i && (m = !0, e(t, "voice", i), E = {
+              (null == (h = r.current[t]) ? void 0 : h.voice) !== i && (m = !0, e(t, "voice", i), E = {
                 user: f,
                 voiceChannel: n
               })
             }
-          } else(null === (o = r.current[t]) || void 0 === o ? void 0 : o.voice) != null && (m = !0, e(t, "voice", null));
+          } else(null == (a = r.current[t]) ? void 0 : a.voice) != null && (m = !0, e(t, "voice", null));
           return m && null != E && i(E), m
         },
-        a = e => {
+        o = e => {
           for (let t of e.updates) {
             let e = t.user.id,
               n = m.Z.getPrimaryActivity(e);
-            if (o(e, n)) break
+            if (a(e, n)) break
           }
         },
         c = e => {
           for (let t of e.voiceStates)
-            if (o(t.userId, void 0, t.channelId)) break
+            if (a(t.userId, void 0, t.channelId)) break
         };
-      return s.Z.subscribe("PRESENCE_UPDATES", a), s.Z.subscribe("VOICE_STATE_UPDATES", c), () => {
-        s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", c), null != l.current && (window.clearTimeout(l.current), l.current = null)
+      return s.Z.subscribe("PRESENCE_UPDATES", o), s.Z.subscribe("VOICE_STATE_UPDATES", c), () => {
+        s.Z.unsubscribe("PRESENCE_UPDATES", o), s.Z.unsubscribe("VOICE_STATE_UPDATES", c), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), j = (0, a.Yzy)(P, {
+  }(), j = (0, o.Yzy)(P, {
     keys: e => {
       var t, n, r;
-      return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null === (t = e.activity) || void 0 === t ? void 0 : t.state, ":").concat(null === (n = e.activity) || void 0 === n ? void 0 : n.details, ":").concat(null === (r = e.activity) || void 0 === r ? void 0 : r.name) : "none"
+      return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? void 0 : t.state, ":").concat(null == (n = e.activity) ? void 0 : n.details, ":").concat(null == (r = e.activity) ? void 0 : r.name) : "none"
     },
     from: {
       opacity: 0,
@@ -148,8 +148,8 @@ function T(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: I.container,
-      children: j((e, t) => null == t ? null : (0, r.jsx)(a.yRy, {
+      className: v.container,
+      children: j((e, t) => null == t ? null : (0, r.jsx)(o.yRy, {
         position: "bottom",
         align: "left",
         preload: () => (0, h.Z)(t.user.id, t.user.getAvatarURL(void 0, 80)),
@@ -159,12 +159,12 @@ function T(e) {
         children: n => {
           var i;
           return (0, r.jsxs)(l.animated.div, S(C({
-            className: I.activityWrapper,
+            className: v.activityWrapper,
             style: e
           }, n), {
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-xs/semibold",
-              children: null !== (i = t.user.globalName) && void 0 !== i ? i : t.user.username
+              children: null != (i = t.user.globalName) ? i : t.user.username
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium"
@@ -181,10 +181,10 @@ function T(e) {
       children: (e, i, l) => (0, r.jsx)(p.JO, S(C({}, l), {
         className: t,
         onClick: e,
-        icon: a.iFz,
+        icon: o.iFz,
         iconSize: E ? T : void 0,
-        "aria-label": y.NW.string(y.t.TdEu5e),
-        tooltip: i ? null : y.NW.string(y.t.TdEu5e),
+        "aria-label": I.NW.string(I.t.TdEu5e),
+        tooltip: i ? null : I.NW.string(I.t.TdEu5e),
         selected: i,
         showBadge: n
       }))

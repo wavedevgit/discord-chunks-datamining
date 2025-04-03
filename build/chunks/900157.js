@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T
 });
@@ -19,15 +19,15 @@ var r = n(200651),
   b = n(665149),
   _ = n(910611),
   C = n(359110),
-  v = n(592125),
-  y = n(703558),
-  x = n(430824),
+  y = n(592125),
+  x = n(703558),
+  v = n(430824),
   j = n(979651),
   O = n(664342),
   E = n(124368),
   N = n(981631),
   I = n(388032),
-  P = n(664530);
+  P = n(591837);
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,39 +66,38 @@ function T(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: T = "Split View"
-  } = e, A = (0, a.e7)([v.Z], () => v.Z.getChannel(t)), w = (0, a.e7)([x.Z], () => x.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
-  ! function(e) {
-    let t = (0, a.e7)([j.Z], () => null != e && !o().isEmpty(j.Z.getVoiceStatesForChannel(e.id)));
-    i.useEffect(() => {
-      t && null != e && (s.Z.dispatch({
-        type: "SIDEBAR_CLOSE",
-        baseChannelId: e.parent_id
-      }), (0, C.ad)(e, {
-        source: E.on.VOICE_AUTO_OPEN
-      }))
-    }, [t, e])
-  }(A);
-  let M = i.useRef(!1);
+  } = e, A = (0, a.e7)([y.Z], () => y.Z.getChannel(t)), w = (0, a.e7)([v.Z], () => v.Z.getGuild(null == A ? void 0 : A.getGuildId())), R = (0, f.ZP)(A);
+  var M = A;
+  let k = (0, a.e7)([j.Z], () => null != M && !o().isEmpty(j.Z.getVoiceStatesForChannel(M.id)));
+  i.useEffect(() => {
+    k && null != M && (s.Z.dispatch({
+      type: "SIDEBAR_CLOSE",
+      baseChannelId: M.parent_id
+    }), (0, C.ad)(M, {
+      source: E.on.VOICE_AUTO_OPEN
+    }))
+  }, [k, M]);
+  let L = i.useRef(!1);
   if (i.useEffect(() => {
-      if (null == A || M.current) return;
-      M.current = !0;
-      let e = (0, p.K)(v.Z.getChannel(A.id), !0);
+      if (null == A || L.current) return;
+      L.current = !0;
+      let e = (0, p.K)(y.Z.getChannel(A.id), !0);
       (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
         channel_view: T
       })), (0, h.a)(N.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
       })
     }, [A, T]), null == A || null == w) return null;
-  let k = (0, r.jsx)(O.Z, {
+  let D = (0, r.jsx)(O.Z, {
     channel: A,
     baseChannelId: l
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       channel: A,
-      draftType: y.d.ChannelMessage
+      draftType: x.d.ChannelMessage
     }), (0, r.jsx)(b.ZP, {
-      toolbar: k,
+      toolbar: D,
       "aria-label": I.NW.string(I.t.Pwe8tL),
       children: (0, _.ud)({
         channel: A,

@@ -1,13 +1,13 @@
 /** Chunk was on 74920 **/
 n.d(t, {
-  Z: () => g
+  Z: () => k
 }), n(47120);
 var r = n(200651),
   a = n(192379),
-  o = n(120356),
-  l = n.n(o),
-  i = n(392711),
-  s = n.n(i),
+  l = n(120356),
+  o = n.n(l),
+  s = n(392711),
+  i = n.n(s),
   c = n(481060),
   u = n(493773),
   d = n(110924),
@@ -20,10 +20,10 @@ var r = n(200651),
   _ = n(957115),
   E = n(531578),
   C = n(388032),
-  p = n(637913),
-  v = n(912961);
+  p = n(297849),
+  T = n(135771);
 
-function T() {
+function g() {
   return (0, r.jsx)(c.Text, {
     className: p.helpdeskLink,
     variant: "text-xs/normal",
@@ -34,23 +34,23 @@ function T() {
   })
 }
 
-function g(e) {
+function k(e) {
   var t, n;
   let {
-    header: o,
-    body: i,
+    header: l,
+    body: s,
     problems: b,
-    transitionState: g,
-    feedbackProblems: k = {},
+    transitionState: k,
+    feedbackProblems: v = {},
     otherKey: I,
     hasCloseButton: j,
     onSubmit: O,
     onClose: S,
     canDismissForever: R = !0,
     showHelpdeskLink: y = !0
-  } = e, Z = (0, d.Z)(b), [A, L] = a.useState(!1), [W, B] = a.useState(null), [D, U] = a.useState(s().shuffle(b)), [P, F] = a.useState(""), [V, z] = a.useState(!1), M = (0, x.Dt)(), G = (0, N.Z)(A), w = (0, N.Z)(W), X = (0, N.Z)(O), K = (0, N.Z)(P), H = (0, N.Z)(V), q = null != W ? k[W] : null, J = null != q;
+  } = e, Z = (0, d.Z)(b), [A, L] = a.useState(!1), [W, B] = a.useState(null), [D, U] = a.useState(i().shuffle(b)), [P, F] = a.useState(""), [V, z] = a.useState(!1), M = (0, x.Dt)(), G = (0, N.Z)(A), w = (0, N.Z)(W), X = (0, N.Z)(O), K = (0, N.Z)(P), H = (0, N.Z)(V), q = null != W ? v[W] : null, J = null != q;
   return a.useEffect(() => {
-    s().isEqual(Z, b) || U((0, _.B)(b, I))
+    i().isEqual(Z, b) || U((0, _.B)(b, I))
   }, [b, Z, I]), (0, u.ZP)(() => () => {
     X.current({
       problem: w.current,
@@ -59,22 +59,22 @@ function g(e) {
       closeClicked: H.current
     })
   }), (0, r.jsxs)(c.Y0X, {
-    transitionState: g,
+    transitionState: k,
     "aria-labelledby": M,
     children: [(0, r.jsx)(f.Z, {}), (0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: l()(p.headerContainer, v.headerContainer),
+      className: o()(p.headerContainer, T.headerContainer),
       children: [(0, r.jsx)(c.X6q, {
         id: M,
         variant: "heading-xl/bold",
         color: "header-primary",
         className: p.header,
-        children: o
+        children: l
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        className: l()(p.ratingBody, v.headerBody),
-        children: null !== (t = null == q ? void 0 : q.subheader) && void 0 !== t ? t : i
+        className: o()(p.ratingBody, T.headerBody),
+        children: null != (t = null == q ? void 0 : q.subheader) ? t : s
       }), j ? (0, r.jsx)(c.olH, {
         className: p.modalCloseButton,
         onClick: function() {
@@ -82,7 +82,7 @@ function g(e) {
         }
       }) : null]
     }), (0, r.jsxs)(c.hzk, {
-      className: v.modalContent,
+      className: T.modalContent,
       children: [J ? null : (0, r.jsx)(c.xJW, {
         className: p.problemInfo,
         children: (0, r.jsx)(h.Z, {
@@ -91,7 +91,7 @@ function g(e) {
             let {
               value: t
             } = e;
-            B(t), Object.keys(k).includes(t) || S()
+            B(t), Object.keys(v).includes(t) || S()
           }
         })
       }), J ? (0, r.jsxs)(c.xJW, {
@@ -100,16 +100,16 @@ function g(e) {
           value: P,
           maxLength: E.iF,
           onChange: F,
-          className: v.textArea,
-          placeholder: null !== (n = q.hint) && void 0 !== n ? n : C.NW.string(C.t.h95hcn)
-        }), y ? (0, r.jsx)(T, {}) : null]
+          className: T.textArea,
+          placeholder: null != (n = q.hint) ? n : C.NW.string(C.t.h95hcn)
+        }), y ? (0, r.jsx)(g, {}) : null]
       }) : null]
     }), R || J ? (0, r.jsx)(c.mzw, {
-      className: l()(p.footer, J ? v.submitFooter : v.modalFooter),
+      className: o()(p.footer, J ? T.submitFooter : T.modalFooter),
       direction: m.Z.Direction.HORIZONTAL,
       children: J ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.zxk, {
-          className: v.backButton,
+          className: T.backButton,
           size: c.zxk.Sizes.NONE,
           look: c.zxk.Looks.LINK,
           color: c.zxk.Colors.PRIMARY,

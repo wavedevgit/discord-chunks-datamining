@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => d
 });
@@ -6,11 +6,11 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(430824),
-  o = n(646504),
-  l = n(834129),
+  l = n(646504),
+  o = n(834129),
   s = n(981631),
   c = n(388032),
-  u = n(199004);
+  u = n(39028);
 
 function d(e) {
   let t, {
@@ -23,7 +23,7 @@ function d(e) {
       null != e && ((0, i.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("90389")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("49049"), n.e("19476")]).then(n.bind(n, 560114));
         return n => {
           var i, a;
           return (0, r.jsx)(t, (i = function(e) {
@@ -58,7 +58,7 @@ function d(e) {
             Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
           }), i))
         }
-      }), (0, o.w)())
+      }), (0, l.w)())
     },
     h = (e, t) => (0, r.jsx)(i.eee, {
       className: u.inviteLink,
@@ -86,7 +86,7 @@ function d(e) {
       className: u.inviteButton,
       children: c.NW.string(c.t.K1BAQ0)
     })]
-  }), (0, r.jsx)(l.Z, {
+  }), (0, r.jsx)(o.Z, {
     className: d ? u.compact : u.inviteContent,
     iconNode: d ? null : (0, r.jsx)("img", {
       alt: "",

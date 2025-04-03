@@ -14,8 +14,8 @@ var s = r(200651),
   d = r(368003),
   h = r(981631),
   g = r(388032),
-  m = r(552977),
-  x = r(685786);
+  m = r(147972),
+  x = r(20493);
 
 function b(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,10 +46,11 @@ let j = e => (0, s.jsx)("div", {
   })[e];
 class W extends n.Component {
   getSelectedHouseID() {
-    let e;
-    let {
-      responses: t
-    } = this.state, r = {}, s = 0;
+    let e, {
+        responses: t
+      } = this.state,
+      r = {},
+      s = 0;
     return (Object.keys(t).forEach(n => {
       let i = t[n];
       null == r[i] && (r[i] = 0), r[i]++, r[i] > s && (e = i, s = r[i])

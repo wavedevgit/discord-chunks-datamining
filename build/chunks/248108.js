@@ -11,7 +11,7 @@ var n, s = a(200651),
   d = a(950132),
   u = a(231338),
   p = a(431138),
-  _ = a(574508);
+  _ = a(898275);
 
 function h(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ class N extends(n = r.PureComponent) {
         links: e,
         TrackClick: t,
         avoidRouter: a
-      } = this.props, n = (0, o.f)(this.context.router);
+      } = this.props, n = (0, o.fQ)(this.context.router);
       return e.map(e => e.external ? (0, s.jsx)("li", {
         className: _.subListItemInactive,
         children: (0, s.jsx)(t, {

@@ -2,7 +2,7 @@
 n.d(e, {
   Z: () => X
 }), n(47120), n(653041), n(301563);
-var r, i, o, a, s = n(133080),
+var r, i, a, o, s = n(133080),
   l = n(412788),
   d = n(594174),
   E = n(709054),
@@ -51,7 +51,7 @@ let C = null,
   y = D(),
   A = U(),
   g = null,
-  h = (null === (i = window) || void 0 === i ? void 0 : null === (r = i.location) || void 0 === r ? void 0 : r.pathname) === T.ix.FAMILY_CENTER_MY_FAMILY ? T.dG.REQUESTS : (null === (a = window) || void 0 === a ? void 0 : null === (o = a.location) || void 0 === o ? void 0 : o.pathname) === T.ix.FAMILY_CENTER_SETTINGS ? T.dG.SETTINGS : T.dG.ACTIVITY,
+  h = (null == (i = window) || null == (r = i.location) ? void 0 : r.pathname) === T.ix.FAMILY_CENTER_MY_FAMILY ? T.dG.REQUESTS : (null == (o = window) || null == (a = o.location) ? void 0 : a.pathname) === T.ix.FAMILY_CENTER_SETTINGS ? T.dG.SETTINGS : T.dG.ACTIVITY,
   L = !1,
   R = !1,
   b = null,
@@ -78,18 +78,18 @@ function U() {
   }
 }
 
-function v() {
+function Y() {
   let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], f = t.length > 0 ? t.reduce((t, e) => I(N({}, t), {
     [e.user_id]: e
   }), {}) : {}
 }
 
-function Y(t) {
+function O(t) {
   void 0 !== t && (A = t)
 }
 
-function O(t, e) {
+function m(t, e) {
   let n = e ? y : D();
   return y = t.reduce((t, e) => {
     let r = e.display_type;
@@ -97,13 +97,13 @@ function O(t, e) {
   }, n)
 }
 
-function m(t) {
+function W(t) {
   Z = t.reduce((t, e) => I(N({}, t), {
     [e.id]: new c.J(e)
   }), Z)
 }
 
-function W() {
+function v() {
   R = !0
 }
 
@@ -114,25 +114,25 @@ function F(t) {
   } = t, {
     actions: r,
     guilds: i,
-    totals: o,
-    teenId: a,
+    totals: a,
+    teenId: o,
     rangeStartId: s
   } = n;
-  C = a, p = s, O(r), Y(o), m(i), v(e), R = !1, b = E.default.fromTimestamp(Date.now()), L = !0
+  C = o, p = s, m(r), O(a), W(i), Y(e), R = !1, b = E.default.fromTimestamp(Date.now()), L = !0
 }
 
 function w(t) {
   let {
     linkedUsers: e
   } = t;
-  v(e)
+  Y(e)
 }
 
 function j(t) {
   let {
     linkedUsers: e
   } = t;
-  v(e)
+  Y(e)
 }
 
 function P(t) {
@@ -144,10 +144,10 @@ function P(t) {
     actions: n,
     totals: r,
     guilds: i,
-    teenId: o,
-    rangeStartId: a
+    teenId: a,
+    rangeStartId: o
   } = e;
-  C = o, p = a, O(n), Y(r), m(i), R = !1, b = E.default.fromTimestamp(Date.now())
+  C = a, p = o, m(n), O(r), W(i), R = !1, b = E.default.fromTimestamp(Date.now())
 }
 
 function k(t) {
@@ -157,21 +157,21 @@ function k(t) {
     actions: n,
     guilds: r
   } = e;
-  O(n, !0), m(r)
+  m(n, !0), W(r)
 }
 
 function H(t) {
   let {
     linkedUsers: e
   } = t;
-  v(e)
+  Y(e)
 }
 
 function G(t) {
   let {
     linkedUsers: e
   } = t;
-  v(e, !0)
+  Y(e, !0)
 }
 
 function V(t) {
@@ -199,7 +199,7 @@ function x(t) {
       user_id: e
     } = t;
     return void 0 === n[e]
-  }) && e.linked_users.length > Object.keys(f).length ? u.ZP.fetchLinkedUsers() : v(e.linked_users)
+  }) && e.linked_users.length > Object.keys(f).length ? u.ZP.fetchLinkedUsers() : Y(e.linked_users)
 }
 
 function K(t) {
@@ -207,7 +207,7 @@ function K(t) {
   let {
     countryCode: n
   } = t;
-  null != n && (M = null !== (e = (0, s.Zz)(n)) && void 0 !== e ? e : null)
+  null != n && (M = null != (e = (0, s.Zz)(n)) ? e : null)
 }
 
 function z() {
@@ -219,7 +219,7 @@ class B extends l.Z {
   }
   loadCache() {
     let t = this.readSnapshot(B.LATEST_SNAPSHOT_VERSION);
-    null != t && (v(t.linkedUsers), m(t.guilds), O(t.teenActivity), A = t.teenActivityTotals.reduce((t, e) => {
+    null != t && (Y(t.linkedUsers), W(t.guilds), m(t.teenActivity), A = t.teenActivityTotals.reduce((t, e) => {
       let [n, r] = e.split(":"), i = (0, _.jV)(n);
       return void 0 === i ? t : I(N({}, t), {
         [i]: parseInt(r, 10)
@@ -255,7 +255,7 @@ class B extends l.Z {
   getLinkTimestamp(t) {
     var e;
     let n = f[t];
-    return null == n ? null : null !== (e = n.updated_at) && void 0 !== e ? e : n.created_at
+    return null == n ? null : null != (e = n.updated_at) ? e : n.created_at
   }
   getRangeStartTimestamp() {
     return null == p ? null : E.default.extractTimestamp(p)
@@ -295,7 +295,7 @@ class B extends l.Z {
       CURRENT_USER_UPDATE: x,
       CACHE_LOADED_LAZY: () => this.loadCache(),
       FAMILY_CENTER_INITIAL_LOAD: F,
-      FAMILY_CENTER_FETCH_START: W,
+      FAMILY_CENTER_FETCH_START: v,
       FAMILY_CENTER_LINKED_USERS_FETCH_SUCCESS: w,
       FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS: P,
       FAMILY_CENTER_TEEN_ACTIVITY_MORE_FETCH_SUCCESS: k,

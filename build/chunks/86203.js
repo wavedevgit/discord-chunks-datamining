@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => u
 });
@@ -26,7 +26,7 @@ function u(e) {
     loaded: b
   } = (0, s.a)(t), _ = t.isDM() ? t.getRecipientId() : null, C = (0, a.V)(t.id, _);
   if (null == C && (b || g)) return null;
-  let v = () => {
+  let y = () => {
     null == h || h(), l.Z.closePrivateChannel(t.id)
   };
   return (0, r.jsx)(i.zxk, {
@@ -35,7 +35,7 @@ function u(e) {
     color: u,
     disabled: null == C,
     onClick: e => {
-      e.stopPropagation(), null == p || p(), null != C && (0, o.WL)(C, v)
+      e.stopPropagation(), null == p || p(), null != C && (0, o.WL)(C, y)
     },
     onMouseEnter: f,
     onMouseLeave: m,

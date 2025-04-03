@@ -9,7 +9,7 @@ var i = n(533800),
   r = n(630388),
   a = n(971130),
   o = n(388032),
-  d = n(310637);
+  d = n(842515);
 let u = a.ZP.getMaxAgeOptions,
   c = a.ZP.getMaxUsesOptions;
 
@@ -21,13 +21,13 @@ function h(e) {
     maxUses: h,
     temporary: g,
     onGenerateNewLink: m,
-    onToggleTemporary: v,
-    onSelectMaxAge: x,
+    onToggleTemporary: x,
+    onSelectMaxAge: v,
     onSelectMaxUses: p,
     isGuestInviteCreationToggleEnabled: N,
     inviteFlags: I,
-    onSetInviteFlags: j
-  } = e, f = u.find(e => e.value === a), S = c.find(e => e.value === h);
+    onSetInviteFlags: f
+  } = e, j = u.find(e => e.value === a), S = c.find(e => e.value === h);
   return (0, l.jsx)("div", {
     className: d.settingsContent,
     children: (0, l.jsxs)("form", {
@@ -37,8 +37,8 @@ function h(e) {
         title: o.NW.string(o.t["60qw29"]),
         children: (0, l.jsx)(s.VcW, {
           options: u,
-          value: null !== (t = null == f ? void 0 : f.value) && void 0 !== t ? t : u[0].value,
-          onChange: x
+          value: null != (t = null == j ? void 0 : j.value) ? t : u[0].value,
+          onChange: v
         })
       }), (0, l.jsx)(s.xJW, {
         title: o.NW.string(o.t.jDqWHR),
@@ -51,7 +51,7 @@ function h(e) {
         children: (0, l.jsx)(s.j7V, {
           className: d.switch,
           value: g,
-          onChange: e => v(e),
+          onChange: e => x(e),
           note: o.NW.string(o.t.UN5IRU),
           hideBorder: !0,
           children: (0, l.jsx)(s.Text, {
@@ -63,7 +63,7 @@ function h(e) {
         children: (0, l.jsx)(s.j7V, {
           className: d.switch,
           value: (0, r.yE)(I, i.$.IS_GUEST_INVITE),
-          onChange: e => j((0, r.mB)(I, i.$.IS_GUEST_INVITE, e)),
+          onChange: e => f((0, r.mB)(I, i.$.IS_GUEST_INVITE, e)),
           note: o.NW.string(o.t["/FeTKy"]),
           hideBorder: !0,
           children: (0, l.jsx)(s.Text, {

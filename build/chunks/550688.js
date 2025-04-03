@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(200651),
   s = n(120356),
   o = n.n(s),
-  i = n(702319),
-  a = n(144931),
+  a = n(702319),
+  i = n(144931),
   c = n(763283),
   l = n(944548),
   u = n(488701),
   d = n(303582),
   f = n(477839),
   p = n(388032),
-  m = n(256825),
+  m = n(458430),
   g = n(733);
 
 function b(e) {
@@ -28,7 +28,7 @@ function b(e) {
     onPurchase: y
   } = e, h = "string" == typeof t ? t : p.NW.format(t, {
     numPurchasing: 0
-  }), v = "string" == typeof t ? t : p.NW.formatToPlainString(t, {
+  }), x = "string" == typeof t ? t : p.NW.formatToPlainString(t, {
     numPurchasing: 0
   });
   return (0, r.jsx)(l.Z, {
@@ -38,13 +38,13 @@ function b(e) {
       description: n,
       pointsDescription: 0 !== o ? p.NW.format(s, {
         points: o,
-        grassIconHook: i.Z
+        grassIconHook: a.Z
       }) : null
     }),
-    "aria-label": v,
+    "aria-label": x,
     children: e => {
       var t, n;
-      return (0, r.jsxs)(a.Z, (t = function(e) {
+      return (0, r.jsxs)(i.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

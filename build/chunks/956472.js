@@ -16,7 +16,7 @@ let c = e => {
       product: s,
       isPremiumUser: o
     } = e;
-    return null !== (l = null === (n = s.prices[o ? u.tuJ.PREMIUM_TIER_2 : u.tuJ.DEFAULT]) || void 0 === n ? void 0 : null === (r = n.countryPrices) || void 0 === r ? void 0 : null === (t = r.prices) || void 0 === t ? void 0 : t.slice(0, 2)) && void 0 !== l ? l : []
+    return null != (l = null == (n = s.prices[o ? u.tuJ.PREMIUM_TIER_2 : u.tuJ.DEFAULT]) || null == (r = n.countryPrices) || null == (t = r.prices) ? void 0 : t.slice(0, 2)) ? l : []
   },
   a = e => {
     var t;
@@ -24,10 +24,10 @@ let c = e => {
       product: r,
       isPremiumUser: n
     } = e;
-    return null !== (t = c({
+    return null != (t = c({
       product: r,
       isPremiumUser: n
-    }).find(e => e.currency === u.pKx.DISCORD_ORB)) && void 0 !== t ? t : null
+    }).find(e => e.currency === u.pKx.DISCORD_ORB)) ? t : null
   },
   d = e => {
     var t;
@@ -45,7 +45,7 @@ let c = e => {
       location: "getShopProductPrices"
     }), p = d ? a.find(e => e.currency === u.pKx.DISCORD_ORB) : void 0, m = a.find(e => e.currency !== u.pKx.DISCORD_ORB), b = [], x = [], h = 1 === a.length && null != p, j = null != p && null != o && o >= p.amount;
     null != p && null != m ? (j ? b.push(p, m) : b.push(m, p), s === i.AW.ORBS ? x.push(p) : x.push(m, p)) : null != p ? (b.push(p), x.push(p)) : null != m && (b.push(m), s !== i.AW.ORBS && x.push(m));
-    let f = b.length > 0 && (null === (t = b[0]) || void 0 === t ? void 0 : t.currency) === u.pKx.DISCORD_ORB;
+    let f = b.length > 0 && (null == (t = b[0]) ? void 0 : t.currency) === u.pKx.DISCORD_ORB;
     return {
       displayPrices: x,
       checkoutEligiblePrices: b,

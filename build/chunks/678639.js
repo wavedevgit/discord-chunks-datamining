@@ -13,8 +13,8 @@ var r = n(200651),
   u = n(484036),
   m = n(681619),
   x = n(621060),
-  h = n(890798),
-  p = n(972283);
+  h = n(616257),
+  p = n(564799);
 
 function b(e, t) {
   return e.store.getName().localeCompare(t.store.getName())

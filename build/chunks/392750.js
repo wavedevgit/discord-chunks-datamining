@@ -8,8 +8,8 @@ var a = n(442837),
   l = n(814443),
   i = n(594174),
   o = n(681619),
-  s = n(499054),
-  c = n(890798);
+  s = n(534514),
+  c = n(616257);
 let d = [{
   key: "user",
   cellClassName: s.userCell,
@@ -19,7 +19,7 @@ let d = [{
       user: n,
       key: r
     } = e;
-    return null !== (t = null == n ? void 0 : n.username) && void 0 !== t ? t : r
+    return null != (t = null == n ? void 0 : n.username) ? t : r
   }
 }, {
   key: "affinity",

@@ -1,7 +1,5 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  guildIconImage: "guildIconImage_bab6e1",
-  acronym: "acronym_bab6e1"
-};
-e.exports = r
+/** Chunk was on 46746 **/
+e.exports = {
+  grid: "grid__8ca5f",
+  tile: "tile__8ca5f"
+}

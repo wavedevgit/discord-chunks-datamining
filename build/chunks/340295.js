@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => _
 });
@@ -16,20 +16,20 @@ var r = n(200651),
   f = n(546247),
   m = n(354459),
   g = n(388032),
-  b = n(370223);
+  b = n(761325);
 let _ = function(e) {
   let {
     participants: t,
     channel: n,
     hasConnectPermission: l
-  } = e, _ = t.filter(m.Io), C = (0, d.J)(n.guild_id), v = i.useCallback(() => {
+  } = e, _ = t.filter(m.Io), C = (0, d.J)(n.guild_id), y = i.useCallback(() => {
     C ? (0, u.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, C]), y = (0, c.Q3)("ChannelCallEmpty"), x = (0, a._q$)("ChannelCallEmpty"), j = 4 === _.length ? 2 : 3;
+  }, [n.id, n.guild_id, C]), x = (0, c.Q3)("ChannelCallEmpty"), v = (0, a._q$)("ChannelCallEmpty"), j = 4 === _.length ? 2 : 3;
   return (0, r.jsxs)("div", {
     className: o()(b.container, {
-      [b.withRive]: x
+      [b.withRive]: v
     }),
-    children: [y && (0, r.jsx)(f.Z, {}), (0, r.jsx)("div", {
+    children: [x && (0, r.jsx)(f.Z, {}), (0, r.jsx)("div", {
       className: b.tiles,
       style: {
         maxWidth: 168 * j
@@ -67,10 +67,10 @@ let _ = function(e) {
     }), (0, r.jsx)(a.zxk, {
       disabled: !l,
       className: o()(b.joinButton, {
-        [b.roundButton]: !y
+        [b.roundButton]: !x
       }),
-      color: l ? y ? a.zxk.Colors.WHITE : a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
-      onClick: v,
+      color: l ? x ? a.zxk.Colors.WHITE : a.zxk.Colors.GREEN : a.zxk.Colors.PRIMARY,
+      onClick: y,
       size: a.zxk.Sizes.MEDIUM,
       children: l ? g.NW.string(g.t["96ANUF"]) : g.NW.string(g.t.TVBCKS)
     })]

@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => O
 }), n(47120), n(266796);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  o = n(442837),
   s = n(481060),
   c = n(447543),
   u = n(607070),
@@ -18,21 +18,21 @@ var r = n(200651),
   g = n(43542),
   _ = n(723776),
   b = n(910200),
-  v = n(358595),
-  x = n(981631),
-  y = n(388032),
-  E = n(876467);
+  x = n(358595),
+  y = n(981631),
+  E = n(388032),
+  v = n(583136);
 
 function O(e) {
   let {
     guild: t,
     invite: n
-  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === x.r2o.ACCEPTING, S = null != t, {
+  } = e, a = i.useRef(null), [O, N] = i.useState(!0), [j, C] = i.useState(!1), I = n.state === y.r2o.ACCEPTING, S = null != t, {
     analyticsLocations: T
-  } = (0, p.ZP)(d.Z.INVITE_EMBED), P = (0, l.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = (0, p.ZP)(d.Z.INVITE_EMBED), P = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    C((null !== (t = null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) && void 0 !== t ? t : 0) > 328)
+    C((null != (t = null == (e = a.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
   }, [C]);
   let A = i.useCallback(() => {
       let e = "noop";
@@ -47,29 +47,29 @@ function O(e) {
     }, [O, j]),
     R = i.useMemo(() => {
       var e;
-      return j && (null === (e = a.current) || void 0 === e ? void 0 : e.clientHeight) != null ? {
+      return j && (null == (e = a.current) ? void 0 : e.clientHeight) != null ? {
         height: O ? 328 : a.current.clientHeight + 24 + 65,
         transition: P ? void 0 : "height 0.2s ease"
       } : {}
     }, [O, j, P]);
-  return null == w ? (0, r.jsx)(v.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: o()(E.guildInviteContainer, {
-      [E.clickable]: j && O
+  return null == w ? (0, r.jsx)(x.Z, {}) : (0, r.jsxs)(s.P3F, {
+    className: l()(v.guildInviteContainer, {
+      [v.clickable]: j && O
     }),
     onClick: Z,
     style: R,
     children: [(0, r.jsxs)("div", {
-      className: E.cardHeightMeasure,
+      className: v.cardHeightMeasure,
       ref: a,
       children: [(0, r.jsx)(b.Z7, {
         profile: w,
-        className: E.banner
+        className: v.banner
       }), (0, r.jsx)(b.N3, {
         profile: w
       }), (0, r.jsx)(g.Z, {
         profile: w
       }), (0, r.jsxs)("div", {
-        className: E.mainContent,
+        className: v.mainContent,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -85,25 +85,25 @@ function O(e) {
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
       onClick: k,
-      className: E.hideDetailsButton,
-      innerClassName: E.hideDetailsButtonInner,
+      className: v.hideDetailsButton,
+      innerClassName: v.hideDetailsButtonInner,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: y.NW.string(y.t.xdCLeH)
+        children: E.NW.string(E.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: o()(E.footer, {
-        [E.floatingFooter]: j
+      className: l()(v.footer, {
+        [v.floatingFooter]: j
       }),
       children: [j && O ? (0, r.jsx)("div", {
-        className: E.gradient
+        className: v.gradient
       }) : null, (0, r.jsxs)("div", {
-        className: E.footerContent,
+        className: v.footerContent,
         children: [(0, r.jsx)("div", {
-          className: E.separator
+          className: v.separator
         }), (0, r.jsx)("div", {
-          className: E.buttonContainer,
+          className: v.buttonContainer,
           children: (0, r.jsx)(f.Z, {
             profile: w,
             submitting: I,

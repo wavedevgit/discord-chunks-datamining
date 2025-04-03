@@ -16,7 +16,7 @@ var d = a(120356),
   l = a(528567),
   b = a(371583),
   u = a(388032),
-  m = a(906210);
+  m = a(445232);
 
 function g(t) {
   var e, a, d, g;
@@ -24,10 +24,10 @@ function g(t) {
     guildId: j,
     leaderboard: h,
     className: y
-  } = t, _ = null == h ? void 0 : null === (e = h.users) || void 0 === e ? void 0 : e[0], {
+  } = t, _ = null == h || null == (e = h.users) ? void 0 : e[0], {
     sort_by_statistic_id: B
-  } = h.guild_settings, v = null !== (g = null == _ ? void 0 : null === (d = _.statistics) || void 0 === d ? void 0 : null === (a = d[B]) || void 0 === a ? void 0 : a.value) && void 0 !== g ? g : 0, x = u.NW.formatToPlainString(u.t.yhdo8v, {
-    value: v,
+  } = h.guild_settings, x = null != (g = null == _ || null == (d = _.statistics) || null == (a = d[B]) ? void 0 : a.value) ? g : 0, v = u.NW.formatToPlainString(u.t.yhdo8v, {
+    value: x,
     statisticName: (0, l.C)(B)
   }), O = (0, b.j)(h), {
     primaryColor: N,
@@ -73,7 +73,7 @@ function g(t) {
         className: m.statsText,
         variant: "text-xxs/medium",
         color: "text-secondary",
-        children: x
+        children: v
       })]
     }), null != O && (0, c.jsx)("div", {
       className: m.heroArtContainer,

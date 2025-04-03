@@ -11,26 +11,27 @@ var r = n(192379),
 
 function u(e) {
   let t = (0, l.Wu)([s.default], () => e.recipients.map(e => s.default.getUser(e)).filter(a.lm).map(e => i.ZP.getName(e)));
-  return r.useMemo(() => "" === e.name ? null : function(e) {
-    if (0 === e.length) return null;
-    if (1 === e.length) return o.NW.formatToPlainString(o.t["J+Wpsr"], {
-      first: e[0]
+  return r.useMemo(() => {
+    if ("" === e.name) return null;
+    if (0 === t.length) return null;
+    if (1 === t.length) return o.NW.formatToPlainString(o.t["J+Wpsr"], {
+      first: t[0]
     });
-    if (2 === e.length) return o.NW.formatToPlainString(o.t.gwRP0d, {
-      first: e[0],
-      second: e[1]
+    if (2 === t.length) return o.NW.formatToPlainString(o.t.gwRP0d, {
+      first: t[0],
+      second: t[1]
     });
-    if (3 === e.length) return o.NW.formatToPlainString(o.t.QDB5en, {
-      first: e[0],
-      second: e[1],
-      third: e[2]
+    if (3 === t.length) return o.NW.formatToPlainString(o.t.QDB5en, {
+      first: t[0],
+      second: t[1],
+      third: t[2]
     });
-    let t = e.length - 3;
+    let n = t.length - 3;
     return o.NW.formatToPlainString(o.t.VYfueX, {
-      first: e[0],
-      second: e[1],
-      third: e[2],
-      count: t
+      first: t[0],
+      second: t[1],
+      third: t[2],
+      count: n
     })
-  }(t), [e, t])
+  }, [e, t])
 }

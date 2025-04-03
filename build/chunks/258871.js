@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(554747),
   s = n(434479),
   c = n(593364),
@@ -47,9 +47,9 @@ function b(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [{
+let y = [{
     key: "EVENTS",
-    renderIcon: e => (0, r.jsx)(l.Que, {
+    renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
       color: "currentColor",
       className: e
@@ -62,17 +62,17 @@ let v = [{
         number: t
       }) : g.NW.string(g.t.tlopTE)
     },
-    handler: e => (0, l.ZDy)(async () => {
+    handler: e => (0, o.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("67210")]).then(n.bind(n, 17671));
+      } = await Promise.all([n.e("22347"), n.e("56236"), n.e("79010")]).then(n.bind(n, 17671));
       return n => (0, r.jsx)(t, b(m({}, n), {
         guildId: e.id
       }))
     })
   }, {
     key: "JOIN_SERVERS",
-    renderIcon: e => (0, r.jsx)(l.Jmo, {
+    renderIcon: e => (0, r.jsx)(o.Jmo, {
       size: "md",
       color: "currentColor",
       className: e
@@ -81,13 +81,13 @@ let v = [{
     handler: (e, t) => (0, u.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
-    renderIcon: e => (0, r.jsx)(l.qJs, {
+    renderIcon: e => (0, r.jsx)(o.qJs, {
       size: "md",
       color: "currentColor",
       className: e
     }),
     getName: () => g.NW.string(g.t.emRpdX),
-    handler: (e, t) => (0, l.ZDy)(async () => {
+    handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i
       } = await n.e("79764").then(n.bind(n, 533202));
@@ -99,14 +99,14 @@ let v = [{
     })
   }, {
     key: "INVITE_MEMBERS",
-    renderIcon: e => (0, r.jsx)(l.ejJ, {
+    renderIcon: e => (0, r.jsx)(o.ejJ, {
       className: e
     }),
     getName: () => g.NW.string(g.t.MJQOuL),
-    handler: (e, t) => (0, l.ZDy)(async () => {
+    handler: (e, t) => (0, o.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("75710")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, b(m({}, n), {
         guild: e,
         channel: t,
@@ -114,11 +114,11 @@ let v = [{
       }))
     })
   }],
-  y = e => {
+  _ = e => {
     let {
       guild: t,
       channel: n
-    } = e, l = (0, a.ZP)(t.id);
+    } = e, o = (0, a.ZP)(t.id);
     i.useEffect(() => {
       p.Z.trackExposure({
         guildId: t.id,
@@ -132,15 +132,15 @@ let v = [{
       location: "543af8_2"
     }, {
       autoTrackExposure: !1
-    }), f = (0, o.e7)([d.Z], () => null != n && d.Z.getChannelId() === n.id), g = i.useMemo(() => ({
-      numEvents: l.length
-    }), [l.length]), m = (0, h.t)(n);
+    }), f = (0, l.e7)([d.Z], () => null != n && d.Z.getChannelId() === n.id), g = i.useMemo(() => ({
+      numEvents: o.length
+    }), [o.length]), m = (0, h.t)(n);
     return (0, r.jsx)(r.Fragment, {
-      children: v.map(e => {
+      children: y.map(e => {
         let {
           key: i,
-          getName: o,
-          handler: l,
+          getName: l,
+          handler: o,
           renderIcon: a
         } = e;
         if (!u && "EVENTS" === i) return null;
@@ -148,9 +148,9 @@ let v = [{
         return (0, r.jsx)(s.m, {
           id: d,
           renderIcon: a,
-          text: o(g),
+          text: l(g),
           selected: f && "JOIN_SERVERS" === i,
-          onClick: null != n ? () => l(t, n) : void 0,
+          onClick: null != n ? () => o(t, n) : void 0,
           trailing: "JOIN_SERVERS" === i && m > 0 ? (0, c.N)(m) : null
         }, d)
       })

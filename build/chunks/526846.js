@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   m: () => D
 }), n(789020), n(266796);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(226026),
   _ = n(397698),
   C = n(895924),
-  v = n(471518),
-  y = n(425986),
-  x = n(216780),
+  y = n(471518),
+  x = n(425986),
+  v = n(216780),
   j = n(390322),
   O = n(857192),
   E = n(626135),
@@ -33,7 +33,7 @@ var r = n(200651),
   T = n(403404),
   A = n(981631),
   w = n(388032),
-  R = n(41443);
+  R = n(210408);
 let M = c.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   k = "vc-activities-".concat((0, a.Z)());
 
@@ -50,22 +50,22 @@ function L(e) {
     } = function() {
       let e = (0, d.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
-        (0, v.XK)({
+        (0, y.XK)({
           surface: M,
           activeState: e
         })
       }, [e]), {
-        fetchState: (0, d.e7)([y.Z], () => y.Z.getFetchState({
+        fetchState: (0, d.e7)([x.Z], () => x.Z.getFetchState({
           surface: M,
           activeState: e
         })),
-        voiceBannerCollection: (0, d.e7)([y.Z], () => y.Z.getCollections({
+        voiceBannerCollection: (0, d.e7)([x.Z], () => x.Z.getCollections({
           surface: M,
           activeState: e
         }))[0]
       }
     }(),
-    f = c === y.M.FETCHING,
+    f = c === x.M.FETCHING,
     g = i.useMemo(() => {
       let e = null == h ? void 0 : h.application_directory_collection_items[0];
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
@@ -73,13 +73,13 @@ function L(e) {
     {
       trackItemImpressionRef: C
     } = (0, b.Z)({
-      applicationId: null !== (t = null == g ? void 0 : g.application.id) && void 0 !== t ? t : "",
+      applicationId: null != (t = null == g ? void 0 : g.application.id) ? t : "",
       applicationFlags: null == g ? void 0 : g.application.flags,
       sectionName: "app_launcher_in_voice_banner",
       sectionPosition: null == g ? void 0 : g.position,
       sectionOverallPosition: 0
     });
-  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, x.$_)({
+  return null == g || null == h || f ? null : (null != g.id && null != g.image_hash && (n = (0, v.$_)({
     itemId: g.id,
     hash: g.image_hash,
     containerWidth: 584
@@ -117,17 +117,17 @@ let D = i.forwardRef(function(e, t) {
     onMouseEnter: u,
     onMouseLeave: b,
     onClick: _,
-    className: v
-  } = e, y = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
-    id: x,
+    className: y
+  } = e, x = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
+    id: v,
     guild_id: O
   } = a;
   i.useEffect(() => {
     E.default.track(A.rMx.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
-      channel_id: x,
+      channel_id: v,
       guild_id: O
     })
-  }, [x, O]), i.useEffect(() => {
+  }, [v, O]), i.useEffect(() => {
     s || c()
   }, [c, s]);
   let M = (0, h.bp)(),
@@ -170,7 +170,7 @@ let D = i.forwardRef(function(e, t) {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": k,
-        className: v,
+        className: y,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
@@ -231,7 +231,7 @@ let D = i.forwardRef(function(e, t) {
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
               className: o()(R.wumpusRocketOuterContainer, {
-                [R.wumpusReducedMotion]: y
+                [R.wumpusReducedMotion]: x
               }),
               children: (0, r.jsx)("div", {
                 className: R.wumpusRocketInnerContainer,

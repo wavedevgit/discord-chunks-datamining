@@ -9,7 +9,7 @@ var i = s(200651),
   a = s(313201),
   o = s(51144),
   c = s(388032),
-  d = s(564154);
+  d = s(992089);
 
 function u(e) {
   let {
@@ -59,7 +59,7 @@ function u(e) {
           size: l.zxk.Sizes.NONE,
           onClick: () => {
             var e;
-            g(null), null === (e = z.current) || void 0 === e || e.focus()
+            g(null), null == (e = z.current) || e.focus()
           },
           className: d.reset,
           children: c.NW.string(c.t["9qSBvL"])

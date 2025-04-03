@@ -29,7 +29,7 @@ function g(e) {
   if (v && b) {
     var m;
     if (null == E) return null;
-    let e = new Date(null !== (m = null == y ? void 0 : y.scheduled_start_time) && void 0 !== m ? m : E);
+    let e = new Date(null != (m = null == y ? void 0 : y.scheduled_start_time) ? m : E);
     if (new Date > e) return null
   }
   let P = e => {

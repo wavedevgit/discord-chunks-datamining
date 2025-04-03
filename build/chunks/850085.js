@@ -20,7 +20,7 @@ var i = n(200651),
   b = n(981631),
   E = n(678916),
   N = n(388032),
-  C = n(889394);
+  C = n(817056);
 let x = e => {
   let {
     file: t,
@@ -137,7 +137,7 @@ let x = e => {
         X.current = o, e = await r, X.current = null
       } catch (e) {
         var r;
-        throw null === (r = X.current) || void 0 === r || r.call(X), X.current = null, Error("Error cropping GIF")
+        throw null == (r = X.current) || r.call(X), X.current = null, Error("Error cropping GIF")
       } else e = (0, a.PT)({
         image: n,
         cropDimensions: I,

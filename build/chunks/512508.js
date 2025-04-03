@@ -22,9 +22,9 @@ var r = n(200651),
   j = n(592125),
   g = n(430824),
   x = n(699516),
-  v = n(594174),
-  y = n(388032),
-  O = n(679638);
+  y = n(594174),
+  v = n(388032),
+  O = n(962923);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -88,7 +88,7 @@ function L(e) {
 }
 
 function I(e) {
-  let t = "".concat(e.name.includes(h.CR) ? "" : "@").concat(e.name);
+  let t = "".concat(!e.name.includes(h.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
       type: d.Fj.ROLE,
@@ -104,7 +104,7 @@ function I(e) {
 }
 
 function P(e) {
-  let t = (0, C.F6)(e, v.default, x.Z);
+  let t = (0, C.F6)(e, y.default, x.Z);
   return {
     tag: {
       type: d.Fj.CHANNEL,
@@ -131,7 +131,7 @@ let M = l.memo(function(e) {
     guildId: l,
     roleId: i,
     size: 16
-  }), C = (0, c.e7)([g.Z], () => g.Z.getRole(l, i)), m = s.includes(h.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null !== (t = null == C ? void 0 : C.colorString) && void 0 !== t ? t : p;
+  }), C = (0, c.e7)([g.Z], () => g.Z.getRole(l, i)), m = s.includes(h.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? void 0 : C.colorString) ? t : p;
   return (0, r.jsxs)("div", {
     className: a()(O.rowLabel, O.roleTagContainer, o),
     children: [(0, r.jsx)(u.FhE, {
@@ -204,7 +204,7 @@ function T(e) {
     }), t.forEach(e => {
       e in n && (r[e] = I(n[e]))
     }), r
-  })(i, C, h), [i, C, h]), v = l.useMemo(() => Object.keys(x), [x]), [w, Z] = l.useState(""), [M, V] = l.useState(!1), [T, k] = l.useState(!1), [A, B] = l.useState(!1), W = l.useRef(null), {
+  })(i, C, h), [i, C, h]), y = l.useMemo(() => Object.keys(x), [x]), [w, Z] = l.useState(""), [M, V] = l.useState(!1), [T, k] = l.useState(!1), [A, B] = l.useState(!1), W = l.useRef(null), {
     sections: U,
     sectionCounts: F
   } = l.useMemo(() => {
@@ -249,7 +249,7 @@ function T(e) {
       let t = N({}, x);
       L(e) ? t[e.id] = P(e.record) : R(e) && (t[e.id] = I(e.record)), z(t), Z(""), q(), setTimeout(() => {
         var e;
-        let t = null === (e = W.current) || void 0 === e ? void 0 : e.containerRef.current,
+        let t = null == (e = W.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;
         null != n && n.scrollTo({
           top: n.scrollHeight,
@@ -273,12 +273,12 @@ function T(e) {
         })
       }, o.id)
     }, [t, Y, U]),
-    X = l.useMemo(() => v.map(e => {
+    X = l.useMemo(() => y.map(e => {
       var n;
-      return _(N({}, (n = x[e]).tag), {
+      return n = x[e], _(N({}, n.tag), {
         label: E(n.row, t, O.noIndent)
       })
-    }), [x, v, t]);
+    }), [x, y, t]);
   return (0, r.jsxs)("div", {
     className: a()(O.searchContainer, f),
     children: [(0, r.jsxs)("div", {
@@ -290,7 +290,7 @@ function T(e) {
         query: w,
         ref: W,
         onRemoveTag: e => {
-          let t = v[e],
+          let t = y[e],
             {
               [t]: n
             } = x;
@@ -313,8 +313,8 @@ function T(e) {
         onQueryChange: e => {
           Z(e.trim().toLocaleLowerCase())
         },
-        placeholder: null != b ? b : y.NW.string(y.t.uqHLzc),
-        sections: [v.length],
+        placeholder: null != b ? b : v.NW.string(v.t.uqHLzc),
+        sections: [y.length],
         inputProps: {
           "aria-labelledby": S,
           "aria-controls": D,
@@ -340,12 +340,12 @@ function T(e) {
             return 0 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
               className: a()(O.sectionTitle, O.sectionHeight),
-              children: y.NW.string(y.t.OGiMXF)
-            }, y.NW.string(y.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
+              children: v.NW.string(v.t.OGiMXF)
+            }, v.NW.string(v.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
               className: a()(O.sectionTitle, O.sectionHeight),
-              children: y.NW.string(y.t.LPJmLy)
-            }, y.NW.string(y.t.LPJmLy)) : null
+              children: v.NW.string(v.t.LPJmLy)
+            }, v.NW.string(v.t.LPJmLy)) : null
           },
           renderFooter: e => {
             let {

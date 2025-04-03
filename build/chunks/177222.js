@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => R
 });
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(510659),
   _ = n(113557),
   C = n(867176),
-  v = n(451834),
-  y = n(502762),
-  x = n(952124),
+  y = n(451834),
+  x = n(502762),
+  v = n(952124),
   j = n(544989),
   O = n(481932),
   E = n(272510),
@@ -31,7 +31,7 @@ var r = n(200651),
   S = n(179142),
   Z = n(228168),
   T = n(388032),
-  A = n(402977);
+  A = n(204340);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function R(e) {
       value: D,
       children: (0, r.jsx)(b.NJ, {
         value: H,
-        children: (0, r.jsxs)(y.Z, {
+        children: (0, r.jsxs)(x.Z, {
           ref: U,
           user: t,
           displayProfile: k,
@@ -95,7 +95,7 @@ function R(e) {
                 user: t,
                 profileType: Z.y0.PANEL,
                 shouldShowTooltip: null === H.interactionType
-              }), t.bot ? (0, r.jsx)(x.Z, {
+              }), t.bot ? (0, r.jsx)(v.Z, {
                 user: t
               }) : (0, r.jsx)(E.Z, {
                 user: t
@@ -108,7 +108,7 @@ function R(e) {
                 profileType: Z.y0.PANEL,
                 animateOnHover: !B,
                 className: A.banner
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(y.Z, {
                 userId: t.id,
                 className: A.toast
               }), (0, r.jsx)(_.Z, {

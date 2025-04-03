@@ -1,32 +1,32 @@
-/** Chunk was on 62940 **/
+/** Chunk was on 49286 **/
 n.d(t, {
   Z: () => c
 });
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  l = n.n(o),
+  l = n(120356),
+  o = n.n(l),
   a = n(481060),
-  s = n(975808);
+  s = n(258163);
 
 function c(e) {
   let {
     children: t,
     icon: n,
-    title: o
+    title: l
   } = e;
   return (0, r.jsxs)("header", {
     className: s.header,
     children: [(0, r.jsxs)("div", {
       className: s.name,
       children: [i.cloneElement(n, {
-        className: l()(n.props.className, s.icon),
+        className: o()(n.props.className, s.icon),
         height: 24,
         width: 24
       }), (0, r.jsx)(a.X6q, {
         variant: "heading-md/semibold",
         className: s.title,
-        children: o
+        children: l
       })]
     }), t]
   })

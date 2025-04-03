@@ -18,17 +18,17 @@ var r = n(200651),
   p = n(140465),
   g = n(774026),
   _ = n(592125),
-  v = n(944486),
-  j = n(594174),
+  j = n(944486),
+  v = n(594174),
   b = n(74538),
   S = n(451467),
   C = n(122186),
   N = n(37113),
   y = n(981631),
   Z = n(388032),
-  I = n(740400),
-  w = n(929642),
-  O = n(685786);
+  I = n(347226),
+  w = n(480197),
+  O = n(20493);
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -155,14 +155,14 @@ function k(e) {
     onPresetChange: R,
     targetGuildPremiumTier: k,
     captureDeviceSelected: A
-  } = e, M = (0, c.e7)([j.default], () => {
-    let e = j.default.getCurrentUser();
+  } = e, M = (0, c.e7)([v.default], () => {
+    let e = v.default.getCurrentUser();
     return a()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), L = (0, c.e7)([v.Z, _.Z], () => _.Z.getChannel(v.Z.getVoiceChannelId())), D = b.ZP.canStreamQuality(b.U2.MID, M), {
+  }), L = (0, c.e7)([j.Z, _.Z], () => _.Z.getChannel(j.Z.getVoiceChannelId())), D = b.ZP.canStreamQuality(b.U2.MID, M), {
     location: G
   } = (0, f.O)(), U = (0, m.Zq)({
     autoTrackExposure: !1
-  }), B = (0, p.B4)(), z = j.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = A ? N.z8 : N.WC, X = E(T({}, G), {
+  }), B = (0, p.B4)(), z = v.default.getUser(null == L ? void 0 : L.hdStreamingBuyerId), F = null != L && null != L.hdStreamingUntil && new Date(L.hdStreamingUntil) > new Date && null != z, H = !D && !U, [V, Y] = l.useState(!1), J = A ? N.z8 : N.WC, X = E(T({}, G), {
     section: y.jXE.STREAM_SETTINGS
   }), K = (0, r.jsx)(d.hE2, {
     buttons: J.map(e => W({

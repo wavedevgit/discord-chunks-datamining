@@ -3,8 +3,8 @@ n.d(t, {
   default: () => x
 });
 var r = n(200651),
-  i = n(192379),
-  l = n(990547),
+  l = n(192379),
+  i = n(990547),
   a = n(481060),
   o = n(891802),
   s = n(332664),
@@ -28,7 +28,7 @@ function x(e) {
     transitionState: j,
     analyticsData: v
   } = e;
-  i.useEffect(() => {
+  l.useEffect(() => {
     m.default.track(b.rMx.OPEN_MODAL, {
       type: "Stream Problem Report",
       other_user_id: x.ownerId,
@@ -52,7 +52,7 @@ function x(e) {
     modalType: "stream",
     header: E,
     impression: {
-      impressionName: l.ImpressionNames.STREAM_FEEDBACK_MODAL,
+      impressionName: i.ImpressionNames.STREAM_FEEDBACK_MODAL,
       impressionProperties: {
         media_session_id: v.media_session_id,
         rtc_connection_id: v.rtc_connection_id,
@@ -72,20 +72,20 @@ function x(e) {
     onSubmit: function(e) {
       var t;
       let {
-        rating: i,
-        problem: l,
+        rating: l,
+        problem: i,
         dontShowAgain: o,
         feedback: s
       } = e;
-      o && (0, d.Kw)(f.v.REPORT_PROBLEM_POST_STREAM), null != i && ((0, u.Z)({
-        problem: null !== (t = null == l ? void 0 : l.value) && void 0 !== t ? t : null,
+      o && (0, d.Kw)(f.v.REPORT_PROBLEM_POST_STREAM), null != l && ((0, u.Z)({
+        problem: null != (t = null == i ? void 0 : i.value) ? t : null,
         stream: x,
         feedback: s,
         streamApplication: g,
         analyticsData: v,
         location: "Stream End",
-        rating: i
-      }), null != l && (0, a.ZDy)(async () => {
+        rating: l
+      }), null != i && (0, a.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => p
 });
@@ -20,7 +20,7 @@ function p(e) {
     f = (0, u.PK)(e.id),
     m = (0, r.e7)([l.Z], () => l.Z.getGuild(e.guild_id), [e.guild_id]),
     g = (0, r.e7)([o.Z], () => o.Z.can(c.yP, e), [e]),
-    b = null !== (t = null == m ? void 0 : m.maxStageVideoChannelUsers) && void 0 !== t ? t : 0,
+    b = null != (t = null == m ? void 0 : m.maxStageVideoChannelUsers) ? t : 0,
     _ = !(null == m ? void 0 : m.isCommunity()) && b > d.RcX;
   return f && !n && g && !_ && p + h >= b
 }

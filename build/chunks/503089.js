@@ -22,7 +22,7 @@ var r = s(200651),
   O = s(493544),
   x = s(981631),
   m = s(388032),
-  h = s(273821);
+  h = s(64730);
 
 function j(e, t, s) {
   return t in e ? Object.defineProperty(e, t, {
@@ -46,7 +46,7 @@ function y(e) {
   return e
 }
 
-function v(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var s = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function v(e, t) {
     Object.defineProperty(e, s, Object.getOwnPropertyDescriptor(t, s))
   }), e
 }
-let C = Object.freeze({
+let v = Object.freeze({
     shouldPreventNavigation: !1,
     onPreventNavigation: null,
     sidebarOpen: !0
@@ -79,11 +79,11 @@ function _(e) {
     name: null == n ? void 0 : n.impressionName,
     properties: null == n ? void 0 : n.impressionProperties
   });
-  let c = null !== (t = null == n ? void 0 : n.element) && void 0 !== t ? t : x.VqG,
-    u = null !== (s = null == n ? void 0 : n.elementProps) && void 0 !== s ? s : {};
+  let c = null != (t = null == n ? void 0 : n.element) ? t : x.VqG,
+    u = null != (s = null == n ? void 0 : n.elementProps) ? s : {};
   return (0, r.jsx)(g.Z, {
     section: n.section,
-    children: (0, r.jsx)(c, v(y({}, u), {
+    children: (0, r.jsx)(c, C(y({}, u), {
       setPreventNavigation: o,
       refToScroller: l
     }))
@@ -113,7 +113,7 @@ class E extends n.PureComponent {
   componentWillUnmount() {
     this._unmounted = !0, this._subscribedStores.forEach(e => e.removeChangeListener(this.handleNoticeStoreUpdate)), this.props.sections.forEach(e => {
       var t;
-      return null === (t = e.onSettingsClose) || void 0 === t ? void 0 : t.call(e)
+      return null == (t = e.onSettingsClose) ? void 0 : t.call(e)
     })
   }
   getPredicateSections() {
@@ -125,7 +125,7 @@ class E extends n.PureComponent {
       section: t
     } = this.props, {
       notice: s
-    } = null !== (e = this.getPredicateSections().find(e => t === e.section)) && void 0 !== e ? e : {};
+    } = null != (e = this.getPredicateSections().find(e => t === e.section)) ? e : {};
     return null != s && s.stores.some(e => e.showNotice() && !(null != e.canCloseEarly && e.canCloseEarly())) ? (f.S.dispatch(x.CkL.SHAKE_APP, {
       duration: 300,
       intensity: this._intensity
@@ -161,7 +161,7 @@ class E extends n.PureComponent {
                 return (0, r.jsx)(l.njP.Separator, {}, t);
               case O.ID.CUSTOM:
                 var s;
-                let n = null !== (s = e.element) && void 0 !== s ? s : x.VqG;
+                let n = null != (s = e.element) ? s : x.VqG;
                 return (0, r.jsx)(n, {}, t);
               default:
                 return this.renderSettingsSectionTabBarItem(e, o === e.section, i)
@@ -194,7 +194,7 @@ class E extends n.PureComponent {
       hideSidebar: o
     } = this.props, l = this.getPredicateSections(), a = l.find(e => e.section === s);
     if (null == a || null == s) return null;
-    let u = null !== (e = "string" == typeof a.label ? a.label : a.ariaLabel) && void 0 !== e ? e : n;
+    let u = null != (e = "string" == typeof a.label ? a.label : a.ariaLabel) ? e : n;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.yY, {
         location: n,
@@ -221,7 +221,7 @@ class E extends n.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), j(this, "_unmounted", !1), j(this, "_intensity", P), j(this, "_subscribedStores", []), j(this, "scrollerRef", n.createRef()), j(this, "state", v(y({}, C), {
+    super(...e), j(this, "_unmounted", !1), j(this, "_intensity", P), j(this, "_subscribedStores", []), j(this, "scrollerRef", n.createRef()), j(this, "state", C(y({}, v), {
       sidebarOpen: this.props.section !== x.oAB.SUBSCRIPTIONS && this.props.section !== x.oAB.PROFILE_CUSTOMIZATION
     })), j(this, "setPreventNavigation", (e, t) => {
       this.setState({
@@ -240,10 +240,10 @@ class E extends n.PureComponent {
         null == t || t(e);
         let {
           notice: n
-        } = null !== (r = s.find(t => e === t.section)) && void 0 !== r ? r : {}, i = null != n ? n.stores : null;
+        } = null != (r = s.find(t => e === t.section)) ? r : {}, i = null != n ? n.stores : null;
         null != i && i.forEach(e => {
           this._subscribedStores.includes(e) || (e.addChangeListener(this.handleNoticeStoreUpdate), this._subscribedStores.push(e))
-        }), this.setState(v(y({}, C), {
+        }), this.setState(C(y({}, v), {
           sidebarOpen: !1
         }))
       };
@@ -259,7 +259,7 @@ class E extends n.PureComponent {
         null == e || e()
       }
     }), j(this, "handleNoticeStoreUpdate", () => {
-      !this._unmounted && (this._intensity = P, this.forceUpdate())
+      this._unmounted || (this._intensity = P, this.forceUpdate())
     }), j(this, "renderSettingsSectionTabBarItem", (e, t, s) => {
       let {
         section: n,

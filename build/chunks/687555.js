@@ -23,7 +23,7 @@ var a = r(200651),
   L = r(514020),
   y = r(529840),
   N = r(388032),
-  v = r(776948),
+  v = r(236237),
   S = r(724531),
   w = r(99713),
   b = r(334202),
@@ -262,10 +262,7 @@ let B = function(e) {
         className: v.submit,
         disabled: 0 === j.size && !G || S,
         onClick: async () => {
-          if (G) {
-            t();
-            return
-          }
+          if (G) return void t();
           w(!0), await r([...j.values()]), w(!1)
         },
         children: G ? N.NW.string(N.t.wpSqAQ) : N.NW.string(N.t.ItpQxs)

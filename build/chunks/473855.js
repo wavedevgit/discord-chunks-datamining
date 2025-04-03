@@ -8,7 +8,7 @@ var n = r(388905),
   a = r(837748),
   i = r(306453),
   l = r(58346),
-  c = r(335277);
+  c = r(19960);
 let d = {
   [l.HQ.CLASSROOM]: r(320440),
   [l.HQ.LOCAL_COMMUNITIES]: r(526916),
@@ -47,7 +47,7 @@ function u(e) {
         children: d
       }), r.state === l.Rj.RESOLVED ? (0, s.jsx)(i.D, {
         className: c.usagePill,
-        count: null !== (C = r.usageCount) && void 0 !== C ? C : 0,
+        count: null != (C = r.usageCount) ? C : 0,
         verifiedName: m
       }) : null]
     })

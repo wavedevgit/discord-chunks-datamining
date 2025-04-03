@@ -110,7 +110,8 @@ var o = r(338091),
           return 8;
         default:
           throw Error("mode:" + t)
-      } else if (e < 27) switch (t) {
+      }
+      if (e < 27) switch (t) {
         case o.MODE_NUMBER:
           return 12;
         case o.MODE_ALPHA_NUM:
@@ -121,7 +122,8 @@ var o = r(338091),
           return 10;
         default:
           throw Error("mode:" + t)
-      } else if (e < 41) switch (t) {
+      }
+      if (e < 41) switch (t) {
         case o.MODE_NUMBER:
           return 14;
         case o.MODE_ALPHA_NUM:
@@ -132,7 +134,8 @@ var o = r(338091),
           return 12;
         default:
           throw Error("mode:" + t)
-      } else throw Error("type:" + e)
+      }
+      throw Error("type:" + e)
     },
     getLostPoint: function(t) {
       for (var e = t.getModuleCount(), r = 0, o = 0; o < e; o++)

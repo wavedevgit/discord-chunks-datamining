@@ -54,7 +54,7 @@ var i, r = n(200651),
   q = n(981631),
   $ = n(65154),
   ee = n(388032),
-  et = n(648886);
+  et = n(690200);
 
 function en(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -183,7 +183,7 @@ class eo extends(i = s.PureComponent) {
       return (0, r.jsx)(es, {
         guildId: null == a ? void 0 : a.guild_id,
         user: c,
-        nick: null !== (l = null == p ? void 0 : p.nick) && void 0 !== l ? l : G.ZP.getName(c),
+        nick: null != (l = null == p ? void 0 : p.nick) ? l : G.ZP.getName(c),
         flipped: h,
         voiceState: u,
         displayNameMode: n,
@@ -295,7 +295,7 @@ class eo extends(i = s.PureComponent) {
               variant: "text-sm/normal",
               children: ee.NW.string(ee.t.XKYej4)
             }), (0, r.jsx)(I.Z, {
-              children: null !== (e = null == c ? void 0 : c.name) && void 0 !== e ? e : p
+              children: null != (e = null == c ? void 0 : c.name) ? e : p
             })]
           })]
         }), (0, r.jsxs)(v.Z, {
@@ -386,7 +386,7 @@ class eo extends(i = s.PureComponent) {
       (0, h.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("67110")]).then(n.bind(n, 881351));
+        } = await Promise.all([n.e("79695"), n.e("69220"), n.e("86423")]).then(n.bind(n, 881351));
         return n => (0, r.jsx)(e, er(ei({}, n), {
           user: t,
           showMediaItems: !0,
@@ -413,9 +413,9 @@ class eo extends(i = s.PureComponent) {
       let i = !this.props.pinned;
       f.Z.track(q.rMx.OVERLAY_PIN_TOGGLED, {
         pinned: i,
-        guild_id: null === (e = this.props.channel) || void 0 === e ? void 0 : e.guild_id,
-        channel_id: null === (t = this.props.channel) || void 0 === t ? void 0 : t.id,
-        channel_type: null === (n = this.props.channel) || void 0 === n ? void 0 : n.type,
+        guild_id: null == (e = this.props.channel) ? void 0 : e.guild_id,
+        channel_id: null == (t = this.props.channel) ? void 0 : t.id,
+        channel_type: null == (n = this.props.channel) ? void 0 : n.type,
         widget_type: q.Odu.VOICE
       });
       let {
@@ -450,7 +450,7 @@ function el(e) {
     c = (0, a.e7)([b.ZP, V.Z, R.Z], () => {
       var e;
       let t = (0, Z.Z)(b.ZP, V.Z);
-      return null != t ? null === (e = R.Z.getGameByGameData(t)) || void 0 === e ? void 0 : e.id : null
+      return null != t ? null == (e = R.Z.getGameByGameData(t)) ? void 0 : e.id : null
     }),
     u = (0, y.q)(c),
     d = (0, a.cj)([b.ZP, V.Z, k.Z, B.default], () => {
@@ -471,7 +471,7 @@ function el(e) {
     channel: n,
     title: null != i ? i : "",
     streamMetadata: l,
-    streamApplication: null !== (t = d.streamApplication) && void 0 !== t ? t : {
+    streamApplication: null != (t = d.streamApplication) ? t : {
       id: null,
       name: null == l ? void 0 : l.sourceName
     }

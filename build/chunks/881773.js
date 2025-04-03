@@ -20,7 +20,7 @@ var r = n(200651),
   E = n(223418),
   O = n(604162),
   h = n(388032),
-  S = n(72482);
+  S = n(844136);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -320,8 +320,8 @@ function D(e) {
           }))
         })]
       }), (0, r.jsx)(x, {
-        current: null == o ? void 0 : null === (t = o.current) || void 0 === t ? void 0 : t.currentTime,
-        duration: null == o ? void 0 : null === (n = o.current) || void 0 === n ? void 0 : n.duration
+        current: null == o || null == (t = o.current) ? void 0 : t.currentTime,
+        duration: null == o || null == (n = o.current) ? void 0 : n.duration
       })]
     }), (0, r.jsxs)("div", {
       className: i()(S.videoControlsGroup, S.videoControlsGroupEnd),

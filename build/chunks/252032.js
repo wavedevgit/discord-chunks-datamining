@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => E
 }), n(789020), n(47120);
@@ -19,10 +19,10 @@ var r = n(200651),
   b = n(838440),
   _ = n(930282),
   C = n(955384),
-  v = n(981631),
-  y = n(649547);
+  y = n(981631),
+  x = n(30804);
 
-function x(e) {
+function v(e) {
   let {
     value: t,
     channel: n
@@ -44,7 +44,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === v.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(v.oNc.NEWS), E = _ && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === y.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(y.oNc.NEWS), E = _ && j, {
     editingMessage: N,
     editingTextValue: I,
     editingRichValue: P
@@ -55,8 +55,8 @@ function j(e) {
   }), [s]), S = (0, l.e7)([d.default], () => d.default.getId()), Z = i.useCallback((e, n, r) => {
     let {
       content: i
-    } = r, l = f.Z.can(v.Plq.MANAGE_MESSAGES, t), s = null != N && null != N.author ? N.author.id : null;
-    return E && (s === S || l) && null != N && (0, g.yE)(N.flags, v.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
+    } = r, l = f.Z.can(y.Plq.MANAGE_MESSAGES, t), s = null != N && null != N.author ? N.author.id : null;
+    return E && (s === S || l) && null != N && (0, g.yE)(N.flags, y.iLy.CROSSPOSTED) ? a.Z.confirmEdit(e, n, i) : o.Z.editMessage(e, n, {
       content: i
     }), Promise.resolve()
   }, [N, E, S, t]), T = i.useCallback(e => {
@@ -79,7 +79,7 @@ function j(e) {
       }
       return e
     }({}, e), n = n = {
-      className: y.channelTextArea,
+      className: x.channelTextArea,
       key: c
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -102,7 +102,7 @@ function j(e) {
     onChange: o.Z.updateEditMessage,
     onConfirmDelete: a.Z.confirmDelete,
     saveMessage: Z,
-    validateEdit: x,
+    validateEdit: v,
     isRefreshEnabled: A,
     children: T
   }) : null
@@ -119,10 +119,10 @@ function O(e) {
     onKeyDown: d,
     renderLeftAccessories: p
   } = e, [h, f] = i.useState(!0), g = i.useCallback(() => f(!0), []), b = i.useCallback(() => f(!1), []);
-  return i.useEffect(() => (m.S.subscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(v.CkL.TEXTAREA_BLUR, b), () => {
-    m.S.unsubscribe(v.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(v.CkL.TEXTAREA_BLUR, b)
+  return i.useEffect(() => (m.S.subscribe(y.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(y.CkL.TEXTAREA_BLUR, b), () => {
+    m.S.unsubscribe(y.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(y.CkL.TEXTAREA_BLUR, b)
   }), [g, b]), (0, r.jsx)(c.Z, {
-    className: y.channelTextArea,
+    className: x.channelTextArea,
     textValue: t,
     richValue: n,
     channel: o,

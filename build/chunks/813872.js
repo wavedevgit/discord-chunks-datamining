@@ -1,6 +1,6 @@
 /** Chunk was on 97589 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => b
 });
 var l = n(200651),
   i = n(192379),
@@ -9,31 +9,31 @@ var l = n(200651),
   o = n(40851),
   u = n(549879),
   s = n(189432),
-  d = n(189357),
-  c = n(944486),
+  c = n(189357),
+  d = n(944486),
   g = n(626135),
-  v = n(981631),
-  f = n(176505),
-  P = n(50493),
-  E = n(388032);
+  f = n(981631),
+  P = n(176505),
+  E = n(50493),
+  Z = n(388032);
 
-function Z(e) {
+function b(e) {
   let {
     userId: t,
     guildId: n,
-    channelId: Z,
-    location: b,
-    onAction: m,
-    appContext: O
-  } = e, h = i.useContext(g.AnalyticsContext), N = (0, o.Aq)(), y = (0, r.e7)([c.Z], () => null != Z ? Z : c.Z.getChannelId(n, !0), [Z, n]), S = (0, d.m)(n);
+    channelId: b,
+    location: m,
+    onAction: O,
+    appContext: h
+  } = e, v = i.useContext(g.AnalyticsContext), N = (0, o.Aq)(), y = (0, r.e7)([d.Z], () => null != b ? b : d.Z.getChannelId(n, !0), [b, n]), S = (0, c.m)(n);
   return null != n && S ? (0, l.jsx)(a.sNh, {
     id: "mod-view",
-    label: E.NW.string(E.t.kj3tz8),
+    label: Z.NW.string(Z.t.kj3tz8),
     action: () => {
-      null == m || m(), (0, u.i)(O), (0, s.r)(n, t, null != y ? y : f.oC.MEMBER_SAFETY, {
-        modViewPanel: P.k.INFO,
-        sourceLocation: null != b ? b : h.location
-      }), N.dispatch(v.CkL.POPOUT_CLOSE)
+      null == O || O(), (0, u.i)(h), (0, s.r)(n, t, null != y ? y : P.oC.MEMBER_SAFETY, {
+        modViewPanel: E.k.INFO,
+        sourceLocation: null != m ? m : v.location
+      }), N.dispatch(f.CkL.POPOUT_CLOSE)
     }
   }) : null
 }

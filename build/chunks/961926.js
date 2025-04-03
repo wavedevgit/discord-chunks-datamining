@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(620436),
   u = n(273504),
   m = n(388032),
-  g = n(294269);
+  g = n(461367);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,9 +69,9 @@ function f(e) {
         onChangeRule: x
       }), (0, r.jsx)(s.Z, {
         onChange: j,
-        initialValue: null === (t = b.triggerMetadata) || void 0 === t ? void 0 : t.allowList,
+        initialValue: null == (t = b.triggerMetadata) ? void 0 : t.allowList,
         maxWordCount: u.I3,
-        collapsed: (null === (n = b.triggerMetadata) || void 0 === n ? void 0 : n.allowList) == null || (null === (f = b.triggerMetadata) || void 0 === f ? void 0 : f.allowList.length) === 0
+        collapsed: (null == (n = b.triggerMetadata) ? void 0 : n.allowList) == null || (null == (f = b.triggerMetadata) ? void 0 : f.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN

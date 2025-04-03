@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => R
 }), n(47120), n(266796);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(91192),
   a = n(442837),
-  o = n(524437),
-  l = n(481060),
+  l = n(524437),
+  o = n(481060),
   c = n(540059),
   d = n(695346),
   u = n(650774),
@@ -20,9 +20,9 @@ var r = n(200651),
   N = n(981631),
   x = n(703115),
   _ = n(526761),
-  E = n(67560),
+  E = n(676654),
   j = n(388032),
-  O = n(906694);
+  O = n(530435);
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -43,7 +43,7 @@ function C(e) {
   return e
 }
 
-function v(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,10 +56,10 @@ function v(e, t) {
   }), e
 }
 
-function S(e) {
+function v(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), o = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, l.dQu)(l.TVs.modules.guildbar.AVATAR_SIZE), S = (0, s.Ie)(null != t ? t : N.lds), T = i.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), v = (0, s.Ie)(null != t ? t : N.lds), T = i.useCallback(e => {
     let n = (0, f._o)();
     e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(N.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: x.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
@@ -67,9 +67,9 @@ function S(e) {
       guild_id: t
     })
   }, [t]);
-  return null == o ? null : (0, r.jsx)("div", {
+  return null == l ? null : (0, r.jsx)("div", {
     className: O.guildRow,
-    children: (0, r.jsx)(l.j7V, {
+    children: (0, r.jsx)(o.j7V, {
       className: O.serverOptionSwitchContainer,
       value: h,
       onChange: () => {
@@ -78,22 +78,22 @@ function S(e) {
       hideBorder: !0,
       children: (0, r.jsxs)("div", {
         className: O.guildInfo,
-        children: [(0, r.jsx)(l.aRk, {
+        children: [(0, r.jsx)(o.aRk, {
           className: O.guildIcon,
-          children: (0, r.jsx)(l.LYs, v(C({
-            ariaLabel: o.toString(),
-            name: o.toString(),
-            icon: o.getIconURL(2 * b, !1, n)
-          }, S), {
+          children: (0, r.jsx)(o.LYs, S(C({
+            ariaLabel: l.toString(),
+            name: l.toString(),
+            icon: l.getIconURL(2 * b, !1, n)
+          }, v), {
             role: "treeitem"
           }))
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(o.Text, {
           className: O.guildText,
           variant: "text-md/medium",
           lineClamp: 1,
           color: "text-normal",
-          children: o.toString()
-        }), (0, r.jsx)(l.Text, {
+          children: l.toString()
+        }), (0, r.jsx)(o.Text, {
           variant: "text-xs/normal",
           className: O.guildSubtitle,
           children: j.NW.formatToPlainString(E.Z.obBqMj, {
@@ -112,13 +112,13 @@ function T() {
       d.Wz.updateSetting(e)
     },
     s = [{
-      value: o.E5.ON,
+      value: l.E5.ON,
       label: j.NW.string(j.t.UzGMHx)
     }, {
-      value: o.E5.ON_FOR_LARGE_GUILDS,
+      value: l.E5.ON_FOR_LARGE_GUILDS,
       label: j.NW.string(j.t.OFqxQU)
     }, {
-      value: o.E5.OFF,
+      value: l.E5.OFF,
       label: j.NW.string(j.t.MIgNPD)
     }],
     c = (0, a.e7)([g.ZP], () => g.ZP.getFlattenedGuildIds()),
@@ -126,45 +126,45 @@ function T() {
       let e = (0, f._o)();
       c.some(t => e.has(t)) ? d.SE.updateSetting([]) : d.SE.updateSetting(c)
     }, [c]);
-  return (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H5,
+  return (0, r.jsxs)(o.hjN, {
+    tag: o.RB0.H5,
     title: j.NW.string(E.Z.o0peVV),
     titleClassName: O.title,
-    children: [(0, r.jsxs)(l.xJW, {
-      tag: l.RB0.H5,
+    children: [(0, r.jsxs)(o.xJW, {
+      tag: o.RB0.H5,
       title: j.NW.string(E.Z.eAQM7u),
       className: O.defaultSetting,
-      children: [(0, r.jsx)(l.R94, {
-        type: l.R94.Types.DESCRIPTION,
+      children: [(0, r.jsx)(o.R94, {
+        type: o.R94.Types.DESCRIPTION,
         className: O.description,
         children: j.NW.string(E.Z.lKsV2t)
-      }), (0, r.jsx)(l.q4e, {
+      }), (0, r.jsx)(o.q4e, {
         options: s,
         value: t,
         onChange: e => n(e)
       })]
     }), (0, r.jsx)("div", {
-      children: (0, r.jsxs)(l.xJW, {
-        tag: l.RB0.H5,
+      children: (0, r.jsxs)(o.xJW, {
+        tag: o.RB0.H5,
         title: j.NW.string(E.Z.f3ZvjI),
-        children: [(0, r.jsx)(l.R94, {
-          type: l.R94.Types.DESCRIPTION,
+        children: [(0, r.jsx)(o.R94, {
+          type: o.R94.Types.DESCRIPTION,
           className: O.description,
           children: j.NW.string(E.Z.tHLm2N)
-        }), !e && (0, r.jsx)(l.Wn, {
-          messageType: l.QYI.WARNING,
+        }), !e && (0, r.jsx)(o.Wn, {
+          messageType: o.QYI.WARNING,
           className: O.ignoredWarning,
           children: j.NW.string(E.Z.mUwVAQ)
-        }), (0, r.jsx)(l.zJl, {
+        }), (0, r.jsx)(o.zJl, {
           fade: !0,
           className: O.scroller,
-          children: c.map(e => (0, r.jsx)(S, {
+          children: c.map(e => (0, r.jsx)(v, {
             guildId: e
           }, e))
         }), (0, r.jsx)("div", {
           className: O.toggleAll,
-          children: (0, r.jsx)(l.zxk, {
-            look: l.zxk.Looks.LINK,
+          children: (0, r.jsx)(o.zxk, {
+            look: o.zxk.Looks.LINK,
             onClick: u,
             children: j.NW.string(E.Z.gJ8jlZ)
           })
@@ -175,8 +175,8 @@ function T() {
 }
 
 function I() {
-  return (0, r.jsx)(l.hjN, {
-    tag: l.RB0.H5,
+  return (0, r.jsx)(o.hjN, {
+    tag: o.RB0.H5,
     title: j.NW.string(E.Z["+RndDg"]),
     children: (0, r.jsx)(b.r, {})
   })
@@ -186,18 +186,18 @@ function y() {
   let e = !d.G6.useSetting(),
     t = d.cP.useSetting(),
     n = d.Ou.useSetting();
-  return (0, r.jsxs)(l.hjN, {
-    tag: l.RB0.H5,
+  return (0, r.jsxs)(o.hjN, {
+    tag: o.RB0.H5,
     title: j.NW.string(j.t["5gexRU"]),
     titleClassName: O.title,
-    children: [(0, r.jsx)(l.j7V, {
+    children: [(0, r.jsx)(o.j7V, {
       disabled: e,
       hideBorder: !0,
       onChange: e => d.cP.updateSetting(e),
       note: j.NW.string(j.t.IjucAA),
       value: t,
       children: j.NW.string(j.t.eVdoIy)
-    }), (0, r.jsx)(l.j7V, {
+    }), (0, r.jsx)(o.j7V, {
       disabled: e,
       hideBorder: !0,
       onChange: e => d.Ou.updateSetting(e),
@@ -212,20 +212,20 @@ function A(e) {
   let {
     onScrollToGuildsSection: t
   } = e, i = d.G6.useSetting(), s = () => {
-    (0, l.ZDy)(async () => {
+    (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("83909").then(n.bind(n, 932374));
-      return n => (0, r.jsx)(e, v(C({}, n), {
+      return n => (0, r.jsx)(e, S(C({}, n), {
         onScrollToGuildsSection: t
       }))
     })
   }, a = h.isPlatformEmbedded ? j.NW.string(j.t.MznbeH) : j.NW.string(j.t.oKqC4u);
-  return (0, r.jsx)(l.hjN, {
-    tag: l.RB0.H5,
+  return (0, r.jsx)(o.hjN, {
+    tag: o.RB0.H5,
     title: j.NW.string(j.t.Wspazs),
     className: O.allActivitySharingTitle,
-    children: (0, r.jsx)(l.j7V, {
+    children: (0, r.jsx)(o.j7V, {
       value: i,
       onChange: e => {
         e ? d.G6.updateSetting(e) : s()
@@ -237,10 +237,10 @@ function A(e) {
 }
 
 function P() {
-  return (0, r.jsx)(l.hjN, {
+  return (0, r.jsx)(o.hjN, {
     className: O.privacyAndTerms,
-    children: (0, r.jsx)(l.ToO, {
-      type: l.ToO.Types.PRIMARY,
+    children: (0, r.jsx)(o.ToO, {
+      type: o.ToO.Types.PRIMARY,
       body: j.NW.format(j.t.xvCsx8, {
         termsLink: N.EYA.TERMS,
         privacyLink: N.EYA.PRIVACY
@@ -252,9 +252,9 @@ let R = function(e) {
   let {
     className: t
   } = e, n = (0, i.useRef)(null);
-  return (0, r.jsxs)(l.hjN, {
+  return (0, r.jsxs)(o.hjN, {
     className: t,
-    tag: l.RB0.H1,
+    tag: o.RB0.H1,
     title: j.NW.string(j.t["6x5uWV"]),
     children: [(0, r.jsx)(A, {
       onScrollToGuildsSection: () => {
@@ -262,11 +262,11 @@ let R = function(e) {
           behavior: "smooth"
         })
       }
-    }), (0, r.jsx)(I, {}), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(I, {}), (0, r.jsx)(o.$i$, {
       className: O.divider
     }), (0, r.jsx)("div", {
       ref: n
-    }), (0, r.jsx)(T, {}), (0, r.jsx)(l.$i$, {
+    }), (0, r.jsx)(T, {}), (0, r.jsx)(o.$i$, {
       className: O.divider
     }), (0, r.jsx)(y, {}), (0, r.jsx)(P, {})]
   })

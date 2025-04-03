@@ -16,7 +16,7 @@ function i(e) {
     options: {
       rqdata: e.captcha_rqdata,
       rqtoken: e.captcha_rqtoken,
-      serveInvisible: null !== (t = e.should_serve_invisible) && void 0 !== t && t,
+      serveInvisible: null != (t = e.should_serve_invisible) && t,
       userflow: e.user_flow
     }
   }

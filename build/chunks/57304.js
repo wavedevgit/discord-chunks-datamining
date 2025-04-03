@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -54,8 +54,8 @@ let C = function(e) {
   } = e, n = (0, c.Q3)("ChannelPinsButton"), C = (0, l.e7)([u.Z, p.default], () => {
     let e = p.default.getCurrentUser();
     return null == e || t.isNSFW() && (!e.nsfwAllowed || !u.Z.didAgree(t.getGuildId()))
-  }, [t]), [v, y] = i.useState(!1), x = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useCallback(() => {
-    C || y(e => !e)
+  }, [t]), [y, x] = i.useState(!1), v = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, s.Aq)(), O = i.useCallback(() => {
+    C || x(e => !e)
   }, [C]);
 
   function E(e) {
@@ -64,13 +64,13 @@ let C = function(e) {
   return i.useEffect(() => (h.S.subscribe(m.CkL.TOGGLE_CHANNEL_PINS, O), () => {
     h.S.unsubscribe(m.CkL.TOGGLE_CHANNEL_PINS, O)
   }), [O]), (0, r.jsx)(o.yRy, {
-    shouldShow: v,
+    shouldShow: y,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
     ignoreModalClicks: !0,
-    onRequestClose: () => y(!1),
+    onRequestClose: () => x(!1),
     renderPopout: function(e) {
       return (0, r.jsx)(a.Z, _(b({}, e), {
         onJump: E,
@@ -89,7 +89,7 @@ let C = function(e) {
         iconSize: n ? 20 : void 0,
         "aria-label": g.NW.string(g.t["mp1N//"]),
         disabled: C,
-        showBadge: x,
+        showBadge: v,
         selected: i
       }))
     }

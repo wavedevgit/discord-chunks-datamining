@@ -1,5 +1,3 @@
 /** Chunk was on 23357 **/
 "use strict";
-n(916900);
-var r = n(974802);
-e.exports = r.Object.values
+n(916900), e.exports = n(974802).Object.values

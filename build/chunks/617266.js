@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(120356),
-  i = n.n(a),
-  s = n(913527),
-  o = n.n(s),
+  s = n.n(a),
+  i = n(913527),
+  o = n.n(i),
   u = n(91192),
   c = n(442837),
   d = n(481060),
@@ -34,7 +34,7 @@ var r = n(200651),
   D = n(981631),
   M = n(490897),
   T = n(388032),
-  k = n(958934);
+  k = n(120575);
 
 function W(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -89,7 +89,7 @@ function I(e) {
     destination: t,
     icon: n,
     label: a,
-    subLabel: s,
+    subLabel: i,
     selected: o,
     disabled: c,
     onPressDestination: f,
@@ -104,7 +104,7 @@ function I(e) {
       closeAfterSend: !1
     }))
   }), (0, r.jsxs)(d.P3F, A(W({
-    className: i()(k.destinationRow, {
+    className: s()(k.destinationRow, {
       [k.disabled]: c
     }),
     onClick: y,
@@ -129,7 +129,7 @@ function I(e) {
           className: k.subLabel,
           variant: "text-xs/normal",
           color: "text-muted",
-          children: s
+          children: i
         })]
       })]
     }), (0, r.jsx)(d.XZJ, {
@@ -148,10 +148,10 @@ function F(e) {
     subLabel: n
   } = e, l = R(e, ["user", "subLabel"]);
   let a = L.ZP.useName(t),
-    i = L.ZP.useUserTag(t, {
+    s = L.ZP.useUserTag(t, {
       decoration: "never"
     }),
-    s = (0, c.e7)([w.Z], () => w.Z.getNickname(t.id)),
+    i = (0, c.e7)([w.Z], () => w.Z.getNickname(t.id)),
     o = (0, c.e7)([S.Z], () => S.Z.getStatus(t.id));
   return (0, r.jsx)(I, A(W({}, l), {
     icon: (0, r.jsx)(f.Z, {
@@ -160,8 +160,8 @@ function F(e) {
       user: t,
       status: o
     }),
-    label: null != s ? s : a,
-    subLabel: null != n ? n : i
+    label: null != i ? i : a,
+    subLabel: null != n ? n : s
   }))
 }
 
@@ -171,7 +171,7 @@ function q(e) {
     subLabel: n
   } = e, l = R(e, ["channel", "subLabel"]);
   let a = (0, p.ZP)(t),
-    i = (0, v._)(t);
+    s = (0, v._)(t);
   return (0, r.jsx)(I, A(W({}, l), {
     icon: (0, r.jsx)(g.Z, {
       "aria-hidden": !0,
@@ -180,7 +180,7 @@ function q(e) {
       experimentLocation: "application-command-modal"
     }),
     label: a,
-    subLabel: null != n ? n : i
+    subLabel: null != n ? n : s
   }))
 }
 
@@ -190,8 +190,8 @@ function U(e) {
     subLabel: n
   } = e, l = R(e, ["channel", "subLabel"]);
   let a = (0, c.e7)([_.Z], () => _.Z.getGuild(null == t ? void 0 : t.guild_id)),
-    i = (0, p.ZP)(t),
-    s = (0, c.e7)([O.Z, E.default, w.Z], () => {
+    s = (0, p.ZP)(t),
+    i = (0, c.e7)([O.Z, E.default, w.Z], () => {
       let e = O.Z.getChannel(t.parent_id);
       return null == e ? null : (0, p.F6)(e, E.default, w.Z, !1)
     }),
@@ -208,7 +208,7 @@ function U(e) {
         variant: "text-xs/medium",
         color: "text-secondary",
         lineClamp: 1,
-        children: s
+        children: i
       }), null != u ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Text, {
           className: k.subLabelSeparator,
@@ -229,7 +229,7 @@ function U(e) {
       guild: a,
       channel: t
     }),
-    label: i,
+    label: s,
     subLabel: null != n ? n : f
   }))
 }
@@ -239,14 +239,14 @@ function z(e) {
     rowData: t,
     selectedDestinations: n,
     handleToggleDestination: a,
-    disableSelection: i,
-    originDestination: s
+    disableSelection: s,
+    originDestination: i
   } = e, o = R(e, ["rowData", "selectedDestinations", "handleToggleDestination", "disableSelection", "originDestination"]);
   let c = l.useMemo(() => [t.length], [t.length]),
     f = l.useCallback(() => 48, []),
     b = l.useMemo(() => {
       var e;
-      return null !== (e = null == n ? void 0 : n.map(j.hC)) && void 0 !== e ? e : []
+      return null != (e = null == n ? void 0 : n.map(j.hC)) ? e : []
     }, [n]),
     p = l.useCallback(e => {
       let {
@@ -280,13 +280,13 @@ function z(e) {
               label: T.NW.string(T.t.mD4gqa)
             }
           }
-        }(s, u),
+        }(i, u),
         h = b.includes(d),
         p = {
           key: d,
           destination: c,
           subLabel: null != f ? f.label : void 0,
-          disabled: i && !h || null != f,
+          disabled: s && !h || null != f,
           selected: h,
           onPressDestination: a,
           "aria-posinset": l + 1,
@@ -299,7 +299,7 @@ function z(e) {
       }, p)) : o === m.h8.TEXT_CHANNEL || o === m.h8.VOICE_CHANNEL ? (0, r.jsx)(U, W({
         channel: u
       }, p)) : void(0, Z.vE)(o)
-    }, [i, a, s, t, b]),
+    }, [s, a, i, t, b]),
     g = l.useRef(null),
     y = (0, h.Z)("share-command-modal", g);
   return (0, r.jsx)(u.bG, {
@@ -312,7 +312,7 @@ function z(e) {
         return (0, r.jsx)(d.YAO, A(W({
           scrollerRef: e => {
             var n;
-            g.current = e, t.current = null !== (n = null == e ? void 0 : e.getScrollerNode()) && void 0 !== n ? n : null
+            g.current = e, t.current = null != (n = null == e ? void 0 : e.getScrollerNode()) ? n : null
           }
         }, n, o), {
           sections: c,

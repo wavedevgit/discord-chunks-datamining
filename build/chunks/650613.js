@@ -14,7 +14,7 @@ var r = n(200651),
   m = n(897674),
   x = n(561308),
   h = n(206583),
-  p = n(485239);
+  p = n(873289);
 
 function b(e) {
   let {
@@ -42,12 +42,12 @@ function f() {
     i = (0, a.cj)([c.Z], () => {
       var e;
       let n = {};
-      for (let r of null !== (e = null == t ? void 0 : t.entries) && void 0 !== e ? e : []) n[(0, c.T)(r.content)] = c.Z.canRenderContent(r.content);
+      for (let r of null != (e = null == t ? void 0 : t.entries) ? e : []) n[(0, c.T)(r.content)] = c.Z.canRenderContent(r.content);
       return n
     }, [t]),
     o = (0, a.e7)([d.Z], () => d.Z.getImpressionCappedItemIds());
   if (null == n) return null;
-  let s = null == t ? void 0 : null === (e = t.entries) || void 0 === e ? void 0 : e.flatMap(e => {
+  let s = null == t || null == (e = t.entries) ? void 0 : e.flatMap(e => {
     let {
       content: t
     } = e;

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(570140),
   d = n(596454),
   p = n(607070),
-  h = n(15536);
+  h = n(301222);
 let f = [h.emoji1, h.emoji2, h.emoji3, h.emoji4],
   m = i.memo(function(e) {
     var t;
@@ -28,7 +28,7 @@ let f = [h.emoji1, h.emoji2, h.emoji3, h.emoji4],
       children: (0, r.jsx)(d.Z, {
         emojiId: n.id,
         emojiName: n.name,
-        animated: null !== (t = n.animated) && void 0 !== t && t
+        animated: null != (t = n.animated) && t
       })
     })
   });
@@ -44,7 +44,7 @@ function g(e) {
         channelId: n,
         emoji: r
       } = e;
-      n === t && !l && null != r && a(e => [...e, function(e) {
+      n !== t || l || null == r || a(e => [...e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => d,
@@ -34,13 +34,13 @@ function c(e, t) {
         channel: i,
         comparator: a
       } = e;
-      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r || !n && (0, s.Z)(i)) && (null == i.parent_id ? d.push({
+      !(i.isThread() || t.has(i.id) || i.isGuildStageVoice() && !r) && (!n && (0, s.Z)(i) || (null == i.parent_id ? d.push({
         channel: i,
         comparator: a
       }) : (null == u[i.parent_id] && (u[i.parent_id] = []), u[i.parent_id].push({
         channel: i,
         comparator: a
-      })))
+      }))))
     }), d.sort((e, t) => {
       let {
         comparator: n,

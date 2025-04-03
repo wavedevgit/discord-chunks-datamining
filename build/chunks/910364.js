@@ -1,4 +1,4 @@
-/** Chunk was on 71459 **/
+/** Chunk was on 78604 **/
 t.d(n, {
   Z: () => D
 }), t(47120);
@@ -15,11 +15,11 @@ var r = t(200651),
   p = t(429467),
   b = t(680295),
   y = t(699516),
-  v = t(5192),
-  m = t(785717),
-  g = t(221292),
-  I = t(687158),
-  j = t(510659),
+  m = t(5192),
+  g = t(785717),
+  I = t(221292),
+  j = t(687158),
+  v = t(510659),
   h = t(113557),
   _ = t(867176),
   x = t(451834),
@@ -35,7 +35,7 @@ var r = t(200651),
   w = t(412317),
   L = t(228168),
   R = t(388032),
-  M = t(84695);
+  M = t(405666);
 
 function B(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -88,7 +88,7 @@ function D(e) {
     sourceAnalyticsLocations: X = []
   } = e, {
     analyticsLocations: Q
-  } = (0, u.ZP)([...X, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, m.ZB)({
+  } = (0, u.ZP)([...X, d.Z.SIMPLIFIED_PROFILE_MODAL]), $ = (0, g.ZB)({
     layout: "SIMPLIFIED_MODAL",
     userId: n.id,
     sourceSessionId: G,
@@ -97,12 +97,12 @@ function D(e) {
     messageId: F,
     roleId: k,
     showGuildProfile: J
-  }), ee = (0, j.$m)(), en = (0, s.q_F)({
+  }), ee = (0, v.$m)(), en = (0, s.q_F)({
     opacity: +(null != ee.interactionType),
     config: {
       duration: 150
     }
-  }), et = (0, I.ZP)(n.id, J ? D : void 0), er = (0, I.ZP)(n.id, D), eo = (0, l.e7)([y.Z], () => y.Z.getRelationshipType(n.id)), ei = n.id === t.id, el = (0, f.p)({
+  }), et = (0, j.ZP)(n.id, J ? D : void 0), er = (0, j.ZP)(n.id, D), eo = (0, l.e7)([y.Z], () => y.Z.getRelationshipType(n.id)), ei = n.id === t.id, el = (0, f.p)({
     location: "UserProfileModal"
   }), es = o.useMemo(() => null != K ? K : (0, p.Z)(), [K]), ec = o.useMemo(() => null != D ? {
     [D]: [n.id]
@@ -112,9 +112,9 @@ function D(e) {
     ed = (0, c.Z)(ea);
   return (0, r.jsx)(u.Gt, {
     value: Q,
-    children: (0, r.jsx)(m.Mt, {
+    children: (0, r.jsx)(g.Mt, {
       value: $,
-      children: (0, r.jsx)(j.NJ, {
+      children: (0, r.jsx)(v.NJ, {
         value: ee,
         children: (0, r.jsxs)(s.Y0X, {
           transitionState: H,
@@ -146,14 +146,14 @@ function D(e) {
                   id: "view-main-profile",
                   label: R.NW.string(R.t.GISTtb),
                   subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
-                    displayName: v.ZP.getName(void 0, void 0, n)
+                    displayName: m.ZP.getName(void 0, void 0, n)
                   }),
                   action: () => {
                     q(), (0, C.openUserProfileModal)(U(B({}, $), {
                       showGuildProfile: !1,
                       friendToken: V,
                       sourceAnalyticsLocations: X
-                    })), (0, g.pQ)(B({
+                    })), (0, I.pQ)(B({
                       action: "PRESS_VIEW_MAIN_PROFILE",
                       analyticsLocations: Q
                     }, $))
@@ -162,14 +162,14 @@ function D(e) {
                   id: "view-server-profile",
                   label: R.NW.string(R.t.DisZzM),
                   subtext: R.NW.formatToPlainString(R.t["mn/nW1"], {
-                    displayName: v.ZP.getName(D, W, n)
+                    displayName: m.ZP.getName(D, W, n)
                   }),
                   action: () => {
                     q(), (0, C.openUserProfileModal)(U(B({}, $), {
                       showGuildProfile: !0,
                       friendToken: V,
                       sourceAnalyticsLocations: X
-                    })), (0, g.pQ)(B({
+                    })), (0, I.pQ)(B({
                       action: "PRESS_VIEW_SERVER_PROFILE",
                       analyticsLocations: Q
                     }, $))

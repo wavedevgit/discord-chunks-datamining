@@ -1,7 +1,7 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 function r(e, t) {
   var n;
-  let r = null !== (n = decodeURIComponent(t).split("/").pop()) && void 0 !== n ? n : "temp.gif";
+  let r = null != (n = decodeURIComponent(t).split("/").pop()) ? n : "temp.gif";
   return "".concat(e, "-").concat(r)
 }
 n.d(t, {

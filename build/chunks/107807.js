@@ -1,4 +1,4 @@
-/** Chunk was on 5259 **/
+/** Chunk was on 80993 **/
 t.d(n, {
   default: () => $
 }), t(266796), t(47120), t(230036), t(86693), t(536091);
@@ -20,8 +20,8 @@ var c = t(200651),
   f = t(99690),
   b = t(493773),
   _ = t(410030),
-  v = t(726542),
-  j = t(367907),
+  j = t(726542),
+  v = t(367907),
   y = t(385499),
   A = t(277800),
   g = t(471445),
@@ -44,7 +44,7 @@ var c = t(200651),
   z = t(856651),
   D = t(981631),
   F = t(388032),
-  H = t(758588);
+  H = t(268300);
 
 function U(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -82,7 +82,7 @@ function Y(e) {
   let {
     platformType: n,
     className: t
-  } = e, o = (0, _.ZP)(), a = v.Z.get(n);
+  } = e, o = (0, _.ZP)(), a = j.Z.get(n);
   return (0, c.jsx)("img", {
     src: (0, m.ap)(o) ? a.icon.lightSVG : a.icon.darkSVG,
     alt: "",
@@ -173,31 +173,30 @@ function Q(e) {
     eligibilityStatesGroups: n,
     onPlatformConnect: t,
     onPlatformConnected: a
-  } = e, [i, s] = o.useState({}), [u, m] = o.useState(0), [x, p] = o.useState(null), [N, b] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), j = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
+  } = e, [i, s] = o.useState({}), [u, m] = o.useState(0), [x, p] = o.useState(null), [N, b] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), v = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
   o.useEffect(() => m(Date.now()), [_]), o.useEffect(() => {
     if (null == x) return;
-    let e = j["".concat(x).concat(null != N ? ":".concat(N.id) : "")];
+    let e = v["".concat(x).concat(null != N ? ":".concat(N.id) : "")];
     null != e && e.every(e => e.result) && a(x, N)
-  }, [j, x, N, a]);
+  }, [v, x, N, a]);
   let A = (0, C.dQu)(h.Z.unsafe_rawColors.GREEN_330).hex();
   return (0, c.jsx)(c.Fragment, {
-    children: Object.keys(j).sort((e, n) => {
-      let t = j[e].every(e => e.result),
-        c = j[n].every(e => e.result);
+    children: Object.keys(v).sort((e, n) => {
+      let t = v[e].every(e => e.result),
+        c = v[n].every(e => e.result);
       return !0 === t && !1 === c ? 1 : !1 === t && !0 === c ? -1 : 0
     }).map(e => {
       var n, o, a;
-      let d, h, m;
-      let x = j[e],
+      let d, h, m, x = v[e],
         N = x.find(e => null == e.operator),
         _ = x.filter(e => null != e.operator),
         g = (null == N || N.result) && _.every(e => e.result),
         k = x.find(e => null != e.application),
-        T = v.Z.get(e),
+        T = j.Z.get(e),
         O = null == T || T.enabled,
         S = null == k ? void 0 : k.application,
         E = (null == S ? void 0 : S.bot) != null ? new I.Z(S.bot) : null;
-      M.SJ.includes(null !== (n = null == S ? void 0 : S.id) && void 0 !== n ? n : "") ? d = (0, c.jsx)(V.Z, {
+      M.SJ.includes(null != (n = null == S ? void 0 : S.id) ? n : "") ? d = (0, c.jsx)(V.Z, {
         className: H.botTag,
         color: A,
         size: 16
@@ -205,7 +204,7 @@ function Q(e) {
         className: H.botTag,
         verified: E.isVerifiedBot()
       }));
-      let P = i[null !== (o = null == T ? void 0 : T.type) && void 0 !== o ? o : z.Kt],
+      let P = i[null != (o = null == T ? void 0 : T.type) ? o : z.Kt],
         G = !g && null != P && P <= u;
       return h = g ? (0, c.jsx)(C.dz2, {
         size: "md",
@@ -228,7 +227,7 @@ function Q(e) {
         className: l()(H.connectionsChecksGroup, g ? H.connectionsChecksGroupPassed : null, O ? null : H.connectionsChecksGroupPlatformDisabled),
         onClick: !g && O ? () => {
           var e, n;
-          return n = null !== (e = null == T ? void 0 : T.type) && void 0 !== e ? e : z.Kt, void((0, Z.Z)({
+          return n = null != (e = null == T ? void 0 : T.type) ? e : z.Kt, void((0, Z.Z)({
             platformType: n,
             location: "Verified Roles Connect Accounts Modal",
             overrideUrl: null == S ? void 0 : S.role_connections_verification_url
@@ -254,7 +253,7 @@ function Q(e) {
             children: [(0, c.jsx)(C.Text, {
               variant: "text-md/medium",
               color: "header-primary",
-              children: null !== (a = null == T ? void 0 : T.name) && void 0 !== a ? a : null == S ? void 0 : S.name
+              children: null != (a = null == T ? void 0 : T.name) ? a : null == S ? void 0 : S.name
             }), d, null != m ? (0, c.jsx)(C.ua7, {
               text: m,
               children: e => (0, c.jsx)(C.d3s, K(U({
@@ -301,7 +300,7 @@ function J(e) {
   (0, b.ZP)(() => {
     i(!N), r(m)
   });
-  let _ = v.Z.get(l.type);
+  let _ = j.Z.get(l.type);
   return D.BFP.has(l.type) && (n = (0, c.jsx)(C.j7V, {
     className: H.accountConnectedPrivacyOptionsSwitchItem,
     hideBorder: !0,
@@ -382,7 +381,7 @@ function $(e) {
   function ed() {
     R.default.track(D.rMx.PASSPORT_CHALLENGE_STARTED, U({
       role_id: l.id
-    }, (0, j.hH)(a)))
+    }, (0, v.hH)(a)))
   }
 
   function eu(e) {
@@ -398,11 +397,11 @@ function $(e) {
   }, [a, l.id, V]), o.useEffect(() => {
     R.default.track(D.rMx.PASSPORT_CHALLENGE_VIEWED, U({
       role_id: l.id
-    }, (0, j.hH)(a)))
+    }, (0, v.hH)(a)))
   }, [a, l.id]), o.useEffect(() => {
     y && null != eo && eo.roles.includes(l.id) && (g(!1), ea.length > 0 ? s(2) : null == t || t(), R.default.track(D.rMx.PASSPORT_CHALLENGE_FINISHED, U({
       role_id: l.id
-    }, (0, j.hH)(a))))
+    }, (0, v.hH)(a))))
   }, [y, ea.length, eo, a, l.id, t]), (0, c.jsxs)(C.Y0X, {
     size: C.CgR.MEDIUM,
     transitionState: n,
@@ -427,7 +426,7 @@ function $(e) {
         case 1: {
           var e, n;
           r()(null != K, "lastPlatformConnected is null");
-          let t = null !== (n = null == X ? void 0 : X.name) && void 0 !== n ? n : null === (e = v.Z.get(K)) || void 0 === e ? void 0 : e.name;
+          let t = null != (n = null == X ? void 0 : X.name) ? n : null == (e = j.Z.get(K)) ? void 0 : e.name;
           return (0, c.jsxs)(C.xBx, {
             className: H.header,
             separator: !1,
@@ -604,7 +603,7 @@ function $(e) {
       }()
     }), function() {
       var e;
-      let n = null !== (e = null == d ? void 0 : d.flat().some(e => null == e.application_id)) && void 0 !== e && e;
+      let n = null != (e = null == d ? void 0 : d.flat().some(e => null == e.application_id)) && e;
       switch (i) {
         case 0:
           return (0, c.jsxs)(C.mzw, {

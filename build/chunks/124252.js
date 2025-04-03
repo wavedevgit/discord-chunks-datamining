@@ -25,7 +25,7 @@ function c(e, t) {
       let e = [];
       return n(o.slice(0, s.Yh).flatMap(t => {
         var n;
-        let r = null == t ? void 0 : null === (n = t.item) || void 0 === n ? void 0 : n.file;
+        let r = null == t || null == (n = t.item) ? void 0 : n.file;
         if (null == r) return [];
         let a = URL.createObjectURL(r);
         return e.push(a), {
@@ -44,7 +44,7 @@ function c(e, t) {
       mediaAttachments: t,
       hasThumbnail: c
     }
-  }(e), m = Math.max(s.Yh - (null !== (n = null == d ? void 0 : d.length) && void 0 !== n ? n : 0), 0), {
+  }(e), m = Math.max(s.Yh - (null != (n = null == d ? void 0 : d.length) ? n : 0), 0), {
     embeds: h
   } = (0, o.M)(u, m, t), g = r.useMemo(() => null == h ? void 0 : h.flatMap(e => {
     let t = (0, s.Vh)(e);
@@ -55,5 +55,5 @@ function c(e, t) {
       alt: e.title
     }
   }), [h]), f = [...null != d ? d : []];
-  return !u && m > 0 && f.push(...null !== (c = null == g ? void 0 : g.slice(0, m)) && void 0 !== c ? c : []), f
+  return !u && m > 0 && f.push(...null != (c = null == g ? void 0 : g.slice(0, m)) ? c : []), f
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => m
 }), n(47120), n(266796);
@@ -11,26 +11,26 @@ var r = n(200651),
   c = n(768581),
   d = n(956965),
   u = n(388032),
-  p = n(871199);
+  p = n(275459);
 let m = function(e) {
   var t, n, m;
   let {
     application: h,
     onSelectApplication: g,
     showCategory: f = !1
-  } = e, _ = a.useRef(null), b = null === (t = h.categories) || void 0 === t ? void 0 : t[0], [v, x] = a.useState(!1), C = a.useCallback(e => {
-    e && x(!0)
+  } = e, _ = a.useRef(null), b = null == (t = h.categories) ? void 0 : t[0], [x, v] = a.useState(!1), C = a.useCallback(e => {
+    e && v(!0)
   }, []), j = (0, o.lf)(h), y = a.useCallback(() => {
     g(h.id)
-  }, [g, h.id]), O = a.useMemo(() => v ? c.ZP.getApplicationIconURL({
+  }, [g, h.id]), O = a.useMemo(() => x ? c.ZP.getApplicationIconURL({
     id: h.id,
     icon: h.icon,
     size: 48
-  }) : void 0, [v, h]), P = f && null != b;
+  }) : void 0, [x, h]), I = f && null != b;
   return (0, r.jsx)(i.$, {
     innerRef: _,
     onChange: C,
-    active: !v,
+    active: !x,
     children: (0, r.jsx)("div", {
       ref: _,
       className: p.container,
@@ -47,7 +47,7 @@ let m = function(e) {
               display: "block",
               aspectRatio: 16 / 9
             },
-            children: v ? (0, r.jsx)(d.Z, {
+            children: x ? (0, r.jsx)(d.Z, {
               application: h,
               bannerType: "card",
               iconURL: O
@@ -57,7 +57,7 @@ let m = function(e) {
             style: {
               height: 28
             },
-            children: v ? (0, r.jsx)("img", {
+            children: x ? (0, r.jsx)("img", {
               src: O,
               alt: "",
               className: p.avatar,
@@ -82,14 +82,14 @@ let m = function(e) {
                 children: h.name
               })
             })
-          }), P || j ? (0, r.jsxs)("div", {
+          }), I || j ? (0, r.jsxs)("div", {
             className: p.infoContainer,
-            children: [P ? (0, r.jsx)(l.Text, {
+            children: [I ? (0, r.jsx)(l.Text, {
               className: p.appCategory,
               variant: "text-xs/medium",
               color: "text-normal",
               children: b.name
-            }) : null, P && j ? (0, r.jsx)(l.Text, {
+            }) : null, I && j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
               children: "•"
@@ -102,8 +102,8 @@ let m = function(e) {
             className: p.description,
             variant: "text-sm/medium",
             color: "header-secondary",
-            lineClamp: P || j ? 2 : 3,
-            children: null !== (m = null === (n = h.directory_entry) || void 0 === n ? void 0 : n.short_description) && void 0 !== m ? m : h.description
+            lineClamp: I || j ? 2 : 3,
+            children: null != (m = null == (n = h.directory_entry) ? void 0 : n.short_description) ? m : h.description
           })]
         })]
       })

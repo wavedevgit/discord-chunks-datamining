@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   Z: () => u
 }), n(47120);
@@ -26,7 +26,7 @@ function u(e) {
       var t;
       let r, i = null,
         a = null != e ? s.Z.getSubscriptionGroupListing(e) : null;
-      for (let e of null !== (t = null == a ? void 0 : a.subscription_listings_ids) && void 0 !== t ? t : []) {
+      for (let e of null != (t = null == a ? void 0 : a.subscription_listings_ids) ? t : []) {
         let t = s.Z.getSubscriptionListing(e),
           a = null == t ? void 0 : t.subscription_plans[0].id;
         if (null == a) continue;
@@ -45,10 +45,10 @@ function u(e) {
     f = null == m ? void 0 : m.id,
     p = null == m ? void 0 : m.sku_id,
     g = (0, i.e7)([o.Z], () => null != f ? o.Z.get(f) : null),
-    v = null == _ ? void 0 : _.soft_deleted;
+    h = null == _ ? void 0 : _.soft_deleted;
   return r.useEffect(() => {
-    null != g || null == p || o.Z.isFetchingForSKU(p) || (0, a.GZ)(p, void 0, void 0, v)
-  }, [g, p, v]), {
+    null != g || null == p || o.Z.isFetchingForSKU(p) || (0, a.GZ)(p, void 0, void 0, h)
+  }, [g, p, h]), {
     activeSubscription: u,
     activeSubscriptionListing: _,
     activeSubscriptionPlanFromStore: g

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(544891),
   i = n(343817),
   l = n(570140),
-  o = n(900849),
-  a = n(726115),
+  a = n(900849),
+  o = n(726115),
   s = n(128449),
   c = n(981631);
 let u = {
@@ -38,12 +38,12 @@ let u = {
           oldFormErrors: !0,
           rejectWithError: !1
         }),
-        i = t.body.guilds.map(a.Iv),
-        o = t.body.total_count;
+        i = t.body.guilds.map(o.Iv),
+        a = t.body.total_count;
       if (h) {
         var f;
         let n = [];
-        null === (f = t.body.categories) || void 0 === f || f.slice(0, 8).forEach(e => {
+        null == (f = t.body.categories) || f.slice(0, 8).forEach(e => {
           let {
             id: t,
             count: r
@@ -61,11 +61,11 @@ let u = {
         categoryId: n,
         languageCode: u,
         guilds: i,
-        total: o
+        total: a
       })
     } catch (r) {
       let t = new i.Hx(r);
-      o.m9({
+      a.m9({
         categoryId: n,
         error: t,
         willRequestRetry: !1,
@@ -87,7 +87,7 @@ let u = {
     var t;
     l.Z.dispatch({
       type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_CLEAR",
-      ignoreQueries: null !== (t = null == e ? void 0 : e.ignoreQueries) && void 0 !== t ? t : []
+      ignoreQueries: null != (t = null == e ? void 0 : e.ignoreQueries) ? t : []
     })
   },
   resetSearchLayout: function() {

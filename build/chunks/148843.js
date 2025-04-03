@@ -20,9 +20,8 @@ var u = function() {
 
   function t(e) {
     var n = this;
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t), a(this, "hooks", (0, r.p)({
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
+    a(this, "hooks", (0, r.p)({
       dragSource: function(e, t) {
         n.clearDragSource(), n.dragSourceOptions = t || null, (0, i.d)(e) ? n.dragSourceRef = e : n.dragSourceNode = e, n.reconnectDragSource()
       },

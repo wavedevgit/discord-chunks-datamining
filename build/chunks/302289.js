@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => p
 }), n(266796);
@@ -7,15 +7,15 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(785681),
-  l = n(130310),
-  c = n(378392),
+  l = n(785681),
+  o = n(130310),
+  c = n(332495),
   d = n(388032),
-  u = n(264078),
-  m = n(494391),
+  u = n(175875),
+  m = n(589608),
   g = n(128216);
 let p = () => {
-  let e = (0, o.o)(d.NW.string(c.Z.i4XFEB), d.NW.string(c.Z.eHQZuL));
+  let e = (0, l.o)(d.NW.string(c.Z.i4XFEB), d.NW.string(c.Z.eHQZuL));
   return (0, r.jsxs)("div", {
     className: s()(u.container, m.box, m),
     children: [(0, r.jsxs)("div", {
@@ -30,7 +30,7 @@ let p = () => {
         variant: "text-sm/medium",
         color: "text-muted",
         children: e
-      }), (0, r.jsx)(l.Z, {})]
+      }), (0, r.jsx)(o.Z, {})]
     }), (0, r.jsx)("div", {
       className: u.artContainer,
       children: (0, r.jsx)("img", {

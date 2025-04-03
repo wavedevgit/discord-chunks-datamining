@@ -1,18 +1,18 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
   a = n(607070),
-  o = n(557060);
+  l = n(326669);
 
-function l(e) {
+function o(e) {
   let {
     guildId: t,
     user: n,
-    className: l
+    className: o
   } = e, s = (0, i.e7)([a.Z], () => !a.Z.useReducedMotion), c = n.getAvatarURL(t, 56, s), u = (0, r.jsx)("foreignObject", {
     x: "30",
     y: "68",
@@ -21,19 +21,19 @@ function l(e) {
     transform: "skewX(12)",
     children: (0, r.jsx)("img", {
       src: c,
-      className: o.userAvatar,
+      className: l.userAvatar,
       alt: ""
     })
   });
   return (0, r.jsx)("div", {
-    className: l,
+    className: o,
     children: (0, r.jsxs)("svg", {
       width: "128",
       height: "200",
       viewBox: "0 0 128 200",
       fill: "none",
       xmlns: "http://www.w3.org/2000/svg",
-      className: o.svg,
+      className: l.svg,
       children: [(0, r.jsx)("path", {
         fillRule: "evenodd",
         clipRule: "evenodd",

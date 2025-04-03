@@ -5,16 +5,16 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   o = n(399606),
-  i = n(481060),
-  s = n(367907),
-  a = n(863249),
+  s = n(481060),
+  a = n(367907),
+  i = n(863249),
   c = n(944163),
-  d = n(768762),
-  u = n(454585),
+  u = n(768762),
+  d = n(454585),
   m = n(626135),
   h = n(981631),
   x = n(388032),
-  p = n(680138);
+  p = n(903864);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,10 +57,10 @@ function j(e) {
     setCurrentStep: v,
     disableTracking: _,
     previousPromptIndex: b
-  } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, I] = l.useState(null !== (t = null == O ? void 0 : O.response) && void 0 !== t && t), k = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
+  } = e, C = l.useRef(null), O = (0, o.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [E, I] = l.useState(null != (t = null == O ? void 0 : O.response) && t), k = (0, o.e7)([c.Z], () => c.Z.get(n.id)), Z = l.useRef(null), y = l.useRef(null), P = l.useCallback(async () => {
     if (null != k && null != O) {
       try {
-        await a.ZP.submitVerificationForm(n.id, g(f({}, k), {
+        await i.ZP.submitVerificationForm(n.id, g(f({}, k), {
           formFields: [g(f({}, O), {
             response: E
           })]
@@ -89,14 +89,14 @@ function j(e) {
     children: (0, r.jsxs)("div", {
       className: p.promptContent,
       ref: Z,
-      children: [(0, r.jsxs)(i.h21, {
+      children: [(0, r.jsxs)(s.h21, {
         className: p.scrollerContent,
         ref: C,
-        children: [(0, r.jsx)(i.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
           children: x.NW.string(x.t["b1JC+v"])
-        }), (0, r.jsx)(i.X6q, {
+        }), (0, r.jsx)(s.X6q, {
           variant: "heading-xl/semibold",
           children: x.NW.string(x.t.prJqwc)
         }), (0, r.jsx)("div", {
@@ -104,14 +104,14 @@ function j(e) {
           ref: y,
           children: O.values.map((e, t) => (0, r.jsxs)("div", {
             className: p.termsRow,
-            children: [(0, r.jsx)(i.Text, {
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-sm/normal",
               color: "text-muted",
               children: "".concat(t + 1, ".")
-            }), (0, r.jsx)(i.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-sm/normal",
               className: p.termsRowContent,
-              children: u.Z.parseGuildVerificationFormRule(e, !0, {
+              children: d.Z.parseGuildVerificationFormRule(e, !0, {
                 channelId: n.rulesChannelId
               })
             })]
@@ -123,45 +123,45 @@ function j(e) {
         className: p.navButtons,
         children: [(0, r.jsx)("div", {
           className: p.leftButtons,
-          children: -1 !== b && (0, r.jsxs)(i.zxk, {
+          children: -1 !== b && (0, r.jsxs)(s.zxk, {
             innerClassName: p.buttonInner,
             onClick: () => {
-              !_ && (m.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(f({}, (0, s.hH)(n.id)), {
+              !_ && (m.default.track(h.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(f({}, (0, a.hH)(n.id)), {
                 step: -1,
                 skipped: !1,
                 back: !0,
                 options_selected: 0,
                 in_onboarding: !0,
                 is_final_step: !1
-              })), b >= 0 && m.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(f({}, (0, s.hH)(n.id)), {
+              })), b >= 0 && m.default.track(h.rMx.GUILD_ONBOARDING_STEP_VIEWED, g(f({}, (0, a.hH)(n.id)), {
                 step: b,
                 required: j[b].required
               }))), v(b)
             },
-            size: i.zxk.Sizes.MEDIUM,
-            look: i.zxk.Looks.OUTLINED,
+            size: s.zxk.Sizes.MEDIUM,
+            look: s.zxk.Looks.OUTLINED,
             grow: !1,
-            color: i.zxk.Colors.PRIMARY,
-            children: [(0, r.jsx)(d.Z, {
+            color: s.zxk.Colors.PRIMARY,
+            children: [(0, r.jsx)(u.Z, {
               className: p.arrow,
-              direction: d.Z.Directions.LEFT
+              direction: u.Z.Directions.LEFT
             }), x.NW.string(x.t["13/7kZ"])]
           })
         }), (0, r.jsxs)("div", {
           className: p.rightButtons,
-          children: [(0, r.jsx)(i.Text, {
+          children: [(0, r.jsx)(s.Text, {
             className: p.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
             children: E ? x.NW.string(x.t.arAe3N) : x.NW.string(x.t.D0CVAQ)
-          }), (0, r.jsxs)(i.zxk, {
+          }), (0, r.jsxs)(s.zxk, {
             innerClassName: p.buttonInner,
             onClick: P,
             disabled: !E,
-            size: i.zxk.Sizes.MEDIUM,
-            look: i.zxk.Looks.FILLED,
+            size: s.zxk.Sizes.MEDIUM,
+            look: s.zxk.Looks.FILLED,
             grow: !1,
-            color: i.zxk.Colors.BRAND,
+            color: s.zxk.Colors.BRAND,
             children: [x.NW.string(x.t["8SuVoK"]), (0, r.jsx)("span", {
               className: p.finishEmoji,
               role: "img",

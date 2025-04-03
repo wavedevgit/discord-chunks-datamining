@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 }), n(47120);
@@ -17,19 +17,19 @@ var r = n(200651),
   m = n(111810),
   g = n(287941),
   b = n(235894),
-  _ = n(159100);
+  _ = n(675479);
 let C = e => {
   let {
     message: t,
     hovering: n,
     compact: l
-  } = e, C = i.useRef((0, a.random)(-6, 24)).current, v = (0, s.e7)([h.Z], () => h.Z.confettiMode), y = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, N] = i.useState(!1), I = i.useMemo(() => !n && !v && !y, [v, n, y]);
+  } = e, C = i.useRef((0, a.random)(-6, 24)).current, y = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, N] = i.useState(!1), I = i.useMemo(() => !n && !y && !x, [y, n, x]);
   if (i.useEffect(() => {
-      n || N(!1), n && v && N(!0)
-    }, [n, v]), i.useEffect(() => {
-      !y && (E || (!1 === n && (x.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), x.current = Date.now(), j.current = setTimeout(() => {
-        let e = x.current;
-        if (0 !== e && !1 !== n && !(Date.now() - e < 1e3) && !v) {
+      n || N(!1), n && y && N(!0)
+    }, [n, y]), i.useEffect(() => {
+      !x && (E || (!1 === n && (v.current = 0, null != j.current && (clearTimeout(j.current), j.current = null)), v.current = Date.now(), j.current = setTimeout(() => {
+        let e = v.current;
+        if (0 !== e && !1 !== n && !(Date.now() - e < 1e3) && !y) {
           if (null != O.current) {
             var r;
             let {
@@ -37,7 +37,7 @@ let C = e => {
               y: n,
               width: i,
               height: l
-            } = null === (r = O.current) || void 0 === r ? void 0 : r.getBoundingClientRect();
+            } = null == (r = O.current) ? void 0 : r.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
@@ -51,7 +51,7 @@ let C = e => {
           })
         }
       }, 1100)))
-    }, [v, E, n, t, y]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
+    }, [y, E, n, t, x]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
   let P = (0, b.Eq)(t);
   if (null == P) return null;
   if (l) return (0, r.jsx)("span", {
@@ -74,17 +74,17 @@ let C = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.left, I && _.shy, v && _.confettiMode]),
+      className: o()([_.emoji, _.left, I && _.shy, y && _.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.right, I && _.shy, v && _.confettiMode]),
+      className: o()([_.emoji, _.right, I && _.shy, y && _.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.center, I && _.shy, v && _.confettiMode]),
+      className: o()([_.emoji, _.center, I && _.shy, y && _.confettiMode]),
       width: 32
     })]
   })

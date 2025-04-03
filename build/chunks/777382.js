@@ -1,6 +1,6 @@
 /** Chunk was on 54030 **/
 n.d(t, {
-  Z: () => O
+  Z: () => I
 }), n(653041), n(47120);
 var r = n(200651),
   o = n(192379),
@@ -15,7 +15,7 @@ var r = n(200651),
   f = n(388627),
   p = n(892127),
   b = n(561064),
-  m = n(918080);
+  m = n(107892);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,13 +61,13 @@ function v(e, t, n, o) {
     className: m.widget
   }), e)
 }
-let I = [],
-  O = o.memo(function(e) {
+let O = [],
+  I = o.memo(function(e) {
     let {
       className: t
-    } = e, n = (0, b.Z)(), p = (0, a.e7)([s.Z], () => s.Z.windowSize((0, d.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), O = (0, a.e7)([c.Z], () => {
+    } = e, n = (0, b.Z)(), p = (0, a.e7)([s.Z], () => s.Z.windowSize((0, d.ZY)(n))), m = (0, a.e7)([l.default], () => l.default.isPreviewingInGame()), I = (0, a.e7)([c.Z], () => {
       let e = c.Z.getLayout(u.OVERLAY_LAYOUT_ID);
-      if (null == e) return I;
+      if (null == e) return O;
       let t = [];
       for (let n of e.widgets) {
         let e = c.Z.getWidget(n);
@@ -84,15 +84,15 @@ let I = [],
         })
       }
       return t
-    }, [m], f.HP), C = o.useCallback(e => (0, r.jsx)("div", {
+    }, [m], f.HP), P = o.useCallback(e => (0, r.jsx)("div", {
       className: t,
       style: p,
       children: e
     }), [t, p]);
     return (0, r.jsx)(i.W3x, {
-      items: O,
+      items: I,
       renderItem: v,
       getItemKey: y,
-      wrapChildren: C
+      wrapChildren: P
     })
   })

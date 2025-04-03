@@ -7,7 +7,7 @@ var r, l, i = n(200651),
   o = n(120356),
   a = n.n(o),
   c = n(600164),
-  d = n(875032);
+  d = n(243676);
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -20,8 +20,7 @@ function u(e, t, n) {
 var f = ((r = f || {}).WRAP = "wrap", r.STACK = "stack", r);
 class m extends(l = s.PureComponent) {
   renderChildren() {
-    let e;
-    let {
+    let e, {
       children: t,
       layout: n,
       columns: r

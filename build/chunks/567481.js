@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(570140),
-  o = n(24124),
-  a = n(447543),
+  a = n(24124),
+  o = n(447543),
   s = n(13245),
   c = n(596223),
   u = n(710845),
@@ -68,11 +68,11 @@ let E = new u.Z("RPCCommandsOverlay"),
           errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
-          lock: a,
+          lock: o,
           context: s
         } = (0, m.jU)(r), u = (0, c.Z)(l, p.Z);
-        return (0, o.h7)(l, u, s).then(() => {
-          if (a(), u) throw new h.Z({
+        return (0, a.h7)(l, u, s).then(() => {
+          if (o(), u) throw new h.Z({
             errorCode: _.lTL.NO_ELIGIBLE_ACTIVITY
           }, "No eligible activity for application. Ensure user does have have privacy enabled.")
         })
@@ -95,7 +95,7 @@ let E = new u.Z("RPCCommandsOverlay"),
         if (null == r.application.id) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
-        return a.ZP.resolveInvite(t, "Game SDK").then(e => {
+        return o.ZP.resolveInvite(t, "Game SDK").then(e => {
           let {
             invite: t,
             code: r
@@ -105,7 +105,7 @@ let E = new u.Z("RPCCommandsOverlay"),
           }, "Invalid invite id: ".concat(r));
           let {
             context: i,
-            lock: o
+            lock: a
           } = (0, m.jU)(n);
           return new Promise(e => {
             l.Z.dispatch({
@@ -115,7 +115,7 @@ let E = new u.Z("RPCCommandsOverlay"),
               context: i,
               resolve: e
             })
-          }).then(o)
+          }).then(a)
         })
       }
     },
@@ -130,12 +130,12 @@ let E = new u.Z("RPCCommandsOverlay"),
             pid: t
           },
           socket: l
-        } = e, o = l.application.id;
-        if (null == o) throw new h.Z({
+        } = e, a = l.application.id;
+        if (null == a) throw new h.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         let {
-          lock: a,
+          lock: o,
           context: s
         } = (0, m.jU)(t);
         return new Promise(e => {
@@ -163,7 +163,7 @@ let E = new u.Z("RPCCommandsOverlay"),
                 }
                 return e
               }({}, t), i = i = {
-                mediaEngineContext: o,
+                mediaEngineContext: a,
                 title: l.application.name,
                 onClose: () => {
                   t.onClose()
@@ -182,7 +182,7 @@ let E = new u.Z("RPCCommandsOverlay"),
           }, {
             contextKey: s === _.IlC.POPOUT ? i.u1M : i.z1l,
             onCloseCallback: () => {
-              a(), e()
+              o(), e()
             }
           })
         })

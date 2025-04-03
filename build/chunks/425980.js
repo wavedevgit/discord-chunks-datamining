@@ -30,43 +30,39 @@ function l(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 t.handleFocus = function(e) {
-  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "span";
-  return function(r) {
-    function n() {
-      ! function(e, t) {
-        if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-      }(this, n);
-      for (var e, t, r, o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
-      return t = r = l(this, (e = n.__proto__ || Object.getPrototypeOf(n)).call.apply(e, [this].concat(a))), r.state = {
+  var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "span",
+    r = i.default.Component;
+  if ("function" != typeof r && null !== r) throw TypeError("Super expression must either be null or a function, not " + typeof r);
+
+  function n() {
+    if (!(this instanceof n)) throw TypeError("Cannot call a class as a function");
+    for (var e, t, r, o = arguments.length, a = Array(o), i = 0; i < o; i++) a[i] = arguments[i];
+    return t = r = l(this, (e = n.__proto__ || Object.getPrototypeOf(n)).call.apply(e, [this].concat(a))), r.state = {
+      focus: !1
+    }, r.handleFocus = function() {
+      return r.setState({
+        focus: !0
+      })
+    }, r.handleBlur = function() {
+      return r.setState({
         focus: !1
-      }, r.handleFocus = function() {
-        return r.setState({
-          focus: !0
-        })
-      }, r.handleBlur = function() {
-        return r.setState({
-          focus: !1
-        })
-      }, l(r, t)
+      })
+    }, l(r, t)
+  }
+  return n.prototype = Object.create(r && r.prototype, {
+    constructor: {
+      value: n,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
     }
-    return ! function(e, t) {
-      if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-      e.prototype = Object.create(t && t.prototype, {
-        constructor: {
-          value: e,
-          enumerable: !1,
-          writable: !0,
-          configurable: !0
-        }
-      }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-    }(n, r), a(n, [{
-      key: "render",
-      value: function() {
-        return i.default.createElement(t, {
-          onFocus: this.handleFocus,
-          onBlur: this.handleBlur
-        }, i.default.createElement(e, o({}, this.props, this.state)))
-      }
-    }]), n
-  }(i.default.Component)
+  }), r && (Object.setPrototypeOf ? Object.setPrototypeOf(n, r) : n.__proto__ = r), a(n, [{
+    key: "render",
+    value: function() {
+      return i.default.createElement(t, {
+        onFocus: this.handleFocus,
+        onBlur: this.handleBlur
+      }, i.default.createElement(e, o({}, this.props, this.state)))
+    }
+  }]), n
 }

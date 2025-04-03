@@ -1,4 +1,4 @@
-/** Chunk was on 63689 **/
+/** Chunk was on 58914 **/
 t.d(n, {
   Z: () => u
 });
@@ -10,7 +10,7 @@ var r = t(200651),
   s = t(481060),
   c = t(569379),
   l = t(642145),
-  f = t(691897);
+  f = t(704247);
 let u = o.forwardRef((e, n) => {
   let {
     quest: t,
@@ -20,15 +20,15 @@ let u = o.forwardRef((e, n) => {
     glowBlur: p = .4,
     percentCompleteText: _,
     percentCompleteTextVariant: C = "text-lg/medium",
-    children: v
-  } = e, g = (0, c.E)(t, o > 0), b = a / 2, m = a / 2 - u / 2, x = 2 * Math.PI * m, S = x - o * x, y = {
+    children: g
+  } = e, b = (0, c.E)(t, o > 0), m = a / 2, v = a / 2 - u / 2, x = 2 * Math.PI * v, S = x - o * x, y = {
     strokeDasharray: "".concat(x, " ").concat(x),
     strokeDashoffset: S
   }, B = {
     strokeDasharray: "".concat(x, " ").concat(x),
     strokeDashoffset: -o * x
   }, k = {
-    boxShadow: "0 0 30px 0px ".concat(g.glow)
+    boxShadow: "0 0 30px 0px ".concat(b.glow)
   }, {
     progressTextAnimation: h
   } = (0, s.q_F)({
@@ -41,7 +41,7 @@ let u = o.forwardRef((e, n) => {
     children: [(0, r.jsxs)("div", {
       className: f.inner,
       style: k,
-      children: [v, (0, r.jsxs)(d.animated.div, {
+      children: [g, (0, r.jsxs)(d.animated.div, {
         style: {
           opacity: h
         },
@@ -84,29 +84,29 @@ let u = o.forwardRef((e, n) => {
           y2: "0%",
           children: [(0, r.jsx)("stop", {
             offset: "0%",
-            stopColor: g.backgroundTop
+            stopColor: b.backgroundTop
           }), (0, r.jsx)("stop", {
             offset: "100%",
-            stopColor: g.backgroundBottom
+            stopColor: b.backgroundBottom
           })]
         })]
       }), (0, r.jsx)("circle", {
         className: f.progress,
         strokeWidth: u,
         fill: "transparent",
-        r: m,
-        cx: b,
-        cy: b,
+        r: v,
+        cx: m,
+        cy: m,
         stroke: "url(#linear)",
         style: B
       }), (0, r.jsx)("circle", {
         className: f.progress,
         strokeWidth: u,
         fill: "transparent",
-        r: m,
-        cx: b,
-        cy: b,
-        stroke: g.foreground,
+        r: v,
+        cx: m,
+        cy: m,
+        stroke: b.foreground,
         style: y
       })]
     })]

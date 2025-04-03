@@ -1,7 +1,7 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
-  Z: () => v
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ var r = n(200651),
   f = n(975331),
   b = n(231610),
   x = n(388032),
-  j = n(630290),
-  N = n(659704);
+  j = n(301849),
+  N = n(948695);
 
-function v(e) {
+function _(e) {
   var t, n;
   let {
     allSubscriptionListings: s,
-    priceTiers: v,
-    loading: _,
+    priceTiers: _,
+    loading: v,
     error: C,
     handlePublishTier: O,
     onDeleteEditState: y
@@ -36,10 +36,10 @@ function v(e) {
   } = (0, u.N)(), E = (0, l.e7)([c.Z], () => c.Z.getSubscriptionListing(I)), S = (0, d.mY)(), T = i.useMemo(() => {
     let e = s.filter(e => e.id !== I).map(e => {
       var t;
-      return null === (t = e.subscription_plans[0]) || void 0 === t ? void 0 : t.price
+      return null == (t = e.subscription_plans[0]) ? void 0 : t.price
     });
-    return null == v ? void 0 : v.filter(t => !e.includes(t))
-  }, [s, I, v]), P = null == E, w = null !== (t = null == E ? void 0 : E.published) && void 0 !== t && t, R = null !== (n = null == E ? void 0 : E.archived) && void 0 !== n && n;
+    return null == _ ? void 0 : _.filter(t => !e.includes(t))
+  }, [s, I, _]), P = null == E, w = null != (t = null == E ? void 0 : E.published) && t, R = null != (n = null == E ? void 0 : E.archived) && n;
   return (0, r.jsxs)("div", {
     className: N.body,
     children: [null != C && (0, r.jsx)(m.Z, {
@@ -84,7 +84,7 @@ function v(e) {
             wrapperClassName: j.autoWidth,
             className: a()(N.publishButton, j.autoWidth),
             onClick: O,
-            submitting: _,
+            submitting: v,
             children: x.NW.string(x.t.Lj6R5u)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);

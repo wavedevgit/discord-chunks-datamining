@@ -65,7 +65,7 @@ function S(e) {
     v2Enabled: s
   } = e, c = (0, o.e7)([l.Z], () => {
     var e;
-    return null === (e = l.Z.getGuild(t)) || void 0 === e ? void 0 : e.rulesChannelId
+    return null == (e = l.Z.getGuild(t)) ? void 0 : e.rulesChannelId
   }), a = (e, t) => {
     let n = r[e];
     i([...r.slice(0, e), w(N({}, n), {

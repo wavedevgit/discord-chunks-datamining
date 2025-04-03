@@ -1,4 +1,4 @@
-/** Chunk was on 72581 **/
+/** Chunk was on 69620 **/
 n.d(t, {
   Dv: () => c,
   Gq: () => l,
@@ -48,11 +48,11 @@ function m(e, t, n) {
     f = m || p || g || h || _ || e.type === r.uaV.THREAD_CREATED,
     b = m && e.content === e.embeds[0].url && e.embeds[0].type === r.hBH.GIFV,
     y = e.type !== r.uaV.DEFAULT || !b && "" !== e.content,
-    v = (0, i.Z)(e),
-    x = !v && (null == n ? void 0 : n.hasTimestamp) !== !1,
-    C = s(e, t),
+    x = (0, i.Z)(e),
+    C = !x && (null == n ? void 0 : n.hasTimestamp) !== !1,
+    v = s(e, t),
     O = l(e),
-    j = v ? "" : "".concat(d ? O : C, " ").concat(a.Z0);
+    j = x ? "" : "".concat(d ? O : v, " ").concat(a.Z0);
   if (y) {
     let t = o(e);
     j += " ".concat(t)
@@ -61,7 +61,7 @@ function m(e, t, n) {
     let t = u(e);
     j += " ".concat(t)
   }
-  if (x) {
+  if (C) {
     let t = c(e);
     j += " ".concat(a.fy, " ").concat(t)
   }

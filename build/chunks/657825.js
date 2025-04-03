@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => u
 });
@@ -7,10 +7,10 @@ n(192379);
 var i = n(399606),
   s = n(481060),
   a = n(594174),
-  o = n(51144),
-  l = n(546791),
+  l = n(51144),
+  o = n(546791),
   c = n(198952),
-  d = n(633653);
+  d = n(772998);
 let u = e => {
   let {
     userId: t,
@@ -27,11 +27,11 @@ let u = e => {
         className: d.descriptors,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: o.ZP.getName(m)
+          children: l.ZP.getName(m)
         }), (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: (0, l.LI)(new Date(n).getTime(), u)
+          children: (0, o.LI)(new Date(n).getTime(), u)
         })]
       })
     })]

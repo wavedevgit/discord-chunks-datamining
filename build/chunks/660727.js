@@ -17,7 +17,7 @@ var o = n(200651),
   x = n(956664),
   N = n(185923),
   b = n(388032),
-  f = n(340972),
+  f = n(853967),
   h = n(84717);
 
 function j() {
@@ -142,7 +142,7 @@ let k = function(e) {
           if ((null == e ? void 0 : e.id) != null)(null == e ? void 0 : e.type) === u.B.GUILD && n(await I(e));
           else if ((null == e ? void 0 : e.surrogates) != null) {
             var a, o;
-            i(null !== (o = null === (a = e.defaultDiversityChild) || void 0 === a ? void 0 : a.surrogates) && void 0 !== o ? o : e.surrogates)
+            i(null != (o = null == (a = e.defaultDiversityChild) ? void 0 : a.surrogates) ? o : e.surrogates)
           }
           m()
         },

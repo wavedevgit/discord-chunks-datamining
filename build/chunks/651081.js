@@ -12,10 +12,10 @@ var l = n(200651),
   d = n(700582),
   u = n(493773),
   m = n(410030),
-  v = n(111028),
-  h = n(566006),
-  _ = n(222677),
-  x = n(592125),
+  h = n(111028),
+  _ = n(566006),
+  x = n(222677),
+  v = n(592125),
   j = n(594174),
   p = n(768581),
   g = n(176354),
@@ -26,9 +26,9 @@ var l = n(200651),
   S = n(22864),
   w = n(981631),
   b = n(388032),
-  M = n(982891),
+  M = n(869322),
   Z = n(144452);
-let k = h.O.VOTE;
+let k = _.O.VOTE;
 
 function P() {
   let e = (0, m.ZP)();
@@ -60,7 +60,7 @@ function I(e) {
     textClassNames: r
   } = e, i = null == n.id ? g.ZP.getURL(n.name) : p.ZP.getEmojiURL({
     id: n.id,
-    animated: null !== (t = n.animated) && void 0 !== t && t,
+    animated: null != (t = n.animated) && t,
     size: a
   });
   return null != i && "" !== i ? (0, l.jsx)("img", {
@@ -89,7 +89,7 @@ function y(e) {
     children: t.answers.map(e => {
       var t;
       let s = String(e.answer_id),
-        i = null !== (t = n[s]) && void 0 !== t ? t : 0,
+        i = null != (t = n[s]) ? t : 0,
         {
           emoji: c,
           text: d
@@ -117,7 +117,7 @@ function y(e) {
           variant: "text-sm/semibold",
           color: "text-secondary",
           lineClamp: 1,
-          children: (0, l.jsx)(v.Z, {
+          children: (0, l.jsx)(h.Z, {
             position: "left",
             "aria-hidden": !0,
             children: d
@@ -180,10 +180,10 @@ function L(e) {
     channelId: s.id,
     messageId: t.id,
     reaction: n
-  }), c = a.useRef(null), d = a.useRef(null), [m, v] = a.useState(!1), h = a.useCallback(async () => {
+  }), c = a.useRef(null), d = a.useRef(null), [m, h] = a.useState(!1), _ = a.useCallback(async () => {
     let e = d.current;
-    v(!0);
-    let l = await _.U0({
+    h(!0);
+    let l = await x.U0({
       channelId: s.id,
       messageId: t.id,
       emoji: n.emoji,
@@ -191,19 +191,19 @@ function L(e) {
       after: e,
       type: k
     });
-    d.current = l[l.length - 1].id, v(!1)
+    d.current = l[l.length - 1].id, h(!1)
   }, [s.id, t.id, n.emoji]);
   (0, u.ZP)(() => {
-    h()
+    _()
   });
-  let x = a.useCallback(() => {
+  let v = a.useCallback(() => {
       let {
         current: e
       } = c;
       if (null == e) return;
       let t = e.getScrollerState();
-      t.scrollTop + t.offsetHeight >= t.scrollHeight - 44 && i && !m && h()
-    }, [c, i, m, h]),
+      t.scrollTop + t.offsetHeight >= t.scrollHeight - 44 && i && !m && _()
+    }, [c, i, m, _]),
     j = a.useCallback((e, t) => {
       if (1 === e) return 44 * (0 === t);
       if (0 === e) {
@@ -240,7 +240,7 @@ function L(e) {
       sectionHeight: 0,
       rowHeight: j,
       renderRow: p,
-      onScroll: i ? x : void 0
+      onScroll: i ? v : void 0
     })
   })
 }
@@ -252,25 +252,25 @@ function R(e) {
     initialAnswerId: s,
     onClose: r,
     transitionState: c
-  } = e, d = (0, i.e7)([x.Z], () => x.Z.getChannel(n.getChannelId())), [u, m] = a.useState(s), v = a.useMemo(() => {
+  } = e, d = (0, i.e7)([v.Z], () => v.Z.getChannel(n.getChannelId())), [u, m] = a.useState(s), h = a.useMemo(() => {
     if (null != n.reactions) return (0, T.ef)(n.reactions, u)
-  }, [n.reactions, u]), h = a.useMemo(() => (0, C.cZ)(n.reactions), [n.reactions]), _ = a.useMemo(() => (function(e) {
+  }, [n.reactions, u]), _ = a.useMemo(() => (0, C.cZ)(n.reactions), [n.reactions]), x = a.useMemo(() => (function(e) {
     let t = {};
     for (let a of e) {
       var n, l;
-      let e = null !== (l = null === (n = a.count_details) || void 0 === n ? void 0 : n.vote) && void 0 !== l ? l : 0,
+      let e = null != (l = null == (n = a.count_details) ? void 0 : n.vote) ? l : 0,
         s = a.emoji.id;
       null != s && (t[s] = e)
     }
     return t
-  })(n.reactions), [n.reactions]), j = _[u], p = a.useMemo(() => {
+  })(n.reactions), [n.reactions]), j = x[u], p = a.useMemo(() => {
     var e;
     let t = {};
-    return null === (e = n.poll) || void 0 === e || e.answers.forEach(e => {
+    return null == (e = n.poll) || e.answers.forEach(e => {
       var n;
-      (null == e ? void 0 : e.answer_id) != null && (null === (n = e.poll_media) || void 0 === n ? void 0 : n.text) != null && (t[e.answer_id] = e.poll_media.text)
+      (null == e ? void 0 : e.answer_id) != null && (null == (n = e.poll_media) ? void 0 : n.text) != null && (t[e.answer_id] = e.poll_media.text)
     }), t
-  }, [null === (t = n.poll) || void 0 === t ? void 0 : t.answers]), g = b.NW.formatToPlainString(b.t.wqBc7O, {
+  }, [null == (t = n.poll) ? void 0 : t.answers]), g = b.NW.formatToPlainString(b.t.wqBc7O, {
     numVotes: j,
     option: p[u]
   });
@@ -292,7 +292,7 @@ function R(e) {
           variant: "text-md/medium",
           color: "text-normal",
           children: b.NW.format(b.t.XRkuoa, {
-            count: h.toLocaleString()
+            count: _.toLocaleString()
           })
         })]
       }), (0, l.jsx)(o.olH, {
@@ -308,15 +308,15 @@ function R(e) {
           poll: n.poll,
           selectedAnswerId: u,
           onSelectAnswer: m,
-          reactionVoteCounts: _
+          reactionVoteCounts: x
         })
       }), (0, l.jsx)(o.njP.Panel, {
         id: u,
         "aria-label": g,
         className: M.panel,
-        children: null != v && j > 0 ? (0, l.jsx)(L, {
+        children: null != h && j > 0 ? (0, l.jsx)(L, {
           message: n,
-          reaction: v,
+          reaction: h,
           channel: d
         }) : (0, l.jsx)(P, {})
       })]

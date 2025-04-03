@@ -18,10 +18,10 @@ var i = n(120356),
   b = n(176354),
   p = n(981631),
   h = n(185923),
-  v = n(388032),
-  y = n(631972);
+  y = n(388032),
+  N = n(933070);
 
-function N(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function N(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function O(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+let v = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
 function j(e) {
   var t;
@@ -73,31 +73,31 @@ function j(e) {
     hideOnClick: !0,
     spacing: 16,
     forceOpen: i,
-    children: e => (0, r.jsx)("div", O(N({
-      "aria-label": v.NW.formatToPlainString(v.t["/iYSo6"], {
+    children: e => (0, r.jsx)("div", E(O({
+      "aria-label": y.NW.formatToPlainString(y.t["/iYSo6"], {
         emojiName: n.name
       }),
-      className: l()(y.button, {
-        [y.focused]: i
+      className: l()(N.button, {
+        [N.focused]: i
       })
     }, e), {
-      children: null == s || "" === s.trim() ? (0, r.jsx)("span", O(N({
-        className: l()("emoji", "emoji-text", y.icon)
+      children: null == s || "" === s.trim() ? (0, r.jsx)("span", E(O({
+        className: l()("emoji", "emoji-text", N.icon)
       }, e), {
         children: c
       })) : (0, r.jsx)("img", {
-        className: y.icon,
+        className: N.icon,
         src: s,
         alt: ""
       })
     }))
-  }, null !== (t = n.id) && void 0 !== t ? t : n.name)
+  }, null != (t = n.id) ? t : n.name)
 }
 
 function S(e, t) {
   let n = (0, s.MZ)(t.guild_id).filter(e => {
     var n;
-    return !(e.useSpriteSheet && E.indexOf(null !== (n = e.uniqueName) && void 0 !== n ? n : "") >= 0) && !b.ZP.isEmojiPremiumLocked({
+    return !(e.useSpriteSheet && v.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.ZP.isEmojiPremiumLocked({
       emoji: e,
       channel: t,
       intention: h.Hz.REACTION
@@ -107,15 +107,15 @@ function S(e, t) {
   let i = f.nc.useSetting(),
     l = (0, d.$R)(t),
     m = (0, a.e7)([g.Z], () => i && l && (t.isPrivate() || g.Z.can(p.Plq.ADD_REACTIONS, t)), [t, l, i]),
-    v = n => {
+    y = n => {
       (0, c.rU)(t.id, e.id, (0, u.g1)(n), c.TW.MESSAGE_CONTEXT_MENU)
     };
   return m && n.length > 0 ? (0, r.jsx)(o.kSQ, {
-    className: y.wrapper,
+    className: N.wrapper,
     children: n.map((e, t) => {
       var n;
       return (0, r.jsx)(o.sNh, {
-        id: "quickreact-".concat(null !== (n = e.id) && void 0 !== n ? n : t),
+        id: "quickreact-".concat(null != (n = e.id) ? n : t),
         render: t => {
           let {
             isFocused: n
@@ -125,7 +125,7 @@ function S(e, t) {
             isFocused: n
           })
         },
-        action: () => v(e),
+        action: () => y(e),
         dontCloseOnActionIfHoldingShiftKey: !0
       }, t)
     })

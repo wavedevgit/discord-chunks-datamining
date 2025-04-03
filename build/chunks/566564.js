@@ -5,8 +5,8 @@ n.d(t, {
 }), n(653041);
 var r = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   i = n(685816),
   s = n(442837),
   c = n(481060),
@@ -18,19 +18,19 @@ var r = n(200651),
   g = n(364111),
   h = n(752053),
   m = n(81136),
-  v = n(953655),
-  _ = n(548685),
+  _ = n(953655),
+  v = n(548685),
   C = n(580914),
   x = n(963278),
   O = n(384067),
   y = n(215023),
   j = n(388032),
-  k = n(719458);
+  k = n(806734);
 let S = e => {
     let {
       handleTransition: t,
       numVisibleItems: n,
-      isFetchingCategories: o,
+      isFetchingCategories: a,
       tab: s
     } = e, {
       noCache: c,
@@ -58,11 +58,11 @@ let S = e => {
         isLoading: d,
         handleTransition: t,
         tab: s
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(_.Z, {
         isLoading: d,
         handleTransition: t,
         categories: []
-      }), (0, r.jsx)(_.Z, {
+      }), (0, r.jsx)(v.Z, {
         isLoading: d,
         handleTransition: t,
         numVisibleItems: n,
@@ -83,15 +83,15 @@ let S = e => {
           }, l);
           break;
         case i.z.FEATURED:
-          c = (0, r.jsx)(v.Z, {
+          c = (0, r.jsx)(_.Z, {
             isLoading: d,
             handleTransition: t,
             featuredBlockRecord: e
           }, l);
           break;
         case i.z.FEED:
-          c = (0, r.jsx)(_.Z, {
-            isLoading: d || o,
+          c = (0, r.jsx)(v.Z, {
+            isLoading: d || a,
             handleTransition: t,
             numVisibleItems: n,
             rankedSkuIds: e.rankedSkuIds,
@@ -116,7 +116,7 @@ let S = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: a()(k.blockContainer, {
+        className: o()(k.blockContainer, {
           [k.topBlockContainer]: 0 === l
         }),
         children: c
@@ -130,18 +130,18 @@ let S = e => {
     var t;
     let {
       isFullScreen: n,
-      handleTransition: o,
+      handleTransition: a,
       numVisibleItems: i,
       tab: g
     } = e, {
-      isFetchingCategories: v,
-      fetchCategoriesError: _,
+      isFetchingCategories: _,
+      fetchCategoriesError: v,
       fetchPurchasesError: C,
       claimError: x,
       refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null !== (t = null != _ ? _ : C) && void 0 !== t ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), I = (0, p.R)("CollectiblesFeedShop"), {
+    }), P = null != (t = null != v ? v : C) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), I = (0, p.R)("CollectiblesFeedShop"), {
       noCache: B,
       includeUnpublished: N
     } = (0, m.Z)(), T = l.useCallback(() => {
@@ -150,7 +150,7 @@ let S = e => {
     if (null == E) return null;
     if (null != P) {
       let e = [];
-      null != _ ? e.push("shop load fetch categories error: ".concat(P.message)) : null != C ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
+      null != v ? e.push("shop load fetch categories error: ".concat(P.message)) : null != C ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: E.isStaff().toString(),
           preloadEnabled: w.toString(),
@@ -159,20 +159,20 @@ let S = e => {
         }
       })
     }
-    return null != _ ? (0, r.jsx)(h.Z, {
+    return null != v ? (0, r.jsx)(h.Z, {
       onRetry: T,
       errorOrigin: h.i.SHOP_PAGE,
-      errorMessage: _.message
+      errorMessage: v.message
     }) : (0, r.jsx)("div", {
-      className: a()(k.shop, {
+      className: o()(k.shop, {
         [k.shopFullscreen]: n
       }),
       children: (0, r.jsxs)("div", {
-        className: a()(k.content, k.mainContent),
+        className: o()(k.content, k.mainContent),
         children: [(0, r.jsx)(S, {
-          handleTransition: o,
+          handleTransition: a,
           numVisibleItems: i,
-          isFetchingCategories: v,
+          isFetchingCategories: _,
           tab: g
         }), g !== y.AW.CATALOG && i >= I && (0, r.jsxs)("div", {
           className: k.endOfFeed,
@@ -182,7 +182,7 @@ let S = e => {
           }), (0, r.jsx)(c.zxk, {
             className: k.endOfFeedButton,
             onClick: () => {
-              o("shop all bottom", void 0, !0)
+              a("shop all bottom", void 0, !0)
             },
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/medium",

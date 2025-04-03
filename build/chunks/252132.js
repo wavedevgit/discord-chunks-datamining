@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => a
 });
@@ -6,7 +6,7 @@ var r = n(200651);
 n(192379);
 var i = n(27457),
   l = n(131951),
-  o = n(534670);
+  o = n(938243);
 
 function a(e) {
   var {
@@ -25,9 +25,9 @@ function a(e) {
     onDoubleClick: b,
     onVideoResize: _,
     paused: C,
-    pulseSpeakingIndicator: v,
-    participant: y,
-    width: x
+    pulseSpeakingIndicator: y,
+    participant: x,
+    width: v
   } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -46,7 +46,7 @@ function a(e) {
   let O = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: x
+      width: v
     },
     className: o.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -84,11 +84,11 @@ function a(e) {
         onContextMenu: g,
         onDoubleClick: b,
         onVideoResize: _,
-        participant: y,
+        participant: x,
         paused: C,
-        pulseSpeakingIndicator: v,
+        pulseSpeakingIndicator: y,
         videoComponent: O,
-        width: x
+        width: v
       }, j)), d]
     })
   })

@@ -47,7 +47,7 @@ function p(e) {
   return o.default.keys(e).filter(n => {
     var i, a;
     let o = e[n].message_notifications !== s.bL.NULL,
-      u = l.yE(null !== (i = e[n].flags) && void 0 !== i ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || l.yE(null !== (a = e[n].flags) && void 0 !== a ? a : 0, d.ic.UNREADS_ONLY_MENTIONS);
+      u = l.yE(null != (i = e[n].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || l.yE(null != (a = e[n].flags) ? a : 0, d.ic.UNREADS_ONLY_MENTIONS);
     return !t.ignoreUnreadSetting && u || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, r.m$)(e[n])
   })
 }

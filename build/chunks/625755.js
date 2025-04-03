@@ -1,5 +1,5 @@
 /** Chunk was on 33156 **/
-n.d(e, {
+n.d(t, {
   Z: () => r
 });
 var a = {
@@ -10,6 +10,6 @@ var a = {
   nextWeek: "翌週のeeeeのp",
   other: "P"
 };
-let r = function(t, e, n, r) {
-  return a[t]
+let r = function(e, t, n, r) {
+  return a[e]
 }

@@ -3,44 +3,44 @@ n.d(t, {
   default: () => w
 }), n(627341), n(47120);
 var s = n(200651),
-  i = n(192379),
-  l = n(120356),
-  r = n.n(l),
+  l = n(192379),
+  i = n(120356),
+  r = n.n(i),
   a = n(512722),
   o = n.n(a),
   u = n(954955),
   c = n.n(u),
-  d = n(278074),
-  m = n(442837),
+  m = n(278074),
+  d = n(442837),
   x = n(481060),
   f = n(809206),
   h = n(118012),
   p = n(219496),
-  v = n(575681),
-  b = n(807369),
-  g = n(180529),
-  N = n(25990),
+  b = n(575681),
+  g = n(807369),
+  N = n(180529),
+  v = n(25990),
   _ = n(594174),
   j = n(74538),
   C = n(981631),
   k = n(388032),
-  I = n(44472),
-  E = n(48974);
+  I = n(238861),
+  E = n(953100);
 let W = e => {
   let {
     usernameStatus: t,
     showHint: n
   } = e;
-  return (0, d.EQ)(t).with({
+  return (0, m.EQ)(t).with({
     type: p.K.ERROR,
-    message: d.P.select()
+    message: m.P.select()
   }, e => (0, s.jsx)(x.Text, {
     variant: "text-sm/normal",
     color: "text-danger",
     children: e
   })).with({
     type: p.K.AVAILABLE,
-    message: d.P.select()
+    message: m.P.select()
   }, e => (0, s.jsx)(x.Text, {
     variant: "text-sm/normal",
     color: "text-positive",
@@ -56,18 +56,18 @@ function w(e) {
   var t;
   let {
     transitionState: n,
-    onClose: l
-  } = e, a = (0, m.e7)([_.default], () => {
+    onClose: i
+  } = e, a = (0, d.e7)([_.default], () => {
     let e = _.default.getCurrentUser();
     return o()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), u = i.useMemo(() => j.ZP.canEditDiscriminator(a) && !a.isPomelo(), [a]), [d, w] = i.useState(!1), [R, z] = i.useState(a.username), [S, L] = i.useState(a.discriminator), [P, y] = i.useState(""), [T, B] = i.useState(!1), F = (0, m.e7)([N.Z], () => N.Z.getErrors()), M = (0, v.n)(), Z = a.isPomelo() && M, A = (0, b.a)(R, Z, !1, a.username), D = i.useRef(null), U = i.useMemo(() => {
+  }), u = l.useMemo(() => j.ZP.canEditDiscriminator(a) && !a.isPomelo(), [a]), [m, w] = l.useState(!1), [R, z] = l.useState(a.username), [S, L] = l.useState(a.discriminator), [P, y] = l.useState(""), [T, B] = l.useState(!1), F = (0, d.e7)([v.Z], () => v.Z.getErrors()), M = (0, b.n)(), Z = a.isPomelo() && M, A = (0, g.a)(R, Z, !1, a.username), D = l.useRef(null), U = l.useMemo(() => {
     var e, t, n;
-    return null !== (n = null == F ? void 0 : null === (e = F.username) || void 0 === e ? void 0 : e[0]) && void 0 !== n ? n : null == F ? void 0 : null === (t = F.discriminator) || void 0 === t ? void 0 : t[0]
+    return null != (n = null == F || null == (e = F.username) ? void 0 : e[0]) ? n : null == F || null == (t = F.discriminator) ? void 0 : t[0]
   }, [F]);
-  i.useEffect(() => {
+  l.useEffect(() => {
     if (n === x.Dvm.ENTERED) {
       var e;
-      null === (e = D.current) || void 0 === e || e.focus()
+      null == (e = D.current) || e.focus()
     }
   }, [n]);
   let K = S !== a.discriminator;
@@ -78,9 +78,9 @@ function w(e) {
       discriminator: u ? S : void 0,
       password: P
     });
-    B(!1), (null == t ? void 0 : t.ok) && l()
+    B(!1), (null == t ? void 0 : t.ok) && i()
   }
-  let q = i.useMemo(() => c()(w, 50), []);
+  let q = l.useMemo(() => c()(w, 50), []);
   return (0, s.jsxs)(x.Y0X, {
     transitionState: n,
     children: [(0, s.jsxs)(x.xBx, {
@@ -97,7 +97,7 @@ function w(e) {
         className: I.subtitle,
         children: k.NW.string(k.t.SLJvy8)
       }), (0, s.jsx)(x.olH, {
-        onClick: l,
+        onClick: i,
         className: I.modalCloseButton
       })]
     }), (0, s.jsxs)("form", {
@@ -110,7 +110,7 @@ function w(e) {
           children: (0, s.jsxs)("div", {
             className: r()(E.input, I.multiInput, {
               [E.error]: null != U,
-              [E.focused]: d
+              [E.focused]: m
             }),
             children: [(0, s.jsx)(x.oil, {
               name: "username",
@@ -144,8 +144,8 @@ function w(e) {
           color: "header-secondary",
           className: I.discriminatorChangeWarning,
           children: k.NW.string(k.t.mConUV)
-        }) : null, Z ? (0, s.jsx)(g.Z, {
-          show: (null == A ? void 0 : A.type) === p.K.ERROR || d,
+        }) : null, Z ? (0, s.jsx)(N.Z, {
+          show: (null == A ? void 0 : A.type) === p.K.ERROR || m,
           top: 8,
           bottom: 4,
           children: (0, s.jsx)(W, {
@@ -155,7 +155,7 @@ function w(e) {
         }) : null, (0, s.jsx)(x.xJW, {
           className: I.password,
           title: k.NW.string(k.t.TmdnJy),
-          error: null == F ? void 0 : null === (t = F.password) || void 0 === t ? void 0 : t[0],
+          error: null == F || null == (t = F.password) ? void 0 : t[0],
           children: (0, s.jsx)(x.oil, {
             type: "password",
             value: P,
@@ -173,7 +173,7 @@ function w(e) {
           className: I.cancel,
           look: x.zxk.Looks.LINK,
           color: x.zxk.Colors.PRIMARY,
-          onClick: l,
+          onClick: i,
           children: k.NW.string(k.t["ETE/oK"])
         })]
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -17,7 +17,7 @@ var i = n(120356),
   g = n(889369),
   p = n(838324),
   h = n(388032),
-  f = n(261150);
+  f = n(281310);
 
 function b(e) {
   let {
@@ -64,9 +64,9 @@ function j(e) {
     channels: t
   } = e;
   return (0, r.jsx)(r.Fragment, {
-    children: t.map(e => e.isCategory() ? (0, r.jsx)(v, {
+    children: t.map(e => e.isCategory() ? (0, r.jsx)(_, {
       label: e.name
-    }, e.id) : (0, r.jsx)(_, {
+    }, e.id) : (0, r.jsx)(v, {
       channel: e
     }, e.id))
   })
@@ -78,7 +78,7 @@ function N() {
   })
 }
 
-function v(e) {
+function _(e) {
   let {
     label: t
   } = e;
@@ -98,11 +98,11 @@ function v(e) {
   })
 }
 
-function _(e) {
+function v(e) {
   var t;
   let {
     channel: n
-  } = e, i = (0, d.iF)(n), a = null !== (t = (0, o.KS)(n)) && void 0 !== t ? t : l.VL1;
+  } = e, i = (0, d.iF)(n), a = null != (t = (0, o.KS)(n)) ? t : l.VL1;
   return (0, r.jsxs)("div", {
     className: f.channel,
     children: [(0, r.jsx)(a, {

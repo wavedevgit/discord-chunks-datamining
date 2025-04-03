@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   M: () => d
 }), n(230036), n(852437);
@@ -26,5 +26,5 @@ function d(e) {
       return new Date().getTime() >= n
     }(h[0].dismiss_timestamp, p)) return;
   let f = r.filter(e => null == e.dismiss_timestamp);
-  return null !== (t = f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1)) && void 0 !== t ? t : f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
+  return null != (t = f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1)) ? t : f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(210753),
   d = n(77498),
   u = n(388032),
-  m = n(479920);
+  m = n(402770);
 let g = function(e) {
   let {
     applicationId: t,
@@ -29,10 +29,10 @@ let g = function(e) {
     coverImageWidth: 252
   }), j = (0, o.e7)([d.Z], () => {
     var e, n;
-    return null !== (n = null === (e = d.Z.getDetectableGame(t)) || void 0 === e ? void 0 : e.name) && void 0 !== n ? n : ""
+    return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
   }), N = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), v = i.useMemo(() => b ? null : null == x ? (0, r.jsx)("div", {
+  }, [t, s]), _ = i.useMemo(() => b ? null : null == x ? (0, r.jsx)("div", {
     className: m.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
@@ -57,7 +57,7 @@ let g = function(e) {
             [m.selectedGameCheckLocked]: p
           })
         })
-      }), v, h > 0 && (0, r.jsx)("div", {
+      }), _, h > 0 && (0, r.jsx)("div", {
         className: m.remainingGame,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",

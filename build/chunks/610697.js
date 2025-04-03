@@ -1,4 +1,4 @@
-/** Chunk was on 69787 **/
+/** Chunk was on 69606 **/
 n.d(t, {
   Z: () => c
 }), n(47120);
@@ -13,9 +13,9 @@ function c() {
   let e = (0, i.e7)([l.Z], () => l.Z.getUserCountryCode()),
     t = !1 === (0, i.e7)([a.default], () => {
       var e;
-      return null === (e = a.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed
+      return null == (e = a.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
     });
   return r.useEffect(() => {
     null == e && (0, o.hi)()
-  }, [e]), !!(null != e && s.has(e.alpha2)) && !!t
+  }, [e]), null != e && !!s.has(e.alpha2) && !!t
 }

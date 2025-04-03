@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   S: () => f,
   m: () => m
@@ -6,24 +6,24 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   a = n(442837),
-  o = n(481060),
-  l = n(607070),
+  l = n(481060),
+  o = n(607070),
   s = n(426563),
   c = n(998502),
   u = n(388032),
-  d = n(176641);
-let p = c.ZP.getEnableHardwareAcceleration() ? o.Xo$ : o.qEK;
+  d = n(860918);
+let p = c.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
 function m() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
     [t, n] = i.useState(!1),
-    r = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
-    o = i.useMemo(() => {
+    r = (0, a.e7)([o.Z], () => o.Z.useReducedMotion),
+    l = i.useMemo(() => {
       let n = t || !r && !e;
       return (0, s.j)(n)
     }, [t, r, e]);
   return {
-    avatarSrc: o,
+    avatarSrc: l,
     eventHandlers: {
       onMouseEnter: i.useCallback(() => n(!0), []),
       onMouseLeave: i.useCallback(() => n(!1), [])
@@ -39,7 +39,7 @@ function f(e) {
     className: d.avatarContainer,
     children: (0, r.jsx)(p, {
       src: t,
-      size: o.EFr.SIZE_40,
+      size: l.EFr.SIZE_40,
       "aria-label": u.NW.string(u.t.hG1StL)
     })
   })

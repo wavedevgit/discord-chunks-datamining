@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(912332),
   d = n(701865),
   f = n(388032),
-  p = n(145211);
+  p = n(919399);
 
 function _() {
   (0, l.Mr3)(d.U)
@@ -25,17 +25,15 @@ function h(e) {
     target: o,
     onClick: s
   } = e, c = i.useCallback(() => {
-    if (null == s || s(), "embed" === o.type) {
-      (0, u.l8)({
-        message: n,
-        source: "media-viewer",
-        forwardOptions: {
-          onlyEmbedIndices: [o.embedIndex]
-        },
-        onRequestSent: _
-      });
-      return
-    }(0, u.l8)({
+    if (null == s || s(), "embed" === o.type) return void(0, u.l8)({
+      message: n,
+      source: "media-viewer",
+      forwardOptions: {
+        onlyEmbedIndices: [o.embedIndex]
+      },
+      onRequestSent: _
+    });
+    (0, u.l8)({
       message: n,
       source: "media-viewer",
       forwardOptions: {

@@ -3,7 +3,7 @@ n.d(t, {
   G: () => f,
   Z: () => m
 });
-var r, i, l, o, a = n(200651),
+var r, i, l, a, o = n(200651),
   s = n(192379),
   c = n(442837),
   u = n(570140),
@@ -11,7 +11,7 @@ var r, i, l, o, a = n(200651),
   p = n(855775),
   h = n(388032),
   f = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class g extends(o = s.PureComponent) {
+class g extends(a = s.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -35,7 +35,7 @@ class g extends(o = s.PureComponent) {
       purchaseError: t,
       messageStyle: n
     } = this.props;
-    return null == t ? null : (0, a.jsx)("div", {
+    return null == t ? null : (0, o.jsx)("div", {
       className: e,
       children: this.getText(t, n)
     })

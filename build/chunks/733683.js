@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O,
@@ -16,7 +16,7 @@ var r, i = n(200651),
   g = n(624138),
   p = n(981631),
   h = n(388032),
-  f = n(701132);
+  f = n(354444);
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,11 +29,11 @@ function b(e, t, n) {
 let x = -1,
   j = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_PROGRESS_BAR_WIDTH),
   N = (0, g.Mg)(u.Z.PREMIUM_GUILD_PROGRESS_BAR_TIER_MARKER_SIZE),
-  v = {
+  _ = {
     tension: 140,
     friction: 30
   },
-  _ = {
+  v = {
     tension: 800,
     friction: 20
   };
@@ -114,11 +114,14 @@ class C extends(r = s.Component) {
   }
   renderTierMarker(e, t, n) {
     var r;
-    let s;
-    let {
-      progress: a,
-      tiers: l
-    } = this.props, c = l[n], d = a >= e.numRequired, u = null != c && e.key === c.key, g = e.key === l[0].key;
+    let s, {
+        progress: a,
+        tiers: l
+      } = this.props,
+      c = l[n],
+      d = a >= e.numRequired,
+      u = null != c && e.key === c.key,
+      g = e.key === l[0].key;
     s = g ? f.tierFirst : u ? f.tierCurrent : d ? f.tierAccomplished : f.tierInProgress;
     let p = e.y - (g ? 0 : N / 2),
       h = this.state.tierMarkerActive === t,
@@ -126,7 +129,7 @@ class C extends(r = s.Component) {
     return (0, i.jsx)(m.ua7, {
       text: this.renderTierMarkerTooltip(e),
       position: "right",
-      "aria-label": null !== (r = e.name) && void 0 !== r ? r : "",
+      "aria-label": null != (r = e.name) ? r : "",
       children: e => (0, i.jsx)(m.AMe, {
         from: {
           scale: 1
@@ -134,7 +137,7 @@ class C extends(r = s.Component) {
         to: {
           scale: x ? 1.625 : 1
         },
-        config: _,
+        config: v,
         children: t => {
           var n, r;
           return (0, i.jsx)(o.animated.div, (n = function(e) {
@@ -212,7 +215,7 @@ class C extends(r = s.Component) {
         to: {
           height: n
         },
-        config: v,
+        config: _,
         delay: r ? 0 : this.props.initialAnimationDelay,
         onChange: this.handleForegroundFrame,
         onRest: r ? void 0 : this.handleFinishedInitialAnimation,

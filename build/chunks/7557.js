@@ -7,7 +7,7 @@ var s, i, r = n(200651),
   l = n(120356),
   a = n.n(l),
   h = n(600164),
-  c = n(631046);
+  c = n(713569);
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,11 +34,11 @@ class u extends(s = o.PureComponent) {
   }
   focus() {
     var e;
-    null === (e = this._codeBlockRef) || void 0 === e || e.focus()
+    null == (e = this._codeBlockRef) || e.focus()
   }
   blur() {
     var e;
-    null === (e = this._codeBlockRef) || void 0 === e || e.blur()
+    null == (e = this._codeBlockRef) || e.blur()
   }
   constructor(...e) {
     super(...e), d(this, "_codeBlockRef", void 0), d(this, "setCodeBlockRef", e => {

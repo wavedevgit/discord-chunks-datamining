@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => c
 });
@@ -6,9 +6,9 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(39604),
-  o = n(176127),
-  l = n(388032),
-  s = n(402762);
+  l = n(176127),
+  o = n(388032),
+  s = n(442693);
 
 function c(e) {
   let {
@@ -24,9 +24,9 @@ function c(e) {
     },
     position: "bottom",
     color: i.FGA.PRIMARY,
-    children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(i.X6q, {
+    children: [(0, r.jsx)(l.Z, {}), (0, r.jsx)(i.X6q, {
       variant: "heading-md/extrabold",
-      children: l.NW.format(l.t["+qxkzM"], {
+      children: o.NW.format(o.t["+qxkzM"], {
         count: c.newClipIds.length
       })
     }), (0, r.jsxs)("div", {
@@ -34,11 +34,11 @@ function c(e) {
       children: [(0, r.jsx)(i.zxk, {
         color: i.zxk.Colors.TRANSPARENT,
         onClick: a.eL,
-        children: l.NW.string(l.t.WAI6xs)
+        children: o.NW.string(o.t.WAI6xs)
       }), (0, r.jsx)(i.zxk, {
         color: i.zxk.Colors.BRAND,
         onClick: t,
-        children: l.NW.string(l.t.tQPBmp)
+        children: o.NW.string(o.t.tQPBmp)
       })]
     })]
   })

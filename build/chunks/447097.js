@@ -4,8 +4,8 @@ r.d(t, {
 }), r(757143), r(301563), r(47120), r(773603);
 var n = r(200651),
   l = r(192379),
-  i = r(658550),
-  s = r(481060),
+  s = r(658550),
+  i = r(481060),
   o = r(507453),
   a = r(388032);
 
@@ -14,39 +14,39 @@ function c(e) {
     mfaChallenge: t,
     finish: r,
     setSlide: c,
-    onClose: d,
-    isSlideReady: u
-  } = e, [f, h] = l.useState(!1), [m, p] = l.useState(null), [g, b] = l.useState(""), j = l.useRef(null), y = a.NW.string(a.t["C/ZAw8"]), x = a.NW.string(a.t.fZSi1N), v = l.useCallback(e => {
+    onClose: u,
+    isSlideReady: d
+  } = e, [f, h] = l.useState(!1), [m, p] = l.useState(null), [g, b] = l.useState(""), j = l.useRef(null), y = a.NW.string(a.t["C/ZAw8"]), x = a.NW.string(a.t.fZSi1N), S = l.useCallback(e => {
     b(e), p(null)
   }, [b, p]);
   return l.useEffect(() => {
-    if (u) {
+    if (d) {
       var e;
-      null === (e = j.current) || void 0 === e || e.focus()
+      null == (e = j.current) || e.focus()
     }
-  }, [u]), (0, n.jsxs)("form", {
+  }, [d]), (0, n.jsxs)("form", {
     onSubmit: e => {
       e.preventDefault(), h(!0), r({
         mfaType: "backup",
         data: g.replace(/-/g, "")
       }).catch(e => {
         var t, r;
-        p(null !== (r = null === (t = e.body) || void 0 === t ? void 0 : t.message) && void 0 !== r ? r : e.message)
+        p(null != (r = null == (t = e.body) ? void 0 : t.message) ? r : e.message)
       }).finally(() => {
         h(!1)
       })
     },
     children: [(0, n.jsx)(o.Z.SlideHeader, {
-      onClose: d
+      onClose: u
     }), (0, n.jsx)(o.Z.SlideContent, {
-      children: (0, n.jsxs)(s.xJW, {
+      children: (0, n.jsxs)(i.xJW, {
         title: y,
-        children: [(0, n.jsx)(s.oil, {
+        children: [(0, n.jsx)(i.oil, {
           inputRef: j,
-          onChange: v,
+          onChange: S,
           placeholder: x,
-          maxLength: i.tL,
-          minLength: i.th,
+          maxLength: s.tL,
+          minLength: s.th,
           value: g,
           spellCheck: "false",
           disabled: f

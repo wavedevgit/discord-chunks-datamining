@@ -30,7 +30,7 @@ async function S(e, t) {
         persistentCodesEnabled: !1
       }), i.Z.show({
         title: _.NW.string(_.t.R0RpRU),
-        body: null !== (n = e.getAnyErrorMessage()) && void 0 !== n ? n : _.NW.string(_.t.eAn6z8)
+        body: null != (n = e.getAnyErrorMessage()) ? n : _.NW.string(_.t.eAn6z8)
       })
     }
   } else r.Z.dispatch({

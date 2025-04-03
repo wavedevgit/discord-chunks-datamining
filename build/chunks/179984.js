@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => U
 }), n(653041);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(442837),
-  l = n(780384),
+  l = n(442837),
+  o = n(780384),
   c = n(481060),
   d = n(634894),
   u = n(410030),
@@ -24,12 +24,12 @@ var r = n(200651),
   j = n(230916),
   O = n(346497),
   C = n(823188),
-  v = n(21023),
-  S = n(318747),
+  S = n(21023),
+  v = n(318747),
   T = n(409100),
   I = n(474936),
   y = n(388032),
-  A = n(67431),
+  A = n(554074),
   P = n(102655),
   R = n(768236),
   D = n(314907),
@@ -74,7 +74,7 @@ let k = () => {
         premiumType: n
       } = e,
       i = (0, u.ZP)();
-    t = n === I.p9.TIER_0 ? (0, l.wj)(i) ? P : R : (0, l.wj)(i) ? D : Z;
+    t = n === I.p9.TIER_0 ? (0, o.wj)(i) ? P : R : (0, o.wj)(i) ? D : Z;
     let s = (0, N.Px)(n);
     return (0, r.jsx)("img", {
       src: t,
@@ -111,16 +111,16 @@ let k = () => {
       column1: n,
       column2: i,
       withBottomBorder: s = !0,
-      withTopBorderRadius: o = !1,
-      withBottomBorderRadius: l = !1,
+      withTopBorderRadius: l = !1,
+      withBottomBorderRadius: o = !1,
       buttonsRow: c = !1,
       shortRow: d = !1
     } = e;
     return (0, r.jsxs)("tr", {
       className: a()(A.row, {
         [A.wideRow]: c,
-        [A.topBorderRadius]: o,
-        [A.bottomBorderRadius]: l,
+        [A.topBorderRadius]: l,
+        [A.bottomBorderRadius]: o,
         [A.rowBottomBorder]: s,
         [A.shortRow]: d
       }),
@@ -135,8 +135,8 @@ let k = () => {
         children: n
       }), (0, r.jsx)("td", {
         className: a()(A.cell, {
-          [A.topBorderRadius]: o,
-          [A.bottomBorderRadius]: l,
+          [A.topBorderRadius]: l,
+          [A.bottomBorderRadius]: o,
           [A.buttonsCell]: c
         }),
         children: i
@@ -156,7 +156,7 @@ let k = () => {
       {
         analyticsLocations: V
       } = (0, g.ZP)(m.Z.PREMIUM_MARKETING_PLAN_COMPARISON),
-      G = (0, o.e7)([b.ZP], () => b.ZP.hasFetchedSubscriptions()),
+      G = (0, l.e7)([b.ZP], () => b.ZP.hasFetchedSubscriptions()),
       F = (0, h.V)(),
       H = "PlanComparisonTable";
     (0, d.j)({
@@ -167,11 +167,11 @@ let k = () => {
       autoTrackExposure: !1
     });
     let z = (0, u.ZP)(),
-      Y = (0, l.ap)(z),
-      K = (0, o.e7)([f.default], () => f.default.getCurrentUser()),
+      Y = (0, o.ap)(z),
+      K = (0, l.e7)([f.default], () => f.default.getCurrentUser()),
       q = (0, N.M5)(K, I.p9.TIER_2),
       X = (0, E.N)(),
-      J = null == X ? void 0 : null === (t = X.subscription_trial) || void 0 === t ? void 0 : t.sku_id,
+      J = null == X || null == (t = X.subscription_trial) ? void 0 : t.sku_id,
       Q = (0, x.rT)(),
       $ = (0, _.Ng)(),
       ee = null != $ && (0, _.Wp)($, I.Si.TIER_2),
@@ -180,10 +180,10 @@ let k = () => {
       er = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_0),
       ei = (0, N.CY)(I.Xh.PREMIUM_MONTH_TIER_2),
       es = (0, p.Z)(),
-      ea = (0, v.n)(er, ei, ee, en, es.fractionalState),
-      eo = (0, O.Vi)();
+      ea = (0, S.n)(er, ei, ee, en, es.fractionalState),
+      el = (0, O.Vi)();
     if (!G || !F) return null;
-    let el = {
+    let eo = {
       label: (0, r.jsx)(c.X6q, {
         className: A.__invalid_textColor,
         variant: "heading-lg/extrabold",
@@ -207,7 +207,7 @@ let k = () => {
     }) : ea.push({
       label: null,
       column1: (0, r.jsxs)(r.Fragment, {
-        children: [J === I.Si.TIER_2 || eo ? (0, r.jsx)(T.Z, {
+        children: [J === I.Si.TIER_2 || el ? (0, r.jsx)(T.Z, {
           className: A.button,
           subscriptionTier: I.Si.TIER_0,
           showIcon: !1,
@@ -218,7 +218,7 @@ let k = () => {
           className: A.button,
           subscriptionTier: I.Si.TIER_0,
           showIcon: !1
-        }), Q === I.p9.TIER_2 || null != J ? null : (0, r.jsx)(S.Z, {
+        }), Q === I.p9.TIER_2 || null != J ? null : (0, r.jsx)(v.Z, {
           className: A.button,
           subscriptionTier: I.Si.TIER_0
         })]
@@ -235,8 +235,8 @@ let k = () => {
           className: A.button,
           subscriptionTier: I.Si.TIER_2,
           showIcon: !1,
-          hasActivePromotion: eo
-        }), Q === I.p9.TIER_0 || null != J ? null : (0, r.jsx)(S.Z, {
+          hasActivePromotion: el
+        }), Q === I.p9.TIER_0 || null != J ? null : (0, r.jsx)(v.Z, {
           className: A.button,
           subscriptionTier: I.Si.TIER_2
         })]
@@ -248,7 +248,7 @@ let k = () => {
       text: null != J ? y.NW.string(y.t.IBYG5e) : y.NW.string(y.t.ce1v3d),
       className: A.freeTrialPillWithSparkles,
       colorOptions: J === I.Si.TIER_0 ? Y ? C.VE.PREMIUM_TIER_0_GRADIENT_FILL : C.VE.PREMIUM_TIER_0_WHITE_FILL : Y ? q ? C.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : C.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : C.VE.PREMIUM_TIER_2_WHITE_FILL
-    }) : eo ? (0, r.jsx)(k, {}) : (0, r.jsx)(W, {});
+    }) : el ? (0, r.jsx)(k, {}) : (0, r.jsx)(W, {});
     let ec = J === I.Si.TIER_0 || Q === I.p9.TIER_0 || U === I.p9.TIER_0;
     return (0, r.jsx)(g.Gt, {
       value: V,
@@ -270,7 +270,7 @@ let k = () => {
           }), (0, r.jsxs)("table", {
             className: A.table,
             children: [(0, r.jsx)("thead", {
-              children: (0, r.jsx)(B, w({}, el))
+              children: (0, r.jsx)(B, w({}, eo))
             }), (0, r.jsx)("tbody", {
               children: ea.map((e, t) => {
                 var n, r;

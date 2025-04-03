@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => b
 }), n(47120), n(301563), n(866573), n(642549), n(787622);
@@ -6,40 +6,40 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(772848),
-  l = n(481060),
+  l = n(772848),
+  o = n(481060),
   c = n(53281),
   d = n(281598),
   u = n(373071),
   m = n(782691),
-  g = n(840393);
+  g = n(662583);
 let p = "Make sure you're only uploading text files!",
   h = e => {
     var t, n, i;
     let {
       effect: s,
-      onClick: o
+      onClick: l
     } = e, {
       deleteConfig: c
     } = (0, u.n6)();
-    return (0, r.jsxs)(l.P3F, {
+    return (0, r.jsxs)(o.P3F, {
       className: g.previewCard,
       onClick: () => {
-        o(s)
+        l(s)
       },
       children: [(0, r.jsx)("div", {
         className: g.previewCardImage,
         style: {
-          backgroundImage: "url(".concat(null === (i = s.config) || void 0 === i ? void 0 : null === (n = i.effects) || void 0 === n ? void 0 : null === (t = n[0]) || void 0 === t ? void 0 : t.base64, ")")
+          backgroundImage: "url(".concat(null == (i = s.config) || null == (n = i.effects) || null == (t = n[0]) ? void 0 : t.base64, ")")
         }
       }), (0, r.jsxs)("div", {
         className: a()(g.previewCardFooter, g.row),
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(o.Text, {
           variant: "text-md/bold",
           children: s.name
-        }), (0, r.jsx)(l.zxk, {
-          color: l.Ttl.RED,
-          look: l.iLD.LINK,
+        }), (0, r.jsx)(o.zxk, {
+          color: o.Ttl.RED,
+          look: o.iLD.LINK,
           onClick: e => {
             e.preventDefault(), e.stopPropagation(), c(s.id)
           },
@@ -49,7 +49,7 @@ let p = "Make sure you're only uploading text files!",
     })
   },
   f = () => ({
-    id: (0, o.Z)(),
+    id: (0, l.Z)(),
     name: "New Profile Effect",
     config: {
       effects: []
@@ -65,13 +65,11 @@ function b() {
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(p);
     let s = JSON.parse(atob(i));
-    s.id = (0, o.Z)(), t(s), (0, d.XA)("Profile Effect (maybe??) imported!")
+    s.id = (0, l.Z)(), t(s), (0, d.XA)("Profile Effect (maybe??) imported!")
   }, [t]), x = i.useCallback(e => {
     var t;
-    if ((null === (t = e.currentTarget) || void 0 === t ? void 0 : t.files) == null) {
-      (0, d.Eo)("Error uploading file. Try again!");
-      return
-    }(0, d.Kr)(e.currentTarget.files, N, d.Eo)
+    if ((null == (t = e.currentTarget) ? void 0 : t.files) == null) return void(0, d.Eo)("Error uploading file. Try again!");
+    (0, d.Kr)(e.currentTarget.files, N, d.Eo)
   }, [N]);
   return (0, r.jsxs)("div", {
     className: g.root,
@@ -80,7 +78,7 @@ function b() {
         className: g.col,
         children: [(0, r.jsx)("div", {
           className: g.section,
-          children: (0, r.jsx)(l.X6q, {
+          children: (0, r.jsx)(o.X6q, {
             variant: "heading-lg/bold",
             children: "Profile Effects"
           })
@@ -97,7 +95,7 @@ function b() {
         className: a()(g.row, g.end, g.section),
         children: [(0, r.jsxs)("div", {
           className: g.uploadButton,
-          children: [(0, r.jsx)(l.Text, {
+          children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
             color: "always-white",
             children: "Import Shared Config"
@@ -106,7 +104,7 @@ function b() {
             onChange: x,
             multiple: !1
           })]
-        }), (0, r.jsx)(l.zxk, {
+        }), (0, r.jsx)(o.zxk, {
           onClick: () => {
             t(f())
           },

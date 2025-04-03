@@ -29,12 +29,12 @@ var i = n(442837),
   m = n(801461),
   D = n(474936),
   y = n(388032),
-  h = n(900339);
+  h = n(131715);
 let b = e => {
   let {
     dismissibleContent: t,
     noticeType: b
-  } = e, U = (0, i.e7)([f.ZP], () => f.ZP.getNotice()), v = (0, i.e7)([p.default], () => p.default.locale);
+  } = e, U = (0, i.e7)([f.ZP], () => f.ZP.getNotice()), M = (0, i.e7)([p.default], () => p.default.locale);
   return (0, r.jsx)(P.ZP, {
     contentTypes: [t],
     groupName: C.R.NOTICE_BAR,
@@ -238,7 +238,7 @@ let b = e => {
               onClick: () => i(C.L.UNKNOWN),
               noticeType: b
             }), y.NW.format(y.t.zT1hgo, {
-              date: (0, I.IE)(v)
+              date: (0, I.IE)(M)
             }), (0, r.jsx)(o.NoS, {
               onClick: () => (0, N.Z)(m.Kq.NOTICE),
               noticeType: b,

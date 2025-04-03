@@ -1,15 +1,15 @@
-/** Chunk was on 96977 **/
-n.d(t, {
-  Z: () => _
+/** Chunk was on 72891 **/
+n.d(i, {
+  Z: () => g
 });
-var i = n(200651);
+var t = n(200651);
 n(192379);
 var o = n(120356),
   r = n.n(o),
   a = n(297700),
   l = n(471885),
   c = n(981631),
-  s = n(153274);
+  s = n(306641);
 let d = {
     [c.Eu4.NONE]: s.iconBackgroundTierNone,
     [c.Eu4.TIER_1]: s.iconBackgroundTierOne,
@@ -23,20 +23,20 @@ let d = {
     [c.Eu4.TIER_3]: s.iconTierThree
   };
 
-function _(e) {
+function g(e) {
   let {
-    premiumTier: t,
+    premiumTier: i,
     iconBackgroundClassName: n,
     iconClassName: o,
     size: c
   } = e;
-  return (0, i.jsx)(a.Z, {
-    className: r()(n, d[t]),
+  return (0, t.jsx)(a.Z, {
+    className: r()(n, d[i]),
     size: c,
-    children: (0, i.jsx)(l.Z, {
-      tier: t,
+    children: (0, t.jsx)(l.Z, {
+      tier: i,
       color: "currentColor",
-      className: r()(o, s.boostedGuildIconGem, u[t])
+      className: r()(o, s.boostedGuildIconGem, u[i])
     })
   })
 }

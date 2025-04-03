@@ -1,9 +1,6 @@
-/** Chunk was on 20447 **/
+/** Chunk was on 68631 **/
 e.exports = {
-  container: "container_b9abc5",
-  containerInner: "containerInner_b9abc5",
-  content: "content_b9abc5",
-  backButton: "backButton_b9abc5",
-  backButtonContainer: "backButtonContainer_b9abc5",
-  headerArt: "headerArt_b9abc5"
+  thankYouCard: "thankYouCard_b851f5",
+  thankYouText: "thankYouText_b851f5",
+  userAvatar: "userAvatar_b851f5"
 }

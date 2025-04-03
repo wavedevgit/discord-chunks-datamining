@@ -23,7 +23,7 @@ var r = n(200651),
   j = n(354459),
   P = n(185923),
   O = n(420212),
-  b = n(378860);
+  b = n(105085);
 let C = P.Hz.CHAT,
   N = [g.ZP.getByName("thumbsup"), g.ZP.getByName("eyes"), g.ZP.getByName("laughing"), g.ZP.getByName("watermelon"), g.ZP.getByName("fork_and_knife"), g.ZP.getByName("yum")].filter(y.lm);
 
@@ -121,10 +121,7 @@ function w(e) {
       _(e), null == y || y(e)
     },
     D = (e, t) => {
-      if (null == e && t) {
-        u();
-        return
-      }
+      if (null == e && t) return void u();
       null != e && h(e), M(!t), t && x.kJ.setSearchPlaceholder(null)
     };
   return (0, r.jsxs)(c.VqE, {

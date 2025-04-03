@@ -25,7 +25,7 @@ var n, i = r(192379),
 function m(e, t, r) {
   let [n, l] = i.useState(!1), u = (0, b.jS)(e, "MemberVerificationScreens"), a = (0, o.e7)([d.Z], () => d.Z.get(e)), O = (0, o.e7)([s.Z], () => s.Z.pendingState);
   i.useEffect(() => {
-    !t && f.ZP.fetchVerificationForm(e, r).finally(() => l(!0))
+    t || f.ZP.fetchVerificationForm(e, r).finally(() => l(!0))
   }, [e, r, t]);
   let g = i.useMemo(() => {
     var e, r;
@@ -42,8 +42,8 @@ function m(e, t, r) {
       }]
     }
     return null == n ? null : {
-      version: null !== (e = null == a ? void 0 : a.version) && void 0 !== e ? e : "",
-      description: null !== (r = null == a ? void 0 : a.description) && void 0 !== r ? r : "",
+      version: null != (e = null == a ? void 0 : a.version) ? e : "",
+      description: null != (r = null == a ? void 0 : a.description) ? r : "",
       formFields: n,
       guild: null == a ? void 0 : a.guild
     }

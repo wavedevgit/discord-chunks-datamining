@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   W: () => c
 }), n(266796);
@@ -6,7 +6,7 @@ var r = n(200651),
   i = n(192379),
   l = n(481060),
   o = n(388032),
-  a = n(818578),
+  a = n(392819),
   s = n(560580);
 
 function c(e) {
@@ -43,7 +43,7 @@ function c(e) {
       children: null == u ? void 0 : u.map((e, t) => {
         var n;
         return (0, r.jsx)(l.zxk, {
-          size: null !== (n = e.size) && void 0 !== n ? n : l.zxk.Sizes.SMALL,
+          size: null != (n = e.size) ? n : l.zxk.Sizes.SMALL,
           color: e.color,
           "aria-label": e.text,
           onClick: e.onclick,

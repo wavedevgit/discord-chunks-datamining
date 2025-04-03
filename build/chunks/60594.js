@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(668781),
   g = n(872810),
   _ = n(410575),
-  v = n(579806),
-  j = n(636449),
+  j = n(579806),
+  v = n(636449),
   b = n(317381),
   S = n(89425),
   C = n(812206),
@@ -61,7 +61,7 @@ var r = n(200651),
   ei = n(921944),
   es = n(761274),
   eo = n(388032),
-  ea = n(740400),
+  ea = n(347226),
   ec = n(402163);
 
 function ed(e) {
@@ -125,37 +125,37 @@ function em(e) {
   } = e, {
     preset: eg,
     resolution: e_,
-    fps: ev,
-    soundshareEnabled: ej
+    fps: ej,
+    soundshareEnabled: ev
   } = (0, m.cj)([W.Z], () => W.Z.getState()), eb = l.useRef(Date.now()), eS = (0, m.e7)([L.Z, k.Z], () => k.Z.getChannel(L.Z.getVoiceChannelId())), eC = (0, m.e7)([O.ZP, G.Z], () => (0, z.isWindows)() ? (0, K.Z)(O.ZP, G.Z) : null), eN = (0, m.e7)([b.ZP], () => b.ZP.getCurrentEmbeddedActivity()), ey = (null == eN ? void 0 : eN.location.kind) === f.E.CONTEXTLESS, eZ = (0, N.q)(null == eN ? void 0 : eN.applicationId), [eI, ew] = l.useState(null);
   l.useEffect(() => {
-    (0, j.R)({
+    (0, v.R)({
       isContextless: ey
     }) && (async () => {
       var e;
-      ew(await (null === v.Z || void 0 === v.Z ? void 0 : null === (e = v.Z.window) || void 0 === e ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
+      ew(await (null === j.Z || void 0 === j.Z || null == (e = j.Z.window) ? void 0 : e.getMediaSourceId("DISCORD_ACTIVITY_POPOUT")))
     })()
   }, [ey]);
   let eO = (0, m.e7)([D.default], () => {
       let e = D.default.getCurrentUser();
       return a()(null != e, "GoLiveModal: user cannot be undefined"), e
     }),
-    eT = null !== (t = null == eS ? void 0 : eS.getGuildId()) && void 0 !== t ? t : em,
+    eT = null != (t = null == eS ? void 0 : eS.getGuildId()) ? t : em,
     eE = (0, m.e7)([A.Z], () => {
       var e;
-      return null != eT ? null === (e = A.Z.getGuild(eT)) || void 0 === e ? void 0 : e.premiumTier : null
+      return null != eT ? null == (e = A.Z.getGuild(eT)) ? void 0 : e.premiumTier : null
     }),
-    [eP, eR] = null !== (i = (0, Y.Z)(eg, eO, eE)) && void 0 !== i ? i : [er.LY.RESOLUTION_720, er.ws.FPS_30],
+    [eP, eR] = null != (i = (0, Y.Z)(eg, eO, eE)) ? i : [er.LY.RESOLUTION_720, er.ws.FPS_30],
     {
       lastPickerAction: eW
     } = (0, m.e7)([X.ZP], () => X.ZP.getPickerState()),
     ek = M.Z.getUseSystemScreensharePicker();
   (0, X.UB)();
-  let eA = ek && (0, z.isMac)() && u().satisfies(null === v.Z || void 0 === v.Z ? void 0 : v.Z.os.release, en.jR),
+  let eA = ek && (0, z.isMac)() && u().satisfies(null === j.Z || void 0 === j.Z ? void 0 : j.Z.os.release, en.jR),
     eM = [];
   ep === x.Dvm.ENTERED && ek && (0, z.isMac)() && eM.push(h.z.GO_LIVE_SYSTEM_PICKER_COACHMARK);
   let [eL, eD] = (0, w.US)(eM, void 0, !0);
-  eg !== er.tI.PRESET_CUSTOM && (e_ = eP, ev = eR), (0, V.Z)(eg, e_, ev, eO, eE) || (e_ = eP, ev = eR);
+  eg !== er.tI.PRESET_CUSTOM && (e_ = eP, ej = eR), (0, V.Z)(eg, e_, ej, eO, eE) || (e_ = eP, ej = eR);
   let eG = (0, Z.Dt)(),
     [eU, eB] = l.useState((B = et && !eA, H ? 0 : B ? 2 : 3)),
     [ez, eF] = l.useState(eA),
@@ -168,20 +168,20 @@ function em(e) {
     [eX, eK] = l.useState(null),
     [eq, eQ] = l.useState(eg),
     [e$, e1] = l.useState(e_),
-    [e0, e2] = l.useState(ev),
-    [e5, e3] = l.useState(ej),
-    [e4, e7] = l.useState(null !== (o = R.I0.getSetting()) && void 0 !== o && o),
-    [e8, e9] = l.useState(null != em ? em : null),
-    e6 = null !== (d = null == eS ? void 0 : eS.id) && void 0 !== d ? d : eH,
+    [e0, e2] = l.useState(ej),
+    [e5, e3] = l.useState(ev),
+    [e4, e7] = l.useState(null != (o = R.I0.getSetting()) && o),
+    [e8, e6] = l.useState(null != em ? em : null),
+    e9 = null != (d = null == eS ? void 0 : eS.id) ? d : eH,
     [te, tt] = l.useState(eA ? "" : void 0),
     tn = (0, I.Q3)("GoLiveModal");
   async function tr() {
     var e, t;
     a()(null != eC || null != eY || null != eN && null != eI, "got nothing to stream");
-    let n = null !== (e = null == eS ? void 0 : eS.id) && void 0 !== e ? e : eH;
+    let n = null != (e = null == eS ? void 0 : eS.id) ? e : eH;
     a()(null != n, "Received null target channel ID");
     let r = k.Z.getChannel(n),
-      l = null !== (t = null == r ? void 0 : r.getGuildId()) && void 0 !== t ? t : em;
+      l = null != (t = null == r ? void 0 : r.getGuildId()) ? t : em;
     if (null == eS && !await (0, S.Z)({
         channelId: n
       })) return;
@@ -199,7 +199,7 @@ function em(e) {
     else {
       let e = (0, ee.Z)(eC, eY, O.ZP.getRunningGames()),
         t = !(0, z.isWindows)() || null == e || (null == eY ? void 0 : eY.id.startsWith("camera:"));
-      c.pid = t ? void 0 : null == e ? void 0 : e.pid, null == c.pid && (null != eY ? (c.sourceId = eY.id, c.sourceName = eY.name) : null != eI && (c.sourceId = eI, c.sourceName = null == eZ ? void 0 : eZ.name))
+      c.pid = t || null == e ? void 0 : e.pid, null == c.pid && (null != eY ? (c.sourceId = eY.id, c.sourceName = eY.name) : null != eI && (c.sourceId = eI, c.sourceName = null == eZ ? void 0 : eZ.name))
     }(0, g.WH)(l, n, eu(ed({}, c), {
       audioSourceId: eX,
       sound: e5,
@@ -237,7 +237,7 @@ function em(e) {
       let l = (0, Y.Z)(e, eO, eE),
         [i, s] = null != l ? l : [t, n];
       e !== eq && (t = i, n = s);
-      let o = null !== (r = null == eS ? void 0 : eS.id) && void 0 !== r ? r : eH;
+      let o = null != (r = null == eS ? void 0 : eS.id) ? r : eH;
       a()(null != o, "Received null target channel ID");
       let c = k.Z.getChannel(o);
       if (!(0, V.Z)(e, t, n, eO, eE, c)) {
@@ -255,25 +255,25 @@ function em(e) {
     if (2 === eU) return eB(3);
     if (null != te) return eB(1);
     let t = (0, ee.Z)(eC, eY, O.ZP.getRunningGames());
-    F.ZP.supportsFeature(el.eRX.ELEVATED_HOOK) && (null == t ? void 0 : t.elevated) ? function() {
-      var e;
-      let t = null !== (e = null == eC ? void 0 : eC.pid) && void 0 !== e ? e : null;
+    if (F.ZP.supportsFeature(el.eRX.ELEVATED_HOOK) && (null == t ? void 0 : t.elevated)) {
+      var l;
+      let e = null != (l = null == eC ? void 0 : eC.pid) ? l : null;
       (0, x.ZDy)(async () => {
         let {
-          default: e
+          default: t
         } = await n.e("74300").then(n.bind(n, 566852));
-        return n => (0, r.jsx)(e, eu(ed({}, n), {
+        return n => (0, r.jsx)(t, eu(ed({}, n), {
           handleStream: tl,
-          pid: t
+          pid: e
         }))
       })
-    }() : tl()
+    } else tl()
   }
   let ta = l.useCallback(e => {
       eJ(e), null != e && (ek && (null == e ? void 0 : e.id.startsWith("camera:")) !== !0 ? tt(e.id.split(":")[1]) : tt(void 0), eB(3), eF(!0))
     }, [ek]),
     tc = l.useCallback(e => {
-      e9(e);
+      e6(e);
       var t = 3;
       eB(et ? 2 : 3)
     }, [et]),
@@ -329,7 +329,7 @@ function em(e) {
           return null
       }
     }(eU, H, et, ez),
-    tx = 1 !== eU && (3 !== eU || null == eY && null == eC && null == eI || null == e6),
+    tx = 1 !== eU && (3 !== eU || null == eY && null == eC && null == eI || null == e9),
     tp = l.useCallback(() => {
       null != th && eB(th)
     }, [th]),
@@ -363,7 +363,7 @@ function em(e) {
         children: (0, r.jsx)("div", {
           className: ea.modalSize,
           children: (0, r.jsx)(q.Z, {
-            selectedChannelId: null !== (P = null == eS ? void 0 : eS.id) && void 0 !== P ? P : eH,
+            selectedChannelId: null != (P = null == eS ? void 0 : eS.id) ? P : eH,
             selectedPreset: eq,
             selectedResolution: e$,
             selectedSource: eY,
@@ -401,7 +401,7 @@ function em(e) {
       })]
     }),
     t_ = 1 === eU || eA && 3 === eU ? eo.NW.string(eo.t.FiBjwc) : ek && (3 !== eU || null != te) ? eo.NW.string(eo.t.PDTjLC) : eo.NW.string(eo.t["UE/rPz"]),
-    tv = tn ? (0, r.jsxs)(x.mzw, {
+    tj = tn ? (0, r.jsxs)(x.mzw, {
       className: ea.modalFooter,
       direction: y.Z.Direction.HORIZONTAL,
       justify: null == th ? y.Z.Justify.END : y.Z.Justify.BETWEEN,
@@ -492,7 +492,7 @@ function em(e) {
         }),
         children: () => (0, r.jsxs)("form", {
           onSubmit: to,
-          children: [!tn && tf, tg, tv]
+          children: [!tn && tf, tg, tj]
         })
       })]
     })

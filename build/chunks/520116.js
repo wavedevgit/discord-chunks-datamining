@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => S
 }), n(653041);
 var r = n(200651),
   i = n(192379),
   a = n(913527),
-  o = n.n(a),
-  l = n(91192),
+  l = n.n(a),
+  o = n(91192),
   s = n(442837),
   c = n(481060),
   u = n(135938),
@@ -18,13 +18,13 @@ var r = n(200651),
   g = n(695346),
   _ = n(314897),
   b = n(496675),
-  v = n(594174),
-  x = n(55935),
-  y = n(655354),
-  E = n(809780),
+  x = n(594174),
+  y = n(55935),
+  E = n(655354),
+  v = n(809780),
   O = n(981631),
   N = n(388032),
-  j = n(545186);
+  j = n(563142);
 let C = {
   left: 4,
   right: -12
@@ -33,18 +33,18 @@ let C = {
 function I(e) {
   var t, n, a;
   let {
-    channel: o,
+    channel: l,
     message: s,
     compact: u,
     isGroupStart: d,
     treatSpam: p,
     gotoChannel: m
-  } = e, f = (0, l.JA)(null !== (t = s.id) && void 0 !== t ? t : ""), g = i.useCallback(e => {
+  } = e, f = (0, o.JA)(null != (t = s.id) ? t : ""), g = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
-      null === (t = document.querySelector('[data-recents-channel="'.concat(o.id, '"]'))) || void 0 === t || t.focus()
+      null == (t = document.querySelector('[data-recents-channel="'.concat(l.id, '"]'))) || t.focus()
     }
-  }, [o.id]);
+  }, [l.id]);
   return (0, r.jsx)(c.tEY, {
     offset: C,
     children: (0, r.jsxs)("div", (n = function(e) {
@@ -68,13 +68,13 @@ function I(e) {
       className: j.messageContainer,
       onKeyDown: g
     }, f), a = a = {
-      children: [(0, r.jsx)(y.Z, {
+      children: [(0, r.jsx)(E.Z, {
         className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
         id: s.id,
         message: s,
-        channel: o,
+        channel: l,
         className: j.message,
         compact: u,
         animateAvatar: !1,
@@ -100,41 +100,41 @@ function S(e) {
   let {
     channel: i,
     channelRecord: a,
-    gotoChannel: l
+    gotoChannel: o
   } = e, {
     enabled: h
   } = u.Z.useExperiment({
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), y = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), A = null !== (n = null === (t = v.default.getUser(_.default.getId())) || void 0 === t ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && void 0 !== n && n, w = [];
+  }), E = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), S = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, E.hC);
+      n = i.messages.slice(0, v.hC);
     n.forEach(n => {
       if (!(0, d.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
-          let t = (0, x.vc)(n.timestamp, "LL");
+          let t = (0, y.vc)(n.timestamp, "LL");
           w.push((0, r.jsx)(f.Z, {
             className: j.divider,
             children: t
-          }, t)), e = o()(n.timestamp)
+          }, t)), e = l()(n.timestamp)
         }
         let i = null == t || (0, p.Z)(a, t, n);
         t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(I, {
           channel: a,
           message: n,
-          compact: y,
+          compact: E,
           isGroupStart: i,
           treatSpam: !A && h && (0, m.DQ)(n) && S,
-          gotoChannel: l
+          gotoChannel: o
         }, n.id))
       }
-    }), i.messages.length >= E.hC && w.push((0, r.jsxs)(c.zxk, {
+    }), i.messages.length >= v.hC && w.push((0, r.jsxs)(c.zxk, {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
-      onClick: e => l(e, n[n.length - 1].id),
+      onClick: e => o(e, n[n.length - 1].id),
       children: [N.NW.string(N.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }

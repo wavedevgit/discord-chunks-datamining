@@ -123,7 +123,7 @@ function V(e) {
     }), !0;
     {
       let t = b.default.getSessionId();
-      return n === b.default.getId() && o !== t && null != S.Z.getChannelId() ? e : U(n, r) || e
+      return n === b.default.getId() && o !== t && null != S.ZP.getChannelId() ? e : U(n, r) || e
     }
   }, !1)
 }

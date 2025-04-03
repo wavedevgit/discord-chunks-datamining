@@ -1,11 +1,11 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   Z: () => x
 }), n(47120), n(230036), n(978209);
 var r = n(200651),
   i = n(192379),
-  o = n(392711),
-  l = n.n(o),
+  l = n(392711),
+  o = n.n(l),
   a = n(442837),
   s = n(481060),
   c = n(99690),
@@ -17,21 +17,21 @@ var r = n(200651),
   g = n(306680),
   m = n(594174),
   b = n(768581),
-  v = n(709054),
-  y = n(981631),
-  _ = n(124368),
+  y = n(709054),
+  _ = n(981631),
+  v = n(124368),
   O = n(388032),
-  j = n(553021);
+  j = n(571658);
 
 function x(e) {
   let {
     channel: t
-  } = e, o = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
+  } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return l()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(l().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(_.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return v.default.compare(n, r)
+      return y.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
@@ -43,7 +43,7 @@ function x(e) {
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
-    }), o.slice(0, t.isForumLikeChannel() ? o.length : c).map(e => (0, r.jsx)(C, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
       className: j.more,
@@ -90,7 +90,7 @@ function C(e) {
   return (0, r.jsxs)(s.P3F, {
     className: j.row,
     onClick: e => {
-      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, _.on.POPOUT)
+      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, v.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
       className: j.avatar,

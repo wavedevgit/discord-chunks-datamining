@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(990547),
   r = n(442837),
   l = n(213609),
-  o = n(541099),
-  a = n(312871);
+  a = n(541099),
+  o = n(312871);
 
 function c(e) {
   let {
@@ -14,10 +14,10 @@ function c(e) {
     applicationFlags: n,
     sectionName: c,
     sectionPosition: s,
-    sectionOverallPosition: d
-  } = e, u = (0, r.e7)([o.Z], () => o.Z.entrypoint());
+    sectionOverallPosition: u
+  } = e, d = (0, r.e7)([a.Z], () => a.Z.entrypoint());
   return {
-    trackItemImpressionRef: (0, a.Z)({
+    trackItemImpressionRef: (0, o.Z)({
       onVisible: () => {
         (0, l.h)({
           type: i.ImpressionTypes.VIEW,
@@ -27,8 +27,8 @@ function c(e) {
             application_flags: n,
             section_name: c,
             section_position: s,
-            section_overall_position: d,
-            source: u
+            section_overall_position: u,
+            source: d
           }
         })
       },

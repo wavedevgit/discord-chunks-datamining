@@ -1,21 +1,21 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Q: () => l,
-  Z: () => o
+  Q: () => o,
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(275344),
   a = n(938353);
 
-function o(e) {
+function l(e) {
   let {
     channelMessageProps: {
       message: t,
       channel: n,
-      compact: o = !1
+      compact: l = !1
     },
-    hasSpoilerEmbeds: l,
+    hasSpoilerEmbeds: o,
     handleContextMenu: s,
     isInteracting: c,
     isAutomodBlockedMessage: u,
@@ -34,8 +34,8 @@ function o(e) {
       isInteracting: c,
       message: t,
       channel: n,
-      compact: o,
-      hasSpoilerEmbeds: l,
+      compact: l,
+      hasSpoilerEmbeds: o,
       isMessageSnapshot: d,
       onMediaItemContextMenu: s,
       renderThreadAccessory: p,
@@ -47,12 +47,12 @@ function o(e) {
   })
 }
 
-function l(e, t) {
+function o(e, t) {
   let {
     message: n,
     channel: i,
-    compact: o = !1,
-    renderThreadAccessory: l,
+    compact: l = !1,
+    renderThreadAccessory: o,
     disableReactionCreates: s,
     disableReactionUpdates: c,
     isSearchResult: u
@@ -60,9 +60,9 @@ function l(e, t) {
   return (0, r.jsx)(a.$p, {
     message: n,
     channel: i,
-    compact: o,
+    compact: l,
     hasSpoilerEmbeds: t,
-    renderThreadAccessory: l,
+    renderThreadAccessory: o,
     disableReactionCreates: s,
     disableReactionUpdates: c,
     isSearchResult: u

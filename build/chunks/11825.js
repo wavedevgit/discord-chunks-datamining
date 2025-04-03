@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   z: () => c
 });
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(833592),
-  l = n(388032);
+  l = n(833592),
+  o = n(388032);
 let s = e => {
     let {
       item: t,
@@ -16,13 +16,13 @@ let s = e => {
       navId: "notification-actions",
       onClose: n,
       onSelect: n,
-      "aria-label": l.NW.string(l.t.ljs3OT),
+      "aria-label": o.NW.string(o.t.ljs3OT),
       children: (0, r.jsx)(a.sNh, {
         id: "delete",
-        label: l.NW.string(l.t.oyYWHB),
+        label: o.NW.string(o.t.oyYWHB),
         icon: a.XHJ,
         action: async () => {
-          await (0, o.g3)(t)
+          await (0, l.g3)(t)
         }
       })
     })
@@ -74,7 +74,7 @@ let s = e => {
         } = e;
         return (0, r.jsx)(a.M0o, {
           ref: n,
-          tooltip: l.NW.string(l.t.UKOtz8),
+          tooltip: o.NW.string(o.t.UKOtz8),
           color: a.YX$.TERTIARY,
           icon: (0, r.jsx)(a.xhG, {
             size: "xs",

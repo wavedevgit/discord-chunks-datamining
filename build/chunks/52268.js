@@ -17,10 +17,10 @@ var n = r(200651),
   g = r(731896),
   h = r(528439),
   b = r(388032),
-  j = r(819189),
+  j = r(233966),
   x = r(223223);
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -39,7 +39,7 @@ function v(e) {
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function y(e, t) {
   }), e
 }
 
-function O(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var r, n, i = function(e, t) {
     if (null == e) return {};
@@ -67,14 +67,14 @@ function O(e, t) {
   }
   return i
 }
-let P = () => 80,
+let v = () => 80,
   _ = e => {
     var {
       children: t,
       className: r,
       isSelected: i = !1
-    } = e, o = O(e, ["children", "className", "isSelected"]);
-    return (0, n.jsx)(u.P3F, y(v({
+    } = e, o = P(e, ["children", "className", "isSelected"]);
+    return (0, n.jsx)(u.P3F, O(y({
       className: l()(j.effectGridItem, r, {
         [j.selected]: i
       })
@@ -89,9 +89,9 @@ let P = () => 80,
         profileEffect: o,
         innerRef: l,
         section: s,
-        isSelected: P
+        isSelected: v
       } = e,
-      N = O(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
+      N = P(e, ["user", "profileEffect", "innerRef", "section", "isSelected"]);
     let E = (0, g.V)(o.id),
       C = (0, a.e7)([d.Z], () => {
         let e = d.Z.getProduct(o.skuId);
@@ -103,14 +103,14 @@ let P = () => 80,
         accessibilityLabel: w,
         thumbnailPreviewSrc: Z,
         title: k
-      } = null !== (t = null == E ? void 0 : E.config) && void 0 !== t ? t : {},
+      } = null != (t = null == E ? void 0 : E.config) ? t : {},
       D = m.ZP.canUseCollectibles(r),
       A = s === h.$0.PREMIUM_PURCHASE && !D,
       T = (0, p.M)();
-    return (0, n.jsxs)(_, y(v({
-      className: !A || P || T ? void 0 : j.decorationGridItemChurned,
+    return (0, n.jsxs)(_, O(y({
+      className: !A || v || T ? void 0 : j.decorationGridItemChurned,
       innerRef: null != l ? l : S,
-      isSelected: P
+      isSelected: v
     }, N), {
       children: [(0, n.jsx)("img", {
         src: x,
@@ -175,7 +175,7 @@ let P = () => 80,
             items: x
           } = a[e];
           return (0, s.EQ)(x[f]).with(h.Tm, () => (0, n.jsxs)(_, {
-            style: v({}, p),
+            style: y({}, p),
             isSelected: !d,
             onSelect: () => l(null),
             children: [(0, n.jsx)(u.t6m, {
@@ -205,7 +205,7 @@ let P = () => 80,
             let r = i === e.id;
             return (0, n.jsx)(N, {
               user: t,
-              style: v({}, p),
+              style: y({}, p),
               section: g,
               profileEffect: e,
               innerRef: r ? o : void 0,
@@ -219,7 +219,7 @@ let P = () => 80,
             header: r
           } = a[e];
           return (0, n.jsx)("div", {
-            style: y(v({}, t), {
+            style: O(y({}, t), {
               height: "".concat(16, "px"),
               position: "absolute"
             }),
@@ -231,9 +231,9 @@ let P = () => 80,
         getSectionHeight: () => 16,
         getItemKey: (e, t) => {
           var r, n;
-          return null !== (n = null === (r = a[e].items[t]) || void 0 === r ? void 0 : r.id) && void 0 !== n ? n : null
+          return null != (n = null == (r = a[e].items[t]) ? void 0 : r.id) ? n : null
         },
-        getItemHeight: P,
+        getItemHeight: v,
         removeEdgeItemGutters: !0
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   Z: () => a
 }), r(47120);
@@ -8,8 +8,8 @@ function a() {
   var e, t;
   arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
   let [r, a] = n.useState({
-    width: null !== (e = window.innerWidth) && void 0 !== e ? e : 1080,
-    height: null !== (t = window.innerHeight) && void 0 !== t ? t : 1080
+    width: null != (e = window.innerWidth) ? e : 1080,
+    height: null != (t = window.innerHeight) ? t : 1080
   });
   return n.useLayoutEffect(() => {
     function e() {

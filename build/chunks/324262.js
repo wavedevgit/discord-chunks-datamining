@@ -5,15 +5,15 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(392711),
-  o = n.n(l),
-  a = n(481060),
+  a = n.n(l),
+  o = n(481060),
   s = n(367907),
   c = n(626135),
   u = n(986332),
   d = n(428695),
   p = n(981631),
   h = n(388032),
-  f = n(959134);
+  f = n(431884);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -33,13 +33,13 @@ function g(e) {
   }
   return e
 }
-let m = o().debounce(s.ZP.trackWithMetadata, 500),
+let m = a().debounce(s.ZP.trackWithMetadata, 500),
   b = e => {
     let {
       guild: t,
       title: n,
       message: l,
-      image: o,
+      image: a,
       type: u,
       imageMarginX: d,
       imageMarginTop: g,
@@ -48,7 +48,7 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
       onDismissed: E,
       onClick: O,
       cta: N,
-      ctaColor: v
+      ctaColor: y
     } = e;
     i.useEffect(() => {
       m(p.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -56,10 +56,10 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
         guild_id: t.id
       })
     }, [t.id, u]);
-    let y = null;
-    "function" == typeof N ? y = N() : null != N && (y = (0, r.jsx)(a.zxk, {
+    let I = null;
+    "function" == typeof N ? I = N() : null != N && (I = (0, r.jsx)(o.zxk, {
       className: f.btn,
-      size: a.zxk.Sizes.SMALL,
+      size: o.zxk.Sizes.SMALL,
       onClick: () => {
         null != u && c.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
           source: b,
@@ -68,13 +68,13 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
         }), null == O || O()
       },
       fullWidth: !0,
-      color: v,
+      color: y,
       children: N
     }));
-    let I = null != d ? "".concat(d, "px") : "16px";
+    let v = null != d ? "".concat(d, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: f.channelNotice,
-      children: [!0 === _ ? null : (0, r.jsx)(a.P3F, {
+      children: [!0 === _ ? null : (0, r.jsx)(o.P3F, {
         onClick: () => {
           s.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: u
@@ -82,7 +82,7 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
         },
         className: f.close,
         "aria-label": h.NW.string(h.t.WAI6xs),
-        children: (0, r.jsx)(a.Dio, {
+        children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
           className: f.closeIcon
@@ -91,24 +91,24 @@ let m = o().debounce(s.ZP.trackWithMetadata, 500),
         className: f.imageContainer,
         style: {
           marginTop: "".concat(g, "px"),
-          marginLeft: I,
-          marginRight: I
+          marginLeft: v,
+          marginRight: v
         },
         children: (0, r.jsx)("img", {
           className: f.image,
-          src: o,
+          src: a,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
         className: f.message,
-        children: [null != n ? (0, r.jsx)(a.X6q, {
+        children: [null != n ? (0, r.jsx)(o.X6q, {
           variant: "heading-md/semibold",
           className: f.title,
           children: n
-        }) : null, (0, r.jsx)(a.Text, {
+        }) : null, (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           children: l
-        }), y]
+        }), I]
       })]
     })
   },

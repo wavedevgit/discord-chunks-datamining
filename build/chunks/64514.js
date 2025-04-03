@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(846519),
   i = n(570140),
   l = n(317770),
-  o = n(626135),
-  a = n(70956),
+  a = n(626135),
+  o = n(70956),
   s = n(960048),
   c = n(930446),
   u = n(92764),
@@ -30,9 +30,9 @@ class h extends l.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, p(this, "focusedOrForegrounded", !0), p(this, "heartbeatInterval", new r.Xp), p(this, "schedulerStarted", !1), p(this, "maybeStartHeartbeat", () => {
-      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * a.Z.Millis.MINUTE, this.trackHeartbeat)
+      this.heartbeatInterval.isStarted() || this.heartbeatInterval.start(5 * o.Z.Millis.MINUTE, this.trackHeartbeat)
     }), p(this, "startAnalyticHeartbeat", () => {
-      !this.schedulerStarted && (this.schedulerStarted = !0, s.Z.addBreadcrumb({
+      this.schedulerStarted || (this.schedulerStarted = !0, s.Z.addBreadcrumb({
         category: "ad",
         message: "Starting ad session heartbeat"
       }), this.maybeStartHeartbeat())
@@ -46,7 +46,7 @@ class h extends l.Z {
         return
       }
       let n = (0, c.Gy)();
-      o.default.track(d.rMx.CLIENT_AD_HEARTBEAT, {
+      a.default.track(d.rMx.CLIENT_AD_HEARTBEAT, {
         client_ad_session_id: n.uuid,
         client_heartbeat_initialization_timestamp: n.initialized,
         client_heartbeat_version: 1
@@ -56,7 +56,7 @@ class h extends l.Z {
       if (!t.schedulerStarted) return;
       t.schedulerStarted = !1;
       let n = (0, c.S9)();
-      o.default.track(d.rMx.CLIENT_AD_HEARTBEAT_TERMINATION, {
+      a.default.track(d.rMx.CLIENT_AD_HEARTBEAT_TERMINATION, {
         client_ad_session_id: null == n ? void 0 : n.uuid,
         client_heartbeat_initialization_timestamp: null == n ? void 0 : n.initialized,
         client_heartbeat_version: 1,

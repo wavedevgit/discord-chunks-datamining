@@ -1,15 +1,15 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => d
 });
 var r = n(200651),
   i = n(120356),
   a = n.n(i),
-  o = n(524437),
-  l = n(453473),
+  l = n(524437),
+  o = n(453473),
   s = n(216789),
   c = n(791914),
-  u = n(694247);
+  u = n(929968);
 
 function d(e) {
   let {
@@ -24,11 +24,11 @@ function d(e) {
       [u.widerInbox]: d
     }),
     children: [(0, r.jsx)(c.Z, {
-      tab: o.X.BOOKMARKS,
+      tab: l.X.BOOKMARKS,
       setTab: t,
       closePopout: n,
       badgeState: i
-    }), (0, r.jsx)(l.K, {
+    }), (0, r.jsx)(o.K, {
       closePopout: n
     })]
   })

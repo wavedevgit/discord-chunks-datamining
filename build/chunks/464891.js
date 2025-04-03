@@ -1,4 +1,4 @@
-/** Chunk was on 6536 **/
+/** Chunk was on 35397 **/
 "use strict";
 n.d(t, {
   CF: () => Q,
@@ -47,7 +47,7 @@ var r = n(200651),
   U = n(47930),
   z = n(981631),
   H = n(388032),
-  F = n(373232),
+  F = n(848697),
   V = n(121282);
 
 function K(e) {
@@ -308,7 +308,7 @@ let et = o.memo(function(e) {
       author: n
     } = e, o = (0, c.e7)([x.Z], () => {
       var e;
-      return null === (e = x.Z.getUserProfile(n.id)) || void 0 === e ? void 0 : e.premiumSince
+      return null == (e = x.Z.getUserProfile(n.id)) ? void 0 : e.premiumSince
     });
     return (0, r.jsx)(l.ua7, {
       tooltipClassName: F.nitroAuthorBadgeTootip,
@@ -368,7 +368,7 @@ let et = o.memo(function(e) {
         analyticsLocations: E
       } = (0, d.ZP)(u.Z.AVATAR), Z = (0, c.e7)([I.ZP], () => {
         var e;
-        return null !== (e = a.displayCompactAvatars) && void 0 !== e ? e : I.ZP.displayCompactAvatars
+        return null != (e = a.displayCompactAvatars) ? e : I.ZP.displayCompactAvatars
       }), A = null != f.messageReference && null != f.webhookId && f.hasFlag(z.iLy.IS_CROSSPOST), D = f.author, {
         id: B
       } = D, L = b ? 32 : 80, {
@@ -383,13 +383,13 @@ let et = o.memo(function(e) {
         showPending: !0
       }), H = f.isInteractionPlaceholder(), F = o.useMemo(() => {
         var e, t;
-        return H && null == D.avatar && (null === (e = f.application) || void 0 === e ? void 0 : e.icon) != null && null !== (t = M.ZP.getApplicationIconURL({
+        return H && null == D.avatar && (null == (e = f.application) ? void 0 : e.icon) != null && null != (t = M.ZP.getApplicationIconURL({
           id: f.application.id,
           icon: f.application.icon,
           size: L,
           fallbackAvatar: !1
-        })) && void 0 !== t ? t : G
-      }, [H, null === (t = f.application) || void 0 === t ? void 0 : t.icon, null === (n = f.application) || void 0 === n ? void 0 : n.id, D.avatar, L, G]), V = (0, C.nT)({
+        })) ? t : G
+      }, [H, null == (t = f.application) ? void 0 : t.icon, null == (n = f.application) ? void 0 : n.id, D.avatar, L, G]), V = (0, C.nT)({
         location: "MessageHeader"
       }), {
         showPopoutFromHover: X,
@@ -471,7 +471,7 @@ let et = o.memo(function(e) {
       showCommunicationDisabledStyles: A
     }), B = (0, c.e7)([I.ZP], () => {
       var t;
-      return null !== (t = e.displayCompactAvatars) && void 0 !== t ? t : I.ZP.displayCompactAvatars
+      return null != (t = e.displayCompactAvatars) ? t : I.ZP.displayCompactAvatars
     }), G = o.useMemo(() => (0, U.b)({
       message: t,
       channel: x,

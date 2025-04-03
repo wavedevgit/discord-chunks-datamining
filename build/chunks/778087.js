@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => a
 }), n(26686), n(566702);
@@ -9,7 +9,7 @@ function a(e, t) {
   let n = r.useRef(null),
     a = r.useCallback((e, t) => {
       var r, i, a;
-      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null !== (a = null === (i = n.current) || void 0 === i ? void 0 : null === (r = i.textContent) || void 0 === r ? void 0 : r.trim()) && void 0 !== a ? a : "")
+      e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (a = null == (i = n.current) || null == (r = i.textContent) ? void 0 : r.trim()) ? a : "")
     }, []);
   return i.YZ({
     channel: e,

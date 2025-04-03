@@ -25,7 +25,7 @@ var a = n(200651),
   C = n(847004),
   I = n(981631),
   b = n(388032),
-  y = n(401776);
+  y = n(283331);
 
 function O(e) {
   let {
@@ -89,7 +89,7 @@ function E(e) {
     showPriceReselection: o,
     setShowPriceReselection: d,
     handleCreateTierFromTemplate: m
-  } = e, x = (0, T.g4)(l, c, null != i ? null === (n = i[s]) || void 0 === n ? void 0 : null === (t = n.listings[0]) || void 0 === t ? void 0 : t.price_tier : void 0), u = null != x && x.length > 0, f = r.useCallback(e => {
+  } = e, x = (0, T.g4)(l, c, null != i ? null == (n = i[s]) || null == (t = n.listings[0]) ? void 0 : t.price_tier : void 0), u = null != x && x.length > 0, f = r.useCallback(e => {
     u ? d(!0) : m(e)
   }, [m, u, d]);
   return null == i || 0 === i.length ? null : o && u ? (0, a.jsx)(C.Z, {

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => E
 }), n(266796);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n(780384),
+  l = n(392711),
+  o = n(780384),
   c = n(481060),
   d = n(410030),
   u = n(70097),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(981631),
   f = n(869783),
   b = n(388032),
-  N = n(5039);
+  N = n(731568);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -49,8 +49,8 @@ let _ = e => {
       index: j,
       isCompact: O,
       isReducedMotion: C,
-      onClick: v
-    } = e, S = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
+      onClick: S
+    } = e, v = (0, g.rO)(), T = i.useRef(null), I = i.useRef(0), y = function(e) {
       let t;
       switch (e) {
         case p.dm.EMOJIS:
@@ -75,9 +75,9 @@ let _ = e => {
           t = N.yourStyleBackground
       }
       return t
-    }(t), A = (0, d.ZP)(), P = (0, l.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, o.debounce)(() => {
+    }(t), A = (0, d.ZP)(), P = (0, o.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
       m.default.track(h.rMx.PREMIUM_WHATS_NEW_BOX_CTA_CLICKED, {
-        box_type: (0, o.snakeCase)(t)
+        box_type: (0, l.snakeCase)(t)
       })
     }, 800), Z = () => {
       null == T.current || C || (T.current.currentTime = I.current, T.current.play())
@@ -101,12 +101,12 @@ let _ = e => {
         color: "text-muted",
         className: N.whatsNewBoxDescription,
         children: s
-      }), null != b && null != v && (0, r.jsx)(c.zxk, {
+      }), null != b && null != S && (0, r.jsx)(c.zxk, {
         look: c.iLD.OUTLINED,
         color: R,
         className: a()(N.whatsNewBoxButton, P ? N.whatsNewBoxButtonWhite : N.whatsNewBoxButtonBrand),
         onClick: () => {
-          D(), v()
+          D(), S()
         },
         children: b
       })]
@@ -133,7 +133,7 @@ let _ = e => {
           ref: T,
           children: (0, r.jsx)("source", {
             src: _,
-            type: S ? f.m.MP4 : f.m.WEBM
+            type: v ? f.m.MP4 : f.m.WEBM
           })
         }, _)
       })
@@ -164,7 +164,7 @@ let _ = e => {
       shouldLoadVideo: n,
       isBestOfNitro: i = !1,
       isReducedMotion: s
-    } = e, o = Object.values((0, p.ZP)(i)), l = i ? Object.values((0, p.__)()) : null;
+    } = e, l = Object.values((0, p.ZP)(i)), o = i ? Object.values((0, p.__)()) : null;
     return (0, r.jsxs)("div", {
       className: a()(N.boxBackdrop, t),
       children: [(0, r.jsx)(c.X6q, {
@@ -172,13 +172,13 @@ let _ = e => {
         variant: "display-md",
         color: "header-primary",
         children: i ? b.NW.string(b.t.EnzW2N) : b.NW.string(b.t.LRmNAg)
-      }), o.map((e, t) => (0, r.jsx)(_, x({
+      }), l.map((e, t) => (0, r.jsx)(_, x({
         shouldLoadVideo: n,
         isReducedMotion: s,
         index: t
-      }, e), e.name)), null != l && (0, r.jsxs)("div", {
+      }, e), e.name)), null != o && (0, r.jsxs)("div", {
         className: N.compactBoxOuterContainer,
-        children: [l.map((e, t) => (0, r.jsx)(_, x({
+        children: [o.map((e, t) => (0, r.jsx)(_, x({
           shouldLoadVideo: n,
           isReducedMotion: s,
           index: t

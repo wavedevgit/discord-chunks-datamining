@@ -7,8 +7,8 @@ n.d(e, {
 });
 var r = n(544891),
   i = n(570140),
-  o = n(626135),
-  a = n(292352),
+  a = n(626135),
+  o = n(292352),
   s = n(981631);
 
 function l(t) {
@@ -81,12 +81,12 @@ async function u() {
 }
 let c = {
   async initialPageLoad() {
-    var t, e, n, o;
+    var t, e, n, a;
     i.Z.dispatch({
       type: "FAMILY_CENTER_FETCH_START"
     });
     let {
-      body: a
+      body: o
     } = await r.tn.get({
       url: s.ANM.FAMILY_CENTER_TEEN_ACTIVITY_ME,
       rejectWithError: !1
@@ -94,13 +94,13 @@ let c = {
       teen_audit_log: l,
       linked_users: d,
       users: E
-    } = a, u = {
+    } = o, u = {
       teenId: null == l ? void 0 : l.teen_user_id,
       rangeStartId: null == l ? void 0 : l.range_start_id,
-      totals: null !== (t = null == l ? void 0 : l.totals) && void 0 !== t ? t : {},
-      actions: null !== (e = null == l ? void 0 : l.actions) && void 0 !== e ? e : [],
-      users: null !== (n = null == l ? void 0 : l.users) && void 0 !== n ? n : [],
-      guilds: null !== (o = null == l ? void 0 : l.guilds) && void 0 !== o ? o : []
+      totals: null != (t = null == l ? void 0 : l.totals) ? t : {},
+      actions: null != (e = null == l ? void 0 : l.actions) ? e : [],
+      users: null != (n = null == l ? void 0 : l.users) ? n : [],
+      guilds: null != (a = null == l ? void 0 : l.guilds) ? a : []
     };
     return i.Z.dispatch({
       type: "FAMILY_CENTER_INITIAL_LOAD",
@@ -133,13 +133,13 @@ let c = {
         code: e
       },
       rejectWithError: !1
-    }), o = {
+    }), a = {
       linkedUsers: n.linked_users,
       users: n.users
     };
     return i.Z.dispatch(l({
       type: "FAMILY_CENTER_REQUEST_LINK_SUCCESS"
-    }, o)), o
+    }, a)), a
   },
   async fetchTeenActivity(t) {
     i.Z.dispatch({
@@ -152,19 +152,19 @@ let c = {
         url: e,
         rejectWithError: !1
       }),
-      o = n.teen_audit_log,
-      a = {
-        teenId: o.teen_user_id,
-        rangeStartId: o.range_start_id,
-        totals: o.totals,
-        actions: o.actions,
-        users: o.users,
-        guilds: o.guilds
+      a = n.teen_audit_log,
+      o = {
+        teenId: a.teen_user_id,
+        rangeStartId: a.range_start_id,
+        totals: a.totals,
+        actions: a.actions,
+        users: a.users,
+        guilds: a.guilds
       };
     return i.Z.dispatch({
       type: "FAMILY_CENTER_TEEN_ACTIVITY_FETCH_SUCCESS",
-      familyCenterTeenActivity: a
-    }), a
+      familyCenterTeenActivity: o
+    }), o
   },
   async fetchMoreTeenActivity(t, e, n, l) {
     let {
@@ -181,8 +181,8 @@ let c = {
       users: E.users,
       guilds: E.guilds
     };
-    return o.default.track(s.rMx.FAMILY_CENTER_ACTION, {
-      action: a.YC.LoadMore,
+    return a.default.track(s.rMx.FAMILY_CENTER_ACTION, {
+      action: o.YC.LoadMore,
       selected_teen_id: t,
       action_display_type: e
     }), i.Z.dispatch({

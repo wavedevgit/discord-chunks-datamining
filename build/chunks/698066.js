@@ -1,21 +1,21 @@
 /** Chunk was on 23657 **/
 n.d(t, {
-  Z: () => l
+  Z: () => i
 });
 var r = n(626135),
-  i = n(981631);
+  l = n(981631);
 
-function l(e) {
+function i(e) {
   let {
     problem: t,
     stream: n,
-    feedback: l,
+    feedback: i,
     streamApplication: a,
     analyticsData: o,
     location: s,
     rating: c = null
   } = e;
-  r.default.track(i.rMx.STREAM_REPORT_PROBLEM, function(e) {
+  r.default.track(l.rMx.STREAM_REPORT_PROBLEM, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -41,6 +41,6 @@ function l(e) {
     application_name: null != a ? a.name : null,
     location: s,
     rating: c,
-    feedback: l
+    feedback: i
   }, o))
 }

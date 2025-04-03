@@ -4,8 +4,8 @@ n.d(t, {
 }), n(411104), n(47120);
 var r, i = n(200651),
   l = n(192379),
-  o = n(120356),
-  a = n.n(o),
+  a = n(120356),
+  o = n.n(a),
   s = n(512969),
   c = n(442837),
   u = n(846519),
@@ -20,14 +20,14 @@ var r, i = n(200651),
   E = n(925329),
   O = n(707409),
   N = n(490983),
-  v = n(799777),
-  y = n(626135),
-  I = n(780570),
+  y = n(799777),
+  I = n(626135),
+  v = n(780570),
   C = n(624138),
   S = n(645818),
   T = n(981631),
   P = n(388032),
-  j = n(660364);
+  j = n(833972);
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,12 +76,12 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       icon: n,
       item: r,
       tooltip: l
-    } = e, o = r.libraryApplication.hasFlag(t);
+    } = e, a = r.libraryApplication.hasFlag(t);
     return (0, i.jsx)(p.ua7, {
       text: l,
       children: e => (0, i.jsx)(n, Z({
-        className: a()(j.settingIcon, {
-          [j.hidden]: !o
+        className: o()(j.settingIcon, {
+          [j.hidden]: !a
         })
       }, e))
     })
@@ -139,7 +139,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
         location: O.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
       }) : P.NW.string(P.t.EoWLrq), (0, i.jsx)(b.Z, {
         align: b.Z.Align.CENTER,
-        className: a()({
+        className: o()({
           [j.lastPlayedCellNew]: e.isNew
         }),
         children: t
@@ -150,7 +150,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     renderHeader: () => null,
     cellClassName: j.actionsCell,
     render(e, t, n) {
-      var r, o;
+      var r, a;
       if (null == t) throw Error("No cell props defined.");
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
@@ -167,13 +167,13 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
             icon: p.o8v,
             tooltip: P.NW.string(P.t.Az9eqq)
           }), (0, i.jsx)(S.Z, {
-            className: a()(j.settingIcon, {
+            className: o()(j.settingIcon, {
               [j.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
-        }), (0, I.Je)(e.libraryApplication) ? (0, i.jsx)(m.Z, {
-          analyticsListSort: (r = t.sortKey, o = t.sortDirection, "".concat(R[r], " ").concat(o === T.sHY.ASCENDING ? "ASC" : "DESC")),
+        }), (0, v.Je)(e.libraryApplication) ? (0, i.jsx)(m.Z, {
+          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(R[r], " ").concat(a === T.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
           source: T.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
@@ -195,7 +195,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       activeRowKey: n,
       highlightedApplicationKey: r,
       onMouseEnter: l,
-      onMouseLeave: o,
+      onMouseLeave: a,
       onContextMenu: s,
       setRef: c
     } = e, u = function(e, t) {
@@ -216,7 +216,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
     let d = t.key === n,
       p = t.key === r;
     return (0, i.jsx)("div", {
-      className: a()({
+      className: o()({
         [j.rowWrapperActive]: d && !p,
         [j.rowWrapperGlow]: p,
         [j.rowWrapper]: !d && !p,
@@ -224,7 +224,7 @@ let L = (0, C.Mg)(d.Z.GAME_LIST_ROW_MIN_HEIGHT),
       }),
       ref: e => c(e, t.key),
       onMouseEnter: () => l(t),
-      onMouseLeave: o,
+      onMouseLeave: a,
       onContextMenu: e => s(e, t),
       children: (0, i.jsx)("div", Z({}, u))
     })
@@ -301,7 +301,7 @@ class U extends(r = l.PureComponent) {
       }
       e.num_applications_total++
     }
-    y.default.track(T.rMx.LIBRARY_VIEWED, x(Z({}, e), {
+    I.default.track(T.rMx.LIBRARY_VIEWED, x(Z({}, e), {
       load_id: t.loadId
     }))
   }
@@ -309,11 +309,11 @@ class U extends(r = l.PureComponent) {
     g.fS(e, t)
   }
   renderImportHelp() {
-    let e;
-    let {
-      applicationViewItems: t,
-      filterQuery: n
-    } = this.props, r = t.length > 0;
+    let e, {
+        applicationViewItems: t,
+        filterQuery: n
+      } = this.props,
+      r = t.length > 0;
     return r ? null : (e = "" !== n ? P.NW.format(P.t["4Q1TAg"], {
       query: n
     }) : P.NW.string(P.t["0Y+0PT"]), (0, i.jsxs)("div", {
@@ -343,9 +343,9 @@ class U extends(r = l.PureComponent) {
       sortDirection: t,
       applicationViewItems: n,
       activeRowKey: r,
-      stickyHeader: o
+      stickyHeader: a
     } = this.props, {
-      overflowMenuRowKey: a,
+      overflowMenuRowKey: o,
       highlightedApplicationKey: s
     } = this.state;
     return (0, i.jsxs)(l.Fragment, {
@@ -355,16 +355,16 @@ class U extends(r = l.PureComponent) {
         sortData: !1,
         rowComponent: M,
         className: j.table,
-        headerClassName: o ? j.stickyHeader : j.header,
+        headerClassName: a ? j.stickyHeader : j.header,
         headerCellClassName: j.headerCell,
         sortedHeaderCellClassName: j.headerCellSorted,
         bodyCellClassName: j.bodyCell,
         rowClassName: j.row,
         sortKey: e,
         sortDirection: t,
-        stickyHeader: o,
+        stickyHeader: a,
         rowProps: {
-          activeRowKey: null != a ? a : r,
+          activeRowKey: null != o ? o : r,
           highlightedApplicationKey: s,
           onMouseEnter: this.handleRowMouseEnter,
           onMouseLeave: this.handleRowMouseLeave,
@@ -372,7 +372,7 @@ class U extends(r = l.PureComponent) {
           setRef: this.setRowRef
         },
         cellProps: {
-          activeRowKey: null != a ? a : r,
+          activeRowKey: null != o ? o : r,
           onContextMenu: this.handleApplicationContextMenu,
           setActiveRowKey: this.setActiveRowKey,
           clearActiveRowKey: this.clearActiveRowKey,
@@ -423,12 +423,12 @@ class U extends(r = l.PureComponent) {
 }
 
 function G(e) {
-  let t = l.useContext(y.AnalyticsContext),
+  let t = l.useContext(I.AnalyticsContext),
     n = (0, s.TH)(),
     {
       applicationViewItems: r,
-      filterQuery: o,
-      fetched: a
+      filterQuery: a,
+      fetched: o
     } = (0, c.cj)([N.Z], () => ({
       applicationViewItems: N.Z.sortedFilteredLibraryApplicationViewItems,
       filterQuery: N.Z.applicationFilterQuery,
@@ -439,18 +439,18 @@ function G(e) {
       sortDirection: d,
       activeRowKey: p,
       isNavigatingByKeyboard: h
-    } = (0, c.cj)([v.Z], () => ({
-      sortKey: v.Z.sortKey,
-      sortDirection: v.Z.sortDirection,
-      activeRowKey: v.Z.activeRowKey,
-      isNavigatingByKeyboard: v.Z.isNavigatingByKeyboard
+    } = (0, c.cj)([y.Z], () => ({
+      sortKey: y.Z.sortKey,
+      sortDirection: y.Z.sortDirection,
+      activeRowKey: y.Z.activeRowKey,
+      isNavigatingByKeyboard: y.Z.isNavigatingByKeyboard
     }));
   return (0, i.jsx)(U, x(Z({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
-    filterQuery: o,
-    fetched: a,
+    filterQuery: a,
+    fetched: o,
     sortKey: u,
     sortDirection: d,
     activeRowKey: p,

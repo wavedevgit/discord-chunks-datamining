@@ -3,8 +3,8 @@ n.d(t, {
   c: () => j
 });
 var r = n(481060),
-  i = n(933557),
-  l = n(592125),
+  l = n(933557),
+  i = n(592125),
   a = n(699516),
   u = n(594174),
   o = n(273504),
@@ -22,7 +22,7 @@ let f = e => e !== o.jj.QUARANTINE_USER,
         return !1
     }
   },
-  d = e => {
+  g = e => {
     switch (e) {
       case o.jj.BLOCK_MESSAGE:
         return c.NW.string(c.t.d1ab8v);
@@ -34,7 +34,7 @@ let f = e => e !== o.jj.QUARANTINE_USER,
         return c.NW.string(c.t.NPO8eX)
     }
   },
-  g = function(e) {
+  d = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.fX.KEYWORD;
     switch (e) {
       case o.jj.BLOCK_MESSAGE:
@@ -61,17 +61,17 @@ let f = e => e !== o.jj.QUARANTINE_USER,
       case o.jj.BLOCK_MESSAGE:
         return null;
       case o.jj.FLAG_TO_CHANNEL: {
-        let e = null == t ? void 0 : null === (n = t.metadata) || void 0 === n ? void 0 : n.channelId;
+        let e = null == t || null == (n = t.metadata) ? void 0 : n.channelId;
         if (null == e) return null;
-        let r = l.Z.getChannel(e);
+        let r = i.Z.getChannel(e);
         if (null == r) return null;
-        let o = (0, i.F6)(r, u.default, a.Z);
+        let o = (0, l.F6)(r, u.default, a.Z);
         return c.NW.format(c.t.xQXnkJ, {
           channelName: o
         })
       }
       case o.jj.USER_COMMUNICATION_DISABLED: {
-        let e = null !== (f = null == t ? void 0 : null === (r = t.metadata) || void 0 === r ? void 0 : r.durationSeconds) && void 0 !== f ? f : 0,
+        let e = null != (f = null == t || null == (r = t.metadata) ? void 0 : r.durationSeconds) ? f : 0,
           n = (0, s.L9)(e);
         if (null == n) return null;
         return c.NW.format(c.t.AFmbfX, {
@@ -94,12 +94,12 @@ let f = e => e !== o.jj.QUARANTINE_USER,
   };
 
 function j(e, t, n) {
-  var i, l, a, u;
+  var l, i, a, u;
   return E(e) ? {
-    headerText: null !== (i = d(e)) && void 0 !== i ? i : "",
-    descriptionText: null !== (l = g(e, n)) && void 0 !== l ? l : "",
-    helperText: null !== (a = S(e, t)) && void 0 !== a ? a : null,
-    icon: null !== (u = O(e)) && void 0 !== u ? u : r.k$p,
+    headerText: null != (l = g(e)) ? l : "",
+    descriptionText: null != (i = d(e, n)) ? i : "",
+    helperText: null != (a = S(e, t)) ? a : null,
+    icon: null != (u = O(e)) ? u : r.k$p,
     isEditable: f(e)
   } : null
 }

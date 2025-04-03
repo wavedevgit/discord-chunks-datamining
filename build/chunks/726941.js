@@ -1,4 +1,4 @@
-/** Chunk was on 97231 **/
+/** Chunk was on 88934 **/
 n.d(t, {
   Z: () => g
 });
@@ -13,7 +13,7 @@ var r = n(200651),
   u = n(678694),
   p = n(292191),
   m = n(683544),
-  h = n(305562);
+  h = n(34871);
 let g = function(e) {
   var t;
   let {
@@ -22,25 +22,25 @@ let g = function(e) {
     onScroll: f
   } = e, _ = a.useRef(null), b = a.useCallback(() => {
     var e;
-    null === (e = _.current) || void 0 === e || e.scrollTo({
+    null == (e = _.current) || e.scrollTo({
       to: 0
     })
-  }, []), v = (0, i.e7)([u.Z], () => u.Z.getCategories()), x = a.useMemo(() => v.find(e => e.id === n), [v, n]), C = a.useMemo(() => null != x ? (0, d.v)(x) : "", [x]);
+  }, []), x = (0, i.e7)([u.Z], () => u.Z.getCategories()), v = a.useMemo(() => x.find(e => e.id === n), [x, n]), C = a.useMemo(() => null != v ? (0, d.v)(v) : "", [v]);
   return (0, r.jsxs)(c.Z, {
     onScroll: f,
     ref: _,
     children: [(0, r.jsx)(o.Z, {
-      title: null !== (t = null == x ? void 0 : x.name) && void 0 !== t ? t : "",
+      title: null != (t = null == v ? void 0 : v.name) ? t : "",
       description: C,
       children: (0, r.jsx)(l.Z, {})
     }), (0, r.jsx)(s.Z, {
-      children: null == x ? (0, r.jsx)("div", {
+      children: null == v ? (0, r.jsx)("div", {
         className: h.errorContainer,
         children: (0, r.jsx)(p.Z, {
           className: h.error
         })
       }) : (0, r.jsx)(m.Z, {
-        categoryId: x.id,
+        categoryId: v.id,
         onSelectApplication: g,
         resetScroll: b
       })

@@ -7,7 +7,7 @@ var r = n(200651),
   i = n(481060),
   a = n(600164),
   o = n(388032),
-  s = n(202608);
+  s = n(18537);
 let c = e => {
   let t, {
       button: n,
@@ -24,7 +24,7 @@ let c = e => {
   if (l.useEffect(() => {
       if ((null == n ? void 0 : n.type) === "submit" || (null == n ? void 0 : n.type) === "done") {
         var e;
-        null === (e = p.current) || void 0 === e || e.focus()
+        null == (e = p.current) || e.focus()
       }
     }, [null == n ? void 0 : n.type]), !h) return null;
   let _ = o.NW.string(o.t.i4jeWV);

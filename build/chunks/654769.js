@@ -8,16 +8,16 @@ var o, a = n(392711),
   s = n(525654),
   c = n.n(s),
   r = n(579806),
-  d = n(933557),
-  u = n(710845),
+  u = n(933557),
+  d = n(710845),
   f = n(811627),
   h = n(460181),
   I = n(474873),
-  v = n(135906),
-  N = n(378233),
-  m = n(592125),
-  p = n(292959),
-  g = n(699516),
+  N = n(135906),
+  m = n(378233),
+  p = n(592125),
+  g = n(292959),
+  v = n(699516),
   w = n(246946),
   O = n(594174),
   T = n(626135),
@@ -43,16 +43,15 @@ if (E && !F) {
   let [i, , t] = r.Z.os.release.split(".");
   S = parseInt(i) > 10 || parseInt(t) >= 15063
 }
-let P = new u.Z("NotificationUtils"),
+let P = new d.Z("NotificationUtils"),
   R = E && S || "Chrome" === c().name && 47 > parseFloat(c().version) || "Firefox" === c().name && 52 > parseFloat(c().version);
 async function D() {
-  if (void 0 === e) {
+  if (void 0 === e)
     if (null === r.Z || void 0 === r.Z ? void 0 : r.Z.features.supports("notifications")) try {
       e = await _.ZP.invoke("NOTIFICATIONS_GET_SETTINGS")
     } catch (i) {
       P.warn("Fetching native notification settings failed with error: ", i), e = null
-    } else e = null
-  }
+    } else e = null;
   return e
 }
 async function L() {
@@ -62,7 +61,7 @@ async function L() {
 
 function M(i, t) {
   var n;
-  return null !== (n = (0, v.Z)(null != t ? t : I.Z.getSoundpack())[i]) && void 0 !== n ? n : i
+  return null != (n = (0, N.Z)(null != t ? t : I.Z.getSoundpack())[i]) ? n : i
 }
 async function x(i) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
@@ -117,7 +116,7 @@ if (null === r.Z || void 0 === r.Z ? void 0 : r.Z.features.supports("notificatio
     else {
       var e, o, a;
       let i = G[n];
-      (null == i ? void 0 : null === (e = i.options) || void 0 === e ? void 0 : e.omitClickTracking) || T.default.track(k.rMx.NOTIFICATION_CLICKED, null == i ? void 0 : i.trackingProps), null == i || null === (a = i.options) || void 0 === a || null === (o = a.onClick) || void 0 === o || o.call(a)
+      (null == i || null == (e = i.options) ? void 0 : e.omitClickTracking) || T.default.track(k.rMx.NOTIFICATION_CLICKED, null == i ? void 0 : i.trackingProps), null == i || null == (a = i.options) || null == (o = a.onClick) || o.call(a)
     }
   }), _.ZP.invoke("NOTIFICATIONS_REMOVE_ALL_NOTIFICATIONS")
 } catch (i) {
@@ -126,7 +125,7 @@ if (null === r.Z || void 0 === r.Z ? void 0 : r.Z.features.supports("notificatio
 async function V() {
   if (null === r.Z || void 0 === r.Z ? void 0 : r.Z.features.supports("notifications")) {
     var i;
-    return (null === (i = await D()) || void 0 === i ? void 0 : i.authorizationStatus) === "authorized"
+    return (null == (i = await D()) ? void 0 : i.authorizationStatus) === "authorized"
   }
   return null != U && "granted" === U.permission
 }
@@ -163,22 +162,22 @@ let H = {
     })
   },
   showNotification: async function(i, t, n, e, o) {
-    var a, l, s, c, r, u, h;
+    var a, l, s, c, r, d, h;
     let I;
     if (await B(o)) {
-      null != o.sound && !1 !== o.playSoundIfDisabled && q(o.sound, null !== (a = o.volume) && void 0 !== a ? a : 1, o.soundpack);
+      null != o.sound && !1 !== o.playSoundIfDisabled && q(o.sound, null != (a = o.volume) ? a : 1, o.soundpack);
       return
     }
     t.includes("\0") && (P.warn("Notification title contains null character, setting to empty string"), t = ""), n.includes("\0") && (P.warn("Notification body contains null character, setting to empty string"), n = "");
-    let v = null !== (l = null == o ? void 0 : o.tag) && void 0 !== l ? l : null,
+    let N = null != (l = null == o ? void 0 : o.tag) ? l : null,
       w = await D(),
       y = K(),
       F = y && (null == w ? void 0 : w.sound) === !0,
       L = i => {
         var t;
-        null === (t = o.onShown) || void 0 === t || t.call(o), o.omitViewTracking || T.default.track(k.rMx.NOTIFICATION_VIEWED, e), R && setTimeout(() => i.close(), 5e3)
+        null == (t = o.onShown) || t.call(o), o.omitViewTracking || T.default.track(k.rMx.NOTIFICATION_VIEWED, e), R && setTimeout(() => i.close(), 5e3)
       };
-    if (null == o.sound || F || q(o.sound, null !== (s = o.volume) && void 0 !== s ? s : 1, o.soundpack), o.isUserAvatar && null != i && (i = await
+    if (null == o.sound || F || q(o.sound, null != (s = o.volume) ? s : 1, o.soundpack), o.isUserAvatar && null != i && (i = await
         function(i) {
           let t = new Image;
           return t.src = i, t.crossOrigin = "anonymous", new Promise((n, e) => {
@@ -211,12 +210,12 @@ let H = {
         let i = o.messageRecord.channel_id,
           t = o.messageRecord.author;
         a.threadIdentifier = i;
-        let n = m.Z.getChannel(i);
-        null != n && (a.groupName = (0, d.F6)(n, O.default, g.Z));
+        let n = p.Z.getChannel(i);
+        null != n && (a.groupName = (0, u.F6)(n, O.default, v.Z));
         let e = null == n ? void 0 : n.getGuildId();
         if (a.senderIdentifier = t.id, a.senderDisplayName = Z.ZP.getName(e, i, t), a.senderAvatar = t.getAvatarURL(e, 128, !1, !1), a.attachments = [], l.includeStickers)
-          for (let i of (0, N.cv)(o.messageRecord)) {
-            let t = (0, N.Q6)(i, {
+          for (let i of (0, m.cv)(o.messageRecord)) {
+            let t = (0, m.Q6)(i, {
               isPreview: !0
             });
             null != t && a.attachments.push({
@@ -225,7 +224,7 @@ let H = {
             })
           }
         if (l.includeImages)
-          for (let i of o.messageRecord.attachments) !(0, b.yE)(null !== (r = i.flags) && void 0 !== r ? r : 0, k.J0y.CONTAINS_EXPLICIT_MEDIA) && !(0, b.yE)(null !== (u = i.flags) && void 0 !== u ? u : 0, k.J0y.IS_SPOILER) && (null === (c = i.content_type) || void 0 === c ? void 0 : c.startsWith("image/")) && a.attachments.push({
+          for (let i of o.messageRecord.attachments) !(0, b.yE)(null != (r = i.flags) ? r : 0, k.J0y.CONTAINS_EXPLICIT_MEDIA) && !(0, b.yE)(null != (d = i.flags) ? d : 0, k.J0y.IS_SPOILER) && (null == (c = i.content_type) ? void 0 : c.startsWith("image/")) && a.attachments.push({
             url: i.proxy_url,
             type: i.content_type
           })
@@ -250,14 +249,14 @@ let H = {
         P.warn("Native notification failed with error: ", i)
       }
     }
-    null != o.sound && y && q(o.sound, null !== (h = o.volume) && void 0 !== h ? h : 1, o.soundpack);
+    null != o.sound && y && q(o.sound, null != (h = o.volume) ? h : 1, o.soundpack);
     let x = {
       icon: i,
       body: n,
-      tag: v,
+      tag: N,
       silent: !0
     };
-    E && p.Z.taskbarFlash && _.ZP.flashFrame(!0);
+    E && g.Z.taskbarFlash && _.ZP.flashFrame(!0);
     try {
       I = new U(t, x)
     } catch (i) {
@@ -265,11 +264,11 @@ let H = {
     }
     return (L(I), I.onclick = () => {
       var i;
-      A.isPlatformEmbedded ? _.ZP.focus() : (window.focus(), I.close()), o.omitClickTracking || T.default.track(k.rMx.NOTIFICATION_CLICKED, e), null === (i = o.onClick) || void 0 === i || i.call(o)
+      A.isPlatformEmbedded ? _.ZP.focus() : (window.focus(), I.close()), o.omitClickTracking || T.default.track(k.rMx.NOTIFICATION_CLICKED, e), null == (i = o.onClick) || i.call(o)
     }, S) ? I : {
       close() {
         var i;
-        null == I || null === (i = I.onclose) || void 0 === i || i.call(I)
+        null == I || null == (i = I.onclose) || i.call(I)
       }
     }
   },

@@ -35,12 +35,12 @@ var d = "exiting";
 t.EXITING = d;
 var f = function(e) {
   function t(t, n) {
-    o = e.call(this, t, n) || this;
-    var o, r, i = n.transitionGroup,
+    var o, r = e.call(this, t, n) || this,
+      i = n.transitionGroup,
       a = i && !i.isMounting ? t.enter : t.appear;
-    return o.appearStatus = null, t.in ? a ? (r = l, o.appearStatus = c) : r = p : r = t.unmountOnExit || t.mountOnEnter ? s : l, o.state = {
-      status: r
-    }, o.nextCallback = null, o
+    return r.appearStatus = null, t.in ? a ? (o = l, r.appearStatus = c) : o = p : o = t.unmountOnExit || t.mountOnEnter ? s : l, r.state = {
+      status: o
+    }, r.nextCallback = null, r
   }
   t.prototype = Object.create(e.prototype), t.prototype.constructor = t, t.__proto__ = e;
   var n = t.prototype;
@@ -84,14 +84,11 @@ var f = function(e) {
       r = this.context.transitionGroup ? this.context.transitionGroup.isMounting : t,
       i = this.getTimeouts(),
       a = r ? i.appear : i.enter;
-    if (!t && !o) {
-      this.safeSetState({
-        status: p
-      }, function() {
-        n.props.onEntered(e)
-      });
-      return
-    }
+    if (!t && !o) return void this.safeSetState({
+      status: p
+    }, function() {
+      n.props.onEntered(e)
+    });
     this.props.onEnter(e, r), this.safeSetState({
       status: c
     }, function() {
@@ -107,14 +104,11 @@ var f = function(e) {
     var t = this,
       n = this.props.exit,
       o = this.getTimeouts();
-    if (!n) {
-      this.safeSetState({
-        status: l
-      }, function() {
-        t.props.onExited(e)
-      });
-      return
-    }
+    if (!n) return void this.safeSetState({
+      status: l
+    }, function() {
+      t.props.onExited(e)
+    });
     this.props.onExit(e), this.safeSetState({
       status: d
     }, function() {
@@ -141,10 +135,7 @@ var f = function(e) {
   }, n.onTransitionEnd = function(e, t, n) {
     this.setNextCallback(n);
     var o = null == t && !this.props.addEndListener;
-    if (!e || o) {
-      setTimeout(this.nextCallback, 0);
-      return
-    }
+    if (!e || o) return void setTimeout(this.nextCallback, 0);
     this.props.addEndListener && this.props.addEndListener(e, this.nextCallback), null != t && setTimeout(this.nextCallback, t)
   }, n.render = function() {
     var e = this.state.status;
@@ -182,6 +173,4 @@ f.contextTypes = {
   onExit: h,
   onExiting: h,
   onExited: h
-}, f.UNMOUNTED = 0, f.EXITED = 1, f.ENTERING = 2, f.ENTERED = 3, f.EXITING = 4;
-var m = (0, a.polyfill)(f);
-t.default = m
+}, f.UNMOUNTED = 0, f.EXITED = 1, f.ENTERING = 2, f.ENTERED = 3, f.EXITING = 4, t.default = (0, a.polyfill)(f)

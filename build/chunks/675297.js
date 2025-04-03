@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  H: () => v
+  H: () => x
 }), n(266796);
 var r = n(200651);
 n(192379);
 var i = n(399606),
   a = n(166081),
-  o = n(54797),
-  l = n(674180),
+  l = n(54797),
+  o = n(674180),
   s = n(430824),
   c = n(572004),
   u = n(267101),
@@ -20,14 +20,14 @@ var i = n(399606),
   _ = n(226060),
   b = n(981631);
 
-function v(e) {
+function x(e) {
   let {
     guildProductListing: t,
     guildId: n,
-    location: v,
-    shouldShowFullDescriptionButton: x = !0,
-    hideRoleTag: y = !1,
-    lineClamp: E = 1,
+    location: x,
+    shouldShowFullDescriptionButton: y = !0,
+    hideRoleTag: E = !1,
+    lineClamp: v = 1,
     cardWidth: O,
     cardHeight: N,
     thumbnailHeight: j,
@@ -35,15 +35,15 @@ function v(e) {
     showOpaqueBackground: I = !1
   } = e, S = (0, i.e7)([s.Z], () => s.Z.getGuild(n), [n]), T = (0, i.e7)([s.Z], () => {
     var e;
-    return s.Z.getRole(n, null !== (e = null == t ? void 0 : t.role_id) && void 0 !== e ? e : b.lds)
+    return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : b.lds)
   }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(S), {
     shouldHideGuildPurchaseEntryPoints: Z
-  } = (0, l.uP)(n), k = (0, f.k)(t);
+  } = (0, o.uP)(n), k = (0, f.k)(t);
   if (null == S || Z) return null;
   let R = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
-      analyticsLocation: v
+      analyticsLocation: x
     }),
     D = (0, r.jsx)(h.m, {
       product: t,
@@ -60,7 +60,7 @@ function v(e) {
       onUnpublishProduct: () => {},
       onDeleteProduct: () => {},
       onReportProduct: () => {
-        (0, o.x)({
+        (0, l.x)({
           listing: t
         })
       },
@@ -78,16 +78,16 @@ function v(e) {
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
       guildProductListingId: t.id,
-      sourceAnalyticsLocations: v
+      sourceAnalyticsLocations: x
     }),
     productType: A,
-    shouldShowFullDescriptionButton: x,
+    shouldShowFullDescriptionButton: y,
     onShowFullDescription: R,
     onTapCard: R,
     actionMenu: D,
     showOpaqueBackground: I,
-    hideRoleTag: y,
-    lineClamp: E,
+    hideRoleTag: E,
+    lineClamp: v,
     cardWidth: O,
     cardHeight: N,
     thumbnailHeight: j,

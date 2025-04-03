@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(192379),
   i = n(442837),
   s = n(607070),
   a = n(597688),
-  o = n(350327),
-  l = n(626135),
+  l = n(350327),
+  o = n(626135),
   c = n(211712),
   d = n(981631);
 let u = Object.keys(c.hq),
@@ -37,7 +37,7 @@ function g() {
       if (null != e && 0 !== e.items.length) return e.items[0]
     });
   (0, r.useEffect)(() => {
-    (0, o.x3)({
+    (0, l.x3)({
       banner: u,
       themeColors: g,
       avatarDecoration: h
@@ -45,7 +45,7 @@ function g() {
   }, [u, g, h]);
   let f = (0, r.useCallback)(() => {
     let e = m(t);
-    n(e), l.default.track(d.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
+    n(e), o.default.track(d.rMx.TRY_IT_OUT_PRESET_SHUFFLED, {
       preset: e
     })
   }, [t]);

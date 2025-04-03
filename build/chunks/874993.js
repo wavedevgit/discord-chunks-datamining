@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -21,9 +21,9 @@ var r = n(200651),
   x = n(546513),
   j = n(572456),
   N = n(273504),
-  v = n(981631),
-  _ = n(388032),
-  C = n(296014);
+  _ = n(981631),
+  v = n(388032),
+  C = n(885655);
 
 function O(e) {
   var t, n;
@@ -36,11 +36,11 @@ function O(e) {
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null !== (n = null !== (t = null == S ? void 0 : S.id) && void 0 !== t ? t : O) && void 0 !== n ? n : v.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : O) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: Z
   } = (0, g.pH)(P), D = {
-    [p.vh.MEMBERS]: _.NW.string(_.t.sx4E5u),
-    [p.vh.CONTENT]: _.NW.string(_.t.fphZb2)
+    [p.vh.MEMBERS]: v.NW.string(v.t.sx4E5u),
+    [p.vh.CONTENT]: v.NW.string(v.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
     isInEditMode: w,
     setEditingRule: E
@@ -57,18 +57,18 @@ function O(e) {
   let L = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
-        return null !== (r = null === (n = A.find(t => {
+        return null != (r = null == (n = A.find(t => {
           let {
             id: n
           } = t;
           return n === e
-        })) || void 0 === n ? void 0 : n.name) && void 0 !== r ? r : null
+        })) ? void 0 : n.name) ? r : null
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [A]),
     M = i.useMemo(() => {
       var e, t;
-      return L(null !== (e = null == I ? void 0 : I.id) && void 0 !== e ? e : null, null !== (t = null == I ? void 0 : I.triggerType) && void 0 !== t ? t : null)
+      return L(null != (e = null == I ? void 0 : I.id) ? e : null, null != (t = null == I ? void 0 : I.triggerType) ? t : null)
     }, [L, I]);
   i.useEffect(() => {
     y(w, (0, j.af)(M))
@@ -80,13 +80,13 @@ function O(e) {
         return (0, r.jsx)(x.Z, {
           guildId: P,
           triggerType: e,
-          rules: null !== (t = Z[e]) && void 0 !== t ? t : [],
-          initWithEdit: T === v.KsC.AUTOMOD_MENTION_SPAM && e === N.fX.MENTION_SPAM
+          rules: null != (t = Z[e]) ? t : [],
+          initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === N.fX.MENTION_SPAM
         }, e)
       })
     });
   return (0, r.jsxs)(l.hjN, {
-    title: _.NW.string(_.t.uRelg4),
+    title: v.NW.string(v.t.uRelg4),
     tag: "h1",
     children: [(0, r.jsxs)("div", {
       className: C.descriptionContainer,
@@ -97,12 +97,12 @@ function O(e) {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
-          children: _.NW.string(_.t.EwuSCQ)
+          children: v.NW.string(v.t.EwuSCQ)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           className: C.helpUrl,
-          children: _.NW.format(_.t["B+sgGh"], {
-            helpUrl: u.Z.getArticleURL(v.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+          children: v.NW.format(v.t["B+sgGh"], {
+            helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
@@ -110,7 +110,7 @@ function O(e) {
         children: [(0, r.jsx)(l.qEK, {
           src: (0, m.j)(),
           size: l.EFr.SIZE_80,
-          "aria-label": _.NW.string(_.t.hG1StL)
+          "aria-label": v.NW.string(v.t.hG1StL)
         }), (0, r.jsx)(l.IGR, {
           text: (0, r.jsxs)("div", {
             className: C.automodBadgeText,
@@ -121,7 +121,7 @@ function O(e) {
             }), (0, r.jsx)(l.Text, {
               variant: "text-xs/bold",
               className: C.automodText,
-              children: _.NW.string(_.t.hG1StL)
+              children: v.NW.string(v.t.hG1StL)
             })]
           }),
           color: a.Z.unsafe_rawColors.BRAND_500.css,

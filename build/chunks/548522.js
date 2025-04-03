@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   y: () => h
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(217472),
   m = n(592286),
   g = n(388032),
-  p = n(378358);
+  p = n(539482);
 
 function h(e) {
   var t;
@@ -23,12 +23,12 @@ function h(e) {
     formFields: c
   } = e, [h, b] = i.useState(c);
   i.useEffect(() => b(c), [c]);
-  let x = null !== (t = (0, l.A)({
+  let x = null != (t = (0, l.A)({
       guildId: n.id
-    })) && void 0 !== t ? t : 0,
+    })) ? t : 0,
     [j, N] = i.useState(null),
-    v = i.useMemo(() => null == h ? void 0 : h.some(e => (0, a.J)(e)), [h]),
-    _ = i.useMemo(() => h.length === m.nx, [h]),
+    _ = i.useMemo(() => null == h ? void 0 : h.some(e => (0, a.J)(e)), [h]),
+    v = i.useMemo(() => h.length === m.nx, [h]),
     C = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && N(null)
     }, [j, n.id]),
@@ -70,14 +70,14 @@ function h(e) {
       canRemove: h.length > 1,
       actionsLocation: "side",
       fieldStyle: a.it.COMPACT
-    })), !_ && (0, r.jsx)("div", {
+    })), !v && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
         addFormField: O,
         guild: n,
-        allowTerms: !v
+        allowTerms: !_
       })
-    }), !_ && (0, r.jsx)(f, {
+    }), !v && (0, r.jsx)(f, {
       addFormField: O
     })]
   })

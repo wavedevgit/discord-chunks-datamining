@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   ZP: () => W
@@ -21,15 +21,15 @@ var r = n(200651),
   x = n(243730),
   j = n(434404),
   N = n(946724),
-  v = n(130341),
-  _ = n(95242),
+  _ = n(130341),
+  v = n(95242),
   C = n(420966),
   O = n(566476),
   y = n(203377),
   I = n(981631),
   E = n(388032),
-  S = n(192087),
-  T = n(640453);
+  S = n(905972),
+  T = n(877248);
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,31 +93,27 @@ function Z(e) {
 
   function g(e) {
     if (e.stopPropagation(), !d) {
-      if (e.shiftKey) {
-        R(t, s, l);
-        return
-      }! function(e, t, n) {
-        let i = N.Z.getRole(n);
-        (0, o.h7j)(s => (0, r.jsxs)(o.ConfirmModal, w(P({}, s), {
-          header: E.NW.string(E.t["7sFNfX"]),
-          confirmText: E.NW.string(E.t.N86XcH),
-          cancelText: E.NW.string(E.t["ETE/oK"]),
-          onConfirm: () => R(e, t, n),
-          children: [(0, r.jsx)(o.Text, {
-            color: "text-normal",
-            variant: "text-md/normal",
-            children: E.NW.format(E.t.scORUl, {
-              username: e.name,
-              roleName: null == i ? void 0 : i.name
-            })
-          }), (0, r.jsx)(o.Text, {
-            className: S.removeTip,
-            color: "text-muted",
-            variant: "text-md/normal",
-            children: E.NW.string(E.t.jxIxJC)
-          })]
-        })))
-      }(t, s, l)
+      if (e.shiftKey) return void R(t, s, l);
+      let n = N.Z.getRole(l);
+      (0, o.h7j)(e => (0, r.jsxs)(o.ConfirmModal, w(P({}, e), {
+        header: E.NW.string(E.t["7sFNfX"]),
+        confirmText: E.NW.string(E.t.N86XcH),
+        cancelText: E.NW.string(E.t["ETE/oK"]),
+        onConfirm: () => R(t, s, l),
+        children: [(0, r.jsx)(o.Text, {
+          color: "text-normal",
+          variant: "text-md/normal",
+          children: E.NW.format(E.t.scORUl, {
+            username: t.name,
+            roleName: null == n ? void 0 : n.name
+          })
+        }), (0, r.jsx)(o.Text, {
+          className: S.removeTip,
+          color: "text-muted",
+          variant: "text-md/normal",
+          children: E.NW.string(E.t.jxIxJC)
+        })]
+      })))
     }
   }
 
@@ -126,7 +122,7 @@ function Z(e) {
     null != i && (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("26976"), n.e("56312")]).then(n.bind(n, 415118));
+      } = await Promise.all([n.e("79695"), n.e("26976"), n.e("51458")]).then(n.bind(n, 415118));
       return t => (0, r.jsx)(e, w(P({}, t), {
         user: i,
         guildId: s,
@@ -220,8 +216,8 @@ function A(e) {
   } = e, {
     analyticsLocations: p
   } = (0, g.ZP)(m.Z.MEMBER_LIST), h = i.useMemo(() => s.trim().toLowerCase(), [s]);
-  (0, v.rY)(t, h);
-  let f = i.useMemo(() => d.filter(e => (0, v.eg)(h, e)), [d, h]),
+  (0, _.rY)(t, h);
+  let f = i.useMemo(() => d.filter(e => (0, _.eg)(h, e)), [d, h]),
     b = i.useMemo(() => f.sort((e, t) => e.name.localeCompare(t.name)), [f]);
   return (0, r.jsx)(g.Gt, {
     value: p,
@@ -294,12 +290,12 @@ function W(e) {
   } = e, [u, m] = i.useState(""), {
     headerHeight: g,
     headerRef: p
-  } = (0, _.Z)(0), {
+  } = (0, v.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, C.V)(), j = s.managed || c, N = (0, v.e)(t.id, s.id), O = (0, l.e7)([x.Z], () => {
+  } = (0, C.V)(), j = s.managed || c, N = (0, _.e)(t.id, s.id), O = (0, l.e7)([x.Z], () => {
     var e, n;
-    return null !== (n = null === (e = x.Z.getRoleMemberCount(t.id)) || void 0 === e ? void 0 : e[s.id]) && void 0 !== n ? n : 0
+    return null != (n = null == (e = x.Z.getRoleMemberCount(t.id)) ? void 0 : e[s.id]) ? n : 0
   }) > N.length, R = () => {
     b.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
@@ -308,7 +304,7 @@ function W(e) {
     }), (0, o.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("59150")]).then(n.bind(n, 24722));
+      } = await Promise.all([n.e("7590"), n.e("45037")]).then(n.bind(n, 24722));
       return n => (0, r.jsx)(e, w(P({}, n), {
         roleId: s.id,
         guildId: t.id

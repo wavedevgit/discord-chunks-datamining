@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => J
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(512722),
-  l = n.n(o),
+  l = n(512722),
+  o = n.n(l),
   c = n(442837),
   d = n(780384),
   u = n(481060),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(303172),
   O = n(518560),
   C = n(921801),
-  v = n(484459),
-  S = n(430824),
+  S = n(484459),
+  v = n(430824),
   T = n(325067),
   I = n(246946),
   y = n(663389),
@@ -45,8 +45,8 @@ var r = n(200651),
   G = n(981631),
   F = n(801461),
   H = n(388032),
-  z = n(764474),
-  Y = n(685786);
+  z = n(951839),
+  Y = n(20493);
 
 function K(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -84,7 +84,7 @@ class X extends i.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    (0, v.Z)(e.id, e.getAvatarURL(void 0, 80))
+    (0, S.Z)(e.id, e.getAvatarURL(void 0, 80))
   }
   componentWillUnmount() {
     m.Z.clearBackupCodes(), (0, g.Zy)()
@@ -352,13 +352,10 @@ class X extends i.PureComponent {
       {
         currentUser: t
       } = this.props,
-      n = S.Z.getGuilds();
-    if (R.default.keys(n).filter(e => n[e].ownerId === t.id).length > 0) {
-      this.setState({
-        shouldRenderOwnedGuildsModal: !0
-      });
-      return
-    }
+      n = v.Z.getGuilds();
+    if (R.default.keys(n).filter(e => n[e].ownerId === t.id).length > 0) return void this.setState({
+      shouldRenderOwnedGuildsModal: !0
+    });
     t.isClaimed() ? (0, u.h7j)(t => (0, r.jsx)(h.default, q(K({}, t), {
       handleSubmit: t => this.handleSubmitDisableAccount(t, e),
       title: e ? H.NW.string(H.t["8lQ2ra"]) : H.NW.string(H.t.jf5GGR),
@@ -380,14 +377,14 @@ class X extends i.PureComponent {
 let J = () => {
   let e = (0, c.e7)([A.default], () => {
       let e = A.default.getCurrentUser();
-      return l()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
+      return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
     }),
     t = (0, c.e7)([T.Z], () => T.Z.getBackupCodes()),
     n = (0, c.e7)([I.Z], () => I.Z.hidePersonalInformation),
     i = (0, c.e7)([Z.Z], () => Z.Z.theme),
     s = (0, E.b)(),
     a = (0, _.CC)(),
-    o = (0, c.e7)([D.default], () => D.default.locale),
+    l = (0, c.e7)([D.default], () => D.default.locale),
     d = (0, c.e7)([y.Z], () => y.Z.getSubsection());
   return (0, r.jsx)(X, {
     theme: i,
@@ -396,7 +393,7 @@ let J = () => {
     hide: n,
     shouldRenderPomeloWarning: s,
     forceMigrationExperiment: a,
-    locale: o,
+    locale: l,
     subsection: d
   })
 }

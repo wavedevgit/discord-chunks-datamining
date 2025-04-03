@@ -66,16 +66,14 @@ function b(e) {
     j = void 0 === O ? i.w : O,
     C = t.displayName || t.name || "Component",
     S = function(e) {
-      ! function(e, t) {
-        if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function");
-        e.prototype = Object.create(t && t.prototype, {
-          constructor: {
-            value: e,
-            writable: !0,
-            configurable: !0
-          }
-        }), t && h(e, t)
-      }(S, e);
+      if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
+      S.prototype = Object.create(e && e.prototype, {
+        constructor: {
+          value: S,
+          writable: !0,
+          configurable: !0
+        }
+      }), e && h(S, e);
       var p, D, O = (p = function() {
         if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
         if ("function" == typeof Proxy) return !0;
@@ -96,9 +94,8 @@ function b(e) {
 
       function S(e) {
         var t;
-        return ! function(e, t) {
-          if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-        }(this, S), g(v(t = O.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", void 0), g(v(t), "manager", void 0), g(v(t), "handlerMonitor", void 0), g(v(t), "handlerConnector", void 0), g(v(t), "handler", void 0), g(v(t), "disposable", void 0), g(v(t), "currentType", void 0), g(v(t), "handleChange", function() {
+        if (!(this instanceof S)) throw TypeError("Cannot call a class as a function");
+        return g(v(t = O.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", void 0), g(v(t), "manager", void 0), g(v(t), "handlerMonitor", void 0), g(v(t), "handlerConnector", void 0), g(v(t), "handler", void 0), g(v(t), "disposable", void 0), g(v(t), "currentType", void 0), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.w)(e, t.state) || t.setState(e)
         }), t.disposable = new c.M$, t.receiveProps(e), t.dispose(), t
@@ -202,7 +199,7 @@ function b(e) {
                 var o = r.dragDropManager;
                 return e.receiveDragDropManager(o), "undefined" != typeof requestAnimationFrame && requestAnimationFrame(function() {
                   var t;
-                  return null === (t = e.handlerConnector) || void 0 === t ? void 0 : t.reconnect()
+                  return null == (t = e.handlerConnector) ? void 0 : t.reconnect()
                 }), (0, n.jsx)(t, Object.assign({}, e.props, e.getCurrentState(), {
                   ref: (0, u.J7)(t) ? e.decoratedRef : null
                 }), void 0)
@@ -212,7 +209,7 @@ function b(e) {
         }, {
           key: "receiveDragDropManager",
           value: function(e) {
-            if (void 0 === this.manager)(0, a.k)(void 0 !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", C, C), void 0 !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef))
+            void 0 === this.manager && ((0, a.k)(void 0 !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", C, C), void 0 !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef)))
           }
         }],
         function(e, t) {

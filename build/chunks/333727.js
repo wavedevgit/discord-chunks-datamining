@@ -1,4 +1,4 @@
-/** Chunk was on 9424 **/
+/** Chunk was on 89298 **/
 n.d(t, {
   Z: () => p
 });
@@ -21,7 +21,7 @@ function p(e, t, n, p) {
     m = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: g,
-      trackClick: v
+      trackClick: y
     } = (0, s.R)(c.n0.ActivityInvite, {
       notif_type: c.n0.ActivityInvite,
       notif_user_id: t.id,
@@ -43,13 +43,13 @@ function p(e, t, n, p) {
         type: u.mFx.JOIN,
         activity: p,
         location: l.default.isLocked((0, a.getPID)()) ? u.Sbl.LOCKED_OVERLAY : u.Sbl.UNLOCKED_OVERLAY
-      }), v("join"), r.Z.updateNotificationStatus(n)
+      }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, o.In)(e.id, !0, !0), r.Z.updateNotificationStatus(n), v("decline")
+      (0, o.In)(e.id, !0, !0), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {
-      v("dismiss")
+      y("dismiss")
     }
   }
 }

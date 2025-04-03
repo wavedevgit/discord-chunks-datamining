@@ -1,4 +1,4 @@
-/** Chunk was on 72581 **/
+/** Chunk was on 69620 **/
 n.d(t, {
   default: () => I
 }), n(47120), n(266796);
@@ -19,14 +19,14 @@ var a = n(200651),
   f = n(403182),
   b = n(709054),
   y = n(127654),
-  v = n(979956),
-  x = n(228392),
-  C = n(404616),
+  x = n(979956),
+  C = n(228392),
+  v = n(404616),
   O = n(470623),
   j = n(981631),
   T = n(231338),
   P = n(388032),
-  E = n(848645);
+  E = n(994436);
 
 function I(e) {
   var t;
@@ -36,25 +36,25 @@ function I(e) {
     sendMessage: w,
     transitionState: S,
     onClose: M
-  } = e, A = (0, d.Dt)(), D = (0, r.e7)([p.Z], () => p.Z.getChannel(n), [n]), N = (0, r.e7)([h.Z], () => h.Z.getGuild(null == D ? void 0 : D.getGuildId()), [D]), k = (0, r.e7)([p.Z], () => p.Z.getChannel(null == D ? void 0 : D.parent_id), [D]), z = null === (t = I[0]) || void 0 === t ? void 0 : t.item, [L, Z] = i.useState(null);
+  } = e, A = (0, d.Dt)(), D = (0, r.e7)([p.Z], () => p.Z.getChannel(n), [n]), N = (0, r.e7)([h.Z], () => h.Z.getGuild(null == D ? void 0 : D.getGuildId()), [D]), k = (0, r.e7)([p.Z], () => p.Z.getChannel(null == D ? void 0 : D.parent_id), [D]), z = null == (t = I[0]) ? void 0 : t.item, [L, Z] = i.useState(null);
   i.useEffect(() => {
     null != z && (0, m.Fq)(z.file, (e, t) => Z(e), T.dG)
   }, [z]);
   let R = null != z && null != L ? {
       src: L,
-      width: C.TJ,
-      height: C.Lp,
+      width: v.TJ,
+      height: v.Lp,
       spoiler: I[0].spoiler,
       alt: I[0].description
     } : null,
     [U, B] = i.useState(!1),
     W = i.useCallback(() => {
-      (0, x.xI)({
+      (0, C.xI)({
         added: !1
       }), w(), M()
     }, [w, M]),
     G = i.useCallback(() => {
-      null != D && null != N && ((0, x.xI)({
+      null != D && null != N && ((0, C.xI)({
         added: !0
       }), function(e) {
         let {
@@ -68,7 +68,7 @@ function I(e) {
           a(!0)
         }), o.on("progress", e => {
           let l = (0, f.dg)(i.id);
-          e.currentSize > l && (o.cancel(), a(!1), r(), (0, y.G)(t, (0, v.KZ)(n)))
+          e.currentSize > l && (o.cancel(), a(!1), r(), (0, y.G)(t, (0, x.KZ)(n)))
         }), o.on("error", (e, n, i) => {
           a(!1), n === j.evJ.EXPLICIT_CONTENT && (r(), l.Z.sendExplicitMediaClydeError(t.id, null == i ? void 0 : i.attachments, u.UU.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), s.Z.clearAll(t.id, g.d.ChannelMessage))
         }), o.on("complete", () => {
@@ -109,7 +109,7 @@ function I(e) {
         className: E.forumPost,
         children: (0, a.jsx)(O.oL, {
           channel: k,
-          children: (0, a.jsx)(C.ZP, {
+          children: (0, a.jsx)(v.ZP, {
             threadId: n,
             goToThread: T.dG,
             overrideMedia: R

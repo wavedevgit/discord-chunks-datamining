@@ -54,7 +54,7 @@ var i = n(200651),
   Q = n(987650),
   q = n(981631),
   $ = n(388032),
-  ee = n(518556);
+  ee = n(763917);
 
 function et(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -133,7 +133,7 @@ class eo extends r.Component {
         position: "top",
         onRequestClose: () => {
           var e;
-          null == l || null === (e = l.onCancel) || void 0 === e || e.call(l), this.setState({
+          null == l || null == (e = l.onCancel) || e.call(l), this.setState({
             contentWarningProps: null
           })
         },
@@ -278,8 +278,7 @@ class el extends r.PureComponent {
     (0, K.m3)(this.props, this.shouldDisplay())
   }
   getOpacity() {
-    let e;
-    let {
+    let e, {
       locked: t,
       activated: n,
       opacity: i,
@@ -288,8 +287,7 @@ class el extends r.PureComponent {
     return t && !n || r ? i / 100 : n || !t ? Math.min(1, (i + 25) / 100) : J.wB
   }
   renderContent() {
-    let e;
-    let {
+    let e, {
       channel: t,
       placeholder: n,
       nsfwAgree: s,
@@ -445,9 +443,9 @@ class el extends r.PureComponent {
       let i = !this.props.pinned;
       f.Z.track(q.rMx.OVERLAY_PIN_TOGGLED, {
         pinned: i,
-        guild_id: null === (e = this.props.channel) || void 0 === e ? void 0 : e.guild_id,
-        channel_id: null === (t = this.props.channel) || void 0 === t ? void 0 : t.id,
-        channel_type: null === (n = this.props.channel) || void 0 === n ? void 0 : n.type,
+        guild_id: null == (e = this.props.channel) ? void 0 : e.guild_id,
+        channel_id: null == (t = this.props.channel) ? void 0 : t.id,
+        channel_type: null == (n = this.props.channel) ? void 0 : n.type,
         widget_type: q.Odu.TEXT
       }), f.Z.setPinChat(i)
     }), et(this, "handleContextMenu", e => {
@@ -458,7 +456,7 @@ class el extends r.PureComponent {
       null != t && null != r && (0, d.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("26403")]).then(n.bind(n, 131404));
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
         return n => (0, i.jsx)(e, ei(en({}, n), {
           user: r,
           channelSelected: !0,

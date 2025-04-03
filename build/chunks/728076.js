@@ -49,8 +49,8 @@ function b(e, t, n) {
   let b = e.id,
     [h, O] = r.useState(() => [(0, u.Uu)(), (0, u.Uu)()]),
     [j, y] = r.useState(""),
-    [x, v] = r.useState(a.C.DEFAULT),
-    [w, _] = r.useState(!1),
+    [x, w] = r.useState(a.C.DEFAULT),
+    [v, _] = r.useState(!1),
     [P, C] = r.useState(d.lc.ONE_DAY),
     [N, A] = r.useState({}),
     [E, k] = r.useState(!1),
@@ -96,15 +96,12 @@ function b(e, t, n) {
     z = r.useCallback((e, t, n) => {
       var r;
       let a = h[t],
-        o = null === (r = a.image) || void 0 === r ? void 0 : r.mediaAttachmentState;
+        o = null == (r = a.image) ? void 0 : r.mediaAttachmentState;
       null != o && o.mediaURL !== n && s.P(e, a.localCreationAnswerId, (0, l.Yk)(a.localCreationAnswerId, o.mediaURL))
     }, [h]),
     H = r.useCallback(async (e, t, n) => {
       let r = h[t].localCreationAnswerId;
-      if (z(e, t), M(g(n, i._.PREPARING), t), null == await s.IV(e, r, n)) {
-        M(g(n, i._.ERROR), t);
-        return
-      }
+      if (z(e, t), M(g(n, i._.PREPARING), t), null == await s.IV(e, r, n)) return void M(g(n, i._.ERROR), t);
       M(g(n, i._.READY_TO_UPLOAD), t)
     }, [h, M, z]),
     Y = r.useCallback((e, t, n) => {
@@ -156,12 +153,12 @@ function b(e, t, n) {
         channel: e,
         question: j,
         answers: I,
-        allowMultiSelect: w,
+        allowMultiSelect: v,
         duration: P,
         layout: x,
         onClose: t
       })
-    }, [j, I, w, P, R, e, x, t]),
+    }, [j, I, v, P, R, e, x, t]),
     Q = r.useCallback(() => {
       !T && J() && G()
     }, [G, T, J]);
@@ -170,8 +167,8 @@ function b(e, t, n) {
     question: j,
     setQuestion: y,
     selectedLayoutType: x,
-    setSelectedLayoutType: v,
-    allowMultiSelect: w,
+    setSelectedLayoutType: w,
+    allowMultiSelect: v,
     setAllowMultiSelect: _,
     duration: P,
     setDuration: C,

@@ -35,7 +35,7 @@ function A(e) {
     transitionState: n,
     sourceAnalyticsLocations: o,
     onClose: A
-  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.Z], () => b.Z.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > N, U = (0, g.Q3)("VoiceChannelStatusModal");
+  } = e, C = (0, s.e7)([f.Z], () => f.Z.getChannelStatus(t)), R = (0, s.e7)([b.ZP], () => b.ZP.getMediaSessionId()), [P, w] = i.useState(null != C ? C : ""), [D, L] = i.useState(!1), [x, M] = i.useState(null), k = (0, s.e7)([y.default], () => y.default.getCurrentUser()), j = P.length > N, U = (0, g.Q3)("VoiceChannelStatusModal");
   i.useEffect(() => {
     v.default.track(O.rMx.OPEN_MODAL, {
       type: "Voice Channel Topic Modal",

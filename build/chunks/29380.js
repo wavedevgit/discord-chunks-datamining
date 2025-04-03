@@ -1,37 +1,37 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 }), n(47120);
 var i = n(200651),
   r = n(192379),
   l = n(481060),
-  o = n(542094),
-  a = n(895924),
+  a = n(542094),
+  o = n(895924),
   c = n(626135),
   s = n(499254),
-  d = n(424602),
-  u = n(541099),
+  u = n(424602),
+  d = n(541099),
   p = n(827498),
   m = n(160973),
   f = n(783097),
   h = n(890280),
   b = n(176412),
-  v = n(981631),
-  C = n(388032),
-  _ = n(711508);
+  C = n(981631),
+  _ = n(388032),
+  x = n(854408);
 
-function x(e) {
+function v(e) {
   let {
     context: t,
     application: n,
-    sectionName: x,
+    sectionName: v,
     primaryEntryPointCommand: y,
     buttonSize: N = l.PhG.MEDIUM,
     playSolo: g = !1
   } = e, j = r.useId(), P = r.useCallback(() => {
     s.yT(p.ti.ACTIVITY)
   }, []), E = r.useCallback(() => {
-    u.Z.shouldShowModal() && P()
+    d.Z.shouldShowModal() && P()
   }, [P]), {
     submitting: A,
     wasSubmitting: O
@@ -40,10 +40,10 @@ function x(e) {
     context: t,
     launchingComponentId: j,
     onSubmissionComplete: P
-  }), [I, S] = r.useState(!1), T = (0, o.Qv)({
+  }), [I, S] = r.useState(!1), T = (0, a.Qv)({
     applicationId: n.id,
     context: t
-  }), L = d.PM.useExperiment({
+  }), L = u.PM.useExperiment({
     location: "AppPrimaryEntryPointButton()"
   }), R = r.useMemo(() => (0, f.XZ)(y.displayName), [y.displayName]), {
     onActivityItemSelected: w,
@@ -52,10 +52,10 @@ function x(e) {
   } = (0, b.P7)({
     context: t,
     application: n,
-    location: a.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: x,
+    location: o.Vh.APP_LAUNCHER_APPLICATION_VIEW,
+    sectionName: v,
     commandName: R,
-    autoDismissOnClick: T === o.JS.LEAVE,
+    autoDismissOnClick: T === a.JS.LEAVE,
     launchingComponentId: j,
     submitting: null != O ? O : A,
     onConfirmActivityLaunchChecksAlertOpen: E,
@@ -67,16 +67,16 @@ function x(e) {
     context: t,
     application: n,
     activityAction: T
-  }), W = L.enabled ? C.NW.string(C.t["1KxmJi"]) : Z;
+  }), W = L.enabled ? _.NW.string(_.t["1KxmJi"]) : Z;
   return (0, i.jsx)(l.ua7, {
     shouldShow: null != D,
-    tooltipContentClassName: _.tooltipContent,
+    tooltipContentClassName: x.tooltipContent,
     text: D,
     children: e => {
       var t, r, {
-          onClick: o
+          onClick: a
         } = e,
-        a = function(e, t) {
+        o = function(e, t) {
           if (null == e) return {};
           var n, i, r = function(e, t) {
             if (null == e) return {};
@@ -108,19 +108,19 @@ function x(e) {
           })
         }
         return e
-      }({}, a), r = r = {
+      }({}, o), r = r = {
         type: "submit",
         size: N,
         color: k,
         disabled: M,
         submitting: I,
         onClick: () => {
-          S(!0), w(), null == o || o(), c.default.track(v.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          S(!0), w(), null == a || a(), c.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: p._y.USE_APP_COMMAND
           })
         },
-        "aria-label": C.NW.formatToPlainString(C.t["XjP/R0"], {
+        "aria-label": _.NW.formatToPlainString(_.t["XjP/R0"], {
           buttonText: W,
           applicationName: n.name
         }),

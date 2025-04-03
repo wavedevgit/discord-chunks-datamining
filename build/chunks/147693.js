@@ -22,7 +22,7 @@ var a = t(652525);
 
 function o(e) {
   var r;
-  return null !== (r = e.localName) && void 0 !== r ? r : e.tagName.toLowerCase()
+  return null != (r = e.localName) ? r : e.tagName.toLowerCase()
 }
 
 function n(e) {

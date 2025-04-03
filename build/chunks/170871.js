@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => g
 }), n(47120);
@@ -6,12 +6,12 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(114487),
+  l = n(481060),
+  o = n(114487),
   c = n(219039),
   d = n(979264),
   u = n(308083),
-  m = n(383267);
+  m = n(580273);
 
 function g(e) {
   let {
@@ -32,7 +32,7 @@ function g(e) {
     className: a()(m.container, t),
     children: [(0, r.jsxs)("div", {
       className: m.guildPrefixContainer,
-      children: [(0, r.jsx)(l.b, {
+      children: [(0, r.jsx)(o.b, {
         guildId: p,
         guildName: h,
         guildIcon: f,
@@ -41,9 +41,9 @@ function g(e) {
         animate: !1
       }), (0, r.jsxs)("div", {
         className: m.details,
-        children: [(0, r.jsx)(o.ua7, {
+        children: [(0, r.jsx)(l.ua7, {
           text: h,
-          color: o.ua7.Colors.PRIMARY,
+          color: l.ua7.Colors.PRIMARY,
           shouldShow: _,
           children: e => {
             var t, n;

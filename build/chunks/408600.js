@@ -31,10 +31,10 @@ function u(e, t) {
   return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 let c = function(e) {
+  if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function, not " + typeof e);
+
   function t() {
-    ! function(e, t) {
-      if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
-    }(this, t);
+    if (!(this instanceof t)) throw TypeError("Cannot call a class as a function");
     for (var e, r, n, o = arguments.length, i = Array(o), l = 0; l < o; l++) i[l] = arguments[l];
     return r = n = u(this, (e = t.__proto__ || Object.getPrototypeOf(t)).call.apply(e, [this].concat(i))), n.handleChange = function(e) {
       var t = a.T(e, n.props.hsl, n.props.direction, n.props.a, n.container);
@@ -47,17 +47,14 @@ let c = function(e) {
       window.removeEventListener("mousemove", n.handleChange), window.removeEventListener("mouseup", n.handleMouseUp)
     }, u(n, r)
   }
-  return ! function(e, t) {
-    if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
-    e.prototype = Object.create(t && t.prototype, {
-      constructor: {
-        value: e,
-        enumerable: !1,
-        writable: !0,
-        configurable: !0
-      }
-    }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-  }(t, e), s(t, [{
+  return t.prototype = Object.create(e && e.prototype, {
+    constructor: {
+      value: t,
+      enumerable: !1,
+      writable: !0,
+      configurable: !0
+    }
+  }), e && (Object.setPrototypeOf ? Object.setPrototypeOf(t, e) : t.__proto__ = e), s(t, [{
     key: "componentWillUnmount",
     value: function() {
       this.unbindEventListeners()

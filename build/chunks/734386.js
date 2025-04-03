@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => w
 }), n(47120);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(185413),
   _ = n(42311),
   C = n(626786),
-  v = n(434404),
-  y = n(454585),
-  x = n(430824),
+  y = n(434404),
+  x = n(454585),
+  v = n(430824),
   j = n(496675),
   O = n(594174),
   E = n(700785),
@@ -31,14 +31,14 @@ var r = n(200651),
   S = n(318374),
   Z = n(981631),
   T = n(388032),
-  A = n(948892);
+  A = n(279078);
 
 function w(e) {
   let {
     channel: t
-  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([x.Z], () => null != w ? x.Z.getRoles(w) : void 0), M = (0, d.e7)([O.default, x.Z], () => {
+  } = e, [n, l] = i.useState(!1), a = (0, m.ZP)(t, !0), w = t.guild_id, R = (0, d.e7)([v.Z], () => null != w ? v.Z.getRoles(w) : void 0), M = (0, d.e7)([O.default, v.Z], () => {
     var e;
-    return O.default.getUser(null === (e = x.Z.getGuild(w)) || void 0 === e ? void 0 : e.ownerId)
+    return O.default.getUser(null == (e = v.Z.getGuild(w)) ? void 0 : e.ownerId)
   }), k = i.useMemo(() => null != w ? s()(R).sortBy(e => -e.position).filter(e => !(0, g.pM)(w, e.id)).value() : [], [w, R]), L = i.useMemo(() => s()(k).filter(e => {
     if (null == w) return !1;
     let n = E.I0({
@@ -62,7 +62,7 @@ function w(e) {
           user: e,
           context: t
         }),
-        i = null !== (n = t.permissionOverwrites[e.id]) && void 0 !== n ? n : E.Hn,
+        i = null != (n = t.permissionOverwrites[e.id]) ? n : E.Hn,
         l = c.e$(i.allow, Z.Plq.VIEW_CHANNEL);
       return r || l
     }).value()
@@ -79,7 +79,7 @@ function w(e) {
     }), (0, r.jsx)(P.jz, {
       children: T.NW.format(T.t.QuwqjI, {
         channelName: a,
-        topicHook: () => y.Z.parseTopic(t.topic, !0, {
+        topicHook: () => x.Z.parseTopic(t.topic, !0, {
           channelId: t.id
         })
       })
@@ -133,8 +133,8 @@ function w(e) {
         })
       }(), L.map((e, n) => {
         var i, l;
-        let a = null !== (l = e.colorString) && void 0 !== l ? l : (0, u.Rf)(Z.p6O),
-          s = (null === (i = e.tags) || void 0 === i ? void 0 : i.guild_connections) !== void 0;
+        let a = null != (l = e.colorString) ? l : (0, u.Rf)(Z.p6O),
+          s = (null == (i = e.tags) ? void 0 : i.guild_connections) !== void 0;
         return W ? (0, r.jsx)(_.Z, {
           className: o()(A.role, {
             [A.last]: n === L.length - 1
@@ -144,7 +144,7 @@ function w(e) {
           disabled: !W,
           verified: s,
           onClick: () => {
-            v.Z.open(t.guild_id, Z.pNK.MEMBERS), v.Z.selectRole(e.id)
+            y.Z.open(t.guild_id, Z.pNK.MEMBERS), y.Z.selectRole(e.id)
           }
         }, e.id) : (0, r.jsx)(C.Z, {
           className: o()(A.role, {

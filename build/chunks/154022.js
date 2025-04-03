@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => Y
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n.n(o),
+  l = n(392711),
+  o = n.n(l),
   c = n(442837),
   d = n(481060),
   u = n(230711),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(440849),
   O = n(921801),
   C = n(196051),
-  v = n(441729),
-  S = n(626135),
+  S = n(441729),
+  v = n(626135),
   T = n(63063),
   I = n(695346),
   y = n(263937),
@@ -36,8 +36,8 @@ var r = n(200651),
   Z = n(611480),
   w = n(653477),
   k = n(388032),
-  W = n(519258),
-  L = n(685786),
+  W = n(855112),
+  L = n(20493),
   B = n(328756);
 
 function M(e) {
@@ -74,10 +74,10 @@ function U(e, t) {
 let V = (0, b.hQ)(),
   G = (0, b.hQ)(),
   F = (0, b.hQ)(),
-  H = l().debounce(e => {
+  H = o().debounce(e => {
     (0, g.o2)(e)
   }, 250),
-  z = l().debounce(e => {
+  z = o().debounce(e => {
     (0, C.Ct)(e)
   }, 250);
 
@@ -343,8 +343,8 @@ function et() {
     {
       useReducedMotion: n,
       rawPrefersReducedMotion: s,
-      systemPrefersReducedMotion: o,
-      gifAutoPlayOverrideReason: l,
+      systemPrefersReducedMotion: l,
+      gifAutoPlayOverrideReason: o,
       animateEmojiOverrideReason: u
     } = (0, c.cj)([p.Z, y.Z], () => ({
       systemPrefersReducedMotion: p.Z.systemPrefersReducedMotion,
@@ -356,8 +356,8 @@ function et() {
     m = i.useRef(null);
   (0, A.Z)(m, P.rP.REDUCED_MOTION);
   let h = i.useCallback((e, t) => {
-      (0, g.Zt)(t ? "auto" : o)
-    }, [o]),
+      (0, g.Zt)(t ? "auto" : l)
+    }, [l]),
     f = i.useCallback(e => {
       (0, g.Zt)(e ? "reduce" : "no-preference")
     }, []);
@@ -393,7 +393,7 @@ function et() {
       children: (0, r.jsx)(d.j7V, {
         className: L.marginBottom20,
         value: e,
-        note: null != l ? (0, j.Z)(l) : void 0,
+        note: null != o ? (0, j.Z)(o) : void 0,
         onChange: I.QK.updateSetting,
         children: k.NW.string(k.t.Iayoh4)
       })
@@ -466,7 +466,7 @@ function er() {
         value: t,
         note: k.NW.string(k.t.Q7wgHR),
         onChange: e => {
-          S.default.track(D.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
+          v.default.track(D.rMx.LEGACY_CHAT_INPUT_TOGGLED, {
             enabled: e,
             location: {
               section: D.jXE.SETTINGS_ACCESSIBILITY
@@ -481,7 +481,7 @@ function er() {
 
 function ei() {
   let e = I.OW.useSetting(),
-    t = (0, c.e7)([v.Z], () => v.Z.speechRate),
+    t = (0, c.e7)([S.Z], () => S.Z.speechRate),
     [n, s] = i.useState(!1);
   return m.Zh ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(O.F, {

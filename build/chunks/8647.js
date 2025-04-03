@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => E
 });
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(399606),
-  o = n(481060),
-  l = n(100527),
+  l = n(481060),
+  o = n(100527),
   c = n(182567),
   d = n(78839),
   u = n(63063),
@@ -20,7 +20,7 @@ var i = n(120356),
   b = n(474936),
   N = n(981631),
   x = n(388032),
-  _ = n(280474);
+  _ = n(669792);
 let E = function(e) {
   let {
     isFullScreen: t,
@@ -31,7 +31,7 @@ let E = function(e) {
   if (!(0, p.Vi)()) return null;
   let O = new Date(E.endDate);
   return (0, r.jsx)(c.O, {
-    newLocations: [l.Z.PREMIUM_MARKETING_PAGE_BANNER],
+    newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsxs)("div", {
       className: s()(_.banner, {
         [_.bannerFullScreen]: t
@@ -46,17 +46,17 @@ let E = function(e) {
       }), (0, r.jsxs)("div", {
         className: _.bannerContent,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(o.X6q, {
+          children: [(0, r.jsx)(l.X6q, {
             variant: "display-sm",
             color: "always-white",
             children: null == j || null == (0, m.he)(j) ? x.NW.string(x.t.xbzNJC) : x.NW.string(x.t["22WZ9P"])
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(l.Text, {
             className: _.countdown,
             variant: "text-sm/bold",
             children: (0, r.jsx)(g.Z, {
               endDate: O
             })
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "always-white",
             children: x.NW.format(x.t["j/x4GB"], {

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => g
 });
@@ -7,18 +7,18 @@ n(192379);
 var i = n(442837),
   s = n(481060),
   a = n(153867),
-  o = n(921801),
-  l = n(740492),
+  l = n(921801),
+  o = n(740492),
   c = n(569550),
   d = n(726985),
   u = n(388032),
-  m = n(685786);
+  m = n(20493);
 
 function g(e) {
   let {
     refreshStyles: t = !1
-  } = e, n = (0, i.e7)([l.ZP], () => l.ZP.disableVoiceChannelChangeAlert);
-  return (0, r.jsx)(o.F, {
+  } = e, n = (0, i.e7)([o.ZP], () => o.ZP.disableVoiceChannelChangeAlert);
+  return (0, r.jsx)(l.F, {
     setting: d.s6.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
     children: (0, r.jsx)(s.j7V, {
       className: m.marginBottom20,

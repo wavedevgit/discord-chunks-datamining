@@ -1,18 +1,18 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(47120);
 var r = n(192379),
   i = n(585483),
   a = n(981631);
 
-function o(e) {
+function l(e) {
   return Object.keys(e).some(t => e[t])
 }
 
-function l(e, t) {
-  let [n, l] = r.useState(t), [s, c] = r.useState(o(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
-    l(t => {
+function o(e, t) {
+  let [n, o] = r.useState(t), [s, c] = r.useState(l(n)), u = r.useRef(s), d = r.useRef(null), p = r.useCallback(e => {
+    o(t => {
       let n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -31,7 +31,7 @@ function l(e, t) {
           }
           return e
         }({}, t, e),
-        r = o(n);
+        r = l(n);
       return r !== u.current && (u.current = r, null != d.current && (cancelAnimationFrame(d.current), d.current = null), r ? c(!0) : d.current = requestAnimationFrame(() => c(!1))), n
     })
   }, []);

@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   W: () => b
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(481060),
-  l = n(626135),
+  l = n(481060),
+  o = n(626135),
   s = n(617136),
   c = n(497505),
   u = n(266843),
@@ -15,7 +15,7 @@ var i = n(120356),
   p = n(46140),
   m = n(981631),
   f = n(388032),
-  h = n(582618),
+  h = n(355060),
   g = n(87181);
 
 function _(e) {
@@ -24,13 +24,13 @@ function _(e) {
   } = e;
   return (0, r.jsx)("div", {
     className: h.buttonContainer,
-    children: (0, r.jsx)(o.zxk, {
+    children: (0, r.jsx)(l.zxk, {
       className: h.button,
-      color: o.Ttl.BRAND,
+      color: l.Ttl.BRAND,
       onClick: () => {
         (0, d.navigateToQuestHome)({
           fromContent: c.jn.EXCLUDED_QUEST_EMBED
-        }), l.default.track(m.rMx.QUEST_CONTENT_CLICKED, function(e) {
+        }), o.default.track(m.rMx.QUEST_CONTENT_CLICKED, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -72,11 +72,11 @@ function b(e) {
     }),
     children: [(0, r.jsxs)("div", {
       className: h.contentContainer,
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         variant: "lg" === i ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
         children: f.NW.string(f.t.vnP31d)
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "lg" === i ? "text-sm/medium" : "text-xs/medium",
         color: "text-normal",
         className: h.__invalid_mobileWebCopy,

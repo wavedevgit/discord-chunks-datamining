@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => $
 }), n(653041);
@@ -19,9 +19,9 @@ var r = n(200651),
   b = n(540059),
   _ = n(569545),
   C = n(517525),
-  v = n(665149),
-  y = n(6242),
-  x = n(757692),
+  y = n(665149),
+  x = n(6242),
+  v = n(757692),
   j = n(141321),
   O = n(2818),
   E = n(954551),
@@ -48,7 +48,7 @@ var r = n(200651),
   z = n(354459),
   Y = n(981631),
   q = n(388032),
-  K = n(54039);
+  K = n(232989);
 
 function X(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -135,7 +135,7 @@ function $(e) {
     voiceParticipantsHidden: U.Z.getVoiceParticipantsHidden(et),
     userParticipantCount: U.Z.getUserParticipantCount(et),
     participantsListOpen: U.Z.getParticipantsListOpen(et)
-  }), [et]), eo = (0, c.e7)([W.default], () => W.default.getCurrentUser()), ea = (0, B.Z)(n), es = (0, x.o)(er, eo), ec = (0, y.lL)("CallHeader", !0, eo, es), eu = n.isGuildVoice() && !s, {
+  }), [et]), eo = (0, c.e7)([W.default], () => W.default.getCurrentUser()), ea = (0, B.Z)(n), es = (0, v.o)(er, eo), ec = (0, x.lL)("CallHeader", !0, eo, es), eu = n.isGuildVoice() && !s, {
     hasParticipantsPanel: ed
   } = (0, G.Z)({
     location: "ChannelCallHeaderToolbar"
@@ -203,7 +203,7 @@ function $(e) {
     className: K.button,
     channelId: et,
     isHorizontal: !0
-  }, "select-participant")), em || (t || e_.push((0, r.jsx)(m.Z, {
+  }, "select-participant")), !em && (t || e_.push((0, r.jsx)(m.Z, {
     className: K.button
   }, "clips")), ee || e_.push((0, r.jsx)(j.Z, {
     onOpen: eg,
@@ -242,7 +242,7 @@ function $(e) {
         className: K.lastButton
       }))
     }
-  }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(v.ZP.Divider, {
+  }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(y.ZP.Divider, {
     className: K.divider
   }, "divider")), ep && e_.push((0, r.jsx)(M.Z, {
     className: o()(K.button, {

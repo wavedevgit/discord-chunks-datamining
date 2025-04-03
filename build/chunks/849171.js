@@ -22,8 +22,8 @@ var r, l = n(200651),
   p = n(413458),
   g = n(16609),
   E = n(527805),
-  v = n(716600),
-  h = n(778569),
+  h = n(716600),
+  v = n(778569),
   b = n(563218),
   S = n(318891),
   y = n(884338),
@@ -40,7 +40,7 @@ var r, l = n(200651),
   A = n(823379),
   C = n(5192),
   T = n(388032),
-  D = n(867448),
+  D = n(754438),
   M = ((r = {})[r.SMALL = 0] = "SMALL", r[r.MEDIUM = 1] = "MEDIUM", r[r.LARGE = 2] = "LARGE", r);
 let k = 1024,
   L = ["embedded_background"];
@@ -98,17 +98,17 @@ function Y(e) {
     participants: r,
     application: a,
     channel: g,
-    width: v
-  } = e, h = U(v), [b] = F(v), S = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), y = (0, u.e7)([f.ZP], () => {
+    width: h
+  } = e, v = U(h), [b] = F(h), S = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), y = (0, u.e7)([f.ZP], () => {
     var e;
-    return null !== (e = f.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => e.applicationId === a.id)) && void 0 !== e ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(g.id).find(e => e.applicationId === a.id)
+    return null != (e = f.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(g.id).find(e => e.applicationId === a.id)
   }), {
     analyticsLocations: O
   } = (0, j.ZP)(), Z = (0, d.O)(), I = C.ZP.getName(g.getGuildId(), g.id, null == S ? void 0 : S[0]), N = (0, E.s5)({
-    userId: null === (t = R.default.getCurrentUser()) || void 0 === t ? void 0 : t.id,
+    userId: null == (t = R.default.getCurrentUser()) ? void 0 : t.id,
     channelId: g.id,
     application: a
-  }) === E.Fw.CAN_JOIN, _ = null !== (n = g.getGuildId()) && void 0 !== n ? n : void 0, P = i.useId(), M = a.id, k = i.useMemo(() => ({
+  }) === E.Fw.CAN_JOIN, _ = null != (n = g.getGuildId()) ? n : void 0, P = i.useId(), M = a.id, k = i.useMemo(() => ({
     channel: g,
     type: "channel"
   }), [g]), {
@@ -127,8 +127,8 @@ function Y(e) {
       users: S
     }), (0, l.jsx)(c.Text, {
       className: o()(D.subheader, {
-        [D.small]: 0 === h,
-        [D.medium]: 1 === h
+        [D.small]: 0 === v,
+        [D.medium]: 1 === v
       }),
       variant: "text-sm/normal",
       children: S.length > 1 ? T.NW.formatToPlainString(T.t.cpe6CA, {
@@ -139,8 +139,8 @@ function Y(e) {
       })
     }), (0, l.jsx)(c.Text, {
       className: o()(D.header, {
-        [D.small]: 0 === h,
-        [D.medium]: 1 === h
+        [D.small]: 0 === v,
+        [D.medium]: 1 === v
       }),
       variant: "text-sm/normal",
       children: a.name
@@ -159,7 +159,7 @@ function Y(e) {
           })
         },
         submitting: L,
-        size: W(h),
+        size: W(v),
         className: D.button,
         look: c.iLD.FILLED,
         color: c.zxk.Colors.WHITE,
@@ -180,9 +180,9 @@ function z(e) {
     analyticsLocations: s
   } = (0, j.ZP)(I.Z.ACTIVITY_TILE), {
     applicationId: c
-  } = t, d = (0, v.Z)(), f = null != d && (0, g.pY)(d.location) === o.id && d.applicationId === c, [m] = (0, N.Z)([c]), {
+  } = t, d = (0, h.Z)(), f = null != d && (0, g.pY)(d.location) === o.id && d.applicationId === c, [m] = (0, N.Z)([c]), {
     url: p
-  } = (0, h.Z)({
+  } = (0, v.Z)({
     applicationId: c,
     names: L,
     size: k

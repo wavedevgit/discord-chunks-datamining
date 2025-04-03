@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 }), n(266796);
@@ -7,8 +7,8 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(494391),
-  l = n(663526);
+  l = n(589608),
+  o = n(270434);
 let c = e => {
   let {
     icon: t,
@@ -17,11 +17,11 @@ let c = e => {
     description: c
   } = e;
   return (0, r.jsxs)("div", {
-    className: s()(l.container, o.box),
+    className: s()(o.container, l.box),
     children: [(0, r.jsx)("div", {
-      className: l.circle,
+      className: o.circle,
       children: (0, r.jsx)(t, {
-        className: s()(l.icon, n),
+        className: s()(o.icon, n),
         size: "custom",
         width: 20,
         height: 20,
@@ -30,7 +30,7 @@ let c = e => {
     }), (0, r.jsxs)("div", {
       children: [(0, r.jsx)(a.X6q, {
         variant: "heading-md/bold",
-        className: l.header,
+        className: o.header,
         children: (0, r.jsx)(a.y5t, {
           children: i
         })

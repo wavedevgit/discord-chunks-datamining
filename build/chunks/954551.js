@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(200651),
   i = n(192379),
   a = n(481060),
-  o = n(665149),
-  l = n(388035),
+  l = n(665149),
+  o = n(388035),
   s = n(453473),
   c = n(388032);
 
@@ -23,10 +23,10 @@ function u(e) {
     popoutAlign: "right",
     children: (e, t, n, i) => {
       var s, p;
-      return (0, r.jsx)(l.U, {
+      return (0, r.jsx)(o.U, {
         location: "bookmarks-button",
         targetElementRef: d,
-        children: (0, r.jsx)(o.JO, (s = function(e) {
+        children: (0, r.jsx)(l.JO, (s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);

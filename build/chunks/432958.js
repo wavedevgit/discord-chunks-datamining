@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   A: () => I
 });
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(687158),
   _ = n(471879),
   C = n(502762),
-  v = n(848780),
-  y = n(907179);
+  y = n(848780),
+  x = n(907179);
 n(475413);
-var x = n(228168),
+var v = n(228168),
   j = n(388032),
-  O = n(209727),
+  O = n(682964),
   E = n(321975);
 
 function N(e) {
@@ -66,7 +66,7 @@ function I(e) {
         ref: A,
         user: t,
         displayProfile: I,
-        profileType: x.y0.PANEL,
+        profileType: v.y0.PANEL,
         themeOverride: P,
         children: (0, r.jsx)(a.u2, {
           children: (0, r.jsxs)("div", {
@@ -93,7 +93,7 @@ function I(e) {
                 })]
               }), (0, r.jsxs)(c.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(y.Z, {
+                children: [(0, r.jsx)(x.Z, {
                   isBlocked: S,
                   onClick: () => {
                     null == l || l(), (0, g.pQ)(N({
@@ -101,7 +101,7 @@ function I(e) {
                       analyticsLocations: Z
                     }, T))
                   }
-                }), (0, r.jsx)(v.Z, {
+                }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
                     null == l || l(), (0, g.pQ)(N({

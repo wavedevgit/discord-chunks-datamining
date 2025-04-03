@@ -153,7 +153,7 @@ function S(e, t, n) {
 
 function N(e, t, n, r, o) {
   var a;
-  e: if ("style" === t) {
+  e: if ("style" === t)
     if ("string" == typeof n) e.style.cssText = n;
     else {
       if ("string" == typeof r && (e.style.cssText = r = ""), r)
@@ -161,7 +161,7 @@ function N(e, t, n, r, o) {
       if (n)
         for (t in n) r && n[t] === r[t] || S(e.style, t, n[t])
     }
-  } else if ("o" === t[0] && "n" === t[1]) a = t !== (t = t.replace(/Capture$/, "")), t = t.toLowerCase() in e ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + a] = n, n ? r || e.addEventListener(t, a ? P : x, a) : e.removeEventListener(t, a ? P : x, a);
+  else if ("o" === t[0] && "n" === t[1]) a = t !== (t = t.replace(/Capture$/, "")), t = t.toLowerCase() in e ? t.toLowerCase().slice(2) : t.slice(2), e.l || (e.l = {}), e.l[t + a] = n, n ? r || e.addEventListener(t, a ? P : x, a) : e.removeEventListener(t, a ? P : x, a);
   else if ("dangerouslySetInnerHTML" !== t) {
     if (o) t = t.replace(/xlink(H|:h)/, "h").replace(/sName$/, "s");
     else if ("width" !== t && "height" !== t && "href" !== t && "list" !== t && "form" !== t && "tabIndex" !== t && "download" !== t && t in e) try {

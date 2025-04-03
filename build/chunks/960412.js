@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Y7: () => c,
   oc: () => u,
@@ -8,17 +8,17 @@ var r = n(990547),
   i = n(283693),
   s = n(570140),
   a = n(573261),
-  o = n(930441),
-  l = n(981631);
+  l = n(930441),
+  o = n(981631);
 async function c() {
   try {
     let e = await a.Z.get({
-      url: l.ANM.EMAIL_SETTINGS,
+      url: o.ANM.EMAIL_SETTINGS,
       trackedActionData: {
         event: r.NetworkActionNames.EMAIL_SETTINGS_FETCH,
         properties: e => {
           var t;
-          let n = null == e ? void 0 : null === (t = e.body) || void 0 === t ? void 0 : t.initialized;
+          let n = null == e || null == (t = e.body) ? void 0 : t.initialized;
           return (0, i.iG)({
             initialized: n
           })
@@ -45,7 +45,7 @@ async function d(e, t) {
   });
   try {
     let n = await a.Z.patch({
-      url: l.ANM.EMAIL_SETTINGS,
+      url: o.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
           categories: {
@@ -73,7 +73,7 @@ async function d(e, t) {
   }
 }
 async function u() {
-  let e = o.M0.reduce((e, t) => {
+  let e = l.M0.reduce((e, t) => {
     var n, r;
     return n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -111,7 +111,7 @@ async function u() {
   });
   try {
     let t = await a.Z.patch({
-      url: l.ANM.EMAIL_SETTINGS,
+      url: o.ANM.EMAIL_SETTINGS,
       body: {
         settings: {
           categories: e

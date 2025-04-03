@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -15,7 +15,7 @@ var i = n(392711),
   u = n(449226),
   m = n(981631),
   g = n(388032),
-  p = n(59736);
+  p = n(296205);
 
 function h(e) {
   let t, {
@@ -27,16 +27,16 @@ function h(e) {
     x = n.isOwner(b),
     j = null == b ? void 0 : b.mfaEnabled,
     N = h === m.BpS.ELEVATED,
-    v = x && j,
-    _ = (0, i.throttle)(async e => {
-      v && await d.Z.updateMFALevel({
+    _ = x && j,
+    v = (0, i.throttle)(async e => {
+      _ && await d.Z.updateMFALevel({
         guildId: n.id,
         level: e ? m.BpS.ELEVATED : m.BpS.NONE,
         isEnabled: !e
       })
     }, 1e3);
   if (!f) return null;
-  v || (t = x ? g.NW.format(g.t.nFwNyc, {
+  _ || (t = x ? g.NW.format(g.t.nFwNyc, {
     settingsHook: () => l.Z.open(m.oAB.ACCOUNT)
   }) : g.NW.string(g.t["9Ghu4+"]));
   let C = n.hasFeature(m.oNc.DISCOVERABLE);
@@ -53,18 +53,18 @@ function h(e) {
         color: "header-secondary",
         children: [g.NW.string(g.t["a/93Jy"]), " ", t]
       })]
-    }), !v || N && C ? (0, r.jsx)(a.ua7, {
+    }), !_ || N && C ? (0, r.jsx)(a.ua7, {
       text: C ? g.NW.string(g.t["KG1V/P"]) : x ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
       children: e => (0, r.jsx)(u.Z, {
         checked: N,
         disabled: !0,
-        onChange: _,
+        onChange: v,
         className: p.bringToFront,
         tooltipProps: e
       })
     }) : (0, r.jsx)(u.Z, {
       checked: N,
-      onChange: _,
+      onChange: v,
       className: p.bringToFront
     })]
   })

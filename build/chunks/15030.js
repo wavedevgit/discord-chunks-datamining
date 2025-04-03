@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -18,25 +18,24 @@ var r = n(200651),
   h = n(975464),
   f = n(981631),
   b = n(674563),
-  x = n(198403);
+  x = n(94072);
 
 function j() {
-  let e;
-  let t = (0, s.e7)([d.Z], () => d.Z.getGuild()),
+  let e, t = (0, s.e7)([d.Z], () => d.Z.getGuild()),
     {
       application: n,
       loading: j
     } = (0, o.Z)(null == t ? void 0 : t.id, b.wW.GUILD_ROLE_SUBSCRIPTIONS),
     N = i.useRef(null),
-    v = (0, u.Z)(null != t ? t : void 0);
+    _ = (0, u.Z)(null != t ? t : void 0);
   i.useEffect(() => {
     null != t && (0, m.sO)(t) && (0, c.EW)(a.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [t]);
-  let _ = (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
-  return e = null == t || j ? (0, r.jsx)(l.$jN, {}) : null != v ? (0, r.jsx)(p.Z, {
+  let v = (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.hasFeature(f.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
+  return e = null == t || j ? (0, r.jsx)(l.$jN, {}) : null != _ ? (0, r.jsx)(p.Z, {
     guild: t,
-    config: v
-  }) : _ ? (0, r.jsx)(h.Z, {
+    config: _
+  }) : v ? (0, r.jsx)(h.Z, {
     guild: t
   }) : (0, r.jsx)(g.Z, {
     guild: t,

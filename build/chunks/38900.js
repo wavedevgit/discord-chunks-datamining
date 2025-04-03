@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(120356),
-  o = n.n(l),
-  a = n(648522),
-  i = n(933433),
-  s = n(246659),
-  c = n(90289);
+  a = n.n(l),
+  o = n(484920),
+  i = n(544348),
+  s = n(556559),
+  c = n(33588);
 let u = () => 4 * Math.random() + 8,
   d = [u(), u(), u()],
   b = () => (0, r.jsx)("div", {
-    className: o()(s.skeleton, c.shopCard),
+    className: a()(s.skeleton, c.shopCard),
     children: (0, r.jsxs)("div", {
       className: s.cardBody,
       children: [(0, r.jsx)("div", {
@@ -30,11 +30,11 @@ let u = () => 4 * Math.random() + 8,
     })
   }),
   p = () => (0, r.jsx)("div", {
-    className: a.skeletons,
+    className: o.skeletons,
     children: d.map(e => (0, r.jsxs)("div", {
-      className: a.cardsContainer,
+      className: o.cardsContainer,
       children: [(0, r.jsx)("div", {
-        className: o()(s.skeleton, i.shopBanner),
+        className: a()(s.skeleton, i.shopBanner),
         children: (0, r.jsx)("div", {
           className: s.bannerBody
         })

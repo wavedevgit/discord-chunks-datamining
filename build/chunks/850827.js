@@ -34,8 +34,8 @@ var l = n(120356),
   T = n(981631),
   A = n(477839),
   D = n(388032),
-  _ = n(884479),
-  k = n(456312);
+  _ = n(622802),
+  k = n(126485);
 let L = e => {
     let {
       user: t,
@@ -71,7 +71,7 @@ let L = e => {
     } = e, F = (0, s.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), B = R === j.Y.STREAM_PREVIEW || null != o, G = (0, h.Z)(t), Y = G || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    }), B = R === j.Y.STREAM_PREVIEW || null != o, Y = (0, h.Z)(t), G = Y || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === A.bO) {
       var z, H;
       return z = function(e) {
@@ -113,11 +113,11 @@ let L = e => {
         onAction: V
       })
     }
-    let J = Y === f.Z.Direction.VERTICAL;
+    let J = G === f.Z.Direction.VERTICAL;
     return (0, r.jsx)(f.Z, {
       grow: 0,
       align: f.Z.Align.STRETCH,
-      direction: Y,
+      direction: G,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
       className: i()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
       children: (() => {
@@ -135,7 +135,7 @@ let L = e => {
           onAction: V,
           Icon: O.Z
         }, "ConnectPlatformActivityButton");
-        if (G) {
+        if (Y) {
           let e = (0, r.jsx)(x.Z, {
               activity: t,
               user: l,

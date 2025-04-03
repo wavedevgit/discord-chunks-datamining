@@ -18,7 +18,7 @@ var l = n(442837),
   m = n(979651),
   g = n(153066),
   b = n(981631),
-  O = n(834601);
+  O = n(66569);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -104,15 +104,20 @@ let j = a.Z.Types,
     }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]);
     let S = (0, l.e7)([m.Z, p.Z], () => {
         var e;
-        return p.Z.getChannel(null === (e = m.Z.getVoiceStateForUser(n.id)) || void 0 === e ? void 0 : e.channelId)
+        return p.Z.getChannel(null == (e = m.Z.getVoiceStateForUser(n.id)) ? void 0 : e.channelId)
       }),
       P = (0, l.e7)([d.Z], () => i ? d.Z.getAnyStreamForUser(n.id) : null),
       N = (0, l.e7)([f.Z, m.Z, p.Z], () => {
         var e, r;
-        return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null === (e = p.Z.getChannel(null === (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) || void 0 === r ? void 0 : r.channelId)) || void 0 === e ? void 0 : e.getGuildId()) : null
+        return (0, o.Z)(t, b.xjy.EMBEDDED) ? f.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null
       }),
       I = (0, l.e7)([f.Z], () => null != P ? f.Z.getGuild(P.guildId) : null),
-      E = (0, l.e7)([c.Z], () => null != t ? null != t.application_id ? c.Z.getApplication(t.application_id) : c.Z.getApplicationByName(t.name) : null);
+      E = (0, l.e7)([c.Z], () => {
+        if (null != t)
+          if (null != t.application_id) return c.Z.getApplication(t.application_id);
+          else return c.Z.getApplicationByName(t.name);
+        return null
+      });
     return (null == t ? void 0 : t.type) === b.IIU.HANG_STATUS ? null : (0, r.jsx)(a.Z, h(y({}, j), {
       activity: t,
       user: n,

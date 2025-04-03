@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   S: () => O,
   Z: () => E
@@ -20,9 +20,9 @@ var r = n(200651),
   b = n(721351),
   _ = n(420529),
   C = n(927923),
-  v = n(981631),
-  y = n(921944),
-  x = n(388032);
+  y = n(981631),
+  x = n(921944),
+  v = n(388032);
 
 function j(e) {
   let {
@@ -33,7 +33,7 @@ function j(e) {
     onClose: t,
     onSelect: () => null,
     navId: "transfer-menu",
-    "aria-label": x.NW.string(x.t.jqqLb2),
+    "aria-label": v.NW.string(v.t.jqqLb2),
     children: i
   })
 }
@@ -65,14 +65,14 @@ function E(e) {
   let _ = (0, f.Z)(),
     O = (0, l.e7)([h.Z], () => {
       var e, t;
-      return null === (e = h.Z.getSessionById(null !== (t = null == _ ? void 0 : _.sessionId) && void 0 !== t ? t : "")) || void 0 === e ? void 0 : e.clientInfo.os
+      return null == (e = h.Z.getSessionById(null != (t = null == _ ? void 0 : _.sessionId) ? t : "")) ? void 0 : e.clientInfo.os
     }),
     E = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
     [N, I] = (0, l.Wu)([s.Z], () => [s.Z.getMode(t.id), s.Z.getLayout(t.id)]),
     P = (0, a.s9z)(a.JQI),
     S = (0, m.Z)().filter(e => e.twoWayLink),
     [Z, T] = i.useState(!1),
-    A = v.WtW.VOICE !== N && [v.AEg.NO_CHAT, v.AEg.FULL_SCREEN].includes(I) ? "top" : "bottom",
+    A = y.WtW.VOICE !== N && [y.AEg.NO_CHAT, y.AEg.FULL_SCREEN].includes(I) ? "top" : "bottom",
     w = [];
   return S.length > 0 && w.push(o.z.DONUT_DESKTOP_NUX), (0, r.jsx)(c.ZP, {
     contentTypes: w,
@@ -94,9 +94,9 @@ function E(e) {
           return (0, r.jsx)(u.Z, {
             children: s ? (0, r.jsx)(g.Z, {
               popoutPosition: A,
-              onDismiss: () => l(y.L.UNKNOWN),
+              onDismiss: () => l(x.L.UNKNOWN),
               onAccept: () => {
-                l(y.L.UNKNOWN), T(!0)
+                l(x.L.UNKNOWN), T(!0)
               },
               gameConsoleAccounts: S
             }) : (0, r.jsx)(j, {
@@ -128,7 +128,7 @@ function E(e) {
             return e
           }({}, e, n), i = i = {
             onClick: () => T(!0),
-            label: null != O ? O === C.YE.XBOX ? x.NW.string(x.t.T0uYKy) : x.NW.string(x.t.FWAzS0) : x.NW.string(x.t["mbi/fH"]),
+            label: null != O ? O === C.YE.XBOX ? v.NW.string(v.t.T0uYKy) : v.NW.string(v.t.FWAzS0) : v.NW.string(v.t["mbi/fH"]),
             iconComponent: (0, b.Z)(O)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
             var n = Object.keys(e);

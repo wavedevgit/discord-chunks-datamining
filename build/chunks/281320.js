@@ -11,11 +11,11 @@ var d = ((i = {})[i.NOT_FETCHED = 0] = "NOT_FETCHED", i[i.FETCHING = 1] = "FETCH
 class p extends(r = a.ZP.Store) {
   getPriceTiersFetchStateForGuildAndType(e, t) {
     var n, r;
-    return null !== (r = null === (n = c.get(e)) || void 0 === n ? void 0 : n.get(t)) && void 0 !== r ? r : 0
+    return null != (r = null == (n = c.get(e)) ? void 0 : n.get(t)) ? r : 0
   }
   getPriceTiersForGuildAndType(e, t) {
     var n;
-    return null === (n = s.get(e)) || void 0 === n ? void 0 : n.get(t)
+    return null == (n = s.get(e)) ? void 0 : n.get(t)
   }
 }
 o = "CreatorMonetizationStore", (l = "displayName") in p ? Object.defineProperty(p, l, {

@@ -27,9 +27,9 @@ var r = n(442837),
   m = n(185457),
   x = n(933409),
   M = n(570870),
-  v = n(389052),
-  S = n(24311),
-  y = n(332576),
+  S = n(389052),
+  y = n(24311),
+  v = n(332576),
   _ = n(158508),
   k = n(710631),
   A = n(297047),
@@ -67,7 +67,7 @@ let W = (0, s.Z)((0, a.Z)(function(e) {
     guildId: n,
     channelId: J,
     showGuildProfile: !0
-  }), ee = (0, A.Z)(l, n, B), el = (0, I.Z)(l.id, B), en = (0, L.Z)(l.id), et = (0, S.Z)({
+  }), ee = (0, A.Z)(l, n, B), el = (0, I.Z)(l.id, B), en = (0, L.Z)(l.id), et = (0, y.Z)({
     user: l,
     context: B
   }), er = (0, m.Z)({
@@ -91,7 +91,7 @@ let W = (0, s.Z)((0, a.Z)(function(e) {
     guildId: n
   }), eu = (0, c.Z)(null, l), eZ = (0, P.Z)({
     user: l
-  }), eh = (0, v.Z)({
+  }), eh = (0, S.Z)({
     user: l,
     guildId: n,
     channelId: J,
@@ -104,25 +104,25 @@ let W = (0, s.Z)((0, a.Z)(function(e) {
   }), ef = (0, x.Z)(l, n, J), eO = (0, w.Z)(l.id, n), eN = (0, R.Z)(l, n), ep = (0, O.Z)({
     id: l.id,
     label: Q.NW.string(Q.t["/AXYnJ"])
-  }), eb = (0, y.Z)(l.id, J), ej = (0, h.Z)(l.id), eE = (0, Z.Z)(J), eP = (0, p.Z)(l), eC = (0, b.Z)(l, n, J), em = (0, r.e7)([j.Z], () => null != Y ? j.Z.getChannel(Y) : null), ex = (0, M.Z)({
+  }), eb = (0, v.Z)(l.id, J), ej = (0, h.Z)(l.id), eE = (0, Z.Z)(J), eP = (0, p.Z)(l), eC = (0, b.Z)(l, n, J), em = (0, r.e7)([j.Z], () => null != Y ? j.Z.getChannel(Y) : null), ex = (0, M.Z)({
     commandType: o.yU.USER,
     commandTargetId: l.id,
     channel: null != em ? em : a,
     guildId: n,
     onHeightUpdate: X,
     context: B
-  }), eM = (0, g.Z)(l.id), ev = (0, r.e7)([E.Z], () => E.Z.getVoiceChannelId()), eS = (0, U.Z)(l, ev), ey = l.isNonUserBot();
+  }), eM = (0, g.Z)(l.id), eS = (0, r.e7)([E.Z], () => E.Z.getVoiceChannelId()), ey = (0, U.Z)(l, eS), ev = l.isNonUserBot();
   return (0, t.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: d.Zy,
     "aria-label": Q.NW.string(Q.t.liqwPD),
     onSelect: F,
     onInteraction: K,
-    children: [!ey && (0, t.jsxs)(t.Fragment, {
+    children: [!ev && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsxs)(i.kSQ, {
         children: [eP, V && eC]
       }), (0, t.jsxs)(i.kSQ, {
-        children: [H && z, u && ee, el, et, eS, H && er, H && ei, en]
+        children: [H && z, u && ee, el, et, ey, H && er, H && ei, en]
       }), s && (0, t.jsx)(i.kSQ, {
         children: ed
       }), (0, t.jsx)(i.kSQ, {

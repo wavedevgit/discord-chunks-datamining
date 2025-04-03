@@ -1,15 +1,15 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 }), n(266796);
 var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(579139);
-let l = e => {
-  var t, n, i, l;
+  l = n(344253);
+let o = e => {
+  var t, n, i, o;
   let {
     title: c,
     shouldShowElement: d,
@@ -22,15 +22,15 @@ let l = e => {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-xl/extrabold",
-      className: s()(o.cardHeading, g),
+      className: s()(l.cardHeading, g),
       children: c
     }), "" !== p && (null == d || d(null == u ? void 0 : u.subtitle)) && (0, r.jsxs)("div", {
       className: h,
       children: [(0, r.jsx)(a.Text, {
-        variant: null !== (i = null == u ? void 0 : null === (t = u.subtitle) || void 0 === t ? void 0 : t.textVariant) && void 0 !== i ? i : "text-sm/normal",
+        variant: null != (i = null == u || null == (t = u.subtitle) ? void 0 : t.textVariant) ? i : "text-sm/normal",
         children: p
       }), null != m && (0, r.jsx)(a.Text, {
-        variant: null !== (l = null == u ? void 0 : null === (n = u.description) || void 0 === n ? void 0 : n.textVariant) && void 0 !== l ? l : "text-sm/normal",
+        variant: null != (o = null == u || null == (n = u.description) ? void 0 : n.textVariant) ? o : "text-sm/normal",
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("br", {}), m]
         })

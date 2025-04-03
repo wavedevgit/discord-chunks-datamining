@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => _
 });
@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   s = n(385499),
   c = n(430824),
   u = n(739566),
@@ -16,7 +16,7 @@ var i = n(120356),
   m = n(834129),
   f = n(674563),
   h = n(388032),
-  g = n(60292);
+  g = n(126759);
 
 function _(e) {
   var t;
@@ -25,8 +25,8 @@ function _(e) {
     compact: i,
     usernameHook: _,
     channel: b
-  } = e, v = (0, o.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), x = (0, u.ZP)(n), y = _(x), {
-    avatarSrc: E,
+  } = e, x = (0, l.e7)([c.Z], () => c.Z.getGuild(b.guild_id)), y = (0, u.ZP)(n), E = _(y), {
+    avatarSrc: v,
     eventHandlers: {
       onMouseEnter: O,
       onMouseLeave: N
@@ -40,7 +40,7 @@ function _(e) {
         [g.compact]: i
       }),
       iconNode: i ? null : (0, r.jsx)(p.S, {
-        src: E
+        src: v
       }),
       iconContainerClassName: g.iconContainer,
       compact: i,
@@ -56,7 +56,7 @@ function _(e) {
           }),
           username: (0, r.jsxs)("div", {
             className: g.spanCorrection,
-            children: [(0, r.jsx)(l.Text, {
+            children: [(0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "text-brand",
               tag: "span",
@@ -74,9 +74,9 @@ function _(e) {
             [g.compact]: i
           }),
           children: h.NW.format(h.t.W0UBIy, {
-            username: x.nick,
-            usernameHook: y,
-            guildName: null !== (t = null == v ? void 0 : v.name) && void 0 !== t ? t : ""
+            username: y.nick,
+            usernameHook: E,
+            guildName: null != (t = null == x ? void 0 : x.name) ? t : ""
           })
         })]
       })

@@ -1,20 +1,20 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Z: () => l
+  Z: () => o
 });
 var r = n(200651),
   i = n(192379),
   s = n(392711),
   a = n(680295);
-let o = e => 1 === e ? -1 : Math.floor(Math.random() * e),
-  l = e => {
+let l = e => 1 === e ? -1 : Math.floor(Math.random() * e),
+  o = e => {
     let {
       config: t
-    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), l = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = i.useMemo(() => {
-      if (l) {
-        let e = o(n.effects.reduce((e, t) => {
+    } = e, n = i.useMemo(() => (0, s.cloneDeep)(t), [t]), o = i.useMemo(() => t.effects.some(e => null != e.randomizedSources && e.randomizedSources.length > 0), [t]), c = i.useMemo(() => {
+      if (o) {
+        let e = l(n.effects.reduce((e, t) => {
           var n;
-          let r = 1 + (null !== (n = t.randomizedSources) && void 0 !== n ? n : []).length;
+          let r = 1 + (null != (n = t.randomizedSources) ? n : []).length;
           return r > 1 ? 1 === e ? r : Math.min(r, e) : e
         }, 1));
         e > 0 && t.effects.forEach((t, r) => {
@@ -22,7 +22,7 @@ let o = e => 1 === e ? -1 : Math.floor(Math.random() * e),
         })
       }
       return n
-    }, [t.effects, n, l]);
+    }, [t.effects, n, o]);
     return (0, r.jsx)(a.n, {
       profileEffectConfig: c,
       profileEffectId: "debug"

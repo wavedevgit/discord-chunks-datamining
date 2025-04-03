@@ -10,15 +10,15 @@ var n = r(200651),
   c = r(981729),
   s = r(911969),
   u = r(558522),
-  d = r(981631),
-  p = r(388032),
-  f = r(615099);
+  p = r(981631),
+  d = r(388032),
+  f = r(868327);
 
 function b(e) {
   let t = l.useRef(null),
     r = e.media;
   if (r.loadingState === s.f.LOADED_NOT_FOUND) return (0, n.jsx)(c.u, {
-    text: p.NW.string(p.t.UvDfMz),
+    text: d.NW.string(d.t.UvDfMz),
     position: "bottom",
     align: "center",
     targetElementRef: t,
@@ -66,7 +66,7 @@ function b(e) {
       }), l))
     }
   });
-  let i = r.loadingState === s.f.LOADING ? d.zo9.LOADING : d.zo9.ERROR;
+  let i = r.loadingState === s.f.LOADING ? p.zo9.LOADING : p.zo9.ERROR;
   return (0, n.jsx)(a.E, {
     className: o()(e.className, {
       [f.hiddenSpoilers]: e.hiddenSpoilers

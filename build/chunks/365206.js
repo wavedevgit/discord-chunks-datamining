@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => f
 });
@@ -6,12 +6,12 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   a = n.n(i),
-  o = n(867824),
-  l = n(481060),
+  l = n(867824),
+  o = n(481060),
   s = n(839963),
   c = n(139256),
   u = n(388032),
-  d = n(662114);
+  d = n(241127);
 
 function p(e) {
   let {
@@ -21,13 +21,13 @@ function p(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: d.votesData,
-    children: [t && (0, r.jsx)(o.T, {
+    children: [t && (0, r.jsx)(l.T, {
       children: u.NW.string(u.t["8DAM+/"])
-    }), (0, r.jsxs)(l.Text, {
+    }), (0, r.jsxs)(o.Text, {
       variant: "text-md/semibold",
       color: "none",
       children: [i, "%"]
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/semibold",
       color: "none",
       children: n
@@ -40,24 +40,24 @@ function m(e) {
     answer: t,
     isExpired: n,
     myAvatarUrl: i,
-    canShowVoteCounts: o
-  } = e, l = !0 === t.isSelected, s = !0 === t.didSelfVote, u = !0 === t.isVictor;
+    canShowVoteCounts: l
+  } = e, o = !0 === t.isSelected, s = !0 === t.didSelfVote, u = !0 === t.isVictor;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$w, {
       attachmentClassName: a()(d.attachment, {
-        [d.attachmentWithResults]: o
+        [d.attachmentWithResults]: l
       }),
       emojiClassName: d.emoji,
       media: t.pollMedia,
       fallback: (0, r.jsx)("div", {
         className: a()(d.attachment, d.mediaMissing)
       })
-    }), l && (0, r.jsx)(c.ZY, {
+    }), o && (0, r.jsx)(c.ZY, {
       size: 40,
       isVictor: u,
       isExpired: n,
       className: d.selectedIcon
-    }), o && (0, r.jsxs)(r.Fragment, {
+    }), l && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p, {
         didSelfVote: s,
         percentage: t.votesPercentage,
@@ -78,8 +78,8 @@ function f(e) {
     isExpired: t,
     myAvatarUrl: n,
     answersInteraction: i,
-    canShowVoteCounts: o
-  } = e, l = function(e, t) {
+    canShowVoteCounts: l
+  } = e, o = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -123,7 +123,7 @@ function f(e) {
       isExpired: t,
       myAvatarUrl: n,
       answersInteraction: i,
-      canShowVoteCounts: o
+      canShowVoteCounts: l
     })
-  }, l))
+  }, o))
 }

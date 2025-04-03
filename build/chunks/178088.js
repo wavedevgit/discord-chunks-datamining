@@ -1,12 +1,12 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   k: () => S
 }), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(274312),
-  o = n(442837),
-  l = n(524437),
+  l = n(442837),
+  o = n(524437),
   s = n(481060),
   c = n(100527),
   u = n(906732),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(581883),
   _ = n(585483),
   b = n(932232),
-  v = n(400445),
-  x = n(153209),
-  y = n(956961),
-  E = n(903672),
+  x = n(400445),
+  y = n(153209),
+  E = n(956961),
+  v = n(903672),
   O = n(711165),
   N = n(946443),
   j = n(264233),
@@ -45,23 +45,23 @@ function S(e) {
       location: "RecentsPopout"
     }, {
       autoTrackExposure: !1
-    }), t = (0, o.e7)([g.Z], () => {
+    }), t = (0, l.e7)([g.Z], () => {
       var e, t;
-      return null !== (t = null === (e = g.Z.settings.inbox) || void 0 === e ? void 0 : e.currentTab) && void 0 !== t ? t : l.X.UNREADS
+      return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : o.X.UNREADS
     }), n = i.useCallback(e => {
       h.hW.updateAsync("inbox", t => {
         if (t.currentTab === e) return !1;
         t.currentTab = e
       }, h.fy.FREQUENT_USER_ACTION)
     }, []);
-    return e || t !== l.X.FOR_YOU || (t = l.X.UNREADS, n(l.X.UNREADS)), [t, n]
+    return e || t !== o.X.FOR_YOU || (t = o.X.UNREADS, n(o.X.UNREADS)), [t, n]
   }(), {
     showTutorial: L,
     setSeenTutorial: M
   } = function(e) {
-    let t = (0, o.e7)([g.Z], () => {
+    let t = (0, l.e7)([g.Z], () => {
         var e, t;
-        return null !== (t = null === (e = g.Z.settings.inbox) || void 0 === e ? void 0 : e.viewedTutorial) && void 0 !== t && t
+        return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.viewedTutorial) && t
       }),
       n = i.useCallback(() => {
         h.hW.updateAsync("inbox", e => {
@@ -69,7 +69,7 @@ function S(e) {
         }, h.fy.INFREQUENT_USER_ACTION)
       }, []);
     return {
-      showTutorial: !t && e === l.X.UNREADS,
+      showTutorial: !t && e === o.X.UNREADS,
       setSeenTutorial: n
     }
   }(R), W = i.useCallback(() => {
@@ -87,13 +87,13 @@ function S(e) {
     inInbox: G
   } = p.Z.useExperiment({
     location: "RecentsPopout"
-  }), H = (0, o.e7)([m.Z], () => m.Z.hasOverdueReminder(), []) && B && G, {
+  }), H = (0, l.e7)([m.Z], () => m.Z.hasOverdueReminder(), []) && B && G, {
     enabled: V
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    ((!F || B && G) && R === l.X.TODOS || R === l.X.BOOKMARKS && !(B || G)) && D(l.X.MENTIONS)
+    ((!F || B && G) && R === o.X.TODOS || R === o.X.BOOKMARKS && !(B || G)) && D(o.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || W()
@@ -110,28 +110,28 @@ function S(e) {
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
           "aria-label": I.NW.string(I.t.GSmTKC),
-          children: R === l.X.FOR_YOU ? (0, r.jsx)(x.Z, {
+          children: R === o.X.FOR_YOU ? (0, r.jsx)(y.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === l.X.MENTIONS ? (0, r.jsx)(E.Z, {
+          }) : R === o.X.MENTIONS ? (0, r.jsx)(v.Z, {
             setTab: D,
             onJump: z,
             badgeState: T,
             closePopout: W
-          }) : V && R === l.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
+          }) : V && R === o.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : F && R === l.X.TODOS ? (0, r.jsx)(y.Z, {
+          }) : F && R === o.X.TODOS ? (0, r.jsx)(E.Z, {
             setTab: D,
             onJump: z,
             closePopout: W
-          }) : B && G && R === l.X.BOOKMARKS ? (0, r.jsx)(v.Z, {
+          }) : B && G && R === o.X.BOOKMARKS ? (0, r.jsx)(x.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === l.X.SCHEDULED ? (0, r.jsx)(O._, {
+          }) : R === o.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {

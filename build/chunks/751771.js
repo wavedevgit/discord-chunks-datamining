@@ -5,13 +5,13 @@ n.d(t, {
 }), n(47120);
 var u, c, h, g = n(442837),
   m = n(570140),
-  v = n(823385),
-  x = n(814443),
+  x = n(823385),
+  v = n(814443),
   p = n(823379),
   N = n(971130),
   I = n(592125),
-  j = n(496675),
-  f = n(699516),
+  f = n(496675),
+  j = n(699516),
   S = n(981631),
   E = n(245335);
 let T = new Set,
@@ -22,9 +22,9 @@ function _(e) {
   let t = new Set,
     n = null == r || d === E.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
     l = (0, N.rh)(T, n);
-  for (let e of (null == l || f.Z.isBlocked(l.id) || t.add(l.id), x.Z.getUserAffinitiesUserIds())) t.add(e);
+  for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), v.Z.getUserAffinitiesUserIds())) t.add(e);
   let i = new Set;
-  return d === E.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => j.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
+  return d === E.Iq.EMBEDDED_APPLICATION && x.Z.getChannelHistory().map(e => I.Z.getChannel(e)).filter(p.lm).filter(e => e.type === S.d4z.GUILD_TEXT).filter(e => f.Z.can(S.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => i.add(e.id)), (0, N.an)({
     query: e,
     omitUserIds: T,
     suggestedUserIds: t,
@@ -44,7 +44,7 @@ function y(e) {
 }
 class O extends(u = g.ZP.Store) {
   initialize() {
-    this.waitFor(f.Z, x.Z)
+    this.waitFor(j.Z, v.Z)
   }
   getInviteSuggestionRows() {
     return C
@@ -57,7 +57,7 @@ class O extends(u = g.ZP.Store) {
   }
   getSelectedInviteMetadata(e) {
     let t = b.get(e),
-      n = x.Z.getUserAffinitiesUserIds();
+      n = v.Z.getUserAffinitiesUserIds();
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
@@ -82,7 +82,7 @@ let P = new O(m.Z, {
       applicationId: c,
       inviteTargetType: h
     } = e;
-    r = null != u ? n : null, a = u, o = c, d = h, T = new Set([...t, ...f.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
+    r = null != u ? n : null, a = u, o = c, d = h, T = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
       channel: a,
       applicationId: o,
       inviteTargetType: h

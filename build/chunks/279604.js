@@ -1,13 +1,13 @@
-/** Chunk was on 73181 **/
+/** Chunk was on 8039 **/
 n.d(t, {
   KE: () => b,
   KT: () => m,
-  ZP: () => v
+  ZP: () => y
 }), n(47120), n(773603);
 var r = n(200651),
   i = n(192379),
-  o = n(442837),
-  l = n(481060),
+  l = n(442837),
+  o = n(481060),
   a = n(906732),
   s = n(879892),
   c = n(343649),
@@ -38,12 +38,12 @@ function g(e) {
 
 function m(e) {
   i.useEffect(() => {
-    null != e && (0, l.showToast)((0, l.createToast)(e, l.ToastType.FAILURE))
+    null != e && (0, o.showToast)((0, o.createToast)(e, o.ToastType.FAILURE))
   }, [e])
 }
 
 function b(e, t) {
-  (0, l.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     switch (t.type) {
       case h.Us.LEVEL:
         let {
@@ -56,7 +56,7 @@ function b(e, t) {
       case h.Us.PERK: {
         let {
           default: i
-        } = await Promise.all([n.e("55666"), n.e("59988")]).then(n.bind(n, 326055));
+        } = await Promise.all([n.e("55666"), n.e("74529")]).then(n.bind(n, 326055));
         return n => (0, r.jsx)(i, g({
           guildId: e,
           powerup: t
@@ -68,48 +68,33 @@ function b(e, t) {
   })
 }
 
-function v(e, t) {
+function y(e, t) {
   var m;
   let {
-    analyticsLocations: v
-  } = (0, a.ZP)(), [y, _] = i.useState(!1), [O, j] = i.useState(void 0), x = (0, o.e7)([p.Z], () => {
+    analyticsLocations: y
+  } = (0, a.ZP)(), [_, v] = i.useState(!1), [O, j] = i.useState(void 0), x = (0, l.e7)([p.Z], () => {
     var t, n;
-    return null !== (n = null === (t = p.Z.getStateForGuild(e)) || void 0 === t ? void 0 : t.appliedBoosts) && void 0 !== n ? n : 0
-  }), C = (0, o.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null !== (m = null == C ? void 0 : C.premiumSubscriberCount) && void 0 !== m ? m : 0) - x, 0), P = i.useCallback(n => {
+    return null != (n = null == (t = p.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
+  }), C = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null != (m = null == C ? void 0 : C.premiumSubscriberCount) ? m : 0) - x, 0), P = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
-    return _(!0), j(void 0), r(e, t.skuId).catch(e => {
+    return v(!0), j(void 0), r(e, t.skuId).catch(e => {
       var t;
-      throw j(null !== (t = e.body.message) && void 0 !== t ? t : void 0), e
+      throw j(null != (t = e.body.message) ? t : void 0), e
     }).finally(() => {
-      _(!1)
+      v(!1)
     })
   }, [e, t.skuId]), I = i.useCallback(e => {
-    if (e.stopPropagation(), null != C) {
-      if (S < t.cost) {
-        (0, s.u)({
-          analyticsLocation: {
-            page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
-            section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
-          },
-          numberOfBoostsToAdd: t.cost - S,
-          analyticsLocations: v,
-          guild: C,
-          intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
-          onSubscribeComplete: () => P(!0).then(() => {
-            (0, l.ZDy)(async () => {
-              let {
-                default: e
-              } = await n.e("13965").then(n.bind(n, 666083));
-              return n => (0, r.jsx)(e, g({
-                powerup: t
-              }, n))
-            })
-          })
-        });
-        return
-      }
-      return P(!0).then(() => {
-        (0, l.ZDy)(async () => {
+    if (e.stopPropagation(), null != C) return S < t.cost ? void(0, s.u)({
+      analyticsLocation: {
+        page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
+        section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
+      },
+      numberOfBoostsToAdd: t.cost - S,
+      analyticsLocations: y,
+      guild: C,
+      intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
+      onSubscribeComplete: () => P(!0).then(() => {
+        (0, o.ZDy)(async () => {
           let {
             default: e
           } = await n.e("13965").then(n.bind(n, 666083));
@@ -118,15 +103,24 @@ function v(e, t) {
           }, n))
         })
       })
-    }
-  }, [P, t, S, v, C]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
+    }) : P(!0).then(() => {
+      (0, o.ZDy)(async () => {
+        let {
+          default: e
+        } = await n.e("13965").then(n.bind(n, 666083));
+        return n => (0, r.jsx)(e, g({
+          powerup: t
+        }, n))
+      })
+    })
+  }, [P, t, S, y, C]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
   return {
-    isLoading: y,
+    isLoading: _,
     error: O,
     onActivate: I,
     onDeactivate: N,
     onShowDeactivate: i.useCallback(i => {
-      i.stopPropagation(), (0, l.ZDy)(async () => {
+      i.stopPropagation(), (0, o.ZDy)(async () => {
         let {
           default: i
         } = await n.e("31924").then(n.bind(n, 625651));

@@ -19,7 +19,7 @@ var a = n(913527),
   h = n(360328),
   b = n(981631),
   j = n(388032),
-  _ = n(849886);
+  _ = n(572308);
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function C(e) {
     approveRequest: O,
     rejectRequest: P,
     submitting: R
-  } = (0, h.s)(I, w, a.joinRequestId), E = null === (t = a.actionedByUser) || void 0 === t ? void 0 : t.id, S = (0, o.e7)([p.default], () => p.default.getUser(E)), B = (0, o.e7)([m.ZP], () => null != E ? m.ZP.getMember(I, E) : null, [E, I]), k = (0, o.e7)([u.Z], () => u.Z.getMemberCount(I)), F = (null != k ? k : 0) >= C.maxMembers, q = j.NW.string(j.t["4eQVBA"]), Z = (0, r.jsx)(s.T39, {
+  } = (0, h.s)(I, w, a.joinRequestId), E = null == (t = a.actionedByUser) ? void 0 : t.id, S = (0, o.e7)([p.default], () => p.default.getUser(E)), B = (0, o.e7)([m.ZP], () => null != E ? m.ZP.getMember(I, E) : null, [E, I]), k = (0, o.e7)([u.Z], () => u.Z.getMemberCount(I)), F = (null != k ? k : 0) >= C.maxMembers, q = j.NW.string(j.t["4eQVBA"]), Z = (0, r.jsx)(s.T39, {
     size: "custom",
     color: "currentColor",
     width: 24,
@@ -104,7 +104,7 @@ function C(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "header-primary",
-          children: null !== (e = null == B ? void 0 : B.nick) && void 0 !== e ? e : S.username
+          children: null != (e = null == B ? void 0 : B.nick) ? e : S.username
         })
       }, "username-hook")
     }

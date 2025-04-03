@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(91192),
+  a = n.n(l),
+  o = n(91192),
   s = n(286379),
   c = n(481060),
   u = n(183126),
@@ -21,11 +21,11 @@ var r = n(200651),
   E = n(727813),
   O = n(355350),
   N = n(307947),
-  v = n(125855),
-  y = n(687683),
-  I = n(981631),
+  y = n(125855),
+  I = n(687683),
+  v = n(981631),
   C = n(388032),
-  S = n(618167);
+  S = n(39276);
 
 function T() {
   let e = i.useRef(null),
@@ -49,7 +49,7 @@ function T() {
       Z(t.map(e => e.channel.id))
     }, [t, Z]);
   (0, d.ZP)(() => {
-    g.default.track(I.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
+    g.default.track(v.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: n
     }), f.Z.increment({
       name: s.V.SPAM_MESSAGE_REQUEST_VIEW
@@ -58,11 +58,11 @@ function T() {
   let L = i.useCallback(e => {
       var n, i;
       let {
-        row: a
-      } = e, s = t[a], c = null === (i = t[a + 1]) || void 0 === i ? void 0 : null === (n = i.channel) || void 0 === n ? void 0 : n.id, u = s.channel.id;
-      return (0, r.jsx)(v.Z, {
-        index: a,
-        className: o()({
+        row: o
+      } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? void 0 : n.id, u = s.channel.id;
+      return (0, r.jsx)(y.Z, {
+        index: o,
+        className: a()({
           [S.selected]: null != j && j === u,
           [S.siblingSelected]: null != j && j === c
         }),
@@ -94,15 +94,15 @@ function T() {
       }) : null]
     }, "message-requests-spam-title"), [n, x, T]);
   return 0 === t.length ? (0, r.jsx)(N.Z, {
-    section: y.pS.SPAM
-  }) : (0, r.jsx)(a.bG, {
+    section: I.pS.SPAM
+  }) : (0, r.jsx)(o.bG, {
     navigator: P,
-    children: (0, r.jsx)(a.SJ, {
+    children: (0, r.jsx)(o.SJ, {
       children: n => {
         var {
           ref: i,
           role: l
-        } = n, o = function(e, t) {
+        } = n, a = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -140,18 +140,18 @@ function T() {
           innerAriaLabel: C.NW.string(C.t.e7GWjY),
           ref: t => {
             var n;
-            e.current = t, i.current = null !== (n = null == t ? void 0 : t.getScrollerNode()) && void 0 !== n ? n : null
+            e.current = t, i.current = null != (n = null == t ? void 0 : t.getScrollerNode()) ? n : null
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: y.oi,
-          rowHeight: y.WN,
+          sectionHeight: I.oi,
+          rowHeight: I.WN,
           renderSection: w,
           renderRow: L,
           sections: [t.length],
           chunkSize: 30,
           fade: !0
-        }, o), "message-requests-spam-list")
+        }, a), "message-requests-spam-list")
       }
     })
   })

@@ -19,8 +19,8 @@ var l = n(120356),
   p = n(102172),
   g = n(148381),
   _ = n(388032),
-  v = n(740400),
-  j = n(653165);
+  j = n(347226),
+  v = n(213510);
 
 function b(e) {
   let {
@@ -34,18 +34,18 @@ function b(e) {
   }));
   return null != l && i ? (0, r.jsxs)(c.P3F, {
     onClick: () => n(t),
-    className: j.guildRow,
+    className: v.guildRow,
     children: [(0, r.jsx)(d.Z, {
       guild: l,
       size: d.Z.Sizes.SMALL,
-      className: j.guildIcon
+      className: v.guildIcon
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
-      className: j.guildName,
+      className: v.guildName,
       children: l.toString()
     }), (0, r.jsx)(x.Z, {
       direction: x.Z.Directions.RIGHT,
-      className: j.guildArrow
+      className: v.guildArrow
     })]
   }) : null
 }
@@ -56,7 +56,7 @@ function S(e) {
   } = e, n = (0, a.e7)([h.ZP], () => h.ZP.getGuildFolders());
   return (0, r.jsx)(g.Z, {
     title: _.NW.string(_.t.JsqeEh),
-    scrollerClassName: i()(j.guildScroller, v.marginBottom),
+    scrollerClassName: i()(v.guildScroller, j.marginBottom),
     children: o().flatMap(n, e => {
       let {
         guildIds: n

@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -18,9 +18,9 @@ var r = n(200651),
   g = n(576645),
   b = n(921944),
   _ = n(388032),
-  C = n(72515);
+  C = n(32709);
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,10 +39,10 @@ function v(e) {
   return e
 }
 
-function y(e) {
+function x(e) {
   let {
     channel: t
-  } = e, l = (0, a.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [o, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), C = (0, g.bK)(), [y, j] = (0, i.useState)(!1);
+  } = e, l = (0, a.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [o, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), C = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
   (0, u.ZP)(() => {
     t.isHDStreamSplashed && j(!0)
   }), (0, g.Uu)(t),
@@ -52,11 +52,11 @@ function y(e) {
     e.hdStreamingBuyerId !== (null == t ? void 0 : t.id) || e.isHDStreamSplashed || l.push(s.z.HD_STREAMING_POTION_MODAL_UPSELL);
     let [o, u] = (0, p.US)(l);
     (0, i.useEffect)(() => {
-      if (o === s.z.HD_STREAMING_POTION_MODAL_UPSELL)(0, c.ZDy)(async () => {
+      o === s.z.HD_STREAMING_POTION_MODAL_UPSELL && (0, c.ZDy)(async () => {
         let {
           default: t
         } = await n.e("88452").then(n.bind(n, 552394));
-        return n => (0, r.jsx)(t, v({
+        return n => (0, r.jsx)(t, y({
           markAsDismissed: u,
           channel: e
         }, n))
@@ -77,10 +77,10 @@ function y(e) {
     }, 25e3);
     return () => clearTimeout(e)
   });
-  let E = y ? [s.z.HD_STREAMING_POTION_BANNER] : [],
+  let E = x ? [s.z.HD_STREAMING_POTION_BANNER] : [],
     [N, I] = (0, p.US)(E);
   return null == l ? null : (0, r.jsxs)(r.Fragment, {
-    children: [o && (0, r.jsx)(x, {
+    children: [o && (0, r.jsx)(v, {
       buyer: l,
       onEnd: O
     }), (h || N === s.z.HD_STREAMING_POTION_BANNER) && (0, r.jsx)(m.Z, {
@@ -88,13 +88,13 @@ function y(e) {
       buyer: l,
       streaming: !0,
       onClose: () => {
-        _(!1), y && I(b.L.DISMISS)
+        _(!1), x && I(b.L.DISMISS)
       }
     })]
   })
 }
 
-function x(e) {
+function v(e) {
   let {
     onEnd: t,
     buyer: n
@@ -137,7 +137,7 @@ function x(e) {
       className: o()(C.content, {
         [C.masked]: s
       }),
-      children: [(0, r.jsx)(c.qEK, v({
+      children: [(0, r.jsx)(c.qEK, y({
         src: m,
         "aria-label": n.username,
         size: c.EFr.SIZE_32

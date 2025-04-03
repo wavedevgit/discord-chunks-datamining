@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => p
 }), n(47120);
@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(772848),
   s = n(481060),
   c = n(481051),
-  u = n(650648);
+  u = n(978644);
 
 function d(e) {
   let {
@@ -64,7 +64,7 @@ function p(e) {
     mentionCount: l,
     isTyping: a,
     canBadge: s
-  } = e, p = null != l && l > 0, h = null !== (t = p ? l : i) && void 0 !== t ? t : 0, f = s && null != i && i > 0;
+  } = e, p = null != l && l > 0, h = null != (t = p ? l : i) ? t : 0, f = s && null != i && i > 0;
   return (0, r.jsxs)("div", {
     className: o()(u.chatIcon, n),
     children: [(0, r.jsx)(d, {

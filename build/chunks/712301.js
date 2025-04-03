@@ -30,22 +30,22 @@ function P(e, n) {
       return c.Z.getChannel(t)
     }, [n, e.id]);
   if ((0, r.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == P) return null;
-  let v = e.id === s.default.getId();
-  if (!v && !b.Z.can(h.Plq.MOVE_MEMBERS, P)) return null;
-  let x = t.filter(n => {
+  let x = e.id === s.default.getId();
+  if (!x && !b.Z.can(h.Plq.MOVE_MEMBERS, P)) return null;
+  let v = t.filter(n => {
     let {
       channel: t
     } = n;
-    return t.id !== P.id && (v ? b.Z.can(h.Plq.CONNECT, t) && !(0, m.rY)(t, O.Z, Z.Z) : b.Z.can(h.Plq.MOVE_MEMBERS, t) && (b.Z.can(h.Plq.CONNECT, t) || N.BT({
+    return t.id !== P.id && (x ? b.Z.can(h.Plq.CONNECT, t) && !(0, m.rY)(t, O.Z, Z.Z) : b.Z.can(h.Plq.MOVE_MEMBERS, t) && (b.Z.can(h.Plq.CONNECT, t) || N.BT({
       permission: h.Plq.CONNECT,
       user: e,
       context: t
     })) && !(0, m.rY)(t, O.Z, Z.Z))
   });
-  return 0 === x.length ? null : (0, l.jsx)(i.sNh, {
+  return 0 === v.length ? null : (0, l.jsx)(i.sNh, {
     id: "voice-move",
     label: j.NW.string(j.t.FAplmp),
-    children: x.map(t => {
+    children: v.map(t => {
       let {
         channel: r
       } = t;

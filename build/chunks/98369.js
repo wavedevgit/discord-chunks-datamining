@@ -13,8 +13,8 @@ var r, l, i, a = n(442837),
   p = n(729303),
   g = n(651941),
   E = n(981631);
-let v = new Map,
-  h = new Map,
+let h = new Map,
+  v = new Map,
   b = !1,
   S = null;
 
@@ -22,18 +22,18 @@ function y() {
   return f.Z.getAllActiveStreamKeys().reduce((e, t) => {
     let {
       ownerId: n
-    } = (0, u.my)(t), r = !0 === v.get(n), l = h.get(t) !== r;
-    return h.set(t, r), !!l || e
+    } = (0, u.my)(t), r = !0 === h.get(n), l = v.get(t) !== r;
+    return v.set(t, r), !!l || e
   }, !1)
 }
 
 function O() {
   var e;
-  let t = null !== (e = d.Z.getUserIds()) && void 0 !== e ? e : new Set,
+  let t = null != (e = d.ZP.getUserIds()) ? e : new Set,
     n = c.default.getId(),
     r = !0;
   for (let e of t)
-    if (n !== e && !0 !== v.get(e)) {
+    if (n !== e && !0 !== h.get(e)) {
       r = !1;
       break
     } let l = r !== b;
@@ -46,14 +46,14 @@ function Z(e) {
   } = e;
   if (c.default.getId() === t) return !1;
   let n = function(e) {
-      let t = d.Z.getSecureFramesRosterMapEntry(e);
+      let t = d.ZP.getSecureFramesRosterMapEntry(e);
       if (null == t) return !1;
       let n = new Uint8Array(t),
         r = g.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
-        l = (0, m.UB)(e, [d.Z, f.Z]),
+        l = (0, m.UB)(e, [d.ZP, f.Z]),
         i = r && !l,
-        a = i !== v.get(e);
-      return v.set(e, i), a
+        a = i !== h.get(e);
+      return h.set(e, i), a
     }(t),
     r = y(),
     l = O();
@@ -61,20 +61,20 @@ function Z(e) {
 }
 
 function I() {
-  v.clear(), h.clear(), b = !1
+  h.clear(), v.clear(), b = !1
 }
 class j extends(r = a.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, g.Z, d.Z, f.Z)
+    this.waitFor(p.Z, g.Z, d.ZP, f.Z)
   }
   isCallVerified() {
     return b
   }
   isStreamVerified(e) {
-    return h.get(e)
+    return v.get(e)
   }
   isUserVerified(e) {
-    return v.get(e)
+    return h.get(e)
   }
 }
 i = "SecureFramesVerifiedStore", (l = "displayName") in j ? Object.defineProperty(j, l, {
@@ -102,7 +102,7 @@ let x = new j(s.Z, {
     switch (r) {
       case o.Yn.STREAM:
         if (null == t) return !1;
-        return h.delete(t), O();
+        return v.delete(t), O();
       case o.Yn.DEFAULT:
         I()
     }

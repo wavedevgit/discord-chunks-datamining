@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(969632),
   u = n(922112),
   m = n(388032),
-  g = n(83843);
+  g = n(773100);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,14 +52,14 @@ let f = [],
       guildId: t
     } = e, b = (0, s.Wu)([d.Z], () => {
       var e;
-      return null !== (e = d.Z.getSettings().resourceChannels) && void 0 !== e ? e : f
+      return null != (e = d.Z.getSettings().resourceChannels) ? e : f
     }), x = i.useMemo(() => b.map(e => h(p({}, e), {
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
       handleDragReset: N,
-      handleDragComplete: v
-    } = (0, l.Z)(x, c.lq), _ = i.useCallback((e, n) => {
+      handleDragComplete: _
+    } = (0, l.Z)(x, c.lq), v = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
@@ -72,10 +72,10 @@ let f = [],
         return n => (0, r.jsx)(e, h(p({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: _
+          onIconUpload: v
         }))
       })
-    }, [t, _]);
+    }, [t, v]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
       children: [b.map((e, n) => (0, r.jsx)(u.Z, {
@@ -84,7 +84,7 @@ let f = [],
         index: n,
         onDragStart: j,
         onDragReset: N,
-        onDragComplete: v
+        onDragComplete: _
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: g.addActionItem,
         onClick: C,

@@ -10,10 +10,10 @@ var n = r(200651),
   c = r(596454),
   s = r(911969),
   u = r(739754),
-  d = r(970184),
-  p = r(280501),
+  p = r(970184),
+  d = r(280501),
   f = r(388032),
-  b = r(176129);
+  b = r(950386);
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -141,10 +141,10 @@ function h(e) {
     visualState: S,
     isDisabled: C,
     error: E
-  } = (0, d.Ee)(e, {
+  } = (0, p.Ee)(e, {
     type: t,
     values: P
-  }), N = c > 1, I = S === p.gH.LOADING, [k, Z] = l.useState(!1), [T, D] = l.useState(() => new Set(r.filter(e => e.default).map(e => e.value))), [L, _] = l.useState(T), R = l.useMemo(() => r.some(e => null != e.emoji), [r]);
+  }), N = c > 1, I = S === d.gH.LOADING, [k, Z] = l.useState(!1), [T, D] = l.useState(() => new Set(r.filter(e => e.default).map(e => e.value))), [L, _] = l.useState(T), R = l.useMemo(() => r.some(e => null != e.emoji), [r]);
   l.useEffect(() => {
     if ((null == x ? void 0 : x.type) === s.re.STRING_SELECT) {
       let e = new Set(x.values);
@@ -161,7 +161,7 @@ function h(e) {
     }) && _(T)
   }, [T, L, _, w]);
   l.useEffect(() => {
-    !(k || T.size === L.size && Array.from(L).every(e => T.has(e))) && A()
+    !k && (T.size === L.size && Array.from(L).every(e => T.has(e)) || A())
   }, [k, T, L, A]);
   let M = a.UNb;
   N ? M = a.gzz : 0 === h && (M = a.s6k);

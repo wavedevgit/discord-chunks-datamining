@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -14,7 +14,7 @@ var r = n(200651),
   u = n(740903),
   m = n(598622),
   g = n(388032),
-  p = n(191792);
+  p = n(902893);
 
 function h(e) {
   let {
@@ -70,11 +70,8 @@ function f(e) {
         t = 0;
       return null == f || Object.values(d).flat().forEach(n => {
         var r;
-        let i = null === (r = f[n]) || void 0 === r ? void 0 : r.filter(c.lm);
-        if (null == i || 0 === i.length) {
-          t++;
-          return
-        }
+        let i = null == (r = f[n]) ? void 0 : r.filter(c.lm);
+        if (null == i || 0 === i.length) return void t++;
         i.forEach(n => {
           n.enabled && e++, t++
         })
@@ -85,8 +82,8 @@ function f(e) {
     }, [d, f]),
     j = (0, m.Q)(t),
     N = j[u.u.CAPTCHA_AND_RAID_PROTECTION],
-    v = j[u.u.DM_AND_SPAM_PROTECTION],
-    _ = j[u.u.PERMISSIONS],
+    _ = j[u.u.DM_AND_SPAM_PROTECTION],
+    v = j[u.u.PERMISSIONS],
     C = (0, o.pr)(t.id);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.X6q, {
@@ -110,8 +107,8 @@ function f(e) {
         icon: n(128724),
         title: g.NW.string(g.t.O0SfFx),
         subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
-          enabled: v.filter(e => e.enabled).length,
-          total: v.length
+          enabled: _.filter(e => e.enabled).length,
+          total: _.length
         }),
         page: u.u.DM_AND_SPAM_PROTECTION
       }), (0, r.jsx)("div", {
@@ -132,8 +129,8 @@ function f(e) {
         icon: n(913414),
         title: g.NW.string(g.t.xrmhRU),
         subtitle: g.NW.formatToPlainString(g.t.TG7NYG, {
-          enabled: _.filter(e => e.enabled).length,
-          total: _.length
+          enabled: v.filter(e => e.enabled).length,
+          total: v.length
         }),
         page: u.u.PERMISSIONS
       })]

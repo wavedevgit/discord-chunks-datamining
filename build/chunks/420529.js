@@ -50,7 +50,7 @@ function E(e, t) {
 }
 
 function T(e) {
-  let t = (0, r.e7)([_.Z], () => _.Z.getChannelId() === e.id),
+  let t = (0, r.e7)([_.ZP], () => _.ZP.getChannelId() === e.id),
     T = (0, p.Z)(),
     U = (null == T ? void 0 : T.channelId) === e.id,
     L = (0, l.V)(e) && !e.isPrivate(),
@@ -59,13 +59,10 @@ function T(e) {
     D = (0, o.Z)();
   if (!U && 0 === D.length) return null;
   let m = t => {
-    if (!t.twoWayLink || t.revoked) {
-      (0, a.Z)({
-        platformType: t.type,
-        location: "Console Transfer Item"
-      });
-      return
-    }
+    if (!t.twoWayLink || t.revoked) return void(0, a.Z)({
+      platformType: t.type,
+      location: "Console Transfer Item"
+    });
     t.type === I.ABu.XBOX ? (0, d.ZDy)(async () => {
       let {
         default: t

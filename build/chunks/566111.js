@@ -23,7 +23,7 @@ function c(e) {
     (0, o.z)(!0)
   }, []), {
     isFetching: r || f,
-    combinedError: null !== (t = null != c ? c : a) && void 0 !== t ? t : p,
+    combinedError: null != (t = null != c ? c : a) ? t : p,
     profileEffects: m,
     categories: u,
     purchases: d

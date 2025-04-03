@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => ee
 }), n(230036);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(913527),
-  s = n.n(l),
+  l = n.n(a),
+  o = n(913527),
+  s = n.n(o),
   c = n(91192),
   u = n(722770),
   d = n(442837),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(313889),
   _ = n(825829),
   b = n(226192),
-  v = n(36459),
-  x = n(336197),
-  y = n(359110),
-  E = n(347475),
+  x = n(36459),
+  y = n(336197),
+  E = n(359110),
+  v = n(347475),
   O = n(496675),
   N = n(594174),
   j = n(5192),
@@ -41,7 +41,7 @@ var r = n(200651),
   W = n(674563),
   U = n(590433),
   F = n(388032),
-  B = n(176641);
+  B = n(860918);
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -97,29 +97,29 @@ function z(e, t) {
     selected: r,
     setPopout: a
   } = (0, k.Z)(e.id, L.d$), {
-    usernameProfile: o,
-    avatarProfile: l
-  } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), u = (0, Z.XO)(e, t, o, a);
+    usernameProfile: l,
+    avatarProfile: o
+  } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), u = (0, Z.XO)(e, t, l, a);
   return {
     selected: r,
     onContextMenu: s,
     onContextMenuModerateUser: c,
     onClickUsername: u,
-    onClickAvatar: (0, Z.R9)(l, a),
+    onClickAvatar: (0, Z.R9)(o, a),
     onPopoutRequestClose: i.useCallback(() => a({
       usernameProfile: !1,
       avatarProfile: !1,
       referencedUsernameProfile: !1
     }), [a]),
     renderPopout: w.Z,
-    showAvatarPopout: l,
-    showUsernamePopout: o
+    showAvatarPopout: o,
+    showUsernamePopout: l
   }
 }
 
 function K(e, t) {
   return i.useMemo(() => {
-    if (null != t) return n => (0, r.jsx)(E.Z, H(G({}, n), {
+    if (null != t) return n => (0, r.jsx)(v.Z, H(G({}, n), {
       userId: t.id,
       user: t,
       channelId: e.id,
@@ -135,7 +135,7 @@ function Y(e) {
     compact: i
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(B.footerContainer, n, {
+    className: l()(B.footerContainer, n, {
       [B.compact]: i
     }),
     children: t
@@ -148,7 +148,7 @@ function X(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(B.annotationRow, n),
+    className: l()(B.annotationRow, n),
     children: t
   })
 }
@@ -165,7 +165,7 @@ function q(e, t) {
       return (0, r.jsx)(p.dz2, G({
         size: "xs",
         color: "currentColor",
-        className: o()(B.alertActionIcon, B.alertActionSetCompletedIcon)
+        className: l()(B.alertActionIcon, B.alertActionSetCompletedIcon)
       }, t));
     case g.d.SUBMIT_FEEDBACK:
       return (0, r.jsx)(p.U65, G({
@@ -188,9 +188,9 @@ function Q(e) {
     if (null == i) return q(e, {});
     let a = function(e, t, n) {
       var r;
-      let i = null !== (r = j.ZP.getNickname(n, null, t)) && void 0 !== r ? r : C.ZP.getUserTag(t),
+      let i = null != (r = j.ZP.getNickname(n, null, t)) ? r : C.ZP.getUserTag(t),
         a = s()(e.ts),
-        o = "".concat(i, " ").concat(a.fromNow());
+        l = "".concat(i, " ").concat(a.fromNow());
       try {
         switch (parseInt(e.actionType)) {
           case g.d.DELETE_USER_MESSAGE:
@@ -209,10 +209,10 @@ function Q(e) {
               timestamp: a.fromNow()
             });
           default:
-            return o
+            return l
         }
       } catch (e) {
-        return o
+        return l
       }
     }(t, i, n);
     return (0, r.jsx)(p.ua7, {
@@ -242,8 +242,8 @@ let $ = i.memo(function(e) {
       message: n,
       channel: i,
       embedChannel: a,
-      compact: o,
-      interactionUserId: l
+      compact: l,
+      interactionUserId: o
     } = e,
     s = z(n, i),
     c = K(i, n.author),
@@ -253,9 +253,9 @@ let $ = i.memo(function(e) {
       channel: i,
       author: u,
       guildId: null == i ? void 0 : i.guild_id,
-      compact: o
+      compact: l
     }, s), c),
-    m = N.default.getUser(l),
+    m = N.default.getUser(o),
     f = z(n, i),
     h = K(i, m);
   if (null != m) {
@@ -265,7 +265,7 @@ let $ = i.memo(function(e) {
         channel: i,
         author: e,
         guildId: null == i ? void 0 : i.guild_id,
-        compact: o
+        compact: l
       }, f), h);
     t = () => r
   }
@@ -290,10 +290,10 @@ function ee(e) {
   let {
     id: n,
     compact: a,
-    message: l,
+    message: o,
     channel: s
   } = e, {
-    avatarSrc: E,
+    avatarSrc: v,
     eventHandlers: {
       onMouseEnter: N,
       onMouseLeave: j
@@ -312,46 +312,46 @@ function ee(e) {
     keyword: er,
     content: ei,
     flaggedMessageId: ea,
-    timeoutDuration: eo,
-    decisionReason: el,
+    timeoutDuration: el,
+    decisionReason: eo,
     alertActionsExecution: es,
     quarantineType: ec,
     interactionUserId: eu
-  } = (0, _.ZP)(l), ed = i.useMemo(() => (0, I.k$)(ei, en, s.id), [ei, en, s]), ep = z(l, s), {
+  } = (0, _.ZP)(o), ed = i.useMemo(() => (0, I.k$)(ei, en, s.id), [ei, en, s]), ep = z(o, s), {
     selected: em
   } = ep, ef = V(ep, ["selected"]), eh = i.useCallback(() => {
-    (0, b._s)(l.id, ei, et, s)
-  }, [l.id, ei, et, s]), eg = i.useCallback(e => {
-    null != ea && null != ee && (e.stopPropagation(), e.preventDefault(), (0, x.Z)(M.Z5c.CHANNEL(null == ee ? void 0 : ee.guild_id, null == ee ? void 0 : ee.id, ea)))
+    (0, b._s)(o.id, ei, et, s)
+  }, [o.id, ei, et, s]), eg = i.useCallback(e => {
+    null != ea && null != ee && (e.stopPropagation(), e.preventDefault(), (0, y.Z)(M.Z5c.CHANNEL(null == ee ? void 0 : ee.guild_id, null == ee ? void 0 : ee.id, ea)))
   }, [ee, ea]), e_ = i.useCallback(e => {
     null != ee && (m.default.selectChannel({
       guildId: ee.guild_id,
       channelId: e,
-      messageId: l.id
-    }), (0, y.Kh)(e))
-  }, [l, ee]), eb = i.useCallback(() => {
-    (0, v.Xx)(l.id, s, g.d.DELETE_USER_MESSAGE)
-  }, [s, l.id]), ev = (0, U.L9)(Number(eo)), ex = null != el, ey = q && null != ea && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), eE = l.embeds.length > 0 ? null === (t = l.embeds[0].fields.find(e => "channel_id" === e.rawName)) || void 0 === t ? void 0 : t.rawValue : null, eO = null != eE;
+      messageId: o.id
+    }), (0, E.Kh)(e))
+  }, [o, ee]), eb = i.useCallback(() => {
+    (0, x.Xx)(o.id, s, g.d.DELETE_USER_MESSAGE)
+  }, [s, o.id]), ex = (0, U.L9)(Number(el)), ey = null != eo, eE = q && null != ea && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, eO = null != ev;
   return (0, r.jsx)("div", {
     onMouseEnter: N,
     onMouseLeave: j,
     children: (0, r.jsx)(D.Z, {
-      className: o()(B.mainContainer, {
+      className: l()(B.mainContainer, {
         [B.compact]: a
       }),
       iconNode: a ? null : (0, r.jsx)(R.S, {
-        src: E
+        src: v
       }),
       iconContainerClassName: B.iconContainer,
       compact: a,
       children: (0, r.jsxs)("div", {
-        className: o()(B.content, {
+        className: l()(B.content, {
           [B.compact]: a
         }),
         children: [(0, r.jsx)(A.nD, {
-          message: l,
+          message: o,
           messageClassname: B.spanCorrection,
-          className: o()(B.usernameContainer, B.spanCorrection, {
+          className: l()(B.usernameContainer, B.spanCorrection, {
             [B.compact]: a
           }),
           username: (0, r.jsxs)("div", {
@@ -366,7 +366,7 @@ function ee(e) {
               type: W.Hb.SYSTEM_DM,
               className: B.systemTag
             }), (0, r.jsx)($, {
-              message: l,
+              message: o,
               channel: s,
               embedChannel: ee,
               compact: a,
@@ -376,17 +376,17 @@ function ee(e) {
           compact: a,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: o()(B.messageContent, {
+          className: l()(B.messageContent, {
             [B.compact]: a
           }),
           children: (0, r.jsx)(P.Z, H(G({}, T), {
-            message: l,
+            message: o,
             channel: ee,
             content: ed,
             compact: a,
             withFooter: !0,
             hideTimestamp: !0,
-            className: o()(B.embedCard, {
+            className: l()(B.embedCard, {
               [B.compact]: a,
               [B.selected]: em || K && w,
               [B.isClickable]: null != ea && null != ee
@@ -403,7 +403,7 @@ function ee(e) {
                       keyword: er
                     })
                   }), (0, r.jsx)("div", {
-                    className: o()(B.dot, B.dotMargin)
+                    className: l()(B.dot, B.dotMargin)
                   })]
                 }), null != Q && (0, r.jsx)(p.Text, {
                   variant: "text-xs/medium",
@@ -412,21 +412,21 @@ function ee(e) {
                   children: F.NW.format(F.t.ZoOyKC, {
                     ruleName: Q
                   })
-                }), null != ev && (0, r.jsxs)(r.Fragment, {
+                }), null != ex && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(B.dot, B.dotMargin)
+                    className: l()(B.dot, B.dotMargin)
                   }), (0, r.jsx)(p.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
                     tag: "span",
                     className: B.__invalid_footerText,
                     children: F.NW.format(F.t["3LYql5"], {
-                      duration: ev
+                      duration: ex
                     })
                   })]
                 }), null != ec && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: o()(B.dot, B.dotMargin)
+                    className: l()(B.dot, B.dotMargin)
                   }), (0, r.jsx)(p.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -437,12 +437,12 @@ function ee(e) {
                     })
                   })]
                 })]
-              }), ex ? (0, r.jsx)(X, {
+              }), ey ? (0, r.jsx)(X, {
                 children: (0, r.jsx)(p.Text, {
                   variant: "text-xs/medium",
                   color: "text-normal",
                   tag: "span",
-                  children: el
+                  children: eo
                 })
               }) : null]
             }),
@@ -455,13 +455,13 @@ function ee(e) {
         }), (0, r.jsx)(Y, {
           compact: a,
           children: (0, r.jsxs)("div", {
-            className: o()(B.centeredRowContainer, B.buttonContainer, {
+            className: l()(B.centeredRowContainer, B.buttonContainer, {
               [B.compact]: a
             }),
             children: [(0, r.jsx)(p.zxk, {
               onClick: e => {
                 var t;
-                null === (t = ef.onContextMenuModerateUser) || void 0 === t || t.call(ef, e)
+                null == (t = ef.onContextMenuModerateUser) || t.call(ef, e)
               },
               color: p.zxk.Colors.LINK,
               look: p.zxk.Looks.LINK,
@@ -483,7 +483,7 @@ function ee(e) {
               children: [(0, r.jsx)("div", {
                 className: B.dot
               }), (0, r.jsx)(p.zxk, {
-                onClick: () => e_(eE),
+                onClick: () => e_(ev),
                 color: p.zxk.Colors.LINK,
                 look: p.zxk.Looks.LINK,
                 size: p.zxk.Sizes.SMALL,
@@ -513,7 +513,7 @@ function ee(e) {
                   children: F.NW.string(F.t["94JbMz"])
                 })
               })
-            }), ey ? (0, r.jsxs)(r.Fragment, {
+            }), eE ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)("div", {
                 className: B.dot
               }), (0, r.jsx)(p.zxk, {

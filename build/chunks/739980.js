@@ -5,17 +5,17 @@ n.d(t, {
 var r = n(200651),
   l = n(192379),
   a = n(954654),
-  i = n(937889),
-  s = n(930282),
+  s = n(937889),
+  i = n(930282),
   o = n(524444),
-  u = n(435851);
+  u = n(136831);
 
 function c(e) {
   let {
     previewMessage: t
   } = e, {
     content: n
-  } = (0, i.ZP)(t, {
+  } = (0, s.ZP)(t, {
     allowHeading: !0,
     allowLinks: !0
   }), c = t.attachments.map((e, t) => {
@@ -39,7 +39,7 @@ function c(e) {
       className: u.quote
     }), (0, r.jsxs)("div", {
       className: u.content,
-      children: [(0, r.jsx)(s.ZP, {
+      children: [(0, r.jsx)(i.ZP, {
         message: t,
         content: n
       }), c, t.components.length > 0 ? (0, r.jsx)(a.ZP, {

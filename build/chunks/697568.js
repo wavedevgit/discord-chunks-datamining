@@ -1,11 +1,11 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(544891),
   i = n(900849),
   a = n(981631);
-let o = e => r.tn.get({
+let l = e => r.tn.get({
   url: a.ANM.STICKER_GUILD_DATA(e),
   oldFormErrors: !0,
   rejectWithError: !0

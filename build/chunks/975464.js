@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   C: () => x,
@@ -17,9 +17,9 @@ var i = n(990547),
   m = n(320893),
   g = n(81509),
   p = n(662379),
-  h = n(385910),
+  h = n(60533),
   f = n(581050),
-  b = n(911856);
+  b = n(551131);
 
 function x(e) {
   let {
@@ -69,7 +69,7 @@ function j(e) {
   } = n, f = (0, l.j)(p), {
     isLoading: j,
     error: N,
-    creatorMonetizationOnboardingMarketing: v
+    creatorMonetizationOnboardingMarketing: _
   } = (0, o.Z)(t.id);
   return ((0, a.Z)({
     type: i.ImpressionTypes.PANE,
@@ -92,7 +92,7 @@ function j(e) {
       guild: t,
       monetizationEligibility: n
     }), (0, r.jsx)(x, {
-      onboardingMarketing: v,
+      onboardingMarketing: _,
       onboardingMarketingError: N
     })]
   })

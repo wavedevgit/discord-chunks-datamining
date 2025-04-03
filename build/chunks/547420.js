@@ -1,8 +1,8 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   MY: () => c,
-  RC: () => l,
-  UF: () => o,
+  RC: () => o,
+  UF: () => l,
   ZP: () => d
 });
 var r = n(857595),
@@ -12,12 +12,12 @@ var r = n(857595),
 function a(e) {
   return s.yqN.ZOOM_SCALES[Math.max(0, Math.min(s.yqN.ZOOM_SCALES.indexOf(i.Z.zoom) + e, s.yqN.ZOOM_SCALES.length - 1))]
 }
-let o = {
+let l = {
     binds: ["mod+plus"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.cq)(a(1)), !1)
   },
-  l = {
+  o = {
     binds: ["mod+minus"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.cq)(a(-1)), !1)
@@ -28,7 +28,7 @@ let o = {
     action: () => ((0, r.cq)(s.yqN.ZOOM_DEFAULT), !1)
   },
   d = 12633 == n.j ? {
-    ZOOM_IN: o,
-    ZOOM_OUT: l,
+    ZOOM_IN: l,
+    ZOOM_OUT: o,
     ZOOM_RESET: c
   } : null

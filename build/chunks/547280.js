@@ -1,45 +1,45 @@
-/** Chunk was on 62514 **/
-o.d(n, {
-  b: () => l,
-  o: () => p
+/** Chunk was on 39612 **/
+i.d(t, {
+  b: () => r,
+  o: () => o
 });
-var t = o(570140),
-  i = o(605236),
-  _ = o(626135),
-  c = o(445507),
-  a = o(981631),
-  r = o(921944);
+var s = i(570140),
+  n = i(605236),
+  c = i(626135),
+  a = i(445507),
+  l = i(981631),
+  d = i(921944);
 
-function p(e) {
+function o(e) {
   let {
-    targetKey: n,
-    dismissibleContent: o,
-    data: p,
-    completed: l
+    targetKey: t,
+    dismissibleContent: i,
+    data: o,
+    completed: r
   } = e;
-  null != p.selectedOptionKey && ((0, i.un)(o) || _.default.track(a.rMx.SIGNUP_COMPLETED, {
-    target_key: n,
-    selected_option_key: p.selectedOptionKey,
-    email: p.email,
-    guild_id: p.guildId,
-    metadata: (0, c.mU)(p),
-    completed: l
-  }), (0, i.EW)(o, {
-    dismissAction: r.L.PRIMARY,
+  null != o.selectedOptionKey && ((0, n.un)(i) || c.default.track(l.rMx.SIGNUP_COMPLETED, {
+    target_key: t,
+    selected_option_key: o.selectedOptionKey,
+    email: o.email,
+    guild_id: o.guildId,
+    metadata: (0, a.mU)(o),
+    completed: r
+  }), (0, n.EW)(i, {
+    dismissAction: d.L.PRIMARY,
     forceTrack: !0
-  }), t.Z.dispatch({
+  }), s.Z.dispatch({
     type: "COMPLETE_SIGN_UP",
-    email: p.email,
-    targetKey: n,
-    selectedOptionKey: p.selectedOptionKey
+    email: o.email,
+    targetKey: t,
+    selectedOptionKey: o.selectedOptionKey
   }))
 }
 
-function l(e, n) {
-  (0, i.EW)(n, {
-    dismissAction: r.L.DISMISS,
+function r(e, t) {
+  (0, n.EW)(t, {
+    dismissAction: d.L.DISMISS,
     forceTrack: !0
-  }), t.Z.dispatch({
+  }), s.Z.dispatch({
     type: "DISMISS_SIGN_UP",
     targetKey: e
   })

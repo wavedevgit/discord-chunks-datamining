@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   E6: () => m,
@@ -26,7 +26,7 @@ function u(e) {
   (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("54061")]).then(n.bind(n, 192277));
+    } = await Promise.all([n.e("91689"), n.e("55849"), n.e("36376")]).then(n.bind(n, 192277));
     return n => (0, r.jsx)(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -91,7 +91,7 @@ function g(e, t, n, r) {
       section: d.jXE.ANIMATED_GUILD_BANNER_UPSELL,
       object: "temp"
     };
-  if (null != i && null != n) {
+  if (null != i && null != n)
     if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
       if (!e.hasFeature(d.oNc.BANNER)) {
         s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
@@ -112,9 +112,7 @@ function g(e, t, n, r) {
         isGIF: !0
       });
       return
-    }
-  }
-  c.Z.updateGuild({
+    } c.Z.updateGuild({
     banner: n
   })
 }

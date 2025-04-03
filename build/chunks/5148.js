@@ -22,8 +22,7 @@ var n = r(399932),
   w = r(343623),
   x = r(344751),
   k = r(593121),
-  E = r(446466),
-  C = r(114603);
+  E = r(446466);
 t.exports = {
   Editor: f,
   EditorBlock: p,
@@ -43,7 +42,7 @@ t.exports = {
   RichUtils: _,
   DefaultDraftBlockRenderMap: c,
   DefaultDraftInlineStyle: l,
-  convertFromHTML: C,
+  convertFromHTML: r(114603),
   convertFromRaw: w,
   convertToRaw: S,
   genKey: x,

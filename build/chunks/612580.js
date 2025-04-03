@@ -1,16 +1,16 @@
 /** Chunk was on 47674 **/
-t.a(n, async function(r, i) {
+t.a(n, async function(r, a) {
   try {
-    var a = t(463281),
-      u = r([a]),
-      [a] = u.then ? (await u)() : u;
+    var i = t(463281),
+      u = r([i]),
+      [i] = u.then ? (await u)() : u;
     await t.v(e, n.id, "d0d0996c20c03af2", {
       "./index_bg.js": {
-        __wbindgen_string_new: a.h4,
-        __wbindgen_rethrow: a.nD
+        __wbindgen_string_new: i.h4,
+        __wbindgen_rethrow: i.nD
       }
-    }), i()
+    }), a()
   } catch (n) {
-    i(n)
+    a(n)
   }
 }, 1)

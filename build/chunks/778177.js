@@ -1,13 +1,13 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   ZP: () => q
 }), n(566702), n(301563), n(47120);
 var r = n(200651),
   i = n(192379),
   a = n(120356),
-  o = n.n(a),
-  l = n(512722),
-  s = n.n(l),
+  l = n.n(a),
+  o = n(512722),
+  s = n.n(o),
   c = n(392711),
   u = n.n(c),
   d = n(913527),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(603263),
   _ = n(542051),
   b = n(349033),
-  v = n(999650),
-  x = n(933557),
-  y = n(471445),
-  E = n(592125),
+  x = n(999650),
+  y = n(933557),
+  E = n(471445),
+  v = n(592125),
   O = n(271383),
   N = n(699516),
   j = n(250758),
@@ -36,7 +36,7 @@ var r = n(200651),
   k = n(854709),
   R = n(981631),
   D = n(388032),
-  L = n(707535);
+  L = n(290082);
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,32 +94,32 @@ let B = p()("2015-05-15").local(),
     webpackId: 547800
   }),
   H = (e, t, n) => {
-    var i, a, o;
+    var i, a, l;
     let {
-      user: l,
+      user: o,
       text: s
     } = n;
-    if (null == l) return (0, r.jsx)("strong", {
+    if (null == o) return (0, r.jsx)("strong", {
       children: s
     });
-    let c = T.default.getUser(l.id),
-      u = E.Z.getChannel(e),
-      d = (null == u ? void 0 : u.isPrivate()) ? N.Z.getNickname(l.id) : null,
-      p = null !== (a = null !== (i = O.ZP.getNick(e, l.id)) && void 0 !== i ? i : d) && void 0 !== a ? a : Z.ZP.getName(l),
-      m = null !== (o = null == c ? void 0 : c.getAvatarURL(e, 20)) && void 0 !== o ? o : l.getAvatarURL(null == u ? void 0 : u.guild_id, 20);
+    let c = T.default.getUser(o.id),
+      u = v.Z.getChannel(e),
+      d = (null == u ? void 0 : u.isPrivate()) ? N.Z.getNickname(o.id) : null,
+      p = null != (a = null != (i = O.ZP.getNick(e, o.id)) ? i : d) ? a : Z.ZP.getName(o),
+      m = null != (l = null == c ? void 0 : c.getAvatarURL(e, 20)) ? l : o.getAvatarURL(null == u ? void 0 : u.guild_id, 20);
     return [(0, r.jsx)("img", {
       alt: "",
       className: L.displayAvatar,
       src: m
-    }, "avatar-".concat(t, "-").concat(l.id)), (0, r.jsx)("span", {
+    }, "avatar-".concat(t, "-").concat(o.id)), (0, r.jsx)("span", {
       className: L.displayedNick,
       children: p
-    }, "display-nick-".concat(t, "-").concat(l.id)), (0, r.jsx)("span", {
+    }, "display-nick-".concat(t, "-").concat(o.id)), (0, r.jsx)("span", {
       className: L.displayUsername,
-      children: Z.ZP.getUserTag(l, {
+      children: Z.ZP.getUserTag(o, {
         identifiable: S.Z.enabled && S.Z.hidePersonalInformation ? "never" : "always"
       })
-    }, "display-username-".concat(t, "-").concat(l.id))]
+    }, "display-username-".concat(t, "-").concat(o.id))]
   },
   V = (e, t, n) => {
     let {
@@ -129,17 +129,17 @@ let B = p()("2015-05-15").local(),
     if (null == i) return (0, r.jsx)("strong", {
       children: a
     });
-    let o = E.Z.getChannel(i.parent_id),
-      l = (0, y.KS)(i);
+    let l = v.Z.getChannel(i.parent_id),
+      o = (0, E.KS)(i);
     return (0, r.jsxs)("div", {
       className: L.resultChannel,
-      children: [null != l ? (0, r.jsx)(l, {
+      children: [null != o ? (0, r.jsx)(o, {
         className: L.searchResultChannelIcon
       }) : null, (0, r.jsx)("strong", {
-        children: (0, x.F6)(i, T.default, N.Z)
-      }), null != o ? (0, r.jsx)("span", {
+        children: (0, y.F6)(i, T.default, N.Z)
+      }), null != l ? (0, r.jsx)("span", {
         className: L.searchResultChannelCategory,
-        children: (0, x.F6)(o, T.default, N.Z)
+        children: (0, y.F6)(l, T.default, N.Z)
       }) : null]
     })
   },
@@ -147,7 +147,7 @@ let B = p()("2015-05-15").local(),
     let t, n, {
       id: i,
       searchId: a,
-      result: l,
+      result: o,
       group: s,
       className: c,
       role: u,
@@ -159,17 +159,17 @@ let B = p()("2015-05-15").local(),
       renderResult: _
     } = e;
     if (g) {
-      var b, x;
+      var b, y;
       t = (0, r.jsx)("span", {
         className: L.filter,
-        children: null !== (x = null === (b = v.ZP[s]) || void 0 === b ? void 0 : b.key) && void 0 !== x ? x : "addme:"
+        children: null != (y = null == (b = x.ZP[s]) ? void 0 : b.key) ? y : "addme:"
       })
     }
-    return n = null != _ ? _(a, s, l) : (0, r.jsx)("strong", {
-      children: l.text
+    return n = null != _ ? _(a, s, o) : (0, r.jsx)("strong", {
+      children: o.text
     }), (0, r.jsxs)(h.P3F, {
       tag: "li",
-      className: o()(L.option, c),
+      className: l()(L.option, c),
       onClick: m,
       onFocus: f,
       id: i,
@@ -248,7 +248,7 @@ let B = p()("2015-05-15").local(),
           onSelect: t,
           onFocus: n,
           result: a,
-          showFilter: l,
+          showFilter: o,
           searchId: s,
           renderResult: c,
           group: u
@@ -263,7 +263,7 @@ let B = p()("2015-05-15").local(),
             let n = R.TNx.test(e.type),
               i = R.KA4.test(e.type);
             return p += t, (0, r.jsx)("span", {
-              className: o()(L.searchHistoryRow, {
+              className: l()(L.searchHistoryRow, {
                 [L.filter]: n,
                 [L.answer]: i,
                 [L.nonText]: !n && !i
@@ -310,13 +310,13 @@ let B = p()("2015-05-15").local(),
             result: n,
             onSelect: i,
             onFocus: a,
-            showFilter: l,
+            showFilter: o,
             searchId: s
           } = e,
           c = F(e, ["result", "onSelect", "onFocus", "showFilter", "searchId"]);
-        let u = w.Ko(null !== (t = n.token) && void 0 !== t ? t : "");
+        let u = w.Ko(null != (t = n.token) ? t : "");
         return (0, r.jsxs)(h.P3F, U(W({
-          className: o()(L.option, L.searchOption),
+          className: l()(L.option, L.searchOption),
           onClick: i,
           onFocus: a
         }, c), {
@@ -324,7 +324,7 @@ let B = p()("2015-05-15").local(),
             className: L.filter,
             children: n.text
           }), (0, r.jsx)("span", {
-            className: o()({
+            className: l()({
               [L.answer]: u
             }),
             children: u
@@ -383,7 +383,7 @@ class X extends i.PureComponent {
   constructor(...e) {
     var t;
     super(...e), t = this, M(this, "state", {
-      dateHint: (0, v.Pr)(),
+      dateHint: (0, x.Pr)(),
       selectedIndex: -1
     }), M(this, "handleDateChange", e => {
       this.setSearchQuery(e.format(R.b2L) + " ", !0)
@@ -395,14 +395,14 @@ class X extends i.PureComponent {
         totalResults: i
       } = this.props, {
         mode: a,
-        autocompletes: o
+        autocompletes: l
       } = r, {
-        resultsState: l
+        resultsState: o
       } = e;
-      if (a.type !== l.mode.type) this.setSelectedIndex(-1);
-      else if (t.selectedIndex >= 0 && (t.selectedIndex === n || l.autocompletes.length !== o.length)) {
-        let e = w.zV(l.autocompletes, l.mode.type)[t.selectedIndex],
-          n = w.zV(o, a.type).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= i && this.setSelectedIndex(i - 1)
+      if (a.type !== o.mode.type) this.setSelectedIndex(-1);
+      else if (t.selectedIndex >= 0 && (t.selectedIndex === n || o.autocompletes.length !== l.length)) {
+        let e = w.zV(o.autocompletes, o.mode.type)[t.selectedIndex],
+          n = w.zV(l, a.type).indexOf(e); - 1 !== n ? this.setSelectedIndex(n) : t.selectedIndex >= i && this.setSelectedIndex(i - 1)
       }
     }), M(this, "focusNextOption", () => {
       this.focusOtherOption(1)
@@ -414,7 +414,7 @@ class X extends i.PureComponent {
       } = this.state, {
         resultsState: n
       } = this.props;
-      !w.Fz(n.mode.filter) && this.focusOption(t + e)
+      w.Fz(n.mode.filter) || this.focusOption(t + e)
     }), M(this, "focusOption", e => {
       let t = e,
         {
@@ -433,14 +433,14 @@ class X extends i.PureComponent {
       let i = w.zV(n, r.type);
       if (t >= i.length) return !1;
       let a = i[t],
-        o = function(e) {
+        l = function(e) {
           let t = !0,
             n = e.trim();
-          return u()(v.ZP).forOwn(e => {
+          return u()(x.ZP).forOwn(e => {
             "" !== e.key && null != e.key && n === e.key && (t = !1)
           }), t
         }(a);
-      return this.setSearchQuery(a, o), !0
+      return this.setSearchQuery(a, l), !0
     }), M(this, "setSearchQuery", function(e) {
       let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         {
@@ -449,11 +449,11 @@ class X extends i.PureComponent {
         } = t.props.resultsState,
         a = 0;
       null != r.token ? a = r.token.start : (null == i ? void 0 : i.currentToken) != null && (a = i.currentToken.end);
-      let o = null != r.token ? r.token.end : a;
+      let l = null != r.token ? r.token.end : a;
       P.S.dispatch(R.CkL.SET_SEARCH_QUERY, {
         query: e,
         anchor: a,
-        focus: o,
+        focus: l,
         performSearch: n
       }), t.setSelectedIndex(-1)
     }), M(this, "shouldShowSearchQuery", () => {
@@ -494,39 +494,39 @@ class X extends i.PureComponent {
         mode: a
       } = this.props.resultsState;
       if (w.Fz(a.filter)) return this.renderDatePicker();
-      let o = -1;
+      let l = -1;
       return i.map(i => {
-        var l, s, c;
+        var o, s, c;
         let u, d;
         if (null == i || 0 === i.results.length) return null;
-        let p = null !== (l = Y[i.group]) && void 0 !== l ? l : {};
+        let p = null != (o = Y[i.group]) ? o : {};
         null != p.titleText && (d = "".concat(i.group, "-header"), u = (0, r.jsx)("div", {
           id: d,
           className: L.header,
           children: p.titleText()
         }));
-        let m = null !== (s = p.groupTip) && void 0 !== s ? s : null,
+        let m = null != (s = p.groupTip) ? s : null,
           f = null != m ? (0, r.jsx)(m, {
             searchId: n
           }) : null,
-          h = null !== (c = p.component) && void 0 !== c ? c : z,
+          h = null != (c = p.component) ? c : z,
           g = a.type === R.Sap.FILTER_ALL;
         return (0, r.jsxs)("ul", {
           role: "group",
           "aria-labelledby": d,
           className: L.resultsGroup,
           children: [u, f, i.results.map(a => {
-            var l, s;
+            var o, s;
             if (null == a || null == i) return null;
-            let c = e === (o += 1);
+            let c = e === (l += 1);
             return (0, r.jsx)(h, W({
               searchId: n,
-              group: null !== (l = a.group) && void 0 !== l ? l : i.group,
+              group: null != (o = a.group) ? o : i.group,
               result: a,
               showFilter: g,
-              onSelect: this.selectOption.bind(null, o),
-              onFocus: this.focusOption.bind(null, o)
-            }, (0, _.M)(t, o, c)), "".concat(i.group, "-").concat(a.text, "-").concat(null !== (s = a.key) && void 0 !== s ? s : ""))
+              onSelect: this.selectOption.bind(null, l),
+              onFocus: this.focusOption.bind(null, l)
+            }, (0, _.M)(t, l, c)), "".concat(i.group, "-").concat(a.text, "-").concat(null != (s = a.key) ? s : ""))
           })]
         }, i.group)
       })

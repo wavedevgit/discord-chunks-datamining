@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(512969),
+  a = n.n(l),
+  o = n(512969),
   s = n(873546),
   c = n(442837),
   u = n(481060),
@@ -21,15 +21,15 @@ var r = n(200651),
   E = n(518311),
   O = n(199104),
   N = n(108427),
-  v = n(210887),
-  y = n(974042),
-  I = n(849862),
+  y = n(210887),
+  I = n(974042),
+  v = n(849862),
   C = n(666286),
   S = n(596957),
   T = n(981631),
   P = n(723359),
   j = n(388032),
-  A = n(107297);
+  A = n(610725);
 
 function Z() {
   return (0, r.jsx)("div", {
@@ -42,7 +42,7 @@ function Z() {
 let x = function(e) {
   let {
     initialSection: t
-  } = e, n = (0, a.TH)(), l = (0, a.k6)(), E = (0, m.Q3)("PeoplePage");
+  } = e, n = (0, o.TH)(), l = (0, o.k6)(), E = (0, m.Q3)("PeoplePage");
   i.useEffect(() => {
     "true" === new URLSearchParams(n.search).get("confirm-age") && d.Z.dispatch({
       type: "AGE_GATE_MODAL_OPEN",
@@ -53,12 +53,12 @@ let x = function(e) {
   }, [l, n]), i.useEffect(() => {
     p.Y(T.Z5c.FRIENDS), (0, N.e)("friends")
   }, []);
-  let x = (0, c.e7)([v.Z], () => v.Z.theme),
-    L = (0, I.If)(),
+  let x = (0, c.e7)([y.Z], () => y.Z.theme),
+    L = (0, v.If)(),
     {
       section: w,
       rows: R
-    } = (0, c.cj)([y.ZP], () => y.ZP.getState()),
+    } = (0, c.cj)([I.ZP], () => I.ZP.getState()),
     D = (0, c.e7)([b.Z], () => b.Z.getSuggestionCount()),
     k = i.useMemo(() => R.getRelationshipCounts(), [R]);
   i.useEffect(() => {
@@ -112,7 +112,7 @@ let x = function(e) {
         children: j.NW.string(j.t.j0wbEx)
       }),
       ariaLabel: j.NW.string(j.t.j0wbEx),
-      className: o()(A.item, A.addFriend)
+      className: a()(A.item, A.addFriend)
     }];
   return (0, r.jsxs)("main", {
     className: A.container,

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => m
 });
@@ -14,7 +14,7 @@ var i = n(120356),
   d = n(36703),
   p = n(358085),
   h = n(618158),
-  f = n(192279);
+  f = n(434580);
 
 function m(e) {
   let {
@@ -27,7 +27,7 @@ function m(e) {
     location: _
   } = e, {
     currentVolume: C,
-    muted: v
+    muted: y
   } = (0, o.cj)([u.Z], () => ({
     currentVolume: u.Z.getLocalVolume(m, g),
     muted: u.Z.isLocalMute(m, g)
@@ -39,13 +39,13 @@ function m(e) {
       sliderClassName: i,
       className: t,
       value: (0, d.P)(C),
-      muted: v,
+      muted: y,
       maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
-        e > 0 && v && a.Z.toggleLocalMute(m, g), a.Z.setLocalVolume(m, (0, d.A)(e), g)
+        e > 0 && y && a.Z.toggleLocalMute(m, g), a.Z.setLocalVolume(m, (0, d.A)(e), g)
       },
       onToggleMute: () => {
-        null != _ && (0, s.v)(_, s.d.VOLUME, v), a.Z.toggleLocalMute(m, g)
+        null != _ && (0, s.v)(_, s.d.VOLUME, y), a.Z.toggleLocalMute(m, g)
       }
     })
   })

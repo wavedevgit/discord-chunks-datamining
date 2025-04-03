@@ -12,14 +12,14 @@ var r = n(200651),
   u = n(388905),
   d = n(353926),
   p = n(82554),
-  h = n(726521),
-  g = n(185625),
-  m = n(314897),
-  f = n(63063),
+  g = n(726521),
+  h = n(185625),
+  f = n(314897),
+  m = n(63063),
   _ = n(981631),
   b = n(388032),
-  x = n(939027),
-  N = n(685786);
+  x = n(793613),
+  N = n(20493);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,10 +72,10 @@ let I = e => {
       })
     }, s = e => {
       let t = async () => {
-        await (0, g.yL)(i, e)
-      }, a = async t => await (0, g.RV)(i, e, t), s = e => {
+        await (0, h.yL)(i, e)
+      }, a = async t => await (0, h.RV)(i, e, t), s = e => {
         let t = null == e ? void 0 : e.token;
-        i === p.BM.MESSAGE ? (0, h.eE)(t) : i === p.BM.USER && (0, h.JM)(t)
+        i === p.BM.MESSAGE ? (0, g.eE)(t) : i === p.BM.USER && (0, g.JM)(t)
       };
       t(), (0, l.ZDy)(async () => {
         let {
@@ -104,18 +104,18 @@ let I = e => {
     })
   },
   j = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), h = (0, a.e7)([m.default], () => m.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
-      (0, g.qJ)().then(() => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState(!1), g = (0, a.e7)([f.default], () => f.default.isAuthenticated()), v = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), E = () => {
+      (0, h.qJ)().then(() => {
         t(!1), o(!0)
       }).catch(() => {
         t(!1), o(!1)
       })
     };
     return i.useEffect(() => {
-      h ? (t(!0), c.k({
+      g ? (t(!0), c.k({
         withAnalyticsToken: !0
       }).then(() => E()).catch(() => t(!1))) : E()
-    }, [h]), i.useEffect(() => {
+    }, [g]), i.useEffect(() => {
       (async () => {
         v || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
       })()
@@ -128,7 +128,7 @@ let I = e => {
       }), (0, r.jsx)(u.DK, {
         className: N.marginBottom8,
         children: b.NW.format(b.t["532l+v"], {
-          supportURL: f.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
+          supportURL: m.Z.getArticleURL(_.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, r.jsxs)("div", {
         className: x.container,

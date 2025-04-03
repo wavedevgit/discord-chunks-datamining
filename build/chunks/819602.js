@@ -19,15 +19,15 @@ var r = n(200651),
   m = n(888496),
   E = n(753194),
   b = n(749681),
-  v = n(258971),
-  N = n(598077),
-  A = n(671533),
-  _ = n(49012),
-  f = n(981631),
-  y = n(856651),
-  h = n(49898),
+  N = n(258971),
+  A = n(598077),
+  _ = n(671533),
+  f = n(49012),
+  y = n(981631),
+  h = n(856651),
+  v = n(49898),
   P = n(388032),
-  I = n(166734);
+  I = n(797892);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,41 +65,41 @@ function S(e) {
   var t, n;
   let c, a, u, {
     connectedAccount: b,
-    theme: v,
-    locale: N,
-    userId: h,
+    theme: N,
+    locale: A,
+    userId: v,
     className: S,
     showMetadata: g,
     showInvisibleIcon: C
   } = e;
   null == g && (g = !0);
-  let D = null !== (n = b.metadata) && void 0 !== n ? n : {},
-    L = g ? (0, p.FI)(D[y.PC.CREATED_AT], N) : null,
+  let D = null != (n = b.metadata) ? n : {},
+    L = g ? (0, p.FI)(D[h.PC.CREATED_AT], A) : null,
     R = (0, s.dQu)(o.Z.unsafe_rawColors.TWITTER).hex(),
     w = P.NW.string(P.t["6H6h1t"]);
   if (g) switch (b.type) {
-    case f.ABu.REDDIT:
+    case y.ABu.REDDIT:
       c = (0, m.oP)(D);
       break;
-    case f.ABu.STEAM:
+    case y.ABu.STEAM:
       c = (0, m.Dq)(D);
       break;
-    case f.ABu.BLUESKY:
-    case f.ABu.MASTODON:
-    case f.ABu.TWITTER:
-      c = (0, m.rJ)(D), "1" === D[y.PC.TWITTER_VERIFIED] && (a = R, w = P.NW.string(P.t.Jebrw8));
+    case y.ABu.BLUESKY:
+    case y.ABu.MASTODON:
+    case y.ABu.TWITTER:
+      c = (0, m.rJ)(D), "1" === D[h.PC.TWITTER_VERIFIED] && (a = R, w = P.NW.string(P.t.Jebrw8));
       break;
-    case f.ABu.PAYPAL:
+    case y.ABu.PAYPAL:
       c = (0, m.li)(D);
       break;
-    case f.ABu.EBAY:
+    case y.ABu.EBAY:
       c = (0, m.ul)(D);
       break;
-    case f.ABu.TIKTOK:
+    case y.ABu.TIKTOK:
       c = (0, m.hf)(D)
   }
   let U = d.Z.get((0, T.rR)(b.type)),
-    G = null == U ? void 0 : null === (t = U.getPlatformUserUrl) || void 0 === t ? void 0 : t.call(U, b);
+    G = null == U || null == (t = U.getPlatformUserUrl) ? void 0 : t.call(U, b);
   null != C && C ? u = (0, r.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
@@ -108,17 +108,17 @@ function S(e) {
     href: G,
     onClick: e => {
       var t;
-      t = b.type, (0, O.yw)(f.rMx.CONNECTED_ACCOUNT_VIEWED, {
+      t = b.type, (0, O.yw)(y.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: t,
-        other_user_id: h
-      }), (0, _.q)({
+        other_user_id: v
+      }), (0, f.q)({
         href: G,
-        trusted: (null == U ? void 0 : U.type) !== f.ABu.DOMAIN
+        trusted: (null == U ? void 0 : U.type) !== y.ABu.DOMAIN
       }, e)
     },
-    children: (0, r.jsx)(A.Z, {
+    children: (0, r.jsx)(_.Z, {
       className: I.connectedAccountOpenIcon,
-      direction: A.Z.Directions.RIGHT
+      direction: _.Z.Directions.RIGHT
     })
   }));
   let W = (0, s.dQu)(o.Z.colors.INTERACTIVE_MUTED).hex(),
@@ -141,7 +141,7 @@ function S(e) {
             name: null == U ? void 0 : U.name
           }),
           className: I.connectedAccountIcon,
-          src: (0, i.wj)(v) ? null == U ? void 0 : U.icon.darkSVG : null == U ? void 0 : U.icon.lightSVG
+          src: (0, i.wj)(N) ? null == U ? void 0 : U.icon.darkSVG : null == U ? void 0 : U.icon.lightSVG
         }))
       }), (0, r.jsxs)("div", {
         className: I.connectedAccountNameContainer,
@@ -184,11 +184,11 @@ function g(e) {
     selectedGuildId: o
   } = e, i = (0, m.rm)(t, void 0, c), d = () => {
     null == a || a(), (0, b.transitionToGlobalDiscovery)({
-      tab: h.GlobalDiscoveryTab.APPS,
+      tab: v.GlobalDiscoveryTab.APPS,
       applicationId: t.application.id,
       newSessionState: {
         entrypoint: {
-          name: v.xF.APPLICATION_DIRECTORY_URL
+          name: N.xF.APPLICATION_DIRECTORY_URL
         },
         guildId: o
       }
@@ -232,7 +232,7 @@ function g(e) {
             applicationHook: () => (0, r.jsxs)("div", {
               className: I.connectedAccountPoweredByText,
               children: [null != t.application.bot ? (0, r.jsx)(u.Z, {
-                user: new N.Z(t.application.bot),
+                user: new A.Z(t.application.bot),
                 size: s.EFr.SIZE_16
               }) : null, (0, r.jsx)(s.Text, {
                 variant: "text-xs/normal",

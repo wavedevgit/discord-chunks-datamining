@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(969632),
   p = n(535907),
   h = n(388032),
-  f = n(83843);
+  f = n(773100);
 
 function b(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ let j = function(e) {
     guildId: t
   } = e, s = (0, l.cj)([g.Z], () => {
     var e;
-    return null !== (e = g.Z.getSettings().welcomeMessage) && void 0 !== e ? e : p.z
+    return null != (e = g.Z.getSettings().welcomeMessage) ? e : p.z
   }), j = i.useCallback(() => (0, o.ZDy)(async () => {
     let {
       default: e

@@ -6,7 +6,7 @@ var s, i = n(200651),
   r = n(192379),
   o = n(481060),
   l = n(388032),
-  a = n(58491);
+  a = n(460268);
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -95,13 +95,13 @@ class c extends(s = r.PureComponent) {
       this.setState({
         isLoading: !0
       }), n(t).then(e => s(null != e ? e : void 0), e => {
-        if (null != e.body) null == i || i(e.body), !this.shouldSkipErrorMsgRender(e.body) && (e.body.password ? this.setState({
+        null != e.body && (null == i || i(e.body), !this.shouldSkipErrorMsgRender(e.body) && (e.body.password ? this.setState({
           error: e.body.password,
           isLoading: !1
         }) : e.body.message && this.setState({
           error: e.body.message,
           isLoading: !1
-        }))
+        })))
       }).finally(() => this.setState({
         isLoading: !1
       }))

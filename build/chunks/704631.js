@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(324262),
-  o = n(981631),
-  a = n(921944),
+  a = n(981631),
+  o = n(921944),
   s = n(388032),
   c = n(524094);
 
@@ -18,7 +18,7 @@ function u(e) {
   } = e;
   return (0, r.jsx)(l.Z, {
     guild: t,
-    onDismissed: () => u(a.L.UNKNOWN),
+    onDismissed: () => u(o.L.UNKNOWN),
     onClick: function() {
       (0, i.ZDy)(async () => {
         let {
@@ -46,8 +46,8 @@ function u(e) {
     },
     message: s.NW.string(s.t["1+hiPz"]),
     cta: s.NW.string(s.t.hvVgAQ),
-    trackingSource: o.PsQ.HUB_LINK_NOTICE,
-    type: o.vID.HUB_LINK,
+    trackingSource: a.PsQ.HUB_LINK_NOTICE,
+    type: a.vID.HUB_LINK,
     image: c
   })
 }

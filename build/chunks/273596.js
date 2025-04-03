@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(392711),
-  s = n.n(a),
+  a = n.n(l),
+  o = n(392711),
+  s = n.n(o),
   c = n(481060),
   u = n(393903),
   d = n(626135),
@@ -21,9 +21,9 @@ var r = n(200651),
   E = n(140700),
   O = n(665807),
   N = n(188493),
-  v = n(294330),
-  y = n(981631),
-  I = n(601407);
+  y = n(294330),
+  I = n(981631),
+  v = n(984503);
 let C = Object.freeze({
     top: 0,
     bottom: 0,
@@ -37,9 +37,9 @@ let C = Object.freeze({
     right: 32
   }),
   T = {
-    page: y.ZY5.GUILD_DISCOVERY,
-    object: y.qAy.CARD,
-    section: y.jXE.DISCOVER_SEARCH
+    page: I.ZY5.GUILD_DISCOVERY,
+    object: I.qAy.CARD,
+    section: I.jXE.DISCOVER_SEARCH
   },
   P = s().throttle(h.c6, 1e3, {
     leading: !1,
@@ -54,7 +54,7 @@ function j(e) {
   } = e, {
     guildIds: s,
     loading: h,
-    searchResultsQuery: y,
+    searchResultsQuery: I,
     loadMore: j,
     searchCategoryId: A
   } = (0, b.f)({
@@ -72,19 +72,19 @@ function j(e) {
   });
   i.useLayoutEffect(() => {
     var e;
-    V(null === (e = B.current) || void 0 === e ? void 0 : e.getBoundingClientRect())
+    V(null == (e = B.current) ? void 0 : e.getBoundingClientRect())
   }, [B, V]), i.useEffect(() => {
     w((0, m.PM)())
-  }, [y]), i.useEffect(() => {
+  }, [I]), i.useEffect(() => {
     P({
       loadId: t,
       searchId: L,
-      query: y,
+      query: I,
       guildResults: s.map(f.Z.getGuild).filter(p.lm),
       analyticsContext: x,
       categoryId: A
     })
-  }, [x, s, t, A, L, y]);
+  }, [x, s, t, A, L, I]);
   let H = i.useCallback(e => n(e, A), [n, A]),
     F = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
     z = i.useCallback((e, n, i) => {
@@ -95,11 +95,11 @@ function j(e) {
               paddingLeft: n.left,
               width: n.width - 16
             },
-            className: o()(I.heading, {
-              [I.headingTopbar]: !R
+            className: a()(v.heading, {
+              [v.headingTopbar]: !R
             }),
             children: [!R && (0, r.jsxs)("div", {
-              className: I.headingFilters,
+              className: v.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
               }), (0, r.jsx)(N.Z, {
@@ -111,8 +111,8 @@ function j(e) {
           }, i);
         case 1:
           return (0, r.jsx)(c.$jN, {
-            className: o()(I.spinner, {
-              [I.spinnerWithSidebar]: R
+            className: a()(v.spinner, {
+              [v.spinnerWithSidebar]: R
             })
           }, i)
       }
@@ -149,32 +149,32 @@ function j(e) {
       }
     }, []),
     Q = i.useCallback(async (e, t, n, r) => {
-      var i, o;
+      var i, a;
       await l(e, t, n, r);
-      let a = null === (o = W.current) || void 0 === o ? void 0 : null === (i = o.getScrollerState()) || void 0 === i ? void 0 : i.scrollTop;
-      null != a && g.Z.setState({
-        scrollPosition: a
+      let o = null == (a = W.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
+      null != o && g.Z.setState({
+        scrollPosition: o
       })
     }, [l]),
     X = i.useCallback((e, t, n, i) => {
-      if (0 === e) {
+      if (0 !== e) return null;
+      {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(v.ZP, {
+          children: (0, r.jsx)(y.ZP, {
             guildId: e,
             onClick: async e => await Q(e, t, A, T),
             onView: e => H(e)
           })
         }, i)
       }
-      return null
     }, [s, Q, H, A]);
   i.useEffect(() => {
     let e = W.current;
     return () => {
       var t;
-      let n = null == e ? void 0 : null === (t = e.getScrollerState()) || void 0 === t ? void 0 : t.scrollTop;
+      let n = null == e || null == (t = e.getScrollerState()) ? void 0 : t.scrollTop;
       null != n && g.Z.setState({
         scrollPosition: n
       })
@@ -183,7 +183,7 @@ function j(e) {
     let e = g.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
-      null === (t = W.current) || void 0 === t || t.scrollTo({
+      null == (t = W.current) || t.scrollTo({
         to: e,
         animate: !1,
         callback: () => {
@@ -194,9 +194,9 @@ function j(e) {
       })
     })
   }, []);
-  let J = i.useMemo(() => (0, a.debounce)(() => {
+  let J = i.useMemo(() => (0, o.debounce)(() => {
       var e;
-      let t = null === (e = W.current) || void 0 === e ? void 0 : e.getScrollerState();
+      let t = null == (e = W.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
       t.scrollHeight - n < 240 && j()
@@ -205,11 +205,11 @@ function j(e) {
     }), [j]),
     $ = R ? C : S;
   return (0, r.jsx)("div", {
-    className: I.container,
+    className: v.container,
     ref: B,
     children: (0, r.jsx)(c.GMG, {
       ref: W,
-      className: I.masonryList,
+      className: v.masonryList,
       sections: F,
       columns: M,
       itemGutter: 16,
@@ -222,14 +222,14 @@ function j(e) {
       chunkSize: 24,
       onScroll: J,
       renderAccessory: e => R ? (0, r.jsx)("div", {
-        className: I.sidebar,
+        className: v.sidebar,
         style: {
           height: e
         },
         children: (0, r.jsxs)("div", {
-          className: I.sidebarContent,
+          className: v.sidebarContent,
           children: [(0, r.jsx)("div", {
-            className: I.sidebarLanguageSelect,
+            className: v.sidebarLanguageSelect,
             children: (0, r.jsx)(N.Z, {
               loadId: t
             })

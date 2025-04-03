@@ -21,12 +21,12 @@ function s(e) {
     context: g
   } = e, p = (0, r.e7)([a.Z, c.Z], () => {
     var e;
-    return a.Z.getGuild(null === (e = c.Z.getChannel(n)) || void 0 === e ? void 0 : e.getGuildId())
-  }, [n]), v = (0, r.e7)([o.Z], () => o.Z.getStageInstanceByChannel(n), [n]), h = (0, i.w8)(n, l.pV.SPEAKER), f = (0, i.Rk)(n), m = null != v ? h : u, j = (null != v ? f : d) - m.length;
+    return a.Z.getGuild(null == (e = c.Z.getChannel(n)) ? void 0 : e.getGuildId())
+  }, [n]), h = (0, r.e7)([o.Z], () => o.Z.getStageInstanceByChannel(n), [n]), f = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), m = null != h ? f : u, j = (null != h ? v : d) - m.length;
   return {
     channelId: n,
     guild: null != p ? p : t,
-    stage: null != v ? v : s,
+    stage: null != h ? h : s,
     speakers: m,
     audienceCount: j,
     context: g

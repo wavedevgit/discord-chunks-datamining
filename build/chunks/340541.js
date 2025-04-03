@@ -1,7 +1,7 @@
-/** Chunk was on 96977 **/
+/** Chunk was on 80429 **/
 n.d(t, {
-  _k: () => r,
-  jW: () => o
+  _k: () => a,
+  jW: () => r
 });
 let i = (0, n(818083).B)({
   kind: "user",
@@ -19,7 +19,7 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function r(e) {
   let {
     location: t
   } = e, {
@@ -30,7 +30,7 @@ function o(e) {
   return n
 }
 
-function r(e) {
+function a(e) {
   let {
     location: t
   } = e, {

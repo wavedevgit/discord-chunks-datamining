@@ -10,11 +10,11 @@ var r = n(200651),
   c = n(313201),
   u = n(592125),
   o = n(984933),
-  d = n(699516),
-  N = n(594174),
+  N = n(699516),
+  d = n(594174),
   j = n(556012),
   A = n(388032),
-  h = n(761739);
+  h = n(331632);
 let E = e => {
   let {
     guildId: t,
@@ -38,7 +38,7 @@ let E = e => {
       value: null == n ? void 0 : n.id,
       options: c.map(e => ({
         value: e.id,
-        label: (0, s.F6)(e, N.default, d.Z, !0)
+        label: (0, s.F6)(e, d.default, N.Z, !0)
       })),
       onChange: e => {
         let t = c.find(t => t.id === e);
@@ -55,13 +55,13 @@ function _(e) {
     triggerType: n,
     guildId: s,
     isEdit: o,
-    onEditChannel: d,
-    onClose: N,
+    onEditChannel: N,
+    onClose: d,
     transitionState: _
   } = e, S = (0, c.Dt)(), [C, x] = l.useState(t.metadata.channelId), [L, I] = l.useState(null), g = (0, a.e7)([u.Z], () => u.Z.getChannel(C), [C]), T = (0, j.c)(t.type, t, n);
   if (null == T) return null;
   let {
-    headerText: v
+    headerText: f
   } = T;
   return (0, r.jsxs)(i.Y0X, {
     transitionState: _,
@@ -74,7 +74,7 @@ function _(e) {
         color: "header-primary",
         variant: "heading-lg/semibold",
         className: h.header,
-        children: v
+        children: f
       }), (0, r.jsx)(i.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
@@ -97,18 +97,15 @@ function _(e) {
     }), (0, r.jsxs)(i.mzw, {
       children: [(0, r.jsx)(i.zxk, {
         onClick: () => {
-          if (null == C) {
-            I(A.NW.string(A.t.lM1NLi));
-            return
-          }
-          d(C)
+          if (null == C) return void I(A.NW.string(A.t.lM1NLi));
+          N(C)
         },
         color: i.zxk.Colors.BRAND,
         size: i.zxk.Sizes.SMALL,
         children: o ? A.NW.string(A.t.bt75u7) : A.NW.string(A.t.R3BPHx)
       }), (0, r.jsx)(i.zxk, {
         onClick: () => {
-          N()
+          d()
         },
         color: i.zxk.Colors.TRANSPARENT,
         look: i.zxk.Looks.LINK,

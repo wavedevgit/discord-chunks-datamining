@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => f,
@@ -62,19 +62,16 @@ function u(e) {
 let m = "_errors",
   g = "GENERIC_REGEX_ERROR";
 async function p(e, t) {
-  if (null == e.triggerMetadata.regexPatterns || 0 === e.triggerMetadata.regexPatterns.length) {
-    t([]);
-    return
-  }
+  if (null == e.triggerMetadata.regexPatterns || 0 === e.triggerMetadata.regexPatterns.length) return void t([]);
   try {
     await (0, a.qY)(e), t([])
   } catch (i) {
     var n;
     let e = new s.Hx(i).errors;
-    if ("object" != typeof e || (null == e ? void 0 : null === (n = e.trigger_metadata) || void 0 === n ? void 0 : n.regex_patterns) == null) return;
+    if ("object" != typeof e || (null == e || null == (n = e.trigger_metadata) ? void 0 : n.regex_patterns) == null) return;
     let r = function(e) {
       var t;
-      let n = null == e ? void 0 : null === (t = e.trigger_metadata) || void 0 === t ? void 0 : t.regex_patterns;
+      let n = null == e || null == (t = e.trigger_metadata) ? void 0 : t.regex_patterns;
       return null == n ? [] : function(e) {
         let {
           [m]: t = []
@@ -97,7 +94,7 @@ async function p(e, t) {
           let [n, r] = e, i = r[m], {
             code: s,
             message: a
-          } = null !== (t = null == i ? void 0 : i[0]) && void 0 !== t ? t : {
+          } = null != (t = null == i ? void 0 : i[0]) ? t : {
             code: g,
             message: l.NW.string(l.t.hDPEu7)
           };
@@ -115,8 +112,8 @@ async function p(e, t) {
           var r, i, s, a;
           n.push({
             pattern: m,
-            message: null !== (s = null === (r = t[0]) || void 0 === r ? void 0 : r.message) && void 0 !== s ? s : l.NW.string(l.t.hDPEu7),
-            code: null !== (a = null === (i = t[0]) || void 0 === i ? void 0 : i.code) && void 0 !== a ? a : g
+            message: null != (s = null == (r = t[0]) ? void 0 : r.message) ? s : l.NW.string(l.t.hDPEu7),
+            code: null != (a = null == (i = t[0]) ? void 0 : i.code) ? a : g
           })
         }
         return n
@@ -131,14 +128,14 @@ let h = (0, i.throttle)(p, 1e3, {
 
 function f(e, t) {
   var n, s;
-  let [a, l] = r.useState([]), [d, u] = r.useState(null), [m, g] = r.useState(null !== (s = null == e ? void 0 : null === (n = e.triggerMetadata) || void 0 === n ? void 0 : n.regexPatterns) && void 0 !== s ? s : []), f = r.useCallback(t => {
-    !(t.length < 3) && h(c(o({}, e), {
+  let [a, l] = r.useState([]), [d, u] = r.useState(null), [m, g] = r.useState(null != (s = null == e || null == (n = e.triggerMetadata) ? void 0 : n.regexPatterns) ? s : []), f = r.useCallback(t => {
+    t.length < 3 || h(c(o({}, e), {
       triggerMetadata: c(o({}, e.triggerMetadata), {
         regexPatterns: [t]
       })
     }), e => {
       var t;
-      return u(null !== (t = e[0]) && void 0 !== t ? t : null)
+      return u(null != (t = e[0]) ? t : null)
     })
   }, [e]);
   return {
@@ -146,7 +143,7 @@ function f(e, t) {
     errors: a,
     valueError: d,
     validatePatternsChanged: r.useCallback((n, r) => {
-      !(0, i.isEqual)(n, r) && (h.cancel(), p(c(o({}, e), {
+      (0, i.isEqual)(n, r) || (h.cancel(), p(c(o({}, e), {
         triggerMetadata: c(o({}, e.triggerMetadata), {
           regexPatterns: n
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T
 }), n(47120);
@@ -19,16 +19,16 @@ var r = n(200651),
   b = n(594174),
   _ = n(626135),
   C = n(645896),
-  v = n(905362),
-  y = n(603368),
-  x = n(353093),
+  y = n(905362),
+  x = n(603368),
+  v = n(353093),
   j = n(940725),
   O = n(114487),
   E = n(979264),
   N = n(981631),
   I = n(921944),
   P = n(388032),
-  S = n(932383);
+  S = n(129163);
 
 function Z(e) {
   var t;
@@ -37,17 +37,17 @@ function Z(e) {
     showToast: l,
     onConfirm: s,
     onDismiss: d
-  } = e, [f, m] = i.useState(!1), g = i.useRef(null), _ = (0, C.Cc)(n.id), v = (0, p.ZP)(), j = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), N = (0, y.nP)(null == _ ? void 0 : null === (t = _.branding) || void 0 === t ? void 0 : t.primaryColor, [c.TVs.colors.BG_BRAND, .5]), I = c.TVs.colors.BG_SURFACE_OVERLAY.resolve({
-    theme: v,
+  } = e, [f, m] = i.useState(!1), g = i.useRef(null), _ = (0, C.Cc)(n.id), y = (0, p.ZP)(), j = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), N = (0, x.nP)(null == _ || null == (t = _.branding) ? void 0 : t.primaryColor, [c.TVs.colors.BG_BRAND, .5]), I = c.TVs.colors.BG_SURFACE_OVERLAY.resolve({
+    theme: y,
     saturation: 1
-  }).hex(), Z = (0, y.nj)(N, I, "top left", .3, "30%"), T = (0, u.e7)([b.default], () => {
+  }).hex(), Z = (0, x.nj)(N, I, "top left", .3, "30%"), T = (0, u.e7)([b.default], () => {
     var e;
-    return null === (e = b.default.getCurrentUser()) || void 0 === e ? void 0 : e.primaryGuild
+    return null == (e = b.default.getCurrentUser()) ? void 0 : e.primaryGuild
   }, []);
   i.useLayoutEffect(() => {
     var e;
     if (null == g.current) return;
-    let t = null === (e = g.current) || void 0 === e ? void 0 : e.parentNode;
+    let t = null == (e = g.current) ? void 0 : e.parentNode;
     return null != t && (t.style.zIndex = "1003"), () => {
       null != t && (t.style.zIndex = "1002")
     }
@@ -82,7 +82,7 @@ function Z(e) {
       },
       delay: 200
     }, "animate-always"),
-    M = (0, x.Zp)(n, T),
+    M = (0, v.Zp)(n, T),
     k = M ? P.NW.formatToPlainString(P.t.qFqINz, {
       guildName: n.name
     }) : P.NW.formatToPlainString(P.t.bFwASk, {
@@ -133,8 +133,8 @@ function Z(e) {
               className: S.guildTagContainer,
               children: (0, r.jsx)(E.aG, {
                 guildId: n.id,
-                clanTag: null === (i = n.profile) || void 0 === i ? void 0 : i.tag,
-                clanBadge: null === (l = n.profile) || void 0 === l ? void 0 : l.badge,
+                clanTag: null == (i = n.profile) ? void 0 : i.tag,
+                clanBadge: null == (l = n.profile) ? void 0 : l.badge,
                 className: S.guildClanTag
               })
             })]
@@ -180,7 +180,7 @@ function T(e) {
     null != c.current && window.clearTimeout(c.current)
   }));
   let p = i.useCallback(() => {
-      a(!1), null != t && (0, v.SJ)(t)
+      a(!1), null != t && (0, y.SJ)(t)
     }, [, t]),
     h = i.useCallback(() => {
       a(!1), null != t && (0, f.Qd)(s.C.ADOPT_CLAN_IDENTITY_NOTICE, null != t ? t : N.lds, !0, I.L.DISMISS)

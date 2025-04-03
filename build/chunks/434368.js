@@ -14,7 +14,7 @@ var r = n(200651),
   C = n(527379),
   m = n(981631),
   b = n(388032),
-  p = n(193562);
+  p = n(771221);
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -60,11 +60,11 @@ function j(e) {
     o.requireCommunicationDisabled || j(u.aY.COMMUNICATION_DISABLED), (0, C.Dr)(t, h(f({}, o), {
       requireCommunicationDisabled: !o.requireCommunicationDisabled
     }))
-  }, [t, o, j]), v = l.useCallback(() => {
+  }, [t, o, j]), y = l.useCallback(() => {
     o.requireUnusualAccountActivity || j(u.aY.UNUSUAL_ACCOUNT_ACTIVITY), (0, C.Dr)(t, h(f({}, o), {
       requireUnusualAccountActivity: !o.requireUnusualAccountActivity
     }))
-  }, [t, o, j]), y = l.useCallback(() => {
+  }, [t, o, j]), v = l.useCallback(() => {
     o.requireUsernameQuarantined || j(u.aY.USERNAME_QUARANTINED), (0, C.Dr)(t, h(f({}, o), {
       requireUsernameQuarantined: !o.requireUsernameQuarantined
     }))
@@ -114,7 +114,7 @@ function j(e) {
               className: p.unusualAccountActivityLabelIcon
             }), b.NW.string(b.t.DIQsDw)]
           }),
-          action: v,
+          action: y,
           checked: o.requireUnusualAccountActivity
         }), (0, r.jsx)(s.S89, {
           id: "toggle-require-username-quarantined",
@@ -128,7 +128,7 @@ function j(e) {
               className: p.quarantinedLabelIcon
             }), b.NW.string(b.t.Jloklp)]
           }),
-          action: y,
+          action: v,
           checked: o.requireUsernameQuarantined
         })]
       })]

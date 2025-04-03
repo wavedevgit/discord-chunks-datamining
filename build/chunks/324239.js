@@ -11,10 +11,10 @@ var r = n(200651),
   a = n(390885),
   u = n(626135),
   m = n(361207),
-  d = n(981631),
-  f = n(630724),
+  f = n(981631),
+  d = n(630724),
   p = n(388032),
-  _ = n(90730);
+  _ = n(327342);
 
 function g(e) {
   let {
@@ -22,11 +22,11 @@ function g(e) {
     setEmail: n,
     claimRequired: u,
     onSuccess: m,
-    onClose: d
-  } = e, [g, N] = o.useState(), [S, v] = o.useState(""), [x, y] = o.useState(""), [b, O] = o.useState(!1);
-  o.useEffect(() => a.Z.flowStep(f.MK.ANY, f.mx.CLAIM_ACCOUNT), []);
+    onClose: f
+  } = e, [g, N] = o.useState(), [S, x] = o.useState(""), [y, b] = o.useState(""), [v, O] = o.useState(!1);
+  o.useEffect(() => a.Z.flowStep(d.MK.ANY, d.mx.CLAIM_ACCOUNT), []);
   let j = async e => {
-    e.preventDefault(), O(!0), N(""), y("");
+    e.preventDefault(), O(!0), N(""), b("");
     try {
       await (0, i.S2)({
         email: t,
@@ -34,7 +34,7 @@ function g(e) {
       }), O(!1), m()
     } catch (e) {
       var n, r;
-      (null == e ? void 0 : null === (n = e.body) || void 0 === n ? void 0 : n.email) && N(e.body.email), (null == e ? void 0 : null === (r = e.body) || void 0 === r ? void 0 : r.password) && y(e.body.password), O(!1)
+      (null == e || null == (n = e.body) ? void 0 : n.email) && N(e.body.email), (null == e || null == (r = e.body) ? void 0 : r.password) && b(e.body.password), O(!1)
     }
   };
   return (0, r.jsxs)("div", {
@@ -55,7 +55,7 @@ function g(e) {
         children: u ? p.NW.string(p.t.sW28gY) : p.NW.string(p.t["gP/vPT"])
       }), (0, r.jsx)(l.olH, {
         className: _.closeButton,
-        onClick: d
+        onClick: f
       })]
     }), (0, r.jsx)(l.hzk, {
       children: (0, r.jsxs)("form", {
@@ -76,14 +76,14 @@ function g(e) {
           children: (0, r.jsx)(l.oil, {
             type: "password",
             value: S,
-            error: x,
-            onChange: e => v(e)
+            error: y,
+            onChange: e => x(e)
           })
         }), (0, r.jsx)(l.zxk, {
           type: "submit",
           size: l.zxk.Sizes.LARGE,
           fullWidth: !0,
-          submitting: b,
+          submitting: v,
           disabled: 0 === t.length || 0 === S.length,
           children: p.NW.string(p.t.fiNVio)
         }), u && (0, r.jsx)(l.zxk, {
@@ -92,7 +92,7 @@ function g(e) {
           look: l.zxk.Looks.LINK,
           size: l.zxk.Sizes.NONE,
           onClick: () => {
-            s.Z.logout(), d()
+            s.Z.logout(), f()
           },
           children: p.NW.string(p.t["2jxGen"])
         })]
@@ -107,7 +107,7 @@ function N(e) {
     claimRequired: n,
     onClose: s
   } = e, i = n ? p.t.D7trIC : p.t.JNWX7O;
-  return o.useEffect(() => a.Z.flowStep(f.MK.ANY, f.mx.CLAIM_ACCOUNT_SUCCESS), []), (0, r.jsxs)("div", {
+  return o.useEffect(() => a.Z.flowStep(d.MK.ANY, d.mx.CLAIM_ACCOUNT_SUCCESS), []), (0, r.jsxs)("div", {
     children: [(0, r.jsxs)(l.hzk, {
       className: _.successContent,
       children: [!n && (0, r.jsx)(l.olH, {
@@ -139,7 +139,7 @@ function N(e) {
         color: l.zxk.Colors.BRAND,
         size: l.zxk.Sizes.LARGE,
         onClick: function() {
-          window.open((0, m.t3)(), "_blank"), u.default.track(d.rMx.DOWNLOAD_APP, {
+          window.open((0, m.t3)(), "_blank"), u.default.track(f.rMx.DOWNLOAD_APP, {
             platform: (0, m.DW)(),
             ptb: !1,
             released: !0,

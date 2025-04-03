@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(481060),
-  o = n(194359),
-  a = n(906732),
+  a = n(194359),
+  o = n(906732),
   s = n(388380),
   c = n(171368),
   u = n(626135),
@@ -15,7 +15,7 @@ var r = n(200651),
   h = n(170245),
   f = n(981631),
   g = n(388032),
-  m = n(778094);
+  m = n(292568);
 
 function b(e) {
   let {
@@ -25,8 +25,8 @@ function b(e) {
     isFocused: _
   } = e, E = i.useContext(u.AnalyticsContext), {
     analyticsLocations: O
-  } = (0, a.ZP)(), N = e => {
-    null == e || e.stopPropagation(), o.Z.addRelationship({
+  } = (0, o.ZP)(), N = e => {
+    null == e || e.stopPropagation(), a.Z.addRelationship({
       userId: t.id,
       context: {
         location: "Friends"
@@ -35,9 +35,9 @@ function b(e) {
       friendToken: void 0,
       fromFriendSuggestion: !0
     })
-  }, v = e => {
+  }, y = e => {
     null == e || e.stopPropagation(), s.Z.ignore(t.id)
-  }, y = b === f.Skl.OFFLINE ? f.Skl.UNKNOWN : b;
+  }, I = b === f.Skl.OFFLINE ? f.Skl.UNKNOWN : b;
   return (0, r.jsx)(p.Z, {
     isFocused: _,
     user: t,
@@ -58,7 +58,7 @@ function b(e) {
           icon: l.Dio,
           actionType: d.Z.ActionTypes.DENY,
           tooltip: g.NW.string(g.t.xuio0N),
-          onClick: v,
+          onClick: y,
           shouldHighlight: e
         })]
       });
@@ -67,7 +67,7 @@ function b(e) {
         children: [(0, r.jsx)(h.Z, {
           user: t,
           hovered: e,
-          status: y,
+          status: I,
           subText: n,
           className: m.__invalid_userInfo
         }), (0, r.jsx)("div", {

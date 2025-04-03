@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => Z
 });
@@ -20,16 +20,16 @@ var i = n(442837),
   b = n(681837),
   _ = n(78806),
   C = n(91433),
-  v = n(900927),
-  y = n(944043),
-  x = n(678738),
+  y = n(900927),
+  x = n(944043),
+  v = n(678738),
   j = n(502762),
   O = n(530),
   E = n(827313),
   N = n(228168),
   I = n(981631),
   P = n(388032),
-  S = n(258630);
+  S = n(969627);
 
 function Z(e) {
   let {
@@ -52,7 +52,7 @@ function Z(e) {
     location: "UserProfilePanelBody"
   }), W = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), U = (0, i.e7)([p.Z], () => {
     var e;
-    return null === (e = p.Z.getUserProfile(t.id)) || void 0 === e ? void 0 : e.application
+    return null == (e = p.Z.getUserProfile(t.id)) ? void 0 : e.application
   });
   return (0, r.jsxs)("div", {
     className: S.body,
@@ -88,9 +88,9 @@ function Z(e) {
         applicationId: e.applicationId,
         channelId: T.id
       })
-    }, e.applicationId)), (0, r.jsx)(y.Z, {
+    }, e.applicationId)), (0, r.jsx)(x.Z, {
       user: t,
-      source: y.t.PANEL
+      source: x.t.PANEL
     }), t.isProvisional && (0, r.jsx)(s.wQ, {
       userId: t.id,
       headingColor: "header-primary"
@@ -101,7 +101,7 @@ function Z(e) {
       className: S.activity
     }), (0, r.jsxs)(j.Z.Overlay, {
       className: S.overlay,
-      children: [!W && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(x.Z, {
+      children: [!W && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(v.Z, {
         heading: P.NW.string(P.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(m.Z, {
@@ -114,16 +114,16 @@ function Z(e) {
         applicationId: U.id,
         commandIds: U.popularApplicationCommandIds,
         channel: T
-      }), L.length > 0 && (0, r.jsx)(x.Z, {
+      }), L.length > 0 && (0, r.jsx)(v.Z, {
         heading: P.NW.string(P.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(_.Z, {
           applicationIds: L
         })
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(v.Z, {
         heading: t.bot ? P.NW.string(P.t["A//N4u"]) : P.NW.string(P.t.a6XYDw),
         headingColor: "header-primary",
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(y.Z, {
           userId: t.id
         })
       })]

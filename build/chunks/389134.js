@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -57,23 +57,23 @@ let b = () => ({
   x = b(),
   j = l()(x),
   N = !1,
-  v = !1,
-  _ = {};
+  _ = !1,
+  v = {};
 class C extends(r = o.ZP.Store) {
   getState() {
     return {
       initialSettings: x,
       settings: j,
       dirty: N,
-      errors: _,
-      submitting: v
+      errors: v,
+      submitting: _
     }
   }
 }
 p(C, "displayName", "ClanSettingsStore");
 let O = new C(c.Z, {
   CLAN_SETTINGS_FETCH_START: function() {
-    v = !1, x = b(), j = l()(x), N = !1, _ = {}
+    _ = !1, x = b(), j = l()(x), N = !1, v = {}
   },
   CLAN_SETTINGS_FETCH_SUCCESS: function(e) {
     let {
@@ -87,20 +87,20 @@ let O = new C(c.Z, {
     } = e, {
       gameApplicationIds: n
     } = t;
-    for (let e in null != n && (t.gameApplicationIds = f(n)), j = h({}, j, l()(t)), t) delete _[e], _ = h({}, _);
+    for (let e in null != n && (t.gameApplicationIds = f(n)), j = h({}, j, l()(t)), t) delete v[e], v = h({}, v);
     N = !s().isEqual(s().omit(j, "verificationForm"), s().omit(x, "verificationForm"))
   },
   CLAN_SETTINGS_SUBMIT: function() {
-    v = !0, _ = {}
+    _ = !0, v = {}
   },
   CLAN_SETTINGS_SUBMIT_SUCCESS: function() {
-    v = !1, x = l()(j), N = !1, _ = {}
+    _ = !1, x = l()(j), N = !1, v = {}
   },
   CLAN_SETTINGS_SUBMIT_ERROR: function(e) {
     let {
       error: t
     } = e;
-    v = !1, _ = {
+    _ = !1, v = {
       gameApplicationIds: t.getFirstFieldErrorMessage("game_application_ids"),
       playstyle: t.getFirstFieldErrorMessage("play_style"),
       description: t.getFirstFieldErrorMessage("description"),
@@ -128,6 +128,6 @@ let O = new C(c.Z, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), j = t, !!a && !s().isEqual(j.verificationForm.formFields, null === (r = x.verificationForm) || void 0 === r ? void 0 : r.formFields))
+    }), j = t, !!a && !s().isEqual(j.verificationForm.formFields, null == (r = x.verificationForm) ? void 0 : r.formFields))
   }
 })

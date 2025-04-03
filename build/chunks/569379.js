@@ -1,4 +1,4 @@
-/** Chunk was on 63689 **/
+/** Chunk was on 58914 **/
 t.d(n, {
   E: () => s,
   G: () => d
@@ -30,7 +30,7 @@ function d() {
 function s(e, n) {
   var t;
   let r = (0, i.z)(e),
-    o = null !== (t = (0, a.i6)()) && void 0 !== t ? t : 0,
+    o = null != (t = (0, a.i6)()) ? t : 0,
     d = "var(--green-330)",
     s = ["var(--background-tertiary)", "var(--interactive-normal)"];
   return {

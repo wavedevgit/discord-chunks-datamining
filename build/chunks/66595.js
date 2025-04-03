@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 });
@@ -7,15 +7,15 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(388032),
-  l = n(204245);
+  l = n(388032),
+  o = n(934323);
 
 function c(e) {
   let {
     className: t
   } = e;
   return (0, r.jsx)(a.IGR, {
-    className: s()(l.tag, t),
-    text: o.NW.string(o.t.EYxi0t)
+    className: s()(o.tag, t),
+    text: l.NW.string(l.t.EYxi0t)
   })
 }

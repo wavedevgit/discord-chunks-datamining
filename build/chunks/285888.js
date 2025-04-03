@@ -10,7 +10,7 @@ var n, a, l = r(200651),
   u = r(481060),
   d = r(981631),
   p = r(388032),
-  h = r(729619);
+  h = r(94308);
 
 function f(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function f(e, t, r) {
   }) : e[t] = r, e
 }
 
-function v(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -34,7 +34,7 @@ function v(e) {
   return e
 }
 
-function b(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ let y = {
     let {
       isDisabled: r
     } = t;
-    return b(v({}, e), {
+    return v(b({}, e), {
       cursor: r ? "not-allowed" : void 0,
       pointerEvents: void 0,
       fontSize: 16,
@@ -65,7 +65,7 @@ let y = {
       isDisabled: r,
       menuIsOpen: n
     } = t;
-    return b(v({}, e), {
+    return v(b({}, e), {
       backgroundColor: "var(--input-background)",
       borderColor: "var(--input-background)",
       opacity: r ? .6 : 1,
@@ -84,15 +84,15 @@ let y = {
     let {
       isDisabled: r
     } = t;
-    return b(v({}, e), {
+    return v(b({}, e), {
       color: "var(--interactive-normal)",
       opacity: r ? .5 : 1
     })
   },
-  input: e => b(v({}, e), {
+  input: e => v(b({}, e), {
     color: "var(--interactive-normal)"
   }),
-  menu: e => b(v({}, e), {
+  menu: e => v(b({}, e), {
     backgroundColor: "var(--background-secondary)",
     border: "1px solid var(--background-tertiary)",
     borderRadius: "0 0 4px 4px",
@@ -104,7 +104,7 @@ let y = {
     let {
       isDisabled: r
     } = t;
-    return b(v({}, e), {
+    return v(b({}, e), {
       color: "var(--interactive-normal)",
       cursor: r ? void 0 : "pointer",
       opacity: .3,
@@ -116,14 +116,14 @@ let y = {
       }
     })
   },
-  indicatorsContainer: e => b(v({}, e), {
+  indicatorsContainer: e => v(b({}, e), {
     alignItems: "flex-start"
   }),
   dropdownIndicator: (e, t) => {
     let {
       isDisabled: r
     } = t;
-    return b(v({}, e), {
+    return v(b({}, e), {
       color: "var(--interactive-normal)",
       cursor: r ? void 0 : "pointer",
       opacity: r ? .3 : 1,
@@ -134,7 +134,7 @@ let y = {
       }
     })
   },
-  menuList: e => b(v({}, e), {
+  menuList: e => v(b({}, e), {
     padding: 0,
     "&::-webkit-scrollbar": {
       width: 8,
@@ -156,7 +156,7 @@ let y = {
       isSelected: r,
       isFocused: n
     } = t;
-    return b(v({}, e, r ? {
+    return v(b({}, e, r ? {
       backgroundColor: "var(--background-modifier-selected)",
       color: "var(--interactive-active)"
     } : n ? {
@@ -177,18 +177,17 @@ let y = {
       }
     })
   },
-  placeholder: e => b(v({}, e), {
+  placeholder: e => v(b({}, e), {
     color: "var(--text-muted)"
   })
 };
 class g extends(n = o.Component) {
   focus() {
     var e;
-    null === (e = this._selectRef.current) || void 0 === e || e.focus()
+    null == (e = this._selectRef.current) || e.focus()
   }
   render() {
-    let e;
-    let t = this.props,
+    let e, t = this.props,
       {
         className: r,
         selectClassName: n,
@@ -208,7 +207,7 @@ class g extends(n = o.Component) {
         filterOption: N,
         closeMenuOnSelect: j = !0
       } = t,
-      T = v({}, function(e, t) {
+      T = b({}, function(e, t) {
         if (null == e) return {};
         var r, n, a = function(e, t) {
           if (null == e) return {};
@@ -227,9 +226,9 @@ class g extends(n = o.Component) {
     let w = {
       IndicatorSeparator: () => null
     };
-    if (null != i && (w.Option = e => (0, l.jsx)(c.wx.Option, b(v({}, e), {
+    if (null != i && (w.Option = e => (0, l.jsx)(c.wx.Option, v(b({}, e), {
         children: i(e.data)
-      }))), null != o && (w.SingleValue = e => (0, l.jsx)(c.wx.SingleValue, b(v({}, e), {
+      }))), null != o && (w.SingleValue = e => (0, l.jsx)(c.wx.SingleValue, v(b({}, e), {
         children: o(e.data)
       }))), null != d && (w.MultiValue = e => d(e.data)), k && Array.isArray(m)) {
       let t = {};
@@ -245,7 +244,7 @@ class g extends(n = o.Component) {
           [h.error]: null != a
         }),
         ref: this._containerRef,
-        children: [(0, l.jsx)(c.ZP, b(v({}, T), {
+        children: [(0, l.jsx)(c.ZP, v(b({}, T), {
           className: n,
           ref: this._selectRef,
           isMulti: k,
@@ -277,12 +276,12 @@ class g extends(n = o.Component) {
       var t, r;
       this.setState({
         isFocused: !0
-      }), null === (t = (r = this.props).onFocus) || void 0 === t || t.call(r, e)
+      }), null == (t = (r = this.props).onFocus) || t.call(r, e)
     }), f(this, "handleBlur", e => {
       var t, r;
       this.setState({
         isFocused: !1
-      }), null === (t = (r = this.props).onBlur) || void 0 === t || t.call(r, e)
+      }), null == (t = (r = this.props).onBlur) || t.call(r, e)
     }), f(this, "handleKeyDown", e => {
       e.which === d.yXg.ESCAPE && this.state.isOpen && e.stopPropagation()
     }), f(this, "handleMenuOpen", () => {

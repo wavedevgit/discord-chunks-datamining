@@ -67,5 +67,9 @@ var n = {
 };
 let a = function(e, t, i) {
   var a, o = n[e];
-  return (a = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", String(t)), null != i && i.addSuffix) ? i.comparison && i.comparison > 0 ? "halfAMinute" === e ? "ใน" + a : "ใน " + a : a + "ที่ผ่านมา" : a
+  if (a = "string" == typeof o ? o : 1 === t ? o.one : o.other.replace("{{count}}", String(t)), null != i && i.addSuffix)
+    if (!i.comparison || !(i.comparison > 0)) return a + "ที่ผ่านมา";
+    else if ("halfAMinute" === e) return "ใน" + a;
+  else return "ใน " + a;
+  return a
 }

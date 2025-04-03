@@ -43,13 +43,13 @@ let _ = new f(c.Z, {
       properties: n,
       fingerprint: r
     } = e;
-    if (u.Z.isDeveloper) x.push({
+    u.Z.isDeveloper && (x.push({
       key: (m++).toString(),
       event: t,
       properties: n,
       fingerprint: null != r ? (0, o.s)(r) : d.default.getId(),
       timestamp: new Date
-    }), h++, x.length > 500 && (x = x.slice(-Math.floor(250)))
+    }), h++, x.length > 500 && (x = x.slice(-Math.floor(250))))
   },
   TRACK_TRIGGER: function(e) {
     let {

@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => U
 });
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(846027),
-  l = n(230711),
+  l = n(846027),
+  o = n(230711),
   c = n(921801),
   d = n(131951),
   u = n(663389),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(823087),
   O = n(232388),
   C = n(546997),
-  v = n(186934),
-  S = n(716210),
+  S = n(186934),
+  v = n(716210),
   T = n(520384),
   I = n(459674),
   y = n(167540),
@@ -38,7 +38,7 @@ var r = n(200651),
   k = n(981631),
   W = n(65154),
   L = n(388032),
-  B = n(685786);
+  B = n(20493);
 let M = "".concat(m.Z.getArticleURL(k.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function U() {
@@ -49,7 +49,7 @@ function U() {
   })), t = (0, s.e7)([u.Z], () => u.Z.getSubsection()), n = i.createRef(), m = i.createRef();
   i.useEffect(() => {
     var e, r;
-    t === Z.GA && (null == n || null === (e = n.current) || void 0 === e || e.scrollIntoView(), l.Z.clearSubsection()), t === Z.gP && (null == m || null === (r = m.current) || void 0 === r || r.scrollIntoView(), l.Z.clearSubsection())
+    t === Z.GA && (null == n || null == (e = n.current) || e.scrollIntoView(), o.Z.clearSubsection()), t === Z.gP && (null == m || null == (r = m.current) || r.scrollIntoView(), o.Z.clearSubsection())
   }, [n, m, t]);
   let k = (0, p.Z)();
   return (0, r.jsxs)(a.hjN, {
@@ -113,7 +113,7 @@ function U() {
         children: [(0, r.jsx)(f.Z, {}), (0, r.jsx)(A.Z, {}), (0, r.jsx)(c.F, {
           setting: w.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
           children: (0, r.jsx)(P.Z, {})
-        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(v.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(S.Z, {}), (0, r.jsx)(I.Z, {
+        }), (0, r.jsx)(T.Z, {}), (0, r.jsx)(O.Z, {}), (0, r.jsx)(h.Z, {}), k && (0, r.jsx)(S.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(C.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(I.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(a.$i$, {
           className: B.marginBottom40
@@ -127,7 +127,7 @@ function U() {
               look: a.zxk.Looks.OUTLINED,
               color: a.zxk.Colors.RED,
               onClick: () => {
-                (0, g.Z)(L.NW.string(L.t["/RXu6+"]), L.NW.string(L.t.sQ42iY), o.Z.reset)
+                (0, g.Z)(L.NW.string(L.t["/RXu6+"]), L.NW.string(L.t.sQ42iY), l.Z.reset)
               },
               size: a.zxk.Sizes.SMALL,
               children: L.NW.string(L.t["/RXu6+"])

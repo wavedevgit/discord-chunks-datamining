@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,9 +7,9 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(230711),
-  l = n(528084),
-  c = n(44429);
+  l = n(230711),
+  o = n(528084),
+  c = n(44380);
 let d = e => {
   var t;
   let {
@@ -22,13 +22,13 @@ let d = e => {
   } = e, {
     viewableTabs: p,
     filteredTab: h
-  } = (0, l.a)(n, d), f = null != m ? n[m] : null, b = null !== (t = null != f ? f : h) && void 0 !== t ? t : p[0];
+  } = (0, o.a)(n, d), f = null != m ? n[m] : null, b = null != (t = null != f ? f : h) ? t : p[0];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.njP, {
       className: c.tabBar,
       selectedItem: b.setting,
       onItemSelect: e => {
-        o.Z.setSection(i, e), null == g || g(e)
+        l.Z.setSection(i, e), null == g || g(e)
       },
       orientation: "horizontal",
       type: "top",

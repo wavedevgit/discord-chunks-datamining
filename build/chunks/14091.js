@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T
 }), n(47120), n(301563), n(26686);
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(944486),
   _ = n(585483),
   C = n(251285),
-  v = n(406326),
-  y = n(994463),
-  x = n(619753),
+  y = n(406326),
+  x = n(994463),
+  v = n(619753),
   j = n(981631),
   O = n(388032),
-  E = n(57584);
+  E = n(682065);
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -222,7 +222,7 @@ class Z extends i.PureComponent {
         isHistoricalIndexing: i,
         documentsIndexed: l
       } = this.props.search;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(y.Z, {
         searchMode: e,
         searchByMode: this.searchByMode,
         totalResults: t,
@@ -233,7 +233,7 @@ class Z extends i.PureComponent {
     }), N(this, "renderIndexing", () => {
       let e = g.Z.getSearchType(this.props.searchId) === j.aib.GUILD ? O.NW.string(O.t.AXPbZm) : O.NW.string(O.t.Q0JJjo);
       return (0, r.jsxs)(S, {
-        children: [(0, r.jsx)(y.Z, {}), (0, r.jsx)("div", {
+        children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)("div", {
           className: (E.emptyResultsText, E.stillIndexing),
           children: e
         })]
@@ -272,7 +272,7 @@ class Z extends i.PureComponent {
         isIndexing: o,
         hasError: a
       } = this.props.search;
-      return a ? this.renderError() : o ? this.renderIndexing() : l ? null : i > 0 ? (0, r.jsx)(x.Z, {
+      return a ? this.renderError() : o ? this.renderIndexing() : l ? null : i > 0 ? (0, r.jsx)(v.Z, {
         search: this.props.search,
         searchResults: e,
         blockCount: t,

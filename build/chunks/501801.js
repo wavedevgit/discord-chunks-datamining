@@ -1,4 +1,4 @@
-/** Chunk was on 37865 **/
+/** Chunk was on 15327 **/
 n.d(t, {
   mp: () => m,
   tP: () => M,
@@ -13,20 +13,20 @@ var r = n(200651),
   E = n(913527),
   c = n.n(E),
   u = n(481060),
-  d = n(596454),
-  _ = n(835473),
+  _ = n(596454),
+  d = n(835473),
   A = n(479099),
   T = n(592125),
   N = n(430824),
   I = n(594174),
-  g = n(934415),
-  O = n(823379),
+  O = n(934415),
+  g = n(823379),
   f = n(624138),
   R = n(51144),
   p = n(909746),
   S = n(981631),
   h = n(388032),
-  U = n(4550);
+  U = n(677234);
 
 function D(e, t) {
   let n = p.vc[e.targetType];
@@ -41,7 +41,7 @@ let L = {
 function C(e) {
   let {
     applicationId: t
-  } = e, n = (0, _.q)(t);
+  } = e, n = (0, d.q)(t);
   return null == n ? null : (0, r.jsx)(u.Text, {
     variant: "text-md/normal",
     children: n.name
@@ -105,10 +105,10 @@ function M(e) {
           if ((t.action === S.rsA.CHANNEL_UPDATE || t.action === S.rsA.CHANNEL_CREATE) && a.key === S.zUn.TYPE) {
             var e, n;
             return {
-              oldValue: null !== (e = a.oldValue) && void 0 !== e ? e : (0, g.a5)({
+              oldValue: null != (e = a.oldValue) ? e : (0, O.a5)({
                 type: a.oldValue
               }),
-              newValue: null !== (n = a.newValue) && void 0 !== n ? n : (0, g.a5)({
+              newValue: null != (n = a.newValue) ? n : (0, O.a5)({
                 type: a.newValue
               })
             }
@@ -166,18 +166,18 @@ function M(e) {
               oldValue: a
             } = e, s = e => {
               var t;
-              let r = null != n ? null === (t = N.Z.getRole(n.id, e)) || void 0 === t ? void 0 : t.name : void 0;
+              let r = null != n ? null == (t = N.Z.getRole(n.id, e)) ? void 0 : t.name : void 0;
               return null == r ? null : "@".concat(r)
             }, i = e => {
               var t;
-              let n = null === (t = T.Z.getChannel(e)) || void 0 === t ? void 0 : t.name;
+              let n = null == (t = T.Z.getChannel(e)) ? void 0 : t.name;
               return null == n ? null : "#".concat(n)
             }, E = (e, n) => {
               let {
                 title: l,
                 id: a
-              } = n, E = e.role_ids.map(s).filter(O.lm), c = e.channel_ids.map(i).filter(O.lm), d = n.role_ids.map(s).filter(O.lm), _ = n.channel_ids.map(i).filter(O.lm), A = o().difference(d, E), T = o().difference(E, d), N = o().difference(_, c), I = o().difference(c, _), g = [];
-              return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === T.length && 0 === N.length && 0 === I.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
+              } = n, E = e.role_ids.map(s).filter(g.lm), c = e.channel_ids.map(i).filter(g.lm), _ = n.role_ids.map(s).filter(g.lm), d = n.channel_ids.map(i).filter(g.lm), A = o().difference(_, E), T = o().difference(E, _), N = o().difference(d, c), I = o().difference(c, d), O = [];
+              return (o().isEqual(e.title, n.title) || O.push("title"), o().isEqual(e.description, n.description) || O.push("description"), 0 === A.length && 0 === T.length && 0 === N.length && 0 === I.length && 0 === O.length) ? null : (0, r.jsxs)("li", {
                 children: [(0, r.jsxs)("div", {
                   className: U.onboardingChangeLogItemTitle,
                   children: [(0, r.jsx)(m, {
@@ -212,7 +212,7 @@ function M(e) {
                     children: h.NW.format(h.t.JLdJpK, {
                       channels: I.join(", ")
                     })
-                  }), g.map((t, l) => (0, r.jsx)(u.Text, {
+                  }), O.map((t, l) => (0, r.jsx)(u.Text, {
                     variant: "text-md/normal",
                     children: h.NW.format(h.t["0698zc"], {
                       key: t,
@@ -222,16 +222,16 @@ function M(e) {
                   }, l))]
                 })]
               }, a)
-            }, c = o().keyBy(null != a ? a : [], "id"), d = o().keyBy(null != l ? l : [], "id"), _ = o().difference(Object.keys(d), Object.keys(c)).map(e => d[e]), A = o().difference(Object.keys(c), Object.keys(d)).map(e => c[e]), I = o().intersection(Object.keys(d), Object.keys(c));
+            }, c = o().keyBy(null != a ? a : [], "id"), _ = o().keyBy(null != l ? l : [], "id"), d = o().difference(Object.keys(_), Object.keys(c)).map(e => _[e]), A = o().difference(Object.keys(c), Object.keys(_)).map(e => c[e]), I = o().intersection(Object.keys(_), Object.keys(c));
             return (0, r.jsxs)("ul", {
               className: U.onboardingChangeLogContainer,
-              children: [_.map(e => {
+              children: [d.map(e => {
                 let {
                   role_ids: n,
                   channel_ids: l,
                   title: a,
                   id: o
-                } = e, E = (null != n ? n : []).map(s).filter(O.lm), c = (null != l ? l : []).map(i).filter(O.lm);
+                } = e, E = (null != n ? n : []).map(s).filter(g.lm), c = (null != l ? l : []).map(i).filter(g.lm);
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: U.onboardingChangeLogItemTitle,
@@ -274,7 +274,7 @@ function M(e) {
                     })
                   })]
                 })
-              }, e.id)), I.map(e => E(c[e], d[e]))]
+              }, e.id)), I.map(e => E(c[e], _[e]))]
             }, "options")
           }(a, t, n);
           if (t.action === S.rsA.HOME_SETTINGS_CREATE || t.action === S.rsA.HOME_SETTINGS_UPDATE) return function(e, t) {
@@ -290,34 +290,34 @@ function M(e) {
               case S.zUn.WELCOME_MESSAGE:
                 return ((e, t) => {
                   var n, l, a, s, i;
-                  let o = I.default.getUser(null == t ? void 0 : null === (n = t.author_ids) || void 0 === n ? void 0 : n[0]),
-                    E = I.default.getUser(null === (l = e.author_ids) || void 0 === l ? void 0 : l[0]),
+                  let o = I.default.getUser(null == t || null == (n = t.author_ids) ? void 0 : n[0]),
+                    E = I.default.getUser(null == (l = e.author_ids) ? void 0 : l[0]),
                     c = (null == o ? void 0 : o.id) !== (null == E ? void 0 : E.id) ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
                         className: U.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(u.Text, {
                           variant: "text-md/normal",
                           children: h.NW.format(h.t.PrOzAw, {
-                            oldUser: null !== (a = null == o ? void 0 : o.username) && void 0 !== a ? a : h.NW.string(h.t.PoWNfX),
-                            newUser: null !== (s = null == E ? void 0 : E.username) && void 0 !== s ? s : h.NW.string(h.t.PoWNfX)
+                            oldUser: null != (a = null == o ? void 0 : o.username) ? a : h.NW.string(h.t.PoWNfX),
+                            newUser: null != (s = null == E ? void 0 : E.username) ? s : h.NW.string(h.t.PoWNfX)
                           })
                         })
                       })
                     }) : null,
-                    d = (null == t ? void 0 : t.message) !== e.message ? (0, r.jsx)("li", {
+                    _ = (null == t ? void 0 : t.message) !== e.message ? (0, r.jsx)("li", {
                       children: (0, r.jsx)("div", {
                         className: U.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(u.Text, {
                           variant: "text-md/normal",
                           children: h.NW.format(h.t.oB7rBQ, {
-                            oldMessage: null !== (i = null == t ? void 0 : t.message) && void 0 !== i ? i : h.NW.string(h.t.PoWNfX),
+                            oldMessage: null != (i = null == t ? void 0 : t.message) ? i : h.NW.string(h.t.PoWNfX),
                             newMessage: e.message
                           })
                         })
                       })
                     }) : null;
                   return (0, r.jsxs)("ul", {
-                    children: [c, d]
+                    children: [c, _]
                   })
                 })(l, n);
               case S.zUn.NEW_MEMBER_ACTIONS:
@@ -327,7 +327,7 @@ function M(e) {
                     a = o().difference(l, n),
                     E = o().difference(n, l),
                     c = t.filter(e => a.includes(e.channel_id)),
-                    d = e.filter(e => E.includes(e.channel_id));
+                    _ = e.filter(e => E.includes(e.channel_id));
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
@@ -343,7 +343,7 @@ function M(e) {
                           })
                         })]
                       })
-                    }, e.channel_id)), d.map(e => (0, r.jsx)("li", {
+                    }, e.channel_id)), _.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: U.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
@@ -367,7 +367,7 @@ function M(e) {
                     a = o().difference(l, n),
                     E = o().difference(n, l),
                     c = t.filter(e => a.includes(e.channel_id)),
-                    d = e.filter(e => E.includes(e.channel_id));
+                    _ = e.filter(e => E.includes(e.channel_id));
                   return (0, r.jsxs)("ul", {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
@@ -383,7 +383,7 @@ function M(e) {
                           })
                         })]
                       })
-                    }, e.channel_id)), d.map(e => (0, r.jsx)("li", {
+                    }, e.channel_id)), _.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: U.onboardingChangeLogItemTitle,
                         children: [(0, r.jsx)(m, {
@@ -405,7 +405,7 @@ function M(e) {
             }
           }(a, t);
           return null
-        })(), _ = e[a.key];
+        })(), d = e[a.key];
         return function(e) {
           var t, n;
           let {
@@ -418,11 +418,11 @@ function M(e) {
             change: c
           } = e;
           if (null == l) return console.warn("No change string for", c), null;
-          let _ = h.NW.format(l, {
+          let d = h.NW.format(l, {
             oldValue: o,
             newValue: E,
             count: Array.isArray(E) ? E.length : null,
-            subtarget: null !== (n = null !== (t = i.options.subtarget) && void 0 !== t ? t : c.subtarget) && void 0 !== n ? n : null,
+            subtarget: null != (n = null != (t = i.options.subtarget) ? t : c.subtarget) ? n : null,
             newColorHook: (e, t) => (0, r.jsx)("div", {
               className: U.colorHook,
               style: {
@@ -443,20 +443,20 @@ function M(e) {
               tag: E,
               size: A.Z.Sizes.SMALL
             }, t),
-            oldEmojiHook: (e, t) => (0, r.jsx)(d.Z, {
+            oldEmojiHook: (e, t) => (0, r.jsx)(_.Z, {
               emojiId: o
             }, t),
-            newEmojiHook: (e, t) => (0, r.jsx)(d.Z, {
+            newEmojiHook: (e, t) => (0, r.jsx)(_.Z, {
               emojiId: E
             }, t),
             applicationHook: (e, t) => {
               var n;
               return (0, r.jsx)(C, {
-                applicationId: null !== (n = null == o ? void 0 : o.application_id) && void 0 !== n ? n : null == E ? void 0 : E.application_id
+                applicationId: null != (n = null == o ? void 0 : o.application_id) ? n : null == E ? void 0 : E.application_id
               }, t)
             }
           });
-          return null == _ ? null : (0, r.jsxs)("div", {
+          return null == d ? null : (0, r.jsxs)("div", {
             className: U.detail,
             style: {
               position: "relative",
@@ -483,14 +483,14 @@ function M(e) {
               className: U.change,
               children: [(0, r.jsx)("div", {
                 className: U.changeStr,
-                children: _
+                children: d
               }), null != a ? (0, r.jsx)("div", {
                 children: a
               }) : null]
             })]
           }, s)
         }({
-          changeItem: "function" == typeof _ ? _(a) : _,
+          changeItem: "function" == typeof d ? d(a) : d,
           subChanges: E,
           changeNumber: ++l,
           log: t,
@@ -498,7 +498,7 @@ function M(e) {
           newValue: i,
           change: a
         })
-      })).filter(O.lm);
+      })).filter(g.lm);
     return (0, r.jsx)(u.P3F, {
       onClick: a,
       className: s()(U.changeDetails, i),

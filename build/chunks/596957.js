@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  a = n(442837),
+  a = n.n(l),
+  o = n(442837),
   s = n(481060),
   c = n(529103),
   u = n(194359),
@@ -21,15 +21,15 @@ var r = n(200651),
   E = n(451478),
   O = n(701861),
   N = n(437314),
-  v = n(696577),
-  y = n(163417),
-  I = n(830880),
+  y = n(696577),
+  I = n(163417),
+  v = n(830880),
   C = n(492347),
   S = n(42575),
   T = n(617015),
   P = n(981631),
   j = n(388032),
-  A = n(839266);
+  A = n(222001);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -98,10 +98,10 @@ let k = function(e) {
   } = (0, h.ZP)(p.Z.FRIENDS_LIST), {
     rows: l,
     section: c
-  } = (0, a.cj)([_.ZP], () => _.ZP.getState()), w = (0, a.e7)([E.Z], () => E.Z.isFocused()), {
+  } = (0, o.cj)([_.ZP], () => _.ZP.getState()), w = (0, o.e7)([E.Z], () => E.Z.isFocused()), {
     relationshipCount: k,
     hasBlockedOrIgnored: M
-  } = (0, a.cj)([b.Z], () => ({
+  } = (0, o.cj)([b.Z], () => ({
     relationshipCount: b.Z.getRelationshipCount(),
     hasBlockedOrIgnored: b.Z.getBlockedOrIgnoredIDs().length > 0
   })), U = (0, g.wn)({
@@ -130,7 +130,7 @@ let k = function(e) {
     }(e, ["key"]);
     switch (c) {
       case P.pJs.PENDING:
-        return (0, r.jsx)(v.Z, x(Z({}, n), {
+        return (0, r.jsx)(y.Z, x(Z({}, n), {
           isFocused: w
         }), t);
       case P.pJs.SUGGESTIONS:
@@ -164,14 +164,14 @@ let k = function(e) {
   }, [Y, z]);
   (0, f.Z)(K, Y);
   let q = i.useMemo(() => {
-      if (c === P.pJs.PENDING) {
+      if (c !== P.pJs.PENDING) return [z];
+      {
         let e = [],
           t = [];
         return z.forEach(n => {
           n.type === P.OGo.PENDING_INCOMING ? e.push(n) : n.type === P.OGo.PENDING_OUTGOING && t.push(n)
         }), [e, t]
       }
-      return [z]
     }, [z, c]),
     Q = i.useMemo(() => z.filter(e => e.type === P.OGo.PENDING_INCOMING).length, [z]),
     X = c === P.pJs.PENDING && Q > 0 && Q >= T.yf,
@@ -237,13 +237,13 @@ let k = function(e) {
     value: n,
     children: (0, r.jsxs)(d.Z, {
       section: P.jXE.FRIENDS_LIST,
-      children: [M && (0, r.jsx)(I.R, {}), (0, r.jsx)(s.E1j, {
-        className: o()(A.searchBar, et ? A.searchEmptyState : null),
+      children: [M && (0, r.jsx)(v.R, {}), (0, r.jsx)(s.E1j, {
+        className: a()(A.searchBar, et ? A.searchEmptyState : null),
         query: G[c],
         onChange: B,
         onClear: H,
         size: s.E1j.Sizes.MEDIUM
-      }), (0, r.jsx)(y.Z, {
+      }), (0, r.jsx)(I.Z, {
         rows: q,
         renderRow: V,
         renderSection: $,

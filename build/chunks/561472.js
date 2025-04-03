@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => y
+  Z: () => x
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,28 +19,28 @@ var r = n(200651),
   b = n(205822),
   _ = n(731994),
   C = n(981631),
-  v = n(388032);
-let y = function(e) {
+  y = n(388032);
+let x = function(e) {
   let {
     className: t,
     style: n,
-    channel: y,
-    draftType: x
-  } = e, [j, O] = i.useState(!0), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), N = (0, l.e7)([p.Z], () => null != y && p.Z.can(C.Plq.ATTACH_FILES, y), [y]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(y.id)), P = y.getGuildId(), S = x === s.d.FirstThreadMessage, Z = (0, l.e7)([f.default], () => {
+    channel: x,
+    draftType: v
+  } = e, [j, O] = i.useState(!0), E = (0, l.e7)([d.Z], () => d.Z.hasLayers()), N = (0, l.e7)([p.Z], () => null != x && p.Z.can(C.Plq.ATTACH_FILES, x), [x]), I = null != (0, l.e7)([o.Z], () => o.Z.getActiveCommand(x.id)), P = x.getGuildId(), S = v === s.d.FirstThreadMessage, Z = (0, l.e7)([f.default], () => {
     var e;
-    return !0 == !(null === (e = f.default.getCurrentUser()) || void 0 === e ? void 0 : e.nsfwAllowed)
-  }), T = (0, l.e7)([c.Z], () => c.Z.didAgree(P)) && !Z, A = i.useMemo(() => !E && (y.isPrivate() && !y.isManaged() || null != P && (!y.isNSFW() || T) && N && u.Z.canChatInGuild(P)), [N, T, y, P, E]), w = S ? C.TPd.GUILD_THREADS_ONLY.has(y.type) ? v.NW.string(v.t.RBBLhI) : v.NW.string(v.t.gUx4en) : j ? v.NW.format(v.t.dYP2FR, {
-    destination: (0, a.F6)(y, f.default, h.Z, !0)
-  }) : v.NW.string(v.t.h76ulJ);
+    return !0 == !(null == (e = f.default.getCurrentUser()) ? void 0 : e.nsfwAllowed)
+  }), T = (0, l.e7)([c.Z], () => c.Z.didAgree(P)) && !Z, A = i.useMemo(() => !E && (x.isPrivate() && !x.isManaged() || null != P && (!x.isNSFW() || T) && N && u.Z.canChatInGuild(P)), [N, T, x, P, E]), w = S ? C.TPd.GUILD_THREADS_ONLY.has(x.type) ? y.NW.string(y.t.RBBLhI) : y.NW.string(y.t.gUx4en) : j ? y.NW.format(y.t.dYP2FR, {
+    destination: (0, a.F6)(x, f.default, h.Z, !0)
+  }) : y.NW.string(y.t.h76ulJ);
   return I || !A ? null : (0, r.jsx)(b.Z, {
     className: t,
     style: n,
     title: w,
-    description: S ? v.NW.string(v.t.lpgkzs) : v.NW.string(v.t.usQh4O),
+    description: S ? y.NW.string(y.t.lpgkzs) : y.NW.string(y.t.usQh4O),
     icons: _.J6,
     onDrop: e => {
       if (I) return !1;
-      A && null != y && ((0, g.d)(e, y, x, {
+      A && null != x && ((0, g.d)(e, x, v, {
         requireConfirm: j,
         showLargeMessageDialog: !1
       }), m.S.dispatchToLastSubscribed(C.CkL.TEXTAREA_FOCUS))

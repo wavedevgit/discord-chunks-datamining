@@ -1,6 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => x
+  Z: () => v
 });
 var r = n(200651),
   i = n(192379),
@@ -19,18 +19,18 @@ var r = n(200651),
   b = n(358085),
   _ = n(228488),
   C = n(981631),
-  v = n(215886);
-let y = () => {
+  y = n(806176);
+let x = () => {
   o.Z.wait(() => p.xv(C.KJ3.CHANNEL_CALL_POPOUT))
 };
 
-function x(e) {
+function v(e) {
   let {
     channel: t,
     appContext: n,
     popoutOpen: o,
     popoutWindow: p,
-    currentWindow: x
+    currentWindow: v
   } = e, {
     parentAnalyticsLocation: j
   } = (0, c.ZP)(), O = n === C.IlC.POPOUT, E = i.useRef(null), {
@@ -55,13 +55,13 @@ function x(e) {
       rootNode: T
     } = i.useMemo(() => {
       let e = null != p && O ? p.document : document,
-        t = x.document.getElementById("app-mount");
+        t = v.document.getElementById("app-mount");
       return {
-        currentWindow: x,
+        currentWindow: v,
         currentDocument: e,
         rootNode: t
       }
-    }, [p, O, x]),
+    }, [p, O, v]),
     A = o && !O,
     w = I === C.WtW.VIDEO && P && !A,
     R = i.useCallback((e, r) => {
@@ -77,7 +77,7 @@ function x(e) {
     }, [R, M, T, j]);
   i.useEffect(() => {
     let e = () => {
-      null == T || (0, _.rB)(T, Z) || N !== C.AEg.FULL_SCREEN || k(N)()
+      null != T && ((0, _.rB)(T, Z) || N !== C.AEg.FULL_SCREEN || k(N)())
     };
     return Z.addEventListener(_.NO, e), () => {
       Z.removeEventListener(_.NO, e)
@@ -120,12 +120,12 @@ function x(e) {
   }, [N, O]), i.useEffect(() => {
     null != T && E.current === C.WtW.VIDEO && I === C.WtW.VOICE && (0, _.Pr)(T, Z)
   }, [Z, I, E, T]), i.useEffect(() => {
-    !P && O && y()
+    !P && O && x()
   }, [P, O]), w) ? (0, r.jsx)(h.Z, {
     themeable: !1,
     node: T,
     guestWindow: p,
-    className: v.rightTrayIcon,
+    className: y.rightTrayIcon,
     onClick: k(N)
   }) : null
 }

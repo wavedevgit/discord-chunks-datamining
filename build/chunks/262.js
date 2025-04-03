@@ -1,4 +1,4 @@
-/** Chunk was on 83379 **/
+/** Chunk was on 68631 **/
 n.d(t, {
   Z: () => u
 }), n(301563);
@@ -6,36 +6,36 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   a = n(857395),
-  o = n(739566),
-  l = n(834129),
+  l = n(739566),
+  o = n(834129),
   s = n(388032);
 
 function c(e) {
   let {
     children: t,
     messageReference: n,
-    guildName: o
+    guildName: l
   } = e;
   if (null == n) return (0, r.jsx)(i.eee, {
     children: t
   });
   let {
-    guild_id: l,
+    guild_id: o,
     channel_id: s,
     message_id: c
   } = n;
-  return null == l ? (0, r.jsx)(i.eee, {
+  return null == o ? (0, r.jsx)(i.eee, {
     children: t
   }) : (0, r.jsx)(a.Z, {
-    guildId: l,
+    guildId: o,
     channelId: s,
     messageId: c,
-    name: o,
+    name: l,
     children: e => {
       var n, a;
       let {
-        "aria-controls": o,
-        "aria-expanded": l
+        "aria-controls": l,
+        "aria-expanded": o
       } = e, s = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
@@ -93,7 +93,7 @@ function u(e) {
     content: u,
     timestamp: d,
     messageReference: p
-  } = i, m = (0, o.ZP)(i), f = t(m), h = (null != u ? u : "").split(" ").slice(0, -1).join(" "), g = s.NW.format(s.t["47CZc3"], {
+  } = i, m = (0, l.ZP)(i), f = t(m), h = (null != u ? u : "").split(" ").slice(0, -1).join(" "), g = s.NW.format(s.t["47CZc3"], {
     username: m.nick,
     usernameHook: f,
     webhookName: u,
@@ -103,7 +103,7 @@ function u(e) {
       children: e
     }, t)
   });
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(o.Z, {
     icon: n(570111),
     timestamp: d,
     compact: a,

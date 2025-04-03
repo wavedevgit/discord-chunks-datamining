@@ -10,14 +10,14 @@ function l(e) {
     onVisible: t,
     threshold: n,
     minTimeVisibleMs: l
-  } = e, o = i.useRef(!1), a = i.useRef(null);
+  } = e, a = i.useRef(!1), o = i.useRef(null);
   return i.useEffect(() => () => {
-    null != a.current && (clearTimeout(a.current), a.current = null)
+    null != o.current && (clearTimeout(o.current), o.current = null)
   }, []), (0, r.O)(e => {
-    if (null == a.current || e || !1 !== o.current || (clearTimeout(a.current), a.current = null), !e || !0 === o.current) return;
+    if (null == o.current || e || !1 !== a.current || (clearTimeout(o.current), o.current = null), !e || !0 === a.current) return;
     let n = () => {
-      t(), o.current = !0, a.current = null
+      t(), a.current = !0, o.current = null
     };
-    null != l ? a.current = setTimeout(n, l) : n()
+    null != l ? o.current = setTimeout(n, l) : n()
   }, n)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 97590 **/
+/** Chunk was on 39149 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -14,18 +14,18 @@ var r = n(200651),
   u = n(268350),
   m = n(419922),
   g = n(388032),
-  p = n(711946);
+  p = n(646084);
 let h = e => {
   let {
     className: t,
     isDisabled: s,
     sticker: h,
     canManageSticker: f
-  } = e, [b, x] = i.useState(!1), [j, N] = (0, c.Z)(null, 4e3), v = () => {
+  } = e, [b, x] = i.useState(!1), [j, N] = (0, c.Z)(null, 4e3), _ = () => {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("93626"), n.e("97994")]).then(n.bind(n, 136735));
+      } = await Promise.all([n.e("93626"), n.e("64386")]).then(n.bind(n, 136735));
       return t => (0, r.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -48,7 +48,7 @@ let h = e => {
         guildId: h.guild_id
       }, t))
     })
-  }, _ = async () => {
+  }, v = async () => {
     N(null), x(!0);
     try {
       await (0, u.Um)(h)
@@ -94,7 +94,7 @@ let h = e => {
           className: p.actions,
           children: [(0, r.jsx)(l.P3F, {
             className: p.action,
-            onClick: v,
+            onClick: _,
             "aria-label": g.NW.string(g.t.bt75u7),
             children: (0, r.jsx)(l.vdY, {
               size: "xs",
@@ -103,7 +103,7 @@ let h = e => {
             })
           }), (0, r.jsx)(l.P3F, {
             className: a()(p.action, p.actionRemove),
-            onClick: _,
+            onClick: v,
             "aria-label": g.NW.string(g.t.N86XcH),
             children: (0, r.jsx)(l.Dio, {
               size: "md",

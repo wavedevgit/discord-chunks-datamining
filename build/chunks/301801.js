@@ -54,15 +54,12 @@ function o(e, t, r, a) {
       throttleTrailing: r = !0
     } = a;
     return m.current = (0, l.throttle)(async (e, t, r) => {
-      if ("" === e.trim()) {
-        x.current(t);
-        return
-      }
+      if ("" === e.trim()) return void x.current(t);
       d.current = (0, l.uniqueId)();
       let n = await
       function(e, t, r, n) {
         var a;
-        let c = null !== (a = n.promiseUuid) && void 0 !== a ? a : (0, l.uniqueId)(),
+        let c = null != (a = n.promiseUuid) ? a : (0, l.uniqueId)(),
           {
             searchType: o = u.S.FUZZY,
             sortType: d = u.E.NONE,

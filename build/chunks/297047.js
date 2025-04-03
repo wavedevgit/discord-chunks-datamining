@@ -1,4 +1,4 @@
-/** Chunk was on 91344 **/
+/** Chunk was on 92643 **/
 t.d(n, {
   Z: () => h,
   q: () => g
@@ -11,30 +11,30 @@ var i = t(442837),
   a = t(592125),
   s = t(496675),
   c = t(944486),
-  d = t(585483),
-  u = t(51144),
+  u = t(585483),
+  d = t(51144),
   f = t(981631),
   p = t(388032);
 
 function g(e, n) {
   let {
     id: t
-  } = e, r = "@".concat(u.ZP.getUserTag(e, {
+  } = e, r = "@".concat(d.ZP.getUserTag(e, {
     decoration: "never"
   }));
-  d.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
+  u.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
     plainText: r,
     rawText: "<@".concat(t, ">")
   }), null != n && o.Z.startTyping(n)
 }
 
 function h(e, n, t) {
-  let [o, d] = (0, i.Wu)([c.Z, a.Z, s.Z], () => {
+  let [o, u] = (0, i.Wu)([c.Z, a.Z, s.Z], () => {
     let e = c.Z.getChannelId(n),
       t = a.Z.getChannel(e);
     return [e, null != t && (t.isMultiUserDM() || s.Z.can(f.Plq.SEND_MESSAGES, t))]
-  }, [n]), u = t === f.IlC.POPOUT;
-  return !d || u ? null : (0, r.jsx)(l.sNh, {
+  }, [n]), d = t === f.IlC.POPOUT;
+  return !u || d ? null : (0, r.jsx)(l.sNh, {
     id: "mention",
     label: p.NW.string(p.t.P8tvKC),
     action: function() {

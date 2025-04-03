@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 }), n(757143), n(301563), n(47120);
@@ -12,7 +12,7 @@ var r = n(200651),
   u = n(600164),
   d = n(903223),
   p = n(388032),
-  h = n(118615);
+  h = n(190010);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,12 +96,12 @@ class _ extends i.PureComponent {
         regions: t,
         call: n
       } = this.props;
-      return n.regionUpdated && null != t && null != n.region ? null !== (e = t.find(e => {
+      return n.regionUpdated && null != t && null != n.region ? null != (e = t.find(e => {
         let {
           id: t
         } = e;
         return t === n.region
-      })) && void 0 !== e ? e : {
+      })) ? e : {
         name: n.region,
         id: n.region
       } : {

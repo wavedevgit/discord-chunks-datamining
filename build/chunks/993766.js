@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => s
 });
@@ -23,17 +23,17 @@ function s(e) {
   }, [c]);
   let d = (0, i.e7)([o.ZP], () => {
       var e, t;
-      return null !== (t = null === (e = o.ZP.getApplicationState(s)) || void 0 === e ? void 0 : e.fetchState.fetching) && void 0 !== t && t
+      return null != (t = null == (e = o.ZP.getApplicationState(s)) ? void 0 : e.fetchState.fetching) && t
     }),
     p = (0, i.e7)([o.ZP, a.Z], () => {
       var e, t;
       let n = a.Z.getChannel(c);
-      return null !== (t = null === (e = o.ZP.getContextState(null != n ? {
+      return null != (t = null == (e = o.ZP.getContextState(null != n ? {
         channel: n,
         type: "channel"
       } : {
         type: "contextless"
-      })) || void 0 === e ? void 0 : e.fetchState.fetching) && void 0 !== t && t
+      })) ? void 0 : e.fetchState.fetching) && t
     }),
     h = r.useRef(!1),
     f = r.useRef(!1);

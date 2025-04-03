@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => C
 });
@@ -17,15 +17,15 @@ var r = n(200651),
   m = n(522651),
   g = n(354459),
   b = n(388032),
-  _ = n(790229);
+  _ = n(940221);
 
 function C(e) {
   let {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, a.ZP)(), C = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), v = (null == C ? void 0 : C.type) === g.fO.STREAM, y = (0, l.e7)([p.Z], () => v ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
-    ignoreSenderPreference: x
+  } = (0, a.ZP)(), C = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), y = (null == C ? void 0 : C.type) === g.fO.STREAM, x = (0, l.e7)([p.Z], () => y ? p.Z.getActiveStreamForStreamKey(C.id) : null), {
+    ignoreSenderPreference: v
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
   }, {
@@ -34,9 +34,9 @@ function C(e) {
     viewerClippingAllowed: j,
     isAtMaxSavingClipOperations: O
   } = (0, l.cj)([s.Z], () => ({
-    viewerClippingAllowed: null != y && (s.Z.isViewerClippingAllowedForUser(y.ownerId) || x),
+    viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, N = (null == y ? void 0 : y.ownerId) === h.default.getId(), I = !E || !(N || j) || O || null == C, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, N = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(N || j) || O || null == C, P = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(o.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function C(e) {
     },
     disabled: I,
     iconComponent: P,
-    label: null == y ? b.NW.string(b.t.eg5qtb) : N || j ? E ? O ? void 0 : b.NW.string(b.t.U4URzM) : b.NW.string(b.t.wSS1yM) : b.NW.string(b.t.aRifJS),
+    label: null == x ? b.NW.string(b.t.eg5qtb) : N || j ? E ? O ? void 0 : b.NW.string(b.t.U4URzM) : b.NW.string(b.t.wSS1yM) : b.NW.string(b.t.aRifJS),
     grow: !1
   })
 }

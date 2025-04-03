@@ -1,4 +1,4 @@
-/** Chunk was on 71689 **/
+/** Chunk was on 95287 **/
 r.d(t, {
   Z: () => O
 }), r(47120), r(301563);
@@ -16,8 +16,8 @@ var n = r(200651),
   m = r(810568),
   g = r(981631),
   b = r(388032),
-  _ = r(231104),
-  h = r(2456);
+  _ = r(263930),
+  h = r(926921);
 
 function O(e) {
   let {
@@ -27,10 +27,10 @@ function O(e) {
     closeModal: O
   } = e, [y, v] = a.useState(), j = (0, s.e7)([p.Z], () => {
     var e, t;
-    return (null == y ? void 0 : null === (e = y.guild) || void 0 === e ? void 0 : e.id) != null && p.Z.isMember(null == y ? void 0 : null === (t = y.guild) || void 0 === t ? void 0 : t.id)
+    return (null == y || null == (e = y.guild) ? void 0 : e.id) != null && p.Z.isMember(null == y || null == (t = y.guild) ? void 0 : t.id)
   }), x = a.useMemo(() => {
     var e;
-    return null === (e = t.websites) || void 0 === e ? void 0 : e.find(e => {
+    return null == (e = t.websites) ? void 0 : e.find(e => {
       let {
         category: t
       } = e;

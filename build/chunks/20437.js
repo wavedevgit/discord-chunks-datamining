@@ -1,10 +1,10 @@
 /** Chunk was on 61526 **/
 n.d(t, {
-  Q: () => r,
+  Q: () => a,
   S: () => l
 });
-var a = n(192379);
-let r = a.createContext({
+var r = n(192379);
+let a = r.createContext({
   videoPlayerRef: {
     current: null
   },
@@ -20,5 +20,5 @@ let r = a.createContext({
 });
 
 function l() {
-  return a.useContext(r)
+  return r.useContext(a)
 }

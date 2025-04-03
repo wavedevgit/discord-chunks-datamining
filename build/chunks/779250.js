@@ -3,8 +3,8 @@ n.d(t, {
   default: () => G
 }), n(47120);
 var r, l = n(200651),
-  i = n(192379),
-  a = n(392711),
+  a = n(192379),
+  i = n(392711),
   s = n(442837),
   o = n(481060),
   c = n(447543),
@@ -33,7 +33,7 @@ var r, l = n(200651),
   Z = n(765305),
   k = n(981631),
   _ = n(388032),
-  D = n(959905);
+  D = n(365545);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,8 +64,8 @@ function U(e) {
     modal: t
   } = e, {
     createMultipleConfetti: n
-  } = i.useContext(d.h);
-  return i.useEffect(() => {
+  } = a.useContext(d.h);
+  return a.useEffect(() => {
     let e = null == t ? void 0 : t.getScrollerNode();
     if (null == e) return;
     let r = e.getBoundingClientRect();
@@ -134,7 +134,7 @@ function M(e) {
     onSave: N,
     onClose: b,
     createdEvent: y
-  } = e, O = (0, x.Dt)(), E = i.useRef(n), C = !(0, a.isEqual)(E.current, n), w = i.useMemo(() => [{
+  } = e, O = (0, x.Dt)(), E = a.useRef(n), C = !(0, i.isEqual)(E.current, n), w = a.useMemo(() => [{
     slideId: 0,
     label: _.NW.string(_.t["56QlKS"]),
     valid: null == g.entity,
@@ -148,17 +148,17 @@ function M(e) {
     slideId: 2,
     label: _.NW.string(_.t["8aJzT0"]),
     valid: !0
-  }], [g, d, C]), Z = Object.keys(L).length, k = (0, j.xt)(n), R = e => Math.max(0, Math.min(e, Z - 1)), [A, z] = i.useState(+!!k), [M, G] = i.useState(!1), V = i.useMemo(() => w.slice(0, A + 1).map(e => e.valid).every(Boolean), [w, A]), X = A >= w.length ? 3 : w[R(A)].slideId, F = 3 === X;
+  }], [g, d, C]), Z = Object.keys(L).length, k = (0, j.xt)(n), R = e => Math.max(0, Math.min(e, Z - 1)), [A, z] = a.useState(+!!k), [M, G] = a.useState(!1), V = a.useMemo(() => w.slice(0, A + 1).map(e => e.valid).every(Boolean), [w, A]), X = A >= w.length ? 3 : w[R(A)].slideId, F = 3 === X;
   (0, I.l)(e => e.onUpdateCanCloseModal)(F);
   let B = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
-    Y = i.useRef(null),
+    Y = a.useRef(null),
     q = e => {
       G(!1), z(R(e))
     },
-    H = i.useRef(q);
-  i.useEffect(() => {
+    H = a.useRef(q);
+  a.useEffect(() => {
     H.current = q
-  }), i.useEffect(() => {
+  }), a.useEffect(() => {
     (null == y ? void 0 : y.id) != null && H.current(3)
   }, [null == y ? void 0 : y.id]);
   let J = () => {
@@ -256,12 +256,12 @@ function G(e) {
   let {
     guildId: t,
     guildScheduledEventId: r,
-    transitionState: a,
+    transitionState: i,
     onClose: u
-  } = e, d = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), m = (0, s.e7)([j.ZP], () => j.ZP.getGuildScheduledEvent(r), [r]), x = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(t), [t]), f = (0, O.j$)(m, x), [I, S] = i.useState(f), [T] = i.useState((0, O.Ql)(m)), [P, W] = i.useState(null), D = e => {
+  } = e, d = (0, s.e7)([v.Z], () => v.Z.getGuild(t)), m = (0, s.e7)([j.ZP], () => j.ZP.getGuildScheduledEvent(r), [r]), x = (0, s.e7)([h.ZP], () => h.ZP.getDefaultChannel(t), [t]), f = (0, O.j$)(m, x), [I, S] = a.useState(f), [T] = a.useState((0, O.Ql)(m)), [P, W] = a.useState(null), D = e => {
     var t;
     let n = (0, b.so)(e),
-      r = null !== (t = e.channel_id) && void 0 !== t ? t : null == x ? void 0 : x.id;
+      r = null != (t = e.channel_id) ? t : null == x ? void 0 : x.id;
     null != r && c.ZP.createInvite(r, {
       max_age: A.value,
       max_uses: z.value
@@ -277,7 +277,7 @@ function G(e) {
     if (T && null != r) return await N.Z.saveEvent(r, I, t, e), u();
     let n = await N.Z.createGuildEvent(I, t, e);
     return D(n.body), n
-  }), X = i.useMemo(() => (0, w.Z)(I, T), [I, T]);
+  }), X = a.useMemo(() => (0, w.Z)(I, T), [I, T]);
   return (0, l.jsx)(M, {
     guildId: t,
     guildEvent: I,
@@ -285,7 +285,7 @@ function G(e) {
     editBroadcastInfoData: L,
     isEdit: T,
     formErrors: X,
-    transitionState: a,
+    transitionState: i,
     loading: G,
     error: V,
     onChange: e => {
@@ -293,7 +293,7 @@ function G(e) {
         var n;
         let r = (0, E.xC)(e.entityType),
           [l] = (0, y.SU)(t, r);
-        e.channelId = null !== (n = null == l ? void 0 : l.id) && void 0 !== n ? n : null, e.entityType !== Z.WX.EXTERNAL && I.entityType === Z.WX.EXTERNAL && (e.entityMetadata = null)
+        e.channelId = null != (n = null == l ? void 0 : l.id) ? n : null, e.entityType !== Z.WX.EXTERNAL && I.entityType === Z.WX.EXTERNAL && (e.entityMetadata = null)
       }
       S(t => R({}, t, e))
     },

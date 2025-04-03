@@ -1,11 +1,11 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   LD: () => _,
   LJ: () => C,
   mV: () => g,
   mh: () => b,
   qc: () => m,
-  wi: () => v
+  wi: () => y
 }), n(789020), n(47120);
 var r, i = n(192379),
   l = n(913527),
@@ -26,7 +26,7 @@ function g(e, t) {
   let i = (0, a.e7)([d.default], () => d.default.getUser(e), [e]),
     l = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, e), [t, e]),
     o = (0, a.e7)([u.Z], () => u.Z.getGuild(t), [t]);
-  return (0, s.Dc)(o) ? null == i || null == l || null == o ? 1 : (0, p.yE)(null !== (n = l.flags) && void 0 !== n ? n : 0, f.q.BYPASSES_VERIFICATION) || (0, p.yE)(null !== (r = l.flags) && void 0 !== r ? r : 0, f.q.COMPLETED_ONBOARDING) || null != l.isPending && !l.isPending ? 2 : 1 : 0
+  return (0, s.Dc)(o) ? null == i || null == l || null == o ? 1 : (0, p.yE)(null != (n = l.flags) ? n : 0, f.q.BYPASSES_VERIFICATION) || (0, p.yE)(null != (r = l.flags) ? r : 0, f.q.COMPLETED_ONBOARDING) || null != l.isPending && !l.isPending ? 2 : 1 : 0
 }
 
 function b(e, t) {
@@ -34,7 +34,7 @@ function b(e, t) {
   let r = (0, a.e7)([d.default], () => d.default.getUser(e), [e]),
     i = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, e), [t, e]);
   if (null == r || null == i) return !1;
-  let l = (0, p.yE)(null !== (n = i.flags) && void 0 !== n ? n : 0, f.q.BYPASSES_VERIFICATION),
+  let l = (0, p.yE)(null != (n = i.flags) ? n : 0, f.q.BYPASSES_VERIFICATION),
     o = (null == r ? void 0 : r.isPhoneVerified()) || (null == r ? void 0 : r.isStaff()),
     s = (null == i ? void 0 : i.joinedAt) != null;
   return r.verified || o || s || l
@@ -54,7 +54,7 @@ function C(e) {
   }, [e])
 }
 
-function v(e, t) {
+function y(e, t) {
   let n = (0, a.e7)([c.ZP], () => c.ZP.getMember(t, e), [t, e]),
     r = null == n ? void 0 : n.joinedAt;
   return i.useMemo(() => null == r ? "" : o()(new Date(r)).format("MMM DD, YYYY"), [r])

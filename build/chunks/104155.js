@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 t.d(n, {
   I: () => b,
-  Z: () => v
+  Z: () => N
 }), t(47120), t(301563);
 var r = t(200651),
   l = t(192379),
@@ -20,7 +20,7 @@ var r = t(200651),
   x = t(981631),
   _ = t(176505),
   C = t(388032),
-  j = t(445223);
+  j = t(335204);
 
 function b(e) {
   let {
@@ -36,16 +36,16 @@ function b(e) {
   })
 }
 
-function v(e) {
+function N(e) {
   let {
     guildId: n
-  } = e, [o, s] = l.useState(""), b = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), v = (0, a.e7)([u.ZP], () => u.ZP.getChannels(n)), N = (0, a.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, N, v, o), O = (0, a.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
+  } = e, [o, s] = l.useState(""), b = (0, a.e7)([m.Z], () => m.Z.getGuild(n)), N = (0, a.e7)([u.ZP], () => u.ZP.getChannels(n)), v = (0, a.e7)([d.Z], () => d.Z.getCategories(n)), y = (0, f.Fo)(n, v, N, o), O = (0, a.e7)([h.Z], () => h.Z.canWithPartialContext(x.Plq.MANAGE_CHANNELS, {
     guildId: n
   })), I = (0, a.e7)([c.ZP], () => null != c.ZP.getCurrentSidebarChannelId(_.oC.CHANNEL_BROWSER)), Z = l.useCallback(() => s(""), [s]), w = l.useCallback(() => {
     (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([t.e("45094"), t.e("46122")]).then(t.bind(t, 218613));
+      } = await Promise.all([t.e("45094"), t.e("45822")]).then(t.bind(t, 218613));
       return t => {
         var l, a;
         return (0, r.jsx)(e, (l = function(e) {
@@ -108,7 +108,7 @@ function v(e) {
       }) : null]
     }), (0, r.jsx)(g.Z, {
       className: j.browser,
-      channels: v,
+      channels: N,
       categories: y,
       guild: b,
       hasSidebar: I

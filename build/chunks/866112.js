@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => f
 }), n(653041);
@@ -46,18 +46,18 @@ let u = [],
 class h extends(r = i.ZP.Store) {
   getSearchState(e) {
     var t;
-    return null !== (t = d[e]) && void 0 !== t ? t : {
+    return null != (t = d[e]) ? t : {
       mostRecentQuery: "",
       fetching: !1
     }
   }
   getSearchResults(e, t) {
     var n, r, i;
-    return null !== (i = null === (r = p[e]) || void 0 === r ? void 0 : null === (n = r[t]) || void 0 === n ? void 0 : n.results) && void 0 !== i ? i : u
+    return null != (i = null == (r = p[e]) || null == (n = r[t]) ? void 0 : n.results) ? i : u
   }
   shouldFetch(e, t) {
     var n, r;
-    let i = null === (r = p[e]) || void 0 === r ? void 0 : null === (n = r[t]) || void 0 === n ? void 0 : n.lastSearchedAt;
+    let i = null == (r = p[e]) || null == (n = r[t]) ? void 0 : n.lastSearchedAt;
     return null == i || Date.now() - i > 12e4
   }
 }
@@ -125,7 +125,7 @@ let f = new h(l.Z, {
     let {
       channelId: n,
       guildId: r
-    } = e, i = null === (t = d[n]) || void 0 === t ? void 0 : t.mostRecentQuery;
+    } = e, i = null == (t = d[n]) ? void 0 : t.mostRecentQuery;
     if (null == i) return;
     let l = p[n][i];
     if (null == l) return;

@@ -67,5 +67,8 @@ var i = {
 };
 let n = function(e, a, t) {
   var n, o = i[e];
-  return (n = "string" == typeof o ? o : 1 === a ? o.one : o.other.replace("{{count}}", String(a)), null != t && t.addSuffix) ? t.comparison && t.comparison > 0 ? "em " + n : "h\xe1 " + n : n
+  if (n = "string" == typeof o ? o : 1 === a ? o.one : o.other.replace("{{count}}", String(a)), null != t && t.addSuffix)
+    if (t.comparison && t.comparison > 0) return "em " + n;
+    else return "h\xe1 " + n;
+  return n
 }

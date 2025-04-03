@@ -18,6 +18,6 @@ function s(e) {
       s = i.Z.getGuild(t),
       c = null == s ? void 0 : s.verificationLevel,
       u = null == n ? void 0 : n.verification_level;
-    return null !== (e = null != c ? c : u) && void 0 !== e ? e : l.sFg.NONE
+    return null != (e = null != c ? c : u) ? e : l.sFg.NONE
   }, [t])
 }

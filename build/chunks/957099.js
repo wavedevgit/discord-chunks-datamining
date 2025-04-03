@@ -30,8 +30,8 @@ let a = e => {
       return l
     }(e, ["size", "width", "height", "color"]);
   let f = (0, o.m)(c),
-    v = null !== (a = null == f ? void 0 : f.width) && void 0 !== a ? a : u,
-    g = null !== (s = null == f ? void 0 : f.height) && void 0 !== s ? s : d;
+    v = null != (a = null == f ? void 0 : f.width) ? a : u,
+    g = null != (s = null == f ? void 0 : f.height) ? s : d;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

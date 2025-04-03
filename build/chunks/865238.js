@@ -1,4 +1,4 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 89107 **/
 n.d(t, {
   Z: () => S
 }), n(47120);
@@ -19,12 +19,12 @@ var r = n(200651),
   b = n(131951),
   _ = n(594174),
   C = n(63063),
-  v = n(5192),
-  y = n(823961),
-  x = n(981631),
+  y = n(5192),
+  x = n(823961),
+  v = n(981631),
   j = n(37113),
   O = n(388032),
-  E = n(668839),
+  E = n(15322),
   N = n(574169);
 
 function I(e) {
@@ -53,7 +53,7 @@ function S(e) {
     buyer: l,
     onClose: a,
     dismissibleContent: S
-  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([y.Z], () => y.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [M, k] = (0, i.useState)(!1);
+  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [M, k] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     k(!0)
   }, []);
@@ -81,7 +81,7 @@ function S(e) {
       size: d.EFr.SIZE_48,
       animateOnHover: !0
     }),
-    B = v.ZP.getName(t.guild_id, t.id, l),
+    B = y.ZP.getName(t.guild_id, t.id, l),
     H = A && !R,
     F = t.hdStreamingUntil;
   if (null == F || null == l || null == T) return null;
@@ -89,10 +89,10 @@ function S(e) {
     V = S ? O.NW.format(O.t["6LrV9f"], {
       username: B,
       num: G,
-      helpCenterLink: C.Z.getArticleURL(x.BhN.HD_STREAMING_POTION)
+      helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : l.id === T.id ? O.NW.string(O.t.IjKvNT) : !0 === A ? O.NW.format(O.t.JkWoqK, {
       username: B,
-      helpCenterLink: C.Z.getArticleURL(x.BhN.HD_STREAMING_POTION)
+      helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : O.NW.formatToPlainString(O.t.vNbVXF, {
       username: B
     }),
@@ -118,20 +118,14 @@ function S(e) {
       children: [(0, r.jsx)(d.zxk, {
         onClick: () => {
           if (R) {
-            let e = y.Z.getPreviousGoLiveSettings(),
+            let e = x.Z.getPreviousGoLiveSettings(),
               t = b.Z.getGoLiveSource();
-            if (null == e) {
-              a();
-              return
-            }
+            if (null == e) return void a();
             let n = (0, h.s_)(e.resolution, e.frameRate, t);
-            p.Z.setGoLiveSource(n), a();
-            return
+            return p.Z.setGoLiveSource(n), void a()
           }
-          if (H) {
-            a();
-            return
-          }(0, d.ZDy)(async () => {
+          if (H) return void a();
+          (0, d.ZDy)(async () => {
             let {
               default: e
             } = await Promise.all([n.e("46746"), n.e("52657")]).then(n.bind(n, 60594));

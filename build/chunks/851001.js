@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => O
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(481060),
-  l = n(100527),
+  l = n(481060),
+  o = n(100527),
   c = n(906732),
   d = n(70097),
   u = n(526167),
@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(474936),
   b = n(869783),
   N = n(388032),
-  x = n(927247),
+  x = n(601060),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
@@ -27,29 +27,29 @@ let O = i.forwardRef((e, t) => {
   let {
     className: O,
     isFooterVisible: C,
-    isDarkMode: v,
-    isReducedMotion: S
+    isDarkMode: S,
+    isReducedMotion: v
   } = e, {
     analyticsLocations: T
-  } = (0, c.ZP)(l.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
+  } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), I = (0, g.Ng)(), y = (0, g.Wp)(I, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, A = (0, p.N)(), P = (0, m.Nx)(), R = (0, u.rO)(), D = i.useRef(null), [Z, w] = i.useState(!1);
   return i.useEffect(() => {
-    !C || S || Z || null == D.current || D.current.play()
-  }, [C, S, Z]), (0, r.jsx)(c.Gt, {
+    !C || v || Z || null == D.current || D.current.play()
+  }, [C, v, Z]), (0, r.jsx)(c.Gt, {
     value: T,
     children: (0, r.jsxs)("div", {
       ref: t,
       className: a()(x.container, O),
-      children: [(0, r.jsx)(o.X6q, {
+      children: [(0, r.jsx)(l.X6q, {
         className: x.footerHeader,
         variant: "display-md",
         color: "header-primary",
         children: N.NW.string(N.t.lEw32t)
       }), (0, r.jsx)(h.PK, {
-        subscriptionTier: null !== (s = null == A ? void 0 : null === (n = A.subscription_trial) || void 0 === n ? void 0 : n.sku_id) && void 0 !== s ? s : y,
+        subscriptionTier: null != (s = null == A || null == (n = A.subscription_trial) ? void 0 : n.sku_id) ? s : y,
         inOfferExperience: P,
         containerClassName: x.footerCTAContainer,
         isMarketingPageV2Enabled: !0,
-        isDarkMode: v
+        isDarkMode: S
       }), (0, r.jsx)("div", {
         className: x.footerArtContainer,
         children: (0, r.jsx)(d.Z, {

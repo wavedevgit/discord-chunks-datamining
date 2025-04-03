@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => d
 });
@@ -7,13 +7,13 @@ n(192379);
 var i = n(704215),
   s = n(765585),
   a = n(300284),
-  o = n(526761),
-  l = n(388032),
-  c = n(459722);
+  l = n(526761),
+  o = n(388032),
+  c = n(587528);
 
 function d() {
   let e = (0, a.Z)({
-    scrollPosition: o.Y_.TRY_IT_OUT
+    scrollPosition: l.Y_.TRY_IT_OUT
   });
   return (0, r.jsx)(s.Z, {
     isPremiumFeature: !0,
@@ -21,8 +21,8 @@ function d() {
     inlineArt: !0,
     artClassName: c.profileThemesArt,
     onTryFeature: e,
-    header: l.NW.string(l.t.V95BHB),
-    body: l.NW.string(l.t["Cxm79/"]),
+    header: o.NW.string(o.t.V95BHB),
+    body: o.NW.string(o.t["Cxm79/"]),
     dismissibleContent: i.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2
   })
 }

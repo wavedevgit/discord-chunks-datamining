@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => c
 });
@@ -7,25 +7,25 @@ n(192379);
 var i = n(120356),
   s = n.n(i),
   a = n(481060),
-  o = n(51144),
-  l = n(898664);
+  l = n(51144),
+  o = n(261182);
 let c = e => {
   let {
     user: t,
     fill: n
-  } = e, i = "\xa0(@".concat(o.ZP.getUserTag(t, {
+  } = e, i = "\xa0(@".concat(l.ZP.getUserTag(t, {
     decoration: "never"
   }), ")");
   return (0, r.jsxs)(a.Text, {
     className: s()([{
-      [l.fill]: n
+      [o.fill]: n
     }]),
     variant: "text-md/medium",
     children: [(0, r.jsx)("span", {
-      className: l.username,
-      children: o.ZP.getName(t)
+      className: o.username,
+      children: l.ZP.getName(t)
     }), (0, r.jsx)("span", {
-      className: l.discriminator,
+      className: o.discriminator,
       children: i
     })]
   })

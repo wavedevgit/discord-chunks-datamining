@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => y
 }), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(442837),
   a = n(481060),
-  o = n(846027),
-  l = n(179658),
+  l = n(846027),
+  o = n(179658),
   c = n(304680),
   d = n(579806),
   u = n(600164),
@@ -23,9 +23,9 @@ var r = n(200651),
   E = n(981631),
   j = n(65154),
   O = n(388032),
-  C = n(685786);
+  C = n(20493);
 
-function v(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function v(e) {
   return e
 }
 
-function S(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,12 +62,12 @@ async function T() {
 }
 
 function I(e) {
-  (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, S(v({
+  (0, a.h7j)(t => (0, r.jsx)(a.ConfirmModal, v(S({
     header: O.NW.string(O.t["7UXEFx"]),
     confirmText: O.NW.string(O.t.BddRzc),
     cancelText: O.NW.string(O.t["ETE/oK"]),
     onCancel: t.onClose,
-    onConfirm: () => o.Z.setDebugLogging(e)
+    onConfirm: () => l.Z.setDebugLogging(e)
   }, t), {
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
@@ -92,34 +92,32 @@ function y(e) {
     d(!0);
     try {
       await f.Z.getMediaEngine().writeAudioDebugState(), await N.Z.submitLiveCrashReport({
-          message: {
-            message: "User Live Dump"
-          }
-        }), await (0, m.E)(E.GU0.RTC),
-        function() {
-          let e = O.NW.string(O.t["fKBB8/"]),
-            t = O.NW.string(O.t.BvyxEx);
-          (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, S(v({
-            header: e,
-            confirmButtonColor: a.zxk.Colors.BRAND,
-            confirmText: O.NW.string(O.t.BddRzc)
-          }, n), {
-            children: (0, r.jsx)(a.Text, {
-              variant: "text-md/normal",
-              children: t
-            })
-          })))
-        }()
+        message: {
+          message: "User Live Dump"
+        }
+      }), await (0, m.E)(E.GU0.RTC);
+      let e = O.NW.string(O.t["fKBB8/"]),
+        t = O.NW.string(O.t.BvyxEx);
+      (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, v(S({
+        header: e,
+        confirmButtonColor: a.zxk.Colors.BRAND,
+        confirmText: O.NW.string(O.t.BddRzc)
+      }, n), {
+        children: (0, r.jsx)(a.Text, {
+          variant: "text-md/normal",
+          children: t
+        })
+      })))
     } catch (e) {
       ! function(e) {
         var t;
         let n = O.NW.string(O.t.QZg0Jy),
           i = null != e ? e : O.NW.string(O.t.VzHcSk),
-          s = null === (t = (0, g.hp)(g.u.DEBUG_LOG_UPLOAD_FAILED)) || void 0 === t ? void 0 : t.errorCode,
-          o = O.NW.formatToPlainString(O.t["ejOT9/"], {
+          s = null == (t = (0, g.hp)(g.u.DEBUG_LOG_UPLOAD_FAILED)) ? void 0 : t.errorCode,
+          l = O.NW.formatToPlainString(O.t["ejOT9/"], {
             errorCode: s
           });
-        (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, S(v({
+        (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, v(S({
           header: n,
           confirmButtonColor: a.zxk.Colors.BRAND,
           confirmText: O.NW.string(O.t.BddRzc)
@@ -139,7 +137,7 @@ function y(e) {
               style: {
                 marginTop: "auto"
               },
-              children: o
+              children: l
             })]
           })
         })))
@@ -152,7 +150,7 @@ function y(e) {
       children: (0, r.jsx)(a.j7V, {
         value: P,
         onChange: e => {
-          (0, x.Z)("stream_info_overlay_enabled", e, P), (0, l.y)({
+          (0, x.Z)("stream_info_overlay_enabled", e, P), (0, o.y)({
             isStreamInfoOverlayEnabled: e
           })
         },
@@ -164,7 +162,7 @@ function y(e) {
       setting: _.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, r.jsx)(a.j7V, {
         value: A,
-        onChange: e => o.Z.setAecDump(e),
+        onChange: e => l.Z.setAecDump(e),
         note: O.NW.string(O.t["xl9+Iy"]),
         hideBorder: t,
         children: O.NW.string(O.t["r6K+TE"])

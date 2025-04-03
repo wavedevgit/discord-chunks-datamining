@@ -35,7 +35,7 @@ function h(e) {
   }, [n]);
   let p = a.useCallback(e => {
       var t;
-      return (null !== (t = g.current) && void 0 !== t ? t : document).querySelector(e)
+      return (null != (t = g.current) ? t : document).querySelector(e)
     }, []),
     x = a.useCallback((e, t) => {
       f.current && r(e, t)
@@ -43,20 +43,20 @@ function h(e) {
     b = a.useCallback(e => {
       if (f.current) {
         var t;
-        null === (t = document.querySelector(e)) || void 0 === t || t.focus()
+        null == (t = document.querySelector(e)) || t.focus()
       }
     }, []),
-    v = a.useCallback(e => {
+    j = a.useCallback(e => {
       c.current = e;
       let n = (0, s.P1)(e, o),
         r = (0, s.x3)(e);
       x(n, r), (0, i.h)(t, r, !0)
     }, [t, x]),
-    [j, C] = a.useState(!1),
-    _ = a.useRef(j);
+    [v, C] = a.useState(!1),
+    _ = a.useRef(v);
   a.useLayoutEffect(() => {
-    _.current = j
-  }, [j]), a.useLayoutEffect(() => {
+    _.current = v
+  }, [v]), a.useLayoutEffect(() => {
     let e = g.current;
     if (null != e) return e.addEventListener("focusin", n), e.addEventListener("focusout", r), e.addEventListener("focus", a), e.addEventListener("scroll", i, {
       passive: !0
@@ -69,7 +69,7 @@ function h(e) {
     }
 
     function r(e) {
-      !e.currentTarget.contains(e.relatedTarget) && (C(!1), requestAnimationFrame(() => {
+      e.currentTarget.contains(e.relatedTarget) || (C(!1), requestAnimationFrame(() => {
         let e = c.current;
         null !== e && null == p((0, s.P1)(e, o)) && b((0, s.P1)(t, "data-grid-id"))
       }))
@@ -83,7 +83,7 @@ function h(e) {
     function i() {
       h.current = !0
     }
-  }, [t, x, b, v, p]);
+  }, [t, x, b, j, p]);
   let y = a.useCallback(e => {
       var t, n;
       if (!f.current) return;
@@ -93,19 +93,19 @@ function h(e) {
       let i = (0, s.P1)(r, o),
         h = null == a ? void 0 : a.querySelector(i);
       if (null == h) return;
-      let x = parseInt(null !== (t = h.getAttribute("data-grid-section")) && void 0 !== t ? t : ""),
+      let x = parseInt(null != (t = h.getAttribute("data-grid-section")) ? t : ""),
         b = parseInt(h.getAttribute("aria-rowindex")),
-        j = parseInt(h.getAttribute("aria-colindex"));
+        v = parseInt(h.getAttribute("aria-colindex"));
       switch (u.has(e.key) && (e.stopPropagation(), e.preventDefault()), e.key) {
         case l.R8.RIGHT: {
           let e = p(m({
             section: x,
             row: b,
-            column: j + 1
+            column: v + 1
           }));
           if (null != e) {
             let t = e.getAttribute(o);
-            null != t && v(t)
+            null != t && j(t)
           }
           return
         }
@@ -113,11 +113,11 @@ function h(e) {
           let e = p(m({
             section: x,
             row: b,
-            column: j - 1
+            column: v - 1
           }));
           if (null != e) {
             let t = e.getAttribute(o);
-            null != t && v(t)
+            null != t && j(t)
           }
           return
         }
@@ -125,15 +125,15 @@ function h(e) {
           let e = p(m({
             section: x,
             row: b + 1,
-            column: j
+            column: v
           }));
           if (null == e && (e = p(m({
               section: x + 1,
               row: 0,
-              column: j
+              column: v
             }))), null != e) {
             let t = e.getAttribute(o);
-            null != t && v(t)
+            null != t && j(t)
           }
           return
         }
@@ -144,20 +144,20 @@ function h(e) {
             null == (e = p(m({
               section: x - 1,
               row: t,
-              column: j
+              column: v
             }))) && (e = p(m({
               section: x - 1,
               row: t - 1,
-              column: j
+              column: v
             })))
           } else e = p(m({
             section: x,
             row: b - 1,
-            column: j
+            column: v
           }));
           if (null != e) {
             let t = e.getAttribute(o);
-            null != t && v(t)
+            null != t && j(t)
           }
           return
         }
@@ -167,16 +167,15 @@ function h(e) {
           let t = c.current;
           if (null != t) {
             let r = p((0, s.P1)(t, o)),
-              a = null !== (n = null == r ? void 0 : r.ownerDocument) && void 0 !== n ? n : document,
+              a = null != (n = null == r ? void 0 : r.ownerDocument) ? n : document,
               i = r === a.activeElement;
             null != r && i && (e.preventDefault(), e.stopPropagation(), null == r || r.click())
           }
         }
       }
-    }, [p, v]),
+    }, [p, j]),
     N = a.useCallback(e => {
-      let n = null != e ? (0, s.jb)(t, e) : null;
-      c.current = n
+      c.current = null != e ? (0, s.jb)(t, e) : null
     }, [t]);
   return a.useMemo(() => ({
     id: t,

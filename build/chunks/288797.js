@@ -10,10 +10,7 @@ t.exports = function(t, e, r) {
     }));
     return
   }
-  if (t.preventDefault(), !e.getNativelyRenderedContent()) {
-    r(i);
-    return
-  }
+  if (t.preventDefault(), !e.getNativelyRenderedContent()) return void r(i);
   r(n.set(e, {
     nativelyRenderedContent: null
   })), setTimeout(function() {

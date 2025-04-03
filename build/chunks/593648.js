@@ -1,4 +1,4 @@
-/** Chunk was on 10451 **/
+/** Chunk was on 74669 **/
 n.d(t, {
   Z: () => en
 }), n(653041), n(47120);
@@ -6,8 +6,8 @@ var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
-  o = n(392711),
-  l = n.n(o),
+  l = n(392711),
+  o = n.n(l),
   c = n(442837),
   d = n(524437),
   u = n(481060),
@@ -24,8 +24,8 @@ var r = n(200651),
   j = n(223683),
   O = n(312400),
   C = n(115345),
-  v = n(392888),
-  S = n(106371),
+  S = n(392888),
+  v = n(106371),
   T = n(995774),
   I = n(921801),
   y = n(460181),
@@ -41,8 +41,8 @@ var r = n(200651),
   B = n(981631),
   M = n(468788),
   U = n(388032),
-  V = n(867363),
-  G = n(685786);
+  V = n(589848),
+  G = n(20493);
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,14 +86,14 @@ function Y(e) {
     disabled: i,
     onPreview: s,
     onChange: a,
-    tooltip: o
+    tooltip: l
   } = e;
   return (0, r.jsx)(u.j7V, {
     className: V.soundRow,
     value: n,
     onChange: a,
     disabled: i,
-    tooltipNote: o,
+    tooltipNote: l,
     children: (0, r.jsxs)("div", {
       className: V.notificationSound,
       children: [(0, r.jsx)("div", {
@@ -119,20 +119,20 @@ function K(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, o = i.useRef(), l = (0, E.p)(), c = i.useCallback((e, t) => {
-    t.stopPropagation(), t.preventDefault(), null != o.current && o.current.stop(), o.current = (0, y.GN)(e)
+  } = e, l = i.useRef(), o = (0, E.p)(), c = i.useCallback((e, t) => {
+    t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, y.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);
     n || r.push(e), g.default.setDisabledSounds(r)
   }, [t]);
   i.useEffect(() => () => {
     var e;
-    null === (e = o.current) || void 0 === e || e.stop()
+    null == (e = l.current) || e.stop()
   });
   let m = [{
       label: U.NW.string(U.t.pz71xM),
       sound: "message1",
-      focusModeDisabled: l
+      focusModeDisabled: o
     }, {
       label: U.NW.string(U.t.hK51Ym),
       sound: "deafen"
@@ -311,13 +311,11 @@ function q() {
 class X extends i.PureComponent {
   handleDesktopChange(e) {
     let t = e ? B.qrD.ALL : B.qrD.NEVER;
-    if (t !== B.qrD.NEVER) {
-      var n;
-      n = "UserSettingsModal", R.Z.requestPermission(e => {
-        let t = e ? B.$Ab.ENABLED : B.$Ab.BLOCKED;
-        g.default.setPermissionsState(t, n)
-      })
-    } else g.default.setDesktopType(t)
+    if (t !== B.qrD.NEVER) R.Z.requestPermission(e => {
+      let t = e ? B.$Ab.ENABLED : B.$Ab.BLOCKED;
+      g.default.setPermissionsState(t, "UserSettingsModal")
+    });
+    else g.default.setDesktopType(t)
   }
   handleTTSChange(e) {
     let t = e.value;
@@ -330,10 +328,10 @@ class X extends i.PureComponent {
       disableUnreadBadge: n,
       taskbarFlash: i,
       disabledSounds: s,
-      disableAllSounds: o,
+      disableAllSounds: l,
       notifyMessagesInSelectedChannel: c,
       focusMode: d
-    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = l().range(1, 11).map(e => ({
+    } = this.props, m = D.isPlatformEmbedded && (0, D.isWindows)(), g = o().range(1, 11).map(e => ({
       value: 60 * e,
       label: U.NW.formatToPlainString(U.t.iXLF9f, {
         minutes: e
@@ -390,7 +388,7 @@ class X extends i.PureComponent {
       }), this.renderTTS(), (0, r.jsx)(q, {}), (0, r.jsx)(u.xJW, {
         children: (0, r.jsx)(K, {
           disabledSounds: s,
-          disableAllSounds: o,
+          disableAllSounds: l,
           notifyMessagesInSelectedChannel: c
         })
       }), (0, r.jsx)(W.Z, {})]
@@ -484,7 +482,7 @@ function $() {
       autoTrackExposure: !1
     }),
     n = (0, c.e7)([P.ZP], () => P.ZP.useNewNotifications),
-    [s, o] = i.useState(!1);
+    [s, l] = i.useState(!1);
   return e && (n || t) ? (0, r.jsxs)(r.Fragment, {
     children: [n ? (0, r.jsx)(I.F, {
       setting: L.s6.NOTIFICATIONS_UNREAD_SETTINGS,
@@ -493,7 +491,7 @@ function $() {
         value: n,
         disabled: s || !n,
         note: U.NW.string(U.t.frbLrK),
-        onChange: () => ee(o),
+        onChange: () => ee(l),
         children: U.NW.string(U.t.z21l8P)
       })
     }) : t ? (0, r.jsx)(I.F, {
@@ -527,7 +525,7 @@ function $() {
             setting: L.s6.NOTIFICATIONS_LAUNCH_MIGRATION,
             children: (0, r.jsx)(u.zxk, {
               onClick: () => {
-                (0, v.R)(!0)
+                (0, S.R)(!0)
               },
               children: "Launch Migration"
             })
@@ -597,7 +595,7 @@ function er() {
       name: U.NW.string(U.t["xu+UDQ"]),
       value: d.Ns.NOTIFICATIONS_DISABLED
     }];
-  return S.Z.getCurrentConfig({
+  return v.Z.getCurrentConfig({
     location: "webSettings"
   }).enableInAppNotifications ? (0, r.jsxs)(I.F, {
     setting: L.s6.NOTIFICATIONS_REACTIONS,

@@ -1,12 +1,12 @@
-/** Chunk was on 93024 **/
+/** Chunk was on 24231 **/
 n.d(t, {
   Z: () => h
 }), n(47120);
 var r = n(192379),
   i = n(749210),
   l = n(287734),
-  o = n(881052),
-  a = n(142497),
+  a = n(881052),
+  o = n(142497),
   c = n(570188),
   s = n(471253),
   d = n(427679),
@@ -31,9 +31,9 @@ function h(e, t) {
         g(!0), m(null), null != n && (i.Z.selectGuild(n), l.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != b ? n = await s.Ef(e, c, d) : (n = await s.HO(e, c, d, null != h && h), x && a.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != b ? n = await s.Ef(e, c, d) : (n = await s.HO(e, c, d, null != h && h), x && o.Kw(u.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
-          m(new o.Hx(e)), g(!1)
+          m(new a.Hx(e)), g(!1)
         }
       }
     }

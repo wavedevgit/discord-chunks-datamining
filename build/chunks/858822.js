@@ -5,8 +5,8 @@ n.d(e, {
 var r = n(200651);
 n(192379);
 var a = n(913527),
-  u = n.n(a),
-  l = n(442837),
+  l = n.n(a),
+  u = n(442837),
   i = n(481060),
   o = n(87051),
   s = n(776568),
@@ -20,7 +20,7 @@ function f(t, e) {
     {
       muted: a,
       muteConfig: f
-    } = (0, l.cj)([d.ZP], () => ({
+    } = (0, u.cj)([d.ZP], () => ({
       muted: null != n ? d.ZP.isMuted(n) : void 0,
       muteConfig: null != n ? d.ZP.getMuteConfig(n) : void 0
     }), [n]),
@@ -41,14 +41,14 @@ function f(t, e) {
     children: (0, s.k)().map(t => {
       let {
         value: a,
-        label: l
+        label: u
       } = t;
       return (0, r.jsx)(i.sNh, {
         id: "".concat(a),
-        label: l,
+        label: u,
         action: () => (function(t) {
           if (null == n) return;
-          let r = t > 0 ? u()().add(t, "second").toISOString() : null;
+          let r = t > 0 ? l()().add(t, "second").toISOString() : null;
           o.Z.updateGuildNotificationSettings(n, {
             muted: !0,
             mute_config: {
