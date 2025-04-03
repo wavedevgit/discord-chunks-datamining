@@ -117,8 +117,9 @@ function T(e) {
     screenMessage: h,
     hideControls: g = !1,
     className: E,
-    innerClassName: v
-  } = e, I = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName"]);
+    innerClassName: v,
+    videoControlsClassName: I
+  } = e, T = O(e, ["children", "idle", "onJumpToChannel", "onHide", "backgroundKey", "onActive", "onForceIdle", "renderBottomLeftControls", "renderBottomRightControls", "screenMessage", "hideControls", "className", "innerClassName", "videoControlsClassName"]);
   return (0, r.jsxs)("div", {
     onMouseMove: c,
     onMouseDown: c,
@@ -135,14 +136,14 @@ function T(e) {
     }), null != h ? (0, r.jsx)(m.Z, y({
       size: "small"
     }, h)) : null, !g && (0, r.jsxs)("div", {
-      className: o()(b.videoControls, "theme-dark"),
+      className: o()(b.videoControls, I, "theme-dark"),
       children: [(0, r.jsx)("div", {
         className: b.topControls,
         children: (0, r.jsx)(S, y({
           idle: n,
           onJumpToChannel: i,
           onHide: a
-        }, I))
+        }, T))
       }), (0, r.jsxs)("div", {
         className: b.bottomControls,
         children: [(0, r.jsx)(u.Z, {

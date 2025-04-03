@@ -44,7 +44,7 @@ function E(e) {
       children: (0, r.jsxs)("div", {
         className: m.content,
         children: [(0, r.jsx)("div", {
-          className: m.artContainer,
+          className: o()(m.artContainer, m[S]),
           children: (0, r.jsx)("div", {
             className: o()(m.art, m[S])
           })
