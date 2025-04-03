@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  l = n(680295),
+var l = n(481060),
+  i = n(680295),
   a = n(687158),
   o = n(899007),
   s = n(648052),
@@ -23,8 +23,8 @@ function b(e) {
     previewText: n,
     previewEmoji: b,
     previewStatus: j,
-    placeHolderText: v,
-    transitionState: x
+    placeHolderText: x,
+    transitionState: v
   } = e, S = (0, a.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
     user: t,
@@ -51,10 +51,10 @@ function b(e) {
         profileType: h.y0.BITE_SIZE,
         previewText: n,
         previewEmoji: b,
-        placeholderText: v,
-        hasEntered: x === i.Dvm.ENTERED
+        placeholderText: x,
+        hasEntered: v === l.Dvm.ENTERED
       })]
-    }), (null == S ? void 0 : S.profileEffectId) != null && (0, r.jsx)(l.Z, {
+    }), (null == S ? void 0 : S.profileEffectId) != null && (0, r.jsx)(i.Z, {
       profileEffectId: S.profileEffectId
     }), (0, r.jsx)("div", {
       className: f.usernameContainer,

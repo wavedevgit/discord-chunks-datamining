@@ -26,8 +26,8 @@ function h(e) {
     onSelectMaxUses: p,
     isGuestInviteCreationToggleEnabled: N,
     inviteFlags: I,
-    onSetInviteFlags: f
-  } = e, j = u.find(e => e.value === a), S = c.find(e => e.value === h);
+    onSetInviteFlags: j
+  } = e, f = u.find(e => e.value === a), S = c.find(e => e.value === h);
   return (0, l.jsx)("div", {
     className: d.settingsContent,
     children: (0, l.jsxs)("form", {
@@ -37,7 +37,7 @@ function h(e) {
         title: o.NW.string(o.t["60qw29"]),
         children: (0, l.jsx)(s.VcW, {
           options: u,
-          value: null !== (t = null == j ? void 0 : j.value) && void 0 !== t ? t : u[0].value,
+          value: null !== (t = null == f ? void 0 : f.value) && void 0 !== t ? t : u[0].value,
           onChange: x
         })
       }), (0, l.jsx)(s.xJW, {
@@ -63,7 +63,7 @@ function h(e) {
         children: (0, l.jsx)(s.j7V, {
           className: d.switch,
           value: (0, r.yE)(I, i.$.IS_GUEST_INVITE),
-          onChange: e => f((0, r.mB)(I, i.$.IS_GUEST_INVITE, e)),
+          onChange: e => j((0, r.mB)(I, i.$.IS_GUEST_INVITE, e)),
           note: o.NW.string(o.t["/FeTKy"]),
           hideBorder: !0,
           children: (0, l.jsx)(s.Text, {

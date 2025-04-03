@@ -35,6 +35,7 @@ let N = {
   brandColorPrimary: null,
   tag: null,
   badge: null,
+  badgeHash: null,
   badgeColorPrimary: null,
   badgeColorSecondary: null
 };

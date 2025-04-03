@@ -3,10 +3,10 @@ n.d(t, {
   Z: () => a
 }), n(627341);
 var r = n(278074),
-  i = n(481060),
-  l = n(695346);
+  l = n(481060),
+  i = n(695346);
 
 function a() {
-  let e = l.co.getSetting();
-  return (0, r.EQ)(e).with(i.Skl.IDLE, () => i.Skl.IDLE).with(i.Skl.DND, () => i.Skl.DND).with(i.Skl.INVISIBLE, () => i.Skl.INVISIBLE).otherwise(() => i.Skl.ONLINE)
+  let e = i.co.getSetting();
+  return (0, r.EQ)(e).with(l.Skl.IDLE, () => l.Skl.IDLE).with(l.Skl.DND, () => l.Skl.DND).with(l.Skl.INVISIBLE, () => l.Skl.INVISIBLE).otherwise(() => l.Skl.ONLINE)
 }

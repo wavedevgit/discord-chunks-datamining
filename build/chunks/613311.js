@@ -465,7 +465,7 @@ class ed extends i.PureComponent {
       null != e && null != t && (0, u.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("7654"), n.e("90081")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("27155")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(i, eu(ec({}, n), {
           guild: t,
           channel: e,

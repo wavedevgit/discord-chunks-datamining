@@ -69,7 +69,8 @@ function f(e) {
     tag: e.tag,
     badge: e.badge,
     badgeColorPrimary: e.badge_color_primary,
-    badgeColorSecondary: e.badge_color_secondary
+    badgeColorSecondary: e.badge_color_secondary,
+    badgeHash: e.badge_hash
   }
 }
 
@@ -116,6 +117,7 @@ function h(e) {
     brandColorPrimary: null,
     tag: null,
     badge: null,
+    badgeHash: null,
     badgeColorPrimary: null,
     badgeColorSecondary: null
   }

@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: c159b900297f5b9d
+  Original File Name: 06ae5986dfb66037
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -145,6 +145,20 @@
     position: relative
 }
 
+.hiddenPlaceholder_dbc4b7 {
+    position: absolute;
+    visibility: hidden;
+    height: 0;
+    width: auto;
+    white-space: nowrap;
+    pointer-events: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    z-index: -1
+}
+
 .emojiButton_dbc4b7.fullOpacity_dbc4b7 {
     opacity: 1
 }
@@ -257,4 +271,4 @@
     opacity: .5
 }
 
-/*# sourceMappingURL=c159b900297f5b9d.css.map*/
+/*# sourceMappingURL=06ae5986dfb66037.css.map*/

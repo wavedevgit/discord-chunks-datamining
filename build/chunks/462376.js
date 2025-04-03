@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 n.d(t, {
   d: () => S,
-  k: () => j
+  k: () => f
 }), n(47120);
 var l = n(200651),
   i = n(192379),
@@ -21,7 +21,7 @@ var l = n(200651),
   N = n(388032),
   I = n(478740);
 
-function f(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -29,7 +29,7 @@ function f(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let j = 44;
+let f = 44;
 class S extends i.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
@@ -99,25 +99,25 @@ class S extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "state", {
+    super(...e), j(this, "state", {
       sending: !1,
       invited: !1,
       hovered: !1
-    }), f(this, "handleMouseEnter", () => {
+    }), j(this, "handleMouseEnter", () => {
       this.setState({
         hovered: !0
       })
-    }), f(this, "handleMouseLeave", () => {
+    }), j(this, "handleMouseLeave", () => {
       this.setState({
         hovered: !1
       })
-    }), f(this, "getSuggestedProps", () => {
+    }), j(this, "getSuggestedProps", () => {
       var e;
       let {
         row: t
       } = this.props;
       return null !== (e = null != t ? h.Z.getSelectedInviteMetadata(t) : null) && void 0 !== e ? e : null
-    }), f(this, "handleClickInvite", () => {
+    }), j(this, "handleClickInvite", () => {
       let {
         user: e,
         channel: t,

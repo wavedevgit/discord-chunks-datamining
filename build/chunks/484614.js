@@ -1,15 +1,15 @@
-/** Chunk was on 72836 **/
+/** Chunk was on 90389 **/
 n.d(t, {
   Z: () => u
 });
-var r, o = n(200651),
+var o, r = n(200651),
   i = n(192379),
   a = n(846519),
   s = n(481060),
-  l = n(572004),
-  _ = n(388032);
+  _ = n(572004),
+  d = n(388032);
 
-function d(e, t, n) {
+function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,7 +17,7 @@ function d(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class c extends(r = i.PureComponent) {
+class c extends(o = i.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -26,29 +26,29 @@ class c extends(r = i.PureComponent) {
     let {
       text: n
     } = this.props, {
-      mode: r
-    } = this.state, i = r === s.kO8.Modes.SUCCESS ? _.NW.string(_.t["t5VZ8/"]) : n;
-    return (0, o.jsx)(s.kO8, (e = function(e) {
+      mode: o
+    } = this.state, i = o === s.kO8.Modes.SUCCESS ? d.NW.string(d.t["t5VZ8/"]) : n;
+    return (0, r.jsx)(s.kO8, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          o = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          d(e, t, n[t])
+        }))), o.forEach(function(t) {
+          l(e, t, n[t])
         })
       }
       return e
     }({}, this.props), t = t = {
       onCopy: this.handleCopy,
-      mode: r,
+      mode: o,
       text: i,
-      supportsCopy: l.wS
+      supportsCopy: _.wS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var o = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, o)
       }
       return n
     })(Object(t)).forEach(function(n) {
@@ -59,9 +59,9 @@ class c extends(r = i.PureComponent) {
     let {
       onCopy: t,
       delay: n = 1e3
-    } = this.props, r = (0, l.JG)(e);
+    } = this.props, o = (0, _.JG)(e);
     this.setState({
-      mode: r ? s.kO8.Modes.SUCCESS : s.kO8.Modes.ERROR
+      mode: o ? s.kO8.Modes.SUCCESS : s.kO8.Modes.ERROR
     }), this._timeout.start(n, () => this.setState({
       mode: s.kO8.Modes.DEFAULT
     })), null == t || t(e)
@@ -77,12 +77,12 @@ class c extends(r = i.PureComponent) {
     }
   }
   constructor(e) {
-    super(e), d(this, "_timeout", void 0), this.state = {
+    super(e), l(this, "_timeout", void 0), this.state = {
       mode: s.kO8.Modes.DEFAULT
     }, this._timeout = new a.V7, this.handleCopy = this.handleCopy.bind(this)
   }
 }
-d(c, "defaultProps", {
+l(c, "defaultProps", {
   delay: 1e3
 });
 let u = c
