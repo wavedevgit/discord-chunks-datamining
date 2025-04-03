@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -9,45 +9,48 @@ var r = n(200651),
   a = n(100527),
   s = n(906732),
   l = n(960870),
-  c = n(848966),
-  u = n(388032);
+  c = n(510659),
+  u = n(848966),
+  d = n(388032);
 
-function d(e) {
+function f(e) {
+  var t;
   let {
-    children: t,
-    user: n,
-    activity: d,
-    entry: f,
-    display: _,
-    onSelect: p,
-    onClose: h,
-    appContext: m
-  } = e, [g, E] = i.useState(!1), {
-    analyticsLocations: b
-  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), y = (0, l.Z)({
-    display: _,
-    user: n,
-    activity: d,
-    entry: f,
-    analyticsLocations: b
-  }), v = (0, c.Z)({
-    entry: f,
-    activity: d,
-    user: n,
-    display: _,
-    onClose: h,
-    onAction: y,
-    isMenuOpen: g,
-    appContext: m
+    children: n,
+    user: f,
+    activity: _,
+    entry: p,
+    display: h,
+    onSelect: m,
+    onClose: g,
+    appContext: E
+  } = e, [b, y] = i.useState(!1), {
+    analyticsLocations: v
+  } = (0, s.ZP)(a.Z.USER_PROFILE_ACTIVITY_CONTEXT_MENU), O = (0, l.Z)({
+    display: h,
+    user: f,
+    activity: _,
+    entry: p,
+    analyticsLocations: v
+  }), I = (0, c.yi)(), S = (0, u.Z)({
+    entry: p,
+    activity: _,
+    user: f,
+    display: h,
+    onClose: g,
+    onAction: O,
+    isMenuOpen: b,
+    appContext: E
   });
-  return 0 === v.length || n.bot ? null : (0, r.jsx)(o.yRy, {
+  return 0 === S.length || f.bot ? null : (0, r.jsx)(o.yRy, {
+    targetElementRef: null != (t = null == I ? void 0 : I.interactionPopoutTargetRef) ? t : void 0,
     align: "top",
     position: "right",
     disablePointerEvents: !1,
     onRequestOpen: () => {
-      y({
+      O({
         action: "OPEN_MENU"
-      }), E(!0)
+      }), y(!0)
     },
     renderPopout: e => {
       let {
@@ -58,16 +61,16 @@ function d(e) {
         children: (0, r.jsx)(o.v2r, {
           navId: "content-inventory-context",
           onClose: () => {
-            t(), E(!1)
+            t(), y(!1)
           },
-          "aria-label": u.NW.string(u.t.PlAQz8),
-          onSelect: p,
+          "aria-label": d.NW.string(d.t.PlAQz8),
+          onSelect: m,
           children: (0, r.jsx)(o.kSQ, {
-            children: v
+            children: S
           })
         })
       })
     },
-    children: t
+    children: n
   })
 }

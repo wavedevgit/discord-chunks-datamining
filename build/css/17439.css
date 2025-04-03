@@ -1,6 +1,6 @@
 /**
   Module ID: 17439
-  Original File Name: cde4762ef9c1e357
+  Original File Name: 5d4489cb5b4565df
 **/
 .footer__6be55 {
     display: flex;
@@ -76,15 +76,17 @@
 }
 
 .settingsButton__6be55 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    gap: 8px;
     border-radius: 8px;
-    background-color: transparent
+    width: 32px;
+    height: 32px
 }
 
 .settingsButton__6be55:hover {
-    background-color: var(--bg-mod-subtle);
-    opacity: .08
+    background-color: var(--bg-mod-subtle)
 }
 
 .advancedOptions__6be55 {
@@ -98,7 +100,8 @@
 }
 
 .advancedOption__6be55 {
-    height: 52px
+    height: 52px;
+    cursor: pointer
 }
 
 .advancedOption__6be55:hover {
@@ -129,6 +132,10 @@
     align-items: center;
     padding: 0 var(--space-sm) 0 var(--space-lg);
     cursor: pointer
+}
+
+.clickableAdvancedOption__6be55 * {
+    pointer-events: none
 }
 
 .advancedOptionContent__6be55 {
@@ -185,7 +192,8 @@
 }
 
 .recipientList__28554 {
-    padding: var(--space-sm)
+    scrollbar-gutter: stable both-edges;
+    padding: var(--space-sm) calc(var(--space-sm) - 8px)
 }
 
 .recipientRow__28554 {
@@ -554,4 +562,4 @@
     background: var(--border-subtle)
 }
 
-/*# sourceMappingURL=cde4762ef9c1e357.css.map*/
+/*# sourceMappingURL=5d4489cb5b4565df.css.map*/

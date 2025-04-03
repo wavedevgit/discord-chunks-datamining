@@ -72,6 +72,7 @@ function u(e) {
     },
     ref: u,
     children: [t, (0, r.jsx)(o.ZP, s({
+      targetRef: u,
       isVisible: d,
       isExpandable: !1
     }, c))]

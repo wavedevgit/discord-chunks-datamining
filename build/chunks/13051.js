@@ -19,8 +19,8 @@ var r = n(200651),
   h = n(598077),
   x = n(430824),
   j = n(246946),
-  N = n(259580),
-  O = n(531087),
+  O = n(259580),
+  N = n(531087),
   v = n(768581),
   y = n(709054),
   _ = n(486199),
@@ -179,7 +179,7 @@ function w(e) {
       }), l.enabled ? (0, r.jsx)(b.Z.Child, {
         shrink: 0,
         grow: 0,
-        children: (0, r.jsx)(N.Z, {
+        children: (0, r.jsx)(O.Z, {
           className: S.expandIcon,
           expanded: w && !A,
           "aria-hidden": !0
@@ -192,7 +192,7 @@ function w(e) {
           color: u.zxk.Colors.PRIMARY,
           onClick: L,
           disabled: A,
-          children: A ? (0, r.jsx)(O.Z, {
+          children: A ? (0, r.jsx)(N.Z, {
             width: 24,
             height: 24
           }) : (0, r.jsx)(r.Fragment, {
@@ -252,7 +252,7 @@ function w(e) {
               color: u.zxk.Colors.PRIMARY,
               disabled: t.syncing || t.revoked,
               onClick: a,
-              children: t.syncing ? (0, r.jsx)(O.Z, {
+              children: t.syncing ? (0, r.jsx)(N.Z, {
                 width: 24,
                 height: 24
               }) : (0, r.jsx)(r.Fragment, {

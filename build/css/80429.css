@@ -1,6 +1,6 @@
 /**
   Module ID: 80429
-  Original File Name: 0e8858051fdc528f
+  Original File Name: fa88a85dbea961a6
 **/
 .container__1ce5d {
     position: relative
@@ -88,15 +88,17 @@
 }
 
 .settingsButton__6be55 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    gap: 8px;
     border-radius: 8px;
-    background-color: transparent
+    width: 32px;
+    height: 32px
 }
 
 .settingsButton__6be55:hover {
-    background-color: var(--bg-mod-subtle);
-    opacity: .08
+    background-color: var(--bg-mod-subtle)
 }
 
 .advancedOptions__6be55 {
@@ -110,7 +112,8 @@
 }
 
 .advancedOption__6be55 {
-    height: 52px
+    height: 52px;
+    cursor: pointer
 }
 
 .advancedOption__6be55:hover {
@@ -141,6 +144,10 @@
     align-items: center;
     padding: 0 var(--space-sm) 0 var(--space-lg);
     cursor: pointer
+}
+
+.clickableAdvancedOption__6be55 * {
+    pointer-events: none
 }
 
 .advancedOptionContent__6be55 {
@@ -197,7 +204,8 @@
 }
 
 .recipientList__28554 {
-    padding: var(--space-sm)
+    scrollbar-gutter: stable both-edges;
+    padding: var(--space-sm) calc(var(--space-sm) - 8px)
 }
 
 .recipientRow__28554 {
@@ -590,4 +598,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=0e8858051fdc528f.css.map*/
+/*# sourceMappingURL=fa88a85dbea961a6.css.map*/

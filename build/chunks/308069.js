@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 n.d(t, {
   Z: () => j
 });
@@ -39,7 +39,7 @@ let j = e => {
       ctaContent: c.jZ.OPEN_GAME_LINK,
       impressionId: O
     })
-  }, [O, t]), P = _ && C, N = (0, r.jsx)(l.P3F, {
+  }, [O, t]), P = _ && C, E = (0, r.jsx)(l.P3F, {
     onClick: S,
     className: a()(b.clickable, {
       [b.logo]: P
@@ -73,7 +73,7 @@ let j = e => {
       quest: t,
       expansionSpring: n,
       isFullyExpanded: P,
-      partnerBranding: N,
+      partnerBranding: E,
       useReducedMotion: y
     }), (0, r.jsxs)(i.animated.div, {
       className: b.promotedBadgeWrapper,

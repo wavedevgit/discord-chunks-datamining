@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 n.d(t, {
   Z: () => P
 });
@@ -56,7 +56,7 @@ function S(e) {
     afterRequest: d.stopAnimation
   }), {
     header: P,
-    renderBody: N
+    renderBody: E
   } = o.useMemo(() => {
     let e = y.length > 0,
       n = t.config.messages.gameTitle;
@@ -126,7 +126,7 @@ function S(e) {
       className: a()({
         [O.opacity_50]: _
       }),
-      children: [N(), 0 === y.length ? null : (0, r.jsx)(w, {
+      children: [E(), 0 === y.length ? null : (0, r.jsx)(w, {
         children: l
       })]
     })]

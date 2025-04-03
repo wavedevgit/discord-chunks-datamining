@@ -150,7 +150,7 @@ let S = e => {
     open: t
   } = e, n = t ? c.u04 : c.CJ0;
   return (0, r.jsx)(n, {
-    size: "refresh_sm",
+    size: "xs",
     color: "currentColor"
   })
 };
@@ -248,7 +248,7 @@ function N(e) {
         className: _.headerChildren,
         children: p
       })]
-    }), (0, r.jsx)(c.ua7, {
+    }), o.id !== b._ && (0, r.jsx)(c.ua7, {
       text: y.NW.string(y.t.Sd8Ix8),
       position: "bottom",
       children: e => (0, r.jsx)(c.zxk, O(v({

@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 e.exports = {
   wrapper: "wrapper__22c64",
   background: "background__22c64",

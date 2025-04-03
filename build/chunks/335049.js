@@ -19,8 +19,8 @@ var r = n(200651),
   h = n(518738),
   x = n(592125),
   j = n(271383),
-  N = n(430824),
-  O = n(246946),
+  O = n(430824),
+  N = n(246946),
   v = n(594174),
   y = n(51144),
   _ = n(981631),
@@ -164,7 +164,7 @@ function T(e) {
     id: a,
     isLocked: s,
     lockTooltipText: m
-  } = e, b = (0, d.e7)([N.Z], () => N.Z.getRole(l.id, a)), g = (0, h.p9)({
+  } = e, b = (0, d.e7)([O.Z], () => O.Z.getRole(l.id, a)), g = (0, h.p9)({
     guildId: l.id,
     roleId: a,
     size: 24
@@ -211,7 +211,7 @@ function Z(e) {
   } = e, a = (0, d.e7)([v.default], () => v.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? void 0 : e.nick
-  }, [t.id, n]), c = (0, d.e7)([O.Z], () => O.Z.hidePersonalInformation);
+  }, [t.id, n]), c = (0, d.e7)([N.Z], () => N.Z.hidePersonalInformation);
   return null == a ? null : (0, r.jsxs)("div", {
     onContextMenu: o,
     className: I.identifier,

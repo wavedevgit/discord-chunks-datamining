@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 e.exports = {
   heading: "heading__4169d",
   subheading: "subheading__4169d",

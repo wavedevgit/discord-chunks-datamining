@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 n.d(t, {
   default: () => w,
   y: () => P
@@ -51,19 +51,19 @@ function w(e) {
     errorHints: s,
     transitionState: w,
     onClose: P
-  } = e, N = (0, g.sf)(n);
-  null == N && P();
-  let [E, T] = (0, o.useState)(s), A = (0, g.KX)(), B = (0, m.O5)(), R = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
+  } = e, E = (0, g.sf)(n);
+  null == E && P();
+  let [N, T] = (0, o.useState)(s), A = (0, g.KX)(), R = (0, m.O5)(), B = null == (t = (0, f.WD)()) ? void 0 : t.getId(), k = (0, i.e7)([d.Z], () => d.Z.useReducedMotion), q = (0, j.g2)({
     useReducedMotion: k,
     className: _.colorTransition
-  }), D = E.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(N), W = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(W) ? v.BRd.DARK : v.BRd.LIGHT, {
+  }), D = N.filter(e => ["xbox", "playstation"].includes(e.connected_account_type)), I = (0, h.Bz)(E), W = (0, i.e7)([p.Z], () => p.Z.getState().theme), M = (0, l.wj)(W) ? v.BRd.DARK : v.BRd.LIGHT, {
     startConsoleQuest: L,
     startingConsoleQuest: Z
   } = (0, g.GI)({
-    questId: N.id,
+    questId: E.id,
     beforeRequest: () => {
-      q.startAnimation(), B({
-        questId: N.id,
+      q.startAnimation(), R({
+        questId: E.id,
         questContent: x.jn.CONNECTIONS_MODAL,
         questContentCTA: m.jZ.DEFIBRILLATOR
       })
@@ -136,12 +136,12 @@ function w(e) {
           text: y.NW.string(y.t.XF4wuL),
           errors: I ? void 0 : D.map(e => e.message),
           gameTile: I ? (0, r.jsx)(c.ua7, {
-            "aria-label": N.config.messages.gameTitle,
+            "aria-label": E.config.messages.gameTitle,
             text: () => (0, r.jsxs)("div", {
               className: _.tooltip,
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-sm/medium",
-                children: N.config.messages.gameTitle
+                children: E.config.messages.gameTitle
               }), (0, r.jsx)(c.Text, {
                 variant: "text-xs/normal",
                 color: "text-muted",
@@ -152,8 +152,8 @@ function w(e) {
               var t, n;
               return (0, r.jsx)("img", (t = O({}, e), n = n = {
                 className: _.gameTile,
-                alt: N.config.messages.gameTitle,
-                src: (0, b.fh)(N, b.eC.GAME_TILE, M).url
+                alt: E.config.messages.gameTitle,
+                src: (0, b.fh)(E, b.eC.GAME_TILE, M).url
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -180,11 +180,11 @@ function w(e) {
         color: c.Ttl.PRIMARY,
         onClick: () => {
           P(), (0, h.V$)({
-            quest: N
+            quest: E
           }, {
             content: x.jn.CONNECTIONS_MODAL,
             ctaContent: m.jZ.VIEW_CONSOLE_CONNECTIONS_LINK,
-            impressionId: R
+            impressionId: B
           })
         },
         children: y.NW.string(y.t["qiS+xs"])

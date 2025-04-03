@@ -335,7 +335,7 @@ function x(e) {
     case 2:
       return p.NW.string(p.t.umdNio);
     case 3:
-      return t.config.features.includes(f.S7.START_QUEST_CTA) ? p.NW.string(p.t.E80Bdn) : p.NW.string(p.t.l7E81t)
+      return t.config.features.includes(f.S7.START_QUEST_CTA) ? p.NW.string(p.t.ToGcxM) : p.NW.string(p.t.l7E81t)
   }
 }
 

@@ -19,8 +19,8 @@ var r = n(200651),
   h = n(486199),
   x = n(929507),
   j = n(981631),
-  N = n(388032),
-  O = n(694095);
+  O = n(388032),
+  N = n(694095);
 
 function v(e) {
   var t, n, l;
@@ -51,7 +51,7 @@ function v(e) {
       color: "currentColor",
       width: 10,
       height: 10,
-      className: O.caret
+      className: N.caret
     }) : null]
   }) : (0, r.jsx)(c.zxk, {
     size: c.zxk.Sizes.SMALL,
@@ -100,7 +100,7 @@ function v(e) {
           e.stopPropagation(), U(!0), x.Z.dismissOverviewTooltip(k, P.integration)
         },
         children: (0, r.jsx)(b.ZP, {
-          content: N.NW.string(N.t.TyMJwM),
+          content: O.NW.string(O.t.TyMJwM),
           onClick: () => {}
         })
       }),
@@ -143,30 +143,30 @@ function v(e) {
               } = e;
             return null != o.bot && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
-              text: new g.Z(o.bot).isVerifiedBot() ? N.NW.string(N.t.xxcTGx) : N.NW.string(N.t.AOdOYm),
-              className: O.feature,
+              text: new g.Z(o.bot).isVerifiedBot() ? O.NW.string(O.t.xxcTGx) : O.NW.string(O.t.AOdOYm),
+              className: N.feature,
               children: (0, r.jsx)(c.wGt, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: N.featureIcon
               })
             }, "bot")), d.length > 0 && l.push((0, r.jsx)(c.DY3, {
               forceOpen: t,
-              text: N.NW.formatToPlainString(N.t["6HqDfX"], {
+              text: O.NW.formatToPlainString(O.t["6HqDfX"], {
                 count: d.length
               }),
-              className: O.feature,
+              className: N.feature,
               children: (0, r.jsx)(c.tYf, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: N.featureIcon
               })
             }, "webhooks")), (null == s || null == (i = s.scopes) ? void 0 : i.includes(a.x.APPLICATIONS_COMMANDS)) === !0 && n && l.push((0, r.jsx)("div", {
-              className: O.feature,
+              className: N.feature,
               children: (0, r.jsx)(c.SsZ, {
                 size: "md",
                 color: "currentColor",
-                className: O.featureIcon
+                className: N.featureIcon
               })
             }, "commands")), l
           }(P, L, K), G, R]
@@ -181,12 +181,12 @@ function v(e) {
     onBlur: () => M(!1),
     children: (0, r.jsx)(c.Zbd, {
       editable: !0,
-      className: o()(O.card, O.clickable),
+      className: o()(N.card, N.clickable),
       children: q
     })
   }) : (0, r.jsx)(c.Zbd, {
     editable: !0,
-    className: O.card,
+    className: N.card,
     children: q
   })
 }

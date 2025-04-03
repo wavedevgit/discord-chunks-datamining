@@ -1,4 +1,4 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 e.exports = {
   contentCollapsed: "contentCollapsed__5f897",
   contentCollapsedWrapper: "contentCollapsedWrapper__5f897",

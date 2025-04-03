@@ -1,6 +1,6 @@
-/** Chunk was on 48923 **/
+/** Chunk was on 41851 **/
 n.d(t, {
-  Z: () => z,
+  Z: () => F,
   b: () => L
 }), n(47120), n(627341);
 var r = n(200651),
@@ -28,12 +28,12 @@ var r = n(200651),
   w = n(478977),
   S = n(456799),
   P = n(210851),
-  N = n(602683),
-  E = n(916028),
+  E = n(602683),
+  N = n(916028),
   T = n(749912),
   A = n(815183),
-  B = n(899457),
-  R = n(409667);
+  R = n(899457),
+  B = n(409667);
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -177,12 +177,12 @@ let V = "1193992107035983872",
   };
 
 function U() {
-  var e, t, s, d, u, k, L, V, U, H, z, F, X, K;
+  var e, t, s, d, u, k, L, V, U, H, F, z, X, K;
   let [Y, G] = o.useState(Q), J = o.useCallback(e => {
     G(D(q({}, e), {
       preview: !0
     }))
-  }, []), [$, ee] = o.useState(B.a.UNENROLLED), [et, en] = o.useState(!1), [er, eo] = o.useState(!1), [es, ea] = o.useState(null), ei = (K = Y.config, (0, i.EQ)(K).with({
+  }, []), [$, ee] = o.useState(R.a.UNENROLLED), [et, en] = o.useState(!1), [er, eo] = o.useState(!1), [es, ea] = o.useState(null), ei = (K = Y.config, (0, i.EQ)(K).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -290,30 +290,30 @@ function U() {
   return a()(!1 !== Y.preview && null != Y.preview, "Preview config must have property preview: true"), (0, r.jsxs)("div", {
     children: [(0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
-      className: R.heading,
+      className: B.heading,
       children: "Quest Preview Tool"
     }), (0, r.jsx)("div", {
-      className: R.fields,
-      children: (0, r.jsx)(E.Z, {
+      className: B.fields,
+      children: (0, r.jsx)(N.Z, {
         onSelect: function(e) {
           ea(e), null != e && (ee(function(e) {
-            if (null == e.userStatus) return B.a.UNENROLLED;
-            if (null != e.userStatus.claimedAt) return B.a.CLAIMED;
-            if (null != e.userStatus.completedAt) return B.a.COMPLETED_100;
+            if (null == e.userStatus) return R.a.UNENROLLED;
+            if (null != e.userStatus.claimedAt) return R.a.CLAIMED;
+            if (null != e.userStatus.completedAt) return R.a.COMPLETED_100;
             let t = (0, g.il)(e),
               n = t.progressSeconds,
               r = t.targetSeconds;
-            return n / r >= 1 ? B.a.COMPLETED_100 : n / r >= .75 ? B.a.COMPLETED_75 : n / r >= .5 ? B.a.COMPLETED_50 : n / r >= .25 ? B.a.COMPLETED_25 : B.a.ENROLLED
+            return n / r >= 1 ? R.a.COMPLETED_100 : n / r >= .75 ? R.a.COMPLETED_75 : n / r >= .5 ? R.a.COMPLETED_50 : n / r >= .25 ? R.a.COMPLETED_25 : R.a.ENROLLED
           }(e)), J(e))
         },
         quest: es
       })
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: R.subheading,
+      className: B.subheading,
       children: "Task Config"
     }), (0, r.jsx)("div", {
-      className: R.fields,
+      className: B.fields,
       children: (0, r.jsx)(T.Z, {
         taskDuration: eg,
         taskConfig: Y.config.taskConfig,
@@ -327,37 +327,37 @@ function U() {
       })
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: R.subheading,
+      className: B.subheading,
       children: "Messages"
     }), (0, r.jsxs)("div", {
-      className: R.fields,
-      children: [(0, r.jsx)(N.Z, {
+      className: B.fields,
+      children: [(0, r.jsx)(E.Z, {
         title: "Quest Name",
         assetKey: "questName",
         onMessageChange: ed,
         initialValue: Y.config.messages.questName
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(E.Z, {
         title: "Game Title",
         assetKey: "gameTitle",
         onMessageChange: ed,
         initialValue: Y.config.messages.gameTitle
-      }), (0, r.jsx)(N.Z, {
+      }), (0, r.jsx)(E.Z, {
         title: "Game Publisher",
         assetKey: "gamePublisher",
         onMessageChange: ed,
         initialValue: Y.config.messages.gamePublisher
       }), ex && (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(E.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
           onMessageChange: eu,
           initialValue: null == (e = Y.config.videoMetadata) ? void 0 : e.messages.videoTitle
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(E.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
           onMessageChange: eu,
           initialValue: null == (t = Y.config.videoMetadata) ? void 0 : t.messages.videoEndCtaTitle
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(E.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
           onMessageChange: eu,
@@ -366,10 +366,10 @@ function U() {
       })]
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: R.subheading,
+      className: B.subheading,
       children: "Assets"
     }), (0, r.jsxs)("div", {
-      className: R.fields,
+      className: B.fields,
       children: [(0, r.jsx)(P.Z, {
         title: "Hero",
         assetKey: "hero",
@@ -381,7 +381,7 @@ function U() {
         assetKey: "heroVideo",
         onFileChange: el,
         filters: M,
-        initialValue: null != (F = Y.config.assets.heroVideo) ? F : void 0
+        initialValue: null != (z = Y.config.assets.heroVideo) ? z : void 0
       }), (0, r.jsx)(P.Z, {
         title: "Quest Bar Hero",
         assetKey: "questBarHero",
@@ -442,16 +442,16 @@ function U() {
     }), ei.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.X6q, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: B.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
-        children: [(0, r.jsx)(N.Z, {
+        className: B.fields,
+        children: [(0, r.jsx)(E.Z, {
           title: "Name",
           assetKey: "name",
           onMessageChange: (e, n) => ep(e, n, t),
           initialValue: e.messages.name
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(E.Z, {
           title: "Name With Article",
           assetKey: "nameWithArticle",
           onMessageChange: (e, n) => ep(e, n, t),
@@ -490,12 +490,12 @@ function U() {
       })]
     }, t)), (0, r.jsx)(p.X6q, {
       variant: "heading-md/semibold",
-      className: R.subheading,
+      className: B.subheading,
       children: "Colors & Quest States"
     }), (0, r.jsxs)("div", {
-      className: R.fields,
+      className: B.fields,
       children: [(0, r.jsxs)("div", {
-        className: R.fields,
+        className: B.fields,
         style: {
           marginBottom: 0
         },
@@ -511,24 +511,24 @@ function U() {
           value: Y.config.colors.secondary
         })]
       }), (0, r.jsx)("div", {
-        className: R.fields,
+        className: B.fields,
         children: (0, r.jsx)(A.Z, {})
-      }), (0, r.jsx)(B.Z, {
+      }), (0, r.jsx)(R.Z, {
         onChange: function(e) {
           switch (ee(e), e) {
-            case B.a.UNENROLLED:
+            case R.a.UNENROLLED:
               J(D(q({}, Y), {
                 userStatus: null
               }));
               break;
-            case B.a.ENROLLED:
+            case R.a.ENROLLED:
               J(D(q({}, Y), {
                 userStatus: Z({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
-            case B.a.COMPLETED_25:
+            case R.a.COMPLETED_25:
               J(D(q({}, Y), {
                 userStatus: Z({
                   enrolledAt: new Date().toISOString(),
@@ -536,7 +536,7 @@ function U() {
                 })
               }));
               break;
-            case B.a.COMPLETED_50:
+            case R.a.COMPLETED_50:
               J(D(q({}, Y), {
                 userStatus: Z({
                   enrolledAt: new Date().toISOString(),
@@ -544,7 +544,7 @@ function U() {
                 })
               }));
               break;
-            case B.a.COMPLETED_75:
+            case R.a.COMPLETED_75:
               J(D(q({}, Y), {
                 userStatus: Z({
                   enrolledAt: new Date().toISOString(),
@@ -552,7 +552,7 @@ function U() {
                 })
               }));
               break;
-            case B.a.COMPLETED_100:
+            case R.a.COMPLETED_100:
               J(D(q({}, Y), {
                 userStatus: Z({
                   completedAt: new Date().toISOString(),
@@ -561,7 +561,7 @@ function U() {
                 })
               }));
               break;
-            case B.a.CLAIMED:
+            case R.a.CLAIMED:
               J(D(q({}, Y), {
                 userStatus: Z({
                   claimedAt: new Date().toISOString(),
@@ -576,22 +576,22 @@ function U() {
       })]
     }), (0, r.jsx)(p.X6q, {
       variant: "heading-lg/bold",
-      className: R.heading,
+      className: B.heading,
       children: "Component Previews"
     }), (0, r.jsxs)("div", {
-      className: R.componentPreviews,
+      className: B.componentPreviews,
       children: [(0, r.jsxs)(S.Z, {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Quest Bar"
         }), (0, r.jsxs)("div", {
-          className: R.questBarPreviewWrapper,
+          className: B.questBarPreviewWrapper,
           children: [(null == (H = Y.userStatus) ? void 0 : H.claimedAt) != null && (0, r.jsx)(p.Text, {
             color: "text-secondary",
             variant: "text-sm/normal",
             children: "The Quest Bar is hidden when the user has claimed the reward."
           }), (0, r.jsx)("div", {
-            className: R.questBarPreview,
+            className: B.questBarPreview,
             children: (0, r.jsx)(j.p, {
               isPreview: !0,
               source: "preview",
@@ -614,7 +614,7 @@ function U() {
           questId: "0",
           children: (0, r.jsx)(b.Z, {
             quest: Y,
-            className: R.questTile,
+            className: B.questTile,
             questContent: f.jn.QUEST_HOME_DESKTOP,
             contentPosition: 0,
             rowIndex: 0
@@ -624,18 +624,18 @@ function U() {
         withBorder: !0,
         children: [(0, r.jsx)(p.vwX, {
           children: "Channel Call Header"
-        }), (null == (z = Y.userStatus) ? void 0 : z.claimedAt) != null && (0, r.jsx)(p.Text, {
+        }), (null == (F = Y.userStatus) ? void 0 : F.claimedAt) != null && (0, r.jsx)(p.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
           children: "The Quest Channel Call Header is hidden when the user has claimed the reward."
         }), (0, r.jsx)("div", {
-          className: R.questBarPreviewWrapper,
+          className: B.questBarPreviewWrapper,
           children: (0, r.jsx)(j.p, {
             isPreview: !0,
             source: "preview",
             questId: "0",
             children: (0, r.jsx)("div", {
-              className: R.questChannelCallHeaderPreview,
+              className: B.questChannelCallHeaderPreview,
               children: (0, r.jsx)(y.Z, {
                 channelId: "123",
                 previewQuest: Y,
@@ -645,7 +645,7 @@ function U() {
           })
         })]
       }), (0, r.jsx)("div", {
-        className: R.toggleSwitch,
+        className: B.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
             value: et,
@@ -667,7 +667,7 @@ function U() {
           location: f.jn.QUESTS_EMBED
         }, Y.id)]
       }), (0, r.jsx)("div", {
-        className: R.toggleSwitch,
+        className: B.toggleSwitch,
         children: (0, r.jsx)(p.xJW, {
           children: (0, r.jsx)(p.j7V, {
             value: er,
@@ -717,9 +717,9 @@ class H extends o.Component {
       renderKey: t
     } = this.state;
     return null != e ? (0, r.jsxs)("div", {
-      className: R.errorBoundary,
+      className: B.errorBoundary,
       children: [(0, r.jsx)(p.P4T, {
-        className: R.errorBoundaryIcon
+        className: B.errorBoundaryIcon
       }), (0, r.jsx)(p.X6q, {
         variant: "heading-lg/semibold",
         children: "Something broke in the Quest preview tool :("
@@ -728,9 +728,9 @@ class H extends o.Component {
         onClick: this.handleResetState,
         children: "Reset"
       }), null != e.message && (0, r.jsx)(p.Zbd, {
-        className: R.errorMessageWrapper,
+        className: B.errorMessageWrapper,
         children: (0, r.jsx)("code", {
-          className: R.errorMessage,
+          className: B.errorMessage,
           children: e.message
         })
       })]
@@ -748,4 +748,4 @@ class H extends o.Component {
     })
   }
 }
-let z = H
+let F = H

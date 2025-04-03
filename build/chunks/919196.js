@@ -19,8 +19,8 @@ var r = n(200651),
   h = n(366598),
   x = n(125657),
   j = n(725875),
-  N = n(981631),
-  O = n(388032),
+  O = n(981631),
+  N = n(388032),
   v = n(704526);
 
 function y(e) {
@@ -64,22 +64,22 @@ function _(e) {
       return i
     }(e, ["application", "guild", "integration"]);
   return (0, r.jsx)(o.ConfirmModal, (t = y({}, d), n = n = {
-    header: O.NW.formatToPlainString(O.t["rL9d//"], {
+    header: N.NW.formatToPlainString(N.t["rL9d//"], {
       applicationName: i.name
     }),
-    confirmText: O.NW.string(O.t.ebGf4u),
-    cancelText: O.NW.string(O.t["ETE/oK"]),
+    confirmText: N.NW.string(N.t.ebGf4u),
+    cancelText: N.NW.string(N.t["ETE/oK"]),
     onConfirm: () => {
       c.Z.disableIntegration(l.id, s.id).catch(() => {
         a.Z.show({
-          title: O.NW.string(O.t.wYqMmJ),
-          body: O.NW.string(O.t.A4Mnsr)
+          title: N.NW.string(N.t.wYqMmJ),
+          body: N.NW.string(N.t.A4Mnsr)
         })
       })
     },
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: O.NW.format(O.t.FGE8yc, {
+      children: N.NW.format(N.t.FGE8yc, {
         applicationName: i.name
       })
     })
@@ -108,7 +108,7 @@ function C(e) {
     application: E,
     integration: P,
     webhooks: w
-  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(N.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(N.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), W = (0, l.e7)([p.Z], () => p.Z.can(N.Plq.MANAGE_WEBHOOKS, n), [n]), k = i.useCallback(() => {
+  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(O.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(O.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), W = (0, l.e7)([p.Z], () => p.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), k = i.useCallback(() => {
     S() && (0, o.h7j)(e => (0, r.jsx)(_, y({
       guild: n,
       application: E,
@@ -117,13 +117,13 @@ function C(e) {
   }, [E, S, n, P]), A = i.useMemo(() => {
     let e = [{
       icon: o.T39,
-      text: O.NW.formatToPlainString(O.t.gcdJ8P, {
+      text: N.NW.formatToPlainString(N.t.gcdJ8P, {
         timestamp: b.default.extractTimestamp(P.id)
       })
     }];
     return null != P.user && e.push({
       icon: o.tBG,
-      text: O.NW.formatToPlainString(O.t.qE7oqq, {
+      text: N.NW.formatToPlainString(N.t.qE7oqq, {
         user: g.ZP.getUserTag(P.user)
       })
     }), e
@@ -136,7 +136,7 @@ function C(e) {
     children: (0, r.jsx)(o.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: O.NW.string(O.t.pfLnzc)
+      children: N.NW.string(N.t.pfLnzc)
     })
   }), [E.bot, a, n]);
   return (0, r.jsxs)(r.Fragment, {
@@ -161,7 +161,7 @@ function C(e) {
           size: "xs",
           color: "currentColor"
         }),
-        title: O.NW.string(O.t.AOdOYm)
+        title: N.NW.string(N.t.AOdOYm)
       }), D]
     }) : null, (0, r.jsxs)("div", {
       className: v.section,
@@ -170,7 +170,7 @@ function C(e) {
           size: "md",
           color: "currentColor"
         }),
-        title: O.NW.string(O.t["t9ZX/P"])
+        title: N.NW.string(N.t["t9ZX/P"])
       }), w.length > 0 ? (0, r.jsx)(j.Z, {
         webhooks: w,
         editedWebhook: C,
@@ -183,7 +183,7 @@ function C(e) {
         children: (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: W ? O.NW.string(O.t.ahPd2d) : O.NW.string(O.t.axqYMj)
+          children: W ? N.NW.string(N.t.ahPd2d) : N.NW.string(N.t.axqYMj)
         })
       })]
     }), (0, r.jsx)(o.$i$, {
@@ -195,7 +195,7 @@ function C(e) {
       children: [(0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: Z ? O.NW.string(O.t.hdneLy) : O.NW.string(O.t.xRCMq6)
+        children: Z ? N.NW.string(N.t.hdneLy) : N.NW.string(N.t.xRCMq6)
       }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
         shrink: 0,
@@ -205,7 +205,7 @@ function C(e) {
           look: o.zxk.Looks.FILLED,
           disabled: !Z,
           onClick: k,
-          children: O.NW.string(O.t.ebGf4u)
+          children: N.NW.string(N.t.ebGf4u)
         })
       })]
     })]

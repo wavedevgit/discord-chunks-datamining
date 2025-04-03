@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  DH: () => G,
-  Ks: () => U,
-  Ws: () => F,
+  DH: () => B,
+  Ks: () => G,
+  Ws: () => V,
   g2: () => k,
   hf: () => x,
   k3: () => j,
-  qN: () => B,
+  qN: () => F,
   tP: () => M
 }), n(47120);
 var r = n(200651),
@@ -161,6 +161,16 @@ let k = e => {
   };
 
 function U(e) {
+  return e.config.features.includes(N.S7.START_QUEST_CTA) ? {
+    text: R.NW.string(R.t.ToGcxM),
+    questContentCTA: h.jZ.START_QUEST
+  } : {
+    text: R.NW.string(R.t.l7E81t),
+    questContentCTA: h.jZ.ACCEPT_QUEST
+  }
+}
+
+function G(e) {
   var t;
   let {
     quest: n,
@@ -194,7 +204,10 @@ function U(e) {
       case E.OH.UNACCEPTED:
         let e = R.NW.string(R.t.kUQLMD),
           t = h.jZ.ACCEPT_QUEST;
-        return p && (e = R.NW.string(R.t.umdNio), t = h.jZ.START_QUEST), b && (n.config.features.includes(N.S7.START_QUEST_CTA) ? (e = R.NW.string(R.t.E80Bdn), t = h.jZ.START_QUEST) : (e = R.NW.string(R.t.l7E81t), t = h.jZ.ACCEPT_QUEST)), {
+        return p && (e = R.NW.string(R.t.umdNio), t = h.jZ.START_QUEST), b && ({
+          text: e,
+          questContentCTA: t
+        } = U(n)), {
           text: e,
           tooltipText: e,
           onClick: () => {
@@ -226,6 +239,18 @@ function U(e) {
           tooltipText: R.NW.string(R.t.hsbwjo),
           onClick: () => (0, T.openVideoQuestModal)(n)
         };
+        if (b && n.config.features.includes(N.S7.START_QUEST_CTA)) {
+          let {
+            text: e
+          } = U(n);
+          return {
+            text: e,
+            tooltipText: R.NW.string(R.t.hsbwjo),
+            onClick: () => {
+              n.config.features.includes(N.S7.START_QUEST_CTA) && (0, f.uL)(A.Z5c.ACTIVITY_DETAILS(n.config.application.id))
+            }
+          }
+        }
         return {
           text: R.NW.string(R.t.cfY4PD), tooltipText: R.NW.string(R.t.hsbwjo), onClick: null
         };
@@ -261,14 +286,14 @@ function U(e) {
   }, [r, p, O, _, y, o, n, a, s, u, D, I, S, P, b])
 }
 
-function G() {
+function B() {
   return (0, a.e7)([b.Z], () => {
     var e, t;
     return null != (t = null != (e = b.Z.questDeliveryOverride) ? e : (0, v.PM)(b.Z.quests, b.Z.questToDeliverForPlacement, y.Ok.DESKTOP_ACCOUNT_PANEL_AREA)) ? t : null
   })
 }
 
-function B(e) {
+function F(e) {
   var t;
   let {
     location: n,
@@ -288,12 +313,12 @@ function B(e) {
   return i && !d && !u && !o
 }
 
-function F(e) {
+function V(e) {
   let {
     location: t
-  } = e, n = B({
+  } = e, n = F({
     location: t,
-    quest: G()
+    quest: B()
   });
   return 0 !== (0, a.e7)([b.Z], () => b.Z.lastFetchedCurrentQuests) && !n
 }

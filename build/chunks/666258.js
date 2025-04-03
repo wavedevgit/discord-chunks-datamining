@@ -55,7 +55,7 @@ function T(e, t) {
   }), e
 }
 
-function C(e) {
+function b(e) {
   let {
     channel: t,
     guild: n,
@@ -131,7 +131,7 @@ function C(e) {
   })
 }
 
-function b(e) {
+function C(e) {
   let {
     className: t,
     children: n
@@ -143,21 +143,26 @@ function b(e) {
 }
 
 function _(e) {
-  let {
-    className: t,
-    children: n,
-    htmlFor: i,
-    onClick: s
-  } = e, a = null === s ? "label" : u.P3F;
-  return (0, l.jsx)(a, {
-    className: S.advancedOption,
-    htmlFor: i,
-    onClick: s,
-    children: (0, l.jsx)("div", {
-      className: r()(t, S.advancedOptionInner),
-      children: n
+  let t, n, {
+    className: i,
+    children: s,
+    htmlFor: a,
+    onClick: o
+  } = e;
+  return null != a ? (t = "label", n = {
+    htmlFor: a
+  }) : null != o ? (t = u.P3F, n = {
+    onClick: o
+  }) : (t = "div", n = {}), (0, l.jsx)(t, T(E({
+    className: r()(S.advancedOption, {
+      [S.clickableAdvancedOption]: !!o
     })
-  })
+  }, n), {
+    children: (0, l.jsx)("div", {
+      className: r()(i, S.advancedOptionInner),
+      children: s
+    })
+  }))
 }
 
 function y(e) {
@@ -173,13 +178,13 @@ function y(e) {
     options: Z,
     setOptions: A,
     isApplicationBypassAllowed: w,
-    isGuestInviteAllowed: k,
-    isTemporaryInviteAllowed: R
-  } = e, [M] = (0, o.Wu)([v.Z], () => [v.Z.hideInstantInvites]), [W, L] = i.useState(!1), [D, U] = i.useState(!1), V = i.useRef(null), B = (0, m.Dt)(), z = (0, m.Dt)(), F = (0, m.Dt)(), G = (0, I.Z)(O), H = M ? j.NW.string(j.t["6HzNgY"]) : G, q = i.useCallback(() => (L(!0), (0, N.JG)(G), V.current = setTimeout(() => {
-    L(!1)
+    isGuestInviteAllowed: R,
+    isTemporaryInviteAllowed: k
+  } = e, [M] = (0, o.Wu)([v.Z], () => [v.Z.hideInstantInvites]), [W, D] = i.useState(!1), [L, U] = i.useState(!1), V = i.useRef(null), B = (0, m.Dt)(), F = (0, m.Dt)(), G = (0, m.Dt)(), z = (0, I.Z)(O), H = M ? j.NW.string(j.t["6HzNgY"]) : z, q = i.useCallback(() => (D(!0), (0, N.JG)(z), V.current = setTimeout(() => {
+    D(!1)
   }, 1e3), () => {
     null !== V.current && clearTimeout(V.current)
-  }), [L, G]), Y = i.useCallback(e => {
+  }), [D, z]), Y = i.useCallback(e => {
     A({
       max_age: e
     })
@@ -232,7 +237,7 @@ function y(e) {
           guildIcon: h.icon,
           iconSize: 32
         })
-      }), (0, l.jsx)(C, {
+      }), (0, l.jsx)(b, {
         guild: h,
         channel: x,
         inviteTarget: p,
@@ -240,22 +245,20 @@ function y(e) {
       }), (0, l.jsx)(u.ua7, {
         position: "top",
         text: j.NW.string(j.t["4QuV7O"]),
-        children: e => (0, l.jsx)(u.zxk, T(E({
-          size: u.zxk.Sizes.ICON,
-          look: u.zxk.Looks.BLANK,
+        children: e => (0, l.jsx)(u.P3F, T(E({
           className: S.settingsButton
         }, e), {
           onClick: () => {
             var t;
-            null == e || null == (t = e.onClick) || t.call(e), U(!D)
+            null == e || null == (t = e.onClick) || t.call(e), U(e => !e)
           },
           children: (0, l.jsx)(u.ewm, {
-            size: "md",
-            color: d.Z.colors.ICON_PRIMARY.css
+            size: "refresh_sm",
+            color: d.Z.colors.ICON_PRIMARY
           })
         }))
       })]
-    }), D && (0, l.jsxs)(b, {
+    }), L && (0, l.jsxs)(C, {
       children: [(0, l.jsxs)(_, {
         onClick: Q,
         children: [(0, l.jsxs)("div", {
@@ -302,8 +305,8 @@ function y(e) {
           checked: Z.flags === a.$.IS_APPLICATION_BYPASS,
           onChange: () => X(a.$.IS_APPLICATION_BYPASS)
         })]
-      }), k && (0, l.jsxs)(_, {
-        htmlFor: z,
+      }), R && (0, l.jsxs)(_, {
+        htmlFor: F,
         children: [(0, l.jsxs)("div", {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
@@ -318,12 +321,12 @@ function y(e) {
             }))
           })]
         }), (0, l.jsx)(u.rsf, {
-          id: z,
+          id: F,
           checked: Z.flags === a.$.IS_GUEST_INVITE,
           onChange: () => X(a.$.IS_GUEST_INVITE)
         })]
-      }), R && (0, l.jsxs)(_, {
-        htmlFor: F,
+      }), k && (0, l.jsxs)(_, {
+        htmlFor: G,
         children: [(0, l.jsxs)("div", {
           className: S.advancedOptionContent,
           children: [(0, l.jsx)(u.X6q, {
@@ -338,7 +341,7 @@ function y(e) {
             }))
           })]
         }), (0, l.jsx)(u.rsf, {
-          id: F,
+          id: G,
           checked: !!Z.temporary,
           onChange: e => J(e)
         })]

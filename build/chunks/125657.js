@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(653041), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -19,16 +19,16 @@ var r = n(200651),
   h = n(823379),
   x = n(700785),
   j = n(388032),
-  N = n(439478);
+  O = n(439478);
 
-function O(e) {
+function N(e) {
   var t;
   let {
     guild: n,
-    applicationIntegration: O
+    applicationIntegration: N
   } = e, v = (0, o.e7)([f.Z], () => f.Z.getRoles(n.id)), {
     application: y
-  } = O, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, o.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
+  } = N, _ = null != y.bot ? new b.Z(y.bot) : null, C = (0, o.e7)([g.ZP], () => null != _ ? g.ZP.getMember(n.id, _.id) : null, [_, n]), I = null == _ ? void 0 : _.id;
   i.useEffect(() => {
     null != I && s.Z.requestMembersById(n.id, I)
   }, [n.id, I]);
@@ -42,7 +42,7 @@ function O(e) {
   }, [n, v, C]);
   return null == _ ? null : (0, r.jsx)(a.Zbd, {
     editable: !0,
-    className: N.card,
+    className: O.card,
     children: (0, r.jsxs)(p.Z, {
       direction: p.Z.Direction.VERTICAL,
       children: [(0, r.jsxs)(p.Z, {
@@ -50,7 +50,7 @@ function O(e) {
         children: [(0, r.jsx)("img", {
           alt: "",
           src: _.getAvatarURL(n.id, 32),
-          className: N.iconWrapper
+          className: O.iconWrapper
         }), (0, r.jsx)(a.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
@@ -58,7 +58,7 @@ function O(e) {
             user: _.toString()
           })
         }), (0, r.jsx)(u.Z, {
-          className: N.tag,
+          className: O.tag,
           verified: _.isVerifiedBot()
         })]
       }), function(e, t, n, i) {
@@ -67,15 +67,15 @@ function O(e) {
         for (let e of m.VY) l.e$(i, e) ? o.push(e) : s.push(e);
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.$i$, {
-            className: N.divider
+            className: O.divider
           }), n.length > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(a.vwX, {
-              className: N.permissionHeader,
+              className: O.permissionHeader,
               children: j.NW.format(j.t.PCs0oq, {
                 numRoles: n.length
               })
             }), (0, r.jsx)(c.ZP, {
-              className: N.rolePills,
+              className: O.rolePills,
               user: e,
               guild: t,
               userRoles: n,

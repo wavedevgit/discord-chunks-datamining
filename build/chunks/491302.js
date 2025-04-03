@@ -24,14 +24,14 @@ function f(e) {
     isExpanded: h,
     errors: x,
     onToggleExpand: j
-  } = e, N = i.useMemo(() => {
+  } = e, O = i.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, u.ov)({
       id: t.id,
       avatar: e,
       discriminator: m.fo$
     })
-  }, [t]), O = i.useCallback(() => {
+  }, [t]), N = i.useCallback(() => {
     (0, l.h7j)(e => {
       var n, i;
       return (0, r.jsx)(l.ConfirmModal, (n = function(e) {
@@ -138,7 +138,7 @@ function f(e) {
           className: g.bottomDivider
         }), (0, r.jsx)(c.Z, {
           children: (0, r.jsx)(l.zxk, {
-            onClick: O,
+            onClick: N,
             size: l.zxk.Sizes.SMALL,
             color: l.zxk.Colors.RED,
             look: l.zxk.Looks.LINK,
@@ -161,7 +161,7 @@ function f(e) {
           align: c.Z.Align.CENTER,
           children: [(0, r.jsx)(p.Z, {
             name: t.name,
-            imageSrc: N,
+            imageSrc: O,
             detailsClassName: g.__invalid_description,
             details: v
           }), (0, r.jsx)(d.Z, {
