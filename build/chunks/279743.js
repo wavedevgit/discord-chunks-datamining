@@ -1,6 +1,6 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(47120);
 var r = n(200651),
   i = n(192379),
@@ -14,33 +14,33 @@ var r = n(200651),
   p = n(663389),
   _ = n(834166);
 
-function f(e) {
+function h(e) {
   let {
     children: t,
     className: n,
     onFlashEnd: o,
     animationDelay: u = 500
-  } = e, p = c.TVs.colors.TEXT_LINK, f = (0, c.dQu)(p).spring({
+  } = e, p = c.TVs.colors.TEXT_LINK, h = (0, c.dQu)(p).spring({
     opacity: 0
-  }), h = (0, c.dQu)(p).spring({
+  }), f = (0, c.dQu)(p).spring({
     opacity: .1
   }), m = (0, c.dQu)(p).spring({
     opacity: 0
-  }), b = (0, c.dQu)(p).spring({
+  }), g = (0, c.dQu)(p).spring({
     opacity: 1
-  }), [g, E] = (0, c.q_F)(() => ({
+  }), [b, E] = (0, c.q_F)(() => ({
     from: {
-      backgroundColor: f,
-      borderColor: f
+      backgroundColor: h,
+      borderColor: h
     }
   }), "animate-never"), C = {
-    startColor: f,
+    startColor: h,
     handleRest: e => {
       e.finished && (null == o || o())
     },
     endColor: m,
-    targetBorderColor: b,
-    targetColor: h,
+    targetBorderColor: g,
+    targetColor: f,
     animationDelay: u
   }, O = i.useRef(C);
   return i.useEffect(() => {
@@ -92,13 +92,13 @@ function f(e) {
       onRest: t
     })
   }, [E]), (0, r.jsx)(s.animated.div, {
-    style: g,
+    style: b,
     className: l()(_.settingsItemHighlight, n),
     children: t
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     children: t,
     scrollPosition: n,
@@ -106,7 +106,7 @@ function h(e) {
   } = e, l = (0, u.e7)([p.Z], () => p.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
   return (i.useEffect(() => {
     l && a(!0)
-  }, [l]), s) ? (0, r.jsx)(f, {
+  }, [l]), s) ? (0, r.jsx)(h, {
     animationDelay: o,
     onFlashEnd: () => a(!1),
     children: t

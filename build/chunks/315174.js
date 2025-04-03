@@ -251,10 +251,8 @@ function N(e) {
     }), o.id !== b._ && (0, r.jsx)(c.ua7, {
       text: y.NW.string(y.t.Sd8Ix8),
       position: "bottom",
-      children: e => (0, r.jsx)(c.zxk, O(v({
-        className: _.inviteButton,
-        size: c.zxk.Sizes.ICON,
-        look: c.zxk.Looks.BLANK
+      children: e => (0, r.jsx)(c.P3F, O(v({
+        className: _.inviteButton
       }, e), {
         onClick: () => {
           var t;

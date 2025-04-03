@@ -52,7 +52,7 @@ let b = [{
       days: 3
     })
   }, {
-    duration: void 0,
+    duration: null,
     label: () => h.NW.string(h.t["46dqJS"])
   }];
 
@@ -71,7 +71,7 @@ function _(e) {
     hasButtonStyling: d
   } = l.Y.useExperiment({
     location: "AccountProfilePopout"
-  }), h = o && t !== p.Skl.ONLINE, [x, _] = i.useState(null), E = null != x && t === n, j = (0, r.jsx)(r.Fragment, {
+  }), h = o && t !== p.Skl.ONLINE, [x, _] = i.useState(void 0), E = void 0 !== x && t === n, j = (0, r.jsx)(r.Fragment, {
     children: b.map(e => {
       let {
         duration: i,
@@ -98,10 +98,10 @@ function _(e) {
       return (0, r.jsx)(a.zxk, {
         id: "".concat(t, "-").concat(i),
         onClick: e => {
-          e.stopPropagation(), _(null != i ? i : null), (0, g.Z)({
+          e.stopPropagation(), _(i), (0, g.Z)({
             nextStatus: t,
             prevStatus: n,
-            durationMillis: i
+            durationMillis: null != i ? i : void 0
           })
         },
         className: f.durationButton,

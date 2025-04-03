@@ -1,15 +1,15 @@
 /** Chunk was on 99905 **/
 t.d(n, {
-  Z: () => l
+  Z: () => c
 });
 var r = t(466330),
-  c = t(981631);
+  l = t(981631);
 
-function l(e, n, t) {
+function c(e, n, t) {
   return (0, r.Z)({
     guild: n,
     channel: e,
     stageInstance: t,
-    source: c.t4x.CONTEXT_MENU
+    source: l.t4x.CONTEXT_MENU
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
   Z: () => _
 }), n(266796);
@@ -70,12 +70,12 @@ function _(e) {
   } = e, {
     name: o,
     description: _,
-    rarity: f,
-    hideDescriptionUntilUnlock: h,
+    rarity: h,
+    hideDescriptionUntilUnlock: f,
     onAction: m
   } = t, {
-    color: b
-  } = (0, a.F7)(f);
+    color: g
+  } = (0, a.F7)(h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -84,12 +84,12 @@ function _(e) {
       clearTimeout(e)
     }
   }, []);
-  let g = null != m && n,
-    E = g ? s.P3F : "div";
+  let b = null != m && n,
+    E = b ? s.P3F : "div";
   return (0, r.jsxs)(E, {
-    className: l()(d.container, g && d.actionable),
+    className: l()(d.container, b && d.actionable),
     onClick: () => {
-      g && m()
+      b && m()
     },
     children: [(0, r.jsx)("div", {
       className: d.iconContainer,
@@ -107,12 +107,12 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: h && !n ? "?????" : _()
+        children: f && !n ? "?????" : _()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
       children: (0, r.jsx)(p, {
-        color: b
+        color: g
       })
     })]
   })

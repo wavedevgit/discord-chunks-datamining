@@ -292,8 +292,9 @@ function w(e, t) {
   return T.updateAsync("userContent", n => {
     null == n.recurringDismissibleContentStates[e] ? n.recurringDismissibleContentStates[e] = {
       lastDismissedVersion: t,
-      lastDismissedAtMs: Date.now().toString()
-    } : (n.recurringDismissibleContentStates[e].lastDismissedVersion = t, n.recurringDismissibleContentStates[e].lastDismissedAtMs = Date.now().toString())
+      lastDismissedAtMs: Date.now().toString(),
+      lastDismissedObjectId: "0"
+    } : (n.recurringDismissibleContentStates[e].lastDismissedVersion = t, n.recurringDismissibleContentStates[e].lastDismissedAtMs = Date.now().toString(), n.recurringDismissibleContentStates[e].lastDismissedObjectId = "0")
   }, g.fy.INFREQUENT_USER_ACTION)
 }
 
@@ -301,7 +302,8 @@ function D(e) {
   return T.updateAsync("userContent", t => {
     null == t.recurringDismissibleContentStates[e] ? t.recurringDismissibleContentStates[e] = {
       lastDismissedVersion: 0,
-      lastDismissedAtMs: Date.now().toString()
+      lastDismissedAtMs: Date.now().toString(),
+      lastDismissedObjectId: "0"
     } : t.recurringDismissibleContentStates[e].lastDismissedAtMs = Date.now().toString()
   }, g.fy.INFREQUENT_USER_ACTION)
 }
@@ -316,7 +318,7 @@ function L(e) {
 function x(e) {
   return T.updateAsync("userContent", t => {
     if (null == t.recurringDismissibleContentStates[e]) return !1;
-    t.recurringDismissibleContentStates[e].lastDismissedVersion = 0, t.recurringDismissibleContentStates[e].lastDismissedAtMs = "0"
+    t.recurringDismissibleContentStates[e].lastDismissedVersion = 0, t.recurringDismissibleContentStates[e].lastDismissedAtMs = "0", t.recurringDismissibleContentStates[e].lastDismissedObjectId = "0"
   }, g.fy.INFREQUENT_USER_ACTION)
 }
 

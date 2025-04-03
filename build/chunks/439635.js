@@ -1,13 +1,13 @@
 /** Chunk was on 24783 **/
 n.d(t, {
-  default: () => Z
+  default: () => _
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(239091),
-  c = n(108843),
-  o = n(100527),
+  o = n(108843),
+  c = n(100527),
   a = n(299206),
   u = n(423589),
   s = n(398048),
@@ -23,29 +23,29 @@ var i = n(481060),
   N = n(442754),
   P = n(981631),
   E = n(388032);
-let Z = (0, c.Z)(function(e) {
+let _ = (0, o.Z)(function(e) {
   let {
     channel: t,
     guild: n,
-    includeTopic: c = !1,
-    onSelect: o
-  } = e, Z = (0, N.Z)(t), _ = (0, y.ZP)(t), v = (0, g.Z)(t), w = (0, d.Z)(t), C = (0, f.Z)(t), x = (0, O.Z)(t, n), S = (0, s.Z)(t, n), m = (0, p.Z)(t, n, P.d4z.GUILD_TEXT), T = (0, p.Z)(t, n, P.d4z.GUILD_VOICE), A = (0, b.Z)(t), D = (0, a.Z)({
+    includeTopic: o = !1,
+    onSelect: c
+  } = e, _ = (0, N.Z)(t), v = (0, y.ZP)(t), Z = (0, g.Z)(t), w = (0, d.Z)(t), C = (0, f.Z)(t), x = (0, O.Z)(t, n), m = (0, s.Z)(t, n), S = (0, p.Z)(t, n, P.d4z.GUILD_TEXT), T = (0, p.Z)(t, n, P.d4z.GUILD_VOICE), A = (0, b.Z)(t), D = (0, a.Z)({
     id: t.id,
     label: E.NW.string(E.t.gFHI3t)
-  }), I = (0, h.Z)(t, "title_context_menu"), k = (0, u.Mn)("ChannelTitleContextMenu"), W = (0, j.ZP)(t);
+  }), I = (0, h.Z)(t, "title_context_menu"), W = (0, u.Mn)("ChannelTitleContextMenu"), k = (0, j.ZP)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
     "aria-label": E.NW.string(E.t.Xm41aW),
-    onSelect: o,
+    onSelect: c,
     children: [(0, r.jsx)(i.kSQ, {
-      children: Z
-    }), (0, r.jsx)(i.kSQ, {
       children: _
+    }), (0, r.jsx)(i.kSQ, {
+      children: v
     }), (0, r.jsxs)(i.kSQ, {
-      children: [c ? w : k ? W : v, C]
+      children: [o ? w : W ? k : Z, C]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [x, S, m, T]
+      children: [x, m, S, T]
     }), (0, r.jsx)(i.kSQ, {
       children: I
     }), (0, r.jsx)(i.kSQ, {
@@ -54,4 +54,4 @@ let Z = (0, c.Z)(function(e) {
       children: D
     })]
   })
-}, [o.Z.CONTEXT_MENU, o.Z.CHANNEL_TITLE_MENU])
+}, [c.Z.CONTEXT_MENU, c.Z.CHANNEL_TITLE_MENU])

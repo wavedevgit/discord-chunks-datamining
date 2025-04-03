@@ -742,7 +742,8 @@ class F extends a.C {
   create(e) {
     let t = {
       lastDismissedVersion: 0,
-      lastDismissedAtMs: "0"
+      lastDismissedAtMs: "0",
+      lastDismissedObjectId: "0"
     };
     return globalThis.Object.defineProperty(t, o.C, {
       enumerable: !1,
@@ -761,6 +762,9 @@ class F extends a.C {
         case 2:
           o.lastDismissedAtMs = e.uint64().toString();
           break;
+        case 3:
+          o.lastDismissedObjectId = e.uint64().toString();
+          break;
         default:
           let a = n.readUnknownField;
           if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -771,7 +775,7 @@ class F extends a.C {
     return o
   }
   internalBinaryWrite(e, t, n) {
-    0 !== e.lastDismissedVersion && t.tag(1, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(2, r.TD.Varint).uint64(e.lastDismissedAtMs);
+    0 !== e.lastDismissedVersion && t.tag(1, r.TD.Varint).uint32(e.lastDismissedVersion), "0" !== e.lastDismissedAtMs && t.tag(2, r.TD.Varint).uint64(e.lastDismissedAtMs), "0" !== e.lastDismissedObjectId && t.tag(3, r.TD.Varint).uint64(e.lastDismissedObjectId);
     let i = n.writeUnknownFields;
     return !1 !== i && (!0 == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -784,6 +788,11 @@ class F extends a.C {
     }, {
       no: 2,
       name: "last_dismissed_at_ms",
+      kind: "scalar",
+      T: 4
+    }, {
+      no: 3,
+      name: "last_dismissed_object_id",
       kind: "scalar",
       T: 4
     }])

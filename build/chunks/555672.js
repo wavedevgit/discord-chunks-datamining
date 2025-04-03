@@ -1,8 +1,8 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
   Hs: () => p,
-  ZP: () => h,
-  qy: () => f
+  ZP: () => f,
+  qy: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -16,10 +16,10 @@ var r = n(200651),
 let p = [c.E6],
   _ = [o._.WEEK];
 
-function f(e) {
+function h(e) {
   return null != e && _.includes(e)
 }
-let h = i.memo(e => {
+let f = i.memo(e => {
   let {
     entry: t,
     channel: n,
@@ -30,7 +30,7 @@ let h = i.memo(e => {
     entry: t,
     showCoverImage: !1
   }), _ = (0, a.Nq)(t);
-  return null != _ && f(_) ? (0, r.jsxs)(u.Zb, {
+  return null != _ && h(_) ? (0, r.jsxs)(u.Zb, {
     selected: i,
     children: [(0, r.jsxs)(u.e$, {
       children: [(0, r.jsx)(u.F9, {

@@ -37,7 +37,7 @@ function E(e) {
     isTryItOutFlow: v = !1,
     forcedDivider: T,
     withHighlight: I = !1
-  } = e, y = I ? o.gtL : o.zxk, A = (0, u.Tq)({
+  } = e, y = I ? o.gtL : o.zxk, A = (0, u.T)({
     location: "AvatarSection"
   }), P = [];
   A && P.push(l.z.RECENT_AVATARS_SETTINGS_PROFILE_PAGE_NEW_BADGE);

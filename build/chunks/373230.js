@@ -1,12 +1,11 @@
-/** Chunk was on 90851 **/
+/** Chunk was on 74669 **/
 n.d(t, {
-  Tq: () => a,
-  cy: () => o,
-  i3: () => l
+  T: () => a,
+  c: () => s
 });
 var r = n(818083),
   i = n(355820);
-let o = (0, r.B)({
+let s = (0, r.B)({
   kind: "user",
   id: "2025-01_recent_avatars",
   label: "Recent Avatars",
@@ -31,7 +30,7 @@ function a(e) {
     autoTrackExposure: n
   }), {
     enabled: a
-  } = o.useExperiment({
+  } = s.useExperiment({
     location: t
   }, {
     autoTrackExposure: n,
@@ -39,18 +38,3 @@ function a(e) {
   });
   return a
 }
-let l = (0, r.B)({
-  kind: "user",
-  id: "2025-02_improved_image_upload_flow",
-  label: "Improved Image Upload Flow",
-  defaultConfig: {
-    enabled: !1
-  },
-  treatments: [{
-    id: 1,
-    label: "QOL improvements to the image upload and edit flow used for profile assets, server banners & icons, etc.",
-    config: {
-      enabled: !0
-    }
-  }]
-})

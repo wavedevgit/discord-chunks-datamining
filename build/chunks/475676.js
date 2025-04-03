@@ -1,4 +1,4 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -13,11 +13,11 @@ var r = n(200651),
   d = n(594174),
   p = n(626135),
   _ = n(5192),
-  f = n(873128),
-  h = n(246627),
+  h = n(873128),
+  f = n(246627),
   m = n(709737),
-  b = n(69589),
-  g = n(531501),
+  g = n(69589),
+  b = n(531501),
   E = n(981631),
   C = n(701488),
   O = n(388032),
@@ -43,21 +43,21 @@ function v(e) {
 }
 
 function N(e) {
-  var t, n, g, C, y;
+  var t, n, b, C, y;
   let N, {
       selected: x,
       channel: I,
       entry: T
     } = e,
     L = I.guild_id,
-    P = (0, f.Z)({
+    P = (0, h.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
       rankChanges: j
-    } = (0, h.Z)({
+    } = (0, f.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
       intervalStart: null != (C = null == P ? void 0 : P.interval_start) ? C : ""
@@ -95,7 +95,7 @@ function N(e) {
   });
   let {
     sort_by_statistic_id: D
-  } = P.guild_settings, U = null != (y = null == w || null == (g = w.statistics) || null == (n = g[D]) ? void 0 : n.value) ? y : 0, {
+  } = P.guild_settings, U = null != (y = null == w || null == (b = w.statistics) || null == (n = b[D]) ? void 0 : n.value) ? y : 0, {
     currentRank: V
   } = R;
   return N = R.userId === A ? O.NW.formatToPlainString(O.t["eU+JxM"], {
@@ -119,7 +119,7 @@ function N(e) {
           statisticId: D
         })
       })]
-    }), (0, r.jsx)(b.Z, {
+    }), (0, r.jsx)(g.Z, {
       user: k,
       rank: V
     })]
@@ -146,7 +146,7 @@ function S(e) {
           text: O.NW.string(O.t.zX8HUl)
         })
       })]
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(b.Z, {
       color: "#5B5A56",
       children: (0, r.jsx)("img", {
         src: "https://cdn.discordapp.com/assets/content/173a83bdbe0a455bf0d251f4cc9c2c027cd3da855384773916f3eb08298a880c.png",

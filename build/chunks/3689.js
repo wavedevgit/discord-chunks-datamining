@@ -5,22 +5,22 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var c = n(442837),
-  o = n(481060),
-  l = n(496675),
-  a = n(981631),
-  i = n(388032);
+  l = n(481060),
+  o = n(496675),
+  i = n(981631),
+  a = n(388032);
 
 function u(e, t) {
   let u = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : e.type,
-    s = (0, c.e7)([l.Z], () => l.Z.can(a.Plq.MANAGE_CHANNELS, e), [e]);
+    s = (0, c.e7)([o.Z], () => o.Z.can(i.Plq.MANAGE_CHANNELS, e), [e]);
   if (__OVERLAY__ || !s) return null;
   let b = () => {
-    (0, o.ZDy)(async () => {
+    (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("7590"), n.e("45094"), n.e("7911")]).then(n.bind(n, 218613));
       return n => {
-        var c, o;
+        var c, l;
         return (0, r.jsx)(t, (c = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -38,34 +38,34 @@ function u(e, t) {
             })
           }
           return e
-        }({}, n), o = o = {
+        }({}, n), l = l = {
           channelType: u,
           guildId: e.guild_id,
           categoryId: e.parent_id
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(c, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(o)).forEach(function(e) {
-          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(o, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(c, e, Object.getOwnPropertyDescriptor(l, e))
         }), c))
       }
     })
   };
   switch (u) {
-    case a.d4z.GUILD_TEXT:
-      return (0, r.jsx)(o.sNh, {
+    case i.d4z.GUILD_TEXT:
+      return (0, r.jsx)(l.sNh, {
         id: "create-text-channel",
-        label: i.NW.string(i.t.HHkTJC),
+        label: a.NW.string(a.t.HHkTJC),
         action: b
       });
-    case a.d4z.GUILD_VOICE:
-      return (0, r.jsx)(o.sNh, {
+    case i.d4z.GUILD_VOICE:
+      return (0, r.jsx)(l.sNh, {
         id: "create-voice-channel",
-        label: i.NW.string(i.t.AlbZaG),
+        label: a.NW.string(a.t.AlbZaG),
         action: b
       });
     default:

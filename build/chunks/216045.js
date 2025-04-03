@@ -80,7 +80,7 @@ function G() {
     {
       analyticsLocations: J
     } = (0, f.ZP)(h.Z.PROFILE),
-    Q = (0, y.Tq)({
+    Q = (0, y.T)({
       location: "UserSettingsProfileCustomization"
     }),
     $ = (0, N.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),

@@ -270,6 +270,11 @@ let T = (e, t, n, r) => {
     message_id: t.record.id,
     email_token: r
   });
+  else if (t.name === l.BM.GUILD) return _(d({}, c, s), {
+    name: t.name,
+    guild_id: t.record.id,
+    email_token: r
+  });
   else if (t.name === l.b.APPLICATION) return _(d({}, c, s), {
     name: t.name,
     application_id: t.record.id,

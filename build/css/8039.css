@@ -1,6 +1,6 @@
 /**
   Module ID: 8039
-  Original File Name: 1ae3aa302b9e02cc
+  Original File Name: 8966451e0fc09ecf
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -4482,7 +4482,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background: var(--bg-overlay-3,var(--__header-bar-background))
 }
 
-:where(.visual-refresh) .bannerVisible_f37cb1 .name_f37cb1 {
+:where(.visual-refresh) .bannerVisible_f37cb1 .headerContent_f37cb1,:where(.visual-refresh) .bannerVisible_f37cb1 .name_f37cb1 {
     color: var(--white)
 }
 
@@ -4555,6 +4555,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: initial
 }
 
+.invitesRefresh_f37cb1 .favoritesIcon_f37cb1 {
+    margin-right: 0;
+    margin-right: initial;
+    margin-bottom: 0;
+    margin-bottom: initial
+}
+
 .invitesRefresh_f37cb1 .guildDropdown_f37cb1 {
     height: 32px;
     display: flex;
@@ -4581,7 +4588,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .invitesRefresh_f37cb1 .inviteButton_f37cb1 {
     flex: 0 0 auto;
     width: 32px;
-    height: 32px
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer
 }
 
 .invitesRefresh_f37cb1 .inviteButton_f37cb1:hover {
@@ -5973,4 +5985,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=1ae3aa302b9e02cc.css.map*/
+/*# sourceMappingURL=8966451e0fc09ecf.css.map*/

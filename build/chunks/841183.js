@@ -1,13 +1,13 @@
-/** Chunk was on 55849 **/
+/** Chunk was on 89289 **/
 n.d(t, {
   Z: () => u
 });
 var r = n(192379),
-  l = n(442837),
-  a = n(481060),
+  a = n(442837),
+  l = n(481060),
   i = n(442552),
-  o = n(314897),
-  s = n(643879),
+  s = n(314897),
+  o = n(643879),
   c = n(27367);
 
 function u(e) {
@@ -16,22 +16,22 @@ function u(e) {
     storageHash: n,
     size: u
   } = e, {
-    onMouseEnter: d,
-    onMouseLeave: p,
-    shouldAnimate: f
-  } = (0, i.Z)(), m = (0, l.e7)([o.default], () => o.default.getId());
+    onMouseEnter: f,
+    onMouseLeave: d,
+    shouldAnimate: p
+  } = (0, i.Z)(), m = (0, a.e7)([s.default], () => s.default.getId());
   return {
-    avatarSrc: r.useMemo(() => (0, s.fD)({
+    avatarSrc: r.useMemo(() => (0, o.fD)({
       userId: m,
       avatarId: t,
       storageHash: n,
-      canAnimate: f,
-      size: (0, a.pxk)(null != u ? u : c.m)
-    }), [m, t, n, f, u]),
-    isAvatarAnimating: f,
+      canAnimate: p,
+      size: (0, l.pxk)(null != u ? u : c.m)
+    }), [m, t, n, p, u]),
+    isAvatarAnimating: p,
     eventHandlers: {
-      onMouseEnter: d,
-      onMouseLeave: p
+      onMouseEnter: f,
+      onMouseLeave: d
     }
   }
 }

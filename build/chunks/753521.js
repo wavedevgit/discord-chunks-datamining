@@ -12,8 +12,8 @@ var n = s(200651),
   o = s(931839),
   m = s(905987),
   x = s(789662),
-  h = s(981631),
-  u = s(388032),
+  u = s(981631),
+  h = s(388032),
   j = s(699343);
 
 function g(e) {
@@ -23,8 +23,8 @@ function g(e) {
     dismissable: c,
     guildPain: g,
     myUsage: _
-  } = e, [b, v] = i.useState(o.O.Intro), {
-    submitted: f,
+  } = e, [b, f] = i.useState(o.O.Intro), {
+    submitted: v,
     submitting: p,
     saveSettings: C
   } = (0, l.vo)(t), {
@@ -33,18 +33,18 @@ function g(e) {
     getDebug: y
   } = (0, l.F6)(g, _), w = i.useRef(null);
   return i.useEffect(() => {
-    a.default.track(h.rMx.OPEN_MODAL, {
+    a.default.track(u.rMx.OPEN_MODAL, {
       type: "notification_migration_modal"
     })
   }, []), (0, n.jsxs)(r.Y0X, {
     className: j.__invalid_modal,
     transitionState: s,
-    "aria-label": u.NW.string(u.t.HcoRu7),
+    "aria-label": h.NW.string(h.t.HcoRu7),
     size: r.CgR.DYNAMIC,
     children: [(0, n.jsx)(o.Z, {
       selectedTab: b,
-      onClick: v,
-      submitted: f
+      onClick: f,
+      submitted: v
     }), b === o.O.Intro ? (0, n.jsx)(d.Z, {
       ref: w
     }) : b === o.O.Customize ? (0, n.jsx)(N, {
@@ -66,7 +66,7 @@ function g(e) {
           children: (0, n.jsx)(r.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
-            children: u.NW.string(u.t.hvVgAQ)
+            children: h.NW.string(h.t.hvVgAQ)
           })
         }), c && b === o.O.Intro ? (0, n.jsx)(r.P3F, {
           className: j.dismiss,
@@ -74,7 +74,7 @@ function g(e) {
           children: (0, n.jsx)(r.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
-            children: u.NW.string(u.t.WAI6xs)
+            children: h.NW.string(h.t.WAI6xs)
           })
         }) : null, c && b === o.O.Customize ? (0, n.jsx)(r.P3F, {
           className: j.dismiss,
@@ -82,7 +82,7 @@ function g(e) {
           children: (0, n.jsx)(r.Text, {
             variant: "text-sm/semibold",
             color: "interactive-normal",
-            children: u.NW.string(u.t["ETE/oK"])
+            children: h.NW.string(h.t["ETE/oK"])
           })
         }) : null]
       }), (0, n.jsxs)("div", {
@@ -91,35 +91,35 @@ function g(e) {
           className: j.warning,
           variant: "text-xs/medium",
           color: "text-muted",
-          children: u.NW.string(u.t.nlpqxM)
-        }) : null, b !== o.O.Customize || f ? null : (0, n.jsxs)(r.zxk, {
-          onClick: () => v(o.O.Intro),
+          children: h.NW.string(h.t.nlpqxM)
+        }) : null, b !== o.O.Customize || v ? null : (0, n.jsxs)(r.zxk, {
+          onClick: () => f(o.O.Intro),
           color: r.zxk.Colors.TRANSPARENT,
           children: [(0, n.jsx)(r.whL, {
             size: "xs",
             color: "currentColor"
-          }), " ", u.NW.string(u.t["13/7kZ"])]
+          }), " ", h.NW.string(h.t["13/7kZ"])]
         }), b === o.O.Intro ? (0, n.jsxs)(r.zxk, {
           onClick: () => {
             var e;
-            (null == (e = w.current) ? void 0 : e.maybeChangeToAfterTab()) && v(o.O.Customize)
+            (null == (e = w.current) ? void 0 : e.maybeChangeToAfterTab()) && f(o.O.Customize)
           },
-          children: [u.NW.string(u.t.uw9zIy), " ", (0, n.jsx)(r.ZSh, {
+          children: [h.NW.string(h.t.uw9zIy), " ", (0, n.jsx)(r.ZSh, {
             size: "xs",
             color: "currentColor"
           })]
         }) : b === o.O.Customize ? (0, n.jsxs)(r.zxk, {
           onClick: () => {
-            v(o.O.Tips), C(W)
+            f(o.O.Tips), C(W)
           },
-          children: [u.NW.string(u.t["1Qm829"]), " ", (0, n.jsx)(r.dz2, {
+          children: [h.NW.string(h.t["1Qm829"]), " ", (0, n.jsx)(r.dz2, {
             size: "xs",
             color: "currentColor"
           })]
         }) : (0, n.jsx)(r.zxk, {
           submitting: p,
           onClick: t,
-          children: u.NW.string(u.t.cpT0Cg)
+          children: h.NW.string(h.t.cpT0Cg)
         })]
       })]
     })]
@@ -138,12 +138,12 @@ function N(e) {
       children: [(0, n.jsx)(r.X6q, {
         variant: "heading-xl/bold",
         color: "header-primary",
-        children: u.NW.string(u.t["zBC2+f"])
+        children: h.NW.string(h.t["zBC2+f"])
       }), (0, n.jsx)(r.Text, {
         className: j.__invalid_subtitle,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: u.NW.string(u.t["zE9e//"])
+        children: h.NW.string(h.t["zE9e//"])
       })]
     }), (0, n.jsx)(c.Z, {
       guildPlans: t,

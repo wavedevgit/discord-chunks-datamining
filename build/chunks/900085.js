@@ -1,4 +1,4 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
   Z: () => X
 }), n(411104), n(47120), n(301563), n(733860);
@@ -12,11 +12,11 @@ var r, i = n(200651),
   d = n(239091),
   p = n(134616),
   _ = n(714338),
-  f = n(212819),
-  h = n(815372),
+  h = n(212819),
+  f = n(815372),
   m = n(14429),
-  b = n(576855),
-  g = n(313201),
+  g = n(576855),
+  b = n(313201),
   E = n(991346),
   C = n(592125),
   O = n(888369),
@@ -245,16 +245,16 @@ class Q extends o.PureComponent {
     return "quick-switcher-".concat(this._listId, "-item-").concat(e)
   }
   renderProtip() {
-    return (0, i.jsx)(b.Z, {
+    return (0, i.jsx)(g.Z, {
       className: s()(M.protip, {
         [M.hasContent]: this.state.query.length > 0
       }),
-      type: b.Z.Types.INLINE,
+      type: g.Z.Types.INLINE,
       children: k.NW.format(k.t.wukqXV, {
-        userSymbolHook: (e, t) => K(t, f.xQ.USER, k.NW.string(k.t.GQRCGh)),
-        textChannelSymbolHook: (e, t) => K(t, f.xQ.TEXT_CHANNEL, k.NW.string(k.t.wrwhub)),
-        voiceChannelSymbolHook: (e, t) => K(t, f.xQ.VOICE_CHANNEL, k.NW.string(k.t["jz+hJi"])),
-        guildSymbolHook: (e, t) => K(t, f.xQ.GUILD, k.NW.string(k.t.WuwCWl)),
+        userSymbolHook: (e, t) => K(t, h.xQ.USER, k.NW.string(k.t.GQRCGh)),
+        textChannelSymbolHook: (e, t) => K(t, h.xQ.TEXT_CHANNEL, k.NW.string(k.t.wrwhub)),
+        voiceChannelSymbolHook: (e, t) => K(t, h.xQ.VOICE_CHANNEL, k.NW.string(k.t["jz+hJi"])),
+        guildSymbolHook: (e, t) => K(t, h.xQ.GUILD, k.NW.string(k.t.WuwCWl)),
         helpdeskArticle: T.Z.getArticleURL(w.BhN.QUICK_SWITCHER_TUTORIAL)
       })
     })
@@ -285,7 +285,7 @@ class Q extends o.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), Z(this, "scrollerRef", o.createRef()), Z(this, "inputRef", o.createRef()), Z(this, "_listId", (0, g.hQ)()), Z(this, "state", {
+    super(...e), Z(this, "scrollerRef", o.createRef()), Z(this, "inputRef", o.createRef()), Z(this, "_listId", (0, b.hQ)()), Z(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), Z(this, "handleInputChange", () => {
@@ -303,11 +303,11 @@ class Q extends o.PureComponent {
     }), Z(this, "focusResult", e => {
       this.state.mouseFocusDisabled || (0, L.tF)(this.props.results.indexOf(e))
     }), Z(this, "selectResult", e => {
-      (0, L.Se)(e, this.props.queryMode === f.h8.TEXT_CHANNEL)
+      (0, L.Se)(e, this.props.queryMode === h.h8.TEXT_CHANNEL)
     }), Z(this, "handleContextMenu", e => {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
-        case f.h8.GUILD:
+        case h.h8.GUILD:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -318,8 +318,8 @@ class Q extends o.PureComponent {
               hideSettings: !0
             }))
           });
-        case f.h8.TEXT_CHANNEL:
-        case f.h8.VOICE_CHANNEL:
+        case h.h8.TEXT_CHANNEL:
+        case h.h8.VOICE_CHANNEL:
           let r = t.record,
             o = y.Z.getGuild(r.getGuildId());
           if (null == o) return;
@@ -384,7 +384,7 @@ class Q extends o.PureComponent {
               })
           }
           break;
-        case f.h8.GROUP_DM:
+        case h.h8.GROUP_DM:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -395,7 +395,7 @@ class Q extends o.PureComponent {
               onSelect: L.Cp
             }))
           });
-        case f.h8.USER:
+        case h.h8.USER:
           return (0, d.jW)(e, async () => {
             let {
               default: e
@@ -435,18 +435,18 @@ class Q extends o.PureComponent {
           return
         }
         case "arrowup":
-          o = (0, f.gJ)(f.a8.UP, o, r);
+          o = (0, h.gJ)(h.a8.UP, o, r);
           break;
         case "arrowdown":
-          o = (0, f.gJ)(f.a8.DOWN, o, r);
+          o = (0, h.gJ)(h.a8.DOWN, o, r);
           break;
         case "n":
           if (!e.ctrlKey) return;
-          o = (0, f.gJ)(f.a8.DOWN, o, r);
+          o = (0, h.gJ)(h.a8.DOWN, o, r);
           break;
         case "p":
           if (!e.ctrlKey) return;
-          o = (0, f.gJ)(f.a8.UP, o, r);
+          o = (0, h.gJ)(h.a8.UP, o, r);
           break;
         default:
           return
@@ -465,11 +465,11 @@ class Q extends o.PureComponent {
         autoTrackExposure: !1
       });
       switch (n.type) {
-        case f.h8.HEADER:
+        case h.h8.HEADER:
           return (0, i.jsx)(j.h4, {
             children: n.record.text
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.TEXT_CHANNEL:
+        case h.h8.TEXT_CHANNEL:
           return (0, i.jsx)(W, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -480,7 +480,7 @@ class Q extends o.PureComponent {
             channel: n.record,
             score: o ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.VOICE_CHANNEL:
+        case h.h8.VOICE_CHANNEL:
           return (0, i.jsx)(B, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -491,7 +491,7 @@ class Q extends o.PureComponent {
             channel: n.record,
             score: o ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.GUILD:
+        case h.h8.GUILD:
           return (0, i.jsx)(F, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -502,7 +502,7 @@ class Q extends o.PureComponent {
             guild: n.record,
             score: o ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.USER:
+        case h.h8.USER:
           return (0, i.jsx)(Y, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -514,7 +514,7 @@ class Q extends o.PureComponent {
             comparator: n.comparator,
             score: o ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.GROUP_DM:
+        case h.h8.GROUP_DM:
           return (0, i.jsx)(z, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -525,7 +525,7 @@ class Q extends o.PureComponent {
             channel: n.record,
             score: o ? n.score : void 0
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.APPLICATION:
+        case h.h8.APPLICATION:
           return (0, i.jsx)(j.Mx, {
             id: this.getRowId(t),
             focused: r >= 0 && t === r,
@@ -534,7 +534,7 @@ class Q extends o.PureComponent {
             onFocus: this.focusNode,
             application: n.record
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.LINK:
+        case h.h8.LINK:
           return (0, i.jsx)(j.rU, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -545,7 +545,7 @@ class Q extends o.PureComponent {
             score: o ? n.score : void 0,
             id: this.getRowId(t)
           }, "".concat(n.type, "-").concat(n.record.id));
-        case f.h8.IN_APP_NAVIGATION:
+        case h.h8.IN_APP_NAVIGATION:
           return (0, i.jsx)(j.s8, {
             focused: r >= 0 && t === r,
             onClick: () => this.selectResult(n),
@@ -555,7 +555,7 @@ class Q extends o.PureComponent {
             navigationRecord: n.record,
             score: o ? n.score : void 0,
             id: this.getRowId(t),
-            children: n.record.type === h.Ky.SETTINGS && (0, i.jsx)("div", {
+            children: n.record.type === f.Ky.SETTINGS && (0, i.jsx)("div", {
               className: M.miscContainer,
               children: k.NW.string(k.t["3D5yo6"])
             })

@@ -1,4 +1,4 @@
-/** Chunk was on 96446 **/
+/** Chunk was on 80137 **/
 n.d(t, {
   Z: () => Z
 }), n(411104), n(47120);
@@ -14,11 +14,11 @@ var i = n(392711),
   d = n(963249),
   p = n(93127),
   _ = n(430824),
-  f = n(594174),
-  h = n(431),
+  h = n(594174),
+  f = n(431),
   m = n(626135),
-  b = n(74538),
-  g = n(557457),
+  g = n(74538),
+  b = n(557457),
   E = n(970645),
   C = n(30684),
   O = n(514701),
@@ -120,17 +120,17 @@ class M extends a.Z {
   }
   constructor(...e) {
     super(...e), R(this, "_premiumPaymentModalCloseResolve", null), R(this, "_premiumPaymentModalCloseReject", null), R(this, "_maybeFetchPremiumOffer", async () => {
-      let e = f.default.getCurrentUser();
+      let e = h.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, b.I5)(e) && h.Z.shouldFetchOffer();
+        let t = !(0, g.I5)(e) && f.Z.shouldFetchOffer();
         await (0, S.T)("PremiumManager", t)
       }
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
     }), R(this, "_maybeFetchCheckoutRecovery", async () => {
-      let e = f.default.getCurrentUser();
-      null != e && e.verified && !(0, b.I5)(e) && C.Z.shouldFetchCheckoutRecovery() && await (0, E.o)()
+      let e = h.default.getCurrentUser();
+      null != e && e.verified && !(0, g.I5)(e) && C.Z.shouldFetchCheckoutRecovery() && await (0, E.o)()
     }), R(this, "_maybeFetchUserAffinities", () => {
       let {
         enabled: e
@@ -160,7 +160,7 @@ class M extends a.Z {
       } = e;
       t && null != this._premiumPaymentModalCloseResolve ? this._premiumPaymentModalCloseResolve() : null != this._premiumPaymentModalCloseReject && this._premiumPaymentModalCloseReject(), this._premiumPaymentModalCloseResolve = null, this._premiumPaymentModalCloseReject = null
     }), R(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
-      let t = f.default.getCurrentUser();
+      let t = h.default.getCurrentUser();
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
     }), R(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
@@ -175,7 +175,7 @@ class M extends a.Z {
       let d = A.NW.formatToPlainString(A.t.AbyeZG, {
         nickname: o.userNick,
         resolution: (0, j.o6)(o.maxResolution.height),
-        fps: (0, g.bp)(o.maxFrameRate)
+        fps: (0, b.bp)(o.maxFrameRate)
       });
       s.Z.sendNitroSystemMessage(e, d), m.default.track(L.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: T.cd.HD_STREAMING_VIEWER_UPSELL,
