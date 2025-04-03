@@ -130,6 +130,10 @@ async function main() {
         delete all['unknown'];
         await fs.writeFile('./build/chunks_api/all.json', JSON.stringify(all), 'utf-8');
     }, 'Generating json list of chunks');
+            await fs.writeFile(
+                './build/modules.json',
+                JSON.stringify(modules), "utf-8"
+            );
     console.log('* Done, scraping build!, Estimated Time taken ' + (timeTaken1 + timeTaken2 + timeTaken3) + 's');
 }
 main();
