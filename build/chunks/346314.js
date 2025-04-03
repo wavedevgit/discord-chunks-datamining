@@ -77,21 +77,36 @@ function g(e) {
     name: n,
     color: i,
     roleName: a,
-    dotAlignment: s = "left",
-    className: l
-  } = e, d = "username" === t, f = "dot" === t ? (0, r.jsx)(c.F, {
+    roleGradient: s,
+    dotAlignment: l = "left",
+    className: d
+  } = e, _ = "username" === t, p = _ && null != s, {
+    text: h,
+    gradient: m
+  } = null != s ? s : {
+    text: {
+      gradientClassName: "",
+      gradientStyle: {}
+    },
+    gradient: {
+      gradientClassName: ""
+    }
+  }, g = "dot" === t ? (0, r.jsx)(c.F, {
     color: i,
     name: a,
-    className: "left" === s ? u.roleDotLeft : u.roleDotRight
+    className: "left" === l ? u.roleDotLeft : u.roleDotRight
   }) : null;
   return (0, r.jsxs)("span", {
-    style: {
-      color: d && null != i ? i : void 0
-    },
-    className: o()(l, {
-      [u.username]: d
+    style: f({
+      color: _ && !p && null != i ? i : void 0
+    }, h.gradientStyle),
+    "data-text": p ? n : "",
+    className: o()(d, {
+      [u.username]: _,
+      [h.gradientClassName]: p,
+      [m.gradientClassName]: p
     }),
-    children: ["left" === s && f, n, "right" === s && f]
+    children: ["left" === l && g, n, "right" === l && g]
   })
 }
 
@@ -101,20 +116,22 @@ function E(e) {
     color: n,
     roleName: i,
     dotAlignment: o,
-    className: c
-  } = e, u = h(e, ["name", "color", "roleName", "dotAlignment", "className"]), d = (0, a.e7)([l.Z], () => l.Z.roleStyle), _ = "username" === d, m = (0, r.jsx)(g, {
-    roleStyle: d,
+    className: c,
+    roleGradient: u
+  } = e, d = h(e, ["name", "color", "roleName", "dotAlignment", "className", "roleGradient"]), _ = (0, a.e7)([l.Z], () => l.Z.roleStyle), m = "username" === _, E = (0, r.jsx)(g, {
+    roleStyle: _,
     name: t,
     color: n,
     roleName: i,
     dotAlignment: o,
-    className: c
-  }), E = _ ? {
+    className: c,
+    roleGradient: u
+  }), b = m ? {
     color: n
   } : void 0;
-  return (0, r.jsx)(s.Anchor, p(f({}, u), {
-    children: m,
-    style: E
+  return (0, r.jsx)(s.Anchor, p(f({}, d), {
+    children: E,
+    style: b
   }))
 }
 

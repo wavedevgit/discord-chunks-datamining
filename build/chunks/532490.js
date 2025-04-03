@@ -61,7 +61,7 @@ let C = i.memo(function(e) {
     e && (B.current = setTimeout(() => {
       A(!0)
     }, w))
-  }, [w]), I = (0, f.O)(R), F = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), V = (0, c.e7)([p.default], () => p.default.getCurrentUser()), [W, G] = (0, u.q_F)(() => "left" === S ? {
+  }, [w]), I = (0, f.O)(R), F = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), V = (0, c.e7)([p.default], () => p.default.getCurrentUser()), [G, W] = (0, u.q_F)(() => "left" === S ? {
     right: 68 * !!F,
     config: o.config.stiff
   } : {
@@ -75,7 +75,7 @@ let C = i.memo(function(e) {
     }
   })), Y = {
     animateFade: z,
-    animateExpand: G
+    animateExpand: W
   }, U = i.useRef(Y);
   i.useEffect(() => {
     U.current = Y
@@ -146,7 +146,7 @@ let C = i.memo(function(e) {
                 className: y.signHintContainer,
                 children: (0, l.jsxs)(o.animated.div, {
                   className: q,
-                  style: v({}, W, L),
+                  style: v({}, G, L),
                   children: [(0, l.jsx)("div", {
                     className: y.signContainerButton,
                     children: (0, l.jsxs)(j.Z, {

@@ -204,8 +204,9 @@ function en(e) {
     disableAltTextDisplay: c = !1,
     reducedSizeAltTextButton: u = !1,
     mediaLayoutType: f,
-    imageContainerStyle: _
-  } = e, h = f === U.hV.MOSAIC, m = !c && R.H1.getSetting() && null != t && "" !== t && !0 !== n, g = e => {
+    imageContainerStyle: _,
+    mosaicStyleAlt: h
+  } = e, m = f === U.hV.MOSAIC || !0 === h, g = !c && R.H1.getSetting() && null != t && "" !== t && !0 !== n, E = e => {
     let {
       altText: t
     } = e;
@@ -215,7 +216,7 @@ function en(e) {
       onKeyDown: e => {
         e.key === B.mR.Escape && setTimeout(() => {
           var e;
-          return null == (e = E.current) ? void 0 : e.focus()
+          return null == (e = b.current) ? void 0 : e.focus()
         }, 0)
       },
       children: [(0, r.jsx)("span", {
@@ -226,25 +227,25 @@ function en(e) {
         children: t
       })]
     })
-  }, E = i.createRef();
+  }, b = i.createRef();
   return (0, r.jsxs)("div", {
     className: a()(Z.imageContent, s),
     children: [(0, r.jsxs)("div", {
       className: a()(Z.imageContainer, l),
       style: _,
       children: [(0, r.jsx)(p.Z, W({}, e)), null != o && o()]
-    }), h && m && (0, r.jsx)("div", {
+    }), m && g && (0, r.jsx)("div", {
       className: Z.mediaMosaicAltTextContainer,
       children: (0, r.jsx)(d.yRy, {
         animation: d.yRy.Animation.FADE,
-        renderPopout: () => (0, r.jsx)(g, {
+        renderPopout: () => (0, r.jsx)(E, {
           altText: t
         }),
         children: e => (0, r.jsx)(d.tEY, {
           offset: 4,
           children: (0, r.jsx)("button", K(W({}, e), {
             type: "button",
-            ref: E,
+            ref: b,
             "aria-label": V.NW.string(V.t.fSiQ3N),
             className: a()(Z.mediaMosaicAltText, {
               [Z.reducedSize]: u
@@ -253,7 +254,7 @@ function en(e) {
           }))
         })
       })
-    }), !h && m && (0, r.jsx)("span", {
+    }), !m && g && (0, r.jsx)("span", {
       className: Z.altText,
       children: t
     })]
@@ -309,17 +310,13 @@ let ec = e => {
     } = e, o = (0, v.Q3)("JumpToPresentBar");
     return (0, r.jsx)(b.G.Consumer, {
       children: e => e.disableInteractions ? null : (0, r.jsxs)("div", {
+        onClick: n,
         className: a()(Z.jumpToPresentBar, i),
-        children: [(0, r.jsx)(d.tEY, {
-          offset: 4,
-          children: (0, r.jsx)("button", {
-            type: "button",
-            onClick: n,
-            className: Z.barButtonMain,
-            children: es(t)
-          })
+        children: [(0, r.jsx)("div", {
+          className: Z.barButtonMain,
+          children: es(t)
         }), null != n ? (0, r.jsx)(d.tEY, {
-          offset: 4,
+          offset: o ? -2 : 4,
           children: o ? (0, r.jsx)(d.zxk, {
             size: "sm",
             onClick: n,

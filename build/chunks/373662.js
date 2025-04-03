@@ -60,8 +60,8 @@ let h = i.forwardRef(function(e, t) {
     onClick: b,
     onTooltipShow: x,
     onTooltipHide: y,
-    disabled: E,
-    dangerous: v,
+    disabled: v,
+    dangerous: E,
     separator: O,
     sparkle: N,
     showNewBadge: j,
@@ -106,8 +106,8 @@ let h = i.forwardRef(function(e, t) {
             null == x || x(), b(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: E,
-          dangerous: v
+          disabled: v,
+          dangerous: E
         }, S), u = u = {
           children: [null != g ? (0, r.jsx)(g, m({
             className: p.icon,

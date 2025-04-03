@@ -7,11 +7,11 @@ var i = n(392711),
   o = n(697741);
 let a = new Set(["a", "an", "and", "are", "as", "at", "be", "but", "by", "for", "if", "in", "into", "is", "it", "no", "not", "of", "on", "or", "such", "that", "the", "their", "then", "there", "these", "they", "this", "to", "was", "will", "with"]);
 
-function s(e) {
+function l(e) {
   return e.replace(/('|\u2019|\uFF07)(s|S)$/, "")
 }
 
-function l(e) {
+function s(e) {
   return e.toLowerCase()
 }
 
@@ -24,7 +24,7 @@ function u(e) {
 }
 
 function d(e) {
-  let t = new Set(r()(e.split(/\W+/)).map(s).reject(u).map(l).reject(c).map(o.$).value());
+  let t = new Set(r()(e.split(/\W+/)).map(l).reject(u).map(s).reject(c).map(o.$).value());
   return e => (function e(t, n) {
     if (Array.isArray(t)) t.forEach(t => e(t, n));
     else if ("string" == typeof t.content && "codeBlock" !== t.type) {
@@ -32,7 +32,7 @@ function d(e) {
         i = "";
       t.content.split(/(\W+)/g).forEach(t => {
         var r;
-        !u(r = l(s(r = t))) && !c(r) && n.has((0, o.$)(r)) ? (i.length > 0 && e.push({
+        !u(r = s(l(r = t))) && !c(r) && n.has((0, o.$)(r)) ? (i.length > 0 && e.push({
           type: "text",
           content: i
         }), e.push({

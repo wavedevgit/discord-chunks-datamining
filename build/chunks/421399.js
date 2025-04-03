@@ -3,31 +3,31 @@ n.d(t, {
   Z: () => Z,
   a: () => C
 });
-var r, l = n(200651),
-  o = n(192379),
+var r, o = n(200651),
+  l = n(192379),
   i = n(120356),
   a = n.n(i),
-  s = n(873546),
-  c = n(442837),
+  c = n(873546),
+  s = n(442837),
   u = n(481060),
-  d = n(607070),
-  m = n(100527),
-  p = n(906732),
+  m = n(607070),
+  p = n(100527),
+  d = n(906732),
   f = n(385499),
-  g = n(979264),
-  b = n(372900),
-  y = n(142375),
+  b = n(979264),
+  y = n(372900),
+  g = n(142375),
   O = n(477747),
   v = n(477734),
-  h = n(823415),
-  j = n(754047),
+  j = n(823415),
+  h = n(754047),
   x = n(184301),
-  S = n(768581),
-  P = n(463396),
+  P = n(768581),
+  S = n(463396),
   N = n(981631),
-  w = n(848697);
+  R = n(848697);
 
-function R(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function R(e) {
   return e
 }
 
-function T(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,8 +64,8 @@ function E(e) {
   let {
     compact: t
   } = e;
-  return (0, l.jsx)(f.Z, {
-    className: t ? w.botTagCompact : w.botTagCozy,
+  return (0, o.jsx)(f.Z, {
+    className: t ? R.botTagCompact : R.botTagCozy,
     type: f.Z.Types.REMIX,
     useRemSizes: !0
   })
@@ -89,12 +89,12 @@ function Z(e) {
       renderRemixTag: F = !1,
       decorations: G
     } = e,
-    B = o.useRef(null),
-    z = o.useContext(b.Z),
+    B = l.useRef(null),
+    z = l.useContext(y.Z),
     U = null != (t = null == f ? void 0 : f.guild_id) ? t : z,
     {
       analyticsLocations: H
-    } = (0, p.ZP)(m.Z.USERNAME),
+    } = (0, d.ZP)(p.Z.USERNAME),
     W = k ? "@" : "",
     {
       nick: q,
@@ -103,42 +103,35 @@ function Z(e) {
       colorRoleName: V
     } = r,
     Y = null != i.messageReference && null != i.webhookId && i.hasFlag(N.iLy.IS_CROSSPOST),
-    $ = (0, c.e7)([d.Z], () => d.Z.roleStyle),
+    $ = (0, s.e7)([m.Z], () => m.Z.roleStyle),
     Q = "username" === $,
     K = (0, v.X$)(),
     ee = (0, O.Z)(U, "BaseUsername"),
     et = Q && ee && null != X && null != X.primaryColor && null != X.secondaryColor,
-    en = (0, y.N)(null == X ? void 0 : X.primaryColor, null == X ? void 0 : X.secondaryColor, null == X ? void 0 : X.tertiaryColor),
+    en = (0, g.N)(null == X ? void 0 : X.primaryColor, null == X ? void 0 : X.secondaryColor, null == X ? void 0 : X.tertiaryColor),
     {
       text: er,
-      glow: el,
       gradient: eo
     } = et ? en : {
       text: {},
-      glow: {},
       gradient: {}
     },
-    ei = {
-      className: a()([w.username, et && er.gradientClassName, et && eo.gradientClassName]),
+    el = {
+      className: a()([R.username, et && er.gradientClassName, et && eo.gradientClassName]),
       style: (() => {
-        if (Q) return et && null != X ? R({}, er.gradientStyle) : null != J ? {
+        if (Q) return et && null != X ? T({}, er.gradientStyle) : null != J ? {
           color: J
         } : void 0
       })(),
       onClick: _,
       onContextMenu: L,
-      children: W + q
-    },
-    ea = {
-      className: a()([el.gradientClassName, eo.gradientClassName]),
-      style: T(R({}, el.gradientStyle), {
-        inset: 0
-      })
+      children: W + q,
+      "data-text": W + q
     };
 
-  function es(e) {
+  function ei(e) {
     let t = null != C ? C : i.author;
-    return (0, x.Z)(t.id, null != r.guildMemberAvatar && null != U ? (0, S.JM)({
+    return (0, x.Z)(t.id, null != r.guildMemberAvatar && null != U ? (0, P.JM)({
       guildId: U,
       userId: t.id,
       avatar: r.guildMemberAvatar,
@@ -149,33 +142,33 @@ function Z(e) {
       abortSignal: e
     })
   }
-  let ec = o.useMemo(() => Z ? (0, l.jsx)(g.ZP, {
+  let ea = l.useMemo(() => Z ? (0, o.jsx)(b.ZP, {
       primaryGuild: r.primaryGuild,
       userId: i.author.id,
       contextGuildId: U,
-      className: w.clanTagChiplet
+      className: R.clanTagChiplet
     }) : null, [Z, r.primaryGuild, U, i.author.id]),
-    eu = (0, h.nT)({
+    ec = (0, j.nT)({
       location: "BaseUsername"
     }),
     {
-      showPopoutFromHover: ed,
-      onRequestClose: em,
-      onMouseEnter: ep,
-      onMouseLeave: ef
-    } = (0, j.Z)({
-      shouldShowPopoutOnHover: eu,
-      handlePreload: es
+      showPopoutFromHover: es,
+      onRequestClose: eu,
+      onMouseEnter: em,
+      onMouseLeave: ep
+    } = (0, h.Z)({
+      shouldShowPopoutOnHover: ec,
+      handlePreload: ei
     });
   if (null != D && null != I) {
-    let e = (0, l.jsx)(u.yRy, {
+    let e = (0, o.jsx)(u.yRy, {
       targetElementRef: B,
-      preload: Y || I || ed ? void 0 : es,
+      preload: Y || I || es ? void 0 : ei,
       renderPopout: D,
-      shouldShow: I || ed,
-      position: s.tq ? "window_center" : "right",
+      shouldShow: I || es,
+      position: c.tq ? "window_center" : "right",
       onRequestClose: () => {
-        null == em || em(), null == M || M()
+        null == eu || eu(), null == M || M()
       },
       clickTrap: I,
       children: e => {
@@ -183,59 +176,55 @@ function Z(e) {
           onClick: t
         } = e, n = function(e, t) {
           if (null == e) return {};
-          var n, r, l = function(e, t) {
+          var n, r, o = function(e, t) {
             if (null == e) return {};
-            var n, r, l = {},
-              o = Object.keys(e);
-            for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-            return l
+            var n, r, o = {},
+              l = Object.keys(e);
+            for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+            return o
           }(e, t);
           if (Object.getOwnPropertySymbols) {
-            var o = Object.getOwnPropertySymbols(e);
-            for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+            var l = Object.getOwnPropertySymbols(e);
+            for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
           }
-          return l
+          return o
         }(e, ["onClick"]);
-        return (0, l.jsxs)(l.Fragment, {
-          children: [(0, l.jsx)(u.P3F, T(R({
+        return (0, o.jsxs)(o.Fragment, {
+          children: [(0, o.jsx)(u.P3F, w(T({
             tag: "span",
             innerRef: B
-          }, n, ei), {
-            className: a()(ei.className, w.clickable, A)
-          })), et && (0, l.jsx)("span", T(R({}, ea), {
-            children: W + q
-          })), ec]
+          }, n, el), {
+            className: a()(el.className, R.clickable, A)
+          })), ea]
         })
       }
     });
-    n = eu ? (0, l.jsx)("div", {
-      className: w.hoverable,
-      onMouseEnter: ep,
-      onMouseLeave: ef,
+    n = ec ? (0, o.jsx)("div", {
+      className: R.hoverable,
+      onMouseEnter: em,
+      onMouseLeave: ep,
       children: e
     }) : e
-  } else n = (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(u.P3F, T(R({}, ei), {
-      className: a()(ei.className, A)
-    })), et && (0, l.jsx)("span", T(R({}, ea), {
-      children: W + q
-    })), ec]
+  } else n = (0, o.jsxs)(o.Fragment, {
+    children: [(0, o.jsx)(u.P3F, w(T({}, el), {
+      className: a()(el.className, A)
+    })), ea]
   });
-  let eg = null != G ? G[0] : null,
-    eb = null != G ? G[1] : null;
-  return (0, l.jsxs)(p.Gt, {
+  let ed = null != G ? G[0] : null,
+    ef = null != G ? G[1] : null;
+  return (0, o.jsxs)(d.Gt, {
     value: H,
-    children: [null != eg && Z ? (0, l.jsxs)(l.Fragment, {
-      children: [" ", eg, " "]
-    }) : null, "dot" === $ ? (0, l.jsx)(u.FhE, {
+    children: [null != ed && Z ? (0, o.jsxs)(o.Fragment, {
+      children: [" ", ed, " "]
+    }) : null, "dot" === $ ? (0, o.jsx)(u.FhE, {
       color: J,
       name: V,
-      className: w.roleDot
-    }) : null, n, !Z && (0, l.jsx)(g.ZP, {
+      className: R.roleDot
+    }) : null, n, !Z && (0, o.jsx)(b.ZP, {
       primaryGuild: r.primaryGuild,
       userId: i.author.id,
       contextGuildId: U,
-      className: w.clanTagChiplet
-    }), null != eb ? eb : null, null == eg || Z ? null : eg, null != i && (0, P.f)(i) && K && F ? (0, l.jsx)(E, {}) : null]
+      className: R.clanTagChiplet
+    }), null != ef ? ef : null, null == ed || Z ? null : ed, null != i && (0, S.f)(i) && K && F ? (0, o.jsx)(E, {}) : null]
   })
 }

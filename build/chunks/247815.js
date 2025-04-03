@@ -1,3 +1,3 @@
-/** Chunk was on 73488 **/
+/** Chunk was on 86328 **/
 "use strict";
 e.exports = "/assets/ed5b58fd90a77573.png"

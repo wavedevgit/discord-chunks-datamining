@@ -10,12 +10,12 @@ let a = e => {
   let {
     facepileRef: t,
     goToThread: a,
-    channel: s
+    channel: l
   } = e;
   return {
     handleLeftClick: e => {
       var n;
-      (0, r.k)(e.target) && (null == (n = t.current) ? void 0 : n.contains(e.target)) || a(s, e.shiftKey)
+      (0, r.k)(e.target) && (null == (n = t.current) ? void 0 : n.contains(e.target)) || a(l, e.shiftKey)
     },
     handleRightClick: e => (0, o.jW)(e, async () => {
       let {
@@ -41,7 +41,7 @@ let a = e => {
           }
           return e
         }({}, t), r = r = {
-          channel: s
+          channel: l
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

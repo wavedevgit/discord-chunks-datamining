@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(626135),
   x = n(135431),
   y = n(471518),
-  E = n(370210),
-  v = n(258971),
+  v = n(370210),
+  E = n(258971),
   O = n(981631),
   N = n(49898),
   j = n(388032),
@@ -37,7 +37,7 @@ function I(e) {
     enabled: A
   } = u.G.useExperiment({
     location: "ApplicationDirectoryProfileEmbed"
-  }), [w, Z, k] = (0, o.Wu)([E.Z], () => [E.Z.getApplication(S), E.Z.isInvalidApplication(S), E.Z.getApplicationFetchState(S)], [S]), R = (0, o.e7)([h.default], () => h.default.locale), D = (0, o.e7)([_.Z], () => {
+  }), [w, Z, k] = (0, o.Wu)([v.Z], () => [v.Z.getApplication(S), v.Z.isInvalidApplication(S), v.Z.getApplicationFetchState(S)], [S]), R = (0, o.e7)([h.default], () => h.default.locale), D = (0, o.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getGuildId()) ? e : void 0
   }), [L, M] = i.useState(!1), W = i.useCallback(e => {
@@ -54,7 +54,7 @@ function I(e) {
   i.useEffect(() => {
     (0, y.gZ)(S)
   }, [S]), i.useEffect(() => {
-    L && k === E.M.FETCHED && F()
+    L && k === v.M.FETCHED && F()
   }, [L, k, F]), i.useEffect(() => {
     L && Z && b.default.track(O.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
@@ -76,7 +76,7 @@ function I(e) {
       newSessionState: {
         guildId: D,
         entrypoint: {
-          name: v.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
+          name: E.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
         }
       }
     })
@@ -104,7 +104,7 @@ function I(e) {
       })
     })]
   });
-  if (null == w || k === E.M.FETCHING) return (0, r.jsxs)(f.Z, {
+  if (null == w || k === v.M.FETCHING) return (0, r.jsxs)(f.Z, {
     containerRef: U,
     children: [(0, r.jsx)(f.Z.Header, {
       text: j.NW.string(j.t.m9hXGR)

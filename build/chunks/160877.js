@@ -1,7 +1,7 @@
 /** Chunk was on 68631 **/
 n.d(t, {
-  $: () => v,
-  s: () => E
+  $: () => E,
+  s: () => v
 }), n(266796);
 var r = n(200651),
   i = n(192379),
@@ -60,14 +60,14 @@ let b = e => {
     })
   };
 
-function E(e) {
+function v(e) {
   c.Z.pop(), (0, m.t)({
     id: "explicit-media-false-positive-modal",
     text: g.NW.string(g.t.gFsTKi)
   }), e()
 }
 
-function v(e) {
+function E(e) {
   let {
     channelId: t,
     messageId: n,
@@ -85,7 +85,7 @@ function v(e) {
       messageId: n,
       context: l
     }), m()
-  }, [t, n, l, m]), E = i.useCallback(() => {
+  }, [t, n, l, m]), v = i.useCallback(() => {
     null == d || d(), (0, f.aP)({
       action: f.Yy.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
       channelId: t,
@@ -131,7 +131,7 @@ function v(e) {
         submitting: a,
         size: s.zxk.Sizes.MEDIUM,
         color: s.zxk.Colors.BRAND,
-        onClick: E,
+        onClick: v,
         children: g.NW.string(g.t["cY+Ooa"])
       }), (0, r.jsx)(s.zxk, {
         className: _.button,

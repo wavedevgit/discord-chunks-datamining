@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i, r, o = n(200651),
   a = n(192379),
-  s = n(392711),
-  l = n.n(s),
+  l = n(392711),
+  s = n.n(l),
   c = n(748780),
   u = n(451478);
 
@@ -128,7 +128,7 @@ class b extends(r = a.PureComponent) {
     } = this.state, {
       color: n,
       formatString: i
-    } = this.props, r = l().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
+    } = this.props, r = s().omit(this.props, ["value", "digitWidth", "padStartLength", "forcePosition"]);
     if (null == e) return (0, o.jsx)("div", p(h({}, r), {
       style: {
         color: n,

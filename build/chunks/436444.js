@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  P: () => T,
-  Z: () => N
+  P: () => S,
+  Z: () => T
 }), n(411104);
 var r = n(200651);
 n(192379);
@@ -12,18 +12,17 @@ var i = n(120356),
   s = n(481060),
   l = n(906732),
   c = n(975298),
-  u = n(317169),
-  d = n(471885),
-  f = n(267642),
-  _ = n(879892),
-  p = n(198466),
-  h = n(981631),
-  m = n(474936),
-  g = n(388032),
-  E = n(680278),
-  b = n(910307);
+  u = n(471885),
+  d = n(267642),
+  f = n(879892),
+  _ = n(198466),
+  p = n(981631),
+  h = n(474936),
+  m = n(388032),
+  g = n(680278),
+  E = n(910307);
 
-function y(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,20 +31,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function O(e, t) {
+function v(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -56,133 +55,133 @@ function O(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
+function O(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function S(e) {
+function I(e) {
   switch (e) {
-    case h.Eu4.TIER_3:
-      return h.Qqv.TIER_3;
-    case h.Eu4.TIER_2:
-      return h.Qqv.TIER_2;
-    case h.Eu4.TIER_1:
-      return h.Qqv.TIER_1;
+    case p.Eu4.TIER_3:
+      return p.Qqv.TIER_3;
+    case p.Eu4.TIER_2:
+      return p.Qqv.TIER_2;
+    case p.Eu4.TIER_1:
+      return p.Qqv.TIER_1;
     default:
       throw Error("Unsupported Boosting tier: ".concat(e))
   }
 }
-let T = {
-    [h.Eu4.NONE]: 0,
-    [h.Eu4.TIER_1]: 1 / 3,
-    [h.Eu4.TIER_2]: 2 / 3,
-    [h.Eu4.TIER_3]: 1
+let S = {
+    [p.Eu4.NONE]: 0,
+    [p.Eu4.TIER_1]: 1 / 3,
+    [p.Eu4.TIER_2]: 2 / 3,
+    [p.Eu4.TIER_3]: 1
   },
-  N = function(e) {
+  T = function(e) {
     let {
       children: t,
       confettiTriggerRef: n,
       guild: i,
-      isProgressBarAnimationComplete: y,
-      setConfettiCount: O,
-      setShouldFireConfetti: N,
-      tier: A,
-      tierMarkerAnimationPosition: C,
-      totalAvailableBoostsCount: R
+      isProgressBarAnimationComplete: b,
+      setConfettiCount: v,
+      setShouldFireConfetti: T,
+      tier: N,
+      tierMarkerAnimationPosition: A,
+      totalAvailableBoostsCount: C
     } = e, {
-      analyticsLocations: P
-    } = (0, l.ZP)(), w = (0, c.Z)(), D = (0, u.Z)(i.id).available, L = h.oCV[A], x = L - D, M = A <= C || y, k = M && A <= i.premiumTier, j = M && A < i.premiumTier, U = M && A === i.premiumTier, G = i.premiumTier < A && R >= L, {
-      scaleFactor: B
+      analyticsLocations: R
+    } = (0, l.ZP)(), P = (0, c.Z)(), w = p.oCV[N], D = w - C, L = N <= A || b, x = L && N <= i.premiumTier, M = L && N < i.premiumTier, k = L && N === i.premiumTier, j = i.premiumTier < N && C >= w, {
+      scaleFactor: U
     } = (0, s.q_F)({
       from: {
         scaleFactor: 0
       },
       to: {
-        scaleFactor: C >= A || y && C + 1 === A || y && -1 === C && A === h.Eu4.NONE ? 1 : 0
+        scaleFactor: A >= N || b && A + 1 === N || b && -1 === A && N === p.Eu4.NONE ? 1 : 0
       },
       config: {
         tension: 360,
         friction: 12
       }
-    }), F = (0, r.jsxs)(r.Fragment, {
+    }), G = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.animated.div, {
-        className: b.progressBarMarkerIndicator,
+        className: E.progressBarMarkerIndicator,
         style: {
-          transform: B.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
+          transform: U.to(e => "translate(-50%, -50%) scale(".concat(e, ")"))
         }
-      }), A !== h.Eu4.NONE ? G ? (0, r.jsx)(s.mTd, {
-        className: o()(b.boostedTierIcon, b.disabledIndicator),
+      }), N !== p.Eu4.NONE ? j ? (0, r.jsx)(s.mTd, {
+        className: o()(E.boostedTierIcon, E.disabledIndicator),
         size: "xxs",
         color: "currentColor"
-      }) : (0, r.jsx)(d.Z, {
-        tier: A,
+      }) : (0, r.jsx)(u.Z, {
+        tier: N,
         color: "currentColor",
-        className: b.boostedTierIcon
+        className: E.boostedTierIcon
       }) : void 0]
     });
 
-    function V() {
-      M && (G || (0, _.u)({
-        analyticsLocations: P,
+    function B() {
+      L && (j || (0, f.u)({
+        analyticsLocations: R,
         analyticsLocation: {
-          page: h.ZY5.PREMIUM_GUILD_USER_MODAL,
-          section: h.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
-          object: h.qAy.SUBSCRIBE_TO_TIER_BUTTON,
-          objectType: S(A)
+          page: p.ZY5.PREMIUM_GUILD_USER_MODAL,
+          section: p.jXE.PREMIUM_GUILD_USER_MODAL_PROGRESS_BAR,
+          object: p.qAy.SUBSCRIBE_TO_TIER_BUTTON,
+          objectType: I(N)
         },
-        numberOfBoostsToAdd: x,
+        numberOfBoostsToAdd: D,
         guild: i
       }))
     }
-    let Z = !k && w.fractionalState === m.a$.NONE,
-      H = Z ? s.P3F : "div",
-      W = Z ? {
-        onClick: V
+    let F = !x && P.fractionalState === h.a$.NONE,
+      V = F ? s.P3F : "div",
+      Z = F ? {
+        onClick: B
       } : {};
     return (0, r.jsx)(s.ua7, {
-      tooltipClassName: b.tooltip,
-      text: k ? g.NW.formatToPlainString(g.t["1o48kp"], {
-        tierName: (0, f.nW)(A, {
+      tooltipClassName: E.tooltip,
+      text: x ? m.NW.formatToPlainString(m.t["1o48kp"], {
+        tierName: (0, d.nW)(N, {
           useLevels: !1
         })
-      }) : G ? g.NW.formatToPlainString(E.Z["9CtPjo"], {
-        perk: (0, f.nW)(A, {
+      }) : j ? m.NW.formatToPlainString(g.Z["9CtPjo"], {
+        perk: (0, d.nW)(N, {
           useLevels: !1
         })
-      }) : g.NW.formatToPlainString(g.t.r6NN6e, {
-        numBoostsRequired: x,
-        tierName: (0, f.nW)(A, {
+      }) : m.NW.formatToPlainString(m.t.r6NN6e, {
+        numBoostsRequired: D,
+        tierName: (0, d.nW)(N, {
           useLevels: !1
         })
       }),
-      shouldShow: A !== h.Eu4.NONE,
-      children: e => (0, r.jsxs)(H, I(v({
-        className: o()(b.progressBarMarker, {
-          [b.progressBarMarkerUnlocked]: k,
-          [b.progressBarMarkerLocked]: Z,
-          [b.progressBarMarkerLower]: j,
-          [b.progressBarMarkerCurrent]: U
+      shouldShow: N !== p.Eu4.NONE,
+      children: e => (0, r.jsxs)(V, O(y({
+        className: o()(E.progressBarMarker, {
+          [E.progressBarMarkerUnlocked]: x,
+          [E.progressBarMarkerLocked]: F,
+          [E.progressBarMarkerLower]: M,
+          [E.progressBarMarkerCurrent]: k
         }),
         style: {
-          left: "".concat(100 * T[A], "%")
+          left: "".concat(100 * S[N], "%")
         }
-      }, e, W), {
-        children: [!k && (0, r.jsx)("div", {
-          className: b.boostedTierIconBackground
-        }), k && A === h.Eu4.TIER_3 ? (0, r.jsx)(p.m, {
+      }, e, Z), {
+        children: [!x && (0, r.jsx)("div", {
+          className: E.boostedTierIconBackground
+        }), x && N === p.Eu4.TIER_3 ? (0, r.jsx)(_.m, {
           confettiTriggerRef: n,
-          setConfettiCount: O,
-          setShouldFireConfetti: N,
-          children: F
-        }) : F, (0, r.jsxs)(s.Text, {
-          className: b.progressBarMarkerLabel,
+          setConfettiCount: v,
+          setShouldFireConfetti: T,
+          children: G
+        }) : G, (0, r.jsxs)(s.Text, {
+          className: E.progressBarMarkerLabel,
           variant: "text-md/normal",
-          children: [k && A !== h.Eu4.NONE && (0, r.jsx)(s.dz2, {
+          children: [x && N !== p.Eu4.NONE && (0, r.jsx)(s.dz2, {
             size: "md",
             color: "currentColor",
-            className: b.progressBarMarkerUnlockedIcon
+            className: E.progressBarMarkerUnlockedIcon
           }), t]
         })]
       }))

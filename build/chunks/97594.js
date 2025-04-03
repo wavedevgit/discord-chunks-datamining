@@ -1,4 +1,4 @@
-/** Chunk was on 15820 **/
+/** Chunk was on 58593 **/
 n.r(t), n.d(t, {
   default: () => h
 }), n(47120);
@@ -27,8 +27,8 @@ function h(e) {
     startingIndex: o,
     shouldRedactExplicitContent: h,
     shouldHideMediaOptions: S = !1,
-    className: C,
-    transitionState: E
+    className: E,
+    transitionState: C
   } = e, v = function(e, t) {
     if (null == e) return {};
     var n, a, r = function(e, t) {
@@ -51,7 +51,7 @@ function h(e) {
     }
   }, [t]), r.useEffect(() => {
     var e, t;
-    E === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), E === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
+    C === s.Dvm.ENTERED && (u.Z.disable(), u.Z.enableTemp(l.P)), C === s.Dvm.HIDDEN && (u.Z.disable(), u.Z.enableTemp(l.v));
     let n = () => {
         u.Z.disable(), u.Z.enableTemp(l.P)
       },
@@ -62,16 +62,16 @@ function h(e) {
     return null == r || r.addEventListener("focus", n), null == r || r.addEventListener("blur", a), () => {
       null == r || r.removeEventListener("focus", n), null == r || r.removeEventListener("blur", a), u.Z.disableTemp()
     }
-  }, [E]);
+  }, [C]);
   let D = r.useCallback(e => {
       j(e), (0, m.yg)(m.uG.SELECTED_ITEM_CHANGE)
     }, []),
     N = r.useMemo(() => ({
       zoomed: P,
       setZoomed: x,
-      entering: E === s.Dvm.ENTERING || null == E
-    }), [P, E]),
-    w = n[T];
+      entering: C === s.Dvm.ENTERING || null == C
+    }), [P, C]),
+    A = n[T];
   return (0, a.jsx)(s.f6W, {
     theme: I ? y.BRd.MIDNIGHT : y.BRd.DARK,
     children: e => {
@@ -96,7 +96,7 @@ function h(e) {
       }({
         hideShadow: !0,
         className: i()(O.carouselModal, e),
-        transitionState: E
+        transitionState: C
       }, v), o = o = {
         size: s.CgR.DYNAMIC,
         animation: c.fM.SUBTLE,
@@ -106,7 +106,7 @@ function h(e) {
         children: (0, a.jsxs)(_.z.Provider, {
           value: N,
           children: [(0, a.jsx)(f.Z, {
-            item: w,
+            item: A,
             hideMediaOptions: S,
             onClose: t
           }), (0, a.jsx)("div", {

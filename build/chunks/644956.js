@@ -116,6 +116,7 @@ function k(e) {
       return (0, r.jsx)(d.Z, D({
         selected: l,
         colorString: t.colorString,
+        colorStrings: t.colorStrings,
         colorRoleName: a.name,
         user: f,
         isOwner: t.userId === s,

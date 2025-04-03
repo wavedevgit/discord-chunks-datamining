@@ -21,8 +21,8 @@ var i = n(120356),
   b = n(938475),
   x = n(5192),
   y = n(981631),
-  E = n(388032),
-  v = n(653072);
+  v = n(388032),
+  E = n(653072);
 
 function O(e) {
   var t, n, i, O, N, j, C, I, S, T;
@@ -44,24 +44,24 @@ function O(e) {
       rawName: t
     } = e;
     return "voice_user_ids" === t
-  })) ? void 0 : I.rawValue, V = null != H ? H.split(",") : [], z = (0, l.Wu)([_.default], () => V.map(e => _.default.getUser(e)).filter(Boolean)), K = L && null != W ? E.NW.formatToPlainString(E.t["er/cHx"], {
+  })) ? void 0 : I.rawValue, V = null != H ? H.split(",") : [], z = (0, l.Wu)([_.default], () => V.map(e => _.default.getUser(e)).filter(Boolean)), K = L && null != W ? v.NW.formatToPlainString(v.t["er/cHx"], {
     username: F
-  }) : E.NW.formatToPlainString(E.t.noNjkZ, {
+  }) : v.NW.formatToPlainString(v.t.noNjkZ, {
     username: U.nick
   }), Y = null != k && null != R, X = null;
-  X = Y ? L || G ? E.NW.format(E.t.CaLQqK, {
+  X = Y ? L || G ? v.NW.format(v.t.CaLQqK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
       channel: null != R ? R : void 0
     }, t)
-  }) : E.NW.format(E.t.VugXpK, {
+  }) : v.NW.format(v.t.VugXpK, {
     channelHook: (e, t) => (0, r.jsx)(p.Z, {
       channel: null != R ? R : void 0
     }, t)
-  }) : E.NW.string(E.t["tHT/Vl"]), 0 === B.length && (X = L ? E.NW.string(E.t.IE2uZW) : E.NW.string(E.t.QVhmGx));
-  let q = L ? E.NW.string(E.t["00XIbm"]) : E.NW.string(E.t["7CrE9/"]);
+  }) : v.NW.string(v.t["tHT/Vl"]), 0 === B.length && (X = L ? v.NW.string(v.t.IE2uZW) : v.NW.string(v.t.QVhmGx));
+  let q = L ? v.NW.string(v.t["00XIbm"]) : v.NW.string(v.t["7CrE9/"]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: v.card,
+      className: E.card,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -71,7 +71,7 @@ function O(e) {
         color: "header-secondary",
         children: X
       }), B.length > 0 ? (0, r.jsx)("div", {
-        className: v.participants,
+        className: E.participants,
         children: (0, r.jsx)(m.Z, {
           guildId: w,
           partySize: {
@@ -83,7 +83,7 @@ function O(e) {
           maxAvatarsShown: 5
         })
       }) : (0, r.jsx)("div", {
-        className: a()(v.participants, v.disabled),
+        className: a()(E.participants, E.disabled),
         children: (0, r.jsx)(m.Z, {
           guildId: w,
           partySize: {
@@ -96,25 +96,25 @@ function O(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: v.actions,
+      className: E.actions,
       children: [(0, r.jsxs)(o.zxk, {
         color: o.zxk.Colors.BRAND,
         onClick: () => {
           null != Z && null != w && ((0, f.uL)(y.Z5c.CHANNEL(w, Z)), c.default.selectVoiceChannel(Z))
         },
-        className: v.button,
-        innerClassName: v.buttonInner,
+        className: E.button,
+        innerClassName: E.buttonInner,
         disabled: G || !Y,
         children: [(0, r.jsx)(o.gj8, {
           size: "md",
           color: "currentColor"
-        }), E.NW.string(E.t.zIeJq6)]
+        }), v.NW.string(v.t.zIeJq6)]
       }), (0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
         onClick: () => {
           s.Z.sendMessage(A.id, u.ZP.parse(A, "\uD83D\uDC4B"))
         },
-        className: v.button,
+        className: E.button,
         children: q
       })]
     })]

@@ -17,18 +17,18 @@ var r = t(200651),
   _ = t(953478),
   v = t(460608),
   f = t(279604),
-  b = t(332538),
-  g = t(535396),
+  g = t(332538),
+  b = t(535396),
   j = t(680278),
   h = t(388032),
   Z = t(782285);
-let N = [g.Us.LEVEL, g.Us.PERK];
+let N = [b.Us.LEVEL, b.Us.PERK];
 
 function C(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, i = (0, b.Z)(n);
+  } = e, i = (0, g.Z)(n);
   o.useEffect(() => {
     (0, u.Sn)(n), (0, u.Fm)(n)
   }, [n]), o.useEffect(() => {
@@ -66,11 +66,11 @@ function C(e) {
             description: i
           } = function(e) {
             switch (e) {
-              case g.Us.LEVEL:
+              case b.Us.LEVEL:
                 return {
                   title: h.NW.string(j.Z["TXY/b2"]), description: h.NW.string(j.Z.aJv4PD)
                 };
-              case g.Us.PERK:
+              case b.Us.PERK:
                 return {
                   title: h.NW.string(j.Z.TV3Vm5), description: h.NW.string(j.Z.NHjM1t)
                 }
@@ -90,18 +90,18 @@ function C(e) {
               })]
             }), (0, r.jsx)("div", {
               className: s()(Z.powerupContainer, {
-                [Z.powerupsLevelContainer]: e === g.Us.LEVEL
+                [Z.powerupsLevelContainer]: e === b.Us.LEVEL
               }),
               children: t.map((e, o) => {
                 switch (e.type) {
-                  case g.Us.LEVEL:
+                  case b.Us.LEVEL:
                     return (0, r.jsx)(m.ZP, {
                       guildId: n,
                       index: o,
                       powerup: e,
                       nextPowerup: t[o + 1]
                     }, "powerup-".concat(e.skuId));
-                  case g.Us.PERK:
+                  case b.Us.PERK:
                     return (0, r.jsx)(x.Z, {
                       guildId: n,
                       powerup: e

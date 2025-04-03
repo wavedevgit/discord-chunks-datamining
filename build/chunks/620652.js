@@ -6,9 +6,9 @@ n.d(t, {
 var i, r = n(200651),
   o = n(192379),
   a = n(120356),
-  s = n.n(a),
-  l = n(500923),
-  c = n.n(l),
+  l = n.n(a),
+  s = n(500923),
+  c = n.n(s),
   u = n(570140),
   d = n(960020),
   h = n(831244),
@@ -30,16 +30,16 @@ function j(e) {
     effect: n,
     onComplete: i,
     emojiSize: a = 16
-  } = e, l = o.useRef(null), h = a * p.Vz, m = (h + a) / 2;
+  } = e, s = o.useRef(null), h = a * p.Vz, m = (h + a) / 2;
   return o.useEffect(() => {
     let e;
     if (null != n) return !async function() {
-      if (null != l.current) {
+      if (null != s.current) {
         let t = await b({
           effect: n
         });
         (e = c().loadAnimation({
-          container: l.current,
+          container: s.current,
           renderer: "svg",
           loop: !1,
           autoplay: !0,
@@ -60,13 +60,13 @@ function j(e) {
   }, [i, n, a]), (0, r.jsx)("div", {
     className: f.effectsWrapper,
     children: (0, r.jsx)("div", {
-      className: s()(f.effect, t),
+      className: l()(f.effect, t),
       style: {
         transform: "translateY(".concat(m, "px)"),
         height: h,
         width: h
       },
-      ref: l
+      ref: s
     })
   })
 }

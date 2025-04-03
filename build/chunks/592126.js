@@ -3,14 +3,14 @@ t.d(n, {
   Z: () => a
 });
 var i = t(442837),
-  r = t(241155),
-  l = t(430824);
+  l = t(241155),
+  r = t(430824);
 
 function a(e, n) {
-  return (0, i.cj)([l.Z, r.Z], () => {
-    let t = l.Z.getGuild(e),
+  return (0, i.cj)([r.Z, l.Z], () => {
+    let t = r.Z.getGuild(e),
       i = null != t;
-    return null == t && null != n && (t = r.Z.getCachedGuildByEventId(n)), {
+    return null == t && null != n && (t = l.Z.getCachedGuildByEventId(n)), {
       isMember: i,
       guild: t
     }

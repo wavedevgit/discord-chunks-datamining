@@ -1,49 +1,49 @@
 /** Chunk was on 95477 **/
 n.d(t, {
-  b: () => s,
-  x: () => c
+  b: () => c,
+  x: () => s
 });
 var r = n(200651);
 n(192379);
-var l = n(385499),
-  o = n(245315),
+var o = n(385499),
+  l = n(245315),
   i = n(368859),
   a = n(848697);
 
-function s(e) {
+function c(e) {
   let t, {
     message: n,
     channel: r,
     user: a,
-    isRepliedMessage: s
+    isRepliedMessage: c
   } = e;
-  return (null == n ? void 0 : n.isSystemDM()) ? t = l.Z.Types.SYSTEM_DM : null != n && (0, i.Z)(n) ? t = (0, o.cp)(n) ? l.Z.Types.OFFICIAL : l.Z.Types.SERVER : (null == a ? void 0 : a.bot) ? t = l.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == a ? void 0 : a.id) && !s && (t = l.Z.Types.ORIGINAL_POSTER), t
+  return (null == n ? void 0 : n.isSystemDM()) ? t = o.Z.Types.SYSTEM_DM : null != n && (0, i.Z)(n) ? t = (0, l.cp)(n) ? o.Z.Types.OFFICIAL : o.Z.Types.SERVER : (null == a ? void 0 : a.bot) ? t = o.Z.Types.BOT : null != r && r.isForumPost() && r.ownerId === (null == a ? void 0 : a.id) && !c && (t = o.Z.Types.ORIGINAL_POSTER), t
 }
 
-function c(e) {
+function s(e) {
   let {
     message: t,
     channel: n,
-    user: o,
+    user: l,
     compact: i,
-    isRepliedMessage: c,
+    isRepliedMessage: s,
     hideIcon: u = !1,
-    children: d
-  } = e, m = s({
+    children: m
+  } = e, p = c({
     message: t,
     channel: n,
-    user: o,
+    user: l,
     compact: i,
-    isRepliedMessage: c,
+    isRepliedMessage: s,
     hideIcon: u,
-    children: d
+    children: m
   });
-  return null == m ? null : (0, r.jsx)(l.Z, {
+  return null == p ? null : (0, r.jsx)(o.Z, {
     className: i ? a.botTagCompact : a.botTagCozy,
-    type: m,
-    verified: null == o ? void 0 : o.isVerifiedBot(),
+    type: p,
+    verified: null == l ? void 0 : l.isVerifiedBot(),
     hideIcon: u,
     useRemSizes: !0,
-    children: d
+    children: m
   })
 }

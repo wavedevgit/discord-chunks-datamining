@@ -8,8 +8,8 @@ n(192379);
 var r = n(481060),
   o = n(230711),
   a = n(104494),
-  s = n(639119),
-  l = n(790527),
+  l = n(639119),
+  s = n(790527),
   c = n(474936),
   u = n(981631),
   d = n(388032),
@@ -60,10 +60,10 @@ function f(e) {
         o.Z.open(u.oAB.PREMIUM), r()
       }
     }),
-    j = (0, s.N)(),
+    j = (0, l.N)(),
     v = (0, a.Ng)(),
     O = null != j || null != v;
-  return (0, i.jsx)(l.Z, m({
+  return (0, i.jsx)(s.Z, m({
     artURL: p,
     artContainerClassName: h.artContainer,
     modalClassName: h.modalContainer,

@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(176412),
   x = n(213459),
   y = n(581364),
-  E = n(220082),
-  v = n(749681),
+  v = n(220082),
+  E = n(749681),
   O = n(258971),
   N = n(240991),
   j = n(592125),
@@ -64,7 +64,7 @@ function G(e) {
   let {
     application: n,
     embedUrl: u
-  } = e, d = null == (t = n.bot) ? void 0 : t.id, E = (0, _.ye)(n) && null != d, T = (0, o.e7)([S.Z], () => {
+  } = e, d = null == (t = n.bot) ? void 0 : t.id, v = (0, _.ye)(n) && null != d, T = (0, o.e7)([S.Z], () => {
     var e;
     return null != (e = S.Z.getGuildId()) ? e : void 0
   }), {
@@ -142,19 +142,19 @@ function G(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: W.buttonContainer,
-        children: [E && (0, r.jsx)(s.zxk, {
+        children: [v && (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.BRAND,
           type: "button",
           size: s.zxk.Sizes.MEDIUM,
           onClick: en,
           children: M.NW.string(M.t.RscU7O)
         }), (Q || J) && ee && (0, r.jsx)(s.zxk, {
-          color: E ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
+          color: v ? s.zxk.Colors.PRIMARY : s.zxk.Colors.BRAND,
           type: "button",
           size: s.zxk.Sizes.MEDIUM,
           onClick: () => {
             var e;
-            l.Y.USER_INSTALL in (null != (e = n.integrationTypesConfig) ? e : {}) || Q ? (0, b.X)(n.id) : (0, v.transitionToGlobalDiscovery)({
+            l.Y.USER_INSTALL in (null != (e = n.integrationTypesConfig) ? e : {}) || Q ? (0, b.X)(n.id) : (0, E.transitionToGlobalDiscovery)({
               tab: L.GlobalDiscoveryTab.APPS,
               applicationId: n.id,
               newSessionState: {
@@ -166,7 +166,7 @@ function G(e) {
             })
           },
           children: M.NW.string(M.t.fbcCzc)
-        }), !E && !Q && (0, r.jsx)(s.zxk, {
+        }), !v && !Q && (0, r.jsx)(s.zxk, {
           color: s.zxk.Colors.PRIMARY,
           type: "button",
           size: s.zxk.Sizes.MEDIUM,
@@ -197,7 +197,7 @@ function H(e) {
     applicationId: t.id,
     size: 280,
     names: ["embedded_cover"]
-  }), a = (0, E.ZP)(n, ""), l = t.bot, o = null, s = {};
+  }), a = (0, v.ZP)(n, ""), l = t.bot, o = null, s = {};
   if ((0, _.ye)(t)) o = (0, r.jsx)(d.Z, {
     imageBackground: i,
     applicationName: t.name,

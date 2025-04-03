@@ -21,8 +21,8 @@ var r = n(200651),
   b = n(706454),
   x = n(314897),
   y = n(699516),
-  E = n(914010),
-  v = n(594174),
+  v = n(914010),
+  E = n(594174),
   O = n(768581),
   N = n(433534),
   j = n(506895),
@@ -46,7 +46,7 @@ function k(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, v = (0, f.ye)(t), E = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
@@ -67,7 +67,7 @@ function k(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), H = null != y && E && G, V = F && E && G, z = (0, A.z)(t), K = i.useMemo(() => {
+  }), H = null != y && v && G, V = F && v && G, z = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return V && e.push({
       label: null == W ? w.NW.string(w.t.cnBQPD) : w.NW.string(w.t.VJlc0d),
@@ -98,7 +98,7 @@ function k(e) {
         })
       }
     }), null != z && e.push(z), e
-  }, [V, H, z, W, U, M, t.id, B, l, k, L, y]), Y = E ? (0, r.jsx)(D, {
+  }, [V, H, z, W, U, M, t.id, B, l, k, L, y]), Y = v ? (0, r.jsx)(D, {
     app: t
   }) : (0, r.jsx)(R, {
     app: t
@@ -108,7 +108,7 @@ function k(e) {
     staticBannerSrc: N,
     videoBannerSrc: I,
     bannerAspectRatio: Z,
-    iconSrc: v,
+    iconSrc: E,
     embedUrl: n,
     info: Y,
     actions: K,
@@ -167,14 +167,14 @@ function D(e) {
   } = e, {
     tags: n,
     maxParticipants: a
-  } = t, c = (0, o.e7)([E.Z], () => {
+  } = t, c = (0, o.e7)([v.Z], () => {
     var e;
-    return null != (e = E.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
+    return null != (e = v.Z.getGuildId()) ? e : void 0
+  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([E.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = v.default.getUser(n.author_id),
+      let r = E.default.getUser(n.author_id),
         i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
