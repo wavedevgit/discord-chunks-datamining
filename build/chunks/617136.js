@@ -130,11 +130,11 @@ function R(e) {
     questContentRowIndex: o,
     impressionId: a,
     trackGuildAndChannelMetadata: s = !1
-  } = e;
+  } = e, l = (0, f.qe)(n);
   A({
     questId: t,
     event: m.rMx.QUEST_CONTENT_CLICKED,
-    properties: v(E({}, N(n, i, o)), {
+    properties: v(E({}, l, N(n, i, o)), {
       cta_name: r,
       impression_id: a
     }),
@@ -194,11 +194,11 @@ function D() {
       questContentPosition: o,
       questContentRowIndex: a,
       trackGuildAndChannelMetadata: s = !1
-    } = t;
+    } = t, l = (0, f.qe)(r);
     e({
       questId: n,
       event: m.rMx.QUEST_CONTENT_CLICKED,
-      properties: v(E({}, N(r, o, a)), {
+      properties: v(E({}, l, N(r, o, a)), {
         cta_name: i
       }),
       trackGuildAndChannelMetadata: s,

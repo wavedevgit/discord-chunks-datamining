@@ -1,54 +1,54 @@
-/** Chunk was on 65438 **/
-r.d(t, {
-  $0: () => E,
-  j1: () => M,
-  nP: () => _,
+/** Chunk was on 37865 **/
+n.d(t, {
+  $0: () => A,
+  j1: () => I,
+  nP: () => g,
   nj: () => O,
-  pX: () => p
-}), r(47120);
-var n = r(192379),
-  l = r(688619),
-  i = r.n(l),
-  a = r(392711),
-  o = r.n(a),
-  s = r(780384),
-  h = r(481060),
-  c = r(410030),
-  v = r(564334),
-  u = r(302221),
-  d = r(308083);
+  pX: () => N
+}), n(47120);
+var r = n(192379),
+  l = n(688619),
+  a = n.n(l),
+  s = n(392711),
+  i = n.n(s),
+  o = n(780384),
+  E = n(481060),
+  c = n(410030),
+  u = n(564334),
+  d = n(302221),
+  _ = n(308083);
 
-function E(e) {
-  let t = i()(e),
-    r = t.get("rgb.r"),
-    n = t.get("rgb.g");
-  return (299 * r + 587 * n + 114 * t.get("rgb.b")) / 1e3 < 128 ? h.TVs.colors.HEADER_PRIMARY.resolve({
+function A(e) {
+  let t = a()(e),
+    n = t.get("rgb.r"),
+    r = t.get("rgb.g");
+  return (299 * n + 587 * r + 114 * t.get("rgb.b")) / 1e3 < 128 ? E.TVs.colors.HEADER_PRIMARY.resolve({
     theme: "dark",
     saturation: 1
-  }) : h.TVs.colors.HEADER_PRIMARY.resolve({
+  }) : E.TVs.colors.HEADER_PRIMARY.resolve({
     theme: "light",
     saturation: 1
   })
 }
 
-function f(e) {
-  return new v.Z(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
+function T(e) {
+  return new u.Z(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
 }
 
-function p(e, t) {
-  var r;
-  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.S3.Text;
+function N(e, t) {
+  var n;
+  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.S3.Text;
   if (null == e) return;
-  let l = null !== (r = function(e) {
+  let l = null !== (n = function(e) {
       var t;
-      let r = i()(e);
-      return null === (t = o()(d.ym).map(e => {
+      let n = a()(e);
+      return null === (t = i()(_.ym).map(e => {
         let {
           primary: t
         } = e;
         return {
           primary: t,
-          distance: i().distance(r, i()(t), "hsl")
+          distance: a().distance(n, a()(t), "hsl")
         }
       }).filter(e => {
         let {
@@ -61,74 +61,74 @@ function p(e, t) {
         } = e;
         return t
       })) || void 0 === t ? void 0 : t.primary
-    }(e)) && void 0 !== r ? r : e,
-    a = i()(l),
-    h = i()(t),
-    c = (0, u.k8)({
-      colors: [f(a), f(h)],
-      ratio: n,
+    }(e)) && void 0 !== n ? n : e,
+    s = a()(l),
+    E = a()(t),
+    c = (0, d.k8)({
+      colors: [T(s), T(E)],
+      ratio: r,
       saturationFactor: 1
     });
-  if (null != c) return i()(c.toHexString())
+  if (null != c) return a()(c.toHexString())
 }
 
-function M(e, t) {
-  let r = function(e, t) {
+function I(e, t) {
+  let n = function(e, t) {
     if (null == e) return;
-    let r = p(e, t, s.S3.NonText);
-    if (null == r) return;
-    let n = .2 > r.luminance() ? r.brighten(.3) : r.darken(.3),
-      l = .2 > r.luminance() ? r.brighten(.35) : r.darken(.35);
+    let n = N(e, t, o.S3.NonText);
+    if (null == n) return;
+    let r = .2 > n.luminance() ? n.brighten(.3) : n.darken(.3),
+      l = .2 > n.luminance() ? n.brighten(.35) : n.darken(.35);
     return {
-      "--custom-clan-bg": r.css(),
-      "--custom-clan-hover-bg": n.css(),
+      "--custom-clan-bg": n.css(),
+      "--custom-clan-hover-bg": r.css(),
       "--custom-clan-active-bg": l.css()
     }
   }(e, t);
-  if (null == r) return;
-  let n = {
-    "--custom-clan-text": E(r["--custom-clan-bg"]).hex()
+  if (null == n) return;
+  let r = {
+    "--custom-clan-text": A(n["--custom-clan-bg"]).hex()
   };
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
-      var r = null != arguments[t] ? arguments[t] : {},
-        n = Object.keys(r);
-      "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-        return Object.getOwnPropertyDescriptor(r, e).enumerable
-      }))), n.forEach(function(t) {
-        var n;
-        n = r[t], t in e ? Object.defineProperty(e, t, {
-          value: n,
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = n
+        }) : e[t] = r
       })
     }
     return e
-  }({}, r, n)
+  }({}, n, r)
 }
 
-function _(e, t) {
-  let [r, l = 1] = t, i = (0, c.ZP)();
-  return n.useMemo(() => null != e ? e : r.resolve({
-    theme: i,
+function g(e, t) {
+  let [n, l = 1] = t, a = (0, c.ZP)();
+  return r.useMemo(() => null != e ? e : n.resolve({
+    theme: a,
     saturation: l
-  }).hex(), [e, r, l, i])
+  }).hex(), [e, n, l, a])
 }
 
 function O(e, t) {
-  let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
-    n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
+  let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
+    r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
     l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "50%";
   if (null == e) return;
-  let a = i()(e),
-    o = {
-      background: "\n      radial-gradient(\n        circle at ".concat(r, ",\n        ").concat(a.alpha(n).hex(), " 0%,\n        transparent ").concat(l, "\n      )\n    ")
+  let s = a()(e),
+    i = {
+      background: "\n      radial-gradient(\n        circle at ".concat(n, ",\n        ").concat(s.alpha(r).hex(), " 0%,\n        transparent ").concat(l, "\n      )\n    ")
     };
   if (null != t) {
-    let e = i()(t);
-    o.background += ", ".concat(e.hex())
+    let e = a()(t);
+    i.background += ", ".concat(e.hex())
   }
-  return o
+  return i
 }

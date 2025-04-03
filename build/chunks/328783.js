@@ -1,6 +1,6 @@
-/** Chunk was on 13323 **/
+/** Chunk was on 10451 **/
 n.d(t, {
-  Z: () => b
+  Z: () => x
 }), n(47120), n(653041);
 var r = n(200651),
   i = n(192379),
@@ -8,33 +8,35 @@ var r = n(200651),
   a = n(481060),
   o = n(313201),
   l = n(993413),
-  c = n(594174),
-  d = n(931240),
-  u = n(353093),
-  m = n(170871),
-  g = n(981631),
-  p = n(388032),
-  h = n(898912);
-let f = (0, o.hQ)(),
-  b = i.memo(function(e) {
+  c = n(996073),
+  d = n(594174),
+  u = n(931240),
+  m = n(353093),
+  g = n(170871),
+  p = n(981631),
+  h = n(526761),
+  f = n(388032),
+  b = n(898912);
+let N = (0, o.hQ)(),
+  x = i.memo(function(e) {
     let {
       availableClans: t
-    } = e, n = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), o = (0, s.e7)([c.default], () => {
+    } = e, n = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), o = (0, s.e7)([d.default], () => {
       var e;
-      return (0, u.Pb)(null === (e = c.default.getCurrentUser()) || void 0 === e ? void 0 : e.primaryGuild).guildId
-    }), b = i.useMemo(() => t.reduce((e, t) => {
+      return (0, m.Pb)(null === (e = d.default.getCurrentUser()) || void 0 === e ? void 0 : e.primaryGuild).guildId
+    }), x = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null === (n = t.profile) || void 0 === n ? void 0 : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), N = i.useCallback(e => {
+    }, []), [t]), _ = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
       if (null == s) return null;
       let a = null === (t = s.profile) || void 0 === t ? void 0 : t.tag;
-      return null == a ? null : (0, r.jsx)(m.Z, {
+      return null == a ? null : (0, r.jsx)(g.Z, {
         clanTag: a,
         clanBadge: null === (i = s.profile) || void 0 === i ? void 0 : i.badge,
         guildId: s.id,
@@ -42,29 +44,30 @@ let f = (0, o.hQ)(),
         guildIcon: s.icon,
         guildIconSize: 32
       })
-    }, [n]), x = i.useCallback(e => {
+    }, [n]), E = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: N(t)
+        children: _(t)
       })
-    }, [N]), _ = i.useCallback(e => (0, d.nE)(e, !0, g.Sbl.USER_SETTINGS), []), E = i.useCallback(e => e === o, [o]), j = i.useCallback(e => e, []), O = i.useCallback(() => (0, d.nE)(null, !1), []);
-    return (0, r.jsxs)(l.Z, {
-      title: p.NW.string(p.t.Pdd1nZ),
-      titleId: f,
+    }, [_]), j = i.useCallback(e => (0, u.nE)(e, !0, p.Sbl.USER_SETTINGS), []), O = i.useCallback(e => e === o, [o]), C = i.useCallback(e => e, []), v = i.useCallback(() => (0, u.nE)(null, !1), []), S = i.useRef(null);
+    return (0, c.Z)(S, h.Y_.GUILD_TAG), (0, r.jsxs)(l.Z, {
+      title: f.NW.string(f.t.Pdd1nZ),
+      titleId: N,
+      ref: S,
       children: [(0, r.jsx)(a.Text, {
-        className: h.subtitle,
+        className: b.subtitle,
         variant: "text-sm/normal",
-        children: p.NW.string(p.t.mlZ6Jy)
+        children: f.NW.string(f.t.mlZ6Jy)
       }), (0, r.jsx)(a.PhF, {
-        className: h.select,
-        optionClassName: h.selectPopout,
-        isSelected: E,
-        options: b,
-        select: _,
-        renderOptionValue: x,
-        renderOptionLabel: N,
-        serialize: j,
-        clear: O,
+        className: b.select,
+        optionClassName: b.selectPopout,
+        isSelected: O,
+        options: x,
+        select: j,
+        renderOptionValue: E,
+        renderOptionLabel: _,
+        serialize: C,
+        clear: v,
         clearable: null != o
       })]
     })

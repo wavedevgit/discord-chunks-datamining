@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => N
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   s = n(835473),
   a = n(297781),
   c = n(443487),
-  d = n(314897),
-  u = n(594174),
+  u = n(314897),
+  d = n(594174),
   _ = n(626135),
   p = n(5192),
   h = n(873128),
@@ -62,7 +62,7 @@ function N(e) {
       leaderboardId: T.extra.leaderboard_id,
       intervalStart: null !== (C = null == j ? void 0 : j.interval_start) && void 0 !== C ? C : ""
     }),
-    A = (0, o.e7)([d.default], () => d.default.getId()),
+    A = (0, o.e7)([u.default], () => u.default.getId()),
     [R, w] = i.useMemo(() => {
       let e = P.find(e => e.userId === A),
         t = P[0],
@@ -70,7 +70,7 @@ function N(e) {
         r = null == j ? void 0 : j.users.find(e => e.user_id === (null == n ? void 0 : n.userId));
       return [n, r]
     }, [j, P, A]),
-    k = (0, o.e7)([u.default], () => u.default.getUser(null == R ? void 0 : R.userId)),
+    k = (0, o.e7)([d.default], () => d.default.getUser(null == R ? void 0 : R.userId)),
     M = p.ZP.getName(L, void 0, k);
   ! function(e) {
     let {

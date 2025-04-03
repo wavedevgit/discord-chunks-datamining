@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => _
 });
@@ -43,35 +43,35 @@ let c = {
     speechRate: 1,
     currentMessage: null
   },
-  d = c;
-class u extends(r = i.ZP.DeviceSettingsStore) {
+  u = c;
+class d extends(r = i.ZP.DeviceSettingsStore) {
   initialize(e) {
-    d = s({}, c, null != e ? e : null)
+    u = s({}, c, null != e ? e : null)
   }
   isSpeakingMessage(e, t) {
     let {
       currentMessage: n
-    } = d;
+    } = u;
     return null !== n && n.channelId === e && n.messageId === t
   }
   get currentMessage() {
-    return d.currentMessage
+    return u.currentMessage
   }
   get speechRate() {
-    return d.speechRate
+    return u.speechRate
   }
   getUserAgnosticState() {
-    return d
+    return u
   }
 }
-l(u, "displayName", "TTSStore"), l(u, "persistKey", "TTSStore"), l(u, "migrations", []);
-let _ = new u(o.Z, __OVERLAY__ ? {} : {
+l(d, "displayName", "TTSStore"), l(d, "persistKey", "TTSStore"), l(d, "migrations", []);
+let _ = new d(o.Z, __OVERLAY__ ? {} : {
   SPEAKING_MESSAGE: function(e) {
     let {
       messageId: t,
       channelId: n
     } = e;
-    d = a(s({}, d), {
+    u = a(s({}, u), {
       currentMessage: {
         messageId: t,
         channelId: n
@@ -79,12 +79,12 @@ let _ = new u(o.Z, __OVERLAY__ ? {} : {
     })
   },
   STOP_SPEAKING: function() {
-    d = a(s({}, d), {
+    u = a(s({}, u), {
       currentMessage: null
     })
   },
   SET_TTS_SPEECH_RATE: function(e) {
-    d = a(s({}, d), {
+    u = a(s({}, u), {
       speechRate: e.speechRate
     })
   }

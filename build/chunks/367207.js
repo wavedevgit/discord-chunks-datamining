@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => Z
 }), n(411104), n(47120);
@@ -10,8 +10,8 @@ var i = n(392711),
   s = n(904245),
   a = n(317770),
   c = n(100527),
-  d = n(358221),
-  u = n(963249),
+  u = n(358221),
+  d = n(963249),
   _ = n(93127),
   p = n(430824),
   h = n(594174),
@@ -93,7 +93,7 @@ class M extends a.Z {
   openPremiumPaymentModalInApp(e) {
     if (__OVERLAY__) throw Error("Should not use this function from the overlay, use ModalAPI.openModal instead");
     return new Promise((t, n) => {
-      (0, u.Z)(k(w({}, e), {
+      (0, d.Z)(k(w({}, e), {
         onClose: e => {
           e ? t() : n()
         }
@@ -145,7 +145,7 @@ class M extends a.Z {
         location: "PremiumManager"
       })
     }), R(this, "_handlePremiumPaymentModalOpen", e => {
-      (0, u.Z)(k(w({}, e), {
+      (0, d.Z)(k(w({}, e), {
         analyticsLocations: [c.Z.OVERLAY],
         onClose: e => {
           l.Z.dispatch({
@@ -164,7 +164,7 @@ class M extends a.Z {
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
     }), R(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;
-      let o = d.Z.getSelectedParticipant(e),
+      let o = u.Z.getSelectedParticipant(e),
         l = (0, N.o)(o, n),
         {
           sendNitroMessage: a
@@ -172,12 +172,12 @@ class M extends a.Z {
         c = null !== (i = null === (r = p.Z.getGuild(t)) || void 0 === r ? void 0 : r.premiumTier) && void 0 !== i ? i : L.Eu4.NONE;
       if (v.Z.cooldownIsActive() || !a || c >= L.Eu4.TIER_2 || (null == o ? void 0 : o.type) !== j.fO.STREAM || (null == o ? void 0 : o.id) === (null == n ? void 0 : n.id) || null == o.maxResolution || null == o.maxFrameRate) return;
       O.I();
-      let u = A.NW.formatToPlainString(A.t.AbyeZG, {
+      let d = A.NW.formatToPlainString(A.t.AbyeZG, {
         nickname: o.userNick,
         resolution: (0, P.o6)(o.maxResolution.height),
         fps: (0, b.bp)(o.maxFrameRate)
       });
-      s.Z.sendNitroSystemMessage(e, u), m.default.track(L.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
+      s.Z.sendNitroSystemMessage(e, d), m.default.track(L.rMx.PREMIUM_UPSELL_MESSAGE_SENT, {
         type: T.cd.HD_STREAMING_VIEWER_UPSELL,
         location_section: null != t ? L.jXE.TEXT_IN_VOICE : L.jXE.CHANNEL_TEXT_AREA,
         location_object: L.qAy.MESSAGE,

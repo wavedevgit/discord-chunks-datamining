@@ -1,84 +1,84 @@
-/** Chunk was on 53884 **/
-n.d(t, {
-  Z: () => y
+/** Chunk was on 76607 **/
+r.d(t, {
+  Z: () => b
 });
-var r = n(200651),
-  i = n(192379),
-  o = n(120356),
-  l = n.n(o),
-  a = n(442837),
-  s = n(481060),
-  u = n(518738),
-  c = n(786761),
-  d = n(3148),
-  p = n(753206),
-  f = n(594174),
-  v = n(5192),
-  g = n(981631),
-  m = n(388032),
-  b = n(933655);
+var n = r(200651),
+  h = r(192379),
+  v = r(120356),
+  i = r.n(v),
+  l = r(442837),
+  o = r(481060),
+  a = r(518738),
+  s = r(786761),
+  c = r(3148),
+  f = r(753206),
+  p = r(594174),
+  Z = r(5192),
+  u = r(981631),
+  M = r(388032),
+  d = r(933655);
 
-function y(e) {
+function b(e) {
   var t;
   let {
-    guildId: n,
-    role: o,
-    theme: y,
-    content: h = m.NW.string(m.t["6OSasb"]),
-    className: O
-  } = e, _ = (0, a.e7)([f.default], () => f.default.getCurrentUser()), j = v.ZP.useName(n, null, _), S = (0, u.Kz)(o), E = i.useMemo(() => {
+    guildId: r,
+    role: v,
+    theme: b,
+    content: H = M.NW.string(M.t["6OSasb"]),
+    className: y
+  } = e, V = (0, l.e7)([p.default], () => p.default.getCurrentUser()), j = Z.ZP.useName(r, null, V), O = (0, a.Kz)(v), g = h.useMemo(() => {
     var e, t;
-    return (0, c.e5)((e = function(e) {
+    return (0, s.e5)((e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
-    }({}, (0, d.ZP)({
+    }({}, (0, c.ZP)({
       channelId: "0",
-      content: h,
+      content: H,
       tts: void 0,
       type: void 0,
       messageReference: void 0,
       allowedMentions: void 0,
-      author: _
+      author: V
     })), t = t = {
-      state: g.yb.SENT,
+      state: u.yb.SENT,
       id: "0"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-      var n = Object.keys(e);
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return n
-    })(Object(t)).forEach(function(n) {
-      Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+      return r
+    })(Object(t)).forEach(function(r) {
+      Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
     }), e))
-  }, [_, h]), w = {
+  }, [V, H]), m = {
     nick: j,
-    colorString: null !== (t = o.colorString) && void 0 !== t ? t : void 0
+    colorString: null !== (t = v.colorString) && void 0 !== t ? t : void 0
   };
-  return (0, r.jsx)(s.f6W, {
-    theme: y,
-    children: e => (0, r.jsx)("div", {
-      className: l()(e, b.container, O),
-      children: (0, r.jsx)(p.Z, {
+  return (0, n.jsx)(o.f6W, {
+    theme: b,
+    children: e => (0, n.jsx)("div", {
+      className: i()(e, d.container, y),
+      children: (0, n.jsx)(f.Z, {
         hideTimestamp: !0,
-        author: w,
-        roleIcon: S,
-        message: E,
+        author: m,
+        roleIcon: O,
+        message: g,
         isGroupStart: !0,
         disableInteraction: !0
       })

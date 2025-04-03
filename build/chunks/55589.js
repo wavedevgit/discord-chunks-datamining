@@ -1,4 +1,4 @@
-/** Chunk was on 83957 **/
+/** Chunk was on 87185 **/
 let r, i, l;
 n.d(t, {
   Z: () => R
@@ -9,14 +9,14 @@ var a, o, s, u = n(913527),
   _ = n(759174),
   E = n(570140),
   I = n(333023),
-  p = n(355298),
-  f = n(333984),
+  f = n(355298),
+  p = n(333984),
   g = n(131704),
-  h = n(592125),
-  S = n(430824),
+  S = n(592125),
+  h = n(430824),
   y = n(306680),
-  O = n(9156),
-  N = n(594174),
+  N = n(9156),
+  O = n(594174),
   T = n(709054);
 let m = new _.h(e => {
   let {
@@ -47,21 +47,21 @@ function A(e) {
     channelId: e.id,
     lastMessageId: t,
     isFavorite: !1,
-    isRequest: p.Z.isMessageRequest(e.id) || f.Z.isSpam(e.id)
+    isRequest: f.Z.isMessageRequest(e.id) || p.Z.isSpam(e.id)
   }
 }
 
-function b() {
-  m.clear(), Object.values(h.Z.getMutablePrivateChannels()).forEach(e => {
+function C() {
+  m.clear(), Object.values(S.Z.getMutablePrivateChannels()).forEach(e => {
     m.set(e.id, A(e))
   })
 }
 
 function D() {
-  let e = h.Z.getMutablePrivateChannels();
+  let e = S.Z.getMutablePrivateChannels();
   for (let t in e) m.set(t, A(e[t]))
 }
-let C = (r = [], i = [], l = [], () => {
+let b = (r = [], i = [], l = [], () => {
   let e = m.values("FAVORITE"),
     t = m.values("DEFAULT");
   return (r !== e || i !== t) && (l = [], e.forEach(e => {
@@ -78,10 +78,10 @@ let C = (r = [], i = [], l = [], () => {
 });
 class L extends(a = d.ZP.Store) {
   initialize() {
-    this.waitFor(h.Z, S.Z, N.default, p.Z, O.ZP), this.syncWith([O.ZP, p.Z], b)
+    this.waitFor(S.Z, h.Z, O.default, f.Z, N.ZP), this.syncWith([N.ZP, f.Z], C)
   }
   getPrivateChannelIds() {
-    return C()
+    return b()
   }
   getSortedChannels() {
     return [m.values("FAVORITE"), m.values("DEFAULT")]
@@ -104,9 +104,9 @@ s = "PrivateChannelSortStore", (o = "displayName") in L ? Object.defineProperty(
   writable: !0
 }) : L[o] = s;
 let R = new L(E.Z, {
-  CONNECTION_OPEN: b,
-  CONNECTION_OPEN_SUPPLEMENTAL: b,
-  OVERLAY_INITIALIZE: b,
+  CONNECTION_OPEN: C,
+  CONNECTION_OPEN_SUPPLEMENTAL: C,
+  OVERLAY_INITIALIZE: C,
   CACHE_LOADED: D,
   CACHE_LOADED_LAZY: D,
   CHANNEL_UPDATES: function(e) {
@@ -136,7 +136,7 @@ let R = new L(E.Z, {
       message: n
     } = e;
     if (!m.has(t)) return !1;
-    let r = h.Z.getChannel(t);
+    let r = S.Z.getChannel(t);
     return null != r && m.set(t, A(r, n.id))
   },
   GUILD_CREATE: function(e) {

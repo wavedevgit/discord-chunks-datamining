@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Sr: () => v,
   Xq: () => N,
@@ -11,8 +11,8 @@ var r = n(186070),
   s = n(705371),
   a = n(138976),
   c = n(167042),
-  d = n(239748),
-  u = n(337482),
+  u = n(239748),
+  d = n(337482),
   _ = n(679080),
   p = n(510761),
   h = n(189509),
@@ -52,12 +52,12 @@ let v = {
     [C.EkH.TOGGLE_MUTE]: m.iN,
     [C.EkH.TOGGLE_DEAFEN]: m.oV,
     [C.EkH.TOGGLE_CATEGORY_COLLAPSED]: g.u,
-    [C.EkH.SCROLL_UP]: u.B2,
-    [C.EkH.SCROLL_DOWN]: u.gN,
+    [C.EkH.SCROLL_UP]: d.B2,
+    [C.EkH.SCROLL_DOWN]: d.gN,
     [C.EkH.SEARCH_EMOJIS]: _.S,
     [C.EkH.TOGGLE_HOTKEYS]: b._,
     [C.EkH.JUMP_TO_FIRST_UNREAD]: a.O,
-    [C.EkH.RETURN_TO_AUDIO_CHANNEL]: d.F,
+    [C.EkH.RETURN_TO_AUDIO_CHANNEL]: u.F,
     [C.EkH.CALL_ACCEPT]: r.IL,
     [C.EkH.CALL_START]: r.FI,
     [C.EkH.QUICKSWITCHER_SHOW]: c.$

@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => x
 }), n(47120), n(653041);
@@ -9,8 +9,8 @@ var r = n(570140),
   s = n(314897),
   a = n(19780),
   c = n(944486),
-  d = n(111583),
-  u = n(351780),
+  u = n(111583),
+  d = n(351780),
   _ = n(843693),
   p = n(981631);
 let h = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
@@ -25,8 +25,8 @@ let h = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
     h.stop(), f = !1
   },
   O = () => {
-    let e = u.Z.isEnabled(),
-      t = u.Z.comboSoundsEnabled;
+    let e = d.Z.isEnabled(),
+      t = d.Z.comboSoundsEnabled;
     return !!e && !!t && null != c.Z.getChannelId()
   },
   y = () => {
@@ -71,7 +71,7 @@ class S extends i.Z {
     let t = c.Z.getChannelId();
     if (null == t) return;
     let n = s.default.getId(),
-      r = d.Z.isTyping(t, n),
+      r = u.Z.isTyping(t, n),
       i = _.ZP.getUserCombo(n, t),
       o = null !== (e = null == i ? void 0 : i.multiplier) && void 0 !== e ? e : 1;
     r && o >= 7 ? E() : C()

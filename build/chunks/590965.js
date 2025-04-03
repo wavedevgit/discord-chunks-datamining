@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 let r;
 n.d(t, {
   Z: () => I
@@ -8,8 +8,8 @@ var i, o = n(442837),
   s = n(413605),
   a = n(703656),
   c = n(131704),
-  d = n(601964),
-  u = n(592125),
+  u = n(601964),
+  d = n(592125),
   _ = n(430824),
   p = n(701190),
   h = n(496675),
@@ -80,7 +80,7 @@ let I = new x(l.Z, {
       } = t;
       if (null == e) return !1;
       if ((0, c.bc)(e.type)) {
-        if (null != u.Z.getChannel(e.id)) return (0, a.XU)(g.ME, e.id), m.ZP.focus(), !1
+        if (null != d.Z.getChannel(e.id)) return (0, a.XU)(g.ME, e.id), m.ZP.focus(), !1
       } else {
         if (null == n) return !1;
         if (null != _.Z.getGuild(n.id) && !(0, s.TY)(t)) {
@@ -90,7 +90,7 @@ let I = new x(l.Z, {
               channel: t
             } = e;
             if (null != t) {
-              let e = u.Z.getChannel(t.id);
+              let e = d.Z.getChannel(t.id);
               if (h.Z.can(g.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
@@ -115,7 +115,7 @@ let I = new x(l.Z, {
         target_application: s,
         stage_instance: a,
         type: c,
-        channel: u,
+        channel: d,
         guild: _,
         is_nickname_changeable: p
       } = e, h = {
@@ -130,7 +130,7 @@ let I = new x(l.Z, {
         type: c,
         is_nickname_changeable: p
       };
-      return null != u && (h.channel = C({}, u)), null != _ && (h.guild = new d.ZP(_)), null != e.inviter && (h.inviter = C({}, e.inviter)), h
+      return null != d && (h.channel = C({}, d)), null != _ && (h.guild = new u.ZP(_)), null != e.inviter && (h.inviter = C({}, e.inviter)), h
     }(t);
     N.push([n, e.resolve])
   },

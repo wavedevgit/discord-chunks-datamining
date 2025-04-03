@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  Z: () => z
+  Z: () => q
 }), n(47120);
 var i = n(512969),
   o = n(259443),
@@ -150,7 +150,7 @@ function x() {
         guildId: n.getGuildId(),
         channelId: n.id,
         messageId: null == e ? void 0 : null === (t = e.params) || void 0 === t ? void 0 : t.message
-      }), U(n.getGuildId(), n.id)
+      }), G(n.getGuildId(), n.id)
     }
   }
 }
@@ -169,7 +169,7 @@ function M() {
       isPreload: e,
       skipLocalFetch: t,
       logFailures: n
-    }) : n && R.log("Skipping fetch because the selected channel is not a text channel"), U(i.getGuildId(), i.id)) : n && R.log("Skipping fetch because channel is null")
+    }) : n && R.log("Skipping fetch because the selected channel is not a text channel"), G(i.getGuildId(), i.id)) : n && R.log("Skipping fetch because channel is null")
   } else n && R.log("Skipping fetch because there is no selected channel")
 }
 
@@ -185,7 +185,7 @@ function k(e) {
     channelId: n,
     messageId: r,
     jumpType: i
-  }), U(t, n)
+  }), G(t, n)
 }
 
 function j(e) {
@@ -199,7 +199,22 @@ function j(e) {
   })
 }
 
-function U(e, t) {
+function U(e) {
+  let {
+    guildId: t,
+    channelId: n,
+    messageId: r,
+    jumpType: i
+  } = e;
+  P({
+    guildId: t,
+    channelId: n,
+    messageId: r,
+    jumpType: i
+  })
+}
+
+function G(e, t) {
   let n = g.ZP.getCurrentSidebarChannelId(t);
   null != n && P({
     guildId: e,
@@ -208,15 +223,15 @@ function U(e, t) {
   })
 }
 
-function G() {
+function B() {
   let e = y.Z.getChannelId(),
     t = O.Z.getGuildId();
   if (null == t || null == e) return;
   let n = g.ZP.getSidebarState(e);
-  (null == n ? void 0 : n.type) !== h.tI.VIEW_CHANNEL && U(t, e)
+  (null == n ? void 0 : n.type) !== h.tI.VIEW_CHANNEL && G(t, e)
 }
 
-function B(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n,
@@ -225,10 +240,10 @@ function B(e) {
   r === T.e3s && (P({
     guildId: t,
     channelId: n
-  }), U(t, n))
+  }), G(t, n))
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     messageId: n
@@ -240,7 +255,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function Z(e) {
   let {
     response: t
   } = e;
@@ -255,9 +270,9 @@ function V(e) {
     })
   }
 }
-let Z = {};
+let H = {};
 
-function H(e) {
+function W(e) {
   var t;
   let {
     channelId: n,
@@ -266,9 +281,9 @@ function H(e) {
     isPreview: o = !1
   } = e;
   if (o) return;
-  let a = null !== (t = Z[n]) && void 0 !== t ? t : 0;
+  let a = null !== (t = H[n]) && void 0 !== t ? t : 0;
   if (Date.now() - a < 10 * I.Z.Millis.SECOND) return;
-  Z[n] = Date.now();
+  H[n] = Date.now();
   let s = y.Z.getChannelId(),
     l = g.ZP.getCurrentSidebarChannelId(s),
     u = n === s || n === l;
@@ -279,7 +294,7 @@ function H(e) {
   })
 }
 
-function W(e) {
+function Y(e) {
   let {
     channelId: t,
     messageRecord: n,
@@ -294,7 +309,7 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function K(e) {
   let {
     state: t
   } = e;
@@ -303,7 +318,7 @@ function Y(e) {
   if (null == n) return !1;
   c.Z.fetchNewLocalMessages(n, T.AQB)
 }
-class K extends d.Z {
+class z extends d.Z {
   _initialize() {
     s.Z.subscribe("CONNECTION_OPEN", x)
   }
@@ -311,22 +326,23 @@ class K extends d.Z {
     s.Z.unsubscribe("CONNECTION_OPEN", x)
   }
   constructor(...e) {
-    super(...e), C(this, "fetchMessages", P), C(this, "loadSelectedChannelIfNecessary", M), C(this, "stores", new Map().set(g.ZP, G)), C(this, "actions", {
-      APP_STATE_UPDATE: Y,
+    super(...e), C(this, "fetchMessages", P), C(this, "loadSelectedChannelIfNecessary", M), C(this, "stores", new Map().set(g.ZP, B)), C(this, "actions", {
+      APP_STATE_UPDATE: K,
       OVERLAY_INITIALIZE: x,
       CHANNEL_SELECT: k,
       VOICE_CHANNEL_SELECT: j,
-      THREAD_CREATE: F,
+      THREAD_CREATE: V,
       THREAD_LIST_SYNC: () => M(),
-      CHANNEL_CREATE: F,
-      CHANNEL_PRELOAD: B,
+      CHANNEL_CREATE: V,
+      CHANNEL_PRELOAD: F,
       GUILD_CREATE: () => M(),
-      MESSAGE_END_EDIT: V,
-      LOAD_MESSAGES_SUCCESS: H,
-      UPLOAD_FAIL: W,
+      MESSAGE_END_EDIT: Z,
+      LOAD_MESSAGES_SUCCESS: W,
+      UPLOAD_FAIL: Y,
       CHANNEL_DELETE: () => M(),
-      THREAD_DELETE: () => M()
+      THREAD_DELETE: () => M(),
+      CHANNEL_RTC_JUMP_TO_VOICE_CHANNEL_MESSAGE: U
     })
   }
 }
-let z = new K
+let q = new z

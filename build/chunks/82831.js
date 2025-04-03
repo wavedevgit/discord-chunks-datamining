@@ -1,4 +1,4 @@
-/** Chunk was on 13323 **/
+/** Chunk was on 10451 **/
 e.exports = {
   sectionDescription: "sectionDescription__8d742",
   card: "card__8d742",

@@ -35,7 +35,7 @@ var c = function(e) {
     return e.CUSTOM_APP_ICONS = "custom_app_icon", e
   }({}),
   d = function(e) {
-    return e.TRY_IT_OUT = "try_it_out", e
+    return e.TRY_IT_OUT = "try_it_out", e.GUILD_TAG = "guild_tag", e
   }({}),
   f = function(e) {
     return e.REDUCED_MOTION = "reduced_motion", e.SYNC_PROFILE_THEME_WITH_USER_THEME = "sync_profile_theme_with_user_theme", e.LEGACY_CHAT_INPUT = "legacy_chat_input", e

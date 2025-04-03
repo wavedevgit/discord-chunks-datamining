@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => p
 });
@@ -21,37 +21,37 @@ let s = 12 * n(70956).Z.Millis.HOUR,
   c = {
     hasFetchedRelevance: !1
   },
-  d = a,
-  u = c;
+  u = a,
+  d = c;
 class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    u = c, d = a;
+    d = c, u = a;
     let t = new Date;
-    null != e && null != e.savedAt && t.getTime() - e.savedAt < s && (d = e)
+    null != e && null != e.savedAt && t.getTime() - e.savedAt < s && (u = e)
   }
   get hasFetchedRelevance() {
-    return u.hasFetchedRelevance
+    return d.hasFetchedRelevance
   }
   get profileThemesRelevanceExceeded() {
-    return d.profileThemesRelevanceExceeded
+    return u.profileThemesRelevanceExceeded
   }
   getState() {
-    return d
+    return u
   }
 }
 l(_, "displayName", "PerksRelevanceStore"), l(_, "persistKey", "PerksRelevanceStore");
 let p = new _(o.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
-    u.hasFetchedRelevance = !0
+    d.hasFetchedRelevance = !0
   },
   BILLING_PERKS_RELEVANCE_FETCH_SUCCESS: function(e) {
     let {
       res: t
     } = e;
-    null != t && (d.profileThemesRelevanceExceeded = t.eligible, d.savedAt = new Date().getTime())
+    null != t && (u.profileThemesRelevanceExceeded = t.eligible, u.savedAt = new Date().getTime())
   },
   BILLING_PERKS_RELEVANCE_FETCH_FAIL: function() {},
   LOGOUT: function() {
-    u = c, d = a
+    d = c, u = a
   }
 })

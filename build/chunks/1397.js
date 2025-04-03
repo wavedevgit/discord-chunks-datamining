@@ -156,7 +156,6 @@ class z extends i.PureComponent {
       min: W.YeM.ACCOUNT_AGE
     }), E.countdown = p);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: this.textAreaRef,
       position: "top",
       align: "left",
       shouldShow: O,
@@ -164,9 +163,7 @@ class z extends i.PureComponent {
         shouldShowLurkerModeSuccessPopout: !1
       }),
       renderPopout: this.renderSuccessPopout,
-      children: e => (0, r.jsx)(D.Z, V(G({
-        ref: this.textAreaRef
-      }, E), {
+      children: e => (0, r.jsx)(D.Z, V(G({}, E), {
         children: (0, r.jsxs)(i.Fragment, {
           children: [this.renderMemberVerificationSuccessModal(), b ? (0, r.jsx)(s.yRy, {
             targetElementRef: this.upsellTargetRef,
@@ -190,7 +187,7 @@ class z extends i.PureComponent {
       submitting: !1,
       shouldShowLurkerModeUpsellPopout: !1,
       shouldShowLurkerModeSuccessPopout: !1
-    }), F(this, "textAreaRef", i.createRef()), F(this, "upsellTargetRef", i.createRef()), F(this, "renderSuccessPopout", e => {
+    }), F(this, "upsellTargetRef", i.createRef()), F(this, "renderSuccessPopout", e => {
       let {
         closePopout: t
       } = e, {

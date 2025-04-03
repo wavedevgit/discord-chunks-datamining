@@ -238,13 +238,13 @@ function X(e) {
   }), tx = l.useCallback(e => {
     if (tr.info("[QV] | updatePlayerState | playerState: ".concat(e)), eS(e), null != eJ.current) switch (e) {
       case R.rq.PLAYING:
-        eJ.current.play(), tp(e4), e7(null);
+        eJ.current.paused && tp(e4), e7(null), eJ.current.play();
         break;
       case R.rq.PAUSED:
-        eJ.current.pause(), eW.current = !1, t_();
+        eJ.current.paused || t_(), eJ.current.pause(), eW.current = !1;
         break;
       case R.rq.ENDED:
-        eu(!1), t_()
+        t_(), eu(!1)
     }
   }, [tp, e4, t_, eu, tr]);
   l.useEffect(() => {

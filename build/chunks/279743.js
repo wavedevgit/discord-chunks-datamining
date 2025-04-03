@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => f
 }), n(47120);
@@ -9,8 +9,8 @@ var r = n(200651),
   s = n(642128),
   a = n(748780),
   c = n(481060),
-  d = n(442837),
-  u = n(607070),
+  u = n(442837),
+  d = n(607070),
   _ = n(663389),
   p = n(30095);
 
@@ -19,7 +19,7 @@ function h(e) {
     children: t,
     className: n,
     onFlashEnd: o,
-    animationDelay: d = 500
+    animationDelay: u = 500
   } = e, _ = c.TVs.colors.TEXT_LINK, h = (0, c.dQu)(_).spring({
     opacity: 0
   }), f = (0, c.dQu)(_).spring({
@@ -41,7 +41,7 @@ function h(e) {
     endColor: m,
     targetBorderColor: g,
     targetColor: f,
-    animationDelay: d
+    animationDelay: u
   }, O = i.useRef(C);
   return i.useEffect(() => {
     O.current = C
@@ -55,7 +55,7 @@ function h(e) {
       animationDelay: o
     } = O.current, {
       useReducedMotion: l
-    } = u.Z, s = 200 * !l;
+    } = d.Z, s = 200 * !l;
     E({
       reset: !0,
       immediate: !1,
@@ -103,7 +103,7 @@ function f(e) {
     children: t,
     scrollPosition: n,
     animationDelay: o
-  } = e, l = (0, d.e7)([_.Z], () => _.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
+  } = e, l = (0, u.e7)([_.Z], () => _.Z.getScrollPosition() === n), [s, a] = i.useState(!1);
   return (i.useEffect(() => {
     l && a(!0)
   }, [l]), s) ? (0, r.jsx)(h, {

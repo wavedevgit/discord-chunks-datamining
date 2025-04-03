@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => b
 }), n(653041), n(47120), n(266796);
@@ -9,8 +9,8 @@ var r = n(200651),
   s = n(392711),
   a = n.n(s),
   c = n(714338),
-  d = n(585483),
-  u = n(981631),
+  u = n(585483),
+  d = n(981631),
   _ = n(801738);
 
 function p(e, t, n) {
@@ -151,7 +151,7 @@ class g extends i.PureComponent {
     this.setTimeout(() => {
       this.setState({
         visible: !0
-      }), d.S.dispatch(u.CkL.SHAKE_APP, {
+      }), u.S.dispatch(d.CkL.SHAKE_APP, {
         duration: 2400
       })
     }, 1800), this.setTimeout(this.createExplosion, 1800)

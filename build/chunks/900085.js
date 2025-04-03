@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => Q
 }), n(411104), n(47120), n(301563), n(733860);
@@ -8,8 +8,8 @@ var r, i = n(200651),
   s = n.n(l),
   a = n(873546),
   c = n(442837),
-  d = n(481060),
-  u = n(239091),
+  u = n(481060),
+  d = n(239091),
   _ = n(134616),
   p = n(714338),
   h = n(212819),
@@ -77,7 +77,7 @@ let V = () => (0, i.jsxs)("div", {
     children: k.NW.string(k.t.bpbATE)
   }), (0, i.jsx)("div", {
     className: M.emptyStateCTA,
-    children: (0, i.jsx)(d.eee, {
+    children: (0, i.jsx)(u.eee, {
       href: T.Z.getArticleURL(w.BhN.QUICK_SWITCHER_TUTORIAL),
       children: k.NW.string(k.t["4iPfEB"])
     })
@@ -143,7 +143,7 @@ let G = c.ZP.connectStores([v.ZP, C.Z], e => {
   })(P.n5);
 
 function Y(e, t, n) {
-  return (0, i.jsx)(d.ua7, {
+  return (0, i.jsx)(u.ua7, {
     text: n,
     children: e => (0, i.jsx)("span", U(D({}, e), {
       className: M.autocompleteQuerySymbol,
@@ -190,7 +190,7 @@ class K extends o.PureComponent {
     } = this.props, {
       query: n
     } = this.state, r = t.length > 0 && "" !== n;
-    return (0, i.jsx)(d.tEY, {
+    return (0, i.jsx)(u.tEY, {
       children: (0, i.jsx)("input", {
         className: M.input,
         "aria-label": k.NW.string(k.t.ZvKwYW),
@@ -219,7 +219,7 @@ class K extends o.PureComponent {
     } = this.state, {
       results: t
     } = this.props;
-    return 0 === t.length && e.length > 0 ? (0, i.jsx)(V, {}) : 0 === t.length ? null : (0, i.jsx)(d._2F, {
+    return 0 === t.length && e.length > 0 ? (0, i.jsx)(V, {}) : 0 === t.length ? null : (0, i.jsx)(u._2F, {
       innerId: this._listId,
       innerRole: "listbox",
       "aria-label": k.NW.string(k.t.Wef5Dg),
@@ -268,9 +268,9 @@ class K extends o.PureComponent {
     })
   }
   render() {
-    return (0, i.jsx)(d.Y0X, {
+    return (0, i.jsx)(u.Y0X, {
       "aria-label": k.NW.string(k.t.ZvKwYW),
-      size: d.CgR.DYNAMIC,
+      size: u.CgR.DYNAMIC,
       transitionState: this.props.transitionState,
       className: s()(M.container, a.tq && M.mobileContainer),
       fullscreenOnMobile: !1,
@@ -305,7 +305,7 @@ class K extends o.PureComponent {
       let t = this.props.results[this.props.selectedIndex];
       switch (t.type) {
         case h.h8.GUILD:
-          return (0, u.jW)(e, async () => {
+          return (0, d.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("7654"), n.e("44156"), n.e("12218"), n.e("6850"), n.e("55666"), n.e("16114"), n.e("58227"), n.e("44088"), n.e("97590"), n.e("21881"), n.e("69760"), n.e("33213"), n.e("68350")]).then(n.bind(n, 545135));
@@ -325,7 +325,7 @@ class K extends o.PureComponent {
             case w.d4z.GUILD_ANNOUNCEMENT:
             case w.d4z.GUILD_FORUM:
             case w.d4z.GUILD_MEDIA:
-              return (0, u.jW)(e, async () => {
+              return (0, d.jW)(e, async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("44011")]).then(n.bind(n, 373651));
@@ -337,7 +337,7 @@ class K extends o.PureComponent {
               });
             case w.d4z.GUILD_VOICE:
             case w.d4z.GUILD_STAGE_VOICE:
-              return (0, u.jW)(e, async () => {
+              return (0, d.jW)(e, async () => {
                 let {
                   default: e
                 } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
@@ -350,7 +350,7 @@ class K extends o.PureComponent {
             case w.d4z.ANNOUNCEMENT_THREAD:
             case w.d4z.PUBLIC_THREAD:
             case w.d4z.PRIVATE_THREAD:
-              return (0, u.jW)(e, async () => {
+              return (0, d.jW)(e, async () => {
                 let {
                   default: e
                 } = await n.e("40157").then(n.bind(n, 422200));
@@ -360,7 +360,7 @@ class K extends o.PureComponent {
                 }))
               });
             case w.d4z.GUILD_STORE:
-              return (0, u.jW)(e, async () => {
+              return (0, d.jW)(e, async () => {
                 let {
                   default: e
                 } = await n.e("99905").then(n.bind(n, 649400));
@@ -371,7 +371,7 @@ class K extends o.PureComponent {
                 }))
               });
             case w.d4z.GUILD_DIRECTORY:
-              return (0, u.jW)(e, async () => {
+              return (0, d.jW)(e, async () => {
                 let {
                   default: e
                 } = await n.e("70623").then(n.bind(n, 99334));
@@ -382,7 +382,7 @@ class K extends o.PureComponent {
           }
           break;
         case h.h8.GROUP_DM:
-          return (0, u.jW)(e, async () => {
+          return (0, d.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("53912"), n.e("3248")]).then(n.bind(n, 354741));
@@ -393,7 +393,7 @@ class K extends o.PureComponent {
             }))
           });
         case h.h8.USER:
-          return (0, u.jW)(e, async () => {
+          return (0, d.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220"), n.e("67110")]).then(n.bind(n, 881351));

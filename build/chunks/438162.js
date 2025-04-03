@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   o = n(192379),
-  i = n(120356),
-  a = n.n(i),
+  a = n(120356),
+  i = n.n(a),
   c = n(442837),
   l = n(952265),
   s = n(481060),
@@ -31,20 +31,20 @@ var r = n(200651),
   L = n(556296),
   Z = n(237997),
   j = n(451478),
-  S = n(585483),
-  k = n(358085),
+  k = n(585483),
+  S = n(358085),
   N = n(13140),
   D = n(145597),
   A = n(830917),
   B = n(681603),
   W = n(358446),
-  G = n(348733),
-  R = n(708383),
+  R = n(348733),
+  G = n(708383),
   U = n(923532),
   M = n(915614),
   V = n(777382),
-  F = n(333031),
-  z = n(610394),
+  z = n(333031),
+  F = n(610394),
   H = n(388627),
   Y = n(561064),
   K = n(987650),
@@ -52,7 +52,7 @@ var r = n(200651),
   J = n(206583),
   q = n(388032),
   Q = n(882730);
-let $ = !k.isPlatformEmbedded && !1,
+let $ = !S.isPlatformEmbedded && !1,
   ee = $ ? (0, r.jsx)(m.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Q.videoDev,
@@ -98,7 +98,7 @@ let eo = o.memo(function(e) {
       locked: o
     } = e;
     return (0, r.jsx)(s.P3F, {
-      className: a()(Q.overlayBackground, {
+      className: i()(Q.overlayBackground, {
         [Q.overlayActive]: !o,
         [Q.overlayLocked]: o
       }),
@@ -111,7 +111,7 @@ let eo = o.memo(function(e) {
         o === X.AeJ.PRIMARY && t === r && n()
       },
       onContextMenu: er,
-      children: o ? null : (0, r.jsx)(F.Z, {
+      children: o ? null : (0, r.jsx)(z.Z, {
         className: Q.closeContainer,
         children: (0, r.jsx)(M.Z, {
           keybind: t,
@@ -121,12 +121,12 @@ let eo = o.memo(function(e) {
       })
     })
   }),
-  ei = o.memo(function(e) {
+  ea = o.memo(function(e) {
     let {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, r.jsx)(F.Z, {
+    return t && n ? (0, r.jsx)(z.Z, {
       className: Q.closeContainer,
       children: (0, r.jsx)(M.Z, {
         onClick: () => d.Z.setInputLocked(!1, (0, D.getPID)()),
@@ -135,7 +135,7 @@ let eo = o.memo(function(e) {
     }) : null
   });
 
-function ea() {
+function ei() {
   if (null != T.Z.getContextMenu()) {
     (0, u.Zy)();
     return
@@ -152,10 +152,10 @@ function el() {
 }
 
 function es(e) {
-  let t = z.ZP.isInputLocked((0, D.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? S.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  let t = F.ZP.isInputLocked((0, D.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? k.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !1
-  }) : "keydown" === e.type.toLowerCase() && S.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && k.S.dispatch(X.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: !0
   }))
 }
@@ -165,18 +165,18 @@ function eu() {
     {
       locked: t,
       focused: n,
-      incompatibleApp: i,
+      incompatibleApp: a,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
       keybind: T,
-      isPreviewingInGame: S
-    } = (0, c.cj)([z.ZP, Z.default, j.Z, L.ZP], () => {
+      isPreviewingInGame: k
+    } = (0, c.cj)([F.ZP, Z.default, j.Z, L.ZP], () => {
       let t = j.Z.windowSize((0, A.ZY)(e)),
         n = L.ZP.getOverlayKeybind(),
         r = (0, D.getPID)();
       return {
-        locked: z.ZP.isInputLocked(r),
-        focused: r === D.DEV_PID ? Z.default.isFocused(r) : z.ZP.isFocused(r),
+        locked: F.ZP.isInputLocked(r),
+        focused: r === D.DEV_PID ? Z.default.isFocused(r) : F.ZP.isFocused(r),
         incompatibleApp: Z.default.incompatibleApp,
         hasValidResolution: (0, D.validResolution)(t),
         isPreviewingInGame: Z.default.isPreviewingInGame(),
@@ -184,11 +184,11 @@ function eu() {
         keybind: null != n ? (0, N.BB)(n.shortcut, !0) : "???"
       }
     }, [e]),
-    k = (0, c.e7)([Z.default], () => Z.default.getActiveRegions()),
+    S = (0, c.e7)([Z.default], () => Z.default.getActiveRegions()),
     {
       analyticsLocations: M
     } = (0, p.ZP)(f.Z.OVERLAY),
-    F = t || S;
+    z = t || k;
   ! function(e, t) {
     let n = o.useRef({
       mount: e,
@@ -212,11 +212,11 @@ function eu() {
       t = (0, H.pL)(),
       n = w.Z.getVoiceChannelId(),
       r = C.Z.getChannel(n),
-      i = null != r ? P.Z.getGuild(r.guild_id) : null,
-      a = null != I.Z.getCurrentUserActiveStream(),
+      a = null != r ? P.Z.getGuild(r.guild_id) : null,
+      i = null != I.Z.getCurrentUserActiveStream(),
       c = null != n,
-      l = (0, y.Z)(x.Z) && !a && null != t,
-      s = c && null != i && null != n,
+      l = (0, y.Z)(x.Z) && !i && null != t,
+      s = c && null != a && null != n,
       {
         showKeybindIndicators: u,
         dismissKeybindNotification: _
@@ -234,12 +234,12 @@ function eu() {
         type: K.nc.GO_LIVE_VOICE,
         game: t,
         voiceChannelId: n,
-        voiceGuild: i
+        voiceGuild: a
       } : l && (r = {
         type: K.nc.GO_LIVE_NON_VOICE,
         game: t
       }), d.Z.overlayMounted(r)
-    }, [c, l, s, t, n, i, u, _])
+    }, [c, l, s, t, n, a, u, _])
   }(), o.useEffect(() => {
     if (t) {
       if ((0, l.Ay)(s.u1M), e.addEventListener("contextmenu", en, !1), null != et) {
@@ -264,19 +264,19 @@ function eu() {
     em = (0, _.Z)(eb);
   return (o.useEffect(() => {
     !em && eb && d.Z.notifyContentInventoryReady(ep)
-  }, [ep, eb, em]), m || i) ? null : (0, r.jsx)(p.Gt, {
+  }, [ep, eb, em]), m || a) ? null : (0, r.jsx)(p.Gt, {
     value: M,
     children: (0, r.jsxs)("div", {
       className: Q.overlay,
-      children: [(0, r.jsx)(R.Z, {}), S && (0, r.jsx)("header", {
+      children: [(0, r.jsx)(G.Z, {}), k && (0, r.jsx)("header", {
         className: Q.previewingInGameHeader,
         children: q.NW.string(q.t.iOq96u)
-      }), ee, (!t || k.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
+      }), ee, (!t || S.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
         locked: t,
         keybind: T,
-        onClick: ea
+        onClick: ei
       }), u ? (0, r.jsx)(V.Z, {
-        className: a()({
+        className: i()({
           [Q.layoutLocked]: t,
           [Q.layoutUnlocked]: !t
         })
@@ -286,15 +286,15 @@ function eu() {
           className: Q.inactiveContainer,
           children: q.NW.format(q.t.ketnW1, D.OVERLAY_MIN_RESOLUTION)
         })
-      }), $ && (0, r.jsx)(ei, {
+      }), $ && (0, r.jsx)(ea, {
         locked: t,
         focused: n
       }), null != ed && null != er && (0, r.jsx)(U.Z, {
         streamerId: e_,
         guildId: ed.id,
         channelId: er
-      }), (0, r.jsx)(G.Z, {
-        locked: F,
+      }), (0, r.jsx)(R.Z, {
+        locked: z,
         keybind: T
       }), (0, r.jsx)(B.Z, {})]
     })

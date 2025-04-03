@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => _
 });
@@ -10,8 +10,8 @@ var i = n(481060),
   s = n(51596),
   a = n(823385),
   c = n(900085);
-let d = "QUICK_SWITCHER_MODAL_KEY";
-class u extends l.Z {
+let u = "QUICK_SWITCHER_MODAL_KEY";
+class d extends l.Z {
   _initialize() {
     o.Z.subscribe("QUICKSWITCHER_SHOW", this.handleShow), o.Z.subscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
@@ -19,7 +19,7 @@ class u extends l.Z {
     o.Z.unsubscribe("QUICKSWITCHER_SHOW", this.handleShow), o.Z.unsubscribe("QUICKSWITCHER_HIDE", this.handleHide)
   }
   handleShow() {
-    a.Z.isOpen() && !(0, i.nfh)(d) && (0, i.h7j)(e => (0, r.jsx)(c.Z, function(e) {
+    a.Z.isOpen() && !(0, i.nfh)(u) && (0, i.h7j)(e => (0, r.jsx)(c.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -37,13 +37,13 @@ class u extends l.Z {
       }
       return e
     }({}, e)), {
-      modalKey: d,
+      modalKey: u,
       instant: !0,
       onCloseCallback: s.Cp
     })
   }
   handleHide() {
-    (0, i.Mr3)(d)
+    (0, i.Mr3)(u)
   }
 }
-let _ = new u
+let _ = new d

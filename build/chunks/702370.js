@@ -355,7 +355,9 @@ let ey = {
             color: t ? v.zxk.Colors.BRAND : v.zxk.Colors.PRIMARY,
             children: ek.NW.format(ek.t.kAgx5O, {
               orbPrice: e.amount,
-              orbIconHook: () => (0, r.jsx)(Z.Z, {})
+              orbIconHook: () => (0, r.jsx)(Z.Z, {
+                shouldUseThemeColor: a
+              })
             })
           }))
         })

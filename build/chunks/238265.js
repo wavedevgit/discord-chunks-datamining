@@ -1,4 +1,4 @@
-/** Chunk was on 13323 **/
+/** Chunk was on 10451 **/
 e.exports = {
   item: "item__740f2",
   keybindMessage: "keybindMessage__740f2",

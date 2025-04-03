@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => R
 }), n(266796), n(47120), n(653041);
@@ -9,8 +9,8 @@ var r = n(200651),
   s = n(512722),
   a = n.n(s),
   c = n(392711),
-  d = n.n(c),
-  u = n(748780),
+  u = n.n(c),
+  d = n(748780),
   _ = n(442837),
   p = n(215569),
   h = n(481060),
@@ -34,10 +34,10 @@ function S(e, t, n) {
   }) : e[t] = n, e
 }
 let x = {
-  UP: d().throttle(() => (0, E.GN)("ddr-up"), 100),
-  DOWN: d().throttle(() => (0, E.GN)("ddr-down"), 100),
-  LEFT: d().throttle(() => (0, E.GN)("ddr-left"), 100),
-  RIGHT: d().throttle(() => (0, E.GN)("ddr-right"), 100)
+  UP: u().throttle(() => (0, E.GN)("ddr-up"), 100),
+  DOWN: u().throttle(() => (0, E.GN)("ddr-down"), 100),
+  LEFT: u().throttle(() => (0, E.GN)("ddr-left"), 100),
+  RIGHT: u().throttle(() => (0, E.GN)("ddr-right"), 100)
 };
 
 function I(e) {
@@ -68,7 +68,7 @@ function L(e) {
 }
 
 function j() {
-  let e = i.useMemo(() => d()((0, f.Rv)()).groupBy(e => e.group).value(), []);
+  let e = i.useMemo(() => u()((0, f.Rv)()).groupBy(e => e.group).value(), []);
   return (0, r.jsx)("div", {
     className: N.keyboardShortcutList,
     children: T.map(t => {
@@ -131,7 +131,7 @@ class P extends i.PureComponent {
       LEFT: n,
       RIGHT: i
     } = this.state;
-    return (0, r.jsxs)(u.Z.div, {
+    return (0, r.jsxs)(d.Z.div, {
       className: N.keyboardShortcutsModal,
       style: this.getStyles(),
       children: [(0, r.jsxs)(h.H, {
@@ -183,9 +183,9 @@ class P extends i.PureComponent {
       DOWN: !1,
       LEFT: !1,
       RIGHT: !1,
-      opacity: new u.Z.Value(1),
-      scaleX: new u.Z.Value(1),
-      scaleY: new u.Z.Value(0),
+      opacity: new d.Z.Value(1),
+      scaleX: new d.Z.Value(1),
+      scaleY: new d.Z.Value(0),
       animating: !1
     }), S(this, "scrollerRef", i.createRef()), S(this, "lastInputedKeys", []), S(this, "scrollPageUp", () => {
       let e = this.scrollerRef.current;
@@ -214,10 +214,10 @@ class P extends i.PureComponent {
     }), S(this, "componentWillLeave", e => {
       this.setState({
         animating: !0
-      }), this.state.opacity.setValue(1), this.state.scaleX.setValue(.5), this.state.scaleY.setValue(1), u.Z.sequence([u.Z.timing(this.state.opacity, {
+      }), this.state.opacity.setValue(1), this.state.scaleX.setValue(.5), this.state.scaleY.setValue(1), d.Z.sequence([d.Z.timing(this.state.opacity, {
         toValue: 0,
         duration: 800,
-        easing: u.Z.Easing.cubic
+        easing: d.Z.Easing.cubic
       })]).start(e)
     }), S(this, "toggleOpacity", () => {
       1 === this.state.opacity._value ? this.state.opacity.setValue(0) : this.state.opacity.setValue(1)
@@ -263,7 +263,7 @@ function A(e) {
     arrow: n,
     className: o,
     children: s
-  } = e, [a, c] = i.useState(t), d = i.useCallback(() => {
+  } = e, [a, c] = i.useState(t), u = i.useCallback(() => {
     x[n](), c(!0)
   }, [n]);
   return i.useEffect(() => {
@@ -272,7 +272,7 @@ function A(e) {
       return () => clearTimeout(e)
     }
   }, [a]), (0, r.jsx)(h.P3F, {
-    onClick: d,
+    onClick: u,
     className: l()(N.arrow, o, {
       [N.active]: t || a
     }),
@@ -284,8 +284,8 @@ function R(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [o, s] = i.useState(!1), [a, c] = i.useState(!1), d = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, f.Rv)(), []), {
-    keyboardModeEnabled: u,
+  } = e, [o, s] = i.useState(!1), [a, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, f.Rv)(), []), {
+    keyboardModeEnabled: d,
     useReducedMotion: E
   } = (0, _.cj)([b.Z], () => ({
     keyboardModeEnabled: b.Z.keyboardModeEnabled,
@@ -308,8 +308,8 @@ function R(e) {
             c(!1), setTimeout(n, 500)
           }
         }, "raging-demo") : (0, r.jsx)(P, {
-          content: d,
-          keyboardModeEnabled: u,
+          content: u,
+          keyboardModeEnabled: d,
           activateRagingDemon: function() {
             E || (g.Z.disable(), s(!0), c(!0))
           }

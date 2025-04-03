@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => b
 }), n(47120);
@@ -8,8 +8,8 @@ var r, i = n(200651),
   s = n.n(l),
   a = n(748780),
   c = n(846519),
-  d = n(481060),
-  u = n(585483),
+  u = n(481060),
+  d = n(585483),
   _ = n(981631),
   p = n(388032),
   h = n(121207);
@@ -30,10 +30,10 @@ class g extends(r = o.PureComponent) {
   componentDidMount() {
     this.setState({
       shown: !0
-    }), u.S.subscribe(_.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    }), d.S.subscribe(_.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentWillUnmount() {
-    this.focusTimeout.stop(), u.S.unsubscribe(_.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+    this.focusTimeout.stop(), d.S.unsubscribe(_.CkL.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
   }
   componentDidUpdate() {
     let {
@@ -152,5 +152,5 @@ class g extends(r = o.PureComponent) {
     })
   }
 }
-f(g, "contextType", d.Sfi);
+f(g, "contextType", u.Sfi);
 let b = g

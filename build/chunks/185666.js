@@ -1,4 +1,4 @@
-/** Chunk was on 46685 **/
+/** Chunk was on 85086 **/
 n.d(t, {
   Z: () => h
 });
@@ -10,8 +10,8 @@ var i = n(481060),
   s = n(731971),
   a = n(626135),
   c = n(379164),
-  d = n(590965),
-  u = n(981631);
+  u = n(590965),
+  d = n(981631);
 let _ = "INVITE_MODAL_KEY";
 class p extends l.Z {
   _initialize() {
@@ -24,7 +24,7 @@ class p extends l.Z {
     let {
       context: t
     } = e;
-    d.Z.isOpen() && !(0, i.nfh)(_) && (0, i.ZDy)(async () => {
+    u.Z.isOpen() && !(0, i.nfh)(_) && (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("86872").then(n.bind(n, 472365));
@@ -52,7 +52,7 @@ class p extends l.Z {
       onCloseRequest: () => {
         let e = (0, s.e7)(),
           t = (0, s._J)();
-        a.default.track(u.rMx.INVITE_ACCEPT_DISMISSED, {
+        a.default.track(d.rMx.INVITE_ACCEPT_DISMISSED, {
           invite_code: e,
           guild_id: t
         }), c.Z.close()
