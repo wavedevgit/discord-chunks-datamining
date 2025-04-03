@@ -158,7 +158,11 @@ Promise.resolve().then(n.bind(n, 626135)).then(e => {
     addExtraAnalyticsDecorator: t
   } = e;
   t(e => {
-    e.client_app_state = I.isFocused() ? "focused" : "unfocused"
+    {
+      e.client_app_state = I.isFocused() ? "focused" : "unfocused";
+      let t = I.windowSize();
+      e.client_viewport_width = t.width, e.client_viewport_height = t.height
+    }
   })
 });
 let S = I
