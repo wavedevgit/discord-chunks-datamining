@@ -12,9 +12,11 @@ let o = e => {
     hideEditButton: n,
     children: o,
     onRequestOpen: a,
-    onRequestClose: s
+    onRequestClose: s,
+    targetElementRef: c
   } = e;
   return (0, r.jsx)(i.yRy, {
+    targetElementRef: c,
     onRequestOpen: a,
     onRequestClose: s,
     animation: i.yRy.Animation.NONE,

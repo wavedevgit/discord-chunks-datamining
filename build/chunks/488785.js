@@ -75,7 +75,8 @@ function g(e) {
   return l ? null : (0, r.jsx)("div", {
     className: h.container,
     style: {
-      top: n - 16
+      top: n - 50,
+      left: "52%"
     },
     "aria-hidden": !0,
     children: o.map(e => (0, r.jsx)(m, {

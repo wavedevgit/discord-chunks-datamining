@@ -96,15 +96,15 @@ let S = e => {
 function Z(e) {
   let {
     entry: t
-  } = e, [l, a] = i.useState(!1), {
-    canEdit: c
+  } = e, [l, a] = i.useState(!1), c = i.useRef(null), {
+    canEdit: u
   } = (0, v.Z)(t);
   return (0, r.jsx)("div", {
     className: o()(O.actionButtonsContainer, {
       [O.forceButtonsShow]: l
     }),
     children: (0, r.jsxs)(p.ZP, {
-      children: [c ? (0, r.jsx)(s.ua7, {
+      children: [u ? (0, r.jsx)(s.ua7, {
         text: j.NW.string(j.t.XnuOvL),
         hideOnClick: !0,
         children: e => {
@@ -131,6 +131,7 @@ function Z(e) {
           }))
         }
       }) : null, (0, r.jsx)(y.Z, {
+        targetElementRef: c,
         onRequestOpen: () => a(!0),
         onRequestClose: () => a(!1),
         entry: t,
@@ -147,6 +148,7 @@ function Z(e) {
                 onClick: i
               } = e, l = P(e, ["onClick"]);
               return (0, r.jsx)(p.zx, I(N({}, n, l), {
+                ref: c,
                 onClick: e => {
                   null == i || i(), t(e)
                 },

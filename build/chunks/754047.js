@@ -1,36 +1,37 @@
 /** Chunk was on 95477 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 }), n(47120);
 var r = n(192379),
-  l = n(493773),
-  o = n(81897),
-  i = n(228168);
+  l = n(481060),
+  o = n(493773),
+  i = n(81897),
+  a = n(228168);
 
-function a(e) {
+function s(e) {
   let {
     shouldShowPopoutOnHover: t,
     handlePreload: n
-  } = e, [a, s] = r.useState(!1), c = r.useRef(!1), u = (0, o.Z)(), d = r.useRef(void 0), m = r.useRef(void 0), p = r.useRef(void 0);
-  return ((0, l.zq)(() => {
-    clearTimeout(d.current), clearTimeout(m.current), clearTimeout(p.current)
+  } = e, [s, c] = r.useState(!1), u = r.useRef(!1), d = (0, i.Z)(), m = r.useRef(void 0), p = r.useRef(void 0), f = r.useRef(void 0);
+  return ((0, o.zq)(() => {
+    clearTimeout(m.current), clearTimeout(p.current), clearTimeout(f.current)
   }), t) ? {
-    showPopoutFromHover: a,
+    showPopoutFromHover: s,
     onRequestClose: () => {
-      s(!1)
+      c(!1)
     },
     onMouseEnter: () => {
       let e;
-      c.current = !0, d.current = setTimeout(() => {
-        c.current && (e = n(u))
-      }, i.a6), m.current = setTimeout(async () => {
-        c.current && (null != e && await e, s(!0))
-      }, i.JX)
+      u.current = !0, m.current = setTimeout(() => {
+        u.current && (e = n(d))
+      }, a.a6), p.current = setTimeout(async () => {
+        !(0, l.$sL)() && u.current && (null != e && await e, c(!0))
+      }, a.JX)
     },
     onMouseLeave: () => {
-      c.current = !1, p.current = setTimeout(() => {
-        c.current || s(!1)
-      }, i.Ig)
+      u.current = !1, f.current = setTimeout(() => {
+        u.current || c(!1)
+      }, a.Ig)
     }
   } : {
     showPopoutFromHover: !1,

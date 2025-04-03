@@ -349,7 +349,7 @@ function x(e) {
   let L = i.useCallback(e => {
       n(e), c && o()
     }, [o, n, c]),
-    x = _.map((e, t) => {
+    x = i.useMemo(() => _.map((e, t) => {
       var n;
       return (0, r.jsx)(M, {
         isSelected: d(e.value),
@@ -360,7 +360,7 @@ function x(e) {
         isDisabled: e.disabled,
         serialize: E
       }, null !== (n = e.key) && void 0 !== n ? n : t)
-    }),
+    }), [L, d, v, _, g, E]),
     k = _.length <= h ? f.xV : f.h2;
   return (0, r.jsx)(l.bG, {
     navigator: w,

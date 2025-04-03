@@ -83,8 +83,8 @@ function Z(e) {
       showPopout: I = !1,
       className: A,
       onClick: _,
-      onContextMenu: M,
-      onPopoutRequestClose: L,
+      onContextMenu: L,
+      onPopoutRequestClose: M,
       renderPopout: D,
       renderRemixTag: F = !1,
       decorations: G
@@ -124,7 +124,7 @@ function Z(e) {
         color: J
       } : void 0 : void 0,
       onClick: _,
-      onContextMenu: M,
+      onContextMenu: L,
       children: W + q
     },
     ea = {
@@ -173,7 +173,7 @@ function Z(e) {
       shouldShow: I || ed,
       position: s.tq ? "window_center" : "right",
       onRequestClose: () => {
-        null == em || em(), null == L || L()
+        null == em || em(), null == M || M()
       },
       clickTrap: I,
       children: e => {
