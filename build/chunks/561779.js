@@ -107,16 +107,17 @@ function I(e) {
   }
 }
 
-function S(e) {
+function S(e, t) {
+  let n = Math.min(Math.max(e.initialValue, e.minValue), e.maxValue);
   return b({
-    value: Math.min(Math.max(e.initialValue, e.minValue), e.maxValue),
+    value: null != t ? t : n,
     initialValueProp: e.initialValue,
     newClosestIndex: null
   }, I(e))
 }
 class T extends(r = o.PureComponent) {
   static getDerivedStateFromProps(e, t) {
-    return e.initialValue !== t.initialValueProp ? v(b({}, S(e)), {
+    return e.initialValue !== t.initialValueProp ? v(b({}, S(e, t.value)), {
       active: t.active
     }) : null
   }
@@ -454,7 +455,7 @@ class T extends(r = o.PureComponent) {
       active: !1,
       focused: !1,
       dragStartValue: void 0
-    }, S(e))
+    }, S(e, e.initialValue))
   }
 }
 

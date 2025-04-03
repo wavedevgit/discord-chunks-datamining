@@ -44,6 +44,7 @@ n.d(t, {
   _p: () => ts,
   b7: () => eY,
   bA: () => th,
+  eE: () => tb,
   f$: () => ta,
   f2: () => eM,
   fY: () => e5,
@@ -940,4 +941,15 @@ function tE(e) {
   return x({
     decisionId: null == r ? void 0 : r.decisionId
   }, null == r ? void 0 : r.adIdentifiers)
+}
+
+function tb(e) {
+  return null != e ? {
+    ad_id: e.adId,
+    adset_id: e.adsetId,
+    campaign_id: e.campaignId,
+    creative_id: e.creativeId,
+    creative_type: e.creativeType,
+    decision_id: e.decisionId
+  } : {}
 }

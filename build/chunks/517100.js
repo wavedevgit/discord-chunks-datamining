@@ -110,7 +110,7 @@ __OVERLAY__ || (u.isPlatformEmbedded && (null === s.Z || void 0 === s.Z ? void 0
   b = !0, P({})
 }), s.Z.remotePowerMonitor.on("unlock-screen", () => {
   b = !1, P({})
-})) : setInterval(S, .25 * f.OSm));
+})) : setInterval(S, 30 * c.Z.Millis.SECOND));
 class w extends(r = i.ZP.Store) {
   isIdle() {
     return m

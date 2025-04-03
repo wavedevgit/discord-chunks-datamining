@@ -127,7 +127,7 @@ class S {
       }), T.lastBeatTime = Date.now()
     }), h(this, "commonProperties", e => m(E(m({
       impression_id: this.id
-    }, this.adDecisionData), {
+    }, (0, d.eE)(this.adDecisionData)), {
       quest_status: (0, c.uk)(e)
     }), (0, c.mH)(this.questContent, this.questContentPosition, this.questContentRowIndex))), h(this, "clone", e => {
       let {
