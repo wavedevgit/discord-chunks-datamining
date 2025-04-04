@@ -121,9 +121,9 @@ let S = e => {
     },
     x = async () => {
       await f.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
-    }, L = Z(I.NW.format(I.t["9ZezpK"], {
+    }, w = Z(I.NW.format(I.t["9ZezpK"], {
       name: null == j ? void 0 : j.name
-    }), A), w = Z(I.NW.format(I.t.fJwWVl, {
+    }), A), L = Z(I.NW.format(I.t.fJwWVl, {
       name: null == j ? void 0 : j.name
     }), A);
   return (0, r.jsxs)("div", {
@@ -140,7 +140,7 @@ let S = e => {
         switch (S.applicationStatus) {
           case m.wB.SUBMITTED:
             return (0, r.jsx)(O.Z, {
-              onWithdrawApplication: L,
+              onWithdrawApplication: w,
               guild: j
             });
           case m.wB.REJECTED:
@@ -148,13 +148,13 @@ let S = e => {
               reapplyText: I.NW.string(I.t.I1LYVl),
               onReapply: x,
               confirmText: I.NW.string(I.t.g9tK0t),
-              onWithdrawApplication: L,
+              onWithdrawApplication: w,
               rejectionReason: S.rejectionReason,
               guild: j
             });
           default:
             return (0, r.jsx)(_.s, {
-              onDiscardApplication: w,
+              onDiscardApplication: L,
               onContinueApplication: () => (0, g.hk)(t),
               guild: j
             })

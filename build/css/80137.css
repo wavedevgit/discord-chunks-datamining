@@ -1,6 +1,6 @@
 /**
   Module ID: 80137
-  Original File Name: 3a7e587ae230b44c
+  Original File Name: 6cdc18c7c7e56afe
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -1420,6 +1420,10 @@
 
 .errorCodeNoticeText__9671b {
     margin-left: var(--spacing-8)
+}
+
+.errorCodeNoticeClickable__9671b {
+    cursor: pointer
 }
 
 .notice__36c3e {
@@ -2875,4 +2879,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=3a7e587ae230b44c.css.map*/
+/*# sourceMappingURL=6cdc18c7c7e56afe.css.map*/

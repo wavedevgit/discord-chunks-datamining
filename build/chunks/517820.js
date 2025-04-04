@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(36459),
   E = n(434404),
   O = n(518950),
-  N = n(347475),
+  N = n(670188),
   j = n(592125),
   C = n(271383),
   I = n(594174),
@@ -192,16 +192,11 @@ function B(e) {
             variant: "text-xs/medium",
             color: "text-normal",
             children: k.NW.string(k.t.qlFrXV)
-          }), (0, r.jsx)(f.yRy, {
-            renderPopout: function(e) {
-              return null == l ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(N.Z, L(D({}, e), {
-                userId: l.id,
-                user: l,
-                guildId: o,
-                channelId: n.channel_id,
-                messageId: n.id
-              }))
-            },
+          }), (0, r.jsx)(N.Z, {
+            user: l,
+            guildId: o,
+            channelId: n.channel_id,
+            messageId: n.id,
             children: e => (0, r.jsxs)(f.P3F, L(D({
               className: R.alertsEnabledSubHeaderAvatarUsername
             }, e), {

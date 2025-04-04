@@ -1,6 +1,6 @@
 /** Chunk was on 68784 **/
 n.d(t, {
-  default: () => E
+  default: () => A
 }), n(388685);
 var r = n(200651),
   a = n(192379),
@@ -62,7 +62,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function E(e) {
   let {
     selectedDuration: t,
     onSelect: n
@@ -99,7 +99,7 @@ function A(e) {
   })
 }
 
-function E(e) {
+function A(e) {
   let {
     channel: t,
     transitionState: n,
@@ -171,7 +171,7 @@ function E(e) {
   a.useEffect(() => {
     (0, c.oav)(x.$z, e => {
       var n, a;
-      return (0, r.jsx)(E, (n = function(e) {
+      return (0, r.jsx)(A, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -300,7 +300,7 @@ function E(e) {
         })]
       }), (0, r.jsx)(c.LZC, {
         size: 18
-      }), (0, r.jsx)(A, {
+      }), (0, r.jsx)(E, {
         selectedDuration: U,
         onSelect: M
       })]

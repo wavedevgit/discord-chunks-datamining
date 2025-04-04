@@ -76,8 +76,9 @@ let P = new f.Z("KeybindsStore"),
   };
 
 function D() {
-  let e = (0, b.pz)(!0).get("Backquote");
-  return "+" === e && (e = "plus"), "shift+".concat(e)
+  var e;
+  let t = null != (e = (0, b.pz)(!1).get("Backquote")) ? e : "`";
+  return "+" === t && (t = "plus"), "shift+".concat(t)
 }
 let L = "1001",
   x = () => {

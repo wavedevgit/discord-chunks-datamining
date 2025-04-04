@@ -11,7 +11,7 @@ var r = n(873546),
   l = n(230711),
   c = n(566620),
   u = n(122613),
-  d = n(508686),
+  d = n(649256),
   f = n(574952),
   _ = n(367907),
   p = n(421474),
@@ -120,7 +120,7 @@ function B(e) {
       isCurrentlyInInstance: b,
       canLaunchInChannel: y
     } = (0, m.v)(r);
-    if (y) return !b && null != g && ((0, d.u)(r, l.searchParams.get("link_id"), l.searchParams.get("custom_id")).then(async e => {
+    if (y) return !b && null != g && ((0, d.ur)(r, l.searchParams.get("link_id"), l.searchParams.get("custom_id")).then(async e => {
       let {
         customId: t
       } = e;
@@ -140,7 +140,7 @@ function B(e) {
       return null != e && (a.Z.openPrivateChannel(e).then(async e => {
         let {
           customId: t
-        } = await (0, d.u)(r, l.searchParams.get("link_id"), l.searchParams.get("custom_id"));
+        } = await (0, d.ur)(r, l.searchParams.get("link_id"), l.searchParams.get("custom_id"));
         (0, u.Z)({
           targetApplicationId: r,
           channelId: e,

@@ -12,7 +12,7 @@ var r = n(192379),
   u = n(703656),
   d = n(594174),
   p = n(122613),
-  h = n(508686),
+  h = n(649256),
   f = n(388032);
 
 function g(e) {
@@ -33,7 +33,7 @@ function g(e) {
           r = null != (e = t.searchParams.get("referrer_id")) ? e : void 0,
           {
             customId: i
-          } = await (0, h.u)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
+          } = await (0, h.ur)(_, t.searchParams.get("link_id"), t.searchParams.get("custom_id"));
         await (0, p.Z)({
           targetApplicationId: _,
           channelId: n,

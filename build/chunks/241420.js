@@ -6,8 +6,8 @@ var o = n(200651);
 n(192379);
 var i = n(481060),
   a = n(546957),
-  c = n(190014),
-  r = n(301812),
+  r = n(190014),
+  c = n(301812),
   l = n(988043),
   _ = n(919539),
   d = n(526761),
@@ -25,10 +25,10 @@ function b(e) {
     }), (0, o.jsx)(_.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(r.Z, {
+    }), (0, o.jsx)(c.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
-    }), (0, o.jsx)(c.Z, {
+    }), (0, o.jsx)(r.Z, {
       ingress: d.f4.SERVER_PRIVACY_MODAL,
       guildId: t
     }), (0, o.jsx)(i.Text, {
@@ -46,15 +46,15 @@ function p(e) {
     guild: t,
     transitionState: n,
     onClose: a
-  } = e, c = "".concat(s.NW.string(s.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
+  } = e, r = "".concat(s.NW.string(s.t.BayiAg), "—").concat(null != t ? t.toString() : "??");
   return (0, o.jsxs)(i.Y0X, {
     transitionState: n,
     size: i.CgR.SMALL,
-    "aria-label": c,
+    "aria-label": r,
     children: [(0, o.jsx)(i.xBx, {
       children: (0, o.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
-        children: c
+        children: r
       })
     }), (0, o.jsx)(i.hzk, {
       className: u.content,

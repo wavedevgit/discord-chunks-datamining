@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685), n(539854), n(49124);
 var r = n(570140),
   i = n(147913),
@@ -26,10 +26,9 @@ var r = n(570140),
   I = n(303284),
   S = n(272395),
   T = n(674503),
-  N = n(981631),
-  A = n(65154);
+  N = n(981631);
 
-function C(e, t, n) {
+function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -38,22 +37,22 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      A(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -61,30 +60,30 @@ function P(e, t) {
   return i
 }
 
-function w(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = 30,
-  L = 30,
-  x = new a.Z("AVErrorManager");
+let w = 30,
+  D = 30,
+  L = new a.Z("AVErrorManager");
 
-function M(e, t) {
+function x(e, t) {
   let n = new Set;
   for (let r of e) t.has(r) || n.add(r);
   return n
 }
-let k = {
+let M = {
   [v.u.NO_AUDIO_INPUT_DETECTED]: {
     getActiveErrors: e => {
       let {
         voiceChannelId: t,
         voiceState: n
       } = e, r = f.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = h.ZP.getMediaSessionId();
-      if (null != r && null != o && !1 === p.Z.getInputDetected() && !i && !p.Z.isSelfMute()) return [R({
+      if (null != r && null != o && !1 === p.Z.getInputDetected() && !i && !p.Z.isSelfMute()) return [C({
         type: v.u.NO_AUDIO_INPUT_DETECTED
       }, (0, I.Y9)())]
     },
@@ -96,7 +95,7 @@ let k = {
         voiceChannelId: t,
         voiceState: n
       } = e, r = f.Z.getChannel(t), i = (null == r ? void 0 : r.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), o = 0 === Object.keys(p.Z.getInputDevices()).length, a = h.ZP.getMediaSessionId();
-      if (o && null != r && null != a && !i) return [R({
+      if (o && null != r && null != a && !i) return [C({
         type: v.u.NO_INPUT_DEVICES
       }, (0, I.Y9)())]
     },
@@ -112,7 +111,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_VIEW_LOW_FPS
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_VIEW_LOW_FPS
       }, e))
     },
@@ -128,7 +127,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_VIEW_HIGH_PACKET_LOSS
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_VIEW_HIGH_PACKET_LOSS
       }, e))
     },
@@ -144,7 +143,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_SEND_HIGH_PACKET_LOSS
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_SEND_HIGH_PACKET_LOSS
       }, e))
     },
@@ -160,7 +159,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_SEND_LOW_FPS
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_SEND_LOW_FPS
       }, e))
     },
@@ -176,7 +175,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_BAD_NETWORK_QUALITY
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_BAD_NETWORK_QUALITY
       }, e))
     },
@@ -192,7 +191,7 @@ let k = {
           streamError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.STREAM_SOUNDSHARE_FAILED
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.STREAM_SOUNDSHARE_FAILED
       }, e))
     },
@@ -203,7 +202,7 @@ let k = {
       let {
         activeStreams: t
       } = e;
-      return t.filter(e => e.state === N.jm8.FAILED).map(e => R({
+      return t.filter(e => e.state === N.jm8.FAILED).map(e => C({
         type: v.u.STREAM_FAILED_TO_START
       }, (0, I.rT)((0, s.V9)(e))))
     },
@@ -214,7 +213,7 @@ let k = {
       let {
         activeStreams: t
       } = e;
-      return t.filter(e => e.state === N.jm8.RECONNECTING).map(e => R({
+      return t.filter(e => e.state === N.jm8.RECONNECTING).map(e => C({
         type: v.u.STREAM_RECONNECTING
       }, (0, I.rT)((0, s.V9)(e))))
     },
@@ -222,12 +221,12 @@ let k = {
   },
   [v.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH]: {
     getActiveErrors: () => {
-      var e, t, n, r, i;
-      if ((null != (r = null == (e = h.ZP.getRTCConnection()) ? void 0 : e.getDurationSeconds()) ? r : 0) < L) return;
-      let o = null != (i = null == (n = c.Z.getFirstConnectionStatsByContext(A.Yn.DEFAULT)) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : t.sampleRateMismatchPercent) ? i : 0;
-      if (Math.abs(o) > D) return [R({
+      var e, t, n, r, i, o;
+      if ((null != (i = null == (e = h.ZP.getRTCConnection()) ? void 0 : e.getDurationSeconds()) ? i : 0) < D) return;
+      let a = null != (o = null == (n = c.Z.getConnectionStats(null == (r = h.ZP.getRTCConnection()) ? void 0 : r.getMediaEngineConnectionId())) || null == (t = n.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : t.sampleRateMismatchPercent) ? o : 0;
+      if (Math.abs(a) > w) return [C({
         type: v.u.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
-        audioCaptureSampleRateMismatchPercent: o
+        audioCaptureSampleRateMismatchPercent: a
       }, (0, I.Y9)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)
@@ -238,7 +237,7 @@ let k = {
         userId: t
       } = e;
       return d.default.getId() === t
-    }).map(e => R({
+    }).map(e => C({
       type: v.u.VIDEO_STREAM_SENDER_READY_TIMEOUT
     }, e)),
     makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
@@ -249,7 +248,7 @@ let k = {
         userId: t
       } = e;
       return d.default.getId() !== t
-    }).map(e => R({
+    }).map(e => C({
       type: v.u.VIDEO_STREAM_RECEIVER_READY_TIMEOUT
     }, e)),
     makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
@@ -264,7 +263,7 @@ let k = {
           videoError: t
         } = e;
         return (null == t ? void 0 : t.avError) === v.u.CAMERA_SEND_LOW_FPS
-      }).map(e => R({
+      }).map(e => C({
         type: v.u.CAMERA_SEND_LOW_FPS
       }, e))
     },
@@ -272,16 +271,16 @@ let k = {
   }
 };
 
-function j(e) {
-  return k[e.type]
+function k(e) {
+  return M[e.type]
 }
 
-function U(e) {
-  let t = j(e);
+function j(e) {
+  let t = k(e);
   return "".concat(e.type, ":").concat(null == t ? void 0 : t.makeErrorContextKey(e))
 }
 
-function G(e) {
+function U(e) {
   if (null == e) return null;
   let t = [];
   for (let n of o.Z.getStreamParticipants(e)) {
@@ -294,25 +293,25 @@ function G(e) {
       s = (0, l.w)(g.Z.getQuality(), g.Z.getStatsHistory(r, i, o), a, e),
       c = n.id,
       f = g.Z.getMediaSessionId(c);
-    null != s && null != f && t.push(R({
+    null != s && null != f && t.push(C({
       streamError: s
     }, (0, I.rT)(c)))
   }
   return t
 }
 
-function B(e) {
+function G(e) {
   if (null == e) return null;
   let t = [];
   for (let n of o.Z.getVideoParticipants(e)) {
     let r = (0, l.H)(h.ZP.getStatsHistory(e, n.id));
-    null != r && null != h.ZP.getMediaSessionId() && t.push(R({
+    null != r && null != h.ZP.getMediaSessionId() && t.push(C({
       videoError: r
     }, (0, I.Y9)()))
   }
   return t
 }
-class V extends i.Z {
+class B extends i.Z {
   _initialize() {
     (0, S.H3)("AVErrorManager")
   }
@@ -321,11 +320,11 @@ class V extends i.Z {
     if (__OVERLAY__) return;
     let n = null != (e = m.Z.getVoiceChannelId()) ? e : null,
       i = null != n && null != (t = b.Z.getVoiceStateForChannel(n)) ? t : null,
-      o = G(n),
+      o = U(n),
       a = u.Z.getAllActiveStreams(),
-      s = B(n),
+      s = G(n),
       l = new Map;
-    for (let e of Object.values(k)) {
+    for (let e of Object.values(M)) {
       let t = e.getActiveErrors({
         voiceChannelId: n,
         voiceState: i,
@@ -334,27 +333,27 @@ class V extends i.Z {
         videoErrors: s
       });
       if (null != t)
-        for (let e of t) l.set(U(e), e)
+        for (let e of t) l.set(j(e), e)
     }
     let c = T.Z.getActiveErrors();
-    if (!(c instanceof Map)) return void x.error("existingErrors is not a Map: ".concat(c, " type: ").concat(Object.prototype.toString.call(c)));
+    if (!(c instanceof Map)) return void L.error("existingErrors is not a Map: ".concat(c, " type: ").concat(Object.prototype.toString.call(c)));
     if (0 === l.size && 0 === c.size) return;
     let d = new Set(l.keys()),
       f = new Set(c.keys());
     if (d.size > f.size)
-      for (let e of M(d, f)) {
+      for (let e of x(d, f)) {
         let t = l.get(e);
         null != t && (0, v.kr)(t)
       }
     if (f.size > d.size)
-      for (let e of M(f, d)) {
+      for (let e of x(f, d)) {
         let t = e,
           n = c.get(t);
         if (null != n) {
           let {
             type: e
-          } = n, t = P(n, ["type"]);
-          x.info("Error resolved: ".concat(e, " ").concat(JSON.stringify(t)))
+          } = n, t = R(n, ["type"]);
+          L.info("Error resolved: ".concat(e, " ").concat(JSON.stringify(t)))
         }
       }
     r.Z.dispatch({
@@ -370,7 +369,7 @@ class V extends i.Z {
     __OVERLAY__ || (0, O.b)(t, n)
   }
   constructor(...e) {
-    super(...e), C(this, "actions", {
+    super(...e), A(this, "actions", {
       MEDIA_ENGINE_SET_AUDIO_ENABLED: this.updateActiveErrors,
       AUDIO_INPUT_DETECTED: this.updateActiveErrors,
       AUDIO_SET_DISPLAY_SILENCE_WARNING: this.updateActiveErrors,
@@ -397,4 +396,4 @@ class V extends i.Z {
     })
   }
 }
-let F = new V
+let V = new B

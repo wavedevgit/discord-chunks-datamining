@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(540059),
   Z = n(724383),
   x = n(135864),
-  L = n(372900),
-  w = n(63568),
+  w = n(372900),
+  L = n(63568),
   R = n(6039),
   D = n(637853),
   k = n(326145),
@@ -157,7 +157,7 @@ let ev = (0, u.Un)({
     name: "GuildPowerupsPage",
     renderLoader: eC
   }),
-  eL = e => {
+  ew = e => {
     let {
       match: t
     } = e, n = (0, E.l)(), i = (0, p.e7)([ee.Z, er.Z], () => {
@@ -178,7 +178,7 @@ let ev = (0, u.Un)({
         default:
           return
       }
-    }), h = (0, P.C4)(l, "channel_renderer"), f = (0, w.jS)(l, "ChannelRenderer");
+    }), h = (0, P.C4)(l, "channel_renderer"), f = (0, L.jS)(l, "ChannelRenderer");
     if (null != l && null != a && (0, eb.AB)(a)) switch (a) {
       case eb.oC.ROLE_SUBSCRIPTIONS:
         return h ? (0, r.jsx)(eS, {
@@ -242,7 +242,7 @@ let ev = (0, u.Un)({
     }
     return (0, r.jsx)(v.Z, {})
   },
-  ew = i.memo(function() {
+  eL = i.memo(function() {
     let {
       guildId: e,
       channelId: t
@@ -252,7 +252,7 @@ let ev = (0, u.Un)({
       guildId: e
     }, e) : (0, r.jsx)(ep.Z, {})
   }),
-  eR = e => (0, r.jsx)(eL, ey({}, e)),
+  eR = e => (0, r.jsx)(ew, ey({}, e)),
   eD = e => {
     let {
       location: t
@@ -493,7 +493,7 @@ function eq(e) {
         themeOverride: n
       }), !o && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(Z, eI(ey({}, x), {
-          children: (0, r.jsx)(ew, {})
+          children: (0, r.jsx)(eL, {})
         })), O ? (0, r.jsx)(f.P3F, {
           onClick: j,
           "aria-label": "Resize Sidebar",
@@ -551,7 +551,7 @@ function eQ() {
     children: [h && !u && !_ && (0, r.jsx)(G.Z, {
       className: eN.guilds,
       themeOverride: n
-    }), (0, r.jsx)(L.Z.Provider, {
+    }), (0, r.jsx)(w.Z.Provider, {
       value: (null == f ? void 0 : f.params.guildId) === em.ME || null == f ? void 0 : f.params.guildId,
       children: (0, r.jsxs)("div", {
         className: eN.base,

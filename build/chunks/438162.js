@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   o = n(192379),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   c = n(442837),
   l = n(952265),
   s = n(481060),
@@ -98,7 +98,7 @@ let eo = o.memo(function(e) {
       locked: o
     } = e;
     return (0, r.jsx)(s.P3F, {
-      className: i()(Q.overlayBackground, {
+      className: a()(Q.overlayBackground, {
         [Q.overlayActive]: !o,
         [Q.overlayLocked]: o
       }),
@@ -121,7 +121,7 @@ let eo = o.memo(function(e) {
       })
     })
   }),
-  ea = o.memo(function(e) {
+  ei = o.memo(function(e) {
     let {
       locked: t,
       focused: n
@@ -135,7 +135,7 @@ let eo = o.memo(function(e) {
     }) : null
   });
 
-function ei() {
+function ea() {
   if (null != j.Z.getContextMenu()) return void(0, u.Zy)();
   d.Z.setInputLocked(!0, (0, D.getPID)())
 }
@@ -162,7 +162,7 @@ function eu() {
     {
       locked: t,
       focused: n,
-      incompatibleApp: a,
+      incompatibleApp: i,
       hasValidResolution: u,
       hasZeroSizeDimension: m,
       keybind: j,
@@ -209,11 +209,11 @@ function eu() {
       t = (0, H.pL)(),
       n = x.Z.getVoiceChannelId(),
       r = P.Z.getChannel(n),
-      a = null != r ? C.Z.getGuild(r.guild_id) : null,
-      i = null != O.Z.getCurrentUserActiveStream(),
+      i = null != r ? C.Z.getGuild(r.guild_id) : null,
+      a = null != O.Z.getCurrentUserActiveStream(),
       c = null != n,
-      l = (0, y.Z)(w.Z) && !i && null != t,
-      s = c && null != a && null != n,
+      l = (0, y.Z)(w.Z) && !a && null != t,
+      s = c && null != i && null != n,
       {
         showKeybindIndicators: u,
         dismissKeybindNotification: _
@@ -231,12 +231,12 @@ function eu() {
         type: K.nc.GO_LIVE_VOICE,
         game: t,
         voiceChannelId: n,
-        voiceGuild: a
+        voiceGuild: i
       } : l && (r = {
         type: K.nc.GO_LIVE_NON_VOICE,
         game: t
       }), d.Z.overlayMounted(r)
-    }, [c, l, s, t, n, a, u, _])
+    }, [c, l, s, t, n, i, u, _])
   }(), o.useEffect(() => {
     if (t) {
       if ((0, l.Ay)(s.u1M), e.addEventListener("contextmenu", en, !1), null != et) {
@@ -261,7 +261,7 @@ function eu() {
     em = (0, _.Z)(eb);
   return (o.useEffect(() => {
     !em && eb && d.Z.notifyContentInventoryReady(ep)
-  }, [ep, eb, em]), m || a) ? null : (0, r.jsx)(p.Gt, {
+  }, [ep, eb, em]), m || i) ? null : (0, r.jsx)(p.Gt, {
     value: M,
     children: (0, r.jsxs)("div", {
       className: Q.overlay,
@@ -271,9 +271,9 @@ function eu() {
       }), ee, (!t || S.has(X.O0n.TEXT_WIDGET)) && (0, r.jsx)(eo, {
         locked: t,
         keybind: j,
-        onClick: ei
+        onClick: ea
       }), u ? (0, r.jsx)(z.Z, {
-        className: i()({
+        className: a()({
           [Q.layoutLocked]: t,
           [Q.layoutUnlocked]: !t
         })
@@ -283,7 +283,7 @@ function eu() {
           className: Q.inactiveContainer,
           children: q.NW.format(q.t.ketnW1, D.OVERLAY_MIN_RESOLUTION)
         })
-      }), $ && (0, r.jsx)(ea, {
+      }), $ && (0, r.jsx)(ei, {
         locked: t,
         focused: n
       }), null != ed && null != er && (0, r.jsx)(G.Z, {

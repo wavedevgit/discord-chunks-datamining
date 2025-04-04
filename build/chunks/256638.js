@@ -97,22 +97,30 @@ let ev = e => {
     var t;
     let {
       error: n,
-      location: i
-    } = e, a = null == (t = (0, Z.hp)(n)) ? void 0 : t.errorCode, l = eb.NW.formatToPlainString(eb.t["ejOT9/"], {
-      errorCode: a
+      location: i,
+      allowClick: a = !1
+    } = e, l = null == (t = (0, Z.hp)(n)) ? void 0 : t.errorCode, o = eb.NW.formatToPlainString(eb.t["ejOT9/"], {
+      errorCode: l
     }), {
-      avErrorUIEnabled: o
+      avErrorUIEnabled: s
     } = (0, k.JN)({
       location: i
     });
-    return o && (0, r.jsx)(c.Text, {
+    if (!s) return null;
+    let u = (0, r.jsx)(c.Text, {
       variant: "text-sm/bold",
       color: "currentColor",
       tag: "span",
       className: ex.errorCodeNoticeText,
       selectable: !0,
-      children: l
-    })
+      children: o
+    });
+    return a ? (0, r.jsx)(c.P3F, {
+      tag: "span",
+      className: ex.errorCodeNoticeClickable,
+      onClick: () => a && open(eu.Z.getArticleURL(ef.BhN.AV_ERROR_CODES)),
+      children: u
+    }) : u
   },
   eE = () => (0, r.jsxs)(c.qXd, {
     color: c.DM8.DANGER,
@@ -149,6 +157,7 @@ let ev = e => {
         ej(), (0, em.b)()
       }
     }), eb.NW.string(eb.t.dNAJ19), (0, r.jsx)(ev, {
+      allowClick: !0,
       error: Z.u.NO_AUDIO_INPUT_DETECTED,
       location: "AudioIssueNoticeMicTester"
     }), (0, r.jsx)(c.EyT, {

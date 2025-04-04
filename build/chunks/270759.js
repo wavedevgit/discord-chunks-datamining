@@ -54,9 +54,9 @@ let x = function(e) {
     p.Y(T.Z5c.FRIENDS), (0, N.e)("friends")
   }, []);
   let x = (0, c.e7)([y.Z], () => y.Z.theme),
-    L = (0, v.If)(),
+    w = (0, v.If)(),
     {
-      section: w,
+      section: L,
       rows: R
     } = (0, c.cj)([I.ZP], () => I.ZP.getState()),
     D = (0, c.e7)([b.Z], () => b.Z.getSuggestionCount()),
@@ -83,13 +83,13 @@ let x = function(e) {
       id: T.pJs.PENDING,
       show: !E || R.filter(T.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [j.NW.string(j.t.p6IHGB), L > 0 && (0, r.jsx)(u.mAB, {
-          count: L,
+        children: [j.NW.string(j.t.p6IHGB), w > 0 && (0, r.jsx)(u.mAB, {
+          count: w,
           className: A.badge
         })]
       }),
       ariaLabel: j.NW.formatToPlainString(j.t.OAC0Z2, {
-        count: L.toString()
+        count: w.toString()
       }),
       className: A.item
     }, {
@@ -135,7 +135,7 @@ let x = function(e) {
           children: j.NW.string(j.t.TdEu5e)
         }), (0, r.jsx)(_.Z.Divider, {}), (0, r.jsx)(u.njP, {
           "aria-label": j.NW.string(j.t.TdEu5e),
-          selectedItem: w,
+          selectedItem: L,
           type: "top-pill",
           onItemSelect: M,
           className: A.tabBar,
@@ -150,10 +150,10 @@ let x = function(e) {
     }), (0, r.jsxs)("div", {
       className: A.tabBody,
       children: [(0, r.jsx)(u.njP.Panel, {
-        id: w,
+        id: L,
         className: A.peopleColumn,
         "aria-labelledby": G,
-        children: w === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
+        children: L === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
           titleId: G
         })
       }), (0, r.jsx)("div", {

@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => L
+  Z: () => w
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -118,7 +118,7 @@ let A = 15 * E.Z.Millis.MINUTE,
   }),
   x = a().throttle(() => f.W(!1), 3e5);
 
-function L() {
+function w() {
   let {
     nowPlayingCards: e,
     loaded: t,

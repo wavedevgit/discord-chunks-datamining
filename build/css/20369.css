@@ -1,6 +1,6 @@
 /**
   Module ID: 20369
-  Original File Name: bf19a29ed2e546be
+  Original File Name: 26162a995660a6d2
 **/
 @value minColumnWidth: 460px;
 
@@ -2630,6 +2630,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-left: var(--spacing-8)
 }
 
+.errorCodeNoticeClickable__9671b {
+    cursor: pointer
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -3673,4 +3677,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=bf19a29ed2e546be.css.map*/
+/*# sourceMappingURL=26162a995660a6d2.css.map*/

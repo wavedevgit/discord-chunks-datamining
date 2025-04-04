@@ -123,21 +123,17 @@ class V extends i.PureComponent {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.props;
     return D.a ? F.REGISTER : e.login ? F.LOGIN : F.REGISTER
   }
-  track(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
-      {
-        invite: r
-      } = this.props,
-      i = this.getInviteKey(),
-      o = (0, N.jX)(i),
-      a = t ? {
-        guild_id: null != r.guild ? r.guild.id : null,
-        channel_id: null != r.channel ? r.channel.id : null,
-        inviter_id: null != r.inviter ? r.inviter.id : null,
-        invite_code: o
-      } : {
-        invite_code: o
-      };
+  track(e, t, n) {
+    let {
+      invite: r
+    } = this.props, i = this.getInviteKey(), o = (0, N.jX)(i), a = t ? {
+      guild_id: null != r.guild ? r.guild.id : null,
+      channel_id: null != r.channel ? r.channel.id : null,
+      inviter_id: null != r.inviter ? r.inviter.id : null,
+      invite_code: o
+    } : {
+      invite_code: o
+    };
     C.default.track(e, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

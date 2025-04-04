@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => eh
+  Z: () => ep
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -37,24 +37,23 @@ var r = n(200651),
   k = n(570096),
   M = n(850020),
   L = n(155409),
-  D = n(184301),
-  W = n(347475),
-  U = n(706454),
-  B = n(662594),
-  H = n(430824),
-  F = n(944486),
-  G = n(111583),
-  V = n(594174),
-  z = n(979651),
-  Y = n(585483),
-  q = n(823379),
-  K = n(51144),
-  X = n(998502),
-  Q = n(981631),
-  J = n(388032),
-  $ = n(11847);
+  D = n(670188),
+  W = n(706454),
+  U = n(662594),
+  B = n(430824),
+  H = n(944486),
+  F = n(111583),
+  G = n(594174),
+  V = n(979651),
+  z = n(585483),
+  Y = n(823379),
+  q = n(51144),
+  K = n(998502),
+  X = n(981631),
+  Q = n(388032),
+  J = n(11847);
 
-function ee(e, t, n) {
+function $(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -63,20 +62,20 @@ function ee(e, t, n) {
   }) : e[t] = n, e
 }
 
-function et(e) {
+function ee(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ee(e, t, n[t])
+      $(e, t, n[t])
     })
   }
   return e
 }
 
-function en(e, t) {
+function et(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +88,7 @@ function en(e, t) {
   }), e
 }
 
-function er(e, t) {
+function en(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -104,9 +103,9 @@ function er(e, t) {
   }
   return i
 }
-let ei = X.ZP.getEnableHardwareAcceleration(),
-  el = 44 + C.x,
-  eo = {
+let er = K.ZP.getEnableHardwareAcceleration(),
+  ei = 44 + C.x,
+  el = {
     origin: {
       x: 38,
       y: 11
@@ -118,7 +117,7 @@ let ei = X.ZP.getEnableHardwareAcceleration(),
       y: 0
     }
   };
-class ea extends i.Component {
+class eo extends i.Component {
   shouldComponentUpdate(e) {
     return !(0, f.Z)(this.props, e, ["channelId"])
   }
@@ -128,57 +127,57 @@ class ea extends i.Component {
         colorString: t,
         colorStrings: n,
         colorRoleName: i,
-        isOwner: l,
-        nick: o,
-        user: a,
-        currentUser: s,
-        activities: c,
-        applicationStream: u,
-        status: p,
-        channel: h,
-        guildId: f,
+        colorRoleId: l,
+        isOwner: o,
+        nick: a,
+        user: s,
+        currentUser: c,
+        activities: u,
+        applicationStream: p,
+        status: h,
+        channel: f,
+        guildId: m,
         isTyping: g,
         isMobileOnline: b,
         premiumSince: _,
         nameplate: y
       } = e,
-      x = er(e, ["colorString", "colorStrings", "colorRoleName", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]),
+      x = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]),
       v = null != _ ? new Date(_) : null;
-    return (0, r.jsx)(m.yRy, {
-      clickTrap: !0,
-      preload: () => (0, D.Z)(a, {
-        channelId: h.id,
-        guildId: f
-      }),
-      renderPopout: this.renderUserPopout,
+    return (0, r.jsx)(D.Z, {
+      user: s,
+      guildId: m,
+      channelId: f.id,
+      roleId: l,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
       onShiftClick: this.handleShiftClick,
-      children: (e, d) => {
+      clickTrap: !0,
+      children: (e, l) => {
         let {
-          isShown: m
-        } = d;
-        return (0, r.jsx)(C.Z, et({
-          className: $.member,
+          isShown: d
+        } = l;
+        return (0, r.jsx)(C.Z, ee({
+          className: J.member,
           onContextMenu: this.renderUserContextMenu,
-          shouldAnimateStatus: ei,
-          user: a,
-          currentUser: s,
-          nick: o,
-          status: p,
-          activities: c,
-          applicationStream: u,
-          isOwner: l,
+          shouldAnimateStatus: er,
+          user: s,
+          currentUser: c,
+          nick: a,
+          status: h,
+          activities: u,
+          applicationStream: p,
+          isOwner: o,
           premiumSince: v,
           colorString: t,
           colorStrings: n,
           colorRoleName: i,
           isTyping: g,
-          channel: h,
-          guildId: f,
+          channel: f,
+          guildId: m,
           isMobile: b,
           onClickPremiumGuildIcon: this.openGuildSubscriptionModal,
-          selected: m,
+          selected: d,
           itemProps: x,
           nameplate: y
         }, e))
@@ -186,70 +185,65 @@ class ea extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), ee(this, "renderUserContextMenu", e => {
+    super(...e), $(this, "renderUserContextMenu", e => {
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = z.Z.isInChannel(F.Z.getVoiceChannelId(), this.props.user.id);
-        return n => (0, r.jsx)(e, en(et({}, n), {
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(H.Z.getVoiceChannelId(), this.props.user.id);
+        return n => (0, r.jsx)(e, et(ee({}, n), {
           user: this.props.user,
           guildId: this.props.guildId,
           channel: this.props.channel,
           showMediaItems: t
         }))
       })
-    }), ee(this, "handleShiftClick", () => {
+    }), $(this, "handleShiftClick", () => {
       let {
         user: e,
         channel: t
-      } = this.props, n = "@".concat(K.ZP.getUserTag(e, {
+      } = this.props, n = "@".concat(q.ZP.getUserTag(e, {
         decoration: "never"
       })), r = "<@".concat(e.id, ">");
-      Y.S.dispatchToLastSubscribed(Q.CkL.INSERT_TEXT, {
+      z.S.dispatchToLastSubscribed(X.CkL.INSERT_TEXT, {
         plainText: n,
         rawText: r
       }), _.Z.startTyping(t.id)
-    }), ee(this, "openGuildSubscriptionModal", e => {
+    }), $(this, "openGuildSubscriptionModal", e => {
       let {
         guildId: t
       } = this.props;
       null != t && (e.stopPropagation(), (0, w.f)({
         guildId: t,
         location: {
-          section: Q.jXE.MEMBER_LIST,
-          object: Q.qAy.BOOST_GEM_ICON
+          section: X.jXE.MEMBER_LIST,
+          object: X.qAy.BOOST_GEM_ICON
         }
       }))
-    }), ee(this, "renderUserPopout", e => (0, r.jsx)(W.Z, en(et({}, e), {
-      userId: this.props.user.id,
-      guildId: this.props.guildId,
-      channelId: this.props.channel.id,
-      roleId: this.props.colorRoleId
-    })))
+    })
   }
 }
-let es = i.memo(e => {
+let ea = i.memo(e => {
     let {
       colorRoleId: t
-    } = e, n = er(e, ["colorRoleId"]), {
+    } = e, n = en(e, ["colorRoleId"]), {
       channel: i,
       user: l,
       index: o
-    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([G.Z], () => G.Z.isTyping(i.id, l.id)), u = (0, h.e7)([V.default], () => V.default.getCurrentUser()), d = (0, h.e7)([H.Z], () => {
+    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([G.default], () => G.default.getCurrentUser()), d = (0, h.e7)([B.Z], () => {
       var e;
-      return null != t ? null == (e = H.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
+      return null != t ? null == (e = B.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
     }, [i, t]), p = (0, M.K)({
       location: "ChannelMembers",
       user: l
     });
-    return (0, r.jsx)(ea, en(et({}, n, a), {
+    return (0, r.jsx)(eo, et(ee({}, n, a), {
       isTyping: s,
       currentUser: u,
       colorRoleName: d,
       nameplate: p
     }))
   }),
-  ec = i.memo(function(e) {
+  es = i.memo(function(e) {
     let {
       id: t,
       title: n,
@@ -259,29 +253,29 @@ let es = i.memo(e => {
       roleId: t,
       guildId: l,
       size: 16
-    }), a = (0, h.e7)([U.default], () => new Intl.NumberFormat(U.default.locale).format(i), [i]);
-    return t === Q.Skl.UNKNOWN ? (0, r.jsx)("div", {
-      className: $.membersGroup,
+    }), a = (0, h.e7)([W.default], () => new Intl.NumberFormat(W.default.locale).format(i), [i]);
+    return t === X.Skl.UNKNOWN ? (0, r.jsx)("div", {
+      className: J.membersGroup,
       children: (0, r.jsx)("div", {
-        className: $.memberGroupsPlaceholder
+        className: J.memberGroupsPlaceholder
       })
     }) : (0, r.jsxs)(S.Z, {
-      className: $.membersGroup,
+      className: J.membersGroup,
       children: [(0, r.jsx)(m.nn4, {
-        children: J.NW.format(J.t.UaqbkZ, {
+        children: Q.NW.format(Q.t.UaqbkZ, {
           title: n,
           count: i
         })
       }), (0, r.jsxs)("span", {
         "aria-hidden": !0,
-        children: [null != o ? (0, r.jsx)(Z.Z, et({
-          className: $.roleIcon
+        children: [null != o ? (0, r.jsx)(Z.Z, ee({
+          className: J.roleIcon
         }, o)) : null, n, " — ", a]
       })]
     })
   });
 
-function eu(e) {
+function ec(e) {
   let {
     index: t
   } = e, n = (0, c.JA)("".concat(t));
@@ -289,7 +283,7 @@ function eu(e) {
     itemProps: n
   })
 }
-class ed extends i.Component {
+class eu extends i.Component {
   shouldComponentUpdate(e) {
     return e.channel.id !== this.props.channel.id || e.version !== this.props.version || e.groups.length !== this.props.groups.length
   }
@@ -341,13 +335,13 @@ class ed extends i.Component {
     return (0, r.jsx)(m.Wdt, {
       children: i => (0, r.jsx)(T.FG, {
         children: l => (0, r.jsx)("aside", {
-          className: o()($.membersWrap, $.hiddenMembers),
+          className: o()(J.membersWrap, J.hiddenMembers),
           "aria-labelledby": l,
           children: (0, r.jsx)(m.y5t, {
             component: (0, r.jsx)(m.nn4, {
               children: (0, r.jsx)(m.H, {
                 id: l,
-                children: J.NW.format(J.t.JBQxV1, {
+                children: Q.NW.format(Q.t.JBQxV1, {
                   channel: n.name
                 })
               })
@@ -357,16 +351,16 @@ class ed extends i.Component {
                 var {
                   ref: l,
                   role: a
-                } = n, s = er(n, ["ref", "role"]);
-                return (0, r.jsx)(m.aVo, et({
+                } = n, s = en(n, ["ref", "role"]);
+                return (0, r.jsx)(m.aVo, ee({
                   innerRole: a,
-                  innerAriaLabel: J.NW.string(J.t["9Oq93t"]),
+                  innerAriaLabel: Q.NW.string(Q.t["9Oq93t"]),
                   ref: e => {
                     var t;
                     this._list = e, this.props.listRef.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
                   },
-                  className: o()($.members, {
-                    [$.fullWidth]: d.tq
+                  className: o()(J.members, {
+                    [J.fullWidth]: d.tq
                   }),
                   paddingTop: 0,
                   sectionHeight: 40,
@@ -386,29 +380,29 @@ class ed extends i.Component {
     })
   }
   constructor(...e) {
-    super(...e), ee(this, "_list", null), ee(this, "_areActivitiesExperimentallyHidden", !1), ee(this, "lastReportedAnalyticsChannel", void 0), ee(this, "setList", e => {
+    super(...e), $(this, "_list", null), $(this, "_areActivitiesExperimentallyHidden", !1), $(this, "lastReportedAnalyticsChannel", void 0), $(this, "setList", e => {
       this._list = e, this.props.listRef.current = e
-    }), ee(this, "renderSection", e => {
+    }), $(this, "renderSection", e => {
       let {
         section: t
       } = e, {
         groups: n,
         channel: l
       } = this.props, o = n[t];
-      return (0, E.R)(o) ? (0, i.createElement)(E.Z, en(et({}, o), {
+      return (0, E.R)(o) ? (0, i.createElement)(E.Z, et(ee({}, o), {
         key: "section-".concat(t)
       })) : 0 === t ? (0, r.jsx)(L.Z, {
         tutorialId: "whos-online",
         position: "left",
-        inlineSpecs: eo,
-        children: (0, r.jsx)(ec, en(et({}, o), {
+        inlineSpecs: el,
+        children: (0, r.jsx)(es, et(ee({}, o), {
           guildId: l.guild_id
         }))
-      }, "section-".concat(t)) : (0, i.createElement)(ec, en(et({}, o), {
+      }, "section-".concat(t)) : (0, i.createElement)(es, et(ee({}, o), {
         key: "section-".concat(t),
         guildId: l.guild_id
       }))
-    }), ee(this, "getRowProps", e => {
+    }), $(this, "getRowProps", e => {
       let {
         groups: t,
         rows: n
@@ -418,7 +412,7 @@ class ed extends i.Component {
         index: i
       } = r;
       return null == i || "row" !== e.type ? null : n[i + 1 + e.row]
-    }), ee(this, "renderRow", e => {
+    }), $(this, "renderRow", e => {
       let {
         section: t,
         row: n,
@@ -427,7 +421,7 @@ class ed extends i.Component {
         channel: l
       } = this.props, o = this.getRowProps(e);
       if (null != o) {
-        if (o.type === B.so.MEMBER && "user" in o) {
+        if (o.type === U.so.MEMBER && "user" in o) {
           let {
             colorString: e,
             colorStrings: t,
@@ -441,7 +435,7 @@ class ed extends i.Component {
             applicationStream: h,
             premiumSince: f
           } = o;
-          return (0, r.jsx)(es, {
+          return (0, r.jsx)(ea, {
             colorString: e,
             colorStrings: t,
             colorRoleId: n,
@@ -458,10 +452,10 @@ class ed extends i.Component {
             index: i
           }, "member-".concat(o.user.id))
         }
-        if (o.type === B.so.CONTENT_INVENTORY) {
+        if (o.type === U.so.CONTENT_INVENTORY) {
           let e = "content-inventory-".concat(o.entry.id);
           null != o.entry.original_id && (e += "-".concat(o.entry.original_id));
-          let t = (0, r.jsx)(I.ZP, en(et({}, o), {
+          let t = (0, r.jsx)(I.ZP, et(ee({}, o), {
             channel: this.props.channel,
             index: i
           }), e);
@@ -469,14 +463,14 @@ class ed extends i.Component {
             children: t
           }, e) : t
         }
-        if (o.type === B.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(N.Z, {}, "content-inventory-hidden-entry")
+        if (o.type === U.so.HIDDEN_CONTENT_INVENTORY) return (0, r.jsx)(N.Z, {}, "content-inventory-hidden-entry")
       }
-      return (0, r.jsx)(eu, {
+      return (0, r.jsx)(ec, {
         index: i
       }, "placeholder-".concat(t, ":").concat(n))
-    }), ee(this, "handleScroll", () => {
+    }), $(this, "handleScroll", () => {
       this.updateSubscription(), this.updateMaxContentFeedRowSeen()
-    }), ee(this, "updateMaxContentFeedRowSeen", s().debounce(() => {
+    }), $(this, "updateMaxContentFeedRowSeen", s().debounce(() => {
       let e = this._list;
       if (null == e) return;
       let {
@@ -484,10 +478,10 @@ class ed extends i.Component {
         scrollTop: n
       } = e.getScrollerState();
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
-    }, 50)), ee(this, "getContentFeedGroup", () => {
+    }, 50)), $(this, "getContentFeedGroup", () => {
       let e = this.props.groups[P.T];
       if ((0, E.R)(e)) return e
-    }), ee(this, "hasContentFeed", () => null != this.getContentFeedGroup()), ee(this, "getRowHeightComputer", () => {
+    }), $(this, "hasContentFeed", () => null != this.getContentFeedGroup()), $(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
         {
           rowHeight: t
@@ -505,10 +499,10 @@ class ed extends i.Component {
         }
       }
       return t
-    }), ee(this, "getContentFeedHeight", () => {
+    }), $(this, "getContentFeedHeight", () => {
       let e = this.getContentFeedGroup();
       return null != e ? e.feedHeight + 40 : 0
-    }), ee(this, "updateSubscription", s().debounce(() => {
+    }), $(this, "updateSubscription", s().debounce(() => {
       if (null == this._list) return;
       let {
         channel: e
@@ -524,7 +518,7 @@ class ed extends i.Component {
         height: r,
         rowHeight: t
       })
-    }, 50)), ee(this, "trackMemberListViewed", () => {
+    }, 50)), $(this, "trackMemberListViewed", () => {
       var e;
       if (this.lastReportedAnalyticsChannel === this.props.channel.id) return;
       let t = null == (e = this._list) ? void 0 : e.getItems(),
@@ -533,27 +527,27 @@ class ed extends i.Component {
         } = this.getDimensions();
       if (void 0 === n || 0 === n || null == t) return;
       this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
-      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(q.lm);
+      let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(Y.lm);
       if (0 === r.length) return;
-      let i = r.reduce((e, t) => (t.type !== B.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === Q.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
+      let i = r.reduce((e, t) => (t.type !== U.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === X.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
         num_users_visible: 0,
         num_users_visible_with_mobile_indicator: 0,
         num_users_visible_with_game_activity: 0,
         num_users_visible_with_activity: 0,
         num_users_visible_with_avatar_decoration: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, v.ZP.trackWithMetadata(Q.rMx.MEMBER_LIST_VIEWED, et({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, v.ZP.trackWithMetadata(X.rMx.MEMBER_LIST_VIEWED, ee({}, i))
     })
   }
 }
 
-function ep(e) {
+function ed(e) {
   let {
     channel: t,
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, j.ZP)(x.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([B.ZP], () => B.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, j.ZP)(x.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: f,
@@ -564,7 +558,7 @@ function ep(e) {
     guildId: t.guild_id
   }), b = i.useRef(null), _ = (0, A.Q3)("ChannelMembers"), {
     density: C
-  } = (0, m.TCT)(), v = _ ? "compact" === C ? 42 : 50 : el, O = i.useCallback((e, t) => {
+  } = (0, m.TCT)(), v = _ ? "compact" === C ? 42 : 50 : ei, O = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -607,10 +601,10 @@ function ep(e) {
   return (0, r.jsx)(j.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
-      className: o()($.container, n),
+      className: o()(J.container, n),
       children: (0, r.jsx)(c.bG, {
         navigator: I,
-        children: (0, r.jsx)(ed, en(et({}, e, s), {
+        children: (0, r.jsx)(eu, et(ee({}, e, s), {
           version: f,
           groups: p,
           rows: d,
@@ -623,12 +617,12 @@ function ep(e) {
   })
 }
 
-function eh(e) {
+function ep(e) {
   let {
     channel: t,
     className: n
   } = e, l = i.useDeferredValue(t);
-  return i.useMemo(() => (0, r.jsx)(ep, {
+  return i.useMemo(() => (0, r.jsx)(ed, {
     channel: l,
     className: n
   }), [l, n])

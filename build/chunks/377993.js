@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => W
+  Z: () => D
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   g = n(823415),
   b = n(754047),
   _ = n(184301),
-  C = n(347475),
+  C = n(670188),
   y = n(158776),
   x = n(699516),
   v = n(111583),
@@ -51,39 +51,38 @@ function w(e) {
   }
   return e
 }
+let R = [],
+  k = P.ZP.getEnableHardwareAcceleration();
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let k = [],
-  M = P.ZP.getEnableHardwareAcceleration();
-
-function L(e) {
+function M(e) {
   let {
     user: t,
-    channel: u,
-    status: d,
-    activities: p
-  } = e, f = (0, o.e7)([v.Z], () => null != v.Z.getTypingUsers(u.id)[t.id]), O = (0, o.e7)([j.default], () => j.default.getCurrentUser()), N = (0, o.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), P = (0, o.e7)([x.Z], () => x.Z.getNickname(t.id)), A = (0, h.Z)(t.id, "private-channel-recipient"), k = e => {
+    channel: a,
+    status: u,
+    activities: d
+  } = e, p = (0, o.e7)([v.Z], () => null != v.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([j.default], () => j.default.getCurrentUser()), O = (0, o.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), N = (0, o.e7)([x.Z], () => x.Z.getNickname(t.id)), P = (0, h.Z)(t.id, "private-channel-recipient"), A = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("14126")]).then(n.bind(n, 354589));
-      return n => (0, r.jsx)(e, R(w({}, n), {
-        user: t,
-        channel: u
-      }))
+      return n => {
+        var i, l;
+        return (0, r.jsx)(e, (i = w({}, n), l = l = {
+          user: t,
+          channel: a
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          var n = Object.keys(e);
+          if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+          }
+          return n
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        }), i))
+      }
     })
-  }, L = () => {
+  }, R = () => {
     let e = "@".concat(I.ZP.getUserTag(t, {
         decoration: "never"
       })),
@@ -91,40 +90,38 @@ function L(e) {
     E.S.dispatchToLastSubscribed(Z.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
-    }), c.Z.startTyping(u.id)
-  }, D = (0, m.K)({
+    }), c.Z.startTyping(a.id)
+  }, M = (0, m.K)({
     location: "PrivateChannelRecipients",
     user: t
-  }), W = e => (0, _.Z)(t, {
-    channelId: u.id,
-    abortSignal: e
-  }), [U, B] = i.useState(!1), H = (0, g.nT)({
+  }), [L, D] = i.useState(!1), W = (0, g.nT)({
     location: "PrivateChannelRecipients"
   }), {
-    showPopoutFromHover: F,
-    onRequestClose: G,
-    onMouseEnter: V,
-    onMouseLeave: z
+    showPopoutFromHover: U,
+    onRequestClose: B,
+    onMouseEnter: H,
+    onMouseLeave: F
   } = (0, b.Z)({
-    shouldShowPopoutOnHover: H,
-    handlePreload: W
+    shouldShowPopoutOnHover: W,
+    handlePreload: e => (0, _.Z)(t, {
+      channelId: a.id,
+      abortSignal: e
+    })
   });
-  return H ? (0, r.jsx)("div", {
-    onMouseEnter: V,
-    onMouseLeave: z,
-    children: (0, r.jsx)(a.yRy, {
-      preload: F || U ? void 0 : W,
-      renderPopout: e => (0, r.jsx)(C.Z, R(w({}, e), {
-        userId: t.id,
-        channelId: u.id
-      })),
+  return W ? (0, r.jsx)("div", {
+    onMouseEnter: H,
+    onMouseLeave: F,
+    children: (0, r.jsx)(C.Z, {
+      user: t,
+      channelId: a.id,
+      shouldPreload: !U && !L,
       position: l.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: L,
-      clickTrap: U,
-      shouldShow: U || F,
+      onShiftClick: R,
+      clickTrap: L,
+      shouldShow: L || U,
       onRequestClose: () => {
-        null == G || G(), B(!1)
+        null == B || B(), D(!1)
       },
       children: e => {
         var {
@@ -146,53 +143,50 @@ function L(e) {
         }(e, ["onClick"]);
         return (0, r.jsx)(S.Z, w({
           user: t,
-          currentUser: O,
-          isOwner: t.id === u.ownerId,
+          currentUser: f,
+          isOwner: t.id === a.ownerId,
           ownerTooltipText: T.NW.string(T.t["MRXZ+/"]),
-          shouldAnimateStatus: M,
-          isTyping: f,
-          status: d,
-          activities: p,
-          applicationStream: A,
-          channel: u,
-          onContextMenu: k,
-          isMobile: N,
-          nick: P,
-          nameplate: D,
-          onClick: () => B(e => !e)
+          shouldAnimateStatus: k,
+          isTyping: p,
+          status: u,
+          activities: d,
+          applicationStream: P,
+          channel: a,
+          onContextMenu: A,
+          isMobile: O,
+          nick: N,
+          nameplate: M,
+          onClick: () => D(e => !e)
         }, i), t.id)
       }
     })
-  }) : (0, r.jsx)(a.yRy, {
-    preload: W,
-    renderPopout: e => (0, r.jsx)(C.Z, R(w({}, e), {
-      userId: t.id,
-      channelId: u.id
-    })),
+  }) : (0, r.jsx)(C.Z, {
+    user: t,
+    channelId: a.id,
     position: l.tq ? "window_center" : "left",
     spacing: 16,
-    onShiftClick: L,
+    onShiftClick: R,
     clickTrap: !0,
     children: e => (0, r.jsx)(S.Z, w({
       user: t,
-      currentUser: O,
-      isOwner: t.id === u.ownerId,
+      currentUser: f,
+      isOwner: t.id === a.ownerId,
       ownerTooltipText: T.NW.string(T.t["MRXZ+/"]),
-      shouldAnimateStatus: M,
-      isTyping: f,
-      status: d,
-      activities: p,
-      applicationStream: A,
-      channel: u,
-      onContextMenu: k,
-      isMobile: N,
-      nick: P,
-      nameplate: D
+      shouldAnimateStatus: k,
+      isTyping: p,
+      status: u,
+      activities: d,
+      applicationStream: P,
+      channel: a,
+      onContextMenu: A,
+      isMobile: O,
+      nick: N,
+      nameplate: M
     }, e), t.id)
   })
 }
 
-function D(e, t) {
+function L(e, t) {
   if (e.listItems.length !== t.listItems.length) return !1;
   for (let n = 0; n < e.listItems.length; n++) {
     let r = e.listItems[n],
@@ -202,7 +196,7 @@ function D(e, t) {
   return !0
 }
 
-function W(e) {
+function D(e) {
   let {
     channel: t
   } = e, n = j.default.getCurrentUser(), l = null == n ? void 0 : n.isStaff(), {
@@ -216,10 +210,10 @@ function W(e) {
       var r, i, l;
       x.Z.isFriend(t.id) || t.id === (null == (r = j.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
         status: null != (i = y.Z.getStatus(t.id)) ? i : Z.Skl.OFFLINE,
-        activities: null != (l = y.Z.getActivities(t.id)) ? l : k
+        activities: null != (l = y.Z.getActivities(t.id)) ? l : R
       } : n[t.id] = {
         status: Z.Skl.OFFLINE,
-        activities: k
+        activities: R
       }
     }
     let o = [];
@@ -234,7 +228,7 @@ function W(e) {
     return {
       listItems: o
     }
-  }, [t], D);
+  }, [t], L);
   i.useEffect(() => {
     O.default.track(Z.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
@@ -257,7 +251,7 @@ function W(e) {
             children: ["".concat(T.NW.string(T.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
               type: p.Z.Types.STAFF_ONLY_DM
             })]
-          }), c.map(e => (0, r.jsx)(L, {
+          }), c.map(e => (0, r.jsx)(M, {
             user: e.user,
             status: e.status,
             activities: e.activities,

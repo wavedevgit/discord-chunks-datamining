@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(492162),
   Z = n(43740),
   x = n(596557),
-  L = n(817520),
-  w = n(999309),
+  w = n(817520),
+  L = n(999309),
   R = n(408987),
   D = n(130734),
   k = n(499137),
@@ -512,13 +512,13 @@ function eC(e) {
   i.useEffect(() => {
     n !== X && z(!V)
   }, [n, X, V]);
-  let [ec, eu] = (0, T.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), ed = (0, I.Z)(o), eg = (0, f.s9z)(f.JQI), em = (0, d.e7)([ee.Z], () => ee.Z.hasLayers()), eb = (0, d.e7)([F.Z], () => F.Z.shouldShow(ey)), e_ = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !ea.s.isDisallowPopupsSet(), eE = (0, d.e7)([J.Z], () => J.Z.getMemberCount(n)), eO = m && null != eE && eE >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !ea.s.isDisallowPopupsSet(), eN = b && null != o && (o.hasFeature(ep.oNc.COMMUNITY) || null != eE && eE > 50), eI = (0, w.Z)(n), eC = (null == o ? void 0 : o.hasFeature(ep.oNc.HUB)) === !0, eS = m && (null == o ? void 0 : o.hasFeature(ep.oNc.DISCOVERABLE)) === !0, eT = (0, y.Q)(), eP = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !ea.s.isDisallowPopupsSet() && !eT, ej = (0, d.e7)([D.Z, ee.Z], () => null != o && null != R && m && !ee.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), eA = (0, d.e7)([K.Z], () => K.Z.getChannel(a)), {
+  let [ec, eu] = (0, T.ZP)(e => [eh.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ef.R.GUILD_HEADER_TOOLTIPS)], u.X), ed = (0, I.Z)(o), eg = (0, f.s9z)(f.JQI), em = (0, d.e7)([ee.Z], () => ee.Z.hasLayers()), eb = (0, d.e7)([F.Z], () => F.Z.shouldShow(ey)), e_ = m && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !ea.s.isDisallowPopupsSet(), eE = (0, d.e7)([J.Z], () => J.Z.getMemberCount(n)), eO = m && null != eE && eE >= 30 && (null == o ? void 0 : o.premiumProgressBarEnabled) === !1 && !ea.s.isDisallowPopupsSet(), eN = b && null != o && (o.hasFeature(ep.oNc.COMMUNITY) || null != eE && eE > 50), eI = (0, L.Z)(n), eC = (null == o ? void 0 : o.hasFeature(ep.oNc.HUB)) === !0, eS = m && (null == o ? void 0 : o.hasFeature(ep.oNc.DISCOVERABLE)) === !0, eT = (0, y.Q)(), eP = (m || (null == o ? void 0 : o.premiumTier) === ep.Eu4.NONE) && !ea.s.isDisallowPopupsSet() && !eT, ej = (0, d.e7)([D.Z, ee.Z], () => null != o && null != R && m && !ee.Z.hasLayers() && D.Z.shouldShowGuildTemplateDirtyTooltip(n)), eA = (0, d.e7)([K.Z], () => K.Z.getChannel(a)), {
     isPopoutOpen: eZ
-  } = (0, Z.y)(), ex = null != (t = null == o ? void 0 : o.hasFeature(ep.oNc.COMMUNITY)) && t, eL = (0, d.e7)([B.Z], () => !s().isEmpty(B.Z.getThreadsForGuild(n))), ew = el.ZP.isNewUser(R), eR = H && !ew, eD = (0, C.Z)(R);
+  } = (0, Z.y)(), ex = null != (t = null == o ? void 0 : o.hasFeature(ep.oNc.COMMUNITY)) && t, ew = (0, d.e7)([B.Z], () => !s().isEmpty(B.Z.getThreadsForGuild(n))), eL = el.ZP.isNewUser(R), eR = H && !eL, eD = (0, C.Z)(R);
   (0, x.Z)(o);
   let ek = (0, P.wE)(p.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     eM = (0, G.Z)(n),
-    eU = (0, L.Z)(n),
+    eU = (0, w.Z)(n),
     eG = (0, d.e7)([er.ZP], () => er.ZP.getChannelId()),
     eW = (0, d.e7)([en.Z], () => en.Z.desyncedVoiceStatesCount),
     eV = W.Y.useExperiment({
@@ -552,7 +552,7 @@ function eC(e) {
     showRoleSubscriptionUpsell: eI,
     showHubPrivacySettingsTooltip: eC,
     showNewUnreadsBar: ex,
-    showActiveThreadsNotice: v && null != eE && eE >= 200 && eL,
+    showActiveThreadsNotice: v && null != eE && eE >= 200 && ew,
     showGuildSoundboardPermissionUpsell: eN,
     showMediaChannelUpsell: eM,
     showTierTemplatesUpsell: eU,

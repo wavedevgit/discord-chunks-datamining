@@ -33,13 +33,13 @@ var r = n(200651),
   Z = n(31932),
   x = n(642301);
 
-function L(e) {
+function w(e) {
   null != e && h.Z.open(e.id, (0, f.r)(e.id), {
     section: y.jXE.PREMIUM_GUILD_PROGRESS_BAR
   }, y.KsC.DISPLAY)
 }
 
-function w(e, t) {
+function L(e, t) {
   null != t && ((0, O.f2)(t, y.Eu4.TIER_1) ? h.Z.open(t.id, (0, f.r)(t.id), {
     section: y.jXE.PREMIUM_GUILD_INVITE_SPLASH
   }, y.KsC.INVITE) : (0, u.Z)({
@@ -115,8 +115,8 @@ let D = i.memo(function(e) {
               content: S.NW.format(S.t.ujItEh, {}),
               buttonCTA: S.NW.string(S.t.UzVPra),
               secondaryButtonCTA: S.NW.string(S.t["KkK/aG"]),
-              onSecondaryClick: () => L(),
-              onClick: () => L(i),
+              onSecondaryClick: () => w(),
+              onClick: () => w(i),
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: o
@@ -134,8 +134,8 @@ let D = i.memo(function(e) {
               content: S.NW.format(S.t.zK1hpq, {}),
               buttonCTA: S.NW.string(S.t.UzVPra),
               secondaryButtonCTA: S.NW.string(S.t["KkK/aG"]),
-              onSecondaryClick: () => L(),
-              onClick: () => L(i),
+              onSecondaryClick: () => w(),
+              onClick: () => w(i),
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: o
@@ -173,8 +173,8 @@ let D = i.memo(function(e) {
               content: e,
               buttonCTA: t,
               secondaryButtonCTA: S.NW.string(S.t.hBIHLS),
-              onSecondaryClick: () => w(u),
-              onClick: () => w(u, i),
+              onSecondaryClick: () => L(u),
+              onClick: () => L(u, i),
               markAsDismissed: M
             }),
             renderGuildHeaderDropdownButton: o

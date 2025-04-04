@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(200651);
 n(192379);
@@ -15,7 +15,7 @@ var i = n(756647),
   p = n(447543),
   h = n(317381),
   f = n(122613),
-  g = n(508686),
+  g = n(649256),
   m = n(100527),
   b = n(728345),
   _ = n(185669),
@@ -52,7 +52,7 @@ function x(e) {
   return e
 }
 
-function L(e, t) {
+function w(e, t) {
   null != e && C.default.track(Z.rMx.EXTERNAL_DYNAMIC_LINK_RECEIVED, {
     invite_code: null,
     has_auth_token: null,
@@ -61,7 +61,7 @@ function L(e, t) {
     link_type: t
   })
 }
-let w = {
+let L = {
   [Z.Etm.INVITE_BROWSER]: {
     scope: A.cE,
     async handler(e) {
@@ -171,43 +171,43 @@ let w = {
       } = e;
       switch (P.ZP.focus(), t) {
         case A.jE.USER_SETTINGS:
-          null != n && ((0, N.dL)(Z.Z5c.SETTINGS(n.section, n.subsection)), L(n.fingerprint, (0, A.O)(t)));
+          null != n && ((0, N.dL)(Z.Z5c.SETTINGS(n.section, n.subsection)), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.CHANGELOG:
-          null != n && ((0, N.dL)(T.Z.formatPathWithQuery(Z.Z5c.CHANGELOGS(n.date), n.query)), L(n.fingerprint, (0, A.O)(t)));
+          null != n && ((0, N.dL)(T.Z.formatPathWithQuery(Z.Z5c.CHANGELOGS(n.date), n.query)), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.LIBRARY:
-          (0, N.dL)(Z.Z5c.APPLICATION_LIBRARY), null != n && L(n.fingerprint, (0, A.O)(t));
+          (0, N.dL)(Z.Z5c.APPLICATION_LIBRARY), null != n && w(n.fingerprint, (0, A.O)(t));
           break;
         case A.jE.STORE_HOME:
-          (0, N.dL)(Z.Z5c.APPLICATION_STORE), null != n && L(n.fingerprint, (0, A.O)(t));
+          (0, N.dL)(Z.Z5c.APPLICATION_STORE), null != n && w(n.fingerprint, (0, A.O)(t));
           break;
         case A.jE.STORE_LISTING:
-          null != n && ((0, N.dL)(Z.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), L(n.fingerprint, (0, A.O)(t)));
+          null != n && ((0, N.dL)(Z.Z5c.APPLICATION_STORE_LISTING_SKU(n.skuId, n.slug)), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.PICK_GUILD_SETTINGS:
           null != n && ((0, N.dL)({
             pathname: Z.Z5c.PICK_GUILD_SETTINGS(n.section, n.subsection),
             search: n.search
-          }), L(n.fingerprint, (0, A.O)(t)));
+          }), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.CHANNEL:
           null != n && ((0, N.dL)({
             pathname: Z.Z5c.CHANNEL(n.guildId, n.channelId, n.messageId),
             search: n.search
-          }), L(n.fingerprint, (0, A.O)(t)));
+          }), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.QUEST_HOME:
           null != n ? ((0, N.dL)({
             pathname: Z.Z5c.QUEST_HOME,
             hash: n.questId
-          }), L(n.fingerprint, (0, A.O)(t))) : (0, N.dL)(Z.Z5c.QUEST_HOME);
+          }), w(n.fingerprint, (0, A.O)(t))) : (0, N.dL)(Z.Z5c.QUEST_HOME);
           break;
         case A.jE.DISCOVERY_GAME_RESULTS:
           null != n && ((0, N.dL)({
             pathname: Z.Z5c.GLOBAL_DISCOVERY_SERVERS,
             search: "?game=".concat(n.gameId)
-          }), L(n.fingerprint, (0, A.O)(t)));
+          }), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.OAUTH2:
           let r = new URL(Z.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
@@ -219,13 +219,13 @@ let w = {
           null != n && ((0, N.dL)({
             pathname: Z.Z5c.COLLECTIBLES_SHOP,
             search: n.search
-          }), L(n.fingerprint, (0, A.O)(t)));
+          }), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.FEATURES:
         case A.jE.SHOP:
           (null == n ? void 0 : n.path) != null && ((0, N.dL)({
             pathname: n.path
-          }), L(n.fingerprint, (0, A.O)(t)));
+          }), w(n.fingerprint, (0, A.O)(t)));
           break;
         case A.jE.ACTIVITIES:
           if (null != n) return async function(e, t) {
@@ -240,7 +240,7 @@ let w = {
               d = null != (i = u.searchParams.get("referrer_id")) ? i : void 0,
               {
                 customId: p
-              } = await (0, g.u)(e, u.searchParams.get("link_id"), u.searchParams.get("custom_id"));
+              } = await (0, g.ur)(e, u.searchParams.get("link_id"), u.searchParams.get("custom_id"));
             await (0, f.Z)({
               targetApplicationId: e,
               channelId: s,
@@ -248,7 +248,7 @@ let w = {
               customId: p,
               referrerId: d
             })
-          }(n.applicationId, n.url), L(n.fingerprint, (0, A.O)(t)), !0;
+          }(n.applicationId, n.url), w(n.fingerprint, (0, A.O)(t)), !0;
           return !1
       }
     }

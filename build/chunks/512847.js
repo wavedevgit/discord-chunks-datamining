@@ -124,7 +124,7 @@ function x() {
   }), null
 }
 
-function L() {
+function w() {
   return S([O.Z, y.Z], () => {
     let e = O.Z.getVoiceChannelId();
     if (null == e) return d.xO.NONE;
@@ -135,7 +135,7 @@ function L() {
   }), null
 }
 
-function w() {
+function L() {
   return S([O.Z, h.Z, f.default, y.Z, g.Z], () => {
     let e, t, n = O.Z.getVoiceChannelId(),
       r = f.default.getId(),
@@ -236,6 +236,6 @@ function R() {
 
 function D() {
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(x, {}), (0, r.jsx)(w, {}), (0, r.jsx)(L, {}), (0, r.jsx)(R, {}), (0, r.jsx)(A, {})]
+    children: [(0, r.jsx)(T, {}), (0, r.jsx)(P, {}), (0, r.jsx)(j, {}), (0, r.jsx)(Z, {}), (0, r.jsx)(x, {}), (0, r.jsx)(L, {}), (0, r.jsx)(w, {}), (0, r.jsx)(R, {}), (0, r.jsx)(A, {})]
   })
 }

@@ -23,9 +23,9 @@ var r = n(200651),
   h = n(592125),
   j = n(944486),
   P = n(606304),
-  x = n(594174),
-  S = n(979651),
-  w = n(938475),
+  S = n(594174),
+  w = n(979651),
+  x = n(938475),
   I = n(237997),
   E = n(823379),
   Z = n(136015),
@@ -85,9 +85,9 @@ function F(e) {
     size: c,
     locked: u,
     flipped: p
-  } = e, f = (0, A.e5)(c), g = (0, a.Wu)([x.default, h.Z], () => i.map(e => {
+  } = e, f = (0, A.e5)(c), g = (0, a.Wu)([S.default, h.Z], () => i.map(e => {
     var t;
-    let n = x.default.getUser(e);
+    let n = S.default.getUser(e);
     if (null == n) return;
     let r = h.Z.getChannel(null == (t = l.get(e)) ? void 0 : t.voiceState.channelId);
     return n.getAvatarURL(null == r ? void 0 : r.getGuildId(), f, !1)
@@ -131,20 +131,20 @@ let z = i.memo(function(e) {
   } = e, j = (0, V.ee)(() => (function(e) {
     let [t, n] = e;
     return new Set(n)
-  })(o), [o]), [P, x] = o, S = x.length > 0 && null != n && null != l && (!d || p), w = (0, a.Wu)([y.Z], () => Array.from(j).map(e => y.Z.getStreamForUser(e, f)).filter(E.lm).map(e => e.ownerId), [f, j]);
+  })(o), [o]), [P, S] = o, w = S.length > 0 && null != n && null != l && (!d || p), x = (0, a.Wu)([y.Z], () => Array.from(j).map(e => y.Z.getStreamForUser(e, f)).filter(E.lm).map(e => e.ownerId), [f, j]);
   i.useEffect(() => {
-    S && (0, V.zi)(M.Odu.VOICE_V3, {
+    w && (0, V.zi)(M.Odu.VOICE_V3, {
       locked: I.default.isInstanceLocked(),
       shownUserIds: Array.from(j),
-      liveUserIds: w,
+      liveUserIds: x,
       contentInventoryIds: []
     })
-  }, [j, w, S]);
-  let Z = h !== _.Og ? x.slice(0, h) : x,
-    C = h !== _.Og ? x.slice(h) : [],
+  }, [j, x, w]);
+  let Z = h !== _.Og ? S.slice(0, h) : S,
+    C = h !== _.Og ? S.slice(h) : [],
     N = P.get(C[0]),
     D = u === M.OYC.ALWAYS && h !== _.Og;
-  return S ? (0, r.jsxs)("div", {
+  return w ? (0, r.jsxs)("div", {
     className: L.voiceUserContainer,
     children: [Z.map(e => {
       let i = P.get(e);
@@ -192,16 +192,16 @@ function Y(e) {
     isSettingsPreview: n
   } = e, l = (0, a.e7)([j.Z, h.Z], () => h.Z.getChannel(j.Z.getVoiceChannelId())), o = (0, p.ZP)(l), s = function(e, t) {
     let n = (0, a.e7)([j.Z, h.Z], () => h.Z.getChannel(j.Z.getVoiceChannelId())),
-      [r] = (0, a.e7)([w.ZP, O.Z, j.Z, h.Z], () => {
+      [r] = (0, a.e7)([x.ZP, O.Z, j.Z, h.Z], () => {
         let e = h.Z.getChannel(j.Z.getVoiceChannelId());
         return null == e ? [
           [], -1
-        ] : e.isGuildStageVoice() ? [O.Z.getMutableParticipants(e.id, m.pV.SPEAKER), O.Z.getParticipantsVersion(e.id)] : [w.ZP.getVoiceStatesForChannel(e), w.ZP.getVoiceStateVersion(e.getGuildId())]
+        ] : e.isGuildStageVoice() ? [O.Z.getMutableParticipants(e.id, m.pV.SPEAKER), O.Z.getParticipantsVersion(e.id)] : [x.ZP.getVoiceStatesForChannel(e), x.ZP.getVoiceStateVersion(e.getGuildId())]
       }, [], Z.Q),
       l = (0, b.Es)(null == n ? void 0 : n.id, r),
       o = i.useMemo(() => new Map(l.map(e => [e.user.id, e])), [l]),
       s = (0, a.e7)([v.default], () => v.default.getId());
-    return [o, (0, a.Wu)([S.Z, j.Z, P.Z, g.Z], () => {
+    return [o, (0, a.Wu)([w.Z, j.Z, P.Z, g.Z], () => {
       let n = Array.from(l.map(e => {
         let {
           user: t
@@ -217,7 +217,7 @@ function Y(e) {
             checkSoundboardSounds: !1,
             checkIsMuted: !0,
             context: e
-          }, [S.Z, j.Z, P.Z, g.Z]),
+          }, [w.Z, j.Z, P.Z, g.Z]),
           i = t === s;
         (n || i) && r.set(t, {
           isSpeaking: n,
@@ -239,13 +239,13 @@ function Y(e) {
       }
       return n
     }, [l, e, s, t])]
-  }(W.Yn.DEFAULT, e.maxDisplayedVoiceStates), d = (0, a.e7)([y.Z], () => y.Z.getStreamerActiveStreamMetadata()), x = (0, D.II)(), E = (0, u.q)(null == x ? void 0 : x.id), C = (0, a.cj)([y.Z, I.default], () => {
+  }(W.Yn.DEFAULT, e.maxDisplayedVoiceStates), d = (0, a.e7)([y.Z], () => y.Z.getStreamerActiveStreamMetadata()), S = (0, D.II)(), E = (0, u.q)(null == S ? void 0 : S.id), C = (0, a.cj)([y.Z, I.default], () => {
     let e = y.Z.getCurrentUserActiveStream();
     return {
       displayUserMode: I.default.getDisplayUserMode(),
       displayNameMode: I.default.getDisplayNameMode(),
       avatarSizeMode: I.default.getAvatarSizeMode(),
-      streamApplication: (null == d ? void 0 : d.pid) === (0, N.getPID)() ? (0, f.Z)(x) : null,
+      streamApplication: (null == d ? void 0 : d.pid) === (0, N.getPID)() ? (0, f.Z)(S) : null,
       stream: e
     }
   });

@@ -1,6 +1,6 @@
 /** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => I
+  Z: () => v
 });
 var i, r = n(442837),
   l = n(570140),
@@ -19,7 +19,7 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -32,7 +32,7 @@ function p(e) {
   return e
 }
 
-function g(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,18 +48,18 @@ let f = !1,
   N = {},
   h = {};
 
-function y(e) {
+function m(e) {
   let t = !1;
   return e.forEach(e => {
     t = !1 !== O(e) || t
   }), t
 }
 
-function m(e) {
+function y(e) {
   let t = h[e];
   if (null == t) return !1;
   let n = t.gameId;
-  return null != N[n] && (N = p({}, N), delete N[n][e], 0 === Object.values(N[n]).length && delete N[n]), h = p({}, h), delete h[e], !0
+  return null != N[n] && (N = g({}, N), delete N[n][e], 0 === Object.values(N[n]).length && delete N[n]), h = g({}, h), delete h[e], !0
 }
 
 function O(e) {
@@ -69,26 +69,26 @@ function O(e) {
   } = e;
   if (null == t) return !1;
   let i = n.filter(e => e.type !== u.IIU.CUSTOM_STATUS);
-  if (0 === i.length) return m(t.id);
+  if (0 === i.length) return y(t.id);
   let r = !1;
   return i.forEach(e => {
     (function(e, t) {
       var n, i;
       let r = (0, o.Z)(e);
-      if (null == r) return m(t.id);
+      if (null == r) return y(t.id);
       let l = h[t.id];
-      null != l && l.gameId !== r && m(t.id);
+      null != l && l.gameId !== r && y(t.id);
       let s = null != (i = null == (n = e.timestamps) ? void 0 : n.start) ? i : Date.now(),
         a = {
           userId: t.id,
           activity: e,
           startedPlaying: s
         };
-      return N = g(p({}, N), {
-        [r]: g(p({}, N[r]), {
+      return N = p(g({}, N), {
+        [r]: p(g({}, N[r]), {
           [a.userId]: a
         })
-      }), h = g(p({}, h), {
+      }), h = p(g({}, h), {
         [a.userId]: {
           gameId: r,
           startedPlaying: a.startedPlaying
@@ -129,7 +129,7 @@ class b extends(i = r.ZP.Store) {
   }
 }
 d(b, "displayName", "NowPlayingStore");
-let I = new b(l.Z, {
+let v = new b(l.Z, {
   CONNECTION_OPEN: function() {
     N = {}, h = {}
   },
@@ -139,8 +139,8 @@ let I = new b(l.Z, {
       presences: n
     } = e, i = !1;
     return t.forEach(e => {
-      y(e.presences) && (i = !0)
-    }), y(n) && (i = !0), i
+      m(e.presences) && (i = !0)
+    }), m(n) && (i = !0), i
   },
   LOGOUT: function() {
     N = {}, h = {}
@@ -155,6 +155,6 @@ let I = new b(l.Z, {
     let {
       presences: t
     } = e;
-    return y(t)
+    return m(t)
   }
 })

@@ -121,10 +121,10 @@ let O = ["349134787773988865"],
             }, null != (y = S.party) ? y : {})
           }
         }
-        let L = (0, g.S5)(S, A);
-        L > 0 && (S.flags = L | x), delete S.instance, null == (t = S.party) || delete t.privacy;
+        let w = (0, g.S5)(S, A);
+        w > 0 && (S.flags = w | x), delete S.instance, null == (t = S.party) || delete t.privacy;
         let {
-          assets: w,
+          assets: L,
           party: R,
           secrets: D,
           timestamps: k,
@@ -145,15 +145,15 @@ let O = ["349134787773988865"],
         }
         if (null != M && (P.button_urls = M.map(e => e.url), S.buttons = M.map(e => e.label)), S.metadata = P, null != k)
           for (let e of Object.keys(k)) Date.now().toString().length - k[e].toString().length > 2 && (k[e] = Math.floor(k[e] * h.Z.Millis.SECOND));
-        if (null == w) I = Promise.resolve([]);
+        if (null == L) I = Promise.resolve([]);
         else {
           if (null == v.application || null == v.application.id) throw Error();
-          I = (0, p.hR)(v.application.id, [w.large_image, w.small_image])
+          I = (0, p.hR)(v.application.id, [L.large_image, L.small_image])
         }
         return I.then(e => {
           var t, n;
           let [r, i] = e;
-          if (null != w && (null != r ? w.large_image = r : delete w.large_image, null != i ? w.small_image = i : delete w.small_image), !T()) return;
+          if (null != L && (null != r ? L.large_image = r : delete L.large_image, null != i ? L.small_image = i : delete L.small_image), !T()) return;
           a.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: v.id,
@@ -170,7 +170,7 @@ let O = ["349134787773988865"],
             details: null != (t = S.details) ? t : "",
             state: null != (n = S.state) ? n : ""
           };
-          return null != l && (s.has_match_secret = !!l.match, s.has_join_secret = !!l.join), null != w && (s.has_images = !!(w.large_image || w.small_image)), null != o && (s.party_max = null != o.size && o.size[1] > 0 ? o.size[1] : void 0, s.party_id = o.id), d.default.track(_.rMx.ACTIVITY_UPDATED, s), S
+          return null != l && (s.has_match_secret = !!l.match, s.has_join_secret = !!l.join), null != L && (s.has_images = !!(L.large_image || L.small_image)), null != o && (s.party_max = null != o.size && o.size[1] > 0 ? o.size[1] : void 0, s.party_id = o.id), d.default.track(_.rMx.ACTIVITY_UPDATED, s), S
         })
       }
     }

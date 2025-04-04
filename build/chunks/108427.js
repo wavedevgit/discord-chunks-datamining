@@ -17,11 +17,11 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 let c = new class {
-  trackEvent(e, t) {
-    let n = Date.now();
+  trackEvent(e) {
+    let t = Date.now();
     requestIdleCallback(() => {
-      var r, o;
-      a.default.track(e, (r = function(e) {
+      var n, r;
+      a.default.track(l.rMx.APP_UI_VIEWED, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,25 +59,25 @@ let c = new class {
             a = n.transferSize;
           null != i && null != r && (e = !0, t.total_compressed_byte_size += r, t.total_uncompressed_byte_size += i, null != a && (t.total_uncompressed_byte_size += a), "resource" === n.entryType && ("script" === n.initiatorType && null != n.name && null != n.name.match(/\.js/) && (t.js_compressed_byte_size += r, t.js_uncompressed_byte_size += i, null != a && (t.js_uncompressed_byte_size += a)), "link" === n.initiatorType && null != n.name && null != n.name.match(/\.css/) && (t.css_compressed_byte_size += r, t.css_uncompressed_byte_size += i, null != a && (t.css_uncompressed_byte_size += a))))
         }), e ? t : {}
-      }()), o = o = {
+      }()), r = r = {
         load_id: this.loadId,
-        screen_name: t,
-        duration_ms_since_app_opened: n - window.GLOBAL_ENV.HTML_TIMESTAMP
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        screen_name: e,
+        duration_ms_since_app_opened: t - window.GLOBAL_ENV.HTML_TIMESTAMP
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
-      }), r))
+      })(Object(r)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
+      }), n))
     })
   }
   trackAppUIViewed(e) {
     if (!this.appUIViewed) {
-      this.trackEvent(l.rMx.APP_UI_VIEWED, e);
+      this.trackEvent(e);
       try {
         o.ZP.appViewed()
       } catch (e) {}

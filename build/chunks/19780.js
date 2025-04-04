@@ -142,10 +142,10 @@ function N(e, t) {
 
 function A() {
   if (null == r) return !1;
-  I = r.getDuration(), r.destroy(), r = null, O = null, s.Z.dispatch({
+  I = r.getDuration(), s.Z.dispatch({
     type: "MEDIA_ENGINE_CONNECTION_STATS_HISTORY_RESET",
-    context: m.Yn.DEFAULT
-  })
+    mediaEngineConnectionId: r.getMediaEngineConnectionId()
+  }), r.destroy(), r = null, O = null
 }
 
 function C(e) {
@@ -367,7 +367,7 @@ class Y extends(o = a.ZP.Store) {
   getStatsHistory(e, t) {
     if (null == t || null == e) return null;
     let n = t === _.default.getId();
-    return d.Z.getStatsHistory(m.Yn.DEFAULT).map(e => n ? H(e.rtp.outbound) : W(e.rtp.inbound[t]))
+    return d.Z.getStatsHistory(null == r ? void 0 : r.getMediaEngineConnectionId()).map(e => n ? H(e.stats.rtp.outbound) : W(e.stats.rtp.inbound[t]))
   }
 }
 g(Y, "displayName", "RTCConnectionStore");

@@ -30,7 +30,7 @@ let T = (0, i.memo)(function(e) {
   var t, n, l, T, P, j;
   let {
     quest: A
-  } = e, [Z, x] = (0, i.useState)(!1), [L, w] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+  } = e, [Z, x] = (0, i.useState)(!1), [w, L] = (0, i.useState)(24), [R, D] = (0, i.useState)(!1), k = (0, i.useRef)(null), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: W,
     height: V = 0
   } = (0, p.Z)(), B = (0, h.ZP)(), H = (0, E.B6)(null == (t = A.userStatus) ? void 0 : t.claimedAt, {
@@ -45,13 +45,33 @@ let T = (0, i.memo)(function(e) {
     let n = k.current.getBoundingClientRect(),
       r = M.current.getBoundingClientRect(),
       i = U.current.getBoundingClientRect();
-    w((r.top - n.top - i.height) / 2)
+    L((r.top - n.top - i.height) / 2)
   });
   let X = (0, u.wj)(B),
     J = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
     $ = (0, i.useMemo)(() => (0, N.fh)(A, N.eC.REWARD), [A]),
     ee = Z ? V + 8 : 0,
-    et = () => {
+    et = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
+    {
+      content_position: en,
+      row_index: er
+    } = et,
+    ei = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(et, ["content_position", "row_index"]),
+    el = () => {
       x(!0), b.default.track(v.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -71,10 +91,10 @@ let T = (0, i.memo)(function(e) {
         return e
       }({
         quest_id: A.id
-      }, (0, _.mH)(O.jn.TROPHY_CASE_CARD)))
+      }, ei))
     },
-    en = () => x(!1),
-    er = e => {
+    ea = () => x(!1),
+    eo = e => {
       D(!0), b.default.track(v.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
@@ -85,10 +105,10 @@ let T = (0, i.memo)(function(e) {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
-      onFocus: et,
-      onBlur: en,
-      onMouseEnter: et,
-      onMouseLeave: en,
+      onFocus: el,
+      onBlur: ea,
+      onMouseEnter: el,
+      onMouseLeave: ea,
       className: a()(S.container, {
         [S.hovered]: Z
       }),
@@ -96,7 +116,7 @@ let T = (0, i.memo)(function(e) {
         ref: U,
         className: S.decoWrapper,
         style: {
-          top: L
+          top: w
         },
         children: (0, r.jsx)(f.Z, {
           avatarDecorationOverride: Q,
@@ -111,13 +131,13 @@ let T = (0, i.memo)(function(e) {
         children: (0, r.jsx)("source", {
           src: $.url,
           type: null != (j = $.mimetype) ? j : void 0,
-          onError: () => er($.url)
+          onError: () => eo($.url)
         })
       }) : (0, r.jsx)("img", {
         className: S.image,
         src: $.url,
         alt: A.config.messages.questName,
-        onError: () => er($.url)
+        onError: () => eo($.url)
       }), (0, r.jsx)("div", {
         className: a()(S.overlay, {
           [S.darkThemeGradient]: X,

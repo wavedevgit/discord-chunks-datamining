@@ -1,6 +1,6 @@
 /**
   Module ID: 83562
-  Original File Name: 582998cf98b73629
+  Original File Name: 8572c89c44c1a13e
 **/
 .wrapper__48b20 {
     position: relative;
@@ -395,6 +395,10 @@
     margin-left: var(--spacing-8)
 }
 
+.errorCodeNoticeClickable__9671b {
+    cursor: pointer
+}
+
 .notice__36c3e {
     display: flex;
     flex-direction: row;
@@ -774,4 +778,4 @@ img.thumbnail__0f2e8 {
     align-items: stretch
 }
 
-/*# sourceMappingURL=582998cf98b73629.css.map*/
+/*# sourceMappingURL=8572c89c44c1a13e.css.map*/

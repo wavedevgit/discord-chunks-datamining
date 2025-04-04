@@ -52,8 +52,8 @@ function b(e, t, n) {
     [x, w] = r.useState(a.C.DEFAULT),
     [v, _] = r.useState(!1),
     [P, C] = r.useState(d.lc.ONE_DAY),
-    [N, A] = r.useState({}),
-    [E, k] = r.useState(!1),
+    [N, E] = r.useState({}),
+    [A, k] = r.useState(!1),
     I = h.filter(e => (0, u.cS)(e, x)),
     S = h.filter(e => (0, u.uY)(e, x)),
     D = j.length > 0 && I.length >= d.gY && 0 === S.length,
@@ -64,7 +64,7 @@ function b(e, t, n) {
     L = h.length < d.fw,
     B = h.length > d.gY,
     Z = r.useCallback(e => {
-      A(e => {
+      E(e => {
         let t = m({}, e);
         return delete t.question, t
       }), y(e)
@@ -75,7 +75,7 @@ function b(e, t, n) {
         index: n,
         localCreationAnswerId: r
       } = e;
-      A(e => {
+      E(e => {
         let t = m({}, e);
         return delete t["answer-".concat(r)], t
       }), O(e => {
@@ -146,7 +146,7 @@ function b(e, t, n) {
         t = {};
       return 0 === j.trim().length && (e = !1, t.question = f.NW.string(f.t.gPX3oK)), h.filter(e => (0, u.cS)(e, x)).length < d.gY && (e = !1, t["answer-".concat(h[0].localCreationAnswerId)] = f.NW.string(f.t.fYvzER)), h.forEach(n => {
         (0, u.uY)(n, x) && (e = !1, t["answer-".concat(n.localCreationAnswerId)] = f.NW.string(f.t["8Qqkc3"]))
-      }), A(t), k(!e), e
+      }), E(t), k(!e), e
     }, [h, j, x]),
     G = r.useCallback(async () => {
       await R({
@@ -188,7 +188,7 @@ function b(e, t, n) {
     handleSubmitPoll: Q,
     submitting: T,
     createPollError: W,
-    shouldFocusOnInvalidField: E,
+    shouldFocusOnInvalidField: A,
     setShouldFocusOnInvalidField: k
   }
 }
