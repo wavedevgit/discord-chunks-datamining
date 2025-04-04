@@ -1,4 +1,4 @@
-/** Chunk was on 68631 **/
+/** Chunk was on 22253 **/
 e.exports = {
   recentMentionsPopout: "recentMentionsPopout__95796",
   widerInbox: "widerInbox__95796",

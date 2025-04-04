@@ -1,56 +1,52 @@
 /** Chunk was on 64838 **/
 l.d(t, {
-  Z: () => S
+  Z: () => E
 });
 var n = l(200651);
 l(192379);
 var s = l(120356),
   r = l.n(s),
   i = l(481060),
-  u = l(467628),
-  a = l(373370),
-  o = l(65443),
-  c = l(160766),
-  d = l(644646),
-  m = l(46140),
-  E = l(817447);
-let S = function(e) {
+  a = l(467628),
+  o = l(373370),
+  u = l(65443),
+  c = l(644646),
+  d = l(46140),
+  m = l(817447);
+let E = function(e) {
   let {
     className: t,
     autoplay: l,
     quest: s,
-    questContent: S,
-    taskDetails: j,
+    questContent: E,
+    taskDetails: S,
     location: p
-  } = e, A = (0, a.DD)({
+  } = e, j = (0, o.DD)({
     quest: s,
-    taskDetails: j,
+    taskDetails: S,
     location: p,
-    questContent: S
-  }), f = (0, u.j)({
-    location: m.dr.QUESTS_BAR_MOBILE
+    questContent: E
+  }), A = (0, a.j)({
+    location: d.dr.QUESTS_BAR_MOBILE
   });
   return (0, n.jsxs)("div", {
-    className: r()(E.wrapper, t),
+    className: r()(m.wrapper, t),
     style: {
       color: s.config.colors.primary
     },
     children: [(0, n.jsx)(c.Z, {
+      autoplay: l,
+      className: m.rewardTile,
       quest: s,
-      children: (0, n.jsx)(d.Z, {
-        autoplay: l,
-        className: E.rewardTile,
-        quest: s,
-        questContent: S,
-        location: p
-      })
+      questContent: E,
+      location: p
     }), (0, n.jsxs)("div", {
-      className: E.copy,
+      className: m.copy,
       children: [(0, n.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-normal",
-        children: A
-      }), f && (0, n.jsx)(o.Z, {
+        children: j
+      }), A && (0, n.jsx)(u.Z, {
         textColor: "text-muted",
         withRewardName: !0,
         quest: s

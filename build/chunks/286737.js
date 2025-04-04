@@ -1,4 +1,4 @@
-/** Chunk was on 68631 **/
+/** Chunk was on 29267 **/
 e.exports = {
   promotedTag: "promotedTag__1d868",
   promotedTagBackground: "promotedTagBackground__1d868"
