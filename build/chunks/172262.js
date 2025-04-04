@@ -15,28 +15,28 @@ var t, r, c, i, a, o = _(161581),
   x = f(o, "queueMicrotask"),
   k = x && x.value;
 if (!k) {
-  var v = new d,
-    R = function() {
+  var R = new d,
+    v = function() {
       var e, n;
-      for (l && (e = m.domain) && e.exit(); n = v.get();) try {
+      for (l && (e = m.domain) && e.exit(); n = R.get();) try {
         n()
       } catch (e) {
-        throw v.head && t(), e
+        throw R.head && t(), e
       }
       e && e.enter()
     };
   s || l || g || !h || !p ? !w && y && y.resolve ? ((i = y.resolve(void 0)).constructor = y, a = u(i.then, i), t = function() {
-    a(R)
+    a(v)
   }) : l ? t = function() {
-    m.nextTick(R)
+    m.nextTick(v)
   } : (b = u(b, o), t = function() {
-    b(R)
-  }) : (r = !0, c = p.createTextNode(""), new h(R).observe(c, {
+    b(v)
+  }) : (r = !0, c = p.createTextNode(""), new h(v).observe(c, {
     characterData: !0
   }), t = function() {
     c.data = r = !r
   }), k = function(e) {
-    v.head || t(), v.add(e)
+    R.head || t(), R.add(e)
   }
 }
 e.exports = k
