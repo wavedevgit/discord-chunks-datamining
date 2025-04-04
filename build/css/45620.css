@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 9d371969a61b2ae4
+  Original File Name: 61f1111adb845242
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -1255,7 +1255,7 @@
     object-fit: contain
 }
 
-@media (max-width:1280px) {
+@media (max-width:1160px) {
     .responsiveHero__08415 .bannerImage__08415 {
         background-size: cover
     }
@@ -1432,7 +1432,7 @@
 
 .orbsSubHeaderText__08415 {
     white-space: pre-line;
-    color: var(--white-630)
+    color: var(--text-secondary)
 }
 
 .heroHeaderButtonContainer__08415 {
@@ -1601,4 +1601,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=9d371969a61b2ae4.css.map*/
+/*# sourceMappingURL=61f1111adb845242.css.map*/

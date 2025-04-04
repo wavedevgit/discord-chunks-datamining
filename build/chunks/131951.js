@@ -2096,6 +2096,9 @@ class rt extends(s = h.ZP.Store) {
   hasClipsSource() {
     return null != a
   }
+  getGpuBrand() {
+    return t_
+  }
 }
 eg(rt, "displayName", "MediaEngineStore");
 let rn = r = new rt(b.Z, {

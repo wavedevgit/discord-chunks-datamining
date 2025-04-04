@@ -55,7 +55,7 @@ let p = () => {
     })
   },
   f = () => {
-    let e = (0, s.sg)(),
+    let e = (0, s.lb)(),
       {
         previewProfileEffectId: t,
         setPreviewProfileEffectId: n
