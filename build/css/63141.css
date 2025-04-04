@@ -1,6 +1,6 @@
 /**
   Module ID: 63141
-  Original File Name: 9ffe294ac91cd5cb
+  Original File Name: 534a599dc80f2941
 **/
 .key__1728a {
     display: inline-block;
@@ -377,11 +377,7 @@
     cursor: pointer
 }
 
-.icon__777cc:hover {
-    opacity: 1
-}
-
-.icon__777cc.toggledIconOn__777cc {
+.icon__777cc.toggledIconOn__777cc,.icon__777cc:hover {
     opacity: 1
 }
 
@@ -614,13 +610,15 @@
 }
 
 .wrapper__88a53 {
-    box-sizing: border-box;
     position: absolute
+}
+
+.wrapper__88a53,.wrapper__88a53>* {
+    box-sizing: border-box
 }
 
 .wrapper__88a53>* {
     position: relative;
-    box-sizing: border-box;
     width: 100%;
     height: 100%
 }
@@ -769,17 +767,14 @@
 }
 
 .header__9835e {
-    border-radius: 0!important;
-    background-color: var(--background-secondary)!important
-}
-
-.header__9835e {
     position: relative;
     flex-shrink: 0;
     height: 48px;
     box-sizing: border-box;
+    border-radius: 0!important;
     z-index: 2;
-    align-items: center
+    align-items: center;
+    background-color: var(--background-secondary)!important
 }
 
 .sidebar__9835e .header__9835e {
@@ -866,20 +861,14 @@
 }
 
 .base_e3f659 {
+    display: flex;
+    flex-direction: row;
+    width: 312px;
     background: var(--background-tertiary)!important
 }
 
-.base_e3f659 {
-    display: flex;
-    flex-direction: row;
-    width: 312px
-}
-
 .widget_e3f659 {
-    border-radius: 5px!important
-}
-
-.widget_e3f659 {
+    border-radius: 5px!important;
     overflow: hidden
 }
 
@@ -1033,11 +1022,7 @@
     font-weight: 500
 }
 
-.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e {
-    background-color: transparent
-}
-
-.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
+.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e,.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
     background-color: transparent
 }
 
@@ -1269,11 +1254,8 @@
 }
 
 .lockedContainer__99ff4 {
-    overflow: hidden!important
-}
-
-.lockedContainer__99ff4 {
     margin-bottom: 56px;
+    overflow: hidden!important;
     pointer-events: none
 }
 
@@ -1582,4 +1564,4 @@
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=9ffe294ac91cd5cb.css.map*/
+/*# sourceMappingURL=534a599dc80f2941.css.map*/

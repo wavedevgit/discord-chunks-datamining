@@ -116,8 +116,8 @@ let N = i.forwardRef((e, t) => {
     renderAccessory: U,
     onClick: G,
     tabIndex: B,
-    dataSafeSrc: F,
-    useFullWidth: V = !1
+    dataSafeSrc: V,
+    useFullWidth: F = !1
   } = e, Z = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
   let H = i.useRef(null),
     W = i.useRef(null);
@@ -160,7 +160,7 @@ let N = i.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, o),
-      style: C(Y, L, V, D)
+      style: C(Y, L, F, D)
     }, Z), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: -1,
@@ -170,7 +170,7 @@ let N = i.forwardRef((e, t) => {
         href: k,
         ref: H,
         "data-role": "img",
-        "data-safe-src": null != F ? F : f
+        "data-safe-src": null != V ? V : f
       }), null != G ? (0, r.jsx)(l.P3F, {
         className: g.clickableWrapper,
         tabIndex: null != B ? B : 0,

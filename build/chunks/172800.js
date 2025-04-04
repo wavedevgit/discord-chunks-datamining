@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => L
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -99,8 +99,8 @@ let L = e => {
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: F,
-    category: V,
+    channelGuildId: V,
+    category: F,
     selectedItemClassName: Z,
     channelId: H,
     messageId: W,
@@ -225,7 +225,7 @@ let L = e => {
             selectedItemClassName: Z,
             onSelect: A,
             onInspect: D,
-            channelGuildId: F,
+            channelGuildId: V,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -250,7 +250,7 @@ let L = e => {
       ref: eu,
       children: e.map(e_)
     }));
-  if (V === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (F === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: N.emojiListRow,
     ref: eu,
     children: (0, r.jsx)(m.Z, {
@@ -258,7 +258,7 @@ let L = e => {
       onSelectSoundmoji: R
     })
   });
-  if (V !== I.En.TOP_GUILD_EMOJI) return ep(t);
+  if (F !== I.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
       if (q && e.type === v.ld.CREATE_EMOJI) return !0;
       let t = e;

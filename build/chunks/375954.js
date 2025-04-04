@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => em
-}), n(47120), n(789020), n(653041), n(978209), n(177593);
+}), n(388685), n(997841), n(539854), n(583741), n(358797);
 var r, i = n(392711),
   o = n.n(i),
   a = n(442837),
@@ -85,14 +85,14 @@ function B(e) {
   i = i.truncate(n, r), c.Z.commit(i)
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t
   } = e;
   M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t,
     jump: n,
@@ -444,11 +444,11 @@ let em = new eh(s.Z, {
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: V,
+  LOAD_MESSAGES_SUCCESS_CACHED: F,
   LOCAL_MESSAGES_LOADED: e_,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
-  CLEAR_MESSAGES: F,
+  CLEAR_MESSAGES: V,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

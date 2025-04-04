@@ -156,8 +156,8 @@ function S(e) {
     buttonRef: U,
     focusProps: G,
     "aria-label": B,
-    submittingStartedLabel: F,
-    submittingFinishedLabel: V
+    submittingStartedLabel: V,
+    submittingFinishedLabel: F
   } = e, Z = g(e, ["look", "color", "size", "fullWidth", "grow", "disabled", "submitting", "type", "style", "wrapperClassName", "className", "innerClassName", "onClick", "onDoubleClick", "onMouseDown", "onMouseUp", "onMouseEnter", "onMouseLeave", "onKeyDown", "children", "rel", "buttonRef", "focusProps", "aria-label", "submittingStartedLabel", "submittingFinishedLabel"]);
   let H = h || E,
     W = H && (null != L || null != x),
@@ -165,8 +165,8 @@ function S(e) {
     K = O(G, t),
     z = i.useRef(!1);
   i.useEffect(() => {
-    !0 === E && (z.current = !0, l.u.announce(null != F ? F : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != V ? V : d.NW.string(d.t.SVPara))
-  }, [E, F, V]);
+    !0 === E && (z.current = !0, l.u.announce(null != V ? V : d.NW.string(d.t.pfChQk))), !1 === E && !0 === z.current && l.u.announce(null != F ? F : d.NW.string(d.t.SVPara))
+  }, [E, V, F]);
   let q = (0, r.jsx)(c.t, m(p({}, G), {
     offset: K,
     children: (0, r.jsxs)("button", m(p({}, H ? null : Z), {

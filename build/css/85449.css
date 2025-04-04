@@ -1,6 +1,6 @@
 /**
   Module ID: 85449
-  Original File Name: baa883d1d1ffd3b8
+  Original File Name: c927a5a14bb8bedd
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -127,26 +127,27 @@
 .deleteButton__1df30 {
     width: 28px;
     height: 28px;
-    position: absolute;
     top: -6px;
     right: -6px;
     color: var(--text-danger);
     background-color: var(--bg-base-tertiary);
-    border-radius: var(--radius-round);
     opacity: 0;
     transition: opacity var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration);
     cursor: pointer
 }
 
+.deleteButton__1df30,.deleteButton__1df30:after {
+    position: absolute;
+    border-radius: var(--radius-round)
+}
+
 .deleteButton__1df30:after {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: var(--radius-round);
     background-color: transparent;
     transition: background-color var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration)
@@ -400,4 +401,4 @@
     border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=baa883d1d1ffd3b8.css.map*/
+/*# sourceMappingURL=c927a5a14bb8bedd.css.map*/

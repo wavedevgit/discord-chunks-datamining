@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => W
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -50,7 +50,7 @@ function B(e, t, n) {
   }) : e[t] = n, e
 }
 
-function F(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function F(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = Z(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -86,7 +86,7 @@ function H(e) {
   let {
     channel: _,
     isLoading: p
-  } = e, [A, C] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), F = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), V = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
+  } = e, [A, C] = i.useState(!1), B = (0, s.e7)([T.ZP], () => T.ZP.getSelfEmbeddedActivityForChannel(_.id)), V = (0, s.e7)([T.ZP], () => T.ZP.getActivityPanelMode()), F = (0, h.q)(null == B ? void 0 : B.applicationId), Z = null == B ? void 0 : B.launchId, H = (0, s.e7)([O.Z], () => O.Z.getChannelId() === _.id), {
     dockedRect: W,
     isHidden: Y
   } = (0, s.cj)([v.Z], () => {
@@ -108,7 +108,7 @@ function H(e) {
     })) : null,
     selectedParticipant: g.Z.getSelectedParticipant(_.id),
     participantsOpen: g.Z.getParticipantsOpen(_.id)
-  })), X = H || null != K, J = (0, P.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== k.fO.ACTIVITY, ee = !J && F === x.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
+  })), X = H || null != K, J = (0, P.Z)(_.id), $ = J && (null == q ? void 0 : q.type) !== k.fO.ACTIVITY, ee = !J && V === x.Ez.PIP, et = X && ($ || ee) && null == W, en = (!X || et) && !Y, er = en && null != v.Z.pipVideoWindow && null != v.Z.pipActivityWindow;
 
   function ei() {
     var e;
@@ -179,7 +179,7 @@ function H(e) {
           applicationId: B.applicationId
         })
       }
-    }, [null == B ? void 0 : B.applicationId, en]), null == B || null == Z || null == z && (0, P.Z)(_.id) || null == V) return null;
+    }, [null == B ? void 0 : B.applicationId, en]), null == B || null == Z || null == z && (0, P.Z)(_.id) || null == F) return null;
   let es = Array.from(B.userIds).map(e => I.default.getUser(e)).filter(e => null != e),
     el = {
       instance_id: null != (o = null != (n = B.compositeInstanceId) ? n : B.launchId) ? o : "",
@@ -218,7 +218,7 @@ function H(e) {
             [j.pipModeTall]: en && A
           })
         }) : (0, r.jsx)(w.J, {
-          allowPopups: (0, R.h)(V),
+          allowPopups: (0, R.h)(F),
           referrerPolicy: L.um.has(B.applicationId) ? "no-referrer" : "origin",
           url: B.url,
           queryParams: el,
@@ -240,7 +240,7 @@ function H(e) {
 let W = e => {
   var {
     channel: t
-  } = e, n = V(e, ["channel"]);
+  } = e, n = F(e, ["channel"]);
   let {
     userActivity: i,
     inActivity: o
@@ -253,7 +253,7 @@ let W = e => {
   } = (0, p.ZP)(_.Z.ACTIVITY_PIP), s = !o;
   return (0, r.jsx)(p.Gt, {
     value: a,
-    children: (0, r.jsx)(H, F({
+    children: (0, r.jsx)(H, V({
       channel: t,
       isLoading: s
     }, n))

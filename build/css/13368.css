@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 6ae66be577a734cf
+  Original File Name: c51c852b51c4795b
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -154,14 +154,11 @@
 }
 
 .errorNotificationContainer_e13eda {
-    position: relative!important
-}
-
-.errorNotificationContainer_e13eda {
     box-shadow: var(--shadow-border) var(--shadow-high);
     background-color: rgba(19,19,24,.95);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    position: relative!important
 }
 
 .errorNotificationWrapper_e13eda {
@@ -1390,11 +1387,7 @@
     padding: 4px 6px
 }
 
-.experimentOverlayTitle__2f4f7.idle__2f4f7 {
-    opacity: 0
-}
-
-.experimentOverlayTitle__2f4f7:empty {
+.experimentOverlayTitle__2f4f7.idle__2f4f7,.experimentOverlayTitle__2f4f7:empty {
     opacity: 0
 }
 
@@ -2454,13 +2447,7 @@
     color: var(--interactive-hover)
 }
 
-.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
-    color: var(--interactive-active);
-    font-weight: 500;
-    font-weight: var(--font-weight-semibold-1x-light-theme,500)
-}
-
-.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32 {
+.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32,.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
     color: var(--interactive-active);
     font-weight: 500;
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
@@ -3975,11 +3962,7 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsButton__07f91:hover {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
-}
-
-.optionsActive__07f91 {
+.optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -4160,10 +4143,7 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceIcon_adebba {
-    color: var(--white)!important
-}
-
-.voiceIcon_adebba {
+    color: var(--white)!important;
     opacity: .5;
     display: block;
     flex-shrink: 0
@@ -4384,4 +4364,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=6ae66be577a734cf.css.map*/
+/*# sourceMappingURL=c51c852b51c4795b.css.map*/

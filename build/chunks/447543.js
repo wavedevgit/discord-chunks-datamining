@@ -5,7 +5,7 @@ n.d(t, {
   CB: () => ey,
   ZP: () => ev,
   r$: () => eb
-}), n(789020), n(411104);
+}), n(997841), n(415506);
 var r = n(525654),
   i = n.n(r),
   o = n(990547),
@@ -44,8 +44,8 @@ var r = n(525654),
   U = n(271383),
   G = n(430824),
   B = n(607744),
-  F = n(341165),
-  V = n(496675),
+  V = n(341165),
+  F = n(496675),
   Z = n(914010),
   H = n(594174),
   W = n(626135),
@@ -130,7 +130,7 @@ function ef(e, t, n) {
   if ((null == n ? void 0 : n.targetType) === en.Iq.ROLE_SUBSCRIPTIONS_PURCHASE) return ee.oC.ROLE_SUBSCRIPTIONS;
   if ((null == n ? void 0 : n.targetType) == null && !x.tx.has(t.type) && (0, I.s)(e)) return ee.oC.GUILD_HOME;
   let o = k.Z.getChannel(t.id);
-  return V.Z.can($.Plq.VIEW_CHANNEL, o) ? t.id : null != (i = null == (r = j.ZP.getDefaultChannel(e, !0, $.Plq.CREATE_INSTANT_INVITE)) ? void 0 : r.id) ? i : t.id
+  return F.Z.can($.Plq.VIEW_CHANNEL, o) ? t.id : null != (i = null == (r = j.ZP.getDefaultChannel(e, !0, $.Plq.CREATE_INSTANT_INVITE)) ? void 0 : r.id) ? i : t.id
 }
 
 function e_(e, t) {
@@ -309,7 +309,7 @@ let ev = {
     }
   },
   async mobileCreateInvite(e, t) {
-    let n = F.Z.getInvite(e.id);
+    let n = V.Z.getInvite(e.id);
     if (null != n && !n.isExpired()) return n.code;
     let r = {
         max_age: Y.Z.Seconds.DAY
@@ -320,7 +320,7 @@ let ev = {
     return null == i ? void 0 : i.code
   },
   async getAllFriendInvites(e) {
-    if (await new Promise(e => f.Z.wait(() => e(null))), F.Z.getFriendInvitesFetching()) return null != ec ? ec.then(e => e.body) : Promise.reject(Error("Invalid friend invite fetch request"));
+    if (await new Promise(e => f.Z.wait(() => e(null))), V.Z.getFriendInvitesFetching()) return null != ec ? ec.then(e => e.body) : Promise.reject(Error("Invalid friend invite fetch request"));
     ec = u.tn.get({
       url: $.ANM.FRIEND_INVITES,
       context: {

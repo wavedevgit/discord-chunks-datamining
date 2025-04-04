@@ -3,7 +3,7 @@
 n.d(t, {
   default: () => X,
   m: () => J
-}), n(773603), n(47120);
+}), n(457542), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -43,7 +43,7 @@ var r = n(200651),
   G = n(388032),
   B = n(335626);
 
-function F(e, t, n) {
+function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -52,14 +52,14 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function F(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      F(e, t, n[t])
+      V(e, t, n[t])
     })
   }
   return e
@@ -299,7 +299,7 @@ function J(e, t, i) {
     let {
       default: o
     } = await Promise.resolve().then(n.bind(n, 920916));
-    return n => (0, r.jsx)(o, H(V({}, n), {
+    return n => (0, r.jsx)(o, H(F({}, n), {
       quest: e,
       location: t,
       preview: i

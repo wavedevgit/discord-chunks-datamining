@@ -1,6 +1,6 @@
 /**
   Module ID: 13965
-  Original File Name: dbe7e589018335b1
+  Original File Name: 6758fa90c3b5ee58
 **/
 .container__6f9f7 {
     display: flex;
@@ -64,11 +64,8 @@
 }
 
 .modalContentContainer__8fcbd {
+    overflow: hidden;
     padding: 0!important
-}
-
-.modalContentContainer__8fcbd {
-    overflow: hidden
 }
 
 .visual-refresh .modalContentContainer__8fcbd {
@@ -99,4 +96,4 @@
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
 }
 
-/*# sourceMappingURL=dbe7e589018335b1.css.map*/
+/*# sourceMappingURL=6758fa90c3b5ee58.css.map*/

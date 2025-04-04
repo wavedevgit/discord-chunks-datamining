@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(381538);
 
@@ -58,8 +58,8 @@ var c = r(697352),
   w = r(169774),
   x = r(606166),
   k = r(344751),
-  E = r(593121),
-  C = r(685536),
+  C = r(593121),
+  E = r(685536),
   D = r(218675),
   O = r(581079),
   K = r(680566),
@@ -102,7 +102,7 @@ var c = r(697352),
           i = r.editor;
         if (i) {
           var o = S.getScrollParent(i),
-            a = t || C(o),
+            a = t || E(o),
             u = a.x,
             s = a.y;
           K(i) || O(!1), i.focus(), o === window ? window.scrollTo(u, s) : b.setTop(o, s), n || r.update(m.forceSelection(e, e.getSelection()))
@@ -275,7 +275,7 @@ u(R, "defaultProps", {
   blockStyleFn: function() {
     return ""
   },
-  keyBindingFn: E,
+  keyBindingFn: C,
   readOnly: !1,
   spellCheck: !1,
   stripPastedStyles: !1

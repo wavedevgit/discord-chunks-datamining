@@ -1,6 +1,6 @@
 /**
   Module ID: 4279
-  Original File Name: 13f34e03e291e823
+  Original File Name: 67673c6541c26099
 **/
 .ephemeral__5126c {
     position: relative;
@@ -91,27 +91,12 @@
 }
 
 .visual-refresh .message__5126c {
+    border-top-right-radius: var(--radius-xs);
+    border-bottom-right-radius: var(--radius-xs);
     padding-right: var(--space-xl)!important
 }
 
-.visual-refresh .message__5126c {
-    border-top-right-radius: var(--radius-xs);
-    border-bottom-right-radius: var(--radius-xs)
-}
-
-.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover {
-    background: var(--background-message-hover)
-}
-
-.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c {
-    background: var(--background-message-hover)
-}
-
-.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover {
-    background: var(--background-message-hover)
-}
-
-.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
+.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover,.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c,.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover,.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
     background: var(--background-message-hover)
 }
 
@@ -466,4 +451,4 @@
     min-width: 32px
 }
 
-/*# sourceMappingURL=13f34e03e291e823.css.map*/
+/*# sourceMappingURL=67673c6541c26099.css.map*/

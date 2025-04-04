@@ -4,7 +4,7 @@ n.d(t, {
   ZP: () => P,
   _1: () => N,
   jd: () => A
-}), n(627341), n(47120);
+}), n(314940), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -94,11 +94,11 @@ function P(e) {
   } = (0, g.Xo)(), {
     live: j,
     stream: U
-  } = (0, m.Z)(t.id), G = !o && x !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, F] = i.useState(G);
+  } = (0, m.Z)(t.id), G = !o && x !== b.y0.FULL_SIZE && (0, l.EQ)(n).with(b.n_.STATUS, () => 0 === j.length && null == U).with(b.n_.ACTIVITY, () => !0).with(b.n_.AVATAR, () => !1).exhaustive(), [B, V] = i.useState(G);
   if (i.useEffect(() => {
-      B && !G && F(!1)
+      B && !G && V(!1)
     }, [B, G]), t.bot || D || !L) return null;
-  let V = () => {
+  let F = () => {
       k(N), n === b.n_.AVATAR ? A({
         action: "PRESS_REACT_AVATAR"
       }) : n === b.n_.STATUS ? A({
@@ -125,7 +125,7 @@ function P(e) {
       }), x === b.y0.BITE_SIZE && (0, _.EW)(u.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK)
     },
     H = e => {
-      e.animationName === (0, s.get)(v, "fadeInAndOut") && F(!1)
+      e.animationName === (0, s.get)(v, "fadeInAndOut") && V(!1)
     };
   return (0, r.jsxs)(f.ZP, {
     className: a()(v.popover, {
@@ -144,7 +144,7 @@ function P(e) {
       delay: 0,
       "aria-label": !1,
       children: (0, r.jsx)(f.zx, {
-        onClick: V,
+        onClick: F,
         className: v.button,
         "aria-label": C[n](),
         "aria-haspopup": "dialog",

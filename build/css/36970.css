@@ -1,12 +1,9 @@
 /**
   Module ID: 36970
-  Original File Name: 591e1567ebb88bd9
+  Original File Name: 0dfde2eb3fc200ca
 **/
 .modal__9a792 {
-    background-color: var(--background-secondary)!important
-}
-
-.modal__9a792 {
+    background-color: var(--background-secondary)!important;
     border-radius: 8px;
     min-height: 400px;
     height: 60vh;
@@ -17,4 +14,4 @@
     overflow: hidden
 }
 
-/*# sourceMappingURL=591e1567ebb88bd9.css.map*/
+/*# sourceMappingURL=0dfde2eb3fc200ca.css.map*/

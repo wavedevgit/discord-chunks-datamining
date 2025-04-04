@@ -5,7 +5,7 @@ n.d(t, {
   B5: () => R,
   Do: () => w,
   GX: () => k,
-  HR: () => V,
+  HR: () => F,
   Hr: () => C,
   Je: () => N,
   Js: () => b,
@@ -22,11 +22,11 @@ n.d(t, {
   nE: () => G,
   nH: () => I,
   qs: () => E,
-  qz: () => F,
+  qz: () => V,
   ws: () => x,
   xI: () => M,
   zI: () => y
-}), n(566702);
+}), n(781311);
 var r = n(367907),
   i = n(731429),
   o = n(188471),
@@ -383,7 +383,7 @@ function B(e) {
   })
 }
 
-function F() {
+function V() {
   r.ZP.trackWithMetadata(_.rMx.OPEN_MODAL, {
     type: "Forum Channel Upsell Modal",
     location: {
@@ -392,7 +392,7 @@ function F() {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n

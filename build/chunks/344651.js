@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => Y
-}), n(653041), n(47120), n(789020), n(411104);
+}), n(539854), n(388685), n(997841), n(415506);
 var r = n(392711),
   i = n.n(r);
 n(724522);
@@ -121,11 +121,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  V = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  V = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  F = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -228,7 +228,7 @@ function X(e) {
     hiddenActivities: o,
     clientStatus: a
   } = e;
-  V.add({
+  F.add({
     guildId: t,
     user: n,
     status: r,
@@ -652,7 +652,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   o.ZP.Emitter.batched(() => {
-    F.add({
+    V.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found

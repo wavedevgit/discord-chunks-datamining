@@ -3,7 +3,7 @@
 n.d(t, {
   I: () => et,
   PaymentModal: () => ee
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(614223),
   G = n(48175),
   B = n(435020),
-  F = n(928886),
-  V = n(456251),
+  V = n(928886),
+  F = n(456251),
   Z = n(614277),
   H = n(981631),
   W = n(474936),
@@ -104,7 +104,7 @@ function ee(e) {
     subscriptionTier: R,
     onClose: U,
     trialId: G,
-    trialFooterMessageOverride: V,
+    trialFooterMessageOverride: F,
     reviewWarningMessage: z,
     planGroup: Q = W.Y1,
     openInvoiceId: $,
@@ -151,8 +151,8 @@ function ee(e) {
   ed || (null == eU ? void 0 : eU.isLargeModal) ? eG = c.CgR.LARGE : (eC === M.h8.ADD_PAYMENT_STEPS || ef || (null == eU ? void 0 : eU.isDynamicModal)) && (eG = c.CgR.DYNAMIC);
   let {
     isGift: eB,
-    giftRecipient: eF,
-    customGiftMessage: eV,
+    giftRecipient: eV,
+    customGiftMessage: eF,
     emojiConfetti: eZ,
     soundEffect: eH
   } = (0, L.wD)(), eW = (0, I.Z)({
@@ -198,10 +198,10 @@ function ee(e) {
     }
   }, [eI, ev, y, el, ej, em]);
   let eX = i.useCallback(() => {
-      let e = (0, w.MY)(eF) === w.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
+      let e = (0, w.MY)(eV) === w.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD,
         t = Date.now();
       P.default.track(H.rMx.PAYMENT_FLOW_SUCCEEDED, X(q({}, ez), {
-        is_custom_message_edited: eB && e && null != eV ? eV !== Y.NW.string(Y.t.ZkOo1d) : void 0,
+        is_custom_message_edited: eB && e && null != eF ? eF !== Y.NW.string(Y.t.ZkOo1d) : void 0,
         is_custom_emoji_sound_available: eB && e,
         emoji_name: eB && e && (null == eZ ? void 0 : eZ.id) == null ? null == eZ ? void 0 : eZ.surrogates : void 0,
         sound_id: eB && e ? null == eH ? void 0 : eH.soundId : void 0,
@@ -215,8 +215,8 @@ function ee(e) {
       }, {
         autoTrackExposure: !1
       });
-      eB && null != eF && null != n && r && (0, O.n)(n) && (0, v.Ni)(eF.id)
-    }, [ez, eZ, eV, eF, eB, eH, eR.startTime, eQ, n]),
+      eB && null != eV && null != n && r && (0, O.n)(n) && (0, v.Ni)(eV.id)
+    }, [ez, eZ, eF, eV, eB, eH, eR.startTime, eQ, n]),
     eJ = i.useMemo(() => () => null == U ? void 0 : U(eE === k.A.COMPLETED, ey), [U, eE, ey]),
     e$ = (0, s.Z)(() => Date.now(), [eC]),
     e0 = i.useCallback(function(e) {
@@ -252,7 +252,7 @@ function ee(e) {
       analyticsData: ez,
       setAnalyticsData: eq,
       trialId: G,
-      trialFooterMessageOverride: V,
+      trialFooterMessageOverride: F,
       reviewWarningMessage: z,
       planGroup: Q,
       openInvoiceId: $,
@@ -265,7 +265,7 @@ function ee(e) {
       skipConfirm: eh,
       continueSessionToInitialStep: em
     },
-    e2 = (0, F.U)({
+    e2 = (0, V.U)({
       renderHeader: ei,
       referralTrialOfferId: es,
       handleClose: eJ
@@ -348,7 +348,7 @@ function et(e) {
       emitPaymentFlowLoadedEvent: !0,
       trackedFromStep: c
     }) : null != n ? o(I && A ? M.h8.PLAN_SELECT : M.h8.REVIEW) : e ? (b((0, U.nA)(E, u, v)), o(M.h8.REVIEW)) : null != t ? o(M.h8.PLAN_SELECT) : o(M.h8.SKU_SELECT)
-  }, [c, u, f, w, n, C, o, t, E, b, N, v, S, T, I, A]), C) ? (0, r.jsx)(V.Z, {}) : f ? (0, r.jsx)(m.Vq, {
+  }, [c, u, f, w, n, C, o, t, E, b, N, v, S, T, I, A]), C) ? (0, r.jsx)(F.Z, {}) : f ? (0, r.jsx)(m.Vq, {
     onClose: s
   }) : null
 }

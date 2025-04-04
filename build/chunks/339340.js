@@ -3,7 +3,7 @@
 n.d(t, {
   a: () => T,
   default: () => A
-}), n(47120), n(757143), n(301563);
+}), n(388685), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -62,7 +62,7 @@ function A(e) {
         hasErrors: !1
       }
     },
-    F = async e => {
+    V = async e => {
       P === C && A(), null == e || e.preventDefault(), M(null), L(!0);
       let n = P.length,
         r = P.replace(/<(a)?:[^:]+:[0-9]+>/g, "--").length,
@@ -86,14 +86,14 @@ function A(e) {
         }
         L(!1)
       }
-    }, [V, Z] = i.useState((0, p.JM)(P)), H = (e, t, n) => {
+    }, [F, Z] = i.useState((0, p.JM)(P)), H = (e, t, n) => {
       w(t), Z(n)
-    }, W = async () => (j || D || await F(), Promise.resolve({
+    }, W = async () => (j || D || await V(), Promise.resolve({
       shouldClear: !1,
       shouldRefocus: !0
     }));
   return (0, r.jsx)("form", {
-    onSubmit: F,
+    onSubmit: V,
     className: S.form,
     children: (0, r.jsxs)(c.Y0X, {
       transitionState: n,
@@ -125,7 +125,7 @@ function A(e) {
           children: [(0, r.jsx)(h.Z, {
             innerClassName: S.textArea,
             textValue: P,
-            richValue: V,
+            richValue: F,
             placeholder: I.NW.formatToPlainString(I.t.DUXxBg, {
               channelName: t.name
             }),
@@ -157,7 +157,7 @@ function A(e) {
           onClick: A,
           children: I.NW.string(I.t["ETE/oK"])
         }), (0, r.jsx)(c.zxk, {
-          onClick: F,
+          onClick: V,
           submitting: D,
           className: S.button,
           disabled: j,

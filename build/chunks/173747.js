@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => Y
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r, i = n(392711),
   o = n.n(i),
   a = n(442837),
@@ -138,7 +138,7 @@ function B(e) {
   null == I[t] && delete I[t]
 }
 
-function F(e) {
+function V(e) {
   let {
     branches: t
   } = e, n = {};
@@ -160,7 +160,7 @@ function F(e) {
   P(A)
 }
 
-function V() {
+function F() {
   P(C)
 }
 
@@ -213,8 +213,8 @@ let Y = new W(l.Z, {
   APPLICATION_BUILD_SIZE_FETCH_START: U,
   APPLICATION_BUILD_SIZE_FETCH_SUCCESS: G,
   APPLICATION_BUILD_SIZE_FETCH_FAIL: B,
-  APPLICATION_BRANCHES_FETCH_SUCCESS: F,
-  APPLICATION_BRANCHES_FETCH_FAIL: V,
+  APPLICATION_BRANCHES_FETCH_SUCCESS: V,
+  APPLICATION_BRANCHES_FETCH_FAIL: F,
   CONNECTION_CLOSED: Z,
   LOGOUT: Z,
   SKU_PURCHASE_SUCCESS: H

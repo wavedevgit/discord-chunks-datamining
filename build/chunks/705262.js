@@ -4,7 +4,7 @@ n.d(t, {
   Yk: () => Z,
   ZP: () => J,
   yH: () => B
-}), n(627341), n(266796), n(47120);
+}), n(314940), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -80,11 +80,11 @@ function G(e, t) {
 var B = function(e) {
   return e.EDITOR = "EDITOR", e.SETTINGS = "SETTINGS", e
 }({});
-let F = Object.freeze({
+let V = Object.freeze({
     EDITOR: D.fy.SLOW_USER_ACTION,
     SETTINGS: D.fy.INFREQUENT_USER_ACTION
   }),
-  V = i.createContext({}),
+  F = i.createContext({}),
   Z = e => {
     let {
       isPersisted: t,
@@ -202,7 +202,7 @@ let F = Object.freeze({
       isCoachmark: a
     } = e, {
       type: s
-    } = i.useContext(V), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null == (n = (0, E.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === P.Si.TIER_2;
+    } = i.useContext(F), [c] = (0, l.Wu)([N.Z], () => [N.Z.isPreview]), u = (null == (n = (0, E.N)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === P.Si.TIER_2;
     return "EDITOR" === s && c && u ? (0, r.jsx)(y.ZP, {
       type: P.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: P.Si.TIER_2,
@@ -231,7 +231,7 @@ let F = Object.freeze({
     } = e, {
       type: o,
       delay: a
-    } = i.useContext(V), {
+    } = i.useContext(F), {
       analyticsLocations: s
     } = (0, p.ZP)(_.Z.CLIENT_THEMES_THEME_SELECTOR), [h, m] = (0, l.Wu)([N.Z], () => {
       var e;
@@ -341,7 +341,7 @@ let F = Object.freeze({
       hideSystemSelector: n = !1
     } = e, {
       delay: o
-    } = i.useContext(V), {
+    } = i.useContext(F), {
       analyticsLocations: a
     } = (0, p.ZP)(_.Z.CLIENT_THEMES_THEME_SELECTOR), [s, c, u] = (0, l.Wu)([O.Z, I.ZP, N.Z], () => [O.Z.theme, null == N.Z.gradientPreset, I.ZP.useSystemTheme === w.KW.ON]), f = e => {
       (0, T.xs)(), Z({
@@ -419,9 +419,9 @@ let F = Object.freeze({
       labelledBy: o
     }), s = i.useMemo(() => ({
       type: t,
-      delay: F[t]
+      delay: V[t]
     }), [t]);
-    return (0, r.jsx)(V.Provider, {
+    return (0, r.jsx)(F.Provider, {
       value: s,
       children: (0, r.jsx)("div", G(j({}, a), {
         className: M.__invalid_container,

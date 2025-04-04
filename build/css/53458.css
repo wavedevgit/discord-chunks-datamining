@@ -1,6 +1,6 @@
 /**
   Module ID: 53458
-  Original File Name: 2c7a13fb46bb77f9
+  Original File Name: c23002a2d4243d61
 **/
 .containerScrollGradient_a54921 {
     background: linear-gradient(0deg,var(--background-primary),transparent);
@@ -78,7 +78,6 @@
 
 .background__14403 {
     --custom-overlay-color: hsl(var(--primary-730-hsl)/0.8);
-    background-image: linear-gradient(hsl(var(--primary-730-hsl)/0.8),hsl(var(--primary-730-hsl)/0.8)),var(--custom-background-url);
     background-image: linear-gradient(var(--custom-overlay-color),var(--custom-overlay-color)),var(--custom-background-url);
     position: absolute;
     height: 120%;
@@ -382,4 +381,4 @@
     padding: 0 var(--spacing-16)
 }
 
-/*# sourceMappingURL=2c7a13fb46bb77f9.css.map*/
+/*# sourceMappingURL=c23002a2d4243d61.css.map*/

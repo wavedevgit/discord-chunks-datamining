@@ -18,12 +18,12 @@ n.d(t, {
   yi: () => U,
   yl: () => B,
   zq: () => z
-}), n(47120), n(26686), n(653041);
+}), n(388685), n(49124), n(539854);
 var r = n(46973),
   i = n(992774),
   o = n(570140),
   a = n(579806),
-  s = n(255914),
+  s = n(674466),
   l = n(594190),
   c = n(569545),
   u = n(441167),
@@ -187,7 +187,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   var t;
   let n, r, i;
   if (null != e) {
@@ -211,7 +211,7 @@ function F(e) {
   }
 }
 
-function V(e, t) {
+function F(e, t) {
   var n, r, i, o, a, l, c, u, d, f;
   let p = new Map;
   for (let e in t.framesEncodedByEncoder) {
@@ -256,7 +256,7 @@ async function Z(e) {
     s = m.Z.getMediaEngine(),
     l = JSON.stringify(n),
     u = null != e ? (0, c.my)(e).ownerId : void 0,
-    d = F(e);
+    d = V(e);
   null != e && o.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
     clip: D(P({}, n), {
@@ -268,7 +268,7 @@ async function Z(e) {
     let {
       duration: e,
       clipStats: t
-    } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = V(d, t);
+    } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = F(d, t);
     r.clip_save_time_ms = t.clipSaveTimeMs, r.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (r.decode_fps_during_clip = t.viewerDecodeFps, r.encode_fps_during_clip = t.viewerEncodeFps, r.target_fps = null), b.default.track(C.rMx.CLIP_SAVED, r);
     let o = await (0, N.R)(a.Z.clips.getClipProtocolURLFromPath(i), 0);
     return n.thumbnail = o, n.length = e, A.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null != (f = null == o ? void 0 : o.length) ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), D(P({}, n), {
@@ -280,7 +280,7 @@ async function Z(e) {
         clipId: n.id
       }), !("errorMessage" in i)) throw b.default.track(C.rMx.CLIP_SAVE_FAILURE, d), i;
     let t = i,
-      r = V(d, t);
+      r = F(d, t);
     throw r.error_at = t.errorAt, r.error_message = t.errorMessage, b.default.track(C.rMx.CLIP_SAVE_FAILURE, r), t.errorMessage
   }
 }

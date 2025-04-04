@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => T
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(442837),
@@ -69,11 +69,11 @@ function T(e) {
     header: E.NW.string(E.t.XDBiPT),
     spacing: I,
     dismissibleContentType: a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK_ACTIVITY
-  }, B = (0, c.N)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), F = w && !B ? [G] : [], [V, Z] = (0, u.US)(F);
+  }, B = (0, c.N)(a.z.USER_PROFILE_POPOUT_INTERACTION_COACHMARK), V = w && !B ? [G] : [], [F, Z] = (0, u.US)(V);
   return (0, r.jsx)(s.yRy, {
     align: "center",
     position: t === m.n_.AVATAR ? "left" : "right",
-    shouldShow: null != V,
+    shouldShow: null != F,
     spacing: U,
     renderPopout: e => {
       let {

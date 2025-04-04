@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(763453),
   i = r(310958),
@@ -59,11 +59,11 @@ t.exports = function(t, e) {
       if (_) {
         var k = u.processHTML(_, t.props.blockRenderMap);
         if (k) {
-          var E = k.contentBlocks,
-            C = k.entityMap;
-          if (E) {
-            var D = n.createFromArray(E);
-            t.update(d(t._latestEditorState, D, C));
+          var C = k.contentBlocks,
+            E = k.entityMap;
+          if (C) {
+            var D = n.createFromArray(C);
+            t.update(d(t._latestEditorState, D, E));
             return
           }
         }

@@ -2,8 +2,8 @@
 "use strict";
 n.r(t), n.d(t, {
   loadVideoQuestModal: () => Z,
-  maybeShowSurveyForQuest: () => V,
-  navigateToQuestHome: () => F,
+  maybeShowSurveyForQuest: () => F,
+  navigateToQuestHome: () => V,
   openAppWithQuest: () => Y,
   openDisclosureModal: () => B,
   openQuestInGameRewardModal: () => U,
@@ -163,7 +163,7 @@ function B(e, t) {
   })
 }
 
-function F() {
+function V() {
   let {
     fromContent: e,
     questId: t
@@ -180,7 +180,7 @@ function F() {
   }), (0, u.uL)(C.Z5c.QUEST_HOME + n)
 }
 
-function V(e) {
+function F(e) {
   let t = (0, I.T)({
       quest: e
     }),
@@ -198,7 +198,7 @@ function V(e) {
 }
 
 function Z() {
-  return Promise.all([n.e("29976"), n.e("27458"), n.e("32249"), n.e("60333")]).then(n.bind(n, 536687))
+  return Promise.all([n.e("66816"), n.e("27458"), n.e("32249"), n.e("60333")]).then(n.bind(n, 536687))
 }
 
 function H(e) {

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => z
-}), n(47120), n(653041), n(230036);
+}), n(388685), n(539854), n(642613);
 var r, i = n(442837),
   o = n(570140),
   a = n(353926),
@@ -254,7 +254,7 @@ function B(e) {
   v.notifCenterLocalItems = v.notifCenterLocalItems.filter(t => !j(t, p.O7.INCOMING_FRIEND_REQUESTS, e.relationship.id) && !j(t, p.O7.INCOMING_FRIEND_REQUESTS_ACCEPTED, e.relationship.id))
 }
 
-function F(e) {
+function V(e) {
   let {
     gameRelationship: t
   } = e;
@@ -282,7 +282,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     applicationId: n
@@ -396,8 +396,8 @@ let z = new K(o.Z, {
   RELATIONSHIP_ADD: G,
   RELATIONSHIP_UPDATE: G,
   RELATIONSHIP_REMOVE: B,
-  GAME_RELATIONSHIP_ADD: F,
-  GAME_RELATIONSHIP_REMOVE: V,
+  GAME_RELATIONSHIP_ADD: V,
+  GAME_RELATIONSHIP_REMOVE: F,
   NOTIFICATION_CENTER_ITEM_COMPLETED: Z,
   SET_RECENT_MENTIONS_FILTER: () => S(),
   MOBILE_NATIVE_UPDATE_CHECK_FINISHED: Y

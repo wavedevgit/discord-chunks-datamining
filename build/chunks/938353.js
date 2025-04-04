@@ -1,9 +1,9 @@
 /** Chunk was on 22253 **/
 n.d(t, {
   $p: () => e9,
-  BB: () => e5,
-  ZP: () => e6
-}), n(47120), n(301563), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(411104), n(13667), n(390547);
+  BB: () => e4,
+  ZP: () => e8
+}), n(388685), n(35282), n(997841), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(415506), n(361932), n(187205);
 var r, i = n(200651),
   a = n(192379),
   l = n(120356),
@@ -158,8 +158,8 @@ function e0() {
   })
 }
 let e1 = 15 * e_.Z.Millis.MINUTE,
-  e2 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
-  e3 = (e, t, n) => () => {
+  e3 = new Set(["discord-developers", "discord-testers", "discord-townhall", "discordgameslab"]),
+  e2 = (e, t, n) => () => {
     let r = null != t ? t : n;
     if (null == r) return null;
     let {
@@ -177,7 +177,7 @@ let e1 = 15 * e_.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     })
   },
-  e4 = e => () => {
+  e5 = e => () => {
     let {
       url: t,
       proxyUrl: n,
@@ -194,12 +194,12 @@ let e1 = 15 * e_.Z.Millis.MINUTE,
       className: eX.gifFavoriteButton
     }) : null
   };
-class e5 extends(r = a.Component) {
+class e4 extends(r = a.Component) {
   shouldRenderInvite(e) {
     let {
       channel: t
     } = this.props;
-    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e2.has(e))
+    return !(t.isDM() && !t.isSystemDM() && !t.isGroupDM() && e3.has(e))
   }
   shouldComponentUpdate(e, t) {
     var n, r;
@@ -451,7 +451,7 @@ class e5 extends(r = a.Component) {
                 duration: i
               })
             },
-            gifFavoriteButton: e4(i),
+            gifFavoriteButton: e5(i),
             isSearchResult: this.props.isSearchResult
           },
           c = (0, eh.q)({
@@ -506,7 +506,7 @@ class e5 extends(r = a.Component) {
     } = this.props;
     return (0, i.jsx)(eL.F, {
       gifAutoPlay: t,
-      getGifFavButton: e4,
+      getGifFavButton: e5,
       getOnMediaItemContextMenu: null == l ? void 0 : e => t => {
         t.stopPropagation(), t.preventDefault(), null == l || l(t, e)
       },
@@ -738,7 +738,7 @@ class e5 extends(r = a.Component) {
       } = this.props, p = r.channel_id, m = r.id, f = (0, eO.BP)(e, p, m, s, c);
       if (e.type === eV.hBH.GIFT) return null;
       let h = (0, i.jsx)(Z.h.Provider, {
-        value: e3(e.url, e.image, e.video),
+        value: e2(e.url, e.image, e.video),
         children: (0, i.jsx)(E.ZP, eJ({
           className: eX.embedWrapper,
           embed: e,
@@ -791,7 +791,7 @@ class e5 extends(r = a.Component) {
   }
 }
 
-function e6(e) {
+function e8(e) {
   var t;
   let {
     channel: n,
@@ -823,7 +823,7 @@ function e6(e) {
   } = (0, T.yk)({
     location: "MessageAccessories"
   }), M = (0, P.a)(r) && L, W = (0, eC._)(n), U = (0, eE.ro)(r.id, r.channel_id);
-  return (0, i.jsx)(e5, e$(eJ(e$(eJ({
+  return (0, i.jsx)(e4, e$(eJ(e$(eJ({
     canSuppressEmbeds: O,
     canDeleteAttachments: N
   }, S), {
@@ -848,7 +848,7 @@ function e6(e) {
     hasInlineForwardButton: M
   }))
 }
-eQ(e5, "defaultProps", {
+eQ(e4, "defaultProps", {
   renderEmbeds: !0,
   compact: !1
 });
@@ -887,7 +887,7 @@ let e9 = e => {
     b = (0, C.V)(r.id, n.author.id),
     x = (0, eE.ro)(n.id, n.channel_id),
     y = (0, J.Z)(n);
-  return (0, i.jsx)(e5, e$(eJ({}, d), {
+  return (0, i.jsx)(e4, e$(eJ({}, d), {
     message: n,
     channel: r,
     disableReactionReads: a,

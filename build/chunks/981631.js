@@ -33,7 +33,7 @@ n.d(t, {
   CkL: () => tz,
   CoT: () => A,
   Cyb: () => g.Cy,
-  DJE: () => n8,
+  DJE: () => n7,
   DJj: () => eL,
   DZw: () => eR,
   Dge: () => nO,
@@ -52,7 +52,7 @@ n.d(t, {
   FsG: () => E.Fs,
   GI0: () => ez,
   GNZ: () => nk,
-  GOo: () => e5,
+  GOo: () => e6,
   GQo: () => nX,
   GU0: () => ep,
   GZQ: () => g.GZ,
@@ -62,12 +62,12 @@ n.d(t, {
   HeQ: () => g.He,
   Hqc: () => nv,
   HsE: () => rm,
-  IE4: () => F,
-  IIU: () => e6,
+  IE4: () => V,
+  IIU: () => e5,
   IWh: () => rj,
-  IXf: () => e8,
+  IXf: () => e7,
   I_8: () => em,
-  IlC: () => n5,
+  IlC: () => n6,
   Ilk: () => g.Il,
   IyS: () => rU,
   J0y: () => z,
@@ -82,7 +82,7 @@ n.d(t, {
   KFR: () => nP,
   KJ3: () => rw,
   KsC: () => N,
-  L4X: () => eF,
+  L4X: () => eV,
   LAt: () => ta,
   LPv: () => tq,
   LYt: () => th,
@@ -107,7 +107,7 @@ n.d(t, {
   OMz: () => g.OM,
   OSm: () => eK,
   OYC: () => J,
-  OcF: () => e7,
+  OcF: () => e8,
   Odu: () => $,
   PEY: () => e1,
   PNu: () => ex,
@@ -121,7 +121,7 @@ n.d(t, {
   PyE: () => g.Py,
   QCD: () => nQ,
   QIO: () => tR,
-  QKv: () => V,
+  QKv: () => F,
   QL: () => g.QL,
   QR$: () => rf,
   QZA: () => y,
@@ -164,13 +164,13 @@ n.d(t, {
   V6Z: () => g.V6,
   V7H: () => ti,
   VD2: () => nG,
-  VKK: () => eV,
+  VKK: () => eF,
   V_K: () => tK,
   VqG: () => g.Vq,
   Vzj: () => g.Vz,
   WND: () => na,
   WtW: () => e4,
-  Wyy: () => t5,
+  Wyy: () => t6,
   X5t: () => g.X5,
   X6Q: () => g.X6,
   X7u: () => g.X7,
@@ -201,22 +201,22 @@ n.d(t, {
   ane: () => nx,
   apO: () => rt,
   b2L: () => nt,
-  b4C: () => rV,
+  b4C: () => rF,
   b8q: () => tM,
   bL: () => eC,
   c2C: () => nL,
   d4z: () => a.d,
   dAT: () => tW,
-  dCx: () => t8,
+  dCx: () => t7,
   dG4: () => g.dG,
   dGM: () => e9,
   dGm: () => g.yA,
   dN1: () => eQ,
   dYL: () => tA,
-  e3s: () => n7,
-  eBq: () => n6,
+  e3s: () => n8,
+  eBq: () => n5,
   eHb: () => nz,
-  eRX: () => t7,
+  eRX: () => t8,
   eWB: () => tr,
   ecB: () => nR,
   eez: () => td,
@@ -268,7 +268,7 @@ n.d(t, {
   mBz: () => eX,
   mFx: () => e_,
   n8r: () => nY,
-  nkL: () => nV,
+  nkL: () => nF,
   o3l: () => no,
   oAB: () => tB,
   oCV: () => ni,
@@ -285,7 +285,7 @@ n.d(t, {
   pjP: () => n1,
   pmI: () => t4,
   q5t: () => tD,
-  q9n: () => nF,
+  q9n: () => nV,
   qAy: () => tj,
   qWG: () => rZ,
   qXD: () => rE,
@@ -311,7 +311,7 @@ n.d(t, {
   t_t: () => ee,
   tuJ: () => ns,
   u34: () => b,
-  uRl: () => tV,
+  uRl: () => tF,
   uaV: () => c.u,
   udG: () => nE,
   vB8: () => nA,
@@ -319,7 +319,7 @@ n.d(t, {
   vTt: () => nn,
   vbS: () => t1,
   vpv: () => tS,
-  vtS: () => tF,
+  vtS: () => tV,
   vuo: () => eZ,
   vxO: () => re,
   w2V: () => rC,
@@ -340,14 +340,14 @@ n.d(t, {
   yXt: () => g.yX,
   yYS: () => g.yY,
   yb: () => W,
-  ylB: () => rF,
+  ylB: () => rV,
   yqN: () => n_,
   ys_: () => e3,
   zMe: () => g.zM,
   zUn: () => nw,
   zYc: () => rv,
   zo9: () => r$
-}), n(47120), n(743606);
+}), n(388685), n(743606);
 var r = n(512722),
   i = n.n(r),
   o = n(674746);
@@ -437,10 +437,10 @@ let G = Object.freeze({
 var B = function(e) {
     return e.DISCONNECTED = "DISCONNECTED", e.AWAITING_ENDPOINT = "AWAITING_ENDPOINT", e.AUTHENTICATING = "AUTHENTICATING", e.CONNECTING = "CONNECTING", e.RTC_DISCONNECTED = "RTC_DISCONNECTED", e.RTC_CONNECTING = "RTC_CONNECTING", e.RTC_CONNECTED = "RTC_CONNECTED", e.NO_ROUTE = "NO_ROUTE", e.ICE_CHECKING = "ICE_CHECKING", e.DTLS_CONNECTING = "DTLS_CONNECTING", e
   }({}),
-  F = function(e) {
+  V = function(e) {
     return e.UNKNOWN = "unknown", e.BAD = "bad", e.AVERAGE = "average", e.FINE = "fine", e
   }({}),
-  V = function(e) {
+  F = function(e) {
     return e.CONNECTED = "connected", e.CONNECTING = "connecting", e.ERROR = "error", e
   }({}),
   Z = function(e) {
@@ -540,6 +540,7 @@ let eh = "@me",
     USER_PROFILE: e => "/users/".concat(e, "/profile"),
     USER_GUILD_PROFILE: (e, t) => "/guilds/".concat(e, "/profile/").concat(t),
     USER_CHANNELS: "/users/@me/channels",
+    USER_WARP_LICENSE: "/users/@me/warp/license",
     DM_CHANNEL: e => "/users/@me/dms/".concat(e),
     USER_SETTINGS_PROTO: e => "/users/@me/settings-proto/".concat(e),
     USER_ACTIVITY_METADATA: (e, t, n) => "/users/".concat(e, "/sessions/").concat(t, "/activities/").concat(null != n ? n : 0, "/metadata"),
@@ -1431,8 +1432,8 @@ let eR = 100,
   eU = 4e3,
   eG = 50,
   eB = 100,
-  eF = 1e3,
-  eV = 100,
+  eV = 1e3,
+  eF = 100,
   eZ = 256,
   eH = 32,
   eW = 190,
@@ -1453,16 +1454,16 @@ var e3 = function(e) {
   e4 = function(e) {
     return e.VIDEO = "video", e.VOICE = "voice", e
   }({}),
-  e6 = function(e) {
+  e5 = function(e) {
     return e[e.PLAYING = 0] = "PLAYING", e[e.STREAMING = 1] = "STREAMING", e[e.LISTENING = 2] = "LISTENING", e[e.WATCHING = 3] = "WATCHING", e[e.CUSTOM_STATUS = 4] = "CUSTOM_STATUS", e[e.COMPETING = 5] = "COMPETING", e[e.HANG_STATUS = 6] = "HANG_STATUS", e
   }({}),
-  e5 = function(e) {
+  e6 = function(e) {
     return e.GAME = "game", e.USER = "user", e.GROUP = "group", e
   }({}),
-  e7 = function(e) {
+  e8 = function(e) {
     return e.LOADING = "LOADING", e.COMPLETE = "COMPLETE", e.FAILED = "FAILED", e
   }({});
-let e8 = 128,
+let e7 = 128,
   e9 = 1024,
   te = 2e3,
   tt = 8e3,
@@ -1683,10 +1684,10 @@ let tG = {
     SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
     WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool"
   });
-var tF = function(e) {
+var tV = function(e) {
     return e.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker", e.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode", e.NOTICE_BAR = "Notice - Lurker Mode", e.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker", e.DIRECTORY_ENTRY = "Directory Channel Entry", e.DIRECTORY_EVENTS = "Directory Channel Events", e.POLL_ALERT = "Poll Alert", e.ICYMI = "ICYMI", e
   }({}),
-  tV = function(e) {
+  tF = function(e) {
     return e.QR_CODE = "QR Code Login", e.MOBILE_WEB_HANDOFF = "Mobile Web Handoff", e.DEFAULT = "The default username password Login", e.MFA = "MFA Login", e.PASSWORDLESS_CONDITIONAL_UI = "Passwordless Conditional UI", e
   }({}),
   tZ = function(e) {
@@ -1734,13 +1735,13 @@ let t0 = new Set(["facebook", "contacts"]),
   }),
   t3 = 0x99aab5,
   t4 = [1752220, 3066993, 3447003, 0x9b59b6, 0xe91e63, 0xf1c40f, 0xe67e22, 0xe74c3c, 9807270, 6323595, 1146986, 2067276, 2123412, 7419530, 0xad1457, 0xc27c0e, 0xa84300, 0x992d22, 9936031, 5533306],
-  t6 = (0, u._i)(o.Z.BRAND_500);
-i()(null != t6, "Brand color could not be parsed");
-let t5 = t6;
-var t7 = function(e) {
+  t5 = (0, u._i)(o.Z.BRAND_500);
+i()(null != t5, "Brand color could not be parsed");
+let t6 = t5;
+var t8 = function(e) {
     return e.VOICE_LEGACY_SUBSYSTEM = "voice_legacy_subsystem", e.DEBUG_LOGGING = "debug_logging", e.POPOUT_WINDOWS = "popout_windows", e.ELEVATED_HOOK = "elevated_hook", e.CREATE_HOST_ON_ATTACH = "create_host_on_attach", e.USER_DATA_CACHE = "user_data_cache", e.WEBAUTHN = "webauthn", e
   }({}),
-  t8 = function(e) {
+  t7 = function(e) {
     return e.FILTER_FROM = "FILTER_FROM", e.FILTER_MENTIONS = "FILTER_MENTIONS", e.ANSWER_USERNAME_FROM = "ANSWER_USERNAME_FROM", e.ANSWER_USERNAME_MENTIONS = "ANSWER_USERNAME_MENTIONS", e.FILTER_HAS = "FILTER_HAS", e.ANSWER_HAS = "ANSWER_HAS", e.FILTER_FILE_TYPE = "FILTER_FILE_TYPE", e.ANSWER_FILE_TYPE = "ANSWER_FILE_TYPE", e.FILTER_FILE_NAME = "FILTER_FILE_NAME", e.ANSWER_FILE_NAME = "ANSWER_FILE_NAME", e.FILTER_BEFORE = "FILTER_BEFORE", e.ANSWER_BEFORE = "ANSWER_BEFORE", e.FILTER_AFTER = "FILTER_AFTER", e.ANSWER_AFTER = "ANSWER_AFTER", e.FILTER_ON = "FILTER_ON", e.ANSWER_ON = "ANSWER_ON", e.FILTER_IN = "FILTER_IN", e.ANSWER_IN = "ANSWER_IN", e.FILTER_PINNED = "FILTER_PINNED", e.ANSWER_PINNED = "ANSWER_PINNED", e
   }({}),
   t9 = function(e) {
@@ -1956,10 +1957,10 @@ var nj = function(e) {
   nB = function(e) {
     return e.VIDEO = "VIDEO", e.EMBED_IFRAME = "EMBED_IFRAME", e
   }({}),
-  nF = function(e) {
+  nV = function(e) {
     return e.GIF = "GIF", e.STICKER = "STICKER", e
   }({});
-let nV = Object.freeze({
+let nF = Object.freeze({
   GIF: {
     type: "GIF",
     command: "gif",
@@ -2014,12 +2015,12 @@ var n1 = function(e) {
   }({});
 let n3 = 14,
   n4 = 6,
-  n6 = 30;
-var n5 = function(e) {
+  n5 = 30;
+var n6 = function(e) {
   return e.OVERLAY = "OVERLAY", e.APP = "APP", e.POPOUT = "POPOUT", e
 }({});
-let n7 = __OVERLAY__ ? "OVERLAY" : "APP";
-var n8 = function(e) {
+let n8 = __OVERLAY__ ? "OVERLAY" : "APP";
+var n7 = function(e) {
     return e.COMPLETE = "complete", e.TRANSITION = "transition", e
   }({}),
   n9 = function(e) {
@@ -2489,10 +2490,10 @@ let rG = "discodoEasterEgg";
 var rB = function(e) {
     return e.INITIAL = "initial", e.ENTER = "enter", e.UPDATE = "update", e.LEAVE = "leave", e
   }({}),
-  rF = function(e) {
+  rV = function(e) {
     return e[e.INCOMING = 1] = "INCOMING", e[e.CHANNEL_FOLLOWER = 2] = "CHANNEL_FOLLOWER", e
   }({}),
-  rV = function(e) {
+  rF = function(e) {
     return e[e.APPLICATION = 0] = "APPLICATION", e[e.OVERVIEW = 1] = "OVERVIEW", e[e.CHANNEL_FOLLOWING = 2] = "CHANNEL_FOLLOWING", e[e.TWITCH = 3] = "TWITCH", e[e.YOUTUBE = 4] = "YOUTUBE", e[e.WEBHOOKS = 5] = "WEBHOOKS", e[e.LOBBIES_LINKED = 6] = "LOBBIES_LINKED", e
   }({});
 let rZ = 2500,

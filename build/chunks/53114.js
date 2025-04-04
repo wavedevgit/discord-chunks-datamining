@@ -3,7 +3,7 @@
 n.d(t, {
   S: () => v,
   d: () => y
-}), n(47120), n(230036), n(653041);
+}), n(388685), n(642613), n(539854);
 var r = n(392711),
   i = n.n(r),
   o = n(47770),
@@ -13,7 +13,7 @@ var r = n(392711),
   c = n(709054),
   u = n(909766),
   d = n(140828),
-  f = n(255914);
+  f = n(674466);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -419,8 +419,8 @@ class v extends o.Z {
         cryptorDuration: U,
         cryptorAttempts: G,
         cryptorMissingKeyCount: B,
-        cryptorInvalidNonceCount: F,
-        qualityDecodeErrors: V,
+        cryptorInvalidNonceCount: V,
+        qualityDecodeErrors: F,
         qualityDecoderReboots: Z,
         qualityScoreErrors: H,
         qualityFrameDrops: W,
@@ -446,8 +446,8 @@ class v extends o.Z {
       cryptor_duration: U,
       cryptor_attempts: G,
       cryptor_missing_key_count: B,
-      cryptor_invalid_nonce_count: F,
-      encoder_quality_decode_errors: V,
+      cryptor_invalid_nonce_count: V,
+      encoder_quality_decode_errors: F,
       encoder_quality_decoder_reboots: Z,
       encoder_quality_score_errors: H,
       encoder_quality_frame_drops: W,

@@ -5,7 +5,7 @@ n.d(t, {
   ZP: () => q,
   oL: () => R,
   so: () => P
-}), n(653041), n(230036), n(47120);
+}), n(539854), n(642613), n(388685);
 var r, i = n(392711),
   o = n.n(i),
   a = n(108131),
@@ -271,14 +271,14 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
   j.delete(t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t
   } = e;
@@ -333,8 +333,8 @@ let q = new z(u.Z, {
   OVERLAY_INITIALIZE: G,
   GUILD_MEMBER_LIST_UPDATE: U,
   GUILD_UPDATE: B,
-  GUILD_DELETE: F,
-  GUILD_ROLE_UPDATE: V,
+  GUILD_DELETE: V,
+  GUILD_ROLE_UPDATE: F,
   GUILD_MEMBER_UPDATE: Z,
   CHANNEL_UPDATES: K
 })

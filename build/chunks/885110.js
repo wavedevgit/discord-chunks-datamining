@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => H
-}), n(789020), n(47120), n(230036);
+}), n(997841), n(388685), n(642613);
 var r, i = n(348327),
   o = n.n(i),
   a = n(392711),
@@ -98,12 +98,12 @@ function B() {
   return S = !1, U()
 }
 
-function F() {
+function V() {
   P = !1, N = O.Skl.UNKNOWN, U(), y.Z.setCurrentUserOnConnectionOpen(T, L)
 }
 
-function V() {
-  F()
+function F() {
+  V()
 }
 class Z extends(r = l.ZP.Store) {
   initialize() {
@@ -143,9 +143,9 @@ class Z extends(r = l.ZP.Store) {
 I(Z, "displayName", "SelfPresenceStore");
 let H = new Z(c.Z, {
   START_SESSION: U,
-  CONNECTION_OPEN: V,
-  CONNECTION_OPEN_SUPPLEMENTAL: F,
-  OVERLAY_INITIALIZE: F,
+  CONNECTION_OPEN: F,
+  CONNECTION_OPEN_SUPPLEMENTAL: V,
+  OVERLAY_INITIALIZE: V,
   CONNECTION_CLOSED: U,
   IDLE: U,
   AFK: U,

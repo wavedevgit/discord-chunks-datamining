@@ -1,6 +1,6 @@
 /**
   Module ID: 97573
-  Original File Name: d1ad1a33ec6f6eda
+  Original File Name: b40cc7d13c3e6935
 **/
 .button_e18686 {
     text-indent: -9999em;
@@ -100,12 +100,9 @@
 }
 
 .avatar_a429ea {
+    flex: 0 0 auto;
     width: 20px!important;
     height: 20px!important
-}
-
-.avatar_a429ea {
-    flex: 0 0 auto
 }
 
 .discrimClass_a429ea {
@@ -159,4 +156,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=d1ad1a33ec6f6eda.css.map*/
+/*# sourceMappingURL=b40cc7d13c3e6935.css.map*/

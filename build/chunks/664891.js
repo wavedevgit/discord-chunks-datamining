@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => G
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(512722),
@@ -104,7 +104,7 @@ function G(e) {
     onInvoiceError: G,
     priceOptions: p,
     preventFetch: el
-  }) : (0, N.R4)(n, P, W) ? (0, r.jsx)(F, {
+  }) : (0, N.R4)(n, P, W) ? (0, r.jsx)(V, {
     premiumSubscription: n,
     newPlan: ei,
     onInvoiceError: G,
@@ -162,7 +162,7 @@ function G(e) {
     }), (0, r.jsx)(w.Z, {
       isActive: j,
       ref: x,
-      children: null != n && (0, N.R4)(n, P, W) ? (0, r.jsx)(V, {
+      children: null != n && (0, N.R4)(n, P, W) ? (0, r.jsx)(F, {
         premiumSubscription: n,
         newPlan: ei,
         onInvoiceError: G,
@@ -222,7 +222,7 @@ function B(e) {
   }) : (0, r.jsx)(c.$jN, {})
 }
 
-function F(e) {
+function V(e) {
   let {
     premiumSubscription: t,
     newPlan: n,
@@ -296,7 +296,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let t, {
       premiumSubscription: n,
       newPlan: o,

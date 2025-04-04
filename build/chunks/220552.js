@@ -1,10 +1,10 @@
 /** Chunk was on 80451 **/
 "use strict";
-var a = t(381811);
-t(306872)(r, "__esModule", {
+var a = t(705723);
+t(864733)(r, "__esModule", {
   value: !0
 }), r.default = void 0;
-var o = a(t(477546)),
+var o = a(t(485749)),
   n = a(t(568334)),
   l = a(t(166143)),
   i = a(t(614318)),
@@ -22,8 +22,8 @@ var o = a(t(477546)),
   q = a(t(770759)),
   x = a(t(668686)),
   P = a(t(585615)),
-  y = a(t(610917)),
-  R = a(t(749963)),
+  R = a(t(610917)),
+  y = a(t(749963)),
   g = a(t(84819)),
   w = a(t(852077)),
   _ = a(t(360521)),
@@ -76,8 +76,8 @@ var o = a(t(477546)),
   eq = a(t(823075)),
   ex = a(t(420263)),
   eP = a(t(847995)),
-  ey = a(t(499798)),
-  eR = a(t(378800)),
+  eR = a(t(499798)),
+  ey = a(t(378800)),
   eg = a(t(370143)),
   ew = a(t(294366)),
   e_ = a(t(786057)),
@@ -105,8 +105,8 @@ r.default = new o.default([
   ["contentinfo", q.default],
   ["definition", x.default],
   ["deletion", P.default],
-  ["dialog", y.default],
-  ["directory", R.default],
+  ["dialog", R.default],
+  ["directory", y.default],
   ["document", g.default],
   ["emphasis", w.default],
   ["feed", _.default],
@@ -159,8 +159,8 @@ r.default = new o.default([
   ["switch", eq.default],
   ["tab", ex.default],
   ["table", eP.default],
-  ["tablist", ey.default],
-  ["tabpanel", eR.default],
+  ["tablist", eR.default],
+  ["tabpanel", ey.default],
   ["term", eg.default],
   ["textbox", ew.default],
   ["time", e_.default],

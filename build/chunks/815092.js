@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(381538);
 
@@ -37,8 +37,8 @@ t.exports = function(t) {
       c = r.getDecorator();
     return i !== o || a !== u || s !== c || r.mustForceSelection()
   }, r.render = function() {
-    for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, f = t.customStyleMap, p = t.customStyleFn, h = t.editorState, d = t.editorKey, g = t.preventScroll, y = t.textDirectionality, v = h.getCurrentContent(), m = h.getSelection(), _ = h.mustForceSelection(), b = h.getDecorator(), S = l(h.getDirectionMap()), w = v.getBlocksAsArray(), x = [], k = null, E = null, C = 0; C < w.length; C++) {
-      var D = w[C],
+    for (var t = this.props, e = t.blockRenderMap, r = t.blockRendererFn, n = t.blockStyleFn, f = t.customStyleMap, p = t.customStyleFn, h = t.editorState, d = t.editorKey, g = t.preventScroll, y = t.textDirectionality, v = h.getCurrentContent(), m = h.getSelection(), _ = h.mustForceSelection(), b = h.getDecorator(), S = l(h.getDirectionMap()), w = v.getBlocksAsArray(), x = [], k = null, C = null, E = 0; E < w.length; E++) {
+      var D = w[E],
         O = D.getKey(),
         K = D.getType(),
         T = r(D),
@@ -71,7 +71,7 @@ t.exports = function(t) {
       (n && (j = n(D)), "li" === P) && (j = c(j, s({
         "public/DraftStyleDefault/unorderedListItem": "unordered-list-item" === K,
         "public/DraftStyleDefault/orderedListItem": "ordered-list-item" === K,
-        "public/DraftStyleDefault/reset": E !== N || null === k || z > k,
+        "public/DraftStyleDefault/reset": C !== N || null === k || z > k,
         "public/DraftStyleDefault/depth0": 0 === z,
         "public/DraftStyleDefault/depth1": 1 === z,
         "public/DraftStyleDefault/depth2": 2 === z,
@@ -117,7 +117,7 @@ t.exports = function(t) {
         wrapperTemplate: N,
         key: O,
         offsetKey: L
-      }), k = N ? D.getDepth() : null, E = N
+      }), k = N ? D.getDepth() : null, C = N
     }
     for (var W = [], V = 0; V < x.length;) {
       var G = x[V];

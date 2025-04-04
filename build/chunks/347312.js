@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => G
-}), n(866573), n(642549), n(787622), n(47120);
+}), n(853839), n(570086), n(479048), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -154,19 +154,19 @@ function G(e) {
     activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = j(l, d), F = {
+  } = j(l, d), V = {
     currentTime: o,
     duration: s,
     played: l
-  }, V = i.useRef(F);
+  }, F = i.useRef(V);
   i.useEffect(() => {
-    V.current = F
+    F.current = V
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = V.current, r = L({
+    } = F.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,

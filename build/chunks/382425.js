@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => J
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(336383),
   G = n(194811),
   B = n(373826),
-  F = n(315324),
-  V = n(788858),
+  V = n(315324),
+  F = n(788858),
   Z = n(384298),
   H = n(386019),
   W = n(228168),
@@ -184,7 +184,7 @@ function J(e) {
             variant: "heading-sm/semibold",
             color: "text-normal",
             className: z.voiceChannelHeading,
-            children: [(0, r.jsx)(V.Z, {
+            children: [(0, r.jsx)(F.Z, {
               channel: ec,
               size: "xxs",
               color: l.TVs.colors.TEXT_NORMAL,
@@ -205,7 +205,7 @@ function J(e) {
           users: eu,
           guildId: el.id,
           channelId: ec.id,
-          maxUsers: F.W,
+          maxUsers: V.W,
           size: l.EFr.SIZE_16,
           onClick: e => {
             null == e || e.stopPropagation(), null == e_ || e_({
@@ -219,7 +219,7 @@ function J(e) {
         })]
       })
     },
-    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(F.Z, {
+    eT = () => et === W.y0.FULL_SIZE ? null : (0, r.jsx)(V.Z, {
       user: t,
       guild: el,
       channel: ec,

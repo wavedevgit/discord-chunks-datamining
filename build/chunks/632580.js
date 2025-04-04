@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   H: () => y
-}), n(47120);
+}), n(388685);
 var r = n(512722),
   i = n.n(r),
   o = n(570140),
@@ -83,17 +83,17 @@ async function y(e) {
     purchaseType: U,
     referralCode: G,
     loadId: B,
-    giftInfoOptions: F,
-    invoicePreview: V
+    giftInfoOptions: V,
+    invoicePreview: F
   } = e;
   t(_.A.PURCHASING), n(!0), r(!0), o.Z.wait(s.fw), m(null);
   try {
     let e, n, r;
     if (d.default.track(p.rMx.PAYMENT_FLOW_COMPLETED, b(g({}, O), {
-        subtotal: null == V ? void 0 : V.subtotal,
-        tax: null == V ? void 0 : V.tax,
-        expected_amount: null == V ? void 0 : V.total,
-        expected_currency: null == V ? void 0 : V.currency,
+        subtotal: null == F ? void 0 : F.subtotal,
+        tax: null == F ? void 0 : F.tax,
+        expected_amount: null == F ? void 0 : F.total,
+        expected_currency: null == F ? void 0 : F.currency,
         duration_ms: Date.now() - T
       })), E) return;
     if (U === p.GZQ.ONE_TIME) i()(null != k, "SKU must exist and be fetched."), i()(null != j, "SKUPricePreview must exist."), e = await (0, c.ZZ)(k.applicationId, k.id, {
@@ -102,12 +102,12 @@ async function y(e) {
       isGift: v,
       paymentSource: P,
       loadId: B,
-      giftInfoOptions: F
+      giftInfoOptions: V
     });
     else if (i()(null != N, "Missing subscriptionPlan"), v) {
-      i()(null != V, "Missing invoicePreview");
-      let t = V.total,
-        n = V.currency;
+      i()(null != F, "Missing invoicePreview");
+      let t = F.total,
+        n = F.currency;
       e = await (0, c.ZZ)(h.CL, N.skuId, {
         expectedAmount: t,
         expectedCurrency: n,
@@ -115,7 +115,7 @@ async function y(e) {
         subscriptionPlanId: N.id,
         isGift: !0,
         loadId: B,
-        giftInfoOptions: F
+        giftInfoOptions: V
       })
     } else if (w && null != D && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, a.G)(L, D, P, R.currency) : await (0, a.Mg)(L, {
       paymentSource: P,

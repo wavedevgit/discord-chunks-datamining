@@ -1,7 +1,7 @@
 /** Chunk was on 69796 **/
 t.r(n), t.d(n, {
   ItemDetailsModal: () => v
-}), t(266796), t(566702);
+}), t(953529), t(781311);
 var r = t(200651);
 t(192379);
 var l = t(752843),

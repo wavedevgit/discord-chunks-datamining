@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  $H: () => F,
+  $H: () => V,
   AB: () => U,
   JS: () => k,
   ZP: () => H,
   hH: () => x,
-  kO: () => V,
+  kO: () => F,
   oG: () => Z,
   v_: () => j,
   yw: () => B
@@ -141,7 +141,7 @@ function U(e) {
     channel_type: t.type,
     guild_id: t.getGuildId(),
     media_session_id: r
-  }, V(t.getGuildId(), t.id, n), (0, C.V)())
+  }, F(t.getGuildId(), t.id, n), (0, C.V)())
 }
 
 function G(e, t) {
@@ -163,7 +163,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   if ((0, P.AB)(e)) return {
     channel_static_route: e
   };
@@ -206,7 +206,7 @@ function F(e) {
   }
 }
 
-function V(e, t, n) {
+function F(e, t, n) {
   let r = {
     voice_state_count: 0,
     video_stream_count: 0,
@@ -227,5 +227,5 @@ function Z(e, t) {
 }
 let H = {
   trackWithMetadata: B,
-  getVoiceStateMetadata: V
+  getVoiceStateMetadata: F
 }

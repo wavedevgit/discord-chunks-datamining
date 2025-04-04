@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
-}), n(47120);
+  Z: () => F
+}), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(642128),
+  o = n(200100),
   a = n(91192),
   s = n(442837),
   l = n(780384),
@@ -65,7 +65,7 @@ function B(e, t) {
   return null != e && null != t && (0, m.p9)(t, v.Z, b.Z, y.Z, h.Z)[0]
 }
 
-function F(e) {
+function V(e) {
   var t, n, h, m, b;
   let {
     quest: y,
@@ -73,8 +73,8 @@ function F(e) {
     applicationStream: N,
     position: M,
     closePopout: k,
-    updatePosition: F,
-    impressionRef: V
+    updatePosition: V,
+    impressionRef: F
   } = e, Z = (0, s.e7)([E.Z], () => {
     var e;
     return null != (e = E.Z.getChannel(null == N ? void 0 : N.channelId)) ? e : null
@@ -94,14 +94,14 @@ function F(e) {
     let e = er.current,
       t = v.current;
     if (null == e || null == t) return;
-    let n = new MutationObserver(() => F());
+    let n = new MutationObserver(() => V());
     return n.observe(e, {
       childList: !0,
       subtree: !0
     }), () => {
       n.disconnect()
     }
-  }, [v, er, F]);
+  }, [v, er, V]);
   let ei = (0, c.q_F)({
       from: {
         height: 0
@@ -185,7 +185,7 @@ function F(e) {
     };
   return (0, r.jsx)(o.animated.div, {
     ref: e => {
-      V.current = e
+      F.current = e
     },
     "aria-expanded": ee,
     className: x.wrapper,
@@ -266,12 +266,12 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   return null == e.quest ? null : (0, r.jsx)(N.A, {
     questOrQuests: e.quest,
     questContent: S.jn.MEMBERS_LIST,
     trackGuildAndChannelMetadata: !0,
-    children: t => (0, r.jsx)(F, k({
+    children: t => (0, r.jsx)(V, k({
       impressionRef: t
     }, e))
   })

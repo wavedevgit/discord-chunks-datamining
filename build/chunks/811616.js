@@ -48,8 +48,8 @@ function I(e) {
     U = (0, g.Ap)(I.paymentSourceId),
     G = null != k && !S,
     B = (0, b.Ng)(),
-    F = R.interval === y.rV.YEAR ? v.t.ECT4Aw : v.t.v9QeOD,
-    V = R.interval === y.rV.YEAR ? v.t.oprI4u : v.t.ALLTBQ,
+    V = R.interval === y.rV.YEAR ? v.t.ECT4Aw : v.t.v9QeOD,
+    F = R.interval === y.rV.YEAR ? v.t.oprI4u : v.t.ALLTBQ,
     Z = () => null != k && (0, r.jsx)(u.Text, {
       tag: "span",
       variant: "eyebrow",
@@ -90,9 +90,9 @@ function I(e) {
           regularPrice: (0, E.T4)(j.amount, j.currency)
         })
       }
-      return A ? v.NW.format(F, {
+      return A ? v.NW.format(V, {
         price: (0, E.T4)(j.amount, j.currency)
-      }) : P ? v.NW.format(V, {
+      }) : P ? v.NW.format(F, {
         price: (0, E.T4)(j.amount, j.currency)
       }) : R.interval === y.rV.YEAR ? v.NW.formatToPlainString(v.t.rtLTJC, {
         percent: k

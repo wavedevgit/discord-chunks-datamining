@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => P
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -98,9 +98,9 @@ let P = e => {
     intent: k
   } = e, j = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
     analyticsLocations: U
-  } = (0, d.ZP)(), G = (0, u.bp)() === y.IlC.POPOUT, [B, F] = i.useState(!1), V = (0, s.e7)([h.default], () => h.default.getCurrentUser()), {
+  } = (0, d.ZP)(), G = (0, u.bp)() === y.IlC.POPOUT, [B, V] = i.useState(!1), F = (0, s.e7)([h.default], () => h.default.getCurrentUser()), {
     fractionalState: Z
-  } = (0, f.Z)(), H = (0, p.y)("guild_boosting_subscribe_button", V, Z);
+  } = (0, f.Z)(), H = (0, p.y)("guild_boosting_subscribe_button", F, Z);
   m.Z.hasFetched || (0, c.X8)();
   let W = (0, E.vx)(m.Z.boostSlots),
     Y = null != N ? Math.max((0, E.KK)(o, N), 1) : 1,
@@ -108,7 +108,7 @@ let P = e => {
       isBoostManagementDisabledForFractionalPremium: H
     }),
     z = async () => {
-      F(!0), await (0, b.u)({
+      V(!0), await (0, b.u)({
         analyticsLocations: U,
         analyticsLocation: t,
         analyticsSourceLocation: n,
@@ -120,7 +120,7 @@ let P = e => {
         applicationId: D,
         handleSubscribeModalClose: L,
         intent: k
-      }), F(!1)
+      }), V(!1)
     }, q = g.ZP.getPremiumTypeSubscription(), Q = (0, r.jsxs)("div", {
       className: I.button,
       children: [M, null != S ? S : O.NW.string(O.t.gKmQ1N)]

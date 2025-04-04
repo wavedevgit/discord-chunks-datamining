@@ -1,6 +1,6 @@
 /**
   Module ID: 78431
-  Original File Name: 3912ea0d0c9585eb
+  Original File Name: 2aff84c54e3e0ae2
 **/
 .cardContainer__8833c {
     display: grid;
@@ -369,11 +369,8 @@
 }
 
 .content__49668 {
+    padding: 32px;
     overflow: scroll!important
-}
-
-.content__49668 {
-    padding: 32px
 }
 
 .contentContainer__49668 {
@@ -423,4 +420,4 @@
     }
 }
 
-/*# sourceMappingURL=3912ea0d0c9585eb.css.map*/
+/*# sourceMappingURL=2aff84c54e3e0ae2.css.map*/

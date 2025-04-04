@@ -1,6 +1,6 @@
 /**
   Module ID: 78604
-  Original File Name: 302456db2ec70c35
+  Original File Name: 99e0cfaa956050c7
 **/
 .row__19fd1 {
     align-items: center;
@@ -383,11 +383,7 @@
     object-fit: contain
 }
 
-.selected__0f2e8 {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__0f2e8:hover {
+.selected__0f2e8,.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -590,11 +586,8 @@ img.thumbnail__0f2e8 {
 }
 
 .paypalVerifiedTag_fffe42 {
+    background-color: var(--status-positive-background);
     color: var(--white-500)!important
-}
-
-.paypalVerifiedTag_fffe42 {
-    background-color: var(--status-positive-background)
 }
 
 .left_caab99 {
@@ -909,4 +902,4 @@ img.thumbnail__0f2e8 {
     gap: 4px
 }
 
-/*# sourceMappingURL=302456db2ec70c35.css.map*/
+/*# sourceMappingURL=99e0cfaa956050c7.css.map*/

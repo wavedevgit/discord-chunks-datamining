@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => X
-}), n(47120), n(566702), n(301563), n(653041);
+}), n(388685), n(781311), n(35282), n(539854);
 var r, i = n(956067),
   o = n(442837),
   a = n(570140),
@@ -174,7 +174,7 @@ function B(e) {
   d.Z.isLurking(t.id) || (G(t), 1 === v && null == t.stickers && null != t.stickerUpdates && (v = 0))
 }
 
-function F(e) {
+function V(e) {
   var t;
   let {
     guild: n
@@ -183,7 +183,7 @@ function F(e) {
     null != S && S.delete(e.id), I.delete(e.id)
   }), C.delete(n.id), C = new Map(C)
 }
-let V = () => {
+let F = () => {
     v = 0, T = [], I.clear(), O.clear(), S = null, C.clear(), C = new Map(C), A = !1, N = null
   },
   Z = () => {
@@ -289,8 +289,8 @@ let X = new Q(a.Z, {
   BACKGROUND_SYNC: U,
   CONNECTION_OPEN: j,
   GUILD_CREATE: B,
-  GUILD_DELETE: F,
-  LOGOUT: V,
+  GUILD_DELETE: V,
+  LOGOUT: F,
   STICKER_PACKS_FETCH_START: Z,
   STICKER_PACKS_FETCH_SUCCESS: H,
   STICKER_PACK_FETCH_SUCCESS: W,

@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(381538);
 
@@ -62,10 +62,10 @@ t.exports = function(t) {
         key: w,
         offsetKey: a.encode(w, 0, 0)
       });
-      var E = S.getNextSiblingKey();
-      S = E ? d.getBlockForKey(E) : null
+      var C = S.getNextSiblingKey();
+      S = C ? d.getBlockForKey(C) : null
     }
-    for (var C = [], D = 0; D < b.length;) {
+    for (var E = [], D = 0; D < b.length;) {
       var O = b[D];
       if (O.wrapperTemplate) {
         var K = [];
@@ -74,11 +74,11 @@ t.exports = function(t) {
           key: O.key + "-wrap",
           "data-offset-key": O.offsetKey
         }, K);
-        C.push(T)
-      } else C.push(O.block), D++
+        E.push(T)
+      } else E.push(O.block), D++
     }
     return u.createElement("div", {
       "data-contents": "true"
-    }, C)
+    }, E)
   }, e
 }(u.Component)

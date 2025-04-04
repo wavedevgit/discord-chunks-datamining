@@ -1,6 +1,6 @@
 /**
   Module ID: 86328
-  Original File Name: 70be390d5c440b74
+  Original File Name: ce3c9fc31013119b
 **/
 .ephemeral__5126c {
     position: relative;
@@ -91,27 +91,12 @@
 }
 
 .visual-refresh .message__5126c {
+    border-top-right-radius: var(--radius-xs);
+    border-bottom-right-radius: var(--radius-xs);
     padding-right: var(--space-xl)!important
 }
 
-.visual-refresh .message__5126c {
-    border-top-right-radius: var(--radius-xs);
-    border-bottom-right-radius: var(--radius-xs)
-}
-
-.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover {
-    background: var(--background-message-hover)
-}
-
-.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c {
-    background: var(--background-message-hover)
-}
-
-.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover {
-    background: var(--background-message-hover)
-}
-
-.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
+.theme-dark .message__5126c.selected__5126c,.theme-dark.mouse-mode.full-motion .message__5126c:hover,.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-dark.visual-refresh .message__5126c.selected__5126c,.theme-light .message__5126c.selected__5126c,.theme-light.mouse-mode.full-motion .message__5126c:hover,.theme-light.mouse-mode.full-motion.visual-refresh .message__5126c:hover,.theme-light.visual-refresh .message__5126c.selected__5126c {
     background: var(--background-message-hover)
 }
 
@@ -429,8 +414,6 @@
 
 .compact_c19a55 .repliedMessage_c19a55 {
     --text-indent: calc(var(--custom-message-margin-compact-indent)*-1 - -1rem);
-    margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + (var(--custom-message-margin-compact-indent)*-1 - -1rem));
-    margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + calc(var(--custom-message-margin-compact-indent)*-1 - -1rem));
     margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + var(--text-indent));
     padding-left: var(--custom-message-reply-indent)
 }
@@ -645,10 +628,7 @@
 }
 
 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 {
-    display: -webkit-inline-box!important
-}
-
-.repliedTextPreview_c19a55 .repliedTextContent_c19a55 {
+    display: -webkit-inline-box!important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     word-break: break-all;
@@ -857,11 +837,7 @@
     filter: drop-shadow(var(--elevation-medium))
 }
 
-.avatar_c19a55.clickable_c19a55:active {
-    transform: translateY(1px)
-}
-
-.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
+.avatar_c19a55.clickable_c19a55:active,.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
     transform: translateY(1px)
 }
 
@@ -953,10 +929,7 @@
 }
 
 .timestampTooltip_c19a55 {
-    max-width: none!important
-}
-
-.timestampTooltip_c19a55 {
+    max-width: none!important;
     white-space: nowrap
 }
 
@@ -965,18 +938,11 @@
 }
 
 .nitroAuthorBadgeTootip_c19a55 {
-    max-width: 30vw!important
-}
-
-.nitroAuthorBadgeTootip_c19a55 {
+    max-width: 30vw!important;
     white-space: nowrap
 }
 
-.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
-    opacity: 1
-}
-
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 
@@ -1620,23 +1586,23 @@
     content: "";
     border-radius: var(--radius-sm);
     box-shadow: 0 0 1px 1px var(--black) inset;
-    position: absolute;
     pointer-events: none;
-    top: 0;
     left: 0;
-    width: 100%;
+    width: 100%
+}
+
+.heroContainer__813d8:after,.heroSplash__813d8 {
+    position: absolute;
+    top: 0;
     height: 100%
 }
 
 .heroSplash__813d8 {
-    height: 100%;
     width: 220px;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: top;
     object-position: top;
-    position: absolute;
-    top: 0;
     right: 0;
     border-top-right-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm);
@@ -2110,11 +2076,7 @@
     padding-bottom: 20px
 }
 
-.container__1689b p>img {
-    border-radius: 5px
-}
-
-.image__1689b {
+.container__1689b p>img,.image__1689b {
     border-radius: 5px
 }
 
@@ -2230,4 +2192,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=70be390d5c440b74.css.map*/
+/*# sourceMappingURL=ce3c9fc31013119b.css.map*/

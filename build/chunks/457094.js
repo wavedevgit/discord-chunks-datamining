@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.r(t), n.d(t, {
   default: () => to
-}), n(301563), n(47120);
+}), n(35282), n(388685);
 var r = n(200651),
   i = n(192379),
   l = n(593473),
@@ -109,10 +109,10 @@ var r = n(200651),
   e$ = n(346329),
   e0 = n(981631),
   e1 = n(176505),
-  e2 = n(701476),
-  e3 = n(186901);
+  e3 = n(701476),
+  e2 = n(186901);
 
-function e4(e, t, n) {
+function e5(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -121,20 +121,20 @@ function e4(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e5(e) {
+function e8(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e4(e, t, n[t])
+      e5(e, t, n[t])
     })
   }
   return e
 }
 n(117240), n(801077), n(967368), n(272053), n(974180), n(574254), n(551428), n(55563), n(882029), n(959457), n(653255), n(663389), n(25990), n(778825), n(999382), n(388610), n(533947), n(277053), n(371398), n(141233), n(471073);
-let e7 = !1;
+let e4 = !1;
 (0, C.D)(), o.ZP.initialize(), eO.Z.loadServer(), eX.isPlatformEmbedded && (eJ.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eV.Z.getLayers().includes(e0.S9g.USER_SETTINGS) || f.Z.open(null != t ? t : e0.oAB.ACCOUNT)
 }), eJ.ZP.on("LAUNCH_APPLICATION", (e, t) => {
@@ -156,7 +156,7 @@ let e6 = (0, m.l)(e => {
       openWithoutBackstack: !1,
       impressionSource: n.source
     })), (0, r.jsxs)(g.Z, {
-      deepLinkType: e3.jE.USER_SETTINGS,
+      deepLinkType: e2.jE.USER_SETTINGS,
       path: t.pathname,
       paramsBuilder: function(e, t) {
         let [, , n, r] = e.split("/");
@@ -207,7 +207,7 @@ let e6 = (0, m.l)(e => {
       return null
     }
   }),
-  e8 = (0, m.l)((0, T.e)(j.Z, null, {
+  e7 = (0, m.l)((0, T.e)(j.Z, null, {
     passProps: !1
   })),
   te = (0, T.e)(K.default, null, {
@@ -351,7 +351,7 @@ let tr = [{
         } = await Promise.all([n.e("5863"), n.e("95626")]).then(n.bind(n, 751212));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e5({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e8({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -391,7 +391,7 @@ let tr = [{
       guildId: n,
       channelId: i
     } = t.params;
-    (0, ea.c)(e2.M5.MARKETING_UNCLAIMED);
+    (0, ea.c)(e3.M5.MARKETING_UNCLAIMED);
     let l = e0.Z5c.CHANNEL(n, i);
     return (0, r.jsx)(a.l_, {
       to: l
@@ -440,7 +440,7 @@ let tr = [{
   path: [e0.Z5c.CHANNEL_THREAD_VIEW(e_.Hw.guildId(), e_.Hw.channelId(), ":threadId", ":messageId?"), e0.Z5c.CHANNEL(e_.Hw.guildId(), e_.Hw.channelId({
     optional: !0
   }), ":messageId?"), e0.Z5c.ACTIVITY, e0.Z5c.ACTIVITIES, e0.Z5c.ACTIVITIES_HAPPENING_NOW, e0.Z5c.ACTIVITY_DETAILS(":applicationId"), e0.Z5c.APPLICATION_LIBRARY, e0.Z5c.APPLICATION_STORE, e0.Z5c.MESSAGE_REQUESTS, e0.Z5c.COLLECTIBLES_SHOP, e0.Z5c.COLLECTIBLES_SHOP_FULLSCREEN, e0.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), e0.Z5c.GUILD_DISCOVERY, e0.Z5c.QUEST_HOME, e0.Z5c.GLOBAL_DISCOVERY, e0.Z5c.GUILD_MEMBER_VERIFICATION(e_.Hw.guildId()), e0.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(e_.Hw.guildId(), ":inviteCode?"), e0.Z5c.GUILD_BOOSTING_MARKETING(e_.Hw.guildId()), e0.Z5c.FEATURE(":feature"), e0.Z5c.FAMILY_CENTER],
-  render: e8,
+  render: e7,
   isSessionRequired: !0,
   isChatRoute: !0
 }, {
@@ -484,7 +484,7 @@ class ta extends i.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 650233));
-        return t => (0, r.jsx)(e, e5({}, t))
+        return t => (0, r.jsx)(e, e8({}, t))
       })
     }), M.Z.init(), er.Z.initialize(), em.Z.initialize(), eh.Z.initialize(), D.Z.initialize(), A.Z.initialize(), Z.Z.initialize(), v.Z.initialize(), this.rewriterUnlisten = eb.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = eb.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -526,8 +526,8 @@ class ta extends i.PureComponent {
       if (c && g && d.Z.selectGuild(r), c && u) {
         let n = eH.Z.getChannelId(f),
           a = n !== i;
-        if (!e7 || g || a || null != o) {
-          e7 = !0, p.default.selectChannel({
+        if (!e4 || g || a || null != o) {
+          e4 = !0, p.default.selectChannel({
             guildId: r,
             channelId: i,
             messageId: o
@@ -628,7 +628,7 @@ class ta extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e4(this, "historyUnlisten", () => {}), e4(this, "rewriterUnlisten", () => {})
+    super(...e), e5(this, "historyUnlisten", () => {}), e5(this, "rewriterUnlisten", () => {})
   }
 }
 let to = ta

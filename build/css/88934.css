@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: e5ee62eba2292cb8
+  Original File Name: bcdbeaa130cf9632
 **/
 @value headerBarHeight 60px;
 
@@ -15,13 +15,12 @@
     box-sizing: border-box
 }
 
-.overlay__8a7fc {
+.overlay__8a7fc,.overlay__8a7fc:after {
     position: absolute
 }
 
 .overlay__8a7fc:after {
     content: "";
-    position: absolute;
     background-color: var(--border-subtle);
     z-index: 0;
     width: 100%;
@@ -145,18 +144,12 @@
 }
 
 .more__26669 {
+    display: flex;
     cursor: pointer!important
 }
 
-.more__26669 {
-    display: flex
-}
-
 .selected__26669 {
-    border-bottom: 2px solid var(--icon-primary)!important
-}
-
-.selected__26669 {
+    border-bottom: 2px solid var(--icon-primary)!important;
     margin-bottom: -2px
 }
 
@@ -288,11 +281,8 @@
 }
 
 .more__65d41 {
-    cursor: pointer!important
-}
-
-.more__65d41 {
     display: flex;
+    cursor: pointer!important;
     gap: 4px
 }
 
@@ -1173,11 +1163,7 @@
     cursor: pointer
 }
 
-.arrowHitbox__00dfb:hover .arrow__00dfb {
-    opacity: 1
-}
-
-.arrowHitbox__00dfb:active .arrow__00dfb {
+.arrowHitbox__00dfb:active .arrow__00dfb,.arrowHitbox__00dfb:hover .arrow__00dfb {
     opacity: 1
 }
 
@@ -1295,11 +1281,7 @@
     height: 100%!important
 }
 
-.sizedToParent__03498 {
-    border-radius: 0
-}
-
-.sizedToParent__03498>video {
+.sizedToParent__03498,.sizedToParent__03498>video {
     border-radius: 0
 }
 
@@ -1761,12 +1743,9 @@
 }
 
 .detailedDescription_c4b47c {
+    font-size: 16px;
     color: var(--text-normal)!important;
     line-height: 20px!important
-}
-
-.detailedDescription_c4b47c {
-    font-size: 16px
 }
 
 .detailedDescription_c4b47c div {
@@ -2121,7 +2100,6 @@
 
 .background__14403 {
     --custom-overlay-color: hsl(var(--primary-730-hsl)/0.8);
-    background-image: linear-gradient(hsl(var(--primary-730-hsl)/0.8),hsl(var(--primary-730-hsl)/0.8)),var(--custom-background-url);
     background-image: linear-gradient(var(--custom-overlay-color),var(--custom-overlay-color)),var(--custom-background-url);
     position: absolute;
     height: 120%;
@@ -2628,4 +2606,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=e5ee62eba2292cb8.css.map*/
+/*# sourceMappingURL=bcdbeaa130cf9632.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 51868
-  Original File Name: 12c25e13f11f5e5e
+  Original File Name: 8148737fbe33ee94
 **/
 .title_feb59c {
     margin-bottom: 8px
@@ -55,6 +55,7 @@ h1.title_feb59c,h2.title_feb59c {
     padding: .5em;
     border-radius: 4px;
     -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     text-size-adjust: none;
     color: var(--text-normal);
     background: var(--background-secondary)
@@ -188,6 +189,7 @@ h1.title_feb59c,h2.title_feb59c {
     padding: .5em;
     border-radius: 4px;
     -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
     text-size-adjust: none;
     color: var(--text-normal)
 }
@@ -388,4 +390,4 @@ h1.title_feb59c,h2.title_feb59c {
     padding-bottom: 30px
 }
 
-/*# sourceMappingURL=12c25e13f11f5e5e.css.map*/
+/*# sourceMappingURL=8148737fbe33ee94.css.map*/

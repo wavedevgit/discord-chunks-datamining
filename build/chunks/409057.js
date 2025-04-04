@@ -85,8 +85,8 @@ function B(e) {
     application: k,
     voiceGuild: U,
     voiceChannel: B,
-    className: F,
-    onClose: V,
+    className: V,
+    onClose: F,
     appContext: Z
   } = e, {
     analyticsLocations: H
@@ -116,7 +116,7 @@ function B(e) {
     activity: i,
     application: k,
     entry: K,
-    onClose: V
+    onClose: F
   }), ee = () => {
     let e = (0, s.Z)(i) ? "crunchyroll" : "default";
     return null == $ ? (0, r.jsx)(p.E, {
@@ -163,7 +163,7 @@ function B(e) {
     onClick: () => {
       (0, m.X)(U.id), z({
         action: "OPEN_VOICE_GUILD"
-      }), null == V || V()
+      }), null == F || F()
     }
   }) : (0, c.Z)(i) ? (0, r.jsx)(N.Z, {
     variant: "text-xs/normal",
@@ -234,30 +234,30 @@ function B(e) {
     guild: U,
     channel: B,
     onAction: z,
-    onClose: V
+    onClose: F
   }), el = () => t.id === n.id ? null : (0, r.jsx)("div", {
     className: o()(M.actions, Y),
     children: (0, r.jsx)(O.Z, {
       activity: i,
       user: t,
       onAction: z,
-      onClose: V
+      onClose: F
     })
   });
   return (0, r.jsx)(f.Gt, {
     value: H,
     children: (0, r.jsxs)(S.Z, {
       ref: q,
-      className: o()(M.card, F),
+      className: o()(M.card, V),
       onAction: z,
-      onClose: V,
+      onClose: F,
       children: [(0, r.jsx)(T.Z, G(j({}, Q), {
         contextMenu: (0, r.jsx)(R.Z, {
           display: "live",
           user: t,
           activity: i,
           entry: K,
-          onClose: V,
+          onClose: F,
           appContext: Z
         })
       })), (0, r.jsxs)("div", {

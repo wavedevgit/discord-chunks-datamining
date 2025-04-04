@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(381538);
 
@@ -156,8 +156,8 @@ t.exports = function(t) {
       y = r.customStyleFn,
       v = r.customStyleMap,
       k = r.direction,
-      E = r.forceSelection,
-      C = r.selection,
+      C = r.forceSelection,
+      E = r.selection,
       D = r.tree,
       O = null;
     n.children.size && (O = n.children.reduce(function(r, n) {
@@ -168,14 +168,14 @@ t.exports = function(t) {
         v = S(u, a),
         m = v.Element,
         k = v.wrapperTemplate,
-        E = x(u, d, i, f, h, null),
-        C = o({}, t.props, {
+        C = x(u, d, i, f, h, null),
+        E = o({}, t.props, {
           tree: g.getBlockTree(n),
           blockProps: h.customProps,
           offsetKey: i,
           block: u
         });
-      return r.push(c.createElement(m, E, c.createElement(y, C))), !k || _(u, p) || b(k, m, r), r
+      return r.push(c.createElement(m, C, c.createElement(y, E))), !k || _(u, p) || b(k, m, r), r
     }, []));
     var K = n.getKey(),
       T = s.encode(K, 0, 0),
@@ -194,9 +194,9 @@ t.exports = function(t) {
         customStyleMap: v,
         decorator: h,
         direction: k,
-        forceSelection: E,
-        hasSelection: m(C, K),
-        selection: C,
+        forceSelection: C,
+        hasSelection: m(E, K),
+        selection: E,
         tree: D
       });
     if (n.getParentKey()) return I;

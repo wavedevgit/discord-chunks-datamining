@@ -3,7 +3,7 @@
 let r;
 n.d(t, {
   Z: () => q
-}), n(47120);
+}), n(388685);
 var i, o = n(392711),
   a = n.n(o),
   s = n(442837),
@@ -159,7 +159,7 @@ function B(e) {
   return C(t, n, r)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     channelId: n
@@ -167,7 +167,7 @@ function F(e) {
   return A(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n
@@ -247,8 +247,8 @@ let q = new z(l.Z, {
   CONNECTION_CLOSED: P,
   IDLE: w,
   LOGOUT: D,
-  VOICE_CHANNEL_SELECT: V,
-  CHANNEL_SELECT: V,
+  VOICE_CHANNEL_SELECT: F,
+  CHANNEL_SELECT: F,
   GUILD_CREATE: L,
   GUILD_DELETE: x,
   GUILD_SUBSCRIPTIONS_MEMBERS_ADD: M,
@@ -257,7 +257,7 @@ let q = new z(l.Z, {
   GUILD_SUBSCRIPTIONS_REMOVE_MEMBER_UPDATES: U,
   GUILD_SUBSCRIPTIONS_CHANNEL: B,
   GUILD_SUBSCRIPTIONS: G,
-  CHANNEL_PRELOAD: F,
+  CHANNEL_PRELOAD: V,
   INBOX_OPEN: K,
   THREAD_UPDATE: H,
   THREAD_DELETE: W,

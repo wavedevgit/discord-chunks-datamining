@@ -1,6 +1,6 @@
 /**
   Module ID: 50331
-  Original File Name: 8018af26c5e8b31f
+  Original File Name: 4a5649c3e987ed7d
 **/
 .mainChannelContainer__3e027 {
     display: flex;
@@ -38,10 +38,7 @@
 
 .channelSelect__3e027 {
     background-color: var(--background-secondary-alt)!important;
-    border: 1px solid var(--background-modifier-accent)!important
-}
-
-.channelSelect__3e027 {
+    border: 1px solid var(--background-modifier-accent)!important;
     transition: background-color .1s, border-color .1s
 }
 
@@ -50,4 +47,4 @@
     background-color: var(--background-secondary)!important
 }
 
-/*# sourceMappingURL=8018af26c5e8b31f.css.map*/
+/*# sourceMappingURL=4a5649c3e987ed7d.css.map*/

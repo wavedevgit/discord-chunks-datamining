@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => R
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(442837),
@@ -71,10 +71,10 @@ function R(e) {
     channelId: R,
     messageId: P,
     roleId: w
-  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), F = i.useRef(null), V = (0, s.Z)(F);
+  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
   i.useEffect(() => {
-    null == L || L(null == F ? void 0 : F.current)
-  }, [F, L]);
+    null == L || L(null == V ? void 0 : V.current)
+  }, [V, L]);
   let Z = e => {
       null == D || D(), (0, v.openUserProfileModal)(C({
         sourceAnalyticsLocations: k
@@ -96,7 +96,7 @@ function R(e) {
       value: j,
       shouldTrackViewOnMount: null == B || null != B.fullProfileLoadedTimestamp,
       children: (0, r.jsx)(a.VqE, {
-        ref: F,
+        ref: V,
         "aria-label": t.username,
         children: (0, r.jsxs)(g.Z, {
           user: t,
@@ -135,7 +135,7 @@ function R(e) {
             currentUser: n,
             displayProfile: U,
             guild: G,
-            isHovering: V,
+            isHovering: F,
             onOpenProfile: x ? void 0 : Z,
             channelId: R,
             onClose: D

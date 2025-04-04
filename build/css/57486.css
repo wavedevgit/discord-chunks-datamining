@@ -1,12 +1,9 @@
 /**
   Module ID: 57486
-  Original File Name: e6163247952a452d
+  Original File Name: f04fe216e5933178
 **/
 .noScroll_afb566 {
-    overflow-y: visible!important
-}
-
-.noScroll_afb566 {
+    overflow-y: visible!important;
     padding: 0
 }
 
@@ -42,16 +39,11 @@
     flex-basis: 192px;
     flex-shrink: 0;
     border-radius: 4px 0 0 4px;
-    background: linear-gradient(180deg,hsl(254 calc(1*92%) 53%) 6.65%,hsl(246 calc(1*82%) 62%) 69.44%,hsl(239 calc(1*77%) 66%) 106.24%);
+    background: linear-gradient(180deg,hsl(254,calc(1*92%),53%) 6.65%,hsl(246,calc(1*82%),62%) 69.44%,hsl(239,calc(1*77%),66%) 106.24%);
+    background: linear-gradient(180deg,hsl(254,calc(var(--saturation-factor, 1)*92%),53%) 6.65%,hsl(246,calc(var(--saturation-factor, 1)*82%),62%) 69.44%,hsl(239,calc(var(--saturation-factor, 1)*77%),66%) 106.24%);
     padding: 24px;
     overflow: hidden;
     margin: -1px 1px 0 -1px
-}
-
-@supports (color: hsl(0 0% 0% / 0)) and (top: var(--f)) {
-    .overviewSidebar_afb566 {
-        background: linear-gradient(180deg,hsl(254 calc(var(--saturation-factor, 1)*92%) 53%) 6.65%,hsl(246 calc(var(--saturation-factor, 1)*82%) 62%) 69.44%,hsl(239 calc(var(--saturation-factor, 1)*77%) 66%) 106.24%)
-    }
 }
 
 .header_afb566 {
@@ -258,4 +250,4 @@
     margin-left: 16px
 }
 
-/*# sourceMappingURL=e6163247952a452d.css.map*/
+/*# sourceMappingURL=f04fe216e5933178.css.map*/

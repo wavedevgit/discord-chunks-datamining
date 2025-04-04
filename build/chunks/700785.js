@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  BT: () => V,
+  BT: () => F,
   Hn: () => O,
   Hu: () => B,
   I0: () => L,
@@ -14,9 +14,9 @@ n.d(t, {
   oz: () => H,
   r6: () => U,
   uB: () => x,
-  we: () => F,
+  we: () => V,
   ym: () => R
-}), n(47120);
+}), n(388685);
 var r = n(392711),
   i = n.n(r),
   o = n(149765),
@@ -228,7 +228,7 @@ function k(e, t) {
   if (null == t || null == n || n !== t.guild_id) return !1;
   let r = v({}, e.permissionOverwrites),
     i = v({}, t.permissionOverwrites);
-  return null == r[n] && (r[n] = F(n)), null == i[n] && (i[n] = F(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
+  return null == r[n] && (r[n] = V(n)), null == i[n] && (i[n] = V(n)), Object.keys(r).length === Object.keys(i).length && !Object.keys(r).some(e => {
     let t = r[e],
       n = i[e];
     return !(null != n && o.fS(n.deny, t.deny) && o.fS(n.allow, t.allow))
@@ -256,7 +256,7 @@ function B(e, t) {
   return null == t.hoistRoleId ? null : m.Z.getRole(e.id, t.hoistRoleId)
 }
 
-function F(e) {
+function V(e) {
   return {
     id: e,
     type: a.BN.ROLE,
@@ -265,7 +265,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     permission: t,
     user: n,

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   w: () => v
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -62,8 +62,8 @@ function v(e) {
   }), U = (0, u.Z)(A, __OVERLAY__ || N), G = 0;
   1 !== w && (G = (0, l.OdO)(G, l.bgu.REDUCE_SATURATION_ENABLED));
   let B = (0, b.A)(),
-    F = (0, d.M)("RootThemeContextProvider"),
-    V = (0, d.C)("RootThemeContextProvider");
+    V = (0, d.M)("RootThemeContextProvider"),
+    F = (0, d.C)("RootThemeContextProvider");
   return (0, r.jsx)(l.wMY, {
     theme: T,
     flags: G,
@@ -89,8 +89,8 @@ function v(e) {
       hardwareAccelerationEnabled: I,
       rootClassName: a()({
         "confetti-mode": j,
-        "refresh-fast-follow-avatars": F,
-        "refresh-fast-follow-guild-bg": V
+        "refresh-fast-follow-avatars": V,
+        "refresh-fast-follow-guild-bg": F
       }),
       children: n
     })

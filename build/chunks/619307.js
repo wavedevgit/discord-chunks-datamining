@@ -7,7 +7,7 @@ n.d(t, {
   gz: () => C,
   q4: () => k,
   s6: () => R
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -182,8 +182,8 @@ function L(e) {
     serialize: U,
     clear: G,
     hideIcon: B = !1,
-    "aria-label": F,
-    "aria-labelledby": V
+    "aria-label": V,
+    "aria-labelledby": F
   } = e, [Z, H] = i.useState(!1), {
     ref: W,
     width: Y,
@@ -280,8 +280,8 @@ function L(e) {
         }),
         "aria-haspopup": "listbox",
         "aria-expanded": d,
-        "aria-label": F,
-        "aria-labelledby": V,
+        "aria-label": V,
+        "aria-labelledby": F,
         children: [$.length > 0 ? (0, r.jsx)(_.Text, {
           className: b.value,
           variant: "text-md/medium",

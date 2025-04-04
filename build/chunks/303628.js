@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => M
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -149,7 +149,7 @@ function L(e) {
       }), j(i)
     }
   }, [t, M.length, n]);
-  let F = (0, m.Q3)("ChannelAttachmentArea");
+  let V = (0, m.Q3)("ChannelAttachmentArea");
   return !w && 0 === C.length || w && 0 === M.length ? null : (0, r.jsxs)(i.Fragment, {
     children: [(0, r.jsx)(s.bG, {
       navigator: N,
@@ -176,7 +176,7 @@ function L(e) {
           }))
         }
       })
-    }), n.drafts.type === E.d.FirstThreadMessage || F ? null : (0, r.jsx)(g.Z, {})]
+    }), n.drafts.type === E.d.FirstThreadMessage || V ? null : (0, r.jsx)(g.Z, {})]
   })
 }
 

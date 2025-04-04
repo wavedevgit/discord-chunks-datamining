@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => $
-}), n(47120);
+}), n(388685);
 var r, i = n(392711),
   o = n.n(i),
   a = n(149765),
@@ -143,11 +143,11 @@ function B(e) {
   return !!n && (R += 1, n)
 }
 
-function F() {
+function V() {
   return !0
 }
 
-function V(e) {
+function F(e) {
   var t;
   return (null == (t = O.default.getCurrentUser()) ? void 0 : t.id) === e.userId && (L(e.guildId), !0)
 }
@@ -335,16 +335,16 @@ let $ = new X(l.Z, {
   GUILD_MEMBER_UPDATE: U,
   CURRENT_USER_UPDATE: U,
   CHANNEL_CREATE: G,
-  THREAD_CREATE: F,
-  THREAD_UPDATE: F,
-  THREAD_LIST_SYNC: F,
-  LOAD_THREADS_SUCCESS: F,
-  LOAD_ARCHIVED_THREADS_SUCCESS: F,
+  THREAD_CREATE: V,
+  THREAD_UPDATE: V,
+  THREAD_LIST_SYNC: V,
+  LOAD_THREADS_SUCCESS: V,
+  LOAD_ARCHIVED_THREADS_SUCCESS: V,
   CHANNEL_UPDATES: B,
   LOAD_MESSAGES_SUCCESS: H,
   SEARCH_FINISH: W,
   MOD_VIEW_SEARCH_FINISH: W,
-  THREAD_MEMBER_UPDATE: V,
+  THREAD_MEMBER_UPDATE: F,
   THREAD_MEMBERS_UPDATE: Z,
   CHANNEL_DELETE: Y,
   GUILD_ROLE_CREATE: K,

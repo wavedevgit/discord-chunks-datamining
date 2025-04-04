@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => ej
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r, i = n(512722),
   o = n.n(i),
   a = n(392711),
@@ -75,8 +75,8 @@ let D = new d.Z("ChannelRTCStore"),
   U = {},
   G = {},
   B = {},
-  F = {},
   V = {},
+  F = {},
   Z = {},
   H = {},
   W = {};
@@ -198,7 +198,7 @@ function ea(e) {
     channelId: t,
     currentVoiceChannelId: n
   } = e;
-  return null != t ? delete j[t] : null != n && (delete V[n], delete H[n], $(n)), eo()
+  return null != t ? delete j[t] : null != n && (delete F[n], delete H[n], $(n)), eo()
 }
 
 function es(e) {
@@ -206,7 +206,7 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = eo(), i = E.Z.getChannel(t);
-  return null == t || null == n || (null == i ? void 0 : i.type) !== A.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== A.d4z.GUILD_STAGE_VOICE || V[t] ? r : (Z[t] = !1, V[t] = !0, !0)
+  return null == t || null == n || (null == i ? void 0 : i.type) !== A.d4z.GUILD_VOICE && (null == i ? void 0 : i.type) !== A.d4z.GUILD_STAGE_VOICE || F[t] ? r : (Z[t] = !1, F[t] = !0, !0)
 }
 
 function el(e) {
@@ -289,7 +289,7 @@ function eg(e) {
     channelId: t,
     voiceParticipantsHidden: n
   } = e;
-  F[t] = n
+  V[t] = n
 }
 
 function eE(e) {
@@ -325,7 +325,7 @@ function ev(e) {
     channelId: t,
     chatOpen: n
   } = e;
-  V[t] = n, n && (Z[t] = !1)
+  F[t] = n, n && (Z[t] = !1)
 }
 
 function eO(e) {
@@ -333,7 +333,7 @@ function eO(e) {
     channelId: t,
     participantsListOpen: n
   } = e;
-  Z[t] = n, n && (V[t] = !1)
+  Z[t] = n, n && (F[t] = !1)
 }
 
 function eI(e) {
@@ -380,7 +380,7 @@ function eT(e) {
       id: t
     }
   } = e;
-  return delete V[t], delete Z[t], delete H[t], ei(t)
+  return delete F[t], delete Z[t], delete H[t], ei(t)
 }
 
 function eN(e) {
@@ -481,11 +481,11 @@ function eM(e) {
 }
 class ek extends(r = l.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, v.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(F, null == e ? void 0 : e.voiceParticipantsHidden)
+    this.waitFor(h.Z, m.default, g.Z, E.Z, u.ZP, b.Z, y.Z, v.Z, O.default, I.Z, S.Z), this.syncWith([u.ZP], ec), this.syncWith([b.Z], eu), this.syncWith([f.Z], eo), (null == e ? void 0 : e.voiceParticipantsHidden) !== void 0 && Object.assign(V, null == e ? void 0 : e.voiceParticipantsHidden)
   }
   getState() {
     return {
-      voiceParticipantsHidden: F
+      voiceParticipantsHidden: V
     }
   }
   getParticipantsVersion(e) {
@@ -500,7 +500,7 @@ class ek extends(r = l.ZP.PersistedStore) {
     return null != (t = Y(e).toArray(T.sI.SPEAKING)) ? t : L
   }
   getFilteredParticipants(e) {
-    return F[e] ? Y(e).toArray(T.sI.FILTERED) : Y(e).toArray()
+    return V[e] ? Y(e).toArray(T.sI.FILTERED) : Y(e).toArray()
   }
   getVideoParticipants(e) {
     var t;
@@ -527,7 +527,7 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getVoiceParticipantsHidden(e) {
     var t;
-    return null != (t = F[e]) && t
+    return null != (t = V[e]) && t
   }
   getSelectedParticipantId(e) {
     let [t, n] = X(e);
@@ -561,10 +561,10 @@ class ek extends(r = l.ZP.PersistedStore) {
   }
   getChatOpen(e) {
     var t;
-    return null != (t = V[e]) && t
+    return null != (t = F[e]) && t
   }
   getAllChatOpen() {
-    return V
+    return F
   }
   getParticipantsListOpen(e) {
     var t;

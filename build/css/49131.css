@@ -1,6 +1,6 @@
 /**
   Module ID: 49131
-  Original File Name: ec42c2809239033f
+  Original File Name: 77ba772812816746
 **/
 .container_c6ad88 {
     background-color: var(--background-primary);
@@ -336,11 +336,10 @@
 }
 
 .cta__93db4 {
-    margin-top: 16px;
-    color: var(--text-brand)
+    margin-top: 16px
 }
 
-.cta__93db4:hover {
+.cta__93db4,.cta__93db4:hover {
     color: var(--text-brand)
 }
 
@@ -788,10 +787,7 @@
 }
 
 .sort_f369db {
-    background: transparent!important
-}
-
-.sort_f369db {
+    background: transparent!important;
     border: none;
     font-size: 14px;
     font-weight: 500;
@@ -810,11 +806,8 @@
 }
 
 .sortPopout_f369db {
+    border-radius: var(--radius-xs);
     width: auto!important
-}
-
-.sortPopout_f369db {
-    border-radius: var(--radius-xs)
 }
 
 .sortPopout_f369db svg {
@@ -1009,10 +1002,7 @@
 }
 
 .sortDropdownInner_f369db {
-    display: flex!important
-}
-
-.sortDropdownInner_f369db {
+    display: flex!important;
     align-items: center;
     color: var(--interactive-normal)
 }
@@ -1679,10 +1669,6 @@
 }
 
 .form_d9be46 .mediaButton_d9be46 {
-    background-color: var(--background-secondary-alt)!important
-}
-
-.form_d9be46 .mediaButton_d9be46 {
     border-color: var(--background-secondary-alt);
     border-radius: 50%;
     flex-shrink: 0;
@@ -1691,7 +1677,8 @@
     min-width: 0;
     padding: 0;
     width: 36px;
-    width: var(--custom-forum-post-form-control-size)
+    width: var(--custom-forum-post-form-control-size);
+    background-color: var(--background-secondary-alt)!important
 }
 
 .form_d9be46 .mediaButton_d9be46,.form_d9be46 .mediaButton_d9be46>div {
@@ -1747,12 +1734,9 @@
 }
 
 .tagsContainer_d9be46 .tagsButton_d9be46 .tagsButtonInner_d9be46 {
-    background: none!important
-}
-
-.tagsContainer_d9be46 .tagsButton_d9be46 .tagsButtonInner_d9be46 {
     color: var(--text-brand);
     margin: 0;
+    background: none!important;
     display: flex;
     align-items: center;
     gap: 2px
@@ -1834,11 +1818,7 @@
     color: var(--interactive-hover)
 }
 
-.forumPostFormButton_d9be46:active {
-    color: var(--interactive-active)
-}
-
-.forumPostFormButtonActive_d9be46 {
+.forumPostFormButton_d9be46:active,.forumPostFormButtonActive_d9be46 {
     color: var(--interactive-active)
 }
 
@@ -2001,11 +1981,10 @@
 .container__9a337:active {
     background-color: var(--background-modifier-active);
     box-shadow: var(--elevation-high);
-    transform: translateY(-2px);
-    border-color: var(--background-modifier-active)
+    transform: translateY(-2px)
 }
 
-.container__9a337:active .dots__9a337 {
+.container__9a337:active,.container__9a337:active .dots__9a337 {
     border-color: var(--background-modifier-active)
 }
 
@@ -2228,4 +2207,4 @@
     color: var(--text-link)
 }
 
-/*# sourceMappingURL=ec42c2809239033f.css.map*/
+/*# sourceMappingURL=77ba772812816746.css.map*/

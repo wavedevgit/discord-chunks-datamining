@@ -1,6 +1,6 @@
 /**
   Module ID: 97811
-  Original File Name: 966de638f83b9bc4
+  Original File Name: bf79aebe03b1bf8d
 **/
 .editCard_a25a68 {
     position: relative;
@@ -210,14 +210,7 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    opacity: 1
-}
-
-.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
@@ -563,17 +556,12 @@
 }
 
 .addFormFieldText_eaaeee {
-    color: var(--interactive-normal);
     font-weight: 600;
     margin-left: 8px;
     cursor: pointer
 }
 
-.multipleChoiceFixedTextColor_eaaeee:hover:not([aria-checked=true]) {
-    color: var(--interactive-normal)
-}
-
-.multipleChoiceFixedTextColor_eaaeee:active:not([aria-checked=true]) {
+.addFormFieldText_eaaeee,.multipleChoiceFixedTextColor_eaaeee:active:not([aria-checked=true]),.multipleChoiceFixedTextColor_eaaeee:hover:not([aria-checked=true]) {
     color: var(--interactive-normal)
 }
 
@@ -845,11 +833,7 @@
     background-color: var(--background-modifier-accent)
 }
 
-.container__74df5+.container__74df5.siblingSelected__74df5:after {
-    display: none
-}
-
-.container__74df5+.container__74df5.selected__74df5:after {
+.container__74df5+.container__74df5.selected__74df5:after,.container__74df5+.container__74df5.siblingSelected__74df5:after {
     display: none
 }
 
@@ -1401,4 +1385,4 @@
     width: 8px
 }
 
-/*# sourceMappingURL=966de638f83b9bc4.css.map*/
+/*# sourceMappingURL=bf79aebe03b1bf8d.css.map*/

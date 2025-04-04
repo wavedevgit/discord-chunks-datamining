@@ -1,6 +1,6 @@
 /**
   Module ID: 93287
-  Original File Name: e656bc1039b8fd4e
+  Original File Name: 443b992ff721eb93
 **/
 .container__4216d {
     align-items: center;
@@ -99,7 +99,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    background-image: linear-gradient(hsl(var(--primary-730-hsl)/0.9),hsl(var(--primary-730-hsl)/0.9)),var(--custom-background-url);
     background-image: linear-gradient(var(--custom-overlay-color),var(--custom-overlay-color)),var(--custom-background-url);
     position: absolute;
     height: 120%;
@@ -170,4 +169,4 @@
     white-space: break-spaces
 }
 
-/*# sourceMappingURL=e656bc1039b8fd4e.css.map*/
+/*# sourceMappingURL=443b992ff721eb93.css.map*/

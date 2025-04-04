@@ -103,8 +103,8 @@ function M(e) {
     selectedSkuId: U,
     setSelectedSkuId: G,
     selectedSkuPricePreview: B,
-    paymentSourceId: F,
-    skuPricePreviewsById: V
+    paymentSourceId: V,
+    skuPricePreviewsById: F
   } = (0, I.JL)(), Z = (0, i.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: H,
     giftRecommendationAlgorithm: W
@@ -126,11 +126,11 @@ function M(e) {
       }), null != D && z(D, e), G(e)
     },
     Q = e => {
-      let t = V[e],
+      let t = F[e],
         n = null;
       if (null != t) {
         var i;
-        n = null != F && null != (i = t[F]) ? i : t[b.c]
+        n = null != V && null != (i = t[V]) ? i : t[b.c]
       }
       if (null == n) return;
       let o = (0, v.T4)(n.amount, n.currency);

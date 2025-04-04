@@ -144,13 +144,13 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t = L[e.streamKey];
   if (null == t) return !1;
   t.connect(e.endpoint, e.token)
 }
 
-function V(e) {
+function F(e) {
   let {
     connectionStats: t
   } = e;
@@ -317,10 +317,10 @@ let J = new X(d.Z, !v.Z.isSupported() || __OVERLAY__ ? {} : {
   STREAM_START: U,
   STREAM_STOP: G,
   STREAM_CREATE: B,
-  STREAM_SERVER_UPDATE: F,
+  STREAM_SERVER_UPDATE: V,
   STREAM_UPDATE: Z,
   STREAM_DELETE: H,
-  MEDIA_ENGINE_CONNECTION_STATS: V,
+  MEDIA_ENGINE_CONNECTION_STATS: F,
   STREAM_LAYOUT_UPDATE: W,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
   VIDEO_SIZE_UPDATE: q

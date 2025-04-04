@@ -2,7 +2,7 @@
 "use strict";
 n.r(t), n.d(t, {
   default: () => B
-}), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(301563);
+}), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685), n(35282);
 var r = n(873546),
   i = n(636977),
   o = n(570140),
@@ -176,8 +176,8 @@ function B(e) {
     host: w,
     hostname: j,
     pathname: B,
-    search: F,
-    hash: V
+    search: V,
+    hash: F
   } = null != (t = L.Z.toURLSafe(e)) ? t : {}, Z = L.Z.isDiscordHostname(null != j ? j : null) || L.Z.isDiscordLocalhost(null != w ? w : null, null != j ? j : null);
   if (Z && ((null == B ? void 0 : B.startsWith("/application-directory")) || (null == B ? void 0 : B.startsWith("/discovery/applications")))) {
     let e = B.split("/"),
@@ -189,7 +189,7 @@ function B(e) {
       let r, a, s;
       if (null == t || t.preventDefault(), i) {
         var l, c, u;
-        let e = new URLSearchParams(F);
+        let e = new URLSearchParams(V);
         r = null != (l = e.get("q")) ? l : void 0, a = null != (c = e.get("category_id")) ? c : void 0, s = null != (u = e.get("page")) ? u : void 0
       } else o && (a = e[4]);
       return n.e("11866").then(n.bind(n, 749681)).then(e => {
@@ -212,7 +212,7 @@ function B(e) {
       navigationReplace: !1,
       openChannel: !0
     };
-    return null != F && (e.search = F), null != V && (e.hash = V), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
+    return null != V && (e.search = V), null != F && (e.hash = F), t => (null == t || t.preventDefault(), (0, I.Z)(B, e), !0)
   }
   if (null != B && Z) {
     let {

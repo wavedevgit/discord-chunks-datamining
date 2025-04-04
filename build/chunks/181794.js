@@ -1,6 +1,9 @@
-/** Chunk was on 59288 **/
-e.exports = {
-  ephemeralMessage: "ephemeralMessage__124d2",
-  userAppsBetaContent: "userAppsBetaContent__124d2",
-  icon: "icon__124d2"
-}
+/** Chunk was on 50448 **/
+"use strict";
+t.exports = !n(779688)(function() {
+  return 7 !== Object.defineProperty({}, 1, {
+    get: function() {
+      return 7
+    }
+  })[1]
+})

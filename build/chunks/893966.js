@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => J
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r, i = n(442837),
   o = n(570140),
   a = n(314897),
@@ -212,7 +212,7 @@ function B(e) {
   return U(e)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildMembers: t
   } = e, n = !1;
@@ -222,7 +222,7 @@ function F(e) {
   }), n
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     members: n
@@ -396,8 +396,8 @@ g(X, "displayName", "MemberSafetyStore");
 let J = new X(o.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
-  LOCAL_MESSAGES_LOADED: V,
-  CACHE_LOADED: F,
+  LOCAL_MESSAGES_LOADED: F,
+  CACHE_LOADED: V,
   PASSIVE_UPDATE_V2: Z,
   GUILD_CREATE: I,
   GUILD_DELETE: S,

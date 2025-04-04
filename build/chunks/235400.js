@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   default: () => R
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(442837),
@@ -58,21 +58,21 @@ function C(e) {
     purchase: M
   } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, v.sr)(D, void 0 === R ? w : R), B = e => {
     L(e), null != e && U(e)
-  }, F = () => {
+  }, V = () => {
     P(D), f()
-  }, V = i.useCallback(e => {
+  }, F = i.useCallback(e => {
     f(), (0, c.mK)({
       analyticsLocations: l,
       analyticsSource: s.Z.EDIT_AVATAR_DECORATION_MODAL,
       initialProductSkuId: e
     })
   }, [l, f]), Z = (0, p.M)(), H = () => null != M && (!(0, u.qS)(M) || k) || null === D ? (0, r.jsx)(a.zxk, {
-    onClick: F,
+    onClick: V,
     disabled: G,
     children: N.NW.string(N.t.d6sv6u)
   }) : null == M && (k || !(0, u.G1)(x)) ? (0, r.jsx)(a.zxk, {
     className: A.modalFooterShopButton,
-    onClick: () => V(null == x ? void 0 : x.skuId),
+    onClick: () => F(null == x ? void 0 : x.skuId),
     children: N.NW.string(N.t.fYfGgI)
   }) : (0, r.jsx)(m.Z, {
     subscriptionTier: T.Si.TIER_2,
@@ -99,7 +99,7 @@ function C(e) {
         pendingAvatarDecoration: D,
         selectedAvatarDecorationRef: j,
         onSelect: B,
-        onOpenShop: V
+        onOpenShop: F
       }), (0, r.jsx)(O.Z, {
         className: A.modalPreview,
         user: t,

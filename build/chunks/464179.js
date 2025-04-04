@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => W
-}), n(47120), n(301563), n(411104);
+}), n(388685), n(35282), n(415506);
 var r, i = n(200651),
   o = n(192379),
   a = n(588391),
@@ -177,7 +177,7 @@ let M = {
     },
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  F = e => {
+  V = e => {
     let t, n;
     switch (e) {
       case v:
@@ -215,7 +215,7 @@ let M = {
       renderInput: e => (0, i.jsx)(c.oil, m({}, e))
     }
   },
-  V = e => {
+  F = e => {
     let t;
     switch (e) {
       case v:
@@ -278,15 +278,15 @@ let M = {
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternational: [
       [j],
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     modalUSWithName: [
       [j],
@@ -294,7 +294,7 @@ let M = {
       [U],
       [G],
       [B],
-      [V, F]
+      [F, V]
     ],
     modalInternationalWithName: [
       [j],
@@ -302,13 +302,13 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
-      [F]
+      [F],
+      [V]
     ],
     settingsUS: [
       [k],
       [U, G],
-      [B, V, F],
+      [B, F, V],
       [j]
     ],
     settingsUSMobile: [
@@ -316,15 +316,15 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ],
     settingsInternational: [
       [k],
       [U, G],
       [B],
-      [V, F],
+      [F, V],
       [j]
     ],
     settingsInternationalMobile: [
@@ -332,22 +332,22 @@ let M = {
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
-      [V, F],
+      [F, V],
       [j]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
       [G],
       [B],
-      [V],
       [F],
+      [V],
       [j]
     ]
   };

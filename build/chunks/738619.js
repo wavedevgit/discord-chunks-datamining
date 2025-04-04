@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => H
-}), n(653041), n(47120);
+}), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class F extends i.PureComponent {
+class V extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -147,7 +147,7 @@ class F extends i.PureComponent {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t,
     guild: n
@@ -180,11 +180,11 @@ function Z(e) {
   } = e, {
     rateLimitPerUser: E
   } = u, y = N.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
+  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(V, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
-  }) : (0, r.jsx)(V, {
+  }) : (0, r.jsx)(F, {
     channel: u,
     guild: v
   });

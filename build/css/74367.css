@@ -1,6 +1,6 @@
 /**
   Module ID: 74367
-  Original File Name: 1730e37ca02435d7
+  Original File Name: ac2c24a50f3f48eb
 **/
 .container__5537c {
     min-width: 100%;
@@ -466,11 +466,7 @@
     align-items: center
 }
 
-.button__6cf35 {
-    margin-left: 8px
-}
-
-.button__6cf35+.button__6cf35 {
+.button__6cf35,.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -503,10 +499,7 @@
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important
-}
-
-.avatar__28d93 {
+    width: 20px!important;
     margin-right: 8px
 }
 
@@ -1522,4 +1515,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=1730e37ca02435d7.css.map*/
+/*# sourceMappingURL=ac2c24a50f3f48eb.css.map*/

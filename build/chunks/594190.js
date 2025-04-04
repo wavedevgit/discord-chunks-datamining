@@ -7,7 +7,7 @@ n.d(t, {
   b6: () => eE,
   ik: () => ey,
   rH: () => eg
-}), n(47120), n(653041), n(757143), n(301563), n(733860), n(230036);
+}), n(388685), n(539854), n(704826), n(35282), n(290780), n(642613);
 var i, o = n(392711),
   a = n.n(o),
   s = n(913527),
@@ -79,8 +79,8 @@ function G(e, t) {
   }), e
 }
 let B = new m.Z("RunningGameStore"),
-  F = "RunningGameStore",
-  V = !1,
+  V = "RunningGameStore",
+  F = !1,
   Z = [],
   H = [{
     executables: [{
@@ -289,8 +289,8 @@ function eE(e) {
   }
   return {
     source: L.d.DEFAULT,
-    enabledOOP: V || a,
-    enabledLegacy: V,
+    enabledOOP: F || a,
+    enabledLegacy: F,
     overlayMethod: a ? f.gl.OutOfProcess : f.gl.Disabled
   }
 }
@@ -313,7 +313,7 @@ function ev(e) {
 }
 
 function eO() {
-  u.K.set(F, et)
+  u.K.set(V, et)
 }
 
 function eI(e) {
@@ -462,7 +462,7 @@ function eB() {
   eu = null, ed = null, el.clear()
 }
 
-function eF(e) {
+function eV(e) {
   let t = e.processes.map(e => {
     var t;
     return {
@@ -482,7 +482,7 @@ function eF(e) {
   })
 }
 
-function eV(e) {
+function eF(e) {
   let {
     game: t,
     newLegacyOverlayEnabledValue: n,
@@ -584,7 +584,7 @@ function eK() {
 class ez extends(i = c.ZP.Store) {
   initialize() {
     var e, t, n, r, i;
-    let o = null != (e = u.K.get(F)) ? e : {
+    let o = null != (e = u.K.get(V)) ? e : {
       gamesSeen: [],
       gameOverrides: {},
       enableOverlay: {},
@@ -699,7 +699,7 @@ let eq = new ez(d.Z, {
     PERMISSION_CLEAR_ELEVATED_PROCESS: ek,
     PERMISSION_CONTINUE_NONELEVATED_PROCESS: eM,
     RUNNING_GAME_ADD_OVERRIDE: ej,
-    RUNNING_GAME_TOGGLE_OVERLAY: eV,
+    RUNNING_GAME_TOGGLE_OVERLAY: eF,
     RUNNING_GAME_TOGGLE_DETECTION: eZ,
     RUNNING_GAME_EDIT_NAME: eH,
     RUNNING_GAME_DELETE_ENTRY: eW,
@@ -708,6 +708,6 @@ let eq = new ez(d.Z, {
     GAME_DETECTION_WATCH_CANDIDATE_GAMES_START: eU,
     GAME_DETECTION_DEBUGGING_START: eG,
     GAME_DETECTION_DEBUGGING_STOP: eB,
-    GAME_DETECTION_DEBUGGING_TICK: eF
+    GAME_DETECTION_DEBUGGING_TICK: eV
   }),
   eQ = eq

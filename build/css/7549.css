@@ -1,6 +1,6 @@
 /**
   Module ID: 7549
-  Original File Name: e01a231eb0352e6f
+  Original File Name: 46e035b6b1b6fe94
 **/
 .container__270b2 {
     flex-direction: row;
@@ -175,11 +175,7 @@
     align-items: center
 }
 
-.button__6cf35 {
-    margin-left: 8px
-}
-
-.button__6cf35+.button__6cf35 {
+.button__6cf35,.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -212,10 +208,7 @@
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important
-}
-
-.avatar__28d93 {
+    width: 20px!important;
     margin-right: 8px
 }
 
@@ -509,4 +502,4 @@
     background-color: initial
 }
 
-/*# sourceMappingURL=e01a231eb0352e6f.css.map*/
+/*# sourceMappingURL=46e035b6b1b6fe94.css.map*/

@@ -1,9 +1,9 @@
-/** Chunk was on 78226 **/
-e.exports = {
-  wrapper: "wrapper_ef0e9b",
-  percentCompleteWrapper: "percentCompleteWrapper_ef0e9b",
-  percentCompleteLabel: "percentCompleteLabel_ef0e9b",
-  progressBar: "progressBar_ef0e9b",
-  progressBarFill: "progressBarFill_ef0e9b",
-  percentCompleteLabelOffset: "percentCompleteLabelOffset_ef0e9b"
-}
+/** Chunk was on 50448 **/
+"use strict";
+var e, o, i = n(424353),
+  u = n(673574),
+  s = i.process,
+  c = i.Deno,
+  f = s && s.versions || c && c.version,
+  a = f && f.v8;
+a && (o = (e = a.split("."))[0] > 0 && e[0] < 4 ? 1 : +(e[0] + e[1])), !o && u && (!(e = u.match(/Edge\/(\d+)/)) || e[1] >= 74) && (e = u.match(/Chrome\/(\d+)/)) && (o = +e[1]), t.exports = o

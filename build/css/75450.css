@@ -1,6 +1,6 @@
 /**
   Module ID: 75450
-  Original File Name: 9b4854949f6b343a
+  Original File Name: 5c190db0a6bbb786
 **/
 @use postcss-pxtorem;
 
@@ -99,8 +99,6 @@
 
 .compact_c19a55 .repliedMessage_c19a55 {
     --text-indent: calc(var(--custom-message-margin-compact-indent)*-1 - -1rem);
-    margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + (var(--custom-message-margin-compact-indent)*-1 - -1rem));
-    margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + calc(var(--custom-message-margin-compact-indent)*-1 - -1rem));
     margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + var(--text-indent));
     padding-left: var(--custom-message-reply-indent)
 }
@@ -315,10 +313,7 @@
 }
 
 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 {
-    display: -webkit-inline-box!important
-}
-
-.repliedTextPreview_c19a55 .repliedTextContent_c19a55 {
+    display: -webkit-inline-box!important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     word-break: break-all;
@@ -527,11 +522,7 @@
     filter: drop-shadow(var(--elevation-medium))
 }
 
-.avatar_c19a55.clickable_c19a55:active {
-    transform: translateY(1px)
-}
-
-.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
+.avatar_c19a55.clickable_c19a55:active,.avatar_c19a55.clickable_c19a55:active+.avatarDecoration_c19a55 {
     transform: translateY(1px)
 }
 
@@ -623,10 +614,7 @@
 }
 
 .timestampTooltip_c19a55 {
-    max-width: none!important
-}
-
-.timestampTooltip_c19a55 {
+    max-width: none!important;
     white-space: nowrap
 }
 
@@ -635,18 +623,11 @@
 }
 
 .nitroAuthorBadgeTootip_c19a55 {
-    max-width: 30vw!important
-}
-
-.nitroAuthorBadgeTootip_c19a55 {
+    max-width: 30vw!important;
     white-space: nowrap
 }
 
-.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
-    opacity: 1
-}
-
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 
@@ -1115,4 +1096,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=9b4854949f6b343a.css.map*/
+/*# sourceMappingURL=5c190db0a6bbb786.css.map*/

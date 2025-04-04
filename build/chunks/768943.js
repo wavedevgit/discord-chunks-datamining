@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
-}), n(411104), n(47120);
+  Z: () => V
+}), n(415506), n(388685);
 var r, i = n(442837),
   o = n(759174),
   a = n(570140),
@@ -268,7 +268,7 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let F = new B(a.Z, {
+let V = new B(a.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: N,
   SAVED_MESSAGES_UPDATE: A,

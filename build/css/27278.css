@@ -1,6 +1,6 @@
 /**
   Module ID: 27278
-  Original File Name: 7124e2051eb53a47
+  Original File Name: d79f2fc9e1a14284
 **/
 .iframe__8c55d {
     width: 100%;
@@ -13,7 +13,6 @@
     --custom-activity-popout-header-height: 48px;
     --custom-activity-popout-header-background-color: var(--black);
     justify-content: space-between;
-    background-color: var(--black);
     background-color: var(--custom-activity-popout-header-background-color);
     min-height: 48px;
     min-height: var(--custom-activity-popout-header-height);
@@ -79,9 +78,7 @@
     pointer-events: none;
     background: linear-gradient(90deg,transparent,var(--custom-activity-popout-header-background-color));
     position: absolute;
-    left: calc(var(--spacing-16)*-1);
     left: calc(var(--custom-activity-popout-header-fade-width)*-1);
-    width: var(--spacing-16);
     width: var(--custom-activity-popout-header-fade-width);
     height: var(--custom-activity-popout-header-height)
 }
@@ -135,4 +132,4 @@
     height: 100%
 }
 
-/*# sourceMappingURL=7124e2051eb53a47.css.map*/
+/*# sourceMappingURL=d79f2fc9e1a14284.css.map*/

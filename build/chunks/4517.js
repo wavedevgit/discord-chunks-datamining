@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   Z: () => Y
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
-  s = n(642128),
+  s = n(200100),
   l = n(442837),
   c = n(846519),
   u = n(481060),
@@ -93,7 +93,7 @@ let M = 1.25,
   G = 150,
   B = 300;
 
-function F(e) {
+function V(e) {
   let {
     profileType: t,
     children: n
@@ -114,7 +114,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     profileType: t,
     onCloseProfile: i,
@@ -153,7 +153,7 @@ function V(e) {
     })]
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(F, {
+    children: [(0, r.jsx)(V, {
       profileType: t,
       children: _
     }), (0, r.jsx)(u.P3F, {
@@ -201,7 +201,7 @@ let Z = i.forwardRef(function(e, t) {
     [C.panel]: m === N.y0.PANEL
   }, w = (0, h.p)({
     location: "CustomStatusBubble"
-  }), D = null != _ ? M : 0, L = k + D, x = j + D, V = i.useRef(null), Z = i.useRef(null), H = i.useRef(null), W = i.useRef(L), Y = i.useRef(x), K = null != _ && null == p, [z, q] = i.useState(!1), [Q, X] = i.useState(!0), [J, $] = i.useState(!K && I), ee = !K && I && z;
+  }), D = null != _ ? M : 0, L = k + D, x = j + D, F = i.useRef(null), Z = i.useRef(null), H = i.useRef(null), W = i.useRef(L), Y = i.useRef(x), K = null != _ && null == p, [z, q] = i.useState(!1), [Q, X] = i.useState(!0), [J, $] = i.useState(!K && I), ee = !K && I && z;
   i.useLayoutEffect(() => {
     if (q(!0), null == Z.current || null == H.current || !ee) return;
     let e = Z.current.getBoundingClientRect().height,
@@ -211,7 +211,7 @@ let Z = i.forwardRef(function(e, t) {
   let et = (0, l.e7)([d.Z], () => d.Z.useReducedMotion),
     [en] = i.useState(() => new c.V7);
   i.useEffect(() => () => en.stop(), [en]), i.useEffect(() => {
-    null == T || T.onInteractionPopoutTargetRefChange(V)
+    null == T || T.onInteractionPopoutTargetRefChange(F)
   }, [T]);
   let [er, ei] = (0, u.q_F)(() => ({
     maxHeight: "".concat(W.current, "px"),
@@ -268,7 +268,7 @@ let Z = i.forwardRef(function(e, t) {
         children: [ea, ec]
       })
     })
-  }), e_ = (0, r.jsxs)(F, {
+  }), e_ = (0, r.jsxs)(V, {
     profileType: m,
     children: [eu, ed]
   });
@@ -276,7 +276,7 @@ let Z = i.forwardRef(function(e, t) {
     children: [e_, (0, r.jsx)(u.tEY, {
       ringClassName: C.ring,
       children: (0, r.jsxs)("div", {
-        ref: V,
+        ref: F,
         role: "tooltip",
         tabIndex: 0,
         className: a()(C.container, P, E),
@@ -301,7 +301,7 @@ let Z = i.forwardRef(function(e, t) {
     children: [e_, (0, r.jsx)(u.tEY, {
       ringClassName: C.ring,
       children: (0, r.jsxs)("div", {
-        ref: V,
+        ref: F,
         role: "tooltip",
         tabIndex: 0,
         className: a()(C.container, P, E),
@@ -314,7 +314,7 @@ let Z = i.forwardRef(function(e, t) {
         },
         onBlur: e => {
           var t;
-          (null == (t = V.current) ? void 0 : t.contains(e.relatedTarget)) || (O(!1), eo(!1))
+          (null == (t = F.current) ? void 0 : t.contains(e.relatedTarget)) || (O(!1), eo(!1))
         },
         onMouseEnter: () => {
           R({
@@ -447,7 +447,7 @@ function Y(e) {
     A = null != N && "" !== N ? N : null;
   return null != T || null != A || O ? null == T && null == A ? (0, r.jsx)(p.Gt, {
     value: b,
-    children: (0, r.jsx)(V, P({
+    children: (0, r.jsx)(F, P({
       onCloseProfile: a,
       prompt: d
     }, h))

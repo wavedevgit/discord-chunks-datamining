@@ -48,7 +48,7 @@ function R(e) {
     originApplicationId: c.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, a.wn)({
     location: "UserProfilePopoutBody"
-  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), F = t.id === n.id, V = (0, f.I5)(n);
+  }), B = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), V = t.id === n.id, F = (0, f.I5)(n);
   return (0, r.jsxs)(o.Ttm, {
     fade: !0,
     className: C.body,
@@ -93,7 +93,7 @@ function R(e) {
     }, e.applicationId)), (0, r.jsx)(E.Z, {
       user: t,
       source: E.t.POPOUT
-    }), !F && (0, r.jsx)(T.Z, {
+    }), !V && (0, r.jsx)(T.Z, {
       user: t,
       onOpenProfile: e => null == D ? void 0 : D({
         section: e
@@ -106,8 +106,8 @@ function R(e) {
       bio: null == R ? void 0 : R.bio,
       hidePersonalInformation: B,
       onClose: x
-    }), F && (0, r.jsx)(p.Z, {
-      isPremiumUser: V,
+    }), V && (0, r.jsx)(p.Z, {
+      isPremiumUser: F,
       onInteraction: x,
       className: C.upsell
     }), (0, r.jsx)(h.Z, {

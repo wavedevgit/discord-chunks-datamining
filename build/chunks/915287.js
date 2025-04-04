@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   v: () => O
-}), n(653041), n(47120);
+}), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -178,8 +178,8 @@ function O(e, t, n, o) {
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: F,
-      fade: V = !1,
+      paddingBottom: V,
+      fade: F = !1,
       customTheme: Z = !1,
       chunkSize: H,
       style: W,
@@ -222,7 +222,7 @@ function O(e, t, n, o) {
       sidebarHeight: P,
       listHeaderHeight: w,
       paddingTop: B,
-      paddingBottom: F,
+      paddingBottom: V,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
@@ -282,7 +282,7 @@ function O(e, t, n, o) {
       onScroll: ev,
       className: a()(g, {
         [e]: !0,
-        [t]: V,
+        [t]: F,
         [n]: Z,
         [d.scrolling]: en
       }),

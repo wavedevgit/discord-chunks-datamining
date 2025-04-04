@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => M
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -84,11 +84,11 @@ function M(e) {
     giftRecipient: U,
     giftMessage: G,
     giftingOrigin: B,
-    analyticsLocations: F,
-    returnRef: V
+    analyticsLocations: V,
+    returnRef: F
   } = e, {
     analyticsLocations: Z
-  } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, A.UY)({
+  } = (0, d.ZP)([...V, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, A.UY)({
     purchaseType: C.o8.FIAT,
     skuId: k
   }), [k]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != k ? [k] : Q, J = null != (t = X[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
@@ -151,7 +151,7 @@ function M(e) {
             analyticsLocations: Z,
             transitionState: L,
             renderHeader: en,
-            returnRef: V,
+            returnRef: F,
             onStepChange: w,
             skipConfirm: $,
             hideShadow: !0

@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => J
-}), n(47120), n(411104), n(653041), n(733860);
+}), n(388685), n(415506), n(539854), n(290780);
 var r, i = n(392711),
   o = n.n(i),
   a = n(442837),
@@ -102,7 +102,7 @@ function j(e) {
 }
 
 function U(e) {
-  F(e), Z(e)
+  V(e), Z(e)
 }
 
 function G(e) {
@@ -122,7 +122,7 @@ function B(e) {
   M(t, n, r, "Patch")
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -130,7 +130,7 @@ function F(e) {
   k(t, n)
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -263,9 +263,9 @@ let J = new X(l.Z, {
   DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: F,
+  DISPATCH_APPLICATION_CANCEL: V,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: V,
+  DISPATCH_APPLICATION_MOVE_UP: F,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: Y,

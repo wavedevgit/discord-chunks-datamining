@@ -2,10 +2,10 @@
 "use strict";
 n.d(t, {
   b: () => L
-}), n(47120);
+}), n(388685);
 var r = n(392711),
   i = n.n(r),
-  o = n(255914),
+  o = n(674466),
   a = n(798681),
   s = n(581567),
   l = n(569545),
@@ -95,8 +95,8 @@ function L(e, t) {
     U = "underlyingError" in t ? t.underlyingError : void 0,
     G = "errorMessage" in t ? t.errorMessage : void 0,
     B = "mediaSessionId" in t ? t.mediaSessionId : void 0,
-    F = "rtcConnectionId" in t ? t.rtcConnectionId : void 0,
-    V = "videoCodec" in t ? t.videoCodec : void 0,
+    V = "rtcConnectionId" in t ? t.rtcConnectionId : void 0,
+    F = "videoCodec" in t ? t.videoCodec : void 0,
     Z = "videoEncoder" in t ? t.videoEncoder : void 0,
     H = "videoDecoder" in t ? t.videoDecoder : void 0,
     W = "audioCaptureSampleRateMismatchPercent" in t ? t.audioCaptureSampleRateMismatchPercent : void 0,
@@ -123,7 +123,7 @@ function L(e, t) {
     el = null != Q ? Q.ownerId : q,
     ec = null != Q ? null == J ? void 0 : J.getVoiceParticipantType() : ea ? "sender" : "receiver";
   m = null != k && null != Q ? ea ? null == J || null == (r = J.getOutboundStats()) ? void 0 : r.find(e => e.quality === I.y7) : null == J ? void 0 : J.getInboundStats(Q.ownerId) : ea ? null != (h = i().maxBy(null != (c = null == J ? void 0 : J.getOutboundStats()) ? c : [], e => e.num_frames)) ? h : null : null != el ? null == J ? void 0 : J.getInboundStats(el) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, g, v, P, w, k, q, $, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ey, ev, eO, eI, eS, eT, eN, eA, eC, eR, eP, ew, eD, eL, ex, eM, ek, ej, eU, eG, eB, eF, eV;
+    var n, r, i, s, l, c, u, d, h, g, v, P, w, k, q, $, eu, ed, ef, e_, ep, eh, em, eg, eE, eb, ey, ev, eO, eI, eS, eT, eN, eA, eC, eR, eP, ew, eD, eL, ex, eM, ek, ej, eU, eG, eB, eV, eF;
     let eZ = {
       error_name: e.valueOf(),
       error_code: L.errorCode,
@@ -134,7 +134,7 @@ function L(e, t) {
       guild_id: null != (k = null == M ? void 0 : M.guild_id) ? k : null,
       channel_id: null != x ? x : null,
       channel_type: null != (q = null == M ? void 0 : M.type) ? q : null,
-      rtc_connection_id: null != F ? F : null,
+      rtc_connection_id: null != V ? V : null,
       media_session_id: null != ($ = null != B ? B : _.ZP.getMediaSessionId()) ? $ : null,
       parent_media_session_id: null != (eu = null == X ? void 0 : X.parentMediaSessionId) ? eu : null,
       context: null != j ? j : null,
@@ -148,7 +148,7 @@ function L(e, t) {
       num_packets: null != (eg = null == m ? void 0 : m.num_packets) ? eg : 0,
       num_bytes: null != (eE = null == m ? void 0 : m.num_bytes) ? eE : 0,
       num_packets_lost: null != (eb = null == (i = N(ea, es, el)) ? void 0 : i.packetsLost) ? eb : 0,
-      video_codec: null != (ey = null != V ? V : (0, o.bU)(null == (s = N(ea, es, el)) ? void 0 : s.codec.name)) ? ey : null,
+      video_codec: null != (ey = null != F ? F : (0, o.bU)(null == (s = N(ea, es, el)) ? void 0 : s.codec.name)) ? ey : null,
       video_encoder: null != (ev = null != Z ? Z : (0, o.lG)(null == (l = S(es)) ? void 0 : l.encoderImplementationName)) ? ev : null,
       video_decoder: null != (eO = null != H ? H : (0, o.z_)(null == (c = T(es, el)) ? void 0 : c.decoderImplementationName)) ? eO : null,
       audio_capture_sample_rate_mismatch_percent: null != W ? W : null,
@@ -179,8 +179,8 @@ function L(e, t) {
       gpu_device_sub_sys_id: null != (eU = null == t ? void 0 : t.gpu_device_sub_sys_id) ? eU : null,
       gpu_device_revision: null != (eG = null == t ? void 0 : t.gpu_device_revision) ? eG : null,
       gpu_driver_version: null != (eB = null == t ? void 0 : t.gpu_driver_version) ? eB : null,
-      cpu_usage: null != (eF = y.Z.getCurrentCPUUsagePercent()) ? eF : null,
-      memory_usage: null != (eV = y.Z.getCurrentMemoryUsageKB()) ? eV : null,
+      cpu_usage: null != (eV = y.Z.getCurrentCPUUsagePercent()) ? eV : null,
+      memory_usage: null != (eF = y.Z.getCurrentMemoryUsageKB()) ? eF : null,
       outbound_bitrate_estimate: A(es),
       inbound_bitrate_estimate: C(es),
       hardware_enabled: f.Z.getHardwareEncoding(),

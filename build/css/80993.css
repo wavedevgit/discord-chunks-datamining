@@ -1,6 +1,6 @@
 /**
   Module ID: 80993
-  Original File Name: 338f3284c3b340cd
+  Original File Name: 5cb21d4563ff584a
 **/
 .connectedAccountVanityMetadata_fffe42 {
     margin-top: 4px
@@ -28,11 +28,8 @@
 }
 
 .paypalVerifiedTag_fffe42 {
+    background-color: var(--status-positive-background);
     color: var(--white-500)!important
-}
-
-.paypalVerifiedTag_fffe42 {
-    background-color: var(--status-positive-background)
 }
 
 .left_caab99 {
@@ -231,11 +228,8 @@
 }
 
 .botTag_a470b4 {
+    margin-left: 4px;
     margin-top: -1px!important
-}
-
-.botTag_a470b4 {
-    margin-left: 4px
 }
 
 .connectionsChecksGroups_a470b4 {
@@ -365,10 +359,7 @@
 }
 
 .accountConnectedPreviewConnectedUserAccount_a470b4 {
-    margin-top: 8px!important
-}
-
-.accountConnectedPreviewConnectedUserAccount_a470b4 {
+    margin-top: 8px!important;
     border: 1px solid var(--background-modifier-accent)
 }
 
@@ -442,4 +433,4 @@
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=338f3284c3b340cd.css.map*/
+/*# sourceMappingURL=5cb21d4563ff584a.css.map*/

@@ -3,7 +3,7 @@
 n.d(t, {
   default: () => G,
   s: () => U
-}), n(47120), n(757143), n(301563);
+}), n(388685), n(704826), n(35282);
 var r = n(200651),
   i = n(192379),
   o = n(990547),
@@ -173,7 +173,7 @@ function B(e) {
       return 0
     }, [y, R, s]),
     M = (0, i.useMemo)(() => 0 === x ? 1 : f ? 2 : 3 * (null == _), [f, _, x]);
-  return (0, r.jsx)(F, {
+  return (0, r.jsx)(V, {
     channel: t,
     buttonPurchaseState: x,
     buttonDisabledState: M,
@@ -184,7 +184,7 @@ function B(e) {
     isReaction: c
   })
 }
-let F = e => {
+let V = e => {
     let {
       channel: t,
       buttonPurchaseState: n,
@@ -217,7 +217,7 @@ let F = e => {
       children: [(0, r.jsx)("div", {
         className: R.modal,
         ref: d,
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(F, {
           channel: t,
           selectedEmoji: c,
           isReaction: u
@@ -230,7 +230,7 @@ let F = e => {
       })]
     })
   },
-  V = e => {
+  F = e => {
     let {
       channel: t,
       selectedEmoji: n,

@@ -1,6 +1,6 @@
 /**
   Module ID: 8039
-  Original File Name: ab1deca0f5ad9612
+  Original File Name: 69b9071de3752282
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -862,19 +862,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .plated__67645:hover {
-    background-color: var(--custom-nameplate)!important
-}
-
-.plated__67645:hover {
+    background-color: var(--custom-nameplate)!important;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
 }
 
 .plateMuted__67645 {
-    background-color: var(--custom-nameplate-neutral)!important
-}
-
-.plateMuted__67645 {
+    background-color: var(--custom-nameplate-neutral)!important;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
 }
@@ -985,10 +979,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .voiceIcon_adebba {
-    color: var(--white)!important
-}
-
-.voiceIcon_adebba {
+    color: var(--white)!important;
     opacity: .5;
     display: block;
     flex-shrink: 0
@@ -1222,11 +1213,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .unavailableBadge__650eb {
+    background-color: var(--white);
     color: var(--red-400)!important
-}
-
-.unavailableBadge__650eb {
-    background-color: var(--white)
 }
 
 .iconBadge__650eb {
@@ -1904,9 +1892,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .guildIcon__48112 {
     --custom-guild-icon-size: calc(var(--guildbar-folder-size)/2 - var(--space-8)/2 - 1px);
-    height: calc(var(--guildbar-folder-size)/2 - var(--space-8)/2 - 1px);
     height: var(--custom-guild-icon-size);
-    width: calc(var(--guildbar-folder-size)/2 - var(--space-8)/2 - 1px);
     width: var(--custom-guild-icon-size)
 }
 
@@ -2531,11 +2517,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 :where(.visual-refresh) .bar_eff079 {
+    height: 5px;
     background-color: var(--background-mod-normal)!important
-}
-
-:where(.visual-refresh) .bar_eff079 {
-    height: 5px
 }
 
 :where(.visual-refresh) .bar_eff079:after {
@@ -2597,11 +2580,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -3038,11 +3017,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     display: none
 }
 
-.addButton__29444.forceVisible__29444 {
-    display: block
-}
-
-.iconVisibility__29444:hover .addButton__29444 {
+.addButton__29444.forceVisible__29444,.iconVisibility__29444:hover .addButton__29444 {
     display: block
 }
 
@@ -3220,11 +3195,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .enable-forced-colors .icon__29444,.enable-forced-colors .name__29444 {
+    forced-color-adjust: none;
     color: ButtonText!important
-}
-
-.enable-forced-colors .icon__29444,.enable-forced-colors .name__29444 {
-    forced-color-adjust: none
 }
 
 .enable-forced-colors .addButtonIcon__29444 {
@@ -4152,9 +4124,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .videoContainer__8ce85:before {
-    margin-left: 8px;
     content: "";
-    position: absolute;
     top: 1px;
     right: 1px;
     bottom: 1px;
@@ -4167,21 +4137,23 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     -webkit-mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
     mask: linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
-    mask-composite: exclude;
+    mask-composite: exclude
+}
+
+.video__8ce85,.videoContainer__8ce85:before {
+    margin-left: 8px;
+    position: absolute;
     pointer-events: none
 }
 
 .video__8ce85 {
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
-    pointer-events: none;
     opacity: 0.01;
-    margin-left: 8px;
     border-radius: var(--radius-sm);
     padding: 1px 0
 }
@@ -4255,11 +4227,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     text-decoration: underline
 }
 
-.enable-forced-colors .statusDiv__5cda9 .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9 .statusText__5cda9 {
-    color: inherit
-}
-
-.enable-forced-colors .statusDiv__5cda9:hover .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .statusText__5cda9 {
+.enable-forced-colors .statusDiv__5cda9 .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9 .statusText__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .pencilIcon__5cda9,.enable-forced-colors .statusDiv__5cda9:hover .statusText__5cda9 {
     color: inherit
 }
 
@@ -4542,11 +4510,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 :where(.visual-refresh) .bannerVisible_f37cb1:hover .headerGlass_f37cb1 {
+    transition: opacity .15s ease-in-out;
     opacity: 1!important
-}
-
-:where(.visual-refresh) .bannerVisible_f37cb1:hover .headerGlass_f37cb1 {
-    transition: opacity .15s ease-in-out
 }
 
 :where(.visual-refresh) .bannerVisible_f37cb1 .header_f37cb1 {
@@ -5222,24 +5187,24 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .chatWallpaperDMListCoachmarkPointer_f36944 {
     width: 0;
     height: 0;
-    position: absolute;
     left: -13px;
     top: 22px;
-    border-bottom: 6px solid transparent;
-    border-top: 6px solid transparent;
     border-color: transparent;
     border-style: solid;
     border-width: 7px 6px;
     border-right: 7px solid var(--background-modifier-accent)
 }
 
+.chatWallpaperDMListCoachmarkPointer_f36944,.chatWallpaperDMListCoachmarkPointer_f36944:after {
+    position: absolute;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent
+}
+
 .chatWallpaperDMListCoachmarkPointer_f36944:after {
     content: "";
-    position: absolute;
     top: -6px;
     left: 2px;
-    border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
     border-right: 6px solid var(--background-tertiary)
 }
 
@@ -5997,4 +5962,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=ab1deca0f5ad9612.css.map*/
+/*# sourceMappingURL=69b9071de3752282.css.map*/

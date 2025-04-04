@@ -1,6 +1,6 @@
 /**
   Module ID: 40617
-  Original File Name: 40e00b14756696f7
+  Original File Name: 32b63a83b9578796
 **/
 .container__4216d {
     align-items: center;
@@ -171,7 +171,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    background-image: linear-gradient(hsl(var(--primary-730-hsl)/0.9),hsl(var(--primary-730-hsl)/0.9)),var(--custom-background-url);
     background-image: linear-gradient(var(--custom-overlay-color),var(--custom-overlay-color)),var(--custom-background-url);
     position: absolute;
     height: 120%;
@@ -485,13 +484,10 @@
 }
 
 .select_b08511 {
-    padding: 8px!important
-}
-
-.select_b08511 {
     width: 90%;
     max-width: 400px;
-    margin-right: 16px
+    margin-right: 16px;
+    padding: 8px!important
 }
 
 .selectOption_b08511 {
@@ -1344,4 +1340,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40e00b14756696f7.css.map*/
+/*# sourceMappingURL=32b63a83b9578796.css.map*/

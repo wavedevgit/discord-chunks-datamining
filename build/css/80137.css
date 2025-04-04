@@ -1,6 +1,6 @@
 /**
   Module ID: 80137
-  Original File Name: 325a82b31dcd3ba7
+  Original File Name: 3a7e587ae230b44c
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -1713,47 +1713,38 @@
 }
 
 .elevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .darkElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .lightElevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .lightElevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .lightElevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .elevationBorderHigh_fcf29c,.elevationBorderLow_fcf29c,.elevationHigh_fcf29c,.elevationLow_fcf29c,.lightElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .container_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
@@ -2082,20 +2073,14 @@
 }
 
 .collectibleDecoReminderCoachmarkContent__83ef9 {
+    padding-bottom: 40px;
+    padding-top: 20px;
     background: var(--brand-500)!important
 }
 
-.collectibleDecoReminderCoachmarkContent__83ef9 {
-    padding-bottom: 40px;
-    padding-top: 20px
-}
-
 .collectibleDecoReminderCoachmarkPointer__83ef9 {
+    border-right: 6px solid var(--brand-500);
     border-top-color: transparent!important
-}
-
-.collectibleDecoReminderCoachmarkPointer__83ef9 {
-    border-right: 6px solid var(--brand-500)
 }
 
 .greyedOut__83ef9 {
@@ -2218,11 +2203,7 @@
     object-fit: contain
 }
 
-.selected__0f2e8 {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__0f2e8:hover {
+.selected__0f2e8,.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -2736,13 +2717,10 @@ img.thumbnail__0f2e8 {
 }
 
 .container_ac6cb0 {
+    width: 570px;
+    height: 365px;
     background: none!important;
     box-shadow: none!important
-}
-
-.container_ac6cb0 {
-    width: 570px;
-    height: 365px
 }
 
 .mobileContainer_ac6cb0 {
@@ -2897,4 +2875,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=325a82b31dcd3ba7.css.map*/
+/*# sourceMappingURL=3a7e587ae230b44c.css.map*/

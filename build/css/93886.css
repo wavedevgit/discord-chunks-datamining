@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: e500c0eb3259603e
+  Original File Name: f241d2b016585861
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -66,11 +66,7 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2:active {
-    border-bottom-color: var(--control-brand-foreground)
-}
-
-.tabItem_fe7ab2.selected_fe7ab2 {
+.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
     border-bottom-color: var(--control-brand-foreground)
 }
 
@@ -1952,19 +1948,13 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .plated__67645:hover {
-    background-color: var(--custom-nameplate)!important
-}
-
-.plated__67645:hover {
+    background-color: var(--custom-nameplate)!important;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
 }
 
 .plateMuted__67645 {
-    background-color: var(--custom-nameplate-neutral)!important
-}
-
-.plateMuted__67645 {
+    background-color: var(--custom-nameplate-neutral)!important;
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px)
 }
@@ -2563,47 +2553,38 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .elevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .darkElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .lightElevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .lightElevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .lightElevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .elevationBorderHigh_fcf29c,.elevationBorderLow_fcf29c,.elevationHigh_fcf29c,.elevationLow_fcf29c,.lightElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .container_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
@@ -2932,20 +2913,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .collectibleDecoReminderCoachmarkContent__83ef9 {
+    padding-bottom: 40px;
+    padding-top: 20px;
     background: var(--brand-500)!important
 }
 
-.collectibleDecoReminderCoachmarkContent__83ef9 {
-    padding-bottom: 40px;
-    padding-top: 20px
-}
-
 .collectibleDecoReminderCoachmarkPointer__83ef9 {
+    border-right: 6px solid var(--brand-500);
     border-top-color: transparent!important
-}
-
-.collectibleDecoReminderCoachmarkPointer__83ef9 {
-    border-right: 6px solid var(--brand-500)
 }
 
 .greyedOut__83ef9 {
@@ -4424,10 +4399,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .voiceIcon_adebba {
-    color: var(--white)!important
-}
-
-.voiceIcon_adebba {
+    color: var(--white)!important;
     opacity: .5;
     display: block;
     flex-shrink: 0
@@ -4792,11 +4764,7 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -5218,4 +5186,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=e500c0eb3259603e.css.map*/
+/*# sourceMappingURL=f241d2b016585861.css.map*/

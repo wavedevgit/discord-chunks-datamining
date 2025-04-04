@@ -1,7 +1,7 @@
 /** Chunk was on 22253 **/
 n.d(t, {
   Z: () => y
-}), n(653041);
+}), n(539854);
 var r = n(544891),
   i = n(433517),
   a = n(570140),
@@ -78,7 +78,7 @@ class y {
         oldFormErrors: !0,
         rejectWithError: !0
       }).then(e => {
-        if (null == e.body || "b7f305db3746ff4cbe229733cea2d5021ac1d42e" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "66a83fc04d14fd850ddaa59f7276e9958e6be609" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, l.fD)()) return this._handleUpdateDownloaded(!1);
         let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : g;
         if (Date.now() - _ > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

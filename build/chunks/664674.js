@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => c
-}), n(47120);
+}), n(388685);
 var r = n(381338),
   i = n(99815);
 let o = new Set([i.E.LOL_MOST_PLAYED_CHAMPION_ID]);

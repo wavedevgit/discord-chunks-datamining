@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 n.d(t, {
   Z: () => ta
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   l = n(120356),
@@ -114,9 +114,9 @@ var r = n(200651),
   e7 = n(918559),
   e4 = n(354459),
   e6 = n(921944),
-  e9 = n(440493),
+  e8 = n(440493),
   e5 = n(157925),
-  e8 = n(388032),
+  e9 = n(388032),
   te = n(100658);
 
 function tt(e, t, n) {
@@ -362,7 +362,7 @@ class tl extends i.PureComponent {
         guildId: t
       }))
     }, {
-      onCloseCallback: () => G.Z.viewPrompt(e9.r.REAL_NAME_PROMPT, t),
+      onCloseCallback: () => G.Z.viewPrompt(e8.r.REAL_NAME_PROMPT, t),
       modalKey: "Guild Hub Real Name Modal"
     }), l && (0, m.ZDy)(async () => {
       let {
@@ -585,7 +585,7 @@ class tl extends i.PureComponent {
             channel: e
           }, "pins")), o.push((0, r.jsx)(ea.Z, {
             channel: e,
-            tooltip: e8.NW.string(e8.t.Xjlbvr)
+            tooltip: e9.NW.string(e9.t.Xjlbvr)
           }, "invite")), o.push((0, r.jsx)(es.Z, {
             channel: e,
             showCallOrActivityPanel: i || l
@@ -601,7 +601,7 @@ class tl extends i.PureComponent {
             }, "calls")), o.push((0, r.jsx)(ee.Z, {
               channel: e
             }, "pins")), !e.isManaged()) {
-            let t = e8.NW.string(e8.t.Xjlbvr);
+            let t = e9.NW.string(e9.t.Xjlbvr);
             o.push((0, r.jsx)(ea.Z, {
               channel: e,
               tooltip: t
@@ -715,7 +715,7 @@ class tl extends i.PureComponent {
             channel: t
           }, n))
         }),
-        children: e8.NW.string(e8.t["3aOv+v"])
+        children: e9.NW.string(e9.t["3aOv+v"])
       }) : null
     }), tt(this, "renderHeaderBar", () => {
       let {
@@ -747,7 +747,7 @@ class tl extends i.PureComponent {
             mobileToolbar: this.renderMobileToolbar(),
             className: o()(te.title, s),
             transparent: a || c,
-            "aria-label": e8.NW.string(e8.t.BIYAqa),
+            "aria-label": e9.NW.string(e9.t.BIYAqa),
             children: ["left" === d && (0, r.jsx)(el.TS, {
               channel: e,
               guild: i,

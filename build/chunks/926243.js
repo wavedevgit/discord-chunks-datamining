@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => P
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -161,7 +161,7 @@ function P(e) {
     isBurstReaction: U,
     rowPosition: G,
     inNitroLockedSection: B
-  } = e, [F, V] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), W = i.useRef(null), {
+  } = e, [V, F] = i.useState(""), Z = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), H = (0, s.e7)([d.ZP], () => d.ZP.getDisambiguatedEmojiContext(p), [p]), W = i.useRef(null), {
     emoji: Y,
     size: K,
     isDisabled: z,
@@ -195,7 +195,7 @@ function P(e) {
     return (0, i.createElement)("li", T(I({}, d), {
       key: o,
       ref: W
-    }), F !== C(q, f) && (0, r.jsx)(R, {
+    }), V !== C(q, f) && (0, r.jsx)(R, {
       ref: l,
       emoji: Y,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
@@ -213,7 +213,7 @@ function P(e) {
         if (null != W.current && null != G && null != j && !e.shiftKey && null != Y.name && U && !Z && M) {
           let e = null == Y.id ? _.ZP.convertNameToSurrogate(Y.name) : Y.name,
             t = W.current.getBoundingClientRect();
-          t.x = G.x + (q + 1) * K, V(C(q, f)), (0, m.U)(j, e, Y.id, t)
+          t.x = G.x + (q + 1) * K, F(C(q, f)), (0, m.U)(j, e, Y.id, t)
         }
         Q(e)
       },

@@ -119,8 +119,8 @@ let L = function(e) {
     postSuccessGuild: U,
     onSubscribeModalClose: G,
     premiumModalAnalyticsLocation: B,
-    showIcon: F = !0,
-    disableShine: V,
+    showIcon: V = !0,
+    disableShine: F,
     applicationId: Z,
     giftMessage: H,
     overrideDisabledButtonText: W,
@@ -203,7 +203,7 @@ let L = function(e) {
     color: s.zxk.Colors.BRAND_INVERTED,
     onClick: eo
   }, Q), {
-    children: [F && (0, r.jsx)(s.SrA, {
+    children: [V && (0, r.jsx)(s.SrA, {
       size: "md",
       color: "currentColor",
       className: T.premiumIcon
@@ -255,9 +255,9 @@ let L = function(e) {
         [T.tier2Gradient]: K && i === O.Si.TIER_2,
         [T.tier1Gradient]: K && i === O.Si.TIER_1
       }, w),
-      pauseAnimation: !J || V
+      pauseAnimation: !J || F
     }, Q, e), {
-      children: [F && (0, r.jsx)(s.SrA, {
+      children: [V && (0, r.jsx)(s.SrA, {
         size: "md",
         color: "currentColor",
         className: o()(T.premiumIcon, j)

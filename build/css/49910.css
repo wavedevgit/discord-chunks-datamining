@@ -1,6 +1,6 @@
 /**
   Module ID: 49910
-  Original File Name: 05d6dfe6a76abf4a
+  Original File Name: e5d893a62a688a1b
 **/
 .root__81345 {
     top: calc(var(--custom-app-top-bar-height) + var(--space-8));
@@ -45,10 +45,7 @@
 }
 
 .content__81345 {
-    padding-top: 28px!important
-}
-
-.content__81345 {
+    padding-top: 28px!important;
     padding-bottom: var(--space-8);
     padding-left: 32px;
     padding-right: 32px
@@ -137,4 +134,4 @@
     }
 }
 
-/*# sourceMappingURL=05d6dfe6a76abf4a.css.map*/
+/*# sourceMappingURL=e5d893a62a688a1b.css.map*/

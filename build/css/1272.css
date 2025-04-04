@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: fdc7c6cb127217bc
+  Original File Name: 54961d1062812f62
 **/
 .container__74da2 {
     position: relative;
@@ -1337,16 +1337,12 @@
     color: var(--interactive-hover)
 }
 
-.navItem__551b0:active {
+.navItem__551b0.selected__551b0,.navItem__551b0:active {
     color: var(--interactive-active);
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
-.navItem__551b0.selected__551b0 {
-    background: var(--bg-overlay-active,var(--background-modifier-active))
-}
-
-.navItem__551b0.selected__551b0,.navItem__551b0.selected__551b0 .navItemIcon__551b0 {
+.navItem__551b0.selected__551b0 .navItemIcon__551b0 {
     color: var(--interactive-active)
 }
 
@@ -3184,17 +3180,14 @@
 }
 
 .messageContent_dbf24f {
-    font-size: 16px!important;
-    line-height: 18px!important
-}
-
-.messageContent_dbf24f {
     color: inherit;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     word-break: break-word;
-    height: 18px
+    height: 18px;
+    font-size: 16px!important;
+    line-height: 18px!important
 }
 
 .messageContent_dbf24f .emoji {
@@ -4525,12 +4518,7 @@
     -webkit-app-region: no-drag
 }
 
-.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf {
-    background-color: var(--status-positive-background);
-    color: var(--status-positive-text)
-}
-
-.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
+.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf,.tabBar__133bf .addFriend__133bf.addFriend__133bf.addFriend__133bf:hover {
     background-color: var(--status-positive-background);
     color: var(--status-positive-text)
 }
@@ -4707,10 +4695,7 @@
 
 .avatar_e0cf27 {
     width: 20px!important;
-    height: 20px!important
-}
-
-.avatar_e0cf27 {
+    height: 20px!important;
     cursor: pointer
 }
 
@@ -5049,11 +5034,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     margin-bottom: 0
 }
 
-.visual-refresh .sidebar_c48ade.channelListHidden_c48ade:after {
-    display: none
-}
-
-.visual-refresh.custom-theme-background .sidebar_c48ade:after {
+.visual-refresh .sidebar_c48ade.channelListHidden_c48ade:after,.visual-refresh.custom-theme-background .sidebar_c48ade:after {
     display: none
 }
 
@@ -5118,12 +5099,9 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     background: var(--bg-overlay-floating,var(--background-base-low));
     border-radius: var(--radius-sm);
     border: 1px solid var(--border-faint);
-    left: var(--space-xs);
     left: var(--custom-panels-spacing);
-    bottom: var(--space-xs);
     bottom: var(--custom-panels-spacing);
     justify-content: space-between;
-    width: calc(100% - var(--space-xs)*2);
     width: calc(100% - var(--custom-panels-spacing)*2);
     box-sizing: border-box
 }
@@ -5581,10 +5559,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 
 .breadcrumb__67607:hover {
     -webkit-text-decoration: underline;
-    text-decoration: underline
-}
-
-.breadcrumb__67607:hover {
+    text-decoration: underline;
     color: var(--text-normal)
 }
 
@@ -5682,11 +5657,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
     color: var(--text-muted-on-default)
 }
 
-.tabNotSelectedColor_f1dca0:hover {
-    color: var(--text-normal)
-}
-
-.tabSelectedColor_f1dca0 {
+.tabNotSelectedColor_f1dca0:hover,.tabSelectedColor_f1dca0 {
     color: var(--text-normal)
 }
 
@@ -6250,10 +6221,7 @@ html:not(.visual-refresh) .sidebar_c48ade:not(.hidden_c48ade) {
 }
 
 .contentOverlay__3f6fc {
-    background: var(--background-secondary-alt)!important
-}
-
-.contentOverlay__3f6fc {
+    background: var(--background-secondary-alt)!important;
     padding: 16px 28px
 }
 
@@ -8288,11 +8256,7 @@ html .tabBadge__35e86 {
     opacity: 1
 }
 
-.container_a2f514[data-fade=true] {
-    opacity: 0
-}
-
-.container_a2f514[data-fade=true] .text_a2f514 {
+.container_a2f514[data-fade=true],.container_a2f514[data-fade=true] .text_a2f514 {
     opacity: 0
 }
 
@@ -8517,12 +8481,9 @@ html .tabBadge__35e86 {
 }
 
 .avatar__7c7a6 {
+    top: -2px;
     width: 20px!important;
     height: 20px!important
-}
-
-.avatar__7c7a6 {
-    top: -2px
 }
 
 .theme-dark .videoPreview__7c7a6 {
@@ -8882,4 +8843,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=fdc7c6cb127217bc.css.map*/
+/*# sourceMappingURL=54961d1062812f62.css.map*/

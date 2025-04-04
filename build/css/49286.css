@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 950560200a01a1c0
+  Original File Name: 03a316bbffb482b2
 **/
 .imageUploader_e4d0bf {
     text-align: center;
@@ -964,14 +964,11 @@
 }
 
 .emoji__24585 {
+    color: var(--text-muted);
     min-height: 0!important;
     max-width: 28px!important;
     max-height: 28px!important;
     margin: 8px 8px 0 0!important
-}
-
-.emoji__24585 {
-    color: var(--text-muted)
 }
 
 .switch__24585 {
@@ -2043,4 +2040,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=950560200a01a1c0.css.map*/
+/*# sourceMappingURL=03a316bbffb482b2.css.map*/

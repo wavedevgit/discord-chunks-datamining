@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
-}), n(47120);
+  Z: () => V
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -43,11 +43,11 @@ let D = 512,
   B = l().debounce(() => {
     (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_SCROLLED)
   }, 300),
-  F = i.forwardRef(function(e, t) {
+  V = i.forwardRef(function(e, t) {
     let {
       channel: n,
       canOnlyUseTextCommands: o
-    } = e, s = i.useRef(!1), l = i.useRef(0), [F, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
+    } = e, s = i.useRef(!1), l = i.useRef(0), [V, Z] = i.useState(0), H = i.useRef(null), [W, Y] = i.useState(!1), K = m.Xn.useStore(e => e.activeCategoryIndex);
     i.useEffect(() => {
       (0, d.yw)(C.rMx.APPLICATION_COMMAND_BROWSER_OPENED)
     }, []);
@@ -101,8 +101,8 @@ let D = 512,
     let eo = i.useCallback(e => e !== q.length - 1 || X ? M : 0, [q.length, X]),
       ea = Q.map(e => e.data.length);
     i.useEffect(() => {
-      null != H.current && W && null != F && H.current.scrollRowIntoView(F)
-    }, [W, F]), i.useLayoutEffect(() => {
+      null != H.current && W && null != V && H.current.scrollRowIntoView(V)
+    }, [W, V]), i.useLayoutEffect(() => {
       if (null != $) {
         var e;
         null == (e = H.current) || e.scrollToSectionTop(0)
@@ -125,13 +125,13 @@ let D = 512,
       }, [n.id]);
     i.useImperativeHandle(t, () => ({
       onTabOrEnter: e => {
-        if (null == F) return !e && (Z(0), !0);
-        if (null == F) return !1;
+        if (null == V) return !e && (Z(0), !0);
+        if (null == V) return !1;
         let t = 0,
           n = 0;
         for (let e of Q)
-          if (t = n, F < (n += e.data.length)) {
-            let n = e.data[F - t],
+          if (t = n, V < (n += e.data.length)) {
+            let n = e.data[V - t],
               r = z.find(e => e.id === n.applicationId);
             el(n, r, (0, I.tI)(e.section));
             break
@@ -141,10 +141,10 @@ let D = 512,
         if (0 === J.length) return !0;
         let t = X ? L : 0,
           n = J.length + t,
-          r = null == F ? 0 : F + e;
+          r = null == V ? 0 : V + e;
         return r >= n ? r = n - 1 : r < 0 && (r = 0), Z(r), Y(!0), !0
       }
-    }), [J.length, Q, X, z, el, F]);
+    }), [J.length, Q, X, z, el, V]);
     let ec = i.useCallback(e => {
         let t = q[e];
         if (null == t) return null;
@@ -195,7 +195,7 @@ let D = 512,
           command: a,
           channel: n,
           className: P.itemWrapper,
-          selected: F === e,
+          selected: V === e,
           showImage: o.section.id !== a.applicationId,
           section: l,
           onClick: () => el(a, l, (0, I.tI)(o.section)),
@@ -203,15 +203,15 @@ let D = 512,
             Z(null), Y(!1)
           }
         }, s)
-      }, [n, Q, el, z, F]),
+      }, [n, Q, el, z, V]),
       ef = (0, h.Dt)();
-    return (0, _.KR)(ef, !0, (0, f.DJ)(F)), i.useEffect(() => () => {
+    return (0, _.KR)(ef, !0, (0, f.DJ)(V)), i.useEffect(() => () => {
       (0, _.sJ)()
     }, []), (0, r.jsxs)(f.ZP, {
       id: ef,
       className: P.outerWrapper,
       innerClassName: P.wrapper,
-      onMouseDown: V,
+      onMouseDown: F,
       children: [(0, r.jsx)(S.Z, {
         className: P.rail,
         channel: n,
@@ -239,6 +239,6 @@ let D = 512,
     })
   });
 
-function V(e) {
+function F(e) {
   e.preventDefault()
 }

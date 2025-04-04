@@ -50,8 +50,8 @@ var i = n(120356),
   U = n(388032),
   G = n(781793),
   B = n(499317),
-  F = n(476945),
-  V = n(945182),
+  V = n(476945),
+  F = n(945182),
   Z = function(e) {
     return e[e.PREMIUM_TIER_0_WHITE_FILL = 0] = "PREMIUM_TIER_0_WHITE_FILL", e[e.PREMIUM_TIER_0_GRADIENT_FILL = 1] = "PREMIUM_TIER_0_GRADIENT_FILL", e[e.PREMIUM_TIER_2_WHITE_FILL = 2] = "PREMIUM_TIER_2_WHITE_FILL", e[e.PREMIUM_TIER_2_NEW_GRADIENT_FILL = 3] = "PREMIUM_TIER_2_NEW_GRADIENT_FILL", e[e.PREMIUM_TIER_2_OLD_GRADIENT_FILL = 4] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL", e[e.PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE = 5] = "PREMIUM_TIER_2_OLD_GRADIENT_FILL_LIGHT_MODE", e[e.PREMIUM_TIER_2_GREY_FILL = 6] = "PREMIUM_TIER_2_GREY_FILL", e
   }({});
@@ -389,7 +389,7 @@ function X(e) {
     }) : null, n ? (0, r.jsx)("div", {
       className: G.wumpusImageContainer,
       children: (0, r.jsx)(d.Eep, {
-        src: F,
+        src: V,
         mediaLayoutType: j.hV.RESPONSIVE,
         width: 270,
         height: 242,
@@ -628,7 +628,7 @@ function et(e) {
     isModal: m = !1,
     priceOptions: b,
     showPromotionalGiftBanner: v = !1
-  } = e, O = (0, l.e7)([E.ZP], () => E.ZP.getPremiumTypeSubscription()), I = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = (0, P.N)(), T = null == S || null == (t = S.subscription_trial) ? void 0 : t.sku_id, w = (null == O ? void 0 : O.trialId) != null ? null == I ? void 0 : I.premiumType : null, L = (0, N.Nx)(), M = (0, R.Ng)(), B = (0, N.t7)(), F = null != T || null != w ? 0 : null != M || B ? 1 : null, Z = (0, D.Vi)(), H = !h && L, Y = null == (n = (0, A.Z)()) ? void 0 : n.planSelection, K = null == Y || null == (i = Y.getBackgroundImageUrl) ? void 0 : i.call(Y), q = (0, D.W1)(), Q = (0, u.ap)((0, f.ZP)()), X = Q ? 5 : 2, J = U.NW.string(U.t.IBYG5e);
+  } = e, O = (0, l.e7)([E.ZP], () => E.ZP.getPremiumTypeSubscription()), I = (0, l.e7)([g.default], () => g.default.getCurrentUser()), S = (0, P.N)(), T = null == S || null == (t = S.subscription_trial) ? void 0 : t.sku_id, w = (null == O ? void 0 : O.trialId) != null ? null == I ? void 0 : I.premiumType : null, L = (0, N.Nx)(), M = (0, R.Ng)(), B = (0, N.t7)(), V = null != T || null != w ? 0 : null != M || B ? 1 : null, Z = (0, D.Vi)(), H = !h && L, Y = null == (n = (0, A.Z)()) ? void 0 : n.planSelection, K = null == Y || null == (i = Y.getBackgroundImageUrl) ? void 0 : i.call(Y), q = (0, D.W1)(), Q = (0, u.ap)((0, f.ZP)()), X = Q ? 5 : 2, J = U.NW.string(U.t.IBYG5e);
   (null == S ? void 0 : S.trial_id) === k.a7 && (J = U.NW.string(U.t.gtNqJS));
   let ee = H && !Q ? G.rimGlowTier2 : void 0;
   return (0, r.jsxs)("div", {
@@ -678,7 +678,7 @@ function et(e) {
     }), a ? (0, r.jsx)("div", {
       className: G.wumpusImageContainer,
       children: (0, r.jsx)(d.Eep, {
-        src: V,
+        src: F,
         mediaLayoutType: j.hV.RESPONSIVE,
         width: 270,
         height: 242,
@@ -698,7 +698,7 @@ function et(e) {
         }), (0, r.jsx)(z, {
           isGift: h,
           premiumTier: k.p9.TIER_2,
-          offerType: F,
+          offerType: V,
           offerTierMatchesCard: T === k.Si.TIER_2 || (0, R.Wp)(M, k.Si.TIER_2),
           showYearlyPrice: c,
           priceOptions: b

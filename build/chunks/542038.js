@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(381538);
 
@@ -99,17 +99,17 @@ t.exports = function(t) {
         w = a.encode(r, h, 0),
         x = d.first().get("start"),
         k = d.last().get("end"),
-        E = n.slice(x, k),
-        C = e.getEntityAt(p.get("start")),
-        D = f.getHTMLDirIfDifferent(l.getDirection(E), t.props.direction),
+        C = n.slice(x, k),
+        E = e.getEntityAt(p.get("start")),
+        D = f.getHTMLDirIfDifferent(l.getDirection(C), t.props.direction),
         O = {
           contentState: t.props.contentState,
-          decoratedText: E,
+          decoratedText: C,
           dir: D,
           start: x,
           end: k,
           blockKey: r,
-          entityKey: C,
+          entityKey: E,
           offsetKey: w
         };
       return u.createElement(b, i({}, S, O, {

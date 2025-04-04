@@ -11,7 +11,7 @@ function r(e, t, n) {
 }
 n.d(t, {
   Z: () => i
-}), n(266796);
+}), n(953529);
 class i {
   constructor(e, t, n) {
     r(this, "name", void 0), r(this, "description", void 0), r(this, "getFeatureValue", void 0), this.name = e, this.description = n, this.getFeatureValue = t, Object.defineProperty(this, "getFeatureValue", {

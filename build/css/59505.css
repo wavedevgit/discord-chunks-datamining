@@ -1,6 +1,6 @@
 /**
   Module ID: 59505
-  Original File Name: 43a7f6d3ff42d7a2
+  Original File Name: d5bc7787157852b4
 **/
 .container__1b24f {
     align-items: center;
@@ -334,10 +334,7 @@
 }
 
 .modal__9a792 {
-    background-color: var(--background-secondary)!important
-}
-
-.modal__9a792 {
+    background-color: var(--background-secondary)!important;
     border-radius: 8px;
     min-height: 400px;
     height: 60vh;
@@ -348,4 +345,4 @@
     overflow: hidden
 }
 
-/*# sourceMappingURL=43a7f6d3ff42d7a2.css.map*/
+/*# sourceMappingURL=d5bc7787157852b4.css.map*/

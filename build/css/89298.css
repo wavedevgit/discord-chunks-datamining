@@ -1,6 +1,6 @@
 /**
   Module ID: 89298
-  Original File Name: e1382e245f18decf
+  Original File Name: 6d9fe4cab420a9a4
 **/
 .buttonContainer__7e329 {
     display: flex;
@@ -34,11 +34,10 @@
 }
 
 .button__7e329:active,.button__7e329:hover {
-    color: var(--interactive-hover);
     background-color: rgba(28,29,35,.8)
 }
 
-.button__7e329:active .keybind__7e329,.button__7e329:hover .keybind__7e329 {
+.button__7e329:active,.button__7e329:active .keybind__7e329,.button__7e329:hover,.button__7e329:hover .keybind__7e329 {
     color: var(--interactive-hover)
 }
 
@@ -353,10 +352,7 @@
 }
 
 .activityCard__2af41 {
-    padding: 0!important
-}
-
-.activityCard__2af41 {
+    padding: 0!important;
     background-color: transparent;
     flex: 1
 }
@@ -788,11 +784,7 @@
     border-bottom-color: var(--brand-500)
 }
 
-.tabItem_fe7ab2:active {
-    border-bottom-color: var(--control-brand-foreground)
-}
-
-.tabItem_fe7ab2.selected_fe7ab2 {
+.tabItem_fe7ab2.selected_fe7ab2,.tabItem_fe7ab2:active {
     border-bottom-color: var(--control-brand-foreground)
 }
 
@@ -993,12 +985,9 @@
 .nowPlayingNotificationAnimationWrapper__81a05 {
     width: -moz-max-content!important;
     width: max-content!important;
-    border-radius: 300px!important
-}
-
-.nowPlayingNotificationAnimationWrapper__81a05 {
     left: auto;
     right: auto;
+    border-radius: 300px!important;
     background-color: var(--bg-base-tertiary);
     opacity: .9
 }
@@ -1017,15 +1006,12 @@
 }
 
 .body__81a05 {
-    padding-right: 2px!important
-}
-
-.body__81a05 {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 4px;
-    padding-top: 1px
+    padding-top: 1px;
+    padding-right: 2px!important
 }
 
 .nowPlayingNotificationIcon__81a05 {
@@ -1150,11 +1136,7 @@
     transition: border-color .1s ease-in-out
 }
 
-.channelItemContainer__711d3:hover {
-    background-color: var(--bg-mod-strong)
-}
-
-.channelItemContainer__711d3.channelItemHighlighted__711d3 {
+.channelItemContainer__711d3.channelItemHighlighted__711d3,.channelItemContainer__711d3:hover {
     background-color: var(--bg-mod-strong)
 }
 
@@ -1235,11 +1217,8 @@
 }
 
 .button__46219 {
+    position: relative;
     border: none!important
-}
-
-.button__46219 {
-    position: relative
 }
 
 .cutoutContainer__46219 {
@@ -1472,20 +1451,18 @@
 .layoutLocked_eb35c5 {
     position: absolute;
     top: 0;
-    left: 0;
-    pointer-events: none
+    left: 0
 }
 
-.layoutLocked_eb35c5>* {
+.layoutLocked_eb35c5,.layoutLocked_eb35c5>*,.layoutUnlocked_eb35c5 {
     pointer-events: none
 }
 
 .layoutUnlocked_eb35c5 {
-    pointer-events: none
 }
 
 .layoutUnlocked_eb35c5>* {
     pointer-events: auto
 }
 
-/*# sourceMappingURL=e1382e245f18decf.css.map*/
+/*# sourceMappingURL=6d9fe4cab420a9a4.css.map*/

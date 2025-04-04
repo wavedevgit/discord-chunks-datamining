@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => ey
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(366841),
   G = n(947519),
   B = n(605236),
-  F = n(243778),
-  V = n(314910),
+  V = n(243778),
+  F = n(314910),
   Z = n(84615),
   H = n(429142),
   W = n(813744),
@@ -111,10 +111,10 @@ n(167666), Promise.resolve().then(n.bind(n, 62883)).then(e => {
 }), (0, _.E)({
   getDefaultLinkInterceptor: y.default
 }), (0, en.Un)({
-  createPromise: () => Promise.all([n.e("77298"), n.e("80451"), n.e("30634"), n.e("33551")]).then(n.bind(n, 849493)),
+  createPromise: () => Promise.all([n.e("50448"), n.e("80451"), n.e("30634"), n.e("33551")]).then(n.bind(n, 849493)),
   webpackId: 849493
 }), (0, en.Un)({
-  createPromise: () => Promise.all([n.e("77298"), n.e("80451"), n.e("30634"), n.e("58493")]).then(n.bind(n, 80753)),
+  createPromise: () => Promise.all([n.e("50448"), n.e("80451"), n.e("30634"), n.e("58493")]).then(n.bind(n, 80753)),
   webpackId: 80753
 });
 let eg = (0, en.Un)({
@@ -155,7 +155,7 @@ let eg = (0, en.Un)({
       eO = ep && !em,
       eI = [];
     em || !ec || ey || eI.push(d.z.CLIENT_THEMES_COACHMARK);
-    let [eS, eT] = (0, F.US)(eI, ed.R.SIDEBAR, !0);
+    let [eS, eT] = (0, V.US)(eI, ed.R.SIDEBAR, !0);
     eI.push(d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK);
     let eN = eS === d.z.DEKSTOP_CUSTOM_APP_ICON_COACHMARK,
       eA = eS === d.z.CLIENT_THEMES_COACHMARK;
@@ -193,7 +193,7 @@ let eg = (0, en.Un)({
               children: [(0, r.jsx)(es.Co, {}), (0, r.jsx)(ea.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(v.Wu, {
                 appContext: eu.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(V.yP, {
+                children: (0, r.jsxs)(F.yP, {
                   children: [null != _ ? (0, r.jsx)(eb, {
                     type: _,
                     themeOverride: Q
@@ -210,7 +210,7 @@ let eg = (0, en.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: a()(y ? ef.mobileApp : ef.app),
                                 children: t
-                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(W.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
+                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(p.nKe, {}), (0, r.jsx)(E.Z, {}), (0, r.jsx)(Z.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(H.ot, {}), (0, r.jsx)(p.Ixi, {}), (0, r.jsx)(N.Z, {}), (0, r.jsx)(W.Z, {}), (0, r.jsx)(eg, {}), (0, r.jsx)(eE, {})]
                             })
                           })
                         })

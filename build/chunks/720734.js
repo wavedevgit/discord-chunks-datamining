@@ -1,8 +1,8 @@
 /** Chunk was on 89730 **/
 n.d(t, {
   Z: () => te,
-  m: () => e9
-}), n(47120), n(653041);
+  m: () => e5
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
@@ -143,12 +143,12 @@ function e2(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let e6 = ez.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
-  e3 = 2 * eV.Z.Millis.MINUTE,
-  e4 = 3 * eV.Z.Millis.SECOND,
-  e8 = 30 * eV.Z.Millis.DAY;
+let e3 = ez.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
+  e6 = 2 * eV.Z.Millis.MINUTE,
+  e8 = 3 * eV.Z.Millis.SECOND,
+  e4 = 30 * eV.Z.Millis.DAY;
 
-function e7(e) {
+function e9(e) {
   let {
     speaking: t,
     streaming: n,
@@ -256,7 +256,7 @@ function e7(e) {
         className: a()(e$.avatarWrapper, !p && h && e$.experiment, {
           [e$.plated]: null != u
         }),
-        children: [(0, r.jsx)(e6, {
+        children: [(0, r.jsx)(e3, {
           size: p ? f.EFr["SIZE_".concat(x)] : f.EFr.SIZE_32,
           src: s.getAvatarURL(void 0, p ? x - 4 : 32, !1),
           avatarDecoration: N,
@@ -275,7 +275,7 @@ function e7(e) {
     })
   })
 }
-class e9 extends i.PureComponent {
+class e5 extends i.PureComponent {
   get isCopiedStreakGodlike() {
     let {
       copiedStreak: e
@@ -363,7 +363,7 @@ class e9 extends i.PureComponent {
       },
       onClick: n
     } = e;
-    return (0, r.jsx)(e7, e2(e1({}, this.props), {
+    return (0, r.jsx)(e9, e2(e1({}, this.props), {
       handleClick: n,
       handleMouseLeave: this.handleMouseLeave,
       renderNameTag: this.renderNameTag,
@@ -440,7 +440,7 @@ class e9 extends i.PureComponent {
             nameplate: t,
             hovered: n,
             placement: er.i.ACCOUNT
-          }), this.renderNameZone(e), (0, r.jsx)(e5, e2(e1({}, this.props, this.state), {
+          }), this.renderNameZone(e), (0, r.jsx)(e7, e2(e1({}, this.props, this.state), {
             accountContainerRef: this.containerRef,
             handleMouseEnterMute: this.handleMouseEnterMute,
             handleMouseLeaveMute: this.handleMouseLeaveMute,
@@ -600,7 +600,7 @@ class e9 extends i.PureComponent {
         occluded: i
       } = this.props, {
         hoveringOnMute: s
-      } = this.state, a = void 0 === this.lastSpeakingWhileMutedNotificationTime || Date.now() - this.lastSpeakingWhileMutedNotificationTime > e3;
+      } = this.state, a = void 0 === this.lastSpeakingWhileMutedNotificationTime || Date.now() - this.lastSpeakingWhileMutedNotificationTime > e6;
       r ? s || !e || t || n || i || !a || this.setState({
         shouldShowSpeakingWhileMutedTooltip: !0
       }, () => {
@@ -631,7 +631,7 @@ class e9 extends i.PureComponent {
   }
 }
 
-function e5(e) {
+function e7(e) {
   let {
     selfDeaf: t,
     selfMute: n,
@@ -783,7 +783,7 @@ function te() {
         }),
         l = i.useMemo(() => {
           let e = new Date().getTime();
-          return null != s && (s.status === eX.O0b.ACTIVE || e - s.currentPeriodEnd.getTime() < e8)
+          return null != s && (s.status === eX.O0b.ACTIVE || e - s.currentPeriodEnd.getTime() < e4)
         }, [s]);
       return i.useEffect(() => {
         (async () => {
@@ -807,7 +807,7 @@ function te() {
     };
   return !R && ($ && er.settings.push(c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2), L && (1 === B ? er.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE) : er.settings.push(c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK)), J && er.settings.push(c.z.SOUNDBOARD_VOLUME_EDUCATION), M && er.settings.push(c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK), U && er.avatar.push(c.z.PREMIUM_SUBSCRIPTION_APRIL_MARKETING_DECO_TOOLTIP), F && er.avatar.push(c.z.EXPIRING_STATUS_COACHMARK)), (0, r.jsx)(P.Gt, {
     value: ee,
-    children: (0, r.jsx)(e9, {
+    children: (0, r.jsx)(e5, {
       currentUser: t,
       activities: s,
       applicationStream: d,
@@ -931,7 +931,7 @@ function tn(e) {
   return i.useEffect(() => {
     let e;
     return Z && R && (e = setTimeout(() => {
-      X(!0), e = setTimeout(() => X(!1), e4)
+      X(!0), e = setTimeout(() => X(!1), e8)
     }, 300)), () => {
       X(!1), clearTimeout(e)
     }

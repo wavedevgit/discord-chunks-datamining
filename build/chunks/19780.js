@@ -5,7 +5,7 @@ n.d(t, {
   ZP: () => z,
   lx: () => W,
   ml: () => H
-}), n(411104);
+}), n(415506);
 var o, a = n(442837),
   s = n(570140),
   l = n(437263),
@@ -229,11 +229,11 @@ function B() {
   return !0
 }
 
-function F(e) {
+function V(e) {
   return e.connection === r
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -377,7 +377,7 @@ let K = new Y(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_STATE: G,
   RTC_CONNECTION_PING: B,
   RTC_CONNECTION_LOSS_RATE: B,
-  RTC_CONNECTION_UPDATE_ID: F,
+  RTC_CONNECTION_UPDATE_ID: V,
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: B,
   RTC_CONNECTION_CLIENT_CONNECT: B,
   RTC_CONNECTION_CLIENT_DISCONNECT: B,
@@ -393,7 +393,7 @@ let K = new Y(s.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: k,
   CALL_DELETE: M,
   APP_STATE_UPDATE: U,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

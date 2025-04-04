@@ -1,6 +1,6 @@
 /**
   Module ID: 28102
-  Original File Name: 71aeea83b0d37e74
+  Original File Name: eb65ded6ffd633c9
 **/
 .wrapper__889ee {
     width: auto
@@ -13,11 +13,7 @@
     cursor: crosshair
 }
 
-.saturation__889ee>div {
-    border-radius: 3px
-}
-
-.saturation__889ee>div>div {
+.saturation__889ee>div,.saturation__889ee>div>div {
     border-radius: 3px
 }
 
@@ -40,10 +36,7 @@
     height: 16px!important;
     width: 8px!important;
     margin-top: -3px!important;
-    border-radius: 3px!important
-}
-
-.hue__889ee>div>div>div>div {
+    border-radius: 3px!important;
     cursor: ew-resize
 }
 
@@ -51,4 +44,4 @@
     forced-color-adjust: none
 }
 
-/*# sourceMappingURL=71aeea83b0d37e74.css.map*/
+/*# sourceMappingURL=eb65ded6ffd633c9.css.map*/

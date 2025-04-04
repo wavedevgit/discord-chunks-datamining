@@ -5,10 +5,10 @@ n.d(t, {
   By: () => j,
   Lu: () => U,
   e9: () => W,
-  hG: () => F,
+  hG: () => V,
   nd: () => H,
   yT: () => Y
-}), n(411104), n(230036), n(47120);
+}), n(415506), n(642613), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -288,7 +288,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     proratedInvoice: t,
     renewalInvoice: n
@@ -307,7 +307,7 @@ function F(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     isUpdate: t,
     currentInvoice: n,
@@ -429,7 +429,7 @@ function H(e) {
           direction: v ? h.Z.Directions.UP : h.Z.Directions.DOWN,
           className: A.subscriptionDetailsToggleCaret
         })]
-      }), v ? (0, r.jsx)(V, {
+      }), v ? (0, r.jsx)(F, {
         isUpdate: s,
         currentInvoice: y,
         newInvoice: o,

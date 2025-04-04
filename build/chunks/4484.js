@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => D
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -45,8 +45,8 @@ let D = i.forwardRef(function(e, t) {
     required: U,
     textAreaPaddingClassName: G,
     onChange: B,
-    onPaste: F,
-    onResize: V,
+    onPaste: V,
+    onResize: F,
     onFocus: Z,
     onBlur: H,
     onKeyDown: W,
@@ -159,7 +159,7 @@ let D = i.forwardRef(function(e, t) {
       ignoreTrailingEmptyNodes: !0
     }), t, e)
   }, [D.id, eO, q, eI, ee]);
-  (0, O.Z)(t, eO, D, eS), (0, T.Z)(eO, ep, V);
+  (0, O.Z)(t, eO, D, eS), (0, T.Z)(eO, ep, F);
   let {
     handleKeyDown: eT,
     handleKeyUp: eN
@@ -178,7 +178,7 @@ let D = i.forwardRef(function(e, t) {
   }), {
     handlePaste: eA,
     handleGlobalPaste: eC
-  } = (0, S.Z)(eO, eE, F), eR = i.useCallback(e => {
+  } = (0, S.Z)(eO, eE, V), eR = i.useCallback(e => {
     null == Q || Q()
   }, [Q]), eP = i.useCallback(e => {
     e !== eh.current ? eg.current && (null == B || B(null, (0, g.sk)(e, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: 291061a1e050d8d3
+  Original File Name: cb24da9b09554431
 **/
 .container__05cdc {
     display: flex
@@ -37,10 +37,7 @@
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important
-}
-
-.avatar__28d93 {
+    width: 20px!important;
     margin-right: 8px
 }
 
@@ -535,4 +532,4 @@
     max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=291061a1e050d8d3.css.map*/
+/*# sourceMappingURL=cb24da9b09554431.css.map*/

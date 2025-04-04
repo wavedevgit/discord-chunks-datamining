@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => M
-}), n(301563);
+}), n(35282);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -71,8 +71,8 @@ function M(e) {
     [D.fullSize]: U === w.y0.FULL_SIZE
   }, {
     interactionSource: B,
-    interactionSourceId: F
-  } = (0, b.Xo)(), V = (0, _.Z)({
+    interactionSourceId: V
+  } = (0, b.Xo)(), F = (0, _.Z)({
     activity: L,
     user: n
   }), Z = (0, g.Z)(L), {
@@ -83,7 +83,7 @@ function M(e) {
     display: "live",
     user: n,
     activity: L,
-    entry: V,
+    entry: F,
     analyticsLocations: W
   }), K = (0, m.Z)({
     userId: n.id,
@@ -135,7 +135,7 @@ function M(e) {
     });
   if (null === U) return null;
   let X = null != (t = L.application_id) ? t : L.name,
-    J = B === w.n_.ACTIVITY && F === X;
+    J = B === w.n_.ACTIVITY && V === X;
   return (0, r.jsx)(u.Gt, {
     value: W,
     children: (0, r.jsx)(I.Z, {
@@ -146,8 +146,8 @@ function M(e) {
         guildId: M,
         profileType: U,
         sourceId: X,
-        sourceDetails: null == V ? (0, E.Z)(L) : null,
-        entry: V,
+        sourceDetails: null == F ? (0, E.Z)(L) : null,
+        entry: F,
         sourceType: w.n_.ACTIVITY,
         onAction: Y,
         children: () => (0, r.jsx)(v.Z, {
@@ -163,7 +163,7 @@ function M(e) {
             display: "live",
             user: n,
             activity: L,
-            entry: V,
+            entry: F,
             onClose: j,
             children: e
           }),

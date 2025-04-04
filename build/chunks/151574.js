@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => W
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -92,8 +92,8 @@ function j(e, t) {
 let U = 4,
   G = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_CONTAINER_PADDING),
   B = (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_SIZE),
-  F = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
-  V = () => Promise.resolve();
+  V = 2 * B + (0, u.Mg)(d.Z.EXPRESSION_SUGGESTIONS_STICKER_SUGGESTION_MARGIN) + 2 * G,
+  F = () => Promise.resolve();
 
 function Z(e) {
   let {
@@ -151,8 +151,8 @@ function H(e) {
   }, [a]), _ = (0, l.ZP)({
     id: "expression-suggestions-stickers",
     isEnabled: !0,
-    scrollToStart: V,
-    scrollToEnd: V,
+    scrollToStart: F,
+    scrollToEnd: F,
     orientation: c.hy.HORIZONTAL,
     setFocus: f,
     useVirtualFocus: !0
@@ -192,7 +192,7 @@ let W = i.memo(function(e) {
     onSelectSticker: c,
     stickerIconVisible: u = !1,
     submitButtonVisible: d = !1
-  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [V, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(V, D, o), {
+  } = e, m = i.useContext(h.ZP), [O, I] = i.useState(null), [D, x] = i.useState(!1), [j, U] = i.useState(null), G = (0, g.Iu)(e => null != e.activeView), B = i.useRef(null), [F, W] = i.useState(""), [Y, K] = i.useState(""), [z, q] = i.useState(!1), [Q, X] = i.useState(!1), J = (0, N.Z)(F, D, o), {
     analyticsLocations: $
   } = (0, p.ZP)(_.Z.EXPRESSION_SUGGESTIONS), {
     handleTextChange: ee,
@@ -260,8 +260,8 @@ let W = i.memo(function(e) {
     el = i.useRef([]),
     ec = i.useRef(!1);
   i.useEffect(() => {
-    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(V), K(V))), ec.current = eo
-  }, [m, eo, J, V]);
+    eo && (el.current = J), eo !== ec.current && (m.emit(eo ? "sticker-suggestions-shown" : "sticker-suggestions-hidden"), eo && ((0, A.Tk)(F), K(F))), ec.current = eo
+  }, [m, eo, J, F]);
   let eu = !eo,
     ed = eo ? J : el.current;
   return (0, r.jsx)(p.Gt, {
@@ -276,7 +276,7 @@ let W = i.memo(function(e) {
       }),
       innerRef: B,
       style: {
-        minWidth: F
+        minWidth: V
       },
       onClick: () => {
         var e;
@@ -330,7 +330,7 @@ let W = i.memo(function(e) {
             children: [(0, r.jsx)(f.Text, {
               className: w.descriptionText,
               style: {
-                maxWidth: F
+                maxWidth: V
               },
               variant: "text-sm/normal",
               children: null != j ? P.NW.format(P.t["5gglIi"], {

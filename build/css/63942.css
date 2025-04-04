@@ -1,15 +1,12 @@
 /**
   Module ID: 63942
-  Original File Name: 912befe4cc5d8540
+  Original File Name: a9044b9420cdc637
 **/
-.modalRoot_de2fa0 {
-    border: none!important
-}
-
 .modalRoot_de2fa0 {
     border-radius: 12px;
     width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px);
-    min-width: 500px
+    min-width: 500px;
+    border: none!important
 }
 
 .modalBody_de2fa0 {
@@ -767,4 +764,4 @@
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=912befe4cc5d8540.css.map*/
+/*# sourceMappingURL=a9044b9420cdc637.css.map*/

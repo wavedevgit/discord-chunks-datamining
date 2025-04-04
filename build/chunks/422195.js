@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F
-}), n(47120);
+  Z: () => V
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -196,7 +196,7 @@ let P = (0, m.Mg)(s.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LIST_PADDING),
       }, [s, o, d])
     }
   },
-  F = e => {
+  V = e => {
     let {
       stickersListRef: t,
       channel: n

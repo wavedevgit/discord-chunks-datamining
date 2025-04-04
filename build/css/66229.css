@@ -1,6 +1,6 @@
 /**
   Module ID: 66229
-  Original File Name: e8c9bbe58e8158a1
+  Original File Name: dfe6f1c78a4e9ac9
 **/
 .container__0f2e8 {
     display: flex;
@@ -73,11 +73,7 @@
     object-fit: contain
 }
 
-.selected__0f2e8 {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__0f2e8:hover {
+.selected__0f2e8,.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -166,4 +162,4 @@ img.thumbnail__0f2e8 {
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=e8c9bbe58e8158a1.css.map*/
+/*# sourceMappingURL=dfe6f1c78a4e9ac9.css.map*/

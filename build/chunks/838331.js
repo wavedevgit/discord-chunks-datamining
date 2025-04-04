@@ -4,7 +4,7 @@ n.d(t, {
   A7: () => N,
   hQ: () => R,
   lo: () => w
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -129,14 +129,14 @@ function R(e) {
   let U = n(w),
     G = 0 === U.length,
     B = i.useId(),
-    F = i.useCallback(() => new Promise(e => {
+    V = i.useCallback(() => new Promise(e => {
       let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
     }), []),
-    V = i.useCallback(() => new Promise(e => {
+    F = i.useCallback(() => new Promise(e => {
       let t = j.current;
       if (null == t) return e();
       t.scrollToTop({
@@ -155,8 +155,8 @@ function R(e) {
       id: B,
       isEnabled: !0,
       useVirtualFocus: !0,
-      scrollToStart: F,
-      scrollToEnd: V,
+      scrollToStart: V,
+      scrollToEnd: F,
       setFocus: Z
     }),
     W = P ? d.Tv : d.lW;

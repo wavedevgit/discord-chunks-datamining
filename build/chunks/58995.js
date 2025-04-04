@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => k
-}), n(47120), n(653041);
+}), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -126,8 +126,8 @@ function M(e) {
     location: "gift-button"
   }), j = [];
   k && M && j.push(l.z.NITROWEEN_COACHMARKS);
-  let [U, G] = (0, p.US)(j), B = null != U, F = (0, O.Ft)(n), {
-    Component: V,
+  let [U, G] = (0, p.US)(j), B = null != U, V = (0, O.Ft)(n), {
+    Component: F,
     events: Z,
     play: H
   } = (0, c.$)();
@@ -135,7 +135,7 @@ function M(e) {
   let W = () => {
     (0, h.Z)({
       isGift: !0,
-      giftRecipient: null == F ? void 0 : F,
+      giftRecipient: null == V ? void 0 : V,
       giftMessage: N.NW.string(N.t["rX/m/f"]),
       initialPlanId: null,
       analyticsLocations: o,
@@ -170,7 +170,7 @@ function M(e) {
       }
     }, Z), {
       children: (0, r.jsx)(x, {
-        animatedIconComponent: V,
+        animatedIconComponent: F,
         hovered: a,
         isCoachmarkDismissed: !B
       })

@@ -1,6 +1,6 @@
 /**
   Module ID: 67544
-  Original File Name: e343cbda42204ec6
+  Original File Name: 0d217fce7b3af435
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -154,14 +154,11 @@
 }
 
 .errorNotificationContainer_e13eda {
-    position: relative!important
-}
-
-.errorNotificationContainer_e13eda {
     box-shadow: var(--shadow-border) var(--shadow-high);
     background-color: rgba(19,19,24,.95);
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    position: relative!important
 }
 
 .errorNotificationWrapper_e13eda {
@@ -1223,4 +1220,4 @@
     cursor: url(/assets/dfb72fed71c8e261.svg),pointer
 }
 
-/*# sourceMappingURL=e343cbda42204ec6.css.map*/
+/*# sourceMappingURL=0d217fce7b3af435.css.map*/

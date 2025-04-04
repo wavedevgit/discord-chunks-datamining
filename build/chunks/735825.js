@@ -10,7 +10,7 @@ n.d(t, {
   nW: () => a,
   qY: () => u,
   uv: () => i
-}), n(47120);
+}), n(388685);
 var r = function(e) {
   return e.FREE_AVATAR_DECO_1_MONTH = "1297846842163200000", e
 }({});

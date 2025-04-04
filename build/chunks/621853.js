@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => ea
-}), n(266796), n(47120), n(789020);
+}), n(953529), n(388685), n(997841);
 var r = n(392711),
   i = n.n(r),
   o = n(846519),
@@ -115,14 +115,14 @@ function B(e) {
   I.add(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
   I.delete(t)
 }
 
-function V(e) {
+function F(e) {
   return i()(e).map(e => ({
     key: e.id,
     user: new l.Z(e),
@@ -136,11 +136,11 @@ function V(e) {
 }
 
 function Z(e) {
-  I.delete(e.userId), w.set(e.userId, V(e.mutualFriends)), D.set(e.userId, e.mutualFriends.length)
+  I.delete(e.userId), w.set(e.userId, F(e.mutualFriends)), D.set(e.userId, e.mutualFriends.length)
 }
 
 function H(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, G, B, F, Z, H, W, Y, K, z, q, Q, X;
+  var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, G, B, V, Z, H, W, Y, K, z, q, Q, X;
   let {
     userProfile: J
   } = e, $ = null != (k = null == (t = J.guild_member_profile) ? void 0 : t.guild_id) ? k : v;
@@ -164,7 +164,7 @@ function H(e) {
     let e = J.mutual_friends_count;
     D.set(J.user.id, e), 0 === e && w.set(J.user.id, x)
   }
-  null != J.mutual_friends && (w.set(J.user.id, V(J.mutual_friends)), D.set(J.user.id, J.mutual_friends.length));
+  null != J.mutual_friends && (w.set(J.user.id, F(J.mutual_friends)), D.set(J.user.id, J.mutual_friends.length));
   let ee = null != J.premium_since ? new Date(J.premium_since) : null,
     et = null != J.premium_guild_since ? new Date(J.premium_guild_since) : null,
     en = J.application;
@@ -178,7 +178,7 @@ function H(e) {
       profileEffectId: null == (f = J.user_profile) || null == (d = f.profile_effect) ? void 0 : d.id,
       profileEffectExpiresAt: null == (g = J.user_profile) || null == (h = g.profile_effect) ? void 0 : h.expires_at,
       pronouns: null != (B = null == (b = J.user_profile) ? void 0 : b.pronouns) ? B : "",
-      connectedAccounts: null != (F = J.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? F : [],
+      connectedAccounts: null != (V = J.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? V : [],
       applicationRoleConnections: null != (Z = J.application_role_connections) ? Z : [],
       premiumSince: ee,
       premiumType: J.premium_type,
@@ -452,7 +452,7 @@ class ei extends f.Z {
       USER_PROFILE_UPDATE_FAILURE: X,
       MUTUAL_FRIENDS_FETCH_START: B,
       MUTUAL_FRIENDS_FETCH_SUCCESS: Z,
-      MUTUAL_FRIENDS_FETCH_FAILURE: F,
+      MUTUAL_FRIENDS_FETCH_FAILURE: V,
       USER_UPDATE: J,
       GUILD_MEMBER_UPDATE: J,
       GUILD_JOIN: $,

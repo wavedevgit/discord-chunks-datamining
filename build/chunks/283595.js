@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => Z
-}), n(47120), n(789020), n(177593);
+}), n(388685), n(997841), n(358797);
 var r, i = n(392711),
   o = n.n(i),
   a = n(442837),
@@ -149,7 +149,7 @@ function U() {
 }
 
 function G(e) {
-  let t = F();
+  let t = V();
   return Object.keys(t).forEach(n => {
     e(t[n]) || delete t[n]
   }), t
@@ -161,10 +161,10 @@ function B(e, t) {
   return null != (n = v[r]) ? n : O[r]
 }
 
-function F() {
+function V() {
   return h({}, O, v)
 }
-class V extends(r = a.ZP.Store) {
+class F extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.default);
     let e = s.K.get(E);
@@ -174,10 +174,10 @@ class V extends(r = a.ZP.Store) {
     return G(e => !e.isHidden())
   }
   getAllLibraryApplications() {
-    return F()
+    return V()
   }
   hasLibraryApplication() {
-    return Object.keys(F()).length > 0
+    return Object.keys(V()).length > 0
   }
   hasApplication(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
@@ -198,7 +198,7 @@ class V extends(r = a.ZP.Store) {
         o = null != (r = v[i]) ? r : O[i];
       if (null != o && (0, d.Je)(o) && (t || !o.isHidden())) return o
     }
-    let i = F();
+    let i = V();
     for (let n in i)
       if (i[n].id === e) {
         let e = i[n];
@@ -215,7 +215,7 @@ class V extends(r = a.ZP.Store) {
     return y
   }
   get entitledBranchIds() {
-    return o()(F()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
+    return o()(V()).values().filter(e => (0, d.Je)(e)).map(e => e.branchId).value()
   }
   get hasRemovedLibraryApplicationThisSession() {
     return N
@@ -226,8 +226,8 @@ class V extends(r = a.ZP.Store) {
     })
   }
 }
-p(V, "displayName", "LibraryApplicationStore");
-let Z = new V(l.Z, {
+p(F, "displayName", "LibraryApplicationStore");
+let Z = new F(l.Z, {
   LOGOUT: P,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,

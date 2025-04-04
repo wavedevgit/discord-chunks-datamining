@@ -108,7 +108,7 @@ function w(e) {
     null != x && (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("50506"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("94342"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, R(A({}, t), {
         viewingChannelId: w,
         user: L,
@@ -122,7 +122,7 @@ function w(e) {
     className: t,
     children: N
   });
-  let F = e => (0, r.jsx)(h.Z, R(A({
+  let V = e => (0, r.jsx)(h.Z, R(A({
     className: t,
     onContextMenu: k,
     color: B
@@ -131,7 +131,7 @@ function w(e) {
   }));
   return C ? (0, r.jsx)(f.Gt, {
     value: D,
-    children: F()
+    children: V()
   }) : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(c.yRy, {
@@ -146,7 +146,7 @@ function w(e) {
       }, e))),
       position: s.tq ? "top" : "right",
       clickTrap: !0,
-      children: e => F(e)
+      children: e => V(e)
     })
   })
 }

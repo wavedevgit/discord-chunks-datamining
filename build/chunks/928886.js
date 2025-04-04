@@ -45,7 +45,7 @@ function S(e) {
     isGift: w,
     selectedGiftStyle: D,
     giftRecipient: L
-  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && y.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), F = null == B || null == (t = B.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), V = !w && null != B && null != T && F, {
+  } = (0, m.wD)(), x = w && (0, h.pO)(L) && N === E.h8.CONFIRM && null != D && (null == P ? void 0 : P.productLine) !== b.POd.COLLECTIBLES, M = null != n && null != N, k = [E.h8.SKU_SELECT, E.h8.SELECT_FREE_SKU], j = null != N && !k.includes(N) && null != T, U = (0, d.N)(o), G = !w && null != U && null != T && y.nG[U.trial_id].skus.includes(T), B = (0, u.Ng)(), V = null == B || null == (t = B.discount) ? void 0 : t.plan_ids.some(e => y.GP[e].skuId === T), F = !w && null != B && null != T && V, {
     enabled: Z
   } = c.ZP.useExperiment({
     location: "PaymentModalHeader"
@@ -74,10 +74,10 @@ function S(e) {
       premiumType: y.y7[T],
       onClose: S,
       showTrialBadge: G,
-      showDiscountBadge: V,
+      showDiscountBadge: F,
       isGift: w,
       giftRecipient: L,
       useWinterTheme: W
     })), e
-  }, [D, S, C, n, A, T, N, G, V, x, j, M, R, w, L, W])
+  }, [D, S, C, n, A, T, N, G, F, x, j, M, R, w, L, W])
 }

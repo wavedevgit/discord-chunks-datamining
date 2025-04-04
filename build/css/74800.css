@@ -1,6 +1,6 @@
 /**
   Module ID: 74800
-  Original File Name: d5ba42d57a17c331
+  Original File Name: 731a8f19b88fcf44
 **/
 .labelWrapper_abe771 {
     display: flex;
@@ -48,11 +48,7 @@
     }
 }
 
-.menuItem__3751b:hover .channelName__3751b {
-    color: var(--white)
-}
-
-.menuItem__3751b:hover .subtext__3751b {
+.menuItem__3751b:hover .channelName__3751b,.menuItem__3751b:hover .subtext__3751b {
     color: var(--white)
 }
 
@@ -71,11 +67,7 @@
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
@@ -99,4 +91,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=d5ba42d57a17c331.css.map*/
+/*# sourceMappingURL=731a8f19b88fcf44.css.map*/

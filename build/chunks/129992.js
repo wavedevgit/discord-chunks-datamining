@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(806998),
   i = r(918720),
@@ -72,7 +72,7 @@ t.exports = function(t, e) {
       text: m.getText().slice(0, g) + _.getText().slice(v),
       characterList: o
     }),
-    E = b && 0 === g && 0 === v && _.getParentKey() === d && null == _.getPrevSiblingKey() ? a([
+    C = b && 0 === g && 0 === v && _.getParentKey() === d && null == _.getPrevSiblingKey() ? a([
       [d, null]
     ]) : h.toSeq().skipUntil(function(t, e) {
       return e === d
@@ -85,10 +85,10 @@ t.exports = function(t, e) {
     ])).map(function(t, e) {
       return e === d ? k : null
     }),
-    C = h.merge(E).filter(function(t) {
+    E = h.merge(C).filter(function(t) {
       return !!t
     });
-  return b && m !== _ && (C = (r = C).withMutations(function(t) {
+  return b && m !== _ && (E = (r = E).withMutations(function(t) {
     if (u(m.getKey(), t, function(e) {
         return e.merge({
           nextSibling: l(e, t, h),
@@ -178,7 +178,7 @@ t.exports = function(t, e) {
       })
     }
   })), t.merge({
-    blockMap: C,
+    blockMap: E,
     selectionBefore: e,
     selectionAfter: e.merge({
       anchorKey: d,

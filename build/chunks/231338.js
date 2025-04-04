@@ -10,7 +10,7 @@ n.d(t, {
   BR: () => r.Z,
   BZ: () => K,
   Cw: () => P,
-  Cy: () => F,
+  Cy: () => V,
   EK: () => ep,
   ET: () => em,
   Et: () => z,
@@ -62,9 +62,9 @@ n.d(t, {
   xr: () => d,
   yA: () => en,
   yX: () => er,
-  yY: () => V,
+  yY: () => F,
   zM: () => q
-}), n(47120);
+}), n(388685);
 var r = n(290926),
   i = n(149765),
   o = n(860911);
@@ -246,9 +246,9 @@ let U = Object.freeze({
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
   B = () => null,
-  F = () => Promise.resolve(),
-  V = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
-  Z = i.$e(...V),
+  V = () => Promise.resolve(),
+  F = [U.KICK_MEMBERS, U.BAN_MEMBERS, U.ADMINISTRATOR, U.MANAGE_CHANNELS, U.MANAGE_GUILD, U.MANAGE_ROLES, U.MANAGE_MESSAGES, U.MANAGE_THREADS, U.MODERATE_MEMBERS],
+  Z = i.$e(...F),
   H = 1,
   W = 6463,
   Y = 10,

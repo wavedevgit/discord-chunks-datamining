@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => R
-}), n(47120);
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -90,7 +90,7 @@ function R(e) {
   } = (0, s.cj)([_.Z], () => ({
     status: (0, c.Z)(U) ? v.Skl.STREAMING : _.Z.getStatus(t.id),
     isMobileOnline: _.Z.isMobileOnline(t.id)
-  })), F = void 0 !== w ? w : G, V = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
+  })), V = void 0 !== w ? w : G, F = S === y.y0.FULL_SIZE ? l.EFr.SIZE_120 : l.EFr.SIZE_80, Z = a()(I.avatar, {
     [I.biteSize]: S === y.y0.BITE_SIZE,
     [I.fullSize]: S === y.y0.FULL_SIZE,
     [I.panel]: S === y.y0.PANEL
@@ -101,15 +101,15 @@ function R(e) {
   } = (0, E.Z)({
     user: t,
     guildId: null != n ? n.guildId : o,
-    size: V,
+    size: F,
     animateOnHover: N
   }), K = (0, r.jsx)(C, {
     src: W,
     avatarDecoration: H,
-    size: V,
+    size: F,
     "aria-label": t.username,
     imageClassName: null != R ? I.overlay : void 0,
-    status: k ? v.Skl.UNKNOWN : F,
+    status: k ? v.Skl.UNKNOWN : V,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,

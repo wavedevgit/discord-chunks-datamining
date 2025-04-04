@@ -1,6 +1,6 @@
 /**
   Module ID: 54030
-  Original File Name: a2d486226dd66ce6
+  Original File Name: 81b4b2af52888be5
 **/
 .container_e73f2a {
     width: 350px;
@@ -684,13 +684,15 @@
 }
 
 .wrapper__88a53 {
-    box-sizing: border-box;
     position: absolute
+}
+
+.wrapper__88a53,.wrapper__88a53>* {
+    box-sizing: border-box
 }
 
 .wrapper__88a53>* {
     position: relative;
-    box-sizing: border-box;
     width: 100%;
     height: 100%
 }
@@ -908,11 +910,7 @@
     cursor: pointer
 }
 
-.icon__777cc:hover {
-    opacity: 1
-}
-
-.icon__777cc.toggledIconOn__777cc {
+.icon__777cc.toggledIconOn__777cc,.icon__777cc:hover {
     opacity: 1
 }
 
@@ -1161,17 +1159,14 @@
 }
 
 .header__9835e {
-    border-radius: 0!important;
-    background-color: var(--background-secondary)!important
-}
-
-.header__9835e {
     position: relative;
     flex-shrink: 0;
     height: 48px;
     box-sizing: border-box;
+    border-radius: 0!important;
     z-index: 2;
-    align-items: center
+    align-items: center;
+    background-color: var(--background-secondary)!important
 }
 
 .sidebar__9835e .header__9835e {
@@ -1258,20 +1253,14 @@
 }
 
 .base_e3f659 {
+    display: flex;
+    flex-direction: row;
+    width: 312px;
     background: var(--background-tertiary)!important
 }
 
-.base_e3f659 {
-    display: flex;
-    flex-direction: row;
-    width: 312px
-}
-
 .widget_e3f659 {
-    border-radius: 5px!important
-}
-
-.widget_e3f659 {
+    border-radius: 5px!important;
     overflow: hidden
 }
 
@@ -1923,11 +1912,7 @@
     object-fit: contain
 }
 
-.selected__0f2e8 {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__0f2e8:hover {
+.selected__0f2e8,.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -2182,11 +2167,7 @@ img.thumbnail__0f2e8 {
     font-weight: 500
 }
 
-.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e {
-    background-color: transparent
-}
-
-.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
+.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e,.theme-dark .inGame_ee4d7e:not(.inGameActive_ee4d7e) .messages_ee4d7e .scroller_ee4d7e {
     background-color: transparent
 }
 
@@ -2418,11 +2399,8 @@ img.thumbnail__0f2e8 {
 }
 
 .lockedContainer__99ff4 {
-    overflow: hidden!important
-}
-
-.lockedContainer__99ff4 {
     margin-bottom: 56px;
+    overflow: hidden!important;
     pointer-events: none
 }
 
@@ -2541,11 +2519,8 @@ img.thumbnail__0f2e8 {
 }
 
 .dragContainer__31ce1 {
-    background-color: transparent!important
-}
-
-.dragContainer__31ce1 {
     border: none;
+    background-color: transparent!important;
     display: flex
 }
 
@@ -2663,4 +2638,4 @@ img.thumbnail__0f2e8 {
     transform: translateX(-50%)
 }
 
-/*# sourceMappingURL=a2d486226dd66ce6.css.map*/
+/*# sourceMappingURL=81b4b2af52888be5.css.map*/

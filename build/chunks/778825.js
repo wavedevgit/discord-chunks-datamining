@@ -2,7 +2,7 @@
 "use strict";
 let r, i, o, a, s, l, c, u, d, f, _;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 });
 var p, h = n(442837),
   m = n(570140),
@@ -183,7 +183,7 @@ class B extends(p = h.ZP.Store) {
   }
 }
 E(B, "displayName", "GuildIdentitySettingsStore");
-let F = new B(m.Z, {
+let V = new B(m.Z, {
   GUILD_IDENTITY_SETTINGS_INIT: v,
   GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: G,
   GUILD_IDENTITY_SETTINGS_SET_GUILD: S,

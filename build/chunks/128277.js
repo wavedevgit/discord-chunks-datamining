@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => D
-}), n(301563);
+}), n(35282);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -118,7 +118,7 @@ function D(e) {
         }, n))
       })
     },
-    F = () => {
+    V = () => {
       let {
         timestamps: e
       } = o;
@@ -132,7 +132,7 @@ function D(e) {
         end: n
       })
     },
-    V = () => t.id === n.id ? null : (0, r.jsx)("div", {
+    F = () => t.id === n.id ? null : (0, r.jsx)("div", {
       className: a()(A.actions, L),
       children: (0, r.jsx)(S.Z, {
         user: t,
@@ -184,10 +184,10 @@ function D(e) {
               user: t,
               activity: o,
               className: A.badges
-            }), F()]
-          }), D === N.y0.FULL_SIZE && V()]
+            }), V()]
+          }), D === N.y0.FULL_SIZE && F()]
         })
-      }), D !== N.y0.FULL_SIZE && V()]
+      }), D !== N.y0.FULL_SIZE && F()]
     })
   })
 }

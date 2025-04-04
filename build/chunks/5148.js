@@ -1,4 +1,4 @@
-/** Chunk was on 68880 **/
+/** Chunk was on 86029 **/
 "use strict";
 var n = r(399932),
   i = r(763453),
@@ -22,7 +22,7 @@ var n = r(399932),
   w = r(343623),
   x = r(344751),
   k = r(593121),
-  E = r(446466);
+  C = r(446466);
 t.exports = {
   Editor: f,
   EditorBlock: p,
@@ -47,5 +47,5 @@ t.exports = {
   convertToRaw: S,
   genKey: x,
   getDefaultKeyBinding: k,
-  getVisibleSelectionRect: E
+  getVisibleSelectionRect: C
 }

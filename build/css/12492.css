@@ -1,6 +1,6 @@
 /**
   Module ID: 12492
-  Original File Name: a53de935fc635093
+  Original File Name: 751a7437644933ec
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -15,47 +15,38 @@
 }
 
 .elevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .elevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .elevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .darkElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .lightElevationLow_fcf29c {
-    box-shadow: 0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-low)
 }
 
 .lightElevationHigh_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high)
 }
 
 .lightElevationBorderLow_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 1px 5px var(--opacity-black-20);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .elevationBorderHigh_fcf29c,.elevationBorderLow_fcf29c,.elevationHigh_fcf29c,.elevationLow_fcf29c,.lightElevationBorderHigh_fcf29c {
-    box-shadow: 0 0 0 1px hsl(var(--primary-300-hsl) / 0.3),0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .container_fcf29c {
-    box-shadow: 0 2px 10px 0 var(--opacity-black-8);
     box-shadow: var(--legacy-elevation-high);
     padding: 10px 10px 10px 16px;
     overflow: hidden;
@@ -478,14 +469,7 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51 {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    opacity: 1
-}
-
-.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
@@ -708,14 +692,11 @@ div:has(>div>.container_f792fa) {
 }
 
 .container_f792fa {
-    background-color: var(--bg-surface-overlay)!important
-}
-
-.container_f792fa {
     position: relative;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    background-color: var(--bg-surface-overlay)!important;
     height: 100vh;
     width: 100vw;
     border-radius: 0;
@@ -961,4 +942,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=a53de935fc635093.css.map*/
+/*# sourceMappingURL=751a7437644933ec.css.map*/

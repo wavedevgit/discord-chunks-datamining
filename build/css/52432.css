@@ -1,6 +1,6 @@
 /**
   Module ID: 52432
-  Original File Name: 70059be65a352a80
+  Original File Name: 594c026e86cb27f1
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -101,10 +101,7 @@
 }
 
 .emojiContainer__5c58b .emoji__5c58b.selected__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
-    filter: none
-}
-
-.emojiContainer__5c58b .emoji__5c58b.selected__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
+    filter: none;
     opacity: 1
 }
 
@@ -187,4 +184,4 @@
     background-image: url(/assets/8f1e1e90bea53650.svg)
 }
 
-/*# sourceMappingURL=70059be65a352a80.css.map*/
+/*# sourceMappingURL=594c026e86cb27f1.css.map*/

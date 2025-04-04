@@ -2,9 +2,9 @@
 "use strict";
 let r, i, o, a, s, l, c;
 n.d(t, {
-  C: () => V,
+  C: () => F,
   Z: () => eo
-}), n(47120);
+}), n(388685);
 var u, d = n(392711),
   f = n.n(d),
   _ = n(442837),
@@ -94,7 +94,7 @@ function B(e) {
   }
 }
 
-function F(e, t) {
+function V(e, t) {
   if (null == e || null == t || k[e] === t) return !1;
   let n = y.Z.getChannel(t),
     r = null != n && (0, g.zi)(n.type),
@@ -102,7 +102,7 @@ function F(e, t) {
   return !!r && !!i && (k[e] = t, !0)
 }
 
-function V(e) {
+function F(e) {
   let t = y.Z.getMutableBasicGuildChannelsForGuild(e),
     n = f().find(t, e => e.type === T.d4z.GUILD_VOICE);
   return null == n ? void 0 : n.id
@@ -117,7 +117,7 @@ function Z() {
     null != t && (y.Z.hasChannel(t) || j.has(t)) || (delete k[n], e = !0)
   }), f().each(t, e => {
     let t = x[e.id];
-    null == k[e.id] && F(e.id, t)
+    null == k[e.id] && V(e.id, t)
   }), null != l && Date.now() - l >= D && (s = null, e = !0), e
 }
 
@@ -126,7 +126,7 @@ function H(e) {
 }
 
 function W(e) {
-  r = e.sessionId, s = e.selectedVoiceChannelId, x = {}, M = {}, o = e.selectedChannelId, x[e.selectedGuildId] = e.selectedChannelId, F(e.selectedGuildId, o), Z()
+  r = e.sessionId, s = e.selectedVoiceChannelId, x = {}, M = {}, o = e.selectedChannelId, x[e.selectedGuildId] = e.selectedChannelId, V(e.selectedGuildId, o), Z()
 }
 
 function Y() {
@@ -139,7 +139,7 @@ function K(e) {
     channelId: n
   } = e;
   if (void 0 === t) return !1;
-  null == n && (n = B(t)), null != o && n !== o && (i = o), o = n, F(t, n), x[U(t)] !== n && (M[U(t)] = x[U(t)], x[U(t)] = o), G()
+  null == n && (n = B(t)), null != o && n !== o && (i = o), o = n, V(t, n), x[U(t)] !== n && (M[U(t)] = x[U(t)], x[U(t)] = o), G()
 }
 
 function z(e) {
@@ -188,7 +188,7 @@ function J(e) {
   } = e;
   if (null == x[t.id]) {
     let e = B(t.id);
-    x[t.id] = e, F(t.id, e), G()
+    x[t.id] = e, V(t.id, e), G()
   }
 }
 

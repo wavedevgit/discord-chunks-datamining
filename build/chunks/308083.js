@@ -24,15 +24,15 @@ n.d(t, {
   i1: () => M,
   i6: () => L,
   jK: () => N,
-  lt: () => F,
+  lt: () => V,
   mv: () => v,
-  n1: () => V,
+  n1: () => F,
   q2: () => f,
   qC: () => x,
   uw: () => E,
   ym: () => k,
   zv: () => l.z
-}), n(411104), n(47120), n(977457), n(266796);
+}), n(415506), n(388685), n(467055), n(953529);
 var r = n(392711),
   i = n.n(r),
   o = n(913527),
@@ -174,7 +174,7 @@ function B(e, t) {
   return null == e || null == t ? e === t : e.identityGuildId === t.identityGuildId && e.identityEnabled === t.identityEnabled && e.tag === t.tag && e.badge === t.badge
 }
 
-function F(e) {
+function V(e) {
   if (null == e) return null;
   if ("identityGuildId" in e) return e;
   let t = e;
@@ -186,7 +186,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function F(e) {
   return {
     tag: e.tag
   }

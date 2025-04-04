@@ -2,8 +2,8 @@
 "use strict";
 n.d(t, {
   ZP: () => q,
-  jQ: () => F
-}), n(47120);
+  jQ: () => V
+}), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
@@ -77,11 +77,11 @@ function j(e, t) {
 let U = 88,
   G = "remove-wallpaper",
   B = .5;
-var F = function(e) {
+var V = function(e) {
   return e[e.DEFAULT = 0] = "DEFAULT", e[e.COACHMARK = 1] = "COACHMARK", e
 }({});
 
-function V(e) {
+function F(e) {
   let {
     handleClose: t
   } = e;
@@ -354,12 +354,12 @@ let q = function(e) {
       isUpdating: G,
       updateChatWallpaper: B
     } = (0, T.x)(U),
-    F = function() {
+    V = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P.L.USER_DISMISS;
       (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(e), c()
     };
   (0, f.ZP)(() => () => {
-    F(P.L.INDIRECT_ACTION)
+    V(P.L.INDIRECT_ACTION)
   });
   let H = i.useCallback(() => {
       null != l && null != m && void 0 !== m.wallpaperId && (v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
@@ -410,7 +410,7 @@ let q = function(e) {
       isUpdating: G,
       isBlurEnabled: b,
       onBlurEnabledChange: q,
-      onClose: F,
+      onClose: V,
       onApply: H
     }) : (0, r.jsx)(z, {})]
   }), (0, r.jsx)(p.Gt, {
@@ -421,11 +421,11 @@ let q = function(e) {
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: L.container,
-        children: [(null == o ? void 0 : o.pickerType) === 1 ? (0, r.jsx)(V, {
-          handleClose: F,
+        children: [(null == o ? void 0 : o.pickerType) === 1 ? (0, r.jsx)(F, {
+          handleClose: V,
           isPremiumTier2Subscriber: E
         }) : (0, r.jsx)(Z, {
-          handleClose: F,
+          handleClose: V,
           isPremiumTier2Subscriber: E
         }), (0, r.jsx)("div", {
           className: L.divider

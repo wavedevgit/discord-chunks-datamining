@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => B
-}), n(789020);
+}), n(997841);
 var r = n(200651),
   i = n(192379),
   o = n(512722),
@@ -66,8 +66,8 @@ function B(e) {
     handlePaymentSourceAdd: g
   } = e, {
     application: B,
-    purchaseState: F,
-    paymentSources: V,
+    purchaseState: V,
+    paymentSources: F,
     paymentSourceId: Z,
     setHasAcceptedTerms: H,
     skusById: W,
@@ -97,8 +97,8 @@ function B(e) {
   let el = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(B.id) || h.Z.inDevModeForApplication(B.id), [B.id]),
     ec = (0, l.e7)([O.Z], () => O.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(I.Z.ipCountryCodeWithFallback),
-    ed = F === D.A.PURCHASING || F === D.A.COMPLETED,
-    ef = (0, L.m)(V, Z),
+    ed = V === D.A.PURCHASING || V === D.A.COMPLETED,
+    ef = (0, L.m)(F, Z),
     e_ = null != ef ? ef.type : null,
     ep = (0, m.ed)("SKUInvoicePreview"),
     eh = ei.productLine === k.POd.COLLECTIBLES && ep;
@@ -158,7 +158,7 @@ function B(e) {
         tag: c.RB0.H5,
         children: j.NW.string(j.t.mmDvV1)
       }), (0, r.jsx)(_.Z, {
-        paymentSources: Object.values(V),
+        paymentSources: Object.values(F),
         selectedPaymentSourceId: Z,
         onChange: o,
         onPaymentSourceAdd: g,

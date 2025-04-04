@@ -1,6 +1,6 @@
 /**
   Module ID: 83562
-  Original File Name: 46cc82f36e460aeb
+  Original File Name: 582998cf98b73629
 **/
 .wrapper__48b20 {
     position: relative;
@@ -665,11 +665,7 @@
     object-fit: contain
 }
 
-.selected__0f2e8 {
-    background-color: var(--background-modifier-selected)
-}
-
-.selected__0f2e8:hover {
+.selected__0f2e8,.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -778,4 +774,4 @@ img.thumbnail__0f2e8 {
     align-items: stretch
 }
 
-/*# sourceMappingURL=46cc82f36e460aeb.css.map*/
+/*# sourceMappingURL=582998cf98b73629.css.map*/

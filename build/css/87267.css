@@ -1,6 +1,6 @@
 /**
   Module ID: 87267
-  Original File Name: 5142d01824276ade
+  Original File Name: f3f7c9d323cabb3e
 **/
 .container__96e72:hover>.text__96e72 {
     -webkit-text-decoration: underline;
@@ -149,13 +149,10 @@
 }
 
 .downloadLink__1bcc7 {
-    color: var(--white-500)!important
-}
-
-.downloadLink__1bcc7 {
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
+    color: var(--white-500)!important;
     -webkit-text-decoration: none;
     text-decoration: none;
     transition: opacity .15s ease;
@@ -172,11 +169,7 @@
     transition: opacity .15s ease
 }
 
-.forward__1bcc7:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .downloadLink__1bcc7,.enable-forced-colors .forward__1bcc7 {
+.forward__1bcc7:hover,.enable-forced-colors .downloadLink__1bcc7,.enable-forced-colors .forward__1bcc7 {
     opacity: 1
 }
 
@@ -217,4 +210,4 @@
     box-shadow: none!important
 }
 
-/*# sourceMappingURL=5142d01824276ade.css.map*/
+/*# sourceMappingURL=f3f7c9d323cabb3e.css.map*/

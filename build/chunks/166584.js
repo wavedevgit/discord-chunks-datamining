@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => x
-}), n(47120), n(653041), n(230036);
+}), n(388685), n(539854), n(642613);
 var r = n(200651),
   i = n(192379),
   o = n(772848),
@@ -104,9 +104,9 @@ function L(e) {
     onRemoveRole: I
   } = e, T = i.useRef({}), C = (e, t) => {
     null != t ? T.current[e] = t : delete T.current[e]
-  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), F = i.useRef(0);
+  }, [L, x] = i.useState(d), [M, k] = i.useState(P), [j, U] = i.useState(!1), G = i.useRef(null), B = i.useRef(null), V = i.useRef(0);
   i.useLayoutEffect(() => {
-    F.current = 0
+    V.current = 0
   }, [d]), i.useLayoutEffect(() => {
     if (j) return;
     let e = D(G.current),
@@ -119,7 +119,7 @@ function L(e) {
         let i = d[r],
           o = T.current[i.id];
         if (null == o) {
-          0 === F.current && n.push(i);
+          0 === V.current && n.push(i);
           continue
         }
         let a = Math.min(o.getBoundingClientRect().width, t);
@@ -127,11 +127,11 @@ function L(e) {
         e += a + R, n.push(i)
       }
     }
-    x(n.length === L.length ? L : n), k(r), F.current++
+    x(n.length === L.length ? L : n), k(r), V.current++
   }, [d, L, j]);
-  let V = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
+  let F = i.useMemo(() => "roles-".concat((0, o.Z)()), []),
     Z = (0, a.ZP)({
-      id: V,
+      id: F,
       isEnabled: !0,
       scrollToStart: y.Cyb,
       scrollToEnd: y.Cyb,
