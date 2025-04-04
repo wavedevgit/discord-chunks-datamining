@@ -43,10 +43,22 @@ class u extends o.Z {
     let u = new Date(null != (r = null == (n = c.threadMetadata) ? void 0 : n.archiveTimestamp) ? r : 0).getTime();
     Date.now() - u < 5e3 && a.Z.resort(c.parent_id)
   }
+  handleGuildDelete(e) {
+    let {
+      guild: t
+    } = e, n = l.Z.getAllThreadsForGuild(t.id);
+    0 !== n.length && r.ZP.Emitter.batched(() => {
+      for (let e of n) i.Z.dispatch({
+        type: "THREAD_DELETE",
+        channel: e
+      })
+    })
+  }
   constructor(...e) {
     super(...e), c(this, "actions", {
       CHANNEL_DELETE: this.handleChannelDelete,
-      MESSAGE_CREATE: this.handleMessageCreate
+      MESSAGE_CREATE: this.handleMessageCreate,
+      GUILD_DELETE: this.handleGuildDelete
     })
   }
 }

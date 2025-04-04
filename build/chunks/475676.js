@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(594174),
   p = n(626135),
   _ = n(5192),
-  h = n(873128),
-  f = n(246627),
+  f = n(873128),
+  h = n(246627),
   m = n(709737),
   g = n(69589),
   b = n(531501),
@@ -50,14 +50,14 @@ function N(e) {
       entry: T
     } = e,
     L = I.guild_id,
-    P = (0, h.Z)({
+    P = (0, f.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
       intervalOffset: 0
     }),
     {
       rankChanges: j
-    } = (0, f.Z)({
+    } = (0, h.Z)({
       guildId: L,
       leaderboardId: T.extra.leaderboard_id,
       intervalStart: null != (C = null == P ? void 0 : P.interval_start) ? C : ""

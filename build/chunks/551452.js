@@ -65,10 +65,11 @@ async function O(e, t, n) {
       channelId: t,
       messageId: n
     }), null != e) {
-    let n = p.Z.getGuild(e);
-    if ((null == n ? void 0 : n.joinedAt) == null) try {
+    let r = p.Z.getGuild(e);
+    if ((null == r ? void 0 : r.joinedAt) == null) try {
       await h.Ub(e, {}, {
-        channelId: t
+        channelId: t,
+        messageId: n
       });
       return
     } catch (e) {}

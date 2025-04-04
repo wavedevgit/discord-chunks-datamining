@@ -9,7 +9,7 @@ n.d(t, {
   l3: () => N,
   o3: () => S,
   vP: () => C
-}), n(474991), n(398202), n(301563), n(266796), n(789020), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(653041);
+}), n(474991), n(398202), n(301563), n(789020), n(266796), n(315314), n(309749), n(610138), n(216116), n(78328), n(815648), n(47120), n(653041);
 var r = n(392711),
   i = n.n(r),
   o = n(913527),
@@ -49,8 +49,7 @@ function v(e) {
     height: i,
     placeholder: o,
     placeholder_version: a,
-    description: s,
-    flags: c
+    flags: s
   } = e;
   return {
     url: t,
@@ -59,9 +58,8 @@ function v(e) {
     height: i,
     placeholder: o,
     placeholderVersion: a,
-    description: s,
-    srcIsAnimated: (0, l.yE)(null != c ? c : 0, u.FoC.IS_ANIMATED),
-    flags: null != c ? c : 0
+    srcIsAnimated: (0, l.yE)(null != s ? s : 0, u.FoC.IS_ANIMATED),
+    flags: null != s ? s : 0
   }
 }
 

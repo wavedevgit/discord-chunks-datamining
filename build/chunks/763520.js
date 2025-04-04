@@ -1,6 +1,6 @@
 /** Chunk was on 80137 **/
 n.d(t, {
-  m: () => h,
+  m: () => f,
   o: () => m
 }), n(47120);
 var r, i = n(259443),
@@ -21,8 +21,8 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var h = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
-let f = new Map;
+var f = ((r = {}).SELF_VIDEO = "self_video", r.SELF_STREAM = "self_stream", r.REMOTE_VIDEO = "remote_video", r.REMOTE_STREAM = "remote_stream", r.CHANGE_VIDEO_BACKGROUND = "change_video_background", r.REPLAY_VIDEO_STREAM = "replay_video_stream", r);
+let h = new Map;
 class m {
   onSpinnerStarted() {
     null == this.spinnerVisibleStart && (this.spinnerVisibleStart = (0, o.zO)())
@@ -31,14 +31,14 @@ class m {
     if (null == this.spinnerVisibleStart) return;
     let r = function(e) {
         var t;
-        let n = (null != (t = f.get(e)) ? t : 0) + 1;
-        return f.set(e, n), n
+        let n = (null != (t = h.get(e)) ? t : 0) + 1;
+        return h.set(e, n), n
       }(n),
       i = (0, o.zO)() - this.spinnerVisibleStart;
     if (this.spinnerVisibleStart = null, i < 0) return void this.logger.warn("spinner duration is negative: ".concat(i, " ms\n        [").concat(e, ", count for stream: ").concat(r, "]"));
     this.logger.info("spinner visible for ".concat(i, " ms\n      [").concat(e, ", count for stream: ").concat(r, "]"));
     let _ = c.ZP.getGuildId(),
-      h = u.Z.getUserVoiceChannelId(_, l.default.getId()),
+      f = u.Z.getUserVoiceChannelId(_, l.default.getId()),
       m = function(e) {
         if (null != e) {
           if (e.isGuildVoice()) return "guild_voice";
@@ -47,7 +47,7 @@ class m {
           if (e.isGroupDM()) return "group_dm"
         }
         return null
-      }(s.Z.getChannel(h));
+      }(s.Z.getChannel(f));
     d.default.track(p.rMx.VIDEO_SPINNER_SHOWN_V2, {
       video_spinner_context: e,
       duration_video_spinner_visible_ms: i,
@@ -55,7 +55,7 @@ class m {
       media_session_id: c.ZP.getMediaSessionId(),
       event_count_for_stream: r,
       guild_id: _,
-      channel_id: h,
+      channel_id: f,
       channel_type: m,
       spinning_user_id: t,
       connection_type: a.Z.getType(),

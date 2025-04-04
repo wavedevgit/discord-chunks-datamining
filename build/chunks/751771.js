@@ -1,5 +1,5 @@
 /** Chunk was on 7654 **/
-let l, i, s, r, a, o, d;
+let l, i, r, s, a, o, d;
 n.d(t, {
   Z: () => P
 }), n(47120);
@@ -15,12 +15,12 @@ var u, c, h, g = n(442837),
   S = n(981631),
   E = n(245335);
 let T = new Set,
-  b = [],
-  C = new Map;
+  C = [],
+  b = new Map;
 
 function _(e) {
   let t = new Set,
-    n = null == r || d === E.Iq.EMBEDDED_APPLICATION ? void 0 : r.id,
+    n = null == s || d === E.Iq.EMBEDDED_APPLICATION ? void 0 : s.id,
     l = (0, N.rh)(T, n);
   for (let e of (null == l || j.Z.isBlocked(l.id) || t.add(l.id), v.Z.getUserAffinitiesUserIds())) t.add(e);
   let i = new Set;
@@ -36,8 +36,8 @@ function _(e) {
 }
 
 function y(e) {
-  b = e, C = new Map, e.forEach((e, t) => {
-    C.set(e, {
+  C = e, b = new Map, e.forEach((e, t) => {
+    b.set(e, {
       index: t
     })
   })
@@ -47,7 +47,7 @@ class O extends(u = g.ZP.Store) {
     this.waitFor(j.Z, v.Z)
   }
   getInviteSuggestionRows() {
-    return b
+    return C
   }
   getTotalSuggestionsCount() {
     return i
@@ -56,14 +56,14 @@ class O extends(u = g.ZP.Store) {
     return l
   }
   getSelectedInviteMetadata(e) {
-    let t = C.get(e),
+    let t = b.get(e),
       n = v.Z.getUserAffinitiesUserIds();
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: b.length,
+      numTotal: C.length,
       numAffinityConnections: n.size,
-      isFiltered: s
+      isFiltered: r
     } : null
   }
 }
@@ -82,22 +82,22 @@ let P = new O(m.Z, {
       applicationId: c,
       inviteTargetType: h
     } = e;
-    r = null != u ? n : null, a = u, o = c, d = h, T = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
+    s = null != u ? n : null, a = u, o = c, d = h, T = new Set([...t, ...j.Z.getBlockedOrIgnoredIDs(), ...(0, N.Sz)({
       channel: a,
       applicationId: o,
       inviteTargetType: h
-    })]), s = !1;
+    })]), r = !1;
     let {
       rows: g,
       counts: m
     } = _("");
-    y(g), l = m, i = b.length
+    y(g), l = m, i = C.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
       query: t
     } = e;
-    s = "" !== t;
+    r = "" !== t;
     let {
       rows: n
     } = _(t);

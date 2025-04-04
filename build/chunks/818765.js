@@ -13,16 +13,16 @@ var r = n(570140),
   d = n(351780),
   p = n(843693),
   _ = n(981631);
-let h = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
-  f = !1,
+let f = (0, o.uk)("poggermode_applause", l.Z.getSoundpack()),
+  h = !1,
   m = !1,
   g = [],
   b = null,
   E = () => {
-    f || (h.loop(), f = !0)
+    h || (f.loop(), h = !0)
   },
   C = () => {
-    h.stop(), f = !1
+    f.stop(), h = !1
   },
   O = () => {
     let e = d.Z.isEnabled(),
@@ -54,7 +54,7 @@ class S extends i.Z {
     let {
       state: t
     } = e;
-    t === _.hes.RTC_CONNECTED ? h.volume = .1 : h.volume = 1
+    t === _.hes.RTC_CONNECTED ? f.volume = .1 : f.volume = 1
   }
   handleTypingStop(e) {
     let {

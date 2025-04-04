@@ -1,4 +1,4 @@
-/** Chunk was on 74669 **/
+/** Chunk was on 89730 **/
 e.exports = {
   tabBar: "tabBar_f8303a",
   tabBarPanel: "tabBarPanel_f8303a",

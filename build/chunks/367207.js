@@ -14,8 +14,8 @@ var i = n(392711),
   d = n(963249),
   p = n(93127),
   _ = n(430824),
-  h = n(594174),
-  f = n(431),
+  f = n(594174),
+  h = n(431),
   m = n(626135),
   g = n(74538),
   b = n(557457),
@@ -120,16 +120,16 @@ class M extends a.Z {
   }
   constructor(...e) {
     super(...e), R(this, "_premiumPaymentModalCloseResolve", null), R(this, "_premiumPaymentModalCloseReject", null), R(this, "_maybeFetchPremiumOffer", async () => {
-      let e = h.default.getCurrentUser();
+      let e = f.default.getCurrentUser();
       if (null != e && e.verified) {
-        let t = !(0, g.I5)(e) && f.Z.shouldFetchOffer();
+        let t = !(0, g.I5)(e) && h.Z.shouldFetchOffer();
         await (0, S.T)("PremiumManager", t)
       }
       l.Z.dispatch({
         type: "PREMIUM_MARKETING_DATA_READY"
       })
     }), R(this, "_maybeFetchCheckoutRecovery", async () => {
-      let e = h.default.getCurrentUser();
+      let e = f.default.getCurrentUser();
       null != e && e.verified && !(0, g.I5)(e) && C.Z.shouldFetchCheckoutRecovery() && await (0, E.o)()
     }), R(this, "_maybeFetchUserAffinities", () => {
       let {
@@ -160,7 +160,7 @@ class M extends a.Z {
       } = e;
       t && null != this._premiumPaymentModalCloseResolve ? this._premiumPaymentModalCloseResolve() : null != this._premiumPaymentModalCloseReject && this._premiumPaymentModalCloseReject(), this._premiumPaymentModalCloseResolve = null, this._premiumPaymentModalCloseReject = null
     }), R(this, "maybeShowHDStreamingViewerUpsellMessage", e => {
-      let t = h.default.getCurrentUser();
+      let t = f.default.getCurrentUser();
       (null == t ? void 0 : t.id) !== e.senderUserId && this._maybeSendViewerUpsellMessage(e.channelId, e.guildId, t)
     }), R(this, "_maybeSendViewerUpsellMessage", (0, i.debounce)((e, t, n) => {
       var r, i;

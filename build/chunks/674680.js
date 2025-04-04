@@ -1,6 +1,6 @@
 /** Chunk was on 80137 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -36,21 +36,21 @@ let _ = {
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
   },
-  h = {
+  f = {
     trophy: u.Il.PRIMARY_400,
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
   };
 
-function f(e) {
+function h(e) {
   var t;
   let {
     achievementId: n,
     unlocked: u,
-    size: f = o.EFr.SIZE_40
+    size: h = o.EFr.SIZE_40
   } = e, m = (0, l.ZP)(), g = (0, c.oX)(n);
   if (null == g) return null;
-  let b = (0, o.UCu)(f),
+  let b = (0, o.UCu)(h),
     {
       name: E,
       rarity: C
@@ -58,7 +58,7 @@ function f(e) {
     {
       color: O
     } = (0, c.F7)(C),
-    y = (0, i.wj)(m) ? _ : h,
+    y = (0, i.wj)(m) ? _ : f,
     v = (b.size - b.offset - 2 * b.stroke) * .8,
     N = b.size - b.stroke,
     S = {
@@ -104,4 +104,4 @@ function f(e) {
     })]
   })
 }
-f.Sizes = o.EFr
+h.Sizes = o.EFr

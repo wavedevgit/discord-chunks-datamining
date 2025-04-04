@@ -15,37 +15,39 @@ function c(e) {
     icon: t,
     iconNode: n,
     timestamp: i,
-    className: l,
-    children: c,
-    contentClassName: u,
-    iconClassName: d,
-    iconContainerClassName: p,
-    timestampClassName: m,
-    compact: f = !1
+    timestampFormat: l,
+    className: c,
+    children: u,
+    contentClassName: d,
+    iconClassName: p,
+    iconContainerClassName: m,
+    timestampClassName: f,
+    compact: h = !1
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(l, {
+    className: a()(c, {
       [s.container]: !0,
-      [s.compact]: f,
-      [s.cozy]: !f
+      [s.compact]: h,
+      [s.cozy]: !h
     }),
     children: [null != n && (0, r.jsx)("div", {
-      className: a()(s.iconContainer, p),
+      className: a()(s.iconContainer, m),
       children: n
     }), null != t && (0, r.jsx)("div", {
       className: s.iconContainer,
       children: (0, r.jsx)("div", {
         "data-accessibility": "desaturate",
-        className: a()(s.icon, s.iconSize, d),
+        className: a()(s.icon, s.iconSize, p),
         style: {
           backgroundImage: "url('".concat(t, "')")
         }
       })
     }), (0, r.jsxs)("div", {
-      className: a()(u, s.content),
-      children: [c, null != i && (0, r.jsx)(o.Z, {
+      className: a()(d, s.content),
+      children: [u, null != i && (0, r.jsx)(o.Z, {
         timestamp: i,
-        className: m
+        timestampFormat: l,
+        className: f
       })]
     })]
   })

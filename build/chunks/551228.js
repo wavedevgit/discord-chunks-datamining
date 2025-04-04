@@ -1,7 +1,7 @@
 /** Chunk was on 80137 **/
 n.d(t, {
-  ZP: () => f,
-  pi: () => h,
+  ZP: () => h,
+  pi: () => f,
   te: () => _
 }), n(47120);
 var r = n(200651),
@@ -16,7 +16,7 @@ var r = n(200651),
   p = n(522314);
 let _ = [u.XF];
 
-function h(e) {
+function f(e) {
   var t, n, r, i;
   let s = (0, o.e7)([a.Z], () => a.Z.getMatchingActivity(e)),
     c = (0, o.e7)([l.default], () => l.default.getUser(e.author_id));
@@ -32,7 +32,7 @@ function h(e) {
     user: c
   }
 }
-let f = i.memo(function(e) {
+let h = i.memo(function(e) {
   let {
     entry: t,
     channel: n,
@@ -41,8 +41,8 @@ let f = i.memo(function(e) {
   } = e, {
     activity: l,
     artist: a
-  } = h(t), {
-    largeImage: f
+  } = f(t), {
+    largeImage: h
   } = (0, s.rv)({
     entry: t
   });
@@ -63,7 +63,7 @@ let f = i.memo(function(e) {
         }, n))
       })]
     }), (0, r.jsx)(c.f, {
-      src: null == f ? void 0 : f.src,
+      src: null == h ? void 0 : h.src,
       size: 48,
       className: p.thumbnail
     })]

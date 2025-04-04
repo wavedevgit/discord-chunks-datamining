@@ -13,8 +13,8 @@ var r = n(200651),
   d = n(748780),
   p = n(442837),
   _ = n(215569),
-  h = n(481060),
-  f = n(612226),
+  f = n(481060),
+  h = n(612226),
   m = n(951483),
   g = n(714338),
   b = n(607070),
@@ -54,7 +54,7 @@ function I(e) {
       return null
   }
 }
-let T = [f.Q2.MESSAGE, f.Q2.NAVIGATION, f.Q2.VOICE_AND_VIDEO, f.Q2.CHAT, f.Q2.MISCELLANEOUS];
+let T = [h.Q2.MESSAGE, h.Q2.NAVIGATION, h.Q2.VOICE_AND_VIDEO, h.Q2.CHAT, h.Q2.MISCELLANEOUS];
 
 function L(e) {
   let {
@@ -68,20 +68,20 @@ function L(e) {
 }
 
 function P() {
-  let e = i.useMemo(() => u()((0, f.Rv)()).groupBy(e => e.group).value(), []);
+  let e = i.useMemo(() => u()((0, h.Rv)()).groupBy(e => e.group).value(), []);
   return (0, r.jsx)("div", {
     className: N.keyboardShortcutList,
     children: T.map(t => {
       let n = e[t],
-        i = (0, f.UD)(t),
-        o = (0, f.U6)(t);
+        i = (0, h.UD)(t),
+        o = (0, h.U6)(t);
       return (0, r.jsxs)("div", {
         className: N.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(h.X6q, {
+          children: [(0, r.jsx)(f.X6q, {
             variant: "heading-lg/semibold",
             children: i
-          }), null != o && (0, r.jsx)(h.Text, {
+          }), null != o && (0, r.jsx)(f.Text, {
             className: N.keybindGroupDescription,
             variant: "text-sm/normal",
             children: o
@@ -92,12 +92,12 @@ function P() {
             var n;
             return (null == (n = e.predicate) ? void 0 : n.call(e)) === !1 ? null : (0, r.jsxs)("div", {
               className: N.keybindGroup,
-              children: [(0, r.jsx)(h.Text, {
+              children: [(0, r.jsx)(f.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
-                children: e.binds.map(e => (0, r.jsx)(h.M2$, {
+                children: e.binds.map(e => (0, r.jsx)(f.M2$, {
                   className: N.keybindKey,
                   shortcut: e
                 }, e))
@@ -134,12 +134,12 @@ class j extends i.PureComponent {
     return (0, r.jsxs)(d.Z.div, {
       className: N.keyboardShortcutsModal,
       style: this.getStyles(),
-      children: [(0, r.jsxs)(h.H, {
+      children: [(0, r.jsxs)(f.H, {
         className: N.modalTitle,
         children: [(0, r.jsx)("div", {
           className: N.content,
           children: v.NW.string(v.t["1BdUt7"])
-        }), (0, r.jsx)(h.M2$, {
+        }), (0, r.jsx)(f.M2$, {
           shortcut: "mod+/"
         })]
       }), (0, r.jsx)("div", {
@@ -168,10 +168,10 @@ class j extends i.PureComponent {
           className: N.right,
           children: "right"
         })]
-      }), (0, r.jsx)(h.yWw, {
+      }), (0, r.jsx)(f.yWw, {
         ref: this.scrollerRef,
         fade: !0,
-        children: (0, r.jsx)(h.y5t, {
+        children: (0, r.jsx)(f.y5t, {
           children: (0, r.jsx)(P, {})
         })
       })]
@@ -271,7 +271,7 @@ function A(e) {
       let e = setTimeout(() => c(!1), 500);
       return () => clearTimeout(e)
     }
-  }, [a]), (0, r.jsx)(h.P3F, {
+  }, [a]), (0, r.jsx)(f.P3F, {
     onClick: u,
     className: l()(N.arrow, o, {
       [N.active]: t || a
@@ -284,7 +284,7 @@ function R(e) {
   let {
     transitionState: t,
     onClose: n
-  } = e, [o, s] = i.useState(!1), [a, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, f.Rv)(), []), {
+  } = e, [o, s] = i.useState(!1), [a, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, h.Rv)(), []), {
     keyboardModeEnabled: d,
     useReducedMotion: E
   } = (0, p.cj)([b.Z], () => ({
@@ -294,11 +294,11 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(L, {
       showBackdrop: a
-    }), (0, r.jsx)(h.Y0X, {
+    }), (0, r.jsx)(f.Y0X, {
       className: l()(N.noBackground, {
         [N.noShadow]: o
       }),
-      size: h.CgR.DYNAMIC,
+      size: f.CgR.DYNAMIC,
       "aria-label": v.NW.string(v.t.T9DA2N),
       transitionState: t,
       children: (0, r.jsx)(_.W, {

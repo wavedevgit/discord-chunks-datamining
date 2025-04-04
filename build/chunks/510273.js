@@ -70,12 +70,12 @@ function _(e) {
   } = e, {
     name: o,
     description: _,
-    rarity: h,
-    hideDescriptionUntilUnlock: f,
+    rarity: f,
+    hideDescriptionUntilUnlock: h,
     onAction: m
   } = t, {
     color: g
-  } = (0, a.F7)(h);
+  } = (0, a.F7)(f);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -107,7 +107,7 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : _()
+        children: h && !n ? "?????" : _()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,

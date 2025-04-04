@@ -14,13 +14,13 @@ var r = n(192379),
   p = n(424602);
 n(445392);
 var _ = n(783097),
-  h = n(689079);
-let f = {
+  f = n(689079);
+let h = {
     commandTypes: [s.yU.CHAT, s.yU.PRIMARY_ENTRY_POINT]
   },
   m = {
     placeholderCount: 0,
-    limit: h.tn,
+    limit: f.tn,
     includeFrecency: !0
   };
 
@@ -35,7 +35,7 @@ function g(e) {
     loading: E
   } = a.wi({
     context: t,
-    filters: f,
+    filters: h,
     options: m,
     allowFetch: s
   });
@@ -47,15 +47,15 @@ function g(e) {
         context: n,
         onlyActivityApps: s,
         includeAuthorizedAppsAndFetch: a
-      } = e, f = (0, o.e7)([d.Z], () => d.Z.getFetchState());
+      } = e, h = (0, o.e7)([d.Z], () => d.Z.getFetchState());
       r.useEffect(() => {
-        a && f === d.M.NOT_FETCHED && l.Z.fetch()
-      }, [a, f]);
+        a && h === d.M.NOT_FETCHED && l.Z.fetch()
+      }, [a, h]);
       let m = (0, o.Wu)([d.Z], () => {
           var e, t;
           return a && null != (t = null == (e = d.Z.getApps()) ? void 0 : e.filter(e => e.scopes.includes(i.x.APPLICATIONS_COMMANDS))) ? t : []
         }),
-        g = t.filter(e => e.id !== h.bi.FRECENCY && e.id !== h.bi.BUILT_IN),
+        g = t.filter(e => e.id !== f.bi.FRECENCY && e.id !== f.bi.BUILT_IN),
         b = "channel" in n && (0, p.aZ)(n.channel, "useAppLauncherFrecents.useFrecentApps()"),
         E = (0, u.h)(g, m);
       return r.useMemo(() => s ? E.filter(e => null != e.application && (0, _.ye)(e.application) && null != (0, c.Xu)(n, e.id)).filter(e => !b || e.id !== p.gu) : E.filter(e => !b || e.id !== p.gu), [s, E, b, n])

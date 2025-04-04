@@ -1,5 +1,4 @@
-/** Chunk was on 75347 **/
-"use strict";
+/** Chunk was on 89730 **/
 e.exports = {
   container: "container_d74ef8",
   nagbar: "nagbar_d74ef8"

@@ -76,5 +76,5 @@ function f(e) {
   }, {
     autoTrackExposure: n
   }), d = (0, r.e7)([a.Z, o.Z], () => o.Z.getChannel(a.Z.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
-  return i && u() && f
+  return !__OVERLAY__ && i && u() && f
 }

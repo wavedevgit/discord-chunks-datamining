@@ -1,4 +1,4 @@
-/** Chunk was on 74669 **/
+/** Chunk was on 89730 **/
 e.exports = {
   avatarAnimation: "avatarAnimation_abf1df",
   spinningAvatar: "spinningAvatar_abf1df"

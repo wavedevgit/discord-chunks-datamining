@@ -71,45 +71,46 @@ let d = function(e) {
     className: n,
     compact: o = !1,
     timestamp: d,
-    isVisibleOnlyOnHover: f = !1,
-    cozyAlt: b = !1,
-    isInline: y = !0,
-    id: g,
-    isEdited: O = !1,
-    application: v,
-    tooltipPosition: j
-  } = e, h = new Date(d), x = (0, a.Hg)(h), P = o ? (0, a.vc)(h, "LT") : (0, a.Y4)(h, !0), S = o ? (0, s.Z)(P) : null, N = O ? u.NW.formatToPlainString(u.t.CDzOFR, {
-    timeFormatted: x
-  }) : x;
+    timestampFormat: f,
+    isVisibleOnlyOnHover: b = !1,
+    cozyAlt: y = !1,
+    isInline: g = !0,
+    id: O,
+    isEdited: v = !1,
+    application: j,
+    tooltipPosition: h
+  } = e, x = new Date(d), P = (0, a.Hg)(x), S = null != f ? (0, a.vc)(x, f) : o ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), N = o ? (0, s.Z)(S) : null, R = v ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    timeFormatted: P
+  }) : P;
   return (0, r.jsx)("span", {
-    className: l()(n, S, {
+    className: l()(n, N, {
       [m.timestamp]: !0,
-      [m.timestampVisibleOnHover]: f,
-      [m.timestampInline]: y,
-      [m.alt]: b
+      [m.timestampVisibleOnHover]: b,
+      [m.timestampInline]: g,
+      [m.alt]: y
     }),
-    children: null == v ? (0, r.jsx)(i.ua7, {
-      text: (0, a.vc)(h, "LLLL"),
-      "aria-label": N,
+    children: null == j ? (0, r.jsx)(i.ua7, {
+      text: (0, a.vc)(x, "LLLL"),
+      "aria-label": R,
       tooltipClassName: m.timestampTooltip,
-      position: j,
+      position: h,
       delay: 750,
       children: e => (0, r.jsx)(p, {
         tooltipProps: e,
-        timeFormatted: P,
-        timestamp: h,
-        id: g,
+        timeFormatted: S,
+        timestamp: x,
+        id: O,
         compact: o,
         children: t
       })
     }) : (0, r.jsx)(c.Z, {
-      application: v,
-      timestamp: h,
+      application: j,
+      timestamp: x,
       compact: o,
       children: (0, r.jsx)(p, {
-        timeFormatted: P,
-        timestamp: h,
-        id: g,
+        timeFormatted: S,
+        timestamp: x,
+        id: O,
         compact: o,
         children: t
       })

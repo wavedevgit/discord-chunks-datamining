@@ -483,6 +483,9 @@ class eD extends(r = s.ZP.Store) {
   getAllThreadsForParent(e) {
     return o().values(x).filter(t => t.parent_id === e)
   }
+  getAllThreadsForGuild(e) {
+    return o().values(x).filter(t => t.guild_id === e)
+  }
   getInitialOverlayState() {
     return T({}, P, D, x)
   }

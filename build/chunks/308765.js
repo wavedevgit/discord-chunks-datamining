@@ -251,7 +251,7 @@ let i = {
     inlineRequire: () => n(886196).Z
   },
   ThreadManager: {
-    actions: ["CHANNEL_DELETE", "MESSAGE_CREATE"],
+    actions: ["CHANNEL_DELETE", "MESSAGE_CREATE", "GUILD_DELETE"],
     inlineRequire: () => n(359915).Z,
     neverLoadBeforeConnectionOpen: !0
   },

@@ -1,6 +1,6 @@
 /**
   Module ID: 68631
-  Original File Name: b4212a3664f5f7d8
+  Original File Name: 5b9c7f93b868e67a
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -2827,6 +2827,7 @@ html .progress__61462 {
     border-radius: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-width: 100%;
     max-width: 100%;
     min-height: calc(50% - 2px)
@@ -12263,4 +12264,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=b4212a3664f5f7d8.css.map*/
+/*# sourceMappingURL=5b9c7f93b868e67a.css.map*/

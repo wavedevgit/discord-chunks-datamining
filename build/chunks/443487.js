@@ -18,8 +18,8 @@ var i = n(120356),
   d = n(430824),
   p = n(594174),
   _ = n(5192),
-  h = n(192918),
-  f = n(388032),
+  f = n(192918),
+  h = n(388032),
   m = n(522314);
 
 function g() {
@@ -92,7 +92,7 @@ function O(e) {
     participant1: E,
     participant2: O,
     numOtherParticipants: y
-  } = (0, h.Z)(i, o), v = (0, l.e7)([u.ZP], () => u.ZP.getMember(t, a)), N = (0, l.e7)([d.Z], () => {
+  } = (0, f.Z)(i, o), v = (0, l.e7)([u.ZP], () => u.ZP.getMember(t, a)), N = (0, l.e7)([d.Z], () => {
     var e;
     return (null == v ? void 0 : v.colorRoleId) != null ? null == (e = d.Z.getRole(t, v.colorRoleId)) ? void 0 : e.name : void 0
   }, [t, v]), S = (0, c.E)(t, null == v ? void 0 : v.colorStrings);
@@ -122,7 +122,7 @@ function O(e) {
         children: ["+", y]
       })
     }) : null, (0, r.jsx)(s.nn4, {
-      children: f.NW.format(f.t.rH95Gh, {
+      children: h.NW.format(h.t.rH95Gh, {
         user0: _.ZP.getName(t, n, E),
         user1: _.ZP.getName(t, n, O),
         countOthers: y,
