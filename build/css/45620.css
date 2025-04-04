@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: b904fa6f65678d7b
+  Original File Name: 9d371969a61b2ae4
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -1527,7 +1527,9 @@
 
 .bannerBlockContainer__08415 {
     position: relative;
-    min-width: 500px
+    min-width: 500px;
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-lg)
 }
 
 .wideBannerBackgroundImg__08415 {
@@ -1599,4 +1601,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=b904fa6f65678d7b.css.map*/
+/*# sourceMappingURL=9d371969a61b2ae4.css.map*/
