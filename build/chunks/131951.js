@@ -748,7 +748,9 @@ function tU(e) {
     id: eh.w5,
     index: 0,
     name: e,
-    disabled: !0
+    disabled: !0,
+    hardwareId: void 0,
+    containerId: void 0
   }
 }
 
@@ -764,7 +766,9 @@ function tG(e, t) {
     index: e.index,
     name: e.name,
     disabled: !1,
-    facing: e.facing
+    facing: e.facing,
+    hardwareId: e.hardwareId,
+    containerId: e.containerId
   })).keyBy("id").value()
 }
 

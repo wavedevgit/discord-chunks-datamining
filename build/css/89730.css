@@ -1,6 +1,6 @@
 /**
   Module ID: 89730
-  Original File Name: 796bd8897b320e2a
+  Original File Name: c543ac1dbd7e37bf
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -16690,9 +16690,13 @@ html .invoiceCancelRow__968a4 {
 }
 
 .devices_fe5040 {
-    display: flex;
     margin-bottom: 20px;
-    gap: var(--spacing-16)
+    flex-direction: column
+}
+
+.deviceColumns_fe5040,.devices_fe5040 {
+    display: flex;
+    gap: var(--space-16)
 }
 
 .column_fe5040 {
@@ -17061,4 +17065,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=796bd8897b320e2a.css.map*/
+/*# sourceMappingURL=c543ac1dbd7e37bf.css.map*/
