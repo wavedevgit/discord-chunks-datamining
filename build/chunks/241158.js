@@ -72,7 +72,10 @@ let _ = e => {
           t = N.serverProfilesBackground;
           break;
         case p.dm.SHOW_YOUR_STYLE:
-          t = N.yourStyleBackground
+          t = N.yourStyleBackground;
+          break;
+        case p.dm.PERMADECOS:
+          t = N.permadecosBackground
       }
       return t
     }(t), A = (0, d.ZP)(), P = (0, o.wj)(A), R = P ? c.Ttl.WHITE : c.Ttl.BRAND, D = (0, l.debounce)(() => {
@@ -137,7 +140,7 @@ let _ = e => {
           })
         }, _)
       })
-    }, L = j % 2 == 0;
+    }, L = j % 2 != 0;
     return (0, r.jsx)("div", {
       className: a()(y, {
         [N.whatsNewBoxContainer]: !O,

@@ -108,9 +108,9 @@ let w = i.memo(function(e) {
       [j]: [l.user.id]
     }), [j, l.user.id]);
     (0, f.$)(R);
-    let M = l.rtsState === E.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+    let k = l.rtsState === E.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
 
-    function k() {
+    function M() {
       (0, v.DT)(t, l.user.id, !1)
     }
 
@@ -173,13 +173,13 @@ let w = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: M ? S.NW.string(S.t.h9rsTU) : S.NW.string(S.t.f0T7hI),
+        text: k ? S.NW.string(S.t.h9rsTU) : S.NW.string(S.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, A(T({}, e), {
           innerClassName: Z.buttonContainer,
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
-          onClick: k,
-          disabled: M || m,
+          onClick: M,
+          disabled: k || m,
           children: (0, r.jsx)(u.Lrb, {
             size: "xs",
             color: "currentColor"
@@ -200,7 +200,7 @@ let w = i.memo(function(e) {
       })]
     })
   }),
-  M = i.memo(function(e) {
+  k = i.memo(function(e) {
     let {
       channel: t
     } = e, [n, i] = (0, N.h)(t.id);
@@ -211,7 +211,7 @@ let w = i.memo(function(e) {
       children: S.NW.string(S.t.GYCh0d)
     })
   }),
-  k = i.memo(function() {
+  M = i.memo(function() {
     return (0, r.jsxs)("div", {
       className: Z.emptyStateContainer,
       children: [(0, r.jsx)(I.Z, {}), (0, r.jsx)(u.Text, {
@@ -264,11 +264,11 @@ function L(e) {
         } = e;
         switch (n) {
           case 0:
-            return (0, r.jsx)(M, {
+            return (0, r.jsx)(k, {
               channel: t
             }, "rts-toggle");
           case 1: {
-            if (0 === l.length) return (0, r.jsx)(k, {}, "participants-empty");
+            if (0 === l.length) return (0, r.jsx)(M, {}, "participants-empty");
             let e = l[i];
             return (0, r.jsx)(R, {
               channel: t,

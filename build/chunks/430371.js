@@ -69,8 +69,8 @@ function P(e) {
       popoutWindow: A,
       inCall: w,
       channel: R,
-      selectedParticipant: M,
-      showParticipants: k = !0,
+      selectedParticipant: k,
+      showParticipants: M = !0,
       className: L,
       paused: D,
       width: W,
@@ -84,16 +84,16 @@ function P(e) {
     [z, Y] = i.useState(null),
     [q, K] = i.useState(!0),
     [X, Q] = i.useState(!1),
-    J = M.type === x.fO.ACTIVITY || M.type === x.fO.PRESENCE_EMBEDDED_ACTIVITY,
-    $ = (0, u.Z)(J ? M.applicationId : void 0),
-    ee = !J && null != M.streamId,
+    J = k.type === x.fO.ACTIVITY || k.type === x.fO.PRESENCE_EMBEDDED_ACTIVITY,
+    $ = (0, u.Z)(J ? k.applicationId : void 0),
+    ee = !J && null != k.streamId,
     et = U <= 2 * I + 144,
-    en = k && !et,
+    en = M && !et,
     er = (0, c.Z)(en),
     ei = B === y.AEg.MINIMUM || B === y.AEg.NORMAL,
     el = !et && (!ei || J),
     eo = (0, m.Z)(el, 100),
-    ea = (null != (t = (0, c.Z)(M.id)) ? t : M.id) !== M.id,
+    ea = (null != (t = (0, c.Z)(k.id)) ? t : k.id) !== k.id,
     es = 0;
   (J || en) && (es += 72), J && !en && (el ? es += 48 : es += 8), en && (es += .5 * I + 8);
   let ec = i.useMemo(() => J && $ ? W / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : N, [ee, z, J, W, U, es, $]),
@@ -139,7 +139,7 @@ function P(e) {
         clamp: !0
       })
     }, "animate-always"),
-    e_ = (0, s.Yzy)(M, {
+    e_ = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, a.config.stiff), {
         clamp: !0
@@ -158,7 +158,7 @@ function P(e) {
     eC = i.useCallback(e => {
       Y(e), K(!1)
     }, []),
-    ey = en || D ? [] : (0, _.n3)(Z, M, V),
+    ey = en || D ? [] : (0, _.n3)(Z, k, V),
     {
       visibleParticipants: ex,
       participantTileWidth: ev
@@ -220,7 +220,7 @@ function P(e) {
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
-            isParticipantsOpen: k,
+            isParticipantsOpen: M,
             isVertical: !0
           })
         }) : null]
@@ -238,9 +238,9 @@ function P(e) {
           onDoubleClick: S,
           participants: ex,
           participantTileWidth: ev,
-          selectedParticipantId: M.id,
+          selectedParticipantId: k.id,
           inCall: w,
-          paused: D || X || !k,
+          paused: D || X || !M,
           popoutWindow: A
         })
       })]

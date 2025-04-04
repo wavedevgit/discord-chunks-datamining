@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(594174),
   w = n(55935),
   R = n(70956),
-  M = n(709054),
-  k = n(534091),
+  k = n(709054),
+  M = n(534091),
   L = n(900164),
   D = n(554838),
   W = n(481369),
@@ -206,7 +206,7 @@ function er(e) {
         message: e.content,
         groupId: o,
         flashKey: e.flashKey,
-        id: (0, k.p)(f.id, e.content.id),
+        id: (0, M.p)(f.id, e.content.id),
         isLastItem: t >= eo.length - 1,
         renderContentOnly: eN
       }, e.content.id)
@@ -248,7 +248,7 @@ function er(e) {
       channel: f
     })), er > 0 && ei && em()) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(f.id),
-      l = 0 !== n ? n : M.default.extractTimestamp(f.id),
+      l = 0 !== n ? n : k.default.extractTimestamp(f.id),
       a = (0, w.KC)(new Date, new Date(l));
     if (Z.ZP.isEstimated(f.id) ? (e = a ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = a ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), e_ && (0, c.tW)(f) && ej.includes(K.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(f.id),

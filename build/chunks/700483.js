@@ -34,8 +34,8 @@ var r = n(200651),
   A = n(987329),
   w = n(560688),
   R = n(390322),
-  M = n(871499),
-  k = n(88479),
+  k = n(871499),
+  M = n(88479),
   L = n(386e3),
   D = n(25827),
   W = n(314897),
@@ -75,7 +75,7 @@ function ec(e) {
   } = (0, E.Z)({
     location: "AudienceRaiseHandButton"
   });
-  return i ? null : (0, r.jsx)(M.d, {
+  return i ? null : (0, r.jsx)(k.d, {
     isActive: l,
     label: l ? ea.NW.string(ea.t.GCimTk) : c ? ea.NW.string(ea.t.hLbG5O) : ea.NW.string(ea.t.e4WMv7),
     iconComponent: s.V9,
@@ -136,7 +136,7 @@ function ed(e) {
   }), l = () => {
     (0, V.RK)(t, !1), (0, b.v)(n, b.d.SPEAK_ON_STAGE)
   };
-  return i ? (0, r.jsx)(M.d, {
+  return i ? (0, r.jsx)(k.d, {
     onClick: l,
     iconComponent: s.Lrb,
     label: ea.NW.string(ea.t["8Joh+v"])
@@ -238,7 +238,7 @@ function ep(e) {
       } = e, {
         isShown: i
       } = t;
-      return (0, r.jsx)(k.Z, {
+      return (0, r.jsx)(M.Z, {
         label: ea.NW.string(ea.t.c6qKws),
         onClick: S,
         onPopoutClick: n,
@@ -246,7 +246,7 @@ function ep(e) {
         className: N ? void 0 : es.buttonSpacing
       })
     }
-  }) : g && !j || y ? N ? (0, r.jsx)(k.Z, {
+  }) : g && !j || y ? N ? (0, r.jsx)(M.Z, {
     label: ea.NW.string(ea.t.SMKyio),
     onClick: S,
     className: es.experimentButtonSpacing
@@ -267,7 +267,7 @@ function ep(e) {
         children: ea.NW.string(ea.t.SMKyio)
       })]
     })
-  }) : (0, r.jsx)(k.Z, {
+  }) : (0, r.jsx)(M.Z, {
     label: ea.NW.string(ea.t.c6qKws),
     onClick: S,
     className: N ? void 0 : es.buttonSpacing
@@ -284,7 +284,7 @@ function eh(e) {
   }), l = () => {
     (0, b.v)(n, b.d.MOVE_TO_AUDIENCE), (0, V.yi)(t)
   };
-  return i ? (0, r.jsx)(M.d, {
+  return i ? (0, r.jsx)(k.d, {
     iconComponent: s.zRq,
     label: ea.NW.string(ea.t.ezLpY2),
     onClick: l
@@ -318,7 +318,7 @@ function ef(e) {
   } = (0, E.Z)({
     location: "MusicButton"
   });
-  return l ? (0, r.jsx)(M.d, {
+  return l ? (0, r.jsx)(k.d, {
     isActive: c ? !i : i,
     label: i ? ea.NW.string(ea.t.ScHlfn) : ea.NW.string(ea.t.zqxfra),
     iconComponent: i ? s.xjP : s.RZG,
@@ -326,7 +326,7 @@ function ef(e) {
     onClick: () => {
       (0, b.v)(n, b.d.STAGE_MUSIC, i), (0, J.v)(!i)
     }
-  }) : (0, r.jsx)(M.d, {
+  }) : (0, r.jsx)(k.d, {
     isActive: c ? o : !o,
     label: o ? ea.NW.string(ea.t.zqxfra) : ea.NW.string(ea.t.ScHlfn),
     iconComponent: o ? s.RZG : s.xjP,
@@ -351,7 +351,7 @@ let em = i.memo(function(e) {
   } = (0, N.Z)(), v = (0, S.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, I.Z)(t), M = (0, a.e7)([F.default], () => F.default.getCurrentUser()), k = (0, a.e7)([U.Z], () => (0, y.Z)(U.Z)), W = (0, a.e7)([H.Z], () => H.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, Q.PK)(t.id), V = j > 0, z = O && !G || null != B && B.user.id !== (null == M ? void 0 : M.id), q = (0, P.Z)({
+  } = (0, I.Z)(t), k = (0, a.e7)([F.default], () => F.default.getCurrentUser()), M = (0, a.e7)([U.Z], () => (0, y.Z)(U.Z)), W = (0, a.e7)([H.Z], () => H.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), G = (0, Q.PK)(t.id), V = j > 0, z = O && !G || null != B && B.user.id !== (null == k ? void 0 : k.id), q = (0, P.Z)({
     location: "SpeakerControlTray"
   }), {
     coloredIconsEnabled: K,
@@ -361,7 +361,7 @@ let em = i.memo(function(e) {
   }), J = (0, _.u)("AudioDeviceMenu", n, {
     entrypoint: eo.A5.CARET
   });
-  if (null == M) return null;
+  if (null == k) return null;
   let $ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.yRy, {
       renderPopout: e => {
@@ -403,9 +403,9 @@ let em = i.memo(function(e) {
       }
     }), q ? null : (0, r.jsx)(T.NZ, {
       channel: t,
-      currentUser: M,
+      currentUser: k,
       exitFullScreen: () => null,
-      canGoLive: k,
+      canGoLive: M,
       hasPermission: v,
       disabled: z
     })]
@@ -463,9 +463,9 @@ let em = i.memo(function(e) {
       }),
       children: [W && !i && V ? (0, r.jsx)(T.NZ, {
         channel: t,
-        currentUser: M,
+        currentUser: k,
         exitFullScreen: () => null,
-        canGoLive: k,
+        canGoLive: M,
         hasPermission: v,
         disabled: z
       }) : null, (0, r.jsx)(ef, {

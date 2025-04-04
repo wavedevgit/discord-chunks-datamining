@@ -70,9 +70,9 @@ function T(e) {
   } = e, {
     parentAnalyticsLocation: R
   } = (0, u.ZP)(), {
-    Component: M,
+    Component: k,
     events: {
-      onMouseEnter: k,
+      onMouseEnter: M,
       onMouseLeave: L
     }
   } = (0, a.j)(), D = t.getGuildId(), {
@@ -146,7 +146,7 @@ function T(e) {
     children: e => q ? (0, r.jsx)(y.d, Z(S({
       themeable: T,
       label: Q(),
-      iconComponent: M,
+      iconComponent: k,
       disabled: H,
       onContextMenu: J
     }, e), {
@@ -154,7 +154,7 @@ function T(e) {
         (0, j.v)(R, j.d.SOUNDBOARD), null == e || e.onClick(t)
       },
       onMouseEnter: t => {
-        e.onMouseEnter(t), k()
+        e.onMouseEnter(t), M()
       },
       onMouseLeave: () => {
         e.onMouseLeave(), L()

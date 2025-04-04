@@ -35,9 +35,9 @@ var r, i = n(200651),
   A = n(927923),
   w = n(70722),
   R = n(388032),
-  M = n(587382);
+  k = n(587382);
 
-function k(e, t, n) {
+function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -53,7 +53,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      k(e, t, n[t])
+      M(e, t, n[t])
     })
   }
   return e
@@ -77,7 +77,7 @@ function W(e) {
     numUsers: t
   } = e;
   return (0, i.jsx)("div", {
-    className: M.moreContainer,
+    className: k.moreContainer,
     children: (0, i.jsxs)(c.Text, {
       color: "text-muted",
       variant: "text-sm/medium",
@@ -94,15 +94,15 @@ function U(e) {
     count: t
   });
   return (0, i.jsxs)("div", {
-    className: a()(M.audienceContainer, {
-      [M.audienceContainerCollapsed]: n
+    className: a()(k.audienceContainer, {
+      [k.audienceContainerCollapsed]: n
     }),
     children: [(0, i.jsx)("div", {
-      className: M.audienceIconContainer,
+      className: k.audienceIconContainer,
       children: (0, i.jsx)(c.VWR, {
         size: "md",
         color: "currentColor",
-        className: M.audienceIcon
+        className: k.audienceIcon
       })
     }), (0, i.jsx)(c.Text, {
       color: "text-muted",
@@ -130,7 +130,7 @@ class B extends(r = l.PureComponent) {
       user: o,
       channel: a
     } = this.props, s = (0, i.jsx)("div", {
-      className: M.draggable,
+      className: k.draggable,
       "data-dnd-name": a.name,
       onMouseEnter: l ? void 0 : this.handleMouseEnter,
       onMouseLeave: l ? void 0 : this.handleHidePreview,
@@ -151,31 +151,31 @@ class B extends(r = l.PureComponent) {
     return r ? n(s) : s
   }
   constructor(...e) {
-    super(...e), k(this, "domElementRef", l.createRef()), k(this, "state", {
+    super(...e), M(this, "domElementRef", l.createRef()), M(this, "state", {
       userPopoutOpen: !1
-    }), k(this, "handleClickUser", () => {
+    }), M(this, "handleClickUser", () => {
       this.setState({
         userPopoutOpen: !this.state.userPopoutOpen
       })
-    }), k(this, "handleCloseUserPopout", () => {
+    }), M(this, "handleCloseUserPopout", () => {
       this.setState({
         userPopoutOpen: !1
       })
-    }), k(this, "handleHidePreview", () => {
+    }), M(this, "handleHidePreview", () => {
       let {
         hidePreview: e,
         isStreaming: t,
         user: n
       } = this.props;
       t && (null == e || e(n.id))
-    }), k(this, "handleMouseEnter", () => {
+    }), M(this, "handleMouseEnter", () => {
       let {
         user: e,
         showPreview: t,
         isStreaming: n
       } = this.props;
       n && !this.state.userPopoutOpen && (null == t || t(e.id))
-    }), k(this, "handleWatchStream", () => {
+    }), M(this, "handleWatchStream", () => {
       let {
         user: e,
         channel: t,
@@ -190,14 +190,14 @@ class B extends(r = l.PureComponent) {
         guildId: t.guild_id
       };
       N.default.getId() !== e.id && p.default.selectVoiceChannel(t.id), n ? ((0, x.Z)(i), u.Z.selectParticipant(i.channelId, (0, C.V9)(i))) : (0, h.iV)(i), null == r || r(e.id)
-    }), k(this, "handleJoinVoice", () => {
+    }), M(this, "handleJoinVoice", () => {
       let {
         user: e,
         channel: t,
         hidePreview: n
       } = this.props;
       P.Z.can(s.$e(T.Plq.CONNECT, T.Plq.VIEW_CHANNEL), t) && (p.default.selectVoiceChannel(t.id), null == n || n(e.id))
-    }), k(this, "handleUserContextMenu", e => {
+    }), M(this, "handleUserContextMenu", e => {
       let {
         channel: t,
         user: r
@@ -217,7 +217,7 @@ class B extends(r = l.PureComponent) {
           })
         }))
       })
-    }), k(this, "renderUserPopout", e => {
+    }), M(this, "renderUserPopout", e => {
       let {
         channel: t,
         user: n
@@ -228,7 +228,7 @@ class B extends(r = l.PureComponent) {
         channelId: t.id,
         newAnalyticsLocations: [m.Z.VOICE_USER]
       }, e))
-    }), k(this, "renderStreamPopout", () => {
+    }), M(this, "renderStreamPopout", () => {
       let {
         user: e,
         channel: t,
@@ -242,7 +242,7 @@ class B extends(r = l.PureComponent) {
         previewIsOpen: n,
         location: r
       })
-    }), k(this, "renderUser", e => {
+    }), M(this, "renderUser", e => {
       let {
         isSelfOnOtherClient: t,
         otherClientSessionType: n,
@@ -271,7 +271,7 @@ class B extends(r = l.PureComponent) {
         application: Z
       } = this.props, {
         userPopoutOpen: T
-      } = this.state, w = A.al.has(null != n ? n : ""), k = {
+      } = this.state, w = A.al.has(null != n ? n : ""), M = {
         user: h,
         speaking: d,
         disconnected: p,
@@ -294,7 +294,7 @@ class B extends(r = l.PureComponent) {
         voicePlatform: r,
         embeddedApplication: N,
         avatarContainerClass: a()({
-          [M.userAvatar]: !0
+          [k.userAvatar]: !0
         }),
         disabled: t && !w,
         selected: T,
@@ -331,7 +331,7 @@ class B extends(r = l.PureComponent) {
             }(e, ["onClick", "onContextMenu"]);
             return (0, i.jsx)(E.ZP, L({
               ref: this.domElementRef
-            }, k, r))
+            }, M, r))
           }
         })
       }
@@ -342,7 +342,7 @@ class B extends(r = l.PureComponent) {
         shouldShow: l && !T,
         onRequestClose: this.handleHidePreview,
         spacing: 0,
-        children: () => (0, i.jsx)(E.ZP, D(L({}, k), {
+        children: () => (0, i.jsx)(E.ZP, D(L({}, M), {
           ref: this.domElementRef,
           onMouseDown: e.onMouseDown,
           onKeyDown: e.onKeyDown
@@ -351,7 +351,7 @@ class B extends(r = l.PureComponent) {
     })
   }
 }
-k(B, "defaultProps", {
+M(B, "defaultProps", {
   isSelfOnOtherClient: !1
 });
 let H = (0, f.$)(B)

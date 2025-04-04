@@ -43,17 +43,17 @@ function I(e) {
     guildId: null == t ? void 0 : t.guild_id,
     location: "b7309a_1"
   }), {
-    enableViewerClipping: M
+    enableViewerClipping: k
   } = d.Z.useExperiment({
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), k = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
+  }), M = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
   if (null == t || null != w) return null;
   let H = (0, m.Z)(t),
     F = !Z && H,
     G = !Z && B,
-    V = M && k,
+    V = k && M,
     z = R && n;
   return (0, r.jsxs)(a.Gt, {
     value: S,

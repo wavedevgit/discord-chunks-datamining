@@ -67,25 +67,25 @@ function v(e) {
     R = i.useCallback((e, r) => {
       r !== e && (a.Z.updateLayout(t.id, r, n), r === C.AEg.FULL_SCREEN && t.isPrivate() && g.S.dispatch(C.CkL.TEXTAREA_BLUR))
     }, [n, t]),
-    M = i.useCallback(e => {
+    k = i.useCallback(e => {
       null != T && e === C.AEg.FULL_SCREEN && (R(e, S.current), (0, _.Pr)(e => {
         S.current = e
       }, Z))
     }, [Z, R, T]),
-    k = i.useCallback(e => () => {
-      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== C.AEg.FULL_SCREEN), e !== C.AEg.FULL_SCREEN ? (S.current = e, R(e, C.AEg.FULL_SCREEN), (0, _.Dj)(T)) : M(e))
-    }, [R, M, T, j]);
+    M = i.useCallback(e => () => {
+      null != T && ((0, d.v)(j, d.d.FULL_SCREEN, e !== C.AEg.FULL_SCREEN), e !== C.AEg.FULL_SCREEN ? (S.current = e, R(e, C.AEg.FULL_SCREEN), (0, _.Dj)(T)) : k(e))
+    }, [R, k, T, j]);
   i.useEffect(() => {
     let e = () => {
-      null != T && ((0, _.rB)(T, Z) || N !== C.AEg.FULL_SCREEN || k(N)())
+      null != T && ((0, _.rB)(T, Z) || N !== C.AEg.FULL_SCREEN || M(N)())
     };
     return Z.addEventListener(_.NO, e), () => {
       Z.removeEventListener(_.NO, e)
     }
-  }, [Z, N, k, T]);
+  }, [Z, N, M, T]);
   let L = {
       channel: t,
-      maybeLeaveFullScreen: M
+      maybeLeaveFullScreen: k
     },
     D = i.useRef(L);
   return (i.useEffect(() => {
@@ -126,6 +126,6 @@ function v(e) {
     node: T,
     guestWindow: p,
     className: y.rightTrayIcon,
-    onClick: k(N)
+    onClick: M(N)
   }) : null
 }

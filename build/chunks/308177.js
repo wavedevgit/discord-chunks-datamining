@@ -51,14 +51,14 @@ let O = (0, o.Z)(e => {
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), M = x(C, I), k = {
-    [u.pV.SPEAKER]: M,
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), k = x(C, I), M = {
+    [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
-  }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, k, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
+  }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, M, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: H
-  } = y(C, M), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = y(C, k), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
