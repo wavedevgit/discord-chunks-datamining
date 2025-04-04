@@ -7,8 +7,8 @@ var r = n(200651),
   a = n(755641),
   i = n(742409),
   s = n(369509),
-  c = n(116175),
-  l = n(388032),
+  l = n(116175),
+  c = n(388032),
   u = n(817239),
   d = n(606217);
 
@@ -26,15 +26,15 @@ function p(e) {
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: l.NW.string(u.Z.bpghV1),
+        message: c.NW.string(u.Z.bpghV1),
         decorations: (0, r.jsx)(s.S, {
           guildId: t,
           tag: "GGEZ",
-          badge: c.ZD.HEART
+          badge: l.ZD.HEART
         })
       })
     }), (0, r.jsx)(a.g, {
-      selectedBadge: c.ZD.HEART
+      selectedBadge: l.ZD.HEART
     })]
   })
 }

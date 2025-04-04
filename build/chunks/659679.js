@@ -12,8 +12,8 @@ var o = t(793030),
   c = t(709586),
   d = t(709054),
   u = t(884902),
-  p = t(680278),
-  m = t(388032),
+  m = t(680278),
+  p = t(388032),
   x = t(326319);
 
 function _(e) {
@@ -22,7 +22,7 @@ function _(e) {
   } = e, t = new Date(d.default.extractTimestamp(n.id)), {
     username: _,
     roleColor: v,
-    roleColorStrings: f
+    roleColorStrings: g
   } = (0, i.cj)([l.ZP], () => {
     var e, t;
     let r = l.ZP.getMember(n.guildId, n.userId);
@@ -31,7 +31,7 @@ function _(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), g = (0, u.E)(n.guildId, f);
+  }, [n]), f = (0, u.E)(n.guildId, g);
   return (0, r.jsx)(a.Z, {
     className: x.systemMessageContainer,
     contentClassName: x.systemMessageContent,
@@ -56,11 +56,11 @@ function _(e) {
           children: _
         }),
         color: null != v ? v : void 0,
-        roleGradient: g
+        roleGradient: f
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: m.NW.string(p.Z.plwH8f)
+        children: p.NW.string(m.Z.plwH8f)
       })]
     })
   })
