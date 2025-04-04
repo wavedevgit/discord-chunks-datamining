@@ -99,6 +99,7 @@ async function N(e, t, n, s, r) {
         description: n.description,
         permissions: n.permissions,
         color: n.color,
+        colors: n.colors,
         hoist: n.hoist,
         mentionable: n.mentionable,
         icon: n.icon,

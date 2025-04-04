@@ -1,6 +1,6 @@
 /**
   Module ID: 20565
-  Original File Name: 8acdd4f971d26da4
+  Original File Name: ae25035f6bbb5d6a
 **/
 .modal_cf1d1c {
     background-color: var(--black);
@@ -9,6 +9,22 @@
     width: 290px;
     height: 400px;
     align-items: center
+}
+
+.closeBtn_cf1d1c {
+    z-index: 1
+}
+
+.theme-light {
+    color: var(--black-500)
+}
+
+.theme-light .modal_cf1d1c {
+    background-color: var(--white)
+}
+
+.theme-light .closeBtn_cf1d1c {
+    color: var(--black-500)
 }
 
 .spinnerContainer_cf1d1c {
@@ -47,7 +63,7 @@
     display: flex;
     width: 100%;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: right;
     align-items: center
 }
 
@@ -56,11 +72,8 @@
 }
 
 .closeBtn_cf1d1c {
-    color: #fff!important
-}
-
-.closeBtn_cf1d1c {
-    grid-area: close-btn
+    grid-area: close-btn;
+    color: #fff
 }
 
 .videoLayers_cf1d1c {
@@ -71,12 +84,20 @@
     margin-bottom: 25px
 }
 
-.entryVideo_cf1d1c,.rotateVideo_cf1d1c {
-    grid-area: layer;
-    width: 100%;
-    aspect-ratio: 16/9;
+.videoAsset_cf1d1c {
     -o-object-fit: cover;
     object-fit: cover
+}
+
+.videoAsset_cf1d1c,.videoPlaceholder_cf1d1c {
+    grid-area: layer;
+    width: 100%;
+    margin-top: -63.5px;
+    margin-bottom: -63.5px
+}
+
+.videoPlaceholder_cf1d1c {
+    height: 290px
 }
 
 .hidden_cf1d1c {
@@ -101,4 +122,4 @@
     margin-top: 32px
 }
 
-/*# sourceMappingURL=8acdd4f971d26da4.css.map*/
+/*# sourceMappingURL=ae25035f6bbb5d6a.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 4848
-  Original File Name: 540ef8e928b69ddd
+  Original File Name: 2404ed9a55b670d3
 **/
 .gradientButtonContainer__488d9 {
     position: relative;
@@ -66,4 +66,10 @@
     fill: #fff
 }
 
-/*# sourceMappingURL=540ef8e928b69ddd.css.map*/
+.disabled__488d9 {
+    opacity: .3;
+    cursor: not-allowed;
+    pointer-events: none
+}
+
+/*# sourceMappingURL=2404ed9a55b670d3.css.map*/
