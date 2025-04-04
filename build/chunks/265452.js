@@ -293,6 +293,8 @@ function en(e) {
     target_application_id: I
   }, null == j ? {} : {
     target_type: j
+  }, null == x ? {} : {
+    target_user_id: x
   })), [Y, K] = i.useState(!1), [J, Q] = i.useState(null), $ = i.useRef(null), ee = i.useRef(null), {
     analyticsLocations: en
   } = (0, p.ZP)(v.Z.INSTANT_INVITE_MODAL), el = i.useCallback(e => {
