@@ -1,7 +1,50 @@
 /**
   Module ID: 13965
-  Original File Name: 029bc89fc367774d
+  Original File Name: dbe7e589018335b1
 **/
+.container__6f9f7 {
+    display: flex;
+    gap: var(--spacing-8)
+}
+
+.tooltipContainer__6f9f7 {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+}
+
+.primaryButton__6f9f7 {
+    flex-grow: 1
+}
+
+.secondaryButton__6f9f7 {
+    min-width: 0;
+    width: auto
+}
+
+.buttonInner__6f9f7 {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.secondaryButtonInner__6f9f7 {
+    gap: 2px
+}
+
+.buttonWrapper__6f9f7 {
+    flex-grow: 1
+}
+
+.dot__6f9f7 {
+    margin: 0 4px 0 6px
+}
+
+.boost__6f9f7 {
+    align-self: center;
+    justify-self: center
+}
+
 .confettiCanvas__8fcbd {
     position: absolute;
     width: 100%;
@@ -56,4 +99,4 @@
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
 }
 
-/*# sourceMappingURL=029bc89fc367774d.css.map*/
+/*# sourceMappingURL=dbe7e589018335b1.css.map*/

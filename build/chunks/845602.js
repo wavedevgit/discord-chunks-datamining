@@ -1,20 +1,20 @@
 /** Chunk was on 74529 **/
-n.d(t, {
+t.d(n, {
   Z: () => p
 });
-var r = n(200651),
-  o = n(957537),
-  a = n(755641),
-  i = n(742409),
-  s = n(369509),
-  l = n(116175),
-  c = n(388032),
-  u = n(817239),
-  d = n(606217);
+var r = t(200651),
+  o = t(957537),
+  a = t(755641),
+  i = t(742409),
+  s = t(369509),
+  l = t(116175),
+  c = t(388032),
+  u = t(817239),
+  d = t(606217);
 
 function p(e) {
   let {
-    guildId: t
+    guildId: n
   } = e;
   return (0, r.jsxs)("div", {
     className: d.container,
@@ -28,7 +28,7 @@ function p(e) {
         },
         message: c.NW.string(u.Z.bpghV1),
         decorations: (0, r.jsx)(s.S, {
-          guildId: t,
+          guildId: n,
           tag: "GGEZ",
           badge: l.ZD.HEART
         })

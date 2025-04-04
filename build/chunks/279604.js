@@ -99,6 +99,7 @@ function y(e, t) {
             default: e
           } = await n.e("13965").then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, g({
+            guildId: C.id,
             powerup: t
           }, n))
         })
@@ -109,6 +110,7 @@ function y(e, t) {
           default: e
         } = await n.e("13965").then(n.bind(n, 666083));
         return n => (0, r.jsx)(e, g({
+          guildId: C.id,
           powerup: t
         }, n))
       })

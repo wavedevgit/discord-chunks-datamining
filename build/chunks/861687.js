@@ -334,7 +334,7 @@ class eb extends d.Z {
       userId: this.userId,
       sessionId: this.sessionId,
       token: r,
-      maxDaveProtocolVersion: D.Z.getSupportedSecureFramesProtocolVersion(this.guildId),
+      maxDaveProtocolVersion: D.Z.getSupportedSecureFramesProtocolVersion(),
       video: D.Z.supports(ei.AN.VIDEO),
       streamParameters: D.Z.getVideoStreamParameters(this.context)
     }), this.setState(er.hes.AUTHENTICATING)
