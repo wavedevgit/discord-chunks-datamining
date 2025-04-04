@@ -1,9 +1,9 @@
-/** Chunk was on 80429 **/
-n.d(t, {
-  _k: () => a,
-  jW: () => r
+/** Chunk was on 72891 **/
+n.d(i, {
+  _k: () => r,
+  jW: () => o
 });
-let i = (0, n(818083).B)({
+let t = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -19,24 +19,24 @@ let i = (0, n(818083).B)({
   }]
 });
 
-function r(e) {
+function o(e) {
   let {
-    location: t
+    location: i
   } = e, {
     enabled: n
-  } = i.getCurrentConfig({
-    location: t
+  } = t.getCurrentConfig({
+    location: i
   });
   return n
 }
 
-function a(e) {
+function r(e) {
   let {
-    location: t
+    location: i
   } = e, {
     enabled: n
-  } = i.useExperiment({
-    location: t
+  } = t.useExperiment({
+    location: i
   });
   return {
     enabled: n
