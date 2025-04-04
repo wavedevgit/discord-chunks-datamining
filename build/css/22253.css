@@ -1,6 +1,6 @@
 /**
   Module ID: 22253
-  Original File Name: 5b8a93a3c1684a0f
+  Original File Name: 59cdcd96c943d1a7
 **/
 .descriptionText__535f5 {
     margin-top: 4px;
@@ -3551,7 +3551,11 @@ html .progress__61462 {
     gap: var(--spacing-4)
 }
 
-.accessory__09bc1:hover,.accessory__09bc1:hover .accessoryText__09bc1 {
+.accessory__09bc1:hover {
+    color: var(--interactive-hover)
+}
+
+.accessory__09bc1:hover .accessoryText__09bc1 {
     color: var(--interactive-hover)
 }
 
@@ -4244,12 +4248,18 @@ html .progress__61462 {
 }
 
 .progressBar_ef0e9b:after {
+    background-color: currentColor;
+    border-radius: 4px;
     content: "";
+    height: 100%;
     opacity: .2;
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%
 }
 
-.progressBar_ef0e9b:after,.progressBarFill_ef0e9b {
+.progressBarFill_ef0e9b {
     background-color: currentColor;
     border-radius: 4px;
     height: 100%;
@@ -9909,7 +9919,11 @@ html .progress__61462 {
     color: var(--interactive-hover)
 }
 
-.closeIcon__45690:active,.visual-refresh .closeIcon__45690:hover {
+.closeIcon__45690:active {
+    color: var(--interactive-active)
+}
+
+.visual-refresh .closeIcon__45690:hover {
     color: var(--interactive-active)
 }
 
@@ -12252,4 +12266,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=5b8a93a3c1684a0f.css.map*/
+/*# sourceMappingURL=59cdcd96c943d1a7.css.map*/

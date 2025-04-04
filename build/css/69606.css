@@ -1,6 +1,6 @@
 /**
   Module ID: 69606
-  Original File Name: 90f4fa697378b167
+  Original File Name: 6b96cfeb42fe53ab
 **/
 .menu__43313 {
     max-height: 70vh
@@ -1030,7 +1030,11 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsActive__07f91,.optionsButton__07f91:hover {
+.optionsButton__07f91:hover {
+    background: var(--bg-overlay-active,var(--background-modifier-active))
+}
+
+.optionsActive__07f91 {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -2676,4 +2680,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: var(--interactive-active)
 }
 
-/*# sourceMappingURL=90f4fa697378b167.css.map*/
+/*# sourceMappingURL=6b96cfeb42fe53ab.css.map*/

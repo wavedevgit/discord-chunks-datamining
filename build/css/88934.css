@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: baa5c1fe64bcc05f
+  Original File Name: e5ee62eba2292cb8
 **/
 @value headerBarHeight 60px;
 
@@ -15,12 +15,13 @@
     box-sizing: border-box
 }
 
-.overlay__8a7fc,.overlay__8a7fc:after {
+.overlay__8a7fc {
     position: absolute
 }
 
 .overlay__8a7fc:after {
     content: "";
+    position: absolute;
     background-color: var(--border-subtle);
     z-index: 0;
     width: 100%;
@@ -1172,7 +1173,11 @@
     cursor: pointer
 }
 
-.arrowHitbox__00dfb:active .arrow__00dfb,.arrowHitbox__00dfb:hover .arrow__00dfb {
+.arrowHitbox__00dfb:hover .arrow__00dfb {
+    opacity: 1
+}
+
+.arrowHitbox__00dfb:active .arrow__00dfb {
     opacity: 1
 }
 
@@ -1290,7 +1295,11 @@
     height: 100%!important
 }
 
-.sizedToParent__03498,.sizedToParent__03498>video {
+.sizedToParent__03498 {
+    border-radius: 0
+}
+
+.sizedToParent__03498>video {
     border-radius: 0
 }
 
@@ -2619,4 +2628,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=baa5c1fe64bcc05f.css.map*/
+/*# sourceMappingURL=e5ee62eba2292cb8.css.map*/

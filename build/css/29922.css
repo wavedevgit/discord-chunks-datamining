@@ -1,6 +1,6 @@
 /**
   Module ID: 29922
-  Original File Name: bf29f282149911a8
+  Original File Name: 6508b82f33e8845a
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -33,7 +33,11 @@
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -382,4 +386,4 @@
     padding-top: 16px
 }
 
-/*# sourceMappingURL=bf29f282149911a8.css.map*/
+/*# sourceMappingURL=6508b82f33e8845a.css.map*/

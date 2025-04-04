@@ -162,6 +162,7 @@ function A(e) {
       i = [];
     return a ? (N(i, b), {
       categories: i,
+      allSounds: b,
       isFetching: O,
       soundCounts: {
         favoriteSoundCount: 0,
@@ -207,6 +208,7 @@ function A(e) {
       t.categoryInfo.type === g.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
+      allSounds: b,
       isFetching: O,
       soundCounts: {
         favoriteSoundCount: v.size,

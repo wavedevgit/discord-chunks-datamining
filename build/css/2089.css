@@ -1,6 +1,6 @@
 /**
   Module ID: 2089
-  Original File Name: 5dced054bdc7e559
+  Original File Name: c59f247331872e20
 **/
 .list_c47777 {
     max-height: 500px
@@ -86,11 +86,12 @@
     background-color: var(--background-tertiary)
 }
 
-.button_f563df:hover,.keyboard-mode .button_f563df.focused_f563df {
+.button_f563df:hover {
     background-color: var(--background-secondary-alt)
 }
 
 .keyboard-mode .button_f563df.focused_f563df {
+    background-color: var(--background-secondary-alt);
     box-shadow: 0 0 0 2px var(--blue-345)
 }
 
@@ -128,4 +129,4 @@
     align-items: flex-start
 }
 
-/*# sourceMappingURL=5dced054bdc7e559.css.map*/
+/*# sourceMappingURL=c59f247331872e20.css.map*/

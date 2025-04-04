@@ -1,6 +1,6 @@
 /**
   Module ID: 11451
-  Original File Name: 8d15738316b419ff
+  Original File Name: 5cf51e4f753d8b69
 **/
 .spinnerContainer__74df5 {
     display: flex;
@@ -50,7 +50,11 @@
     background-color: var(--background-modifier-accent)
 }
 
-.container__74df5+.container__74df5.selected__74df5:after,.container__74df5+.container__74df5.siblingSelected__74df5:after {
+.container__74df5+.container__74df5.siblingSelected__74df5:after {
+    display: none
+}
+
+.container__74df5+.container__74df5.selected__74df5:after {
     display: none
 }
 
@@ -211,4 +215,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=8d15738316b419ff.css.map*/
+/*# sourceMappingURL=5cf51e4f753d8b69.css.map*/

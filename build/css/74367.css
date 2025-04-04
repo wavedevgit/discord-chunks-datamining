@@ -1,6 +1,6 @@
 /**
   Module ID: 74367
-  Original File Name: b3d097a13dbd3e12
+  Original File Name: 1730e37ca02435d7
 **/
 .container__5537c {
     min-width: 100%;
@@ -466,7 +466,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -1518,4 +1522,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=b3d097a13dbd3e12.css.map*/
+/*# sourceMappingURL=1730e37ca02435d7.css.map*/

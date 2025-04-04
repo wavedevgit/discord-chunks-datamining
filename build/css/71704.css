@@ -1,6 +1,6 @@
 /**
   Module ID: 71704
-  Original File Name: b7a5685384231941
+  Original File Name: b9114b978f697622
 **/
 .modal__038c3 {
     width: 650px
@@ -117,27 +117,26 @@
 .deleteButton__1df30 {
     width: 28px;
     height: 28px;
+    position: absolute;
     top: -6px;
     right: -6px;
     color: var(--text-danger);
     background-color: var(--bg-base-tertiary);
+    border-radius: var(--radius-round);
     opacity: 0;
     transition: opacity var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration);
     cursor: pointer
 }
 
-.deleteButton__1df30,.deleteButton__1df30:after {
-    position: absolute;
-    border-radius: var(--radius-round)
-}
-
 .deleteButton__1df30:after {
     content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: var(--radius-round);
     background-color: transparent;
     transition: background-color var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration)
@@ -391,4 +390,4 @@
     border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=b7a5685384231941.css.map*/
+/*# sourceMappingURL=b9114b978f697622.css.map*/

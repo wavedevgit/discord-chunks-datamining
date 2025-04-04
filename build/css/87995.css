@@ -1,6 +1,6 @@
 /**
   Module ID: 87995
-  Original File Name: 8d69ac41785de6df
+  Original File Name: d8d24947fd9de0ce
 **/
 .root__66e7e {
     border-radius: 8px;
@@ -101,7 +101,10 @@
 }
 
 .emojiContainer__5c58b .emoji__5c58b.selected__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
-    filter: none;
+    filter: none
+}
+
+.emojiContainer__5c58b .emoji__5c58b.selected__5c58b,.emojiContainer__5c58b:hover .emoji__5c58b {
     opacity: 1
 }
 
@@ -193,4 +196,4 @@
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=8d69ac41785de6df.css.map*/
+/*# sourceMappingURL=d8d24947fd9de0ce.css.map*/

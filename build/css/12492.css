@@ -1,6 +1,6 @@
 /**
   Module ID: 12492
-  Original File Name: 3f23675b9a328423
+  Original File Name: a53de935fc635093
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -478,7 +478,14 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    opacity: 1
+}
+
+.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
@@ -954,4 +961,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=3f23675b9a328423.css.map*/
+/*# sourceMappingURL=a53de935fc635093.css.map*/

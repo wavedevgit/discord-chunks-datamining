@@ -1,6 +1,6 @@
 /**
   Module ID: 15327
-  Original File Name: 8cefad5c21d8fd64
+  Original File Name: fb9f95e739dbd730
 **/
 .icon__2894c {
     display: block;
@@ -398,7 +398,13 @@
     color: var(--interactive-hover)
 }
 
-.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32,.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+    color: var(--interactive-active);
+    font-weight: 500;
+    font-weight: var(--font-weight-semibold-1x-light-theme,500)
+}
+
+.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32 {
     color: var(--interactive-active);
     font-weight: 500;
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
@@ -2201,4 +2207,4 @@
     background-image: url(/assets/436b5a86429f186a.svg)
 }
 
-/*# sourceMappingURL=8cefad5c21d8fd64.css.map*/
+/*# sourceMappingURL=fb9f95e739dbd730.css.map*/

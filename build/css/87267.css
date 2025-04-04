@@ -1,6 +1,6 @@
 /**
   Module ID: 87267
-  Original File Name: f15ad3484c80cdc9
+  Original File Name: 5142d01824276ade
 **/
 .container__96e72:hover>.text__96e72 {
     -webkit-text-decoration: underline;
@@ -172,7 +172,11 @@
     transition: opacity .15s ease
 }
 
-.forward__1bcc7:hover,.enable-forced-colors .downloadLink__1bcc7,.enable-forced-colors .forward__1bcc7 {
+.forward__1bcc7:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .downloadLink__1bcc7,.enable-forced-colors .forward__1bcc7 {
     opacity: 1
 }
 
@@ -213,4 +217,4 @@
     box-shadow: none!important
 }
 
-/*# sourceMappingURL=f15ad3484c80cdc9.css.map*/
+/*# sourceMappingURL=5142d01824276ade.css.map*/

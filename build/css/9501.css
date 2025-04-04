@@ -1,6 +1,6 @@
 /**
   Module ID: 9501
-  Original File Name: 404da0b7df4fa84a
+  Original File Name: 8056a5b8b136b3bf
 **/
 .questionContainer__0a749 {
     margin-top: 24px
@@ -159,7 +159,14 @@
     border: 1px solid var(--background-modifier-accent)
 }
 
-.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
+.fieldBackground_d48a51 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
+    opacity: 1
+}
+
+.fieldBackground_d48a51:hover:not(:focus) {
     background-color: var(--background-secondary);
     border: 1px solid var(--background-tertiary);
     border-radius: 4px;
@@ -746,7 +753,15 @@
     transition: transform .2s ease-in-out, border-color .2s ease-in-out
 }
 
-.theme-dark .selectable_f01e54,.theme-dark .selectable_f01e54:active,.theme-dark .selectable_f01e54:hover,.theme-light .selectable_f01e54 {
+.theme-dark .selectable_f01e54 {
+    border-color: var(--border-strong)
+}
+
+.theme-dark .selectable_f01e54:active,.theme-dark .selectable_f01e54:hover {
+    border-color: var(--border-strong)
+}
+
+.theme-light .selectable_f01e54 {
     border-color: var(--border-strong)
 }
 
@@ -763,10 +778,11 @@
 }
 
 .selected_f01e54 {
+    border-color: var(--brand-500);
     color: var(--interactive-active)
 }
 
-.selected_f01e54,.selected_f01e54:active,.selected_f01e54:hover {
+.selected_f01e54:active,.selected_f01e54:hover {
     border-color: var(--brand-500)
 }
 
@@ -1052,10 +1068,11 @@
 }
 
 .selectedTrait__5bdf8 {
+    border-color: var(--border-strong);
     background: var(--bg-surface-raised)
 }
 
-.selectedTrait__5bdf8,.selectedTrait__5bdf8:active,.selectedTrait__5bdf8:hover {
+.selectedTrait__5bdf8:active,.selectedTrait__5bdf8:hover {
     border-color: var(--border-strong)
 }
 
@@ -1202,4 +1219,4 @@ div:has(>div>.container_d6cfa8) {
     background-color: var(--opacity-white-80)
 }
 
-/*# sourceMappingURL=404da0b7df4fa84a.css.map*/
+/*# sourceMappingURL=8056a5b8b136b3bf.css.map*/

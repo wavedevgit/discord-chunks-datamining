@@ -1,6 +1,6 @@
 /**
   Module ID: 35641
-  Original File Name: bdabe4282ac42a04
+  Original File Name: ca47479ada1ea3fc
 **/
 .modalHeader_e6fa8e {
     display: flex;
@@ -93,7 +93,11 @@
     background-color: var(--background-secondary-alt)
 }
 
-.selectableChannelRow_e6fa8e:hover:after,.selectableChannelRow_e6fa8e:last-child:after {
+.selectableChannelRow_e6fa8e:hover:after {
+    display: none
+}
+
+.selectableChannelRow_e6fa8e:last-child:after {
     display: none
 }
 
@@ -116,4 +120,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=bdabe4282ac42a04.css.map*/
+/*# sourceMappingURL=ca47479ada1ea3fc.css.map*/

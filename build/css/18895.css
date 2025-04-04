@@ -1,6 +1,6 @@
 /**
   Module ID: 18895
-  Original File Name: bfa7d8f98d31d973
+  Original File Name: 161003b782d9dfcc
 **/
 .effect_a9ddb3 {
     position: absolute;
@@ -1097,11 +1097,12 @@
     border: 1px solid var(--background-modifier-hover)
 }
 
-.theme-light .container_faa96b.isOpen_faa96b,.theme-light .container_faa96b:active {
+.theme-light .container_faa96b:active {
     border: 1px solid var(--background-modifier-selected)
 }
 
 .theme-light .container_faa96b.isOpen_faa96b {
+    border: 1px solid var(--background-modifier-selected);
     background-color: var(--background-modifier-active)
 }
 
@@ -1474,4 +1475,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=bfa7d8f98d31d973.css.map*/
+/*# sourceMappingURL=161003b782d9dfcc.css.map*/

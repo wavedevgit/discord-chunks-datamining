@@ -1,6 +1,6 @@
 /**
   Module ID: 80137
-  Original File Name: e2468b8a7d77c9ff
+  Original File Name: 325a82b31dcd3ba7
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -2218,7 +2218,11 @@
     object-fit: contain
 }
 
-.selected__0f2e8,.selected__0f2e8:hover {
+.selected__0f2e8 {
+    background-color: var(--background-modifier-selected)
+}
+
+.selected__0f2e8:hover {
     background-color: var(--background-modifier-selected)
 }
 
@@ -2893,4 +2897,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=e2468b8a7d77c9ff.css.map*/
+/*# sourceMappingURL=325a82b31dcd3ba7.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 0bce09eb1319c9b1
+  Original File Name: 6ae66be577a734cf
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -1390,7 +1390,11 @@
     padding: 4px 6px
 }
 
-.experimentOverlayTitle__2f4f7.idle__2f4f7,.experimentOverlayTitle__2f4f7:empty {
+.experimentOverlayTitle__2f4f7.idle__2f4f7 {
+    opacity: 0
+}
+
+.experimentOverlayTitle__2f4f7:empty {
     opacity: 0
 }
 
@@ -2450,7 +2454,13 @@
     color: var(--interactive-hover)
 }
 
-.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32,.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+.notInteractive__2ea32.modeConnected__2ea32 .name__2ea32,.notInteractive__2ea32.modeSelected__2ea32 .name__2ea32 {
+    color: var(--interactive-active);
+    font-weight: 500;
+    font-weight: var(--font-weight-semibold-1x-light-theme,500)
+}
+
+.modeConnected__2ea32 .name__2ea32,.modeConnected__2ea32:hover .name__2ea32,.modeSelected__2ea32 .name__2ea32,.modeSelected__2ea32:hover .name__2ea32,.modeUnreadImportant__2ea32 .name__2ea32,.modeUnreadImportant__2ea32:hover .name__2ea32 {
     color: var(--interactive-active);
     font-weight: 500;
     font-weight: var(--font-weight-semibold-1x-light-theme,500)
@@ -3965,7 +3975,11 @@ div.clanTagBadgeContainer__07f91 {
     flex-shrink: 0
 }
 
-.optionsActive__07f91,.optionsButton__07f91:hover {
+.optionsButton__07f91:hover {
+    background: var(--bg-overlay-active,var(--background-modifier-active))
+}
+
+.optionsActive__07f91 {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
@@ -4370,4 +4384,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=0bce09eb1319c9b1.css.map*/
+/*# sourceMappingURL=6ae66be577a734cf.css.map*/

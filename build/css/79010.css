@@ -1,6 +1,6 @@
 /**
   Module ID: 79010
-  Original File Name: 0240b875f0b0fcff
+  Original File Name: 03aa745aa78f8de8
 **/
 .container__270b2 {
     flex-direction: row;
@@ -175,7 +175,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -486,4 +490,4 @@
     background-color: initial
 }
 
-/*# sourceMappingURL=0240b875f0b0fcff.css.map*/
+/*# sourceMappingURL=03aa745aa78f8de8.css.map*/

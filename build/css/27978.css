@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 9a40b8674ee3f4ce
+  Original File Name: 600832fa3c903dca
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -4633,7 +4633,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -5442,4 +5446,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=9a40b8674ee3f4ce.css.map*/
+/*# sourceMappingURL=600832fa3c903dca.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 69422
-  Original File Name: da72864d09d8e1d9
+  Original File Name: 41c01e688709cb69
 **/
 .card__594f1,.spacing__594f1 {
     margin-bottom: 20px
@@ -154,7 +154,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
     border-radius: 3px
 }
 
-html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f,html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+    color: var(--white-500)
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f {
     color: var(--white-500)
 }
 
@@ -233,4 +237,4 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=da72864d09d8e1d9.css.map*/
+/*# sourceMappingURL=41c01e688709cb69.css.map*/

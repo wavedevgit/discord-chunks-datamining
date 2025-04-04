@@ -1,6 +1,6 @@
 /**
   Module ID: 89730
-  Original File Name: 8394fd97343072a3
+  Original File Name: ee6547f6e3764b9f
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -4172,7 +4172,11 @@ h1.title_feb59c,h2.title_feb59c {
     max-width: var(--custom-button-button-lg-width)
 }
 
-.button_bf1984:active,.button_bf1984:hover {
+.button_bf1984:hover {
+    background-color: var(--white-500)!important
+}
+
+.button_bf1984:active {
     background-color: var(--white-500)!important
 }
 
@@ -6192,7 +6196,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
     border-radius: 20px
 }
 
-.hoverWrapper_f8e6bf:hover .carouselCardImage_f8e6bf,.hoverWrapper_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
+.hoverWrapper_f8e6bf:hover .carouselCardImage_f8e6bf {
+    scale: 116.5%;
+    margin-left: 0;
+    margin-bottom: -9px
+}
+
+.hoverWrapper_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
     scale: 116.5%;
     margin-left: 0;
     margin-bottom: -9px
@@ -6228,7 +6238,13 @@ div:hover>div>.container__1f2ac .badgeImage__1f2ac:not(.upcomingBadge__1f2ac) {
 }
 
 @media screen and (max-width:1330px) {
-    .hoverWrapper_f8e6bf:hover .carouselCardImage_f8e6bf,.hoverWrapper_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
+    .hoverWrapper_f8e6bf:hover .carouselCardImage_f8e6bf {
+        scale: 122%;
+        margin-left: 0;
+        margin-bottom: -9px
+    }
+
+    .hoverWrapper_f8e6bf:hover .carouselCardImageGrayscale_f8e6bf {
         scale: 122%;
         margin-left: 0;
         margin-bottom: -9px
@@ -11058,7 +11074,11 @@ html:not(.visual-refresh) .phoneField_a0c54f .countryButton_a0c54f {
     border-radius: 3px
 }
 
-html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f,html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+html:not(.visual-refresh) .phoneField_a0c54f .plusSign_a0c54f {
+    color: var(--white-500)
+}
+
+html:not(.visual-refresh) .phoneField_a0c54f .countryCode_a0c54f {
     color: var(--white-500)
 }
 
@@ -15990,7 +16010,11 @@ html .invoiceCancelRow__968a4 {
     margin-top: 0
 }
 
-.description__803f2 p:last-child,.groupTitle__803f2 {
+.description__803f2 p:last-child {
+    margin-bottom: 0
+}
+
+.groupTitle__803f2 {
     margin-bottom: 0
 }
 
@@ -17101,4 +17125,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=8394fd97343072a3.css.map*/
+/*# sourceMappingURL=ee6547f6e3764b9f.css.map*/

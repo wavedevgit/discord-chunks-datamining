@@ -1,6 +1,6 @@
 /**
   Module ID: 73488
-  Original File Name: c5c21e23ba8daa7a
+  Original File Name: fa031b7283165c3c
 **/
 .loadingWrapper__5a143 {
     display: flex;
@@ -918,7 +918,11 @@
     padding-bottom: 20px
 }
 
-.container__1689b p>img,.image__1689b {
+.container__1689b p>img {
+    border-radius: 5px
+}
+
+.image__1689b {
     border-radius: 5px
 }
 
@@ -1201,4 +1205,4 @@
     justify-content: center
 }
 
-/*# sourceMappingURL=c5c21e23ba8daa7a.css.map*/
+/*# sourceMappingURL=fa031b7283165c3c.css.map*/

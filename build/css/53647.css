@@ -1,6 +1,6 @@
 /**
   Module ID: 53647
-  Original File Name: df34c9c7804ea6d9
+  Original File Name: 9b6cd9ac6831266b
 **/
 .container__5537c {
     min-width: 100%;
@@ -300,7 +300,11 @@
     align-items: center
 }
 
-.button__6cf35,.button__6cf35+.button__6cf35 {
+.button__6cf35 {
+    margin-left: 8px
+}
+
+.button__6cf35+.button__6cf35 {
     margin-left: 8px
 }
 
@@ -1333,4 +1337,4 @@
     z-index: 0
 }
 
-/*# sourceMappingURL=df34c9c7804ea6d9.css.map*/
+/*# sourceMappingURL=9b6cd9ac6831266b.css.map*/

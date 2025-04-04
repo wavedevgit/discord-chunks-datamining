@@ -1,6 +1,6 @@
 /**
   Module ID: 20369
-  Original File Name: e3cd8df55992afae
+  Original File Name: 0d72fed4ef661905
 **/
 @value minColumnWidth: 460px;
 
@@ -3523,7 +3523,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -3697,4 +3701,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=e3cd8df55992afae.css.map*/
+/*# sourceMappingURL=0d72fed4ef661905.css.map*/

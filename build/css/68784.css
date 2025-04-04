@@ -1,6 +1,6 @@
 /**
   Module ID: 68784
-  Original File Name: 2fbc65d075b5a0d2
+  Original File Name: 6191531de748c8e3
 **/
 .answerRow__7b848 {
     display: grid;
@@ -305,11 +305,12 @@
     transition: background-color .2s var(--custom-button-transition-duration) ease, border-color var(--custom-button-transition-duration) ease
 }
 
-.option__20987:hover,.optionSelected__20987 {
+.option__20987:hover {
     background-color: var(--background-floating)
 }
 
 .optionSelected__20987 {
+    background-color: var(--background-floating);
     border: 2px solid var(--brand-500)
 }
 
@@ -482,4 +483,4 @@
     background-color: var(--background-mod-normal)
 }
 
-/*# sourceMappingURL=2fbc65d075b5a0d2.css.map*/
+/*# sourceMappingURL=6191531de748c8e3.css.map*/

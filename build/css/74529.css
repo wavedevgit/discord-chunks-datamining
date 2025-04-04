@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 4aec20239acf6f88
+  Original File Name: 2b316203abe31aba
 **/
 .container__6f9f7 {
     display: flex;
@@ -138,10 +138,15 @@
     background-color: transparent;
     padding: 0;
     font-size: 24px;
-    width: 6ch
+    width: 6ch;
+    border: none
 }
 
-.tagInput__69ef9,.tagInput__69ef9:focus,.tagInput__69ef9:hover {
+.tagInput__69ef9:hover {
+    border: none
+}
+
+.tagInput__69ef9:focus {
     border: none
 }
 
@@ -391,4 +396,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=4aec20239acf6f88.css.map*/
+/*# sourceMappingURL=2b316203abe31aba.css.map*/

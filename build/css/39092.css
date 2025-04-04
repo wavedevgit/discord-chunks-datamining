@@ -1,6 +1,6 @@
 /**
   Module ID: 39092
-  Original File Name: 1c4ea456affdd0e2
+  Original File Name: aed761ebd114f8a6
 **/
 @value minColumnWidth: 460px;
 
@@ -3509,7 +3509,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover {
+    opacity: 1
+}
+
+.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
@@ -3648,4 +3652,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=1c4ea456affdd0e2.css.map*/
+/*# sourceMappingURL=aed761ebd114f8a6.css.map*/
