@@ -15,7 +15,7 @@ function c() {
     t = (0, a.R)({
       isSettingsOpen: e
     });
-  return e ? null : null != t ? (0, r.jsx)(o.ZP, {
+  return e ? null : null != t ? (0, r.jsx)(o.Z, {
     config: t
   }) : null
 }

@@ -7,8 +7,8 @@ var r = n(200651),
   l = n(704215),
   o = n(481060),
   a = n(436952),
-  s = n(54480),
-  c = n(611725),
+  s = n(839606),
+  c = n(54480),
   u = n(605236),
   d = n(243778),
   p = n(626135),
@@ -23,10 +23,10 @@ let b = function(e) {
     activePickerChannelId: n,
     openPickerForChannel: b,
     closePicker: _
-  } = (0, c.B)(), {
+  } = (0, s.B)(), {
     canAccessPicker: C,
     entryPoint: y
-  } = (0, s.m)({
+  } = (0, c.m)({
     location: "channel_header_toolbar",
     selectedChannelId: t.id
   }), x = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = C && y === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, N = i.useCallback(() => {

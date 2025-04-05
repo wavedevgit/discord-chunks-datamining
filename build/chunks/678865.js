@@ -1,12 +1,12 @@
 /** Chunk was on 31649 **/
 n.d(t, {
-  Z: () => i
+  Z: () => o
 }), n(314940);
 var r = n(278074),
-  l = n(481060),
-  a = n(695346);
+  a = n(481060),
+  i = n(695346);
 
-function i() {
-  let e = a.co.getSetting();
-  return (0, r.EQ)(e).with(l.Skl.IDLE, () => l.Skl.IDLE).with(l.Skl.DND, () => l.Skl.DND).with(l.Skl.INVISIBLE, () => l.Skl.INVISIBLE).otherwise(() => l.Skl.ONLINE)
+function o() {
+  let e = i.co.getSetting();
+  return (0, r.EQ)(e).with(a.Skl.IDLE, () => a.Skl.IDLE).with(a.Skl.DND, () => a.Skl.DND).with(a.Skl.INVISIBLE, () => a.Skl.INVISIBLE).otherwise(() => a.Skl.ONLINE)
 }

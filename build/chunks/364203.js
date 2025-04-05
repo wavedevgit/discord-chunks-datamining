@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => q,
-  jQ: () => V
+  Z: () => z
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -23,11 +22,11 @@ var r = n(200651),
   b = n(703656),
   y = n(727939),
   v = n(626135),
-  O = n(411149),
-  I = n(988290),
-  S = n(721359),
-  T = n(640963),
-  N = n(611725),
+  O = n(839606),
+  I = n(411149),
+  S = n(988290),
+  T = n(721359),
+  N = n(640963),
   A = n(628309),
   C = n(680783),
   R = n(981631),
@@ -77,11 +76,8 @@ function j(e, t) {
 let U = 88,
   G = "remove-wallpaper",
   B = .5;
-var V = function(e) {
-  return e[e.DEFAULT = 0] = "DEFAULT", e[e.COACHMARK = 1] = "COACHMARK", e
-}({});
 
-function F(e) {
+function V(e) {
   let {
     handleClose: t
   } = e;
@@ -117,7 +113,7 @@ function F(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   let {
     isPremiumTier2Subscriber: t,
     handleClose: n
@@ -143,7 +139,7 @@ function Z(e) {
     })]
   })
 }
-let H = i.forwardRef(e => {
+let Z = i.forwardRef(e => {
   let {
     isSelected: t,
     onSelect: n,
@@ -207,7 +203,7 @@ let H = i.forwardRef(e => {
   })
 });
 
-function W(e) {
+function H(e) {
   let {
     isSelected: t,
     onSelect: n,
@@ -217,7 +213,7 @@ function W(e) {
     default: a,
     designGroupId: s
   } = i;
-  return (0, r.jsx)(H, {
+  return (0, r.jsx)(Z, {
     isSelected: t,
     onSelect: n,
     selectionId: s,
@@ -235,12 +231,12 @@ function W(e) {
   })
 }
 
-function Y(e) {
+function W(e) {
   let {
     isSelected: t,
     onSelect: n
   } = e;
-  return (0, r.jsx)(H, {
+  return (0, r.jsx)(Z, {
     isSelected: t,
     onSelect: n,
     selectionId: G,
@@ -254,7 +250,7 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function Y(e) {
   let {
     canApply: t,
     isUpdating: n,
@@ -303,7 +299,7 @@ function K(e) {
   })
 }
 
-function z() {
+function K() {
   return (0, r.jsxs)(d.Kqy, {
     direction: "horizontal",
     justify: "space-between",
@@ -328,8 +324,8 @@ function z() {
     })]
   })
 }
-H.displayName = "BaseChatWallpaperSelection";
-let q = function(e) {
+Z.displayName = "BaseChatWallpaperSelection";
+let z = function(e) {
   let {
     className: t,
     position: n = R.VD2.TOP_RIGHT,
@@ -340,10 +336,10 @@ let q = function(e) {
     activePickerChannelId: l,
     closePicker: c,
     setPreviewWallpaperId: h
-  } = (0, N.B)(), m = (0, C.Z)(l), E = (0, g.m)(w.p9.TIER_2), [b, D] = i.useState(!1), x = (0, I.e)(), M = (0, A.u)();
-  (0, S.W)();
-  let k = (0, u.e7)([O.Z], () => O.Z.isFetchingWallpapers),
-    j = (0, u.e7)([O.Z], () => O.Z.getWallpaperById(null == m ? void 0 : m.wallpaperId));
+  } = (0, O.B)(), m = (0, C.Z)(l), E = (0, g.m)(w.p9.TIER_2), [b, D] = i.useState(!1), x = (0, S.e)(), M = (0, A.u)();
+  (0, T.W)();
+  let k = (0, u.e7)([I.Z], () => I.Z.isFetchingWallpapers),
+    j = (0, u.e7)([I.Z], () => I.Z.getWallpaperById(null == m ? void 0 : m.wallpaperId));
   i.useEffect(() => {
     null != j && D(j.isBlurred && E)
   }, [j, E]);
@@ -353,15 +349,15 @@ let q = function(e) {
     {
       isUpdating: G,
       updateChatWallpaper: B
-    } = (0, T.x)(U),
-    V = function() {
+    } = (0, N.x)(U),
+    Z = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P.L.USER_DISMISS;
       (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(e), c()
     };
   (0, f.ZP)(() => () => {
-    V(P.L.INDIRECT_ACTION)
+    Z(P.L.INDIRECT_ACTION)
   });
-  let H = i.useCallback(() => {
+  let z = i.useCallback(() => {
       null != l && null != m && void 0 !== m.wallpaperId && (v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
         wallpaper_id: m.wallpaperId,
         is_blur_enabled: b,
@@ -384,7 +380,7 @@ let q = function(e) {
         is_blurred: n.isBlurred
       }), h(n.id))
     }, [b, M, h]);
-  if (0 === x.length || null == l && (null == o ? void 0 : o.pickerType) !== 1) return null;
+  if (0 === x.length || null == l && (null == o ? void 0 : o.pickerType) !== O.j.COACHMARK) return null;
   let X = null;
   return X = k ? (0, r.jsx)("div", {
     className: L.loadingContainer,
@@ -392,7 +388,7 @@ let q = function(e) {
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.Ttm, {
       className: L.wallpapersContainer,
-      children: [(0, r.jsx)(Y, {
+      children: [(0, r.jsx)(W, {
         isSelected: null == m || null === m.wallpaperId,
         onSelect: () => {
           v.default.track(R.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
@@ -400,19 +396,19 @@ let q = function(e) {
             is_blurred: !1
           }), h(null)
         }
-      }), x.map(e => (0, r.jsx)(W, {
+      }), x.map(e => (0, r.jsx)(H, {
         isSelected: (null == j ? void 0 : j.designGroupId) === e.designGroupId,
         onSelect: Q,
         chatWallpaperMetadata: e
       }, e.id))]
-    }), E ? (0, r.jsx)(K, {
+    }), E ? (0, r.jsx)(Y, {
       canApply: (null == m ? void 0 : m.wallpaperId) !== void 0,
       isUpdating: G,
       isBlurEnabled: b,
       onBlurEnabledChange: q,
-      onClose: V,
-      onApply: H
-    }) : (0, r.jsx)(z, {})]
+      onClose: Z,
+      onApply: z
+    }) : (0, r.jsx)(K, {})]
   }), (0, r.jsx)(p.Gt, {
     value: s,
     children: (0, r.jsx)(y.Z, {
@@ -421,11 +417,11 @@ let q = function(e) {
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: L.container,
-        children: [(null == o ? void 0 : o.pickerType) === 1 ? (0, r.jsx)(F, {
-          handleClose: V,
+        children: [(null == o ? void 0 : o.pickerType) === O.j.COACHMARK ? (0, r.jsx)(V, {
+          handleClose: Z,
           isPremiumTier2Subscriber: E
-        }) : (0, r.jsx)(Z, {
-          handleClose: V,
+        }) : (0, r.jsx)(F, {
+          handleClose: Z,
           isPremiumTier2Subscriber: E
         }), (0, r.jsx)("div", {
           className: L.divider
