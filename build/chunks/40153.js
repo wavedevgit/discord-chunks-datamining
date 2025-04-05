@@ -168,7 +168,9 @@ function x(e) {
     accept: []
   });
   return (0, r.jsx)("div", {
-    ref: n,
+    ref: e => {
+      n(e)
+    },
     children: t
   })
 }

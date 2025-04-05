@@ -202,7 +202,9 @@ function W(e) {
     })
   }, [g, d]), K = (0, b.e)(g, d);
   if (B) return (0, r.jsx)("div", {
-    ref: F,
+    ref: e => {
+      F(e)
+    },
     className: a()(P.roleRow, P.roleRowDragging)
   });
 

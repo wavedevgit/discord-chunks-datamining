@@ -108,7 +108,9 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         selected: l,
         disableWrapper: !0,
         children: (0, r.jsx)("div", {
-          ref: T ? J : void 0,
+          ref: T ? e => {
+            J(e)
+          } : void 0,
           className: o()(C.folderIcon, {
             [S.wobble]: !K && Y && !s
           }),
