@@ -205,7 +205,9 @@ let M = i.memo(function(e) {
     ew = eu ? (0, r.jsx)(P.OG, {
       children: (0, r.jsx)(N.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
-      ref: $ ? ed : void 0,
+      ref: $ ? e => {
+        ed(e)
+      } : void 0,
       "data-dnd-name": F.toString(),
       style: {
         scale: null == er ? 1 : er
