@@ -61,10 +61,10 @@ function g(e) {
   let {
     subscription: g,
     onUpdated: v
-  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [S, N] = a.useState(null), O = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), k = e => {
+  } = e, [j, y] = a.useState(!1), [C, T] = a.useState(!1), [N, S] = a.useState(null), O = e => (null == e && (e = g.status), e in f) ? f[e] : "Unknown status ".concat(e), E = e => {
     let t = new Date(e);
     return u.default.fromTimestamp(t.getTime())
-  }, E = async e => {
+  }, k = async e => {
     let {
       status: t = g.status,
       premiumStreakStart: n,
@@ -89,9 +89,9 @@ function g(e) {
     }({
       subscription_status: t
     }, null != n ? {
-      premium_streak_started_at: k(n)
+      premium_streak_started_at: E(n)
     } : null, null != r ? {
-      ended_at: k(r)
+      ended_at: E(r)
     } : null);
     await o.tn.patch({
       url: "/debug/subscriptions/".concat(g.id),
@@ -111,7 +111,7 @@ function g(e) {
         rejectWithError: !1
       })
     } catch (e) {
-      N(e.body.message)
+      S(e.body.message)
     }
     v()
   }, P = (null == (t = h.GP[g.planIdFromItems]) ? void 0 : t.premiumType) === h.p9.TIER_0, I = null == (n = g.metadata) ? void 0 : n.ended_at, Z = null != I ? new Date(I).toISOString().substring(0, 10) : "";
@@ -194,7 +194,7 @@ function g(e) {
             serialize: e => O(e),
             isSelected: e => e === g.status,
             options: _,
-            select: e => E({
+            select: e => k({
               status: e
             }),
             popoutLayerContext: m.O$
@@ -207,10 +207,10 @@ function g(e) {
             size: s.zxk.Sizes.SMALL,
             onClick: e => w(),
             children: "Renew Subscription"
-          }), null !== S && (0, r.jsx)(s.kzN, {
+          }), null !== N && (0, r.jsx)(s.kzN, {
             className: p.error,
-            onDismiss: () => N(null),
-            children: S
+            onDismiss: () => S(null),
+            children: N
           })]
         }), (0, r.jsx)(s.hjN, {
           title: "Override Premium Streak Start Date",
@@ -219,7 +219,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: null == (l = g.premiumSince) ? void 0 : l.toISOString().substring(0, 10),
-            onChange: e => E({
+            onChange: e => k({
               premiumStreakStart: e.target.value
             })
           })
@@ -230,7 +230,7 @@ function g(e) {
           children: (0, r.jsx)("input", {
             type: "date",
             value: Z,
-            onChange: e => E({
+            onChange: e => k({
               endedAt: e.target.value
             })
           })

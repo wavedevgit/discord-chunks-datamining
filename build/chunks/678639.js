@@ -50,6 +50,7 @@ let _ = [{
   g = [{
     id: "local",
     name: "Local Variables",
+    group: x.v0.NONE,
     render(e) {
       let {
         store: t
@@ -67,6 +68,7 @@ let _ = [{
   }, {
     id: "instance",
     name: "Store Instance",
+    group: x.v0.NONE,
     render(e) {
       let {
         store: t
@@ -85,7 +87,7 @@ function v(e) {
   } = e, {
     TabBar: a,
     renderSelectedTab: l
-  } = (0, x.Z)({
+  } = (0, x.ZP)({
     tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
