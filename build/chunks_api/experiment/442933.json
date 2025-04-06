@@ -1,0 +1,1 @@
+{"id":"442933","type":"experiment","data":{"kind":"user","id":"2025-02_nameplate_purchasing","label":"Nameplate Purchase Experiment","commonTriggerPoint":"i.$P.CONNECTION_OPEN","defaultConfig":{"canPurchase":false},"treatments":[{"id":1,"label":"Can purchase","config":{"canPurchase":false}}]},"fromModule":{"id":"web.js"}}

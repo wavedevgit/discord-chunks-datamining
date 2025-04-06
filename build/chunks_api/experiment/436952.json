@@ -1,0 +1,1 @@
+{"id":"436952","type":"experiment","data":{"id":"2025-03_dm_chat_wallpapers_viewer","kind":"user","label":"DM Chat Wallpapers Viewer","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Enables viewing dm chat wallpapers","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,0 +1,1 @@
+{"id":"445446","type":"experiment","data":{"kind":"user","id":"2025-03_settings_authorized_apps_redesign","label":"Settings Authorized Apps Redesign","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable user to see authorized apps settings redesign","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

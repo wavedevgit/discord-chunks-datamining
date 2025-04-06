@@ -1,0 +1,1 @@
+{"id":"582404","type":"experiment","data":{"kind":"user","id":"2025-03_guild_profile_discovery","label":"Enables guild profile dialog on guild discovery cards","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}

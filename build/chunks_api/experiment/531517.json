@@ -1,0 +1,1 @@
+{"id":"531517","type":"experiment","data":{"kind":"user","id":"2025-03_desktop_deeplinks","label":"Desktop Deeplinks","commonTriggerPoint":"i.$P.CONNECTION_OPEN","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"On","config":{"enabled":false}}]},"fromModule":{"id":"1272"}}

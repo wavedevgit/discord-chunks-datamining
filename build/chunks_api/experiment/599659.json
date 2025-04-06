@@ -1,0 +1,1 @@
+{"id":"599659","type":"experiment","data":{"kind":"user","id":"2024-08_halloween_nitro_gifting_campaign","label":"Halloween nitro gifting campaign","defaultConfig":{"enabled":false},"commonTriggerPoint":"i.$P.CONNECTION_OPEN","treatments":[{"id":1,"label":"Halloween nitro gifting campaign","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

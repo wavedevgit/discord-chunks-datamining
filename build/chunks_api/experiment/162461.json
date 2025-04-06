@@ -1,0 +1,1 @@
+{"id":"162461","type":"experiment","data":{"kind":"user","id":"2025-02_game_profile_reenable","label":"Re-enable content inventory on game profile","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Re-enable","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

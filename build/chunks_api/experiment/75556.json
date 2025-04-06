@@ -1,0 +1,1 @@
+{"id":"75556","type":"experiment","data":{"kind":"user","id":"2025-02_optimized_rpc_authorize","label":"Optimized RPC Authorization Experiment","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable optimized RPC authorization","config":{"enabled":false}}],"commonTriggerPoint":"i.$P.CONNECTION_OPEN"},"fromModule":{"id":"1272"}}

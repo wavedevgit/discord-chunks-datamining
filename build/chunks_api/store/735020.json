@@ -1,0 +1,1 @@
+{"id":"735020","type":"store","data":{"name":"SearchMessageStore","functions":[{"name":"getMessage","args":["e","t"]}],"events":["SEARCH_FINISH","MOD_VIEW_SEARCH_FINISH","MESSAGE_UPDATE","LOGOUT","CONNECTION_OPEN","MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT"]},"fromModule":{"id":"web.js"}}

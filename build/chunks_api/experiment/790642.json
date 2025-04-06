@@ -1,0 +1,1 @@
+{"id":"790642","type":"experiment","data":{"kind":"user","id":"2024-06_content_entry_embed","label":"Content Inventory Embed","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

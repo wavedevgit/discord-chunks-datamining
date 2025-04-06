@@ -1,0 +1,1 @@
+{"id":"600553","type":"experiment","data":{"kind":"guild","id":"2025-01_guild_settings_foundation","label":"Guild Settings Foundation Revamp","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Guild Settings Foundation Revamp","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

@@ -1,0 +1,1 @@
+{"id":"159846","type":"experiment","data":{"kind":"user","id":"2025-04_nvenc_hevc_blackwell","label":"Enhanced H.265 encoding on NVIDIA Blackwell","defaultConfig":{"useHevcBlackwellConfig":false},"treatments":[{"id":1,"label":"Enable new config for H.265 on NVIDIA Blackwell","config":{"useHevcBlackwellConfig":false}}]},"fromModule":{"id":"web.js"}}

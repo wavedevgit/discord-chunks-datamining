@@ -1,0 +1,1 @@
+{"id":"436896","type":"experiment","data":{"kind":"user","id":"2021-07_popout_autocomplete","label":"Popout Autocomplete experiment","defaultConfig":{"usePopoutAutocomplete":false},"treatments":[{"id":1,"label":"New autocomplete style","config":{"usePopoutAutocomplete":false}}]},"fromModule":{"id":"web.js"}}

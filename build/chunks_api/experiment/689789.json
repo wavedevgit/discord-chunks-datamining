@@ -1,0 +1,1 @@
+{"id":"689789","type":"experiment","data":{"kind":"user","id":"2024-06_frecency_list_split","label":"Frecency List Split","defaultConfig":{"canSplitFrecencyList":false},"treatments":[{"id":1,"label":"Split frecency emoji messages from reactions","config":{"canSplitFrecencyList":false}}]},"fromModule":{"id":"web.js"}}

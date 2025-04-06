@@ -1,0 +1,1 @@
+{"id":"482798","type":"experiment","data":{"kind":"user","id":"2025-03_friends_popout","label":"Friends Popout","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

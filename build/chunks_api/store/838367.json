@@ -1,0 +1,1 @@
+{"id":"838367","type":"store","data":{"name":"GuildPopoutStore","functions":[{"name":"initialize","args":[]},{"name":"isFetchingGuild","args":["e"]},{"name":"getGuild","args":["e"]},{"name":"hasFetchFailed","args":["e"]}],"events":["GUILD_POPOUT_FETCH_START","GUILD_POPOUT_FETCH_SUCCESS","GUILD_POPOUT_FETCH_FAILURE"]},"fromModule":{"id":"web.js"}}

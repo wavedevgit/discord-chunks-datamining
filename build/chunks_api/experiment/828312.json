@@ -1,0 +1,1 @@
+{"id":"828312","type":"experiment","data":{"kind":"user","id":"2024-03_valorant_admin_signup","label":"Valorant Admin Signup","defaultConfig":{"showAdminSignup":false},"treatments":[{"id":1,"label":"Show admin signup","config":{"showAdminSignup":false}}]},"fromModule":{"id":"web.js"}}

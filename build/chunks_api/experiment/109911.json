@@ -1,0 +1,1 @@
+{"id":"109911","type":"experiment","data":{"kind":"user","id":"2024-07_icymi_negative_items","label":"icymi negative content (debugging only)","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"allow negative items only","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

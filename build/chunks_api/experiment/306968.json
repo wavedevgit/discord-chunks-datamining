@@ -1,0 +1,1 @@
+{"id":"306968","type":"experiment","data":{"kind":"user","id":"2024-12_winter_holiday","label":"Winter Holiday","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

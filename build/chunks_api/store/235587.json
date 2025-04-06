@@ -1,0 +1,1 @@
+{"id":"235587","type":"store","data":{"name":"GuildLeaderboardRanksStore","functions":[{"name":"initialize","args":["t"]},{"name":"getState","args":[]},{"name":"getPrevLeaderboardRanks","args":["t","e","a"]},{"name":"getCurrentLeaderboardRanks","args":["t","e","a"]},{"name":"reset","args":[]}],"events":["SET_GUILD_LEADERBOARD"]},"fromModule":{"id":"11212"}}

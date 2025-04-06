@@ -1,0 +1,1 @@
+{"id":"711237","type":"experiment","data":{"kind":"guild","id":"i.nz","label":"Trigger Debugging Guild AA Experiment","defaultConfig":{"inUse":false},"treatments":[{"id":1,"label":"On","config":{"inUse":false}}]},"fromModule":{"id":"1272"}}

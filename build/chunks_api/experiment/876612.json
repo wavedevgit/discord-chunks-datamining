@@ -1,0 +1,1 @@
+{"id":"876612","type":"experiment","data":{"kind":"user","id":"2024-04_genshin_user_signup","label":"Genshin User Signup","defaultConfig":{"showUserSignup":false},"treatments":[{"id":1,"label":"Show user signup","config":{"showUserSignup":false}}]},"fromModule":{"id":"web.js"}}
