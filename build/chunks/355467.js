@@ -1225,10 +1225,9 @@ function eE(e, t, n, r, i) {
 }
 
 function eb(e, t, n, r) {
-  let i = (0, h.XK)(e, t),
-    o = e.isPausedAllowsUpdatesButNotResume ? e.status : E.O0b.ACTIVE;
+  let i = (0, h.XK)(e, t);
   return eg(e, {
-    status: o,
+    status: E.O0b.ACTIVE,
     items: i
   }, n, r)
 }

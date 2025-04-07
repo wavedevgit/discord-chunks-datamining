@@ -17,8 +17,8 @@ var r = n(200651),
   x = n(987209),
   f = n(563132),
   h = n(107998),
-  m = n(614277),
-  j = n(400981),
+  j = n(614277),
+  m = n(400981),
   L = n(435020),
   g = n(698708),
   S = n(921944);
@@ -34,9 +34,9 @@ function y(e) {
       continueSessionToInitialStep: N
     } = e,
     {
-      activeSubscription: T,
-      paymentSources: M,
-      paymentSourceId: P,
+      activeSubscription: P,
+      paymentSources: T,
+      paymentSourceId: M,
       selectedPlan: v,
       selectedSkuId: O,
       step: Z,
@@ -61,7 +61,7 @@ function y(e) {
     K = (0, c.Z)(),
     X = (0, d.a5)(v),
     V = (0, d.tK)(null == G ? void 0 : G.skuId),
-    Q = (0, L.$)(M, P),
+    Q = (0, L.$)(T, M),
     q = A && null != G && X;
   s()(null != v, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
   let J = i.useCallback(() => {
@@ -91,13 +91,13 @@ function y(e) {
     startingPremiumSubscriptionPlanId: k.current,
     planId: v.id,
     onClose: J,
-    isDowngrade: null != T && (0, _.GY)(T, v.id, l),
+    isDowngrade: null != P && (0, _.GY)(P, v.id, l),
     paymentSourceType: Q,
     hideClose: Y
   }), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.C3, {
+    children: [(0, r.jsxs)(j.C3, {
       children: [(0, r.jsx)(g.Z, {}), t]
-    }), null != D && D, q && null != V && (0, r.jsx)(j.Z, {
+    }), null != D && D, q && null != V && (0, r.jsx)(m.Z, {
       onClose: J,
       selectedPromotionalDecoPurchaseRecord: V,
       selectedGiftingPromotionReward: G

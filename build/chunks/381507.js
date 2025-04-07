@@ -28,7 +28,7 @@ let x = () => {
     x = (0, s.Fg)(),
     f = (0, i.ap)(x),
     h = a.ZP.getName(e),
-    m = f ? d.Z : c.Z;
+    j = f ? d.Z : c.Z;
   return null == e ? null : (0, r.jsxs)("div", {
     className: _.attributionBannerContainer,
     children: [(0, r.jsx)("div", {
@@ -61,7 +61,7 @@ let x = () => {
       children: p.NW.format(p.t.oxhCOj, {
         userName: h
       })
-    }), (0, r.jsx)(m, {
+    }), (0, r.jsx)(j, {
       className: _.bannerIcon
     })]
   })
