@@ -154,7 +154,7 @@ function T(e, t, n, r) {
     c = d.r.build(e.config).defaultReward.messages.nameWithArticle,
     u = (0, l.f$)(e.config),
     _ = (0, l._p)(e.config);
-  return y(a = u && n ? _ ? p.t["xqX+r6"] : p.t["vs/xBg"] : u ? p.t["W/HkLC"] : e.id === f.V6 ? p.t.Rsd5bG : p.t.yMsQ7e, {
+  return y(a = u && n ? _ ? p.t["xqX+r6"] : p.t["vs/xBg"] : u || null != t ? p.t["W/HkLC"] : e.id === f.V6 ? p.t.Rsd5bG : p.t.yMsQ7e, {
     videoTitle: s,
     rewardNameWithArticle: c,
     duration: t
