@@ -4,21 +4,21 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var o = r(120356),
-  l = r.n(o),
-  i = r(481060),
+var l = r(120356),
+  i = r.n(l),
+  o = r(481060),
   a = r(55935),
   c = r(543388),
   s = r(223021),
   u = r(388032),
-  m = r(848697);
+  p = r(848697);
 
-function p(e) {
+function m(e) {
   var t, r;
   let {
-    tooltipProps: o,
-    timeFormatted: l,
-    children: i,
+    tooltipProps: l,
+    timeFormatted: i,
+    children: o,
     compact: a,
     timestamp: c,
     id: s
@@ -40,16 +40,16 @@ function p(e) {
       })
     }
     return e
-  }({}, o), r = r = {
+  }({}, l), r = r = {
     id: s,
     dateTime: c.toISOString(),
-    children: null != i ? i : (0, n.jsxs)(n.Fragment, {
+    children: null != o ? o : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("i", {
-        className: m.separator,
+        className: p.separator,
         "aria-hidden": !0,
         children: a ? "[" : " — "
-      }), l, a && (0, n.jsxs)("i", {
-        className: m.separator,
+      }), i, a && (0, n.jsxs)("i", {
+        className: p.separator,
         "aria-hidden": !0,
         children: ["]", " "]
       })]
@@ -69,49 +69,49 @@ let d = function(e) {
   let {
     children: t,
     className: r,
-    compact: o = !1,
+    compact: l = !1,
     timestamp: d,
     timestampFormat: f,
     isVisibleOnlyOnHover: b = !1,
     cozyAlt: y = !1,
     isInline: g = !0,
     id: O,
-    isEdited: v = !1,
+    isEdited: j = !1,
     application: h,
-    tooltipPosition: j
-  } = e, x = new Date(d), P = (0, a.Hg)(x), S = null != f ? (0, a.vc)(x, f) : o ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), N = o ? (0, s.Z)(S) : null, T = v ? u.NW.formatToPlainString(u.t.CDzOFR, {
+    tooltipPosition: v
+  } = e, x = new Date(d), P = (0, a.Hg)(x), S = null != f ? (0, a.vc)(x, f) : l ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), N = l ? (0, s.Z)(S) : null, w = j ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: P
   }) : P;
   return (0, n.jsx)("span", {
-    className: l()(r, N, {
-      [m.timestamp]: !0,
-      [m.timestampVisibleOnHover]: b,
-      [m.timestampInline]: g,
-      [m.alt]: y
+    className: i()(r, N, {
+      [p.timestamp]: !0,
+      [p.timestampVisibleOnHover]: b,
+      [p.timestampInline]: g,
+      [p.alt]: y
     }),
-    children: null == h ? (0, n.jsx)(i.ua7, {
+    children: null == h ? (0, n.jsx)(o.ua7, {
       text: (0, a.vc)(x, "LLLL"),
-      "aria-label": T,
-      tooltipClassName: m.timestampTooltip,
-      position: j,
+      "aria-label": w,
+      tooltipClassName: p.timestampTooltip,
+      position: v,
       delay: 750,
-      children: e => (0, n.jsx)(p, {
+      children: e => (0, n.jsx)(m, {
         tooltipProps: e,
         timeFormatted: S,
         timestamp: x,
         id: O,
-        compact: o,
+        compact: l,
         children: t
       })
     }) : (0, n.jsx)(c.Z, {
       application: h,
       timestamp: x,
-      compact: o,
-      children: (0, n.jsx)(p, {
+      compact: l,
+      children: (0, n.jsx)(m, {
         timeFormatted: S,
         timestamp: x,
         id: O,
-        compact: o,
+        compact: l,
         children: t
       })
     })

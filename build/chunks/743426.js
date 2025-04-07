@@ -588,6 +588,24 @@ class O extends a.Z {
       ducking: !1
     }), null == (r = g.setNativeScreenSharePickerCallbacks) || r.call(g, this.handleNativeScreenSharePickerUpdate, this.handleNativeScreenSharePickerCancel, this.handleNativeScreenSharePickerError), null == (i = g.setAudioDeviceModuleErrorCallback) || i.call(g, this.handleAudioDeviceModuleErrorCallback), null == (a = g.setVideoCodecErrorCallback) || a.call(g, this.handleVideoCodecErrorCallback), this.on("removeListener", this.handleRemoveListener), this.on("newListener", this.handleNewListener), null != (0, d.zS)().getAudioSubsystem ? (0, d.zS)().getAudioSubsystem((e, t) => {
       this.audioSubsystem = e, this.audioLayer = t
-    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != g.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != g.setActiveSinksChangeCallback && g.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (c = g.setLoopbackPlaybackGainMultiplier) || c.call(g, h.Jk), null == (p = g.setVoiceFiltersFailedCallback) || p.call(g, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this)
+    }) : null != (0, d.zS)().getUseLegacyAudioDevice && (this.audioSubsystem = (0, d.zS)().getUseLegacyAudioDevice() ? h.iA.LEGACY : h.iA.STANDARD), null != g.pingVoiceThread && "undefined" != typeof window && "canary" === window.GLOBAL_ENV.RELEASE_CHANNEL && this.watchdogTick(), null != g.setActiveSinksChangeCallback && g.setActiveSinksChangeCallback(this.handleActiveSinksChange), null == (c = g.setLoopbackPlaybackGainMultiplier) || c.call(g, h.Jk), null == (p = g.setVoiceFiltersFailedCallback) || p.call(g, e => this.emit(s.aB.VoiceFiltersFailed, e)), (0, l.Z)(this), I(this)
   }
+}
+
+function I(e) {
+  let t = 9e5,
+    n = !1;
+  e.on(s.aB.Destroy, () => n = !0);
+  let r = async () => {
+    if (n) return;
+    let i = (0, d.zS)(),
+      o = await new Promise(e => {
+        var t;
+        null == (t = i.pollQueueMetrics) || t.call(i, t => {
+          e(t)
+        })
+      });
+    o.periodMs = t, e.emit(s.aB.VoiceQueueMetrics, o), setTimeout(r, t)
+  };
+  setTimeout(r, t)
 }

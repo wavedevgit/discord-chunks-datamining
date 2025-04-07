@@ -1,12 +1,12 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => p
+  Z: () => m
 });
 var n = r(200651);
 r(192379);
-var o = r(913527),
-  l = r.n(o),
-  i = r(481060),
+var l = r(913527),
+  i = r.n(l),
+  o = r(481060),
   a = r(925329),
   c = r(388032),
   s = r(965935);
@@ -22,12 +22,12 @@ function u(e) {
       game: t
     }), (0, n.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, n.jsx)(i.Text, {
+      children: [(0, n.jsx)(o.Text, {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: l()(r).format("LLLL")
-      }), (0, n.jsx)(i.Text, {
+        children: i()(r).format("LLLL")
+      }), (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
         children: c.NW.format(c.t.J3s8JC, {
@@ -38,13 +38,13 @@ function u(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     application: t,
     timestamp: r,
-    children: o
+    children: l
   } = e;
-  return (0, n.jsx)(i.ua7, {
+  return (0, n.jsx)(o.ua7, {
     hideOnClick: !0,
     position: "top",
     "aria-label": c.NW.string(c.t["5nMcv7"]),
@@ -56,7 +56,7 @@ function m(e) {
     }),
     children: e => {
       var t, r;
-      return (0, n.jsx)(i.P3F, (t = function(e) {
+      return (0, n.jsx)(o.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -76,7 +76,7 @@ function m(e) {
       }({
         tag: "span"
       }, e), r = r = {
-        children: o
+        children: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -91,21 +91,21 @@ function m(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t,
     timestamp: r,
-    compact: o,
-    children: l
+    compact: l,
+    children: i
   } = e;
-  return (0, n.jsxs)(m, {
+  return (0, n.jsxs)(p, {
     application: t,
     timestamp: r,
-    children: [o ? null : (0, n.jsx)(i.iWm, {
+    children: [l ? null : (0, n.jsx)(o.iWm, {
       className: s.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), l]
+    }), i]
   })
 }

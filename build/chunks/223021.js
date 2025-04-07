@@ -1,15 +1,15 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => i
+  Z: () => o
 }), r(35282);
 var n = r(848697);
-let o = {
+let l = {
     LATIN12: n.latin12CompactTimeStamp,
     LATIN24: n.latin24CompactTimeStamp,
     ASIAN: n.asianCompactTimeStamp
   },
-  l = /(AM|PM)$/;
+  i = /(AM|PM)$/;
 
-function i(e) {
-  return null != e.match(l) ? o.LATIN24 : e.length <= 5 ? o.LATIN12 : o.ASIAN
+function o(e) {
+  return null != e.match(i) ? l.LATIN24 : e.length <= 5 ? l.LATIN12 : l.ASIAN
 }
