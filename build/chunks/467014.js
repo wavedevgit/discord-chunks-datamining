@@ -24,7 +24,9 @@ function f(e) {
     mediaCount: b
   } = (0, c.P2)(t, n), _ = new Intl.NumberFormat(p.NW.currentLocale).format(m), C = new Intl.NumberFormat(p.NW.currentLocale).format(g), y = new Intl.NumberFormat(p.NW.currentLocale).format(b), x = i.useCallback(async e => {
     if (null == f) return;
-    let r = (0, c.Ow)(t, e);
+    let r = (0, c.Ow)(t, e, {
+      include_nsfw: !0
+    });
     await (0, s.r)(n, t, f.baseChannelId, {
       modViewPanel: d.k.MESSAGE_HISTORY,
       additionalSearchQuery: r
