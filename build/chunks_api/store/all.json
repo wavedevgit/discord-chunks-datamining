@@ -78,10 +78,6 @@
                     ]
                 },
                 {
-                    "name": "shouldFetchAnnualOffer",
-                    "args": []
-                },
-                {
                     "name": "getAlmostExpiringTrialOffers",
                     "args": [
                         "e"

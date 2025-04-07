@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => D
-}), n(388685);
+}), n(388685), n(825670);
 var r, i = n(442837),
   o = n(570140),
   a = n(276444),
@@ -54,7 +54,6 @@ let m = 1728e5,
   g = 6e5,
   E = {
     userOffersLastFetchedAtDate: void 0,
-    userAnnualOfferLastFetchedAtDate: void 0,
     userTrialOffers: {},
     userDiscountOffers: {},
     userDiscounts: void 0,
@@ -103,7 +102,7 @@ function T(e) {
 }
 
 function N() {
-  b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = void 0, b.userAnnualOfferLastFetchedAtDate = void 0, b.isFetching = !1
+  b.userTrialOffers = {}, b.userDiscountOffers = {}, b.userOffersLastFetchedAtDate = void 0, b.isFetching = !1
 }
 let A = () => !0;
 
@@ -160,10 +159,6 @@ class w extends(r = i.ZP.PersistedStore) {
       o = (null != e ? e : 0) > n;
     return !r && (i || o)
   }
-  shouldFetchAnnualOffer() {
-    let e = b.userAnnualOfferLastFetchedAtDate;
-    return null == e || Date.now() - m > e
-  }
   getAlmostExpiringTrialOffers(e) {
     let t = Object.values(d.nG).map(e => e.id),
       n = l.default.getCurrentUser();
@@ -205,9 +200,7 @@ f(w, "displayName", "UserOfferStore"), f(w, "persistKey", "UserOfferStore"), f(w
     userDiscountOffers: t
   })
 }, e => {
-  if (null != e) return (null == e ? void 0 : e.userAnnualOfferLastFetchedAtDate) == null ? h(_({}, e), {
-    userAnnualOfferLastFetchedAtDate: void 0
-  }) : e
+  if (null != e) return Object.hasOwn(e, "userAnnualOfferLastFetchedAtDate") && delete e.userAnnualOfferLastFetchedAtDate, e
 }, e => {
   if (null != e) return (null == e ? void 0 : e.isFetching) == null ? h(_({}, e), {
     isFetching: !1
