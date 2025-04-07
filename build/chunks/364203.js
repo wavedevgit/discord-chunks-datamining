@@ -349,7 +349,10 @@ let z = function(e) {
     {
       isUpdating: G,
       updateChatWallpaper: B
-    } = (0, N.x)(U),
+    } = (0, N.x)({
+      channelId: l,
+      onUpdateComplete: U
+    }),
     Z = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P.L.USER_DISMISS;
       (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(e), c()

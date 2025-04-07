@@ -1,6 +1,6 @@
 /** Chunk was on 75450 **/
 n.d(t, {
-  Z: () => v,
+  Z: () => C,
   f: () => O
 }), n(388685);
 var a, i = n(200651),
@@ -15,8 +15,8 @@ var a, i = n(200651),
   p = n(607070),
   g = n(339085),
   h = n(695346),
-  f = n(572004),
-  _ = n(388032),
+  _ = n(572004),
+  f = n(388032),
   b = n(559297);
 
 function y(e) {
@@ -50,15 +50,15 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var C = ((a = C || {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a);
+var v = ((a = v || {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a);
 
-function v(e) {
+function C(e) {
   let {
     tag: t,
     size: a = 1,
     disabled: o,
-    className: C,
-    onClick: v,
+    className: v,
+    onClick: C,
     onRemove: O,
     selected: j,
     ariaLabel: T
@@ -66,9 +66,9 @@ function v(e) {
     name: P,
     emojiId: E,
     emojiName: I
-  } = t, S = null != O, [w, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != E ? g.ZP.getUsableCustomEmojiById(E) : null), D = S || null != v, N = (!S || !w) && (null != E || null != I), k = 0 === a, z = r.useRef(null), L = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
+  } = t, S = null != O, [w, M] = r.useState(!1), A = (0, c.e7)([g.ZP], () => null != E ? g.ZP.getUsableCustomEmojiById(E) : null), D = S || null != C, N = (!S || !w) && (null != E || null != I), k = 0 === a, z = r.useRef(null), L = (0, c.e7)([p.Z], () => p.Z.keyboardModeEnabled), Z = e => {
     let a = h.Sb.getSetting();
-    f.wS && a && (0, u.jW)(e, async () => {
+    _.wS && a && (0, u.jW)(e, async () => {
       let {
         default: e
       } = await n.e("29646").then(n.bind(n, 955116));
@@ -105,9 +105,9 @@ function v(e) {
       [b.clickable]: D,
       [b.small]: k,
       [b.selected]: j
-    }, C),
+    }, v),
     onClick: e => {
-      null == v || v(e), null == O || O(t), L || null == z.current || z.current.blur()
+      null == C || C(e), null == O || O(t), L || null == z.current || z.current.blur()
     },
     onContextMenu: e => Z(e),
     onMouseEnter: () => S && M(!0),
@@ -118,7 +118,7 @@ function v(e) {
     focusProps: {
       ringTarget: z
     },
-    "aria-label": null != T ? T : _.NW.formatToPlainString(_.t.iyRTLi, {
+    "aria-label": null != T ? T : f.NW.formatToPlainString(f.t.iyRTLi, {
       tagName: P
     }),
     role: "button",
@@ -137,12 +137,12 @@ function O(e) {
     size: a = 1
   } = e, r = 0 === a;
   return (0, i.jsx)(d.ua7, {
-    "aria-label": _.NW.string(_.t["P/y+sr"]),
+    "aria-label": f.NW.string(f.t["P/y+sr"]),
     text: (0, i.jsx)(i.Fragment, {
-      children: t.map(e => (0, i.jsx)(v, {
+      children: t.map(e => (0, i.jsx)(C, {
         tag: e,
         className: b.tooltipPill,
-        size: v.Sizes.SMALL
+        size: C.Sizes.SMALL
       }, e.id))
     }),
     children: e => (0, i.jsx)("div", x(y({}, e), {
@@ -156,4 +156,4 @@ function O(e) {
     }))
   })
 }
-v.Sizes = C
+C.Sizes = v
