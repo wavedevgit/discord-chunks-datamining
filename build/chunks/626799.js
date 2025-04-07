@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   $: () => w,
   Z: () => A
@@ -20,8 +20,8 @@ var r, i = n(200651),
   b = n(283595),
   x = n(558314),
   y = n(55563),
-  v = n(551428),
-  E = n(73346),
+  E = n(551428),
+  v = n(73346),
   O = n(981631),
   N = n(388032),
   j = n(228016);
@@ -34,7 +34,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class I extends(r = a.Component) {
+class S extends(r = a.Component) {
   get analyticsLocation() {
     var e, t;
     let {
@@ -130,7 +130,7 @@ class I extends(r = a.Component) {
         sku: e
       } = this.props;
       if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-      return (0, E.ZI)(e.id, {
+      return (0, v.ZI)(e.id, {
         slug: e.slug,
         analyticsSource: this.analyticsLocation
       })
@@ -197,10 +197,10 @@ class I extends(r = a.Component) {
     })
   }
 }
-C(I, "defaultProps", {
+C(S, "defaultProps", {
   renderFallback: O.dG4
 });
-let S = [y.Z, x.Z, b.Z, v.Z];
+let I = [y.Z, x.Z, b.Z, E.Z];
 
 function T(e) {
   let {
@@ -211,10 +211,10 @@ function T(e) {
     application: r,
     fetchFailed: y.Z.didFetchingSkuFail(t),
     inLibrary: null != n && b.Z.hasApplication(n.applicationId, n.applicationId, !0),
-    storeListing: null != n ? v.Z.getForSKU(n.id) : null,
+    storeListing: null != n ? E.Z.getForSKU(n.id) : null,
     libraryApplication: null != n ? b.Z.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
   }
 }
-let P = (0, g.Z)((0, h.Z)(I)),
-  A = o.ZP.connectStores(S, T)(P),
-  w = (0, h.Z)(o.ZP.connectStores(S, T)(I))
+let P = (0, g.Z)((0, h.Z)(S)),
+  A = o.ZP.connectStores(I, T)(P),
+  w = (0, h.Z)(o.ZP.connectStores(I, T)(S))

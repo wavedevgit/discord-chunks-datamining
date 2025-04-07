@@ -1,7 +1,7 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
-  O: () => k,
-  U: () => S.Un
+  O: () => R,
+  U: () => I.Un
 }), n(539854), n(784620), n(973216), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -21,21 +21,21 @@ var r = n(200651),
   b = n(706454),
   x = n(314897),
   y = n(699516),
-  v = n(914010),
-  E = n(594174),
+  E = n(914010),
+  v = n(594174),
   O = n(768581),
   N = n(433534),
   j = n(506895),
   C = n(758199),
-  I = n(943762),
-  S = n(914498),
+  S = n(943762),
+  I = n(914498),
   T = n(172109),
   P = n(880251),
   A = n(208444),
   w = n(388032),
   Z = n(758364);
 
-function k(e) {
+function R(e) {
   let {
     app: t,
     embedUrl: n,
@@ -46,15 +46,15 @@ function k(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, v = (0, f.ye)(t), E = O.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, E = (0, f.ye)(t), v = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
     staticBannerSrc: N,
-    videoBannerSrc: I,
+    videoBannerSrc: S,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), k = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
+  } = (0, P.E)(t), R = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
     analyticsLocations: L
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
@@ -67,11 +67,11 @@ function k(e) {
     },
     applicationId: t.id,
     botUserId: null == b ? void 0 : b.id
-  }), H = null != y && v && G, V = F && v && G, z = (0, A.z)(t), K = i.useMemo(() => {
+  }), H = null != y && E && G, V = F && E && G, z = (0, A.z)(t), K = i.useMemo(() => {
     let e = [];
     return V && e.push({
       label: null == W ? w.NW.string(w.t.cnBQPD) : w.NW.string(w.t.VJlc0d),
-      trackingArea: S.j_.PLAY,
+      trackingArea: I.j_.PLAY,
       onClick() {
         (0, c.G6)({
           channelId: null != M ? M : void 0,
@@ -80,49 +80,49 @@ function k(e) {
           instanceId: null != W ? W : void 0,
           embeddedActivitiesManager: B,
           customId: l,
-          referrerId: k,
+          referrerId: R,
           analyticsLocations: L
         })
       },
       disabledReason: U ? w.NW.string(w.t.wJNK8P) : void 0
     }), !V && H && e.push({
       label: w.NW.string(w.t.JeK1Wl),
-      trackingArea: S.j_.PLAY,
+      trackingArea: I.j_.PLAY,
       onClick() {
         (0, m.W)({
           appId: t.id,
           botId: y,
           analyticsLocations: L,
           customId: l,
-          referrerId: k
+          referrerId: R
         })
       }
     }), null != z && e.push(z), e
-  }, [V, H, z, W, U, M, t.id, B, l, k, L, y]), Y = v ? (0, r.jsx)(D, {
+  }, [V, H, z, W, U, M, t.id, B, l, R, L, y]), Y = E ? (0, r.jsx)(D, {
     app: t
-  }) : (0, r.jsx)(R, {
+  }) : (0, r.jsx)(k, {
     app: t
   });
   return (0, r.jsx)(C.W, {
     title: _,
     staticBannerSrc: N,
-    videoBannerSrc: I,
+    videoBannerSrc: S,
     bannerAspectRatio: Z,
-    iconSrc: E,
+    iconSrc: v,
     embedUrl: n,
     info: Y,
     actions: K,
     trackingConfig: {
       id: t.id,
       linkType: a,
-      referrerId: k,
+      referrerId: R,
       activityCustomId: l,
       onView: g
     }
   })
 }
 
-function R(e) {
+function k(e) {
   var t, n, l;
   let {
     app: c
@@ -167,20 +167,20 @@ function D(e) {
   } = e, {
     tags: n,
     maxParticipants: a
-  } = t, c = (0, o.e7)([v.Z], () => {
+  } = t, c = (0, o.e7)([E.Z], () => {
     var e;
-    return null != (e = v.Z.getGuildId()) ? e : void 0
-  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([E.default, y.Z], () => {
+    return null != (e = E.Z.getGuildId()) ? e : void 0
+  }, []), u = (0, _.Ns)(t.id), d = (0, o.Wu)([v.default, y.Z], () => {
     let e = [];
     for (let [t, n] of u.entries()) {
       if (t >= 5) break;
-      let r = E.default.getUser(n.author_id),
+      let r = v.default.getUser(n.author_id),
         i = y.Z.isFriend(n.author_id);
       null != r && i && e.push(r)
     }
     return e
   }, [u]), p = i.useMemo(() => {
-    if (d.length > 0) return (0, r.jsx)(I.K, {
+    if (d.length > 0) return (0, r.jsx)(S.K, {
       activityUsers: d,
       guildId: c,
       activityText: w.NW.string(w.t["IJa+4+"])

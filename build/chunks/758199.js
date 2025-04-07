@@ -1,7 +1,7 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   W: () => O,
-  u: () => E
+  u: () => v
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(200651),
   a = n(192379),
@@ -30,7 +30,7 @@ function y() {
   }).apply(this, arguments)
 }
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,18 +48,18 @@ function v(e) {
   }
   return e
 }
-var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function O(e) {
   var t, n, r, l;
   let {
-    title: E,
+    title: v,
     header: O,
     info: N,
     staticBannerSrc: j,
     videoBannerSrc: C,
-    bannerAspectRatio: I = 0,
-    iconSrc: S,
+    bannerAspectRatio: S = 0,
+    iconSrc: I,
     embedUrl: T,
     actions: P = [],
     trackingConfig: A
@@ -75,7 +75,7 @@ function O(e) {
   let {
     primaryColor: w,
     secondaryColor: Z
-  } = (0, p.Z)(null != S ? S : j), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
+  } = (0, p.Z)(null != I ? I : j), R = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == A || null == (t = A.onView) || t.call(A), (0, g.GF)(A.id, A.linkType, A.referrerId, A.activityCustomId), D.current = !0
@@ -92,7 +92,7 @@ function O(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, W = null != j, U = null != C && !1 === R, F = W || U, B = 0 === I ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
+  }) : null, W = null != j, U = null != C && !1 === k, F = W || U, B = 0 === S ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), V = a.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
@@ -125,7 +125,7 @@ function O(e) {
     }), (0, i.jsxs)("div", {
       className: x.contentContainer,
       style: {
-        background: k
+        background: R
       },
       children: [null != O && (0, i.jsxs)("div", {
         className: x.header,
@@ -136,10 +136,10 @@ function O(e) {
         }), M]
       }), (0, i.jsxs)("div", {
         className: x.contentWrapper,
-        children: [null != S && (0, i.jsx)("div", {
+        children: [null != I && (0, i.jsx)("div", {
           className: x.img,
           style: {
-            backgroundImage: "url(".concat(S, ")")
+            backgroundImage: "url(".concat(I, ")")
           }
         }), (0, i.jsxs)("div", {
           className: x.content,
@@ -147,7 +147,7 @@ function O(e) {
             variant: "text-md/semibold",
             color: "none",
             lineClamp: 1,
-            children: E
+            children: v
           }), N]
         }), null == O && M]
       }), P.length > 0 && (0, i.jsx)("div", {
@@ -176,9 +176,9 @@ function O(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, v({}, d, t))
+              return (0, i.jsx)(c.zxk, E({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, v({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, E({}, d), n)
         })
       })]
     })]

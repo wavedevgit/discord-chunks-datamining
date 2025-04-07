@@ -1,5 +1,4 @@
-/** Chunk was on 73488 **/
-"use strict";
+/** Chunk was on 84927 **/
 e.exports = {
   embedFull: "embedFull__623de embed__623de",
   embed: "embed__623de",

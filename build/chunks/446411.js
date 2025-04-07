@@ -401,6 +401,9 @@ class Y extends(n = i.PureComponent) {
           maxHeight: n,
           shouldLink: e,
           autoPlay: s && !o,
+          srcIsAnimated: l.srcIsAnimated,
+          placeholder: l.placeholder,
+          placeholderVersion: l.placeholderVersion,
           sourceMetadata: a,
           analyticsSource: "Embed"
         })

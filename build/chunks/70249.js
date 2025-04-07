@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 e.exports = {
   postPreviewContainer: "postPreviewContainer__419e3",
   thumbnailContainer: "thumbnailContainer__419e3",

@@ -1,1 +1,1 @@
-{"id":"615365","type":"experiment","data":{"kind":"user","id":"2023-08_guild_usage_survey","label":"Guild Usage Survey","defaultConfig":{"showSurvey":false},"treatments":[{"id":1,"label":"show survey nag bar","config":{"showSurvey":false}}]},"fromModule":{"id":"22253"}}
+{"id":"615365","type":"experiment","data":{"kind":"user","id":"2023-08_guild_usage_survey","label":"Guild Usage Survey","defaultConfig":{"showSurvey":false},"treatments":[{"id":1,"label":"show survey nag bar","config":{"showSurvey":false}}]},"fromModule":{"id":"84927"}}

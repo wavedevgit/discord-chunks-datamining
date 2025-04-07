@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => Z
 });
@@ -20,14 +20,14 @@ var r = n(200651),
   b = n(739566),
   x = n(492593),
   y = n(453687),
-  v = n(25015),
-  E = n(689674),
+  E = n(25015),
+  v = n(689674),
   O = n(438075),
   N = n(963550),
   j = n(845080),
   C = n(295790),
-  I = n(145807),
-  S = n(56744),
+  S = n(145807),
+  I = n(56744),
   T = n(981631),
   P = n(30804);
 
@@ -67,8 +67,8 @@ let Z = i.memo(function(e) {
   let {
     message: a,
     compact: Z = !1,
-    className: k,
-    onContextMenu: R,
+    className: R,
+    onContextMenu: k,
     onClick: D,
     hideSimpleEmbedContent: L = !0,
     channel: M,
@@ -94,7 +94,7 @@ let Z = i.memo(function(e) {
   }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = a.type === T.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, z = a.isFirstMessageInForumPost(M), K = (0, u.A)((null != (n = a.editedTimestamp) ? n : a.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: X
-  } = (0, v.Z)(a, {
+  } = (0, E.Z)(a, {
     hideSimpleEmbedContent: L,
     allowList: z || K,
     allowHeading: z || K,
@@ -103,7 +103,7 @@ let Z = i.memo(function(e) {
   }), q = a.type === T.uaV.REPLY ? a.messageReference : void 0, Q = (0, s.e7)([p.Z], () => p.Z.getMessageByReference(q)), J = (0, o.JA)(a.id), $ = (0, b.ZP)(a), ee = null != (i = a.getGuildId()) ? i : void 0, et = (0, d.Z)($), en = (0, s.e7)([m.Z], () => a.hasFlag(T.iLy.HAS_THREAD) && m.Z.getChannel(h.default.castMessageIdAsChannelId(a.id))), er = (0, c.p9)({
     guildId: M.guild_id,
     roleId: $.iconRoleId
-  }), ei = (0, s.e7)([f.Z], () => f.Z.can(T.Plq.CREATE_INSTANT_INVITE, M)), ea = (0, E.Z)({
+  }), ei = (0, s.e7)([f.Z], () => f.Z.can(T.Plq.CREATE_INSTANT_INVITE, M)), ea = (0, v.Z)({
     message: a,
     channel: M,
     enabled: G
@@ -113,13 +113,13 @@ let Z = i.memo(function(e) {
     eo = (0, y.Gx)(a);
   return (0, r.jsx)(x.Z, A({
     compact: Z,
-    className: l()(k, {
+    className: l()(R, {
       [P.ephemeral]: (0, g.Pv)(a),
       [P.disableInteraction]: V
     }),
     disableInteraction: V,
-    childrenRepliedMessage: (0, S.Z)(a, M, q, Q, Z),
-    childrenExecutedCommand: (0, I.Z)(a, M, Z),
+    childrenRepliedMessage: (0, I.Z)(a, M, q, Q, Z),
+    childrenExecutedCommand: (0, S.Z)(a, M, Z),
     childrenHeader: (0, j.Z)(w(A({}, e), {
       guildId: M.guild_id,
       author: $,
@@ -130,7 +130,7 @@ let Z = i.memo(function(e) {
     childrenSystemMessage: (0, C.Z)(w(A({}, e), {
       disableInteraction: V
     })),
-    onContextMenu: R,
+    onContextMenu: k,
     onClick: D,
     hasThread: B && null != en && a.hasFlag(T.iLy.HAS_THREAD),
     hasReply: a.type === T.uaV.REPLY,

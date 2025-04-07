@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   z: () => x
 });
@@ -24,11 +24,11 @@ function x(e, t) {
     isDiscoverable: n,
     customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: v
-  } = e, E = (0, f.E)({
+    integrationTypesConfig: E
+  } = e, v = (0, f.E)({
     customInstallUrl: x,
     installParams: y,
-    integrationTypesConfig: v
+    integrationTypesConfig: E
   }), O = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
@@ -46,12 +46,12 @@ function x(e, t) {
         applicationId: e.id,
         newSessionState: {
           entrypoint: {
-            name: s.xF.APPLICATION_DIRECTORY_PROFILE_EMBED
+            name: s.xF.APPLICATION_MESSAGE_EMBED
           }
         }
       })
     }
-  } : E ? {
+  } : v ? {
     label: b.NW.string(b.t.NgXl3N),
     trackingArea: h.j_.ADD_APP,
     onClick() {
@@ -59,10 +59,10 @@ function x(e, t) {
         applicationId: e.id,
         customInstallUrl: x,
         installParams: y,
-        integrationTypesConfig: v,
+        integrationTypesConfig: E,
         guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, j, C, x, y, v, E, t, O])
+  } : void 0, [e.id, j, C, x, y, E, v, t, O])
 }

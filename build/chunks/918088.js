@@ -1,9 +1,9 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Tk: () => T,
   ZP: () => P,
   ef: () => C,
-  r8: () => S
+  r8: () => I
 }), n(388685), n(314940);
 var r = n(278074),
   i = n(263568),
@@ -23,8 +23,8 @@ var r = n(278074),
   b = n(79390),
   x = n(839963),
   y = n(897325),
-  v = n(57101),
-  E = n(562293),
+  E = n(57101),
+  v = n(562293),
   O = n(981631),
   N = n(388032);
 let j = {
@@ -39,7 +39,7 @@ function C(e, t) {
   for (let n of e)
     if (("number" == typeof n.emoji.id ? "".concat(n.emoji.id) : n.emoji.id) === t) return n
 }
-let I = e => (0, r.EQ)(e).with({
+let S = e => (0, r.EQ)(e).with({
   isExpired: !0,
   isLeader: !0,
   didSelfVote: !0
@@ -65,7 +65,7 @@ let I = e => (0, r.EQ)(e).with({
   showResults: !0
 }, () => "notVoted").otherwise(() => "normalVote");
 
-function S(e) {
+function I(e) {
   return null == e.poll || p.Z.getMessage(e.channel_id, e.id) === e
 }
 
@@ -78,7 +78,7 @@ function T(e, t) {
   } = e;
   if (null == o) return;
   let m = e.state === O.yb.SENT,
-    f = m ? null != l ? l : (0, E.H)(o.expiry) : "",
+    f = m ? null != l ? l : (0, v.H)(o.expiry) : "",
     h = null == f && m,
     {
       selectedAnswerIds: g,
@@ -86,22 +86,22 @@ function T(e, t) {
       editing: x,
       showResults: y
     } = null != (i = null != t ? t : (0, _.fU)(e.getChannelId(), e.id)) ? i : j,
-    v = e.reactions,
+    E = e.reactions,
     N = !0;
-  if (!S(e)) {
+  if (!I(e)) {
     let t = p.Z.getMessage(e.channel_id, e.id);
-    N = !e.isSearchHit && null != t, v = null != (a = null == t ? void 0 : t.reactions) ? a : v
+    N = !e.isSearchHit && null != t, E = null != (a = null == t ? void 0 : t.reactions) ? a : E
   }
   let C = g.size > 0,
-    I = v.some(e => !0 === e.me_vote),
-    T = !x && I,
+    S = E.some(e => !0 === e.me_vote),
+    T = !x && S,
     P = T || h || y,
-    A = m && N && (!I || x || P),
+    A = m && N && (!S || x || P),
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
-    k = (0, s.EY)(Z),
-    R = (0, c.b)(Z),
-    D = !b && C && !T && m && !k && !R;
+    R = (0, s.EY)(Z),
+    k = (0, c.b)(Z),
+    D = !b && C && !T && m && !R && !k;
   return {
     poll: o,
     canTapAnswers: A,
@@ -111,12 +111,12 @@ function T(e, t) {
     expirationLabel: f,
     hasSelectedAnswer: C,
     hasVoted: T,
-    hasVoteRecorded: I,
+    hasVoteRecorded: S,
     isEditingVote: x,
     isExpired: h,
     isInteractive: N,
     isSent: m,
-    reactions: v,
+    reactions: E,
     selectedAnswerIds: g,
     submitting: b,
     tapShouldOpenVotersModal: P,
@@ -134,11 +134,11 @@ function P(e, t) {
     poll: _
   } = e;
   if (null == _) return;
-  let E = m.default.getCurrentUser();
-  if (null == E) return;
+  let v = m.default.getCurrentUser();
+  if (null == v) return;
   let O = a.Z.useReducedMotion,
     j = null == (s = u.Z.getChannel(e.getChannelId())) || null == (n = s.getGuildId) ? void 0 : n.call(s),
-    S = (0, y.E)(E, j),
+    I = (0, y.E)(v, j),
     P = _.answers,
     A = _.layout_type,
     w = T(e, t, {
@@ -147,8 +147,8 @@ function P(e, t) {
   if (null == w) return;
   let {
     canTapAnswers: Z,
-    canRemoveVote: k,
-    canShowVoteCounts: R,
+    canRemoveVote: R,
+    canShowVoteCounts: k,
     canSubmitVote: D,
     expirationLabel: L = N.NW.string(N.t["e+J3JS"]),
     hasSelectedAnswer: M,
@@ -176,7 +176,7 @@ function P(e, t) {
       m = H.has(s),
       g = d >= q && 0 !== d,
       _ = W && null != (a = null == u ? void 0 : u.me_vote) && a,
-      b = I({
+      b = S({
         didSelfVote: _,
         hasVoted: W,
         isExpired: F,
@@ -232,7 +232,7 @@ function P(e, t) {
     canSubmitVote: D,
     hasVoted: W,
     isEditingVote: U,
-    canRemoveVote: k,
+    canRemoveVote: R,
     isInteractive: B,
     showResults: K
   }).with({
@@ -326,7 +326,7 @@ function P(e, t) {
     }, () => x.Y7.CHECKBOXES).exhaustive(),
     answerTapAccessibilityLabel: z ? $ : void 0,
     layoutType: A,
-    resources: (0, v.Z)({
+    resources: (0, E.Z)({
       theme: d,
       layoutType: A
     }),
@@ -336,10 +336,10 @@ function P(e, t) {
     canTapAnswers: Z,
     canSelectMultipleAnswers: en,
     hasSelectedAnswer: M,
-    canShowVoteCounts: R,
+    canShowVoteCounts: k,
     hasVoted: W,
     isExpired: F,
-    myAvatarUrl: S,
+    myAvatarUrl: I,
     secondaryAction: ee,
     tertiaryAction: et
   }

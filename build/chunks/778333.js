@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => x
 });
@@ -24,7 +24,7 @@ function x(e) {
   let {
     invite: n,
     getAcceptInviteContext: x
-  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), v = (null == (t = n.inviter) ? void 0 : t.id) === y, E = n.state === g.r2o.ACCEPTING, {
+  } = e, y = (0, a.e7)([p.default], () => p.default.getId()), E = (null == (t = n.inviter) ? void 0 : t.id) === y, v = n.state === g.r2o.ACCEPTING, {
     analyticsLocations: O
   } = (0, c.ZP)(s.Z.INVITE_EMBED), N = (0, a.e7)([f.Z], () => {
     var e;
@@ -41,11 +41,11 @@ function x(e) {
     })
   }, [n, O, x]);
   if (null == n.inviter) return null;
-  let I = N ? j : C,
-    S = _.NW.string(_.t.ib7Ng4),
+  let S = N ? j : C,
+    I = _.NW.string(_.t.ib7Ng4),
     T = u.Z.Button.Colors.GREEN;
-  N ? (S = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : v && (S = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
-  let P = v ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
+  N ? (I = _.NW.string(_.t.xhxnPj), T = u.Z.Button.Colors.PRIMARY) : E && (I = _.NW.string(_.t.ib7Ng4), T = u.Z.Button.Colors.PRIMARY);
+  let P = E ? _.NW.string(_.t.eQyu1N) : _.NW.string(_.t.PYJHW1),
     A = null != n.inviter ? "".concat(n.inviter.username) : "",
     w = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
@@ -56,18 +56,18 @@ function x(e) {
         className: b.headerLine,
         children: [(0, r.jsx)(u.Z.Icon, {
           user: new d.Z(n.inviter),
-          onClick: N ? I : void 0
+          onClick: N ? S : void 0
         }), (0, r.jsx)(u.Z.Info, {
           title: A,
-          onClick: N ? I : void 0,
+          onClick: N ? S : void 0,
           children: w
         })]
       }), (0, r.jsx)(u.Z.Button, {
-        onClick: I,
-        submitting: E,
-        isDisabled: v,
+        onClick: S,
+        submitting: v,
+        isDisabled: E,
         color: T,
-        children: S
+        children: I
       })]
     })]
   })

@@ -1,14 +1,14 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
-  NJ: () => k,
+  NJ: () => R,
   R8: () => D,
-  Sq: () => S,
+  Sq: () => I,
   Wg: () => L,
-  Zn: () => I,
+  Zn: () => S,
   c2: () => w,
-  eE: () => R,
+  eE: () => k,
   iE: () => W,
   iK: () => Z,
   lv: () => T,
@@ -36,9 +36,9 @@ var r = n(5148),
   b = n(473552),
   x = n.n(b),
   y = n(634523),
-  v = n.n(y),
-  E = n(302648),
-  O = n.n(E);
+  E = n.n(y),
+  v = n(302648),
+  O = n.n(v);
 
 function N(e, t, n, i) {
   let a = i.getCurrentContent(),
@@ -74,7 +74,7 @@ function j(e, t, n, i) {
 function C(e, t) {
   switch (e) {
     case "delete":
-      return v()(t);
+      return E()(t);
     case "delete-word":
       return m()(t);
     case "backspace":
@@ -88,7 +88,7 @@ function C(e, t) {
   }
 }
 
-function I(e, t) {
+function S(e, t) {
   switch (e) {
     case "transpose-characters":
       return O()(t);
@@ -101,7 +101,7 @@ function I(e, t) {
   }
 }
 
-function S(e) {
+function I(e) {
   return e.getCurrentContent().getFirstBlock().getText()
 }
 
@@ -151,7 +151,7 @@ function A(e) {
 }
 
 function w(e, t) {
-  let n = S(t);
+  let n = I(t);
   return j(e, t, 0, n.length)
 }
 
@@ -160,11 +160,11 @@ function Z(e, t) {
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
-function k(e) {
+function R(e) {
   return Z(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function R(e) {
+function k(e) {
   return Z(0, e)
 }
 
@@ -174,14 +174,14 @@ function D(e) {
 }
 
 function L(e) {
-  let t = S(e),
+  let t = I(e),
     n = e.getSelection();
   return n = (n = n.set("focusOffset", t.length)).set("isBackward", !1), r.EditorState.forceSelection(e, n)
 }
 
 function M(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 512,
-    n = S(e);
+    n = I(e);
   if (n.length > t) {
     let i = e.getSelection();
     e = j("", e, t, n.length), i.getAnchorOffset() > t && (i = i.set("anchorOffset", t)), i.getFocusOffset() > t && (i = i.set("focusOffset", t)), e = r.EditorState.forceSelection(e, i)
@@ -208,5 +208,5 @@ function W(e) {
 }
 
 function U(e) {
-  return 0 === S(e).length
+  return 0 === I(e).length
 }

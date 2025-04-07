@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   ZP: () => _,
   fO: () => g,
@@ -60,14 +60,14 @@ let h = i.forwardRef(function(e, t) {
     onClick: b,
     onTooltipShow: x,
     onTooltipHide: y,
-    disabled: v,
-    dangerous: E,
+    disabled: E,
+    dangerous: v,
     separator: O,
     sparkle: N,
     showNewBadge: j,
     buttonClassName: C,
-    children: I
-  } = e, S = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
+    children: S
+  } = e, I = f(e, ["label", "ariaLabel", "tooltipText", "tooltipColor", "icon", "iconProps", "onClick", "onTooltipShow", "onTooltipHide", "disabled", "dangerous", "separator", "sparkle", "showNewBadge", "buttonClassName", "children"]);
   let {
     canShowReactionsOnMessageHover: T
   } = u.ZP.useExperiment({
@@ -106,15 +106,15 @@ let h = i.forwardRef(function(e, t) {
             null == x || x(), b(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: v,
-          dangerous: E
-        }, S), u = u = {
+          disabled: E,
+          dangerous: v
+        }, I), u = u = {
           children: [null != g ? (0, r.jsx)(g, m({
             className: p.icon,
             color: "currentColor"
-          }, _)) : null, null != I ? (0, r.jsx)("div", {
+          }, _)) : null, null != S ? (0, r.jsx)("div", {
             className: l()(p.icon, p.buttonContent),
-            children: I
+            children: S
           }) : null, N && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
             text: d.NW.string(d.t.y2b7CA),
             color: s.Z.BG_BRAND,

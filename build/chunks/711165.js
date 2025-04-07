@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   _: () => w
 }), n(642613), n(388685);
@@ -20,14 +20,14 @@ var r = n(200651),
   b = n(74365),
   x = n(618857),
   y = n(695346),
-  v = n(23750),
-  E = n(592125),
+  E = n(23750),
+  v = n(592125),
   O = n(594174),
   N = n(823379),
   j = n(324081),
   C = n(240126),
-  I = n(791914),
-  S = n(981631),
+  S = n(791914),
+  I = n(981631),
   T = n(388032),
   P = n(142857);
 let A = {
@@ -46,7 +46,7 @@ function w(e) {
     (0, g.kg)()
   }, []), (0, r.jsxs)("div", {
     className: l()(P.container, P.widerInbox),
-    children: [(0, r.jsx)(I.Z, {
+    children: [(0, r.jsx)(S.Z, {
       tab: d.X.SCHEDULED,
       setTab: t,
       closePopout: n
@@ -111,7 +111,7 @@ function Z() {
             a.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           }
         }, o), i = i = {
-          children: (0, r.jsx)(k, {
+          children: (0, r.jsx)(R, {
             scheduledMessages: t
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -129,12 +129,12 @@ function Z() {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = E.Z.getChannel(t.scheduledMessage.channelId);
+    let i = v.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null != (r = null == (n = e[i.id]) ? void 0 : n.scheduledMessages) ? r : [], t]
@@ -150,11 +150,11 @@ function k(e) {
         className: P.channelRow,
         children: [(0, r.jsx)(j.Z, {
           channel: n,
-          gotoChannel: () => (0, h.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
+          gotoChannel: () => (0, h.uL)(I.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
         }), i.map(e => {
           let t = a.has(e.scheduledMessageId);
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(k, {
             scheduledMessage: e,
             channel: n,
             isPendingDeletion: t
@@ -164,12 +164,12 @@ function k(e) {
     })
   })
 }
-let R = i.memo(function(e) {
+let k = i.memo(function(e) {
   let {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: a
-  } = e, o = new v.ZP({
+  } = e, o = new E.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
     author: O.default.getUser(t.userId),

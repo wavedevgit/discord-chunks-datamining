@@ -291,18 +291,21 @@ function B(e) {
 function V(e) {
   let {
     proratedInvoice: t,
-    renewalInvoice: n
+    renewalInvoice: n,
+    overrideRenewalDate: i
   } = e, {
-    intervalType: i,
-    intervalCount: o
+    intervalType: o,
+    intervalCount: a
   } = (0, g.dn)(t), {
-    intervalType: a,
-    intervalCount: s
+    intervalType: s,
+    intervalCount: l
   } = (0, g.dn)(n);
-  return i !== a || o !== s || t.subscriptionPeriodEnd.getTime() === n.subscriptionPeriodStart.getTime() ? null : (0, r.jsx)("div", {
+  if (o !== s || a !== l || t.subscriptionPeriodEnd.getTime() === n.subscriptionPeriodStart.getTime()) return null;
+  let c = null != i ? i : t.subscriptionPeriodEnd;
+  return (0, r.jsx)("div", {
     className: A.subscriptionPeriodResetNotice,
     children: N.NW.format(N.t.JWWD4O, {
-      renewalDate: t.subscriptionPeriodEnd
+      renewalDate: c
     })
   })
 }

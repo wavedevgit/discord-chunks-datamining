@@ -1,28 +1,28 @@
-/** Chunk was on 6208 **/
+/** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => c
+  Z: () => o
 }), n(388685);
 var i = n(200651),
   r = n(192379),
-  o = n(558522),
-  l = n(484112);
+  l = n(558522),
+  a = n(484112);
 
-function c(e) {
+function o(e) {
   let {
     imageBackground: t,
     applicationName: n,
-    imageClassName: c,
-    imageNotFoundClassName: a
-  } = e, [u, d] = r.useState(!1);
-  return "not-found" === t.state || u ? (0, i.jsx)("div", {
-    className: a,
-    children: (0, i.jsx)(o.Z, {
-      className: l.brokenImageIcon
+    imageClassName: o,
+    imageNotFoundClassName: c
+  } = e, [s, u] = r.useState(!1);
+  return "not-found" === t.state || s ? (0, i.jsx)("div", {
+    className: c,
+    children: (0, i.jsx)(l.Z, {
+      className: a.brokenImageIcon
     })
   }) : "loading" === t.state ? null : (0, i.jsx)("img", {
     alt: n,
-    className: c,
+    className: o,
     src: t.url,
-    onError: () => d(!0)
+    onError: () => u(!0)
   })
 }

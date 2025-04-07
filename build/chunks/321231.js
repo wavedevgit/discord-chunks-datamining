@@ -1,10 +1,10 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 1272 **/
 n.d(t, {
-  G: () => a
+  G: () => l
 });
 var r = n(818083),
   i = n(987338);
-let a = (0, r.B)({
+let l = (0, r.B)({
   kind: "user",
   id: "2024-12_app_embeds_redesign",
   label: "App Embeds Redesign",

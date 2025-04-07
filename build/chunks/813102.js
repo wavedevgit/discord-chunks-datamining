@@ -1,5 +1,4 @@
-/** Chunk was on 73488 **/
-"use strict";
+/** Chunk was on 84927 **/
 e.exports = {
   container: "container_b7e1cb",
   gifFavoriteButton: "gifFavoriteButton_b7e1cb",

@@ -31,7 +31,7 @@ function C(e) {
     iconURL: _,
     scrollerRef: x,
     sectionName: v
-  } = e, y = (0, a.ap)((0, c.ZP)()), N = r.useRef(null), g = r.useRef(null), j = r.useRef(null), P = r.useRef(null), E = (0, o.dQu)(o.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof _ ? "" : _, null != E ? E : ""), O = r.useMemo(() => {
+  } = e, y = (0, a.ap)((0, c.ZP)()), N = r.useRef(null), g = r.useRef(null), j = r.useRef(null), P = r.useRef(null), E = (0, o.dQu)(o.TVs.colors.BG_BASE_PRIMARY).hex(), A = (0, s.ZP)("number" == typeof _ ? "" : _, null != E ? E : ""), I = r.useMemo(() => {
     var e, t;
     let n = (0, l.compact)([u.Z.parseHexString(A), u.Z.parseHexString(y ? "#000000" : "#ffffff")]);
     return null != (t = null == (e = (0, d.k8)({
@@ -39,13 +39,13 @@ function C(e) {
       ratio: 5,
       saturationFactor: .6
     })) ? void 0 : e.toHexString()) ? t : A
-  }, [A, y]), I = b(N), S = b(g), T = r.useCallback(() => {
+  }, [A, y]), O = b(N), S = b(g), T = r.useCallback(() => {
     var e, t, n, i;
     let r = x.current,
       a = N.current,
       o = j.current,
       c = null == P ? void 0 : P.current,
-      s = parseInt(null != (e = null == I ? void 0 : I.height) ? e : ""),
+      s = parseInt(null != (e = null == O ? void 0 : O.height) ? e : ""),
       u = parseInt(null != (t = null == S ? void 0 : S.height) ? t : "");
     if (null != r && null != a && null != o && !isNaN(s) && !isNaN(u)) {
       let e = null != (n = r.scrollTop) ? n : 0,
@@ -54,9 +54,9 @@ function C(e) {
         p = u - s,
         m = (0, l.clamp)(t - d, p + 1, u + 20),
         f = p === m ? 1 : (0, l.clamp)((e - p) / (m - p), 0, 1);
-      a.style.filter = "brightness(".concat(1 + ((y ? 1.4 : .6) - 1) * f, ")"), a.style.backgroundColor = "color-mix(in oklab,".concat(A, " ").concat((1 - f) * 100, "%, ").concat(O, ")"), o.style.opacity = "".concat(0 + +f), o.style.transform = "translateY(".concat((i = s / 4) + (0 - i) * f, "px)"), null != c && (c.style.opacity = "".concat(1 + -1 * f))
+      a.style.filter = "brightness(".concat(1 + ((y ? 1.4 : .6) - 1) * f, ")"), a.style.backgroundColor = "color-mix(in oklab,".concat(A, " ").concat((1 - f) * 100, "%, ").concat(I, ")"), o.style.opacity = "".concat(0 + +f), o.style.transform = "translateY(".concat((i = s / 4) + (0 - i) * f, "px)"), null != c && (c.style.opacity = "".concat(1 + -1 * f))
     }
-  }, [O, A, null == S ? void 0 : S.height, y, x, null == I ? void 0 : I.height]);
+  }, [I, A, null == S ? void 0 : S.height, y, x, null == O ? void 0 : O.height]);
   return r.useEffect(() => {
     T()
   }, [T, y]), r.useEffect(() => {

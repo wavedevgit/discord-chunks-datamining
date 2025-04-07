@@ -946,13 +946,18 @@ function eE(e, t) {
   }
 }
 
-function eb(e, t) {
-  let n = a()(e);
+function eb(e, t, n) {
+  let r = a()(e);
   if (t.length > 0) {
     let e = tC(t);
-    n = n.add(e, "hours")
+    r = r.add(e, "hours")
   }
-  return n.toDate()
+  if (void 0 !== n) {
+    let e = a()(),
+      t = n.diff(e, "hours", !0);
+    t > 0 && (r = r.add(t, "hours"))
+  }
+  return r.toDate()
 }
 
 function ey(e) {

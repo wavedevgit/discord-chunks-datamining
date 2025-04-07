@@ -29,8 +29,8 @@ var i, r = n(200651),
   P = n(594174),
   E = n(695103),
   A = n(880448),
-  O = n(768581),
-  I = n(541099),
+  I = n(768581),
+  O = n(541099),
   S = n(783097),
   T = n(695676),
   L = n(176412),
@@ -240,13 +240,13 @@ function Y(e) {
     fakeAppIconURL: U
   }), [t]), x = l.useMemo(() => null == _ ? null : (0, L.ae)(_), [_]), y = (0, N.ZP)(b, ""), [g, j] = l.useState(!1), P = l.useCallback(() => {
     !0 === a && j(!0)
-  }, [a]), A = h || (0, S.lf)(t), O = "large_banner" === n || "medium_banner" === n, I = l.useCallback(() => j(!1), []), T = (0, c.e7)([f.Z, E.Z], () => f.Z.inDevModeForApplication(t.id) || E.Z.inTestModeForApplication(t.id), [t.id]), R = (0, S.WA)(t);
+  }, [a]), A = h || (0, S.lf)(t), I = "large_banner" === n || "medium_banner" === n, O = l.useCallback(() => j(!1), []), T = (0, c.e7)([f.Z, E.Z], () => f.Z.inDevModeForApplication(t.id) || E.Z.inTestModeForApplication(t.id), [t.id]), R = (0, S.WA)(t);
   return (0, r.jsxs)(r.Fragment, {
-    children: [O ? (0, r.jsxs)("div", {
+    children: [I ? (0, r.jsxs)("div", {
       onMouseEnter: P,
       onFocus: P,
-      onMouseLeave: I,
-      onBlur: I,
+      onMouseLeave: O,
+      onBlur: O,
       className: o()(W.bannerImageContainer, {
         [W.mediumBanner]: "medium_banner" === n,
         [W.largeBanner]: "large_banner" === n
@@ -296,7 +296,7 @@ function Y(e) {
             color: "header-primary",
             lineClamp: 1,
             children: C
-          }), !O && A ? (0, r.jsx)("div", {
+          }), !I && A ? (0, r.jsx)("div", {
             className: W.promotedLabelWrapperNonBanner,
             children: (0, r.jsx)(s.Text, {
               variant: "text-xxs/semibold",
@@ -432,7 +432,7 @@ function ee(e) {
     bot: t,
     fallbackColor: n,
     disableFadeIn: i
-  } = e, l = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), a = (0, O.aN)({
+  } = e, l = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), a = (0, I.aN)({
     id: t.id,
     banner: t.banner,
     canAnimate: !l,
@@ -481,7 +481,7 @@ function en(e) {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
-      source: I.Z.entrypoint(),
+      source: O.Z.entrypoint(),
       location: o,
       query: r
     }), c({

@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => A
 }), n(953529), n(388685);
@@ -20,15 +20,15 @@ var r = n(200651),
   b = n(55935),
   x = n(63063),
   y = n(74538),
-  v = n(276444),
-  E = n(93237),
+  E = n(276444),
+  v = n(93237),
   O = n(786397),
   N = n(474936),
   j = n(981631),
   C = n(388032),
-  I = n(271818);
+  S = n(271818);
 
-function S(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -44,7 +44,7 @@ function T(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      S(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
@@ -84,7 +84,7 @@ class P extends i.Component {
       color: d.zxk.Colors.BRAND
     }, u = o.id !== l.user_id || (0, y.I5)(o) || !o.verified || (0, O.B)(l), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
-      className: I.buttonContainer,
+      className: S.buttonContainer,
       children: [(0, r.jsx)("div", {
         children: (0, r.jsx)(d.zxk, (i = T({}, c), a = a = {
           size: d.zxk.Sizes.SMALL,
@@ -109,7 +109,7 @@ class P extends i.Component {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }), (0, r.jsx)("div", {
-        className: I.metadata,
+        className: S.metadata,
         children: p
       })]
     })
@@ -126,11 +126,11 @@ class P extends i.Component {
     let a = new Date("2025-03-27T10:00:00.000-07:00");
     return t ? C.NW.formatToPlainString(C.t.PuSHfX, {
       date: (0, b.vc)(s()(a), "LL")
-    }) : (0, E.F)(a.valueOf())
+    }) : (0, v.F)(a.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
-      className: I.referral
+      className: S.referral
     })
   }
   render() {
@@ -140,27 +140,27 @@ class P extends i.Component {
       recipientHasNitro: n
     } = this.props, i = (0, O.B)(e), a = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
-      className: l()(I.tile, I.container),
+      className: l()(S.tile, S.container),
       children: [(0, r.jsx)("div", {
-        className: I.media,
+        className: S.media,
         children: this.renderMedia()
       }), (0, r.jsxs)("div", {
-        className: I.description,
+        className: S.description,
         children: [(0, r.jsx)(d.H, {
-          className: I.title,
+          className: S.title,
           children: this.renderTitle(n, i, a)
         }), (0, r.jsx)("div", {
-          className: I.tagline,
+          className: S.tagline,
           children: this.renderBody(n, i, a)
         }), (0, r.jsx)("div", {
-          className: I.actions,
+          className: S.actions,
           children: this.renderActions(n, i, a)
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), S(this, "handleStartTrial", (e, t) => {
+    super(...e), I(this, "handleStartTrial", (e, t) => {
       (0, h.Z)({
         initialPlanId: null,
         subscriptionTier: N.Si.TIER_2,
@@ -178,9 +178,9 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: a
-  } = (0, u.cj)([v.Z], () => ({
-    trialOffer: n ? v.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && v.Z.isResolving(t)
+  } = (0, u.cj)([E.Z], () => ({
+    trialOffer: n ? E.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && E.Z.isResolving(t)
   }), [n, t]), l = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== l && i.user_id === l.id ? l : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
     return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null
@@ -196,9 +196,9 @@ function A(e) {
     trialEndsAt: s,
     analyticsLocations: d
   }, e)) : (0, r.jsx)("div", {
-    className: I.invalidWrapper,
+    className: S.invalidWrapper,
     children: (0, r.jsx)("div", {
-      className: I.invalid
+      className: S.invalid
     })
   })
 }

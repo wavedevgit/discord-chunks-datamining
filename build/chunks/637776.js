@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(108427),
   d = n(844800),
   p = n(580497),
-  g = n(981631),
-  h = n(388032),
+  h = n(981631),
+  g = n(388032),
   f = n(742834);
 
 function m(e) {
@@ -34,14 +34,14 @@ function m(e) {
   return m ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Dx, {
       className: f.title,
-      children: h.NW.string(h.t.csrAMD)
+      children: g.NW.string(g.t.csrAMD)
     }), (0, r.jsx)(s.DK, {
       className: f.subtitle,
-      children: h.NW.string(h.t["m1+IBg"])
+      children: g.NW.string(g.t["m1+IBg"])
     }), (0, r.jsx)(s.zx, {
       className: f.spacedButton,
-      onClick: () => (0, c.uL)(g.Z5c.CHANNEL(N)),
-      children: h.NW.string(h.t.fIv16O)
+      onClick: () => (0, c.uL)(h.Z5c.CHANNEL(N)),
+      children: g.NW.string(g.t.fIv16O)
     })]
   }) : b ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
@@ -49,10 +49,10 @@ function m(e) {
       src: n(73962)
     }), (0, r.jsx)(s.Dx, {
       className: f.title,
-      children: h.NW.string(h.t.dAfGb2)
+      children: g.NW.string(g.t.dAfGb2)
     }), (0, r.jsx)(s.zx, {
       onClick: v,
-      children: h.NW.string(h.t.uJWIj4)
+      children: g.NW.string(g.t.uJWIj4)
     })]
   }) : null != x ? (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
@@ -60,13 +60,13 @@ function m(e) {
       src: n(375673)
     }), (0, r.jsx)(s.Dx, {
       className: f.title,
-      children: h.NW.string(h.t.PCgG39)
+      children: g.NW.string(g.t.PCgG39)
     }), (0, r.jsx)(s.DK, {
       className: f.subtitle,
-      children: h.NW.string(h.t.tQpeAw)
+      children: g.NW.string(g.t.tQpeAw)
     }), (0, r.jsx)(s.zx, {
       onClick: v,
-      children: h.NW.string(h.t.uJWIj4)
+      children: g.NW.string(g.t.uJWIj4)
     })]
   }) : (0, r.jsxs)(s.ZP, {
     children: [(0, r.jsx)(s.Ee, {
@@ -74,10 +74,10 @@ function m(e) {
       src: n(892235)
     }), (0, r.jsx)(s.Dx, {
       className: f.title,
-      children: h.NW.string(h.t["0c8+5u"])
+      children: g.NW.string(g.t["0c8+5u"])
     }), (0, r.jsx)(s.DK, {
       className: f.subtitle,
-      children: h.NW.string(h.t.ULTCBA)
+      children: g.NW.string(g.t.ULTCBA)
     }), (0, r.jsx)(s.zx, {
       submitting: !0,
       color: s.zx.Colors.PRIMARY

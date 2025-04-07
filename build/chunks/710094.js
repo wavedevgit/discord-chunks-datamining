@@ -137,6 +137,7 @@ function L(e) {
     handlePaymentSourceAdd: () => L(E.h8.ADD_PAYMENT_STEPS)
   })) : (eW = em ? null == ep : null != eP && ed === P.GZ.SUBSCRIPTION && eM && !eP.canRedeemTrial(), null == W || eh || em ? (a()(null != et, "Expected plan to be selected"), o = (0, r.jsx)(f.Z, {
     selectedPlanId: et.id,
+    planGroup: j,
     paymentSources: Q,
     onPaymentSourceChange: e => ei(null != e ? e.id : null),
     priceOptions: X,

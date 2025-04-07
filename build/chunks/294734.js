@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => A
 });
@@ -20,23 +20,23 @@ var r = n(200651),
   b = n(430824),
   x = n(496675),
   y = n(699516),
-  v = n(594174),
-  E = n(100604),
+  E = n(594174),
+  v = n(100604),
   O = n(694784),
   N = n(39154),
   j = n(245216),
   C = n(388032),
-  I = n(752386);
+  S = n(752386);
 
-function S() {
+function I() {
   return (0, r.jsxs)("div", {
-    className: I.headerContainer,
+    className: S.headerContainer,
     children: [(0, r.jsx)(j.Z, {
       size: "xs",
-      className: I.headerIcon,
+      className: S.headerIcon,
       color: s.Z.colors.TEXT_LOW_CONTRAST
     }), (0, r.jsx)(a.xv, {
-      className: I.headerText,
+      className: S.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
       children: C.NW.string(C.t.ToyvLi)
@@ -49,18 +49,18 @@ function T(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new E.r(t, n, d), [t, n, d]), m = (0, l.e7)([g.Z, v.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, v.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, l.e7)([g.Z, E.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, E.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
     (0, O.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
-    className: I.footerContainer,
+    className: S.footerContainer,
     onClick: f,
     children: [null != m.originIconUrl ? (0, r.jsx)("img", {
-      className: I.originIcon,
+      className: S.originIcon,
       src: m.originIconUrl,
       alt: ""
     }) : null, (0, r.jsx)(a.xv, {
-      className: I.footerText,
+      className: S.footerText,
       variant: "text-sm/medium",
       color: "none",
       children: "".concat(m.originLabel, "  •  ").concat(m.timestampLabel)
@@ -79,7 +79,7 @@ function P(e) {
     index: o
   } = e, s = i.useMemo(() => (0, N.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, l.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: y,
-    hasSpoilerEmbeds: v
+    hasSpoilerEmbeds: E
   } = (0, m.Z)(s, {
     hideSimpleEmbedContent: c && u,
     isInteracting: !1,
@@ -89,23 +89,23 @@ function P(e) {
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
-  }), E = (0, l.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), O = h.jU.useSetting();
-  return null == E ? null : (0, r.jsxs)("div", {
-    className: I.container,
+  }), v = (0, l.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), O = h.jU.useSetting();
+  return null == v ? null : (0, r.jsxs)("div", {
+    className: S.container,
     children: [(0, r.jsx)("div", {
-      className: I.quote
+      className: S.quote
     }), (0, r.jsxs)("div", {
-      className: I.content,
-      children: [(0, r.jsx)(S, {}), (0, r.jsx)(p.ZP, {
+      className: S.content,
+      children: [(0, r.jsx)(I, {}), (0, r.jsx)(p.ZP, {
         message: s,
         content: y
       }), (0, f.Z)({
         channelMessageProps: {
           message: s,
-          channel: E,
+          channel: v,
           compact: O
         },
-        hasSpoilerEmbeds: v,
+        hasSpoilerEmbeds: E,
         isInteracting: !1,
         isMessageSnapshot: !0,
         renderThreadAccessory: !1

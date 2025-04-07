@@ -1,6 +1,6 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
-  Z: () => I
+  Z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(592125),
   x = n(655354),
   y = n(324081),
-  v = n(791914),
-  E = n(981631),
+  E = n(791914),
+  v = n(981631),
   O = n(388032),
   N = n(829444),
   j = n(384323);
@@ -32,14 +32,14 @@ let C = {
   }
 };
 
-function I(e) {
+function S(e) {
   let {
     setTab: t,
     closePopout: n
   } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [l, o] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = l ? a : s;
   return (0, r.jsxs)("div", {
     className: N.container,
-    children: [(0, r.jsx)(v.Z, {
+    children: [(0, r.jsx)(E.Z, {
       tab: u.X.TODOS,
       setTab: t,
       closePopout: n
@@ -61,14 +61,14 @@ function I(e) {
         })
       })]
     }), 0 === p.length ? (0, r.jsx)(T, {}) : (0, r.jsx)(d.h21, {
-      children: p.map(e => (0, r.jsx)(S, {
+      children: p.map(e => (0, r.jsx)(I, {
         messageReminder: e
       }, e.saveData.messageId))
     })]
   })
 }
 
-function S(e) {
+function I(e) {
   let t, {
       messageReminder: i
     } = e,
@@ -76,12 +76,12 @@ function S(e) {
     o = i.message,
     u = (0, c.e7)([b.Z], () => b.Z.getChannel(a.channelId)),
     g = () => {
-      (0, f.uL)(E.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
+      (0, f.uL)(v.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
     },
-    v = null;
-  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", v = O.NW.formatToPlainString(O.t.H4gnX1, {
+    E = null;
+  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", E = O.NW.formatToPlainString(O.t.H4gnX1, {
     duration: s().duration(a.dueAt.getTime() - Date.now(), "millisecond").humanize()
-  })) : (t = "text-danger", v = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
+  })) : (t = "text-danger", E = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
     duration: s().duration(Date.now() - a.dueAt.getTime(), "millisecond").humanize()
   }))), null == o || null == u) ? null : (0, r.jsxs)("div", {
     className: j.container,
@@ -99,10 +99,10 @@ function S(e) {
             size: "xxs",
             color: "currentColor"
           }), i.saveData.notes]
-        }) : null, null != v ? (0, r.jsx)(d.Text, {
+        }) : null, null != E ? (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: t,
-          children: v
+          children: E
         }) : null, (0, r.jsx)(d.DY3, {
           text: O.NW.string(O.t.GtBCn5),
           children: (0, r.jsx)(d.P3F, {

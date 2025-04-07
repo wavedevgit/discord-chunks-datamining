@@ -31,18 +31,18 @@ function P(e) {
     context: n,
     application: s,
     sectionName: u
-  } = e, P = "channel" === n.type ? n.channel : void 0, A = (0, l.e7)([f.Z], () => f.Z.entrypoint()), O = null != (t = (0, p.q)(s.id === y.bi.BUILT_IN ? null : s.id)) ? t : s, I = (0, l.e7)([c.Z], () => c.Z.inDevModeForApplication(O.id)), S = (0, b.ye)(O) ? E : v.Z, T = m.PM.useExperiment({
+  } = e, P = "channel" === n.type ? n.channel : void 0, A = (0, l.e7)([f.Z], () => f.Z.entrypoint()), I = null != (t = (0, p.q)(s.id === y.bi.BUILT_IN ? null : s.id)) ? t : s, O = (0, l.e7)([c.Z], () => c.Z.inDevModeForApplication(I.id)), S = (0, b.ye)(I) ? E : v.Z, T = m.PM.useExperiment({
     location: "AppLauncherApplicationViewScreen"
   }), L = r.useRef(null), [R, w] = r.useState(!1), {
     iconURL: k,
     name: Z
-  } = r.useMemo(() => (0, b.sl)(O, {
+  } = r.useMemo(() => (0, b.sl)(I, {
     fakeAppIconURL: j,
     size: 84
-  }), [O]), M = (0, d.PL)(!0, !0), D = (0, d.LD)(null == P ? void 0 : P.guild_id, !0), W = r.useMemo(() => (0, d.If)(n, O.id), [M, D, n, O.id]), U = !W.isGuildInstalled && !W.isUserInstalled;
+  }), [I]), M = (0, d.PL)(!0, !0), D = (0, d.LD)(null == P ? void 0 : P.guild_id, !0), W = r.useMemo(() => (0, d.If)(n, I.id), [M, D, n, I.id]), U = !W.isGuildInstalled && !W.isUserInstalled;
   return r.useEffect(() => {
-    U && d.ZP.queryInstallOnDemandApp(O.id, null == P ? void 0 : P.id)
-  }, [O.id, null == P ? void 0 : P.id, U]), (0, i.jsxs)(o.u2D, {
+    U && d.ZP.queryInstallOnDemandApp(I.id, null == P ? void 0 : P.id)
+  }, [I.id, null == P ? void 0 : P.id, U]), (0, i.jsxs)(o.u2D, {
     className: g.container,
     fade: !0,
     ref: L,
@@ -51,7 +51,7 @@ function P(e) {
       applicationName: Z
     }),
     children: [(0, i.jsx)(x.Z, {
-      application: O,
+      application: I,
       context: n,
       name: Z,
       iconURL: k,
@@ -64,20 +64,20 @@ function P(e) {
       size: T.enabled ? 44 : 54
     }), (0, i.jsx)(S, {
       context: n,
-      application: O,
+      application: I,
       sectionName: u,
       hasCommands: R
     }), A === h._b.TEXT ? (0, i.jsx)(_.Z, {
       context: n,
-      application: O,
+      application: I,
       sectionName: u,
       installOnDemand: U,
       setHasCommands: w
     }) : null, T.enabled ? (0, i.jsx)(v.u, {
       context: n,
-      application: O,
+      application: I,
       hasCommands: R,
-      isDeveloperOfThisApp: I
+      isDeveloperOfThisApp: O
     }) : null]
   })
 }

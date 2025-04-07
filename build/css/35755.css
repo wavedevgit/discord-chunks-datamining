@@ -1,7 +1,15 @@
 /**
   Module ID: 35755
-  Original File Name: 10d0629be2568104
+  Original File Name: 478ca7e21c292acc
 **/
+.brokenImageIcon_f68fcb {
+    width: 48px;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+    color: var(--background-accent)
+}
+
 .activityBadge__44107 {
     background-color: var(--status-positive-background)
 }
@@ -1346,4 +1354,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=10d0629be2568104.css.map*/
+/*# sourceMappingURL=478ca7e21c292acc.css.map*/

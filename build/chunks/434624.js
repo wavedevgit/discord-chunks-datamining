@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   l: () => _
 }), n(388685);
@@ -25,29 +25,29 @@ let g = i.memo(function(e) {
         me: b,
         me_burst: x,
         burst_count: y,
-        burst_colors: v,
-        readOnly: E,
+        burst_colors: E,
+        readOnly: v,
         isLurking: O,
         isGuest: N,
         isPendingMember: j,
         type: C,
-        emojiSize: I
+        emojiSize: S
       } = e,
-      S = C === p.O.BURST,
+      I = C === p.O.BURST,
       T = (0, m.y4)(b, x, C),
-      P = (0, d.v)(S && null != v ? v : []),
+      P = (0, d.v)(I && null != E ? E : []),
       A = i ? h : f,
-      w = S ? y : _,
+      w = I ? y : _,
       Z = (0, u.y)(w, m.aO),
-      k = {};
-    if (S && null != P) {
-      var R;
+      R = {};
+    if (I && null != P) {
+      var k;
       let {
         accentColor: e,
         backgroundColor: r,
         opacity: i
-      } = P, a = null != (R = (0, o.wK)(null != r ? r : "", i)) ? R : "";
-      T && (k.borderColor = r), k.background = a, t = e, n = e
+      } = P, a = null != (k = (0, o.wK)(null != r ? r : "", i)) ? k : "";
+      T && (R.borderColor = r), R.background = a, t = e, n = e
     }
     let D = {
       minWidth: Z,
@@ -57,17 +57,17 @@ let g = i.memo(function(e) {
     return (0, r.jsxs)("div", {
       className: l()(A.reaction, A.reactionInner, g, {
         [A.reactionMe]: T,
-        [A.reactionReadOnly]: E && !O && !j && !N
+        [A.reactionReadOnly]: v && !O && !j && !N
       }),
-      style: k,
+      style: R,
       children: [(0, r.jsx)(s.Z, {
         className: l()({
           [A.hideEmoji]: a
         }),
         emojiId: c.id,
         emojiName: c.name,
-        size: I,
-        animated: S && c.animated
+        size: S,
+        animated: I && c.animated
       }), (0, r.jsx)("div", {
         className: A.reactionCount,
         style: D,

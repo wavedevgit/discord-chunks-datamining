@@ -1,6 +1,6 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
-  k: () => S
+  k: () => I
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,25 +20,25 @@ var r = n(200651),
   b = n(932232),
   x = n(400445),
   y = n(153209),
-  v = n(956961),
-  E = n(903672),
+  E = n(956961),
+  v = n(903672),
   O = n(711165),
   N = n(946443),
   j = n(264233),
   C = n(981631),
-  I = n(388032);
+  S = n(388032);
 
-function S(e) {
+function I(e) {
   let {
     onOpen: t,
     onClose: n,
-    children: S,
+    children: I,
     badgeState: T,
     popoutPosition: P,
     popoutAlign: A
   } = e, {
     analyticsLocations: w
-  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [Z, k] = i.useState(!1), [R, D] = function() {
+  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [Z, R] = i.useState(!1), [k, D] = function() {
     let {
       showForYouTab: e
     } = b.V.useExperiment({
@@ -72,10 +72,10 @@ function S(e) {
       showTutorial: !t && e === o.X.UNREADS,
       setSeenTutorial: n
     }
-  }(R), W = i.useCallback(() => {
-    k(!1), Z && (null == n || n())
+  }(k), W = i.useCallback(() => {
+    R(!1), Z && (null == n || n())
   }, [n, Z]), U = i.useCallback(() => {
-    k(!Z), Z ? null == n || n() : null == t || t()
+    R(!Z), Z ? null == n || n() : null == t || t()
   }, [n, t, Z]);
   i.useEffect(() => (_.S.subscribe(C.CkL.TOGGLE_INBOX, U), () => void _.S.unsubscribe(C.CkL.TOGGLE_INBOX, U)), [U]);
   let {
@@ -93,7 +93,7 @@ function S(e) {
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    ((!F || B && G) && R === o.X.TODOS || R === o.X.BOOKMARKS && !(B || G)) && D(o.X.MENTIONS)
+    ((!F || B && G) && k === o.X.TODOS || k === o.X.BOOKMARKS && !(B || G)) && D(o.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || W()
@@ -109,29 +109,29 @@ function S(e) {
       onRequestClose: W,
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
-          "aria-label": I.NW.string(I.t.GSmTKC),
-          children: R === o.X.FOR_YOU ? (0, r.jsx)(y.Z, {
+          "aria-label": S.NW.string(S.t.GSmTKC),
+          children: k === o.X.FOR_YOU ? (0, r.jsx)(y.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === o.X.MENTIONS ? (0, r.jsx)(E.Z, {
+          }) : k === o.X.MENTIONS ? (0, r.jsx)(v.Z, {
             setTab: D,
             onJump: z,
             badgeState: T,
             closePopout: W
-          }) : V && R === o.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
+          }) : V && k === o.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : F && R === o.X.TODOS ? (0, r.jsx)(v.Z, {
+          }) : F && k === o.X.TODOS ? (0, r.jsx)(E.Z, {
             setTab: D,
             onJump: z,
             closePopout: W
-          }) : B && G && R === o.X.BOOKMARKS ? (0, r.jsx)(x.Z, {
+          }) : B && G && k === o.X.BOOKMARKS ? (0, r.jsx)(x.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === o.X.SCHEDULED ? (0, r.jsx)(O._, {
+          }) : k === o.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {
@@ -157,7 +157,7 @@ function S(e) {
         let {
           isShown: n
         } = t;
-        return S(U, n, e, H)
+        return I(U, n, e, H)
       }
     })
   })

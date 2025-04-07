@@ -1,6 +1,6 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
-  Z: () => v
+  Z: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -66,13 +66,13 @@ function y(e) {
   })
 }
 
-function v(e) {
+function E(e) {
   var t, a;
   let {
     channel: f,
     message: _,
     compact: b
-  } = e, x = (0, s.ZP)(_), v = function(e) {
+  } = e, x = (0, s.ZP)(_), E = function(e) {
     let {
       author: t,
       channel: n,
@@ -100,14 +100,14 @@ function v(e) {
     channel: f,
     message: _,
     author: x
-  }), E = (null == (t = _.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (a = _.roleSubscriptionData) ? void 0 : a.total_months_subscribed) <= 1;
-  return null == v ? null : (0, r.jsxs)(r.Fragment, {
+  }), v = (null == (t = _.roleSubscriptionData) ? void 0 : t.total_months_subscribed) != null && (null == (a = _.roleSubscriptionData) ? void 0 : a.total_months_subscribed) <= 1;
+  return null == E ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Z, {
       icon: n(570111),
       timestamp: _.timestamp,
       compact: b,
-      children: v
-    }), E && (0, r.jsx)(y, {
+      children: E
+    }), v && (0, r.jsx)(y, {
       guildId: f.guild_id,
       user: _.author,
       username: x.nick

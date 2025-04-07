@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   K: () => C
 }), n(388685), n(314940);
@@ -21,7 +21,7 @@ var r = n(200651),
   x = n(388032),
   y = n(709893);
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function E(e) {
+function v(e) {
   let {
     percentage: t,
     label: n,
@@ -49,13 +49,13 @@ function E(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, _] = i.useState(""), [x, E] = i.useState(!1), O = "" !== g && x, N = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [x, v] = i.useState(!1), O = "" !== g && x, N = i.useCallback(() => {
     _((0, h.e1)(u, c, l))
   }, [u, c, l]), j = i.useCallback(() => {
-    N(), E(!0)
+    N(), v(!0)
   }, [N]), C = i.useCallback(() => {
-    E(!1)
-  }, []), I = i.useCallback(() => {
+    v(!1)
+  }, []), S = i.useCallback(() => {
     (0, f.n)({
       channelId: c,
       messageId: u,
@@ -67,7 +67,7 @@ function E(e) {
       m.Z.removeReactChangeListener(N)
     }
   }, [x, N]);
-  let S = (0, r.jsx)(d.Text, {
+  let I = (0, r.jsx)(d.Text, {
     variant: "text-xs/semibold",
     color: "none",
     className: y.voteCount,
@@ -88,17 +88,17 @@ function E(e) {
         "aria-label": !1,
         children: e => {
           var t, n;
-          return (0, r.jsx)(d.zxk, (t = v({}, e), n = n = {
+          return (0, r.jsx)(d.zxk, (t = E({}, e), n = n = {
             onMouseEnter: j,
             onMouseLeave: C,
             onFocus: j,
             onBlur: C,
-            onClick: I,
+            onClick: S,
             className: y.voteCountButton,
             "aria-describedby": O ? s : void 0,
             look: d.zxk.Looks.BLANK,
             size: d.zxk.Sizes.NONE,
-            children: S
+            children: I
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -114,7 +114,7 @@ function E(e) {
         id: s,
         children: g
       })]
-    }) : S, (0, r.jsxs)(d.Text, {
+    }) : I, (0, r.jsxs)(d.Text, {
       variant: "text-md/bold",
       color: "none",
       scaleFontToUserSetting: !0,
@@ -208,7 +208,7 @@ function j(e) {
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(o.T, {
       children: x.NW.string(x.t["8DAM+/"])
-    }), a && (0, r.jsx)(E, {
+    }), a && (0, r.jsx)(v, {
       percentage: t.votesPercentage,
       label: t.votes,
       canShowVoterDetails: s,
@@ -245,7 +245,7 @@ function C(e) {
     }
     return i
   }(e, ["isExpired", "answersInteraction", "canShowVoteCounts", "canTapAnswers"]);
-  return (0, r.jsx)(_.$e, v({
+  return (0, r.jsx)(_.$e, E({
     className: y.answersContainer,
     answerClassName: y.answer,
     answersInteraction: n,

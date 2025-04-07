@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => x
 });
@@ -26,9 +26,9 @@ function x(e) {
     setTab: n,
     children: x,
     badgeState: y,
-    closePopout: v
+    closePopout: E
   } = e, {
-    showReminders: E
+    showReminders: v
   } = m.Z.useExperiment({
     location: "RecentsHeader"
   }, {
@@ -44,7 +44,7 @@ function x(e) {
     enabled: C
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), I = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), S = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount()), {
+  }), S = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), I = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount()), {
     showForYouTab: T
   } = h.V.useExperiment({
     location: "RecentsHeader"
@@ -65,7 +65,7 @@ function x(e) {
       }), (0, r.jsxs)("div", {
         className: b.controls,
         children: [x, (0, r.jsx)(g.Z, {
-          closePopout: v
+          closePopout: E
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -97,7 +97,7 @@ function x(e) {
           "aria-label": "game_invites",
           id: a.X.GAME_INVITES,
           className: b.tab,
-          children: [_.NW.string(_.t.apq3cX), I > 0 ? (0, r.jsx)(l.fWl, {
+          children: [_.NW.string(_.t.apq3cX), S > 0 ? (0, r.jsx)(l.fWl, {
             color: s.Z.STATUS_DANGER,
             className: b.iconBadge
           }) : null]
@@ -105,15 +105,15 @@ function x(e) {
           "aria-label": _.NW.string(_.t["2pAkDA"]),
           id: a.X.BOOKMARKS,
           className: b.tab,
-          children: 0 === S ? _.NW.string(_.t["2pAkDA"]) : _.NW.formatToPlainString(_.t.I4fryM, {
-            count: S
+          children: 0 === I ? _.NW.string(_.t["2pAkDA"]) : _.NW.formatToPlainString(_.t.I4fryM, {
+            count: I
           })
-        }) : null, E && !O ? (0, r.jsx)(l.njP.Item, {
+        }) : null, v && !O ? (0, r.jsx)(l.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: b.tab,
-          children: 0 === S ? _.NW.string(_.t.aUXxzc) : _.NW.formatToPlainString(_.t["5en8yc"], {
-            count: S
+          children: 0 === I ? _.NW.string(_.t.aUXxzc) : _.NW.formatToPlainString(_.t["5en8yc"], {
+            count: I
           })
         }) : null, j ? (0, r.jsx)(l.njP.Item, {
           "aria-label": "scheduled",

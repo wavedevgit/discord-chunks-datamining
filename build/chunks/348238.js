@@ -1,11 +1,11 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
   JC: () => Z,
   NU: () => L,
   Nk: () => w,
-  R9: () => R,
+  R9: () => k,
   RN: () => U,
   Wl: () => A,
   XO: () => P,
@@ -35,15 +35,15 @@ var r = n(200651),
   b = n(594174),
   x = n(585483),
   y = n(5967),
-  v = n(630388),
-  E = n(358085),
+  E = n(630388),
+  v = n(358085),
   O = n(51144),
   N = n(91047),
   j = n(50284),
   C = n(981631),
-  I = n(388032);
+  S = n(388032);
 
-function S(e, t, n) {
+function I(e, t, n) {
   return i.useCallback(() => {
     n({
       [e]: !t
@@ -68,41 +68,41 @@ function T(e, t, n) {
 }
 
 function P(e, t, n, r) {
-  let i = S("usernameProfile", n, r);
+  let i = I("usernameProfile", n, r);
   return T(e.author.id, t.id, i)
 }
 
 function A(e, t, n, r) {
-  let i = S("referencedUsernameProfile", n, r);
+  let i = I("referencedUsernameProfile", n, r);
   return T(null == e ? void 0 : e.author.id, t.id, i)
 }
 
 function w(e, t, n, r) {
-  let i = S("interactionUsernameProfile", n, r);
+  let i = I("interactionUsernameProfile", n, r);
   return T(null == e ? void 0 : e.user.id, t.id, i)
 }
 
 function Z(e, t, n, r) {
-  let i = S("referencedUsernameProfile", n, r);
+  let i = I("referencedUsernameProfile", n, r);
   return T(e, t.id, i)
 }
 
-function k(e) {
+function R(e) {
   return i.useCallback(t => {
     t.preventDefault(), t.stopPropagation(), e()
   }, [e])
 }
 
-function R(e, t) {
-  return k(S("avatarProfile", e, t))
+function k(e, t) {
+  return R(I("avatarProfile", e, t))
 }
 
 function D(e, t) {
-  return k(S("referencedAvatarProfile", e, t))
+  return R(I("referencedAvatarProfile", e, t))
 }
 
 function L(e, t) {
-  return k(S("interactionAvatarProfile", e, t))
+  return R(I("interactionAvatarProfile", e, t))
 }
 
 function M(e, t, a, o) {
@@ -111,10 +111,10 @@ function M(e, t, a, o) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, v.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
+  } = e, p = (0, E.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!E.isPlatformEmbedded) {
+    if (!v.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -244,17 +244,17 @@ function G(e) {
     }
   }, [t, n])), [b, y] = i.useState(l);
   g.current = b || g.current;
-  let v = i.useCallback(e => {
+  let E = i.useCallback(e => {
       s && (0, f.T6)(), b || (x.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
-    E = i.useCallback(() => {
+    v = i.useCallback(() => {
       x.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
-    handleMouseEnter: v,
-    handleMouseLeave: E
+    handleMouseEnter: E,
+    handleMouseLeave: v
   }
 }
 
@@ -281,17 +281,17 @@ function V(e, t) {
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return i.useCallback(() => {
     null != t && (n ? a.Z.show({
-      title: I.NW.string(I.t["j7eA/v"]),
-      body: I.NW.formatToPlainString(I.t.dTNNgo, {
+      title: S.NW.string(S.t["j7eA/v"]),
+      body: S.NW.formatToPlainString(S.t.dTNNgo, {
         name: t.author.username
       }),
-      confirmText: I.NW.string(I.t.BddRzc)
+      confirmText: S.NW.string(S.t.BddRzc)
     }) : r ? a.Z.show({
-      title: I.NW.string(I.t.XyWoKS),
-      body: I.NW.formatToPlainString(I.t["8t8doK"], {
+      title: S.NW.string(S.t.XyWoKS),
+      body: S.NW.formatToPlainString(S.t["8t8doK"], {
         name: t.author.username
       }),
-      confirmText: I.NW.string(I.t.BddRzc)
+      confirmText: S.NW.string(S.t.BddRzc)
     }) : o.Z.jumpToMessage({
       channelId: t.channel_id,
       messageId: t.id,
@@ -302,7 +302,7 @@ function V(e, t) {
 }
 
 function z(e, t) {
-  let n = S("interactionData", e, t);
+  let n = I("interactionData", e, t);
   return i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), n()
   }, [n])

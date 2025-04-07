@@ -1,4 +1,4 @@
-/** Chunk was on 22253 **/
+/** Chunk was on 84927 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -20,21 +20,21 @@ var r = n(200651),
   b = n(406432),
   x = n(348238),
   y = n(38267),
-  v = n(884902),
-  E = n(670188),
+  E = n(884902),
+  v = n(670188),
   O = n(695346),
   N = n(271383),
   j = n(594174),
   C = n(768581),
-  I = n(900849),
-  S = n(506071),
+  S = n(900849),
+  I = n(506071),
   T = n(495114),
   P = n(170140),
   A = n(981631),
   w = n(959517),
   Z = n(388032),
-  k = n(70249),
-  R = n(527455);
+  R = n(70249),
+  k = n(527455);
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -76,13 +76,13 @@ function M(e) {
     channel: U
   } = e, F = (0, P.J)(M, W), {
     setPopout: B
-  } = (0, y.Z)(W.id, w.d$), G = (0, x.qo)(W, U, B, !0), H = O.QK.useSetting(), V = (0, S.n)(), [z, K] = i.useState(!1), [Y, X] = i.useState((null == F ? void 0 : F.coverImage) == null), q = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, c.e7)([N.ZP, j.default], () => {
+  } = (0, y.Z)(W.id, w.d$), G = (0, x.qo)(W, U, B, !0), H = O.QK.useSetting(), V = (0, I.n)(), [z, K] = i.useState(!1), [Y, X] = i.useState((null == F ? void 0 : F.coverImage) == null), q = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, c.e7)([N.ZP, j.default], () => {
     var e;
     return N.ZP.isMember(null == F ? void 0 : F.guildId, null == (e = j.default.getCurrentUser()) ? void 0 : e.id)
   }, [F]), J = (0, c.e7)([N.ZP], () => (null == F ? void 0 : F.authorId) != null ? N.ZP.getMember(F.guildId, F.authorId) : null), $ = (0, f.Z)((null == J ? void 0 : J.avatarDecoration) != null ? null == J ? void 0 : J.avatarDecoration : null == F || null == (t = F.user) ? void 0 : t.avatarDecoration), [ee, et, en] = i.useMemo(() => {
     var e;
     return [null != (e = null == J ? void 0 : J.colorString) ? e : "inherit", null == J ? void 0 : J.colorStrings, null == J ? void 0 : J.colorRoleId]
-  }, [J]), er = (0, v.E)(null == J ? void 0 : J.guildId, et), {
+  }, [J]), er = (0, E.E)(null == J ? void 0 : J.guildId, et), {
     reducedMotion: ei
   } = i.useContext(u.Sfi), [ea, el] = i.useState(!1), eo = i.useCallback(() => {
     K(!0)
@@ -94,7 +94,7 @@ function M(e) {
       channel_id: U.id,
       can_access: F.canAccess,
       is_member: Q
-    }), F.canAccess ? (0, _.Z)(A.Z5c.CHANNEL(F.guildId, F.threadId, F.messageId)) : Q ? (0, _.Z)(A.Z5c.CHANNEL(F.guildId, F.parentChannelId)) : await I.Ub(F.guildId, {}, {
+    }), F.canAccess ? (0, _.Z)(A.Z5c.CHANNEL(F.guildId, F.threadId, F.messageId)) : Q ? (0, _.Z)(A.Z5c.CHANNEL(F.guildId, F.parentChannelId)) : await S.Ub(F.guildId, {}, {
       channelId: F.parentChannelId
     }))
   }, [F, U, Q]);
@@ -111,16 +111,16 @@ function M(e) {
     em = F.coverImage,
     ef = null != em && (0, b.d$)(em);
   return (0, r.jsxs)("div", {
-    className: k.postPreviewContainer,
+    className: R.postPreviewContainer,
     children: [(0, r.jsxs)("div", {
-      className: k.thumbnailContainer,
+      className: R.thumbnailContainer,
       onMouseEnter: eo,
       onMouseLeave: es,
       children: [!Y && (!0 === F.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
-        src: R,
+        src: k,
         alt: Z.NW.string(Z.t.rIbh8P),
-        className: l()(k.thumbnail, {
-          [k.spoiler]: F.shouldSpoiler
+        className: l()(R.thumbnail, {
+          [R.spoiler]: F.shouldSpoiler
         }),
         onContextMenu: G,
         onError: () => X(!0)
@@ -129,18 +129,18 @@ function M(e) {
         backgroundSrc: "".concat(em, "?format=png"),
         alt: Z.NW.string(Z.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: l()(k.thumbnail, {
-          [k.spoiler]: F.shouldSpoiler
+        className: l()(R.thumbnail, {
+          [R.spoiler]: F.shouldSpoiler
         }),
-        imageChildClassName: k.thumbnailImage,
+        imageChildClassName: R.thumbnailImage,
         onContextMenu: G,
         onError: () => X(!0)
       })), null != F.coverImageOverlayText && (0, r.jsx)(u.P3F, {
         onClick: ec,
         children: (0, r.jsx)("div", {
-          className: k.thumbnailOverlay,
+          className: R.thumbnailOverlay,
           children: (0, r.jsxs)("div", {
-            className: k.thumbnailOverlayCta,
+            className: R.thumbnailOverlayCta,
             children: [(0, r.jsx)(T.Z, {
               color: s.Z.WHITE
             }), (0, r.jsx)(u.Text, {
@@ -152,23 +152,23 @@ function M(e) {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: k.descriptionContainer,
+      className: R.descriptionContainer,
       children: [(0, r.jsxs)("div", {
-        className: k.descriptionHeader,
+        className: R.descriptionHeader,
         children: [(0, r.jsx)(u.Text, {
           variant: "text-md/semibold",
           color: "text-normal",
-          className: k.descriptionHeaderText,
+          className: R.descriptionHeaderText,
           children: F.title
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: l()(k.descriptionHeaderText, k.descriptionSubtitle),
+          className: l()(R.descriptionHeaderText, R.descriptionSubtitle),
           children: F.subtitle
         })]
       }), (0, r.jsxs)("div", {
-        className: k.descriptionFooter,
-        children: [null != F.authorId && null != ed && (0, r.jsx)(E.Z, {
+        className: R.descriptionFooter,
+        children: [null != F.authorId && null != ed && (0, r.jsx)(v.Z, {
           userId: F.authorId,
           guildId: F.guildId,
           channelId: U.id,
@@ -188,16 +188,16 @@ function M(e) {
             }))
           })
         }), (0, r.jsxs)("div", {
-          className: k.descriptionFooterContainer,
+          className: R.descriptionFooterContainer,
           children: [(0, r.jsxs)("div", {
-            className: k.descriptionFooterChannelName,
+            className: R.descriptionFooterChannelName,
             children: [null != F.channelName && (0, r.jsx)(u.EAQ, {
               size: "md",
               color: "currentColor",
-              className: k.mediaChannelIcon
+              className: R.mediaChannelIcon
             }), (0, r.jsx)(u.P3F, {
               onClick: ec,
-              className: k.channelName,
+              className: R.channelName,
               children: (0, r.jsx)(u.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
@@ -207,15 +207,15 @@ function M(e) {
           }), null != F.authorName && (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",
             color: "text-muted",
-            className: k.descriptionFooterAuthorContainer,
+            className: R.descriptionFooterAuthorContainer,
             children: Z.NW.format(Z.t.voIDKS, {
               authorName: F.authorName,
               authorNameHook: () => null == F.authorId ? (0, r.jsx)(u.rz2, {
                 name: F.authorName,
                 color: ee,
                 roleGradient: er,
-                className: k.authorName
-              }) : (0, r.jsx)(E.Z, {
+                className: R.authorName
+              }) : (0, r.jsx)(v.Z, {
                 userId: F.authorId,
                 guildId: F.guildId,
                 channelId: U.id,
@@ -227,7 +227,7 @@ function M(e) {
                   name: F.authorName,
                   color: ee,
                   roleGradient: er,
-                  className: k.authorName
+                  className: R.authorName
                 }))
               }, (0, o.Z)())
             })
@@ -243,7 +243,7 @@ function M(e) {
         }) : (0, r.jsx)(u.gtL, {
           pauseAnimation: q,
           onClick: ec,
-          className: l()(k.__invalid_ctaButtonContent, k.subscribeButton),
+          className: l()(R.__invalid_ctaButtonContent, R.subscribeButton),
           color: u.zxk.Colors.CUSTOM,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",

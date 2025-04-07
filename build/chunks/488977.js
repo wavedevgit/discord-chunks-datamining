@@ -27,8 +27,8 @@ var i = n(200651),
   P = n(783097),
   E = n(570949),
   A = n(314734),
-  O = n(981631),
-  I = n(388032),
+  I = n(981631),
+  O = n(388032),
   S = n(640724);
 
 function T(e) {
@@ -84,10 +84,10 @@ function R(e) {
     autoTrackExposure: !0
   }).enabled, z = (0, f.Z)({
     id: l.id,
-    label: I.NW.string(I.t["+NP/b2"])
+    label: O.NW.string(O.t["+NP/b2"])
   }), G = (0, E.P)({
     application: l
-  }), q = (0, N.yE)(null != (t = l.flags) ? t : 0, O.udG.EMBEDDED), X = "channel" === R.type ? R.channel : void 0;
+  }), q = (0, N.yE)(null != (t = l.flags) ? t : 0, I.udG.EMBEDDED), X = "channel" === R.type ? R.channel : void 0;
   return (0, i.jsxs)("div", {
     className: S.container,
     children: [(0, i.jsx)(c.P3F, {
@@ -98,13 +98,13 @@ function R(e) {
         }) : (0, p.J)(T({
           id: l.id
         }, D));
-        (0, y.JG)(e), v.default.track(O.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
+        (0, y.JG)(e), v.default.track(I.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: M
-        }), (0, c.showToast)((0, c.createToast)(I.NW.string(I.t["L/PwZW"]), c.ToastType.SUCCESS))
+        }), (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["L/PwZW"]), c.ToastType.SUCCESS))
       },
       className: a()(S.clickable, w),
-      "aria-label": I.NW.string(I.t.WqhZsr),
+      "aria-label": O.NW.string(O.t.WqhZsr),
       children: (0, i.jsx)(c.xPt, {
         size: "sm",
         color: c.TVs.colors.INTERACTIVE_ACTIVE
@@ -119,12 +119,12 @@ function R(e) {
           className: A.NN,
           navId: "app-details-more-menu",
           onClose: t,
-          "aria-label": I.NW.string(I.t.AXIHpa),
+          "aria-label": O.NW.string(O.t.AXIHpa),
           onSelect: void 0,
           children: [(0, i.jsxs)(c.kSQ, {
             children: [U && (0, i.jsx)(c.sNh, {
               id: "open-storefront",
-              label: I.NW.string(I.t.kRvlKC),
+              label: O.NW.string(O.t.kRvlKC),
               action: () => {
                 (0, c.ZDy)(async () => {
                   let {
@@ -140,14 +140,14 @@ function R(e) {
               }
             }), W ? (0, i.jsx)(c.sNh, {
               id: "add-app",
-              label: I.NW.string(I.t.NgXl3N),
+              label: O.NW.string(O.t.NgXl3N),
               action: () => {
-                null == D.customInstallUrl && (0, s.yw)(O.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, H), (0, g.L)(L(T({}, D), {
+                null == D.customInstallUrl && (0, s.yw)(I.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, H), (0, g.L)(L(T({}, D), {
                   oauth2Callback: e => {
                     let {
                       location: t
                     } = e;
-                    null != t && (0, s.yw)(O.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, H)
+                    null != t && (0, s.yw)(I.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_SUCCEEDED, H)
                   },
                   source: "app_launcher_app_details"
                 }))
@@ -155,7 +155,7 @@ function R(e) {
             }) : null, F && l instanceof C.ZP ? (0, i.jsx)(c.sNh, {
               id: "report-app",
               color: "danger",
-              label: I.NW.string(I.t.jhJze3),
+              label: O.NW.string(O.t.jhJze3),
               action: () => {
                 var e;
                 (0, b.uu)({
@@ -178,7 +178,7 @@ function R(e) {
       }, e), {
         onClick: e.onClick,
         className: a()(S.clickable, w),
-        "aria-label": I.NW.string(I.t.UKOtz8),
+        "aria-label": O.NW.string(O.t.UKOtz8),
         children: (0, i.jsx)(c.xhG, {
           size: "sm",
           color: c.TVs.colors.INTERACTIVE_ACTIVE

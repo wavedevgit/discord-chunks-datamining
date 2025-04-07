@@ -127,7 +127,7 @@ let j = {
     n && n.reset && n.reset(), n && n.disconnectAllProcesses && n.destroyHostProcess && (n.disconnectAllProcesses(), n.destroyHostProcess()), I.remotePowerMonitor.removeAllListeners(), window.location.origin === window.GLOBAL_ENV.MIGRATION_SOURCE_ORIGIN && !0 !== f.K.get(u.SV) && this.supportsFeature(g.eRX.USER_DATA_CACHE) && I.userDataCache.cacheUserData(f.K.stringify()), null == I || null == (t = I.window) || t.close(null == I || null == (e = I.globalOverlay) ? void 0 : e.WINDOW_KEY)
   },
   inputEventRegister(e, t, n, r) {
-    Array.isArray(t) || (t = t.toJS()), this.getDiscordUtils().inputEventRegister(parseInt(e), t.map(e => {
+    this.getDiscordUtils().inputEventRegister(parseInt("".concat(e)), t.map(e => {
       let [t, n, r] = e;
       return "string" == typeof r ? [t, n, r] : [t, n]
     }), n, r)

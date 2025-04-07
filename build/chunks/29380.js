@@ -34,13 +34,13 @@ function v(e) {
     d.Z.shouldShowModal() && P()
   }, [P]), {
     submitting: A,
-    wasSubmitting: O
+    wasSubmitting: I
   } = (0, h.Z)({
     applicationId: n.id,
     context: t,
     launchingComponentId: j,
     onSubmissionComplete: P
-  }), [I, S] = r.useState(!1), T = (0, a.Qv)({
+  }), [O, S] = r.useState(!1), T = (0, a.Qv)({
     applicationId: n.id,
     context: t
   }), L = u.PM.useExperiment({
@@ -57,7 +57,7 @@ function v(e) {
     commandName: R,
     autoDismissOnClick: T === a.JS.LEAVE,
     launchingComponentId: j,
-    submitting: null != O ? O : A,
+    submitting: null != I ? I : A,
     onConfirmActivityLaunchChecksAlertOpen: E,
     playSolo: !!L.altLayout && g
   }), {
@@ -113,7 +113,7 @@ function v(e) {
         size: N,
         color: k,
         disabled: M,
-        submitting: I,
+        submitting: O,
         onClick: () => {
           S(!0), w(), null == a || a(), c.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,

@@ -18,8 +18,8 @@ var i = n(120356),
   x = n(614223),
   f = n(48175),
   h = n(474936),
-  j = n(388032),
-  m = n(677163);
+  m = n(388032),
+  j = n(677163);
 
 function L(e) {
   let {
@@ -31,11 +31,11 @@ function L(e) {
     activeSubscription: s,
     startedPaymentFlowWithPaymentSourcesRef: C,
     setSelectedPlanId: d,
-    priceOptions: j
+    priceOptions: m
   } = (0, p.JL)(), {
-    isGift: m,
+    isGift: j,
     claimableRewards: L
-  } = (0, u.wD)(), S = m && null != L && L.length > 0, y = (0, a.N)(i), E = (0, o.Nx)();
+  } = (0, u.wD)(), S = j && null != L && L.length > 0, y = (0, a.N)(i), E = (0, o.Nx)();
   return (0, r.jsx)(g, {
     selectSku: e => (function(e) {
       let {
@@ -73,15 +73,15 @@ function L(e) {
       newSkuId: e,
       setSelectedSkuId: l,
       handleStepChange: t,
-      isGift: m,
+      isGift: j,
       userTrialOffer: y,
       startedPaymentFlowWithPaymentSources: C.current,
       setSelectedPlanId: d
     }),
     onClose: n,
-    isGift: m,
+    isGift: j,
     inOfferExperience: E,
-    priceOptions: j,
+    priceOptions: m,
     showPromotionalGiftBanner: S
   })
 }
@@ -97,23 +97,23 @@ function g(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.xBx, {
-      className: m.skuSelectModalHeader,
+      className: j.skuSelectModalHeader,
       separator: !1,
       children: [(0, r.jsx)(s.vwX, {
         tag: s.RB0.H4,
-        children: j.NW.string(j.t["r+SebW"])
+        children: m.NW.string(m.t["r+SebW"])
       }), (0, r.jsx)(s.olH, {
-        className: m.close,
-        innerClassName: m.closeInner,
+        className: j.close,
+        innerClassName: j.closeInner,
         onClick: n
       })]
     }), (0, r.jsxs)(s.hzk, {
-      className: l()(m.skuSelectModalContent, m.modalSize, {
-        [m.modalPadding]: o
+      className: l()(j.skuSelectModalContent, j.modalSize, {
+        [j.modalPadding]: o
       }),
       children: [(0, r.jsx)(C.Z, {
         fromBoostCancelModal: !1,
-        className: m.legacyPricingNotice
+        className: j.legacyPricingNotice
       }), (0, r.jsx)(d.Z, {
         onSelectSku: e => t((0, c.Wz)(e)),
         isGift: i,

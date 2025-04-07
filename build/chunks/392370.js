@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Q2: () => O,
+  Q2: () => I,
   pe: () => A
 }), n(388685), n(539854), n(35282), n(472816), n(794429);
 var i = n(192379),
@@ -123,10 +123,10 @@ function A(e) {
     includeBuiltIn: !0,
     includeEmbeddedApps: h,
     includeNonEmbeddedApps: c
-  }), O = (0, u.Z)({
+  }), I = (0, u.Z)({
     guildId: "channel" === t.type ? t.channel.guild_id : null,
     context: t
-  }), I = i.useMemo(() => {
+  }), O = i.useMemo(() => {
     var e, i, l, a, c, u;
     if (!o) return [];
     return (0, _.N)(b, {
@@ -215,9 +215,9 @@ function A(e) {
       }), E]
     })
   }, [o, b, r, t, n]), S = i.useMemo(() => {
-    if (0 === I.length) return [];
+    if (0 === O.length) return [];
     let e = new Map(A.map(e => [e.id, e]));
-    return l().compact(I.map(t => {
+    return l().compact(O.map(t => {
       var n;
       let i = e.get(t.applicationId);
       if (null == i) return null;
@@ -228,7 +228,7 @@ function A(e) {
         section: r
       }
     }))
-  }, [A, I, C]), T = i.useMemo(() => {
+  }, [A, O, C]), T = i.useMemo(() => {
     var e, i, r, l, o;
     let u = [];
     if (h) {
@@ -238,7 +238,7 @@ function A(e) {
         } = e;
         return t
       }));
-      u.push(...A), u.push(...O.filter(t => {
+      u.push(...A), u.push(...I.filter(t => {
         let {
           application: {
             id: n
@@ -288,7 +288,7 @@ function A(e) {
       })],
       sortComparers: [j, P]
     })
-  }, [c, h, a, t, n, A, O]), L = S.length > 0, R = T.length > 0;
+  }, [c, h, a, t, n, A, I]), L = S.length > 0, R = T.length > 0;
   return {
     commandResults: S,
     hasCommandResults: L,
@@ -299,7 +299,7 @@ function A(e) {
   }
 }
 
-function O(e) {
+function I(e) {
   let {
     context: t,
     query: n,
