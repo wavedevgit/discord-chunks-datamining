@@ -1,12 +1,10 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => i
 }), n(997841);
-var r = n(630388),
-  i = n(981631);
+var r = n(981631);
 
-function o(e, t) {
-  var n;
-  return t !== i.xjy.INSTANCE && null != e && null != e.flags && (0, r.yE)(null != (n = e.flags) ? n : 0, t)
+function i(e, t) {
+  return t !== r.xjy.INSTANCE && null != e && null != e.flags && !!(e.flags & t)
 }

@@ -6866,8 +6866,7 @@
                 "STREAM_START",
                 "STREAM_STOP",
                 "USER_SETTINGS_PROTO_UPDATE",
-                "EMBEDDED_ACTIVITY_CLOSE",
-                "RTC_CONNECTION_STATE"
+                "EMBEDDED_ACTIVITY_CLOSE"
             ]
         }
     },
