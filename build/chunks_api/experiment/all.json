@@ -6531,26 +6531,6 @@
         }
     },
     {
-        "id": "713124",
-        "data": {
-            "id": "2025-02_quest_bar_reward_available_exclamation_mark",
-            "kind": "user",
-            "label": "Quest Bar Reward Available Exclamation Mark",
-            "defaultConfig": {
-                "enabled": false
-            },
-            "treatments": [
-                {
-                    "id": 1,
-                    "label": "Reward Available Exclamation Mark",
-                    "config": {
-                        "enabled": false
-                    }
-                }
-            ]
-        }
-    },
-    {
         "id": "715037",
         "data": {
             "kind": "user",
