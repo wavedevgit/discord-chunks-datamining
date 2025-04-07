@@ -374,7 +374,7 @@ let ef = e => {
       hasDMOptOutSettings: y
     } = e, O = o.id, I = i.useMemo(() => j.ZP.createFromServer(o), [o]), S = (0, _.e7)([X.Z], () => {
       var e, t, n, r;
-      return null == (r = X.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[O]) || null == (e = t.appDmSettings) ? void 0 : e.dmDisabled
+      return null == (r = X.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[O]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
     }, [O]), T = o.bot, N = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == T ? void 0 : T.id)), A = (0, _.e7)([F.ZP], () => null == N ? null : F.ZP.isChannelMuted(null, N)), [C, P] = i.useState(!1), [D, x] = i.useState(!1), U = L.Z.useExperiment({
       location: "Authorized Applications"
     }, {
@@ -520,10 +520,10 @@ let ef = e => {
     }, z = e => {
       Q.hW.updateAsync("applications", t => {
         O in t.appSettings ? null == t.appSettings[O].appDmSettings ? t.appSettings[O].appDmSettings = h.c$.create({
-          dmDisabled: !e
-        }) : t.appSettings[O].appDmSettings.dmDisabled = !e : t.appSettings[O] = h.dp.create({
+          allowMobilePush: !e
+        }) : t.appSettings[O].appDmSettings.allowMobilePush = !e : t.appSettings[O] = h.dp.create({
           appDmSettings: h.c$.create({
-            dmDisabled: !e
+            allowMobilePush: !e
           })
         })
       }, Q.fy.INFREQUENT_USER_ACTION)
