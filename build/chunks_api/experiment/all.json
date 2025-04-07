@@ -4779,7 +4779,7 @@
         "data": {
             "kind": "user",
             "id": "2025-04_app_launcher_friends_who_play",
-            "commonTriggerPoint": "i.$P.CONNECTION_OPEN",
+            "commonTriggerPoint": "r.$P.CONNECTION_OPEN",
             "label": "App Launcher Friends Who Play",
             "defaultConfig": {
                 "enabled": false

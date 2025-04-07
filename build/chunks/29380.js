@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => v
+  Z: () => y
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -17,15 +17,15 @@ var i = n(200651),
   h = n(890280),
   b = n(176412),
   C = n(981631),
-  _ = n(388032),
-  x = n(854408);
+  x = n(388032),
+  _ = n(854408);
 
-function v(e) {
+function y(e) {
   let {
     context: t,
     application: n,
-    sectionName: v,
-    primaryEntryPointCommand: y,
+    sectionName: y,
+    primaryEntryPointCommand: v,
     buttonSize: N = l.PhG.MEDIUM,
     playSolo: g = !1
   } = e, j = r.useId(), P = r.useCallback(() => {
@@ -45,16 +45,16 @@ function v(e) {
     context: t
   }), L = u.PM.useExperiment({
     location: "AppPrimaryEntryPointButton()"
-  }), R = r.useMemo(() => (0, f.XZ)(y.displayName), [y.displayName]), {
-    onActivityItemSelected: w,
+  }), w = r.useMemo(() => (0, f.XZ)(v.displayName), [v.displayName]), {
+    onActivityItemSelected: R,
     buttonColor: k,
     buttonText: Z
   } = (0, b.P7)({
     context: t,
     application: n,
     location: o.Vh.APP_LAUNCHER_APPLICATION_VIEW,
-    sectionName: v,
-    commandName: R,
+    sectionName: y,
+    commandName: w,
     autoDismissOnClick: T === a.JS.LEAVE,
     launchingComponentId: j,
     submitting: null != I ? I : A,
@@ -67,10 +67,10 @@ function v(e) {
     context: t,
     application: n,
     activityAction: T
-  }), W = L.enabled ? _.NW.string(_.t["1KxmJi"]) : Z;
+  }), W = L.enabled ? x.NW.string(x.t["1KxmJi"]) : Z;
   return (0, i.jsx)(l.ua7, {
     shouldShow: null != D,
-    tooltipContentClassName: x.tooltipContent,
+    tooltipContentClassName: _.tooltipContent,
     text: D,
     children: e => {
       var t, r, {
@@ -115,12 +115,12 @@ function v(e) {
         disabled: M,
         submitting: O,
         onClick: () => {
-          S(!0), w(), null == a || a(), c.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          S(!0), R(), null == a || a(), c.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: p._y.USE_APP_COMMAND
           })
         },
-        "aria-label": _.NW.formatToPlainString(_.t["XjP/R0"], {
+        "aria-label": x.NW.formatToPlainString(x.t["XjP/R0"], {
           buttonText: W,
           applicationName: n.name
         }),

@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(880251),
   x = n(208444),
   y = n(835473),
-  E = n(471445),
-  v = n(111028),
+  v = n(471445),
+  E = n(111028),
   O = n(601964),
   N = n(592125),
   j = n(430824),
@@ -79,7 +79,7 @@ function D(e) {
     textColor: a
   } = e;
   if (null != t && null != n) {
-    let e = (0, E.KS)(t, n);
+    let e = (0, v.KS)(t, n);
     return (0, r.jsxs)("div", {
       className: l()(R.channel, {
         [R.ended]: i
@@ -88,7 +88,7 @@ function D(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(E.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: a,
@@ -104,7 +104,7 @@ function D(e) {
     className: l()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(E.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: a,
@@ -137,8 +137,8 @@ function L(e) {
       })
     }, [null == (t = l.inviter) ? void 0 : t.id, _.id]),
     x = (0, c.e7)([j.Z], () => null != l.guild ? j.Z.getGuild(l.guild.id) : null, [l]),
-    E = (0, y.Z)([_.id])[0],
-    v = (0, c.e7)([p.ZP], () => {
+    v = (0, y.Z)([_.id])[0],
+    E = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == l ? void 0 : l.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(l.channel.id)) ? void 0 : e.applicationId) === _.id
     }),
@@ -171,11 +171,11 @@ function L(e) {
     if (null == l.guild) return (0, r.jsx)(P.Z, {});
     x = new O.ZP(l.guild)
   }
-  let G = B && !k || B && v;
-  return (B && v && (a = Z.NW.string(Z.t.wJNK8P)), k || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == E) ? null : (0, r.jsx)(f.Gt, {
+  let G = B && !k || B && E;
+  return (B && E && (a = Z.NW.string(Z.t.wJNK8P)), k || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == v) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
-      app: E,
+      app: v,
       invite: l,
       activityUsers: W,
       isMember: B,
@@ -207,8 +207,8 @@ function M(e) {
     isActivityActive: m,
     submitting: f,
     isDisabled: y,
-    tooltip: E,
-    handleAcceptInvite: v,
+    tooltip: v,
+    handleAcceptInvite: E,
     onView: O
   } = e, N = new URL(l.code, "https://discord.gg").toString(), {
     bot: j,
@@ -222,11 +222,11 @@ function M(e) {
       label: s ? m ? Z.NW.string(Z.t.VJlc0d) : Z.NW.string(Z.t.RscU7O) : Z.NW.string(Z.t["2BP08P"]),
       trackingArea: s ? _.j_.PLAY : _.j_.JOIN_SERVER,
       submitting: f,
-      disabledReason: y && null != E ? E : void 0,
-      onClick: v
+      disabledReason: y && null != v ? v : void 0,
+      onClick: E
     }];
     return null != I && e.push(I), e
-  }, [v, m, y, s, f, E, I]);
+  }, [E, m, y, s, f, v, I]);
   return (0, r.jsx)(h.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

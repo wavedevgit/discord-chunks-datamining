@@ -17,10 +17,10 @@ var i = n(200651),
   h = n(827498),
   b = n(783097),
   C = n(753972),
-  _ = n(387658),
-  x = n(536650),
-  v = n(675993),
-  y = n(689079),
+  x = n(387658),
+  _ = n(536650),
+  y = n(675993),
+  v = n(689079),
   N = n(388032),
   g = n(189102),
   j = n(413097);
@@ -30,54 +30,56 @@ function P(e) {
   let {
     context: n,
     application: s,
-    sectionName: u
-  } = e, P = "channel" === n.type ? n.channel : void 0, A = (0, l.e7)([f.Z], () => f.Z.entrypoint()), I = null != (t = (0, p.q)(s.id === y.bi.BUILT_IN ? null : s.id)) ? t : s, O = (0, l.e7)([c.Z], () => c.Z.inDevModeForApplication(I.id)), S = (0, b.ye)(I) ? E : v.Z, T = m.PM.useExperiment({
+    sectionName: u,
+    showFriendsTab: P
+  } = e, A = "channel" === n.type ? n.channel : void 0, I = (0, l.e7)([f.Z], () => f.Z.entrypoint()), O = null != (t = (0, p.q)(s.id === v.bi.BUILT_IN ? null : s.id)) ? t : s, S = (0, l.e7)([c.Z], () => c.Z.inDevModeForApplication(O.id)), T = (0, b.ye)(O) ? E : y.Z, L = m.PM.useExperiment({
     location: "AppLauncherApplicationViewScreen"
-  }), L = r.useRef(null), [R, w] = r.useState(!1), {
-    iconURL: k,
-    name: Z
-  } = r.useMemo(() => (0, b.sl)(I, {
+  }), w = r.useRef(null), [R, k] = r.useState(!1), {
+    iconURL: Z,
+    name: M
+  } = r.useMemo(() => (0, b.sl)(O, {
     fakeAppIconURL: j,
     size: 84
-  }), [I]), M = (0, d.PL)(!0, !0), D = (0, d.LD)(null == P ? void 0 : P.guild_id, !0), W = r.useMemo(() => (0, d.If)(n, I.id), [M, D, n, I.id]), U = !W.isGuildInstalled && !W.isUserInstalled;
+  }), [O]), D = (0, d.PL)(!0, !0), W = (0, d.LD)(null == A ? void 0 : A.guild_id, !0), U = r.useMemo(() => (0, d.If)(n, O.id), [D, W, n, O.id]), B = !U.isGuildInstalled && !U.isUserInstalled;
   return r.useEffect(() => {
-    U && d.ZP.queryInstallOnDemandApp(I.id, null == P ? void 0 : P.id)
-  }, [I.id, null == P ? void 0 : P.id, U]), (0, i.jsxs)(o.u2D, {
+    B && d.ZP.queryInstallOnDemandApp(O.id, null == A ? void 0 : A.id)
+  }, [O.id, null == A ? void 0 : A.id, B]), (0, i.jsxs)(o.u2D, {
     className: g.container,
     fade: !0,
-    ref: L,
+    ref: w,
     role: "region",
     "aria-label": N.NW.formatToPlainString(N.t["4OP4Ul"], {
-      applicationName: Z
+      applicationName: M
     }),
-    children: [(0, i.jsx)(x.Z, {
-      application: I,
+    children: [(0, i.jsx)(_.Z, {
+      application: O,
       context: n,
-      name: Z,
-      iconURL: k,
-      scrollerRef: L,
+      name: M,
+      iconURL: Z,
+      scrollerRef: w,
       sectionName: u
-    }), null != k && (0, i.jsx)(C.Z, {
-      src: k,
+    }), null != Z && (0, i.jsx)(C.Z, {
+      src: Z,
       className: g.appIcon
     }), (0, i.jsx)(a.Z, {
-      size: T.enabled ? 44 : 54
-    }), (0, i.jsx)(S, {
+      size: L.enabled ? 44 : 54
+    }), (0, i.jsx)(T, {
       context: n,
-      application: I,
+      application: O,
       sectionName: u,
-      hasCommands: R
-    }), A === h._b.TEXT ? (0, i.jsx)(_.Z, {
-      context: n,
-      application: I,
-      sectionName: u,
-      installOnDemand: U,
-      setHasCommands: w
-    }) : null, T.enabled ? (0, i.jsx)(v.u, {
-      context: n,
-      application: I,
       hasCommands: R,
-      isDeveloperOfThisApp: O
+      showFriendsTab: P
+    }), I === h._b.TEXT ? (0, i.jsx)(x.Z, {
+      context: n,
+      application: O,
+      sectionName: u,
+      installOnDemand: B,
+      setHasCommands: k
+    }) : null, L.enabled ? (0, i.jsx)(y.u, {
+      context: n,
+      application: O,
+      hasCommands: R,
+      isDeveloperOfThisApp: S
     }) : null]
   })
 }
@@ -87,18 +89,20 @@ function E(e) {
     context: t,
     application: n,
     sectionName: r,
-    hasCommands: l
-  } = e, a = (0, u.Z)({
+    hasCommands: l,
+    showFriendsTab: a
+  } = e, o = (0, u.Z)({
     applicationId: n.id,
     size: 2048,
     names: ["embedded_cover"]
-  }), o = (0, b.yJ)(n), c = null != o && null != o.activity_preview_video_asset_id ? (0, s.Z)(n.id, o.activity_preview_video_asset_id) : null;
-  return (0, i.jsx)(v.Z, {
+  }), c = (0, b.yJ)(n), d = null != c && null != c.activity_preview_video_asset_id ? (0, s.Z)(n.id, c.activity_preview_video_asset_id) : null;
+  return (0, i.jsx)(y.Z, {
     context: t,
     application: n,
-    imageCoverUrl: a.url,
-    videoUrl: c,
+    imageCoverUrl: o.url,
+    videoUrl: d,
     sectionName: r,
-    hasCommands: l
+    hasCommands: l,
+    showFriendsTab: a
   })
 }

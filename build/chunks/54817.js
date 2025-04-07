@@ -28,7 +28,7 @@ function g(e) {
       onMouseEnter: x,
       onMouseLeave: y
     }
-  } = (0, u.m)(!0), E = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
+  } = (0, u.m)(!0), v = "" !== t.content ? new Date(t.content).toLocaleString(f.NW.currentLocale, {
     hour: "numeric",
     minute: "2-digit",
     month: "2-digit",
@@ -79,7 +79,7 @@ function g(e) {
           children: t.type === p.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.NW.format(f.t["+m8eDw"], {
             username: g.nick,
             usernameHook: _,
-            time: E
+            time: v
           }) : f.NW.format(f.t.BHeke3, {
             username: g.nick,
             usernameHook: _

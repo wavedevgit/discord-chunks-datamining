@@ -20,20 +20,20 @@ function m(e, t) {
     h = m.map(e => e.application_id),
     b = null != f ? [f, ...h] : h,
     C = (0, a.Z)(b),
-    _ = "channel" in t && (0, l.aZ)(t.channel, "useActivityShelfData()"),
-    x = i.useMemo(() => C.filter(s.lm), [C]),
-    v = i.useMemo(() => null != f && x.length > 0 && x[0].id === f && null != x[0].embeddedActivityConfig ? [{
-      activity: x[0].embeddedActivityConfig,
-      application: x[0]
-    }] : [], [x, f]),
-    y = i.useMemo(() => m.map(e => {
-      let t = x.find(t => t.id === e.application_id);
+    x = "channel" in t && (0, l.aZ)(t.channel, "useActivityShelfData()"),
+    _ = i.useMemo(() => C.filter(s.lm), [C]),
+    y = i.useMemo(() => null != f && _.length > 0 && _[0].id === f && null != _[0].embeddedActivityConfig ? [{
+      activity: _[0].embeddedActivityConfig,
+      application: _[0]
+    }] : [], [_, f]),
+    v = i.useMemo(() => m.map(e => {
+      let t = _.find(t => t.id === e.application_id);
       return null == t ? null : {
         activity: e,
         application: t
       }
-    }).filter(s.lm), [m, x]);
-  return i.useMemo(() => [...v, ...y].filter(e => {
+    }).filter(s.lm), [m, _]);
+  return i.useMemo(() => [...y, ...v].filter(e => {
     var t;
     let {
       activity: n
@@ -44,5 +44,5 @@ function m(e, t) {
       activity: t
     } = e;
     return !t.requires_age_gate || (null == n ? void 0 : n.nsfwAllowed) === !0 || (null == n ? void 0 : n.nsfwAllowed) == null
-  }).filter(e => !_ || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, y, _, v])
+  }).filter(e => !x || e.application.id !== l.gu), [null == n ? void 0 : n.nsfwAllowed, v, x, y])
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 87038 **/
+/** Chunk was on 23491 **/
 n.d(t, {
-  QN: () => s,
-  ZP: () => p,
+  QN: () => p,
+  ZP: () => s,
   gb: () => f,
   uF: () => v
 }), n(388685), n(539854);
@@ -14,11 +14,11 @@ var i = n(192379),
   u = n(317381),
   d = n(16609);
 
-function p(e, t) {
+function s(e, t) {
   return f((0, r.Wu)([u.ZP], () => null != e && null != e.id && "" !== e.id ? u.ZP.getEmbeddedActivitiesForChannel(e.id) : u.i6), t)
 }
 
-function s(e) {
+function p(e) {
   let t = f((0, r.e7)([u.ZP], () => null != e ? u.ZP.getEmbeddedActivitiesForGuild(e) : u.i6));
   return i.useMemo(() => {
     let e = new Map;

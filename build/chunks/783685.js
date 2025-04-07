@@ -31,7 +31,7 @@ function p(e) {
       })
     } catch (e) {}
     clearTimeout(b.current), h(!1)
-  }, [t, n, m]), _ = o.PM.useExperiment({
+  }, [t, n, m]), x = o.PM.useExperiment({
     location: "AppTryItOutButton()"
   }).enabled ? d.NW.string(d.t["e+CzPj"]) : d.NW.string(d.t.AUM8hY);
   return (0, i.jsx)(l.zxk, {
@@ -40,7 +40,7 @@ function p(e) {
     color: l.zxk.Colors.PRIMARY,
     submitting: f,
     onClick: C,
-    "aria-label": _,
-    children: _
+    "aria-label": x,
+    children: x
   })
 }

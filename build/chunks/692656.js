@@ -17,10 +17,10 @@ var i = n(200651),
   h = n(481060),
   b = n(911969),
   C = n(115130),
-  _ = n(566620),
-  x = n(127255),
-  v = n(880308),
-  y = n(427996),
+  x = n(566620),
+  _ = n(127255),
+  y = n(880308),
+  v = n(427996),
   N = n(367907),
   g = n(10718),
   j = n(895924),
@@ -32,8 +32,8 @@ var i = n(200651),
   S = n(857192),
   T = n(630388),
   L = n(823379),
-  R = n(424602),
-  w = n(541099),
+  w = n(424602),
+  R = n(541099),
   k = n(827498),
   Z = n(87005),
   M = n(219066),
@@ -74,16 +74,16 @@ function ei(e) {
     setSearchQuery: a,
     setScroller: o,
     isScrollCloseToBottom: c
-  } = e, s = (0, f.e7)([C.Z], () => C.Z.getIsEnabled(), []), u = n === k._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, W.Yn)(n), p = !(0, W.Yn)(n), m = n === k._b.TEXT, [b, x] = ed(!0), [v, y] = ed(u), [N, g] = ed(d), [j, P] = ed(p), E = b && v && N && j, A = (d || u) && !E, I = p && s;
+  } = e, s = (0, f.e7)([C.Z], () => C.Z.getIsEnabled(), []), u = n === k._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, W.Yn)(n), p = !(0, W.Yn)(n), m = n === k._b.TEXT, [b, _] = ed(!0), [y, v] = ed(u), [N, g] = ed(d), [j, P] = ed(p), E = b && y && N && j, A = (d || u) && !E, I = p && s;
   r.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? void 0 : e.guild_id : void 0;
-    (0, _.w1)({
+    (0, x.w1)({
       guildId: n,
       force: !0
     })
   }, [t]), r.useEffect(() => {
-    n === k._b.VOICE && _.ux()
+    n === k._b.VOICE && x.ux()
   }, [n]);
   let O = l.length > 0;
   return (0, i.jsxs)("div", {
@@ -105,10 +105,10 @@ function ei(e) {
         children: [(0, i.jsx)(ea, {
           context: t,
           entrypoint: n,
-          onEmptyState: x
+          onEmptyState: _
         }), u && "channel" === t.type && (0, i.jsx)(ec, {
           context: t,
-          onEmptyState: y
+          onEmptyState: v
         }), d && (0, i.jsx)(es, {
           context: t,
           entrypoint: n,
@@ -132,7 +132,7 @@ function er() {
       className: K.developerShelfControlsLabel,
       variant: "text-sm/normal",
       children: J.NW.string(J.t.tZ3FNj)
-    }), (0, i.jsx)(y.W, {
+    }), (0, i.jsx)(v.W, {
       hideSearch: !0
     })]
   })
@@ -146,7 +146,7 @@ function el(e) {
   } = e, o = r.useRef(null), [c, s] = r.useState(!1), u = r.useMemo(() => a().debounce(e => {
     (0, N.yw)(Y.rMx.APP_LAUNCHER_SEARCH_QUERY_TYPED, {
       query: e,
-      source: w.Z.entrypoint(),
+      source: R.Z.entrypoint(),
       location: j.Vh.APP_LAUNCHER_HOME
     })
   }, 400, {
@@ -154,7 +154,7 @@ function el(e) {
     trailing: !0
   }), []), d = r.useCallback(() => n(""), [n]), p = r.useCallback(() => {
     s(!0), (0, N.yw)(Y.rMx.APP_LAUNCHER_SEARCH_FOCUSED, {
-      source: w.Z.entrypoint(),
+      source: R.Z.entrypoint(),
       location: j.Vh.APP_LAUNCHER_HOME
     })
   }, []), m = r.useCallback(() => {
@@ -287,8 +287,8 @@ function eo(e) {
     context: n,
     onEmptyState: l
   } = e;
-  (0, v.g)();
-  let a = (0, x.Z)({
+  (0, y.g)();
+  let a = (0, _.Z)({
       guildId: "channel" === n.type ? null == (t = n.channel) ? void 0 : t.getGuildId() : void 0,
       context: n
     }),
@@ -450,8 +450,8 @@ function es(e) {
       context: n,
       recommendationsSections: i
     } = e;
-    (0, v.g)();
-    let l = (0, x.Z)({
+    (0, y.g)();
+    let l = (0, _.Z)({
       guildId: "channel" === n.type ? null == (t = n.channel) ? void 0 : t.getGuildId() : void 0,
       context: n
     });
@@ -511,7 +511,7 @@ function eu(e) {
     default:
       t = B.U4.ROW
   }
-  let h = "channel" in d && (0, R.aZ)(d.channel, "AppLauncherHome.RecommendationsSection()"),
+  let h = "channel" in d && (0, w.aZ)(d.channel, "AppLauncherHome.RecommendationsSection()"),
     b = r.useMemo(() => {
       let e = l.application_directory_collection_items.map(e => {
         if (e.type === p.C.APPLICATION) return {
@@ -533,7 +533,7 @@ function eu(e) {
           application: t,
           installOnDemand: !0
         }
-      })), e.filter(e => !h || e.application.id !== R.gu)
+      })), e.filter(e => !h || e.application.id !== w.gu)
     }, [o, l.application_directory_collection_items, l.flags, a, h]),
     C = l.id;
   switch (l.type) {
@@ -546,8 +546,8 @@ function eu(e) {
       n = 4
   }
   let {
-    items: _,
-    handleViewMore: x
+    items: x,
+    handleViewMore: _
   } = ep({
     title: f,
     look: t,
@@ -556,23 +556,23 @@ function eu(e) {
     sectionName: C,
     sectionOverallPosition: c
   }), {
-    trackSectionImpressionRef: v
+    trackSectionImpressionRef: y
   } = (0, V.Z)({
     sectionName: C,
     numItems: b.length,
-    numVisibleItems: _.length
-  }), y = l.type !== m.o.SMALL_BANNER_CARDS;
+    numVisibleItems: x.length
+  }), v = l.type !== m.o.SMALL_BANNER_CARDS;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      ref: e => v.current = e,
+      ref: e => y.current = e,
       children: (0, i.jsx)(z.Z, {
         title: l.title,
         buttonType: z.Z.buttonTypes.VIEW_MORE,
-        onClickViewButton: x
+        onClickViewButton: _
       })
     }), (0, i.jsx)("div", {
       className: t === B.U4.ROW ? K.sectionRowsContentContainer : K.sectionTwoColumnContentContainer,
-      children: _.map((e, n) => {
+      children: x.map((e, n) => {
         let r, {
           collectionItemId: l,
           collectionItemImageHash: a,
@@ -592,7 +592,7 @@ function eu(e) {
           resultsPosition: n,
           location: j.Vh.APP_LAUNCHER_HOME,
           installOnDemand: s,
-          enableVideoBanner: y,
+          enableVideoBanner: v,
           sectionOverallPosition: c,
           overrideImageUrl: r,
           showsPromoted: u
@@ -629,7 +629,7 @@ function ep(e) {
     handleViewMore: () => {
       (0, N.yw)(Y.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
         section_name: a,
-        source: w.Z.entrypoint(),
+        source: R.Z.entrypoint(),
         num: i.length
       }), c({
         type: U.gc.LIST,
