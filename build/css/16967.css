@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: ffa36a41580e4b30
+  Original File Name: a0f033cf9de68eaf
 **/
 .closeButton__47998 {
     position: absolute;
@@ -770,10 +770,6 @@
     color: var(--header-primary)
 }
 
-.hoverable_c19a55 {
-    display: inline-flex
-}
-
 .repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55,.threadMessageAccessory_c19a55 .threadMessageAccessoryPreview_c19a55 .threadMessageAccessoryContent_c19a55 {
     color: inherit;
     font-size: inherit;
@@ -1471,4 +1467,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=ffa36a41580e4b30.css.map*/
+/*# sourceMappingURL=a0f033cf9de68eaf.css.map*/

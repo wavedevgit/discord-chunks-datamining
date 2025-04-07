@@ -1,6 +1,6 @@
 /**
   Module ID: 58593
-  Original File Name: b2141da503a191a4
+  Original File Name: 868c2b6a8189e02c
 **/
 @use postcss-pxtorem;
 
@@ -345,10 +345,6 @@
 
 .repliedTextPreview_c19a55.clickable_c19a55:hover,.repliedTextPreview_c19a55.repliedMessageClickableSpineHovered_c19a55 {
     color: var(--header-primary)
-}
-
-.hoverable_c19a55 {
-    display: inline-flex
 }
 
 .repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55,.threadMessageAccessory_c19a55 .threadMessageAccessoryPreview_c19a55 .threadMessageAccessoryContent_c19a55 {
@@ -1079,4 +1075,4 @@
     margin: 36px 24px
 }
 
-/*# sourceMappingURL=b2141da503a191a4.css.map*/
+/*# sourceMappingURL=868c2b6a8189e02c.css.map*/
