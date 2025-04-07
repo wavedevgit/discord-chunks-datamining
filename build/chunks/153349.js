@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(614173),
   N = n(618896),
   I = n(231338),
-  P = n(388032),
-  S = n(916396);
+  S = n(388032),
+  P = n(916396);
 
 function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,20 +67,20 @@ let A = i.memo(function(e) {
       chatOpen: n
     } = e, i = (0, r.jsx)(m.ZP.Icon, {
       icon: u.Dio,
-      tooltip: P.NW.string(P.t.cpT0Cg),
+      tooltip: S.NW.string(S.t.cpT0Cg),
       onClick: t
     });
     return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: o()(S.headerContainer, {
-        [S.chatOpen]: n
+      className: o()(P.headerContainer, {
+        [P.chatOpen]: n
       }),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: u.V9,
         disabled: !0,
-        "aria-label": P.NW.string(P.t.TYZgzc)
+        "aria-label": S.NW.string(S.t.TYZgzc)
       }), (0, r.jsx)(m.ZP.Title, {
-        children: P.NW.string(P.t.TYZgzc)
+        children: S.NW.string(S.t.TYZgzc)
       })]
     })
   }),
@@ -130,7 +130,7 @@ let A = i.memo(function(e) {
       })
     };
     return (0, r.jsxs)("div", {
-      className: S.participantRowContainer,
+      className: P.participantRowContainer,
       children: [(0, r.jsx)(b.Z, {
         user: l.user,
         guildId: t.guild_id,
@@ -141,22 +141,22 @@ let A = i.memo(function(e) {
         children: e => {
           var t;
           return (0, r.jsxs)(u.P3F, T(Z({
-            className: S.participantMemberContainer,
+            className: P.participantMemberContainer,
             onContextMenu: L
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: u.EFr.SIZE_40,
-              className: S.participantAvatar,
+              className: P.participantAvatar,
               user: l.user,
               isMobile: E,
               status: N
             }), (0, r.jsxs)("div", {
-              className: S.participantTextContainer,
+              className: P.participantTextContainer,
               children: [(0, r.jsx)(u.PUh, {
                 name: l.userNick,
                 color: null != (t = null == I ? void 0 : I.colorString) ? t : void 0,
                 roleGradient: A,
-                className: S.participantName
+                className: P.participantName
               }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
@@ -166,9 +166,9 @@ let A = i.memo(function(e) {
           }))
         }
       }), (0, r.jsx)(u.ua7, {
-        text: R ? P.NW.string(P.t.h9rsTU) : P.NW.string(P.t.f0T7hI),
+        text: R ? S.NW.string(S.t.h9rsTU) : S.NW.string(S.t.f0T7hI),
         children: e => (0, r.jsx)(u.zxk, T(Z({}, e), {
-          innerClassName: S.buttonContainer,
+          innerClassName: P.buttonContainer,
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
           onClick: k,
@@ -179,9 +179,9 @@ let A = i.memo(function(e) {
           })
         }))
       }), (0, r.jsx)(u.ua7, {
-        text: P.NW.string(P.t.moABMz),
+        text: S.NW.string(S.t.moABMz),
         children: e => (0, r.jsx)(u.zxk, T(Z({}, e), {
-          innerClassName: o()(S.buttonContainer, S.buttonMargin),
+          innerClassName: o()(P.buttonContainer, P.buttonMargin),
           look: u.zxk.Looks.BLANK,
           size: u.zxk.Sizes.NONE,
           onClick: M,
@@ -198,25 +198,25 @@ let A = i.memo(function(e) {
       channel: t
     } = e, [n, i] = (0, E.h)(t.id);
     return (0, r.jsx)(u.j7V, {
-      className: S.toggle,
+      className: P.toggle,
       onChange: i,
       value: n,
-      children: P.NW.string(P.t.GYCh0d)
+      children: S.NW.string(S.t.GYCh0d)
     })
   }),
   k = i.memo(function() {
     return (0, r.jsxs)("div", {
-      className: S.emptyStateContainer,
+      className: P.emptyStateContainer,
       children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(u.Text, {
-        className: S.emptyStateTitle,
+        className: P.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
-        children: P.NW.string(P.t["7R24mZ"])
+        children: S.NW.string(S.t["7R24mZ"])
       }), (0, r.jsx)(u.Text, {
-        className: S.emptyStateBody,
+        className: P.emptyStateBody,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: P.NW.string(P.t.Rpr2s7)
+        children: S.NW.string(S.t.Rpr2s7)
       })]
     })
   });
@@ -228,14 +228,14 @@ function M(e) {
     chatOpen: i
   } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([C.Z], () => C.Z.can(I.Pl.MANAGE_CHANNELS, t) || C.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: o()(S.container, {
-      [S.chatOpen]: i
+    className: o()(P.container, {
+      [P.chatOpen]: i
     }),
     children: [(0, r.jsx)(A, {
       toggleRequestToSpeakSidebar: n,
       chatOpen: i
     }), (0, r.jsx)(u.aVo, {
-      className: S.contentContainer,
+      className: P.contentContainer,
       sections: a,
       sectionHeight: function(e) {
         return 40 * (1 === e)
@@ -277,12 +277,12 @@ function M(e) {
           section: t
         } = e;
         return 1 === t ? (0, r.jsx)(u.Text, {
-          className: S.listTitle,
+          className: P.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
-          children: l.length > 0 ? P.NW.formatToPlainString(P.t["5z7q5e"], {
+          children: l.length > 0 ? S.NW.formatToPlainString(S.t["5z7q5e"], {
             numHands: l.length
-          }) : P.NW.string(P.t.TYZgzc)
+          }) : S.NW.string(S.t.TYZgzc)
         }, "participants-section") : null
       }
     })]

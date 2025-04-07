@@ -121,7 +121,7 @@ function x(e) {
                 buttonText: C.NW.string(C.t["5QYPOz"]),
                 buttonColor: a.zxk.Colors.RED,
                 onButtonPress: () => {
-                  l(), P(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, I)
+                  l(), S(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, I)
                 }
               }, "block-button")]
             })
@@ -129,7 +129,7 @@ function x(e) {
         }
       })
     },
-    P = (e, i, l) => {
+    S = (e, i, l) => {
       (0, a.ZDy)(async () => {
         let {
           default: o
@@ -201,7 +201,7 @@ function x(e) {
     }, ...j ? [] : [{
       text: C.NW.string(C.t.ie0QdH),
       color: a.zxk.Colors.RED,
-      onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
+      onclick: () => S(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]
   })
 }

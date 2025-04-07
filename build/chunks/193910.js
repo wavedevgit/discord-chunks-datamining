@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(981631),
   N = n(921944),
   I = n(489887),
-  P = n(388032),
-  S = n(725776);
+  S = n(388032),
+  P = n(725776);
 let Z = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function T() {
@@ -47,7 +47,7 @@ function T() {
         visibleContent: t
       } = e;
       return t === a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE ? (0, r.jsx)(s.IGR, {
-        text: P.NW.string(P.t.y2b7CA),
+        text: S.NW.string(S.t.y2b7CA),
         color: l.Z.BUTTON_DANGER_BACKGROUND
       }) : null
     }
@@ -127,7 +127,7 @@ function A(e) {
     })
   }
 
-  function F() {
+  function H() {
     C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -141,7 +141,7 @@ function A(e) {
     })
   }
 
-  function H() {
+  function F() {
     let e = w,
       n = "txt",
       r = "",
@@ -162,20 +162,20 @@ function A(e) {
     onSelect: _,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": P.NW.string(P.t.Xm41aW),
-    className: S.menu,
+    "aria-label": S.NW.string(S.t.Xm41aW),
+    className: P.menu,
     children: o.map(function(e) {
       var n;
       let i = (0, r.jsxs)("div", {
-        className: S.optionLabel,
+        className: P.optionLabel,
         children: [(0, r.jsx)(e.icon, {
-          className: S.optionIcon,
+          className: P.optionIcon,
           color: "currentColor"
         }), (0, r.jsx)("div", {
-          className: S.optionName,
+          className: P.optionName,
           children: e.display
         }), null != e.badgeVal && e.badgeVal > 0 && (0, r.jsx)(s.mAB, {
-          className: S.badge,
+          className: P.badge,
           color: null != (n = e.badgeColor) ? n : l.Z.STATUS_DANGER,
           count: e.badgeVal
         })]
@@ -192,7 +192,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: H
+            action: F
           }, "upload-text-as-file");
         case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
@@ -264,7 +264,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: F,
+            action: H,
             hint: (0, r.jsx)(T, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:

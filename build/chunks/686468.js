@@ -93,11 +93,11 @@ function I(e) {
   } = e, l = (0, a.e7)([_.Z], () => _.Z.can(C.yP, t), [t]), s = (0, d.Q3)("StartStageChannelCallView"), u = t.guild_id, {
     canCreateGuildEvent: p
   } = (0, g.XJ)(t), I = (0, x.Z)(t.id), {
-    usersInSummary: P
-  } = (0, y.Z)(t.id), S = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
+    usersInSummary: S
+  } = (0, y.Z)(t.id), P = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: o()(O.container, {
-      [O.withRive]: S
+      [O.withRive]: P
     }),
     ref: Z,
     children: [s && (0, r.jsx)(b.Z, {
@@ -135,7 +135,7 @@ function I(e) {
       }) : null, p ? (0, r.jsx)(h.Z, {
         className: O.eventPrompt,
         guildId: u
-      }) : null, (l || P.length > 0) && !s && (0, r.jsx)("hr", {
+      }) : null, (l || S.length > 0) && !s && (0, r.jsx)("hr", {
         className: O.separator
       }), l ? (0, r.jsx)(E, {
         className: o()({

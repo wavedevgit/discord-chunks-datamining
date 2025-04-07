@@ -1,4 +1,4 @@
-/** Chunk was on 87185 **/
+/** Chunk was on 83957 **/
 let r, i, l;
 n.d(t, {
   Z: () => R
@@ -8,15 +8,15 @@ var a, s, o, u = n(913527),
   d = n(442837),
   _ = n(759174),
   E = n(570140),
-  I = n(333023),
+  p = n(333023),
   f = n(355298),
-  p = n(333984),
+  I = n(333984),
   g = n(131704),
-  S = n(592125),
-  h = n(430824),
+  h = n(592125),
+  S = n(430824),
   y = n(306680),
-  N = n(9156),
-  O = n(594174),
+  O = n(9156),
+  N = n(594174),
   T = n(709054);
 let m = new _.h(e => {
   let {
@@ -47,21 +47,21 @@ function A(e) {
     channelId: e.id,
     lastMessageId: t,
     isFavorite: !1,
-    isRequest: f.Z.isMessageRequest(e.id) || p.Z.isSpam(e.id)
+    isRequest: f.Z.isMessageRequest(e.id) || I.Z.isSpam(e.id)
   }
 }
 
-function C() {
-  m.clear(), Object.values(S.Z.getMutablePrivateChannels()).forEach(e => {
+function b() {
+  m.clear(), Object.values(h.Z.getMutablePrivateChannels()).forEach(e => {
     m.set(e.id, A(e))
   })
 }
 
-function D() {
-  let e = S.Z.getMutablePrivateChannels();
+function C() {
+  let e = h.Z.getMutablePrivateChannels();
   for (let t in e) m.set(t, A(e[t]))
 }
-let b = (r = [], i = [], l = [], () => {
+let D = (r = [], i = [], l = [], () => {
   let e = m.values("FAVORITE"),
     t = m.values("DEFAULT");
   return (r !== e || i !== t) && (l = [], e.forEach(e => {
@@ -78,10 +78,10 @@ let b = (r = [], i = [], l = [], () => {
 });
 class L extends(a = d.ZP.Store) {
   initialize() {
-    this.waitFor(S.Z, h.Z, O.default, f.Z, N.ZP), this.syncWith([N.ZP, f.Z], C)
+    this.waitFor(h.Z, S.Z, N.default, f.Z, O.ZP), this.syncWith([O.ZP, f.Z], b)
   }
   getPrivateChannelIds() {
-    return b()
+    return D()
   }
   getSortedChannels() {
     return [m.values("FAVORITE"), m.values("DEFAULT")]
@@ -104,11 +104,11 @@ o = "PrivateChannelSortStore", (s = "displayName") in L ? Object.defineProperty(
   writable: !0
 }) : L[s] = o;
 let R = new L(E.Z, {
-  CONNECTION_OPEN: C,
-  CONNECTION_OPEN_SUPPLEMENTAL: C,
-  OVERLAY_INITIALIZE: C,
-  CACHE_LOADED: D,
-  CACHE_LOADED_LAZY: D,
+  CONNECTION_OPEN: b,
+  CONNECTION_OPEN_SUPPLEMENTAL: b,
+  OVERLAY_INITIALIZE: b,
+  CACHE_LOADED: C,
+  CACHE_LOADED_LAZY: C,
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
@@ -121,7 +121,7 @@ let R = new L(E.Z, {
     let {
       channel: t
     } = e;
-    if (!(0, g.hv)(t.type) || t.id === I.V) return !1;
+    if (!(0, g.hv)(t.type) || t.id === p.V) return !1;
     m.set(t.id, A(t))
   },
   CHANNEL_DELETE: function(e) {
@@ -136,7 +136,7 @@ let R = new L(E.Z, {
       message: n
     } = e;
     if (!m.has(t)) return !1;
-    let r = S.Z.getChannel(t);
+    let r = h.Z.getChannel(t);
     return null != r && m.set(t, A(r, n.id))
   },
   GUILD_CREATE: function(e) {

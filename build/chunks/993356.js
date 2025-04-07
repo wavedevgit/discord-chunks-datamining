@@ -7,8 +7,8 @@ n(192379);
 var r = n(442837),
   s = n(481060),
   l = n(87051),
-  a = n(778123),
-  o = n(122074),
+  o = n(778123),
+  a = n(122074),
   c = n(9156),
   u = n(621600),
   d = n(981631),
@@ -29,25 +29,25 @@ function b() {
 
 function p(e) {
   var t, p;
-  let f = function(e) {
+  let S = function(e) {
       let {
         suppressEveryone: t,
         suppressRoles: n,
         mobilePush: p,
-        messageNotifications: f,
-        notifyHighlights: S
+        messageNotifications: S,
+        notifyHighlights: f
       } = (0, r.cj)([c.ZP], () => ({
         suppressEveryone: c.ZP.isSuppressEveryoneEnabled(e.id),
         suppressRoles: c.ZP.isSuppressRolesEnabled(e.id),
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), N = S === d.gLR.DISABLED, O = (0, a.Z)(e.id);
+      }), [e.id]), O = f === d.gLR.DISABLED, N = (0, o.Z)(e.id);
 
-      function E(t, n) {
+      function h(t, n) {
         l.Z.updateGuildNotificationSettings(e.id, t, n)
       }
-      let h = (0, o.ng)(e.id, !0);
+      let E = (0, a.ng)(e.id, !0);
       return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.kSQ, {
           children: b().map(e => {
@@ -59,26 +59,26 @@ function p(e) {
               group: "guild-notifications",
               id: "".concat(t),
               label: n,
-              action: () => E({
+              action: () => h({
                 message_notifications: t
               }, u.UE.notifications(t)),
-              checked: t === f
+              checked: t === S
             }, t)
           })
-        }), null != h && (0, i.jsx)(s.kSQ, {
-          children: h
+        }), null != E && (0, i.jsx)(s.kSQ, {
+          children: E
         }), (0, i.jsxs)(s.kSQ, {
           children: [(0, i.jsx)(s.S89, {
             id: "suppress-everyone",
             label: g.NW.format(g.t.OWiWAg, {}),
-            action: () => E({
+            action: () => h({
               suppress_everyone: !t
             }, u.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(s.S89, {
             id: "suppress-roles",
             label: g.NW.string(g.t["O/QdoK"]),
-            action: () => E({
+            action: () => h({
               suppress_roles: !n
             }, u.UE.suppressRoles(!n)),
             checked: n
@@ -86,17 +86,17 @@ function p(e) {
             id: "suppress-highlights",
             label: g.NW.string(g.t.gPuteH),
             action: () => {
-              E({
-                notify_highlights: N ? d.gLR.ENABLED : d.gLR.DISABLED
-              }, u.UE.highlights(N))
+              h({
+                notify_highlights: O ? d.gLR.ENABLED : d.gLR.DISABLED
+              }, u.UE.highlights(O))
             },
-            checked: N
-          }), O]
+            checked: O
+          }), N]
         }), (0, i.jsx)(s.kSQ, {
           children: (0, i.jsx)(s.S89, {
             id: "mobile-push",
             label: g.NW.string(g.t["h1DL6+"]),
-            action: () => E({
+            action: () => h({
               mobile_push: !p
             }, u.UE.mobilePush(!p)),
             checked: p
@@ -104,20 +104,20 @@ function p(e) {
         })]
       })
     }(e),
-    S = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
-    N = null == (p = b()) || null == (t = p.find(e => {
+    f = (0, r.e7)([c.ZP], () => c.ZP.getMessageNotifications(e.id), [e.id]),
+    O = null == (p = b()) || null == (t = p.find(e => {
       let {
         setting: t
       } = e;
-      return t === S
+      return t === f
     })) ? void 0 : t.label,
-    O = (0, o.U)();
-  return null != f ? (0, i.jsx)(s.sNh, {
+    N = (0, a.U)();
+  return null != S ? (0, i.jsx)(s.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [O, g.NW.string(g.t.h850Sk)]
+      children: [N, g.NW.string(g.t.h850Sk)]
     }),
-    subtext: N,
+    subtext: O,
     action: () => (0, s.ZDy)(async () => {
       let {
         default: t
@@ -155,6 +155,6 @@ function p(e) {
         }), r))
       }
     }),
-    children: f
+    children: S
   }) : null
 }

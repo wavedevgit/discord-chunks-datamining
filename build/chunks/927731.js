@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -80,13 +80,13 @@ function E(e) {
     removeEditStateId: P
   } = x.B7(f, t, {
     includeSoftDeleted: !0
-  }), [w, R] = i.useState({}), Z = i.useMemo(() => {
+  }), [w, R] = i.useState({}), D = i.useMemo(() => {
     let e = E.map(e => {
       var t;
       return null != (t = w[e]) ? t : e
     });
     return (0, l.uniq)(e)
-  }, [E, w]), D = (e, t) => {
+  }, [E, w]), Z = (e, t) => {
     R(n => O(C({}, n), {
       [e]: t
     }))
@@ -107,20 +107,20 @@ function E(e) {
     }, {
       modalKey: y
     }) : S()
-  }, [t, T, S, s, k, A]), L = x.Lo(Z), M = i.useCallback(() => Z.forEach(x.GM), [Z]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  }, [t, T, S, s, k, A]), L = x.Lo(D), M = i.useCallback(() => D.forEach(x.GM), [D]), G = (0, b.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
   return i.useEffect(() => (U === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && W(), () => {
     (0, d.Mr3)(y)
   }), [U, W]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: v.groupListings,
-      children: [Z.map(e => (0, r.jsx)(j.Z, {
+      children: [D.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
         allSubscriptionListings: I,
         priceTiers: s,
         groupListingId: f,
         onDeleteEditState: () => P(e),
-        onBeforeDispatchNewListing: t => D(t.id, e),
+        onBeforeDispatchNewListing: t => Z(t.id, e),
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
         onClick: G ? void 0 : W,

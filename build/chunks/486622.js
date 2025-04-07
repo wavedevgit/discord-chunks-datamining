@@ -23,8 +23,8 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [C, y] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = C || x || j, Z = r.useCallback(async e => {
-    if (!S) {
+  } = e, _ = (0, f.Z)(), [C, y] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, S] = r.useState(!1), P = C || x || j, Z = r.useCallback(async e => {
+    if (!P) {
       y(!0);
       try {
         await (0, p.e4)(e), N(!0), null == n || n()
@@ -35,11 +35,11 @@ function b(e) {
         y(!1)
       }
     }
-  }, [S, n, b]), T = r.useCallback(async e => {
-    if (!S) {
+  }, [P, n, b]), T = r.useCallback(async e => {
+    if (!P) {
       v(!0);
       try {
-        await (0, p.gN)(e), P(!0), null == i || i()
+        await (0, p.gN)(e), S(!0), null == i || i()
       } catch (t) {
         let e = new o.Hx(t);
         null == b || b(e)
@@ -47,21 +47,21 @@ function b(e) {
         v(!1)
       }
     }
-  }, [S, i, b]), A = r.useCallback(async e => {
-    if (S) return;
+  }, [P, i, b]), A = r.useCallback(async e => {
+    if (P) return;
     v(!0);
     let t = l()(e, m.t$);
     try {
       for (let e of t) await (0, p.r_)(e);
-      P(!0), null == i || i()
+      S(!0), null == i || i()
     } catch (t) {
       let e = new o.Hx(t);
       null == b || b(e)
     } finally {
       v(!1)
     }
-  }, [S, i, b]), w = r.useCallback(async e => {
-    if (S) return;
+  }, [P, i, b]), w = r.useCallback(async e => {
+    if (P) return;
     if (null != t && null == s.Z.getMutualGuilds(t.id)) {
       O(!0);
       try {
@@ -97,7 +97,7 @@ function b(e) {
         })
       }
     })
-  }, [Z, S, t]), R = r.useCallback((e, t, n) => {
+  }, [Z, P, t]), R = r.useCallback((e, t, n) => {
     let r = (r, i) => {
         i && u.kJ.updateSetting(r), r && null != t && (0, a.zd)(t), Z(e.id), d.default.track(g.rMx.MESSAGE_REQUEST_ACTION, {
           action: m.cl.ACCEPT_HAM_CONFIRMATION_PROMPT,

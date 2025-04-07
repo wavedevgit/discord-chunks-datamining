@@ -31,8 +31,8 @@ let O = e => {
   } = e, {
     currentCategoryId: N,
     directoryEntries: I,
-    categoryCounts: P,
-    allEntriesCount: S,
+    categoryCounts: S,
+    allEntriesCount: P,
     isLoading: Z
   } = (0, l.cj)([m.Z], () => {
     let e = m.Z.getCurrentCategoryId(O.id),
@@ -140,21 +140,21 @@ let O = e => {
         }
       })
     } : void 0,
-    F = e => {
+    H = e => {
       0 !== k.trim().length && e.charCode === v.yXg.ENTER && (h.Rq(O.id, k), d.default.track(v.rMx.GUILD_DIRECTORY_SEARCH, {
         directory_channel_id: O.id,
         directory_guild_id: E.id
       }))
     },
-    H = () => {
+    F = () => {
       M(""), h.So(O.id)
     };
   return L ? (0, r.jsx)(y.Z, {
     searchQuery: k,
     setSearchQuery: M,
     mostRecentQuery: A,
-    handleSearchKeyPress: F,
-    handleClearSearch: H,
+    handleSearchKeyPress: H,
+    handleClearSearch: F,
     handleCreateOrAddGuild: B,
     searchResults: R,
     searchFetching: w
@@ -173,16 +173,16 @@ let O = e => {
     channel: O,
     searchQuery: k,
     setSearchQuery: M,
-    handleSearchKeyPress: F,
-    handleClearSearch: H,
+    handleSearchKeyPress: H,
+    handleClearSearch: F,
     handleCreateOrAddGuild: B,
     currentCategoryId: N,
     handleSelectCategory: e => {
       h.Su(O.id, e)
     },
     directoryEntries: T,
-    categoryCounts: P,
-    allEntriesCount: S,
+    categoryCounts: S,
+    allEntriesCount: P,
     isLoading: Z
   })
 }

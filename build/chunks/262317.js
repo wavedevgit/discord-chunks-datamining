@@ -29,8 +29,8 @@ var r = n(200651),
   E = n(430824),
   N = n(496675),
   I = n(594174),
-  P = n(979651),
-  S = n(927923),
+  S = n(979651),
+  P = n(927923),
   Z = n(70722),
   T = n(388032),
   A = n(587382);
@@ -118,8 +118,8 @@ let L = (0, p.$)(function(e) {
     deaf: W,
     video: U,
     embeddedApplication: B,
-    serverMute: F,
-    serverDeaf: H,
+    serverMute: H,
+    serverDeaf: F,
     nick: G,
     ringing: V,
     speaking: z,
@@ -147,7 +147,7 @@ let L = (0, p.$)(function(e) {
     eh(!ep)
   }, eg = () => {
     X && (null == et || et(p.id))
-  }, eb = () => X && (0, _.p9)(k, P.Z, E.Z, N.Z, m.Z)[0], e_ = () => {
+  }, eb = () => X && (0, _.p9)(k, S.Z, E.Z, N.Z, m.Z)[0], e_ = () => {
     if (!eb()) return;
     let e = {
       streamType: Z.lo.GUILD,
@@ -179,7 +179,7 @@ let L = (0, p.$)(function(e) {
     previewIsOpen: er,
     location: es
   }), ex = e => {
-    let t = S.al.has(null != ei ? ei : ""),
+    let t = P.al.has(null != ei ? ei : ""),
       n = {
         user: p,
         speaking: z,
@@ -196,8 +196,8 @@ let L = (0, p.$)(function(e) {
         nick: G,
         collapsed: l,
         overlap: l,
-        serverMute: F,
-        serverDeaf: H,
+        serverMute: H,
+        serverDeaf: F,
         tabIndex: ea,
         otherClientSessionType: ei,
         voicePlatform: el,

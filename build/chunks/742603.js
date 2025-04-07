@@ -28,8 +28,8 @@ var i = n(120356),
   E = n(809244),
   N = n(618158),
   I = n(358221),
-  P = n(362721),
-  S = n(887012),
+  S = n(362721),
+  P = n(887012),
   Z = n(613548),
   T = n(221888),
   A = n(339340),
@@ -89,7 +89,7 @@ function B(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     user: t,
     channel: n,
@@ -111,13 +111,13 @@ function F(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
       channel: l
     } = e,
-    o = (0, S.Z)(l, !0),
+    o = (0, P.Z)(l, !0),
     s = (0, g.qY)(l.id),
     c = null != s ? (0, b.DK)(s) : null,
     d = null != s;
@@ -143,7 +143,7 @@ function H(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(C.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(F, {
+      }), (0, r.jsx)(H, {
         user: e,
         channel: l,
         stream: n,
@@ -178,10 +178,10 @@ function G(e) {
     participantsOpen: I.Z.getParticipantsOpen(t.id)
   }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = M.NW.string(M.t.BVZqJi);
   t.isDM() ? N = M.NW.string(M.t.jN2DfX) : t.isGroupDM() && (N = M.NW.string(M.t["e5y+go"]));
-  let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
-    T = t.isGuildVoice() && c && null != S && S.length > 0,
-    B = (0, P.ZP)(t),
-    F = T ? (0, r.jsx)(a.ua7, {
+  let P = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
+    T = t.isGuildVoice() && c && null != P && P.length > 0,
+    B = (0, S.ZP)(t),
+    H = T ? (0, r.jsx)(a.ua7, {
       text: M.NW.string(M.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -196,7 +196,7 @@ function G(e) {
           className: l()(L.channelStatus, D.markup, {
             [L.hoverable]: B
           }),
-          children: v.Z.parseVoiceChannelStatus(S, !0, {
+          children: v.Z.parseVoiceChannelStatus(P, !0, {
             channelId: t.id
           })
         }), B && (0, r.jsx)(a.vdY, {
@@ -232,7 +232,7 @@ function G(e) {
         onDoubleClick: y.O,
         transparent: !0,
         className: e,
-        childrenBottom: F,
+        childrenBottom: H,
         toolbar: (0, r.jsx)(Z.Z, {
           inPopout: s === R.IlC.POPOUT,
           channel: t,
@@ -260,7 +260,7 @@ function G(e) {
         }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(H, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

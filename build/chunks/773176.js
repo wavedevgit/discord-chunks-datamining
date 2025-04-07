@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(41776),
   N = n(980463),
   I = n(328908),
-  P = n(992970),
-  S = n(135793),
+  S = n(992970),
+  P = n(135793),
   Z = n(576645),
   T = n(84040),
   A = n(222677),
@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(695346),
   U = n(314897),
   B = n(323873),
-  F = n(271383),
-  H = n(430824),
+  H = n(271383),
+  F = n(430824),
   G = n(607744),
   V = n(496675),
   z = n(626135),
@@ -207,13 +207,13 @@ function em(e) {
       isFocused: a
     } = e, {
       author: s
-    } = n, u = (0, c.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, D.$R)(t), m = (0, D.Gu)(t), g = W.nc.useSetting(), b = W.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
+    } = n, u = (0, c.e7)([F.Z], () => F.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([U.default], () => U.default.getId()), p = (0, D.$R)(t), m = (0, D.Gu)(t), g = W.nc.useSetting(), b = W.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: C,
       canAddNewReactions: v
     } = (0, c.cj)([V.Z], () => ({
       canAddNewReactions: _ && V.Z.can(el.Plq.ADD_REACTIONS, t),
       canManageMessages: V.Z.can(el.Plq.MANAGE_MESSAGES, t)
-    }), [t, _]), j = (0, k.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), P = (0, c.e7)([F.ZP], () => null != t.guild_id && F.ZP.isCurrentUserGuest(t.guild_id), [t]), S = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
+    }), [t, _]), j = (0, k.U)(t, n), O = (0, D.NE)(t, n), N = (0, D.Ek)(n), I = (0, c.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), S = (0, c.e7)([H.ZP], () => null != t.guild_id && H.ZP.isCurrentUserGuest(t.guild_id), [t]), P = s.id === d, Z = (C || n.canDeleteOwnMessage(d)) && p && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (Z = Z && C);
     let T = (0, X.a4)(n),
       A = (0, J.Z)(n, t, C),
@@ -226,10 +226,10 @@ function em(e) {
         renderReactions: g,
         canAddNewReactions: v,
         isLurking: I,
-        isGuest: P,
+        isGuest: S,
         isActiveChannelOrUnarchivableThread: p
       }),
-      B = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(el.oNc.NEWS) && (S || C) && (0, f.Z)(n),
+      B = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(el.oNc.NEWS) && (P || C) && (0, f.Z)(n),
       z = t.getGuildId(),
       q = null != z && (n.type === el.uaV.USER_JOIN || n.type === el.uaV.GUILD_INVITE_REMINDER) && V.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: z
@@ -291,10 +291,10 @@ function em(e) {
     eE(!0)
   }, []), eI = i.useCallback(() => {
     eE(!1)
-  }, []), eP = i.useCallback((e, t) => {
+  }, []), eS = i.useCallback((e, t) => {
     ev(eo.L.TAKE_ACTION), (0, et.ts)(e, t)
   }, [ev]), {
-    canShowReactionsOnMessageHover: eS
+    canShowReactionsOnMessageHover: eP
   } = b.ZP.useExperiment({
     location: "ExpandingButtons"
   }, {
@@ -351,7 +351,7 @@ function em(e) {
         onClick: e => (0, et.HH)(t, n, e)
       }, "reply-self") : null]
     }) : null, _ && !ed ? (0, r.jsxs)(r.Fragment, {
-      children: [eS && !R ? (0, r.jsxs)(r.Fragment, {
+      children: [eP && !R ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(ef, {
           channel: t,
           message: n
@@ -368,13 +368,13 @@ function em(e) {
         icon: d.l22,
         onClick: () => {
           z.default.track(el.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
-            location: P.MG.MessageExpandingButtons
-          }), (0, S.s)({
+            location: S.MG.MessageExpandingButtons
+          }), (0, P.s)({
             channelId: t.id,
             message: n,
             onRedeem: ew,
             onClose: I.Qy,
-            source: P.YD.MessageExpandingButtons
+            source: S.YD.MessageExpandingButtons
           })
         }
       }, "add-confetti-potion") : null]
@@ -389,7 +389,7 @@ function em(e) {
     }, "edit") : null, w ? (0, r.jsx)(ee.sF, {
       label: es.NW.string(es.t.I3ltXF),
       icon: v.Z,
-      onClick: () => eP(t, n),
+      onClick: () => eS(t, n),
       onTooltipShow: eN,
       onTooltipHide: eI,
       showNewBadge: !eO && ej

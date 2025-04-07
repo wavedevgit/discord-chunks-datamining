@@ -28,8 +28,8 @@ var i = n(442837),
   E = n(827313),
   N = n(228168),
   I = n(981631),
-  P = n(388032),
-  S = n(969627);
+  S = n(388032),
+  P = n(969627);
 
 function Z(e) {
   let {
@@ -55,7 +55,7 @@ function Z(e) {
     return null == (e = p.Z.getUserProfile(t.id)) ? void 0 : e.application
   });
   return (0, r.jsxs)("div", {
-    className: S.body,
+    className: P.body,
     children: [(0, r.jsx)(O.Z, {
       user: t,
       profileType: N.y0.PANEL,
@@ -98,11 +98,11 @@ function Z(e) {
       user: t,
       currentUser: n,
       displayProfile: Z,
-      className: S.activity
+      className: P.activity
     }), (0, r.jsxs)(j.Z.Overlay, {
-      className: S.overlay,
+      className: P.overlay,
       children: [!W && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(v.Z, {
-        heading: P.NW.string(P.t["61W33d"]),
+        heading: S.NW.string(S.t["61W33d"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(m.Z, {
           userBio: Z.bio,
@@ -115,13 +115,13 @@ function Z(e) {
         commandIds: U.popularApplicationCommandIds,
         channel: T
       }), L.length > 0 && (0, r.jsx)(v.Z, {
-        heading: P.NW.string(P.t["Uv/eT0"]),
+        heading: S.NW.string(S.t["Uv/eT0"]),
         headingColor: "header-primary",
         children: (0, r.jsx)(_.Z, {
           applicationIds: L
         })
       }), (0, r.jsx)(v.Z, {
-        heading: t.bot ? P.NW.string(P.t["A//N4u"]) : P.NW.string(P.t.a6XYDw),
+        heading: t.bot ? S.NW.string(S.t["A//N4u"]) : S.NW.string(S.t.a6XYDw),
         headingColor: "header-primary",
         children: (0, r.jsx)(y.Z, {
           userId: t.id

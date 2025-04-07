@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(954551),
   N = n(221241),
   I = n(44136),
-  P = n(651183),
-  S = n(618158),
+  S = n(651183),
+  P = n(618158),
   Z = n(390322),
   T = n(616286),
   A = n(961048),
@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(594174),
   U = n(358221),
   B = n(887012),
-  F = n(444253),
-  H = n(355827),
+  H = n(444253),
+  F = n(355827),
   G = n(185935),
   V = n(795318),
   z = n(354459),
@@ -147,7 +147,7 @@ function $(e) {
   }), em = (0, b.Q3)("ChannelCallHeaderToolbar"), {
     preventIdle: eg,
     allowIdle: eb
-  } = (0, S.Y)("popup"), e_ = [];
+  } = (0, P.Y)("popup"), e_ = [];
   if (ea && !ed && !ee) {
     let e = (null == er ? void 0 : er.type) === z.fO.STREAM ? (0, _.my)(er.id) : void 0,
       t = (null == er ? void 0 : er.type) === z.fO.ACTIVITY ? er.applicationId : void 0;
@@ -167,7 +167,7 @@ function $(e) {
   }, "current-speaker")), e_.push((0, r.jsx)(g.Z, {
     className: K.button,
     channelId: et
-  }, "clips-enabled-indicator")), (null == er ? void 0 : er.type) === z.fO.STREAM && (e_.push((0, r.jsx)(P.Z, {
+  }, "clips-enabled-indicator")), (null == er ? void 0 : er.type) === z.fO.STREAM && (e_.push((0, r.jsx)(S.Z, {
     className: K.button,
     participant: er
   }, "warning")), e_.push((0, r.jsx)(C.Z, {
@@ -180,7 +180,7 @@ function $(e) {
     targetElementRef: L,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(Z.Z, {
-      children: (0, r.jsx)(H.Z, {
+      children: (0, r.jsx)(F.Z, {
         channel: n
       })
     }),
@@ -219,7 +219,7 @@ function $(e) {
         closePopout: t
       } = e;
       return (0, r.jsx)(Z.Z, {
-        children: (0, r.jsx)(F.Z, {
+        children: (0, r.jsx)(H.Z, {
           channelId: et,
           onClose: t,
           appContext: l,

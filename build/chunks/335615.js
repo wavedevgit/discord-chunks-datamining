@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(611064),
   N = n(677432),
   I = n(178762),
-  P = n(868671),
-  S = n(82295),
+  S = n(868671),
+  P = n(82295),
   Z = n(91218),
   T = n(313201),
   A = n(540059),
@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(706454),
   U = n(662594),
   B = n(430824),
-  F = n(944486),
-  H = n(111583),
+  H = n(944486),
+  F = n(111583),
   G = n(594174),
   V = n(979651),
   z = n(585483),
@@ -189,7 +189,7 @@ class eo extends i.Component {
       (0, g.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(F.Z.getVoiceChannelId(), this.props.user.id);
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387)), t = V.Z.isInChannel(H.Z.getVoiceChannelId(), this.props.user.id);
         return n => (0, r.jsx)(e, et(ee({}, n), {
           user: this.props.user,
           guildId: this.props.guildId,
@@ -229,7 +229,7 @@ let ea = i.memo(e => {
       channel: i,
       user: l,
       index: o
-    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([H.Z], () => H.Z.isTyping(i.id, l.id)), u = (0, h.e7)([G.default], () => G.default.getCurrentUser()), d = (0, h.e7)([B.Z], () => {
+    } = e, a = (0, c.JA)("".concat(o)), s = (0, h.e7)([F.Z], () => F.Z.isTyping(i.id, l.id)), u = (0, h.e7)([G.default], () => G.default.getCurrentUser()), d = (0, h.e7)([B.Z], () => {
       var e;
       return null != t ? null == (e = B.Z.getRole(i.guild_id, t)) ? void 0 : e.name : void 0
     }, [i, t]), p = (0, M.K)({
@@ -259,7 +259,7 @@ let ea = i.memo(e => {
       children: (0, r.jsx)("div", {
         className: J.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(S.Z, {
+    }) : (0, r.jsxs)(P.Z, {
       className: J.membersGroup,
       children: [(0, r.jsx)(m.nn4, {
         children: Q.NW.format(Q.t.UaqbkZ, {
@@ -479,7 +479,7 @@ class eu extends i.Component {
       } = e.getScrollerState();
       this.props.updateMaxContentFeedRowSeen(n + t - 40)
     }, 50)), $(this, "getContentFeedGroup", () => {
-      let e = this.props.groups[P.T];
+      let e = this.props.groups[S.T];
       if ((0, E.R)(e)) return e
     }), $(this, "hasContentFeed", () => null != this.getContentFeedGroup()), $(this, "getRowHeightComputer", () => {
       let e = this.getContentFeedGroup(),
@@ -491,7 +491,7 @@ class eu extends i.Component {
           rows: n
         } = this.props, r = e.index;
         return function(e, i) {
-          if (e === P.T) {
+          if (e === S.T) {
             let e = n[r + 1 + i];
             return (0, I.iZ)(e)
           }
@@ -526,7 +526,7 @@ class eu extends i.Component {
           rowsVisible: n
         } = this.getDimensions();
       if (void 0 === n || 0 === n || null == t) return;
-      this.hasContentFeed() && (t = t.filter(e => e.section !== P.T));
+      this.hasContentFeed() && (t = t.filter(e => e.section !== S.T));
       let r = t.map(e => this.getRowProps(e)).slice(0, n + 1).filter(Y.lm);
       if (0 === r.length) return;
       let i = r.reduce((e, t) => (t.type !== U.so.MEMBER || (e.num_users_visible++, t.isMobileOnline && e.num_users_visible_with_mobile_indicator++, null != t.activities && t.activities.length > 0 && (e.num_users_visible_with_activity++, t.activities.some(e => e.type === X.IIU.PLAYING) && e.num_users_visible_with_game_activity++), null != t.user.avatarDecoration && e.num_users_visible_with_avatar_decoration++), e), {
@@ -552,7 +552,7 @@ function ed(e) {
     groups: p,
     version: f,
     updateMaxRowSeen: g
-  } = (0, P.H)({
+  } = (0, S.H)({
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id

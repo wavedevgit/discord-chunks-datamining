@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -37,11 +37,11 @@ function O(e) {
     guild: S,
     subsection: T
   } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : O) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
-    rulesByTriggerType: Z
-  } = (0, g.pH)(P), D = {
+    rulesByTriggerType: D
+  } = (0, g.pH)(P), Z = {
     [p.vh.MEMBERS]: v.NW.string(v.t.sx4E5u),
     [p.vh.CONTENT]: v.NW.string(v.t.fphZb2)
-  }, A = i.useMemo(() => Object.values(null != Z ? Z : {}).flat().filter(d.lm), [Z]), k = {
+  }, A = i.useMemo(() => Object.values(null != D ? D : {}).flat().filter(d.lm), [D]), k = {
     isInEditMode: w,
     setEditingRule: E
   }, W = i.useRef(k);
@@ -80,7 +80,7 @@ function O(e) {
         return (0, r.jsx)(x.Z, {
           guildId: P,
           triggerType: e,
-          rules: null != (t = Z[e]) ? t : [],
+          rules: null != (t = D[e]) ? t : [],
           initWithEdit: T === _.KsC.AUTOMOD_MENTION_SPAM && e === N.fX.MENTION_SPAM
         }, e)
       })
@@ -131,13 +131,13 @@ function O(e) {
     }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(G).map(e => {
       let [t, n] = e;
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
-      let s = null != D[t] ? (0, r.jsx)(l.hjN, {
+      let s = null != Z[t] ? (0, r.jsx)(l.hjN, {
         tag: "h3",
         className: C.categoryHeader,
         children: (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
-          children: D[t]
+          children: Z[t]
         })
       }) : null;
       return (0, r.jsxs)("div", {

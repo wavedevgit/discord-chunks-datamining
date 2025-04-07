@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -95,8 +95,8 @@ function w(e) {
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
-    handleScroll: Z
-  } = (0, N.V)(), D = (0, c.e7)([h.Z], () => {
+    handleScroll: D
+  } = (0, N.V)(), Z = (0, c.e7)([h.Z], () => {
     var e;
     return null == (e = h.Z.getRoleMemberCount(t.id)) ? void 0 : e[n.id]
   }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
@@ -260,7 +260,7 @@ function w(e) {
     style: {
       scrollPaddingTop: g
     },
-    onScroll: Z,
+    onScroll: D,
     children: (0, r.jsxs)("div", {
       className: I.contentWidth,
       children: [(0, r.jsx)("div", {
@@ -274,7 +274,7 @@ function w(e) {
           selectedSection: _.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
-      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
+      }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
         className: y.warningContainer,
         children: [(0, r.jsx)(d.P4T, {
           size: "custom",

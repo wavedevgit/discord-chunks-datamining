@@ -1,6 +1,6 @@
-/** Chunk was on 80137 **/
+/** Chunk was on 52212 **/
 n.d(t, {
-  Z: () => _
+  Z: () => p
 });
 var r, i = n(442837),
   o = n(570140);
@@ -23,7 +23,7 @@ let s = 12 * n(70956).Z.Millis.HOUR,
   },
   u = a,
   d = c;
-class p extends(r = i.ZP.PersistedStore) {
+class _ extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     d = c, u = a;
     let t = new Date;
@@ -39,8 +39,8 @@ class p extends(r = i.ZP.PersistedStore) {
     return u
   }
 }
-l(p, "displayName", "PerksRelevanceStore"), l(p, "persistKey", "PerksRelevanceStore");
-let _ = new p(o.Z, {
+l(_, "displayName", "PerksRelevanceStore"), l(_, "persistKey", "PerksRelevanceStore");
+let p = new _(o.Z, {
   BILLING_PERKS_RELEVANCE_FETCH_START: function() {
     d.hasFetchedRelevance = !0
   },

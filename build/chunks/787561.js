@@ -1,7 +1,7 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  X: () => Z,
+  X: () => D,
   Z: () => k
 }), n(953529), n(388685), n(539854);
 var r = n(200651),
@@ -64,7 +64,7 @@ function w(e, t) {
   }), e
 }
 let R = "dismissedCommunityFeaturesUpsell",
-  Z = () => {
+  D = () => {
     let e, {
         guild: t,
         submitting: n,
@@ -94,7 +94,7 @@ let R = "dismissedCommunityFeaturesUpsell",
       errorMessage: e
     })
   },
-  D = e => {
+  Z = e => {
     let {
       discoveryEnabled: t,
       onboardingEnabled: n,
@@ -273,7 +273,7 @@ let R = "dismissedCommunityFeaturesUpsell",
     return (0, r.jsxs)(d.hjN, {
       title: E.NW.string(E.t.nRtNqq),
       tag: d.RB0.H1,
-      children: [u ? (0, r.jsx)(D, {
+      children: [u ? (0, r.jsx)(Z, {
         discoveryEnabled: e.features.has(I.oNc.DISCOVERABLE),
         onboardingEnabled: e.features.has(I.oNc.GUILD_ONBOARDING),
         guild: e

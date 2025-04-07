@@ -1,7 +1,7 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => D
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -80,8 +80,8 @@ function R(e) {
     y = (0, v.T)(d, p, g),
     E = (0, f.pM)(d.id, g.id),
     R = null == y && !E,
-    Z = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
-    [, D] = (0, l.c)({
+    D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
+    [, Z] = (0, l.c)({
       type: w,
       item: () => (N(g.id), {
         id: g.id,
@@ -112,7 +112,7 @@ function R(e) {
       })
     }),
     W = null != (i = g.colorString) ? i : (0, c.Rf)(I.p6O);
-  return s = Z ? (0, r.jsx)(b.Z, {
+  return s = D ? (0, r.jsx)(b.Z, {
     size: 12,
     color: g.colorString,
     className: S.verifiedRoleIcon
@@ -145,7 +145,7 @@ function R(e) {
     "aria-label": g.name,
     clickableRef: e => {
       var t;
-      return D(k(null != (t = null == e ? void 0 : e.ref) ? t : null))
+      return Z(k(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
     children: [s, null != y ? (0, r.jsx)(v.Z, {
       className: S.lock,
@@ -159,7 +159,7 @@ function R(e) {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     guild: t,
     currentRoleId: n,
@@ -170,8 +170,8 @@ function Z(e) {
     handleScroll: I
   } = (0, O.V)(), {
     handleDragStart: w,
-    handleDragReset: Z,
-    handleDragComplete: D
+    handleDragReset: D,
+    handleDragComplete: Z
   } = (0, C.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
@@ -242,8 +242,8 @@ function Z(e) {
             onClick: () => s(e.id),
             currentPosition: i,
             onDragStart: w,
-            onDragReset: Z,
-            onDragComplete: D,
+            onDragReset: D,
+            onDragComplete: Z,
             roleStyle: m
           }, e.id))
         })

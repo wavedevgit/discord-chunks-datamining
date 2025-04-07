@@ -48,15 +48,15 @@ function y(e) {
   let {
     parentAnalyticsLocation: I
   } = (0, p.ZP)(), {
-    mode: P
+    mode: S
   } = (0, m.ZP)({
     location: "MicButton"
   }), {
-    squareButtonsEnabled: S,
+    squareButtonsEnabled: P,
     coloredIconsEnabled: Z
   } = (0, g.Z)({
     location: "MuteButton"
-  }), T = t || n || y, A = x ? _.d : _.Z, w = (0, h.Z)(t, n, y, v, P === m.BK.GroupedButtonsRedMic || S), R = (0, c.O)(T ? "unmute" : "mute"), k = (0, u.P)(T ? "unmute" : "mute"), {
+  }), T = t || n || y, A = x ? _.d : _.Z, w = (0, h.Z)(t, n, y, v, S === m.BK.GroupedButtonsRedMic || P), R = (0, c.O)(T ? "unmute" : "mute"), k = (0, u.P)(T ? "unmute" : "mute"), {
     activeVoice: M
   } = (0, b.o)(), L = null != M, D = L ? k : R, {
     events: W,
@@ -65,8 +65,8 @@ function y(e) {
   i.useEffect(() => () => U(), [U, T]);
   let B = D.Component;
   (0, d.bp)() === C.IlC.POPOUT && (B = L ? T ? o.T : l.x : T ? s.n : a.S);
-  let F = (S || P === m.BK.GroupedButtonsRedMic) && T ? "red" : void 0,
-    H = P !== m.BK.GroupedButtonsRedMic && !S;
+  let H = (P || S === m.BK.GroupedButtonsRedMic) && T ? "red" : void 0,
+    F = S !== m.BK.GroupedButtonsRedMic && !P;
   return (0, r.jsx)(A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -85,10 +85,10 @@ function y(e) {
     }
     return e
   }({
-    isActive: !!H && !T,
+    isActive: !!F && !T,
     iconComponent: B,
     caretColor: Z && T ? "red" : "primaryDark",
-    color: F,
+    color: H,
     label: w,
     onMouseEnter: e => {
       null == j || j(e), W.onMouseEnter()

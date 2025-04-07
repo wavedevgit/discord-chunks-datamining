@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 let r, i, s;
 n.d(t, {
@@ -65,15 +65,15 @@ function R() {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     section: t
   } = e;
   if (null != r || t !== N.pNK.ROLES) return !1;
-  D()
+  Z()
 }
 
-function D() {
+function Z() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   r = j.Z.getProps().guild, O = !1, y = !1, s = void 0, v.clear(), C = N.QZA.OPEN, E = [...I = null != r ? o()(h.Z.getRoles(r.id)).values().sortBy(e => {
     let {
@@ -196,9 +196,9 @@ class M extends(a = u.ZP.Store) {
 }
 _(M, "displayName", "GuildSettingsRolesStore");
 let G = new M(m.Z, __OVERLAY__ ? {} : {
-    GUILD_SETTINGS_ROLES_INIT: () => D(),
-    GUILD_SETTINGS_INIT: Z,
-    GUILD_SETTINGS_SET_SECTION: Z,
+    GUILD_SETTINGS_ROLES_INIT: () => Z(),
+    GUILD_SETTINGS_INIT: D,
+    GUILD_SETTINGS_SET_SECTION: D,
     GUILD_SETTINGS_ROLES_SORT_UPDATE: function(e) {
       let {
         roles: t
@@ -347,7 +347,7 @@ let G = new M(m.Z, __OVERLAY__ ? {} : {
       C = N.QZA.OPEN, s = t
     },
     GUILD_SETTINGS_ROLES_SAVE_SUCCESS: function() {
-      D(!1)
+      Z(!1)
     }
   }),
   U = G

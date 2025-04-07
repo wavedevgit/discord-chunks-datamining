@@ -1,4 +1,4 @@
-/** Chunk was on 80137 **/
+/** Chunk was on 52212 **/
 n.d(t, {
   Z: () => l
 });
@@ -15,7 +15,7 @@ let l = e => {
     shouldShowPromotionalExperience: c,
     onCloseCallback: u,
     itemConsumed: d,
-    purchaseType: p = o.o8.FIAT
+    purchaseType: _ = o.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -45,7 +45,7 @@ let l = e => {
       overrideDescription: a,
       shouldShowPromotionalExperience: c,
       itemConsumed: d,
-      purchaseType: p
+      purchaseType: _
     }, n))
   }, {
     onCloseCallback: u

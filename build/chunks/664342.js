@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -74,7 +74,7 @@ function I(e) {
     autoInvert: !1,
     onRequestClose: () => o(!1),
     renderPopout: function(e) {
-      return (0, r.jsx)(P, N(E({}, e), {
+      return (0, r.jsx)(S, N(E({}, e), {
         channel: t
       }))
     },
@@ -93,12 +93,12 @@ function I(e) {
   })
 }
 
-function P(e) {
+function S(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, h.Z)(t), v = (0, f.Z)(t), E = (0, o.Z)(t), N = (0, c.Z)(t), I = (0, p.Z)(t.id), P = (0, d.Z)(t), S = (0, a.Z)(t), Z = (0, g.Z)({
+  } = e, b = (0, s.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, h.Z)(t), v = (0, f.Z)(t), E = (0, o.Z)(t), N = (0, c.Z)(t), I = (0, p.Z)(t.id), S = (0, d.Z)(t), P = (0, a.Z)(t), Z = (0, g.Z)({
     id: t.id,
     label: O.NW.string(O.t.DQ797u)
   }), T = (0, m.Z)(t);
@@ -120,7 +120,7 @@ function P(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [x, v]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [P, _, I]
+      children: [S, _, I]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -142,14 +142,14 @@ function P(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, E, N, S]
+      children: [T, E, N, P]
     }), (0, r.jsx)(l.kSQ, {
       children: Z
     })]
   })
 }
 
-function S(e) {
+function P(e) {
   let {
     channel: t,
     baseChannelId: n

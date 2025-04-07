@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   w: () => E
@@ -66,13 +66,13 @@ function I(e) {
     settingsGuild: I,
     settingsMetadata: E,
     settingsProfile: S
-  } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
+  } = e, T = I.id, [P, w] = i.useState(!1), [R, D] = i.useState(null), Z = I.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: I.id
   })) ? t : 0, k = i.useCallback(() => {
-    Z(null), h.Z.init(T, _.pNK.ACCESS)
+    D(null), h.Z.init(T, _.pNK.ACCESS)
   }, [T]), W = i.useCallback(async e => {
     try {
-      w(!0), await e(), Z(null)
+      w(!0), await e(), D(null)
     } finally {
       w(!1)
     }
@@ -82,7 +82,7 @@ function I(e) {
         throwErr: !0
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? Z(e.message) : Z(C.NW.formatToPlainString(C.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? D(e.message) : D(C.NW.formatToPlainString(C.t.aTVNen, {
         statusPageURL: _.yXt.STATUS
       })), e
     }
@@ -90,7 +90,7 @@ function I(e) {
     try {
       await d.ZP.updateVerificationForm(T, e, t)
     } catch (e) {
-      throw Z(new o.Hx(e).getAnyErrorMessage()), e
+      throw D(new o.Hx(e).getAnyErrorMessage()), e
     }
   }, [T]), G = i.useCallback(async (e, t) => {
     let n = t.length > 0 ? [{
@@ -151,7 +151,7 @@ function I(e) {
               guildId: I.id
             }, E))
           } catch (e) {
-            throw Z(new o.Hx(e).getAnyErrorMessage()), e
+            throw D(new o.Hx(e).getAnyErrorMessage()), e
           }
         }
       })
@@ -171,7 +171,7 @@ function I(e) {
         e()
       },
       i = e => {
-        if (D && A > 0 && s.joinType !== j.A.APPLY) return void(0, a.ZDy)(async () => {
+        if (Z && A > 0 && s.joinType !== j.A.APPLY) return void(0, a.ZDy)(async () => {
           let {
             default: t
           } = await n.e("55009").then(n.bind(n, 826390));
@@ -188,11 +188,11 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = s;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void Z(C.NW.string(C.t.TCHkcX))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void D(C.NW.string(C.t.TCHkcX))
     }
-    if (s.joinType === j.A.APPLY && !(null == (e = s.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void Z(C.NW.string(C.t.HGVrIy));
+    if (s.joinType === j.A.APPLY && !(null == (e = s.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void D(C.NW.string(C.t.HGVrIy));
     i(() => t(U))
-  }, [D, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== v.o3 && E.keywords.length > 0;
+  }, [Z, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== v.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
     message: F ? C.NW.string(C.t.V2G2Ym) : void 0,
     onSaveText: F ? C.NW.string(C.t["qjtt/v"]) : void 0,

@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Q5: () => S,
@@ -143,7 +143,7 @@ function P() {
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(Z, {}), (0, i.jsx)(D, {
+    children: [(0, i.jsx)(D, {}), (0, i.jsx)(Z, {
       guild: e,
       guildTemplate: l
     }), o ? (0, i.jsx)(m.Text, {
@@ -242,7 +242,7 @@ function R(e) {
   })
 }
 
-function Z() {
+function D() {
   let e = (0, d.e7)([E], () => E.name),
     t = (0, d.e7)([E], () => E.description),
     n = (0, d.e7)([E], () => E.error);
@@ -271,7 +271,7 @@ function Z() {
   })
 }
 
-function D(e) {
+function Z(e) {
   let {
     guild: t,
     guildTemplate: n

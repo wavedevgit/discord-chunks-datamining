@@ -51,21 +51,21 @@ function d(e) {
       contentKey: N
     }), t = N);
     let I = _[_.length - 1],
-      P = null,
-      S = (0, s.DQ)(e);
-    C = C || S;
+      S = null,
+      P = (0, s.DQ)(e);
+    C = C || P;
     let Z = function(e, t, n) {
       if (r.V.NON_COLLAPSIBLE.has(t.type));
       else if (t.blocked) return u.ys_.MESSAGE_GROUP_BLOCKED;
       else if (t.ignored) return u.ys_.MESSAGE_GROUP_IGNORED;
       else if ((0, s.P1)(e) && n) return u.ys_.MESSAGE_GROUP_SPAMMER;
       return null
-    }(p, e, S && m);
-    (null !== Z && ([P, I] = (E = v = I, null == v || v.type !== Z ? (O = {
+    }(p, e, P && m);
+    (null !== Z && ([S, I] = (E = v = I, null == v || v.type !== Z ? (O = {
       type: Z,
       content: [],
       key: e.id
-    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != y) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== P ? (j = P, e.isFirstMessageInForumPost(p) || j.content.push({
+    }, _.push(O)) : E = (O = v).content[O.content.length - 1], [O, E])), f === e.id && null != y) ? (null != I && I.type === u.ys_.DIVIDER ? I.unreadId = e.id : null !== S ? (j = S, e.isFirstMessageInForumPost(p) || j.content.push({
       type: u.ys_.DIVIDER,
       unreadId: e.id
     }), j.hasUnread = !0) : e.isFirstMessageInForumPost(p) || _.push({
@@ -99,7 +99,7 @@ function d(e) {
       content: b.topic,
       contentKey: b.startId,
       isSummaryDivider: !0
-    }), null !== P ? (P.content.push(w), w.jumpTarget && (P.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
+    }), null !== S ? (S.content.push(w), w.jumpTarget && (S.hasJumpTarget = !0)) : _.push(w), e.isFirstMessageInForumPost(p) && _.push({
       type: u.ys_.FORUM_POST_ACTION_BAR
     }), null != b && e.id === b.endId && b.count > 1 && _.push({
       type: u.ys_.DIVIDER,

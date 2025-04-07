@@ -36,7 +36,7 @@ function C(e) {
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != x && (s.Z.isViewerClippingAllowedForUser(x.ownerId) || v),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, N = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(N || j) || O || null == C, P = i.useCallback(e => {
+  })), E = s.Z.getSettings().clipsEnabled, N = (null == x ? void 0 : x.ownerId) === h.default.getId(), I = !E || !(N || j) || O || null == C, S = i.useCallback(e => {
     var t, n;
     return (0, r.jsx)(o.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -74,7 +74,7 @@ function C(e) {
       I || ((0, m.v)(n, m.d.CLIP), N ? (0, c.C1)() : (0, c.C1)(C.id))
     },
     disabled: I,
-    iconComponent: P,
+    iconComponent: S,
     label: null == x ? b.NW.string(b.t.eg5qtb) : N || j ? E ? O ? void 0 : b.NW.string(b.t.U4URzM) : b.NW.string(b.t.wSS1yM) : b.NW.string(b.t.aRifJS),
     grow: !1
   })

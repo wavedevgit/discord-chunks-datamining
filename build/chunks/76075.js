@@ -39,20 +39,20 @@ let C = function(e) {
       }
       return r
     }(e, ["guildId", "transitionState"]);
-  let T = (0, l.Dt)(),
-    A = (0, r.e7)([f.Z], () => f.Z.getRequest(C), [C]),
-    y = (0, r.e7)([s.Z], () => s.Z.getGuild(C), [C]),
-    h = (0, r.e7)([u.default], () => {
+  let y = (0, l.Dt)(),
+    T = (0, r.e7)([f.Z], () => f.Z.getRequest(C), [C]),
+    h = (0, r.e7)([s.Z], () => s.Z.getGuild(C), [C]),
+    j = (0, r.e7)([u.default], () => {
       var e;
       return null == (e = u.default.getCurrentUser()) ? void 0 : e.id
     }),
-    P = (0, r.e7)([d.ZP], () => null != h ? d.ZP.getMember(C, h) : null, [h, C]),
-    j = async () => {
+    A = (0, r.e7)([d.ZP], () => null != j ? d.ZP.getMember(C, j) : null, [j, C]),
+    x = async () => {
       var e;
-      if (null != (e = null == y ? void 0 : y.hasFeature(g.oNc.CLAN)) && e && (0, a.Vr)({
+      if (null != (e = null == h ? void 0 : h.hasFeature(g.oNc.CLAN)) && e && (0, a.Vr)({
           guildId: C,
           source: c.Z.CLAN_REAPPLY
-        }), null == P ? void 0 : P.isPending) {
+        }), null == A ? void 0 : A.isPending) {
         try {
           await b.Z.removeGuildJoinRequest(C)
         } catch (e) {
@@ -64,7 +64,7 @@ let C = function(e) {
   return (0, o.jsx)(i.Y0X, {
     size: i.CgR.DYNAMIC,
     transitionState: N,
-    "aria-labelledby": T,
+    "aria-labelledby": y,
     children: (0, o.jsx)(p.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -83,15 +83,15 @@ let C = function(e) {
       }
       return e
     }({}, O), n = n = {
-      headerId: T,
+      headerId: y,
       reapplyText: I.NW.string(I.t.I1LYVl),
-      onReapply: j,
+      onReapply: x,
       confirmText: I.NW.string(I.t.BddRzc),
       onWithdrawApplication: () => {
-        O.onClose(), null == P && (0, m.Z)()
+        O.onClose(), null == A && (0, m.Z)()
       },
-      rejectionReason: null == A ? void 0 : A.rejectionReason,
-      guild: y
+      rejectionReason: null == T ? void 0 : T.rejectionReason,
+      guild: h
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

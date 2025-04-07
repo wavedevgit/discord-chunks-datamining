@@ -31,7 +31,7 @@ function b(e) {
     collapseWhenChecked: j = !0,
     onClick: O,
     disabled: E
-  } = e, N = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, P] = i.useState(!1), S = (0, d.ZP)(), Z = (0, s.wj)(S) || t ? g : m, {
+  } = e, N = (0, a.e7)([p.Z], () => p.Z.useReducedMotion), [I, S] = i.useState(!1), P = (0, d.ZP)(), Z = (0, s.wj)(P) || t ? g : m, {
     width: T = 0,
     ref: A
   } = (0, u.Z)(), {
@@ -54,7 +54,7 @@ function b(e) {
       onChange: function() {
         if (b) {
           let e = !t;
-          P(!0), null == C || C(e)
+          S(!0), null == C || C(e)
         }
         "function" == typeof O && O()
       },

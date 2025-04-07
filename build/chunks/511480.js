@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => B,
@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(354051),
   w = n(347604),
   R = n(203377),
-  Z = n(929834),
-  D = n(981631),
+  D = n(929834),
+  Z = n(981631),
   A = n(388032),
   k = n(131027);
 
@@ -127,7 +127,7 @@ class U extends i.PureComponent {
       isGuildAdmin: t
     } = this.props;
     if (null == e) return;
-    let n = e.hasFeature(D.oNc.DISCOVERABLE);
+    let n = e.hasFeature(Z.oNc.DISCOVERABLE);
     return (0, r.jsxs)(a.hjN, {
       className: k.twoColumnFormSection,
       children: [(0, r.jsxs)("div", {
@@ -396,7 +396,7 @@ class U extends i.PureComponent {
       } = this.props;
       if (null == e) return;
       let t = new Set(e.features);
-      e.hasFeature(D.oNc.DISCOVERABLE) ? t.delete(D.oNc.DISCOVERABLE) : t.add(D.oNc.DISCOVERABLE), N.Z.updateGuild({
+      e.hasFeature(Z.oNc.DISCOVERABLE) ? t.delete(Z.oNc.DISCOVERABLE) : t.add(Z.oNc.DISCOVERABLE), N.Z.updateGuild({
         features: t
       })
     }), W(this, "handleEnableDiscovery", async () => {
@@ -457,12 +457,12 @@ let B = s.ZP.connectStores([_.Z, h.Z, y.ZP, p.ZP, b.default, f.Z], () => {
     errors: t,
     submitting: n,
     guildMetadata: r
-  } = _.Z.getProps(), i = h.Z.can(D.Plq.MANAGE_GUILD, e), s = h.Z.can(D.Plq.ADMINISTRATOR, e), a = null != e ? y.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? p.ZP.getChannels(e.id) : null, o = [];
+  } = _.Z.getProps(), i = h.Z.can(Z.Plq.MANAGE_GUILD, e), s = h.Z.can(Z.Plq.ADMINISTRATOR, e), a = null != e ? y.ZP.getDiscoveryChecklist(e.id) : null, l = null != e ? p.ZP.getChannels(e.id) : null, o = [];
   return null != l && l[p.sH].forEach(e => {
     let {
       channel: t
     } = e;
-    t.type === D.d4z.GUILD_TEXT && o.push({
+    t.type === Z.d4z.GUILD_TEXT && o.push({
       value: t.id,
       label: (0, c.F6)(t, b.default, f.Z, !0)
     })
@@ -475,6 +475,6 @@ let B = s.ZP.connectStores([_.Z, h.Z, y.ZP, p.ZP, b.default, f.Z], () => {
     canManageGuild: i,
     isGuildAdmin: s,
     guildMetadata: r,
-    localeOptions: (0, Z.jb)()
+    localeOptions: (0, D.jb)()
   }
 })(U)

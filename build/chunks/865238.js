@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -45,14 +45,14 @@ function I(e) {
   }
   return e
 }
-let P = e => 1 - Math.pow(1 - e, 3);
+let S = e => 1 - Math.pow(1 - e, 3);
 
-function S(e) {
+function P(e) {
   let {
     channel: t,
     buyer: l,
     onClose: a,
-    dismissibleContent: S
+    dismissibleContent: P
   } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     M(!0)
@@ -69,7 +69,7 @@ function S(e) {
       },
       config: {
         duration: 250,
-        easing: P,
+        easing: S,
         immediate: !k
       }
     }),
@@ -82,11 +82,11 @@ function S(e) {
       animateOnHover: !0
     }),
     B = y.ZP.getName(t.guild_id, t.id, l),
-    F = A && !R,
-    H = t.hdStreamingUntil;
-  if (null == H || null == l || null == T) return null;
-  let G = s()(H).diff(s()(), "hours"),
-    V = S ? O.NW.format(O.t["6LrV9f"], {
+    H = A && !R,
+    F = t.hdStreamingUntil;
+  if (null == F || null == l || null == T) return null;
+  let G = s()(F).diff(s()(), "hours"),
+    V = P ? O.NW.format(O.t["6LrV9f"], {
       username: B,
       num: G,
       helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
@@ -96,7 +96,7 @@ function S(e) {
     }) : O.NW.formatToPlainString(O.t.vNbVXF, {
       username: B
     }),
-    z = R ? O.NW.string(O.t.o7NIjY) : F ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
+    z = R ? O.NW.string(O.t.o7NIjY) : H ? O.NW.string(O.t.r6xhBw) : O.NW.string(O.t.yKw8Dg);
   return null == l || null == T ? null : (0, r.jsxs)(c.animated.div, {
     style: D,
     className: E.banner,
@@ -124,7 +124,7 @@ function S(e) {
             let n = (0, h.s_)(e.resolution, e.frameRate, t);
             return p.Z.setGoLiveSource(n), void a()
           }
-          if (F) return void a();
+          if (H) return void a();
           (0, d.ZDy)(async () => {
             let {
               default: e
@@ -138,7 +138,7 @@ function S(e) {
           [E.actionButton]: !0 !== A
         }),
         children: z
-      }), !F && (0, r.jsx)(d.P3F, {
+      }), !H && (0, r.jsx)(d.P3F, {
         className: E.x,
         onClick: a,
         children: (0, r.jsx)(d.Dio, {

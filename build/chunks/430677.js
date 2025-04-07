@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => _
@@ -62,10 +62,10 @@ let _ = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(y.channelId)), Z = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), {
-    customEmoji: D,
+  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(y.channelId)), D = (0, l.e7)([h.Z], () => h.Z.getGuild(O)), {
+    customEmoji: Z,
     unicodeEmoji: A
-  } = (0, u.Z)(null == (t = y.emoji) ? void 0 : t.id, null == (s = y.emoji) ? void 0 : s.name), k = null == y.emoji || null != D || null != A, W = f.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = y.emoji) ? void 0 : t.id, null == (s = y.emoji) ? void 0 : s.name), k = null == y.emoji || null != Z || null != A, W = f.ZP.getNewMemberActionIconURL({
     channelId: y.channelId,
     icon: y.icon
   }), L = null;
@@ -95,7 +95,7 @@ let _ = function(e) {
       }))
     })
   }, [O, y, I, E, S]);
-  if (null == R || null == Z) return null;
+  if (null == R || null == D) return null;
   let z = null != (C = (0, c.KS)(R)) ? C : o.VL1;
   return (0, r.jsxs)("div", {
     className: x.actionItemContainer,

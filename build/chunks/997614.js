@@ -27,9 +27,9 @@ var r = n(200651),
   E = n(304388),
   N = n(981631),
   I = n(127379),
-  P = n(388032);
+  S = n(388032);
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -78,9 +78,9 @@ function T(e) {
   } = (0, a.j)(), D = t.getGuildId(), {
     mute: W,
     suppress: U
-  } = (0, _.Z)(t), B = (0, l.e7)([x.Z], () => x.Z.isDeaf()), F = W || U || B, H = (0, p.sR)({
-    isSoundboardButtonDisabled: F
-  }), [G, V] = (0, d.cv)(H), {
+  } = (0, _.Z)(t), B = (0, l.e7)([x.Z], () => x.Z.isDeaf()), H = W || U || B, F = (0, p.sR)({
+    isSoundboardButtonDisabled: H
+  }), [G, V] = (0, d.cv)(F), {
     analyticsLocations: z
   } = (0, u.ZP)(), {
     mode: Y
@@ -96,7 +96,7 @@ function T(e) {
   });
 
   function Q() {
-    return W ? P.NW.string(P.t["Ox4/zc"]) : U ? P.NW.string(P.t["+YBKYG"]) : B ? P.NW.string(P.t.X1lQlp) : void 0
+    return W ? S.NW.string(S.t["Ox4/zc"]) : U ? S.NW.string(S.t["+YBKYG"]) : B ? S.NW.string(S.t.X1lQlp) : void 0
   }
 
   function J(e) {
@@ -104,7 +104,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, Z(S({
+      return t => (0, r.jsx)(e, Z(P({
         guildId: D,
         sourceAnalyticsLocations: z
       }, t), {
@@ -130,7 +130,7 @@ function T(e) {
       let {
         closePopout: n
       } = e;
-      return F ? null : (0, r.jsx)(C.Z, {
+      return H ? null : (0, r.jsx)(C.Z, {
         children: (0, r.jsx)(f.Z, {
           guildId: D,
           channel: t,
@@ -143,11 +143,11 @@ function T(e) {
         })
       })
     },
-    children: e => q ? (0, r.jsx)(y.d, Z(S({
+    children: e => q ? (0, r.jsx)(y.d, Z(P({
       themeable: T,
       label: Q(),
       iconComponent: k,
-      disabled: F,
+      disabled: H,
       onContextMenu: J
     }, e), {
       onClick: t => {
@@ -161,11 +161,11 @@ function T(e) {
       },
       color: e.isActive ? K ? "primaryDark" : Y === m.BK.GroupedButtonsRedMic || X ? "green" : void 0 : void 0,
       className: ""
-    })) : (0, r.jsx)(y.Z, Z(S({
+    })) : (0, r.jsx)(y.Z, Z(P({
       themeable: T,
       label: Q(),
       iconComponent: s.KY1,
-      disabled: F,
+      disabled: H,
       onContextMenu: J
     }, e), {
       onClick: t => {

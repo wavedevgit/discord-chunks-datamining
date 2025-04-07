@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function Z(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function Z(e, t) {
   }), e
 }
 
-function D(e) {
+function Z(e) {
   let {
     transitionState: t,
     guild: n,
@@ -170,7 +170,7 @@ class A extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, c.h7j)(s => (0, r.jsx)(D, Z(R({}, s), {
+      (0, c.h7j)(s => (0, r.jsx)(Z, D(R({}, s), {
         guild: e,
         user: t,
         ban: i,
@@ -181,7 +181,7 @@ class A extends i.PureComponent {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, Z(R({}, t), {
+        return t => (0, r.jsx)(e, D(R({}, t), {
           user: this.props.user
         }))
       })

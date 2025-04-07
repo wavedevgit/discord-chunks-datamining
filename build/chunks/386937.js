@@ -1,7 +1,7 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => Z
+  Z: () => D
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -245,7 +245,7 @@ class R extends i.Component {
     }, n))
   }
 }
-let Z = c.ZP.connectStores([_.Z, h.Z, p.Z, j.Z, v.default, N.ZP], () => {
+let D = c.ZP.connectStores([_.Z, h.Z, p.Z, j.Z, v.default, N.ZP], () => {
   let e = p.Z.getGuildId(),
     t = (0, f.I)(e),
     n = null != e ? j.Z.getAppliedGuildBoostsForGuild(e) : null,

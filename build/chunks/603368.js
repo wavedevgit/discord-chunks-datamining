@@ -1,10 +1,9 @@
 /** Chunk was on 15327 **/
 n.d(t, {
-  $0: () => A,
-  j1: () => I,
-  nP: () => O,
-  nj: () => g,
-  pX: () => N
+  j1: () => N,
+  nP: () => I,
+  nj: () => O,
+  pX: () => T
 }), n(388685);
 var r = n(192379),
   l = n(688619),
@@ -19,23 +18,10 @@ var r = n(192379),
   d = n(308083);
 
 function A(e) {
-  let t = a()(e),
-    n = t.get("rgb.r"),
-    r = t.get("rgb.g");
-  return (299 * n + 587 * r + 114 * t.get("rgb.b")) / 1e3 < 128 ? E.TVs.colors.HEADER_PRIMARY.resolve({
-    theme: "dark",
-    saturation: 1
-  }) : E.TVs.colors.HEADER_PRIMARY.resolve({
-    theme: "light",
-    saturation: 1
-  })
-}
-
-function T(e) {
   return new u.Z(e.get("rgb.r"), e.get("rgb.g"), e.get("rgb.b"), e.alpha())
 }
 
-function N(e, t) {
+function T(e, t) {
   var n;
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.S3.Text;
   if (null == e) return;
@@ -65,17 +51,17 @@ function N(e, t) {
     s = a()(l),
     E = a()(t),
     c = (0, _.k8)({
-      colors: [T(s), T(E)],
+      colors: [A(s), A(E)],
       ratio: r,
       saturationFactor: 1
     });
   if (null != c) return a()(c.toHexString())
 }
 
-function I(e, t) {
+function N(e, t) {
   let n = function(e, t) {
     if (null == e) return;
-    let n = N(e, t, o.S3.NonText);
+    let n = T(e, t, o.S3.NonText);
     if (null == n) return;
     let r = .2 > n.luminance() ? n.brighten(.3) : n.darken(.3),
       l = .2 > n.luminance() ? n.brighten(.35) : n.darken(.35);
@@ -87,7 +73,18 @@ function I(e, t) {
   }(e, t);
   if (null == n) return;
   let r = {
-    "--custom-clan-text": A(n["--custom-clan-bg"]).hex()
+    "--custom-clan-text": (function(e) {
+      let t = a()(e),
+        n = t.get("rgb.r"),
+        r = t.get("rgb.g");
+      return (299 * n + 587 * r + 114 * t.get("rgb.b")) / 1e3 < 128 ? E.TVs.colors.HEADER_PRIMARY.resolve({
+        theme: "dark",
+        saturation: 1
+      }) : E.TVs.colors.HEADER_PRIMARY.resolve({
+        theme: "light",
+        saturation: 1
+      })
+    })(n["--custom-clan-bg"]).hex()
   };
   return function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -109,7 +106,7 @@ function I(e, t) {
   }({}, n, r)
 }
 
-function O(e, t) {
+function I(e, t) {
   let [n, l = 1] = t, a = (0, c.ZP)();
   return r.useMemo(() => null != e ? e : n.resolve({
     theme: a,
@@ -117,7 +114,7 @@ function O(e, t) {
   }).hex(), [e, n, l, a])
 }
 
-function g(e, t) {
+function O(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "top left",
     r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : .3,
     l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "50%";

@@ -35,7 +35,7 @@ function j(e) {
     E = (0, a.e7)([m.default], () => m.default.getUser(n.isPrivate() ? n.getRecipientId() : null)),
     N = null != (t = b.ZP.useName(E)) ? t : y.NW.string(y.t.y1Wu2d),
     I = (0, a.e7)([d.Z], () => d.Z.getStickerById(v)),
-    P = i.useCallback(async () => {
+    S = i.useCallback(async () => {
       if (null == l || "" === l) try {
         await c.Z.sendGreetMessage(n.id, v), g.default.track(C.rMx.DM_EMPTY_ACTION, {
           channel_id: n.id,
@@ -47,7 +47,7 @@ function j(e) {
         e.ok || 429 !== e.status || j(y.NW.string(y.t["Whhv4+"]))
       }
     }, [n.id, n.type, l]),
-    S = y.NW.formatToPlainString(y.t.m0zYbW, {
+    P = y.NW.formatToPlainString(y.t.m0zYbW, {
       username: N
     }),
     Z = null != l && "" !== l ? (0, r.jsx)(s.Text, {
@@ -61,14 +61,14 @@ function j(e) {
     children: [(0, r.jsxs)(s.P3F, {
       className: null != l && "" !== l ? x.compactButtonDisabled : x.compactButton,
       "aria-label": y.NW.string(y.t.pJObYG),
-      onClick: P,
+      onClick: S,
       children: [(0, r.jsx)(p.Z, {
         sticker: I,
         size: 24
       }), (0, r.jsx)(s.Text, {
         className: x.text,
         variant: "text-md/medium",
-        children: S
+        children: P
       })]
     }), Z]
   }) : (0, r.jsxs)("div", {
@@ -78,9 +78,9 @@ function j(e) {
       size: 160
     }), (0, r.jsx)(s.zxk, {
       className: x.button,
-      onClick: P,
+      onClick: S,
       disabled: !!l,
-      children: S
+      children: P
     }), Z]
   })
 }

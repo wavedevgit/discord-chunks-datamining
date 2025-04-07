@@ -41,7 +41,7 @@ function v(e) {
       warningType: h.pj.LIKELY_ATO,
       cta: e
     }), E()
-  }, P = () => {
+  }, S = () => {
     (0, o.ZDy)(async () => {
       let {
         default: e
@@ -113,7 +113,7 @@ function v(e) {
       text: x.NW.string(x.t.tC1pvL),
       color: o.zxk.Colors.BRAND,
       onclick: () => {
-        P(), (0, f.qc)({
+        S(), (0, f.qc)({
           channelId: t,
           warningId: v,
           senderId: j,

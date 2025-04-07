@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 let r;
 n.d(t, {
-  Z: () => F
+  Z: () => H
 }), n(388685), n(781311), n(539854), n(642613);
 var i, l, o, a = n(392711),
   s = n.n(a),
@@ -24,11 +24,11 @@ let j = !1,
   E = 0,
   N = [],
   I = !1,
-  P = new Set,
-  S = null;
+  S = new Set,
+  P = null;
 
 function Z() {
-  O = "", E = 0, N = [], P = new Set, j = !1, S = null
+  O = "", E = 0, N = [], S = new Set, j = !1, P = null
 }
 
 function T(e) {
@@ -37,7 +37,7 @@ function T(e) {
 
 function A() {
   if (!j) return !1;
-  let e = b.Z.getChannel(S);
+  let e = b.Z.getChannel(P);
   if (0 === O.trim().length) {
     var t;
     let n;
@@ -114,7 +114,7 @@ function M() {
 
 function L(e) {
   if (e.key !== v.vTt) return !1;
-  j = !0, w(), r = M(), S = null, T("")
+  j = !0, w(), r = M(), P = null, T("")
 }
 
 function D(e) {
@@ -136,7 +136,7 @@ class U extends(i = c.ZP.Store) {
     return I
   }
   getSelectedUsers() {
-    return P
+    return S
   }
   getQuery() {
     return O
@@ -145,7 +145,7 @@ class U extends(i = c.ZP.Store) {
     return {
       query: O,
       selectedRow: E,
-      selectedUsers: P,
+      selectedUsers: S,
       results: N,
       hasFriends: I
     }
@@ -168,18 +168,18 @@ let B = new U(u.Z, {
       } = e;
       if (null != t) return !1;
       let r = j;
-      return Z(), j = r, S = n, A()
+      return Z(), j = r, P = n, A()
     },
     MODAL_PUSH: L,
     SHOW_ACTION_SHEET: L,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_OPEN: function(e) {
-      j = !0, w(), r = M(), S = e.channelId, T("")
+      j = !0, w(), r = M(), P = e.channelId, T("")
     },
     MODAL_POP: D,
     HIDE_ACTION_SHEET: D,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_CLOSE: W,
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_QUERY: function(e) {
-      S = e.channelId, T(e.query)
+      P = e.channelId, T(e.query)
     },
     PRIVATE_CHANNEL_RECIPIENTS_INVITE_SELECT: function(e) {
       E = e.row
@@ -188,13 +188,13 @@ let B = new U(u.Z, {
       let {
         userId: t
       } = e;
-      P.add(t), P = new Set(P)
+      S.add(t), S = new Set(S)
     },
     PRIVATE_CHANNEL_RECIPIENTS_REMOVE_USER: function(e) {
       let {
         userId: t
       } = e;
-      P.delete(t), P = new Set(P)
+      S.delete(t), S = new Set(S)
     }
   }),
-  F = B
+  H = B

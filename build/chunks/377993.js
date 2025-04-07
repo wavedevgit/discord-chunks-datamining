@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(51144),
   N = n(998502),
   I = n(276264),
-  P = n(981631),
-  S = n(388032),
+  S = n(981631),
+  P = n(388032),
   Z = n(11847);
 
 function T(e) {
@@ -97,7 +97,7 @@ function R(e) {
           decoration: "never"
         })),
         n = "<@".concat(t.id, ">");
-      j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+      j.S.dispatchToLastSubscribed(S.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: n
       }), c.Z.startTyping(a.id)
@@ -127,7 +127,7 @@ function R(e) {
         user: t,
         currentUser: f,
         isOwner: t.id === a.ownerId,
-        ownerTooltipText: S.NW.string(S.t["MRXZ+/"]),
+        ownerTooltipText: P.NW.string(P.t["MRXZ+/"]),
         shouldAnimateStatus: w,
         isTyping: p,
         status: u,
@@ -168,10 +168,10 @@ function M(e) {
     for (let t of e) {
       var r, i, l;
       C.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-        status: null != (i = _.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
+        status: null != (i = _.Z.getStatus(t.id)) ? i : S.Skl.OFFLINE,
         activities: null != (l = _.Z.getActivities(t.id)) ? l : A
       } : n[t.id] = {
-        status: P.Skl.OFFLINE,
+        status: S.Skl.OFFLINE,
         activities: A
       }
     }
@@ -189,7 +189,7 @@ function M(e) {
     }
   }, [t], k);
   i.useEffect(() => {
-    v.default.track(P.rMx.MEMBER_LIST_VIEWED, {
+    v.default.track(S.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
@@ -207,7 +207,7 @@ function M(e) {
           fade: !0,
           children: [(0, r.jsxs)(f.Z, {
             className: Z.membersGroup,
-            children: ["".concat(S.NW.string(S.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
+            children: ["".concat(P.NW.string(P.t["9Oq93t"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
               type: p.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(R, {

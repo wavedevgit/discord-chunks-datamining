@@ -1,18 +1,18 @@
 /** Chunk was on 54030 **/
 n.r(t), n.d(t, {
-  default: () => I,
-  useOverlayInitialFocus: () => O
+  default: () => O,
+  useOverlayInitialFocus: () => I
 }), n(388685);
 var r = n(200651),
   o = n(192379),
-  i = n(442837),
-  a = n(13245),
+  a = n(442837),
+  i = n(13245),
   c = n(615287),
   l = n(493773),
   s = n(522474),
   u = n(238246),
-  d = n(355863),
-  _ = n(944486),
+  _ = n(355863),
+  d = n(944486),
   f = n(358085);
 n(606206);
 var p = n(998502),
@@ -24,12 +24,12 @@ var m = n(554370),
   y = n(757744),
   v = n(981631);
 
-function O(e, t) {
-  let n = (0, i.e7)([s.Z], () => {
+function I(e, t) {
+  let n = (0, a.e7)([s.Z], () => {
       var t;
       return null != (t = s.Z.getWindow(e)) ? t : window
     }),
-    r = (0, i.e7)([h.ZP], () => {
+    r = (0, a.e7)([h.ZP], () => {
       let e = h.ZP.getFocusedPID();
       return !f.isPlatformEmbedded || null != e && e !== b.UNSET_PID
     }),
@@ -49,7 +49,7 @@ function O(e, t) {
   let y = o.useCallback(() => {
     n.requestAnimationFrame(() => {
       try {
-        a.Z.successfullyShown((0, b.getPID)()), p.ZP.showInactive(e)
+        i.Z.successfullyShown((0, b.getPID)()), p.ZP.showInactive(e)
       } catch (t) {
         t.message.includes("IPC") && setTimeout(() => {
           p.ZP.showInactive(e)
@@ -63,22 +63,22 @@ function O(e, t) {
     var e;
     u && y();
     let n = null != (e = h.ZP.getFocusedPID()) ? e : (0, b.getPID)(),
-      r = null != _.Z.getVoiceChannelId();
-    a.Z.track(v.rMx.OVERLAY_INITIALIZED, {
+      r = null != d.Z.getVoiceChannelId();
+    i.Z.track(v.rMx.OVERLAY_INITIALIZED, {
       voice_widget_connected: r,
       text_widget_connected: h.ZP.isPinned(v.Odu.TEXT),
       overlay_render_method: c.gl[g.default.getOverlayMethod(n)],
-      unpinned_widget_types: d.Z.getAllUnpinnedPinnedWidgets(t)
+      unpinned_widget_types: _.Z.getAllUnpinnedPinnedWidgets(t)
     })
   }), u
 }
 
-function I(e) {
+function O(e) {
   let {
     withTitleBar: t,
     windowKey: n
   } = e;
-  return O(n, y.$) ? (0, r.jsx)(u.Z, {
+  return I(n, y.$) ? (0, r.jsx)(u.Z, {
     withTitleBar: t,
     windowKey: n,
     title: "Discord Overlay",

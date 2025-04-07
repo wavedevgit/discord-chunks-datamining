@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(979651),
   N = n(585483),
   I = n(63063),
-  P = n(665149),
-  S = n(981631),
+  S = n(665149),
+  P = n(981631),
   Z = n(921944),
   T = n(65154),
   A = n(388032),
@@ -44,10 +44,10 @@ function R(e, t, n) {
 }
 class k extends i.PureComponent {
   componentDidMount() {
-    N.S.subscribe(S.CkL.CALL_START, this.handleVoiceClick)
+    N.S.subscribe(P.CkL.CALL_START, this.handleVoiceClick)
   }
   componentWillUnmount() {
-    N.S.unsubscribe(S.CkL.CALL_START, this.handleVoiceClick)
+    N.S.unsubscribe(P.CkL.CALL_START, this.handleVoiceClick)
   }
   renderVideoCallButton() {
     let e, t, {
@@ -59,11 +59,11 @@ class k extends i.PureComponent {
       mode: c,
       isProvisional: u
     } = this.props;
-    if (n || i && c === S.WtW.VOICE) return null;
+    if (n || i && c === P.WtW.VOICE) return null;
     let d = s.isManaged(),
       p = null,
       h = !1;
-    return u ? (h = !0, p = A.NW.string(A.t.izMR7u), e = a.ua7.Colors.RED) : v.Z.supports(T.AN.VIDEO) ? o ? (p = A.NW.string(A.t.PHzjvb), e = a.ua7.Colors.RED, h = !0) : i && c === S.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = d ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.W68MhI)) : (t = this.handleStartVideoCall, p = d ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.oCqlGB)) : (h = !0, t = this.handleBrowserNotSupported, p = A.NW.string(A.t.UVpg3d)), (0, r.jsx)(P.ZP.Icon, {
+    return u ? (h = !0, p = A.NW.string(A.t.izMR7u), e = a.ua7.Colors.RED) : v.Z.supports(T.AN.VIDEO) ? o ? (p = A.NW.string(A.t.PHzjvb), e = a.ua7.Colors.RED, h = !0) : i && c === P.WtW.VIDEO ? (t = this.handleJoinVideoCall, p = d ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.W68MhI)) : (t = this.handleStartVideoCall, p = d ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.oCqlGB)) : (h = !0, t = this.handleBrowserNotSupported, p = A.NW.string(A.t.UVpg3d)), (0, r.jsx)(S.ZP.Icon, {
       icon: a.Odl,
       onClick: t,
       disabled: h || l,
@@ -87,7 +87,7 @@ class k extends i.PureComponent {
     let f = u.isManaged(),
       g = !1;
     h ? (g = !0, e = A.NW.string(A.t.izMR7u), t = a.ua7.Colors.RED) : s ? (e = f ? A.NW.string(A.t.LW2Gho) : A.NW.string(A.t.rF7lNz), t = a.ua7.Colors.RED, g = !0) : c ? (e = A.NW.string(A.t.PHzjvb), t = a.ua7.Colors.RED, g = !0) : e = l ? f ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.fdEeb2) : f ? A.NW.string(A.t.S0W8Z2) : A.NW.string(A.t.focH1t);
-    let _ = (0, r.jsx)(P.ZP.Icon, {
+    let _ = (0, r.jsx)(S.ZP.Icon, {
       icon: a.Csw,
       onClick: this.handleVoiceClick,
       disabled: g,
@@ -122,7 +122,7 @@ class k extends i.PureComponent {
                   color: "always-white",
                   children: A.NW.string(A.t.xAW71d)
                 }), (0, r.jsx)(a.eee, {
-                  href: I.Z.getArticleURL(S.BhN.ACTIVITIES),
+                  href: I.Z.getArticleURL(P.BhN.ACTIVITIES),
                   children: A.NW.string(A.t.hvVgAQ)
                 })]
               }),
@@ -191,10 +191,10 @@ function M(e) {
     notFriend: C,
     isBlocked: v
   } = (0, l.cj)([j.Z], () => ({
-    notFriend: n.type === S.d4z.DM && null != _ && !j.Z.isFriend(_),
-    isBlocked: n.type === S.d4z.DM && null != _ && j.Z.isBlocked(_)
-  })), N = (0, l.e7)([O.default], () => O.default.getUser(_)), I = (0, u.bp)(), P = [], Z = (0, p.Z)(n.id), T = (0, l.e7)([x.Z], () => x.Z.hasLayers());
-  Z && !T && P.push(o.z.ACTIVITY_GDM_CALL_TOOLTIP);
+    notFriend: n.type === P.d4z.DM && null != _ && !j.Z.isFriend(_),
+    isBlocked: n.type === P.d4z.DM && null != _ && j.Z.isBlocked(_)
+  })), N = (0, l.e7)([O.default], () => O.default.getUser(_)), I = (0, u.bp)(), S = [], Z = (0, p.Z)(n.id), T = (0, l.e7)([x.Z], () => x.Z.hasLayers());
+  Z && !T && S.push(o.z.ACTIVITY_GDM_CALL_TOOLTIP);
   let [A, w] = i.useState(!1);
   return (i.useEffect(() => {
     let e = setTimeout(() => {
@@ -213,7 +213,7 @@ function M(e) {
     appContext: I,
     canShowTooltip: A,
     canShowActivityGdmTooltip: Z,
-    dismissibleContentTypes: P,
+    dismissibleContentTypes: S,
     useReducedMotion: f
   })
 }

@@ -27,8 +27,8 @@ var r, i = n(200651),
   E = n(367907),
   N = n(43267),
   I = n(933557),
-  P = n(600164),
-  S = n(313201),
+  S = n(600164),
+  P = n(313201),
   Z = n(366980),
   T = n(703656),
   A = n(93127),
@@ -41,8 +41,8 @@ var r, i = n(200651),
   W = n(306680),
   U = n(699516),
   B = n(246946),
-  F = n(594174),
-  H = n(626135),
+  H = n(594174),
+  F = n(626135),
   G = n(572004),
   V = n(585483),
   z = n(823379),
@@ -106,18 +106,18 @@ function el(e, t) {
   }
   return i
 }
-let eo = (0, S.hQ)(),
-  ea = (0, S.hQ)();
+let eo = (0, P.hQ)(),
+  ea = (0, P.hQ)();
 
 function es(e) {
   let {
     className: t,
     children: n
   } = e;
-  return (0, i.jsxs)(P.Z, {
-    align: P.Z.Align.CENTER,
-    justify: P.Z.Justify.CENTER,
-    direction: P.Z.Direction.VERTICAL,
+  return (0, i.jsxs)(S.Z, {
+    align: S.Z.Align.CENTER,
+    justify: S.Z.Justify.CENTER,
+    direction: S.Z.Direction.VERTICAL,
     className: a()(ee.errorState, t),
     children: [(0, i.jsx)("div", {
       className: a()(ee.errorStateIcon, et.marginBottom20)
@@ -202,7 +202,7 @@ class ed extends(r = l.PureComponent) {
     } = this.props;
     m.Z.wait(() => y.Z.open(null == e ? void 0 : e.id));
     let t = (0, E.v_)(e);
-    H.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
+    F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
@@ -245,7 +245,7 @@ class ed extends(r = l.PureComponent) {
   getMaxParticipants() {
     let {
       channel: e
-    } = this.props, t = F.default.getCurrentUser();
+    } = this.props, t = H.default.getCurrentUser();
     return null != t && t.isStaff() ? J.p3w : null != e && e.userLimit > 0 ? e.userLimit : J.pAY
   }
   getRemaining() {
@@ -313,9 +313,9 @@ class ed extends(r = l.PureComponent) {
     if (!n || this.isNotFriends()) return null;
     let a = [];
     return o.forEach(e => {
-      let t = F.default.getUser(e);
+      let t = H.default.getUser(e);
       null != t && a.push(q.ZP.getName(t))
-    }), (0, i.jsxs)(P.Z, {
+    }), (0, i.jsxs)(S.Z, {
       className: ee.searchBar,
       children: [(0, i.jsx)(j.ZP, {
         ref: this.searchBarRef,
@@ -346,8 +346,8 @@ class ed extends(r = l.PureComponent) {
     let e = null != this.scrollerRef.current && this.state.separator,
       t = this.isNotFriends() ? $.NW.string($.t.Xjlbvr) : $.NW.string($.t.CdNhGR);
     return (0, i.jsxs)(f.xBx, {
-      direction: P.Z.Direction.VERTICAL,
-      align: P.Z.Align.STRETCH,
+      direction: S.Z.Direction.VERTICAL,
+      align: S.Z.Align.STRETCH,
       className: ee.header,
       separator: e,
       children: [p.tq ? this.renderMobileCloseButton() : null, (0, i.jsx)(f.X6q, {
@@ -366,7 +366,7 @@ class ed extends(r = l.PureComponent) {
     if (this.isNotFriends()) {
       let t = null != e ? e.getRecipientId() : null;
       if (null == t) throw Error("no recipient in DM");
-      let n = F.default.getUser(t),
+      let n = H.default.getUser(t),
         r = null != n ? n.username : "",
         l = null != n && U.Z.getRelationshipType(n.id) === J.OGo.PENDING_OUTGOING;
       return (0, i.jsxs)(es, {
@@ -598,7 +598,7 @@ class ed extends(r = l.PureComponent) {
         channel: t
       } = this.props, n = (0, E.v_)(t);
       y.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        H.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
+        F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -628,7 +628,7 @@ class ed extends(r = l.PureComponent) {
         } = this.props,
         r = (0, E.v_)(n),
         i = !0;
-      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), H.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -645,7 +645,7 @@ class ed extends(r = l.PureComponent) {
           if (e.isDM() && n !== e.id) return void g.Z.call(n, !1, !0);
           g.Z.ring(n, t)
         }
-      }), H.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      }), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: !0,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -684,7 +684,7 @@ class ed extends(r = l.PureComponent) {
         this.setState({
           copied: !1
         })
-      }, 1e3), H.default.track(J.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), F.default.track(J.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -728,7 +728,7 @@ function eh(e) {
   l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, C), () => {
     V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, C)
   }), [m, C]);
-  let y = (0, h.e7)([F.default], () => F.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  let y = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
   }, []), null != (t = null == y ? void 0 : y.bot) && t || null != (n = null == y ? void 0 : y.isProvisional) && n) ? null : (0, i.jsx)(f.yRy, {

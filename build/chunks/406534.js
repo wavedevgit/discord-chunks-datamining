@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(765104),
   N = n(122707),
   I = n(779836),
-  P = n(23750),
-  S = n(496675),
+  S = n(23750),
+  P = n(496675),
   Z = n(306680),
   T = n(944486),
   A = n(594174),
@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(481369),
   U = n(186877),
   B = n(294218),
-  F = n(534469),
-  H = n(993397),
+  H = n(534469),
+  F = n(993397),
   G = n(511010),
   V = n(524444),
   z = n(977391),
@@ -88,7 +88,7 @@ let en = i.memo(function(e) {
     compact: o,
     isGroupStart: l,
     channel: n,
-    message: new P.ZP({
+    message: new S.ZP({
       id: t.id,
       key: "pending-upload-".concat(t.id),
       type: Q.uaV.DEFAULT,
@@ -161,8 +161,8 @@ function er(e) {
     eN = (0, _.Z)(f.id);
   (0, q.Z)();
   let eI = null,
-    eP = [],
-    eS = eo.map((e, t) => {
+    eS = [],
+    eP = eo.map((e, t) => {
       if (e.type === Q.ys_.DIVIDER) {
         var n, i;
         let l = null != e.unreadId;
@@ -186,7 +186,7 @@ function er(e) {
       }, "forum-post-action-bar-".concat(f.id));
       if (e.type === Q.ys_.MESSAGE_GROUP_BLOCKED || e.type === Q.ys_.MESSAGE_GROUP_IGNORED || e.type === Q.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(H.Z, {
+        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(F.Z, {
           unreadId: X.j1,
           messages: e,
           channel: f,
@@ -195,11 +195,11 @@ function er(e) {
         }, e.key)
       }
       if (null != eu && eu > e.content.timestamp.getTime() * R.Z.Millis.SECOND) return;
-      let l = S.Z.can(Q.Plq.CREATE_INSTANT_INVITE, f);
+      let l = P.Z.can(Q.Plq.CREATE_INSTANT_INVITE, f);
       if ((0, L.Z)(e.content, l)) return;
       e.type === Q.ys_.MESSAGE && null == eI && (eI = e);
       let o = e.groupId === (null == eI ? void 0 : eI.groupId) ? eI.content.id : e.groupId,
-        a = e.type === Q.ys_.THREAD_STARTER_MESSAGE ? F.Ru : F.ZP;
+        a = e.type === Q.ys_.THREAD_STARTER_MESSAGE ? H.Ru : H.ZP;
       return (0, r.jsx)(a, {
         compact: el,
         channel: f,
@@ -211,14 +211,14 @@ function er(e) {
         renderContentOnly: eN
       }, e.content.id)
     });
-  eP.push(...eS);
+  eS.push(...eP);
   let eZ = eo[eo.length - 1];
   if (null != ef && ea.forEach((e, t) => {
-      let n = 0 === t && (0, D.J)(f, eZ, new P.ZP({
+      let n = 0 === t && (0, D.J)(f, eZ, new S.ZP({
         type: Q.uaV.DEFAULT,
         author: ef
       }));
-      eP.push((0, r.jsx)(en, {
+      eS.push((0, r.jsx)(en, {
         file: e,
         channel: f,
         user: ef,
@@ -226,7 +226,7 @@ function er(e) {
         compact: el
       }, "upload-".concat(e.id)))
     }), B.hasMoreBefore && null == eu) {
-    B.length > 0 && eP.unshift((0, r.jsx)("div", {
+    B.length > 0 && eS.unshift((0, r.jsx)("div", {
       style: {
         height: X.D4,
         flex: "0 0 auto"
@@ -235,16 +235,16 @@ function er(e) {
     let {
       useReducedMotion: e
     } = u.Z;
-    (e && em() || !e) && eP.unshift((0, r.jsx)(z.ZP, ee({
+    (e && em() || !e) && eS.unshift((0, r.jsx)(z.ZP, ee({
       compact: el
     }, ec), "has-more"))
   }
-  if (B.hasMoreBefore && null == eu || eP.unshift((0, r.jsx)(m.Z, {
+  if (B.hasMoreBefore && null == eu || eS.unshift((0, r.jsx)(m.Z, {
       channel: f,
       showingBanner: ed
-    }, "empty-message")), B.hasMoreAfter && eP.push((0, r.jsx)(z.ZP, ee({
+    }, "empty-message")), B.hasMoreAfter && eS.push((0, r.jsx)(z.ZP, ee({
       compact: el
-    }, ec), "has-more-after")), !ed && eg && em() && eP.push((0, r.jsx)(Y.Z, {
+    }, ec), "has-more-after")), !ed && eg && em() && eS.push((0, r.jsx)(Y.Z, {
       channel: f
     })), er > 0 && ei && em()) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(f.id),
@@ -387,7 +387,7 @@ function er(e) {
     })
   }
   return {
-    channelStreamMarkup: eP,
+    channelStreamMarkup: eS,
     newMessagesBar: i,
     jumpToPresentBar: s,
     forumPostActionBar: eE,

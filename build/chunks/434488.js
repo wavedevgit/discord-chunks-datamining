@@ -27,9 +27,9 @@ var r = n(200651),
   E = n(388032),
   N = n(413384),
   I = n(359165),
-  P = n(334732);
+  S = n(334732);
 
-function S(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -136,7 +136,7 @@ function A(e) {
             }
             return i
           }(e, ["onClick"]);
-          return (0, r.jsx)(c.P3F, Z(S({}, n), {
+          return (0, r.jsx)(c.P3F, Z(P({}, n), {
             className: N.clickableTile,
             onClick: () => {
               null == t || t(), p()
@@ -201,7 +201,7 @@ function w(e) {
       let {
         default: e
       } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
-      return n => (0, r.jsx)(e, Z(S({}, n), {
+      return n => (0, r.jsx)(e, Z(P({}, n), {
         guild: l,
         channel: t,
         source: O.t4x.ACTIVITY_ENTRY_POINT_TILE
@@ -228,7 +228,7 @@ function w(e) {
       children: e => (0, r.jsxs)(j.Z, {
         className: o()(N.root, N.singleUserRoot, e),
         children: [s > 400 && !p ? (0, r.jsx)("img", {
-          src: P,
+          src: S,
           className: N.art,
           alt: E.NW.string(E.t["3Y9xdH"])
         }) : (0, r.jsx)("img", {
@@ -297,7 +297,7 @@ function R(e) {
     {
       analyticsLocations: I
     } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_SUGGESTION),
-    S = i.useMemo(() => ({
+    P = i.useMemo(() => ({
       channel: t,
       type: "channel"
     }), [t]);
@@ -307,7 +307,7 @@ function R(e) {
       className: N.root,
       children: [s > 480 && !f ? (0, r.jsx)("img", {
         className: N.art,
-        src: P,
+        src: S,
         alt: E.NW.string(E.t["3Y9xdH"])
       }) : null, s > 300 ? (0, r.jsx)(c.Text, {
         className: N.heading,
@@ -318,7 +318,7 @@ function R(e) {
           [N.activitiesContainerSmol]: s <= 300
         }),
         children: y.map(e => (0, r.jsx)(h.Y, {
-          context: S,
+          context: P,
           activityItem: e,
           aspectRatio: h.Y.AspectRatio.SIXTEEN_BY_NINE,
           animatedDivClass: N.activitySuggestion,

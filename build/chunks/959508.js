@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => C
@@ -41,8 +41,8 @@ function C(e) {
     onPromptDragReset: P
   } = e, {
     dropdownsAllowed: w
-  } = (0, m.Ug)(n.id), R = (0, l.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
-    drag: D,
+  } = (0, m.Ug)(n.id), R = (0, l.e7)([h.Z], () => h.Z.editedDefaultChannelIds), D = w ? j.qm : j.M$, {
+    drag: Z,
     dragSourcePosition: A,
     drop: k,
     setIsDraggable: W
@@ -77,7 +77,7 @@ function C(e) {
         [_.dropIndicatorAfter]: null != A && x > A,
         [_.containerFocused]: U
       }),
-      ref: e => D(k(e)),
+      ref: e => Z(k(e)),
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
         onMouseEnter: () => W(!0),
@@ -129,7 +129,7 @@ function C(e) {
         [_.dropIndicatorAfter]: null != A && x > A,
         [_.containerFocused]: U
       }),
-      ref: e => D(k(e)),
+      ref: e => Z(k(e)),
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
         onMouseEnter: () => W(!0),
@@ -166,10 +166,10 @@ function C(e) {
         color: "text-muted",
         children: H ? N.NW.formatToPlainString(N.t.AbvhZG, {
           count: s.options.length,
-          total: Z
+          total: D
         }) : N.NW.formatToPlainString(N.t.b7VxYW, {
           count: s.options.length,
-          total: Z
+          total: D
         })
       }), (0, r.jsx)(y, {
         guild: n,

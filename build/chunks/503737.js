@@ -1,6 +1,6 @@
-/** Chunk was on 80137 **/
+/** Chunk was on 52212 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -30,12 +30,12 @@ function u(e) {
   return e
 }
 let d = "ActivityInviteManager",
-  p = () => {
+  _ = () => {
     o.Z.dispatch({
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class _ extends s.Z {
+class p extends s.Z {
   _initialize() {
     o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -47,7 +47,7 @@ class _ extends s.Z {
       activity: t,
       isPrivate: o,
       context: s
-    } = e, _ = s === a.IlC.POPOUT ? i.u1M : i.z1l;
+    } = e, p = s === a.IlC.POPOUT ? i.u1M : i.z1l;
     o ? (0, i.h7j)(e => (0, r.jsx)(l.default, u({
       title: c.NW.formatToPlainString(c.t["2tN7io"], {
         name: t.name
@@ -55,21 +55,21 @@ class _ extends s.Z {
       body: c.NW.string(c.t.MAxtkp),
       confirmText: c.NW.string(c.t.BddRzc)
     }, e)), {
-      onCloseCallback: p,
+      onCloseCallback: _,
       modalKey: d
-    }, _) : (0, i.ZDy)(async () => {
+    }, p) : (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("79921").then(n.bind(n, 699099));
       return t => (0, r.jsx)(e, u({}, t))
     }, {
-      onCloseCallback: p,
+      onCloseCallback: _,
       modalKey: d,
-      contextKey: _
+      contextKey: p
     })
   }
   handleModalClose(e) {
     (0, i.Mr3)(d)
   }
 }
-let f = new _
+let h = new p

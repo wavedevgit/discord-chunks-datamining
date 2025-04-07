@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   P: () => C
@@ -45,7 +45,7 @@ function v(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !C && !w && !y, Z = (0, h.Dj)({
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !C && !w && !y, D = (0, h.Dj)({
     guildId: t,
     location: "widget settings"
   });
@@ -54,7 +54,7 @@ function v(e) {
   }, [O, t]), i.useEffect(() => {
     g()
   }, [t, g]);
-  let D = i.useCallback(async e => {
+  let Z = i.useCallback(async e => {
     P(!0), await (0, b.c)(t, e, I), P(!1)
   }, [I, t]);
   return O ? (0, r.jsxs)("div", {
@@ -62,13 +62,13 @@ function v(e) {
       disabled: T,
       value: y,
       hideBorder: !0,
-      onChange: D,
+      onChange: Z,
       children: N.NW.string(N.t.NR6hub)
     }), R ? (0, r.jsx)(a.xv, {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: _.subtext,
-      children: Z ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
+      children: D ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
     }) : null, y ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: _.divider

@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => H
+  Z: () => F
 });
 var r = n(200651),
   i = n(192379),
@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(7782),
   N = n(967128),
   I = n(320781),
-  P = n(269203),
-  S = n(86863),
+  S = n(269203),
+  P = n(86863),
   Z = n(558756),
   T = n(753898),
   A = n(734386),
@@ -42,7 +42,7 @@ var r = n(200651),
   U = n(906667),
   B = n(20493);
 
-function F(e) {
+function H(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -65,7 +65,7 @@ function F(e) {
   })
 }
 
-function H(e) {
+function F(e) {
   var t, n;
   let {
     channel: p,
@@ -79,7 +79,7 @@ function H(e) {
     canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), M = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
-    systemDMRedesignEnabled: H
+    systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
@@ -102,7 +102,7 @@ function H(e) {
       }))
     }, [M, x, p, I]), i.useEffect(() => {
       (null == I ? void 0 : I.bot) && z === y.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return H ? (0, r.jsx)(w.Z, {
+    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(T.Z, {
     channel: p,
@@ -116,7 +116,7 @@ function H(e) {
         className: U.button,
         channel: p,
         user: I
-      }), (0, r.jsx)(S.n, {
+      }), (0, r.jsx)(P.n, {
         className: U.button,
         user: I,
         application: G,
@@ -156,7 +156,7 @@ function H(e) {
         children: W.NW.string(W.t.M8Ao6O)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(P.Z, {
+    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(S.Z, {
     channel: p
   });
   else return (0, r.jsx)(T.Z, {
@@ -165,7 +165,7 @@ function H(e) {
       name: C
     })
   });
-  return k ? (0, r.jsx)(F, {
+  return k ? (0, r.jsx)(H, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(N.ZP, {

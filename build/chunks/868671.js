@@ -35,12 +35,12 @@ function v(e) {
   } = e, [O, E] = r.useState(!1), {
     requestId: N,
     entries: I,
-    impressionCappedEntryIds: P,
-    hasLeaderboardEntry: S
+    impressionCappedEntryIds: S,
+    hasLeaderboardEntry: P
   } = (0, m.Z)(v), Z = (0, i.e7)([p.Z], () => p.Z.hidden), T = (0, i.e7)([c.Z], () => c.Z.isFocused()), A = (0, i.e7)([a.Z], () => a.Z.getChannel(v)), w = (0, i.e7)([s.Z], () => s.Z.getGuild(j), [j]), R = (0, h.E)(w), k = null != R && R && (null == A ? void 0 : A.isForumChannel()) === !1, [M, L, D, W] = r.useMemo(() => {
     let e;
     if (null == I || 0 === I.length || null == N || !k) return [t, n, x];
-    let r = O ? I.length : S ? 4 : 3,
+    let r = O ? I.length : P ? 4 : 3,
       i = I.slice(0, r);
     e = Z ? [{
       type: o.so.HIDDEN_CONTENT_INVENTORY
@@ -74,8 +74,8 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, I, O, t, j, N, n, x, Z, k, S]), U = r.useRef(0), B = r.useRef(I), F = r.useRef(), H = r.useRef({
-    impressionCappedEntryIds: P
+  }, [v, I, O, t, j, N, n, x, Z, k, P]), U = r.useRef(0), B = r.useRef(I), H = r.useRef(), F = r.useRef({
+    impressionCappedEntryIds: S
   }), G = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
@@ -85,23 +85,23 @@ function v(e) {
   return r.useEffect(() => {
     B.current = I
   }, [I]), r.useEffect(() => {
-    H.current = {
-      impressionCappedEntryIds: P
+    F.current = {
+      impressionCappedEntryIds: S
     }
-  }, [P]), r.useEffect(() => (U.current = 0, F.current = Date.now(), () => {
+  }, [S]), r.useEffect(() => (U.current = 0, H.current = Date.now(), () => {
     var e, t;
-    if (null == N || null == F.current || Date.now() - F.current < 3e3) return;
+    if (null == N || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null != (t = null == (e = B.current) ? void 0 : e.map(e => e.id)) ? t : [],
       r = n.slice(0, U.current);
     !Z && T && k && ((0, f.e)(C.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: N,
-      first_shown_at: F.current,
+      first_shown_at: H.current,
       item_ids: r,
       surface_type: b.Kd.GUILD_MEMBER_LIST,
       channel_id: v,
       guild_id: j,
       all_item_ids: n,
-      impression_capped_item_ids: [...H.current.impressionCappedEntryIds]
+      impression_capped_item_ids: [...F.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r

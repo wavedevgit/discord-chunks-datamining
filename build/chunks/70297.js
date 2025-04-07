@@ -1,23 +1,23 @@
 /** Chunk was on 58121 **/
-t.d(n, {
+n.d(t, {
   Z: () => _,
   q: () => x
 });
-var r = t(200651);
-t(192379);
-var l = t(120356),
-  a = t.n(l),
-  i = t(704215),
-  o = t(481060),
-  s = t(605236),
-  c = t(434404),
-  d = t(707076),
-  u = t(398758),
-  m = t(981631),
-  h = t(921944),
-  p = t(388032),
-  f = t(402895),
-  g = t(697611);
+var r = n(200651);
+n(192379);
+var l = n(120356),
+  a = n.n(l),
+  i = n(704215),
+  o = n(481060),
+  s = n(605236),
+  c = n(434404),
+  d = n(707076),
+  u = n(398758),
+  m = n(981631),
+  h = n(921944),
+  p = n(388032),
+  f = n(402895),
+  g = n(697611);
 
 function x(e) {
   return (0, u.te)(e) ? 250 : 152
@@ -25,10 +25,10 @@ function x(e) {
 
 function _(e) {
   let {
-    guild: n
-  } = e, t = (0, u.te)(n.id), l = (0, s.wE)(i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = t && !l ? i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : i.z.CHANNEL_BROWSER_NUX;
+    guild: t
+  } = e, n = (0, u.te)(t.id), l = (0, s.wE)(i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL), x = n && !l ? i.z.GUILD_HEADER_COMMUNITY_ONBOARDING_ADMIN_UPSELL : i.z.CHANNEL_BROWSER_NUX;
   (0, s.kk)(x);
-  let _ = t ? (0, r.jsxs)(r.Fragment, {
+  let _ = n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(o.X6q, {
         className: f.heading,
@@ -42,7 +42,7 @@ function _(e) {
       }), (0, r.jsx)(o.zxk, {
         className: f.checkItOut,
         onClick: () => {
-          c.Z.open(n.id, m.pNK.ONBOARDING), (0, s.EW)(x, {
+          c.Z.open(t.id, m.pNK.ONBOARDING), (0, s.EW)(x, {
             dismissAction: h.L.PRIMARY
           })
         },
@@ -84,7 +84,7 @@ function _(e) {
   });
   return (0, r.jsxs)("div", {
     className: a()(f.container, {
-      [f.adminUpsell]: t
+      [f.adminUpsell]: n
     }),
     children: [(0, r.jsx)(o.P3F, {
       className: f.closeButton,

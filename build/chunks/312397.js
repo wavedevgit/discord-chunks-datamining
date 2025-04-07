@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   O: () => J,
@@ -34,8 +34,8 @@ var r = n(200651),
   P = n(823379),
   w = n(63063),
   R = n(434404),
-  Z = n(999382),
-  D = n(67734),
+  D = n(999382),
+  Z = n(67734),
   A = n(375263),
   k = n(586382),
   W = n(594980),
@@ -81,7 +81,7 @@ let J = () => {
     errors: s,
     profile: a,
     originalProfile: l
-  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), o = (0, d.e7)([Z.Z], () => Z.Z.getProfileError()), c = i.useMemo(() => {
+  } = (0, d.cj)([D.Z], () => D.Z.getProps()), o = (0, d.e7)([D.Z], () => D.Z.getProfileError()), c = i.useMemo(() => {
     var e;
     let t = null == o ? void 0 : o.getAnyErrorMessage();
     return null != (e = (0, F.LG)(s)) ? e : t
@@ -442,7 +442,7 @@ class $ extends i.PureComponent {
             children: V.NW.format(V.t.vBcWUl, {
               articleURL: w.Z.getArticleURL(z.BhN.GUILD_BANNER_SPLASH)
             })
-          }), (0, r.jsx)(D.F, {
+          }), (0, r.jsx)(Z.F, {
             guild: e,
             canManageGuild: t,
             buttonClassName: Y.marginTop16
@@ -610,7 +610,7 @@ function ee() {
     submitting: n,
     subsection: s,
     profile: a
-  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), l = (0, f.ZP)(), {
+  } = (0, d.cj)([D.Z], () => D.Z.getProps()), l = (0, f.ZP)(), {
     analyticsLocations: c
   } = (0, x.ZP)(b.Z.OVERVIEW);
   i.useEffect(() => {

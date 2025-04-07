@@ -33,7 +33,7 @@ let v = e => {
     onMouseEnter: E,
     onMouseLeave: N,
     cancelTimers: I
-  } = (0, p.Z)(200, 300), [P, S] = i.useState(!1), Z = (0, a.e7)([f.Z], () => f.Z.effectCooldownEndTime), T = i.useMemo(() => null != Z ? (Z.getTime() - Date.now()) / 1e3 : 0, [Z]), {
+  } = (0, p.Z)(200, 300), [S, P] = i.useState(!1), Z = (0, a.e7)([f.Z], () => f.Z.effectCooldownEndTime), T = i.useMemo(() => null != Z ? (Z.getTime() - Date.now()) / 1e3 : 0, [Z]), {
     seconds: A
   } = (0, c.Z)(null != Z ? Z : new Date), w = A > 0, {
     mode: R
@@ -49,33 +49,33 @@ let v = e => {
   }), {
     parentAnalyticsLocation: D
   } = (0, u.ZP)(), W = i.useCallback(e => {
-    "focus" !== e.type && (P || w || E())
-  }, [P, w, E]), U = i.useCallback(() => {
-    P || N()
-  }, [N, P]), B = i.useCallback((e, t) => {
-    I(), S(!P), l === C.D.EMOJI ? null == v || v(void 0) : null == v || v(C.D.EMOJI), (!j || P) && (null == t || t(e))
-  }, [I, P, j, v, l]), F = (j || P) && (l === C.D.EMOJI || null == l);
+    "focus" !== e.type && (S || w || E())
+  }, [S, w, E]), U = i.useCallback(() => {
+    S || N()
+  }, [N, S]), B = i.useCallback((e, t) => {
+    I(), P(!S), l === C.D.EMOJI ? null == v || v(void 0) : null == v || v(C.D.EMOJI), (!j || S) && (null == t || t(e))
+  }, [I, S, j, v, l]), H = (j || S) && (l === C.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
-    shouldShow: F,
+    shouldShow: H,
     animation: k ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
     animationPosition: k ? "top" : "bottom",
     position: "bottom",
     align: "center",
     spacing: 16,
     onRequestClose: () => {
-      O(!1), S(!1), null == v || v(void 0)
+      O(!1), P(!1), null == v || v(void 0)
     },
     renderPopout: e => {
       let {
         closePopout: n
       } = e;
       return (0, r.jsx)(_.Z, {
-        isHovered: F,
+        isHovered: H,
         channel: t,
         closePopout: n,
         onMouseEnter: E,
         onMouseLeave: U,
-        onFocus: () => S(!0)
+        onFocus: () => P(!0)
       })
     },
     children: e => {
@@ -85,7 +85,7 @@ let v = e => {
       } = e;
       return (0, r.jsx)(h.Z, {
         isCenterButton: !0,
-        color: P ? M ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
+        color: S ? M ? "primaryDark" : R === m.BK.GroupedButtonsRedMic || L ? "green" : void 0 : void 0,
         totalCooldownSeconds: T,
         remainingCooldownSeconds: A,
         className: o()(!k && x.controlButton, n),
@@ -97,7 +97,7 @@ let v = e => {
         },
         onMouseEnter: W,
         onMouseLeave: U,
-        isActive: P
+        isActive: S
       })
     }
   })

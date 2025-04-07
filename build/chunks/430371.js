@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -58,12 +58,12 @@ function E(e, t) {
 let N = 16 / 9,
   I = 8 + C.cF;
 
-function P(e) {
+function S(e) {
   var t;
   let n, {
       onSelectParticipant: l,
-      onContextMenuParticipant: P,
-      onFullscreenParticipant: S,
+      onContextMenuParticipant: S,
+      onFullscreenParticipant: P,
       participants: Z,
       filteredParticipants: T,
       popoutWindow: A,
@@ -76,9 +76,9 @@ function P(e) {
       width: W,
       height: U,
       layout: B,
-      idle: F
+      idle: H
     } = e,
-    H = null != A,
+    F = null != A,
     G = h.Z.getVideoComponent(),
     V = p.default.getId(),
     [z, Y] = i.useState(null),
@@ -203,18 +203,18 @@ function P(e) {
                   width: W,
                   participant: t,
                   onClick: l,
-                  onDoubleClick: S,
-                  onContextMenu: P,
+                  onDoubleClick: P,
+                  onContextMenu: S,
                   onVideoResize: ey,
                   inCall: w,
-                  inPopout: H
+                  inPopout: F
                 })
               }, i) : null
             })
           })
         }), el ? (0, r.jsx)(a.animated.div, {
           className: o()(j.actionRow, {
-            [j.idle]: F
+            [j.idle]: H
           }),
           style: {
             bottom: e_.value
@@ -235,8 +235,8 @@ function P(e) {
         children: (0, r.jsx)(C.ZP, {
           channel: R,
           onClick: l,
-          onContextMenu: P,
-          onDoubleClick: S,
+          onContextMenu: S,
+          onDoubleClick: P,
           participants: ev,
           participantTileWidth: ej,
           selectedParticipantId: k.id,
@@ -246,7 +246,7 @@ function P(e) {
         })
       })]
     }), ex.length > 0 ? (0, r.jsx)(b.Z, {
-      onContextMenuParticipant: P,
+      onContextMenuParticipant: S,
       width: W,
       height: U,
       channel: R,

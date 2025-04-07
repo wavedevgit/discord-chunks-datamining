@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   FT: () => H,
@@ -35,8 +35,8 @@ var r = n(200651),
   P = n(267642),
   w = n(51144),
   R = n(434404),
-  Z = n(471613),
-  D = n(999382),
+  D = n(471613),
+  Z = n(999382),
   A = n(981631),
   k = n(185923),
   W = n(388032),
@@ -288,7 +288,7 @@ let U = d().throttle(h.OQ, 1e3),
     }))
   },
   Y = () => {
-    let e = (0, m.e7)([D.Z], () => D.Z.getGuild()),
+    let e = (0, m.e7)([Z.Z], () => Z.Z.getGuild()),
       [t, s] = i.useState("");
     o()(null != e, "ConnectedGuildSettingsEmoji must be rendered within a guild context");
     let a = (0, m.e7)([I.Z], () => I.Z.theme),
@@ -298,9 +298,9 @@ let U = d().throttle(h.OQ, 1e3),
       {
         revision: c,
         emojis: p
-      } = (0, m.cj)([Z.Z], () => ({
-        revision: Z.Z.getEmojiRevision(e.id),
-        emojis: Z.Z.getEmojis(e.id)
+      } = (0, m.cj)([D.Z], () => ({
+        revision: D.Z.getEmojiRevision(e.id),
+        emojis: D.Z.getEmojis(e.id)
       })),
       h = (0, j.Z)(c),
       [f, b] = i.useState(!1),

@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -91,8 +91,8 @@ let P = i.forwardRef((e, t) => {
       onChannelContextMenu: P,
       onContentClick: w,
       onHeaderClick: R,
-      onTargetContextMenu: Z,
-      onUserContextMenu: D,
+      onTargetContextMenu: D,
+      onUserContextMenu: Z,
       theme: A
     } = e,
     k = function() {
@@ -185,7 +185,7 @@ let P = i.forwardRef((e, t) => {
                   userHook: (e, t) => {
                     if (null != i.user) return (0, r.jsx)(T, {
                       user: i.user,
-                      onContextMenu: D
+                      onContextMenu: Z
                     }, t);
                     if (null != i.options.integration_type) {
                       var n;
@@ -196,9 +196,9 @@ let P = i.forwardRef((e, t) => {
                   },
                   targetHook: (e, t) => i.targetType === O.KFR.USER && i.target instanceof f.Z ? (0, r.jsx)(T, {
                     user: i.target,
-                    onContextMenu: Z
+                    onContextMenu: D
                   }, t) : (0, r.jsx)("span", {
-                    onContextMenu: Z,
+                    onContextMenu: D,
                     children: e
                   }, t),
                   count: n.count,

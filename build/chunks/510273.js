@@ -1,6 +1,6 @@
-/** Chunk was on 80137 **/
+/** Chunk was on 52212 **/
 n.d(t, {
-  Z: () => _
+  Z: () => p
 }), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(818765),
   u = n(674680),
   d = n(127058);
-let p = e => {
+let _ = e => {
   let {
     color: t
   } = e;
@@ -63,19 +63,19 @@ let p = e => {
   })
 };
 
-function _(e) {
+function p(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: o,
-    description: _,
-    rarity: f,
-    hideDescriptionUntilUnlock: h,
+    description: p,
+    rarity: h,
+    hideDescriptionUntilUnlock: f,
     onAction: m
   } = t, {
     color: g
-  } = (0, a.F7)(f);
+  } = (0, a.F7)(h);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -107,11 +107,11 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: h && !n ? "?????" : _()
+        children: f && !n ? "?????" : p()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, r.jsx)(p, {
+      children: (0, r.jsx)(_, {
         color: g
       })
     })]

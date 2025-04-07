@@ -33,8 +33,8 @@ let v = (0, a.Z)(e => {
     onFullscreenParticipant: E,
     channel: N,
     hasConnectPermission: I,
-    className: P,
-    inCall: S,
+    className: S,
+    inCall: P,
     showParticipants: Z = !0,
     paused: T = !1,
     width: A,
@@ -52,7 +52,7 @@ let v = (0, a.Z)(e => {
     U = i.useMemo(() => n.filter(e => e.type !== y.fO.ACTIVITY || !e.participants.some(e => (0, s.J)(e))), [n, a]);
   return (null == L ? void 0 : L.channelId) === N.id ? (0, r.jsx)(f.Z, {
     height: w
-  }) : (null == N ? void 0 : N.isGuildVocal()) && !S ? (0, r.jsx)(h.Z, {
+  }) : (null == N ? void 0 : N.isGuildVocal()) && !P ? (0, r.jsx)(h.Z, {
     channel: N,
     participants: t,
     hasConnectPermission: I
@@ -62,7 +62,7 @@ let v = (0, a.Z)(e => {
     className: x.voiceCallWrapper,
     participants: t,
     onContextMenu: O
-  }) : (n = S ? n : t, null == l) ? 0 === n.length ? W ? (0, r.jsx)(_.Z, {
+  }) : (n = P ? n : t, null == l) ? 0 === n.length ? W ? (0, r.jsx)(_.Z, {
     channelId: N.id
   }) : (0, r.jsx)(b.Z, {
     className: o()(x.videoGrid, x.hiddenParticipants),
@@ -81,7 +81,7 @@ let v = (0, a.Z)(e => {
       onDoubleClick: E,
       onContextMenu: O,
       paused: T,
-      inCall: S
+      inCall: P
     })
   }) : (0, r.jsx)(g.Z, {
     onFullscreenParticipant: E,
@@ -91,12 +91,12 @@ let v = (0, a.Z)(e => {
     filteredParticipants: U,
     participants: t,
     popoutWindow: M,
-    className: P,
+    className: S,
     idle: R,
     height: w,
     width: A,
     layout: v,
-    inCall: S,
+    inCall: P,
     channel: N,
     showParticipants: Z
   })

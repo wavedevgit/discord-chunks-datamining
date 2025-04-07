@@ -1,15 +1,13 @@
-/** Chunk was on 87185 **/
+/** Chunk was on 83957 **/
 n.d(t, {
   Af: () => c,
   GO: () => u,
-  Gh: () => f,
+  Gh: () => p,
   Pq: () => _,
   Q2: () => E,
   Qh: () => d,
   Vr: () => s,
-  _v: () => p,
-  hx: () => o,
-  r: () => I
+  hx: () => o
 }), n(704215), n(605236);
 var r = n(314897);
 n(271383);
@@ -103,18 +101,7 @@ function E(e) {
   })
 }
 
-function I(e) {
-  let {
-    guildId: t,
-    position: n
-  } = e;
-  i.default.track(a.rMx.GUILD_APPLICATION_INTENDS_TO_JOIN, {
-    guild_id: t,
-    position: n
-  })
-}
-
-function f(e) {
+function p(e) {
   let {
     feature: t,
     guildId: n,
@@ -124,17 +111,6 @@ function f(e) {
     guild_id: n,
     feature: t,
     position: r
-  })
-}
-
-function p(e) {
-  let {
-    guildId: t,
-    position: n
-  } = e;
-  i.default.track(a.rMx.GUILD_APPLICATION_ABANDONED, {
-    guild_id: t,
-    position: n
   })
 }
 n(921944)

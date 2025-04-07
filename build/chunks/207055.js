@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(606304),
   N = n(979651),
   I = n(51144),
-  P = n(649739),
-  S = n(262317),
+  S = n(649739),
+  P = n(262317),
   Z = n(981631),
   T = n(524484),
   A = n(50259);
@@ -44,20 +44,20 @@ let w = i.memo(e => {
   } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([y.Z], () => R ? [!y.Z.isSupported() || y.Z.isSelfMute() || y.Z.isSelfMutedTemporarily(), y.Z.isSelfDeaf(), !1] : [!y.Z.isSupported() || y.Z.isLocalMute(w), !1, y.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
-  }), U = (0, a.e7)([C.ZP], () => C.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), F = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
+  }), U = (0, a.e7)([C.ZP], () => C.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(w)
-  }), [w, g.id]), H = (0, p.Z)(null != F ? [F.applicationId] : []), G = (0, P.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
-  null != z && P.ZP.trackExposure({
+  }), [w, g.id]), F = (0, p.Z)(null != H ? [H.applicationId] : []), G = (0, S.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
+  null != z && S.ZP.trackExposure({
     location: "voice_users"
   });
   let [Y, q] = (0, a.Wu)([b.Z], () => [b.Z.getStreamForUser(w, g.getGuildId()), b.Z.getActiveStreamForUser(w, g.getGuildId())], [g, w]), K = (0, a.e7)([O.Z], () => O.Z.getSessionById(x)), X = I.ZP.useName(s), Q = (0, a.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(g.id, w), [g.id, w]), J = (0, m.Eu)(g.id, w);
   return (0, r.jsx)(f.Z, {
     shakeLocation: T.oZ.VOICE_USER,
     isShaking: W,
-    children: (0, r.jsx)(S.ZP, (n = function(e) {
+    children: (0, r.jsx)(P.ZP, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -87,7 +87,7 @@ let w = i.memo(e => {
       ringing: B,
       disconnected: J,
       priority: D,
-      embeddedApplication: H[0],
+      embeddedApplication: F[0],
       isStreaming: null != Y && Y.channelId === g.id,
       isWatching: null != q && q.state !== Z.jm8.ENDED,
       isGuest: U,
@@ -121,12 +121,12 @@ let R = [],
       withGuildIcon: C = !1,
       className: y,
       children: j
-    } = e, [O, E] = i.useState(null), [N, I] = i.useState(!1), P = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
-      E(P.current), P.current = null
+    } = e, [O, E] = i.useState(null), [N, I] = i.useState(!1), S = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
+      E(S.current), S.current = null
     })), M = i.useRef(new s.sW(175, () => {
       E(null)
     })), L = i.useCallback(e => {
-      t && (I(!0), M.current.cancel(), P.current = e, k.current.delay())
+      t && (I(!0), M.current.cancel(), S.current = e, k.current.delay())
     }, [t]), D = i.useCallback(e => {
       t && (k.current.cancel(), O === e && (I(!1), M.current.delay()))
     }, [t, O]), W = (0, a.Wu)([v.Z], () => {
@@ -172,10 +172,10 @@ let R = [],
           location: f
         }, i.id)
       });
-      return null != b && b > 0 ? e.push((0, r.jsx)(S.ul, {
+      return null != b && b > 0 ? e.push((0, r.jsx)(P.ul, {
         collapsed: u,
         numAudience: b
-      })) : u && T.length > d + 1 && e.push((0, r.jsx)(S.XX, {
+      })) : u && T.length > d + 1 && e.push((0, r.jsx)(P.XX, {
         numUsers: T.length - d
       })), e
     })();

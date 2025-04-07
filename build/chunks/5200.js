@@ -45,9 +45,9 @@ function y(e) {
     embeddedActivitiesManager: h.Z,
     assetNames: b,
     commandOrigin: x
-  }), [N, I] = l.useState(!1), P = l.useCallback(() => {
+  }), [N, I] = l.useState(!1), S = l.useCallback(() => {
     I(!0)
-  }, [I]), S = l.useCallback(() => {
+  }, [I]), P = l.useCallback(() => {
     I(!1)
   }, [I]), Z = l.useMemo(() => (0, i.jsx)("div", {
     className: g.overlayBadge,
@@ -93,10 +93,10 @@ function y(e) {
     color: "transparent",
     look: c.zxk.Looks.BLANK,
     size: c.zxk.Sizes.NONE,
-    onFocus: P,
-    onBlur: S,
-    onMouseEnter: P,
-    onMouseLeave: S,
+    onFocus: S,
+    onBlur: P,
+    onMouseEnter: S,
+    onMouseLeave: P,
     innerClassName: g.activityItemButtonInnerClass,
     children: (0, i.jsx)(c.AMe, {
       config: _,

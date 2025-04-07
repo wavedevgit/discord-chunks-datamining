@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -80,10 +80,10 @@ let x = function(e) {
       onDragComplete: j,
       onDragReset: _
     }),
-    Z = i.useCallback(e => {
+    D = i.useCallback(e => {
       (0, m.XG)(s.channelId, e)
     }, [s.channelId]),
-    D = i.useCallback((e, n) => {
+    Z = i.useCallback((e, n) => {
       let r = g.Z.getSettings();
       null != r && ((0, m.XG)(s.channelId, e), (0, m.oo)(t, r).then(() => {
         (0, m.mM)(t, e.channelId, n)
@@ -96,11 +96,11 @@ let x = function(e) {
       return n => (0, r.jsx)(e, b(f({}, n), {
         guildId: t,
         resourceChannel: s,
-        onSave: Z,
+        onSave: D,
         onDelete: () => (0, m.Hz)(s.channelId),
-        onIconUpload: D
+        onIconUpload: Z
       }))
-    }), [t, s, Z, D]);
+    }), [t, s, D, Z]);
   return null == y ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {

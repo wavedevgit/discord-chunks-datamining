@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(913663),
   N = n(268350),
   I = n(695346),
-  P = n(592125),
-  S = n(703558),
+  S = n(592125),
+  P = n(703558),
   Z = n(375954),
   T = n(496675),
   A = n(117530),
@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(488131),
   U = n(602034),
   B = n(981631),
-  F = n(388032),
-  H = n(776584),
+  H = n(388032),
+  F = n(776584),
   G = n(128337);
 
 function V(e) {
@@ -70,30 +70,30 @@ function Y(e) {
     parentChannelId: t,
     parentMessageId: n,
     location: i
-  } = e, l = (0, a.e7)([P.Z], () => P.Z.getChannel(t)), {
+  } = e, l = (0, a.e7)([S.Z], () => S.Z.getChannel(t)), {
     analyticsLocations: o
   } = (0, m.ZP)(f.Z.CREATE_THREAD);
   return null == l ? null : (0, r.jsx)(m.Gt, {
     value: o,
     children: (0, r.jsx)(w.I3, {
       children: (0, r.jsxs)("section", {
-        "aria-label": F.NW.string(F.t.rBIGBA),
-        className: H.container,
+        "aria-label": H.NW.string(H.t.rBIGBA),
+        className: F.container,
         children: [(0, r.jsx)(p.Z, {
           channel: l,
-          draftType: S.d.FirstThreadMessage
+          draftType: P.d.FirstThreadMessage
         }), (0, r.jsxs)(j.ZP, {
           toolbar: (0, r.jsx)(j.ZP.Icon, {
             icon: s.Dio,
-            tooltip: F.NW.string(F.t.cpT0Cg),
+            tooltip: H.NW.string(H.t.cpT0Cg),
             onClick: () => (0, W.NK)(t)
           }),
           children: [(0, r.jsx)(j.ZP.Icon, {
             icon: s.or_,
             disabled: !0,
-            "aria-label": F.NW.string(F.t["7Xm5QE"])
+            "aria-label": H.NW.string(H.t["7Xm5QE"])
           }), (0, r.jsx)(j.ZP.Title, {
-            children: F.NW.string(F.t["4WNcpq"])
+            children: H.NW.string(H.t["4WNcpq"])
           })]
         }), (0, r.jsx)(q, {
           parentChannel: l,
@@ -148,11 +148,11 @@ function q(e) {
     return i.useEffect(() => {
       function n(n) {
         var i;
-        let l = S.Z.getDraft(e.id, S.d.FirstThreadMessage);
-        (0 === l.length || !0 === n) && r((0, b.eK)(l)), t(null != (i = S.Z.getThreadSettings(e.id)) ? i : {})
+        let l = P.Z.getDraft(e.id, P.d.FirstThreadMessage);
+        (0 === l.length || !0 === n) && r((0, b.eK)(l)), t(null != (i = P.Z.getThreadSettings(e.id)) ? i : {})
       }
-      return n(!0), S.Z.addChangeListener(n), () => {
-        S.Z.removeChangeListener(n)
+      return n(!0), P.Z.addChangeListener(n), () => {
+        P.Z.removeChangeListener(n)
       }
     }, [e.id, t]), {
       textAreaState: n,
@@ -162,7 +162,7 @@ function q(e) {
     nameError: j,
     messageError: O,
     submit: I,
-    submitting: P
+    submitting: S
   } = function(e) {
     let {
       parentChannel: t,
@@ -189,7 +189,7 @@ function q(e) {
           shouldClear: !1,
           shouldRefocus: !1
         };
-        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (a = E.Z.getStickerPreview(t.id, z.drafts.type)) ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
+        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (a = E.Z.getStickerPreview(t.id, z.drafts.type)) ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, P.d.FirstThreadMessage));
         let m = null != (s = r.name) ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
@@ -236,21 +236,21 @@ function q(e) {
     location: l
   }), Z = (0, L.oD)(f, y) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
-    className: H.chat,
+    className: F.chat,
     onMouseDown: p,
     onFocus: p,
     children: (0, r.jsx)("div", {
-      className: o()(H.messagesWrapper, "group-spacing-".concat(u)),
+      className: o()(F.messagesWrapper, "group-spacing-".concat(u)),
       children: (0, r.jsxs)("form", {
         onSubmit: e => {
           e.preventDefault(), I()
         },
-        className: H.form,
+        className: F.form,
         children: [(0, r.jsx)(s.Ttm, {
-          className: H.scroller,
+          className: F.scroller,
           fade: !0,
           children: (0, r.jsxs)("div", {
-            className: H.scrollerInner,
+            className: F.scrollerInner,
             children: [(0, r.jsxs)(v.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
@@ -264,7 +264,7 @@ function q(e) {
                 threadSettings: f,
                 updateThreadSettings: g,
                 error: j,
-                disabled: P
+                disabled: S
               }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(K, {
                 startedFromMessage: null != n,
                 threadSettings: f,
@@ -277,7 +277,7 @@ function q(e) {
             })]
           })
         }), (0, r.jsxs)("div", {
-          className: H.submitContainer,
+          className: F.submitContainer,
           children: [(0, r.jsx)(Q, {
             parentChannel: t,
             textAreaState: _,
@@ -301,13 +301,13 @@ function K(e) {
     updateThreadSettings: i,
     privateThreadMode: l
   } = e, o = (0, L.oD)(n, l), a = (0, r.jsx)("div", {
-    className: H.privateThreadFormTitle,
+    className: F.privateThreadFormTitle,
     children: (0, r.jsx)("span", {
-      className: H.privateThreadFormTitleText,
-      children: F.NW.string(F.t.F1zyvb)
+      className: F.privateThreadFormTitleText,
+      children: H.NW.string(H.t.F1zyvb)
     })
   }), c = (0, r.jsx)(s.XZJ, {
-    className: H.checkbox,
+    className: F.checkbox,
     type: s.XZJ.Types.INVERTED,
     disabled: l === L.Jw.PrivateOnly,
     value: o,
@@ -317,17 +317,17 @@ function K(e) {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: F.NW.string(F.t.TRPp3t)
+      children: H.NW.string(H.t.TRPp3t)
     })
   });
   return t || l === L.Jw.Disabled ? null : (0, r.jsxs)(s.hjN, {
     title: a,
-    className: H.formSection,
+    className: F.formSection,
     children: [c, o ? (0, r.jsx)(s.Text, {
-      className: H.privateThreadDescription,
+      className: F.privateThreadDescription,
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: F.NW.string(F.t.EWXyc3)
+      children: H.NW.string(H.t.EWXyc3)
     }) : null]
   })
 }
@@ -347,12 +347,12 @@ function X(e) {
   return (0, r.jsx)(s.hjN, {
     tag: "label",
     htmlFor: m,
-    title: F.NW.string(f ? F.t.JPvIiI : F.t.j3XWjI),
-    className: H.formSection,
+    title: H.NW.string(f ? H.t.JPvIiI : H.t.j3XWjI),
+    className: F.formSection,
     children: (0, r.jsx)(s.oil, {
       value: d,
       id: m,
-      placeholder: "" !== h ? h : F.NW.string(F.t["Nb2/RE"]),
+      placeholder: "" !== h ? h : H.NW.string(H.t["Nb2/RE"]),
       maxLength: B.HN8,
       onChange: e => {
         o({
@@ -379,7 +379,7 @@ function Q(e) {
     submit: d,
     error: p
   } = e, [h, f] = i.useState(!0), m = i.useCallback(() => f(!0), []), g = i.useCallback(() => f(!1), []), b = i.useCallback((e, n, r) => {
-    c.Z.saveDraft(t.id, n, S.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
+    c.Z.saveDraft(t.id, n, P.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
       textValue: n,
       richValue: r
     }))
@@ -408,20 +408,20 @@ function Q(e) {
       type: z,
       canAttachFiles: x
     }), (0, r.jsx)("div", {
-      className: H.starterMessageError,
+      className: F.starterMessageError,
       children: (0, r.jsx)(s.pdY, {
         error: v
       })
     }), (0, r.jsx)(_.Z, {
       type: z,
       channel: t,
-      placeholder: F.NW.string(F.t.taZfIC),
+      placeholder: H.NW.string(H.t.taZfIC),
       textValue: n.textValue,
       richValue: n.richValue,
       focused: h,
-      className: H.channelTextArea,
-      innerClassName: o()(H.channelTextAreaInner, {
-        [H.channelTextAreaInnerError]: null != v
+      className: F.channelTextArea,
+      innerClassName: o()(F.channelTextAreaInner, {
+        [F.channelTextAreaInnerError]: null != v
       }),
       onFocus: m,
       onBlur: g,
@@ -438,7 +438,7 @@ function J(e) {
     parentMessageId: n
   } = e, i = (0, a.e7)([Z.Z], () => null == n ? null : Z.Z.getMessage(t.id, n)), l = I.jU.useSetting();
   return null != i ? (0, r.jsx)(O.Z, {
-    className: H.messagePreview,
+    className: F.messagePreview,
     message: i,
     channel: t,
     compact: l,

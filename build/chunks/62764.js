@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(592125),
   N = n(934415),
   I = n(456269),
-  P = n(109590),
-  S = n(228392),
+  S = n(109590),
+  P = n(228392),
   Z = n(981631),
   T = n(388032),
   A = n(184844),
@@ -75,9 +75,9 @@ function M(e) {
   } = e, {
     ref: L,
     width: D
-  } = (0, h.Z)(), [W, U] = i.useState(3), [B, F] = i.useState(!n), [H, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
+  } = (0, h.Z)(), [W, U] = i.useState(3), [B, H] = i.useState(!n), [F, G] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
     firstMessage: z
-  } = (0, P.cl)(V), Y = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
+  } = (0, S.cl)(V), Y = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
     disableReactionUpdates: q,
     disableReactionCreates: K,
     isLurking: X,
@@ -88,7 +88,7 @@ function M(e) {
     if (null != t && n) {
       let e = t.intersectionRect,
         n = t.boundingClientRect;
-      F((e.bottom - e.top) / (n.bottom - n.top) < 1)
+      H((e.bottom - e.top) / (n.bottom - n.top) < 1)
     }
   }, [n]);
   i.useLayoutEffect(() => {
@@ -110,7 +110,7 @@ function M(e) {
       Y ? O.Z.leaveThread(V, "Forum Toolbar") : O.Z.joinThread(V, "Forum Toolbar")
     },
     ea = () => {
-      (0, S.B)({
+      (0, P.B)({
         postId: V.id,
         location: {
           section: Z.jXE.CHANNEL_HEADER
@@ -203,7 +203,7 @@ function M(e) {
             onClick: ea,
             className: A.button,
             innerClassName: A.buttonInner,
-            children: [H ? (0, r.jsx)(u.dz2, {
+            children: [F ? (0, r.jsx)(u.dz2, {
               size: "custom",
               color: "currentColor",
               width: 16,
@@ -213,7 +213,7 @@ function M(e) {
               color: "currentColor",
               width: 16,
               height: 16
-            }), H ? T.NW.string(T.t["t5VZ8/"]) : null]
+            }), F ? T.NW.string(T.t["t5VZ8/"]) : null]
           }))
         }), !n && (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.nFP4oa),

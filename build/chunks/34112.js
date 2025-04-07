@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   Z: () => A
@@ -52,7 +52,7 @@ function R(e) {
   return e
 }
 
-function Z(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = "DRAGGABLE_ROLE";
+let Z = "DRAGGABLE_ROLE";
 
 function A(e) {
   let {
@@ -158,7 +158,7 @@ function W(e) {
     setEditRoleId: S,
     setSelectedSection: A
   } = e, k = (0, y.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
-    type: D,
+    type: Z,
     item: () => (_(d.id), {
       id: d.id,
       position: x
@@ -175,7 +175,7 @@ function W(e) {
   }), [d, _, v, C, W, M, x]), [{
     isDragging: B
   }, F] = (0, l.c)(U), z = i.useMemo(() => ({
-    accept: D,
+    accept: Z,
     canDrop: () => !W,
     collect: e => {
       let t = e.getItem();
@@ -195,7 +195,7 @@ function W(e) {
       let {
         default: e
       } = await Promise.resolve().then(n.bind(n, 741247));
-      return t => (0, r.jsx)(e, Z(R({}, t), {
+      return t => (0, r.jsx)(e, D(R({}, t), {
         role: d,
         guild: g
       }))
@@ -269,7 +269,7 @@ function W(e) {
         count: "".concat(N)
       }),
       position: "right",
-      children: e => (0, r.jsxs)(u.P3F, Z(R({}, e), {
+      children: e => (0, r.jsxs)(u.P3F, D(R({}, e), {
         className: a()(P.memberCountContainer, w.memberSpacing),
         onClick: X,
         children: [(0, r.jsx)(u.Text, {
@@ -335,7 +335,7 @@ function L(e) {
     roleId: i.id,
     size: s
   });
-  return null != m ? (0, r.jsx)(h.Z, Z(R({}, m), {
+  return null != m ? (0, r.jsx)(h.Z, D(R({}, m), {
     className: o,
     enableTooltip: l
   })) : (0, r.jsx)(u.lZ8, {

@@ -1,6 +1,6 @@
-/** Chunk was on 87185 **/
+/** Chunk was on 83957 **/
 n.d(t, {
-  Z: () => I
+  Z: () => p
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -13,25 +13,25 @@ var r = n(200651),
   d = n(921944),
   _ = n(388032),
   E = n(418952);
-let I = i.forwardRef(function(e, t) {
+let p = i.forwardRef(function(e, t) {
   let {
     body: n,
     header: l,
-    artClassName: I,
+    artClassName: p,
     headerClassName: f,
-    contentClassName: p,
+    contentClassName: I,
     tryItText: g,
-    dismissText: S,
-    onTryFeature: h,
+    dismissText: h,
+    onTryFeature: S,
     onClose: y,
-    className: N,
-    inlineArt: O = !1,
+    className: O,
+    inlineArt: N = !1,
     isPremiumFeature: T = !1,
     shouldUseHorizontalButtons: m = !1,
     showGIFTag: A = !1,
-    dismissibleContent: C,
-    position: D = "top",
-    align: b = "center",
+    dismissibleContent: b,
+    position: C = "top",
+    align: D = "center",
     art: L,
     isPremiumEarlyAccess: R = !1,
     maxWidth: U = 280,
@@ -39,15 +39,15 @@ let I = i.forwardRef(function(e, t) {
     pointerClassName: v,
     dismissIconClassName: P,
     dismissIcon: Z,
-    onDismissIconClick: M,
-    tryItButtonColor: w
-  } = e, x = m ? s.zxk.Sizes.LARGE : s.zxk.Sizes.MAX, [G, W] = i.useState(!1), {
+    onDismissIconClick: w,
+    tryItButtonColor: x
+  } = e, M = m ? s.zxk.Sizes.LARGE : s.zxk.Sizes.MAX, [G, W] = i.useState(!1), {
     ref: k,
     width: F
   } = (0, o.Z)();
 
   function J(e) {
-    (0, u.EW)(C, {
+    (0, u.EW)(b, {
       dismissAction: e
     })
   }
@@ -56,21 +56,21 @@ let I = i.forwardRef(function(e, t) {
     let n = (null != (t = null == (e = k.current) ? void 0 : e.scrollWidth) ? t : 0) + 64;
     !G && n > U && W(!0)
   }, [G, F, k, U]), i.useEffect(() => {
-    (0, u.kk)(C)
-  }, [C]), (0, r.jsx)("div", {
-    className: N,
+    (0, u.kk)(b)
+  }, [b]), (0, r.jsx)("div", {
+    className: O,
     ref: t,
     children: (0, r.jsxs)("div", {
-      className: a()(E.content, p, {
-        [E.contentNoArt]: null == I || O,
+      className: a()(E.content, I, {
+        [E.contentNoArt]: null == p || N,
         [E.contentPremium]: T || R
       }),
       children: [null != Z && (0, r.jsx)(s.P3F, {
-        onClick: M,
+        onClick: w,
         className: P,
         children: Z
       }), (0, r.jsxs)("div", {
-        className: a()(I, O ? E.artInline : E.artAbsolute),
+        className: a()(p, N ? E.artInline : E.artAbsolute),
         children: [A && (0, r.jsx)(c.Z, {
           className: E.gifTag
         }), L]
@@ -105,24 +105,24 @@ let I = i.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         ref: k,
         className: G || !m ? E.buttonContainerVertical : E.buttonContainerHorizontal,
-        children: null != h ? (0, r.jsxs)(r.Fragment, {
+        children: null != S ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.zxk, {
             className: E.button,
-            size: x,
+            size: M,
             onClick: e => {
-              null == y || y(e), h(e), J(d.L.PRIMARY)
+              null == y || y(e), S(e), J(d.L.PRIMARY)
             },
-            color: null != w ? w : T || R ? s.zxk.Colors.BRAND_INVERTED : s.zxk.Colors.WHITE,
+            color: null != x ? x : T || R ? s.zxk.Colors.BRAND_INVERTED : s.zxk.Colors.WHITE,
             children: null != g ? g : _.NW.string(_.t.IHf1RE)
           }), !j && (0, r.jsx)(s.zxk, {
             className: E.button,
-            size: x,
+            size: M,
             onClick: e => {
               null == y || y(e), J(d.L.DISMISS)
             },
             color: T || R ? s.zxk.Colors.WHITE : s.zxk.Colors.BRAND,
             look: T || R ? s.zxk.Looks.LINK : s.zxk.Looks.FILLED,
-            children: null != S ? S : _.NW.string(_.t.om7Ovr)
+            children: null != h ? h : _.NW.string(_.t.om7Ovr)
           })]
         }) : (0, r.jsx)(s.zxk, {
           className: E.button,
@@ -135,9 +135,9 @@ let I = i.forwardRef(function(e, t) {
         })
       }), (0, r.jsx)("div", {
         className: a()(E.pointer, v, {
-          [E.bottomPointer]: "top" === D,
-          [E.centerLeftPointer]: "right" === D && "center" === b,
-          [E.topLeftPointer]: "right" === D && "top" === b
+          [E.bottomPointer]: "top" === C,
+          [E.centerLeftPointer]: "right" === C && "center" === D,
+          [E.topLeftPointer]: "right" === C && "top" === D
         })
       })]
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 39149 **/
+/** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
   ZP: () => G
@@ -33,8 +33,8 @@ var r = n(200651),
   P = n(275302),
   w = n(877248),
   R = n(179517),
-  Z = n(79829);
-let D = (0, g.Un)({
+  D = n(79829);
+let Z = (0, g.Un)({
     createPromise: () => n.e("4848").then(n.bind(n, 797967)),
     webpackId: 797967
   }),
@@ -74,7 +74,7 @@ function W(e) {
     children: [(0, r.jsx)(u.R94, {
       className: P.colorDescription,
       children: T.NW.string(T.t["9UCxlZ"])
-    }), (0, r.jsx)(D, {
+    }), (0, r.jsx)(Z, {
       defaultColor: S.p6O,
       colors: S.pmI,
       value: t.color,
@@ -146,7 +146,7 @@ function L(e) {
     src: R,
     name: c.name
   }, v = {
-    src: Z,
+    src: D,
     name: c.name
   }, C = (0, h.oC)(m, c), O = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
   return (0, r.jsx)(u.Rny, {
