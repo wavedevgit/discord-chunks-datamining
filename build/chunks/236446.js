@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(362762),
   p = n(409059),
-  h = n(659900),
-  g = n(962220),
+  g = n(659900),
+  h = n(962220),
   f = n(473855),
   m = n(306453),
   _ = n(929809),
@@ -48,7 +48,7 @@ class L extends i.PureComponent {
     (0, b.e)("guildTemplate"), P.KO || E.Z.launch("discord://" + O.Z5c.GUILD_TEMPLATE(this.props.code), () => void 0)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && g.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && h.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return P.KO ? (0, r.jsx)(u.zx, {
@@ -182,7 +182,7 @@ function k(e) {
   } = e, {
     form: n,
     handleSubmit: i
-  } = (0, h.Z)(t, !1);
+  } = (0, g.Z)(t, !1);
   x.Z.flowStep(T.MK.ORGANIC_GUILD_TEMPLATES, T.X2.GUILD_CREATE);
   let o = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {

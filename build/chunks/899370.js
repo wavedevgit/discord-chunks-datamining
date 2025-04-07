@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r, i, o, a = n(973361),
   l = n(442837),
@@ -9,7 +9,7 @@ var r, i, o, a = n(973361),
   u = n(723359);
 let d = null,
   p = "underage";
-class h extends(o = l.ZP.Store) {
+class g extends(o = l.ZP.Store) {
   isUnderageAnonymous() {
     if (c.isPlatformEmbedded && 1) {
       if (null != d && d + u.k0 > Date.now()) return !0
@@ -17,13 +17,13 @@ class h extends(o = l.ZP.Store) {
     return !1
   }
 }
-i = "AgeGateStore", (r = "displayName") in h ? Object.defineProperty(h, r, {
+i = "AgeGateStore", (r = "displayName") in g ? Object.defineProperty(g, r, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : h[r] = i;
-let g = new h(s.Z, {
+}) : g[r] = i;
+let h = new g(s.Z, {
   AGE_GATE_PREVENT_UNDERAGE_REGISTRATION: function() {
     d = Date.now(), document.cookie = "".concat(p, "=1;path=/")
   },

@@ -109,7 +109,8 @@ function P(e) {
       clearTimeout(e)
     }
   }, []);
-  let ef = (0, s.q_F)({
+  let ef = q ? "animate-never" : "animate-always",
+    em = (0, s.q_F)({
       value: +!!en,
       delay: eh || !en ? 0 : 100,
       config: E(O({}, a.config.stiff), {
@@ -120,26 +121,26 @@ function P(e) {
       onRest: () => {
         Q(!1), f.S.dispatch(y.CkL.REMEASURE_TARGET)
       }
-    }, "animate-always"),
-    em = (0, s.q_F)({
+    }, ef),
+    eg = (0, s.q_F)({
       value: +!!en,
       config: E(O({}, a.config.stiff), {
         clamp: !0
       })
-    }, "animate-always"),
-    eg = (0, s.q_F)({
+    }, ef),
+    eb = (0, s.q_F)({
       value: ed,
       config: E(O({}, a.config.stiff), {
         clamp: !0
       })
-    }, er === en && em.value.idle && !eo || ea ? "animate-never" : "animate-always"),
-    eb = (0, s.q_F)({
+    }, er === en && eg.value.idle && !eo || ea || q ? "animate-never" : "animate-always"),
+    e_ = (0, s.q_F)({
       value: n,
       config: E(O({}, a.config.stiff), {
         clamp: !0
       })
-    }, "animate-always"),
-    e_ = (0, s.Yzy)(k, {
+    }, ef),
+    eC = (0, s.Yzy)(k, {
       keys: e => null == e ? void 0 : e.id,
       config: E(O({}, a.config.stiff), {
         clamp: !0
@@ -154,14 +155,14 @@ function P(e) {
       leave: {
         opacity: 0
       }
-    }, "animate-always"),
-    eC = i.useCallback(e => {
+    }, ef),
+    ey = i.useCallback(e => {
       Y(e), K(!1)
     }, []),
-    ey = en || D ? [] : (0, _.n3)(Z, k, V),
+    ex = en || D ? [] : (0, _.n3)(Z, k, V),
     {
-      visibleParticipants: ex,
-      participantTileWidth: ev
+      visibleParticipants: ev,
+      participantTileWidth: ej
     } = (0, C.ZB)(W, T);
   return (0, r.jsxs)("div", {
     className: o()(j.root, v.flexCenter, L),
@@ -173,11 +174,11 @@ function P(e) {
       children: [(0, r.jsxs)(a.animated.div, {
         className: j.videoFrame,
         style: {
-          top: em.value.to(e => -e * I / 2)
+          top: eg.value.to(e => -e * I / 2)
         },
         children: [(0, r.jsx)(a.animated.div, {
           style: {
-            width: eg.value
+            width: eb.value
           },
           className: j.videoWrapper,
           children: (0, r.jsx)("div", {
@@ -185,7 +186,7 @@ function P(e) {
             style: {
               aspectRatio: ec
             },
-            children: e_((e, t, n) => {
+            children: eC((e, t, n) => {
               let {
                 key: i
               } = n;
@@ -204,7 +205,7 @@ function P(e) {
                   onClick: l,
                   onDoubleClick: S,
                   onContextMenu: P,
-                  onVideoResize: eC,
+                  onVideoResize: ey,
                   inCall: w,
                   inPopout: F
                 })
@@ -216,7 +217,7 @@ function P(e) {
             [j.idle]: H
           }),
           style: {
-            bottom: eb.value
+            bottom: e_.value
           },
           children: (0, r.jsx)(d.Z, {
             channelId: R.id,
@@ -227,29 +228,29 @@ function P(e) {
       }), (0, r.jsx)(a.animated.div, {
         className: j.participantsWrapperAnimated,
         style: {
-          translateY: ef.value.to(e => e * I / 2),
-          opacity: ef.value,
-          visibility: ef.value.to(e => 0 === e ? "hidden" : "visible")
+          translateY: em.value.to(e => e * I / 2),
+          opacity: em.value,
+          visibility: em.value.to(e => 0 === e ? "hidden" : "visible")
         },
         children: (0, r.jsx)(C.ZP, {
           channel: R,
           onClick: l,
           onContextMenu: P,
           onDoubleClick: S,
-          participants: ex,
-          participantTileWidth: ev,
+          participants: ev,
+          participantTileWidth: ej,
           selectedParticipantId: k.id,
           inCall: w,
           paused: D || X || !M,
           popoutWindow: A
         })
       })]
-    }), ey.length > 0 ? (0, r.jsx)(b.Z, {
+    }), ex.length > 0 ? (0, r.jsx)(b.Z, {
       onContextMenuParticipant: P,
       width: W,
       height: U,
       channel: R,
-      participants: ey,
+      participants: ex,
       onSelectParticipant: l
     }) : null]
   })

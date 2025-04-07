@@ -1,6 +1,6 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => g
+  Z: () => h
 });
 var r, i, o = n(39612),
   a = n(271579),
@@ -10,8 +10,8 @@ var r, i, o = n(39612),
   u = n(954824),
   d = n(751189),
   p = n(981631);
-let h = "template",
-  g = (r = function(e) {
+let g = "template",
+  h = (r = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -37,14 +37,14 @@ let h = "template",
       let n = null != e ? (0, o.Oh)(e) : (0, o.Gk)(),
         r = (0, a.WS)(),
         i = (0, a.ZP)(n, {
-          utmSource: h,
+          utmSource: g,
           fingerprint: t,
           attemptId: r
         });
       c.default.track(p.rMx.DEEP_LINK_CLICKED, {
         fingerprint: (0, l.K)(t),
         attempt_id: r,
-        source: h,
+        source: g,
         guild_template_code: e
       }), u.Z.launch(i, () => {})
     }

@@ -2,6 +2,7 @@
 "use strict";
 n.d(t, {
   B0: () => h,
+  Jj: () => v,
   M4: () => R,
   Nt: () => p,
   RV: () => y,
@@ -13,7 +14,6 @@ n.d(t, {
   i_: () => P,
   k8: () => N,
   ox: () => m,
-  qJ: () => v,
   yL: () => b
 }), n(415506), n(467055), n(388685);
 var r = n(192379),
@@ -140,7 +140,7 @@ async function y(e, t, n) {
 }
 async function v() {
   return await i.tn.get({
-    url: c.ANM.DSA_EXPERIMENT_UNAUTHENTICATED,
+    url: c.ANM.DSA_CAPABILITIES,
     rejectWithError: !1
   })
 }

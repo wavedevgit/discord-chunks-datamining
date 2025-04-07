@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: 92ba0de44a756192
+  Original File Name: 053c49b11a7c96f7
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -5395,31 +5395,34 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .container_bba364 {
+    justify-content: stretch;
+    flex-direction: column;
+    padding: 0 var(--spacing-16);
+    border-radius: 8px;
+    margin: var(--spacing-16) 0 0 0
+}
+
+.container_bba364,.reportButton_bba364 {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center
+    align-items: center;
+    background-color: var(--background-secondary)
 }
 
-.buttonColumn_bba364 {
-    margin: 12px;
-    width: 40%
+.reportButton_bba364 {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 var(--spacing-16);
+    padding: var(--spacing-16) 0;
+    cursor: pointer;
+    border-bottom: 1px solid var(--background-modifier-accent)
 }
 
-@media (max-width: 485px) {
-    .container_bba364 {
-        flex-direction: column;
-        align-items: stretch
-    }
-
-    .buttonColumn_bba364 {
-        width: auto;
-        margin: 12px 0
-    }
+.reportButton_bba364:last-child {
+    border-bottom: none
 }
 
 .image_d92626 {
     height: 100px
 }
 
-/*# sourceMappingURL=92ba0de44a756192.css.map*/
+/*# sourceMappingURL=053c49b11a7c96f7.css.map*/

@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(624138),
   p = n(749047);
 
-function h(e, t, n) {
+function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,14 +22,14 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      g(e, t, n[t])
     })
   }
   return e
@@ -61,7 +61,7 @@ let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(m.START, e) : e()
       }
       animateTo(e, t) {
-        l.Z.spring(this.anim, g({
+        l.Z.spring(this.anim, h({
           toValue: e
         }, _)).start(t)
       }
@@ -93,21 +93,21 @@ let f = (0, d.Mg)(c.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               } = t;
               return (0, r.jsx)(l.Z.div, {
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, g({}, this.props))
+                children: (0, r.jsx)(e, h({}, this.props))
               })
             }
           })
         })
       }
       constructor(...e) {
-        super(...e), h(this, "timeout", void 0), h(this, "anim", new l.Z.Value(m.START)), h(this, "state", {
+        super(...e), g(this, "timeout", void 0), g(this, "anim", new l.Z.Value(m.START)), g(this, "state", {
           shouldAnimate: !s.tq
-        }), h(this, "handleResize", () => {
+        }), g(this, "handleResize", () => {
           let e = window.innerWidth > f;
           !this.state.shouldAnimate && e && this.anim.setValue(m.END), this.setState({
             shouldAnimate: e
           })
-        }), h(this, "handleResizeDebounced", a()(this.handleResize, 60))
+        }), g(this, "handleResizeDebounced", a()(this.handleResize, 60))
       }
     }
   }
