@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(110924),
   N = n(317381),
   I = n(82888),
-  S = n(917107),
-  P = n(296797),
+  P = n(917107),
+  S = n(296797),
   Z = n(413523),
   T = n(358221),
   A = n(677601),
@@ -81,8 +81,8 @@ var r = n(200651),
   eE = n(657218),
   eN = n(66556),
   eI = n(739830),
-  eS = n(377929),
-  eP = n(900157),
+  eP = n(377929),
+  eS = n(900157),
   eZ = n(108427),
   eT = n(171368),
   eA = n(430670),
@@ -400,7 +400,7 @@ class tl extends i.PureComponent {
           });
           break;
         case ev.tI.VIEW_THREAD:
-          let n = (null == t ? void 0 : t.isForumLikeChannel()) ? B.Z : eP.Z;
+          let n = (null == t ? void 0 : t.isForumLikeChannel()) ? B.Z : eS.Z;
           e = (0, r.jsx)(n, {
             channelId: i.channelId
           });
@@ -628,7 +628,7 @@ class tl extends i.PureComponent {
             channelId: e.id
           }, "members")), null != t && (0, O.Lp)(e) && o.push((0, r.jsx)(et.Z, {
             channel: e
-          }, "summaries")), o.push((0, r.jsx)(eS.Z, {
+          }, "summaries")), o.push((0, r.jsx)(eP.Z, {
             channel: e
           }, "threads-overflow"));
           break;
@@ -802,7 +802,7 @@ let to = (0, j.Z)(tl),
         return N.ZP.getSelfEmbeddedActivityForChannel(null != (e = null == c ? void 0 : c.id) ? e : e3.lds)
       }),
       M = (0, p.e7)([N.ZP], () => N.ZP.getActivityPanelMode()),
-      D = null != k && !(0, S.Z)(null == c ? void 0 : c.id) && M === e7.Ez.PANEL,
+      D = null != k && !(0, P.Z)(null == c ? void 0 : c.id) && M === e7.Ez.PANEL,
       U = (0, p.e7)([eq.Z], () => null != c && c.isVocalThread() && !u().isEmpty(eq.Z.getVoiceStatesForChannel(c.id)), [c]),
       B = null != c && c.isPrivate() && !D && x,
       F = (null == c ? void 0 : c.isGuildVocal()) || B || U,
@@ -832,7 +832,7 @@ let to = (0, j.Z)(tl),
       ea = (0, eK.ZP)(c, !0),
       es = null != c && s === c.id,
       ec = null != c && c.isGuildStageVoice();
-    (0, P.Z)({
+    (0, S.Z)({
       onTransition: void 0
     }), i.useEffect(() => {
       var e, t, n;

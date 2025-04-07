@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(141321),
   N = n(221241),
   I = n(618158),
-  S = n(390322),
-  P = n(616286),
+  P = n(390322),
+  S = n(616286),
   Z = n(961048),
   T = n(975146),
   A = n(430824),
@@ -115,7 +115,7 @@ function X(e) {
       position: "bottom",
       animation: c.yRy.Animation.NONE,
       align: "right",
-      renderPopout: e => (0, r.jsx)(S.Z, {
+      renderPopout: e => (0, r.jsx)(P.Z, {
         children: (0, r.jsx)(B.ZP, K(q({}, e), {
           channelId: n.id,
           appContext: _,
@@ -162,7 +162,7 @@ function X(e) {
       className: o()(Y.button, {
         [Y.sidebarOpen]: F || s
       }),
-      children: (0, r.jsx)(P.T, {
+      children: (0, r.jsx)(S.T, {
         channelId: n.id,
         showRequestToSpeakSidebar: s,
         toggleRequestToSpeakSidebar: l,
@@ -179,21 +179,21 @@ function Q(e) {
     channel: l,
     toggleRequestToSpeakSidebar: d,
     showRequestToSpeakSidebar: p
-  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([W.Z], () => W.Z.getStageInstanceByChannel(l.id)), m = (0, k.Io)(l.id), g = (0, k.Rk)(l.id, M.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), C = null != (t = null == b ? void 0 : b.maxStageVideoChannelUsers) ? t : 0, y = (null == b ? void 0 : b.isCommunity()) ? C < F.TU7 : (null == b ? void 0 : b.premiumTier) !== F.Eu4.TIER_3 && C <= F.eez, E = (0, H.Z)(l), N = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), I = (0, x.Q3)("StageChannelCallHeader"), S = () => {
+  } = e, h = (0, _.ZP)(l), f = (0, a.e7)([W.Z], () => W.Z.getStageInstanceByChannel(l.id)), m = (0, k.Io)(l.id), g = (0, k.Rk)(l.id, M.pV.AUDIENCE), b = (0, a.e7)([A.Z], () => A.Z.getGuild(l.guild_id), [l.guild_id]), C = null != (t = null == b ? void 0 : b.maxStageVideoChannelUsers) ? t : 0, y = (null == b ? void 0 : b.isCommunity()) ? C < F.TU7 : (null == b ? void 0 : b.premiumTier) !== F.Eu4.TIER_3 && C <= F.eez, E = (0, H.Z)(l), N = (0, a.e7)([w.Z], () => w.Z.can(D.yP, l)), I = (0, x.Q3)("StageChannelCallHeader"), P = () => {
     u.Z.updateStageVideoLimitBoostUpsellDismissed(l.id, !0), R.default.track(F.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: l.guild_id,
       type: V.cd.VIDEO_STAGE_LIMIT,
       is_moderator: N,
       action: V.T7.DISMISS
     })
-  }, P = {
+  }, S = {
     canModerate: N,
     audienceCount: g,
     channel: l,
     speakerCount: m
-  }, Z = i.useRef(P);
+  }, Z = i.useRef(S);
   i.useEffect(() => {
-    Z.current = P
+    Z.current = S
   }), i.useEffect(() => {
     let {
       canModerate: e,
@@ -280,7 +280,7 @@ function Q(e) {
         children: y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.zxk, {
             className: Y.notNowButton,
-            onClick: S,
+            onClick: P,
             look: c.zxk.Looks.BLANK,
             size: c.zxk.Sizes.SMALL,
             children: z.NW.string(z.t.L5eIZ2)
@@ -304,7 +304,7 @@ function Q(e) {
           })]
         }) : (0, r.jsx)(c.zxk, {
           className: Y.notNowButton,
-          onClick: S,
+          onClick: P,
           look: c.zxk.Looks.BLANK,
           size: c.zxk.Sizes.SMALL,
           children: z.NW.string(z.t.WAI6xs)

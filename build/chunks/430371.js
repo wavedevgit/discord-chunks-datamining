@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => S
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -58,12 +58,12 @@ function E(e, t) {
 let N = 16 / 9,
   I = 8 + C.cF;
 
-function S(e) {
+function P(e) {
   var t;
   let n, {
       onSelectParticipant: l,
-      onContextMenuParticipant: S,
-      onFullscreenParticipant: P,
+      onContextMenuParticipant: P,
+      onFullscreenParticipant: S,
       participants: Z,
       filteredParticipants: T,
       popoutWindow: A,
@@ -203,8 +203,8 @@ function S(e) {
                   width: W,
                   participant: t,
                   onClick: l,
-                  onDoubleClick: P,
-                  onContextMenu: S,
+                  onDoubleClick: S,
+                  onContextMenu: P,
                   onVideoResize: ey,
                   inCall: w,
                   inPopout: F
@@ -235,8 +235,8 @@ function S(e) {
         children: (0, r.jsx)(C.ZP, {
           channel: R,
           onClick: l,
-          onContextMenu: S,
-          onDoubleClick: P,
+          onContextMenu: P,
+          onDoubleClick: S,
           participants: ev,
           participantTileWidth: ej,
           selectedParticipantId: k.id,
@@ -246,7 +246,7 @@ function S(e) {
         })
       })]
     }), ex.length > 0 ? (0, r.jsx)(b.Z, {
-      onContextMenuParticipant: S,
+      onContextMenuParticipant: P,
       width: W,
       height: U,
       channel: R,

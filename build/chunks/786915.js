@@ -51,8 +51,8 @@ function y(e) {
     shouldPrioritizeGroupPlusIcon: E = !1,
     embeddedActivity: N,
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   } = e, T = function(e, t) {
     if (null == e) return {};
@@ -83,8 +83,8 @@ function y(e) {
     iconComponent: null == t || E ? s.ejJ : s.gQj,
     label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   }) : null != k && null != y && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(g.Z, C({
     onClick: () => {
@@ -143,8 +143,8 @@ function y(e) {
     iconComponent: null == t || E ? s.ejJ : s.gQj,
     label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
     iconClassName: I,
-    look: S,
-    size: P,
+    look: P,
+    size: S,
     buttonText: Z
   }, T)) : null
 }

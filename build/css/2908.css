@@ -1,6 +1,6 @@
 /**
   Module ID: 2908
-  Original File Name: f073a0780b3437b9
+  Original File Name: f44917e2ff8ba846
 **/
 .container__1ce5d {
     position: relative
@@ -19,8 +19,12 @@
     background: var(--brand-05a)
 }
 
-.nitroMessage__5126c {
-    background: linear-gradient(90deg,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.15),hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.15))
+.nitroMessage__5126c.nitroMessage__5126c {
+    background: linear-gradient(90deg,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.08),hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.08))
+}
+
+.nitroMessage__5126c.nitroMessage__5126c a {
+    color: var(--text-link)
 }
 
 .automodMessage__5126c {
@@ -439,4 +443,4 @@
     display: inline
 }
 
-/*# sourceMappingURL=f073a0780b3437b9.css.map*/
+/*# sourceMappingURL=f44917e2ff8ba846.css.map*/

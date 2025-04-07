@@ -1,14 +1,14 @@
 /** Chunk was on 97573 **/
-n.d(t, {
+r.d(t, {
   Z: () => d
 });
-var s = n(200651);
-n(192379);
-var r = n(120356),
-  i = n.n(r),
-  a = n(481060),
-  o = n(388032),
-  l = n(622680);
+var s = r(200651);
+r(192379);
+var n = r(120356),
+  i = r.n(n),
+  a = r(481060),
+  o = r(388032),
+  l = r(622680);
 let c = Object.freeze({
   DEFAULT: l.default,
   FILLED: l.filled
@@ -17,14 +17,14 @@ let c = Object.freeze({
 function d(e) {
   let {
     className: t,
-    onClick: n,
-    "aria-label": r,
+    onClick: r,
+    "aria-label": n,
     look: d = c.DEFAULT
   } = e;
   return (0, s.jsx)(a.P3F, {
-    "aria-label": null != r ? r : o.NW.string(o.t.N86XcH),
+    "aria-label": null != n ? n : o.NW.string(o.t.N86XcH),
     className: i()(l.button, d, t),
-    onClick: n
+    onClick: r
   })
 }
 d.Looks = c

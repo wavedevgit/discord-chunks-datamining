@@ -59,19 +59,25 @@ let u = {
       }, []),
       a = i.useCallback(() => {
         null != e.current && e.current.play("all")
-      }, []);
-    return {
-      events: {
-        onMouseEnter: a,
-        onMouseLeave: i.useCallback(() => {
-          null != e.current && e.current.stopIfPlaying("all")
-        }, [])
-      },
-      play: t,
-      Component: i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
+      }, []),
+      l = i.useCallback(() => {
+        null != e.current && e.current.stopIfPlaying("all")
+      }, []),
+      d = i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
         src: () => n.e("52680").then(n.t.bind(n, 728913, 19)),
         ref: e,
         markers: u
-      })), [])
+      })), []);
+    return {
+      events: {
+        onMouseEnter: a,
+        onMouseLeave: l
+      },
+      play: t,
+      getDuration: i.useCallback(() => {
+        var t;
+        return null == (t = e.current) ? void 0 : t.getDuration()
+      }, []),
+      Component: d
     }
   }

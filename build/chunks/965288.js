@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function S(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = i.memo(function(e) {
+let S = i.memo(function(e) {
     let {
       guildId: t,
       channelId: n,
@@ -118,7 +118,7 @@ let P = i.memo(function(e) {
             [N.faded]: c || u
           })
         })]
-      }), (0, r.jsx)(P, {
+      }), (0, r.jsx)(S, {
         guildId: i,
         channelId: l.id,
         user: s,
@@ -140,7 +140,7 @@ let P = i.memo(function(e) {
       blocked: d
     } = t, v = l.getGuildId(), j = y.default.getId(), {
       newestAnalyticsLocation: O
-    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), P = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
+    } = (0, g.ZP)(m.Z.AUDIENCE_TILE), S = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
       var e;
       return null != v && (null == (e = x.ZP.getMember(v, a.id)) ? void 0 : e.premiumSince) != null
     }, [v, a.id]);
@@ -158,7 +158,7 @@ let P = i.memo(function(e) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-        return t => (0, r.jsx)(e, S(I({}, t), {
+        return t => (0, r.jsx)(e, P(I({}, t), {
           user: a,
           guildId: v,
           channel: l,
@@ -171,15 +171,15 @@ let P = i.memo(function(e) {
           })
         }))
       }, {
-        context: P
+        context: S
       })
-    }, [a, j, P, v, l, O]);
+    }, [a, j, S, v, l, O]);
     return (0, r.jsx)(C.Z, {
       user: a,
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: !0,
-      children: e => (0, r.jsx)(p.P3F, S(I({
+      children: e => (0, r.jsx)(p.P3F, P(I({
         className: o()(N.tileContainer, {
           [N.singleIcon]: T || d,
           [N.doubleIcon]: T && d

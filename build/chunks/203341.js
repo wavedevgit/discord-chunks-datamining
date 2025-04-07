@@ -69,12 +69,12 @@ function E(e) {
     }),
     E = (0, l.e7)([p.Z], () => p.Z.hasLayers()),
     [N, I] = (0, l.Wu)([s.Z], () => [s.Z.getMode(t.id), s.Z.getLayout(t.id)]),
-    S = (0, a.s9z)(a.JQI),
-    P = (0, m.Z)().filter(e => e.twoWayLink),
+    P = (0, a.s9z)(a.JQI),
+    S = (0, m.Z)().filter(e => e.twoWayLink),
     [Z, T] = i.useState(!1),
     A = y.WtW.VOICE !== N && [y.AEg.NO_CHAT, y.AEg.FULL_SCREEN].includes(I) ? "top" : "bottom",
     w = [];
-  return P.length > 0 && w.push(o.z.DONUT_DESKTOP_NUX), (0, r.jsx)(c.ZP, {
+  return S.length > 0 && w.push(o.z.DONUT_DESKTOP_NUX), (0, r.jsx)(c.ZP, {
     contentTypes: w,
     children: e => {
       let {
@@ -86,7 +86,7 @@ function E(e) {
         spacing: s ? 16 : void 0,
         positionKey: "".concat(N, ":").concat(I),
         onRequestClose: () => T(!1),
-        shouldShow: (s || Z) && !E && !S,
+        shouldShow: (s || Z) && !E && !P,
         renderPopout: e => {
           let {
             closePopout: n
@@ -98,7 +98,7 @@ function E(e) {
               onAccept: () => {
                 l(x.L.UNKNOWN), T(!0)
               },
-              gameConsoleAccounts: P
+              gameConsoleAccounts: S
             }) : (0, r.jsx)(j, {
               onClose: () => {
                 n()

@@ -32,8 +32,8 @@ function E(e) {
     guildId: E,
     location: N,
     className: I,
-    onNavigate: S
-  } = e, P = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, y.z0)(l, E, {
+    onNavigate: P
+  } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, y.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
   }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
@@ -41,7 +41,7 @@ function E(e) {
     let e = null == Z ? void 0 : Z.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = P.current) || t.scrollTo({
+      null == (t = S.current) || t.scrollTo({
         to: e,
         animate: !1
       })
@@ -140,10 +140,10 @@ function E(e) {
     children: [(0, r.jsx)(x.Z, {
       guildId: E,
       userId: l,
-      onNavigate: S
+      onNavigate: P
     }), (0, r.jsx)(c.Den, {
       className: O.innerContainer,
-      ref: P,
+      ref: S,
       onScroll: D,
       children: (0, r.jsx)(m.Z, {
         searchResults: B,

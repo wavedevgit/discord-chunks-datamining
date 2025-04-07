@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(765104),
   N = n(122707),
   I = n(779836),
-  S = n(23750),
-  P = n(496675),
+  P = n(23750),
+  S = n(496675),
   Z = n(306680),
   T = n(944486),
   A = n(594174),
@@ -88,7 +88,7 @@ let en = i.memo(function(e) {
     compact: o,
     isGroupStart: l,
     channel: n,
-    message: new S.ZP({
+    message: new P.ZP({
       id: t.id,
       key: "pending-upload-".concat(t.id),
       type: Q.uaV.DEFAULT,
@@ -161,8 +161,8 @@ function er(e) {
     eN = (0, _.Z)(f.id);
   (0, q.Z)();
   let eI = null,
-    eS = [],
-    eP = eo.map((e, t) => {
+    eP = [],
+    eS = eo.map((e, t) => {
       if (e.type === Q.ys_.DIVIDER) {
         var n, i;
         let l = null != e.unreadId;
@@ -195,7 +195,7 @@ function er(e) {
         }, e.key)
       }
       if (null != eu && eu > e.content.timestamp.getTime() * R.Z.Millis.SECOND) return;
-      let l = P.Z.can(Q.Plq.CREATE_INSTANT_INVITE, f);
+      let l = S.Z.can(Q.Plq.CREATE_INSTANT_INVITE, f);
       if ((0, L.Z)(e.content, l)) return;
       e.type === Q.ys_.MESSAGE && null == eI && (eI = e);
       let o = e.groupId === (null == eI ? void 0 : eI.groupId) ? eI.content.id : e.groupId,
@@ -211,14 +211,14 @@ function er(e) {
         renderContentOnly: eN
       }, e.content.id)
     });
-  eS.push(...eP);
+  eP.push(...eS);
   let eZ = eo[eo.length - 1];
   if (null != ef && ea.forEach((e, t) => {
-      let n = 0 === t && (0, D.J)(f, eZ, new S.ZP({
+      let n = 0 === t && (0, D.J)(f, eZ, new P.ZP({
         type: Q.uaV.DEFAULT,
         author: ef
       }));
-      eS.push((0, r.jsx)(en, {
+      eP.push((0, r.jsx)(en, {
         file: e,
         channel: f,
         user: ef,
@@ -226,7 +226,7 @@ function er(e) {
         compact: el
       }, "upload-".concat(e.id)))
     }), B.hasMoreBefore && null == eu) {
-    B.length > 0 && eS.unshift((0, r.jsx)("div", {
+    B.length > 0 && eP.unshift((0, r.jsx)("div", {
       style: {
         height: X.D4,
         flex: "0 0 auto"
@@ -235,16 +235,16 @@ function er(e) {
     let {
       useReducedMotion: e
     } = u.Z;
-    (e && em() || !e) && eS.unshift((0, r.jsx)(z.ZP, ee({
+    (e && em() || !e) && eP.unshift((0, r.jsx)(z.ZP, ee({
       compact: el
     }, ec), "has-more"))
   }
-  if (B.hasMoreBefore && null == eu || eS.unshift((0, r.jsx)(m.Z, {
+  if (B.hasMoreBefore && null == eu || eP.unshift((0, r.jsx)(m.Z, {
       channel: f,
       showingBanner: ed
-    }, "empty-message")), B.hasMoreAfter && eS.push((0, r.jsx)(z.ZP, ee({
+    }, "empty-message")), B.hasMoreAfter && eP.push((0, r.jsx)(z.ZP, ee({
       compact: el
-    }, ec), "has-more-after")), !ed && eg && em() && eS.push((0, r.jsx)(Y.Z, {
+    }, ec), "has-more-after")), !ed && eg && em() && eP.push((0, r.jsx)(Y.Z, {
       channel: f
     })), er > 0 && ei && em()) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(f.id),
@@ -387,7 +387,7 @@ function er(e) {
     })
   }
   return {
-    channelStreamMarkup: eS,
+    channelStreamMarkup: eP,
     newMessagesBar: i,
     jumpToPresentBar: s,
     forumPostActionBar: eE,

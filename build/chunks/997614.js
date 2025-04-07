@@ -27,9 +27,9 @@ var r = n(200651),
   E = n(304388),
   N = n(981631),
   I = n(127379),
-  S = n(388032);
+  P = n(388032);
 
-function P(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -96,7 +96,7 @@ function T(e) {
   });
 
   function Q() {
-    return W ? S.NW.string(S.t["Ox4/zc"]) : U ? S.NW.string(S.t["+YBKYG"]) : B ? S.NW.string(S.t.X1lQlp) : void 0
+    return W ? P.NW.string(P.t["Ox4/zc"]) : U ? P.NW.string(P.t["+YBKYG"]) : B ? P.NW.string(P.t.X1lQlp) : void 0
   }
 
   function J(e) {
@@ -104,7 +104,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, Z(P({
+      return t => (0, r.jsx)(e, Z(S({
         guildId: D,
         sourceAnalyticsLocations: z
       }, t), {
@@ -143,7 +143,7 @@ function T(e) {
         })
       })
     },
-    children: e => q ? (0, r.jsx)(y.d, Z(P({
+    children: e => q ? (0, r.jsx)(y.d, Z(S({
       themeable: T,
       label: Q(),
       iconComponent: k,
@@ -161,7 +161,7 @@ function T(e) {
       },
       color: e.isActive ? K ? "primaryDark" : Y === m.BK.GroupedButtonsRedMic || X ? "green" : void 0 : void 0,
       className: ""
-    })) : (0, r.jsx)(y.Z, Z(P({
+    })) : (0, r.jsx)(y.Z, Z(S({
       themeable: T,
       label: Q(),
       iconComponent: s.KY1,

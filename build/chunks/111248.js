@@ -31,7 +31,7 @@ function _(e) {
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), N = C.length, I = E * N + 8 * (N - 1), S = i.useMemo(() => ({
+  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), N = C.length, I = E * N + 8 * (N - 1), P = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1)
   }), [N]);
@@ -39,7 +39,7 @@ function _(e) {
     var e;
     null == (e = j.current) || e.ensureIsInPosition()
   }, [C.length]);
-  let P = i.useCallback(e => {
+  let S = i.useCallback(e => {
       let t = 0 === N ? e : (e - 8 * (N - 1)) / N;
       c.d7(t, f.cL.CAMERA_PREVIEW)
     }, [N]),
@@ -54,14 +54,14 @@ function _(e) {
       width: I,
       ref: j,
       onMove: Z,
-      onResize: P,
+      onResize: S,
       maxX: t,
       maxY: l,
       edgeOffsetTop: O,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
-      resizeConfig: S,
+      resizeConfig: P,
       children: (0, r.jsx)("div", {
         className: m.tileContainer,
         children: C.map(e => (0, r.jsx)(p.ZP, {

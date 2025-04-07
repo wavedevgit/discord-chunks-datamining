@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(7782),
   N = n(967128),
   I = n(320781),
-  S = n(269203),
-  P = n(86863),
+  P = n(269203),
+  S = n(86863),
   Z = n(558756),
   T = n(753898),
   A = n(734386),
@@ -116,7 +116,7 @@ function F(e) {
         className: U.button,
         channel: p,
         user: I
-      }), (0, r.jsx)(P.n, {
+      }), (0, r.jsx)(S.n, {
         className: U.button,
         user: I,
         application: G,
@@ -156,7 +156,7 @@ function F(e) {
         children: W.NW.string(W.t.M8Ao6O)
       })]
     });
-    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(S.Z, {
+    else if (p.hasFlag(D.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, r.jsx)(P.Z, {
     channel: p
   });
   else return (0, r.jsx)(T.Z, {

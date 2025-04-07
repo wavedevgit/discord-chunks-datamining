@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => P
+  Z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -45,14 +45,14 @@ function I(e) {
   }
   return e
 }
-let S = e => 1 - Math.pow(1 - e, 3);
+let P = e => 1 - Math.pow(1 - e, 3);
 
-function P(e) {
+function S(e) {
   let {
     channel: t,
     buyer: l,
     onClose: a,
-    dismissibleContent: P
+    dismissibleContent: S
   } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     M(!0)
@@ -69,7 +69,7 @@ function P(e) {
       },
       config: {
         duration: 250,
-        easing: S,
+        easing: P,
         immediate: !k
       }
     }),
@@ -86,7 +86,7 @@ function P(e) {
     F = t.hdStreamingUntil;
   if (null == F || null == l || null == T) return null;
   let G = s()(F).diff(s()(), "hours"),
-    V = P ? O.NW.format(O.t["6LrV9f"], {
+    V = S ? O.NW.format(O.t["6LrV9f"], {
       username: B,
       num: G,
       helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)

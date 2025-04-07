@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 n.d(t, {
   Z: () => T,
-  z: () => P
+  z: () => S
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -28,8 +28,8 @@ var r = n(200651),
   E = n(823379),
   N = n(981631),
   I = n(217702),
-  S = n(955525);
-let P = 10 * O.Z.Millis.SECOND;
+  P = n(955525);
+let S = 10 * O.Z.Millis.SECOND;
 
 function Z(e) {
   var t;
@@ -47,7 +47,7 @@ function Z(e) {
       messageId: n.id,
       flash: !0
     }))
-  }, [n.channel_id, n.id]), P = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
+  }, [n.channel_id, n.id]), S = null != n.content && "" !== n.content ? (0, g.ZP)(n, {
     isInteracting: x,
     shouldFilterKeywords: E
   }).content : null, {
@@ -55,18 +55,18 @@ function Z(e) {
     renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, _.f)(n, P, l, a, S.messageContent, {
-    trailingIconClass: S.messageContentTrailingIcon,
-    leadingIconClass: S.messageContentLeadingIcon,
+  } = (0, _.f)(n, S, l, a, P.messageContent, {
+    trailingIconClass: P.messageContentTrailingIcon,
+    leadingIconClass: P.messageContentLeadingIcon,
     iconSize: I.WW
   }), R = (0, C.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(y.Z, {
-    className: S.sticker,
+    className: P.sticker,
     size: 128,
     sticker: e,
     isInteracting: x
   }, e.id)) : null;
   return (0, r.jsxs)(u.P3F, {
-    className: S.toast,
+    className: P.toast,
     onMouseEnter: () => {
       O(!0)
     },
@@ -75,8 +75,8 @@ function Z(e) {
     },
     onClick: N,
     children: [(0, r.jsxs)("div", {
-      className: o()(S.messageContentWrapper, {
-        [S.mentioned]: n.mentioned
+      className: o()(P.messageContentWrapper, {
+        [P.mentioned]: n.mentioned
       }),
       children: [null != k ? null : w, null != (t = null != T ? T : k) ? t : (0, r.jsx)("span", {
         children: Z
@@ -88,7 +88,7 @@ function Z(e) {
         userId: n.author.id,
         avatar: s.guildMemberAvatar
       }) : n.author.getAvatarURL(d, 32),
-      className: S.avatar
+      className: P.avatar
     })]
   })
 }
@@ -139,7 +139,7 @@ function T(e) {
     channelId: t,
     isFrozen: l,
     count: 3,
-    lingerMs: P
+    lingerMs: S
   }), m = i.useRef({}), [g, b] = i.useState({}), _ = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
   }, []), C = i.useRef(g);
@@ -205,7 +205,7 @@ function T(e) {
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
         ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
-        className: S.toastWrapper,
+        className: P.toastWrapper,
         style: e,
         children: (0, r.jsx)(Z, {
           message: t.message

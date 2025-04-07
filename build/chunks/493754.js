@@ -109,10 +109,10 @@ function y(e) {
   let E = null == o ? void 0 : o.getGuildId(),
     N = null == o ? void 0 : o.id,
     I = (0, s.e7)([p.Z], () => null != E ? p.Z.getGuild(E) : null, [E]),
-    S = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(N), [N]);
+    P = (0, s.e7)([u.ZP], () => u.ZP.getActiveEventByChannel(N), [N]);
   if (!(null != I && null != o && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, o))) return null;
-  let P = m.NW.string(m.t.VINpSE);
-  return null != n ? P = m.NW.string(m.t["6VQaqa"]) : null != i && (P = m.NW.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
+  let S = m.NW.string(m.t.VINpSE);
+  return null != n ? S = m.NW.string(m.t["6VQaqa"]) : null != i && (S = m.NW.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.zxk, _(b({
       size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
@@ -125,12 +125,12 @@ function y(e) {
           appContext: x,
           exitFullScreen: y,
           analyticsLocation: v,
-          guildScheduledEvent: S
+          guildScheduledEvent: P
         })
       },
       className: l()(j, g.textButton)
     }, O), {
-      children: P
+      children: S
     })), (0, r.jsx)(d.Z, {
       channel: o,
       stream: n,
@@ -138,7 +138,7 @@ function y(e) {
       className: l()(j, g.iconButton),
       exitFullScreen: y,
       analyticsLocation: v,
-      guildScheduledEvent: S
+      guildScheduledEvent: P
     })]
   })
 }

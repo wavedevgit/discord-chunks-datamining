@@ -28,8 +28,8 @@ var r = n(200651),
   E = n(221241),
   N = n(199902),
   I = n(314897),
-  S = n(430824),
-  P = n(496675),
+  P = n(430824),
+  S = n(496675),
   Z = n(979651),
   T = n(88751),
   A = n(252132),
@@ -137,7 +137,7 @@ let W = 16 / 9,
       largeStream: null != l && b.Z.getStageStreamSize(l.id)
     })), I = i.useCallback((e, t) => {
       if (e.type === k.fO.STREAM && 0 === j.filter(t => (0, y.V9)(t) === e.id && t.state !== R.jm8.ENDED).length) {
-        if (!(0, x.p9)(l, Z.Z, S.Z, P.Z, C.Z)[0]) return;
+        if (!(0, x.p9)(l, Z.Z, P.Z, S.Z, C.Z)[0]) return;
         (0, p.rn)((0, y.my)(e.id), {
           forceMultiple: t.shiftKey
         })
@@ -179,7 +179,7 @@ let W = 16 / 9,
       user: v
     } = i, O = (0, s.e7)([b.Z], () => b.Z.getParticipant(l.id, i.id), [l.id, i.id]), N = (0, s.e7)([T.ZP], () => T.ZP.isModerator(v.id, l.id), [l.id, v.id]);
     if (null == O || O.type === k.fO.ACTIVITY || O.type === k.fO.PRESENCE_EMBEDDED_ACTIVITY) return null;
-    let S = e => {
+    let P = e => {
         (0, g.h)({
           type: a.ImpressionTypes.MENU,
           name: a.ImpressionNames.CALL_TILE_CONTEXT_MENU,
@@ -190,11 +190,11 @@ let W = 16 / 9,
           }
         })
       },
-      P = (e, t, i, o) => {
+      S = (e, t, i, o) => {
         switch (e.type) {
           case k.fO.HIDDEN_STREAM:
           case k.fO.STREAM:
-            S(k.TH.STREAM), (0, d.jW)(t, async () => {
+            P(k.TH.STREAM), (0, d.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
@@ -214,7 +214,7 @@ let W = 16 / 9,
             return;
           case k.fO.USER:
           default:
-            if (S(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
+            if (P(k.TH.USER), x && i) return (0, j.D)(t, v, l, {
               context: p
             }, (e, t) => (0, _.o)({
               menuName: e,
@@ -253,7 +253,7 @@ let W = 16 / 9,
       user: v,
       width: c,
       isModerator: N,
-      onContextMenu: P,
+      onContextMenu: S,
       inPopout: p === R.IlC.POPOUT
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
@@ -263,7 +263,7 @@ let W = 16 / 9,
       user: v,
       width: c,
       isModerator: N,
-      onContextMenu: P,
+      onContextMenu: S,
       inPopout: p === R.IlC.POPOUT
     })
   })

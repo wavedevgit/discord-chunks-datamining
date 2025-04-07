@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: eca91d7d0d8f2a31
+  Original File Name: 5ab9e79003f2b4d1
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -8775,6 +8775,33 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     height: 18px
 }
 
+.editableGdmIcon_ec5bef {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.editableGdmIcon_ec5bef .editableGdmIconIndicator_ec5bef {
+    display: none
+}
+
+.editableGdmIcon_ec5bef:hover>:not(.editableGdmIconIndicator_ec5bef) {
+    opacity: .2
+}
+
+.editableGdmIcon_ec5bef:hover .editableGdmIconIndicator_ec5bef {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
 .container__754bd {
     flex: 1 1 auto;
     display: flex;
@@ -8799,6 +8826,94 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 .channelName__754bd div,.channelName__754bd input {
     font-family: var(--font-display);
     font-weight: 600
+}
+
+.newWrapper__754bd {
+    gap: 12px
+}
+
+.hoverableContainer__754bd,.newWrapper__754bd {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.hoverableContainer__754bd {
+    border-radius: 8px;
+    height: 32px;
+    gap: 4px;
+    cursor: pointer;
+    border: 1px solid transparent
+}
+
+.hoverableContainer__754bd .newGdmIcon__754bd {
+    margin-left: 8px;
+    margin-right: 4px
+}
+
+.hoverableContainer__754bd .editIcon__754bd {
+    display: none
+}
+
+.hoverableContainer__754bd .clickableTitle__754bd {
+    padding-right: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    align-self: stretch
+}
+
+.hoverableContainer__754bd .clickableTitle__754bd:hover .editIcon__754bd {
+    display: block
+}
+
+.hoverableContainer__754bd.editing__754bd,.hoverableContainer__754bd:hover:not(.editing__754bd) {
+    background-color: var(--bg-mod-faint)
+}
+
+.hoverableContainer__754bd.editing__754bd {
+    border-color: var(--border-subtle)
+}
+
+.newInput__754bd {
+    padding: 0;
+    height: auto;
+    background-color: transparent;
+    background-color: initial;
+    border: none!important;
+    outline: none!important;
+    font-family: var(--font-primary);
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--interactive-active)
+}
+
+.explainer__754bd {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    white-space: nowrap
+}
+
+.explainer__754bd a {
+    transition: .05s;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.explainer__754bd a:hover {
+    -webkit-text-decoration: underline;
+    text-decoration: underline
+}
+
+.explainer__754bd .visibleLink__754bd a {
+    color: var(--text-link)
 }
 
 .visual-refresh .channelName__754bd div,.visual-refresh .channelName__754bd input {
@@ -13950,4 +14065,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=eca91d7d0d8f2a31.css.map*/
+/*# sourceMappingURL=5ab9e79003f2b4d1.css.map*/

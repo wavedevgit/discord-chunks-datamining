@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(41776),
   N = n(657352),
   I = n(33154),
-  S = n(144114),
-  P = n(703656),
+  P = n(144114),
+  S = n(703656),
   Z = n(210887),
   T = n(606956),
   A = n(271383),
@@ -238,7 +238,7 @@ class z extends i.PureComponent {
           default: e
         } = await Promise.all([n.e("76540"), n.e("84575")]).then(n.bind(n, 607018));
         return t => (0, r.jsx)(e, G({
-          reason: S.L.GUILD_PHONE_REQUIRED
+          reason: P.L.GUILD_PHONE_REQUIRED
         }, t))
       }, {
         modalKey: U.M
@@ -282,7 +282,7 @@ class z extends i.PureComponent {
     }), F(this, "handleGoBack", () => {
       this.setState({
         submitting: !0
-      }), (0, P.s1)().goBack()
+      }), (0, S.s1)().goBack()
     }), F(this, "handleFollowAnnouncement", () => {
       let {
         channel: e
@@ -342,7 +342,7 @@ function Y(e) {
   } = e, s = l.getGuildId(), c = (0, a.e7)([w.Z], () => w.Z.getGuild(s)), u = (0, a.e7)([R.Z], () => R.Z.getCheck(s)), d = l.type === W.d4z.GUILD_ANNOUNCEMENT && null != c && c.hasFeature(W.oNc.NEWS), h = (0, a.e7)([T.Z], () => d ? T.Z.getFollowerStatsForChannel(l.id) : null), g = (0, a.e7)([E.Z], () => E.Z.isLurking(s)), b = (0, a.e7)([M.default], () => M.default.getCurrentUser()), C = null != (t = null == b ? void 0 : b.isStaff()) && t, j = (0, a.e7)([A.ZP], () => {
     var e, t;
     return null != b && null != (t = null == (e = A.ZP.getMember(s, b.id)) ? void 0 : e.isPending) && t
-  }), N = !!(0, x.Dc)(c), I = (j || u.notClaimed) && N, S = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), P = (0, a.e7)([k.Z], () => k.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([v.Z], () => v.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === y.wB.APPROVED, Y = i.useRef(B);
+  }), N = !!(0, x.Dc)(c), I = (j || u.notClaimed) && N, P = (0, a.e7)([O.Z], () => O.Z.shouldShowPopout(s)), S = (0, a.e7)([k.Z], () => k.Z.can(W.Plq.SEND_MESSAGES, l)), D = (0, a.e7)([v.Z], () => v.Z.getRequest(s)), [U, B] = (0, f.L_)(s), H = (0, f.Cc)(s), F = (null == D ? void 0 : D.applicationStatus) === y.wB.APPROVED, Y = i.useRef(B);
   i.useEffect(() => {
     Y.current = B
   }), i.useEffect(() => {
@@ -352,10 +352,10 @@ function Y(e) {
     guild: c,
     isLurking: g,
     isFollowable: d,
-    shouldShowLurkerModeSuccessPopout: S,
+    shouldShowLurkerModeSuccessPopout: P,
     showLurkerModeUpsellPopout: g && null != c && L.Uu(W.Plq.SEND_MESSAGES, l),
     theme: Z.Z.theme,
-    canSendMessages: P,
+    canSendMessages: S,
     channelFollowingUsersSeen: null != h ? h.usersSeenEver : null,
     hasVerificationGate: N,
     showMemberVerificationModal: I,

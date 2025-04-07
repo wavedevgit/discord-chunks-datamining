@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(159299),
   N = n(823415),
   I = n(670188),
-  S = n(199902),
-  P = n(271383),
+  P = n(199902),
+  S = n(271383),
   Z = n(430824),
   T = n(158776),
   A = n(885110),
@@ -72,10 +72,10 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
       sectionId: l,
       userId: o,
       guildOwnerId: a
-    } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([P.ZP], () => P.ZP.getMember(t.guild_id, o)), h = (0, p.e7)([Z.Z], () => {
+    } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([S.ZP], () => S.ZP.getMember(t.guild_id, o)), h = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, u.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), C = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), y = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([S.Z], () => S.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, U = i.useCallback(e => {
+    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), C = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), y = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, U = i.useCallback(e => {
       null != g && (0, f.jW)(e, async () => {
         let {
           default: e

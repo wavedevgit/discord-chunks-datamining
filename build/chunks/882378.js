@@ -48,7 +48,7 @@ let C = i.memo(function(e) {
     let e = O();
     null != e && I(e)
   }, [y, x, O]);
-  let S = i.useCallback(() => {
+  let P = i.useCallback(() => {
     null != x && (0, c.T)(t.id, [x.id]), null != C && ((0, a.ZDy)(async () => {
       let {
         default: e
@@ -87,7 +87,7 @@ let C = i.memo(function(e) {
     tooltipContentClassName: _.tooltipContent,
     children: () => (0, r.jsx)(m.ZP.Icon, {
       icon: a.b7C,
-      onClick: S,
+      onClick: P,
       tooltip: b.NW.string(b.t.rpc2qq),
       tooltipDisabled: null != x
     })

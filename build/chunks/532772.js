@@ -64,19 +64,25 @@ let u = {
       }, []),
       a = i.useCallback(() => {
         null != e.current && e.current.play("hover")
-      }, []);
-    return {
-      events: {
-        onMouseEnter: a,
-        onMouseLeave: i.useCallback(() => {
-          null != e.current && e.current.stopIfPlaying("hover")
-        }, [])
-      },
-      play: t,
-      Component: i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
+      }, []),
+      l = i.useCallback(() => {
+        null != e.current && e.current.stopIfPlaying("hover")
+      }, []),
+      d = i.useCallback(t => (0, r.jsx)(o.L, c(s({}, t), {
         src: () => n.e("36995").then(n.t.bind(n, 737962, 19)),
         ref: e,
         markers: u
-      })), [])
+      })), []);
+    return {
+      events: {
+        onMouseEnter: a,
+        onMouseLeave: l
+      },
+      play: t,
+      getDuration: i.useCallback(() => {
+        var t;
+        return null == (t = e.current) ? void 0 : t.getDuration()
+      }, []),
+      Component: d
     }
   }

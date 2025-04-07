@@ -32,9 +32,9 @@ function I(e) {
     channel: t,
     hasActiveStream: n,
     showRightDivider: I,
-    themeable: S = !1
+    themeable: P = !1
   } = e, {
-    analyticsLocations: P
+    analyticsLocations: S
   } = (0, a.ZP)(o.Z.VOICE_CONTROL_TRAY), Z = (0, b.Z)({
     location: "VoiceEffectsActionBar"
   }), T = (0, h.Ou)(t), A = i.useRef(null), w = (0, u.Z)(), {
@@ -56,12 +56,12 @@ function I(e) {
     V = k && M,
     z = R && n;
   return (0, r.jsxs)(a.Gt, {
-    value: P,
+    value: S,
     children: [(0, r.jsxs)("div", {
       className: N.voiceEffectsActionBar,
       children: [F && (0, r.jsx)(O.Z, {
         channel: t,
-        themeable: S
+        themeable: P
       }), G && (0, r.jsx)(v.Z, {
         channel: t
       }), V && (0, r.jsx)(C.Z, {

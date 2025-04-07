@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(626135),
   N = n(456100),
   I = n(566620),
-  S = n(127255),
-  P = n(5200),
+  P = n(127255),
+  S = n(5200),
   Z = n(558317),
   T = n(403404),
   A = n(981631),
@@ -135,7 +135,7 @@ let D = i.forwardRef(function(e, t) {
       analyticsLocations: D
     } = (0, g.ZP)(m.Z.ACTIVITIES_MINI_SHELF),
     W = k === A.IlC.POPOUT,
-    U = (n = a.getGuildId(), l = a, (0, S.Z)({
+    U = (n = a.getGuildId(), l = a, (0, P.Z)({
       guildId: n,
       context: {
         channel: l,
@@ -217,7 +217,7 @@ let D = i.forwardRef(function(e, t) {
             }
           }), (0, r.jsxs)("div", {
             className: R.activityContainer,
-            children: [U.map(e => (0, r.jsx)(P.Y, {
+            children: [U.map(e => (0, r.jsx)(S.Y, {
               context: {
                 channel: a,
                 type: "channel"
@@ -226,7 +226,7 @@ let D = i.forwardRef(function(e, t) {
               onClick: () => {
                 c(), _()
               },
-              aspectRatio: P.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
+              aspectRatio: S.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: R.activitySuggestion,
               commandOrigin: C.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {

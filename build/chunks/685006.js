@@ -62,7 +62,7 @@ function I(e) {
   }, [c, f]), j = null != C && C.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
   return (i.useEffect(() => (E(O), () => {
     E(!1)
-  }), [O]), O) ? (0, r.jsx)(S, {
+  }), [O]), O) ? (0, r.jsx)(P, {
     context: t,
     application: a,
     primaryEntryPointCommand: s,
@@ -72,7 +72,7 @@ function I(e) {
   }) : null
 }
 
-function S(e) {
+function P(e) {
   let {
     context: t,
     application: n,

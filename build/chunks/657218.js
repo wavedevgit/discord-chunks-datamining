@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(913663),
   N = n(268350),
   I = n(695346),
-  S = n(592125),
-  P = n(703558),
+  P = n(592125),
+  S = n(703558),
   Z = n(375954),
   T = n(496675),
   A = n(117530),
@@ -70,7 +70,7 @@ function Y(e) {
     parentChannelId: t,
     parentMessageId: n,
     location: i
-  } = e, l = (0, a.e7)([S.Z], () => S.Z.getChannel(t)), {
+  } = e, l = (0, a.e7)([P.Z], () => P.Z.getChannel(t)), {
     analyticsLocations: o
   } = (0, m.ZP)(f.Z.CREATE_THREAD);
   return null == l ? null : (0, r.jsx)(m.Gt, {
@@ -81,7 +81,7 @@ function Y(e) {
         className: F.container,
         children: [(0, r.jsx)(p.Z, {
           channel: l,
-          draftType: P.d.FirstThreadMessage
+          draftType: S.d.FirstThreadMessage
         }), (0, r.jsxs)(j.ZP, {
           toolbar: (0, r.jsx)(j.ZP.Icon, {
             icon: s.Dio,
@@ -148,11 +148,11 @@ function q(e) {
     return i.useEffect(() => {
       function n(n) {
         var i;
-        let l = P.Z.getDraft(e.id, P.d.FirstThreadMessage);
-        (0 === l.length || !0 === n) && r((0, b.eK)(l)), t(null != (i = P.Z.getThreadSettings(e.id)) ? i : {})
+        let l = S.Z.getDraft(e.id, S.d.FirstThreadMessage);
+        (0 === l.length || !0 === n) && r((0, b.eK)(l)), t(null != (i = S.Z.getThreadSettings(e.id)) ? i : {})
       }
-      return n(!0), P.Z.addChangeListener(n), () => {
-        P.Z.removeChangeListener(n)
+      return n(!0), S.Z.addChangeListener(n), () => {
+        S.Z.removeChangeListener(n)
       }
     }, [e.id, t]), {
       textAreaState: n,
@@ -162,7 +162,7 @@ function q(e) {
     nameError: j,
     messageError: O,
     submit: I,
-    submitting: S
+    submitting: P
   } = function(e) {
     let {
       parentChannel: t,
@@ -189,7 +189,7 @@ function q(e) {
           shouldClear: !1,
           shouldRefocus: !1
         };
-        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (a = E.Z.getStickerPreview(t.id, z.drafts.type)) ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, P.d.FirstThreadMessage));
+        h(!0), null == e && (e = o.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (a = E.Z.getStickerPreview(t.id, z.drafts.type)) ? void 0 : a.map(e => e.id)), (null == l || 0 === l.length) && (l = A.Z.getUploads(t.id, S.d.FirstThreadMessage));
         let m = null != (s = r.name) ? s : "",
           g = null == n && 0 === m.length,
           b = "" === e && (null == i || 0 === i.length) && 0 === l.length;
@@ -264,7 +264,7 @@ function q(e) {
                 threadSettings: f,
                 updateThreadSettings: g,
                 error: j,
-                disabled: S
+                disabled: P
               }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(K, {
                 startedFromMessage: null != n,
                 threadSettings: f,
@@ -379,7 +379,7 @@ function Q(e) {
     submit: d,
     error: p
   } = e, [h, f] = i.useState(!0), m = i.useCallback(() => f(!0), []), g = i.useCallback(() => f(!1), []), b = i.useCallback((e, n, r) => {
-    c.Z.saveDraft(t.id, n, P.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
+    c.Z.saveDraft(t.id, n, S.d.FirstThreadMessage), l(e => ("" !== n && e.textValue !== n ? u.Z.startTyping(t.id) : "" === n && u.Z.stopTyping(t.id), {
       textValue: n,
       richValue: r
     }))

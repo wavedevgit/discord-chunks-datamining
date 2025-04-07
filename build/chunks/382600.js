@@ -38,19 +38,13 @@ let a = {
         if (null == t.current) return;
         let n = "enable" === e ? "hover_disabled" : "hover_enabled";
         t.current.play(n)
-      }, [e]);
-    return {
-      events: {
-        onClick: s,
-        onMouseEnter: c,
-        onMouseLeave: i.useCallback(() => {
-          if (null == t.current) return;
-          let n = "enable" === e ? "hover_disabled" : "hover_enabled";
-          t.current.stopIfPlaying(n)
-        }, [e])
-      },
-      play: s,
-      Component: i.useCallback(e => {
+      }, [e]),
+      u = i.useCallback(() => {
+        if (null == t.current) return;
+        let n = "enable" === e ? "hover_disabled" : "hover_enabled";
+        t.current.stopIfPlaying(n)
+      }, [e]),
+      d = i.useCallback(e => {
         var i, s;
         return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -84,6 +78,18 @@ let a = {
         })(Object(s)).forEach(function(e) {
           Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
         }), i))
-      }, [])
+      }, []);
+    return {
+      events: {
+        onClick: s,
+        onMouseEnter: c,
+        onMouseLeave: u
+      },
+      play: s,
+      getDuration: i.useCallback(() => {
+        var e;
+        return null == (e = t.current) ? void 0 : e.getDuration()
+      }, []),
+      Component: d
     }
   }

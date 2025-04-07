@@ -61,8 +61,8 @@ let E = i.memo(function(e) {
     referencedMessage: E,
     channel: N,
     compact: I = !1,
-    referencedUsernameProfile: S,
-    referencedAvatarProfile: P,
+    referencedUsernameProfile: P,
+    referencedAvatarProfile: S,
     setPopout: Z,
     isReplySpineClickable: T,
     showReplySpine: A
@@ -118,7 +118,7 @@ let E = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), U = (0, y.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, y.$3)(n, w, D, W), H = (0, y.Wl)(w, N, S, Z), F = (0, y.rY)(P, Z), G = i.useCallback(() => {
+  }), [w]), U = (0, y.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, y.$3)(n, w, D, W), H = (0, y.Wl)(w, N, P, Z), F = (0, y.rY)(S, Z), G = i.useCallback(() => {
     Z({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -134,8 +134,8 @@ let E = i.memo(function(e) {
     compact: I,
     isReplyAuthorBlocked: D,
     isReplyAuthorIgnored: W,
-    showAvatarPopout: P,
-    showUsernamePopout: S,
+    showAvatarPopout: S,
+    showUsernamePopout: P,
     renderPopout: C.Z,
     onClickAvatar: F,
     onClickUsername: H,

@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(819640),
   N = n(375954),
   I = n(496675),
-  S = n(885110),
-  P = n(585483),
+  P = n(885110),
+  S = n(585483),
   Z = n(358085),
   T = n(127654),
   A = n(316595),
@@ -80,7 +80,7 @@ let H = i.memo(function(e) {
     editorTextContent: V,
     setValue: z,
     canOnlyUseTextCommands: Y
-  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([S.Z], () => S.Z.getActivities()), Q = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), J = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(F.id)), {
+  } = e, q = (0, p.bp)(), K = i.useRef(null), X = (0, a.e7)([P.Z], () => P.Z.getActivities()), Q = (0, a.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), J = (0, a.e7)([m.Z], () => m.Z.getLastClipsSession()), $ = (0, a.Wu)([m.Z], () => m.Z.getNewClipIds()), ee = (0, a.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(F.id)), {
     showClipsHeaderEntrypoint: et
   } = f.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -92,7 +92,7 @@ let H = i.memo(function(e) {
       null != t && "ETOOLARGE" === t.code ? (0, T.G)(F, []) : (0, T.d)(e, F, G, {
         requireConfirm: !0,
         showLargeMessageDialog: n
-      }), P.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
+      }), S.S.dispatchToLastSubscribed(k.CkL.TEXTAREA_FOCUS)
     },
     eh = (0, a.e7)([N.Z], () => N.Z.hasCurrentUserSentMessageSinceAppStart());
 
@@ -113,8 +113,8 @@ let H = i.memo(function(e) {
       var e;
       return null == (e = K.current) ? void 0 : e.activateUploadDialogue()
     };
-    return P.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
-      P.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
+    return S.S.subscribe(k.CkL.UPLOAD_FILE, e), () => {
+      S.S.unsubscribe(k.CkL.UPLOAD_FILE, e)
     }
   });
   let em = (0, v.NE)(F),

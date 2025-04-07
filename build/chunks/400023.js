@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(375954),
   N = n(496675),
   I = n(306680),
-  S = n(62817),
-  P = n(594174),
+  P = n(62817),
+  S = n(594174),
   Z = n(459273),
   T = n(255269),
   A = n(47481),
@@ -106,8 +106,8 @@ let G = i.memo(function(e) {
       fontSize: O,
       keyboardModeEnabled: E,
       filterAfterTimestamp: I,
-      showingQuarantineBanner: S,
-      hideSummaries: P = !1,
+      showingQuarantineBanner: P,
+      hideSummaries: S = !1,
       jumpBarClassName: T
     } = e, [A, R] = i.useState(!1), G = i.useMemo(() => _ ? (0, w.aJ)({
       compact: !0,
@@ -156,8 +156,8 @@ let G = i.memo(function(e) {
       scrollManager: V,
       specs: G,
       filterAfterTimestamp: null != I ? I : Y,
-      showingQuarantineBanner: S,
-      hideSummaries: P,
+      showingQuarantineBanner: P,
+      hideSummaries: S,
       isAtBottom: A,
       jumpToPresent: () => {
         if (m.hasPresent()) {
@@ -236,7 +236,7 @@ let G = i.memo(function(e) {
               children: W.NW.string(W.t.Spb3s7)
             }), q, (0, r.jsx)("div", {
               className: o()({
-                [U.scrollerSpacer]: !S,
+                [U.scrollerSpacer]: !P,
                 [U.empty]: 0 === m.length && !m.loadingMore,
                 [U.emptyForum]: 1 === m.length && !m.loadingMore && f.isForumPost() && (null == (t = m.first()) ? void 0 : t.isFirstMessageInForumPost(f))
               })
@@ -324,7 +324,7 @@ let G = i.memo(function(e) {
         }, {
           autoTrackExposure: !1
         }),
-        a = null != (n = null == (t = P.default.getUser(v.default.getId())) ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && n,
+        a = null != (n = null == (t = S.default.getUser(v.default.getId())) ? void 0 : t.hasFlag(D.xW$.SPAMMER)) && n,
         c = (0, d.ts)(e),
         u = (0, b.Z)("use_topic_dividers_in_chat"),
         p = (0, s.Wu)([y.Z], () => {
@@ -371,7 +371,7 @@ let G = i.memo(function(e) {
           messages: W,
           channelStream: U,
           permissionVersion: p,
-          uploads: (0, s.e7)([S.Z], () => S.Z.getFiles(t.id), [t]),
+          uploads: (0, s.e7)([P.Z], () => P.Z.getFiles(t.id), [t]),
           unreadCount: (0, s.e7)([I.ZP], () => I.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != V,
           canChat: C,

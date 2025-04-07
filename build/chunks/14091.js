@@ -47,7 +47,7 @@ function I(e) {
   }
   return e
 }
-class S extends i.Component {
+class P extends i.Component {
   componentDidMount() {
     this.autoAnalytics()
   }
@@ -87,7 +87,7 @@ class S extends i.Component {
     })
   }
 }
-let P = e => {
+let S = e => {
   let {
     children: t
   } = e;
@@ -142,7 +142,7 @@ class Z extends i.PureComponent {
         ref: this.scrollerRef,
         className: E.scroller,
         children: this.renderContent()
-      }), (0, r.jsx)(S, {
+      }), (0, r.jsx)(P, {
         searchType: t,
         searchAnalyticsId: e,
         searchResults: n,
@@ -232,7 +232,7 @@ class Z extends i.PureComponent {
       })
     }), N(this, "renderIndexing", () => {
       let e = g.Z.getSearchType(this.props.searchId) === j.aib.GUILD ? O.NW.string(O.t.AXPbZm) : O.NW.string(O.t.Q0JJjo);
-      return (0, r.jsxs)(P, {
+      return (0, r.jsxs)(S, {
         children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)("div", {
           className: (E.emptyResultsText, E.stillIndexing),
           children: e
@@ -242,7 +242,7 @@ class Z extends i.PureComponent {
       let {
         showNoResultsAlt: e
       } = this.props.search, t = e ? O.NW.string(O.t["VrK/2d"]) : O.NW.string(O.t.V6nAfH);
-      return (0, r.jsxs)(P, {
+      return (0, r.jsxs)(S, {
         children: [(0, r.jsx)("div", {
           className: o()(E.noResultsImage, {
             [E.alt]: e
@@ -254,7 +254,7 @@ class Z extends i.PureComponent {
           children: t
         })]
       })
-    }), N(this, "renderError", () => (0, r.jsxs)(P, {
+    }), N(this, "renderError", () => (0, r.jsxs)(S, {
       children: [(0, r.jsx)("div", {
         className: E.errorImage
       }), (0, r.jsx)("div", {

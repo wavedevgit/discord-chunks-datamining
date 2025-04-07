@@ -51,22 +51,22 @@ let O = (0, o.Z)(e => {
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), S = (0, c.Io)(o.id), P = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), k = x(C, I), M = {
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(C), k = x(C, I), M = {
     [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, M, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: H
-  } = y(C, k), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === P && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = y(C, k), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
       let {
         section: t
       } = e;
-      return 1 === t ? 0 === S ? null : (0, r.jsx)(m.Z, {
-        participantCount: S,
+      return 1 === t ? 0 === P ? null : (0, r.jsx)(m.Z, {
+        participantCount: P,
         label: b.NW.string(b.t.CduOk5),
         className: _.header,
         onClick: () => z(!V),
@@ -74,8 +74,8 @@ let O = (0, o.Z)(e => {
         speakers: A,
         channel: o,
         isStreamLive: w
-      }, "speaker-header-".concat(t)) : 2 === t ? 0 === P ? null : (0, r.jsx)(m.Z, {
-        participantCount: P,
+      }, "speaker-header-".concat(t)) : 2 === t ? 0 === S ? null : (0, r.jsx)(m.Z, {
+        participantCount: S,
         label: b.NW.string(b.t["3foUu7"]),
         className: _.header,
         onClick: () => q(!Y),

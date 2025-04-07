@@ -27,8 +27,8 @@ var r = n(200651),
   E = n(677432),
   N = n(178762),
   I = n(868671),
-  S = n(82295),
-  P = n(91218),
+  P = n(82295),
+  S = n(91218),
   Z = n(313201),
   T = n(540059),
   A = n(623624),
@@ -137,7 +137,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       premiumSince: j,
       nameplate: O,
       shouldShowPopoutOnHover: E
-    } = e, N = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [I, S] = i.useState(!1), P = null != j ? new Date(j) : null, Z = e => {
+    } = e, N = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [I, P] = i.useState(!1), S = null != j ? new Date(j) : null, Z = e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -179,7 +179,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       clickTrap: I,
       shouldShow: I,
       onRequestClose: () => {
-        S(!1)
+        P(!1)
       },
       children: e => {
         let {
@@ -196,7 +196,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           activities: h,
           applicationStream: f,
           isOwner: s,
-          premiumSince: P,
+          premiumSince: S,
           colorString: t,
           colorStrings: l,
           colorRoleName: o,
@@ -208,7 +208,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           selected: I,
           itemProps: N,
           nameplate: O,
-          onClick: () => S(!I)
+          onClick: () => P(!I)
         }, i))
       }
     })
@@ -253,7 +253,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       children: (0, r.jsx)("div", {
         className: J.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(S.Z, {
+    }) : (0, r.jsxs)(P.Z, {
       className: J.membersGroup,
       children: [(0, r.jsx)(f.nn4, {
         children: Q.NW.format(Q.t.UaqbkZ, {
@@ -262,7 +262,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
         })
       }), (0, r.jsxs)("span", {
         "aria-hidden": !0,
-        children: [null != o ? (0, r.jsx)(P.Z, ee({
+        children: [null != o ? (0, r.jsx)(S.Z, ee({
           className: J.roleIcon
         }, o)) : null, n, " — ", a]
       })]
@@ -585,7 +585,7 @@ function ed(e) {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), []), S = (0, u.ZP)({
+  }), []), P = (0, u.ZP)({
     id: "members-".concat(t.id),
     setFocus: O,
     isEnabled: a,
@@ -597,7 +597,7 @@ function ed(e) {
     children: (0, r.jsx)("div", {
       className: o()(J.container, n),
       children: (0, r.jsx)(c.bG, {
-        navigator: S,
+        navigator: P,
         children: (0, r.jsx)(eu, et(ee({}, e, s), {
           version: m,
           groups: p,

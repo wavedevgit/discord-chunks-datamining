@@ -84,8 +84,8 @@ let m = {
       animationTypeRef: n,
       onSetAnimationDurationMS: r,
       play: o,
-      internalLottieRef: a
-    } = e, s = null !== a.current ? a.current.getDuration() : null, l = null !== s ? 1e3 * s : g;
+      getDuration: a
+    } = e, s = a(), l = null != s ? 1e3 * s : g;
     (0, i.useEffect)(() => {
       null !== t && t !== n.current && (n.current = t, o())
     }, [t, o, n]), (0, i.useEffect)(() => {

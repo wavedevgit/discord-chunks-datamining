@@ -27,9 +27,9 @@ var r = n(200651),
   E = n(124368),
   N = n(981631),
   I = n(388032),
-  S = n(591837);
+  P = n(591837);
 
-function P(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,7 +82,7 @@ function T(e) {
       if (null == A || L.current) return;
       L.current = !0;
       let e = (0, p.K)(y.Z.getChannel(A.id), !0);
-      (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(P({}, e, (0, d.$H)(A.id)), {
+      (0, d.yw)(N.rMx.CHANNEL_OPENED, Z(S({}, e, (0, d.$H)(A.id)), {
         channel_view: T
       })), (0, h.a)(N.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: A.id
@@ -109,7 +109,7 @@ function T(e) {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));
-            return t => (0, r.jsx)(e, Z(P({}, t), {
+            return t => (0, r.jsx)(e, Z(S({}, t), {
               channel: A
             }))
           })
@@ -119,7 +119,7 @@ function T(e) {
         }
       })
     }), (0, r.jsx)("div", {
-      className: S.chat,
+      className: P.chat,
       children: (0, r.jsx)(m.Z, {
         channel: A,
         guild: w,
