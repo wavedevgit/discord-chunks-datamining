@@ -127,6 +127,9 @@ async function main() {
                 'utf-8',
             );
         }
+        for (let type in all) {
+            await fs.writeFile('./build/chunks_api/'+type+"/all.json", JSON.stringify(all[type],null,4), 'utf-8');
+        }
         delete all['unknown'];
         await fs.writeFile('./build/chunks_api/all.json', JSON.stringify(all), 'utf-8');
     }, 'Generating json list of chunks');
