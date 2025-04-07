@@ -102,6 +102,7 @@ function E(e) {
     preload: I,
     clickTrap: !0,
     renderPopout: e => b ? (0, r.jsx)(d.Z, h(_({}, e), {
+      onClose: e.closePopout,
       guildId: t,
       name: p
     })) : null == v ? (0, r.jsx)(r.Fragment, {}) : (0, r.jsx)(u.sK, h(_({}, e), {

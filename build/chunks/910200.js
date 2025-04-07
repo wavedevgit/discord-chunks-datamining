@@ -99,10 +99,12 @@ function y(e) {
     onIconChange: n,
     className: i,
     disableCTA: a,
-    CTAOverride: l
-  } = e, c = null;
-  return null != l ? c = l : a || (c = (0, r.jsx)(d.Z, {
-    profile: t
+    CTAOverride: l,
+    onClose: c
+  } = e, u = null;
+  return null != l ? u = l : a || (u = (0, r.jsx)(d.Z, {
+    profile: t,
+    onClose: c
   })), (0, r.jsxs)("div", {
     className: o()(m.container, i),
     children: [(0, r.jsx)(E, {
@@ -123,9 +125,9 @@ function y(e) {
       }), (0, r.jsx)(p.F, {
         profile: t
       })]
-    }), null != c && (0, r.jsx)("div", {
+    }), null != u && (0, r.jsx)("div", {
       className: m.buttonContainer,
-      children: c
+      children: u
     })]
   })
 }
