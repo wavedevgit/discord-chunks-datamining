@@ -26,9 +26,9 @@ function x(e) {
     setTab: n,
     children: x,
     badgeState: y,
-    closePopout: v
+    closePopout: E
   } = e, {
-    showReminders: E
+    showReminders: v
   } = m.Z.useExperiment({
     location: "RecentsHeader"
   }, {
@@ -65,7 +65,7 @@ function x(e) {
       }), (0, r.jsxs)("div", {
         className: b.controls,
         children: [x, (0, r.jsx)(g.Z, {
-          closePopout: v
+          closePopout: E
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -108,7 +108,7 @@ function x(e) {
           children: 0 === I ? _.NW.string(_.t["2pAkDA"]) : _.NW.formatToPlainString(_.t.I4fryM, {
             count: I
           })
-        }) : null, E && !O ? (0, r.jsx)(l.njP.Item, {
+        }) : null, v && !O ? (0, r.jsx)(l.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: b.tab,

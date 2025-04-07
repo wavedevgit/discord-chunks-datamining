@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(906732),
   x = n(783097),
   y = n(581364),
-  v = n(592180),
-  E = n(347475),
+  E = n(592180),
+  v = n(347475),
   O = n(598077),
   N = n(768581),
   j = n(585483),
@@ -102,8 +102,8 @@ function L(e, t, n, i, a) {
     onClickAvatar: b,
     onUserContextMenu: x,
     onClickTargetAvatar: y,
-    onTargetUserContextMenu: v,
-    onPopoutRequestClose: E
+    onTargetUserContextMenu: E,
+    onPopoutRequestClose: v
   } = e;
   if (p && 1 === n) return null;
   if (p && null == u.activityInstance || f || h) return (0, r.jsx)("div", {
@@ -142,14 +142,14 @@ function L(e, t, n, i, a) {
       guildId: m.guild_id,
       guildAvatar: O,
       onClick: 1 === n ? y : b,
-      onContextMenu: 1 === n ? v : x
+      onContextMenu: 1 === n ? E : x
     }),
     C = 1 === n ? _ : g;
   return null != a && null != C ? (0, r.jsx)(d.yRy, {
     renderPopout: a,
     shouldShow: C,
     position: "right",
-    onRequestClose: E,
+    onRequestClose: v,
     children: j
   }) : j()
 }
@@ -206,7 +206,7 @@ function F(e) {
     {
       analyticsLocations: c
     } = (0, b.ZP)(_.Z.EXECUTED_COMMAND),
-    m = i.useMemo(() => (e, t, n) => (s()(null != o && null != t, "ExecuteCommand: user and channel cannot be undefined"), (0, r.jsx)(E.Z, k(R({}, e), {
+    m = i.useMemo(() => (e, t, n) => (s()(null != o && null != t, "ExecuteCommand: user and channel cannot be undefined"), (0, r.jsx)(v.Z, k(R({}, e), {
       channelId: o.id,
       messageId: a.id,
       guildId: o.guild_id,
@@ -234,7 +234,7 @@ function F(e) {
       children: [t, n]
     }, "user")
   };
-  if ((null == a ? void 0 : a.activityInstance) === null || (0, v.g)(a)) n = w.NW.format(w.t["rg7U+P"], {
+  if ((null == a ? void 0 : a.activityInstance) === null || (0, E.g)(a)) n = w.NW.format(w.t["rg7U+P"], {
     userHook: K,
     commandHook: () => {
       let t = function(e, t) {
@@ -284,7 +284,7 @@ function F(e) {
                 }), s]
               })
             }));
-            if (!(0, v.g)(i)) return (0, r.jsx)("div", {
+            if (!(0, E.g)(i)) return (0, r.jsx)("div", {
               className: Z.commandName,
               children: s
             });
