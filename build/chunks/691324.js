@@ -435,142 +435,142 @@ let i = {
     hex: "#001024"
   },
   "blue-new-1": {
-    hex: "#e6eeff"
+    hex: "#e2efff"
   },
   "blue-new-10": {
-    hex: "#bed8fe"
+    hex: "#b5d9ff"
   },
   "blue-new-100": {
     hex: "#000000"
   },
   "blue-new-11": {
-    hex: "#bad6fd"
+    hex: "#b0d7ff"
   },
   "blue-new-12": {
-    hex: "#b5d4fd"
+    hex: "#abd4ff"
   },
   "blue-new-13": {
-    hex: "#b1d1fc"
+    hex: "#a7d2ff"
   },
   "blue-new-14": {
-    hex: "#adcffc"
+    hex: "#a3cfff"
   },
   "blue-new-15": {
-    hex: "#a8ccfb"
+    hex: "#9ecdff"
   },
   "blue-new-16": {
-    hex: "#a4cafb"
+    hex: "#9acaff"
   },
   "blue-new-17": {
-    hex: "#a0c7fa"
+    hex: "#96c8ff"
   },
   "blue-new-18": {
-    hex: "#9cc5fa"
+    hex: "#91c5ff"
   },
   "blue-new-19": {
-    hex: "#98c2f9"
+    hex: "#8dc3ff"
   },
   "blue-new-2": {
-    hex: "#e1ecff"
+    hex: "#ddecff"
   },
   "blue-new-20": {
-    hex: "#93c0f9"
+    hex: "#89c0ff"
   },
   "blue-new-21": {
-    hex: "#8fbdf8"
+    hex: "#85beff"
   },
   "blue-new-22": {
-    hex: "#8bbaf7"
+    hex: "#81bbff"
   },
   "blue-new-23": {
-    hex: "#87b8f7"
+    hex: "#7db8ff"
   },
   "blue-new-24": {
-    hex: "#83b5f6"
+    hex: "#79b6ff"
   },
   "blue-new-25": {
-    hex: "#7fb3f5"
+    hex: "#75b3fd"
   },
   "blue-new-26": {
-    hex: "#7bb0f5"
+    hex: "#72b1fc"
   },
   "blue-new-27": {
-    hex: "#77aef4"
+    hex: "#6eaefb"
   },
   "blue-new-28": {
-    hex: "#72abf3"
+    hex: "#6aacfa"
   },
   "blue-new-29": {
-    hex: "#6ea9f3"
+    hex: "#66a9f9"
   },
   "blue-new-3": {
-    hex: "#ddeaff"
+    hex: "#d7eaff"
   },
   "blue-new-30": {
-    hex: "#6aa6f2"
+    hex: "#63a6f8"
   },
   "blue-new-31": {
-    hex: "#66a4f1"
+    hex: "#5fa4f6"
   },
   "blue-new-32": {
-    hex: "#62a1f0"
+    hex: "#5ba1f5"
   },
   "blue-new-33": {
-    hex: "#5e9ef0"
+    hex: "#579ff4"
   },
   "blue-new-34": {
-    hex: "#5a9cef"
+    hex: "#549cf3"
   },
   "blue-new-35": {
-    hex: "#5599ee"
+    hex: "#5099f2"
   },
   "blue-new-36": {
-    hex: "#5197ed"
+    hex: "#4c97f0"
   },
   "blue-new-37": {
-    hex: "#4d94ed"
+    hex: "#4894ef"
   },
   "blue-new-38": {
-    hex: "#4891ec"
+    hex: "#4491ee"
   },
   "blue-new-39": {
-    hex: "#448feb"
+    hex: "#408fed"
   },
   "blue-new-4": {
-    hex: "#d8e7ff"
+    hex: "#d2e8ff"
   },
   "blue-new-40": {
-    hex: "#3f8cea"
+    hex: "#3c8cec"
   },
   "blue-new-41": {
-    hex: "#3b89e9"
+    hex: "#3889eb"
   },
   "blue-new-42": {
-    hex: "#3687e9"
+    hex: "#3387ea"
   },
   "blue-new-43": {
-    hex: "#3184e8"
+    hex: "#2f84e9"
   },
   "blue-new-44": {
-    hex: "#2b81e7"
+    hex: "#2a81e8"
   },
   "blue-new-45": {
-    hex: "#257fe6"
+    hex: "#247fe7"
   },
   "blue-new-46": {
-    hex: "#1f7ce5"
+    hex: "#1e7ce6"
   },
   "blue-new-47": {
     hex: "#1779e5"
   },
   "blue-new-48": {
-    hex: "#0e77e4"
+    hex: "#0d77e4"
   },
   "blue-new-49": {
     hex: "#0074e3"
   },
   "blue-new-5": {
-    hex: "#d4e5ff"
+    hex: "#cde5ff"
   },
   "blue-new-50": {
     hex: "#0074e3"
@@ -603,7 +603,7 @@ let i = {
     hex: "#055fb5"
   },
   "blue-new-6": {
-    hex: "#cfe2ff"
+    hex: "#c8e3ff"
   },
   "blue-new-60": {
     hex: "#055db0"
@@ -636,7 +636,7 @@ let i = {
     hex: "#004989"
   },
   "blue-new-7": {
-    hex: "#cbe0ff"
+    hex: "#c3e0ff"
   },
   "blue-new-70": {
     hex: "#004785"
@@ -669,7 +669,7 @@ let i = {
     hex: "#003361"
   },
   "blue-new-8": {
-    hex: "#c7ddff"
+    hex: "#bedeff"
   },
   "blue-new-80": {
     hex: "#00315e"
@@ -702,7 +702,7 @@ let i = {
     hex: "#001f3d"
   },
   "blue-new-9": {
-    hex: "#c2dbfe"
+    hex: "#b9dcff"
   },
   "blue-new-90": {
     hex: "#001d39"
@@ -735,142 +735,142 @@ let i = {
     hex: "#00040b"
   },
   "blurple-1": {
-    hex: "#e7eaff"
+    hex: "#e5e9ff"
   },
   "blurple-10": {
-    hex: "#c7d2ff"
+    hex: "#c2d1ff"
   },
   "blurple-100": {
     hex: "#000000"
   },
   "blurple-11": {
-    hex: "#c3cfff"
+    hex: "#bfcfff"
   },
   "blurple-12": {
-    hex: "#c0cdff"
+    hex: "#bbccff"
   },
   "blurple-13": {
-    hex: "#bdcaff"
+    hex: "#b8c9ff"
   },
   "blurple-14": {
-    hex: "#b9c7ff"
+    hex: "#b4c7ff"
   },
   "blurple-15": {
-    hex: "#b6c5ff"
+    hex: "#b1c4ff"
   },
   "blurple-16": {
-    hex: "#b3c2ff"
+    hex: "#aec1ff"
   },
   "blurple-17": {
-    hex: "#afbfff"
+    hex: "#aabfff"
   },
   "blurple-18": {
-    hex: "#acbdff"
+    hex: "#a7bcff"
   },
   "blurple-19": {
-    hex: "#a9baff"
+    hex: "#a4b9ff"
   },
   "blurple-2": {
-    hex: "#e3e7ff"
+    hex: "#e1e6ff"
   },
   "blurple-20": {
-    hex: "#a6b7ff"
+    hex: "#a1b7ff"
   },
   "blurple-21": {
-    hex: "#a3b4fe"
+    hex: "#9eb4ff"
   },
   "blurple-22": {
-    hex: "#9fb2fe"
+    hex: "#9bb1ff"
   },
   "blurple-23": {
-    hex: "#9caffe"
+    hex: "#98aeff"
   },
   "blurple-24": {
-    hex: "#99acfd"
+    hex: "#95acff"
   },
   "blurple-25": {
-    hex: "#96aafd"
+    hex: "#92a9ff"
   },
   "blurple-26": {
-    hex: "#93a7fd"
+    hex: "#90a6ff"
   },
   "blurple-27": {
-    hex: "#90a4fc"
+    hex: "#8da4ff"
   },
   "blurple-28": {
-    hex: "#8da1fc"
+    hex: "#8aa1ff"
   },
   "blurple-29": {
-    hex: "#8b9ffb"
+    hex: "#879eff"
   },
   "blurple-3": {
-    hex: "#dfe4ff"
+    hex: "#dde4ff"
   },
   "blurple-30": {
-    hex: "#889cfb"
+    hex: "#859bff"
   },
   "blurple-31": {
-    hex: "#8599fb"
+    hex: "#8299ff"
   },
   "blurple-32": {
-    hex: "#8296fa"
+    hex: "#8096ff"
   },
   "blurple-33": {
-    hex: "#7f94fa"
+    hex: "#7d93ff"
   },
   "blurple-34": {
-    hex: "#7d91f9"
+    hex: "#7a90fe"
   },
   "blurple-35": {
-    hex: "#7a8ef9"
+    hex: "#788efd"
   },
   "blurple-36": {
-    hex: "#778bf8"
+    hex: "#768bfc"
   },
   "blurple-37": {
-    hex: "#7588f8"
+    hex: "#7388fb"
   },
   "blurple-38": {
-    hex: "#7286f7"
+    hex: "#7185fa"
   },
   "blurple-39": {
-    hex: "#6f83f7"
+    hex: "#6e82f9"
   },
   "blurple-4": {
-    hex: "#dce2ff"
+    hex: "#d9e1ff"
   },
   "blurple-40": {
-    hex: "#6d80f6"
+    hex: "#6c80f8"
   },
   "blurple-41": {
-    hex: "#6a7df6"
+    hex: "#6a7df7"
   },
   "blurple-42": {
-    hex: "#687af5"
+    hex: "#677af7"
   },
   "blurple-43": {
-    hex: "#6677f5"
+    hex: "#6577f6"
   },
   "blurple-44": {
-    hex: "#6374f4"
+    hex: "#6374f5"
   },
   "blurple-45": {
     hex: "#6171f4"
   },
   "blurple-46": {
-    hex: "#5f6ef3"
+    hex: "#5e6ef4"
   },
   "blurple-47": {
     hex: "#5c6bf3"
   },
   "blurple-48": {
-    hex: "#5a68f2"
+    hex: "#5a68f3"
   },
   "blurple-49": {
     hex: "#5865f2"
   },
   "blurple-5": {
-    hex: "#d8dfff"
+    hex: "#d5dfff"
   },
   "blurple-50": {
     hex: "#5865f2"
@@ -903,7 +903,7 @@ let i = {
     hex: "#4654c0"
   },
   "blurple-6": {
-    hex: "#d5dcff"
+    hex: "#d1dcff"
   },
   "blurple-60": {
     hex: "#4452bb"
@@ -936,7 +936,7 @@ let i = {
     hex: "#324091"
   },
   "blurple-7": {
-    hex: "#d1daff"
+    hex: "#cdd9ff"
   },
   "blurple-70": {
     hex: "#303e8d"
@@ -969,7 +969,7 @@ let i = {
     hex: "#1f2d67"
   },
   "blurple-8": {
-    hex: "#ced7ff"
+    hex: "#cad7ff"
   },
   "blurple-80": {
     hex: "#1d2b63"
@@ -1002,7 +1002,7 @@ let i = {
     hex: "#0f1a41"
   },
   "blurple-9": {
-    hex: "#cad5ff"
+    hex: "#c6d4ff"
   },
   "blurple-90": {
     hex: "#0d193d"
@@ -1212,133 +1212,133 @@ let i = {
     hex: "#051307"
   },
   "green-new-1": {
-    hex: "#cfffd7"
+    hex: "#bcffca"
   },
   "green-new-10": {
-    hex: "#ace9b6"
+    hex: "#9beda9"
   },
   "green-new-100": {
     hex: "#000701"
   },
   "green-new-11": {
-    hex: "#a8e7b2"
+    hex: "#98eaa6"
   },
   "green-new-12": {
-    hex: "#a5e4af"
+    hex: "#95e8a3"
   },
   "green-new-13": {
-    hex: "#a1e1ab"
+    hex: "#91e5a0"
   },
   "green-new-14": {
-    hex: "#9ddfa8"
+    hex: "#8ee29c"
   },
   "green-new-15": {
-    hex: "#99dca4"
+    hex: "#8be099"
   },
   "green-new-16": {
-    hex: "#96daa1"
+    hex: "#88dd96"
   },
   "green-new-17": {
-    hex: "#92d79d"
+    hex: "#84da93"
   },
   "green-new-18": {
-    hex: "#8ed59a"
+    hex: "#81d790"
   },
   "green-new-19": {
-    hex: "#8bd296"
+    hex: "#7ed58d"
   },
   "green-new-2": {
-    hex: "#cbfdd4"
+    hex: "#b8ffc6"
   },
   "green-new-20": {
-    hex: "#87cf93"
+    hex: "#7bd28a"
   },
   "green-new-21": {
-    hex: "#83cd90"
+    hex: "#78cf87"
   },
   "green-new-22": {
-    hex: "#80ca8c"
+    hex: "#75cd85"
   },
   "green-new-23": {
-    hex: "#7cc889"
+    hex: "#71ca82"
   },
   "green-new-24": {
-    hex: "#78c586"
+    hex: "#6ec77f"
   },
   "green-new-25": {
-    hex: "#75c383"
+    hex: "#6bc47c"
   },
   "green-new-26": {
-    hex: "#71c07f"
+    hex: "#68c279"
   },
   "green-new-27": {
-    hex: "#6dbe7c"
+    hex: "#65bf76"
   },
   "green-new-28": {
-    hex: "#6abb79"
+    hex: "#62bc74"
   },
   "green-new-29": {
-    hex: "#66b876"
+    hex: "#5eba71"
   },
   "green-new-3": {
-    hex: "#c7fbd0"
+    hex: "#b4ffc2"
   },
   "green-new-30": {
-    hex: "#62b673"
+    hex: "#5bb76e"
   },
   "green-new-31": {
-    hex: "#5eb370"
+    hex: "#58b46b"
   },
   "green-new-32": {
-    hex: "#5bb16c"
+    hex: "#55b269"
   },
   "green-new-33": {
-    hex: "#57ae69"
+    hex: "#52af66"
   },
   "green-new-34": {
-    hex: "#53ac66"
+    hex: "#4eac63"
   },
   "green-new-35": {
-    hex: "#4fa963"
+    hex: "#4baa61"
   },
   "green-new-36": {
-    hex: "#4ba760"
+    hex: "#47a75e"
   },
   "green-new-37": {
-    hex: "#47a45d"
+    hex: "#44a55b"
   },
   "green-new-38": {
-    hex: "#43a25a"
+    hex: "#40a258"
   },
   "green-new-39": {
-    hex: "#3f9f57"
+    hex: "#3c9f56"
   },
   "green-new-4": {
-    hex: "#c3f8cc"
+    hex: "#b1fdbe"
   },
   "green-new-40": {
-    hex: "#3b9d54"
+    hex: "#399d53"
   },
   "green-new-41": {
-    hex: "#379a51"
+    hex: "#359a50"
   },
   "green-new-42": {
-    hex: "#32984e"
+    hex: "#30984e"
   },
   "green-new-43": {
-    hex: "#2d954b"
+    hex: "#2c954b"
   },
   "green-new-44": {
-    hex: "#289248"
+    hex: "#279348"
   },
   "green-new-45": {
-    hex: "#239046"
+    hex: "#229045"
   },
   "green-new-46": {
-    hex: "#1d8d43"
+    hex: "#1c8e42"
   },
   "green-new-47": {
-    hex: "#168b40"
+    hex: "#158b40"
   },
   "green-new-48": {
     hex: "#0c883d"
@@ -1347,7 +1347,7 @@ let i = {
     hex: "#00863a"
   },
   "green-new-5": {
-    hex: "#bff6c8"
+    hex: "#adfabb"
   },
   "green-new-50": {
     hex: "#00863a"
@@ -1380,7 +1380,7 @@ let i = {
     hex: "#046e2f"
   },
   "green-new-6": {
-    hex: "#bbf3c5"
+    hex: "#a9f8b7"
   },
   "green-new-60": {
     hex: "#046b2e"
@@ -1413,7 +1413,7 @@ let i = {
     hex: "#005522"
   },
   "green-new-7": {
-    hex: "#b8f1c1"
+    hex: "#a6f5b4"
   },
   "green-new-70": {
     hex: "#005221"
@@ -1446,7 +1446,7 @@ let i = {
     hex: "#003d14"
   },
   "green-new-8": {
-    hex: "#b4eebd"
+    hex: "#a2f2b0"
   },
   "green-new-80": {
     hex: "#003a13"
@@ -1479,7 +1479,7 @@ let i = {
     hex: "#002608"
   },
   "green-new-9": {
-    hex: "#b0ecb9"
+    hex: "#9ff0ad"
   },
   "green-new-90": {
     hex: "#002407"
@@ -1551,16 +1551,16 @@ let i = {
     hex: "#ffffff"
   },
   "neutral-10": {
-    hex: "#dcdcde"
+    hex: "#dbdcdf"
   },
   "neutral-100": {
     hex: "#000000"
   },
   "neutral-11": {
-    hex: "#d8d8db"
+    hex: "#d7d8db"
   },
   "neutral-12": {
-    hex: "#d4d4d7"
+    hex: "#d3d4d7"
   },
   "neutral-13": {
     hex: "#d0d0d4"
@@ -1572,13 +1572,13 @@ let i = {
     hex: "#c8c8cd"
   },
   "neutral-16": {
-    hex: "#c5c5c9"
+    hex: "#c4c5c9"
   },
   "neutral-17": {
-    hex: "#c1c1c6"
+    hex: "#c0c1c6"
   },
   "neutral-18": {
-    hex: "#bdbdc2"
+    hex: "#bcbdc2"
   },
   "neutral-19": {
     hex: "#b9b9bf"
@@ -1590,163 +1590,163 @@ let i = {
     hex: "#b5b6bb"
   },
   "neutral-21": {
-    hex: "#b2b2b8"
+    hex: "#b1b2b8"
   },
   "neutral-22": {
-    hex: "#aeaeb4"
+    hex: "#adaeb4"
   },
   "neutral-23": {
     hex: "#aaaab1"
   },
   "neutral-24": {
-    hex: "#a7a7ad"
+    hex: "#a6a7ad"
   },
   "neutral-25": {
-    hex: "#a3a3aa"
+    hex: "#a2a3aa"
   },
   "neutral-26": {
     hex: "#9f9fa6"
   },
   "neutral-27": {
-    hex: "#9c9ca3"
+    hex: "#9b9ca3"
   },
   "neutral-28": {
-    hex: "#98989f"
+    hex: "#97989f"
   },
   "neutral-29": {
-    hex: "#94949c"
+    hex: "#94959c"
   },
   "neutral-3": {
     hex: "#f7f7f8"
   },
   "neutral-30": {
-    hex: "#919199"
+    hex: "#909199"
   },
   "neutral-31": {
-    hex: "#8d8d95"
+    hex: "#8c8d95"
   },
   "neutral-32": {
-    hex: "#8a8a92"
+    hex: "#898a92"
   },
   "neutral-33": {
-    hex: "#86868e"
+    hex: "#85868e"
   },
   "neutral-34": {
-    hex: "#83838b"
+    hex: "#82838b"
   },
   "neutral-35": {
-    hex: "#7f7f88"
+    hex: "#7e7f88"
   },
   "neutral-36": {
-    hex: "#7c7c84"
+    hex: "#7b7c84"
   },
   "neutral-37": {
-    hex: "#787881"
+    hex: "#777881"
   },
   "neutral-38": {
-    hex: "#75757e"
+    hex: "#74757e"
   },
   "neutral-39": {
-    hex: "#71717a"
+    hex: "#70717a"
   },
   "neutral-4": {
     hex: "#f3f3f4"
   },
   "neutral-40": {
-    hex: "#6e6e77"
+    hex: "#6d6e77"
   },
   "neutral-41": {
-    hex: "#6a6a74"
+    hex: "#6a6b74"
   },
   "neutral-42": {
-    hex: "#676771"
+    hex: "#666771"
   },
   "neutral-43": {
-    hex: "#64646d"
+    hex: "#63646d"
   },
   "neutral-44": {
-    hex: "#60606a"
+    hex: "#5f606a"
   },
   "neutral-45": {
-    hex: "#5d5d67"
+    hex: "#5c5d67"
   },
   "neutral-46": {
-    hex: "#5a5a64"
+    hex: "#595a64"
   },
   "neutral-47": {
-    hex: "#565660"
+    hex: "#555760"
   },
   "neutral-48": {
-    hex: "#53535d"
+    hex: "#52535d"
   },
   "neutral-49": {
-    hex: "#50505a"
+    hex: "#4f505a"
   },
   "neutral-5": {
     hex: "#efeff0"
   },
   "neutral-50": {
-    hex: "#50505a"
+    hex: "#4f505a"
   },
   "neutral-51": {
-    hex: "#4e4e58"
+    hex: "#4d4e58"
   },
   "neutral-52": {
-    hex: "#4d4d56"
+    hex: "#4c4d56"
   },
   "neutral-53": {
-    hex: "#4b4b55"
+    hex: "#4a4b55"
   },
   "neutral-54": {
-    hex: "#4a4a53"
+    hex: "#494a53"
   },
   "neutral-55": {
-    hex: "#484851"
+    hex: "#474851"
   },
   "neutral-56": {
     hex: "#46474f"
   },
   "neutral-57": {
-    hex: "#45454d"
+    hex: "#44454d"
   },
   "neutral-58": {
     hex: "#43434c"
   },
   "neutral-59": {
-    hex: "#42424a"
+    hex: "#41424a"
   },
   "neutral-6": {
     hex: "#ebebed"
   },
   "neutral-60": {
-    hex: "#404048"
+    hex: "#3f4048"
   },
   "neutral-61": {
-    hex: "#3f3f46"
+    hex: "#3e3f46"
   },
   "neutral-62": {
-    hex: "#3d3d45"
+    hex: "#3c3d45"
   },
   "neutral-63": {
-    hex: "#3c3c43"
+    hex: "#3b3c43"
   },
   "neutral-64": {
-    hex: "#3a3a41"
+    hex: "#393a41"
   },
   "neutral-65": {
-    hex: "#393940"
+    hex: "#383940"
   },
   "neutral-66": {
-    hex: "#37373e"
+    hex: "#36373e"
   },
   "neutral-67": {
-    hex: "#36363c"
+    hex: "#35363c"
   },
   "neutral-68": {
     hex: "#34343a"
   },
   "neutral-69": {
-    hex: "#333339"
+    hex: "#323339"
   },
   "neutral-7": {
     hex: "#e7e7e9"
@@ -1755,19 +1755,19 @@ let i = {
     hex: "#313137"
   },
   "neutral-71": {
-    hex: "#303035"
+    hex: "#2f3035"
   },
   "neutral-72": {
     hex: "#2e2e34"
   },
   "neutral-73": {
-    hex: "#2d2d32"
+    hex: "#2c2d32"
   },
   "neutral-74": {
     hex: "#2b2b31"
   },
   "neutral-75": {
-    hex: "#2a2a2f"
+    hex: "#292a2f"
   },
   "neutral-76": {
     hex: "#28282d"
@@ -1776,7 +1776,7 @@ let i = {
     hex: "#27272c"
   },
   "neutral-78": {
-    hex: "#26262a"
+    hex: "#25262a"
   },
   "neutral-79": {
     hex: "#242429"
@@ -1785,7 +1785,7 @@ let i = {
     hex: "#e3e3e6"
   },
   "neutral-80": {
-    hex: "#232327"
+    hex: "#222327"
   },
   "neutral-81": {
     hex: "#212125"
@@ -1794,13 +1794,13 @@ let i = {
     hex: "#202024"
   },
   "neutral-83": {
-    hex: "#1f1f22"
+    hex: "#1e1f22"
   },
   "neutral-84": {
     hex: "#1d1d21"
   },
   "neutral-85": {
-    hex: "#1c1c1f"
+    hex: "#1b1c1f"
   },
   "neutral-86": {
     hex: "#1a1a1e"
@@ -1809,13 +1809,13 @@ let i = {
     hex: "#19191c"
   },
   "neutral-88": {
-    hex: "#18181b"
+    hex: "#17181b"
   },
   "neutral-89": {
     hex: "#161619"
   },
   "neutral-9": {
-    hex: "#dfdfe2"
+    hex: "#dfe0e2"
   },
   "neutral-90": {
     hex: "#151518"
@@ -1827,7 +1827,7 @@ let i = {
     hex: "#121214"
   },
   "neutral-93": {
-    hex: "#101012"
+    hex: "#101013"
   },
   "neutral-94": {
     hex: "#0e0e10"
@@ -2751,130 +2751,130 @@ let i = {
     hex: "#190d04"
   },
   "orange-new-1": {
-    hex: "#ffe3da"
+    hex: "#ffe1d3"
   },
   "orange-new-10": {
-    hex: "#fbc7ac"
+    hex: "#ffc39f"
   },
   "orange-new-100": {
     hex: "#090001"
   },
   "orange-new-11": {
-    hex: "#fac3a7"
+    hex: "#ffc09a"
   },
   "orange-new-12": {
-    hex: "#f9c0a2"
+    hex: "#ffbd95"
   },
   "orange-new-13": {
-    hex: "#f8bd9e"
+    hex: "#ffba90"
   },
   "orange-new-14": {
-    hex: "#f7ba99"
+    hex: "#ffb78b"
   },
   "orange-new-15": {
-    hex: "#f6b794"
+    hex: "#ffb487"
   },
   "orange-new-16": {
-    hex: "#f5b490"
+    hex: "#feb182"
   },
   "orange-new-17": {
-    hex: "#f4b18b"
+    hex: "#fcad7e"
   },
   "orange-new-18": {
-    hex: "#f2ad87"
+    hex: "#fbaa7a"
   },
   "orange-new-19": {
-    hex: "#f1aa83"
+    hex: "#f9a775"
   },
   "orange-new-2": {
-    hex: "#ffe0d5"
+    hex: "#ffddcd"
   },
   "orange-new-20": {
-    hex: "#f0a77e"
+    hex: "#f7a471"
   },
   "orange-new-21": {
-    hex: "#eea47a"
+    hex: "#f6a16d"
   },
   "orange-new-22": {
-    hex: "#eda176"
+    hex: "#f49e6a"
   },
   "orange-new-23": {
-    hex: "#ec9e71"
+    hex: "#f29b66"
   },
   "orange-new-24": {
-    hex: "#ea9b6d"
+    hex: "#f09862"
   },
   "orange-new-25": {
-    hex: "#e99869"
+    hex: "#ee955e"
   },
   "orange-new-26": {
-    hex: "#e79565"
+    hex: "#ec935b"
   },
   "orange-new-27": {
-    hex: "#e69261"
+    hex: "#ea9057"
   },
   "orange-new-28": {
-    hex: "#e48f5d"
+    hex: "#e88d54"
   },
   "orange-new-29": {
-    hex: "#e28c59"
+    hex: "#e68a50"
   },
   "orange-new-3": {
-    hex: "#ffddd0"
+    hex: "#ffdac6"
   },
   "orange-new-30": {
-    hex: "#e18855"
+    hex: "#e4874d"
   },
   "orange-new-31": {
-    hex: "#df8551"
+    hex: "#e28449"
   },
   "orange-new-32": {
-    hex: "#dd824d"
+    hex: "#e08146"
   },
   "orange-new-33": {
-    hex: "#dc7f4a"
+    hex: "#de7e43"
   },
   "orange-new-34": {
-    hex: "#da7c46"
+    hex: "#dc7b3f"
   },
   "orange-new-35": {
-    hex: "#d87942"
+    hex: "#da783c"
   },
   "orange-new-36": {
-    hex: "#d6763e"
+    hex: "#d87539"
   },
   "orange-new-37": {
-    hex: "#d5733a"
+    hex: "#d67236"
   },
   "orange-new-38": {
-    hex: "#d37036"
+    hex: "#d47032"
   },
   "orange-new-39": {
-    hex: "#d16d32"
+    hex: "#d26d2f"
   },
   "orange-new-4": {
-    hex: "#ffdaca"
+    hex: "#ffd7c0"
   },
   "orange-new-40": {
-    hex: "#cf6a2e"
+    hex: "#d06a2b"
   },
   "orange-new-41": {
-    hex: "#cd672a"
+    hex: "#ce6728"
   },
   "orange-new-42": {
-    hex: "#cb6426"
+    hex: "#cc6424"
   },
   "orange-new-43": {
-    hex: "#c96122"
+    hex: "#ca6120"
   },
   "orange-new-44": {
-    hex: "#c75e1e"
+    hex: "#c75e1c"
   },
   "orange-new-45": {
-    hex: "#c55b19"
+    hex: "#c55b18"
   },
   "orange-new-46": {
-    hex: "#c35814"
+    hex: "#c35813"
   },
   "orange-new-47": {
     hex: "#c1550e"
@@ -2886,7 +2886,7 @@ let i = {
     hex: "#bd4f00"
   },
   "orange-new-5": {
-    hex: "#ffd7c5"
+    hex: "#ffd3ba"
   },
   "orange-new-50": {
     hex: "#bd4f00"
@@ -2919,7 +2919,7 @@ let i = {
     hex: "#9b4002"
   },
   "orange-new-6": {
-    hex: "#fed3c0"
+    hex: "#ffd0b4"
   },
   "orange-new-60": {
     hex: "#983e02"
@@ -2952,7 +2952,7 @@ let i = {
     hex: "#792e00"
   },
   "orange-new-7": {
-    hex: "#fed0bb"
+    hex: "#ffcdaf"
   },
   "orange-new-70": {
     hex: "#762d00"
@@ -2985,7 +2985,7 @@ let i = {
     hex: "#5a1d00"
   },
   "orange-new-8": {
-    hex: "#fdcdb6"
+    hex: "#ffcaa9"
   },
   "orange-new-80": {
     hex: "#571b00"
@@ -3018,7 +3018,7 @@ let i = {
     hex: "#3c0c00"
   },
   "orange-new-9": {
-    hex: "#fccab1"
+    hex: "#ffc6a4"
   },
   "orange-new-90": {
     hex: "#390a00"
@@ -3057,124 +3057,124 @@ let i = {
     hex: "#13216b"
   },
   "pink-1": {
-    hex: "#ffd8f3"
+    hex: "#ffd3f8"
   },
   "pink-10": {
-    hex: "#ffbfee"
+    hex: "#ffbef0"
   },
   "pink-100": {
     hex: "#000000"
   },
   "pink-11": {
-    hex: "#ffbced"
+    hex: "#ffbcef"
   },
   "pink-12": {
-    hex: "#ffbaec"
+    hex: "#ffbaef"
   },
   "pink-13": {
-    hex: "#ffb7ec"
+    hex: "#ffb7ee"
   },
   "pink-14": {
-    hex: "#ffb4eb"
+    hex: "#ffb4ed"
   },
   "pink-15": {
-    hex: "#ffb1eb"
+    hex: "#ffb2ec"
   },
   "pink-16": {
-    hex: "#ffafea"
+    hex: "#ffafec"
   },
   "pink-17": {
-    hex: "#fface9"
+    hex: "#ffadeb"
   },
   "pink-18": {
-    hex: "#ffa9e9"
+    hex: "#ffaaea"
   },
   "pink-19": {
-    hex: "#ffa6e8"
+    hex: "#ffa7e9"
   },
   "pink-2": {
-    hex: "#ffd5f2"
+    hex: "#ffd1f7"
   },
   "pink-20": {
-    hex: "#ffa4e7"
+    hex: "#ffa5e8"
   },
   "pink-21": {
-    hex: "#ffa1e7"
+    hex: "#ffa2e8"
   },
   "pink-22": {
-    hex: "#ff9ee6"
+    hex: "#ff9fe7"
   },
   "pink-23": {
-    hex: "#ff9be5"
+    hex: "#ff9ce6"
   },
   "pink-24": {
-    hex: "#ff99e5"
+    hex: "#ff99e6"
   },
   "pink-25": {
-    hex: "#ff96e4"
+    hex: "#ff96e5"
   },
   "pink-26": {
-    hex: "#ff93e3"
+    hex: "#ff93e4"
   },
   "pink-27": {
-    hex: "#ff90e2"
+    hex: "#ff90e4"
   },
   "pink-28": {
-    hex: "#ff8ee2"
+    hex: "#ff8de3"
   },
   "pink-29": {
-    hex: "#ff8be1"
+    hex: "#ff8ae2"
   },
   "pink-3": {
-    hex: "#ffd2f2"
+    hex: "#ffcff7"
   },
   "pink-30": {
-    hex: "#ff88e0"
+    hex: "#ff87e2"
   },
   "pink-31": {
-    hex: "#ff85df"
+    hex: "#ff84e1"
   },
   "pink-32": {
-    hex: "#ff82df"
+    hex: "#ff80e0"
   },
   "pink-33": {
-    hex: "#ff7fde"
+    hex: "#ff7de0"
   },
   "pink-34": {
-    hex: "#ff7cdd"
+    hex: "#ff7adf"
   },
   "pink-35": {
-    hex: "#ff7add"
+    hex: "#ff76df"
   },
   "pink-36": {
-    hex: "#ff77dc"
+    hex: "#ff74de"
   },
   "pink-37": {
-    hex: "#ff74db"
+    hex: "#ff71dd"
   },
   "pink-38": {
-    hex: "#ff71da"
+    hex: "#ff6edc"
   },
   "pink-39": {
-    hex: "#ff6eda"
+    hex: "#ff6cdb"
   },
   "pink-4": {
-    hex: "#ffcff1"
+    hex: "#ffccf6"
   },
   "pink-40": {
-    hex: "#ff6ad9"
+    hex: "#ff69da"
   },
   "pink-41": {
-    hex: "#ff67d8"
+    hex: "#ff66d9"
   },
   "pink-42": {
-    hex: "#ff64d7"
+    hex: "#ff63d8"
   },
   "pink-43": {
-    hex: "#ff61d7"
+    hex: "#ff60d7"
   },
   "pink-44": {
-    hex: "#ff5ed6"
+    hex: "#ff5dd6"
   },
   "pink-45": {
     hex: "#ff5ad5"
@@ -3192,7 +3192,7 @@ let i = {
     hex: "#ff4cd2"
   },
   "pink-5": {
-    hex: "#ffcdf1"
+    hex: "#ffcaf5"
   },
   "pink-50": {
     hex: "#ff4cd2"
@@ -3225,7 +3225,7 @@ let i = {
     hex: "#cd40a8"
   },
   "pink-6": {
-    hex: "#ffcaf0"
+    hex: "#ffc8f4"
   },
   "pink-60": {
     hex: "#c83fa4"
@@ -3258,7 +3258,7 @@ let i = {
     hex: "#9b307e"
   },
   "pink-7": {
-    hex: "#ffc7ef"
+    hex: "#ffc6f3"
   },
   "pink-70": {
     hex: "#962e7a"
@@ -3291,7 +3291,7 @@ let i = {
     hex: "#6d1e57"
   },
   "pink-8": {
-    hex: "#ffc4ef"
+    hex: "#ffc3f2"
   },
   "pink-80": {
     hex: "#681c53"
@@ -3324,7 +3324,7 @@ let i = {
     hex: "#410e33"
   },
   "pink-9": {
-    hex: "#ffc2ee"
+    hex: "#ffc1f1"
   },
   "pink-90": {
     hex: "#3d0d30"
@@ -3699,130 +3699,130 @@ let i = {
     hex: "#220606"
   },
   "red-new-1": {
-    hex: "#ffdfde"
+    hex: "#ffdbda"
   },
   "red-new-10": {
-    hex: "#ffbdba"
+    hex: "#ffbbb6"
   },
   "red-new-100": {
     hex: "#040001"
   },
   "red-new-11": {
-    hex: "#ffbab6"
+    hex: "#ffb7b2"
   },
   "red-new-12": {
-    hex: "#ffb6b2"
+    hex: "#ffb3ae"
   },
   "red-new-13": {
-    hex: "#ffb2ae"
-  },
-  "red-new-14": {
     hex: "#ffafaa"
   },
+  "red-new-14": {
+    hex: "#ffaba6"
+  },
   "red-new-15": {
-    hex: "#ffaba7"
+    hex: "#ffa7a2"
   },
   "red-new-16": {
-    hex: "#ffa8a3"
+    hex: "#ffa39d"
   },
   "red-new-17": {
-    hex: "#ffa49f"
+    hex: "#ff9f99"
   },
   "red-new-18": {
-    hex: "#ffa09c"
+    hex: "#ff9b95"
   },
   "red-new-19": {
-    hex: "#ff9d98"
+    hex: "#ff9791"
   },
   "red-new-2": {
-    hex: "#ffdbda"
-  },
-  "red-new-20": {
-    hex: "#ff9994"
-  },
-  "red-new-21": {
-    hex: "#fe9691"
-  },
-  "red-new-22": {
-    hex: "#fd928d"
-  },
-  "red-new-23": {
-    hex: "#fc8f8a"
-  },
-  "red-new-24": {
-    hex: "#fb8b87"
-  },
-  "red-new-25": {
-    hex: "#fa8883"
-  },
-  "red-new-26": {
-    hex: "#f98480"
-  },
-  "red-new-27": {
-    hex: "#f8817c"
-  },
-  "red-new-28": {
-    hex: "#f67d79"
-  },
-  "red-new-29": {
-    hex: "#f57976"
-  },
-  "red-new-3": {
     hex: "#ffd7d6"
   },
+  "red-new-20": {
+    hex: "#ff948e"
+  },
+  "red-new-21": {
+    hex: "#ff918b"
+  },
+  "red-new-22": {
+    hex: "#ff8d87"
+  },
+  "red-new-23": {
+    hex: "#ff8a84"
+  },
+  "red-new-24": {
+    hex: "#ff8681"
+  },
+  "red-new-25": {
+    hex: "#ff837e"
+  },
+  "red-new-26": {
+    hex: "#ff807b"
+  },
+  "red-new-27": {
+    hex: "#fe7c78"
+  },
+  "red-new-28": {
+    hex: "#fc7975"
+  },
+  "red-new-29": {
+    hex: "#fa7672"
+  },
+  "red-new-3": {
+    hex: "#ffd4d2"
+  },
   "red-new-30": {
-    hex: "#f47672"
+    hex: "#f8736f"
   },
   "red-new-31": {
-    hex: "#f2726f"
+    hex: "#f76f6c"
   },
   "red-new-32": {
-    hex: "#f16f6c"
+    hex: "#f56c69"
   },
   "red-new-33": {
-    hex: "#ef6b69"
+    hex: "#f36966"
   },
   "red-new-34": {
-    hex: "#ee6866"
+    hex: "#f16563"
   },
   "red-new-35": {
-    hex: "#ec6463"
+    hex: "#ef6260"
   },
   "red-new-36": {
-    hex: "#ea615f"
+    hex: "#ed5f5d"
   },
   "red-new-37": {
-    hex: "#e95d5c"
+    hex: "#eb5b5b"
   },
   "red-new-38": {
-    hex: "#e75959"
+    hex: "#e95858"
   },
   "red-new-39": {
-    hex: "#e55656"
+    hex: "#e75455"
   },
   "red-new-4": {
-    hex: "#ffd3d1"
+    hex: "#ffd0ce"
   },
   "red-new-40": {
-    hex: "#e45253"
+    hex: "#e55152"
   },
   "red-new-41": {
-    hex: "#e24e50"
+    hex: "#e34d4f"
   },
   "red-new-42": {
-    hex: "#e04a4d"
+    hex: "#e14a4d"
   },
   "red-new-43": {
-    hex: "#de464a"
+    hex: "#df464a"
   },
   "red-new-44": {
-    hex: "#dc4347"
+    hex: "#dc4247"
   },
   "red-new-45": {
     hex: "#da3e44"
   },
   "red-new-46": {
-    hex: "#d83a42"
+    hex: "#d83a41"
   },
   "red-new-47": {
     hex: "#d6363f"
@@ -3834,7 +3834,7 @@ let i = {
     hex: "#d22d39"
   },
   "red-new-5": {
-    hex: "#ffd0cd"
+    hex: "#ffcdca"
   },
   "red-new-50": {
     hex: "#d22d39"
@@ -3867,7 +3867,7 @@ let i = {
     hex: "#ac262f"
   },
   "red-new-6": {
-    hex: "#ffccc9"
+    hex: "#ffc9c6"
   },
   "red-new-60": {
     hex: "#a8242d"
@@ -3900,7 +3900,7 @@ let i = {
     hex: "#851a21"
   },
   "red-new-7": {
-    hex: "#ffc8c5"
+    hex: "#ffc6c2"
   },
   "red-new-70": {
     hex: "#821920"
@@ -3933,7 +3933,7 @@ let i = {
     hex: "#620d14"
   },
   "red-new-8": {
-    hex: "#ffc5c1"
+    hex: "#ffc2be"
   },
   "red-new-80": {
     hex: "#5e0b13"
@@ -3966,7 +3966,7 @@ let i = {
     hex: "#400209"
   },
   "red-new-9": {
-    hex: "#ffc1bd"
+    hex: "#ffbeba"
   },
   "red-new-90": {
     hex: "#3d0208"
@@ -4161,133 +4161,133 @@ let i = {
     hex: "#011215"
   },
   "teal-new-1": {
-    hex: "#c8fbff"
+    hex: "#b1ffff"
   },
   "teal-new-10": {
-    hex: "#a8e3ea"
+    hex: "#93e7ef"
   },
   "teal-new-100": {
     hex: "#00060b"
   },
   "teal-new-11": {
-    hex: "#a4e1e7"
+    hex: "#90e4ec"
   },
   "teal-new-12": {
-    hex: "#a1dee5"
+    hex: "#8de1e9"
   },
   "teal-new-13": {
-    hex: "#9ddce2"
+    hex: "#8adee7"
   },
   "teal-new-14": {
-    hex: "#99d9e0"
+    hex: "#87dce4"
   },
   "teal-new-15": {
-    hex: "#96d6dd"
+    hex: "#84d9e1"
   },
   "teal-new-16": {
-    hex: "#92d4db"
+    hex: "#81d6de"
   },
   "teal-new-17": {
-    hex: "#8fd1d8"
+    hex: "#7ed4dc"
   },
   "teal-new-18": {
-    hex: "#8bcfd6"
+    hex: "#7cd1d9"
   },
   "teal-new-19": {
-    hex: "#88ccd3"
+    hex: "#79ced6"
   },
   "teal-new-2": {
-    hex: "#c5f8fe"
+    hex: "#adfcff"
   },
   "teal-new-20": {
-    hex: "#84cad1"
+    hex: "#76ccd4"
   },
   "teal-new-21": {
-    hex: "#81c7ce"
+    hex: "#73c9d1"
   },
   "teal-new-22": {
-    hex: "#7dc4cc"
+    hex: "#70c6ce"
   },
   "teal-new-23": {
-    hex: "#7ac2c9"
+    hex: "#6dc4cc"
   },
   "teal-new-24": {
-    hex: "#76bfc7"
+    hex: "#6ac1c9"
   },
   "teal-new-25": {
-    hex: "#73bdc4"
+    hex: "#67bec6"
   },
   "teal-new-26": {
-    hex: "#6fbac2"
+    hex: "#64bcc4"
   },
   "teal-new-27": {
-    hex: "#6cb8bf"
+    hex: "#61b9c1"
   },
   "teal-new-28": {
-    hex: "#68b5bd"
+    hex: "#5fb6bf"
   },
   "teal-new-29": {
-    hex: "#64b3ba"
+    hex: "#5cb4bc"
   },
   "teal-new-3": {
-    hex: "#c1f6fb"
+    hex: "#aafaff"
   },
   "teal-new-30": {
-    hex: "#61b0b8"
+    hex: "#59b1b9"
   },
   "teal-new-31": {
-    hex: "#5daeb5"
+    hex: "#56aeb7"
   },
   "teal-new-32": {
-    hex: "#5aabb3"
+    hex: "#53acb4"
   },
   "teal-new-33": {
-    hex: "#56a9b1"
+    hex: "#4fa9b2"
   },
   "teal-new-34": {
-    hex: "#52a6ae"
+    hex: "#4ca7af"
   },
   "teal-new-35": {
-    hex: "#4ea3ac"
+    hex: "#49a4ac"
   },
   "teal-new-36": {
-    hex: "#4ba1a9"
+    hex: "#46a1aa"
   },
   "teal-new-37": {
-    hex: "#479fa7"
+    hex: "#429fa7"
   },
   "teal-new-38": {
-    hex: "#439ca4"
+    hex: "#3f9ca5"
   },
   "teal-new-39": {
-    hex: "#3f9aa2"
+    hex: "#3b9aa2"
   },
   "teal-new-4": {
-    hex: "#bdf3f9"
+    hex: "#a7f7ff"
   },
   "teal-new-40": {
-    hex: "#3b97a0"
+    hex: "#3897a0"
   },
   "teal-new-41": {
-    hex: "#36959d"
+    hex: "#34959d"
   },
   "teal-new-42": {
-    hex: "#32929b"
+    hex: "#30929b"
   },
   "teal-new-43": {
-    hex: "#2d9098"
+    hex: "#2c9098"
   },
   "teal-new-44": {
-    hex: "#288d96"
+    hex: "#278d96"
   },
   "teal-new-45": {
-    hex: "#238b94"
+    hex: "#228b94"
   },
   "teal-new-46": {
-    hex: "#1d8891"
+    hex: "#1c8891"
   },
   "teal-new-47": {
-    hex: "#16868f"
+    hex: "#15868f"
   },
   "teal-new-48": {
     hex: "#0c838c"
@@ -4296,7 +4296,7 @@ let i = {
     hex: "#00818a"
   },
   "teal-new-5": {
-    hex: "#baf0f6"
+    hex: "#a3f4fc"
   },
   "teal-new-50": {
     hex: "#00818a"
@@ -4329,7 +4329,7 @@ let i = {
     hex: "#046a72"
   },
   "teal-new-6": {
-    hex: "#b6eef4"
+    hex: "#a0f1f9"
   },
   "teal-new-60": {
     hex: "#03676f"
@@ -4362,7 +4362,7 @@ let i = {
     hex: "#005159"
   },
   "teal-new-7": {
-    hex: "#b3ebf1"
+    hex: "#9deff7"
   },
   "teal-new-70": {
     hex: "#004f57"
@@ -4395,7 +4395,7 @@ let i = {
     hex: "#003a42"
   },
   "teal-new-8": {
-    hex: "#afe9ef"
+    hex: "#9aecf4"
   },
   "teal-new-80": {
     hex: "#00373f"
@@ -4428,7 +4428,7 @@ let i = {
     hex: "#00242c"
   },
   "teal-new-9": {
-    hex: "#abe6ec"
+    hex: "#96e9f1"
   },
   "teal-new-90": {
     hex: "#002229"
@@ -4635,130 +4635,130 @@ let i = {
     hex: "#160e02"
   },
   "yellow-new-1": {
-    hex: "#ffe8d4"
+    hex: "#ffe6c9"
   },
   "yellow-new-10": {
-    hex: "#f1cea8"
+    hex: "#f8cd98"
   },
   "yellow-new-100": {
     hex: "#0e0000"
   },
   "yellow-new-11": {
-    hex: "#efcba3"
+    hex: "#f6ca94"
   },
   "yellow-new-12": {
-    hex: "#edc99f"
+    hex: "#f4c78f"
   },
   "yellow-new-13": {
-    hex: "#ebc69a"
+    hex: "#f2c48b"
   },
   "yellow-new-14": {
-    hex: "#e9c396"
+    hex: "#f0c186"
   },
   "yellow-new-15": {
-    hex: "#e7c092"
+    hex: "#eebe82"
   },
   "yellow-new-16": {
-    hex: "#e6bd8d"
+    hex: "#ecbc7e"
   },
   "yellow-new-17": {
-    hex: "#e4ba89"
+    hex: "#eab97a"
   },
   "yellow-new-18": {
-    hex: "#e2b785"
+    hex: "#e7b676"
   },
   "yellow-new-19": {
-    hex: "#e0b580"
+    hex: "#e5b372"
   },
   "yellow-new-2": {
-    hex: "#ffe5cf"
+    hex: "#ffe3c3"
   },
   "yellow-new-20": {
-    hex: "#deb27c"
+    hex: "#e3b16e"
   },
   "yellow-new-21": {
-    hex: "#dcaf78"
+    hex: "#e1ae6b"
   },
   "yellow-new-22": {
-    hex: "#daac74"
+    hex: "#deab67"
   },
   "yellow-new-23": {
-    hex: "#d8a970"
+    hex: "#dca863"
   },
   "yellow-new-24": {
-    hex: "#d6a76c"
+    hex: "#daa660"
   },
   "yellow-new-25": {
-    hex: "#d4a468"
+    hex: "#d8a35c"
   },
   "yellow-new-26": {
-    hex: "#d2a164"
+    hex: "#d5a059"
   },
   "yellow-new-27": {
-    hex: "#d09e60"
+    hex: "#d39d56"
   },
   "yellow-new-28": {
-    hex: "#ce9c5c"
+    hex: "#d19b52"
   },
   "yellow-new-29": {
-    hex: "#cc9958"
+    hex: "#ce984f"
   },
   "yellow-new-3": {
-    hex: "#fde2ca"
+    hex: "#ffe1bd"
   },
   "yellow-new-30": {
-    hex: "#ca9654"
+    hex: "#cc954c"
   },
   "yellow-new-31": {
-    hex: "#c89351"
+    hex: "#ca9348"
   },
   "yellow-new-32": {
-    hex: "#c5914d"
+    hex: "#c79045"
   },
   "yellow-new-33": {
-    hex: "#c38e49"
+    hex: "#c58d42"
   },
   "yellow-new-34": {
-    hex: "#c18b45"
+    hex: "#c38b3f"
   },
   "yellow-new-35": {
-    hex: "#bf8841"
+    hex: "#c1883c"
   },
   "yellow-new-36": {
-    hex: "#bd863e"
+    hex: "#be8538"
   },
   "yellow-new-37": {
-    hex: "#bb833a"
+    hex: "#bc8335"
   },
   "yellow-new-38": {
-    hex: "#b98036"
+    hex: "#ba8032"
   },
   "yellow-new-39": {
-    hex: "#b77e32"
+    hex: "#b77d2f"
   },
   "yellow-new-4": {
-    hex: "#fcdfc5"
+    hex: "#ffdeb7"
   },
   "yellow-new-40": {
-    hex: "#b57b2e"
+    hex: "#b57b2b"
   },
   "yellow-new-41": {
-    hex: "#b2782a"
+    hex: "#b37828"
   },
   "yellow-new-42": {
-    hex: "#b07626"
+    hex: "#b17524"
   },
   "yellow-new-43": {
-    hex: "#ae7322"
+    hex: "#ae7320"
   },
   "yellow-new-44": {
-    hex: "#ac701e"
+    hex: "#ac701c"
   },
   "yellow-new-45": {
-    hex: "#aa6e19"
+    hex: "#aa6d18"
   },
   "yellow-new-46": {
-    hex: "#a86b14"
+    hex: "#a86b13"
   },
   "yellow-new-47": {
     hex: "#a5680e"
@@ -4770,7 +4770,7 @@ let i = {
     hex: "#a16300"
   },
   "yellow-new-5": {
-    hex: "#faddc0"
+    hex: "#ffdbb2"
   },
   "yellow-new-50": {
     hex: "#a16300"
@@ -4803,7 +4803,7 @@ let i = {
     hex: "#864f02"
   },
   "yellow-new-6": {
-    hex: "#f8dabb"
+    hex: "#ffd8ad"
   },
   "yellow-new-60": {
     hex: "#834d02"
@@ -4836,7 +4836,7 @@ let i = {
     hex: "#6a3a00"
   },
   "yellow-new-7": {
-    hex: "#f6d7b6"
+    hex: "#fed5a7"
   },
   "yellow-new-70": {
     hex: "#683800"
@@ -4869,7 +4869,7 @@ let i = {
     hex: "#502500"
   },
   "yellow-new-8": {
-    hex: "#f4d4b2"
+    hex: "#fcd2a2"
   },
   "yellow-new-80": {
     hex: "#4e2300"
@@ -4902,7 +4902,7 @@ let i = {
     hex: "#381200"
   },
   "yellow-new-9": {
-    hex: "#f3d1ad"
+    hex: "#facf9d"
   },
   "yellow-new-90": {
     hex: "#351000"
