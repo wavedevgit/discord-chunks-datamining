@@ -65,8 +65,8 @@ function y(e) {
   i.useEffect(() => () => U(), [U, T]);
   let B = D.Component;
   (0, d.bp)() === C.IlC.POPOUT && (B = L ? T ? o.T : l.x : T ? s.n : a.S);
-  let H = (S || P === m.BK.GroupedButtonsRedMic) && T ? "red" : void 0,
-    F = P !== m.BK.GroupedButtonsRedMic && !S;
+  let F = (S || P === m.BK.GroupedButtonsRedMic) && T ? "red" : void 0,
+    H = P !== m.BK.GroupedButtonsRedMic && !S;
   return (0, r.jsx)(A, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -85,10 +85,10 @@ function y(e) {
     }
     return e
   }({
-    isActive: !!F && !T,
+    isActive: !!H && !T,
     iconComponent: B,
     caretColor: Z && T ? "red" : "primaryDark",
-    color: H,
+    color: F,
     label: w,
     onMouseEnter: e => {
       null == j || j(e), W.onMouseEnter()

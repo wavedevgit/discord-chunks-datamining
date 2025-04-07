@@ -111,7 +111,7 @@ function E(e) {
         })) : r
       }))
     }, [R.result]),
-    H = i.useMemo(() => {
+    F = i.useMemo(() => {
       var e, t, n, r;
       return null == R.result ? {
         documentsIndexed: 0,
@@ -135,7 +135,7 @@ function E(e) {
         showNoResultsAlt: !1
       }
     }, [R.result, U]);
-  return null == k || null == M || null == H ? null : (0, r.jsxs)("div", {
+  return null == k || null == M || null == F ? null : (0, r.jsxs)("div", {
     className: o()(j.container, I),
     children: [(0, r.jsx)(x.Z, {
       guildId: E,
@@ -147,7 +147,7 @@ function E(e) {
       onScroll: D,
       children: (0, r.jsx)(m.Z, {
         searchResults: B,
-        search: H,
+        search: F,
         searchId: l,
         renderEmbeds: !0,
         blockCount: 0,

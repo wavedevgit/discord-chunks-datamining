@@ -43,8 +43,8 @@ var r = n(200651),
   W = n(689674),
   U = n(438075),
   B = n(764893),
-  H = n(481363),
-  F = n(900902),
+  F = n(481363),
+  H = n(900902),
   G = n(252032),
   V = n(737243),
   z = n(614584),
@@ -155,7 +155,7 @@ function er(e) {
       [Q.systemMessage]: !0,
       [Q.groupStart]: !0
     }),
-    childrenHeader: (0, F.Z)({
+    childrenHeader: (0, H.Z)({
       messageProps: e,
       setPopout: g,
       messagePopouts: m,
@@ -195,7 +195,7 @@ function ei(e) {
     handleFocus: W,
     handleBlur: B
   } = (0, k.bb)(I), {
-    popouts: H,
+    popouts: F,
     selected: V,
     setPopout: J
   } = (0, L.Z)(a.id, q.d$), en = j.RS.useSetting(), er = j.NA.useSetting(), ei = (0, u.e7)([x.Z], () => x.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = a.editedTimestamp) ? n : a.timestamp).valueOf()), {
@@ -206,7 +206,7 @@ function ei(e) {
     groupId: y,
     message: a,
     defaultValue: V,
-    popouts: H
+    popouts: F
   }), ec = (0, u.e7)([p.Z], () => p.Z.keyboardModeEnabled), eu = V || ec && A, ed = eu || es, {
     content: ep,
     hasSpoilerEmbeds: eh
@@ -248,16 +248,16 @@ function ei(e) {
       onBlur: B,
       childrenRepliedMessage: a.type === K.uaV.REPLY && (0, z.Z)(ee($({}, e), {
         setPopout: J,
-        referencedUsernameProfile: H.referencedUsernameProfile,
-        referencedAvatarProfile: H.referencedAvatarProfile,
+        referencedUsernameProfile: F.referencedUsernameProfile,
+        referencedAvatarProfile: F.referencedAvatarProfile,
         replyReference: E,
         replyMessage: ei,
         isReplySpineClickable: !0
       })),
-      childrenHeader: (0, F.Z)({
+      childrenHeader: (0, H.Z)({
         messageProps: e,
         setPopout: J,
-        messagePopouts: H,
+        messagePopouts: F,
         replyReference: E,
         author: em,
         repliedMessage: ei,
@@ -365,8 +365,8 @@ let el = i.memo(function(e) {
       previewLinkTarget: !0
     }),
     eB = (0, M.Z)(S, en, eA),
-    eH = (0, T.ZP)(v),
-    eF = (0, u.e7)([y.Z], () => y.Z.getPendingReply(en)),
+    eF = (0, T.ZP)(v),
+    eH = (0, u.e7)([y.Z], () => y.Z.getPendingReply(en)),
     eG = function(e) {
       let t = i.useRef(e);
       return i.useEffect(() => {
@@ -375,7 +375,7 @@ let el = i.memo(function(e) {
     }(el),
     eV = (0, f.p9)({
       guildId: J.guild_id,
-      roleId: eH.iconRoleId
+      roleId: eF.iconRoleId
     }),
     ez = (0, R.iG)(v, eo),
     eY = (0, R.Gx)(v),
@@ -387,7 +387,7 @@ let el = i.memo(function(e) {
     eX = null != eq,
     eQ = i.useMemo(() => Object.values(eg).some(e => e), [eg]);
   l = v.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, eW) : (0, G.Z)(e, eW, eT);
-  let eJ = (0, C.Z)(eH),
+  let eJ = (0, C.Z)(eF),
     e$ = v.id === eo,
     e0 = (0, r.jsx)(d.tEY, {
       offset: {
@@ -423,7 +423,7 @@ let el = i.memo(function(e) {
             [Q.systemMessage]: (0, Z.Z)(v),
             [Q.groupStart]: !ea && (e$ || v.type === K.uaV.REPLY),
             [Q.selected]: ew,
-            [Q.replying]: (null == eF ? void 0 : eF.message.id) === v.id,
+            [Q.replying]: (null == eH ? void 0 : eH.message.id) === v.id,
             [Q.interactionSending]: v.isCommandType() && v.state === K.yb.SENDING,
             [Q.automodMessage]: eX,
             [Q.editing]: eT,
@@ -440,12 +440,12 @@ let el = i.memo(function(e) {
             isReplySpineClickable: !0
           })),
           childrenExecutedCommand: (0, V.Z)(e, e_, eg),
-          childrenHeader: ea ? void 0 : (0, F.Z)({
+          childrenHeader: ea ? void 0 : (0, H.Z)({
             messageProps: e,
             setPopout: e_,
             messagePopouts: eg,
             replyReference: es,
-            author: eH,
+            author: eF,
             repliedMessage: em,
             roleIcon: eV
           }),
@@ -456,7 +456,7 @@ let el = i.memo(function(e) {
             isInteracting: eR,
             isAutomodBlockedMessage: eX
           }),
-          childrenButtons: ej || eN ? (0, H.Z)({
+          childrenButtons: ej || eN ? (0, F.Z)({
             buttonProps: e,
             setPopout: e_,
             messagePopouts: eg,

@@ -41,8 +41,8 @@ var r = n(200651),
   W = n(481369),
   U = n(186877),
   B = n(294218),
-  H = n(534469),
-  F = n(993397),
+  F = n(534469),
+  H = n(993397),
   G = n(511010),
   V = n(524444),
   z = n(977391),
@@ -186,7 +186,7 @@ function er(e) {
       }, "forum-post-action-bar-".concat(f.id));
       if (e.type === Q.ys_.MESSAGE_GROUP_BLOCKED || e.type === Q.ys_.MESSAGE_GROUP_IGNORED || e.type === Q.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(F.Z, {
+        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(H.Z, {
           unreadId: X.j1,
           messages: e,
           channel: f,
@@ -199,7 +199,7 @@ function er(e) {
       if ((0, L.Z)(e.content, l)) return;
       e.type === Q.ys_.MESSAGE && null == eI && (eI = e);
       let o = e.groupId === (null == eI ? void 0 : eI.groupId) ? eI.content.id : e.groupId,
-        a = e.type === Q.ys_.THREAD_STARTER_MESSAGE ? H.Ru : H.ZP;
+        a = e.type === Q.ys_.THREAD_STARTER_MESSAGE ? F.Ru : F.ZP;
       return (0, r.jsx)(a, {
         compact: el,
         channel: f,

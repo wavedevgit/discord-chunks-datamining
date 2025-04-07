@@ -114,8 +114,8 @@ function U(e) {
   } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
-    canMessage: H
-  } = (0, m.TE)(t, l), F = (0, s.e7)([x.default], () => {
+    canMessage: F
+  } = (0, m.TE)(t, l), H = (0, s.e7)([x.default], () => {
     var e, t;
     return (null == (e = x.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = x.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
@@ -199,7 +199,7 @@ function U(e) {
         }))
       }, [e])
     }
-  }(l), J = !(F || G || V || z), {
+  }(l), J = !(H || G || V || z), {
     titleAnimatedStyle: $,
     opacities: ee
   } = function(e) {
@@ -271,7 +271,7 @@ function U(e) {
       completed: z,
       onClick: K
     })
-  }, "customize")), H && el.push((0, r.jsx)(a.Z.div, {
+  }, "customize")), F && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
       opacity: ee[el.length]
@@ -290,7 +290,7 @@ function U(e) {
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.yIb : w,
       header: Z.NW.string(Z.t.pGVNIy),
-      completed: F,
+      completed: H,
       onClick: X
     })
   }, "download")), el.push((0, r.jsx)(a.Z.div, {

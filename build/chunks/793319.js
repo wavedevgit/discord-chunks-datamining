@@ -43,8 +43,8 @@ var r = n(200651),
   W = n(459502),
   U = n(576645),
   B = n(140465),
-  H = n(800966),
-  F = n(641015),
+  F = n(800966),
+  H = n(641015),
   G = n(618158),
   V = n(390322),
   z = n(791592),
@@ -212,7 +212,7 @@ function eZ(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(H.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(F.h, {
             buttonRef: b,
             dismissed: !1,
             onDismiss: () => {
@@ -480,7 +480,7 @@ let ek = function(e) {
     selfMute: U,
     mute: B
   } = (0, eh.Z)(l), {
-    canGoLive: H
+    canGoLive: F
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, k.Z)(er.Z)
   })), G = (0, w.Z)(), z = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), Y = null != G, q = (0, u.e7)([ei.Z], () => {
@@ -505,7 +505,7 @@ let ek = function(e) {
     })
   });
   let ey = eb && !K,
-    ex = (0, F.Z)(l),
+    ex = (0, H.Z)(l),
     ej = eC ? e => {
       (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(E.default, {
         onClose: f.Zy,
@@ -627,7 +627,7 @@ let ek = function(e) {
             channel: l,
             currentUser: T,
             exitFullScreen: d,
-            canGoLive: H,
+            canGoLive: F,
             hasPermission: L
           }), !Y && (0, r.jsx)(eT, {
             channel: l,
@@ -752,7 +752,7 @@ let ek = function(e) {
           channel: l,
           currentUser: T,
           exitFullScreen: d,
-          canGoLive: H,
+          canGoLive: F,
           hasPermission: L
         }), m === eo.BK.MicPushToEnable ? (0, r.jsx)(p.yRy, {
           renderPopout: e => {

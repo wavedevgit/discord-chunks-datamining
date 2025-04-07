@@ -57,8 +57,8 @@ let O = (0, o.Z)(e => {
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, M, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
-    speakerTileHeight: H
-  } = y(C, k), F = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+    speakerTileHeight: F
+  } = y(C, k), H = N ? C - 32 : Math.min(C - 64, 3 * B + 8), G = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
@@ -98,7 +98,7 @@ let O = (0, o.Z)(e => {
             children: (0, r.jsx)(g.Z, {
               channel: o,
               participant: l[0],
-              width: F
+              width: H
             })
           }, "selected-participant");
         case 1:
@@ -122,7 +122,7 @@ let O = (0, o.Z)(e => {
           return null
       }
     },
-    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? F / g.Q + 8 : 1 === e ? V ? 0 : H : 98 * !Y,
+    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? H / g.Q + 8 : 1 === e ? V ? 0 : F : 98 * !Y,
     renderFooter: e => {
       let {
         section: t
