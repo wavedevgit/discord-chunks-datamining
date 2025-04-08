@@ -29,25 +29,25 @@ function h(e) {
     [j, N] = i.useState(null),
     _ = i.useMemo(() => null == h ? void 0 : h.some(e => (0, a.J)(e)), [h]),
     v = i.useMemo(() => h.length === m.nx, [h]),
-    C = i.useCallback(e => {
+    O = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && N(null)
     }, [j, n.id]),
-    O = i.useCallback(e => {
-      C([...h, e])
-    }, [h, C]),
     y = i.useCallback(e => {
-      C([...h.slice(0, e), ...h.slice(e + 1)])
-    }, [h, C]),
+      O([...h, e])
+    }, [h, O]),
+    C = i.useCallback(e => {
+      O([...h.slice(0, e), ...h.slice(e + 1)])
+    }, [h, O]),
     I = i.useCallback((e, t) => {
       if (h[e] === t) return;
       let n = [...h];
-      n[e] = t, C(n)
-    }, [h, C]),
+      n[e] = t, O(n)
+    }, [h, O]),
     E = i.useCallback((e, t, n) => {
       let r = h.indexOf(e),
         i = [...h];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (C(i), null !== j && N(null)) : j !== t && N(t)
-    }, [j, h, C]);
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), b(i)), n ? (O(i), null !== j && N(null)) : j !== t && N(t)
+    }, [j, h, O]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.X6, {
       variant: "text-xs/bold",
@@ -64,7 +64,7 @@ function h(e) {
       index: h.indexOf(e),
       isDragEnabled: h.length > 1,
       submittedGuildJoinRequestsCount: x,
-      removeFormField: y,
+      removeFormField: C,
       updateFormField: I,
       updateFormFieldOrder: E,
       canRemove: h.length > 1,
@@ -73,12 +73,12 @@ function h(e) {
     })), !v && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: O,
+        addFormField: y,
         guild: n,
         allowTerms: !_
       })
     }), !v && (0, r.jsx)(f, {
-      addFormField: O
+      addFormField: y
     })]
   })
 }

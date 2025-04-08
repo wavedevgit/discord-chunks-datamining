@@ -23,10 +23,10 @@ var r = n(200651),
   N = n(386937),
   _ = n(316350),
   v = n(863562),
-  C = n(981631),
-  O = n(388032),
-  y = n(145635);
-let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.TIER_1) ? C.Eu4.TIER_1 : e < (0, b.A3)(C.Eu4.TIER_2) ? C.Eu4.TIER_2 : e < (0, b.A3)(C.Eu4.TIER_3) || null != t && t.hasFeature(C.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? C.Eu4.TIER_3 : C.Eu4.NONE,
+  O = n(981631),
+  y = n(388032),
+  C = n(145635);
+let I = (e, t) => e < (0, b.A3)(O.Eu4.NONE) ? O.Eu4.NONE : e < (0, b.A3)(O.Eu4.TIER_1) ? O.Eu4.TIER_1 : e < (0, b.A3)(O.Eu4.TIER_2) ? O.Eu4.TIER_2 : e < (0, b.A3)(O.Eu4.TIER_3) || null != t && t.hasFeature(O.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? O.Eu4.TIER_3 : O.Eu4.NONE,
   E = e => {
     let {
       children: t,
@@ -41,7 +41,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
         children: t
       }), !a && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        children: O.NW.format(O.t.ZLoNtr, {
+        children: y.NW.format(y.t.ZLoNtr, {
           numTotal: l,
           numAvailable: (0, b.Qi)(i, s)
         })
@@ -79,10 +79,10 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
     })
   },
   T = () => (0, r.jsx)("div", {
-    className: y.placeholderCard,
+    className: C.placeholderCard,
     children: (0, r.jsx)("img", {
-      className: y.placeholderImg,
-      alt: O.NW.string(O.t.wl4ntL),
+      className: C.placeholderImg,
+      alt: y.NW.string(y.t.wl4ntL),
       src: n(872732)
     })
   }),
@@ -98,15 +98,15 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
       size: o.zxk.Sizes.SMALL,
       color: o.zxk.Colors.BRAND,
       onClick: () => {
-        f.default.track(C.rMx.OPEN_MODAL, {
-          type: C.jXE.CREATE_STICKER_MODAL,
+        f.default.track(O.rMx.OPEN_MODAL, {
+          type: O.jXE.CREATE_STICKER_MODAL,
           location: n
         }), S({
           guildId: t.id
         })
       },
       disabled: !i,
-      children: O.NW.string(O.t.O1REe3)
+      children: y.NW.string(y.t.O1REe3)
     })
   },
   w = e => {
@@ -117,7 +117,7 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
       return null != (e = j.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: f
-    } = (0, u.ZP)(), S = (0, h.Z)(t.id).available, w = t.hasFeature(C.oNc.MORE_STICKERS) ? C.Eu4.TIER_3 : t.premiumTier, R = t.hasFeature(C.oNc.MORE_STICKERS) ? C.oCV[C.Eu4.TIER_3] : S;
+    } = (0, u.ZP)(), S = (0, h.Z)(t.id).available, w = t.hasFeature(O.oNc.MORE_STICKERS) ? O.Eu4.TIER_3 : t.premiumTier, R = t.hasFeature(O.oNc.MORE_STICKERS) ? O.oCV[O.Eu4.TIER_3] : S;
     if (i.useEffect(() => {
         let e = !1;
         return (async () => {
@@ -130,12 +130,12 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
       }, [d]), s) return (0, r.jsx)(o.$jN, {});
     let D = (e, n) => {
         let r = null;
-        n === C.Eu4.TIER_1 ? r = C.Qqv.TIER_1 : n === C.Eu4.TIER_2 ? r = C.Qqv.TIER_2 : n === C.Eu4.TIER_3 && (r = C.Qqv.TIER_3), (0, g.Z)({
+        n === O.Eu4.TIER_1 ? r = O.Qqv.TIER_1 : n === O.Eu4.TIER_2 ? r = O.Qqv.TIER_2 : n === O.Eu4.TIER_3 && (r = O.Qqv.TIER_3), (0, g.Z)({
           analyticsLocations: f,
           analyticsLocation: {
-            page: C.ZY5.GUILD_SETTINGS,
-            section: C.jXE.GUILD_SETTINGS_STICKERS,
-            object: C.qAy.BOOST_LEVEL_UPSELL_BUTTON,
+            page: O.ZY5.GUILD_SETTINGS,
+            section: O.jXE.GUILD_SETTINGS_STICKERS,
+            object: O.qAy.BOOST_LEVEL_UPSELL_BUTTON,
             objectType: r
           },
           guildId: t.id,
@@ -143,36 +143,36 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
         })
       },
       Z = [{
-        tier: C.Eu4.NONE,
+        tier: O.Eu4.NONE,
         title: (0, r.jsx)(E, {
           guildStickers: d,
           currentGuildTier: w,
-          tier: C.Eu4.NONE,
-          children: O.NW.string(O.t.tfVXhI)
+          tier: O.Eu4.NONE,
+          children: y.NW.string(y.t.tfVXhI)
         })
       }, {
-        tier: C.Eu4.TIER_1,
+        tier: O.Eu4.TIER_1,
         title: (0, r.jsx)(E, {
           guildStickers: d,
           currentGuildTier: w,
-          tier: C.Eu4.TIER_1,
-          children: O.NW.string(O.t.nzXtaW)
+          tier: O.Eu4.TIER_1,
+          children: y.NW.string(y.t.nzXtaW)
         })
       }, {
-        tier: C.Eu4.TIER_2,
+        tier: O.Eu4.TIER_2,
         title: (0, r.jsx)(E, {
           guildStickers: d,
           currentGuildTier: w,
-          tier: C.Eu4.TIER_2,
-          children: O.NW.string(O.t["h33/ub"])
+          tier: O.Eu4.TIER_2,
+          children: y.NW.string(y.t["h33/ub"])
         })
       }, {
-        tier: C.Eu4.TIER_3,
+        tier: O.Eu4.TIER_3,
         title: (0, r.jsx)(E, {
           guildStickers: d,
           currentGuildTier: w,
-          tier: C.Eu4.TIER_3,
-          children: O.NW.string(O.t.BfF6EB)
+          tier: O.Eu4.TIER_3,
+          children: y.NW.string(y.t.BfF6EB)
         })
       }];
     return (0, r.jsx)(N.Z, {
@@ -211,12 +211,12 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
           guild: t,
           size: o.zxk.Sizes.SMALL,
           color: o.zxk.Colors.GREEN,
-          buttonText: O.NW.string(O.t.Vbkh2t),
+          buttonText: y.NW.string(y.t.Vbkh2t),
           targetBoostedGuildTier: w + 1,
           analyticsLocation: {
-            page: C.ZY5.GUILD_SETTINGS,
-            section: C.jXE.GUILD_SETTINGS_STICKERS,
-            object: C.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
+            page: O.ZY5.GUILD_SETTINGS,
+            section: O.jXE.GUILD_SETTINGS_STICKERS,
+            object: O.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, b.ge)(c.tier)
           }
         }) : L && (i = (0, r.jsx)(P, {
@@ -232,39 +232,39 @@ let I = (e, t) => e < (0, b.A3)(C.Eu4.NONE) ? C.Eu4.NONE : e < (0, b.A3)(C.Eu4.T
           showHeaderLockStatus: V,
           guildId: t.id,
           children: [M && (0, r.jsxs)("div", {
-            className: y.grid,
+            className: C.grid,
             children: [Z.map(e => (0, r.jsx)(v.Z, {
               isDisabled: k,
               sticker: e,
               canManageSticker: f(e)
             }, e.id)), z]
           }), !k && !L && 0 === Z.length && (0, r.jsx)("div", {
-            className: a()(y.emptyTierWrapper, y.unusedTierWrapper),
+            className: a()(C.emptyTierWrapper, C.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
-              children: O.NW.string(O.t.lqwv0N)
+              children: y.NW.string(y.t.lqwv0N)
             })
           }), k && !A && (0, r.jsxs)("div", {
-            className: y.emptyTierWrapper,
+            className: C.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
-              alt: O.NW.string(O.t.BAhsws),
-              className: y.emptyTierImage,
+              alt: y.NW.string(y.t.BAhsws),
+              className: C.emptyTierImage,
               src: U
             }), (0, r.jsx)(o.Text, {
-              className: y.unlockTierCtaHeading,
+              className: C.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: c.tier === C.Eu4.TIER_1 ? O.NW.formatToPlainString(O.t.psMYu7, {
+              children: c.tier === O.Eu4.TIER_1 ? y.NW.formatToPlainString(y.t.psMYu7, {
                 numAdditional: G
-              }) : O.NW.formatToPlainString(O.t.bLykER, {
+              }) : y.NW.formatToPlainString(y.t.bLykER, {
                 numAdditional: G,
                 numTotal: N
               })
             }), (0, r.jsx)(o.zxk, {
               color: o.zxk.Colors.GREEN,
-              onClick: () => D(C.oCV[c.tier] - S, c.tier),
-              children: O.NW.string(O.t.dtFw5e)
+              onClick: () => D(O.oCV[c.tier] - S, c.tier),
+              children: y.NW.string(y.t.dtFw5e)
             })]
           })]
         }, c.tier)

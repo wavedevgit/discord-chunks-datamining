@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(386885),
   _ = n(981631),
   v = n(128449),
-  C = n(388032);
+  O = n(388032);
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,7 +82,7 @@ function I(e) {
         throwErr: !0
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? D(e.message) : D(C.NW.formatToPlainString(C.t.aTVNen, {
+      throw "object" == typeof e && "message" in e ? D(e.message) : D(O.NW.formatToPlainString(O.t.aTVNen, {
         statusPageURL: _.yXt.STATUS
       })), e
     }
@@ -95,7 +95,7 @@ function I(e) {
   }, [T]), G = i.useCallback(async (e, t) => {
     let n = t.length > 0 ? [{
       field_type: u.QJ.TERMS,
-      label: C.NW.string(C.t["9suSIC"]),
+      label: O.NW.string(O.t["9suSIC"]),
       values: t,
       required: !0
     }] : [];
@@ -147,7 +147,7 @@ function I(e) {
             preferredLocale: I.preferredLocale
           });
           try {
-            await (0, c.Vv)(O({
+            await (0, c.Vv)(y({
               guildId: I.id
             }, E))
           } catch (e) {
@@ -163,7 +163,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("67376").then(n.bind(n, 207252));
-          return n => (0, r.jsx)(t, y(O({}, n), {
+          return n => (0, r.jsx)(t, C(y({}, n), {
             guildId: T,
             onConfirm: e
           }))
@@ -175,7 +175,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("55009").then(n.bind(n, 826390));
-          return n => (0, r.jsx)(t, y(O({}, n), {
+          return n => (0, r.jsx)(t, C(y({}, n), {
             guildId: T,
             submittedGuildJoinRequestsCount: A,
             onConfirm: e
@@ -188,14 +188,14 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = s;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void D(C.NW.string(C.t.TCHkcX))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void D(O.NW.string(O.t.TCHkcX))
     }
-    if (s.joinType === j.A.APPLY && !(null == (e = s.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void D(C.NW.string(C.t.HGVrIy));
+    if (s.joinType === j.A.APPLY && !(null == (e = s.pendingVerificationFields) ? void 0 : e.some(e => (0, m._C)(e)))) return void D(O.NW.string(O.t.HGVrIy));
     i(() => t(U))
   }, [Z, U, s, T, A]), F = s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED, z = null != I.description && E.primaryCategoryId !== v.o3 && E.keywords.length > 0;
   return (0, r.jsx)(l.Z, {
-    message: F ? C.NW.string(C.t.V2G2Ym) : void 0,
-    onSaveText: F ? C.NW.string(C.t["qjtt/v"]) : void 0,
+    message: F ? O.NW.string(O.t.V2G2Ym) : void 0,
+    onSaveText: F ? O.NW.string(O.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
     onReset: k,
@@ -231,7 +231,7 @@ function E() {
     }
   });
   return null == e || null == n ? null : e.joinType === j.A.DISCOVERABLE && e.settingsView === N.U.INELIGIBLE ? (0, r.jsx)(l.Z, {
-    message: C.NW.string(C.t.TEXwRk),
+    message: O.NW.string(O.t.TEXwRk),
     onReset: () => h.Z.init(n.id, _.pNK.ACCESS)
   }) : (0, r.jsx)(I, {
     pendingState: e,

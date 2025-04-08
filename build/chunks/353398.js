@@ -24,10 +24,10 @@ var r, i = n(200651),
   N = n(999382),
   _ = n(260539),
   v = n(388032),
-  C = n(651412),
-  O = n(20493);
+  O = n(651412),
+  y = n(20493);
 
-function y(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,25 +47,25 @@ class I extends(r = d.ZP.Store) {
     return null != e && null != this.name && "" !== this.name && (this.name.trim() !== e.name || this.description.trim() !== e.description)
   }
   constructor(...e) {
-    super(...e), y(this, "name", ""), y(this, "description", ""), y(this, "error", null), y(this, "reset", () => {
+    super(...e), C(this, "name", ""), C(this, "description", ""), C(this, "error", null), C(this, "reset", () => {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
         this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
-    }), y(this, "setName", e => {
+    }), C(this, "setName", e => {
       this.name = e, this.emitChange()
-    }), y(this, "setDescription", e => {
+    }), C(this, "setDescription", e => {
       this.description = e, this.emitChange()
-    }), y(this, "setError", e => {
+    }), C(this, "setError", e => {
       this.error = e, this.emitChange()
-    }), y(this, "save", async () => {
+    }), C(this, "save", async () => {
       await b.Z.updateGuildTemplate(N.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
-y(I, "displayName", "GuildSettingsTemplateMetadataStore_");
+C(I, "displayName", "GuildSettingsTemplateMetadataStore_");
 let E = new I(g.Z);
 
 function S() {
@@ -81,18 +81,18 @@ function S() {
 
 function T() {
   return (0, i.jsx)(m.hjN, {
-    className: O.marginBottom4,
+    className: y.marginBottom4,
     children: (0, i.jsxs)(m.y5t, {
       component: (0, i.jsx)(m.vwX, {
         tag: m.RB0.H1,
         children: v.NW.string(v.t.KUw7Sk)
       }),
       children: [(0, i.jsx)(m.R94, {
-        className: O.marginBottom20,
+        className: y.marginBottom20,
         type: m.geA.DESCRIPTION,
         children: v.NW.format(v.t.c0m8bG, {})
       }), (0, i.jsx)(w, {}), (0, i.jsx)(m.$i$, {
-        className: C.divider
+        className: O.divider
       }), (0, i.jsx)(P, {})]
     })
   })
@@ -139,7 +139,7 @@ function P() {
     variant: "text-sm/normal",
     children: t.message
   }) : (0, i.jsx)(m.$jN, {
-    className: O.marginTop40
+    className: y.marginTop40
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
@@ -147,7 +147,7 @@ function P() {
       guild: e,
       guildTemplate: l
     }), o ? (0, i.jsx)(m.Text, {
-      className: O.marginTop8,
+      className: y.marginTop8,
       color: "text-danger",
       variant: "text-sm/normal",
       children: t.getAnyErrorMessage()
@@ -157,63 +157,63 @@ function P() {
 
 function w() {
   return (0, i.jsxs)("div", {
-    className: C.descriptionBox,
+    className: O.descriptionBox,
     children: [(0, i.jsxs)("div", {
-      className: C.descriptionSection,
+      className: O.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
         children: v.NW.string(v.t["f8u+VF"])
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t.K2tn19)]
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t.om5gNj)]
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.owK, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.GREEN_360.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t["/VNqdH"])]
       })]
     }), (0, i.jsxs)("div", {
-      className: C.descriptionSection,
+      className: O.descriptionSection,
       children: [(0, i.jsx)(m.X6q, {
         variant: "eyebrow",
         children: v.NW.string(v.t["8zhJEh"])
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t.WOKI6u)]
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t.ddhDJC)]
       }), (0, i.jsxs)("div", {
-        className: C.descriptionRow,
+        className: O.descriptionRow,
         children: [(0, i.jsx)(m.k$p, {
           size: "md",
-          className: C.descriptionIcon,
+          className: O.descriptionIcon,
           color: u.Z.unsafe_rawColors.RED_400.css,
           secondaryColor: u.Z.unsafe_rawColors.WHITE_500.css
         }), v.NW.string(v.t["6Q/DHh"])]
@@ -248,7 +248,7 @@ function D() {
     n = (0, d.e7)([E], () => E.error);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.xJW, {
-      className: O.marginBottom20,
+      className: y.marginBottom20,
       title: v.NW.string(v.t.z1a9R0),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("name"),
       children: (0, i.jsx)(m.oil, {
@@ -258,7 +258,7 @@ function D() {
         maxLength: 100
       })
     }), (0, i.jsx)(m.xJW, {
-      className: O.marginBottom20,
+      className: y.marginBottom20,
       title: v.NW.string(v.t.GxirWV),
       error: null == n ? void 0 : n.getFirstFieldErrorMessage("description"),
       children: (0, i.jsx)(m.Kx8, {
@@ -288,16 +288,16 @@ function Z(e) {
       })
     }), n.isDirty && (0, i.jsx)(m.Text, {
       color: "text-warning",
-      className: O.marginTop8,
+      className: y.marginTop8,
       variant: "text-sm/normal",
       children: v.NW.string(v.t.aWsjtL)
     }), (0, i.jsxs)("div", {
-      className: l()(O.marginTop20, C.buttonContainer),
+      className: l()(y.marginTop20, O.buttonContainer),
       children: [n.isDirty && (0, i.jsx)(k, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
-        className: C.rightButtonContainer,
+        className: O.rightButtonContainer,
         children: [(0, i.jsx)(W, {
           guild: t,
           guildTemplate: n
@@ -306,7 +306,7 @@ function Z(e) {
         })]
       })]
     }), n.isDirty && (0, i.jsx)("div", {
-      className: C.lastSync,
+      className: O.lastSync,
       children: v.NW.format(v.t.v0AVur, {
         timestamp: new Date(n.updatedAt)
       })
@@ -350,7 +350,7 @@ function k(e) {
   };
   return (0, i.jsx)(m.zxk, {
     submitting: r,
-    className: C.button,
+    className: O.button,
     onClick: l,
     children: v.NW.string(v.t["Nw+0Y2"])
   })
@@ -372,7 +372,7 @@ function W(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(m.zxk, {
       look: m.zxk.Looks.OUTLINED,
-      className: C.button,
+      className: O.button,
       color: m.zxk.Colors.RED,
       onClick: () => a(!0),
       children: v.NW.string(v.t["cN/RFB"])
@@ -389,7 +389,7 @@ function L(e) {
   } = e;
   return (0, i.jsx)(m.zxk, {
     color: m.zxk.Colors.PRIMARY,
-    className: C.button,
+    className: O.button,
     onClick: () => (0, m.ZDy)(async () => {
       let {
         default: e
@@ -403,7 +403,7 @@ function L(e) {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              y(e, t, n[t])
+              C(e, t, n[t])
             })
           }
           return e

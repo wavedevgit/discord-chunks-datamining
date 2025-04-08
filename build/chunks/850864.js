@@ -23,14 +23,14 @@ var r = n(200651),
   N = n(773100),
   _ = n(91716),
   v = n(470264),
-  C = n(710043),
-  O = n(847950);
+  O = n(710043),
+  y = n(847950);
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, [c, d] = i.useState("new"), y = i.useMemo(() => [{
+  } = e, [c, d] = i.useState("new"), C = i.useMemo(() => [{
     value: "new",
     name: j.NW.string(j.t["4e5u3t"])
   }, {
@@ -41,7 +41,7 @@ function y(e) {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? v : O : "existing" === c ? _ : C, [c, I]);
+  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? v : y : "existing" === c ? _ : O, [c, I]);
   return (0, r.jsxs)("div", {
     className: N.page,
     children: [(0, r.jsxs)("div", {
@@ -143,7 +143,7 @@ function y(e) {
         src: E,
         alt: j.NW.string(j.t.ST4UOz)
       }), (0, r.jsx)(l.sY7, {
-        options: y,
+        options: C,
         value: c,
         onChange: e => d(e.value),
         look: "pill"
@@ -159,7 +159,7 @@ function I(e) {
     let e = d.Z.getGuildId();
     return c.Z.getGuild(e)
   });
-  return null == n ? null : (0, r.jsx)(y, {
+  return null == n ? null : (0, r.jsx)(C, {
     guild: n,
     saveOnClose: t
   })

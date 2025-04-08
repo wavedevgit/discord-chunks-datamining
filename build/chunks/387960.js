@@ -25,7 +25,7 @@ let x = [],
     } = e, n = (0, a.e7)([d.Z], () => d.Z.getGuild(t)), j = (0, a.Wu)([g.Z], () => {
       var e, t;
       return null != (t = null == (e = g.Z.getSettings().resourceChannels) ? void 0 : e.map(e => e.channelId)) ? t : x
-    }), N = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), v = i.useMemo(() => (0, s.chain)(_).filter(e => e.channel.type === h.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !N.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(h.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(h.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, N, null == n ? void 0 : n.rulesChannelId, j]), C = i.useCallback(() => {
+    }), N = (0, a.Wu)([g.Z], () => g.Z.getDismissedSuggestedChannelIds(t)), _ = (0, a.e7)([c.ZP], () => c.ZP.getSelectableChannels(t)), v = i.useMemo(() => (0, s.chain)(_).filter(e => e.channel.type === h.d4z.GUILD_TEXT && e.channel.id !== (null == n ? void 0 : n.rulesChannelId) && !N.includes(e.channel.id) && !j.includes(e.channel.id) && u.Uu(h.Plq.VIEW_CHANNEL, e.channel) && !u.Uu(h.Plq.SEND_MESSAGES, e.channel)).take(5).value(), [_, N, null == n ? void 0 : n.rulesChannelId, j]), O = i.useCallback(() => {
       let e = v.map(e => e.channel.id);
       (0, m.q6)(t, e)
     }, [t, v]);
@@ -43,7 +43,7 @@ let x = [],
             children: f.NW.string(f.t.YtNI8P)
           }), (0, r.jsxs)(l.P3F, {
             className: b.suggestedChannelsDismiss,
-            onClick: C,
+            onClick: O,
             children: [(0, r.jsx)(l.dz2, {
               size: "md",
               color: "currentColor",

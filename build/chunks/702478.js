@@ -23,10 +23,10 @@ var r = n(200651),
   N = n(999382),
   _ = n(981631),
   v = n(190378),
-  C = n(388032),
-  O = n(24304);
+  O = n(388032),
+  y = n(24304);
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,10 +47,10 @@ function y(e) {
 let I = function(e, t, n) {
     let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = C.NW.string(C.t.xO2msb)) : i = C.NW.formatToPlainString(C.t.nskeMz, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = O.NW.string(O.t.xO2msb)) : i = O.NW.formatToPlainString(O.t.nskeMz, {
       percentage: (0, a.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : C.NW.string(C.t.jHpxws),
+      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : O.NW.string(O.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -60,18 +60,18 @@ let I = function(e, t, n) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
-      className: O.notEnoughMembersError,
+      className: y.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
-      children: C.NW.string(C.t["FsgE/P"])
+      children: O.NW.string(O.t["FsgE/P"])
     }) : null == e ? null : (0, r.jsx)(c.kzN, {
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
-      children: C.NW.string(C.t.Iju63d)
+      children: O.NW.string(O.t.Iju63d)
     })
   },
   S = () => {
     let [e, t] = i.useState(!1), n = (0, l.e7)([N.Z], () => N.Z.getGuildId());
     return (0, r.jsx)(c.zxk, {
-      className: O.developerPortalCta,
+      className: y.developerPortalCta,
       onClick: () => {
         t(!0), (function(e) {
           b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
@@ -97,7 +97,7 @@ let I = function(e, t, n) {
         })
       },
       submitting: e,
-      children: C.NW.string(C.t.Uskgx8)
+      children: O.NW.string(O.t.Uskgx8)
     })
   },
   T = () => {
@@ -120,40 +120,40 @@ let I = function(e, t, n) {
       (0, m.Kw)(v.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let P = null != a ? (0, r.jsx)("div", {
-      className: O.__invalid_guildAnalyticsOverviewWrapper,
+      className: y.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
-        className: O.overviewData,
-        children: [(0, r.jsx)(u.Z, y({
-          title: C.NW.string(C.t.i0Nora),
-          tooltipText: C.NW.string(C.t.KiRbLC)
-        }, I(a.visitors, a.visitorsChange, s))), (0, r.jsx)(u.Z, y({
-          title: C.NW.string(C.t.DDAHdX),
-          tooltipText: C.NW.string(C.t.HxWUkZ)
-        }, I(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(u.Z, y({
-          title: C.NW.string(C.t.hYeOqK)
-        }, I(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(u.Z, y({
-          title: C.NW.string(C.t.jj7OPz),
-          tooltipText: C.NW.string(C.t.MQCsl5)
+        className: y.overviewData,
+        children: [(0, r.jsx)(u.Z, C({
+          title: O.NW.string(O.t.i0Nora),
+          tooltipText: O.NW.string(O.t.KiRbLC)
+        }, I(a.visitors, a.visitorsChange, s))), (0, r.jsx)(u.Z, C({
+          title: O.NW.string(O.t.DDAHdX),
+          tooltipText: O.NW.string(O.t.HxWUkZ)
+        }, I(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(u.Z, C({
+          title: O.NW.string(O.t.hYeOqK)
+        }, I(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(u.Z, C({
+          title: O.NW.string(O.t.jj7OPz),
+          tooltipText: O.NW.string(O.t.MQCsl5)
         }, I(a.pctRetained, a.pctRetainedChange, s, !0)))]
       })
     }) : null;
     return (0, r.jsxs)(c.hjN, {
       tag: c.RB0.H1,
-      title: C.NW.string(C.t["0wWfUF"]),
+      title: O.NW.string(O.t["0wWfUF"]),
       children: [(0, r.jsx)(c.R94, {
         type: c.geA.DESCRIPTION,
-        children: C.NW.format(C.t.NIZ60d, {})
+        children: O.NW.format(O.t.NIZ60d, {})
       }), E(o, T), (0, r.jsxs)("div", {
-        className: O.developerPortalCtaWrapper,
+        className: y.developerPortalCtaWrapper,
         children: [(0, r.jsx)("div", {
-          className: O.placeholderImage
+          className: y.placeholderImage
         }), (0, r.jsx)(c.Text, {
-          className: O.developerPortalCtaText,
+          className: y.developerPortalCtaText,
           variant: "text-sm/normal",
-          children: C.NW.string(C.t.A5vsws)
+          children: O.NW.string(O.t.A5vsws)
         }), (0, r.jsx)(S, {})]
       }), b ? (0, r.jsx)("div", {
-        className: O.streamerMode,
+        className: y.streamerMode,
         children: (0, r.jsx)(d.Z, {})
       }) : P]
     })

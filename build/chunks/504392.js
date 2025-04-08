@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => C
+  Z: () => N
 }), t(953529);
 var r = t(200651),
   o = t(192379),
@@ -8,76 +8,75 @@ var r = t(200651),
   i = t.n(s),
   a = t(442837),
   l = t(481060),
-  c = t(413335),
-  d = t(984370),
+  c = t(984370),
   u = t(713081),
-  p = t(905128),
+  d = t(905128),
   m = t(27237),
-  x = t(51859),
-  _ = t(953478),
-  v = t(460608),
-  g = t(279604),
-  f = t(332538),
-  b = t(535396),
-  j = t(680278),
-  h = t(388032),
-  Z = t(782285);
-let N = [b.Us.LEVEL, b.Us.PERK];
+  p = t(51859),
+  x = t(953478),
+  _ = t(460608),
+  v = t(279604),
+  g = t(332538),
+  f = t(535396),
+  b = t(680278),
+  j = t(388032),
+  h = t(782285);
+let Z = [f.Us.LEVEL, f.Us.PERK];
 
-function C(e) {
+function N(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, s = (0, f.Z)(n);
+  } = e, s = (0, g.Z)(n);
   o.useEffect(() => {
     (0, u.Sn)(n), (0, u.Fm)(n)
   }, [n]), o.useEffect(() => {
     (0, u.jd)(n)
   }, [n, s]);
-  let C = (0, a.e7)([p.Z], () => p.Z.getStateForGuild(n)),
-    E = o.useRef(!1);
+  let N = (0, a.e7)([d.Z], () => d.Z.getStateForGuild(n)),
+    C = o.useRef(!1);
   return (o.useEffect(() => {
     var e, r;
     if (null == t) return;
-    let o = null == C || null == (r = C.powerups) || null == (e = r.get) ? void 0 : e.call(r, t);
-    null == o || E.current || ((0, g.KE)(n, o), E.current = !0)
-  }, [n, t, null == C ? void 0 : C.powerups]), (null == C ? void 0 : C.catalog) == null) ? null : (0, r.jsxs)("div", {
-    className: Z.container,
-    children: [(0, r.jsxs)(d.Z, {
-      className: Z.toolbar,
+    let o = null == N || null == (r = N.powerups) || null == (e = r.get) ? void 0 : e.call(r, t);
+    null == o || C.current || ((0, v.KE)(n, o), C.current = !0)
+  }, [n, t, null == N ? void 0 : N.powerups]), (null == N ? void 0 : N.catalog) == null) ? null : (0, r.jsxs)("div", {
+    className: h.container,
+    children: [(0, r.jsxs)(c.Z, {
+      className: h.toolbar,
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
-      children: [(0, r.jsx)(d.Z.Icon, {
-        icon: c.Z,
+      children: [(0, r.jsx)(c.Z.Icon, {
+        icon: l.$Eu,
         disabled: !0,
         "aria-label": ""
-      }), (0, r.jsx)(d.Z.Title, {
-        children: h.NW.string(j.Z.yv3DJC)
+      }), (0, r.jsx)(c.Z.Title, {
+        children: j.NW.string(b.Z.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
-      className: Z.contentContainer,
+      className: h.contentContainer,
       children: [(0, r.jsx)("div", {
-        className: Z.powerupsContainer,
-        children: N.map(e => {
-          let t = C.catalog.get(e);
+        className: h.powerupsContainer,
+        children: Z.map(e => {
+          let t = N.catalog.get(e);
           if (null == t) return;
           let {
             title: o,
             description: s
           } = function(e) {
             switch (e) {
-              case b.Us.LEVEL:
+              case f.Us.LEVEL:
                 return {
-                  title: h.NW.string(j.Z["TXY/b2"]), description: h.NW.string(j.Z.aJv4PD)
+                  title: j.NW.string(b.Z["TXY/b2"]), description: j.NW.string(b.Z.aJv4PD)
                 };
-              case b.Us.PERK:
+              case f.Us.PERK:
                 return {
-                  title: h.NW.string(j.Z.TV3Vm5), description: h.NW.string(j.Z.NHjM1t)
+                  title: j.NW.string(b.Z.TV3Vm5), description: j.NW.string(b.Z.NHjM1t)
                 }
             }
           }(e);
           return (0, r.jsxs)("div", {
-            className: Z.powerupsSection,
+            className: h.powerupsSection,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsx)(l.X6q, {
                 color: "header-primary",
@@ -89,20 +88,20 @@ function C(e) {
                 children: s
               })]
             }), (0, r.jsx)("div", {
-              className: i()(Z.powerupContainer, {
-                [Z.powerupsLevelContainer]: e === b.Us.LEVEL
+              className: i()(h.powerupContainer, {
+                [h.powerupsLevelContainer]: e === f.Us.LEVEL
               }),
               children: t.map((e, o) => {
                 switch (e.type) {
-                  case b.Us.LEVEL:
+                  case f.Us.LEVEL:
                     return (0, r.jsx)(m.ZP, {
                       guildId: n,
                       index: o,
                       powerup: e,
                       nextPowerup: t[o + 1]
                     }, "powerup-".concat(e.skuId));
-                  case b.Us.PERK:
-                    return (0, r.jsx)(x.Z, {
+                  case f.Us.PERK:
+                    return (0, r.jsx)(p.Z, {
                       guildId: n,
                       powerup: e
                     }, "powerup-".concat(e.skuId))
@@ -112,10 +111,10 @@ function C(e) {
           }, "section-".concat(e))
         })
       }), (0, r.jsxs)("div", {
-        className: Z.sidebarContainer,
-        children: [(0, r.jsx)(_.Z, {
+        className: h.sidebarContainer,
+        children: [(0, r.jsx)(x.Z, {
           guildId: n
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(_.Z, {
           guildId: n
         })]
       })]

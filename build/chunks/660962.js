@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(496675),
   _ = n(764260),
   v = n(95242),
-  C = n(541575),
-  O = n(420966),
-  y = n(337344),
+  O = n(541575),
+  y = n(420966),
+  C = n(337344),
   I = n(275296),
   E = n(203377),
   S = n(981631),
@@ -148,13 +148,13 @@ function L(e) {
   }, v = {
     src: D,
     name: c.name
-  }, C = (0, h.oC)(m, c), O = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
+  }, O = (0, h.oC)(m, c), y = (0, p.Q3)("RolePreview") ? [S.BRd.LIGHT, S.BRd.DARK, S.BRd.DARKER, S.BRd.MIDNIGHT] : [S.BRd.LIGHT, S.BRd.DARK];
   return (0, r.jsx)(u.Rny, {
     children: (0, r.jsx)("div", {
       className: P.previewContainer,
       "aria-hidden": !0,
       "data-disable-adaptive-theme": !0,
-      children: O.map(e => (0, r.jsx)(u.f6W, {
+      children: y.map(e => (0, r.jsx)(u.f6W, {
         theme: e,
         children: t => (0, r.jsx)("div", {
           className: t,
@@ -163,7 +163,7 @@ function L(e) {
             children: (0, r.jsx)(x.Z, {
               author: N,
               message: g,
-              roleIcon: null != C ? C : (0, d.ap)(e) ? v : _,
+              roleIcon: null != O ? O : (0, d.ap)(e) ? v : _,
               isGroupStart: !0
             })
           })
@@ -210,7 +210,7 @@ function G(e) {
   } = (0, v.Z)(0), {
     scrolledToTop: h,
     handleScroll: f
-  } = (0, O.V)();
+  } = (0, y.V)();
   return (0, r.jsx)(u.yWw, {
     className: P.scroller,
     style: {
@@ -224,7 +224,7 @@ function G(e) {
           [w.stickyHeaderElevated]: !h
         }),
         ref: p,
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(y.Z, {
           guild: t,
           role: n,
           selectedSection: E.ZI.DISPLAY,
@@ -243,7 +243,7 @@ function G(e) {
       }), (0, r.jsx)(W, {
         role: n,
         disabled: o
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(O.Z, {
         guild: t,
         disabled: o,
         role: n
@@ -258,7 +258,7 @@ function G(e) {
       }), d ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.$i$, {
           className: P.divider
-        }), (0, r.jsx)(y.L, {
+        }), (0, r.jsx)(C.L, {
           guildId: t.id,
           role: n
         })]

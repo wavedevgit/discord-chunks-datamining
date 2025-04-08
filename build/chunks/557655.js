@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
-"use strict";
-var t = function() {
+/** Chunk was on 18639 **/
+var n = function() {
   this.head = null, this.tail = null
 };
-t.prototype = {
+n.prototype = {
   add: function(e) {
-    var t = {
+    var n = {
         item: e,
         next: null
       },
-      n = this.tail;
-    n ? n.next = t : this.head = t, this.tail = t
+      _ = this.tail;
+    _ ? _.next = n : this.head = n, this.tail = n
   },
   get: function() {
     var e = this.head;
     if (e) return null === (this.head = e.next) && (this.tail = null), e.item
   }
-}, e.exports = t
+}, e.exports = n

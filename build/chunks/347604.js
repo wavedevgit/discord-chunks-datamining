@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -23,17 +23,17 @@ var r = n(200651),
   N = n(88470),
   _ = n(716455);
 let v = ["322850917248663552", "172018499005317120", "414234792121597953", "228406572756369408"],
-  C = ["620723483965653003", "662246299369734154", "181970867549503489", "102860784329052160"],
-  O = e => {
+  O = ["620723483965653003", "662246299369734154", "181970867549503489", "102860784329052160"],
+  y = e => {
     let {
       guild: t,
       onEnableDiscovery: n,
       isGuildAdmin: s
-    } = e, [O, y] = (0, l.Z)(() => [a().sample(v), a().sample(C)], []);
+    } = e, [y, C] = (0, l.Z)(() => [a().sample(v), a().sample(O)], []);
     i.useEffect(() => {
-      (0, u.z)([O, y])
-    }, [O, y]);
-    let [I, E] = (0, o.Wu)([g.Z], () => [g.Z.getGuild(O), g.Z.getGuild(y)], [O, y]), {
+      (0, u.z)([y, C])
+    }, [y, C]);
+    let [I, E] = (0, o.Wu)([g.Z], () => [g.Z.getGuild(y), g.Z.getGuild(C)], [y, C]), {
       canEnableDiscovery: S,
       isPendingSuccess: T
     } = (0, o.cj)([m.ZP], () => ({

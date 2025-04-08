@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(420966),
   _ = n(203377),
   v = n(981631),
-  C = n(856651),
-  O = n(388032),
-  y = n(419353),
+  O = n(856651),
+  y = n(388032),
+  C = n(419353),
   I = n(877248);
 
 function E(e) {
@@ -60,25 +60,25 @@ function P(e) {
     locked: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: y.headerNoConfigContainer,
+    className: C.headerNoConfigContainer,
     children: [(0, r.jsx)(d.X6q, {
-      className: y.headerHeading,
+      className: C.headerHeading,
       variant: "eyebrow",
-      children: O.NW.string(O.t.nMir29)
+      children: y.NW.string(y.t.nMir29)
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: O.NW.format(O.t.q5f7tL, {
+      children: y.NW.format(y.t.q5f7tL, {
         helpdeskArticleUrl: p.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.zxk, {
       disabled: n,
-      className: y.addVerificationButton,
+      className: C.addVerificationButton,
       size: d.zxk.Sizes.MEDIUM,
       look: d.zxk.Looks.FILLED,
       color: d.zxk.Colors.BRAND,
       onClick: t,
-      children: O.NW.string(O.t["OSvW5+"])
+      children: y.NW.string(y.t["OSvW5+"])
     })]
   })
 }
@@ -122,7 +122,7 @@ function w(e) {
       onComplete: e => M(e),
       excludedPlatformTypes: L,
       integrations: o,
-      onCompleteApplication: e => M(C.Kt, e)
+      onCompleteApplication: e => M(O.Kt, e)
     })
   }
   let U = null;
@@ -134,55 +134,55 @@ function w(e) {
     var B;
     let e = null;
     W.length < 10 && (e = (0, r.jsx)(d.zxk, {
-      className: a()(y.addVerificationButton, y.addVerificationButtonAppend),
+      className: a()(C.addVerificationButton, C.addVerificationButtonAppend),
       size: d.zxk.Sizes.LARGE,
       look: d.zxk.Looks.BLANK,
       color: d.zxk.Colors.LINK,
       onClick: G,
       disabled: s,
       children: (0, r.jsxs)("div", {
-        className: y.addVerificationButtonAppendTextContainer,
+        className: C.addVerificationButtonAppendTextContainer,
         children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor"
-        }), O.NW.string(O.t["OSvW5+"])]
+        }), y.NW.string(y.t["OSvW5+"])]
       })
     })), U = (0, r.jsxs)(r.Fragment, {
       children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-          className: y.headerTitleContainer,
+          className: C.headerTitleContainer,
           children: [(0, r.jsx)("div", {
-            className: y.headerTitleTextContainer,
+            className: C.headerTitleTextContainer,
             children: (0, r.jsx)(d.X6q, {
               variant: "eyebrow",
-              children: O.NW.string(O.t.nMir29)
+              children: y.NW.string(y.t.nMir29)
             })
           }), (0, r.jsx)(d.zxk, {
-            className: y.headerTitleButton,
+            className: C.headerTitleButton,
             size: d.zxk.Sizes.TINY,
             look: d.zxk.Looks.LINK,
             color: d.zxk.Colors.LINK,
             onClick: B,
             disabled: s,
-            children: O.NW.string(O.t.ntW1cX)
+            children: y.NW.string(y.t.ntW1cX)
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: O.NW.format(O.t.q5f7tL, {
+          children: y.NW.format(y.t.q5f7tL, {
             helpdeskArticleUrl: p.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
         let a = T(i, m.O1.OR);
         return (0, r.jsx)(d.xJW, {
-          className: y.operatorContainer,
-          title: O.NW.string(O.t.Xs7PHR),
+          className: C.operatorContainer,
+          title: y.NW.string(y.t.Xs7PHR),
           children: (0, r.jsx)(d.FXm, {
             options: [{
-              name: O.NW.string(O.t["W3iY5+"]),
+              name: y.NW.string(y.t["W3iY5+"]),
               value: m.O1.OR
             }, {
-              name: O.NW.string(O.t.gHXS9P),
+              name: y.NW.string(y.t.gHXS9P),
               value: m.O1.AND
             }],
             onChange: e => s(i, e.value),
@@ -244,7 +244,7 @@ function w(e) {
           })
         }
         return (0, r.jsx)("div", {
-          className: y.configurationsContainer,
+          className: C.configurationsContainer,
           children: Array.from(l.values()).map(e => (0, r.jsx)(j.Z, {
             configurationItems: e,
             onConfigurationChange: a,
@@ -256,7 +256,7 @@ function w(e) {
     })
   }
   return (0, r.jsx)(d.yWw, {
-    className: y.scroller,
+    className: C.scroller,
     style: {
       scrollPaddingTop: g
     },
@@ -275,17 +275,17 @@ function w(e) {
           setSelectedSection: l
         })
       }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
-        className: y.warningContainer,
+        className: C.warningContainer,
         children: [(0, r.jsx)(d.P4T, {
           size: "custom",
           width: 20,
           height: 20,
           color: "currentColor",
-          className: y.warningIcon
+          className: C.warningIcon
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
-          children: O.NW.string(O.t["2aFeeX"])
+          children: y.NW.string(y.t["2aFeeX"])
         })]
       }) : null, U]
     })

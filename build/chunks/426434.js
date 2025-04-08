@@ -39,7 +39,7 @@ function h(e) {
   _ || (t = x ? g.NW.format(g.t.nFwNyc, {
     settingsHook: () => l.Z.open(m.oAB.ACCOUNT)
   }) : g.NW.string(g.t["9Ghu4+"]));
-  let C = n.hasFeature(m.oNc.DISCOVERABLE);
+  let O = n.hasFeature(m.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: p.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
@@ -53,8 +53,8 @@ function h(e) {
         color: "header-secondary",
         children: [g.NW.string(g.t["a/93Jy"]), " ", t]
       })]
-    }), !_ || N && C ? (0, r.jsx)(a.ua7, {
-      text: C ? g.NW.string(g.t["KG1V/P"]) : x ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
+    }), !_ || N && O ? (0, r.jsx)(a.ua7, {
+      text: O ? g.NW.string(g.t["KG1V/P"]) : x ? g.NW.string(g.t.NmsheX) : g.NW.string(g.t.LieBtb),
       children: e => (0, r.jsx)(u.Z, {
         checked: N,
         disabled: !0,

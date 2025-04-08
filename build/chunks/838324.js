@@ -20,7 +20,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, _ = p ? x.length : f.length, v = N < u.md, C = _ >= u.X, O = j.length - b.length, y = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, _ = p ? x.length : f.length, v = N < u.md, O = _ >= u.X, y = j.length - b.length, C = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,
@@ -30,7 +30,7 @@ function p(e) {
     className: g.icon,
     color: s.Z.colors.WHITE.css,
     secondaryColor: s.Z.colors.BACKGROUND_ACCENT.css
-  }), E = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !v && C ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
+  }), E = [Math.min(u.X, _) / u.md * 100, Math.min(u.md, N) / u.md * 100], S = !v && O ? [s.Z.colors.TEXT_POSITIVE.css, s.Z.colors.TEXT_POSITIVE.css] : [s.Z.colors.TEXT_BRAND.css, s.Z.colors.TEXT_MUTED.css];
   return (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ function p(e) {
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [v ? I : y, (0, r.jsx)(a.Text, {
+      children: [v ? I : C, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.NW.format(m.t.k0COZW, {
@@ -63,7 +63,7 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [C ? y : I, (0, r.jsx)(a.Text, {
+      children: [O ? C : I, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.NW.format(m.t.PwXgS0, {
@@ -94,7 +94,7 @@ function p(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           children: m.NW.format(m.t["8Geut7"], {
-            count: O,
+            count: y,
             prejoinHook: e => (0, r.jsx)(a.eee, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {

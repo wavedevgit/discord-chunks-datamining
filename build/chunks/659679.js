@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => _
+  Z: () => x
 });
 var r = t(200651);
 t(192379);
@@ -9,20 +9,19 @@ var o = t(793030),
   i = t(481060),
   a = t(834129),
   l = t(271383),
-  c = t(709586),
-  d = t(709054),
+  c = t(709054),
   u = t(884902),
-  p = t(680278),
+  d = t(680278),
   m = t(388032),
-  x = t(326319);
+  p = t(326319);
 
-function _(e) {
+function x(e) {
   let {
     boost: n
-  } = e, t = new Date(d.default.extractTimestamp(n.id)), {
-    username: _,
-    roleColor: v,
-    roleColorStrings: g
+  } = e, t = new Date(c.default.extractTimestamp(n.id)), {
+    username: x,
+    roleColor: _,
+    roleColorStrings: v
   } = (0, s.cj)([l.ZP], () => {
     var e, t;
     let r = l.ZP.getMember(n.guildId, n.userId);
@@ -31,36 +30,36 @@ function _(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), f = (0, u.E)(n.guildId, g);
+  }, [n]), g = (0, u.E)(n.guildId, v);
   return (0, r.jsx)(a.Z, {
-    className: x.systemMessageContainer,
-    contentClassName: x.systemMessageContent,
-    iconNode: (0, r.jsx)(c.Z, {
-      className: x.icon,
-      width: 16,
-      height: 16
+    className: p.systemMessageContainer,
+    contentClassName: p.systemMessageContent,
+    iconNode: (0, r.jsx)(i.$Eu, {
+      className: p.icon,
+      color: "currentColor",
+      size: "sm"
     }),
-    iconContainerClassName: x.iconContainer,
-    timestampClassName: x.timestamp,
+    iconContainerClassName: p.iconContainer,
+    timestampClassName: p.timestamp,
     timestamp: t,
     timestampFormat: "L",
     compact: !0,
     children: (0, r.jsxs)("span", {
-      className: x.boostMessage,
+      className: p.boostMessage,
       children: [(0, r.jsx)(i.PUh, {
-        className: x.boostMessageUser,
+        className: p.boostMessageUser,
         name: (0, r.jsx)(o.xv, {
           color: "currentColor",
           variant: "text-md/semibold",
           lineClamp: 1,
-          children: _
+          children: x
         }),
-        color: null != v ? v : void 0,
-        roleGradient: f
+        color: null != _ ? _ : void 0,
+        roleGradient: g
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: m.NW.string(p.Z.plwH8f)
+        children: m.NW.string(d.Z.plwH8f)
       })]
     })
   })

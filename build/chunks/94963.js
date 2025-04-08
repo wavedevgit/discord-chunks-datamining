@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(308083),
   _ = n(388032),
   v = n(249818),
-  C = n(130116);
+  O = n(130116);
 
-function O(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ let I = [{
     }, [n, S, U.primary, U.secondary]);
     let F = i.useMemo(() => {
       var e, t, n;
-      return y(O({}, s), {
+      return C(y({}, s), {
         id: l,
         name: null != (e = null == D ? void 0 : D.name) ? e : "",
         icon: null == D ? void 0 : D.icon,
@@ -190,15 +190,15 @@ let I = [{
       })
     }, [s, l, D, Z, S, w, R, U]);
     return (0, r.jsxs)("div", {
-      className: C.slideContent,
+      className: O.slideContent,
       children: [(0, r.jsx)(m.X6q, {
         variant: "heading-xxl/medium",
-        className: C.title,
+        className: O.title,
         children: _.NW.string(_.t.kPwMOz)
       }), (0, r.jsx)(m.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        className: C.subtitle,
+        className: O.subtitle,
         children: _.NW.string(_.t["E+KhDA"])
       }), (0, r.jsxs)("div", {
         className: v.content,
@@ -231,7 +231,7 @@ let I = [{
                   },
                   shouldShow: W,
                   onRequestClose: () => L(!1),
-                  children: e => (0, r.jsx)(m.P3F, y(O({}, e), {
+                  children: e => (0, r.jsx)(m.P3F, C(y({}, e), {
                     onClick: () => {
                       L(e => !e)
                     },

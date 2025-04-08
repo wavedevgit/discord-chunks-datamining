@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(496675),
   _ = n(626135),
   v = n(480608),
-  C = n(243730),
-  O = n(130341),
-  y = n(970129),
+  O = n(243730),
+  y = n(130341),
+  C = n(970129),
   I = n(712181),
   E = n(203377),
   S = n(981631),
@@ -76,7 +76,7 @@ function A(e) {
     renderHeader: o,
     headerHeight: c,
     query: u
-  } = e, m = (0, d.e7)([C.Z], () => C.Z.getRoleMemberCount(n.id), [n.id]), p = (0, d.e7)([N.Z], () => N.Z.getHighestRole(n), [n]), h = u.trim();
+  } = e, m = (0, d.e7)([O.Z], () => O.Z.getRoleMemberCount(n.id), [n.id]), p = (0, d.e7)([N.Z], () => N.Z.getHighestRole(n), [n]), h = u.trim();
   i.useEffect(() => {
     (0, v.E)(n.id)
   }, [n.id]);
@@ -86,11 +86,11 @@ function A(e) {
       search_type: "Roles"
     }), f.current = !0)
   }, [u]);
-  let b = i.useMemo(() => a.filter(e => (0, O.uo)(e, h)), [a, h]),
+  let b = i.useMemo(() => a.filter(e => (0, y.uo)(e, h)), [a, h]),
     x = i.useMemo(() => [...a, s], [a, s]),
     {
       draggingId: j,
-      handleDragStart: y,
+      handleDragStart: C,
       handleDragReset: E,
       handleDragComplete: T
     } = (0, I.Z)(x),
@@ -107,7 +107,7 @@ function A(e) {
         highestRole: p,
         currentPosition: s,
         memberCount: null != (i = null == m ? void 0 : m[o.id]) ? i : 0,
-        onDragStart: y,
+        onDragStart: C,
         onDragReset: E,
         onDragComplete: T,
         disableHover: null != j,
@@ -115,7 +115,7 @@ function A(e) {
         setEditRoleId: t,
         setSelectedSection: l
       }, o.id)
-    }, [b, n, p, m, y, E, T, j, a, t, l]);
+    }, [b, n, p, m, C, E, T, j, a, t, l]);
   return (0, r.jsx)(g.Xi, {
     sections: [Math.max(b.length, 1)],
     sectionHeight: c,
@@ -152,12 +152,12 @@ function W(e) {
     memberCount: N,
     onDragStart: _,
     onDragReset: v,
-    onDragComplete: C,
-    disableHover: O,
+    onDragComplete: O,
+    disableHover: y,
     disableDrag: I,
     setEditRoleId: S,
     setSelectedSection: A
-  } = e, k = (0, y.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
+  } = e, k = (0, C.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: Z,
     item: () => (_(d.id), {
       id: d.id,
@@ -170,9 +170,9 @@ function W(e) {
     end: (e, t) => {
       let n = t.getDropResult();
       if (null == n) return void v();
-      C(n.roleId)
+      O(n.roleId)
     }
-  }), [d, _, v, C, W, M, x]), [{
+  }), [d, _, v, O, W, M, x]), [{
     isDragging: B
   }, F] = (0, l.c)(U), z = i.useMemo(() => ({
     accept: Z,
@@ -217,7 +217,7 @@ function W(e) {
   }
   return (0, r.jsxs)(u.P3F, {
     className: a()(P.roleRow, {
-      [P.roleRowDisableHover]: O,
+      [P.roleRowDisableHover]: y,
       [P.containerDragBefore]: null != H && x < H,
       [P.containerDragAfter]: null != H && x > H
     }),
@@ -251,7 +251,7 @@ function W(e) {
         size: 24,
         className: P.roleIcon,
         defaultIconClassName: P.shield
-      }), null != k ? (0, r.jsx)(y.Z, {
+      }), null != k ? (0, r.jsx)(C.Z, {
         className: P.lock,
         tooltipText: k
       }) : null, (0, r.jsx)(u.Text, {

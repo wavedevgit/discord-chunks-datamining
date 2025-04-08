@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   o = n(192379),
-  s = n(481060),
-  a = n(604857),
+  a = n(481060),
+  s = n(604857),
   c = n(17622),
   i = n(418630),
   l = n(942570);
@@ -21,18 +21,18 @@ function u(e) {
       var n, r, o = function(e, t) {
         if (null == e) return {};
         var n, r, o = {},
-          s = Object.keys(e);
-        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+          a = Object.keys(e);
+        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+        var a = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
       return o
     }(e, ["guildId", "powerup", "onClose"]);
   let [b, m] = o.useState(void 0);
-  return (0, r.jsxs)(s.Y0X, (t = function(e) {
+  return (0, r.jsxs)(a.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -51,9 +51,9 @@ function u(e) {
     return e
   }({
     className: i.modal,
-    size: s.CgR.DYNAMIC
+    size: a.CgR.DYNAMIC
   }, f), n = n = {
-    children: [(0, r.jsxs)(s.hzk, {
+    children: [(0, r.jsxs)(a.hzk, {
       className: i.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsx)("img", {
@@ -62,16 +62,16 @@ function u(e) {
         className: i.boostImage
       }), (0, r.jsxs)("div", {
         className: i.contentContainer,
-        children: [(0, r.jsx)(s.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           variant: "heading-xl/extrabold",
           children: d.title
         }), (0, r.jsx)(c.Z, {
           powerup: d
-        }), null != b && (0, r.jsx)(s.Text, {
+        }), null != b && (0, r.jsx)(a.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
           children: b
-        }), (0, r.jsx)(a.Z, {
+        }), (0, r.jsx)(s.Z, {
           className: i.footer,
           guildId: u,
           powerup: d,
@@ -79,7 +79,7 @@ function u(e) {
           onClose: p
         })]
       })]
-    }), (0, r.jsx)(s.olH, {
+    }), (0, r.jsx)(a.olH, {
       className: i.close,
       onClick: p
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -26,14 +26,14 @@ let v = {
   optionErrors: []
 };
 
-function C(e) {
+function O(e) {
   var t;
   let {
     guild: n,
     prompt: s,
     disableAutofocus: d,
     promptIndex: x,
-    dragIndex: C,
+    dragIndex: O,
     includeCount: I,
     singleColumn: E,
     onPromptDragComplete: S,
@@ -48,7 +48,7 @@ function C(e) {
     setIsDraggable: W
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
-    index: C,
+    index: O,
     optionId: s.id,
     onDragStart: T,
     onDragComplete: S,
@@ -157,7 +157,7 @@ function C(e) {
         placeholder: N.NW.string(N.t.QMCuCg),
         maxLength: j.iU,
         error: L.title
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(y, {
         prompt: s,
         guild: n
       }), (0, r.jsx)(o.Text, {
@@ -171,7 +171,7 @@ function C(e) {
           count: s.options.length,
           total: D
         })
-      }), (0, r.jsx)(y, {
+      }), (0, r.jsx)(C, {
         guild: n,
         prompt: s,
         promptIndex: x,
@@ -238,7 +238,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     prompt: t,
     guild: n
@@ -272,7 +272,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     prompt: n,

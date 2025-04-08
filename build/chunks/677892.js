@@ -133,7 +133,7 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, _ = b(t), v = (0, m.O4)(t), C = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), O = C ? p.NW.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, _ = b(t), v = (0, m.O4)(t), O = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), y = O ? p.NW.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: N,
     numFromQuestions: u - N
   }) : _ ? p.NW.formatToPlainString(p.t.HxEwSk, {
@@ -143,14 +143,14 @@ function j(e) {
     numChattableChannels: g.X
   });
   return (0, r.jsx)(f, {
-    title: C ? p.NW.string(p.t.YZookZ) : p.NW.string(p.t["4GSygo"]),
-    description: O,
+    title: O ? p.NW.string(p.t.YZookZ) : p.NW.string(p.t["4GSygo"]),
+    description: y,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
       color: "currentColor",
       className: h.channelIcon
     }),
-    hasStarted: N > 0 || C,
+    hasStarted: N > 0 || O,
     status: _ || v ? c ? "none" : "good" : "required",
     onEdit: n
   })
@@ -196,8 +196,8 @@ function _(e) {
   N && (b && !o ? _ = "good" : b || (_ = "required"));
   let v = p.NW.string(p.t.GMOwOD);
   b ? N || (v = p.NW.string(p.t.wHOoyM)) : v = p.NW.string(p.t.wXFbgY);
-  let C = null;
-  return N && g && (C = (0, r.jsx)(a.rsf, {
+  let O = null;
+  return N && g && (O = (0, r.jsx)(a.rsf, {
     className: h.inlineSwitch,
     checked: x,
     onChange: j,
@@ -213,6 +213,6 @@ function _(e) {
     hasStarted: N,
     status: _,
     onEdit: n,
-    extra: C
+    extra: O
   })
 }

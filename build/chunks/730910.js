@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(983135),
   _ = n(8426),
   v = n(969632),
-  C = n(570961),
-  O = n(208665),
-  y = n(359191),
+  O = n(570961),
+  y = n(208665),
+  C = n(359191),
   I = n(84658),
   E = n(142961),
   S = n(232764),
@@ -78,17 +78,17 @@ function W() {
 function L(e) {
   let {
     guild: t
-  } = e, s = t.id, x = (0, o.e7)([y.Z], () => y.Z.getCurrentPage()), W = (0, E.Z)(s), {
+  } = e, s = t.id, x = (0, o.e7)([C.Z], () => C.Z.getCurrentPage()), W = (0, E.Z)(s), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: M,
     hasErrors: G
-  } = (0, o.cj)([y.Z], () => ({
-    hasChanges: y.Z.hasChanges(),
-    hasConfiguredAnythingForCurrentStep: y.Z.hasConfiguredAnythingForCurrentStep(),
-    hasErrors: y.Z.hasErrors()
-  })), U = (0, o.e7)([y.Z], () => {
+  } = (0, o.cj)([C.Z], () => ({
+    hasChanges: C.Z.hasChanges(),
+    hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
+    hasErrors: C.Z.hasErrors()
+  })), U = (0, o.e7)([C.Z], () => {
     let e = (0, I.lg)(x);
-    return null != e && !y.Z.isEducationUpsellDismissed(e)
+    return null != e && !C.Z.isEducationUpsellDismissed(e)
   }), B = (0, g.ZP)(), F = i.useRef(null), [{
     spring: z
   }, H] = (0, m.q_F)(() => ({
@@ -127,12 +127,12 @@ function L(e) {
   }
   let Q = x === I.xh[I.xh.length - 1],
     J = async () => {
-      let e = O.Z.advancedMode;
+      let e = y.Z.advancedMode;
       if (L) try {
-        if (x === I.PG.DEFAULT_CHANNELS) await (0, j.DO)(t).then(() => e ? (0, C.rS)(t, {
+        if (x === I.PG.DEFAULT_CHANNELS) await (0, j.DO)(t).then(() => e ? (0, O.rS)(t, {
           ignoreDefaultPrompt: !0
         }) : Promise.resolve());
-        else if (x === I.PG.CUSTOMIZATION_QUESTIONS) await (0, C.rS)(t, {
+        else if (x === I.PG.CUSTOMIZATION_QUESTIONS) await (0, O.rS)(t, {
           ignoreDefaultPrompt: !0
         });
         else if (x === I.PG.HOME_SETTINGS) {

@@ -245,7 +245,7 @@ function v(e) {
   }, a)
 }
 
-function C(e) {
+function O(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -292,7 +292,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -335,7 +335,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -596,13 +596,13 @@ function P(e) {
     f = null;
   switch (null == d ? void 0 : d.type) {
     case p.ABu.STEAM:
-      f = (0, r.jsx)(C, x({}, h));
-      break;
-    case p.ABu.TWITTER:
       f = (0, r.jsx)(O, x({}, h));
       break;
-    case p.ABu.REDDIT:
+    case p.ABu.TWITTER:
       f = (0, r.jsx)(y, x({}, h));
+      break;
+    case p.ABu.REDDIT:
+      f = (0, r.jsx)(C, x({}, h));
       break;
     case p.ABu.PAYPAL:
       f = (0, r.jsx)(I, x({}, h));

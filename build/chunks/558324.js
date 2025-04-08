@@ -39,7 +39,7 @@ let u = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [_, v] = i.useState(null != m ? m : ""), C = u.map((e, t) => (0, r.jsxs)("span", {
+  let [_, v] = i.useState(null != m ? m : ""), O = u.map((e, t) => (0, r.jsxs)("span", {
     className: d.tag,
     children: [e, !x && (0, r.jsx)(l.P3F, {
       className: d.closeWrapper,
@@ -50,7 +50,7 @@ let u = e => {
         className: d.close
       })
     })]
-  }, t)), O = i.useCallback(() => {
+  }, t)), y = i.useCallback(() => {
     let e = _.trim();
     if (0 !== e.length) {
       if (null != b && u.length >= b) {
@@ -59,7 +59,7 @@ let u = e => {
       }
       p(e), v("")
     }
-  }, [_, b, p, h, u.length]), y = i.useCallback(e => {
+  }, [_, b, p, h, u.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
         0 === _.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
@@ -67,14 +67,14 @@ let u = e => {
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), O()
+        e.preventDefault(), e.stopPropagation(), y()
     }
-  }, [O, _.length, g, u.length]);
+  }, [y, _.length, g, u.length]);
   return (0, r.jsxs)("div", {
     className: a()(s, d.inputWrapper, {
       [d.disabled]: x
     }),
-    children: [C, (0, r.jsx)(l.oil, (t = function(e) {
+    children: [O, (0, r.jsx)(l.oil, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -96,11 +96,11 @@ let u = e => {
       inputClassName: d.inputInner
     }, N), n = n = {
       value: _,
-      onKeyDown: y,
+      onKeyDown: C,
       onChange: v,
       maxLength: f,
       disabled: x,
-      onBlur: O,
+      onBlur: y,
       placeholder: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

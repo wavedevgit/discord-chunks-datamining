@@ -35,7 +35,7 @@ function h(e) {
     d.Z.updateGuild({
       systemChannelFlags: r
     })
-  }, [n.systemChannelFlags]), j = i.useCallback(e => x(u.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [x]), N = i.useCallback(e => x(u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [x]), _ = i.useCallback(e => x(u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [x]), v = i.useCallback(e => x(u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [x]), C = i.useCallback(e => x(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [x]), O = i.useCallback(e => x(u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [x]), y = i.useCallback(e => x(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [x]), I = null != (t = n.systemChannelId) ? t : p, E = (0, o.eI)(n), S = E || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = E || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
+  }, [n.systemChannelFlags]), j = i.useCallback(e => x(u.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [x]), N = i.useCallback(e => x(u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [x]), _ = i.useCallback(e => x(u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [x]), v = i.useCallback(e => x(u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [x]), O = i.useCallback(e => x(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [x]), y = i.useCallback(e => x(u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [x]), C = i.useCallback(e => x(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [x]), I = null != (t = n.systemChannelId) ? t : p, E = (0, o.eI)(n), S = E || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = E || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.j7V, {
       className: f,
@@ -67,21 +67,21 @@ function h(e) {
       children: m.NW.string(m.t["NvnW+f"])
     }), S && (0, r.jsx)(s.j7V, {
       className: f,
-      onChange: C,
+      onChange: O,
       value: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS),
       hideBorder: !0,
       disabled: !h || I === p,
       children: m.NW.string(m.t["54n19f"])
     }), T && (0, r.jsx)(s.j7V, {
       className: f,
-      onChange: y,
+      onChange: C,
       value: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES),
       hideBorder: !0,
       disabled: !h || I === p,
       children: m.NW.string(m.t.IhF5d3)
     }), b && (0, r.jsx)(s.j7V, {
       className: f,
-      onChange: O,
+      onChange: y,
       value: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT),
       hideBorder: !0,
       disabled: !h || I === p,

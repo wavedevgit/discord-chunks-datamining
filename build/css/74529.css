@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 37f9bc0ebfe35b72
+  Original File Name: 3900e17de1325d0e
 **/
 .container__6f9f7 {
     display: flex;
@@ -26,10 +26,6 @@
     align-items: center;
     justify-content: center;
     display: flex
-}
-
-.secondaryButtonInner__6f9f7 {
-    gap: 2px
 }
 
 .buttonWrapper__6f9f7 {
@@ -390,4 +386,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=37f9bc0ebfe35b72.css.map*/
+/*# sourceMappingURL=3900e17de1325d0e.css.map*/

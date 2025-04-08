@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = e => {
+let y = e => {
   let {
     name: t,
     failingName: n,
@@ -99,7 +99,7 @@ let O = e => {
   })
 };
 
-function y(e, t) {
+function C(e, t) {
   return o()(null == e ? void 0 : e.map(e => {
     let [t, n] = e;
     return null == t ? void 0 : t.id
@@ -121,14 +121,14 @@ let I = e => {
     var e, n, r;
     if (null == T) return [];
     let i = null != (n = (null != (e = p.ZP.getChannels(t.id)) ? e : {})[p.sH]) ? n : [],
-      s = null != (r = null == i ? void 0 : i.map(e => e.channel).reduce((e, t) => C(v({}, e), {
+      s = null != (r = null == i ? void 0 : i.map(e => e.channel).reduce((e, t) => O(v({}, e), {
         [t.id]: t
       }), {})) ? r : {};
     return null == T ? [] : Object.entries(T).map(e => {
       let [t, n] = e;
       return [s[t], n]
     })
-  }, [t.id, T], y);
+  }, [t.id, T], C);
   if (I || null == m) return (0, r.jsxs)("div", {
     className: a()(_.container, _.loaderContainer, l),
     children: [(0, r.jsx)(g.X6q, {
@@ -212,7 +212,7 @@ let I = e => {
             let {
               default: e
             } = await n.e("23401").then(n.bind(n, 666599));
-            return t => (0, r.jsx)(e, C(v({}, t), {
+            return t => (0, r.jsx)(e, O(v({}, t), {
               guildChecklist: m
             }))
           }),
@@ -297,7 +297,7 @@ let I = e => {
         }), o]
       })
     })(), R.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(O, v({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
+      children: [(0, r.jsx)(y, v({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
         className: _.separator
       }) : null]
     }, "".concat(e.name)))]

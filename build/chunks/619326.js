@@ -83,13 +83,13 @@ function j(e) {
       orientation: "horizontal",
       isDisabled: s
     }),
-    C = (0, o.xUy)({
+    O = (0, o.xUy)({
       isSelected: j,
       label: g.NW.formatToPlainString(g.t.ZC69mJ, {
         colorHex: (0, l.Rf)(m.p6O)
       })
     }),
-    O = (0, o.xUy)({
+    y = (0, o.xUy)({
       isSelected: !j,
       label: g.NW.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, l.Rf)(t)
@@ -108,7 +108,7 @@ function j(e) {
           n(m.p6O)
         },
         "aria-disabled": s
-      }, C), {
+      }, O), {
         children: [(0, r.jsx)("div", {
           className: p.swatch,
           style: {
@@ -130,7 +130,7 @@ function j(e) {
       children: [(0, r.jsxs)(o.P3F, f(h({
         onClick: s ? void 0 : u,
         "aria-disabled": s
-      }, O), {
+      }, y), {
         children: [(0, r.jsx)("div", {
           className: a()(p.customSwatch, {
             [p.defaultSwatch]: N === m.p6O

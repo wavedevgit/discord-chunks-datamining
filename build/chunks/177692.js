@@ -17,9 +17,8 @@ function c() {
 }
 
 function u(e) {
-  let t = "",
-    n = null;
-  return (e instanceof Error ? (t = e.message, n = e.name) : t = null != e ? String(e) : "Unknown error", t.length > 1e3 && (t = t.substring(0, 997) + "..."), null != n) ? "".concat(n, ": ").concat(t) : t
+  let t = "";
+  return (t = e instanceof Error ? e.message : null != e ? String(e) : "Unknown error").length > 1e3 && (t = t.substring(0, 997) + "..."), t
 }
 
 function d(e) {

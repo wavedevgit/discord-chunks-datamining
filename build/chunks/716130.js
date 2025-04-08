@@ -117,20 +117,20 @@ function v(e) {
     postjoinOnly: i,
     includeCount: s,
     singleColumn: a
-  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), C = v.filter(e => e.inOnboarding), O = v.filter(e => !0 !== e.inOnboarding), y = [...C.map(e => ({
+  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = v.filter(e => e.inOnboarding), y = v.filter(e => !0 !== e.inOnboarding), C = [...O.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
     data: (0, f.ae)()
-  }, ...O.map(e => ({
+  }, ...y.map(e => ({
     id: e.id,
     data: e
   }))], {
     handleDragStart: I,
     handleDragReset: E,
     handleDragComplete: S
-  } = (0, u.Z)(y, e => {
+  } = (0, u.Z)(C, e => {
     let t = e.findIndex(e => "separator" === e.id),
       n = e.slice(0, t).map(e => N(j({}, e.data), {
         inOnboarding: !0
@@ -159,7 +159,7 @@ function v(e) {
           className: x.subtitle,
           children: b.NW.string(b.t.QvCcYW)
         })]
-      }), C.map((e, t) => (0, r.jsx)(h.Z, {
+      }), O.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
         prompt: e,
         disableAutofocus: n,
@@ -176,11 +176,11 @@ function v(e) {
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [O.map((e, t) => (0, r.jsx)(h.Z, {
+      children: [y.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
         prompt: e,
-        promptIndex: t + C.length,
-        dragIndex: t + C.length + 1,
+        promptIndex: t + O.length,
+        dragIndex: t + O.length + 1,
         onPromptDragStart: I,
         onPromptDragReset: E,
         onPromptDragComplete: S

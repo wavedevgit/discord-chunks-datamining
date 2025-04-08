@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => O,
+  Z: () => y,
   x: () => x
 }), n(388685);
 var r, i = n(200651),
@@ -37,7 +37,7 @@ let x = -1,
     tension: 800,
     friction: 20
   };
-class C extends(r = s.Component) {
+class O extends(r = s.Component) {
   getTotalHeight() {
     let {
       tiers: e
@@ -302,7 +302,7 @@ class C extends(r = s.Component) {
     })
   }
 }
-b(C, "defaultProps", {
+b(O, "defaultProps", {
   initialAnimationDelay: 0
 });
-let O = C
+let y = O

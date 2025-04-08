@@ -79,13 +79,13 @@ function v(e) {
     children: s
   })
 }
-let C = (e, t) => () => t(_(N({}, e), {
+let O = (e, t) => () => t(_(N({}, e), {
     enabled: !e.enabled
   })),
-  O = e => {
+  y = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  y = e => {
+  C = e => {
     var {
       className: t,
       children: n
@@ -106,9 +106,9 @@ let C = (e, t) => () => t(_(N({}, e), {
     }(e, ["className", "children"]);
     return (0, r.jsx)(a.P3F, _(N({
       className: t,
-      onClick: O,
-      onMouseDown: O,
-      onMouseUp: O
+      onClick: y,
+      onMouseDown: y,
+      onMouseUp: y
     }, i), {
       children: n
     }))
@@ -120,8 +120,8 @@ function I(e) {
     rule: n,
     onChangeRule: i,
     onContextMenu: s
-  } = e, l = C(n, i), o = e => {
-    O(e), s(e)
+  } = e, l = O(n, i), o = e => {
+    y(e), s(e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
@@ -130,7 +130,7 @@ function I(e) {
         rule: n,
         onChangeRule: i
       })
-    }), (0, r.jsxs)(y, {
+    }), (0, r.jsxs)(C, {
       className: j.actionContainer,
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
@@ -172,7 +172,7 @@ function S(e) {
     saveRule: m
   } = (0, g.w)(), {
     updateRule: h
-  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), C = (0, s.throttle)(async (e, n) => {
+  } = (0, u.pH)(t.guildId), [f, b] = i.useState(t.enabled), O = (0, s.throttle)(async (e, n) => {
     if (n.preventDefault(), n.stopPropagation(), !c) {
       let e = _(N({}, t), {
         enabled: !f
@@ -182,7 +182,7 @@ function S(e) {
       null != n && (h(n), b(n.enabled))
     }
   }, 300), I = e => {
-    O(e), l(e)
+    y(e), l(e)
   };
   if (null == o) return null;
   let {
@@ -221,11 +221,11 @@ function S(e) {
         rule: t,
         triggerType: t.triggerType
       })]
-    }), (0, r.jsxs)(y, {
+    }), (0, r.jsxs)(C, {
       className: j.actionContainer,
       children: [(0, r.jsx)(a.rsf, {
         className: j.toggle,
-        onChange: C,
+        onChange: O,
         checked: null != f && f
       }), !n && (0, r.jsx)(a.ua7, {
         text: x.NW.string(x.t.UKOtz8),
@@ -281,7 +281,7 @@ function T(e) {
       }), (0, r.jsx)(v, {
         triggerType: t
       })]
-    }), (0, r.jsx)(y, {
+    }), (0, r.jsx)(C, {
       className: j.actionContainer,
       children: (0, r.jsx)(a.zxk, {
         size: a.zxk.Sizes.SMALL,

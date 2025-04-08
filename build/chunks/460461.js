@@ -24,9 +24,9 @@ var r = n(200651),
   N = n(434404),
   _ = n(999382),
   v = n(718157),
-  C = n(450474),
-  O = n(190287),
-  y = n(465520),
+  O = n(450474),
+  y = n(190287),
+  C = n(465520),
   I = n(981631),
   E = n(388032),
   S = n(869562);
@@ -78,7 +78,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
     } = (0, s.cj)([b.Z], () => ({
       canManageGuild: b.Z.can(I.Plq.MANAGE_GUILD, d)
     })), D = (0, s.e7)([_.Z], () => _.Z.isGuildMetadataLoaded()), Z = (0, s.e7)([_.Z], () => null != d ? _.Z.getMetadata() : null), A = (0, s.e7)([_.Z], () => null != d && (null == Z ? void 0 : Z.isPublished) ? _.Z.getSlug() : null), [k, W] = i.useState([!0]), [L, M] = i.useState(!0), [G, U] = i.useState([!1]), [B, F] = i.useState([""]), z = e => {
-      let t = Object.entries(y.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
+      let t = Object.entries(C.z).filter(e => !B.includes(e[1].presentation)).map(e => ({
         label: e[1].presentation,
         value: e[0]
       }));
@@ -90,9 +90,9 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       try {
         var t, n, r, i;
         let s = new URL(e).hostname.split(".");
-        if (3 === s.length && "bandcamp" === s[1].toLowerCase()) return y.z.bandcamp.presentation;
+        if (3 === s.length && "bandcamp" === s[1].toLowerCase()) return C.z.bandcamp.presentation;
         let a = null != (n = null == (t = s.shift()) ? void 0 : t.toLowerCase()) ? n : "";
-        if ("www" === a && (a = null != (i = null == (r = s.shift()) ? void 0 : r.toLowerCase()) ? i : ""), a in y.z) return y.z[a].presentation;
+        if ("www" === a && (a = null != (i = null == (r = s.shift()) ? void 0 : r.toLowerCase()) ? i : ""), a in C.z) return C.z[a].presentation;
         return null
       } catch (e) {
         return null
@@ -155,7 +155,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         let n = [...Z.socialLinks],
           r = [...B],
           i = [...k];
-        r[t] = e, n[t] = y.z[e].baseUrl, i[t] = !0, W(i), F(r), M(i.every(e => !0 === e)), (0, g.t$)(d.id, n)
+        r[t] = e, n[t] = C.z[e].baseUrl, i[t] = !0, W(i), F(r), M(i.every(e => !0 === e)), (0, g.t$)(d.id, n)
       },
       X = (e, t) => {
         let n = [...Z.socialLinks],
@@ -276,7 +276,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: [(0, r.jsx)(l.vwX, {
                           className: S.formTitle,
                           children: E.NW.string(E.t.oOPlPD)
-                        }), (0, r.jsx)(C.Z, {
+                        }), (0, r.jsx)(O.Z, {
                           guild: d,
                           guildMetadata: Z,
                           disabled: !R
@@ -369,7 +369,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                         children: E.NW.string(E.t.esnBnZ)
                       }), (0, r.jsx)("div", {
                         className: S.reasonToJoin,
-                        children: (0, r.jsx)(O.Z, {
+                        children: (0, r.jsx)(y.Z, {
                           reasonMinLength: 10,
                           reasonMaxLength: 128,
                           guildId: d.id,

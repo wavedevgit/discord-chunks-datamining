@@ -80,7 +80,7 @@ let N = function(e) {
       guild: t,
       perks: (0, h.XO)()
     })
-  }, [t]), C = (0, r.jsx)(c.Z, {
+  }, [t]), O = (0, r.jsx)(c.Z, {
     image: t.homeHeader,
     makeURL: e => null != e ? m.ZP.getGuildHomeHeaderURL({
       id: t.id,
@@ -121,7 +121,7 @@ let N = function(e) {
           maxFileSizeBytes: b.B
         })]
       }), (0, r.jsx)("div", {
-        children: C
+        children: O
       })]
     })]
   }) : (0, r.jsxs)(r.Fragment, {
@@ -164,7 +164,7 @@ let N = function(e) {
           "aria-hidden": !0,
           tabIndex: -1,
           onClick: v,
-          children: C
+          children: O
         })
       })]
     })]

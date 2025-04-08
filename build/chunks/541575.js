@@ -56,9 +56,9 @@ let N = function(e) {
     guild: t,
     disabled: N,
     role: _
-  } = e, v = (0, a.ZP)(), C = (0, u.oC)(t.id, _), {
-    analyticsLocations: O
-  } = (0, o.ZP)(), y = () => {
+  } = e, v = (0, a.ZP)(), O = (0, u.oC)(t.id, _), {
+    analyticsLocations: y
+  } = (0, o.ZP)(), C = () => {
     (0, s.ZDy)(async () => {
       let {
         default: e
@@ -75,9 +75,9 @@ let N = function(e) {
         section: p.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
       }),
       guild_id: null == t ? void 0 : t.id,
-      location_stack: O
+      location_stack: y
     }), (0, m.Z)({
-      analyticsLocations: O,
+      analyticsLocations: y,
       analyticsSourceLocation: {
         page: p.ZY5.GUILD_SETTINGS,
         section: p.jXE.GUILD_ROLE_EDIT_UPSELL_MODAL,
@@ -111,7 +111,7 @@ let N = function(e) {
       className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: b.previewContainer,
-        children: null != C ? (0, r.jsx)(c.Z, j(x({}, C), {
+        children: null != O ? (0, r.jsx)(c.Z, j(x({}, O), {
           className: b.roleIconPreview,
           enableTooltip: !1
         })) : (0, r.jsx)(s.FmF, {
@@ -125,12 +125,12 @@ let N = function(e) {
         className: b.button,
         color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.WHITE,
         look: s.zxk.Looks.OUTLINED,
-        onClick: () => t.hasFeature(p.oNc.ROLE_ICONS) ? y() : E({
+        onClick: () => t.hasFeature(p.oNc.ROLE_ICONS) ? C() : E({
           object: p.qAy.UPLOAD_IMAGE
         }),
         disabled: N,
         children: f.NW.string(f.t.mD1oGB)
-      }), null != C ? (0, r.jsx)(s.zxk, {
+      }), null != O ? (0, r.jsx)(s.zxk, {
         className: b.button,
         color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.TRANSPARENT,
         look: s.zxk.Looks.BLANK,

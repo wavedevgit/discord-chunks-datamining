@@ -27,7 +27,7 @@ let h = e => {
       reasonMaxLength: x,
       placeholder: j,
       position: N
-    } = e, [_, v] = i.useState(!1), C = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
+    } = e, [_, v] = i.useState(!1), O = (0, s.e7)([u.Z], () => u.Z.isGuildMetadataLoaded());
     return (0, r.jsxs)("div", {
       className: p.reasonContainer,
       children: [(0, r.jsx)(a.yRy, {
@@ -76,7 +76,7 @@ let h = e => {
             g(e)
           },
           defaultDirty: (null == n ? void 0 : n.length) > 0
-        }, "text-input-".concat(N, "-").concat(C)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != d ? (0, r.jsx)(a.zxk, {
+        }, "text-input-".concat(N, "-").concat(O)), (null != (t = null == n ? void 0 : n.length) ? t : 0) > 0 || null != d ? (0, r.jsx)(a.zxk, {
           className: p.clearStatusButton,
           onClick: f,
           look: a.zxk.Looks.BLANK,

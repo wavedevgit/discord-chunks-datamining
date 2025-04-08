@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r, i, s, a = n(442837),
   l = n(570140),
@@ -27,7 +27,7 @@ function v(e) {
   if (d.Z.getGuildId() === _) return !1;
   N = t === x.KsC.SERVER_GUIDE ? f.PG.HOME_SETTINGS : f.PG.LANDING, _ = d.Z.getGuildId()
 }
-class C extends(r = a.ZP.Store) {
+class O extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(o.Z, g.Z, h.Z, p.Z, u.Z), this.syncWith([o.Z, g.Z, h.Z, p.Z, u.Z], () => !0)
   }
@@ -61,13 +61,13 @@ class C extends(r = a.ZP.Store) {
     return null == _ || !this.hasErrors() && (!(0, b.C)(_) || !this.hasChanges())
   }
 }
-s = "GuildSettingsOnboardingStore", (i = "displayName") in C ? Object.defineProperty(C, i, {
+s = "GuildSettingsOnboardingStore", (i = "displayName") in O ? Object.defineProperty(O, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : C[i] = s;
-let O = new C(l.Z, {
+}) : O[i] = s;
+let y = new O(l.Z, {
   GUILD_SETTINGS_INIT: v,
   GUILD_SETTINGS_SET_SECTION: v,
   GUILD_SETTINGS_ONBOARDING_STEP: function(e) {

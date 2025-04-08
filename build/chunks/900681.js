@@ -86,7 +86,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     description: t,
     expanded: n
@@ -110,7 +110,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     traits: t,
     traitsToHighlight: n,
@@ -136,7 +136,7 @@ function O(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     hasPendingJoinRequest: t,
     atMaxMemberCapacity: n,
@@ -232,7 +232,7 @@ function I(e) {
     children: [(0, r.jsxs)("div", {
       className: j.cardBrandingHeader,
       style: J,
-      children: [$, (0, r.jsx)(y, {
+      children: [$, (0, r.jsx)(C, {
         hasPendingJoinRequest: D,
         atMaxMemberCapacity: Z,
         isGuildMember: h
@@ -309,10 +309,10 @@ function I(e) {
             primaryColor: n.branding.primaryColor
           })]
         })]
-      }), (0, r.jsx)(C, {
+      }), (0, r.jsx)(O, {
         description: n.description,
         expanded: u
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(y, {
         traits: ee,
         traitsToHighlight: I,
         onInteraction: et("traits")

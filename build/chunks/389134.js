@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r, i = n(392711),
   s = n.n(i),
@@ -59,7 +59,7 @@ let b = () => ({
   N = !1,
   _ = !1,
   v = {};
-class C extends(r = o.ZP.Store) {
+class O extends(r = o.ZP.Store) {
   getState() {
     return {
       initialSettings: x,
@@ -70,8 +70,8 @@ class C extends(r = o.ZP.Store) {
     }
   }
 }
-p(C, "displayName", "ClanSettingsStore");
-let O = new C(c.Z, {
+p(O, "displayName", "ClanSettingsStore");
+let y = new O(c.Z, {
   CLAN_SETTINGS_FETCH_START: function() {
     _ = !1, x = b(), j = l()(x), N = !1, v = {}
   },

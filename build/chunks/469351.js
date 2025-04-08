@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(267101),
   _ = n(294294),
   v = n(310800),
-  C = n(833695),
-  O = n(981631),
-  y = n(176505),
+  O = n(833695),
+  y = n(981631),
+  C = n(176505),
   I = n(388032),
   E = n(560131);
 
@@ -51,8 +51,8 @@ function S(e) {
       type: h.z.SERVER_SHOP,
       roles: t,
       initialTab: "guild_products",
-      returnToSection: O.pNK.GUILD_PRODUCTS
-    }), (0, f.uL)(O.Z5c.CHANNEL(T.id, y.oC.GUILD_SHOP))
+      returnToSection: y.pNK.GUILD_PRODUCTS
+    }), (0, f.uL)(y.Z5c.CHANNEL(T.id, C.oC.GUILD_SHOP))
   }, [T]);
   if (!S || R) return (0, r.jsx)(l.$jN, {});
   if (null == T) return null;
@@ -63,8 +63,8 @@ function S(e) {
       }), (0, r.jsx)(l.R94, {
         type: l.R94.Types.DESCRIPTION,
         children: I.NW.format(I.t.xiYuDg, {
-          monetizationPolicyLink: j.Z.getArticleURL(O.BhN.CREATOR_POLICY),
-          serverProductsSupportLink: j.Z.getCreatorSupportArticleURL(O.BhN.SERVER_PRODUCTS)
+          monetizationPolicyLink: j.Z.getArticleURL(y.BhN.CREATOR_POLICY),
+          serverProductsSupportLink: j.Z.getCreatorSupportArticleURL(y.BhN.SERVER_PRODUCTS)
         })
       })]
     }),
@@ -104,7 +104,7 @@ function S(e) {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(v.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(C.Z, {
+    })).with("payment", () => (0, r.jsx)(O.Z, {
       guildId: t
     })).exhaustive(),
     M = S ? (0, r.jsx)(l.njP.Panel, {

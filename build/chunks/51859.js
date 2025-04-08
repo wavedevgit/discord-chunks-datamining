@@ -9,10 +9,10 @@ var r = t(200651),
   a = t(793030),
   l = t(690786),
   c = t(838968),
-  d = t(262212),
-  u = t(795338),
-  p = t(279604),
-  m = t(680278),
+  u = t(262212),
+  d = t(795338),
+  m = t(279604),
+  p = t(680278),
   x = t(388032),
   _ = t(117172);
 
@@ -21,10 +21,10 @@ function v(e) {
     guildId: n,
     powerup: t
   } = e, s = null != (0, l.Z)(n, t), [v, g] = o.useState(void 0);
-  return (0, p.KT)(v), (0, r.jsxs)(c.Z, {
+  return (0, m.KT)(v), (0, r.jsxs)(c.Z, {
     guildId: n,
     powerup: t,
-    children: [(0, r.jsx)(u.m, {
+    children: [(0, r.jsx)(d.m, {
       className: _.image,
       powerup: t
     }), (0, r.jsxs)("div", {
@@ -39,7 +39,7 @@ function v(e) {
             [_.active]: s
           }),
           variant: "text-xs/semibold",
-          children: x.NW.string(m.Z.j2jUjY)
+          children: x.NW.string(p.Z.j2jUjY)
         })]
       }), (0, r.jsx)(a.xv, {
         className: _.description,
@@ -51,7 +51,7 @@ function v(e) {
       })]
     }), (0, r.jsx)("div", {
       className: _.buttonContainer,
-      children: (0, r.jsx)(d.ZP, {
+      children: (0, r.jsx)(u.ZP, {
         guildId: n,
         powerup: t,
         onError: g

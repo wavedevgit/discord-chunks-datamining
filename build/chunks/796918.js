@@ -26,7 +26,7 @@ let x = e => {
     error: x
   } = e, {
     interests: j
-  } = s, [N, _] = i.useState(""), [v, C] = i.useState(0), O = (0, c.e7)([d.default], () => d.default.getId()), y = i.useMemo(() => (0, l.chunk)((0, u.XV)(p.i6, O), 9), [O]), I = [...y[v], ...y[(v + 1) % y.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !p.WZ.has(e) && !p.gh.has(e)), [E]), T = e => {
+  } = s, [N, _] = i.useState(""), [v, O] = i.useState(0), y = (0, c.e7)([d.default], () => d.default.getId()), C = i.useMemo(() => (0, l.chunk)((0, u.XV)(p.i6, y), 9), [y]), I = [...C[v], ...C[(v + 1) % C.length]], E = i.useMemo(() => Array.from(j), [j]), S = i.useMemo(() => E.filter(e => !p.WZ.has(e) && !p.gh.has(e)), [E]), T = e => {
     let t = new Set(j);
     t.delete(e), n({
       interests: t
@@ -46,8 +46,8 @@ let x = e => {
         e.preventDefault(), e.stopPropagation(), P()
     }
   }, [P]), R = i.useCallback(() => {
-    C(e => (e + 1) % y.length)
-  }, [C, y]);
+    O(e => (e + 1) % C.length)
+  }, [O, C]);
   return (0, r.jsxs)("div", {
     className: b.slideContent,
     children: [(0, r.jsx)(o.X6q, {
