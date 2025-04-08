@@ -11,8 +11,8 @@ var r = n(200651),
   c = n(392711),
   u = n.n(c),
   d = n(748780),
-  _ = n(442837),
-  p = n(215569),
+  p = n(442837),
+  _ = n(215569),
   h = n(481060),
   f = n(612226),
   m = n(951483),
@@ -109,7 +109,7 @@ function P() {
     })
   })
 }
-class A extends i.PureComponent {
+class j extends i.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], C.S.subscribe(y.CkL.SCROLL_PAGE_UP, this.scrollPageUp), C.S.subscribe(y.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: !0
@@ -147,22 +147,22 @@ class A extends i.PureComponent {
         children: v.NW.string(v.t["2t19lZ"])
       }), (0, r.jsxs)("div", {
         className: N.ddrArrows,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(A, {
           arrow: "LEFT",
           isActive: n,
           className: N.left,
           children: "left"
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(A, {
           arrow: "DOWN",
           isActive: t,
           className: N.down,
           children: "down"
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(A, {
           arrow: "UP",
           isActive: e,
           className: N.up,
           children: "up"
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(A, {
           arrow: "RIGHT",
           isActive: i,
           className: N.right,
@@ -257,7 +257,7 @@ class A extends i.PureComponent {
   }
 }
 
-function j(e) {
+function A(e) {
   let {
     isActive: t,
     arrow: n,
@@ -287,7 +287,7 @@ function R(e) {
   } = e, [o, s] = i.useState(!1), [a, c] = i.useState(!1), u = i.useMemo(() => __OVERLAY__ ? (0, m.Zg)() : (0, f.Rv)(), []), {
     keyboardModeEnabled: d,
     useReducedMotion: E
-  } = (0, _.cj)([b.Z], () => ({
+  } = (0, p.cj)([b.Z], () => ({
     keyboardModeEnabled: b.Z.keyboardModeEnabled,
     useReducedMotion: b.Z.useReducedMotion
   }));
@@ -301,13 +301,13 @@ function R(e) {
       size: h.CgR.DYNAMIC,
       "aria-label": v.NW.string(v.t.T9DA2N),
       transitionState: t,
-      children: (0, r.jsx)(p.W, {
+      children: (0, r.jsx)(_.W, {
         component: "div",
         children: o ? (0, r.jsx)(O.Z, {
           handleDemonClose: function() {
             c(!1), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(A, {
+        }, "raging-demo") : (0, r.jsx)(j, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

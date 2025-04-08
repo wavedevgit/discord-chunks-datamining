@@ -10,8 +10,8 @@ var i, o = n(442837),
   c = n(131704),
   u = n(601964),
   d = n(592125),
-  _ = n(430824),
-  p = n(701190),
+  p = n(430824),
+  _ = n(701190),
   h = n(496675),
   f = n(594174),
   m = n(998502),
@@ -49,7 +49,7 @@ function S() {
 }
 class x extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(_.Z, p.Z, f.default)
+    this.waitFor(p.Z, _.Z, f.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? g.IlC.OVERLAY : g.IlC.APP;
@@ -83,7 +83,7 @@ let I = new x(l.Z, {
         if (null != d.Z.getChannel(e.id)) return (0, a.XU)(g.ME, e.id), m.ZP.focus(), !1
       } else {
         if (null == n) return !1;
-        if (null != _.Z.getGuild(n.id) && !(0, s.TY)(t)) {
+        if (null != p.Z.getGuild(n.id) && !(0, s.TY)(t)) {
           let e = function(e) {
             if ((0, s.W6)(e)) return b.oC.ROLE_SUBSCRIPTIONS;
             let {
@@ -116,8 +116,8 @@ let I = new x(l.Z, {
         stage_instance: a,
         type: c,
         channel: d,
-        guild: _,
-        is_nickname_changeable: p
+        guild: p,
+        is_nickname_changeable: _
       } = e, h = {
         code: r,
         state: i,
@@ -128,9 +128,9 @@ let I = new x(l.Z, {
         target_application: s,
         stage_instance: a,
         type: c,
-        is_nickname_changeable: p
+        is_nickname_changeable: _
       };
-      return null != d && (h.channel = C({}, d)), null != _ && (h.guild = new u.ZP(_)), null != e.inviter && (h.inviter = C({}, e.inviter)), h
+      return null != d && (h.channel = C({}, d)), null != p && (h.guild = new u.ZP(p)), null != e.inviter && (h.inviter = C({}, e.inviter)), h
     }(t);
     N.push([n, e.resolve])
   },

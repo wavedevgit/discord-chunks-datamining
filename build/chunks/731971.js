@@ -4,10 +4,10 @@ n.d(t, {
   U1: () => E,
   XW: () => u,
   _J: () => f,
-  aP: () => p,
+  aP: () => _,
   e7: () => h,
   h6: () => g,
-  oE: () => _,
+  oE: () => p,
   pB: () => d,
   y: () => b,
   yS: () => C
@@ -111,10 +111,10 @@ let u = (0, r.U)(e => ({
   d = (e, t, n) => {
     u.getState().initialize(e, t, n)
   },
-  _ = () => {
+  p = () => {
     u.getState().reset()
   },
-  p = () => {
+  _ = () => {
     let e = u.getState();
     return e.nickname !== a.nickname || e.dmsAllowed !== a.dmsAllowed || e.showActivity !== c(e.guildSize) || e.mutedServer !== a.mutedServer
   },

@@ -1,6 +1,6 @@
 /** Chunk was on 52212 **/
 n.d(t, {
-  Z: () => p
+  Z: () => _
 }), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -11,7 +11,7 @@ var r = n(200651),
   c = n(818765),
   u = n(674680),
   d = n(127058);
-let _ = e => {
+let p = e => {
   let {
     color: t
   } = e;
@@ -63,13 +63,13 @@ let _ = e => {
   })
 };
 
-function p(e) {
+function _(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: o,
-    description: p,
+    description: _,
     rarity: h,
     hideDescriptionUntilUnlock: f,
     onAction: m
@@ -107,11 +107,11 @@ function p(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : p()
+        children: f && !n ? "?????" : _()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(p, {
         color: g
       })
     })]

@@ -1,8 +1,8 @@
-/** Chunk was on 84414 **/
+/** Chunk was on 84466 **/
 n.d(t, {
   Ux: () => S,
-  gS: () => p,
-  ww: () => f
+  gS: () => P,
+  ww: () => A
 }), n(997841);
 var r = n(192379),
   i = n(399606),
@@ -12,13 +12,13 @@ var r = n(192379),
   s = n(314897),
   c = n(271383),
   u = n(430824),
-  d = n(496675),
-  E = n(914010),
+  E = n(496675),
+  d = n(914010),
   _ = n(715903),
-  I = n(981631),
-  N = n(372897),
-  O = n(526761),
-  T = n(388032);
+  N = n(981631),
+  I = n(372897),
+  T = n(526761),
+  O = n(388032);
 
 function S(e) {
   return (0, i.e7)([s.default, c.ZP], () => {
@@ -28,13 +28,13 @@ function S(e) {
   }, [e])
 }
 
-function p(e) {
-  return (0, i.cj)([s.default, c.ZP, E.Z, u.Z], () => {
+function P(e) {
+  return (0, i.cj)([s.default, c.ZP, d.Z, u.Z], () => {
     let t = {
         nick: void 0,
         bio: void 0
       },
-      n = E.Z.getGuildId(),
+      n = d.Z.getGuildId(),
       r = null != e ? e : n,
       i = u.Z.getGuild(r);
     if (null == i || null == r) return t;
@@ -42,36 +42,36 @@ function p(e) {
       o = c.ZP.getMember(r, l),
       a = (0, _.Ow)(null == o ? void 0 : o.flags);
     if (0 === a.size) return t;
-    if (a.has(N.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
+    if (a.has(I.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
-        var d;
-        t.nick = [T.NW.formatToPlainString(T.t.WBUh3N, {
-          guildName: null != (d = i.name) ? d : ""
+        var E;
+        t.nick = [O.NW.formatToPlainString(O.t.WBUh3N, {
+          guildName: null != (E = i.name) ? E : ""
         })]
-      } else t.nick = [T.NW.string(T.t.EPZCrK)];
-    return a.has(N.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [T.NW.string(T.t.dZh1v7)]), t
+      } else t.nick = [O.NW.string(O.t.EPZCrK)];
+    return a.has(I.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [O.NW.string(O.t.dZh1v7)]), t
   }, [e])
 }
 
-function f(e) {
+function A(e) {
   let {
     guildId: t,
     scrollPosition: n,
     analyticsLocation: s,
     analyticsLocations: c,
-    openWithoutBackstack: E
+    openWithoutBackstack: d
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(), N = (0, i.e7)([u.Z], () => u.Z.getGuild(t), [t]), T = (0, i.e7)([d.Z], () => null != N && d.Z.can(I.Plq.CHANGE_NICKNAME, N), [N]);
+  } = (0, o.ZP)(), I = (0, i.e7)([u.Z], () => u.Z.getGuild(t), [t]), O = (0, i.e7)([E.Z], () => null != I && E.Z.can(N.Plq.CHANGE_NICKNAME, I), [I]);
   return [r.useCallback(() => {
-    if (null == N) return;
-    let e = I.oAB.PROFILE_CUSTOMIZATION,
-      t = O.NB.GUILD;
-    T ? (0, a.Fq)(N, null != c ? c : _) : t = O.NB.USER_PROFILE, l.Z.open(e, t, {
+    if (null == I) return;
+    let e = N.oAB.PROFILE_CUSTOMIZATION,
+      t = T.NB.GUILD;
+    O ? (0, a.Fq)(I, null != c ? c : _) : t = T.NB.USER_PROFILE, l.Z.open(e, t, {
       scrollPosition: n,
       analyticsLocation: s,
       analyticsLocations: c,
-      openWithoutBackstack: E
+      openWithoutBackstack: d
     })
-  }, [T, n, s, c, E, N, _]), T]
+  }, [O, n, s, c, d, I, _]), O]
 }

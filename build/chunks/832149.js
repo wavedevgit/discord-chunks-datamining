@@ -15,7 +15,7 @@ let l = e => {
     shouldShowPromotionalExperience: c,
     onCloseCallback: u,
     itemConsumed: d,
-    purchaseType: _ = o.o8.FIAT
+    purchaseType: p = o.o8.FIAT
   } = e;
   (0, i.ZDy)(async () => {
     let {
@@ -45,7 +45,7 @@ let l = e => {
       overrideDescription: a,
       shouldShowPromotionalExperience: c,
       itemConsumed: d,
-      purchaseType: _
+      purchaseType: p
     }, n))
   }, {
     onCloseCallback: u

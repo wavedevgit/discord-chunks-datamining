@@ -2,7 +2,7 @@
 n.d(t, {
   ZP: () => f,
   pi: () => h,
-  te: () => p
+  te: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -13,8 +13,8 @@ var r = n(200651),
   c = n(442550),
   u = n(297781),
   d = n(443487),
-  _ = n(522314);
-let p = [u.XF];
+  p = n(522314);
+let _ = [u.XF];
 
 function h(e) {
   var t, n, r, i;
@@ -23,12 +23,12 @@ function h(e) {
   if (null == s || null == c) return {};
   let u = e.extra.entries[0],
     d = null != (r = null != (n = s.state) ? n : null == (t = u.media.artists[0]) ? void 0 : t.name) ? r : u.media.title,
-    _ = null != (i = s.details) ? i : u.media.title;
+    p = null != (i = s.details) ? i : u.media.title;
   return {
     activity: s,
     artist: d,
     currentEntry: u,
-    title: _,
+    title: p,
     user: c
   }
 }
@@ -57,7 +57,7 @@ let f = i.memo(function(e) {
         children: a
       }), (0, r.jsx)(u.Gk, {
         location: u.Gt.CARD,
-        children: p.map((e, n) => (0, r.jsx)(e, {
+        children: _.map((e, n) => (0, r.jsx)(e, {
           entry: t,
           hovered: o
         }, n))
@@ -65,7 +65,7 @@ let f = i.memo(function(e) {
     }), (0, r.jsx)(c.f, {
       src: null == f ? void 0 : f.src,
       size: 48,
-      className: _.thumbnail
+      className: p.thumbnail
     })]
   })
 })

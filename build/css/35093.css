@@ -1,6 +1,6 @@
 /**
   Module ID: 35093
-  Original File Name: a285af95ef686802
+  Original File Name: c8da0a36d53f1f1d
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -7500,6 +7500,12 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: var(--interactive-active)
 }
 
+.disabled__981c8 {
+    opacity: .3;
+    cursor: not-allowed;
+    pointer-events: none
+}
+
 .container_e3077c {
     display: flex;
     align-items: center
@@ -14468,4 +14474,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=a285af95ef686802.css.map*/
+/*# sourceMappingURL=c8da0a36d53f1f1d.css.map*/

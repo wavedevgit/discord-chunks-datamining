@@ -18,7 +18,7 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
       selected: i,
       hovered: d
     } = e, {
-      largeImage: _
+      largeImage: p
     } = (0, o.rv)({
       entry: t,
       showCoverImage: !1
@@ -40,8 +40,8 @@ let u = [s.OV, s.EE, s.Af, s.U9, s.n8, s.pQ],
           }, n))
         })]
       }), (0, r.jsx)(l.f, {
-        alt: null == _ ? void 0 : _.alt,
-        src: null == _ ? void 0 : _.src,
+        alt: null == p ? void 0 : p.alt,
+        src: null == p ? void 0 : p.src,
         size: 48,
         className: c.thumbnail
       })]
