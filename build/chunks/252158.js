@@ -234,9 +234,10 @@ let M = {
   [v.u.VIDEO_STREAM_SENDER_READY_TIMEOUT]: {
     getActiveErrors: () => Object.values(E.Z.getTimedoutVideos()).filter(e => {
       let {
-        userId: t
+        userId: t,
+        videoStreamId: n
       } = e;
-      return d.default.getId() === t
+      return d.default.getId() === t && null != n
     }).map(e => C({
       type: v.u.VIDEO_STREAM_SENDER_READY_TIMEOUT
     }, e)),
@@ -245,11 +246,36 @@ let M = {
   [v.u.VIDEO_STREAM_RECEIVER_READY_TIMEOUT]: {
     getActiveErrors: () => Object.values(E.Z.getTimedoutVideos()).filter(e => {
       let {
-        userId: t
+        userId: t,
+        videoStreamId: n
       } = e;
-      return d.default.getId() !== t
+      return d.default.getId() !== t && null != n
     }).map(e => C({
       type: v.u.VIDEO_STREAM_RECEIVER_READY_TIMEOUT
+    }, e)),
+    makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
+  },
+  [v.u.VIDEO_STREAM_SENDER_READY_TIMEOUT_NO_STREAM]: {
+    getActiveErrors: () => Object.values(E.Z.getTimedoutVideos()).filter(e => {
+      let {
+        userId: t,
+        videoStreamId: n
+      } = e;
+      return d.default.getId() === t && null == n
+    }).map(e => C({
+      type: v.u.VIDEO_STREAM_SENDER_READY_TIMEOUT_NO_STREAM
+    }, e)),
+    makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
+  },
+  [v.u.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM]: {
+    getActiveErrors: () => Object.values(E.Z.getTimedoutVideos()).filter(e => {
+      let {
+        userId: t,
+        videoStreamId: n
+      } = e;
+      return d.default.getId() !== t && null == n
+    }).map(e => C({
+      type: v.u.VIDEO_STREAM_RECEIVER_READY_TIMEOUT_NO_STREAM
     }, e)),
     makeErrorContextKey: e => "".concat(e.mediaContext, ":").concat(e.userId)
   },

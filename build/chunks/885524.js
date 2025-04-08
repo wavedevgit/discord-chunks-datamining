@@ -19,7 +19,7 @@ function u(e) {
     paused: d = !1
   } = e, m = n.useRef(new s.V7), p = a === r.m.SELF_STREAM || a === r.m.REMOTE_STREAM ? i.Yn.STREAM : i.Yn.DEFAULT;
   return n.useEffect(() => {
-    if (d || null == l) return;
+    if (d) return;
     let e = m.current;
     return e.start(c, () => {
       (0, o.K)(l, t, p, u)

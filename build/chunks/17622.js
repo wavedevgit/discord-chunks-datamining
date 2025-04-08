@@ -29,7 +29,7 @@ function u(e) {
           className: a()(l.perkIcon, n)
         }), (0, r.jsx)(s.xv, {
           className: l.perkText,
-          color: "text-muted",
+          color: "text-normal",
           variant: "text-sm/medium",
           children: e.description
         })]

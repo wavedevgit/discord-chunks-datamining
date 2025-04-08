@@ -75,8 +75,8 @@ function g(e) {
           Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
         }), n))
       },
-      f = e => t => {
-        O && null != t && t.stopPropagation(), e(t)
+      f = e => {
+        O && (null == e || e.stopPropagation()), C(!S)
       };
     return (0, r.jsx)(s.Gt, {
       value: w,
@@ -89,12 +89,14 @@ function g(e) {
         roleId: null == e ? void 0 : e.colorRoleId,
         clickTrap: S,
         shouldShow: S,
-        onRequestOpen: () => C(!0),
         onRequestClose: () => C(!1),
         children: e => {
           var {
             onClick: t
-          } = e, n = function(e, t) {
+          } = e;
+          return c(h({
+            onClick: f
+          }, function(e, t) {
             if (null == e) return {};
             var n, r, l = function(e, t) {
               if (null == e) return {};
@@ -108,10 +110,7 @@ function g(e) {
               for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(e, ["onClick"]);
-          return c(h({
-            onClick: f(t)
-          }, n))
+          }(e, ["onClick"])))
         }
       }) : c(void 0)
     }, o)
