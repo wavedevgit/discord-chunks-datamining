@@ -137,7 +137,8 @@ class S extends i.PureComponent {
         redirect_to: y.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
       (0, b.uL)(y.Z5c.LOGIN, {
-        search: (0, o.stringify)(e)
+        search: (0, o.stringify)(e),
+        source: "verified_guild_invite"
       })
     })
   }

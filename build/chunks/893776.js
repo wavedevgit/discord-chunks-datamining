@@ -78,12 +78,14 @@ function R(e) {
   })
 }
 
-function P() {
-  let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b.Z5c.DEFAULT_LOGGED_OUT;
-  if (R(), null == e) return;
-  let t = (0, f.D)();
-  if (null == t) return void(0, _.uL)(e);
-  E.Z.popAll(), t.reset({
+function P(e) {
+  let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
+  if (R(), null == t) return;
+  let n = (0, f.D)();
+  if (null == n) return void(0, _.uL)(t, {
+    source: e
+  });
+  E.Z.popAll(), n.reset({
     index: 0,
     routes: [{
       name: "auth"
@@ -336,10 +338,10 @@ let w = {
   logoutInternal(e) {
     R(e)
   },
-  logout() {
-    var e;
-    let t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b.Z5c.DEFAULT_LOGGED_OUT,
-      n = arguments.length > 1 ? arguments[1] : void 0;
+  logout(e) {
+    var t;
+    let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT,
+      r = arguments.length > 2 ? arguments[2] : void 0;
     return g.Z.post(S(O({
       url: b.ANM.LOGOUT,
       body: {
@@ -350,16 +352,19 @@ let w = {
       },
       oldFormErrors: !0,
       trackedActionData: {
-        event: i.NetworkActionNames.USER_LOGOUT
+        event: i.NetworkActionNames.USER_LOGOUT,
+        properties: {
+          logout_source: e
+        }
       }
-    }, null != n && {
+    }, null != r && {
       headers: {
-        authorization: null != (e = o.getToken(n)) ? e : ""
+        authorization: null != (t = o.getToken(r)) ? t : ""
       }
     }), {
       rejectWithError: !1
     })).finally(() => {
-      (null == n || n === h.default.getId()) && P(t)
+      (null == r || r === h.default.getId()) && P(e, n)
     })
   },
   switchAccountToken(e) {
@@ -378,13 +383,13 @@ let w = {
       }), t
     })
   },
-  verifySSOToken() {
-    let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b.Z5c.DEFAULT_LOGGED_OUT;
+  verifySSOToken(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : b.Z5c.DEFAULT_LOGGED_OUT;
     return a.tn.get({
       url: b.ANM.ME,
       oldFormErrors: !0,
       rejectWithError: !0
-    }).catch(() => P(e))
+    }).catch(() => P(e, t))
   },
   async verify(e) {
     let t = await g.Z.post({

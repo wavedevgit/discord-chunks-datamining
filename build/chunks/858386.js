@@ -65,7 +65,7 @@ class E extends a.Z {
       } = await n.e("48707").then(n.bind(n, 194530));
       return function(t) {
         let n = () => {
-            t.onClose(), o.Z.logout(d.Z5c.LOGIN)
+            t.onClose(), o.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
           },
           i = () => {
             l.default.track(d.rMx.FORCED_UPDATE_PASSWORD_SUCCEEDED), t.onClose()
@@ -80,7 +80,7 @@ class E extends a.Z {
       modalKey: g,
       onCloseRequest: f.Vq,
       instant: !0
-    }) : t && o.Z.logout(d.Z5c.LOGIN)
+    }) : t && o.Z.logout("login_required_account_manager", d.Z5c.LOGIN)
   }
   constructor(...e) {
     super(...e), _(this, "actions", {

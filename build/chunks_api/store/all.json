@@ -6866,7 +6866,8 @@
                 "STREAM_START",
                 "STREAM_STOP",
                 "USER_SETTINGS_PROTO_UPDATE",
-                "EMBEDDED_ACTIVITY_CLOSE"
+                "EMBEDDED_ACTIVITY_CLOSE",
+                "RTC_CONNECTION_STATE"
             ]
         }
     },
@@ -21521,6 +21522,10 @@
                 },
                 {
                     "name": "configureExceptions",
+                    "args": []
+                },
+                {
+                    "name": "configureMode",
                     "args": []
                 },
                 {

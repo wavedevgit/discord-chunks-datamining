@@ -143,7 +143,7 @@ function T() {
           header: v.NW.string(v.t["2jxGen"]),
           confirmText: v.NW.string(v.t["2jxGen"]),
           cancelText: v.NW.string(v.t["ETE/oK"]),
-          onConfirm: () => c.Z.logout()
+          onConfirm: () => c.Z.logout("verification")
         }, n), {
           children: (0, r.jsx)(t, {
             variant: "text-md/normal",

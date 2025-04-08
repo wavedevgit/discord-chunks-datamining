@@ -13,9 +13,9 @@ var i = n(481060),
   u = n(258356),
   d = n(981631),
   p = n(388032),
-  g = n(15282);
+  h = n(15282);
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -85,19 +85,19 @@ function _(e) {
     isSubmitting: I,
     onAcceptInvite: n
   }) : (0, r.jsxs)("div", {
-    className: g.container,
+    className: h.container,
     children: [(0, r.jsx)(c.GB, {
       application: N,
       guild: b,
       user: E || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(h({}, j), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(g({}, j), {
       showBigUserIcon: E
-    })), (0, r.jsx)(c.UM, f(h({}, j), {
+    })), (0, r.jsx)(c.UM, f(g({}, j), {
       showBigUserIcon: E
-    })), (0, r.jsx)(c.V6, h({}, j)), (0, r.jsx)(i.zxk, {
+    })), (0, r.jsx)(c.V6, g({}, j)), (0, r.jsx)(i.zxk, {
       onClick: n,
       submitting: I,
-      className: g.acceptButton,
+      className: h.acceptButton,
       children: p.NW.string(p.t.ohMvm5)
     })]
   })

@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(298444),
   d = n(447543),
   p = n(881052),
-  g = n(899370),
-  h = n(267394),
+  h = n(899370),
+  g = n(267394),
   f = n(388905),
   m = n(639946),
   _ = n(792766),
@@ -59,7 +59,7 @@ async function z(e) {
   let {
     invite: t
   } = await d.ZP.resolveInvite(e, U);
-  null != t && (0, h.A)(t)
+  null != t && (0, g.A)(t)
 }
 class V extends i.PureComponent {
   componentDidMount() {
@@ -312,7 +312,7 @@ class V extends i.PureComponent {
         context: this.getAcceptInviteContext(U),
         skipOnboarding: !0,
         callback: t => {
-          (0, h.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
+          (0, g.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
         }
       }).catch(e => {
         if (e instanceof p.yZ || e instanceof p.Hx) {
@@ -353,7 +353,7 @@ class V extends i.PureComponent {
     })
   }
 }
-let H = c.ZP.connectStores([O.Z, S.Z, j.default, b.Z, g.Z], e => {
+let H = c.ZP.connectStores([O.Z, S.Z, j.default, b.Z, h.Z], e => {
   var t;
   let {
     inviteKey: n
@@ -363,6 +363,6 @@ let H = c.ZP.connectStores([O.Z, S.Z, j.default, b.Z, g.Z], e => {
     nativeAppState: b.Z.getState(n),
     authenticated: j.default.isAuthenticated(),
     defaultRoute: S.Z.defaultRoute,
-    isUnderage: g.Z.isUnderageAnonymous()
+    isUnderage: h.Z.isUnderageAnonymous()
   }
 })(V)

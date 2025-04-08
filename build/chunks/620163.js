@@ -1906,7 +1906,7 @@ let eJ = () => [s.z.CLIENT_THEMES_SETTINGS_BADGE, s.z.DEKSTOP_CUSTOM_APP_ICON_BA
               confirmText: eY.NW.string(eY.t["2jxGen"]),
               cancelText: eY.NW.string(eY.t["ETE/oK"]),
               onCancel: e.onClose,
-              onConfirm: () => c.Z.logout()
+              onConfirm: () => c.Z.logout("settings")
             }, e), n = n = {
               children: (0, r.jsx)(l.Text, {
                 variant: "text-md/normal",

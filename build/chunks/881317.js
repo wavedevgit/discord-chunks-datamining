@@ -12,8 +12,8 @@ var r = n(200651),
   u = n(388905),
   d = n(353926),
   p = n(82554),
-  g = n(726521),
-  h = n(185625),
+  h = n(726521),
+  g = n(185625),
   f = n(314897),
   m = n(63063),
   _ = n(981631),
@@ -77,10 +77,10 @@ let I = {
       })
     }, s = e => {
       let t = async () => {
-        await (0, h.yL)(i, e)
-      }, a = async t => await (0, h.RV)(i, e, t), s = e => {
+        await (0, g.yL)(i, e)
+      }, a = async t => await (0, g.RV)(i, e, t), s = e => {
         let t = null == e ? void 0 : e.token;
-        i === p.BM.MESSAGE ? (0, g.eE)(t) : i === p.BM.USER ? (0, g.JM)(t) : i === p.BM.GUILD && (0, g.FO)(t)
+        i === p.BM.MESSAGE ? (0, h.eE)(t) : i === p.BM.USER ? (0, h.JM)(t) : i === p.BM.GUILD && (0, h.FO)(t)
       };
       t(), (0, l.ZDy)(async () => {
         let {
@@ -110,8 +110,8 @@ let I = {
     })
   },
   S = () => {
-    let [e, t] = i.useState(!0), [n, o] = i.useState([]), p = (0, a.e7)([f.default], () => f.default.isAuthenticated()), g = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = () => {
-      (0, h.Jj)().then(e => {
+    let [e, t] = i.useState(!0), [n, o] = i.useState([]), p = (0, a.e7)([f.default], () => f.default.isAuthenticated()), h = (0, a.e7)([d.Z], () => d.Z.hasLoadedExperiments), v = () => {
+      (0, g.Jj)().then(e => {
         let {
           body: {
             capabilities: n
@@ -128,9 +128,9 @@ let I = {
       }).then(() => v()).catch(() => t(!1))) : v()
     }, [p]), i.useEffect(() => {
       (async () => {
-        g || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
+        h || (await s.Z.getLocationMetadata(), s.Z.getExperiments())
       })()
-    }, [g]), e || !g ? (0, r.jsx)(u.ZP, {
+    }, [h]), e || !h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)(l.$jN, {})
     }) : null != n && n.length > 0 && (0, r.jsxs)(u.ZP, {
       children: [(0, r.jsx)(u.Dx, {

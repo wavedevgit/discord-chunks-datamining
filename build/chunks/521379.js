@@ -1,15 +1,16 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => d
-}), n(35282), n(704826);
+  Z: () => p
+}), n(35282);
 var r, i = n(200651),
   o = n(192379),
   a = n(442837),
   l = n(388905),
-  s = n(108427),
-  c = n(559786);
+  s = n(703656),
+  c = n(108427),
+  u = n(559786);
 
-function u(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -18,9 +19,9 @@ function u(e, t, n) {
   }) : e[t] = n, e
 }
 a.ZP.initialize();
-class d extends(r = o.PureComponent) {
+class p extends(r = o.PureComponent) {
   componentDidMount() {
-    (0, s.e)("account_revert")
+    (0, c.e)("account_revert")
   }
   render() {
     let {
@@ -30,14 +31,14 @@ class d extends(r = o.PureComponent) {
       style: {
         padding: 0
       },
-      children: (0, i.jsx)(c.Z, function(e) {
+      children: (0, i.jsx)(u.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            u(e, t, n[t])
+            d(e, t, n[t])
           })
         }
         return e
@@ -48,7 +49,7 @@ class d extends(r = o.PureComponent) {
     })
   }
 }
-u(d, "defaultProps", {
-  transitionTo: e => n.g.location.assign(e),
-  replaceWith: e => n.g.location.replace(e)
+d(p, "defaultProps", {
+  transitionTo: s.uL,
+  replaceWith: s.dL
 })
