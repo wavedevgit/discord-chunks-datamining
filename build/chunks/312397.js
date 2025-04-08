@@ -24,9 +24,9 @@ var r = n(200651),
   N = n(600164),
   _ = n(699553),
   v = n(65361),
-  O = n(536442),
-  y = n(142497),
-  C = n(345861),
+  y = n(536442),
+  C = n(142497),
+  O = n(345861),
   I = n(208567),
   E = n(496675),
   S = n(594174),
@@ -198,7 +198,7 @@ class $ extends i.PureComponent {
             type: g.geA.DESCRIPTION,
             className: Y.marginBottom8,
             children: V.NW.string(V.t["R/9yQE"])
-          }), (0, r.jsx)(C.Z, {
+          }), (0, r.jsx)(O.Z, {
             look: g.iLD.OUTLINED,
             color: g.Ttl.PRIMARY,
             disabled: !n,
@@ -614,7 +614,7 @@ function ee() {
     analyticsLocations: c
   } = (0, x.ZP)(b.Z.OVERVIEW);
   i.useEffect(() => {
-    (0, y.Kw)(O.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
+    (0, C.Kw)(y.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
   }, []);
   let {
     canManageGuild: u,

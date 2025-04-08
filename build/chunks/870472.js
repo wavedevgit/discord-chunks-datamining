@@ -246,12 +246,12 @@ function c(e, t) {
         })
       }), e.preventDefault(), e.stopPropagation())
     }, [i, d.length, u, o]),
-    O = r.useCallback(e => {
+    y = r.useCallback(e => {
       var t, n, r, s;
       let a = e.metaKey || e.ctrlKey;
       "z" === e.key && a ? (m().selections.length > 0 ? null == (t = i.current) || t.blur() : null == (n = i.current) || n.focus(), e.preventDefault(), e.stopPropagation()) : "y" === e.key && a && (g().selections.length > 0 ? null == (r = i.current) || r.blur() : null == (s = i.current) || s.focus(), e.preventDefault(), e.stopPropagation())
     }, [m, g, i]),
-    y = r.useCallback(e => {
+    C = r.useCallback(e => {
       var t;
       let n = o.trim().length > 0,
         {
@@ -279,7 +279,7 @@ function c(e, t) {
         }, 16)
       }), e.preventDefault(), e.stopPropagation())
     }, [s, i, u, c.length, o]),
-    C = r.useCallback(e => {
+    O = r.useCallback(e => {
       e.relatedTarget !== e.currentTarget && _(e, !1, !1)
     }, [_]);
   return {
@@ -287,18 +287,18 @@ function c(e, t) {
     handleInputChange: N,
     handleKeyDown: r.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      "Meta" !== e.key && (l.ye.has(e.key) ? _(e) : "Backspace" === e.key ? v(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? y(e) : l.Bd.has(e.key) && t && O(e))
-    }, [_, v, j, y, O]),
+      "Meta" !== e.key && (l.ye.has(e.key) ? _(e) : "Backspace" === e.key ? v(e) : "Escape" === e.key ? j(e) : "a" === e.key && t ? C(e) : l.Bd.has(e.key) && t && y(e))
+    }, [_, v, j, C, y]),
     handleContainerKeyUp: r.useCallback(e => {
       if (document.activeElement !== s.current) return;
       let t = e.metaKey || e.ctrlKey;
-      "Backspace" === e.key ? v(e) : "a" === e.key && t ? y(e) : "Escape" === e.key ? j(e) : l.Bd.has(e.key) && t ? O(e) : "Meta" !== e.key && j(e)
-    }, [O, v, y, j, s]),
+      "Backspace" === e.key ? v(e) : "a" === e.key && t ? C(e) : "Escape" === e.key ? j(e) : l.Bd.has(e.key) && t ? y(e) : "Meta" !== e.key && j(e)
+    }, [y, v, C, j, s]),
     handleRemoveTag: h,
     handleTagChangeEvent: f,
     handleSelectTag: b,
     handleUnselectTag: x,
     handleResetTagSelections: j,
-    handleInputBlurEvent: C
+    handleInputBlurEvent: O
   }
 }

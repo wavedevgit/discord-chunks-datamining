@@ -1,6 +1,6 @@
 /**
   Module ID: 35093
-  Original File Name: be2d5e5f3d562596
+  Original File Name: a285af95ef686802
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -7427,6 +7427,79 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     color: var(--interactive-normal)
 }
 
+.roleStyleContainer__981c8 {
+    display: flex;
+    gap: var(--spacing-8);
+    margin-top: var(--spacing-16);
+    width: 100%
+}
+
+.roleStylePreview__981c8 {
+    flex: 0 0 auto;
+    width: 142px;
+    overflow-x: hidden
+}
+
+.roleStyleMessageContainer__981c8 {
+    padding: var(--spacing-8) var(--spacing-4);
+    width: 142px;
+    overflow: visible;
+    position: relative;
+    pointer-events: none
+}
+
+.roleStyleMessageContainer__981c8:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    background: linear-gradient(90deg,transparent,var(--background-primary));
+    pointer-events: none
+}
+
+.roleStyleMessageContainer__981c8>div {
+    width: 255px;
+    overflow: hidden;
+    margin-top: -8px;
+    padding-top: var(--spacing-8)
+}
+
+.roleStylePreviewContainer__981c8 {
+    border: 1px solid var(--bg-mod-faint);
+    background-color: var(--background-primary);
+    border-radius: var(--spacing-8);
+    position: relative;
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.15),0 3px 8px -3px rgba(0,0,0,.15),0 4px 12px -4px rgba(0,0,0,.15);
+    flex: 0 0 142px;
+    min-width: 142px;
+    width: 142px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0
+}
+
+.roleStylePreviewContainer__981c8.selected__981c8 {
+    border: 2px solid var(--brand-500);
+    background: var(--bg-mod-subtle)
+}
+
+.roleStyleLabel__981c8 {
+    background-color: var(--bg-mod-faint);
+    padding: 6px;
+    text-align: center;
+    width: 100%;
+    color: var(--text-muted);
+    margin: -2px 0
+}
+
+.selected__981c8 .roleStyleLabel__981c8 {
+    background-color: var(--bg-mod-subtle);
+    color: var(--interactive-active)
+}
+
 .container_e3077c {
     display: flex;
     align-items: center
@@ -14395,4 +14468,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=be2d5e5f3d562596.css.map*/
+/*# sourceMappingURL=a285af95ef686802.css.map*/

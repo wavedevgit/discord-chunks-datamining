@@ -32,7 +32,7 @@ function v() {
         dismissAction: j.L.AUTO
       })
     }, []), null == n) return null;
-  let O = (0, x.Q)(n);
+  let y = (0, x.Q)(n);
   switch (v) {
     case h.u.OVERVIEW:
       e = (0, r.jsx)(f.Z, {
@@ -42,13 +42,13 @@ function v() {
     case h.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t["53eF5u"]),
-        settings: O[h.u.CAPTCHA_AND_RAID_PROTECTION]
+        settings: y[h.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case h.u.DM_AND_SPAM_PROTECTION:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t.O0SfFx),
-        settings: O[h.u.DM_AND_SPAM_PROTECTION]
+        settings: y[h.u.DM_AND_SPAM_PROTECTION]
       });
       break;
     case h.u.AUTOMOD:
@@ -59,7 +59,7 @@ function v() {
     case h.u.PERMISSIONS:
       e = (0, r.jsx)(b.Z, {
         title: N.NW.string(N.t.BXoNiY),
-        settings: O[h.u.PERMISSIONS]
+        settings: y[h.u.PERMISSIONS]
       })
   }
   return (0, r.jsxs)(r.Fragment, {

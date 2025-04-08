@@ -18,7 +18,8 @@ function l(e) {
     guildId: c,
     isGroupStart: u = !0,
     roleIcon: d,
-    hideTimestamp: f
+    hideTimestamp: f,
+    preview: m
   } = e;
   return !(0, o.Z)(t) && (u || r) ? (0, i.jsx)(s, {
     message: t,
@@ -28,6 +29,7 @@ function l(e) {
     compact: r,
     animate: l,
     roleIcon: d,
-    hideTimestamp: f
+    hideTimestamp: f,
+    preview: m
   }) : void 0
 }

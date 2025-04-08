@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(35282);
 var r = n(200651),
   i = n(192379),
@@ -82,7 +82,7 @@ function v(e) {
   })
 }
 
-function O(e) {
+function y(e) {
   let {
     isDiscoverable: t,
     profile: n,
@@ -138,18 +138,18 @@ function O(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   var t;
   let {
     profile: n,
     onCustomBannerChange: s,
     canManageGuild: o
-  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null != (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && t, p = n.id, y = i.useCallback(e => () => {
+  } = e, u = (0, l.e7)([m.Z], () => m.Z.getGuild(n.id)), g = null != (t = null == u ? void 0 : u.hasFeature(f.oNc.DISCOVERABLE)) && t, p = n.id, C = i.useCallback(e => () => {
     h.Z.updateGuildProfile(p, {
       brandColorPrimary: e,
       customBanner: null
     })
-  }, [p]), C = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
+  }, [p]), O = i.useCallback(e => (!g || null == n.customBanner) && e === n.brandColorPrimary, [n, g]);
   return (0, r.jsx)(c.hjN, {
     title: x.NW.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
@@ -157,7 +157,7 @@ function y(e) {
       children: [(0, r.jsx)(v, {
         profile: n,
         canManageGuild: o,
-        handleClick: y(null),
+        handleClick: C(null),
         hasCustomBanner: g && null != n.customBanner
       }), b.cb.map(e => {
         let {
@@ -170,7 +170,7 @@ function y(e) {
             "aria-disabled": !o,
             tabIndex: o ? 0 : -1,
             "aria-label": t,
-            onClick: o ? y(n) : void 0,
+            onClick: o ? C(n) : void 0,
             style: {
               background: (0, d.d)(n)
             },
@@ -179,12 +179,12 @@ function y(e) {
             }),
             children: (0, r.jsx)("div", {
               className: a()({
-                [j.itemSelected]: C(n)
+                [j.itemSelected]: O(n)
               })
             })
           }))
         }, t)
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(y, {
         canManageGuild: o,
         isDiscoverable: g,
         profile: n,

@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(671533),
   _ = n(946724),
   v = n(970129),
-  O = n(712181),
-  y = n(420966),
-  C = n(203377),
+  y = n(712181),
+  C = n(420966),
+  O = n(203377),
   I = n(981631),
   E = n(388032),
   S = n(563836);
@@ -74,12 +74,12 @@ function R(e) {
       currentPosition: j,
       onDragStart: N,
       onDragReset: _,
-      onDragComplete: O,
-      roleStyle: y
+      onDragComplete: y,
+      roleStyle: C
     } = e,
-    C = (0, v.T)(d, p, g),
+    O = (0, v.T)(d, p, g),
     E = (0, f.pM)(d.id, g.id),
-    R = null == C && !E,
+    R = null == O && !E,
     D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
     [, Z] = (0, l.c)({
       type: w,
@@ -91,7 +91,7 @@ function R(e) {
       end: (e, t) => {
         let n = t.getDropResult();
         if (null == n) return void _();
-        O(n.roleId)
+        y(n.roleId)
       }
     }),
     [{
@@ -116,7 +116,7 @@ function R(e) {
     size: 12,
     color: g.colorString,
     className: S.verifiedRoleIcon
-  }) : "dot" === y ? (0, r.jsx)(u.FhE, {
+  }) : "dot" === C ? (0, r.jsx)(u.FhE, {
     color: W,
     background: !1,
     tooltip: !1
@@ -147,9 +147,9 @@ function R(e) {
       var t;
       return Z(k(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
-    children: [s, null != C ? (0, r.jsx)(v.Z, {
+    children: [s, null != O ? (0, r.jsx)(v.Z, {
       className: S.lock,
-      tooltipText: C
+      tooltipText: O
     }) : null, (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       color: E ? "header-primary" : "interactive-active",
@@ -168,11 +168,11 @@ function D(e) {
   } = e, o = (0, d.e7)([_.Z], () => _.Z.roles), c = (0, d.e7)([j.Z], () => j.Z.getHighestRole(t)), m = (0, d.e7)([h.Z], () => h.Z.roleStyle), [f, b] = i.useState(o.length), {
     scrolledToTop: v,
     handleScroll: I
-  } = (0, y.V)(), {
+  } = (0, C.V)(), {
     handleDragStart: w,
     handleDragReset: D,
     handleDragComplete: Z
-  } = (0, O.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
+  } = (0, y.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
     null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
@@ -185,7 +185,7 @@ function D(e) {
     o.length > f && k(n), o.length !== f && b(o.length)
   }, [o.length, f, b, k, n]);
   let W = () => {
-    g.Z.createRole(t.id), l(C.ZI.DISPLAY)
+    g.Z.createRole(t.id), l(O.ZI.DISPLAY)
   };
   return (0, r.jsx)(x.ZP.Sidebar, {
     className: S.sidebar,

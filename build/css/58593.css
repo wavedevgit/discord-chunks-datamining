@@ -1,6 +1,6 @@
 /**
   Module ID: 58593
-  Original File Name: 868c2b6a8189e02c
+  Original File Name: c245624575a3a99e
 **/
 @use postcss-pxtorem;
 
@@ -58,7 +58,7 @@
     padding-left: var(--custom-message-margin-left-content-cozy)
 }
 
-.compact_c19a55.wrapper_c19a55.contentOnly_c19a55,.cozy_c19a55.wrapper_c19a55.contentOnly_c19a55 {
+.compact_c19a55.wrapper_c19a55.contentOnly_c19a55,.cozy_c19a55.wrapper_c19a55.contentOnly_c19a55,.preview_c19a55.compact_c19a55.wrapper_c19a55,.preview_c19a55.cozy_c19a55.wrapper_c19a55 {
     padding-left: 16px
 }
 
@@ -474,6 +474,10 @@
     top: .18em;
     margin-left: .1em;
     margin-right: .25em
+}
+
+.preview_c19a55 .avatar_c19a55 {
+    left: 8px
 }
 
 .avatar_c19a55:before {
@@ -952,6 +956,10 @@
     margin: 0 0 0 .25rem
 }
 
+.previewGlow_c19a55 {
+    right: 118px
+}
+
 .actionButtons_cc1819 {
     grid-row: 1;
     grid-column: 4;
@@ -1075,4 +1083,4 @@
     margin: 36px 24px
 }
 
-/*# sourceMappingURL=868c2b6a8189e02c.css.map*/
+/*# sourceMappingURL=c245624575a3a99e.css.map*/

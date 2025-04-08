@@ -24,9 +24,9 @@ var r = n(200651),
   N = n(889369),
   _ = n(570961),
   v = n(208665),
-  O = n(868814),
-  y = n(974513),
-  C = n(2348),
+  y = n(868814),
+  C = n(974513),
+  O = n(2348),
   I = n(353890),
   E = n(716130),
   S = n(388032),
@@ -35,11 +35,11 @@ var r = n(200651),
 function P(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, O.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [_, v] = i.useState(!1);
+  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, y.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = f.filter(e => !b.has(e.id)), [_, v] = i.useState(!1);
   i.useEffect(() => {
     h || l || (0, g.S)(t.id)
   }, [t.id, h, l]);
-  let y = e => {
+  let C = e => {
     (0, a.ZDy)(async () => {
       let {
         default: i
@@ -147,7 +147,7 @@ function P(e) {
             color: a.zxk.Colors.PRIMARY,
             className: T.lockedPill,
             innerClassName: T.lockedPillInner,
-            onClick: () => y(e.id),
+            onClick: () => C(e.id),
             children: [(0, r.jsx)(a.mBM, {
               size: "xs",
               color: "currentColor"
@@ -205,13 +205,13 @@ function w(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: S.NW.string(S.t.Kq7FAQ)
-      }), (0, r.jsx)(y.Wu, {
+      }), (0, r.jsx)(C.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
       }), g ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(O.Z, {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,

@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(130341),
   _ = n(95242),
   v = n(420966),
-  O = n(566476),
-  y = n(203377),
-  C = n(981631),
+  y = n(566476),
+  C = n(203377),
+  O = n(981631),
   I = n(388032),
   E = n(905972),
   S = n(877248);
@@ -139,7 +139,7 @@ function R(e) {
       children: e => (0, r.jsxs)(o.P3F, P(T({}, e), {
         className: E.memberRow,
         onContextMenu: f,
-        children: [(0, r.jsx)(O.Z, {
+        children: [(0, r.jsx)(y.Z, {
           className: E.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
@@ -287,11 +287,11 @@ function k(e) {
   } = (0, _.Z)(0), {
     scrolledToTop: h,
     handleScroll: x
-  } = (0, v.V)(), j = s.managed || c, O = (0, N.e)(t.id, s.id), w = (0, l.e7)([b.Z], () => {
+  } = (0, v.V)(), j = s.managed || c, y = (0, N.e)(t.id, s.id), w = (0, l.e7)([b.Z], () => {
     var e, n;
     return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? void 0 : e[s.id]) ? n : 0
-  }) > O.length, R = () => {
-    f.default.track(C.rMx.OPEN_MODAL, {
+  }) > y.length, R = () => {
+    f.default.track(O.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"
@@ -319,7 +319,7 @@ function k(e) {
           children: [(0, r.jsx)(v.Z, {
             guild: t,
             role: s,
-            selectedSection: y.ZI.MEMBERS,
+            selectedSection: C.ZI.MEMBERS,
             setSelectedSection: d
           }), (0, r.jsx)(A, {
             query: u,
@@ -340,7 +340,7 @@ function k(e) {
       roleId: s.id,
       locked: j,
       onScroll: x,
-      roleMembers: O,
+      roleMembers: y,
       handleAddClick: R
     })]
   })

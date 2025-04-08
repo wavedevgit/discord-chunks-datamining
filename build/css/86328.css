@@ -1,6 +1,6 @@
 /**
   Module ID: 86328
-  Original File Name: 0f7c4022ca17ba78
+  Original File Name: 5ae9cda3e5f0cba0
 **/
 .ephemeral__5126c {
     position: relative;
@@ -377,7 +377,7 @@
     padding-left: var(--custom-message-margin-left-content-cozy)
 }
 
-.compact_c19a55.wrapper_c19a55.contentOnly_c19a55,.cozy_c19a55.wrapper_c19a55.contentOnly_c19a55 {
+.compact_c19a55.wrapper_c19a55.contentOnly_c19a55,.cozy_c19a55.wrapper_c19a55.contentOnly_c19a55,.preview_c19a55.compact_c19a55.wrapper_c19a55,.preview_c19a55.cozy_c19a55.wrapper_c19a55 {
     padding-left: 16px
 }
 
@@ -793,6 +793,10 @@
     top: .18em;
     margin-left: .1em;
     margin-right: .25em
+}
+
+.preview_c19a55 .avatar_c19a55 {
+    left: 8px
 }
 
 .avatar_c19a55:before {
@@ -1269,6 +1273,10 @@
 
 .cozy_c19a55 .pollBadgeDefault_c19a55,.pollBadgeReplied_c19a55 {
     margin: 0 0 0 .25rem
+}
+
+.previewGlow_c19a55 {
+    right: 118px
 }
 
 .wrapper__74bfa {
@@ -2192,4 +2200,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=0f7c4022ca17ba78.css.map*/
+/*# sourceMappingURL=5ae9cda3e5f0cba0.css.map*/

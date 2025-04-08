@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685), n(472816), n(794429), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -23,20 +23,20 @@ var r = n(200651),
   N = n(273504),
   _ = n(981631),
   v = n(388032),
-  O = n(885655);
+  y = n(885655);
 
-function y(e) {
+function C(e) {
   var t, n;
   let {
-    guildId: y,
-    setPreventNavigation: C = () => {}
+    guildId: C,
+    setPreventNavigation: O = () => {}
   } = e, {
     editingRule: I,
     setEditingRule: E
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : y) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : C) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: D
   } = (0, g.pH)(P), Z = {
     [p.vh.MEMBERS]: v.NW.string(v.t.sx4E5u),
@@ -71,8 +71,8 @@ function y(e) {
       return L(null != (e = null == I ? void 0 : I.id) ? e : null, null != (t = null == I ? void 0 : I.triggerType) ? t : null)
     }, [L, I]);
   i.useEffect(() => {
-    C(w, (0, j.af)(M))
-  }, [C, w, M]);
+    O(w, (0, j.af)(M))
+  }, [O, w, M]);
   let G = (0, p.Z6)(P),
     U = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {
@@ -89,43 +89,43 @@ function y(e) {
     title: v.NW.string(v.t.uRelg4),
     tag: "h1",
     children: [(0, r.jsxs)("div", {
-      className: O.descriptionContainer,
+      className: y.descriptionContainer,
       children: [(0, r.jsxs)(l.hjN, {
         tag: "h3",
-        className: O.description,
-        titleClassName: O.descriptionHeader,
+        className: y.description,
+        titleClassName: y.descriptionHeader,
         children: [(0, r.jsx)(l.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           children: v.NW.string(v.t.EwuSCQ)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
-          className: O.helpUrl,
+          className: y.helpUrl,
           children: v.NW.format(v.t["B+sgGh"], {
             helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: O.descriptionAvatarContainer,
+        className: y.descriptionAvatarContainer,
         children: [(0, r.jsx)(l.qEK, {
           src: (0, m.j)(),
           size: l.EFr.SIZE_80,
           "aria-label": v.NW.string(v.t.hG1StL)
         }), (0, r.jsx)(l.IGR, {
           text: (0, r.jsxs)("div", {
-            className: O.automodBadgeText,
+            className: y.automodBadgeText,
             children: [(0, r.jsx)(l.sV5, {
               size: "xxs",
               color: "currentColor",
-              className: O.checkmarkIcon
+              className: y.checkmarkIcon
             }), (0, r.jsx)(l.Text, {
               variant: "text-xs/bold",
-              className: O.automodText,
+              className: y.automodText,
               children: v.NW.string(v.t.hG1StL)
             })]
           }),
           color: a.Z.unsafe_rawColors.BRAND_500.css,
-          className: O.textBadge
+          className: y.textBadge
         })]
       })]
     }), R ? (0, r.jsx)(h.Z, {}) : Object.entries(G).map(e => {
@@ -133,7 +133,7 @@ function y(e) {
       if (0 === n.length) return (0, r.jsx)(i.Fragment, {}, t);
       let s = null != Z[t] ? (0, r.jsx)(l.hjN, {
         tag: "h3",
-        className: O.categoryHeader,
+        className: y.categoryHeader,
         children: (0, r.jsx)(l.Text, {
           variant: "text-lg/normal",
           color: "header-primary",
@@ -141,18 +141,18 @@ function y(e) {
         })
       }) : null;
       return (0, r.jsxs)("div", {
-        className: O.categoryContainer,
+        className: y.categoryContainer,
         children: [s, U(n)]
       }, t)
     }), null != S && (0, r.jsx)(c.k0, {
       guild: S,
       withDivider: !1,
-      className: O.explicitContentFilterSection
+      className: y.explicitContentFilterSection
     }), (0, r.jsx)(b.Z, {
       guildId: P,
       existingRules: A
     }), w && (0, r.jsx)("div", {
-      className: O.endSpacer
+      className: y.endSpacer
     })]
   })
 }

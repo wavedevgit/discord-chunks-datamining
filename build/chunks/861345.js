@@ -35,14 +35,14 @@ function x(e) {
     disabled: j = !1
   } = e, N = i.useRef(null), _ = i.useRef(null), {
     drag: v,
-    dragPreview: O,
-    drop: y,
-    isDragging: C
+    dragPreview: y,
+    drop: C,
+    isDragging: O
   } = (0, h.Z)(N, d, u, x);
-  return v(_), O(y(N)), (0, r.jsxs)("div", {
+  return v(_), y(C(N)), (0, r.jsxs)("div", {
     ref: N,
     className: a()(b.card, {
-      [b.cardDragging]: C,
+      [b.cardDragging]: O,
       [b.disabled]: j
     }),
     children: [(0, r.jsxs)("div", {

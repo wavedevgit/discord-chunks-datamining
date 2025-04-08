@@ -21,8 +21,8 @@ var i = n(200651),
   m = n(630388),
   _ = n(591759),
   p = n(850908),
-  g = n(524444),
-  v = n(981631),
+  v = n(524444),
+  g = n(981631),
   y = n(388032),
   h = n(324846);
 
@@ -61,7 +61,7 @@ function b(e, t) {
 function O(e) {
   var t;
   let n = e.item.originalItem;
-  return (0, g.Yi)(b(I({}, e), {
+  return (0, v.Yi)(b(I({}, e), {
     alt: n.description,
     src: (0, f.q)({
       proxyURL: n.proxy_url,
@@ -70,7 +70,7 @@ function O(e) {
     original: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = n.flags) ? t : 0, v.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, m.yE)(null != (t = n.flags) ? t : 0, g.J0y.IS_ANIMATED),
     sourceMetadata: {
       message: e.message,
       identifier: {
@@ -90,7 +90,7 @@ function x(e) {
   let n = e.item.originalItem,
     o = a.useCallback(() => {
       var e;
-      return (0, m.yE)(null != (e = n.flags) ? e : 0, v.J0y.IS_CLIP) ? (0, i.jsxs)(s.DY, {
+      return (0, m.yE)(null != (e = n.flags) ? e : 0, g.J0y.IS_CLIP) ? (0, i.jsxs)(s.DY, {
         text: y.NW.string(y.t["/fgfWl"]),
         className: h.clipPill,
         children: [(0, i.jsx)(l.AlX, {
@@ -104,7 +104,7 @@ function x(e) {
       }) : null
     }, [n]),
     c = _.Z.toURLSafe(n.proxy_url);
-  return null == c ? null : (c.searchParams.append("format", "webp"), (0, g.lV)(b(I({}, e), {
+  return null == c ? null : (c.searchParams.append("format", "webp"), (0, v.lV)(b(I({}, e), {
     alt: n.description,
     poster: c.toString(),
     fileSize: n.size,
@@ -112,7 +112,7 @@ function x(e) {
     src: n.url,
     placeholder: n.placeholder,
     placeholderVersion: n.placeholder_version,
-    srcIsAnimated: (0, m.yE)(null != (t = n.flags) ? t : 0, v.J0y.IS_ANIMATED),
+    srcIsAnimated: (0, m.yE)(null != (t = n.flags) ? t : 0, g.J0y.IS_ANIMATED),
     renderOverlayContent: o,
     sourceMetadata: {
       message: e.message,
@@ -128,7 +128,7 @@ function x(e) {
 
 function w(e) {
   let t = e.item.originalItem;
-  return (0, g.hX)(b(I({}, e), {
+  return (0, v.hX)(b(I({}, e), {
     fileSize: t.size,
     fileName: (0, p.Z)(t),
     src: t.url
@@ -149,7 +149,7 @@ function C(e) {
     var n;
     (0, u.Np)(t.id, null != (n = null == e ? void 0 : e.message) ? n : null)
   }, [t]);
-  return (0, g.wj)(b(I({}, e), {
+  return (0, v.wj)(b(I({}, e), {
     fileSize: i.size,
     fileName: (0, p.Z)(i),
     src: i.url,
@@ -163,7 +163,7 @@ function C(e) {
 
 function T(e) {
   let t = e.item.originalItem;
-  return (0, g.xi)(b(I({}, e), {
+  return (0, v.xi)(b(I({}, e), {
     url: t.url,
     fileName: (0, p.Z)(t),
     fileSize: t.size,
@@ -173,7 +173,7 @@ function T(e) {
 
 function E(e) {
   let t = e.item.originalItem;
-  return (0, g.ur)(b(I({}, e), {
+  return (0, v.ur)(b(I({}, e), {
     url: t.url,
     fileName: (0, p.Z)(t),
     fileSize: t.size

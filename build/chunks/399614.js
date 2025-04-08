@@ -64,7 +64,7 @@ let f = [],
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), O = i.useCallback(() => {
+    }, [t]), y = i.useCallback(() => {
       if (null != t) return (0, a.ZDy)(async () => {
         let {
           default: e
@@ -87,7 +87,7 @@ let f = [],
         onDragComplete: _
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: g.addActionItem,
-        onClick: O,
+        onClick: y,
         children: [(0, r.jsx)(a.oFk, {
           size: "xs",
           color: "currentColor"

@@ -29,8 +29,8 @@ var r = n(200651),
   T = n(977392),
   N = n(134433),
   I = n(753194),
-  S = n(458034),
-  w = n(856651),
+  w = n(458034),
+  S = n(856651),
   k = n(981631),
   M = n(228168),
   R = n(388032),
@@ -64,13 +64,13 @@ function A(e) {
     description: s
   } = e;
   if (null != s) switch (a) {
-    case w.iO.LESS_THAN:
+    case S.iO.LESS_THAN:
       t = R.NW.format(R.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) - 1)
       });
       break;
-    case w.iO.GREATER_THAN:
+    case S.iO.GREATER_THAN:
       t = R.NW.format(R.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) + 1)
@@ -234,7 +234,7 @@ function L(e) {
           channelId: s.id,
           guildId: a.id,
           onGetRolesClicked: () => {
-            (0, S.Am)(a.id)
+            (0, w.Am)(a.id)
           },
           onOpenProfile: () => {
             (0, v.openUserProfileModal)({

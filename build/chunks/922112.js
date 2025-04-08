@@ -58,11 +58,11 @@ let x = function(e) {
     onDragReset: _
   } = e, {
     title: v,
-    channelId: O,
-    description: y
-  } = s, C = d.Z.getChannel(O), I = null;
-  null != C && (0, c.k3)(C) || (I = p.NW.string(p.t.kTdL8f));
-  let E = null == y || 0 === y.length,
+    channelId: y,
+    description: C
+  } = s, O = d.Z.getChannel(y), I = null;
+  null != O && (0, c.k3)(O) || (I = p.NW.string(p.t.kTdL8f));
+  let E = null == C || 0 === C.length,
     S = u.ZP.getResourceChannelIconURL({
       channelId: s.channelId,
       icon: s.icon
@@ -101,7 +101,7 @@ let x = function(e) {
         onIconUpload: Z
       }))
     }), [t, s, D, Z]);
-  return null == C ? null : (0, r.jsxs)("div", {
+  return null == O ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(h.resourceChannel, {
@@ -141,7 +141,7 @@ let x = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: y
+          children: C
         })]
       }), (0, r.jsx)(l.ua7, {
         text: p.NW.string(p.t.bt75u7),

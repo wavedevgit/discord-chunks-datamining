@@ -33,9 +33,9 @@ function p(e) {
     canAccessMembersPage: N,
     canViewGuildAnalytics: _,
     isOwner: v,
-    isOwnerWithRequiredMfaLevel: O,
-    canAccessClanSettings: y,
-    isGuildSettingsFoundationEnabled: C,
+    isOwnerWithRequiredMfaLevel: y,
+    canAccessClanSettings: C,
+    isGuildSettingsFoundationEnabled: O,
     isGuildAdmin: I,
     canManageGuildExpressions: E
   } = e, S = () => (0, l.X$)({
@@ -76,7 +76,7 @@ function p(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t);
-  if (C) {
+  if (O) {
     let e = [];
     e.push(m(d.pNK.PROFILE, T)), e.push(m(d.pNK.TAG, T)), e.push(m(d.pNK.ENGAGEMENT, T)), e.push(m(d.pNK.BOOST_PERKS, T)), E && (e.push({
       section: g.DIVIDER
@@ -132,7 +132,7 @@ function p(e) {
   }, {
     section: g.HEADER,
     label: u.NW.string(u.t["1g9A/f"]),
-    predicate: () => !y && (p || _)
+    predicate: () => !C && (p || _)
   }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
     section: g.DIVIDER,
     predicate: S
@@ -149,7 +149,7 @@ function p(e) {
     label: u.NW.string(u.t["+OecxM"])
   }, m(d.pNK.MEMBERS, T), m(d.pNK.INSTANT_INVITES, T), {
     section: g.DIVIDER,
-    predicate: () => O
+    predicate: () => y
   }, m(d.pNK.DELETE, T)].filter(o.lm)
 }
 let h = {

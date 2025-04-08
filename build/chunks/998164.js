@@ -140,8 +140,8 @@ let j = function(e) {
     null != n && (0, c.oo)(t, n, !0)
   }, [t]), {
     handleDragStart: v,
-    handleDragReset: O,
-    handleDragComplete: y
+    handleDragReset: y,
+    handleDragComplete: C
   } = (0, l.Z)(N, _);
   return (0, r.jsxs)("div", {
     className: g.section,
@@ -152,8 +152,8 @@ let j = function(e) {
       onChange: m,
       onDelete: j,
       onDragStart: v,
-      onDragReset: O,
-      onDragComplete: y
+      onDragReset: y,
+      onDragComplete: C
     }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: a

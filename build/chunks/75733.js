@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -145,9 +145,9 @@ function v(e) {
     onBlur: h
   })
 }
-let O = [0, 1, 2, 3, 4];
+let y = [0, 1, 2, 3, 4];
 
-function y(e) {
+function C(e) {
   let {
     profile: t,
     canManageGuild: n
@@ -169,7 +169,7 @@ function y(e) {
       })]
     }), (0, r.jsx)("div", {
       className: b.grid,
-      children: O.map(e => {
+      children: y.map(e => {
         var i;
         return (0, r.jsx)(v, {
           guildId: t.id,

@@ -132,13 +132,13 @@ function f(e) {
     isSelecting: b,
     error: x,
     forceShowErrorTooltip: j
-  } = e, N = i.useRef(null), _ = i.useRef(null), [v, O] = i.useState(!1), {
-    ref: y,
-    width: C = 0
+  } = e, N = i.useRef(null), _ = i.useRef(null), [v, y] = i.useState(!1), {
+    ref: C,
+    width: O = 0
   } = (0, c.Z)(v), {
     ref: I,
     width: E = 0
-  } = (0, c.Z)(v), S = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), R = C > E ? C : E;
+  } = (0, c.Z)(v), S = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), [T, P] = i.useState(j), w = i.useRef(null), R = O > E ? O : E;
   i.useEffect(() => {
     j ? (P(!0), w.current = setTimeout(() => {
       P(!1), w.current = null
@@ -151,19 +151,19 @@ function f(e) {
     }, [n]),
     Z = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-      if (t.trim().length <= 0 && p(), null != N.current && null != y.current && null != _.current) {
+      if (t.trim().length <= 0 && p(), null != N.current && null != C.current && null != _.current) {
         var n;
-        N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, y.current.scrollLeft = 0, (null == (n = _.current) ? void 0 : n.ref) != null && (_.current.ref.scrollLeft = 0)
+        N.current.scrollTo(0, 0), N.current.setSelectionRange(0, 0), N.current.scrollLeft = 0, C.current.scrollLeft = 0, (null == (n = _.current) ? void 0 : n.ref) != null && (_.current.ref.scrollLeft = 0)
       }
-      O(!1), s(e)
-    }, [t, y, s, p]),
+      y(!1), s(e)
+    }, [t, C, s, p]),
     A = i.useCallback(e => {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), Z(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), Z(!0))
     }, [Z, t]),
     k = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
-      g(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
+      g(t), t ? e.preventDefault() : y(!0), e.stopPropagation()
     }, [g]),
     W = i.useCallback(e => {
       p()
@@ -204,7 +204,7 @@ function f(e) {
             width: R > 0 ? R : "calc(".concat(t.length, "ch + 10px)")
           }
         }), (0, r.jsx)(h, {
-          ref: y,
+          ref: C,
           value: t,
           isEditing: v,
           isSelected: f,

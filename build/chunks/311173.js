@@ -72,9 +72,9 @@ function b(e) {
       erroringCharacterLength: s,
       erroringCharacterOffset: a
     }), e
-  }, {}), [x, m]), O = i.useCallback(e => {
+  }, {}), [x, m]), y = i.useCallback(e => {
     j(e, m)
-  }, [j, m]), y = i.useCallback(e => {
+  }, [j, m]), C = i.useCallback(e => {
     N(e)
   }, [N]);
   return (0, r.jsxs)("div", {
@@ -82,8 +82,8 @@ function b(e) {
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: _,
-      onChangeTags: O,
-      onChangeNewTagValue: y,
+      onChangeTags: y,
+      onChangeNewTagValue: C,
       tagErrors: v,
       maxTags: u.VW
     }), (0, r.jsx)(f, {

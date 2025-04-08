@@ -60,12 +60,12 @@ function N(e) {
     prompt: N,
     singleColumn: _,
     promptIndex: v,
-    option: O,
-    hasError: y,
-    onDragStart: C,
+    option: y,
+    hasError: C,
+    onDragStart: O,
     onDragComplete: I,
     onDragReset: E
-  } = e, S = null, T = l().findIndex(N.options, e => e.id === O.id), {
+  } = e, S = null, T = l().findIndex(N.options, e => e.id === y.id), {
     drag: P,
     dragSourcePosition: w,
     drop: R,
@@ -73,17 +73,17 @@ function N(e) {
   } = (0, d.Z)({
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(N.id),
     index: T,
-    optionId: O.id,
-    onDragStart: C,
+    optionId: y.id,
+    onDragStart: O,
     onDragComplete: I,
     onDragReset: E
   }), {
     customEmoji: Z,
     unicodeEmoji: A
-  } = (0, m.Z)(null == (t = O.emoji) ? void 0 : t.id, null == (i = O.emoji) ? void 0 : i.name);
-  return (0, h.Oq)(O.emoji) || null != Z || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
+  } = (0, m.Z)(null == (t = y.emoji) ? void 0 : t.id, null == (i = y.emoji) ? void 0 : i.name);
+  return (0, h.Oq)(y.emoji) || null != Z || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
-      [b.hasError]: y || null != S,
+      [b.hasError]: C || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,
       [b.dropIndicatorAfter]: null != w && T > w,
       [b.singleColumn]: _
@@ -95,16 +95,16 @@ function N(e) {
       return t => (0, r.jsx)(e, j(x({}, t), {
         guild: u,
         prompt: N,
-        option: O,
+        option: y,
         index: v,
         onSave: e => {
           (0, p.Kk)(u, N.id, {
-            options: N.options.map(t => t.id === O.id ? e : t)
+            options: N.options.map(t => t.id === y.id ? e : t)
           })
         },
         onDelete: () => {
           (0, p.Kk)(u, N.id, {
-            options: N.options.filter(e => e.id !== O.id)
+            options: N.options.filter(e => e.id !== y.id)
           })
         }
       }))
@@ -124,8 +124,8 @@ function N(e) {
       children: [(0, r.jsx)("div", {
         className: b.emoji,
         children: (0, r.jsx)(g.Z, {
-          emojiId: null == (a = O.emoji) ? void 0 : a.id,
-          emojiName: null == (c = O.emoji) ? void 0 : c.name,
+          emojiId: null == (a = y.emoji) ? void 0 : a.id,
+          emojiName: null == (c = y.emoji) ? void 0 : c.name,
           defaultComponent: null
         })
       }), (0, r.jsxs)("div", {
@@ -134,12 +134,12 @@ function N(e) {
           variant: "text-md/medium",
           color: "header-primary",
           lineClamp: 1,
-          children: O.title
-        }), "" !== O.description && (0, r.jsx)(o.Text, {
+          children: y.title
+        }), "" !== y.description && (0, r.jsx)(o.Text, {
           className: b.description,
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: O.description
+          children: y.description
         })]
       })]
     }), null != S && (0, r.jsx)(o.Text, {

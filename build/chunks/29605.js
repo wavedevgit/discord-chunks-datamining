@@ -25,9 +25,9 @@ var r = n(200651),
   N = n(200876),
   _ = n(730089),
   v = n(372444),
-  O = n(889564),
-  y = n(372129),
-  C = n(357156),
+  y = n(889564),
+  C = n(372129),
+  O = n(357156),
   I = n(210887),
   E = n(626135),
   S = n(768581),
@@ -229,7 +229,7 @@ let U = d().throttle(h.OQ, 1e3),
       editingDisabled: a = !1
     } = e, l = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: o
-    } = (0, C.Gw)(n);
+    } = (0, O.Gw)(n);
     return 0 === t.length ? (0, r.jsx)(g.R94, {
       type: g.geA.DESCRIPTION,
       className: L.content,
@@ -294,7 +294,7 @@ let U = d().throttle(h.OQ, 1e3),
     let a = (0, m.e7)([I.Z], () => I.Z.theme),
       {
         canCreateExpressions: l
-      } = (0, C.XJ)(e),
+      } = (0, O.XJ)(e),
       {
         revision: c,
         emojis: p
@@ -314,7 +314,7 @@ let U = d().throttle(h.OQ, 1e3),
       null != h && h < c && U(e.id)
     }, [c, h, e.id]);
     let [w, M] = i.useMemo(() => {
-      let t = null == p ? void 0 : p.filter(t => !(0, O.Kt)(t, e.id)),
+      let t = null == p ? void 0 : p.filter(t => !(0, y.Kt)(t, e.id)),
         [n, r] = d().partition(t, e => !e.animated);
       return [n, r]
     }, [p, e.id]), B = (0, P.y4)(e), z = Math.max(B - w.length, B - M.length), H = (n, r, i) => (0, _.G)({
@@ -328,7 +328,7 @@ let U = d().throttle(h.OQ, 1e3),
       s((0, u.Z)()), E.default.track(A.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
-      }), await (0, y._)(n, H), b(!0)
+      }), await (0, C._)(n, H), b(!0)
     }, K = () => {
       null !== T.current && ((0, g.Mr3)(T.current), T.current = null)
     }, q = async e => {
@@ -411,7 +411,7 @@ let U = d().throttle(h.OQ, 1e3),
             focusProps: {
               within: !0
             },
-            children: [W.NW.string(W.t.DU0dy8), z > 0 ? (0, r.jsx)(y.Z, {
+            children: [W.NW.string(W.t.DU0dy8), z > 0 ? (0, r.jsx)(C.Z, {
               disabled: v || 0 === z || !l,
               tabIndex: 0,
               onChange: H,

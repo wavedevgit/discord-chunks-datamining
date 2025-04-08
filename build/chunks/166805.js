@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  P: () => O
+  P: () => y
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -30,9 +30,9 @@ function v(e) {
     guildProfile: c,
     fetchGuildProfile: g,
     fetchStatus: v
-  } = (0, m.u)(t), O = v !== u.a.FETCHED, {
-    fetchedEmbed: y,
-    embedEnabled: C,
+  } = (0, m.u)(t), y = v !== u.a.FETCHED, {
+    fetchedEmbed: C,
+    embedEnabled: O,
     embedChannelId: I
   } = (0, l.cj)([f.Z], () => {
     let {
@@ -45,22 +45,22 @@ function v(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !O && !w && !C, D = (0, h.Dj)({
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !y && !w && !O, D = (0, h.Dj)({
     guildId: t,
     location: "widget settings"
   });
   i.useEffect(() => {
-    y || (0, p.R)(t)
-  }, [y, t]), i.useEffect(() => {
+    C || (0, p.R)(t)
+  }, [C, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let Z = i.useCallback(async e => {
     P(!0), await (0, b.c)(t, e, I), P(!1)
   }, [I, t]);
-  return y ? (0, r.jsxs)("div", {
+  return C ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
       disabled: T,
-      value: C,
+      value: O,
       hideBorder: !0,
       onChange: Z,
       children: N.NW.string(N.t.NR6hub)
@@ -69,14 +69,14 @@ function v(e) {
       color: "text-secondary",
       className: _.subtext,
       children: D ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
-    }) : null, C ? (0, r.jsxs)(r.Fragment, {
+    }) : null, O ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: _.divider
       }), (0, r.jsx)(o.vwX, {
         children: N.NW.string(N.t.LUo0Q0)
       }), (0, r.jsx)(j.m, {
         guildId: t,
-        widgetEnabled: C,
+        widgetEnabled: O,
         widgetChannelId: I,
         enableLocalUpdate: !0
       }), (0, r.jsx)(a.xv, {
@@ -128,7 +128,7 @@ function v(e) {
   }) : (0, r.jsx)(o.$jN, {})
 }
 
-function O(e) {
+function y(e) {
   let {
     guildId: t
   } = e, n = (0, l.e7)([g.Z], () => g.Z.enabled);

@@ -24,7 +24,7 @@ function h(e) {
     options: b,
     className: x,
     onChange: j
-  } = e, [N, _] = i.useState(f), [v, O] = i.useState(!1), [y, C] = i.useState(!1), I = i.useRef(null);
+  } = e, [N, _] = i.useState(f), [v, y] = i.useState(!1), [C, O] = i.useState(!1), I = i.useRef(null);
   i.useEffect(() => {
     _(f)
   }, [f]), i.useEffect(() => () => {
@@ -32,8 +32,8 @@ function h(e) {
   }, []);
   let E = b.find(e => e.value === N),
     S = e => {
-      e.disabled || e.value === N || (C(!0), null == j || j(e), _(e.value), I.current = setTimeout(() => {
-        C(!1), O(!1)
+      e.disabled || e.value === N || (O(!0), null == j || j(e), _(e.value), I.current = setTimeout(() => {
+        O(!1), y(!1)
       }, 1e3))
     };
   return (0, r.jsx)(u.Z, {
@@ -46,7 +46,7 @@ function h(e) {
       color: l.zxk.Colors.LINK,
       children: g.NW.string(g.t.GEgsAw)
     }),
-    loading: y,
+    loading: C,
     className: x,
     children: b.map((e, t) => (0, r.jsx)(m.Z, {
       title: e.title,

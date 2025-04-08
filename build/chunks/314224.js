@@ -53,13 +53,13 @@ function b(e) {
   let {
     rule: _,
     onChangeRule: v
-  } = e, O = i.useCallback(e => {
+  } = e, y = i.useCallback(e => {
     v(f(h({}, _), {
       triggerMetadata: f(h({}, _.triggerMetadata), {
         keywordFilter: e
       })
     }))
-  }, [v, _]), y = i.useCallback(e => {
+  }, [v, _]), C = i.useCallback(e => {
     v(f(h({}, _), {
       triggerMetadata: f(h({}, _.triggerMetadata), {
         allowList: e
@@ -72,7 +72,7 @@ function b(e) {
       step: 1,
       header: g.NW.string(g.t["ue+tnZ"]),
       children: [(0, r.jsx)(o.Z, {
-        onChangeText: O,
+        onChangeText: y,
         maxWordCount: m.RH,
         initialValue: null == (t = _.triggerMetadata) ? void 0 : t.keywordFilter
       }), (0, r.jsx)(l.Z, {
@@ -80,7 +80,7 @@ function b(e) {
         onChangeRule: v,
         collapsed: (null == _ || null == (n = _.triggerMetadata) ? void 0 : n.regexPatterns) == null || (null == _ || null == (b = _.triggerMetadata) ? void 0 : b.regexPatterns.length) === 0
       }), (0, r.jsx)(s.Z, {
-        onChange: y,
+        onChange: C,
         initialValue: null == (x = _.triggerMetadata) ? void 0 : x.allowList,
         maxWordCount: m.n4,
         collapsed: (null == (j = _.triggerMetadata) ? void 0 : j.allowList) == null || (null == (N = _.triggerMetadata) ? void 0 : N.allowList.length) === 0

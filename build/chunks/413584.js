@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(565138),
   _ = n(372769),
   v = n(690221),
-  O = n(524329),
-  y = n(575258),
-  C = n(514698),
+  y = n(524329),
+  C = n(575258),
+  O = n(514698),
   I = n(592125),
   E = n(4912),
   S = n(626135),
@@ -79,8 +79,8 @@ let L = "WELCOME_CHANNEL",
         isDropHovered: N,
         index: _
       } = e,
-      [v, O] = i.useState(!1),
-      y = i.useRef(null),
+      [v, y] = i.useState(!1),
+      C = i.useRef(null),
       S = (0, u.e7)([I.Z], () => I.Z.getChannel(o.channel_id)),
       P = (0, u.e7)([j.ZP], () => null != o.emoji_id ? j.ZP.getUsableCustomEmojiById(o.emoji_id) : null),
       w = null != S && T.Uu(R.Plq.VIEW_CHANNEL, S),
@@ -105,7 +105,7 @@ let L = "WELCOME_CHANNEL",
           f(e.channel, _, !0)
         }
       });
-    return i.useLayoutEffect(() => (U(B(y)), () => {
+    return i.useLayoutEffect(() => (U(B(C)), () => {
       U(null), B(null)
     }), [U, B]), s = w ? null != P || null != o.emoji_name ? (0, r.jsx)(p.Z, {
       emojiId: null == P ? void 0 : P.id,
@@ -123,7 +123,7 @@ let L = "WELCOME_CHANNEL",
       className: a()(A.welcomeChannel, {
         [A.dragging]: N
       }),
-      ref: y,
+      ref: C,
       "data-dnd-name": o.description,
       onContextMenu: e => {
         (0, g.jW)(e, async () => {
@@ -134,7 +134,7 @@ let L = "WELCOME_CHANNEL",
             guildId: l,
             welcomeChannel: o,
             onChannelReorder: f,
-            setShowConfirmModal: O,
+            setShowConfirmModal: y,
             onEdit: h,
             index: _
           }))
@@ -175,9 +175,9 @@ let L = "WELCOME_CHANNEL",
           onCloseRequest: () => D.Vq
         }),
         children: Z.NW.string(Z.t.bt75u7)
-      }), v && (0, r.jsx)(C.Z, {
+      }), v && (0, r.jsx)(O.Z, {
         onConfirm: () => h(),
-        onCancel: () => O(!1),
+        onCancel: () => y(!1),
         channelId: o.channel_id
       })]
     })
@@ -189,40 +189,40 @@ let L = "WELCOME_CHANNEL",
     } = e, {
       welcomeSettings: a,
       originalWelcomeSettings: l
-    } = (0, u.e7)([y.Z], () => y.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, g] = i.useState(null), [p, b] = i.useState(!1), [x, j] = i.useState(!1), {
-      description: C,
+    } = (0, u.e7)([C.Z], () => C.Z.getSettingsProps()), c = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), [d, g] = i.useState(null), [p, b] = i.useState(!1), [x, j] = i.useState(!1), {
+      description: O,
       channels: I,
       enabled: T
     } = a, L = () => {
-      null != t && C !== l.description && ((0, O.Es)(t.id, {
-        description: null == C ? void 0 : C.trim()
+      null != t && O !== l.description && ((0, y.Es)(t.id, {
+        description: null == O ? void 0 : O.trim()
       }), b(!0))
     }, G = e => {
-      null != t && (o()(e, l.channels) || ((0, O.Es)(t.id, {
+      null != t && (o()(e, l.channels) || ((0, y.Es)(t.id, {
         channels: e
       }), b(!0)))
     }, U = e => {
-      null != t && e !== l.enabled && ((0, O.Es)(t.id, {
+      null != t && e !== l.enabled && ((0, y.Es)(t.id, {
         enabled: e
       }), j(!c), b(!0))
     }, B = e => {
       if (null == e) return;
       let t = [...null != I ? I : [], e];
-      (0, O.VP)({
+      (0, y.VP)({
         channels: t
       }), G(t)
     }, F = e => t => {
       let n = [...null != I ? I : []];
-      null == t ? n.splice(e, 1) : n[e] = t, (0, O.VP)({
+      null == t ? n.splice(e, 1) : n[e] = t, (0, y.VP)({
         channels: n
-      }), G(n), 0 === n.length && T && ((0, O.VP)({
+      }), G(n), 0 === n.length && T && ((0, y.VP)({
         enabled: !1
       }), U(!1))
     }, z = (e, t, n) => {
       if (null == I) return;
       let r = I.indexOf(e),
         i = [...I];
-      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, O.VP)({
+      null != t && t !== r && (i.splice(r, 1), i.splice(t, 0, e), (0, y.VP)({
         channels: i
       })), n ? (G(i), g(null)) : g(t)
     }, H = i.useRef(!1);
@@ -249,12 +249,12 @@ let L = "WELCOME_CHANNEL",
           guild_id: null == t ? void 0 : t.id,
           options: e,
           options_channel_ids: n,
-          guild_description: C,
+          guild_description: O,
           has_custom_emojis: r,
           is_enabled: T
         })
       }
-    }, [p, I, C, T, t, H]), i.useEffect(() => () => (0, O.sm)(), []);
+    }, [p, I, O, T, t, H]), i.useEffect(() => () => (0, y.sm)(), []);
     let V = i.useCallback(() => {
       null != t && P.Z.open(t.id, R.pNK.ONBOARDING)
     }, [t]);
@@ -327,7 +327,7 @@ let L = "WELCOME_CHANNEL",
               className: A.descriptionInput,
               placeholder: Z.NW.string(Z.t.qzZHaW),
               onChange: e => {
-                (0, O.VP)({
+                (0, y.VP)({
                   description: e
                 })
               },
@@ -337,7 +337,7 @@ let L = "WELCOME_CHANNEL",
               onKeyDown: e => {
                 e.keyCode === R.yXg.ENTER && e.preventDefault()
               },
-              value: C,
+              value: O,
               maxLength: 140,
               disabled: !0
             })

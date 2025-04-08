@@ -32,20 +32,20 @@ function h(e) {
     } = (0, c.Z)(null == e ? void 0 : e.id),
     {
       loading: v,
-      error: O,
-      refresh: y,
-      eligibility: C
+      error: y,
+      refresh: C,
+      eligibility: O
     } = (0, d.Z)(null == e ? void 0 : e.id),
     {
       isApplicationRejected: I,
       requestCooldownDuration: E
-    } = (0, u.Z)(C),
+    } = (0, u.Z)(O),
     S = (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === !0 || (null == e ? void 0 : e.hasFeature(g.oNc.CREATOR_MONETIZABLE_DISABLED)) === !0,
     {
       isMonetizationReapplicationDisabled: T
     } = (0, s.eC)(null == e ? void 0 : e.id),
-    P = _ || (null == C ? void 0 : C.isApplicationPending) === !0,
-    w = (null == C ? void 0 : C.canApply) === !0,
+    P = _ || (null == O ? void 0 : O.isApplicationPending) === !0,
+    w = (null == O ? void 0 : O.canApply) === !0,
     R = p.NW.format(p.t.aJUdOj, {
       faqUrl: l.Z.getArticleURL(g.BhN.CREATOR_FAQ)
     });
@@ -62,17 +62,17 @@ function h(e) {
     A = (0, m.f)(),
     k = I && w && b ? p.NW.format(p.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
-    D && y()
-  }, [y, D]), {
+    D && C()
+  }, [C, D]), {
     resubmittingEnableRequest: j,
     resubmissionError: x,
     isGuildOwner: b,
     createEnableRequest: N,
     resubmittedRequest: _,
     eligibilityLoading: v,
-    eligibilityError: O,
-    refreshEligibility: y,
-    eligibility: C,
+    eligibilityError: y,
+    refreshEligibility: C,
+    eligibility: O,
     eligibleForMonetization: w,
     isApplicationPending: P,
     hasPreviousApplicationRejection: I,

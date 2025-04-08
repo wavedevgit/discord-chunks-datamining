@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => I,
-  _: () => C
+  _: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -24,12 +24,12 @@ var r = n(200651),
   N = n(163249),
   _ = n(150689),
   v = n(203377),
-  O = n(981631);
+  y = n(981631);
 
-function y(e) {
+function C(e) {
   p.Z.selectRole(e)
 }
-let C = () => {
+let O = () => {
   let {
     guild: e
   } = (0, l.cj)([b.Z], () => b.Z.getProps()), t = (0, l.e7)([f.Z], () => f.Z.formState), n = (0, l.e7)([f.Z], () => f.Z.errorMessage);
@@ -42,7 +42,7 @@ let C = () => {
       } = e, n = f.Z.editedRoleIds.map(e => f.Z.getRole(e)).filter(g.lm), r = f.Z.getSortDeltas(), i = null, s = null;
       f.Z.hasRoleConfigurationChanges && (s = f.Z.editedRoleIdsForConfigurations, i = f.Z.getEditedRoleConnectionConfigurationsMap()), (0, h.Gf)(t, n, r, s, i)
     },
-    submitting: t === O.QZA.SUBMITTING,
+    submitting: t === y.QZA.SUBMITTING,
     onReset: h.S1
   })
 };
@@ -62,23 +62,23 @@ function I(e) {
   a()(null != c, "Guild must have an everyone role");
   let g = i.useMemo(() => s.filter(e => !(0, u.pM)(n.id, e.id)), [s, n]),
     p = (0, l.e7)([b.Z], () => b.Z.getSelectedRoleId()),
-    [h, O] = i.useState(g.length > 0);
+    [h, y] = i.useState(g.length > 0);
   i.useEffect(() => {
-    O(h || g.length > 0)
+    y(h || g.length > 0)
   }, [h, g.length]), (0, d.ZP)(() => {
     let e = m.Z.getMemberCount(n.id);
     null != e && e <= x.cm && o.Z.requestMembers(n.id, "", 0, !1)
   });
-  let [C, I] = i.useState(v.ZI.DISPLAY);
+  let [O, I] = i.useState(v.ZI.DISPLAY);
   return (i.useEffect(() => {
     null == p && I(v.ZI.DISPLAY)
   }, [p]), null != p) ? (0, r.jsx)(j.Z, {
     editRoleId: p,
-    setEditRoleId: y,
-    selectedSection: C,
+    setEditRoleId: C,
+    selectedSection: O,
     setSelectedSection: I
   }) : h ? (0, r.jsx)(_.Z, {
-    setEditRoleId: y,
+    setEditRoleId: C,
     guild: n,
     everyoneRole: c,
     otherRoles: g,
@@ -87,6 +87,6 @@ function I(e) {
   }) : (0, r.jsx)(N.Z, {
     guild: n,
     everyoneRole: c,
-    setEditRoleId: y
+    setEditRoleId: C
   })
 }

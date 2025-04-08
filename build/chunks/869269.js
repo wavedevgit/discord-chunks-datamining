@@ -28,9 +28,9 @@ function _(e) {
     allSubscriptionListings: s,
     priceTiers: _,
     loading: v,
-    error: O,
-    handlePublishTier: y,
-    onDeleteEditState: C
+    error: y,
+    handlePublishTier: C,
+    onDeleteEditState: O
   } = e, {
     editStateId: I
   } = (0, u.N)(), E = (0, l.e7)([c.Z], () => c.Z.getSubscriptionListing(I)), S = (0, d.mY)(), T = i.useMemo(() => {
@@ -42,8 +42,8 @@ function _(e) {
   }, [s, I, _]), P = null == E, w = null != (t = null == E ? void 0 : E.published) && t, R = null != (n = null == E ? void 0 : E.archived) && n;
   return (0, r.jsxs)("div", {
     className: N.body,
-    children: [null != O && (0, r.jsx)(m.Z, {
-      children: O.getAnyErrorMessage()
+    children: [null != y && (0, r.jsx)(m.Z, {
+      children: y.getAnyErrorMessage()
     }), !w && !S && !R && (0, r.jsxs)("div", {
       className: N.publishListing,
       children: [(0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ function _(e) {
             color: o.zxk.Colors.CUSTOM,
             wrapperClassName: j.autoWidth,
             className: a()(N.publishButton, j.autoWidth),
-            onClick: y,
+            onClick: C,
             submitting: v,
             children: x.NW.string(x.t.Lj6R5u)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -103,7 +103,7 @@ function _(e) {
     }), (0, r.jsx)(h.Z, {
       allSubscriptionListings: s
     }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(g.Z, {
-      onDeleteEditState: C
+      onDeleteEditState: O
     })]
   })
 }

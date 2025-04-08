@@ -79,9 +79,9 @@ function f(e) {
     maxTags: b
   } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), _ = (0, m.V)(n), {
     handlePasteEvent: v,
-    handleInputChange: O,
-    handleKeyDown: y,
-    handleContainerKeyUp: C,
+    handleInputChange: y,
+    handleKeyDown: C,
+    handleContainerKeyUp: O,
     handleRemoveTag: I,
     handleTagChangeEvent: E,
     handleSelectTag: S,
@@ -131,7 +131,7 @@ function f(e) {
     className: a()(g.mainContainer, f),
     ref: j,
     tabIndex: 0,
-    onKeyUp: C,
+    onKeyUp: O,
     children: [(0, r.jsxs)(h, {
       ref: N,
       onClick: M,
@@ -150,8 +150,8 @@ function f(e) {
           [g.isEditingOtherNodes]: W
         }),
         ref: x,
-        onChange: O,
-        onKeyDownCapture: y,
+        onChange: y,
+        onKeyDownCapture: C,
         onPaste: v,
         onBlur: w,
         placeholder: 0 === D.length ? p : void 0,

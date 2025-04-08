@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(37069),
   _ = n(518513),
   v = n(168179),
-  O = n(348986),
-  y = n(930065),
-  C = n(345669);
+  y = n(348986),
+  C = n(930065),
+  O = n(345669);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -94,11 +94,11 @@ let S = () => [{
     body: f.NW.string(f.t.hyNkHx)
   }],
   T = [{
-    iconSrc: O,
+    iconSrc: y,
     name: "Pokemon GO Paris",
     position: [-230, -100]
   }, {
-    iconSrc: y,
+    iconSrc: C,
     name: "Python",
     position: [-180, -100],
     faded: !0,
@@ -114,7 +114,7 @@ let S = () => [{
     position: [-320, -30],
     rightAlign: !0
   }, {
-    iconSrc: C,
+    iconSrc: O,
     name: "Sneaker Fans",
     position: [-250, 40]
   }, {
@@ -187,13 +187,13 @@ let S = () => [{
   R = e => {
     let {
       guild: t
-    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, _] = i.useState(), v = (0, l.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), O = null == N ? void 0 : N.offsetWidth, y = null == N ? void 0 : N.offsetHeight;
+    } = e, [n, s] = i.useState(0), [a, o] = i.useState(0), [N, _] = i.useState(), v = (0, l.e7)([m.Z], () => m.Z.can(p.Plq.ADMINISTRATOR, t)), y = null == N ? void 0 : N.offsetWidth, C = null == N ? void 0 : N.offsetHeight;
     i.useEffect(() => {
-      null != O && s(O / 2), null != y && o(y / 2)
-    }, [O, y, s, o]), i.useEffect(() => {
+      null != y && s(y / 2), null != C && o(C / 2)
+    }, [y, C, s, o]), i.useEffect(() => {
       (0, d.Kw)(h.v.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL)
     }, []);
-    let C = () => {
+    let O = () => {
       u.Z.open()
     };
     return (0, r.jsxs)("div", {
@@ -227,7 +227,7 @@ let S = () => [{
         text: v ? null : f.NW.string(f.t["pjG+T0"]),
         "aria-label": v ? void 0 : f.NW.string(f.t["pjG+T0"]),
         children: e => (0, r.jsx)(c.zxk, E(I({
-          onClick: C,
+          onClick: O,
           className: b.button,
           disabled: !v
         }, e), {

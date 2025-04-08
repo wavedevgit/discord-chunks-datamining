@@ -15,13 +15,13 @@ var a = n(200651),
   p = n(592125),
   g = n(703558),
   h = n(430824),
-  f = n(375954),
-  _ = n(403182),
+  _ = n(375954),
+  f = n(403182),
   b = n(709054),
   y = n(127654),
   x = n(979956),
-  C = n(228392),
-  v = n(404616),
+  v = n(228392),
+  C = n(404616),
   O = n(470623),
   j = n(981631),
   T = n(231338),
@@ -42,19 +42,19 @@ function I(e) {
   }, [z]);
   let R = null != z && null != L ? {
       src: L,
-      width: v.TJ,
-      height: v.Lp,
+      width: C.TJ,
+      height: C.Lp,
       spoiler: I[0].spoiler,
       alt: I[0].description
     } : null,
     [U, B] = i.useState(!1),
     W = i.useCallback(() => {
-      (0, C.xI)({
+      (0, v.xI)({
         added: !1
       }), S(), M()
     }, [S, M]),
     F = i.useCallback(() => {
-      null != D && null != N && ((0, C.xI)({
+      null != D && null != N && ((0, v.xI)({
         added: !0
       }), function(e) {
         let {
@@ -67,14 +67,14 @@ function I(e) {
         o.on("start", () => {
           a(!0)
         }), o.on("progress", e => {
-          let l = (0, _.dg)(i.id);
+          let l = (0, f.dg)(i.id);
           e.currentSize > l && (o.cancel(), a(!1), r(), (0, y.G)(t, (0, x.KZ)(n)))
         }), o.on("error", (e, n, i) => {
           a(!1), n === j.evJ.EXPLICIT_CONTENT && (r(), l.Z.sendExplicitMediaClydeError(t.id, null == i ? void 0 : i.attachments, u.UU.EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED), s.Z.clearAll(t.id, g.d.ChannelMessage))
         }), o.on("complete", () => {
           a(!1), r(), s.Z.clearAll(t.id, g.d.ChannelMessage)
         });
-        let d = f.Z.getMessages(t.id).get(b.default.castChannelIdAsMessageId(t.id)),
+        let d = _.Z.getMessages(t.id).get(b.default.castChannelIdAsMessageId(t.id)),
           m = null != d ? d.attachments : [];
         o.uploadFiles(n, {
           attachments: [...m]
@@ -109,7 +109,7 @@ function I(e) {
         className: E.forumPost,
         children: (0, a.jsx)(O.oL, {
           channel: k,
-          children: (0, a.jsx)(v.ZP, {
+          children: (0, a.jsx)(C.ZP, {
             threadId: n,
             goToThread: T.dG,
             overrideMedia: R

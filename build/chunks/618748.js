@@ -24,9 +24,9 @@ var i = n(442837),
   N = n(303737),
   _ = n(568074),
   v = n(411667),
-  O = n(903773),
-  y = n(822531),
-  C = n(909656),
+  y = n(903773),
+  C = n(822531),
+  O = n(909656),
   I = n(210591),
   E = n(927731),
   S = n(798680),
@@ -91,7 +91,7 @@ function k(e) {
   return (null == i ? void 0 : i.payout_account_status) != null && a.includes(null == i ? void 0 : i.payout_account_status) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.LZC, {
       size: 16
-    }), (0, r.jsx)(O.Z, {
+    }), (0, r.jsx)(y.Z, {
       children: D.NW.format(D.t.Yo0ZBw, {
         url: P.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(i.id)
       })
@@ -135,9 +135,9 @@ function L(e) {
       setCurrentTab: x
     } = (0, S.dw)(),
     j = (0, b.f)(),
-    O = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
+    y = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
     I = (0, _.Z)(n.id),
-    R = n.isOwner(O),
+    R = n.isOwner(y),
     W = () => {
       let e = p.Z.getRole(n.id, n.getEveryoneRoleId());
       if (null == e) return;
@@ -155,7 +155,7 @@ function L(e) {
   if (!j) return (0, r.jsx)(s.$jN, {});
   switch (g) {
     case S.ue.BASIC_INFO:
-      t = (0, r.jsx)(C.Z, {
+      t = (0, r.jsx)(O.Z, {
         guild: n
       });
       break;
@@ -165,7 +165,7 @@ function L(e) {
       });
       break;
     case S.ue.PAYMENT:
-      t = (0, r.jsx)(y.Z, {
+      t = (0, r.jsx)(C.Z, {
         guild: n
       });
       break;

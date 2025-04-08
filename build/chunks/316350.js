@@ -141,7 +141,7 @@ function _(e) {
             [b.tierTitleActive]: r
           }),
           children: l.title
-        }), c ? (0, s.jsx)(O, {
+        }), c ? (0, s.jsx)(y, {
           transform: null == e ? void 0 : e.unlockedTranslateY.to(e => "translate3d(0, ".concat(e, "px, 0)")),
           headerButton: u,
           subscriptionsRequired: m,
@@ -167,7 +167,7 @@ function v(e) {
     withCardBody: u = !0,
     guildId: p,
     showHeaderLockStatus: x = !0
-  } = e, j = h.oCV[i.tier], N = a && n >= j, v = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1, O = (e, t) => {
+  } = e, j = h.oCV[i.tier], N = a && n >= j, v = i.tier !== h.Eu4.NONE && i.tier !== h.Eu4.TIER_1, y = (e, t) => {
     var n;
     let {
       Icon: r,
@@ -223,26 +223,26 @@ function v(e) {
           children: f.NW.string(f.t.oKzyRU)
         }) : null, null != i.perks && (0, s.jsx)("div", {
           className: b.perks,
-          children: i.perks.map(e => O(e, N))
+          children: i.perks.map(e => y(e, N))
         })]
       })
     })]
   }, i.tier)
 }
-let O = e => {
+let y = e => {
     let {
       transform: t,
       hasAnimatedUnlocked: n,
       headerButton: r,
       subscriptionsRequired: i
     } = e;
-    return null !== r ? r : n ? (0, s.jsx)(y, {
+    return null !== r ? r : n ? (0, s.jsx)(C, {
       transform: t
-    }) : (0, s.jsx)(C, {
+    }) : (0, s.jsx)(O, {
       subscriptionsRequired: i
     })
   },
-  y = e => {
+  C = e => {
     let {
       transform: t
     } = e;
@@ -254,7 +254,7 @@ let O = e => {
       children: f.NW.string(f.t.dNGM0t)
     })
   },
-  C = e => {
+  O = e => {
     let {
       subscriptionsRequired: t
     } = e;

@@ -23,9 +23,9 @@ var r = n(200651),
   N = n(73346),
   _ = n(624138),
   v = n(584825),
-  O = n(723047),
-  y = n(927954),
-  C = n(164e3),
+  y = n(723047),
+  C = n(927954),
+  O = n(164e3),
   I = n(587431),
   E = n(293810),
   S = n(333866),
@@ -133,7 +133,7 @@ function k(e) {
     isGuildProducts: s = !1
   } = e, {
     format: a
-  } = (0, C.Z)(n.id), l = (0, v.YB)(n.id), c = i.useCallback(() => {
+  } = (0, O.Z)(n.id), l = (0, v.YB)(n.id), c = i.useCallback(() => {
     var e;
     return (null == l || null == (e = l.cover_image_asset) ? void 0 : e.application_id) == null ? null : (0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, D)
   }, [l]), [m, h] = i.useState(a), [f, _] = i.useState(null != (t = null == l ? void 0 : l.description) ? t : ""), [Z, k] = i.useState(c), [W, L] = i.useState(null == l ? void 0 : l.store_page_guild_products_default_sort), [M, G] = i.useState(null == l ? void 0 : l.server_shop_tab_order), {
@@ -144,7 +144,7 @@ function k(e) {
     imageCTA: z,
     imageAriaLabel: H,
     setFilename: V
-  } = (0, y.Z)(null == l ? void 0 : l.cover_image_asset), Y = (0, b.Dt)(), K = (0, b.Dt)(), q = (0, b.Dt)();
+  } = (0, C.Z)(null == l ? void 0 : l.cover_image_asset), Y = (0, b.Dt)(), K = (0, b.Dt)(), q = (0, b.Dt)();
 
   function X(e, t) {
     o()(null != e, "Null value not allowed"), null != t && V(t.name), k(e)
@@ -158,7 +158,7 @@ function k(e) {
     var e;
     (null == l || null == (e = l.cover_image_asset) ? void 0 : e.application_id) != null && k((0, N._W)(l.cover_image_asset.application_id, l.cover_image_asset, D))
   }, [null == l ? void 0 : l.cover_image_asset]);
-  let $ = (0, O.mY)(),
+  let $ = (0, y.mY)(),
     ee = i.useMemo(() => S.kL.map(e => ({
       label: (0, S.eJ)(e),
       value: e

@@ -29,8 +29,8 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
       tag: N,
       error: _,
       furthestStep: v,
-      inSettings: O
-    } = e, y = i.useMemo(() => {
+      inSettings: y
+    } = e, C = i.useMemo(() => {
       let e = (0, p.yf)();
       return {
         primary: null != s ? s : e.primary,
@@ -39,15 +39,15 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
     }, [s, l]);
     i.useEffect(() => {
       (null == s || null == l) && t({
-        badgePrimaryColor: y.primary,
-        badgeSecondaryColor: y.secondary
+        badgePrimaryColor: C.primary,
+        badgeSecondaryColor: C.secondary
       })
-    }, [y.primary, y.secondary, t, s, l]);
-    let C = i.useMemo(() => {
+    }, [C.primary, C.secondary, t, s, l]);
+    let O = i.useMemo(() => {
         for (let e = 0; e < p.sg.length; e++)
-          if (p.sg[e].primary === y.primary && p.sg[e].secondary === y.secondary) return 1 + e;
+          if (p.sg[e].primary === C.primary && p.sg[e].secondary === C.secondary) return 1 + e;
         return 0
-      }, [y.primary, y.secondary]),
+      }, [C.primary, C.secondary]),
       [I, E] = i.useState(!1),
       S = i.useCallback(() => {
         let e = j[Math.floor(Math.random() * j.length)];
@@ -58,11 +58,11 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
         })
       }, [t]);
     return i.useEffect(() => {
-      v !== h.Wy.CUSTOMIZE_TAG_BADGE || O || t({
-        brandPrimaryColor: y.primary,
-        brandSecondaryColor: y.secondary
+      v !== h.Wy.CUSTOMIZE_TAG_BADGE || y || t({
+        brandPrimaryColor: C.primary,
+        brandSecondaryColor: C.secondary
       })
-    }, [t, y.primary, y.secondary, v, s, l, O]), (0, r.jsxs)("div", {
+    }, [t, C.primary, C.secondary, v, s, l, y]), (0, r.jsxs)("div", {
       className: x.slideContent,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xxl/medium",
@@ -111,7 +111,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
               className: b.pickerGrid,
               children: [(0, r.jsx)(m.Z, {
                 showSecondaryColor: p.ME[n] >= 2,
-                palette: y,
+                palette: C,
                 onPrimaryColorChange: e => {
                   t({
                     badgePrimaryColor: (0, c.Rf)(e)
@@ -148,7 +148,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
                       E(e => !e)
                     },
                     className: o()(b.badgeAssetContainer, {
-                      [b.badgeAssetContainerSelected]: 0 === C
+                      [b.badgeAssetContainerSelected]: 0 === O
                     }),
                     children: (0, r.jsx)(d.V3v, {
                       size: "custom",
@@ -174,7 +174,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
                   })
                 },
                 className: o()(b.badgeAssetContainer, {
-                  [b.badgeAssetContainerSelected]: i + 1 === C
+                  [b.badgeAssetContainerSelected]: i + 1 === O
                 }),
                 children: (0, r.jsx)(u.A, {
                   badge: n,
@@ -211,8 +211,8 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
               badge: n,
               width: 40,
               height: 40,
-              primaryTintColor: y.primary,
-              secondaryTintColor: y.secondary
+              primaryTintColor: C.primary,
+              secondaryTintColor: C.secondary
             })
           }), (0, r.jsx)(d.Text, {
             variant: "text-xs/medium",
