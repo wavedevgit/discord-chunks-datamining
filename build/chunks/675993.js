@@ -271,7 +271,8 @@ function D(e) {
   return null != p && null != x ? (0, i.jsxs)("div", {
     className: a()({
       [O.experimentLayout]: L.enabled,
-      [O.altLayout]: L.altLayout
+      [O.altLayout]: L.altLayout,
+      [O.noShowTryItOutButton]: !_
     }, O.entrypointContainer),
     children: [(0, i.jsx)("div", {
       className: O.entryPointContainerFlexChild,

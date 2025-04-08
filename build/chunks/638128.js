@@ -1,4 +1,4 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 37658 **/
 n.r(e.exports = {
   inFront: "inFront__4d3fa",
   invite: "invite__4d3fa",

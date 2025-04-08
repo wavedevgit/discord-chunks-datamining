@@ -11,7 +11,7 @@ var l = r(442837),
   c = r(611170),
   s = r(128854),
   u = r(884182),
-  p = r(94396),
+  p = r(207982),
   d = r(592125),
   f = r(52824),
   b = r(970184),
@@ -29,8 +29,8 @@ function y(e) {
   } = (0, s.c)();
   if (null == t || null == r) return null;
   let v = e.items.map(e => {
-      var t, r;
-      return t = function(e) {
+      var r, n;
+      return r = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -47,24 +47,24 @@ function y(e) {
           })
         }
         return e
-      }({}, (0, i.y_)(e.media)), r = r = {
+      }({}, (0, i.y_)(e.media, t)), n = n = {
         original: e.media.url,
         srcIsAnimated: e.media.srcIsAnimated
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var n = Object.getOwnPropertySymbols(e);
           r.push.apply(r, n)
         }
         return r
-      })(Object(r)).forEach(function(e) {
-        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-      }), t
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
+      }), r
     }).filter(e => "INVALID" !== e.type),
     {
       srcToOnClickOverride: P,
       srcToHandlePreloadImage: x
-    } = v.length > 1 ? (0, p.J)(v, {
+    } = v.length > 1 ? (0, p.G)(v, {
       shouldHideMediaOptions: y,
       shouldRedactExplicitContent: m
     }, "Media Mosaic") : {

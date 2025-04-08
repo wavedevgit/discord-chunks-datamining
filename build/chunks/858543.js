@@ -5,11 +5,11 @@ n.d(t, {
 });
 var i = n(200651);
 n(192379);
-var r = n(120356),
-  o = n.n(r),
+var o = n(120356),
+  r = n.n(o),
   a = n(692547),
-  l = n(481060),
-  s = n(109434),
+  s = n(481060),
+  l = n(109434),
   c = n(456269),
   u = n(479099),
   d = n(176505),
@@ -21,13 +21,13 @@ function f(e) {
   let {
     channel: t,
     isNew: n
-  } = e, i = (0, c.eV)(t), r = i.slice(void 0, 3), o = i.slice(3), a = i.length > 3 ? i.length - 3 : 0, l = t.hasFlag(d.zZ.PINNED), s = r.length > 0 || l || n;
+  } = e, i = (0, c.eV)(t), o = i.slice(void 0, 3), r = i.slice(3), a = i.length > 3 ? i.length - 3 : 0, s = t.hasFlag(d.zZ.PINNED), l = o.length > 0 || s || n;
   return {
-    shownTags: r,
-    remainingTags: o,
+    shownTags: o,
+    remainingTags: r,
     moreTagsCount: a,
-    isPinned: l,
-    shouldRenderTagsRow: s,
+    isPinned: s,
+    shouldRenderTagsRow: l,
     forumPostContainsTags: i.length > 0
   }
 }
@@ -36,7 +36,7 @@ function g(e) {
   let {
     channel: t,
     isNew: n,
-    tagsClassName: r,
+    tagsClassName: o,
     className: c
   } = e, {
     shownTags: d,
@@ -49,20 +49,20 @@ function g(e) {
     isNew: n
   }), {
     tagFilter: O
-  } = (0, s.H)(t.id);
+  } = (0, l.H)(t.id);
   return v ? (0, i.jsxs)("div", {
-    className: o()(m.tags, c),
-    children: [n ? (0, i.jsx)(l.IGR, {
-      className: o()(p.newBadge, p.inTagsRow),
+    className: r()(m.tags, c),
+    children: [n ? (0, i.jsx)(s.IGR, {
+      className: r()(p.newBadge, p.inTagsRow),
       color: a.Z.unsafe_rawColors.BRAND_260.css,
       text: h.NW.string(h.t.y2b7CA)
     }) : null, j && (0, i.jsx)("div", {
       className: m.pinIcon,
-      children: (0, i.jsx)(l.ua7, {
+      children: (0, i.jsx)(s.ua7, {
         text: h.NW.string(h.t["1QLRYW"]),
         children: e => {
           var t, n;
-          return (0, i.jsx)(l.qQX, (t = function(e) {
+          return (0, i.jsx)(s.qQX, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 i = Object.keys(n);
@@ -100,7 +100,7 @@ function g(e) {
     }), d.map(e => (0, i.jsx)(u.Z, {
       tag: e,
       size: u.Z.Sizes.SMALL,
-      className: o()(r, {
+      className: r()(o, {
         [m.tagFiltered]: O.has(e.id)
       })
     }, e.id)), b > 0 ? (0, i.jsx)(u.f, {

@@ -1,4 +1,4 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 73628 **/
 e.exports = {
   draftBadge: "draftBadge__53d72"
 }

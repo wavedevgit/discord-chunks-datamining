@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => f
+  Z: () => g
 });
 var r = n(200651),
   a = n(192379),
@@ -8,39 +8,38 @@ var r = n(200651),
   l = n(442837),
   o = n(445986),
   s = n(9807),
-  c = n(341176),
-  d = n(312097),
-  u = n(451478),
-  p = n(981631),
-  m = n(388032),
-  h = n(260516),
-  g = n(516450);
+  c = n(312097),
+  d = n(451478),
+  u = n(981631),
+  p = n(388032),
+  m = n(260516),
+  h = n(516450);
 
-function f(e) {
+function g(e) {
   let {
     application: t,
     carouselItems: n
-  } = e, f = (0, l.e7)([u.Z], () => u.Z.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
+  } = e, g = (0, l.e7)([d.Z], () => d.Z.isFocused()), _ = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      className: h.errorImage,
-      src: g,
+      className: m.errorImage,
+      src: h,
       "aria-hidden": !0,
       alt: ""
     }), (0, r.jsx)(i.X6, {
       variant: "heading-xl/semibold",
-      children: m.NW.string(m.t.UvDfMz)
+      children: p.NW.string(p.t.UvDfMz)
     })]
   });
   n.forEach((e, r) => {
-    e.alt = m.NW.formatToPlainString(m.t.sSEhHR, {
+    e.alt = p.NW.formatToPlainString(p.t.sSEhHR, {
       index: r + 1,
       totalImages: n.length,
       name: t.name
     })
   });
-  let b = a.useCallback((e, t) => {
-    if (e.type === p.s9s.IMG) {
-      let t = n.filter(e => e.type === p.s9s.IMG),
+  let f = a.useCallback((e, t) => {
+    if (e.type === u.s9s.IMG) {
+      let t = n.filter(e => e.type === u.s9s.IMG),
         r = t.findIndex(t => t === e);
       if (r < 0) return;
       let a = t.map(e => ({
@@ -50,24 +49,22 @@ function f(e) {
         height: e.height,
         type: "IMAGE"
       }));
-      (0, d.K)({
+      (0, c.K)({
         items: a,
         startingIndex: r,
-        fit: c.D.CONTAIN,
         shouldHideMediaOptions: !0,
-        shouldAnimateCarousel: !0,
         location: "GlobalDiscoveryAppsDetailCarousel"
       })
     }
   }, [n]);
   return 0 === n.length ? null : (0, r.jsx)(s.Z, {
-    className: h.carousel,
+    className: m.carousel,
     themedPagination: !0,
     items: n,
     autoplayInterval: 8e3,
-    paused: !f,
+    paused: !g,
     videoAutoPlay: !0,
-    onCurrentItemClick: b,
+    onCurrentItemClick: f,
     errorComponent: _
   })
 }

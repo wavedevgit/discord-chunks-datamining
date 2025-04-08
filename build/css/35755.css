@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: c434c99d70d3a009
+  Original File Name: bee10da037f02a98
 **/
 .brokenImageIcon_f68fcb {
     width: 48px;
@@ -601,6 +601,10 @@
 .altLayout__95856.entrypointContainer__95856 {
     flex-direction: column;
     height: 84px
+}
+
+.altLayout__95856.noShowTryItOutButton__95856.entrypointContainer__95856 {
+    height: 48px
 }
 
 .entryPointContainerFlexChild__95856 {
@@ -1368,4 +1372,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=c434c99d70d3a009.css.map*/
+/*# sourceMappingURL=bee10da037f02a98.css.map*/

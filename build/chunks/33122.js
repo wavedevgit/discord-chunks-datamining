@@ -1,7 +1,7 @@
 /** Chunk was on 88934 **/
 n.d(t, {
   Z: () => R,
-  r: () => I
+  r: () => N
 }), n(388685);
 var r, a = n(200651),
   i = n(192379),
@@ -15,8 +15,8 @@ var r, a = n(200651),
   m = n(679056),
   h = n(44488),
   g = n(519160),
-  f = n(124347),
-  _ = n(283756),
+  _ = n(124347),
+  f = n(283756),
   b = n(524444),
   x = n(585483),
   v = n(981631),
@@ -44,18 +44,18 @@ function y(e) {
   return e
 }
 
-function O() {
+function I() {
   var e, t;
   let n = (e = ["grayscale(", ")"], t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, {
     raw: {
       value: Object.freeze(t)
     }
   })));
-  return O = function() {
+  return I = function() {
     return n
   }, n
 }
-let I = {
+let N = {
     SMALL: {
       width: 640,
       height: 360,
@@ -67,7 +67,7 @@ let I = {
       margin: 20
     }
   },
-  N = {
+  O = {
     width: 1920,
     height: 1080
   },
@@ -91,7 +91,7 @@ let I = {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   },
-  E = e => (0, a.jsx)(f.ZP, y({}, e)),
+  E = e => (0, a.jsx)(_.ZP, y({}, e)),
   T = e => {
     let t, n, r, {
       item: i,
@@ -102,12 +102,12 @@ let I = {
       playable: m,
       volume: h,
       isMuted: g,
-      onVolumeChange: f,
-      onMute: _
+      onVolumeChange: _,
+      onMute: f
     } = e;
     if (i.type === v.s9s.YOUTUBE_VIDEO) t = y({
       url: (0, v.n8r)(i.youtubeVideoId)
-    }, N), n = y({
+    }, O), n = y({
       url: "".concat((0, v.ivE)(i.youtubeVideoId), "?").concat("rel=0&iv_load_policy=3&showinfo=0&modestbranding=1")
     }, P), r = p.pn.YOUTUBE;
     else {
@@ -137,9 +137,9 @@ let I = {
       playable: m,
       className: C.video,
       volume: h,
-      onVolumeChange: f,
+      onVolumeChange: _,
       autoMute: g,
-      onMute: _,
+      onMute: f,
       autoPlay: m,
       renderVideoComponent: S,
       renderImageComponent: E,
@@ -153,7 +153,7 @@ let I = {
   },
   A = () => (0, a.jsx)("div", {
     className: C.paginationVideoOverlay,
-    children: (0, a.jsx)(_.Z, {
+    children: (0, a.jsx)(f.Z, {
       inactive: !0,
       className: C.paginationVideoPlayPill,
       renderLinkComponent: b.iT
@@ -178,7 +178,7 @@ class L extends(r = i.PureComponent) {
         outputRange: [.3, 1],
         extrapolate: s.Z.Extrapolate.CLAMP
       }),
-      filter: s.Z.template(O(), n)
+      filter: s.Z.template(I(), n)
     }
   }
   handleCurrentItemClick(e, t) {
@@ -277,8 +277,8 @@ class L extends(r = i.PureComponent) {
     }), j(this, "getItemSize", () => {
       let {
         width: e
-      } = this.props, t = I.MEDIUM;
-      return null != e && e < t.width && (t = I.SMALL), t
+      } = this.props, t = N.MEDIUM;
+      return null != e && e < t.width && (t = N.SMALL), t
     }), j(this, "setItem", (e, t) => {
       let {
         props: {

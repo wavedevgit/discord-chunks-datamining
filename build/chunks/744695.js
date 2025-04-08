@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function f(e, t) {
   }), e
 }
 
-function _(e) {
+function f(e) {
   var {
     id: t,
     label: n,
@@ -68,7 +68,7 @@ function _(e) {
     }
     return a
   }(e, ["id", "label", "selected", "handleTransition"]);
-  return (0, r.jsx)(c.Z.Title, f(g({}, o), {
+  return (0, r.jsx)(c.Z.Title, _(g({}, o), {
     onClick: () => i(t),
     wrapperClassName: h.tabWrapper,
     className: l()(h.tab, {
@@ -103,7 +103,7 @@ function b(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)(c.Z.Title, f(g({}, e), {
+      return (0, r.jsxs)(c.Z.Title, _(g({}, e), {
         wrapperClassName: h.tabWrapper,
         className: l()(h.tab, h.more, {
           [h.selected]: i
@@ -129,7 +129,7 @@ function x(e) {
     onAvailableWidthChange: c
   } = e, [u, p] = a.useState(0), m = a.useRef(u), {
     lastVisibleIndex: g,
-    onItemLayout: f,
+    onItemLayout: _,
     overflowItemsRef: x,
     itemWidthsRef: v
   } = (0, o.zP)({
@@ -137,7 +137,7 @@ function x(e) {
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: u
-  }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), O = a.useCallback(() => {
+  }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), I = a.useCallback(() => {
     var e;
     let t = null == (e = y.current) ? void 0 : e.getBoundingClientRect();
     if (null == t || m.current === t.width) return;
@@ -147,11 +147,11 @@ function x(e) {
     null == c || c(r)
   }, [v, c]);
   a.useEffect(() => {
-    let e = (0, d.pP)(O);
+    let e = (0, d.pP)(I);
     return (0, d.YP)(e, document.body), () => (0, d.UC)(e, document.body)
-  }, [O]);
-  let I = 0 !== u,
-    N = j.some(e => e.id === n);
+  }, [I]);
+  let N = 0 !== u,
+    O = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
     className: l()(h.container, t),
     ref: y,
@@ -159,8 +159,8 @@ function x(e) {
       className: h.measurements,
       children: [i.map((e, t) => (0, r.jsx)(o.AJ, {
         index: t,
-        onItemLayout: f,
-        children: (0, r.jsx)(_, {
+        onItemLayout: _,
+        children: (0, r.jsx)(f, {
           id: e.id,
           label: e.label,
           selected: n === e.id,
@@ -172,12 +172,12 @@ function x(e) {
           tabs: j,
           onTabSelect: s,
           selectedTab: n,
-          selected: N
+          selected: O
         })
       })]
-    }), I && (0, r.jsxs)("div", {
+    }), N && (0, r.jsxs)("div", {
       className: h.tabs,
-      children: [C.map(e => (0, r.jsx)(_, {
+      children: [C.map(e => (0, r.jsx)(f, {
         id: e.id,
         label: e.label,
         selected: n === e.id,
@@ -186,7 +186,7 @@ function x(e) {
         tabs: j,
         onTabSelect: s,
         selectedTab: n,
-        selected: N
+        selected: O
       }) : null]
     })]
   })

@@ -48,15 +48,15 @@ function b(e) {
     noImage: i = !1
   } = e, s = (0, l.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), b = (0, l.e7)([u.Z], () => null != s && u.Z.canBasicChannel(p.S7T.CONNECT, s)), {
     previewUrl: _,
-    isLoading: h
-  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), O = a.useRef(h ? null : _);
+    isLoading: O
+  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = a.useRef(O ? null : _);
   a.useEffect(() => {
-    h || (O.current = _)
-  }, [_, h]);
-  let y = null == _ || h ? O.current : _;
+    O || (h.current = _)
+  }, [_, O]);
+  let y = null == _ || O ? h.current : _;
   return null == y ? (0, n.jsx)(g, {
     className: r,
-    isLoading: h,
+    isLoading: O,
     noText: o,
     noImage: i,
     previewText: b ? void 0 : f.NW.string(f.t.pgUTZG)

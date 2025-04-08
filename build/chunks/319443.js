@@ -15,17 +15,17 @@ var r = n(200651),
   m = n(611928),
   h = n(763433),
   g = n(922122),
-  f = n(680180),
-  _ = n(726115),
+  _ = n(680180),
+  f = n(726115),
   b = n(703656),
   x = n(822857),
   v = n(314897),
   C = n(594174),
   j = n(626135),
   y = n(471518),
-  O = n(31569),
-  I = n(370210),
-  N = n(678694),
+  I = n(31569),
+  N = n(370210),
+  O = n(678694),
   P = n(216780),
   S = n(881294),
   E = n(975907),
@@ -33,13 +33,13 @@ var r = n(200651),
   A = n(258971),
   L = n(133743),
   R = n(726941),
-  w = n(666697),
-  Z = n(548514),
-  k = n(370648),
+  Z = n(666697),
+  k = n(548514),
+  w = n(370648),
   D = n(569527),
   M = n(979007),
-  z = n(981631),
-  G = n(388032),
+  G = n(981631),
+  z = n(388032),
   B = n(691133);
 
 function W(e) {
@@ -47,7 +47,7 @@ function W(e) {
     applicationId: t,
     hideDetailHeaderButtons: n,
     onClickBack: i
-  } = e, o = (0, s.e7)([I.Z], () => I.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
+  } = e, o = (0, s.e7)([N.Z], () => N.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
     u(n)
   }, [n]);
   return (0, r.jsxs)("div", {
@@ -71,7 +71,7 @@ function W(e) {
         [B.hidden]: n && d
       }),
       onTransitionEnd: p,
-      children: null != o ? (0, r.jsx)(Z.Z, {
+      children: null != o ? (0, r.jsx)(k.Z, {
         application: o,
         size: "sm"
       }) : null
@@ -97,18 +97,18 @@ function U() {
       tag: "span",
       color: "always-white",
       variant: "text-md/normal",
-      children: G.NW.string(G.t.Ol3MIi)
+      children: z.NW.string(z.t.Ol3MIi)
     }), (0, r.jsxs)("div", {
       className: B.nagbarActionContainer,
       children: [(0, r.jsx)(c.NoS, {
         onClick: e,
-        noticeType: z.kVF.LOGIN,
-        children: G.NW.string(G.t["825cFx"])
+        noticeType: G.kVF.LOGIN,
+        children: z.NW.string(z.t["825cFx"])
       }), (0, r.jsx)(c.NoS, {
         onClick: t,
-        noticeType: z.kVF.REGISTER,
+        noticeType: G.kVF.REGISTER,
         minor: !0,
-        children: G.NW.string(G.t.HAkXzs)
+        children: z.NW.string(z.t.HAkXzs)
       })]
     })]
   })
@@ -118,8 +118,8 @@ let F = function() {
   let n = (0, s.e7)([v.default], () => !v.default.isAuthenticated()),
     {
       onScroll: i,
-      scrollPosition: I,
-      resetScrollPosition: Z
+      scrollPosition: N,
+      resetScrollPosition: k
     } = (0, u.M)(),
     F = (0, A.Xh)(),
     V = (0, S.nu)(),
@@ -132,7 +132,7 @@ let F = function() {
       query: q,
       categoryId: K
     } = (null == F ? void 0 : F.type) === A.m_.SEARCH ? F : {},
-    Q = (0, s.e7)([N.Z], () => N.Z.getCategories()),
+    Q = (0, s.e7)([O.Z], () => O.Z.getCategories()),
     J = a.useMemo(() => [(0, P.KQ)(), ...Q], [Q]),
     $ = a.useMemo(() => J.find(e => e.id === Number(K)), [J, K]),
     {
@@ -151,8 +151,8 @@ let F = function() {
     });
   a.useEffect(() => {
     if (!ei && null == el) {
-      let e = (0, _.PM)();
-      j.default.track(z.rMx.APP_DIRECTORY_OPENED, {
+      let e = (0, f.PM)();
+      j.default.track(G.rMx.APP_DIRECTORY_OPENED, {
         source: A.xF.EXTERNAL,
         session_id: e,
         user_id: null == eo ? void 0 : eo.id
@@ -185,42 +185,42 @@ let F = function() {
     onSearchSubmit: eg
   } = (0, E.M)({
     initialQuery: null != q ? q : ""
-  }), ef = O.Z.useField("searchBarState"), {
-    onTabsAvailableWidthChange: e_,
+  }), e_ = I.Z.useField("searchBarState"), {
+    onTabsAvailableWidthChange: ef,
     onCollapsedSearchBarClick: eb,
     onSearchBarBlur: ex
   } = (0, p.U)({
     isSearchBarVisible: !0,
     isSearchBarEmpty: "" === ep.trim(),
-    searchBarState: ef,
-    setSearchBarState: e => O.Z.setState({
+    searchBarState: e_,
+    setSearchBarState: e => I.Z.setState({
       searchBarState: e
     })
   }), ev = a.useCallback(e => {
-    en(e), eu && eh(), Z()
-  }, [eu, eh, en, Z]), eC = a.useCallback(e => (0, L.ph)({
+    en(e), eu && eh(), k()
+  }, [eu, eh, en, k]), eC = a.useCallback(e => (0, L.ph)({
     applicationId: e
   }), []), ej = ed || eu, ey = a.useCallback(() => {
     null != (0, A.Uc)() ? (0, b.op)() : (0, L.Yp)()
-  }, []), eO = (0, o.debounce)(e => {
+  }, []), eI = (0, o.debounce)(e => {
     let {
       scrollTop: t,
       offsetHeight: n,
       scrollHeight: r,
       location: a
     } = e;
-    t > 0 && (0, S.zZ)(z.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
+    t > 0 && (0, S.zZ)(G.rMx.APP_DIRECTORY_PAGE_SCROLLED, {
       scroll_visible_percentile: (t + n) / r,
       current_page: a
     })
-  }, 200), eI = a.useCallback((e, t) => {
-    i(e), eO({
+  }, 200), eN = a.useCallback((e, t) => {
+    i(e), eI({
       scrollTop: e.currentTarget.scrollTop,
       offsetHeight: e.currentTarget.offsetHeight,
       scrollHeight: e.currentTarget.scrollHeight,
       location: t
     })
-  }, [eO, i]), eN = ec ? c.iWm : c.jje;
+  }, [eI, i]), eO = ec ? c.iWm : c.jje;
   return (0, r.jsxs)("div", {
     className: l()(B.outerContainer, {
       [B.loggedOutContainer]: n
@@ -231,11 +231,11 @@ let F = function() {
         selectedTabId: et,
         handleTransition: ev,
         tabs: ee,
-        icon: eN,
+        icon: eO,
         state: ed || eu ? h.r.SEARCH : h.r.DEFAULT,
-        onAvailableWidthChange: e_,
+        onAvailableWidthChange: ef,
         children: [!ej && (0, r.jsx)(m.z6, {
-          scrollPosition: I
+          scrollPosition: N
         }), ed ? (0, r.jsx)(W, {
           applicationId: Y,
           hideDetailHeaderButtons: er,
@@ -248,26 +248,26 @@ let F = function() {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: B.searchHeader,
-            children: null != q && "" !== q ? G.NW.formatToPlainString(G.t.zHdzqa, {
+            children: null != q && "" !== q ? z.NW.formatToPlainString(z.t.zHdzqa, {
               query: q
-            }) : G.NW.formatToPlainString(G.t.Qhj5Bg, {
-              categoryName: null != (e = null == $ ? void 0 : $.name) ? e : G.NW.string(G.t.E407b2)
+            }) : z.NW.formatToPlainString(z.t.Qhj5Bg, {
+              categoryName: null != (e = null == $ ? void 0 : $.name) ? e : z.NW.string(z.t.E407b2)
             })
-          }), (0, r.jsx)(f.Z, {
+          }), (0, r.jsx)(_.Z, {
             query: ep,
-            placeholder: G.NW.string(G.t["5h0QOD"]),
+            placeholder: z.NW.string(z.t["5h0QOD"]),
             onTextChange: em,
             onClear: eh,
             onSubmit: eg,
             onCollapsedClick: eb,
-            state: ef,
+            state: e_,
             onBlur: ex
           })]
         })]
       }) : (0, r.jsxs)(m.ZP, {
         variant: ej ? m._6.RELATIVE : m._6.OVERLAY,
         children: [!ej && (0, r.jsx)(m.z6, {
-          scrollPosition: I
+          scrollPosition: N
         }), ed ? (0, r.jsx)(W, {
           applicationId: Y,
           hideDetailHeaderButtons: er,
@@ -277,47 +277,47 @@ let F = function() {
             icon: c.j9r,
             onClick: ey
           }) : (0, r.jsx)(m.aV, {
-            icon: eN
+            icon: eO
           }), eu ? (0, r.jsx)(c.X6q, {
             variant: "heading-lg/semibold",
             color: "header-primary",
             className: B.searchHeader,
-            children: null != q && "" !== q ? G.NW.formatToPlainString(G.t.zHdzqa, {
+            children: null != q && "" !== q ? z.NW.formatToPlainString(z.t.zHdzqa, {
               query: q
-            }) : G.NW.formatToPlainString(G.t.Qhj5Bg, {
-              categoryName: null != (t = null == $ ? void 0 : $.name) ? t : G.NW.string(G.t.E407b2)
+            }) : z.NW.formatToPlainString(z.t.Qhj5Bg, {
+              categoryName: null != (t = null == $ ? void 0 : $.name) ? t : z.NW.string(z.t.E407b2)
             })
           }) : (0, r.jsx)(g.Z, {
             tabs: ee,
             selectedTab: et,
             onTabSelect: ev,
-            onAvailableWidthChange: e_
-          }), (0, r.jsx)(f.Z, {
+            onAvailableWidthChange: ef
+          }), (0, r.jsx)(_.Z, {
             query: ep,
-            placeholder: G.NW.string(G.t["5h0QOD"]),
+            placeholder: z.NW.string(z.t["5h0QOD"]),
             onTextChange: em,
             onClear: eh,
             onSubmit: eg,
             onCollapsedClick: eb,
-            state: ef,
+            state: e_,
             onBlur: ex
           })]
         })]
-      }), ed ? (0, r.jsx)(w.Z, {
-        onScroll: e => eI(e, A.m_.APPLICATION),
+      }), ed ? (0, r.jsx)(Z.Z, {
+        onScroll: e => eN(e, A.m_.APPLICATION),
         onSelectApplication: eC,
         applicationId: Y,
         initialTab: X,
         onButtonsVisibilityChange: ea
       }) : eu ? (0, r.jsx)(D.Z, {
         onSelectApplication: eC,
-        onScroll: e => eI(e, A.m_.SEARCH)
-      }) : et === M.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(k.Z, {
-        onScroll: e => eI(e, A.m_.HOME),
+        onScroll: e => eN(e, A.m_.SEARCH)
+      }) : et === M.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID.toString() ? (0, r.jsx)(w.Z, {
+        onScroll: e => eN(e, A.m_.HOME),
         onSelectApplication: eC
       }) : (0, r.jsx)(R.Z, {
         tabId: Number(et),
-        onScroll: e => eI(e, A.m_.CATEGORY),
+        onScroll: e => eN(e, A.m_.CATEGORY),
         onSelectApplication: eC
       })]
     })]

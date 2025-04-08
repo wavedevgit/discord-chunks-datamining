@@ -108,7 +108,7 @@ function Z(e) {
     }, [y, b]),
     P = j.length > 0,
     E = p && !P && !N;
-  return d ? (0, i.jsx)(B, {}) : E ? (0, i.jsx)(g.A, {
+  return d ? (0, i.jsx)(U, {}) : E ? (0, i.jsx)(g.A, {
     type: C.LG.SEARCH_EMPTY,
     searchQuery: n,
     textContent: l === C._b.TEXT ? O.NW.string(O.t.LSNOYW) : O.NW.string(O.t.Clu7Qk)
@@ -248,7 +248,7 @@ function W(e) {
           application: r,
           installOnDemand: a
         } = e;
-        return (0, i.jsx)(U, {
+        return (0, i.jsx)(B, {
           context: t,
           application: r,
           location: d.Vh.APP_LAUNCHER_HOME_SEARCH,
@@ -286,7 +286,7 @@ function W(e) {
   })
 }
 
-function U(e) {
+function B(e) {
   let {
     onClickAppCard: t,
     onClickAppCardFriends: n
@@ -300,7 +300,7 @@ function U(e) {
   })
 }
 
-function B() {
+function U() {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(j.Z, {
       title: O.NW.string(O.t["0hKkS0"])

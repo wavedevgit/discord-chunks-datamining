@@ -1,9 +1,9 @@
 /** Chunk was on 16967 **/
 n.d(t, {
-  KF: () => l
+  KF: () => a
 }), n(388685);
-var a = n(70956),
+var l = n(70956),
   r = n(981631);
-a.Z.Millis.MINUTE;
-let l = "1312632705086787756";
+l.Z.Millis.MINUTE;
+let a = "1312632705086787756";
 r.hBH.IMAGE, r.hBH.GIFV

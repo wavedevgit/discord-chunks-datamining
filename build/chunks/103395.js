@@ -1,4 +1,4 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 37658 **/
 e.exports = {
   stackedAvatar: "stackedAvatar__4337d",
   clickable: "clickable__4337d",

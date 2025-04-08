@@ -124,9 +124,12 @@ function E(e, t) {
   })
 }
 
-function b(e) {
+function b(e, t) {
   return d(c({}, e), {
-    type: m(e)
+    type: m(e),
+    sourceMetadata: {
+      message: t
+    }
   })
 }
 

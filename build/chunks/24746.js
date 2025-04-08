@@ -16,7 +16,7 @@ var r = n(200651),
 let h = s().parserFor(u.Z),
   g = s().reactFor(s().ruleOutput(u.Z, "react"));
 
-function f(e) {
+function _(e) {
   let {
     description: t,
     supportsMarkdown: n
@@ -29,7 +29,7 @@ function f(e) {
     });
     return e.observe(s.current), () => e.disconnect()
   }, []);
-  let [u, p] = a.useState(!1), f = a.useCallback(() => {
+  let [u, p] = a.useState(!1), _ = a.useCallback(() => {
     p(e => !e)
   }, []);
   return (0, r.jsxs)(r.Fragment, {
@@ -52,14 +52,14 @@ function f(e) {
         color: "text-normal",
         children: t
       })
-    }), i || u ? (0, r.jsx)(_, {
+    }), i || u ? (0, r.jsx)(f, {
       isShowingMore: u,
-      onToggle: f
+      onToggle: _
     }) : null]
   })
 }
 
-function _(e) {
+function f(e) {
   let {
     onToggle: t,
     isShowingMore: n
@@ -93,10 +93,10 @@ let b = function(e) {
   var t, n;
   let {
     application: i
-  } = e, l = null == (t = i.directory_entry) ? void 0 : t.detailed_description, o = null == (n = i.directory_entry) ? void 0 : n.short_description, s = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(f, {
+  } = e, l = null == (t = i.directory_entry) ? void 0 : t.detailed_description, o = null == (n = i.directory_entry) ? void 0 : n.short_description, s = a.useMemo(() => null != l && l.length > 0 ? (0, r.jsx)(_, {
     description: l,
     supportsMarkdown: !0
-  }) : null != o && o.length > 0 ? (0, r.jsx)(f, {
+  }) : null != o && o.length > 0 ? (0, r.jsx)(_, {
     description: o,
     supportsMarkdown: !1
   }) : null, [l, o]);

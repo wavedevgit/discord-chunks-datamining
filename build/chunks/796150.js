@@ -21,7 +21,7 @@ function g(e) {
     className: t,
     view: n,
     application: a
-  } = e, g = "embedded" === n, f = (0, s.Z)({
+  } = e, g = "embedded" === n, _ = (0, s.Z)({
     application: a
   });
   return (0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function g(e) {
           children: m.NW.string(m.t["3NxHCw"])
         }), (0, r.jsx)(o.Z, {
           application: a,
-          mutualGuilds: f,
+          mutualGuilds: _,
           mutualGuildShownMax: 3,
           className: h.guildCountContainer,
           guildIconSize: o.x.SMALL,

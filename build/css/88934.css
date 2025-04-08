@@ -1,6 +1,6 @@
 /**
   Module ID: 88934
-  Original File Name: bcdbeaa130cf9632
+  Original File Name: 85c57a144ec9baaf
 **/
 @value headerBarHeight 60px;
 
@@ -1283,27 +1283,6 @@
 
 .sizedToParent__03498,.sizedToParent__03498>video {
     border-radius: 0
-}
-
-.slide_fd65ff {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%
-}
-
-.scaleDown_fd65ff {
-    -o-object-fit: scale-down;
-    object-fit: scale-down;
-    cursor: zoom-out
-}
-
-.contain_fd65ff {
-    -o-object-fit: contain;
-    object-fit: contain;
-    cursor: zoom-out
 }
 
 .errorImage_d389c2 {
@@ -2606,4 +2585,4 @@
     height: 22px
 }
 
-/*# sourceMappingURL=bcdbeaa130cf9632.css.map*/
+/*# sourceMappingURL=85c57a144ec9baaf.css.map*/

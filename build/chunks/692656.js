@@ -39,8 +39,8 @@ var i = n(200651),
   M = n(219066),
   D = n(106066),
   W = n(783097),
-  U = n(695676),
-  B = n(98880),
+  B = n(695676),
+  U = n(98880),
   H = n(804307),
   V = n(888617),
   F = n(561160),
@@ -56,13 +56,13 @@ let $ = [],
   ee = [, , , , ].fill(0).map((e, t) => t),
   et = [{
     cards: [, , , , ].fill(0).map((e, t) => t),
-    look: B.U4.MEDIUM_BANNER
+    look: U.U4.MEDIUM_BANNER
   }, {
     cards: [, , , , ].fill(0).map((e, t) => t),
-    look: B.U4.ROW
+    look: U.U4.ROW
   }, {
     cards: [, , , , ].fill(0).map((e, t) => t),
-    look: B.U4.ROW
+    look: U.U4.ROW
   }],
   en = d.Y.APP_LAUNCHER_IN_TEXT;
 
@@ -215,7 +215,7 @@ function ea(e) {
     handleViewMore: m
   } = ep({
     title: d,
-    look: n === k._b.VOICE ? B.U4.LARGE_BANNER : B.U4.ROW,
+    look: n === k._b.VOICE ? U.U4.LARGE_BANNER : U.U4.ROW,
     items: s,
     limit: 8,
     sectionName: k.L3.RECENT_APPS
@@ -258,19 +258,19 @@ function ea(e) {
           let {
             application: r
           } = e;
-          return a ? (0, i.jsx)(B.qR, {
+          return a ? (0, i.jsx)(U.qR, {
             context: t,
             application: r,
-            look: B.U4.ICON,
+            look: U.U4.ICON,
             location: k.G0.HOME,
             sectionName: k.L3.RECENT_APPS,
             resultsPosition: n,
             isOneClickCTA: !0,
             fetchesApplication: !1
-          }, r.id) : (0, i.jsx)(B.kA, {
+          }, r.id) : (0, i.jsx)(U.kA, {
             context: t,
             application: r,
-            look: B.U4.ICON,
+            look: U.U4.ICON,
             location: k.G0.HOME,
             sectionName: k.L3.RECENT_APPS,
             resultsPosition: n
@@ -292,7 +292,7 @@ function eo(e) {
       guildId: "channel" === n.type ? null == (t = n.channel) ? void 0 : t.getGuildId() : void 0,
       context: n
     }),
-    o = B.U4.LARGE_BANNER,
+    o = U.U4.LARGE_BANNER,
     {
       trackSectionImpressionRef: c
     } = (0, V.Z)({
@@ -316,7 +316,7 @@ function eo(e) {
         let {
           application: r
         } = e;
-        return (0, i.jsx)(B.qR, {
+        return (0, i.jsx)(U.qR, {
           context: n,
           application: r,
           look: o,
@@ -346,7 +346,7 @@ function ec(e) {
     handleViewMore: s
   } = ep({
     title: J.NW.string(J.t.KfkuGR),
-    look: B.U4.ROW,
+    look: U.U4.ROW,
     items: a,
     limit: 4,
     sectionName: l
@@ -370,15 +370,15 @@ function ec(e) {
     }), (0, i.jsx)("div", {
       className: K.sectionRowsContentContainer,
       children: o ? ee.map(e => (0, i.jsx)(H.Z, {
-        look: B.U4.ROW
+        look: U.U4.ROW
       }, e)) : c.map((e, n) => {
         let {
           application: r
         } = e;
-        return null != r ? (0, i.jsx)(B.kA, {
+        return null != r ? (0, i.jsx)(U.kA, {
           context: t,
           application: r,
-          look: B.U4.ROW,
+          look: U.U4.ROW,
           sectionName: l,
           resultsPosition: n,
           location: j.Vh.APP_LAUNCHER_HOME
@@ -477,7 +477,7 @@ function es(e) {
     } = e;
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)(z.Z.Loading, {}), (0, i.jsx)("div", {
-        className: r === B.U4.ROW ? K.sectionRowsContentContainer : K.sectionTwoColumnContentContainer,
+        className: r === U.U4.ROW ? K.sectionRowsContentContainer : K.sectionTwoColumnContentContainer,
         children: n.map(e => (0, i.jsx)(H.Z, {
           look: r
         }, e))
@@ -503,13 +503,13 @@ function eu(e) {
     f = l.title;
   switch (l.type) {
     case m.o.BANNER_CARDS:
-      t = B.U4.LARGE_BANNER;
+      t = U.U4.LARGE_BANNER;
       break;
     case m.o.SMALL_BANNER_CARDS:
-      t = B.U4.MEDIUM_BANNER;
+      t = U.U4.MEDIUM_BANNER;
       break;
     default:
-      t = B.U4.ROW
+      t = U.U4.ROW
   }
   let h = "channel" in d && (0, w.aZ)(d.channel, "AppLauncherHome.RecommendationsSection()"),
     b = r.useMemo(() => {
@@ -571,7 +571,7 @@ function eu(e) {
         onClickViewButton: _
       })
     }), (0, i.jsx)("div", {
-      className: t === B.U4.ROW ? K.sectionRowsContentContainer : K.sectionTwoColumnContentContainer,
+      className: t === U.U4.ROW ? K.sectionRowsContentContainer : K.sectionTwoColumnContentContainer,
       children: x.map((e, n) => {
         let r, {
           collectionItemId: l,
@@ -584,7 +584,7 @@ function eu(e) {
           itemId: l,
           hash: a,
           containerWidth: X.Gy
-        })), (0, i.jsx)(B.kA, {
+        })), (0, i.jsx)(U.kA, {
           context: d,
           application: o,
           look: t,
@@ -620,7 +620,7 @@ function ep(e) {
     sectionOverallPosition: o
   } = e, {
     pushHistory: c
-  } = (0, U.hH)();
+  } = (0, B.hH)();
   return r.useMemo(() => i.length <= l ? {
     items: i,
     handleViewMore: void 0
@@ -632,7 +632,7 @@ function ep(e) {
         source: R.Z.entrypoint(),
         num: i.length
       }), c({
-        type: U.gc.LIST,
+        type: B.gc.LIST,
         title: t,
         look: n,
         items: i,

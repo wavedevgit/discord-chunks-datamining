@@ -4,11 +4,11 @@ n.d(t, {
   v: () => v
 }), n(388685);
 var i = n(512722),
-  r = n.n(i),
-  o = n(290486),
+  o = n.n(i),
+  r = n(290486),
   a = n(313361),
-  l = n(683860),
-  s = n(731965),
+  s = n(683860),
+  l = n(731965),
   c = n(442837),
   u = n(592125),
   d = n(559241);
@@ -37,7 +37,7 @@ function p(e) {
 let m = new Set,
   f = {
     layoutType: a.X.LIST,
-    sortOrder: l.z.CREATION_DATE,
+    sortOrder: s.z.CREATION_DATE,
     tagFilter: m,
     scrollPosition: 0
   };
@@ -46,9 +46,9 @@ class g {
     h(this, "set", void 0), h(this, "get", void 0), h(this, "channelStates", void 0), h(this, "setChannelState", void 0), h(this, "getChannelState", void 0), h(this, "toggleTagFilter", void 0), h(this, "setTagFilter", void 0), h(this, "setSortOrder", void 0), h(this, "setLayoutType", void 0), h(this, "setScrollPosition", void 0), this.set = e, this.get = t, this.channelStates = {}, this.setChannelState = (e, t) => {
       let n = this.get(),
         i = this.getChannelState(e),
-        r = p({}, n.channelStates);
-      r[e] = p({}, i, t), (0, s.j)(() => this.set({
-        channelStates: r
+        o = p({}, n.channelStates);
+      o[e] = p({}, i, t), (0, l.j)(() => this.set({
+        channelStates: o
       }))
     }, this.getChannelState = e => {
       if (null == e) return f;
@@ -57,7 +57,7 @@ class g {
       } = this.get(), n = t[e];
       if (null == n) {
         let t = u.Z.getChannel(e);
-        r()(null != t, "[Forum Channel Store] The channel should not be missing."), n = {
+        o()(null != t, "[Forum Channel Store] The channel should not be missing."), n = {
           layoutType: t.getDefaultLayout(),
           sortOrder: t.getDefaultSortOrder(),
           tagFilter: m,
@@ -87,7 +87,7 @@ class g {
     }
   }
 }
-let b = (0, o.U)((e, t) => new g(e, t)),
+let b = (0, r.U)((e, t) => new g(e, t)),
   j = e => {
     let t = b();
     return null == (0, c.e7)([u.Z], () => u.Z.getChannel(e)) ? f : t.getChannelState(e)

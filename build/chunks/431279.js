@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => y
 }), n(388685);
 var r, i = n(200651),
   o = n(192379),
@@ -11,11 +11,9 @@ var r, i = n(200651),
   c = n(124347),
   u = n(730606),
   d = n(312097),
-  f = n(506071),
-  _ = n(701865),
-  p = n(838157);
+  f = n(506071);
 
-function h(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,20 +22,20 @@ function h(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      h(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 
-function g(e, t) {
+function h(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +46,15 @@ function g(e, t) {
   return n
 }
 
-function E(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
+function m(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : h(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function b(e, t) {
+function g(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = E(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,29 +62,29 @@ function b(e, t) {
   return i
 }
 
-function y(e, t) {
+function E(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-class v extends(r = o.PureComponent) {
+class b extends(r = o.PureComponent) {
   render() {
     let e = this.props,
       {
         appContext: t,
         isWindowFocused: n
       } = e,
-      r = b(e, ["appContext", "isWindowFocused"]);
-    return (0, i.jsx)(c.ZP, E(m({}, r), {
+      r = g(e, ["appContext", "isWindowFocused"]);
+    return (0, i.jsx)(c.ZP, m(p({}, r), {
       onZoom: this.onZoom,
       onMouseEnter: this.onMouseEnter,
       shouldAnimate: n
     }))
   }
   constructor(...e) {
-    super(...e), h(this, "onMouseEnter", e => {
+    super(...e), _(this, "onMouseEnter", e => {
       let {
         src: t,
         width: n,
@@ -101,9 +99,9 @@ class v extends(r = o.PureComponent) {
         height: r,
         options: this.props
       })
-    }), h(this, "modalContext", (0, s.VnL)(this.props.appContext)), h(this, "onCloseImage", () => {
-      (0, s.Mr3)(_.U, this.modalContext)
-    }), h(this, "onZoom", (e, t) => {
+    }), _(this, "modalContext", (0, s.VnL)(this.props.appContext)), _(this, "onCloseImage", () => {
+      (0, s.Mr3)(d.Q, this.modalContext)
+    }), _(this, "onZoom", (e, t) => {
       let {
         zoomThumbnailPlaceholder: n,
         trigger: r
@@ -118,10 +116,10 @@ class v extends(r = o.PureComponent) {
         animated: u,
         srcIsAnimated: f,
         children: _,
-        shouldHideMediaOptions: h = !1,
-        sourceMetadata: m,
-        analyticsSource: g
-      } = this.props, E = {
+        shouldHideMediaOptions: p = !1,
+        sourceMetadata: h,
+        analyticsSource: m
+      } = this.props, g = {
         url: o,
         width: l,
         height: c,
@@ -132,30 +130,29 @@ class v extends(r = o.PureComponent) {
         srcIsAnimated: f,
         children: _,
         trigger: r,
-        sourceMetadata: m,
+        sourceMetadata: h,
         original: null != s ? s : o
       };
       (0, a.k)(e.currentTarget) && e.currentTarget.blur(), (0, d.K)({
-        className: p.modal,
         onClose: this.onCloseImage,
-        items: [E],
-        shouldHideMediaOptions: h,
-        location: null != g ? g : "LazyImageZoomable",
+        items: [g],
+        shouldHideMediaOptions: p,
+        location: null != m ? m : "LazyImageZoomable",
         contextKey: this.modalContext
       })
     })
   }
 }
 
-function O(e) {
+function y(e) {
   let t = (0, l.bp)(),
     n = (0, f.n)();
-  return (0, i.jsx)(v, E(m({}, e), {
+  return (0, i.jsx)(b, m(p({}, e), {
     isWindowFocused: n,
     appContext: t
   }))
 }
-h(v, "defaultProps", {
+_(b, "defaultProps", {
   shouldLink: !0,
   autoPlay: !1,
   animated: !1

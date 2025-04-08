@@ -17,8 +17,8 @@ var n = r(481060),
   g = r(539573),
   b = r(786761),
   _ = r(3148),
-  h = r(48854),
-  O = r(785359),
+  O = r(48854),
+  h = r(785359),
   y = r(79390),
   v = r(980463),
   j = r(992970),
@@ -35,7 +35,7 @@ var n = r(481060),
   k = r(981631),
   L = r(388032);
 
-function D(e) {
+function M(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -54,7 +54,7 @@ function D(e) {
   return e
 }
 
-function M(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -91,7 +91,7 @@ async function W(e) {
   null != G && (H.content = null == G ? void 0 : G.content), null != N.Z.getPendingReply(W) && (H.type = k.uaV.REPLY, H.message_reference = B.messageReference, H.allowed_mentions = B.allowedMentions, (0, I.A6)(W));
   let [Q, z] = (0, w.Z)(H.content);
   Q && (H.content = z, H.flags = (0, T.pj)(null != (r = H.flags) ? r : 0, k.iLy.SUPPRESS_NOTIFICATIONS));
-  let Y = null != (n = B.nonce) ? n : (0, h.r)(),
+  let Y = null != (n = B.nonce) ? n : (0, O.r)(),
     X = (0, _.ZP)({
       channelId: W,
       content: H.content,
@@ -103,7 +103,7 @@ async function W(e) {
       poll: (0, y.x9)(B.poll)
     });
   return H.nonce = Y, U.on("start", e => {
-    p = (0, b.e5)(M(D({}, X), {
+    p = (0, b.e5)(D(M({}, X), {
       id: e.id
     })), a.Z.dispatch({
       type: "UPLOAD_START",
@@ -124,7 +124,7 @@ async function W(e) {
         channelId: W,
         file: e,
         messageRecord: p
-      }), (0, O.x)({
+      }), (0, h.x)({
         fileItems: e.items,
         failureCode: t,
         errorMessage: null == n ? void 0 : n.msg
@@ -136,7 +136,7 @@ async function W(e) {
         },
         n = null == p ? null : {
           type: u.$V.SEND,
-          message: M(D({}, p), {
+          message: D(M({}, p), {
             channelId: W
           })
         };
@@ -189,7 +189,7 @@ let R = {
       filesMetadata: o = []
     } = e, i = Array.from(r).map((e, r) => {
       let n = null != o ? o[r] : {};
-      return new d.n(D({
+      return new d.n(M({
         file: e,
         platform: p.ow.WEB,
         isThumbnail: a
@@ -242,7 +242,7 @@ let R = {
           type: "UPLOAD_FAIL",
           channelId: r,
           file: t
-        }), (0, O.x)({
+        }), (0, h.x)({
           fileItems: t.items,
           failureCode: d
         }), d === k.evJ.EXPLICIT_CONTENT) return void i.Z.sendExplicitMediaClydeError(r, null == p ? void 0 : p.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);

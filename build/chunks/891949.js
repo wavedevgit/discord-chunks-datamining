@@ -1,22 +1,21 @@
 /** Chunk was on 95287 **/
 r.d(t, {
-  Z: () => p
+  Z: () => d
 }), r(388685);
 var n = r(200651),
   a = r(192379),
   o = r(481060),
-  i = r(341176),
-  l = r(312097),
-  s = r(810568),
-  c = r(388032),
-  u = r(263930),
-  d = r(301736);
+  i = r(312097),
+  l = r(810568),
+  s = r(388032),
+  c = r(263930),
+  u = r(301736);
 
-function p(e) {
+function d(e) {
   let {
     detectedGame: t,
     trackAction: r
-  } = e, p = a.useRef(null), f = a.useMemo(() => {
+  } = e, d = a.useRef(null), p = a.useMemo(() => {
     let e = t.artwork.map(e => ({
       url: e,
       type: "IMAGE"
@@ -25,71 +24,68 @@ function p(e) {
       url: e,
       type: "IMAGE"
     })), ...e]
-  }, [t.artwork, t.screenshots]), m = f.length > 2;
+  }, [t.artwork, t.screenshots]), f = p.length > 2;
 
-  function g(e) {
-    if (null == p.current) return;
-    let t = p.current.getScrollerState().scrollLeft;
-    p.current.scrollTo({
+  function m(e) {
+    if (null == d.current) return;
+    let t = d.current.getScrollerState().scrollLeft;
+    d.current.scrollTo({
       to: t + 280 * e,
       animate: !0
     })
   }
-  return 0 === f.length ? null : (0, n.jsxs)("div", {
+  return 0 === p.length ? null : (0, n.jsxs)("div", {
     children: [(0, n.jsx)(o.X6q, {
-      className: u.sectionHeader,
+      className: c.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: c.NW.string(c.t["bNdK5+"])
+      children: s.NW.string(s.t["bNdK5+"])
     }), (0, n.jsxs)("div", {
-      className: m ? d.gameProfileMediaSmall : d.gameProfileMediaLarge,
+      className: f ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
       children: [(0, n.jsx)(o.xVE, {
-        ref: p,
-        className: d.imageScroller,
+        ref: d,
+        className: u.imageScroller,
         orientation: "horizontal",
-        children: f.map((e, t) => (0, n.jsx)(o.P3F, {
-          className: d.imageClickable,
+        children: p.map((e, t) => (0, n.jsx)(o.P3F, {
+          className: u.imageClickable,
           focusProps: {
             offset: 4,
-            ringClassName: d.gameArtworkFocusRing
+            ringClassName: u.gameArtworkFocusRing
           },
           onClick: () => {
-            r(s.as.ClickImage), (0, l.K)({
-              className: d.mediaModal,
-              items: f,
-              fit: i.D.SCALE_DOWN,
+            r(l.as.ClickImage), (0, i.K)({
+              items: p,
               startingIndex: t,
               shouldHideMediaOptions: !0,
-              shouldAnimateCarousel: !0,
               location: "GameProfileMedia"
             })
           },
           children: (0, n.jsx)("img", {
             src: e.url,
-            className: d.gameArtwork,
-            alt: c.NW.formatToPlainString(c.t.COYYrq, {
+            className: u.gameArtwork,
+            alt: s.NW.formatToPlainString(s.t.COYYrq, {
               game: name
             })
           })
         }, t))
-      }), m && (0, n.jsxs)("div", {
-        className: d.mediaOverlay,
+      }), f && (0, n.jsxs)("div", {
+        className: u.mediaOverlay,
         children: [(0, n.jsx)("div", {
-          className: d.gradientLeft
+          className: u.gradientLeft
         }), (0, n.jsx)(o.P3F, {
-          className: d.arrowClickable,
-          onClick: () => g(-1),
+          className: u.arrowClickable,
+          onClick: () => m(-1),
           children: (0, n.jsx)(o.whL, {
-            className: d.arrow,
+            className: u.arrow,
             color: "currentColor"
           })
         }), (0, n.jsx)("div", {
-          className: d.gradientRight
+          className: u.gradientRight
         }), (0, n.jsx)(o.P3F, {
-          className: d.arrowClickable,
-          onClick: () => g(1),
+          className: u.arrowClickable,
+          onClick: () => m(1),
           children: (0, n.jsx)(o.ZSh, {
-            className: d.arrow,
+            className: u.arrow,
             color: "currentColor"
           })
         })]

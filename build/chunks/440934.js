@@ -1,4 +1,4 @@
-/** Chunk was on 40617 **/
+/** Chunk was on 26779 **/
 n.r(t), n.d(t, {
   default: () => d,
   openInteractionModal: () => p
@@ -21,8 +21,8 @@ function d(e) {
     transitionState: d
   } = e, {
     components: p,
-    applicationIconURL: f,
-    applicationName: I,
+    applicationIconURL: I,
+    applicationName: f,
     submissionState: m,
     error: S,
     validators: C,
@@ -37,9 +37,9 @@ function d(e) {
       children: [(0, i.jsxs)(o.xBx, {
         separator: !1,
         children: [(0, i.jsx)(o.qEK, {
-          src: f,
+          src: I,
           size: o.EFr.SIZE_24,
-          "aria-label": I,
+          "aria-label": f,
           className: u.applicationIcon
         }), (0, i.jsx)(r.Z, {
           color: r.Z.Colors.HEADER_PRIMARY,
@@ -58,7 +58,7 @@ function d(e) {
           messageType: o.QYI.WARNING,
           className: u.submissionWarning,
           children: _.NW.format(_.t["dSTy//"], {
-            applicationName: I
+            applicationName: f
           })
         }), (0, i.jsx)(o.hjN, {
           children: (0, i.jsx)(a.Il, {

@@ -1,8 +1,8 @@
 /** Chunk was on 46097 **/
 n.d(t, {
-  P: () => r
+  P: () => i
 });
-let r = (0, n(818083).B)({
+let i = (0, n(818083).B)({
   kind: "user",
   id: "2024-07_contextual_image_recs_user",
   label: "Contextual Image Recommendations",

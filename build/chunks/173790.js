@@ -40,10 +40,10 @@ function P(e) {
   } = r.useMemo(() => (0, b.sl)(O, {
     fakeAppIconURL: j,
     size: 84
-  }), [O]), D = (0, d.PL)(!0, !0), W = (0, d.LD)(null == A ? void 0 : A.guild_id, !0), U = r.useMemo(() => (0, d.If)(n, O.id), [D, W, n, O.id]), B = !U.isGuildInstalled && !U.isUserInstalled;
+  }), [O]), D = (0, d.PL)(!0, !0), W = (0, d.LD)(null == A ? void 0 : A.guild_id, !0), B = r.useMemo(() => (0, d.If)(n, O.id), [D, W, n, O.id]), U = !B.isGuildInstalled && !B.isUserInstalled;
   return r.useEffect(() => {
-    B && d.ZP.queryInstallOnDemandApp(O.id, null == A ? void 0 : A.id)
-  }, [O.id, null == A ? void 0 : A.id, B]), (0, i.jsxs)(o.u2D, {
+    U && d.ZP.queryInstallOnDemandApp(O.id, null == A ? void 0 : A.id)
+  }, [O.id, null == A ? void 0 : A.id, U]), (0, i.jsxs)(o.u2D, {
     className: g.container,
     fade: !0,
     ref: w,
@@ -73,7 +73,7 @@ function P(e) {
       context: n,
       application: O,
       sectionName: u,
-      installOnDemand: B,
+      installOnDemand: U,
       setHasCommands: k
     }) : null, L.enabled ? (0, i.jsx)(y.u, {
       context: n,

@@ -1,6 +1,6 @@
 /**
   Module ID: 95287
-  Original File Name: ad9e51eb3133e88b
+  Original File Name: b978b5440d95fa09
 **/
 .fallback_b789ab {
     box-sizing: border-box;
@@ -196,27 +196,6 @@
     text-overflow: ellipsis
 }
 
-.slide_fd65ff {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%
-}
-
-.scaleDown_fd65ff {
-    -o-object-fit: scale-down;
-    object-fit: scale-down;
-    cursor: zoom-out
-}
-
-.contain_fd65ff {
-    -o-object-fit: contain;
-    object-fit: contain;
-    cursor: zoom-out
-}
-
 .gameProfileMedia_a1cc72 {
     position: relative
 }
@@ -319,10 +298,6 @@
 
 .clickable_a1cc72:hover .arrow_a1cc72 {
     opacity: 1
-}
-
-.mediaModal_a1cc72 {
-    background-color: transparent
 }
 
 .ephemeral__5126c {
@@ -2257,4 +2232,4 @@ img.thumbnail__0f2e8 {
     margin-top: 8px
 }
 
-/*# sourceMappingURL=ad9e51eb3133e88b.css.map*/
+/*# sourceMappingURL=b978b5440d95fa09.css.map*/

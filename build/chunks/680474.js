@@ -1,6 +1,6 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 });
 var r = n(200651),
   a = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   h = n(388032),
   g = n(348666);
 
-function f(e) {
+function _(e) {
   let {
     application: t
   } = e, n = a.useMemo(() => {

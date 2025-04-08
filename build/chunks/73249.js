@@ -23,7 +23,7 @@ var a = n(200651),
   S = n(254109),
   E = n(212459),
   C = n(369171),
-  v = n(701865),
+  v = n(312097),
   T = n(388032),
   j = n(505348);
 
@@ -70,7 +70,7 @@ function M(e, t) {
 }
 
 function I() {
-  (0, s.Mr3)(v.U)
+  (0, s.Mr3)(v.Q)
 }
 let D = r.forwardRef(function(e, t) {
   var {
@@ -161,7 +161,7 @@ function A(e) {
       })
     }
   }, [i, c]);
-  return null != i && (0, d.h)(i) ? (0, a.jsx)(D, {
+  return null != i && null != c && (0, d.h)(i) ? (0, a.jsx)(D, {
     onClick: l,
     tooltipText: T.NW.string(T.t.I3ltXF),
     icon: s.WZu
@@ -234,7 +234,7 @@ function R(e) {
       height: i
     } = e, c = k(T.NW.string(T.t.ILJuBg), "name", {
       subtextLineClamp: 1
-    }), l = k(T.NW.string(T.t.sPO3io), "size"), u = k(T.NW.string(T.t.eOB2eX), "alt", {
+    }), l = k(T.NW.string(T.t["3Nf9u7"]), "size"), u = k(T.NW.string(T.t.eOB2eX), "alt", {
       subtextLineClamp: 2
     });
     if ((null == r || null == (t = r.identifier) ? void 0 : t.type) !== "attachment") return null;
@@ -242,7 +242,7 @@ function R(e) {
       p = (0, y.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
-      label: T.NW.string(T.t.GoCQxc),
+      label: T.NW.string(T.t.sqBLa2),
       children: [c(d), l(T.NW.formatToPlainString(T.t.DTdonJ, {
         width: o,
         height: i,

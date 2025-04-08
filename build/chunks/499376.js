@@ -5,9 +5,9 @@ n.d(t, {
   aw: () => c,
   pU: () => d
 }), n(997841), n(35282);
-var r = n(630388),
+var i = n(630388),
   o = n(406432),
-  i = n(828061),
+  r = n(828061),
   l = n(981631);
 let s = /\.(mp3|m4a|ogg|opus|wav|flac)$/i,
   a = e => "IMAGE" === e || "VIDEO" === e || "CLIP" === e || "VISUAL_PLACEHOLDER" === e,
@@ -24,17 +24,17 @@ function c(e, t) {
     else {
       var c;
       if (!(0, o.NU)(n) || null == e.proxy_url) return "INVALID";
-      return (0, r.yE)(null != (c = e.flags) ? c : 0, l.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
-    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, i.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
+      return (0, i.yE)(null != (c = e.flags) ? c : 0, l.J0y.IS_CLIP) ? "CLIP" : "VIDEO"
+    } return null != t && s.test(n) && null != e.url ? "AUDIO" : null != e.url && (0, r.O)(n) ? "PLAINTEXT_PREVIEW" : "OTHER"
 }
 
 function d(e) {
   let {
     contentType: t,
     width: n,
-    height: r
+    height: i
   } = e;
-  if (null != n && n > 0 && null != r && r > 0) {
+  if (null != n && n > 0 && null != i && i > 0) {
     if ((0, o.tw)(t)) return "IMAGE";
     else if ((0, o.X2)(t)) return "VIDEO"
   }

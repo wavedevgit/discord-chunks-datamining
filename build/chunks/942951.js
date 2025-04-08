@@ -1,35 +1,36 @@
 /** Chunk was on 28965 **/
 "use strict";
-r.d(t, {
+n.d(t, {
   l: () => g
-});
-var n = r(200651),
-  l = r(192379),
-  o = r(442837),
-  i = r(481060),
-  u = r(607070),
-  a = r(100527),
-  c = r(906732),
-  s = r(181918),
-  d = r(956226),
-  f = r(670188),
-  p = r(592125),
-  b = r(91047);
+}), n(388685);
+var r = n(200651),
+  l = n(192379),
+  o = n(442837),
+  i = n(481060),
+  u = n(607070),
+  a = n(100527),
+  s = n(906732),
+  c = n(181918),
+  d = n(956226),
+  f = n(823415),
+  p = n(670188),
+  b = n(592125),
+  v = n(91047);
 
-function v(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -38,75 +39,81 @@ function v(e) {
 function g(e) {
   let {
     user: t,
-    channelId: r,
+    channelId: n,
     guildId: g,
-    messageId: h,
+    messageId: m,
     stopPropagation: O = !1,
-    ariaLabel: m
+    ariaLabel: y
   } = e, {
-    analyticsLocations: y
-  } = (0, c.ZP)(a.Z.USERNAME), j = (0, s.$V)(g, "useUsernameHook"), w = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), P = l.useCallback(e => {
-    let n = p.Z.getChannel(r);
-    null != n && null != t && (0, b.Pv)(e, t, n)
-  }, [t, r]);
+    analyticsLocations: w
+  } = (0, s.ZP)(a.Z.USERNAME), j = (0, c.$V)(g, "useUsernameHook"), P = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [S, C] = l.useState(!1), E = (0, f.ic)({
+    location: "useUsernameHook"
+  }), I = l.useCallback(e => {
+    let r = b.Z.getChannel(n);
+    null != r && null != t && (0, v.Pv)(e, t, r)
+  }, [t, n]);
   return l.useCallback(e => (l, o) => {
     let u = null == e ? void 0 : e.colorStrings,
-      a = j && null != u && null != u.primaryColor && null != u.secondaryColor ? (0, d.$)(u.primaryColor, u.secondaryColor, u.tertiaryColor, w) : void 0,
-      s = t => {
-        var r, o;
-        return (0, n.jsx)(i.rz2, (r = v({}, null != t ? t : {}), o = o = {
-          onContextMenu: P,
+      a = j && null != u && null != u.primaryColor && null != u.secondaryColor ? (0, d.$)(u.primaryColor, u.secondaryColor, u.tertiaryColor, P) : void 0,
+      c = t => {
+        var n, o;
+        return (0, r.jsx)(i.rz2, (n = h({}, null != t ? t : {}), o = o = {
+          onContextMenu: I,
           name: l,
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
           roleGradient: a,
-          "aria-label": m
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-          var r = Object.keys(e);
+          "aria-label": y
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
+          return n
         })(Object(o)).forEach(function(e) {
-          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
-        }), r))
+          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(o, e))
+        }), n))
       },
-      p = e => t => {
+      f = e => t => {
         O && null != t && t.stopPropagation(), e(t)
       };
-    return (0, n.jsx)(c.Gt, {
-      value: y,
-      children: null != t ? (0, n.jsx)(f.Z, {
+    return (0, r.jsx)(s.Gt, {
+      value: w,
+      children: null != t ? (0, r.jsx)(p.Z, {
         user: t,
         guildId: g,
-        channelId: r,
-        messageId: h,
+        channelId: n,
+        messageId: m,
+        shouldShowOnHover: E,
         roleId: null == e ? void 0 : e.colorRoleId,
-        clickTrap: !0,
+        clickTrap: S,
+        shouldShow: S,
+        onRequestOpen: () => C(!0),
+        onRequestClose: () => C(!1),
         children: e => {
           var {
             onClick: t
-          } = e, r = function(e, t) {
+          } = e, n = function(e, t) {
             if (null == e) return {};
-            var r, n, l = function(e, t) {
+            var n, r, l = function(e, t) {
               if (null == e) return {};
-              var r, n, l = {},
+              var n, r, l = {},
                 o = Object.keys(e);
-              for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+              for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
               return l
             }(e, t);
             if (Object.getOwnPropertySymbols) {
               var o = Object.getOwnPropertySymbols(e);
-              for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
+              for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
           }(e, ["onClick"]);
-          return s(v({
-            onClick: p(t)
-          }, r))
+          return c(h({
+            onClick: f(t)
+          }, n))
         }
-      }) : s(void 0)
+      }) : c(void 0)
     }, o)
-  }, [y, t, r, g, h, P, O, m, j, w])
+  }, [w, t, n, g, m, I, O, y, j, P, E, S])
 }

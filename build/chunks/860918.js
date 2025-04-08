@@ -1,4 +1,4 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 37658 **/
 e.exports = {
   mainContainer: "mainContainer__44492",
   compact: "compact__44492",

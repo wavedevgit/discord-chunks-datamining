@@ -1,4 +1,4 @@
-/** Chunk was on 84927 **/
+/** Chunk was on 37658 **/
 e.exports = {
   normalStylesDefault: "normalStylesDefault_a1443c",
   normalStylesImageOnlyAnswers: "normalStylesImageOnlyAnswers_a1443c",

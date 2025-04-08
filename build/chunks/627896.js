@@ -1,22 +1,22 @@
 /** Chunk was on 18895 **/
 n.d(t, {
-  x: () => r
+  x: () => o
 }), n(388685);
 var i = n(192379);
 
-function r(e, t, n) {
-  let r = i.useRef(null),
-    [o, a] = i.useState(!1),
-    l = i.useCallback(() => {
-      if (e && null !== r.current) {
+function o(e, t, n) {
+  let o = i.useRef(null),
+    [r, a] = i.useState(!1),
+    s = i.useCallback(() => {
+      if (e && null !== o.current) {
         var n;
-        a((null == (n = r.current) ? void 0 : n.offsetHeight) > 2.5 * t)
+        a((null == (n = o.current) ? void 0 : n.offsetHeight) > 2.5 * t)
       }
     }, [a, e, t]);
   return i.useLayoutEffect(() => {
-    l()
-  }, [l, e, n]), {
-    postTitleRef: r,
-    isNewBadgeOverflow: o
+    s()
+  }, [s, e, n]), {
+    postTitleRef: o,
+    isNewBadgeOverflow: r
   }
 }
