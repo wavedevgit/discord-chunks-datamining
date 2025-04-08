@@ -130,6 +130,20 @@ async function main() {
         for (let type in all) {
             await fs.writeFile('./build/chunks_api/'+type+"/all.json", JSON.stringify(all[type],null,4), 'utf-8');
         }
+        for (let chunk of all["unknown"]) {
+            const [type, chunkData] = determineType(everyChunks[chunk.id], chunk.id, languagesChunks);
+            const data = {
+                            id: chunk,
+                            type,
+                            data: chunkData,
+                            fromModule: {
+                                id: everyChunks[chunk].split('/** Chunk was on')[1].split(' **/')[0].split(' ')[1]
+                            }
+                        };
+                        if (data.type !== 'unknown') console.log('Chunk ', data.id, data.type, data.data);
+                        all[data.type].push({ id: data.id, data: data.data });
+
+        }
         delete all['unknown'];
         await fs.writeFile('./build/chunks_api/all.json', JSON.stringify(all), 'utf-8');
     }, 'Generating json list of chunks');
