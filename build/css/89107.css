@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: 5ab9e79003f2b4d1
+  Original File Name: 2509bcc417fa3859
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -8599,6 +8599,11 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     margin-bottom: var(--custom-chat-input-margin-bottom)
 }
 
+.hasWallpaper_f75fb0 {
+    --chat-text-muted: var(--text-muted);
+    --text-low-contrast: var(--text-secondary)
+}
+
 .container__01ae2 {
     display: flex;
     flex-direction: column;
@@ -14065,4 +14070,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=5ab9e79003f2b4d1.css.map*/
+/*# sourceMappingURL=2509bcc417fa3859.css.map*/

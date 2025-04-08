@@ -85,7 +85,7 @@ function v(A) {
       onPrimaryColorChange: v,
       onSecondaryColorChange: I
     }),
-    position: "left",
+    position: "top",
     shouldShow: g,
     onRequestClose: Q,
     animation: w.yRy.Animation.TRANSLATE,
