@@ -174,6 +174,7 @@ function x(e) {
     d = "username" === s && c;
   return (0, r.jsxs)(_.Z, {
     color: d ? a.color : null,
+    roleColors: d ? a.colorStrings : null,
     children: [u && (0, r.jsx)(o.FhE, {
       color: a.colorString,
       background: !1,

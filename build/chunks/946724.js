@@ -11,7 +11,7 @@ var a, l = n(392711),
   u = n(442837),
   m = n(570140),
   g = n(561654),
-  p = n(393031),
+  p = n(956226),
   h = n(430824),
   f = n(990492),
   b = n(823379),
@@ -281,7 +281,7 @@ let G = new M(m.Z, __OVERLAY__ ? {} : {
         colors: n
       } = e, r = W(t);
       if (null == r) return !1;
-      let i = (0, p.Z)(n);
+      let i = (0, p.D)(n);
       return k(r, {
         color: n.primary_color,
         colors: n,

@@ -8,7 +8,7 @@ n.d(t, {
 }), n(997841), n(642613);
 var r = n(149765),
   i = n(866442),
-  o = n(393031),
+  o = n(956226),
   a = n(709054);
 
 function s(e) {
@@ -27,7 +27,7 @@ function l(e) {
     color: e.color,
     colorString: null != e.color && 0 !== e.color ? (0, i.Rf)(e.color) : null,
     colors: e.colors,
-    colorStrings: null != e.colors ? (0, o.Z)(e.colors) : null,
+    colorStrings: null != e.colors ? (0, o.D)(e.colors) : null,
     hoist: e.hoist,
     managed: e.managed,
     tags: e.tags,
