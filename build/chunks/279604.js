@@ -2,7 +2,7 @@
 n.d(t, {
   KE: () => b,
   KT: () => m,
-  ZP: () => y
+  ZP: () => _
 }), n(388685), n(457542);
 var r = n(200651),
   i = n(192379),
@@ -68,14 +68,14 @@ function b(e, t) {
   })
 }
 
-function y(e, t) {
+function _(e, t) {
   var m;
   let {
-    analyticsLocations: y
-  } = (0, a.ZP)(), [_, v] = i.useState(!1), [O, j] = i.useState(void 0), x = (0, l.e7)([p.Z], () => {
+    analyticsLocations: _
+  } = (0, a.ZP)(), [y, v] = i.useState(!1), [O, j] = i.useState(void 0), C = (0, l.e7)([p.Z], () => {
     var t, n;
     return null != (n = null == (t = p.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts) ? n : 0
-  }), C = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null != (m = null == C ? void 0 : C.premiumSubscriberCount) ? m : 0) - x, 0), P = i.useCallback(n => {
+  }), x = (0, l.e7)([u.Z], () => u.Z.getGuild(e)), S = Math.max((null != (m = null == x ? void 0 : x.premiumSubscriberCount) ? m : 0) - C, 0), P = i.useCallback(n => {
     let r = n ? d.H6 : d.Th;
     return v(!0), j(void 0), r(e, t.skuId).catch(e => {
       var t;
@@ -84,14 +84,14 @@ function y(e, t) {
       v(!1)
     })
   }, [e, t.skuId]), I = i.useCallback(e => {
-    if (e.stopPropagation(), null != C) return S < t.cost ? void(0, s.u)({
+    if (e.stopPropagation(), null != x) return S < t.cost ? void(0, s.u)({
       analyticsLocation: {
         page: f.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: f.jXE.GUILD_POWERUPS_OVERVIEW_CARD
       },
       numberOfBoostsToAdd: t.cost - S,
-      analyticsLocations: y,
-      guild: C,
+      analyticsLocations: _,
+      guild: x,
       intent: t.type === h.Us.LEVEL ? c.P.LEVEL : c.P.PERK,
       onSubscribeComplete: () => P(!0).then(() => {
         (0, o.ZDy)(async () => {
@@ -99,7 +99,7 @@ function y(e, t) {
             default: e
           } = await n.e("13965").then(n.bind(n, 666083));
           return n => (0, r.jsx)(e, g({
-            guildId: C.id,
+            guildId: x.id,
             powerup: t
           }, n))
         })
@@ -110,14 +110,14 @@ function y(e, t) {
           default: e
         } = await n.e("13965").then(n.bind(n, 666083));
         return n => (0, r.jsx)(e, g({
-          guildId: C.id,
+          guildId: x.id,
           powerup: t
         }, n))
       })
     })
-  }, [P, t, S, y, C]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
+  }, [P, t, S, _, x]), N = i.useCallback(e => (e.stopPropagation(), P(!1)), [P]);
   return {
-    isLoading: _,
+    isLoading: y,
     error: O,
     onActivate: I,
     onDeactivate: N,

@@ -16,20 +16,20 @@ var r, i = n(200651),
   g = n(367907),
   m = n(453542),
   b = n(702321),
-  y = n(46148),
-  _ = n(82295),
+  _ = n(46148),
+  y = n(82295),
   v = n(313201),
   O = n(540059),
   j = n(860144),
-  x = n(214852),
-  C = n(518311),
+  C = n(214852),
+  x = n(518311),
   S = n(355298),
   P = n(869404),
   I = n(333984),
   N = n(210887),
-  Z = n(592125),
-  w = n(158776),
-  E = n(55589),
+  E = n(592125),
+  Z = n(158776),
+  w = n(55589),
   T = n(515753),
   A = n(981631),
   D = n(388032),
@@ -323,7 +323,7 @@ class B extends(r = l.Component) {
         c = n.some(e => (0, b.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && w.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && Z.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = !0, g.ZP.trackWithMetadata(A.rMx.DM_LIST_VIEWED, M(k({}, u, (0, m.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -350,7 +350,7 @@ class B extends(r = l.Component) {
         totalRowCount: o,
         preRenderedChildren: a
       } = this.state, s = r[n[t]];
-      return null == s ? null : (0, i.jsx)(y.s, {
+      return null == s ? null : (0, i.jsx)(_.s, {
         channelId: s.id,
         selectedChannelId: l,
         children: (0, i.jsx)(T.ZP, {
@@ -384,12 +384,12 @@ class B extends(r = l.Component) {
         showDMHeader: n,
         isVisualRefreshEnabled: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(_.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(y.Z, {
         className: R.privateChannelsHeaderContainer,
         children: [(0, i.jsx)("span", {
           className: R.headerText,
           children: D.NW.string(D.t.YUU0RE)
-        }), (0, i.jsx)(C.Z, {
+        }), (0, i.jsx)(x.Z, {
           tooltip: D.NW.string(D.t["6Urw1t"]),
           tooltipPosition: "top",
           popoutAlign: "left",
@@ -439,22 +439,22 @@ let U = e => {
       showDMHeader: h
     } = e,
     g = l.Children.count(d),
-    m = Z.Z.getMutablePrivateChannels(),
+    m = E.Z.getMutablePrivateChannels(),
     b = (0, P.k1)(m),
-    y = (0, u.Wu)([E.Z, S.Z, I.Z], () => {
-      let e = E.Z.getPrivateChannelIds();
+    _ = (0, u.Wu)([w.Z, S.Z, I.Z], () => {
+      let e = w.Z.getPrivateChannelIds();
       return (0, P.tU)(e, [S.Z, I.Z])
     }, []);
-  (0, x.z)(j.R);
-  let _ = (0, u.cj)([f.Z, N.Z, Z.Z], () => ({
+  (0, C.z)(j.R);
+  let y = (0, u.cj)([f.Z, N.Z, E.Z], () => ({
       theme: N.Z.darkSidebar ? A.BRd.DARK : a,
       keyboardModeEnabled: f.Z.keyboardModeEnabled,
-      version: null != o ? "".concat(o, ":").concat(Z.Z.getPrivateChannelsVersion()) : Z.Z.getPrivateChannelsVersion()
+      version: null != o ? "".concat(o, ":").concat(E.Z.getPrivateChannelsVersion()) : E.Z.getPrivateChannelsVersion()
     })),
-    C = l.useRef(null),
-    w = null != (t = e.listScrollerRef) ? t : C,
+    x = l.useRef(null),
+    Z = null != (t = e.listScrollerRef) ? t : x,
     T = l.useCallback(e => {
-      let t = w.current,
+      let t = Z.current,
         n = document.querySelector(e);
       null != t && null != n && t.scrollIntoViewNode({
         node: n,
@@ -467,27 +467,27 @@ let U = e => {
           })
         }
       })
-    }, [w]),
+    }, [Z]),
     D = l.useCallback(() => new Promise(e => {
-      let t = w.current;
+      let t = Z.current;
       if (null == t) return e();
       t.scrollToTop({
         callback: () => requestAnimationFrame(() => e())
       })
-    }), [w]),
+    }), [Z]),
     R = l.useCallback(() => new Promise(e => {
-      let t = w.current;
+      let t = Z.current;
       if (null == t) return e();
       t.scrollToBottom({
         callback() {
           requestAnimationFrame(() => setTimeout(e, 100))
         }
       })
-    }), [w]),
+    }), [Z]),
     L = (0, v.Dt)(),
     G = (0, c.ZP)({
       id: "private-channels-".concat(L),
-      isEnabled: _.keyboardModeEnabled,
+      isEnabled: y.keyboardModeEnabled,
       scrollToStart: D,
       scrollToEnd: R,
       defaultFocused: (g + +!!h).toString(),
@@ -499,12 +499,12 @@ let U = e => {
       density: r,
       isVisualRefreshEnabled: n,
       channels: b,
-      privateChannelIds: y,
-      listRef: w,
+      privateChannelIds: _,
+      listRef: Z,
       theme: a,
       version: o
     }, e), {
       children: d
-    }), _))
+    }), y))
   })
 }

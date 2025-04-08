@@ -20,16 +20,16 @@ let b = i.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
-    lowerBadge: y
-  } = e, _ = b.id, v = (0, l.e7)([p.Z], () => p.Z.getGuild(_)), O = (0, a.E)(v), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), C = (0, c.Z)(e => e.guildId), S = (0, f.Z)(_), {
+    lowerBadge: _
+  } = e, y = b.id, v = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(v), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), S = (0, f.Z)(y), {
     badge: P,
     unread: I,
     isMentionLowImportance: N
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(_),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(_),
-    unread: d.default.hasUnread(_)
-  })), Z = (0, s.Ij)(v) && 0 === P, w = i.useMemo(() => null != y ? y : Z ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(y),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
+    unread: d.default.hasUnread(y)
+  })), E = (0, s.Ij)(v) && 0 === P, Z = i.useMemo(() => null != _ ? _ : E ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -38,7 +38,7 @@ let b = i.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [y, Z]);
+  }) : null, [_, E]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -58,12 +58,12 @@ let b = i.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: v,
-    unavailable: x,
+    unavailable: C,
     animatable: j,
-    selected: C === _,
+    selected: x === y,
     badge: P,
     isMentionLowImportance: N,
-    lowerBadge: w,
+    lowerBadge: Z,
     unread: I,
     mediaState: S,
     guildJoinRequestStatus: O

@@ -1,6 +1,6 @@
 /** Chunk was on 8039 **/
 n.d(t, {
-  i: () => _
+  i: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,9 +17,9 @@ var r = n(200651),
   g = n(479766),
   m = n(331663),
   b = n(921944),
-  y = n(46140);
+  _ = n(46140);
 
-function _() {
+function y() {
   let {
     hasLayers: e
   } = (0, l.cj)([h.Z], () => ({
@@ -29,12 +29,12 @@ function _() {
   } = (0, l.cj)([g.Z], () => ({
     onboardingModalOpenedPrior: g.Z.onboardingModalOpenedPrior
   })), {
-    enabled: _
+    enabled: y
   } = (0, f.W)({
     location: "virtual_currency_announcement_modal"
-  }), [v, O] = (0, d.US)(_ ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
+  }), [v, O] = (0, d.US)(y ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    _ && !t && v === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || j || (c.Z.dispatch({
+    y && !t && v === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || j || (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -56,7 +56,7 @@ function _() {
               dismissAction: b.L.INDIRECT_ACTION,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, p.navigateToQuestHome)({
-              questId: y.V6
+              questId: _.V6
             }), n()
           }
         })
@@ -66,5 +66,5 @@ function _() {
         O(b.L.USER_DISMISS)
       }
     })))
-  }, [v, _, t, O, e, j])
+  }, [v, y, t, O, e, j])
 }

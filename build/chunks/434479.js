@@ -53,8 +53,8 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: y,
-      background: _,
+      trailing: _,
+      background: y,
       showUnread: v = !1
     } = e,
     O = function(e, t) {
@@ -73,7 +73,7 @@ function f(e) {
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
   let j = (0, o.JA)(n),
-    x = null != (t = (0, a.qg)(m)) ? t : "";
+    C = null != (t = (0, a.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
     children: (0, r.jsxs)(s.kL8, h(p({}, O), {
       buttonProps: h(p({}, j), {
@@ -81,7 +81,7 @@ function f(e) {
         role: "button"
       }),
       tag: "div",
-      "aria-label": x,
+      "aria-label": C,
       focusProps: {
         offset: {
           top: 1,
@@ -95,7 +95,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [_, v ? (0, r.jsx)("div", {
+      children: [y, v ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),
@@ -108,7 +108,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), y]
+          }), _]
         })
       })]
     }))

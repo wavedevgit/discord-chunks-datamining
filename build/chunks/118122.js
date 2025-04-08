@@ -1,6 +1,6 @@
 /** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(594174),
   m = n(40153),
   b = n(603592),
-  y = n(981631),
-  _ = n(675999),
+  _ = n(981631),
+  y = n(675999),
   v = n(388032),
   O = n(176330);
 let j = {
@@ -34,7 +34,7 @@ let j = {
   }
 };
 
-function x(e) {
+function C(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -60,23 +60,23 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), C = i.useMemo(() => Object.values(a), [a]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), P = i.useMemo(() => C.some(e => e.isOwner(S)), [C, S]), I = (0, o.s9z)(e => (0, o.DEQ)(e, _.PU)), {
+  } = e, a = (0, l.e7)([f.Z], () => f.Z.getGuilds()), x = i.useMemo(() => Object.values(a), [a]), S = (0, l.e7)([g.default], () => g.default.getCurrentUser()), P = i.useMemo(() => x.some(e => e.isOwner(S)), [x, S]), I = (0, o.s9z)(e => (0, o.DEQ)(e, y.PU)), {
     analyticsLocations: N
-  } = (0, s.ZP)(), Z = (0, u.Q3)("CreateJoinGuildButton"), w = (0, r.jsx)(b.Z, {
+  } = (0, s.ZP)(), E = (0, u.Q3)("CreateJoinGuildButton"), Z = (0, r.jsx)(b.Z, {
     showPill: !1,
     id: "create-join-button",
     onClick: () => {
       (0, d.yU)() ? (0, p.Z)({
         analyticsSource: {
-          page: y.Sbl.CREATE_JOIN_GUILD_MODAL
+          page: _.Sbl.CREATE_JOIN_GUILD_MODAL
         },
         analyticsLocation: {
-          page: y.Sbl.CREATE_JOIN_GUILD_MODAL,
-          section: y.jXE.GUILD_CAP_UPSELL_MODAL
+          page: _.Sbl.CREATE_JOIN_GUILD_MODAL,
+          section: _.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: N
       }) : c.Z.openCreateGuildModal({
@@ -84,17 +84,17 @@ function C(e) {
       })
     },
     selected: I,
-    onContextMenu: x,
+    onContextMenu: C,
     tooltip: v.NW.string(v.t.l5WIbW),
-    icon: Z ? o.oFk : o.BRu
+    icon: E ? o.oFk : o.BRu
   });
-  return t ? w : (0, r.jsx)("div", {
+  return t ? Z : (0, r.jsx)("div", {
     className: O.tutorialContainer,
     children: (0, r.jsxs)(h.Z, {
       tutorialId: P ? "create-more-servers" : "create-first-server",
       inlineSpecs: j,
       position: "right",
-      children: [w, null != n && (0, r.jsx)(m.ZP, {
+      children: [Z, null != n && (0, r.jsx)(m.ZP, {
         name: v.NW.string(v.t["45xjMz"]),
         targetNode: n,
         below: !0,

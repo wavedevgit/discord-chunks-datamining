@@ -1,5 +1,7 @@
-/** Chunk was on 53494 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  o: () => i
-});
-var r, i = ((r = {})[r.UNREAD = 0] = "UNREAD", r[r.WARNING = 1] = "WARNING", r[r.POPOUT_LEVELED_UP = 2] = "POPOUT_LEVELED_UP", r[r.POPOUT_NEW_PERK = 3] = "POPOUT_NEW_PERK", r)
+  J: () => l,
+  d: () => r
+}), n(192379);
+let r = 216e5;
+var i, l = ((i = {})[i.LEVEL_REACHED = 0] = "LEVEL_REACHED", i[i.PERKS_PURCHASABLE = 1] = "PERKS_PURCHASABLE", i[i.PERKS_AVAILABLE = 2] = "PERKS_AVAILABLE", i)

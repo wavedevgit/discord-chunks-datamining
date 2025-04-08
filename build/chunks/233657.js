@@ -1,6 +1,6 @@
 /** Chunk was on 8039 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -49,12 +49,12 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     guild: t,
-    selected: y
+    selected: _
   } = e, {
-    hasUnread: _,
+    hasUnread: y,
     mentionCount: v
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
@@ -70,9 +70,9 @@ function y(e) {
       }))
     }), (0, s.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
-      number: x.length
+  let C = (0, c.ZP)(t.id),
+    x = C.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
+      number: C.length
     }) : f.NW.string(f.t.tlopTE);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
@@ -81,8 +81,8 @@ function y(e) {
       color: "currentColor",
       className: e
     }),
-    text: C,
-    selected: y,
+    text: x,
+    selected: _,
     onClick: j,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
@@ -94,7 +94,7 @@ function y(e) {
         }))
       })
     },
-    showUnread: _ && !O,
+    showUnread: y && !O,
     trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,

@@ -1,6 +1,6 @@
 /** Chunk was on 8039 **/
 n.d(t, {
-  OG: () => x,
+  OG: () => C,
   ZP: () => O,
   Zu: () => j
 }), n(388685);
@@ -32,7 +32,7 @@ function b(e) {
   }, n), t
 }
 
-function y(e, t) {
+function _(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return s()(t.type !== p.eD.ROOT, "[GuildDropTarget] Tried using a root node as a drop target."), {
@@ -51,13 +51,13 @@ function y(e, t) {
   }
 }
 
-function _(e) {
+function y(e) {
   let {
     name: t,
     targetNode: n,
     combine: l,
     below: o
-  } = e, a = i.useMemo(() => y([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
+  } = e, a = i.useMemo(() => _([p.eD.GUILD, p.eD.FOLDER], n, o, l), [n, o, l]), [{
     canDrop: s,
     isOver: u
   }, d] = (0, c.L)(a), h = b([
@@ -83,7 +83,7 @@ function v(e) {
   } = e, [{
     canDrop: a,
     isOver: s
-  }, u] = (0, c.L)(() => y([p.eD.GUILD], n, !0, !0));
+  }, u] = (0, c.L)(() => _([p.eD.GUILD], n, !0, !0));
   i.useEffect(() => {
     null == l || l(s)
   }, [l, s]);
@@ -119,7 +119,7 @@ let O = i.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: m.wrapper,
     "aria-hidden": !0,
-    children: [(0, r.jsx)(_, {
+    children: [(0, r.jsx)(y, {
       name: t,
       targetNode: n,
       below: l
@@ -138,7 +138,7 @@ function j(e) {
   } = e, [{
     canDrop: i,
     isOver: l
-  }, o] = (0, c.L)(() => y([p.eD.GUILD], n, !0, !0)), a = b([
+  }, o] = (0, c.L)(() => _([p.eD.GUILD], n, !0, !0)), a = b([
     [l, m.wrapperOver]
   ]), s = b([
     [l, m.dragOver],
@@ -161,7 +161,7 @@ function j(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     children: t
   } = e, [, n] = (0, c.L)({
