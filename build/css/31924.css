@@ -1,7 +1,21 @@
 /**
   Module ID: 31924
-  Original File Name: 06f5e9603ea42c2e
+  Original File Name: a3b8225c58e74075
 **/
+.background__6343b {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.gradientRoleColorsImage__6343b {
+    padding: 0 var(--spacing-16)
+}
+
 .icon_f4b9b5 {
     filter: saturate(1);
     filter: saturate(var(--saturation-factor,1))
@@ -138,4 +152,9 @@
     gap: var(--spacing-8)
 }
 
-/*# sourceMappingURL=06f5e9603ea42c2e.css.map*/
+.image_bc32e9 {
+    border-radius: var(--radius-sm);
+    background: var(--bg-base-tertiary)
+}
+
+/*# sourceMappingURL=a3b8225c58e74075.css.map*/

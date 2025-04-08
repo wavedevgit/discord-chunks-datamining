@@ -5,15 +5,15 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var o = t(793030),
-  i = t(442837),
-  s = t(481060),
+  s = t(442837),
+  i = t(481060),
   a = t(678558),
   l = t(343649),
   c = t(413335),
   d = t(430824),
   u = t(63063),
-  m = t(317169),
-  p = t(639660),
+  p = t(317169),
+  m = t(639660),
   x = t(767218),
   _ = t(981631),
   v = t(680278),
@@ -23,11 +23,11 @@ var o = t(793030),
 function b(e) {
   let {
     guildId: n
-  } = e, t = (0, i.e7)([d.Z], () => d.Z.getGuild(n)), {
+  } = e, t = (0, s.e7)([d.Z], () => d.Z.getGuild(n)), {
     available: b,
     spent: j,
     total: h
-  } = (0, m.Z)(n);
+  } = (0, p.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ function b(e) {
         count: h,
         type: x.b.TOTAL
       })]
-    }), (0, r.jsx)(p.Z, {
+    }), (0, r.jsx)(m.Z, {
       guildId: n
     }), (0, r.jsx)(a.Z, {
       className: f.boostButton,
@@ -63,8 +63,8 @@ function b(e) {
         page: _.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: _.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: s.Ttl.CUSTOM,
-      size: s.PhG.LARGE,
+      color: i.Ttl.CUSTOM,
+      size: i.PhG.LARGE,
       intent: l.P.NONE,
       icon: (0, r.jsx)(c.Z, {
         className: f.boostButtonIcon

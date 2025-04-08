@@ -1,24 +1,22 @@
 /** Chunk was on 74529 **/
 t.d(n, {
-  default: () => f
+  default: () => d
 }), t(388685), t(953529);
 var r = t(200651),
   o = t(192379),
-  a = t(120356),
-  i = t.n(a),
-  s = t(481060),
-  l = t(156732),
-  c = t(262212),
-  u = t(845602),
-  d = t(535396),
-  p = t(384732);
+  a = t(481060),
+  i = t(262212),
+  s = t(795338),
+  c = t(845602),
+  l = t(535396),
+  u = t(384732);
 
-function f(e) {
+function d(e) {
   var n, t, {
-      guildId: a,
-      powerup: f
+      guildId: d,
+      powerup: p
     } = e,
-    _ = function(e, n) {
+    f = function(e, n) {
       if (null == e) return {};
       var t, r, o = function(e, n) {
         if (null == e) return {};
@@ -33,10 +31,10 @@ function f(e) {
       }
       return o
     }(e, ["guildId", "powerup"]);
-  let [m, g] = o.useState(void 0), b = (0, l.Z)(f), C = o.useMemo(() => f.skuId === d.IN ? (0, r.jsx)(u.Z, {
-    guildId: a
-  }) : void 0, [f, a]);
-  return (0, r.jsxs)(s.Y0X, (n = function(e) {
+  let [_, m] = o.useState(void 0), g = o.useMemo(() => p.skuId === l.IN ? (0, r.jsx)(c.Z, {
+    guildId: d
+  }) : void 0, [p, d]);
+  return (0, r.jsxs)(a.Y0X, (n = function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         r = Object.keys(t);
@@ -54,51 +52,47 @@ function f(e) {
     }
     return e
   }({
-    className: p.modal,
-    size: s.CgR.DYNAMIC
-  }, _), t = t = {
-    children: [(0, r.jsxs)(s.hzk, {
-      className: p.modalContentContainer,
+    className: u.modal,
+    size: a.CgR.DYNAMIC
+  }, f), t = t = {
+    children: [(0, r.jsxs)(a.hzk, {
+      className: u.modalContentContainer,
       scrollbarType: "none",
       children: [(0, r.jsxs)("div", {
-        className: p.sidebar,
+        className: u.sidebar,
         children: [(0, r.jsx)("div", {
-          className: p.powerupImageContainer,
-          children: (0, r.jsx)("img", {
-            className: i()(p.powerupImage, {
-              [p.gradientRoleColorsImage]: f.skuId === d.If
-            }),
-            alt: "",
-            src: b
+          className: u.powerupImageContainer,
+          children: (0, r.jsx)(s.m, {
+            powerup: p
           })
         }), (0, r.jsxs)("div", {
-          className: p.contentContainer,
-          children: [(0, r.jsx)(s.X6q, {
+          className: u.contentContainer,
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-xl/extrabold",
-            children: f.title
-          }), (0, r.jsx)(s.Text, {
-            className: p.description,
+            children: p.title
+          }), (0, r.jsx)(a.Text, {
+            className: u.description,
             variant: "text-sm/normal",
-            children: f.description
-          }), null != m && (0, r.jsx)(s.Text, {
-            className: p.error,
+            children: p.description
+          }), null != _ && (0, r.jsx)(a.Text, {
+            className: u.error,
             color: "status-danger",
             variant: "text-sm/semibold",
-            children: m
-          }), (0, r.jsx)(c.ZP, {
-            className: p.footer,
-            guildId: a,
-            powerup: f,
-            onError: g
+            children: _
+          }), (0, r.jsx)(i.ZP, {
+            className: u.footer,
+            guildId: d,
+            powerup: p,
+            onError: m
           })]
         })]
-      }), null != C && (0, r.jsx)("div", {
-        className: p.exampleImage,
-        children: C
+      }), null != g && (0, r.jsx)("div", {
+        className: u.exampleImage,
+        children: g
       })]
-    }), (0, r.jsx)(s.olH, {
-      className: p.close,
-      onClick: _.onClose
+    }), (0, r.jsx)(a.olH, {
+      className: u.close,
+      onClick: f.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
     var t = Object.keys(e);

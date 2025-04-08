@@ -1,6 +1,6 @@
 /**
   Module ID: 13965
-  Original File Name: 6758fa90c3b5ee58
+  Original File Name: 41f7cdd97463b547
 **/
 .container__6f9f7 {
     display: flex;
@@ -43,6 +43,20 @@
 .boost__6f9f7 {
     align-self: center;
     justify-self: center
+}
+
+.background__6343b {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.gradientRoleColorsImage__6343b {
+    padding: 0 var(--spacing-16)
 }
 
 .confettiCanvas__8fcbd {
@@ -91,9 +105,8 @@
     margin-top: var(--spacing-16)
 }
 
-.exampleImage__8fcbd {
-    height: 228px;
-    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4))
+.image__8fcbd {
+    height: 228px
 }
 
-/*# sourceMappingURL=6758fa90c3b5ee58.css.map*/
+/*# sourceMappingURL=41f7cdd97463b547.css.map*/

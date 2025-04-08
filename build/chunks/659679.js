@@ -5,15 +5,15 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var o = t(793030),
-  i = t(442837),
-  s = t(481060),
+  s = t(442837),
+  i = t(481060),
   a = t(834129),
   l = t(271383),
   c = t(709586),
   d = t(709054),
   u = t(884902),
-  m = t(680278),
-  p = t(388032),
+  p = t(680278),
+  m = t(388032),
   x = t(326319);
 
 function _(e) {
@@ -23,7 +23,7 @@ function _(e) {
     username: _,
     roleColor: v,
     roleColorStrings: g
-  } = (0, i.cj)([l.ZP], () => {
+  } = (0, s.cj)([l.ZP], () => {
     var e, t;
     let r = l.ZP.getMember(n.guildId, n.userId);
     return {
@@ -47,7 +47,7 @@ function _(e) {
     compact: !0,
     children: (0, r.jsxs)("span", {
       className: x.boostMessage,
-      children: [(0, r.jsx)(s.PUh, {
+      children: [(0, r.jsx)(i.PUh, {
         className: x.boostMessageUser,
         name: (0, r.jsx)(o.xv, {
           color: "currentColor",
@@ -60,7 +60,7 @@ function _(e) {
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: p.NW.string(m.Z.plwH8f)
+        children: m.NW.string(p.Z.plwH8f)
       })]
     })
   })

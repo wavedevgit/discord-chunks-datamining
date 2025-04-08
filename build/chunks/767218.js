@@ -1,19 +1,19 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => m,
+  Z: () => p,
   b: () => u
 });
 var r, o = t(200651);
 t(192379);
-var i = t(793030),
-  s = t(692547),
+var s = t(793030),
+  i = t(692547),
   a = t(413335),
   l = t(680278),
   c = t(388032),
   d = t(154142),
   u = ((r = {})[r.AVAILABLE = 0] = "AVAILABLE", r[r.SPENT = 1] = "SPENT", r[r.TOTAL = 2] = "TOTAL", r);
 
-function m(e) {
+function p(e) {
   let {
     count: n,
     type: t
@@ -23,13 +23,13 @@ function m(e) {
     children: [(0, o.jsxs)("div", {
       className: d.headerContainer,
       children: [(0, o.jsx)(a.Z, {
-        color: 0 !== t ? s.Z.colors.HEADER_MUTED : void 0
-      }), (0, o.jsx)(i.X6, {
+        color: 0 !== t ? i.Z.colors.HEADER_MUTED : void 0
+      }), (0, o.jsx)(s.X6, {
         color: 0 !== t ? "header-muted" : "header-primary",
         variant: "heading-lg/semibold",
         children: n
       })]
-    }), (0, o.jsx)(i.xv, {
+    }), (0, o.jsx)(s.xv, {
       color: "header-muted",
       variant: "text-sm/medium",
       children: (() => {
