@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(74365),
   x = n(618857),
   y = n(695346),
-  E = n(23750),
-  v = n(592125),
-  O = n(594174),
-  N = n(823379),
+  v = n(23750),
+  E = n(592125),
+  N = n(594174),
+  O = n(823379),
   j = n(324081),
   C = n(240126),
   S = n(791914),
@@ -111,7 +111,7 @@ function Z() {
             a.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           }
         }, o), i = i = {
-          children: (0, r.jsx)(R, {
+          children: (0, r.jsx)(k, {
             scheduledMessages: t
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -129,12 +129,12 @@ function Z() {
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
     var n, r;
-    let i = v.Z.getChannel(t.scheduledMessage.channelId);
+    let i = E.Z.getChannel(t.scheduledMessage.channelId);
     return null == i || (e[i.id] = {
       channel: i,
       scheduledMessages: [...null != (r = null == (n = e[i.id]) ? void 0 : n.scheduledMessages) ? r : [], t]
@@ -154,7 +154,7 @@ function R(e) {
           children: null
         }), i.map(e => {
           let t = a.has(e.scheduledMessageId);
-          return (0, r.jsx)(k, {
+          return (0, r.jsx)(R, {
             scheduledMessage: e,
             channel: n,
             isPendingDeletion: t
@@ -164,15 +164,15 @@ function R(e) {
     })
   })
 }
-let k = i.memo(function(e) {
+let R = i.memo(function(e) {
   let {
     scheduledMessage: t,
     channel: n,
     isPendingDeletion: a
-  } = e, o = new E.ZP({
+  } = e, o = new v.ZP({
     id: t.scheduledMessageId,
     content: t.scheduledMessage.content,
-    author: O.default.getUser(t.userId),
+    author: N.default.getUser(t.userId),
     timestamp: s()(t.sendAtTimestamp).toDate(),
     channel_id: t.scheduledMessage.channelId
   }), {
@@ -205,7 +205,7 @@ let k = i.memo(function(e) {
           isError: !0, stateMessage: T.NW.string(T.t.j8uIfH)
         };
       default:
-        (0, N.vE)(e)
+        (0, O.vE)(e)
     }
   }(t.state), d = i.useCallback(() => {
     (0, g.gD)(t.scheduledMessageId).then(() => {

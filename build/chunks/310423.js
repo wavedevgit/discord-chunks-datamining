@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(739566),
   x = n(981631),
   y = n(761652),
-  E = n(388032),
-  v = n(912861);
+  v = n(388032),
+  E = n(912861);
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function N(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,11 +60,11 @@ let j = {
     color: "header-secondary"
   },
   C = {
-    className: l()("mention", v.mention)
+    className: l()("mention", E.mention)
   };
 
 function S(e) {
-  return (0, r.jsx)(s.Text, N(O({}, j), {
+  return (0, r.jsx)(s.Text, O(N({}, j), {
     color: "header-primary",
     children: e
   }))
@@ -77,10 +77,10 @@ let I = i.memo(function(e) {
       interactionData: Z
     } = e,
     {
-      analyticsLocations: R
+      analyticsLocations: k
     } = (0, u.ZP)(),
     {
-      onCopy: k,
+      onCopy: R,
       copyRef: D
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? void 0 : t.id),
     L = (0, o.e7)([g.Z], () => g.Z.getGuild(A.guild_id), [A.guild_id]);
@@ -88,38 +88,38 @@ let I = i.memo(function(e) {
       (null == Z || Z.type === c.yU.CHAT && void 0 === Z.application_command) && p.OG(A.id, w)
     }, [A.id, w, Z]), null == Z) P = (0, r.jsx)(s.$jN, {
     type: s.$jN.Type.SPINNING_CIRCLE,
-    className: v.spinner
+    className: E.spinner
   });
   else {
     let e = [],
       t = Object.fromEntries((null != (l = null == (n = Z.application_command) ? void 0 : n.options) ? l : []).map(e => [e.name, e]));
     for (let n of null != (I = Z.options) ? I : []) e = e.concat(function e(t) {
       var n, a, l, o, u, d, p;
-      let v, {
+      let E, {
           option: I,
           channel: T,
           guild: P,
           messageId: A,
           parentOptionKey: w,
           commandOptionSpec: Z,
-          sourceAnalyticsLocations: R
+          sourceAnalyticsLocations: k
         } = t,
-        k = null != w ? w + " " + I.name : I.name;
+        R = null != w ? w + " " + I.name : I.name;
       if (I.type === c.jw.SUB_COMMAND || I.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
-            children: [" ", (0, r.jsx)(s.Text, N(O({}, j), {
+            children: [" ", (0, r.jsx)(s.Text, O(N({}, j), {
               children: null != (a = null == Z ? void 0 : Z.name_localized) ? a : I.name
             }))]
-          }, k)],
+          }, R)],
           c = Object.fromEntries(null == (n = null != (l = null == Z ? void 0 : Z.options) ? l : []) ? void 0 : n.map(e => [e.name, e]));
         for (let n of null != (o = I.options) ? o : []) t = t.concat(e({
           option: n,
           channel: T,
           guild: P,
           messageId: A,
-          parentOptionKey: k,
+          parentOptionKey: R,
           commandOptionSpec: c[n.name],
-          sourceAnalyticsLocations: R
+          sourceAnalyticsLocations: k
         }));
         return t
       }
@@ -130,13 +130,13 @@ let I = i.memo(function(e) {
             t = _.default.getUser(e);
           if (null != t) {
             let e = (0, b.ij)(t, T);
-            v = (0, r.jsxs)(m.Z, N(O({}, C), {
+            E = (0, r.jsxs)(m.Z, O(N({}, C), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
                 guildId: T.guild_id,
                 channelId: T.id,
                 messageId: A,
-                sourceAnalyticsLocations: R,
+                sourceAnalyticsLocations: k,
                 analyticsLocation: {
                   section: x.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                 }
@@ -149,7 +149,7 @@ let I = i.memo(function(e) {
         case c.jw.CHANNEL: {
           let e = I.value.toString(),
             t = h.Z.getChannel(e);
-          null != t && (v = (0, r.jsxs)(m.Z, N(O({}, C), {
+          null != t && (E = (0, r.jsxs)(m.Z, O(N({}, C), {
             children: [y.zy, t.name]
           })));
           break
@@ -157,7 +157,7 @@ let I = i.memo(function(e) {
         case c.jw.ROLE: {
           let e = I.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
-          null != t && (v = (0, r.jsxs)(m.Z, N(O({}, C), {
+          null != t && (E = (0, r.jsxs)(m.Z, O(N({}, C), {
             children: [y.ME, t.name]
           })));
           break
@@ -165,14 +165,14 @@ let I = i.memo(function(e) {
         case c.jw.MENTIONABLE: {
           let e = I.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
-          if (null != t) v = (0, r.jsxs)(m.Z, {
+          if (null != t) E = (0, r.jsxs)(m.Z, {
             children: [y.ME, t.name]
           });
           else {
             let t = _.default.getUser(e);
             if (null != t) {
               let e = (0, b.ij)(t, T);
-              v = (0, r.jsxs)(m.Z, N(O({}, C), {
+              E = (0, r.jsxs)(m.Z, O(N({}, C), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
                   guildId: T.guild_id,
@@ -187,18 +187,18 @@ let I = i.memo(function(e) {
           break
         }
         case c.jw.ATTACHMENT:
-          v = S(E.NW.string(E.t.nONJVV));
+          E = S(v.NW.string(v.t.nONJVV));
           break;
         default: {
           let e = null == Z || null == (u = Z.choices) ? void 0 : u.find(e => e.value === I.value);
           null != e && (D = null != (d = e.name_localized) ? d : e.name)
         }
       }
-      return null == v && (v = S(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsxs)(s.Text, N(O({}, j), {
+      return null == E && (E = S(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
+        children: [(0, r.jsxs)(s.Text, O(N({}, j), {
           children: [" ", null != (p = null == Z ? void 0 : Z.name_localized) ? p : I.name, ": "]
-        })), v]
-      }, k)]
+        })), E]
+      }, R)]
     }({
       option: n,
       channel: A,
@@ -206,27 +206,27 @@ let I = i.memo(function(e) {
       messageId: w,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
-      sourceAnalyticsLocations: R
+      sourceAnalyticsLocations: k
     }));
     P = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.Text, N(O({}, j), {
+      children: [(0, r.jsxs)(s.Text, O(N({}, j), {
         children: ["/", null != (T = null == (a = Z.application_command) ? void 0 : a.name_localized) ? T : Z.name]
       })), e]
     })
   }
   return (0, r.jsxs)("div", {
-    className: v.container,
+    className: E.container,
     onCopy: e => {
       var t, n, r;
       let i = null != (r = null == (n = window) || null == (t = n.getSelection()) ? void 0 : t.toString()) ? r : "";
-      i.startsWith("/") && i.endsWith("\n") && k(e, Z)
+      i.startsWith("/") && i.endsWith("\n") && R(e, Z)
     },
     children: [(0, r.jsx)("div", {
-      className: v.tooltip,
+      className: E.tooltip,
       ref: D,
       children: P
     }), (0, r.jsx)("div", {
-      className: v.tooltipPointer
+      className: E.tooltipPointer
     })]
   })
 })

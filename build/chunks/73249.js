@@ -1,6 +1,6 @@
 /** Chunk was on 58593 **/
 n.d(t, {
-  Z: () => W
+  Z: () => B
 }), n(388685);
 var a = n(200651),
   r = n(192379),
@@ -10,26 +10,25 @@ var a = n(200651),
   s = n(481060),
   l = n(607070),
   u = n(299206),
-  d = n(346610),
-  p = n(868643),
-  m = n(912332),
-  _ = n(378409),
+  d = n(868643),
+  p = n(912332),
+  m = n(378409),
   g = n(850908),
-  f = n(695346),
-  y = n(572004),
-  b = n(424218),
-  O = n(49012),
-  h = n(358085),
-  S = n(998502),
-  E = n(254109),
-  C = n(212459),
-  v = n(369171),
-  T = n(701865),
-  j = n(388032),
-  P = n(505348);
+  _ = n(695346),
+  f = n(572004),
+  y = n(424218),
+  b = n(49012),
+  O = n(358085),
+  h = n(998502),
+  S = n(254109),
+  E = n(212459),
+  C = n(369171),
+  v = n(701865),
+  T = n(388032),
+  j = n(505348);
 
-function x() {
-  return (x = Object.assign || function(e) {
+function P() {
+  return (P = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -38,7 +37,7 @@ function x() {
   }).apply(this, arguments)
 }
 
-function M(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -57,7 +56,7 @@ function M(e) {
   return e
 }
 
-function I(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,10 +69,10 @@ function I(e, t) {
   }), e
 }
 
-function D() {
-  (0, s.Mr3)(T.U)
+function I() {
+  (0, s.Mr3)(v.U)
 }
-let N = r.forwardRef(function(e, t) {
+let D = r.forwardRef(function(e, t) {
   var {
     onClick: n,
     tooltipText: r,
@@ -98,21 +97,21 @@ let N = r.forwardRef(function(e, t) {
     text: r,
     position: "bottom",
     children: e => {
-      var r = x({}, function(e) {
+      var r = P({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(e));
-      return (0, a.jsx)(s.zxk, I(M(I(M({}, r), {
+      return (0, a.jsx)(s.zxk, M(x(M(x({}, r), {
         buttonRef: t,
         onClick: n,
         look: s.iLD.BLANK,
         size: s.PhG.ICON,
         color: s.Ttl.TRANSPARENT,
-        className: i()(P.actionButton, {
-          [P.selected]: o
+        className: i()(j.actionButton, {
+          [j.selected]: o
         }),
-        wrapperClassName: P.actionButtonWrapper,
-        innerClassName: P.actionButtonInner,
+        wrapperClassName: j.actionButtonWrapper,
+        innerClassName: j.actionButtonInner,
         grow: !1
       }), l), {
         children: c({
@@ -124,104 +123,98 @@ let N = r.forwardRef(function(e, t) {
   })
 });
 
-function A() {
+function N() {
   let {
     zoomed: e,
     setZoomed: t
-  } = (0, C.Y)();
-  return (0, a.jsx)(N, {
+  } = (0, E.Y)();
+  return (0, a.jsx)(D, {
     onClick: () => {
-      (0, E.yg)(e ? E.uG.ZOOM_OUT_BUTTON_PRESSED : E.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
+      (0, S.yg)(e ? S.uG.ZOOM_OUT_BUTTON_PRESSED : S.uG.ZOOM_IN_BUTTON_PRESSED), t(!e)
     },
-    tooltipText: e ? j.NW.string(j.t.vOFof3) : j.NW.string(j.t.Kt4gZ2),
+    tooltipText: e ? T.NW.string(T.t.vOFof3) : T.NW.string(T.t.Kt4gZ2),
     icon: e ? s.BlJ : s.OyE
   })
 }
 
-function w(e) {
+function A(e) {
   var t, n;
   let {
     item: o
   } = e, i = null == (t = o.sourceMetadata) ? void 0 : t.message, c = null == (n = o.sourceMetadata) ? void 0 : n.identifier, l = r.useCallback(() => {
     if (null != i && null != c) {
-      if ((0, E.yg)(E.uG.FORWARD_PRESSED), "embed" === c.type) return void(0, m.l8)({
+      if ((0, S.yg)(S.uG.FORWARD_PRESSED), "embed" === c.type) return void(0, p.l8)({
         message: i,
         source: "media-viewer",
         forwardOptions: {
           onlyEmbedIndices: [c.embedIndex]
         },
-        onRequestSent: D
+        onRequestSent: I
       });
-      (0, m.l8)({
+      (0, p.l8)({
         message: i,
         source: "media-viewer",
         forwardOptions: {
           onlyAttachmentIds: [c.attachmentId]
         },
-        onRequestSent: D
+        onRequestSent: I
       })
     }
-  }, [i, c]), {
-    canForwardMessages: u
-  } = (0, d.yk)({
-    location: "ForwardLink"
-  }, {
-    autoTrackExposure: !1
-  });
-  return null != i && u && (0, p.h)(i) ? (0, a.jsx)(N, {
+  }, [i, c]);
+  return null != i && (0, d.h)(i) ? (0, a.jsx)(D, {
     onClick: l,
-    tooltipText: j.NW.string(j.t.I3ltXF),
+    tooltipText: T.NW.string(T.t.I3ltXF),
     icon: s.WZu
   }) : null
 }
 
-function L(e) {
+function w(e) {
   let {
     item: t
   } = e, [n, o] = r.useState(!1);
-  if (!("VIDEO" === t.type || h.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, _.gS)(t.url))) return null;
-  let i = (0, _.s$)(t.url);
+  if (!("VIDEO" === t.type || O.isPlatformEmbedded && null == t.children && "IMAGE" === t.type && (0, m.gS)(t.url))) return null;
+  let i = (0, m.s$)(t.url);
   async function c() {
-    if ((0, E.yg)(E.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, O.q)({
+    if ((0, S.yg)(S.uG.SAVE_MEDIA_PRESSED), "VIDEO" === t.type && (0, b.q)({
         href: i
       }), "IMAGE" === t.type) {
       o(!0);
       try {
-        await S.ZP.saveImage(i), (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.cqpdJS), s.ToastType.SUCCESS))
+        await h.ZP.saveImage(i), (0, s.showToast)((0, s.createToast)(T.NW.string(T.t.cqpdJS), s.ToastType.SUCCESS))
       } catch (e) {
-        (0, s.showToast)((0, s.createToast)(j.NW.string(j.t["8Ve/S0"]), s.ToastType.FAILURE))
+        (0, s.showToast)((0, s.createToast)(T.NW.string(T.t["8Ve/S0"]), s.ToastType.FAILURE))
       } finally {
         o(!1)
       }
     }
   }
-  return (0, a.jsx)(N, {
+  return (0, a.jsx)(D, {
     onClick: c,
-    tooltipText: j.NW.string("VIDEO" === t.type ? j.t.JVuuz8 : j.t["S/xNKS"]),
+    tooltipText: T.NW.string("VIDEO" === t.type ? T.t.JVuuz8 : T.t["S/xNKS"]),
     submitting: n,
     icon: s._8t
   })
 }
 
-function R(e) {
+function L(e) {
   var t;
   let {
     item: n
   } = e;
-  if (!(0, _.Jj)(n.url)) return null;
-  let r = (0, _.s$)(null != (t = n.original) ? t : n.url);
-  return (0, a.jsx)(N, {
+  if (!(0, m.Jj)(n.url)) return null;
+  let r = (0, m.s$)(null != (t = n.original) ? t : n.url);
+  return (0, a.jsx)(D, {
     onClick: () => {
-      (0, E.yg)(E.uG.OPEN_LINK_PRESSED), (0, O.q)({
+      (0, S.yg)(S.uG.OPEN_LINK_PRESSED), (0, b.q)({
         href: r
       })
     },
-    tooltipText: j.NW.string(j.t.q5jLJC),
+    tooltipText: T.NW.string(T.t.q5jLJC),
     icon: s.rgF
   })
 }
 
-function k(e) {
+function R(e) {
   var t, n;
   let {
     item: r,
@@ -231,26 +224,26 @@ function k(e) {
     onSelect: l
   } = e, d = (null == (n = r.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? r.sourceMetadata.identifier.attachmentId : null, p = (0, u.Z)({
     id: d,
-    label: j.NW.string(j.t.nwg3lZ)
-  }), m = function(e) {
+    label: T.NW.string(T.t.nwg3lZ)
+  }), _ = function(e) {
     var t;
     let {
       alt: n,
       sourceMetadata: r,
       width: o,
       height: i
-    } = e, c = Z(j.NW.string(j.t.ILJuBg), "name", {
+    } = e, c = k(T.NW.string(T.t.ILJuBg), "name", {
       subtextLineClamp: 1
-    }), l = Z(j.NW.string(j.t.sPO3io), "size"), u = Z(j.NW.string(j.t.eOB2eX), "alt", {
+    }), l = k(T.NW.string(T.t.sPO3io), "size"), u = k(T.NW.string(T.t.eOB2eX), "alt", {
       subtextLineClamp: 2
     });
     if ((null == r || null == (t = r.identifier) ? void 0 : t.type) !== "attachment") return null;
     let d = (0, g.Z)(r.identifier),
-      p = (0, b.BU)(r.identifier.size / 1e3);
+      p = (0, y.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
-      label: j.NW.string(j.t.GoCQxc),
-      children: [c(d), l(j.NW.formatToPlainString(j.t.DTdonJ, {
+      label: T.NW.string(T.t.GoCQxc),
+      children: [c(d), l(T.NW.formatToPlainString(T.t.DTdonJ, {
         width: o,
         height: i,
         fileSize: p
@@ -258,12 +251,12 @@ function k(e) {
     }, "media-viewer-details")
   }(r);
   async function f() {
-    (0, E.yg)(E.uG.COPY_IMAGE_PRESSED);
-    let e = (0, _.s$)(r.url);
+    (0, S.yg)(S.uG.COPY_IMAGE_PRESSED);
+    let e = (0, m.s$)(r.url);
     try {
-      await S.ZP.copyImage(e), (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.bhUpvL), s.ToastType.SUCCESS))
+      await h.ZP.copyImage(e), (0, s.showToast)((0, s.createToast)(T.NW.string(T.t.bhUpvL), s.ToastType.SUCCESS))
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.PTPbj4), s.ToastType.FAILURE))
+      (0, s.showToast)((0, s.createToast)(T.NW.string(T.t.PTPbj4), s.ToastType.FAILURE))
     }
   }
   return (0, a.jsxs)(s.v2r, {
@@ -273,34 +266,34 @@ function k(e) {
     onSelect: l,
     children: [(0, a.jsxs)(s.kSQ, {
       children: [o && (0, a.jsx)(s.sNh, {
-        label: j.NW.string(j.t.tvUqWl),
+        label: T.NW.string(T.t.tvUqWl),
         id: "media-viewer-copy-image",
         icon: s.TIy,
         action: f
       }, "media-viewer-copy-image"), i && (0, a.jsx)(s.sNh, {
         id: "media-viewer-copy-link",
-        label: j.NW.string(j.t.WqhZsr),
+        label: T.NW.string(T.t.WqhZsr),
         icon: s.xPt,
         action: function() {
           var e;
-          (0, E.yg)(E.uG.COPY_LINK_PRESSED);
-          let t = (0, _.s$)(null != (e = r.original) ? e : r.url);
-          h.isPlatformEmbedded ? S.ZP.copy(t) : window.navigator.clipboard.writeText(t), (0, s.showToast)((0, s.createToast)(j.NW.string(j.t["L/PwZW"]), s.ToastType.SUCCESS))
+          (0, S.yg)(S.uG.COPY_LINK_PRESSED);
+          let t = (0, m.s$)(null != (e = r.original) ? e : r.url);
+          O.isPlatformEmbedded ? h.ZP.copy(t) : window.navigator.clipboard.writeText(t), (0, s.showToast)((0, s.createToast)(T.NW.string(T.t["L/PwZW"]), s.ToastType.SUCCESS))
         }
       }, "media-viewer-copy-link")]
-    }), m, p]
+    }), _, p]
   })
 }
 
-function Z(e, t, n) {
+function k(e, t, n) {
   let o = r.useCallback(e => {
-    (0, y.JG)(e), (0, s.showToast)({
-      message: j.NW.string(j.t.mGZ66O),
+    (0, f.JG)(e), (0, s.showToast)({
+      message: T.NW.string(T.t.mGZ66O),
       type: s.ToastType.SUCCESS,
       id: "media-viewer-detail-copied"
     })
   }, []);
-  return r => null != r ? (0, a.jsx)(s.sNh, M({
+  return r => null != r ? (0, a.jsx)(s.sNh, x({
     action: () => o(r),
     label: e,
     subtext: r,
@@ -308,11 +301,11 @@ function Z(e, t, n) {
   }, n), t) : null
 }
 
-function B(e) {
+function Z(e) {
   var t, n;
   let {
     item: o
-  } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = f.Sb.useSetting(), d = "IMAGE" === o.type && h.isPlatformEmbedded && null == o.children && S.ZP.canCopyImage() && (0, _.Lz)(o.url), p = (0, _.Jj)(o.url);
+  } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = _.Sb.useSetting(), d = "IMAGE" === o.type && O.isPlatformEmbedded && null == o.children && h.ZP.canCopyImage() && (0, m.Lz)(o.url), p = (0, m.Jj)(o.url);
   return u || d || p || (null == (n = o.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
     targetElementRef: i,
     shouldShow: c,
@@ -321,7 +314,7 @@ function B(e) {
     spacing: 18,
     onRequestClose: () => l(!1),
     animation: s.yRy.Animation.NONE,
-    renderPopout: () => (0, a.jsx)(k, {
+    renderPopout: () => (0, a.jsx)(R, {
       item: o,
       canCopyImage: d,
       canCopyLink: p,
@@ -331,11 +324,11 @@ function B(e) {
       let {
         onClick: t
       } = e;
-      return (0, a.jsx)(N, {
+      return (0, a.jsx)(D, {
         ref: i,
-        tooltipText: j.NW.string(j.t.UKOtz8),
+        tooltipText: T.NW.string(T.t.UKOtz8),
         onClick: () => {
-          (0, E.yg)(E.uG.MORE_BUTTON_PRESSED), l(!c)
+          (0, S.yg)(S.uG.MORE_BUTTON_PRESSED), l(!c)
         },
         selected: c,
         icon: s.xhG
@@ -343,7 +336,7 @@ function B(e) {
     }
   }) : null
 }
-let W = r.memo(function(e) {
+let B = r.memo(function(e) {
   let {
     item: t,
     hideMediaOptions: n
@@ -351,21 +344,21 @@ let W = r.memo(function(e) {
     var e;
     !o && (null == (e = s.current) ? void 0 : e.contains(document.activeElement)) && document.activeElement.blur()
   }, [o]);
-  return ("IMAGE" === t.type || !n) && (0, a.jsx)(v.ZP, {
-    mode: v.lx.FOCUS_SENSITIVE,
+  return ("IMAGE" === t.type || !n) && (0, a.jsx)(C.ZP, {
+    mode: C.lx.FOCUS_SENSITIVE,
     children: e => (0, a.jsxs)("div", {
       ref: s,
-      className: i()(P.actionButtons, e),
+      className: i()(j.actionButtons, e),
       onClick: e => e.stopPropagation(),
       onMouseLeave: u,
-      children: ["IMAGE" === t.type && (0, a.jsx)(A, {}), !n && (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(w, {
+      children: ["IMAGE" === t.type && (0, a.jsx)(N, {}), !n && (0, a.jsxs)(a.Fragment, {
+        children: [(0, a.jsx)(A, {
+          item: t
+        }), (0, a.jsx)(w, {
           item: t
         }), (0, a.jsx)(L, {
           item: t
-        }), (0, a.jsx)(R, {
-          item: t
-        }), (0, a.jsx)(B, {
+        }), (0, a.jsx)(Z, {
           item: t
         })]
       })]

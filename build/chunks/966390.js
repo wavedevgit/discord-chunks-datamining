@@ -33,9 +33,9 @@ var n = r(481060),
   T = r(630388),
   A = r(226351),
   k = r(981631),
-  M = r(388032);
+  L = r(388032);
 
-function L(e) {
+function D(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -54,7 +54,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function M(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -103,7 +103,7 @@ async function W(e) {
       poll: (0, y.x9)(B.poll)
     });
   return H.nonce = Y, U.on("start", e => {
-    p = (0, b.e5)(D(L({}, X), {
+    p = (0, b.e5)(M(D({}, X), {
       id: e.id
     })), a.Z.dispatch({
       type: "UPLOAD_START",
@@ -136,12 +136,12 @@ async function W(e) {
         },
         n = null == p ? null : {
           type: u.$V.SEND,
-          message: D(L({}, p), {
+          message: M(D({}, p), {
             channelId: W
           })
         };
       (0, s.openUploadError)({
-        title: M.NW.string(M.t.B3vFdX),
+        title: L.NW.string(L.t.B3vFdX),
         help: (0, g.uF)(n, e)
       });
       return
@@ -154,8 +154,8 @@ async function W(e) {
       else {
         var d;
         (0, s.openUploadError)({
-          title: M.NW.string(M.t.B3vFdX),
-          help: null != (d = null == r ? void 0 : r.message) ? d : M.NW.string(M.t.zMEjJi)
+          title: L.NW.string(L.t.B3vFdX),
+          help: null != (d = null == r ? void 0 : r.message) ? d : L.NW.string(L.t.zMEjJi)
         })
       }
       "" !== H.content && "" === C.Z.getDraft(W, Z) && o.Z.saveDraft(W, H.content, Z), 0 === S.Z.getUploadCount(W, Z) && l.Z.setUploads({
@@ -189,7 +189,7 @@ let R = {
       filesMetadata: o = []
     } = e, i = Array.from(r).map((e, r) => {
       let n = null != o ? o[r] : {};
-      return new d.n(L({
+      return new d.n(D({
         file: e,
         platform: p.ow.WEB,
         isThumbnail: a
@@ -247,8 +247,8 @@ let R = {
           failureCode: d
         }), d === k.evJ.EXPLICIT_CONTENT) return void i.Z.sendExplicitMediaClydeError(r, null == p ? void 0 : p.attachments, m.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
       (0, s.openUploadError)({
-        title: M.NW.string(M.t.B3vFdX),
-        help: M.NW.format(M.t.gIlRx8, {
+        title: L.NW.string(L.t.B3vFdX),
+        help: L.NW.format(L.t.gIlRx8, {
           onClick: () => {
             (0, n.Mr3)(s.A), e({
               channelId: r,

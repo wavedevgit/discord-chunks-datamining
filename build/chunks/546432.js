@@ -24,9 +24,9 @@ var r = n(200651),
   I = n(976853),
   x = n(423877),
   b = n(592125),
-  v = n(626135),
-  C = n(630388),
-  w = n(956664),
+  w = n(626135),
+  v = n(630388),
+  C = n(956664),
   P = n(169525),
   E = n(499376),
   N = n(217702),
@@ -104,13 +104,13 @@ let _ = e => {
     className: S.hoverButton,
     onClick: s
   }, "mediaViewer"));
-  let [v, C] = o.useState(!1), w = o.useCallback(() => C(e => !e), []);
+  let [w, v] = o.useState(!1), C = o.useCallback(() => v(e => !e), []);
   d && I.push((0, r.jsx)(m.Z, {
-    toggleShowMenu: w,
-    showMenu: v,
+    toggleShowMenu: C,
+    showMenu: w,
     channelId: f,
     className: l()(S.hoverButton, {
-      [S.selected]: v
+      [S.selected]: w
     }),
     imageUrl: n,
     mimeType: t
@@ -149,7 +149,7 @@ let _ = e => {
     children: [y > 0 && I.length > 0 && (0, r.jsx)("div", {
       className: l()(S.hoverButtonGroup, {
         [S.nonMediaMosaicItem]: !h,
-        [S.forceShowHover]: v
+        [S.forceShowHover]: w
       }),
       children: I.slice(P)
     }), (0, r.jsx)("div", {
@@ -202,10 +202,10 @@ function F(e) {
     location: "MediaMosaicItem"
   }, {
     autoTrackExposure: !0
-  }).imageRecsEnabled, ec = o.useMemo(() => null != et && -1 !== et.indexOf("/") ? et.split("/") : ["unknown", "unknown"], [et]), ed = i.originalItem, em = "IMAGE" === ee && !j.uo.test(i.downloadUrl) && !((j.YG.test(i.downloadUrl) || j.FH.test(i.downloadUrl)) && (0, C.yE)(null != (t = ed.flags) ? t : 0, M.J0y.IS_ANIMATED)), eh = !1;
+  }).imageRecsEnabled, ec = o.useMemo(() => null != et && -1 !== et.indexOf("/") ? et.split("/") : ["unknown", "unknown"], [et]), ed = i.originalItem, em = "IMAGE" === ee && !j.uo.test(i.downloadUrl) && !((j.YG.test(i.downloadUrl) || j.FH.test(i.downloadUrl)) && (0, v.yE)(null != (t = ed.flags) ? t : 0, M.J0y.IS_ANIMATED)), eh = !1;
   if (J) {
     (null == Q || null == K) && (eh = !0);
-    let e = (0, w.Dc)({
+    let e = (0, C.Dc)({
       width: null != Q ? Q : 0,
       height: null != K ? K : 0,
       maxWidth: N.mT,
@@ -227,7 +227,7 @@ function F(e) {
               withCommands: !0
             })
           }
-          v.default.track(M.rMx.IMAGE_HOVERED, {
+          w.default.track(M.rMx.IMAGE_HOVERED, {
             guild_id: null == es ? void 0 : es.guild_id,
             channel_id: null == es ? void 0 : es.id,
             image_recommendations_shown: eu
@@ -394,7 +394,7 @@ let k = function(e) {
     width: p,
     height: y,
     type: O
-  } = n, j = s(n, (0, g.V)(i.channel_id, i.author.id)), [I, x] = o.useState(null != j), b = u === N.hV.MOSAIC, v = !b && (null != p && p < 200 || null != y && y < 50), C = "IMAGE" === O || "VIDEO" === O, M = (0, E.R_)(O), T = c && null != j && (0, f.bR)(p, y), [S, V] = o.useState(!1), _ = () => {
+  } = n, j = s(n, (0, g.V)(i.channel_id, i.author.id)), [I, x] = o.useState(null != j), b = u === N.hV.MOSAIC, w = !b && (null != p && p < 200 || null != y && y < 50), v = "IMAGE" === O || "VIDEO" === O, M = (0, E.R_)(O), T = c && null != j && (0, f.bR)(p, y), [S, V] = o.useState(!1), _ = () => {
     V(!0)
   }, k = () => {
     V(!1)
@@ -406,11 +406,11 @@ let k = function(e) {
       getObscureReason: s,
       hiddenSpoilers: e,
       className: l()(t, A.mosaicItemContent, {
-        [A.obscured]: I && !v,
+        [A.obscured]: I && !w,
         [A.hiddenSpoiler]: I && j === P.wk.SPOILER,
         [A.hiddenExplicit]: I && null != j && [P.wk.EXPLICIT_CONTENT, P.wk.POTENTIAL_EXPLICIT_CONTENT].includes(j),
         [A.hiddenMosaicItem]: I && e,
-        [A.inline]: I && v
+        [A.inline]: I && w
       }),
       focusable: !e,
       mediaLayoutType: u,
@@ -423,7 +423,7 @@ let k = function(e) {
   };
   return (0, r.jsxs)("div", {
     className: l()(A.mosaicItem, {
-      [A.mosaicItemNoJustify]: C,
+      [A.mosaicItemNoJustify]: v,
       [A.mosaicItemFullWidth]: a,
       [A.mosaicItemMediaMosaic]: b,
       [A.hideOverflow]: b && M,
@@ -431,7 +431,7 @@ let k = function(e) {
     }),
     children: [null != j ? (0, r.jsx)(h.ZP, {
       type: h.ZP.Types.ATTACHMENT,
-      inline: v,
+      inline: w,
       reason: j,
       isSingleMosaicItem: c,
       obscured: I,
@@ -441,7 +441,7 @@ let k = function(e) {
         if (void 0 !== e.width && void 0 !== e.height) {
           let {
             width: t
-          } = (0, w.Tj)({
+          } = (0, C.Tj)({
             width: e.width,
             height: e.height,
             maxWidth: 400,
@@ -456,7 +456,7 @@ let k = function(e) {
           height: "100%",
           justifySelf: "auto"
         })
-      }(n, C, u),
+      }(n, v, u),
       obscurityControlClassName: l()({
         [A.obscureVideoSpacing]: "VIDEO" === O && c && !I && S
       }),

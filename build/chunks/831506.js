@@ -1,6 +1,6 @@
 /** Chunk was on 84927 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -79,7 +79,7 @@ function y() {
   return _(d.ME, e, t)
 }
 
-function E(e) {
+function v(e) {
   let {
     relationship: t
   } = e;
@@ -91,7 +91,7 @@ function E(e) {
     null != n && n.delete(t.id)
   }
 }
-class v extends(r = l.ZP.Store) {
+class E extends(r = l.ZP.Store) {
   initialize() {
     this.syncWith([u.Z], y), this.waitFor(u.Z, c.Z)
   }
@@ -105,8 +105,8 @@ class v extends(r = l.ZP.Store) {
     return f
   }
 }
-p(v, "displayName", "GamePartyStore");
-let O = new v(o.Z, {
+p(E, "displayName", "GamePartyStore");
+let N = new E(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,
@@ -181,8 +181,8 @@ let O = new v(o.Z, {
     } = e;
     return null != n && x(t, n.map(e => e.presence))
   },
-  RELATIONSHIP_ADD: E,
-  RELATIONSHIP_UPDATE: E,
+  RELATIONSHIP_ADD: v,
+  RELATIONSHIP_UPDATE: v,
   RELATIONSHIP_REMOVE: function(e) {
     let {
       relationship: t

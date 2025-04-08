@@ -18,7 +18,8 @@ var r = n(392711),
 n(454585);
 var f = n(364458);
 let _ = (0, f.Z)([d.Z.PROFILE_BIO_RULES, (0, u.Z)({
-    enableBuildOverrides: !1
+    enableBuildOverrides: !1,
+    mustConfirmExternalLink: !0
   })]),
   p = new(a())({
     max: 2e3

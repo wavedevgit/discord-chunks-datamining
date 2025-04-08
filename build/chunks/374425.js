@@ -1,6 +1,6 @@
 /** Chunk was on 84927 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -50,8 +50,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let E = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
-  v = e => {
+let v = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
+  E = e => {
     null != e && s.ZP.trackWithMetadata(g.rMx.EXPRESSION_TOOLTIP_VIEWED, {
       type: _.cd.STICKER_IN_MESSAGE_HOVER,
       expression_id: e.id,
@@ -60,23 +60,23 @@ let E = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
       is_custom: (0, m.z)(e.type)
     })
   },
-  O = e => {
+  N = e => {
     let {
       renderableSticker: t,
       channel: n,
       isInteracting: a
-    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, _] = i.useState(String(Date.now())), [O] = (0, p.XW)(t, a), {
-      analyticsLocations: N
+    } = e, s = i.useRef(null), [d, m] = i.useState(!0), [g, _] = i.useState(String(Date.now())), [N] = (0, p.XW)(t, a), {
+      analyticsLocations: O
     } = (0, c.ZP)(o.Z.STICKER_MESSAGE), j = (0, r.jsxs)("span", {
       className: b.stickerName,
       children: [(0, r.jsx)(l.B7q, {
         size: "xs",
         color: "currentColor",
         className: b.stickerIcon
-      }), (null != O ? O : t).name]
+      }), (null != N ? N : t).name]
     });
     return (0, r.jsx)(c.Gt, {
-      value: N,
+      value: O,
       children: (0, r.jsx)(l.yRy, {
         align: "center",
         animation: l.yRy.Animation.TRANSLATE,
@@ -99,7 +99,7 @@ let E = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
             text: (0, u.Y)(j),
             "aria-label": !1,
             onTooltipShow: () => {
-              v(O)
+              E(N)
             },
             children: e => (0, r.jsx)(l.P3F, y(x({}, e), {
               innerRef: s,
@@ -110,8 +110,8 @@ let E = (0, d.Mg)(a.Z.STICKERS_CONSTANTS_STICKER_DIMENSION),
               tag: "span",
               children: (0, r.jsx)(f.Z, {
                 isInteracting: a,
-                size: E,
-                sticker: null != O ? O : t
+                size: v,
+                sticker: null != N ? N : t
               })
             }))
           }))

@@ -11,18 +11,23 @@ var r = n(192379),
   s = n(50101);
 
 function l(e) {
-  var t, n, r, i;
-  let l = (0, s.gV)(e, "getGuildPowerupsBoostCount"),
-    c = null != (r = null == (t = o.Z.getGuild(e)) ? void 0 : t.premiumSubscriberCount) ? r : 0,
-    u = null != (i = null == (n = a.Z.getStateForGuild(e)) ? void 0 : n.appliedBoosts) ? i : 0;
-  return l ? {
-    available: Math.max(0, c - u),
-    spent: u,
-    total: c
-  } : {
-    available: c,
+  var t, n, r;
+  let i = (0, s.gV)(e, "getGuildPowerupsBoostCount"),
+    l = null != (r = null == (t = o.Z.getGuild(e)) ? void 0 : t.premiumSubscriberCount) ? r : 0,
+    c = null == (n = a.Z.getStateForGuild(e)) ? void 0 : n.appliedBoosts,
+    u = !a.Z.hasFetchedUnlockedPowerups(e);
+  return i ? u || null == c ? {
+    available: 0,
     spend: 0,
-    total: c
+    total: l
+  } : {
+    available: Math.max(0, l - c),
+    spent: c,
+    total: l
+  } : {
+    available: l,
+    spend: 0,
+    total: l
   }
 }
 
@@ -33,11 +38,17 @@ function c(e) {
       var t;
       return null == (t = o.Z.getGuild(e)) ? void 0 : t.premiumSubscriberCount
     })) ? t : 0,
-    c = (0, i.e7)([a.Z], () => {
+    {
+      spent: c,
+      loading: u
+    } = (0, i.cj)([a.Z], () => {
       var t;
-      return null == (t = a.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts
+      return {
+        spent: null == (t = a.Z.getStateForGuild(e)) ? void 0 : t.appliedBoosts,
+        loading: !a.Z.hasFetchedUnlockedPowerups(e)
+      }
     });
-  return r.useMemo(() => n ? null == c ? {
+  return r.useMemo(() => n ? u || null == c ? {
     available: 0,
     spent: 0,
     total: l
@@ -49,5 +60,5 @@ function c(e) {
     available: l,
     spent: 0,
     total: l
-  }, [n, l, c])
+  }, [n, l, u, c])
 }

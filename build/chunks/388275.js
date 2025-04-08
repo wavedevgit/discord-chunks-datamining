@@ -27,30 +27,29 @@ function y(e) {
     canSend: E,
     selectedDestinations: I,
     isSending: S,
-    onSend: C,
-    showPreview: O
-  } = e, v = (0, d.Z)(), x = (0, p.nm)(I), A = (0, p.y)(I), N = (0, h.Ad)(), T = (0, l.e7)([m.Z], () => m.Z.getDraft(t.channel_id, m.d.ForwardContextMessage)), [P, L] = r.useState(() => (0, c.eK)(T)), {
-    textValue: j,
-    richValue: w
-  } = P, [Z, D] = r.useState(!1), k = r.useCallback(() => D(!0), []), M = r.useCallback(() => D(!1), []), R = r.useCallback((e, n, a) => {
-    L({
+    onSend: O
+  } = e, C = (0, d.Z)(), v = (0, p.nm)(I), x = (0, p.y)(I), A = (0, h.Ad)(), N = (0, l.e7)([m.Z], () => m.Z.getDraft(t.channel_id, m.d.ForwardContextMessage)), [T, P] = r.useState(() => (0, c.eK)(N)), {
+    textValue: L,
+    richValue: j
+  } = T, [w, Z] = r.useState(!1), D = r.useCallback(() => Z(!0), []), M = r.useCallback(() => Z(!1), []), k = r.useCallback((e, n, a) => {
+    P({
       textValue: n,
       richValue: a
-    }), s.Z.saveDraft(t.channel_id, n, m.d.ForwardContextMessage), N(t.channel_id, t.id)
-  }, [N, t]), F = r.useCallback(() => {
-    s.Z.clearDraft(t.channel_id, m.d.ForwardContextMessage), C(j)
-  }, [t.channel_id, C, j]), W = r.useCallback(() => (!E || j.length > v || F(), Promise.resolve({
+    }), s.Z.saveDraft(t.channel_id, n, m.d.ForwardContextMessage), A(t.channel_id, t.id)
+  }, [A, t]), R = r.useCallback(() => {
+    s.Z.clearDraft(t.channel_id, m.d.ForwardContextMessage), O(L)
+  }, [t.channel_id, O, L]), F = r.useCallback(() => (!E || L.length > C || R(), Promise.resolve({
     shouldClear: !1,
     shouldRefocus: !0
-  })), [F, j, v, E]);
+  })), [R, L, C, E]);
   return (0, a.jsxs)(i.mzw, {
     className: b.footerWithMessage,
-    children: [O && (0, a.jsx)("div", {
+    children: [(0, a.jsx)("div", {
       className: b.forwardPreviewWrapper,
       children: (0, a.jsx)(_.O, {
         message: t,
         forwardOptions: n,
-        channel: x
+        channel: v
       })
     }), (0, a.jsxs)("div", {
       className: b.footerWarningWrapper,
@@ -58,16 +57,16 @@ function y(e) {
         className: b.footerButtons,
         children: [(0, a.jsx)(u.Z, {
           innerClassName: b.messageInput,
-          onChange: R,
+          onChange: k,
           placeholder: f.NW.string(f.t.ZroO3N),
-          channel: x,
-          textValue: j,
-          richValue: w,
+          channel: v,
+          textValue: L,
+          richValue: j,
           type: o.Ie.FORWARD_MESSAGE_INPUT,
           onBlur: M,
-          onFocus: k,
-          focused: Z,
-          onSubmit: W,
+          onFocus: D,
+          focused: w,
+          onSubmit: F,
           parentModalKey: g.so,
           autoCompletePosition: "bottom",
           emojiPickerCloseOnModalOuterClick: !0,
@@ -75,16 +74,16 @@ function y(e) {
         }), (0, a.jsx)(i.zxk, {
           className: b.sendWithMessage,
           submitting: S,
-          disabled: !E || j.length > v,
-          onClick: F,
+          disabled: !E || L.length > C,
+          onClick: R,
           children: y
         })]
-      }), A.length > 0 && j.length > 0 && (0, a.jsx)(i.Text, {
+      }), x.length > 0 && L.length > 0 && (0, a.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-warning",
         children: f.NW.format(f.t.xJFpio, {
-          count: A.length,
-          channelNames: A.join(", ")
+          count: x.length,
+          channelNames: x.join(", ")
         })
       })]
     })]

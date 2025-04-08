@@ -26,16 +26,16 @@ function x(e) {
     setTab: n,
     children: x,
     badgeState: y,
-    closePopout: E
+    closePopout: v
   } = e, {
-    showReminders: v
+    showReminders: E
   } = m.Z.useExperiment({
     location: "RecentsHeader"
   }, {
     autoTrackExposure: !1
   }), {
-    enabled: O,
-    inInbox: N
+    enabled: N,
+    inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
   }), j = (0, f.Us)({
@@ -65,7 +65,7 @@ function x(e) {
       }), (0, r.jsxs)("div", {
         className: b.controls,
         children: [x, (0, r.jsx)(g.Z, {
-          closePopout: E
+          closePopout: v
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -101,14 +101,14 @@ function x(e) {
             color: s.Z.STATUS_DANGER,
             className: b.iconBadge
           }) : null]
-        }) : null, O && N ? (0, r.jsx)(l.njP.Item, {
+        }) : null, N && O ? (0, r.jsx)(l.njP.Item, {
           "aria-label": _.NW.string(_.t["2pAkDA"]),
           id: a.X.BOOKMARKS,
           className: b.tab,
           children: 0 === I ? _.NW.string(_.t["2pAkDA"]) : _.NW.formatToPlainString(_.t.I4fryM, {
             count: I
           })
-        }) : null, v && !O ? (0, r.jsx)(l.njP.Item, {
+        }) : null, E && !N ? (0, r.jsx)(l.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: b.tab,

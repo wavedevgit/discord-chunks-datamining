@@ -25,7 +25,7 @@ function x(e) {
     onClose: n,
     className: x,
     "data-jump-section": y
-  } = e, E = i.useRef(null), v = (0, a.e7)([m.default], () => m.default.getCurrentUser()), O = (0, o.Q3)("RecentsButton"), N = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == v ? void 0 : v.id) != null && p.ZP.getMentionCount(v.id, g.W.NOTIFICATION_CENTER) > 0), {
+  } = e, v = i.useRef(null), E = (0, a.e7)([m.default], () => m.default.getCurrentUser()), N = (0, o.Q3)("RecentsButton"), O = i.useRef(null), j = (0, a.e7)([p.ZP], () => (null == E ? void 0 : E.id) != null && p.ZP.getMentionCount(E.id, g.W.NOTIFICATION_CENTER) > 0), {
     enabled: C
   } = c.Z.useExperiment({
     location: "RecentsButton"
@@ -43,14 +43,14 @@ function x(e) {
     children: (e, t, n, i) => {
       var a, o;
       return (0, r.jsxs)("div", {
-        ref: N,
+        ref: O,
         className: b.recentsIcon,
         children: [C && (0, r.jsx)(h.Z, {
-          inboxIconRef: N,
+          inboxIconRef: O,
           recentsPopoutShown: t
         }), (0, r.jsx)(d.U, {
           location: "inbox-button",
-          targetElementRef: E,
+          targetElementRef: v,
           children: (0, r.jsx)(u.JO, (a = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -69,11 +69,11 @@ function x(e) {
             }
             return e
           }({}, n), o = o = {
-            ref: E,
+            ref: v,
             className: x,
             onClick: e,
             icon: l.xx7,
-            iconSize: O ? I : void 0,
+            iconSize: N ? I : void 0,
             "aria-label": _.NW.string(_.t.GSmTKC),
             tooltip: t ? null : _.NW.string(_.t.GSmTKC),
             selected: t,

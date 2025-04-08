@@ -1,7 +1,7 @@
 /** Chunk was on 53937 **/
 t.d(l, {
-  BC: () => U,
-  ZP: () => Y
+  BC: () => G,
+  ZP: () => z
 }), t(388685), t(539854), t(953529), t(35282);
 var n, r = t(200651),
   i = t(192379),
@@ -39,10 +39,9 @@ var n, r = t(200651),
   B = t(388032),
   V = t(94488),
   _ = t(166011),
-  W = t(73433),
-  D = t(813102);
+  W = t(73433);
 
-function F(e, l, t) {
+function D(e, l, t) {
   return l in e ? Object.defineProperty(e, l, {
     value: t,
     enumerable: !0,
@@ -51,20 +50,20 @@ function F(e, l, t) {
   }) : e[l] = t, e
 }
 
-function Z(e) {
+function F(e) {
   for (var l = 1; l < arguments.length; l++) {
     var t = null != arguments[l] ? arguments[l] : {},
       n = Object.keys(t);
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
       return Object.getOwnPropertyDescriptor(t, e).enumerable
     }))), n.forEach(function(l) {
-      F(e, l, t[l])
+      D(e, l, t[l])
     })
   }
   return e
 }
 
-function G(e, l) {
+function Z(e, l) {
   return l = null != l ? l : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : (function(e, l) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,7 +76,7 @@ function G(e, l) {
   }), e
 }
 
-function U(e) {
+function G(e) {
   var l, t;
   let {
     className: n,
@@ -236,7 +235,7 @@ function U(e) {
   })
 }
 
-function z(e) {
+function U(e) {
   let {
     className: l,
     href: t,
@@ -278,7 +277,7 @@ function z(e) {
     sourceMetadata: y
   })
 }
-class Y extends(n = i.PureComponent) {
+class z extends(n = i.PureComponent) {
   renderProvider() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0],
       {
@@ -561,7 +560,7 @@ class Y extends(n = i.PureComponent) {
       } = null == h ? {
         srcToOnClickOverride: {},
         srcToHandlePreloadImage: {}
-      } : (0, I.J)(h.map(e => G(Z({}, (0, b.Hv)(e, w, "IMAGE")), {
+      } : (0, I.J)(h.map(e => Z(F({}, (0, b.Hv)(e, w, "IMAGE")), {
         original: e.url,
         srcIsAnimated: e.srcIsAnimated
       })), {}, "Embed"),
@@ -606,7 +605,7 @@ class Y extends(n = i.PureComponent) {
           let {
             disableAnimations: t
           } = l;
-          return m(G(Z({}, S), {
+          return m(Z(F({}, S), {
             autoPlay: f && !t && !s,
             renderAccessory: C ? e : null,
             handlePreloadImage: E[j],
@@ -657,7 +656,7 @@ class Y extends(n = i.PureComponent) {
         let {
           disableAnimations: a
         } = e;
-        return (0, r.jsx)(z, {
+        return (0, r.jsx)(U, {
           className: V.embedMedia,
           href: n,
           thumbnail: i,
@@ -675,7 +674,7 @@ class Y extends(n = i.PureComponent) {
           sourceMetadata: b
         })
       }
-    }) : (0, r.jsx)(U, {
+    }) : (0, r.jsx)(G, {
       className: V.embedMedia,
       href: n,
       allowFullScreen: c,
@@ -964,7 +963,7 @@ class Y extends(n = i.PureComponent) {
   }
   constructor(...e) {
     var l;
-    super(...e), l = this, F(this, "state", Z({
+    super(...e), l = this, D(this, "state", F({
       isVisible: null == this.props.obscureReason,
       videoControlsShown: !1,
       isImageHovered: !1,
@@ -976,15 +975,15 @@ class Y extends(n = i.PureComponent) {
           embedIndex: this.props.embedIndex
         }
       }
-    }, (0, T.vP)(this.props.embed))), F(this, "onReveal", () => {
+    }, (0, T.vP)(this.props.embed))), D(this, "onReveal", () => {
       this.setState({
         isVisible: !0
       })
-    }), F(this, "onToggleObscurity", () => {
+    }), D(this, "onToggleObscurity", () => {
       this.setState({
         isVisible: !this.state.isVisible
       })
-    }), F(this, "renderInlineMediaEmbed", function() {
+    }), D(this, "renderInlineMediaEmbed", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
           obscureReason: t,
@@ -997,15 +996,14 @@ class Y extends(n = i.PureComponent) {
           [V.spoilerAttachment]: t === w.wk.SPOILER,
           [V.hiddenExplicitAttachment]: null != t && [w.wk.EXPLICIT_CONTENT, w.wk.POTENTIAL_EXPLICIT_CONTENT].includes(t),
           [V.isHidden]: e,
-          [V.justifyAuto]: l.usesJustifiedAutoStyle(),
-          [D.embedFlexGrow]: null != i
+          [V.justifyAuto]: l.usesJustifiedAutoStyle()
         }),
         style: {
           maxWidth: i
         },
         children: l.renderMedia(e)
       })
-    }), F(this, "renderEmbedContent", function() {
+    }), D(this, "renderEmbedContent", function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         {
           className: t,
@@ -1023,7 +1021,7 @@ class Y extends(n = i.PureComponent) {
           footer: p
         } = l.renderAll();
       return (0, r.jsx)("article", {
-        className: a()(t, D.embedFlexGrow, V.embedFull, W.markup, {
+        className: a()(t, V.embedFull, W.markup, {
           [V.isHidden]: e,
           [V.spoilerEmbed]: i === w.wk.SPOILER,
           [V.hiddenExplicitEmbed]: null != i && [w.wk.EXPLICIT_CONTENT, w.wk.POTENTIAL_EXPLICIT_CONTENT].includes(i),
@@ -1048,7 +1046,7 @@ class Y extends(n = i.PureComponent) {
     })
   }
 }
-F(Y, "defaultProps", {
+D(z, "defaultProps", {
   hideMedia: !1,
   allowFullScreen: !0,
   maxThumbnailWidth: 80,

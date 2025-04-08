@@ -1,12 +1,11 @@
 /** Chunk was on 87267 **/
 n.d(t, {
-  Ad: () => h,
+  Ad: () => _,
   Lb: () => c,
-  ZF: () => p,
+  ZF: () => f,
   gP: () => d,
-  mh: () => _,
-  sF: () => u,
-  xp: () => f
+  mh: () => p,
+  sF: () => u
 });
 var r = n(192379),
   i = n(392711),
@@ -85,14 +84,7 @@ function d(e) {
   }
 }
 
-function f(e, t) {
-  l.default.track(s.rMx.FORWARD_COPY_LINK, {
-    channel_id: e,
-    message_id: t
-  })
-}
-
-function p() {
+function f() {
   return r.useMemo(() => (0, i.once)((e, t, n) => {
     l.default.track(s.rMx.FORWARD_ADD_RECIPIENT, {
       channel_id: e,
@@ -102,7 +94,7 @@ function p() {
   }), [])
 }
 
-function _() {
+function p() {
   return r.useMemo(() => (0, i.once)((e, t) => {
     l.default.track(s.rMx.FORWARD_EDIT_SEARCH, {
       channel_id: e,
@@ -111,7 +103,7 @@ function _() {
   }), [])
 }
 
-function h() {
+function _() {
   return r.useMemo(() => (0, i.once)((e, t) => {
     l.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,

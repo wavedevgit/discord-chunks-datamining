@@ -1,6 +1,6 @@
 /**
   Module ID: 84927
-  Original File Name: d632e5f4dd1c5273
+  Original File Name: 33c637731fdb4d07
 **/
 .popover_f84418 {
     overflow: visible
@@ -3115,99 +3115,6 @@ html .progress__61462 {
     pointer-events: none
 }
 
-.container_b7e1cb {
-    display: grid;
-    height: -moz-fit-content;
-    height: fit-content;
-    grid-auto-flow: row;
-    grid-row-gap: .25rem;
-    grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
-    text-indent: 0;
-    min-height: 0;
-    min-width: 0;
-    padding-top: .125rem;
-    padding-bottom: .125rem;
-    position: relative
-}
-
-.container_b7e1cb:empty {
-    display: none
-}
-
-.container_b7e1cb>* {
-    justify-self: start;
-    align-self: start
-}
-
-.gifFavoriteButton_b7e1cb {
-    display: block;
-    margin: 0 0 0 auto;
-    opacity: 0;
-    box-sizing: border-box;
-    transform: translateY(-16px)
-}
-
-.full-motion .gifFavoriteButton_b7e1cb {
-    transition: transform .2s ease, opacity .1s ease
-}
-
-.embedWrapper_b7e1cb:focus-within .gifFavoriteButton_b7e1cb,.embedWrapper_b7e1cb:hover .gifFavoriteButton_b7e1cb {
-    opacity: 1;
-    transform: translateY(0)
-}
-
-.giftCodeContainer_b7e1cb {
-    width: 100%
-}
-
-.referralContainer_b7e1cb {
-    width: 100%;
-    justify-content: space-between
-}
-
-.pollContainer_b7e1cb {
-    margin: 4px 0
-}
-
-.confirmText_b7e1cb {
-    margin-bottom: 12px
-}
-
-.threadRoleMentionFailure_b7e1cb {
-    color: var(--text-danger);
-    font-size: 12px;
-    line-height: 16px
-}
-
-.nitroFileSizeUpsell_b7e1cb {
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.nitroBadgeSvg_b7e1cb {
-    margin-right: .25rem;
-    height: 18px;
-    width: 18px
-}
-
-.ctaButtonContainer_b7e1cb {
-    margin-top: 6px;
-    margin-bottom: 6px
-}
-
-.embedContainer_b7e1cb {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    width: 100%
-}
-
-.embedContainer_b7e1cb .embedFlexGrow_b7e1cb {
-    flex-grow: 1
-}
-
 .container_adb50a {
     border-radius: 12px;
     border: 1px solid var(--background-message-highlight-hover);
@@ -5360,19 +5267,6 @@ html .progress__61462 {
 
 .hasFooter_f4758a {
     max-height: none
-}
-
-.mosaicContainer_f4758a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 100%
-}
-
-.mosaicContainer_f4758a.single_f4758a {
-    width: auto
 }
 
 .divider__1fcac {
@@ -7599,6 +7493,87 @@ html .progress__61462 {
     align-items: center;
     display: flex;
     gap: 8px
+}
+
+.container_b7e1cb {
+    display: grid;
+    height: -moz-fit-content;
+    height: fit-content;
+    grid-auto-flow: row;
+    grid-row-gap: .25rem;
+    grid-template-columns: repeat(auto-fill,minmax(100%,1fr));
+    text-indent: 0;
+    min-height: 0;
+    min-width: 0;
+    padding-top: .125rem;
+    padding-bottom: .125rem;
+    position: relative
+}
+
+.container_b7e1cb:empty {
+    display: none
+}
+
+.container_b7e1cb>* {
+    justify-self: start;
+    align-self: start
+}
+
+.gifFavoriteButton_b7e1cb {
+    display: block;
+    margin: 0 0 0 auto;
+    opacity: 0;
+    box-sizing: border-box;
+    transform: translateY(-16px)
+}
+
+.full-motion .gifFavoriteButton_b7e1cb {
+    transition: transform .2s ease, opacity .1s ease
+}
+
+.embedWrapper_b7e1cb:focus-within .gifFavoriteButton_b7e1cb,.embedWrapper_b7e1cb:hover .gifFavoriteButton_b7e1cb {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.giftCodeContainer_b7e1cb {
+    width: 100%
+}
+
+.referralContainer_b7e1cb {
+    width: 100%;
+    justify-content: space-between
+}
+
+.pollContainer_b7e1cb {
+    margin: 4px 0
+}
+
+.confirmText_b7e1cb {
+    margin-bottom: 12px
+}
+
+.threadRoleMentionFailure_b7e1cb {
+    color: var(--text-danger);
+    font-size: 12px;
+    line-height: 16px
+}
+
+.nitroFileSizeUpsell_b7e1cb {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.nitroBadgeSvg_b7e1cb {
+    margin-right: .25rem;
+    height: 18px;
+    width: 18px
+}
+
+.ctaButtonContainer_b7e1cb {
+    margin-top: 6px;
+    margin-bottom: 6px
 }
 
 @use postcss-pxtorem;
@@ -11813,4 +11788,4 @@ html .progress__61462 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=d632e5f4dd1c5273.css.map*/
+/*# sourceMappingURL=33c637731fdb4d07.css.map*/

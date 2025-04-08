@@ -1,11 +1,11 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 });
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  a = n(481060),
+  a = n(442837),
+  l = n(481060),
   o = n(543241),
   s = n(222677),
   c = n(995774),
@@ -15,28 +15,28 @@ var r = n(200651),
   g = n(768581),
   m = n(585483),
   b = n(176354),
-  p = n(981631),
-  h = n(185923),
-  y = n(388032);
+  h = n(981631),
+  p = n(185923),
+  O = n(388032);
 
-function N(e, t) {
+function y(e, t) {
   let {
     reducedMotion: n
-  } = i.useContext(a.Sfi), g = (0, u.$R)(t), N = (0, l.e7)([f.Z], () => (t.isPrivate() || f.Z.can(p.Plq.ADD_REACTIONS, t)) && g, [t, g]), E = (0, o.MZ)(t.getGuildId());
-  if (!d.nc.getSetting() || !N || e.type === p.uaV.GUILD_INVITE_REMINDER) return null;
-  let v = E.filter(e => !b.ZP.isEmojiFilteredOrLocked({
+  } = i.useContext(l.Sfi), g = (0, u.$R)(t), y = (0, a.e7)([f.Z], () => (t.isPrivate() || f.Z.can(h.Plq.ADD_REACTIONS, t)) && g, [t, g]), N = (0, o.MZ)(t.getGuildId());
+  if (!d.nc.getSetting() || !y || e.type === h.uaV.GUILD_INVITE_REMINDER) return null;
+  let v = N.filter(e => !b.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
-    intention: h.Hz.REACTION
-  })).slice(0, 12).map((i, l) => {
+    intention: p.Hz.REACTION
+  })).slice(0, 12).map((i, a) => {
     var o, u;
-    return (0, r.jsx)(a.sNh, {
+    return (0, r.jsx)(l.sNh, {
       color: "default",
       id: null != (u = null != (o = i.id) ? o : i.optionallyDiverseSequence) ? u : i.name,
       label: ":".concat(i.name, ":"),
       icon: e => {
-        var t, l;
-        return (0, r.jsx)(O, (t = function(e) {
+        var t, a;
+        return (0, r.jsx)(E, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -53,43 +53,43 @@ function N(e, t) {
             })
           }
           return e
-        }({}, e), l = l = {
+        }({}, e), a = a = {
           reducedMotionEnabled: n.enabled,
           emoji: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
         }), t))
       },
       action: () => {
         (0, s.rU)(t.id, e.id, (0, c.g1)(i), s.TW.MESSAGE_CONTEXT_MENU)
       },
       dontCloseOnActionIfHoldingShiftKey: !0
-    }, l)
+    }, a)
   });
-  return (0, r.jsx)(a.sNh, {
+  return (0, r.jsx)(l.sNh, {
     id: "add-reaction",
-    label: y.NW.string(y.t.lfIHs7),
+    label: O.NW.string(O.t.lfIHs7),
     action: () => {
-      m.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+      m.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: !0
       })
     },
     color: "default",
     children: (0, r.jsxs)(r.Fragment, {
-      children: [v, (0, r.jsx)(a.Clw, {}), (0, r.jsx)(a.sNh, {
+      children: [v, (0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         color: "default",
         id: "other-reactions",
-        label: y.NW.string(y.t["OBCR+v"]),
-        icon: a.EO4,
+        label: O.NW.string(O.t["OBCR+v"]),
+        icon: l.EO4,
         action: () => {
-          m.S.dispatchKeyed(p.LPv.TOGGLE_REACTION_POPOUT, e.id, {
+          m.S.dispatchKeyed(h.LPv.TOGGLE_REACTION_POPOUT, e.id, {
             emojiPicker: !0
           })
         }
@@ -98,19 +98,19 @@ function N(e, t) {
   })
 }
 
-function O(e) {
+function E(e) {
   var t;
   let {
     emoji: n,
     reducedMotionEnabled: i,
-    className: l = "",
-    isFocused: a = !1
+    className: a = "",
+    isFocused: l = !1
   } = e;
   return (0, r.jsx)("img", {
-    className: l,
+    className: a,
     src: null != n.id ? g.ZP.getEmojiURL({
       id: n.id,
-      animated: n.animated && (!i || a),
+      animated: n.animated && (!i || l),
       size: 18
     }) : b.ZP.getURL(null != (t = n.optionallyDiverseSequence) ? t : ""),
     alt: ""

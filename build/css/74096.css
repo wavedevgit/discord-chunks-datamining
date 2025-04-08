@@ -1,6 +1,6 @@
 /**
   Module ID: 74096
-  Original File Name: 9e579e07ff2361e9
+  Original File Name: 253f0ac5b60da211
 **/
 .clipPill_d762d7 {
     position: absolute;
@@ -371,19 +371,6 @@
     max-height: none
 }
 
-.mosaicContainer_f4758a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 100%
-}
-
-.mosaicContainer_f4758a.single_f4758a {
-    width: auto
-}
-
 .container_a804d4 {
     position: relative
 }
@@ -585,4 +572,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=9e579e07ff2361e9.css.map*/
+/*# sourceMappingURL=253f0ac5b60da211.css.map*/

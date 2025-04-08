@@ -26,10 +26,10 @@ function x(e) {
     guildId: n,
     location: x,
     shouldShowFullDescriptionButton: y = !0,
-    hideRoleTag: E = !1,
-    lineClamp: v = 1,
-    cardWidth: O,
-    cardHeight: N,
+    hideRoleTag: v = !1,
+    lineClamp: E = 1,
+    cardWidth: N,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: C = "text-sm/normal",
     showOpaqueBackground: S = !1
@@ -38,9 +38,9 @@ function x(e) {
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : b.lds)
   }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(I), {
     shouldHideGuildPurchaseEntryPoints: Z
-  } = (0, o.uP)(n), R = (0, f.k)(t);
+  } = (0, o.uP)(n), k = (0, f.k)(t);
   if (null == I || Z) return null;
-  let k = () => (0, g.e)({
+  let R = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: x
@@ -73,7 +73,7 @@ function x(e) {
     imageUrl: P,
     name: t.name,
     description: t.description,
-    formattedPrice: R,
+    formattedPrice: k,
     role: T,
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
@@ -82,14 +82,14 @@ function x(e) {
     }),
     productType: A,
     shouldShowFullDescriptionButton: y,
-    onShowFullDescription: k,
-    onTapCard: k,
+    onShowFullDescription: R,
+    onTapCard: R,
     actionMenu: D,
     showOpaqueBackground: S,
-    hideRoleTag: E,
-    lineClamp: v,
-    cardWidth: O,
-    cardHeight: N,
+    hideRoleTag: v,
+    lineClamp: E,
+    cardWidth: N,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: C,
     isDraft: !t.published

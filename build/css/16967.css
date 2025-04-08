@@ -1,6 +1,6 @@
 /**
   Module ID: 16967
-  Original File Name: a0f033cf9de68eaf
+  Original File Name: e0e0a1f4a0d8f795
 **/
 .closeButton__47998 {
     position: absolute;
@@ -383,13 +383,6 @@
 .forwardPreviewWrapper__62280 {
     padding: 12px 16px;
     border-bottom: 1px solid var(--border-subtle)
-}
-
-.forwardPreviewWrapperInset__62280 {
-    padding: 12px;
-    background: var(--modal-footer-background);
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px
 }
 
 .visual-refresh-chat-input .header__62280 {
@@ -1467,4 +1460,4 @@
     border-radius: 8px
 }
 
-/*# sourceMappingURL=a0f033cf9de68eaf.css.map*/
+/*# sourceMappingURL=e0e0a1f4a0d8f795.css.map*/

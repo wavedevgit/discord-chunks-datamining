@@ -2,10 +2,10 @@
 n.d(t, {
   Z: () => u
 });
-var r, i, l, a = n(442837),
+var r, i, a, l = n(442837),
   o = n(570140);
 let s = {};
-class c extends(l = a.ZP.Store) {
+class c extends(a = l.ZP.Store) {
   getOptions(e) {
     return s[e]
   }

@@ -53,19 +53,19 @@ let O = Math.round((p.mT - 8) / 3),
   x = Math.round(2 * (p.mT - 4) / 3),
   b = x / 2;
 
-function v(e) {
+function w(e) {
   let {
     visualMediaItems: t,
     footer: n
   } = e;
   null != n && a()(1 === t.length, "footer only gets applied to single items");
   let o = t.length;
-  if (1 === o) return (0, r.jsx)(C, {
+  if (1 === o) return (0, r.jsx)(v, {
     itemsForLayout: t,
     isSingleImage: !0,
     footer: n
   });
-  if (2 === o) return (0, r.jsx)(w, {
+  if (2 === o) return (0, r.jsx)(C, {
     itemsForLayout: t
   });
   if (3 === o) return (0, r.jsx)(P, {
@@ -76,9 +76,9 @@ function v(e) {
   });
   let i = o % 3;
   return (0, r.jsxs)(r.Fragment, {
-    children: [1 === i && (0, r.jsx)(C, {
+    children: [1 === i && (0, r.jsx)(v, {
       itemsForLayout: t.slice(0, i)
-    }), 2 === i && (0, r.jsx)(w, {
+    }), 2 === i && (0, r.jsx)(C, {
       itemsForLayout: t.slice(0, i)
     }), 0 === i ? (0, r.jsx)(N, {
       itemsForLayout: t
@@ -88,7 +88,7 @@ function v(e) {
   })
 }
 
-function C(e) {
+function v(e) {
   let {
     itemsForLayout: t,
     isSingleImage: n,
@@ -109,7 +109,7 @@ function C(e) {
   })
 }
 
-function w(e) {
+function C(e) {
   let {
     itemsForLayout: t
   } = e;
@@ -217,12 +217,11 @@ let S = function(e) {
   var t;
   let {
     items: n,
-    inlineForwardButton: i,
-    isInAppComponentsV2: s = !1
+    isInAppComponentsV2: i = !1
   } = e, {
-    groupableVisualMediaItems: a,
-    nonGroupableVisualMediaItems: u,
-    nonVisualMediaItems: d
+    groupableVisualMediaItems: s,
+    nonGroupableVisualMediaItems: a,
+    nonVisualMediaItems: u
   } = (t = n, o.useMemo(() => {
     let [e, n] = c().partition(t, e => (0, m.R_)(e.item.type)), [r, o] = c().partition(e, e => (0, m.Ld)(e.item.type));
     return {
@@ -232,42 +231,30 @@ let S = function(e) {
     }
   }, [t]));
   return (0, r.jsxs)(r.Fragment, {
-    children: [a.length > 0 && (null != i ? (0, r.jsxs)("div", {
-      className: l()(f.mosaicContainer, {
-        [f.single]: 1 === a.length
-      }),
-      children: [(0, r.jsx)("div", {
-        className: l()(f.visualMediaItemContainer, {
-          [f.isInAppComponentsV2]: s
-        }),
-        children: (0, r.jsx)(v, {
-          visualMediaItems: a
-        })
-      }), i]
-    }) : (0, r.jsx)("div", {
+    children: [s.length > 0 && (0, r.jsx)("div", {
       className: l()(f.visualMediaItemContainer, {
-        [f.isInAppComponentsV2]: s
+        [f.isInAppComponentsV2]: i
       }),
-      children: (0, r.jsx)(v, {
-        visualMediaItems: a
+      children: (0, r.jsx)(w, {
+        visualMediaItems: s
       })
-    })), u.length > 0 && u.map(e => {
+    }), a.length > 0 && a.map(e => {
       let t = e.renderMosaicItemFooter({
         item: e.item,
         message: e.message
       });
       return (0, r.jsx)("div", {
         className: l()(f.visualMediaItemContainer, {
-          [f.isInAppComponentsV2]: s
+          [f.isInAppComponentsV2]: i
         }),
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(w, {
           visualMediaItems: [e],
           footer: t
         })
       }, e.item.uniqueId)
-    }), d.length > 0 && (0, r.jsx)("div", {
+    }), u.length > 0 && (0, r.jsx)("div", {
       className: f.nonVisualMediaItemContainer,
-      children: d.map(e => (0, r.jsx)("div", {
+      children: u.map(e => (0, r.jsx)("div", {
         className: f.nonVisualMediaItem,
         children: (0, r.jsx)(A, {
           props: e

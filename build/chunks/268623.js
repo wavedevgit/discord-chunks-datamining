@@ -1,11 +1,11 @@
 /** Chunk was on 37220 **/
 n.d(t, {
-  Z: () => h
+  Z: () => p
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(442837),
-  a = n(481060),
+  a = n(442837),
+  l = n(481060),
   o = n(436774),
   s = n(2818),
   c = n(324701),
@@ -15,9 +15,9 @@ var r = n(200651),
   g = n(742989),
   m = n(898150),
   b = n(70956),
-  p = n(388032);
+  h = n(388032);
 
-function h(e) {
+function p(e) {
   let {
     enabled: t
   } = s.Z.useExperiment({
@@ -26,11 +26,11 @@ function h(e) {
     showReminders: n
   } = g.Z.useExperiment({
     location: "LongPressMessageActionSheet"
-  }), h = (0, l.e7)([d.Z], () => d.Z.getSavedMessage(e.channel_id, e.id)), y = function(e) {
+  }), p = (0, a.e7)([d.Z], () => d.Z.getSavedMessage(e.channel_id, e.id)), O = function(e) {
     let {
       message: t,
       savedMessage: n
-    } = e, [l, o] = i.useState(new Date);
+    } = e, [a, o] = i.useState(new Date);
     i.useEffect(() => {
       let e = setInterval(() => o(new Date), b.Z.Millis.MINUTE);
       return () => {
@@ -50,70 +50,70 @@ function h(e) {
         dueInText: f
       } = (0, u.AT)({
         dueAt: null == n ? void 0 : n.saveData.dueAt,
-        now: l,
+        now: a,
         type: u.hQ.LONG
       });
-    return (null == n ? void 0 : n.saveData.dueAt) == null ? (0, r.jsx)(a.kSQ, {
-      label: p.NW.string(p.t.roMu1N),
+    return (null == n ? void 0 : n.saveData.dueAt) == null ? (0, r.jsx)(l.kSQ, {
+      label: h.NW.string(h.t.roMu1N),
       children: d
-    }) : (0, r.jsxs)(a.kSQ, {
+    }) : (0, r.jsxs)(l.kSQ, {
       label: f,
-      children: [(0, r.jsx)(a.sNh, {
+      children: [(0, r.jsx)(l.sNh, {
         id: "mark-complete",
-        label: p.NW.string(p.t.yjGtdH),
-        icon: a.kmB,
+        label: h.NW.string(h.t.yjGtdH),
+        icon: l.kmB,
         action: () => (0, c.z)({
           channelId: t.channel_id,
           messageId: t.id,
           dueAt: void 0
         })
-      }), (0, r.jsx)(a.sNh, {
+      }), (0, r.jsx)(l.sNh, {
         id: "edit-reminder",
-        label: p.NW.string(p.t.vrbqs7),
+        label: h.NW.string(h.t.vrbqs7),
         children: d
       })]
     })
   }({
     message: e,
-    savedMessage: h
+    savedMessage: p
   });
-  return t || n ? null != h || (0, f.Z)() ? (0, r.jsxs)(a.sNh, {
+  return t || n ? null != p || (0, f.Z)() ? (0, r.jsxs)(l.sNh, {
     id: "save-for-later",
-    label: p.NW.string(p.t.tpxJtr),
-    action: () => null == h ? (0, c.z)({
+    label: h.NW.string(h.t.tpxJtr),
+    action: () => null == p ? (0, c.z)({
       channelId: e.channel_id,
       messageId: e.id,
       displayToast: !0
     }) : (0, c.x)({
       channelId: e.channel_id,
       messageId: e.id,
-      dueAt: h.saveData.dueAt,
+      dueAt: p.saveData.dueAt,
       displayToast: !0
     }),
-    children: [null != h ? (0, r.jsx)(a.sNh, {
+    children: [null != p ? (0, r.jsx)(l.sNh, {
       id: "remove-from-for-later",
-      label: p.NW.string(p.t.SvXS1d),
-      icon: a.plf,
+      label: h.NW.string(h.t.SvXS1d),
+      icon: l.plf,
       action: () => (0, c.x)({
         channelId: e.channel_id,
         messageId: e.id,
-        dueAt: h.saveData.dueAt,
+        dueAt: p.saveData.dueAt,
         displayToast: !0
       })
-    }) : (0, r.jsx)(a.sNh, {
+    }) : (0, r.jsx)(l.sNh, {
       id: "create-bookmark",
-      label: p.NW.string(p.t["9p3D9v"]),
-      icon: a.gt9,
+      label: h.NW.string(h.t["9p3D9v"]),
+      icon: l.gt9,
       action: () => (0, c.z)({
         channelId: e.channel_id,
         messageId: e.id,
         displayToast: !0
       })
-    }), (0, r.jsx)(a.Clw, {}), y]
-  }) : (0, r.jsx)(a.sNh, {
+    }), (0, r.jsx)(l.Clw, {}), O]
+  }) : (0, r.jsx)(l.sNh, {
     id: "save-for-later-upsell",
-    label: p.NW.string(p.t.tpxJtr),
-    icon: a.SrA,
+    label: h.NW.string(h.t.tpxJtr),
+    icon: l.SrA,
     iconProps: {
       color: o.JX.PREMIUM_TIER_2
     },

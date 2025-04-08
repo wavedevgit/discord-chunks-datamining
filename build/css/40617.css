@@ -1,6 +1,6 @@
 /**
   Module ID: 40617
-  Original File Name: 32b63a83b9578796
+  Original File Name: 000248cf20f0b02a
 **/
 .container__4216d {
     align-items: center;
@@ -1022,19 +1022,6 @@
     max-height: none
 }
 
-.mosaicContainer_f4758a {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    max-width: 100%
-}
-
-.mosaicContainer_f4758a.single_f4758a {
-    width: auto
-}
-
 .carouselModal__8a837 {
     width: 100vw;
     height: 100vh
@@ -1340,4 +1327,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=32b63a83b9578796.css.map*/
+/*# sourceMappingURL=000248cf20f0b02a.css.map*/

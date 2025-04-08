@@ -56,9 +56,9 @@ function m(e) {
     onClick: b,
     className: x,
     source: y,
-    hover: E,
-    innerClassName: v
-  } = e, O = {
+    hover: v,
+    innerClassName: E
+  } = e, N = {
     fullWidth: n,
     size: m,
     color: f,
@@ -66,15 +66,15 @@ function m(e) {
     tooltipPosition: _,
     onClick: b,
     className: x,
-    hover: E,
-    innerClassName: v
-  }, N = (0, i.e7)([l.Z], () => l.Z.getActiveLibraryApplication(t.id)), j = null != N ? N.sku.id : null, C = null != j ? j : t.primarySkuId, S = (0, i.e7)([o.Z], () => null != C && !o.Z.didFetchingSkuFail(C));
-  return null != N && (0, s.Je)(N) ? (0, r.jsx)(u.Z, p(d({}, O), {
-    libraryApplication: N,
+    hover: v,
+    innerClassName: E
+  }, O = (0, i.e7)([l.Z], () => l.Z.getActiveLibraryApplication(t.id)), j = null != O ? O.sku.id : null, C = null != j ? j : t.primarySkuId, S = (0, i.e7)([o.Z], () => null != C && !o.Z.didFetchingSkuFail(C));
+  return null != O && (0, s.Je)(O) ? (0, r.jsx)(u.Z, p(d({}, N), {
+    libraryApplication: O,
     source: y
   })) : S ? (0, r.jsx)("div", {
     children: "deprecated!"
-  }) : (0, r.jsx)(c.Z, p(d({}, O), {
+  }) : (0, r.jsx)(c.Z, p(d({}, N), {
     hideNotLaunchable: g,
     applicationId: t.id
   }))

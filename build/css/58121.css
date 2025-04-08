@@ -1,6 +1,6 @@
 /**
   Module ID: 58121
-  Original File Name: bbcfaa97c9983068
+  Original File Name: 2ed5f2f6d95ac92a
 **/
 .coverContainer__2f300 {
     height: 640px;
@@ -332,7 +332,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border-radius: var(--radius-sm)
 }
 
-.welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 2px
 }
 
@@ -406,7 +406,7 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-.visual-refresh .welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.visual-refresh .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 1px
 }
 
@@ -1329,4 +1329,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     height: calc(var(--custom-channel-header-height) + 1px)
 }
 
-/*# sourceMappingURL=bbcfaa97c9983068.css.map*/
+/*# sourceMappingURL=2ed5f2f6d95ac92a.css.map*/

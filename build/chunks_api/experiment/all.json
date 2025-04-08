@@ -2959,29 +2959,6 @@
         }
     },
     {
-        "id": "346610",
-        "data": {
-            "kind": "user",
-            "id": "2024-09_message_forwarding_gtm",
-            "label": "Message forwarding GTM",
-            "defaultConfig": {},
-            "treatments": [
-                {
-                    "id": 1,
-                    "label": "GTM",
-                    "config": {
-                        "canForwardMessages": false,
-                        "hasInlineForwardButton": false,
-                        "hasOneTapSendButton": false,
-                        "hasMessageInput": false,
-                        "hasPreview": false,
-                        "useOldIcon": false
-                    }
-                }
-            ]
-        }
-    },
-    {
         "id": "347382",
         "data": {
             "id": "2025-02_quests_hls_video",
@@ -5611,26 +5588,6 @@
                     "label": "Enable edit modal with preview",
                     "config": {
                         "enabled": false
-                    }
-                }
-            ]
-        }
-    },
-    {
-        "id": "631184",
-        "data": {
-            "kind": "user",
-            "id": "2024-06_message_forward_breadcrumb",
-            "label": "Message forward breadcrumb",
-            "defaultConfig": {
-                "showForwardBreadcrumb": false
-            },
-            "treatments": [
-                {
-                    "id": 1,
-                    "label": "No breadcrumb",
-                    "config": {
-                        "showForwardBreadcrumb": false
                     }
                 }
             ]

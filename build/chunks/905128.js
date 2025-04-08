@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => T
 }), n(388685);
 var r = n(442837),
   i = n(570140);
@@ -48,16 +48,18 @@ let c = 864e5,
   u = 36e5,
   d = new Map,
   f = {},
-  _ = {};
+  _ = {},
+  p = {},
+  h = {};
 
-function p(e) {
+function m(e) {
   return Array.from(e.values()).reduce((e, t) => {
     var n, r, i;
     return e + (null != (i = null == (r = t.sku) || null == (n = r.powerup_metadata) ? void 0 : n.boost_price) ? i : 0)
   }, 0)
 }
 
-function h(e) {
+function g(e) {
   return d.has(e) || d.set(e, {
     powerups: new Map,
     unlocked: new Map,
@@ -66,56 +68,56 @@ function h(e) {
   }), d.get(e)
 }
 
-function m(e) {
+function E(e) {
   let {
     guildId: t,
     powerups: n,
     catalog: r
-  } = e, i = h(t), o = new Map(d);
+  } = e, i = g(t), o = new Map(d);
   o.set(t, l(a({}, i), {
     powerups: n,
     catalog: r
-  })), d = o, f[t] = Date.now()
+  })), d = o, f[t] = Date.now(), p[t] = !0
 }
 
-function g(e) {
+function b(e) {
   let {
     guildId: t,
     unlocked: n
-  } = e, r = h(t), i = p(n), o = new Map(d);
+  } = e, r = g(t), i = m(n), o = new Map(d);
   o.set(t, l(a({}, r), {
     unlocked: n,
     appliedBoosts: i
-  })), d = o, _[t] = Date.now()
+  })), d = o, _[t] = Date.now(), h[t] = !0
 }
 
-function E(e, t) {
+function y(e, t) {
   let {
     guildId: n,
     entitlements: r
-  } = e, i = h(n);
+  } = e, i = g(n);
   r.forEach(e => {
     t ? i.unlocked.set(e.sku_id, e) : i.unlocked.delete(e.sku_id)
   });
-  let o = p(i.unlocked),
+  let o = m(i.unlocked),
     s = new Map(d);
   s.set(n, l(a({}, i), {
     appliedBoosts: o
   })), d = s
 }
 
-function b(e) {
-  E(e, !0)
+function v(e) {
+  y(e, !0)
 }
 
-function y(e) {
-  E(e, !1)
+function O(e) {
+  y(e, !1)
 }
 
-function v() {
+function I() {
   d = new Map, f = {}, _ = {}
 }
-class O extends r.ZP.Store {
+class S extends r.ZP.Store {
   getStateForGuild(e) {
     return null != e ? d.get(e) : void 0
   }
@@ -127,11 +129,17 @@ class O extends r.ZP.Store {
     let t = _[e];
     return null == t || t + u < Date.now()
   }
+  hasFetchedPowerupCatalog(e) {
+    return null != e && !0 === p[e]
+  }
+  hasFetchedUnlockedPowerups(e) {
+    return null != e && !0 === h[e]
+  }
 }
-let I = new O(i.Z, {
-  LOGOUT: v,
-  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: m,
-  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: g,
-  GUILD_POWERUP_ENTITLEMENTS_CREATE: b,
-  GUILD_POWERUP_ENTITLEMENTS_DELETE: y
+let T = new S(i.Z, {
+  LOGOUT: I,
+  GUILD_POWERUP_CATALOG_FETCH_SUCCESS: E,
+  GUILD_UNLOCKED_POWERUPS_FETCH_SUCCESS: b,
+  GUILD_POWERUP_ENTITLEMENTS_CREATE: v,
+  GUILD_POWERUP_ENTITLEMENTS_DELETE: O
 })

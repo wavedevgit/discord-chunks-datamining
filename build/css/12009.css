@@ -1,6 +1,6 @@
 /**
   Module ID: 12009
-  Original File Name: 77440168866ff97f
+  Original File Name: 94accf37a8f8a697
 **/
 .header__553a5 {
     width: 100%;
@@ -467,7 +467,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     border-radius: var(--radius-sm)
 }
 
-.welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 2px
 }
 
@@ -541,7 +541,7 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-.visual-refresh .welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.visual-refresh .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 1px
 }
 
@@ -549,4 +549,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-/*# sourceMappingURL=77440168866ff97f.css.map*/
+/*# sourceMappingURL=94accf37a8f8a697.css.map*/

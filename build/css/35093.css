@@ -1,6 +1,6 @@
 /**
   Module ID: 35093
-  Original File Name: 75d1450d12e98c06
+  Original File Name: be2d5e5f3d562596
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -10816,7 +10816,7 @@ html:not(.visual-refresh) .bannedUserModal_cdb2b0 .reasonHeader_cdb2b0 {
     border-radius: var(--radius-sm)
 }
 
-.welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 2px
 }
 
@@ -10890,7 +10890,7 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-.visual-refresh .welcomeMessageProfileContainer__6f212.custom-profile-theme {
+.visual-refresh .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
     padding: 1px
 }
 
@@ -14395,4 +14395,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=75d1450d12e98c06.css.map*/
+/*# sourceMappingURL=be2d5e5f3d562596.css.map*/

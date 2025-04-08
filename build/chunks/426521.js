@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(709054),
   x = n(591759),
   y = n(833592),
-  E = n(497089),
-  v = n(178480),
-  O = n(418316),
-  N = n(382865),
+  v = n(497089),
+  E = n(178480),
+  N = n(418316),
+  O = n(382865),
   j = n(526146),
   C = n(400565),
   S = n(148789),
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(756688),
   Z = n(886765);
 
-function R(e) {
+function k(e) {
   var t, n, i;
   let {
     item: a
@@ -56,7 +56,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     item: {
       callout: t
@@ -109,7 +109,7 @@ let M = i.memo(function(e) {
     } = e, {
       analyticsLocations: c
     } = (0, s.ZP)(), p = (0, j.I)(a, o), f = i.useCallback(async () => {
-      if (p || (0, y.wt)(a), null != a.item_enum && a.item_enum === E.AM.FIND_FRIENDS) return void(0, l.ZDy)(async () => {
+      if (p || (0, y.wt)(a), null != a.item_enum && a.item_enum === v.AM.FIND_FRIENDS) return void(0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("6074").then(n.bind(n, 443189));
@@ -155,21 +155,21 @@ let M = i.memo(function(e) {
           } else await (0, u.Z)(r)
         }
         _.default.track(T.rMx.NOTIFICATION_CENTER_ACTION, {
-          action_type: E.ud.CLICKED,
+          action_type: v.ud.CLICKED,
           notification_center_id: a.id,
           item_type: a.type,
           acked: p
         })
       }
     }, [a, p, c]), h = null;
-    a.type === E.O7.INCOMING_FRIEND_REQUESTS && null != a.other_user ? h = (0, r.jsx)(S.Z, {
+    a.type === v.O7.INCOMING_FRIEND_REQUESTS && null != a.other_user ? h = (0, r.jsx)(S.Z, {
       userId: a.other_user.id
-    }) : a.type === E.O7.INCOMING_GAME_FRIEND_REQUESTS && null != a.other_user && (h = (0, r.jsx)(S.Z, {
+    }) : a.type === v.O7.INCOMING_GAME_FRIEND_REQUESTS && null != a.other_user && (h = (0, r.jsx)(S.Z, {
       userId: a.other_user.id,
       applicationId: a.applicationId
     }));
     let g = null != a.local_id,
-      N = (0, O.Z)({
+      O = (0, N.Z)({
         item: a,
         renderApplication: e => (0, r.jsx)(L, {
           applicationId: e
@@ -182,7 +182,7 @@ let M = i.memo(function(e) {
         focusProps: {
           offset: 4
         },
-        "aria-label": N,
+        "aria-label": O,
         onClick: f,
         children: [p ? null : (0, r.jsx)("div", {
           className: A.unread
@@ -195,15 +195,15 @@ let M = i.memo(function(e) {
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: p ? "text-muted" : "text-normal",
-            children: "string" != typeof N ? N : d.Z.parse(N)
-          }), (null == (t = a.message) ? void 0 : t.content) != null ? (0, r.jsx)(R, {
+            children: "string" != typeof O ? O : d.Z.parse(O)
+          }), (null == (t = a.message) ? void 0 : t.content) != null ? (0, r.jsx)(k, {
             item: a
-          }) : null, null != a.callout ? (0, r.jsx)(k, {
+          }) : null, null != a.callout ? (0, r.jsx)(R, {
             item: a
           }) : null, (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",
             color: p ? "text-muted" : "header-secondary",
-            children: (0, v.a3)(b.default.extractTimestamp(a.id))
+            children: (0, E.a3)(b.default.extractTimestamp(a.id))
           }), h]
         })]
       }), g ? null : (0, r.jsx)(I.z, {
@@ -215,7 +215,7 @@ let M = i.memo(function(e) {
     let {
       items: t
     } = e, n = f.d$.useSetting();
-    return (0, N.c)(t), (0, r.jsx)(r.Fragment, {
+    return (0, O.c)(t), (0, r.jsx)(r.Fragment, {
       children: t.map(e => (0, r.jsx)(M, {
         item: e,
         ackedBeforeId: n

@@ -1,6 +1,6 @@
 /** Chunk was on 84927 **/
 n.d(t, {
-  F: () => R,
+  F: () => k,
   P: () => Z
 }), n(388685), n(997841), n(953529), n(781311);
 var r = n(200651),
@@ -21,10 +21,10 @@ var r = n(200651),
   b = n(238),
   x = n(55563),
   y = n(551428),
-  E = n(626135),
-  v = n(572004),
-  O = n(601911),
-  N = n(504211),
+  v = n(626135),
+  E = n(572004),
+  N = n(601911),
+  O = n(504211),
   j = n(970321),
   C = n(680005),
   S = n(981631),
@@ -68,23 +68,23 @@ function Z(e) {
   } = e, l = (0, j.R)(t), [u, d, f, h, _, x, y] = (0, o.Wu)([p.Z, b.Z, g.Z], () => {
     var e;
     let n = p.Z.getApplication(t),
-      r = null != n ? (0, O.y)(n, 45) : void 0,
+      r = null != n ? (0, N.y)(n, 45) : void 0,
       i = null == (e = g.Z.getBasicChannel(a.channel_id)) ? void 0 : e.guild_id;
     return [n, p.Z.isFetchingApplication(t), p.Z.didFetchingApplicationFail(t), b.Z.getStoreLayout(t), b.Z.getFetchStatus(t), i, r]
   }, [t, a.channel_id]);
   i.useEffect(() => {
     _ === b.N.NONE && (0, c.k)(t), null != u || d || f || (0, m.UM)(t)
   }, [u, t, f, d, _]);
-  let v = h.subscriptions.length,
+  let E = h.subscriptions.length,
     C = h.otps.length,
-    A = i.useMemo(() => v > 0 && C > 0 ? T.NW.formatToPlainString(T.t["jA648/"], {
-      subCount: v,
+    A = i.useMemo(() => E > 0 && C > 0 ? T.NW.formatToPlainString(T.t["jA648/"], {
+      subCount: E,
       itemCount: C
-    }) : v > 0 ? T.NW.formatToPlainString(T.t.GSfibG, {
-      count: v
+    }) : E > 0 ? T.NW.formatToPlainString(T.t.GSfibG, {
+      count: E
     }) : C > 0 ? T.NW.formatToPlainString(T.t.j7Go5O, {
       count: C
-    }) : T.NW.string(T.t.rMA98v), [C, v]);
+    }) : T.NW.string(T.t.rMA98v), [C, E]);
   if (!l || null == u) return null;
   let w = () => {
     (0, s.ZDy)(async () => {
@@ -99,7 +99,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(R, {
     appName: u.name,
     title: T.NW.formatToPlainString(T.t.XDRjs7, {
       appName: u.name
@@ -107,18 +107,18 @@ function Z(e) {
     description: A,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(u.id, I.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, N.X)(t, N.B.STORE_EMBED)
+      (0, O.X)(t, O.B.STORE_EMBED)
     },
     iconSrc: y,
     onIconClick: () => {
-      w(), E.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+      w(), v.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
         application_id: t,
         area: "app_icon"
       })
     },
     children: (0, r.jsx)(s.zxk, {
       onClick: () => {
-        w(), E.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
+        w(), v.default.track(S.rMx.STOREFRONT_STORE_MESSAGE_EMBED_CLICKED, {
           application_id: t,
           area: "open_store_button"
         })
@@ -129,7 +129,7 @@ function Z(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   var t, a;
   let {
     appId: l,
@@ -158,8 +158,8 @@ function R(e) {
   } = (0, d.IX)(null == m ? void 0 : m.applicationId), y = (0, o.e7)([g.Z], () => {
     var e;
     return null == (e = g.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
-  }, [u]), v = i.useMemo(() => null != x ? (0, O.y)(x, 45) : void 0, [x]), Z = (0, j.R)(null != (a = null == x ? void 0 : x.id) ? a : ""), {
-    openModal: R,
+  }, [u]), E = i.useMemo(() => null != x ? (0, N.y)(x, 45) : void 0, [x]), Z = (0, j.R)(null != (a = null == x ? void 0 : x.id) ? a : ""), {
+    openModal: k,
     subscriptionPurchaseButtonState: D
   } = (0, h.Z)({
     skuId: c,
@@ -222,23 +222,23 @@ function R(e) {
     }) : null == b || null == (t = b.description) ? void 0 : t.trim();
   "" === F && (F = void 0);
   let B = () => {
-    E.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+    v.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
       application_id: x.id,
       sku_id: m.id,
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(R, {
     appName: x.name,
     title: m.name,
     description: F,
     link: "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(x.id, I.GlobalDiscoveryAppsSections.STORE)),
     onLinkCopy: () => {
-      (0, N.X)(x.id, N.B.SKU_EMBED, c)
+      (0, O.X)(x.id, O.B.SKU_EMBED, c)
     },
-    iconSrc: v,
+    iconSrc: E,
     onIconClick: () => {
-      W(), E.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+      W(), v.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
         application_id: x.id,
         sku_id: m.id,
         area: "app_icon"
@@ -249,7 +249,7 @@ function R(e) {
       children: [(0, r.jsx)(s.zxk, {
         color: s.Ttl.CUSTOM,
         onClick: () => {
-          U(), E.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
+          U(), v.default.track(S.rMx.STOREFRONT_SKU_MESSAGE_EMBED_CLICKED, {
             application_id: x.id,
             sku_id: m.id,
             area: "view_details"
@@ -258,7 +258,7 @@ function R(e) {
         className: P.viewDetailsButton,
         children: T.NW.string(T.t.DXYfjI)
       }), L ? null != _ ? (0, r.jsx)(C.pV, {
-        onClick: R,
+        onClick: k,
         appId: x.id,
         subscriptionType: M ? "user" : "guild",
         skuId: m.id,
@@ -285,7 +285,7 @@ function R(e) {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     appName: t,
     title: n,
@@ -309,12 +309,12 @@ function k(e) {
           color: "text-muted",
           children: t
         })]
-      }), v.wS && (0, r.jsx)(s.zxk, {
+      }), E.wS && (0, r.jsx)(s.zxk, {
         look: s.iLD.BLANK,
         size: s.PhG.ICON,
         "aria-label": T.NW.string(T.t.WqhZsr),
         onClick: () => {
-          (0, v.JG)(a), (0, s.showToast)((0, s.createToast)(T.NW.string(T.t["L/PwZW"]), s.ToastType.SUCCESS)), c()
+          (0, E.JG)(a), (0, s.showToast)((0, s.createToast)(T.NW.string(T.t["L/PwZW"]), s.ToastType.SUCCESS)), c()
         },
         children: (0, r.jsx)(s.xPt, {
           size: "xs"
