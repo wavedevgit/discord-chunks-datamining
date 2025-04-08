@@ -1,24 +1,21 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => u
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
-var i = n(749280),
-  l = n(481060),
-  o = n(456100),
-  a = n(861254),
-  s = n(221241),
-  c = n(871499);
+var i = n(562129),
+  l = n(861254),
+  o = n(221241),
+  a = n(871499);
 
-function u(e) {
-  let t;
+function s(e) {
   var {
-    isActivityActive: n,
-    onMouseEnter: u,
-    onMouseLeave: d,
-    onClick: p
-  } = e, h = function(e, t) {
+    isActivityActive: t,
+    onMouseEnter: n,
+    onMouseLeave: s,
+    onClick: c
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -34,25 +31,19 @@ function u(e) {
     return i
   }(e, ["isActivityActive", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
-    mode: f
-  } = (0, a.ZP)({
+    mode: d
+  } = (0, l.ZP)({
     location: "VideoButton"
   }), {
-    squareButtonsEnabled: m
-  } = (0, s.Z)({
+    squareButtonsEnabled: p
+  } = (0, o.Z)({
     location: "VideoButton"
   }), {
-    enabled: g
-  } = o.c.useExperiment({
-    location: "ActivityButton"
-  }, {
-    autoTrackExposure: !0
-  }), {
-    Component: b,
-    events: _,
-    play: C
-  } = (0, i.w)();
-  return t = g ? l.iWm : b, (0, r.jsx)(c.d, function(e) {
+    Component: h,
+    events: f,
+    play: m
+  } = (0, i.Z)("ActivityButton");
+  return (0, r.jsx)(a.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -70,17 +61,17 @@ function u(e) {
     }
     return e
   }({
-    isActive: n,
-    color: (m || f === a.BK.GroupedButtonsRedMic) && n ? "green" : void 0,
-    iconComponent: t,
+    isActive: t,
+    color: (p || d === l.BK.GroupedButtonsRedMic) && t ? "green" : void 0,
+    iconComponent: h,
     onMouseEnter: e => {
-      null == u || u(e), _.onMouseEnter()
+      null == n || n(e), f.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == d || d(e), _.onMouseLeave()
+      null == s || s(e), f.onMouseLeave()
     },
     onClick: e => {
-      null == p || p(e), C()
+      null == c || c(e), m()
     }
-  }, h))
+  }, u))
 }
