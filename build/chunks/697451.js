@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(581364),
   v = n(592180),
   E = n(347475),
-  N = n(598077),
-  O = n(768581),
+  O = n(598077),
+  N = n(768581),
   j = n(585483),
   C = n(55935),
   S = n(739566),
@@ -112,7 +112,7 @@ function L(e, t, n, i, a) {
       className: Z.commandIcon
     })
   });
-  let N = null != (c = O.ZP.getGuildMemberAvatarURL({
+  let O = null != (c = N.ZP.getGuildMemberAvatarURL({
       avatar: null != (o = i.guildMemberAvatar) ? o : void 0,
       userId: t.id,
       guildId: null != (s = null == m ? void 0 : m.guild_id) ? s : ""
@@ -140,7 +140,7 @@ function L(e, t, n, i, a) {
     })({
       user: t,
       guildId: m.guild_id,
-      guildAvatar: N,
+      guildAvatar: O,
       onClick: 1 === n ? y : b,
       onContextMenu: 1 === n ? v : x
     }),
@@ -213,13 +213,13 @@ function F(e) {
       userId: t.id,
       newAnalyticsLocations: n
     }))), [o, a.id]),
-    O = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(T.Z, R(k({}, e), {
+    N = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(T.Z, R(k({}, e), {
       channel: o,
       messageId: a.id,
       interactionData: a.interactionData
     }))), [o, a.id, a.interactionData]),
     I = (0, y.t0)(a),
-    D = (null == I ? void 0 : I.type) === p.B8.APPLICATION_COMMAND && null != I.target_user ? new N.Z(I.target_user) : null,
+    D = (null == I ? void 0 : I.type) === p.B8.APPLICATION_COMMAND && null != I.target_user ? new O.Z(I.target_user) : null,
     F = (null == I ? void 0 : I.type) === p.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     B = (0, S.Sw)(null == (t = a.interaction) ? void 0 : t.user, o),
     G = (0, S.Sw)(D, o),
@@ -311,7 +311,7 @@ function F(e) {
             }
           }
         })
-      }(e, O);
+      }(e, N);
       return (0, r.jsx)(i.Fragment, {
         children: t
       }, "command")

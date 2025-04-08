@@ -23,8 +23,8 @@ var r = n(200651),
   y = n(699516),
   v = n(914010),
   E = n(594174),
-  N = n(768581),
-  O = n(433534),
+  O = n(768581),
+  N = n(433534),
   j = n(506895),
   C = n(758199),
   S = n(943762),
@@ -46,12 +46,12 @@ function k(e) {
   } = e, {
     name: _,
     bot: b
-  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, v = (0, f.ye)(t), E = N.ZP.getApplicationIconURL({
+  } = t = (0, T.O)(t), y = null == b ? void 0 : b.id, v = (0, f.ye)(t), E = O.ZP.getApplicationIconURL({
     id: t.id,
     icon: t.icon,
     bot: b
   }), {
-    staticBannerSrc: O,
+    staticBannerSrc: N,
     videoBannerSrc: S,
     bannerAspectRatio: Z
   } = (0, P.E)(t), k = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
@@ -105,7 +105,7 @@ function k(e) {
   });
   return (0, r.jsx)(C.W, {
     title: _,
-    staticBannerSrc: O,
+    staticBannerSrc: N,
     videoBannerSrc: S,
     bannerAspectRatio: Z,
     iconSrc: E,
@@ -126,7 +126,7 @@ function R(e) {
   var t, n, l;
   let {
     app: c
-  } = e, u = (0, O.E)({
+  } = e, u = (0, N.E)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

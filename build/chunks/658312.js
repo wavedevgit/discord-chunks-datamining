@@ -17,7 +17,7 @@ let s = 1e3 / 24,
       droppedFramesCallbackThreshold: i,
       droppedFramesCallback: u,
       droppedFramesResetTime: d = c
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, f = r.useRef(t), _ = r.useRef(0), p = r.useRef(), h = r.useRef(), m = r.useRef(!0), g = r.useRef(0), E = r.useRef(), b = r.useCallback(() => {
+    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, f = r.useRef(t), _ = r.useRef(0), p = r.useRef(void 0), h = r.useRef(void 0), m = r.useRef(!0), g = r.useRef(0), E = r.useRef(void 0), b = r.useCallback(() => {
       g.current = 0, null != E.current && (clearTimeout(E.current), E.current = void 0)
     }, []), y = r.useCallback(() => {
       m.current = !1, cancelAnimationFrame(_.current), clearTimeout(E.current)

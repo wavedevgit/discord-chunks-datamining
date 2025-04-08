@@ -82,8 +82,8 @@ function p(e) {
     onShowFullDescription: b,
     productType: v,
     onTapCard: C,
-    actionMenu: q,
-    showOpaqueBackground: x = !1,
+    actionMenu: x,
+    showOpaqueBackground: q = !1,
     hideRoleTag: j = !1,
     lineClamp: N = 1,
     cardWidth: O = 332,
@@ -130,7 +130,7 @@ function p(e) {
             role: p
           })]
         })]
-      }), q]
+      }), x]
     }), (0, n.jsxs)("div", {
       className: u.purchaseDetails,
       children: [(0, n.jsx)(o.Text, {
@@ -153,7 +153,7 @@ function p(e) {
     })]
   });
   return null == C ? (0, n.jsx)("article", {
-    className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground),
+    className: a()(u.productCard, q ? u.opaqueBackground : u.solidBackground),
     "aria-labelledby": W,
     children: I
   }) : (0, n.jsx)("div", {
@@ -166,7 +166,7 @@ function p(e) {
       "aria-label": d.NW.formatToPlainString(d.t["e+TmJS"], {
         productName: r
       }),
-      className: a()(u.productCard, x ? u.opaqueBackground : u.solidBackground, u.cardClickableContainer),
+      className: a()(u.productCard, q ? u.opaqueBackground : u.solidBackground, u.cardClickableContainer),
       onClick: C,
       children: I
     })

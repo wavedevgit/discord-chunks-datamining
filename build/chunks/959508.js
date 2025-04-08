@@ -77,7 +77,9 @@ function y(e) {
         [_.dropIndicatorAfter]: null != A && x > A,
         [_.containerFocused]: U
       }),
-      ref: e => Z(k(e)),
+      ref: e => {
+        Z(k(e))
+      },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
         onMouseEnter: () => W(!0),
@@ -129,7 +131,9 @@ function y(e) {
         [_.dropIndicatorAfter]: null != A && x > A,
         [_.containerFocused]: U
       }),
-      ref: e => Z(k(e)),
+      ref: e => {
+        Z(k(e))
+      },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
         onMouseEnter: () => W(!0),
@@ -157,7 +161,7 @@ function y(e) {
         placeholder: N.NW.string(N.t.QMCuCg),
         maxLength: j.iU,
         error: L.title
-      }), (0, r.jsx)(C, {
+      }), (0, r.jsx)(O, {
         prompt: s,
         guild: n
       }), (0, r.jsx)(o.Text, {
@@ -171,7 +175,7 @@ function y(e) {
           count: s.options.length,
           total: D
         })
-      }), (0, r.jsx)(O, {
+      }), (0, r.jsx)(C, {
         guild: n,
         prompt: s,
         promptIndex: x,
@@ -238,7 +242,7 @@ function y(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     prompt: t,
     guild: n
@@ -272,7 +276,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     guild: t,
     prompt: n,

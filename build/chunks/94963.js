@@ -25,7 +25,7 @@ var r = n(200651),
   v = n(249818),
   y = n(130116);
 
-function C(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -166,7 +166,7 @@ let I = [{
     }, [n, S, U.primary, U.secondary]);
     let F = i.useMemo(() => {
       var e, t, n;
-      return O(C({}, s), {
+      return C(O({}, s), {
         id: l,
         name: null != (e = null == D ? void 0 : D.name) ? e : "",
         icon: null == D ? void 0 : D.icon,
@@ -231,7 +231,7 @@ let I = [{
                   },
                   shouldShow: W,
                   onRequestClose: () => L(!1),
-                  children: e => (0, r.jsx)(m.P3F, O(C({}, e), {
+                  children: e => (0, r.jsx)(m.P3F, C(O({}, e), {
                     onClick: () => {
                       L(e => !e)
                     },

@@ -26,8 +26,8 @@ var r = n(200651),
   _ = n(181339),
   v = n(193544),
   y = n(981631),
-  C = n(388032),
-  O = n(576583);
+  O = n(388032),
+  C = n(576583);
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function S(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(C.NW.string(C.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
     let e = (0, x.IF)(null == t ? void 0 : t.hasFeature(y.oNc.COMMUNITY)).map(e => E(I({}, e), {
@@ -84,20 +84,20 @@ function S(e) {
     return (0, x.LJ)(e)
   }, [t]), l = i.useMemo(() => a.find(e => e.value === (null == t ? void 0 : t.verificationLevel)), [t, a]);
   return (0, r.jsxs)("div", {
-    className: O.setupContainer,
+    className: C.setupContainer,
     children: [(0, r.jsxs)("div", {
-      className: O.switchItemTextContent,
+      className: C.switchItemTextContent,
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: C.NW.string(C.t.DpRdYG)
+        children: O.NW.string(O.t.DpRdYG)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: C.NW.format(C.t.iuRk2t, {})
+        children: O.NW.format(O.t.iuRk2t, {})
       })]
     }), (0, r.jsx)(v.Z, {
-      changeTitle: C.NW.string(C.t.TxESJC),
+      changeTitle: O.NW.string(O.t.TxESJC),
       value: null == l ? void 0 : l.value,
       options: a,
       disabled: !n,
@@ -122,7 +122,7 @@ function T(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(C.NW.string(C.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
     let e = (0, x.MF)(null == t ? void 0 : t.hasFeature(y.oNc.COMMUNITY)).map(e => E(I({}, e), {
@@ -132,24 +132,24 @@ function T(e) {
   }, [t]), m = i.useMemo(() => u.find(e => e.value === (null == t ? void 0 : t.explicitContentFilter)), [t, u]);
   return (0, r.jsxs)(r.Fragment, {
     children: [s && (0, r.jsx)(c.$i$, {
-      className: O.divider
+      className: C.divider
     }), (0, r.jsxs)("div", {
-      className: a()(O.setupContainer, n),
+      className: a()(C.setupContainer, n),
       children: [(0, r.jsxs)("div", {
-        className: O.switchItemTextContent,
+        className: C.switchItemTextContent,
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: C.NW.string(C.t.Kd6OQU)
+          children: O.NW.string(O.t.Kd6OQU)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: C.NW.format(C.t.zOmxND, {
+          children: O.NW.format(O.t.zOmxND, {
             helpdeskArticle: b.Z.getArticleURL(y.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(v.Z, {
-        changeTitle: C.NW.string(C.t["eBd+Ul"]),
+        changeTitle: O.NW.string(O.t["eBd+Ul"]),
         value: null == m ? void 0 : m.value,
         options: u,
         disabled: !l,
@@ -174,34 +174,34 @@ function w(e) {
   }, [t]);
   return s || !a ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: O.setupContainer,
+      className: C.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: l,
         onChange: u,
-        className: O.switchItem,
+        className: C.switchItem,
         disabled: !n,
         hideBorder: !0,
         children: (0, r.jsxs)("div", {
-          className: O.switchItemTextContent,
+          className: C.switchItemTextContent,
           children: [(0, r.jsxs)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: [C.NW.string(C.t.jDarm5), (0, r.jsx)(m.Z, {
-              className: O.betaTag
+            children: [O.NW.string(O.t.jDarm5), (0, r.jsx)(m.Z, {
+              className: C.betaTag
             })]
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: C.NW.string(C.t["/ee7yM"])
+            children: O.NW.string(O.t["/ee7yM"])
           })]
         })
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: C.NW.string(C.t.JxO639)
+        children: O.NW.string(O.t.JxO639)
       })]
     }), (0, r.jsx)(c.$i$, {
-      className: O.divider
+      className: C.divider
     })]
   })
 }
@@ -228,31 +228,31 @@ function R(e) {
   }, 1e3);
   return s ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.$i$, {
-      className: O.divider
+      className: C.divider
     }), (0, r.jsxs)("div", {
-      className: O.setupContainer,
+      className: C.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: g,
         onChange: h,
-        className: O.switchItem,
+        className: C.switchItem,
         disabled: !u,
         hideBorder: !0,
         children: (0, r.jsxs)("div", {
-          className: O.switchItemTextContent,
+          className: C.switchItemTextContent,
           children: [(0, r.jsx)(c.Text, {
             color: "header-primary",
             variant: "text-md/semibold",
-            children: C.NW.string(C.t.lbBfER)
+            children: O.NW.string(O.t.lbBfER)
           }), (0, r.jsx)(c.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: C.NW.string(C.t.REr5AA)
+            children: O.NW.string(O.t.REr5AA)
           })]
         })
       }), m && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: C.NW.format(C.t.Xz1O0d, {
+        children: O.NW.format(O.t.Xz1O0d, {
           onClick: function() {
             d.Z.open(y.oAB.ACCOUNT)
           }
@@ -268,9 +268,9 @@ function D() {
     mfaLevel: t
   } = (0, o.cj)([N.Z], () => N.Z.getProps(), []), n = (0, o.e7)([h.Z], () => h.Z.enabled, []);
   return null == e ? null : n ? (0, r.jsx)(u.Z, {}) : (0, r.jsxs)(c.hjN, {
-    title: C.NW.string(C.t["suhY+f"]),
+    title: O.NW.string(O.t["suhY+f"]),
     tag: c.RB0.H1,
-    titleClassName: O.headerContainer,
+    titleClassName: C.headerContainer,
     children: [(0, r.jsx)(w, {
       guild: e
     }), (0, r.jsx)(S, {
@@ -281,9 +281,9 @@ function D() {
     }), (0, r.jsx)(T, {
       guild: e
     }), (0, r.jsx)(c.$i$, {
-      className: O.divider
+      className: C.divider
     }), (0, r.jsx)("div", {
-      className: O.setupContainer,
+      className: C.setupContainer,
       children: (0, r.jsx)(_.w, {
         guild: e
       })

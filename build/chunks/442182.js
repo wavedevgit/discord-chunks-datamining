@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(95242),
   v = n(420966),
   y = n(566476),
-  C = n(203377),
-  O = n(981631),
+  O = n(203377),
+  C = n(981631),
   I = n(388032),
   E = n(905972),
   S = n(877248);
@@ -291,7 +291,7 @@ function k(e) {
     var e, n;
     return null != (n = null == (e = b.Z.getRoleMemberCount(t.id)) ? void 0 : e[s.id]) ? n : 0
   }) > y.length, R = () => {
-    f.default.track(O.rMx.OPEN_MODAL, {
+    f.default.track(C.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
       location_section: "Members"
@@ -319,7 +319,7 @@ function k(e) {
           children: [(0, r.jsx)(v.Z, {
             guild: t,
             role: s,
-            selectedSection: C.ZI.MEMBERS,
+            selectedSection: O.ZI.MEMBERS,
             setSelectedSection: d
           }), (0, r.jsx)(A, {
             query: u,

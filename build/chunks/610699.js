@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(835473),
   v = n(471445),
   E = n(111028),
-  N = n(601964),
-  O = n(592125),
+  O = n(601964),
+  N = n(592125),
   j = n(430824),
   C = n(496675),
   S = n(594174),
@@ -151,7 +151,7 @@ function L(e) {
         return _.id === t
       })
     }),
-    k = O.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
+    k = N.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
     R = (0, c.e7)([C.Z], () => null != k && C.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: D
@@ -169,7 +169,7 @@ function L(e) {
     B = null != x;
   if (null == x) {
     if (null == l.guild) return (0, r.jsx)(P.Z, {});
-    x = new N.ZP(l.guild)
+    x = new O.ZP(l.guild)
   }
   let G = B && !R || B && E;
   return (B && E && (a = Z.NW.string(Z.t.wJNK8P)), R || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == v) ? null : (0, r.jsx)(f.Gt, {
@@ -209,8 +209,8 @@ function M(e) {
     isDisabled: y,
     tooltip: v,
     handleAcceptInvite: E,
-    onView: N
-  } = e, O = new URL(l.code, "https://discord.gg").toString(), {
+    onView: O
+  } = e, N = new URL(l.code, "https://discord.gg").toString(), {
     bot: j,
     icon: C
   } = a, S = T.ZP.getApplicationIconURL({
@@ -248,7 +248,7 @@ function M(e) {
     header: a.name,
     title: Z.NW.string(Z.t["7vb6n5"]),
     iconSrc: S,
-    embedUrl: O
+    embedUrl: N
   }, P), n = n = {
     info: (0, r.jsxs)("div", {
       className: k.infoWrapper,
@@ -271,7 +271,7 @@ function M(e) {
     trackingConfig: {
       id: a.id,
       linkType: _.Un.ACTIVITY_INVITE,
-      onView: N
+      onView: O
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

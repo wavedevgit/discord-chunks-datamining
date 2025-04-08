@@ -117,20 +117,20 @@ function v(e) {
     postjoinOnly: i,
     includeCount: s,
     singleColumn: a
-  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), y = v.filter(e => e.inOnboarding), C = v.filter(e => !0 !== e.inOnboarding), O = [...y.map(e => ({
+  } = e, d = (0, l.e7)([m.Z], () => m.Z.getGuild(t)), v = (0, l.e7)([p.Z], () => p.Z.editedOnboardingPrompts), y = v.filter(e => e.inOnboarding), O = v.filter(e => !0 !== e.inOnboarding), C = [...y.map(e => ({
     id: e.id,
     data: e
   })), {
     id: "separator",
     data: (0, f.ae)()
-  }, ...C.map(e => ({
+  }, ...O.map(e => ({
     id: e.id,
     data: e
   }))], {
     handleDragStart: I,
     handleDragReset: E,
     handleDragComplete: S
-  } = (0, u.Z)(O, e => {
+  } = (0, u.Z)(C, e => {
     let t = e.findIndex(e => "separator" === e.id),
       n = e.slice(0, t).map(e => N(j({}, e.data), {
         inOnboarding: !0
@@ -176,7 +176,7 @@ function v(e) {
       prejoinOnly: n,
       postjoinOnly: i
     }), n ? null : (0, r.jsxs)(r.Fragment, {
-      children: [C.map((e, t) => (0, r.jsx)(h.Z, {
+      children: [O.map((e, t) => (0, r.jsx)(h.Z, {
         guild: d,
         prompt: e,
         promptIndex: t + y.length,

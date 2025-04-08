@@ -33,7 +33,9 @@ function C(e) {
   return (0, i.jsx)("div", {
     className: n ? f.containerPadding : void 0,
     children: (0, i.jsxs)("div", {
-      ref: e => y.current = e,
+      ref: e => {
+        y.current = e
+      },
       className: f.container,
       children: [t && (0, i.jsx)("img", {
         className: f.image,

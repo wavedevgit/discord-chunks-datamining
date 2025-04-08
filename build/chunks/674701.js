@@ -22,8 +22,8 @@ var r, i = n(200651),
   y = n(703656),
   v = n(594174),
   E = n(626135),
-  N = n(51144),
-  O = n(479446),
+  O = n(51144),
+  N = n(479446),
   j = n(795448),
   C = n(441623),
   S = n(317271),
@@ -63,7 +63,7 @@ function R(e) {
   }, [t, n]);
   let G = () => t === I.hX.FRIEND_ANNIVERSARY ? w.NW.formatToPlainString(w.t["L2s/Nz"], {
       numberOfYears: B
-    }) : (0, O.Ou)(t),
+    }) : (0, N.Ou)(t),
     H = "coachmark" === n,
     V = H ? Z.innerContentCoachmark : Z.innerContent,
     z = H ? Z.recipientUserAvatarCoachmark : Z.recipientUserAvatar,
@@ -107,14 +107,14 @@ function R(e) {
             color: H ? "header-primary" : "always-white",
             lineClamp: 3,
             children: t === I.hX.FRIEND_ANNIVERSARY ? w.NW.formatToPlainString(w.t.BWJvAA, {
-              friendUserName: N.ZP.getName(r)
-            }) : (0, O.Ou)(t)
+              friendUserName: O.ZP.getName(r)
+            }) : (0, N.Ou)(t)
           }), (0, i.jsx)(d.Text, {
             className: Y,
             variant: "text-sm/normal",
             children: t === I.hX.FRIEND_ANNIVERSARY ? w.NW.formatToPlainString(w.t.S3fdq6, {
               numberOfYears: B
-            }) : (0, O.Ou)(t)
+            }) : (0, N.Ou)(t)
           })]
         })]
       }), (0, i.jsxs)("div", {

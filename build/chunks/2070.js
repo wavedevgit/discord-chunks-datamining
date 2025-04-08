@@ -8,7 +8,7 @@ var r = n(192379),
   s = n(728345);
 
 function a() {
-  let [e, t] = r.useState(!1), [n, a] = r.useState(), l = r.useRef();
+  let [e, t] = r.useState(!1), [n, a] = r.useState(), l = r.useRef(null);
   return {
     createGuildApplication: async (e, n, r, o) => {
       a(void 0);

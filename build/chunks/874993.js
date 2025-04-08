@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(472816), n(794429), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -25,18 +25,18 @@ var r = n(200651),
   v = n(388032),
   y = n(885655);
 
-function C(e) {
+function O(e) {
   var t, n;
   let {
-    guildId: C,
-    setPreventNavigation: O = () => {}
+    guildId: O,
+    setPreventNavigation: C = () => {}
   } = e, {
     editingRule: I,
     setEditingRule: E
   } = (0, f.V)(), {
     guild: S,
     subsection: T
-  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : C) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
+  } = (0, s.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? void 0 : S.id) ? t : O) ? n : _.lds, w = null != I, [R] = (0, g.RD)(P), {
     rulesByTriggerType: D
   } = (0, g.pH)(P), Z = {
     [p.vh.MEMBERS]: v.NW.string(v.t.sx4E5u),
@@ -71,8 +71,8 @@ function C(e) {
       return L(null != (e = null == I ? void 0 : I.id) ? e : null, null != (t = null == I ? void 0 : I.triggerType) ? t : null)
     }, [L, I]);
   i.useEffect(() => {
-    O(w, (0, j.af)(M))
-  }, [O, w, M]);
+    C(w, (0, j.af)(M))
+  }, [C, w, M]);
   let G = (0, p.Z6)(P),
     U = e => (0, r.jsx)(r.Fragment, {
       children: e.map(e => {

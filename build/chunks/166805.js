@@ -31,8 +31,8 @@ function v(e) {
     fetchGuildProfile: g,
     fetchStatus: v
   } = (0, m.u)(t), y = v !== u.a.FETCHED, {
-    fetchedEmbed: C,
-    embedEnabled: O,
+    fetchedEmbed: O,
+    embedEnabled: C,
     embedChannelId: I
   } = (0, l.cj)([f.Z], () => {
     let {
@@ -45,22 +45,22 @@ function v(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !y && !w && !O, D = (0, h.Dj)({
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !y && !w && !C, D = (0, h.Dj)({
     guildId: t,
     location: "widget settings"
   });
   i.useEffect(() => {
-    C || (0, p.R)(t)
-  }, [C, t]), i.useEffect(() => {
+    O || (0, p.R)(t)
+  }, [O, t]), i.useEffect(() => {
     g()
   }, [t, g]);
   let Z = i.useCallback(async e => {
     P(!0), await (0, b.c)(t, e, I), P(!1)
   }, [I, t]);
-  return C ? (0, r.jsxs)("div", {
+  return O ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.j7V, {
       disabled: T,
-      value: O,
+      value: C,
       hideBorder: !0,
       onChange: Z,
       children: N.NW.string(N.t.NR6hub)
@@ -69,14 +69,14 @@ function v(e) {
       color: "text-secondary",
       className: _.subtext,
       children: D ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
-    }) : null, O ? (0, r.jsxs)(r.Fragment, {
+    }) : null, C ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: _.divider
       }), (0, r.jsx)(o.vwX, {
         children: N.NW.string(N.t.LUo0Q0)
       }), (0, r.jsx)(j.m, {
         guildId: t,
-        widgetEnabled: O,
+        widgetEnabled: C,
         widgetChannelId: I,
         enableLocalUpdate: !0
       }), (0, r.jsx)(a.xv, {

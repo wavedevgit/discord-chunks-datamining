@@ -54,7 +54,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => {
+let O = e => {
   let {
     name: t,
     failingName: n,
@@ -99,7 +99,7 @@ let C = e => {
   })
 };
 
-function O(e, t) {
+function C(e, t) {
   return o()(null == e ? void 0 : e.map(e => {
     let [t, n] = e;
     return null == t ? void 0 : t.id
@@ -128,7 +128,7 @@ let I = e => {
       let [t, n] = e;
       return [s[t], n]
     })
-  }, [t.id, T], O);
+  }, [t.id, T], C);
   if (I || null == m) return (0, r.jsxs)("div", {
     className: a()(_.container, _.loaderContainer, l),
     children: [(0, r.jsx)(g.X6q, {
@@ -297,7 +297,7 @@ let I = e => {
         }), o]
       })
     })(), R.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(C, v({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
+      children: [(0, r.jsx)(O, v({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
         className: _.separator
       }) : null]
     }, "".concat(e.name)))]

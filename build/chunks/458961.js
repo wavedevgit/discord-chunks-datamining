@@ -20,8 +20,8 @@ var n = r(200651),
   b = r(76535),
   v = r(215388),
   C = r(674180),
-  q = r(884858),
-  x = r(695346),
+  x = r(884858),
+  q = r(695346),
   j = r(430824),
   N = r(937615),
   O = r(73346),
@@ -146,7 +146,7 @@ function J(e) {
 }
 
 function _(e) {
-  var t, a, o, l, m, b, q, M;
+  var t, a, o, l, m, b, x, M;
   let {
     guildId: _,
     productId: ee,
@@ -154,7 +154,7 @@ function _(e) {
     onClose: er
   } = e, [en, eA] = A.useState(ee), ea = (0, c.e7)([y.Z], () => null == en ? null : y.Z.getGuildProduct(en), [en]), eo = (null == ea ? void 0 : ea.published) === !0, {
     application: el
-  } = (0, h.Z)(_, Q.wW.GUILD_ROLE_SUBSCRIPTIONS), ei = W.M["0"], es = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), ec = x.QK.useSetting(), ed = (0, U.n)(), eu = A.useCallback(() => {
+  } = (0, h.Z)(_, Q.wW.GUILD_ROLE_SUBSCRIPTIONS), ei = W.M["0"], es = (0, c.e7)([p.Z], () => p.Z.useReducedMotion), ec = q.QK.useSetting(), ed = (0, U.n)(), eu = A.useCallback(() => {
     var e;
     return (null == ea || null == (e = ea.image_asset) ? void 0 : e.application_id) == null ? ei.data : (0, O._W)(ea.image_asset.application_id, ea.image_asset, 600, ed && ec ? void 0 : "webp")
   }, [ei, ea, ed, ec]), {
@@ -163,13 +163,13 @@ function _(e) {
   A.useEffect(() => {
     eg && (er(), (0, Z.B)(B.NW.string(B.t.OLf3xs), B.t["90LBVl"]))
   }, [eg, er]);
-  let [ef, ep] = A.useState(null != (o = null == ea ? void 0 : ea.name) ? o : ""), [eh, em] = A.useState(null != (l = null == ea ? void 0 : ea.description) ? l : ""), [eb, ev] = A.useState(null != (m = null == ea ? void 0 : ea.price_tier) ? m : void 0), [eC, eq] = A.useState(eu), [ex, ej] = A.useState(null != (b = null == ea || null == (t = ea.image_asset) ? void 0 : t.filename) ? b : ei.name), [eN, eO] = A.useState(!1), [eU, eP] = A.useState(), ey = A.useMemo(() => null != eb ? (0, N.T4)(eb, k.pKx.USD) : void 0, [eb]), [eV, eW] = A.useState(!0), {
+  let [ef, ep] = A.useState(null != (o = null == ea ? void 0 : ea.name) ? o : ""), [eh, em] = A.useState(null != (l = null == ea ? void 0 : ea.description) ? l : ""), [eb, ev] = A.useState(null != (m = null == ea ? void 0 : ea.price_tier) ? m : void 0), [eC, ex] = A.useState(eu), [eq, ej] = A.useState(null != (b = null == ea || null == (t = ea.image_asset) ? void 0 : t.filename) ? b : ei.name), [eN, eO] = A.useState(!1), [eU, eP] = A.useState(), ey = A.useMemo(() => null != eb ? (0, N.T4)(eb, k.pKx.USD) : void 0, [eb]), [eV, eW] = A.useState(!0), {
     changesSaving: eI,
     saveError: eT,
     saveProductWithAttachments: eF,
     hasUnsavedAttachmentChanges: eZ,
     cancelUnusedUploads: eK
-  } = (0, P.P)(), ez = (null == ea ? void 0 : ea.attachments) != null && (null == ea ? void 0 : ea.attachments.length) > 0, ew = null != eT ? eT : eU, eX = null != eI && "published" in eI, eS = null != eI && !eX, ek = null != (q = null == ea ? void 0 : ea.role_id) ? q : null, [eQ, eB] = A.useState(), eR = null != eQ || null != ek, eL = (0, c.e7)([j.Z], () => null != ek && null !== eQ ? j.Z.getRole(_, ek) : null != eQ ? eQ : void 0, [eQ, ek, _]), eD = "";
+  } = (0, P.P)(), ez = (null == ea ? void 0 : ea.attachments) != null && (null == ea ? void 0 : ea.attachments.length) > 0, ew = null != eT ? eT : eU, eX = null != eI && "published" in eI, eS = null != eI && !eX, ek = null != (x = null == ea ? void 0 : ea.role_id) ? x : null, [eQ, eB] = A.useState(), eR = null != eQ || null != ek, eL = (0, c.e7)([j.Z], () => null != ek && null !== eQ ? j.Z.getRole(_, ek) : null != eQ ? eQ : void 0, [eQ, ek, _]), eD = "";
   eR && eV ? eD = B.NW.string(B.t.ih4QMT) : eR ? eD = B.NW.string(B.t.o9xphY) : eV && (eD = B.NW.string(B.t.DWYJub));
   let eE = () => {
       eW(!1), eK()
@@ -187,12 +187,12 @@ function _(e) {
       priceTier: eb,
       description: eh,
       image: eC,
-      imageName: ex,
+      imageName: eq,
       isImageChanged: eN,
       newRoleParams: eQ,
       hasSavedAttachments: ez,
       hasUnsavedAttachmentChanges: eZ
-    }), [ea, ef, eb, eh, eC, ex, eN, eQ, ez, eZ]),
+    }), [ea, ef, eb, eh, eC, eq, eN, eQ, ez, eZ]),
     e0 = A.useMemo(() => eM || null == eG || "publish" === eG || null != ew ? null : (0, n.jsx)(u.oXn, {
       className: R.successNotice,
       children: (0, n.jsx)(f.Z, {
@@ -340,12 +340,12 @@ function _(e) {
               presetImages: W.M,
               radioGroupAriaLabel: B.NW.string(B.t.fKzQj4),
               image: eC,
-              imageName: ex,
+              imageName: eq,
               savedImageName: null == ea || null == (a = ea.image_asset) ? void 0 : a.filename,
               onChange: (e, t) => {
                 if (null != e) {
                   var r;
-                  eq(e), ej(t), eO(e.startsWith("data:") || t !== (null == ea || null == (r = ea.image_asset) ? void 0 : r.filename))
+                  ex(e), ej(t), eO(e.startsWith("data:") || t !== (null == ea || null == (r = ea.image_asset) ? void 0 : r.filename))
                 }
               }
             })]
@@ -487,7 +487,7 @@ function $(e) {
   return (0, n.jsx)(P.W, {
     guildId: e.guildId,
     editSkuId: null != (t = e.productId) ? t : void 0,
-    onFileSizeError: () => (0, q.Z)(S.ve),
+    onFileSizeError: () => (0, x.Z)(S.ve),
     children: (0, n.jsx)(_, L({}, e))
   })
 }

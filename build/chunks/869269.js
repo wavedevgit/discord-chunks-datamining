@@ -29,8 +29,8 @@ function _(e) {
     priceTiers: _,
     loading: v,
     error: y,
-    handlePublishTier: C,
-    onDeleteEditState: O
+    handlePublishTier: O,
+    onDeleteEditState: C
   } = e, {
     editStateId: I
   } = (0, u.N)(), E = (0, l.e7)([c.Z], () => c.Z.getSubscriptionListing(I)), S = (0, d.mY)(), T = i.useMemo(() => {
@@ -83,7 +83,7 @@ function _(e) {
             color: o.zxk.Colors.CUSTOM,
             wrapperClassName: j.autoWidth,
             className: a()(N.publishButton, j.autoWidth),
-            onClick: C,
+            onClick: O,
             submitting: v,
             children: x.NW.string(x.t.Lj6R5u)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -103,7 +103,7 @@ function _(e) {
     }), (0, r.jsx)(h.Z, {
       allSubscriptionListings: s
     }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(b.Z, {}), (0, r.jsx)(g.Z, {
-      onDeleteEditState: O
+      onDeleteEditState: C
     })]
   })
 }

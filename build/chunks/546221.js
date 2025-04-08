@@ -67,10 +67,10 @@ let v = e => {
     team: g,
     currentPeriod: v,
     allPeriods: y,
-    metrics: C
-  } = (0, d.Z)(l, o), O = (0, u.u)(l), I = (0, c.mY)();
+    metrics: O
+  } = (0, d.Z)(l, o), C = (0, u.u)(l), I = (0, c.mY)();
   return m ? (0, r.jsx)(i.$jN, {}) : (0, r.jsxs)(r.Fragment, {
-    children: [O && (0, r.jsxs)(r.Fragment, {
+    children: [C && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.Z, {
         children: x.NW.format(x.t["2raBCQ"], {
           insightsURL: b.EYA.DEVELOPER_PORTAL_GUILD_ANALYTICS_ROLE_SUBSCRIPTION(l)
@@ -87,15 +87,15 @@ let v = e => {
         className: j.metricsContainer,
         children: [(0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.iY1jW1),
-          value: (0, a.T4)(null != (t = C.revenue) ? t : 0, b.pKx.USD),
+          value: (0, a.T4)(null != (t = O.revenue) ? t : 0, b.pKx.USD),
           additionalContent: (0, r.jsx)(p.H, {
-            value: C.revenuePctChange,
+            value: O.revenuePctChange,
             isPercent: !0
           })
         }), (0, r.jsx)(p.Z, {
           label: x.NW.string(x.t.cXyw29),
           value: (0, r.jsxs)(r.Fragment, {
-            children: [null != (n = C.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
+            children: [null != (n = O.subscribers) ? n : "-", " ", (0, r.jsx)(i.tBG, {
               size: "md",
               color: "currentColor",
               className: j.totalMembersIcon,
@@ -103,7 +103,7 @@ let v = e => {
             })]
           }),
           additionalContent: (0, r.jsx)(p.H, {
-            value: C.subscriberChange
+            value: O.subscriberChange
           })
         })]
       }), (0, r.jsx)(_, {

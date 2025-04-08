@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -147,7 +147,7 @@ function v(e) {
 }
 let y = [0, 1, 2, 3, 4];
 
-function C(e) {
+function O(e) {
   let {
     profile: t,
     canManageGuild: n

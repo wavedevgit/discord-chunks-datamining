@@ -61,8 +61,8 @@ function N(e) {
     singleColumn: _,
     promptIndex: v,
     option: y,
-    hasError: C,
-    onDragStart: O,
+    hasError: O,
+    onDragStart: C,
     onDragComplete: I,
     onDragReset: E
   } = e, S = null, T = l().findIndex(N.options, e => e.id === y.id), {
@@ -74,7 +74,7 @@ function N(e) {
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(N.id),
     index: T,
     optionId: y.id,
-    onDragStart: O,
+    onDragStart: C,
     onDragComplete: I,
     onDragReset: E
   }), {
@@ -83,7 +83,7 @@ function N(e) {
   } = (0, m.Z)(null == (t = y.emoji) ? void 0 : t.id, null == (i = y.emoji) ? void 0 : i.name);
   return (0, h.Oq)(y.emoji) || null != Z || null != A || (S = f.NW.string(f.t["61wfmp"])), (0, r.jsxs)(o.P3F, {
     className: s()(b.optionCard, {
-      [b.hasError]: C || null != S,
+      [b.hasError]: O || null != S,
       [b.dropIndicatorBefore]: null != w && T < w,
       [b.dropIndicatorAfter]: null != w && T > w,
       [b.singleColumn]: _

@@ -23,8 +23,8 @@ var r, i, a = n(192379),
   y = n(569471),
   v = n(723170),
   E = n(675478),
-  N = n(581883),
-  O = n(131704),
+  O = n(581883),
+  N = n(131704),
   j = n(592125),
   C = n(984933),
   S = n(731290),
@@ -290,7 +290,7 @@ function K() {
   let e = function() {
       var e, t;
       let n = {},
-        r = null != (t = null == (e = N.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
+        r = null != (t = null == (e = O.Z.settings.guilds) ? void 0 : e.guilds) ? t : {};
       for (let e in r)
         for (let t in r[e].channels) {
           let i = j.Z.getChannel(t);
@@ -327,7 +327,7 @@ function K() {
 function Y(e, t, n, r) {
   if (null == r) return;
   let i = j.Z.getChannel(r);
-  if (null == i || !O.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  if (null == i || !N.Ec.has(i.type) && Z.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === A.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === A.ZP.getMentionCount(r)) return;

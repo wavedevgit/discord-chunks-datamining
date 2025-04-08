@@ -59,10 +59,10 @@ function N(e) {
     editStateId: N,
     guildId: _,
     groupListingId: v
-  } = (0, m.N)(), y = (0, l.e7)([u.Z], () => u.Z.getSubscriptionListing(N)), C = null == y ? void 0 : y.id, O = (0, g.Z)(_), I = i.useMemo(() => {
+  } = (0, m.N)(), y = (0, l.e7)([u.Z], () => u.Z.getSubscriptionListing(N)), O = null == y ? void 0 : y.id, C = (0, g.Z)(_), I = i.useMemo(() => {
     var e;
-    return null != O && null != y && (null != (e = O[y.role_id]) ? e : 0)
-  }, [O, y]), E = 0 === I, S = null == C, T = null != (t = null == y ? void 0 : y.archived) && t, {
+    return null != C && null != y && (null != (e = C[y.role_id]) ? e : 0)
+  }, [C, y]), E = 0 === I, S = null == O, T = null != (t = null == y ? void 0 : y.archived) && t, {
     deleteSubscriptionListing: P,
     submitting: w
   } = (0, d.r4)(), {
@@ -70,7 +70,7 @@ function N(e) {
     submitting: D
   } = (0, d._1)(), Z = () => {
     let e = async () => {
-      (S || (a()(null != v, "group listing doesnt exist"), a()(null != C, "subscription listing doesnt exist"), await P(_, v, C))) && (null == s || s())
+      (S || (a()(null != v, "group listing doesnt exist"), a()(null != O, "subscription listing doesnt exist"), await P(_, v, O))) && (null == s || s())
     };
     (0, o.ZDy)(async () => {
       let {
@@ -130,7 +130,7 @@ function N(e) {
         wrapperClassName: b.deleteListingButton,
         color: o.zxk.Colors.RED,
         onClick: () => {
-          a()(null != v, "group listing doesnt exist"), a()(null != C, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
+          a()(null != v, "group listing doesnt exist"), a()(null != O, "subscription listing doesnt exist"), (0, o.ZDy)(async () => {
             let {
               ConfirmModal: e
             } = await Promise.resolve().then(n.bind(n, 481060));
@@ -139,7 +139,7 @@ function N(e) {
               confirmText: h.NW.string(h.t.RL0wjo),
               cancelText: h.NW.string(h.t["ETE/oK"]),
               onConfirm: () => {
-                R(_, v, C)
+                R(_, v, O)
               },
               confirmButtonColor: o.zxk.Colors.RED
             }, t), {

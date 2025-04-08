@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(430824),
   v = n(594174),
   y = n(267642),
-  C = n(624138),
-  O = n(981631),
+  O = n(624138),
+  C = n(981631),
   I = n(388032),
   E = n(824302);
 
@@ -63,7 +63,7 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, C.Mg)(d.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
+let w = (0, O.Mg)(d.Z.GUILD_SETTINGS_PREMIUM_TIER_STATUS_PROGRESS_WITH_SUBSCRIPTIONS_MARGIN_TOP);
 class R extends i.Component {
   componentDidMount() {
     this.measure();
@@ -94,7 +94,7 @@ class R extends i.Component {
       a = e.map(e => {
         var n;
         return {
-          numRequired: O.oCV[e.tier],
+          numRequired: C.oCV[e.tier],
           name: (0, y.nW)(e.tier),
           y: null != (n = t[e.tier]) ? n : 0,
           key: e.tier
@@ -165,7 +165,7 @@ class R extends i.Component {
             tiers: s,
             tierIndex: i,
             onSetRef: this.setTierRef,
-            isAnimatedTo: O.oCV[this.state.animatedTier] >= O.oCV[r.tier],
+            isAnimatedTo: C.oCV[this.state.animatedTier] >= C.oCV[r.tier],
             subscriptionCount: n,
             guildId: e
           }))]
@@ -176,7 +176,7 @@ class R extends i.Component {
   constructor(...e) {
     super(...e), S(this, "tierRefs", {}), S(this, "defaultTierRef", i.createRef()), S(this, "state", {
       tierPositions: null,
-      animatedTier: O.Eu4.NONE
+      animatedTier: C.Eu4.NONE
     }), S(this, "measure", () => {
       let {
         uniqueSubscriberCount: e

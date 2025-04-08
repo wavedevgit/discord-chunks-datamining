@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -183,7 +183,7 @@ function y() {
   })
 }
 
-function C() {
+function O() {
   let e = (0, a.ZP)();
   return (0, r.jsxs)("div", {
     className: c.revenueShareBenefitCard,
@@ -209,7 +209,7 @@ function C() {
   })
 }
 
-function O() {
+function C() {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.X6q, {
       variant: "heading-lg/semibold",
@@ -219,7 +219,7 @@ function O() {
       size: 24
     }), (0, r.jsxs)("div", {
       className: c.creatorBenefitsContainer,
-      children: [(0, r.jsx)(v, {}), (0, r.jsx)(y, {}), (0, r.jsx)(C, {})]
+      children: [(0, r.jsx)(v, {}), (0, r.jsx)(y, {}), (0, r.jsx)(O, {})]
     })]
   })
 }

@@ -27,7 +27,7 @@ function N(e) {
   } = e, {
     editStateId: n,
     guildId: N
-  } = (0, o.N)(), [_, v] = c.UE(n), [y, C] = c.R7(n), O = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
+  } = (0, o.N)(), [_, v] = c.UE(n), [y, O] = c.R7(n), C = i.useMemo(() => t.filter(e => e.id !== n), [t, n]), {
     isFullServerGating: I
   } = (0, d.Z)(N), E = (0, a.Dt)(), S = (0, l.mY)();
   return (0, r.jsxs)(u.Z, {
@@ -44,9 +44,9 @@ function N(e) {
       }), (0, r.jsx)(m.Z, {
         channelBenefits: _,
         intangibleBenefits: y,
-        subscriptionListings: O,
+        subscriptionListings: C,
         onImport: function(e, t) {
-          v(t => t.concat(e)), C(e => e.concat(t))
+          v(t => t.concat(e)), O(e => e.concat(t))
         }
       }), (0, r.jsx)(s.LZC, {
         size: 8

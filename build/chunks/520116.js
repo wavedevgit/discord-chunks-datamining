@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(55935),
   v = n(655354),
   E = n(809780),
-  N = n(981631),
-  O = n(388032),
+  O = n(981631),
+  N = n(388032),
   j = n(563142);
 let C = {
   left: 4,
@@ -107,7 +107,7 @@ function I(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), v = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(N.Plq.CREATE_INSTANT_INVITE, a)), I = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(N.xW$.SPAMMER)) && n, w = [];
+  }), v = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), I = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -135,7 +135,7 @@ function I(e) {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => o(e, n[n.length - 1].id),
-      children: [O.NW.string(O.t["9OB9ho"]), " ›"]
+      children: [N.NW.string(N.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return T && I && u.Z.trackExposure({

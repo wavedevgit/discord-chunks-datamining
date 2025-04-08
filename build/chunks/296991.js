@@ -25,7 +25,7 @@ var r = n(200651),
   v = n(388032),
   y = n(350612);
 
-function C(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -71,8 +71,8 @@ function E(e) {
     focused: x,
     onFocus: j,
     previewEnabled: _,
-    isDragEnabled: C
-  } = e, O = i.useRef(null), E = i.useRef(null), [{
+    isDragEnabled: O
+  } = e, C = i.useRef(null), E = i.useRef(null), [{
     textValue: S,
     richValue: T
   }, P] = i.useState((0, p.eK)(t.value)), [, w, R] = (0, c.c)({
@@ -90,7 +90,7 @@ function E(e) {
       var n;
       let {
         index: r
-      } = e, i = null == (n = O.current) ? void 0 : n.getBoundingClientRect(), a = t.getClientOffset();
+      } = e, i = null == (n = C.current) ? void 0 : n.getBoundingClientRect(), a = t.getClientOffset();
       if (null == i || null == a) return;
       let l = (i.bottom - i.top) / 2,
         o = a.y - i.top;
@@ -100,14 +100,14 @@ function E(e) {
       f(e.rule, s, !0)
     }
   });
-  if (i.useLayoutEffect(() => (w(E), R(D(O)), () => {
+  if (i.useLayoutEffect(() => (w(E), R(D(C)), () => {
       w(null), D(null)
     }), [w, D, R]), i.useEffect(() => {
       "" !== t.value && "" === S && P((0, p.eK)(t.value))
     }, [t.value, S]), null == n) return null;
   let Z = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
-    ref: O,
+    ref: C,
     className: a()(y.draggableInputContainer, {
       [y.dragging]: b
     }),
@@ -154,7 +154,7 @@ function E(e) {
         ref: E,
         className: y.dragContainer,
         "data-dnd-name": Z,
-        children: C && (0, r.jsx)(m.Vni, {
+        children: O && (0, r.jsx)(m.Vni, {
           size: "xs",
           color: "currentColor",
           className: y.dragIcon
@@ -173,7 +173,7 @@ function S(e) {
     if (t.length !== N.X2)
       if (null != e && "" === t[t.length - 1].value) {
         let r = [...t];
-        r[t.length - 1] = O(C({}, r[t.length - 1]), {
+        r[t.length - 1] = C(O({}, r[t.length - 1]), {
           value: e
         }), n(r), I(r.length - 1)
       } else n([...t, {
@@ -184,7 +184,7 @@ function S(e) {
     S(void 0)
   }, [S]), P = (e, r) => {
     let i = [...t];
-    i[r] = O(C({}, i[r]), {
+    i[r] = C(O({}, i[r]), {
       value: e
     }), n(i)
   }, w = e => {

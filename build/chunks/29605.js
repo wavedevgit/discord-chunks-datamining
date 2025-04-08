@@ -26,8 +26,8 @@ var r = n(200651),
   _ = n(730089),
   v = n(372444),
   y = n(889564),
-  C = n(372129),
-  O = n(357156),
+  O = n(372129),
+  C = n(357156),
   I = n(210887),
   E = n(626135),
   S = n(768581),
@@ -229,7 +229,7 @@ let U = d().throttle(h.OQ, 1e3),
       editingDisabled: a = !1
     } = e, l = i.useMemo(() => [...t].reverse(), [t]), {
       canManageGuildExpression: o
-    } = (0, O.Gw)(n);
+    } = (0, C.Gw)(n);
     return 0 === t.length ? (0, r.jsx)(g.R94, {
       type: g.geA.DESCRIPTION,
       className: L.content,
@@ -294,7 +294,7 @@ let U = d().throttle(h.OQ, 1e3),
     let a = (0, m.e7)([I.Z], () => I.Z.theme),
       {
         canCreateExpressions: l
-      } = (0, O.XJ)(e),
+      } = (0, C.XJ)(e),
       {
         revision: c,
         emojis: p
@@ -328,7 +328,7 @@ let U = d().throttle(h.OQ, 1e3),
       s((0, u.Z)()), E.default.track(A.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
-      }), await (0, C._)(n, H), b(!0)
+      }), await (0, O._)(n, H), b(!0)
     }, K = () => {
       null !== T.current && ((0, g.Mr3)(T.current), T.current = null)
     }, q = async e => {
@@ -411,7 +411,7 @@ let U = d().throttle(h.OQ, 1e3),
             focusProps: {
               within: !0
             },
-            children: [W.NW.string(W.t.DU0dy8), z > 0 ? (0, r.jsx)(C.Z, {
+            children: [W.NW.string(W.t.DU0dy8), z > 0 ? (0, r.jsx)(O.Z, {
               disabled: v || 0 === z || !l,
               tabIndex: 0,
               onChange: H,

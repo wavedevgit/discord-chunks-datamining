@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(796918),
   v = n(513532),
   y = n(741595),
-  C = n(974842),
-  O = n(359380),
+  O = n(974842),
+  C = n(359380),
   I = n(308083),
   E = n(981631),
   S = n(231338),
@@ -331,7 +331,7 @@ let D = e => [{
                     error: L.playstyle
                   });
                 case I.Wy.UTILITY_TRAITS:
-                  return (0, r.jsx)(O.Z, {
+                  return (0, r.jsx)(C.Z, {
                     guildId: t,
                     title: T.NW.string(T.t.G4tP09),
                     description: T.NW.string(T.t["6Eos19"]),
@@ -353,7 +353,7 @@ let D = e => [{
                     errors: L
                   });
                 case I.Wy.CUSTOMIZE_TAG_BADGE:
-                  return (0, r.jsx)(C.Z, {
+                  return (0, r.jsx)(O.Z, {
                     handleUpdate: Y,
                     tag: W.tag,
                     error: L.tag,

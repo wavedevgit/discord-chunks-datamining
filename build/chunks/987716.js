@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => S
+  q: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -59,7 +59,25 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let S = e => {
+
+function S(e, t) {
+  if (null == e) return {};
+  var n, r, i = T(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function T(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let N = e => {
   let {
     isShopGift: t,
     className: n,
@@ -67,30 +85,32 @@ let S = e => {
   } = e, {
     giftRecipient: y,
     selectedGiftStyle: O,
-    setSelectedGiftStyle: S,
-    emojiConfetti: T,
-    soundEffect: N,
-    setEmojiConfetti: A,
-    setSoundEffect: C
-  } = (0, l.wD)(), [R, P] = i.useState(!1), w = i.useRef(null), D = (0, s.arW)({
+    setSelectedGiftStyle: T,
+    emojiConfetti: N,
+    soundEffect: A,
+    setEmojiConfetti: C,
+    setSoundEffect: R
+  } = (0, l.wD)(), [P, w] = i.useState(!1), D = i.useRef(null), L = (0, s.arW)({
     orientation: "horizontal"
-  }), L = (0, u.MY)(y, t), x = L === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, M = L !== u.xr.DEFAULT, k = (0, f.rK)(), {
-    enabled: j
+  }), {
+    ref: x
+  } = L, M = S(L, ["ref"]), k = (0, u.MY)(y, t), j = k === u.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = k !== u.xr.DEFAULT, G = (0, f.rK)(), {
+    enabled: B
   } = f.ZP.useExperiment({
     location: "premiumGiftSelect_GiftAnimationOptions"
   }, {
-    autoTrackExposure: k
+    autoTrackExposure: G
   }), {
-    enabled: U
+    enabled: V
   } = _.O.useExperiment({
     location: "gift card"
-  }), G = null;
-  M && (G = k && j ? g.kJ : g.QI), U && (G = g.RQ);
-  let B = e => {
-    null != C && C(null == e ? void 0 : e)
+  }), F = null;
+  U && (F = G && B ? g.kJ : g.QI), V && (F = g.RQ);
+  let Z = e => {
+    null != R && R(null == e ? void 0 : e)
   };
   return (0, r.jsxs)("div", {
-    children: [M && (0, r.jsxs)("div", {
+    children: [U && (0, r.jsxs)("div", {
       className: a()(b.giftMainAnimation, n),
       children: [null != O ? (0, r.jsx)(p.Z, {
         giftStyle: O,
@@ -100,38 +120,39 @@ let S = e => {
         className: b.animation
       }) : (0, r.jsx)(s.$jN, {
         className: b.spinner
-      }), x && (0, r.jsxs)("div", {
+      }), j && (0, r.jsxs)("div", {
         className: b.soundEmojiContainer,
         children: [(0, r.jsx)("div", {
           className: b.sound,
           children: (0, r.jsx)(c.Z, {
-            sound: N,
-            onSelect: B
+            sound: A,
+            onSelect: Z
           })
         }), (0, r.jsx)("div", {
           className: b.emoji,
           children: (0, r.jsx)(h.Z, {
-            setEmojiConfetti: A,
-            emojiConfetti: null == T ? void 0 : T
+            setEmojiConfetti: C,
+            emojiConfetti: null == N ? void 0 : N
           })
         })]
       })]
     }), (0, r.jsx)("div", I(v({
-      tabIndex: null != O || R ? void 0 : 0,
+      tabIndex: null != O || P ? void 0 : 0,
       onFocus: e => {
         var t;
-        e.target === e.currentTarget && (null == (t = w.current) || t.focus())
+        e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: a()(b.giftBoxOptionContainer, o),
-      "aria-label": E.NW.string(E.t.v54NrK)
-    }, D), {
-      children: null != G && G.map((e, t) => (0, r.jsx)(m.m, {
+      "aria-label": E.NW.string(E.t.v54NrK),
+      ref: x
+    }, M), {
+      children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
-        setSelectedGiftStyle: S,
-        ref: 0 === t ? w : null,
-        onFocus: () => P(!0),
-        onBlur: () => P(!1)
+        setSelectedGiftStyle: T,
+        ref: 0 === t ? D : null,
+        onFocus: () => w(!0),
+        onBlur: () => w(!1)
       }, e))
     })), (0, r.jsx)("div", {
       className: b.__invalid_selectPlanDivider

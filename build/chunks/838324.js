@@ -20,7 +20,7 @@ function p(e) {
   let {
     guildId: t,
     scrollToQuestions: n
-  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, _ = p ? x.length : f.length, v = N < u.md, y = _ >= u.X, C = j.length - b.length, O = (0, r.jsx)(a.owK, {
+  } = e, p = (0, i.e7)([l.Z], () => l.Z.isAdvancedMode(t)), h = (0, i.e7)([c.Z], () => c.Z.editedDefaultChannelIds), [f, b] = (0, o.VF)(t, h), [x, j] = (0, d.OA)(t, [...h]), N = p ? j.length : b.length, _ = p ? x.length : f.length, v = N < u.md, y = _ >= u.X, O = j.length - b.length, C = (0, r.jsx)(a.owK, {
     size: "sm",
     color: s.Z.unsafe_rawColors.BRAND_500.css,
     secondaryColor: s.Z.unsafe_rawColors.WHITE_100.css,
@@ -54,7 +54,7 @@ function p(e) {
       size: a.yGy.Sizes.XSMALL
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [v ? I : O, (0, r.jsx)(a.Text, {
+      children: [v ? I : C, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.NW.format(m.t.k0COZW, {
@@ -63,7 +63,7 @@ function p(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.requiredItem,
-      children: [y ? O : I, (0, r.jsx)(a.Text, {
+      children: [y ? C : I, (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: m.NW.format(m.t.PwXgS0, {
@@ -94,7 +94,7 @@ function p(e) {
           variant: "text-xs/normal",
           color: "text-muted",
           children: m.NW.format(m.t["8Geut7"], {
-            count: C,
+            count: O,
             prejoinHook: e => (0, r.jsx)(a.eee, {
               onClick: n,
               children: (0, r.jsx)(a.Text, {

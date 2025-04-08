@@ -141,7 +141,7 @@ let j = function(e) {
   }, [t]), {
     handleDragStart: v,
     handleDragReset: y,
-    handleDragComplete: C
+    handleDragComplete: O
   } = (0, l.Z)(N, _);
   return (0, r.jsxs)("div", {
     className: g.section,
@@ -153,7 +153,7 @@ let j = function(e) {
       onDelete: j,
       onDragStart: v,
       onDragReset: y,
-      onDragComplete: C
+      onDragComplete: O
     }, e.channelId)), (0, r.jsx)(b, {}), n.length < o.O9 && (0, r.jsx)(x, {
       guildId: t,
       onAddAction: a

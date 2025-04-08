@@ -65,7 +65,23 @@ let p = function(e) {
     onSelectedLayoutType: n
   } = e, o = (0, s.arW)({
     orientation: "horizontal"
-  }), l = a.useMemo(() => [{
+  }), {
+    ref: l
+  } = o, p = function(e, t) {
+    if (null == e) return {};
+    var n, r, a = function(e, t) {
+      if (null == e) return {};
+      var n, r, a = {},
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+      return a
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+    }
+    return a
+  }(o, ["ref"]), b = a.useMemo(() => [{
     name: i.C.DEFAULT,
     label: c.NW.string(c.t.GhK6X1),
     icon: s.jE$
@@ -73,19 +89,20 @@ let p = function(e) {
     name: i.C.IMAGE_ONLY_ANSWERS,
     label: c.NW.string(c.t.an4GKS),
     icon: s.XBm
-  }], []), p = e => {
+  }], []), g = e => {
     n(e)
   };
   return (0, r.jsx)("div", f(d({
     className: u.container,
-    "aria-label": c.NW.string(c.t.e9hWx8)
-  }, o), {
-    children: l.map(e => {
+    "aria-label": c.NW.string(c.t.e9hWx8),
+    ref: l
+  }, p), {
+    children: b.map(e => {
       let n = e.icon;
       return (0, r.jsx)(m, {
         label: e.label,
         isSelected: e.name === t,
-        onClick: () => p(e.name),
+        onClick: () => g(e.name),
         children: (0, r.jsx)(n, {
           className: u.icon
         })

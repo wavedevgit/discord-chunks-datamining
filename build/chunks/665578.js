@@ -67,8 +67,8 @@ function P(e) {
     inModal: j,
     editedTargetPermissions: P,
     originalApplicationPermissions: Z,
-    originalCommandPermissions: W,
-    selectedPermissionCount: k
+    originalCommandPermissions: k,
+    selectedPermissionCount: W
   } = e, A = (0, s.e7)([h.Z], () => null == l ? null : h.Z.getCommand(l), [l]), D = (null == A ? void 0 : A.defaultMemberPermissions) != null, R = (0, s.e7)([b.Z, m.ZP, g.Z], () => {
     let e = b.Z.getGuild(x),
       t = m.ZP.getSelfMember(x);
@@ -77,10 +77,10 @@ function P(e) {
       guild: e,
       selfMember: t,
       applicationLevelPermissions: Z,
-      commandLevelPermissions: W,
+      commandLevelPermissions: k,
       defaultMemberPermissions: null == A ? void 0 : A.defaultMemberPermissions
     })
-  }, [x, A, Z, W]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
+  }, [x, A, Z, k]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
     let e = {},
       t = {};
     for (let [n, r] of Object.entries(P)) r.type === d.Kw.CHANNEL ? e[n] = r : t[n] = r;
@@ -145,10 +145,10 @@ function P(e) {
         overwrittenKeys: e,
         search: w,
         searchPlaceholderText: C.NW.string(C.t["TLQo/v"]),
-        selectedPermissionCount: k
+        selectedPermissionCount: W
       }, n))
     })
-  }, [H, M, x, k]), F = i.useCallback(() => {
+  }, [H, M, x, W]), F = i.useCallback(() => {
     let e = Object.keys(B);
     return (0, c.ZDy)(async () => {
       let {
@@ -162,17 +162,17 @@ function P(e) {
         overwrittenKeys: e,
         search: T,
         searchPlaceholderText: C.NW.string(C.t.wAfO5e),
-        selectedPermissionCount: k
+        selectedPermissionCount: W
       }, n))
     })
-  }, [H, x, B, k]), V = i.useCallback(() => (0, c.ZDy)(async () => {
+  }, [H, x, B, W]), V = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = A.defaultMemberPermissions;
     return a.fS(t, u.BO) && (t = y.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, E(S({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [A]), K = k - _._n, q = K >= 0, Y = [{
+  }), [A]), K = W - _._n, q = K >= 0, Y = [{
     buttonClick: F,
     buttonText: C.NW.string(C.t["56jRn5"]),
     noneSelectedText: C.NW.string(C.t.C0rYfn),

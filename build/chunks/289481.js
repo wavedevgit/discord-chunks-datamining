@@ -22,9 +22,9 @@ var r = n(200651),
   y = n(520116),
   v = n(981631),
   E = n(388032),
-  N = n(28007);
+  O = n(28007);
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -80,7 +80,7 @@ let j = i.memo(function(e) {
     return (0, r.jsx)(o.animated.div, {
       ref: a,
       style: f,
-      children: (0, r.jsx)(C, O({}, e))
+      children: (0, r.jsx)(C, N({}, e))
     })
   }),
   C = i.memo(function(e) {
@@ -104,7 +104,7 @@ let j = i.memo(function(e) {
       (0, f.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: N.channel,
+      className: O.channel,
       children: (0, r.jsx)(c.y5t, {
         component: (0, r.jsxs)(b.Z, {
           channel: o,
@@ -114,7 +114,7 @@ let j = i.memo(function(e) {
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: o
-          }), (0, r.jsx)(S, O({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, O({}, e))]
+          }), (0, r.jsx)(S, N({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(I, N({}, e))]
         }),
         children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(y.Z, {
           channel: t,
@@ -137,7 +137,7 @@ function S(e) {
     getNumUnreadChannels: a
   } = e, l = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
-    className: N.markReadButton,
+    className: O.markReadButton,
     tooltip: l ? E.NW.string(E.t["5lLMhI"]) : E.NW.string(E.t.e6RscX),
     color: c.YX$.TERTIARY,
     icon: l ? (0, r.jsx)(c.W6s, {
@@ -177,9 +177,9 @@ function I(e) {
     text: E.NW.string(E.t.iTcumZ),
     children: e => {
       var n, i;
-      return (0, r.jsx)(c.P3F, (n = O({}, e), i = i = {
-        className: l()(N.collapseButton, {
-          [N.collapsed]: t.collapsed
+      return (0, r.jsx)(c.P3F, (n = N({}, e), i = i = {
+        className: l()(O.collapseButton, {
+          [O.collapsed]: t.collapsed
         }),
         onClick: a,
         children: (0, r.jsx)(g.Z, {

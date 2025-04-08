@@ -71,7 +71,7 @@ function b(e) {
     isInitialLoading: w,
     primaryEntryPointCommand: N,
     isProfileFetching: y,
-    wasProfileFetching: x,
+    wasProfileFetching: null != x ? x : null,
     applicationId: O,
     channelId: _.id,
     commands: I

@@ -1,6 +1,6 @@
 /** Chunk was on 37658 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -23,8 +23,8 @@ var r = n(200651),
   v = n(388032),
   E = n(510064);
 
-function N(e) {
-  var t, n, N, O;
+function O(e) {
+  var t, n, O, N;
   let j, C, S, {
       message: I,
       channel: T,
@@ -57,9 +57,9 @@ function N(e) {
     wallpaper_name: null != (n = null == R ? void 0 : R.label) ? n : v.NW.string(v.t["UQMV/P"])
   }) : v.NW.format(v.t["+lKndX"], {
     username: null == Z ? void 0 : Z.nick,
-    wallpaper_name: null != (N = null == R ? void 0 : R.label) ? N : v.NW.string(v.t["UQMV/P"])
+    wallpaper_name: null != (O = null == R ? void 0 : R.label) ? O : v.NW.string(v.t["UQMV/P"])
   }), w ? k ? G && W ? C = v.NW.formatToPlainString(v.t.PzTpVV, {
-    wallpaperName: null != (O = null == R ? void 0 : R.label) ? O : v.NW.string(v.t["UQMV/P"])
+    wallpaperName: null != (N = null == R ? void 0 : R.label) ? N : v.NW.string(v.t["UQMV/P"])
   }) : F || B || !W || (C = v.NW.format(v.t.JwUhHh, {
     onClickNitro: () => {
       (0, u.uL)(x.Z5c.NITRO_HOME)

@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(316350),
   v = n(863562),
   y = n(981631),
-  C = n(388032),
-  O = n(145635);
+  O = n(388032),
+  C = n(145635);
 let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.TIER_1) ? y.Eu4.TIER_1 : e < (0, b.A3)(y.Eu4.TIER_2) ? y.Eu4.TIER_2 : e < (0, b.A3)(y.Eu4.TIER_3) || null != t && t.hasFeature(y.oNc.MORE_STICKERS) && e < c.D.MAX_STICKER_SLOTS ? y.Eu4.TIER_3 : y.Eu4.NONE,
   E = e => {
     let {
@@ -41,7 +41,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
         children: t
       }), !a && (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        children: C.NW.format(C.t.ZLoNtr, {
+        children: O.NW.format(O.t.ZLoNtr, {
           numTotal: l,
           numAvailable: (0, b.Qi)(i, s)
         })
@@ -79,10 +79,10 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
     })
   },
   T = () => (0, r.jsx)("div", {
-    className: O.placeholderCard,
+    className: C.placeholderCard,
     children: (0, r.jsx)("img", {
-      className: O.placeholderImg,
-      alt: C.NW.string(C.t.wl4ntL),
+      className: C.placeholderImg,
+      alt: O.NW.string(O.t.wl4ntL),
       src: n(872732)
     })
   }),
@@ -106,7 +106,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
         })
       },
       disabled: !i,
-      children: C.NW.string(C.t.O1REe3)
+      children: O.NW.string(O.t.O1REe3)
     })
   },
   w = e => {
@@ -143,7 +143,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildStickers: c,
           currentGuildTier: S,
           tier: y.Eu4.NONE,
-          children: C.NW.string(C.t.tfVXhI)
+          children: O.NW.string(O.t.tfVXhI)
         })
       }, {
         tier: y.Eu4.TIER_1,
@@ -151,7 +151,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildStickers: c,
           currentGuildTier: S,
           tier: y.Eu4.TIER_1,
-          children: C.NW.string(C.t.nzXtaW)
+          children: O.NW.string(O.t.nzXtaW)
         })
       }, {
         tier: y.Eu4.TIER_2,
@@ -159,7 +159,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildStickers: c,
           currentGuildTier: S,
           tier: y.Eu4.TIER_2,
-          children: C.NW.string(C.t["h33/ub"])
+          children: O.NW.string(O.t["h33/ub"])
         })
       }, {
         tier: y.Eu4.TIER_3,
@@ -167,7 +167,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildStickers: c,
           currentGuildTier: S,
           tier: y.Eu4.TIER_3,
-          children: C.NW.string(C.t.BfF6EB)
+          children: O.NW.string(O.t.BfF6EB)
         })
       }];
     return (0, r.jsx)(N.Z, {
@@ -206,7 +206,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guild: t,
           size: o.zxk.Sizes.SMALL,
           color: o.zxk.Colors.GREEN,
-          buttonText: C.NW.string(C.t.Vbkh2t),
+          buttonText: O.NW.string(O.t.Vbkh2t),
           targetBoostedGuildTier: S + 1,
           analyticsLocation: {
             page: y.ZY5.GUILD_SETTINGS,
@@ -227,39 +227,39 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           showHeaderLockStatus: V,
           guildId: t.id,
           children: [M && (0, r.jsxs)("div", {
-            className: O.grid,
+            className: C.grid,
             children: [Z.map(e => (0, r.jsx)(v.Z, {
               isDisabled: k,
               sticker: e,
               canManageSticker: x(e)
             }, e.id)), z]
           }), !k && !L && 0 === Z.length && (0, r.jsx)("div", {
-            className: a()(O.emptyTierWrapper, O.unusedTierWrapper),
+            className: a()(C.emptyTierWrapper, C.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
-              children: C.NW.string(C.t.lqwv0N)
+              children: O.NW.string(O.t.lqwv0N)
             })
           }), k && !A && (0, r.jsxs)("div", {
-            className: O.emptyTierWrapper,
+            className: C.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
-              alt: C.NW.string(C.t.BAhsws),
-              className: O.emptyTierImage,
+              alt: O.NW.string(O.t.BAhsws),
+              className: C.emptyTierImage,
               src: U
             }), (0, r.jsx)(o.Text, {
-              className: O.unlockTierCtaHeading,
+              className: C.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: d.tier === y.Eu4.TIER_1 ? C.NW.formatToPlainString(C.t.psMYu7, {
+              children: d.tier === y.Eu4.TIER_1 ? O.NW.formatToPlainString(O.t.psMYu7, {
                 numAdditional: G
-              }) : C.NW.formatToPlainString(C.t.bLykER, {
+              }) : O.NW.formatToPlainString(O.t.bLykER, {
                 numAdditional: G,
                 numTotal: E
               })
             }), (0, r.jsx)(o.zxk, {
               color: o.zxk.Colors.GREEN,
               onClick: () => R(y.oCV[d.tier] - f, d.tier),
-              children: C.NW.string(C.t.dtFw5e)
+              children: O.NW.string(O.t.dtFw5e)
             })]
           })]
         }, d.tier)

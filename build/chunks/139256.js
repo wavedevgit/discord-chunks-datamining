@@ -27,8 +27,8 @@ var r = n(200651),
   y = n(294608),
   v = n(65145),
   E = n(981631),
-  N = n(388032),
-  O = n(56228);
+  O = n(388032),
+  N = n(56228);
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -68,7 +68,7 @@ function S(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": N.NW.string(N.t.sJpqBQ),
+    "aria-label": O.NW.string(O.t.sJpqBQ),
     className: t,
     children: n
   })
@@ -80,7 +80,7 @@ function I(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": N.NW.string(N.t.sJpqBQ),
+    "aria-label": O.NW.string(O.t.sJpqBQ),
     role: "group",
     className: t,
     children: n
@@ -93,10 +93,27 @@ function T(e) {
     children: n
   } = e, i = (0, s.arW)({
     orientation: "vertical"
-  });
+  }), {
+    ref: a
+  } = i, l = function(e, t) {
+    if (null == e) return {};
+    var n, r, i = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = {},
+        a = Object.keys(e);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
+    }(e, t);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    }
+    return i
+  }(i, ["ref"]);
   return (0, r.jsx)("div", C(j({
-    "aria-label": N.NW.string(N.t.sJpqBQ)
-  }, i), {
+    "aria-label": O.NW.string(O.t.sJpqBQ),
+    ref: a
+  }, l), {
     className: t,
     children: n
   }))
@@ -114,7 +131,7 @@ function P(e) {
   } = (0, v.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "checkbox",
-    className: l()(t, O.enabled),
+    className: l()(t, N.enabled),
     onClick: n,
     "aria-checked": i,
     ref: a ? c : void 0,
@@ -135,7 +152,7 @@ function A(e) {
   } = (0, v.dv)();
   return (0, r.jsx)(s.P3F, {
     role: "radio",
-    className: l()(t, O.enabled),
+    className: l()(t, N.enabled),
     onClick: i,
     "aria-checked": a,
     tabIndex: o ? a ? 0 : -1 : c ? 0 : -1,
@@ -247,7 +264,7 @@ function k(e) {
   } = e, a = (0, g.n)(), l = m.QK.useSetting();
   return (0, r.jsx)(p.ZP, {
     className: i,
-    imageClassName: O.attachmentImage,
+    imageClassName: N.attachmentImage,
     src: null != n.proxy_url && "" !== n.proxy_url ? n.proxy_url : n.url,
     alt: null != (t = n.description) ? t : (0, b.fw)(n.filename),
     responsive: !0,
@@ -352,11 +369,11 @@ function W(e) {
   } = e, a = {
     width: n,
     height: n,
-    background: O.radioBackground,
+    background: N.radioBackground,
     "aria-hidden": !0
   };
   return t ? (0, r.jsx)(h.Z, C(j({}, a), {
-    foreground: O.radioForeground,
+    foreground: N.radioForeground,
     className: i
   })) : (0, r.jsx)(f.Z, C(j({}, a), {
     className: i
@@ -370,8 +387,8 @@ function U(e) {
     className: i
   } = e, a = .85 * n;
   return (0, r.jsx)("div", {
-    className: l()(O.checkbox, {
-      [O.checkboxSelected]: t
+    className: l()(N.checkbox, {
+      [N.checkboxSelected]: t
     }, i),
     style: {
       width: n,

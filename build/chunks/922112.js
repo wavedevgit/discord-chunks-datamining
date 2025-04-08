@@ -59,10 +59,10 @@ let x = function(e) {
   } = e, {
     title: v,
     channelId: y,
-    description: C
-  } = s, O = d.Z.getChannel(y), I = null;
-  null != O && (0, c.k3)(O) || (I = p.NW.string(p.t.kTdL8f));
-  let E = null == C || 0 === C.length,
+    description: O
+  } = s, C = d.Z.getChannel(y), I = null;
+  null != C && (0, c.k3)(C) || (I = p.NW.string(p.t.kTdL8f));
+  let E = null == O || 0 === O.length,
     S = u.ZP.getResourceChannelIconURL({
       channelId: s.channelId,
       icon: s.icon
@@ -101,7 +101,7 @@ let x = function(e) {
         onIconUpload: Z
       }))
     }), [t, s, D, Z]);
-  return null == O ? null : (0, r.jsxs)("div", {
+  return null == C ? null : (0, r.jsxs)("div", {
     className: h.resourceChannelContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(h.resourceChannel, {
@@ -109,7 +109,9 @@ let x = function(e) {
         [h.dropIndicatorAfter]: null != P && x > P,
         [h.resourceChannelError]: null != I
       }),
-      ref: e => T(w(e)),
+      ref: e => {
+        T(w(e))
+      },
       children: [(0, r.jsx)("div", {
         className: h.dragContainer,
         onMouseEnter: () => R(!0),
@@ -141,7 +143,7 @@ let x = function(e) {
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
-          children: C
+          children: O
         })]
       }), (0, r.jsx)(l.ua7, {
         text: p.NW.string(p.t.bt75u7),

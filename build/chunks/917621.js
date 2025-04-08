@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(388032),
   E = n(638128);
 
-function N(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -32,14 +32,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -87,7 +87,7 @@ function C(e) {
       var i;
       return (0, r.jsx)(o.ua7, {
         text: null != (i = t.nick) ? i : h.ZP.getName(t.user),
-        children: i => (0, r.jsx)(o.P3F, j(O({
+        children: i => (0, r.jsx)(o.P3F, j(N({
           innerRef: p,
           className: E.partyMemberKnown
         }, i, e), {
@@ -257,10 +257,10 @@ class S extends i.PureComponent {
       className: E.actionButton,
       size: o.zxk.Sizes.SMALL
     }, p = null != u ? u(d) : null;
-    return null != p ? p : !this.isDeadInvite() && this.isActionType(x.mFx.LISTEN) && null != a && null != s && null != l && (0, y.Ps)(a) ? c(j(O({}, d), {
+    return null != p ? p : !this.isDeadInvite() && this.isActionType(x.mFx.LISTEN) && null != a && null != s && null != l && (0, y.Ps)(a) ? c(j(N({}, d), {
       activity: l,
       user: s.author
-    })) : (0, r.jsx)(o.zxk, j(O({}, d, t || !e || this.isDeadInvite() || this.isEmbeddedActivityApplication() ? this.canJoin() ? {
+    })) : (0, r.jsx)(o.zxk, j(N({}, d, t || !e || this.isDeadInvite() || this.isEmbeddedActivityApplication() ? this.canJoin() ? {
       children: v.NW.string(v.t.VJlc0d),
       onClick: this.handleJoin
     } : this.canSync() ? {
@@ -396,47 +396,47 @@ class S extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "handleJoin", () => {
+    super(...e), O(this, "handleJoin", () => {
       let {
         onJoin: e
       } = this.props;
       null == e || e()
-    }), N(this, "handleInvite", () => {
+    }), O(this, "handleInvite", () => {
       let {
         onInvite: e
       } = this.props;
       null == e || e()
-    }), N(this, "handleSync", () => {
+    }), O(this, "handleSync", () => {
       let {
         onSync: e
       } = this.props;
       null == e || e()
-    }), N(this, "handleDownloadApp", () => {
+    }), O(this, "handleDownloadApp", () => {
       let {
         onDownloadApp: e
       } = this.props;
       null == e || e()
-    }), N(this, "handleOpenSpotifyTrack", () => {
+    }), O(this, "handleOpenSpotifyTrack", () => {
       let {
         activity: e,
         onOpenSpotifyTrack: t
       } = this.props;
       null != e && (null == t || t(e))
-    }), N(this, "handleOpenSpotifyArtist", e => {
+    }), O(this, "handleOpenSpotifyArtist", e => {
       let {
         activity: t,
         onOpenSpotifyArtist: n,
         message: r
       } = this.props;
       null != t && null != r && (null == n || n(t, r.author.id, e))
-    }), N(this, "handleOpenSpotifyAlbum", () => {
+    }), O(this, "handleOpenSpotifyAlbum", () => {
       let {
         activity: e,
         onOpenSpotifyAlbum: t,
         message: n
       } = this.props;
       null != e && null != n && (null == t || t(e, n.author.id))
-    }), N(this, "renderUser", (e, t, n) => {
+    }), O(this, "renderUser", (e, t, n) => {
       let {
         guildId: i,
         channelId: a,

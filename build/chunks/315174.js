@@ -284,7 +284,7 @@ let Z = i.memo(function(e) {
     headerClassName: A,
     communityInfoVisible: D,
     hasSubheader: R
-  } = e, L = P.hasFeature(m.oNc.ANIMATED_BANNER), k = (0, d.Z)(P), M = !k && P.hasCommunityInfoSubheader(), G = !k && D, B = (0, f.xR)(Z) && L && !y, [U, W] = i.useState(!1), V = i.useRef(), F = i.useRef(null), H = i.useRef(), z = h.QK.getSetting();
+  } = e, L = P.hasFeature(m.oNc.ANIMATED_BANNER), k = (0, d.Z)(P), M = !k && P.hasCommunityInfoSubheader(), G = !k && D, B = (0, f.xR)(Z) && L && !y, [U, W] = i.useState(!1), V = i.useRef(!1), F = i.useRef(null), H = i.useRef(void 0), z = h.QK.getSetting();
   i.useEffect(() => {
     if (B && t && !V.current && z) return W(!0), H.current = setTimeout(() => {
       W(!1)

@@ -133,7 +133,7 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, _ = b(t), v = (0, m.O4)(t), y = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), C = y ? p.NW.formatToPlainString(p.t.nHwnLC, {
+  } = e, d = (0, s.Wu)([l.Z], () => l.Z.getDefaultChannelIds(t)), u = (0, s.e7)([l.Z], () => (0, o.kl)(t, l.Z.getDefaultChannelIds(t), l.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), N = j.length, _ = b(t), v = (0, m.O4)(t), y = (0, s.e7)([l.Z], () => l.Z.isAdvancedMode(t)), O = y ? p.NW.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: N,
     numFromQuestions: u - N
   }) : _ ? p.NW.formatToPlainString(p.t.HxEwSk, {
@@ -144,7 +144,7 @@ function j(e) {
   });
   return (0, r.jsx)(f, {
     title: y ? p.NW.string(p.t.YZookZ) : p.NW.string(p.t["4GSygo"]),
-    description: C,
+    description: O,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
       color: "currentColor",

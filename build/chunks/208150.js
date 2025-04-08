@@ -71,7 +71,7 @@ let v = {
       })]
     })
   },
-  C = () => (0, r.jsxs)(s.hjN, {
+  O = () => (0, r.jsxs)(s.hjN, {
     title: N.NW.string(N.t["9N2OWF"]),
     children: [(0, r.jsx)(s.R94, {
       type: s.geA.DESCRIPTION,
@@ -87,7 +87,7 @@ let v = {
       })
     })]
   }),
-  O = e => {
+  C = e => {
     let t, n, i, {
         guild: s,
         guildStickers: a
@@ -133,10 +133,10 @@ let v = {
         title: N.NW.string(N.t.R5nQkZ),
         tag: s.RB0.H1,
         children: [o ? (0, r.jsxs)("div", {
-          children: [(0, r.jsx)(O, {
+          children: [(0, r.jsx)(C, {
             guild: e,
             guildStickers: t
-          }), (0, r.jsx)(C, {})]
+          }), (0, r.jsx)(O, {})]
         }) : (0, r.jsx)(y, {
           guild: e
         }), (0, r.jsx)(s.$i$, {

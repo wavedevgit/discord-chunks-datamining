@@ -56,7 +56,7 @@ function S(e) {
     inPopout: n
   } = e, {
     reducedMotion: S
-  } = l.useContext(o.Sf), y = (0, l.useRef)(null), O = d.n.getState().clipsButtonRef, Z = (0, f.V9)(t), I = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), j = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(Z)), x = (0, l.useRef)();
+  } = l.useContext(o.Sf), y = (0, l.useRef)(null), O = d.n.getState().clipsButtonRef, Z = (0, f.V9)(t), I = (0, a.e7)([u.Z], () => u.Z.getActiveAnimation()), j = (0, a.Wu)([u.Z], () => u.Z.getStreamClipAnimations(Z)), x = (0, l.useRef)(void 0);
   l.useEffect(() => () => {
     (0, c.Gh)(Z)
   }, [Z]);

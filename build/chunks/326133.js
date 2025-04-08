@@ -97,7 +97,7 @@ let w = 490,
     } = e, B = (0, h.Dt)(), V = (0, l.e7)([E.Z], () => {
       var e;
       return null != (e = E.Z.getGuild(k.guild_id)) ? e : null
-    }, [k.guild_id]), F = i.useRef(), [Z, H, W] = (0, O.Z)(C(N({}, e), {
+    }, [k.guild_id]), F = i.useRef(null), [Z, H, W] = (0, O.Z)(C(N({}, e), {
       guild: V
     }), t, F), Y = (null == (n = j.autocomplete) ? void 0 : n.forceChatLayer) ? g.ZP : m.ZP, K = (0, _.DJ)(Z.selectedIndex);
     (0, p.KR)(B, Z.isVisible, K), b.Z.trackExposure({

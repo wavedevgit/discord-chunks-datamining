@@ -187,7 +187,7 @@ function Q(e) {
     positionLayerClassName: J,
     closeOnModalOuterClick: $ = !1,
     parentModalKey: ee
-  } = e, et = i.useRef(null), en = i.useRef(!1), er = i.useRef(), ei = i.useRef(null), {
+  } = e, et = i.useRef(null), en = i.useRef(!1), er = i.useRef(null), ei = i.useRef(null), {
     drawerWidth: eo,
     handleDrawerResizeHandleMouseDown: ea
   } = q({

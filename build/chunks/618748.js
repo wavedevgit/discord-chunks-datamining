@@ -25,8 +25,8 @@ var i = n(442837),
   _ = n(568074),
   v = n(411667),
   y = n(903773),
-  C = n(822531),
-  O = n(909656),
+  O = n(822531),
+  C = n(909656),
   I = n(210591),
   E = n(927731),
   S = n(798680),
@@ -155,7 +155,7 @@ function L(e) {
   if (!j) return (0, r.jsx)(s.$jN, {});
   switch (g) {
     case S.ue.BASIC_INFO:
-      t = (0, r.jsx)(O.Z, {
+      t = (0, r.jsx)(C.Z, {
         guild: n
       });
       break;
@@ -165,7 +165,7 @@ function L(e) {
       });
       break;
     case S.ue.PAYMENT:
-      t = (0, r.jsx)(C.Z, {
+      t = (0, r.jsx)(O.Z, {
         guild: n
       });
       break;

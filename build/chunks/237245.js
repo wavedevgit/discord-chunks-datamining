@@ -25,7 +25,7 @@ var r = n(200651),
   v = n(128449),
   y = n(388032);
 
-function C(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,7 +44,7 @@ function C(e) {
   return e
 }
 
-function O(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -147,7 +147,7 @@ function I(e) {
             preferredLocale: I.preferredLocale
           });
           try {
-            await (0, c.Vv)(C({
+            await (0, c.Vv)(O({
               guildId: I.id
             }, E))
           } catch (e) {
@@ -163,7 +163,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("67376").then(n.bind(n, 207252));
-          return n => (0, r.jsx)(t, O(C({}, n), {
+          return n => (0, r.jsx)(t, C(O({}, n), {
             guildId: T,
             onConfirm: e
           }))
@@ -175,7 +175,7 @@ function I(e) {
           let {
             default: t
           } = await n.e("55009").then(n.bind(n, 826390));
-          return n => (0, r.jsx)(t, O(C({}, n), {
+          return n => (0, r.jsx)(t, C(O({}, n), {
             guildId: T,
             submittedGuildJoinRequestsCount: A,
             onConfirm: e

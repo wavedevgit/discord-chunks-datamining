@@ -66,7 +66,7 @@ let u = o.createContext({
       unregisterComponent: g,
       expansionSpring: x,
       mountPoints: h
-    } = o.useContext(u), b = o.useRef(null), j = o.useRef(null), v = o.useRef();
+    } = o.useContext(u), b = o.useRef(null), j = o.useRef(null), v = o.useRef(void 0);
     o.useEffect(() => {
       m()
     }, [m]), o.useLayoutEffect(() => {

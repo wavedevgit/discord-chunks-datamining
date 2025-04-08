@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => D
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -66,29 +66,51 @@ function R(e, t) {
   }), e
 }
 
-function P(e) {
+function P(e, t) {
+  if (null == e) return {};
+  var n, r, i = w(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function w(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+
+function D(e) {
   let {
     className: t,
     disabled: o,
     isEditor: N,
     renderCTAButtons: C
-  } = e, [P, w] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
-    enabled: D
+  } = e, [w, D] = (0, s.Wu)([g.Z], () => [g.Z.getCurrentDesktopIcon(), g.Z.isUpsellPreview]), {
+    enabled: L
   } = p.Z.getCurrentConfig({
     location: "UserSettingsAppearanceInAppIcon"
   }, {
-    autoTrackExposure: w,
-    disable: !w
-  }), L = i.useRef(null);
-  (0, m.Z)(L, O.h1.CUSTOM_APP_ICONS);
-  let x = (0, d.Dt)(),
-    M = (0, l.arW)({
+    autoTrackExposure: D,
+    disable: !D
+  }), x = i.useRef(null);
+  (0, m.Z)(x, O.h1.CUSTOM_APP_ICONS);
+  let M = (0, d.Dt)(),
+    k = (0, l.arW)({
       orientation: "horizontal",
-      labelledBy: x
+      labelledBy: M
     }),
-    k = (0, f.Q3)("AppIconSelectionGroup"),
-    j = e => {
-      if (D && !N && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
+    {
+      ref: j
+    } = k,
+    U = P(k, ["ref"]),
+    G = (0, f.Q3)("AppIconSelectionGroup"),
+    B = e => {
+      if (L && !N && e !== E.aH.DEFAULT) return void(0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("69052").then(n.bind(n, 184250));
@@ -106,8 +128,9 @@ function P(e) {
       })
     };
   return (0, r.jsx)("div", {
-    ref: L,
-    children: (0, r.jsx)("div", R(A({}, M), {
+    ref: x,
+    children: (0, r.jsx)("div", R(A({}, U), {
+      ref: j,
       className: S.__invalid_container,
       children: (0, r.jsxs)("div", {
         className: t,
@@ -119,12 +142,12 @@ function P(e) {
               className: S.title,
               children: [(0, r.jsx)(l.X6q, {
                 className: S.titleText,
-                variant: k ? "text-lg/medium" : "text-md/medium",
+                variant: G ? "text-lg/medium" : "text-md/medium",
                 children: I.NW.string(I.t.NThqT0)
-              }), !D && (0, r.jsx)(h.Z, {
+              }), !L && (0, r.jsx)(h.Z, {
                 className: S.premiumIcon
               })]
-            }), D ? N ? null : (0, r.jsxs)("div", {
+            }), L ? N ? null : (0, r.jsxs)("div", {
               className: S.description,
               children: [(0, r.jsx)(l.SrA, {
                 size: "md",
@@ -141,14 +164,14 @@ function P(e) {
             }) : (0, r.jsx)(l.X6q, {
               variant: "text-sm/normal",
               className: a()({
-                [T.subtext]: k
+                [T.subtext]: G
               }),
               children: I.NW.string(I.t.IgENJi)
             })]
           }), null == C ? void 0 : C()]
         }), (0, r.jsx)("div", {
           className: a()(S.presets, {
-            [S.presetsJustified]: D && N
+            [S.presetsJustified]: L && N
           }),
           children: (0, y.wu)().filter(e => {
             let {
@@ -157,11 +180,11 @@ function P(e) {
             return !t
           }).map((e, t) => (0, r.jsx)(b.Z, {
             icon: e,
-            isSelected: P === e.id,
-            onSelect: e => j(e),
+            isSelected: w === e.id,
+            onSelect: e => B(e),
             disabled: o,
             tabIndex: 0 !== t || o ? void 0 : 0,
-            locked: D && !N && e.id !== E.aH.DEFAULT
+            locked: L && !N && e.id !== E.aH.DEFAULT
           }, e.id))
         })]
       })

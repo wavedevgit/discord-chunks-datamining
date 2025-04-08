@@ -143,7 +143,9 @@ function y(e) {
       [j.dropIndicatorBefore]: null != g && d < g,
       [j.dropIndicatorAfter]: null != g && d > g
     }),
-    ref: e => h(p(e)),
+    ref: e => {
+      h(p(e))
+    },
     onMouseEnter: () => f(i),
     onMouseLeave: () => f(!1),
     children: (0, r.jsx)(m.Z, {

@@ -32,10 +32,10 @@ function h(e) {
     y = i.useCallback(e => {
       u.Z.setPendingMemberVerificationRules(n.id, e), b(e), null != j && N(null)
     }, [j, n.id]),
-    C = i.useCallback(e => {
+    O = i.useCallback(e => {
       y([...h, e])
     }, [h, y]),
-    O = i.useCallback(e => {
+    C = i.useCallback(e => {
       y([...h.slice(0, e), ...h.slice(e + 1)])
     }, [h, y]),
     I = i.useCallback((e, t) => {
@@ -64,7 +64,7 @@ function h(e) {
       index: h.indexOf(e),
       isDragEnabled: h.length > 1,
       submittedGuildJoinRequestsCount: x,
-      removeFormField: O,
+      removeFormField: C,
       updateFormField: I,
       updateFormFieldOrder: E,
       canRemove: h.length > 1,
@@ -73,12 +73,12 @@ function h(e) {
     })), !v && (0, r.jsx)("div", {
       className: p.addQuestionsContainer,
       children: (0, r.jsx)(o.Z, {
-        addFormField: C,
+        addFormField: O,
         guild: n,
         allowTerms: !_
       })
     }), !v && (0, r.jsx)(f, {
-      addFormField: C
+      addFormField: O
     })]
   })
 }

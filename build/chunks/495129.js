@@ -1,6 +1,6 @@
 /** Chunk was on 37658 **/
 n.d(t, {
-  H: () => N
+  H: () => O
 }), n(35282);
 var r = n(200651);
 n(192379);
@@ -24,8 +24,8 @@ var i = n(120356),
   v = n(388032),
   E = n(653072);
 
-function N(e) {
-  var t, n, i, N, O, j, C, S, I, T;
+function O(e) {
+  var t, n, i, O, N, j, C, S, I, T;
   let {
     message: P,
     channel: A
@@ -34,12 +34,12 @@ function N(e) {
       rawName: t
     } = e;
     return "guild_id" === t
-  })) ? void 0 : t.rawValue, Z = null == (j = P.embeds[0]) || null == (O = j.fields) || null == (N = O.find(e => {
+  })) ? void 0 : t.rawValue, Z = null == (j = P.embeds[0]) || null == (N = j.fields) || null == (O = N.find(e => {
     let {
       rawName: t
     } = e;
     return "channel_id" === t
-  })) ? void 0 : N.rawValue, k = (0, l.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, l.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, l.e7)([_.default], () => _.default.getCurrentUser()), L = (0, l.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null == (C = A.recipients) ? void 0 : C.find(e => e !== P.author.id), W = (0, l.e7)([_.default], () => null != M ? _.default.getUser(M) : null), U = (0, d.ZP)(P), F = (0, x._T)(A.getGuildId(), A.id, W), B = (0, l.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null == (T = P.embeds[0]) || null == (I = T.fields) || null == (S = I.find(e => {
+  })) ? void 0 : O.rawValue, k = (0, l.e7)([g.Z], () => g.Z.getGuild(w)), R = (0, l.e7)([h.Z], () => h.Z.getChannel(Z)), D = (0, l.e7)([_.default], () => _.default.getCurrentUser()), L = (0, l.e7)([], () => P.author.id === (null == D ? void 0 : D.id)), M = null == (C = A.recipients) ? void 0 : C.find(e => e !== P.author.id), W = (0, l.e7)([_.default], () => null != M ? _.default.getUser(M) : null), U = (0, d.ZP)(P), F = (0, x._T)(A.getGuildId(), A.id, W), B = (0, l.Wu)([b.ZP], () => null != R ? b.ZP.getVoiceStatesForChannel(R) : [], [R]), G = B.some(e => e.user.id === (null == D ? void 0 : D.id)), H = null == (T = P.embeds[0]) || null == (I = T.fields) || null == (S = I.find(e => {
     let {
       rawName: t
     } = e;

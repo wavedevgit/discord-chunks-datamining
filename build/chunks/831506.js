@@ -1,6 +1,6 @@
 /** Chunk was on 37658 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 }), n(388685);
 var r, i = n(392711),
   a = n.n(i),
@@ -106,7 +106,7 @@ class E extends(r = l.ZP.Store) {
   }
 }
 p(E, "displayName", "GamePartyStore");
-let N = new E(o.Z, {
+let O = new E(o.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       guilds: t,

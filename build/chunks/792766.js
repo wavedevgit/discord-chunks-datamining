@@ -105,8 +105,8 @@ let g = e => {
       topic: y,
       speaker_count: v,
       participant_count: E
-    } = n, N = null != (t = n.members) ? t : [], O = _ ? N.slice(0, 3) : N, j = v - O.length;
-    return _ && (j += N.length - O.length), (0, r.jsxs)("div", {
+    } = n, O = null != (t = n.members) ? t : [], N = _ ? O.slice(0, 3) : O, j = v - N.length;
+    return _ && (j += O.length - N.length), (0, r.jsxs)("div", {
       children: [(0, r.jsxs)("div", {
         className: h.flex,
         children: [(0, r.jsxs)("div", {
@@ -165,9 +165,9 @@ let g = e => {
         className: l()(h.members, {
           [h.embed]: _
         }),
-        children: [O.length > 0 && (0, r.jsxs)("div", {
+        children: [N.length > 0 && (0, r.jsxs)("div", {
           className: h.speakers,
-          children: [O.map(e => (0, r.jsx)(g, {
+          children: [N.map(e => (0, r.jsx)(g, {
             speaker: e,
             guildId: x.id,
             isEmbed: _

@@ -57,7 +57,7 @@ function E(e) {
   }) : null
 }
 
-function N(e) {
+function O(e) {
   let t;
   var {
     type: n
@@ -137,7 +137,7 @@ function N(e) {
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     className: t,
     data: n,
@@ -164,7 +164,7 @@ function O(e) {
     children: [(0, r.jsx)(E, {
       hasNoVotes: "NO_VOTES" === o.type,
       victorEmoji: n.victorEmoji
-    }), (0, r.jsx)(N, function(e) {
+    }), (0, r.jsx)(O, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -208,14 +208,14 @@ function j(e) {
     channelId: a.id,
     guildId: a.guild_id,
     messageId: n.id
-  }), N = n.messageReference, j = i.useCallback(() => {
-    null != N && c.Z.jumpToMessage({
-      channelId: N.channel_id,
-      messageId: N.message_id,
+  }), O = n.messageReference, j = i.useCallback(() => {
+    null != O && c.Z.jumpToMessage({
+      channelId: O.channel_id,
+      messageId: O.message_id,
       flash: !0,
       returnMessageId: n.id
     })
-  }, [n.id, N]);
+  }, [n.id, O]);
   return null == p ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(h.Z, {
       iconNode: (0, r.jsx)(s.QDj, {
@@ -229,7 +229,7 @@ function j(e) {
         title: _,
         titleOnClick: j
       })
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(N, {
       className: y.embed,
       data: p,
       onClickPollLink: u ? void 0 : j

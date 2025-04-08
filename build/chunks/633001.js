@@ -300,7 +300,7 @@ function z() {
       return e
     })
   }, [G]);
-  let [J, q] = a.useState({}), $ = a.useRef();
+  let [J, q] = a.useState({}), $ = a.useRef(null);
   a.useEffect(() => ($.current = setInterval(async () => {
     let e = x.ZP.getRunningGames(),
       t = [],

@@ -34,8 +34,8 @@ function p(e) {
     canViewGuildAnalytics: _,
     isOwner: v,
     isOwnerWithRequiredMfaLevel: y,
-    canAccessClanSettings: C,
-    isGuildSettingsFoundationEnabled: O,
+    canAccessClanSettings: O,
+    isGuildSettingsFoundationEnabled: C,
     isGuildAdmin: I,
     canManageGuildExpressions: E
   } = e, S = () => (0, l.X$)({
@@ -76,7 +76,7 @@ function p(e) {
   })(Object(n)).forEach(function(e) {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t);
-  if (O) {
+  if (C) {
     let e = [];
     e.push(m(d.pNK.PROFILE, T)), e.push(m(d.pNK.TAG, T)), e.push(m(d.pNK.ENGAGEMENT, T)), e.push(m(d.pNK.BOOST_PERKS, T)), E && (e.push({
       section: g.DIVIDER
@@ -132,7 +132,7 @@ function p(e) {
   }, {
     section: g.HEADER,
     label: u.NW.string(u.t["1g9A/f"]),
-    predicate: () => !C && (p || _)
+    predicate: () => !O && (p || _)
   }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
     section: g.DIVIDER,
     predicate: S

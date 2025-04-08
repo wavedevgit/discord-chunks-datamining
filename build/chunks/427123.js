@@ -19,16 +19,16 @@ var r, i, a, l = n(392711),
 let y = "DetectedOffPlatformPremiumPerksStore",
   v = {},
   E = {},
-  N = [];
+  O = [];
 
-function O() {
+function N() {
   let e = !1;
   for (let {
       skuId: t,
       applicationId: n
     }
     of o().values(E)) {
-    if (N.includes(t)) continue;
+    if (O.includes(t)) continue;
     let r = f.Z.getApplication(n);
     if (null == r) {
       f.Z.isFetchingApplication(n) || f.Z.didFetchingApplicationFail(n) || m.ZP.fetchApplication(n);
@@ -49,7 +49,7 @@ function O() {
 class j extends(r = s.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(h.ZP, b.Z, _.Z), N = null != (e = c.K.get(y)) ? e : N
+    this.waitFor(h.ZP, b.Z, _.Z), O = null != (e = c.K.get(y)) ? e : O
   }
   getDetectedOffPlatformPremiumPerks() {
     return o().values(v)
@@ -65,16 +65,16 @@ let C = new j(u.Z, {
   LOGOUT: function() {
     v = {}, E = {}
   },
-  SKU_FETCH_SUCCESS: O,
-  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: O,
-  ENTITLEMENT_CREATE: O,
-  APPLICATION_FETCH_SUCCESS: O,
+  SKU_FETCH_SUCCESS: N,
+  ENTITLEMENT_FETCH_APPLICATION_SUCCESS: N,
+  ENTITLEMENT_CREATE: N,
+  APPLICATION_FETCH_SUCCESS: N,
   DETECTED_OFF_PLATFORM_PREMIUM_PERKS_DISMISS: function(e) {
     let {
       skuId: t
     } = e;
-    if (delete v[t], N.includes(t)) return !1;
-    N.push(t), c.K.set(y, N)
+    if (delete v[t], O.includes(t)) return !1;
+    O.push(t), c.K.set(y, O)
   },
   RUNNING_GAMES_CHANGE: function() {
     let e = !1;
@@ -88,10 +88,10 @@ let C = new j(u.Z, {
             skuId: n,
             applicationId: r
           }
-          of x.Lg6) r !== t || N.includes(n) || null == E[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || d.yD(r), E[n] = {
+          of x.Lg6) r !== t || O.includes(n) || null == E[n] && (_.Z.applicationIdsFetched.has(r) || _.Z.applicationIdsFetching.has(r) || null != _.Z.getForSku(n) || d.yD(r), E[n] = {
           skuId: n,
           applicationId: r
         }, e = !0);
-    return e && O(), e
+    return e && N(), e
   }
 })

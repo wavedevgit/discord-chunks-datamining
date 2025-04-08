@@ -1,6 +1,6 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  Z: () => q
+  Z: () => x
 }), r(388685);
 var n = r(200651),
   A = r(192379),
@@ -47,7 +47,7 @@ function C(e) {
   })
 }
 
-function q(e) {
+function x(e) {
   var t;
   let {
     "aria-labelledby": r,
@@ -56,8 +56,8 @@ function q(e) {
     autoFocus: d,
     maxLength: g,
     onChange: h,
-    onSubmit: q,
-    showCharacterCount: x = !1,
+    onSubmit: x,
+    showCharacterCount: q = !1,
     placeholder: j,
     required: N,
     value: O,
@@ -106,11 +106,11 @@ function q(e) {
       I.current = !0
     },
     focused: I.current,
-    onSubmit: null != q ? q : v,
+    onSubmit: null != x ? x : v,
     disableThemedBackground: !U,
     parentModalKey: P,
     emojiPickerCloseOnModalOuterClick: !0,
-    children: [!0 === x && (0, n.jsx)(C, {
+    children: [!0 === q && (0, n.jsx)(C, {
       hasError: null != y.error || null != g && O.length > g,
       text: O,
       maxLength: g

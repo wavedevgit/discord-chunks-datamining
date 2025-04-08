@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => k
+  Z: () => W
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -51,7 +51,7 @@ function Z(e) {
   return e
 }
 
-function W(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ function W(e, t) {
   }), e
 }
 
-function k(e) {
+function W(e) {
   let {
     commandId: t,
     editPermissions: n,
@@ -126,19 +126,19 @@ function k(e) {
     0 !== e.length && (u.Z.requestMembersById(l, e, !1), S(t => new Set([...t, ...e])))
   }, [l, p, N, S]);
   let Z = (0, c.e7)([C.Z], () => C.Z.getApplicationId()),
-    W = (0, c.e7)([_.default], () => null == Z ? void 0 : _.default.integrations.find(e => {
+    k = (0, c.e7)([_.default], () => null == Z ? void 0 : _.default.integrations.find(e => {
       var t;
       return (null == (t = e.application) ? void 0 : t.id) === Z
     })),
-    k = (0, c.e7)([f.Z], () => void 0 !== W && f.Z.canShowToggleTooltip(W.id));
+    W = (0, c.e7)([f.Z], () => void 0 !== k && f.Z.canShowToggleTooltip(k.id));
   return E.length > 0 ? E.map(e => (0, r.jsx)(A, {
     guild: h,
     commandId: t,
     onChange: t => w(e.id, e.type, t),
     onRemove: () => P(e.id, e.type),
     overwrite: e,
-    integration: W,
-    canShowMigrationTooltip: k,
+    integration: k,
+    canShowMigrationTooltip: W,
     hasAccessToMutatePermissions: g
   }, e.id)) : (0, r.jsx)("div", {
     className: T.noItemsSelected,
@@ -167,27 +167,27 @@ function A(e) {
     C = !f.canWrite || !v,
     I = x.default.getId();
   v ? f.canWrite || (f.type === m.Kw.USER ? o = f.id === I ? w.NW.string(w.t["1VF/09"]) : w.NW.string(w.t.P1GnER) : f.type === m.Kw.ROLE && (o = w.NW.string(w.t.mcAijY))) : o = null != s ? w.NW.string(w.t.tybdam) : w.NW.string(w.t.z2hjk5);
-  let k = O && null != j && f.id === a.id && void 0 !== _ && !f.permission;
+  let W = O && null != j && f.id === a.id && void 0 !== _ && !f.permission;
   i.useEffect(() => {
-    if (k) {
+    if (W) {
       var e;
-      N.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, W(Z({}, (0, p.hH)(a.id)), {
+      N.default.track(P.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, k(Z({}, (0, p.hH)(a.id)), {
         application_id: null == j || null == (e = j.application) ? void 0 : e.id,
         location: "toggle"
       }))
     }
-  }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, k]);
+  }, [a.id, null == j || null == (l = j.application) ? void 0 : l.id, W]);
   let A = (0, r.jsx)(d.ua7, {
       tooltipClassName: T.tooltip,
       text: o,
       shouldShow: C,
       position: "left",
       hideOnClick: !1,
-      children: e => (0, r.jsx)("div", W(Z({}, e), {
+      children: e => (0, r.jsx)("div", k(Z({}, e), {
         children: (0, r.jsx)(E.Z, {
           isDisabled: C,
           currentValue: f.permission,
-          onChange: k ? e => {
+          onChange: W ? e => {
             g.Z.dismissToggleTooltip(a.id, j), c(e)
           } : c
         })
@@ -211,7 +211,7 @@ function A(e) {
       align: "center",
       animation: d.yRy.Animation.TRANSLATE,
       onRequestClose: () => g.Z.dismissToggleTooltip(a.id, j),
-      shouldShow: k,
+      shouldShow: W,
       closeOnScroll: !0,
       children: () => A
     });

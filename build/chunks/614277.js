@@ -82,7 +82,9 @@ function g(e) {
             id: e.key,
             children: (0, r.jsx)("form", {
               className: a()(_.sliderBody, C),
-              ref: e => v(e),
+              ref: e => {
+                v(e)
+              },
               onSubmit: e => e.preventDefault()
             })
           }, e.key))
@@ -90,7 +92,9 @@ function g(e) {
       }), (0, r.jsx)("div", {
         ref: e => O(e)
       }), (0, r.jsx)("div", {
-        ref: e => I(e)
+        ref: e => {
+          I(e)
+        }
       })]
     })]
   })

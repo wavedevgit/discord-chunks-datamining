@@ -119,7 +119,7 @@ function K(e) {
     disabledSounds: t,
     disableAllSounds: n,
     notifyMessagesInSelectedChannel: s
-  } = e, l = i.useRef(), o = (0, E.p)(), c = i.useCallback((e, t) => {
+  } = e, l = i.useRef(null), o = (0, E.p)(), c = i.useCallback((e, t) => {
     t.stopPropagation(), t.preventDefault(), null != l.current && l.current.stop(), l.current = (0, y.GN)(e)
   }, []), d = i.useCallback((e, n) => {
     let r = t.filter(t => t !== e);

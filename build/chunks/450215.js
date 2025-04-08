@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -25,13 +25,13 @@ var r = n(200651),
   v = n(388032),
   y = n(301849);
 
-function C(e) {
+function O(e) {
   var t, n;
   let {
     guildId: s,
     initialEditStateId: l,
-    allSubscriptionListings: C,
-    priceTiers: O,
+    allSubscriptionListings: O,
+    priceTiers: C,
     onDeleteEditState: I,
     groupListingId: E,
     onBeforeDispatchNewListing: S,
@@ -126,8 +126,8 @@ function C(e) {
       guildId: s,
       groupListingId: E,
       children: (0, r.jsx)(N.Z, {
-        allSubscriptionListings: C,
-        priceTiers: O,
+        allSubscriptionListings: O,
+        priceTiers: C,
         loading: et,
         error: null != X ? X : $,
         handlePublishTier: () => {

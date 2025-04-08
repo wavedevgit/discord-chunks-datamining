@@ -74,7 +74,7 @@ function b(e) {
     }), e
   }, {}), [x, m]), y = i.useCallback(e => {
     j(e, m)
-  }, [j, m]), C = i.useCallback(e => {
+  }, [j, m]), O = i.useCallback(e => {
     N(e)
   }, [N]);
   return (0, r.jsxs)("div", {
@@ -83,7 +83,7 @@ function b(e) {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
       initialValue: _,
       onChangeTags: y,
-      onChangeNewTagValue: C,
+      onChangeNewTagValue: O,
       tagErrors: v,
       maxTags: u.VW
     }), (0, r.jsx)(f, {

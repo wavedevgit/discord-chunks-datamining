@@ -25,8 +25,8 @@ var r = n(200651),
   _ = n(570961),
   v = n(208665),
   y = n(868814),
-  C = n(974513),
-  O = n(2348),
+  O = n(974513),
+  C = n(2348),
   I = n(353890),
   E = n(716130),
   S = n(388032),
@@ -39,7 +39,7 @@ function P(e) {
   i.useEffect(() => {
     h || l || (0, g.S)(t.id)
   }, [t.id, h, l]);
-  let C = e => {
+  let O = e => {
     (0, a.ZDy)(async () => {
       let {
         default: i
@@ -147,7 +147,7 @@ function P(e) {
             color: a.zxk.Colors.PRIMARY,
             className: T.lockedPill,
             innerClassName: T.lockedPillInner,
-            onClick: () => C(e.id),
+            onClick: () => O(e.id),
             children: [(0, r.jsx)(a.mBM, {
               size: "xs",
               color: "currentColor"
@@ -205,13 +205,13 @@ function w(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: S.NW.string(S.t.Kq7FAQ)
-      }), (0, r.jsx)(C.Wu, {
+      }), (0, r.jsx)(O.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
       }), g ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
-        }), (0, r.jsx)(O.Z, {
+        }), (0, r.jsx)(C.Z, {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,

@@ -83,13 +83,31 @@ function j(e) {
       orientation: "horizontal",
       isDisabled: s
     }),
-    y = (0, o.xUy)({
+    {
+      ref: y
+    } = v,
+    O = function(e, t) {
+      if (null == e) return {};
+      var n, r, i = function(e, t) {
+        if (null == e) return {};
+        var n, r, i = {},
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+        return i
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+      }
+      return i
+    }(v, ["ref"]),
+    C = (0, o.xUy)({
       isSelected: j,
       label: g.NW.formatToPlainString(g.t.ZC69mJ, {
         colorHex: (0, l.Rf)(m.p6O)
       })
     }),
-    C = (0, o.xUy)({
+    I = (0, o.xUy)({
       isSelected: !j,
       label: g.NW.formatToPlainString(g.t["3kiLZW"], {
         colorHex: (0, l.Rf)(t)
@@ -97,8 +115,9 @@ function j(e) {
     });
   return (0, r.jsxs)("div", f(h({
     className: p.buttonsContainer,
-    "aria-label": g.NW.string(g.t.FJjrIy)
-  }, v), {
+    "aria-label": g.NW.string(g.t.FJjrIy),
+    ref: y
+  }, O), {
     children: [(0, r.jsx)("div", {
       className: a()(p.colorSwatch, {
         [p.disabled]: s
@@ -108,7 +127,7 @@ function j(e) {
           n(m.p6O)
         },
         "aria-disabled": s
-      }, y), {
+      }, C), {
         children: [(0, r.jsx)("div", {
           className: p.swatch,
           style: {
@@ -130,7 +149,7 @@ function j(e) {
       children: [(0, r.jsxs)(o.P3F, f(h({
         onClick: s ? void 0 : u,
         "aria-disabled": s
-      }, C), {
+      }, I), {
         children: [(0, r.jsx)("div", {
           className: a()(p.customSwatch, {
             [p.defaultSwatch]: N === m.p6O

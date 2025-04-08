@@ -58,8 +58,8 @@ let P = i.memo(function(e) {
     integrations: w,
     editedIntegration: T,
     webhooks: Z,
-    editedWebhook: W,
-    isFetchingWebhooks: k,
+    editedWebhook: k,
+    isFetchingWebhooks: W,
     refToScroller: A,
     errors: D,
     hasChanges: R
@@ -100,7 +100,7 @@ let P = i.memo(function(e) {
     }
   }, [w, B, U, Z]);
   i.useEffect(() => {
-    if (!k) switch (t) {
+    if (!W) switch (t) {
       case C.b4C.TWITCH:
         null == X[C.ABu.TWITCH] && c.Z.setSection(C.b4C.OVERVIEW);
         break;
@@ -110,7 +110,7 @@ let P = i.memo(function(e) {
       case C.b4C.APPLICATION:
         null != H && (H in Y || H in q) || c.Z.setSection(C.b4C.OVERVIEW)
     }
-  }, [q, Y, X, H, t, k]), i.useEffect(() => {
+  }, [q, Y, X, H, t, W]), i.useEffect(() => {
     (null == l ? void 0 : l.id) != null && b.Z.getEntitlementsForGuildFetchState(l.id) === b.M.NOT_FETCHED && m.i1(l.id)
   }, [null == l ? void 0 : l.id]), i.useEffect(() => () => {
     c.Z.setSection(C.b4C.OVERVIEW, null)
@@ -158,7 +158,7 @@ let P = i.memo(function(e) {
       null != et && (Q = (0, r.jsx)(j.Z, {
         guild: l,
         applicationIntegration: et,
-        editedWebhook: W,
+        editedWebhook: k,
         selectableWebhookChannels: B,
         errors: D,
         canNavigate: V
@@ -167,7 +167,7 @@ let P = i.memo(function(e) {
     case C.b4C.CHANNEL_FOLLOWING:
       Q = (0, r.jsx)(N.Z, {
         followedChannelWebhooks: J,
-        editedWebhook: W,
+        editedWebhook: k,
         selectableWebhookChannels: B,
         canNavigate: V,
         errors: D
@@ -178,7 +178,7 @@ let P = i.memo(function(e) {
         guild: l,
         channel: P,
         customWebhooks: $,
-        editedWebhook: W,
+        editedWebhook: k,
         selectableWebhookChannels: function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -215,7 +215,7 @@ let P = i.memo(function(e) {
         builtInIntegrations: X,
         customWebhooks: $,
         followedChannelWebhooks: J,
-        isLoadingWebhooks: k || null == l,
+        isLoadingWebhooks: W || null == l,
         canCreateWebhook: null != z,
         onManageCustomWebhooks: () => {
           c.Z.setSection(C.b4C.WEBHOOKS)

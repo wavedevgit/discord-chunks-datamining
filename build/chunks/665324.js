@@ -24,8 +24,8 @@ var r = n(200651),
   _ = n(286654),
   v = n(171368),
   y = n(430824),
-  C = n(594174),
-  O = n(15385),
+  O = n(594174),
+  C = n(15385),
   I = n(768581),
   E = n(267642),
   S = n(358085),
@@ -121,7 +121,7 @@ function U(e) {
           })
         },
         tabIndex: -1,
-        children: (0, r.jsx)(O.Z, k({}, e))
+        children: (0, r.jsx)(C.Z, k({}, e))
       })
     }), Z.NW.format(Z.t.HHCdvb, {
       slots: n,
@@ -292,9 +292,9 @@ function H(e) {
     userId: x,
     emojiId: j,
     emojiName: N
-  } = t, y = (0, c.e7)([C.default], () => null != h ? h : C.default.getUser(x), [x, h]), {
-    canManageGuildExpression: O
-  } = (0, f.XJ)(o), E = i.useMemo(() => O(t), [t, O]), S = null != j || null != N, [P, w] = i.useState(!1), D = (0, _.z)(t, o.id);
+  } = t, y = (0, c.e7)([O.default], () => null != h ? h : O.default.getUser(x), [x, h]), {
+    canManageGuildExpression: C
+  } = (0, f.XJ)(o), E = i.useMemo(() => C(t), [t, C]), S = null != j || null != N, [P, w] = i.useState(!1), D = (0, _.z)(t, o.id);
   async function L() {
     if (!P) {
       w(!0);

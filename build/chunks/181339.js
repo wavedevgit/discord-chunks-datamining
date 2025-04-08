@@ -25,8 +25,8 @@ var r = n(200651),
   _ = n(434404),
   v = n(449226),
   y = n(981631),
-  C = n(388032),
-  O = n(296205);
+  O = n(388032),
+  C = n(296205);
 
 function I(e) {
   let {
@@ -51,25 +51,25 @@ function I(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(C.NW.string(C.t["46Rs3t"]), c.ToastType.FAILURE)), j(!b)
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE)), j(!b)
     }
   };
   return (0, r.jsxs)("div", {
-    className: a()(O.itemWrapper, l),
+    className: a()(C.itemWrapper, l),
     children: [(0, r.jsxs)("div", {
-      className: O.itemContent,
+      className: C.itemContent,
       children: [(0, r.jsx)(c.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: C.NW.string(C.t.Qp98s7)
+        children: O.NW.string(O.t.Qp98s7)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: C.NW.string(C.t.Mg843t)
+        children: O.NW.string(O.t.Mg843t)
       }), n || null == s ? null : (0, r.jsxs)(c.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        className: O.valuePill,
+        className: C.valuePill,
         children: [(0, r.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor"
@@ -126,17 +126,17 @@ function E(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(C.NW.string(C.t["46Rs3t"]), c.ToastType.FAILURE)), s(g)
+      (0, c.showToast)((0, c.createToast)(O.NW.string(O.t["46Rs3t"]), c.ToastType.FAILURE)), s(g)
     }
   };
   return (0, r.jsx)("div", {
-    className: a()(O.itemBodyContainer, m),
+    className: a()(C.itemBodyContainer, m),
     children: (0, r.jsxs)("div", {
-      className: O.itemBodyInner,
+      className: C.itemBodyInner,
       children: [(0, r.jsx)(c.vwX, {
-        children: C.NW.string(C.t.sMkYEx)
+        children: O.NW.string(O.t.sMkYEx)
       }), (0, r.jsx)(c.VcW, {
-        wrapperClassName: O.bringToFront,
+        wrapperClassName: C.bringToFront,
         options: h,
         onChange: f,
         value: i,
@@ -144,7 +144,7 @@ function E(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "interactive-normal",
-        children: C.NW.string(C.t["1QxN9P"])
+        children: O.NW.string(O.t["1QxN9P"])
       })]
     })
   })
@@ -181,12 +181,12 @@ function T(e) {
       isExpanded: !0,
       guild: s,
       selectedChannelId: l,
-      className: O.noPadding
+      className: C.noPadding
     }), (0, r.jsx)(E, {
       guild: s,
       selectedChannelId: l,
       setSelectedChannelId: o,
-      className: O.noPadding
+      className: C.noPadding
     })]
   })
 }

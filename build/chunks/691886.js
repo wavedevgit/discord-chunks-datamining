@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(539854), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -89,7 +89,7 @@ function y(e) {
   }) : (0, r.jsx)(_, {})
 }
 
-function C(e) {
+function O(e) {
   let {
     guildId: t,
     value: s,
@@ -97,7 +97,7 @@ function C(e) {
     omitChannelIds: d,
     "aria-labelledby": x,
     onChange: N
-  } = e, _ = b.NW.string(b.t.d7YJMD), v = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), C = (0, h.m7)(null != s ? s : f.lds), O = i.useMemo(() => {
+  } = e, _ = b.NW.string(b.t.d7YJMD), v = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), O = (0, h.m7)(null != s ? s : f.lds), C = i.useMemo(() => {
     let e = [{
         value: null,
         label: _
@@ -111,14 +111,14 @@ function C(e) {
         value: r.id,
         label: (0, c.F6)(r, p.default, g.Z)
       })));
-    return null == s || t || null == C || e.push({
+    return null == s || t || null == O || e.push({
       value: s,
-      label: C.name
+      label: O.name
     }), e
-  }, [_, s, C, v, d, a]);
+  }, [_, s, O, v, d, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: b.NW.string(b.t.r2pts7),
-    options: O,
+    options: C,
     select: function(e) {
       null == e ? (0, o.ZDy)(async () => {
         let {

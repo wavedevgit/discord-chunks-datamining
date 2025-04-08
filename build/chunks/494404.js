@@ -24,8 +24,8 @@ var r = n(200651),
   y = n(592125),
   v = n(375954),
   E = n(496675),
-  N = n(933429),
-  O = n(451478),
+  O = n(933429),
+  N = n(451478),
   j = n(626135),
   C = n(585483),
   S = n(981631),
@@ -167,7 +167,7 @@ function D(e) {
     scrollerClassName: v,
     className: E,
     listName: w
-  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, u.e7)([N.ZP], () => N.ZP.hasNotice()), D = (0, u.e7)([O.Z], () => O.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
+  } = e, Z = i.useRef(null), k = (0, f.Z)(w, Z), R = (0, u.e7)([O.ZP], () => O.ZP.hasNotice()), D = (0, u.e7)([N.Z], () => N.Z.windowSize()), L = (0, g.Q3)("ItemsPopout");
   i.useEffect(() => {
     j.default.track(S.rMx.OPEN_POPOUT, {
       type: t
@@ -321,8 +321,8 @@ function L(e) {
     renderEmptyState: g,
     renderMessage: x,
     getProTip: E,
-    scrollerClassName: N,
-    className: O,
+    scrollerClassName: O,
+    className: N,
     onCloseMessage: j,
     listName: C
   } = e, P = (0, u.e7)([v.Z], () => {
@@ -365,8 +365,8 @@ function L(e) {
     channel: a
   })), [l, a]);
   return (0, r.jsx)(D, {
-    className: O,
-    scrollerClassName: N,
+    className: N,
+    scrollerClassName: O,
     items: w,
     loading: s,
     analyticsName: t,

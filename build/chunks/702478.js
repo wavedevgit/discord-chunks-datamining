@@ -24,9 +24,9 @@ var r = n(200651),
   _ = n(981631),
   v = n(190378),
   y = n(388032),
-  C = n(24304);
+  O = n(24304);
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -60,7 +60,7 @@ let I = function(e, t, n) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return t || e === _.evJ.NOT_ENOUGH_GUILD_MEMBERS ? (0, r.jsx)(c.kzN, {
       icon: c.d3s,
-      className: C.notEnoughMembersError,
+      className: O.notEnoughMembersError,
       backgroundColor: c.mTc.BACKGROUND_ACCENT,
       children: y.NW.string(y.t["FsgE/P"])
     }) : null == e ? null : (0, r.jsx)(c.kzN, {
@@ -71,7 +71,7 @@ let I = function(e, t, n) {
   S = () => {
     let [e, t] = i.useState(!1), n = (0, l.e7)([N.Z], () => N.Z.getGuildId());
     return (0, r.jsx)(c.zxk, {
-      className: C.developerPortalCta,
+      className: O.developerPortalCta,
       onClick: () => {
         t(!0), (function(e) {
           b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
@@ -120,18 +120,18 @@ let I = function(e, t, n) {
       (0, m.Kw)(v.v.GUILD_ANALYTICS_GUILD_SETTINGS_MENU)
     }, []);
     let P = null != a ? (0, r.jsx)("div", {
-      className: C.__invalid_guildAnalyticsOverviewWrapper,
+      className: O.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, r.jsxs)("div", {
-        className: C.overviewData,
-        children: [(0, r.jsx)(u.Z, O({
+        className: O.overviewData,
+        children: [(0, r.jsx)(u.Z, C({
           title: y.NW.string(y.t.i0Nora),
           tooltipText: y.NW.string(y.t.KiRbLC)
-        }, I(a.visitors, a.visitorsChange, s))), (0, r.jsx)(u.Z, O({
+        }, I(a.visitors, a.visitorsChange, s))), (0, r.jsx)(u.Z, C({
           title: y.NW.string(y.t.DDAHdX),
           tooltipText: y.NW.string(y.t.HxWUkZ)
-        }, I(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(u.Z, O({
+        }, I(a.communicators, a.communicatorsChange, s))), (0, r.jsx)(u.Z, C({
           title: y.NW.string(y.t.hYeOqK)
-        }, I(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(u.Z, O({
+        }, I(a.newMembers, a.newMembersChange, s))), (0, r.jsx)(u.Z, C({
           title: y.NW.string(y.t.jj7OPz),
           tooltipText: y.NW.string(y.t.MQCsl5)
         }, I(a.pctRetained, a.pctRetainedChange, s, !0)))]
@@ -144,16 +144,16 @@ let I = function(e, t, n) {
         type: c.geA.DESCRIPTION,
         children: y.NW.format(y.t.NIZ60d, {})
       }), E(o, T), (0, r.jsxs)("div", {
-        className: C.developerPortalCtaWrapper,
+        className: O.developerPortalCtaWrapper,
         children: [(0, r.jsx)("div", {
-          className: C.placeholderImage
+          className: O.placeholderImage
         }), (0, r.jsx)(c.Text, {
-          className: C.developerPortalCtaText,
+          className: O.developerPortalCtaText,
           variant: "text-sm/normal",
           children: y.NW.string(y.t.A5vsws)
         }), (0, r.jsx)(S, {})]
       }), b ? (0, r.jsx)("div", {
-        className: C.streamerMode,
+        className: O.streamerMode,
         children: (0, r.jsx)(d.Z, {})
       }) : P]
     })

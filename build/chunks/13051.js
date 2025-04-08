@@ -56,14 +56,14 @@ function w(e) {
       isExpanded: w,
       onToggleExpand: T,
       onDisable: Z,
-      onEnable: W
+      onEnable: k
     } = e,
-    k = (0, d.e7)([x.Z], () => x.Z.getRoles(n.id)),
+    W = (0, d.e7)([x.Z], () => x.Z.getRoles(n.id)),
     [A, D] = i.useState(!1),
     R = (0, d.e7)([j.Z], () => j.Z.hidePersonalInformation),
     L = i.useCallback(() => {
-      D(!0), W(l)
-    }, [l, W]),
+      D(!0), k(l)
+    }, [l, k]),
     M = i.useCallback(() => {
       l.syncing || (0, u.h7j)(e => {
         var t, n;
@@ -127,7 +127,7 @@ function w(e) {
       roleLink: K,
       syncDescriptionText: q
     } = i.useMemo(() => {
-      let e, t, n = null != l.role_id ? k[l.role_id] : null;
+      let e, t, n = null != l.role_id ? W[l.role_id] : null;
       e = null != n ? (0, r.jsx)(u.eee, {
         onClick: U,
         children: n.name
@@ -142,12 +142,12 @@ function w(e) {
           datetime: s()(l.synced_at).calendar()
         })
       }
-    }, [k, U, l.revoked, l.role_id, l.synced_at, l.type, l.user]),
+    }, [W, U, l.revoked, l.role_id, l.synced_at, l.type, l.user]),
     Y = i.useMemo(() => {
       let e = g.ZP.getGuildEmoji(n.id),
-        t = Object.values(k).filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
+        t = Object.values(W).filter(e => null != e.tags && e.tags.integration_id === l.id).map(e => e.id);
       return l.enable_emoticons ? e.sort((e, t) => e.name.localeCompare(t.name)).filter(e => null != l.role_id && (null == e ? void 0 : e.roles.some(e => t.includes(e)))) : []
-    }, [n.id, k, l.enable_emoticons, l.id, l.role_id]);
+    }, [n.id, W, l.enable_emoticons, l.id, l.role_id]);
   if (i.useEffect(() => {
       (null == a ? void 0 : a.id) === l.id && (null == a ? void 0 : a.enabled) === !0 && D(!1)
     }, [a, l.id]), l.enabled && null != l.user) t = [{

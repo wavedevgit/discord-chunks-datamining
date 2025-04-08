@@ -26,8 +26,8 @@ function b(e) {
   } = e, [x, y, v] = (0, l.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), E = (0, l.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
-  }), [N, O] = i.useState(!1), j = i.useCallback(e => {
-    e && O(!0)
+  }), [O, N] = i.useState(!1), j = i.useCallback(e => {
+    e && N(!0)
   }, []), C = (0, o.O)(j), S = i.useCallback(() => {
     p.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
@@ -40,15 +40,15 @@ function b(e) {
   return (i.useEffect(() => {
     (0, m.gZ)(t)
   }, [t]), i.useEffect(() => {
-    N && v === f.M.FETCHED && S()
-  }, [N, v, S]), i.useEffect(() => {
-    N && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
+    O && v === f.M.FETCHED && S()
+  }, [O, v, S]), i.useEffect(() => {
+    O && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
       device_platform: a.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: E,
       channel_id: n.channel_id
     })
-  }, [N, E, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
+  }, [O, E, y, n.author.id, n.channel_id]), y) ? (0, r.jsxs)(c.Z, {
     containerRef: C,
     children: [(0, r.jsx)(c.Z.Header, {
       text: g.NW.string(g.t.j4KtLS)

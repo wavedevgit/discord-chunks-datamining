@@ -277,9 +277,15 @@ function A(e) {
           answerTextInputRefs: k,
           error: null == V ? void 0 : V["answer-".concat(e.localCreationAnswerId)],
           canRemoveAnswer: q,
-          ref: e => C.current[n] = e,
-          inputRef: e => k.current[n] = e,
-          deleteButtonRef: e => S.current[n] = e
+          ref: e => {
+            C.current[n] = e
+          },
+          inputRef: e => {
+            k.current[n] = e
+          },
+          deleteButtonRef: e => {
+            S.current[n] = e
+          }
         }, e.localCreationAnswerId)), K && (0, r.jsxs)(c.P3F, {
           className: l()(el ? _.addAnswerButtonDefault : _.addAnswerButtonImageOnly, {
             [_.canRemoveMoreAnswers]: q

@@ -10,8 +10,8 @@ n.d(t, {
   bj: () => P,
   el: () => b,
   hS: () => j,
-  lq: () => C,
-  mM: () => O,
+  lq: () => O,
+  mM: () => C,
   oo: () => I,
   q6: () => T,
   r2: () => _,
@@ -118,13 +118,13 @@ function y(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   a.Z.dispatch({
     type: "GUILD_SETTINGS_ONBOARDING_REORDER_RESOURCE_CHANNEL",
     resourceChannels: e
   })
 }
-async function O(e, t, n) {
+async function C(e, t, n) {
   try {
     let r = await s.tn.put({
         url: g.ANM.RESOURCE_CHANNEL(e, t),

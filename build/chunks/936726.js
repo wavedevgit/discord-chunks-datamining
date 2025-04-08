@@ -80,9 +80,9 @@ function P(e) {
     isNew: O,
     errors: P,
     onToggleExpand: w
-  } = e, [T, Z] = i.useState(!1), [W] = i.useState(new s.V7);
-  i.useEffect(() => () => W.stop(), [W]);
-  let k = i.useMemo(() => E(n, n.avatar), [n]),
+  } = e, [T, Z] = i.useState(!1), [k] = i.useState(new s.V7);
+  i.useEffect(() => () => k.stop(), [k]);
+  let W = i.useMemo(() => E(n, n.avatar), [n]),
     A = i.useCallback(() => {
       let e = "".concat((0, a.K0)(!1)).concat(v.ANM.WEBHOOK_INTEGRATION(n.id, n.token));
       (0, x.JG)(e)
@@ -224,7 +224,7 @@ function P(e) {
               return (0, r.jsx)(c.zxk, I(C({}, s), {
                 "aria-label": "",
                 onClick: () => {
-                  null == t || t(), Z(!0), c.uvj.announce(y.NW.string(y.t.wwdb3t)), W.start(1e3, () => Z(!1)), A()
+                  null == t || t(), Z(!0), c.uvj.announce(y.NW.string(y.t.wwdb3t)), k.start(1e3, () => Z(!1)), A()
                 },
                 size: c.zxk.Sizes.SMALL,
                 color: c.zxk.Colors.PRIMARY,
@@ -258,7 +258,7 @@ function P(e) {
           align: m.Z.Align.CENTER,
           children: [(0, r.jsx)(N.Z, {
             name: n.name,
-            imageSrc: k,
+            imageSrc: W,
             details: R
           }), (0, r.jsx)(f.Z, {
             className: _.expandIcon,

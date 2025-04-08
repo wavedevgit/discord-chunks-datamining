@@ -99,7 +99,7 @@ function N(e) {
       registerAnimatedElementRef: D
     } = e,
     L = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef"]);
-  let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(), {
+  let [x, M] = i.useState(!1), [k, j] = i.useState(void 0), U = i.useRef(void 0), {
     triggerAnimation: G,
     untriggerAnimation: B
   } = i.useContext(u.Rm), V = _.Yk.useSetting(), F = T(), Z = null == w ? V : w, H = E.kV[S], W = i.useRef(null), Y = i.useMemo(() => {

@@ -1,6 +1,6 @@
 /** Chunk was on 37658 **/
 n.d(t, {
-  W: () => N,
+  W: () => O,
   u: () => E
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(200651),
@@ -50,12 +50,12 @@ function v(e) {
 }
 var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
-function N(e) {
+function O(e) {
   var t, n, r, l;
   let {
     title: E,
-    header: N,
-    info: O,
+    header: O,
+    info: N,
     staticBannerSrc: j,
     videoBannerSrc: C,
     bannerAspectRatio: S = 0,
@@ -127,12 +127,12 @@ function N(e) {
       style: {
         background: k
       },
-      children: [null != N && (0, i.jsxs)("div", {
+      children: [null != O && (0, i.jsxs)("div", {
         className: x.header,
         children: [(0, i.jsx)(c.Text, {
           variant: "eyebrow",
           color: "none",
-          children: N
+          children: O
         }), M]
       }), (0, i.jsxs)("div", {
         className: x.contentWrapper,
@@ -148,8 +148,8 @@ function N(e) {
             color: "none",
             lineClamp: 1,
             children: E
-          }), O]
-        }), null == N && M]
+          }), N]
+        }), null == O && M]
       }), P.length > 0 && (0, i.jsx)("div", {
         className: x.actionWrapper,
         children: P.map((e, t) => {

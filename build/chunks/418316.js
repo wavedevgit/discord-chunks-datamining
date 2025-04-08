@@ -31,7 +31,7 @@ function f(e) {
 }
 
 function h(e) {
-  var t, n, r, h, g, _, b, x, y, v, E, N, O, j, C;
+  var t, n, r, h, g, _, b, x, y, v, E, O, N, j, C;
   let {
     item: S,
     renderApplication: I
@@ -50,12 +50,12 @@ function h(e) {
       let R = null != (E = null == (v = S.local_id) ? void 0 : v.split("_").pop()) ? E : "unknown";
       return "Update to build ".concat(R, " available!");
     case d.DY.FRIEND_SUGGESTION_CREATED:
-      return o.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null != (N = S.body) ? N : "";
+      return o.Z.getRelationshipType(T), p.OGo.PENDING_OUTGOING, null != (O = S.body) ? O : "";
     case d.DY.GUILD_SCHEDULED_EVENT_STARTED:
       let D = S.guild_scheduled_event_id,
         L = null != D ? a.ZP.getGuildScheduledEvent(D) : null,
         M = null == L ? void 0 : L.name,
-        W = null == (O = l.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : O.name,
+        W = null == (N = l.Z.getGuild(null == L ? void 0 : L.guild_id)) ? void 0 : N.name,
         U = (0, a.Z2)(null != L ? L : void 0);
       return (0, c.Ew)(W) || (0, c.Ew)(M) || !U ? null != (j = S.body) ? j : "" : m.NW.format(m.t.AyvfXV, {
         event_name: M,

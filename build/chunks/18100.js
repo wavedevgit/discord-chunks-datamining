@@ -50,8 +50,8 @@ function f(e) {
     description: _,
     playstyle: v,
     wildcardDescriptors: y,
-    brandPrimaryColor: C
-  } = s, O = (0, o.dQu)(o.TVs.colors.TEXT_BRAND), I = Array.from(N), E = i.useMemo(() => null != u ? new Set(u) : new Set, [u]);
+    brandPrimaryColor: O
+  } = s, C = (0, o.dQu)(o.TVs.colors.TEXT_BRAND), I = Array.from(N), E = i.useMemo(() => null != u ? new Set(u) : new Set, [u]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: a()(p.description, f ? p.descriptionBorderMask : void 0),
@@ -79,7 +79,7 @@ function f(e) {
           children: null != (t = (0, m.mv)(v)) ? t : g.NW.string(g.t.JijC4O)
         }), null != j && (0, r.jsx)(d.c, {
           wildcardDescriptors: y,
-          primaryColor: null != C ? C : O.hex()
+          primaryColor: null != O ? O : C.hex()
         })]
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",

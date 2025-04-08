@@ -26,13 +26,13 @@ let m = i.memo(function(e) {
     isLoading: b
   } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, v = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
     h(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, h]), C = i.useCallback(e => {
+  }, [t.guildId, t.triggerType, h]), O = i.useCallback(e => {
     b || f(e, !0)
   }, [b, f]);
   i.useEffect(() => {
     m && f(t, !0)
   }, [m, t, f]);
-  let O = i.useCallback(() => {
+  let C = i.useCallback(() => {
     j ? g || f(null) : g ? v(() => {
       f(t)
     }) : f(t)
@@ -44,16 +44,16 @@ let m = i.memo(function(e) {
       triggerType: t.triggerType,
       isEditMode: j,
       isDefaultRule: N,
-      onChangeRule: C,
+      onChangeRule: O,
       onSetupRule: y
     }),
     isStuck: j && g,
     isExpanded: j,
-    onExpand: O,
+    onExpand: C,
     children: j && (0, r.jsx)(c.Z, {
       rule: _,
       isLoading: b,
-      onChangeRule: C
+      onChangeRule: O
     })
   })
 })

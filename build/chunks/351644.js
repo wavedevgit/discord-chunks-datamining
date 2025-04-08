@@ -32,8 +32,8 @@ var r = n(200651),
   w = n(585835),
   T = n(997787),
   Z = n(981631),
-  W = n(49898),
-  k = n(388032),
+  k = n(49898),
+  W = n(388032),
   A = n(709677),
   D = n(509399),
   R = n(790904),
@@ -57,8 +57,8 @@ function B(e) {
       query: t,
       onChange: l,
       onClear: () => n(""),
-      placeholder: k.NW.string(k.t["5prvKS"]),
-      "aria-label": k.NW.string(k.t["5prvKS"])
+      placeholder: W.NW.string(W.t["5prvKS"]),
+      "aria-label": W.NW.string(W.t["5prvKS"])
     })
   })
 }
@@ -146,20 +146,20 @@ function U(e) {
         o = [];
       return null != l.user ? o.push({
         icon: u.T39,
-        text: k.NW.formatToPlainString(k.t.Nu9sam, {
+        text: W.NW.formatToPlainString(W.t.Nu9sam, {
           timestamp: S.default.extractTimestamp(l.id),
           user: E.ZP.getUserTag(l.user)
         })
       }) : o.push({
         icon: u.T39,
-        text: k.NW.formatToPlainString(k.t.gcdJ8P, {
+        text: W.NW.formatToPlainString(W.t.gcdJ8P, {
           timestamp: S.default.extractTimestamp(l.id)
         })
       }), (0, r.jsx)(w.Z, {
         name: i.name,
         imageSrc: null != (t = i.getIconURL(48)) ? t : C.pK["0"],
         integration: e,
-        buttonText: k.NW.string(k.t["Z/qRnJ"]),
+        buttonText: W.NW.string(W.t["Z/qRnJ"]),
         hasNextSection: !0,
         onButtonClick: () => {
           J(i.id), _.default.track(Z.rMx.APP_MANAGE_CTA_CLICKED, {
@@ -193,7 +193,7 @@ function U(e) {
           children: (0, r.jsx)(u.Text, {
             color: "text-muted",
             variant: "text-sm/normal",
-            children: k.NW.string(k.t.EVWFNj)
+            children: W.NW.string(W.t.EVWFNj)
           })
         })]
       }),
@@ -209,14 +209,14 @@ function U(e) {
           }), (0, r.jsx)(u.X6q, {
             color: "header-secondary",
             variant: "heading-xl/bold",
-            children: k.NW.string(k.t.nQQeFB)
+            children: W.NW.string(W.t.nQQeFB)
           }), (0, r.jsx)(u.Text, {
             color: "header-secondary",
             variant: "text-sm/normal",
-            children: k.NW.format(k.t.snvKU1, {
+            children: W.NW.format(W.t.snvKU1, {
               handleGoToAppDirectory: () => {
                 (0, x.transitionToGlobalDiscovery)({
-                  tab: W.GlobalDiscoveryTab.APPS,
+                  tab: k.GlobalDiscoveryTab.APPS,
                   newSessionState: {
                     entrypoint: {
                       name: j.xF.GUILD_INTEGRATION_SETTINGS
@@ -232,14 +232,14 @@ function U(e) {
     return t > 0 ? l : o
   }(ee, ef, null == U ? void 0 : U.id), eI = null);
   let eS = I.Z.getArticleURL(Z.BhN.INTEGRATIONS),
-    eE = null != z ? k.t.YV0vh4 : k.t.FnZEJi,
+    eE = null != z ? W.t.YV0vh4 : W.t.FnZEJi,
     eP = [];
   if (el) {
     let e, t, i, o, a;
     eP.push((n = F.length, n > 0 ? t = (0, r.jsx)(u.LJT, {
       size: "xs"
-    }) : e = k.NW.string(k.t.lOQqJC), (0, r.jsx)(w.Z, {
-      name: k.NW.string(k.t.xOg4SE),
+    }) : e = W.NW.string(W.t.lOQqJC), (0, r.jsx)(w.Z, {
+      name: W.NW.string(W.t.xOg4SE),
       icon: u.tYf,
       buttonText: e,
       buttonDisabled: !q,
@@ -247,28 +247,28 @@ function U(e) {
       onButtonClick: X,
       hasNextSection: n > 0,
       details: [{
-        text: k.NW.formatToPlainString(k.t["6HqDfX"], {
+        text: W.NW.formatToPlainString(W.t["6HqDfX"], {
           count: n
         })
       }]
     }, "webhooks"))), (null == z ? void 0 : z.type) === Z.d4z.GUILD_VOICE || (null == z ? void 0 : z.type) != null && Z.TPd.GUILD_THREADS_ONLY.has(z.type) || eP.push((l = V.length, l > 0 ? (a = (0, r.jsx)(u.LJT, {
       size: "xs"
-    }), o = $) : (i = k.NW.string(k.t["ZwSt+f"]), o = () => open(I.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, r.jsx)(w.Z, {
-      name: k.NW.string(k.t.OrV60t),
+    }), o = $) : (i = W.NW.string(W.t["ZwSt+f"]), o = () => open(I.Z.getArticleURL(Z.BhN.CHANNEL_FOLLOWING))), (0, r.jsx)(w.Z, {
+      name: W.NW.string(W.t.OrV60t),
       icon: u.AsW,
       buttonText: i,
       onButtonClick: o,
       trailing: a,
       hasNextSection: l > 0,
       details: [{
-        text: k.NW.formatToPlainString(k.t.JUNGIS, {
+        text: W.NW.formatToPlainString(W.t.JUNGIS, {
           count: l
         })
       }]
     }, "channels-followed")))
   }
   null == z && ec.length > 0 && eP.push((a = ec.length, (0, r.jsx)(w.Z, {
-    name: k.NW.string(k.t.tqtDXF),
+    name: W.NW.string(W.t.tqtDXF),
     icon: u.DuK,
     trailing: (0, r.jsx)(u.LJT, {
       size: "xs"
@@ -276,7 +276,7 @@ function U(e) {
     onButtonClick: Q,
     hasNextSection: !0,
     details: [{
-      text: k.NW.formatToPlainString(k.t["puxS4+"], {
+      text: W.NW.formatToPlainString(W.t["puxS4+"], {
         count: a
       })
     }]
@@ -284,13 +284,13 @@ function U(e) {
     let i, l, o, a, s = b.Z.get(Z.ABu.TWITCH);
     return e > 0 ? (a = (0, r.jsx)(u.LJT, {
       size: "xs"
-    }), l = k.NW.formatToPlainString(k.t.FFpnT0, {
+    }), l = W.NW.formatToPlainString(W.t.FFpnT0, {
       count: t
-    }), o = () => n(Z.ABu.TWITCH)) : (i = k.NW.string(k.t.bkvGkp), l = k.NW.string(k.t.Qq3X2N), o = () => (0, f.Z)({
+    }), o = () => n(Z.ABu.TWITCH)) : (i = W.NW.string(W.t.bkvGkp), l = W.NW.string(W.t.Qq3X2N), o = () => (0, f.Z)({
       platformType: Z.ABu.TWITCH,
       location: "Integration Settings"
     })), (0, r.jsx)(w.Z, {
-      name: k.NW.string(k.t.q4pBGx),
+      name: W.NW.string(W.t.q4pBGx),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
       iconClassName: A.platformIcon,
@@ -306,13 +306,13 @@ function U(e) {
     let i, l, o, a, s = b.Z.get(Z.ABu.YOUTUBE);
     return e > 0 ? (a = (0, r.jsx)(u.LJT, {
       size: "xs"
-    }), l = k.NW.formatToPlainString(k.t.b2g5vL, {
+    }), l = W.NW.formatToPlainString(W.t.b2g5vL, {
       count: t
-    }), o = () => n(Z.ABu.YOUTUBE)) : (i = k.NW.string(k.t.xEyQ3d), l = k.NW.string(k.t.T0ivgY), o = () => (0, f.Z)({
+    }), o = () => n(Z.ABu.YOUTUBE)) : (i = W.NW.string(W.t.xEyQ3d), l = W.NW.string(W.t.T0ivgY), o = () => (0, f.Z)({
       platformType: Z.ABu.YOUTUBE,
       location: "Integration Settings"
     })), (0, r.jsx)(w.Z, {
-      name: k.NW.string(k.t.aS6cKy),
+      name: W.NW.string(W.t.aS6cKy),
       icon: s.icon.whiteSVG,
       iconBackgroundColor: s.color,
       iconClassName: A.platformIcon,
@@ -330,7 +330,7 @@ function U(e) {
     className: o()(null != eI ? A.footerPlaceholder : null),
     children: [(0, r.jsx)(u.R94, {
       type: u.geA.DESCRIPTION,
-      children: k.NW.format(eE, {
+      children: W.NW.format(eE, {
         helpdeskArticle: eS
       })
     }), (0, r.jsx)(u.$i$, {
@@ -345,7 +345,7 @@ function U(e) {
         }) : null, (0, r.jsx)(u.X6q, {
           variant: "heading-md/semibold",
           className: A.sectionHeader,
-          children: k.NW.string(k.t.oAvIAg)
+          children: W.NW.string(W.t.oAvIAg)
         }), (0, r.jsx)(P.t, {
           channel: z,
           application: es,
@@ -363,7 +363,7 @@ function U(e) {
         }) : null, (0, r.jsx)(u.X6q, {
           variant: "heading-md/semibold",
           className: A.sectionHeader,
-          children: k.NW.string(k.t.pUBKho)
+          children: W.NW.string(W.t.pUBKho)
         }), ef > 4 ? (0, r.jsx)(B, {
           query: et,
           setQuery: en

@@ -19,7 +19,7 @@ let u = {
       useClockOptions: d = {}
     } = e, f = a.useMemo(() => Object.assign({
       minInterval: 1e3 / c
-    }, u, d), [c, d]), m = a.useRef(null), p = a.useRef();
+    }, u, d), [c, d]), m = a.useRef(null), p = a.useRef(null);
     a.useEffect(() => {
       null != p.current && r.w > 0 && r.h > 0 && p.current.setSize(r)
     }, [r]), a.useEffect(() => {

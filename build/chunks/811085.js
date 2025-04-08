@@ -127,7 +127,9 @@ function j() {
           let [n, i] = t, r = parseInt(n) === e.state;
           return (0, a.jsxs)("div", {
             className: g.statusOption,
-            ref: e => N.current[parseInt(n)] = e,
+            ref: e => {
+              N.current[parseInt(n)] = e
+            },
             children: [r ? (0, a.jsx)(T, {
               className: g.marker,
               color: i.color

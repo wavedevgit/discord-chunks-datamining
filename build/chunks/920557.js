@@ -49,11 +49,11 @@ function E(e) {
   } = e, s = (0, p.Dt)(), {
     channelId: c,
     messageId: u
-  } = (0, b.pE)(), [g, _] = i.useState(""), [x, E] = i.useState(!1), N = "" !== g && x, O = i.useCallback(() => {
+  } = (0, b.pE)(), [g, _] = i.useState(""), [x, E] = i.useState(!1), O = "" !== g && x, N = i.useCallback(() => {
     _((0, h.e1)(u, c, l))
   }, [u, c, l]), j = i.useCallback(() => {
-    O(), E(!0)
-  }, [O]), C = i.useCallback(() => {
+    N(), E(!0)
+  }, [N]), C = i.useCallback(() => {
     E(!1)
   }, []), S = i.useCallback(() => {
     (0, f.n)({
@@ -63,10 +63,10 @@ function E(e) {
     })
   }, [c, u, l]);
   i.useEffect(() => {
-    if (x) return m.Z.addReactChangeListener(O), () => {
-      m.Z.removeReactChangeListener(O)
+    if (x) return m.Z.addReactChangeListener(N), () => {
+      m.Z.removeReactChangeListener(N)
     }
-  }, [x, O]);
+  }, [x, N]);
   let I = (0, r.jsx)(d.Text, {
     variant: "text-xs/semibold",
     color: "none",
@@ -84,7 +84,7 @@ function E(e) {
           scaleFontToUserSetting: !0,
           children: g
         }),
-        forceOpen: N,
+        forceOpen: O,
         "aria-label": !1,
         children: e => {
           var t, n;
@@ -95,7 +95,7 @@ function E(e) {
             onBlur: C,
             onClick: S,
             className: y.voteCountButton,
-            "aria-describedby": N ? s : void 0,
+            "aria-describedby": O ? s : void 0,
             look: d.zxk.Looks.BLANK,
             size: d.zxk.Sizes.NONE,
             children: I
@@ -110,7 +110,7 @@ function E(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
           }), t))
         }
-      }), N && (0, r.jsx)(o.T, {
+      }), O && (0, r.jsx)(o.T, {
         id: s,
         children: g
       })]
@@ -123,7 +123,7 @@ function E(e) {
   })
 }
 
-function N(e) {
+function O(e) {
   let {
     percentage: t,
     shouldAnimate: n
@@ -146,7 +146,7 @@ function N(e) {
   })
 }
 
-function O(e) {
+function N(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -194,7 +194,7 @@ function j(e) {
       [y.currentlyVoting]: i !== g.Y7.LIST,
       [y.selected]: c
     }),
-    children: [a ? (0, r.jsx)(N, {
+    children: [a ? (0, r.jsx)(O, {
       percentage: t.votesPercentage,
       shouldAnimate: m
     }) : null, null != t.pollMedia.emoji && (0, r.jsx)(_.sc, {
@@ -213,7 +213,7 @@ function j(e) {
       label: t.votes,
       canShowVoterDetails: s,
       answerId: t.answerId
-    }), (0, r.jsx)(O, {
+    }), (0, r.jsx)(N, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,

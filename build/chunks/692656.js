@@ -306,7 +306,9 @@ function eo(e) {
     l(u)
   }, [l, u]), u) ? null : (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      ref: e => c.current = e,
+      ref: e => {
+        c.current = e
+      },
       children: (0, i.jsx)(z.Z, {
         title: J.NW.string(J.t.shUONj)
       })
@@ -361,7 +363,9 @@ function ec(e) {
     n(d)
   }, [d, n]), d) ? null : (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      ref: e => u.current = e,
+      ref: e => {
+        u.current = e
+      },
       children: (0, i.jsx)(z.Z, {
         title: J.NW.string(J.t.KfkuGR),
         buttonType: z.Z.buttonTypes.VIEW_MORE,
@@ -564,7 +568,9 @@ function eu(e) {
   }), v = l.type !== m.o.SMALL_BANNER_CARDS;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)("div", {
-      ref: e => y.current = e,
+      ref: e => {
+        y.current = e
+      },
       children: (0, i.jsx)(z.Z, {
         title: l.title,
         buttonType: z.Z.buttonTypes.VIEW_MORE,

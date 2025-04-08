@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(153209),
   v = n(956961),
   E = n(903672),
-  N = n(711165),
-  O = n(946443),
+  O = n(711165),
+  N = n(946443),
   j = n(264233),
   C = n(981631),
   S = n(388032);
@@ -131,16 +131,16 @@ function I(e) {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === o.X.SCHEDULED ? (0, r.jsx)(N._, {
+          }) : R === o.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {
-            fallback: (0, r.jsx)(O.h, {
+            fallback: (0, r.jsx)(N.h, {
               setTab: D,
               closePopout: W,
               badgeState: T
             }),
-            children: (0, r.jsx)(O.Z, {
+            children: (0, r.jsx)(N.Z, {
               setTab: D,
               onJump: z,
               showTutorial: L,

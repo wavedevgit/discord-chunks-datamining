@@ -19,7 +19,7 @@ let o = e => {
     shouldTick: m
   } = (0, l.Z)(e), p = n.useMemo(() => new i.ZP, []), h = n.useCallback(e => {
     e.assetMap = p, r(e)
-  }, [p, r]), [y, w] = n.useState(!1), v = n.useRef(), x = n.useRef(), E = n.useRef(s.Z.lastConfetti);
+  }, [p, r]), [y, w] = n.useState(!1), v = n.useRef(null), x = n.useRef(null), E = n.useRef(s.Z.lastConfetti);
   return n.useEffect(() => {
     async function e(e) {
       var t;

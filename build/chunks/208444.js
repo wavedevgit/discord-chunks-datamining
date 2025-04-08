@@ -29,13 +29,13 @@ function x(e, t) {
     customInstallUrl: x,
     installParams: y,
     integrationTypesConfig: v
-  }), N = (0, i.e7)([p.Z], () => {
+  }), O = (0, i.e7)([p.Z], () => {
     var e;
     return null != (e = p.Z.getGuildId()) ? e : void 0
-  }), O = (0, i.e7)([c.Z, u.Z, d.Z], () => {
+  }), N = (0, i.e7)([c.Z, u.Z, d.Z], () => {
     let e = c.Z.getChannel(d.Z.getChannelId());
     return null != e && (e.isPrivate() || u.Z.can(g.Plq.SEND_MESSAGES, e))
-  }, []), j = (0, a.PZ)(e, N) && O, C = n || j;
+  }, []), j = (0, a.PZ)(e, O) && N, C = n || j;
   return r.useMemo(() => C ? {
     label: b.NW.string(b.t["HO/oXl"]),
     trackingArea: h.j_.VIEW,
@@ -60,9 +60,9 @@ function x(e, t) {
         customInstallUrl: x,
         installParams: y,
         integrationTypesConfig: v,
-        guildId: N,
+        guildId: O,
         source: "app_message_embed"
       })
     }
-  } : void 0, [e.id, j, C, x, y, v, E, t, N])
+  } : void 0, [e.id, j, C, x, y, v, E, t, O])
 }

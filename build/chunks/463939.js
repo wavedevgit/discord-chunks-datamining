@@ -50,7 +50,7 @@ let y = e => {
   })
 };
 
-function C(e) {
+function O(e) {
   let {
     item: t
   } = e, {
@@ -128,7 +128,7 @@ function C(e) {
   }
   return null
 }
-let O = (0, b.i$)({
+let C = (0, b.i$)({
     key: "AMOUNT ",
     cellClassName: _.amountColumn,
     renderHeader() {
@@ -164,9 +164,9 @@ let O = (0, b.i$)({
         listingId: e.listingId
       })
     }
-  }), (0, x.Fd)((r = v({}, O), i = i = {
-    renderContent: O.render,
-    renderExpandedContent: (e, t) => O.render(e, t)
+  }), (0, x.Fd)((r = v({}, C), i = i = {
+    renderContent: C.render,
+    renderExpandedContent: (e, t) => C.render(e, t)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -194,7 +194,7 @@ let O = (0, b.i$)({
     },
     renderContent: e => (0, s.jsx)(b.bL, {
       className: _.statusCell,
-      children: (0, s.jsx)(C, {
+      children: (0, s.jsx)(O, {
         item: e
       })
     })

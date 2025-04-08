@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => y,
-  Zm: () => O
+  Zm: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -111,13 +111,13 @@ function y(e) {
   let {
     saveOnClose: t
   } = e, n = (0, s.e7)([u.Z], () => u.Z.getGuild());
-  return null == n ? null : (0, r.jsx)(C, {
+  return null == n ? null : (0, r.jsx)(O, {
     guild: n,
     saveOnClose: t
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     guild: t,
     saveOnClose: n
@@ -186,7 +186,7 @@ function C(e) {
   })
 }
 
-function O() {
+function C() {
   let e = (0, s.e7)([u.Z], () => u.Z.getGuild()),
     t = (0, s.e7)([h.Z], () => h.Z.submitting);
   return null == e ? null : (0, r.jsx)(l.Z, {

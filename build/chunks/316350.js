@@ -236,13 +236,13 @@ let y = e => {
       headerButton: r,
       subscriptionsRequired: i
     } = e;
-    return null !== r ? r : n ? (0, s.jsx)(C, {
+    return null !== r ? r : n ? (0, s.jsx)(O, {
       transform: t
-    }) : (0, s.jsx)(O, {
+    }) : (0, s.jsx)(C, {
       subscriptionsRequired: i
     })
   },
-  C = e => {
+  O = e => {
     let {
       transform: t
     } = e;
@@ -254,7 +254,7 @@ let y = e => {
       children: f.NW.string(f.t.dNGM0t)
     })
   },
-  O = e => {
+  C = e => {
     let {
       subscriptionsRequired: t
     } = e;

@@ -1,7 +1,7 @@
 /** Chunk was on 35093 **/
 "use strict";
 n.d(t, {
-  Z: () => C,
+  Z: () => O,
   x: () => x
 }), n(388685);
 var r, i = n(200651),
@@ -305,4 +305,4 @@ class y extends(r = s.Component) {
 b(y, "defaultProps", {
   initialAnimationDelay: 0
 });
-let C = y
+let O = y

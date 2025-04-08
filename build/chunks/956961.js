@@ -22,8 +22,8 @@ var r = n(200651),
   y = n(324081),
   v = n(791914),
   E = n(981631),
-  N = n(388032),
-  O = n(829444),
+  O = n(388032),
+  N = n(829444),
   j = n(384323);
 let C = {
   offset: {
@@ -38,24 +38,24 @@ function S(e) {
     closePopout: n
   } = e, a = (0, c.e7)([g.Z], () => g.Z.getMessageReminders()), [l, o] = i.useState(!1), s = i.useMemo(() => a.filter(e => null == e.saveData.dueAt || e.saveData.dueAt < new Date), [a]), p = l ? a : s;
   return (0, r.jsxs)("div", {
-    className: O.container,
+    className: N.container,
     children: [(0, r.jsx)(v.Z, {
       tab: u.X.TODOS,
       setTab: t,
       closePopout: n
     }), (0, r.jsxs)("div", {
-      className: O.headerText,
+      className: N.headerText,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-lg/bold",
-        children: l ? N.NW.string(N.t["0KeMAw"]) : N.NW.string(N.t.j5ZHEB)
+        children: l ? O.NW.string(O.t["0KeMAw"]) : O.NW.string(O.t.j5ZHEB)
       }), (0, r.jsx)(d.eee, {
         onClick: () => o(!l),
         children: (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-link",
-          children: l ? N.NW.formatToPlainString(N.t["/VlKx8"], {
+          children: l ? O.NW.formatToPlainString(O.t["/VlKx8"], {
             count: s.length
-          }) : N.NW.formatToPlainString(N.t.QEO4Ii, {
+          }) : O.NW.formatToPlainString(O.t.QEO4Ii, {
             count: a.length
           })
         })
@@ -79,9 +79,9 @@ function I(e) {
       (0, f.uL)(E.Z5c.CHANNEL(null == u ? void 0 : u.getGuildId(), a.channelId, a.messageId))
     },
     v = null;
-  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", v = N.NW.formatToPlainString(N.t.H4gnX1, {
+  return (null != a.dueAt && (a.dueAt > new Date ? (t = "text-muted", v = O.NW.formatToPlainString(O.t.H4gnX1, {
     duration: s().duration(a.dueAt.getTime() - Date.now(), "millisecond").humanize()
-  })) : (t = "text-danger", v = N.NW.formatToPlainString(N.t["Uq7Y+/"], {
+  })) : (t = "text-danger", v = O.NW.formatToPlainString(O.t["Uq7Y+/"], {
     duration: s().duration(Date.now() - a.dueAt.getTime(), "millisecond").humanize()
   }))), null == o || null == u) ? null : (0, r.jsxs)("div", {
     className: j.container,
@@ -89,11 +89,11 @@ function I(e) {
       channel: u,
       gotoChannel: g,
       children: (0, r.jsxs)("div", {
-        className: O.reminderActions,
+        className: N.reminderActions,
         children: [null != i.saveData.notes && i.saveData.notes.length > 0 ? (0, r.jsxs)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: O.notes,
+          className: N.notes,
           selectable: !0,
           children: [(0, r.jsx)(d.aAW, {
             size: "xxs",
@@ -104,7 +104,7 @@ function I(e) {
           color: t,
           children: v
         }) : null, (0, r.jsx)(d.DY3, {
-          text: N.NW.string(N.t.GtBCn5),
+          text: O.NW.string(O.t.GtBCn5),
           children: (0, r.jsx)(d.P3F, {
             onClick: e => (0, p.jW)(e, async () => {
               let {
@@ -143,7 +143,7 @@ function I(e) {
                 }), n))
               }
             }),
-            className: O.clock,
+            className: N.clock,
             children: (0, r.jsx)(d.T39, {
               size: "custom",
               width: 20,
@@ -152,10 +152,10 @@ function I(e) {
             })
           })
         }), (0, r.jsx)(d.DY3, {
-          text: N.NW.string(N.t["1GzslZ"]),
+          text: O.NW.string(O.t["1GzslZ"]),
           children: (0, r.jsx)(d.P3F, {
             onClick: () => (0, h.x)(a),
-            className: O.delete,
+            className: N.delete,
             children: (0, r.jsx)(d.XHJ, {
               size: "custom",
               width: 20,
@@ -166,7 +166,7 @@ function I(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: l()(j.messageContainer, O.unloadedMessage),
+      className: l()(j.messageContainer, N.unloadedMessage),
       children: [(0, r.jsx)(x.Z, {
         className: j.jumpMessageButton,
         onJump: g

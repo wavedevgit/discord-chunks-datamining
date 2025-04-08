@@ -23,7 +23,7 @@ var r = n(200651),
   v = n(388032),
   E = n(912861);
 
-function N(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function N(e) {
   return e
 }
 
-function O(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -64,7 +64,7 @@ let j = {
   };
 
 function S(e) {
-  return (0, r.jsx)(s.Text, O(N({}, j), {
+  return (0, r.jsx)(s.Text, N(O({}, j), {
     color: "header-primary",
     children: e
   }))
@@ -107,7 +107,7 @@ let I = i.memo(function(e) {
         R = null != w ? w + " " + I.name : I.name;
       if (I.type === c.jw.SUB_COMMAND || I.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
-            children: [" ", (0, r.jsx)(s.Text, O(N({}, j), {
+            children: [" ", (0, r.jsx)(s.Text, N(O({}, j), {
               children: null != (a = null == Z ? void 0 : Z.name_localized) ? a : I.name
             }))]
           }, R)],
@@ -130,7 +130,7 @@ let I = i.memo(function(e) {
             t = _.default.getUser(e);
           if (null != t) {
             let e = (0, b.ij)(t, T);
-            E = (0, r.jsxs)(m.Z, O(N({}, C), {
+            E = (0, r.jsxs)(m.Z, N(O({}, C), {
               onClick: () => (0, f.openUserProfileModal)({
                 userId: t.id,
                 guildId: T.guild_id,
@@ -149,7 +149,7 @@ let I = i.memo(function(e) {
         case c.jw.CHANNEL: {
           let e = I.value.toString(),
             t = h.Z.getChannel(e);
-          null != t && (E = (0, r.jsxs)(m.Z, O(N({}, C), {
+          null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
             children: [y.zy, t.name]
           })));
           break
@@ -157,7 +157,7 @@ let I = i.memo(function(e) {
         case c.jw.ROLE: {
           let e = I.value.toString(),
             t = null != P ? g.Z.getRole(P.id, e) : void 0;
-          null != t && (E = (0, r.jsxs)(m.Z, O(N({}, C), {
+          null != t && (E = (0, r.jsxs)(m.Z, N(O({}, C), {
             children: [y.ME, t.name]
           })));
           break
@@ -172,7 +172,7 @@ let I = i.memo(function(e) {
             let t = _.default.getUser(e);
             if (null != t) {
               let e = (0, b.ij)(t, T);
-              E = (0, r.jsxs)(m.Z, O(N({}, C), {
+              E = (0, r.jsxs)(m.Z, N(O({}, C), {
                 onClick: () => (0, f.openUserProfileModal)({
                   userId: t.id,
                   guildId: T.guild_id,
@@ -195,7 +195,7 @@ let I = i.memo(function(e) {
         }
       }
       return null == E && (E = S(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsxs)(s.Text, O(N({}, j), {
+        children: [(0, r.jsxs)(s.Text, N(O({}, j), {
           children: [" ", null != (p = null == Z ? void 0 : Z.name_localized) ? p : I.name, ": "]
         })), E]
       }, R)]
@@ -209,7 +209,7 @@ let I = i.memo(function(e) {
       sourceAnalyticsLocations: k
     }));
     P = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(s.Text, O(N({}, j), {
+      children: [(0, r.jsxs)(s.Text, N(O({}, j), {
         children: ["/", null != (T = null == (a = Z.application_command) ? void 0 : a.name_localized) ? T : Z.name]
       })), e]
     })

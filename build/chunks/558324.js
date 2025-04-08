@@ -50,7 +50,7 @@ let u = e => {
         className: d.close
       })
     })]
-  }, t)), C = i.useCallback(() => {
+  }, t)), O = i.useCallback(() => {
     let e = _.trim();
     if (0 !== e.length) {
       if (null != b && u.length >= b) {
@@ -59,7 +59,7 @@ let u = e => {
       }
       p(e), v("")
     }
-  }, [_, b, p, h, u.length]), O = i.useCallback(e => {
+  }, [_, b, p, h, u.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
         0 === _.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
@@ -67,9 +67,9 @@ let u = e => {
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
-        e.preventDefault(), e.stopPropagation(), C()
+        e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [C, _.length, g, u.length]);
+  }, [O, _.length, g, u.length]);
   return (0, r.jsxs)("div", {
     className: a()(s, d.inputWrapper, {
       [d.disabled]: x
@@ -96,11 +96,11 @@ let u = e => {
       inputClassName: d.inputInner
     }, N), n = n = {
       value: _,
-      onKeyDown: O,
+      onKeyDown: C,
       onChange: v,
       maxLength: f,
       disabled: x,
-      onBlur: C,
+      onBlur: O,
       placeholder: j
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

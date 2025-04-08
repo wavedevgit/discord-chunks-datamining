@@ -36,12 +36,12 @@ function v(e) {
     buttonText: w,
     buttonDisabled: T,
     hasNextSection: Z,
-    onButtonClick: W,
-    guildId: k,
+    onButtonClick: k,
+    guildId: W,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == w || null == W ? null : Z ? (0, r.jsxs)(p.Z, {
+  } = e, [L, M] = i.useState(!1), [B, U] = i.useState(!1), z = null == w || null == k ? null : Z ? (0, r.jsxs)(p.Z, {
     align: p.Z.Align.CENTER,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
@@ -58,9 +58,9 @@ function v(e) {
     look: Z ? c.zxk.Looks.LINK : c.zxk.Looks.FILLED,
     color: Z ? c.zxk.Colors.PRIMARY : c.zxk.Colors.BRAND,
     disabled: T,
-    onClick: W,
+    onClick: k,
     children: w
-  }), H = D && !A && !B && void 0 !== k && null != P;
+  }), H = D && !A && !B && void 0 !== W && null != P;
   i.useEffect(() => {
     var e, t;
     H && f.default.track(j.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
@@ -80,7 +80,7 @@ function v(e) {
         })
       }
       return e
-    }({}, (0, d.hH)(k)), t = t = {
+    }({}, (0, d.hH)(W)), t = t = {
       application_id: null == P ? void 0 : P.application.id,
       location: "overview"
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -93,11 +93,11 @@ function v(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == P ? void 0 : P.application.id, H]);
+  }, [W, null == P ? void 0 : P.application.id, H]);
   let G = H ? (0, r.jsx)(c.yRy, {
       renderPopout: () => (0, r.jsx)(c.P3F, {
         onClick: e => {
-          e.stopPropagation(), U(!0), x.Z.dismissOverviewTooltip(k, P.integration)
+          e.stopPropagation(), U(!0), x.Z.dismissOverviewTooltip(W, P.integration)
         },
         children: (0, r.jsx)(b.ZP, {
           content: O.NW.string(O.t.TyMJwM),
@@ -112,9 +112,9 @@ function v(e) {
     }) : z,
     F = (0, s.Wu)([m.Z], () => {
       var e;
-      return null != P && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, k)) ? e : []
+      return null != P && null != W && null != (e = m.Z.getApplicationEntitlementsForGuild(P.application.id, W)) ? e : []
     }),
-    V = (0, u.LD)(k, !0),
+    V = (0, u.LD)(W, !0),
     K = (null == P ? void 0 : P.application) != null && Object.keys(null != (l = null == (n = V.result) || null == (t = n.sections[P.application.id]) ? void 0 : t.commands) ? l : {}).length > 0,
     q = (0, r.jsxs)(p.Z, {
       children: [(0, r.jsx)(h.Z, {
@@ -175,7 +175,7 @@ function v(e) {
     });
   return Z ? (0, r.jsx)(c.P3F, {
     onClick: () => {
-      D && null != k && null != P && x.Z.dismissOverviewTooltip(k, P.integration), null == W || W()
+      D && null != W && null != P && x.Z.dismissOverviewTooltip(W, P.integration), null == k || k()
     },
     onFocus: () => M(!0),
     onBlur: () => M(!1),

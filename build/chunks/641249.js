@@ -56,9 +56,9 @@ function x() {
     guildId: t
   } = (0, o.N)(), [x, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
     setCurrentTab: _
-  } = (0, g.dw)(), v = () => _(g.ue.EMOJIS), y = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), C = null == y ? void 0 : y.getMaxRoleSubscriptionEmojiSlots();
+  } = (0, g.dw)(), v = () => _(g.ue.EMOJIS), y = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), O = null == y ? void 0 : y.getMaxRoleSubscriptionEmojiSlots();
 
-  function O(e) {
+  function C(e) {
     null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
   }
 
@@ -75,7 +75,7 @@ function x() {
       className: h.formDescription,
       disabled: E,
       children: [p.NW.format(p.t.zuwel5, {
-        premiumEmojiMaximum: C
+        premiumEmojiMaximum: O
       }), (0, r.jsx)("br", {}), p.NW.format(p.t.sEkgBg, {
         handleTransitionToManageEmoji: v
       })]
@@ -105,7 +105,7 @@ function x() {
           return n => (0, r.jsx)(e, b(f({}, n), {
             guildId: t,
             initialTierEmojiIds: x,
-            onSubmit: O,
+            onSubmit: C,
             transitionToManageEmoji: () => {
               v(), n.onClose()
             }

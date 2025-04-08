@@ -107,7 +107,7 @@ function T(e) {
       isFrozen: r,
       count: l,
       lingerMs: o
-    } = e, [a, s] = i.useState([]), [u, p] = i.useState(!1), h = i.useRef(null), f = i.useRef(), m = i.useCallback(() => {
+    } = e, [a, s] = i.useState([]), [u, p] = i.useState(!1), h = i.useRef(null), f = i.useRef(void 0), m = i.useCallback(() => {
       s([]), p(!0)
     }, []);
     i.useEffect(() => {

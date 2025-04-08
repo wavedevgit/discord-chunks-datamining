@@ -30,7 +30,7 @@ function _(e) {
   } = (0, g.N)(), _ = (0, s.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getSubscriptionListing(n)) ? void 0 : e.image_asset
-  }), [v, y] = p._T(n), [C, O] = p.mR(n), [I, E] = p.PK(n), [S, T] = p.d9(n, 1024), {
+  }), [v, y] = p._T(n), [O, C] = p.mR(n), [I, E] = p.PK(n), [S, T] = p.d9(n, 1024), {
     imageCTA: P,
     imageAriaLabel: w,
     setFilename: R
@@ -80,8 +80,8 @@ function _(e) {
             className: j.formInput,
             isDisabled: A || null == t,
             placeholder: x.NW.string(x.t["88XZDg"]),
-            value: C,
-            onChange: O,
+            value: O,
+            onChange: C,
             maxVisibleItems: 5,
             look: a.qQH.CUSTOM,
             "aria-labelledby": W

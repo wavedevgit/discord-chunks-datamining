@@ -31,8 +31,8 @@ function b(e) {
   }), {
     hasClips: v,
     hasNewClips: E,
-    lastClipsSession: N,
-    remindersEnabled: O,
+    lastClipsSession: O,
+    remindersEnabled: N,
     hasAnyClipAnimations: j
   } = (0, a.cj)([p.Z], () => ({
     hasClips: p.Z.hasClips(),
@@ -40,7 +40,7 @@ function b(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), C = null != N && N.newClipIds.length > 0, S = (0, f.n)(e => e.clipsButtonRef), I = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), C = null != O && O.newClipIds.length > 0, S = (0, f.n)(e => e.clipsButtonRef), I = (0, f.n)(e => e.setClipsButtonRef), T = (0, a.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: P,
     allowIdle: A
   } = (0, s.Y)("animation");
@@ -73,9 +73,9 @@ function b(e) {
     })
   }
   return (i.useEffect(() => (j ? P() : A(), () => A()), [j, P, A]), y && x && v) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != S && t && O && C && !(0, l.$sL)() && !T && (0, r.jsx)(h.Z, {
+    children: [null != S && t && N && C && !(0, l.$sL)() && !T && (0, r.jsx)(h.Z, {
       clipIconRef: S,
-      lastClipsSession: N,
+      lastClipsSession: O,
       onOpenClipsGallery: w
     }), (0, r.jsx)("div", {
       ref: I,

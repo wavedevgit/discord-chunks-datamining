@@ -84,9 +84,9 @@ function p(e) {
     uploadButtonLabel: m = s.NW.string(s.t["MsUY/f"]),
     radioGroupAriaLabel: b = s.NW.string(s.t["0Q0UJi"]),
     disabled: v = !1
-  } = e, C = a === g, [q, x] = A.useState(C ? r : null), [j, N] = A.useState(null), O = A.useRef(null), U = A.useRef(null);
+  } = e, C = a === g, [x, q] = A.useState(C ? r : null), [j, N] = A.useState(null), O = A.useRef(null), U = A.useRef(null);
   A.useEffect(() => {
-    p !== g && (x(null), N(null))
+    p !== g && (q(null), N(null))
   }, [p]);
   let P = null != j ? s.NW.formatToPlainString(s.t["Kw+5YW"], {
       filename: j
@@ -95,12 +95,30 @@ function p(e) {
       orientation: "horizontal",
       isDisabled: v
     }),
-    V = () => {
+    {
+      ref: V
+    } = y,
+    W = function(e, t) {
+      if (null == e) return {};
+      var r, n, A = function(e, t) {
+        if (null == e) return {};
+        var r, n, A = {},
+          a = Object.keys(e);
+        for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (A[r] = e[r]);
+        return A
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var a = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (A[r] = e[r])
+      }
+      return A
+    }(y, ["ref"]),
+    I = () => {
       var e;
       return null == (e = O.current) ? void 0 : e.activateUploadDialogue()
     },
-    W = () => {
-      a === g && h(t[0].data, t[0].name), x(null), N(null)
+    T = () => {
+      a === g && h(t[0].data, t[0].name), q(null), N(null)
     };
   return A.useEffect(() => {
     if (C && null != j) {
@@ -114,7 +132,7 @@ function p(e) {
       children: (0, n.jsxs)("div", {
         className: o()(c.uploadButton, {
           [c.disabled]: v,
-          [c.hidden]: null != q
+          [c.hidden]: null != x
         }),
         "aria-disabled": v,
         children: [(0, n.jsx)(l.FmF, {
@@ -130,19 +148,19 @@ function p(e) {
           ref: O,
           tabIndex: 0,
           onChange: (e, t) => {
-            null != t && (N(t.name), x(e), h(e, g))
+            null != t && (N(t.name), q(e), h(e, g))
           },
           "aria-label": m
         })]
       })
-    }), null != q && (0, n.jsxs)("div", {
+    }), null != x && (0, n.jsxs)("div", {
       className: c.customImageActionContainer,
       children: [(0, n.jsx)(l.ua7, {
         text: s.NW.string(s.t.AQYXMD),
         hideOnClick: !0,
         children: e => (0, n.jsx)(l.P3F, u(d({}, e), {
           className: c.customImageAction,
-          onClick: V,
+          onClick: I,
           "aria-label": s.NW.formatToPlainString(s.t.Qc9Lg4, {
             filename: j
           }),
@@ -157,7 +175,7 @@ function p(e) {
         hideOnClick: !0,
         children: e => (0, n.jsx)(l.P3F, u(d({}, e), {
           className: c.customImageAction,
-          onClick: W,
+          onClick: T,
           "aria-label": s.NW.formatToPlainString(s.t.Z43V9f, {
             filename: j
           }),
@@ -169,17 +187,18 @@ function p(e) {
         }))
       })]
     }), (0, n.jsxs)("div", u(d({
-      "aria-label": b
-    }, y), {
+      "aria-label": b,
+      ref: V
+    }, W), {
       className: c.radioGroup,
-      children: [null != q && (0, n.jsx)(f, {
+      children: [null != x && (0, n.jsx)(f, {
         ref: U,
         selectedImageName: a,
         onChange: h,
         disabled: v,
         name: g,
         alt: P,
-        data: q
+        data: x
       }), t.map(e => (0, n.jsx)(f, d({
         selectedImageName: a,
         onChange: h,
