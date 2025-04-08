@@ -13,7 +13,7 @@ var l = n(200651),
   d = n(20493);
 let E = 0,
   f = () => "notification-position-selector-".concat(E++),
-  p = e => {
+  C = e => {
     switch (e) {
       case s._vf.TOP_LEFT:
         return c.NW.string(c.t.xlchpa);
@@ -27,14 +27,14 @@ let E = 0,
         return c.NW.string(c.t.AlY4ZW)
     }
   },
-  C = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
+  p = [s._vf.DISABLED, s._vf.TOP_LEFT, s._vf.TOP_RIGHT, s._vf.BOTTOM_LEFT, s._vf.BOTTOM_RIGHT];
 
 function h(e) {
   let {
     position: t,
     onChange: n
   } = e, [i] = r.useState(() => f()), E = t === s._vf.DISABLED ? c.NW.string(c.t.R6LxVV) : c.NW.formatToPlainString(c.t.XXHDMz, {
-    position: p(t)
+    position: C(t)
   });
   return (0, l.jsxs)("div", {
     children: [(0, l.jsx)(a.tEY, {
@@ -44,7 +44,7 @@ function h(e) {
         className: o()(u.wrapper, {
           [u.disabledSelected]: t === s._vf.DISABLED
         }),
-        children: C.map(e => (0, l.jsxs)("label", {
+        children: p.map(e => (0, l.jsxs)("label", {
           className: o()({
             [u.selected]: e === t,
             [u.disabled]: e === s._vf.DISABLED,
@@ -53,7 +53,7 @@ function h(e) {
             [u.bottomRight]: e === s._vf.BOTTOM_RIGHT,
             [u.bottomLeft]: e === s._vf.BOTTOM_LEFT
           }),
-          children: [p(e), e === s._vf.DISABLED ? (0, l.jsx)(a.t6m, {
+          children: [C(e), e === s._vf.DISABLED ? (0, l.jsx)(a.t6m, {
             size: "md",
             color: "currentColor",
             className: u.disabledIcon

@@ -18,13 +18,13 @@ let u = r.forwardRef(function(e, t) {
     disabled: d,
     icon: E,
     iconForeground: f,
-    innerClassName: p,
-    className: C,
+    innerClassName: C,
+    className: p,
     redGlow: h,
     tooltipClassName: _,
     onMouseEnter: g,
-    onMouseLeave: S,
-    "aria-label": O,
+    onMouseLeave: O,
+    "aria-label": S,
     "aria-checked": T,
     role: I,
     tooltipColor: N,
@@ -41,7 +41,7 @@ let u = r.forwardRef(function(e, t) {
   return (0, l.jsx)(a.ua7, {
     tooltipClassName: _,
     text: n,
-    "aria-label": O,
+    "aria-label": S,
     color: N,
     tooltipContentClassName: A,
     forceOpen: m,
@@ -49,7 +49,7 @@ let u = r.forwardRef(function(e, t) {
       var n, E, {
           onClick: f,
           onMouseEnter: _,
-          onMouseLeave: O
+          onMouseLeave: S
         } = e,
         N = function(e, t) {
           if (null == e) return {};
@@ -88,9 +88,9 @@ let u = r.forwardRef(function(e, t) {
         look: a.zxk.Looks.BLANK,
         size: a.zxk.Sizes.NONE,
         disabled: d,
-        innerClassName: p,
-        wrapperClassName: o()(c.button, C),
-        className: o()(c.button, C, {
+        innerClassName: C,
+        wrapperClassName: o()(c.button, p),
+        className: o()(c.button, p, {
           [c.redGlow]: h,
           [c.disabled]: d,
           [c.enabled]: !d,
@@ -104,7 +104,7 @@ let u = r.forwardRef(function(e, t) {
           null == _ || _(), null == g || g()
         },
         onMouseLeave: () => {
-          null == O || O(), null == S || S()
+          null == S || S(), null == O || O()
         },
         onContextMenu: i,
         role: I,

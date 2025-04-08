@@ -1,7 +1,7 @@
 /** Chunk was on 32 **/
 n.d(t, {
   ED: () => g,
-  fO: () => O,
+  fO: () => S,
   qp: () => T
 }), n(388685);
 var l = n(200651),
@@ -15,8 +15,8 @@ var l = n(200651),
   d = n(664915),
   E = n(432792),
   f = n(981631),
-  p = n(921944),
-  C = n(46140),
+  C = n(921944),
+  p = n(46140),
   h = n(388032);
 
 function _(e) {
@@ -45,15 +45,15 @@ let g = e => (0, l.jsx)(E.tE, _({
     ctaText: h.NW.string(h.t.v4HbPz),
     renderTail: !0
   }, e)),
-  S = [f.Z5c.ME, f.Z5c.COLLECTIBLES_SHOP, f.Z5c.NITRO_HOME],
-  O = e => {
+  O = [f.Z5c.ME, f.Z5c.COLLECTIBLES_SHOP, f.Z5c.NITRO_HOME],
+  S = e => {
     var {
       onClose: t,
       onCtaClick: n,
       targetElementRef: a,
       isGuildBarScrolling: c,
-      children: p
-    } = e, C = function(e, t) {
+      children: C
+    } = e, p = function(e, t) {
       if (null == e) return {};
       var n, l, r = function(e, t) {
         if (null == e) return {};
@@ -74,7 +74,7 @@ let g = e => (0, l.jsx)(E.tE, _({
       m = (0, s.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       A = r.useCallback(e => {
         if (m) {
-          let t = window.innerHeight - ((0, E.t4)() + O.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, E.t4)() + S.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
@@ -87,7 +87,7 @@ let g = e => (0, l.jsx)(E.tE, _({
     }, [c]);
     let P = (0, i.TH)().pathname,
       v = r.useCallback(() => {
-        S.includes(P) || (0, u.uL)(f.Z5c.ME), n()
+        O.includes(P) || (0, u.uL)(f.Z5c.ME), n()
       }, [P, n]),
       y = r.useCallback(e => {
         let t = Math.floor(e.width / 2) - 2;
@@ -105,12 +105,12 @@ let g = e => (0, l.jsx)(E.tE, _({
         onCtaClick: v,
         tailLeftOffset: T,
         coachmarkRef: N
-      }, C)),
+      }, p)),
       spacing: 8,
-      children: p
+      children: C
     })
   };
-O.COACHMARK_VERTICAL_OFFSET = 10;
+S.COACHMARK_VERTICAL_OFFSET = 10;
 let T = e => {
   let {
     isVirtualCurrencyEnabled: t,
@@ -127,18 +127,18 @@ let T = e => {
   } = (0, E.M)({
     onboardingCoachmarkType: "discover",
     onShowCoachmarkHandler: o
-  });
+  }), h = r.useCallback(() => {
+    (0, c.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
+      forceTrack: !0,
+      dismissAction: C.L.USER_DISMISS
+    }), d()
+  }, [d]), _ = r.useCallback(() => d("CTA_CLICK"), [d]);
   return t ? {
     shouldShow: u,
-    questId: C.V6,
+    questId: p.V6,
     closeCoachmarkIfOpen: d,
-    onClose: () => {
-      (0, c.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-        forceTrack: !0,
-        dismissAction: p.L.USER_DISMISS
-      }), d()
-    },
-    onCtaClick: d
+    onClose: h,
+    onCtaClick: _
   } : {
     shouldShow: !1,
     questId: void 0,

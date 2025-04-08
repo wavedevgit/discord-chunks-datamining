@@ -136,14 +136,14 @@ let m = e => {
       onboardingCoachmarkType: "shop",
       prevCoachmarksDismissed: p,
       onShowCoachmarkHandler: s
-    });
+    }), g = i.useCallback(() => f("CTA_CLICK"), [f]);
     return n ? {
       shouldShow: h,
       closeCoachmarkIfOpen: f,
       onHandleScroll: a,
       positionControlRef: r,
       onClose: f,
-      onCtaClick: f
+      onCtaClick: g
     } : {
       shouldShow: !1,
       closeCoachmarkIfOpen: d.dG4,
