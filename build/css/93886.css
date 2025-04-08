@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4a0693591f5bf5a5
+  Original File Name: ad664f5445a81a40
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2625,8 +2625,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -5190,4 +5190,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=4a0693591f5bf5a5.css.map*/
+/*# sourceMappingURL=ad664f5445a81a40.css.map*/

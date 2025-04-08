@@ -1,6 +1,6 @@
 /**
   Module ID: 40078
-  Original File Name: 96231d2363ccd841
+  Original File Name: 2206fae222ec91bd
 **/
 @value minColumnWidth: 460px;
 
@@ -560,8 +560,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1119,4 +1119,4 @@
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=96231d2363ccd841.css.map*/
+/*# sourceMappingURL=2206fae222ec91bd.css.map*/
