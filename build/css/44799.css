@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 45770e2042b3751d
+  Original File Name: 00e17a1ba5e3f232
 **/
 .container__98cbd {
     min-width: 220px;
@@ -13,6 +13,10 @@
     position: relative;
     cursor: pointer;
     flex: 1
+}
+
+.container__98cbd:hover {
+    transform: scale(1.03)
 }
 
 .container__98cbd.active__98cbd {
@@ -93,7 +97,7 @@
 }
 
 .full-motion .container__98cbd {
-    transition: border-width .2s ease, border-color .2s ease, box-shadow .2s ease
+    transition: border-width .2s ease, border-color .2s ease, box-shadow .2s ease, transform .2s ease-in-out
 }
 
 .full-motion .buttonContainer__98cbd {
@@ -444,37 +448,36 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-32);
     overflow-y: auto
 }
 
 .sidebarContainer__89463 {
     background-color: var(--background-secondary);
     width: 375px;
-    display: flex;
-    flex-direction: column;
     overflow: hidden
 }
 
+.sidebarContainer__89463,.textContainer__89463 {
+    display: flex;
+    flex-direction: column
+}
+
 .textContainer__89463 {
+    gap: var(--spacing-16);
     margin-bottom: 20px
 }
 
-.powerupsSection__89463,.textContainer__89463 {
+.powerupsSection__89463 {
     display: flex;
-    gap: var(--spacing-16);
     flex-direction: column
 }
 
 .powerupContainer__89463 {
     display: flex;
     gap: var(--spacing-16);
-    flex-wrap: wrap
-}
-
-.powerupsLevelContainer__89463 {
-    overflow-x: auto;
-    flex-wrap: nowrap
+    flex-wrap: wrap;
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-32)
 }
 
 .footer__89463 {
@@ -495,4 +498,19 @@
     border-left: 1px solid var(--border-subtle)
 }
 
-/*# sourceMappingURL=45770e2042b3751d.css.map*/
+@media (max-width:1588px) {
+    .powerupsLevelContainer__89463 {
+        overflow-x: auto;
+        flex-wrap: nowrap
+    }
+
+    .powerupContainer__89463 {
+        padding-left: 6px
+    }
+}
+
+.full-motion .powerupContainer__89463 {
+    transition: padding-left .2s ease
+}
+
+/*# sourceMappingURL=00e17a1ba5e3f232.css.map*/
