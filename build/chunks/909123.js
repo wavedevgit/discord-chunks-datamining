@@ -30,7 +30,7 @@ class u extends r.Z {
     let {
       guildId: t
     } = e;
-    (0, a.Fm)(t)
+    (0, l.gV)(t, "GuildPowerupsManager") && (0, a.Fm)(t)
   }
   constructor(...e) {
     super(...e), c(this, "stores", new Map().set(o.Z, this.handleSelectedGuildChange)), c(this, "actions", {

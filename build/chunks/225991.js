@@ -1,3 +1,4 @@
-/** Chunk was on 18639 **/
-var t = _(476078);
-e.exports = /ipad|iphone|ipod/i.test(t) && "undefined" != typeof Pebble
+/** Chunk was on web.js **/
+"use strict";
+var r = n(476078);
+e.exports = /ipad|iphone|ipod/i.test(r) && "undefined" != typeof Pebble

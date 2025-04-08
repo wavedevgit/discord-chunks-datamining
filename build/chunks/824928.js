@@ -1,9 +1,10 @@
-/** Chunk was on 18639 **/
-var t = _(98405),
-  r = _(127849),
-  c = _(25124);
-t({
+/** Chunk was on web.js **/
+"use strict";
+var r = n(98405),
+  i = n(127849),
+  o = n(25124);
+r({
   global: !0
 }, {
   Reflect: {}
-}), c(r.Reflect, "Reflect", !0)
+}), o(i.Reflect, "Reflect", !0)
