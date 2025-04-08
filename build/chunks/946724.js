@@ -262,7 +262,17 @@ let G = new M(m.Z, __OVERLAY__ ? {} : {
       } = e, r = 0 === n ? null : (0, d.Rf)(n), i = W(t);
       return null != i && k(i, {
         color: n,
-        colorString: r
+        colorString: r,
+        colors: {
+          primary_color: n,
+          secondary_color: void 0,
+          tertiary_color: void 0
+        },
+        colorStrings: {
+          primaryColor: null != r ? r : void 0,
+          secondaryColor: void 0,
+          tertiaryColor: void 0
+        }
       })
     },
     GUILD_SETTINGS_ROLES_UPDATE_COLORS: function(e) {
