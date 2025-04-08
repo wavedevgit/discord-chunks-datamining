@@ -1,13 +1,13 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => m
+  Z: () => p
 });
 var n = r(200651);
 r(192379);
-var l = r(913527),
-  i = r.n(l),
-  o = r(481060),
-  a = r(925329),
+var i = r(913527),
+  l = r.n(i),
+  a = r(481060),
+  o = r(925329),
   c = r(388032),
   s = r(965935);
 
@@ -17,17 +17,17 @@ function u(e) {
     timestamp: r
   } = e;
   return (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(a.Z, {
-      size: a.Z.Sizes.LARGE,
+    children: [(0, n.jsx)(o.Z, {
+      size: o.Z.Sizes.LARGE,
       game: t
     }), (0, n.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, n.jsx)(o.Text, {
+      children: [(0, n.jsx)(a.Text, {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: i()(r).format("LLLL")
-      }), (0, n.jsx)(o.Text, {
+        children: l()(r).format("LLLL")
+      }), (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
         children: c.NW.format(c.t.J3s8JC, {
@@ -38,13 +38,13 @@ function u(e) {
   })
 }
 
-function p(e) {
+function m(e) {
   let {
     application: t,
     timestamp: r,
-    children: l
+    children: i
   } = e;
-  return (0, n.jsx)(o.ua7, {
+  return (0, n.jsx)(a.ua7, {
     hideOnClick: !0,
     position: "top",
     "aria-label": c.NW.string(c.t["5nMcv7"]),
@@ -56,7 +56,7 @@ function p(e) {
     }),
     children: e => {
       var t, r;
-      return (0, n.jsx)(o.P3F, (t = function(e) {
+      return (0, n.jsx)(a.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},
             n = Object.keys(r);
@@ -76,7 +76,7 @@ function p(e) {
       }({
         tag: "span"
       }, e), r = r = {
-        children: l
+        children: i
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -91,21 +91,21 @@ function p(e) {
   })
 }
 
-function m(e) {
+function p(e) {
   let {
     application: t,
     timestamp: r,
-    compact: l,
-    children: i
+    compact: i,
+    children: l
   } = e;
-  return (0, n.jsxs)(p, {
+  return (0, n.jsxs)(m, {
     application: t,
     timestamp: r,
-    children: [l ? null : (0, n.jsx)(o.iWm, {
+    children: [i ? null : (0, n.jsx)(a.iWm, {
       className: s.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), i]
+    }), l]
   })
 }

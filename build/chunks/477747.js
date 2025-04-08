@@ -1,14 +1,14 @@
 /** Chunk was on 95477 **/
 r.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var n = r(442837),
-  l = r(430824),
-  i = r(50101),
-  o = r(981631);
+  i = r(430824),
+  l = r(50101),
+  a = r(981631);
 
-function a(e, t) {
-  let r = (0, n.e7)([l.Z], () => l.Z.getGuild(e)),
-    a = (0, i.Ek)(null == r ? void 0 : r.id, t);
-  return null != r && a && r.hasFeature(o.oNc.ENHANCED_ROLE_COLORS)
+function o(e, t) {
+  let r = (0, n.e7)([i.Z], () => i.Z.getGuild(e)),
+    o = (0, l.Ek)(null == r ? void 0 : r.id, t);
+  return null != r && o && r.hasFeature(a.oNc.ENHANCED_ROLE_COLORS)
 }
