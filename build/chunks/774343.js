@@ -1,6 +1,6 @@
 /** Chunk was on 39168 **/
 n.d(t, {
-  Z: () => O
+  Z: () => S
 });
 var l, r, i, o, a, s, u = n(442837),
   c = n(570140),
@@ -19,7 +19,7 @@ function g(e) {
   if (h === t) return !1;
   h = t
 }
-class S extends(s = u.ZP.Store) {
+class O extends(s = u.ZP.Store) {
   initialize() {
     this.waitFor(E.Z, p.Z, C.Z, f.Z, d.Z)
   }
@@ -27,13 +27,13 @@ class S extends(s = u.ZP.Store) {
     return null != h ? h : E.Z.fallbackRoute
   }
 }
-r = "AppViewStore", (l = "displayName") in S ? Object.defineProperty(S, l, {
+r = "AppViewStore", (l = "displayName") in O ? Object.defineProperty(O, l, {
   value: r,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : S[l] = r;
-let O = new S(c.Z, {
+}) : O[l] = r;
+let S = new O(c.Z, {
   OVERLAY_INITIALIZE: function() {
     let e = p.Z.getPrivateChannelIds(),
       t = C.Z.getChannelId(_.ME);

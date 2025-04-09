@@ -1,8 +1,8 @@
 /** Chunk was on 39168 **/
 n.d(t, {
   ED: () => g,
-  fO: () => O,
-  qp: () => I
+  fO: () => S,
+  qp: () => T
 }), n(388685);
 var l = n(200651),
   r = n(192379),
@@ -45,8 +45,8 @@ let g = e => (0, l.jsx)(E.tE, h({
     ctaText: _.NW.string(_.t.v4HbPz),
     renderTail: !0
   }, e)),
-  S = [f.Z5c.ME, f.Z5c.COLLECTIBLES_SHOP, f.Z5c.NITRO_HOME],
-  O = e => {
+  O = [f.Z5c.ME, f.Z5c.COLLECTIBLES_SHOP, f.Z5c.NITRO_HOME],
+  S = e => {
     var {
       onClose: t,
       onCtaClick: n,
@@ -69,12 +69,12 @@ let g = e => (0, l.jsx)(E.tE, h({
       return r
     }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
     let _ = r.useRef(null),
-      [I, T] = r.useState(22),
+      [T, I] = r.useState(22),
       N = r.useRef(null),
       m = (0, s.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       A = r.useCallback(e => {
         if (m) {
-          let t = window.innerHeight - ((0, E.t4)() + O.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, E.t4)() + S.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
@@ -87,12 +87,12 @@ let g = e => (0, l.jsx)(E.tE, h({
     }, [u]);
     let P = (0, i.TH)().pathname,
       v = r.useCallback(() => {
-        S.includes(P) || (0, c.uL)(f.Z5c.ME), n()
+        O.includes(P) || (0, c.uL)(f.Z5c.ME), n()
       }, [P, n]),
       y = r.useCallback(e => {
         let t = Math.floor(e.width / 2) - 2;
-        I !== t && T(t)
-      }, [I]);
+        T !== t && I(t)
+      }, [T]);
     return (0, l.jsx)(E.WS, {
       positionControlRef: _,
       targetElementRef: a,
@@ -103,15 +103,15 @@ let g = e => (0, l.jsx)(E.tE, h({
       popoutElement: (0, l.jsx)(g, h({
         onClose: t,
         onCtaClick: v,
-        tailLeftOffset: I,
+        tailLeftOffset: T,
         coachmarkRef: N
       }, p)),
       spacing: 8,
       children: C
     })
   };
-O.COACHMARK_VERTICAL_OFFSET = 10;
-let I = e => {
+S.COACHMARK_VERTICAL_OFFSET = 10;
+let T = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,

@@ -25,7 +25,7 @@ let l = i.forwardRef((e, t) => {
     ref: t,
     className: a()(p, s.layout, {
       [s.muted]: !n && i,
-      [s.highlighted]: o && !i,
+      [s.highlighted]: o,
       [s.wrappedLayout]: l
     }),
     children: [(0, r.jsx)("div", {
