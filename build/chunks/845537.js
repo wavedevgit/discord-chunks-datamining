@@ -178,6 +178,7 @@ function M(e) {
     roleColors: f ? c : null,
     children: [d && (0, r.jsx)(o.FhE, {
       color: a.colorString,
+      colors: c,
       background: !1,
       tooltip: !1
     }), "@", a.name]

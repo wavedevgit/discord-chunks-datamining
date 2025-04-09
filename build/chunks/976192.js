@@ -16,8 +16,8 @@ var l = t(200651),
   b = t(496675),
   f = t(594174),
   p = t(981631),
-  O = t(388032),
-  m = t(965385);
+  m = t(388032),
+  O = t(965385);
 
 function N(e) {
   let {
@@ -44,14 +44,14 @@ function N(e) {
     W = y === N,
     A = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, v);
   if (!(U || A || W) || null == _ || E) return null;
-  let R = v.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
-    w = W ? R : O.NW.string(O.t.dilOFx);
+  let R = v.hasFeature(p.oNc.HUB) ? m.NW.string(m.t["+MWrWl"]) : m.NW.string(m.t["PKQB/P"]),
+    w = W ? R : m.NW.string(m.t.dilOFx);
   return (0, l.jsx)(a.sNh, {
     id: "change-nickname",
     label: (0, l.jsx)("div", {
-      className: m.labelWrapper,
+      className: O.labelWrapper,
       children: (0, l.jsx)("span", {
-        className: m.label,
+        className: O.label,
         children: w
       })
     }),

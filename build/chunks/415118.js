@@ -1,6 +1,6 @@
 /** Chunk was on 26976 **/
 n.d(t, {
-  default: () => _
+  default: () => U
 });
 var l = n(200651);
 n(192379);
@@ -33,15 +33,15 @@ var i = n(481060),
   I = n(332031),
   A = n(981631),
   T = n(388032);
-let _ = (0, a.Z)((0, o.Z)(function(e) {
+let U = (0, a.Z)((0, o.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     showModalItems: o = !0,
     showMediaItems: a = !1,
     showChatItems: u = !0,
-    context: _,
-    onSelect: U
+    context: U,
+    onSelect: _
   } = e, D = {
     page: A.ZY5.GUILD_CHANNEL,
     section: A.jXE.CHAT_USERNAME,
@@ -49,20 +49,20 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
   }, L = (0, C.Z)({
     userId: t.id,
     guildId: n
-  }), W = (0, v.Z)(t, n, _), w = (0, P.Z)(t.id, _), k = (0, I.Z)(t.id), R = (0, h.Z)({
+  }), W = (0, v.Z)(t, n, U), w = (0, P.Z)(t.id, U), k = (0, I.Z)(t.id), R = (0, h.Z)({
     user: t,
-    context: _
+    context: U
   }), B = (0, O.Z)({
     user: t,
     guildId: n,
-    context: _
+    context: U
   }), V = (0, Z.Z)({
     user: t
   }), q = (0, x.Z)(t.id), G = (0, S.Z)(t.id), F = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: D,
-    context: _
+    context: U
   }), Y = (0, f.Z)({
     user: t,
     guildId: n
@@ -91,7 +91,7 @@ let _ = (0, a.Z)((0, o.Z)(function(e) {
     navId: "user-context",
     onClose: r.Zy,
     "aria-label": T.NW.string(T.t.liqwPD),
-    onSelect: U,
+    onSelect: _,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
         children: [o && L, u && W, w, R, o && B, o && V, k]

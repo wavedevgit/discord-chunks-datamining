@@ -218,13 +218,14 @@ function G(e) {
     inlinePreview: f = !1
   } = e, {
     analyticsLocations: m
-  } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), E = (0, v.$V)(u, "RoleMention"), I = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = I && "dot" === g, T = I && "username" === g, N = T && E && null != n && null != n.secondaryColor ? (0, O.f)(n) : null, A = e => (0, r.jsxs)(y.Z, M(L({
+  } = (0, h.ZP)(p.Z.ROLE_MENTION), g = (0, l.e7)([_.Z], () => _.Z.roleStyle), E = (0, v.$V)(u, "RoleMention"), I = (null != t && 0 !== t || null != n && null != n.primaryColor) && !f, S = I && "dot" === g, T = I && "username" === g, N = E && null != n && null != n.secondaryColor ? (0, O.f)(n) : null, A = e => (0, r.jsxs)(y.Z, M(L({
     className: P.roleMention,
     color: T ? t : null,
-    roleColors: N
+    roleColors: T ? N : null
   }, e), {
     children: [S && null != t && (0, r.jsx)(c.FhE, {
       color: (0, s.Rf)(t),
+      colors: N,
       className: w.roleDot,
       background: !1,
       tooltip: !1

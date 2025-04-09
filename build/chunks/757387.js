@@ -7,14 +7,14 @@ n(192379);
 var r = n(442837),
   i = n(481060),
   d = n(239091),
-  a = n(883385),
-  s = n(108843),
+  s = n(883385),
+  a = n(108843),
   o = n(911969),
   c = n(947440),
   u = n(100527),
   Z = n(441061),
-  h = n(167675),
-  g = n(737013),
+  g = n(167675),
+  h = n(737013),
   f = n(607783),
   O = n(299206),
   N = n(976192),
@@ -23,18 +23,18 @@ var r = n(442837),
   j = n(592125),
   E = n(944486),
   P = n(777658),
-  C = n(858488),
-  m = n(185457),
+  m = n(858488),
+  C = n(185457),
   x = n(933409),
   M = n(570870),
   S = n(389052),
   y = n(24311),
   v = n(332576),
   _ = n(158508),
-  k = n(710631),
-  A = n(297047),
-  I = n(88966),
-  R = n(712301),
+  I = n(710631),
+  R = n(297047),
+  k = n(88966),
+  A = n(712301),
   U = n(558924),
   T = n(991307),
   G = n(37258),
@@ -43,75 +43,75 @@ var r = n(442837),
   L = n(332031),
   D = n(981631),
   Q = n(388032);
-let W = (0, s.Z)((0, a.Z)(function(e) {
+let W = (0, a.Z)((0, s.Z)(function(e) {
   let {
     user: l,
     guildId: n,
-    channel: a,
-    showMediaItems: s = !1,
+    channel: s,
+    showMediaItems: a = !1,
     showChatItems: u = !0,
     showChannelCallItems: W = !1,
-    showModalItems: H = !0,
-    showStageChannelItems: V = !1,
+    showModalItems: V = !0,
+    showStageChannelItems: H = !1,
     context: B,
     onSelect: F,
     onHeightUpdate: X,
     viewingChannelId: Y,
     onInteraction: K
-  } = e, J = a.id, $ = {
+  } = e, $ = s.id, J = {
     page: D.ZY5.GUILD_CHANNEL,
     section: D.jXE.CHAT_USERNAME,
     object: D.qAy.CONTEXT_MENU_ITEM
   }, z = (0, G.Z)({
     userId: l.id,
     guildId: n,
-    channelId: J,
+    channelId: $,
     showGuildProfile: !0
-  }), ee = (0, A.Z)(l, n, B), el = (0, I.Z)(l.id, B), en = (0, L.Z)(l.id), et = (0, y.Z)({
+  }), ee = (0, R.Z)(l, n, B), el = (0, k.Z)(l.id, B), en = (0, L.Z)(l.id), et = (0, y.Z)({
     user: l,
     context: B
-  }), er = (0, m.Z)({
+  }), er = (0, C.Z)({
     user: l,
     guildId: n,
-    channelId: J,
+    channelId: $,
     context: B
-  }), ei = (0, C.Z)({
+  }), ei = (0, m.Z)({
     user: l
-  }), ed = (0, q.Z)(l.id), ea = (0, T.Z)(l.id), es = (0, f.B)({
+  }), ed = (0, q.Z)(l.id), es = (0, T.Z)(l.id), ea = (0, f.B)({
     userId: l.id,
-    channelId: J,
-    guildId: a.getGuildId()
+    channelId: $,
+    guildId: s.getGuildId()
   }), eo = (0, N.Z)({
     guildId: n,
     userId: l.id,
-    analyticsLocation: $,
+    analyticsLocation: J,
     context: B
-  }), ec = (0, k.Z)({
+  }), ec = (0, I.Z)({
     user: l,
     guildId: n
   }), eu = (0, c.Z)(null, l), eZ = (0, P.Z)({
     user: l
-  }), eh = (0, S.Z)({
+  }), eg = (0, S.Z)({
     user: l,
     guildId: n,
-    channelId: J,
+    channelId: $,
     location: "GuildChannelUserContextMenu"
-  }), eg = (0, _.Z)({
+  }), eh = (0, _.Z)({
     user: l,
     guildId: n,
-    channelId: J,
+    channelId: $,
     location: "GuildChannelUserContextMenu"
-  }), ef = (0, x.Z)(l, n, J), eO = (0, w.Z)(l.id, n), eN = (0, R.Z)(l, n), ep = (0, O.Z)({
+  }), ef = (0, x.Z)(l, n, $), eO = (0, w.Z)(l.id, n), eN = (0, A.Z)(l, n), ep = (0, O.Z)({
     id: l.id,
     label: Q.NW.string(Q.t["/AXYnJ"])
-  }), eb = (0, v.Z)(l.id, J), ej = (0, h.Z)(l.id), eE = (0, Z.Z)(J), eP = (0, p.Z)(l), eC = (0, b.Z)(l, n, J), em = (0, r.e7)([j.Z], () => null != Y ? j.Z.getChannel(Y) : null), ex = (0, M.Z)({
+  }), eb = (0, v.Z)(l.id, $), ej = (0, g.Z)(l.id), eE = (0, Z.Z)($), eP = (0, p.Z)(l), em = (0, b.Z)(l, n, $), eC = (0, r.e7)([j.Z], () => null != Y ? j.Z.getChannel(Y) : null), ex = (0, M.Z)({
     commandType: o.yU.USER,
     commandTargetId: l.id,
-    channel: null != em ? em : a,
+    channel: null != eC ? eC : s,
     guildId: n,
     onHeightUpdate: X,
     context: B
-  }), eM = (0, g.Z)(l.id), eS = (0, r.e7)([E.Z], () => E.Z.getVoiceChannelId()), ey = (0, U.Z)(l, eS), ev = l.isNonUserBot();
+  }), eM = (0, h.Z)(l.id), eS = (0, r.e7)([E.Z], () => E.Z.getVoiceChannelId()), ey = (0, U.Z)(l, eS), ev = l.isNonUserBot();
   return (0, t.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: d.Zy,
@@ -120,15 +120,15 @@ let W = (0, s.Z)((0, a.Z)(function(e) {
     onInteraction: K,
     children: [!ev && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsxs)(i.kSQ, {
-        children: [eP, V && eC]
+        children: [eP, H && em]
       }), (0, t.jsxs)(i.kSQ, {
-        children: [H && z, u && ee, el, et, ey, H && er, H && ei, en]
-      }), s && (0, t.jsx)(i.kSQ, {
+        children: [V && z, u && ee, el, et, ey, V && er, V && ei, en]
+      }), a && (0, t.jsx)(i.kSQ, {
         children: ed
       }), (0, t.jsx)(i.kSQ, {
-        children: H && eu
+        children: V && eu
       }), (0, t.jsxs)(i.kSQ, {
-        children: [s && ea, s && es, s && eb, H && eo, ex, H && ec, eZ, H && eg, H && eh, W && eM]
+        children: [a && es, a && ea, a && eb, V && eo, ex, V && ec, eZ, V && eh, V && eg, W && eM]
       }), (0, t.jsx)(i.kSQ, {
         children: ef
       }), (0, t.jsxs)(i.kSQ, {

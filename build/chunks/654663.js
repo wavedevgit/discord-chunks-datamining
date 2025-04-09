@@ -17,8 +17,8 @@ var r = t(442837),
   b = t(819403),
   f = t(163612),
   p = t(592125),
-  O = t(944486),
-  m = t(777658),
+  m = t(944486),
+  O = t(777658),
   N = t(858488),
   h = t(44652),
   j = t(185457),
@@ -53,8 +53,8 @@ let k = (0, u.Z)((0, o.Z)(function(e) {
   }), L = (0, E.Z)(n, t, u), V = (0, C.Z)(n.id, u), q = (0, R.Z)(n.id), H = (0, v.Z)({
     user: n,
     context: u
-  }), B = (0, r.e7)([O.Z, p.Z], () => {
-    let e = O.Z.getVoiceChannelId();
+  }), B = (0, r.e7)([m.Z, p.Z], () => {
+    let e = m.Z.getVoiceChannelId();
     return p.Z.getChannel(e)
   }), {
     enabled: K
@@ -80,7 +80,7 @@ let k = (0, u.Z)((0, o.Z)(function(e) {
   }), J = (0, _.Z)({
     user: n,
     guildId: t
-  }), $ = (0, c.Z)(null, n), ee = (0, m.Z)({
+  }), $ = (0, c.Z)(null, n), ee = (0, O.Z)({
     user: n
   }), en = (0, h.Z)({
     user: n

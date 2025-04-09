@@ -96,16 +96,16 @@ function C(e) {
     colorRoleName: V
   } = r, X = (0, s.e7)([m.Z], () => m.Z.roleStyle), Y = "username" === X, $ = (0, g.X$)(), q = (0, O.Z)(null != L ? L : B, "BaseUsername"), Q = (0, j.ic)({
     location: "BaseUsername"
-  }), K = (0, P.Z)(n), ee = Y && q && null != J && null != J.primaryColor && null != J.secondaryColor, et = (0, u.Nv7)(null == J ? void 0 : J.primaryColor, null == J ? void 0 : J.secondaryColor, null == J ? void 0 : J.tertiaryColor), {
-    text: er,
-    gradient: en
-  } = ee ? et : {
+  }), K = (0, P.Z)(n), ee = q && null != J && null != J.primaryColor && null != J.secondaryColor, et = Y && ee, er = (0, u.Nv7)(null == J ? void 0 : J.primaryColor, null == J ? void 0 : J.secondaryColor, null == J ? void 0 : J.tertiaryColor), {
+    text: en,
+    gradient: el
+  } = et ? er : {
     text: {},
     gradient: {}
-  }, el = {
-    className: o()([S.username, ee && er.gradientClassName, ee && en.gradientClassName]),
+  }, ei = {
+    className: o()([S.username, et && en.gradientClassName, et && el.gradientClassName]),
     style: (() => {
-      if (Y) return ee && null != J ? N({}, er.gradientStyle) : null != W ? {
+      if (Y) return et && null != J ? N({}, en.gradientStyle) : null != W ? {
         color: W
       } : void 0
     })(),
@@ -113,14 +113,14 @@ function C(e) {
     onContextMenu: A,
     children: U + H,
     "data-text": U + H
-  }, ei = i.useMemo(() => R ? (0, l.jsx)(b.ZP, {
+  }, ea = i.useMemo(() => R ? (0, l.jsx)(b.ZP, {
     primaryGuild: r.primaryGuild,
     userId: n.author.id,
     contextGuildId: B,
     className: S.clanTagChiplet
-  }) : null, [R, r.primaryGuild, B, n.author.id]), ea = null != f ? f : n.author, eo = null != D && null != E ? (0, l.jsx)(v.Z, {
+  }) : null, [R, r.primaryGuild, B, n.author.id]), eo = null != f ? f : n.author, ec = null != D && null != E ? (0, l.jsx)(v.Z, {
     targetElementRef: M,
-    user: ea,
+    user: eo,
     renderPopout: D,
     shouldShow: E,
     shouldShowOnHover: K && Q,
@@ -128,7 +128,7 @@ function C(e) {
     position: c.tq ? "window_center" : "right",
     avatarUrl: null != r.guildMemberAvatar && null != B ? (0, h.JM)({
       guildId: B,
-      userId: ea.id,
+      userId: eo.id,
       avatar: r.guildMemberAvatar,
       size: 80
     }) : void 0,
@@ -156,29 +156,30 @@ function C(e) {
         children: [(0, l.jsx)(u.P3F, w(N({
           tag: "span",
           innerRef: M
-        }, r, el), {
-          className: o()(el.className, S.clickable, Z)
-        })), ei]
+        }, r, ei), {
+          className: o()(ei.className, S.clickable, Z)
+        })), ea]
       })
     }
   }) : (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsx)(u.P3F, w(N({}, el), {
-      className: o()(el.className, Z)
-    })), ei]
-  }), ec = null != F ? F[0] : null, es = null != F ? F[1] : null;
+    children: [(0, l.jsx)(u.P3F, w(N({}, ei), {
+      className: o()(ei.className, Z)
+    })), ea]
+  }), es = null != F ? F[0] : null, eu = null != F ? F[1] : null;
   return (0, l.jsxs)(d.Gt, {
     value: z,
-    children: [null != ec && R ? (0, l.jsxs)(l.Fragment, {
-      children: [" ", ec, " "]
+    children: [null != es && R ? (0, l.jsxs)(l.Fragment, {
+      children: [" ", es, " "]
     }) : null, "dot" === X ? (0, l.jsx)(u.FhE, {
       color: W,
+      colors: ee ? J : null,
       name: V,
       className: S.roleDot
-    }) : null, eo, !R && (0, l.jsx)(b.ZP, {
+    }) : null, ec, !R && (0, l.jsx)(b.ZP, {
       primaryGuild: r.primaryGuild,
       userId: n.author.id,
       contextGuildId: B,
       className: S.clanTagChiplet
-    }), null != es ? es : null, null == ec || R ? null : ec, null != n && (0, x.f)(n) && $ && _ ? (0, l.jsx)(T, {}) : null]
+    }), null != eu ? eu : null, null == es || R ? null : es, null != n && (0, x.f)(n) && $ && _ ? (0, l.jsx)(T, {}) : null]
   })
 }

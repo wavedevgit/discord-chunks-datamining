@@ -16,9 +16,9 @@ var l = t(200651),
   b = t(496675),
   f = t(594174),
   p = t(981631),
-  O = t(388032);
+  m = t(388032);
 
-function m(e) {
+function O(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -65,18 +65,18 @@ function h(e, n, h) {
   let E = _ || P.ownerId === v.id && P.type === p.d4z.PRIVATE_THREAD;
   return [E ? (0, l.jsx)(a.sNh, {
     id: "remove",
-    label: P.isForumPost() ? O.NW.formatToPlainString(O.t.v2KNNz, {
+    label: P.isForumPost() ? m.NW.formatToPlainString(m.t.v2KNNz, {
       user: e.username
-    }) : O.NW.formatToPlainString(O.t["27xWaW"], {
+    }) : m.NW.formatToPlainString(m.t["27xWaW"], {
       user: e.username
     }),
     color: "danger",
     action: () => c.Z.removeMember(P, e.id, "Context Menu")
   }) : null, (0, s.BK)(e, x) ? (0, l.jsx)(a.sNh, {
     id: "kick",
-    label: E ? O.NW.formatToPlainString(O.t["1Ie87u"], {
+    label: E ? m.NW.formatToPlainString(m.t["1Ie87u"], {
       user: e.username
-    }) : O.NW.formatToPlainString(O.t["9l/iTU"], {
+    }) : m.NW.formatToPlainString(m.t["9l/iTU"], {
       user: e.username
     }),
     color: "danger",
@@ -84,16 +84,16 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("5454").then(t.bind(t, 854360));
-      return t => (0, l.jsx)(n, N(m({}, t), {
+      return t => (0, l.jsx)(n, N(O({}, t), {
         guildId: x.id,
         user: e
       }))
     })
   }) : null, (0, s.mm)(e, x) ? (0, l.jsx)(a.sNh, {
     id: "ban",
-    label: E ? O.NW.formatToPlainString(O.t.i62APT, {
+    label: E ? m.NW.formatToPlainString(m.t.i62APT, {
       user: e.username
-    }) : O.NW.formatToPlainString(O.t.WnpUBg, {
+    }) : m.NW.formatToPlainString(m.t.WnpUBg, {
       user: e.username
     }),
     color: "danger",
@@ -101,7 +101,7 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("43350").then(t.bind(t, 98746));
-      return t => (0, l.jsx)(n, N(m({}, t), {
+      return t => (0, l.jsx)(n, N(O({}, t), {
         guildId: x.id,
         user: e
       }))
