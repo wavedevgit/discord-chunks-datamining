@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(53691),
   E = n(165583),
   j = n(267717),
-  O = n(643879),
-  C = n(350327),
+  C = n(643879),
+  O = n(350327),
   S = n(996073),
   v = n(25990),
   T = n(626135),
@@ -99,7 +99,7 @@ function V(e) {
     sourceAnalyticsLocations: ei
   } = (0, d.ZP)(c.Z.USER_SETTINGS_TRY_OUT_PREMIUM), es = e => {
     if (e) {
-      if ((0, l.I5)(q), (0, C.z5)(K), (0, C.ho)(X), null != Q) {
+      if ((0, l.I5)(q), (0, O.z5)(K), (0, O.ho)(X), null != Q) {
         let e = m.Z.getProduct(Q.skuId);
         null != e && (0, p.G1)(e) ? (0, u.fK)(e.skuId).then(() => (0, l.cV)(Q)) : null != g.Z.getPurchase(Q.skuId) && (0, l.cV)(Q)
       }
@@ -166,24 +166,24 @@ function V(e) {
           }), (0, r.jsx)(w.Z, {
             className: U.customizationSection,
             user: V,
-            pendingAvatarSrc: (0, O.SD)({
+            pendingAvatarSrc: (0, C.SD)({
               userId: V.id,
               image: null != q ? q : z
             }),
             pendingColors: null != K ? K : Y,
-            onThemeColorsChange: C.rf,
+            onThemeColorsChange: O.rf,
             showPremiumIcon: !1,
             preventDisabled: !0
           }), (0, r.jsx)(D.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
             showRemoveBannerButton: null != X,
-            onBannerChange: C.f4,
+            onBannerChange: O.f4,
             showPremiumIcon: !1
           }), (0, r.jsx)(P.Z, {
             className: U.customizationSection,
             isTryItOutFlow: !0,
-            onAvatarChange: C.c_,
+            onAvatarChange: O.c_,
             showRemoveAvatarButton: !1,
             changeAvatarButtonText: M.NW.string(M.t["7z0D1d"]),
             sectionTitle: M.NW.string(M.t.vtFfPT)

@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var r = n(200651),
   i = n(192379),
@@ -53,13 +53,13 @@ function j(e, t) {
   }), e
 }
 
-function O() {
+function C() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
     removeToolsCache: N
   } = (0, g.L3)(), {
-    setImgCache: O
+    setImgCache: C
   } = (0, g.W_)(), A = (0, i.useCallback)(e => {
     let t = m[e];
     null != t && c({
@@ -146,7 +146,7 @@ function O() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               r = await n.arrayBuffer();
-            O(t, t, (0, h.xh)(r)), f(t, t, p.jD)
+            C(t, t, (0, h.xh)(r)), f(t, t, p.jD)
           }
         }), (0, r.jsx)("div", {
           className: _.uploadedArea,
@@ -154,7 +154,7 @@ function O() {
             let {
               url: t
             } = e;
-            return (0, r.jsx)(C, {
+            return (0, r.jsx)(O, {
               src: t,
               onSetStatic: A,
               removeAsset: R
@@ -176,7 +176,7 @@ function O() {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     src: t,
     onSetStatic: n,

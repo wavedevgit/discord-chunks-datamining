@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(430824),
   E = n(63063),
   j = n(358085),
-  O = n(709054),
-  C = n(362352),
+  C = n(709054),
+  O = n(362352),
   S = n(413182),
   v = n(695346),
   T = n(726985),
@@ -34,7 +34,7 @@ var r = n(200651),
 
 function R(e) {
   let t = () => {
-    v.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? C.default.keys(_.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -82,7 +82,7 @@ function R(e) {
 function D() {
   let e = v.G6.useSetting(),
     t = v.Wz.useSetting(),
-    n = (0, C.Yd)("activity privacy tab"),
+    n = (0, O.Yd)("activity privacy tab"),
     i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
       v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)

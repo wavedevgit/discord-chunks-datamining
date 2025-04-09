@@ -30,7 +30,7 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function O(e) {
   return e
 }
 
-function C(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,7 +88,7 @@ class v extends(r = s.PureComponent) {
         className: E.sectionHeader,
         variant: "text-sm/normal",
         children: _.NW.string(_.t["50Auo6"])
-      }), (0, i.jsx)(b.ZP, C(O({}, e), {
+      }), (0, i.jsx)(b.ZP, O(C({}, e), {
         mode: b.ZP.Modes.EDIT,
         layout: r,
         onBillingAddressChange: this.handleAddressUpdate,
@@ -133,7 +133,7 @@ class v extends(r = s.PureComponent) {
           className: E.disabledTooltipWrapper,
           children: [n ? (0, i.jsx)(d.ua7, {
             text: _.NW.string(_.t["v6/z29"]),
-            children: e => (0, i.jsx)("div", O({
+            children: e => (0, i.jsx)("div", C({
               "aria-hidden": !0,
               className: E.disabledTooltipTarget
             }, e))
@@ -248,7 +248,7 @@ class v extends(r = s.PureComponent) {
       this.setState({
         billingAddress: e,
         billingAddressValid: t,
-        dirtyFields: C(O({}, this.state.dirtyFields), {
+        dirtyFields: O(C({}, this.state.dirtyFields), {
           billingAddress: n
         })
       })
@@ -264,7 +264,7 @@ class v extends(r = s.PureComponent) {
     }), j(this, "handleFieldChange", (e, t) => {
       null != t && this.setState({
         [t]: e,
-        dirtyFields: C(O({}, this.state.dirtyFields), {
+        dirtyFields: O(C({}, this.state.dirtyFields), {
           [t]: !0
         })
       })

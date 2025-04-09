@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -101,7 +101,7 @@ function j() {
   })
 }
 
-function O() {
+function C() {
   let e = (0, g.wE)(o.z.CLICKER_COACHMARK),
     {
       enableGame: t

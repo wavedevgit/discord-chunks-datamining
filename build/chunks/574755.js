@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -22,13 +22,13 @@ var r = n(200651),
   _ = n(388032),
   E = n(922284),
   j = n(802454),
-  O = n(20493);
+  C = n(20493);
 
-function C(e) {
+function O(e) {
   let {
     className: t,
     showHeader: n = !0
-  } = e, C = u.tU.useSetting(), {
+  } = e, O = u.tU.useSetting(), {
     enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "Clips Settings"
@@ -55,11 +55,11 @@ function C(e) {
         children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(x.Z, {})]
       })
     }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
-      className: n || T ? O.marginTop20 : t,
+      className: n || T ? C.marginTop20 : t,
       children: [(0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
-        value: C,
+        value: O,
         note: _.NW.string(_.t["wW9/zc"]),
         onChange: e => f.yg({
           allowVoiceRecording: e

@@ -119,7 +119,7 @@ function j(e) {
     analyticsLocation: d
   } = e, [u, h] = i.useState(!1), {
     analyticsLocations: E
-  } = (0, g.ZP)(), [j, O] = i.useState(!1), C = (0, m.ZP)(), S = null, v = null, T = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
+  } = (0, g.ZP)(), [j, C] = i.useState(!1), O = (0, m.ZP)(), S = null, v = null, T = [b.O0b.PAST_DUE, b.O0b.PAUSED].includes(t.status) ? t.currentPeriodStart : t.currentPeriodEnd, I = a()(T).add(l, "days").toDate();
   switch (t.status) {
     case b.O0b.PAST_DUE:
       v = N.NW.format(N.t["xaS18/"], {
@@ -173,7 +173,7 @@ function j(e) {
             await _({
               premiumSubscription: t,
               pauseDuration: l,
-              setIsCancelling: O,
+              setIsCancelling: C,
               setHasError: h,
               onClose: s,
               analyticsLocations: E,
@@ -183,7 +183,7 @@ function j(e) {
           children: N.NW.string(N.t["cY+Ooa"])
         }), (0, r.jsx)(c.zxk, {
           look: c.zxk.Looks.LINK,
-          color: (0, o.wj)(C) ? c.zxk.Colors.WHITE : c.zxk.Colors.PRIMARY,
+          color: (0, o.wj)(O) ? c.zxk.Colors.WHITE : c.zxk.Colors.PRIMARY,
           onClick: s,
           children: N.NW.string(N.t.h9tkAA)
         })]

@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(957730),
   E = n(442933),
   j = n(53691),
-  O = n(267717),
-  C = n(296810),
+  C = n(267717),
+  O = n(296810),
   S = n(921813),
   v = n(610794),
   T = n(935147),
@@ -111,7 +111,7 @@ function G() {
   }), ec = !X, ed = i.useRef(null);
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: J,
-    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(O.Z, {
       profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -165,7 +165,7 @@ function G() {
       className: V.floatingNitroUpsell,
       showUpsell: ec && !ea,
       text: U.NW.format(U.t.TmfgIy, {
-        onClick: () => (0, O.y)()
+        onClick: () => (0, C.y)()
       }),
       textVariant: "heading-md/medium",
       button: (0, r.jsxs)(d.gtL, {

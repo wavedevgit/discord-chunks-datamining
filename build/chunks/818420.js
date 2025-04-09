@@ -24,11 +24,11 @@ function f(e) {
   } = (0, l.ZP)(), f = t.nameplate, {
     pendingNameplate: b,
     pendingErrors: N
-  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, o.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, O = i.useCallback(() => {
+  } = (0, u._A)(), x = [s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE], [_, E] = (0, o.US)(x), j = _ === s.z.NAMEPLATE_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, C = i.useCallback(() => {
     E(g.L.TAKE_ACTION), (0, d.f)({
       analyticsLocations: n
     })
-  }, [n, E]), C = i.useCallback(() => {
+  }, [n, E]), O = i.useCallback(() => {
     (0, u.Wh)(null)
   }, []);
   return (0, r.jsx)(m.Z, {
@@ -41,13 +41,13 @@ function f(e) {
       className: h.section,
       children: [(0, r.jsx)(a.zxk, {
         size: a.zxk.Sizes.SMALL,
-        onClick: O,
+        onClick: C,
         children: p.NW.string(p.t.NzNLv7)
       }), (void 0 === b ? null != f : null != b) && (0, r.jsx)(a.zxk, {
         size: a.zxk.Sizes.SMALL,
         color: a.zxk.Colors.PRIMARY,
         look: a.zxk.Looks.LINK,
-        onClick: C,
+        onClick: O,
         children: p.NW.string(p.t.Vskkdn)
       })]
     })

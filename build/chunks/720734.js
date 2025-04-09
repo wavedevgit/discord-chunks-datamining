@@ -23,8 +23,8 @@ var r = n(200651),
   _ = n(410575),
   E = n(941129),
   j = n(634894),
-  O = n(586902),
-  C = n(980591),
+  C = n(586902),
+  O = n(980591),
   S = n(468363),
   v = n(326255),
   T = n(747017),
@@ -77,8 +77,8 @@ var r = n(200651),
   e_ = n(294629),
   eE = n(875527),
   ej = n(56848),
-  eO = n(378441),
-  eC = n(358820),
+  eC = n(378441),
+  eO = n(358820),
   eS = n(469887),
   ev = n(306609),
   eT = n(199902),
@@ -169,7 +169,7 @@ function e9(e) {
   }), x = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: E,
     highlightBadge: j,
-    setHighlightBadge: O,
+    setHighlightBadge: C,
     pendingBadges: S,
     setPendingBadges: v
   } = function() {
@@ -182,7 +182,7 @@ function e9(e) {
       [n, r] = i.useState(),
       [s, a] = i.useState(),
       [l, o] = i.useState(!1);
-    return (0, C.Z)(() => o(!0), 750), i.useEffect(() => {
+    return (0, O.Z)(() => o(!0), 750), i.useEffect(() => {
       let t = t => {
         var n;
         let {
@@ -237,7 +237,7 @@ function e9(e) {
       spacing: 14,
       fixed: !0,
       onRequestClose: () => {
-        c(), O(void 0), v(void 0)
+        c(), C(void 0), v(void 0)
       },
       preload: () => (0, eh.Z)(s, void 0, {
         withMutualGuilds: !1,
@@ -653,10 +653,10 @@ function e7(e) {
     dismissibleContents: _,
     nameplate: E,
     accountContainerRef: j
-  } = e, O = (0, en.A)(E);
+  } = e, C = (0, en.A)(E);
   return (0, r.jsxs)("div", {
     className: e$.buttons,
-    style: O,
+    style: C,
     children: [(0, r.jsx)(tn, {
       accountContainerRef: j,
       selfMute: n,
@@ -714,7 +714,7 @@ function te() {
       }
     }),
     d = (0, o.e7)([eT.Z], () => eT.Z.getAnyStreamForUser(n)),
-    u = (0, O.Z)({
+    u = (0, C.Z)({
       userId: n
     }),
     m = eH.ZP.useUserTag(t, {
@@ -732,7 +732,7 @@ function te() {
     } = (0, e_.Z)(p),
     {
       selfDeaf: _,
-      deaf: C
+      deaf: O
     } = (0, ex.Z)(p),
     v = (0, o.e7)([Z.C], () => {
       var e;
@@ -821,7 +821,7 @@ function te() {
       premiumSubscription: T,
       selfDeaf: _,
       selfMute: N,
-      serverDeaf: C,
+      serverDeaf: O,
       serverMute: h,
       speaking: u,
       speakingWhileMuted: I,
@@ -896,10 +896,10 @@ function tn(e) {
     onClick: _,
     onContextMenu: E,
     nameplate: j,
-    accountContainerRef: O
-  } = e, C = t || s || n, S = i.useRef(null), v = i.useRef(null), T = (0, m.O)(C ? "unmute" : "mute"), I = (0, g.P)(C ? "unmute" : "mute"), {
+    accountContainerRef: C
+  } = e, O = t || s || n, S = i.useRef(null), v = i.useRef(null), T = (0, m.O)(O ? "unmute" : "mute"), I = (0, g.P)(O ? "unmute" : "mute"), {
     activeVoice: y
-  } = (0, eO.o)(), R = null != y, D = (0, ej.z)(y), Z = (0, o.e7)([eR.ZP], () => eR.ZP.isConnected()), {
+  } = (0, eC.o)(), R = null != y, D = (0, ej.z)(y), Z = (0, o.e7)([eR.ZP], () => eR.ZP.isConnected()), {
     Component: w,
     events: k,
     play: L
@@ -917,7 +917,7 @@ function tn(e) {
     location: A.Z.AUDIO_INPUT_BUTTON,
     autoTrackExposure: !0
   });
-  i.useEffect(() => () => L(), [C, L]);
+  i.useEffect(() => () => L(), [O, L]);
   let H = i.useCallback(e => {
       E(e, G)
     }, [E, G]),
@@ -955,7 +955,7 @@ function tn(e) {
           size: "custom",
           width: 20,
           height: 20,
-          color: C ? f.TVs.colors.STATUS_DANGER : "currentColor",
+          color: O ? f.TVs.colors.STATUS_DANGER : "currentColor",
           className: b
         }),
         onClick: _,
@@ -964,20 +964,20 @@ function tn(e) {
         className: a()({
           [e$.micButtonWithMenu]: F
         }),
-        redGlow: C && U,
+        redGlow: O && U,
         "aria-label": eQ.NW.string(eQ.t["w4m94+"]),
-        "aria-checked": C,
+        "aria-checked": O,
         disabled: c
       }), F && (0, r.jsx)(f.yRy, {
         targetElementRef: v,
         position: "top",
         align: "left",
         nudgeAlignIntoViewport: !1,
-        overridePositionRef: O,
+        overridePositionRef: C,
         animation: f.yRy.Animation.FADE,
         useMouseEnter: !0,
         ignoreModalClicks: !0,
-        onRequestOpen: eC.r5,
+        onRequestOpen: eO.r5,
         onRequestClose: K,
         shouldShow: z,
         renderPopout: e => {
@@ -1036,13 +1036,13 @@ function tn(e) {
                   size: "custom",
                   width: 12,
                   height: 12,
-                  color: U && C ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
+                  color: U && O ? f.TVs.colors.STATUS_DANGER : f.TVs.colors.TEXT_NORMAL
                 }),
                 role: "button",
                 className: a()([e$.buttonChevron], {
-                  [e$.redGlow]: C && U
+                  [e$.redGlow]: O && U
                 }),
-                redGlow: C && U,
+                redGlow: O && U,
                 "aria-label": eQ.NW.string(eQ.t.Hapb4O),
                 disabled: c,
                 onClick: e => {

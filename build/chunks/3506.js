@@ -23,8 +23,8 @@ var i = n(512722),
   _ = n(624864),
   E = n(957148),
   j = n(556296),
-  O = n(808506),
-  C = n(237997),
+  C = n(808506),
+  O = n(237997),
   S = n(626135);
 n(63063);
 var v = n(13140),
@@ -35,19 +35,19 @@ let A = P(null);
 
 function P(e) {
   var t;
-  let n = C.default.getNotificationPositionMode(),
+  let n = O.default.getNotificationPositionMode(),
     r = n !== T._vf.DISABLED,
     i = j.ZP.getOverlayKeybind(),
     s = j.ZP.getOverlayChatKeybind();
   return {
-    enabled: O.default.enabled,
+    enabled: C.default.enabled,
     notifications_enabled: r,
     notifications_position: r ? n : null,
     text_notifications_mode: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT) ? "DISABLED" : "ENABLED",
     hotkey: null != i ? (0, v.BB)(i.shortcut) : null,
     text_activation_hotkey: null != s ? (0, v.BB)(s.shortcut) : null,
-    text_opacity_slider: C.default.getTextWidgetOpacity(),
-    old_enabled: null != (t = null == e ? void 0 : e.enabled) ? t : O.default.enabled
+    text_opacity_slider: O.default.getTextWidgetOpacity(),
+    old_enabled: null != (t = null == e ? void 0 : e.enabled) ? t : C.default.enabled
   }
 }
 
@@ -71,18 +71,18 @@ function D(e) {
     oopEnabled: i,
     legacyEnabled: a
   } = (0, o.cj)([x.default], () => x.default.getGlobalEnabledStatus()), {
-    avatarSizeMode: O,
+    avatarSizeMode: C,
     displayNameMode: v,
     displayUserMode: D,
     textChatDisabled: Z,
     notificationPositionMode: w,
     shouldShowKeybindIndicators: k
-  } = (0, o.cj)([C.default, _.Z], () => ({
-    avatarSizeMode: C.default.getAvatarSizeMode(),
-    displayNameMode: C.default.getDisplayNameMode(),
-    displayUserMode: C.default.getDisplayUserMode(),
-    notificationPositionMode: C.default.getNotificationPositionMode(),
-    shouldShowKeybindIndicators: C.default.showKeybindIndicators,
+  } = (0, o.cj)([O.default, _.Z], () => ({
+    avatarSizeMode: O.default.getAvatarSizeMode(),
+    displayNameMode: O.default.getDisplayNameMode(),
+    displayUserMode: O.default.getDisplayUserMode(),
+    notificationPositionMode: O.default.getNotificationPositionMode(),
+    shouldShowKeybindIndicators: O.default.showKeybindIndicators,
     textChatDisabled: _.Z.isNotificationDisabled(b.OverlayNotificationDisabledSetting.TEXT_CHAT)
   })), W = (0, o.e7)([j.ZP], () => j.ZP.getOverlayKeybind()), L = (0, N.Z)({
     location: "overlay_user_settings"
@@ -167,7 +167,7 @@ function D(e) {
             } = e;
             return u.Z.setAvatarSizeMode(t)
           },
-          value: O
+          value: C
         })
       }), (0, r.jsx)(R, {
         title: I.NW.string(I.t.J0dpcH),

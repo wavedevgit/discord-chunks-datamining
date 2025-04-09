@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685), n(457542);
 var r = n(200651),
   i = n(192379),
@@ -54,10 +54,10 @@ function E(e) {
     case b.ABu.TIKTOK:
       j = (0, g.hf)(m, _.metadataItem)
   }
-  let O = (0, u.FI)(m[N.PC.CREATED_AT], h),
-    C = null,
+  let C = (0, u.FI)(m[N.PC.CREATED_AT], h),
+    O = null,
     S = x.NW.string(x.t.wzzjk5);
-  return (null == j || 0 === j.length) && null == O && (C = (0, r.jsx)(l.Text, {
+  return (null == j || 0 === j.length) && null == C && (O = (0, r.jsx)(l.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
     children: x.NW.format(x.t.Up2ni4, {
@@ -65,17 +65,17 @@ function E(e) {
     })
   }, "label"), S = x.NW.string(x.t["LVh3//"])), a && (S = x.NW.string(x.t.i4jeWV)), (0, r.jsxs)("div", {
     className: _.metadataContainer,
-    children: [C, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
+    children: [O, null == j ? void 0 : j.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < j.length - 1 ? (0, r.jsx)("span", {
         className: _.dot
       }) : null]
-    })), null != j && j.length > 0 && null != O ? (0, r.jsx)("div", {
+    })), null != j && j.length > 0 && null != C ? (0, r.jsx)("div", {
       className: _.dot
-    }) : null, null != O ? (0, r.jsx)(l.Text, {
+    }) : null, null != C ? (0, r.jsx)(l.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
       children: x.NW.format(x.t["9rfonp"], {
-        date: O
+        date: C
       })
     }, "member-since") : null, (0, r.jsx)(l.zxk, {
       className: _.metadataRefreshButton,
@@ -168,7 +168,7 @@ function j(e) {
   })
 }
 
-function O() {
+function C() {
   let e = (0, s.e7)([h.Z], () => h.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => d.Z.isSupported(e.type)), [e]),
     [n, a] = i.useState([]),

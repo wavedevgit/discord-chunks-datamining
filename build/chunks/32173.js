@@ -1,7 +1,7 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => eC,
-  u: () => eO
+  Z: () => eO,
+  u: () => eC
 }), n(953529);
 var r, i = n(200651);
 n(192379);
@@ -23,8 +23,8 @@ var s = n(399606),
   _ = n(131951),
   E = n(594174),
   j = n(78839),
-  O = n(424218),
-  C = n(63063),
+  C = n(424218),
+  O = n(63063),
   S = n(74538),
   v = n(715037),
   T = n(780525),
@@ -77,23 +77,23 @@ var s = n(399606),
   e_ = n(371435),
   eE = n(83663),
   ej = n(317194),
-  eO = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
-let eC = () => {
+  eC = ((r = {}).CLIENT_THEMES = "clientThemes", r.CLIPS = "clips", r.COLLECTIBLE_DECO = "collectibleDeco", r.EARLY_ACCESS = "earlyAccess", r.ENTRANCE_SOUNDS = "entranceSounds", r.PROFILES = "profiles", r.REMIXING = "remixing", r.SERVER_BOOSTS = "serverBoosts", r.GREY_SERVER_BOOSTS = "greyServerBoosts", r.SPECIAL_MEMBER_PRICING = "specialMemberPricing", r.SPECIAL_MEMBER_PRICING_SEE_ALL_VARIANT = "specialMemberPricingSeeAllVariant", r.SPECIAL_SHOP_PERKS = "specialShopPerks", r.UNLIMITED_SUPER_REACTIONS = "unlimitedSuperReactions", r.SUPER_REACTIONS = "superReactions", r.UPCOMING_DROP_UNTIMED = "upcomingDropUntimed", r.CUSTOM_APP_ICONS = "customAppIcons", r.MORE_EMOJI_POWER = "moreEmojiPower", r.CUSTOM_SOUNDS_EVERYWHERE = "customSoundsEverywhere", r.SPECIAL_STICKER_ACCESS = "specialStickerAccess", r.LARGE_UPLOADS = "largeUploads", r.HD_VIDEO = "hdVideo", r.BADGE = "badge", r.GREY_BADGE = "greyBadge", r.ENTRANCE_SOUNDS_SEE_ALL_VARIATION = "entranceSoundsSeeAllVariation", r.EARLY_ACCESS_SEE_ALL_VARIATION = "earlyAccessSeeAllVariant", r.TENURE_REWARD_COLLECTIBLE = "tenureRewardCollectible", r.REFERRAL_PROGRAM = "referralProgram", r.NEW_APP_STYLES_UPDATE_JUNE_2024 = "newAppStylesUpdateJune2024", r.SERVER_PROFILES = "serverProfiles", r.TENURE_BADGE = "tenureBadge", r.PERMADECOS = "permadecos", r);
+let eO = () => {
   let {
     analyticsLocations: e
-  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, c.ZP)(), r = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), eO = (0, O.BU)(W.Uq / 1024, {
+  } = (0, m.ZP)(u.Z.PREMIUM_MARKETING_PERK_CARD), t = (0, c.ZP)(), r = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), eC = (0, C.BU)(W.Uq / 1024, {
     useKibibytes: !0
   }), {
-    premiumSubscription: eC,
+    premiumSubscription: eO,
     isEligibleForReward: eS
   } = (0, s.cj)([j.ZP], () => ({
     premiumSubscription: j.ZP.getPremiumTypeSubscription(),
     isEligibleForReward: j.ZP.getIsSubscriptionEligibleForReward()
-  })), ev = null != eC ? S.ZP.getPremiumPlanItem(eC) : null, eT = (null != ev ? S.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), ey = (0, S.I5)(eI, W.p9.TIER_2), eA = (0, S.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
+  })), ev = null != eO ? S.ZP.getPremiumPlanItem(eO) : null, eT = (null != ev ? S.ZP.getSkuIdForPlan(ev.planId) : null) === W.Si.TIER_2, eI = E.default.getCurrentUser(), ey = (0, S.I5)(eI, W.p9.TIER_2), eA = (0, S.I5)(eI, W.p9.TIER_0), eP = (0, I.bq)({
     showAnimations: !0
   }), eR = null != eP ? eP.initialPercentage : void 0, eD = null != eP ? eP.percentage : void 0, eZ = (0, p.Z)(_.Z), ew = (0, y.a)(), ek = (0, I.Kb)(L.qY), {
     isFractionalPremiumActive: eW
-  } = (0, g.Z)(), eL = null != eC && eC.hasPremiumAtLeast(W.p9.TIER_2), eB = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
+  } = (0, g.Z)(), eL = null != eO && eO.hasPremiumAtLeast(W.p9.TIER_2), eB = (0, f.wE)(a.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE), {
     enabled: eM
   } = v.Z.useExperiment({
     location: "usePerksDiscoverabilityCards"
@@ -139,7 +139,7 @@ let eC = () => {
           analyticsLocations: e
         })
       } : () => {
-        window.open(C.Z.getArticleURL(B.BhN.CLIPS), "_blank")
+        window.open(O.Z.getArticleURL(B.BhN.CLIPS), "_blank")
       },
       perkImage: $
     } : {
@@ -384,10 +384,10 @@ let eC = () => {
     largeUploads: {
       name: "largeUploads",
       title: F.NW.formatToPlainString(F.t.jqhAdH, {
-        premiumMaxSize: eO
+        premiumMaxSize: eC
       }),
       subtitle: F.NW.formatToPlainString(F.t["HI+cfn"], {
-        premiumMaxSize: eO
+        premiumMaxSize: eC
       }),
       perkImage: eb,
       description: F.NW.string(F.t["R0gx+/"])
@@ -414,7 +414,7 @@ let eC = () => {
       title: F.NW.string(F.t.tPY4o6),
       subtitle: F.NW.string(F.t.JY0grK),
       description: F.NW.format(F.t["2JqTFx"], {
-        helpdeskArticle: C.Z.getArticleURL(B.BhN.REFERRAL_PROGRAM)
+        helpdeskArticle: O.Z.getArticleURL(B.BhN.REFERRAL_PROGRAM)
       }),
       descriptionCta: F.NW.string(F.t.JST6jo),
       isPremiumGetCta: !eT || void 0,
@@ -434,7 +434,7 @@ let eC = () => {
       title: F.NW.string(F.t["57ngoq"]),
       subtitle: F.NW.string(F.t.piFFjY),
       description: F.NW.format(F.t.Pd7olp, {
-        learnMoreLink: C.Z.getArticleURL(B.BhN.PERMADECOS)
+        learnMoreLink: O.Z.getArticleURL(B.BhN.PERMADECOS)
       }),
       descriptionCta: ey ? F.NW.string(F.t.jVcuVV) : F.NW.string(F.t.JST6jo),
       isPremiumGetCta: !ey,

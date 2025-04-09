@@ -50,7 +50,7 @@ function j() {
   } = (0, l.cj)([b.Z, g.Z], () => ({
     theme: b.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, O] = i.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
+  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -157,7 +157,7 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              O(e.value)
+              C(e.value)
             },
             value: j
           })
@@ -167,7 +167,7 @@ function j() {
         })]
       }), (0, r.jsxs)("div", {
         className: _.textGrid,
-        children: [(0, r.jsx)("div", {}), C.map(e => (0, r.jsx)("div", {
+        children: [(0, r.jsx)("div", {}), O.map(e => (0, r.jsx)("div", {
           className: _.columnHeading,
           children: (0, r.jsx)(o.X6q, {
             variant: "eyebrow",
@@ -184,7 +184,7 @@ function j() {
               color: "text-muted",
               children: ["(", e * v / 100, ")"]
             }) : null]
-          }, e), C.map(t => {
+          }, e), O.map(t => {
             var n;
             let i = null != (n = "custom" === A ? I : A) ? n : "";
             return (0, r.jsx)("div", {

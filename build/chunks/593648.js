@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(476756),
   E = n(734934),
   j = n(223683),
-  O = n(312400),
-  C = n(115345),
+  C = n(312400),
+  O = n(115345),
   S = n(392888),
   v = n(106371),
   T = n(995774),
@@ -469,14 +469,14 @@ function Q() {
 }
 
 function $() {
-  let e = O.xT.useExperiment({
+  let e = C.xT.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
     }).enabled,
     {
       manuallyOpen: t
-    } = O.fs.useExperiment({
+    } = C.fs.useExperiment({
       location: "UserSettingsNotifications"
     }, {
       autoTrackExposure: !1
@@ -550,14 +550,14 @@ function $() {
 async function ee(e) {
   e(!0);
   let t = await (0, j.Tn)();
-  0 === t.length ? await (0, C.oL)() : m.Z.show({
+  0 === t.length ? await (0, O.oL)() : m.Z.show({
     title: U.NW.string(U.t["cY+Ooa"]),
     body: U.NW.format(U.t["7zTJJS"], {
       date: new Date(t[t.length - 1].recorded_at)
     }),
     cancelText: U.NW.string(U.t["ETE/oK"]),
     confirmText: U.NW.string(U.t.Rm96T0),
-    onConfirm: C.oL
+    onConfirm: O.oL
   }), e(!1)
 }
 

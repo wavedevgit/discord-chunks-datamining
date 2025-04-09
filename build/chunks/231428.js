@@ -21,8 +21,8 @@ var r, i = n(200651),
   _ = n(818035),
   E = n(509545),
   j = n(78839),
-  O = n(74538),
-  C = n(807160),
+  C = n(74538),
+  O = n(807160),
   S = n(981631),
   v = n(474936),
   T = n(231338),
@@ -116,7 +116,7 @@ function Z(e) {
           children: (0, i.jsx)(m.Den, {
             className: y.bottomDivider,
             ref: o,
-            children: f.map((e, t) => (0, i.jsx)(C.Z, {
+            children: f.map((e, t) => (0, i.jsx)(O.Z, {
               className: l()(y.paymentRow, y.bottomDivider),
               payment: e,
               locale: n,
@@ -149,7 +149,7 @@ class w extends(r = s.PureComponent) {
         className: y.externalRowBody,
         children: I.NW.format(I.t.eG0uZG, {
           paymentGatewayName: T.Vz[e.paymentGateway],
-          billingHistoryLink: (0, O.JE)(e.paymentGateway, "BILLING_HISTORY")
+          billingHistoryLink: (0, C.JE)(e.paymentGateway, "BILLING_HISTORY")
         })
       })]
     })
@@ -198,7 +198,7 @@ function k(e) {
   var t;
   let n = e.skuId,
     r = null == (t = e.subscription) ? void 0 : t.items[0].planId;
-  return !(null == n || null == r || Object.values(v.Si).includes(n) || (0, O.PV)(r))
+  return !(null == n || null == r || Object.values(v.Si).includes(n) || (0, C.PV)(r))
 }
 
 function W(e) {

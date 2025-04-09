@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -22,11 +22,11 @@ var r = n(200651),
   _ = n(839526),
   E = n(4046),
   j = n(423741);
-let O = i.forwardRef((e, t) => {
+let C = i.forwardRef((e, t) => {
   var n, s;
   let {
-    className: O,
-    isFooterVisible: C,
+    className: C,
+    isFooterVisible: O,
     isDarkMode: S,
     isReducedMotion: v,
     subscriptionTier: T
@@ -34,12 +34,12 @@ let O = i.forwardRef((e, t) => {
     analyticsLocations: I
   } = (0, c.ZP)(o.Z.PREMIUM_MARKETING_FOOTER_CTA), y = (0, g.Ng)(), A = (0, g.Wp)(y, f.Si.TIER_2) ? f.Si.TIER_2 : void 0, P = (0, p.N)(), R = (0, m.Nx)(), D = (0, u.rO)(), Z = i.useRef(null), [w, k] = i.useState(!1);
   return i.useEffect(() => {
-    !C || v || w || null == Z.current || Z.current.play()
-  }, [C, v, w]), (0, r.jsx)(c.Gt, {
+    !O || v || w || null == Z.current || Z.current.play()
+  }, [O, v, w]), (0, r.jsx)(c.Gt, {
     value: I,
     children: (0, r.jsxs)("div", {
       ref: t,
-      className: a()(x.container, O),
+      className: a()(x.container, C),
       children: [(0, r.jsx)(l.X6q, {
         className: x.footerHeader,
         variant: "display-md",

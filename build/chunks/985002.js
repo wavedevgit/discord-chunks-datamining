@@ -12,8 +12,8 @@ function o(e) {
   let {
     onError: t,
     onSuccess: n
-  } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, g] = r.useState(!1), [p, h] = r.useState(!1), [f, b] = r.useState(!1), [N, x] = r.useState(!1), [_, E] = r.useState(!1), [j, O] = r.useState(!1), C = o || d || m || p || N || j, S = r.useCallback(async e => {
-    if (!C) {
+  } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [m, g] = r.useState(!1), [p, h] = r.useState(!1), [f, b] = r.useState(!1), [N, x] = r.useState(!1), [_, E] = r.useState(!1), [j, C] = r.useState(!1), O = o || d || m || p || N || j, S = r.useCallback(async e => {
+    if (!O) {
       c(!0);
       try {
         await (0, s.Yw)(e.id, l.ne.ACTIVE), null == n || n()
@@ -24,8 +24,8 @@ function o(e) {
         c(!1)
       }
     }
-  }, [C, t, n]), v = r.useCallback(async e => {
-    if (!C) {
+  }, [O, t, n]), v = r.useCallback(async e => {
+    if (!O) {
       u(!0);
       try {
         await (0, s.Yw)(e.id, l.ne.DECLINED), null == n || n()
@@ -36,8 +36,8 @@ function o(e) {
         u(!1)
       }
     }
-  }, [C, t, n]), T = r.useCallback(async e => {
-    if (!C) {
+  }, [O, t, n]), T = r.useCallback(async e => {
+    if (!O) {
       g(!0);
       try {
         await (0, s.Yw)(e.id, l.ne.INACTIVE), null == n || n()
@@ -48,8 +48,8 @@ function o(e) {
         g(!1)
       }
     }
-  }, [C, t, n]), I = r.useCallback(async e => {
-    if (!C) {
+  }, [O, t, n]), I = r.useCallback(async e => {
+    if (!O) {
       h(!0);
       try {
         await (0, s.fc)(e.id), null == n || n()
@@ -60,7 +60,7 @@ function o(e) {
         h(!1)
       }
     }
-  }, [C, t, n]), y = r.useCallback(async () => {
+  }, [O, t, n]), y = r.useCallback(async () => {
     if (!f) {
       b(!0);
       try {
@@ -111,14 +111,14 @@ function o(e) {
         l = a.Z.getStartId(),
         o = a.Z.getSelectedTeenId();
       if (!j && null != l && null != o) {
-        O(!0);
+        C(!0);
         try {
           await s.ZP.fetchMoreTeenActivity(o, e, l, r.event_id)
         } catch (n) {
           let e = new i.Hx(n);
           null == t || t(e)
         } finally {
-          O(!1)
+          C(!1)
         }
       }
     }, [j, t]),

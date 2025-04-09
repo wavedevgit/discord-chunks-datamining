@@ -23,8 +23,8 @@ var r = n(200651),
   _ = n(612853),
   E = n(614277),
   j = n(712297),
-  O = n(982204),
-  C = n(653798),
+  C = n(982204),
+  O = n(653798),
   S = n(626135),
   v = n(932563),
   T = n(82856),
@@ -139,12 +139,12 @@ let B = e => e === P.Vt.FRACTIONAL_PREMIUM ? R.CL : A.XAJ,
       isGift: !1,
       currentPaymentSourceId: null
     }), a = i[n], l = (0, d.ed)("OrbCheckoutPurchaseDetails");
-    return void 0 === a ? (0, r.jsx)(C.PO, {
+    return void 0 === a ? (0, r.jsx)(O.PO, {
       children: (0, r.jsx)(s.$jN, {
         type: s.$jN.Type.PULSING_ELLIPSIS,
         className: w.purchaseDetailsSpinner
       })
-    }) : (0, r.jsx)(O.E, {
+    }) : (0, r.jsx)(C.E, {
       sku: a,
       shouldShowProductPreview: void 0 !== a && l,
       value: (0, r.jsx)(M, {
@@ -332,23 +332,23 @@ let B = e => e === P.Vt.FRACTIONAL_PREMIUM ? R.CL : A.XAJ,
       isRedeeming: b,
       orbRedemptionError: N,
       orbProductContext: _
-    } = (0, y.C)(), j = (0, v.c)(), O = (0, i.useRef)(j);
+    } = (0, y.C)(), j = (0, v.c)(), C = (0, i.useRef)(j);
     (0, c.ZP)(() => {
       m(A.rMx.PAYMENT_FLOW_LOADED)
     }), (0, i.useEffect)(() => {
       l === f.A.COMPLETED && n()
     }, [l, n]), (0, i.useEffect)(() => {
-      null != N && null !== O.current && (m(A.rMx.PAYMENT_FLOW_FAILED), O.current = null)
+      null != N && null !== C.current && (m(A.rMx.PAYMENT_FLOW_FAILED), C.current = null)
     }, [N, m]);
-    let C = (0, i.useCallback)(() => {
-      O.current = j, m(A.rMx.PAYMENT_FLOW_COMPLETED), h(() => {
+    let O = (0, i.useCallback)(() => {
+      C.current = j, m(A.rMx.PAYMENT_FLOW_COMPLETED), h(() => {
         o(f.A.COMPLETED), m(A.rMx.PAYMENT_FLOW_SUCCEEDED)
       })
     }, [h, o, j, m]);
     if (null == a || null == d) return (0, r.jsx)(s.$jN, {
       type: s.$jN.Type.WANDERING_CUBES
     });
-    let S = null != (t = O.current) ? t : j,
+    let S = null != (t = C.current) ? t : j,
       T = null != _ ? _.orbPriceAmount : null;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(x.Z, {}), (0, r.jsxs)(E.C3, {
@@ -364,7 +364,7 @@ let B = e => e === P.Vt.FRACTIONAL_PREMIUM ? R.CL : A.XAJ,
           orbPriceAmount: T,
           orbBalance: S,
           isSubmitting: b,
-          onClickCheckout: C
+          onClickCheckout: O
         })
       })]
     })

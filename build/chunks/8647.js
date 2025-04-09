@@ -29,7 +29,7 @@ let E = function(e) {
     promotion: E
   } = (0, f.mq)(), j = (0, a.e7)([d.ZP], () => d.ZP.getPremiumTypeSubscription());
   if (!(0, p.Vi)()) return null;
-  let O = new Date(E.endDate);
+  let C = new Date(E.endDate);
   return (0, r.jsx)(c.O, {
     newLocations: [o.Z.PREMIUM_MARKETING_PAGE_BANNER],
     children: (0, r.jsxs)("div", {
@@ -54,7 +54,7 @@ let E = function(e) {
             className: _.countdown,
             variant: "text-sm/bold",
             children: (0, r.jsx)(g.Z, {
-              endDate: O
+              endDate: C
             })
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
