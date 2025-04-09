@@ -53,7 +53,7 @@ function f(e) {
     className: p.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: h ? d.NW.format(d.t["fxI+pq"], {
+    children: h ? d.NW.format(d.t.geP3ra, {
       username: m.nick,
       usernameHook: f,
       channelName: t.content,
