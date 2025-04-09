@@ -100,31 +100,32 @@ function N(e) {
     applicationId: m,
     metadataField: g,
     operator: p
-  } = e, f = null != (n = null == l ? void 0 : l.index) ? n : -1, x = null != p ? p : h.iO.GREATER_THAN, j = Math.round(Number(null != (s = null == l || null == (t = l.configuration) ? void 0 : t.value) ? s : 0));
-  x === h.iO.GREATER_THAN ? j = Math.max(1, j + 1) : x === h.iO.LESS_THAN && (j = Math.max(0, j - 1));
-  let [N, _] = i.useState(j.toString());
+  } = e, x = null != (n = null == l ? void 0 : l.index) ? n : -1, j = null != p ? p : h.iO.GREATER_THAN, N = Math.round(Number(null != (s = null == l || null == (t = l.configuration) ? void 0 : t.value) ? s : 0));
+  j === h.iO.GREATER_THAN ? N = Math.max(1, N + 1) : j === h.iO.LESS_THAN && (N = Math.max(0, N - 1));
+  let [_, v] = i.useState(N.toString());
   return i.useEffect(() => {
-    _(N)
-  }, [N]), (0, r.jsx)(d.oil, {
+    v(_)
+  }, [_]), (0, r.jsx)(d.oil, {
+    "aria-label": f.NW.formatToPlainString(f.t["FTmi9/"], {}),
     inputRef: a,
     type: "number",
     className: b.numericalRuleInput,
     size: d.oil.Sizes.MINI,
-    value: N,
+    value: _,
     onChange: e => {
       if (null != l) {
         if ("" !== e) {
           var t;
           let n = Math.round(Number(e));
-          x === h.iO.GREATER_THAN ? n = Math.max(0, n - 1) : x === h.iO.LESS_THAN && (n = Math.max(1, n + 1)), c({
+          j === h.iO.GREATER_THAN ? n = Math.max(0, n - 1) : j === h.iO.LESS_THAN && (n = Math.max(1, n + 1)), c({
             connectionType: null != (t = null == u ? void 0 : u.type) ? t : h.Kt,
             applicationId: m,
             connectionMetadataField: g,
-            operator: x,
+            operator: j,
             value: n.toString()
-          }, f)
+          }, x)
         }
-        _(e)
+        v(e)
       }
     },
     disabled: o
@@ -135,17 +136,19 @@ function _(e) {
   let {
     titleText: t,
     fieldText: n,
-    metadataField: i,
-    existingPendingConfiguration: s,
-    platform: a,
-    applicationId: l,
-    onConfigurationChange: o,
-    locked: c
-  } = e;
+    metadataField: s,
+    existingPendingConfiguration: a,
+    platform: l,
+    applicationId: o,
+    onConfigurationChange: c,
+    locked: u
+  } = e, m = i.useId();
   return (0, r.jsxs)("div", {
     className: b.ruleContainer,
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(d.Text, {
+        tag: "label",
+        htmlFor: m,
         variant: "text-md/bold",
         className: b.ruleItemHeader,
         children: t
@@ -158,22 +161,23 @@ function _(e) {
         })
       })]
     }), (0, r.jsx)(d.rsf, {
+      id: m,
       className: b.ruleItemSwitch,
-      checked: (null == s ? void 0 : s.configuration.value) === "1",
+      checked: (null == a ? void 0 : a.configuration.value) === "1",
       onChange: e => {
         var t, n;
         let r = null;
         e && (r = {
-          connectionType: null != (t = null == a ? void 0 : a.type) ? t : h.Kt,
-          applicationId: l,
-          connectionMetadataField: i,
+          connectionType: null != (t = null == l ? void 0 : l.type) ? t : h.Kt,
+          applicationId: o,
+          connectionMetadataField: s,
           operator: h.iO.EQUAL,
           value: "1"
-        }), o(r, null != (n = null == s ? void 0 : s.index) ? n : -1)
+        }), c(r, null != (n = null == a ? void 0 : a.index) ? n : -1)
       },
-      disabled: c
+      disabled: u
     })]
-  }, i)
+  }, s)
 }
 
 function v(e) {
@@ -204,12 +208,14 @@ function v(e) {
       className: b.fieldText,
       children: n
     })]
-  });
+  }), v = i.useId();
   return (0, r.jsxs)("div", {
     className: b.ruleContainer,
     children: [(0, r.jsxs)("div", {
       className: b.ruleContainerLabel,
       children: [(0, r.jsx)(d.Text, {
+        tag: "label",
+        htmlFor: v,
         variant: "text-md/bold",
         className: b.ruleItemHeader,
         children: t
@@ -222,6 +228,7 @@ function v(e) {
         })
       })]
     }), (0, r.jsx)(d.rsf, {
+      id: v,
       className: b.ruleItemSwitch,
       checked: x,
       onChange: e => {

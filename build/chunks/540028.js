@@ -69,7 +69,7 @@ function I(e) {
     onSelect: E
   } = e;
   n && t();
-  let b = (0, i.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivityForChannel(p)),
+  let b = (0, i.e7)([c.ZP], () => c.ZP.getCurrentEmbeddedActivity()),
     y = (0, i.e7)([_.Z], () => _.Z.pipWindow),
     v = (0, i.e7)([d.Z], () => d.Z.getSelectedParticipant(p)),
     O = (0, i.e7)([d.Z], () => d.Z.getStreamParticipants(p));

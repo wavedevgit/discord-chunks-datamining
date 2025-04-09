@@ -47,23 +47,23 @@ function D(e) {
   }), W = (0, l.e7)([h.default], () => {
     var e;
     return null != (e = h.default.getCurrentUser()) ? e : null
-  }), M = (0, N.a)(), [U, z] = a.useState(null != (t = null == M ? void 0 : M.state) ? t : ""), [L, F] = a.useState(null != (n = null == M ? void 0 : M.emoji) ? n : null), [H, Y] = a.useState((0, x.Z)()), K = a.useRef(null), q = a.useRef(null), G = a.useRef(null), [V, X] = a.useState(null != B ? B : null), $ = U.length > 0 || null != L, Q = A && null != V ? V.label() : w.NW.string(w.t["xod36+"]), [J, ee] = a.useState(Q), {
+  }), M = (0, N.a)(), [U, z] = a.useState(null != (t = null == M ? void 0 : M.state) ? t : ""), [L, F] = a.useState(null != (n = null == M ? void 0 : M.emoji) ? n : null), [H, Y] = a.useState((0, x.Z)()), K = a.useRef(null), q = a.useRef(null), G = a.useRef(null), [V, X] = a.useState(null != B ? B : null), $ = U.length > 0 || null != L, J = A && null != V ? V.label() : w.NW.string(w.t["xod36+"]), [Q, ee] = a.useState(J), {
     ref: et,
     width: en
-  } = (0, c.Z)(Q);
+  } = (0, c.Z)(J);
   a.useEffect(() => {
     let e = G.current;
     if (null == en || null == e) return;
     let t = en - 78;
-    e.textContent = Q;
+    e.textContent = J;
     let n = e.getBoundingClientRect().width;
-    if (n <= t) ee(Q);
+    if (n <= t) ee(J);
     else {
-      let e = n / Q.length,
+      let e = n / J.length,
         r = Math.floor((t - 3 * e) / e);
-      ee("".concat(Q.substring(0, r)).concat("..."))
+      ee("".concat(J.substring(0, r)).concat("..."))
     }
-  }, [en, Q]), a.useEffect(() => {
+  }, [en, J]), a.useEffect(() => {
     b.default.track(T.rMx.OPEN_MODAL, {
       type: m.Z.CUSTOM_STATUS_MODAL,
       location_stack: Z
@@ -124,7 +124,7 @@ function D(e) {
           user: W,
           previewText: U,
           previewEmoji: L,
-          placeHolderText: Q,
+          placeHolderText: J,
           transitionState: i
         })
       }), (0, r.jsxs)(s.hjN, {
@@ -205,7 +205,7 @@ function D(e) {
             maxLength: C.s0,
             rows: 1,
             showRemainingCharacterCount: !1,
-            placeholder: J,
+            placeholder: Q,
             onChange: e => {
               z(e)
             },
@@ -216,7 +216,7 @@ function D(e) {
             inputRef: K
           }), (0, r.jsx)(s.nn4, {
             id: el,
-            children: "".concat(w.NW.string(w.t.EVV6ub), ": ").concat(Q)
+            children: "".concat(w.NW.string(w.t.EVV6ub), ": ").concat(J)
           }), (U.length > 0 || null != L) && (0, r.jsx)("div", {
             className: E.clearButtonWrapper,
             children: (0, r.jsx)(s.zxk, {

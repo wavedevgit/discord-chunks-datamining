@@ -8,7 +8,7 @@ var r = n(192379),
 
 function o(e) {
   let {
-    userActivity: t
+    connectedEmbeddedActivity: t
   } = e, n = null == t ? void 0 : t.applicationId;
   r.useEffect(() => {
     null != t && null != n && i.Z.dispatch({

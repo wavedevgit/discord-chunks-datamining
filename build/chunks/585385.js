@@ -5,12 +5,12 @@ n.d(t, {
 var l = n(200651);
 n(192379);
 var i = n(120356),
-  s = n.n(i),
-  r = n(481060),
+  r = n.n(i),
+  s = n(481060),
   a = n(410030),
   o = n(948851),
-  d = n(868728),
-  u = n(388032),
+  u = n(868728),
+  d = n(388032),
   c = n(821022),
   h = n(20493);
 let g = e => {
@@ -20,48 +20,48 @@ let g = e => {
     modalState: i,
     shouldHideTemporaryInviteToggle: g,
     onGenerateNewLink: m,
-    onToggleTemporary: x,
-    onSelectMaxAge: v,
+    onToggleTemporary: v,
+    onSelectMaxAge: x,
     onSelectMaxUses: p,
-    isGuestInviteCreationToggleEnabled: N,
-    onSetInviteFlags: I
+    isGuestInviteCreationToggleEnabled: I,
+    onSetInviteFlags: N
   } = e, f = (0, a.ZP)(), {
     maxAge: j,
     maxUses: S,
-    temporary: E,
-    flags: T
+    temporary: b,
+    flags: E
   } = i;
   return (0, l.jsxs)(l.Fragment, {
-    children: [(0, l.jsxs)(r.xBx, {
+    children: [(0, l.jsxs)(s.xBx, {
       children: [(0, l.jsx)("div", {
         className: c.closeButton,
-        children: (0, l.jsx)(r.olH, {
+        children: (0, l.jsx)(s.olH, {
           onClick: t
         })
       }), (0, l.jsx)("div", {
         className: c.headerContainer,
-        children: (0, l.jsx)(r.vwX, {
+        children: (0, l.jsx)(s.vwX, {
           id: n,
           tag: "h2",
-          className: s()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
-          children: u.NW.string(u.t.Atdlys)
+          className: r()(h.marginReset, c.headerCloseButtonSpacing, c.headerText),
+          children: d.NW.string(d.t.Atdlys)
         })
       })]
     }), (0, l.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: g,
       maxAge: j,
       maxUses: S,
-      temporary: E,
-      onToggleTemporary: x,
-      onSelectMaxAge: v,
+      temporary: b,
+      onToggleTemporary: v,
+      onSelectMaxAge: x,
       onSelectMaxUses: p,
       onGenerateNewLink: m,
-      isGuestInviteCreationToggleEnabled: N,
-      onSetInviteFlags: I,
-      inviteFlags: T
-    }), (0, l.jsx)(r.mzw, {
+      isGuestInviteCreationToggleEnabled: I,
+      onSetInviteFlags: N,
+      inviteFlags: E
+    }), (0, l.jsx)(s.mzw, {
       className: c.settingsFooter,
-      children: (0, l.jsx)(d.Z, {
+      children: (0, l.jsx)(u.Z, {
         theme: f,
         onConfirm: () => {
           m(), t()

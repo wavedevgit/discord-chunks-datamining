@@ -1,6 +1,6 @@
 /**
   Module ID: 47966
-  Original File Name: 83279a5177fdcd5c
+  Original File Name: 3bed1f1fb03ae264
 **/
 .container__1ce5d {
     position: relative
@@ -130,7 +130,7 @@
     height: 32px
 }
 
-.settingsButton__6be55:hover {
+.settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
     background-color: var(--bg-mod-subtle)
 }
 
@@ -479,6 +479,7 @@
 }
 
 .modal__28554 {
+    width: 480px;
     max-height: 640px;
     height: 75vh
 }
@@ -511,8 +512,7 @@
 }
 
 .recipientList__28554 {
-    scrollbar-gutter: stable both-edges;
-    padding: var(--space-sm) calc(var(--space-sm) - 8px)
+    padding: var(--space-sm)
 }
 
 .recipientRow__28554 {
@@ -575,11 +575,12 @@
 
 .footer__28554 {
     display: flex;
+    padding: var(--space-xl);
     border-top: 1px solid var(--border-subtle)
 }
 
 .footerContent__28554 {
-    flex: 1 1 auto
+    flex: 1 0 auto
 }
 
 .noScroll_e81c2b {
@@ -631,4 +632,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=83279a5177fdcd5c.css.map*/
+/*# sourceMappingURL=3bed1f1fb03ae264.css.map*/

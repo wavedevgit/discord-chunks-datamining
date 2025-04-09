@@ -18,17 +18,18 @@ function p(e) {
   } = e;
   r.useEffect(() => {
     async function e(e) {
+      var n;
       let {
-        location: n
-      } = e, r = (0, a.pY)(n);
-      if (null == r || !(0, s.Z)(r)) return;
-      l.Z.getVoiceChannelId() !== r && await (0, c.Z)({
-        channelId: r
+        location: r
+      } = e, o = null != (n = (0, a.pY)(r)) ? n : (0, a.wq)(r);
+      if (null == o || !(0, s.Z)(o)) return;
+      l.Z.getVoiceChannelId() !== o && await (0, c.Z)({
+        channelId: o
       });
-      let o = i.Z.getChannel(r),
-        d = null == o ? void 0 : o.guild_id;
+      let d = i.Z.getChannel(o),
+        p = null == d ? void 0 : d.guild_id;
       setTimeout(() => {
-        (0, u.Z)(d, n), null == t || t()
+        (0, u.Z)(p, r), null == t || t()
       }, 0)
     }
     return o.S.subscribe(d.CkL.OPEN_EMBEDDED_ACTIVITY, e), () => {

@@ -1,6 +1,6 @@
 /**
   Module ID: 96814
-  Original File Name: e3f8deaeacf0afc5
+  Original File Name: 76b9a31f657968c5
 **/
 .footer__6be55 {
     display: flex;
@@ -83,7 +83,7 @@
     height: 32px
 }
 
-.settingsButton__6be55:hover {
+.settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
     background-color: var(--bg-mod-subtle)
 }
 
@@ -432,6 +432,7 @@
 }
 
 .modal__28554 {
+    width: 480px;
     max-height: 640px;
     height: 75vh
 }
@@ -464,8 +465,7 @@
 }
 
 .recipientList__28554 {
-    scrollbar-gutter: stable both-edges;
-    padding: var(--space-sm) calc(var(--space-sm) - 8px)
+    padding: var(--space-sm)
 }
 
 .recipientRow__28554 {
@@ -528,11 +528,12 @@
 
 .footer__28554 {
     display: flex;
+    padding: var(--space-xl);
     border-top: 1px solid var(--border-subtle)
 }
 
 .footerContent__28554 {
-    flex: 1 1 auto
+    flex: 1 0 auto
 }
 
 .noScroll_e81c2b {
@@ -560,4 +561,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=e3f8deaeacf0afc5.css.map*/
+/*# sourceMappingURL=76b9a31f657968c5.css.map*/

@@ -486,7 +486,7 @@ let ek = function(e) {
   })), G = (0, w.Z)(), z = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), Y = null != G, q = (0, u.e7)([ei.Z], () => {
     var e;
     return (null != (e = null == G ? void 0 : G.channelId) ? e : ei.Z.getVoiceChannelId()) === l.id
-  }), K = (0, O.Z)(l, !0), Q = (0, u.e7)([C.ZP], () => C.ZP.getSelfEmbeddedActivityForChannel(l.id)), {
+  }), K = (0, O.Z)(l, !0), Q = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: et,
     limit: en
   } = (0, eu.Z)(l), {
