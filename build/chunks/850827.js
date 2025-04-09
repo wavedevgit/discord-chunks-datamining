@@ -25,12 +25,12 @@ var l = n(120356),
   S = n(606925),
   P = n(719216),
   N = n(429589),
-  I = n(636245),
-  E = n(697761),
+  E = n(636245),
+  I = n(697761),
   Z = n(611459),
   x = n(544671),
-  w = n(757182),
-  C = n(910424),
+  C = n(757182),
+  w = n(910424),
   T = n(981631),
   A = n(477839),
   D = n(388032),
@@ -68,10 +68,10 @@ let L = e => {
       look: U = c.zxk.Looks.OUTLINED,
       type: R,
       onAction: V
-    } = e, F = (0, s.e7)([b.default], () => {
+    } = e, B = (0, s.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), B = R === j.Y.STREAM_PREVIEW || null != o, Y = (0, h.Z)(t), G = Y || B ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    }), F = R === j.Y.STREAM_PREVIEW || null != o, Y = (0, h.Z)(t), G = Y || F ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === A.bO) {
       var z, H;
       return z = function(e) {
@@ -160,7 +160,7 @@ let L = e => {
         }
         if ((0, m.dS)(t)) {
           let e = (0, m.rq)(t);
-          return null == e ? null : (0, r.jsx)(I.Z, {
+          return null == e ? null : (0, r.jsx)(E.Z, {
             guildId: e.guildId,
             channelId: e.channelId,
             color: M,
@@ -168,14 +168,14 @@ let L = e => {
             onAction: V
           }, e.channelId)
         }
-        return B ? (0, r.jsx)(C.Z, {
-          isCurrentUser: F.id === l.id,
+        return F ? (0, r.jsx)(w.Z, {
+          isCurrentUser: B.id === l.id,
           color: M,
           look: U,
           applicationStream: o,
           onAction: V
         }, "watch-button") : (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(w.Z, {
+          children: [(0, r.jsx)(C.Z, {
             activity: t,
             color: M,
             look: U,
@@ -187,7 +187,7 @@ let L = e => {
             color: M,
             look: U,
             onAction: V
-          }, "join-activity-button"), (0, r.jsx)(E.Z, {
+          }, "join-activity-button"), (0, r.jsx)(I.Z, {
             activity: t,
             user: l,
             color: M,

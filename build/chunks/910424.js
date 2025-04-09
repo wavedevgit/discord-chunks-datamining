@@ -69,22 +69,22 @@ function v(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), I = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [E, Z] = (0, u.wq)(I), x = (0, c.Aq)(), w = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, C = e => {
-    null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), w || (0, s.iV)(j, {
+  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(E), x = (0, c.Aq)(), C = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, w = e => {
+    null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), C || (0, s.iV)(j, {
       forceMultiple: e
     }), x.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == j) return null;
   let T = (0, u.P9)(Z);
-  t ? T = b.NW.string(b.t.XvBdeX) : w && (T = b.NW.string(b.t.JH1SJy));
+  t ? T = b.NW.string(b.t.XvBdeX) : C && (T = b.NW.string(b.t.JH1SJy));
   let A = {
     color: n,
     look: v
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, h(y({
-      disabled: t || w || !E,
-      onClick: () => C(!1)
+      disabled: t || C || !I,
+      onClick: () => w(!1)
     }, A), {
       fullWidth: !0,
       children: [(0, r.jsx)(i.hGI, {
@@ -92,12 +92,12 @@ function v(e) {
         color: "currentColor",
         className: O.streamIcon
       }), T]
-    }), "play"), N && !w ? (0, r.jsx)(i.ua7, {
+    }), "play"), N && !C ? (0, r.jsx)(i.ua7, {
       text: b.NW.string(b.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, h(y(h(y({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), C(!0)
+          null == (t = e.onClick) || t.call(e), w(!0)
         }
       }), A), {
         className: O.iconButton,

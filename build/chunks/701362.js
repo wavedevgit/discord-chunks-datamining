@@ -1,6 +1,6 @@
 /** Chunk was on 93602 **/
 n.d(t, {
-  Z: () => w
+  Z: () => C
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -24,8 +24,8 @@ var r = n(200651),
   S = n(687516),
   P = n(718805),
   N = n(871118),
-  I = n(981631),
-  E = n(388032),
+  E = n(981631),
+  I = n(388032),
   Z = n(768780);
 class x extends l.PureComponent {
   componentDidMount() {
@@ -33,7 +33,7 @@ class x extends l.PureComponent {
       user: e,
       streamApplication: t
     } = this.props;
-    v.default.track(I.rMx.OPEN_POPOUT, {
+    v.default.track(E.rMx.OPEN_POPOUT, {
       type: "Stream Preview",
       other_user_id: e.id,
       application_id: null != t ? t.id : null,
@@ -93,8 +93,8 @@ class x extends l.PureComponent {
             channelId: n.channelId,
             analyticsParams: {
               location: {
-                page: I.ZY5.GO_LIVE_MODAL,
-                section: I.jXE.STREAM_VIEWER_POPOUT
+                page: E.ZY5.GO_LIVE_MODAL,
+                section: E.jXE.STREAM_VIEWER_POPOUT
               }
             },
             onAction: i
@@ -110,7 +110,7 @@ class x extends l.PureComponent {
           }), !a && (0, r.jsx)(p.Z, {
             type: p.Z.Types.INLINE,
             className: Z.protip,
-            children: __OVERLAY__ ? E.NW.string(E.t["YRdw7+"]) : E.NW.string(E.t.CCTgbG)
+            children: __OVERLAY__ ? I.NW.string(I.t["YRdw7+"]) : I.NW.string(I.t.CCTgbG)
           })]
         })]
       })
@@ -118,7 +118,7 @@ class x extends l.PureComponent {
   }
 }
 
-function w(e) {
+function C(e) {
   var t, n, {
       user: i,
       channel: o
@@ -138,10 +138,10 @@ function w(e) {
       }
       return l
     }(e, ["user", "channel"]);
-  let [c, d] = (0, a.Wu)([h.Z, b.Z, O.Z, f.Z], () => (0, j.p9)(o, h.Z, b.Z, O.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(p), I = (0, a.e7)([y.Z], () => (0, S.Um)(p, y.Z)), E = l.useMemo(() => ({
+  let [c, d] = (0, a.Wu)([h.Z, b.Z, O.Z, f.Z], () => (0, j.p9)(o, h.Z, b.Z, O.Z, f.Z)), p = (0, a.e7)([m.Z], () => m.Z.getStreamForUser(i.id, o.getGuildId())), v = (0, a.e7)([m.Z], () => m.Z.getActiveStreamForApplicationStream(p)), P = (0, a.e7)([g.default], () => g.default.getId()), N = (0, S.Cf)(p), E = (0, a.e7)([y.Z], () => (0, S.Um)(p, y.Z)), I = l.useMemo(() => ({
     [o.guild_id]: [i.id]
   }), [o.guild_id, i.id]);
-  return (0, u.$)(E), (0, r.jsx)(x, (t = function(e) {
+  return (0, u.$)(I), (0, r.jsx)(x, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -166,7 +166,7 @@ function w(e) {
     stream: p,
     activeStream: v,
     currentUserId: P,
-    activity: I
+    activity: E
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

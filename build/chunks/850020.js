@@ -16,7 +16,7 @@ function u(e) {
     user: n,
     privateChannel: u,
     forceHide: d = !1
-  } = e, p = (0, s.DW)(t), f = (0, r.useMemo)(() => null == n || null == n.nameplate ? null : n.nameplate, [n]), m = (0, l.e7)([i.Z], () => {
+  } = e, p = (0, s.XD)(t), f = (0, r.useMemo)(() => null == n || null == n.nameplate ? null : n.nameplate, [n]), m = (0, l.e7)([i.Z], () => {
     if (null == n) return !1;
     let e = i.Z.getStatus(n.id);
     return !new Set([c.Sk.OFFLINE, c.Sk.INVISIBLE, c.Sk.UNKNOWN]).has(e)
