@@ -77,7 +77,7 @@ let p = () => {
           look: l.zxk.Looks.FILLED,
           size: l.zxk.Sizes.TINY,
           onClick: () => n(null),
-          children: "Clear"
+          children: "Clear All"
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
@@ -119,7 +119,7 @@ let p = () => {
           look: l.zxk.Looks.FILLED,
           size: l.zxk.Sizes.TINY,
           onClick: u,
-          children: "Clear"
+          children: "Clear All"
         })]
       }), (0, r.jsx)("ul", {
         children: s.map(e => (0, r.jsxs)("li", {
@@ -173,31 +173,32 @@ let p = () => {
   v = () => {
     let [e, t] = a.useState([]), {
       upsertAsset: n,
-      previewEnabled: s,
-      setPreviewEnabled: c
-    } = (0, d.N9)(), h = a.useCallback((e, r) => {
+      clearAssets: s,
+      previewEnabled: c,
+      setPreviewEnabled: h
+    } = (0, d.N9)(), b = a.useCallback((e, r) => {
       let a = m.Kj[e.name];
       if (null == a) return void t(t => [...t, e.name]);
       n(a, e)
-    }, [n]), b = a.useCallback(async e => {
-      t([]);
+    }, [n]), v = a.useCallback(async e => {
+      t([]), s();
       let n = await (0, m.RF)(e),
         r = !1;
       n.forEach(e => {
-        ((0, i.tw)(e.type) || (0, i.X2)(e.type)) && (r = !0, (0, m.ZK)(e, h, m.Eo))
-      }), r ? c(!0) : (0, u.Y)()
-    }, [h, c]), v = a.useCallback(() => t([]), []);
+        ((0, i.tw)(e.type) || (0, i.X2)(e.type)) && (r = !0, (0, m.ZK)(e, b, m.Eo))
+      }), r ? h(!0) : (0, u.Y)()
+    }, [b, h, s]), j = a.useCallback(() => t([]), []);
     return (0, r.jsxs)("div", {
       className: x.container,
       children: [(0, r.jsx)(o.Z, {
         className: x.divider
       }), (0, r.jsx)(u.L, {
-        onDrop: b
+        onDrop: v
       }), (0, r.jsxs)("div", {
         className: x.previewToggleContainer,
         children: [(0, r.jsx)(l.rsf, {
-          checked: s,
-          onChange: e => c(e)
+          checked: c,
+          onChange: e => h(e)
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           children: "Enable Preview"
@@ -214,10 +215,10 @@ let p = () => {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
       }), (0, r.jsx)(f, {}), (0, r.jsx)(_, {
-        handleClearIgnoredFiles: v
+        handleClearIgnoredFiles: j
       }), (0, r.jsx)(g, {
         ignoredFiles: e,
-        handleClearIgnoredFiles: v
+        handleClearIgnoredFiles: j
       }), (0, r.jsx)(l.LZC, {
         size: 16
       }), (0, r.jsx)(o.Z, {
