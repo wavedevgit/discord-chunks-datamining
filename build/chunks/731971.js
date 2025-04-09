@@ -1,22 +1,22 @@
-/** Chunk was on 52212 **/
+/** Chunk was on 27978 **/
 n.d(t, {
   NQ: () => m,
-  U1: () => E,
+  U1: () => x,
   XW: () => u,
   _J: () => f,
-  aP: () => _,
-  e7: () => h,
-  h6: () => g,
+  aP: () => h,
+  e7: () => g,
+  h6: () => _,
   oE: () => p,
   pB: () => d,
   y: () => b,
-  yS: () => C
+  yS: () => N
 });
 var r = n(290486),
   i = n(524437),
   o = n(695346);
 
-function l(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function l(e) {
   return e
 }
 
-function s(e, t) {
+function l(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let a = {
+let s = {
   nickname: void 0,
   dmsAllowed: !o.iG.getSetting(),
   mutedServer: !1
@@ -58,38 +58,38 @@ function c(e) {
   return t !== i.E5.ON && (t !== i.E5.ON_FOR_LARGE_GUILDS || null == e || !(e > 200))
 }
 let u = (0, r.U)(e => ({
-    nickname: a.nickname,
-    dmsAllowed: a.dmsAllowed,
+    nickname: s.nickname,
+    dmsAllowed: s.dmsAllowed,
     showActivity: !0,
-    mutedServer: a.mutedServer,
+    mutedServer: s.mutedServer,
     inviteCode: void 0,
     guildId: void 0,
     touched: !1,
-    setNickname: t => e(e => s(l({}, e), {
+    setNickname: t => e(e => l(a({}, e), {
       nickname: t,
       touched: !0
     })),
-    setDmsAllowed: t => e(e => s(l({}, e), {
+    setDmsAllowed: t => e(e => l(a({}, e), {
       dmsAllowed: t,
       touched: !0
     })),
-    setShowActivity: t => e(e => s(l({}, e), {
+    setShowActivity: t => e(e => l(a({}, e), {
       showActivity: t,
       touched: !0
     })),
-    setMutedServer: t => e(e => s(l({}, e), {
+    setMutedServer: t => e(e => l(a({}, e), {
       mutedServer: t,
       touched: !0
     })),
-    setInviteCode: t => e(e => s(l({}, e), {
+    setInviteCode: t => e(e => l(a({}, e), {
       inviteCode: t,
       touched: !0
     })),
-    setGuildId: t => e(e => s(l({}, e), {
+    setGuildId: t => e(e => l(a({}, e), {
       guildId: t,
       touched: !0
     })),
-    initialize: (t, n, r) => e(e => s(l({}, e), {
+    initialize: (t, n, r) => e(e => l(a({}, e), {
       guildSize: t,
       inviteCode: n,
       guildId: r,
@@ -98,10 +98,10 @@ let u = (0, r.U)(e => ({
       touched: !1
     })),
     reset: () => e(e => ({
-      nickname: a.nickname,
-      dmsAllowed: a.dmsAllowed,
+      nickname: s.nickname,
+      dmsAllowed: s.dmsAllowed,
       showActivity: c(e.guildSize),
-      mutedServer: a.mutedServer,
+      mutedServer: s.mutedServer,
       inviteCode: void 0,
       guildId: void 0,
       guildSize: e.guildSize,
@@ -114,14 +114,14 @@ let u = (0, r.U)(e => ({
   p = () => {
     u.getState().reset()
   },
-  _ = () => {
+  h = () => {
     let e = u.getState();
-    return e.nickname !== a.nickname || e.dmsAllowed !== a.dmsAllowed || e.showActivity !== c(e.guildSize) || e.mutedServer !== a.mutedServer
+    return e.nickname !== s.nickname || e.dmsAllowed !== s.dmsAllowed || e.showActivity !== c(e.guildSize) || e.mutedServer !== s.mutedServer
   },
-  h = () => u.getState().inviteCode,
+  g = () => u.getState().inviteCode,
   f = () => u.getState().guildId,
   m = () => u.getState().touched,
-  g = () => u.getState().dmsAllowed,
+  _ = () => u.getState().dmsAllowed,
   b = () => u.getState().nickname,
-  E = () => u.getState().showActivity,
-  C = () => u.getState().mutedServer
+  x = () => u.getState().showActivity,
+  N = () => u.getState().mutedServer

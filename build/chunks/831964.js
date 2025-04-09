@@ -1,8 +1,8 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 n.d(t, {
-  ZP: () => L,
-  __: () => W,
-  dm: () => k
+  ZP: () => B,
+  __: () => L,
+  dm: () => W
 });
 var r, i = n(230711),
   s = n(100527),
@@ -35,9 +35,28 @@ var r, i = n(230711),
   R = n(385874),
   D = n(371e3),
   Z = n(377679),
-  w = n(825087),
-  k = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r.PERMADECOS = "permadecos", r);
-let W = () => {
+  w = n(825087);
+
+function k(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+      }) : e[t] = r
+    })
+  }
+  return e
+}
+var W = ((r = {}).NEW_APP_STYLES = "newAppStyles", r.REFERRAL_PROGRAM = "referralProgram", r.SERVER_PROFILES = "serverProfiles", r.SHOW_YOUR_STYLE = "showYourStyle", r.YOUR_SPACE = "yourSpace", r.EMOJIS = "emojis", r.NO_LIMITS = "noLimits", r.PERMADECOS = "permadecos", r);
+let L = () => {
     let e = (0, o.rO)();
     return {
       emojis: {
@@ -58,7 +77,7 @@ let W = () => {
       }
     }
   },
-  L = e => {
+  B = e => {
     var t, n;
     let {
       analyticsLocations: r
@@ -72,33 +91,14 @@ let W = () => {
       })
     }, _ = (0, d.r)({
       location: "WhatsNewBentoBoxes"
-    }).enabled, E = (0, o.rO)(), C = c.Z.getArticleURL(u.BhN.REFERRAL_PROGRAM), S = (t = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
-            enumerable: !0,
-            configurable: !0,
-            writable: !0
-          }) : e[t] = r
-        })
-      }
-      return e
-    }({}, _ && {
+    }).enabled, E = (0, o.rO)(), C = c.Z.getArticleURL(u.BhN.REFERRAL_PROGRAM), S = k((t = k({}, _ && {
       permadecos: {
         name: "permadecos",
         title: g.NW.string(g.t["57ngoq"]),
         description: g.NW.string(g.t.piFFjY),
         descriptionCta: g.NW.string(g.t.jVcuVV),
         previewImage: v.Z,
-        onClick: () => {
-          i.Z.open(u.oAB.INVENTORY, null, {})
-        },
+        onClick: p,
         videoUrl: v.Z
       }
     }), n = n = {
@@ -119,15 +119,6 @@ let W = () => {
         }),
         previewImage: I.Z,
         videoUrl: E ? T.ZP : y.ZP
-      },
-      newAppStyles: {
-        name: "newAppStyles",
-        title: g.NW.string(g.t.XQCSrq),
-        description: g.NW.string(g.t.HC5wVV),
-        descriptionCta: g.NW.string(g.t.jVcuVV),
-        onClick: h,
-        previewImage: N,
-        videoUrl: E ? j.ZP : O.ZP
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -138,7 +129,17 @@ let W = () => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t), k = {
+    }), t), !_ && {
+      newAppStyles: {
+        name: "newAppStyles",
+        title: g.NW.string(g.t.XQCSrq),
+        description: g.NW.string(g.t.HC5wVV),
+        descriptionCta: g.NW.string(g.t.jVcuVV),
+        onClick: h,
+        previewImage: N,
+        videoUrl: E ? j.ZP : O.ZP
+      }
+    }), W = {
       showYourStyle: {
         name: "showYourStyle",
         title: g.NW.string(g.t.Ij3Zmp),
@@ -158,5 +159,5 @@ let W = () => {
         videoUrl: E ? Z.Z : w.Z
       }
     };
-    return e ? k : S
+    return e ? W : S
   }

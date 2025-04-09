@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 e.exports = {
   descriptionWrapper: "descriptionWrapper__43963",
   subText: "subText__43963",

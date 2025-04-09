@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: 61f1111adb845242
+  Original File Name: 7fbc8762b9d6b4cf
 **/
 .countDownWrapper_a1b7b8 {
     display: flex;
@@ -758,27 +758,6 @@
 
 .externalProductDimmed_c3d04b {
     opacity: .35
-}
-
-.orbIconSVG__85200 {
-    height: 18px
-}
-
-.full-motion .loading__85200 {
-    animation-name: spin__85200;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear
-}
-
-@keyframes spin__85200 {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    to {
-        transform: rotate(1turn)
-    }
 }
 
 .partialOwnStateContainer__0d2da {
@@ -1601,4 +1580,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=61f1111adb845242.css.map*/
+/*# sourceMappingURL=7fbc8762b9d6b4cf.css.map*/

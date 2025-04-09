@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 e.exports = {
   select: "select_f8dc05",
   text: "text_f8dc05",

@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  I: () => y
+  I: () => O
 }), n(539854);
 var r = n(200651),
   l = n(192379),
@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(341907),
   f = n(822857),
   g = n(775451),
-  h = n(594174),
-  m = n(471731),
+  m = n(594174),
+  h = n(471731),
   _ = n(335131),
   v = n(215023),
   C = n(388032),
   x = n(774457);
 
-function O(e) {
+function y(e) {
   let {
     tab: t,
     displayText: n,
@@ -40,14 +40,14 @@ function O(e) {
   })
 }
 
-function y(e) {
+function O(e) {
   let {
     isFullScreen: t,
     isLayer: n,
     onClose: a,
-    selectedTab: y,
+    selectedTab: O,
     handleTransition: j
-  } = e, k = (0, d.ZP)(), S = (0, i.e7)([h.default], () => h.default.getCurrentUser()), P = (null == S ? void 0 : S.isStaff()) || (null == S ? void 0 : S.isStaffPersonal()) || !1, {
+  } = e, k = (0, d.ZP)(), S = (0, i.e7)([m.default], () => m.default.getCurrentUser()), P = (null == S ? void 0 : S.isStaff()) || (null == S ? void 0 : S.isStaffPersonal()) || !1, {
     enabled: E
   } = (0, f.W)({
     location: "collectibles_shop_header_bar"
@@ -74,7 +74,7 @@ function y(e) {
       }),
       innerClassname: E ? x.headerBarInner : void 0,
       toolbar: t || !P ? null : (0, r.jsx)(l.Fragment, {}),
-      children: [(0, r.jsx)(m.Z, {
+      children: [(0, r.jsx)(h.Z, {
         className: x.discordLogo
       }), (0, r.jsx)(b.Z.Title, {
         children: C.NW.string(C.t.pWG4zc)
@@ -85,10 +85,10 @@ function y(e) {
             tab: t,
             displayText: n
           } = e;
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(y, {
             tab: t,
             displayText: n,
-            selected: y === t,
+            selected: O === t,
             handleTransition: j
           }, t)
         })

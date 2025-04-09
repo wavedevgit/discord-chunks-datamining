@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(474936),
   f = n(231338),
   g = n(388032),
-  h = n(846165);
-let m = {
+  m = n(846165);
+let h = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -71,9 +71,9 @@ let m = {
       onSuccess: v,
       tooltipDelay: C,
       isGiftEasterEggEnabled: x,
-      color: O = a.Ttl.BRAND
+      color: y = a.Ttl.BRAND
     } = e, {
-      analyticsLocations: y
+      analyticsLocations: O
     } = (0, i.ZP)(), j = l.useRef(null), k = (0, o.Z)(j), S = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
       text: g.NW.string(g.t["JCFN//"]),
@@ -99,11 +99,11 @@ let m = {
           return e
         }({}, e), o = o = {
           buttonRef: j,
-          className: h.giftButton,
-          color: O,
+          className: m.giftButton,
+          color: y,
           look: a.zxk.Looks.FILLED,
           size: a.PhG.ICON,
-          innerClassName: h.giftButtonInner,
+          innerClassName: m.giftButtonInner,
           "aria-label": g.NW.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
@@ -113,7 +113,7 @@ let m = {
               }),
               isGift: !0,
               giftingOrigin: p.Wt.SHOP_PAGE,
-              analyticsLocations: y,
+              analyticsLocations: O,
               returnRef: _,
               variantsReturnStyle: S,
               onClose: null != v ? e => {
@@ -125,7 +125,7 @@ let m = {
             hovered: k,
             isContentDismissed: !0,
             themeOverride: f.BR.DARK,
-            boxColors: m
+            boxColors: h
           }) : (0, r.jsx)(a.OgN, {
             size: "md",
             color: "currentColor"

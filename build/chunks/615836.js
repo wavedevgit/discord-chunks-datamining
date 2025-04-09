@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 85334 **/
 e.exports = {
   churnFooterContainer: "churnFooterContainer__64988",
   churnFooterGlow: "churnFooterGlow__64988",

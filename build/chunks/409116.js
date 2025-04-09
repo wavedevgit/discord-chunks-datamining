@@ -24,17 +24,17 @@ let u = e => e.length > 5 ? e.replace(/\.00$/, "") : e,
       className: p,
       discount: f = s.f_,
       variant: g = "heading-md/semibold"
-    } = e, h = u((0, i.T4)(n, l)), m = f !== s.f_ && f.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
-      children: [h, (0, r.jsx)(o.X6q, {
+    } = e, m = u((0, i.T4)(n, l)), h = f !== s.f_ && f.discountPercentage >= 5 ? (0, r.jsxs)(r.Fragment, {
+      children: [m, (0, r.jsx)(o.X6q, {
         variant: g,
         color: "text-positive",
         className: c.discount,
         children: " (-".concat(f.discountPercentage, "%)")
       })]
-    }) : h;
+    }) : m;
     return (0, r.jsxs)(o.X6q, {
       variant: g,
       className: a()(c.container, p),
-      children: [b, null != (t = null == d ? void 0 : d(m)) ? t : m]
+      children: [b, null != (t = null == d ? void 0 : d(h)) ? t : h]
     })
   }

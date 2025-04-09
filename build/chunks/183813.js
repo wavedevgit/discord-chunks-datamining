@@ -15,10 +15,10 @@ var r = n(200651),
   p = n(594174),
   _ = n(626135),
   x = n(987209),
-  f = n(563132),
-  h = n(409813),
-  m = n(614277),
-  j = n(981631),
+  h = n(563132),
+  f = n(409813),
+  j = n(614277),
+  m = n(981631),
   L = n(388032),
   g = n(529190);
 
@@ -30,7 +30,7 @@ function S(e) {
     selectedPlan: l,
     selectedSkuId: S,
     step: y
-  } = (0, f.JL)(), {
+  } = (0, h.JL)(), {
     setSelectedGiftingPromotionReward: E,
     selectedGiftingPromotionReward: b,
     claimableRewards: I
@@ -60,17 +60,17 @@ function S(e) {
       guildId: null,
       avatarSize: a.EFr.SIZE_152
     }) : null,
-    Z = (0, r.jsx)(m.O3, {
+    Z = (0, r.jsx)(j.O3, {
       children: (0, r.jsx)(a.mzw, {
         className: g.modalFooter,
         children: (0, r.jsx)(u.y, {
           onStepChange: e => {
-            null != N && null != b && _.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != N && null != b && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: N.id,
               reward_sku_id: b.skuId
             }), t(e)
           },
-          onBackClick: () => t(h.h8.PLAN_SELECT),
+          onBackClick: () => t(f.h8.PLAN_SELECT),
           shouldRenderUpdatedPaymentModal: !0,
           showBackButton: !0,
           planOptions: [l.id],

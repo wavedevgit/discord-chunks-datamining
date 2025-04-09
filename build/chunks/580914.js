@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(594174),
   f = n(451478),
   g = n(63063),
-  h = n(381585),
-  m = n(597688),
+  m = n(381585),
+  h = n(597688),
   _ = n(884697),
   v = n(370039),
   C = n(937510),
   x = n(823941),
-  O = n(38900),
-  y = n(709999),
+  y = n(38900),
+  O = n(709999),
   j = n(794324),
   k = n(957058),
   S = n(215023),
@@ -70,13 +70,13 @@ let I = {
       heroBlock: i,
       tab: _
     } = e, x = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), N = (0, s.e7)([f.Z], () => f.Z.isFocused()), T = (0, s.e7)([p.default], () => p.default.getCurrentUser()), L = (0, k.u)(), Z = l.useMemo(() => null != i ? i : B(a), [i, a]), {
-      isPreviewingStaticBanner: R,
-      bannerOverrides: A,
+      isPreviewingStaticBanner: A,
+      bannerOverrides: R,
       bannerStyleOverrides: F,
       heroLogo: W,
-      heroBannerStatic: D,
-      heroBannerAnimated: H
-    } = (0, j.hr)(Z), M = null == A ? void 0 : A.heroBanner, V = l.useMemo(() => L(Z.rankedSkuIds), [t, L, Z.rankedSkuIds]), U = (0, v.a)()(V), G = (0, C.l)(U).slice(0, 4), z = _ === S.AW.ORBS ? E.NW.string(E.t.hvVgAQ) : E.NW.formatToPlainString(E.t.wvKYCg, {
+      heroBannerStatic: H,
+      heroBannerAnimated: D
+    } = (0, j.hr)(Z), M = null == R ? void 0 : R.heroBanner, V = l.useMemo(() => L(Z.rankedSkuIds), [t, L, Z.rankedSkuIds]), U = (0, v.a)()(V), G = (0, C.l)(U).slice(0, 4), z = _ === S.AW.ORBS ? E.NW.string(E.t.hvVgAQ) : E.NW.formatToPlainString(E.t.wvKYCg, {
       category_name: Z.name
     });
     return null != T && (t || Z !== I) ? (0, r.jsxs)("div", {
@@ -88,14 +88,14 @@ let I = {
         style: (null == F ? void 0 : F.backgroundStyle) != null ? {
           background: F.backgroundStyle
         } : void 0,
-        children: [null == H || x || !N || R ? (0, r.jsx)("div", {
+        children: [null == D || x || !N || A ? (0, r.jsx)("div", {
           className: w.bannerImage,
           style: {
-            backgroundImage: "url(".concat(D, ")")
+            backgroundImage: "url(".concat(H, ")")
           }
         }) : (0, r.jsx)(b.Z, {
           className: w.bannerVideoBackground,
-          src: H,
+          src: D,
           autoPlay: !0,
           loop: !0
         }), (null == F ? void 0 : F.hideSideShadow) !== !0 && (0, r.jsxs)(r.Fragment, {
@@ -140,7 +140,7 @@ let I = {
                 children: Z.title
               }), (0, r.jsx)(c.Text, {
                 variant: _ === S.AW.ORBS ? "text-lg/medium" : "text-md/normal",
-                className: _ === S.AW.ORBS ? w.orbsSubHeaderText : (null == A ? void 0 : A.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
+                className: _ === S.AW.ORBS ? w.orbsSubHeaderText : (null == R ? void 0 : R.showDarkBannerText) ? w.subHeaderTextDark : w.subHeaderText,
                 style: null != Z.bannerTextColor ? {
                   color: Z.bannerTextColor
                 } : void 0,
@@ -163,17 +163,17 @@ let I = {
             [w.feedSingleRow]: _ !== S.AW.ORBS
           }),
           children: t ? (0, r.jsx)(r.Fragment, {
-            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(O.K, {}, t))
+            children: [void 0, void 0, void 0, void 0].map((e, t) => (0, r.jsx)(y.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: G.map((e, t) => {
-              let n = m.Z.getCategoryForProduct(e.skuId);
-              return null == e || null == n ? null : (0, r.jsx)(h.k0, {
+              let n = h.Z.getCategoryForProduct(e.skuId);
+              return null == e || null == n ? null : (0, r.jsx)(m.k0, {
                 newValue: {
                   tilePosition: t,
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: (0, r.jsx)(y.Z, {
+                children: (0, r.jsx)(O.Z, {
                   product: e,
                   category: n,
                   user: T,

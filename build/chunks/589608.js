@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 n.r(e.exports = {
   box: "box_f8c98c"
 })

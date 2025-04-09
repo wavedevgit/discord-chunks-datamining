@@ -1,6 +1,6 @@
 /**
   Module ID: 8039
-  Original File Name: ec7a9d9e43df6163
+  Original File Name: a5f17000d97ffbee
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -3096,7 +3096,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     left: 2px;
     top: 6px;
     width: 12px;
-    height: 12px
+    height: 12px;
+    transition: transform .1s linear
 }
 
 .collapsed__29444 .icon__29444 {
@@ -6001,4 +6002,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=ec7a9d9e43df6163.css.map*/
+/*# sourceMappingURL=a5f17000d97ffbee.css.map*/

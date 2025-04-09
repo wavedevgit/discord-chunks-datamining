@@ -1,6 +1,6 @@
-/** Chunk was on 52212 **/
+/** Chunk was on 21128 **/
 n.d(t, {
-  Z: () => h
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -13,7 +13,7 @@ var i = n(481060),
   u = n(590965),
   d = n(981631);
 let p = "INVITE_MODAL_KEY";
-class _ extends l.Z {
+class h extends l.Z {
   _initialize() {
     o.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), o.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
@@ -63,4 +63,4 @@ class _ extends l.Z {
     (0, i.Mr3)(p)
   }
 }
-let h = new _
+let _ = new h

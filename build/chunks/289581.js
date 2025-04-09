@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 e.exports = {
   qrCodeButtonContent: "qrCodeButtonContent_de69cd"
 }

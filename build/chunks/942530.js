@@ -1,4 +1,4 @@
-/** Chunk was on 89730 **/
+/** Chunk was on 70371 **/
 e.exports = {
   wrapper: "wrapper_a4ad2d",
   coachmarkArt: "coachmarkArt_a4ad2d",
