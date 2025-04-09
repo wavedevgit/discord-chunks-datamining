@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => P
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(30624),
   g = n(577275),
   p = n(594174),
-  h = n(451478),
-  f = n(626135),
+  f = n(451478),
+  h = n(626135),
   b = n(584825),
   x = n(723047),
   j = n(416867),
   N = n(903773),
-  _ = n(215124),
-  v = n(326578),
+  v = n(215124),
+  _ = n(326578),
   y = n(981631),
   O = n(674563),
   C = n(829857),
@@ -57,12 +57,12 @@ function T(e) {
     error: m
   } = (0, c.Z)(), {
     fetchSubscriptionsSettings: g
-  } = (0, b.JH)(), p = (0, x.mY)(), h = i.useMemo(() => n.map(e => ({
+  } = (0, b.JH)(), p = (0, x.mY)(), f = i.useMemo(() => n.map(e => ({
     label: e.name,
     value: e.id
-  })), [n]), f = async () => {
+  })), [n]), h = async () => {
     await d(t, l, O.wW.GUILD_ROLE_SUBSCRIPTIONS) && (g(t.id), (0, j.B)({
-      Icon: v.Z,
+      Icon: _.Z,
       title: I.NW.string(I.t["AP/2qa"]),
       body: I.NW.string(I.t.kHMgaG)
     }))
@@ -72,14 +72,14 @@ function T(e) {
       className: E.selectTeamContainer,
       children: [(0, r.jsx)(a.q4e, {
         className: E.teamSelect,
-        options: h,
+        options: f,
         placeholder: I.NW.string(I.t.QXf93N),
         value: l,
-        isDisabled: 0 === h.length || p || !s,
+        isDisabled: 0 === f.length || p || !s,
         onChange: e => o(e),
         "aria-label": I.NW.string(I.t.QXf93N)
       }), (0, r.jsx)(a.zxk, {
-        onClick: f,
+        onClick: h,
         className: E.enableTicketingButton,
         submitting: u,
         disabled: null == l || p || !s,
@@ -95,16 +95,16 @@ function T(e) {
 let P = e => {
   let {
     guild: t
-  } = e, n = (0, s.e7)([p.default], () => p.default.getCurrentUser()), c = t.isOwner(n), b = (0, o.Ob)(t), x = (0, s.e7)([h.Z], () => h.Z.isFocused()), {
+  } = e, n = (0, s.e7)([p.default], () => p.default.getCurrentUser()), c = t.isOwner(n), b = (0, o.Ob)(t), x = (0, s.e7)([f.Z], () => f.Z.isFocused()), {
     teams: j,
-    loading: v
+    loading: _
   } = (0, g.Z)({
     refreshOnDepChange: x
   }), O = i.useMemo(() => j.filter(e => {
     var t;
     return e.payout_account_status !== C.C.BLOCKED && (0, m.Z)(null != (t = null == n ? void 0 : n.id) ? t : y.lds, e)
   }), [j, n]), P = O.length > 0, w = i.useCallback(async () => {
-    f.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
+    h.default.track(y.rMx.GUILD_ROLE_SUBSCRIPTION_TEAM_SETUP_CLICKED, {
       is_onboarding_v2: b,
       has_eligible_team: P,
       guild_id: t.id,
@@ -116,7 +116,7 @@ let P = e => {
     onClick: w,
     children: e
   }) : e, [w, c]);
-  return v ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  return _ ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [!c && (0, r.jsx)(N.Z, {
       className: E.nonOwnerNotice,
       children: I.NW.string(I.t.t56qWF)
@@ -141,7 +141,7 @@ let P = e => {
     }), (0, r.jsx)(a.hjN, {
       title: I.NW.string(I.t["0n7R2d"]),
       className: E.selfDemonetization,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(v.Z, {
         guildId: t.id,
         allPeriods: []
       })

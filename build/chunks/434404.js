@@ -94,7 +94,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var o;
-      await Promise.all([n.e("48835"), n.e("25292"), n.e("90508"), n.e("95477"), n.e("11212"), n.e("86328"), n.e("80284"), n.e("9710"), n.e("24967"), n.e("7654"), n.e("62117"), n.e("49751"), n.e("49049"), n.e("44156"), n.e("83957"), n.e("49286"), n.e("6850"), n.e("55666"), n.e("16114"), n.e("58227"), n.e("54408"), n.e("35093"), n.e("93375"), n.e("64679"), n.e("15327"), n.e("21881"), n.e("52526")]).then(n.bind(n, 994763)), t === v.pNK.DISCOVERY && (0, l.K2)(e, "GuildSettignsActionCreators.open") && (t = v.pNK.ACCESS, i = v.KsC.ACCESS_DISCOVERABLE), t === v.pNK.OVERVIEW && i === v.KsC.INVITE && (0, b.i1)({
+      await Promise.all([n.e("48835"), n.e("25292"), n.e("90508"), n.e("95477"), n.e("11212"), n.e("86328"), n.e("80284"), n.e("9710"), n.e("24967"), n.e("7654"), n.e("62117"), n.e("49751"), n.e("49049"), n.e("44156"), n.e("83957"), n.e("53967"), n.e("49286"), n.e("55666"), n.e("23988"), n.e("58227"), n.e("56444"), n.e("93375"), n.e("64679"), n.e("15327"), n.e("21881"), n.e("52526")]).then(n.bind(n, 994763)), t === v.pNK.DISCOVERY && (0, l.K2)(e, "GuildSettignsActionCreators.open") && (t = v.pNK.ACCESS, i = v.KsC.ACCESS_DISCOVERABLE), t === v.pNK.OVERVIEW && i === v.KsC.INVITE && (0, b.i1)({
         guildId: e,
         location: "GuildSettingsActionCreators.open"
       }) && (t = v.pNK.BOOST_PERKS, i = void 0), (null == (o = m.Z.getGuild(e)) ? void 0 : o.hasFeature(v.oNc.COMMUNITY)) && (t === v.pNK.GUILD_AUTOMOD && (t = v.pNK.SAFETY, i = v.KsC.SAFETY_AUTOMOD), t === v.pNK.MEMBER_VERIFICATION && (t = v.pNK.SAFETY, i = v.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), w.init(e, t, r, i), _.Z.closeGuildSidebar(e), (0, a.jN)(v.S9g.GUILD_SETTINGS)

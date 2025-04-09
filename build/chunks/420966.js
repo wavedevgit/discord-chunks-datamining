@@ -1,8 +1,8 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  V: () => h,
-  Z: () => f
+  V: () => f,
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   g = n(388032),
   p = n(793944);
 
-function h() {
+function f() {
   let [e, t] = i.useState(!0);
   return {
     scrolledToTop: e,
@@ -27,22 +27,22 @@ function h() {
   }
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
-    role: h,
-    selectedSection: f,
+    role: f,
+    selectedSection: h,
     setSelectedSection: b
   } = e, x = i.useCallback(e => {
     b(e)
   }, [b]), j = (0, s.e7)([d.Z], () => {
     var e;
-    return null == (e = d.Z.getRoleMemberCount(t.id)) ? void 0 : e[h.id]
-  }, [h.id, t.id]), N = (0, o.pM)(t.id, h.id), _ = (0, u.Z)(h);
+    return null == (e = d.Z.getRoleMemberCount(t.id)) ? void 0 : e[f.id]
+  }, [f.id, t.id]), N = (0, o.pM)(t.id, f.id), v = (0, u.Z)(f);
   i.useEffect(() => {
     N && b(m.ZI.PERMISSIONS)
   }, [N, b]);
-  let v = (0, c.e)(t, h);
+  let _ = (0, c.e)(t, f);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: p.titleContainer,
@@ -51,9 +51,9 @@ function f(e) {
         color: "header-primary",
         variant: "text-md/semibold",
         children: g.NW.format(g.t.BUdGkJ, {
-          roleName: h.name
+          roleName: f.name
         })
-      }), v ? (0, r.jsx)(a.P3F, {
+      }), _ ? (0, r.jsx)(a.P3F, {
         className: p.menu,
         onClick: function(e) {
           (0, l.jW)(e, async () => {
@@ -81,7 +81,7 @@ function f(e) {
                 return e
               }({}, n), s = s = {
                 guild: t,
-                role: h
+                role: f
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -101,13 +101,13 @@ function f(e) {
           color: "currentColor"
         })
       }) : null]
-    }), null != _ ? (0, r.jsx)(a.Wn, {
+    }), null != v ? (0, r.jsx)(a.Wn, {
       messageType: a.QYI.WARNING,
-      children: _
+      children: v
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
       "aria-label": g.NW.string(g.t["+1H47u"]),
-      selectedItem: f,
+      selectedItem: h,
       type: "top",
       look: "brand",
       onItemSelect: x,

@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  h: () => h
+  h: () => f
 });
 var r = n(200651),
   i = n(192379),
@@ -16,14 +16,14 @@ var r = n(200651),
   g = n(388032),
   p = n(109303);
 
-function h(e) {
+function f(e) {
   let {
     activeType: t,
     onTypePicked: n,
     guild: s
-  } = e, h = s.hasFeature(m.oNc.COMMUNITY), f = (0, l.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, s)), b = i.useMemo(() => {
-    let e = t === u.A.DISCOVERABLE && !f,
-      n = h && (t === u.A.DISCOVERABLE || f);
+  } = e, f = s.hasFeature(m.oNc.COMMUNITY), h = (0, l.e7)([c.Z], () => c.Z.can(m.Plq.ADMINISTRATOR, s)), b = i.useMemo(() => {
+    let e = t === u.A.DISCOVERABLE && !h,
+      n = f && (t === u.A.DISCOVERABLE || h);
     return [{
       id: u.A.INVITE,
       title: g.NW.string(g.t["HQVS/P"]),
@@ -44,9 +44,9 @@ function h(e) {
       body: g.NW.string(g.t.pqQylZ),
       icon: o.enf,
       enabled: n,
-      ineligibleText: h ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
+      ineligibleText: f ? g.NW.string(g.t.iBpXPj) : g.NW.string(g.t["5TQ+eH"])
     }]
-  }, [t, h, f]);
+  }, [t, f, h]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.X6q, {
       color: "header-primary",

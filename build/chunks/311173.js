@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -15,9 +15,9 @@ var r = n(200651),
   m = n(981631),
   g = n(388032),
   p = n(409866);
-let h = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
+let f = o.Z.getArticleURL(m.BhN.GUILD_AUTOMOD_REGEX);
 
-function f(e) {
+function h(e) {
   let {
     hasErrors: t,
     text: n,
@@ -30,7 +30,7 @@ function f(e) {
       variant: "text-xs/medium",
       color: "text-danger",
       children: null != i ? i : g.NW.format(g.t.jKYAPj, {
-        helpArticle: h
+        helpArticle: f
       })
     })
   }) : (0, r.jsx)(l.Text, {
@@ -53,12 +53,12 @@ function b(e) {
     errors: x,
     validatePatternsChanged: j,
     validateEditingValueChanged: N
-  } = (0, d.Z)(s, l), [_] = i.useState(() => ({
+  } = (0, d.Z)(s, l), [v] = i.useState(() => ({
     tags: m,
     value: "",
     selections: [],
     isSelecting: !1
-  })), v = i.useMemo(() => x.reduce((e, t) => {
+  })), _ = i.useMemo(() => x.reduce((e, t) => {
     let {
       pattern: n,
       message: r,
@@ -81,14 +81,14 @@ function b(e) {
     className: a()(p.keywordsContainer, o),
     children: [(0, r.jsx)(c.Z, {
       placeholder: "^b(a|@)d$\nw(o|0)rd(s|$)",
-      initialValue: _,
+      initialValue: v,
       onChangeTags: y,
       onChangeNewTagValue: O,
-      tagErrors: v,
+      tagErrors: _,
       maxTags: u.VW
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(h, {
       text: g.NW.format(g.t["PGC/AA"], {
-        helpArticle: h
+        helpArticle: f
       }),
       hasErrors: x.length > 0 || null != b,
       errorText: null != (n = null == (t = x.find(e => {

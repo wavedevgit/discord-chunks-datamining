@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => S,
@@ -16,14 +16,14 @@ var r = n(200651),
   m = n(369994),
   g = n(162157),
   p = n(177862),
-  h = n(11265),
-  f = n(592125),
+  f = n(11265),
+  h = n(592125),
   b = n(984933),
   x = n(496675),
   j = n(699516),
   N = n(594174),
-  _ = n(434404),
-  v = n(449226),
+  v = n(434404),
+  _ = n(449226),
   y = n(981631),
   O = n(388032),
   C = n(296205);
@@ -34,7 +34,7 @@ function I(e) {
     isExpanded: n,
     selectedChannelId: s,
     className: l
-  } = e, h = (0, g.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([f.Z], () => f.Z.getChannel(s), [s]), _ = (0, u.ZP)(N), I = async () => {
+  } = e, f = (0, g.BT)(t), b = t.canHaveRaidActivityAlerts(), [x, j] = i.useState(b), N = (0, o.e7)([h.Z], () => h.Z.getChannel(s), [s]), v = (0, u.ZP)(N), I = async () => {
     j(!x);
     try {
       var e;
@@ -73,12 +73,12 @@ function I(e) {
         children: [(0, r.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor"
-        }), " ", _]
+        }), " ", v]
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(_.Z, {
       checked: x,
       onChange: I,
-      disabled: !h || null == s
+      disabled: !f || null == s
     })]
   })
 }
@@ -90,7 +90,7 @@ function E(e) {
     selectedChannelId: i,
     setSelectedChannelId: s,
     className: m
-  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, h = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
+  } = e, g = null != (t = n.safetyAlertsChannelId) ? t : null, f = (0, o.Wu)([b.ZP, N.default, j.Z, x.Z], () => {
     let e = b.ZP.getChannels(n.id)[b.sH].filter(e => {
       let {
         channel: t
@@ -106,14 +106,14 @@ function E(e) {
       }
     });
     return null != g ? e : [...e]
-  }, [n.id, g]), f = async e => {
+  }, [n.id, g]), h = async e => {
     s(e);
     try {
-      if (e !== g && (await _.Z.saveGuild(n.id, {
+      if (e !== g && (await v.Z.saveGuild(n.id, {
           safetyAlertsChannelId: e
         }, {
           throwErr: !0
-        }), _.Z.updateGuild({
+        }), v.Z.updateGuild({
           safetyAlertsChannelId: e
         })), null != e) {
         let t = {
@@ -137,8 +137,8 @@ function E(e) {
         children: O.NW.string(O.t.sMkYEx)
       }), (0, r.jsx)(c.VcW, {
         wrapperClassName: C.bringToFront,
-        options: h,
-        onChange: f,
+        options: f,
+        onChange: h,
         value: i,
         maxVisibleItems: 5
       }), (0, r.jsx)(c.Text, {
@@ -155,7 +155,7 @@ function S(e) {
   let {
     guild: s
   } = e, [a, l] = i.useState(!1), o = null != (t = s.safetyAlertsChannelId) ? t : null, [c, d] = i.useState(null != o ? o : null != (n = null == s ? void 0 : s.publicUpdatesChannelId) ? n : null);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(f.Z, {
     renderHeader: (0, r.jsx)(I, {
       isExpanded: a,
       guild: s,

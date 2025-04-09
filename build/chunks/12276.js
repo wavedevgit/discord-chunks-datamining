@@ -1,14 +1,14 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 56444 **/
 var t = "\ud800-\udfff",
   n = "[\\u0300-\\u036f\\ufe20-\\ufe2f\\u20d0-\\u20ff]",
-  i = "\ud83c[\udffb-\udfff]",
-  r = "[^" + t + "]",
+  r = "\ud83c[\udffb-\udfff]",
+  i = "[^" + t + "]",
   s = "(?:\ud83c[\udde6-\uddff]){2}",
-  o = "[\ud800-\udbff][\udc00-\udfff]",
-  l = "(?:" + n + "|" + i + ")?",
-  a = "[\\ufe0e\\ufe0f]?",
-  c = "(?:\\u200d(?:" + [r, s, o].join("|") + ")" + a + l + ")*",
-  u = RegExp(i + "(?=" + i + ")|" + ("(?:" + [r + n + "?", n, s, o, "[" + t + "]"].join("|")) + ")" + (a + l + c), "g");
+  a = "[\ud800-\udbff][\udc00-\udfff]",
+  l = "(?:" + n + "|" + r + ")?",
+  o = "[\\ufe0e\\ufe0f]?",
+  c = "(?:\\u200d(?:" + [i, s, a].join("|") + ")" + o + l + ")*",
+  d = RegExp(r + "(?=" + r + ")|" + ("(?:" + [i + n + "?", n, s, a, "[" + t + "]"].join("|")) + ")" + (o + l + c), "g");
 e.exports = function(e) {
-  return e.match(u) || []
+  return e.match(d) || []
 }

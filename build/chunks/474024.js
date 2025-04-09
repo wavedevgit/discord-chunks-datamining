@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(323220),
   g = n(434404),
   p = n(981631),
-  h = n(388032),
-  f = n(951767);
+  f = n(388032),
+  h = n(951767);
 
 function b(e) {
   var t;
@@ -32,36 +32,36 @@ function b(e) {
     }) : g.Z.updateGuildProfile(b, {
       visibility: j ? u.k.PUBLIC_WITH_RECRUITMENT : u.k.PUBLIC
     })
-  }, [b, j, x]), _ = i.useCallback(() => {
+  }, [b, j, x]), v = i.useCallback(() => {
     g.Z.setSection(p.pNK.ACCESS, p.KsC.ACCESS_DISCOVERABLE)
-  }, []), v = null == (t = n.features) ? void 0 : t.includes(p.oNc.DISCOVERABLE);
+  }, []), _ = null == (t = n.features) ? void 0 : t.includes(p.oNc.DISCOVERABLE);
   return (0, r.jsxs)(c.hjN, {
-    className: f.twoColumnContainer,
+    className: h.twoColumnContainer,
     children: [(0, r.jsxs)("div", {
-      className: f.column,
+      className: h.column,
       children: [(0, r.jsx)(c.j7V, {
         onChange: N,
         value: !x,
         hideBorder: !0,
-        disabled: v || !s,
-        children: h.NW.string(h.t.fjHWen)
+        disabled: _ || !s,
+        children: f.NW.string(f.t.fjHWen)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: h.NW.string(h.t.J1YOV1)
-      }), v && (0, r.jsx)(c.Text, {
+        children: f.NW.string(f.t.J1YOV1)
+      }), _ && (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: h.NW.format(h.t.R8jY9v, {
+        children: f.NW.format(f.t.R8jY9v, {
           accessLink: (e, t) => (0, r.jsx)(c.eee, {
-            onClick: _,
+            onClick: v,
             children: e
           }, t)
         })
       })]
     }), (0, r.jsx)("div", {
-      className: a()(f.column, {
-        [f.profileViewDisabled]: x
+      className: a()(h.column, {
+        [h.profileViewDisabled]: x
       }),
       children: (0, r.jsx)(m.Z, {
         guildId: b,

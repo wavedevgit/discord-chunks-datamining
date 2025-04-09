@@ -1,13 +1,13 @@
-/** Chunk was on 97811 **/
+/** Chunk was on 23988 **/
 n.d(t, {
-  A: () => i
+  A: () => o
 });
 var r = n(442837),
-  a = n(826581);
+  l = n(826581);
 
-function i(e) {
+function o(e) {
   let {
     guildId: t
   } = e;
-  return (0, r.e7)([a.Z], () => null != t ? a.Z.getSubmittedGuildJoinRequestTotal(t) : void 0, [t])
+  return (0, r.e7)([l.Z], () => null != t ? l.Z.getSubmittedGuildJoinRequestTotal(t) : void 0, [t])
 }

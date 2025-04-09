@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(493544),
   g = n(479531),
   p = n(118012),
-  h = n(210887),
-  f = n(246946),
+  f = n(210887),
+  h = n(246946),
   b = n(594174),
   x = n(251625),
   j = n(226951),
   N = n(51144),
-  _ = n(434404),
-  v = n(372454),
+  v = n(434404),
+  _ = n(372454),
   y = n(999382),
   O = n(84613),
   C = n(740903),
@@ -75,14 +75,14 @@ function Z(e) {
     ban: a,
     hideDiscriminator: l,
     onClose: o
-  } = e, [d, m] = i.useState(!1), [h, f] = i.useState(null);
+  } = e, [d, m] = i.useState(!1), [f, h] = i.useState(null);
   async function b() {
     if (null != n) {
-      f(null), m(!0);
+      h(null), m(!0);
       try {
         await u.Z.unbanUser(n.id, s.id), o()
       } catch (e) {
-        f(new g.Z(e)), m(!1)
+        h(new g.Z(e)), m(!1)
       }
     }
   }
@@ -113,11 +113,11 @@ function Z(e) {
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/normal",
         children: null != a.reason && "" !== a.reason ? a.reason : S.NW.string(S.t["t+2Zcn"])
-      }), null != h ? (0, r.jsx)(c.Text, {
+      }), null != f ? (0, r.jsx)(c.Text, {
         className: T.error,
         color: "text-danger",
         variant: "text-sm/normal",
-        children: h.getAnyErrorMessage()
+        children: f.getAnyErrorMessage()
       }) : null]
     }), (0, r.jsxs)(c.mzw, {
       className: T.footer,
@@ -134,7 +134,7 @@ function Z(e) {
     })]
   })
 }
-class A extends i.PureComponent {
+class k extends i.PureComponent {
   render() {
     let {
       user: e,
@@ -188,7 +188,7 @@ class A extends i.PureComponent {
     })
   }
 }
-class k extends i.PureComponent {
+class A extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -213,13 +213,13 @@ class k extends i.PureComponent {
     })
   }
   handleModerationClick() {
-    _.Z.setSection(E.pNK.SAFETY), (0, O.K)(C.u.DM_AND_SPAM_PROTECTION)
+    v.Z.setSection(E.pNK.SAFETY), (0, O.K)(C.u.DM_AND_SPAM_PROTECTION)
   }
   handleQueryChange(e) {
-    _.Z.setSearchQuery(e)
+    v.Z.setSearchQuery(e)
   }
   handleQueryClear() {
-    _.Z.setSearchQuery("")
+    v.Z.setSearchQuery("")
   }
   constructor(...e) {
     super(...e), w(this, "getSortedBans", (0, x.oH)((e, t) => {
@@ -260,7 +260,7 @@ class k extends i.PureComponent {
       }, "spinner");
       let d = this.getSortedBans(s, o)[i],
         u = null == s ? void 0 : s.get(null != (t = null == d ? void 0 : d.id) ? t : "");
-      if (null != d && null != u) return (0, r.jsx)(A, {
+      if (null != d && null != u) return (0, r.jsx)(k, {
         user: d,
         ban: u,
         hideDiscriminator: a,
@@ -326,7 +326,7 @@ class k extends i.PureComponent {
     })
   }
 }
-let W = o.ZP.connectStores([y.Z, h.Z, f.Z], () => {
+let W = o.ZP.connectStores([y.Z, f.Z, h.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -336,10 +336,10 @@ let W = o.ZP.connectStores([y.Z, h.Z, f.Z], () => {
     searchQuery: null != n ? n : "",
     bans: e,
     guild: t,
-    theme: h.Z.theme,
-    streamerMode: f.Z.hidePersonalInformation
+    theme: f.Z.theme,
+    streamerMode: h.Z.hidePersonalInformation
   }
-})(k);
+})(A);
 
 function L() {
   var e;
@@ -347,7 +347,7 @@ function L() {
     guild: t
   } = (0, o.e7)([y.Z], () => y.Z.getProps(), [], l.isEqual), {
     enabled: n
-  } = v.T.useExperiment({
+  } = _.T.useExperiment({
     guildId: null != (e = null == t ? void 0 : t.id) ? e : E.lds,
     location: "4d6318_1"
   }, {

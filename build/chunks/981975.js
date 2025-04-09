@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(275759),
   g = n(313201),
   p = n(63063),
-  h = n(243730),
-  f = n(764260),
+  f = n(243730),
+  h = n(764260),
   b = n(946724),
   x = n(95242),
   j = n(530198),
   N = n(420966),
-  _ = n(203377),
-  v = n(981631),
+  v = n(203377),
+  _ = n(981631),
   y = n(856651),
   O = n(388032),
   C = n(419353),
@@ -69,7 +69,7 @@ function P(e) {
       variant: "text-sm/normal",
       color: "header-secondary",
       children: O.NW.format(O.t.q5f7tL, {
-        helpdeskArticleUrl: p.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
+        helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.zxk, {
       disabled: n,
@@ -96,13 +96,13 @@ function w(e) {
   } = (0, x.Z)(0), {
     scrolledToTop: R,
     handleScroll: D
-  } = (0, N.V)(), Z = (0, c.e7)([h.Z], () => {
+  } = (0, N.V)(), Z = (0, c.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getRoleMemberCount(t.id)) ? void 0 : e[n.id]
-  }, [n.id, t.id]), A = (0, c.Wu)([b.Z], () => {
+    return null == (e = f.Z.getRoleMemberCount(t.id)) ? void 0 : e[n.id]
+  }, [n.id, t.id]), k = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+  }), A = k.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => A === m.O1.OR ? k.flat() : null != k && k.length > 0 ? k[0] : [], [A, k]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
 
   function M(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
@@ -113,7 +113,7 @@ function w(e) {
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, f.d_)(n.id, T(r, k))
+    }), (0, h.d_)(n.id, T(r, A))
   }
 
   function G() {
@@ -148,7 +148,7 @@ function w(e) {
         }), O.NW.string(O.t["OSvW5+"])]
       })
     })), U = (0, r.jsxs)(r.Fragment, {
-      children: [(B = () => (0, f.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
+      children: [(B = () => (0, h.d_)(n.id, []), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: C.headerTitleContainer,
           children: [(0, r.jsx)("div", {
@@ -169,7 +169,7 @@ function w(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           children: O.NW.format(O.t.q5f7tL, {
-            helpdeskArticleUrl: p.Z.getArticleURL(v.BhN.CONNECTION_DETAILS_ADMIN)
+            helpdeskArticleUrl: p.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, s) {
@@ -191,7 +191,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(s, n.id, k, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, A, W, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -252,7 +252,7 @@ function w(e) {
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, f.d_)(n.id, T(e, k)), s, n.id, o), e]
+      }(W, e => (0, h.d_)(n.id, T(e, A)), s, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {
@@ -271,7 +271,7 @@ function w(e) {
         children: (0, r.jsx)(N.Z, {
           guild: t,
           role: n,
-          selectedSection: _.ZI.VERIFICATIONS,
+          selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
       }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {

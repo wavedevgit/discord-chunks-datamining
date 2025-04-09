@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -21,8 +21,8 @@ function u(e) {
     subtitleText: m,
     initialValue: g
   } = e, p = i.useMemo(() => null != g ? g : [], [g]), {
-    value: h,
-    onChange: f,
+    value: f,
+    onChange: h,
     errorMessage: b
   } = (0, o.Z)(t, g, n);
   return (0, r.jsxs)(r.Fragment, {
@@ -30,8 +30,8 @@ function u(e) {
       className: a()(d.keywordsContainer, s),
       children: [(0, r.jsx)(l.lcI, {
         className: a()(d.keywordsTextArea, u),
-        value: h,
-        onChange: f,
+        value: f,
+        onChange: h,
         placeholder: c.NW.string(c.t.UyaxJy)
       }), (0, r.jsx)(l.Text, {
         className: d.keywordsCounter,

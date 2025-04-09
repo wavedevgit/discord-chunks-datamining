@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   R: () => x,
@@ -17,9 +17,9 @@ var i = n(120356),
   m = n(647086),
   g = n(135899),
   p = n(388032),
-  h = n(296205);
+  f = n(296205);
 
-function f(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -59,12 +59,12 @@ function j(e) {
   let {
     guild: t
   } = e, i = (0, l.e7)([c.Z], () => c.Z.getRole(t.id, t.getEveryoneRoleId())), u = x(t), m = u.length > 0, j = g.$X.some(e => !d.Z.can(e, t, null, {
-    [i.id]: b(f({}, i), {
+    [i.id]: b(h({}, i), {
       permissions: a.Od(i.permissions, e)
     })
   })), N = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: h.itemContent,
+      className: f.itemContent,
       children: [(0, r.jsx)(o.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
@@ -81,21 +81,21 @@ function j(e) {
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.warning,
+      className: f.warning,
       "aria-label": p.NW.string(p.t.bG7Gu7)
     }) : (0, r.jsx)(o.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
-      className: h.check,
+      className: f.check,
       "aria-label": p.NW.string(p.t["YQix8/"])
     })]
   });
   return m ? j ? (0, r.jsx)(o.ua7, {
     text: p.NW.string(p.t["E5v/a2"]),
-    children: e => (0, r.jsx)("div", b(f({
-      className: s()(h.simpleItemWrapper, h.disabled)
+    children: e => (0, r.jsx)("div", b(h({
+      className: s()(f.simpleItemWrapper, f.disabled)
     }, e), {
       children: N
     }))
@@ -105,15 +105,15 @@ function j(e) {
         let {
           default: e
         } = await n.e("39627").then(n.bind(n, 193845));
-        return n => (0, r.jsx)(e, f({
+        return n => (0, r.jsx)(e, h({
           guild: t
         }, n))
       })
     },
-    className: s()(h.simpleItemWrapper, h.clickable),
+    className: s()(f.simpleItemWrapper, f.clickable),
     children: N
   }) : (0, r.jsx)("div", {
-    className: h.simpleItemWrapper,
+    className: f.simpleItemWrapper,
     children: N
   })
 }

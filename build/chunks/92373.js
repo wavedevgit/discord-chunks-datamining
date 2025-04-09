@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -20,8 +20,8 @@ let g = function(e) {
     onClick: s,
     selected: g,
     locked: p = !1,
-    otherGamesCount: h = 0
-  } = e, f = (0, l.dQu)(l.TVs.colors.WHITE), {
+    otherGamesCount: f = 0
+  } = e, h = (0, l.dQu)(l.TVs.colors.WHITE), {
     isFetching: b,
     coverImageUrl: x
   } = (0, c.$)(t, {
@@ -32,7 +32,7 @@ let g = function(e) {
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
   }), N = i.useCallback(() => {
     null == s || s(t)
-  }, [t, s]), _ = i.useMemo(() => b ? null : null == x ? (0, r.jsx)("div", {
+  }, [t, s]), v = i.useMemo(() => b ? null : null == x ? (0, r.jsx)("div", {
     className: m.gameUnknownImage,
     children: (0, r.jsx)(l.IMN, {
       size: "lg"
@@ -52,18 +52,18 @@ let g = function(e) {
         children: (0, r.jsx)(l.owK, {
           size: "md",
           color: "currentColor",
-          secondaryColor: f.hex(),
+          secondaryColor: h.hex(),
           className: a()(m.selectedGameCheck, {
             [m.selectedGameCheckLocked]: p
           })
         })
-      }), _, h > 0 && (0, r.jsx)("div", {
+      }), v, f > 0 && (0, r.jsx)("div", {
         className: m.remainingGame,
         children: (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
           color: "always-white",
           children: u.NW.format(u.t.F6iMs7, {
-            count: h
+            count: f
           })
         })
       })]

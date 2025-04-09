@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => A
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(493544),
   g = n(585483),
   p = n(931240),
-  h = n(970606),
-  f = n(389134),
+  f = n(970606),
+  h = n(389134),
   b = n(35313),
   x = n(94963),
   j = n(745628),
   N = n(950279),
-  _ = n(796918),
-  v = n(513532),
+  v = n(796918),
+  _ = n(513532),
   y = n(741595),
   O = n(974842),
   C = n(359380),
@@ -163,7 +163,7 @@ let D = e => [{
       })]
     })
   },
-  A = e => {
+  k = e => {
     let {
       isErrorVisible: t
     } = e, n = (0, o.dQu)(o.TVs.colors.HEADER_PRIMARY, S.BR.DARK), i = (0, o.dQu)(o.TVs.colors.TEXT_MUTED, S.BR.DARK);
@@ -190,19 +190,19 @@ let D = e => [{
       })]
     }) : null
   },
-  k = e => {
+  A = e => {
     let {
       guildId: t,
       onClose: n
     } = e, [S, Z] = i.useState(I.Wy.GAMES), {
-      initialSettings: k,
+      initialSettings: A,
       settings: W,
       errors: L,
       submitting: M,
       dirty: G
-    } = (0, a.cj)([f.Z], () => {
+    } = (0, a.cj)([h.Z], () => {
       var e;
-      let t = f.Z.getState();
+      let t = h.Z.getState();
       return {
         initialSettings: t.initialSettings,
         settings: t.settings,
@@ -216,7 +216,7 @@ let D = e => [{
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
     i.useEffect(() => {
-      (0, h.GO)(t, (0, h.Qh)(S))
+      (0, f.GO)(t, (0, f.Qh)(S))
     }, [t, S]), i.useEffect(() => (window.addEventListener("keydown", F), () => {
       window.removeEventListener("keydown", F)
     }), [F]), i.useEffect(() => {
@@ -238,17 +238,17 @@ let D = e => [{
         G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
       }, [G, n]),
       q = async () => {
-        await (0, p.Ii)(t, W), (0, h.Af)(t)
+        await (0, p.Ii)(t, W), (0, f.Af)(t)
       }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
     if (null == W) return null;
-    let Q = D(L);
+    let J = D(L);
     return (0, r.jsxs)(s.animated.div, {
       style: B,
       className: P.modal,
       children: [(0, r.jsx)(o.ua7, {
         color: o.ua7.Colors.GREY,
         tooltipClassName: P.tooltip,
-        text: (0, r.jsx)(A, {
+        text: (0, r.jsx)(k, {
           isErrorVisible: X
         }),
         position: "left",
@@ -269,7 +269,7 @@ let D = e => [{
             selectedItem: S,
             onItemSelect: U,
             orientation: "vertical",
-            children: Q.map((e, i) => {
+            children: J.map((e, i) => {
               switch (e.section) {
                 case m.ID.HEADER:
                   return (0, r.jsx)(o.njP.Header, {
@@ -339,7 +339,7 @@ let D = e => [{
                     progress: W
                   });
                 case I.Wy.INTERESTS:
-                  return (0, r.jsx)(_.Z, {
+                  return (0, r.jsx)(v.Z, {
                     guildId: t,
                     handleUpdate: Y,
                     progress: W,
@@ -364,7 +364,7 @@ let D = e => [{
                     inSettings: !0
                   });
                 case I.Wy.MEMBER_APPLICATION:
-                  return (0, r.jsx)(v.Z, {
+                  return (0, r.jsx)(_.Z, {
                     guildId: t,
                     inSettings: !0,
                     error: L.verificationForm
@@ -387,7 +387,7 @@ let D = e => [{
                 onSave: q,
                 submitting: M,
                 onReset: () => {
-                  (0, p.mf)(t, k)
+                  (0, p.mf)(t, A)
                 },
                 errorMessage: Object.values(L).find(e => null != e)
               })

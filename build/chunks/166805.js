@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   P: () => y
@@ -15,37 +15,37 @@ var r = n(200651),
   m = n(65361),
   g = n(246946),
   p = n(330010),
-  h = n(600553),
-  f = n(999382),
+  f = n(600553),
+  h = n(999382),
   b = n(800223),
   x = n(24318),
   j = n(822693),
   N = n(388032),
-  _ = n(832721);
+  v = n(832721);
 
-function v(e) {
+function _(e) {
   let {
     guildId: t
   } = e, {
     guildProfile: c,
     fetchGuildProfile: g,
-    fetchStatus: v
-  } = (0, m.u)(t), y = v !== u.a.FETCHED, {
+    fetchStatus: _
+  } = (0, m.u)(t), y = _ !== u.a.FETCHED, {
     fetchedEmbed: O,
     embedEnabled: C,
     embedChannelId: I
-  } = (0, l.cj)([f.Z], () => {
+  } = (0, l.cj)([h.Z], () => {
     let {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
-    } = f.Z.getProps();
+    } = h.Z.getProps();
     return {
       fetchedEmbed: e,
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !y && !w && !C, D = (0, h.Dj)({
+  }), E = i.useMemo(() => (0, x.S)(t), [t]), S = i.useMemo(() => (0, x.a)(t), [t]), [T, P] = i.useState(!1), w = null != c && s.Y.VISIBLE.has(c.visibility), R = !y && !w && !C, D = (0, f.Dj)({
     guildId: t,
     location: "widget settings"
   });
@@ -67,11 +67,11 @@ function v(e) {
     }), R ? (0, r.jsx)(a.xv, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: _.subtext,
+      className: v.subtext,
       children: D ? N.NW.string(N.t.zCGuJy) : N.NW.string(N.t.yInR2t)
     }) : null, C ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: _.divider
+        className: v.divider
       }), (0, r.jsx)(o.vwX, {
         children: N.NW.string(N.t.LUo0Q0)
       }), (0, r.jsx)(j.m, {
@@ -82,19 +82,19 @@ function v(e) {
       }), (0, r.jsx)(a.xv, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        className: _.subtext,
+        className: v.subtext,
         children: N.NW.string(N.t.LxVR9P)
       }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: _.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.TRyLUl)
           }), (0, r.jsx)(d.Z, {
             value: t
           })]
         }), (0, r.jsxs)("div", {
-          className: _.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.VECJcH)
           }), (0, r.jsx)(d.Z, {
@@ -102,11 +102,11 @@ function v(e) {
           })]
         })]
       }), (0, r.jsx)("div", {
-        className: _.divider
+        className: v.divider
       }), (0, r.jsxs)("div", {
-        className: _.twoColumns,
+        className: v.twoColumns,
         children: [(0, r.jsxs)("div", {
-          className: _.column,
+          className: v.column,
           children: [(0, r.jsx)(o.vwX, {
             children: N.NW.string(N.t.XVGbn5)
           }), (0, r.jsx)(d.Z, {
@@ -114,11 +114,11 @@ function v(e) {
           }), (0, r.jsx)(a.xv, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            className: _.subtext,
+            className: v.subtext,
             children: N.NW.string(N.t["+baN19"])
           })]
         }), (0, r.jsx)("img", {
-          className: _.column,
+          className: v.column,
           "data-accessibility": "desaturate",
           alt: "",
           src: n(329488)
@@ -137,9 +137,9 @@ function y(e) {
     children: [(0, r.jsx)(a.xv, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: _.description,
+      className: v.description,
       children: N.NW.string(N.t["dNn/1t"])
-    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(v, {
+    }), n ? (0, r.jsx)(c.Z, {}) : (0, r.jsx)(_, {
       guildId: t
     })]
   })

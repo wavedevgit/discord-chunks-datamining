@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => f,
+  Z: () => h,
   n: () => g
 });
 var r, i = n(200651),
@@ -39,7 +39,7 @@ let p = {
   tension: 40,
   overshootClamping: !0
 };
-class h extends s.PureComponent {
+class f extends s.PureComponent {
   componentWillEnter(e) {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
@@ -78,7 +78,7 @@ class h extends s.PureComponent {
     super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
-let f = e => {
+let h = e => {
   let {
     children: t,
     step: n,
@@ -90,7 +90,7 @@ let f = e => {
   return (0, i.jsx)(c.W, {
     component: "div",
     className: l()(d.animator, s),
-    children: (0, i.jsx)(h, {
+    children: (0, i.jsx)(f, {
       direction: r,
       onAnimationStart: a,
       onAnimationEnd: o,

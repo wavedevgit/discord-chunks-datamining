@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -25,10 +25,10 @@ function m(e) {
   } = (0, c.$)(t, {
     coverImageHeight: 336,
     coverImageWidth: 252
-  }), h = (0, o.e7)([d.Z], () => {
+  }), f = (0, o.e7)([d.Z], () => {
     var e, n;
     return null != (n = null == (e = d.Z.getDetectableGame(t)) ? void 0 : e.name) ? n : ""
-  }), f = i.useCallback(() => {
+  }), h = i.useCallback(() => {
     null == s || s(t)
   }, [t, s]), b = i.useMemo(() => g ? null : null == p ? (0, r.jsx)("div", {
     className: u.gameUnknownImage,
@@ -37,9 +37,9 @@ function m(e) {
     })
   }) : (0, r.jsx)("img", {
     className: u.gameImage,
-    alt: h,
+    alt: f,
     src: p
-  }), [p, g, h]);
+  }), [p, g, f]);
   return (0, r.jsxs)("div", {
     className: a()(u.selectedGame, {
       [u.dimmed]: !n,
@@ -48,7 +48,7 @@ function m(e) {
     children: [(0, r.jsxs)(l.P3F, {
       "aria-disabled": m,
       tabIndex: m ? -1 : 0,
-      onClick: m ? void 0 : f,
+      onClick: m ? void 0 : h,
       className: a()(u.gameImageBackground, {
         [u.gameImageLoading]: g,
         [u.disabled]: m
@@ -64,7 +64,7 @@ function m(e) {
       className: u.gameName,
       variant: "text-xs/medium",
       color: "header-primary",
-      children: h
+      children: f
     })]
   })
 }

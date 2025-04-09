@@ -1,4 +1,4 @@
-/** Chunk was on 6850 **/
+/** Chunk was on 23988 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -19,13 +19,13 @@ let p = e => {
     guild: t,
     transitionState: n,
     onClose: o
-  } = e, [p, f] = l.useState(7), [h, j] = l.useState(null), [g, x] = l.useState([]), y = l.useCallback(async () => {
-    j(null), j(await c.Z.updateEstimate(t.id, p, g))
-  }, [p, t.id, g]);
+  } = e, [p, f] = l.useState(7), [h, g] = l.useState(null), [j, x] = l.useState([]), O = l.useCallback(async () => {
+    g(null), g(await c.Z.updateEstimate(t.id, p, j))
+  }, [p, t.id, j]);
   l.useEffect(() => {
-    y()
-  }, [y]);
-  let v = (0, i.Wu)([C.Z, d.Z], () => {
+    O()
+  }, [O]);
+  let y = (0, i.Wu)([C.Z, d.Z], () => {
     let e = C.Z.getHighestRole(t);
     return a()(d.Z.getRoles(t.id)).sortBy(e => e.position).filter(e => !(0, u.pM)(t.id, e.id)).filter(n => C.Z.isRoleHigher(t, e, n)).value().map(e => {
       let {
@@ -78,15 +78,15 @@ let p = e => {
           children: (0, r.jsx)(s.VcW, {
             maxVisibleItems: 10,
             multi: !0,
-            value: g,
+            value: j,
             onChange: e => x(e),
-            options: v
+            options: y
           })
         })
       }), (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,
         className: b.spacing,
-        children: g.length > 0 ? m.NW.format(m.t["5WxHHh"], {
+        children: j.length > 0 ? m.NW.format(m.t["5WxHHh"], {
           members: h,
           days: p
         }) : m.NW.format(m.t.f13az8, {
@@ -97,7 +97,7 @@ let p = e => {
     }), (0, r.jsxs)(s.mzw, {
       children: [(0, r.jsx)(s.zxk, {
         onClick: () => {
-          c.Z.prune(t.id, p, g), o()
+          c.Z.prune(t.id, p, j), o()
         },
         children: m.NW.string(m.t["2mIlKS"])
       }), (0, r.jsx)(s.zxk, {

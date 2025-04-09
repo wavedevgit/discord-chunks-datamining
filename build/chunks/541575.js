@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -16,8 +16,8 @@ var i = n(780384),
   m = n(26323),
   g = n(764260),
   p = n(981631),
-  h = n(30513),
-  f = n(388032),
+  f = n(30513),
+  h = n(388032),
   b = n(18346);
 
 function x(e) {
@@ -55,8 +55,8 @@ let N = function(e) {
   let {
     guild: t,
     disabled: N,
-    role: _
-  } = e, v = (0, a.ZP)(), y = (0, u.oC)(t.id, _), {
+    role: v
+  } = e, _ = (0, a.ZP)(), y = (0, u.oC)(t.id, v), {
     analyticsLocations: O
   } = (0, o.ZP)(), C = () => {
     (0, s.ZDy)(async () => {
@@ -65,8 +65,8 @@ let N = function(e) {
       } = await n.e("22942").then(n.bind(n, 660727));
       return n => (0, r.jsx)(e, j(x({}, n), {
         guildId: t.id,
-        onUploadIcon: e => (0, g._l)(_.id, e, null),
-        onSelectUnicodeEmoji: e => (0, g._l)(_.id, null, e)
+        onUploadIcon: e => (0, g._l)(v.id, e, null),
+        onSelectUnicodeEmoji: e => (0, g._l)(v.id, null, e)
       }))
     })
   }, I = t.features.has(p.oNc.ROLE_ICONS), E = e => {
@@ -84,7 +84,7 @@ let N = function(e) {
         object: p.qAy.BADGE
       },
       guild: t,
-      perks: (0, h.Yp)()
+      perks: (0, f.Yp)()
     }))
   }, S = (0, r.jsx)(d.Z, {
     className: b.availabilityIndicator,
@@ -102,11 +102,11 @@ let N = function(e) {
     children: [(0, r.jsxs)(s.vwX, {
       className: b.formTitle,
       children: [(0, r.jsx)("div", {
-        children: f.NW.string(f.t.B9grJy)
+        children: h.NW.string(h.t.B9grJy)
       }), S]
     }), (0, r.jsx)(s.R94, {
       className: b.description,
-      children: f.NW.string(f.t.I3YQeX)
+      children: h.NW.string(h.t.I3YQeX)
     }), (0, r.jsxs)("div", {
       className: b.rolePreviewArea,
       children: [(0, r.jsx)("div", {
@@ -123,22 +123,22 @@ let N = function(e) {
         })
       }), (0, r.jsx)(s.zxk, {
         className: b.button,
-        color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.WHITE,
+        color: (0, i.ap)(_) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.WHITE,
         look: s.zxk.Looks.OUTLINED,
         onClick: () => t.hasFeature(p.oNc.ROLE_ICONS) ? C() : E({
           object: p.qAy.UPLOAD_IMAGE
         }),
         disabled: N,
-        children: f.NW.string(f.t.mD1oGB)
+        children: h.NW.string(h.t.mD1oGB)
       }), null != y ? (0, r.jsx)(s.zxk, {
         className: b.button,
-        color: (0, i.ap)(v) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.TRANSPARENT,
+        color: (0, i.ap)(_) ? s.zxk.Colors.PRIMARY : s.zxk.Colors.TRANSPARENT,
         look: s.zxk.Looks.BLANK,
         onClick: () => {
-          (0, g._l)(_.id, null, null)
+          (0, g._l)(v.id, null, null)
         },
         disabled: N,
-        children: f.NW.string(f.t["uY+Nk5"])
+        children: h.NW.string(h.t["uY+Nk5"])
       }) : null]
     })]
   })

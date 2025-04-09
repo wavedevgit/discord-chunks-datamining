@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => D
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(239091),
   g = n(749210),
   p = n(493773),
-  h = n(607070),
-  f = n(605436),
+  f = n(607070),
+  h = n(605436),
   b = n(134433),
   x = n(325476),
   j = n(496675),
   N = n(671533),
-  _ = n(946724),
-  v = n(970129),
+  v = n(946724),
+  _ = n(970129),
   y = n(712181),
   O = n(420966),
   C = n(203377),
@@ -69,16 +69,16 @@ function R(e) {
       guild: d,
       role: g,
       highestRole: p,
-      selectedItem: h,
+      selectedItem: f,
       onClick: x,
       currentPosition: j,
       onDragStart: N,
-      onDragReset: _,
+      onDragReset: v,
       onDragComplete: y,
       roleStyle: O
     } = e,
-    C = (0, v.T)(d, p, g),
-    E = (0, f.pM)(d.id, g.id),
+    C = (0, _.T)(d, p, g),
+    E = (0, h.pM)(d.id, g.id),
     R = null == C && !E,
     D = (null == (t = g.tags) ? void 0 : t.guild_connections) !== void 0,
     [, Z] = (0, l.c)({
@@ -90,13 +90,13 @@ function R(e) {
       canDrag: () => R,
       end: (e, t) => {
         let n = t.getDropResult();
-        if (null == n) return void _();
+        if (null == n) return void v();
         y(n.roleId)
       }
     }),
     [{
-      dragSourcePosition: A
-    }, k] = (0, o.L)({
+      dragSourcePosition: k
+    }, A] = (0, o.L)({
       accept: w,
       canDrop: () => R,
       collect: e => {
@@ -124,11 +124,11 @@ function R(e) {
     color: W
   }), (0, r.jsxs)(u.njP.Item, {
     className: a()(S.row, {
-      [S.dragBefore]: null !== A && j < A,
-      [S.dragAfter]: null !== A && j > A
+      [S.dragBefore]: null !== k && j < k,
+      [S.dragAfter]: null !== k && j > k
     }),
     id: g.id,
-    selectedItem: h,
+    selectedItem: f,
     itemType: "side",
     onClick: x,
     onContextMenu: function(e) {
@@ -145,9 +145,9 @@ function R(e) {
     "aria-label": g.name,
     clickableRef: e => {
       var t;
-      Z(k(null != (t = null == e ? void 0 : e.ref) ? t : null))
+      Z(A(null != (t = null == e ? void 0 : e.ref) ? t : null))
     },
-    children: [s, null != C ? (0, r.jsx)(v.Z, {
+    children: [s, null != C ? (0, r.jsx)(_.Z, {
       className: S.lock,
       tooltipText: C
     }) : null, (0, r.jsx)(u.Text, {
@@ -165,25 +165,25 @@ function D(e) {
     currentRoleId: n,
     setCurrentRoleId: s,
     setSelectedSection: l
-  } = e, o = (0, d.e7)([_.Z], () => _.Z.roles), c = (0, d.e7)([j.Z], () => j.Z.getHighestRole(t)), m = (0, d.e7)([h.Z], () => h.Z.roleStyle), [f, b] = i.useState(o.length), {
-    scrolledToTop: v,
+  } = e, o = (0, d.e7)([v.Z], () => v.Z.roles), c = (0, d.e7)([j.Z], () => j.Z.getHighestRole(t)), m = (0, d.e7)([f.Z], () => f.Z.roleStyle), [h, b] = i.useState(o.length), {
+    scrolledToTop: _,
     handleScroll: I
   } = (0, O.V)(), {
     handleDragStart: w,
     handleDragReset: D,
     handleDragComplete: Z
-  } = (0, y.Z)(o), A = i.useRef(null), k = i.useCallback(e => {
+  } = (0, y.Z)(o), k = i.useRef(null), A = i.useCallback(e => {
     var t, n;
     let r = o.findIndex(t => t.id === e);
-    null == (n = A.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
+    null == (n = k.current) || null == (t = n.getScrollerNode()) || t.scrollTo({
       top: Math.max((r - 2) * 34, 0)
     })
   }, [o]);
   (0, p.ZP)(() => {
-    k(n)
+    A(n)
   }), i.useEffect(() => {
-    o.length > f && k(n), o.length !== f && b(o.length)
-  }, [o.length, f, b, k, n]);
+    o.length > h && A(n), o.length !== h && b(o.length)
+  }, [o.length, h, b, A, n]);
   let W = () => {
     g.Z.createRole(t.id), l(C.ZI.DISPLAY)
   };
@@ -193,7 +193,7 @@ function D(e) {
       className: S.container,
       children: [(0, r.jsxs)("div", {
         className: a()(S.titleContainer, {
-          [S.titleElevated]: !v
+          [S.titleElevated]: !_
         }),
         children: [(0, r.jsxs)(u.P3F, {
           className: S.title,
@@ -228,7 +228,7 @@ function D(e) {
         })]
       }), (0, r.jsx)(u.Den, {
         className: S.list,
-        ref: A,
+        ref: k,
         onScroll: I,
         children: (0, r.jsx)(u.njP, {
           selectedItem: n,

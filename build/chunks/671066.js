@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -21,22 +21,22 @@ function g(e) {
     action: n,
     triggerType: g,
     toggled: p,
-    onToggleAction: h
-  } = e, f = e => () => h(e), b = (0, d.c)(n.type, n, g), x = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
+    onToggleAction: f
+  } = e, h = e => () => f(e), b = (0, d.c)(n.type, n, g), x = null == (t = n.metadata) ? void 0 : t.channelId, j = (0, i.e7)([c.default, o.Z, l.Z], () => {
     let e = l.Z.getChannel(x);
     return null == e ? null : (0, a.F6)(e, c.default, o.Z)
   }, [x]);
   if (null == b) return null;
   let {
     headerText: N,
-    descriptionText: _,
-    icon: v
+    descriptionText: v,
+    icon: _
   } = b;
   return (0, r.jsxs)("div", {
     className: m.actionContainer,
     children: [(0, r.jsx)("div", {
       className: m.actionIconContainer,
-      children: (0, r.jsx)(v, {
+      children: (0, r.jsx)(_, {
         size: "md",
         color: "currentColor",
         className: m.actionIcon
@@ -49,14 +49,14 @@ function g(e) {
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: _
+        children: v
       }), p && (0, r.jsxs)(s.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
         children: [null != j && u.NW.format(u.t["8Sr/am"], {
           channelName: j
         }), (0, r.jsx)(s.P3F, {
-          onClick: f(!0),
+          onClick: h(!0),
           className: m.editChannel,
           tag: "span",
           role: "link",
@@ -67,7 +67,7 @@ function g(e) {
       children: (0, r.jsx)(s.XZJ, {
         type: s.XZJ.Types.INVERTED,
         value: p,
-        onChange: f(!1),
+        onChange: h(!1),
         className: m.__invalid_actionCheckbox
       })
     })]

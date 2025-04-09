@@ -1,17 +1,17 @@
 /** Chunk was on 99916 **/
 r.d(t, {
-  l: () => a,
-  v: () => f
+  l: () => u,
+  v: () => d
 });
 var n = r(200651);
 r(192379);
 var i = r(481060),
   o = r(144114),
-  l = r(489813),
-  s = r(815660),
+  s = r(489813),
+  l = r(815660),
   c = r(388032);
 
-function u(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -30,8 +30,8 @@ function u(e) {
   return e
 }
 
-function a() {
-  return (0, n.jsx)(l.PU, {
+function u() {
+  return (0, n.jsx)(s.PU, {
     icon: i.AtH,
     text: c.NW.string(c.t.woMjLS),
     footnote: c.NW.string(c.t["jMh+TU"]),
@@ -40,7 +40,7 @@ function a() {
       text: c.NW.string(c.t.mGlP39),
       children: e => {
         var t, r;
-        return (0, n.jsx)(i.zxk, (t = u({}, e), r = r = {
+        return (0, n.jsx)(i.zxk, (t = a({}, e), r = r = {
           size: i.zxk.Sizes.SMALL,
           disabled: !0,
           children: c.NW.string(c.t["13ofGh"])
@@ -59,13 +59,13 @@ function a() {
   })
 }
 
-function f(e) {
+function d(e) {
   let {
     isUserVerified: t
-  } = e, a = t ? c.NW.string(c.t.WWzQtb) : c.NW.string(c.t.woMjLS);
-  return (0, n.jsx)(l.PU, {
+  } = e, u = t ? c.NW.string(c.t.WWzQtb) : c.NW.string(c.t.woMjLS);
+  return (0, n.jsx)(s.PU, {
     icon: i.AtH,
-    text: a,
+    text: u,
     footnote: c.NW.string(c.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, n.jsx)(i.zxk, {
@@ -75,11 +75,11 @@ function f(e) {
           let {
             default: e
           } = await Promise.all([r.e("76540"), r.e("56898")]).then(r.bind(r, 607018));
-          return t => (0, n.jsx)(e, u({
+          return t => (0, n.jsx)(e, a({
             reason: o.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: s.M
+          modalKey: l.M
         })
       },
       children: c.NW.string(c.t["13ofGh"])

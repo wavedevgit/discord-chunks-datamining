@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -34,8 +34,8 @@ let o = ["#1e349e", "#4d61de", "#7887e2", "#92a6e4"],
 function p(e) {
   var t, n, {
       width: p,
-      height: h,
-      primaryTintColor: f,
+      height: f,
+      primaryTintColor: h,
       secondaryTintColor: b
     } = e,
     x = function(e, t) {
@@ -58,7 +58,7 @@ function p(e) {
     secondaryColorsTransformed: N
   } = (0, i.s)({
     primaryBaseColors: o,
-    primaryTintColor: f,
+    primaryTintColor: h,
     primaryTintLuminances: d,
     primaryLuminanceWeights: u,
     secondaryBaseColors: c,
@@ -66,8 +66,8 @@ function p(e) {
     secondaryTintLuminances: m,
     secondaryLuminanceWeights: g
   }), {
-    styleContent: _,
-    containerId: v
+    styleContent: v,
+    containerId: _
   } = (0, s.bC)(j, N);
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -89,15 +89,15 @@ function p(e) {
   }({}, x), n = n = {
     "aria-label": a.NW.string(a.t.nH6S2d),
     width: p,
-    height: h,
+    height: f,
     viewBox: "0 0 ".concat(s.Km, " ").concat(s.md),
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsx)("style", {
-        children: _
+        children: v
       })
     }), (0, r.jsx)("use", {
       href: "".concat(l, "#wrapper-layer"),
-      id: v
+      id: _
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

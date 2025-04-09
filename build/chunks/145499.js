@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(678558),
   g = n(852679),
   p = n(357156),
-  h = n(317169),
-  f = n(626135),
+  f = n(317169),
+  h = n(626135),
   b = n(267642),
   x = n(926491),
   j = n(909707),
   N = n(386937),
-  _ = n(316350),
-  v = n(863562),
+  v = n(316350),
+  _ = n(863562),
   y = n(981631),
   O = n(388032),
   C = n(145635);
@@ -98,7 +98,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
       size: o.zxk.Sizes.SMALL,
       color: o.zxk.Colors.BRAND,
       onClick: () => {
-        f.default.track(y.rMx.OPEN_MODAL, {
+        h.default.track(y.rMx.OPEN_MODAL, {
           type: y.jXE.CREATE_STICKER_MODAL,
           location: n
         }), S({
@@ -119,7 +119,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
       return null != (e = x.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: d
-    } = (0, u.ZP)(), f = (0, h.Z)(t.id).available, S = t.hasFeature(y.oNc.MORE_STICKERS) ? y.Eu4.TIER_3 : t.premiumTier, w = t.hasFeature(y.oNc.MORE_STICKERS) ? y.oCV[y.Eu4.TIER_3] : f;
+    } = (0, u.ZP)(), h = (0, f.Z)(t.id).available, S = t.hasFeature(y.oNc.MORE_STICKERS) ? y.Eu4.TIER_3 : t.premiumTier, w = t.hasFeature(y.oNc.MORE_STICKERS) ? y.oCV[y.Eu4.TIER_3] : h;
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [c]), s) return (0, r.jsx)(o.$jN, {});
@@ -181,7 +181,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
             tierIndex: g
           } = e,
           {
-            canCreateExpressions: h,
+            canCreateExpressions: f,
             canManageGuildExpression: x
           } = (0, p.Gw)(t),
           j = u[g - 1],
@@ -189,10 +189,10 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           E = (0, b.A3)(d.tier, t),
           D = (0, b.ig)(d.tier),
           Z = c.slice(N, E),
-          A = Z.length > 0,
-          k = S < d.tier,
+          k = Z.length > 0,
+          A = S < d.tier,
           W = I(c.length, t),
-          L = h && !k && W === d.tier && E !== Z.length,
+          L = f && !A && W === d.tier && E !== Z.length,
           M = L || Z.length > 0,
           G = E - N,
           U = n(872732),
@@ -216,7 +216,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           }
         }) : L && (i = (0, r.jsx)(P, {
           guild: t
-        })), (0, r.jsxs)(_.Z, {
+        })), (0, r.jsxs)(v.Z, {
           subscriptionCount: w,
           tier: d,
           onSetRef: l,
@@ -228,19 +228,19 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildId: t.id,
           children: [M && (0, r.jsxs)("div", {
             className: C.grid,
-            children: [Z.map(e => (0, r.jsx)(v.Z, {
-              isDisabled: k,
+            children: [Z.map(e => (0, r.jsx)(_.Z, {
+              isDisabled: A,
               sticker: e,
               canManageSticker: x(e)
             }, e.id)), z]
-          }), !k && !L && 0 === Z.length && (0, r.jsx)("div", {
+          }), !A && !L && 0 === Z.length && (0, r.jsx)("div", {
             className: a()(C.emptyTierWrapper, C.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
               children: O.NW.string(O.t.lqwv0N)
             })
-          }), k && !A && (0, r.jsxs)("div", {
+          }), A && !k && (0, r.jsxs)("div", {
             className: C.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
               alt: O.NW.string(O.t.BAhsws),
@@ -258,7 +258,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
               })
             }), (0, r.jsx)(o.zxk, {
               color: o.zxk.Colors.GREEN,
-              onClick: () => R(y.oCV[d.tier] - f, d.tier),
+              onClick: () => R(y.oCV[d.tier] - h, d.tier),
               children: O.NW.string(O.t.dtFw5e)
             })]
           })]

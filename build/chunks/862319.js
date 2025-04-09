@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => f,
+  Z: () => h,
   w: () => b
 });
 var r = n(200651);
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,13 +49,13 @@ function h(e, t) {
   }), e
 }
 
-function f(e) {
+function h(e) {
   let {
     channelBenefits: t,
     intangibleBenefits: n,
     subscriptionListings: i,
     onImport: l
-  } = e, f = (0, d.mY)();
+  } = e, h = (0, d.mY)();
   return (0, r.jsx)("div", {
     className: g.container,
     children: i.map(e => (0, r.jsxs)("div", {
@@ -83,14 +83,14 @@ function f(e) {
         look: a.zxk.Looks.OUTLINED,
         color: a.zxk.Colors.PRIMARY,
         onClick: () => {
-          (0, a.h7j)(i => (0, r.jsx)(u.K, h(p({}, i), {
+          (0, a.h7j)(i => (0, r.jsx)(u.K, f(p({}, i), {
             fromSubscriptionListing: e,
             existingChannelBenefits: t,
             existingIntangibleBenefits: n,
             onSubmit: l
           })))
         },
-        disabled: f,
+        disabled: h,
         children: m.NW.string(m.t["90bIv7"])
       })]
     }, e.id))
@@ -108,7 +108,7 @@ function b(e) {
       [g.disabled]: i
     }),
     onClick: i ? void 0 : function() {
-      (0, a.h7j)(e => (0, r.jsx)(u.C, h(p({}, e), {
+      (0, a.h7j)(e => (0, r.jsx)(u.C, f(p({}, e), {
         guildId: t,
         onImport: n
       })))

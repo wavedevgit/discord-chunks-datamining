@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => l
@@ -21,10 +21,10 @@ function l(e) {
     includeStageVoiceChannels: m = !1,
     helperText: g,
     className: p
-  } = e, h = (0, s.r)(t, n, u, m), f = (0, a.h)(t, l, d);
+  } = e, f = (0, s.r)(t, n, u, m), h = (0, a.h)(t, l, d);
   return (0, r.jsx)(i.ZP, {
-    channelRows: h,
-    roleRows: f,
+    channelRows: f,
+    roleRows: h,
     guildId: t,
     selectedChannelIds: n,
     selectedRoleIds: l,

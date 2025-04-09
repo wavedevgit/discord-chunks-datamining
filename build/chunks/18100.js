@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(388032),
   p = n(579590);
 
-function h(e) {
+function f(e) {
   let {
     trait: t,
     selected: n,
@@ -36,27 +36,27 @@ function h(e) {
   }, t)
 }
 
-function f(e) {
+function h(e) {
   var t;
   let {
     guildId: n,
     progress: s,
     traitsToHighlight: u,
-    maskDescription: f,
+    maskDescription: h,
     maskTraits: b,
     onTraitClick: x
   } = e, j = (0, l.e7)([c.Z], () => c.Z.getGuild(n)), {
     interests: N,
-    description: _,
-    playstyle: v,
+    description: v,
+    playstyle: _,
     wildcardDescriptors: y,
     brandPrimaryColor: O
   } = s, C = (0, o.dQu)(o.TVs.colors.TEXT_BRAND), I = Array.from(N), E = i.useMemo(() => null != u ? new Set(u) : new Set, [u]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: a()(p.description, f ? p.descriptionBorderMask : void 0),
+      className: a()(p.description, h ? p.descriptionBorderMask : void 0),
       children: [(0, r.jsx)("div", {
-        className: f ? p.descriptionMask : void 0
+        className: h ? p.descriptionMask : void 0
       }), (0, r.jsx)(o.X6q, {
         variant: "heading-md/medium",
         color: "header-primary",
@@ -76,7 +76,7 @@ function f(e) {
           variant: "text-xs/normal",
           color: "text-secondary",
           className: p.clanInfoItem,
-          children: null != (t = (0, m.mv)(v)) ? t : g.NW.string(g.t.JijC4O)
+          children: null != (t = (0, m.mv)(_)) ? t : g.NW.string(g.t.JijC4O)
         }), null != j && (0, r.jsx)(d.c, {
           wildcardDescriptors: y,
           primaryColor: null != O ? O : C.hex()
@@ -85,7 +85,7 @@ function f(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         className: p.descriptionText,
-        children: (null == _ ? void 0 : _.length) > 0 ? _ : g.NW.string(g.t["/pfXKi"])
+        children: (null == v ? void 0 : v.length) > 0 ? v : g.NW.string(g.t["/pfXKi"])
       })]
     }), (0, r.jsxs)("div", {
       className: a()(p.tagsContainer, b ? p.traitsBorderMask : void 0),
@@ -105,7 +105,7 @@ function f(e) {
         })]
       }), (0, r.jsx)("div", {
         className: p.traits,
-        children: I.map(e => (0, r.jsx)(h, {
+        children: I.map(e => (0, r.jsx)(f, {
           trait: e,
           selected: E.has(e),
           onClick: x

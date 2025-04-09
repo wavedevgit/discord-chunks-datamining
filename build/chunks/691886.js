@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(324067),
   g = n(699516),
   p = n(594174),
-  h = n(303737),
-  f = n(981631),
+  f = n(303737),
+  h = n(981631),
   b = n(388032),
   x = n(621885);
 
@@ -50,7 +50,7 @@ function N(e) {
   })
 }
 
-function _() {
+function v() {
   return (0, r.jsx)(N, {
     icon: (0, r.jsx)(o.qJs, {
       size: "md",
@@ -62,11 +62,11 @@ function _() {
   })
 }
 
-function v(e) {
+function _(e) {
   var t;
   let {
     channelId: n
-  } = e, i = (0, h.m7)(n), s = (0, h.m7)(null != (t = null == i ? void 0 : i.parent_id) ? t : f.lds);
+  } = e, i = (0, f.m7)(n), s = (0, f.m7)(null != (t = null == i ? void 0 : i.parent_id) ? t : h.lds);
   if (null == i) return null;
   let a = (0, d.KS)(i),
     l = (0, c.F6)(i, p.default, g.Z),
@@ -84,9 +84,9 @@ function y(e) {
   let {
     value: t
   } = e;
-  return null != t ? (0, r.jsx)(v, {
+  return null != t ? (0, r.jsx)(_, {
     channelId: t
-  }) : (0, r.jsx)(_, {})
+  }) : (0, r.jsx)(v, {})
 }
 
 function O(e) {
@@ -97,17 +97,17 @@ function O(e) {
     omitChannelIds: d,
     "aria-labelledby": x,
     onChange: N
-  } = e, _ = b.NW.string(b.t.d7YJMD), v = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), O = (0, h.m7)(null != s ? s : f.lds), C = i.useMemo(() => {
+  } = e, v = b.NW.string(b.t.d7YJMD), _ = (0, l.e7)([m.Z], () => m.Z.getCategories(t), [t]), O = (0, f.m7)(null != s ? s : h.lds), C = i.useMemo(() => {
     let e = [{
         value: null,
-        label: _
+        label: v
       }],
       t = !1;
-    for (let n of v._categories)
+    for (let n of _._categories)
       for (let {
           channel: r
         }
-        of v[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
+        of _[n.channel.id])((0, u.r8)(r.type) || (0, u.bw)(r.type)) && (r.id !== s && (null == d ? void 0 : d.has(r.id)) && (r.id !== a || s === a) || (s === r.id && (t = !0), e.push({
         value: r.id,
         label: (0, c.F6)(r, p.default, g.Z)
       })));
@@ -115,7 +115,7 @@ function O(e) {
       value: s,
       label: O.name
     }), e
-  }, [_, s, O, v, d, a]);
+  }, [v, s, O, _, d, a]);
   return (0, r.jsx)(o.PhF, {
     placeholder: b.NW.string(b.t.r2pts7),
     options: C,

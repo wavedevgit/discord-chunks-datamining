@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => b
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,20 +46,20 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let f = [],
+let h = [],
   b = function(e) {
     let {
       guildId: t
     } = e, b = (0, s.Wu)([d.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : f
-    }), x = i.useMemo(() => b.map(e => h(p({}, e), {
+      return null != (e = d.Z.getSettings().resourceChannels) ? e : h
+    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
       id: e.channelId
     })), [b]), {
       handleDragStart: j,
       handleDragReset: N,
-      handleDragComplete: _
-    } = (0, l.Z)(x, c.lq), v = i.useCallback((e, n) => {
+      handleDragComplete: v
+    } = (0, l.Z)(x, c.lq), _ = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
@@ -69,13 +69,13 @@ let f = [],
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, h(p({}, n), {
+        return n => (0, r.jsx)(e, f(p({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: v
+          onIconUpload: _
         }))
       })
-    }, [t, v]);
+    }, [t, _]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
       children: [b.map((e, n) => (0, r.jsx)(u.Z, {
@@ -84,7 +84,7 @@ let f = [],
         index: n,
         onDragStart: j,
         onDragReset: N,
-        onDragComplete: _
+        onDragComplete: v
       }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
         className: g.addActionItem,
         onClick: y,

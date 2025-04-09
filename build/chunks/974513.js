@@ -1,8 +1,8 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   O4: () => b,
-  OA: () => f,
+  OA: () => h,
   Wu: () => x
 }), n(388685);
 var r = n(200651),
@@ -36,7 +36,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function f(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function h(e, t) {
   }), e
 }
 
-function f(e, t) {
+function h(e, t) {
   let n = (0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts));
   return [(0, s.Wu)([u.Z], () => (0, c.kl)(e, t, u.Z.editedOnboardingPrompts, c.V7)), n]
 }
@@ -67,9 +67,9 @@ function x(e) {
   let {
     guildId: t,
     className: n
-  } = e, c = (0, l.UQ)(t).advancedModeAllowed, u = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), f = i.useCallback(() => {
+  } = e, c = (0, l.UQ)(t).advancedModeAllowed, u = (0, s.e7)([o.Z], () => o.Z.isAdvancedMode(t)), h = i.useCallback(() => {
     let e = u ? m.Un.ONBOARDING_DEFAULT : m.Un.ONBOARDING_ADVANCED;
-    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+    u ? (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
       header: g.NW.string(g.t["49+ONj"]),
       confirmText: g.NW.string(g.t.R9GHyc),
       cancelText: g.NW.string(g.t["ETE/oK"]),
@@ -80,7 +80,7 @@ function x(e) {
         variant: "text-md/normal",
         children: g.NW.string(g.t.TLkoOj)
       })
-    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, h(p({
+    }))) : (0, a.h7j)(n => (0, r.jsx)(a.ConfirmModal, f(p({
       header: g.NW.string(g.t.YB9xUF),
       confirmText: g.NW.string(g.t.ts6u6u),
       cancelText: g.NW.string(g.t["ETE/oK"]),
@@ -96,7 +96,7 @@ function x(e) {
   return c ? (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)(a.eee, {
-      onClick: f,
+      onClick: h,
       children: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-link",

@@ -1,23 +1,24 @@
-/** Chunk was on 16114 **/
+/** Chunk was on 56444 **/
+"use strict";
 n.d(t, {
-  A: () => c
+  A: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(441012);
+  s = n(441012);
 
-function c(e) {
+function a(e) {
   let {
     text: t,
     tooltipText: n,
-    onClick: c
+    onClick: a
   } = e;
   return (0, r.jsx)(i.ua7, {
     text: n,
     shouldShow: null != n,
     children: e => {
-      var n, s;
+      var n, l;
       return (0, r.jsxs)(i.P3F, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -35,27 +36,27 @@ function c(e) {
           })
         }
         return e
-      }({}, e), s = s = {
-        className: o.container,
-        onClick: c,
+      }({}, e), l = l = {
+        className: s.container,
+        onClick: a,
         children: [(0, r.jsx)(i.qJs, {
           size: "md",
           color: "currentColor",
-          className: o.icon
+          className: s.icon
         }), (0, r.jsx)(i.Text, {
           color: "interactive-active",
           variant: "text-md/semibold",
           children: t
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(l)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
       }), n))
     }
   })

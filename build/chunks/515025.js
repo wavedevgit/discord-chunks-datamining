@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   h: () => b
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(981631),
   g = n(30513),
   p = n(200299),
-  h = n(388032),
-  f = n(722733);
+  f = n(388032),
+  h = n(722733);
 
 function b(e) {
   let {
@@ -28,7 +28,7 @@ function b(e) {
     d.Z.updateGuild({
       splash: e
     })
-  }, []), _ = i.useCallback(e => {
+  }, []), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: j,
@@ -36,7 +36,7 @@ function b(e) {
       analyticsObject: m.qAy.UPLOAD_IMAGE,
       perks: (0, g.o9)()
     })
-  }, [j, t]), v = (0, r.jsx)(o.Z, {
+  }, [j, t]), _ = (0, r.jsx)(o.Z, {
     image: t.splash,
     makeURL: e => null != e ? c.ZP.getGuildSplashURL({
       id: t.id,
@@ -44,16 +44,16 @@ function b(e) {
     }) : null,
     disabled: !x,
     onChange: N,
-    hint: h.NW.string(h.t.uPvxqK),
+    hint: f.NW.string(f.t.uPvxqK),
     enabled: x,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, l.Z)(p.B)
   });
-  return b ? v : (0, r.jsx)(s.P3F, {
+  return b ? _ : (0, r.jsx)(s.P3F, {
     "aria-hidden": !0,
     tabIndex: -1,
-    className: f.upsell,
-    onClick: _,
-    children: v
+    className: h.upsell,
+    onClick: v,
+    children: _
   })
 }

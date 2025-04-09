@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(953529), n(388685);
 var r, i, s, a = n(392711),
   l = n.n(a),
@@ -29,7 +29,7 @@ function m(e) {
 }
 let g = {},
   p = 0;
-class h extends(r = o.ZP.Store) {
+class f extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(d.default)
   }
@@ -43,13 +43,13 @@ class h extends(r = o.ZP.Store) {
     return e.map(e => g[e]).filter(u.lm)
   }
 }
-s = "DiscoverGuildsStore", (i = "displayName") in h ? Object.defineProperty(h, i, {
+s = "DiscoverGuildsStore", (i = "displayName") in f ? Object.defineProperty(f, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : h[i] = s;
-let f = new h(c.Z, {
+}) : f[i] = s;
+let h = new f(c.Z, {
   DISCOVER_GUILDS_FETCH_START: function(e) {
     p += 1
   },

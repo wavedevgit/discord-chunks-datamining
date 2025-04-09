@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   C: () => z,
@@ -16,14 +16,14 @@ var r = n(200651),
   m = n(481060),
   g = n(596454),
   p = n(211266),
-  h = n(471445),
-  f = n(605436),
+  f = n(471445),
+  h = n(605436),
   b = n(91218),
   x = n(313201),
   j = n(339085),
   N = n(518738),
-  _ = n(131704),
-  v = n(324067),
+  v = n(131704),
+  _ = n(324067),
   y = n(430824),
   O = n(259580),
   C = n(624138),
@@ -36,9 +36,9 @@ var r = n(200651),
   R = n(818771);
 let D = (0, x.hQ)(),
   Z = (0, x.hQ)(),
-  A = (0, C.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
+  k = (0, C.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
-function k(e) {
+function A(e) {
   var t;
   let {
     emojiId: n,
@@ -130,7 +130,7 @@ function L(e) {
     }), (0, r.jsx)("div", {
       className: R.list,
       children: i.map(e => (0, r.jsxs)(W, {
-        icon: (0, r.jsx)(k, {
+        icon: (0, r.jsx)(A, {
           emojiId: e.emoji_id,
           emojiName: e.emoji_name,
           className: R.rowIcon
@@ -160,9 +160,9 @@ function M(e) {
     existingIntangibleBenefits: a,
     onSubmit: l,
     onClose: o
-  } = e, c = n.role_benefits.benefits, [u, g] = i.useState(() => new Set(c)), p = i.useMemo(() => c.filter(I.rC), [c]), h = (0, S.Z)(p), f = i.useMemo(() => c.filter(I.lL), [c]), b = i.useMemo(() => new Set(h.filter(e => s.some(t => t.ref_id === e.ref_id))), [h, s]), j = i.useMemo(() => new Set(f.filter(e => a.some(t => (0, d.Z)(e, t)))), [a, f]), N = (0, x.Dt)();
+  } = e, c = n.role_benefits.benefits, [u, g] = i.useState(() => new Set(c)), p = i.useMemo(() => c.filter(I.rC), [c]), f = (0, S.Z)(p), h = i.useMemo(() => c.filter(I.lL), [c]), b = i.useMemo(() => new Set(f.filter(e => s.some(t => t.ref_id === e.ref_id))), [f, s]), j = i.useMemo(() => new Set(h.filter(e => a.some(t => (0, d.Z)(e, t)))), [a, h]), N = (0, x.Dt)();
 
-  function _(e, t) {
+  function v(e, t) {
     g(n => {
       let r = new Set(n);
       return t ? r.add(e) : r.delete(e), r
@@ -193,17 +193,17 @@ function M(e) {
         children: [(0, r.jsx)(L, {
           title: w.NW.string(w.t.S2kKzM),
           selectAllText: w.NW.string(w.t["5Q/fLC"]),
-          benefits: h,
+          benefits: f,
           dupeBenefits: b,
           selectedBenefits: u,
-          onToggleBenefit: _
+          onToggleBenefit: v
         }), (0, r.jsx)(L, {
           title: w.NW.string(w.t.RdwKw8),
           selectAllText: w.NW.string(w.t.aJPLVF),
-          benefits: f,
+          benefits: h,
           dupeBenefits: j,
           selectedBenefits: u,
-          onToggleBenefit: _
+          onToggleBenefit: v
         })]
       }), (0, r.jsxs)(m.mzw, {
         children: [(0, r.jsx)(m.zxk, {
@@ -230,7 +230,7 @@ function G(e) {
   } = e, l = (0, N.p9)({
     guildId: n,
     roleId: i.id,
-    size: A
+    size: k
   });
   return (0, r.jsxs)(m.P3F, {
     className: R.roleRow,
@@ -288,11 +288,11 @@ function U(e) {
   let {
     guild: t,
     onSelect: n
-  } = e, s = (0, c.e7)([y.Z], () => y.Z.getRoles(t.id)), a = (0, c.e7)([v.Z], () => v.Z.getCategories(t.id)), o = i.useMemo(() => a._categories.flatMap(e => a[e.channel.id].filter(e => {
+  } = e, s = (0, c.e7)([y.Z], () => y.Z.getRoles(t.id)), a = (0, c.e7)([_.Z], () => _.Z.getCategories(t.id)), o = i.useMemo(() => a._categories.flatMap(e => a[e.channel.id].filter(e => {
     let {
       channel: t
     } = e;
-    return _.zS.has(t.type)
+    return v.zS.has(t.type)
   }).map(e => {
     let {
       channel: t
@@ -300,7 +300,7 @@ function U(e) {
     return t
   })), [a]), d = i.useMemo(() => Object.values(s).flatMap(e => {
     var n;
-    if ((0, f.pM)(t.id, e.id) || (null == (n = e.tags) ? void 0 : n.subscription_listing_id) != null || l.Db(e.permissions, P.TC2)) return [];
+    if ((0, h.pM)(t.id, e.id) || (null == (n = e.tags) ? void 0 : n.subscription_listing_id) != null || l.Db(e.permissions, P.TC2)) return [];
     let r = (0, E.Z)(o, e).length;
     return r > 0 ? {
       role: e,
@@ -358,12 +358,12 @@ function F(e) {
   null != s && (o.current = s);
   let c = null != s ? s : o.current,
     d = (0, p.Z)(() => {
-      let e = v.Z.getCategories(n);
+      let e = _.Z.getCategories(n);
       return e._categories.flatMap(t => e[t.channel.id].filter(e => {
         let {
           channel: t
         } = e;
-        return _.zS.has(t.type)
+        return v.zS.has(t.type)
       }).map(e => {
         let {
           channel: t
@@ -372,10 +372,10 @@ function F(e) {
       }))
     }),
     u = i.useMemo(() => (0, E.Z)(d, c), [d, c]),
-    [g, f] = i.useState(() => new Set(u.map(e => e.id)));
+    [g, h] = i.useState(() => new Set(u.map(e => e.id)));
 
   function b(e, t) {
-    f(n => {
+    h(n => {
       let r = new Set(n);
       return t ? r.add(e) : r.delete(e), r
     })
@@ -419,7 +419,7 @@ function F(e) {
         className: R.list,
         children: u.map(e => {
           var t;
-          let n = null != (t = (0, h.Th)(e.type)) ? t : m.VL1;
+          let n = null != (t = (0, f.Th)(e.type)) ? t : m.VL1;
           return (0, r.jsx)(W, {
             icon: (0, r.jsx)("div", {
               className: R.rowIcon,

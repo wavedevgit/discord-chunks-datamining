@@ -1,69 +1,70 @@
-/** Chunk was on 16114 **/
+/** Chunk was on 56444 **/
+"use strict";
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(239091),
-  c = n(838221),
-  s = n(246364),
-  a = n(540457),
-  l = n(700833),
-  u = n(388032),
-  d = n(999384);
+  s = n(239091),
+  a = n(838221),
+  l = n(246364),
+  o = n(540457),
+  c = n(700833),
+  d = n(388032),
+  u = n(999384);
 
-function f(e) {
+function m(e) {
   let {
     addFormField: t,
     onSelect: n,
-    guild: a,
-    allowTerms: f
+    guild: o,
+    allowTerms: m
   } = e;
   return (0, r.jsx)(i.v2r, {
     navId: "add-questions",
-    className: d.menu,
-    onClose: o.Zy,
-    "aria-label": u.NW.string(u.t.liqwPD),
+    className: u.menu,
+    onClose: s.Zy,
+    "aria-label": d.NW.string(d.t.liqwPD),
     onSelect: n,
     children: (0, r.jsxs)(i.kSQ, {
       children: [(0, r.jsx)(i.sNh, {
         id: "text-input",
-        icon: (0, i.GSL)(c.Z),
-        label: u.NW.string(u.t.w6Q9w8),
-        action: () => (0, l.Md)(s.QJ.TEXT_INPUT, t, a)
+        icon: (0, i.GSL)(a.Z),
+        label: d.NW.string(d.t.w6Q9w8),
+        action: () => (0, c.Md)(l.QJ.TEXT_INPUT, t, o)
       }), (0, r.jsx)(i.sNh, {
         id: "paragraph",
         icon: i.OvV,
-        label: u.NW.string(u.t.gG0JBA),
-        action: () => (0, l.Md)(s.QJ.PARAGRAPH, t, a)
+        label: d.NW.string(d.t.gG0JBA),
+        action: () => (0, c.Md)(l.QJ.PARAGRAPH, t, o)
       }), (0, r.jsx)(i.sNh, {
         id: "multiple-choice",
         icon: i.jE$,
-        label: u.NW.string(u.t.ooKh3t),
-        action: () => (0, l.Md)(s.QJ.MULTIPLE_CHOICE, t, a)
-      }), f && (0, r.jsx)(i.sNh, {
+        label: d.NW.string(d.t.ooKh3t),
+        action: () => (0, c.Md)(l.QJ.MULTIPLE_CHOICE, t, o)
+      }), m && (0, r.jsx)(i.sNh, {
         id: "terms",
         icon: i.snC,
-        label: u.NW.string(u.t["3pz9t7"]),
-        action: () => (0, l.Md)(s.QJ.TERMS, t, a)
+        label: d.NW.string(d.t["3pz9t7"]),
+        action: () => (0, c.Md)(l.QJ.TERMS, t, o)
       })]
     })
   })
 }
-let p = function(e) {
+let g = function(e) {
   let {
     addFormField: t,
     guild: n,
     allowTerms: i
   } = e;
-  return (0, r.jsx)(a.A, {
-    text: u.NW.string(u.t.CoHdoK),
-    tooltipText: u.NW.string(u.t.nsI4dX),
+  return (0, r.jsx)(o.A, {
+    text: d.NW.string(d.t.CoHdoK),
+    tooltipText: d.NW.string(d.t.nsI4dX),
     onClick: e => {
-      (0, o.vq)(e, e => {
-        var o, c;
-        return (0, r.jsx)(f, (o = function(e) {
+      (0, s.vq)(e, e => {
+        var s, a;
+        return (0, r.jsx)(m, (s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -80,20 +81,20 @@ let p = function(e) {
             })
           }
           return e
-        }({}, e), c = c = {
+        }({}, e), a = a = {
           addFormField: t,
           guild: n,
           allowTerms: i
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(c)).forEach(function(e) {
-          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(c, e))
-        }), o))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
+        }), s))
       }, {
         position: "top",
         align: "center"

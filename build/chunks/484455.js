@@ -1,24 +1,25 @@
-/** Chunk was on 16114 **/
+/** Chunk was on 56444 **/
+"use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  o = n.n(i),
-  c = n(481060),
-  s = n(664305);
+  s = n.n(i),
+  a = n(481060),
+  l = n(664305);
 
-function a(e) {
+function o(e) {
   let {
     title: t,
     children: n
   } = e;
-  return (0, r.jsxs)(c.hjN, {
-    className: o()(s.backgroundContainer, s.spacingContainer, s.containerPadding),
-    children: [(0, r.jsx)(c.vwX, {
+  return (0, r.jsxs)(a.hjN, {
+    className: s()(l.backgroundContainer, l.spacingContainer, l.containerPadding),
+    children: [(0, r.jsx)(a.vwX, {
       tag: "h3",
-      className: s.containerTitle,
+      className: l.containerTitle,
       children: t
     }), n]
   })

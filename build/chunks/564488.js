@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -20,26 +20,26 @@ let m = i.memo(function(e) {
   } = e, {
     hasChanges: g,
     editingRule: p,
-    createNewEditingRule: h,
-    setEditingRule: f
+    createNewEditingRule: f,
+    setEditingRule: h
   } = (0, l.V)(), {
     isLoading: b
-  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, v = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
-    h(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, h]), O = i.useCallback(e => {
-    b || f(e, !0)
-  }, [b, f]);
+  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
+    f(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, f]), O = i.useCallback(e => {
+    b || h(e, !0)
+  }, [b, h]);
   i.useEffect(() => {
-    m && f(t, !0)
-  }, [m, t, f]);
+    m && h(t, !0)
+  }, [m, t, h]);
   let C = i.useCallback(() => {
-    j ? g || f(null) : g ? v(() => {
-      f(t)
-    }) : f(t)
-  }, [j, g, v, t, f]);
+    j ? g || h(null) : g ? _(() => {
+      h(t)
+    }) : h(t)
+  }, [j, g, _, t, h]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: _,
+      rule: v,
       forceSetup: x && !j && !N,
       triggerType: t.triggerType,
       isEditMode: j,
@@ -51,7 +51,7 @@ let m = i.memo(function(e) {
     isExpanded: j,
     onExpand: C,
     children: j && (0, r.jsx)(c.Z, {
-      rule: _,
+      rule: v,
       isLoading: b,
       onChangeRule: O
     })

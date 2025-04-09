@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   ZP: () => D,
@@ -17,14 +17,14 @@ var r = n(200651),
   m = n(688465),
   g = n(241559),
   p = n(496675),
-  h = n(246946),
-  f = n(594174),
+  f = n(246946),
+  h = n(594174),
   b = n(63063),
   x = n(78451),
   j = n(434404),
   N = n(999382),
-  _ = n(181339),
-  v = n(193544),
+  v = n(181339),
+  _ = n(193544),
   y = n(981631),
   O = n(388032),
   C = n(576583);
@@ -96,7 +96,7 @@ function S(e) {
         variant: "text-sm/normal",
         children: O.NW.format(O.t.iuRk2t, {})
       })]
-    }), (0, r.jsx)(v.Z, {
+    }), (0, r.jsx)(_.Z, {
       changeTitle: O.NW.string(O.t.TxESJC),
       value: null == l ? void 0 : l.value,
       options: a,
@@ -148,7 +148,7 @@ function T(e) {
             helpdeskArticle: b.Z.getArticleURL(y.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(_.Z, {
         changeTitle: O.NW.string(O.t["eBd+Ul"]),
         value: null == m ? void 0 : m.value,
         options: u,
@@ -210,7 +210,7 @@ function R(e) {
   let {
     guild: t,
     mfaLevel: n
-  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([f.default], () => f.default.getCurrentUser()), {
+  } = e, s = (0, o.e7)([p.Z], () => null != t && p.Z.can(y.Plq.MANAGE_GUILD, t), [t]), a = (0, o.e7)([h.default], () => h.default.getCurrentUser()), {
     isGuildOwnerWithMFA: u,
     showMFAUserTooltip: m
   } = i.useMemo(() => null == a ? {
@@ -219,7 +219,7 @@ function R(e) {
   } : {
     isGuildOwnerWithMFA: t.isOwnerWithRequiredMfaLevel(a),
     showMFAUserTooltip: !a.mfaEnabled && t.isOwner(a)
-  }, [a, t]), g = n === y.BpS.ELEVATED, h = (0, l.throttle)(async e => {
+  }, [a, t]), g = n === y.BpS.ELEVATED, f = (0, l.throttle)(async e => {
     u && (m || await j.Z.updateMFALevel({
       guildId: t.id,
       level: e ? y.BpS.ELEVATED : y.BpS.NONE,
@@ -233,7 +233,7 @@ function R(e) {
       className: C.setupContainer,
       children: [(0, r.jsx)(c.j7V, {
         value: g,
-        onChange: h,
+        onChange: f,
         className: C.switchItem,
         disabled: !u,
         hideBorder: !0,
@@ -266,7 +266,7 @@ function D() {
   let {
     guild: e,
     mfaLevel: t
-  } = (0, o.cj)([N.Z], () => N.Z.getProps(), []), n = (0, o.e7)([h.Z], () => h.Z.enabled, []);
+  } = (0, o.cj)([N.Z], () => N.Z.getProps(), []), n = (0, o.e7)([f.Z], () => f.Z.enabled, []);
   return null == e ? null : n ? (0, r.jsx)(u.Z, {}) : (0, r.jsxs)(c.hjN, {
     title: O.NW.string(O.t["suhY+f"]),
     tag: c.RB0.H1,
@@ -284,7 +284,7 @@ function D() {
       className: C.divider
     }), (0, r.jsx)("div", {
       className: C.setupContainer,
-      children: (0, r.jsx)(_.w, {
+      children: (0, r.jsx)(v.w, {
         guild: e
       })
     })]

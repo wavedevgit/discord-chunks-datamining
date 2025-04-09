@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  O: () => v
+  O: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(217472),
   g = n(202905),
   p = n(44867),
-  h = n(557359),
-  f = n(658666),
+  f = n(557359),
+  h = n(658666),
   b = n(307375),
   x = n(384632),
   j = n(388032),
   N = n(162193);
 
-function _(e) {
+function v(e) {
   let {
     pendingState: t
   } = e, n = i.useRef(!1), s = i.useCallback(async e => {
@@ -34,7 +34,7 @@ function _(e) {
   }, [n]);
   switch (t.joinType) {
     case x.A.INVITE:
-      return (0, r.jsx)(h.A, {
+      return (0, r.jsx)(f.A, {
         requireTerms: t.requireTerms,
         rules: t.termRules
       });
@@ -52,9 +52,9 @@ function _(e) {
   }
 }
 
-function v() {
+function _() {
   let e = (0, s.e7)([c.Z], () => c.Z.getProps().guild),
-    t = (0, s.e7)([f.Z], () => f.Z.pendingState);
+    t = (0, s.e7)([h.Z], () => h.Z.pendingState);
   i.useEffect(() => {
     (null == e ? void 0 : e.id) != null && o.ZP.fetchVerificationForm(e.id)
   }, [null == e ? void 0 : e.id]);
@@ -78,7 +78,7 @@ function v() {
     }), (0, r.jsx)("div", {
       className: N.divider
     }), (0, r.jsx)("div", {
-      children: (0, r.jsx)(_, {
+      children: (0, r.jsx)(v, {
         pendingState: t
       })
     })]

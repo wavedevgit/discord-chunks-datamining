@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -15,8 +15,8 @@ var r = n(200651),
   m = n(688298),
   g = n(995119),
   p = n(116175),
-  h = n(308083),
-  f = n(388032),
+  f = n(308083),
+  h = n(388032),
   b = n(420003),
   x = n(130116);
 let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.ZD.LIGHTNING, p.ZD.LEAF, p.ZD.HEART, p.ZD.FIRE, p.ZD.COMPASS, p.ZD.CROSSHAIRS, p.ZD.FLOWER, p.ZD.FORCE, p.ZD.GEM, p.ZD.LAVA, p.ZD.PSYCHIC, p.ZD.SMOKE, p.ZD.SNOW, p.ZD.SOUND, p.ZD.SUN, p.ZD.WIND],
@@ -27,8 +27,8 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
       primaryColor: s,
       secondaryColor: l,
       tag: N,
-      error: _,
-      furthestStep: v,
+      error: v,
+      furthestStep: _,
       inSettings: y
     } = e, O = i.useMemo(() => {
       let e = (0, p.yf)();
@@ -58,21 +58,21 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
         })
       }, [t]);
     return i.useEffect(() => {
-      v !== h.Wy.CUSTOMIZE_TAG_BADGE || y || t({
+      _ !== f.Wy.CUSTOMIZE_TAG_BADGE || y || t({
         brandPrimaryColor: O.primary,
         brandSecondaryColor: O.secondary
       })
-    }, [t, O.primary, O.secondary, v, s, l, y]), (0, r.jsxs)("div", {
+    }, [t, O.primary, O.secondary, _, s, l, y]), (0, r.jsxs)("div", {
       className: x.slideContent,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xxl/medium",
         className: x.title,
-        children: f.NW.string(f.t.ZcHHvr)
+        children: h.NW.string(h.t.ZcHHvr)
       }), (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
         className: x.subtitle,
-        children: f.NW.string(f.t.Tr399P)
+        children: h.NW.string(h.t.Tr399P)
       }), (0, r.jsx)(g.Z, {
         onClick: S
       }), (0, r.jsxs)("div", {
@@ -84,7 +84,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
             children: [(0, r.jsx)(d.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: f.NW.string(f.t.eyPefn)
+              children: h.NW.string(h.t.eyPefn)
             }), (0, r.jsx)("div", {
               className: b.pickerGrid,
               children: j.map(e => (0, r.jsx)(d.P3F, {
@@ -106,7 +106,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
             children: [(0, r.jsx)(d.Text, {
               variant: "text-xs/semibold",
               color: "text-muted",
-              children: f.NW.string(f.t["93wr6e"])
+              children: h.NW.string(h.t["93wr6e"])
             }), (0, r.jsxs)("div", {
               className: b.pickerGrid,
               children: [(0, r.jsx)(m.Z, {
@@ -191,12 +191,12 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
           children: [(0, r.jsx)(d.Text, {
             variant: "text-xs/semibold",
             color: "text-muted",
-            children: f.NW.string(f.t["3eZP8/"])
-          }), null != _ && (0, r.jsx)(d.Text, {
+            children: h.NW.string(h.t["3eZP8/"])
+          }), null != v && (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "status-danger",
             className: x.errorText,
-            children: _
+            children: v
           }), (0, r.jsx)(d.oil, {
             className: b.tagInputWrapper,
             inputClassName: b.tagInput,
@@ -204,8 +204,8 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
             onChange: e => t({
               tag: e
             }),
-            maxLength: h.cG,
-            placeholder: f.NW.string(f.t["0V0ZFx"]),
+            maxLength: f.cG,
+            placeholder: h.NW.string(h.t["0V0ZFx"]),
             autoFocus: !0,
             prefixElement: (0, r.jsx)(u.A, {
               badge: n,
@@ -218,7 +218,7 @@ let j = [p.ZD.SWORD, p.ZD.WATER_DROP, p.ZD.SKULL, p.ZD.TOADSTOOL, p.ZD.MOON, p.Z
             variant: "text-xs/medium",
             color: "text-muted",
             className: b.tagValidationText,
-            children: f.NW.string(f.t.lGtFwM)
+            children: h.NW.string(h.t.lGtFwM)
           })]
         })]
       })]

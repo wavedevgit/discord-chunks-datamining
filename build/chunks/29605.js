@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   FT: () => H,
@@ -17,14 +17,14 @@ var r = n(200651),
   m = n(442837),
   g = n(481060),
   p = n(668781),
-  h = n(80932),
-  f = n(225433),
+  f = n(80932),
+  h = n(225433),
   b = n(599059),
   x = n(327802),
   j = n(110924),
   N = n(200876),
-  _ = n(730089),
-  v = n(372444),
+  v = n(730089),
+  _ = n(372444),
   y = n(889564),
   O = n(372129),
   C = n(357156),
@@ -37,8 +37,8 @@ var r = n(200651),
   R = n(434404),
   D = n(471613),
   Z = n(999382),
-  A = n(981631),
-  k = n(185923),
+  k = n(981631),
+  A = n(185923),
   W = n(388032),
   L = n(808574),
   M = n(588866);
@@ -61,7 +61,7 @@ function G(e) {
   }
   return e
 }
-let U = d().throttle(h.OQ, 1e3),
+let U = d().throttle(f.OQ, 1e3),
   B = e => {
     let {
       guildId: t,
@@ -110,14 +110,14 @@ let U = d().throttle(h.OQ, 1e3),
             }),
             disabled: l,
             minLen: 1,
-            maxLen: k.Yc,
+            maxLen: A.Yc,
             name: W.NW.string(W.t.qUpzYG),
             autoComplete: "off",
             value: null != o ? o : "",
             onBlur: () => {
               if (o !== n.name) {
                 let e = T.ZP.sanitizeEmojiName(o);
-                e !== n.name && (0, h.dv)({
+                e !== n.name && (0, f.dv)({
                   guildId: t,
                   emojiId: n.id,
                   name: e
@@ -148,10 +148,10 @@ let U = d().throttle(h.OQ, 1e3),
           color: "currentColor",
           className: L.editEmojiRolesIcon
         })
-      }), !l && (0, r.jsx)(f.Z, {
+      }), !l && (0, r.jsx)(h.Z, {
         className: L.emojiRemove,
         onClick: () => {
-          (0, h.RE)(t, n.id).catch(e => {
+          (0, f.RE)(t, n.id).catch(e => {
             let {
               status: t
             } = e;
@@ -269,19 +269,19 @@ let U = d().throttle(h.OQ, 1e3),
       c = Math.min(o - s, o - a),
       d = l.premiumTier,
       u = (0, P.FZ)(d);
-    return null == u || d === A.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = W.NW.formatToPlainString(W.t.j0UH0t, {
+    return null == u || d === k.Eu4.TIER_3 || c > 0 ? null : (c > o ? (t = W.NW.formatToPlainString(W.t.j0UH0t, {
       level: u
     }), n = W.NW.formatToPlainString(W.t.VQeyKy, {
       level: u
-    }), i = A.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = W.NW.string(W.t.zT9Sxc), n = W.NW.formatToPlainString(W.t.dBZ1RU, {
+    }), i = k.qAy.BOOST_UPSELL_BANNER_LOST_LEVEL) : (t = W.NW.string(W.t.zT9Sxc), n = W.NW.formatToPlainString(W.t.dBZ1RU, {
       level: u
-    }), i = A.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(v.Z, {
+    }), i = k.qAy.BOOST_UPSELL_BANNER_SLOTS_FULL), (0, r.jsx)(_.Z, {
       header: t,
       text: n,
       guild: l,
       analyticsLocation: {
-        page: A.ZY5.GUILD_SETTINGS,
-        section: A.jXE.GUILD_SETTINGS_STICKERS,
+        page: k.ZY5.GUILD_SETTINGS,
+        section: k.jXE.GUILD_SETTINGS_STICKERS,
         object: i,
         objectType: (0, P.ge)(u)
       }
@@ -302,22 +302,22 @@ let U = d().throttle(h.OQ, 1e3),
         revision: D.Z.getEmojiRevision(e.id),
         emojis: D.Z.getEmojis(e.id)
       })),
-      h = (0, j.Z)(c),
-      [f, b] = i.useState(!1),
-      [v, S] = i.useState(!1),
+      f = (0, j.Z)(c),
+      [h, b] = i.useState(!1),
+      [_, S] = i.useState(!1),
       T = i.useRef(null);
     i.useEffect(() => {
-      f && K()
-    }, [f]), i.useEffect(() => {
+      h && K()
+    }, [h]), i.useEffect(() => {
       U(e.id)
     }, [e.id]), i.useEffect(() => {
-      null != h && h < c && U(e.id)
-    }, [c, h, e.id]);
+      null != f && f < c && U(e.id)
+    }, [c, f, e.id]);
     let [w, M] = i.useMemo(() => {
       let t = null == p ? void 0 : p.filter(t => !(0, y.Kt)(t, e.id)),
         [n, r] = d().partition(t, e => !e.animated);
       return [n, r]
-    }, [p, e.id]), B = (0, P.y4)(e), z = Math.max(B - w.length, B - M.length), H = (n, r, i) => (0, _.G)({
+    }, [p, e.id]), B = (0, P.y4)(e), z = Math.max(B - w.length, B - M.length), H = (n, r, i) => (0, v.G)({
       data: n,
       file: r,
       image: i,
@@ -325,7 +325,7 @@ let U = d().throttle(h.OQ, 1e3),
       uploadId: t,
       hideErrorModal: !0
     }), Y = async n => {
-      s((0, u.Z)()), E.default.track(A.rMx.EMOJI_UPLOAD_STARTED, {
+      s((0, u.Z)()), E.default.track(k.rMx.EMOJI_UPLOAD_STARTED, {
         guild_id: e.id,
         upload_id: t
       }), await (0, O._)(n, H), b(!0)
@@ -363,7 +363,7 @@ let U = d().throttle(h.OQ, 1e3),
           }), X && (0, r.jsx)(g.R94, {
             type: g.geA.DESCRIPTION,
             children: W.NW.format(W.t.uMkfTk, {
-              onClick: () => R.Z.open(e.id, A.pNK.ROLE_SUBSCRIPTIONS, void 0, A.KsC.ROLE_SUBSCRIPTION_EMOJI)
+              onClick: () => R.Z.open(e.id, k.pNK.ROLE_SUBSCRIPTIONS, void 0, k.KsC.ROLE_SUBSCRIPTION_EMOJI)
             })
           }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(g.vwX, {
@@ -381,7 +381,7 @@ let U = d().throttle(h.OQ, 1e3),
                 children: (0, r.jsx)(g.R94, {
                   type: g.geA.DESCRIPTION,
                   children: W.NW.format(W.t.gfAXoa, {
-                    maxSize: k.xG
+                    maxSize: A.xG
                   })
                 })
               }), (0, r.jsx)("li", {
@@ -401,18 +401,18 @@ let U = d().throttle(h.OQ, 1e3),
             size: g.zxk.Sizes.MEDIUM,
             onClick: () => {
               let t = (0, u.Z)();
-              s(t), E.default.track(A.rMx.EMOJI_UPLOAD_STARTED, {
+              s(t), E.default.track(k.rMx.EMOJI_UPLOAD_STARTED, {
                 guild_id: e.id,
                 upload_id: t
               })
             },
-            disabled: v || 0 === z || !l,
-            submitting: v,
+            disabled: _ || 0 === z || !l,
+            submitting: _,
             focusProps: {
               within: !0
             },
             children: [W.NW.string(W.t.DU0dy8), z > 0 ? (0, r.jsx)(O.Z, {
-              disabled: v || 0 === z || !l,
+              disabled: _ || 0 === z || !l,
               tabIndex: 0,
               onChange: H,
               setLoading: S,

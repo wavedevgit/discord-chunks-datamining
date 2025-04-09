@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => I
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(969632),
   g = n(998164),
   p = n(340189),
-  h = n(507317),
-  f = n(399614),
+  f = n(507317),
+  h = n(399614),
   b = n(387960),
   x = n(806742),
   j = n(388032),
   N = n(773100),
-  _ = n(91716),
-  v = n(470264),
+  v = n(91716),
+  _ = n(470264),
   y = n(710043),
   O = n(847950);
 
@@ -41,7 +41,7 @@ function C(e) {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? v : O : "existing" === c ? _ : y, [c, I]);
+  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? _ : O : "existing" === c ? v : y, [c, I]);
   return (0, r.jsxs)("div", {
     className: N.page,
     children: [(0, r.jsxs)("div", {
@@ -121,12 +121,12 @@ function C(e) {
         className: N.section,
         children: [(0, r.jsx)(b.Z, {
           guildId: t.id
-        }), (0, r.jsx)(f.Z, {
+        }), (0, r.jsx)(h.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator
-      }), (0, r.jsx)(h.Z, {
+      }), (0, r.jsx)(f.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {

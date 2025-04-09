@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685), n(358797);
 var r = n(200651),
   i = n(192379),
@@ -33,7 +33,7 @@ function p(e) {
     className: g.resizeHandle
   })
 }
-let h = i.forwardRef(function(e, t) {
+let f = i.forwardRef(function(e, t) {
   let {
     children: n,
     onFocus: s,
@@ -67,7 +67,7 @@ let h = i.forwardRef(function(e, t) {
   })
 });
 
-function f(e) {
+function h(e) {
   var t;
   let {
     initialValue: n,
@@ -75,10 +75,10 @@ function f(e) {
     onChangeNewTagValue: c,
     tagErrors: u = {},
     placeholder: p,
-    className: f,
+    className: h,
     maxTags: b
-  } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), _ = (0, m.V)(n), {
-    handlePasteEvent: v,
+  } = e, x = i.useRef(null), j = i.useRef(null), N = i.useRef(null), v = (0, m.V)(n), {
+    handlePasteEvent: _,
     handleInputChange: y,
     handleKeyDown: O,
     handleContainerKeyUp: C,
@@ -88,7 +88,7 @@ function f(e) {
     handleUnselectTag: T,
     handleResetTagSelections: P,
     handleInputBlurEvent: w
-  } = (0, m.Q)(_, {
+  } = (0, m.Q)(v, {
     scrollerRef: N,
     mainInputRef: x,
     mainContainerRef: j
@@ -97,17 +97,17 @@ function f(e) {
       value: R,
       tags: D,
       selections: Z,
-      isSelecting: A
+      isSelecting: k
     }
-  } = _, k = (0, o.Z)(D), [W, L] = i.useState(!1), M = i.useCallback(() => {
+  } = v, A = (0, o.Z)(D), [W, L] = i.useState(!1), M = i.useCallback(() => {
     var e;
     L(!1), P(), null == (e = x.current) || e.focus({
       preventScroll: !0
     })
   }, [P]);
   i.useEffect(() => {
-    k !== D && s(D)
-  }, [s, k, D]), i.useEffect(() => {
+    A !== D && s(D)
+  }, [s, A, D]), i.useEffect(() => {
     W || c(R)
   }, [c, R, W]);
   let G = i.useCallback(function() {
@@ -128,11 +128,11 @@ function f(e) {
       } else T(e, !0), L(!0)
     }, [S, T, Z, D]);
   return (0, r.jsxs)("div", {
-    className: a()(g.mainContainer, f),
+    className: a()(g.mainContainer, h),
     ref: j,
     tabIndex: 0,
     onKeyUp: C,
-    children: [(0, r.jsxs)(h, {
+    children: [(0, r.jsxs)(f, {
       ref: N,
       onClick: M,
       children: [D.map((e, t) => (0, r.jsx)(d.Z, {
@@ -142,7 +142,7 @@ function f(e) {
         onFocus: U(t),
         onRemove: () => I(t),
         isSelected: Z.includes(e),
-        isSelecting: A,
+        isSelecting: k,
         error: u[e],
         forceShowErrorTooltip: !W && t === D.length - 1
       }, t)), (0, r.jsx)("input", {
@@ -152,7 +152,7 @@ function f(e) {
         ref: x,
         onChange: y,
         onKeyDownCapture: O,
-        onPaste: v,
+        onPaste: _,
         onBlur: w,
         placeholder: 0 === D.length ? p : void 0,
         value: R

@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  $: () => f,
+  $: () => h,
   Z: () => b
 });
 var r = n(200651);
@@ -17,9 +17,9 @@ var i = n(392711),
   m = n(999382),
   g = n(981631),
   p = n(388032),
-  h = n(953592);
+  f = n(953592);
 
-function f() {
+function h() {
   var e, t;
   let n = (0, s.e7)([m.Z], () => m.Z.getProps().guild, []),
     i = null != (e = null == n ? void 0 : n.isCommunity()) && e,
@@ -29,13 +29,13 @@ function f() {
     onClick: e => {
       null != n && (d ? (e.preventDefault(), u.Z.close(), (0, c._X)(n.id)) : u.Z.open(n.id, g.pNK.MEMBERS))
     },
-    className: h.rowContainer,
+    className: f.rowContainer,
     children: [(0, r.jsx)("div", {
       children: p.NW.string(p.t["9Oq93t"])
     }), d && (0, r.jsx)(a.rgF, {
       size: "custom",
       color: "currentColor",
-      className: h.linkIcon,
+      className: f.linkIcon,
       width: 16,
       height: 16
     })]

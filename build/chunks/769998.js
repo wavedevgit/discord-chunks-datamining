@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -21,10 +21,10 @@ function p(e) {
   let {
     action: n,
     triggerType: p,
-    guildId: h,
-    toggled: f,
+    guildId: f,
+    toggled: h,
     onToggleAction: b
-  } = e, x = e => () => b(e), j = (0, o.c)(n.type, n, p), N = null == (t = n.metadata) ? void 0 : t.durationSeconds, _ = null != N ? (0, u.L9)(N) : null, v = (0, i.e7)([l.Z, a.Z], () => l.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(h)), [h]);
+  } = e, x = e => () => b(e), j = (0, o.c)(n.type, n, p), N = null == (t = n.metadata) ? void 0 : t.durationSeconds, v = null != N ? (0, u.L9)(N) : null, _ = (0, i.e7)([l.Z, a.Z], () => l.Z.can(d.Plq.MODERATE_MEMBERS, a.Z.getGuild(f)), [f]);
   if (null == j) return null;
   let {
     headerText: y,
@@ -49,14 +49,14 @@ function p(e) {
         color: "interactive-normal",
         variant: "text-xs/medium",
         children: O
-      }), f && (0, r.jsxs)(s.Text, {
+      }), h && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === _ ? null : p === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
-          friendlyDurationString: _
+        children: [null === v ? null : p === c.fX.MENTION_SPAM ? m.NW.format(m.t.i3lsKC, {
+          friendlyDurationString: v
         }) : m.NW.format(m.t.mvHxzc, {
-          friendlyDurationString: _
-        }), v && (0, r.jsx)(s.P3F, {
+          friendlyDurationString: v
+        }), _ && (0, r.jsx)(s.P3F, {
           onClick: x(!0),
           className: g.editChannel,
           tag: "span",
@@ -67,7 +67,7 @@ function p(e) {
     }), (0, r.jsx)(s.ua7, {
       text: m.NW.format(m.t.wx6Vb2, {}),
       "aria-label": m.NW.formatToMarkdownString(m.t.wx6Vb2, {}),
-      shouldShow: !v,
+      shouldShow: !_,
       children: e => {
         var t, n;
         return (0, r.jsx)("div", (t = function(e) {
@@ -90,9 +90,9 @@ function p(e) {
         }({}, e), n = n = {
           children: (0, r.jsx)(s.XZJ, {
             type: s.XZJ.Types.INVERTED,
-            value: f,
+            value: h,
             onChange: x(!1),
-            disabled: !v,
+            disabled: !_,
             className: g.__invalid_actionCheckbox
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

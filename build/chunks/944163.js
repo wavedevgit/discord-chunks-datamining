@@ -1,13 +1,13 @@
-/** Chunk was on 88953 **/
+/** Chunk was on 35758 **/
 n.d(t, {
-  Z: () => h,
+  Z: () => f,
   t: () => d
 }), n(953529);
 var r, l = n(392711),
-  o = n.n(l),
+  i = n.n(l),
   a = n(442837),
-  i = n(570140),
-  s = n(246364);
+  s = n(570140),
+  o = n(246364);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -29,11 +29,11 @@ class m extends(r = a.ZP.Store) {
   }
   getRulesPrompt(e) {
     var t;
-    return o().find(null == (t = u[e]) ? void 0 : t.formFields, s.J)
+    return i().find(null == (t = u[e]) ? void 0 : t.formFields, o.J)
   }
 }
 c(m, "displayName", "MemberVerificationFormStore");
-let h = new m(i.Z, {
+let f = new m(s.Z, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
       invite: t

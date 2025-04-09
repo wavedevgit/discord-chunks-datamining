@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  ZP: () => h,
+  ZP: () => f,
   vE: () => p
 }), n(539854);
 var r = n(223892),
@@ -25,14 +25,14 @@ function p(e) {
   let {
     guild: c,
     canManageGuild: p,
-    canViewAuditLog: h,
-    canManageRoles: f,
+    canViewAuditLog: f,
+    canManageRoles: h,
     canManageWebhooks: b,
     canUnlinkChannels: x,
     canManageBans: j,
     canAccessMembersPage: N,
-    canViewGuildAnalytics: _,
-    isOwner: v,
+    canViewGuildAnalytics: v,
+    isOwner: _,
     isOwnerWithRequiredMfaLevel: y,
     canAccessClanSettings: O,
     isGuildSettingsFoundationEnabled: C,
@@ -40,7 +40,7 @@ function p(e) {
     canManageGuildExpressions: E
   } = e, S = () => (0, l.X$)({
     guild: c,
-    isOwner: v,
+    isOwner: _,
     canManageGuildRoleSubscriptions: (0, l.H2)(c),
     isMonetizationWaitlistEnabledForGuild: (0, r.mG)(c.id),
     isGuildEligibleForRoleSubscriptions: (0, a.kT)(c.id),
@@ -83,7 +83,7 @@ function p(e) {
     }), e.push({
       section: g.HEADER,
       label: u.NW.string(u.t.m6lkGx)
-    }), e.push(m(d.pNK.EMOJI, T)), e.push(m(d.pNK.STICKERS, T)), e.push(m(d.pNK.SOUNDBOARD, T))), (p || f || N || I) && (e.push({
+    }), e.push(m(d.pNK.EMOJI, T)), e.push(m(d.pNK.STICKERS, T)), e.push(m(d.pNK.SOUNDBOARD, T))), (p || h || N || I) && (e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
@@ -95,13 +95,13 @@ function p(e) {
       label: u.NW.string(u.t.wF3KJy)
     }), e.push(m(d.pNK.INTEGRATIONS, T)), e.push(m(d.pNK.APP_DIRECTORY, T));
     let t = !c.hasFeature(d.oNc.COMMUNITY) && ((0, s.Nb)(c.id) || (0, s.ze)(c.id));
-    (p || h || j || t) && (e.push({
+    (p || f || j || t) && (e.push({
       section: g.DIVIDER
     }), e.push({
       section: g.HEADER,
       label: u.NW.string(u.t["5tbTdX"])
     }), e.push(m(d.pNK.SAFETY, T)), e.push(m(d.pNK.MODERATION, T)), e.push(m(d.pNK.AUDIT_LOG, T)), e.push(m(d.pNK.BANS, T)), e.push(m(d.pNK.GUILD_AUTOMOD, T)));
-    let n = c.hasFeature(d.oNc.COMMUNITY) && _,
+    let n = c.hasFeature(d.oNc.COMMUNITY) && v,
       r = S();
     return (p || n || r) && (e.push({
       section: g.DIVIDER
@@ -128,11 +128,11 @@ function p(e) {
     predicate: () => p
   }, m(d.pNK.SAFETY, T), m(d.pNK.MODERATION, T), m(d.pNK.GUILD_AUTOMOD, T), m(d.pNK.AUDIT_LOG, T), m(d.pNK.BANS, T), {
     section: g.DIVIDER,
-    predicate: () => p || _
+    predicate: () => p || v
   }, {
     section: g.HEADER,
     label: u.NW.string(u.t["1g9A/f"]),
-    predicate: () => !O && (p || _)
+    predicate: () => !O && (p || v)
   }, m(d.pNK.CLAN, T), m(d.pNK.COMMUNITY, T), m(d.pNK.ONBOARDING, T), m(d.pNK.ANALYTICS, T), m(d.pNK.DISCOVERY, T), m(d.pNK.DISCOVERY_LANDING_PAGE, T), m(d.pNK.COMMUNITY_WELCOME, T), {
     section: g.DIVIDER,
     predicate: S
@@ -152,6 +152,6 @@ function p(e) {
     predicate: () => y
   }, m(d.pNK.DELETE, T)].filter(o.lm)
 }
-let h = {
+let f = {
   generateSections: p
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -20,14 +20,14 @@ function g(e) {
     title: n,
     description: s,
     children: g
-  } = e, [p, h] = i.useState(t), f = () => h(e => !e), b = (0, o.Dt)();
+  } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
       className: a()(m.header, {
         [m.headerWithDescription]: p && null != s
       }),
-      onClick: f,
+      onClick: h,
       children: e => {
         let {
           areaRef: t,
@@ -38,7 +38,7 @@ function g(e) {
             variant: "heading-md/semibold",
             children: n
           }), (0, r.jsx)(l.P3F, {
-            onClick: i(f),
+            onClick: i(h),
             "aria-label": u.NW.string(u.t.e5eQOz),
             "aria-controls": b,
             "aria-expanded": p,

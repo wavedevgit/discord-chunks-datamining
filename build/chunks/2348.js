@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(637853),
   g = n(473403),
   p = n(216306),
-  h = n(743475),
-  f = n(827907),
+  f = n(743475),
+  h = n(827907),
   b = n(868814),
   x = n(981631),
   j = n(388032),
   N = n(448021);
 
-function _(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -41,7 +41,7 @@ function _(e) {
   return e
 }
 
-function v(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,7 +58,7 @@ function y(e) {
   let {
     guild: t,
     channel: i
-  } = e, s = (0, f.Mf)(i.id);
+  } = e, s = (0, h.Mf)(i.id);
   return "null" === i.id ? (0, r.jsx)("div", {
     className: a()(N.categoryRow, N.uncategorized),
     children: (0, r.jsx)(o.Text, {
@@ -77,17 +77,17 @@ function y(e) {
         let {
           default: e
         } = await Promise.all([n.e("58059"), n.e("8965"), n.e("98350")]).then(n.bind(n, 139035));
-        return n => (0, r.jsx)(e, v(_({}, n), {
+        return n => (0, r.jsx)(e, _(v({}, n), {
           channel: i,
           guild: t
         }))
       })
     },
-    onClick: e => (e.stopPropagation(), (0, u.s)(t.id, i.id) ? (0, h.pt)(i.id) : (0, o.ZDy)(async () => {
+    onClick: e => (e.stopPropagation(), (0, u.s)(t.id, i.id) ? (0, f.pt)(i.id) : (0, o.ZDy)(async () => {
       let {
         default: e
       } = await n.e("35641").then(n.bind(n, 89216));
-      return n => (0, r.jsx)(e, v(_({}, n), {
+      return n => (0, r.jsx)(e, _(v({}, n), {
         guildId: t.id,
         startingChannelId: i.id
       }))
@@ -130,12 +130,12 @@ let O = i.memo(function() {
       isFirstChannel: p,
       isLastChannel: y,
       tooltipDirection: I = "right"
-    } = e, E = (0, f.Mf)(t.id, i.id), S = (0, f.t4)(t.id, i.id), T = (0, f.EH)(t.id, i.id), P = (0, f.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), D = e => {
-      if (!S) return e.stopPropagation(), (0, u.s)(s.id, t.id) ? (0, h.pt)(t.id) : (0, o.ZDy)(async () => {
+    } = e, E = (0, h.Mf)(t.id, i.id), S = (0, h.t4)(t.id, i.id), T = (0, h.EH)(t.id, i.id), P = (0, h.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), D = e => {
+      if (!S) return e.stopPropagation(), (0, u.s)(s.id, t.id) ? (0, f.pt)(t.id) : (0, o.ZDy)(async () => {
         let {
           default: e
         } = await n.e("35641").then(n.bind(n, 89216));
-        return n => (0, r.jsx)(e, v(_({}, n), {
+        return n => (0, r.jsx)(e, _(v({}, n), {
           guildId: s.id,
           startingChannelId: t.id
         }))
@@ -145,7 +145,7 @@ let O = i.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("58059"), n.e("42743"), n.e("84181"), n.e("18320"), n.e("83331"), n.e("67180")]).then(n.bind(n, 213202));
-        return n => (0, r.jsx)(e, v(_({}, n), {
+        return n => (0, r.jsx)(e, _(v({}, n), {
           channel: t,
           guild: s
         }))
@@ -153,7 +153,7 @@ let O = i.memo(function() {
         let {
           default: e
         } = await Promise.all([n.e("94342"), n.e("86029"), n.e("99152"), n.e("79695"), n.e("22878"), n.e("13351"), n.e("74891"), n.e("6380"), n.e("46097"), n.e("8739"), n.e("18543"), n.e("58059"), n.e("28467"), n.e("86282"), n.e("18895"), n.e("30243"), n.e("37447"), n.e("53937"), n.e("23491"), n.e("85574"), n.e("37658"), n.e("93602"), n.e("60691"), n.e("64838"), n.e("69606"), n.e("42743"), n.e("93594"), n.e("84466"), n.e("7590"), n.e("3589"), n.e("78447"), n.e("98254"), n.e("22356"), n.e("35755"), n.e("94458"), n.e("94989"), n.e("75862"), n.e("37220"), n.e("82158"), n.e("91315"), n.e("84181"), n.e("41150"), n.e("89107"), n.e("18320"), n.e("55196"), n.e("74976"), n.e("83562")]).then(n.bind(n, 373651));
-        return n => (0, r.jsx)(e, v(_({}, n), {
+        return n => (0, r.jsx)(e, _(v({}, n), {
           channel: t,
           guild: s
         }))
@@ -164,7 +164,7 @@ let O = i.memo(function() {
         text: null != T ? T : P,
         delay: 500,
         position: I,
-        children: e => (0, r.jsxs)(o.P3F, v(_({
+        children: e => (0, r.jsxs)(o.P3F, _(v({
           className: a()(N.channelRow, {
             [N.firstChannel]: p,
             [N.lastChannel]: y,

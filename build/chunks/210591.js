@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685), n(361932), n(187205), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -38,10 +38,10 @@ function p(e) {
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     children: t
-  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, h = 1 === o, f = (0, c.q_F)({
+  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
     width: "".concat(100 * o, "%")
   }), b = [m.NW.format(m.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
@@ -52,7 +52,7 @@ function h(e) {
   }), m.NW.format(m.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
   })], x = n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!h && t.map((e, t) => {
+    children: [!f && t.map((e, t) => {
       let {
         title: n,
         items: s
@@ -96,11 +96,11 @@ function h(e) {
           direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
           className: g.headerCaret
         })]
-      }), !h && (0, r.jsx)("div", {
+      }), !f && (0, r.jsx)("div", {
         className: g.progressBarOuter,
         children: (0, r.jsx)(l.animated.div, {
           className: g.progressBarInner,
-          style: f
+          style: h
         })
       }), x]
     })

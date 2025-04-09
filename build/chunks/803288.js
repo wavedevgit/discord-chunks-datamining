@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  T: () => _,
+  T: () => v,
   Z: () => y
 }), n(953529);
 var r = n(200651),
@@ -16,14 +16,14 @@ var r = n(200651),
   m = n(63063),
   g = n(999382),
   p = n(621319),
-  h = n(44550),
-  f = n(586382),
+  f = n(44550),
+  h = n(586382),
   b = n(859481),
   x = n(981631),
   j = n(388032),
   N = n(839032);
-let _ = s.ZP.connectStores([g.Z, h.Z], () => {
-  let e = h.Z.vanityURLCode,
+let v = s.ZP.connectStores([g.Z, f.Z], () => {
+  let e = f.Z.vanityURLCode,
     t = g.Z.getGuildId();
   return {
     vanityURLCode: e,
@@ -36,7 +36,7 @@ let _ = s.ZP.connectStores([g.Z, h.Z], () => {
     }
   }
 })(o.Z);
-class v extends i.PureComponent {
+class _ extends i.PureComponent {
   render() {
     let {
       hide: e,
@@ -52,7 +52,7 @@ class v extends i.PureComponent {
         className: N.flexFormTitle,
         children: [(0, r.jsx)("div", {
           children: j.NW.string(j.t["5XZKy8"])
-        }), (0, r.jsx)(f.xl, {
+        }), (0, r.jsx)(h.xl, {
           guild: t
         })]
       }), (0, r.jsx)(a.R94, {
@@ -75,11 +75,11 @@ class v extends i.PureComponent {
 function y() {
   var e, t;
   let n = (0, s.e7)([g.Z], () => g.Z.getGuild()),
-    i = (0, s.cj)([h.Z], () => ({
-      vanityURLCode: h.Z.vanityURLCode,
-      vanityURLUses: h.Z.vanityURLUses,
-      originalVanityURLCode: h.Z.originalVanityURLCode,
-      errorDetails: h.Z.errorDetails
+    i = (0, s.cj)([f.Z], () => ({
+      vanityURLCode: f.Z.vanityURLCode,
+      vanityURLUses: f.Z.vanityURLUses,
+      originalVanityURLCode: f.Z.originalVanityURLCode,
+      errorDetails: f.Z.errorDetails
     })),
     a = (0, s.e7)([u.Z], () => u.Z.hideInstantInvites),
     {
@@ -87,7 +87,7 @@ function y() {
     } = (0, d.ZP)(c.Z.VANITY_URL);
   return (0, r.jsx)(d.Gt, {
     value: l,
-    children: (0, r.jsx)(v, (e = function(e) {
+    children: (0, r.jsx)(_, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

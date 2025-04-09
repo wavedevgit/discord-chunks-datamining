@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -16,7 +16,7 @@ var r = n(200651),
   g = n(388032),
   p = n(406116);
 
-function h(e) {
+function f(e) {
   let {
     color: t,
     children: n
@@ -33,7 +33,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     display: n
@@ -46,7 +46,7 @@ function f(e) {
       className: p.roles,
       children: t.roles.map((e, t) => (0, r.jsx)("div", {
         className: p.rolesRow,
-        children: e.map(e => (0, r.jsx)(h, {
+        children: e.map(e => (0, r.jsx)(f, {
           color: e.color,
           children: e.name
         }, e.name))
@@ -162,7 +162,7 @@ function b() {
   }, [t]), (0, r.jsx)("div", {
     className: p.bannerContainer,
     "aria-hidden": !0,
-    children: e.map((e, n) => (0, r.jsx)(f, {
+    children: e.map((e, n) => (0, r.jsx)(h, {
       guild: e,
       display: n === t
     }, n))
@@ -176,7 +176,7 @@ function x(e) {
     setEditRoleId: s
   } = e, [a, d] = i.useState(!1), m = async () => {
     d(!0), await o.Z.createRole(t.id), d(!1)
-  }, h = i.useCallback(() => {
+  }, f = i.useCallback(() => {
     s(n.id)
   }, [s, n.id]);
   return (0, r.jsx)(c.NM, {
@@ -205,7 +205,7 @@ function x(e) {
         className: p.divider
       }), (0, r.jsx)(u.Z, {
         role: n,
-        onClick: h
+        onClick: f
       })]
     })
   })

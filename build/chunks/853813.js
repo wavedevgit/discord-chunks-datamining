@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(496675),
   g = n(626135),
   p = n(823379),
-  h = n(243730),
-  f = n(946724),
+  f = n(243730),
+  h = n(946724),
   b = n(999382),
   x = n(130341),
   j = n(981975),
   N = n(660962),
-  _ = n(442182),
-  v = n(322816),
+  v = n(442182),
+  _ = n(322816),
   y = n(266665),
   O = n(203377),
   C = n(981631),
@@ -35,14 +35,14 @@ function E(e) {
       selectedSection: E,
       setSelectedSection: S
     } = e,
-    T = (0, l.e7)([f.Z], () => f.Z.guild, []);
+    T = (0, l.e7)([h.Z], () => h.Z.guild, []);
   a()(null != T, "guildId cannot be null here");
   let {
     role: P,
     permissionSearchQuery: w
-  } = (0, l.cj)([f.Z], () => ({
-    role: f.Z.getRole(n),
-    permissionSearchQuery: f.Z.getPermissionSearchQuery()
+  } = (0, l.cj)([h.Z], () => ({
+    role: h.Z.getRole(n),
+    permissionSearchQuery: h.Z.getPermissionSearchQuery()
   }), [n]);
   i.useEffect(() => {
     null == P && s(null)
@@ -50,20 +50,20 @@ function E(e) {
   let R = (0, l.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
     D = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
     Z = i.useRef(null),
-    A = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
-    k = {
+    k = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
+    A = {
       role: P,
       editRoleId: n
     },
-    W = i.useRef(k);
+    W = i.useRef(A);
   if (i.useEffect(() => {
-      W.current = k
+      W.current = A
     }), i.useEffect(() => {
       var e, t;
       let {
         role: n,
         editRoleId: r
-      } = W.current, i = (0, x.UT)(E), s = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
+      } = W.current, i = (0, x.UT)(E), s = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
       g.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -104,7 +104,7 @@ function E(e) {
       });
       break;
     case O.ZI.PERMISSIONS:
-      t = (0, r.jsx)(v.ZP, {
+      t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
         locked: D,
@@ -118,11 +118,11 @@ function E(e) {
         role: P,
         locked: D,
         setSelectedSection: S,
-        integrations: null != A ? A : void 0
+        integrations: null != k ? k : void 0
       });
       break;
     case O.ZI.MEMBERS:
-      t = (0, r.jsx)(_.ZP, {
+      t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
         locked: D,

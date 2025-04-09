@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(100527),
   g = n(933557),
   p = n(670188),
-  h = n(210887),
-  f = n(598077),
+  f = n(210887),
+  h = n(598077),
   b = n(699516),
   x = n(594174),
   j = n(259580),
   N = n(51144),
-  _ = n(426563),
-  v = n(909746),
+  v = n(426563),
+  _ = n(909746),
   y = n(501801),
   O = n(981631),
   C = n(388032),
@@ -86,23 +86,23 @@ let P = i.forwardRef((e, t) => {
       log: i,
       className: s,
       expanded: o,
-      guildId: h,
+      guildId: f,
       guild: N,
       onChannelContextMenu: P,
       onContentClick: w,
       onHeaderClick: R,
       onTargetContextMenu: D,
       onUserContextMenu: Z,
-      theme: A
+      theme: k
     } = e,
-    k = function() {
+    A = function() {
       let {
         changes: e
       } = i;
       return (i.actionType !== O.vB8.DELETE || i.action === O.rsA.MEMBER_BAN_ADD || i.action === O.rsA.MEMBER_KICK || i.action === O.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(i, e))
     }(),
     W = I.headerDefault;
-  o ? W = I.headerExpanded : k && (W = I.headerClickable);
+  o ? W = I.headerExpanded : A && (W = I.headerClickable);
   let L = i.timestampStart.calendar(),
     M = i.timestampEnd.calendar();
   n = L === M ? (0, r.jsx)(d.Text, {
@@ -114,7 +114,7 @@ let P = i.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [L, "—", M]
   });
-  let G = k ? R : O.dG4;
+  let G = A ? R : O.dG4;
   return (0, r.jsx)(l.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
@@ -139,7 +139,7 @@ let P = i.forwardRef((e, t) => {
           } = i;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
             user: e,
-            guildId: h,
+            guildId: f,
             newAnalyticsLocations: [m.Z.AVATAR],
             children: e => {
               var t;
@@ -148,7 +148,7 @@ let P = i.forwardRef((e, t) => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: i.action === O.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === O.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === O.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === O.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, _.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(h, 40),
+                src: i.action === O.rsA.AUTO_MODERATION_BLOCK_MESSAGE || i.action === O.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || i.action === O.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || i.action === O.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, v.j)() : null == (t = i.user) ? void 0 : t.getAvatarURL(f, 40),
                 "aria-hidden": !0,
                 size: d.EFr.SIZE_40
               }))
@@ -157,7 +157,7 @@ let P = i.forwardRef((e, t) => {
           if (null != n) {
             let e = u.Z.get(n);
             if (null != e) {
-              let t = (0, c.wj)(A) ? e.icon.darkSVG : e.icon.lightSVG;
+              let t = (0, c.wj)(k) ? e.icon.darkSVG : e.icon.lightSVG;
               return (0, r.jsx)(d.qEK, {
                 className: I.avatar,
                 src: t,
@@ -176,7 +176,7 @@ let P = i.forwardRef((e, t) => {
                 user: e,
                 target: t,
                 options: n
-              } = i, s = v.N5(i);
+              } = i, s = _.N5(i);
               return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
                 children: C.NW.format(s, {
@@ -194,7 +194,7 @@ let P = i.forwardRef((e, t) => {
                     }
                     return C.NW.string(C.t["30mdIy"])
                   },
-                  targetHook: (e, t) => i.targetType === O.KFR.USER && i.target instanceof f.Z ? (0, r.jsx)(T, {
+                  targetHook: (e, t) => i.targetType === O.KFR.USER && i.target instanceof h.Z ? (0, r.jsx)(T, {
                     user: i.target,
                     onContextMenu: D
                   }, t) : (0, r.jsx)("span", {
@@ -212,7 +212,7 @@ let P = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), k ? (0, r.jsx)(j.Z, {
+        }), A ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: o,
@@ -229,8 +229,8 @@ let P = i.forwardRef((e, t) => {
   })
 });
 P.displayName = "GuildSettingsAuditLogEntry";
-let w = o.ZP.connectStores([h.Z], () => ({
-  theme: h.Z.theme
+let w = o.ZP.connectStores([f.Z], () => ({
+  theme: f.Z.theme
 }), {
   forwardRef: !0
 })(P)

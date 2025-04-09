@@ -1,34 +1,35 @@
-/** Chunk was on 16114 **/
+/** Chunk was on 56444 **/
+"use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => m
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  o = n(120356),
-  c = n.n(o),
-  s = n(200100),
-  a = n(481060),
-  l = n(393238),
-  u = n(388032),
-  d = n(212787);
-let f = i.memo(function(e) {
+  s = n(120356),
+  a = n.n(s),
+  l = n(200100),
+  o = n(481060),
+  c = n(393238),
+  d = n(388032),
+  u = n(212787);
+let m = i.memo(function(e) {
   var t, n;
   let {
-    renderHeader: o,
-    children: f,
-    isExpanded: p,
-    isStuck: b,
-    onExpand: j,
-    disableAnimation: y,
-    disableBackground: m
-  } = e, [g, O] = i.useState(!0), [h, v] = i.useState(!1), {
-    ref: x,
-    height: P = 0
-  } = (0, l.Z)(), {
-    ref: w,
-    height: N = 0
-  } = (0, l.Z)(), [C, E] = i.useState(p), S = (0, a.q_F)({
-    height: C ? N + P : P,
+    renderHeader: s,
+    children: m,
+    isExpanded: g,
+    isStuck: p,
+    onExpand: f,
+    disableAnimation: h,
+    disableBackground: b
+  } = e, [x, j] = i.useState(!0), [N, v] = i.useState(!1), {
+    ref: _,
+    height: y = 0
+  } = (0, c.Z)(), {
+    ref: O,
+    height: C = 0
+  } = (0, c.Z)(), [I, E] = i.useState(g), S = (0, o.q_F)({
+    height: I ? C + y : y,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -46,7 +47,7 @@ let f = i.memo(function(e) {
         })
       }
       return e
-    }({}, s.config.stiff), n = n = {
+    }({}, l.config.stiff), n = n = {
       clamp: !0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -64,35 +65,35 @@ let f = i.memo(function(e) {
     onRest: () => {
       v(!0)
     }
-  }, g || y ? "animate-never" : "respect-motion-settings");
+  }, x || h ? "animate-never" : "respect-motion-settings");
   return i.useLayoutEffect(() => {
-    v(!1), E(p)
-  }, [p]), i.useLayoutEffect(() => {
+    v(!1), E(g)
+  }, [g]), i.useLayoutEffect(() => {
     let e = setTimeout(() => {
-      O(!1)
+      j(!1)
     }, 100);
     return () => clearTimeout(e)
-  }, []), (0, r.jsx)(a.P3F, {
-    className: c()(d.editCard, {
-      [d.toggled]: p,
-      [d.noBackground]: m
+  }, []), (0, r.jsx)(o.P3F, {
+    className: a()(u.editCard, {
+      [u.toggled]: g,
+      [u.noBackground]: b
     }),
-    children: (0, r.jsxs)(s.animated.div, {
-      className: c()(d.contentExpandContainer, {
-        [d.showOverflow]: p && h
+    children: (0, r.jsxs)(l.animated.div, {
+      className: a()(u.contentExpandContainer, {
+        [u.showOverflow]: g && N
       }),
       style: S,
-      children: [(0, r.jsx)(a.P3F, {
-        innerRef: x,
-        onClick: b ? void 0 : j,
-        className: c()(d.innerHeader, {
-          [d.toggled]: p && b
+      children: [(0, r.jsx)(o.P3F, {
+        innerRef: _,
+        onClick: p ? void 0 : f,
+        className: a()(u.innerHeader, {
+          [u.toggled]: g && p
         }),
-        "aria-label": u.NW.string(u.t.dcl9MT),
-        children: o
+        "aria-label": d.NW.string(d.t.dcl9MT),
+        children: s
       }), (0, r.jsx)("div", {
-        ref: w,
-        children: f
+        ref: O,
+        children: m
       })]
     })
   })

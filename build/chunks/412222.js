@@ -1,13 +1,13 @@
-/** Chunk was on 97811 **/
+/** Chunk was on 9924 **/
 n.d(t, {
-  C: () => i
+  C: () => a
 });
 var r = n(442837),
-  a = n(826581);
+  l = n(826581);
 
-function i(e) {
+function a(e) {
   let {
     guildId: t
   } = e;
-  return (0, r.e7)([a.Z], () => a.Z.getSelectedSortOrder(t), [t])
+  return (0, r.e7)([l.Z], () => l.Z.getSelectedSortOrder(t), [t])
 }

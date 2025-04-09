@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => eR
@@ -15,14 +15,14 @@ var r = n(200651),
   m = n(688465),
   g = n(749681),
   p = n(258971),
-  h = n(676317),
-  f = n(874993),
+  f = n(676317),
+  h = n(874993),
   b = n(45966),
   x = n(637853),
   j = n(352981),
   N = n(610403),
-  _ = n(923726),
-  v = n(303737),
+  v = n(923726),
+  _ = n(303737),
   y = n(15030),
   O = n(220685),
   C = n(536442),
@@ -35,8 +35,8 @@ var r = n(200651),
   R = n(823379),
   D = n(434404),
   Z = n(360606),
-  A = n(946724),
-  k = n(999382),
+  k = n(946724),
+  A = n(999382),
   W = n(44550),
   L = n(853714),
   M = n(359191),
@@ -51,8 +51,8 @@ var r = n(200651),
   K = n(579648),
   q = n(511480),
   X = n(460461),
-  Q = n(29605),
-  J = n(365307),
+  J = n(29605),
+  Q = n(365307),
   $ = n(497666),
   ee = n(324330),
   et = n(495300),
@@ -69,14 +69,14 @@ var r = n(200651),
   em = n(178387),
   eg = n(993097),
   ep = n(486358),
-  eh = n(942478),
-  ef = n(890861),
+  ef = n(942478),
+  eh = n(890861),
   eb = n(708510),
   ex = n(237245),
   ej = n(658666),
   eN = n(224726),
-  e_ = n(308619),
-  ev = n(254925),
+  ev = n(308619),
+  e_ = n(254925),
   ey = n(209402),
   eO = n(981631),
   eC = n(308083),
@@ -121,7 +121,7 @@ let eR = {
     var eR;
     let eD = (0, j.p)(t.guild.id, "guild_settings"),
       eZ = !1 === t.guild.hasFeature(eO.oNc.CREATOR_MONETIZABLE) && !1 === t.guild.hasFeature(eO.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-      eA = eD && eZ ? {
+      ek = eD && eZ ? {
         label: (0, r.jsx)("div", {
           className: eT.roleSubLabel,
           children: eS.NW.string(eS.t.Tn7Koq)
@@ -134,61 +134,61 @@ let eR = {
         }),
         ariaLabel: eS.NW.string(eS.t["KzCF//"])
       },
-      ek = t.guild.hasFeature(eO.oNc.COMMUNITY) && t.canViewGuildAnalytics,
+      eA = t.guild.hasFeature(eO.oNc.COMMUNITY) && t.canViewGuildAnalytics,
       eW = (null == (eR = t.guild.profile) ? void 0 : eR.badge) != null ? (0, c.ky)(t.guild.id, t.guild.profile.badge, eC.NC.SIZE_16) : null;
     switch (e) {
       case eO.pNK.PROFILE:
         return {
           section: eO.pNK.PROFILE, impressionName: i.ImpressionNames.GUILD_SETTINGS_PROFILE, label: eS.NW.string(eS.t.txdaxc), ariaLabel: eS.NW.string(eS.t.txdaxc), element: eN.Z, type: o.bT.SCROLLABLE_CUSTOM, notice: {
-            stores: [k.Z],
-            element: e_.Z
+            stores: [A.Z],
+            element: ev.Z
           }
         };
       case eO.pNK.TAG:
         return {
-          section: eO.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eS.NW.string(eS.t["2QmKZ2"]), ariaLabel: eS.NW.string(eS.t["2QmKZ2"]), element: ev.ZP, predicate() {
+          section: eO.pNK.TAG, impressionName: i.ImpressionNames.GUILD_SETTINGS_TAG, label: eS.NW.string(eS.t["2QmKZ2"]), ariaLabel: eS.NW.string(eS.t["2QmKZ2"]), element: e_.ZP, predicate() {
             let e = (0, E.gV)(t.guild.id, "guild_settings");
             return t.canManageGuild && e
           }, notice: {
-            stores: [k.Z],
+            stores: [A.Z],
             element: ey.Z
           }
         };
       case eO.pNK.ENGAGEMENT:
         return {
           section: eO.pNK.ENGAGEMENT, impressionName: i.ImpressionNames.GUILD_SETTINGS_ENGAGEMENT, label: eS.NW.string(eS.t["6TAHb2"]), ariaLabel: eS.NW.string(eS.t["6TAHb2"]), element: ep.Z, notice: {
-            stores: [k.Z],
-            element: eh.R
+            stores: [A.Z],
+            element: ef.R
           }
         };
       case eO.pNK.BOOST_PERKS:
         return {
           section: eO.pNK.BOOST_PERKS, impressionName: i.ImpressionNames.GUILD_SETTINGS_BOOST_PERKS, label: eS.NW.string(eS.t.UKgg5O), ariaLabel: eS.NW.string(eS.t.UKgg5O), element: em.I, notice: {
-            stores: [k.Z, W.Z],
+            stores: [A.Z, W.Z],
             element: eg.C
           }
         };
       case eO.pNK.INVITES:
         return {
-          section: eO.pNK.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: eS.NW.string(eS.t.YOt3Oj), ariaLabel: eS.NW.string(eS.t.YOt3Oj), element: ef.Z, type: o.bT.CUSTOM, predicate: () => t.canManageGuild
+          section: eO.pNK.INVITES, impressionName: i.ImpressionNames.GUILD_SETTINGS_INVITES_V2, label: eS.NW.string(eS.t.YOt3Oj), ariaLabel: eS.NW.string(eS.t.YOt3Oj), element: eh.Z, type: o.bT.CUSTOM, predicate: () => t.canManageGuild
         };
       case eO.pNK.OVERVIEW:
         return {
           section: eO.pNK.OVERVIEW, impressionName: i.ImpressionNames.GUILD_SETTINGS_OVERVIEW, label: eS.NW.string(eS.t["/dp6yc"]), ariaLabel: eS.NW.string(eS.t["/dp6yc"]), element: en.Z, notice: {
-            stores: [k.Z],
+            stores: [A.Z],
             element: en.O
           }
         };
       case eO.pNK.ROLES:
         return {
           section: eO.pNK.ROLES, impressionName: i.ImpressionNames.GUILD_SETTINGS_ROLES, label: eS.NW.string(eS.t.LPJmLy), element: F.Z, type: o.bT.MINIMAL, ariaLabel: eS.NW.string(eS.t.KXcECw), notice: {
-            stores: [A.Z],
+            stores: [k.Z],
             element: F._
           }, predicate: () => t.canManageRoles
         };
       case eO.pNK.EMOJI:
         return {
-          section: eO.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: eS.NW.string(eS.t.sMOuub), element: Q.ZP, predicate: () => t.canManageGuildExpressions
+          section: eO.pNK.EMOJI, impressionName: i.ImpressionNames.GUILD_SETTINGS_EMOJI, label: eS.NW.string(eS.t.sMOuub), element: J.ZP, predicate: () => t.canManageGuildExpressions
         };
       case eO.pNK.STICKERS:
         return {
@@ -227,9 +227,9 @@ let eR = {
         };
       case eO.pNK.INTEGRATIONS:
         return {
-          section: eO.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eS.NW.string(eS.t.CIsNZ2), ariaLabel: eS.NW.string(eS.t.CIsNZ2), element: J.Z, notice: {
-            stores: [Z.default, k.Z],
-            element: J.j
+          section: eO.pNK.INTEGRATIONS, impressionName: i.ImpressionNames.GUILD_SETTINGS_INTEGRATION, label: eS.NW.string(eS.t.CIsNZ2), ariaLabel: eS.NW.string(eS.t.CIsNZ2), element: Q.Z, notice: {
+            stores: [Z.default, A.Z],
+            element: Q.j
           }, predicate: () => t.canManageGuild || t.canManageWebhooks || t.canUnlinkChannels
         };
       case eO.pNK.APP_DIRECTORY:
@@ -260,7 +260,7 @@ let eR = {
           section: eO.pNK.GUILD_AUTOMOD, label: (0, r.jsx)("div", {
             className: eT.landingPageTabLink,
             children: eS.NW.string(eS.t.uRelg4)
-          }), ariaLabel: eS.NW.string(eS.t.uRelg4), element: f.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.hasFeature(eO.oNc.COMMUNITY) && ((0, h.Nb)(t.guild.id) || (0, h.ze)(t.guild.id))
+          }), ariaLabel: eS.NW.string(eS.t.uRelg4), element: h.Z, newIndicatorDismissibleContentTypes: null, predicate: () => !t.guild.hasFeature(eO.oNc.COMMUNITY) && ((0, f.Nb)(t.guild.id) || (0, f.ze)(t.guild.id))
         };
       case eO.pNK.AUDIT_LOG:
         return {
@@ -301,7 +301,7 @@ let eR = {
           ariaLabel: eL,
           newIndicator: !t.guild.hasFeature(eO.oNc.COMMUNITY) && null != t.memberCount && t.memberCount >= eE.U3 && C.qc.hasHotspot(C.v6.GUILD_SETTINGS_COMMUNITY_GUILD_UPSELL),
           notice: {
-            stores: [k.Z],
+            stores: [A.Z],
             element: Y.X
           }
         };
@@ -323,12 +323,12 @@ let eR = {
         };
       case eO.pNK.ANALYTICS:
         return {
-          section: eO.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: eS.NW.string(eS.t["0wWfUF"]), ariaLabel: eS.NW.string(eS.t["0wWfUF"]), element: H.Z, predicate: () => ek
+          section: eO.pNK.ANALYTICS, impressionName: i.ImpressionNames.GUILD_SETTINGS_ANALYTICS, label: eS.NW.string(eS.t["0wWfUF"]), ariaLabel: eS.NW.string(eS.t["0wWfUF"]), element: H.Z, predicate: () => eA
         };
       case eO.pNK.DISCOVERY:
         return {
           section: eO.pNK.DISCOVERY, impressionName: i.ImpressionNames.GUILD_SETTINGS_DISCOVERY, label: eS.NW.string(eS.t.oGaVGx), element: q.Z, notice: {
-            stores: [k.Z],
+            stores: [A.Z],
             element: q.s
           }, predicate: () => !t.memberVerificationRolloutEnabled && t.canManageGuild && t.guild.hasFeature(eO.oNc.COMMUNITY), ariaLabel: t.guild.hasFeature(eO.oNc.DISCOVERABLE) ? eS.NW.string(eS.t.oGaVGx) : eS.NW.string(eS.t.XU0S6u)
         };
@@ -338,7 +338,7 @@ let eR = {
             className: eT.landingPageTabLink,
             children: [eS.NW.string(eS.t.kGlQGB), " ", (0, r.jsx)(m.Z, {})]
           }), ariaLabel: eS.NW.string(eS.t.kGlQGB), element: X.Z, notice: {
-            stores: [k.Z],
+            stores: [A.Z],
             element: X.J
           }, type: o.bT.CUSTOM, predicate() {
             var e;
@@ -353,20 +353,20 @@ let eR = {
           }, predicate: () => t.canManageGuild && t.guild.hasFeature(eO.oNc.COMMUNITY) && !t.welcomeScreenEmpty && !t.guild.hasFeature(eO.oNc.GUILD_SERVER_GUIDE)
         };
       case eO.pNK.ROLE_SUBSCRIPTIONS:
-        return ew(eP({}, eA), {
+        return ew(eP({}, ek), {
           section: eO.pNK.ROLE_SUBSCRIPTIONS,
           element: y.Z,
           type: o.bT.CUSTOM,
           predicate: t.monetizationPredicate,
-          newIndicatorDismissibleContentTypes: (0, v.sO)(t.guild) ? [s.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
+          newIndicatorDismissibleContentTypes: (0, _.sO)(t.guild) ? [s.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE] : null
         });
       case eO.pNK.GUILD_PRODUCTS:
         return {
-          section: eO.pNK.GUILD_PRODUCTS, label: eS.NW.string(eS.t.X6h2g4), ariaLabel: eS.NW.string(eS.t.X6h2g4), element: N.Z, predicate: () => t.monetizationPredicate() && (0, j.p)(t.guild.id, "guild_product_settings_predicate") && (0, _.sy)(t.guild)
+          section: eO.pNK.GUILD_PRODUCTS, label: eS.NW.string(eS.t.X6h2g4), ariaLabel: eS.NW.string(eS.t.X6h2g4), element: N.Z, predicate: () => t.monetizationPredicate() && (0, j.p)(t.guild.id, "guild_product_settings_predicate") && (0, v.sy)(t.guild)
         };
       case eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE:
         return {
-          section: eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eS.NW.string(eS.t.ipTYsr), ariaLabel: eS.NW.string(eS.t.ipTYsr), element: O.Z, predicate: () => t.monetizationPredicate() && (0, _.sy)(t.guild)
+          section: eO.pNK.ROLE_SUBSCRIPTIONS_STORE_PAGE, impressionName: i.ImpressionNames.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_GUILD_SETTINGS, newIndicator: 2022 === new Date().getFullYear(), label: eS.NW.string(eS.t.ipTYsr), ariaLabel: eS.NW.string(eS.t.ipTYsr), element: O.Z, predicate: () => t.monetizationPredicate() && (0, v.sy)(t.guild)
         };
       case eO.pNK.GUILD_PREMIUM:
         return {

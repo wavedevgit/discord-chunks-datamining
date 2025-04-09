@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  c: () => v,
+  c: () => _,
   x: () => I
 }), n(388685), n(953529);
 var r = n(200651),
@@ -16,8 +16,8 @@ var r = n(200651),
   m = n(353093),
   g = n(449480),
   p = n(114487),
-  h = n(214715),
-  f = n(550271),
+  f = n(214715),
+  h = n(550271),
   b = n(308083),
   x = n(388032),
   j = n(194093);
@@ -41,7 +41,7 @@ function N(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function _(e, t) {
   }), e
 }
 
-function v(e) {
+function _(e) {
   let {
     wildcardDescriptors: t,
     primaryColor: n
@@ -76,7 +76,7 @@ function v(e) {
       text: s,
       color: l.ua7.Colors.PRIMARY,
       shouldShow: d,
-      children: e => (0, r.jsx)("span", _(N({}, e), {
+      children: e => (0, r.jsx)("span", v(N({}, e), {
         style: g,
         className: j.wildCardText,
         ref: c,
@@ -115,7 +115,7 @@ function O(e) {
     traits: t,
     traitsToHighlight: n,
     onInteraction: s
-  } = e, o = i.useMemo(() => null == n ? new Set : new Set(n), [n]), c = i.useCallback(e => (0, r.jsx)(h.Z, {
+  } = e, o = i.useMemo(() => null == n ? new Set : new Set(n), [n]), c = i.useCallback(e => (0, r.jsx)(f.Z, {
     className: a()(j.thinTrait, {
       [j.selectedTrait]: o.has(e)
     }),
@@ -179,7 +179,7 @@ function I(e) {
     clan: n,
     bannerComponent: s,
     expanded: u,
-    isMember: h = !1,
+    isMember: f = !1,
     traitsToHighlight: I,
     prioritizedGameIds: E,
     className: S,
@@ -189,9 +189,9 @@ function I(e) {
     onlyAnimateIconOnHover: R = !1,
     hasPendingJoinRequest: D = !1,
     atMaxMemberCapacity: Z = !1,
-    footer: A = null
+    footer: k = null
   } = e, {
-    tag: k,
+    tag: A,
     badge: W,
     branding: {
       primaryColor: L,
@@ -205,11 +205,11 @@ function I(e) {
     z(!1)
   }, []), X = x.NW.formatToPlainString(x.t["0WHArK"], {
     count: n.memberCount
-  }), Q = null != w ? w : (0, m.pY)(n.id, G), J = null == s && null == Q ? {
+  }), J = null != w ? w : (0, m.pY)(n.id, G), Q = null == s && null == J ? {
     background: "linear-gradient(90deg, ".concat(L, ", ").concat(M, ")")
-  } : void 0, $ = null != s ? s : null != Q ? (0, r.jsx)("img", {
+  } : void 0, $ = null != s ? s : null != J ? (0, r.jsx)("img", {
     alt: x.NW.string(x.t.nH6S2d),
-    src: Q,
+    src: J,
     className: j.bannerImage
   }) : null, ee = i.useMemo(() => (0, b.HR)(n.traits, I), [n.traits, I]);
   i.useEffect(() => {
@@ -231,11 +231,11 @@ function I(e) {
     onMouseLeave: q,
     children: [(0, r.jsxs)("div", {
       className: j.cardBrandingHeader,
-      style: J,
+      style: Q,
       children: [$, (0, r.jsx)(C, {
         hasPendingJoinRequest: D,
         atMaxMemberCapacity: Z,
-        isGuildMember: h
+        isGuildMember: f
       })]
     }), (0, r.jsxs)("div", {
       className: j.cardContent,
@@ -262,7 +262,7 @@ function I(e) {
             className: j.clanTagChipletWrapper,
             children: (0, r.jsxs)("div", {
               className: j.clanTagChiplet,
-              children: [(0, r.jsx)(f.A, {
+              children: [(0, r.jsx)(h.A, {
                 width: 16,
                 height: 16,
                 badge: W.badgeKind,
@@ -271,7 +271,7 @@ function I(e) {
               }), (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "text-primary",
-                children: k
+                children: A
               })]
             })
           })]
@@ -283,7 +283,7 @@ function I(e) {
             text: n.name,
             color: l.ua7.Colors.PRIMARY,
             shouldShow: V,
-            children: e => (0, r.jsx)("span", _(N({}, e), {
+            children: e => (0, r.jsx)("span", v(N({}, e), {
               ref: H,
               className: j.nameText,
               children: n.name
@@ -304,7 +304,7 @@ function I(e) {
             color: "text-secondary",
             className: j.clanInfoItem,
             children: null != (t = (0, b.mv)(n.playstyle)) ? t : x.NW.string(x.t.JijC4O)
-          }), (0, r.jsx)(v, {
+          }), (0, r.jsx)(_, {
             wildcardDescriptors: n.wildcardDescriptors,
             primaryColor: n.branding.primaryColor
           })]
@@ -343,6 +343,6 @@ function I(e) {
       style: {
         background: "linear-gradient(90deg, ".concat(L, ", ").concat(M, ")")
       }
-    }), A]
+    }), k]
   })
 }

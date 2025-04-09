@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => j
@@ -15,9 +15,9 @@ var r = n(200651),
   m = n(388032),
   g = n(210530),
   p = n(381109);
-let h = () => null;
+let f = () => null;
 
-function f(e) {
+function h(e) {
   let {
     gameApplicationIds: t,
     handleChange: n,
@@ -38,7 +38,7 @@ function f(e) {
     matchSorterOptions: a,
     clearQueryOnSelect: !0,
     customPillContainerClassName: g.pills,
-    renderCustomPill: h
+    renderCustomPill: f
   })
 }
 
@@ -65,7 +65,7 @@ function j(e) {
   let {
     profile: n,
     canManageGuild: s
-  } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : x, h = i.useCallback(e => {
+  } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : x, f = i.useCallback(e => {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: e
     })
@@ -74,7 +74,7 @@ function j(e) {
     c.Z.updateGuildProfile(o, {
       gameApplicationIds: t
     })
-  }, [o, d]), N = i.useRef(d), _ = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
+  }, [o, d]), N = i.useRef(d), v = i.useMemo(() => (a().isEqual(new Set(d), new Set(N.current)) || (N.current = [...d]), N.current), [d]);
   return (0, r.jsxs)(l.hjN, {
     className: p.section,
     children: [(0, r.jsxs)("div", {
@@ -87,18 +87,18 @@ function j(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: g.sectionBody,
-      children: [(0, r.jsx)(f, {
+      children: [(0, r.jsx)(h, {
         gameApplicationIds: d,
-        handleChange: h,
+        handleChange: f,
         disabled: !s
       }), (0, r.jsx)(b, {
-        gameApplicationIds: _,
+        gameApplicationIds: v,
         onRemoveGame: j,
         disabled: !s
       }), (0, r.jsx)(u.Z, {
         guildId: o,
         selectedGameApplicationIds: d,
-        onUpdateGames: h,
+        onUpdateGames: f,
         disabled: !s
       })]
     })]

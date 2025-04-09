@@ -1,9 +1,9 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  BG: () => h,
+  BG: () => f,
   DO: () => b,
-  pt: () => f
+  pt: () => h
 }), n(388685);
 var r = n(570140),
   i = n(668781),
@@ -18,13 +18,13 @@ var r = n(570140),
   g = n(290511),
   p = n(388032);
 
-function h() {
+function f() {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_RESET"
   })
 }
 
-function f(e) {
+function h(e) {
   r.Z.dispatch({
     type: "GUILD_SETTINGS_DEFAULT_CHANNELS_TOGGLE",
     channelId: e
@@ -33,10 +33,10 @@ function f(e) {
 async function b(e) {
   let t = Array.from(d.Z.editedDefaultChannelIds).filter(e => null != o.Z.getChannel(e)),
     n = m.Z.advancedMode,
-    [h, f] = (0, l.d9)(e.id, [...t]),
+    [f, h] = (0, l.d9)(e.id, [...t]),
     b = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts),
     x = (0, l.kl)(e.id, t, m.Z.editedOnboardingPrompts, l.V7);
-  if (a.Z.getEnabled(e.id) && (!n && (f.length < g.md || h.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
+  if (a.Z.getEnabled(e.id) && (!n && (h.length < g.md || f.length < g.X) || n && (b.length < g.md || x.length < g.X))) return void i.Z.show({
     title: p.NW.string(p.t.iLdiqa),
     body: p.NW.string(p.t.JOT74e)
   });

@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => x
@@ -46,7 +46,7 @@ function p(e, t) {
   }), e
 }
 
-function h(e) {
+function f(e) {
   let {
     games: t,
     gameActivity: n
@@ -84,7 +84,7 @@ function h(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   var t;
   let {
     game: n,
@@ -92,12 +92,12 @@ function f(e) {
     highlighted: s = !1
   } = e, d = n.getIconURL(24);
   if (null == d) return null;
-  let h = (null == i || null == (t = i[n.id]) ? void 0 : t.level) === l.m.HIGH,
-    f = (0, r.jsxs)(o.Text, {
+  let f = (null == i || null == (t = i[n.id]) ? void 0 : t.level) === l.m.HIGH,
+    h = (0, r.jsxs)(o.Text, {
       variant: "text-sm/semibold",
       color: "interactive-active",
       className: m.tooltipText,
-      children: [n.name, h && (0, r.jsx)(o.Text, {
+      children: [n.name, f && (0, r.jsx)(o.Text, {
         tag: "div",
         variant: "text-sm/normal",
         color: "text-muted",
@@ -105,7 +105,7 @@ function f(e) {
       })]
     });
   return (0, r.jsx)(o.ua7, {
-    text: f,
+    text: h,
     position: "bottom",
     "aria-label": n.name,
     children: e => (0, r.jsxs)("div", p(g({}, e), {
@@ -114,7 +114,7 @@ function f(e) {
         src: d,
         alt: n.name,
         className: m.gameImage
-      }), h && (0, r.jsx)(c.ZP, {
+      }), f && (0, r.jsx)(c.ZP, {
         mask: c.QS.GAMEPLAY_HIGH_ACTIVITY_ICON,
         width: 14,
         height: 14,
@@ -154,7 +154,7 @@ let b = e => (t, n) => {
       if (null == t) return null;
       let n = t.getIconURL(24);
       if (null == n) return null;
-      if (l.length <= 4) return (0, r.jsx)(f, {
+      if (l.length <= 4) return (0, r.jsx)(h, {
         game: t,
         gameActivity: s
       });
@@ -162,7 +162,7 @@ let b = e => (t, n) => {
       return (0, r.jsx)(o.ua7, {
         "aria-label": null != (e = (0, d.f6)(i.map(e => e.name))) ? e : "",
         onTooltipShow: () => null == a ? void 0 : a(),
-        text: (0, r.jsx)(h, {
+        text: (0, r.jsx)(f, {
           games: i,
           gameActivity: s
         }),
@@ -185,7 +185,7 @@ let b = e => (t, n) => {
       })
     }, [s, l, a]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [c.map(e => (0, r.jsx)(f, {
+      children: [c.map(e => (0, r.jsx)(h, {
         game: e,
         gameActivity: s,
         highlighted: n.has(e.id)

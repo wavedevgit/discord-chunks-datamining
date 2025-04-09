@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -20,7 +20,7 @@ function u(e) {
     isOutOfSlots: u
   } = e, m = t.premiumTier, g = (0, a.FZ)(m), p = o._k[m] - 2;
   if (null == g || m === l.Eu4.TIER_3 || n < p) return null;
-  let h = u ? {
+  let f = u ? {
     color: i.Ttl.GREEN,
     look: i.iLD.FILLED,
     text: c.NW.string(c.t.cYzxGh)
@@ -33,7 +33,7 @@ function u(e) {
     }),
     headerColor: "header-primary",
     textColor: "text-normal",
-    buttonProps: h,
+    buttonProps: f,
     guild: t,
     analyticsLocation: {
       page: l.ZY5.GUILD_SETTINGS,

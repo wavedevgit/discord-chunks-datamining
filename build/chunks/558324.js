@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -18,8 +18,8 @@ let u = e => {
       value: m,
       onRemoveTag: g,
       onAddTag: p,
-      onAddTagError: h,
-      maxTaxLength: f,
+      onAddTagError: f,
+      maxTaxLength: h,
       maxTags: b,
       disabled: x,
       placeholder: j
@@ -39,7 +39,7 @@ let u = e => {
       }
       return i
     }(e, ["className", "tags", "value", "onRemoveTag", "onAddTag", "onAddTagError", "maxTaxLength", "maxTags", "disabled", "placeholder"]);
-  let [_, v] = i.useState(null != m ? m : ""), y = u.map((e, t) => (0, r.jsxs)("span", {
+  let [v, _] = i.useState(null != m ? m : ""), y = u.map((e, t) => (0, r.jsxs)("span", {
     className: d.tag,
     children: [e, !x && (0, r.jsx)(l.P3F, {
       className: d.closeWrapper,
@@ -51,25 +51,25 @@ let u = e => {
       })
     })]
   }, t)), O = i.useCallback(() => {
-    let e = _.trim();
+    let e = v.trim();
     if (0 !== e.length) {
       if (null != b && u.length >= b) {
-        null == h || h(c.NW.string(c.t.Xx7XeH));
+        null == f || f(c.NW.string(c.t.Xx7XeH));
         return
       }
-      p(e), v("")
+      p(e), _("")
     }
-  }, [_, b, p, h, u.length]), C = i.useCallback(e => {
+  }, [v, b, p, f, u.length]), C = i.useCallback(e => {
     switch (e.keyCode) {
       case o.yXg.BACKSPACE:
-        0 === _.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
+        0 === v.length && u.length > 0 && (e.preventDefault(), e.stopPropagation(), g(u.length - 1));
         break;
       case o.yXg.ENTER:
       case o.yXg.TAB:
       case o.yXg.COMMA:
         e.preventDefault(), e.stopPropagation(), O()
     }
-  }, [O, _.length, g, u.length]);
+  }, [O, v.length, g, u.length]);
   return (0, r.jsxs)("div", {
     className: a()(s, d.inputWrapper, {
       [d.disabled]: x
@@ -95,10 +95,10 @@ let u = e => {
       className: d.inputOuter,
       inputClassName: d.inputInner
     }, N), n = n = {
-      value: _,
+      value: v,
       onKeyDown: C,
-      onChange: v,
-      maxLength: f,
+      onChange: _,
+      maxLength: h,
       disabled: x,
       onBlur: O,
       placeholder: j

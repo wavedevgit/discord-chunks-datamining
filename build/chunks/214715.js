@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -20,19 +20,19 @@ let c = i.memo(function(e) {
     onMouseEnter: m,
     onMouseLeave: g,
     onClick: p
-  } = e, h = i.useMemo(() => {
+  } = e, f = i.useMemo(() => {
     if (null != p) return () => p(t)
   }, [p, t]);
   return (0, r.jsxs)(l.P3F, {
     tabIndex: null == p ? -1 : 0,
     className: a()(o.trait, {
-      [o.selectable]: null != h && !u,
+      [o.selectable]: null != f && !u,
       [o.selected]: u,
-      [o.clickable]: null != h
+      [o.clickable]: null != f
     }, d),
     onMouseEnter: m,
     onMouseLeave: g,
-    onClick: h,
+    onClick: f,
     children: [null != c && (0, r.jsx)(c, {
       size: "xs",
       color: "currentColor"

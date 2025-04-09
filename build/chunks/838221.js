@@ -1,30 +1,31 @@
-/** Chunk was on 16114 **/
+/** Chunk was on 56444 **/
+"use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
 var i = n(325767);
 
-function o(e) {
+function s(e) {
   var t, n, {
-      width: o = 17,
-      height: c = 16,
-      color: s = "currentColor",
-      foreground: a
+      width: s = 17,
+      height: a = 16,
+      color: l = "currentColor",
+      foreground: o
     } = e,
-    l = function(e, t) {
+    c = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
@@ -45,25 +46,25 @@ function o(e) {
       })
     }
     return e
-  }({}, (0, i.Z)(l)), n = n = {
-    width: o,
-    height: c,
+  }({}, (0, i.Z)(c)), n = n = {
+    width: s,
+    height: a,
     viewBox: "0 0 17 16",
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("rect", {
-      className: a,
+      className: o,
       y: "5",
       width: "16",
       height: "2",
       rx: "1",
-      fill: s
+      fill: l
     }), (0, r.jsx)("rect", {
-      className: a,
+      className: o,
       y: "9",
       width: "8",
       height: "2",
       rx: "1",
-      fill: s
+      fill: l
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

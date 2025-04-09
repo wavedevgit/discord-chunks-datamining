@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -24,7 +24,7 @@ function c(e, t) {
     {
       currentPeriod: g,
       previousPeriods: p,
-      metrics: h
+      metrics: f
     } = r.useMemo(() => {
       var e, t;
       let {
@@ -72,6 +72,6 @@ function c(e, t) {
     currentPeriod: g,
     previousPeriods: p,
     allPeriods: c,
-    metrics: h
+    metrics: f
   }
 }

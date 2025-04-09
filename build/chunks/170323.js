@@ -1,4 +1,4 @@
-/** Chunk was on 6850 **/
+/** Chunk was on 23988 **/
 n.d(t, {
   Z: () => p
 });
@@ -56,14 +56,14 @@ function p(e) {
     afterDate: p,
     beforeDate: f,
     optionId: h
-  } = a, j = h === d.Ol.CUSTOM, g = j && null != p ? i()(p).format(d.N2) : null, x = j && null != f ? i()(f).format(d.N2) : null;
+  } = a, g = h === d.Ol.CUSTOM, j = g && null != p ? i()(p).format(d.N2) : null, x = g && null != f ? i()(f).format(d.N2) : null;
   return (0, r.jsx)(d.ZP, {
-    startDateLabel: g,
+    startDateLabel: j,
     endDateLabel: x,
     afterDate: p,
     beforeDate: f,
     selectedOption: h,
-    isCustomDateRange: j,
+    isCustomDateRange: g,
     menuName: "account-age",
     accessibilityLabel: C.NW.string(C.t["D++TgY"]),
     onClose: n,
@@ -81,8 +81,8 @@ function p(e) {
       (0, u.Dr)(t, b(m({}, l), {
         selectedAccountAgeOption: {
           optionId: d.Ol.CUSTOM,
-          afterDate: j ? p : null,
-          beforeDate: j ? f : null
+          afterDate: g ? p : null,
+          beforeDate: g ? f : null
         }
       }))
     },

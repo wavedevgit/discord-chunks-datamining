@@ -1,19 +1,19 @@
-/** Chunk was on 97811 **/
+/** Chunk was on 9924 **/
 n.d(t, {
-  j: () => l
+  j: () => s
 }), n(388685), n(583741);
 var r = n(192379),
-  a = n(442837),
-  i = n(826581),
-  o = n(246364);
+  l = n(442837),
+  a = n(826581),
+  i = n(246364);
 
-function l(e) {
+function s(e) {
   let {
     guildId: t,
     applicationStatus: n,
-    sortOrder: l
-  } = e, s = (0, a.e7)([i.Z], () => i.Z.getRequests(t, n), [n, t]);
+    sortOrder: s
+  } = e, o = (0, l.e7)([a.Z], () => a.Z.getRequests(t, n), [n, t]);
   return {
-    guildJoinRequests: r.useMemo(() => l === o.Nw.TIMESTAMP_DESC ? [...s].reverse() : s, [l, s])
+    guildJoinRequests: r.useMemo(() => s === i.Nw.TIMESTAMP_DESC ? [...o].reverse() : o, [s, o])
   }
 }

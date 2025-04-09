@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  c: () => f
+  c: () => h
 });
 var r = n(200651),
   i = n(192379),
@@ -15,20 +15,20 @@ var r = n(200651),
   m = n(981631),
   g = n(30513),
   p = n(200299),
-  h = n(388032);
+  f = n(388032);
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: f
+    buttonClassName: h
   } = e, {
     analyticsLocations: b
   } = (0, a.ZP)(), x = t.hasFeature(m.oNc.INVITE_SPLASH), j = n && x, N = i.useCallback(e => {
     c.Z.updateGuild({
       splash: e
     })
-  }, []), _ = i.useCallback(e => {
+  }, []), v = i.useCallback(e => {
     e.preventDefault(), e.stopPropagation(), (0, u.E6)({
       guild: t,
       analyticsLocations: b,
@@ -40,15 +40,15 @@ function f(e) {
   return x ? (0, r.jsxs)(s.zxk, {
     disabled: !j,
     color: s.Ttl.BRAND,
-    className: f,
-    children: [h.NW.string(h.t.yG2pUl), (0, r.jsx)(o.ZP, {
+    className: h,
+    children: [f.NW.string(f.t.yG2pUl), (0, r.jsx)(o.ZP, {
       disabled: !j,
       onChange: N,
       maxFileSizeBytes: p.B,
       onFileSizeError: () => (0, l.Z)(p.B)
     })]
   }) : (0, r.jsx)(d.P, {
-    className: f,
-    onClick: _
+    className: h,
+    onClick: v
   })
 }

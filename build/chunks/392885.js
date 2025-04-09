@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r, i, s, a = n(442837),
   l = n(570140),
@@ -44,7 +44,7 @@ i = "GuildSettingsSafetyStore", (r = "displayName") in p ? Object.defineProperty
   configurable: !0,
   writable: !0
 }) : p[r] = i;
-let h = new p(l.Z, {
+let f = new p(l.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (o.Z.getGuildId() === m) return !1;
     m = o.Z.getGuildId()

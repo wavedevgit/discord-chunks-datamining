@@ -1,4 +1,4 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
   m: () => j
@@ -15,19 +15,19 @@ var r = n(200651),
   m = n(594174),
   g = n(434404),
   p = n(800223),
-  h = n(981631),
-  f = n(388032);
+  f = n(981631),
+  h = n(388032);
 let b = "NO_CHANNEL",
-  x = s.$e(h.Plq.VIEW_CHANNEL, h.Plq.CREATE_INSTANT_INVITE);
+  x = s.$e(f.Plq.VIEW_CHANNEL, f.Plq.CREATE_INSTANT_INVITE);
 
 function j(e) {
   let {
     guildId: t,
     widgetEnabled: n,
     widgetChannelId: s,
-    className: h,
+    className: f,
     enableLocalUpdate: j
-  } = e, N = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), _ = i.useMemo(() => {
+  } = e, N = (0, a.e7)([c.ZP], () => c.ZP.getChannels(t)), v = i.useMemo(() => {
     let e = [...N[c.sH], ...N[c.Zb]].filter(e => {
       let {
         channel: n
@@ -49,15 +49,15 @@ function j(e) {
     });
     return e.unshift({
       value: b,
-      label: f.NW.string(f.t.u197b2)
+      label: h.NW.string(h.t.u197b2)
     }), e
-  }, [N, t, s]), v = i.useCallback(e => {
+  }, [N, t, s]), _ = i.useCallback(e => {
     j ? (0, p.c)(t, n, e !== b ? e : null) : g.Z.updateEmbed(t, n, e !== b ? e : null)
   }, [t, n, j]);
   return (0, r.jsx)(l.q4e, {
-    options: _,
+    options: v,
     value: s,
-    onChange: v,
-    className: h
+    onChange: _,
+    className: f
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 35093 **/
+/** Chunk was on 56444 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -17,11 +17,11 @@ var i = n(481060),
   g = n(301849),
   p = n(181517);
 
-function h() {
+function f() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, a.N)(), [, h] = l.p9(e, t), [f, b] = l.Ek(e, t), x = l.qs(e, t);
+  } = (0, a.N)(), [, f] = l.p9(e, t), [h, b] = l.Ek(e, t), x = l.qs(e, t);
 
   function j() {
     (0, i.ZDy)(async () => {
@@ -49,11 +49,11 @@ function h() {
           return e
         }({}, n), s = s = {
           guildId: t,
-          onUploadIcon: e => h({
+          onUploadIcon: e => f({
             icon: e,
             unicodeEmoji: null
           }),
-          onSelectUnicodeEmoji: e => h({
+          onSelectUnicodeEmoji: e => f({
             icon: null,
             unicodeEmoji: e
           })
@@ -78,7 +78,7 @@ function h() {
       title: m.NW.string(m.t["6OUqDQ"]),
       disabled: N,
       children: (0, r.jsx)(d.Z, {
-        value: f,
+        value: h,
         onChange: b,
         disabled: N
       })
