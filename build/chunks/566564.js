@@ -16,15 +16,15 @@ var r = n(200651),
   p = n(139668),
   f = n(223143),
   g = n(364111),
-  m = n(752053),
-  h = n(81136),
+  h = n(752053),
+  m = n(81136),
   _ = n(953655),
   v = n(548685),
   C = n(580914),
   x = n(963278),
-  y = n(384067),
-  O = n(215023),
-  j = n(388032),
+  O = n(384067),
+  j = n(215023),
+  y = n(388032),
   k = n(806734);
 let S = e => {
     let {
@@ -35,7 +35,7 @@ let S = e => {
     } = e, {
       noCache: c,
       includeUnpublished: u
-    } = (0, h.Z)(), {
+    } = (0, m.Z)(), {
       isFetchingShopHome: d,
       fetchShopHomeError: b,
       shopBlocks: p,
@@ -44,12 +44,12 @@ let S = e => {
       noCache: c,
       includeUnpublished: u,
       includeBundles: !0
-    }), O = l.useCallback(() => {
+    }), j = l.useCallback(() => {
       f()
     }, [f]);
-    if (null != b) return (0, r.jsx)(m.Z, {
-      onRetry: O,
-      errorOrigin: m.i.SHOP_PAGE,
+    if (null != b) return (0, r.jsx)(h.Z, {
+      onRetry: j,
+      errorOrigin: h.i.SHOP_PAGE,
       errorMessage: b.message
     });
     if (d || 0 === p.length) return (0, r.jsxs)("div", {
@@ -70,7 +70,7 @@ let S = e => {
         tab: s
       })]
     });
-    let j = (e, l) => {
+    let y = (e, l) => {
       if (null == e) return null;
       let c = null;
       switch (e.type) {
@@ -99,7 +99,7 @@ let S = e => {
           }, l);
           break;
         case i.z.WIDE_BANNER:
-          c = (0, r.jsx)(y.Z, {
+          c = (0, r.jsx)(O.Z, {
             handleTransition: t,
             wideBannerBlock: e,
             tab: s
@@ -123,7 +123,7 @@ let S = e => {
       }, l)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: p.map((e, t) => j(e, t))
+      children: p.map((e, t) => y(e, t))
     })
   },
   P = e => {
@@ -138,15 +138,15 @@ let S = e => {
       fetchCategoriesError: v,
       fetchPurchasesError: C,
       claimError: x,
-      refreshCategories: y
+      refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
     }), P = null != (t = null != v ? v : C) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), I = (0, p.R)("CollectiblesFeedShop"), {
       noCache: B,
       includeUnpublished: N
-    } = (0, h.Z)(), T = l.useCallback(() => {
-      y()
-    }, [y]);
+    } = (0, m.Z)(), T = l.useCallback(() => {
+      O()
+    }, [O]);
     if (null == E) return null;
     if (null != P) {
       let e = [];
@@ -159,9 +159,9 @@ let S = e => {
         }
       })
     }
-    return null != v ? (0, r.jsx)(m.Z, {
+    return null != v ? (0, r.jsx)(h.Z, {
       onRetry: T,
-      errorOrigin: m.i.SHOP_PAGE,
+      errorOrigin: h.i.SHOP_PAGE,
       errorMessage: v.message
     }) : (0, r.jsx)("div", {
       className: o()(k.shop, {
@@ -174,11 +174,11 @@ let S = e => {
           numVisibleItems: i,
           isFetchingCategories: _,
           tab: g
-        }), g !== O.AW.CATALOG && i >= I && (0, r.jsxs)("div", {
+        }), g !== j.AW.CATALOG && i >= I && (0, r.jsxs)("div", {
           className: k.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",
-            children: j.NW.string(j.t.Yr70c3)
+            children: y.NW.string(y.t.Yr70c3)
           }), (0, r.jsx)(c.zxk, {
             className: k.endOfFeedButton,
             onClick: () => {
@@ -187,7 +187,7 @@ let S = e => {
             children: (0, r.jsx)(c.Text, {
               variant: "text-md/medium",
               color: "always-white",
-              children: j.NW.string(j.t.AfrvRE)
+              children: y.NW.string(y.t.AfrvRE)
             })
           })]
         })]

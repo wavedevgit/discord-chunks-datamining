@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -58,8 +58,8 @@ let d = [{
   p = 1 / 300,
   f = (0, a.animated)(c.Z),
   g = (0, a.animated)(u.Z),
-  m = (0, a.animated)(i.OgN),
-  h = l.memo(function(e) {
+  h = (0, a.animated)(i.OgN),
+  m = l.memo(function(e) {
     let {
       themeOverride: t,
       hovered: n,
@@ -68,7 +68,7 @@ let d = [{
         dark: d,
         light: b
       }
-    } = e, u = (0, s.ZP)(), [h, _] = function(e) {
+    } = e, u = (0, s.ZP)(), [m, _] = function(e) {
       let [t, n] = l.useState(!1), [r, a] = l.useState(Math.floor(7 * Math.random())), o = l.useRef(r);
       return l.useEffect(() => {
         o.current = r
@@ -95,7 +95,7 @@ let d = [{
         friction: 24
       }
     }), C = a ? _ : 0, x = (0, o.wj)(null != t ? t : u) ? c.dark[C] : c.light[C];
-    return !n && a ? (0, r.jsx)(m, {}) : a && h ? (0, r.jsx)(g, {
+    return !n && a ? (0, r.jsx)(h, {}) : a && m ? (0, r.jsx)(g, {
       isDark: (0, o.wj)(u),
       style: v
     }) : (0, r.jsx)(f, {

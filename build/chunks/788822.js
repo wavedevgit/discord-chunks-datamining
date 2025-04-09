@@ -17,8 +17,8 @@ let b = e => {
   let p, {
     category: f,
     subblock: g,
-    badgeText: m,
-    handleTransition: h
+    badgeText: h,
+    handleTransition: m
   } = e;
   null != g && (p = null == (t = i.Z.getCategoryByStoreListingId(null == g ? void 0 : g.categoryStoreListingId)) ? void 0 : t.skuId);
   let _ = null != (n = null != p ? p : null == f ? void 0 : f.skuId) ? n : "",
@@ -39,10 +39,10 @@ let b = e => {
       style: {
         backgroundImage: "url(".concat(C, ")")
       },
-      onClick: () => h("shop marketing tile", _),
-      children: [null != m && (0, r.jsx)(o.IGR, {
+      onClick: () => m("shop marketing tile", _),
+      children: [null != h && (0, r.jsx)(o.IGR, {
         disableColor: !0,
-        text: m,
+        text: h,
         className: d.featuredBlockBadge
       }), (null == g ? void 0 : g.bodyText) != null && (0, r.jsx)(o.X6q, {
         lineClamp: 4,

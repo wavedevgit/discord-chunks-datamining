@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(474936),
   f = n(231338),
   g = n(388032),
-  m = n(846165);
-let h = {
+  h = n(846165);
+let m = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -71,10 +71,10 @@ let h = {
       onSuccess: v,
       tooltipDelay: C,
       isGiftEasterEggEnabled: x,
-      color: y = a.Ttl.BRAND
+      color: O = a.Ttl.BRAND
     } = e, {
-      analyticsLocations: O
-    } = (0, i.ZP)(), j = l.useRef(null), k = (0, o.Z)(j), S = (0, d.hv)("CollectiblesShopGiftButton");
+      analyticsLocations: j
+    } = (0, i.ZP)(), y = l.useRef(null), k = (0, o.Z)(y), S = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
       text: g.NW.string(g.t["JCFN//"]),
       delay: C,
@@ -98,12 +98,12 @@ let h = {
           }
           return e
         }({}, e), o = o = {
-          buttonRef: j,
-          className: m.giftButton,
-          color: y,
+          buttonRef: y,
+          className: h.giftButton,
+          color: O,
           look: a.zxk.Looks.FILLED,
           size: a.PhG.ICON,
-          innerClassName: m.giftButtonInner,
+          innerClassName: h.giftButtonInner,
           "aria-label": g.NW.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
@@ -113,7 +113,7 @@ let h = {
               }),
               isGift: !0,
               giftingOrigin: p.Wt.SHOP_PAGE,
-              analyticsLocations: O,
+              analyticsLocations: j,
               returnRef: _,
               variantsReturnStyle: S,
               onClose: null != v ? e => {
@@ -125,7 +125,7 @@ let h = {
             hovered: k,
             isContentDismissed: !0,
             themeOverride: f.BR.DARK,
-            boxColors: h
+            boxColors: m
           }) : (0, r.jsx)(a.OgN, {
             size: "md",
             color: "currentColor"

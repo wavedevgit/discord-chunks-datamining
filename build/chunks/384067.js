@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -16,28 +16,28 @@ var r = n(200651),
   p = n(981631),
   f = n(388032),
   g = n(806734);
-let m = e => {
+let h = e => {
   var t, n, a;
   let {
-    wideBannerBlock: m,
-    handleTransition: h,
+    wideBannerBlock: h,
+    handleTransition: m,
     tab: _
-  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, C = l.useRef(null), x = l.useRef(null), [y, O] = l.useState();
+  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? void 0 : t.skuId, C = l.useRef(null), x = l.useRef(null), [O, j] = l.useState();
   l.useEffect(() => {
     let e = x.current;
     if (null == e) return;
     let t = () => {
-      e.naturalWidth > 0 && e.naturalHeight > 0 && O(1080 * (e.naturalHeight / e.naturalWidth))
+      e.naturalWidth > 0 && e.naturalHeight > 0 && j(1080 * (e.naturalHeight / e.naturalWidth))
     };
     return e.complete ? t() : e.onload = t, () => {
       e.onload = null
     }
   }, []);
-  let j = null != v ? v : "",
+  let y = null != v ? v : "",
     {
       handleCardVisibilityChange: k
-    } = (0, d.E)(j, "home", "marketing wide banner"),
-    S = m.bannerUrl;
+    } = (0, d.E)(y, "home", "marketing wide banner"),
+    S = h.bannerUrl;
   return null == S ? null : (0, r.jsx)(i.$, {
     innerRef: C,
     onChange: k,
@@ -50,10 +50,10 @@ let m = e => {
         children: (0, r.jsx)("img", {
           ref: x,
           src: S,
-          alt: m.title,
+          alt: h.title,
           style: {
             width: "100%",
-            height: null != y ? "".concat(y, "px") : "auto",
+            height: null != O ? "".concat(O, "px") : "auto",
             objectFit: "cover",
             objectPosition: "left center",
             display: "block"
@@ -62,31 +62,31 @@ let m = e => {
       }), (0, r.jsx)("div", {
         className: g.wideBannerContentContainer,
         style: {
-          maxHeight: null != y ? "".concat(y, "px") : "auto"
+          maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: g.wideBannerTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             style: {
-              color: null != (n = m.bannerTextColor) ? n : "var(--text-normal)"
+              color: null != (n = h.bannerTextColor) ? n : "var(--text-normal)"
             },
             variant: _ === b.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
-            children: m.title
+            children: h.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (a = m.bannerTextColor) ? a : "var(--text-normal)"
+              color: null != (a = h.bannerTextColor) ? a : "var(--text-normal)"
             },
             lineClamp: 2,
             variant: _ === b.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: _ === b.AW.ORBS ? f.NW.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : m.body
+            }) : h.body
           })]
         })
-      }), !0 !== m.disableCta && (0, r.jsx)(s.zxk, {
+      }), !0 !== h.disableCta && (0, r.jsx)(s.zxk, {
         className: g.wideBannerBlockButton,
         color: s.Ttl.PRIMARY,
-        onClick: () => h("shop wide banner", j),
+        onClick: () => m("shop wide banner", y),
         children: f.NW.string(f.t.jVcuVV)
       })]
     })

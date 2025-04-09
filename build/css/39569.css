@@ -1,6 +1,6 @@
 /**
   Module ID: 39569
-  Original File Name: 6a3aaab5d7e6e1d8
+  Original File Name: 08e48485c61be24e
 **/
 .partialOwnStateContainer__0d2da {
     display: flex;
@@ -285,10 +285,6 @@
     box-shadow: 0 0 15px 1px var(--primary-700)
 }
 
-.mysteryShopCard_c3d04b {
-    box-shadow: -4px -4px 25px 0 rgba(220,48,48,.3),4px 4px 25px 0 rgba(99,5,160,.3)
-}
-
 .shopCardAnimation_c3d04b {
     top: 0;
     transition: top 1s, box-shadow .5s
@@ -303,11 +299,6 @@
     height: 252px;
     display: flex;
     align-items: center
-}
-
-.mysteryAvatarContainer_c3d04b {
-    background: linear-gradient(180deg,rgba(19,19,19,0) 60%,#6305a0 200%),url(/assets/96c53621b9c66b0a.jpg);
-    justify-content: center
 }
 
 @keyframes fadeIn_c3d04b {
@@ -768,4 +759,4 @@
     background-clip: padding-box
 }
 
-/*# sourceMappingURL=6a3aaab5d7e6e1d8.css.map*/
+/*# sourceMappingURL=08e48485c61be24e.css.map*/
