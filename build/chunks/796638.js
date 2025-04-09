@@ -16,9 +16,9 @@ var r = n(200651),
   f = n(921500);
 let m = 112,
   p = 16 / 9 * 112 + 8,
-  g = 10 * s.Z.Millis.SECOND;
+  E = 10 * s.Z.Millis.SECOND;
 
-function E(e) {
+function g(e) {
   var t;
   let n = o.default.getId();
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? void 0 : t.selfVideo)
@@ -44,14 +44,14 @@ function h(e, t) {
   l.useEffect(() => {
     let e = setTimeout(() => {
       v(Date.now())
-    }, g);
+    }, E);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let b = l.useRef({}),
+  let S = l.useRef({}),
     {
-      visibleParticipants: S,
+      visibleParticipants: b,
       participantTileWidth: y
     } = l.useMemo(() => {
       let n = Date.now(),
@@ -68,45 +68,45 @@ function h(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < g ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < E ? r = "\x04" : (null == (n = e.voiceState) ? void 0 : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
         [m, p] = (0, i.partition)(l, d.Io),
-        h = m.findIndex(E),
+        h = m.findIndex(g),
         v = null; - 1 !== h && (v = m[h], m.splice(h, 1));
-      let S = null == v || f ? e : e - r - s,
-        y = Math.max(0, Math.min(Math.floor((S - s) / (o + s)), c, t.length)),
-        O = Math.min((S - s) / y - s, r),
-        Z = Math.max(0, y - p.length),
-        I = p.slice(0, y),
-        j = m.slice(0, Z),
-        x = Array(Z);
-      if (Z > 0) {
+      let b = null == v || f ? e : e - r - s,
+        y = Math.max(0, Math.min(Math.floor((b - s) / (o + s)), c, t.length)),
+        O = Math.min((b - s) / y - s, r),
+        I = Math.max(0, y - p.length),
+        _ = p.slice(0, y),
+        Z = m.slice(0, I),
+        j = Array(I);
+      if (I > 0) {
         let e = [];
-        for (let t of j) {
-          let n = b.current[t.id];
-          null != n && n < Z ? x[n] = t : e.push(t)
+        for (let t of Z) {
+          let n = S.current[t.id];
+          null != n && n < I ? j[n] = t : e.push(t)
         }
-        for (let t = 0; t < x.length; t++) {
-          if (null != x[t]) continue;
+        for (let t = 0; t < j.length; t++) {
+          if (null != j[t]) continue;
           let n = e.shift();
           if (null == n) break;
-          x[t] = n
+          j[t] = n
         }
       }
-      let N = x.filter(u.lm);
-      b.current = (0, i.keyBy)((0, i.range)(N.length), e => N[e].id);
-      let _ = [...I, ...N];
-      return null != v && (f && _.length >= y ? _[Math.max(0, _.length - 1)] = v : _.push(v)), {
-        visibleParticipants: _,
+      let N = j.filter(u.lm);
+      S.current = (0, i.keyBy)((0, i.range)(N.length), e => N[e].id);
+      let x = [..._, ...N];
+      return null != v && (f && x.length >= y ? x[Math.max(0, x.length - 1)] = v : x.push(v)), {
+        visibleParticipants: x,
         participantTileWidth: O
       }
     }, [e, t, h, m, f, c, s, o, r]);
   return {
-    visibleParticipants: S,
+    visibleParticipants: b,
     participantTileWidth: y
   }
 }
@@ -123,12 +123,12 @@ function v(e) {
     inCall: u,
     popoutWindow: d,
     paused: m = !1
-  } = e, g = null != d;
+  } = e, E = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
       if (null == e) return null;
-      let t = E(e);
+      let t = g(e);
       return (0, r.jsx)("div", {
         className: f.tileSizer,
         style: t ? {
@@ -146,7 +146,7 @@ function v(e) {
           width: t ? p : n,
           inCall: u,
           paused: m,
-          inPopout: g
+          inPopout: E
         })
       }, e.id)
     })

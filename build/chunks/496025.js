@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => N
+  Z: () => O
 }), n(388685), n(35282);
 var r = n(200651),
   a = n(192379),
@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(594174),
   b = n(55589),
   f = n(630388),
-  g = n(98357),
-  _ = n(432877),
+  _ = n(98357),
+  g = n(432877),
   v = n(246992),
   j = n(750540),
   y = n(616257);
@@ -29,7 +29,7 @@ function C() {
     [n, l] = a.useState(t.length > 0 ? t[0].channelId : void 0),
     {
       selectedChannel: i,
-      options: g
+      options: _
     } = (0, s.cj)([x.Z, p.default, h.Z], () => ({
       selectedChannel: x.Z.getChannel(n),
       options: t.map(e => {
@@ -40,7 +40,7 @@ function C() {
         }
       })
     })),
-    _ = a.useCallback(() => {
+    g = a.useCallback(() => {
       var e;
       if (null == i || !i.isPrivate()) return;
       let t = (0, f.x9)(null != (e = i.recipientFlags) ? e : 0, o.V.DISMISSED_IN_GAME_MESSAGE_NUX);
@@ -55,7 +55,7 @@ function C() {
       className: j.inGameNuxContainer,
       children: [(0, r.jsx)(c.VcW, {
         wrapperClassName: j.search,
-        options: g,
+        options: _,
         placeholder: "Select DM",
         value: n,
         onChange: l,
@@ -71,7 +71,7 @@ function C() {
         popoutLayerContext: v.O$
       }), (0, r.jsx)(c.zxk, {
         size: c.zxk.Sizes.SMALL,
-        onClick: _,
+        onClick: g,
         disabled: null == n,
         children: y ? "Clear NUX Flag" : "Set NUX Flag"
       })]
@@ -79,14 +79,14 @@ function C() {
   })
 }
 
-function N() {
-  let e = _.ZP.allByCategory(_.zU.MESSAGING).map(e => {
+function O() {
+  let e = g.ZP.allByCategory(g.zU.MESSAGING).map(e => {
     let [t, n, {
       label: a
     }] = e;
     return (0, r.jsx)(c.j7V, {
       value: n,
-      onChange: e => (0, g.Z)(t, e),
+      onChange: e => (0, _.Z)(t, e),
       hideBorder: !0,
       className: j.switch,
       children: a

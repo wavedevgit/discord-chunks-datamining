@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => R
 }), n(35282), n(388685), n(49124), n(781311);
 var r = n(200651),
   a = n(192379),
@@ -17,21 +17,21 @@ var r = n(200651),
   p = n(4912),
   b = n(572004),
   f = n(55935),
-  g = n(428530),
-  _ = n(257785),
+  _ = n(428530),
+  g = n(257785),
   v = n(484036),
   j = n(681619),
   y = n(621060),
   C = n(981631),
-  N = n(248520),
+  O = n(248520),
   S = n(616257);
 
-function T(e) {
+function N(e) {
   return parseFloat(e.toFixed(3))
 }
-let O = [{
+let T = [{
   key: "store",
-  cellClassName: N.actionColumn,
+  cellClassName: O.actionColumn,
   render(e) {
     let {
       trace: t
@@ -40,12 +40,12 @@ let O = [{
   }
 }, {
   key: "time",
-  cellClassName: N.totalTimeColumn,
+  cellClassName: O.totalTimeColumn,
   render(e) {
     let {
       trace: t
     } = e;
-    return "".concat(T(t.time), " ms")
+    return "".concat(N(t.time), " ms")
   }
 }];
 
@@ -58,7 +58,7 @@ function E(e) {
   })), [t]);
   return (0, r.jsx)(d.zJl, {
     children: (0, r.jsx)(j.Z, {
-      columns: O,
+      columns: T,
       data: n
     })
   })
@@ -73,22 +73,22 @@ let k = [{
       actionLog: n
     } = e, a = c()(n.createdAt);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(_.E, {
-        className: N.actionProperties,
-        children: [(0, r.jsx)(_.Z9, {
+      children: [(0, r.jsxs)(g.E, {
+        className: O.actionProperties,
+        children: [(0, r.jsx)(g.Z9, {
           name: "Created at",
           children: (0, r.jsx)("time", {
             dateTime: null == (t = n.createdAt) ? void 0 : t.toISOString(),
             title: (0, f.vc)(a, "LLLL"),
             children: (0, f.Y4)(a)
           })
-        }), (0, r.jsxs)(_.Z9, {
+        }), (0, r.jsxs)(g.Z9, {
           name: "Total Time",
-          children: [T(n.totalTime), " ms"]
+          children: [N(n.totalTime), " ms"]
         })]
       }), (0, r.jsx)(d.zJl, {
-        className: N.inspectorContainer,
-        children: (0, r.jsx)(g.Z, {
+        className: O.inspectorContainer,
+        children: (0, r.jsx)(_.Z, {
           data: n.action
         })
       })]
@@ -108,7 +108,7 @@ let k = [{
   }
 }];
 
-function w(e) {
+function P(e) {
   let {
     actionLog: t,
     initialHeight: n
@@ -116,7 +116,7 @@ function w(e) {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
-        className: N.errorIcon
+        className: O.errorIcon
       }), "Error"]
     }),
     group: y.v0.NONE,
@@ -126,7 +126,7 @@ function w(e) {
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: i()(N.errorToolbar, S.toolbar),
+          className: i()(O.errorToolbar, S.toolbar),
           children: (0, r.jsx)("div", {
             className: S.toolbarGroup,
             children: (0, r.jsx)(d.zxk, {
@@ -137,8 +137,8 @@ function w(e) {
             })
           })
         }), (0, r.jsx)(d.zJl, {
-          className: N.inspectorContainer,
-          children: (0, r.jsx)(g.Z, {
+          className: O.inspectorContainer,
+          children: (0, r.jsx)(_.Z, {
             data: t.error
           })
         })]
@@ -151,11 +151,11 @@ function w(e) {
     tabs: l
   }, [l]);
   return (0, r.jsxs)(v.Z, {
-    className: N.subPanel,
+    className: O.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, r.jsx)(o, {}), (0, r.jsxs)(m.ZP, {
-      className: i()(S.headerBar, N.subPanelHeaderBar),
+      className: i()(S.headerBar, O.subPanelHeaderBar),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: d.xVZ,
         tooltip: t.name
@@ -183,27 +183,27 @@ function w(e) {
     })]
   })
 }
-let P = [{
+let w = [{
     key: "action",
-    cellClassName: N.actionColumn,
+    cellClassName: O.actionColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
       return (0, r.jsxs)(r.Fragment, {
         children: [t.error && (0, r.jsx)(p.Z, {
-          className: N.errorIcon
+          className: O.errorIcon
         }), t.name]
       })
     }
   }, {
     key: "total time",
-    cellClassName: N.totalTimeColumn,
+    cellClassName: O.totalTimeColumn,
     render(e) {
       let {
         actionLog: t
       } = e;
-      return "".concat(T(t.totalTime), " ms")
+      return "".concat(N(t.totalTime), " ms")
     }
   }],
   I = {
@@ -217,7 +217,7 @@ let P = [{
     throttleMs: 100
   };
 
-function Z() {
+function R() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
     l = function(e) {
@@ -237,7 +237,7 @@ function Z() {
     [c, m] = a.useState(s),
     [x, p] = a.useState(s),
     [b, f] = a.useState(!1),
-    [g, _] = a.useState(),
+    [_, g] = a.useState(),
     v = a.useCallback(e => {
       p(e)
     }, []);
@@ -246,33 +246,33 @@ function Z() {
       m(s), f(e)
     }, [s]),
     C = t.trim().length > 0,
-    T = a.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
+    N = a.useMemo(() => C ? x : b ? c : s, [s, x, C, b, c]);
   return (0, r.jsxs)("div", {
     ref: e,
-    className: i()(S.panel, N.panel),
+    className: i()(S.panel, O.panel),
     children: [(0, r.jsxs)("div", {
-      className: N.toolbar,
+      className: O.toolbar,
       children: [(0, r.jsx)("div", {
         title: "Toggles the flow of Actions",
-        className: N.pausedEvents,
+        className: O.pausedEvents,
         children: (0, r.jsx)(d.rsf, {
           checked: !b,
           onChange: e => y(!e)
         })
       }), (0, r.jsx)(d.E1j, {
-        className: N.searchBar,
+        className: O.searchBar,
         query: t,
         onChange: n,
         onClear: () => n(""),
         placeholder: "Search by action name"
       })]
     }), (0, r.jsx)(j.Z, {
-      columns: P,
-      data: T,
-      selectedRowKey: null == g ? void 0 : g.id.toString(),
-      onClickRow: e => _(e.actionLog)
-    }), null != g && (0, r.jsx)(w, {
-      actionLog: g,
+      columns: w,
+      data: N,
+      selectedRowKey: null == _ ? void 0 : _.id.toString(),
+      onClickRow: e => g(e.actionLog)
+    }), null != _ && (0, r.jsx)(P, {
+      actionLog: _,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]
   })

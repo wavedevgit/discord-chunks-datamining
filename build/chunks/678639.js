@@ -37,7 +37,7 @@ function f(e) {
     })
   })
 }
-let g = [{
+let _ = [{
     key: "name",
     cellClassName: p.__invalid_eventColumn,
     render(e) {
@@ -47,7 +47,7 @@ let g = [{
       return t.getName()
     }
   }],
-  _ = [{
+  g = [{
     id: "local",
     name: "Local Variables",
     group: x.v0.NONE,
@@ -88,7 +88,7 @@ function v(e) {
     TabBar: a,
     renderSelectedTab: l
   } = (0, x.ZP)({
-    tabs: _
+    tabs: g
   }, []);
   return (0, r.jsxs)(u.Z, {
     className: p.subPanel,
@@ -138,7 +138,7 @@ function j() {
         "aria-label": "Search stores"
       })
     }), (0, r.jsx)(m.Z, {
-      columns: g,
+      columns: _,
       data: c,
       selectedRowKey: d,
       onClickRow: e => u(e.key)

@@ -19,7 +19,7 @@ function d(e) {
     stream: f,
     focused: m,
     canvas: p
-  } = e, g = r.useRef(!1), E = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), h = (0, s.Z)((0, u.Z)(t.id, n, d), f), v = (0, s.Z)((0, c.Z)(t.id, n, d), f), b = r.useCallback((e, t, n) => {
+  } = e, E = r.useRef(!1), g = (0, l.e7)([i.Z], () => i.Z.getDrawMode()), h = (0, s.Z)((0, u.Z)(t.id, n, d), f), v = (0, s.Z)((0, c.Z)(t.id, n, d), f), S = r.useCallback((e, t, n) => {
     if (null == p) return;
     let {
       x: r,
@@ -31,26 +31,26 @@ function d(e) {
       case a.W.EMOJI_HOSE:
         return v[e](t, r, l)
     }
-  }, [p, h, v]), S = r.useCallback(e => {
-    m && null != E && (e.stopPropagation(), g.current = !0, b("handleMouseDown", E, e))
-  }, [b, E, m]), y = r.useCallback(e => {
-    m && null != E && (e.stopPropagation(), g.current && b("handleMouseMove", E, e))
-  }, [b, E, m]), O = r.useCallback(e => {
-    m && null != E && (e.stopPropagation(), g.current = !1, b("handleMouseUp", E, e))
-  }, [b, E, m]), Z = r.useCallback(e => {
-    g.current && null != E && b("handleMouseEnter", E, e)
-  }, [b, E]);
+  }, [p, h, v]), b = r.useCallback(e => {
+    m && null != g && (e.stopPropagation(), E.current = !0, S("handleMouseDown", g, e))
+  }, [S, g, m]), y = r.useCallback(e => {
+    m && null != g && (e.stopPropagation(), E.current && S("handleMouseMove", g, e))
+  }, [S, g, m]), O = r.useCallback(e => {
+    m && null != g && (e.stopPropagation(), E.current = !1, S("handleMouseUp", g, e))
+  }, [S, g, m]), I = r.useCallback(e => {
+    E.current && null != g && S("handleMouseEnter", g, e)
+  }, [S, g]);
   return r.useEffect(() => {
     let e = e => {
-      null != E && (g.current = !1, b("handleMouseUp", E, e))
+      null != g && (E.current = !1, S("handleMouseUp", g, e))
     };
     return window.addEventListener("mouseup", e), () => window.removeEventListener("mouseup", e)
-  }, [b, E]), {
+  }, [S, g]), {
     handleClick: r.useCallback(e => {
-      m && null != E && e.stopPropagation()
-    }, [E, m]),
-    handleMouseDown: S,
-    handleMouseEnter: Z,
+      m && null != g && e.stopPropagation()
+    }, [g, m]),
+    handleMouseDown: b,
+    handleMouseEnter: I,
     handleMouseMove: y,
     handleMouseUp: O
   }

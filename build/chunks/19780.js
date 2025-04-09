@@ -69,7 +69,8 @@ function N(e, t) {
       userId: n,
       streamId: r,
       rtcServerId: i,
-      context: m.Yn.DEFAULT
+      context: m.Yn.DEFAULT,
+      mediaEngineConnectionId: o.getMediaEngineConnectionId()
     }))
   }), o.on(l.z.Ping, (e, t) => {
     s.Z.wait(() => s.Z.dispatch({

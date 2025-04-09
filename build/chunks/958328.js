@@ -18,9 +18,9 @@ var a = n(120356),
   p = n(233608),
   b = n(71080),
   f = n(390094),
-  g = n(616257);
+  _ = n(616257);
 
-function _(e) {
+function g(e) {
   let {
     title: t,
     can: n
@@ -51,29 +51,29 @@ function v() {
     j = (0, o.e7)([m.Z], () => m.Z.computePermissions(a)),
     y = (0, c.ZP)(n, !0),
     C = null != n ? (0, b.IG)(n, !1, !0) : null,
-    N = null != a ? p.Z.getGuildPermissionSpecMap(a) : null,
+    O = null != a ? p.Z.getGuildPermissionSpecMap(a) : null,
     S = Object.values(null != C ? C : {}).map(e => {
       let {
         title: t,
         flag: n
       } = e, a = i.e$(v, n);
-      return (0, r.jsx)(_, {
+      return (0, r.jsx)(g, {
         title: t,
         can: a
       }, t)
     }),
-    T = Object.values(null != N ? N : {}).map(e => {
+    N = Object.values(null != O ? O : {}).map(e => {
       let {
         title: t,
         flag: n
       } = e, a = i.e$(j, n);
-      return (0, r.jsx)(_, {
+      return (0, r.jsx)(g, {
         title: t,
         can: a
       }, t)
     });
   return (0, r.jsx)("div", {
-    className: l()(g.panel, f.panel),
+    className: l()(_.panel, f.panel),
     children: (0, r.jsxs)("div", {
       className: f.panelInner,
       children: [(0, r.jsxs)("section", {
@@ -87,7 +87,7 @@ function v() {
         children: [(0, r.jsx)(s.X6q, {
           variant: "heading-md/semibold",
           children: null != a ? "Permissions in ".concat(a.name) : "No guild selected"
-        }), T]
+        }), N]
       })]
     })
   })

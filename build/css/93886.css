@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 673882b2a4430dc5
+  Original File Name: 4550e11b2bd128eb
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1104,6 +1104,10 @@
 
 .container__9b0bb {
     padding: var(--spacing-24)
+}
+
+.section__9b0bb {
+    padding: var(--spacing-24) 0
 }
 
 .switch__9d40d {
@@ -5136,4 +5140,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=673882b2a4430dc5.css.map*/
+/*# sourceMappingURL=4550e11b2bd128eb.css.map*/

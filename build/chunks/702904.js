@@ -133,12 +133,12 @@ function b(e) {
         marginRight: 5,
         height: 25
       },
-      src: g(t.country)
+      src: _(t.country)
     })]
   })
 }
 let f = ["AN", "MI", "TP"],
-  g = e => {
+  _ = e => {
     if (null == e) return "";
     if (f.includes(e)) return "https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f30e.svg";
     let t = e.toUpperCase().split("").map(e => (127397 + e.charCodeAt(0)).toString(16)).join("-");

@@ -94,7 +94,7 @@ let p = () => {
       })]
     })
   },
-  g = e => {
+  _ = e => {
     let {
       handleClearIgnoredFiles: t
     } = e, {
@@ -140,7 +140,7 @@ let p = () => {
       })]
     })
   },
-  _ = e => {
+  g = e => {
     let {
       ignoredFiles: t,
       handleClearIgnoredFiles: n
@@ -214,9 +214,9 @@ let p = () => {
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
-      }), (0, r.jsx)(f, {}), (0, r.jsx)(g, {
+      }), (0, r.jsx)(f, {}), (0, r.jsx)(_, {
         handleClearIgnoredFiles: j
-      }), (0, r.jsx)(_, {
+      }), (0, r.jsx)(g, {
         ignoredFiles: e,
         handleClearIgnoredFiles: j
       }), (0, r.jsx)(l.LZC, {

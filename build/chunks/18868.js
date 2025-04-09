@@ -53,7 +53,7 @@ let m = () => {
       x(e), h(!0), (0, o.Mr3)(c.A)
     }, []), f = a.useCallback(e => {
       x(e), h(!1)
-    }, []), g = a.useCallback(async e => {
+    }, []), _ = a.useCallback(async e => {
       x(e), h(!1);
       let t = e.dataTransfer;
       if (null == t) return void m();
@@ -68,7 +68,7 @@ let m = () => {
       className: i()(t, u.uploadArea),
       onDragEnter: b,
       onDragLeave: f,
-      onDrop: g,
+      onDrop: _,
       children: (0, r.jsx)("div", {
         className: i()(u.uploadModal, {
           [u.droppable]: l
