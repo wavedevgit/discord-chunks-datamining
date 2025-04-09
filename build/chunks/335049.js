@@ -21,8 +21,8 @@ var r = n(200651),
   j = n(271383),
   O = n(430824),
   N = n(246946),
-  v = n(594174),
-  y = n(51144),
+  y = n(594174),
+  v = n(51144),
   _ = n(981631),
   C = n(388032),
   I = n(555781);
@@ -151,7 +151,7 @@ function w(e) {
       className: I.tag,
       variant: "text-sm/normal",
       children: ["(", f, ")"]
-    }) : null, l ? (0, r.jsx)(k, {
+    }) : null, l ? (0, r.jsx)(W, {
       tooltipText: a
     }) : null]
   })
@@ -195,7 +195,7 @@ function T(e) {
       color: "header-primary",
       variant: "text-md/normal",
       children: b.name
-    }), s ? (0, r.jsx)(k, {
+    }), s ? (0, r.jsx)(W, {
       tooltipText: m
     }) : null]
   })
@@ -208,7 +208,7 @@ function Z(e) {
     isLocked: i,
     lockTooltipText: l,
     openEntryContextMenu: o
-  } = e, a = (0, d.e7)([v.default], () => v.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
+  } = e, a = (0, d.e7)([y.default], () => y.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? void 0 : e.nick
   }, [t.id, n]), c = (0, d.e7)([N.Z], () => N.Z.hidePersonalInformation);
@@ -228,14 +228,14 @@ function Z(e) {
     }), c ? null : (0, r.jsx)(u.Text, {
       className: I.tag,
       variant: "text-sm/normal",
-      children: y.ZP.getUserTag(a)
-    }), i ? (0, r.jsx)(k, {
+      children: v.ZP.getUserTag(a)
+    }), i ? (0, r.jsx)(W, {
       tooltipText: l
     }) : null]
   })
 }
 
-function k(e) {
+function W(e) {
   let {
     tooltipText: t
   } = e;

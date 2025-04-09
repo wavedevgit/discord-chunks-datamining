@@ -22,8 +22,8 @@ var l = n(200651),
   f = n(572004),
   j = n(971130),
   S = n(366980),
-  b = n(76234),
-  E = n(388032),
+  E = n(76234),
+  b = n(388032),
   T = n(942558);
 
 function _(e) {
@@ -99,7 +99,7 @@ function y(e) {
       }), (0, l.jsx)(h.Text, {
         variant: "text-xs/medium",
         color: "header-muted",
-        children: E.NW.format(E.t["LC+S+v"], {
+        children: b.NW.format(b.t["LC+S+v"], {
           membersOnline: r.onlineCount
         })
       })]
@@ -110,7 +110,7 @@ function y(e) {
       }), (0, l.jsx)(h.Text, {
         variant: "text-xs/medium",
         color: "header-muted",
-        children: E.NW.format(E.t.zRl6XV, {
+        children: b.NW.format(b.t.zRl6XV, {
           count: r.memberCount
         })
       })]
@@ -156,9 +156,7 @@ function P(e) {
   }) : null != o ? (t = h.P3F, n = {
     onClick: o
   }) : (t = "div", n = {}), (0, l.jsx)(t, O(_({
-    className: s()(T.advancedOption, {
-      [T.clickableAdvancedOption]: !!o
-    })
+    className: T.advancedOption
   }, n), {
     children: (0, l.jsx)("div", {
       className: s()(i, T.advancedOptionInner),
@@ -219,7 +217,7 @@ function Z(e) {
     })
   }, [A]), $ = i.useCallback(e => {
     var t;
-    let i = null == (t = e.target) ? void 0 : t.getBoundingClientRect(),
+    let i = null == (t = e.currentTarget) ? void 0 : t.getBoundingClientRect(),
       {
         left: r = 0,
         width: s = 0
@@ -234,18 +232,18 @@ function Z(e) {
         onChangeMaxUses: X
       }))
     })
-  }, [w, K, X]), ee = b.H.find(e => {
+  }, [w, K, X]), ee = E.H.find(e => {
     let {
       value: t
     } = e;
     return t === w.max_age
-  }), et = b.p.find(e => {
+  }), et = E.p.find(e => {
     let {
       value: t
     } = e;
     return t === w.max_uses
   }), en = null;
-  return null == ee || null == et ? en = null : ee.value === j.ZP.INVITE_OPTIONS_FOREVER.value && et.value === j.ZP.INVITE_OPTIONS_UNLIMITED.value ? en = E.NW.string(E.t["5u4A6e"]) : ee.value !== j.ZP.INVITE_OPTIONS_FOREVER.value && et.value !== j.ZP.INVITE_OPTIONS_UNLIMITED.value ? en = E.NW.formatToPlainString(E.t["Z5Vt5+"], {
+  return null == ee || null == et ? en = null : ee.value === j.ZP.INVITE_OPTIONS_FOREVER.value && et.value === j.ZP.INVITE_OPTIONS_UNLIMITED.value ? en = b.NW.string(b.t["5u4A6e"]) : ee.value !== j.ZP.INVITE_OPTIONS_FOREVER.value && et.value !== j.ZP.INVITE_OPTIONS_UNLIMITED.value ? en = b.NW.formatToPlainString(b.t["Z5Vt5+"], {
     maxAge: ee.label,
     maxUses: et.label
   }) : et.value === j.ZP.INVITE_OPTIONS_UNLIMITED.value && ee.value !== j.ZP.INVITE_OPTIONS_FOREVER.value ? en = ee.label : et.value !== j.ZP.INVITE_OPTIONS_UNLIMITED.value && ee.value === j.ZP.INVITE_OPTIONS_FOREVER.value && (en = et.label), (0, l.jsxs)("div", {
@@ -266,7 +264,7 @@ function Z(e) {
         isStreamerMode: L
       }), (0, l.jsx)(h.ua7, {
         position: "top",
-        text: E.NW.string(E.t["4QuV7O"]),
+        text: b.NW.string(b.t["4QuV7O"]),
         children: e => (0, l.jsx)(h.P3F, O(_({
           className: s()(T.settingsButton, {
             [T.settingsOpen]: U
@@ -289,10 +287,10 @@ function Z(e) {
           className: T.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
             variant: "heading-md/medium",
-            children: E.NW.string(E.t.YlT5MT)
+            children: b.NW.string(b.t.YlT5MT)
           }), (0, l.jsx)(h.ua7, {
             position: "top",
-            text: E.NW.string(E.t.efLzgY),
+            text: b.NW.string(b.t.efLzgY),
             children: e => (0, l.jsx)(h.idN, O(_({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
@@ -315,10 +313,10 @@ function Z(e) {
           className: T.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
             variant: "heading-md/medium",
-            children: E.NW.string(E.t.EPIOl5)
+            children: b.NW.string(b.t.EPIOl5)
           }), (0, l.jsx)(h.ua7, {
             position: "top",
-            text: E.NW.string(E.t["jvd/LC"]),
+            text: b.NW.string(b.t["jvd/LC"]),
             children: e => (0, l.jsx)(h.idN, O(_({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
@@ -335,10 +333,10 @@ function Z(e) {
           className: T.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
             variant: "heading-md/medium",
-            children: E.NW.string(E.t.NKqlpq)
+            children: b.NW.string(b.t.NKqlpq)
           }), (0, l.jsx)(h.ua7, {
             position: "top",
-            text: E.NW.string(E.t.pBOevb),
+            text: b.NW.string(b.t.pBOevb),
             children: e => (0, l.jsx)(h.idN, O(_({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
@@ -355,10 +353,10 @@ function Z(e) {
           className: T.advancedOptionContent,
           children: [(0, l.jsx)(h.X6q, {
             variant: "heading-md/medium",
-            children: E.NW.string(E.t.UL177u)
+            children: b.NW.string(b.t.UL177u)
           }), (0, l.jsx)(h.ua7, {
             position: "top",
-            text: E.NW.string(E.t.cl1HNT),
+            text: b.NW.string(b.t.cl1HNT),
             children: e => (0, l.jsx)(h.idN, O(_({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
@@ -391,14 +389,14 @@ function Z(e) {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: E.NW.string(E.t["+5kSoa"])
+              children: b.NW.string(b.t["+5kSoa"])
             })]
           }) : (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.xPt, {
               size: "xs",
               color: "currentColor"
             }), (0, l.jsx)("span", {
-              children: E.NW.string(E.t.WqhZsr)
+              children: b.NW.string(b.t.WqhZsr)
             })]
           })
         }))
@@ -408,7 +406,7 @@ function Z(e) {
         onClick: () => p(),
         disabled: Z,
         children: [(0, l.jsx)("span", {
-          children: E.NW.string(E.t.BcAABg)
+          children: b.NW.string(b.t.BcAABg)
         }), (0, l.jsx)(h.Uuj, {
           size: "xs",
           color: "currentColor"

@@ -1,6 +1,6 @@
 /**
   Module ID: 29328
-  Original File Name: af9f944d85568e1a
+  Original File Name: de7cb575a8c42269
 **/
 .icon__2894c {
     display: block;
@@ -165,10 +165,6 @@
     align-items: center;
     padding: 0 var(--space-sm) 0 var(--space-lg);
     cursor: pointer
-}
-
-.clickableAdvancedOption__6be55 * {
-    pointer-events: none
 }
 
 .advancedOptionContent__6be55 {
@@ -596,4 +592,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=af9f944d85568e1a.css.map*/
+/*# sourceMappingURL=de7cb575a8c42269.css.map*/

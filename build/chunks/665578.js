@@ -21,8 +21,8 @@ var r = n(200651),
   j = n(643886),
   O = n(869157),
   N = n(454092),
-  v = n(289465),
-  y = n(981631),
+  y = n(289465),
+  v = n(981631),
   _ = n(689079),
   C = n(388032),
   I = n(190434);
@@ -67,8 +67,8 @@ function P(e) {
     inModal: j,
     editedTargetPermissions: P,
     originalApplicationPermissions: Z,
-    originalCommandPermissions: k,
-    selectedPermissionCount: W
+    originalCommandPermissions: W,
+    selectedPermissionCount: k
   } = e, A = (0, s.e7)([h.Z], () => null == l ? null : h.Z.getCommand(l), [l]), D = (null == A ? void 0 : A.defaultMemberPermissions) != null, R = (0, s.e7)([b.Z, m.ZP, g.Z], () => {
     let e = b.Z.getGuild(x),
       t = m.ZP.getSelfMember(x);
@@ -77,10 +77,10 @@ function P(e) {
       guild: e,
       selfMember: t,
       applicationLevelPermissions: Z,
-      commandLevelPermissions: k,
+      commandLevelPermissions: W,
       defaultMemberPermissions: null == A ? void 0 : A.defaultMemberPermissions
     })
-  }, [x, A, Z, k]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
+  }, [x, A, Z, W]), L = null != l ? l : t, [M, B] = i.useMemo(() => {
     let e = {},
       t = {};
     for (let [n, r] of Object.entries(P)) r.type === d.Kw.CHANNEL ? e[n] = r : t[n] = r;
@@ -145,10 +145,10 @@ function P(e) {
         overwrittenKeys: e,
         search: w,
         searchPlaceholderText: C.NW.string(C.t["TLQo/v"]),
-        selectedPermissionCount: W
+        selectedPermissionCount: k
       }, n))
     })
-  }, [H, M, x, W]), F = i.useCallback(() => {
+  }, [H, M, x, k]), F = i.useCallback(() => {
     let e = Object.keys(B);
     return (0, c.ZDy)(async () => {
       let {
@@ -162,17 +162,17 @@ function P(e) {
         overwrittenKeys: e,
         search: T,
         searchPlaceholderText: C.NW.string(C.t.wAfO5e),
-        selectedPermissionCount: W
+        selectedPermissionCount: k
       }, n))
     })
-  }, [H, x, B, W]), V = i.useCallback(() => (0, c.ZDy)(async () => {
+  }, [H, x, B, k]), V = i.useCallback(() => (0, c.ZDy)(async () => {
     let {
       default: e
     } = await n.e("21897").then(n.bind(n, 303313)), t = A.defaultMemberPermissions;
-    return a.fS(t, u.BO) && (t = y.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, E(S({}, n), {
+    return a.fS(t, u.BO) && (t = v.Plq.ADMINISTRATOR), n => (0, r.jsx)(e, E(S({}, n), {
       defaultMemberPermissions: t
     }))
-  }), [A]), K = W - _._n, q = K >= 0, Y = [{
+  }), [A]), K = k - _._n, q = K >= 0, Y = [{
     buttonClick: F,
     buttonText: C.NW.string(C.t["56jRn5"]),
     noneSelectedText: C.NW.string(C.t.C0rYfn),
@@ -217,7 +217,7 @@ function P(e) {
           children: e.buttonText
         })),
         i = null;
-      return R ? q && (i = C.NW.string(C.t.XTwtW1)) : i = null != l ? C.NW.string(C.t.tybdam) : C.NW.string(C.t.z2hjk5), (0, r.jsx)(v.Z, {
+      return R ? q && (i = C.NW.string(C.t.XTwtW1)) : i = null != l ? C.NW.string(C.t.tybdam) : C.NW.string(C.t.z2hjk5), (0, r.jsx)(y.Z, {
         bar: (0, r.jsx)(c.ua7, {
           tooltipClassName: I.tooltip,
           text: i,

@@ -21,9 +21,9 @@ var r = n(200651),
   j = n(725875),
   O = n(981631),
   N = n(388032),
-  v = n(704526);
+  y = n(704526);
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -63,7 +63,7 @@ function _(e) {
       }
       return i
     }(e, ["application", "guild", "integration"]);
-  return (0, r.jsx)(o.ConfirmModal, (t = y({}, d), n = n = {
+  return (0, r.jsx)(o.ConfirmModal, (t = v({}, d), n = n = {
     header: N.NW.formatToPlainString(N.t["rL9d//"], {
       applicationName: i.name
     }),
@@ -108,8 +108,8 @@ function C(e) {
     application: E,
     integration: P,
     webhooks: w
-  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(O.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(O.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), k = (0, l.e7)([p.Z], () => p.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), W = i.useCallback(() => {
-    S() && (0, o.h7j)(e => (0, r.jsx)(_, y({
+  } = a, [T, Z] = (0, l.Wu)([p.Z], () => [p.Z.can(O.Plq.MANAGE_ROLES, n), null == E.bot || p.Z.canManageUser(O.Plq.MANAGE_GUILD, E.bot.id, n)], [E.bot, n]), W = (0, l.e7)([p.Z], () => p.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), k = i.useCallback(() => {
+    S() && (0, o.h7j)(e => (0, r.jsx)(_, v({
       guild: n,
       application: E,
       integration: P
@@ -131,7 +131,7 @@ function C(e) {
     guild: n,
     applicationIntegration: a
   }) : (0, r.jsx)(o.Zbd, {
-    className: v.emptyCard,
+    className: y.emptyCard,
     editable: !0,
     children: (0, r.jsx)(o.Text, {
       color: "text-muted",
@@ -147,15 +147,15 @@ function C(e) {
       isHeader: !0
     }), (null == E ? void 0 : E.description) != null ? (0, r.jsx)(u.Z, {
       userBio: E.description,
-      className: v.headerDescription
+      className: y.headerDescription
     }) : null, T ? (0, r.jsx)(d.Z, {
       application: E,
       canNavigate: S,
       guildId: n.id
     }) : null, (0, r.jsx)(o.$i$, {
-      className: v.headerDivider
+      className: y.headerDivider
     }), null != E.bot ? (0, r.jsxs)("div", {
-      className: v.section,
+      className: y.section,
       children: [(0, r.jsx)(h.Z, {
         icon: (0, r.jsx)(o.wGt, {
           size: "xs",
@@ -164,7 +164,7 @@ function C(e) {
         title: N.NW.string(N.t.AOdOYm)
       }), D]
     }) : null, (0, r.jsxs)("div", {
-      className: v.section,
+      className: y.section,
       children: [(0, r.jsx)(h.Z, {
         icon: (0, r.jsx)(o.tYf, {
           size: "md",
@@ -178,18 +178,18 @@ function C(e) {
         errors: I,
         canNavigate: S
       }) : (0, r.jsx)(o.Zbd, {
-        className: v.emptyCard,
+        className: y.emptyCard,
         editable: !0,
         children: (0, r.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: k ? N.NW.string(N.t.ahPd2d) : N.NW.string(N.t.axqYMj)
+          children: W ? N.NW.string(N.t.ahPd2d) : N.NW.string(N.t.axqYMj)
         })
       })]
     }), (0, r.jsx)(o.$i$, {
-      className: v.headerDivider
+      className: y.headerDivider
     }), (0, r.jsxs)(s.Z, {
-      className: v.section,
+      className: y.section,
       justify: s.Z.Justify.BETWEEN,
       align: s.Z.Align.CENTER,
       children: [(0, r.jsx)(o.Text, {
@@ -204,7 +204,7 @@ function C(e) {
           color: o.zxk.Colors.RED,
           look: o.zxk.Looks.FILLED,
           disabled: !Z,
-          onClick: W,
+          onClick: k,
           children: N.NW.string(N.t.ebGf4u)
         })
       })]

@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => l
 });
-var o, i = n(200651),
-  r = n(192379),
+var o, r = n(200651),
+  i = n(192379),
   a = n(846519),
   _ = n(481060),
   d = n(572004),
@@ -17,7 +17,7 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class c extends(o = r.PureComponent) {
+class c extends(o = i.PureComponent) {
   componentWillUnmount() {
     this._timeout.stop()
   }
@@ -27,8 +27,8 @@ class c extends(o = r.PureComponent) {
       text: n
     } = this.props, {
       mode: o
-    } = this.state, r = o === _.kO8.Modes.SUCCESS ? s.NW.string(s.t["t5VZ8/"]) : n;
-    return (0, i.jsx)(_.kO8, (e = function(e) {
+    } = this.state, i = o === _.kO8.Modes.SUCCESS ? s.NW.string(s.t["t5VZ8/"]) : n;
+    return (0, r.jsx)(_.kO8, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           o = Object.keys(n);
@@ -42,7 +42,7 @@ class c extends(o = r.PureComponent) {
     }({}, this.props), t = t = {
       onCopy: this.handleCopy,
       mode: o,
-      text: r,
+      text: i,
       supportsCopy: d.wS
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
       var n = Object.keys(e);

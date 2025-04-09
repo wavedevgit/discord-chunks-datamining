@@ -1,6 +1,6 @@
 /**
   Module ID: 47966
-  Original File Name: 3bed1f1fb03ae264
+  Original File Name: e160d5d98c983651
 **/
 .container__1ce5d {
     position: relative
@@ -177,10 +177,6 @@
     align-items: center;
     padding: 0 var(--space-sm) 0 var(--space-lg);
     cursor: pointer
-}
-
-.clickableAdvancedOption__6be55 * {
-    pointer-events: none
 }
 
 .advancedOptionContent__6be55 {
@@ -632,4 +628,4 @@
     cursor: pointer
 }
 
-/*# sourceMappingURL=3bed1f1fb03ae264.css.map*/
+/*# sourceMappingURL=e160d5d98c983651.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: c8229b93c0c63650
+  Original File Name: ddd8d7764ba29f83
 **/
 .imageUploader_e4d0bf {
     text-align: center;
@@ -1481,10 +1481,6 @@
     cursor: pointer
 }
 
-.clickableAdvancedOption__6be55 * {
-    pointer-events: none
-}
-
 .advancedOptionContent__6be55 {
     display: flex;
     align-items: center;
@@ -2041,4 +2037,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=c8229b93c0c63650.css.map*/
+/*# sourceMappingURL=ddd8d7764ba29f83.css.map*/
