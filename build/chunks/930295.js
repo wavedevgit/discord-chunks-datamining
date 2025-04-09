@@ -183,9 +183,9 @@ class T extends(r = o.Component) {
       isLoading: !1,
       resizeKey: 0
     }), b(this, "handlePopoutShow", () => {
-      this.context.windowDispatch.dispatch(E.CkL.POPOUT_SHOW)
+      this.context.windowDispatch.dispatch(E.CkL.POPOUT_SHOW, this.props.popoutKey)
     }), b(this, "handlePopoutHide", () => {
-      this.context.windowDispatch.dispatch(E.CkL.POPOUT_HIDE)
+      this.context.windowDispatch.dispatch(E.CkL.POPOUT_HIDE, this.props.popoutKey)
     }), b(this, "handleSetPopoutRef", e => {
       var t;
       let n = null == e ? void 0 : e.ownerDocument.defaultView;

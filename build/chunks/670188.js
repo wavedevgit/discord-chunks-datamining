@@ -1,21 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => I
+  Z: () => T
 }), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(442837),
   a = n(481060),
   s = n(493773),
-  l = n(594174),
-  c = n(184301),
-  u = n(347475),
-  d = n(228168),
-  f = n(231338),
-  _ = n(744790);
+  l = n(237617),
+  c = n(594174),
+  u = n(122521),
+  d = n(184301),
+  f = n(347475),
+  _ = n(228168),
+  p = n(231338),
+  h = n(744790);
 
-function p(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,20 +26,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      m(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function E(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,15 +50,15 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function b(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t) {
+function y(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -64,100 +66,104 @@ function E(e, t) {
   return i
 }
 
-function b(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let y = (0, a.pxk)(a.EFr.SIZE_80),
-  v = {
-    onMouseDown: f.dG,
-    onClick: f.dG,
-    onKeyDown: f.dG,
+let O = (0, a.pxk)(a.EFr.SIZE_80),
+  I = {
+    onMouseDown: p.dG,
+    onClick: p.dG,
+    onKeyDown: p.dG,
     "aria-controls": void 0,
     "aria-expanded": !1
   },
-  O = {
+  S = {
     isShown: !1,
     position: void 0
   };
 
-function I(e) {
+function T(e) {
   var {
     children: t,
     userId: n,
-    user: f,
-    guildId: p,
-    channelId: m,
-    avatarUrl: b,
-    preload: I,
-    renderPopout: S,
-    onRequestClose: T,
-    onClosePopout: N,
-    shouldShow: A,
-    shouldPreload: C = !0,
-    shouldShowOnHover: R = !1
-  } = e, P = E(e, ["children", "userId", "user", "guildId", "channelId", "avatarUrl", "preload", "renderPopout", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload", "shouldShowOnHover"]);
-  let w = (0, o.e7)([l.default], () => l.default.getCurrentUser()),
-    D = (0, o.e7)([l.default], () => null != f ? f : l.default.getUser(n)),
-    [L, x] = i.useState(!1),
+    user: p,
+    guildId: m,
+    channelId: E,
+    avatarUrl: v,
+    preload: T,
+    renderPopout: N,
+    onRequestClose: A,
+    onClosePopout: C,
+    shouldShow: R,
+    shouldPreload: P = !0,
+    shouldShowOnHover: w = !1
+  } = e, D = y(e, ["children", "userId", "user", "guildId", "channelId", "avatarUrl", "preload", "renderPopout", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload", "shouldShowOnHover"]);
+  let L = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
+    x = (0, o.e7)([c.default], () => null != p ? p : c.default.getUser(n)),
     [M, k] = i.useState(!1),
-    j = i.useRef(!1),
-    U = i.useRef(void 0),
-    G = i.useRef(void 0),
-    B = i.useRef(void 0);
+    [j, U] = i.useState(!1),
+    G = i.useRef(!1),
+    B = i.useRef(void 0),
+    V = i.useRef(void 0),
+    F = i.useRef(void 0),
+    Z = (0, u.Z)(),
+    H = (0, l.Z)(Z);
   if ((0, s.zq)(() => {
-      clearTimeout(U.current), clearTimeout(G.current), clearTimeout(B.current)
-    }), null == D || null == w) return t(v, O);
-  let V = () => null != I ? I() : (0, c.Z)(D.id, null != b ? b : D.getAvatarURL(p, y), {
-      guildId: p,
-      channelId: m
+      clearTimeout(B.current), clearTimeout(V.current), clearTimeout(F.current)
+    }), null == x || null == L) return t(I, S);
+  let W = () => null != T ? T() : (0, d.Z)(x.id, null != v ? v : x.getAvatarURL(m, O), {
+      guildId: m,
+      channelId: E
     }),
-    F = e => M ? (0, r.jsx)(a.xxz, {}) : null != S ? S(e) : (0, r.jsx)(u.Z, g(h({}, P, e), {
-      userId: D.id,
-      user: D,
-      guildId: p,
-      channelId: m,
+    Y = e => j ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, D, e), {
+      userId: x.id,
+      user: x,
+      guildId: m,
+      channelId: E,
       closePopout: () => {
-        e.closePopout(), null == N || N()
+        e.closePopout(), null == C || C()
       }
     }));
-  return R ? (0, r.jsx)("div", {
-    className: _.hoverable,
+  return w ? (0, r.jsx)("div", {
+    className: h.hoverable,
     onMouseEnter: () => {
-      j.current = !0, C && (U.current = setTimeout(async () => {
-        if (j.current) try {
-          k(!0), await V()
+      G.current = !0, P && (B.current = setTimeout(async () => {
+        if (G.current) try {
+          U(!0), await W()
         } finally {
-          k(!1)
+          U(!1)
         }
-      }, d.a6)), G.current = setTimeout(() => {
-        !(0, a.$sL)() && j.current && x(!0)
-      }, d.JX)
+      }, _.a6)), V.current = setTimeout(() => {
+        (0, a.$sL)() || H.current || G.current && k(!0)
+      }, _.JX)
     },
     onMouseLeave: () => {
-      j.current = !1, B.current = setTimeout(() => {
-        j.current || x(!1)
-      }, d.Ig)
+      G.current = !1, F.current = setTimeout(() => {
+        G.current || k(!1)
+      }, _.Ig)
     },
-    children: (0, r.jsx)(a.yRy, g(h({
-      shouldShow: !0 === A || L,
-      preload: !C || M || L ? void 0 : V,
-      renderPopout: F,
+    children: (0, r.jsx)(a.yRy, b(g({
+      popoutKey: _.Tg,
+      shouldShow: !0 === R || M,
+      preload: !P || j || M ? void 0 : W,
+      renderPopout: Y,
       onRequestClose: () => {
-        x(!1), null == T || T()
+        k(!1), null == A || A()
       }
-    }, P), {
+    }, D), {
       children: t
     }))
-  }) : (0, r.jsx)(a.yRy, g(h({
-    shouldShow: A,
-    preload: C ? V : void 0,
-    renderPopout: F,
-    onRequestClose: T
-  }, P), {
+  }) : (0, r.jsx)(a.yRy, b(g({
+    popoutKey: _.Tg,
+    shouldShow: R,
+    preload: P ? W : void 0,
+    renderPopout: Y,
+    onRequestClose: A
+  }, D), {
     children: t
   }))
 }
