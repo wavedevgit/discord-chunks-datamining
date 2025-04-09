@@ -29,7 +29,7 @@ function h(e) {
         user: n
       } = t;
       e.add(n.id)
-    }) : g !== d.Iq.EMBEDDED_APPLICATION && null != f && f.rows.forEach(t => {
+    }) : g === d.Iq.EMBEDDED_APPLICATION && null != f && f.rows.forEach(t => {
       t.type === a.so.MEMBER && e.add(t.userId)
     }), e
   }, [h]);

@@ -85,23 +85,23 @@ function E(e) {
       children: [(0, r.jsxs)("div", {
         className: _.memberCount,
         children: [(0, r.jsx)("div", {
-          className: _.dot
-        }), (0, r.jsx)(a.Text, {
-          variant: "text-sm/normal",
-          color: "text-secondary",
-          children: f.NW.format(f.t.zRl6XV, {
-            count: t.memberCount
-          })
-        })]
-      }), (0, r.jsxs)("div", {
-        className: _.memberCount,
-        children: [(0, r.jsx)("div", {
           className: _.dotOnline
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
           children: f.NW.format(f.t["LC+S+v"], {
             membersOnline: t.onlineCount
+          })
+        })]
+      }), (0, r.jsxs)("div", {
+        className: _.memberCount,
+        children: [(0, r.jsx)("div", {
+          className: _.dot
+        }), (0, r.jsx)(a.Text, {
+          variant: "text-sm/normal",
+          color: "text-secondary",
+          children: f.NW.format(f.t.zRl6XV, {
+            count: t.memberCount
           })
         })]
       })]
