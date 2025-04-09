@@ -1,6 +1,6 @@
 /** Chunk was on 8039 **/
 n.d(t, {
-  i: () => y
+  i: () => v
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,8 +18,9 @@ var r = n(200651),
   m = n(331663),
   b = n(921944),
   _ = n(46140);
+let y = "orb-announcement-modal-key";
 
-function y() {
+function v() {
   let {
     hasLayers: e
   } = (0, l.cj)([h.Z], () => ({
@@ -29,12 +30,12 @@ function y() {
   } = (0, l.cj)([g.Z], () => ({
     onboardingModalOpenedPrior: g.Z.onboardingModalOpenedPrior
   })), {
-    enabled: y
+    enabled: v
   } = (0, f.W)({
     location: "virtual_currency_announcement_modal"
-  }), [v, O] = (0, d.US)(y ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), j = (0, s.s9z)(s.JQI);
+  }), [O, j] = (0, d.US)(v ? [o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL] : [], ...m.b.useSelectedDismissibleContent), C = (0, s.s9z)(s.JQI);
   i.useEffect(() => {
-    y && !t && v === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || j || (c.Z.dispatch({
+    v && !t && O === o.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL && (e || C || (c.Z.dispatch({
       type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_OPEN"
     }), (0, a.ZD)(async () => {
       let {
@@ -44,12 +45,14 @@ function y() {
         let {
           onClose: n,
           transitionState: i
-        } = t;
+        } = t, l = async () => {
+          await n(), j(b.L.USER_DISMISS)
+        };
         return (0, r.jsx)(e, {
           transitionState: i,
-          onClose: n,
+          onClose: l,
           ctaOnClick: () => {
-            O(b.L.TAKE_ACTION), (0, u.EW)(o.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
+            j(b.L.TAKE_ACTION), (0, u.EW)(o.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK, {
               dismissAction: b.L.INDIRECT_ACTION,
               groupName: b.R.VIRTUAL_CURRENCY_ONBOARDING
             }), (0, u.EW)(o.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
@@ -62,9 +65,10 @@ function y() {
         })
       }
     }, {
-      onCloseCallback: () => {
-        O(b.L.USER_DISMISS)
+      modalKey: y,
+      onCloseRequest: () => {
+        j(b.L.USER_DISMISS), (0, s.Mr3)(y)
       }
     })))
-  }, [v, y, t, O, e, j])
+  }, [O, v, t, j, e, C])
 }

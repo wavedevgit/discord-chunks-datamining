@@ -22,9 +22,9 @@ var l = n(200651),
   h = n(468363),
   g = n(326255),
   O = n(956221),
-  S = n(747017),
-  T = n(385499),
-  I = n(570908),
+  T = n(747017),
+  I = n(385499),
+  S = n(570908),
   N = n(702321),
   m = n(201895),
   A = n(43267),
@@ -174,8 +174,8 @@ let en = Q.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
       role: h,
       "aria-posinset": g,
       "aria-setsize": O,
-      listItemRef: S
-    } = e, T = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
+      listItemRef: T
+    } = e, I = et(e, ["route", "selected", "icon", "iconClassName", "avatarWithTextClassName", "interactiveClassName", "text", "children", "locationState", "onClick", "className", "role", "aria-posinset", "aria-setsize", "listItemRef"]);
     let N = (0, L.Q3)("PrivateChannelLinkButton");
     return (0, l.jsx)(v.Z, {
       className: o()(J.channel, {
@@ -188,7 +188,7 @@ let en = Q.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
       }, el),
       "aria-posinset": g,
       "aria-setsize": O,
-      ref: S,
+      ref: T,
       children: (0, l.jsx)(f.vjx, {
         as: "div",
         selected: n,
@@ -201,8 +201,8 @@ let en = Q.ZP.getEnableHardwareAcceleration() ? f.Xo$ : f.qEK,
             state: C
           },
           className: J.link
-        }, T), {
-          children: [(0, l.jsx)(I.Z, {
+        }, I), {
+          children: [(0, l.jsx)(S.Z, {
             selected: n,
             muted: !1,
             avatar: (0, l.jsx)(r, {
@@ -248,11 +248,11 @@ function eu(e) {
   } = (0, E.cj)([B.Z], () => ({
     ignored: B.Z.isIgnored(i.getRecipientId()),
     blocked: B.Z.isBlocked(i.getRecipientId())
-  })), e_ = (0, E.e7)([F.ZP], () => F.ZP.getMentionCount(i.id) > 0), eh = (0, b.ZP)(i), eg = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = (0, M.L)("PrivateChannel"), eS = () => {
+  })), e_ = (0, E.e7)([F.ZP], () => F.ZP.getMentionCount(i.id) > 0), eh = (0, b.ZP)(i), eg = (0, E.e7)([R.Z], () => R.Z.isFavorite(i.id)), eO = (0, M.L)("PrivateChannel"), eT = () => {
     Q(!0)
-  }, eT = () => {
+  }, eI = () => {
     Q(!1)
-  }, eI = function(e) {
+  }, eS = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     null != e && (e.preventDefault(), e.stopPropagation()), C.Z.closePrivateChannel(i.id, d, t)
   }, eN = () => {
@@ -304,7 +304,7 @@ function eu(e) {
       return n => (0, l.jsx)(e, $({
         header: t,
         body: r,
-        onSubmit: eI
+        onSubmit: eS
       }, n))
     })
   }, ev = () => i.isSystemDM() ? (0, l.jsx)("div", {
@@ -320,7 +320,7 @@ function eu(e) {
     status: U,
     applicationStream: L,
     voiceChannel: D
-  }) ? (0, l.jsx)(S.Z, {
+  }) ? (0, l.jsx)(T.Z, {
     user: h,
     activities: O,
     voiceChannel: D,
@@ -379,8 +379,8 @@ function eu(e) {
           ringTarget: eu
         }),
         ref: eu,
-        onMouseEnter: eS,
-        onMouseLeave: eT,
+        onMouseEnter: eT,
+        onMouseLeave: eI,
         onMouseDown: eN,
         onContextMenu: eb,
         "aria-setsize": z,
@@ -416,7 +416,7 @@ function eu(e) {
               unread: e_
             })
           }, n), {
-            children: (0, l.jsx)(I.Z, {
+            children: (0, l.jsx)(S.Z, {
               ref: eG,
               avatar: ey(),
               selected: d,
@@ -427,15 +427,15 @@ function eu(e) {
                 tooltipClassName: J.overflowTooltip,
                 children: ew
               }),
-              decorators: i.isSystemDM() ? (0, l.jsx)(T.Z, {
+              decorators: i.isSystemDM() ? (0, l.jsx)(I.Z, {
                 className: J.decorator,
-                type: T.Z.Types.SYSTEM_DM,
+                type: I.Z.Types.SYSTEM_DM,
                 verified: !0
               }) : null
             })
           })), eg ? (0, l.jsx)(ei, {}) : null, eU ? (0, l.jsx)(eo, {}) : null, ex ? (0, l.jsx)(ea, {}) : null, (0, l.jsx)(er, {
             "aria-label": eL ? X.NW.string(X.t["26C4oq"]) : X.NW.string(X.t.jsvgc3),
-            onClick: eL ? eP : eI,
+            onClick: eL ? eP : eS,
             onMouseDown: em,
             nameplate: V
           })]

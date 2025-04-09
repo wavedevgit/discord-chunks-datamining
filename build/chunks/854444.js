@@ -20,13 +20,13 @@ var l = n(192379),
   h = n(77498),
   g = n(496675),
   O = n(306680),
-  S = n(944486),
-  T = n(9156),
-  I = n(823379),
+  T = n(944486),
+  I = n(9156),
+  S = n(823379),
   N = n(540126),
   m = n(647086),
   A = n(231338);
-let b = [a.ZP, s.Z, c.ZP, d.Z, E.Z, C.Z, p.Z, h.Z, g.Z, O.ZP, S.Z, T.ZP];
+let b = [a.ZP, s.Z, c.ZP, d.Z, E.Z, C.Z, p.Z, h.Z, g.Z, O.ZP, T.Z, I.ZP];
 
 function P() {
   let [e, t] = l.useState(() => v());
@@ -38,10 +38,10 @@ function P() {
 
 function v() {
   let e = s.Z.getFavoriteChannels(),
-    t = T.ZP.isGuildCollapsed(m._),
-    n = S.Z.getChannelId(),
+    t = I.ZP.isGuildCollapsed(m._),
+    n = T.Z.getChannelId(),
     l = p.Z.getChannel(n),
-    r = S.Z.getVoiceChannelId(),
+    r = T.Z.getVoiceChannelId(),
     a = [],
     c = {};
   for (let t in e) {
@@ -69,8 +69,8 @@ function v() {
         C = null != (u = c || E || !a ? d.Z.getActiveJoinedRelevantThreadsForParent(n.guild_id, n.id) : d.Z.getActiveJoinedUnreadThreadsForParent(n.guild_id, n.id)) ? u : {},
         p = (0, N.zR)(n, C, l, r, t),
         h = _.Z.isCollapsed(n.id),
-        S = T.ZP.isChannelMuted(n.guild_id, n.id),
-        I = {
+        T = I.ZP.isChannelMuted(n.guild_id, n.id),
+        S = {
           id: n.id,
           record: n,
           category: o,
@@ -78,12 +78,12 @@ function v() {
           threadIds: p,
           threadCount: i().size(p),
           isCollapsed: h,
-          isMuted: S,
+          isMuted: T,
           isFirstVoiceChannel: !1,
           subtitle: (0, N.Bz)(n, h, !1)
         };
-      return c || E || !i().isEmpty(C) || O.ZP.getMentionCount(n.id) > 0 ? I : t && S || a && (S || s || (0, f.vd)(n.type) || (0, f.vc)(n.type) && !1 === O.ZP.hasUnread(n.id)) ? null : I
-    }).filter(I.lm).sortBy(e => {
+      return c || E || !i().isEmpty(C) || O.ZP.getMentionCount(n.id) > 0 ? S : t && T || a && (T || s || (0, f.vd)(n.type) || (0, f.vc)(n.type) && !1 === O.ZP.hasUnread(n.id)) ? null : S
+    }).filter(S.lm).sortBy(e => {
       let {
         record: t
       } = e;
@@ -108,7 +108,7 @@ function v() {
       let {
         id: n,
         order: l
-      } = e, r = s.Z.getCategoryRecord(n), i = null != (t = c[n]) ? t : [], o = T.ZP.isChannelMuted(m._, n), a = C.Z.isCollapsed(n), u = null;
+      } = e, r = s.Z.getCategoryRecord(n), i = null != (t = c[n]) ? t : [], o = I.ZP.isChannelMuted(m._, n), a = C.Z.isCollapsed(n), u = null;
       return {
         isMuted: o,
         isCollapsed: a,

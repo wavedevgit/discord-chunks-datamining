@@ -1,8 +1,8 @@
 /** Chunk was on 39168 **/
 n.d(t, {
   ED: () => g,
-  fO: () => S,
-  qp: () => T
+  fO: () => T,
+  qp: () => I
 }), n(388685);
 var l = n(200651),
   r = n(192379),
@@ -46,7 +46,7 @@ let g = e => (0, l.jsx)(E.tE, h({
     renderTail: !0
   }, e)),
   O = [f.Z5c.ME, f.Z5c.COLLECTIBLES_SHOP, f.Z5c.NITRO_HOME],
-  S = e => {
+  T = e => {
     var {
       onClose: t,
       onCtaClick: n,
@@ -69,12 +69,12 @@ let g = e => (0, l.jsx)(E.tE, h({
       return r
     }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
     let _ = r.useRef(null),
-      [T, I] = r.useState(22),
+      [I, S] = r.useState(22),
       N = r.useRef(null),
       m = (0, s.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       A = r.useCallback(e => {
         if (m) {
-          let t = window.innerHeight - ((0, E.t4)() + S.COACHMARK_VERTICAL_OFFSET);
+          let t = window.innerHeight - ((0, E.t4)() + T.COACHMARK_VERTICAL_OFFSET);
           return e.top <= t
         }
         return !0
@@ -91,8 +91,8 @@ let g = e => (0, l.jsx)(E.tE, h({
       }, [P, n]),
       y = r.useCallback(e => {
         let t = Math.floor(e.width / 2) - 2;
-        T !== t && I(t)
-      }, [T]);
+        I !== t && S(t)
+      }, [I]);
     return (0, l.jsx)(E.WS, {
       positionControlRef: _,
       targetElementRef: a,
@@ -103,15 +103,15 @@ let g = e => (0, l.jsx)(E.tE, h({
       popoutElement: (0, l.jsx)(g, h({
         onClose: t,
         onCtaClick: v,
-        tailLeftOffset: T,
+        tailLeftOffset: I,
         coachmarkRef: N
       }, p)),
       spacing: 8,
       children: C
     })
   };
-S.COACHMARK_VERTICAL_OFFSET = 10;
-let T = e => {
+T.COACHMARK_VERTICAL_OFFSET = 10;
+let I = e => {
   let {
     isVirtualCurrencyEnabled: t,
     discoveryButtonRef: n,
@@ -129,8 +129,8 @@ let T = e => {
     onShowCoachmarkHandler: o
   }), _ = r.useCallback(() => {
     (0, u.EW)(a.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
-      forceTrack: !0,
-      dismissAction: C.L.USER_DISMISS
+      dismissAction: C.L.INDIRECT_ACTION,
+      groupName: C.R.VIRTUAL_CURRENCY_ONBOARDING
     }), d()
   }, [d]), h = r.useCallback(() => d("CTA_CLICK"), [d]);
   return t ? {
