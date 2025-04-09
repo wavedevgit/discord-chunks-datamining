@@ -171,9 +171,12 @@ function B(e) {
 }
 
 function F(e) {
+  var t;
   let {
-    role: t,
-    disabled: n
+    role: n,
+    disabled: i,
+    currentStyle: s,
+    hasEnhancedRoleColors: a
   } = e;
   return (0, r.jsxs)(m.xJW, {
     className: Z.colorPicker,
@@ -185,14 +188,20 @@ function F(e) {
     }), (0, r.jsx)(L, {
       defaultColor: w.p6O,
       colors: w.pmI,
-      value: t.color,
-      disabled: n,
+      value: n.color,
+      disabled: i,
       onChange: e => {
-        var n;
-        return n = e, void(t.color !== n && (n !== w.p6O || 0 !== t.color) && (n === w.p6O && (n = 0), (0, O.OW)(t.id, n)))
+        var t;
+        return t = e, void(n.color !== t && (t !== w.p6O || 0 !== n.color) && (t === w.p6O && (t = 0), (0, O.OW)(n.id, t)))
       },
+      secondaryValue: "gradient" === s && a ? null == (t = n.colors) ? void 0 : t.secondary_color : void 0,
+      onChangeGradientColors: e => (0, O.TW)(n.id, {
+        primary_color: e[0],
+        secondary_color: e[1],
+        tertiary_color: void 0
+      }),
       customPickerPosition: "right"
-    }, t.id)]
+    }, n.id)]
   })
 }
 
@@ -361,9 +370,11 @@ function Y(e) {
         selectedStyle: u,
         onStyleSelect: g,
         disabled: f
-      }), (0, r.jsx)(F, {
+      }), "holographic" !== u && (0, r.jsx)(F, {
         role: n,
-        disabled: f
+        disabled: f,
+        currentStyle: u,
+        hasEnhancedRoleColors: o
       }), (0, r.jsx)(I.Z, {
         guild: t,
         disabled: f,
