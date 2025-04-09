@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  r: () => E
+  r: () => b
 });
 var r = n(100527),
   i = n(703656),
@@ -13,9 +13,10 @@ var r = n(100527),
   u = n(545408),
   d = n(189357),
   f = n(50493),
-  _ = n(981631);
+  _ = n(981631),
+  p = n(176505);
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -24,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -48,36 +49,36 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t, n) {
-  var p, m, E;
-  let b = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+function b(e, t, n) {
+  var h, g, b;
+  let y = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
     modViewPanel: f.k.INFO
   };
   if (!(0, d.Y)(e)) return Promise.resolve();
-  let y = null != (p = b.modViewPanel) ? p : f.k.INFO,
-    v = null != (m = b.sourceLocation) ? m : r.Z.MEMBER_SAFETY_PAGE,
-    O = c.Z.getCurrentlySelectedChannelId(),
-    I = null != O ? s.Z.getChannel(O) : null;
-  if (null == I || I.getGuildId() !== e) {
+  let v = null != (h = y.modViewPanel) ? h : f.k.INFO,
+    O = null != (g = y.sourceLocation) ? g : r.Z.MEMBER_SAFETY_PAGE,
+    I = c.Z.getCurrentlySelectedChannelId(),
+    S = null != I ? s.Z.getChannel(I) : null;
+  if (n !== p.oC.MEMBER_SAFETY && (null == S || S.getGuildId() !== e)) {
     let t = l.ZP.getDefaultChannel(e);
     null == t || t.isNSFW() || (0, i.uL)(_.Z5c.CHANNEL(e, t.id))
   }
-  return (0, u.q)(e, t, y, v), o.Z.openGuildSidebar({
+  return (0, u.q)(e, t, v, O), o.Z.openGuildSidebar({
     guildId: e,
     baseChannelId: n,
     sidebarType: a.jL.GUILD_MEMBER_MOD_VIEW,
-    details: g(h({
+    details: E(m({
       type: a.Ff.GUILD_MEMBER_MOD_VIEW,
       userId: t,
       guildId: e
-    }, b), {
-      modViewPanel: null != (E = b.modViewPanel) ? E : f.k.INFO
+    }, y), {
+      modViewPanel: null != (b = y.modViewPanel) ? b : f.k.INFO
     })
   })
 }

@@ -27,7 +27,7 @@ function x(e) {
     isPaused: t,
     width: n,
     height: x
-  } = e, N = (0, s.useRef)(), v = (0, s.useRef)(-1), [O, j] = (0, s.useState)(!1), Z = (0, s.useRef)(h()), _ = (0, i.eR)(y), P = e => {
+  } = e, N = (0, s.useRef)(null), v = (0, s.useRef)(-1), [O, j] = (0, s.useState)(!1), Z = (0, s.useRef)(h()), _ = (0, i.eR)(y), P = e => {
     var t;
     null == (t = N.current) || t.removeDrop(e), Z.current = h(), j(!1), clearTimeout(v.current)
   }, C = e => {

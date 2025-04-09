@@ -83,7 +83,7 @@ let x = () => [{
 function N(e) {
   let {
     isPaused: t
-  } = e, n = (0, s.useRef)(), [c, g] = (0, s.useState)((0, o.sample)(x())), [b, N] = (0, s.useState)({}), [v, O] = (0, s.useState)({
+  } = e, n = (0, s.useRef)(null), [c, g] = (0, s.useState)((0, o.sample)(x())), [b, N] = (0, s.useState)({}), [v, O] = (0, s.useState)({
     x: 0,
     y: 0
   }), j = (e, t) => {

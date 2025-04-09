@@ -49,7 +49,7 @@ function _(e) {
     height: _,
     width: P,
     isPaused: C
-  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(), I = (0, a.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null != (t = M.count) ? t : 0;
+  } = e, [w, E] = (0, s.useState)({}), S = (0, s.useRef)(null), I = (0, a.e7)([l.Z], () => l.Z.hasPurchasedUpgrade(b.yN.WEEDS, b.uv.WEED_KILLER)), k = c.Mq[b.yN.WEEDS], [M, W] = (0, u.Z)(b.yN.WEEDS), R = null != (t = M.count) ? t : 0;
   (0, d.Z)(Z, R);
   let A = (0, p.eR)(j),
     T = e => {
