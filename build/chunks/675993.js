@@ -248,7 +248,7 @@ function D(e) {
     isDeveloperOfThisApp: d
   } = e, p = (0, h.Fs)(n, l.id), C = (0, b.q)(l.id), x = null == C || null == (t = C.bot) ? void 0 : t.id, _ = (0, f.Z)({
     context: n,
-    applicationId: l.id,
+    application: l,
     botUserId: x
   }), {
     analyticsLocations: g

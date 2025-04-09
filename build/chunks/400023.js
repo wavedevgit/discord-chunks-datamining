@@ -340,19 +340,19 @@ let F = i.memo(function(e) {
             }), Array.from(t)
           }, [e]);
           return (0, m.Z)(t)
-        }(r),
-        [y, x] = (0, f.Z)(r, e),
-        O = i.useMemo(() => (0, A.Z)({
-          channel: e,
-          messages: r,
-          oldestUnreadMessageId: l,
-          treatSpam: o && !a,
-          summaries: p,
-          selectedSummary: h
-        }), [r, e, l, o, p, h, g, a]);
+        }(r);
+      (0, f.Z)(r, e);
+      let y = i.useMemo(() => (0, A.Z)({
+        channel: e,
+        messages: r,
+        oldestUnreadMessageId: l,
+        treatSpam: o && !a,
+        summaries: p,
+        selectedSummary: h
+      }), [r, e, l, o, p, h, g, a]);
       return {
         messages: r,
-        channelStream: O,
+        channelStream: y,
         oldestUnreadMessageId: l,
         editingMessageId: (0, s.e7)([j.Z], () => {
           var t;
