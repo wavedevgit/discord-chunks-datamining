@@ -104,13 +104,13 @@ function B(e) {
       className: Z.roleStyleContainer,
       children: U.map(e => {
         let {
-          id: n,
-          colors: g,
-          labelString: f
+          id: g,
+          colors: f,
+          labelString: b
         } = e;
         return (0, r.jsxs)("button", {
           className: a()(Z.roleStylePreviewContainer, {
-            [Z.selected]: i === n,
+            [Z.selected]: i === g,
             [Z.disabled]: l
           }),
           onClick: () => (function(e) {
@@ -139,7 +139,7 @@ function B(e) {
                   tertiary_color: void 0
                 }
             }(0, O.TW)(r, n)
-          })(n),
+          })(g),
           children: [(0, r.jsx)(m.Rny, {
             children: (0, r.jsx)("div", {
               className: Z.roleStyleMessageContainer,
@@ -147,24 +147,25 @@ function B(e) {
                 author: {
                   nick: o.author.username,
                   colorStrings: {
-                    primaryColor: null != g.primary_color ? (0, c.Rf)(g.primary_color) : void 0,
-                    secondaryColor: null != g.secondary_color ? (0, c.Rf)(g.secondary_color) : void 0,
-                    tertiaryColor: null != g.tertiary_color ? (0, c.Rf)(g.tertiary_color) : void 0
+                    primaryColor: null != f.primary_color ? (0, c.Rf)(f.primary_color) : void 0,
+                    secondaryColor: null != f.secondary_color ? (0, c.Rf)(f.secondary_color) : void 0,
+                    tertiaryColor: null != f.tertiary_color ? (0, c.Rf)(f.tertiary_color) : void 0
                   },
-                  colorString: null != g.primary_color ? (0, c.Rf)(g.primary_color) : void 0
+                  colorString: null != f.primary_color ? (0, c.Rf)(f.primary_color) : void 0
                 },
                 message: o,
                 preview: !0,
                 roleIcon: null != p ? p : (0, u.ap)(d) ? h.light : h.dark,
                 isGroupStart: !0,
-                disableInteraction: !0
+                disableInteraction: !0,
+                previewGuildId: n
               })
             })
           }), (0, r.jsx)("div", {
             className: Z.roleStyleLabel,
-            children: D.NW.string(f)
+            children: D.NW.string(b)
           })]
-        }, n)
+        }, g)
       })
     })
   })
@@ -285,6 +286,7 @@ function H(e) {
               author: c,
               message: o,
               roleIcon: null != p ? p : (0, u.ap)(e) ? g : d,
+              previewGuildId: l,
               isGroupStart: !0
             })
           })

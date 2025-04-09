@@ -4,8 +4,8 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(913527),
-  l = r.n(i),
+var l = r(913527),
+  i = r.n(l),
   a = r(481060),
   o = r(925329),
   c = r(388032),
@@ -26,7 +26,7 @@ function u(e) {
         className: s.timestamp,
         variant: "text-xs/medium",
         color: "text-muted",
-        children: l()(r).format("LLLL")
+        children: i()(r).format("LLLL")
       }), (0, n.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "interactive-active",
@@ -42,7 +42,7 @@ function m(e) {
   let {
     application: t,
     timestamp: r,
-    children: i
+    children: l
   } = e;
   return (0, n.jsx)(a.ua7, {
     hideOnClick: !0,
@@ -76,7 +76,7 @@ function m(e) {
       }({
         tag: "span"
       }, e), r = r = {
-        children: i
+        children: l
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -95,17 +95,17 @@ function p(e) {
   let {
     application: t,
     timestamp: r,
-    compact: i,
-    children: l
+    compact: l,
+    children: i
   } = e;
   return (0, n.jsxs)(m, {
     application: t,
     timestamp: r,
-    children: [i ? null : (0, n.jsx)(a.iWm, {
+    children: [l ? null : (0, n.jsx)(a.iWm, {
       className: s.gameIcon,
       size: "custom",
       width: 14,
       height: 14
-    }), l]
+    }), i]
   })
 }

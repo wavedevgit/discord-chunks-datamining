@@ -207,6 +207,7 @@ function X(e) {
         [D.a.BADGES]: k
       },
       renderRemixTag: !0,
+      previewGuildId: i,
       preview: O
     }), s && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("i", {

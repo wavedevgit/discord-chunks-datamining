@@ -4,8 +4,8 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var i = r(120356),
-  l = r.n(i),
+var l = r(120356),
+  i = r.n(l),
   a = r(481060),
   o = r(55935),
   c = r(543388),
@@ -16,8 +16,8 @@ var i = r(120356),
 function p(e) {
   var t, r;
   let {
-    tooltipProps: i,
-    timeFormatted: l,
+    tooltipProps: l,
+    timeFormatted: i,
     children: a,
     compact: o,
     timestamp: c,
@@ -40,7 +40,7 @@ function p(e) {
       })
     }
     return e
-  }({}, i), r = r = {
+  }({}, l), r = r = {
     id: s,
     dateTime: c.toISOString(),
     children: null != a ? a : (0, n.jsxs)(n.Fragment, {
@@ -48,7 +48,7 @@ function p(e) {
         className: m.separator,
         "aria-hidden": !0,
         children: o ? "[" : " — "
-      }), l, o && (0, n.jsxs)("i", {
+      }), i, o && (0, n.jsxs)("i", {
         className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
@@ -69,7 +69,7 @@ let d = function(e) {
   let {
     children: t,
     className: r,
-    compact: i = !1,
+    compact: l = !1,
     timestamp: d,
     timestampFormat: f,
     isVisibleOnlyOnHover: b = !1,
@@ -79,11 +79,11 @@ let d = function(e) {
     isEdited: j = !1,
     application: v,
     tooltipPosition: h
-  } = e, x = new Date(d), P = (0, o.Hg)(x), S = null != f ? (0, o.vc)(x, f) : i ? (0, o.vc)(x, "LT") : (0, o.Y4)(x, !0), N = i ? (0, s.Z)(S) : null, w = j ? u.NW.formatToPlainString(u.t.CDzOFR, {
+  } = e, x = new Date(d), P = (0, o.Hg)(x), S = null != f ? (0, o.vc)(x, f) : l ? (0, o.vc)(x, "LT") : (0, o.Y4)(x, !0), N = l ? (0, s.Z)(S) : null, w = j ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: P
   }) : P;
   return (0, n.jsx)("span", {
-    className: l()(r, N, {
+    className: i()(r, N, {
       [m.timestamp]: !0,
       [m.timestampVisibleOnHover]: b,
       [m.timestampInline]: O,
@@ -100,18 +100,18 @@ let d = function(e) {
         timeFormatted: S,
         timestamp: x,
         id: g,
-        compact: i,
+        compact: l,
         children: t
       })
     }) : (0, n.jsx)(c.Z, {
       application: v,
       timestamp: x,
-      compact: i,
+      compact: l,
       children: (0, n.jsx)(p, {
         timeFormatted: S,
         timestamp: x,
         id: g,
-        compact: i,
+        compact: l,
         children: t
       })
     })
