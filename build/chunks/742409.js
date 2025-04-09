@@ -1,7 +1,7 @@
 /** Chunk was on 55666 **/
 B.d(g, {
   Z: () => d,
-  v: () => t
+  l: () => t
 });
 var C = B(200651);
 B(192379);
@@ -33,6 +33,8 @@ function t(A) {
       children: [(0, C.jsxs)("div", {
         className: o.usernameContainer,
         children: [(0, C.jsx)(D.Text, {
+          "data-text": A.username,
+          className: A.usernameClassName,
           variant: "text-md/semibold",
           style: A.usernameStyle,
           children: A.username

@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 3900e17de1325d0e
+  Original File Name: 1c0c9e9b516c24fa
 **/
 .container__6f9f7 {
     display: flex;
@@ -326,6 +326,13 @@
     border: 1px solid var(--border-subtle)
 }
 
+.ercContainer__93e55 {
+    padding: var(--spacing-12) 0;
+    overflow: visible;
+    position: relative;
+    pointer-events: none
+}
+
 .close__61aee {
     position: absolute;
     top: var(--spacing-16);
@@ -351,7 +358,8 @@
 .sidebar__61aee {
     width: 350px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    background: var(--background-secondary)
 }
 
 .contentContainer__61aee {
@@ -366,24 +374,23 @@
     margin-top: var(--spacing-24)
 }
 
-.powerupImageContainer__61aee {
-    flex-grow: 1
-}
-
-.exampleImage__61aee,.powerupImageContainer__61aee {
-    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
-    display: flex
+.powerupImage__61aee {
+    flex-grow: 1;
+    display: flex;
+    background: none
 }
 
 .exampleImage__61aee {
     width: 500px;
     flex: 1;
+    display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    background: var(--bg-base-tertiary)
 }
 
 .error__61aee {
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=3900e17de1325d0e.css.map*/
+/*# sourceMappingURL=1c0c9e9b516c24fa.css.map*/
