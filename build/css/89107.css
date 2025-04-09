@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: c3bde1617f879897
+  Original File Name: 297c56e13370ba62
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -2201,6 +2201,10 @@ strong {
     width: 20px;
     height: 20px;
     color: var(--yellow-300)
+}
+
+.errorCodeMessage__14990 {
+    margin-top: var(--space-8)
 }
 
 .root_cd27c4 {
@@ -14098,4 +14102,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=c3bde1617f879897.css.map*/
+/*# sourceMappingURL=297c56e13370ba62.css.map*/

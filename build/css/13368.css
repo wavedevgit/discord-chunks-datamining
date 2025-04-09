@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: c51c852b51c4795b
+  Original File Name: 6454ee10836567c3
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -1717,6 +1717,10 @@
     width: 20px;
     height: 20px;
     color: var(--yellow-300)
+}
+
+.errorCodeMessage__14990 {
+    margin-top: var(--space-8)
 }
 
 .menu__43313 {
@@ -4364,4 +4368,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=c51c852b51c4795b.css.map*/
+/*# sourceMappingURL=6454ee10836567c3.css.map*/

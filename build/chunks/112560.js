@@ -48,6 +48,7 @@ function u(e) {
       className: l.header,
       children: i
     }) : null, null != u ? (0, r.jsx)(a.Text, {
+      className: l.errorCodeMessage,
       variant: "text-sm/semibold",
       color: "text-muted",
       selectable: !0,

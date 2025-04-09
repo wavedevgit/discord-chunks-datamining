@@ -50,11 +50,11 @@ function h(e) {
     deadDrawables: _
   } = e;
   h.save();
-  let Z = u.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
-    j = (0, d.np)(a.x, v),
-    N = (0, d.np)(a.y, S),
+  let j = u.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
+    Z = (0, d.np)(a.x, v),
+    x = (0, d.np)(a.y, S),
     {
-      outlineColor: x
+      outlineColor: N
     } = (0, d.bg)(a.userId, y, O, b);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
@@ -86,11 +86,11 @@ function h(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, j, N), (0, f.I)(h, j, N, x, m.q2), (0, f.T)(h, j, N, a.userId), g(a, e => (function(e, t, n) {
+    }(a, Z, x), (0, f.I)(h, Z, x, N, m.q2), (0, f.T)(h, Z, x, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         l = n.x - r / 2 * window.devicePixelRatio,
         i = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + l, r / 2 + i, r, r)
-    })(h, Z, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(I, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || _.push(a), h.restore()
+    })(h, j, e)), a.lastUpdatedAt + m.FO < Date.now() && (0, s.ZZ)(I, a), a.state !== c.f.STOP || Object.keys(null != (r = E.getState().particles[a.id]) ? r : {}).length > 0 || _.push(a), h.restore()
 }
