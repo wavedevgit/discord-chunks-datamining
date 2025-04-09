@@ -3,7 +3,7 @@ let r;
 l.d(t, {
   Z: () => T
 }), l(388685), l(539854), l(781311), l(415506), l(35282);
-var s, n = l(442837),
+var n, s = l(442837),
   a = l(570140),
   u = l(278323),
   i = l(212819),
@@ -25,14 +25,14 @@ function E(e, t, l) {
     writable: !0
   }) : e[t] = l, e
 }
-let f = [i.h8.TEXT_CHANNEL, i.h8.GROUP_DM, i.h8.USER],
+let C = [i.h8.TEXT_CHANNEL, i.h8.GROUP_DM, i.h8.USER],
   y = null,
-  x = null,
+  f = null,
   v = [],
-  C = [];
+  x = [];
 
-function O(e) {
-  v = [...v, e], C = C.map(e => {
+function I(e) {
+  v = [...v, e], x = x.map(e => {
     var t, l;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -60,15 +60,15 @@ function O(e) {
   }), j.emitChange()
 }
 
-function S() {
-  y = null, null != r && (r.destroy(), r = null), null != x && x()
+function O() {
+  y = null, null != r && (r.destroy(), r = null), null != f && f()
 }
 
-function b() {
+function S() {
   let e = null != y && null != y.application_id ? h.Z.getApplicationActivity(y.application_id) : null;
-  if (null != y && (null == e || null == e.party || null == e.party.id)) return S()
+  if (null != y && (null == e || null == e.party || null == e.party.id)) return O()
 }
-class I extends(s = n.ZP.Store) {
+class b extends(n = s.ZP.Store) {
   initialize() {
     this.waitFor(h.Z)
   }
@@ -80,14 +80,14 @@ class I extends(s = n.ZP.Store) {
     return null != (e = null == r ? void 0 : r.query) ? e : ""
   }
   getResults() {
-    return C
+    return x
   }
 }
-E(I, "displayName", "ActivityInviteModalStore");
-let j = new I(a.Z, {
+E(b, "displayName", "ActivityInviteModalStore");
+let j = new b(a.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
-      y = e.activity, x = e.resolve, v = [], null == r && (r = new i.ZP((e, t) => {
-        C = ("" === t.trim() ? function() {
+      y = e.activity, f = e.resolve, v = [], null == r && (r = new i.ZP((e, t) => {
+        x = ("" === t.trim() ? function() {
           let e = [];
           return N.Z.getPrivateChannelIds().forEach(t => {
             let l = o.Z.getChannel(t);
@@ -145,7 +145,7 @@ let j = new I(a.Z, {
               throw Error("Unknown Result Type: ".concat(e.type))
           }
         }), j.emitChange()
-      }, f, 100)), r.search("")
+      }, C, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
       let {
@@ -162,21 +162,21 @@ let j = new I(a.Z, {
         type: g.mFx.JOIN,
         activity: y,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => O(t)) : null != l && u.Z.sendActivityInviteUser({
+      }).then(() => I(t)) : null != l && u.Z.sendActivityInviteUser({
         userId: l,
         type: g.mFx.JOIN,
         activity: y,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => O(l))
+      }).then(() => I(l))
     },
-    ACTIVITY_INVITE_MODAL_CLOSE: S,
+    ACTIVITY_INVITE_MODAL_CLOSE: O,
     OVERLAY_SET_INPUT_LOCKED: function(e) {
       let {
         locked: t
       } = e;
-      return !!t && null != y && (S(), !0)
+      return !!t && null != y && (O(), !0)
     },
-    LOCAL_ACTIVITY_UPDATE: b,
-    RPC_APP_DISCONNECTED: b
+    LOCAL_ACTIVITY_UPDATE: S,
+    RPC_APP_DISCONNECTED: S
   }),
   T = j

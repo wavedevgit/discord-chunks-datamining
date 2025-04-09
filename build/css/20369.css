@@ -1,6 +1,6 @@
 /**
   Module ID: 20369
-  Original File Name: 26162a995660a6d2
+  Original File Name: c0bbff0bc7dd2106
 **/
 @value minColumnWidth: 460px;
 
@@ -760,6 +760,21 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     max-width: var(--custom-guild-sidebar-width)
 }
 
+.unreadPill__972a0 {
+    position: absolute;
+    height: 8px;
+    width: 4px;
+    border-radius: 0 var(--radius-xs) var(--radius-xs) 0;
+    top: 50%;
+    margin-top: -4px;
+    left: -8px;
+    background-color: var(--interactive-active)
+}
+
+.unreadPill__972a0.muted__972a0 {
+    opacity: .3
+}
+
 .interactive__972a0 {
     display: flex;
     align-items: center;
@@ -971,6 +986,14 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 :where(.visual-refresh) .channel__972a0:not(.dm__972a0) svg {
     width: 20px;
     height: 20px
+}
+
+.enable-forced-colors .unreadPill__972a0 {
+    background-color: Highlight;
+    height: 10px;
+    margin-top: -5px;
+    outline: 1px solid Canvas;
+    width: 6px
 }
 
 .enable-forced-colors .closeButton__972a0 {
@@ -3677,4 +3700,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     margin-right: auto
 }
 
-/*# sourceMappingURL=26162a995660a6d2.css.map*/
+/*# sourceMappingURL=c0bbff0bc7dd2106.css.map*/

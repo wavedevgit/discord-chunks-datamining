@@ -136,8 +136,8 @@ function j(e) {
     disabled: d = !1,
     customPickerPosition: j = "bottom",
     secondaryValue: k,
-    onChangeGradientColors: P
-  } = e, O = null != k, x = n.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = n.useRef(null), y = n.useRef(null), w = n.useRef(null), [m, v] = n.useState(() => x(l) ? l : null), [R, S] = n.useState({
+    onChangeGradientColors: O
+  } = e, P = null != k, x = n.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = n.useRef(null), y = n.useRef(null), w = n.useRef(null), [m, v] = n.useState(() => x(l) ? l : null), [R, S] = n.useState({
     start: x(l) ? l : void 0,
     end: null != k ? k : c.p6O
   }), [_, D] = n.useState({
@@ -157,14 +157,11 @@ function j(e) {
       null == i || i(e), v(e)
     }, [i, v]),
     N = n.useCallback((e, t) => {
-      var r;
-      let o = t ? e : null != (r = R.start) ? r : c.p6O,
-        n = t ? R.end : e;
       S({
-        start: o,
-        end: n
-      }), null == P || P([o, n])
-    }, [R, P]),
+        start: e,
+        end: t
+      }), null == O || O([e, t])
+    }, [O]),
     W = n.useCallback((e, t) => {
       D(r => h(b({}, r), {
         [e]: t
@@ -173,7 +170,7 @@ function j(e) {
     L = n.useCallback(() => {
       var e, t, r, n, l;
       let i = {
-          background: "linear-gradient(90deg, ".concat((0, s.Rf)(null != (e = R.start) ? e : 0), " 0%, ").concat((0, s.Rf)(R.end), " 100%)")
+          background: "linear-gradient(90deg, ".concat((0, s.Rf)(null != (e = R.start) ? e : c.p6O), " 0%, ").concat((0, s.Rf)(R.end), " 100%)")
         },
         a = (0, o.jsxs)("div", {
           className: p.gradientButtonContainer,
@@ -182,7 +179,7 @@ function j(e) {
             style: i
           }), (0, o.jsx)(g, {
             position: "left",
-            color: null != (t = R.start) ? t : 0,
+            color: null != (t = R.start) ? t : c.p6O,
             disabled: d
           }), (0, o.jsx)(g, {
             position: "right",
@@ -198,12 +195,12 @@ function j(e) {
         }), (0, o.jsx)(f, {
           isStart: !0,
           buttonRef: y,
-          color: null != (n = R.start) ? n : 0,
+          color: null != (n = R.start) ? n : c.p6O,
           showPopout: _.showStart,
           position: j,
           onRequestClose: () => W("showStart", !1),
           onShowPopout: () => W("showStart", !0),
-          onColorChange: N,
+          onColorChange: e => N(e, R.end),
           disabled: d
         }), (0, o.jsx)(f, {
           isStart: !1,
@@ -213,7 +210,10 @@ function j(e) {
           position: j,
           onRequestClose: () => W("showEnd", !1),
           onShowPopout: () => W("showEnd", !0),
-          onColorChange: N,
+          onColorChange: e => {
+            var t;
+            return N(null != (t = R.start) ? t : c.p6O, e)
+          },
           disabled: d
         })]
       })
@@ -256,8 +256,8 @@ function j(e) {
     renderDefaultButton: G,
     renderCustomButton: q,
     renderGradientCustomButton: L,
-    isGradient: O,
+    isGradient: P,
     customColor: m,
-    onChange: E
+    onChange: P ? N : E
   }))
 }

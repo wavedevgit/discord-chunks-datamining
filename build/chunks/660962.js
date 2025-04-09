@@ -32,7 +32,7 @@ var r = n(200651),
   T = n(275296),
   P = n(203377),
   w = n(981631),
-  R = n(474936),
+  R = n(141006),
   D = n(388032),
   Z = n(275302),
   A = n(877248),
@@ -188,7 +188,7 @@ function F(e) {
       children: D.NW.string(D.t["9UCxlZ"])
     }), (0, r.jsx)(L, {
       defaultColor: w.p6O,
-      colors: w.pmI,
+      colors: "gradient" === s && a ? R.tl : w.pmI,
       value: n.color,
       disabled: i,
       onChange: e => {

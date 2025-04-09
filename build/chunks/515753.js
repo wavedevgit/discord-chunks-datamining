@@ -370,7 +370,7 @@ function es(e) {
       var {
         role: t
       } = e, n = ee(e, ["role"]);
-      return (0, l.jsx)(v.Z, {
+      return (0, l.jsxs)(v.Z, {
         className: o()(X.channel, X.dm),
         role: t,
         focusProps: $(J({}, en), {
@@ -384,7 +384,11 @@ function es(e) {
         onContextMenu: em,
         "aria-setsize": K,
         "aria-posinset": B,
-        children: (0, l.jsxs)(f.vjx, {
+        children: [ep ? (0, l.jsx)("div", {
+          className: o()(X.unreadPill, {
+            [X.muted]: ex
+          })
+        }) : null, (0, l.jsxs)(f.vjx, {
           className: o()(X.interactive, {
             [X.interactiveSystemDM]: eL && ey,
             [X.interactiveSelected]: d,
@@ -434,7 +438,7 @@ function es(e) {
             onMouseDown: eT,
             nameplate: H
           })]
-        })
+        })]
       })
     }
   })
