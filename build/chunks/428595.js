@@ -144,6 +144,7 @@ let F = e => {
       parse: V
     }),
     mailto: M(L({}, a().defaultRules.mailto), {
+      match: a().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
       requiredFirstCharacters: ["<"]
     }),
     tel: M(L({}, a().defaultRules.mailto), {
