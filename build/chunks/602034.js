@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => C,
-  r: () => y
+  Z: () => y,
+  r: () => C
 });
 var r = n(200651),
   i = n(192379),
@@ -20,7 +20,7 @@ var r = n(200651),
   b = n(981631),
   _ = n(388032);
 
-function C(e) {
+function y(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -52,7 +52,7 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   let {
     parentChannel: t
   } = e, {

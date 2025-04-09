@@ -19,8 +19,8 @@ var i = n(120356),
   g = n(51144),
   b = n(967128),
   _ = n(981631),
-  C = n(388032),
-  y = n(128337);
+  y = n(388032),
+  C = n(128337);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,37 +61,37 @@ function j(e) {
     channel: b
   } = e, {
     analyticsLocations: _
-  } = (0, u.ZP)(c.Z.USERNAME), C = (0, o.e7)([m.default], () => m.default.getUser(d)), j = (0, o.e7)([f.ZP], () => null != d ? f.ZP.getMember(b.guild_id, d) : null), O = (0, p.X)(b.guild_id, null == j ? void 0 : j.colorStrings);
+  } = (0, u.ZP)(c.Z.USERNAME), y = (0, o.e7)([m.default], () => m.default.getUser(d)), j = (0, o.e7)([f.ZP], () => null != d ? f.ZP.getMember(b.guild_id, d) : null), O = (0, p.X)(b.guild_id, null == j ? void 0 : j.colorStrings);
 
   function E(e) {
-    if (null == C) return null;
+    if (null == y) return null;
     (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("70675")]).then(n.bind(n, 654663));
       return t => (0, r.jsx)(e, v(x({}, t), {
-        user: C,
+        user: y,
         guildId: b.guild_id,
         channel: b
       }))
     })
   }
-  let N = null != (i = null != (t = null == j ? void 0 : j.nick) ? t : g.ZP.getName(C)) ? i : "???",
+  let N = null != (i = null != (t = null == j ? void 0 : j.nick) ? t : g.ZP.getName(y)) ? i : "???",
     I = null == j ? void 0 : j.colorString;
-  return null == C ? (0, r.jsx)("span", {
-    className: l()(y.threadCreatorName, y.unknownCreatorName),
+  return null == y ? (0, r.jsx)("span", {
+    className: l()(C.threadCreatorName, C.unknownCreatorName),
     children: N
   }) : (0, r.jsx)(u.Gt, {
     value: _,
     children: (0, r.jsx)(h.Z, {
-      user: C,
+      user: y,
       guildId: b.guild_id,
       channelId: b.id,
       roleId: null == j ? void 0 : j.colorRoleId,
       clickTrap: !0,
       children: e => (0, r.jsx)(a.P3F, v(x({}, e), {
         tag: "span",
-        className: y.threadCreatorName,
+        className: C.threadCreatorName,
         onContextMenu: E,
         children: (0, r.jsx)(a.PUh, {
           name: N,
@@ -118,8 +118,8 @@ function O(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       children: (0, r.jsx)("div", {
-        className: y.subtitle,
-        children: C.NW.format(C.t.imPXd3, {
+        className: C.subtitle,
+        children: y.NW.format(y.t.imPXd3, {
           usernameHook: (e, n) => (0, r.jsx)(j, {
             userId: t.ownerId,
             channel: t
@@ -129,7 +129,7 @@ function O(e) {
     }), t.type === _.d4z.PRIVATE_THREAD ? (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: C.NW.string(C.t["1awbZG"])
+      children: y.NW.string(y.t["1awbZG"])
     }) : null]
   })
 }
@@ -142,9 +142,9 @@ function E(e) {
   return (0, r.jsxs)(b.ZP, {
     channelId: n.id,
     children: [(0, r.jsx)("div", {
-      className: y.iconWrapper,
+      className: C.iconWrapper,
       children: (0, r.jsx)(i, {
-        className: y.icon
+        className: C.icon
       })
     }), (0, r.jsx)(b.Ot, {
       children: n.name

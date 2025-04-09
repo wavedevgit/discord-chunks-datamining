@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(607070),
   b = n(100527),
   _ = n(906732),
-  C = n(82295),
-  y = n(91218),
+  y = n(82295),
+  C = n(91218),
   x = n(623624),
   v = n(518738),
   j = n(850020),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(998502),
   B = n(276264),
   H = n(981631),
-  F = n(388032),
-  G = n(688826),
+  G = n(388032),
+  F = n(688826),
   V = n(11847);
 
 function z(e) {
@@ -75,7 +75,7 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, p.e7)([w.Z], () => w.Z.isTyping(t.id, o)), u = (0, p.e7)([S.ZP], () => S.ZP.getMember(t.guild_id, o)), h = (0, p.e7)([Z.Z], () => {
       var e;
       return (null == u ? void 0 : u.colorRoleId) != null ? null == (e = Z.Z.getRole(t.guild_id, u.colorRoleId)) ? void 0 : e.name : void 0
-    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), C = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), y = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, U = i.useCallback(e => {
+    }, [t.guild_id, u]), g = (0, p.e7)([R.default], () => R.default.getUser(o)), b = (0, p.e7)([R.default], () => R.default.getCurrentUser()), _ = (null == g ? void 0 : g.id) === (null == b ? void 0 : b.id), y = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getStatus() : T.Z.getStatus(o, t.guild_id)), C = (0, p.e7)([T.Z], () => T.Z.isMobileOnline(o)), v = (0, p.e7)([T.Z, A.Z], () => _ ? A.Z.getActivities() : T.Z.getActivities(o, t.guild_id)), O = (0, p.e7)([P.Z], () => P.Z.getAnyStreamForUser(o)), k = (0, c.JA)(o), M = (0, p.e7)([E.Z], () => E.Z.canUserViewChannel(t.id, l, o)), D = (null == g ? void 0 : g.id) != null && g.id === a, U = i.useCallback(e => {
       null != g && (0, f.jW)(e, async () => {
         let {
           default: e
@@ -98,7 +98,7 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
           }), i))
         }
       })
-    }, [g, t]), G = i.useCallback(() => {
+    }, [g, t]), F = i.useCallback(() => {
       if (null == g) return;
       let e = "@".concat(W.ZP.getUserTag(g, {
           decoration: "never"
@@ -131,7 +131,7 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
       shouldShowOnHover: Q,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: G,
+      onShiftClick: F,
       clickTrap: K,
       shouldShow: K,
       onRequestClose: () => X(!1),
@@ -159,7 +159,7 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
           user: g,
           currentUser: b,
           nick: null == u ? void 0 : u.nick,
-          status: C,
+          status: y,
           activities: v,
           colorString: null == u ? void 0 : u.colorString,
           colorStrings: null == u ? void 0 : u.colorStrings,
@@ -167,13 +167,13 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
           isTyping: s,
           channel: t,
           guildId: t.guild_id,
-          isMobile: y,
+          isMobile: C,
           selected: K,
           applicationStream: O,
           premiumSince: null == J ? null : new Date(J),
           onClickPremiumGuildIcon: V,
           itemProps: k,
-          lostPermissionTooltipText: M ? void 0 : F.NW.string(F.t["/QcoT0"]),
+          lostPermissionTooltipText: M ? void 0 : G.NW.string(G.t["/QcoT0"]),
           isOwner: D,
           nameplate: q,
           onClick: () => X(e => !e)
@@ -197,13 +197,13 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
       children: (0, r.jsx)("div", {
         className: V.memberGroupsPlaceholder
       })
-    }) : (0, r.jsxs)(C.Z, {
+    }) : (0, r.jsxs)(y.Z, {
       className: V.membersGroup,
-      "aria-label": F.NW.formatToPlainString(F.t.UaqbkZ, {
+      "aria-label": G.NW.formatToPlainString(G.t.UaqbkZ, {
         title: n,
         count: i
       }),
-      children: [null != o ? (0, r.jsx)(y.Z, z({
+      children: [null != o ? (0, r.jsx)(C.Z, z({
         className: V.roleIcon
       }, o)) : null, (0, r.jsxs)("span", {
         "aria-hidden": !0,
@@ -217,20 +217,20 @@ let Y = U.ZP.getEnableHardwareAcceleration(),
     } = e;
     return t.type === H.d4z.PRIVATE_THREAD ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: G.divider
+        className: F.divider
       }), (0, r.jsxs)(h.Text, {
         variant: "text-xs/bold",
         color: "header-secondary",
-        className: G.private,
+        className: F.private,
         children: [(0, r.jsx)(h.mBM, {
           size: "xxs",
           color: "currentColor"
-        }), "\xa0", F.NW.string(F.t.BTLTAg)]
+        }), "\xa0", G.NW.string(G.t.BTLTAg)]
       }), (0, r.jsx)(h.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        className: G.instructions,
-        children: F.NW.string(F.t.Hsd8hI)
+        className: F.instructions,
+        children: G.NW.string(G.t.Hsd8hI)
       })]
     }) : null
   });
@@ -243,7 +243,7 @@ function J(e) {
     analyticsLocations: a
   } = (0, _.ZP)(b.Z.MEMBER_LIST), d = (0, O.D)(t.id, n), f = d.filter(e => e.userIds.length > 0).reverse()[0], {
     navigator: m,
-    listRef: C
+    listRef: y
   } = function(e, t) {
     let n = (0, p.e7)([g.Z], () => g.Z.keyboardModeEnabled),
       r = i.useRef(null),
@@ -293,14 +293,14 @@ function J(e) {
       }),
       listRef: r
     }
-  }(l, q), y = 0 === d.length || d.every(e => 0 === e.userIds.length);
+  }(l, q), C = 0 === d.length || d.every(e => 0 === e.userIds.length);
   if (i.useEffect(() => {
       M.default.track(H.rMx.MEMBER_LIST_VIEWED, {
         channel_id: t.id,
         channel_type: t.type,
         guild_id: t.guild_id
       })
-    }, [t.guild_id, t.id, t.type]), y) return (0, r.jsx)($, {
+    }, [t.guild_id, t.id, t.type]), C) return (0, r.jsx)($, {
     channel: t
   });
   let x = s().omit(m.containerProps, ["ref"]),
@@ -311,9 +311,9 @@ function J(e) {
       navigator: m,
       children: (0, r.jsx)(h.Wdt, {
         children: e => (0, r.jsx)("div", {
-          className: o()(V.membersWrap, V.hiddenMembers, G.container),
+          className: o()(V.membersWrap, V.hiddenMembers, F.container),
           children: (0, r.jsx)(h.aVo, z({
-            ref: C,
+            ref: y,
             className: V.members,
             paddingTop: 0,
             sectionHeight: 40,
@@ -348,7 +348,7 @@ function J(e) {
             renderFooter: e => d[e.section] === f ? (0, r.jsx)(Q, {
               channel: t
             }, "footer") : null,
-            innerAriaLabel: F.NW.string(F.t["9Oq93t"]),
+            innerAriaLabel: G.NW.string(G.t["9Oq93t"]),
             innerTag: "ul",
             sections: d.map(e => e.userIds.length),
             fade: !0
@@ -364,31 +364,31 @@ function $(e) {
     channel: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(V.membersWrap, V.hiddenMembers, V.members, G.emptyState),
+    className: o()(V.membersWrap, V.hiddenMembers, V.members, F.emptyState),
     children: [(0, r.jsx)(h.Text, {
-      className: G.emptyStateHeader,
+      className: F.emptyStateHeader,
       variant: "text-xs/bold",
       color: "interactive-normal",
-      children: F.NW.string(F.t["9Oq93t"])
+      children: G.NW.string(G.t["9Oq93t"])
     }), (0, r.jsxs)("div", {
-      className: G.emptyStateIconContainer,
+      className: F.emptyStateIconContainer,
       children: [(0, r.jsx)("div", {
-        className: G.emptyStateIcon,
+        className: F.emptyStateIcon,
         children: (0, r.jsx)(h.BFJ, {
           size: "lg",
           color: "currentColor"
         })
       }), (0, r.jsx)(k.Z, {
-        className: G.emptyStateStars
+        className: F.emptyStateStars
       })]
     }), (0, r.jsx)(h.X6q, {
       variant: "heading-md/semibold",
-      children: t.isForumPost() ? F.NW.string(F.t.p0UgNT) : F.NW.string(F.t["9/n5v7"])
+      children: t.isForumPost() ? G.NW.string(G.t.p0UgNT) : G.NW.string(G.t["9/n5v7"])
     }), (0, r.jsx)(h.Text, {
-      className: G.emptyStateSubtext,
+      className: F.emptyStateSubtext,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: F.NW.string(F.t.emw8UF)
+      children: G.NW.string(G.t.emw8UF)
     })]
   })
 }

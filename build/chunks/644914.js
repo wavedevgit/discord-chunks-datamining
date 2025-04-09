@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  TE: () => C,
-  h_: () => y
+  TE: () => y,
+  h_: () => C
 }), n(388685);
 var r = n(192379),
   i = n(392711),
@@ -20,7 +20,7 @@ var r = n(192379),
   b = n(709054),
   _ = n(981631);
 
-function C(e, t) {
+function y(e, t) {
   return (0, o.cj)([g.Z], () => ({
     canInvite: (0, a.b)(g.Z, t, e),
     canManageGuild: null != t && g.Z.can(_.Plq.MANAGE_GUILD, t),
@@ -29,7 +29,7 @@ function C(e, t) {
   }), [t, e])
 }
 
-function y(e) {
+function C(e) {
   return {
     guildPopulated: function(e) {
       let t = (0, o.e7)([u.Z], () => u.Z.getChannel(null == e ? void 0 : e.systemChannelId)),

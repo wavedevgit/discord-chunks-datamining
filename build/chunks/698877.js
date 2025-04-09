@@ -22,7 +22,7 @@ function u(e) {
     premiumGlow: g,
     renderNUXHighlight: b,
     buttonRef: _
-  } = e, C = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -38,7 +38,7 @@ function u(e) {
     return i
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "premiumGlow", "renderNUXHighlight", "buttonRef"]);
   let {
-    mode: y
+    mode: C
   } = (0, o.ZP)({
     location: "StreamButton"
   }), {
@@ -76,7 +76,7 @@ function u(e) {
     disabled: !u,
     iconComponent: O,
     isActive: d,
-    color: (b ? n = "premiumGradient" : (x || y === o.BK.GroupedButtonsRedMic) && d && (n = "green"), n),
+    color: (b ? n = "premiumGradient" : (x || C === o.BK.GroupedButtonsRedMic) && d && (n = "green"), n),
     caretColor: v ? "green" : "primaryDark",
     onMouseEnter: e => {
       null == f || f(e), E.onMouseEnter()
@@ -85,5 +85,5 @@ function u(e) {
       null == m || m(e), E.onMouseLeave()
     },
     premiumGlow: g
-  }, C))
+  }, y))
 }

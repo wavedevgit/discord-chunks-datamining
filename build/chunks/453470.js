@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(621600),
   b = n(276060),
   _ = n(870991),
-  C = n(981631),
-  y = n(134612),
+  y = n(981631),
+  C = n(134612),
   x = n(388032);
 
 function v(e) {
@@ -30,7 +30,7 @@ function v(e) {
   } = e, O = (0, _.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [v])
   }, [t, v]), N = (0, b.t)({
-    location: y.zr
+    location: C.zr
   }), I = e => {
     a.Z.updateChannelOverrideSettings(null, t, {
       muted: !0
@@ -93,7 +93,7 @@ function v(e) {
     })
   };
   return (i.useEffect(() => {
-    N && ((0, f.MC)(C.rMx.SAFETY_WARNING_VIEWED, {
+    N && ((0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
       senderId: j,

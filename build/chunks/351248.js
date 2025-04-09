@@ -19,7 +19,7 @@ var r = n(200651),
   b = n(893354),
   _ = n(565128);
 
-function C(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -27,7 +27,7 @@ function C(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let y = {
+let C = {
     STEPS: 23,
     FRAME_DURATION: 17,
     FRAME_SIZE: 26
@@ -74,9 +74,9 @@ class v extends i.PureComponent {
     } = this;
     r.setValue(1), n.setValue(0);
     let l = [];
-    for (let e = 0; e < y.STEPS; e++) l.push(a.Z.timing(n, {
-      toValue: -y.FRAME_SIZE * e,
-      duration: y.FRAME_DURATION
+    for (let e = 0; e < C.STEPS; e++) l.push(a.Z.timing(n, {
+      toValue: -C.FRAME_SIZE * e,
+      duration: C.FRAME_DURATION
     }));
     a.Z.sequence([a.Z.timing(t, {
       toValue: 0,
@@ -144,7 +144,7 @@ class v extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), C(this, "scaleAnimation", new a.Z.Value(0)), C(this, "spriteAnimation", new a.Z.Value(0)), C(this, "spriteOpacity", new a.Z.Value(0)), C(this, "widthAnimation", new a.Z.Value(0))
+    super(...e), y(this, "scaleAnimation", new a.Z.Value(0)), y(this, "spriteAnimation", new a.Z.Value(0)), y(this, "spriteOpacity", new a.Z.Value(0)), y(this, "widthAnimation", new a.Z.Value(0))
   }
 }
 
@@ -157,7 +157,7 @@ function j(e) {
     onClick: a,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), C = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), y = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
+  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -168,12 +168,12 @@ function j(e) {
     } = e;
     return (0, r.jsx)(v, {
       className: g.participant,
-      width: (0, d.pxk)(C),
+      width: (0, d.pxk)(y),
       theme: _,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(C), s && y),
-        size: C,
+        src: l.getAvatarURL(b, (0, d.pxk)(y), s && C),
+        size: y,
         muted: null != (t = null == o ? void 0 : o.isVoiceMuted()) && t,
         deafen: null != (n = null == o ? void 0 : o.isVoiceDeafened()) && n,
         speaking: s,

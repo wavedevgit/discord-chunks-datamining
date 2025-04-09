@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(221292),
   b = n(687158),
   _ = n(899007),
-  C = n(648052),
-  y = n(867176),
+  y = n(648052),
+  C = n(867176),
   x = n(280885),
   v = n(900927),
   j = n(678738),
@@ -85,7 +85,7 @@ function R(e) {
             })
           }), (0, r.jsxs)("header", {
             className: T.header,
-            children: [(0, r.jsx)(y.Z, {
+            children: [(0, r.jsx)(C.Z, {
               user: t,
               displayProfile: k,
               profileType: S.y0.PANEL,
@@ -107,7 +107,7 @@ function R(e) {
               nickname: f.ZP.getName(null, n.id, t),
               pronouns: null == k ? void 0 : k.pronouns,
               onOpenProfile: R ? void 0 : B,
-              tags: (0, r.jsx)(C.Z, {
+              tags: (0, r.jsx)(y.Z, {
                 displayProfile: k,
                 profileType: S.y0.PANEL
               })

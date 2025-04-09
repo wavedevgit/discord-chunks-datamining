@@ -19,8 +19,8 @@ var r = n(192379),
   g = n(178762),
   b = n(206583),
   _ = n(809017),
-  C = n(981631),
-  y = n(388032);
+  y = n(981631),
+  C = n(388032);
 let x = 0;
 
 function v(e) {
@@ -55,11 +55,11 @@ function v(e) {
       key: _.G,
       count: e.length,
       index: n.length,
-      title: y.NW.string(y.t["6gwSFR"]),
+      title: C.NW.string(C.t["6gwSFR"]),
       onToggleExpand: () => {
         E(e => {
           let t = !e;
-          return u.default.track(C.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
+          return u.default.track(y.rMx.MEMBERLIST_CONTENT_FEED_TOGGLED, {
             channel_id: v,
             guild_id: j,
             expanded: t
@@ -74,9 +74,9 @@ function v(e) {
       [l, ...t],
       [...n, l, ...e], Math.random(), e
     ]
-  }, [v, I, O, t, j, N, n, x, Z, k, S]), U = r.useRef(0), B = r.useRef(I), H = r.useRef(void 0), F = r.useRef({
+  }, [v, I, O, t, j, N, n, x, Z, k, S]), U = r.useRef(0), B = r.useRef(I), H = r.useRef(void 0), G = r.useRef({
     impressionCappedEntryIds: P
-  }), G = r.useCallback(e => {
+  }), F = r.useCallback(e => {
     var t;
     let n = Math.floor(e / g.YN),
       r = Math.min(null != (t = null == W ? void 0 : W.length) ? t : 0, n);
@@ -85,7 +85,7 @@ function v(e) {
   return r.useEffect(() => {
     B.current = I
   }, [I]), r.useEffect(() => {
-    F.current = {
+    G.current = {
       impressionCappedEntryIds: P
     }
   }, [P]), r.useEffect(() => (U.current = 0, H.current = Date.now(), () => {
@@ -93,7 +93,7 @@ function v(e) {
     if (null == N || null == H.current || Date.now() - H.current < 3e3) return;
     let n = null != (t = null == (e = B.current) ? void 0 : e.map(e => e.id)) ? t : [],
       r = n.slice(0, U.current);
-    !Z && T && k && ((0, f.e)(C.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+    !Z && T && k && ((0, f.e)(y.rMx.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
       request_id: N,
       first_shown_at: H.current,
       item_ids: r,
@@ -101,7 +101,7 @@ function v(e) {
       channel_id: v,
       guild_id: j,
       all_item_ids: n,
-      impression_capped_item_ids: [...F.current.impressionCappedEntryIds]
+      impression_capped_item_ids: [...G.current.impressionCappedEntryIds]
     }), (0, d.wm)("useInjectContentInventoryFeed") && l.Z.dispatch({
       type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
       itemIds: r
@@ -110,6 +110,6 @@ function v(e) {
     groups: M,
     rows: L,
     version: D,
-    updateMaxRowSeen: G
+    updateMaxRowSeen: F
   }
 }

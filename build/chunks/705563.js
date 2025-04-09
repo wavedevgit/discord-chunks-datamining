@@ -24,13 +24,13 @@ function _(e) {
     channelId: t,
     showProfile: n = !1,
     showTrailingDivider: _ = !1
-  } = e, C = d.default.cast(t), {
-    joinRequest: y,
+  } = e, y = d.default.cast(t), {
+    joinRequest: C,
     isModmin: x,
     guildId: v,
     maxMembers: j
   } = (0, i.cj)([p.Z, c.Z, u.Z], () => {
-    let e = p.Z.getRequest(C),
+    let e = p.Z.getRequest(y),
       t = c.Z.getGuild(null == e ? void 0 : e.guildId);
     return {
       joinRequest: e,
@@ -42,8 +42,8 @@ function _(e) {
     approveRequest: N,
     rejectRequest: I,
     submitting: P
-  } = (0, f.s)(null == y ? void 0 : y.guildId, null == y ? void 0 : y.userId, null == y ? void 0 : y.joinRequestId);
-  return null != y && y.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
+  } = (0, f.s)(null == C ? void 0 : C.guildId, null == C ? void 0 : C.userId, null == C ? void 0 : C.joinRequestId);
+  return null != C && C.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
     className: b.buttons,
     children: [(0, r.jsx)(l.ua7, {
       text: g.NW.string(g.t.cdPGbG),
@@ -89,14 +89,14 @@ function _(e) {
       color: l.zxk.Colors.RED,
       onClick: I,
       size: l.PhG.SMALL,
-      disabled: P || y.applicationStatus !== h.wB.SUBMITTED,
+      disabled: P || C.applicationStatus !== h.wB.SUBMITTED,
       children: g.NW.string(g.t.hDtbs7)
     }), n && (0, r.jsx)(l.zxk, {
       color: l.zxk.Colors.TRANSPARENT,
       onClick: () => {
         (0, a.openUserProfileModal)({
-          userId: y.userId,
-          guildId: y.guildId,
+          userId: C.userId,
+          guildId: C.guildId,
           analyticsLocation: {
             section: m.jXE.GUILD_MEMBER_VERIFICATION_APPLICATION_REVIEW,
             object: m.qAy.JOIN_REQUEST

@@ -20,8 +20,8 @@ var r = n(200651),
   g = n(257115),
   b = n(569545),
   _ = n(102172),
-  C = n(525925),
-  y = n(701362),
+  y = n(525925),
+  C = n(701362),
   x = n(823415),
   v = n(670188),
   j = n(597998),
@@ -119,8 +119,8 @@ let L = (0, p.$)(function(e) {
     video: U,
     embeddedApplication: B,
     serverMute: H,
-    serverDeaf: F,
-    nick: G,
+    serverDeaf: G,
+    nick: F,
     ringing: V,
     speaking: z,
     disconnected: Y,
@@ -155,8 +155,8 @@ let L = (0, p.$)(function(e) {
       channelId: k.id,
       guildId: k.guild_id
     };
-    O.default.getId() !== p.id && u.default.selectVoiceChannel(k.id), Q ? ((0, C.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == et || et(p.id)
-  }, eC = e => {
+    O.default.getId() !== p.id && u.default.selectVoiceChannel(k.id), Q ? ((0, y.Z)(e), s.Z.selectParticipant(e.channelId, (0, b.V9)(e))) : (0, d.iV)(e), null == et || et(p.id)
+  }, ey = e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -172,7 +172,7 @@ let L = (0, p.$)(function(e) {
         })
       }))
     })
-  }, ey = () => (0, r.jsx)(y.Z, {
+  }, eC = () => (0, r.jsx)(C.Z, {
     user: p,
     channel: k,
     onWatch: e_,
@@ -193,11 +193,11 @@ let L = (0, p.$)(function(e) {
         priority: $,
         ringing: V,
         deaf: W,
-        nick: G,
+        nick: F,
         collapsed: l,
         overlap: l,
         serverMute: H,
-        serverDeaf: F,
+        serverDeaf: G,
         tabIndex: ea,
         otherClientSessionType: ei,
         voicePlatform: el,
@@ -209,7 +209,7 @@ let L = (0, p.$)(function(e) {
         selected: ep,
         onClick: t ? void 0 : em,
         onDoubleClick: e_,
-        onContextMenu: eC,
+        onContextMenu: ey,
         guildId: k.guild_id,
         isSelf: ec,
         application: eu,
@@ -247,7 +247,7 @@ let L = (0, p.$)(function(e) {
     return (0, r.jsx)(a.yRy, {
       targetElementRef: ed,
       position: "right",
-      renderPopout: ey,
+      renderPopout: eC,
       shouldShow: en && !ep,
       onRequestClose: eg,
       spacing: 0,

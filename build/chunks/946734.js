@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(430824),
   b = n(594174),
   _ = n(251625),
-  C = n(823379),
-  y = n(665149),
+  y = n(823379),
+  C = n(665149),
   x = n(981631),
   v = n(228168),
   j = n(388032),
@@ -76,7 +76,7 @@ class N {
         return [t, n.map(e => {
           var t;
           return null == (t = g.Z.getGuild(e)) ? void 0 : t.name
-        }).filter(C.lm)]
+        }).filter(y.lm)]
       }).value()
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
       text: j.NW.string(j.t.UTjREx),
@@ -135,7 +135,7 @@ function I(e) {
     className: O.spacer
   }) : (0, r.jsxs)(d.Gt, {
     value: f,
-    children: [(0, r.jsx)(y.iz, {
+    children: [(0, r.jsx)(C.iz, {
       className: O.divider
     }), (0, r.jsx)(s.IGR, {
       text: j.NW.string(j.t.l1QVfn),

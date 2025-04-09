@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(357156),
   b = n(546247),
   _ = n(496675),
-  C = n(146085),
-  y = n(979339),
+  y = n(146085),
+  C = n(979339),
   x = n(643632),
   v = n(939863),
   j = n(388032),
@@ -55,7 +55,7 @@ function N(e) {
   } = e, {
     participants: n,
     usersInSummary: i
-  } = (0, y.Z)(t.id);
+  } = (0, C.Z)(t.id);
   return (0, r.jsxs)("div", {
     className: O.audienceSummary,
     children: [(0, r.jsx)(u.Z, {
@@ -90,11 +90,11 @@ function I(e) {
   let {
     channel: t,
     onContinueClick: n
-  } = e, l = (0, a.e7)([_.Z], () => _.Z.can(C.yP, t), [t]), s = (0, d.Q3)("StartStageChannelCallView"), u = t.guild_id, {
+  } = e, l = (0, a.e7)([_.Z], () => _.Z.can(y.yP, t), [t]), s = (0, d.Q3)("StartStageChannelCallView"), u = t.guild_id, {
     canCreateGuildEvent: p
   } = (0, g.XJ)(t), I = (0, x.Z)(t.id), {
     usersInSummary: P
-  } = (0, y.Z)(t.id), S = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
+  } = (0, C.Z)(t.id), S = (0, c._q$)("StartStageChannelCallView"), Z = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: o()(O.container, {
       [O.withRive]: S

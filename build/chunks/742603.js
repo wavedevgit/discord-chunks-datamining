@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => G
+  Z: () => F
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -19,8 +19,8 @@ var i = n(120356),
   g = n(554747),
   b = n(854698),
   _ = n(897669),
-  C = n(665149),
-  y = n(984370),
+  y = n(665149),
+  C = n(984370),
   x = n(910611),
   v = n(454585),
   j = n(134483),
@@ -111,7 +111,7 @@ function H(e) {
   })
 }
 
-function F(e) {
+function G(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -122,7 +122,7 @@ function F(e) {
     c = null != s ? (0, b.DK)(s) : null,
     d = null != s;
   if ((null == i ? void 0 : i.type) === w.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C.ZP.Divider, {
+    children: [(0, r.jsx)(y.ZP.Divider, {
       className: L.divider
     }), (0, r.jsx)(m.Z, {
       game: n,
@@ -141,7 +141,7 @@ function F(e) {
     let e = i.user,
       n = i.stream;
     t = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(C.ZP.Divider, {
+      children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
       }), (0, r.jsx)(H, {
         user: e,
@@ -163,7 +163,7 @@ function F(e) {
   })
 }
 
-function G(e) {
+function F(e) {
   let {
     channel: t,
     guild: i,
@@ -190,7 +190,7 @@ function G(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: B
         }),
-        onClick: B ? G : void 0,
+        onClick: B ? F : void 0,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function G(e) {
       }))
     }) : null;
 
-  function G() {
+  function F() {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -228,8 +228,8 @@ function G(e) {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(a.f6W, {
       theme: k.BR.DARK,
-      children: e => (0, r.jsxs)(C.ZP, {
-        onDoubleClick: y.O,
+      children: e => (0, r.jsxs)(y.ZP, {
+        onDoubleClick: C.O,
         transparent: !0,
         className: e,
         childrenBottom: H,
@@ -241,11 +241,11 @@ function G(e) {
           isChatOpen: u,
           exitFullScreen: m
         }),
-        children: [null != _ ? (0, r.jsx)(C.ZP.Icon, {
+        children: [null != _ ? (0, r.jsx)(y.ZP.Icon, {
           icon: _,
           disabled: !0,
           "aria-label": N
-        }) : null, (0, r.jsx)(C.ZP.Title, {
+        }) : null, (0, r.jsx)(y.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, V && (0, r.jsx)(a.ua7, {
               text: M.NW.string(M.t.QyZ4TU),
@@ -260,7 +260,7 @@ function G(e) {
         }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(F, {
+        }), (0, r.jsx)(G, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: 2509bcc417fa3859
+  Original File Name: c3bde1617f879897
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -3068,6 +3068,10 @@ strong {
     border: 2px solid var(--background-floating)
 }
 
+.maskPrimary__148e9 {
+    border: 2px solid var(--background-primary)
+}
+
 .maskSecondary__148e9 {
     border: 2px solid var(--background-secondary)
 }
@@ -3078,6 +3082,10 @@ strong {
 
 .alert__148e9 {
     background-color: var(--status-danger)
+}
+
+.blurpleTreatment__148e9 {
+    background-color: var(--blurple-50)
 }
 
 .container__1405b {
@@ -7040,6 +7048,22 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     position: relative
 }
 
+.appLauncherCircleMask_e6e74f {
+    background: var(--bg-overlay-3,var(--channeltextarea-background));
+    border-radius: 50%;
+    z-index: 2
+}
+
+.visual-refresh .appLauncherCircleMask_e6e74f {
+    background: var(--chat-background-default)
+}
+
+.appLauncherGlow_e6e74f {
+    position: fixed;
+    z-index: 1;
+    overflow: hidden
+}
+
 .visual-refresh .channelAppLauncher_e6e74f {
     margin: 0;
     padding: 0;
@@ -7144,6 +7168,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     to {
         transform: translateY(100%)
     }
+}
+
+.channelAppLauncherButtonBadge_e6e74f {
+    position: absolute
 }
 
 .channelAppLauncherButtonPopoutIconShimmerContainer_e6e74f {
@@ -14070,4 +14098,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=2509bcc417fa3859.css.map*/
+/*# sourceMappingURL=c3bde1617f879897.css.map*/

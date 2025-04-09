@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(236091),
   b = n(540059),
   _ = n(569545),
-  C = n(517525),
-  y = n(665149),
+  y = n(517525),
+  C = n(665149),
   x = n(6242),
   v = n(757692),
   j = n(141321),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(358221),
   B = n(887012),
   H = n(444253),
-  F = n(355827),
-  G = n(185935),
+  G = n(355827),
+  F = n(185935),
   V = n(795318),
   z = n(354459),
   Y = n(981631),
@@ -137,7 +137,7 @@ function $(e) {
     participantsListOpen: U.Z.getParticipantsListOpen(et)
   }), [et]), eo = (0, c.e7)([W.default], () => W.default.getCurrentUser()), ea = (0, B.Z)(n), es = (0, v.o)(er, eo), ec = (0, x.lL)("CallHeader", !0, eo, es), eu = n.isGuildVoice() && !s, {
     hasParticipantsPanel: ed
-  } = (0, G.Z)({
+  } = (0, F.Z)({
     location: "ChannelCallHeaderToolbar"
   }), ep = !el && ed && (n.isGuildVoice() || n.isGroupDM()), {
     enabled: eh,
@@ -170,7 +170,7 @@ function $(e) {
   }, "clips-enabled-indicator")), (null == er ? void 0 : er.type) === z.fO.STREAM && (e_.push((0, r.jsx)(P.Z, {
     className: K.button,
     participant: er
-  }, "warning")), e_.push((0, r.jsx)(C.Z, {
+  }, "warning")), e_.push((0, r.jsx)(y.Z, {
     size: f.ZP.Sizes.LARGE,
     className: K.button,
     participant: er,
@@ -180,7 +180,7 @@ function $(e) {
     targetElementRef: L,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(Z.Z, {
-      children: (0, r.jsx)(F.Z, {
+      children: (0, r.jsx)(G.Z, {
         channel: n
       })
     }),
@@ -242,7 +242,7 @@ function $(e) {
         className: K.lastButton
       }))
     }
-  }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(y.ZP.Divider, {
+  }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(C.ZP.Divider, {
     className: K.divider
   }, "divider")), ep && e_.push((0, r.jsx)(k.Z, {
     className: o()(K.button, {

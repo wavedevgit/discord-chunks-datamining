@@ -24,8 +24,8 @@ function b(e) {
     tooltipText: l,
     canToggle: b,
     iconAltText: _,
-    onChange: C,
-    tooltipColor: y,
+    onChange: y,
+    tooltipColor: C,
     className: x,
     id: v = "fancybutton-toggle",
     collapseWhenChecked: j = !0,
@@ -44,7 +44,7 @@ function b(e) {
       tooltipText: l
     }),
     position: "top",
-    color: null != y ? y : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
+    color: null != C ? C : E ? c.ua7.Colors.BLACK : c.ua7.Colors.BRAND,
     "aria-label": l,
     tooltipClassName: f.tooltip,
     className: f.tooltipContainer,
@@ -54,7 +54,7 @@ function b(e) {
       onChange: function() {
         if (b) {
           let e = !t;
-          P(!0), null == C || C(e)
+          P(!0), null == y || y(e)
         }
         "function" == typeof O && O()
       },

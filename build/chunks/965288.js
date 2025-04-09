@@ -19,8 +19,8 @@ var r = n(200651),
   g = n(906732),
   b = n(213609),
   _ = n(795318),
-  C = n(670188),
-  y = n(314897),
+  y = n(670188),
+  C = n(314897),
   x = n(271383),
   v = n(709586),
   j = n(5192),
@@ -138,7 +138,7 @@ let S = i.memo(function(e) {
     } = e, {
       user: a,
       blocked: d
-    } = t, v = l.getGuildId(), j = y.default.getId(), {
+    } = t, v = l.getGuildId(), j = C.default.getId(), {
       newestAnalyticsLocation: O
     } = (0, g.ZP)(m.Z.AUDIENCE_TILE), S = (0, f.bp)(), T = (0, u.e7)([x.ZP], () => {
       var e;
@@ -174,7 +174,7 @@ let S = i.memo(function(e) {
         context: S
       })
     }, [a, j, S, v, l, O]);
-    return (0, r.jsx)(C.Z, {
+    return (0, r.jsx)(y.Z, {
       user: a,
       guildId: l.guild_id,
       channelId: l.id,

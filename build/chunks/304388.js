@@ -70,14 +70,14 @@ let d = i.forwardRef(function(e, t) {
     onPopoutClose: m
   } = e, [g, b] = i.useState(!1), {
     isHovered: _,
-    setIsHovered: C,
-    onMouseEnter: y,
+    setIsHovered: y,
+    onMouseEnter: C,
     onMouseLeave: x,
     cancelTimers: v
   } = (0, o.Z)(200, 300);
 
   function j(e) {
-    "focus" === e.type || g || y()
+    "focus" === e.type || g || C()
   }
 
   function O() {
@@ -89,9 +89,9 @@ let d = i.forwardRef(function(e, t) {
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      C(!1), b(!1)
+      y(!1), b(!1)
     }
-  }), [C, b]);
+  }), [y, b]);
   let N = _ && !h || g;
   return (0, r.jsx)(l.yRy, {
     animation: l.yRy.Animation.FADE,
@@ -101,12 +101,12 @@ let d = i.forwardRef(function(e, t) {
     align: p,
     spacing: 16,
     onRequestClose: () => {
-      C(!1), b(!1), null == m || m()
+      y(!1), b(!1), null == m || m()
     },
     renderPopout: e => (0, r.jsx)(u, c({
       isHovered: N,
       onFocus: () => b(!0),
-      onMouseEnter: y,
+      onMouseEnter: C,
       onMouseLeave: O,
       renderPopout: n
     }, e)),

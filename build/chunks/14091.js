@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(768119),
   b = n(944486),
   _ = n(585483),
-  C = n(251285),
-  y = n(406326),
+  y = n(251285),
+  C = n(406326),
   x = n(994463),
   v = n(619753),
   j = n(981631),
@@ -222,7 +222,7 @@ class Z extends i.PureComponent {
         isHistoricalIndexing: i,
         documentsIndexed: l
       } = this.props.search;
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(C.Z, {
         searchMode: e,
         searchByMode: this.searchByMode,
         totalResults: t,
@@ -296,7 +296,7 @@ function T(e) {
   }, (0, c.cj)([g.Z], () => ({
     searchAnalyticsId: g.Z.getAnalyticsId(i),
     searchType: g.Z.getSearchType()
-  }), [i]), (0, C.Z)(i)), n = n = {
+  }), [i]), (0, y.Z)(i)), n = n = {
     renderEmbeds: m.NA.useSetting(),
     developerMode: m.Sb.useSetting()
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

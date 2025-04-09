@@ -18,9 +18,9 @@ var r = n(200651),
   g = n(576645),
   b = n(921944),
   _ = n(388032),
-  C = n(32709);
+  y = n(32709);
 
-function y(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -42,7 +42,7 @@ function y(e) {
 function x(e) {
   let {
     channel: t
-  } = e, l = (0, a.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [o, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), C = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
+  } = e, l = (0, a.e7)([f.default], () => f.default.getUser(t.hdStreamingBuyerId), [t.hdStreamingBuyerId]), [o, d] = (0, i.useState)(!1), [h, _] = (0, i.useState)(!1), y = (0, g.bK)(), [x, j] = (0, i.useState)(!1);
   (0, u.ZP)(() => {
     t.isHDStreamSplashed && j(!0)
   }), (0, g.Uu)(t),
@@ -56,7 +56,7 @@ function x(e) {
         let {
           default: t
         } = await n.e("88452").then(n.bind(n, 552394));
-        return n => (0, r.jsx)(t, y({
+        return n => (0, r.jsx)(t, C({
           markAsDismissed: u,
           channel: e
         }, n))
@@ -67,7 +67,7 @@ function x(e) {
     d(!1)
   };
   (0, g.J)(t, () => {
-    if (C) {
+    if (y) {
       _(!0), O();
       return
     }
@@ -122,10 +122,10 @@ function v(e) {
     animateOnHover: !0
   });
   return (0, r.jsxs)("div", {
-    className: C.trigger,
+    className: y.trigger,
     children: [(0, r.jsx)(d.Z, {
       ref: l,
-      className: C.video,
+      className: y.video,
       autoPlay: !0,
       onEnded: t,
       children: (0, r.jsx)("source", {
@@ -134,20 +134,20 @@ function v(e) {
       })
     }), (0, r.jsxs)("div", {
       ref: a,
-      className: o()(C.content, {
-        [C.masked]: s
+      className: o()(y.content, {
+        [y.masked]: s
       }),
-      children: [(0, r.jsx)(c.qEK, y({
+      children: [(0, r.jsx)(c.qEK, C({
         src: m,
         "aria-label": n.username,
         size: c.EFr.SIZE_32
       }, g)), (0, r.jsxs)("div", {
-        className: C.text,
+        className: y.text,
         children: [!p && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: _.NW.string(_.t["i/nliI"])
         }), (0, r.jsx)(c.Text, {
-          className: C.premium,
+          className: y.premium,
           variant: "text-sm/normal",
           children: _.NW.string(_.t["Fh/mk5"])
         })]

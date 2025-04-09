@@ -2,7 +2,7 @@
 n.d(t, {
   ZP: () => j,
   cy: () => x,
-  iu: () => y
+  iu: () => C
 }), n(388685);
 var r, i, l, o = n(200651),
   a = n(192379),
@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var y = ((i = {}).CENTER = "center", i.LEFT = "left", i),
+var C = ((i = {}).CENTER = "center", i.LEFT = "left", i),
   x = ((l = {}).TOP = "top", l.MIDDLE = "middle", l);
 class v extends a.PureComponent {
   componentDidMount() {
@@ -158,7 +158,7 @@ class j extends(r = a.PureComponent) {
         return i
       }(e, ["renderMedia", "textAlign", "onComplete", "onSkipAll", "isLongText", "title", "body", "children", "spacing", "forceTheme"]),
       f = "top" === h.position || "bottom" === h.position ? "center" : "top";
-    return (0, o.jsx)(d.yRy, C(_({}, h), {
+    return (0, o.jsx)(d.yRy, y(_({}, h), {
       align: f,
       spacing: null != u ? u : 0,
       renderPopout: this.renderPopoutContent,
@@ -189,7 +189,7 @@ class j extends(r = a.PureComponent) {
       } = this.props, s = null != a;
       return (0, o.jsx)(d.f6W, {
         theme: r,
-        children: e => (0, o.jsx)(v, C(_({}, this.props), {
+        children: e => (0, o.jsx)(v, y(_({}, this.props), {
           className: c()({
             [g.bottom]: "bottom" === n,
             [g.contentNarrowNoMedia]: !i && !s,
@@ -210,6 +210,6 @@ class j extends(r = a.PureComponent) {
     })
   }
 }
-b(j, "TextAlignments", y), b(j, "defaultProps", {
+b(j, "TextAlignments", C), b(j, "defaultProps", {
   textAlign: "left"
 })

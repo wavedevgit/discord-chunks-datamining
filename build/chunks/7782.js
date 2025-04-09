@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(621853),
   b = n(171368),
   _ = n(433355),
-  C = n(699516),
-  y = n(594174),
+  y = n(699516),
+  C = n(594174),
   x = n(768581),
   v = n(525541),
   j = n(981631),
@@ -89,7 +89,7 @@ let P = e => {
       relationshipType: n,
       userId: i,
       showingBanner: l
-    } = e, o = null == (t = y.default.getUser(i)) ? void 0 : t.bot, c = () => {
+    } = e, o = null == (t = C.default.getUser(i)) ? void 0 : t.bot, c = () => {
       s.Z.addRelationship({
         userId: i,
         context: {
@@ -200,7 +200,7 @@ let P = e => {
       isOptimisticAccepted: f,
       isOptimisticRejected: g
     } = (0, p.m)({
-      user: y.default.getUser(n),
+      user: C.default.getUser(n),
       onError: l,
       onAcceptSuccess: s,
       onRejectSuccess: o
@@ -231,7 +231,7 @@ let P = e => {
       showingBanner: i
     } = e, {
       channelId: a
-    } = (0, h._)(), s = (0, o.e7)([d.Z], () => null != a && d.Z.isSpam(a), [a]), c = (0, o.e7)([C.Z], () => C.Z.getRelationshipType(t), [t]), u = n.id === a, p = !l.tq && !u, m = !!l.tq || u || s;
+    } = (0, h._)(), s = (0, o.e7)([d.Z], () => null != a && d.Z.isSpam(a), [a]), c = (0, o.e7)([y.Z], () => y.Z.getRelationshipType(t), [t]), u = n.id === a, p = !l.tq && !u, m = !!l.tq || u || s;
     if (t === O.fL) return null;
     let g = s || u ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(Z, {

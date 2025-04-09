@@ -19,8 +19,8 @@ var r = n(200651),
   g = n(434404),
   b = n(330010),
   _ = n(978946),
-  C = n(314897),
-  y = n(430824),
+  y = n(314897),
+  C = n(430824),
   x = n(594174),
   v = n(259580),
   j = n(585483),
@@ -111,15 +111,15 @@ function W(e) {
 function U(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([y.Z], () => null != t ? y.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([C.default], () => (null == l ? void 0 : l.ownerId) === C.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([y.default], () => (null == l ? void 0 : l.ownerId) === y.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
     canMessage: H
-  } = (0, m.TE)(t, l), F = (0, s.e7)([x.default], () => {
+  } = (0, m.TE)(t, l), G = (0, s.e7)([x.default], () => {
     var e, t;
     return (null == (e = x.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = x.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
-    guildPopulated: G,
+    guildPopulated: F,
     guildMessaged: V,
     guildPersonalized: z
   } = (0, m.h_)(l), {
@@ -199,7 +199,7 @@ function U(e) {
         }))
       }, [e])
     }
-  }(l), J = !(F || G || V || z), {
+  }(l), J = !(G || F || V || z), {
     titleAnimatedStyle: $,
     opacities: ee
   } = function(e) {
@@ -257,7 +257,7 @@ function U(e) {
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.YvY : R,
       header: Z.NW.string(Z.t.q9n0TU),
-      completed: G,
+      completed: F,
       onClick: Y
     })
   }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
@@ -290,7 +290,7 @@ function U(e) {
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.yIb : w,
       header: Z.NW.string(Z.t.pGVNIy),
-      completed: F,
+      completed: G,
       onClick: X
     })
   }, "download")), el.push((0, r.jsx)(a.Z.div, {

@@ -18,9 +18,9 @@ var r = n(200651),
   g = n(177342),
   b = n(134612),
   _ = n(981631),
-  C = n(388032);
+  y = n(388032);
 
-function y(e) {
+function C(e) {
   let {
     senderId: t,
     channelId: n,
@@ -47,9 +47,9 @@ function y(e) {
     }), s.Z.unignoreUser(t, "web_stranger_danger_more", n)
   }, [n, l, t]);
   return (0, r.jsx)(d.ZP, {
-    title: C.NW.string(C.t.avyV7O),
-    description: C.NW.string(C.t.naWE6e),
-    buttonText: a ? C.NW.string(C.t["3SrzRU"]) : C.NW.string(C.t.avyV7O),
+    title: y.NW.string(y.t.avyV7O),
+    description: y.NW.string(y.t.naWE6e),
+    buttonText: a ? y.NW.string(y.t["3SrzRU"]) : y.NW.string(y.t.avyV7O),
     onButtonPress: a ? u : c
   })
 }
@@ -104,21 +104,21 @@ function x(e) {
             channelId: t,
             warningId: x,
             senderId: v,
-            description: C.NW.string(C.t.DJMZX1),
+            description: y.NW.string(y.t.DJMZX1),
             safetyTipRows: E.map((e, t) => (0, r.jsx)(u.q, {
               index: t,
               listType: "numbered",
               title: e
             }, t)),
             actionRows: (0, r.jsxs)(r.Fragment, {
-              children: [(0, r.jsx)(y, {
+              children: [(0, r.jsx)(C, {
                 senderId: v,
                 channelId: t,
                 warningId: x
               }, "more-tips-button"), (0, r.jsx)(d.ZP, {
-                title: C.NW.string(C.t["5QYPOz"]),
-                description: C.NW.string(C.t.G08MKi),
-                buttonText: C.NW.string(C.t["5QYPOz"]),
+                title: y.NW.string(y.t["5QYPOz"]),
+                description: y.NW.string(y.t.G08MKi),
+                buttonText: y.NW.string(y.t["5QYPOz"]),
                 buttonColor: a.zxk.Colors.RED,
                 onButtonPress: () => {
                   l(), P(m.NM.USER_MODAL_BLOCK_CONFIRM, m.NM.USER_MODAL_BLOCK_CANCEL, I)
@@ -183,11 +183,11 @@ function x(e) {
     warningId: x,
     senderId: v,
     warningType: f.pj.STRANGER_DANGER,
-    header: C.NW.string(C.t.iOkDpK),
-    description: C.NW.string(C.t.ISUbcH),
+    header: y.NW.string(y.t.iOkDpK),
+    description: y.NW.string(y.t.ISUbcH),
     onDismiss: O,
     buttons: [{
-      text: C.NW.string(C.t["Qk/c4+"]),
+      text: y.NW.string(y.t["Qk/c4+"]),
       color: a.zxk.Colors.BRAND,
       onclick: () => {
         I(), (0, m.qc)({
@@ -199,7 +199,7 @@ function x(e) {
         })
       }
     }, ...j ? [] : [{
-      text: C.NW.string(C.t.ie0QdH),
+      text: y.NW.string(y.t.ie0QdH),
       color: a.zxk.Colors.RED,
       onclick: () => P(m.NM.USER_BANNER_BLOCK_CONFIRM, m.NM.USER_BANNER_BLOCK_CANCEL)
     }]]

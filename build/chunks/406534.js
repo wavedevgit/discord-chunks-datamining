@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(62764),
   b = n(79712),
   _ = n(736052),
-  C = n(359110),
-  y = n(359119),
+  y = n(359110),
+  C = n(359119),
   x = n(13279),
   v = n(248789),
   j = n(88101),
@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(186877),
   B = n(294218),
   H = n(534469),
-  F = n(993397),
-  G = n(511010),
+  G = n(993397),
+  F = n(511010),
   V = n(524444),
   z = n(977391),
   Y = n(921235),
@@ -131,19 +131,19 @@ function er(e) {
     eg = (0, U.$)(f),
     eb = B.length > 0 && (null == (t = B.first()) ? void 0 : t.isFirstMessageInForumPost(f)),
     e_ = (0, c.ts)(f),
-    eC = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ep),
-    ey = (0, j.P)(f.id),
+    ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ep),
+    eC = (0, j.P)(f.id),
     ex = (0, x.z)(f.id, J.zr),
     ev = (0, p.k)(f.id),
     ej = (0, W.Z)(),
     eO = function(e, t) {
       if (e.isDM() && null != t)
-        if (t.type === y.pj.STRANGER_DANGER) return (0, r.jsx)(O.M, {
+        if (t.type === C.pj.STRANGER_DANGER) return (0, r.jsx)(O.M, {
           channelId: e.id,
           warningId: t.id,
           senderId: e.getRecipientId()
         });
-        else if (t.type === y.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
+        else if (t.type === C.pj.LIKELY_ATO) return (0, r.jsx)(h.M, {
         channelId: e.id,
         warningId: t.id,
         senderId: e.getRecipientId()
@@ -154,7 +154,7 @@ function er(e) {
         senderId: e.getRecipientId()
       });
       return null
-    }(f, null != (n = null != ey ? ey : ex) ? n : ev),
+    }(f, null != (n = null != eC ? eC : ex) ? n : ev),
     eE = f.isForumPost() && !eb ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
@@ -171,7 +171,7 @@ function er(e) {
           item: e,
           channel: f,
           isBeforeGroup: null == e.content && et(eo[t + 1])
-        }) : (0, r.jsx)(G.Z, {
+        }) : (0, r.jsx)(F.Z, {
           isUnread: l,
           isBeforeGroup: null == e.content && et(eo[t + 1]),
           id: l ? X.j1 : void 0,
@@ -186,7 +186,7 @@ function er(e) {
       }, "forum-post-action-bar-".concat(f.id));
       if (e.type === Q.ys_.MESSAGE_GROUP_BLOCKED || e.type === Q.ys_.MESSAGE_GROUP_IGNORED || e.type === Q.ys_.MESSAGE_GROUP_SPAMMER) {
         let t;
-        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(F.Z, {
+        return t = e.type === Q.ys_.MESSAGE_GROUP_BLOCKED ? $.t["+FcYMz"] : e.type === Q.ys_.MESSAGE_GROUP_IGNORED ? $.t.VFWjc3 : $.t.xfkfTE, (0, r.jsx)(G.Z, {
           unreadId: X.j1,
           messages: e,
           channel: f,
@@ -257,16 +257,16 @@ function er(e) {
           num_unread_summaries: a,
           num_unread_messages: er,
           last_ack_message_id: n,
-          summaries_enabled_by_user: eC,
+          summaries_enabled_by_user: ey,
           summaries_enabled_for_channel: (0, c.Lp)(f)
         }), (0, c.Lp)(f)) {
-        let n = eC ? $.NW.format(t, {
+        let n = ey ? $.NW.format(t, {
           count: er
         }) : $.NW.format(e, {
           count: er,
           timestamp: l
         });
-        if (eC) {
+        if (ey) {
           let e = a > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
@@ -346,7 +346,7 @@ function er(e) {
       channelId: f.id
     }))
   }
-  if (null == i && (0, c.Lp)(f) && eC && ej.includes(K.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
+  if (null == i && (0, c.Lp)(f) && ey && ej.includes(K.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
       channel: f,
       scrollManager: es
     })), B.error) s = (0, r.jsx)(V.Rp, {
@@ -381,7 +381,7 @@ function er(e) {
       onClick: () => (function(e) {
         a.Z.jumpToPresent(e.id, Q.AQB);
         let t = T.Z.getChannelId();
-        e.id === t && (0, C.Kh)(e.id)
+        e.id === t && (0, y.Kh)(e.id)
       })(f),
       className: eh
     })

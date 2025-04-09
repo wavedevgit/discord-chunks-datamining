@@ -23,7 +23,7 @@ function b(e) {
     onJump: b
   } = e, {
     messages: _,
-    loading: C
+    loading: y
   } = (0, l.cj)([d.Z], () => {
     let e = d.Z.getPinnedMessages(t.id),
       n = null != e ? e.messages : g;
@@ -31,12 +31,12 @@ function b(e) {
       messages: n,
       loading: null == n || null != e && e.loading
     }
-  }), y = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
+  }), C = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
   return (0, c.ZP)(() => {
     _.some(u.k5) && s.Z.fetchPins(t.id, !0)
   }), i.useEffect(() => {
-    y && s.Z.ackPins(t.id)
-  }, [y, t.id]), (0, r.jsx)(a.VqE, {
+    C && s.Z.ackPins(t.id)
+  }, [C, t.id]), (0, r.jsx)(a.VqE, {
     "aria-label": m.NW.string(m.t["mp1N//"]),
     children: (0, r.jsx)(h.ZP, {
       onFetch: function() {
@@ -44,7 +44,7 @@ function b(e) {
       },
       channel: t,
       messages: _,
-      loading: C,
+      loading: y,
       analyticsName: "Channel Pins",
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? s.Z.unpinMessage(t, e.id) : f.Z.confirmUnpin(t, e))

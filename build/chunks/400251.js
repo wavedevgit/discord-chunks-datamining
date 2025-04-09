@@ -19,8 +19,8 @@ var r = n(200651),
   g = n(769654),
   b = n(601964),
   _ = n(430824),
-  C = n(768581),
-  y = n(683818),
+  y = n(768581),
+  C = n(683818),
   x = n(16853),
   v = n(981631),
   j = n(388032),
@@ -98,7 +98,7 @@ function Z(e) {
     entry: t
   } = e, [l, a] = i.useState(!1), c = i.useRef(null), {
     canEdit: u
-  } = (0, y.Z)(t);
+  } = (0, C.Z)(t);
   return (0, r.jsx)("div", {
     className: o()(O.actionButtonsContainer, {
       [O.forceButtonsShow]: l
@@ -170,25 +170,25 @@ let T = e => {
   var t;
   let {
     entry: l
-  } = e, [o, p] = i.useState(!1), y = null != (0, a.e7)([_.Z], () => _.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [o, p] = i.useState(!1), C = null != (0, a.e7)([_.Z], () => _.Z.getGuild(l.guildId)), x = async () => {
     p(!0);
     try {
-      y ? (0, g.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+      C ? (0, g.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
         source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
       p(!1)
     }
-  }, E = C.ZP.getGuildSplashURL({
+  }, E = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), P = null != (t = C.ZP.getGuildIconURL({
+  }), P = null != (t = y.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40
   })) ? t : void 0, S = j.NW.string(j.t.VJlc0d);
-  return y && (S = j.NW.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
+  return C && (S = j.NW.string(j.t.cqWE2d)), (0, r.jsxs)("div", {
     className: O.card,
     onContextMenu: e => {
       (0, c.jW)(e, async () => {
@@ -274,7 +274,7 @@ let T = e => {
       }), (0, r.jsx)(s.zxk, {
         submitting: o,
         className: O.joinButton,
-        color: y ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
+        color: C ? s.zxk.Colors.PRIMARY : s.zxk.Colors.GREEN,
         onClick: x,
         children: S
       })]

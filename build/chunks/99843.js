@@ -37,7 +37,7 @@ function _(e) {
   return e
 }
 
-function C(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let y = e => {
+let C = e => {
     let {
       channel: t
     } = e;
@@ -57,7 +57,7 @@ let y = e => {
       channelId: t.id
     }) ? (0, r.jsx)(a.ua7, {
       text: g.NW.string(g.t.QyZ4TU),
-      children: e => (0, r.jsx)(a.tQf, C(_({}, e), {
+      children: e => (0, r.jsx)(a.tQf, y(_({}, e), {
         size: "xs",
         "aria-label": g.NW.string(g.t.VHXh8f),
         color: a.TVs.colors.INTERACTIVE_NORMAL
@@ -80,7 +80,7 @@ let y = e => {
           children: [(0, r.jsx)(a.ua7, {
             text: g.NW.string(g.t.pYO54e),
             position: "bottom",
-            children: e => (0, r.jsxs)(a.P3F, C(_({}, e), {
+            children: e => (0, r.jsxs)(a.P3F, y(_({}, e), {
               className: b.clickableTitle,
               onClick: () => f(c),
               onDoubleClick: e => e.stopPropagation(),
@@ -95,7 +95,7 @@ let y = e => {
                 color: "currentColor"
               })]
             }))
-          }), (0, r.jsx)(y, {
+          }), (0, r.jsx)(C, {
             channel: t
           })]
         }) : (0, r.jsx)("form", {
@@ -151,7 +151,7 @@ let y = e => {
           onBlur: e => {
             i !== e.currentTarget.value && s.Z.setName(t.id, e.currentTarget.value)
           }
-        }), (0, r.jsx)(y, {
+        }), (0, r.jsx)(C, {
           channel: t
         })]
       })]

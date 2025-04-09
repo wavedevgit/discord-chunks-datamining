@@ -19,8 +19,8 @@ var i = n(120356),
   g = n(359110),
   b = n(430824),
   _ = n(933557),
-  C = n(354459),
-  y = n(388032),
+  y = n(354459),
+  C = n(388032),
   x = n(249671);
 
 function v(e) {
@@ -34,7 +34,7 @@ function v(e) {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === C.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
   }), g = (0, a.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), v = null != g ? g.getIconURL(32, !0) : null, O = !s || u && !m;
   return ((0, d.Z)({
@@ -70,7 +70,7 @@ function v(e) {
         className: x.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: y.NW.format(y.t.f2tNxM, {
+        children: C.NW.format(C.t.f2tNxM, {
           username: null == t ? void 0 : t.globalName,
           channelName: (0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -92,7 +92,7 @@ function j(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: i
-  } = e, o = (0, m.Q3)("RingUserButton"), a = i ? y.NW.string(y.t.ygslb2) : y.NW.string(y.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, o = (0, m.Q3)("RingUserButton"), a = i ? C.NW.string(C.t.ygslb2) : C.NW.string(C.t["3Hv9qa"]), d = i ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n]), (0, g.Kh)(t)
   };
   return o ? (0, r.jsx)(s.z, {

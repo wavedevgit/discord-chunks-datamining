@@ -22,8 +22,8 @@ function m(e) {
     onCancel: g,
     channel: b,
     analyticsType: _,
-    popoutText: C,
-    animation: y
+    popoutText: y,
+    animation: C
   } = e;
   i.useEffect(() => {
     u.default.track(d.rMx.OPEN_POPOUT, function(e) {
@@ -57,10 +57,10 @@ function m(e) {
   return i.useEffect(() => {
     let e, t = c.Z.theme,
       r = !1;
-    return null != y && (async () => {
+    return null != C && (async () => {
       let [{
         default: i
-      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? y.dark() : y.light()]);
+      }, l] = await Promise.all([Promise.resolve().then(n.t.bind(n, 500923, 23)), (0, o.wj)(t) ? C.dark() : C.light()]);
       r || null == j.current || (e = i.loadAnimation({
         container: j.current,
         renderer: "svg",
@@ -71,14 +71,14 @@ function m(e) {
     })(), () => {
       r = !0, null != e && (e.destroy(), e = void 0)
     }
-  }, [y]), (0, r.jsx)(a.VqE, {
+  }, [C]), (0, r.jsx)(a.VqE, {
     "aria-labelledby": "content-warning-popout-label",
     children: (0, r.jsxs)("form", {
       className: h.contentWarningPopout,
       onSubmit: x,
       children: [(0, r.jsxs)("div", {
         className: h.body,
-        children: [null != y && (0, r.jsx)("div", {
+        children: [null != C && (0, r.jsx)("div", {
           className: h.animation,
           ref: j
         }), (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ function m(e) {
             id: "content-warning-popout-label",
             className: f.markup,
             variant: "text-sm/normal",
-            children: C.body
+            children: y.body
           }), (0, r.jsxs)("div", {
             className: h.buttonWrapper,
             children: [(0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function m(e) {
             })]
           })]
         })]
-      }), null != C.footer && "" !== C.footer ? (0, r.jsxs)("div", {
+      }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
         className: h.footer,
         children: [(0, r.jsx)(a.d3s, {
           size: "xs",
@@ -129,7 +129,7 @@ function m(e) {
           className: h.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: C.footer
+          children: y.footer
         })]
       }) : null]
     })

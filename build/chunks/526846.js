@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(906732),
   b = n(226026),
   _ = n(397698),
-  C = n(895924),
-  y = n(471518),
+  y = n(895924),
+  C = n(471518),
   x = n(425986),
   v = n(216780),
   j = n(390322),
@@ -50,7 +50,7 @@ function L(e) {
     } = function() {
       let e = (0, d.e7)([O.default], () => O.default.onlyShowPreviewAppCollections) ? s.E.PREVIEW : s.E.ACTIVE;
       return i.useEffect(() => {
-        (0, y.XK)({
+        (0, C.XK)({
           surface: k,
           activeState: e
         })
@@ -71,7 +71,7 @@ function L(e) {
       return null == e ? null : e.type === u.C.APPLICATION_BANNER ? e : null
     }, [null == h ? void 0 : h.application_directory_collection_items]),
     {
-      trackItemImpressionRef: C
+      trackItemImpressionRef: y
     } = (0, b.Z)({
       applicationId: null != (t = null == g ? void 0 : g.application.id) ? t : "",
       applicationFlags: null == g ? void 0 : g.application.flags,
@@ -85,7 +85,7 @@ function L(e) {
     containerWidth: 584
   })), (0, r.jsxs)(p.P3F, {
     className: R.clickableBanner,
-    innerRef: C,
+    innerRef: y,
     onClick: () => {
       a(), (0, _.Z)({
         context: {
@@ -117,7 +117,7 @@ let D = i.forwardRef(function(e, t) {
     onMouseEnter: u,
     onMouseLeave: b,
     onClick: _,
-    className: y
+    className: C
   } = e, x = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: v,
     guild_id: O
@@ -158,19 +158,19 @@ let D = i.forwardRef(function(e, t) {
       openInPopout: W,
       analyticsLocations: D
     }), b(), _()
-  }, [D, a, _, b, W]), F = i.useCallback(e => {
+  }, [D, a, _, b, W]), G = i.useCallback(e => {
     u(), E.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: a.id,
       guild_id: a.getGuildId()
     })
-  }, [u, a]), G = B ? p.iWm : p.nG3;
+  }, [u, a]), F = B ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: D,
     children: (0, r.jsx)(j.Z, {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": M,
-        className: y,
+        className: C,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
@@ -181,13 +181,13 @@ let D = i.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: R.container,
-          onMouseEnter: F,
+          onMouseEnter: G,
           onMouseLeave: b,
           children: [(0, r.jsxs)("div", {
             className: R.titleContainer,
             children: [(0, r.jsxs)("div", {
               className: R.titleLeft,
-              children: [(0, r.jsx)(G, {
+              children: [(0, r.jsx)(F, {
                 size: "md",
                 className: R.titleLeftIcon,
                 color: "var(--interactive-active)"
@@ -228,7 +228,7 @@ let D = i.forwardRef(function(e, t) {
               },
               aspectRatio: S.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: R.activitySuggestion,
-              commandOrigin: C.bB.MINI_SHELF
+              commandOrigin: y.bB.MINI_SHELF
             }, e.application.id)), (0, r.jsx)("div", {
               className: o()(R.wumpusRocketOuterContainer, {
                 [R.wumpusReducedMotion]: x

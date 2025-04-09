@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(687158),
   b = n(510659),
   _ = n(113557),
-  C = n(867176),
-  y = n(451834),
+  y = n(867176),
+  C = n(451834),
   x = n(502762),
   v = n(952124),
   j = n(544989),
@@ -63,12 +63,12 @@ function R(e) {
     channelId: R.id
   }), {
     analyticsLocations: W
-  } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = i.useRef(null), B = (0, s.Z)(U), H = (0, b.$m)(), F = (0, a.q_F)({
+  } = (0, d.ZP)(u.Z.PROFILE_PANEL), U = i.useRef(null), B = (0, s.Z)(U), H = (0, b.$m)(), G = (0, a.q_F)({
     opacity: +(null != H.interactionType),
     config: {
       duration: 150
     }
-  }), G = e => {
+  }), F = e => {
     (0, I.openUserProfileModal)(w({
       sourceAnalyticsLocations: W
     }, D, e))
@@ -86,7 +86,7 @@ function R(e) {
           profileType: Z.y0.PANEL,
           themeOverride: L,
           children: [null != H.interactionType && (0, r.jsx)(l.animated.div, {
-            style: F,
+            style: G,
             className: A.backdrop
           }), (0, r.jsxs)(o.u2, {
             children: [(0, r.jsxs)(j.Z, {
@@ -102,13 +102,13 @@ function R(e) {
               })]
             }), (0, r.jsxs)("header", {
               className: A.header,
-              children: [(0, r.jsx)(C.Z, {
+              children: [(0, r.jsx)(y.Z, {
                 user: t,
                 displayProfile: M,
                 profileType: Z.y0.PANEL,
                 animateOnHover: !B,
                 className: A.banner
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(C.Z, {
                 userId: t.id,
                 className: A.toast
               }), (0, r.jsx)(_.Z, {
@@ -117,7 +117,7 @@ function R(e) {
                 displayProfile: M,
                 channelId: R.id,
                 profileType: Z.y0.PANEL,
-                onOpenProfile: k ? void 0 : G
+                onOpenProfile: k ? void 0 : F
               }), (0, r.jsx)(N.Z, {
                 location: "UserProfilePanel",
                 user: t,
@@ -132,7 +132,7 @@ function R(e) {
               displayProfile: M,
               channel: R,
               isHovering: null == H.interactionType && B,
-              onOpenProfile: k ? void 0 : G
+              onOpenProfile: k ? void 0 : F
             }), (0, r.jsx)(S.Z, {
               user: t
             })]
@@ -144,7 +144,7 @@ function R(e) {
               look: a.zxk.Looks.BLANK,
               color: A.footerButtonColor,
               onClick: () => {
-                G(), (0, m.pQ)(w({
+                F(), (0, m.pQ)(w({
                   action: "PRESS_VIEW_PROFILE",
                   analyticsLocations: W
                 }, D))

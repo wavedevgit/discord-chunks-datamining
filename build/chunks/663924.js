@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(496977),
   b = n(314734),
   _ = n(981631),
-  C = n(388032),
-  y = n(760420);
+  y = n(388032),
+  C = n(760420);
 let x = {
   height: b.lv
 };
@@ -35,10 +35,10 @@ function j(e) {
     parentModalKey: c
   } = e, u = i.useRef(null), {
     renderWindow: h,
-    windowDispatch: C
-  } = i.useContext(s.ZP), y = null != c, x = (0, o.Jw)(null != c ? c : ""), j = i.useCallback(e => {
+    windowDispatch: y
+  } = i.useContext(s.ZP), C = null != c, x = (0, o.Jw)(null != c ? c : ""), j = i.useCallback(e => {
     var t;
-    if (!y && (0, o.$s)() || y && !(x && n)) return;
+    if (!C && (0, o.$s)() || C && !(x && n)) return;
     let {
       target: r
     } = e;
@@ -53,12 +53,12 @@ function j(e) {
     v();
     let i = null == (t = (0, p.uB)(e)) ? void 0 : t.activeElement;
     (null == i || "BODY" === i.tagName) && d.S.dispatchToLastSubscribed(_.CkL.TEXTAREA_FOCUS)
-  }, [n, x, y]);
-  i.useLayoutEffect(() => (h.addEventListener("mousedown", j), h.addEventListener("contextmenu", j), C.subscribe(_.CkL.POPOUT_CLOSE, v), () => {
-    h.removeEventListener("mousedown", j), h.removeEventListener("contextmenu", j), C.unsubscribe(_.CkL.POPOUT_CLOSE, v)
-  }), [j, h, C]), (0, a.Tbt)(u), i.useEffect(() => {
-    (!y && (0, o.$s)() || y && !x) && v()
-  }, [x, y]);
+  }, [n, x, C]);
+  i.useLayoutEffect(() => (h.addEventListener("mousedown", j), h.addEventListener("contextmenu", j), y.subscribe(_.CkL.POPOUT_CLOSE, v), () => {
+    h.removeEventListener("mousedown", j), h.removeEventListener("contextmenu", j), y.unsubscribe(_.CkL.POPOUT_CLOSE, v)
+  }), [j, h, y]), (0, a.Tbt)(u), i.useEffect(() => {
+    (!C && (0, o.$s)() || C && !x) && v()
+  }, [x, C]);
   let O = (0, g.Z)();
   return (0, r.jsx)(m.Z, {
     ref: u,
@@ -92,7 +92,7 @@ let O = i.memo(function(e) {
   return (0, r.jsx)("span", {
     style: b.u$,
     children: (0, r.jsx)(u.W5, {
-      className: y.positionLayer,
+      className: C.positionLayer,
       targetRef: t,
       position: "top",
       align: "right",
@@ -104,10 +104,10 @@ let O = i.memo(function(e) {
           isPositioned: t
         } = e;
         return (0, r.jsx)("section", {
-          className: y.positionContainer,
+          className: C.positionContainer,
           role: "dialog",
           style: x,
-          "aria-label": C.NW.string(C.t["3CNGLC"]),
+          "aria-label": y.NW.string(y.t["3CNGLC"]),
           children: t && (0, r.jsx)(j, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},

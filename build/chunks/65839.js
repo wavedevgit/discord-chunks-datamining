@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(388032),
   b = n(400816),
   _ = n(104402),
-  C = n(584354),
-  y = n(725060);
+  y = n(584354),
+  C = n(725060);
 let x = e => {
   let {
     searchQuery: t,
@@ -36,7 +36,7 @@ let x = e => {
     children: [(0, r.jsx)("img", {
       alt: "",
       className: _.headerImage,
-      src: d ? y : C
+      src: d ? C : y
     }), (0, r.jsx)("div", {
       className: _.headerContentWrapper,
       children: (0, r.jsxs)("div", {
@@ -133,8 +133,8 @@ let j = e => {
     setSearchQuery: c,
     handleClearSearch: d,
     handleSearchKeyPress: p,
-    currentCategoryId: C,
-    handleSelectCategory: y,
+    currentCategoryId: y,
+    handleSelectCategory: C,
     categoryCounts: j,
     allEntriesCount: O,
     isLoading: E
@@ -159,9 +159,9 @@ let j = e => {
           className: _.tabBar,
           type: "top",
           look: "brand",
-          selectedItem: C,
+          selectedItem: y,
           onItemSelect: e => {
-            y(e)
+            C(e)
           },
           children: [(0, r.jsx)(s.njP.Item, {
             className: _.tabBarItem,

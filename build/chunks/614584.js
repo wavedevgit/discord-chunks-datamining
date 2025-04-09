@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(937889),
   b = n(739566),
   _ = n(267128),
-  C = n(507418),
-  y = n(348238),
+  y = n(507418),
+  C = n(348238),
   x = n(981631),
   v = n(388032);
 
@@ -118,7 +118,7 @@ let E = i.memo(function(e) {
   } = (0, l.cj)([f.Z], () => ({
     isReplyAuthorBlocked: null != w && f.Z.isBlockedForMessage(w),
     isReplyAuthorIgnored: null != w && f.Z.isIgnoredForMessage(w)
-  }), [w]), U = (0, y.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, y.$3)(n, w, D, W), H = (0, y.Wl)(w, N, P, Z), F = (0, y.rY)(S, Z), G = i.useCallback(() => {
+  }), [w]), U = (0, C.wq)(null == w ? void 0 : w.author.id, N.id), B = (0, C.$3)(n, w, D, W), H = (0, C.Wl)(w, N, P, Z), G = (0, C.rY)(S, Z), F = i.useCallback(() => {
     Z({
       referencedUsernameProfile: !1,
       referencedAvatarProfile: !1
@@ -136,12 +136,12 @@ let E = i.memo(function(e) {
     isReplyAuthorIgnored: W,
     showAvatarPopout: S,
     showUsernamePopout: P,
-    renderPopout: C.Z,
-    onClickAvatar: F,
+    renderPopout: y.Z,
+    onClickAvatar: G,
     onClickUsername: H,
     onClickReply: B,
     onContextMenu: U,
-    onPopoutRequestClose: G,
+    onPopoutRequestClose: F,
     isReplySpineClickable: T,
     showReplySpine: A
   })

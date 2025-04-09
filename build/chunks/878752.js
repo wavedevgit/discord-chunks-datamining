@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(983131),
   b = n(82965),
   _ = n(131951),
-  C = n(213652),
-  y = n(320427),
+  y = n(213652),
+  C = n(320427),
   x = n(145010),
   v = n(933686),
   j = n(361057),
@@ -51,20 +51,20 @@ function I(e) {
   }), M = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
   if (null == t || null != w) return null;
   let H = (0, m.Z)(t),
-    F = !Z && H,
-    G = !Z && B,
+    G = !Z && H,
+    F = !Z && B,
     V = k && M,
     z = R && n;
   return (0, r.jsxs)(a.Gt, {
     value: S,
     children: [(0, r.jsxs)("div", {
       className: N.voiceEffectsActionBar,
-      children: [F && (0, r.jsx)(O.Z, {
+      children: [G && (0, r.jsx)(O.Z, {
         channel: t,
         themeable: P
-      }), G && (0, r.jsx)(v.Z, {
+      }), F && (0, r.jsx)(v.Z, {
         channel: t
-      }), V && (0, r.jsx)(C.Z, {
+      }), V && (0, r.jsx)(y.Z, {
         channel: t
       }), U && (0, r.jsx)(p.t, {
         potionRef: A,
@@ -74,10 +74,10 @@ function I(e) {
         ref: A,
         channel: t,
         glow: U
-      }), z && (0, r.jsx)(y.Z, {}), z && (0, r.jsx)(x.Z, {
+      }), z && (0, r.jsx)(C.Z, {}), z && (0, r.jsx)(x.Z, {
         channel: t
       }), z && (0, r.jsx)(E.Z, {})]
-    }), I && (F || G || V || U || T || z) && (0, r.jsx)("div", {
+    }), I && (G || F || V || U || T || z) && (0, r.jsx)("div", {
       className: N.divider
     })]
   })

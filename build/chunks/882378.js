@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => C
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,12 +18,12 @@ var r = n(200651),
   g = n(134612),
   b = n(388032),
   _ = n(426195);
-let C = i.memo(function(e) {
+let y = i.memo(function(e) {
   let {
     channel: t
-  } = e, C = (0, u.h)(t.id), y = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => y ? b.NW.string(b.t["16QyDg"]) : null != x ? b.NW.string(b.t.kCN9i4) : null, [y, x]), E = i.useMemo(() => (y || null != x) && !v && !j, [y, x, v, j]), [N, I] = i.useState(O());
+  } = e, y = (0, u.h)(t.id), C = (0, d.o)(t.id), x = (0, p.M)(t.id), v = (0, o.f9)(), j = (0, l.e7)([f.Z], () => f.Z.hasLayers()), O = i.useCallback(() => C ? b.NW.string(b.t["16QyDg"]) : null != x ? b.NW.string(b.t.kCN9i4) : null, [C, x]), E = i.useMemo(() => (C || null != x) && !v && !j, [C, x, v, j]), [N, I] = i.useState(O());
   i.useEffect(() => {
-    null != x && null != C && (a.uvj.announce(b.NW.string(b.t.acsXuL)), setTimeout(() => {
+    null != x && null != y && (a.uvj.announce(b.NW.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [x.id])
     }, 5e3), (0, h.KQ)({
       channelId: t.id,
@@ -32,24 +32,24 @@ let C = i.memo(function(e) {
       warningType: x.type,
       isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
-    })), y && (a.uvj.announce(b.NW.string(b.t["1dxCqK"])), setTimeout(() => {
+    })), C && (a.uvj.announce(b.NW.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
-  }, [t, x, C, y]), (0, s.ZP)(() => {
-    null != C && (0, h.KQ)({
+  }, [t, x, y, C]), (0, s.ZP)(() => {
+    null != y && (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: C.id,
-      warningType: C.type,
+      warningId: y.id,
+      warningType: y.type,
       isNudgeWarning: null != x,
       viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = O();
     null != e && I(e)
-  }, [y, x, O]);
+  }, [C, x, O]);
   let P = i.useCallback(() => {
-    null != x && (0, c.T)(t.id, [x.id]), null != C && ((0, a.ZDy)(async () => {
+    null != x && (0, c.T)(t.id, [x.id]), null != y && ((0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("49508"), n.e("89650")]).then(n.bind(n, 611446));
@@ -61,8 +61,8 @@ let C = i.memo(function(e) {
         return (0, r.jsx)(e, {
           otherUserId: t.getRecipientId(),
           channelId: t.id,
-          warningId: C.id,
-          warningType: C.type,
+          warningId: y.id,
+          warningType: y.type,
           onClose: i,
           transitionState: l
         })
@@ -72,13 +72,13 @@ let C = i.memo(function(e) {
     }), (0, h.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
-      warningId: C.id,
-      warningType: C.type,
+      warningId: y.id,
+      warningType: y.type,
       cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
       isNudgeWarning: null != x
     }))
-  }, [x, C, t]);
-  return null == C ? null : (0, r.jsx)(a.ua7, {
+  }, [x, y, t]);
+  return null == y ? null : (0, r.jsx)(a.ua7, {
     forceOpen: E,
     text: N,
     color: a.FGA.BRAND,

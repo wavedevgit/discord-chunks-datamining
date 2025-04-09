@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(970731),
   b = n(594174),
   _ = n(176354),
-  C = n(823379),
-  y = n(74538),
+  y = n(823379),
+  C = n(74538),
   x = n(401062),
   v = n(696900),
   j = n(456631),
@@ -40,20 +40,20 @@ let M = T.Hz.CHAT,
     section: S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "voice_channel_effect_emoji_picker"
   },
-  D = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(C.lm);
+  D = [m.ZP.getByName("thumbsup"), m.ZP.getByName("eyes"), m.ZP.getByName("laughing"), m.ZP.getByName("watermelon"), m.ZP.getByName("fork_and_knife"), m.ZP.getByName("yum")].filter(y.lm);
 
 function W(e) {
   var t;
   let {
     channel: n,
     closePopout: m,
-    onFocus: C
-  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = y.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), F = (0, f.wC)(n.guild_id), G = (0, l.uniqBy)([...F, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+    onFocus: y
+  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = C.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), G = (0, f.wC)(n.guild_id), F = (0, l.uniqBy)([...G, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: M
-  })).slice(0, Z.e5), V = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !G.slice(0, Z.e5 - 1).some(t => t.name === e.name));
-  V.length > 0 && G.splice(G.length - 1, 1, V[0]);
+  })).slice(0, Z.e5), V = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !F.slice(0, Z.e5 - 1).some(t => t.name === e.name));
+  V.length > 0 && F.splice(F.length - 1, 1, V[0]);
   let z = (0, O.Iu)(B),
     Y = e => {
       c.Z.dispatch({
@@ -107,7 +107,7 @@ function W(e) {
         "aria-label": R.NW.string(R.t.RLHsHx),
         shouldShow: l,
         renderPopout: () => (0, r.jsx)("div", {
-          onMouseEnter: C,
+          onMouseEnter: y,
           children: (0, r.jsx)(g.ZP, {
             className: k.reducedMotionTooltip,
             header: R.NW.string(R.t["6gGHnZ"]),
@@ -129,7 +129,7 @@ function W(e) {
           closePopout: m,
           onSelectEmoji: Y,
           onSelectDisabledEmoji: q,
-          onFocus: C,
+          onFocus: y,
           onExpandedToggle: K,
           analyticsOverride: L,
           emojiSearchProps: {

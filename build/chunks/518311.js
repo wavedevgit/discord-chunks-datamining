@@ -18,8 +18,8 @@ var r, i = n(200651),
   g = n(26151),
   b = n(493683),
   _ = n(529103),
-  C = n(447543),
-  y = n(708690),
+  y = n(447543),
+  C = n(708690),
   x = n(194359),
   v = n(425493),
   j = n(461745),
@@ -42,8 +42,8 @@ var r, i = n(200651),
   U = n(699516),
   B = n(246946),
   H = n(594174),
-  F = n(626135),
-  G = n(572004),
+  G = n(626135),
+  F = n(572004),
   V = n(585483),
   z = n(823379),
   Y = n(709054),
@@ -200,16 +200,16 @@ class ed extends(r = l.PureComponent) {
     let {
       channel: e
     } = this.props;
-    m.Z.wait(() => y.Z.open(null == e ? void 0 : e.id));
+    m.Z.wait(() => C.Z.open(null == e ? void 0 : e.id));
     let t = (0, E.v_)(e);
-    F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
+    G.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
     })), V.S.subscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.subscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown)
   }
   componentWillUnmount() {
-    V.S.unsubscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.unsubscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => y.Z.close())
+    V.S.unsubscribe(J.CkL.SCROLL_PAGE_UP, this.scrollPageUp), V.S.unsubscribe(J.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), null != this.copyTimeout && clearTimeout(this.copyTimeout), m.Z.wait(() => C.Z.close())
   }
   isNotFriends() {
     let {
@@ -232,7 +232,7 @@ class ed extends(r = l.PureComponent) {
     }, {
       autoTrackExposure: !1
     });
-    C.ZP.createInvite(e.id, {
+    y.ZP.createInvite(e.id, {
       max_age: t
     }, J.t4x.GROUP_DM)
   }
@@ -451,7 +451,7 @@ class ed extends(r = l.PureComponent) {
         className: et.marginBottom8,
         children: $.NW.string($.t.t3O2BQ)
       }), (0, i.jsx)(f.kO8, {
-        supportsCopy: G.wS,
+        supportsCopy: F.wS,
         placeholder: (0, Z.Z)($.NW.string($.t.lPVBqK)),
         value: s ? n ? $.NW.string($.t["6HzNgY"]) : o : "",
         buttonColor: f.zxk.Colors.BRAND,
@@ -578,15 +578,15 @@ class ed extends(r = l.PureComponent) {
       let e = this.searchBarRef.current;
       null == e || e.focus()
     }), en(this, "focusResult", e => {
-      y.Z.select(e)
+      C.Z.select(e)
     }), en(this, "handleSelect", (e, t) => {
       let {
         results: n,
         channel: r
       } = this.props;
-      null == t ? y.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
+      null == t ? C.Z.clear(null == r ? void 0 : r.id) : null != n && this.handleClick(n[t].user.id)
     }), en(this, "handleSelectionChange", (e, t) => {
-      y.Z.select(t);
+      C.Z.select(t);
       let n = this.scrollerRef.current;
       null != n && n.scrollToIndex({
         section: e,
@@ -597,8 +597,8 @@ class ed extends(r = l.PureComponent) {
       let {
         channel: t
       } = this.props, n = (0, E.v_)(t);
-      y.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
+      C.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
+        G.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -606,14 +606,14 @@ class ed extends(r = l.PureComponent) {
       }, 500)
     }), en(this, "handleRemoveUser", e => {
       let t = Array.from(this.props.selectedUsers);
-      y.Z.removeUser(t[e]), this.forceFocus()
+      C.Z.removeUser(t[e]), this.forceFocus()
     }), en(this, "handleClick", e => {
       let {
         selectedUsers: t,
         query: n,
         channel: r
       } = this.props;
-      t.has(e) ? y.Z.removeUser(e) : (y.Z.addUser(e), n.length > 0 && y.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
+      t.has(e) ? C.Z.removeUser(e) : (C.Z.addUser(e), n.length > 0 && C.Z.clear(null == r ? void 0 : r.id)), this.forceFocus()
     }), en(this, "handleAddFriendNavigation", () => {
       (0, T.uL)(J.Z5c.FRIENDS), _.Z.setSection(J.pJs.ADD_FRIEND), this.props.onClose()
     }), en(this, "handleScroll", () => {
@@ -628,7 +628,7 @@ class ed extends(r = l.PureComponent) {
         } = this.props,
         r = (0, E.v_)(n),
         i = !0;
-      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), G.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -645,7 +645,7 @@ class ed extends(r = l.PureComponent) {
           if (e.isDM() && n !== e.id) return void g.Z.call(n, !1, !0);
           g.Z.ring(n, t)
         }
-      }), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      }), G.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: !0,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -678,13 +678,13 @@ class ed extends(r = l.PureComponent) {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, G.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, F.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: !0
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
           copied: !1
         })
-      }, 1e3), F.default.track(J.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), G.default.track(J.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -724,14 +724,14 @@ function eh(e) {
     popoutPosition: d = "bottom",
     popoutAlign: p = "right",
     subscribeToGlobalHotkey: m = !1
-  } = e, g = l.useRef(null), [b, _] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), C = l.useCallback(() => _(e => !e), []);
-  l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, C), () => {
-    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, C)
-  }), [m, C]);
-  let y = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  } = e, g = l.useRef(null), [b, _] = l.useState(null != r && r.isGroupDM() && 0 === r.recipients.length), y = l.useCallback(() => _(e => !e), []);
+  l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, y), () => {
+    V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, y)
+  }), [m, y]);
+  let C = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
-  }, []), null != (t = null == y ? void 0 : y.bot) && t || null != (n = null == y ? void 0 : y.isProvisional) && n) ? null : (0, i.jsx)(f.yRy, {
+  }, []), null != (t = null == C ? void 0 : C.bot) && t || null != (n = null == C ? void 0 : C.isProvisional) && n) ? null : (0, i.jsx)(f.yRy, {
     targetElementRef: g,
     renderPopout: e => (0, i.jsx)(ep, ei(er({}, e), {
       onClose: e.closePopout,
@@ -745,7 +745,7 @@ function eh(e) {
     clickTrap: !0,
     children: e => (0, i.jsx)(X.ZP.Icon, ei(er({}, e), {
       ref: g,
-      onClick: C,
+      onClick: y,
       icon: null != s ? s : null == r ? f.kL_ : f.ejJ,
       className: a,
       iconClassName: o,

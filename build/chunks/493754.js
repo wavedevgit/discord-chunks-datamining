@@ -1,7 +1,7 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  W: () => C,
-  Z: () => y
+  W: () => y,
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -51,7 +51,7 @@ function _(e, t) {
   }), e
 }
 
-function C(e) {
+function y(e) {
   let {
     guild: t,
     channel: i,
@@ -81,12 +81,12 @@ function C(e) {
   })
 }
 
-function y(e) {
+function C(e) {
   var t, {
       stream: n,
       applicationId: i,
       channel: o,
-      exitFullScreen: y,
+      exitFullScreen: C,
       appContext: x,
       analyticsLocation: v,
       className: j
@@ -117,13 +117,13 @@ function y(e) {
       size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
       onClick: () => {
-        a()(null != I, "guild cannot be null"), a()(null != o, "channel cannot be null"), C({
+        a()(null != I, "guild cannot be null"), a()(null != o, "channel cannot be null"), y({
           guild: I,
           channel: o,
           streamUserId: null == n ? void 0 : n.ownerId,
           applicationId: i,
           appContext: x,
-          exitFullScreen: y,
+          exitFullScreen: C,
           analyticsLocation: v,
           guildScheduledEvent: P
         })
@@ -136,7 +136,7 @@ function y(e) {
       stream: n,
       appContext: x,
       className: l()(j, g.iconButton),
-      exitFullScreen: y,
+      exitFullScreen: C,
       analyticsLocation: v,
       guildScheduledEvent: P
     })]

@@ -23,7 +23,7 @@ function f(e) {
     g = (0, i.e7)([a.Z], () => a.Z.isMobileOnline(t)),
     b = (0, i.e7)([s.Z], () => s.Z.getNickname(t)),
     _ = u.ZP.useUserTag(f),
-    C = (0, o.m$)({
+    y = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -48,7 +48,7 @@ function f(e) {
           text: _,
           position: "bottom",
           children: null != b ? b : u.ZP.getName(f)
-        }), C && (0, r.jsx)(l.ua7, {
+        }), y && (0, r.jsx)(l.ua7, {
           text: p.NW.string(p.t.QyZ4TU),
           children: e => {
             var t, n;

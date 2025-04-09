@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -19,26 +19,26 @@ var i = n(410030),
   g = n(428927),
   b = n(638785),
   _ = n(388032),
-  C = n(490312);
+  y = n(490312);
 
-function y(e) {
+function C(e) {
   let {
     user: t
   } = e, {
     analyticsLocations: n
   } = (0, o.ZP)(), {
-    context: y
+    context: C
   } = (0, c.KZ)(), x = (0, i.ZP)(), v = (0, l.Z)(), {
     mutualFriendsCount: j,
     mutualFriends: O,
     mutualGuilds: E
   } = (0, u.Z)(t), N = !t.bot && null != j && j > 0, I = null != E && E.length > 0;
   return N || I ? (0, r.jsxs)(h.Z.Overlay, {
-    className: C.overlay,
+    className: y.overlay,
     children: [I && (0, r.jsx)(b.Z, {
       section: "MUTUAL_GUILDS",
       header: _.NW.string(_.t["4lTDZm"]),
-      listClassName: C.list,
+      listClassName: y.list,
       items: E.map(e => {
         let {
           guild: n,
@@ -53,16 +53,16 @@ function y(e) {
         }, n.id)
       })
     }), I && N && (0, r.jsx)(p.Z, {
-      className: C.divider
+      className: y.divider
     }), N && (0, r.jsx)(b.Z, {
       section: "MUTUAL_FRIENDS",
       header: _.NW.string(_.t["0mTJ3t"]),
-      listClassName: C.list,
+      listClassName: y.list,
       onExpand: () => (0, d.Z)(t.id, v),
       items: null == O ? Array.from({
         length: j
       }).map((e, t) => (0, r.jsxs)("div", {
-        className: C.loadingMutualFriend,
+        className: y.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
           width: 40,
           opacity: .08
@@ -98,7 +98,7 @@ function y(e) {
                 })
               }
               return e
-            }({}, y), t = t = {
+            }({}, C), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: n
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(433355),
   b = n(271383),
   _ = n(594174),
-  C = n(189432),
-  y = n(356778),
+  y = n(189432),
+  C = n(356778),
   x = n(370595),
   v = n(50493),
   j = n(12740),
@@ -33,7 +33,7 @@ function E(e) {
     location: N,
     className: I,
     onNavigate: P
-  } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, y.z0)(l, E, {
+  } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
   }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
@@ -48,7 +48,7 @@ function E(e) {
     }
   });
   let L = i.useCallback(e => {
-      null != Z && (T.current = e.target.scrollTop, (0, C.r)(E, l, Z.baseChannelId, {
+      null != Z && (T.current = e.target.scrollTop, (0, y.r)(E, l, Z.baseChannelId, {
         modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: A,
         scrollOffset: T.current
@@ -87,7 +87,7 @@ function E(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      w(r), (0, C.r)(E, l, Z.baseChannelId, {
+      w(r), (0, y.r)(E, l, Z.baseChannelId, {
         modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: T.current

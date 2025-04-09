@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(199902),
   b = n(131951),
   _ = n(594174),
-  C = n(63063),
-  y = n(5192),
+  y = n(63063),
+  C = n(5192),
   x = n(823961),
   v = n(981631),
   j = n(37113),
@@ -81,18 +81,18 @@ function S(e) {
       size: d.EFr.SIZE_48,
       animateOnHover: !0
     }),
-    B = y.ZP.getName(t.guild_id, t.id, l),
+    B = C.ZP.getName(t.guild_id, t.id, l),
     H = A && !R,
-    F = t.hdStreamingUntil;
-  if (null == F || null == l || null == T) return null;
-  let G = s()(F).diff(s()(), "hours"),
+    G = t.hdStreamingUntil;
+  if (null == G || null == l || null == T) return null;
+  let F = s()(G).diff(s()(), "hours"),
     V = S ? O.NW.format(O.t["6LrV9f"], {
       username: B,
-      num: G,
-      helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
+      num: F,
+      helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : l.id === T.id ? O.NW.string(O.t.IjKvNT) : !0 === A ? O.NW.format(O.t.JkWoqK, {
       username: B,
-      helpCenterLink: C.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
+      helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : O.NW.formatToPlainString(O.t.vNbVXF, {
       username: B
     }),

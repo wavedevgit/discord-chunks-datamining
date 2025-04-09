@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(119315),
   b = n(403404),
   _ = n(906732),
-  C = n(522651),
-  y = n(243778),
+  y = n(522651),
+  C = n(243778),
   x = n(579185),
   v = n(301076),
   j = n(221241),
@@ -47,15 +47,15 @@ function Z(e) {
     coloredIconsEnabled: B
   } = (0, j.Z)({
     location: "VideoButton"
-  }), H = (0, p.a)(s.eR.VOICE_LAUNCHER), F = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), G = (0, d.Z)({
+  }), H = (0, p.a)(s.eR.VOICE_LAUNCHER), G = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), F = (0, d.Z)({
     channelId: t.id
-  }), V = B && F || !B && (G || !U && M), z = !k, Y = i.useCallback(e => {
+  }), V = B && G || !B && (F || !U && M), z = !k, Y = i.useCallback(e => {
     "focus" !== e.type && D()
   }, [D]), q = (0, c.bp)() === N.IlC.POPOUT, {
     analyticsLocations: K,
     parentAnalyticsLocation: X
   } = (0, _.ZP)(), Q = i.useCallback(() => {
-    (0, C.v)(X, C.d.ACTIVITY), (0, b.Z)({
+    (0, y.v)(X, y.d.ACTIVITY), (0, b.Z)({
       channel: t,
       openInPopout: q,
       analyticsLocations: K
@@ -64,7 +64,7 @@ function Z(e) {
   k || J.push(o.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, f.Z)(t.id) && !k && J.push(o.z.ACTIVITY_GDM_ROCKET_SPARKLE), k || J.push(o.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let $ = i.useRef(!1),
     ee = i.useRef(null);
-  return (0, r.jsx)(y.ZP, {
+  return (0, r.jsx)(C.ZP, {
     contentTypes: J,
     children: e => {
       let {

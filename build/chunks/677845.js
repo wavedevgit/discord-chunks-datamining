@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(800329),
   b = n(470956),
   _ = n(430824),
-  C = n(496675),
-  y = n(434488),
+  y = n(496675),
+  C = n(434488),
   x = n(27457),
   v = n(251564),
   j = n(695492),
@@ -53,12 +53,12 @@ function N(e) {
       })
     })
   }, [P.id, k]);
-  let W = (0, a.e7)([C.Z], () => P.isPrivate() || (0, m.b)(C.Z, R, P), [R, P]),
+  let W = (0, a.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, R, P), [R, P]),
     U = (null == R ? void 0 : R.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
     H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    F = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    G = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
+    G = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    F = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != k && k === P.id,
     z = L.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
@@ -83,7 +83,7 @@ function N(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(M >= 2) || !H || G || F || V ? B && 1 === M && W && (H && !G ? z.push(e => (0, r.jsx)(y.h, {
+  }, []), null != R && !U && (!(M >= 2) || !H || F || G || V ? B && 1 === M && W && (H && !F ? z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: R,
     width: e,
@@ -95,7 +95,7 @@ function N(e) {
     channel: P,
     guild: R,
     inPopout: w
-  }))) : z.push(e => (0, r.jsx)(y.h, {
+  }))) : z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: R,
     width: e,

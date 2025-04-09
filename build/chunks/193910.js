@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(618857),
   b = n(488131),
   _ = n(375954),
-  C = n(626135),
-  y = n(585483),
+  y = n(626135),
+  C = n(585483),
   x = n(403182),
   v = n(127654),
   j = n(752305),
@@ -76,7 +76,7 @@ function A(e) {
   }
 
   function W() {
-    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
+    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
   function U() {
@@ -128,7 +128,7 @@ function A(e) {
   }
 
   function H() {
-    C.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -141,19 +141,19 @@ function A(e) {
     })
   }
 
-  function F() {
+  function G() {
     let e = w,
       n = "txt",
       r = "",
       i = w.match(Z);
     null != i && (r = i[1], n = i[2], e = i[3], r += i[4]), (0, v.d)([(0, x.dp)(new Blob([e], {
       type: "text/plain"
-    }), "message.".concat(n), "text/plain")], t, A), y.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && y.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), "message.".concat(n), "text/plain")], t, A), C.S.dispatchToLastSubscribed(E.CkL.CLEAR_TEXT), "" !== r && C.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: r
     })
   }
   return i.useEffect(() => {
-    C.default.track(E.rMx.OPEN_POPOUT, {
+    y.default.track(E.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
@@ -192,7 +192,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: F
+            action: G
           }, "upload-text-as-file");
         case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {

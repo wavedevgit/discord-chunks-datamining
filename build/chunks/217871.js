@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(64078),
   b = n(351780),
   _ = n(843693),
-  C = n(641033),
-  y = n(989830),
+  y = n(641033),
+  C = n(989830),
   x = n(388032),
   v = n(837265);
 let j = i.memo(function(e) {
@@ -30,7 +30,7 @@ let j = i.memo(function(e) {
     i.useEffect(() => {
       if (null == o ? void 0 : o.displayed) return;
       p(!1), setImmediate(() => {
-        p((null != o ? (0, C.Eo)(o.combo) : 0) > 0)
+        p((null != o ? (0, y.Eo)(o.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
         p(!1), null != o && (0, g.ew)(o)
@@ -51,7 +51,7 @@ let j = i.memo(function(e) {
       children: (0, r.jsx)(c.Text, {
         className: v.comboScore,
         variant: "text-sm/bold",
-        children: (0, C.Eo)(o.combo)
+        children: (0, y.Eo)(o.combo)
       })
     })
   }),
@@ -63,7 +63,7 @@ let j = i.memo(function(e) {
       color: l,
       square: a,
       flair: s
-    } = i.useMemo(() => (0, C.yz)(n), [n]), u = (0, p.Lq)(l);
+    } = i.useMemo(() => (0, y.yz)(n), [n]), u = (0, p.Lq)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
         className: v.comboValue,
@@ -123,10 +123,10 @@ let j = i.memo(function(e) {
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.Z)(), [g, C] = i.useState(!1), x = (0, y.Z)(t), E = o && d && l;
+    } = (0, u.Z)(), [g, y] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
     i.useEffect(() => {
-      E && C(!0);
-      let e = setTimeout(() => C(E), 1e3);
+      E && y(!0);
+      let e = setTimeout(() => y(E), 1e3);
       return () => clearTimeout(e)
     }, [E]);
     let N = (0, c.q_F)({

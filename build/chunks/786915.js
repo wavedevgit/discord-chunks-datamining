@@ -1,6 +1,6 @@
 /** Chunk was on 89107 **/
 n.d(t, {
-  Z: () => y
+  Z: () => C
 });
 var r = n(200651);
 n(192379);
@@ -20,7 +20,7 @@ var i = n(512722),
   b = n(981631),
   _ = n(388032);
 
-function C(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,11 +39,11 @@ function C(e) {
   return e
 }
 
-function y(e) {
+function C(e) {
   var {
     applicationId: t,
     stream: i,
-    channel: y,
+    channel: C,
     exitFullScreen: x,
     appContext: v,
     analyticsLocation: j,
@@ -73,7 +73,7 @@ function y(e) {
     {
       parentAnalyticsLocation: w
     } = (0, d.ZP)(),
-    R = null == y ? void 0 : y.getGuildId(),
+    R = null == C ? void 0 : C.getGuildId(),
     k = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R) : null, [R]),
     M = (0, a.e7)([f.Z], () => null != t ? f.Z.getApplicationActivity(t) : void 0);
   return null != M && (null == N ? void 0 : N.location.kind) === o.E.CONTEXTLESS ? (0, r.jsx)(g.Z, {
@@ -86,9 +86,9 @@ function y(e) {
     look: P,
     size: S,
     buttonText: Z
-  }) : null != k && null != y && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, y) ? (0, r.jsx)(g.Z, C({
+  }) : null != k && null != C && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(g.Z, y({
     onClick: () => {
-      l()(null != k, "guild cannot be null"), l()(null != y, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
+      l()(null != k, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
         function(e) {
           let {
             guild: t,
@@ -106,7 +106,7 @@ function y(e) {
             } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
             return n => {
               var a, s;
-              return (0, r.jsx)(e, (a = C({}, n), s = s = {
+              return (0, r.jsx)(e, (a = y({}, n), s = s = {
                 guild: t,
                 channel: i,
                 streamUserId: l,
@@ -131,7 +131,7 @@ function y(e) {
           })
         }({
           guild: k,
-          channel: y,
+          channel: C,
           streamUserId: null == i ? void 0 : i.ownerId,
           applicationId: t,
           appContext: null != v ? v : A,

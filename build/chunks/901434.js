@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(823379),
   b = n(5192),
   _ = n(501655),
-  C = n(856393),
-  y = n(388032),
+  y = n(856393),
+  C = n(388032),
   x = n(761325);
 let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
   j = function(e) {
@@ -57,12 +57,12 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           tag: "div",
           color: "header-secondary",
           variant: b ? "heading-lg/normal" : "text-sm/normal",
-          children: 0 === E.length ? y.NW.string(y.t.FUVhyM) : 1 === E.length ? y.NW.formatToPlainString(y.t.EQwZlJ, {
+          children: 0 === E.length ? C.NW.string(C.t.FUVhyM) : 1 === E.length ? C.NW.formatToPlainString(C.t.EQwZlJ, {
             a: v(n, E[0])
-          }) : 2 === E.length ? y.NW.formatToPlainString(y.t.zBcKoK, {
+          }) : 2 === E.length ? C.NW.formatToPlainString(C.t.zBcKoK, {
             a: v(n, E[0]),
             b: v(n, E[1])
-          }) : E.length > 2 ? y.NW.formatToPlainString(y.t["3AqFaG"], {
+          }) : E.length > 2 ? C.NW.formatToPlainString(C.t["3AqFaG"], {
             a: v(n, E[0]),
             b: v(n, E[1]),
             n: E.length - 2
@@ -78,8 +78,8 @@ let v = (e, t) => b.ZP.getName(e.getGuildId(), e.id, t.user),
           color: l ? b ? s.zxk.Colors.WHITE : s.zxk.Colors.GREEN : s.zxk.Colors.PRIMARY,
           onClick: O,
           size: s.zxk.Sizes.MEDIUM,
-          children: l ? y.NW.string(y.t["7vb2cX"]) : y.NW.string(y.t.TVBCKS)
-        }), b && (0, r.jsx)(C.e, {
+          children: l ? C.NW.string(C.t["7vb2cX"]) : C.NW.string(C.t.TVBCKS)
+        }), b && (0, r.jsx)(y.e, {
           channel: n
         })]
       })]

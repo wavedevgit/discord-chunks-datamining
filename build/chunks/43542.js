@@ -9,7 +9,7 @@ var r = n(200651),
   a = n(481060),
   s = n(523751),
   l = n(706454),
-  c = n(601964),
+  c = n(411198),
   u = n(709054),
   d = n(997431),
   f = n(388032),
@@ -58,7 +58,7 @@ function E(e) {
   let {
     profile: t
   } = e, n = (0, o.e7)([l.default], () => l.default.locale), p = (0, d.M)(u.default.extractTimestamp(t.id), n), m = i.useMemo(() => {
-    let e = new c.ZP(t);
+    let e = (0, c.$5)(t);
     return (0, r.jsx)(s.Z, {
       guild: e,
       className: _.guildBadge,

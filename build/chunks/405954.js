@@ -24,12 +24,12 @@ let b = function(e) {
     openPickerForChannel: b,
     closePicker: _
   } = (0, s.B)(), {
-    canAccessPicker: C,
-    entryPoint: y
+    canAccessPicker: y,
+    entryPoint: C
   } = (0, c.m)({
     location: "channel_header_toolbar",
     selectedChannelId: t.id
-  }), x = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = C && y === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, N = i.useCallback(() => {
+  }), x = (0, u.wE)(l.z.CHAT_WALLPAPERS_PICKER_COACHMARK), v = y && C === a.FN.TOOLBAR && x, [j, O] = (0, d.US)(v ? [l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE] : []), E = j === l.z.CHAT_WALLPAPERS_TOOLBAR_ENTRYPOINT_BADGE, N = i.useCallback(() => {
     E && O(m.L.TAKE_ACTION), n === t.id ? (_(), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
       action: "close"
     })) : (b(t.id), p.default.track(f.rMx.CHAT_WALLPAPER_TOOLBAR_ENTRY_POINT_CLICKED, {
