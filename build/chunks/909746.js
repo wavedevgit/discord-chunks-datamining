@@ -1,17 +1,17 @@
-/** Chunk was on 15327 **/
+/** Chunk was on 92216 **/
 n.d(t, {
   Bq: () => J,
   C0: () => ea,
   C2: () => $,
   EN: () => K,
-  F1: () => ei,
-  HE: () => V,
+  F1: () => eo,
+  HE: () => H,
   HN: () => Y,
   Iv: () => ec,
   J5: () => eN,
   JA: () => es,
   K: () => Q,
-  ML: () => z,
+  ML: () => w,
   N$: () => X,
   N5: () => eI,
   QM: () => eT,
@@ -24,22 +24,22 @@ n.d(t, {
   lR: () => q,
   lU: () => k,
   nm: () => ed,
-  oD: () => H,
+  oD: () => V,
   pA: () => en,
-  pY: () => w,
+  pY: () => z,
   pi: () => et,
   rK: () => el,
   uB: () => ee,
   vc: () => eE,
   vm: () => er,
-  zT: () => eo
+  zT: () => ei
 }), n(415506), n(539854), n(49124);
 var r = n(654861),
   l = n.n(r),
   a = n(913527),
   s = n.n(a),
-  i = n(536402),
-  o = n(533800),
+  o = n(536402),
+  i = n(533800),
   E = n(149765),
   c = n(866442),
   u = n(379649),
@@ -104,7 +104,7 @@ let F = new A.Z("AuditLogUtils"),
   B = () => ({
     [b.zUn.REASON]: () => x.t["2IW3Cw"]
   }),
-  w = () => j({
+  z = () => j({
     [b.zUn.NAME]: () => x.t.CkDiND,
     [b.zUn.DESCRIPTION]: eC(x.t.RP3Ey8, x.t.QAVj1d),
     [b.zUn.ICON_HASH]: () => x.t.iLZ8Q0,
@@ -149,7 +149,7 @@ let F = new A.Z("AuditLogUtils"),
     [b.zUn.SYSTEM_CHANNEL_FLAG_REMINDER_NOTIFICATIONS]: () => x.t.E1fc4u,
     [b.zUn.SYSTEM_CHANNEL_FLAG_JOIN_NOTIFICATION_REPLIES]: () => x.t.XbwtSE
   }, B()),
-  z = () => ({
+  w = () => ({
     [b.zUn.NAME]: eL(x.t.f8Rh0d, x.t.ebD4Qk),
     [b.zUn.POSITION]: eL(x.t.isS8tb, x.t.t5uBio),
     [b.zUn.TOPIC]: em(x.t.esQcxs, x.t["m+veAg"], x.t["ws/1FB"]),
@@ -182,7 +182,7 @@ let F = new A.Z("AuditLogUtils"),
     [b.zUn.BYPASSES_VERIFICATION]: eM(x.t.NBPBur, x.t.zATosr),
     [b.zUn.AUTO_MODERATION_TRIGGERED_RULE_NAME]: () => x.t.YbouFB
   }, B()),
-  V = () => j({
+  H = () => j({
     [b.zUn.NAME]: eL(x.t.QBmlaG, x.t.Lfs4r6),
     [b.zUn.DESCRIPTION]: eL(x.t.XeYKWF, x.t.PSfeIi),
     [b.zUn.PERMISSIONS_GRANTED]: () => x.t["9i/DvL"],
@@ -195,7 +195,7 @@ let F = new A.Z("AuditLogUtils"),
     [b.zUn.ICON_HASH]: () => x.t["iEE79/"],
     [b.zUn.UNICODE_EMOJI]: () => x.t.KiLMMz
   }, B()),
-  H = () => G(j({}, B()), {
+  V = () => G(j({}, B()), {
     [b.zUn.TITLE]: eL(x.t.sNpuy8, x.t["3Ukc/v"]),
     [b.zUn.DESCRIPTION]: eL(x.t.PP1q09, x.t.z7pYLi),
     [b.zUn.OPTIONS]: () => x.t["3G5C9/"],
@@ -224,7 +224,7 @@ let F = new A.Z("AuditLogUtils"),
     }, x.t["Q+5kcH"]),
     [b.zUn.TEMPORARY]: eM(x.t.MWp6Hx, x.t.omiqTE),
     [b.zUn.FLAGS]: eb({
-      [o.$.IS_GUEST_INVITE]: x.t.XYZMbG
+      [i.$.IS_GUEST_INVITE]: x.t.XYZMbG
     })
   }, B()),
   q = () => ({
@@ -333,10 +333,10 @@ let F = new A.Z("AuditLogUtils"),
     [b.zUn.VERIFICATION_ENABLED]: e => !0 === e.newValue ? x.t.fnkzDQ : x.t.WYT6kZ,
     [b.zUn.MANUAL_APPROVAL_ENABLED]: e => !0 === e.newValue ? x.t.jzSvVV : x.t.WxyOtr
   }, B()),
-  ei = () => j({
+  eo = () => j({
     [b.zUn.STATUS]: () => x.t.HyCSnJ
   }, B()),
-  eo = () => ({
+  ei = () => ({
     [b.zUn.DESCRIPTION]: () => x.t.nsUZKS,
     [b.zUn.BRAND_COLOR_PRIMARY]: () => x.t.qe9mgI,
     [b.zUn.CUSTOM_BANNER_HASH]: () => x.t["04b5KC"],
@@ -839,9 +839,9 @@ function eI(e) {
       let l = null != e.changes ? e.changes.find(e => e.key === b.zUn.ENTITY_TYPE) : null;
       if (null == l) return x.t["UZ+U3N"];
       switch (l.newValue) {
-        case i.w.MESSAGE:
+        case o.w.MESSAGE:
           return x.t["PyEa+P"];
-        case i.w.FORUM_POST:
+        case o.w.FORUM_POST:
           return x.t.hCuAb2;
         default:
           return x.t["UZ+U3N"]
@@ -1170,14 +1170,14 @@ function eR(e, t) {
                       l = L.Ge(r, n),
                       a = L.Ge(n, r),
                       s = [],
-                      i = [];
+                      o = [];
                     for (let e in v.zZ) {
                       let t = v.zZ[e];
-                      L.yE(l, t) && s.push(t), L.yE(a, t) && i.push(t)
+                      L.yE(l, t) && s.push(t), L.yE(a, t) && o.push(t)
                     }
                     return {
                       added: s,
-                      removed: i
+                      removed: o
                     }
                   }(e.oldValue, e.newValue);
                 if (n.length > 0) {
@@ -1288,14 +1288,14 @@ function ep(e, t) {
     l = E.Od(r, n),
     a = E.Od(n, r),
     s = [],
-    i = [];
+    o = [];
   for (let e in b.Plq) {
     let t = b.Plq[e];
-    E.e$(l, t) && s.push(t), E.e$(a, t) && i.push(t)
+    E.e$(l, t) && s.push(t), E.e$(a, t) && o.push(t)
   }
   return {
     added: s,
-    removed: i
+    removed: o
   }
 }
 

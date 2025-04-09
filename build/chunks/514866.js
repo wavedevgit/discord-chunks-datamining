@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => g
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var a = n(120356),
   p = n(594174),
   b = n(994331),
   f = n(20493);
-let _ = () => {
+let g = () => {
   Promise.all([n.e("52030"), n.e("58717")]).then(n.bind(n, 24031)).then(e => {
     let {
       openMFAModal: t
@@ -40,7 +40,7 @@ let _ = () => {
   })
 };
 
-function g() {
+function _() {
   let e = p.default.getCurrentUser(),
     t = null == e ? void 0 : e.isStaff(),
     n = x.Rt.useSetting();
@@ -53,7 +53,7 @@ function g() {
     }), (0, r.jsx)("div", {
       className: l()(b.buttonsContainer, f.marginBottom20),
       children: (0, r.jsx)(o.zxk, {
-        onClick: _,
+        onClick: g,
         children: "Launch MFA"
       })
     }), (0, r.jsx)("div", {

@@ -17,15 +17,15 @@ var r = n(200651),
   p = n(371651),
   b = n(829907),
   f = n(610394),
-  _ = n(352527),
-  g = n(355863),
+  g = n(352527),
+  _ = n(355863),
   v = n(449224),
   j = n(808506),
   y = n(572004),
   C = n(70956),
-  T = n(145597),
-  N = n(246992),
-  S = n(981631),
+  N = n(145597),
+  S = n(246992),
+  T = n(981631),
   O = n(757744),
   E = n(388032),
   k = n(931207),
@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let Z = {
-    [S.Odu.CLICK_ZONE_DEBUG]: e => I(P({
-      type: S.Odu.CLICK_ZONE_DEBUG,
+    [T.Odu.CLICK_ZONE_DEBUG]: e => I(P({
+      type: T.Odu.CLICK_ZONE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -75,11 +75,11 @@ let Z = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(S.Odu.CLICK_ZONE_DEBUG)), {
+    }, _.Z.getWidgetDefaultSettings(T.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [S.Odu.PERFORMANCE_DEBUG]: e => I(P({
-      type: S.Odu.PERFORMANCE_DEBUG,
+    [T.Odu.PERFORMANCE_DEBUG]: e => I(P({
+      type: T.Odu.PERFORMANCE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -91,7 +91,7 @@ let Z = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(S.Odu.PERFORMANCE_DEBUG)), {
+    }, _.Z.getWidgetDefaultSettings(T.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -260,7 +260,7 @@ function A(e) {
 }
 
 function B(e) {
-  let t = R(Object.values((0, s.Wu)([g.Z], () => g.Z.getWidgetsForLayout(O.$))), e);
+  let t = R(Object.values((0, s.Wu)([_.Z], () => _.Z.getWidgetsForLayout(O.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
     else {
@@ -274,7 +274,7 @@ function B(e) {
 
 function z() {
   var e, t;
-  let [n, l] = B(S.Odu.CLICK_ZONE_DEBUG), [o, d] = B(S.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), O = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [Z, R] = a.useState({}), [L, z] = a.useState(E), M = e => {
+  let [n, l] = B(T.Odu.CLICK_ZONE_DEBUG), [o, d] = B(T.Odu.PERFORMANCE_DEBUG), _ = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), O = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [Z, R] = a.useState({}), [L, z] = a.useState(E), M = e => {
     z(e), u.Z.forceRenderMode(e)
   }, F = [{
     label: m.R5.UNSET,
@@ -293,7 +293,7 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(P({}, e), {
     label: "".concat(e.label, " ").concat(E === e.value ? "(current)" : "")
-  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), U = (0, s.e7)([j.default], () => j.default.getFocusedPID()), W = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, T.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, Y] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), K = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), U = (0, s.e7)([j.default], () => j.default.getFocusedPID()), W = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, N.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, Y] = (0, s.Wu)([g.Z], () => [g.Z.enabled, g.Z.keepOpen]), K = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   a.useEffect(() => {
     R(e => {
       for (let t of Object.keys(G)) e[Number(t)] = G[Number(t)];
@@ -353,7 +353,7 @@ function z() {
           text: "Enables a red border around click zones to help with debugging.",
           children: e => (0, r.jsx)("div", I(P({}, e), {
             children: (0, r.jsx)(c.XZJ, {
-              value: g,
+              value: _,
               onChange: () => ee(),
               size: 18,
               type: c.XZJ.Types.INVERTED,
@@ -468,7 +468,7 @@ function z() {
             isSelected: e => e === L,
             options: F,
             select: M,
-            popoutLayerContext: N.O$
+            popoutLayerContext: S.O$
           })
         }))
       }), ei.length > 0 && (0, r.jsx)(c.ua7, {

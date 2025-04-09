@@ -1,9 +1,10 @@
-/** Chunk was on 72891 **/
-n.d(i, {
-  _k: () => r,
-  jW: () => o
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  _k: () => o,
+  jW: () => i
 });
-let t = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -19,24 +20,24 @@ let t = (0, n(818083).B)({
   }]
 });
 
-function o(e) {
+function i(e) {
   let {
-    location: i
+    location: t
   } = e, {
     enabled: n
-  } = t.getCurrentConfig({
-    location: i
+  } = r.getCurrentConfig({
+    location: t
   });
   return n
 }
 
-function r(e) {
+function o(e) {
   let {
-    location: i
+    location: t
   } = e, {
     enabled: n
-  } = t.useExperiment({
-    location: i
+  } = r.useExperiment({
+    location: t
   });
   return {
     enabled: n

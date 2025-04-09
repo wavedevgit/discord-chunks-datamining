@@ -1,4 +1,4 @@
-/** Chunk was on 24967 **/
+/** Chunk was on 57971 **/
 n.d(t, {
   f: () => c,
   l: () => d
@@ -29,18 +29,18 @@ function d(e) {
     includeSoftDeleted: d,
     countryCode: p,
     dontFetchWhileTrue: f
-  } = e, E = (0, l.e7)([o.Z], () => o.Z.isConnected()), _ = (0, l.e7)([u.Z], () => null != t ? u.Z.getSubscriptionGroupListingsForGuildFetchState(t) : u.M.FETCHED), O = i.useRef(c), g = i.useCallback(() => {
+  } = e, E = (0, l.e7)([o.Z], () => o.Z.isConnected()), _ = (0, l.e7)([u.Z], () => null != t ? u.Z.getSubscriptionGroupListingsForGuildFetchState(t) : u.M.FETCHED), S = i.useRef(c), O = i.useCallback(() => {
     if (null == t || !E || !0 === f) return;
     let e = u.Z.getSubscriptionGroupListingsForGuildFetchState(t);
-    (O.current || e === u.M.NOT_FETCHED) && (O.current = !1, a.FP(t, {
+    (S.current || e === u.M.NOT_FETCHED) && (S.current = !1, a.FP(t, {
       includeSoftDeleted: d,
       countryCode: p
     }))
-  }, [E, t, d, p, f]), S = i.useMemo(() => _ === u.M.FETCHED && !0 !== O.current, [_, O]);
+  }, [E, t, d, p, f]), I = i.useMemo(() => _ === u.M.FETCHED && !0 !== S.current, [_, S]);
   return (0, r.jsx)(s.Provider, {
     value: {
-      listingsLoaded: S,
-      fetchGroupListingsForGuild: g
+      listingsLoaded: I,
+      fetchGroupListingsForGuild: O
     },
     children: n
   })

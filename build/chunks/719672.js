@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -47,7 +47,7 @@ let p = e => {
     }
   }];
 
-function _() {
+function g() {
   let e = (0, i.e7)([c.Z], () => c.Z.getDCFEvents()),
     t = (0, u.ZP)(e => e.candidates),
     n = (0, u.ZP)(e => e.lastWinnerTime),
@@ -63,7 +63,7 @@ function _() {
         dismissibleContent: n
       }
     }),
-    _ = Array.from(t.keys()).map(e => ({
+    g = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -92,7 +92,7 @@ function _() {
       children: (0, r.jsx)(x.Z, {
         className: h.candidatesTable,
         columns: f,
-        data: _
+        data: g
       })
     }), (0, r.jsx)("br", {}), (0, r.jsx)(x.Z, {
       columns: b,

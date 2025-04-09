@@ -1,41 +1,41 @@
-/** Chunk was on 95287 **/
-r.d(t, {
+/** Chunk was on 97161 **/
+n.d(t, {
   C: () => i,
-  s: () => l
+  s: () => c
 });
-var n = r(939639),
-  a = r(99815),
-  o = r(388032);
+var o = n(939639),
+  a = n(99815),
+  r = n(388032);
 
 function i(e) {
   var t;
   return null != (t = ({
-    [a.E.LOL_TOTAL_KILLS]: o.NW.string(o.t.aIbY2N),
-    [a.E.LOL_TOTAL_DEATHS]: o.NW.string(o.t.Jec90d),
-    [a.E.LOL_TOTAL_ASSISTS]: o.NW.string(o.t["8+lHWV"]),
-    [a.E.LOL_TOTAL_DAMAGE_DEALT]: o.NW.string(o.t["XEmO+P"]),
-    [a.E.LOL_TOTAL_DAMAGE_TAKEN]: o.NW.string(o.t["TcQ7//"]),
-    [a.E.LOL_TOTAL_WINS]: o.NW.string(o.t["/QfLjI"]),
-    [a.E.LOL_MAX_CREEP_SCORE]: o.NW.string(o.t.M5pp7e)
-  })[e]) ? t : o.NW.string(o.t["IraB/v"])
+    [a.E.LOL_TOTAL_KILLS]: r.NW.string(r.t.aIbY2N),
+    [a.E.LOL_TOTAL_DEATHS]: r.NW.string(r.t.Jec90d),
+    [a.E.LOL_TOTAL_ASSISTS]: r.NW.string(r.t["8+lHWV"]),
+    [a.E.LOL_TOTAL_DAMAGE_DEALT]: r.NW.string(r.t["XEmO+P"]),
+    [a.E.LOL_TOTAL_DAMAGE_TAKEN]: r.NW.string(r.t["TcQ7//"]),
+    [a.E.LOL_TOTAL_WINS]: r.NW.string(r.t["/QfLjI"]),
+    [a.E.LOL_MAX_CREEP_SCORE]: r.NW.string(r.t.M5pp7e)
+  })[e]) ? t : r.NW.string(r.t["IraB/v"])
 }
 
-function l(e) {
+function c(e) {
   let {
     statisticId: t,
-    sortDesc: r,
+    sortDesc: n,
     aggregationType: a
-  } = e, l = i(t);
-  if (a === n.k.MAX)
-    if (r) return o.NW.formatToPlainString(o.t.nJYOFx, {
-      statisticName: l
+  } = e, c = i(t);
+  if (a === o.k.MAX)
+    if (n) return r.NW.formatToPlainString(r.t.nJYOFx, {
+      statisticName: c
     });
-    else return o.NW.formatToPlainString(o.t.SYKIbW, {
-      statisticName: l
+    else return r.NW.formatToPlainString(r.t.SYKIbW, {
+      statisticName: c
     });
-  return r ? o.NW.formatToPlainString(o.t.M9sOp6, {
-    statisticName: l
-  }) : o.NW.formatToPlainString(o.t.USfwd3, {
-    statisticName: l
+  return n ? r.NW.formatToPlainString(r.t.M9sOp6, {
+    statisticName: c
+  }) : r.NW.formatToPlainString(r.t.USfwd3, {
+    statisticName: c
   })
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  ZP: () => _,
+  ZP: () => g,
   v0: () => h
 }), n(388685), n(539854), n(642613);
 var r, a = n(200651),
@@ -38,20 +38,20 @@ function f(e) {
     tabs: t,
     selectedTabId: n,
     onSelectTab: r
-  } = e, i = l.useRef(null), o = l.useRef(0), h = l.useRef(new Map), [f, _] = l.useState([]), g = l.useCallback(() => {
+  } = e, i = l.useRef(null), o = l.useRef(0), h = l.useRef(new Map), [f, g] = l.useState([]), _ = l.useCallback(() => {
     var e, r, a, l;
     if (null == i.current) return;
     let s = [],
       c = i.current.getBoundingClientRect().width;
     if (c !== o.current) {
       for (let i of (o.current = c, c -= null != (r = null == (e = h.current.get(n)) ? void 0 : e.width) ? r : 0, t)) i.id !== n && (c -= null != (l = null == (a = h.current.get(i.id)) ? void 0 : a.width) ? l : 0) < 0 && s.push(i.id);
-      _(s)
+      g(s)
     }
   }, [t, n]), v = l.useRef(null);
-  l.useEffect(() => (v.current = new ResizeObserver(() => g()), null != i.current && v.current.observe(i.current), () => {
+  l.useEffect(() => (v.current = new ResizeObserver(() => _()), null != i.current && v.current.observe(i.current), () => {
     var e;
     null == (e = v.current) || e.disconnect()
-  }), [g]);
+  }), [_]);
   let j = l.useCallback(e => {
     var n, l, i;
     let {
@@ -171,7 +171,7 @@ function f(e) {
   })
 }
 
-function _(e, t) {
+function g(e, t) {
   var n, r, i;
   let {
     tabs: o,

@@ -1,7 +1,7 @@
-/** Chunk was on 24967 **/
+/** Chunk was on 57971 **/
 n.d(t, {
-  Z: () => I,
-  m: () => S
+  Z: () => g,
+  m: () => I
 });
 var r = n(200651);
 n(192379);
@@ -36,7 +36,7 @@ function _(e) {
   return e
 }
 
-function O(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,7 +49,7 @@ function O(e, t) {
   }), e
 }
 
-function g(e) {
+function O(e) {
   let {
     showEditProduct: t,
     showUnpublishProduct: n,
@@ -62,17 +62,17 @@ function g(e) {
     onDeleteProduct: d,
     onCopyLink: p,
     onTestDownload: _,
-    onReportProduct: O,
-    closePopout: g,
-    onSelect: S
+    onReportProduct: S,
+    closePopout: O,
+    onSelect: I
   } = e;
   return (0, r.jsx)("div", {
     className: E.menuContainer,
     children: (0, r.jsxs)(o.v2r, {
       navId: "guild-product-context",
-      onClose: g,
+      onClose: O,
       "aria-label": f.NW.string(f.t.Z146dH),
-      onSelect: S,
+      onSelect: I,
       children: [(0, r.jsxs)(o.kSQ, {
         children: [t && (0, r.jsx)(o.sNh, {
           id: "guild-product-edit",
@@ -105,14 +105,14 @@ function g(e) {
           id: "guild-product-report",
           label: f.NW.string(f.t["6yUzvL"]),
           color: "danger",
-          action: O
+          action: S
         })
       })]
     })
   })
 }
 
-function S(e) {
+function I(e) {
   let {
     product: t,
     guildId: n,
@@ -124,10 +124,10 @@ function S(e) {
     showReportProduct: c,
     onEditProduct: d,
     onUnpublishProduct: p,
-    onDeleteProduct: S,
-    onCopyProductLink: I,
-    onTestDownload: b,
-    onReportProduct: T
+    onDeleteProduct: I,
+    onCopyProductLink: g,
+    onTestDownload: T,
+    onReportProduct: h
   } = e;
   return (0, r.jsx)("div", {
     onClick: e => {
@@ -138,7 +138,7 @@ function S(e) {
       align: "top",
       spacing: -8,
       animation: o.yRy.Animation.FADE,
-      renderPopout: e => (0, r.jsx)(g, O(_({}, e), {
+      renderPopout: e => (0, r.jsx)(O, S(_({}, e), {
         guildId: n,
         productId: t.id,
         showEditProduct: i,
@@ -149,16 +149,16 @@ function S(e) {
         showDeleteProduct: s,
         onEditProduct: d,
         onUnpublishProduct: p,
-        onDeleteProduct: S,
-        onCopyLink: I,
-        onTestDownload: b,
-        onReportProduct: T
+        onDeleteProduct: I,
+        onCopyLink: g,
+        onTestDownload: T,
+        onReportProduct: h
       })),
       children: (e, n) => {
         let {
           isShown: i
         } = n;
-        return (0, r.jsx)(o.P3F, O(_({}, e), {
+        return (0, r.jsx)(o.P3F, S(_({}, e), {
           "aria-label": f.NW.formatToPlainString(f.t.RtqjeH, {
             productName: t.name
           }),
@@ -177,15 +177,15 @@ function S(e) {
   })
 }
 
-function I(e) {
+function g(e) {
   let {
     product: t,
     guildId: n,
     onEditProduct: i,
-    onUnpublishProduct: I,
-    onDeleteProduct: b,
-    onCopyProductLink: T,
-    onTestDownload: h,
+    onUnpublishProduct: g,
+    onDeleteProduct: T,
+    onCopyProductLink: h,
+    onTestDownload: b,
     disabled: N = !1
   } = e, C = (0, u.U)(t, 600), y = null !== t.price_tier ? (0, s.T4)(t.price_tier, p.pK.USD) : void 0, m = (0, c.C)(t);
   return (0, r.jsxs)(o.kL8, {
@@ -195,7 +195,7 @@ function I(e) {
     }),
     onClick: N ? void 0 : i,
     onContextMenu: function(e) {
-      (0, a.jW)(e, () => Promise.resolve(e => (0, r.jsx)(g, O(_({}, e), {
+      (0, a.jW)(e, () => Promise.resolve(e => (0, r.jsx)(O, S(_({}, e), {
         closePopout: a.Zy,
         guildId: n,
         productId: t.id,
@@ -206,10 +206,10 @@ function I(e) {
         showDeleteProduct: !0,
         showReportProduct: !1,
         onEditProduct: i,
-        onUnpublishProduct: I,
-        onDeleteProduct: b,
-        onCopyLink: T,
-        onTestDownload: h,
+        onUnpublishProduct: g,
+        onDeleteProduct: T,
+        onCopyLink: h,
+        onTestDownload: b,
         onReportProduct: () => {}
       }))))
     },
@@ -249,7 +249,7 @@ function I(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(d.t, {}) : (0, r.jsx)(d.b, {})]
-      }), !N && (0, r.jsx)(S, {
+      }), !N && (0, r.jsx)(I, {
         product: t,
         guildId: n,
         showEditProduct: !0,
@@ -259,10 +259,10 @@ function I(e) {
         showDeleteProduct: !0,
         showReportProduct: !1,
         onEditProduct: i,
-        onUnpublishProduct: I,
-        onDeleteProduct: b,
-        onCopyProductLink: T,
-        onTestDownload: h,
+        onUnpublishProduct: g,
+        onDeleteProduct: T,
+        onCopyProductLink: h,
+        onTestDownload: b,
         onReportProduct: () => {}
       })]
     })]

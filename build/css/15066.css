@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: 6807e0cd494abdb7
+  Original File Name: ea63a88ee230a350
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -191,83 +191,6 @@
 
 .loader__06f11 {
     position: absolute
-}
-
-.boostedGuildIconGem__97677 {
-    transition: color .1s linear;
-    height: 10px
-}
-
-.visual-refresh .boostedGuildIconGem__97677 {
-    height: 12px;
-    width: 12px
-}
-
-.theme-light .iconBackgroundTierNone__97677,.theme-light .iconBackgroundTierOne__97677,.theme-light .iconBackgroundTierThree__97677,.theme-light .iconBackgroundTierTwo__97677 {
-    color: var(--background-accent)
-}
-
-.theme-dark .iconBackgroundTierNone__97677,.theme-dark .iconBackgroundTierOne__97677,.theme-dark .iconBackgroundTierThree__97677,.theme-dark .iconBackgroundTierTwo__97677 {
-    color: var(--interactive-muted)
-}
-
-.iconTierNone__97677 {
-    color: var(--opacity-white-20)
-}
-
-.iconTierOne__97677,.iconTierTwo__97677 {
-    color: var(--white-500)
-}
-
-.iconTierThree__97677 {
-    color: var(--guild-boosting-pink)
-}
-
-.guildIconContainer__85d16 {
-    margin-right: 4px
-}
-
-.guildIconV2Container__85d16 {
-    margin-right: 8px
-}
-
-.visual-refresh .guildIconContainer__85d16,.visual-refresh .guildIconV2Container__85d16 {
-    margin-right: var(--space-xs);
-    min-width: 20px;
-    display: flex;
-    justify-content: center
-}
-
-.guildBadge__85d16 .boostedGuildIconGem__85d16 {
-    transition: color .1s linear
-}
-
-.disableColor__85d16 {
-    color: var(--background-accent)
-}
-
-.tierTooltipTitle__85d16 {
-    font-weight: 600
-}
-
-.boostedGuildIconGem__85d16 {
-    height: 10px
-}
-
-.boostedGuildTierMutedIconWithVisibleBanner__85d16 {
-    color: var(--text-muted)
-}
-
-.iconTierNone__85d16 {
-    color: var(--opacity-white-20)
-}
-
-.boostedGuildTierIconBackgroundWithVisibleBanner__85d16 {
-    color: var(--interactive-active)
-}
-
-.invitesRefresh__85d16.guildIconContainer__85d16,.invitesRefresh__85d16.guildIconV2Container__85d16 {
-    margin-right: 0
 }
 
 .container_b2d72f {
@@ -1481,4 +1404,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=6807e0cd494abdb7.css.map*/
+/*# sourceMappingURL=ea63a88ee230a350.css.map*/

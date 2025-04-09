@@ -1,11 +1,11 @@
-/** Chunk was on 15327 **/
+/** Chunk was on 92216 **/
 n.d(t, {
   Z: () => I,
-  a: () => o
+  a: () => i
 });
 var r, l, a, s = n(442837),
-  i = n(570140);
-let o = {},
+  o = n(570140);
+let i = {},
   E = {},
   c = {},
   u = !1,
@@ -24,7 +24,7 @@ function T(e) {
     welcomeScreen: t,
     guildId: n
   } = e;
-  E[n] = null != t ? t : o
+  E[n] = null != t ? t : i
 }
 class N extends(a = s.ZP.Store) {
   get(e) {
@@ -52,7 +52,7 @@ l = "WelcomeScreenStore", (r = "displayName") in N ? Object.defineProperty(N, r,
   configurable: !0,
   writable: !0
 }) : N[r] = l;
-let I = new N(i.Z, {
+let I = new N(o.Z, {
   INVITE_RESOLVE_SUCCESS: A,
   INVITE_ACCEPT_SUCCESS: A,
   WELCOME_SCREEN_SUBMIT_SUCCESS: T,
@@ -84,7 +84,7 @@ let I = new N(i.Z, {
       welcomeScreen: t,
       guildId: n
     } = e;
-    E[n] = null != t ? t : o
+    E[n] = null != t ? t : i
   },
   WELCOME_SCREEN_FETCH_FAIL: function() {
     _ = !1, d = !0

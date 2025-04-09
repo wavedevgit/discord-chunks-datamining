@@ -1,4 +1,5 @@
-/** Chunk was on 93886 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   guildIconContainer: "guildIconContainer__85d16",
   guildIconV2Container: "guildIconV2Container__85d16",

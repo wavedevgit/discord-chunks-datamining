@@ -1,7 +1,7 @@
-/** Chunk was on 24967 **/
+/** Chunk was on 57971 **/
 n.d(t, {
   $D: () => _,
-  H2: () => O,
+  H2: () => S,
   MO: () => E,
   X$: () => f,
   d5: () => d
@@ -70,9 +70,9 @@ function E(e) {
 }
 
 function _(e) {
-  return (0, i.e7)([a.Z], () => O(e), [e])
+  return (0, i.e7)([a.Z], () => S(e), [e])
 }
 
-function O(e) {
+function S(e) {
   return null != e && a.Z.can(c.Plq.ADMINISTRATOR, e)
 }

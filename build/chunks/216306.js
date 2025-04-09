@@ -1,4 +1,4 @@
-/** Chunk was on 15327 **/
+/** Chunk was on 92216 **/
 n.d(t, {
   Fo: () => L,
   KY: () => C,
@@ -11,8 +11,8 @@ var r = n(192379),
   l = n(658722),
   a = n.n(l),
   s = n(913527),
-  i = n.n(s),
-  o = n(442837),
+  o = n.n(s),
+  i = n(442837),
   E = n(704215),
   c = n(45114),
   u = n(740504),
@@ -38,7 +38,7 @@ function D(e, t) {
 function L(e, t, n, l) {
   l = l.toLowerCase();
   let s = (0, d.g)(e),
-    i = r.useCallback((e, t) => !(s && e.channel.hasFlag(p.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== R.d4z.GUILD_DIRECTORY && (0 === t.length || a()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [s]);
+    o = r.useCallback((e, t) => !(s && e.channel.hasFlag(p.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== R.d4z.GUILD_DIRECTORY && (0 === t.length || a()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [s]);
   return r.useMemo(() => {
     let e = {
       null: [],
@@ -48,9 +48,9 @@ function L(e, t, n, l) {
       let {
         channel: r
       } = n;
-      "null" === r.id && (e.null = t.null.filter(e => i(e, l))), e[r.id] = t[r.id].filter(e => i(e, l))
+      "null" === r.id && (e.null = t.null.filter(e => o(e, l))), e[r.id] = t[r.id].filter(e => o(e, l))
     }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, u.Z)(e._categories, e).forEach(D), e
-  }, [t, n, i, l])
+  }, [t, n, o, l])
 }
 
 function C(e) {
@@ -82,7 +82,7 @@ function m(e, t) {
 
 function M(e, t, n, r) {
   let l = (0, _.wE)(E.z.CHANNEL_BROWSER_NUX),
-    a = (0, o.cj)([I.Z], () => {
+    a = (0, i.cj)([I.Z], () => {
       let t = {},
         n = I.Z.getMutableGuildChannelsForGuild(e);
       for (let e in n) {
@@ -111,7 +111,7 @@ function M(e, t, n, r) {
 
 function b(e) {
   var t, n;
-  let r = (0, o.e7)([O.Z], () => O.Z.getCategories(e)),
+  let r = (0, i.e7)([O.Z], () => O.Z.getCategories(e)),
     l = r._categories.length,
     a = r._categories[r._categories.length - 1];
   if (null == a) return 0;
@@ -122,6 +122,6 @@ function b(e) {
 function v(e) {
   var t;
   return U.NW.formatToPlainString(U.t["8N0BHR"], {
-    timeAgo: i()(f.default.extractTimestamp(null != (t = g.ZP.lastMessageId(e)) ? t : e)).fromNow()
+    timeAgo: o()(f.default.extractTimestamp(null != (t = g.ZP.lastMessageId(e)) ? t : e)).fromNow()
   })
 }

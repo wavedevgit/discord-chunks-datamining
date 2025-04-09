@@ -18,11 +18,11 @@ var r = n(200651),
   b = n(11352),
   p = n(213931),
   h = n(767157),
-  N = n(112440),
-  y = n(671105),
-  _ = n(552958),
-  g = n(981631),
-  j = n(921944),
+  y = n(112440),
+  N = n(671105),
+  g = n(552958),
+  j = n(981631),
+  _ = n(921944),
   m = n(871465),
   v = n(388032),
   x = n(394049);
@@ -56,12 +56,12 @@ function P() {
 
 function T(e, t, a, C) {
   var I, P;
-  let T = (0, y.OR)(e),
-    E = (0, y._c)(e, t),
-    S = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
+  let T = (0, N.OR)(e),
+    S = (0, N._c)(e, t),
+    E = (0, l.e7)([d.default], () => d.default.getCurrentUser()),
     w = (0, l.e7)([u.ZP], () => u.ZP.isMuted(e), [e]),
-    A = f.ZP.canUseCustomNotificationSounds(S),
-    D = A ? null != E ? E : T : m.YC.CLASSIC,
+    A = f.ZP.canUseCustomNotificationSounds(E),
+    D = A ? null != S ? S : T : m.YC.CLASSIC,
     U = b.Y.useExperiment({
       location: "guild_context_menu"
     }, {
@@ -70,15 +70,15 @@ function T(e, t, a, C) {
     [M, Z] = i.useState(!1),
     {
       playSound: k
-    } = (0, _.Z)(),
+    } = (0, g.Z)(),
     [R, G] = (0, s.cv)([a]),
     L = R === a;
   if (i.useEffect(() => () => {
-      M && G(j.L.TAKE_ACTION)
+      M && G(_.L.TAKE_ACTION)
     }, [M, G]), !U) return null;
   let W = n => {
-      if (k(n), G(j.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
-        (0, h.Z)(n, "contextMenu"), (0, N.Z)();
+      if (k(n), G(_.L.TAKE_ACTION), !A && n !== m.YC.CLASSIC) {
+        (0, h.Z)(n, "contextMenu"), (0, y.Z)();
         return
       }
       null != t ? (0, p.M)(e, t, D, n, "contextMenu") : (0, p.t)(e, D, n, "contextMenu")
@@ -120,7 +120,7 @@ function T(e, t, a, C) {
         }), L && "trailing" === C && B]
       })
     },
-    action: e !== g.aIL ? () => (0, o.ZDy)(async () => {
+    action: e !== j.aIL ? () => (0, o.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("5863"), n.e("48445")]).then(n.bind(n, 751212));

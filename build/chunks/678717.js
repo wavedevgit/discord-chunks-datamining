@@ -17,16 +17,16 @@ var r = n(200651),
   p = n(259580),
   b = n(31336),
   f = n(19759),
-  _ = n(432877);
+  g = n(432877);
 n(381996);
-var g = n(392750),
+var _ = n(392750),
   v = n(926976),
   j = n(592197),
   y = n(806240),
   C = n(789654),
-  T = n(719672),
-  N = n(691867),
-  S = n(916790),
+  N = n(719672),
+  S = n(691867),
+  T = n(916790),
   O = n(645973),
   E = n(903502),
   k = n(604776),
@@ -95,7 +95,7 @@ function et() {
         id: "dispatcher",
         name: "Dispatcher",
         group: J.v0.EVENTS,
-        render: () => (0, r.jsx)(S.Z, {})
+        render: () => (0, r.jsx)(T.Z, {})
       }];
       return h.Z.isDeveloper && (e.push({
         id: "shop",
@@ -151,13 +151,13 @@ function et() {
         id: "design_toggles",
         name: "Design Toggles",
         group: J.v0.UI,
-        render: () => (0, r.jsx)(N.Z, {})
+        render: () => (0, r.jsx)(S.Z, {})
       }), e.push({
         id: "overlays",
         name: "Dev Overlays",
         group: J.v0.DEVELOPMENT,
         render: () => (0, r.jsx)(w.Z, {
-          devSettingsCategory: _.zU.OVERLAYS
+          devSettingsCategory: g.zU.OVERLAYS
         })
       }), e.push({
         id: "messaging",
@@ -169,7 +169,7 @@ function et() {
         name: "Reporting",
         group: J.v0.EXPERIMENTS,
         render: () => (0, r.jsx)(w.Z, {
-          devSettingsCategory: _.zU.REPORTING
+          devSettingsCategory: g.zU.REPORTING
         })
       }), e.push({
         id: "permissions",
@@ -185,7 +185,7 @@ function et() {
         id: "affinity",
         name: "Affinity",
         group: J.v0.USERS,
-        render: () => (0, r.jsx)(g.Z, {})
+        render: () => (0, r.jsx)(_.Z, {})
       }), h.Z.isDeveloper && e.push({
         id: "content_inventory",
         name: "Content Inventory",
@@ -195,7 +195,7 @@ function et() {
         id: "dcf",
         name: "DCF",
         group: J.v0.EXPERIMENTS,
-        render: () => (0, r.jsx)(T.Z, {})
+        render: () => (0, r.jsx)(N.Z, {})
       }), e.push({
         id: "potions",
         name: "Potions",

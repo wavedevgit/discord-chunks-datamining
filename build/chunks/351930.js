@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => _
+  Z: () => g
 }), n(388685), n(642613);
 var r = n(200651),
   a = n(192379),
@@ -48,8 +48,8 @@ let b = async () => (await o.tn.get({
   value: x.xT
 }];
 
-function _() {
-  let [e, t] = a.useState("511651880837840896"), [n, l] = a.useState([]), [c, x] = a.useState(!1), _ = async () => {
+function g() {
+  let [e, t] = a.useState("511651880837840896"), [n, l] = a.useState([]), [c, x] = a.useState(!1), g = async () => {
     try {
       x(!0);
       let e = await b();
@@ -59,9 +59,9 @@ function _() {
     }
   };
   a.useEffect(() => {
-    _()
+    g()
   }, []);
-  let g = a.useMemo(() => n.find(e => e.status === m.O0b.ACTIVE), [n]),
+  let _ = a.useMemo(() => n.find(e => e.status === m.O0b.ACTIVE), [n]),
     v = a.useMemo(() => n.filter(e => e.status !== m.O0b.ACTIVE).sort((e, t) => e.id > t.id ? -1 : 1), [n]),
     j = async () => {
       await o.tn.post({
@@ -70,12 +70,12 @@ function _() {
           plan_id: e
         },
         rejectWithError: !1
-      }), await _()
+      }), await g()
     }, y = async () => {
       await o.tn.del({
         url: "/debug/subscription",
         rejectWithError: !1
-      }), await _()
+      }), await g()
     };
   return (0, r.jsx)(s.zJl, {
     className: h.panel,
@@ -96,7 +96,7 @@ function _() {
             disabled: c,
             look: s.zxk.Looks.BLANK,
             size: s.zxk.Sizes.ICON,
-            onClick: _,
+            onClick: g,
             children: (0, r.jsx)("span", {
               title: "Refresh",
               children: (0, r.jsx)(s.DuK, {
@@ -108,7 +108,7 @@ function _() {
         })]
       }), (0, r.jsx)("section", {
         className: i()([p.section, p.buttons]),
-        children: null == g && (0, r.jsxs)(r.Fragment, {
+        children: null == _ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             children: " Subscription Type"
@@ -137,7 +137,7 @@ function _() {
           onClick: y,
           children: "End All Subscriptions"
         })
-      }), null != g && (0, r.jsxs)(r.Fragment, {
+      }), null != _ && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.Text, {
           style: {
             marginTop: "15px"
@@ -145,8 +145,8 @@ function _() {
           variant: "text-md/normal",
           children: "Existing active subscription"
         }), (0, r.jsx)(u.Z, {
-          subscription: g,
-          onUpdated: _
+          subscription: _,
+          onUpdated: g
         })]
       }), v.length > 0 && (0, r.jsxs)("div", {
         style: {
@@ -160,7 +160,7 @@ function _() {
           children: "Previous subscriptions"
         }), v.map(e => (0, r.jsx)(u.Z, {
           subscription: e,
-          onUpdated: _
+          onUpdated: g
         }, e.id))]
       })]
     })

@@ -1,1 +1,1 @@
-{"id":"340541","type":"experiment","data":{"kind":"user","id":"2025-03_invites_refresh","label":"Invites Refresh","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled - Treatment 1 (Invites Refresh)","config":{"enabled":false}}]},"fromModule":{"id":"72891"}}
+{"id":"340541","type":"experiment","data":{"kind":"user","id":"2025-03_invites_refresh","label":"Invites Refresh","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled - Treatment 1 (Invites Refresh)","config":{"enabled":false}}]},"fromModule":{"id":"web.js"}}

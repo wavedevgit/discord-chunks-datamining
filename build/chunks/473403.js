@@ -1,4 +1,4 @@
-/** Chunk was on 15327 **/
+/** Chunk was on 92216 **/
 n.d(t, {
   ZP: () => y,
   _W: () => P,
@@ -9,8 +9,8 @@ var r = n(200651),
   l = n(192379),
   a = n(120356),
   s = n.n(a),
-  i = n(91192),
-  o = n(442837),
+  o = n(91192),
+  i = n(442837),
   E = n(481060),
   c = n(43267),
   u = n(933557),
@@ -90,10 +90,10 @@ function v(e) {
   let {
     channel: t,
     size: n = E.EFr.SIZE_20
-  } = e, l = (0, o.e7)([f.default], () => f.default.getUser(null == t ? void 0 : t.recipients[0])), a = (0, o.e7)([g.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != g.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
+  } = e, l = (0, i.e7)([f.default], () => f.default.getUser(null == t ? void 0 : t.recipients[0])), a = (0, i.e7)([g.Z], () => !(null == l || null == t || t.isMultiUserDM()) && null != g.Z.getTypingUsers(null == t ? void 0 : t.id)[null == l ? void 0 : l.id]), {
     status: s,
-    isMobile: i
-  } = (0, o.cj)([O.Z], () => null == l || null == t || t.isMultiUserDM() ? {
+    isMobile: o
+  } = (0, i.cj)([O.Z], () => null == l || null == t || t.isMultiUserDM() ? {
     status: null,
     isMobile: !1
   } : {
@@ -104,7 +104,7 @@ function v(e) {
     size: n,
     src: null == l ? void 0 : l.getAvatarURL(void 0, 40),
     status: s,
-    isMobile: i,
+    isMobile: o,
     isTyping: a,
     "aria-label": null == l ? void 0 : l.username,
     statusTooltip: !0
@@ -116,9 +116,9 @@ let P = e => {
       containerClassName: n,
       channel: l,
       locked: a,
-      hasActiveThreads: i,
+      hasActiveThreads: o,
       withGuildIcon: c
-    } = e, u = (0, o.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === p.d4z.DM || l.type === p.d4z.GROUP_DM, A = null;
+    } = e, u = (0, i.e7)([I.Z], () => I.Z.getGuild(l.guild_id), [l.guild_id]), d = l.type === p.d4z.DM || l.type === p.d4z.GROUP_DM, A = null;
     if (c && null != u && !d) A = (0, r.jsx)(T.Z, {
       size: T.E.SMALL_32,
       className: U.iconContainerWithGuildIcon,
@@ -126,7 +126,7 @@ let P = e => {
       channel: l,
       guild: u,
       locked: a,
-      hasActiveThreads: i
+      hasActiveThreads: o
     });
     else {
       let e = function(e, t, n) {
@@ -148,7 +148,7 @@ let P = e => {
         }
       }(l, u, {
         locked: a,
-        hasActiveThreads: i
+        hasActiveThreads: o
       });
       if (null == e) return null;
       A = (0, r.jsx)(e, {
@@ -156,7 +156,7 @@ let P = e => {
         className: s()(U.icon, t)
       })
     }
-    let N = c ? null == u ? void 0 : u.name : (0, _.bT)(l, u, a, i),
+    let N = c ? null == u ? void 0 : u.name : (0, _.bT)(l, u, a, o),
       O = c && null != u ? "".concat(u.name, " - ").concat(N, " icon") : "".concat(N, " icon");
     return (0, r.jsx)(E.ua7, {
       text: N,
@@ -173,7 +173,7 @@ let P = e => {
     var n;
     let {
       channel: a,
-      name: o,
+      name: i,
       muted: c,
       selected: _,
       connected: T,
@@ -194,17 +194,17 @@ let P = e => {
       },
       onMouseEnter: W,
       onMouseLeave: B,
-      "aria-label": w,
-      children: z,
+      "aria-label": z,
+      children: w,
       guild: k,
-      channelTypeOverride: V,
-      forceInteractable: H,
+      channelTypeOverride: H,
+      forceInteractable: V,
       mentionCount: K,
       resolvedUnreadSetting: Z,
       isFavoriteSuggestion: Y,
       withGuildIcon: q,
       hasActiveEvent: X = !1
-    } = e, J = Z === S.i.ALL_MESSAGES || null != K && K > 0, Q = (0, i.JA)(a.id), {
+    } = e, J = Z === S.i.ALL_MESSAGES || null != K && K > 0, Q = (0, o.JA)(a.id), {
       role: $
     } = Q, ee = function(e, t) {
       if (null == e) return {};
@@ -220,7 +220,7 @@ let P = e => {
         for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
-    }(Q, ["role"]), et = l.useRef(null), en = l.useRef(null), er = (0, A.Z)(a), el = p.Z5c.CHANNEL(er, a.id), ea = (0, u.ZP)(a), es = a.isGuildVocal(), ei = (0, r.jsx)("div", {
+    }(Q, ["role"]), et = l.useRef(null), en = l.useRef(null), er = (0, A.Z)(a), el = p.Z5c.CHANNEL(er, a.id), ea = (0, u.ZP)(a), es = a.isGuildVocal(), eo = (0, r.jsx)("div", {
       className: s()({
         [U.favoritesSuggestion]: Y
       }),
@@ -233,7 +233,7 @@ let P = e => {
         className: U.link,
         onClick: () => null == f ? void 0 : f(a)
       }, ee), {
-        "aria-label": w,
+        "aria-label": z,
         focusProps: {
           enabled: !1
         },
@@ -251,11 +251,11 @@ let P = e => {
               [U.activeEvent]: X
             }),
             "aria-hidden": !0,
-            children: null == o ? ea : o
-          }), l.Children.count(z) > 0 ? (0, r.jsx)("div", {
+            children: null == i ? ea : i
+          }), l.Children.count(w) > 0 ? (0, r.jsx)("div", {
             onClick: m,
             className: U.children,
-            children: z
+            children: w
           }) : null]
         }), null != j ? (0, r.jsx)("div", {
           className: s()(U.linkBottom, {
@@ -280,7 +280,7 @@ let P = e => {
       },
       children: (0, r.jsxs)("div", {
         ref: t,
-        className: s()(y, null != f || null != M || null != R || H ? U.wrapper : U.notInteractive, (() => {
+        className: s()(y, null != f || null != M || null != R || V ? U.wrapper : U.notInteractive, (() => {
           if (_) return s()(h.selectedChannel, C.SELECTED);
           if (T) return s()(h.selectedChannel, C.CONNECTED);
           if (O) return C.LOCKED;
@@ -306,7 +306,7 @@ let P = e => {
             default:
               return U.typeDefault
           }
-        }(null != V ? V : F)),
+        }(null != H ? H : F)),
         onMouseUp: e => null == M ? void 0 : M(e, a),
         onMouseDown: e => null == R ? void 0 : R(e, a),
         onContextMenu: e => null == b ? void 0 : b(e, a),
@@ -314,7 +314,7 @@ let P = e => {
         onMouseLeave: B,
         children: [c || !I ? null : (0, r.jsx)("div", {
           className: s()(U.unread, J ? U.unreadImportant : void 0)
-        }), null != (n = null == v ? void 0 : v(ei)) ? n : ei]
+        }), null != (n = null == v ? void 0 : v(eo)) ? n : eo]
       })
     })
   })

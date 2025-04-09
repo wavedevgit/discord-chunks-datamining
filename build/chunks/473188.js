@@ -1,35 +1,35 @@
-/** Chunk was on 95287 **/
-r.d(t, {
-  _: () => s
+/** Chunk was on 97161 **/
+n.d(t, {
+  _: () => l
 });
-var n = r(200651);
-r(192379);
-var a = r(120356),
-  o = r.n(a),
-  i = r(481060),
-  l = r(259173);
+var o = n(200651);
+n(192379);
+var a = n(120356),
+  r = n.n(a),
+  i = n(481060),
+  c = n(259173);
 
-function s(e) {
+function l(e) {
   let {
     rank: t,
-    hideInnerBorder: r = !1
+    hideInnerBorder: n = !1
   } = e;
-  return (0, n.jsx)("div", {
-    className: o()(l.rankContainer, {
-      [l.goldBorder]: 1 === t,
-      [l.silverBorder]: 2 === t,
-      [l.bronzeBorder]: 3 === t,
-      [l.defaultBorder]: t > 3
+  return (0, o.jsx)("div", {
+    className: r()(c.rankContainer, {
+      [c.goldBorder]: 1 === t,
+      [c.silverBorder]: 2 === t,
+      [c.bronzeBorder]: 3 === t,
+      [c.defaultBorder]: t > 3
     }),
-    children: (0, n.jsx)(i.Text, {
+    children: (0, o.jsx)(i.Text, {
       tabularNumbers: !0,
       variant: t <= 3 ? "text-xs/semibold" : "text-xs/medium",
-      className: o()(l.rank, {
-        [l.rankWithBorder]: !r,
-        [l.goldText]: 1 === t,
-        [l.silverText]: 2 === t,
-        [l.bronzeText]: 3 === t,
-        [l.rankNoBorder]: r
+      className: r()(c.rank, {
+        [c.rankWithBorder]: !n,
+        [c.goldText]: 1 === t,
+        [c.silverText]: 2 === t,
+        [c.bronzeText]: 3 === t,
+        [c.rankNoBorder]: n
       }),
       children: t
     })

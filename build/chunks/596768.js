@@ -17,14 +17,14 @@ var r = n(200651),
   p = n(55935),
   b = n(120816),
   f = n(31336),
-  _ = n(257785),
-  g = n(484036),
+  g = n(257785),
+  _ = n(484036),
   v = n(681619),
   j = n(621060),
   y = n(388032),
   C = n(459100),
-  T = n(616257);
-let N = [{
+  N = n(616257);
+let S = [{
     key: "id",
     cellClassName: C.eventColumn,
     render(e) {
@@ -52,7 +52,7 @@ let N = [{
       return t.toLocaleString()
     }
   }],
-  S = [{
+  T = [{
     id: "details",
     name: "Details",
     group: j.v0.NONE,
@@ -70,58 +70,58 @@ let N = [{
       } = e, u = d()(o);
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(h.ZP, {
-          className: i()(T.headerBar, C.subPanelHeaderBar),
+          className: i()(N.headerBar, C.subPanelHeaderBar),
           children: [(0, r.jsx)(h.ZP.Icon, {
             icon: m.IeX,
             tooltip: t
           }), (0, r.jsx)(h.ZP.Title, {
             children: t
           })]
-        }), (0, r.jsxs)(_.E, {
+        }), (0, r.jsxs)(g.E, {
           className: C.commonProperties,
-          children: [(0, r.jsx)(_.Z9, {
+          children: [(0, r.jsx)(g.Z9, {
             name: "Timestamp (local)",
             children: (0, r.jsx)("time", {
               dateTime: o.toISOString(),
               title: (0, p.vc)(u, "LLLL"),
               children: (0, p.Y4)(u)
             })
-          }), "guild" === n.type && (0, r.jsx)(_.Z9, {
+          }), "guild" === n.type && (0, r.jsx)(g.Z9, {
             name: "Guild ID",
             children: (0, r.jsx)("code", {
               children: n.guildId
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Bucket",
             children: (0, r.jsx)("code", {
               children: n.bucket
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Revision",
             children: (0, r.jsx)("code", {
               children: n.revision
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Override",
-            children: (0, r.jsx)(_.wl, {
+            children: (0, r.jsx)(g.wl, {
               value: n.override
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Exposure type",
             children: (0, r.jsx)("code", {
               children: a
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Excluded",
-            children: (0, r.jsx)(_.wl, {
+            children: (0, r.jsx)(g.wl, {
               value: l
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Previously tracked",
-            children: (0, r.jsx)(_.wl, {
+            children: (0, r.jsx)(g.wl, {
               value: c
             })
-          }), (0, r.jsx)(_.Z9, {
+          }), (0, r.jsx)(g.Z9, {
             name: "Location",
             children: (0, r.jsx)("code", {
               children: s
@@ -135,9 +135,9 @@ let N = [{
 function O() {
   let [e, t] = a.useState(""), n = a.useRef(null), l = (0, u.Wu)([b.Z], () => b.Z.loggedTriggers), o = a.useMemo(() => l.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [l, e]), [c, d] = a.useState(void 0), h = o.find(e => e.key === c), {
     TabBar: p,
-    renderSelectedTab: _
+    renderSelectedTab: g
   } = (0, j.ZP)({
-    tabs: S
+    tabs: T
   }, []), O = (0, u.e7)([b.Z], () => b.Z.trackTriggers), E = a.useCallback(e => {
     x.Z.dispatch({
       type: "SET_TRACK_TRIGGERS",
@@ -146,7 +146,7 @@ function O() {
   }, []);
   return (0, r.jsxs)("div", {
     ref: n,
-    className: i()(T.panel, C.panel),
+    className: i()(N.panel, C.panel),
     children: [(0, r.jsxs)("div", {
       className: C.toolbar,
       children: [(0, r.jsx)("div", {
@@ -178,15 +178,15 @@ function O() {
         placeholder: "Search by experiment id"
       })]
     }), (0, r.jsx)(v.Z, {
-      columns: N,
+      columns: S,
       data: o,
       selectedRowKey: c,
       onClickRow: e => d(e.key)
-    }), null != h && (0, r.jsxs)(g.Z, {
+    }), null != h && (0, r.jsxs)(_.Z, {
       className: C.subPanel,
       minHeight: 100,
       initialHeight: null != n.current ? n.current.clientHeight / 2 : 300,
-      children: [(0, r.jsx)(p, {}), _({
+      children: [(0, r.jsx)(p, {}), g({
         loggedTrigger: h
       })]
     })]

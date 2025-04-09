@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  P: () => g
+  P: () => _
 }), n(388685), n(35282), n(49124);
 var r = n(200651),
   a = n(192379),
@@ -50,7 +50,7 @@ let f = Object.keys(x.jQ).map(e => ({
     value: e,
     label: e
   })),
-  _ = Array.from(Array.from(Object.keys(c.b).reduce((e, t) => {
+  g = Array.from(Array.from(Object.keys(c.b).reduce((e, t) => {
     let [n] = t.split(".");
     return e.add(n), e
   }, new Set))).map(e => ({
@@ -58,7 +58,7 @@ let f = Object.keys(x.jQ).map(e => ({
     label: e
   }));
 
-function g(e) {
+function _(e) {
   let {
     state: t,
     setState: n
@@ -67,7 +67,7 @@ function g(e) {
   } = t, [i, o] = a.useState(null), s = (0, r.jsxs)("div", {
     className: h.section,
     children: [(0, r.jsx)(d.VcW, {
-      options: _,
+      options: g,
       placeholder: "Select a scale to edit...",
       value: void 0,
       onChange: e => {
@@ -124,13 +124,13 @@ function v(e) {
     name: c,
     base: p,
     darkness: b,
-    lightness: _,
-    showColumnarPalettePreview: g,
+    lightness: g,
+    showColumnarPalettePreview: _,
     colorSpace: v,
     easingStrength: j = 1,
     useP3ColorSpace: C,
-    steps: T = 26
-  } = t, N = (0, x.XM)(t), S = (0, x.W6)(N, c);
+    steps: N = 26
+  } = t, S = (0, x.XM)(t), T = (0, x.W6)(S, c);
   return (0, r.jsxs)(d.hjN, {
     className: h.paletteSettings,
     children: [(0, r.jsxs)("div", {
@@ -148,7 +148,7 @@ function v(e) {
         children: c
       }), (0, r.jsx)(d.P3F, {
         onClick: function() {
-          let e = Object.entries(N).reduce((e, t) => {
+          let e = Object.entries(S).reduce((e, t) => {
             let [n, r] = t;
             return e[n] = {
               value: (0, l.Z)((0, i.Z)(r, x.HW.sRGB), {
@@ -192,13 +192,13 @@ function v(e) {
     }), (0, r.jsxs)(d.hjN, {
       title: "Luminance",
       children: [(0, r.jsx)(d.xJW, {}), (0, r.jsxs)(d.xJW, {
-        title: "Lighten (".concat((100 * _).toFixed(), "%)"),
+        title: "Lighten (".concat((100 * g).toFixed(), "%)"),
         children: [(0, r.jsx)(d.R94, {
           type: d.geA.DESCRIPTION,
           children: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter."
         }), (0, r.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: _,
+          initialValue: g,
           stickToMarkers: !0,
           markers: Array.from({
             length: 21
@@ -247,7 +247,7 @@ function v(e) {
       children: [(0, r.jsx)(d.xJW, {
         children: (0, r.jsx)(d.j7V, {
           note: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-          value: g,
+          value: _,
           onChange: e => (0, x.KB)(c, e, n),
           children: "Show columnar palette preview"
         })
@@ -260,10 +260,10 @@ function v(e) {
           children: "Use P3 Color Space"
         })
       }), (0, r.jsx)(d.xJW, {
-        title: "Steps (".concat(T, ")"),
+        title: "Steps (".concat(N, ")"),
         children: (0, r.jsx)(d.iRW, {
           onValueRender: () => null,
-          initialValue: T,
+          initialValue: N,
           minValue: (0, x.A0)(c).length,
           maxValue: 100,
           onValueChange: e => (0, x.YC)(c, Math.round(e), n),
@@ -273,22 +273,22 @@ function v(e) {
         title: "Palette Preview",
         children: (0, r.jsx)("div", {
           className: h.paletteOverrides,
-          "data-columnar": g,
-          children: Object.entries(N).map((e, n) => {
-            let [a, c] = e, u = (0, x.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = S[a];
+          "data-columnar": _,
+          children: Object.entries(S).map((e, n) => {
+            let [a, c] = e, u = (0, x.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = T[a];
             return (0, r.jsxs)("div", {
               style: {
                 backgroundColor: u
               },
               children: [(0, r.jsxs)(d.Text, {
-                variant: g ? "text-sm/medium" : "text-xs/medium",
+                variant: _ ? "text-sm/medium" : "text-xs/medium",
                 style: {
                   color: m
                 },
-                children: [t.name, ".", n + 1, g && null != h ? (0, r.jsx)("strong", {
+                children: [t.name, ".", n + 1, _ && null != h ? (0, r.jsx)("strong", {
                   children: " - ".concat(h)
                 }) : ""]
-              }), g && (0, r.jsxs)(d.Text, {
+              }), _ && (0, r.jsxs)(d.Text, {
                 variant: "text-xxs/medium",
                 style: {
                   opacity: .75,

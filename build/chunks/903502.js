@@ -27,7 +27,7 @@ let x = [{
 }];
 
 function h() {
-  let [e, t] = a.useState(null), [n, h] = a.useState(0), [p, b] = a.useState(1e3), [f, _] = a.useState(0), g = (0, l.e7)([c.Z], () => {
+  let [e, t] = a.useState(null), [n, h] = a.useState(0), [p, b] = a.useState(1e3), [f, g] = a.useState(0), _ = (0, l.e7)([c.Z], () => {
     var t;
     return null === e ? null : null != (t = c.Z.getFeedbackConfig(e)) ? t : s.R[e]
   }), v = Object.keys(s.R).map(e => ({
@@ -53,7 +53,7 @@ function h() {
       title: "Override Survey Cooldown",
       className: m.formElement,
       tag: i.RB0.H3,
-      children: [null != g && (0, r.jsxs)(r.Fragment, {
+      children: [null != _ && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           className: m.formDividerTitle,
           children: (0, r.jsx)(i.Text, {
@@ -62,16 +62,16 @@ function h() {
           })
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(g.cooldown / 1e3, " second(s) or")
+          children: "".concat(_.cooldown / 1e3, " second(s) or")
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(g.cooldown / 6e4, " minute(s) or")
+          children: "".concat(_.cooldown / 6e4, " minute(s) or")
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(g.cooldown / 36e5, " hour(s) or")
+          children: "".concat(_.cooldown / 36e5, " hour(s) or")
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(g.cooldown / 864e5, " day(s)")
+          children: "".concat(_.cooldown / 864e5, " day(s)")
         })]
       }), (0, r.jsx)(d.Z, {
         className: m.formDividerTitle,
@@ -100,7 +100,7 @@ function h() {
       title: "Override Survey Chance",
       className: m.formElement,
       tag: i.RB0.H3,
-      children: [null != g && (0, r.jsxs)(r.Fragment, {
+      children: [null != _ && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Z, {
           className: m.formDividerTitle,
           children: (0, r.jsx)(i.Text, {
@@ -109,7 +109,7 @@ function h() {
           })
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: "".concat(100 * g.chance, "%")
+          children: "".concat(100 * _.chance, "%")
         })]
       }), (0, r.jsx)(d.Z, {
         className: m.formDividerTitle,
@@ -124,7 +124,7 @@ function h() {
           max: 100,
           value: f.toString(),
           type: "number",
-          onChange: e => _(parseFloat(e))
+          onChange: e => g(parseFloat(e))
         }), (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           children: "%"

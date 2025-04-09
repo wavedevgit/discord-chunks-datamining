@@ -1,15 +1,15 @@
-/** Chunk was on 35758 **/
+/** Chunk was on 92216 **/
 n.d(t, {
-  Z: () => f,
-  t: () => d
+  Z: () => d,
+  t: () => c
 }), n(953529);
 var r, l = n(392711),
-  i = n.n(l),
-  a = n(442837),
-  s = n(570140),
-  o = n(246364);
+  a = n.n(l),
+  s = n(442837),
+  o = n(570140),
+  i = n(246364);
 
-function c(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,23 +17,23 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let d = {
+let c = {
     version: "",
     description: "",
     formFields: []
   },
   u = {};
-class m extends(r = a.ZP.Store) {
+class _ extends(r = s.ZP.Store) {
   get(e) {
     if (null != e) return u[e]
   }
   getRulesPrompt(e) {
     var t;
-    return i().find(null == (t = u[e]) ? void 0 : t.formFields, o.J)
+    return a().find(null == (t = u[e]) ? void 0 : t.formFields, i.J)
   }
 }
-c(m, "displayName", "MemberVerificationFormStore");
-let f = new m(s.Z, {
+E(_, "displayName", "MemberVerificationFormStore");
+let d = new _(o.Z, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
       invite: t
@@ -58,10 +58,10 @@ let f = new m(s.Z, {
       form: t,
       guildId: n
     } = e;
-    if (null == t) u[n] = d;
+    if (null == t) u[n] = c;
     else {
       var r;
-      let e = null != (r = u[n]) ? r : d;
+      let e = null != (r = u[n]) ? r : c;
       u[n] = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -69,7 +69,7 @@ let f = new m(s.Z, {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            c(e, t, n[t])
+            E(e, t, n[t])
           })
         }
         return e
@@ -81,7 +81,7 @@ let f = new m(s.Z, {
     let {
       guildId: n
     } = e;
-    u[n] = null != (t = u[n]) ? t : d
+    u[n] = null != (t = u[n]) ? t : c
   },
   GUILD_DELETE: function(e) {
     let {

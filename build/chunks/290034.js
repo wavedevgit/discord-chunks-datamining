@@ -1,42 +1,43 @@
-/** Chunk was on 72891 **/
-n.d(i, {
-  Z: () => g
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => f
 });
-var t = n(200651);
+var r = n(200651);
 n(192379);
-var o = n(120356),
-  r = n.n(o),
+var i = n(120356),
+  o = n.n(i),
   a = n(297700),
-  l = n(471885),
-  c = n(981631),
-  s = n(306641);
-let d = {
-    [c.Eu4.NONE]: s.iconBackgroundTierNone,
-    [c.Eu4.TIER_1]: s.iconBackgroundTierOne,
-    [c.Eu4.TIER_2]: s.iconBackgroundTierTwo,
-    [c.Eu4.TIER_3]: s.iconBackgroundTierThree
+  s = n(471885),
+  l = n(981631),
+  c = n(306641);
+let u = {
+    [l.Eu4.NONE]: c.iconBackgroundTierNone,
+    [l.Eu4.TIER_1]: c.iconBackgroundTierOne,
+    [l.Eu4.TIER_2]: c.iconBackgroundTierTwo,
+    [l.Eu4.TIER_3]: c.iconBackgroundTierThree
   },
-  u = {
-    [c.Eu4.NONE]: s.iconTierNone,
-    [c.Eu4.TIER_1]: s.iconTierOne,
-    [c.Eu4.TIER_2]: s.iconTierTwo,
-    [c.Eu4.TIER_3]: s.iconTierThree
+  d = {
+    [l.Eu4.NONE]: c.iconTierNone,
+    [l.Eu4.TIER_1]: c.iconTierOne,
+    [l.Eu4.TIER_2]: c.iconTierTwo,
+    [l.Eu4.TIER_3]: c.iconTierThree
   };
 
-function g(e) {
+function f(e) {
   let {
-    premiumTier: i,
+    premiumTier: t,
     iconBackgroundClassName: n,
-    iconClassName: o,
-    size: c
+    iconClassName: i,
+    size: l
   } = e;
-  return (0, t.jsx)(a.Z, {
-    className: r()(n, d[i]),
-    size: c,
-    children: (0, t.jsx)(l.Z, {
-      tier: i,
+  return (0, r.jsx)(a.Z, {
+    className: o()(n, u[t]),
+    size: l,
+    children: (0, r.jsx)(s.Z, {
+      tier: t,
       color: "currentColor",
-      className: r()(o, s.boostedGuildIconGem, u[i])
+      className: o()(i, c.boostedGuildIconGem, d[t])
     })
   })
 }

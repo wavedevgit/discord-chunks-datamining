@@ -1,74 +1,74 @@
 /** Chunk was on 72891 **/
-n.d(i, {
-  c: () => _
+n.d(t, {
+  c: () => g
 });
-var t = n(200651);
+var i = n(200651);
 n(192379);
-var o = n(481060),
-  r = n(269128),
-  a = n(358555),
+var a = n(481060),
+  o = n(269128),
+  r = n(358555),
   l = n(267642),
   c = n(26323),
   s = n(30513),
   d = n(981631),
   u = n(388032),
-  g = n(309818);
+  f = n(309818);
 
-function f(e) {
+function _(e) {
   let {
-    guild: i,
+    guild: t,
     banner: n
   } = e;
-  return (0, t.jsx)("div", {
-    className: g.guildBanner,
+  return (0, i.jsx)("div", {
+    className: f.guildBanner,
     style: {
       backgroundImage: "url(".concat(n)
     },
-    children: (0, t.jsxs)("div", {
-      className: g.guildHeader,
-      children: [(0, t.jsx)(a.Z, {
-        guild: i,
+    children: (0, i.jsxs)("div", {
+      className: f.guildHeader,
+      children: [(0, i.jsx)(r.Z, {
+        guild: t,
         isBannerVisible: !0
-      }), (0, t.jsx)(o.X6q, {
-        className: g.guildName,
+      }), (0, i.jsx)(a.X6q, {
+        className: f.guildName,
         variant: "heading-md/semibold",
-        children: i.toString()
-      }), (0, t.jsx)(r.Z, {
-        className: g.dropdown,
+        children: t.toString()
+      }), (0, i.jsx)(o.Z, {
+        className: f.dropdown,
         open: !1
       })]
     })
   })
 }
 
-function _(e) {
+function g(e) {
   let {
-    analyticsLocations: i,
+    analyticsLocations: t,
     analyticsLocation: n,
-    guild: o,
-    isGIF: r,
-    banner: a
-  } = e, g = r ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != g && (0, c.Z)({
-    analyticsLocations: i,
+    guild: a,
+    isGIF: o,
+    banner: r
+  } = e, f = o ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
+  null != f && (0, c.Z)({
+    analyticsLocations: t,
     analyticsSourceLocation: n,
-    guild: o,
+    guild: a,
     headerProps: {
       title: u.NW.string(u.t["rv2H+/"]),
-      subtitle: function(e, i) {
+      subtitle: function(e, t) {
         let n = (0, l.nW)(e);
-        return i ? u.NW.formatToPlainString(u.t["TR/Uys"], {
+        return t ? u.NW.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
         }) : u.NW.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(g, r),
-      image: (0, t.jsx)(f, {
-        guild: o,
-        banner: a
+      }(f, o),
+      image: (0, i.jsx)(_, {
+        guild: a,
+        banner: r
       })
     },
     perkIntro: u.NW.string(u.t.ZuItcH),
-    perks: r ? (0, s.zC)() : (0, s.XO)()
+    perks: o ? (0, s.zC)() : (0, s.XO)()
   })
 }
