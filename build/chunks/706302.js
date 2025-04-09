@@ -16,6 +16,6 @@ function l(e) {
     botUserId: l
   }), o = (0, r.Z)({
     context: t
-  });
-  return a && null != l && !o
+  }), c = "contextless" === t.type;
+  return a && null != l && !o && !c
 }
