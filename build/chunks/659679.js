@@ -30,7 +30,7 @@ function x(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), g = (0, u.E)(n.guildId, v);
+  }, [n]), g = (0, u.X)(n.guildId, v);
   return (0, r.jsx)(a.Z, {
     className: p.systemMessageContainer,
     contentClassName: p.systemMessageContent,
@@ -55,7 +55,7 @@ function x(e) {
           children: x
         }),
         color: null != _ ? _ : void 0,
-        roleGradient: g
+        roleColors: g
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,

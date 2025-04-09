@@ -36,12 +36,12 @@ function C(e) {
     (0, u.jd)(n), null == s || null == (e = s.popout) || e.markAsDismissed(b.L.AUTO_DISMISS)
   }, [n, s]);
   let C = (0, a.e7)([d.Z], () => d.Z.getStateForGuild(n)),
-    E = o.useRef(!1);
+    I = o.useRef(!1);
   return (o.useEffect(() => {
     var e, r;
     if (null == t) return;
     let o = null == C || null == (r = C.powerups) || null == (e = r.get) ? void 0 : e.call(r, t);
-    null == o || E.current || ((0, v.KE)(n, o), E.current = !0)
+    null == o || I.current || ((0, v.KE)(n, o), I.current = !0)
   }, [n, t, null == C ? void 0 : C.powerups]), (null == C ? void 0 : C.catalog) == null) ? null : (0, r.jsxs)("div", {
     className: Z.container,
     children: [(0, r.jsxs)(c.Z, {

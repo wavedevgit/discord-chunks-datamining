@@ -40,7 +40,7 @@ function U(e) {
     channelId: r
   } = e, {
     analyticsLocations: a
-  } = (0, c.ZP)(), s = (0, d.e7)([m.ZP], () => m.ZP.getMember(l, t.id), [t, l]), u = (0, g.E)(null == s ? void 0 : s.guildId, null == s ? void 0 : s.colorStrings);
+  } = (0, c.ZP)(), s = (0, d.e7)([m.ZP], () => m.ZP.getMember(l, t.id), [t, l]), u = (0, g.X)(null == s ? void 0 : s.guildId, null == s ? void 0 : s.colorStrings);
   return (0, i.jsxs)("div", {
     className: O.row,
     children: [(0, i.jsx)(o.qEK, {
@@ -71,7 +71,7 @@ function U(e) {
             children: (0, i.jsx)(o.PUh, {
               name: null != (e = null == s ? void 0 : s.nick) ? e : f.ZP.getName(t),
               color: null != (n = null == s ? void 0 : s.colorString) ? n : void 0,
-              roleGradient: u
+              roleColors: u
             })
           }, "open-user-profile")
         }

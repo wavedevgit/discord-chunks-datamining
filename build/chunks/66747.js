@@ -214,7 +214,7 @@ let q = l.memo(function(e) {
       analyticsLocations: a
     } = (0, p.ZP)(), i = l.useCallback(e => {
       null != n && (e.stopPropagation(), e.preventDefault(), (0, k.RE)(n, a))
-    }, [n, a]), s = (0, v.E)(null == n ? void 0 : n.guildId, null == n ? void 0 : n.colorStrings);
+    }, [n, a]), s = (0, v.X)(null == n ? void 0 : n.guildId, null == n ? void 0 : n.colorStrings);
     return null == o || null == n ? null : (0, r.jsxs)("div", {
       className: U.memberNameContainer,
       children: [(0, r.jsx)(C.P3F, {
@@ -233,7 +233,7 @@ let q = l.memo(function(e) {
             children: [(0, r.jsx)(C.PUh, {
               name: D.ZP.getName(n.guildId, null, o),
               color: null != (t = n.colorString) ? t : void 0,
-              roleGradient: s,
+              roleColors: s,
               className: U.memberNameText
             }), (0, r.jsx)(f.ZP, {
               primaryGuild: null == o ? void 0 : o.primaryGuild,

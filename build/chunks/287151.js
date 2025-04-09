@@ -27,8 +27,8 @@ var i, o = n(200651),
   x = n(56314),
   S = n(231053),
   _ = n(944386),
-  C = n(305325),
-  E = n(33154),
+  E = n(305325),
+  C = n(33154),
   N = n(692147),
   P = n(197115),
   R = n(659215),
@@ -148,8 +148,8 @@ class ec extends(i = r.PureComponent) {
         emojiSize: _
       } = this.props,
       {
-        shouldShowTooltip: C,
-        tooltipTextAria: E,
+        shouldShowTooltip: E,
+        tooltipTextAria: C,
         reactionRef: P,
         tooltipPositionKey: R
       } = this.state,
@@ -177,8 +177,8 @@ class ec extends(i = r.PureComponent) {
       targetElementRef: {
         current: P
       },
-      shouldShow: C,
-      "aria-label": null != E && E,
+      shouldShow: E,
+      "aria-label": null != C && C,
       renderPopout: this.renderTooltip,
       nudgeAlignIntoViewport: !0,
       position: "top",
@@ -356,9 +356,9 @@ class ec extends(i = r.PureComponent) {
         message: n,
         isLurking: i
       } = this.props, r = A.Z.getChannel(n.getChannelId()), a = M.Z.getGuild(null == r ? void 0 : r.getGuildId());
-      return i && null != a ? (0, o.jsx)(E.Z, {
+      return i && null != a ? (0, o.jsx)(C.Z, {
         ctaRef: this.ctaRef,
-        type: E.s.REACTIONS,
+        type: C.s.REACTIONS,
         guild: a,
         closePopout: t
       }) : (0, o.jsx)(o.Fragment, {})
@@ -483,7 +483,7 @@ class ec extends(i = r.PureComponent) {
       if (!t) return null;
       let n = A.Z.getChannel(e.getChannelId()),
         i = M.Z.getGuild(null == n ? void 0 : n.getGuildId());
-      null != i && (0, C.hk)(i.id)
+      null != i && (0, E.hk)(i.id)
     }), ei(this, "handleSetReactionRef", e => {
       this.setState({
         reactionRef: e
@@ -589,11 +589,11 @@ let eu = r.memo(e => {
       return {
         joinedEmojiSourceGuild: (null == e ? void 0 : e.type) === T.B.GUILD ? M.Z.getGuild(null == e ? void 0 : e.guildId) : void 0
       }
-    }), [u, h] = r.useState(void 0), [m, f] = r.useState(void 0), [g, b] = r.useState(null), [j, v] = r.useState(!1), [O, x] = r.useState(!1), [_, C] = r.useState(!1), E = null != c, N = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, P = k.Z.getGuildId(), R = null != P && (P === (null == u ? void 0 : u.id) || P === (null == c ? void 0 : c.id)), I = D.default.getCurrentUser(), w = (0, G.a)({
+    }), [u, h] = r.useState(void 0), [m, f] = r.useState(void 0), [g, b] = r.useState(null), [j, v] = r.useState(!1), [O, x] = r.useState(!1), [_, E] = r.useState(!1), C = null != c, N = null != (t = null == u ? void 0 : u.isDiscoverable()) && t, P = k.Z.getGuildId(), R = null != P && (P === (null == u ? void 0 : u.id) || P === (null == c ? void 0 : c.id)), I = D.default.getCurrentUser(), w = (0, G.a)({
       sourceType: g,
       expressionSourceApplication: null != m ? m : null,
       isPremium: F.ZP.isPremium(I),
-      hasJoinedEmojiSourceGuild: E,
+      hasJoinedEmojiSourceGuild: C,
       isDiscoverable: N,
       emojiComesFromCurrentGuild: R,
       isUnusableRoleSubscriptionEmoji: !1,
@@ -612,9 +612,9 @@ let eu = r.memo(e => {
             case S.w6.GUILD:
               h(e.guild)
           } else h(null);
-          x(!1), C(!0), i()
+          x(!1), E(!0), i()
         })()
-      }, [n, j, _, i]), E) return null;
+      }, [n, j, _, i]), C) return null;
     let Z = () => {
         v(!j)
       },
@@ -651,7 +651,7 @@ let eu = r.memo(e => {
       }) : A && (0, o.jsx)(ed, {
         emojiId: n,
         expressionSourceGuild: u,
-        hasJoinedExpressionSourceGuild: E,
+        hasJoinedExpressionSourceGuild: C,
         onClose: a,
         popoutData: w,
         currentGuildId: P,

@@ -25,8 +25,8 @@ var i = n(200651),
   x = n(620652),
   S = n(815605),
   _ = n(222677),
-  C = n(995774),
-  E = n(665906),
+  E = n(995774),
+  C = n(665906),
   N = n(210887),
   P = n(314897),
   R = n(592125),
@@ -206,7 +206,7 @@ function $(e) {
     reactionType: s,
     onRemoveReactor: l,
     disableManage: c = !1
-  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, E.$R)(r), j = (0, u.e7)([A.Z], () => A.Z.can(W.Plq.MANAGE_MESSAGES, r) && g) || d === n.id, v = (0, u.e7)([I.ZP, R.Z, M.Z], () => U.ZP.getName(a, r.id, n));
+  } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([L.default], () => L.default.getUser(n.id), [n]), g = (0, C.$R)(r), j = (0, u.e7)([A.Z], () => A.Z.can(W.Plq.MANAGE_MESSAGES, r) && g) || d === n.id, v = (0, u.e7)([I.ZP, R.Z, M.Z], () => U.ZP.getName(a, r.id, n));
   return (0, i.jsxs)(b.Z, {
     className: G.reactorDefault,
     onContextMenu: e => (0, F.Pv)(e, n, r),
@@ -421,7 +421,7 @@ function et(e) {
     return o.useEffect(() => {
       null != i && null == n.find(e => {
         let t = null != e.me_vote ? T.O.VOTE : e.burst_count > 0 ? T.O.BURST : T.O.NORMAL;
-        return (0, C.ir)(e.emoji, i.emoji) && t === i.reactionType
+        return (0, E.ir)(e.emoji, i.emoji) && t === i.reactionType
       }) && r(t)
     }, [i, r, n, t]), [i, r]
   }(n, null != j ? {
@@ -429,8 +429,8 @@ function et(e) {
     reactionType: j.burst_count > 0 ? T.O.BURST : T.O.NORMAL
   } : null, f), _ = o.useMemo(() => {
     var e;
-    return null == x ? null : null != (e = f.find(e => (0, C.ir)(e.emoji, x.emoji))) ? e : null
-  }, [f, x]), E = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
+    return null == x ? null : null != (e = f.find(e => (0, E.ir)(e.emoji, x.emoji))) ? e : null
+  }, [f, x]), C = (0, u.e7)([g.Z], () => g.Z.saturation), P = (0, u.e7)([N.Z], () => (0, d.wj)(N.Z.theme));
   if (o.useEffect(() => {
       (0 === f.length || null == x && null == _) && setImmediate(s)
     }, [s, f.length, _, x]), null == x || null == _) return (0, i.jsx)(h.$jN, {});
@@ -454,7 +454,7 @@ function et(e) {
             reactionType: n ? T.O.BURST : T.O.NORMAL,
             emoji: e.emoji,
             count: n ? e.burst_count : e.count,
-            colors: null != e.burst_colors ? (0, v.Z)(e.burst_colors, E, P) : void 0
+            colors: null != e.burst_colors ? (0, v.Z)(e.burst_colors, C, P) : void 0
           }, "".concat(n ? "burst-" : "normal-").concat(null != (t = e.emoji.id) ? t : "", ":").concat(e.emoji.name))
         })
       }), (0, i.jsx)(ee, {

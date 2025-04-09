@@ -133,13 +133,12 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       size: l.EFr.SIZE_32,
       animateOnHover: !(n || eE),
       guildId: Q
-    }), [eC, eR] = i.useState(!1);
+    }), eC = (0, y.X)(Q, s), [eR, eP] = i.useState(!1);
     i.useEffect(() => {
-      n && eR(!1)
+      n && eP(!1)
     }, [n]);
-    let eP = (0, v.Fr)(Z),
-      ew = null != eP && !em && n && !eC,
-      eD = (0, y.E)(Q, s),
+    let ew = (0, v.Fr)(Z),
+      eD = null != ew && !em && n && !eR,
       eL = () => {
         eb(!0)
       },
@@ -174,7 +173,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
             voiceChannel: eS,
             animate: eE,
             hideEmoji: e,
-            hasQuest: null != eP,
+            hasQuest: null != ew,
             textClassName: D.activityText
           })
         }
@@ -239,7 +238,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           color: null != o ? o : void 0,
           name: null != B ? B : eh,
           className: D.name,
-          roleGradient: eD
+          roleColors: eC
         }), !$ && (0, r.jsx)(m.ZP, {
           primaryGuild: null == V ? void 0 : V.primaryGuild,
           userId: null == V ? void 0 : V.id,
@@ -249,11 +248,11 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         })]
       }),
       eZ = e => (0, r.jsx)(O.Z, k(x({
-        quest: eP,
+        quest: ew,
         memberListItemRef: eg,
         applicationStream: H
       }, e), {
-        closePopout: () => eR(!0)
+        closePopout: () => eP(!0)
       })),
       eH = W === C.Skl.OFFLINE;
     return null == V ? (0, r.jsx)(h.Z, {
@@ -263,7 +262,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       targetElementRef: eg,
       renderPopout: eZ,
       position: "bottom",
-      shouldShow: ew,
+      shouldShow: eD,
       nudgeAlignIntoViewport: !1,
       useRawTargetDimensions: !0,
       animation: l.yRy.Animation.NONE,

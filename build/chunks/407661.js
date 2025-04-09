@@ -98,7 +98,7 @@ function T(e) {
     colorString: O,
     colorStrings: T,
     colorRoleName: N
-  } = (0, u.ZP)(o), A = (0, d.E)(h, T), C = I(i, o), R = (0, p.NE)(i, o), P = n.showThreadPromptOnReply && C >= v && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
+  } = (0, u.ZP)(o), A = (0, d.X)(h, T), C = I(i, o), R = (0, p.NE)(i, o), P = n.showThreadPromptOnReply && C >= v && R, w = () => (0, _.uL)(E.Z5c.CHANNEL(i.getGuildId(), i.id, o.id));
 
   function D(e) {
     e.stopPropagation(), (0, f.qx)(i.id, !s)
@@ -133,7 +133,7 @@ function T(e) {
                 name: m,
                 color: O,
                 roleName: N,
-                roleGradient: A
+                roleColors: A
               }, t)
             })
           })

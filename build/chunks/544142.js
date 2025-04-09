@@ -61,7 +61,7 @@ function j(e) {
     channel: b
   } = e, {
     analyticsLocations: _
-  } = (0, u.ZP)(c.Z.USERNAME), C = (0, o.e7)([m.default], () => m.default.getUser(d)), j = (0, o.e7)([f.ZP], () => null != d ? f.ZP.getMember(b.guild_id, d) : null), O = (0, p.E)(b.guild_id, null == j ? void 0 : j.colorStrings);
+  } = (0, u.ZP)(c.Z.USERNAME), C = (0, o.e7)([m.default], () => m.default.getUser(d)), j = (0, o.e7)([f.ZP], () => null != d ? f.ZP.getMember(b.guild_id, d) : null), O = (0, p.X)(b.guild_id, null == j ? void 0 : j.colorStrings);
 
   function E(e) {
     if (null == C) return null;
@@ -96,7 +96,7 @@ function j(e) {
         children: (0, r.jsx)(a.PUh, {
           name: N,
           color: null != I ? I : void 0,
-          roleGradient: O
+          roleColors: O
         })
       }))
     })

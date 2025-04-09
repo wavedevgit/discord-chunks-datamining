@@ -103,7 +103,7 @@ let A = i.memo(function(e) {
     } = (0, c.cj)([y.Z], () => ({
       isMobile: y.Z.isMobileOnline(l.user.id),
       status: y.Z.getStatus(l.user.id, v)
-    })), I = (0, c.e7)([_.ZP], () => _.ZP.getMember(v, l.user.id)), A = (0, g.E)(t.guild_id, null == I ? void 0 : I.colorStrings), w = i.useMemo(() => ({
+    })), I = (0, c.e7)([_.ZP], () => _.ZP.getMember(v, l.user.id)), A = (0, g.X)(t.guild_id, null == I ? void 0 : I.colorStrings), w = i.useMemo(() => ({
       [v]: [l.user.id]
     }), [v, l.user.id]);
     (0, f.$)(w);
@@ -155,7 +155,7 @@ let A = i.memo(function(e) {
               children: [(0, r.jsx)(u.PUh, {
                 name: l.userNick,
                 color: null != (t = null == I ? void 0 : I.colorString) ? t : void 0,
-                roleGradient: A,
+                roleColors: A,
                 className: S.participantName
               }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",

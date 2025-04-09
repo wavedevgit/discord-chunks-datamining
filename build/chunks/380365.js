@@ -22,7 +22,7 @@ let x = l.memo(function(e) {
     guildId: y,
     isTagAdopted: v,
     onChangeUseTag: O
-  } = e, C = (0, f.Cc)(y), w = (0, i.e7)([c.Z], () => c.Z.getGuild(y)), N = null != (x = null == C || null == (t = C.badge) ? void 0 : t.imageHash) ? x : null == w || null == (r = w.profile) ? void 0 : r.badge, P = null != (j = null == C ? void 0 : C.tag) ? j : null == w || null == (l = w.profile) ? void 0 : l.tag, S = (0, i.e7)([u.default], () => u.default.getCurrentUser()), Z = (0, i.e7)([o.ZP], () => null != S ? o.ZP.getMember(y, S.id) : null), T = (0, s.E)(y, null == Z ? void 0 : Z.colorStrings);
+  } = e, C = (0, f.Cc)(y), w = (0, i.e7)([c.Z], () => c.Z.getGuild(y)), N = null != (x = null == C || null == (t = C.badge) ? void 0 : t.imageHash) ? x : null == w || null == (r = w.profile) ? void 0 : r.badge, P = null != (j = null == C ? void 0 : C.tag) ? j : null == w || null == (l = w.profile) ? void 0 : l.tag, S = (0, i.e7)([u.default], () => u.default.getCurrentUser()), Z = (0, i.e7)([o.ZP], () => null != S ? o.ZP.getMember(y, S.id) : null), T = (0, s.X)(y, null == Z ? void 0 : Z.colorStrings);
   return null == w || null == S || null == Z || null == N ? null : (0, n.jsxs)("div", {
     className: g.previewSection,
     children: [(0, n.jsxs)("div", {
@@ -39,7 +39,7 @@ let x = l.memo(function(e) {
             className: g.userName,
             name: d.ZP.getName(y, null, S),
             color: null != (b = Z.colorString) ? b : void 0,
-            roleGradient: T
+            roleColors: T
           }), v && (0, n.jsx)(m.aG, {
             guildId: y,
             clanBadge: N,
