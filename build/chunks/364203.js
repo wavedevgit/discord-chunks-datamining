@@ -139,7 +139,8 @@ function F(e) {
     })]
   })
 }
-let Z = i.forwardRef(e => {
+
+function Z(e) {
   let {
     isSelected: t,
     onSelect: n,
@@ -201,7 +202,7 @@ let Z = i.forwardRef(e => {
       }))
     })
   })
-});
+}
 
 function H(e) {
   let {
@@ -324,7 +325,6 @@ function K() {
     })]
   })
 }
-Z.displayName = "BaseChatWallpaperSelection";
 let z = function(e) {
   let {
     className: t,

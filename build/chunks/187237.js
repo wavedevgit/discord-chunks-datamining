@@ -17,7 +17,7 @@ function d(e) {
     children: n,
     className: i
   } = e;
-  return (0, a.I3)("HeaderBarMaybeClickableGdmIcon") ? (0, r.jsx)(o.ua7, {
+  return (0, a.I3)("HeaderBarMaybeClickableGdmIcon", t.id) ? (0, r.jsx)(o.ua7, {
     position: "bottom",
     text: c.NW.string(c.t["0qPSMT"]),
     children: e => {

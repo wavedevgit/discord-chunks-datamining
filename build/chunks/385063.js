@@ -47,7 +47,7 @@ function f(e) {
     message: t,
     usernameHook: i,
     compact: s
-  } = e, m = (0, c.ZP)(t), f = i(m), h = (0, l.I3)("GdmNameChangeSystemMessage");
+  } = e, m = (0, c.ZP)(t), f = i(m), h = (0, l.I3)("GdmNameChangeSystemMessage", t.channel_id);
   return (0, r.jsx)(u.Z, {
     compact: s,
     className: p.channelNameChange,

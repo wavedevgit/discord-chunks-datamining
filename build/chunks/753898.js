@@ -22,7 +22,7 @@ function b(e) {
   let {
     channel: t
   } = e;
-  return (0, c.I3)("EmptyMessages") ? (0, r.jsxs)("div", {
+  return (0, c.I3)("EmptyMessages", t.id) ? (0, r.jsxs)("div", {
     className: g.buttonContainer,
     children: [(0, r.jsx)(l.zxk, {
       size: l.PhG.MEDIUM,

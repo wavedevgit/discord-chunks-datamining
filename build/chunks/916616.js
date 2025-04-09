@@ -117,12 +117,13 @@ let N = i.forwardRef((e, t) => {
     onClick: G,
     tabIndex: B,
     dataSafeSrc: V,
-    useFullWidth: F = !1
-  } = e, Z = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth"]);
-  let H = i.useRef(null),
-    W = i.useRef(null);
+    useFullWidth: F = !1,
+    srcIsAnimated: Z
+  } = e, H = S(e, ["className", "imageClassName", "readyState", "src", "placeholder", "placeholderVersion", "alt", "width", "height", "maxWidth", "maxHeight", "minWidth", "minHeight", "mediaLayoutType", "limitResponsiveWidth", "accessory", "zoomable", "original", "children", "renderAccessory", "onClick", "tabIndex", "dataSafeSrc", "useFullWidth", "srcIsAnimated"]);
+  let W = i.useRef(null),
+    Y = i.useRef(null);
   if (1 === y && 1 === O) return null;
-  let Y = (0, d.Tj)({
+  let K = (0, d.Tj)({
       width: y,
       height: O,
       maxWidth: T,
@@ -130,29 +131,29 @@ let N = i.forwardRef((e, t) => {
       minWidth: P,
       minHeight: w
     }),
-    K = 0 !== Y.width ? Y.width / Y.height : 1;
+    z = 0 !== K.width ? K.width / K.height : 1;
   "" !== f && c !== p.zo9.ERROR ? n = j({
     src: f,
-    size: Y,
+    size: K,
     alt: b,
     className: s,
     mediaLayoutType: D
   }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(A, {
-    size: Y,
+    size: K,
     mediaLayoutType: D,
     alt: b
   })), n = (0, r.jsx)(_.N, {
     readyState: c,
-    aspectRatio: K,
+    aspectRatio: z,
     placeholder: h,
     placeholderVersion: E,
-    placeholderStyle: R(Y, D),
+    placeholderStyle: R(K, D),
     children: n
   });
-  let z = null != U ? U() : null;
-  return z = null != z ? z : x, (0, r.jsx)(l.tEY, {
-    ringTarget: H,
-    focusTarget: W,
+  let q = null != U ? U() : null;
+  return q = null != q ? q : x, (0, r.jsx)(l.tEY, {
+    ringTarget: W,
+    focusTarget: Y,
     children: (0, r.jsxs)("div", I(v({
       ref: t,
       className: a()(g.imageWrapper, {
@@ -160,15 +161,15 @@ let N = i.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, o),
-      style: C(Y, L, F, D)
-    }, Z), {
+      style: C(K, L, F, D)
+    }, H), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: -1,
         onClick: G,
         "aria-hidden": !0,
         className: g.originalLink,
         href: k,
-        ref: H,
+        ref: W,
         "data-role": "img",
         "data-safe-src": null != V ? V : f
       }), null != G ? (0, r.jsx)(l.P3F, {
@@ -177,14 +178,14 @@ let N = i.forwardRef((e, t) => {
         onClick: G,
         "aria-label": null != b ? b : m.NW.string(m.t.X4IxWF),
         "aria-describedby": u.r5,
-        innerRef: W,
+        innerRef: Y,
         focusProps: {
           enabled: !1
         },
         children: n
-      }) : n, null != z ? (0, r.jsx)("div", {
+      }) : n, null != q ? (0, r.jsx)("div", {
         className: g.imageAccessory,
-        children: z
+        children: q
       }) : null]
     }))
   })
