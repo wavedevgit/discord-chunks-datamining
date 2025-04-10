@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => C
+  Z: () => v
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -16,38 +16,38 @@ var r = n(200651),
   p = n(937510),
   f = n(38900),
   g = n(709999),
-  h = n(957058),
-  m = n(215023),
+  m = n(957058),
+  h = n(215023),
   _ = n(388032),
-  v = n(806734);
-let C = e => {
+  C = n(806734);
+let v = e => {
   let {
     isLoading: t,
     rankedSkuIds: n,
     handleTransition: a,
-    numVisibleItems: C,
+    numVisibleItems: v,
     tab: x
-  } = e, O = (0, i.e7)([c.default], () => c.default.getCurrentUser()), j = l.createRef(), y = (0, h.u)(), k = l.useMemo(() => y(n), [t, y, n]), S = (0, b.a)()(k), P = (0, p.l)(S);
+  } = e, O = (0, i.e7)([c.default], () => c.default.getCurrentUser()), j = l.createRef(), y = (0, m.u)(), k = l.useMemo(() => y(n), [t, y, n]), S = (0, b.a)()(k), P = (0, p.l)(S);
   return null == O ? null : (0, r.jsxs)("div", {
-    className: o()(v.popularPicksSection, v.centeredSection),
+    className: o()(C.popularPicksSection, C.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: v.blockHeader,
+      className: C.blockHeader,
       children: [(0, r.jsx)(s.X6q, {
         variant: "heading-lg/semibold",
-        children: x === m.AW.ORBS ? _.NW.string(_.t.dFgeub) : _.NW.string(_.t.ivaAAw)
-      }), x === m.AW.HOME && (0, r.jsx)(s.zxk, {
+        children: x === h.AW.ORBS ? _.NW.string(_.t.dFgeub) : _.NW.string(_.t.ivaAAw)
+      }), x === h.AW.HOME && (0, r.jsx)(s.zxk, {
         color: s.Ttl.PRIMARY,
         look: s.iLD.FILLED,
         onClick: () => a("shop all top"),
         children: _.NW.string(_.t.xFcotb)
       })]
     }), (0, r.jsx)("div", {
-      className: v.feed,
+      className: C.feed,
       ref: j,
       children: t ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(f.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
-        children: P.slice(0, C).map((e, t) => {
+        children: P.slice(0, v).map((e, t) => {
           let n = d.Z.getCategoryForProduct(e.skuId);
           return null == e || null == n ? null : (0, r.jsx)(u.k0, {
             newValue: {

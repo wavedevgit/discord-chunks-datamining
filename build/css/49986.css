@@ -1,6 +1,6 @@
 /**
   Module ID: 49986
-  Original File Name: 82e1551b0d31dddf
+  Original File Name: 8c29416ad9ec69ea
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -205,8 +205,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1245,4 +1245,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=82e1551b0d31dddf.css.map*/
+/*# sourceMappingURL=8c29416ad9ec69ea.css.map*/

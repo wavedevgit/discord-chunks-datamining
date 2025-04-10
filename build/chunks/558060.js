@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => m
 });
 var r = n(200651);
 n(192379);
@@ -57,31 +57,31 @@ function g(e, t) {
   }), e
 }
 
-function h(e) {
+function m(e) {
   let {
     product: t,
     isPremiumUser: n,
     discount: l,
-    className: h,
-    nitroUpsell: m = !1,
+    className: m,
+    nitroUpsell: h = !1,
     hideStrikethroughPrice: _ = !1
-  } = e, v = (0, i.ql)(t, u.tuJ.DEFAULT);
-  if (null == v) return null;
-  if (v.amount <= 0) return (0, r.jsx)("div", {
-    className: a()(b.priceTagsContainer, h),
+  } = e, C = (0, i.ql)(t, u.tuJ.DEFAULT);
+  if (null == C) return null;
+  if (C.amount <= 0) return (0, r.jsx)("div", {
+    className: a()(b.priceTagsContainer, m),
     children: (0, r.jsx)(s.F, {
-      price: v
+      price: C
     })
   });
-  let C = (0, i.ql)(t, u.tuJ.PREMIUM_TIER_2),
+  let v = (0, i.ql)(t, u.tuJ.PREMIUM_TIER_2),
     x = !n && !(0, i.x6)(t),
-    O = (0, i.x6)(t) && n ? g(f({}, v), {
+    O = (0, i.x6)(t) && n ? g(f({}, C), {
       amount: l.original
-    }) : v,
+    }) : C,
     j = _ && n,
     y = _ && !n;
   return (0, r.jsxs)("div", {
-    className: a()(b.priceTagsContainer, h),
+    className: a()(b.priceTagsContainer, m),
     children: [!j && (0, r.jsx)(s.F, {
       price: O,
       discount: n ? i.f_ : l,
@@ -90,10 +90,10 @@ function h(e) {
         [b.dimmed]: n,
         [b.fullPrice]: x
       })
-    }), null != C && !y && (0, r.jsx)(s.F, {
-      price: C,
+    }), null != v && !y && (0, r.jsx)(s.F, {
+      price: v,
       discount: n ? l : i.f_,
-      renderPrice: m ? e => (0, r.jsx)(o.Text, {
+      renderPrice: h ? e => (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         children: d.NW.format(d.t.Sv8iiY, {
           price: e,

@@ -95,7 +95,7 @@ let p = {
       peaking: t,
       transitioning: n,
       style: a
-    } = e, p = window.innerHeight, [g, h] = l.useState(!1), m = f.map(e => {
+    } = e, p = window.innerHeight, [g, m] = l.useState(!1), h = f.map(e => {
       let {
         skuId: t
       } = e;
@@ -103,7 +103,7 @@ let p = {
     });
     return l.useEffect(() => {
       n && setTimeout(() => {
-        h(!0)
+        m(!0)
       }, d.lb)
     }, [n]), (0, r.jsx)("div", {
       style: a,
@@ -118,12 +118,12 @@ let p = {
           left: c,
           rotation: f,
           size: g,
-          skuId: h
-        } = e, _ = null == (l = m[t]) ? void 0 : l.items[0], v = null == (a = m[t]) ? void 0 : a.type, C = v === i.Z.AVATAR_DECORATION ? 384 : 512;
+          skuId: m
+        } = e, _ = null == (l = h[t]) ? void 0 : l.items[0], C = null == (a = h[t]) ? void 0 : a.type, v = C === i.Z.AVATAR_DECORATION ? 384 : 512;
         return (0, r.jsxs)("div", {
           className: b.asset,
           style: {
-            top: n ? -p - C : o,
+            top: n ? -p - v : o,
             left: n ? "".concat(c - 75 - 350 * Math.random()) : c,
             transform: "rotate(".concat(f, "deg)"),
             height: g.y,
@@ -131,14 +131,14 @@ let p = {
             transitionDelay: "".concat(Math.random() / 3, "s"),
             transitionDuration: "".concat(d.lb - 200 * Math.random(), "ms")
           },
-          children: [null != _ && v === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
+          children: [null != _ && C === i.Z.AVATAR_DECORATION && (0, r.jsx)(u.R, {
             item: _
-          }), null != _ && v === i.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
+          }), null != _ && C === i.Z.PROFILE_EFFECT && (0, r.jsx)(s.Z, {
             profileEffectId: _.id,
             isPurchased: !1,
             isHovering: !0
           })]
-        }, h + t)
+        }, m + t)
       })
     })
   }

@@ -1,6 +1,6 @@
 /**
   Module ID: 97161
-  Original File Name: 28c2877502b8e73c
+  Original File Name: 27ad11a1bddb4891
 **/
 @value minColumnWidth: 460px;
 
@@ -1383,8 +1383,8 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -3574,4 +3574,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=28c2877502b8e73c.css.map*/
+/*# sourceMappingURL=27ad11a1bddb4891.css.map*/

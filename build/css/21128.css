@@ -1,6 +1,6 @@
 /**
   Module ID: 21128
-  Original File Name: 6cdc18c7c7e56afe
+  Original File Name: 9379067de8bd2c5f
 **/
 .ragingDemon_ac6454 {
     position: relative;
@@ -1789,8 +1789,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -2879,4 +2879,4 @@ img.thumbnail__0f2e8 {
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=6cdc18c7c7e56afe.css.map*/
+/*# sourceMappingURL=9379067de8bd2c5f.css.map*/
