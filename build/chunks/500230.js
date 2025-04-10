@@ -23,7 +23,7 @@ let n = function(A) {
     badge: w,
     primaryColor: n,
     secondaryColor: M
-  } = A, [s, L] = Q.useState(!1), X = Q.useMemo(() => r.go.every(A => A.primary !== n || A.secondary !== M), [n, M]);
+  } = A, [L, s] = Q.useState(!1), X = Q.useMemo(() => r.go.every(A => A.primary !== n || A.secondary !== M), [n, M]);
 
   function c(A) {
     let g = {};
@@ -64,8 +64,8 @@ let n = function(A) {
             secondary: (0, f.Rf)(A)
           })
         },
-        shouldShow: s,
-        onRequestClose: () => L(!1),
+        shouldShow: L,
+        onRequestClose: () => s(!1),
         children: A => {
           var g, B;
           return (0, C.jsx)(E.P3F, (g = function(A) {
@@ -87,7 +87,7 @@ let n = function(A) {
             return A
           }({}, A), B = B = {
             onClick: () => {
-              L(A => !A)
+              s(A => !A)
             },
             className: D()(d.pickerItem, {
               [d.pickerItemSelected]: X

@@ -7,8 +7,8 @@ var i = n(200651),
   l = n(481060),
   a = n(542094),
   o = n(895924),
-  c = n(626135),
-  s = n(499254),
+  s = n(626135),
+  c = n(499254),
   u = n(424602),
   d = n(541099),
   p = n(827498),
@@ -29,7 +29,7 @@ function y(e) {
     buttonSize: N = l.PhG.MEDIUM,
     playSolo: g = !1
   } = e, j = r.useId(), P = r.useCallback(() => {
-    s.yT(p.ti.ACTIVITY)
+    c.yT(p.ti.ACTIVITY)
   }, []), E = r.useCallback(() => {
     d.Z.shouldShowModal() && P()
   }, [P]), {
@@ -62,16 +62,16 @@ function y(e) {
     playSolo: !!L.altLayout && g
   }), {
     disabled: M,
-    reason: D
+    reason: W
   } = (0, m.Z)({
     context: t,
     application: n,
     activityAction: T
-  }), W = L.enabled ? x.NW.string(x.t["1KxmJi"]) : Z;
+  }), D = L.enabled ? x.NW.string(x.t["1KxmJi"]) : Z;
   return (0, i.jsx)(l.ua7, {
-    shouldShow: null != D,
+    shouldShow: null != W,
     tooltipContentClassName: _.tooltipContent,
-    text: D,
+    text: W,
     children: e => {
       var t, r, {
           onClick: a
@@ -115,16 +115,16 @@ function y(e) {
         disabled: M,
         submitting: O,
         onClick: () => {
-          S(!0), R(), null == a || a(), c.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+          S(!0), R(), null == a || a(), s.default.track(C.rMx.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n.id,
             button_action: p._y.USE_APP_COMMAND
           })
         },
         "aria-label": x.NW.formatToPlainString(x.t["XjP/R0"], {
-          buttonText: W,
+          buttonText: D,
           applicationName: n.name
         }),
-        children: W
+        children: D
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

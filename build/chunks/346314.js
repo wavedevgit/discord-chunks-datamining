@@ -84,7 +84,7 @@ function E(e) {
   } = e, p = "username" === t, h = "dot" === t, m = null != s && null != s.primaryColor && null != s.secondaryColor, g = p && m, {
     text: E,
     gradient: b
-  } = (0, c.N)(null == s ? void 0 : s.primaryColor, null == s ? void 0 : s.secondaryColor, null == s ? void 0 : s.tertiaryColor), y = h ? (0, r.jsx)(u.F, {
+  } = (0, c.I)(null == s ? void 0 : s.primaryColor, null == s ? void 0 : s.secondaryColor, null == s ? void 0 : s.tertiaryColor, "username"), y = h ? (0, r.jsx)(u.F, {
     color: i,
     colors: m ? s : null,
     name: a,

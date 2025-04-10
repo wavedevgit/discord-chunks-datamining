@@ -8,8 +8,8 @@ var i = n(200651),
   l = n(239091),
   a = n(299206),
   o = n(276022),
-  c = n(695346),
-  s = n(914010),
+  s = n(695346),
+  c = n(914010),
   u = n(499254),
   d = n(827498),
   p = n(314734),
@@ -19,7 +19,7 @@ function f(e) {
   var t;
   let {
     application: n
-  } = e, i = null != (t = s.Z.getGuildId()) ? t : void 0;
+  } = e, i = null != (t = c.Z.getGuildId()) ? t : void 0;
   return (0, o.Z)({
     application: n,
     guildId: i,
@@ -33,7 +33,7 @@ function h(e) {
   let {
     application: t,
     onSelect: n
-  } = e, o = c.Sb.useSetting(), s = (0, a.Z)({
+  } = e, o = s.Sb.useSetting(), c = (0, a.Z)({
     id: t.id,
     label: m.NW.string(m.t["+NP/b2"])
   }), u = f({
@@ -47,7 +47,7 @@ function h(e) {
     children: [null != u && (0, i.jsxs)(r.kSQ, {
       children: [...u]
     }, "manage-app-actions"), o && (0, i.jsx)(r.kSQ, {
-      children: s
+      children: c
     }, "developer-actions")]
   })
 }

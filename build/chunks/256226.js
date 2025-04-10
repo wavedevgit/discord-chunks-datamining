@@ -132,6 +132,7 @@ let A = i.forwardRef(function(e, t) {
     tooltip: !1
   }) : (0, r.jsx)(d.xko, {
     color: F,
+    colors: Y,
     className: y.roleCircle
   });
   let K = i.useMemo(() => {

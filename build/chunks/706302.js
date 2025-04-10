@@ -12,12 +12,12 @@ function o(e) {
     context: t,
     application: n,
     botUserId: o
-  } = e, c = (0, l.ms)({
+  } = e, s = (0, l.ms)({
     context: t,
     applicationId: n.id,
     botUserId: o
-  }), s = (0, r.BQ)(n) && (0, i.Kb)(n), u = (0, a.Z)({
+  }), c = (0, r.BQ)(n) && (0, i.Kb)(n), u = (0, a.Z)({
     context: t
   }), d = "contextless" === t.type;
-  return c && null != o && !u && !d && !s
+  return s && null != o && !u && !d && !c
 }

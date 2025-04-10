@@ -175,7 +175,8 @@ let w = l.forwardRef(function(e, t) {
     background: !1,
     tooltip: !1
   }) : (0, r.jsx)(T.xko, {
-    color: w
+    color: w,
+    colors: P
   });
   let K = l.useMemo(() => {
     var t;

@@ -7,8 +7,8 @@ var i = n(200651),
   l = n(481060),
   a = n(239091),
   o = n(723163),
-  c = n(973616),
-  s = n(573188),
+  s = n(973616),
+  c = n(573188),
   u = n(783097),
   d = n(176412),
   p = n(570949),
@@ -29,7 +29,7 @@ function x(e) {
     onClickAppCardFriends: N
   } = e, g = r.useCallback(e => {
     if ((0, u.BQ)(x)) {
-      let t = x instanceof c.ZP ? x : c.ZP.createFromServer(x);
+      let t = x instanceof s.ZP ? x : s.ZP.createFromServer(x);
       (0, a.vq)(e, e => (0, i.jsx)(p.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -70,7 +70,7 @@ function x(e) {
     searchResultsPosition: v
   }), {
     enabled: O
-  } = s.X.useExperiment({
+  } = c.X.useExperiment({
     location: "AppLauncherSearchCard"
   }, {
     autoTrackExposure: !0
@@ -99,6 +99,7 @@ function x(e) {
         }), T ? (0, i.jsx)(f.Z, {
           friends: S,
           onClick: N,
+          className: b.friendsWhoPlayHover,
           shortText: !0
         }) : (0, i.jsx)(l.Text, {
           variant: "text-sm/normal",

@@ -30,8 +30,8 @@ var r = t(442837),
   E = t(297047),
   C = t(88966),
   I = t(712301),
-  T = t(47091),
-  S = t(558924),
+  S = t(47091),
+  T = t(558924),
   U = t(520063),
   W = t(37258),
   A = t(931617),
@@ -61,7 +61,7 @@ let k = (0, u.Z)((0, o.Z)(function(e) {
   } = f.Z.useExperiment({
     guildId: null == B ? void 0 : B.guild_id,
     location: "ThreadUserContextMenu"
-  }), F = K ? null == B ? void 0 : B.id : null, Q = (0, S.Z)(n, F), Y = (0, j.Z)({
+  }), F = K ? null == B ? void 0 : B.id : null, Q = (0, T.Z)(n, F), Y = (0, j.Z)({
     user: n,
     guildId: t,
     channelId: D,
@@ -84,7 +84,7 @@ let k = (0, u.Z)((0, o.Z)(function(e) {
     user: n
   }), en = (0, h.Z)({
     user: n
-  }), et = (0, T.Z)({
+  }), et = (0, S.Z)({
     user: n
   }), el = (0, x.Z)({
     user: n,

@@ -126,6 +126,7 @@ function j(e) {
         tooltip: !1
       }) : (0, r.jsx)(o.xko, {
         color: null != t ? t : void 0,
+        colors: T,
         className: m.roleCircle
       }), function() {
         if (!C) return null;

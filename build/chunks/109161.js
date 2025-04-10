@@ -1,17 +1,18 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  F: () => h,
-  x: () => m
+  F: () => m,
+  x: () => g
 }), n(388685);
 var r = n(200651),
   i = n(192379),
   o = n(120356),
   a = n.n(o),
   s = n(981729),
-  l = n(563373);
+  l = n(865672),
+  c = n(563373);
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -20,20 +21,20 @@ function c(e, t, n) {
   }) : e[t] = n, e
 }
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      c(e, t, n[t])
+      u(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, t) {
+function f(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -44,13 +45,13 @@ function d(e, t) {
   return n
 }
 
-function f(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+function _(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : f(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function _(e, t, n) {
+function p(e, t, n) {
   return i.useMemo(() => {
     let i = [e, t, n].filter(e => null != e),
       o = i.length >= 2,
@@ -71,21 +72,21 @@ function _(e, t, n) {
   }, [e, t, n])
 }
 
-function p(e) {
+function h(e) {
   var t;
   let {
     color: n,
     colors: o,
     className: s,
-    background: c = !0
+    background: l = !0
   } = e, [u, d] = i.useState(!1), f = null != (t = null == o ? void 0 : o.primaryColor) ? t : n, {
-    hasGradient: p,
+    hasGradient: _,
     stops: h,
     gradientId: m,
     animatedGradientId: g
-  } = _(f, null == o ? void 0 : o.secondaryColor, null == o ? void 0 : o.tertiaryColor);
+  } = p(f, null == o ? void 0 : o.secondaryColor, null == o ? void 0 : o.tertiaryColor);
   return null == f ? null : (0, r.jsxs)("svg", {
-    className: a()(l.svg, s),
+    className: a()(c.svg, s),
     viewBox: "0 0 20 20",
     fill: "none",
     onMouseEnter: () => {
@@ -94,7 +95,7 @@ function p(e) {
     onMouseLeave: () => {
       d(!1)
     },
-    children: [p && (0, r.jsxs)("defs", {
+    children: [_ && (0, r.jsxs)("defs", {
       children: [(0, r.jsx)("linearGradient", {
         id: m,
         x1: "0%",
@@ -124,31 +125,31 @@ function p(e) {
           repeatCount: "indefinite"
         })]
       })]
-    }), c && (0, r.jsx)("path", {
-      className: l.background,
+    }), l && (0, r.jsx)("path", {
+      className: c.background,
       d: "M0 4C0 1.79086 1.79086 0 4 0H16C18.2091 0 20 1.79086 20 4V16C20 18.2091 18.2091 20 16 20H4C1.79086 20 0 18.2091 0 16V4Z"
     }), (0, r.jsx)("circle", {
-      className: l.dotBorderBase,
+      className: c.dotBorderBase,
       cx: "10",
       cy: "10",
       r: "6"
     }), (0, r.jsx)("circle", {
-      className: l.dotBorderColor,
+      className: c.dotBorderColor,
       cx: "10",
       cy: "10",
       r: "6",
-      fill: p ? "url(#".concat(m, ")") : f
+      fill: _ ? "url(#".concat(m, ")") : f
     }), (0, r.jsx)("circle", {
-      className: l.dot,
+      className: c.dot,
       cx: "10",
       cy: "10",
       r: "5",
-      fill: p ? "url(#".concat(u ? g : m, ")") : f
+      fill: _ ? "url(#".concat(u ? g : m, ")") : f
     })]
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     color: t,
     colors: n,
@@ -157,22 +158,31 @@ function h(e) {
   } = e;
   return null == t && null == n ? null : o ? (0, r.jsx)(s.u, {
     text: i,
-    children: t => (0, r.jsx)("span", f(u({}, t), {
+    children: t => (0, r.jsx)("span", _(d({}, t), {
       "aria-hidden": !0,
-      children: (0, r.jsx)(p, u({}, e))
+      children: (0, r.jsx)(h, d({}, e))
     }))
-  }) : (0, r.jsx)(p, u({}, e))
+  }) : (0, r.jsx)(h, d({}, e))
 }
 
-function m(e) {
+function g(e) {
   let {
     color: t,
-    className: n
-  } = e;
-  return null == t ? null : (0, r.jsx)("span", {
-    className: a()(l.roleCircle, n),
-    style: {
+    colors: n,
+    className: i
+  } = e, {
+    text: o,
+    gradient: s
+  } = (0, l.I)(null == n ? void 0 : n.primaryColor, null == n ? void 0 : n.secondaryColor, null == n ? void 0 : n.tertiaryColor, "dot");
+  if (null == t && null == n) return null;
+  let u = null != n && null != n.primaryColor && null != n.secondaryColor,
+    f = d({}, u ? o.gradientStyle : {
       backgroundColor: t
-    }
+    });
+  return (0, r.jsx)("span", {
+    className: a()(c.roleCircle, i, {
+      [s.gradientClassName]: u
+    }),
+    style: f
   })
 }

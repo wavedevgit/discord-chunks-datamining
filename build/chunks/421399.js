@@ -81,8 +81,8 @@ function C(e) {
     showPopout: E = !1,
     className: Z,
     onClick: k,
-    onContextMenu: A,
-    onPopoutRequestClose: I,
+    onContextMenu: I,
+    onPopoutRequestClose: A,
     renderPopout: D,
     renderRemixTag: _ = !1,
     decorations: F,
@@ -96,7 +96,7 @@ function C(e) {
     colorRoleName: V
   } = r, X = (0, s.e7)([m.Z], () => m.Z.roleStyle), Y = "username" === X, $ = (0, g.X$)(), q = (0, O.Z)(null != L ? L : B, "BaseUsername"), Q = (0, j.ic)({
     location: "BaseUsername"
-  }), K = (0, P.Z)(n), ee = q && null != J && null != J.primaryColor && null != J.secondaryColor, et = Y && ee, er = (0, u.Nv7)(null == J ? void 0 : J.primaryColor, null == J ? void 0 : J.secondaryColor, null == J ? void 0 : J.tertiaryColor), {
+  }), K = (0, P.Z)(n), ee = q && null != J && null != J.primaryColor && null != J.secondaryColor, et = Y && ee, er = (0, u.Icv)(null == J ? void 0 : J.primaryColor, null == J ? void 0 : J.secondaryColor, null == J ? void 0 : J.tertiaryColor, "username"), {
     text: en,
     gradient: el
   } = et ? er : {
@@ -110,7 +110,7 @@ function C(e) {
       } : void 0
     })(),
     onClick: k,
-    onContextMenu: A,
+    onContextMenu: I,
     children: U + H,
     "data-text": U + H
   }, ea = i.useMemo(() => R ? (0, l.jsx)(b.ZP, {
@@ -132,7 +132,7 @@ function C(e) {
       avatar: r.guildMemberAvatar,
       size: 80
     }) : void 0,
-    onRequestClose: I,
+    onRequestClose: A,
     clickTrap: E,
     children: e => {
       var {

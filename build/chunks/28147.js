@@ -7,8 +7,8 @@ var i = n(200651),
   l = n(392711),
   a = n.n(l),
   o = n(209173),
-  c = n(110924),
-  s = n(367907),
+  s = n(110924),
+  c = n(367907),
   u = n(555573),
   d = n(895924),
   p = n(583027),
@@ -62,8 +62,8 @@ function Z(e) {
     context: t,
     query: n,
     entrypoint: l,
-    isScrollCloseToBottom: c
-  } = e, s = l === C._b.TEXT, u = l === C._b.TEXT, {
+    isScrollCloseToBottom: s
+  } = e, c = l === C._b.TEXT, u = l === C._b.TEXT, {
     loading: d,
     isEmptyState: p,
     commandResults: f,
@@ -73,7 +73,7 @@ function Z(e) {
     context: t,
     query: n,
     searchesActivities: !0,
-    searchesCommands: s,
+    searchesCommands: c,
     searchesBots: u
   }), {
     fetchState: _,
@@ -87,8 +87,8 @@ function Z(e) {
     entrypoint: l
   });
   r.useEffect(() => {
-    c && _ === m.M.FETCHED && v()
-  }, [v, _, c]);
+    s && _ === m.M.FETCHED && v()
+  }, [v, _, s]);
   let N = null == _ || _ === m.M.FETCHING,
     j = r.useMemo(() => {
       let e = b.map(e => ({
@@ -117,7 +117,7 @@ function Z(e) {
       context: t,
       commandResults: f,
       query: n
-    }), (P || N) && (0, i.jsx)(W, {
+    }), (P || N) && (0, i.jsx)(D, {
       context: t,
       applicationResults: j,
       includePlaceholder: N,
@@ -133,7 +133,7 @@ function M(e) {
     context: l,
     commandResults: a,
     query: o
-  } = e, m = a.length > 4, x = r.useMemo(() => m ? a.slice(0, 4) : a, [a, m]), [_, y] = r.useState(!1), N = null != (t = (0, c.Z)(_)) ? t : _, g = r.useCallback(() => y(e => !e), []), E = (null != (n = (0, c.Z)(o)) ? n : o)[0] !== o[0], T = _ && !E;
+  } = e, m = a.length > 4, x = r.useMemo(() => m ? a.slice(0, 4) : a, [a, m]), [_, y] = r.useState(!1), N = null != (t = (0, s.Z)(_)) ? t : _, g = r.useCallback(() => y(e => !e), []), E = (null != (n = (0, s.Z)(o)) ? n : o)[0] !== o[0], T = _ && !E;
   r.useLayoutEffect(() => y(!1), [E]);
   let {
     ref: L,
@@ -146,7 +146,7 @@ function M(e) {
     maxAnimationHeight: A.K7
   });
   r.useEffect(() => {
-    !N && _ && (0, s.yw)(I.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
+    !N && _ && (0, c.yw)(I.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
       section_name: C.L3.SEARCH,
       source: b.Z.entrypoint(),
       num: a.length
@@ -202,7 +202,7 @@ function M(e) {
   })
 }
 
-function D(e) {
+function W(e) {
   var t, n;
   let {
     trackSearchResultsItemImpressionRef: r
@@ -232,7 +232,7 @@ function D(e) {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     context: t,
     applicationResults: n,
@@ -271,7 +271,7 @@ function W(e) {
           application: r,
           installOnDemand: a
         } = e;
-        return (0, i.jsx)(D, {
+        return (0, i.jsx)(W, {
           context: t,
           application: r,
           look: _.U4.LARGE_BANNER,

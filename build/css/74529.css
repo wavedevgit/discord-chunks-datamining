@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 1c0c9e9b516c24fa
+  Original File Name: 42bb4705fdd27d00
 **/
 .container__6f9f7 {
     display: flex;
@@ -92,16 +92,13 @@
     justify-content: space-between;
     align-items: center;
     padding: var(--spacing-12) var(--spacing-16);
+    margin-bottom: var(--spacing-40);
     border-radius: var(--radius-xs);
     background-color: var(--bg-base-secondary)
 }
 
-.boostingLinkContainer__69ef9,.enableSwitchContainer__69ef9 {
+.boostingLinkContainer__69ef9 {
     margin-bottom: var(--spacing-8)
-}
-
-.memberApplicationsInfo__69ef9 {
-    margin-bottom: var(--spacing-40)
 }
 
 .sectionTitle__69ef9 {
@@ -393,4 +390,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=1c0c9e9b516c24fa.css.map*/
+/*# sourceMappingURL=42bb4705fdd27d00.css.map*/

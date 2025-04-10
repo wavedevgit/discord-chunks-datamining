@@ -34,11 +34,11 @@ function N(e) {
   }), [n, N]);
   (0, o.$)(C);
   let I = P === p.IlC.POPOUT,
-    T = (0, s.Z)({
+    S = (0, s.Z)({
       guild: v,
       analyticsLocation: h
     }),
-    S = (0, u.Aq)();
+    T = (0, u.Aq)();
   if (null == v || I) return null;
   let U = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, v) || b.Z.can(p.Plq.MANAGE_NICKNAMES, v)),
     W = y === N,
@@ -59,7 +59,7 @@ function N(e) {
     action: () => {
       W ? ((0, c.Z)(_.id, _.getAvatarURL(n, 80), {
         guildId: n
-      }), T(), S.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
+      }), S(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
         let {
           default: e
         } = await t.e("17712").then(t.bind(t, 620021));

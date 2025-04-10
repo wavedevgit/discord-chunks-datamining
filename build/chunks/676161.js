@@ -12,9 +12,9 @@ function o(e) {
     context: t,
     commands: n,
     limit: o = n.length
-  } = e, c = (0, a.D)(t), s = (0, r.R)(c), u = i.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
-  return i.useMemo(() => s.map(e => u[e]).filter(e => null != e).sort((e, t) => {
-    let n = l.ZP.getScoreWithoutLoadingLatest(c, e);
-    return l.ZP.getScoreWithoutLoadingLatest(c, t) - n
-  }).slice(0, o), [s, u, c, o])
+  } = e, s = (0, a.D)(t), c = (0, r.R)(s), u = i.useMemo(() => n.reduce((e, t) => (e[t.id] = t, e), {}), [n]);
+  return i.useMemo(() => c.map(e => u[e]).filter(e => null != e).sort((e, t) => {
+    let n = l.ZP.getScoreWithoutLoadingLatest(s, e);
+    return l.ZP.getScoreWithoutLoadingLatest(s, t) - n
+  }).slice(0, o), [c, u, s, o])
 }

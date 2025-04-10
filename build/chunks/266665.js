@@ -124,7 +124,8 @@ function D(e) {
     background: !1,
     tooltip: !1
   }) : (0, r.jsx)(u.xko, {
-    color: M
+    color: M,
+    colors: k
   }), (0, r.jsxs)(u.njP.Item, {
     className: a()(T.row, {
       [T.dragBefore]: null !== W && N < W,

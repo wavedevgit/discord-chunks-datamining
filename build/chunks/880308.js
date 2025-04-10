@@ -1,16 +1,16 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  g: () => s
+  g: () => c
 });
 var i = n(192379),
   r = n(442837),
   l = n(695346),
   a = n(115130),
   o = n(566620),
-  c = n(782769);
+  s = n(782769);
 
-function s() {
-  let e = (0, c.z)(),
+function c() {
+  let e = (0, s.z)(),
     t = l.Sb.getSetting(),
     n = (0, r.e7)([a.Z], () => a.Z.getFetchState(), []);
   return i.useEffect(() => {

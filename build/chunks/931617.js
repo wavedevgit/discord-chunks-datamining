@@ -32,7 +32,8 @@ function N(e, n, t) {
       tooltip: !1
     }) : (0, l.jsx)(a.xko, {
       className: O.roleDot,
-      color: null != (o = e.colorString) ? o : (0, r.Rf)(p.p6O)
+      color: null != (o = e.colorString) ? o : (0, r.Rf)(p.p6O),
+      colors: t ? e.colorStrings : null
     }), (0, l.jsx)("div", {
       children: e.name
     })]
@@ -66,7 +67,7 @@ function h(e, n) {
   if (__OVERLAY__ || null == v || null == h || !y) return null;
   let C = b.Z.getHighestRole(h),
     I = Object.values(j).filter(e => !(0, u.pM)(h.id, e.id)),
-    T = _ && !O ? I.map(t => {
+    S = _ && !O ? I.map(t => {
       let r = t.managed || !b.Z.isRoleHigher(h, C, t),
         i = -1 !== v.indexOf(t.id);
       return r && !i ? null : (0, l.jsx)(a.S89, {
@@ -82,11 +83,11 @@ function h(e, n) {
       id: e.id,
       label: () => N(e, P, E)
     }, e.id));
-  return 0 === T.filter(f.lm).length ? null : t ? T : (0, l.jsx)(a.sNh, {
+  return 0 === S.filter(f.lm).length ? null : t ? S : (0, l.jsx)(a.sNh, {
     id: "roles",
     label: m.NW.formatToPlainString(m.t.PCs0oq, {
-      numRoles: T.length
+      numRoles: S.length
     }),
-    children: T
+    children: S
   })
 }

@@ -81,7 +81,7 @@ let g = e => {
   let [b, y] = i.useState(!1), {
     text: v,
     gradient: O
-  } = (0, l.Nv7)(null == d ? void 0 : d.primaryColor, null == d ? void 0 : d.secondaryColor, null == d ? void 0 : d.tertiaryColor), I = i.useCallback(e => {
+  } = (0, l.Icv)(null == d ? void 0 : d.primaryColor, null == d ? void 0 : d.secondaryColor, null == d ? void 0 : d.tertiaryColor, "username"), I = i.useCallback(e => {
     y(!0), null == m || m(e)
   }, [y, m]), S = i.useCallback(e => {
     y(!1), null == g || g(e)
