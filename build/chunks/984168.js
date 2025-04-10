@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var i = n(200651);
 n(192379);
@@ -11,12 +11,12 @@ var r = n(120356),
   s = n(388032),
   c = n(148520);
 
-function u(e) {
+function d(e) {
   let {
     sortOrder: t,
     onSortOptionClick: n,
     closePopout: r
-  } = e, u = e => {
+  } = e, d = e => {
     n(e), r()
   };
   return (0, i.jsx)("div", {
@@ -33,13 +33,13 @@ function u(e) {
           id: "sort-by-popular",
           group: "sort-by",
           label: s.NW.string(s.t.SzxiqK),
-          action: () => u(o.bS.POPULAR),
+          action: () => d(o.bS.POPULAR),
           checked: t === o.bS.POPULAR
         }), (0, i.jsx)(a.k5B, {
           id: "sort-by-alphabetical",
           group: "sort-by",
           label: s.NW.string(s.t.m8xstr),
-          action: () => u(o.bS.ALPHABETICAL),
+          action: () => d(o.bS.ALPHABETICAL),
           checked: t === o.bS.ALPHABETICAL
         })]
       })

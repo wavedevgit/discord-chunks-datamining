@@ -13,14 +13,14 @@ function c(e) {
   let {
     labelType: t,
     collapsed: n = !1
-  } = e, c = t === a.ww.NEW ? o.NW.string(o.t.y2b7CA) : o.NW.string(o.t["/qdhkp"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = r.useState(n ? "" : c);
+  } = e, c = t === a.ww.NEW ? o.NW.string(o.t.y2b7CA) : o.NW.string(o.t["/qdhkp"]), d = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [u, p] = r.useState(n ? "" : c);
   return (r.useEffect(() => {
     n ? p("") : t === a.ww.NEW ? p(o.NW.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.NW.string(o.t["/qdhkp"]))
   }, [n, t]), t === a.ww.NONE) ? null : (0, i.jsx)(l.IGR, {
-    className: u,
+    className: d,
     disableColor: !0,
     text: (0, i.jsx)("span", {
-      children: d
+      children: u
     })
   })
 }

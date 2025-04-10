@@ -14,7 +14,7 @@ function s(e) {
     commandId: n,
     searchResultsPosition: s,
     query: c
-  } = e, u = (0, r.e7)([a.Z], () => a.Z.entrypoint());
+  } = e, d = (0, r.e7)([a.Z], () => a.Z.entrypoint());
   return {
     trackSearchResultsItemImpressionRef: (0, o.Z)({
       onVisible: () => {
@@ -26,7 +26,7 @@ function s(e) {
             command_id: n,
             search_results_position: s,
             query: c,
-            source: u
+            source: d
           }
         })
       },

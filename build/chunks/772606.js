@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => d
+  Z: () => u
 });
 var i = n(200651),
   r = n(192379),
@@ -9,9 +9,9 @@ var i = n(200651),
   o = n(481060),
   s = n(695676),
   c = n(388032),
-  u = n(672425);
+  d = n(672425);
 
-function d(e) {
+function u(e) {
   let {
     className: t
   } = e, {
@@ -21,7 +21,7 @@ function d(e) {
   }, [n]);
   return (0, i.jsx)(o.P3F, {
     onClick: l,
-    className: a()(u.clickable, t),
+    className: a()(d.clickable, t),
     "aria-label": c.NW.string(c.t.ybUZqq),
     children: (0, i.jsx)(o.j9r, {
       size: "sm",

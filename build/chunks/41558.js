@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
 var i, r = n(200651),
   l = n(192379),
@@ -9,7 +9,7 @@ var i, r = n(200651),
   s = n(780775),
   c = ((i = c || {})[i.VIEW_MORE = 0] = "VIEW_MORE", i[i.VIEW_LESS = 1] = "VIEW_LESS", i);
 
-function u(e) {
+function d(e) {
   let {
     title: t,
     buttonType: n,
@@ -35,7 +35,7 @@ function u(e) {
     })]
   })
 }
-u.buttonTypes = c, u.Loading = function() {
+d.buttonTypes = c, d.Loading = function() {
   let e = l.useMemo(() => ({
     width: "".concat(10 + 20 * Math.random(), "%")
   }), []);

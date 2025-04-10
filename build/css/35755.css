@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: c0566eaf3b087620
+  Original File Name: 25d3199a151f2cec
 **/
 .brokenImageIcon_f68fcb {
     width: 48px;
@@ -656,6 +656,31 @@
     flex-direction: row;
     align-items: center;
     gap: var(--spacing-4)
+}
+
+.friendsMotivationText__95856 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1
+}
+
+.friendsMotivationText__95856 p {
+    margin: 0;
+    text-align: center;
+    padding: 0 60px
+}
+
+.friendsContainer__95856 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 200px
+}
+
+.container__95856.fixedHeight__95856 {
+    height: 100%
 }
 
 :root {
@@ -1378,4 +1403,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=c0566eaf3b087620.css.map*/
+/*# sourceMappingURL=25d3199a151f2cec.css.map*/

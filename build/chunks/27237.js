@@ -19,7 +19,7 @@ var r = t(200651),
   g = t(568413),
   f = t(117172);
 
-function b(e) {
+function j(e) {
   let n, {
     active: t,
     nextActive: o,
@@ -41,7 +41,7 @@ function b(e) {
   })
 }
 
-function j(e) {
+function b(e) {
   let {
     index: n
   } = e, t = o.useMemo(() => {
@@ -88,7 +88,7 @@ function h(e) {
     guildId: t,
     powerup: i,
     className: g.card,
-    children: [(0, r.jsx)(b, {
+    children: [(0, r.jsx)(j, {
       position: n,
       active: c,
       nextActive: x
@@ -97,7 +97,7 @@ function h(e) {
       children: [(0, r.jsx)(a.X6, {
         variant: "heading-md/bold",
         children: i.title
-      }), (0, r.jsx)(j, {
+      }), (0, r.jsx)(b, {
         index: s
       }), (0, r.jsx)(d.u, {
         className: g.footer,

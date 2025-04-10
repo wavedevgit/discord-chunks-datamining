@@ -16,8 +16,8 @@ function o(e) {
     context: t,
     applicationId: n.id,
     botUserId: o
-  }), c = (0, r.BQ)(n) && (0, i.Kb)(n), u = (0, a.Z)({
+  }), c = (0, r.BQ)(n) && (0, i.Kb)(n), d = (0, a.Z)({
     context: t
-  }), d = "contextless" === t.type;
-  return s && null != o && !u && !d && !c
+  }), u = "contextless" === t.type;
+  return s && null != o && !d && !u && !c
 }

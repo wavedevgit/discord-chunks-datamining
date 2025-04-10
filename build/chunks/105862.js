@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => C
+  Z: () => x
 });
 var i = n(200651),
   r = n(192379),
@@ -9,24 +9,24 @@ var i = n(200651),
   o = n(410030),
   s = n(782568),
   c = n(63063),
-  u = n(827498),
-  d = n(888617),
+  d = n(827498),
+  u = n(888617),
   p = n(981631),
   m = n(388032),
   f = n(434666),
   h = n(983008),
   b = n(478408);
 
-function C(e) {
+function x(e) {
   let {
     showImage: t = !0,
     padding: n = !1
-  } = e, C = (0, o.ZP)(), x = (0, l.ap)(C) ? b : h, _ = r.useCallback(() => {
+  } = e, x = (0, o.ZP)(), C = (0, l.ap)(x) ? b : h, _ = r.useCallback(() => {
     (0, s.Z)(c.Z.getAppsSupportURL(p.BhN.APPS_LEARN_MORE))
   }, []), {
-    trackSectionImpressionRef: y
-  } = (0, d.Z)({
-    sectionName: u.L3.NEW_TO_APPS,
+    trackSectionImpressionRef: v
+  } = (0, u.Z)({
+    sectionName: d.L3.NEW_TO_APPS,
     numItems: 1,
     numVisibleItems: 1
   });
@@ -34,12 +34,12 @@ function C(e) {
     className: n ? f.containerPadding : void 0,
     children: (0, i.jsxs)("div", {
       ref: e => {
-        y.current = e
+        v.current = e
       },
       className: f.container,
       children: [t && (0, i.jsx)("img", {
         className: f.image,
-        src: x,
+        src: C,
         alt: "",
         "aria-hidden": !0
       }), (0, i.jsxs)("div", {

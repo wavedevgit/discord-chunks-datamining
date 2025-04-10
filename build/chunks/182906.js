@@ -13,7 +13,7 @@ function o(e) {
     applicationName: n,
     imageClassName: o,
     imageNotFoundClassName: s
-  } = e, [c, u] = r.useState(!1);
+  } = e, [c, d] = r.useState(!1);
   return "not-found" === t.state || c ? (0, i.jsx)("div", {
     className: s,
     children: (0, i.jsx)(l.Z, {
@@ -23,6 +23,6 @@ function o(e) {
     alt: n,
     className: o,
     src: t.url,
-    onError: () => u(!0)
+    onError: () => d(!0)
   })
 }

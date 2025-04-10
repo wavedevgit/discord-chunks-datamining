@@ -84,8 +84,7 @@ function u(e, t) {
     case i.Us.PERK:
       return s({
         type: i.Us.PERK,
-        description: null != (S = t.description) ? S : "",
-        bundle: !1
+        description: null != (S = t.description) ? S : ""
       }, A)
   }
 }

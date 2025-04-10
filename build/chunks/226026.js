@@ -14,8 +14,8 @@ function s(e) {
     applicationFlags: n,
     sectionName: s,
     sectionPosition: c,
-    sectionOverallPosition: u,
-    promotionalLabel: d
+    sectionOverallPosition: d,
+    promotionalLabel: u
   } = e, p = (0, r.e7)([a.Z], () => a.Z.entrypoint());
   return {
     trackItemImpressionRef: (0, o.Z)({
@@ -28,9 +28,9 @@ function s(e) {
             application_flags: n,
             section_name: s,
             section_position: c,
-            section_overall_position: u,
+            section_overall_position: d,
             source: p,
-            promotional_label: d
+            promotional_label: u
           }
         })
       },

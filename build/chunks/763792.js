@@ -57,7 +57,6 @@ let i = [{
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
-    bundle: !0,
     dependencies: []
   }, {
     type: r.Us.PERK,
@@ -65,7 +64,6 @@ let i = [{
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
-    bundle: !0,
     dependencies: []
   }, {
     type: r.Us.PERK,
@@ -73,7 +71,6 @@ let i = [{
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
-    bundle: !1,
     dependencies: []
   }, {
     type: r.Us.PERK,
@@ -81,6 +78,5 @@ let i = [{
     title: "Lorem ipsum",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat posuere lao",
     cost: 1,
-    bundle: !1,
     dependencies: []
   }]

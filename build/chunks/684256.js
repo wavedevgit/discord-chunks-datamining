@@ -9,8 +9,8 @@ var i = n(200651),
   o = n(481060),
   s = n(895924),
   c = n(827498),
-  u = n(106066),
-  d = n(98880),
+  d = n(106066),
+  u = n(98880),
   p = n(772606),
   m = n(388032),
   f = n(655420);
@@ -22,9 +22,9 @@ function h(e) {
     title: l,
     look: h,
     items: b,
-    sectionName: C,
-    sectionOverallPosition: x
-  } = e, _ = (0, u.s)("AppLauncherApplicationListViewScreen"), y = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+    sectionName: x,
+    sectionOverallPosition: C
+  } = e, _ = (0, d.s)("AppLauncherApplicationListViewScreen"), v = r.useMemo(() => n === c._b.TEXT ? u.kA : u.qR, [n]);
   return (0, i.jsxs)("section", {
     className: f.container,
     "aria-label": m.NW.formatToPlainString(m.t.iobNIC, {
@@ -42,8 +42,8 @@ function h(e) {
     }), (0, i.jsx)(o.Ttm, {
       children: (0, i.jsx)("div", {
         className: a()({
-          [f.appGrid]: h !== d.U4.ROW,
-          [f.rows]: h === d.U4.ROW
+          [f.appGrid]: h !== u.U4.ROW,
+          [f.rows]: h === u.U4.ROW
         }),
         children: b.map((e, n) => {
           let {
@@ -51,16 +51,16 @@ function h(e) {
             installOnDemand: l,
             showsPromoted: a
           } = e;
-          return (0, i.jsx)(y, {
+          return (0, i.jsx)(v, {
             context: t,
             application: r,
             look: h,
-            sectionName: C,
+            sectionName: x,
             resultsPosition: n,
             location: s.Vh.APP_LAUNCHER_LIST_VIEW_ALL,
             installOnDemand: l,
             isOneClickCTA: _,
-            sectionOverallPosition: x,
+            sectionOverallPosition: C,
             showsPromoted: a
           }, r.id)
         })

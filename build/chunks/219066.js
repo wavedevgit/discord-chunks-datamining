@@ -9,8 +9,8 @@ var i = n(192379),
   o = n(254711),
   s = n(213459),
   c = n(10718),
-  u = n(148958),
-  d = n(689079);
+  d = n(148958),
+  u = n(689079);
 
 function p(e) {
   var t;
@@ -26,7 +26,7 @@ function p(e) {
     },
     options: {
       placeholderCount: 0,
-      limit: d.tn,
+      limit: u.tn,
       includeFrecency: !0
     },
     allowFetch: !0
@@ -44,16 +44,16 @@ function p(e) {
       } = e;
       return t
     }).filter(e => !(e.id in o.Tm) && h.has(e.id))
-  }, [null == (t = p.result) ? void 0 : t.sections, h]), C = (0, u.h)(b);
+  }, [null == (t = p.result) ? void 0 : t.sections, h]), x = (0, d.h)(b);
   return {
-    appsInThisServer: i.useMemo(() => l().compact(C.map(e => {
+    appsInThisServer: i.useMemo(() => l().compact(x.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [C]),
+    })), [x]),
     isLoading: p.fetchState.fetching || f
   }
 }

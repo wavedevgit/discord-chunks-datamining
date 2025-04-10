@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 42bb4705fdd27d00
+  Original File Name: 3e1b2118fd7b6af4
 **/
 .container__6f9f7 {
     display: flex;
@@ -356,7 +356,7 @@
     width: 350px;
     display: flex;
     flex-direction: column;
-    background: var(--background-secondary)
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-secondary) 60%,var(--transparent) 100%),linear-gradient(90deg,rgba(22,26,138,.5),rgba(0,1,56,.5))
 }
 
 .contentContainer__61aee {
@@ -390,4 +390,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=42bb4705fdd27d00.css.map*/
+/*# sourceMappingURL=3e1b2118fd7b6af4.css.map*/

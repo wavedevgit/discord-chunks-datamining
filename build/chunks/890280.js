@@ -13,11 +13,11 @@ function o(e) {
     context: n,
     launchingComponentId: o,
     onSubmissionComplete: s
-  } = e, c = (0, r.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : void 0)), u = null != c && c.isLaunching && c.componentId === o, d = (0, l.Z)(u);
+  } = e, c = (0, r.e7)([a.ZP], () => a.ZP.getLaunchState(t, "channel" === n.type ? n.channel.id : void 0)), d = null != c && c.isLaunching && c.componentId === o, u = (0, l.Z)(d);
   return i.useEffect(() => {
-    !u && d && (null == s || s())
-  }, [u, d, s]), {
-    submitting: u,
-    wasSubmitting: null != d ? d : null
+    !d && u && (null == s || s())
+  }, [d, u, s]), {
+    submitting: d,
+    wasSubmitting: null != u ? u : null
   }
 }

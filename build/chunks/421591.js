@@ -9,27 +9,27 @@ var i = n(200651),
   o = n(367907),
   s = n(906732),
   c = n(541099),
-  u = n(695676),
-  d = n(173790),
+  d = n(695676),
+  u = n(173790),
   p = n(692656),
   m = n(684256),
   f = n(314734),
   h = n(981631),
   b = n(899429);
-let C = {
+let x = {
     width: f.Gy,
     height: f.lv
   },
-  x = {
+  C = {
     height: f.lv
   },
   _ = r.memo(r.forwardRef(function(e, t) {
     let {
       context: n,
       entrypoint: l,
-      initHistory: u
+      initHistory: d
     } = e, {
-      analyticsLocations: d
+      analyticsLocations: u
     } = (0, s.ZP)(a.Z.APP_LAUNCHER);
     return r.useEffect(() => {
       (0, o.yw)(h.rMx.APPLICATION_COMMAND_TOP_OF_FUNNEL, {
@@ -48,14 +48,14 @@ let C = {
     }, [l]), (0, i.jsx)("div", {
       className: b.drawerSizingWrapper,
       ref: t,
-      style: C,
+      style: x,
       children: (0, i.jsx)("div", {
         className: b.contentWrapper,
         children: (0, i.jsx)(s.Gt, {
-          value: d,
-          children: (0, i.jsx)(y, {
-            initHistory: u,
-            children: (0, i.jsx)(v, {
+          value: u,
+          children: (0, i.jsx)(v, {
+            initHistory: d,
+            children: (0, i.jsx)(y, {
               context: n,
               entrypoint: l
             })
@@ -65,13 +65,13 @@ let C = {
     })
   }));
 
-function y(e) {
+function v(e) {
   let {
     initHistory: t,
     children: n
   } = e, [l, a] = r.useState(null != t ? t : [{
-    type: u.gc.HOME
-  }]), [o, s] = r.useState({}), c = l[l.length - 1], [d, p] = r.useState(!1), m = r.useCallback(e => {
+    type: d.gc.HOME
+  }]), [o, s] = r.useState({}), c = l[l.length - 1], [u, p] = r.useState(!1), m = r.useCallback(e => {
     a(t => [...t, e])
   }, []), f = r.useCallback(() => {
     let e = null;
@@ -111,7 +111,7 @@ function y(e) {
     var t;
     return null != (t = l.findLast(t => t.type === e)) ? t : o[e]
   }, [l, o]);
-  return (0, i.jsx)(u.uX.Provider, {
+  return (0, i.jsx)(d.uX.Provider, {
     value: {
       history: l,
       discard: o,
@@ -119,14 +119,14 @@ function y(e) {
       pushHistory: m,
       goBack: f,
       getMostRecentHistoryItemByType: h,
-      isSlideReady: d,
+      isSlideReady: u,
       setSlideReady: p
     },
     children: n
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     context: t,
     entrypoint: n
@@ -151,27 +151,27 @@ function v(e) {
     }
   }(a), {
     currentView: h,
-    getMostRecentHistoryItemByType: C,
+    getMostRecentHistoryItemByType: x,
     setSlideReady: _
-  } = (0, u.hH)();
+  } = (0, d.hH)();
   r.useEffect(() => {
     _(!1)
   }, [null == h ? void 0 : h.type, _]);
-  let y = r.useCallback(() => {
+  let v = r.useCallback(() => {
     _(!0)
   }, [_]);
   if (null == h) return null;
-  let v = C(u.gc.LIST),
-    N = C(u.gc.APPLICATION);
+  let y = x(d.gc.LIST),
+    N = x(d.gc.APPLICATION);
   return (0, i.jsxs)(l.MyZ, {
     activeSlide: h.type,
     width: f.Gy,
-    onSlideReady: y,
+    onSlideReady: v,
     children: [(0, i.jsx)(l.Mi4, {
-      id: u.gc.HOME,
+      id: d.gc.HOME,
       children: (0, i.jsx)("div", {
         className: b.slideContent,
-        style: x,
+        style: C,
         children: (0, i.jsx)(p.Z, {
           isScrollCloseToBottom: c,
           setScroller: s,
@@ -182,26 +182,26 @@ function v(e) {
         })
       })
     }), (0, i.jsx)(l.Mi4, {
-      id: u.gc.LIST,
+      id: d.gc.LIST,
       children: (0, i.jsx)("div", {
         className: b.slideContent,
-        style: x,
-        children: null != v && (0, i.jsx)(m.Z, {
+        style: C,
+        children: null != y && (0, i.jsx)(m.Z, {
           context: t,
           entrypoint: n,
-          title: v.title,
-          look: v.look,
-          items: v.items,
-          sectionName: v.sectionName,
-          sectionOverallPosition: v.sectionOverallPosition
+          title: y.title,
+          look: y.look,
+          items: y.items,
+          sectionName: y.sectionName,
+          sectionOverallPosition: y.sectionOverallPosition
         })
       })
     }), (0, i.jsx)(l.Mi4, {
-      id: u.gc.APPLICATION,
+      id: d.gc.APPLICATION,
       children: (0, i.jsx)("div", {
         className: b.slideContent,
-        style: x,
-        children: null != N && (0, i.jsx)(d.Z, {
+        style: C,
+        children: null != N && (0, i.jsx)(u.Z, {
           context: t,
           application: N.application,
           sectionName: N.sectionName,

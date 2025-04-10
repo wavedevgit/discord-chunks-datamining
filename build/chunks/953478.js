@@ -24,8 +24,8 @@ function f(e) {
     guildId: n
   } = e, t = (0, s.e7)([c.Z], () => c.Z.getGuild(n)), {
     available: f,
-    spent: b,
-    total: j
+    spent: j,
+    total: b
   } = (0, d.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
     className: g.container,
@@ -47,10 +47,10 @@ function f(e) {
         count: f,
         type: p.b.AVAILABLE
       }), (0, r.jsx)(p.Z, {
-        count: b,
+        count: j,
         type: p.b.SPENT
       }), (0, r.jsx)(p.Z, {
-        count: j,
+        count: b,
         type: p.b.TOTAL
       })]
     }), (0, r.jsx)(m.Z, {
