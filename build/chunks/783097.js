@@ -3,22 +3,23 @@
 n.d(t, {
   $d: () => w,
   BQ: () => P,
-  Cb: () => B,
-  Hu: () => V,
-  L1: () => Y,
-  Ow: () => W,
-  PZ: () => K,
+  Cb: () => V,
+  Hu: () => F,
+  L1: () => K,
+  Ow: () => Y,
+  PZ: () => z,
   WA: () => k,
   Wx: () => R,
-  XZ: () => Z,
-  Y$: () => U,
-  Yn: () => F,
+  XZ: () => H,
+  Y$: () => G,
+  Yn: () => Z,
+  dF: () => j,
   jD: () => D,
   lf: () => M,
-  pF: () => H,
-  sl: () => G,
+  pF: () => W,
+  sl: () => B,
   vJ: () => x,
-  yJ: () => j,
+  yJ: () => U,
   ye: () => L
 }), n(953529), n(997841), n(804061), n(704826), n(35282), n(539854), n(388685);
 var r = n(912370),
@@ -130,7 +131,7 @@ function M(e) {
 }
 
 function k(e) {
-  let t = j(e),
+  let t = U(e),
     n = null == t ? void 0 : t.client_platform_config[(0, s.Z)((0, g.getOS)())];
   if ((null == n ? void 0 : n.label_until) != null && Date.now() < Date.parse(null == n ? void 0 : n.label_until)) {
     var r;
@@ -140,10 +141,21 @@ function k(e) {
 }
 
 function j(e) {
-  return P(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  switch (k(e)) {
+    case a.ww.NEW:
+      return "New";
+    case a.ww.UPDATED:
+      return "Updated";
+    default:
+      return ""
+  }
 }
 
 function U(e) {
+  return P(e) && L(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+}
+
+function G(e) {
   let {
     command: t,
     optionValues: n,
@@ -183,7 +195,7 @@ function U(e) {
   return p()
 }
 
-function G(e) {
+function B(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     {
       fakeAppIconURL: n
@@ -203,24 +215,24 @@ function G(e) {
   }
 }
 
-function B(e) {
+function V(e) {
   return !!P(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
-function V(e) {
-  let t = j(e);
+function F(e) {
+  let t = U(e);
   return null != t && t.displays_advertisements
 }
 
-function F(e) {
+function Z(e) {
   return e === b._b.TEXT || e === b._b.PLAY_TAB || e === b._b.QUICK_LAUNCHER
 }
 
-function Z(e) {
+function H(e) {
   return null == e ? "" : (e.charAt(0).toLocaleUpperCase() + e.slice(1)).replaceAll("_", " ")
 }
 
-function H(e) {
+function W(e) {
   let t = [];
   for (let n of e) {
     let e = n.application_directory_collection_items.filter(e => e.type === r.C.APPLICATION && L(e.application));
@@ -231,7 +243,7 @@ function H(e) {
   return t
 }
 
-function W(e) {
+function Y(e) {
   return {
     applicationId: e.id,
     customInstallUrl: e.customInstallUrl,
@@ -240,7 +252,7 @@ function W(e) {
   }
 }
 
-function Y(e) {
+function K(e) {
   return e instanceof p.ZP ? {
     applicationId: e.id,
     customInstallUrl: e.customInstallUrl,
@@ -254,7 +266,7 @@ function Y(e) {
   }
 }
 
-function K(e, t) {
+function z(e, t) {
   let n = null != t ? l.ZP.getGuildState(t) : null,
     r = null != n && (0, u.TK)(e.id, n);
   return (0, f.D)(e) || r
