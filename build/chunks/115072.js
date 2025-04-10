@@ -33,7 +33,7 @@ function _(e) {
   let {
     transitionState: P,
     onClose: C
-  } = e, E = i.useRef(null), k = i.useRef(null), [T, D] = i.useState(""), [A, I] = i.useState(""), [R, L] = i.useState(), [Z, z] = i.useState(""), [J, M] = i.useState([]), [V, q] = i.useState(), [B, G] = i.useState(), [H, X] = i.useState(!1), [U, Y] = i.useState(""), [K, F] = i.useState(function(e) {
+  } = e, E = i.useRef(null), k = i.useRef(null), [D, T] = i.useState(""), [A, R] = i.useState(""), [I, L] = i.useState(), [Z, z] = i.useState(""), [J, M] = i.useState([]), [V, q] = i.useState(), [B, G] = i.useState(), [H, X] = i.useState(!1), [U, Y] = i.useState(""), [K, F] = i.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -53,9 +53,9 @@ function _(e) {
       },
       rejectWithError: !0
     }).then(e => {
-      if (null != e.body && "d6669ba7268285e81de5bf8f2260aedbe522cf2a" !== e.body.hash) {
+      if (null != e.body && "9b7f4c8ffb9977264301afb80aacd32cdf6f7f92" !== e.body.hash) {
         {
-          let e = new Date("1744258757052"),
+          let e = new Date("1744291610413"),
             t = new Date;
           (0, g.TD)(t, e).hours > 6 && eh(!0)
         }
@@ -79,7 +79,7 @@ function _(e) {
     };
   async function eg() {
     var e, t;
-    if (ed(!1), "" === T || null == R) return void eo(!0);
+    if (ed(!1), "" === D || null == I) return void eo(!0);
     let i = null == V || null == (e = V.features) ? void 0 : e.find(e => (0, y.pD)(e) === B);
     ec(!0), eo(!1);
     let l = (0, b.D)(J.map(e => {
@@ -89,9 +89,9 @@ function _(e) {
         return t
       })),
       a = await (0, y.ZD)({
-        name: T,
+        name: D,
         description: A,
-        priority: R,
+        priority: I,
         feature: i,
         url: Z,
         buildOverride: null != (t = null == ep ? void 0 : ep.id) ? t : null
@@ -185,7 +185,7 @@ function _(e) {
       children: (0, n.jsxs)("form", {
         onSubmit: eg,
         children: [null != ep && (0, n.jsx)(s.ToO, {
-          type: s.ToO.Types.WARNING,
+          type: s.ToO.Types.DANGER,
           body: W.NW.format(W.t["yY60+/"], {
             buildOverrideHook: () => (0, n.jsx)("b", {
               children: null == ep ? void 0 : ep.id
@@ -193,7 +193,7 @@ function _(e) {
           }),
           title: W.NW.string(W.t["ZP/hEx"])
         }), null == ep && em && (0, n.jsx)(s.ToO, {
-          type: s.ToO.Types.WARNING,
+          type: s.ToO.Types.DANGER,
           body: W.NW.string(W.t.x18RUl),
           title: W.NW.string(W.t.cTVCIC)
         }), (0, n.jsxs)(s.Kqy, {
@@ -203,27 +203,27 @@ function _(e) {
             bottom: 8
           },
           children: [(0, n.jsx)(s.xJW, {
-            error: ea && "" === T ? W.NW.string(W.t.EkokLy) : null,
+            error: ea && "" === D ? W.NW.string(W.t.EkokLy) : null,
             title: W.NW.string(W.t.OZRgj4),
             children: (0, n.jsx)(s.oil, {
               placeholder: "Something is broken on this screen.",
               type: "text",
-              value: T,
+              value: D,
               maxLength: 100,
-              onChange: D
+              onChange: T
             })
           }), (0, n.jsxs)(s.xJW, {
             title: W.NW.string(W.t["1SplHx"]),
             children: [(0, n.jsx)(s.Kx8, {
               placeholder: "What did you expect to see?",
               value: A,
-              onChange: I
+              onChange: R
             }), (0, n.jsx)(s.R94, {
               type: s.geA.DESCRIPTION,
               children: "You can add additional information/media on the ticket after submitting"
             })]
           }), (0, n.jsx)(s.xJW, {
-            error: ea && void 0 === R ? W.NW.string(W.t.EkokLy) : null,
+            error: ea && void 0 === I ? W.NW.string(W.t.EkokLy) : null,
             title: W.NW.string(W.t.xMXLdX),
             children: (0, n.jsx)(s.q4e, {
               renderOptionLabel: e => (function(e) {
@@ -260,7 +260,7 @@ function _(e) {
                 value: e.value,
                 label: e.title
               })),
-              value: R,
+              value: I,
               maxVisibleItems: 3,
               closeOnSelect: !0
             })

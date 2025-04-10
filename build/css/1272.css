@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: 54961d1062812f62
+  Original File Name: af9d3086088865cf
 **/
 .container__74da2 {
     position: relative;
@@ -345,7 +345,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-backdrop);
     padding: 4px;
     border-radius: 4px;
     height: 24px;
@@ -355,6 +354,14 @@
 
 .icon__402f3:hover {
     color: var(--interactive-active)
+}
+
+.theme-dark .icon__402f3 {
+    background-color: var(--bg-backdrop)
+}
+
+.theme-light .icon__402f3 {
+    background-color: var(--background-secondary)
 }
 
 @value cardHeight 320px;
@@ -8843,4 +8850,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=54961d1062812f62.css.map*/
+/*# sourceMappingURL=af9d3086088865cf.css.map*/
