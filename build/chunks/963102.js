@@ -62,10 +62,10 @@ function j(e) {
     tab: v.AW.ORBS,
     displayText: C.NW.string(C.t["KUYR+P"])
   });
-  let I = n ? _.DR : a,
-    B = l.useCallback(() => {
-      t && (I(), (0, c.Ou)()), (0, p.navigateToQuestHome)()
-    }, [I, t]);
+  let B = n ? _.DR : a,
+    I = l.useCallback(() => {
+      t && (B(), (0, c.Ou)()), (0, p.navigateToQuestHome)()
+    }, [B, t]);
   return (0, r.jsx)(s.f6W, {
     theme: k,
     children: e => (0, r.jsxs)(b.Z, {
@@ -97,10 +97,10 @@ function j(e) {
         children: [E && (0, r.jsx)(g.V9, {
           cardAlignment: g.V9.CardAlignment.END,
           ctaText: C.NW.string(C.t.VC4Mq6),
-          ctaOnClick: B,
+          ctaOnClick: I,
           className: x.balanceWidgetMenu
         }), t && (0, r.jsx)(u.Z, {
-          closeAction: I,
+          closeAction: B,
           keybind: "ESC"
         })]
       })]

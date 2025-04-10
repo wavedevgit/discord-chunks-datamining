@@ -141,10 +141,10 @@ let S = e => {
       refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null != (t = null != v ? v : C) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), I = (0, p.R)("CollectiblesFeedShop"), {
-      noCache: B,
-      includeUnpublished: N
-    } = (0, m.Z)(), T = l.useCallback(() => {
+    }), P = null != (t = null != v ? v : C) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), B = (0, p.R)("CollectiblesFeedShop"), {
+      noCache: I,
+      includeUnpublished: T
+    } = (0, m.Z)(), N = l.useCallback(() => {
       O()
     }, [O]);
     if (null == E) return null;
@@ -154,13 +154,13 @@ let S = e => {
         tags: {
           isStaff: E.isStaff().toString(),
           preloadEnabled: w.toString(),
-          disableCache: B.toString(),
-          includeUnpublished: N.toString()
+          disableCache: I.toString(),
+          includeUnpublished: T.toString()
         }
       })
     }
     return null != v ? (0, r.jsx)(h.Z, {
-      onRetry: T,
+      onRetry: N,
       errorOrigin: h.i.SHOP_PAGE,
       errorMessage: v.message
     }) : (0, r.jsx)("div", {
@@ -174,7 +174,7 @@ let S = e => {
           numVisibleItems: i,
           isFetchingCategories: _,
           tab: g
-        }), g !== j.AW.CATALOG && i >= I && (0, r.jsxs)("div", {
+        }), g !== j.AW.CATALOG && i >= B && (0, r.jsxs)("div", {
           className: k.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",

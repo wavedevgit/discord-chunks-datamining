@@ -133,7 +133,7 @@ let H = function() {
               openInLayer: !1,
               tab: k.AW.ORBS,
               analyticsLocations: [],
-              analyticsSource: d.Z.QUEST_HOME_PAGE
+              analyticsSource: d.Z.ORBS_BALANCE_MENU
             })
           }
         })
