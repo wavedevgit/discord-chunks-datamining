@@ -37,8 +37,8 @@ var i = n(200651),
   k = n(827498),
   Z = n(87005),
   M = n(219066),
-  D = n(106066),
-  W = n(783097),
+  W = n(106066),
+  D = n(783097),
   B = n(695676),
   U = n(98880),
   H = n(804307),
@@ -74,7 +74,7 @@ function ei(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: s
-  } = e, c = (0, f.e7)([_.Z], () => _.Z.getIsEnabled(), []), u = n === k._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, W.Yn)(n), p = !(0, W.Yn)(n), m = n === k._b.TEXT, [b, x] = ed(!0), [C, v] = ed(u), [g, N] = ed(d), [j, P] = ed(p), E = b && C && g && j, O = (d || u) && !E, A = p && c;
+  } = e, c = (0, f.e7)([_.Z], () => _.Z.getIsEnabled(), []), u = n === k._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, D.Yn)(n), p = !(0, D.Yn)(n), m = n === k._b.TEXT, [b, x] = ed(!0), [C, v] = ed(u), [g, N] = ed(d), [j, P] = ed(p), E = b && C && g && j, O = (d || u) && !E, A = p && c;
   r.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? void 0 : e.guild_id : void 0;
@@ -300,7 +300,7 @@ function ea(e) {
       numItems: o.length,
       numVisibleItems: o.length
     }),
-    c = (0, D.s)("ActivitiesShelfSection"),
+    c = (0, W.s)("ActivitiesShelfSection"),
     u = 0 === o.length;
   return (r.useEffect(() => {
     l(u)
@@ -442,7 +442,7 @@ function ec(e) {
     })), d = n === a.I.APP_LAUNCHER_VOICE;
     return {
       fetchState: c,
-      recommendationsSections: r.useMemo(() => d ? (0, W.pF)(u) : u, [u, d]),
+      recommendationsSections: r.useMemo(() => d ? (0, D.pF)(u) : u, [u, d]),
       isInstallOnDemand: o
     }
   }({

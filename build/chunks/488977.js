@@ -70,7 +70,7 @@ function w(e) {
     context: w,
     className: R,
     sectionName: k
-  } = e, Z = r.useRef(null), M = (0, a.e7)([j.Z], () => j.Z.entrypoint()), D = (0, P.L1)(l), W = (0, m.Eb)(D), B = (0, d.R)(l.id), U = (0, a.e7)([y.Z], () => {
+  } = e, Z = r.useRef(null), M = (0, a.e7)([j.Z], () => j.Z.entrypoint()), W = (0, P.L1)(l), D = (0, m.Eb)(W), B = (0, d.R)(l.id), U = (0, a.e7)([y.Z], () => {
     var e;
     return null != (e = y.Z.getGuildId()) ? e : void 0
   }, []), H = {
@@ -97,7 +97,7 @@ function w(e) {
           referrerId: null == V ? void 0 : V.id
         }) : (0, p.J)(T({
           id: l.id
-        }, D));
+        }, W));
         (0, v.JG)(e), C.default.track(A.rMx.APP_LAUNCHER_APPLICATION_LINK_COPIED, {
           application_id: l.id,
           source: M
@@ -138,11 +138,11 @@ function w(e) {
                   })
                 })
               }
-            }), W ? (0, i.jsx)(s.sNh, {
+            }), D ? (0, i.jsx)(s.sNh, {
               id: "add-app",
               label: I.NW.string(I.t.NgXl3N),
               action: () => {
-                null == D.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, H), (0, N.L)(L(T({}, D), {
+                null == W.customInstallUrl && (0, c.yw)(A.rMx.APP_LAUNCHER_OAUTH2_AUTHORIZE_OPENED, H), (0, N.L)(L(T({}, W), {
                   oauth2Callback: e => {
                     let {
                       location: t

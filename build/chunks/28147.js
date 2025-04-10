@@ -117,7 +117,7 @@ function Z(e) {
       context: t,
       commandResults: f,
       query: n
-    }), (P || g) && (0, i.jsx)(W, {
+    }), (P || g) && (0, i.jsx)(D, {
       context: t,
       applicationResults: j,
       includePlaceholder: g,
@@ -202,7 +202,7 @@ function M(e) {
   })
 }
 
-function D(e) {
+function W(e) {
   var t, n;
   let {
     trackSearchResultsItemImpressionRef: r
@@ -232,7 +232,7 @@ function D(e) {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     context: t,
     applicationResults: n,
@@ -271,7 +271,7 @@ function W(e) {
           application: r,
           installOnDemand: o
         } = e;
-        return (0, i.jsx)(D, {
+        return (0, i.jsx)(W, {
           context: t,
           application: r,
           look: x.U4.LARGE_BANNER,

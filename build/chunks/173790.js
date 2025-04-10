@@ -40,7 +40,7 @@ function P(e) {
   } = r.useMemo(() => (0, b.sl)(I, {
     fakeAppIconURL: j,
     size: 84
-  }), [I]), D = (0, d.PL)(!0, !0), W = (0, d.LD)(null == O ? void 0 : O.guild_id, !0), B = r.useMemo(() => (0, d.If)(n, I.id), [D, W, n, I.id]), U = !B.isGuildInstalled && !B.isUserInstalled;
+  }), [I]), W = (0, d.PL)(!0, !0), D = (0, d.LD)(null == O ? void 0 : O.guild_id, !0), B = r.useMemo(() => (0, d.If)(n, I.id), [W, D, n, I.id]), U = !B.isGuildInstalled && !B.isUserInstalled;
   return r.useEffect(() => {
     U && d.ZP.queryInstallOnDemandApp(I.id, null == O ? void 0 : O.id)
   }, [I.id, null == O ? void 0 : O.id, U]), (0, i.jsxs)(a.u2D, {

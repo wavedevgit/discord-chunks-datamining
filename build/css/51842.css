@@ -1,6 +1,6 @@
 /**
   Module ID: 51842
-  Original File Name: 1e1ba0fa7dab362f
+  Original File Name: 80eded0e227ede04
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -209,8 +209,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1461,4 +1461,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=1e1ba0fa7dab362f.css.map*/
+/*# sourceMappingURL=80eded0e227ede04.css.map*/

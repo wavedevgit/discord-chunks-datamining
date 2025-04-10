@@ -39,8 +39,8 @@ var i, r = n(200651),
   k = n(226026),
   Z = n(570949),
   M = n(753972),
-  D = n(635753),
-  W = n(981631),
+  W = n(635753),
+  D = n(981631),
   B = n(217702),
   U = n(388032),
   H = n(860901),
@@ -147,7 +147,7 @@ function Q(e) {
     disabled: m,
     containerStyle: f,
     look: h
-  } = e, b = l.useCallback(e => {
+  } = e, _ = l.useCallback(e => {
     if ((0, L.BQ)(t)) {
       let n = t instanceof P.ZP ? t : P.ZP.createFromServer(t);
       (0, u.vq)(e, e => (0, r.jsx)(Z.Z, G({
@@ -155,20 +155,23 @@ function Q(e) {
       }, e)))
     }
   }, [t]), {
-    name: _,
-    description: y
+    name: y,
+    description: x
   } = l.useMemo(() => (0, L.sl)(t, {
     fakeAppIconURL: V
   }), [t]), {
-    trackItemImpressionRef: x
+    friends: C
+  } = (0, b.Z)(t), {
+    trackItemImpressionRef: v
   } = (0, k.Z)({
     applicationId: t.id,
     applicationFlags: (0, L.BQ)(t) ? t.flags : void 0,
     sectionName: o,
     sectionPosition: s,
     sectionOverallPosition: d,
-    promotionalLabel: (0, L.dF)(t)
-  }), C = l.useMemo(() => {
+    promotionalLabel: (0, L.dF)(t),
+    numFriendsWhoPlay: C.length
+  }), g = l.useMemo(() => {
     let e = m ? H.containerDisabled : H.container;
     return a()(e, {
       [H.containerBorderRadius]: "row" !== h,
@@ -177,17 +180,17 @@ function Q(e) {
     }, f)
   }, [f, m, h]);
   return m ? (0, r.jsx)("div", {
-    ref: p ? x : void 0,
-    className: C,
+    ref: p ? v : void 0,
+    className: g,
     children: i
   }) : (0, r.jsx)(c.P3F, {
-    innerRef: p ? x : void 0,
-    className: C,
+    innerRef: p ? v : void 0,
+    className: g,
     onClick: n,
-    onContextMenu: b,
+    onContextMenu: _,
     "aria-label": U.NW.formatToPlainString(U.t["zLhr9/"], {
-      applicationName: _,
-      applicationDescription: y
+      applicationName: y,
+      applicationDescription: x
     }),
     children: (0, r.jsx)(c.Rny, {
       children: i
@@ -248,14 +251,14 @@ function K(e) {
   }), [t]), g = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), j = (0, N.ZP)(y, ""), [P, E] = l.useState(!1), A = l.useCallback(() => {
     !0 === o && E(!0)
   }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => E(!1), []), k = (0, s.e7)([f.Z, O.Z], () => f.Z.inDevModeForApplication(t.id) || O.Z.inTestModeForApplication(t.id), [t.id]), Z = (0, L.WA)(t), {
-    enabled: W
+    enabled: D
   } = S.X.useExperiment({
     location: "AppLauncherAppCard"
   }, {
     autoTrackExposure: !0
   }), {
     friends: B
-  } = (0, b.Z)(t), F = W && (0, L.ye)(t) && B.length > 0;
+  } = (0, b.Z)(t), F = D && (0, L.ye)(t) && B.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [T ? (0, r.jsxs)("div", {
       onMouseEnter: A,
@@ -321,7 +324,7 @@ function K(e) {
           }) : null, (0, r.jsx)(ee, {
             application: t
           })]
-        }), F ? (0, r.jsx)(D.Z, {
+        }), F ? (0, r.jsx)(W.Z, {
           friends: B,
           onClick: _,
           shortText: !0,
@@ -495,30 +498,35 @@ function el(e) {
     location: a
   } = e, {
     pushHistory: s
-  } = (0, w.hH)(), c = l.useCallback(e => {
-    e.stopPropagation(), (0, g.yw)(W.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+  } = (0, w.hH)(), {
+    friends: c
+  } = (0, b.Z)(t), u = l.useCallback(e => {
+    e.stopPropagation(), (0, g.yw)(D.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
       source: T.Z.entrypoint(),
       promotional_label: (0, L.dF)(t),
       location: a,
-      query: r
+      query: r,
+      num_friends_who_play: c.length
     }), s({
       type: w.gc.APPLICATION,
       application: t,
       installOnDemand: o,
       sectionName: n
     })
-  }, [t, o, a, s, r, i, n]), u = l.useCallback(e => {
-    e.stopPropagation(), (0, g.yw)(W.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+  }, [t, o, a, s, r, i, n, c]), d = l.useCallback(e => {
+    e.stopPropagation(), (0, g.yw)(D.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
       source: T.Z.entrypoint(),
       promotional_label: (0, L.dF)(t),
       location: a,
-      query: r
+      query: r,
+      num_friends_who_play: c.length,
+      tab_id: "friends"
     }), s({
       type: w.gc.APPLICATION,
       application: t,
@@ -526,10 +534,10 @@ function el(e) {
       sectionName: n,
       showFriendsTab: !0
     })
-  }, [t, o, a, s, r, i, n]);
+  }, [t, o, a, s, r, i, n, c]);
   return {
-    onClickAppCard: c,
-    onClickAppCardFriends: u
+    onClickAppCard: u,
+    onClickAppCardFriends: d
   }
 }
 
