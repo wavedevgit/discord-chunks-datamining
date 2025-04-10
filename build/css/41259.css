@@ -1,6 +1,6 @@
 /**
   Module ID: 41259
-  Original File Name: aa3eee51c1206d76
+  Original File Name: 3a051e5f76bdaf59
 **/
 .modalContent__46773 {
     display: flex;
@@ -67,8 +67,8 @@
     width: 100%;
     height: 100%;
     color: var(--interactive-muted);
-    background-color: var(--bg-mod-faint);
-    border: 1px dashed var(--bg-mod-subtle)
+    background-color: var(--bg-mod-subtle);
+    border: 1px dashed var(--bg-mod-strong)
 }
 
 .iconImage__46773 {
@@ -85,4 +85,8 @@
     right: 12px
 }
 
-/*# sourceMappingURL=aa3eee51c1206d76.css.map*/
+.cancelButton__46773 {
+    color: var(--text-primary)
+}
+
+/*# sourceMappingURL=3a051e5f76bdaf59.css.map*/

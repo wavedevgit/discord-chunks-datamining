@@ -19,8 +19,8 @@ var r, i = n(913527),
   T = n(605236),
   O = n(785141),
   S = n(674503),
-  P = n(353926),
-  A = n(594190),
+  A = n(353926),
+  P = n(594190),
   R = n(38618),
   p = n(569545),
   C = n(615365),
@@ -73,8 +73,8 @@ var r, i = n(913527),
   eT = n(78839),
   eO = n(431),
   eS = n(580130),
-  eP = n(695103),
-  eA = n(358085),
+  eA = n(695103),
+  eP = n(358085),
   eR = n(74538),
   ep = n(922156),
   eC = n(436181),
@@ -309,7 +309,7 @@ let eB = [ef.kVF.QUARANTINED, ef.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, ef.kVF.VI
       predicate: () => (0, v.tq)()
     },
     [ef.kVF.CORRUPT_INSTALLATION]: {
-      predicate: () => eA.isPlatformEmbedded && (!a.Z.supported() || eD.Z.isCorruptInstallation())
+      predicate: () => eP.isPlatformEmbedded && (!a.Z.supported() || eD.Z.isCorruptInstallation())
     },
     [ef.kVF.VIDEO_UNSUPPORTED_BROWSER]: {
       predicate: e => {
@@ -336,7 +336,7 @@ let eB = [ef.kVF.QUARANTINED, ef.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, ef.kVF.VI
       predicate: () => ec.Z.enabled
     },
     [ef.kVF.DOWNLOAD_NAG]: {
-      predicate: () => !eA.isPlatformEmbedded && !ew(ef.kVF.DOWNLOAD_NAG)
+      predicate: () => !eP.isPlatformEmbedded && !ew(ef.kVF.DOWNLOAD_NAG)
     },
     [ef.kVF.SCHEDULED_MAINTENANCE]: {
       predicate: () => null != es.Z.getScheduledMaintenance(),
@@ -390,7 +390,7 @@ let eB = [ef.kVF.QUARANTINED, ef.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, ef.kVF.VI
       }
     },
     [ef.kVF.CONNECT_SPOTIFY]: {
-      predicate: () => !B.Z.hasConnectedAccount() && A.ZP.isObservedAppRunning(d.Z.get(ef.ABu.SPOTIFY).name) && !ew(ef.kVF.CONNECT_SPOTIFY)
+      predicate: () => !B.Z.hasConnectedAccount() && P.ZP.isObservedAppRunning(d.Z.get(ef.ABu.SPOTIFY).name) && !ew(ef.kVF.CONNECT_SPOTIFY)
     },
     [ef.kVF.WIN32_DEPRECATED_MESSAGE]: {
       predicate: () => (null === E.Z || void 0 === E.Z ? void 0 : E.Z.os.arch) === "ia32" && (null === E.Z || void 0 === E.Z ? void 0 : E.Z.process.platform) === "win32",
@@ -518,10 +518,10 @@ let eB = [ef.kVF.QUARANTINED, ef.kVF.AUTOMOD_QUARANTINED_USER_PROFILE, ef.kVF.VI
       }
     },
     [ef.kVF.APPLICATION_TEST_MODE]: {
-      predicate: () => null != eP.Z.testModeApplicationId,
+      predicate: () => null != eA.Z.testModeApplicationId,
       metadata: () => {
-        if (null == eP.Z.testModeApplicationId) return {};
-        let e = eP.Z.testModeApplicationId,
+        if (null == eA.Z.testModeApplicationId) return {};
+        let e = eA.Z.testModeApplicationId,
           t = _.Z.getApplication(e);
         return {
           applicationName: null != t ? t.name : e,
@@ -703,7 +703,7 @@ function eH() {
 }
 class eK extends(r = o.ZP.Store) {
   initialize() {
-    this.syncWith([eu.Z, ei.Z, J.Z, ea.Z, j.Z, eO.Z, K.Z, Q.Z, z.Z, f.Z, x.Z, Y.Z], eY), this.waitFor(ed.default, es.Z, ee.Z, $.ZP, el.ZP, et.Z, ec.Z, P.Z, ea.Z, eE.Z, B.Z, A.ZP, ei.Z, ep.Z, eC.Z, eP.Z, en.Z, eT.ZP, eD.Z, J.Z, eI.Z, er.Z, j.Z, eS.Z, eO.Z, Q.Z, y.Z, I.Z, F.Z, x.Z, Y.Z)
+    this.syncWith([eu.Z, ei.Z, J.Z, ea.Z, j.Z, eO.Z, K.Z, Q.Z, z.Z, f.Z, x.Z, Y.Z], eY), this.waitFor(ed.default, es.Z, ee.Z, $.ZP, el.ZP, et.Z, ec.Z, A.Z, ea.Z, eE.Z, B.Z, P.ZP, ei.Z, ep.Z, eC.Z, eA.Z, en.Z, eT.ZP, eD.Z, J.Z, eI.Z, er.Z, j.Z, eS.Z, eO.Z, Q.Z, y.Z, I.Z, F.Z, x.Z, Y.Z)
   }
   hasNotice() {
     return null != eF && null != eF.type

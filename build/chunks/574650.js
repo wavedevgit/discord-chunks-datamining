@@ -19,8 +19,8 @@ var a = n(442837),
   T = n(981631),
   O = n(176505),
   S = n(388032),
-  P = n(246752),
-  A = n(240211);
+  A = n(246752),
+  P = n(240211);
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -52,7 +52,7 @@ let p = 12633 == n.j ? () => {
     g = null,
     h = null,
     y = null,
-    U = [P.notice, A.notice];
+    U = [A.notice, P.notice];
   switch (m) {
     case _.wB.SUBMITTED:
       g = S.NW.string(S.t["5iLvS0"]), h = S.NW.string(S.t.mqtdmZ), y = () => {
@@ -92,7 +92,7 @@ let p = 12633 == n.j ? () => {
             guildId: p.id
           }, t))
         })
-      }, U.push(P.error);
+      }, U.push(A.error);
       break;
     default:
       g = S.NW.string(S.t.G5YKXF), h = S.NW.string(S.t["r8/DT0"]), y = () => {
@@ -102,11 +102,11 @@ let p = 12633 == n.j ? () => {
   return (0, r.jsxs)("div", {
     className: l()(...U),
     children: [(0, r.jsx)(s.Text, {
-      className: P.header,
+      className: A.header,
       variant: "text-sm/normal",
       children: g
     }), (0, r.jsx)(s.zxk, {
-      className: P.button,
+      className: A.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,

@@ -2,14 +2,16 @@
 "use strict";
 n.d(t, {
   $J: () => S,
-  EW: () => C,
+  EW: () => R,
   Fo: () => I,
   H4: () => O,
-  Ow: () => P,
-  kk: () => T,
+  JO: () => w,
+  Ow: () => D,
+  UJ: () => T,
+  kk: () => N,
   un: () => y,
   wE: () => v,
-  wH: () => R
+  wH: () => P
 }), n(388685);
 var r = n(442837),
   i = n(704215),
@@ -94,6 +96,23 @@ function S(e, t) {
 }
 
 function T(e, t, n) {
+  var r, i, o, a;
+  if ((0, m.B)(e)) return !0;
+  let l = null == (i = s.Z.settings.userContent) || null == (r = i.recurringDismissibleContentStates[e]) ? void 0 : r.lastDismissedObjectId,
+    u = null == (a = s.Z.settings.userContent) || null == (o = a.recurringDismissibleContentStates[e]) ? void 0 : o.lastDismissedAtMs,
+    d = null != u && "0" !== u ? Number.isNaN(Number(u)) ? void 0 : Number(u) : void 0,
+    f = !1;
+  if (null != n && null != d) {
+    let e = d + n.cooldownDurationMs,
+      t = Date.now(),
+      r = null == n.showAfterTimestamp || t >= n.showAfterTimestamp && d <= n.showAfterTimestamp;
+    f = t < e || !r
+  }
+  let _ = null != l && 1 !== c.default.compare(t, l);
+  return f && _
+}
+
+function N(e, t, n) {
   !((0, h.cI)(e) || p.Z.hasUserHitDCCap(e)) && (n || (o.Z.dispatch({
     type: "DCF_EVENT_LOGGED",
     eventType: d.D.DC_SHOW_REQUEST,
@@ -117,12 +136,12 @@ function T(e, t, n) {
   })))
 }
 
-function N(e) {
+function A(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-  ((0, h.cI)(e) || t.forceTrack) && w(e, t), (0, _.Vr)(e)
+  ((0, h.cI)(e) || t.forceTrack) && L(e, t), (0, _.Vr)(e)
 }
 
-function A(e) {
+function C(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
     n = !p.Z.hasUserHitDCCap();
   (0, h.gE)({
@@ -130,20 +149,23 @@ function A(e) {
     groupName: null == t ? void 0 : t.groupName
   }, n)
 }
-async function C(e) {
+async function R(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-  y(e, !0) || (N(e, t), await (0, a.nm)(e), A(e, t))
+  y(e, !0) || (A(e, t), await (0, a.nm)(e), C(e, t))
 }
-async function R(e, t) {
+async function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
-  N(e, n), await (0, a.Bn)(e, t), A(e, n)
+  A(e, n), await (0, a.Bn)(e, t), C(e, n)
 }
-async function P(e) {
+async function w(e, t, n) {
+  A(e, n), await (0, a.po)(e, t), C(e, n)
+}
+async function D(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-  N(e, t), await (0, a.z2)(e), A(e, t)
+  A(e, t), await (0, a.z2)(e), C(e, t)
 }
 
-function w(e, t) {
+function L(e, t) {
   var n;
   let [r] = (0, h.Aq)(), o = p.Z.getRenderedAtTimestamp(e), a = new Date, s = null == o ? null : a.getTime() - o;
   l.default.track(b.rMx.DISMISSIBLE_CONTENT_DISMISSED, {

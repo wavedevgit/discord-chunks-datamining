@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: 297c56e13370ba62
+  Original File Name: 610c2027512985b7
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -8907,12 +8907,13 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     display: block
 }
 
-.hoverableContainer__754bd.editing__754bd,.hoverableContainer__754bd:hover:not(.editing__754bd) {
-    background-color: var(--bg-mod-faint)
+.hoverableContainer__754bd:hover:not(.editing__754bd) {
+    background-color: var(--bg-mod-subtle)
 }
 
 .hoverableContainer__754bd.editing__754bd {
-    border-color: var(--border-subtle)
+    border-color: var(--border-subtle);
+    background-color: var(--bg-mod-faint)
 }
 
 .newInput__754bd {
@@ -14102,4 +14103,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=297c56e13370ba62.css.map*/
+/*# sourceMappingURL=610c2027512985b7.css.map*/

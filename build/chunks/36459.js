@@ -2,11 +2,11 @@
 n.d(t, {
   $Y: () => R,
   JK: () => p,
-  Je: () => f,
+  Je: () => A,
   T9: () => g,
   UE: () => C,
   Xx: () => P,
-  mm: () => A,
+  mm: () => f,
   qY: () => S
 }), n(388685);
 var r = n(544891),
@@ -89,7 +89,7 @@ async function p(e) {
     rejectWithError: !1
   })).body)
 }
-async function f(e) {
+async function A(e) {
   let t = N(e);
   return T((await r.tn.patch({
     url: _.ANM.GUILD_AUTOMOD_RULE(e.guildId, e.id),
@@ -97,7 +97,7 @@ async function f(e) {
     rejectWithError: !1
   })).body)
 }
-async function A(e, t) {
+async function f(e, t) {
   return await r.tn.del({
     url: _.ANM.GUILD_AUTOMOD_RULE(t, e),
     rejectWithError: !1

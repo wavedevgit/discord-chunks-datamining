@@ -18,8 +18,8 @@ var r = n(200651),
   T = n(533244),
   O = n(981631),
   S = n(176505),
-  P = n(388032),
-  A = n(302654);
+  A = n(388032),
+  P = n(302654);
 
 function R(e) {
   var t, R;
@@ -80,52 +80,52 @@ function R(e) {
       })
     },
     M = (0, r.jsx)(a.Z, {
-      className: A.guildIcon,
+      className: P.guildIcon,
       guild: m,
       size: a.Z.Sizes.MINI
     }),
     Z = (0, T.OY)(h, m.name);
   if (null != (null != (R = h.dmsDisabledUntil) ? R : h.invitesDisabledUntil) && y) return (0, r.jsxs)(o.qXd, {
-    className: A.notice,
+    className: P.notice,
     color: o.DM8.NEUTRAL,
     children: [(0, r.jsx)(o.RyX, {
       onClick: p,
       noticeType: O.kVF.GUILD_RAID_NOTIFICATION
     }), M, Z, (0, r.jsx)(o.EyT, {
-      className: A.actionButton,
+      className: P.actionButton,
       onClick: () => b(!1),
       children: (0, r.jsxs)("div", {
-        className: A.actionButtonInner,
+        className: P.actionButtonInner,
         children: [(0, r.jsx)(o.mBM, {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: P.NW.string(P.t["c+7oa2"])
+          children: A.NW.string(A.t["c+7oa2"])
         })]
       })
     })]
   });
-  let L = (0, T.CG)(h) ? P.NW.formatToPlainString(P.t.tZTx2N, {
+  let L = (0, T.CG)(h) ? A.NW.formatToPlainString(A.t.tZTx2N, {
       guildName: m.name
-    }) : (0, T.kk)(h) ? P.NW.formatToPlainString(P.t["1bSmxs"], {
+    }) : (0, T.kk)(h) ? A.NW.formatToPlainString(A.t["1bSmxs"], {
       guildName: m.name
-    }) : P.NW.formatToPlainString(P.t.W87xDA, {
+    }) : A.NW.formatToPlainString(A.t.W87xDA, {
       guildName: m.name
     }),
     v = U && D === S.oC.MEMBER_SAFETY;
   return (0, r.jsxs)(o.qXd, {
-    className: A.notice,
+    className: P.notice,
     color: o.DM8.WARNING,
     children: [(0, r.jsx)(o.RyX, {
       onClick: p,
       noticeType: O.kVF.GUILD_RAID_NOTIFICATION
     }), M, L, !v && (0, r.jsx)(o.EyT, {
-      className: A.actionButton,
+      className: P.actionButton,
       onClick: () => b(!0),
       children: (0, r.jsx)("div", {
-        className: A.actionButtonInner,
+        className: P.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: P.NW.string(P.t.zDJDho)
+          children: A.NW.string(A.t.zDJDho)
         })
       })
     })]

@@ -169,9 +169,7 @@ function e9(e) {
   }), x = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: E,
     highlightBadge: j,
-    setHighlightBadge: C,
-    pendingBadges: S,
-    setPendingBadges: v
+    setHighlightBadge: C
   } = function() {
     let e = i.useRef(null),
       t = i.useCallback(t => {
@@ -180,29 +178,25 @@ function e9(e) {
         }
       }, []),
       [n, r] = i.useState(),
-      [s, a] = i.useState(),
-      [l, o] = i.useState(!1);
-    return (0, O.Z)(() => o(!0), 750), i.useEffect(() => {
+      [s, a] = i.useState(!1);
+    return (0, O.Z)(() => a(!0), 750), i.useEffect(() => {
       let t = t => {
         var n;
         let {
-          pendingBadges: i,
-          highlightBadge: s
+          highlightBadge: i
         } = t;
-        null != s && r(s), null != i && a(i), null == (n = e.current) || n.call(e)
+        null != i && r(i), null == (n = e.current) || n.call(e)
       };
       return eU.S.subscribe(eX.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
         eU.S.unsubscribe(eX.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
-      highlightBadge: l ? n : void 0,
-      setHighlightBadge: r,
-      pendingBadges: s,
-      setPendingBadges: a
+      highlightBadge: s ? n : void 0,
+      setHighlightBadge: r
     }
-  }(), T = (0, en.A)(u), {
-    showTempStatusOptions: I
+  }(), S = (0, en.A)(u), {
+    showTempStatusOptions: v
   } = es.Y.useExperiment({
     location: "AvatarWithPopout"
   }, {
@@ -222,7 +216,6 @@ function e9(e) {
           className: e$.accountProfilePopoutWrapper,
           children: (0, r.jsx)($.Z, {
             currentUser: s,
-            pendingBadges: S,
             highlightBadge: j,
             onClose: () => {
               null == t || t()
@@ -237,7 +230,7 @@ function e9(e) {
       spacing: 14,
       fixed: !0,
       onRequestClose: () => {
-        c(), C(void 0), v(void 0)
+        c(), C(void 0)
       },
       preload: () => (0, eh.Z)(s, void 0, {
         withMutualGuilds: !1,
@@ -245,7 +238,7 @@ function e9(e) {
       }),
       children: e => (E(e), (0, r.jsxs)(f.P3F, e2(e1({
         innerRef: g,
-        style: T
+        style: S
       }, e), {
         onClick: t => {
           var n;
@@ -264,7 +257,7 @@ function e9(e) {
           status: n ? eX.Skl.STREAMING : l,
           isSpeaking: t,
           className: e$.avatar,
-          pulseStatusIcon: I
+          pulseStatusIcon: v
         }), (0, r.jsx)("div", {
           className: a()(e$.nameTag, {
             [e$.canCopy]: eM.wS

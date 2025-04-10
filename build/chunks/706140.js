@@ -3,7 +3,8 @@
 n.d(t, {
   EM: () => h,
   Tt: () => m,
-  cv: () => p
+  cv: () => p,
+  sx: () => g
 });
 var r = n(192379),
   i = n(442837),
@@ -99,4 +100,17 @@ function m(e, t, n, s) {
       forceTrack: t
     })
   }, [h, n, p])]
+}
+
+function g(e, t, n, o, s) {
+  let l = (0, i.e7)([a.Z], () => a.Z.getGuildId()),
+    c = null;
+  return null == e || (0, u.UJ)(e, n, t) || (c = e), [_(c, l, o, s), r.useCallback((e, t) => {
+    null != c && (0, u.JO)(c, n, {
+      dismissAction: e,
+      groupName: o,
+      guildId: l,
+      forceTrack: t
+    })
+  }, [c, o, l, n])]
 }
