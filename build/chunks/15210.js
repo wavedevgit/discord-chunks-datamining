@@ -102,7 +102,7 @@ function v(e) {
     case _.sE.IS_MEMBER:
       return (0, r.jsx)(o.zxk, y(E({}, L), {
         onClick: A,
-        children: m.NW.string(m.t.KLOhbG)
+        children: m.NW.string(m.t.IRoQXl)
       }));
     case _.sE.ADOPT_TAG:
       return (0, r.jsx)(o.zxk, y(E({}, L), {
