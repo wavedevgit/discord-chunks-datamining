@@ -1,4 +1,4 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
   Z: () => y
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(241559),
   f = n(256003),
   h = n(981631),
-  g = n(388032),
-  j = n(571031);
+  j = n(388032),
+  g = n(571031);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -57,11 +57,11 @@ function y(e) {
     guildId: t
   } = e, y = (0, p.xC)(t), {
     selectedUserIds: v,
-    clearSelection: _
-  } = (0, f.Z)(t), N = v.size > 0, H = async (e, t, n, r) => {
+    clearSelection: N
+  } = (0, f.Z)(t), H = v.size > 0, _ = async (e, t, n, r) => {
     try {
       let l = await c.Z.banMultipleUsers(e, t, n, r);
-      (0, s.showToast)((0, s.createToast)(g.NW.string(g.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, O(x({}, (0, d.hH)(e)), {
+      (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, O(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...v],
         mod_user_id: C.default.getId(),
@@ -69,13 +69,13 @@ function y(e) {
         location
       }))
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(g.NW.string(g.t.mICAWV), s.ToastType.FAILURE))
+      (0, s.showToast)((0, s.createToast)(j.NW.string(j.t.mICAWV), s.ToastType.FAILURE))
     }
-    _()
+    N()
   }, w = l.useCallback(() => {
-    _()
-  }, [_]), S = (0, r.jsxs)("span", {
-    className: j.messageContainer,
+    N()
+  }, [N]), S = (0, r.jsxs)("span", {
+    className: g.messageContainer,
     children: [(0, r.jsx)(s.tBG, {
       size: "custom",
       width: 24,
@@ -84,18 +84,18 @@ function y(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "heading-md/bold",
       color: "text-normal",
-      children: g.NW.format(g.t.TstoSU, {
+      children: j.NW.format(j.t.TstoSU, {
         count: v.size
       })
     }), (0, r.jsx)(s.zxk, {
       color: s.zxk.Colors.LINK,
       look: s.zxk.Looks.LINK,
       onClick: w,
-      className: j.clearButton,
-      children: g.NW.string(g.t.yW6ZdH)
+      className: g.clearButton,
+      children: j.NW.string(j.t.yW6ZdH)
     })]
   }), D = (0, r.jsxs)("span", {
-    className: j.buttonContainer,
+    className: g.buttonContainer,
     children: [(0, r.jsx)(s.pgN, {
       size: "custom",
       color: "currentColor",
@@ -103,13 +103,13 @@ function y(e) {
       height: 20
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
-      children: g.NW.string(g.t["2a50fH"])
+      children: j.NW.string(j.t["2a50fH"])
     })]
   });
   return y ? (0, r.jsx)(a.W, {
     component: "div",
-    className: j.saveNoticeContainer,
-    children: N && (0, r.jsx)(s.oXn, {
+    className: g.saveNoticeContainer,
+    children: H && (0, r.jsx)(s.oXn, {
       children: (0, r.jsx)(u.Z, {
         onSave: () => {
           m.default.track(h.rMx.BULK_MODERATION_ACTION_STARTED, O(x({}, (0, d.hH)(t)), {
@@ -125,7 +125,7 @@ function y(e) {
               guildId: t,
               canBulkBan: y,
               userIds: v,
-              onBanMultiple: H
+              onBanMultiple: _
             }))
           })
         },

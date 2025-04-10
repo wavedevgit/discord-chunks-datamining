@@ -1,6 +1,6 @@
 /** Chunk was on 33213 **/
 n.d(t, {
-  default: () => w
+  default: () => G
 });
 var i = n(200651);
 n(192379);
@@ -66,18 +66,18 @@ function T(e, t) {
   }), e
 }
 
-function G(e) {
+function w(e) {
   let {
     guild: t,
     onSelect: r,
     hideSettings: c
-  } = e, u = t.id, G = O.ZP.getDefaultChannel(u), w = (0, l.e7)([N.default], () => {
+  } = e, u = t.id, w = O.ZP.getDefaultChannel(u), G = (0, l.e7)([N.default], () => {
     let e = N.default.getCurrentUser();
     return s()(null != e, "GuildContextMenu: user cannot be undefined"), t.isOwner(e)
   }, [t]), k = (0, I.Z)({
     guild: t,
     source: Z.t4x.GUILD_CONTEXT_MENU,
-    channel: G
+    channel: w
   }), U = (0, L.Z)(u), C = (0, P.Z)(t), R = (0, v.Z)(t), W = (0, A.Z)(t), B = (0, E.Z)({
     guildId: t.id,
     userId: f.default.getId(),
@@ -91,7 +91,7 @@ function G(e) {
     label: D.NW.string(D.t["94lLDw"])
   }), H = (0, _.Z)(t, {
     section: Z.jXE.GUILD_LIST
-  }), V = (0, p.Z)(t.id), q = (0, m.Z)(t.id), K = (0, S.ng)(t.id, !1), X = (0, j.Z)(t), z = (0, b.Mn)("GuildContextMenu"), J = (0, x.p)(t);
+  }), V = (0, p.Z)(t.id), q = (0, m.Z)(t.id), X = (0, S.ng)(t.id, !1), K = (0, j.Z)(t), z = (0, b.Mn)("GuildContextMenu"), J = (0, x.p)(t);
 
   function $() {
     (0, o.h7j)(e => (0, i.jsx)(h.g, T(M({}, e), {
@@ -116,7 +116,7 @@ function G(e) {
           }))
         })
       }), B]
-    }), w ? null : (0, i.jsx)(o.kSQ, {
+    }), G ? null : (0, i.jsx)(o.kSQ, {
       children: (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.NW.string(D.t.Dv8gFR),
@@ -136,7 +136,7 @@ function G(e) {
     }), (0, i.jsx)(o.kSQ, {
       children: k
     }), (0, i.jsxs)(o.kSQ, {
-      children: [C, z || __OVERLAY__ ? null : R, z && !__OVERLAY__ ? q : null, K, U, V]
+      children: [C, z || __OVERLAY__ ? null : R, z && !__OVERLAY__ ? q : null, X, U, V]
     }), (0, i.jsxs)(o.kSQ, {
       children: [c ? null : W, __OVERLAY__ ? null : (0, i.jsx)(o.sNh, {
         id: "privacy",
@@ -153,7 +153,7 @@ function G(e) {
     }), (0, i.jsxs)(o.kSQ, {
       children: [Y, Q]
     }), (0, i.jsxs)(o.kSQ, {
-      children: [X, !w && (0, i.jsx)(o.sNh, {
+      children: [K, !G && (0, i.jsx)(o.sNh, {
         id: "leave-guild",
         label: D.NW.string(D.t.J2TBi4),
         action: $,
@@ -167,12 +167,12 @@ function G(e) {
   })
 }
 
-function w(e) {
+function G(e) {
   let {
     analyticsLocations: t
   } = (0, u.ZP)(c.Z.CONTEXT_MENU);
   return (0, i.jsx)(u.Gt, {
     value: t,
-    children: (0, i.jsx)(G, M({}, e))
+    children: (0, i.jsx)(w, M({}, e))
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 21881 **/
+/** Chunk was on 56534 **/
 r.d(t, {
   Z: () => c
 });
@@ -7,8 +7,8 @@ r(192379);
 var i = r(120356),
   a = r.n(i),
   o = r(481060),
-  s = r(422559),
-  l = r(432161);
+  l = r(422559),
+  s = r(432161);
 
 function c(e) {
   let {
@@ -19,24 +19,24 @@ function c(e) {
     className: d
   } = e;
   return (0, n.jsxs)("div", {
-    className: a()(l.list, d),
+    className: a()(s.list, d),
     children: [null != t && t.length > 0 ? (0, n.jsxs)(n.Fragment, {
       children: [null != i ? (0, n.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
         color: "header-primary",
-        className: l.header,
+        className: s.header,
         children: i
       }) : null, (0, n.jsx)("div", {
-        className: l.container,
+        className: s.container,
         children: t.map(e => (0, n.jsxs)("div", {
-          className: l.permission,
+          className: s.permission,
           children: [(0, n.jsx)(o.dz2, {
             size: "xs",
             color: "currentColor",
-            className: l.check
+            className: s.check
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: (0, s.wt)(e)
+            children: (0, l.wt)(e)
           })]
         }, e.toString()))
       })]
@@ -44,19 +44,19 @@ function c(e) {
       children: [null != c ? (0, n.jsx)(o.X6q, {
         variant: "heading-sm/semibold",
         color: "header-primary",
-        className: l.header,
+        className: s.header,
         children: c
       }) : null, (0, n.jsx)("div", {
-        className: l.container,
+        className: s.container,
         children: r.map(e => (0, n.jsxs)("div", {
-          className: l.permission,
+          className: s.permission,
           children: [(0, n.jsx)(o.Dio, {
             size: "xs",
             color: "currentColor",
-            className: l.cross
+            className: s.cross
           }), (0, n.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: (0, s.wt)(e)
+            children: (0, l.wt)(e)
           })]
         }, e.toString()))
       })]

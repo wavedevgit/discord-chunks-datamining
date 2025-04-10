@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   t: () => S
@@ -37,7 +37,7 @@ function S(e) {
     listingsLoaded: S
   } = (0, N.eD)(t), T = (0, a.e7)([b.Z], () => b.Z.getGuild(t)), P = (0, a.e7)([x.default], () => x.default.getCurrentUser()), w = (null == T ? void 0 : T.isOwner(P)) === !0, {
     loading: R
-  } = (0, o.H)(t), [D, Z] = i.useState(n ? "manage_listings" : "payment");
+  } = (0, o.H)(t), [Z, D] = i.useState(n ? "manage_listings" : "payment");
   (0, u.P)(T);
   let k = i.useCallback(() => {
     if (null == T) return;
@@ -56,7 +56,7 @@ function S(e) {
   }, [T]);
   if (!S || R) return (0, r.jsx)(l.$jN, {});
   if (null == T) return null;
-  let A = (0, r.jsxs)(r.Fragment, {
+  let W = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.vwX, {
         tag: l.RB0.H1,
         children: I.NW.string(I.t.X6h2g4)
@@ -68,13 +68,13 @@ function S(e) {
         })
       })]
     }),
-    W = (0, r.jsxs)(l.njP, {
+    A = (0, r.jsxs)(l.njP, {
       type: "top",
       look: "brand",
       className: E.tabBar,
       "aria-label": I.NW.string(I.t.X6h2g4),
-      selectedItem: D,
-      onItemSelect: Z,
+      selectedItem: Z,
+      onItemSelect: D,
       children: [(0, r.jsx)(d.Z, {
         id: "basic_info",
         disabledTooltip: I.NW.string(I.t.NVDuUV),
@@ -100,7 +100,7 @@ function S(e) {
         })
       }) : null]
     }),
-    L = (0, s.EQ)(D).with("basic_info", () => (0, r.jsx)(v.Z, {
+    L = (0, s.EQ)(Z).with("basic_info", () => (0, r.jsx)(v.Z, {
       guildId: t
     })).with("manage_listings", () => (0, r.jsx)(_.Z, {
       guildId: t
@@ -108,16 +108,16 @@ function S(e) {
       guildId: t
     })).exhaustive(),
     M = S ? (0, r.jsx)(l.njP.Panel, {
-      id: D,
+      id: Z,
       children: L
     }) : (0, r.jsx)(l.$jN, {});
   return (0, r.jsxs)(c.AL, {
     guildId: t,
-    children: [A, (0, r.jsx)(m.Z, {
+    children: [W, (0, r.jsx)(m.Z, {
       guild: T
     }), (0, r.jsx)("div", {
       className: E.tabBarContainer,
-      children: W
+      children: A
     }), M]
   })
 }

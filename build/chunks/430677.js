@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => v
@@ -62,14 +62,14 @@ let v = function(e) {
     onDragStart: T,
     onDragComplete: P,
     onDragReset: w
-  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(C.channelId)), D = (0, l.e7)([f.Z], () => f.Z.getGuild(O)), {
-    customEmoji: Z,
+  } = e, R = (0, l.e7)([p.Z], () => p.Z.getChannel(C.channelId)), Z = (0, l.e7)([f.Z], () => f.Z.getGuild(O)), {
+    customEmoji: D,
     unicodeEmoji: k
-  } = (0, u.Z)(null == (t = C.emoji) ? void 0 : t.id, null == (s = C.emoji) ? void 0 : s.name), A = null == C.emoji || null != Z || null != k, W = h.ZP.getNewMemberActionIconURL({
+  } = (0, u.Z)(null == (t = C.emoji) ? void 0 : t.id, null == (s = C.emoji) ? void 0 : s.name), W = null == C.emoji || null != D || null != k, A = h.ZP.getNewMemberActionIconURL({
     channelId: C.channelId,
     icon: C.icon
   }), L = null;
-  null != R && (0, m.kb)(R) ? A || (L = b.NW.string(b.t.wAkIZW)) : L = b.NW.string(b.t.CbTEKC);
+  null != R && (0, m.kb)(R) ? W || (L = b.NW.string(b.t.wAkIZW)) : L = b.NW.string(b.t.CbTEKC);
   let {
     drag: M,
     dragSourcePosition: G,
@@ -95,7 +95,7 @@ let v = function(e) {
       }))
     })
   }, [O, C, I, E, S]);
-  if (null == R || null == D) return null;
+  if (null == R || null == Z) return null;
   let z = null != (y = (0, c.KS)(R)) ? y : o.VL1;
   return (0, r.jsxs)("div", {
     className: x.actionItemContainer,
@@ -117,10 +117,10 @@ let v = function(e) {
           color: "currentColor",
           className: x.dragIcon
         })
-      }), null != W ? (0, r.jsx)("div", {
+      }), null != A ? (0, r.jsx)("div", {
         className: x.iconWrapper,
         children: (0, r.jsx)("img", {
-          src: W,
+          src: A,
           className: x.icon,
           width: 48,
           height: 48,

@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function Z(e) {
+function D(e) {
   var t;
   let {
     transitionState: n,
@@ -83,7 +83,7 @@ function Z(e) {
     if (null != s) {
       j(null), b(!0);
       try {
-        await d.Z.unbanUser(s.id, a.id), m(), v.default.track(S.rMx.GUILD_BAN_REMOVED, D(R({}, (0, p.hH)(s.id)), {
+        await d.Z.unbanUser(s.id, a.id), m(), v.default.track(S.rMx.GUILD_BAN_REMOVED, Z(R({}, (0, p.hH)(s.id)), {
           target_user_id: a.id,
           reason: l.reason,
           location: _
@@ -180,7 +180,7 @@ class k extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, o.h7j)(s => (0, r.jsx)(Z, D(R({}, s), {
+      (0, o.h7j)(s => (0, r.jsx)(D, Z(R({}, s), {
         guild: e,
         user: t,
         ban: i,
@@ -191,14 +191,14 @@ class k extends i.PureComponent {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, D(R({}, t), {
+        return t => (0, r.jsx)(e, Z(R({}, t), {
           user: this.props.user
         }))
       })
     })
   }
 }
-let A = i.forwardRef(function(e, t) {
+let W = i.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: s,
@@ -234,7 +234,7 @@ let A = i.forwardRef(function(e, t) {
   })
 });
 
-function W(e) {
+function A(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -315,12 +315,12 @@ function L() {
       null != e && I(t)(e) && r.push(e)
     }
     return r
-  }, [I]), w = i.useMemo(() => E(b, u, j), [b, E, u, j]), Z = null != b, k = w.length % 1e3 == 0 && w.length > 0 && Z, L = 0 === w.length, [M, G] = i.useState({
+  }, [I]), w = i.useMemo(() => E(b, u, j), [b, E, u, j]), D = null != b, k = w.length % 1e3 == 0 && w.length > 0 && D, L = 0 === w.length, [M, G] = i.useState({
     currentPage: 1,
     pageSize: 100
   });
   i.useEffect(() => {
-    h && 1 !== M.currentPage && G(e => D(R({}, e), {
+    h && 1 !== M.currentPage && G(e => Z(R({}, e), {
       currentPage: 1
     }))
   }, [h, M.currentPage]);
@@ -330,7 +330,7 @@ function L() {
     B = i.useMemo(() => a().chunk(w, M.pageSize), [M.pageSize, w]),
     F = i.useCallback(e => {
       var t, n, r;
-      null == (t = O.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > w.length && k && !p && (z.current = null != (r = null == (n = w[w.length - 1]) ? void 0 : n.id) ? r : null, U(z.current)), (null != B[e - 1] || k) && G(t => D(R({}, t), {
+      null == (t = O.current) || t.scrollToSectionTop(0), (e + 1) * M.pageSize > w.length && k && !p && (z.current = null != (r = null == (n = w[w.length - 1]) ? void 0 : n.id) ? r : null, U(z.current)), (null != B[e - 1] || k) && G(t => Z(R({}, t), {
         currentPage: e
       }))
     }, [M.pageSize, w, k, B, U, p]),
@@ -344,12 +344,12 @@ function L() {
   }, [B, M.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
     className: P.container,
-    children: [(0, r.jsx)(W, {
+    children: [(0, r.jsx)(A, {
       guildId: y,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: P.scrollerContainer,
-      children: [!L && (0, r.jsx)(A, {
+      children: [!L && (0, r.jsx)(W, {
         guild: c,
         bans: b,
         sortedBans: H,

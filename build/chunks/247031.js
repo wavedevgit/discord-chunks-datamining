@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -54,7 +54,7 @@ function R(e) {
   return e
 }
 
-function D(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function Z(e) {
+function D(e) {
   let {
     transitionState: t,
     guild: n,
@@ -170,7 +170,7 @@ class k extends i.PureComponent {
         hideDiscriminator: n,
         ban: i
       } = this.props;
-      (0, c.h7j)(s => (0, r.jsx)(Z, D(R({}, s), {
+      (0, c.h7j)(s => (0, r.jsx)(D, Z(R({}, s), {
         guild: e,
         user: t,
         ban: i,
@@ -181,14 +181,14 @@ class k extends i.PureComponent {
         let {
           default: e
         } = await n.e("23835").then(n.bind(n, 768079));
-        return t => (0, r.jsx)(e, D(R({}, t), {
+        return t => (0, r.jsx)(e, Z(R({}, t), {
           user: this.props.user
         }))
       })
     })
   }
 }
-class A extends i.PureComponent {
+class W extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -326,7 +326,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let W = o.ZP.connectStores([y.Z, f.Z, h.Z], () => {
+let A = o.ZP.connectStores([y.Z, f.Z, h.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -339,7 +339,7 @@ let W = o.ZP.connectStores([y.Z, f.Z, h.Z], () => {
     theme: f.Z.theme,
     streamerMode: h.Z.hidePersonalInformation
   }
-})(A);
+})(W);
 
 function L() {
   var e;
@@ -353,5 +353,5 @@ function L() {
   }, {
     autoTrackExposure: !0
   });
-  return n ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(W, {})
+  return n ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(A, {})
 }

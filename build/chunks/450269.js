@@ -1,26 +1,26 @@
 /** Chunk was on 67376 **/
 c.d(t, {
-  V: () => r
+  V: () => s
 }), c(388685);
-var s = c(192379),
-  i = c(259674),
-  n = c(981631),
+var n = c(192379),
+  r = c(259674),
+  i = c(981631),
   l = c(388032);
 
-function r(e) {
-  let [t, c] = s.useState(!1), [r, o] = s.useState(!1), [a, d] = s.useState(!1);
+function s(e) {
+  let [t, c] = n.useState(!1), [s, o] = n.useState(!1), [a, d] = n.useState(!1);
   return {
-    rules: s.useMemo(() => {
-      let s = l.NW.format(l.t.S2lVJS, {
-        onCommunityGuidelinesClick: () => (0, i.lW)({
-          articleId: n.BhN.PUBLIC_GUILD_GUILDLINES,
+    rules: n.useMemo(() => {
+      let n = l.NW.format(l.t.S2lVJS, {
+        onCommunityGuidelinesClick: () => (0, r.lW)({
+          articleId: i.BhN.PUBLIC_GUILD_GUILDLINES,
           guildId: e,
-          modalStep: i.tK.AGREE_TO_RULES
+          modalStep: r.tK.AGREE_TO_RULES
         }),
-        onDiscoveryGuidelinesClick: () => (0, i.lW)({
-          articleId: n.BhN.SERVER_DISCOVERY_GUIDELINES,
+        onDiscoveryGuidelinesClick: () => (0, r.lW)({
+          articleId: i.BhN.SERVER_DISCOVERY_GUIDELINES,
           guildId: e,
-          modalStep: i.tK.AGREE_TO_RULES
+          modalStep: r.tK.AGREE_TO_RULES
         })
       });
       return [{
@@ -33,16 +33,16 @@ function r(e) {
         key: "nonNSFW",
         title: l.NW.string(l.t.iwnCh4),
         body: l.NW.string(l.t.UKFzER),
-        onCheck: () => o(!r),
-        checked: r
+        onCheck: () => o(!s),
+        checked: s
       }, {
         key: "guidelines",
-        title: s,
+        title: n,
         body: l.NW.string(l.t.u0Go2t),
         onCheck: () => d(!a),
         checked: a
       }]
-    }, [a, e, t, r]),
-    rulesAccepted: t && r && a
+    }, [a, e, t, s]),
+    rulesAccepted: t && s && a
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => f
@@ -57,13 +57,13 @@ function f(e) {
     requestCooldownDuration: E,
     creatorRevenuePolicyUrl: l.Z.getArticleURL(g.BhN.CREATOR_POLICY)
   }));
-  let D = n && b && !1 === h,
-    Z = n && !1 === f,
+  let Z = n && b && !1 === h,
+    D = n && !1 === f,
     k = (0, m.f)(),
-    A = I && w && b ? p.NW.format(p.t.wbVIUF, {}) : void 0;
+    W = I && w && b ? p.NW.format(p.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
-    D && O()
-  }, [O, D]), {
+    Z && O()
+  }, [O, Z]), {
     resubmittingEnableRequest: j,
     resubmissionError: x,
     isGuildOwner: b,
@@ -77,9 +77,9 @@ function f(e) {
     isApplicationPending: P,
     hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
-    reapplyNoticeText: A,
-    showAcceptTermsFlow: Z,
-    wasRejectedInV1: Z && (S || I),
+    reapplyNoticeText: W,
+    showAcceptTermsFlow: D,
+    wasRejectedInV1: D && (S || I),
     requirementsFinePrintText: R,
     acceptTermsCheckboxText: k
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Q5: () => S,
@@ -143,7 +143,7 @@ function P() {
   });
   let o = null != t && null == t.getFirstFieldErrorMessage("name") && null == t.getFirstFieldErrorMessage("description");
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(D, {}), (0, i.jsx)(Z, {
+    children: [(0, i.jsx)(Z, {}), (0, i.jsx)(D, {
       guild: e,
       guildTemplate: l
     }), o ? (0, i.jsx)(m.Text, {
@@ -242,7 +242,7 @@ function R(e) {
   })
 }
 
-function D() {
+function Z() {
   let e = (0, d.e7)([E], () => E.name),
     t = (0, d.e7)([E], () => E.description),
     n = (0, d.e7)([E], () => E.error);
@@ -271,7 +271,7 @@ function D() {
   })
 }
 
-function Z(e) {
+function D(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -293,12 +293,12 @@ function Z(e) {
       children: _.NW.string(_.t.aWsjtL)
     }), (0, i.jsxs)("div", {
       className: l()(O.marginTop20, y.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(A, {
+      children: [n.isDirty && (0, i.jsx)(W, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
         className: y.rightButtonContainer,
-        children: [(0, i.jsx)(W, {
+        children: [(0, i.jsx)(A, {
           guild: t,
           guildTemplate: n
         }), (0, i.jsx)(L, {
@@ -335,7 +335,7 @@ function k(e) {
   })
 }
 
-function A(e) {
+function W(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -356,7 +356,7 @@ function A(e) {
   })
 }
 
-function W(e) {
+function A(e) {
   let {
     guild: t,
     guildTemplate: n

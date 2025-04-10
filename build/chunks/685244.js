@@ -1,4 +1,4 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -77,36 +77,36 @@ function f(e) {
   }(e, ["value", "children", "equalityFn", "style"]);
   let h = (0, d.Z)(t),
     [{
-      spring: g
-    }, j] = (0, u.q_F)(() => ({
+      spring: j
+    }, g] = (0, u.q_F)(() => ({
       spring: 0
     }), "animate-always"),
     x = (0, u.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(),
     O = (0, u.dQu)(c.Z.colors.CONTROL_BRAND_FOREGROUND).hex(),
     y = l.useCallback(() => {
-      j({
+      g({
         spring: 1,
         config: b
-      }), j({
+      }), g({
         spring: 0,
         config: p,
         delay: 300
       })
-    }, [j]);
+    }, [g]);
   l.useEffect(() => {
     null != t && null != h && (o(t, h) || y())
   }, [y, t, h, o]);
-  let v = null == g ? void 0 : g.to({
+  let v = null == j ? void 0 : j.to({
       range: [0, 1],
       output: ["".concat(x, "00"), "".concat(O, "27")]
     }),
-    _ = null != s ? m(C({}, s), {
+    N = null != s ? m(C({}, s), {
       backgroundColor: v
     }) : {
       backgroundColor: v
     };
   return (0, r.jsx)(i.animated.tr, m(C({}, f), {
-    style: _,
+    style: N,
     children: n
   }))
 }

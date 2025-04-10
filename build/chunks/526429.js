@@ -1,10 +1,10 @@
-/** Chunk was on 21881 **/
+/** Chunk was on 56534 **/
 r.d(t, {
   Z: () => I
 }), r(642613), r(539854), r(388685), r(392711);
 var n, i, a, o = r(442837),
-  s = r(570140),
-  l = r(823379),
+  l = r(570140),
+  s = r(823379),
   c = r(128449),
   d = r(388032);
 let u = null,
@@ -16,14 +16,14 @@ class O extends(n = o.ZP.Store) {
     return _
   }
   getDiscoveryCategories() {
-    let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(l.lm);
+    let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(s.lm);
     return [{
       categoryId: c.Hk,
       name: d.NW.string(d.t.Ym2Ri4)
     }, ...e]
   }
   getClanDiscoveryCategories() {
-    let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(l.lm);
+    let e = c.L3.map(e => p.find(t => t.categoryId === e)).filter(s.lm);
     return [{
       categoryId: c.Hk,
       name: d.NW.string(d.t.QToH29)
@@ -45,7 +45,7 @@ a = "GuildDiscoveryCategoryStore", (i = "displayName") in O ? Object.definePrope
   configurable: !0,
   writable: !0
 }) : O[i] = a;
-let I = new O(s.Z, {
+let I = new O(l.Z, {
   GUILD_DISCOVERY_CATEGORY_FETCH_SUCCESS: function(e) {
     let t, {
         categories: r,

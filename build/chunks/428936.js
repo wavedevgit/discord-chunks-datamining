@@ -1,4 +1,4 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -49,17 +49,17 @@ function p(e) {
   let {
     guildId: t,
     onPageChange: n
-  } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), g = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), j = (0, s.$j)(t), x = l.useMemo(() => i.LU.map(e => ({
+  } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), g = (0, s.$j)(t), x = l.useMemo(() => i.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
   })), []), O = new Intl.NumberFormat(d.NW.currentLocale).format(h), y = d.NW.formatToPlainString(d.t.RNDnQ0, {
-    count: j ? "..." : O
-  }), v = h > g.pageSize || j, _ = h > i.LU["0"];
+    count: g ? "..." : O
+  }), v = h > j.pageSize || g, N = h > i.LU["0"];
   return (0, r.jsxs)("div", {
     className: C.paginationContainer,
     children: [(0, r.jsx)("div", {
       className: C.pageSizeSelection,
-      children: _ ? (0, r.jsxs)(r.Fragment, {
+      children: N ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.Text, {
           variant: "text-md/normal",
           color: "text-muted",
@@ -68,10 +68,10 @@ function p(e) {
           "aria-label": y,
           className: C.pageSizeInput,
           options: x,
-          isSelected: e => e === g.pageSize,
+          isSelected: e => e === j.pageSize,
           select: e => {
             f(() => {
-              (0, u._o)(t, b(m({}, g), {
+              (0, u._o)(t, b(m({}, j), {
                 pageSize: e
               }))
             })
@@ -81,7 +81,7 @@ function p(e) {
           popoutWidth: 72
         }), (0, r.jsx)(a.ua7, {
           text: d.NW.string(d.t.ZTNur6),
-          shouldShow: j,
+          shouldShow: g,
           children: e => (0, r.jsx)(a.Text, b(m({
             variant: "text-md/normal",
             color: "text-muted",
@@ -102,14 +102,14 @@ function p(e) {
       children: v && (0, r.jsx)(a.DsT, {
         className: C.paginationInput,
         totalCount: h,
-        pageSize: g.pageSize,
+        pageSize: j.pageSize,
         disablePaginationGap: !0,
         hideMaxPage: !0,
-        currentPage: g.currentPage,
+        currentPage: j.currentPage,
         onPageChange: e => {
           null == n || n(e), requestIdleCallback(() => {
             f(() => {
-              (0, u._o)(t, b(m({}, g), {
+              (0, u._o)(t, b(m({}, j), {
                 currentPage: e
               }))
             })

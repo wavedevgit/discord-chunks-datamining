@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -95,21 +95,21 @@ function h(e) {
   }), {
     state: {
       value: R,
-      tags: D,
-      selections: Z,
+      tags: Z,
+      selections: D,
       isSelecting: k
     }
-  } = v, A = (0, o.Z)(D), [W, L] = i.useState(!1), M = i.useCallback(() => {
+  } = v, W = (0, o.Z)(Z), [A, L] = i.useState(!1), M = i.useCallback(() => {
     var e;
     L(!1), P(), null == (e = x.current) || e.focus({
       preventScroll: !0
     })
   }, [P]);
   i.useEffect(() => {
-    A !== D && s(D)
-  }, [s, A, D]), i.useEffect(() => {
-    W || c(R)
-  }, [c, R, W]);
+    W !== Z && s(Z)
+  }, [s, W, Z]), i.useEffect(() => {
+    A || c(R)
+  }, [c, R, A]);
   let G = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
       e && M(), L(!1)
@@ -117,7 +117,7 @@ function h(e) {
     U = i.useCallback(e => t => {
       if (t) {
         var n;
-        let t = Z.includes(D[e]);
+        let t = D.includes(Z[e]);
         null == (n = x.current) || n.focus(), t ? T(e) : (S(e), setImmediate(() => {
           var e;
           null == (e = x.current) || e.blur(), setTimeout(() => {
@@ -126,7 +126,7 @@ function h(e) {
           }, 16)
         }))
       } else T(e, !0), L(!0)
-    }, [S, T, Z, D]);
+    }, [S, T, D, Z]);
   return (0, r.jsxs)("div", {
     className: a()(g.mainContainer, h),
     ref: j,
@@ -135,33 +135,33 @@ function h(e) {
     children: [(0, r.jsxs)(f, {
       ref: N,
       onClick: M,
-      children: [D.map((e, t) => (0, r.jsx)(d.Z, {
+      children: [Z.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: E(t),
         onBlur: G,
         onFocus: U(t),
         onRemove: () => I(t),
-        isSelected: Z.includes(e),
+        isSelected: D.includes(e),
         isSelecting: k,
         error: u[e],
-        forceShowErrorTooltip: !W && t === D.length - 1
+        forceShowErrorTooltip: !A && t === Z.length - 1
       }, t)), (0, r.jsx)("input", {
         className: a()(g.mainTextInput, {
-          [g.isEditingOtherNodes]: W
+          [g.isEditingOtherNodes]: A
         }),
         ref: x,
         onChange: y,
         onKeyDownCapture: O,
         onPaste: _,
         onBlur: w,
-        placeholder: 0 === D.length ? p : void 0,
+        placeholder: 0 === Z.length ? p : void 0,
         value: R
       })]
     }), null != b && (0, r.jsxs)(l.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
       className: g.maxTags,
-      children: [null != (t = null == D ? void 0 : D.length) ? t : 0, "/", b]
+      children: [null != (t = null == Z ? void 0 : Z.length) ? t : 0, "/", b]
     })]
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   O: () => Q,
@@ -34,11 +34,11 @@ var r = n(200651),
   P = n(823379),
   w = n(63063),
   R = n(434404),
-  D = n(999382),
-  Z = n(67734),
+  Z = n(999382),
+  D = n(67734),
   k = n(375263),
-  A = n(586382),
-  W = n(594980),
+  W = n(586382),
+  A = n(594980),
   L = n(515025),
   M = n(760632),
   G = n(578053),
@@ -81,7 +81,7 @@ let Q = () => {
     errors: s,
     profile: a,
     originalProfile: l
-  } = (0, d.cj)([D.Z], () => D.Z.getProps()), o = (0, d.e7)([D.Z], () => D.Z.getProfileError()), c = i.useMemo(() => {
+  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), o = (0, d.e7)([Z.Z], () => Z.Z.getProfileError()), c = i.useMemo(() => {
     var e;
     let t = null == o ? void 0 : o.getAnyErrorMessage();
     return null != (e = (0, F.LG)(s)) ? e : t
@@ -383,7 +383,7 @@ class $ extends i.PureComponent {
               className: Y.flexFormTitle,
               children: [(0, r.jsx)("div", {
                 children: V.NW.string(V.t.tzGY0t)
-              }), (0, r.jsx)(A.hH, {
+              }), (0, r.jsx)(W.hH, {
                 guild: e
               })]
             }), (0, r.jsx)(g.R94, {
@@ -395,7 +395,7 @@ class $ extends i.PureComponent {
               children: V.NW.format(V.t.ZYA9PT, {
                 articleURL: w.Z.getArticleURL(z.BhN.GUILD_INVITE_SPLASH)
               })
-            }), (0, r.jsx)(W.c, {
+            }), (0, r.jsx)(A.c, {
               guild: e,
               canManageGuild: t,
               buttonClassName: Y.marginTop16
@@ -430,7 +430,7 @@ class $ extends i.PureComponent {
             className: Y.flexFormTitle,
             children: [(0, r.jsx)("div", {
               children: V.NW.string(V.t["0r0AzM"])
-            }), (0, r.jsx)(A.zA, {
+            }), (0, r.jsx)(W.zA, {
               guild: e
             })]
           }), (0, r.jsx)(g.R94, {
@@ -442,7 +442,7 @@ class $ extends i.PureComponent {
             children: V.NW.format(V.t.vBcWUl, {
               articleURL: w.Z.getArticleURL(z.BhN.GUILD_BANNER_SPLASH)
             })
-          }), (0, r.jsx)(Z.F, {
+          }), (0, r.jsx)(D.F, {
             guild: e,
             canManageGuild: t,
             buttonClassName: Y.marginTop16
@@ -610,7 +610,7 @@ function ee() {
     submitting: n,
     subsection: s,
     profile: a
-  } = (0, d.cj)([D.Z], () => D.Z.getProps()), l = (0, h.ZP)(), {
+  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), l = (0, h.ZP)(), {
     analyticsLocations: c
   } = (0, x.ZP)(b.Z.OVERVIEW);
   i.useEffect(() => {

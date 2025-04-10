@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -130,7 +130,7 @@ let O = i.memo(function() {
       isFirstChannel: p,
       isLastChannel: y,
       tooltipDirection: I = "right"
-    } = e, E = (0, h.Mf)(t.id, i.id), S = (0, h.t4)(t.id, i.id), T = (0, h.EH)(t.id, i.id), P = (0, h.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), D = e => {
+    } = e, E = (0, h.Mf)(t.id, i.id), S = (0, h.t4)(t.id, i.id), T = (0, h.EH)(t.id, i.id), P = (0, h.lL)(s.id, i.id), w = null != (0, b.Z)(s).find(e => e.id === t.id), R = (0, m.mn)(t.id), Z = e => {
       if (!S) return e.stopPropagation(), (0, u.s)(s.id, t.id) ? (0, f.pt)(t.id) : (0, o.ZDy)(async () => {
         let {
           default: e
@@ -140,7 +140,7 @@ let O = i.memo(function() {
           startingChannelId: t.id
         }))
       }), !0
-    }, Z = e => {
+    }, D = e => {
       t.isGuildVocal() ? (0, c.jW)(e, async () => {
         let {
           default: e
@@ -171,8 +171,8 @@ let O = i.memo(function() {
             [N.disabled]: S
           })
         }, e), {
-          onClick: D,
-          onContextMenu: Z,
+          onClick: Z,
+          onContextMenu: D,
           children: [(0, r.jsx)("div", {
             className: N.channelInfo,
             children: (0, r.jsxs)("div", {

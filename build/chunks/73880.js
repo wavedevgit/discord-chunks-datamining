@@ -1,67 +1,35 @@
-/** Chunk was on 53967 **/
+/** Chunk was on 33472 **/
+"use strict";
 n.d(t, {
-  Q8: () => c,
-  jn: () => d,
-  lX: () => E
+  Q8: () => c
 });
-var i = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(120356),
-  l = n.n(r),
-  o = n(481060),
-  s = n(489813),
-  a = n(592286),
-  u = n(667084);
+var i = n(120356),
+  s = n.n(i),
+  a = n(481060);
+n(489813);
+var l = n(592286),
+  o = n(667084);
 
 function c(e) {
   let {
     value: t,
     placeholder: n,
-    onChange: r,
-    disabled: s,
-    className: c,
-    autofocus: d
+    onChange: i,
+    disabled: c,
+    className: d,
+    autofocus: u
   } = e;
-  return (0, i.jsx)(o.Kx8, {
-    className: l()(u.paragraphFieldBody, c),
-    maxLength: a.RS,
+  return (0, r.jsx)(a.Kx8, {
+    className: s()(o.paragraphFieldBody, d),
+    maxLength: l.RS,
     value: null != t ? t : "",
     placeholder: null != n ? n : "",
-    onChange: r,
-    disabled: s,
-    autoFocus: d,
+    onChange: i,
+    disabled: c,
+    autoFocus: u,
     autosize: !0,
-    showRemainingCharacterCount: !s
-  })
-}
-
-function d(e) {
-  let {
-    formField: t
-  } = e;
-  return (0, i.jsx)(s.hK, {
-    title: t.label,
-    children: (0, i.jsx)(c, {
-      className: u.fieldBackground,
-      value: t.response,
-      disabled: !0
-    })
-  })
-}
-
-function E(e) {
-  let {
-    formField: t,
-    autofocus: n,
-    onChange: r
-  } = e;
-  return (0, i.jsx)(s.hK, {
-    title: t.label,
-    children: (0, i.jsx)(c, {
-      className: u.fieldBackground,
-      value: t.response,
-      onChange: r,
-      autofocus: n
-    })
+    showRemainingCharacterCount: !c
   })
 }

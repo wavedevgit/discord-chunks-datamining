@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => N
@@ -34,12 +34,12 @@ let N = function(e) {
   i.useEffect(() => P(e.formFields), [e.formFields]);
   let w = i.useRef(e.formFields),
     R = i.useMemo(() => T.filter(c.kT), [T]),
-    D = i.useMemo(() => T.filter(c._C), [T]),
-    Z = D.length,
+    Z = i.useMemo(() => T.filter(c._C), [T]),
+    D = Z.length,
     k = i.useMemo(() => T.length === h.nx, [T]),
-    A = i.useMemo(() => T.some(o.J), [T]),
-    W = i.useMemo(() => T.some(e => !(0, o.J)(e)), [T]),
-    L = Z > 0,
+    W = i.useMemo(() => T.some(o.J), [T]),
+    A = i.useMemo(() => T.some(e => !(0, o.J)(e)), [T]),
+    L = D > 0,
     M = t.hasFeature(b.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) || _,
     G = i.useCallback(() => {
       (0, a.showToast)((0, a.createToast)(x.NW.string(x.t.R0RpRU), a.ToastType.FAILURE))
@@ -91,7 +91,7 @@ let N = function(e) {
         guildId: t.id,
         onSave: C,
         disable: !U
-      }), U && !A && !k && (0, r.jsx)(m.Z, {
+      }), U && !W && !k && (0, r.jsx)(m.Z, {
         addFormField: F,
         guild: t
       }), R.map(e => (0, f.a0)({
@@ -110,12 +110,12 @@ let N = function(e) {
       }))]
     });
   return M ? (0, r.jsxs)(r.Fragment, {
-    children: [!_ && K, !W && (0, r.jsx)(d.Z, {
+    children: [!_ && K, !A && (0, r.jsx)(d.Z, {
       addFormField: F,
       showManualApprovalWarning: !_ && !L,
       guild: t,
       showHeader: !_
-    }), D.map(e => (0, f.a0)({
+    }), Z.map(e => (0, f.a0)({
       dropHoveredIndex: E,
       formField: e,
       guild: t,
@@ -125,10 +125,10 @@ let N = function(e) {
       removeFormField: V,
       updateFormField: z,
       updateFormFieldOrder: H,
-      canRemove: !(_ && D.length <= 1) && U,
+      canRemove: !(_ && Z.length <= 1) && U,
       actionsLocation: Y,
       fieldStyle: o.it.REGULAR
-    })), W && !k && U && (0, r.jsx)("div", {
+    })), A && !k && U && (0, r.jsx)("div", {
       className: j.addQuestionsContainer,
       children: (0, r.jsx)(p.Z, {
         addFormField: F,

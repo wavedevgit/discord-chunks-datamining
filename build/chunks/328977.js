@@ -1,11 +1,11 @@
 /** Chunk was on 9924 **/
 n.d(t, {
-  L: () => a
+  L: () => i
 });
 var r = n(442837),
   l = n(826581);
 
-function a(e) {
+function i(e) {
   let {
     guildId: t
   } = e;

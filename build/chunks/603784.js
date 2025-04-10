@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -91,18 +91,18 @@ let P = i.forwardRef((e, t) => {
       onChannelContextMenu: P,
       onContentClick: w,
       onHeaderClick: R,
-      onTargetContextMenu: D,
-      onUserContextMenu: Z,
+      onTargetContextMenu: Z,
+      onUserContextMenu: D,
       theme: k
     } = e,
-    A = function() {
+    W = function() {
       let {
         changes: e
       } = i;
       return (i.actionType !== O.vB8.DELETE || i.action === O.rsA.MEMBER_BAN_ADD || i.action === O.rsA.MEMBER_KICK || i.action === O.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(i, e))
     }(),
-    W = I.headerDefault;
-  o ? W = I.headerExpanded : A && (W = I.headerClickable);
+    A = I.headerDefault;
+  o ? A = I.headerExpanded : W && (A = I.headerClickable);
   let L = i.timestampStart.calendar(),
     M = i.timestampEnd.calendar();
   n = L === M ? (0, r.jsx)(d.Text, {
@@ -114,14 +114,14 @@ let P = i.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [L, "—", M]
   });
-  let G = A ? R : O.dG4;
+  let G = W ? R : O.dG4;
   return (0, r.jsx)(l.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: a()(I.auditLog, s),
       children: [(0, r.jsxs)(d.P3F, S(E({
-        className: W,
+        className: A,
         "aria-expanded": o,
         onClick: G
       }, e), {
@@ -185,7 +185,7 @@ let P = i.forwardRef((e, t) => {
                   userHook: (e, t) => {
                     if (null != i.user) return (0, r.jsx)(T, {
                       user: i.user,
-                      onContextMenu: Z
+                      onContextMenu: D
                     }, t);
                     if (null != i.options.integration_type) {
                       var n;
@@ -196,9 +196,9 @@ let P = i.forwardRef((e, t) => {
                   },
                   targetHook: (e, t) => i.targetType === O.KFR.USER && i.target instanceof h.Z ? (0, r.jsx)(T, {
                     user: i.target,
-                    onContextMenu: D
+                    onContextMenu: Z
                   }, t) : (0, r.jsx)("span", {
-                    onContextMenu: D,
+                    onContextMenu: Z,
                     children: e
                   }, t),
                   count: n.count,
@@ -212,7 +212,7 @@ let P = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), A ? (0, r.jsx)(j.Z, {
+        }), W ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: o,

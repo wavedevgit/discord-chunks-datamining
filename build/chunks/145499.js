@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -137,7 +137,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           totalNumberOfSlotsToAssign: e
         })
       },
-      D = [{
+      Z = [{
         tier: y.Eu4.NONE,
         title: (0, r.jsx)(E, {
           guildStickers: c,
@@ -171,7 +171,7 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
         })
       }];
     return (0, r.jsx)(N.Z, {
-      tiers: D,
+      tiers: Z,
       renderTier: e => {
         let i, {
             isAnimatedTo: s,
@@ -187,20 +187,20 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           j = u[g - 1],
           N = null != j ? (0, b.A3)(j.tier) : 0,
           E = (0, b.A3)(d.tier, t),
-          D = (0, b.ig)(d.tier),
-          Z = c.slice(N, E),
-          k = Z.length > 0,
-          A = S < d.tier,
-          W = I(c.length, t),
-          L = f && !A && W === d.tier && E !== Z.length,
-          M = L || Z.length > 0,
+          Z = (0, b.ig)(d.tier),
+          D = c.slice(N, E),
+          k = D.length > 0,
+          W = S < d.tier,
+          A = I(c.length, t),
+          L = f && !W && A === d.tier && E !== D.length,
+          M = L || D.length > 0,
           G = E - N,
           U = n(872732),
-          B = D - Z.length,
-          F = L ? Math.min(5 - (Z.length + 0) % 5, B) : 0,
+          B = Z - D.length,
+          F = L ? Math.min(5 - (D.length + 0) % 5, B) : 0,
           z = [];
         for (let e = 0; e < F; e++) z.push((0, r.jsx)(T, {}, "placeholder-".concat(e)));
-        let H = W === g + 1 && W > S,
+        let H = A === g + 1 && A > S,
           V = L || H || g > S;
         return H ? i = (0, r.jsx)(m.Z, {
           guild: t,
@@ -228,19 +228,19 @@ let I = (e, t) => e < (0, b.A3)(y.Eu4.NONE) ? y.Eu4.NONE : e < (0, b.A3)(y.Eu4.T
           guildId: t.id,
           children: [M && (0, r.jsxs)("div", {
             className: C.grid,
-            children: [Z.map(e => (0, r.jsx)(_.Z, {
-              isDisabled: A,
+            children: [D.map(e => (0, r.jsx)(_.Z, {
+              isDisabled: W,
               sticker: e,
               canManageSticker: x(e)
             }, e.id)), z]
-          }), !A && !L && 0 === Z.length && (0, r.jsx)("div", {
+          }), !W && !L && 0 === D.length && (0, r.jsx)("div", {
             className: a()(C.emptyTierWrapper, C.unusedTierWrapper),
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
               children: O.NW.string(O.t.lqwv0N)
             })
-          }), A && !k && (0, r.jsxs)("div", {
+          }), W && !k && (0, r.jsxs)("div", {
             className: C.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
               alt: O.NW.string(O.t.BAhsws),

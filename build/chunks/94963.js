@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -128,28 +128,28 @@ let I = [{
       brandSecondaryColor: P,
       badgePrimaryColor: w,
       badgeSecondaryColor: R
-    } = s, D = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), Z = null != (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) ? t : 0, k = i.useMemo(() => ({
+    } = s, Z = (0, u.e7)([p.Z], () => p.Z.getGuild(l)), D = null != (t = (0, u.e7)([g.Z], () => g.Z.getMemberCount(l))) ? t : 0, k = i.useMemo(() => ({
       primary: null != T ? T : N.OH,
       secondary: null != P ? P : N.K_
-    }), [T, P]), A = i.useMemo(() => {
+    }), [T, P]), W = i.useMemo(() => {
       if (T === w && P === R) return 1;
       for (let e = 0; e < N.ym.length; e++)
         if (N.ym[e].primary === s.brandPrimaryColor && N.ym[e].secondary === s.brandSecondaryColor) return 2 + e;
       return 0
-    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [W, L] = i.useState(!1), M = 0 === A, G = 1 === A, U = i.useMemo(() => {
+    }, [T, P, w, R, s.brandPrimaryColor, s.brandSecondaryColor]), [A, L] = i.useState(!1), M = 0 === W, G = 1 === W, U = i.useMemo(() => {
       if (M) return k;
       {
         if (G) return {
           primary: null != w ? w : j.Nh,
           secondary: null != R ? R : j.vY
         };
-        let e = N.ym[A - 2];
+        let e = N.ym[W - 2];
         return {
           primary: e.primary,
           secondary: e.secondary
         }
       }
-    }, [k, G, M, w, R, A]), B = i.useCallback(() => {
+    }, [k, G, M, w, R, W]), B = i.useCallback(() => {
       let e = I[Math.floor(Math.random() * I.length)].bannerKind;
       n({
         banner: e,
@@ -168,9 +168,9 @@ let I = [{
       var e, t, n;
       return C(O({}, s), {
         id: l,
-        name: null != (e = null == D ? void 0 : D.name) ? e : "",
-        icon: null == D ? void 0 : D.icon,
-        memberCount: Z,
+        name: null != (e = null == Z ? void 0 : Z.name) ? e : "",
+        icon: null == Z ? void 0 : Z.icon,
+        memberCount: D,
         games: Array.from(s.gameApplicationIds),
         traits: Array.from(s.interests),
         banner: S,
@@ -188,7 +188,7 @@ let I = [{
           score: 0
         }, e), {})
       })
-    }, [s, l, D, Z, S, w, R, U]);
+    }, [s, l, Z, D, S, w, R, U]);
     return (0, r.jsxs)("div", {
       className: y.slideContent,
       children: [(0, r.jsx)(m.X6q, {
@@ -229,14 +229,14 @@ let I = [{
                       brandSecondaryColor: (0, d.Rf)(e)
                     })
                   },
-                  shouldShow: W,
+                  shouldShow: A,
                   onRequestClose: () => L(!1),
                   children: e => (0, r.jsx)(m.P3F, C(O({}, e), {
                     onClick: () => {
                       L(e => !e)
                     },
                     className: o()(_.brandItemContainer, {
-                      [_.brandItemContainerSelected]: 0 === A
+                      [_.brandItemContainerSelected]: 0 === W
                     }),
                     children: (0, r.jsx)(E, {
                       name: v.NW.string(v.t.AemVoa),
@@ -251,7 +251,7 @@ let I = [{
                     })
                   },
                   className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: 1 === A
+                    [_.brandItemContainerSelected]: 1 === W
                   }),
                   children: (0, r.jsx)(E, {
                     name: v.NW.string(v.t["1Pvr/v"]),
@@ -267,7 +267,7 @@ let I = [{
                     })
                   },
                   className: o()(_.brandItemContainer, {
-                    [_.brandItemContainerSelected]: A === t + 2
+                    [_.brandItemContainerSelected]: W === t + 2
                   }),
                   children: (0, r.jsx)(E, {
                     name: e.name,

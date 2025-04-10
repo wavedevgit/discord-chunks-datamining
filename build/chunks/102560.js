@@ -1,4 +1,4 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -19,9 +19,9 @@ let p = e => {
     guild: t,
     transitionState: n,
     onClose: o
-  } = e, [p, f] = l.useState(7), [h, g] = l.useState(null), [j, x] = l.useState([]), O = l.useCallback(async () => {
-    g(null), g(await c.Z.updateEstimate(t.id, p, j))
-  }, [p, t.id, j]);
+  } = e, [p, f] = l.useState(7), [h, j] = l.useState(null), [g, x] = l.useState([]), O = l.useCallback(async () => {
+    j(null), j(await c.Z.updateEstimate(t.id, p, g))
+  }, [p, t.id, g]);
   l.useEffect(() => {
     O()
   }, [O]);
@@ -78,7 +78,7 @@ let p = e => {
           children: (0, r.jsx)(s.VcW, {
             maxVisibleItems: 10,
             multi: !0,
-            value: j,
+            value: g,
             onChange: e => x(e),
             options: y
           })
@@ -86,7 +86,7 @@ let p = e => {
       }), (0, r.jsx)(s.R94, {
         type: s.R94.Types.DESCRIPTION,
         className: b.spacing,
-        children: j.length > 0 ? m.NW.format(m.t["5WxHHh"], {
+        children: g.length > 0 ? m.NW.format(m.t["5WxHHh"], {
           members: h,
           days: p
         }) : m.NW.format(m.t.f13az8, {
@@ -97,7 +97,7 @@ let p = e => {
     }), (0, r.jsxs)(s.mzw, {
       children: [(0, r.jsx)(s.zxk, {
         onClick: () => {
-          c.Z.prune(t.id, p, j), o()
+          c.Z.prune(t.id, p, g), o()
         },
         children: m.NW.string(m.t["2mIlKS"])
       }), (0, r.jsx)(s.zxk, {

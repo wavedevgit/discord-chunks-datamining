@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -48,22 +48,22 @@ function E(e) {
     null == P && s(null)
   }, [P, s]);
   let R = (0, l.e7)([m.Z], () => m.Z.getHighestRole(T), [T]),
-    D = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
-    Z = i.useRef(null),
+    Z = (0, l.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
+    D = i.useRef(null),
     k = (0, l.e7)([b.Z], () => b.Z.getProps().integrations),
-    A = {
+    W = {
       role: P,
       editRoleId: n
     },
-    W = i.useRef(A);
+    A = i.useRef(W);
   if (i.useEffect(() => {
-      W.current = A
+      A.current = W
     }), i.useEffect(() => {
       var e, t;
       let {
         role: n,
         editRoleId: r
-      } = W.current, i = (0, x.UT)(E), s = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
+      } = A.current, i = (0, x.UT)(E), s = null != (t = null == (e = f.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
       g.default.track(C.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -98,7 +98,7 @@ function E(e) {
       t = (0, r.jsx)(N.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         highestRole: R,
         setSelectedSection: S
       });
@@ -107,7 +107,7 @@ function E(e) {
       t = (0, r.jsx)(_.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S,
         initialSearchQuery: w
       });
@@ -116,7 +116,7 @@ function E(e) {
       t = (0, r.jsx)(j.Z, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S,
         integrations: null != k ? k : void 0
       });
@@ -125,7 +125,7 @@ function E(e) {
       t = (0, r.jsx)(v.ZP, {
         guild: T,
         role: P,
-        locked: D,
+        locked: Z,
         setSelectedSection: S
       });
       break;
@@ -141,9 +141,9 @@ function E(e) {
       setSelectedSection: S
     }), (0, r.jsx)("div", {
       className: I.contentContainer,
-      ref: Z,
+      ref: D,
       children: (0, r.jsx)(o.JcV, {
-        containerRef: Z,
+        containerRef: D,
         children: t
       })
     })]

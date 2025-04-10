@@ -1,4 +1,4 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
   Z: () => f
 });
@@ -23,10 +23,10 @@ function f(e) {
   } = e, f = (0, i.e7)([d.Z], () => d.Z.getMembersCountByGuildId(t.id, c.R_.NEW_GUILD_MEMBER), [t.id]), h = (0, i.e7)([d.Z], () => {
     let e = d.Z.getNewMemberTimestamp(t.id);
     return a()(e).format("h:mm A")
-  }, [t.id]), g = (0, i.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), j = l.useCallback(() => {
+  }, [t.id]), j = (0, i.e7)([d.Z], () => d.Z.hasDefaultSearchStateByGuildId(t.id), [t.id]), g = l.useCallback(() => {
     (0, C.YO)(t.id), null == o || o()
   }, [t.id, o]), x = l.useCallback(() => {
-    g ? j() : (0, s.ZDy)(async () => {
+    j ? g() : (0, s.ZDy)(async () => {
       let {
         default: e
       } = await n.e("24478").then(n.bind(n, 319481));
@@ -50,7 +50,7 @@ function f(e) {
           }
           return e
         }({}, t), l = l = {
-          onConfirm: j
+          onConfirm: g
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function f(e) {
         }), n))
       }
     })
-  }, [j, g]), O = new Intl.NumberFormat(m.NW.currentLocale).format(f), y = (0, u.nX)(t.id), v = (0, u.xC)(t.id), _ = l.useMemo(() => 1 + +!!y + +!!v, [y, v]);
+  }, [g, j]), O = new Intl.NumberFormat(m.NW.currentLocale).format(f), y = (0, u.nX)(t.id), v = (0, u.xC)(t.id), N = l.useMemo(() => 1 + +!!y + +!!v, [y, v]);
   return 0 === f ? null : (0, r.jsxs)("tr", {
     className: p.newMembersNotice,
     onClick: x,
@@ -78,7 +78,7 @@ function f(e) {
         })
       })
     }), (0, r.jsx)("td", {
-      colSpan: _
+      colSpan: N
     }), (0, r.jsx)("td", {
       colSpan: 2,
       children: (0, r.jsx)("div", {

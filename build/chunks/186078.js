@@ -1,69 +1,37 @@
-/** Chunk was on 53967 **/
+/** Chunk was on 33472 **/
+"use strict";
 n.d(t, {
-  BO: () => d,
-  QH: () => E,
-  sp: () => f
+  BO: () => c
 });
-var i = n(200651),
-  r = n(192379),
-  l = n(120356),
-  o = n.n(l),
-  s = n(481060),
-  a = n(489813),
-  u = n(707592),
-  c = n(667084);
+var r = n(200651),
+  i = n(192379),
+  s = n(120356),
+  a = n.n(s),
+  l = n(481060);
+n(489813), n(707592);
+var o = n(667084);
 
-function d(e) {
+function c(e) {
   let {
     disabled: t,
     field: n,
-    value: l,
-    radioItemClassName: a,
-    radioItemIconClassName: u,
-    onChange: d
+    value: s,
+    radioItemClassName: c,
+    radioItemIconClassName: d,
+    onChange: u
   } = e, {
-    choices: E
-  } = n, f = r.useMemo(() => E.map((e, t) => ({
+    choices: m
+  } = n, g = i.useMemo(() => m.map((e, t) => ({
     name: e,
     value: t,
-    radioItemIconClassName: o()(c.multipleChoiceIcon, u)
-  })), [E, u]);
-  return (0, i.jsx)(s.FXm, {
+    radioItemIconClassName: a()(o.multipleChoiceIcon, d)
+  })), [m, d]);
+  return (0, r.jsx)(l.FXm, {
     disabled: t,
-    options: f,
-    value: l,
-    onChange: d,
-    radioItemClassName: a,
+    options: g,
+    value: s,
+    onChange: u,
+    radioItemClassName: c,
     withTransparentBackground: !0
-  })
-}
-
-function E(e) {
-  let {
-    formField: t
-  } = e, n = null != t.response ? t.choices[t.response] : "";
-  return (0, i.jsx)(a.hK, {
-    title: t.label,
-    children: (0, i.jsx)(u.Gi, {
-      className: c.fieldBackground,
-      value: n,
-      disabled: !0
-    })
-  })
-}
-
-function f(e) {
-  let {
-    formField: t,
-    onChange: n
-  } = e;
-  return (0, i.jsx)(a.hK, {
-    title: t.label,
-    children: (0, i.jsx)(d, {
-      radioItemClassName: c.fieldBackground,
-      field: t,
-      value: t.response,
-      onChange: n
-    })
   })
 }

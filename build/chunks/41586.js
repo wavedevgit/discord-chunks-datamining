@@ -1,6 +1,6 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
-  Z: () => H
+  Z: () => _
 }), n(388685), n(781311);
 var r = n(200651),
   l = n(192379),
@@ -17,14 +17,14 @@ var r = n(200651),
   p = n(496675),
   f = n(910693),
   h = n(588215),
-  g = n(893966),
-  j = n(527379),
+  j = n(893966),
+  g = n(527379),
   x = n(855935),
   O = n(231338),
   y = n(388032),
   v = n(630620);
 
-function _(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function _(e) {
   return e
 }
 
-function N(e, t) {
+function H(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -55,21 +55,21 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let H = l.forwardRef(function(e, t) {
+let _ = l.forwardRef(function(e, t) {
   let {
     guild: n
-  } = e, o = (0, u.e7)([g.Z], () => g.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), i = (0, u.e7)([b.Z], () => (0, d.wj)(b.Z.theme)), H = (0, u.e7)([p.Z], () => p.Z.can(c.$e(O.Pl.MANAGE_GUILD, O.Pl.KICK_MEMBERS), n)), w = l.useCallback(() => {
-    null != n && H && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, N(_({}, e), {
+  } = e, o = (0, u.e7)([j.Z], () => j.Z.hasDefaultSearchStateByGuildId(n.id), [n.id]), i = (0, u.e7)([b.Z], () => (0, d.wj)(b.Z.theme)), _ = (0, u.e7)([p.Z], () => p.Z.can(c.$e(O.Pl.MANAGE_GUILD, O.Pl.KICK_MEMBERS), n)), w = l.useCallback(() => {
+    null != n && _ && (0, C.ZDy)(async () => e => (0, r.jsx)(m.Z, H(N({}, e), {
       guild: n
     })))
-  }, [n, H]), S = (0, u.e7)([g.Z], () => g.Z.getSearchStateByGuildId(n.id), [n.id], s()), D = (0, f.gm)(n.id), [Z, L] = l.useState(S.query), R = null != S.selectedSort && S.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && S.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, P = l.useCallback(e => {
+  }, [n, _]), S = (0, u.e7)([j.Z], () => j.Z.getSearchStateByGuildId(n.id), [n.id], s()), D = (0, f.gm)(n.id), [Z, L] = l.useState(S.query), R = null != S.selectedSort && S.selectedSort !== h.d$.ORDER_BY_GUILD_JOINED_AT_DESC && S.selectedSort !== h.d$.ORDER_BY_UNSPECIFIED, P = l.useCallback(e => {
     let t = e.trim();
-    t.length > 0 && D(), (0, j.Dr)(n.id, {
+    t.length > 0 && D(), (0, g.Dr)(n.id, {
       query: t
     })
-  }, [n.id, D]), I = l.useMemo(() => a()(P, 300), [P]), M = l.useCallback(e => {
-    L(e), I(e)
-  }, [I]), V = l.useCallback(() => {
+  }, [n.id, D]), M = l.useMemo(() => a()(P, 300), [P]), I = l.useCallback(e => {
+    L(e), M(e)
+  }, [M]), V = l.useCallback(() => {
     L(""), P("")
   }, [P]);
   return l.useImperativeHandle(t, () => ({
@@ -95,7 +95,7 @@ let H = l.forwardRef(function(e, t) {
           className: v.searchBar,
           query: Z,
           placeholder: y.NW.string(y.t.NVoAMz),
-          onChange: M,
+          onChange: I,
           onClear: V,
           autoComplete: "off",
           inputProps: {
@@ -133,7 +133,7 @@ let H = l.forwardRef(function(e, t) {
             }
             return l
           }(e, ["onClick"]);
-          return (0, r.jsx)(C.zxk, N(_({}, n), {
+          return (0, r.jsx)(C.zxk, H(N({}, n), {
             onClick: t,
             "aria-label": y.NW.string(y.t.XvNMNj),
             color: i ? C.zxk.Colors.PRIMARY : C.zxk.Colors.TRANSPARENT,
@@ -156,7 +156,7 @@ let H = l.forwardRef(function(e, t) {
       })
     }), (0, r.jsx)("div", {
       className: v.tableOptions,
-      children: H && (0, r.jsx)(C.zxk, {
+      children: _ && (0, r.jsx)(C.zxk, {
         className: v.__invalid_pruneButton,
         onClick: w,
         "aria-label": y.NW.string(y.t.zbyz7u),

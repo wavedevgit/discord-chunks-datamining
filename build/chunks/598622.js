@@ -1,90 +1,75 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
-  Q: () => f
+  Q: () => m
 });
 var r = n(200651);
 n(192379);
-var i = n(63568),
-  s = n(983736),
-  a = n(740903),
-  l = n(426434),
-  o = n(112824),
-  c = n(181339),
-  d = n(195189),
-  u = n(122051),
-  m = n(3896),
-  g = n(981631),
-  p = n(388032);
-let f = e => {
-  let {
-    enabled: t
-  } = i.tW.getCurrentConfig({
-    guildId: e.id,
-    location: "getGuildSafetySettings"
-  }, {
-    autoTrackExposure: !1
-  }), n = [{
-    renderComponent: () => (0, r.jsx)(m.Z, {
+var i = n(740903),
+  s = n(426434),
+  a = n(112824),
+  l = n(181339),
+  o = n(195189),
+  c = n(3896),
+  d = n(981631),
+  u = n(388032);
+let m = e => {
+  let t = [{
+    renderComponent: () => (0, r.jsx)(c.Z, {
       guild: e
     }, "verification-level"),
     enabled: !0
-  }, t ? null : {
-    renderComponent: () => (0, r.jsx)(u.Z, {
-      guild: e
-    }, "member-verification"),
-    enabled: (0, s.Dc)(e)
   }, {
-    renderComponent: () => (0, r.jsx)(d.Z, {
-      title: p.NW.string(p.t.QiONLy),
-      details: p.NW.string(p.t.dSRTMD)
+    renderComponent: () => (0, r.jsx)(o.Z, {
+      title: u.NW.string(u.t.QiONLy),
+      details: u.NW.string(u.t.dSRTMD)
     }, "hide-suspicious-dms"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(d.Z, {
-      title: p.NW.string(p.t["f+8F8P"]),
-      details: p.NW.string(p.t.qChrIy)
+    renderComponent: () => (0, r.jsx)(o.Z, {
+      title: u.NW.string(u.t["f+8F8P"]),
+      details: u.NW.string(u.t.qChrIy)
     }, "filter-unknown-dms"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(d.Z, {
-      title: p.NW.string(p.t.EkSAHR)
+    renderComponent: () => (0, r.jsx)(o.Z, {
+      title: u.NW.string(u.t.EkSAHR)
     }, "outbound-links-warn"),
     enabled: !0
   }, {
-    renderComponent: () => (0, r.jsx)(d.Z, {
-      title: p.NW.string(p.t["7cAQmp"])
+    renderComponent: () => (0, r.jsx)(o.Z, {
+      title: u.NW.string(u.t["7cAQmp"])
     }, "delete-spam"),
     enabled: !0
   }].filter(e => null != e);
   return {
-    [a.u.CAPTCHA_AND_RAID_PROTECTION]: [{
-      renderComponent: () => (0, r.jsx)(c.Z, {
+    [i.u.CAPTCHA_AND_RAID_PROTECTION]: [{
+      renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "raid-alerts"),
-      enabled: !e.hasFeature(g.oNc.RAID_ALERTS_DISABLED)
+      enabled: !e.hasFeature(d.oNc.RAID_ALERTS_DISABLED)
     }, {
-      renderComponent: () => (0, r.jsx)(d.Z, {
-        title: p.NW.string(p.t.gOkFfH)
+      renderComponent: () => (0, r.jsx)(o.Z, {
+        title: u.NW.string(u.t.gOkFfH)
       }, "captcha-suspicious-joins"),
       enabled: !0
     }, {
-      renderComponent: () => (0, r.jsx)(d.Z, {
-        title: p.NW.string(p.t.r3esyM)
+      renderComponent: () => (0, r.jsx)(o.Z, {
+        title: u.NW.string(u.t.r3esyM)
       }, "captcha-raid-joins"),
       enabled: !0
     }],
-    [a.u.DM_AND_SPAM_PROTECTION]: n,
-    [a.u.PERMISSIONS]: [{
-      renderComponent: () => (0, r.jsx)(l.Z, {
+    [i.u.DM_AND_SPAM_PROTECTION]: t,
+    [i.u.PERMISSIONS]: [{
+      renderComponent: () => (0, r.jsx)(s.Z, {
         guild: e
       }, "guild-mfa"),
-      enabled: e.mfaLevel === g.BpS.ELEVATED
+      enabled: e.mfaLevel === d.BpS.ELEVATED
     }, {
-      renderComponent: () => (0, r.jsx)(o.Z, {
+      renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e
       }, "disable-risky-perms"),
-      enabled: 0 === (0, o.R)(e).length
+      enabled: 0 === (0, a.R)(e).length
     }]
   }
 }

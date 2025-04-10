@@ -1,7 +1,7 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
-  Z: () => A
+  Z: () => W
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -63,7 +63,7 @@ function R(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = e => [{
+let Z = e => [{
     section: m.ID.HEADER,
     label: T.NW.string(T.t["7r0U+/"])
   }, {
@@ -114,9 +114,9 @@ let D = e => [{
   }, {
     section: m.ID.CUSTOM,
     label: T.NW.string(T.t.vc5h39),
-    element: Z
+    element: D
   }],
-  Z = e => {
+  D = e => {
     let {
       guildId: t,
       onClose: s,
@@ -190,13 +190,13 @@ let D = e => [{
       })]
     }) : null
   },
-  A = e => {
+  W = e => {
     let {
       guildId: t,
       onClose: n
-    } = e, [S, Z] = i.useState(I.Wy.GAMES), {
-      initialSettings: A,
-      settings: W,
+    } = e, [S, D] = i.useState(I.Wy.GAMES), {
+      initialSettings: W,
+      settings: A,
       errors: L,
       submitting: M,
       dirty: G
@@ -211,7 +211,7 @@ let D = e => [{
         dirty: t.dirty
       }
     }), U = i.useCallback(e => {
-      G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : Z(e)
+      G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : D(e)
     }, [G]), B = (0, b.f)(), F = i.useCallback(e => {
       "Escape" === e.key && (e.stopPropagation(), n())
     }, [n]);
@@ -238,10 +238,10 @@ let D = e => [{
         G ? g.S.dispatch(E.CkL.EMPHASIZE_NOTICE) : n()
       }, [G, n]),
       q = async () => {
-        await (0, p.Ii)(t, W), (0, f.Af)(t)
+        await (0, p.Ii)(t, A), (0, f.Af)(t)
       }, X = i.useMemo(() => null != L && Object.values(L).some(e => null != e), [L]);
-    if (null == W) return null;
-    let J = D(L);
+    if (null == A) return null;
+    let J = Z(L);
     return (0, r.jsxs)(s.animated.div, {
       style: B,
       className: P.modal,
@@ -317,7 +317,7 @@ let D = e => [{
                     title: T.NW.string(T.t.t6Mbq6),
                     description: T.NW.string(T.t.E7Ymwc),
                     onUpdateGames: z,
-                    gameApplicationIds: null != (e = W.gameApplicationIds) ? e : new Set,
+                    gameApplicationIds: null != (e = A.gameApplicationIds) ? e : new Set,
                     error: L.gameApplicationIds,
                     guildId: t,
                     includeSuggestedGames: !0
@@ -327,7 +327,7 @@ let D = e => [{
                     title: T.NW.string(T.t.W0h7pa),
                     description: T.NW.string(T.t.JHYekZ),
                     onUpdatePlaystyle: H,
-                    playstyle: W.playstyle,
+                    playstyle: A.playstyle,
                     error: L.playstyle
                   });
                 case I.Wy.UTILITY_TRAITS:
@@ -336,30 +336,30 @@ let D = e => [{
                     title: T.NW.string(T.t.G4tP09),
                     description: T.NW.string(T.t["6Eos19"]),
                     onUpdateTraits: V,
-                    progress: W
+                    progress: A
                   });
                 case I.Wy.INTERESTS:
                   return (0, r.jsx)(v.Z, {
                     guildId: t,
                     handleUpdate: Y,
-                    progress: W,
+                    progress: A,
                     error: L.interests
                   });
                 case I.Wy.DESCRIPTION:
                   return (0, r.jsx)(j.Z, {
                     guildId: t,
                     handleUpdate: Y,
-                    progress: W,
+                    progress: A,
                     errors: L
                   });
                 case I.Wy.CUSTOMIZE_TAG_BADGE:
                   return (0, r.jsx)(O.Z, {
                     handleUpdate: Y,
-                    tag: W.tag,
+                    tag: A.tag,
                     error: L.tag,
-                    badge: W.badgeKind,
-                    primaryColor: W.badgePrimaryColor,
-                    secondaryColor: W.badgeSecondaryColor,
+                    badge: A.badgeKind,
+                    primaryColor: A.badgePrimaryColor,
+                    secondaryColor: A.badgeSecondaryColor,
                     furthestStep: I.Wy.CUSTOMIZE_TAG_BADGE,
                     inSettings: !0
                   });
@@ -373,7 +373,7 @@ let D = e => [{
                   return (0, r.jsx)(x.Z, {
                     guildId: t,
                     handleUpdate: Y,
-                    progress: W
+                    progress: A
                   });
                 default:
                   return null
@@ -387,7 +387,7 @@ let D = e => [{
                 onSave: q,
                 submitting: M,
                 onReset: () => {
-                  (0, p.mf)(t, A)
+                  (0, p.mf)(t, W)
                 },
                 errorMessage: Object.values(L).find(e => null != e)
               })

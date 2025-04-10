@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => E
@@ -47,13 +47,13 @@ let E = function() {
   i.useEffect(() => {
     null != n && E()
   }, [n, E]);
-  let D = i.useCallback(() => {
+  let Z = i.useCallback(() => {
     E(!0)
   }, [E]);
   return (i.useEffect(() => {
     l.Z.getDetectableGames()
   }, []), S === d.a.FETCHED && null == T) ? (0, r.jsx)(v.g, {
-    forceFetchGuildProfile: D
+    forceFetchGuildProfile: Z
   }) : S === d.a.NOT_FETCHED || S === d.a.FETCHING ? (0, r.jsx)("main", {
     className: I.spinner,
     children: (0, r.jsx)(a.$jN, {})

@@ -1,4 +1,4 @@
-/** Chunk was on 21881 **/
+/** Chunk was on 56534 **/
 r.d(t, {
   Z: () => T
 }), r(388685);
@@ -6,8 +6,8 @@ var n = r(192379),
   i = r(399606),
   a = r(544891),
   o = r(570140),
-  s = r(367907),
-  l = r(430824),
+  l = r(367907),
+  s = r(430824),
   c = r(496675),
   d = r(626135),
   u = r(70956),
@@ -49,8 +49,8 @@ let I = +u.Z.Millis.DAY,
   A = new Map,
   T = {
     useShouldShowChannelNotice(e) {
-      let t = (0, i.e7)([l.Z, c.Z], () => {
-        let t = l.Z.getGuild(e);
+      let t = (0, i.e7)([s.Z, c.Z], () => {
+        let t = s.Z.getGuild(e);
         return null != t && c.Z.can(p.Plq.ADMINISTRATOR, t)
       });
       n.useEffect(() => {
@@ -88,7 +88,7 @@ let I = +u.Z.Millis.DAY,
         type: "COMMANDS_MIGRATION_OVERVIEW_TOOLTIP_DISMISSED",
         guildId: e,
         integrationId: t.id
-      }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, s.hH)(e)), {
+      }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, l.hH)(e)), {
         application_id: null == (r = t.application) ? void 0 : r.id,
         location: "overview"
       }))
@@ -98,7 +98,7 @@ let I = +u.Z.Millis.DAY,
       void 0 !== t && (o.Z.dispatch({
         type: "COMMANDS_MIGRATION_TOGGLE_TOOLTIP_DISMISSED",
         integrationId: t.id
-      }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, s.hH)(e)), {
+      }), d.default.track(p.rMx.COMMANDS_MIGRATION_TOOLTIP_DISMISSED, O(E({}, (0, l.hH)(e)), {
         application_id: null == (r = t.application) ? void 0 : r.id,
         location: "toggle"
       })))

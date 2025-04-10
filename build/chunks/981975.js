@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   Z: () => w
@@ -95,25 +95,25 @@ function w(e) {
     headerRef: w
   } = (0, x.Z)(0), {
     scrolledToTop: R,
-    handleScroll: D
-  } = (0, N.V)(), Z = (0, c.e7)([f.Z], () => {
+    handleScroll: Z
+  } = (0, N.V)(), D = (0, c.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getRoleMemberCount(t.id)) ? void 0 : e[n.id]
   }, [n.id, t.id]), k = (0, c.Wu)([b.Z], () => {
     var e;
     return null != (e = b.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), A = k.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => A === m.O1.OR ? k.flat() : null != k && k.length > 0 ? k[0] : [], [A, k]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+  }), W = k.length > 1 ? m.O1.OR : m.O1.AND, A = i.useMemo(() => W === m.O1.OR ? k.flat() : null != k && k.length > 0 ? k[0] : [], [W, k]), L = i.useMemo(() => new Set(A.map(e => e.connectionType)), [A]);
 
   function M(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-      r = [...W];
+      r = [...A];
     r.push({
       connectionType: e,
       connectionMetadataField: void 0,
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, h.d_)(n.id, T(r, A))
+    }), (0, h.d_)(n.id, T(r, W))
   }
 
   function G() {
@@ -126,14 +126,14 @@ function w(e) {
     })
   }
   let U = null;
-  if (0 === W.length) U = (0, r.jsx)(P, {
+  if (0 === A.length) U = (0, r.jsx)(P, {
     handleAddVerificationClicked: G,
     locked: s
   });
-  else if (W.length > 0) {
+  else if (A.length > 0) {
     var B;
     let e = null;
-    W.length < 10 && (e = (0, r.jsx)(d.zxk, {
+    A.length < 10 && (e = (0, r.jsx)(d.zxk, {
       className: a()(C.addVerificationButton, C.addVerificationButtonAppend),
       size: d.zxk.Sizes.LARGE,
       look: d.zxk.Looks.BLANK,
@@ -191,7 +191,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(s, n.id, A, W, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, W, A, (e, t) => (0, h.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
         function a(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -252,7 +252,7 @@ function w(e) {
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, h.d_)(n.id, T(e, A)), s, n.id, o), e]
+      }(A, e => (0, h.d_)(n.id, T(e, W)), s, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {
@@ -260,7 +260,7 @@ function w(e) {
     style: {
       scrollPaddingTop: g
     },
-    onScroll: D,
+    onScroll: Z,
     children: (0, r.jsxs)("div", {
       className: I.contentWidth,
       children: [(0, r.jsx)("div", {
@@ -274,7 +274,7 @@ function w(e) {
           selectedSection: v.ZI.VERIFICATIONS,
           setSelectedSection: l
         })
-      }), (null != Z ? Z : 0) > 0 ? (0, r.jsxs)("div", {
+      }), (null != D ? D : 0) > 0 ? (0, r.jsxs)("div", {
         className: C.warningContainer,
         children: [(0, r.jsx)(d.P4T, {
           size: "custom",

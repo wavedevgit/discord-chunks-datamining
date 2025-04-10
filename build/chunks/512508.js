@@ -1,7 +1,7 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
-  PM: () => M,
-  WG: () => I,
+  PM: () => I,
+  WG: () => M,
   ZP: () => T
 }), n(388685), n(781311);
 var r = n(200651),
@@ -19,15 +19,15 @@ var r = n(200651),
   p = n(313201),
   f = n(518738),
   h = n(884902),
-  g = n(662594),
-  j = n(592125),
+  j = n(662594),
+  g = n(592125),
   x = n(430824),
   O = n(699516),
   y = n(594174),
   v = n(388032),
-  _ = n(962923);
+  N = n(962923);
 
-function N(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function N(e) {
   return e
 }
 
-function H(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,8 +88,8 @@ function P(e) {
   return 0 === e.type
 }
 
-function I(e) {
-  let t = "".concat(!e.name.includes(g.CR) ? "@" : "").concat(e.name);
+function M(e) {
+  let t = "".concat(!e.name.includes(j.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
       type: d.Fj.ROLE,
@@ -104,7 +104,7 @@ function I(e) {
   }
 }
 
-function M(e) {
+function I(e) {
   let t = (0, C.F6)(e, y.default, O.Z);
   return {
     tag: {
@@ -132,22 +132,22 @@ let V = l.memo(function(e) {
     guildId: l,
     roleId: i,
     size: 16
-  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, i)), m = s.includes(g.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? void 0 : C.colorString) ? t : p, O = (0, h.X)(l, null == C ? void 0 : C.colorStrings);
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, i)), m = s.includes(j.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), g = null != (t = null == C ? void 0 : C.colorString) ? t : p, O = (0, h.X)(l, null == C ? void 0 : C.colorStrings);
   return (0, r.jsxs)("div", {
-    className: a()(_.rowLabel, _.roleTagContainer, o),
+    className: a()(N.rowLabel, N.roleTagContainer, o),
     children: [(0, r.jsx)(u.FhE, {
-      className: _.__invalid_roleDot,
-      color: j,
+      className: N.__invalid_roleDot,
+      color: g,
       colors: O,
       background: !1,
       tooltip: !1
-    }), null != d ? (0, r.jsx)(b.Z, H(N({
-      className: _.roleTagIcon
+    }), null != d ? (0, r.jsx)(b.Z, _(H({
+      className: N.roleTagIcon
     }, d), {
       enableTooltip: !1
     })) : m, (0, r.jsx)(u.Text, {
       variant: L,
-      className: _.roleTagLabel,
+      className: N.roleTagLabel,
       children: s
     })]
   })
@@ -160,13 +160,13 @@ function E(e) {
     className: l
   } = e, o = null != t.parent_id, i = (0, m.KS)(t);
   return (0, r.jsxs)("div", {
-    className: a()(_.rowLabel, _.channelLabel, {
-      [_.hasParent]: o
+    className: a()(N.rowLabel, N.channelLabel, {
+      [N.hasParent]: o
     }, l),
     children: [null != i && (0, r.jsx)(i, {
       size: "xs",
       color: "currentColor",
-      className: _.channelIcon
+      className: N.channelIcon
     }), (0, r.jsx)(u.Text, {
       variant: t.isCategory() ? "eyebrow" : L,
       children: n.display
@@ -197,16 +197,16 @@ function T(e) {
     placeholder: b,
     helperText: p,
     className: f
-  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRoles(t)), g = l.useMemo(() => (function(e, t, n) {
+  } = e, h = (0, c.e7)([x.Z], () => x.Z.getRoles(t)), j = l.useMemo(() => (function(e, t, n) {
     if (null == e) return {};
     let r = {};
     return e.forEach(e => {
-      let t = j.Z.getChannel(e);
-      null != t && (r[e] = M(t))
+      let t = g.Z.getChannel(e);
+      null != t && (r[e] = I(t))
     }), t.forEach(e => {
-      e in n && (r[e] = I(n[e]))
+      e in n && (r[e] = M(n[e]))
     }), r
-  })(i, C, h), [i, C, h]), O = l.useMemo(() => Object.keys(g), [g]), [y, S] = l.useState(""), [L, V] = l.useState(!1), [E, T] = l.useState(!1), [A, B] = l.useState(!1), W = l.useRef(null), {
+  })(i, C, h), [i, C, h]), O = l.useMemo(() => Object.keys(j), [j]), [y, S] = l.useState(""), [L, V] = l.useState(!1), [E, T] = l.useState(!1), [A, W] = l.useState(!1), B = l.useRef(null), {
     sections: U,
     sectionCounts: F
   } = l.useMemo(() => {
@@ -233,69 +233,69 @@ function T(e) {
         return R(t)
       }).map(e => e.row.record.id);
     m(new Set(n), new Set(r))
-  }, [m]), q = () => {
+  }, [m]), G = () => {
     V(!1), T(!1)
   };
   l.useEffect(() => {
     let e = setTimeout(() => {
-      B(L || E)
+      W(L || E)
     }, 32);
     return () => {
       clearTimeout(e)
     }
   }, [L, E]);
-  let G = (e, t, n) => {
+  let q = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? V(e) : (1 === t || V(e), T(e))
     },
     Y = l.useCallback(e => {
-      let t = N({}, g);
-      P(e) ? t[e.id] = M(e.record) : R(e) && (t[e.id] = I(e.record)), z(t), S(""), q(), setTimeout(() => {
+      let t = H({}, j);
+      P(e) ? t[e.id] = I(e.record) : R(e) && (t[e.id] = M(e.record)), z(t), S(""), G(), setTimeout(() => {
         var e;
-        let t = null == (e = W.current) ? void 0 : e.containerRef.current,
+        let t = null == (e = B.current) ? void 0 : e.containerRef.current,
           n = null == t ? void 0 : t.firstChild;
         null != n && n.scrollTo({
           top: n.scrollHeight,
           behavior: "smooth"
         })
       }, 16)
-    }, [z, g]),
+    }, [z, j]),
     X = l.useCallback(e => {
       let {
         section: n,
         row: l
       } = e, o = U[n][l];
       return (0, r.jsx)(u.P3F, {
-        className: a()(_.selectableSearchRow, _.rowHeight),
+        className: a()(N.selectableSearchRow, N.rowHeight),
         onClick: e => {
           e.stopPropagation(), Y(o)
         },
         children: (0, r.jsx)("div", {
-          className: _.rowContainer,
-          children: k(o, t, _.searchRowLabel)
+          className: N.rowContainer,
+          children: k(o, t, N.searchRowLabel)
         })
       }, o.id)
     }, [t, Y, U]),
     J = l.useMemo(() => O.map(e => {
       var n;
-      return n = g[e], H(N({}, n.tag), {
-        label: k(n.row, t, _.noIndent)
+      return n = j[e], _(H({}, n.tag), {
+        label: k(n.row, t, N.noIndent)
       })
-    }), [g, O, t]);
+    }), [j, O, t]);
   return (0, r.jsxs)("div", {
-    className: a()(_.searchContainer, f),
+    className: a()(N.searchContainer, f),
     children: [(0, r.jsxs)("div", {
-      className: _.searchBox,
+      className: N.searchBox,
       children: [(0, r.jsx)(d.ZP, {
         tags: J,
         maxHeight: 98,
         size: d.ZP.Sizes.MEDIUM,
         query: y,
-        ref: W,
+        ref: B,
         onRemoveTag: e => {
           let t = O[e],
             {
               [t]: n
-            } = g;
+            } = j;
           z(function(e, t) {
             if (null == e) return {};
             var n, r, l = function(e, t) {
@@ -310,7 +310,7 @@ function T(e) {
               for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(g, [t].map(w))), S(""), q()
+          }(j, [t].map(w))), S(""), G()
         },
         onQueryChange: e => {
           S(e.trim().toLocaleLowerCase())
@@ -321,17 +321,17 @@ function T(e) {
           "aria-labelledby": D,
           "aria-controls": Z,
           "aria-expanded": A,
-          onFocus: e => G(!0, 2, e),
-          onBlur: e => G(!1, 2, e)
+          onFocus: e => q(!0, 2, e),
+          onBlur: e => q(!1, 2, e)
         }
       }), A && (0, r.jsx)("div", {
-        className: _.resultsListParent,
-        onFocus: e => G(!0, 1, e),
-        onBlur: e => G(!1, 1, e),
+        className: N.resultsListParent,
+        onFocus: e => q(!0, 1, e),
+        onBlur: e => q(!1, 1, e),
         tabIndex: -1,
         children: (0, r.jsx)(u._2F, {
-          className: _.resultsListContainer,
-          innerClassName: _.resultsList,
+          className: N.resultsListContainer,
+          innerClassName: N.resultsList,
           sections: F,
           renderRow: X,
           rowHeight: 34,
@@ -341,11 +341,11 @@ function T(e) {
             } = e;
             return 0 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
-              className: a()(_.sectionTitle, _.sectionHeight),
+              className: a()(N.sectionTitle, N.sectionHeight),
               children: v.NW.string(v.t.OGiMXF)
             }, v.NW.string(v.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.vwX, {
               tag: "h5",
-              className: a()(_.sectionTitle, _.sectionHeight),
+              className: a()(N.sectionTitle, N.sectionHeight),
               children: v.NW.string(v.t.LPJmLy)
             }, v.NW.string(v.t.LPJmLy)) : null
           },
@@ -354,7 +354,7 @@ function T(e) {
               section: t
             } = e;
             return 0 === t ? 0 === F[1] && F[0] > 0 ? null : (0, r.jsx)("div", {
-              className: _.sectionFooter,
+              className: N.sectionFooter,
               children: (0, r.jsx)(u.$i$, {})
             }) : null
           },
@@ -369,7 +369,7 @@ function T(e) {
     }), null != p && (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      className: _.helperText,
+      className: N.helperText,
       children: p
     })]
   })

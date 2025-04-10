@@ -1,6 +1,6 @@
-/** Chunk was on 23988 **/
+/** Chunk was on 60696 **/
 n.d(t, {
-  Z: () => j
+  Z: () => g
 });
 var r = n(200651),
   l = n(192379),
@@ -140,7 +140,7 @@ function h(e) {
   })
 }
 
-function g(e) {
+function j(e) {
   let {
     onHandleEnableLockdown: t,
     onHandleReportFalseAlarm: n,
@@ -199,7 +199,7 @@ function g(e) {
   })
 }
 
-function j(e) {
+function g(e) {
   let {
     guild: t,
     incidentData: n,
@@ -249,7 +249,7 @@ function j(e) {
   }, [t.id, n]), p = l.useCallback(() => {
     let e = C.Z.getLastIncidentAlertMessage(t.id);
     (0, d.kW)(e, t.id)
-  }, [t.id]), j = (() => {
+  }, [t.id]), g = (() => {
     switch (!0) {
       case m && o:
         return 3;
@@ -262,7 +262,7 @@ function j(e) {
     }
   })();
   if (null == t || null == n) return null;
-  switch (j) {
+  switch (g) {
     case 1:
       return (0, r.jsx)(f, {
         onHandleEnableLockdown: b,
@@ -276,7 +276,7 @@ function j(e) {
         guildName: t.name
       });
     case 3:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(j, {
         onHandleEnableLockdown: b,
         onHandleReportFalseAlarm: p,
         incidentData: n,

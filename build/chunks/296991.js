@@ -1,4 +1,4 @@
-/** Chunk was on 56444 **/
+/** Chunk was on 33472 **/
 "use strict";
 n.d(t, {
   k: () => S
@@ -84,7 +84,7 @@ function E(e) {
     end: (e, t) => {
       null == e || t.didDrop() || h(e.rule, null, !0)
     }
-  }), [, D] = (0, d.L)({
+  }), [, Z] = (0, d.L)({
     accept: I,
     hover: (e, t) => {
       var n;
@@ -100,18 +100,18 @@ function E(e) {
       h(e.rule, s, !0)
     }
   });
-  if (i.useLayoutEffect(() => (w(E), R(D(C)), () => {
-      w(null), D(null)
-    }), [w, D, R]), i.useEffect(() => {
+  if (i.useLayoutEffect(() => (w(E), R(Z(C)), () => {
+      w(null), Z(null)
+    }), [w, Z, R]), i.useEffect(() => {
       "" !== t.value && "" === S && P((0, p.eK)(t.value))
     }, [t.value, S]), null == n) return null;
-  let Z = "" !== t.value ? t.value : t.id;
+  let D = "" !== t.value ? t.value : t.id;
   return (0, r.jsx)("div", {
     ref: C,
     className: a()(y.draggableInputContainer, {
       [y.dragging]: b
     }),
-    "data-dnd-name": Z,
+    "data-dnd-name": D,
     children: (0, r.jsxs)("div", {
       className: y.inputWrapper,
       children: [(0, r.jsx)(m.P3F, {
@@ -153,7 +153,7 @@ function E(e) {
       }), (0, r.jsx)("div", {
         ref: E,
         className: y.dragContainer,
-        "data-dnd-name": Z,
+        "data-dnd-name": D,
         children: O && (0, r.jsx)(m.Vni, {
           size: "xs",
           color: "currentColor",
@@ -201,32 +201,32 @@ function S(e) {
       i.splice(s, 1), i.splice(r, 0, e), n(i)
     }
     i ? null !== g && p(null) : r !== g && p(r)
-  }, [g, t, n]), D = t.length === N.X2, Z = i.useMemo(() => {
-    let e = D ? _.NW.formatToPlainString(_.t.tU718P, {
+  }, [g, t, n]), Z = t.length === N.X2, D = i.useMemo(() => {
+    let e = Z ? _.NW.formatToPlainString(_.t.tU718P, {
       number: N.X2
     }) : void 0;
     return [{
       text: _.NW.string(_.t.DXq2oa),
       onClick: () => S(_.NW.string(_.t.XudkSk)),
-      disabled: D,
+      disabled: Z,
       tooltipText: e
     }, {
       text: _.NW.string(_.t.nSqTjI),
       onClick: () => S(_.NW.string(_.t.np91jI)),
-      disabled: D,
+      disabled: Z,
       tooltipText: e
     }, {
       text: _.NW.string(_.t.AtRxsL),
       onClick: () => S(_.NW.string(_.t.PNIDDA)),
-      disabled: D,
+      disabled: Z,
       tooltipText: e
     }, {
       text: _.NW.string(_.t["0K5NJi"]),
       onClick: () => S(_.NW.string(_.t.HolIDw)),
-      disabled: D,
+      disabled: Z,
       tooltipText: e
     }]
-  }, [S, D]);
+  }, [S, Z]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: y.rulesContainer,
@@ -243,7 +243,7 @@ function S(e) {
         previewEnabled: null == l || l,
         isDragEnabled: t.length > 1
       }, e.id))
-    }), !D && (0, r.jsx)(x.A, {
+    }), !Z && (0, r.jsx)(x.A, {
       text: _.NW.string(_.t.Cq5Jub),
       onClick: T
     }), (0, r.jsx)(m.X6q, {
@@ -252,7 +252,7 @@ function S(e) {
       className: y.exampleRulesTitle,
       children: _.NW.string(_.t.XHWj8f)
     }), (0, r.jsx)(j.j, {
-      pills: Z,
+      pills: D,
       pillClassName: y.pill
     })]
   })

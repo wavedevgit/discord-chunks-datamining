@@ -5,15 +5,15 @@ r.d(t, {
 });
 var n, i = r(990547),
   o = r(544891),
-  s = r(570140),
-  l = r(314897),
-  c = r(573261),
-  a = r(815660),
+  l = r(570140),
+  s = r(314897),
+  a = r(573261),
+  c = r(815660),
   u = r(981631),
   d = ((n = {}).USER_ACTION_REQUIRED = "user_action_required", n.USER_SETTINGS_UPDATE = "user_settings_update", n.GUILD_PHONE_REQUIRED = "guild_phone_required", n.MFA_PHONE_UPDATE = "mfa_phone_update", n.CONTACT_SYNC = "contact_sync", n);
 let f = {
   setCountryCode(e) {
-    s.Z.dispatch({
+    l.Z.dispatch({
       type: "PHONE_SET_COUNTRY_CODE",
       countryCode: e
     })
@@ -29,7 +29,7 @@ let f = {
   }),
   resendCode(e) {
     let t = {},
-      r = l.default.getFingerprint();
+      r = s.default.getFingerprint();
     return null != r && "" !== r && (t["X-Fingerprint"] = r), o.tn.post({
       url: u.ANM.RESEND_PHONE,
       headers: t,
@@ -94,9 +94,9 @@ let f = {
     let r = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
       n = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
       o = {},
-      d = l.default.getFingerprint();
+      d = s.default.getFingerprint();
     null != d && "" !== d && (o["X-Fingerprint"] = d), n && (o.authorization = "");
-    let f = await c.Z.post({
+    let f = await a.Z.post({
       url: u.ANM.VERIFY_PHONE,
       headers: o,
       body: {
@@ -109,9 +109,9 @@ let f = {
       },
       rejectWithError: !1
     });
-    return r && s.Z.dispatch({
+    return r && l.Z.dispatch({
       type: "MODAL_POP",
-      key: a.M
+      key: c.M
     }), f.body
   }
 }
