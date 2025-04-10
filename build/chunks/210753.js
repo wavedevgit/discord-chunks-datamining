@@ -28,7 +28,7 @@ class f {
     let e = [];
     this._pending.forEach(t => {
       this._fetched.add(t), e.push(t)
-    }), o().chunk(e, d).forEach(e => {
+    }), this._pending.clear(), o().chunk(e, d).forEach(e => {
       l.Z.getDetectableGamesSupplemental(e)
     })
   }

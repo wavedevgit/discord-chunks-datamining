@@ -1,12 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  D: () => o,
-  E: () => i
+  Dz: () => s,
+  Eb: () => a,
+  x$: () => l
 });
-var r = n(373793);
+var r = n(373793),
+  i = n(213459),
+  o = n(689079);
 
-function i(e) {
+function a(e) {
   let {
     customInstallUrl: t,
     installParams: n,
@@ -15,15 +18,31 @@ function i(e) {
   return null != t || null != n || null != r && Object.values(r).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null)
 }
 
-function o(e) {
+function s(e) {
   let {
     customInstallUrl: t,
     installParams: n,
-    integrationTypesConfig: o
+    integrationTypesConfig: i
   } = e;
-  return i({
+  return a({
     customInstallUrl: t,
     installParams: n,
-    integrationTypesConfig: o
-  }) && null != o && r.Y.USER_INSTALL in o
+    integrationTypesConfig: i
+  }) && null != i && r.Y.USER_INSTALL in i
+}
+
+function l(e) {
+  let {
+    applicationId: t,
+    channel: n,
+    commandIntegrationTypes: a
+  } = e;
+  return !(null != a && !a.includes(r.Y.USER_INSTALL) || t === o.bi.BUILT_IN || i.ZP.hasUserStateApplication({
+    applicationId: t,
+    authorizedOnly: !0
+  }) || null != n && i.ZP.hasContextStateApplication({
+    applicationId: t,
+    channelId: n.id,
+    guildId: n.guild_id
+  }))
 }

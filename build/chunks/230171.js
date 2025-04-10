@@ -126,7 +126,7 @@ function R(e) {
   var t, n, l;
   let {
     app: c
-  } = e, u = (0, N.E)({
+  } = e, u = (0, N.Eb)({
     customInstallUrl: c.customInstallUrl,
     installParams: c.installParams,
     integrationTypesConfig: c.integrationTypesConfig

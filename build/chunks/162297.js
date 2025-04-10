@@ -21,7 +21,7 @@ function f(e) {
   } = e, [a, o, s] = (0, l.Wu)([d.Z], () => [d.Z.getApplication(t), d.Z.isFetchingApplication(t), d.Z.didFetchingApplicationFail(t)], [t]);
   return (i.useEffect(() => {
     null != a || o || s || u.ZP.fetchApplication(t)
-  }, [a, o, s, t]), null != a && (0, m.E)({
+  }, [a, o, s, t]), null != a && (0, m.Eb)({
     customInstallUrl: a.customInstallUrl,
     installParams: a.installParams,
     integrationTypesConfig: a.integrationTypesConfig

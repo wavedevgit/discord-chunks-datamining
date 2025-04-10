@@ -1,6 +1,6 @@
 /**
   Module ID: 56444
-  Original File Name: 1eb58688513074ed
+  Original File Name: 9ae82cce43f7507a
 **/
 .gameImageContainer_ed15e7 {
     position: relative;
@@ -13894,8 +13894,9 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .gameImage_a3ec8a,.gameUnknownImage_a3ec8a {
-    height: 100%;
-    width: 100%
+    height: auto;
+    width: 100%;
+    aspect-ratio: 3/4
 }
 
 .gameUnknownImage_a3ec8a {
@@ -13955,7 +13956,7 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .gameImageBackground_a3ec8a {
     position: relative;
     height: 100%;
-    background-color: var(--background-secondary);
+    background-color: var(--background-tertiary);
     border-radius: 4px;
     margin-bottom: 8px;
     overflow: hidden;
@@ -14024,25 +14025,6 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     row-gap: 12px;
     grid-auto-rows: 1fr;
     grid-template-columns: repeat(auto-fill,minmax(120px,1fr))
-}
-
-.clickableGame_eb5373 {
-    cursor: pointer;
-    transition: transform .2s ease-in-out
-}
-
-.clickableGame_eb5373:hover {
-    transform: translateY(-2px)
-}
-
-.clickableGame_eb5373:active {
-    transform: translateY(2px) scale(.98)
-}
-
-.separator_eb5373 {
-    height: 1px;
-    width: 100%;
-    background-color: var(--border-subtle)
 }
 
 .container__0a560 {
@@ -14471,4 +14453,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=1eb58688513074ed.css.map*/
+/*# sourceMappingURL=9ae82cce43f7507a.css.map*/

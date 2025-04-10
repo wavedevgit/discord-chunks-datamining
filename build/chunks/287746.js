@@ -28,16 +28,16 @@ var r = n(200651),
   N = n(499254),
   I = n(541099),
   P = n(827498),
-  S = n(46332),
-  Z = n(533379),
-  T = n(555573),
-  A = n(456007),
-  w = n(10718),
-  R = n(998698),
-  k = n(895924),
-  M = n(581364),
-  L = n(667204),
-  D = n(404295),
+  S = n(533379),
+  Z = n(555573),
+  T = n(456007),
+  A = n(10718),
+  w = n(998698),
+  R = n(895924),
+  k = n(581364),
+  M = n(667204),
+  L = n(404295),
+  D = n(104919),
   W = n(541716),
   U = n(752305),
   B = n(516887),
@@ -206,28 +206,29 @@ class e4 extends i.PureComponent {
     } = this.props, {
       commandKey: n,
       interactionOptions: r
-    } = (0, M.XA)(e.interactionData), {
+    } = (0, k.XA)(e.interactionData), {
       command: i,
       application: l
-    } = w.Xq({
+    } = A.Xq({
       channel: t,
       type: "channel"
     }, n);
     if (null != i) {
       var o, a;
       let e = null != l ? {
-        type: k.Qi.APPLICATION,
+        type: R.Qi.APPLICATION,
         id: l.id,
         icon: l.icon,
         name: null != (a = null == l || null == (o = l.bot) ? void 0 : o.username) ? a : l.name,
         application: l
       } : null;
-      T.Po({
+      Z.Po({
         channelId: t.id,
         command: i,
         section: e,
-        location: k.Vh.RECALL,
-        initialValues: (0, A.Dw)(i, null != r ? r : [])
+        location: R.Vh.RECALL,
+        initialValues: (0, T.Dw)(i, null != r ? r : []),
+        commandOrigin: R.bB.CHAT
       })
     }
   }
@@ -397,33 +398,50 @@ class e4 extends i.PureComponent {
         chatInputType: d
       } = this.props, p = !1;
       if (null != l) {
-        if (l.inputType === k.iw.BUILT_IN_INTEGRATION) return ek.S.dispatch(eK.CkL.SHAKE_APP, {
+        if (l.inputType === R.iw.BUILT_IN_INTEGRATION) return ek.S.dispatch(eK.CkL.SHAKE_APP, {
           duration: 200,
           intensity: 2
         }), Promise.resolve({
           shouldClear: !1,
           shouldRefocus: !0
         });
-        let e = R.Z.getCommandOrigin(c.id);
-        if (e === k.bB.APPLICATION_LAUNCHER || e === k.bB.IMAGE_RECS_MENU || e === k.bB.IMAGE_RECS_SUBMENU) {
+        let e = w.Z.getCommandOrigin(c.id);
+        if (null == e || e === R.bB.CHAT) {
+          let {
+            isAuthorized: e
+          } = await (0, D.L)({
+            applicationId: l.applicationId,
+            channel: c,
+            commandIntegrationTypes: l.integration_types
+          });
+          if (!e) return Promise.resolve({
+            shouldClear: !1,
+            shouldRefocus: !0
+          })
+        } else if (e === R.bB.APPLICATION_LAUNCHER || e === R.bB.IMAGE_RECS_MENU || e === R.bB.IMAGE_RECS_SUBMENU) {
           var h;
           let {
             location: t,
             sectionName: n
-          } = null != (h = (0, eH._U)(l)) ? h : {}, r = e === k.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT;
-          if (!await (0, S.L)({
-              applicationId: l.applicationId,
-              channel: c,
+          } = null != (h = (0, eH._U)(l)) ? h : {}, r = e === R.bB.APPLICATION_LAUNCHER ? I.Z.lastShownEntrypoint() : P._b.TEXT, {
+            isAuthorized: i
+          } = await (0, D.L)({
+            applicationId: l.applicationId,
+            channel: c,
+            commandIntegrationTypes: l.integration_types,
+            appLauncherContext: {
               location: t,
               sectionName: n,
               entrypoint: r
-            })) return Promise.resolve({
+            }
+          });
+          if (!i) return Promise.resolve({
             shouldClear: !1,
             shouldRefocus: !0
           });
           (0, eH.SC)(l)
         }
-        let n = await (0, L.Z)({
+        let n = await (0, M.Z)({
           command: l,
           optionValues: null != o ? o : {},
           context: {
@@ -431,7 +449,7 @@ class e4 extends i.PureComponent {
             channel: c
           }
         });
-        if (l.inputType !== k.iw.BUILT_IN_TEXT) return Promise.resolve({
+        if (l.inputType !== R.iw.BUILT_IN_TEXT) return Promise.resolve({
           shouldClear: !0,
           shouldRefocus: !0
         });
@@ -859,13 +877,13 @@ let e5 = i.memo(function(e) {
   }), c = (0, ep.S)(eT.default.getCurrentUser(), t), [u] = (0, J.AB)(null == n ? void 0 : n.id), h = (0, K.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([eT.default], () => eT.default.getCurrentUser()), m = (0, d.e7)([eN.ZP], () => {
     var e, t, r;
     return null != f && null != (r = null == (e = eN.ZP.getMember(null != (t = null == n ? void 0 : n.id) ? t : eK.lds, null == f ? void 0 : f.id)) ? void 0 : e.isPending) && r
-  }), g = (0, d.e7)([es.Z], () => es.Z.isEnabled()), b = (0, ed.Z)(t.id), _ = (0, ee.Z)(t.id), y = (0, Z.R)({
+  }), g = (0, d.e7)([es.Z], () => es.Z.isEnabled()), b = (0, ed.Z)(t.id), _ = (0, ee.Z)(t.id), y = (0, S.R)({
     channel: t,
     chatInputType: l
-  }), C = (0, D.h9)(t.id), x = (0, eg.k)(t.id), j = (0, z.Z)(t.id), {
+  }), C = (0, L.h9)(t.id), x = (0, eg.k)(t.id), j = (0, z.Z)(t.id), {
     isInitialLoading: N,
     primaryEntryPointCommand: P,
-    isProfileFetching: S,
+    isProfileFetching: Z,
     wasProfileFetching: T,
     applicationId: A,
     channelId: w,
@@ -877,7 +895,7 @@ let e5 = i.memo(function(e) {
     }
   });
   (0, E.Z)({
-    isProfileFetching: S,
+    isProfileFetching: Z,
     wasProfileFetching: T,
     applicationId: A,
     channelId: w,
@@ -885,7 +903,7 @@ let e5 = i.memo(function(e) {
   });
   let k = i.useRef(null),
     M = (0, d.e7)([I.Z], () => I.Z.appDMChannelsWithFailedLoads().has(t.id)),
-    L = (0, Y.R6)("ChannelChat"),
+    D = (0, Y.R6)("ChannelChat"),
     W = (0, Y.Q3)("ChannelChat"),
     U = (0, d.e7)([eS.Z], () => eS.Z.getVoiceChannelId()),
     B = (0, d.e7)([ej.Z], () => ej.Z.getChannel(U)),
@@ -913,7 +931,7 @@ let e5 = i.memo(function(e) {
     showEntryPointAppCommandButton: null != P,
     entryPointCommandButtonRef: k,
     isFailedAppDMLoad: M,
-    isRefreshChatInputEnabled: L,
+    isRefreshChatInputEnabled: D,
     isRefreshEnabled: W,
     pendingScheduledMessage: x,
     recipientUser: H,

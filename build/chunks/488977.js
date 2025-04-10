@@ -70,7 +70,7 @@ function w(e) {
     context: w,
     className: R,
     sectionName: k
-  } = e, Z = r.useRef(null), M = (0, o.e7)([j.Z], () => j.Z.entrypoint()), W = (0, P.L1)(l), D = (0, m.E)(W), B = (0, d.R)(l.id), U = (0, o.e7)([x.Z], () => {
+  } = e, Z = r.useRef(null), M = (0, o.e7)([j.Z], () => j.Z.entrypoint()), W = (0, P.L1)(l), D = (0, m.Eb)(W), B = (0, d.R)(l.id), U = (0, o.e7)([x.Z], () => {
     var e;
     return null != (e = x.Z.getGuildId()) ? e : void 0
   }, []), H = {

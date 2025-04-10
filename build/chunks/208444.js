@@ -25,7 +25,7 @@ function x(e, t) {
     customInstallUrl: x,
     installParams: y,
     integrationTypesConfig: v
-  } = e, E = (0, f.E)({
+  } = e, E = (0, f.Eb)({
     customInstallUrl: x,
     installParams: y,
     integrationTypesConfig: v

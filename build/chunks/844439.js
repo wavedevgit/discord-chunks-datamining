@@ -4,9 +4,9 @@ n.d(t, {
   ZP: () => E
 });
 var r, l, o = n(442837),
-  i = n(570140);
+  a = n(570140);
 
-function a(e, t, n) {
+function i(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -22,7 +22,7 @@ function c(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      i(e, t, n[t])
     })
   }
   return e
@@ -53,8 +53,8 @@ function f(e) {
   } = e;
   return "location:".concat(t, " channelId:").concat("0", " withCommands:").concat(r)
 }
-let O = Object.freeze([]);
-class b extends(l = o.ZP.Store) {
+let b = Object.freeze([]);
+class O extends(l = o.ZP.Store) {
   getLastFetchTimeMs(e) {
     let {
       location: t,
@@ -90,11 +90,11 @@ class b extends(l = o.ZP.Store) {
       location: n,
       channelId: r,
       withCommands: l
-    })]) ? t : O
+    })]) ? t : b
   }
 }
-a(b, "displayName", void 0);
-let E = new b(i.Z, {
+i(O, "displayName", void 0);
+let E = new O(a.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: function(e) {
     let {
       location: t,
@@ -125,9 +125,9 @@ let E = new b(i.Z, {
     }), m = u(c({}, m), {
       [o]: 1
     });
-    let i = Date.now();
+    let a = Date.now();
     p = u(c({}, p), {
-      [o]: i
+      [o]: a
     })
   },
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_FAILURE: function(e) {
