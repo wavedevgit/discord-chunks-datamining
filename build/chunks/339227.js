@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => j
+  Q: () => U
 }), n(388685), n(415506), n(35282), n(704826), n(539854), n(49124);
 var r = n(512722),
   i = n.n(r),
@@ -56,7 +56,8 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = {
+let v = new c.Z("MarkdownToSlate"),
+  O = {
     link: {
       type: "skip"
     },
@@ -219,16 +220,16 @@ let v = {
       after: ""
     }
   },
-  O = new Set(["*", "_", "\\"]),
-  I = {},
-  S = {};
+  I = new Set(["*", "_", "\\"]),
+  S = {},
+  T = {};
 for (let e in d.Z.RULES) {
-  if (!(e in v)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
-  let t = v[e];
-  "skip" !== t.type && (I[e] = T(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (S[e] = T("text" === e ? f.ZP : d.Z.RULES[e]))
+  if (!(e in O)) throw Error("Slate: Unknown markdown rule: ".concat(e, ".  If you have just added a new markdown rule ") + "then you probably need to add it to this file so that the rich chat box understands it.");
+  let t = O[e];
+  "skip" !== t.type && (S[e] = N(d.Z.RULES[e])), "skip" !== t.type && "inlineObject" !== t.type && (T[e] = N("text" === e ? f.ZP : d.Z.RULES[e]))
 }
 
-function T(e) {
+function N(e) {
   i()(null != e.parse, "Slate: rule must have a parse function");
   let t = e.parse;
   return y(E({}, e), {
@@ -239,14 +240,14 @@ function T(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   return {
     type: "autolink",
     content: e[1],
     originalMatch: e
   }
 }
-let A = {
+let C = {
     url: {
       parse: e => null == (0, u.yw)(e[1]) ? {
         type: "text",
@@ -263,13 +264,13 @@ let A = {
         type: "text",
         content: e[0],
         originalMatch: e
-      } : N(e)
+      } : A(e)
     },
     mailto: {
-      parse: N
+      parse: A
     },
     tel: {
-      parse: N
+      parse: A
     },
     codeBlockSyntax: {
       order: s.defaultRules.inlineCode.order - .1,
@@ -289,20 +290,20 @@ let A = {
       }
     }
   },
-  C = /(-# +)/,
-  P = (0, _.Z)([I, A]),
-  R = (0, _.Z)([S, A]),
-  w = l._p(P),
+  P = /(-# +)/,
+  R = (0, _.Z)([S, C]),
+  w = (0, _.Z)([T, C]),
   D = l._p(R),
-  L = {
+  L = l._p(w),
+  x = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,
     updateAgeOnGet: !0
   },
-  x = new(a())(L),
-  M = new(a())(L);
+  M = new(a())(x),
+  k = new(a())(x);
 
-function k(e, t, n) {
+function j(e, t, n) {
   let r = [],
     i = {
       returnMentionIds: !0,
@@ -310,8 +311,8 @@ function k(e, t, n) {
       guildId: t,
       isSlate: !0
     },
-    o = n ? D : w,
-    a = n ? M : x,
+    o = n ? L : D,
+    a = n ? k : M,
     s = a.get(e);
   if (null != s) return s;
   let l = e.replace(/\r\n/g, " \n").replace(/[\r\f]/g, " ").replace(/\t/g, " ") + "\n\n",
@@ -323,12 +324,12 @@ function k(e, t, n) {
       type: "paragraph",
       content: o(l, !0, i)
     };
-  G(r, l, c, 0, []);
-  let u = U(r);
+  B(r, l, c, 0, []);
+  let u = G(r);
   return a.set(e, u), u
 }
 
-function j(e, t) {
+function U(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
     r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
     i = m.rN(e);
@@ -347,7 +348,7 @@ function j(e, t) {
       let a = n === i[i.length - 2] ? e.substring(n + 3) : "";
       n += 3 + (null != a.match(m.Q2) ? a : "").length;
       let l = e.substring(o, n);
-      "" !== l && k(l, t, r).forEach(e => {
+      "" !== l && j(l, t, r).forEach(e => {
         s.push(y(E({}, e), {
           start: e.start + o
         }))
@@ -358,7 +359,7 @@ function j(e, t) {
   return s
 }
 
-function U(e) {
+function G(e) {
   if (0 === (e = e.filter(e => e.text.length > 0)).length) return e;
   let t = [e[0]];
   for (let n = 1; n < e.length; n++) {
@@ -370,7 +371,7 @@ function U(e) {
   return t
 }
 
-function G(e, t, n, r, o) {
+function B(e, t, n, r, o) {
   let {
     content: a,
     type: s,
@@ -382,11 +383,11 @@ function G(e, t, n, r, o) {
     case "paragraph":
     case "text":
     case "emoticon":
-      return V(e, t, a || "", r, o);
+      return F(e, t, a || "", r, o);
     case "emoji":
     case "customEmoji": {
       let i = t.substring(r);
-      if (i.startsWith(l[0]) || (r = W(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return Z({
+      if (i.startsWith(l[0]) || (r = K(e, t, r, t.length), i = t.substring(r)), i.startsWith(l[0])) return H({
         result: e,
         sourceText: t,
         text: l[0],
@@ -397,7 +398,7 @@ function G(e, t, n, r, o) {
       throw Error("Slate: Unable to find emoji: ".concat(l[0], " in ").concat(t, " at ").concat(r))
     }
     case "soundboard":
-      return Z({
+      return H({
         result: e,
         sourceText: t,
         text: l[0],
@@ -418,7 +419,7 @@ function G(e, t, n, r, o) {
         text: o,
         id: a
       } = n;
-      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), Z({
+      if (null != o) return i()(o === l[0], "Slate: text mentions must exactly match the regex match"), H({
         result: e,
         sourceText: t,
         text: o,
@@ -428,7 +429,7 @@ function G(e, t, n, r, o) {
           text: o
         }
       });
-      return Z({
+      return H({
         result: e,
         sourceText: t,
         text: l[0],
@@ -443,7 +444,7 @@ function G(e, t, n, r, o) {
       let {
         id: c, itemId: u
       } = n;
-      return Z({
+      return H({
         result: e,
         sourceText: t,
         text: l[0],
@@ -459,7 +460,7 @@ function G(e, t, n, r, o) {
           location: "c70cbb_1"
         }, {
           autoTrackExposure: !1
-        }).enabled) return Z({
+        }).enabled) return H({
         result: e,
         sourceText: t,
         text: l[0],
@@ -467,7 +468,7 @@ function G(e, t, n, r, o) {
         attributes: [s],
         data: n
       });
-      return V(e, t, l[0], r, o);
+      return F(e, t, l[0], r, o);
     case "em":
     case "autolink":
     case "mailto":
@@ -483,19 +484,19 @@ function G(e, t, n, r, o) {
     case "url":
     case "link":
     case "subtext": {
-      r = H(t, r);
+      r = W(t, r);
       let {
         before: n,
         after: i
-      } = B(t, s, r, l);
-      return r = F(e, t, n, r, "syntaxBefore"), o.push(s), r = V(e, t, null != a ? a : "", r, o), o.pop(), r = F(e, t, i, r, "syntaxAfter"), H(t, r)
+      } = V(t, s, r, l);
+      return r = Z(e, t, n, r, "syntaxBefore"), o.push(s), r = F(e, t, null != a ? a : "", r, o), o.pop(), r = Z(e, t, i, r, "syntaxAfter"), W(t, r)
     }
     default:
       throw Error("Slate: Unknown rule type: ".concat(s))
   }
 }
 
-function B(e, t, n, r) {
+function V(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -505,16 +506,16 @@ function B(e, t, n, r) {
     after: "_"
   };
   if ("subtext" === t) return {
-    before: C.exec(r.input)[1],
+    before: P.exec(r.input)[1],
     after: ""
   };
-  let i = v["link" === t ? "url" : t];
+  let i = O["link" === t ? "url" : t];
   if ("inlineStyle" === i.type) return i;
   throw Error("Slate: rule must be an inlineStyle")
 }
 
-function V(e, t, n, r, i) {
-  return "string" == typeof n ? r = Z({
+function F(e, t, n, r, i) {
+  return "string" == typeof n ? r = H({
     result: e,
     sourceText: t,
     text: n,
@@ -522,25 +523,26 @@ function V(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = G(e, t, n, r, i)
-  })), H(t, r)
+    r = B(e, t, n, r, i)
+  })), W(t, r)
 }
 
-function F(e, t, n, r, o) {
+function Z(e, t, n, r, i) {
   if (n.length > 0) {
-    let a = t.indexOf(n, r),
-      s = t.substring(r, a + n.length);
-    i()(a >= 0, "Slate: Unable to find syntax characters"), e.push({
-      text: s,
-      attributes: [o],
+    let o = t.indexOf(n, r);
+    if (-1 === o) return Y('Slate: Unable to find syntax characters "'.concat(n, '" at position ').concat(r), n, r);
+    let a = t.substring(r, o + n.length);
+    e.push({
+      text: a,
+      attributes: [i],
       start: r,
       data: null
-    }), r = a + n.length
+    }), r = o + n.length
   }
   return r
 }
 
-function Z(e) {
+function H(e) {
   let {
     result: t,
     sourceText: n,
@@ -548,35 +550,35 @@ function Z(e) {
     originalStart: i,
     attributes: o,
     data: a
-  } = e, s = H(n, i);
+  } = e, s = W(n, i);
   for (;
     "\n" === r.charAt(0) || " " === r.charAt(0);) r = r.substring(1);
   let l = n.indexOf(r, s);
-  if (l !== s ? s = i = W(t, n, s, l) : "\\" === r && "\\" === n.charAt(l + 1) && (l++, i = ++s), l !== s) throw new c.Z("MarkdownToSlate").error(JSON.stringify({
-    sourceText: n,
-    searchText: r,
-    searchStartsAt: n.substring(s),
-    startPos: s
-  })), Error("Slate: Unable to find content in source text!");
-  let u = s + r.length,
-    d = n.substring(i, u);
+  if (l !== s ? s = i = K(t, n, s, l) : "\\" === r && "\\" === n.charAt(l + 1) && (l++, i = ++s), l !== s) return Y("Slate: Unable to find content in source text at start position ".concat(s, " for text position ").concat(l), r, i);
+  let c = s + r.length,
+    u = n.substring(i, c);
   return t.push({
-    text: d,
+    text: u,
     attributes: o.slice(),
     start: i,
     data: a
-  }), u
+  }), c
 }
 
-function H(e, t) {
+function W(e, t) {
   for (;
     "\n" === e.charAt(t) || " " === e.charAt(t);) t++;
   return t
 }
 
-function W(e, t, n, r) {
+function Y(e, t, n) {
+  if (t.split("").some(e => I.has(e))) return v.error(e), n;
+  throw Error(e)
+}
+
+function K(e, t, n, r) {
   for (; n < r;)
-    if (O.has(t[n])) n = F(e, t, t[n], n, "syntaxBefore"), n = H(t, n);
+    if (I.has(t[n])) n = Z(e, t, t[n], n, "syntaxBefore"), n = W(t, n);
     else break;
   return n
 }

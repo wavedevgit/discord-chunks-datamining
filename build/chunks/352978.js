@@ -41,6 +41,7 @@ let p = i.memo(function(e) {
   } = (0, u.Z)({
     streamId: t,
     userId: S,
+    loading: y,
     videoSpinnerContext: v,
     streamKey: b,
     paused: g
