@@ -9,16 +9,16 @@ var r = t(200651),
   a = t(443002),
   l = t(430824),
   c = t(50101),
-  u = t(639777),
-  d = t(504392),
+  d = t(639777),
+  u = t(504392),
   m = t(981631);
 
 function p(e) {
   let {
     guildId: n,
     powerupSkuId: t
-  } = e, p = (0, s.e7)([l.Z], () => l.Z.getGuild(n)), x = (0, s.e7)([i.Z], () => i.Z.hasLoadedExperiments), _ = (0, u.Z)(n), g = (0, c.Ek)(n, "GuildPowerupsPage");
-  return x && null != _ && null != p ? g ? _ ? (0, r.jsx)(d.Z, {
+  } = e, p = (0, s.e7)([l.Z], () => l.Z.getGuild(n)), x = (0, s.e7)([i.Z], () => i.Z.hasLoadedExperiments), _ = (0, d.Z)(n), g = (0, c.Ek)(n, "GuildPowerupsPage");
+  return x && null != _ && null != p ? g ? _ ? (0, r.jsx)(u.Z, {
     guildId: n,
     powerupSkuId: t
   }) : (0, r.jsx)(a.Z, {

@@ -10,8 +10,8 @@ var o = t(793030),
   a = t(834129),
   l = t(271383),
   c = t(709054),
-  u = t(884902),
-  d = t(680278),
+  d = t(884902),
+  u = t(680278),
   m = t(388032),
   p = t(326319);
 
@@ -30,7 +30,7 @@ function x(e) {
       roleColor: null == r ? void 0 : r.colorString,
       roleColorStrings: null == r ? void 0 : r.colorStrings
     }
-  }, [n]), v = (0, u.X)(n.guildId, g);
+  }, [n]), v = (0, d.X)(n.guildId, g);
   return (0, r.jsx)(a.Z, {
     className: p.systemMessageContainer,
     contentClassName: p.systemMessageContent,
@@ -59,7 +59,7 @@ function x(e) {
       }), (0, r.jsx)(o.xv, {
         variant: "text-md/medium",
         lineClamp: 1,
-        children: m.NW.string(d.Z.plwH8f)
+        children: m.NW.string(u.Z.plwH8f)
       })]
     })
   })

@@ -9,8 +9,8 @@ var r = t(200651),
   a = t(838968),
   l = t(262212),
   c = t(795338),
-  u = t(279604),
-  d = t(388032),
+  d = t(279604),
+  u = t(388032),
   m = t(117172);
 
 function p(e) {
@@ -18,7 +18,7 @@ function p(e) {
     guildId: n,
     powerup: t
   } = e, [p, x] = o.useState(void 0);
-  return (0, u.KT)(p), (0, r.jsxs)(a.Z, {
+  return (0, d.KT)(p), (0, r.jsxs)(a.Z, {
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)(c.m, {
@@ -49,7 +49,7 @@ function p(e) {
       })
     }), (0, r.jsx)(i.IGR, {
       className: m.new,
-      text: d.NW.string(d.t.y2b7CA)
+      text: u.NW.string(u.t.y2b7CA)
     })]
   })
 }

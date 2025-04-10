@@ -12,10 +12,10 @@ var r = t(200651),
 function c(e) {
   let {
     guildId: n
-  } = e, [t, c] = (0, s.US)([o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK], void 0, !1), u = (0, i.Z)(n);
-  return u.length > 0 ? (0, r.jsx)(l.Z, {
+  } = e, [t, c] = (0, s.US)([o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK], void 0, !1), d = (0, i.Z)(n);
+  return d.length > 0 ? (0, r.jsx)(l.Z, {
     guildId: n,
-    powerups: u
+    powerups: d
   }) : null != t && t === o.z.GUILD_POWERUPS_OVERVIEW_SIDEBAR_COACHMARK ? (0, r.jsx)(a.Z, {
     markAsDismissed: c
   }) : null

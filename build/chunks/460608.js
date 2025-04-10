@@ -1,37 +1,42 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => x
 }), t(642613);
 var r = t(200651),
   o = t(192379),
-  s = t(793030),
-  i = t(442837),
-  a = t(179360),
-  l = t(899667),
-  c = t(430824),
+  s = t(597312),
+  i = t(793030),
+  a = t(442837),
+  l = t(179360),
+  c = t(899667),
+  d = t(430824),
   u = t(659679),
-  d = t(388032),
-  m = t(211886);
+  m = t(388032),
+  p = t(211886);
 
-function p(e) {
+function x(e) {
   let {
     guildId: n
-  } = e, t = (0, i.Wu)([l.Z], () => {
+  } = e, t = (0, a.Wu)([c.Z], () => {
     var e;
-    return null != (e = l.Z.getAppliedGuildBoostsForGuild(n)) ? e : []
-  }, [n]), p = o.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), x = (0, i.e7)([c.Z], () => {
+    return null != (e = c.Z.getAppliedGuildBoostsForGuild(n)) ? e : []
+  }, [n]), x = o.useMemo(() => t.sort((e, n) => e.id < n.id ? 1 : -1), [t]), _ = (0, a.e7)([d.Z], () => {
     var e;
-    return null == (e = c.Z.getGuild(n)) ? void 0 : e.premiumSubscriberCount
+    return null == (e = d.Z.getGuild(n)) ? void 0 : e.premiumSubscriberCount
   });
   return (o.useEffect(() => {
-    x !== t.length && (0, a.C0)(n)
-  }, [n, x, t.length]), 0 === p.length) ? null : (0, r.jsxs)("div", {
-    className: m.container,
-    children: [(0, r.jsx)(s.X6, {
+    _ !== t.length && (0, l.C0)(n)
+  }, [n, _, t.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(i.X6, {
+      className: p.header,
       variant: "eyebrow",
-      children: d.NW.string(d.t.yM9Krq)
-    }), p.map((e, n) => (0, r.jsx)(u.Z, {
-      boost: e
-    }, "boost-activity-".concat(n)))]
+      children: m.NW.string(m.t.yM9Krq)
+    }), (0, r.jsx)(s.zJ, {
+      className: p.container,
+      fade: !0,
+      children: x.map((e, n) => (0, r.jsx)(u.Z, {
+        boost: e
+      }, "boost-activity-".concat(n)))
+    })]
   })
 }

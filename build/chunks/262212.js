@@ -1,7 +1,7 @@
 /** Chunk was on 99014 **/
 n.d(t, {
   Nn: () => x,
-  ZP: () => I,
+  ZP: () => y,
   ms: () => v
 });
 var r = n(200651),
@@ -118,15 +118,15 @@ function x(e) {
   let {
     onActivate: v,
     isLoading: x,
-    error: I,
-    onShowDeactivate: y
+    error: y,
+    onShowDeactivate: I
   } = (0, d.ZP)(t, n), N = null != (0, l.Z)(t, n), {
     disabled: k,
     reason: h
   } = (0, i.Z)(t, n, N);
   return o.useEffect(() => {
-    null == u || u(I)
-  }, [I, u]), (0, r.jsx)(c.ua7, {
+    null == u || u(y)
+  }, [y, u]), (0, r.jsx)(c.ua7, {
     delay: 100,
     "aria-label": null != h ? h : N ? b.NW.string(f.Z.TZsu1d) : void 0,
     text: null != h ? h : N ? (0, r.jsxs)("div", {
@@ -144,13 +144,13 @@ function x(e) {
     children: e => (0, r.jsx)(c.zxk, j(O(j(O({}, e), {
       className: m.secondaryButton,
       innerClassName: m.buttonInner,
-      wrapperClassName: s()({
+      wrapperClassName: s()(m.secondaryButton, {
         [m.buttonWrapper]: !0 === p.grow
       }),
       color: N ? c.Ttl.PRIMARY : c.Ttl.BRAND,
       "aria-label": b.NW.string(N ? f.Z.TZsu1d : f.Z.gSxlHR),
       disabled: k,
-      onClick: N ? y : v,
+      onClick: N ? I : v,
       submitting: x
     }), p), {
       children: (0, r.jsx)(_, {
@@ -162,7 +162,7 @@ function x(e) {
   })
 }
 
-function I(e) {
+function y(e) {
   let {
     className: t,
     guildId: n,

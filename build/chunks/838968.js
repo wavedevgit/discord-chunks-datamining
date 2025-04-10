@@ -11,8 +11,8 @@ var o = t(120356),
   a = t(690786),
   l = t(192371),
   c = t(279604),
-  u = t(680278),
-  d = t(388032),
+  d = t(680278),
+  u = t(388032),
   m = t(117172);
 
 function p(e) {
@@ -27,7 +27,7 @@ function p(e) {
     }), (0, r.jsx)(i.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
-      children: d.NW.formatToMarkdownString(u.Z["ol/ao6"], {
+      children: u.NW.formatToMarkdownString(d.Z["ol/ao6"], {
         dateString: (0, l.Z)(n)
       })
     })]
@@ -62,7 +62,7 @@ function x(e) {
       }), (0, r.jsx)(i.Text, {
         color: "text-positive",
         variant: "text-sm/bold",
-        children: d.NW.string(u.Z.FFLkm5)
+        children: u.NW.string(d.Z.FFLkm5)
       })]
     }))]
   })
@@ -74,14 +74,14 @@ function _(e) {
     powerup: t,
     className: o,
     children: l
-  } = e, u = (0, a.Z)(n, t), d = null != u, p = (null == u ? void 0 : u.ends_at) != null, {
+  } = e, d = (0, a.Z)(n, t), u = null != d, p = (null == d ? void 0 : d.ends_at) != null, {
     onShowMore: x
   } = (0, c.ZP)(n, t);
   return (0, r.jsx)(i.kL8, {
     "aria-label": t.title,
     onClick: x,
     className: s()(m.container, {
-      [m.active]: d,
+      [m.active]: u,
       [m.warning]: p
     }, o),
     children: l

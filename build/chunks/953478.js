@@ -10,8 +10,8 @@ var o = t(793030),
   a = t(678558),
   l = t(343649),
   c = t(430824),
-  u = t(63063),
-  d = t(317169),
+  d = t(63063),
+  u = t(317169),
   m = t(639660),
   p = t(767218),
   x = t(981631),
@@ -26,7 +26,7 @@ function f(e) {
     available: f,
     spent: b,
     total: j
-  } = (0, d.Z)(n);
+  } = (0, u.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
     className: v.container,
     children: [(0, r.jsxs)("div", {
@@ -38,7 +38,7 @@ function f(e) {
         className: v.learnMore,
         variant: "text-xs/semibold",
         children: g.NW.format(_.Z.fXE30d, {
-          helpDeskArticle: u.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
+          helpDeskArticle: d.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
