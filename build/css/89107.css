@@ -1,6 +1,6 @@
 /**
   Module ID: 89107
-  Original File Name: 610c2027512985b7
+  Original File Name: e594cd1100dbe35a
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -12780,6 +12780,14 @@ div.profileThemedContainer__656be {
     margin: 0 var(--space-8) var(--space-8)
 }
 
+.visual-refresh .channelTextAreaWithTypingIndicator_fb64c9 {
+    margin: 0 var(--space-8) var(--space-24)
+}
+
+.visual-refresh .typingIndicator_fb64c9 {
+    right: var(--space-24)
+}
+
 .visual-refresh .channelTextAreaInner_fb64c9>div>div {
     min-height: 0!important
 }
@@ -14103,4 +14111,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=610c2027512985b7.css.map*/
+/*# sourceMappingURL=e594cd1100dbe35a.css.map*/
