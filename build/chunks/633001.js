@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => z
+  Z: () => B
 }), n(388685), n(539854), n(583741);
 var r = n(200651),
   a = n(192379),
@@ -259,7 +259,7 @@ function D(e) {
   })
 }
 
-function B(e) {
+function z(e) {
   let t = Z(Object.values((0, s.Wu)([g.Z], () => g.Z.getWidgetsForLayout(T.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
@@ -272,10 +272,10 @@ function B(e) {
   }]
 }
 
-function z() {
+function B() {
   var e, t;
-  let [n, l] = B(N.Odu.CLICK_ZONE_DEBUG), [o, d] = B(N.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, z] = a.useState(E), M = e => {
-    z(e), u.Z.forceRenderMode(e)
+  let [n, l] = z(N.Odu.CLICK_ZONE_DEBUG), [o, d] = z(N.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, B] = a.useState(E), M = e => {
+    B(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET
@@ -293,7 +293,7 @@ function z() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(w({}, e), {
     label: "".concat(e.label, " ").concat(E === e.value ? "(current)" : "")
-  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), F = (0, s.e7)([j.default], () => j.default.getFocusedPID()), W = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), F = (0, s.e7)([j.default], () => j.default.getFocusedPID()), H = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), W = (0, O.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(W), [W]), [X, K] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   a.useEffect(() => {
     Z(e => {
       for (let t of Object.keys(G)) e[Number(t)] = G[Number(t)];
@@ -519,11 +519,11 @@ function z() {
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["isFocusedPidOutOfProcess: ", W ? "Yes" : "No"]
+            children: ["isFocusedPidOutOfProcess: ", H ? "Yes" : "No"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-primary",
-            children: ["processPid: ", null != (t = null == H ? void 0 : H.toString()) ? t : "unknown"]
+            children: ["processPid: ", null != (t = null == W ? void 0 : W.toString()) ? t : "unknown"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => R
+  default: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -41,8 +41,8 @@ function C(e) {
     isTryItOutFlow: S,
     guild: C
   } = e, {
-    pendingAvatarDecoration: R,
-    setPendingAvatarDecoration: P,
+    pendingAvatarDecoration: P,
+    setPendingAvatarDecoration: R,
     savedAvatarDecoration: w
   } = (0, g.Z)({
     analyticsLocations: l,
@@ -52,14 +52,14 @@ function C(e) {
     var e, t;
     if (null != E) return E;
     let r = (0, u.iC)(o, n);
-    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== R ? R : null == w ? null : null != (t = r.find(e => (0, v.sr)(e, w))) ? t : null
+    return null != b ? null != (e = r.find(e => e.id === b)) ? e : null : void 0 !== P ? P : null == w ? null : null != (t = r.find(e => (0, v.sr)(e, w))) ? t : null
   }), {
     product: x,
     purchase: M
-  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, v.sr)(D, void 0 === R ? w : R), B = e => {
+  } = (0, d.Z)(null == D ? void 0 : D.skuId), k = y.ZP.canUseCollectibles(t), j = i.useRef(null), U = (0, _.Z)(l), G = (0, v.sr)(D, void 0 === P ? w : P), B = e => {
     L(e), null != e && U(e)
   }, V = () => {
-    P(D), f()
+    R(D), f()
   }, F = i.useCallback(e => {
     f(), (0, c.mK)({
       analyticsLocations: l,
@@ -122,7 +122,7 @@ function C(e) {
   })
 }
 
-function R(e) {
+function P(e) {
   let {
     transitionState: t,
     analyticsLocations: n,

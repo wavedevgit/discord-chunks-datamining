@@ -97,17 +97,17 @@ function C(e) {
     channelId: I,
     parsedUserId: T,
     content: C,
-    inlinePreview: R = !1,
-    viewingChannelId: P
+    inlinePreview: P = !1,
+    viewingChannelId: R
   } = e, {
     analyticsLocations: w
-  } = (0, c.ZP)(l.Z.USER_MENTION), D = (0, a.e7)([b.default], () => b.default.getUser(d)), L = (0, a.e7)([h.Z], () => h.Z.getChannel(I)), x = null != L ? L.getGuildId() : null, M = R || null == D || null == x || null == I ? void 0 : e => {
+  } = (0, c.ZP)(l.Z.USER_MENTION), D = (0, a.e7)([b.default], () => b.default.getUser(d)), L = (0, a.e7)([h.Z], () => h.Z.getChannel(I)), x = null != L ? L.getGuildId() : null, M = P || null == D || null == x || null == I ? void 0 : e => {
     null != L && (0, s.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("94342"), n.e("79695"), n.e("13351"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("20204")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, N(S({}, t), {
-        viewingChannelId: P,
+        viewingChannelId: R,
         user: D,
         channel: L,
         guildId: x
@@ -129,7 +129,7 @@ function C(e) {
   }, e), {
     children: "@".concat(null != j ? j : k)
   }));
-  return R ? (0, r.jsx)(c.Gt, {
+  return P ? (0, r.jsx)(c.Gt, {
     value: w,
     children: H()
   }) : (0, r.jsx)(c.Gt, {

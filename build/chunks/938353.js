@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   $p: () => e2,
   BB: () => e1,
@@ -34,8 +34,8 @@ var r, i = n(200651),
   A = n(10433),
   w = n(715903),
   Z = n(71619),
-  k = n(637618),
-  R = n(225890),
+  R = n(637618),
+  k = n(225890),
   D = n(364097),
   L = n(495129),
   M = n(939170),
@@ -88,8 +88,8 @@ var r, i = n(200651),
   eA = n(782658),
   ew = n(219797),
   eZ = n(453687),
-  ek = n(128854),
-  eR = n(101578),
+  eR = n(128854),
+  ek = n(101578),
   eD = n(524444),
   eL = n(319323),
   eM = n(884182),
@@ -266,7 +266,7 @@ class e1 extends(r = a.Component) {
       if (n === O.g.TEMPLATE) return (0, i.jsx)(D.Z, {
         code: r
       }, r);
-      if (n === O.g.EVENT) return (0, i.jsx)(R.Z, {
+      if (n === O.g.EVENT) return (0, i.jsx)(k.Z, {
         code: r
       }, r);
       if (n === O.g.CHANNEL_LINK) return (0, i.jsx)(eS.Z, {
@@ -292,7 +292,7 @@ class e1 extends(r = a.Component) {
           linkId: u,
           embedUrl: a
         }, r)
-      } else if (n === O.g.GUILD_PRODUCT) return (0, i.jsx)(k.Z, {
+      } else if (n === O.g.GUILD_PRODUCT) return (0, i.jsx)(R.Z, {
         code: r
       }, r);
       else if (n === O.g.SERVER_SHOP) return (0, i.jsx)(N.Z, {
@@ -492,7 +492,7 @@ class e1 extends(r = a.Component) {
       disableComponentInteractivity: a,
       onMediaItemContextMenu: l
     } = this.props;
-    return (0, i.jsx)(ek.F, {
+    return (0, i.jsx)(eR.F, {
       gifAutoPlay: t,
       getGifFavButton: e0,
       getOnMediaItemContextMenu: null == l ? void 0 : e => t => {
@@ -511,7 +511,7 @@ class e1 extends(r = a.Component) {
     let {
       channel: t
     } = this.props;
-    return (0, i.jsx)(eR.Z, {
+    return (0, i.jsx)(ek.Z, {
       channel: t,
       message: e,
       hideParty: !1
@@ -794,14 +794,14 @@ function e3(e) {
     communicationDisabled: v,
     isActiveChannelOrUnarchivableThread: E,
     isAutomodQuarantined: y
-  }), T = (0, B.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, z.Z)(null == n ? void 0 : n.id), A = (0, X.Z)(r), k = (0, C.V)(n.id, r.author.id), R = (0, eO._)(n), D = (0, ex.ro)(r.id, r.channel_id);
+  }), T = (0, B.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), P = (0, z.Z)(null == n ? void 0 : n.id), A = (0, X.Z)(r), R = (0, C.V)(n.id, r.author.id), k = (0, eO._)(n), D = (0, ex.ro)(r.id, r.channel_id);
   return (0, i.jsx)(e1, eX(eY(eX(eY({
     canSuppressEmbeds: O,
     canDeleteAttachments: N
   }, I), {
     disableReactionReads: !!S || I.disableReactionReads
   }), e), {
-    hasSpoilerEmbeds: e.hasSpoilerEmbeds && R,
+    hasSpoilerEmbeds: e.hasSpoilerEmbeds && k,
     isLurking: h && f,
     isGuest: g && f,
     isPendingMember: _ && f,
@@ -815,7 +815,7 @@ function e3(e) {
     showListsAndHeaders: T,
     showMaskedLinks: T,
     shouldHideMediaOptions: P,
-    shouldRedactExplicitContent: k,
+    shouldRedactExplicitContent: R,
     ctaButtonType: D
   }))
 }

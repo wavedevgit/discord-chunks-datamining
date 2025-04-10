@@ -81,8 +81,8 @@ function y(e, t) {
   let {
     Component: A,
     events: C,
-    play: R
-  } = (0, l.z)(), P = (0, u.Q3)("ChannelStickerPickerButton");
+    play: P
+  } = (0, l.z)(), R = (0, u.Q3)("ChannelStickerPickerButton");
   if (n) return null;
   let w = O;
   return (0, r.jsx)("div", {
@@ -94,7 +94,7 @@ function y(e, t) {
       })
     }, C), {
       onClick: () => {
-        N(), R()
+        N(), P()
       },
       isActive: S,
       "aria-label": p.NW.string(p.t.rZpidX),
@@ -104,7 +104,7 @@ function y(e, t) {
       sparkle: v,
       notification: T ? f.j.UPDATE : null,
       children: (0, r.jsx)(A, {
-        size: P ? "refresh_sm" : void 0,
+        size: R ? "refresh_sm" : void 0,
         color: "currentColor"
       })
     }))

@@ -1,4 +1,4 @@
-/** Chunk was on 92457 **/
+/** Chunk was on 21924 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
@@ -22,7 +22,7 @@ function m(e) {
         is_localized: m
       }
     }
-  } = e, [x, p] = l.useState(!1), f = l.useRef(s.Z.reactParserFor(s.Z.defaultRules));
+  } = e, [x, p] = l.useState(!1), b = l.useRef(s.Z.reactParserFor(s.Z.defaultRules));
   return m ? (0, r.jsxs)("div", {
     className: u.container,
     children: [(0, r.jsx)(o.X6q, {
@@ -33,7 +33,7 @@ function m(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       className: u.bodyText,
-      children: f.current(n)
+      children: b.current(n)
     }), (0, r.jsx)("div", {
       children: (0, r.jsxs)("div", {
         className: a()(u.smsNumberContainer, {

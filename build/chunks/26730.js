@@ -1,10 +1,10 @@
-/** Chunk was on 11212 **/
+/** Chunk was on web.js **/
 "use strict";
-a.r(e), a.d(e, {
-  default: () => d,
-  metadata: () => c
+n.r(t), n.d(t, {
+  default: () => i,
+  metadata: () => r
 });
-let c = {
+let r = {
     fileBytes: 152482
   },
-  d = "https://cdn.discordapp.com/assets/content/e745a226b2cb0dd71355ff11b1b131261a5e0d55d6ea5728f9259891f5551dad.jpg"
+  i = "https://cdn.discordapp.com/assets/content/e745a226b2cb0dd71355ff11b1b131261a5e0d55d6ea5728f9259891f5551dad.jpg"

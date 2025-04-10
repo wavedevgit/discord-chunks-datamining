@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => eb
 }), n(388685);
@@ -41,9 +41,9 @@ var r = n(200651),
   W = n(314897),
   U = n(131951),
   B = n(496675),
-  H = n(944486),
-  G = n(594174),
-  F = n(881824),
+  G = n(944486),
+  F = n(594174),
+  H = n(881824),
   V = n(471253),
   z = n(922482),
   Y = n(200498),
@@ -90,7 +90,7 @@ function ec(e) {
 let eu = i.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, a.e7)([H.Z], () => H.Z.getVoiceChannelId() === t.id, [t.id]), i = (0, P.Z)({
+  } = e, n = (0, a.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), i = (0, P.Z)({
     location: "AudienceControlTray"
   }), {
     coloredIconsEnabled: l,
@@ -166,7 +166,7 @@ function ep(e) {
     onSelect: n
   } = e, i = (0, u.bp)(), {
     canManageGuildEvent: l
-  } = (0, O.XJ)(t), h = (0, a.e7)([X.Z], () => X.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, a.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == h ? void 0 : h.guild_scheduled_event_id)), m = (0, a.e7)([H.Z], () => H.Z.getVoiceChannelId() === t.id, [t.id]), {
+  } = (0, O.XJ)(t), h = (0, a.e7)([X.Z], () => X.Z.getStageInstanceByChannel(t.id), [t.id]), f = (0, a.e7)([x.ZP], () => x.ZP.getGuildScheduledEvent(null == h ? void 0 : h.guild_scheduled_event_id)), m = (0, a.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), {
     suppress: g
   } = (0, Z.Z)(t), y = W.default.getId(), [C] = (0, ei.Z)(t), v = K.ZP.isModerator(y, t.id), j = (0, Y.B)(t.id), E = l(f), N = (0, P.Z)({
     location: "ExitStageButton"
@@ -198,7 +198,7 @@ function ep(e) {
       channel: t,
       appContext: n
     } = e;
-    if ((0, b.v)(d.Z.VOICE_CONTROL_TRAY, b.d.DISCONNECT), (0, et.Z)(t)) return void(0, F.Us)(t, n);
+    if ((0, b.v)(d.Z.VOICE_CONTROL_TRAY, b.d.DISCONNECT), (0, et.Z)(t)) return void(0, H.Us)(t, n);
     c.default.disconnect()
   })({
     channel: t,
@@ -221,7 +221,7 @@ function ep(e) {
           children: (0, r.jsx)(s.sNh, {
             id: "end-stage",
             color: "danger",
-            action: () => (0, F.Ev)(t, i),
+            action: () => (0, H.Ev)(t, i),
             label: ea.NW.string(ea.t.Fmx5y8),
             icon: s.k$p
           })
@@ -351,7 +351,7 @@ let em = i.memo(function(e) {
   } = (0, N.Z)(), v = (0, S.Z)(t), {
     limit: j,
     reachedLimit: O
-  } = (0, I.Z)(t), k = (0, a.e7)([G.default], () => G.default.getCurrentUser()), M = (0, a.e7)([U.Z], () => (0, C.Z)(U.Z)), W = (0, a.e7)([H.Z], () => H.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), F = (0, Q.PK)(t.id), V = j > 0, z = O && !F || null != B && B.user.id !== (null == k ? void 0 : k.id), q = (0, P.Z)({
+  } = (0, I.Z)(t), k = (0, a.e7)([F.default], () => F.default.getCurrentUser()), M = (0, a.e7)([U.Z], () => (0, C.Z)(U.Z)), W = (0, a.e7)([G.Z], () => G.Z.getVoiceChannelId() === t.id, [t.id]), B = (0, a.e7)([h.Z], () => h.Z.getStreamParticipants(t.id)[0], [t.id]), H = (0, Q.PK)(t.id), V = j > 0, z = O && !H || null != B && B.user.id !== (null == k ? void 0 : k.id), q = (0, P.Z)({
     location: "SpeakerControlTray"
   }), {
     coloredIconsEnabled: K,

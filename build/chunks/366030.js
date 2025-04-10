@@ -1,36 +1,36 @@
-/** Chunk was on 86328 **/
+/** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => L
+  Z: () => B
 }), n(953529), n(472816), n(794429), n(388685);
 var r = n(200651),
   o = n(192379),
   a = n(512722),
   i = n.n(a),
   s = n(392711),
-  c = n.n(s),
-  l = n(442837),
+  l = n.n(s),
+  c = n(442837),
   u = n(692547),
   d = n(780384),
   p = n(481060),
   g = n(749210),
   m = n(99690),
   f = n(410030),
-  _ = n(726542),
-  b = n(367907),
-  h = n(906732),
-  y = n(385499),
-  v = n(171368),
-  O = n(598077),
-  x = n(271383),
-  j = n(626135),
+  b = n(726542),
+  h = n(367907),
+  y = n(906732),
+  _ = n(385499),
+  O = n(171368),
+  v = n(598077),
+  j = n(271383),
+  x = n(626135),
   C = n(275759),
   P = n(107484),
-  T = n(977392),
-  N = n(134433),
-  I = n(753194),
-  w = n(458034),
-  S = n(856651),
+  N = n(977392),
+  T = n(134433),
+  w = n(753194),
+  S = n(458034),
+  I = n(856651),
   k = n(981631),
   M = n(228168),
   R = n(388032),
@@ -64,13 +64,13 @@ function A(e) {
     description: s
   } = e;
   if (null != s) switch (a) {
-    case S.iO.LESS_THAN:
+    case I.iO.LESS_THAN:
       t = R.NW.format(R.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) - 1)
       });
       break;
-    case S.iO.GREATER_THAN:
+    case I.iO.GREATER_THAN:
       t = R.NW.format(R.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(i) + 1)
@@ -101,23 +101,23 @@ function A(e) {
 function D(e) {
   let {
     eligibilityStates: t
-  } = e, n = (0, f.ZP)(), o = (0, p.dQu)(u.Z.unsafe_rawColors.GREEN_330).hex(), a = c().groupBy(t, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : ""));
+  } = e, n = (0, f.ZP)(), o = (0, p.dQu)(u.Z.unsafe_rawColors.GREEN_330).hex(), a = l().groupBy(t, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : ""));
   return (0, r.jsx)(r.Fragment, {
     children: Object.keys(a).map(e => {
       var t, s;
-      let c, l = a[e],
-        u = l.filter(e => null != e.operator),
-        g = l.find(e => null != e.application),
-        f = _.Z.get(e),
-        b = null == g ? void 0 : g.application,
-        h = (null == b ? void 0 : b.bot) != null ? new O.Z(b.bot) : null;
-      return C.SJ.includes(null != (t = null == b ? void 0 : b.id) ? t : "") ? c = (0, r.jsx)(I.Z, {
+      let l, c = a[e],
+        u = c.filter(e => null != e.operator),
+        g = c.find(e => null != e.application),
+        f = b.Z.get(e),
+        h = null == g ? void 0 : g.application,
+        y = (null == h ? void 0 : h.bot) != null ? new v.Z(h.bot) : null;
+      return C.SJ.includes(null != (t = null == h ? void 0 : h.id) ? t : "") ? l = (0, r.jsx)(w.Z, {
         className: E.botTag,
         color: o,
         size: 16
-      }) : null != h && (c = (0, r.jsx)(y.Z, {
+      }) : null != y && (l = (0, r.jsx)(_.Z, {
         className: E.botTag,
-        verified: h.isVerifiedBot()
+        verified: y.isVerifiedBot()
       })), (0, r.jsxs)("div", {
         className: E.popoutChecksGroup,
         children: [(0, r.jsxs)("div", {
@@ -126,15 +126,15 @@ function D(e) {
             src: (0, d.wj)(n) ? f.icon.darkSVG : f.icon.lightSVG,
             alt: "",
             className: E.popoutCheckGroupPlatformIcon
-          }) : null, null != h ? (0, r.jsx)(m.Z, {
-            user: h,
+          }) : null, null != y ? (0, r.jsx)(m.Z, {
+            user: y,
             size: p.EFr.SIZE_20,
             className: E.popoutCheckGroupPlatformIcon
           }) : null, (0, r.jsx)(p.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
-            children: null != (s = null == f ? void 0 : f.name) ? s : null == b ? void 0 : b.name
-          }), c]
+            children: null != (s = null == f ? void 0 : f.name) ? s : null == h ? void 0 : h.name
+          }), l]
         }), u.map(e => {
           let {
             connection_type: t,
@@ -156,26 +156,26 @@ function D(e) {
   })
 }
 
-function B(e) {
+function L(e) {
   let t, {
     onGetRolesClicked: n,
     onOpenProfile: a,
     eligibilityStates: i,
     userId: s,
-    roleId: c,
+    roleId: l,
     channelId: u,
     guildId: d
   } = e;
   o.useEffect(() => {
-    j.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
+    x.default.track(k.rMx.PASSPORT_ROLE_POPOUT_VIEWED, Z({
       other_user_id: s,
-      role_id: c
-    }, (0, b.JS)(u), (0, b.hH)(d)))
-  }, [s, c, u, d]);
-  let g = (0, l.e7)([x.ZP], () => {
+      role_id: l
+    }, (0, h.JS)(u), (0, h.hH)(d)))
+  }, [s, l, u, d]);
+  let g = (0, c.e7)([j.ZP], () => {
     var e, t;
-    return null != (t = null == (e = x.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(c)) && t
-  }, [d, c]);
+    return null != (t = null == (e = j.ZP.getSelfMember(d)) ? void 0 : e.roles.includes(l)) && t
+  }, [d, l]);
   return t = 1 === i.length && 1 === i[0].length ? R.NW.string(R.t.jDym4O) : 1 === i.length ? R.NW.format(R.t["0eBj39"], {}) : R.NW.format(R.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: E.popout,
     children: [(0, r.jsx)("div", {
@@ -207,44 +207,44 @@ function B(e) {
   })
 }
 
-function L(e) {
+function B(e) {
   let {
     userId: t,
     messageId: n,
     guild: a,
     channel: s
   } = e, {
-    analyticsLocations: c
-  } = (0, h.ZP)(), u = (0, T.Z)(a, t, s.id, !0), d = (0, l.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d);
+    analyticsLocations: l
+  } = (0, y.ZP)(), u = (0, N.Z)(a, t, s.id, !0), d = (0, c.e7)([P.Z], () => P.Z.getGuildRoleConnectionEligibility(null == u ? void 0 : u.id)), [m, f] = o.useState(null == d);
   if (null == u) return null;
-  async function _() {
+  async function b() {
     i()(null != u, "visibleConnectionsRole is null"), m && null == d && (await g.Z.fetchGuildRoleConnectionsEligibility(a.id, u.id), f(!1))
   }
   return (0, r.jsx)(p.KeG, {
-    onRequestOpen: _,
+    onRequestOpen: b,
     renderPopout: function() {
       return Promise.resolve(e => {
         let {
           closePopout: o
         } = e;
-        return null == d ? (0, r.jsx)(r.Fragment, {}) : (i()(null != u, "visibleConnectionsRole is null"), (0, r.jsx)(B, {
+        return null == d ? (0, r.jsx)(r.Fragment, {}) : (i()(null != u, "visibleConnectionsRole is null"), (0, r.jsx)(L, {
           eligibilityStates: d,
           userId: t,
           roleId: u.id,
           channelId: s.id,
           guildId: a.id,
           onGetRolesClicked: () => {
-            (0, w.Am)(a.id)
+            (0, S.Am)(a.id)
           },
           onOpenProfile: () => {
-            (0, v.openUserProfileModal)({
+            (0, O.openUserProfileModal)({
               userId: t,
               messageId: n,
               guildId: a.id,
               channelId: s.id,
               roleId: u.id,
               subsection: M.Tb.CONNECTIONS,
-              sourceAnalyticsLocations: c,
+              sourceAnalyticsLocations: l,
               analyticsLocation: {
                 section: k.jXE.CHANNEL
               }
@@ -262,7 +262,7 @@ function L(e) {
         return (0, r.jsxs)("div", (n = Z({
           className: E.badge
         }, t, e), o = o = {
-          children: [(0, r.jsx)(N.Z, {
+          children: [(0, r.jsx)(T.Z, {
             className: E.badgeVerifiedIcon,
             size: 16,
             color: u.colorString

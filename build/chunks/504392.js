@@ -15,15 +15,15 @@ var r = t(200651),
   p = t(27237),
   x = t(51859),
   _ = t(953478),
-  v = t(460608),
-  g = t(279604),
+  g = t(460608),
+  v = t(279604),
   f = t(332538),
-  j = t(535396),
-  b = t(921944),
+  b = t(535396),
+  j = t(921944),
   h = t(680278),
   C = t(388032),
-  Z = t(782285);
-let N = [j.Us.LEVEL, j.Us.PERK];
+  N = t(782285);
+let Z = [b.Us.LEVEL, b.Us.PERK];
 
 function I(e) {
   let {
@@ -34,7 +34,7 @@ function I(e) {
     (0, d.Sn)(n), (0, d.Fm)(n)
   }, [n]), o.useEffect(() => {
     var e;
-    (0, d.jd)(n), null == s || null == (e = s.popout) || e.markAsDismissed(b.L.AUTO_DISMISS)
+    (0, d.jd)(n), null == s || null == (e = s.popout) || e.markAsDismissed(j.L.AUTO_DISMISS)
   }, [n, s]);
   let I = (0, a.e7)([m.Z], () => m.Z.getStateForGuild(n)),
     E = o.useRef(!1);
@@ -42,11 +42,11 @@ function I(e) {
     var e, r;
     if (null == t) return;
     let o = null == I || null == (r = I.powerups) || null == (e = r.get) ? void 0 : e.call(r, t);
-    null == o || E.current || ((0, g.KE)(n, o), E.current = !0)
+    null == o || E.current || ((0, v.KE)(n, o), E.current = !0)
   }, [n, t, null == I ? void 0 : I.powerups]), (null == I ? void 0 : I.catalog) == null) ? null : (0, r.jsxs)("div", {
-    className: Z.container,
+    className: N.container,
     children: [(0, r.jsxs)(u.Z, {
-      className: Z.toolbar,
+      className: N.toolbar,
       hideSearch: !0,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(u.Z.Icon, {
@@ -57,10 +57,10 @@ function I(e) {
         children: C.NW.string(h.Z.yv3DJC)
       })]
     }), (0, r.jsxs)("div", {
-      className: Z.contentContainer,
+      className: N.contentContainer,
       children: [(0, r.jsx)("div", {
-        className: Z.powerupsContainer,
-        children: N.map(e => {
+        className: N.powerupsContainer,
+        children: Z.map(e => {
           let t = I.catalog.get(e);
           if (null == t) return;
           let {
@@ -68,26 +68,26 @@ function I(e) {
             description: s
           } = function(e) {
             switch (e) {
-              case j.Us.LEVEL:
+              case b.Us.LEVEL:
                 return {
                   title: C.NW.string(h.Z["TXY/b2"]), description: C.NW.string(h.Z.aJv4PD)
                 };
-              case j.Us.PERK:
+              case b.Us.PERK:
                 return {
                   title: C.NW.string(h.Z.TV3Vm5), description: C.NW.string(h.Z.NHjM1t)
                 }
             }
           }(e);
           return (0, r.jsxs)("div", {
-            className: Z.powerupsSection,
+            className: N.powerupsSection,
             children: [(0, r.jsxs)("div", {
               children: [(0, r.jsxs)("div", {
-                className: Z.headerContainer,
+                className: N.headerContainer,
                 children: [(0, r.jsx)(l.X6q, {
                   color: "header-primary",
                   variant: "heading-lg/semibold",
                   children: o
-                }), e === j.Us.PERK && (0, r.jsx)(l.IGR, {
+                }), e === b.Us.PERK && (0, r.jsx)(l.IGR, {
                   text: C.NW.string(C.t.oW0eUV),
                   color: c.Z.BG_BRAND
                 })]
@@ -97,19 +97,19 @@ function I(e) {
                 children: s
               })]
             }), (0, r.jsx)("div", {
-              className: i()(Z.powerupContainer, {
-                [Z.powerupsLevelContainer]: e === j.Us.LEVEL
+              className: i()(N.powerupContainer, {
+                [N.powerupsLevelContainer]: e === b.Us.LEVEL
               }),
               children: t.map((e, o) => {
                 switch (e.type) {
-                  case j.Us.LEVEL:
+                  case b.Us.LEVEL:
                     return (0, r.jsx)(p.ZP, {
                       guildId: n,
                       index: o,
                       powerup: e,
                       nextPowerup: t[o + 1]
                     }, "powerup-".concat(e.skuId));
-                  case j.Us.PERK:
+                  case b.Us.PERK:
                     return (0, r.jsx)(x.Z, {
                       guildId: n,
                       powerup: e
@@ -120,10 +120,10 @@ function I(e) {
           }, "section-".concat(e))
         })
       }), (0, r.jsxs)("div", {
-        className: Z.sidebarContainer,
+        className: N.sidebarContainer,
         children: [(0, r.jsx)(_.Z, {
           guildId: n
-        }), (0, r.jsx)(v.Z, {
+        }), (0, r.jsx)(g.Z, {
           guildId: n
         })]
       })]

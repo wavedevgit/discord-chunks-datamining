@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685), n(997841);
 var r, i = n(442837),
   o = n(570140),
@@ -158,7 +158,7 @@ class C extends(r = i.ZP.Store) {
   }
 }
 l(C, "displayName", "InviteStore");
-let R = new C(o.Z, {
+let P = new C(o.Z, {
   INVITE_RESOLVE: m,
   INVITE_RESOLVE_SUCCESS: g,
   INVITE_RESOLVE_FAILURE: v,

@@ -2,7 +2,7 @@
 r.d(t, {
   YP: () => f,
   ZP: () => b,
-  aN: () => h
+  aN: () => m
 });
 var n = r(200651);
 r(192379);
@@ -69,7 +69,7 @@ function p(e) {
   })
 }
 
-function h() {
+function m() {
   return (0, n.jsx)(i.P4T, {
     size: "xs",
     color: "currentColor",
@@ -77,7 +77,7 @@ function h() {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     roleName: t
   } = e;
@@ -140,7 +140,7 @@ function b(e) {
   return null === t ? (0, n.jsxs)(i.xJW, {
     title: (0, n.jsxs)("div", {
       className: g.warningTitle,
-      children: [(0, n.jsx)(h, {}), (0, n.jsx)(i.LZC, {
+      children: [(0, n.jsx)(m, {}), (0, n.jsx)(i.LZC, {
         horizontal: !0,
         size: 4
       }), u.NW.string(u.t.ovXIrK)]
@@ -224,7 +224,7 @@ function b(e) {
                 return e
               }({
                 title: u.NW.string(u.t.Y3Hi3d),
-                body: (0, n.jsx)(m, {
+                body: (0, n.jsx)(h, {
                   roleName: A
                 }),
                 cta: u.NW.string(u.t.VawZV1),

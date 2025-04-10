@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Tk: () => T,
   ZP: () => P,
@@ -99,9 +99,9 @@ function T(e, t) {
     A = m && N && (!S || x || P),
     w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? void 0 : n.call(r),
     Z = null != w ? d.ZP.getSelfMember(w) : null,
-    k = (0, s.EY)(Z),
-    R = (0, c.b)(Z),
-    D = !b && C && !T && m && !k && !R;
+    R = (0, s.EY)(Z),
+    k = (0, c.b)(Z),
+    D = !b && C && !T && m && !R && !k;
   return {
     poll: o,
     canTapAnswers: A,
@@ -147,8 +147,8 @@ function P(e, t) {
   if (null == w) return;
   let {
     canTapAnswers: Z,
-    canRemoveVote: k,
-    canShowVoteCounts: R,
+    canRemoveVote: R,
+    canShowVoteCounts: k,
     canSubmitVote: D,
     expirationLabel: L = N.NW.string(N.t["e+J3JS"]),
     hasSelectedAnswer: M,
@@ -232,7 +232,7 @@ function P(e, t) {
     canSubmitVote: D,
     hasVoted: W,
     isEditingVote: U,
-    canRemoveVote: k,
+    canRemoveVote: R,
     isInteractive: B,
     showResults: K
   }).with({
@@ -336,7 +336,7 @@ function P(e, t) {
     canTapAnswers: Z,
     canSelectMultipleAnswers: en,
     hasSelectedAnswer: M,
-    canShowVoteCounts: R,
+    canShowVoteCounts: k,
     hasVoted: W,
     isExpired: F,
     myAvatarUrl: I,

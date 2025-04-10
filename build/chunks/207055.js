@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => k
 }), n(388685), n(539854);
@@ -44,12 +44,12 @@ let w = i.memo(e => {
   } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
-  }), U = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
+  }), U = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), G = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
     let {
       userIds: t
     } = e;
     return t.has(w)
-  }), [w, g.id]), G = (0, p.Z)(null != H ? [H.applicationId] : []), F = (0, P.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
+  }), [w, g.id]), F = (0, p.Z)(null != G ? [G.applicationId] : []), H = (0, P.Hr)("voice_users_eligibility_check", !1), V = (0, a.e7)([v.Z, j.Z], () => R ? j.Z.getActivities() : v.Z.getActivities(w, g.guild_id)).find(e => null != e.application_id && e.type === Z.IIU.PLAYING), z = (0, a.e7)([d.Z], () => (null == V ? void 0 : V.application_id) != null ? d.Z.getApplication(null == V ? void 0 : V.application_id) : void 0);
   null != z && P.ZP.trackExposure({
     location: "voice_users"
   });
@@ -87,12 +87,12 @@ let w = i.memo(e => {
       ringing: B,
       disconnected: J,
       priority: D,
-      embeddedApplication: G[0],
+      embeddedApplication: F[0],
       isStreaming: null != Y && Y.channelId === g.id,
       isWatching: null != q && q.state !== Z.jm8.ENDED,
       isGuest: U,
       isSelf: _.default.getId() === s.id,
-      application: F ? z : void 0
+      application: H ? z : void 0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

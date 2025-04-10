@@ -117,7 +117,7 @@ function C(e) {
   }
 }
 
-function R(e) {
+function P(e) {
   var t;
   let {
     nonce: n,
@@ -136,7 +136,7 @@ function R(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -232,9 +232,9 @@ let G = new U(s.Z, {
   INTERACTION_QUEUE: T,
   INTERACTION_CREATE: N,
   INTERACTION_SUCCESS: A,
-  INTERACTION_FAILURE: R,
+  INTERACTION_FAILURE: P,
   MESSAGE_CREATE: C,
-  CHANNEL_SELECT: P,
+  CHANNEL_SELECT: R,
   INTERACTION_IFRAME_MODAL_CREATE: D,
   INTERACTION_IFRAME_MODAL_CLOSE: L,
   INTERACTION_IFRAME_MODAL_KEY_CREATE: x,

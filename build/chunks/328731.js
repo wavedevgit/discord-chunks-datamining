@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => m
+  Z: () => y
 });
 var n = r(200651),
   l = r(120356),
@@ -10,8 +10,8 @@ var n = r(200651),
   c = r(5192),
   s = r(192918),
   u = r(256139),
-  p = r(91907),
-  d = r(866040),
+  d = r(91907),
+  p = r(866040),
   f = r(388032),
   b = r(103395);
 
@@ -34,7 +34,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,13 +47,13 @@ function y(e, t) {
   }), e
 }
 
-function m(e) {
+function y(e) {
   let {
     entry: t,
     channel: r,
     className: l
   } = e, {
-    displayParticipants: m,
+    displayParticipants: y,
     participant1: j,
     participant2: g,
     numOtherParticipants: h,
@@ -61,16 +61,16 @@ function m(e) {
   } = (0, s.Z)(t), P = [j, g];
   return (0, n.jsxs)("div", {
     className: i()(b.container, l),
-    children: [m.length > 0 ? (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)(d.Z, {
+    children: [y.length > 0 ? (0, n.jsxs)(n.Fragment, {
+      children: [(0, n.jsx)(p.Z, {
         participants: v,
         channel: r,
-        children: e => (0, n.jsx)(o.P3F, y(O({
+        children: e => (0, n.jsx)(o.P3F, m(O({
           className: b.clickable
         }, e), {
           children: (0, n.jsx)(a.Z, {
             maxUsers: 3,
-            users: m,
+            users: y,
             size: o.EFr.SIZE_20,
             avatarClassName: b.stackedAvatar,
             hideOverflowCount: !0,
@@ -90,20 +90,20 @@ function m(e) {
         user0: c.ZP.getName(r.guild_id, r.id, P[0]),
         user1: c.ZP.getName(r.guild_id, r.id, P[1]),
         countOthers: h,
-        name0Hook: (e, t) => (0, n.jsx)(p.Z, {
+        name0Hook: (e, t) => (0, n.jsx)(d.Z, {
           text: e,
           user: P[0],
           channel: r
         }, t),
-        name1Hook: (e, t) => (0, n.jsx)(p.Z, {
+        name1Hook: (e, t) => (0, n.jsx)(d.Z, {
           text: e,
           user: P[1],
           channel: r
         }, t),
-        countOthersHook: (e, t) => (0, n.jsx)(d.Z, {
+        countOthersHook: (e, t) => (0, n.jsx)(p.Z, {
           participants: v,
           channel: r,
-          children: t => (0, n.jsx)(u.Z, y(O({}, t), {
+          children: t => (0, n.jsx)(u.Z, m(O({}, t), {
             tag: "span",
             children: (0, n.jsx)(o.Text, {
               variant: "text-sm/semibold",

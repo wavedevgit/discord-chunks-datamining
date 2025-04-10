@@ -8,14 +8,14 @@ n.d(t, {
   HW: () => U,
   Ib: () => es,
   KB: () => eu,
-  S2: () => H,
+  S2: () => W,
   W6: () => er,
   XM: () => ea,
   YC: () => ex,
   YE: () => ei,
   h9: () => eo,
   iw: () => en,
-  jC: () => W,
+  jC: () => H,
   jQ: () => G,
   lT: () => K,
   rd: () => ed,
@@ -56,9 +56,9 @@ var r, a, l = n(192379),
   L = n(525169),
   A = n(433517),
   D = n(190558),
-  B = n(231338);
+  z = n(231338);
 
-function z(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -121,7 +121,7 @@ let U = {
 Object.values(U).forEach(e => I.Z.register(e));
 let {
   SemanticColors: F
-} = D.V, W = F, H = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+} = D.V, H = F, W = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function V(e, t) {
   let [n, r] = l.useState(() => {
@@ -134,10 +134,10 @@ function V(e, t) {
 }
 
 function X(e) {
-  let t = W[e];
+  let t = H[e];
   return {
     name: e,
-    colors: Object.fromEntries(Object.values(B.BR).map(e => [e, {
+    colors: Object.fromEntries(Object.values(z.BR).map(e => [e, {
       color: t[e].raw,
       opacity: t[e].opacity
     }])),
@@ -148,7 +148,7 @@ function X(e) {
 function K(e, t, n, r, a) {
   return {
     name: t,
-    colors: M(z({}, e.colors), {
+    colors: M(B({}, e.colors), {
       [a]: {
         color: n,
         opacity: r
@@ -159,7 +159,7 @@ function K(e, t, n, r, a) {
 }
 
 function Y(e) {
-  return M(z({}, e), {
+  return M(B({}, e), {
     highlight: !e.highlight
   })
 }
@@ -246,55 +246,55 @@ function ea(e) {
 }
 
 function el(e, t, n) {
-  n(n => null == n.scales.find(t => t.name === e) ? n : M(z({}, n), {
+  n(n => null == n.scales.find(t => t.name === e) ? n : M(B({}, n), {
     scales: n.scales.map(n => n.name === e ? t(n) : n)
   }))
 }
 
 function ei(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     darkness: t
   }), n)
 }
 
 function eo(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     lightness: t
   }), n)
 }
 
 function es(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     base: t
   }), n)
 }
 
 function ec(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     colorSpace: t
   }), n)
 }
 
 function ed(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     easingStrength: t
   }), n)
 }
 
 function eu(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     showColumnarPalettePreview: t
   }), n)
 }
 
 function em(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     useP3ColorSpace: t
   }), n)
 }
 
 function ex(e, t, n) {
-  el(e, e => M(z({}, e), {
+  el(e, e => M(B({}, e), {
     steps: t
   }), n)
 }

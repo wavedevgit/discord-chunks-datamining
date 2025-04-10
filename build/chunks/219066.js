@@ -5,12 +5,12 @@ n.d(t, {
 var i = n(192379),
   r = n(392711),
   l = n.n(r),
-  a = n(911969),
-  o = n(254711),
+  o = n(911969),
+  a = n(254711),
   s = n(213459),
   c = n(10718),
-  d = n(148958),
-  u = n(689079);
+  u = n(148958),
+  d = n(689079);
 
 function p(e) {
   var t;
@@ -22,11 +22,11 @@ function p(e) {
   } = c.wi({
     context: n,
     filters: {
-      commandTypes: [a.yU.CHAT, a.yU.PRIMARY_ENTRY_POINT]
+      commandTypes: [o.yU.CHAT, o.yU.PRIMARY_ENTRY_POINT]
     },
     options: {
       placeholderCount: 0,
-      limit: u.tn,
+      limit: d.tn,
       includeFrecency: !0
     },
     allowFetch: !0
@@ -43,17 +43,17 @@ function p(e) {
         descriptor: t
       } = e;
       return t
-    }).filter(e => !(e.id in o.Tm) && h.has(e.id))
-  }, [null == (t = p.result) ? void 0 : t.sections, h]), x = (0, d.h)(b);
+    }).filter(e => !(e.id in a.Tm) && h.has(e.id))
+  }, [null == (t = p.result) ? void 0 : t.sections, h]), _ = (0, u.h)(b);
   return {
-    appsInThisServer: i.useMemo(() => l().compact(x.map(e => {
+    appsInThisServer: i.useMemo(() => l().compact(_.map(e => {
       let {
         application: t
       } = e;
       return t
     })).map(e => ({
       application: e
-    })), [x]),
+    })), [_]),
     isLoading: p.fetchState.fetching || f
   }
 }

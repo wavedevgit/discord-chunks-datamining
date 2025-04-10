@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  default: () => P
+  default: () => R
 }), n(388685), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -121,7 +121,7 @@ class C extends i.Component {
     })
   }
 }
-class R extends i.Component {
+class P extends i.Component {
   componentDidMount() {
     var e;
     (null == (e = this.props.upload) ? void 0 : e.showLargeMessageDialog) && this.props.upload.item.platform === u.ow.WEB && p.default.track(g.rMx.OPEN_MODAL, {
@@ -279,9 +279,9 @@ class R extends i.Component {
   }
 }
 
-function P(e) {
+function R(e) {
   let t = (0, f.Z)();
-  return e.upload.item.platform !== u.ow.WEB ? null : (0, r.jsx)(R, S(O({}, e), {
+  return e.upload.item.platform !== u.ow.WEB ? null : (0, r.jsx)(P, S(O({}, e), {
     file: e.upload.item.file,
     messageMaxLength: t
   }))

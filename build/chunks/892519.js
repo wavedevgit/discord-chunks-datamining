@@ -11,8 +11,8 @@ var l = r(120356),
   c = r(970184),
   s = r(197653),
   u = r(987106),
-  p = r(861529),
-  d = r(568248),
+  d = r(861529),
+  p = r(568248),
   f = r(46171);
 
 function b(e) {
@@ -40,7 +40,7 @@ function O(e) {
     accessory: r
   } = e, {
     message: l
-  } = (0, c.CJ)(), [O, y] = (0, s.e4)(), m = (0, s.$Y)(y), j = r.type === o.re.BUTTON;
+  } = (0, c.CJ)(), [O, m] = (0, s.e4)(), y = (0, s.$Y)(m), j = r.type === o.re.BUTTON;
   return (0, n.jsxs)("div", {
     className: f.section,
     ref: O,
@@ -50,17 +50,17 @@ function O(e) {
         className: i()(f.textChildren, {
           [f.centerAlign]: j
         }),
-        children: t.map(e => (0, n.jsx)(p.Z, b({}, e), e.id))
+        children: t.map(e => (0, n.jsx)(d.Z, b({}, e), e.id))
       }), (0, n.jsx)("div", {
         className: i()(f.accessory, {
-          [f.restrictWidth]: m
+          [f.restrictWidth]: y
         }),
         children: function(e) {
           switch (e.type) {
             case o.re.BUTTON:
               return (0, n.jsx)(u.Z, b({}, e));
             case o.re.THUMBNAIL:
-              return (0, n.jsx)(d.Z, b({}, e))
+              return (0, n.jsx)(p.Z, b({}, e))
           }
         }(r)
       })]

@@ -1,6 +1,6 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  s: () => x
+  s: () => q
 }), r(388685);
 var n = r(200651),
   A = r(192379),
@@ -15,8 +15,8 @@ var n = r(200651),
   g = r(587123),
   f = r(863663),
   p = r(731994),
-  h = r(629481),
-  m = r(388032),
+  m = r(629481),
+  h = r(388032),
   b = r(48635);
 let v = (0, d.hQ)();
 
@@ -28,9 +28,9 @@ function C(e) {
     onDeleteAttachment: i
   } = e, s = A.useCallback(() => {
     null == i || i(r.id)
-  }, [i, r.id]), d = a >= 1, u = a < 0, g = d || u, p = null != (t = r.filename) ? t : r.id, h = (0, f.kg)(a);
+  }, [i, r.id]), d = a >= 1, u = a < 0, g = d || u, p = null != (t = r.filename) ? t : r.id, m = (0, f.kg)(a);
   return (0, n.jsx)(l.DY3, {
-    text: h,
+    text: m,
     children: (0, n.jsxs)("div", {
       className: o()(b.attachedFileCard, {
         [b.attachedFileCardError]: u,
@@ -49,7 +49,7 @@ function C(e) {
         className: b.attachedFileCardSpinner,
         type: l.$jN.Type.SPINNING_CIRCLE
       }), g && null != i && (0, n.jsx)(l.zxk, {
-        "aria-label": m.NW.formatToPlainString(m.t["1o5hyc"], {
+        "aria-label": h.NW.formatToPlainString(h.t["1o5hyc"], {
           attachment: p
         }),
         className: b.deleteButton,
@@ -67,7 +67,7 @@ function C(e) {
   })
 }
 
-function x(e) {
+function q(e) {
   let {
     onFileAdded: t
   } = e, {
@@ -77,37 +77,37 @@ function x(e) {
     addAttachment: c,
     deleteAttachment: d,
     fileUploadProgresses: f
-  } = (0, g.P)(), x = A.useRef(!1);
+  } = (0, g.P)(), q = A.useRef(!1);
 
-  function q(e) {
+  function x(e) {
     try {
       for (let t of e) c({
         platform: s.ow.WEB,
         file: t
       });
-      x.current = !0
+      q.current = !0
     } catch (e) {}
   }
   return A.useEffect(() => {
-    x.current && (t(), x.current = !1)
+    q.current && (t(), q.current = !1)
   }, [t]), (0, n.jsxs)("div", {
     className: b.container,
     children: [(0, n.jsx)(i.Z, {
       className: b.uploadArea,
-      title: m.NW.string(m.t["5eTk2t"]),
-      description: m.NW.string(m.t.Ecxoxs),
+      title: h.NW.string(h.t["5eTk2t"]),
+      description: h.NW.string(h.t.Ecxoxs),
       icons: p.J6,
-      onDrop: q
+      onDrop: x
     }), (0, n.jsxs)(u.Z, {
       className: b.addFileButtonLook,
       innerClassName: b.addFileButton,
       color: l.zxk.Colors.CUSTOM,
       disabled: !a,
-      "aria-label": m.NW.string(m.t["23LeCA"]),
+      "aria-label": h.NW.string(h.t["23LeCA"]),
       "aria-describedby": v,
       multiple: !0,
       onChange: function(e) {
-        null != e.currentTarget.files && q(e.currentTarget.files)
+        null != e.currentTarget.files && x(e.currentTarget.files)
       },
       children: [(0, n.jsx)(l.dZu, {
         size: "xs",
@@ -117,7 +117,7 @@ function x(e) {
       }), (0, n.jsx)(l.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: m.NW.string(m.t["23LeCA"])
+        children: h.NW.string(h.t["23LeCA"])
       })]
     }), (0, n.jsx)(l.LZC, {
       size: 12
@@ -125,17 +125,17 @@ function x(e) {
       id: v,
       color: "text-muted",
       variant: "text-xs/normal",
-      children: o ? m.NW.formatToPlainString(m.t.lvU6sr, {
-        fileUploadLimit: h.TR
-      }) : m.NW.formatToPlainString(m.t.DOXzIS, {
-        fileUploadLimit: h.TR
+      children: o ? h.NW.formatToPlainString(h.t.lvU6sr, {
+        fileUploadLimit: m.TR
+      }) : h.NW.formatToPlainString(h.t.DOXzIS, {
+        fileUploadLimit: m.TR
       })
     }), r.length > 0 && (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("div", {
         className: b.separator
       }), (0, n.jsx)("ul", {
         className: b.attachedFilesContainer,
-        "aria-label": m.NW.string(m.t.YZ6cTU),
+        "aria-label": h.NW.string(h.t.YZ6cTU),
         children: r.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(C, {
             upload: e,

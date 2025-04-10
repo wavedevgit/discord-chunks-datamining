@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(695103),
   A = n(4912),
   C = n(630388),
-  R = n(669079),
-  P = n(987209),
+  P = n(669079),
+  R = n(987209),
   w = n(563132),
   D = n(45572),
   L = n(435020),
@@ -81,7 +81,7 @@ function B(e) {
   } = (0, w.JL)(), {
     isGift: $,
     giftRecipient: ee
-  } = (0, P.wD)(), et = $ && (0, R.pO)(ee), {
+  } = (0, R.wD)(), et = $ && (0, P.pO)(ee), {
     defaultPaymentSourceId: en,
     hasFetchedPaymentSources: er
   } = (0, l.cj)([S.Z], () => ({

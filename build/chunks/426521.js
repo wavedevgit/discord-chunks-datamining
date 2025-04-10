@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   U: () => W
 }), n(35282);
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(756688),
   Z = n(886765);
 
-function k(e) {
+function R(e) {
   var t, n, i;
   let {
     item: a
@@ -56,7 +56,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     item: {
       callout: t
@@ -196,9 +196,9 @@ let M = i.memo(function(e) {
             variant: "text-md/normal",
             color: p ? "text-muted" : "text-normal",
             children: "string" != typeof N ? N : d.Z.parse(N)
-          }), (null == (t = a.message) ? void 0 : t.content) != null ? (0, r.jsx)(k, {
+          }), (null == (t = a.message) ? void 0 : t.content) != null ? (0, r.jsx)(R, {
             item: a
-          }) : null, null != a.callout ? (0, r.jsx)(R, {
+          }) : null, null != a.callout ? (0, r.jsx)(k, {
             item: a
           }) : null, (0, r.jsx)(l.Text, {
             variant: "text-xs/medium",

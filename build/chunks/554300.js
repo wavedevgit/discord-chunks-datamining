@@ -86,13 +86,13 @@ let E = i.forwardRef(function(e, t) {
       selectedClassName: N,
       innerClassName: A,
       wrapContent: C,
-      highlighted: R,
-      focusProps: P
+      highlighted: P,
+      focusProps: R
     } = e,
     w = m(e, ["avatar", "name", "nameplate", "children", "subText", "decorators", "onClick", "hovered", "selected", "muted", "to", "avatarClassName", "selectedClassName", "innerClassName", "wrapContent", "highlighted", "focusProps"]);
   w.className = a()(w.className, d.container, {
     [d.selected]: O,
-    [d.highlighted]: R,
+    [d.highlighted]: P,
     [d.active]: O,
     [null != N ? N : ""]: O,
     [d.clickable]: !O && (null != S || null != y),
@@ -138,7 +138,7 @@ let E = i.forwardRef(function(e, t) {
         }) : null]
       })]
     });
-  return null != S ? (0, r.jsx)(l.tEY, h(_({}, P), {
+  return null != S ? (0, r.jsx)(l.tEY, h(_({}, R), {
     children: (0, r.jsx)(s.rU, h(_({
       to: S,
       onClick: y
@@ -149,12 +149,12 @@ let E = i.forwardRef(function(e, t) {
     }))
   })) : null != y ? (0, r.jsx)(l.P3F, h(_({
     onClick: y,
-    focusProps: P
+    focusProps: R
   }, w), {
     role: "listitem",
     innerRef: t,
     children: L
-  })) : (0, r.jsx)(l.tEY, h(_({}, P), {
+  })) : (0, r.jsx)(l.tEY, h(_({}, R), {
     children: (0, r.jsx)("div", h(_({}, w), {
       role: "listitem",
       ref: t,

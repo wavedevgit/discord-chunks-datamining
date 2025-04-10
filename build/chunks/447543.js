@@ -32,8 +32,8 @@ var r = n(525654),
   N = n(461014),
   A = n(82085),
   C = n(264229),
-  R = n(652898),
-  P = n(895886),
+  P = n(652898),
+  R = n(895886),
   w = n(143816),
   D = n(703656),
   L = n(922482),
@@ -215,7 +215,7 @@ function em(e, t, n) {
   return f.Z.isDispatching() ? Promise.resolve().then(() => em(e, t, n)) : (f.Z.dispatch({
     type: "INVITE_RESOLVE",
     code: e
-  }), (0, R.Z)(e, t, n).then(e => {
+  }), (0, P.Z)(e, t, n).then(e => {
     let {
       invite: t,
       code: n,
@@ -424,7 +424,7 @@ let ev = {
       callback: o,
       skipOnboarding: a
     } = e, s = (0, C.fU)(r), l = s.baseCode, c = M.default.getSessionId(), d = ed(i, s), _ = H.default.getCurrentUser();
-    return null != (t = null == _ ? void 0 : _.hasFlag($.xW$.QUARANTINED)) && t ? ((0, P.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
+    return null != (t = null == _ ? void 0 : _.hasFlag($.xW$.QUARANTINED)) && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
     }), u.tn.post({

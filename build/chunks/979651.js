@@ -63,14 +63,14 @@ function C(e, t) {
   n.has(t) && ((n = new Set(n)).delete(t), 0 === n.size ? E.delete(e) : E.set(e, n))
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   let r = S(m, null != e ? e : d.ME),
     i = r[t],
     o = n(i);
   return i === o ? [!1, o, i] : (null != i && (delete r[t], null != i.channelId && (delete S(b, i.channelId)[t], delete S(y, i.channelId)[t]), null != i.sessionId && delete S(v, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (S(b, o.channelId)[t] = o, o.selfVideo && (S(y, o.channelId)[t] = o, A(null != e ? e : d.ME, t))), null != o.sessionId && (S(v, t)[o.sessionId] = o)), [!0, o, i])
 }
 
-function P(e) {
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -86,7 +86,7 @@ function w(e) {
     let [r] = L(e.guildId, n);
     t = t || r
   }
-  for (let n of e.removedVoiceStateUsers) R(e.guildId, n, () => null), t = !0;
+  for (let n of e.removedVoiceStateUsers) P(e.guildId, n, () => null), t = !0;
   return t && h++, t
 }
 
@@ -100,7 +100,7 @@ function D(e) {
 }
 
 function L(e, t) {
-  return R(e, t.userId, e => {
+  return P(e, t.userId, e => {
     if (null == t.channelId) return null;
     {
       let n = {
@@ -126,7 +126,7 @@ function x(e) {
   let {
     guildId: t,
     channelId: n
-  } = e, [i] = R(t, r, e => null == e ? void 0 : e.set("channelId", n));
+  } = e, [i] = P(t, r, e => null == e ? void 0 : e.set("channelId", n));
   return i
 }
 
@@ -149,7 +149,7 @@ function j(e) {
     sessionId: o
   } = e;
   for (let [e, n] of(m = {}, b = {}, v = {}, y = {}, Object.entries(t)))
-    for (let [t, r] of Object.entries(n)) R(e, t, () => new u.Z(r));
+    for (let [t, r] of Object.entries(n)) P(e, t, () => new u.Z(r));
   r = n.id, i = o
 }
 
@@ -158,7 +158,7 @@ function U(e) {
     guild: t
   } = e;
   s().forEach(m[t.id], e => {
-    R(t.id, e.userId, () => null)
+    P(t.id, e.userId, () => null)
   }), delete m[t.id]
 }
 
@@ -253,7 +253,7 @@ let F = new V(c.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: k,
   OVERLAY_INITIALIZE: j,
   VOICE_CHANNEL_SELECT: x,
-  VOICE_STATE_UPDATES: P,
+  VOICE_STATE_UPDATES: R,
   GUILD_DELETE: U,
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,

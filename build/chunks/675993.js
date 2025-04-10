@@ -1,45 +1,49 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => D,
-  u: () => z
+  Z: () => F,
+  u: () => Q
 }), n(388685), n(953529);
 var i = n(200651),
   r = n(192379),
   l = n(120356),
-  a = n.n(l),
-  o = n(512722),
-  s = n.n(o),
+  o = n.n(l),
+  a = n(512722),
+  s = n.n(a),
   c = n(392711),
-  d = n.n(c),
-  u = n(442837),
+  u = n.n(c),
+  d = n(442837),
   p = n(882485),
   m = n(481060),
   f = n(115130),
   h = n(723163),
   b = n(147865),
-  x = n(427996),
-  C = n(906732),
-  _ = n(706302),
-  v = n(812236),
-  y = n(835473),
-  N = n(70097),
-  g = n(240991),
-  j = n(973616),
-  P = n(626135),
-  E = n(424602),
-  A = n(573188),
-  I = n(783097),
-  O = n(695676),
-  S = n(635753),
-  T = n(520315),
-  L = n(29380),
-  w = n(783685),
-  R = n(981631),
-  k = n(388032),
-  Z = n(449549),
-  M = n(73433);
+  _ = n(427996),
+  y = n(906732),
+  x = n(706302),
+  C = n(812236),
+  v = n(835473),
+  g = n(146282),
+  N = n(26033),
+  j = n(70097),
+  P = n(240991),
+  E = n(973616),
+  O = n(626135),
+  A = n(424602),
+  I = n(573188),
+  S = n(783097),
+  T = n(695676),
+  L = n(886792),
+  w = n(635753),
+  R = n(520315),
+  k = n(29380),
+  Z = n(783685),
+  M = n(981631),
+  D = n(206583),
+  W = n(388032),
+  B = n(449549),
+  U = n(73433);
 
-function W(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -58,126 +62,160 @@ function W(e) {
   return e
 }
 
-function D(e) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var i = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, i)
+    }
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function F(e) {
   var t;
   let {
     context: n,
     application: l,
-    videoUrl: o,
+    videoUrl: a,
     imageCoverUrl: c,
     sectionName: p,
     hasCommands: b,
-    showFriendsTab: C
-  } = e, _ = r.useMemo(() => {
+    showFriendsTab: y
+  } = e, x = r.useMemo(() => {
     var e;
-    return null != (e = (0, I.jD)(l)) ? e : ""
-  }, [l]), v = (0, u.e7)([f.Z], () => f.Z.inDevModeForApplication(l.id)), [y, g] = r.useState(C), {
-    friends: j
-  } = (0, h.Z)(l), P = (t = j, r.useMemo(() => {
-    var e, n, i, r;
-    if (0 === t.length) return "";
-    let l = d().sample(1 === t.length ? X : q);
-    return s()(l, "intl message arrays should not be empty"), k.NW.format(l, {
-      friendCount: t.length,
-      count: t.length,
-      friendCountMinusOne: t.length - 1,
-      firstFriendName: t[0].username,
-      secondFriendName: null != (i = null == (e = t[1]) ? void 0 : e.username) ? i : "",
-      thirdFriendName: null != (r = null == (n = t[2]) ? void 0 : n.username) ? r : ""
-    })
-  }, [t])), T = null != o, L = E.PM.useExperiment({
-    location: "AppLauncherProfile"
-  }), {
-    isSlideReady: w
-  } = (0, O.hH)(), [R, M] = r.useState(!1);
+    return null != (e = (0, S.jD)(l)) ? e : ""
+  }, [l]), C = (0, d.e7)([f.Z], () => f.Z.inDevModeForApplication(l.id)), {
+    isSlideReady: v
+  } = (0, T.hH)(), [P, E] = r.useState(!1);
   r.useEffect(() => {
-    w && M(!0)
-  }, [w]);
-  let {
-    enabled: W
-  } = A.X.useExperiment({
-    location: "AppLauncherProfile"
-  });
+    v && E(!0)
+  }, [v]);
+  let O = null != a,
+    R = A.PM.useExperiment({
+      location: "AppLauncherProfile"
+    }),
+    {
+      enabled: k
+    } = I.X.useExperiment({
+      location: "AppLauncherProfile"
+    }),
+    [Z, M] = r.useState(y),
+    {
+      friends: U,
+      friendsLastPlayed: F
+    } = (0, h.Z)(l),
+    Y = (t = U, r.useMemo(() => {
+      var e, n, i, r;
+      if (0 === t.length) return "";
+      let l = u().sample(1 === t.length ? K : $);
+      return s()(l, "intl message arrays should not be empty"), W.NW.format(l, {
+        friendCount: t.length,
+        count: t.length,
+        friendCountMinusOne: t.length - 1,
+        firstFriendName: t[0].username,
+        secondFriendName: null != (i = null == (e = t[1]) ? void 0 : e.username) ? i : "",
+        thirdFriendName: null != (r = null == (n = t[2]) ? void 0 : n.username) ? r : ""
+      })
+    }, [t])),
+    ee = (0, d.e7)([g.Z], () => g.Z.getFeed(D.YN.GLOBAL_FEED)),
+    et = r.useMemo(() => {
+      if (null == ee) return [];
+      let e = ee.entries.reduce((e, t) => V(H({}, e), {
+        [t.content.id]: t.content
+      }), {});
+      return U.reduce((t, n) => {
+        let i = e[F[n.id]];
+        return null != i && (0, N.Mq)(i) ? [...t, i] : t
+      }, [])
+    }, [ee, U, F]).map(e => (0, i.jsx)(L.Z, {
+      entry: e,
+      onClose: async () => {},
+      disableActivityProfileLinks: !0
+    }, e.id));
   return (0, i.jsxs)("div", {
-    className: a()({
-      [Z.experimentLayout]: L.enabled,
-      [Z.altLayout]: L.altLayout,
-      [Z.fixedHeight]: y && j.length > 1 && j.length <= 3
-    }, Z.container),
-    children: [L.enabled ? (0, i.jsxs)("div", {
-      className: Z.experimentTitleContainer,
-      children: [(0, i.jsx)(H, {
+    className: o()({
+      [B.experimentLayout]: R.enabled,
+      [B.altLayout]: R.altLayout,
+      [B.fixedHeight]: Z && U.length > 1 && U.length <= 3
+    }, B.container),
+    children: [R.enabled ? (0, i.jsxs)("div", {
+      className: B.experimentTitleContainer,
+      children: [(0, i.jsx)(X, {
         application: l
-      }), (0, i.jsx)(B, {
+      }), (0, i.jsx)(G, {
         application: l
       })]
-    }) : null, W && 0 !== j.length ? (0, i.jsxs)(m.njP, {
-      selectedItem: y ? "friends" : "overview",
+    }) : null, k && 0 !== U.length ? (0, i.jsxs)(m.njP, {
+      selectedItem: Z ? "friends" : "overview",
       onItemSelect: e => {
-        "friends" === e ? g(!0) : g(!1)
+        "friends" === e ? M(!0) : M(!1)
       },
       type: "top",
       children: [(0, i.jsx)(m.njP.Item, {
         id: "overview",
-        children: k.NW.string(k.t["/dp6yc"])
+        children: W.NW.string(W.t["/dp6yc"])
       }), (0, i.jsx)(m.njP.Item, {
         id: "friends",
-        "aria-label": (0, S.d)(!1, j).toString(),
-        children: (0, i.jsx)(S.Z, {
-          friends: j,
+        "aria-label": (0, w.d)(!1, U).toString(),
+        children: (0, i.jsx)(w.Z, {
+          friends: U,
           shortText: !1
         })
       })]
-    }) : null, y ? (0, i.jsx)(U, {
+    }) : null, Z ? (0, i.jsx)(z, {
       application: l,
-      pepButtonLabelEnabled: L.enabled,
+      pepButtonLabelEnabled: R.enabled,
       children: (0, i.jsxs)("div", {
-        className: Z.friendsContainer,
+        className: B.friendsContainer,
         children: [(0, i.jsx)("div", {
-          children: "Friend stuff goes here"
+          children: et
         }), (0, i.jsx)(m.Text, {
-          className: Z.friendsMotivationText,
+          className: B.friendsMotivationText,
           variant: "text-md/normal",
           color: "text-secondary",
-          children: P
+          children: Y
         })]
       })
-    }) : (0, i.jsxs)(U, {
+    }) : (0, i.jsxs)(z, {
       application: l,
-      pepButtonLabelEnabled: L.enabled,
-      children: [T ? (0, i.jsxs)("div", {
-        className: Z.videoContainer,
-        children: [R ? (0, i.jsx)(N.Z, {
-          className: a()(Z.videoCover, Z.video),
+      pepButtonLabelEnabled: R.enabled,
+      children: [O ? (0, i.jsxs)("div", {
+        className: B.videoContainer,
+        children: [P ? (0, i.jsx)(j.Z, {
+          className: o()(B.videoCover, B.video),
           loop: !0,
           muted: !0,
           autoPlay: !0,
-          src: o,
+          src: a,
           poster: c
         }) : null, (0, i.jsx)("img", {
-          className: Z.videoCover,
+          className: B.videoCover,
           src: c,
-          "aria-label": k.NW.string(k.t.X4IxWF)
+          "aria-label": W.NW.string(W.t.X4IxWF)
         })]
       }) : null, (0, i.jsxs)("div", {
-        className: T ? Z.overviewContainerWithVideo : Z.overviewContainerNoVideo,
-        children: [L.enabled ? null : (0, i.jsx)(H, {
+        className: O ? B.overviewContainerWithVideo : B.overviewContainerNoVideo,
+        children: [R.enabled ? null : (0, i.jsx)(X, {
           application: l
-        }), (0, i.jsx)(V, {
+        }), (0, i.jsx)(q, {
           application: l
-        }), _.length > 0 ? (0, i.jsx)(G, {
-          description: _
-        }) : null, v ? (0, i.jsx)("div", {
-          className: Z.developerShelfControlsContainer,
-          children: (0, i.jsx)(x.W, {
+        }), x.length > 0 ? (0, i.jsx)(J, {
+          description: x
+        }) : null, C ? (0, i.jsx)("div", {
+          className: B.developerShelfControlsContainer,
+          children: (0, i.jsx)(_.W, {
             hideSearch: !0,
-            className: Z.developerShelfControls
+            className: B.developerShelfControls
           })
-        }) : null, L.enabled ? null : (0, i.jsx)(z, {
+        }) : null, R.enabled ? null : (0, i.jsx)(Q, {
           context: n,
           application: l,
           sectionName: p,
-          isDeveloperOfThisApp: v,
+          isDeveloperOfThisApp: C,
           hasCommands: b
         })]
       })]
@@ -185,84 +223,84 @@ function D(e) {
   })
 }
 
-function U(e) {
+function z(e) {
   let {
     children: t,
     pepButtonLabelEnabled: n,
     application: r
   } = e;
   return (0, i.jsxs)(i.Fragment, {
-    children: [t, n ? null : (0, i.jsx)(B, {
+    children: [t, n ? null : (0, i.jsx)(G, {
       application: r
     })]
   })
 }
 
-function B(e) {
+function G(e) {
   let {
     application: t
-  } = e, n = (0, I.Cb)(t), r = (0, I.Hu)(t);
+  } = e, n = (0, S.Cb)(t), r = (0, S.Hu)(t);
   return n || r ? (0, i.jsxs)("div", {
-    className: Z.monetizationDisclosureContainerStyle,
+    className: B.monetizationDisclosureContainerStyle,
     children: [n ? (0, i.jsxs)("div", {
-      className: Z.monetizationDisclosureStyle,
+      className: B.monetizationDisclosureStyle,
       children: [(0, i.jsx)(m.EOn, {
         size: "sm",
         color: m.TVs.colors.INTERACTIVE_MUTED
       }), (0, i.jsx)(m.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: k.NW.string(k.t["8z5B2d"])
+        children: W.NW.string(W.t["8z5B2d"])
       })]
     }) : null, r ? (0, i.jsxs)("div", {
-      className: Z.monetizationDisclosureStyle,
+      className: B.monetizationDisclosureStyle,
       children: [(0, i.jsx)(m.uMN, {
         size: "sm",
         color: m.TVs.colors.INTERACTIVE_MUTED
       }), (0, i.jsx)(m.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: k.NW.string(k.t["5khEk5"])
+        children: W.NW.string(W.t["5khEk5"])
       })]
     }) : null]
   }) : null
 }
 
-function H(e) {
+function X(e) {
   var t;
   let {
     application: n
-  } = e, r = (0, I.BQ)(n) ? n.name : null != (t = (0, I.$d)(n)) ? t : "", l = (0, I.vJ)(n);
+  } = e, r = (0, S.BQ)(n) ? n.name : null != (t = (0, S.$d)(n)) ? t : "", l = (0, S.vJ)(n);
   return (0, i.jsxs)("div", {
-    className: Z.titleContainer,
+    className: B.titleContainer,
     children: [(0, i.jsx)(m.X6q, {
       variant: "heading-xl/extrabold",
       lineClamp: 1,
       children: r
     }), l ? (0, i.jsx)("div", {
-      className: Z.partnerLabelContainer,
+      className: B.partnerLabelContainer,
       children: (0, i.jsx)(m.Text, {
         variant: "text-xs/medium",
         color: "text-normal",
-        children: k.NW.string(k.t.LO4f0N)
+        children: W.NW.string(W.t.LO4f0N)
       })
     }) : null]
   })
 }
 
-function V(e) {
+function q(e) {
   let {
     application: t
   } = e, n = r.useMemo(() => {
     var e;
-    return (0, I.BQ)(t) && null != (e = null == t ? void 0 : t.tags) ? e : []
+    return (0, S.BQ)(t) && null != (e = null == t ? void 0 : t.tags) ? e : []
   }, [t]);
-  return (0, I.ye)(t) ? (0, i.jsxs)("div", {
-    className: Z.tagsContainer,
-    children: [(0, i.jsx)(F, {
+  return (0, S.ye)(t) ? (0, i.jsxs)("div", {
+    className: B.tagsContainer,
+    children: [(0, i.jsx)(Y, {
       application: t
     }), n.map((e, t) => (0, i.jsx)("div", {
-      className: Z.tagContainer,
+      className: B.tagContainer,
       children: (0, i.jsx)(m.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
@@ -272,15 +310,15 @@ function V(e) {
   }) : null
 }
 
-function F(e) {
+function Y(e) {
   var t;
   let {
     application: n
   } = e;
-  if (!(0, I.ye)(n)) return null;
-  let r = null != (t = (0, I.BQ)(n) ? n instanceof j.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  if (!(0, S.ye)(n)) return null;
+  let r = null != (t = (0, S.BQ)(n) ? n instanceof E.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, i.jsxs)("div", {
-    className: Z.tagContainer,
+    className: B.tagContainer,
     children: [(0, i.jsx)(m.BFJ, {
       size: "xs",
       color: m.TVs.colors.INTERACTIVE_NORMAL
@@ -292,112 +330,100 @@ function F(e) {
   })
 }
 
-function z(e) {
+function Q(e) {
   var t;
   let {
     context: n,
     application: l,
-    sectionName: o,
+    sectionName: a,
     hasCommands: s,
     isDeveloperOfThisApp: c
-  } = e, d = (0, v.Fs)(n, l.id), u = (0, y.q)(l.id), f = null == u || null == (t = u.bot) ? void 0 : t.id, h = (0, _.Z)({
+  } = e, u = (0, C.Fs)(n, l.id), d = (0, v.q)(l.id), f = null == d || null == (t = d.bot) ? void 0 : t.id, h = (0, x.Z)({
     context: n,
     application: l,
     botUserId: f
   }), {
     analyticsLocations: b
-  } = (0, C.ZP)(), [x, N] = r.useState(!1), g = E.PM.useExperiment({
+  } = (0, y.ZP)(), [_, g] = r.useState(!1), N = A.PM.useExperiment({
     location: "AppLauncherAppProfile.PrimaryEntryPointArea()"
   });
   if (r.useEffect(() => {
-      if (!(0, I.BQ)(l) || !(0, I.ye)(l)) return;
+      if (!(0, S.BQ)(l) || !(0, S.ye)(l)) return;
       let e = setTimeout(() => {
-        (null == d || null == f) && P.default.track(R.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        (null == u || null == f) && O.default.track(M.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
           application_id: l.id,
-          is_primary_entry_point_command_non_null: null != d,
+          is_primary_entry_point_command_non_null: null != u,
           is_bot_user_id_non_null: null != f,
           show_try_it_out_button: h
         })
       }, 2e3);
       return () => clearTimeout(e)
-    }, [l, d, f, h]), !(0, I.BQ)(l) || !(0, I.ye)(l)) return null;
+    }, [l, u, f, h]), !(0, S.BQ)(l) || !(0, S.ye)(l)) return null;
   let j = m.PhG.MAX;
-  return null != d && null != f ? (0, i.jsxs)("div", {
-    className: a()({
-      [Z.experimentLayout]: g.enabled,
-      [Z.altLayout]: g.altLayout,
-      [Z.noShowTryItOutButton]: !h
-    }, Z.entrypointContainer),
+  return null != u && null != f ? (0, i.jsxs)("div", {
+    className: o()({
+      [B.experimentLayout]: N.enabled,
+      [B.altLayout]: N.altLayout,
+      [B.noShowTryItOutButton]: !h
+    }, B.entrypointContainer),
     children: [(0, i.jsx)("div", {
-      className: Z.entryPointContainerFlexChild,
-      children: (0, i.jsx)(L.Z, {
+      className: B.entryPointContainerFlexChild,
+      children: (0, i.jsx)(k.Z, {
         context: n,
         application: l,
-        sectionName: o,
-        primaryEntryPointCommand: d,
+        sectionName: a,
+        primaryEntryPointCommand: u,
         buttonSize: j,
-        playSolo: x
+        playSolo: _
       })
-    }), h && null != f ? g.altLayout ? (0, i.jsx)("div", {
-      className: Z.altLayout,
+    }), h && null != f ? N.altLayout ? (0, i.jsx)("div", {
+      className: B.altLayout,
       children: (0, i.jsx)("div", {
-        className: Z.entryPointContainerFlexChild,
+        className: B.entryPointContainerFlexChild,
         children: (0, i.jsx)(m.XZJ, {
-          className: Z.entryPointCheckbox,
-          value: x,
-          onChange: () => N(!x),
+          className: B.entryPointCheckbox,
+          value: _,
+          onChange: () => g(!_),
           children: (0, i.jsxs)(m.Text, {
             variant: "text-sm/medium",
-            className: Z.entryPointCheckboxLabel,
-            children: [k.NW.string(k.t["e+CzPj"]), (0, i.jsx)(m.ua7, {
-              text: k.NW.string(k.t.QOZI8f),
-              children: e => {
-                var t, n;
-                return (0, i.jsx)(p.d, (t = W({}, e), n = n = {
-                  size: "xs"
-                }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                  var n = Object.keys(e);
-                  if (Object.getOwnPropertySymbols) {
-                    var i = Object.getOwnPropertySymbols(e);
-                    n.push.apply(n, i)
-                  }
-                  return n
-                })(Object(n)).forEach(function(e) {
-                  Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-                }), t))
-              }
+            className: B.entryPointCheckboxLabel,
+            children: [W.NW.string(W.t["e+CzPj"]), (0, i.jsx)(m.ua7, {
+              text: W.NW.string(W.t.QOZI8f),
+              children: e => (0, i.jsx)(p.d, V(H({}, e), {
+                size: "xs"
+              }))
             })]
           })
         })
       })
     }) : (0, i.jsx)("div", {
-      className: Z.entryPointContainerFlexChild,
-      children: (0, i.jsx)(w.Z, {
+      className: B.entryPointContainerFlexChild,
+      children: (0, i.jsx)(Z.Z, {
         botUserId: f,
         applicationId: l.id,
         buttonSize: j,
         analyticsLocations: b
       })
     }) : null]
-  }) : c && !s && (0, I.ye)(l) ? (0, i.jsx)(m.Wn, {
-    className: Z.primaryEntryPointWarningMessage,
+  }) : c && !s && (0, S.ye)(l) ? (0, i.jsx)(m.Wn, {
+    className: B.primaryEntryPointWarningMessage,
     messageType: m.QYI.WARNING,
-    children: k.NW.format(k.t["s/3hjI"], {})
+    children: W.NW.format(W.t["s/3hjI"], {})
   }) : null
 }
 
-function G(e) {
+function J(e) {
   let {
     description: t
-  } = e, n = E.PM.useExperiment({
+  } = e, n = A.PM.useExperiment({
     location: "AppLauncherProfile.Description()"
-  }), [l, a] = r.useState(!0);
-  r.useLayoutEffect(() => a(n.enabled), [n]);
-  let o = r.useMemo(() => (0, g.parseBioReact)(t), [t]),
+  }), [l, o] = r.useState(!0);
+  r.useLayoutEffect(() => o(n.enabled), [n]);
+  let a = r.useMemo(() => (0, P.parseBioReact)(t), [t]),
     {
       ref: s,
       lineHeight: c,
-      lineCount: d
+      lineCount: u
     } = function() {
       let e = r.useRef(null),
         [t, n] = r.useState(null),
@@ -413,48 +439,48 @@ function G(e) {
         lineCount: i
       }
     }(),
-    u = r.useMemo(() => {
-      if (null == c || null == d) return {
+    d = r.useMemo(() => {
+      if (null == c || null == u) return {
         key: 0
       };
-      let e = c * d;
+      let e = c * u;
       return {
         key: 1,
         minHeightOverride: Math.min(e, +c),
         maxHeightOverride: e
       }
-    }, [d, c]),
+    }, [u, c]),
     {
       ref: p,
       isTransitioning: f,
       onTransitionEnd: h
-    } = (0, T.Z)(W({
+    } = (0, R.Z)(H({
       isExpanded: l
-    }, u)),
+    }, d)),
     b = l || f;
   return (0, i.jsxs)("div", {
-    className: Z.descriptionContainer,
+    className: B.descriptionContainer,
     children: [(0, i.jsx)("div", {
       ref: p,
-      className: Z.overflowHidden,
+      className: B.overflowHidden,
       onTransitionEnd: h,
       children: (0, i.jsx)(m.Text, {
         ref: s,
-        className: M.markup,
+        className: U.markup,
         variant: "text-sm/medium",
         lineClamp: b ? void 0 : 1,
         style: {
-          maxHeight: b ? void 0 : u.minHeightOverride
+          maxHeight: b ? void 0 : d.minHeightOverride
         },
-        children: o
+        children: a
       })
-    }), null != d && d > 1 && !n.enabled ? (0, i.jsxs)(m.P3F, {
-      className: Z.expandableDescriptionClickable,
-      onClick: () => a(e => !e),
+    }), null != u && u > 1 && !n.enabled ? (0, i.jsxs)(m.P3F, {
+      className: B.expandableDescriptionClickable,
+      onClick: () => o(e => !e),
       children: [(0, i.jsx)(m.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: b ? k.NW.string(k.t.u4YJ8v) : k.NW.string(k.t["N/tajI"])
+        children: b ? W.NW.string(W.t.u4YJ8v) : W.NW.string(W.t["N/tajI"])
       }), b ? (0, i.jsx)(m.u04, {
         size: "sm",
         color: m.TVs.colors.TEXT_BRAND
@@ -465,5 +491,5 @@ function G(e) {
     }) : null]
   })
 }
-let X = [k.t.eCLLn5, k.t.d8pkUF],
-  q = [k.t.d8pkUF, k.t.MbWAxs, k.t["8kiRMT"], k.t.GRL3Nj]
+let K = [W.t.eCLLn5, W.t.d8pkUF],
+  $ = [W.t.d8pkUF, W.t.MbWAxs, W.t["8kiRMT"], W.t.GRL3Nj]

@@ -1,0 +1,108 @@
+/**
+  Module ID: 85505
+  Original File Name: 3f5709b39c097583
+**/
+.header_f549e5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacing-16);
+    padding-top: var(--spacing-64);
+    text-align: center
+}
+
+.headerImage_f549e5 {
+    margin: -45px auto;
+    width: 85px
+}
+
+.title_f549e5 {
+    padding-bottom: var(--spacing-4)
+}
+
+.body_f549e5,.title_f549e5 {
+    text-align: center
+}
+
+.content_f549e5 {
+    flex-direction: column;
+    padding: var(--spacing-16);
+    padding-top: 0
+}
+
+.content_f549e5,.guildInfo_f549e5 {
+    display: flex;
+    align-items: center
+}
+
+.guildName_f549e5 {
+    margin-left: var(--spacing-12)
+}
+
+.buttonGroup_f549e5 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    width: 100%
+}
+
+.leave_f549e5 {
+    order: -1
+}
+
+.infoGroup_f549e5 {
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    margin-bottom: var(--spacing-24);
+    width: 100%
+}
+
+.infoRow_f549e5 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-16);
+    padding: var(--spacing-16)
+}
+
+.container__1ce5d {
+    position: relative
+}
+
+.circularImage__1ce5d {
+    border-radius: 50%
+}
+
+.dots__1ce5d {
+    margin-top: .2px
+}
+
+.row__6e3d6 {
+    padding: var(--spacing-12);
+    gap: var(--spacing-12)
+}
+
+.icon__6e3d6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px
+}
+
+.username__6e3d6 {
+    display: inline
+}
+
+.row__23bf1 {
+    padding: var(--spacing-12);
+    gap: var(--spacing-12)
+}
+
+.icon__23bf1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px
+}
+
+/*# sourceMappingURL=3f5709b39c097583.css.map*/

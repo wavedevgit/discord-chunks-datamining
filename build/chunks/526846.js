@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   m: () => W
 }), n(997841), n(953529);
@@ -154,18 +154,18 @@ let W = i.forwardRef(function(e, t) {
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: !0
-  }), H = i.useCallback(() => {
+  }), G = i.useCallback(() => {
     (0, A.Z)({
       channel: a,
       openInPopout: W,
       analyticsLocations: M
     }), b(), _()
-  }, [M, a, _, b, W]), G = i.useCallback(e => {
+  }, [M, a, _, b, W]), F = i.useCallback(e => {
     u(), N.default.track(w.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: a.id,
       guild_id: a.getGuildId()
     })
-  }, [u, a]), F = B ? p.iWm : p.nG3;
+  }, [u, a]), H = B ? p.iWm : p.nG3;
   return (0, r.jsx)(g.Gt, {
     value: M,
     children: (0, r.jsx)(O.Z, {
@@ -183,13 +183,13 @@ let W = i.forwardRef(function(e, t) {
           })
         }), (0, r.jsxs)("div", {
           className: k.container,
-          onMouseEnter: G,
+          onMouseEnter: F,
           onMouseLeave: b,
           children: [(0, r.jsxs)("div", {
             className: k.titleContainer,
             children: [(0, r.jsxs)("div", {
               className: k.titleLeft,
-              children: [(0, r.jsx)(F, {
+              children: [(0, r.jsx)(H, {
                 size: "md",
                 className: k.titleLeftIcon,
                 color: "var(--interactive-active)"
@@ -199,7 +199,7 @@ let W = i.forwardRef(function(e, t) {
               })]
             }), (0, r.jsxs)(p.P3F, {
               className: k.titleRight,
-              onClick: H,
+              onClick: G,
               children: [(0, r.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: R.NW.string(R.t["K8+z4e"])

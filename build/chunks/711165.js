@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   _: () => w
 }), n(642613), n(388685);
@@ -111,7 +111,7 @@ function Z() {
             a.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
           }
         }, o), i = i = {
-          children: (0, r.jsx)(k, {
+          children: (0, r.jsx)(R, {
             scheduledMessages: t
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -129,7 +129,7 @@ function Z() {
   })
 }
 
-function k(e) {
+function R(e) {
   let {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
@@ -154,7 +154,7 @@ function k(e) {
           children: null
         }), i.map(e => {
           let t = a.has(e.scheduledMessageId);
-          return (0, r.jsx)(R, {
+          return (0, r.jsx)(k, {
             scheduledMessage: e,
             channel: n,
             isPendingDeletion: t
@@ -164,7 +164,7 @@ function k(e) {
     })
   })
 }
-let R = i.memo(function(e) {
+let k = i.memo(function(e) {
   let {
     scheduledMessage: t,
     channel: n,

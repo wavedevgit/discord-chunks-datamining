@@ -29,12 +29,12 @@ let i = l.createContext(null),
       } = e, {
         isParentWidthLimited: c,
         parentContainerInnerWidth: s
-      } = a(), u = c && s === t, p = l.useMemo(() => ({
+      } = a(), u = c && s === t, d = l.useMemo(() => ({
         isParentWidthLimited: u,
         parentContainerInnerWidth: r
       }), [u, r]);
       return (0, n.jsx)(i.Provider, {
-        value: p,
+        value: d,
         children: o
       })
     },

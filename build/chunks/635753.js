@@ -1,17 +1,17 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u,
-  d: () => d
+  Z: () => d,
+  d: () => u
 });
 var i = n(200651),
   r = n(120356),
   l = n.n(r),
-  a = n(481060),
-  o = n(884338),
+  o = n(481060),
+  a = n(884338),
   s = n(388032),
   c = n(708348);
 
-function d(e, t) {
+function u(e, t) {
   var n;
   return e ? s.NW.format(s.t.hv7hEx, {
     friendCount: t.length,
@@ -21,7 +21,7 @@ function d(e, t) {
   })
 }
 
-function u(e) {
+function d(e) {
   let {
     friends: t,
     onClick: n,
@@ -29,20 +29,20 @@ function u(e) {
     className: s
   } = e;
   if (0 === t.length) return null;
-  let u = d(r, t);
-  return (0, i.jsxs)(a.P3F, {
+  let d = u(r, t);
+  return (0, i.jsxs)(o.P3F, {
     className: l()(c.friendsWhoPlay, s),
     onClick: n,
-    children: [(0, i.jsx)(o.Z, {
+    children: [(0, i.jsx)(a.Z, {
       users: t,
       max: 3,
-      size: o.u.SIZE_16
-    }), (0, i.jsx)(a.Text, {
+      size: a.u.SIZE_16
+    }), (0, i.jsx)(o.Text, {
       className: c.friendsWhoPlayText,
       variant: "text-sm/normal",
       color: "text-secondary",
       lineClamp: 1,
-      children: u
+      children: d
     })]
   })
 }

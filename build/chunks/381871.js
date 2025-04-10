@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => W
 }), n(388685);
@@ -48,12 +48,12 @@ function W(e) {
     channel: n,
     closePopout: m,
     onFocus: y
-  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = C.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([v.Z], () => v.Z.getState().animationType), H = i.useRef(!1), G = (0, f.wC)(n.guild_id), F = (0, l.uniqBy)([...G, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
+  } = e, T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), W = (0, o.e7)([b.default], () => b.default.getCurrentUser()), U = C.ZP.canUseFancyVoiceChannelReactions(W), B = (0, o.e7)([v.Z], () => v.Z.getState().animationType), G = i.useRef(!1), F = (0, f.wC)(n.guild_id), H = (0, l.uniqBy)([...F, ...D], "name").filter(e => !_.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: n,
     intention: M
-  })).slice(0, Z.e5), V = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !F.slice(0, Z.e5 - 1).some(t => t.name === e.name));
-  V.length > 0 && F.splice(F.length - 1, 1, V[0]);
+  })).slice(0, Z.e5), V = (null != (t = j.Z.recentlyUsedEmojis) ? t : []).filter(e => !H.slice(0, Z.e5 - 1).some(t => t.name === e.name));
+  V.length > 0 && H.splice(H.length - 1, 1, V[0]);
   let z = (0, O.Iu)(B),
     Y = e => {
       c.Z.dispatch({
@@ -78,7 +78,7 @@ function W(e) {
       })
     },
     K = e => {
-      H.current = e, e && p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
+      G.current = e, e && p.ZP.trackWithMetadata(S.rMx.VOICE_CHANNEL_EFFECT_EMOJI_PICKER_EXPANDED, {
         channel_id: X,
         guild_id: Q
       })
@@ -147,9 +147,9 @@ function W(e) {
               },
               onShowUpsell: () => (0, N.h)({
                 analytics: {
-                  type: H.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
+                  type: G.current ? A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED_EXPANDED : A.cd.VOICE_CHANNEL_EFFECTS_TOGGLE_CLICKED,
                   object: S.qAy.VOICE_CHANNEL_EFFECTS_TOGGLE,
-                  section: H.current ? S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : S.jXE.VOICE_CHANNEL_EFFECTS_BAR
+                  section: G.current ? S.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER : S.jXE.VOICE_CHANNEL_EFFECTS_BAR
                 }
               })
             })

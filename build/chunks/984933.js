@@ -38,8 +38,8 @@ let S = "SELECTABLE",
   N = null,
   A = {},
   C = {},
-  R = {},
-  P = null,
+  P = {},
+  R = null,
   w = {},
   D = {
     comparator: -1,
@@ -118,14 +118,14 @@ function Z(e) {
   } = e, n = F(t);
   return o().forEach(n, n => {
     let r = n.channel;
-    if (e.count += 1, _.zS.has(r.type) && !b.Z.can(O.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== P) return;
+    if (e.count += 1, _.zS.has(r.type) && !b.Z.can(O.Plq.VIEW_CHANNEL, r) && !c.Z.isChannelGated(r.guild_id, r.id) && r.id !== R) return;
     let i = B(r.type);
     r.type === O.d4z.GUILD_DIRECTORY && (null == w[t] && (w[t] = []), w[t].push(n)), null != e[i] && e[i].push(n)
   }), e
 }
 
 function H() {
-  A = {}, w = {}, C = {}, R = {}, null != N && W(N)
+  A = {}, w = {}, C = {}, P = {}, null != N && W(N)
 }
 
 function W(e) {
@@ -163,7 +163,7 @@ function z(e) {
       id: t
     }
   } = e;
-  return delete A[t], delete C[t], delete R[t], delete w[t], !0
+  return delete A[t], delete C[t], delete P[t], delete w[t], !0
 }
 
 function q(e) {
@@ -240,12 +240,12 @@ function et(e, t) {
 }
 
 function en(e) {
-  et(v.default.getCurrentUser(), e) ? R[e] = !0 : delete R[e]
+  et(v.default.getCurrentUser(), e) ? P[e] = !0 : delete P[e]
 }
 
 function er(e, t) {
   var n;
-  P = t;
+  R = t;
   let r = null != (n = null == e ? void 0 : e.getGuildId()) ? n : null;
   if (null == r) return !1;
   A[r] = void 0, r === N && W(r)
@@ -255,7 +255,7 @@ function ei(e) {
   let {
     channelId: t
   } = e;
-  return null == t && null != P ? er(m.Z.getChannel(P), null) : er(m.Z.getChannel(t), t)
+  return null == t && null != R ? er(m.Z.getChannel(R), null) : er(m.Z.getChannel(t), t)
 }
 
 function eo(e) {
@@ -343,7 +343,7 @@ class el extends(r = s.ZP.Store) {
     return this.getSelectableChannelIds(e).includes(t)
   }
   hasElevatedPermissions(e) {
-    return R[e] || !1
+    return P[e] || !1
   }
   hasChannels(e) {
     return this.getChannels(e).count > 0

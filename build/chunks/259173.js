@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   rankContainer: "rankContainer__632c2",
   goldBorder: "goldBorder__632c2",

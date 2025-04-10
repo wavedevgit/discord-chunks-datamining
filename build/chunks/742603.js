@@ -1,6 +1,6 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
-  Z: () => F
+  Z: () => H
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -89,7 +89,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function G(e) {
   let {
     user: t,
     channel: n,
@@ -111,7 +111,7 @@ function H(e) {
   })
 }
 
-function G(e) {
+function F(e) {
   let t, {
       focusedApplication: n,
       focusedParticipant: i,
@@ -143,7 +143,7 @@ function G(e) {
     t = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(y.ZP.Divider, {
         className: L.divider
-      }), (0, r.jsx)(H, {
+      }), (0, r.jsx)(G, {
         user: e,
         channel: l,
         stream: n,
@@ -163,7 +163,7 @@ function G(e) {
   })
 }
 
-function F(e) {
+function H(e) {
   let {
     channel: t,
     guild: i,
@@ -181,7 +181,7 @@ function F(e) {
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
     B = (0, P.ZP)(t),
-    H = T ? (0, r.jsx)(a.ua7, {
+    G = T ? (0, r.jsx)(a.ua7, {
       text: M.NW.string(M.t.Mgpxi4),
       delay: 500,
       position: "bottom",
@@ -190,7 +190,7 @@ function F(e) {
         className: l()(L.channelStatusClickable, {
           [L.hoverable]: B
         }),
-        onClick: B ? F : void 0,
+        onClick: B ? H : void 0,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           className: l()(L.channelStatus, D.markup, {
@@ -209,7 +209,7 @@ function F(e) {
       }))
     }) : null;
 
-  function F() {
+  function H() {
     (0, a.ZDy)(async () => {
       let {
         default: e
@@ -232,7 +232,7 @@ function F(e) {
         onDoubleClick: C.O,
         transparent: !0,
         className: e,
-        childrenBottom: H,
+        childrenBottom: G,
         toolbar: (0, r.jsx)(Z.Z, {
           inPopout: s === R.IlC.POPOUT,
           channel: t,
@@ -260,7 +260,7 @@ function F(e) {
         }), (0, r.jsx)(x.TS, {
           channel: t,
           guild: i
-        }), (0, r.jsx)(G, {
+        }), (0, r.jsx)(F, {
           focusedApplication: E,
           focusedParticipant: g,
           channel: t

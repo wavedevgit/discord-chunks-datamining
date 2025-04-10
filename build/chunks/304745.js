@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   M: () => Z
 }), n(539854);
@@ -47,9 +47,9 @@ function Z(e) {
     coloredIconsEnabled: B
   } = (0, j.Z)({
     location: "VideoButton"
-  }), H = (0, p.a)(s.eR.VOICE_LAUNCHER), G = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), F = (0, d.Z)({
+  }), G = (0, p.a)(s.eR.VOICE_LAUNCHER), F = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), H = (0, d.Z)({
     channelId: t.id
-  }), V = B && G || !B && (F || !U && M), z = !k, Y = i.useCallback(e => {
+  }), V = B && F || !B && (H || !U && M), z = !k, Y = i.useCallback(e => {
     "focus" !== e.type && D()
   }, [D]), q = (0, c.bp)() === N.IlC.POPOUT, {
     analyticsLocations: K,
@@ -151,7 +151,7 @@ function Z(e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
               }), t))
             }
-          }), H ? U ? (0, r.jsx)(g.r, {
+          }), G ? U ? (0, r.jsx)(g.r, {
             top: 2,
             right: 2,
             size: 6

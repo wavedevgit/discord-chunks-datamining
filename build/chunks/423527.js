@@ -13,8 +13,8 @@ var r, i = n(200651),
   p = n(846519),
   h = n(481060),
   g = n(893776),
-  f = n(881052),
-  m = n(899370),
+  m = n(881052),
+  f = n(899370),
   _ = n(224841),
   b = n(13430),
   x = n(213609),
@@ -192,7 +192,7 @@ class ed extends(r = o.PureComponent) {
       onRegister: c,
       usernameSuggestion: u,
       isMobileWebInviteRegistration: d
-    } = this.props, p = null != a ? a.code : null, h = null != s ? s.skuId : null, g = N.MD.getState(), m = (0, q.Ew)(u) ? null : t === u, _ = ee.a ? await (0, y.K)(t) : t, b = ee.a ? await (0, y.K)(n) : n;
+    } = this.props, p = null != a ? a.code : null, h = null != s ? s.skuId : null, g = N.MD.getState(), f = (0, q.Ew)(u) ? null : t === u, _ = ee.a ? await (0, y.K)(t) : t, b = ee.a ? await (0, y.K)(n) : n;
     H.S.dispatch(Q.CkL.WAVE_EMPHASIZE), this.setState({
       registering: !0,
       apiErrors: {}
@@ -205,7 +205,7 @@ class ed extends(r = o.PureComponent) {
         consent: i,
         password: r,
         invite: p,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: f,
         guildTemplateCode: null == l ? void 0 : l.code,
         giftCodeSKUId: h,
         birthday: o,
@@ -214,13 +214,13 @@ class ed extends(r = o.PureComponent) {
         consent: i,
         invite: p,
         giftCodeSKUId: h,
-        usedUsernameSuggestion: m,
+        usedUsernameSuggestion: f,
         globalName: b
       }), null == c || c()
     } catch (t) {
       if (this.setState({
           registering: !1
-        }), !(t instanceof f.Hx)) return;
+        }), !(t instanceof m.Hx)) return;
       let e = (0, v.F)(t);
       this.setState({
         apiErrors: e
@@ -442,8 +442,8 @@ class ed extends(r = o.PureComponent) {
       globalNameFocused: d,
       emailClientError: p,
       usernameClientError: g,
-      passwordClientError: f,
-      dateOfBirthClientError: m,
+      passwordClientError: m,
+      dateOfBirthClientError: f,
       registering: _,
       apiErrors: {
         email: x,
@@ -563,7 +563,7 @@ class ed extends(r = o.PureComponent) {
           password: e,
           passwordClientError: 0 === e.length ? er.NW.string(er.t.EkokLy) : null
         }),
-        error: null != f ? f : eu(E),
+        error: null != m ? m : eu(E),
         type: "password",
         autoComplete: "new-password",
         setRef: e => {
@@ -576,7 +576,7 @@ class ed extends(r = o.PureComponent) {
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != m ? m : eu(j),
+        error: null != f ? f : eu(j),
         value: u,
         required: !0
       }), (0, i.jsx)(O.Z, {}), D, R, Z, A, ee.a ? null : (0, i.jsx)(I.zx, {
@@ -747,10 +747,10 @@ class ed extends(r = o.PureComponent) {
 }
 
 function ep(e) {
-  let t = (0, d.cj)([F.Z, U.default, m.Z, R.Z, A.Z], () => ({
+  let t = (0, d.cj)([F.Z, U.default, f.Z, R.Z, A.Z], () => ({
       consentRequired: F.Z.getAuthenticationConsentRequired(),
       authenticated: U.default.isAuthenticated(),
-      isUnderage: m.Z.isUnderageAnonymous(),
+      isUnderage: f.Z.isUnderageAnonymous(),
       country: R.Z.getCountryCode(),
       hasLoggedInAccounts: A.Z.getHasLoggedInAccounts()
     })),

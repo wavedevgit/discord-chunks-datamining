@@ -142,7 +142,7 @@ function A(e) {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
-  }), P = d.ZP.canUseSoundboardEverywhere(u), w = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? void 0 : e.guild_id)), D = (0, i.e7)([l.Z], () => {
+  }), R = d.ZP.canUseSoundboardEverywhere(u), w = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? void 0 : e.guild_id)), D = (0, i.e7)([l.Z], () => {
     let {
       canCreateExpressions: e
     } = (0, o.Gw)(w);
@@ -153,7 +153,7 @@ function A(e) {
   } = (0, _.k)({
     location: "soundboard-useSoundGrid",
     autoTrackExposure: !0
-  }), M = R(), k = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds), j = h.w.useExperiment({
+  }), M = P(), k = (0, i.Wu)([p.Z], () => p.Z.recentlyHeardSoundIds), j = h.w.useExperiment({
     location: "soundboard-useSoundGrid"
   });
   return r.useMemo(() => {
@@ -196,7 +196,7 @@ function A(e) {
       filterOutEmptyCurrentGuild: t,
       rowLimit: j.numRows,
       shownAllGuildIds: n
-    }), P || N(i, b), S({
+    }), R || N(i, b), S({
       sections: i,
       guilds: C,
       currentGuildId: null == w ? void 0 : w.id,
@@ -204,7 +204,7 @@ function A(e) {
       hasNitro: f,
       rowLimit: j.numRows,
       shownAllGuildIds: n
-    }), P && N(i, b), i.forEach(t => {
+    }), R && N(i, b), i.forEach(t => {
       t.categoryInfo.type === g.bg.GUILD && (t.categoryInfo.isNitroLocked ? r += t.items.length : e += t.items.length)
     }), {
       categories: i,
@@ -216,7 +216,7 @@ function A(e) {
         lockedCustomSoundCount: r
       }
     })
-  }, [A, b, v, k, M, x, L, w, D, t, P, C, a, O, f, j.numRows, n])
+  }, [A, b, v, k, M, x, L, w, D, t, R, C, a, O, f, j.numRows, n])
 }
 
 function C(e, t, n) {
@@ -229,7 +229,7 @@ function C(e, t, n) {
   }] : e, [e, n.length, t])
 }
 
-function R() {
+function P() {
   return r.useEffect(() => {
     a.DZ.loadIfNecessary()
   }, []), (0, i.e7)([p.Z], () => p.Z.frecentlyPlayedSounds)

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -50,13 +50,13 @@ function C(e) {
   return e
 }
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     currentUser: n,
     guildId: A,
-    channelId: R,
-    messageId: P,
+    channelId: P,
+    messageId: R,
     roleId: w,
     closePopout: D,
     setPopoutRef: L,
@@ -68,8 +68,8 @@ function R(e) {
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
     guildId: A,
-    channelId: R,
-    messageId: P,
+    channelId: P,
+    messageId: R,
     roleId: w
   }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
   i.useEffect(() => {
@@ -121,7 +121,7 @@ function R(e) {
               user: t,
               displayProfile: U,
               guildId: A,
-              channelId: R,
+              channelId: P,
               profileType: S.y0.BITE_SIZE,
               onOpenProfile: x ? void 0 : Z
             }), (0, r.jsx)(y.Z, {
@@ -137,12 +137,12 @@ function R(e) {
             guild: G,
             isHovering: F,
             onOpenProfile: x ? void 0 : Z,
-            channelId: R,
+            channelId: P,
             onClose: D
           }), (0, r.jsx)(I.Z, {
             user: t,
             guildId: A,
-            channelId: R,
+            channelId: P,
             onClose: D
           })]
         })

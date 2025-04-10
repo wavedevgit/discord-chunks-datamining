@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(870751),
   C = n(302195);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -120,7 +120,7 @@ function M(e) {
     channel: n
   } = e, {
     analyticsLocations: o
-  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), R = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != R ? v.default.age(R.id) : 0, M = !t && y && w >= L, {
+  } = (0, f.ZP)(d.Z.GIFT_BUTTON), [a, u] = i.useState(!1), y = (0, s.e7)([E.Z], () => !(null === E.Z || void 0 === E.Z ? void 0 : E.Z.hasLayers())), P = (0, s.e7)([b.default], () => b.default.getCurrentUser()), w = null != P ? v.default.age(P.id) : 0, M = !t && y && w >= L, {
     enabled: k
   } = m.O.useExperiment({
     location: "gift-button"
@@ -159,7 +159,7 @@ function M(e) {
       onComplete: () => u(!1),
       onCheckItOutClick: W,
       markAsDismissed: G
-    }), (0, r.jsx)(I.Z, D(P({
+    }), (0, r.jsx)(I.Z, D(R({
       innerClassName: C.button,
       "aria-label": N.NW.string(N.t.Z1RnTk),
       isActive: !1,

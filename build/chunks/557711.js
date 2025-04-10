@@ -22,17 +22,17 @@ function u(e) {
     look: f,
     color: m,
     className: g,
-    onAction: b
+    onAction: O
   } = e, {
-    tooltip: O,
+    tooltip: b,
     loading: y,
     disabled: h,
     onClick: v
   } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), j = () => {
-    null == b || b(), v()
+    null == O || O(), v()
   };
   return (0, r.jsx)(o.ua7, {
-    text: O,
+    text: b,
     children: e => {
       let {
         onMouseEnter: n,
@@ -49,7 +49,7 @@ function u(e) {
         onMouseLeave: l,
         disabled: h,
         submitting: y,
-        "aria-label": null != O ? O : t.name,
+        "aria-label": null != b ? b : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",
           color: "currentColor"

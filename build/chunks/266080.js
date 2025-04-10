@@ -1,4 +1,4 @@
-/** Chunk was on 92457 **/
+/** Chunk was on 21924 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
@@ -15,11 +15,11 @@ let m = e => {
   let {
     guildId: t,
     reportId: n
-  } = e, [m, x] = l.useState(!1), p = c.Z.getGuild(t), f = null != p;
+  } = e, [m, x] = l.useState(!1), p = c.Z.getGuild(t), b = null != p;
   l.useEffect(() => {
-    x(!f)
-  }, [f]);
-  let b = l.useCallback(() => {
+    x(!b)
+  }, [b]);
+  let h = l.useCallback(() => {
     x(!0), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
@@ -59,7 +59,7 @@ let m = e => {
           }),
           confirmText: u.NW.string(u.t.J2TBi4),
           cancelText: u.NW.string(u.t["ETE/oK"]),
-          onConfirm: b
+          onConfirm: h
         }, e), n = n = {
           children: (0, r.jsx)(i.Text, {
             variant: "text-md/normal",

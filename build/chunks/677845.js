@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => N
 }), n(539854);
@@ -56,9 +56,9 @@ function N(e) {
   let W = (0, a.e7)([y.Z], () => P.isPrivate() || (0, m.b)(y.Z, R, P), [R, P]),
     U = (null == R ? void 0 : R.afkChannelId) === P.id,
     B = P.userLimit <= 0 || P.userLimit > 1,
-    H = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
-    G = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
-    F = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
+    G = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).length <= 0),
+    F = (0, f.N)(s.z.VC_TILE_ACTIVITIES_ENTRY_POINT),
+    H = (0, d.KF)(P.id) !== d.jy.CAN_LAUNCH,
     V = null != k && k === P.id,
     z = L.map(e => t => (0, r.jsx)(x.ZP, {
       participant: e,
@@ -83,7 +83,7 @@ function N(e) {
     }
   }, {
     trackOnInitialLoad: !0
-  }, []), null != R && !U && (!(M >= 2) || !H || F || G || V ? B && 1 === M && W && (H && !F ? z.push(e => (0, r.jsx)(C.h, {
+  }, []), null != R && !U && (!(M >= 2) || !G || H || F || V ? B && 1 === M && W && (G && !H ? z.push(e => (0, r.jsx)(C.h, {
     channel: P,
     guild: R,
     width: e,

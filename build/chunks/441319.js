@@ -32,7 +32,7 @@ var r = n(997945),
   A = n(563856);
 let C = 60;
 
-function R() {
+function P() {
   return {
     id: r.aH.DEFAULT,
     iconSource: a,
@@ -41,7 +41,7 @@ function R() {
   }
 }
 
-function P() {
+function R() {
   return [{
     id: r.Ru.BRAND_DARK,
     iconSource: u,
@@ -156,7 +156,7 @@ function P() {
 }
 
 function w() {
-  return [R(), ...P()]
+  return [P(), ...R()]
 }
 
 function D(e) {

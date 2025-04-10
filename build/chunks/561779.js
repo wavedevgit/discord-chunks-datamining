@@ -152,8 +152,8 @@ class T extends(r = o.PureComponent) {
       mini: T,
       hideBubble: A,
       defaultValue: C,
-      orientation: R,
-      onValueRender: P,
+      orientation: P,
+      onValueRender: R,
       renderMarker: w,
       getAriaValueText: D,
       barClassName: L,
@@ -190,7 +190,7 @@ class T extends(r = o.PureComponent) {
           })
         }, t)
       }) : null,
-      H = null != P ? P(t) : "".concat(V.toFixed(0), "%"),
+      H = null != R ? R(t) : "".concat(V.toFixed(0), "%"),
       W = null != (e = null == D ? void 0 : D(t)) ? e : void 0;
     return (0, i.jsx)(N, {
       active: n,
@@ -211,7 +211,7 @@ class T extends(r = o.PureComponent) {
             "aria-valuemax": f,
             "aria-valuenow": t,
             "aria-disabled": m,
-            "aria-orientation": R,
+            "aria-orientation": P,
             "aria-hidden": j,
             "aria-label": U,
             "aria-labelledby": G,

@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(624138),
   A = n(51144),
   C = n(981631),
-  R = n(674563),
-  P = n(524484),
+  P = n(674563),
+  R = n(524484),
   w = n(388032),
   D = n(938159);
 
@@ -133,12 +133,12 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       size: l.EFr.SIZE_32,
       animateOnHover: !(n || eE),
       guildId: Q
-    }), eC = (0, y.X)(Q, s), [eR, eP] = i.useState(!1);
+    }), eC = (0, y.X)(Q, s), [eP, eR] = i.useState(!1);
     i.useEffect(() => {
-      n && eP(!1)
+      n && eR(!1)
     }, [n]);
     let ew = (0, v.Fr)(Z),
-      eD = null != ew && !em && n && !eR,
+      eD = null != ew && !em && n && !eP,
       eL = () => {
         eb(!0)
       },
@@ -201,7 +201,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         })
       }),
       eG = () => {
-        let e = (null == V ? void 0 : V.isClyde()) ? R.Hb.AI : R.Hb.BOT;
+        let e = (null == V ? void 0 : V.isClyde()) ? P.Hb.AI : P.Hb.BOT;
         return null != V && V.bot ? (0, r.jsx)(p.Z, {
           className: D.botTag,
           type: e,
@@ -228,7 +228,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           })), (0, r.jsx)(b.Z, {
             confettiSpawnRef: ey,
             shouldFire: G && null != F && e.id !== F.id,
-            confettiLocation: P.Hn.MEMBER_USER
+            confettiLocation: R.Hn.MEMBER_USER
           })]
         })
       },
@@ -252,7 +252,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
         memberListItemRef: eg,
         applicationStream: H
       }, e), {
-        closePopout: () => eP(!0)
+        closePopout: () => eR(!0)
       })),
       eH = W === C.Skl.OFFLINE;
     return null == V ? (0, r.jsx)(h.Z, {

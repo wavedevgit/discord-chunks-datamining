@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   coachtip: "coachtip_b61b37",
   coachtipContent: "coachtipContent_b61b37",

@@ -35,8 +35,8 @@ function N(e) {
     onNext: N,
     legalTermsNodeRef: A,
     flashLegalTerms: C,
-    invoiceError: R,
-    planError: P,
+    invoiceError: P,
+    planError: R,
     onPurchaseError: w,
     baseAnalyticsData: D,
     flowStartTime: L,
@@ -128,7 +128,7 @@ function N(e) {
       giftInfoOptions: ef,
       invoicePreview: et
     })
-  }, eR = {
+  }, eP = {
     baseAnalyticsData: D,
     flowStartTime: L,
     makePurchase: eC,
@@ -138,13 +138,13 @@ function N(e) {
     paymentSourceId: z,
     purchaseTokenAuthState: j,
     setPurchaseState: n
-  }, eP = i.useRef(eR);
+  }, eR = i.useRef(eP);
   i.useEffect(() => {
-    eP.current = eR
+    eR.current = eP
   }), i.useEffect(() => {
     let {
       makePurchase: e
-    } = eP.current;
+    } = eR.current;
     ep && !er && null == t && e()
   }, [ep, er, t]);
   let ew = null != U || K === S.GZQ.ONE_TIME && !er;
@@ -152,8 +152,8 @@ function N(e) {
     align: c.Z.Align.CENTER,
     children: [(0, r.jsx)(p.Z, {
       legalTermsNodeRef: A,
-      invoiceError: R,
-      planError: P,
+      invoiceError: P,
+      planError: R,
       disablePurchase: V,
       flashLegalTerms: C,
       isSubmitting: eg,

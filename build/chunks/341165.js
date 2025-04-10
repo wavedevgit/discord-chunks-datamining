@@ -69,11 +69,11 @@ function C(e) {
   b[e.invite.code] = _.Z.createFromServer(e.invite), r = null != (t = a()(l()(u()(Object.values(b), "createdAt")))) ? t : null, O = !1
 }
 
-function R() {
+function P() {
   O = !1
 }
 
-function P(e) {
+function R(e) {
   var t;
   null != e.invites && e.invites.forEach(e => {
     null != b[e.code] && delete b[e.code]
@@ -127,8 +127,8 @@ let j = new k(f.Z, {
   CONNECTION_OPEN: I,
   CHANNEL_DELETE: S,
   FRIEND_INVITE_CREATE_SUCCESS: C,
-  FRIEND_INVITE_CREATE_FAILURE: R,
-  FRIEND_INVITE_REVOKE_SUCCESS: P,
+  FRIEND_INVITE_CREATE_FAILURE: P,
+  FRIEND_INVITE_REVOKE_SUCCESS: R,
   INSTANT_INVITE_CREATE_SUCCESS: T,
   INSTANT_INVITE_CREATE_FAILURE: N,
   INSTANT_INVITE_REVOKE_SUCCESS: A,

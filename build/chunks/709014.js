@@ -51,11 +51,11 @@ function m(e, t) {
   } = e, [O, I] = i.useState(null), S = i.useRef(null), T = i.useRef(null), N = i.useRef(null), A = "custom" === m ? {
     width: g,
     height: E
-  } : (0, u.m)(m), C = !(0, f.Z)("lottie_hover_multiple_loop"), R = i.useContext(c.S).reducedMotion.enabled, {
-    enabled: P
+  } : (0, u.m)(m), C = !(0, f.Z)("lottie_hover_multiple_loop"), P = i.useContext(c.S).reducedMotion.enabled, {
+    enabled: R
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), w = R || !P, D = i.useRef(y);
+  }), w = P || !R, D = i.useRef(y);
   return i.useImperativeHandle(t, () => ({
     play: e => {
       if (null != N.current)

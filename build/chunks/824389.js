@@ -1,10 +1,10 @@
-/** Chunk was on 57971 **/
+/** Chunk was on 27146 **/
 n.d(t, {
   Je: () => a,
   gs: () => d,
   mh: () => u,
-  p9: () => c,
-  uV: () => s
+  p9: () => s,
+  uV: () => c
 });
 var r = n(544891),
   i = n(881052),
@@ -13,8 +13,8 @@ var r = n(544891),
 let a = async (e, t, n) => {
   var l, a, {
       priceTier: u,
-      imageName: s,
-      createNewRole: c,
+      imageName: c,
+      createNewRole: s,
       unlinkRole: d
     } = n,
     p = function(e, t) {
@@ -53,9 +53,9 @@ let a = async (e, t, n) => {
         }
         return e
       }({}, p), a = {
-        image_name: s,
+        image_name: c,
         price_tier: u,
-        create_new_role: c,
+        create_new_role: s,
         unlink_role: d
       }, a = null != a ? a : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
@@ -81,7 +81,7 @@ let a = async (e, t, n) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, s = async e => {
+}, c = async e => {
   try {
     return (await (0, l.Kb)({
       url: o.ANM.GUILD_PRODUCT_LISTINGS(e),
@@ -90,7 +90,7 @@ let a = async (e, t, n) => {
   } catch (e) {
     throw new i.Hx(e)
   }
-}, c = async (e, t) => {
+}, s = async (e, t) => {
   try {
     return (await (0, l.Kb)({
       url: o.ANM.GUILD_PRODUCT_LISTINGS(e, t),

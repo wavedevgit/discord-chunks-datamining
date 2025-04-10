@@ -56,11 +56,11 @@ function A(e) {
     channelId: T,
     messageId: A,
     roleId: C,
-    onViewBlockedProfileClick: R,
-    newAnalyticsLocations: P = []
+    onViewBlockedProfileClick: P,
+    newAnalyticsLocations: R = []
   } = e, w = (0, s.e7)([f.Z], () => f.Z.isBlocked(t.id)), {
     analyticsLocations: D
-  } = (0, u.ZP)([...P, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, p.ZB)({
+  } = (0, u.ZP)([...R, w ? c.Z.BLOCKED_PROFILE_POPOUT : c.Z.IGNORED_PROFILE_POPOUT]), L = (0, p.ZB)({
     layout: w ? "BLOCKED_PROFILE_POPOUT" : "IGNORED_PROFILE_POPOUT",
     userId: t.id,
     guildId: n,
@@ -112,7 +112,7 @@ function A(e) {
                 children: [(0, r.jsx)(y.Z, {
                   isBlocked: w,
                   onClick: () => {
-                    null == R || R(), (0, h.pQ)(N({
+                    null == P || P(), (0, h.pQ)(N({
                       action: j,
                       analyticsLocations: D
                     }, L))
@@ -120,7 +120,7 @@ function A(e) {
                 }), (0, r.jsx)(b.Z, {
                   userId: t.id,
                   onClick: () => {
-                    null == R || R(), (0, h.pQ)(N({
+                    null == P || P(), (0, h.pQ)(N({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
                       analyticsLocations: D
                     }, L))

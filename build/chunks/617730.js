@@ -34,7 +34,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,7 +46,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let m = e => {
+let f = e => {
   let {
     state: t
   } = e;
@@ -71,7 +71,7 @@ function _(e) {
     N = null != t.target_application ? new o.ZP(t.target_application) : null,
     v = _ || null == t.inviter ? null : new s.Z(t.inviter),
     E = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != b && b.hasFeature(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
-    I = m(t),
+    I = f(t),
     j = {
       invite: t,
       user: v,
@@ -90,9 +90,9 @@ function _(e) {
       application: N,
       guild: b,
       user: E || (0, c.X7)(t) ? v : null
-    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, f(g({}, j), {
+    }), (0, c.X7)(t) ? null : (0, r.jsx)(c.jq, m(g({}, j), {
       showBigUserIcon: E
-    })), (0, r.jsx)(c.UM, f(g({}, j), {
+    })), (0, r.jsx)(c.UM, m(g({}, j), {
       showBigUserIcon: E
     })), (0, r.jsx)(c.V6, g({}, j)), (0, r.jsx)(i.zxk, {
       onClick: n,

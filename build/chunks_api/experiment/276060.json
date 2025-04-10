@@ -1,1 +1,1 @@
-{"id":"276060","type":"experiment","data":{"kind":"user","id":"2024-09_likely_atoed_connections","label":"Likely ATO Warning","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Likely ATO Warning","config":{"enabled":false}}]},"fromModule":{"id":"89107"}}
+{"id":"276060","type":"experiment","data":{"kind":"user","id":"2024-09_likely_atoed_connections","label":"Likely ATO Warning","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enable Likely ATO Warning","config":{"enabled":false}}]},"fromModule":{"id":"9059"}}

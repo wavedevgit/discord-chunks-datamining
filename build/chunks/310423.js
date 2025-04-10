@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => I
 }), n(467055), n(388685);
@@ -77,10 +77,10 @@ let I = i.memo(function(e) {
       interactionData: Z
     } = e,
     {
-      analyticsLocations: k
+      analyticsLocations: R
     } = (0, u.ZP)(),
     {
-      onCopy: R,
+      onCopy: k,
       copyRef: D
     } = (0, d.Z)(A, null == Z || null == (t = Z.application_command) ? void 0 : t.id),
     L = (0, o.e7)([g.Z], () => g.Z.getGuild(A.guild_id), [A.guild_id]);
@@ -102,24 +102,24 @@ let I = i.memo(function(e) {
           messageId: A,
           parentOptionKey: w,
           commandOptionSpec: Z,
-          sourceAnalyticsLocations: k
+          sourceAnalyticsLocations: R
         } = t,
-        R = null != w ? w + " " + I.name : I.name;
+        k = null != w ? w + " " + I.name : I.name;
       if (I.type === c.jw.SUB_COMMAND || I.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
             children: [" ", (0, r.jsx)(s.Text, N(O({}, j), {
               children: null != (a = null == Z ? void 0 : Z.name_localized) ? a : I.name
             }))]
-          }, R)],
+          }, k)],
           c = Object.fromEntries(null == (n = null != (l = null == Z ? void 0 : Z.options) ? l : []) ? void 0 : n.map(e => [e.name, e]));
         for (let n of null != (o = I.options) ? o : []) t = t.concat(e({
           option: n,
           channel: T,
           guild: P,
           messageId: A,
-          parentOptionKey: R,
+          parentOptionKey: k,
           commandOptionSpec: c[n.name],
-          sourceAnalyticsLocations: k
+          sourceAnalyticsLocations: R
         }));
         return t
       }
@@ -136,7 +136,7 @@ let I = i.memo(function(e) {
                 guildId: T.guild_id,
                 channelId: T.id,
                 messageId: A,
-                sourceAnalyticsLocations: k,
+                sourceAnalyticsLocations: R,
                 analyticsLocation: {
                   section: x.jXE.CHANNEL_TEXT_AREA_AUTOCOMPLETE
                 }
@@ -198,7 +198,7 @@ let I = i.memo(function(e) {
         children: [(0, r.jsxs)(s.Text, N(O({}, j), {
           children: [" ", null != (p = null == Z ? void 0 : Z.name_localized) ? p : I.name, ": "]
         })), E]
-      }, R)]
+      }, k)]
     }({
       option: n,
       channel: A,
@@ -206,7 +206,7 @@ let I = i.memo(function(e) {
       messageId: w,
       parentOptionKey: null,
       commandOptionSpec: t[n.name],
-      sourceAnalyticsLocations: k
+      sourceAnalyticsLocations: R
     }));
     P = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.Text, N(O({}, j), {
@@ -219,7 +219,7 @@ let I = i.memo(function(e) {
     onCopy: e => {
       var t, n, r;
       let i = null != (r = null == (n = window) || null == (t = n.getSelection()) ? void 0 : t.toString()) ? r : "";
-      i.startsWith("/") && i.endsWith("\n") && R(e, Z)
+      i.startsWith("/") && i.endsWith("\n") && k(e, Z)
     },
     children: [(0, r.jsx)("div", {
       className: E.tooltip,

@@ -1,8 +1,8 @@
-/** Chunk was on 87995 **/
+/** Chunk was on 92976 **/
 n.d(t, {
-  nZ: () => l
+  nZ: () => i
 });
-let a = (0, n(818083).B)({
+let r = (0, n(818083).B)({
   kind: "user",
   id: "2024-10_block_user_feedback",
   label: "Block User Feedback Experiment",
@@ -18,10 +18,10 @@ let a = (0, n(818083).B)({
   }]
 });
 
-function l(e) {
+function i(e) {
   let {
     enabled: t
-  } = a.getCurrentConfig({
+  } = r.getCurrentConfig({
     location: e
   }, {
     autoTrackExposure: !0

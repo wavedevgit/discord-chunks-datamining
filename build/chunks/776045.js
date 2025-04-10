@@ -20,19 +20,19 @@ function c(e) {
     closeLabel: d,
     onConfirm: u,
     iconVariant: g = "warning"
-  } = e, [f, p] = a.useState(!1), h = async () => {
+  } = e, [f, p] = a.useState(!1), m = async () => {
     p(!0);
     try {
       await u(), r()
     } finally {
       p(!1)
     }
-  }, m = null != n ? n : l.NW.string(l.t.D94rwc);
+  }, h = null != n ? n : l.NW.string(l.t.D94rwc);
   return (0, A.jsxs)(o.Y0X, {
     className: i.__invalid_container,
     size: o.CgR.DYNAMIC,
     transitionState: t,
-    "aria-label": m,
+    "aria-label": h,
     children: [(0, A.jsxs)(o.hzk, {
       className: i.content,
       children: [(0, A.jsxs)("div", {
@@ -56,7 +56,7 @@ function c(e) {
         }), (0, A.jsx)(o.X6q, {
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: m
+          children: h
         })]
       }), (0, A.jsx)(o.LZC, {
         size: 12
@@ -69,7 +69,7 @@ function c(e) {
     }), (0, A.jsxs)(o.mzw, {
       children: [(0, A.jsx)(o.zxk, {
         color: o.zxk.Colors.BRAND,
-        onClick: h,
+        onClick: m,
         submitting: f,
         children: c
       }), (0, A.jsx)(o.LZC, {

@@ -5,8 +5,8 @@ n.d(t, {
 var i = n(990547),
   r = n(442837),
   l = n(213609),
-  a = n(541099),
-  o = n(312871);
+  o = n(541099),
+  a = n(312871);
 
 function s(e) {
   let {
@@ -14,9 +14,9 @@ function s(e) {
     commandId: n,
     searchResultsPosition: s,
     query: c
-  } = e, d = (0, r.e7)([a.Z], () => a.Z.entrypoint());
+  } = e, u = (0, r.e7)([o.Z], () => o.Z.entrypoint());
   return {
-    trackSearchResultsItemImpressionRef: (0, o.Z)({
+    trackSearchResultsItemImpressionRef: (0, a.Z)({
       onVisible: () => {
         (0, l.h)({
           type: i.ImpressionTypes.VIEW,
@@ -26,7 +26,7 @@ function s(e) {
             command_id: n,
             search_results_position: s,
             query: c,
-            source: d
+            source: u
           }
         })
       },

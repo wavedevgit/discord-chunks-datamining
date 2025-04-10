@@ -1,29 +1,29 @@
-/** Chunk was on 11212 **/
+/** Chunk was on web.js **/
 "use strict";
-a.d(e, {
-  n: () => f
+n.d(t, {
+  n: () => s
 });
-var c = a(913527),
-  d = a.n(c),
-  s = a(70956),
-  n = a(388032);
-let f = t => {
-  let e = Math.max(0, d()(t).diff(d()(), "s"));
-  if (e < 2 * s.Z.Seconds.HOUR) {
-    let t = Math.round(e / s.Z.Seconds.MINUTE);
-    return n.NW.formatToPlainString(n.t["2JbxRE"], {
-      count: t
+var r = n(913527),
+  i = n.n(r),
+  o = n(70956),
+  a = n(388032);
+let s = e => {
+  let t = Math.max(0, i()(e).diff(i()(), "s"));
+  if (t < 2 * o.Z.Seconds.HOUR) {
+    let e = Math.round(t / o.Z.Seconds.MINUTE);
+    return a.NW.formatToPlainString(a.t["2JbxRE"], {
+      count: e
     })
   }
-  if (e < s.Z.Seconds.DAY) {
-    let t = Math.round(e / s.Z.Seconds.HOUR);
-    return n.NW.formatToPlainString(n.t.V9Ebys, {
-      count: t
+  if (t < o.Z.Seconds.DAY) {
+    let e = Math.round(t / o.Z.Seconds.HOUR);
+    return a.NW.formatToPlainString(a.t.V9Ebys, {
+      count: e
     })
   } {
-    let t = Math.round(e / s.Z.Seconds.DAY);
-    return n.NW.formatToPlainString(n.t.OQFxHh, {
-      count: t
+    let e = Math.round(t / o.Z.Seconds.DAY);
+    return a.NW.formatToPlainString(a.t.OQFxHh, {
+      count: e
     })
   }
 }

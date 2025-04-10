@@ -38,13 +38,13 @@ function T(e) {
   }), C = (0, o.e7)([_.default], () => {
     var e;
     return (null == (e = _.default.getCurrentUser()) ? void 0 : e.id) === T.id
-  }), R = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
+  }), P = (0, o.e7)([f.Z], () => f.Z.findActivity(T.id, e => {
     let {
       type: t
     } = e;
     return t === g.IIU.CUSTOM_STATUS
-  })), P = () => !C && N === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? A && null == R : t === m.n_.STATUS ? A : t === m.n_.ACTIVITY && !A), [w, D] = i.useState(!1);
-  (0, l.Z)(() => D(!0), P() ? O : null);
+  })), R = () => !C && N === m.y0.BITE_SIZE && (t === m.n_.AVATAR ? A && null == P : t === m.n_.STATUS ? A : t === m.n_.ACTIVITY && !A), [w, D] = i.useState(!1);
+  (0, l.Z)(() => D(!0), R() ? O : null);
   let {
     asset: L,
     assetClassName: x,

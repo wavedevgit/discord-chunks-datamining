@@ -10,12 +10,12 @@ n.d(t, {
   VU: () => eG,
   Vx: () => eM,
   Wq: () => ej,
-  YG: () => eP,
+  YG: () => eR,
   ZJ: () => ew,
   bO: () => eb,
   bl: () => eL,
   eg: () => eU,
-  h0: () => eR,
+  h0: () => eP,
   ne: () => eC,
   oK: () => eV,
   r7: () => eA,
@@ -50,8 +50,8 @@ var r = n(562858),
   N = n(29823),
   A = n(516038),
   C = n(590227),
-  R = n(968796),
-  P = n(659941),
+  P = n(968796),
+  R = n(659941),
   w = n(979233),
   D = n(483873),
   L = n(438390),
@@ -422,7 +422,7 @@ let eA = () => ({
         } = e;
         return t < 1
       },
-      purchaseIconSrc: P
+      purchaseIconSrc: R
     },
     7: {
       itemId: 2,
@@ -586,7 +586,7 @@ let eA = () => ({
     type: r.h.ITEM,
     id: 28
   }],
-  eR = [{
+  eP = [{
     type: r.h.ITEM_UPGRADE,
     id: 0
   }, {
@@ -599,7 +599,7 @@ let eA = () => ({
     type: r.h.ITEM_UPGRADE,
     id: 7
   }],
-  eP = [{
+  eR = [{
     itemId: 7,
     purchasesRequired: 10
   }, {
@@ -723,7 +723,7 @@ let eL = {
       })
     },
     13: {
-      icon: R,
+      icon: P,
       name: s.NW.string(a.Z.ihlJt7),
       description: s.NW.formatToPlainString(a.Z.gNIyY2, {
         count: eL[13]

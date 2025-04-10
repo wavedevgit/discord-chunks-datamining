@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => P
 }), n(388685);
@@ -76,10 +76,10 @@ function P(e) {
       width: W,
       height: U,
       layout: B,
-      idle: H
+      idle: G
     } = e,
-    G = null != A,
-    F = h.Z.getVideoComponent(),
+    F = null != A,
+    H = h.Z.getVideoComponent(),
     V = p.default.getId(),
     [z, Y] = i.useState(null),
     q = (0, c.Z)(z),
@@ -200,7 +200,7 @@ function P(e) {
                   noBorder: ep >= W || ed >= U,
                   channel: R,
                   className: v.focusedVideo,
-                  videoComponent: F,
+                  videoComponent: H,
                   paused: D,
                   width: W,
                   participant: t,
@@ -209,14 +209,14 @@ function P(e) {
                   onContextMenu: P,
                   onVideoResize: ev,
                   inCall: w,
-                  inPopout: G
+                  inPopout: F
                 })
               }, i) : null
             })
           })
         }), eo ? (0, r.jsx)(a.animated.div, {
           className: o()(j.actionRow, {
-            [j.idle]: H
+            [j.idle]: G
           }),
           style: {
             bottom: eC.value

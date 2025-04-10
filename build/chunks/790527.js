@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 });
 var r = n(200651),
   i = n(192379),
@@ -31,7 +31,7 @@ var r = n(200651),
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -39,7 +39,7 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -47,10 +47,10 @@ function R(e, t) {
   return i
 }
 
-function P(e) {
+function R(e) {
   var t, n, o, {
-      title: R,
-      type: P,
+      title: P,
+      type: R,
       guildBoostProps: w,
       analyticsSource: D,
       analyticsLocation: L,
@@ -99,7 +99,7 @@ function P(e) {
       analyticsLocations: em,
       analyticsSource: D,
       guildBoostProps: w,
-      type: P
+      type: R
     },
     eE = i.useRef(eg);
   i.useEffect(() => {
@@ -128,7 +128,7 @@ function P(e) {
     })
   }, [ef, J, $]);
   let eb = (0, s.e7)([m.Z], () => m.Z.affinities),
-    ey = eb.length > 1 && (0, O.Y)(P),
+    ey = eb.length > 1 && (0, O.Y)(R),
     ev = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
     ev || c.MH()
@@ -172,7 +172,7 @@ function P(e) {
     src: ed.artURL
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
     className: a()(N.root, !eh && j),
-    "aria-label": R,
+    "aria-label": P,
     transitionState: F,
     children: [null != eS && (0, r.jsxs)("div", {
       className: eI,
@@ -186,9 +186,9 @@ function P(e) {
       className: a()(en ? N.enhancedContent : N.content, !eh && U),
       children: $ ? (0, r.jsx)(l.$jN, {}) : eh ? (0, r.jsx)(b.ZP, {
         onClose: Z,
-        type: P,
+        type: R,
         subscriptionTier: null != (o = null == e_ || null == (n = e_.subscription_trial) ? void 0 : n.sku_id) ? o : I.Si.TIER_2,
-        headingText: R,
+        headingText: P,
         context: M,
         analyticsLocationObject: L,
         discountOffer: ep,
@@ -203,7 +203,7 @@ function P(e) {
               [N.enhancedHeader]: en
             }, B),
             variant: "heading-xl/bold",
-            children: [R, Q ? (0, r.jsx)(f.Z, {
+            children: [P, Q ? (0, r.jsx)(f.Z, {
               className: N.betaTag
             }) : null]
           }), ey ? (0, r.jsx)(v.Z, {

@@ -1,6 +1,6 @@
 /** Chunk was on 73628 **/
 r.d(t, {
-  Z: () => x
+  Z: () => q
 }), r(388685);
 var n = r(200651),
   A = r(192379),
@@ -15,8 +15,8 @@ var n = r(200651),
   g = r(981631),
   f = r(388032),
   p = r(3840),
-  h = r(999249);
-let m = (0, l.Z)(),
+  m = r(999249);
+let h = (0, l.Z)(),
   b = (0, d.kt)({
     id: "1",
     type: g.d4z.DM
@@ -39,15 +39,15 @@ function C(e) {
     text: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: o()(h.maxLength, {
-      [h.errorOverflow]: r
+    className: o()(m.maxLength, {
+      [m.errorOverflow]: r
     }),
     "aria-hidden": "true",
     children: [null != (t = null == a ? void 0 : a.length) ? t : 0, " ", null != A && "/ ".concat(A)]
   })
 }
 
-function x(e) {
+function q(e) {
   var t;
   let {
     "aria-labelledby": r,
@@ -55,15 +55,15 @@ function x(e) {
     id: l,
     autoFocus: d,
     maxLength: g,
-    onChange: h,
-    onSubmit: x,
-    showCharacterCount: q = !1,
+    onChange: m,
+    onSubmit: q,
+    showCharacterCount: x = !1,
     placeholder: j,
     required: N,
     value: O,
     enableThemedBackground: U = !1,
     parentModalKey: P
-  } = e, y = (0, i.Gc0)(), [V, W] = A.useState(() => (0, s.JM)(O)), I = A.useRef(!0 === d), T = null != r ? r : null == y ? void 0 : y.titleId, F = null != (t = null == y ? void 0 : y.errorId) ? t : m, Z = A.useMemo(() => ({
+  } = e, V = (0, i.Gc0)(), [W, y] = A.useState(() => (0, s.JM)(O)), I = A.useRef(!0 === d), T = null != r ? r : null == V ? void 0 : V.titleId, F = null != (t = null == V ? void 0 : V.errorId) ? t : h, Z = A.useMemo(() => ({
     analyticsName: "simple",
     autocomplete: {
       alwaysUseLayer: !0,
@@ -91,13 +91,13 @@ function x(e) {
     id: l,
     maxCharacterCount: g,
     onChange: function(e, t, r) {
-      h(t), W(r)
+      m(t), y(r)
     },
     placeholder: j,
     required: N,
     channel: b,
     textValue: O,
-    richValue: V,
+    richValue: W,
     type: Z,
     onBlur: () => {
       I.current = !1
@@ -106,16 +106,16 @@ function x(e) {
       I.current = !0
     },
     focused: I.current,
-    onSubmit: null != x ? x : v,
+    onSubmit: null != q ? q : v,
     disableThemedBackground: !U,
     parentModalKey: P,
     emojiPickerCloseOnModalOuterClick: !0,
-    children: [!0 === q && (0, n.jsx)(C, {
-      hasError: null != y.error || null != g && O.length > g,
+    children: [!0 === x && (0, n.jsx)(C, {
+      hasError: null != V.error || null != g && O.length > g,
       text: O,
       maxLength: g
     }), null != g && (0, n.jsx)(i.nn4, {
-      id: m,
+      id: h,
       children: f.NW.format(f.t["+DFxLS"], {
         maxLength: g
       })

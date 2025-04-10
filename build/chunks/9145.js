@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => U
 }), n(388685);
@@ -49,9 +49,9 @@ function U(e) {
     maxHeight: l,
     connectedLocation: U,
     renderExternalHeader: B
-  } = e, H = (0, m.Z)({
+  } = e, G = (0, m.Z)({
     location: "ActivityPanelFocusedView"
-  }), G = (0, S.Z)(), F = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), Y = (0, N.gb)(F), q = (0, N.uF)(Y), K = i.useCallback(() => {
+  }), F = (0, S.Z)(), H = (0, a.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(U), [U]), V = (0, P.pY)(U), z = (0, a.e7)([_.Z], () => _.Z.getChannel(V)), Y = (0, N.gb)(H), q = (0, N.uF)(Y), K = i.useCallback(() => {
     (0, O.tg)(R.Ez.PIP)
   }, []), X = i.useRef(null), Q = (0, a.e7)([E.ZP], () => E.ZP.getFocusedLayout()), J = Q !== R.MI.NO_CHAT, [$, ee] = i.useState(null != (t = f.ZP.activityPanelHeight) ? t : l), et = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -75,13 +75,13 @@ function U(e) {
   let el = er.width / Math.max(er.height, 1) < R.I0,
     eo = 0,
     ea = 0,
-    es = (0, I.Z)(null == G ? void 0 : G.id);
+    es = (0, I.Z)(null == F ? void 0 : F.id);
   if (!es) {
     let e = er.width,
       t = er.height;
     el ? ((t = er.width / R.I0) > er.height && (e = (t = er.height) * R.I0), ea = (er.height - t) / 2) : ((e = Math.min(er.height * R.I0)) > er.width && (t = (e = er.width) / R.I0), eo = (er.width - e) / 2)
   }
-  let ec = q.get(null != (n = null == G ? void 0 : G.id) ? n : ""),
+  let ec = q.get(null != (n = null == F ? void 0 : F.id) ? n : ""),
     eu = (0, a.e7)([C.Z], () => C.Z.getChannelId()),
     ed = (0, a.Wu)([y.ZP], () => {
       var e;
@@ -143,7 +143,7 @@ function U(e) {
         }), r) : l
       }, [s, e, n, t])
     }(J, $, l);
-  if (null == G) return null;
+  if (null == F) return null;
   let ef = [];
   null != ec && (ef = Array.from(ec.embeddedActivity.userIds).map(e => x.default.getUser(e)).filter(e => null != e && void 0 !== e));
   let em = (e, t) => {
@@ -175,7 +175,7 @@ function U(e) {
             color: "header-primary",
             variant: "text-md/semibold",
             className: L.headerTitle,
-            children: null == G ? void 0 : G.name
+            children: null == F ? void 0 : F.name
           })
         }), (0, r.jsx)("div", {
           className: o()(L.activityContainer, {
@@ -190,7 +190,7 @@ function U(e) {
           ref: en,
           children: (0, r.jsx)(Z.Z, {
             className: L.iframe,
-            embedId: (0, A.Z)(U.id, G.id)
+            embedId: (0, A.Z)(U.id, F.id)
           })
         }), null != eu ? (0, r.jsxs)("div", {
           className: L.footer,
@@ -203,10 +203,10 @@ function U(e) {
             renderUser: e => em(e, z)
           }), (0, r.jsxs)("div", {
             className: L.footerButtons,
-            children: [H ? null : (0, r.jsx)(w.Z, {
+            children: [G ? null : (0, r.jsx)(w.Z, {
               channelId: eu,
               className: L.circularButton
-            }), H ? (0, r.jsxs)("div", {
+            }), G ? (0, r.jsxs)("div", {
               className: L.buttonSection,
               children: [(0, r.jsx)(w.Z, {
                 channelId: eu
@@ -219,13 +219,13 @@ function U(e) {
             }) : null, (0, r.jsx)("div", {
               className: L.leaveButtonContainer,
               children: (0, r.jsx)(b.Z, {
-                applicationId: G.id,
+                applicationId: F.id,
                 location: U,
                 centerButton: !0,
                 color: "disconnect",
-                className: H ? void 0 : L.leaveActivityButton
+                className: G ? void 0 : L.leaveActivityButton
               })
-            }), H ? null : (0, r.jsx)(g.d, {
+            }), G ? null : (0, r.jsx)(g.d, {
               label: M.NW.string(M.t.brPQ5e),
               onClick: K,
               iconComponent: c.dOc,

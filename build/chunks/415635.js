@@ -1,6 +1,6 @@
 /** Chunk was on 93602 **/
 n.d(t, {
-  Z: () => b
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -16,12 +16,12 @@ var r = n(200651),
   m = n(981631),
   g = n(490650);
 
-function b(e) {
+function O(e) {
   let {
     channelId: t,
     guildId: n,
-    userId: b,
-    containerDimensions: O
+    userId: O,
+    containerDimensions: b
   } = e, y = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [h, v] = l.useState([]), j = h.length < 50;
   l.useEffect(() => {
     function e(e) {
@@ -33,7 +33,7 @@ function b(e) {
         animationType: s,
         animationId: f
       } = e;
-      if (null != b && b !== o || u.Z.getEnabled() && (0, d.Z)(null != (r = null == a ? void 0 : a.name) ? r : "")) return;
+      if (null != O && O !== o || u.Z.getEnabled() && (0, d.Z)(null != (r = null == a ? void 0 : a.name) ? r : "")) return;
       let g = null != a && null != s && null != f;
       if (l === t && !y && j && g) {
         let e = (0, p._r)(a),
@@ -55,7 +55,7 @@ function b(e) {
     return a.Z.subscribe("VOICE_CHANNEL_EFFECT_SEND", e), () => {
       a.Z.unsubscribe("VOICE_CHANNEL_EFFECT_SEND", e)
     }
-  }, [t, n, b, y, j]);
+  }, [t, n, O, y, j]);
   let S = l.useCallback(e => {
     v(t => {
       let n = [...t],
@@ -66,12 +66,12 @@ function b(e) {
   return y ? null : (0, r.jsx)("div", {
     className: g.effectsWrapper,
     style: {
-      width: O.width
+      width: b.width
     },
     children: (0, r.jsx)("div", {
       className: g.effects,
       children: h.map(e => (0, r.jsx)(f.Z, {
-        containerDimensions: O,
+        containerDimensions: b,
         effect: e,
         onComplete: S
       }, e.id))

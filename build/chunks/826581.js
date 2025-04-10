@@ -91,7 +91,7 @@ function C() {
   A = !0
 }
 
-function R(e) {
+function P(e) {
   let {
     status: t,
     requests: n,
@@ -103,7 +103,7 @@ function R(e) {
   })
 }
 
-function P() {
+function R() {
   A = !1
 }
 let w = e => "guild-join-request=".concat(e),
@@ -230,9 +230,9 @@ class X extends(r = a.ZP.Store) {
 m(X, "displayName", "GuildJoinRequestStoreV2");
 let J = new X(l.Z, {
   GUILD_JOIN_REQUEST_BY_ID_FETCH_SUCCESS: N,
-  GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,
+  GUILD_JOIN_REQUESTS_FETCH_SUCCESS: P,
   GUILD_JOIN_REQUESTS_FETCH_START: C,
-  GUILD_JOIN_REQUESTS_FETCH_FAILURE: P,
+  GUILD_JOIN_REQUESTS_FETCH_FAILURE: R,
   GUILD_JOIN_REQUESTS_BULK_ACTION: F,
   GUILD_JOIN_REQUEST_CREATE: B,
   GUILD_JOIN_REQUEST_UPDATE: B,

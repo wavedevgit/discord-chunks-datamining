@@ -1,20 +1,20 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var i = n(990547),
   r = n(213609),
   l = n(541099),
-  a = n(312871);
+  o = n(312871);
 
-function o(e) {
+function a(e) {
   let {
     sectionName: t,
     numItems: n,
-    numVisibleItems: o
+    numVisibleItems: a
   } = e;
   return {
-    trackSectionImpressionRef: (0, a.Z)({
+    trackSectionImpressionRef: (0, o.Z)({
       onVisible: () => {
         (0, r.h)({
           type: i.ImpressionTypes.VIEW,
@@ -22,7 +22,7 @@ function o(e) {
           properties: {
             section_name: t,
             num_items: n,
-            num_visible_items: o,
+            num_visible_items: a,
             source: l.Z.entrypoint()
           }
         })

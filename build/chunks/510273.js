@@ -1,58 +1,58 @@
-/** Chunk was on 69313 **/
+/** Chunk was on 99391 **/
 n.d(t, {
-  Z: () => E
+  Z: () => _
 }), n(953529);
-var i = n(200651),
-  r = n(192379),
-  l = n(120356),
-  o = n.n(l),
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  l = n.n(o),
   s = n(481060),
   a = n(955204),
   c = n(818765),
   u = n(674680),
   d = n(127058);
-let h = e => {
+let p = e => {
   let {
     color: t
   } = e;
-  return (0, i.jsxs)("svg", {
+  return (0, r.jsxs)("svg", {
     width: "48",
     height: "28",
     viewBox: "0 0 55 34",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",
-    children: [(0, i.jsx)("rect", {
+    children: [(0, r.jsx)("rect", {
       x: "10.1968",
       y: "7",
       width: "14.4203",
       height: "14.4203",
       transform: "rotate(45 10.1968 7)",
       className: d.__invalid_toastBG
-    }), (0, i.jsx)("rect", {
+    }), (0, r.jsx)("rect", {
       x: "27.3936",
       y: "0.59021",
       width: "23.4851",
       height: "23.4851",
       transform: "rotate(45 27.3936 0.59021)",
       className: d.__invalid_toastBG
-    }), (0, i.jsx)("rect", {
+    }), (0, r.jsx)("rect", {
       x: "44.5903",
       y: "7",
       width: "14.4203",
       height: "14.4203",
       transform: "rotate(45 44.5903 7)",
       className: d.__invalid_toastBG
-    }), (0, i.jsx)("rect", {
+    }), (0, r.jsx)("rect", {
       x: "10.1968",
       y: "13",
       width: "6",
       height: "6",
       transform: "rotate(45 10.1968 13)",
       fill: t
-    }), (0, i.jsx)("path", {
+    }), (0, r.jsx)("path", {
       d: "M27.3936 4.39355L34.1233 16.2873L27.3936 28.1811L20.6638 16.2873L27.3936 4.39355Z",
       fill: t
-    }), (0, i.jsx)("rect", {
+    }), (0, r.jsx)("rect", {
       x: "44.5903",
       y: "13",
       width: "6",
@@ -63,20 +63,20 @@ let h = e => {
   })
 };
 
-function E(e) {
+function _(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
-    name: l,
-    description: E,
-    rarity: g,
+    name: o,
+    description: _,
+    rarity: h,
     hideDescriptionUntilUnlock: f,
-    onAction: p
+    onAction: m
   } = t, {
-    color: _
-  } = (0, a.F7)(g);
-  r.useEffect(() => {
+    color: b
+  } = (0, a.F7)(h);
+  i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
     }, 50);
@@ -84,35 +84,35 @@ function E(e) {
       clearTimeout(e)
     }
   }, []);
-  let O = null != p && n,
-    m = O ? s.P3F : "div";
-  return (0, i.jsxs)(m, {
-    className: o()(d.container, O && d.actionable),
+  let g = null != m && n,
+    E = g ? s.P3F : "div";
+  return (0, r.jsxs)(E, {
+    className: l()(d.container, g && d.actionable),
     onClick: () => {
-      O && p()
+      g && m()
     },
-    children: [(0, i.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: d.iconContainer,
-      children: (0, i.jsx)(u.Z, {
+      children: (0, r.jsx)(u.Z, {
         achievementId: t.id,
         size: u.Z.Sizes.SIZE_40,
         unlocked: n
       })
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: d.__invalid_nameContainer,
-      children: [(0, i.jsx)(s.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: l()
-      }), (0, i.jsx)(s.Text, {
+        children: o()
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : E()
+        children: f && !n ? "?????" : _()
       })]
-    }), (0, i.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: d.flair,
-      children: (0, i.jsx)(h, {
-        color: _
+      children: (0, r.jsx)(p, {
+        color: b
       })
     })]
   })

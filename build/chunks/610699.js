@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => L
 }), n(539854), n(361932), n(187205), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
@@ -33,40 +33,40 @@ var r = n(200651),
   A = n(981631),
   w = n(245335),
   Z = n(388032),
-  k = n(582909);
+  R = n(582909);
 
-function R(e) {
+function k(e) {
   let {
     members: t,
     membersOnline: n,
     textColor: i
   } = e, a = [];
   return null != n && n > 0 && a.push((0, r.jsxs)("div", {
-    className: k.statusWrapper,
+    className: R.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: k.statusOnline
+      className: R.statusOnline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: k.count,
+      className: R.count,
       color: i,
       children: Z.NW.format(Z.t["LC+S+v"], {
         membersOnline: n
       })
     })]
   }, "onlineCount")), null != t && a.push((0, r.jsxs)("div", {
-    className: k.statusWrapper,
+    className: R.statusWrapper,
     children: [(0, r.jsx)("i", {
-      className: k.statusOffline
+      className: R.statusOffline
     }), (0, r.jsx)(u.Text, {
       variant: "text-xs/normal",
-      className: k.count,
+      className: R.count,
       color: i,
       children: Z.NW.format(Z.t.zRl6XV, {
         count: t
       })
     })]
   }, "memberCount")), (0, r.jsx)("div", {
-    className: k.statusCounts,
+    className: R.statusCounts,
     children: a
   })
 }
@@ -81,11 +81,11 @@ function D(e) {
   if (null != t && null != n) {
     let e = (0, v.KS)(t, n);
     return (0, r.jsxs)("div", {
-      className: l()(k.channel, {
-        [k.ended]: i
+      className: l()(R.channel, {
+        [R.ended]: i
       }),
       children: [null != e ? (0, r.jsx)(e, {
-        className: k.channelIcon,
+        className: R.channelIcon,
         size: "xs",
         color: "currentColor"
       }) : null, (0, r.jsx)(E.Z, {
@@ -101,8 +101,8 @@ function D(e) {
     })
   }
   return null != n ? (0, r.jsx)("div", {
-    className: l()(k.channel, {
-      [k.ended]: i
+    className: l()(R.channel, {
+      [R.ended]: i
     }),
     children: (0, r.jsx)(E.Z, {
       children: (0, r.jsx)(u.Text, {
@@ -151,12 +151,12 @@ function L(e) {
         return _.id === t
       })
     }),
-    k = N.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
-    R = (0, c.e7)([C.Z], () => null != k && C.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
+    R = N.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
+    k = (0, c.e7)([C.Z], () => null != R && C.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, R), [R]),
     {
       analyticsLocations: D
     } = (0, f.ZP)(m.Z.INVITE_EMBED),
-    L = (0, c.Wu)([p.ZP], () => null != k ? p.ZP.getEmbeddedActivitiesForChannel(k.id).filter(e => e.applicationId === _.id).flatMap(e => Array.from(e.userIds)) : [], [k, _.id]),
+    L = (0, c.Wu)([p.ZP], () => null != R ? p.ZP.getEmbeddedActivitiesForChannel(R.id).filter(e => e.applicationId === _.id).flatMap(e => Array.from(e.userIds)) : [], [R, _.id]),
     W = (0, c.Wu)([S.default], () => L.map(e => S.default.getUser(e)).filter(e => null != e), [L]),
     U = i.useCallback(() => {
       (0, d.r$)(l, "accept", D), d.ZP.acceptInviteAndTransitionToInviteChannel({
@@ -171,15 +171,15 @@ function L(e) {
     if (null == l.guild) return (0, r.jsx)(P.Z, {});
     x = new O.ZP(l.guild)
   }
-  let G = B && !R || B && E;
-  return (B && E && (a = Z.NW.string(Z.t.wJNK8P)), R || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == v) ? null : (0, r.jsx)(f.Gt, {
+  let G = B && !k || B && E;
+  return (B && E && (a = Z.NW.string(Z.t.wJNK8P)), k || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == v) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
       app: v,
       invite: l,
       activityUsers: W,
       isMember: B,
-      channel: k,
+      channel: R,
       guild: x,
       members: u,
       membersOnline: h,
@@ -251,7 +251,7 @@ function M(e) {
     embedUrl: N
   }, P), n = n = {
     info: (0, r.jsxs)("div", {
-      className: k.infoWrapper,
+      className: R.infoWrapper,
       children: [(0, r.jsx)(D, {
         channel: c,
         guild: u,
@@ -261,7 +261,7 @@ function M(e) {
         activityUsers: o,
         guildId: u.id,
         activityText: Z.NW.string(Z.t.BMTj29)
-      }) : (0, r.jsx)(R, {
+      }) : (0, r.jsx)(k, {
         members: d,
         membersOnline: p,
         textColor: "none"

@@ -26,8 +26,8 @@ var r = n(507604),
   N = i.RegExp,
   A = N.prototype,
   C = i.SyntaxError,
-  R = o(A.exec),
-  P = o("".charAt),
+  P = o(A.exec),
+  R = o("".charAt),
   w = o("".replace),
   D = o("".indexOf),
   L = o("".slice),
@@ -42,8 +42,8 @@ var r = n(507604),
   })),
   V = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = !1; r <= n; r++) {
-      if ("\\" === (t = P(e, r))) {
-        i += t + P(e, ++r);
+      if ("\\" === (t = R(e, r))) {
+        i += t + R(e, ++r);
         continue
       }
       o || "." !== t ? ("[" === t ? o = !0 : "]" === t && (o = !1), i += t) : i += "[\\s\\S]"
@@ -52,7 +52,7 @@ var r = n(507604),
   },
   F = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = [], a = c(null), s = !1, l = !1, u = 0, d = ""; r <= n; r++) {
-      if ("\\" === (t = P(e, r))) t += P(e, ++r);
+      if ("\\" === (t = R(e, r))) t += R(e, ++r);
       else if ("]" === t) s = !1;
       else if (!s) switch (!0) {
         case "[" === t:
@@ -60,7 +60,7 @@ var r = n(507604),
           break;
         case "(" === t:
           if (i += t, "?:" === L(e, r + 1, r + 3)) continue;
-          R(x, L(e, r + 1)) && (r += 2, l = !0), u++;
+          P(x, L(e, r + 1)) && (r += 2, l = !0), u++;
           continue;
         case ">" === t && l:
           if ("" === d || b(a, d)) throw new C("Invalid capture group name");

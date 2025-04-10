@@ -63,15 +63,15 @@ let m = 3e5,
   N = 0,
   A = 0,
   C = 0,
-  R = 0,
-  P = 0;
+  P = 0,
+  R = 0;
 
 function w() {
   C = Object.values(g).length;
   let {
     [d.OGo.PENDING_INCOMING]: e = 0, [d.OGo.PENDING_OUTGOING]: t = 0, [d.OGo.FRIEND]: n = 0
   } = o().countBy(Object.values(g), e => e);
-  N = t, A = n, R = y.size, P = O.size, T = Math.max(e - R - P, 0)
+  N = t, A = n, P = y.size, R = O.size, T = Math.max(e - P - R, 0)
 }
 
 function D(e) {
@@ -167,10 +167,10 @@ class G extends(r = a.ZP.Store) {
     return T
   }
   getSpamCount() {
-    return R
+    return P
   }
   getPendingIgnoredCount() {
-    return P
+    return R
   }
   getOutgoingCount() {
     return N

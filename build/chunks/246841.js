@@ -22,15 +22,15 @@ function s(e) {
     onAction: m
   } = e, {
     label: g,
-    tooltip: b,
-    loading: O,
+    tooltip: O,
+    loading: b,
     disabled: y,
     onClick: h
   } = (0, o.Ih)(t, n, s), v = () => {
     null == m || m(), h()
   };
   return (0, r.jsx)(l.ua7, {
-    text: b,
+    text: O,
     children: e => {
       let {
         onMouseEnter: t,
@@ -47,7 +47,7 @@ function s(e) {
         onMouseEnter: t,
         onMouseLeave: n,
         disabled: y,
-        submitting: O,
+        submitting: b,
         children: [(0, r.jsx)(i.Z, {
           width: 16,
           height: 16

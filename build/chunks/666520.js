@@ -1,4 +1,4 @@
-/** Chunk was on 78604 **/
+/** Chunk was on 69774 **/
 t.d(n, {
   Z: () => p
 }), t(35282);
@@ -20,20 +20,20 @@ function p(e) {
     userId: p,
     onUpdate: b
   } = e, y = (0, i.e7)([a.Z], () => a.Z.hidePersonalInformation), {
-    loading: m,
+    loading: I,
     note: g
-  } = (0, c.Z)(p), I = o.useRef(null);
+  } = (0, c.Z)(p), m = o.useRef(null);
   return (o.useEffect(() => {
     if (!n || y) return;
-    let e = I.current;
+    let e = m.current;
     (null == e ? void 0 : e.selectionStart) != null && (e.focus(), e.setSelection(e.value.length, e.value.length))
   }, [n, y]), y) ? null : (0, r.jsx)("div", {
     className: t,
     children: (0, r.jsx)(l.lcI, {
-      ref: I,
+      ref: m,
       className: f.textarea,
-      disabled: m,
-      placeholder: m ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
+      disabled: I,
+      placeholder: I ? u.NW.string(u.t["WLKx//"]) : u.NW.string(u.t.VBhOe3),
       "aria-label": u.NW.string(u.t.PbMNh4),
       onBlur: e => {
         let n = e.currentTarget.value;

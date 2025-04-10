@@ -223,7 +223,7 @@
     })]
   }
 
-  function R(e) {
+  function P(e) {
     var t = c(e).toHsl(),
       n = t.h;
     return [c(e), c({
@@ -237,7 +237,7 @@
     })]
   }
 
-  function P(e, t, n) {
+  function R(e, t, n) {
     t = t || 6, n = n || 30;
     var r = c(e).toHsl(),
       i = 360 / n,
@@ -403,7 +403,7 @@
       return e.apply(null, [this].concat([].slice.call(t)))
     },
     analogous: function() {
-      return this._applyCombination(P, arguments)
+      return this._applyCombination(R, arguments)
     },
     complement: function() {
       return this._applyCombination(N, arguments)
@@ -412,7 +412,7 @@
       return this._applyCombination(w, arguments)
     },
     splitcomplement: function() {
-      return this._applyCombination(R, arguments)
+      return this._applyCombination(P, arguments)
     },
     triad: function() {
       return this._applyCombination(A, arguments)

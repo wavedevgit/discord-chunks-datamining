@@ -1,13 +1,13 @@
-/** Chunk was on 95287 **/
+/** Chunk was on 89311 **/
 r.d(t, {
   Z: () => d
 }), r(388685);
 var n = r(200651),
   a = r(192379),
-  o = r(481060),
-  i = r(312097),
-  l = r(810568),
-  s = r(388032),
+  i = r(481060),
+  l = r(312097),
+  s = r(810568),
+  o = r(388032),
   c = r(263930),
   u = r(301736);
 
@@ -15,7 +15,7 @@ function d(e) {
   let {
     detectedGame: t,
     trackAction: r
-  } = e, d = a.useRef(null), p = a.useMemo(() => {
+  } = e, d = a.useRef(null), m = a.useMemo(() => {
     let e = t.artwork.map(e => ({
       url: e,
       type: "IMAGE"
@@ -24,9 +24,9 @@ function d(e) {
       url: e,
       type: "IMAGE"
     })), ...e]
-  }, [t.artwork, t.screenshots]), f = p.length > 2;
+  }, [t.artwork, t.screenshots]), g = m.length > 2;
 
-  function m(e) {
+  function f(e) {
     if (null == d.current) return;
     let t = d.current.getScrollerState().scrollLeft;
     d.current.scrollTo({
@@ -34,27 +34,27 @@ function d(e) {
       animate: !0
     })
   }
-  return 0 === p.length ? null : (0, n.jsxs)("div", {
-    children: [(0, n.jsx)(o.X6q, {
+  return 0 === m.length ? null : (0, n.jsxs)("div", {
+    children: [(0, n.jsx)(i.X6q, {
       className: c.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: s.NW.string(s.t["bNdK5+"])
+      children: o.NW.string(o.t["bNdK5+"])
     }), (0, n.jsxs)("div", {
-      className: f ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
-      children: [(0, n.jsx)(o.xVE, {
+      className: g ? u.gameProfileMediaSmall : u.gameProfileMediaLarge,
+      children: [(0, n.jsx)(i.xVE, {
         ref: d,
         className: u.imageScroller,
         orientation: "horizontal",
-        children: p.map((e, t) => (0, n.jsx)(o.P3F, {
+        children: m.map((e, t) => (0, n.jsx)(i.P3F, {
           className: u.imageClickable,
           focusProps: {
             offset: 4,
             ringClassName: u.gameArtworkFocusRing
           },
           onClick: () => {
-            r(l.as.ClickImage), (0, i.K)({
-              items: p,
+            r(s.as.ClickImage), (0, l.K)({
+              items: m,
               startingIndex: t,
               shouldHideMediaOptions: !0,
               location: "GameProfileMedia"
@@ -63,28 +63,28 @@ function d(e) {
           children: (0, n.jsx)("img", {
             src: e.url,
             className: u.gameArtwork,
-            alt: s.NW.formatToPlainString(s.t.COYYrq, {
+            alt: o.NW.formatToPlainString(o.t.COYYrq, {
               game: name
             })
           })
         }, t))
-      }), f && (0, n.jsxs)("div", {
+      }), g && (0, n.jsxs)("div", {
         className: u.mediaOverlay,
         children: [(0, n.jsx)("div", {
           className: u.gradientLeft
-        }), (0, n.jsx)(o.P3F, {
+        }), (0, n.jsx)(i.P3F, {
           className: u.arrowClickable,
-          onClick: () => m(-1),
-          children: (0, n.jsx)(o.whL, {
+          onClick: () => f(-1),
+          children: (0, n.jsx)(i.whL, {
             className: u.arrow,
             color: "currentColor"
           })
         }), (0, n.jsx)("div", {
           className: u.gradientRight
-        }), (0, n.jsx)(o.P3F, {
+        }), (0, n.jsx)(i.P3F, {
           className: u.arrowClickable,
-          onClick: () => m(1),
-          children: (0, n.jsx)(o.ZSh, {
+          onClick: () => f(1),
+          children: (0, n.jsx)(i.ZSh, {
             className: u.arrow,
             color: "currentColor"
           })

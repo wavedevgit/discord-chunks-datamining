@@ -1,48 +1,48 @@
-/** Chunk was on 86590 **/
+/** Chunk was on 87337 **/
 n.d(t, {
-  Z: () => c
+  Z: () => o
 });
-var i = n(200651);
+var r = n(200651);
 n(192379);
-var r = n(442837),
-  a = n(481060),
-  l = n(289823),
-  s = n(594174);
-let c = function(e) {
+var s = n(442837),
+  i = n(481060),
+  a = n(289823),
+  l = n(594174);
+let o = function(e) {
   var {
     recipients: t,
     size: n,
-    status: c,
-    isTyping: o,
+    status: o,
+    isTyping: c,
     className: u
   } = e, d = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, r, s = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
-        a = Object.keys(e);
-      for (i = 0; i < a.length; i++) n = a[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      var n, r, s = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (s[n] = e[n]);
+      return s
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < a.length; i++) n = a[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n])
     }
-    return r
+    return s
   }(e, ["recipients", "size", "status", "isTyping", "className"]);
-  let f = a.ny6[n],
-    p = (0, r.Wu)([s.default], () => t.slice(0, 2).map(e => {
-      let t = s.default.getUser(e);
-      if (null != t) return t.getAvatarURL(void 0, f.size, !1)
-    }), [t, f.size]);
-  return (0, i.jsx)(l.Z, {
+  let _ = i.ny6[n],
+    A = (0, s.Wu)([l.default], () => t.slice(0, 2).map(e => {
+      let t = l.default.getUser(e);
+      if (null != t) return t.getAvatarURL(void 0, _.size, !1)
+    }), [t, _.size]);
+  return (0, r.jsx)(a.Z, {
     "aria-label": d["aria-label"],
     "aria-hidden": d["aria-hidden"],
-    backSrc: p[0],
-    frontSrc: p[1],
+    backSrc: A[0],
+    frontSrc: A[1],
     size: n,
-    status: c,
-    isTyping: null != o && o,
+    status: o,
+    isTyping: null != c && c,
     className: u
   })
 }

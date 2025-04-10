@@ -1,14 +1,14 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
-  NJ: () => k,
+  NJ: () => R,
   R8: () => D,
   Sq: () => I,
   Wg: () => L,
   Zn: () => S,
   c2: () => w,
-  eE: () => R,
+  eE: () => k,
   iE: () => W,
   iK: () => Z,
   lv: () => T,
@@ -160,11 +160,11 @@ function Z(e, t) {
   return n = (n = n.set("focusOffset", e)).set("anchorOffset", e), r.EditorState.forceSelection(t, n)
 }
 
-function k(e) {
+function R(e) {
   return Z(e.getCurrentContent().getFirstBlock().getText().length, e)
 }
 
-function R(e) {
+function k(e) {
   return Z(0, e)
 }
 

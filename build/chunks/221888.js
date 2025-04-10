@@ -65,7 +65,7 @@ function A(e, t) {
 }
 let C = 150;
 
-function R(e, t) {
+function P(e, t) {
   switch (e) {
     case y.fO.ACTIVITY:
       return O.NW.formatToPlainString(O.t.TCM94e, {
@@ -80,7 +80,7 @@ function R(e, t) {
   }
 }
 
-function P(e) {
+function R(e) {
   let {
     users: t,
     disableInteraction: n,
@@ -88,7 +88,7 @@ function P(e) {
     participantType: o,
     channelId: s,
     handleUserContextMenu: l
-  } = e, c = R(o, t.length);
+  } = e, c = P(o, t.length);
   return (0, r.jsx)(d.VqE, {
     "aria-label": c,
     className: I.popoutWrapper,
@@ -124,7 +124,7 @@ function w(e) {
     maxVisibleUsers: o = 3,
     className: s,
     participantType: l
-  } = e, c = R(l, t.length), u = t.length < o ? t.map(e => (0, r.jsx)("div", {
+  } = e, c = P(l, t.length), u = t.length < o ? t.map(e => (0, r.jsx)("div", {
     className: I.viewersTooltipItem,
     children: b.ZP.getName(n, i, e)
   }, e.id)) : c;
@@ -155,7 +155,7 @@ function L(e) {
     compact: b = !1,
     disableInteraction: O = !1,
     maxVisibleUsers: S = 3
-  } = e, N = i.useRef(null), R = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
+  } = e, N = i.useRef(null), P = (0, p.Z)(), [L, x] = i.useState(!1), M = i.useRef(new u.sW(C, () => x(!1))), k = (0, c.Wu)([m.Z, g.default], () => {
     if (s.type === y.fO.STREAM) {
       let e = m.Z.getViewerIds(s.id);
       return e.length > 0 ? e.map(e => g.default.getUser(e)).filter(E.lm) : D
@@ -163,8 +163,8 @@ function L(e) {
     return s.type === y.fO.ACTIVITY && s.participants.length > 0 ? Array.from(s.participants).map(e => g.default.getUser(e.userId)).filter(E.lm) : D
   }, [s]);
   i.useEffect(() => {
-    R && (M.current.cancel(), x(!1))
-  }, [R]);
+    P && (M.current.cancel(), x(!1))
+  }, [P]);
   let j = i.useCallback(() => {
       M.current.cancel(), x(!0)
     }, []),
@@ -208,7 +208,7 @@ function L(e) {
       onMouseLeave: U,
       children: (0, r.jsx)(d.yRy, {
         targetElementRef: N,
-        renderPopout: () => (0, r.jsx)(P, {
+        renderPopout: () => (0, r.jsx)(R, {
           participantType: s.type,
           handleUserContextMenu: G,
           guildId: o,
@@ -216,7 +216,7 @@ function L(e) {
           users: k,
           disableInteraction: O
         }),
-        shouldShow: L && !R,
+        shouldShow: L && !P,
         position: "top",
         children: () => (0, r.jsx)("div", {
           ref: N,

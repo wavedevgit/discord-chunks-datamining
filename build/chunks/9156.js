@@ -65,8 +65,8 @@ function T(e, t) {
 let N = {},
   A = {},
   C = !1,
-  R = !1,
-  P = {
+  P = !1,
+  R = {
     flags: 0
   },
   w = new l.ZP,
@@ -260,7 +260,7 @@ function en(e) {
 }
 
 function er(e) {
-  C = _.yE(e.flags, b.c.USE_NEW_NOTIFICATIONS), R = _.yE(e.flags, b.c.MENTION_ON_ALL_MESSAGES), P = e
+  C = _.yE(e.flags, b.c.USE_NEW_NOTIFICATIONS), P = _.yE(e.flags, b.c.MENTION_ON_ALL_MESSAGES), R = e
 }
 
 function ei(e) {
@@ -370,7 +370,7 @@ class eh extends(r = a.ZP.PersistedStore) {
     }
   }
   get mentionOnAllMessages() {
-    return R
+    return P
   }
   isSuppressEveryoneEnabled(e) {
     return J(e).suppress_everyone
@@ -545,7 +545,7 @@ class eh extends(r = a.ZP.PersistedStore) {
     return null != (e = k[j]) ? e : G
   }
   get accountNotificationSettings() {
-    return P
+    return R
   }
   get useNewNotifications() {
     return C

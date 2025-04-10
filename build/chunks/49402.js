@@ -91,7 +91,7 @@ function m(e, t, n) {
       getScrollerNode: () => N.current,
       getScrollerState: A
     }, (0, c.Ue)(N, A, C, E)), [N, A, E, C]);
-    let R = (0, c.tT)({
+    let P = (0, c.tT)({
       paddingFix: v,
       orientation: E,
       dir: g,
@@ -112,7 +112,7 @@ function m(e, t, n) {
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,
-        children: [h, R]
+        children: [h, P]
       })
     })) : (0, r.jsx)("div", _(d({
       ref: N,
@@ -126,7 +126,7 @@ function m(e, t, n) {
     }, T), {
       children: (0, r.jsxs)(s.Jc, {
         containerRef: N,
-        children: [h, R]
+        children: [h, P]
       })
     }))
   })

@@ -32,7 +32,7 @@ var r = n(200651),
   A = n(892561),
   C = n(494536);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -41,14 +41,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -146,7 +146,7 @@ function B(e) {
     icon: I,
     description: A,
     presenceCount: C,
-    memberCount: R,
+    memberCount: P,
     emojis: w
   } = o, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [V, F] = i.useState(!1), Z = e => {
     if (e.stopPropagation(), B)(0, h.XU)(U, c, d);
@@ -235,7 +235,7 @@ function B(e) {
               membersOnline: C
             })
           })]
-        }) : null, null != R ? (0, r.jsxs)("div", {
+        }) : null, null != P ? (0, r.jsxs)("div", {
           className: N.memberCount,
           children: [(0, r.jsx)("div", {
             className: N.dotOffline
@@ -243,7 +243,7 @@ function B(e) {
             variant: "text-xs/normal",
             className: N.memberText,
             children: T.NW.format(T.t.zRl6XV, {
-              count: R
+              count: P
             })
           })]
         }) : null]
@@ -268,7 +268,7 @@ function B(e) {
             });
             return (0, r.jsx)(u.ua7, {
               text: ":".concat(e.name, ":"),
-              children: e => (0, r.jsx)("img", D(P({}, e), {
+              children: e => (0, r.jsx)("img", D(R({}, e), {
                 width: j,
                 height: j,
                 src: t,
@@ -330,5 +330,5 @@ function F(e) {
     setPopoutRef: e.setPopoutRef,
     guildId: e.guildId,
     name: e.name
-  }) : (0, r.jsx)(V, P({}, e))
+  }) : (0, r.jsx)(V, R({}, e))
 }

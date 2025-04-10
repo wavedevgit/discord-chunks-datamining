@@ -66,8 +66,8 @@ let T = /\.gif($|\?|#)/i,
   N = /\.webp($|\?|#)/i,
   A = /\.avif($|\?|#)/i,
   C = /\.png($|\?|#)/i,
-  R = 400,
-  P = 300;
+  P = 400,
+  R = 300;
 class w extends(r = o.Component) {
   static isAnimated(e) {
     let {
@@ -265,8 +265,8 @@ class w extends(r = o.Component) {
     let {
       width: e,
       height: t,
-      maxWidth: n = R,
-      maxHeight: r = P,
+      maxWidth: n = P,
+      maxHeight: r = R,
       mediaLayoutType: i,
       useFullWidth: o
     } = this.props;
@@ -326,8 +326,8 @@ class w extends(r = o.Component) {
       limitResponsiveWidth: N,
       useFullWidth: A,
       placeholder: C,
-      placeholderVersion: R,
-      dataSafeSrc: P,
+      placeholderVersion: P,
+      dataSafeSrc: R,
       srcIsAnimated: D
     } = this.props, {
       readyState: L,
@@ -350,8 +350,8 @@ class w extends(r = o.Component) {
       height: G,
       src: "",
       placeholder: C,
-      placeholderVersion: R,
-      dataSafeSrc: P,
+      placeholderVersion: P,
+      dataSafeSrc: R,
       srcIsAnimated: D,
       children: null != f ? e => {
         let {

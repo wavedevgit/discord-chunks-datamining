@@ -218,20 +218,20 @@
         };
       return u.every(_)
     },
-    R = function(e, t, n) {
+    P = function(e, t, n) {
       return S(e) ? Object.keys(e).reduce(function(i, a) {
         var s = !S(t) || !C(e[a], t[a]);
         return n.includes(a) ? (s && console.warn("Unsupported prop change: options.".concat(a, " is not a mutable property.")), i) : s ? r(r({}, i || {}), {}, o({}, a, e[a])) : i
       }, null) : null
     },
-    P = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
+    R = "Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.",
     w = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : R;
       if (null === e || N(e)) return e;
       throw Error(t)
     },
     D = function(e) {
-      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : P;
+      var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : R;
       if (T(e)) return {
         tag: "async",
         stripePromise: Promise.resolve(e).then(function(e) {
@@ -301,7 +301,7 @@
       var d = I(r);
       return t.useEffect(function() {
         if (s.elements) {
-          var e = R(r, d, ["clientSecret", "fonts"]);
+          var e = P(r, d, ["clientSecret", "fonts"]);
           e && s.elements.update(e)
         }
       }, [r, d, s.elements]), t.useEffect(function() {
@@ -455,13 +455,13 @@
             N = "elements" in T ? T.elements : null,
             A = "customCheckoutSdk" in T ? T.customCheckoutSdk : null,
             C = l(t.useState(null), 2),
-            P = C[0],
+            R = C[0],
             w = C[1],
             D = t.useRef(null),
             L = t.useRef(null);
-          O(P, "blur", u), O(P, "focus", d), O(P, "escape", p), O(P, "click", h), O(P, "loaderror", m), O(P, "loaderstart", g), O(P, "networkschange", E), O(P, "confirm", b), O(P, "cancel", y), O(P, "shippingaddresschange", v), O(P, "shippingratechange", S), O(P, "change", _), f && (i = "expressCheckout" === e ? f : function() {
-            f(P)
-          }), O(P, "ready", i), t.useLayoutEffect(function() {
+          O(R, "blur", u), O(R, "focus", d), O(R, "escape", p), O(R, "click", h), O(R, "loaderror", m), O(R, "loaderstart", g), O(R, "networkschange", E), O(R, "confirm", b), O(R, "cancel", y), O(R, "shippingaddresschange", v), O(R, "shippingratechange", S), O(R, "change", _), f && (i = "expressCheckout" === e ? f : function() {
+            f(R)
+          }), O(R, "ready", i), t.useLayoutEffect(function() {
             if (null === D.current && null !== L.current && (N || A)) {
               var t = null;
               A ? t = A.createElement(e, c) : N && (t = N.create(e, c)), D.current = t, w(t), t && t.mount(L.current)
@@ -470,7 +470,7 @@
           var x = I(c);
           return t.useEffect(function() {
             if (D.current) {
-              var e = R(c, x, ["paymentRequest"]);
+              var e = P(c, x, ["paymentRequest"]);
               e && D.current.update(e)
             }
           }, [c, x]), t.useLayoutEffect(function() {

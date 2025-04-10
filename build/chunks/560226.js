@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 67544 **/
 e.exports = {
   animationWrapper: "animationWrapper_e8d31f",
   clickZone: "clickZone_e8d31f",

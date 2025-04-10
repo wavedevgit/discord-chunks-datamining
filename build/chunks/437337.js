@@ -108,8 +108,8 @@ let O = function(e) {
     innerRef: O
   } = e, {
     reducedMotion: I
-  } = i.useContext(c.S), S = i.useRef(null), [T, N] = i.useState(!1), A = (0, _.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), R = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
-    state: P,
+  } = i.useContext(c.S), S = i.useRef(null), [T, N] = i.useState(!1), A = (0, _.Q3)("Switch"), C = (0, d.d)(A ? l.Z.colors.INTERACTIVE_MUTED : l.Z.unsafe_rawColors.PRIMARY_400).spring(), P = (0, d.d)(A ? l.Z.colors.REDESIGN_INPUT_CONTROL_SELECTED : l.Z.unsafe_rawColors.GREEN_360).spring(), {
+    state: R,
     opacity: w
   } = (0, f.q_F)({
     config: b,
@@ -142,8 +142,8 @@ let O = function(e) {
       onMouseLeave: () => N(!1),
       style: {
         opacity: w,
-        backgroundColor: P.to({
-          output: [C, R]
+        backgroundColor: R.to({
+          output: [C, P]
         })
       },
       children: [(0, r.jsxs)(s.animated.svg, {
@@ -151,7 +151,7 @@ let O = function(e) {
         viewBox: "0 0 28 20",
         preserveAspectRatio: "xMinYMid meet",
         style: {
-          left: P.to({
+          left: R.to({
             range: [0, .3, .7, 1],
             output: [A ? -4 : -3, 1, 8, 12]
           })
@@ -159,24 +159,24 @@ let O = function(e) {
         "aria-hidden": !0,
         children: [(0, r.jsx)(s.animated.rect, {
           fill: "white",
-          x: P.to({
+          x: R.to({
             range: [0, .3, .7, 1],
             output: [4, 0, 0, 4]
           }),
-          y: P.to({
+          y: R.to({
             range: [0, .3, .7, 1],
             output: [0, 1, 1, 0]
           }),
-          height: P.to({
+          height: R.to({
             range: [0, .3, .7, 1],
             output: [20, 18, 18, 20]
           }),
-          width: P.to({
+          width: R.to({
             range: [0, .3, .7, 1],
             output: [20, 28, 28, 20]
           }),
           rx: "10"
-        }), v(P, C, R, I.enabled)]
+        }), v(R, C, P, I.enabled)]
       }), (0, r.jsx)("input", {
         id: t,
         type: "checkbox",

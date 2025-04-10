@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => w
 });
@@ -66,11 +66,11 @@ function w(e) {
     everyoneFilter: v.Z.everyoneFilter
   })), w = (0, g.Us)({
     location: "RecentMentions"
-  }), k = (0, m.Z)(N), D = (0, m.Z)(j), L = (0, m.Z)(P);
+  }), R = (0, m.Z)(N), D = (0, m.Z)(j), L = (0, m.Z)(P);
   i.useEffect(() => {
     if (!v.Z.hasLoadedEver) return void A(h, !0);
-    (null != k && N !== k || null != D && j !== D || null != L && P !== L) && A(h, !0)
-  }, [k, N, D, j, L, P, h, !0]), (0, p.ZP)(() => {
+    (null != R && N !== R || null != D && j !== D || null != L && P !== L) && A(h, !0)
+  }, [R, N, D, j, L, P, h, !0]), (0, p.ZP)(() => {
     (null == _ ? void 0 : _.some(f.k5)) && (u.Z.clearMentions(), A(h, !0))
   }), i.useEffect(() => () => {
     u.Z.truncateMentions(S.DJj)
@@ -102,7 +102,7 @@ function w(e) {
     },
     canCloseAllMessages: !0,
     renderHeader: M,
-    renderEmptyState: R,
+    renderEmptyState: k,
     renderMessage: Z,
     "aria-label": I.NW.string(I.t.jbV6MD),
     listName: "recents"
@@ -110,14 +110,14 @@ function w(e) {
 }
 
 function Z(e, t) {
-  return [(0, r.jsx)(k, {
+  return [(0, r.jsx)(R, {
     message: e,
     gotoMessage: t,
     dismissible: !0
   }, e.id)]
 }
 
-function k(e) {
+function R(e) {
   let {
     message: t,
     gotoMessage: n,
@@ -162,7 +162,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   return (0, r.jsx)(j.Z, {
     Icon: c.lOy,
     header: I.NW.string(I.t["bgDz7+"]),

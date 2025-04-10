@@ -2,9 +2,9 @@
 "use strict";
 n.d(t, {
   $V: () => A,
-  Bz: () => R,
+  Bz: () => P,
   ZP: () => L,
-  hc: () => P
+  hc: () => R
 }), n(539854), n(388685), n(49124);
 var r = n(512722),
   i = n.n(r),
@@ -85,8 +85,8 @@ var A = function(e) {
   return e[e.SEND = 0] = "SEND", e[e.EDIT = 1] = "EDIT", e[e.COMMAND = 2] = "COMMAND", e
 }({});
 let C = e => 0 === e.type,
-  R = e => 1 === e.type,
-  P = e => C(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
+  P = e => 1 === e.type,
+  R = e => C(e) ? e.message.nonce : P(e) ? e.message.messageId : e.message.data.id,
   w = [+p.Z.Millis.MINUTE, 5 * p.Z.Millis.MINUTE];
 class D extends m.Z {
   isFull() {

@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   divider: "divider__5e421",
   updateMessage: "updateMessage__5e421",

@@ -1,4 +1,4 @@
-/** Chunk was on 86328 **/
+/** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
   BK: () => p,
@@ -10,14 +10,14 @@ var r = n(442837),
   a = n(430824),
   i = n(496675),
   s = n(594174),
-  c = n(630388),
-  l = n(372897),
+  l = n(630388),
+  c = n(372897),
   u = n(981631);
 let d = (e, t) => {
   var n;
   let i = (0, r.e7)([o.ZP], () => {
       var n, r;
-      return (0, c.yE)(null != (r = null == (n = o.ZP.getMember(e, t)) ? void 0 : n.flags) ? r : 0, l.q.DID_REJOIN)
+      return (0, l.yE)(null != (r = null == (n = o.ZP.getMember(e, t)) ? void 0 : n.flags) ? r : 0, c.q.DID_REJOIN)
     }),
     u = (0, r.e7)([a.Z], () => {
       var t;
@@ -33,14 +33,14 @@ let d = (e, t) => {
     let {
       maxDaysOld: r,
       minDaysOld: i = 0
-    } = t, s = a.Z.getGuild(e), c = null == s ? void 0 : s.joinedAt;
+    } = t, s = a.Z.getGuild(e), l = null == s ? void 0 : s.joinedAt;
     if (null != n) {
       let t = o.ZP.getMember(e, n);
-      c = (null == t ? void 0 : t.joinedAt) == null ? null : new Date(t.joinedAt)
+      l = (null == t ? void 0 : t.joinedAt) == null ? null : new Date(t.joinedAt)
     }
-    if (null == c) return !1;
-    let l = Date.now() - c.getTime();
-    return (null == r || l <= 864e5 * r) && l >= 864e5 * i
+    if (null == l) return !1;
+    let c = Date.now() - l.getTime();
+    return (null == r || c <= 864e5 * r) && c >= 864e5 * i
   })(e, n, t), [n, e, t]) && !u && !d && !i
 };
 

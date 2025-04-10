@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => R,
+  q: () => P,
   r: () => C
 });
 var r = n(477660),
@@ -36,14 +36,14 @@ function C(e, t) {
   return (null == r || r.type !== N.d4z.DM || !!I.Z.isFriend(null != (n = r.getRecipientId()) ? n : "")) && e === t
 }
 
-function R(e, t) {
+function P(e, t) {
   let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
     I = arguments.length > 3 ? arguments[3] : void 0,
     {
       trusted: S,
       onClick: C,
-      onConfirm: R,
-      onCancel: P,
+      onConfirm: P,
+      onCancel: R,
       shouldConfirm: w,
       messageId: D,
       channelId: L
@@ -113,10 +113,10 @@ function R(e, t) {
           guildId: k,
           sourceChannelId: G,
           sourceGuildId: B
-        }), null != R) return void R();
+        }), null != P) return void P();
       (0, s.Z)(M)
     },
-    W = null != P ? P : () => {};
+    W = null != R ? R : () => {};
   if (null !== c.Z.isBlockedDomain(M)) {
     null == t || t.preventDefault(), l.Z.show(M);
     return

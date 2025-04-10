@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => eS,
   c: () => ej
@@ -34,8 +34,8 @@ var s = n(442837),
   A = n(749277),
   w = n(131130),
   Z = n(785141),
-  k = n(272395),
-  R = n(492435),
+  R = n(272395),
+  k = n(492435),
   D = n(353926),
   L = n(506357),
   M = n(36459),
@@ -103,7 +103,7 @@ let ev = e => {
       errorCode: l
     }), {
       avErrorUIEnabled: s
-    } = (0, k.JN)({
+    } = (0, R.JN)({
       location: i
     });
     if (!s) return null;
@@ -178,7 +178,7 @@ let eC = 12633 == n.j ? i.memo(function() {
   let h = (0, s.e7)([ea.default], () => ea.default.getCurrentUser()),
     j = (0, s.e7)([ei.Z], () => ei.Z.getGuildId()),
     Z = (0, s.e7)([es.ZP], () => es.ZP.getNotice()),
-    k = (0, s.e7)([et.Z], () => et.Z.getGuild(j)),
+    R = (0, s.e7)([et.Z], () => et.Z.getGuild(j)),
     {
       analyticsLocations: em
     } = (0, C.ZP)(),
@@ -196,7 +196,7 @@ let eC = 12633 == n.j ? i.memo(function() {
       let {
         metadata: e
       } = Z, t = D.Z.getUserExperimentDescriptor(e.id);
-      null != t && (0, R.W9)(e.id, t), (async () => {
+      null != t && (0, k.W9)(e.id, t), (async () => {
         var e, t;
         (null == (e = Z.metadata) ? void 0 : e.id) != null && await (0, v.g8)(null == (t = Z.metadata) ? void 0 : t.id)
       })()
@@ -326,7 +326,7 @@ let eC = 12633 == n.j ? i.memo(function() {
         })]
       });
     case ef.kVF.SPOTIFY_AUTO_PAUSED:
-      let ek = N.Z.get(ef.ABu.SPOTIFY);
+      let eR = N.Z.get(ef.ABu.SPOTIFY);
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DANGER,
         children: [(0, r.jsx)(c.RyX, {
@@ -335,7 +335,7 @@ let eC = 12633 == n.j ? i.memo(function() {
         }), (0, r.jsx)("img", {
           alt: "",
           className: ex.platformIcon,
-          src: ek.icon.whiteSVG
+          src: eR.icon.whiteSVG
         }), eb.NW.string(eb.t["D8Cp7+"]), (0, r.jsx)(c.NoS, {
           onClick: () => O.Z.open(ef.oAB.VOICE),
           noticeType: ef.kVF.SPOTIFY_AUTO_PAUSED,
@@ -394,12 +394,12 @@ let eC = 12633 == n.j ? i.memo(function() {
     case ef.kVF.HARDWARE_MUTE:
       if (null == Z.metadata) return null;
       let {
-        vendor: eR, model: eD
+        vendor: ek, model: eD
       } = Z.metadata;
       return (0, r.jsxs)(c.qXd, {
         color: c.DM8.DANGER,
         children: [eb.NW.format(eb.t.qoDex8, {
-          vendorName: eR.name,
+          vendorName: ek.name,
           modelName: eD.name
         }), (0, r.jsx)(c.RyX, {
           onClick: () => {
@@ -546,14 +546,14 @@ let eC = 12633 == n.j ? i.memo(function() {
             ej()
           }
         }), eb.NW.format(eb.t.RomvGB, {
-          guildName: null != (t = null == k ? void 0 : k.name) ? t : "this server"
+          guildName: null != (t = null == R ? void 0 : R.name) ? t : "this server"
         }), (0, r.jsx)(c.NoS, {
           noticeType: ef.kVF.SERVER_USAGE_SURVEY,
           onClick: () => {
-            window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9AHPmGasQ0EvpdQ?user_id=".concat(null == h ? void 0 : h.id, "&guild_id=").concat(null == k ? void 0 : k.id), "_blank"), ej()
+            window.open("https://discord.sjc1.qualtrics.com/jfe/form/SV_9AHPmGasQ0EvpdQ?user_id=".concat(null == h ? void 0 : h.id, "&guild_id=").concat(null == R ? void 0 : R.id), "_blank"), ej()
           },
           additionalTrackingProps: {
-            guild_id: null == k ? void 0 : k.id
+            guild_id: null == R ? void 0 : R.id
           },
           children: eb.NW.string(eb.t["4RQks7"])
         })]

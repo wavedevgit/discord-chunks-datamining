@@ -93,8 +93,8 @@ function N(e) {
       isInteracting: N = !1,
       shouldAnimate: A,
       onMouseEnter: C,
-      onMouseLeave: R,
-      canSelect: P = !0,
+      onMouseLeave: P,
+      canSelect: R = !0,
       autoplay: w,
       registerAnimatedElementRef: D,
       registerInnerRef: L
@@ -122,8 +122,8 @@ function N(e) {
   }, [K]), q = i.useCallback(e => {
     v && k(!0), null == f && B(p), null == C || C(e)
   }, [v, p, C, B, f]), Q = i.useCallback(e => {
-    v && k(!1), null == f && V(p), null == R || R(e)
-  }, [v, f, p, R, V]), X = i.useMemo(() => {
+    v && k(!1), null == f && V(p), null == P || P(e)
+  }, [v, f, p, P, V]), X = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
@@ -158,7 +158,7 @@ function N(e) {
       emojiName: p,
       disable: !1 === H || !1 === F,
       emojiRef: $
-    }), P ? (0, r.jsx)("img", O(y({}, X), {
+    }), R ? (0, r.jsx)("img", O(y({}, X), {
       ref: J,
       src: K,
       alt: null != (t = null != s ? s : p) ? t : void 0,

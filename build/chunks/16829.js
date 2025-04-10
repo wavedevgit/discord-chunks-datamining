@@ -1,6 +1,6 @@
-/** Chunk was on 92216 **/
+/** Chunk was on 12910 **/
 n.d(t, {
-  ZP: () => v
+  ZP: () => b
 }), n(781311);
 var r = n(200651),
   l = n(192379),
@@ -235,7 +235,7 @@ function M(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   var {
     sourceInviteCode: t,
     joinSourceType: n,
@@ -326,7 +326,7 @@ function b(e) {
       return (0, r.jsx)(U, S({}, _))
   }
 }
-let v = l.memo(function(e) {
+let b = l.memo(function(e) {
   var t, n;
   let {
     userId: a,
@@ -351,7 +351,7 @@ let v = l.memo(function(e) {
     inviterUser: null != N ? N : null,
     guildId: s,
     joinSourceType: R,
-    children: e => (0, r.jsx)(b, S({
+    children: e => (0, r.jsx)(v, S({
       sourceInviteCode: g,
       joinSourceType: R,
       integrationType: p,

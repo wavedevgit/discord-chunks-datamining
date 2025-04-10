@@ -6,7 +6,7 @@ n.d(t, {
   V7: () => I,
   VF: () => w,
   b$: () => g,
-  d9: () => R,
+  d9: () => P,
   dF: () => O,
   dX: () => L,
   iF: () => S,
@@ -140,7 +140,7 @@ function C(e, t) {
     } return o
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = C(e, t),
     r = s.ZP.getChannels(e)[s.sH],
     i = {};
@@ -153,7 +153,7 @@ function R(e, t) {
   }), i), n]
 }
 
-function P(e, t) {
+function R(e, t) {
   return e[0].length === t[0].length && e[1].length === t[1].length && (0, i.Z)(e[0], t[0]) && (0, i.Z)(e[1], t[1])
 }
 
@@ -165,7 +165,7 @@ function w(e, t) {
       o = {};
     for (let e of n[s.sH])(0, _.s)(e.channel.guild_id, e.channel.id) && (t.has(e.channel.id) && !e.channel.isCategory() || !e.channel.isThread() && null != e.channel.parent_id && t.has(e.channel.parent_id)) && (o[e.channel.id] = e, r.push(e.channel), S(e.channel) && i.push(e.channel.id));
     return [i, r]
-  }, [e, t], P)
+  }, [e, t], R)
 }
 
 function D(e) {

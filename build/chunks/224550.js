@@ -42,8 +42,8 @@ let g = (e, t, n, r) => {
         hide: N,
         purchaseType: A,
         productLine: C,
-        basePrice: R,
-        currentSubscription: P,
+        basePrice: P,
+        currentSubscription: R,
         skuId: w
       } = e,
       D = (0, i.e7)([a.ZP], () => a.ZP.inReverseTrial());
@@ -56,7 +56,7 @@ let g = (e, t, n, r) => {
     let x = (0, o.K)({
         purchaseType: A || f.GZQ.SUBSCRIPTION,
         plan: b,
-        premiumSubscription: null == P ? null : P,
+        premiumSubscription: null == R ? null : R,
         isGift: !!y,
         planGroup: L,
         isPrepaidPaymentSource: !1
@@ -129,25 +129,25 @@ let g = (e, t, n, r) => {
         let e, r = (0, o.K)({
           purchaseType: f.GZQ.SUBSCRIPTION,
           plan: b,
-          premiumSubscription: null == P ? null : P,
+          premiumSubscription: null == R ? null : R,
           isGift: !1,
           planGroup: L,
           isPrepaidPaymentSource: !1
         });
-        v || (e = g(R, t, n, b.id)), j = (null == P ? void 0 : P.isPausedAllowsResumeButNotUpdates) ? h.NW.format(h.t.B6oNwM, {
+        v || (e = g(P, t, n, b.id)), j = (null == R ? void 0 : R.isPausedAllowsResumeButNotUpdates) ? h.NW.format(h.t.B6oNwM, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : null != P && (0, d.GY)(P, b.id, L) ? h.NW.format(h.t.LyBQUV, {
+        }) : null != R && (0, d.GY)(R, b.id, L) ? h.NW.format(h.t.LyBQUV, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : D && C === f.POd.BOOST && null != R ? h.NW.format(h.t["2nKy//"], {
-          price: (0, u.T4)(R.amount, R.currency),
+        }) : D && C === f.POd.BOOST && null != P ? h.NW.format(h.t["2nKy//"], {
+          price: (0, u.T4)(P.amount, P.currency),
           paidServiceTermsArticle: f.EYA.PAID_TERMS,
           contactUsArticle: f.EYA.CONTACT,
           subscriptionFAQArticle: l.Z.getArticleURL(f.BhN.BILLING)

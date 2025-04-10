@@ -1,26 +1,27 @@
-/** Chunk was on 95287 **/
-r.d(t, {
-  $: () => i
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  $: () => a
 });
-var n = r(200651);
-r(192379);
-var a = r(907040),
-  o = r(185923);
+var r = n(200651);
+n(192379);
+var i = n(907040),
+  o = n(185923);
 
-function i(e) {
+function a(e) {
   let {
     channel: t,
-    closePopout: r,
-    analyticsOverride: i,
-    onSelectEmoji: l,
-    messageId: s
+    closePopout: n,
+    analyticsOverride: a,
+    onSelectEmoji: s,
+    messageId: l
   } = e;
-  return (0, n.jsx)(a.Z, {
-    closePopout: r,
+  return (0, r.jsx)(i.Z, {
+    closePopout: n,
     channel: t,
-    onSelectEmoji: l,
+    onSelectEmoji: s,
     pickerIntention: o.Hz.REACTION,
-    analyticsOverride: i,
-    messageId: s
+    analyticsOverride: a,
+    messageId: l
   })
 }

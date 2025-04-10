@@ -46,7 +46,7 @@ function y(e) {
     },
     A = I === m.y0.FULL_SIZE,
     C = I === m.y0.PANEL,
-    R = !A && !C;
+    P = !A && !C;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: E.voiceChannelDivider
@@ -95,7 +95,7 @@ function y(e) {
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!R || (e => e === t.id),
+        disableUserPopout: !!P || (e => e === t.id),
         overflowCountVariant: "text-xs/normal"
       })]
     })]

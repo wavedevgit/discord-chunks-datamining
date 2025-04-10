@@ -1,6 +1,6 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
-  Z: () => G
+  Z: () => F
 });
 var r = n(200651),
   i = n(192379),
@@ -42,7 +42,7 @@ var r = n(200651),
   U = n(906667),
   B = n(20493);
 
-function H(e) {
+function G(e) {
   let {
     canManageRoles: t,
     channel: n
@@ -65,7 +65,7 @@ function H(e) {
   })
 }
 
-function G(e) {
+function F(e) {
   var t, n;
   let {
     channel: p,
@@ -79,18 +79,18 @@ function G(e) {
     canManageRoles: v.Z.can(L.Plq.MANAGE_ROLES, p),
     canReadMessageHistory: v.Z.can(L.Plq.READ_MESSAGE_HISTORY, p)
   })), M = (0, l.e7)([b.Z], () => x === L.d4z.DM ? b.Z.getMutualGuilds(p.getRecipientId()) : null, [p, x]), {
-    systemDMRedesignEnabled: G
+    systemDMRedesignEnabled: F
   } = g.Z.useExperiment({
     location: "bf1a4f_1"
   }, {
     autoTrackExposure: null != (t = p.isSystemDM()) && t
-  }), F = (0, u.Z)(null != (n = null == I ? void 0 : I.id) ? n : L.lds), {
+  }), H = (0, u.Z)(null != (n = null == I ? void 0 : I.id) ? n : L.lds), {
     authorizedAppToken: V,
     authorizedAppsFetchState: z
   } = (0, l.cj)([C.Z], () => {
     var e;
     return {
-      authorizedAppToken: null != F ? null == (e = C.Z.getApps()) ? void 0 : e.find(e => e.application.id === F.id) : void 0,
+      authorizedAppToken: null != H ? null == (e = C.Z.getApps()) ? void 0 : e.find(e => e.application.id === H.id) : void 0,
       authorizedAppsFetchState: C.Z.getFetchState()
     }
   }), Y = c.Z.useExperiment({
@@ -102,7 +102,7 @@ function G(e) {
       }))
     }, [M, x, p, I]), i.useEffect(() => {
       (null == I ? void 0 : I.bot) && z === C.M.NOT_FETCHED && s.Z.fetch()
-    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return G ? (0, r.jsx)(w.Z, {
+    }, [null == I ? void 0 : I.bot, z]), p.isSystemDM()) return F ? (0, r.jsx)(w.Z, {
     channel: p
   }) : (0, r.jsx)(T.Z, {
     channel: p,
@@ -110,7 +110,7 @@ function G(e) {
   });
   if (x === L.d4z.DM) {
     let e;
-    return null != I && null != F ? null != V && (e = (0, r.jsxs)("div", {
+    return null != I && null != H ? null != V && (e = (0, r.jsxs)("div", {
       className: U.buttonContainer,
       children: [(0, r.jsx)(Z.W, {
         className: U.button,
@@ -119,7 +119,7 @@ function G(e) {
       }), (0, r.jsx)(S.n, {
         className: U.button,
         user: I,
-        application: F,
+        application: H,
         channel: p,
         oauth2Token: V
       }), Y && (0, r.jsx)(f.Z, {
@@ -165,7 +165,7 @@ function G(e) {
       name: y
     })
   });
-  return k ? (0, r.jsx)(H, {
+  return k ? (0, r.jsx)(G, {
     channel: p,
     canManageRoles: R
   }) : (0, r.jsx)(N.ZP, {

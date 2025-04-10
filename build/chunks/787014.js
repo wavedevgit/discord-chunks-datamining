@@ -119,8 +119,8 @@ async function h(e, t) {
     invitable: N,
     availableTags: A,
     defaultSortOrder: C,
-    defaultForumLayout: R,
-    iconEmoji: P,
+    defaultForumLayout: P,
+    iconEmoji: R,
     themeColor: w
   } = t, D = s.Z.getChannel(e);
   return i.Z.dispatch({
@@ -158,11 +158,11 @@ async function h(e, t) {
         moderated: e.moderated
       })),
       default_sort_order: C,
-      default_forum_layout: R,
-      icon_emoji: null != P ? {
-        id: P.id,
-        name: P.name
-      } : null === P ? null : void 0,
+      default_forum_layout: P,
+      icon_emoji: null != R ? {
+        id: R.id,
+        name: R.name
+      } : null === R ? null : void 0,
       theme_color: w
     },
     oldFormErrors: !0,

@@ -113,17 +113,17 @@ void 0 === b && (b = E), b(function(e, t) {
       a = f(d(T, n), n),
       l = a.pathname,
       C = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
-      R = C ? (0, r.LX)(n.pathname, {
+      P = C ? (0, r.LX)(n.pathname, {
         path: C,
         exact: h,
         sensitive: O,
         strict: I
       }) : null,
-      P = !!(m ? m(R, n) : R),
-      w = P ? y(p, u) : p,
-      D = P ? (0, s.Z)({}, S, {}, _) : S,
+      R = !!(m ? m(P, n) : P),
+      w = R ? y(p, u) : p,
+      D = R ? (0, s.Z)({}, S, {}, _) : S,
       L = (0, s.Z)({
-        "aria-current": P && i || null,
+        "aria-current": R && i || null,
         className: w,
         style: D,
         to: a

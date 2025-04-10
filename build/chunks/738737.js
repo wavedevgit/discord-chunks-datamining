@@ -1,4 +1,4 @@
-/** Chunk was on 69606 **/
+/** Chunk was on 49843 **/
 n.d(t, {
   Z: () => s
 });
@@ -22,8 +22,8 @@ function s(e) {
     analyticsSubscriptionType: p,
     renderHeader: g,
     renderPurchaseConfirmation: h,
-    planGroup: v,
-    reviewWarningMessage: b,
+    planGroup: b,
+    reviewWarningMessage: v,
     skuId: y
   } = e;
   (0, i.ZDy)(async () => {
@@ -88,10 +88,10 @@ function s(e) {
               skuId: y,
               renderHeader: g,
               renderPurchaseConfirmation: h,
-              planGroup: v,
+              planGroup: b,
               trialId: c,
               trialFooterMessageOverride: d,
-              reviewWarningMessage: b
+              reviewWarningMessage: v
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(x, Object.getOwnPropertyDescriptors(j)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

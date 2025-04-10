@@ -290,10 +290,10 @@ let A = {
     }
   },
   C = /(-# +)/,
-  R = (0, _.Z)([I, A]),
-  P = (0, _.Z)([S, A]),
-  w = l._p(R),
-  D = l._p(P),
+  P = (0, _.Z)([I, A]),
+  R = (0, _.Z)([S, A]),
+  w = l._p(P),
+  D = l._p(R),
   L = {
     max: 1 / 0,
     maxAge: +p.Z.Millis.MINUTE,

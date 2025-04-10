@@ -56,7 +56,7 @@ function C(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -67,8 +67,8 @@ function R(e, t) {
   return n
 }
 
-function P(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+function R(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -119,7 +119,7 @@ function L(e) {
 }
 
 function x(e) {
-  return (0, r.jsx)(L, P(C({}, e), {
+  return (0, r.jsx)(L, R(C({}, e), {
     headerClassName: N.headerSuccess
   }))
 }
@@ -208,7 +208,7 @@ function k(e) {
 }
 
 function j(e) {
-  return (0, r.jsx)(L, P(C({}, e), {
+  return (0, r.jsx)(L, R(C({}, e), {
     headerClassName: N.headerFailure
   }))
 }

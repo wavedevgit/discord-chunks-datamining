@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => G
 }), n(953529), n(388685);
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(673206),
   Z = n(239594);
 
-function k(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function k(e) {
   return e
 }
 
-function R(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -140,7 +140,7 @@ let U = e => {
       let {
         channel: e
       } = g.current;
-      E.default.track(T.rMx.OPEN_POPOUT, k({
+      E.default.track(T.rMx.OPEN_POPOUT, R({
         type: T.jXE.STICKER_POPOUT,
         guild_id: e.getGuildId(),
         sticker_pack_id: n.pack_id
@@ -199,7 +199,7 @@ let U = e => {
       }), [a.guild_id]),
       {
         current: K
-      } = i.useRef(k({
+      } = i.useRef(R({
         guild_id: a.getGuildId()
       }, (0, d.v_)(a))),
       Y = {
@@ -233,7 +233,7 @@ let U = e => {
       } = X.current;
       e()
     }, [C, N]), (0, u.ZP)(() => {
-      E.default.track(T.rMx.OPEN_POPOUT, k({
+      E.default.track(T.rMx.OPEN_POPOUT, R({
         type: $
       }, K))
     }), C) ? (0, r.jsxs)(_.W_, {
@@ -308,7 +308,7 @@ let U = e => {
               align: p.Z.Align.START,
               justify: p.Z.Justify.START,
               className: Z.otherEmojisContainer,
-              children: t.map(e => (0, r.jsx)(s.ua7, R(k({
+              children: t.map(e => (0, r.jsx)(s.ua7, k(R({
                 text: e.name
               }, _.b_), {
                 children: t => {
@@ -330,7 +330,7 @@ let U = e => {
                     }
                     return i
                   }(t, ["onMouseEnter", "onMouseLeave"]);
-                  return (0, r.jsx)("div", R(k({
+                  return (0, r.jsx)("div", k(R({
                     className: l()(Z.otherEmoji, {
                       [w.nonInteractingSticker]: null != H && H !== e.id
                     }),

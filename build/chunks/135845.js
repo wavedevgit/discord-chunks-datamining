@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => v
 });
@@ -41,10 +41,10 @@ function v(e) {
   l()(null != v, "Invite cannot be null");
   let {
     target_type: Z,
-    target_user: k
+    target_user: R
   } = v;
-  l()(Z === b.Iq.STREAM && null != k, "invalid streaming invite");
-  let R = E === k.id,
+  l()(Z === b.Iq.STREAM && null != R, "invalid streaming invite");
+  let k = E === R.id,
     D = v.state === _.r2o.ACCEPTING,
     L = i.useCallback(() => {
       let e = "noop";
@@ -56,10 +56,10 @@ function v(e) {
     O = new m.ZP(v.guild)
   }
   let W = null != v.channel ? (0, p.jD)(v.channel) : null;
-  M && !w ? a = R ? x.NW.string(x.t.oBLoZG) : x.NW.formatToPlainString(x.t["0QJmAw"], {
-    name: k.username
-  }) : (t = x.NW.string(x.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, A && (t = x.NW.string(x.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = R ? x.NW.string(x.t["4hyaHh"]) : x.NW.formatToPlainString(x.t.QmlLEh, {
-    name: k.username
+  M && !w ? a = k ? x.NW.string(x.t.oBLoZG) : x.NW.formatToPlainString(x.t["0QJmAw"], {
+    name: R.username
+  }) : (t = x.NW.string(x.t["I6JG4+"]), n = d.Z.Button.Colors.GREEN, A && (t = x.NW.string(x.t["Q1W99/"]), n = d.Z.Button.Colors.PRIMARY), a = k ? x.NW.string(x.t["4hyaHh"]) : x.NW.formatToPlainString(x.t.QmlLEh, {
+    name: R.username
   }));
   let U = S === O.id && null != W ? (0, r.jsx)(d.Z.Channel, {
     channel: W

@@ -14,24 +14,24 @@ function c(e) {
       entry: s,
       baseEntryData: u
     } = e,
-    p = s.extra.entries[0].media,
-    d = p.artists[0],
+    d = s.extra.entries[0].media,
+    p = d.artists[0],
     {
       title: f,
       provider: b,
       image_url: O
-    } = p,
-    y = d.name,
-    m = {
-      onClick: () => (0, l.o)(o.Hw.TRACK, p.external_id),
+    } = d,
+    m = p.name,
+    y = {
+      onClick: () => (0, l.o)(o.Hw.TRACK, d.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
         itemName: f
       })
     },
     j = {
-      onClick: () => (0, l.o)(o.Hw.ARTIST, d.external_id),
+      onClick: () => (0, l.o)(o.Hw.ARTIST, p.external_id),
       ariaDescription: a.NW.formatToPlainString(a.t.xTsar6, {
-        itemName: y
+        itemName: m
       })
     };
   return b === n.p.SPOTIFY && (c = {
@@ -55,11 +55,11 @@ function c(e) {
     return e
   }({}, u), r = r = {
     title: f,
-    subtitle: y,
+    subtitle: m,
     thumbnailUrl: O,
-    titleClickable: m,
+    titleClickable: y,
     subtitleClickable: j,
-    thumbnailClickable: m,
+    thumbnailClickable: y,
     userDescription: a.t.CcVI1d,
     providerIconProps: c
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

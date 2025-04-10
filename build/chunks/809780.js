@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   As: () => B,
   ZP: () => Q,
@@ -34,8 +34,8 @@ var r, i, a = n(192379),
   A = n(306680),
   w = n(771845),
   Z = n(9156),
-  k = n(70956),
-  R = n(823379),
+  R = n(70956),
+  k = n(823379),
   D = n(709054),
   L = n(981631),
   M = n(124368);
@@ -111,7 +111,7 @@ class V extends l.EventEmitter {
         isFullyLoaded: t,
         hasLoadedAnything: t
       })
-    }(0, R.vE)(e)
+    }(0, k.vE)(e)
   }
   clearScrollToChannelIndex() {
     this.setState({
@@ -312,7 +312,7 @@ function K() {
         })
       }), u().sortBy(t, e => e.sortOrder)
     }(e),
-    n = u().uniq(t.map(e => e.guildId)).filter(R.lm);
+    n = u().uniq(t.map(e => e.guildId)).filter(k.lm);
   return d.Z.dispatch({
     type: "INBOX_OPEN",
     guildIds: n
@@ -386,8 +386,8 @@ function Y(e, t, n, r) {
     messages: []
   }))
 }
-let X = 2 * k.Z.Millis.DAY,
-  q = 10 * k.Z.Millis.DAY;
+let X = 2 * R.Z.Millis.DAY,
+  q = 10 * R.Z.Millis.DAY;
 
 function Q(e) {
   let [t, n] = a.useState(() => new V(K(), e)), [r, i] = a.useState(!1), l = a.useRef(Date.now()), [o, s] = a.useState(() => K());
@@ -400,7 +400,7 @@ function Q(e) {
     if (null == o || o.channels.length > 0 || r) return;
     let t = Date.now(),
       a = K();
-    0 === a.channels.length || t - l.current < 10 * k.Z.Millis.SECOND ? i(!0) : (l.current = Date.now(), n(new V(a, e)))
+    0 === a.channels.length || t - l.current < 10 * R.Z.Millis.SECOND ? i(!0) : (l.current = Date.now(), n(new V(a, e)))
   }, [o, r, e]);
   let c = a.useRef(t);
   return a.useLayoutEffect(() => {

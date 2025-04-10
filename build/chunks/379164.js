@@ -1,4 +1,4 @@
-/** Chunk was on 21128 **/
+/** Chunk was on 99391 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -12,14 +12,14 @@ var r = n(570140),
   u = n(626135),
   d = n(782605),
   p = n(621600),
-  h = n(88658),
-  _ = n(981631);
+  _ = n(88658),
+  h = n(981631);
 let f = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
       n = (0, a.y)(),
       u = (0, a.h6)(),
-      _ = (0, a.U1)(),
+      h = (0, a.U1)(),
       f = (0, a.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
@@ -33,21 +33,21 @@ let f = {
         }) && null != e.guild) {
         if (u) {
           if (c.h2.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, h.YK)());
+            let t = new Set((0, _.YK)());
             t.delete(e.guild.id), c.h2.updateSetting(Array.from(t))
           }
         } else {
           var t;
-          let n = new Set((0, h.YK)());
+          let n = new Set((0, _.YK)());
           n.add(null == (t = e.guild) ? void 0 : t.id), c.h2.updateSetting(Array.from(n))
         }
-        if (_) {
+        if (h) {
           if (c.SE.getSetting().includes(e.guild.id)) {
-            let t = new Set((0, h._o)());
+            let t = new Set((0, _._o)());
             t.delete(e.guild.id), c.SE.updateSetting(Array.from(t))
           }
         } else {
-          let t = new Set((0, h._o)());
+          let t = new Set((0, _._o)());
           t.add(e.guild.id), c.SE.updateSetting(Array.from(t))
         }
         null != n && n.length > 0 && (0, l.iq)(e.guild.id, {
@@ -77,7 +77,7 @@ let f = {
         i = (0, a.U1)(),
         o = (0, a.yS)(),
         l = (0, a.aP)();
-      u.default.track(_.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+      u.default.track(h.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: e,
         guild_id: t,
         nickname_present: null != n && n.length > 0,

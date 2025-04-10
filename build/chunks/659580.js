@@ -16,8 +16,8 @@ var l = n(990547),
   f = n(453925),
   m = n(632304),
   g = n(131951),
-  b = n(358085),
-  O = n(947150),
+  O = n(358085),
+  b = n(947150),
   y = n(488021),
   h = n(822556),
   v = n(981631),
@@ -35,8 +35,8 @@ function P(e) {
     renderDeafen: Z = !1,
     simplified: x = !1,
     onSelect: C,
-    appContext: w,
-    onInteraction: T
+    appContext: T,
+    onInteraction: w
   } = e, {
     analyticsLocations: A
   } = (0, u.ZP)();
@@ -47,8 +47,8 @@ function P(e) {
       location_stack: A
     }
   });
-  let D = (0, h.Z)(w),
-    _ = (0, O.Z)(A, x),
+  let D = (0, h.Z)(T),
+    _ = (0, b.Z)(A, x),
     k = (0, y.Z)(A, x),
     L = (0, p.Z)(A),
     W = (0, f.Z)(A),
@@ -56,12 +56,12 @@ function P(e) {
     U = o.Yn.DEFAULT,
     R = g.Z.isSelfDeaf(U),
     V = (0, i.e7)([g.Z], () => g.Z.getMode()),
-    B = V === v.pM4.VOICE_ACTIVITY ? v.pM4.PUSH_TO_TALK : v.pM4.VOICE_ACTIVITY;
+    F = V === v.pM4.VOICE_ACTIVITY ? v.pM4.PUSH_TO_TALK : v.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
     object: v.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
       onSelect: C,
-      onInteraction: T,
+      onInteraction: w,
       className: S.menu,
       onClose: t,
       navId: "audio-device-context",
@@ -78,11 +78,11 @@ function P(e) {
             location: "AudioDeviceMenu"
           }),
           checked: R
-        }, "self-deafen") : null, x && P && b.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+        }, "self-deafen") : null, x && P && O.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
           checked: V === v.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: j.NW.string(j.t.Q8gkVF),
-          action: () => s.Z.setMode(B, void 0, void 0, {
+          action: () => s.Z.setMode(F, void 0, void 0, {
             analyticsLocations: A
           })
         }) : null, D]

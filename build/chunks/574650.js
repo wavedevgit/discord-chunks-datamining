@@ -1,28 +1,28 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
-  Z: () => p
+  Z: () => P
 }), n(539854), n(388685);
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i);
-if (12633 == n.j) var o = n(512969);
-var a = n(442837),
+  l = n.n(i),
+  o = n(512969),
+  a = n(442837),
   s = n(481060),
   c = n(430824),
   u = n(914010),
   E = n(693546),
   d = n(305325),
   _ = n(246364),
-  N = n(983736),
-  I = n(937111),
-  T = n(981631),
-  O = n(176505),
+  I = n(983736),
+  N = n(937111),
+  O = n(981631),
+  T = n(176505),
   S = n(388032),
-  A = n(246752),
-  P = n(240211);
+  p = n(246752),
+  R = n(240211);
 
-function R(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,29 +40,29 @@ function R(e) {
   }
   return e
 }
-let p = 12633 == n.j ? () => {
+let P = () => {
   var e, t;
   let i = (0, a.e7)([u.Z], () => u.Z.getGuildId(), []),
-    p = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
-    C = (0, a.e7)([I.Z], () => null != i ? I.Z.getRequest(i) : null, [i]),
-    D = (0, o.TH)(),
-    f = (null == (e = (0, o.LX)(D.pathname, T.Z5c.CHANNEL(null == p ? void 0 : p.id, O.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
-  if (null == p || !(0, N.Dc)(p) || f) return null;
-  let m = null != (t = null == C ? void 0 : C.applicationStatus) ? t : _.wB.STARTED,
-    g = null,
-    h = null,
+    P = (0, a.e7)([c.Z], () => c.Z.getGuild(i), [i]),
+    f = (0, a.e7)([N.Z], () => null != i ? N.Z.getRequest(i) : null, [i]),
+    C = (0, o.TH)(),
+    D = (null == (e = (0, o.LX)(C.pathname, O.Z5c.CHANNEL(null == P ? void 0 : P.id, T.oC.GUILD_ONBOARDING))) ? void 0 : e.isExact) === !0;
+  if (null == P || !(0, I.Dc)(P) || D) return null;
+  let g = null != (t = null == f ? void 0 : f.applicationStatus) ? t : _.wB.STARTED,
+    m = null,
     y = null,
-    U = [A.notice, P.notice];
-  switch (m) {
+    h = null,
+    U = [p.notice, R.notice];
+  switch (g) {
     case _.wB.SUBMITTED:
-      g = S.NW.string(S.t["5iLvS0"]), h = S.NW.string(S.t.mqtdmZ), y = () => {
+      m = S.NW.string(S.t["5iLvS0"]), y = S.NW.string(S.t.mqtdmZ), h = () => {
         (0, s.h7j)(e => {
           var t, n;
-          return (0, r.jsx)(s.ConfirmModal, (t = R({
+          return (0, r.jsx)(s.ConfirmModal, (t = A({
             header: S.NW.string(S.t.aIz1oa),
             confirmText: S.NW.string(S.t["cY+Ooa"]),
             cancelText: S.NW.string(S.t["ETE/oK"]),
-            onConfirm: () => E.Z.removeGuildJoinRequest(p.id),
+            onConfirm: () => E.Z.removeGuildJoinRequest(P.id),
             confirmButtonColor: s.zxk.Colors.BRAND
           }, e), n = n = {
             children: (0, r.jsx)(s.Text, {
@@ -83,35 +83,35 @@ let p = 12633 == n.j ? () => {
       };
       break;
     case _.wB.REJECTED:
-      g = S.NW.string(S.t.lk30cX), h = S.NW.string(S.t["8RrsHh"]), y = () => {
+      m = S.NW.string(S.t.lk30cX), y = S.NW.string(S.t["8RrsHh"]), h = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
           } = await n.e("82075").then(n.bind(n, 76075));
-          return t => (0, r.jsx)(e, R({
-            guildId: p.id
+          return t => (0, r.jsx)(e, A({
+            guildId: P.id
           }, t))
         })
-      }, U.push(A.error);
+      }, U.push(p.error);
       break;
     default:
-      g = S.NW.string(S.t.G5YKXF), h = S.NW.string(S.t["r8/DT0"]), y = () => {
-        (0, d.hk)(p.id)
+      m = S.NW.string(S.t.G5YKXF), y = S.NW.string(S.t["r8/DT0"]), h = () => {
+        (0, d.hk)(P.id)
       }
   }
   return (0, r.jsxs)("div", {
     className: l()(...U),
     children: [(0, r.jsx)(s.Text, {
-      className: A.header,
+      className: p.header,
       variant: "text-sm/normal",
-      children: g
+      children: m
     }), (0, r.jsx)(s.zxk, {
-      className: A.button,
+      className: p.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
-      onClick: y,
-      children: h
+      onClick: h,
+      children: y
     })]
   })
-} : null
+}

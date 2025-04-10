@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => v
 }), n(388685);
@@ -54,9 +54,9 @@ let v = e => {
     P || N()
   }, [N, P]), B = i.useCallback((e, t) => {
     I(), S(!P), l === y.D.EMOJI ? null == v || v(void 0) : null == v || v(y.D.EMOJI), (!j || P) && (null == t || t(e))
-  }, [I, P, j, v, l]), H = (j || P) && (l === y.D.EMOJI || null == l);
+  }, [I, P, j, v, l]), G = (j || P) && (l === y.D.EMOJI || null == l);
   return (0, r.jsx)(s.yRy, {
-    shouldShow: H,
+    shouldShow: G,
     animation: k ? s.yRy.Animation.FADE : s.yRy.Animation.TRANSLATE,
     animationPosition: k ? "top" : "bottom",
     position: "bottom",
@@ -70,7 +70,7 @@ let v = e => {
         closePopout: n
       } = e;
       return (0, r.jsx)(_.Z, {
-        isHovered: H,
+        isHovered: G,
         channel: t,
         closePopout: n,
         onMouseEnter: E,

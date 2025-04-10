@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(481932),
   A = n(195387),
   C = n(272510),
-  R = n(4517),
-  P = n(171368),
+  P = n(4517),
+  R = n(171368),
   w = n(978395),
   D = n(161572),
   L = n(228168),
@@ -121,7 +121,7 @@ function V(e) {
     }),
     eo = i.useMemo(() => (0, _.Z)(), []),
     ea = e => {
-      null == Z || Z(), (0, P.openUserProfileModal)(B(U({
+      null == Z || Z(), (0, R.openUserProfileModal)(B(U({
         customStatusPrompt: eo,
         sourceAnalyticsLocations: z
       }, q, e), {
@@ -193,7 +193,7 @@ function V(e) {
                 channelId: G,
                 profileType: L.y0.BITE_SIZE,
                 onOpenProfile: W ? void 0 : ea
-              }), (0, r.jsx)(R.Z, {
+              }), (0, r.jsx)(P.Z, {
                 location: "UserProfilePopout",
                 user: t,
                 guildId: j,

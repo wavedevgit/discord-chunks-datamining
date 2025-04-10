@@ -96,14 +96,14 @@ function m(e, t) {
       [N, A] = i.useState(!1),
       {
         scrollerRef: C,
-        getScrollerState: R
+        getScrollerState: P
       } = (0, l.Ke)(),
-      P = (0, l.t2)(C);
+      R = (0, l.t2)(C);
     i.useImperativeHandle(u, () => d({
       getScrollerNode: () => C.current,
       isScrolling: () => null != S.current,
-      getScrollerState: R
-    }, (0, l.Ue)(C, R, P)), [C, R, P]);
+      getScrollerState: P
+    }, (0, l.Ue)(C, P, R)), [C, P, R]);
     let w = i.useCallback(e => {
       null == S.current ? A(!0) : clearTimeout(S.current), S.current = setTimeout(() => {
         S.current = null, A(!1)

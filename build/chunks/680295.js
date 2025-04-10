@@ -59,8 +59,8 @@ let O = e => {
     } = e, O = i.useRef(null), [I, S] = i.useState([]);
     (0, g.Z)(E);
     let [T, N] = i.useState(0), [A, C] = i.useState(0), {
-      accessibilityLabel: R
-    } = E, [P, w] = i.useState(-v), {
+      accessibilityLabel: P
+    } = E, [R, w] = i.useState(-v), {
       stop: D,
       reset: L,
       ticking: x
@@ -102,15 +102,15 @@ let O = e => {
                 left: null != (l = null == (a = e.position) ? void 0 : a.x) ? l : 0
               },
               src: n,
-              alt: R
+              alt: P
             }, e.src + i)
           }
           return (0, r.jsx)(h.Z, {
             layerConfig: e,
             animationType: E.animationType,
             ticking: x.current,
-            time: P,
-            accessibilityLabel: R,
+            time: R,
+            accessibilityLabel: P,
             hasPlayedThrough: k,
             setHasPlayedThrough: j,
             urlQueryString: m,

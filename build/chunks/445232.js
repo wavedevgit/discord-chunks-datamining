@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   container: "container_cfd26e",
   title: "title_cfd26e",

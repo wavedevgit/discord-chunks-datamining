@@ -1,6 +1,6 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
-  F: () => k,
+  F: () => R,
   P: () => Z
 }), n(388685), n(997841), n(953529), n(781311);
 var r = n(200651),
@@ -99,7 +99,7 @@ function Z(e) {
       })
     })
   };
-  return (0, r.jsx)(R, {
+  return (0, r.jsx)(k, {
     appName: u.name,
     title: T.NW.formatToPlainString(T.t.XDRjs7, {
       appName: u.name
@@ -129,7 +129,7 @@ function Z(e) {
   })
 }
 
-function k(e) {
+function R(e) {
   var t, a;
   let {
     appId: l,
@@ -159,7 +159,7 @@ function k(e) {
     var e;
     return null == (e = g.Z.getBasicChannel(u.channel_id)) ? void 0 : e.guild_id
   }, [u]), E = i.useMemo(() => null != x ? (0, O.y)(x, 45) : void 0, [x]), Z = (0, j.R)(null != (a = null == x ? void 0 : x.id) ? a : ""), {
-    openModal: k,
+    openModal: R,
     subscriptionPurchaseButtonState: D
   } = (0, h.Z)({
     skuId: c,
@@ -228,7 +228,7 @@ function k(e) {
       area: "purchase_button"
     })
   };
-  return (0, r.jsx)(R, {
+  return (0, r.jsx)(k, {
     appName: x.name,
     title: m.name,
     description: F,
@@ -258,7 +258,7 @@ function k(e) {
         className: P.viewDetailsButton,
         children: T.NW.string(T.t.DXYfjI)
       }), L ? null != _ ? (0, r.jsx)(C.pV, {
-        onClick: k,
+        onClick: R,
         appId: x.id,
         subscriptionType: M ? "user" : "guild",
         skuId: m.id,
@@ -285,7 +285,7 @@ function k(e) {
   })
 }
 
-function R(e) {
+function k(e) {
   let {
     appName: t,
     title: n,

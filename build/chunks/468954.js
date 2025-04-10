@@ -71,8 +71,8 @@ function p(e) {
     renderCategoryList: N,
     renderHeaderAccessories: A,
     rowHeight: C,
-    sectionHeaderHeight: R,
-    sectionFooterHeight: P,
+    sectionHeaderHeight: P,
+    sectionFooterHeight: R,
     itemNodeWidth: w,
     listPaddingRight: D,
     itemNodeMargin: L,
@@ -171,8 +171,8 @@ function p(e) {
           rowCount: z,
           rowCountBySection: q,
           rowHeight: C,
-          sectionHeaderHeight: R,
-          sectionFooterHeight: P,
+          sectionHeaderHeight: P,
+          sectionFooterHeight: R,
           renderUpsell: U,
           setShowUpsell: G
         }) : null

@@ -71,7 +71,7 @@ function T(e) {
 }
 
 function N(e, t) {
-  c.AW.has(e.type) && A(R(e), t)
+  c.AW.has(e.type) && A(P(e), t)
 }
 
 function A(e, t) {
@@ -82,10 +82,10 @@ function A(e, t) {
 
 function C(e) {
   var t;
-  null == (t = e.threads) || t.forEach(P)
+  null == (t = e.threads) || t.forEach(R)
 }
 
-function R(e) {
+function P(e) {
   if (!(e.id in O)) {
     var t;
     O[e.id] = {
@@ -99,7 +99,7 @@ function R(e) {
   return O[e.id]
 }
 
-function P(e) {
+function R(e) {
   N(e, t => {
     var n;
     null != e.messageCount && (t.count = e.messageCount);
@@ -111,7 +111,7 @@ function P(e) {
 function w(e) {
   if (null != e && !(e.id in O)) {
     let t = f.Z.getChannel(e.id);
-    if (null != t) return P(t), !0
+    if (null != t) return R(t), !0
   }
   return !1
 }
@@ -150,7 +150,7 @@ function k(e) {
   let {
     channel: t
   } = e;
-  P(t)
+  R(t)
 }
 
 function j(e) {
@@ -158,7 +158,7 @@ function j(e) {
     threads: t,
     mostRecentMessages: n
   } = e;
-  t.forEach(P), null == n || n.forEach(e => {
+  t.forEach(R), null == n || n.forEach(e => {
     let t = f.Z.getChannel(e.channel_id);
     null != t && e.type !== m.uaV.THREAD_STARTER_MESSAGE && N(t, t => {
       t.mostRecentRawMessage = e, t.mostRecentMessage = null

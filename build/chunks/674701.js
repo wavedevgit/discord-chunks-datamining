@@ -1,7 +1,7 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
-  U: () => k,
-  Z: () => R
+  U: () => R,
+  Z: () => k
 });
 var r, i = n(200651),
   a = n(192379),
@@ -33,16 +33,16 @@ var r, i = n(200651),
   A = n(957825),
   w = n(388032),
   Z = n(587862),
-  k = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
+  R = ((r = {}).SYSTEM_MESSAGE = "system_message", r.COACHMARK = "coachmark", r);
 
-function R(e) {
+function k(e) {
   let {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
     onMouseEnter: l,
-    onMouseLeave: k,
-    popoutPosition: R,
+    onMouseLeave: R,
+    popoutPosition: k,
     analyticsPage: D,
     analyticsSection: L,
     glow: M,
@@ -80,7 +80,7 @@ function R(e) {
       [Z.contentCoachmark]: H
     }),
     onMouseEnter: l,
-    onMouseLeave: k,
+    onMouseLeave: R,
     children: (0, i.jsxs)("div", {
       className: o()(V, {
         [Z.innerGlow]: M
@@ -189,10 +189,10 @@ function R(e) {
             })]
           })
         })]
-      }), null != R && (0, i.jsx)("div", {
+      }), null != k && (0, i.jsx)("div", {
         className: o()(Z.connector, {
-          [Z.leftPopoutConnector]: "left" === R,
-          [Z.rightPopoutConnector]: "right" === R
+          [Z.leftPopoutConnector]: "left" === k,
+          [Z.rightPopoutConnector]: "right" === k
         })
       })]
     })

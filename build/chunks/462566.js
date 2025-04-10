@@ -69,11 +69,11 @@ let y = function(e) {
   i.useEffect(() => () => {
     void 0 !== C && C(!1)
   });
-  let R = i.useCallback(() => {
+  let P = i.useCallback(() => {
     void 0 !== C && C(!0)
   }, [C]);
 
-  function P(e, t) {
+  function R(e, t) {
     !!y[e] !== t && v(n => b(g({}, n), {
       [e]: t
     }))
@@ -101,8 +101,8 @@ let y = function(e) {
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardNumber",
         flipped: m,
-        updateCompleted: e => P("cardNumber", e),
-        onFocus: R
+        updateCompleted: e => R("cardNumber", e),
+        onFocus: P
       })
     }]
   }, {
@@ -112,8 +112,8 @@ let y = function(e) {
       getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardExpiry",
-        updateCompleted: e => P("cardExpiry", e),
-        onFocus: R
+        updateCompleted: e => R("cardExpiry", e),
+        onFocus: P
       })
     }, {
       name: "cardCvc",
@@ -121,9 +121,9 @@ let y = function(e) {
       getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardCvc",
-        updateCompleted: e => P("cardCvc", e),
+        updateCompleted: e => R("cardCvc", e),
         onFocus: () => {
-          R(), E(!0)
+          P(), E(!0)
         },
         onBlur: () => {
           E(!1)

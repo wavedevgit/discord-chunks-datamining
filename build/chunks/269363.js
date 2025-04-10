@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   image: "image__04666",
   emptyPreviewContainer: "emptyPreviewContainer__04666",

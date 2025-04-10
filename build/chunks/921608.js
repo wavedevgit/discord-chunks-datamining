@@ -1,7 +1,8 @@
-/** Chunk was on 78447 **/
-i.d(e, {
-  F: () => s,
-  n: () => n
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  F: () => r,
+  n: () => i
 });
-let s = 12,
-  n = 24
+let r = 12,
+  i = 24

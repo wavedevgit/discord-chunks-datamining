@@ -1,1 +1,1 @@
-{"id":"445392","type":"store","data":{"name":"AppLauncherLastUsedCommandStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getLastUsedCommandId","args":[]}],"events":["APPLICATION_COMMAND_USED"]},"fromModule":{"id":"69606"}}
+{"id":"445392","type":"store","data":{"name":"AppLauncherLastUsedCommandStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"getLastUsedCommandId","args":[]}],"events":["APPLICATION_COMMAND_USED"]},"fromModule":{"id":"49843"}}

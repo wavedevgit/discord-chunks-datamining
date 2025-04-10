@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => eh,
   l: () => ef
@@ -41,9 +41,9 @@ var r, i = n(200651),
   W = n(306680),
   U = n(699516),
   B = n(246946),
-  H = n(594174),
-  G = n(626135),
-  F = n(572004),
+  G = n(594174),
+  F = n(626135),
+  H = n(572004),
   V = n(585483),
   z = n(823379),
   Y = n(709054),
@@ -202,7 +202,7 @@ class ed extends(r = l.PureComponent) {
     } = this.props;
     m.Z.wait(() => C.Z.open(null == e ? void 0 : e.id));
     let t = (0, E.v_)(e);
-    G.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
+    F.default.track(J.rMx.OPEN_POPOUT, ei(er({}, t), {
       type: this._getAnalyticsEntryPoint().entryPointType,
       source: this._getAnalyticsEntryPoint().entryPointSource,
       is_friend: !this.isNotFriends()
@@ -245,7 +245,7 @@ class ed extends(r = l.PureComponent) {
   getMaxParticipants() {
     let {
       channel: e
-    } = this.props, t = H.default.getCurrentUser();
+    } = this.props, t = G.default.getCurrentUser();
     return null != t && t.isStaff() ? J.p3w : null != e && e.userLimit > 0 ? e.userLimit : J.pAY
   }
   getRemaining() {
@@ -313,7 +313,7 @@ class ed extends(r = l.PureComponent) {
     if (!n || this.isNotFriends()) return null;
     let a = [];
     return o.forEach(e => {
-      let t = H.default.getUser(e);
+      let t = G.default.getUser(e);
       null != t && a.push(q.ZP.getName(t))
     }), (0, i.jsxs)(P.Z, {
       className: ee.searchBar,
@@ -366,7 +366,7 @@ class ed extends(r = l.PureComponent) {
     if (this.isNotFriends()) {
       let t = null != e ? e.getRecipientId() : null;
       if (null == t) throw Error("no recipient in DM");
-      let n = H.default.getUser(t),
+      let n = G.default.getUser(t),
         r = null != n ? n.username : "",
         l = null != n && U.Z.getRelationshipType(n.id) === J.OGo.PENDING_OUTGOING;
       return (0, i.jsxs)(es, {
@@ -451,7 +451,7 @@ class ed extends(r = l.PureComponent) {
         className: et.marginBottom8,
         children: $.NW.string($.t.t3O2BQ)
       }), (0, i.jsx)(f.kO8, {
-        supportsCopy: F.wS,
+        supportsCopy: H.wS,
         placeholder: (0, Z.Z)($.NW.string($.t.lPVBqK)),
         value: s ? n ? $.NW.string($.t["6HzNgY"]) : o : "",
         buttonColor: f.zxk.Colors.BRAND,
@@ -598,7 +598,7 @@ class ed extends(r = l.PureComponent) {
         channel: t
       } = this.props, n = (0, E.v_)(t);
       C.Z.search(e, null == t ? void 0 : t.id), null != this._existingTimeout && clearTimeout(this._existingTimeout), this._existingTimeout = setTimeout(() => {
-        G.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
+        F.default.track(J.rMx.SEARCH_USER_LIST_STARTED, ei(er({}, n), {
           entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
           entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
           search_query_length: e.length
@@ -628,7 +628,7 @@ class ed extends(r = l.PureComponent) {
         } = this.props,
         r = (0, E.v_)(n),
         i = !0;
-      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), G.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      1 === e.length && (i = null == b.Z._openCachedDMChannel(e[0])), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: i,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -645,7 +645,7 @@ class ed extends(r = l.PureComponent) {
           if (e.isDM() && n !== e.id) return void g.Z.call(n, !1, !0);
           g.Z.ring(n, t)
         }
-      }), G.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
+      }), F.default.track(J.rMx.CREATE_DM_USER_LIST_CLICKED, ei(er({}, r), {
         is_new_dm: !0,
         entry_point_type: this._getAnalyticsEntryPoint().entryPointType,
         entry_point_source: this._getAnalyticsEntryPoint().entryPointSource,
@@ -678,13 +678,13 @@ class ed extends(r = l.PureComponent) {
         channel: t,
         invite: n
       } = this.props;
-      null != n && (0, F.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
+      null != n && (0, H.JG)(e), null != this.copyTimeout && clearTimeout(this.copyTimeout), this.setState({
         copied: !0
       }), this.copyTimeout = setTimeout(() => {
         this.setState({
           copied: !1
         })
-      }, 1e3), G.default.track(J.rMx.COPY_INSTANT_INVITE, {
+      }, 1e3), F.default.track(J.rMx.COPY_INSTANT_INVITE, {
         server: null,
         channel: null != t ? t.id : null,
         channel_type: null != t ? t.type : null,
@@ -728,7 +728,7 @@ function eh(e) {
   l.useEffect(() => (m && V.S.subscribe(J.CkL.TOGGLE_DM_CREATE, y), () => {
     V.S.unsubscribe(J.CkL.TOGGLE_DM_CREATE, y)
   }), [m, y]);
-  let C = (0, h.e7)([H.default], () => H.default.getUser(null == r ? void 0 : r.getRecipientId()));
+  let C = (0, h.e7)([G.default], () => G.default.getUser(null == r ? void 0 : r.getRecipientId()));
   return (l.useEffect(() => {
     (0, A._)()
   }, []), null != (t = null == C ? void 0 : C.bot) && t || null != (n = null == C ? void 0 : C.isProvisional) && n) ? null : (0, i.jsx)(f.yRy, {

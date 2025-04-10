@@ -51,8 +51,8 @@ function u(e) {
     N = (0, a.D)(p || E, y, T),
     A = N.state,
     C = N.styles,
-    R = N.forceUpdate,
-    P = N.update,
+    P = N.forceUpdate,
+    R = N.update,
     w = r.useMemo(function() {
       return {
         ref: v,
@@ -64,9 +64,9 @@ function u(e) {
           style: C.arrow,
           ref: S
         },
-        forceUpdate: R || s,
-        update: P || l
+        forceUpdate: P || s,
+        update: R || l
       }
-    }, [v, S, n, A, C, P, R]);
+    }, [v, S, n, A, C, R, P]);
   return (0, o.$p)(g)(w)
 }

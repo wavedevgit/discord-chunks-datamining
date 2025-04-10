@@ -50,8 +50,8 @@ function N(e) {
 }
 let A = O.kod,
   C = {},
-  R = new Set,
-  P = 0;
+  P = new Set,
+  R = 0;
 
 function w(e) {
   var t;
@@ -75,7 +75,7 @@ function D(e) {
 
 function L(e) {
   let t = D(e);
-  t.sentinel++, P++
+  t.sentinel++, R++
 }
 
 function x(e, t, n) {
@@ -130,7 +130,7 @@ function Z(e, t, n) {
       isMentionLowImportance: r
     } = e;
     r ? t.lowImportanceMentionCount += n : t.highImportanceMentionCount += n
-  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? R.add(e) : R.delete(e)), P++, L(null != e ? e : A), F(t, n), !0)
+  }), (t.unread !== n.unread || t.lowImportanceMentionCount !== n.lowImportanceMentionCount || t.highImportanceMentionCount !== n.highImportanceMentionCount) && (C[null != e ? e : A] = t, null != e && (t.unread ? P.add(e) : P.delete(e)), R++, L(null != e ? e : A), F(t, n), !0)
 }
 
 function H(e, t) {
@@ -158,7 +158,7 @@ function H(e, t) {
     }), i.unreadByType[S.W.CHANNEL] = u, i.unreadByType[S.W.CHANNEL] !== r.unreadByType[S.W.CHANNEL] && !i.unreadByType[S.W.CHANNEL]) {
     let e = p.Z.getChannel(r.unreadChannelId);
     if (!(null != e && !t.includes(e.id) && g.ZP.hasUnread(e.id) && M(e))) return Y(n);
-    null != n && R.add(n), i.unreadByType[S.W.CHANNEL] = !0
+    null != n && P.add(n), i.unreadByType[S.W.CHANNEL] = !0
   }
   return Z(n, i, r)
 }
@@ -231,14 +231,14 @@ function Y(e, t) {
   }
   V(r);
   let f = D(n);
-  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? R.add(n) : R.delete(n)), P++, L(null != n ? n : A), F(r, f), !0)
+  return (r.unread !== f.unread || r.highImportanceMentionCount !== f.highImportanceMentionCount || r.lowImportanceMentionCount !== f.lowImportanceMentionCount) && (C[null != n ? n : A] = r, null != n && (r.unread ? P.add(n) : P.delete(n)), R++, L(null != n ? n : A), F(r, f), !0)
 }
 
 function K(e) {
   let {
     guilds: t
   } = e;
-  C = {}, P = 0, R = new Set, Y(null);
+  C = {}, R = 0, P = new Set, Y(null);
   let {
     length: n
   } = t;
@@ -253,7 +253,7 @@ function z(e) {
     guilds: t,
     readState: n
   } = e;
-  C = {}, P = 0, R = new Set;
+  C = {}, R = 0, P = new Set;
   let r = n.entries.length < 500,
     i = new Set;
   for (let e of (r && n.entries.forEach(e => {
@@ -266,7 +266,7 @@ function z(e) {
 }
 
 function q() {
-  for (let e of (C = {}, R = new Set, Y(null), Object.values(h.Z.getGuildIds()))) Y(e)
+  for (let e of (C = {}, P = new Set, Y(null), Object.values(h.Z.getGuildIds()))) Y(e)
 }
 
 function Q(e) {
@@ -280,7 +280,7 @@ function X(e) {
   let {
     guild: t
   } = e;
-  return null != C[t.id] && (delete C[t.id], R.delete(t.id), P++, !0)
+  return null != C[t.id] && (delete C[t.id], P.delete(t.id), R++, !0)
 }
 
 function J(e) {
@@ -465,31 +465,31 @@ class ev extends b.Z {
   }
   loadCache() {
     let e = this.readSnapshot(ev.LATEST_SNAPSHOT_VERSION);
-    null != e && (C = e.guilds, R = new Set(e.unreadGuilds))
+    null != e && (C = e.guilds, P = new Set(e.unreadGuilds))
   }
   takeSnapshot() {
     return {
       version: ev.LATEST_SNAPSHOT_VERSION,
       data: {
         guilds: C,
-        unreadGuilds: Array.from(R)
+        unreadGuilds: Array.from(P)
       }
     }
   }
   hasAnyUnread() {
-    return R.size > 0
+    return P.size > 0
   }
   getStoreChangeSentinel() {
-    return P
+    return R
   }
   getMutableUnreadGuilds() {
-    return R
+    return P
   }
   getMutableGuildStates() {
     return C
   }
   hasUnread(e) {
-    return R.has(e)
+    return P.has(e)
   }
   getMentionCount(e) {
     let t = D(e);

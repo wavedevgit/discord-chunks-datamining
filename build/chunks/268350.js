@@ -4,10 +4,10 @@ n.d(t, {
   $p: () => S,
   FQ: () => I,
   Il: () => T,
-  Jf: () => R,
+  Jf: () => P,
   SA: () => L,
   Um: () => A,
-  eu: () => P,
+  eu: () => R,
   hW: () => x,
   lY: () => C,
   pk: () => N,
@@ -169,13 +169,13 @@ let I = async (e, t) => {
       user: _.default.getCurrentUser()
     })
   }), n.body
-}, R = async (e, t, n) => (await o.tn.patch({
+}, P = async (e, t, n) => (await o.tn.patch({
   url: m.ANM.GUILD_STICKER(e, t),
   body: n,
   rejectWithError: !1
 })).body;
 
-function P(e, t, n) {
+function R(e, t, n) {
   a.Z.dispatch({
     type: "ADD_STICKER_PREVIEW",
     channelId: e,

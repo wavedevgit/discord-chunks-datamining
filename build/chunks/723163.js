@@ -1,19 +1,19 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 }), n(388685);
 var i = n(192379),
   r = n(392711),
   l = n.n(r),
-  a = n(442837),
-  o = n(567409),
+  o = n(442837),
+  a = n(567409),
   s = n(699516),
   c = n(594174),
-  d = n(709054);
+  u = n(709054);
 
-function u(e) {
-  let t = (0, o.Ns)(e.id),
-    n = (0, a.cj)([c.default, s.Z], () => {
+function d(e) {
+  let t = (0, a.Ns)(e.id),
+    n = (0, o.cj)([c.default, s.Z], () => {
       let e = {};
       for (let n of t.values()) {
         let t = c.default.getUser(n.author_id),
@@ -22,13 +22,13 @@ function u(e) {
       }
       return e
     }),
-    [r, u] = i.useState([]);
+    [r, d] = i.useState([]);
   return i.useEffect(() => {
     let e = l().sortBy(Object.entries(n), e => {
       let [t, n] = e;
-      return d.default.extractTimestamp(n)
+      return -u.default.extractTimestamp(n)
     });
-    u(l().map(e, e => {
+    d(l().map(e, e => {
       let [t, n] = e;
       return c.default.getUser(t)
     }).filter(e => null != e))

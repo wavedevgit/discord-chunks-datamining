@@ -98,8 +98,8 @@ function T(e) {
     renderPopout: N,
     onRequestClose: A,
     onClosePopout: C,
-    shouldShow: R,
-    shouldPreload: P = !0,
+    shouldShow: P,
+    shouldPreload: R = !0,
     shouldShowOnHover: w = !1
   } = e, D = y(e, ["children", "userId", "user", "guildId", "channelId", "avatarUrl", "preload", "renderPopout", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload", "shouldShowOnHover"]);
   let L = (0, o.e7)([c.default], () => c.default.getCurrentUser()),
@@ -131,7 +131,7 @@ function T(e) {
   return w ? (0, r.jsx)("div", {
     className: h.hoverable,
     onMouseEnter: () => {
-      G.current = !0, P && (B.current = setTimeout(async () => {
+      G.current = !0, R && (B.current = setTimeout(async () => {
         if (G.current) try {
           U(!0), await W()
         } finally {
@@ -148,8 +148,8 @@ function T(e) {
     },
     children: (0, r.jsx)(a.yRy, b(g({
       popoutKey: _.Tg,
-      shouldShow: !0 === R || M,
-      preload: !P || j || M ? void 0 : W,
+      shouldShow: !0 === P || M,
+      preload: !R || j || M ? void 0 : W,
       renderPopout: Y,
       onRequestClose: () => {
         k(!1), null == A || A()
@@ -159,8 +159,8 @@ function T(e) {
     }))
   }) : (0, r.jsx)(a.yRy, b(g({
     popoutKey: _.Tg,
-    shouldShow: R,
-    preload: P ? W : void 0,
+    shouldShow: P,
+    preload: R ? W : void 0,
     renderPopout: Y,
     onRequestClose: A
   }, D), {

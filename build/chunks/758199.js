@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   W: () => O,
   u: () => E
@@ -75,7 +75,7 @@ function O(e) {
   let {
     primaryColor: w,
     secondaryColor: Z
-  } = (0, p.Z)(null != I ? I : j), k = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), R = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
+  } = (0, p.Z)(null != I ? I : j), R = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == A || null == (t = A.onView) || t.call(A), (0, g.GF)(A.id, A.linkType, A.referrerId, A.activityCustomId), D.current = !0
@@ -92,7 +92,7 @@ function O(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, W = null != j, U = null != C && !1 === R, F = W || U, B = 0 === S ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
+  }) : null, W = null != j, U = null != C && !1 === k, F = W || U, B = 0 === S ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
   }, []), V = a.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
@@ -125,7 +125,7 @@ function O(e) {
     }), (0, i.jsxs)("div", {
       className: x.contentContainer,
       style: {
-        background: k
+        background: R
       },
       children: [null != O && (0, i.jsxs)("div", {
         className: x.header,

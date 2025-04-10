@@ -24,7 +24,7 @@ function f(e, t, r) {
 }
 let p = new i.Z("UploadArea");
 
-function h() {
+function m() {
   return (0, n.jsxs)("div", {
     children: [(0, n.jsx)("div", {
       className: o()(g.sparkleWhite, u.sparkleOne)
@@ -43,7 +43,7 @@ function h() {
     })]
   })
 }
-class m extends A.Component {
+class h extends A.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != e && (e.ownerDocument.body.addEventListener("dragover", this.handleDragOver, !1), e.ownerDocument.body.addEventListener("drop", this.handleDragLeave, !1), e.addEventListener("dragover", this.handleDragOverZone, !1), e.addEventListener("dragleave", this.handleDragLeaveZone, !1), e.addEventListener("drop", this.handleDrop, !1))
@@ -69,7 +69,7 @@ class m extends A.Component {
       style: A,
       children: (0, n.jsxs)("div", {
         className: u.uploadDropModal,
-        children: [this.state.isDragging && (0, n.jsx)(h, {}), (0, n.jsx)("div", {
+        children: [this.state.isDragging && (0, n.jsx)(m, {}), (0, n.jsx)("div", {
           className: u.bgScale
         }), (0, n.jsxs)("div", {
           className: u.inner,
@@ -156,4 +156,4 @@ class m extends A.Component {
     })
   }
 }
-let b = m
+let b = h

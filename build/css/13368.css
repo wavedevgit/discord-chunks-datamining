@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: 6454ee10836567c3
+  Original File Name: 6caa88d70a039c21
 **/
 .debugMode_fa952e {
     border: 2px solid red;
@@ -901,58 +901,6 @@
 
 .emptyWidgetIcon_cc1cc5 {
     opacity: .24
-}
-
-.image__04666 {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain
-}
-
-.emptyPreviewContainer__04666 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 auto
-}
-
-.emptyPreviewImage__04666 {
-    width: 80%;
-    height: 60%;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    margin-bottom: 10px
-}
-
-.emptyPreviewText__04666 {
-    color: var(--header-secondary)
-}
-
-.noImage__04666 {
-    background-image: none
-}
-
-.images-light .emptyPreviewImage__04666 {
-    background-image: url(/assets/bc689a4cf705a445.svg)
-}
-
-.images-light .emptyPreviewImage__04666.noImage__04666 {
-    background-image: none
-}
-
-.images-dark .emptyPreviewImage__04666 {
-    background-image: url(/assets/6b1a461f35c05c7a.svg)
-}
-
-.images-dark .emptyPreviewImage__04666.noImage__04666 {
-    background-image: none
 }
 
 .wrapper__48b20 {
@@ -3394,15 +3342,6 @@
     color: var(--header-primary)
 }
 
-.button__7d567 {
-    font-size: 14px
-}
-
-.buttonSize__7d567 {
-    height: 32px;
-    min-height: 32px
-}
-
 .flex__08d32 {
     display: flex;
     align-items: center
@@ -4368,4 +4307,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     height: 52px
 }
 
-/*# sourceMappingURL=6454ee10836567c3.css.map*/
+/*# sourceMappingURL=6caa88d70a039c21.css.map*/

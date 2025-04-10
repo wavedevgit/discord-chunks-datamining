@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(881052),
   h = n(899370),
   g = n(267394),
-  f = n(388905),
-  m = n(639946),
+  m = n(388905),
+  f = n(639946),
   _ = n(792766),
   b = n(362762),
   x = n(978684),
@@ -148,27 +148,27 @@ class V extends i.PureComponent {
     }({}, a, n))
   }
   renderSpinner(e) {
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Dx, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: e
-      }), (0, r.jsx)(f.Hh, {})]
+      }), (0, r.jsx)(m.Hh, {})]
     })
   }
   renderInvalidInvite() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Ee, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Ee, {
         src: n(167969),
         className: M.marginBottom8
-      }), (0, r.jsx)(f.Dx, {
+      }), (0, r.jsx)(m.Dx, {
         className: a()(M.marginTop8, M.marginBottom8),
         children: B.NW.string(B.t.kux01N)
-      }), (0, r.jsx)(f.DK, {
+      }), (0, r.jsx)(m.DK, {
         children: e ? B.NW.string(B.t["5AkWAQ"]) : B.NW.string(B.t["+qUJAg"])
-      }), this.renderButton(B.NW.string(B.t.fIv16O)), (0, r.jsx)(f.zx, {
+      }), this.renderButton(B.NW.string(B.t.fIv16O)), (0, r.jsx)(m.zx, {
         onClick: () => window.open(T.Z.getArticleURL(L.BhN.INVALID_INVITES), "_blank"),
-        look: f.zx.Looks.LINK,
-        color: f.zx.Colors.LINK,
+        look: m.zx.Looks.LINK,
+        color: m.zx.Colors.LINK,
         className: M.marginTop8,
         children: B.NW.string(B.t.urIwn5)
       })]
@@ -176,7 +176,7 @@ class V extends i.PureComponent {
   }
   renderErrorInvite() {
     var e, t;
-    return (0, r.jsxs)(f.ZP, {
+    return (0, r.jsxs)(m.ZP, {
       children: [(0, r.jsx)(Z.Z, {
         invite: this.props.invite,
         error: null == (e = this.state.error) ? void 0 : e.message
@@ -191,11 +191,11 @@ class V extends i.PureComponent {
   }
   renderAppOpened(e) {
     let t = null != e ? e : this.handleContinue;
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Dx, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         className: M.marginBottom8,
         children: B.NW.string(B.t.csrAMD)
-      }), (0, r.jsx)(f.DK, {
+      }), (0, r.jsx)(m.DK, {
         children: B.NW.string(B.t["m1+IBg"])
       }), this.renderButton(B.NW.string(B.t.fIv16O), () => t())]
     })
@@ -207,7 +207,7 @@ class V extends i.PureComponent {
     return null != e.stage_instance && null != e.guild ? (0, r.jsx)(_.Z, {
       stageInstance: e.stage_instance,
       guild: e.guild
-    }) : null != e.guild_scheduled_event ? (0, r.jsx)(m.r, {
+    }) : null != e.guild_scheduled_event ? (0, r.jsx)(f.r, {
       channel: e.channel,
       guildScheduledEvent: e.guild_scheduled_event
     }) : (0, r.jsx)(Z.Z, {
@@ -218,7 +218,7 @@ class V extends i.PureComponent {
     let {
       invite: e
     } = this.props;
-    return (null != e.stage_instance || null != e.guild_scheduled_event) && null != e.guild ? (0, r.jsx)(f.ZP, {
+    return (null != e.stage_instance || null != e.guild_scheduled_event) && null != e.guild ? (0, r.jsx)(m.ZP, {
       className: M.marginTop20,
       children: (0, r.jsx)(_.y, {
         guild: e.guild,
@@ -231,14 +231,14 @@ class V extends i.PureComponent {
       invite: e
     } = this.props, t = null != e.stage_instance ? B.NW.string(B.t["5UKyUl"]) : B.NW.string(B.t.ohMvm5);
     return (0, r.jsxs)("div", {
-      children: [(0, r.jsxs)(f.ZP, {
+      children: [(0, r.jsxs)(m.ZP, {
         children: [this.renderAuthenticatedHeader(), this.renderButton(t, this.handleAccept)]
       }), this.renderAuthenicatedFooter()]
     })
   }
   renderContinue() {
-    return (0, r.jsxs)(f.ZP, {
-      children: [(0, r.jsx)(f.Dx, {
+    return (0, r.jsxs)(m.ZP, {
+      children: [(0, r.jsx)(m.Dx, {
         children: B.NW.string(B.t.fOc4go)
       }), this.renderButton(B.NW.string(B.t.fIv16O))]
     })
@@ -342,12 +342,12 @@ class V extends i.PureComponent {
           invite: i
         } = t.props,
         o = null != i.stage_instance || null != i.guild_scheduled_event;
-      return W.KO ? (0, r.jsx)(f.zx, {
+      return W.KO ? (0, r.jsx)(m.zx, {
         className: o ? M.marginTop20 : M.marginTop40,
         onClick: n,
-        color: o ? f.zx.Colors.GREEN : f.zx.Colors.BRAND,
+        color: o ? m.zx.Colors.GREEN : m.zx.Colors.BRAND,
         children: e
-      }) : (0, r.jsx)(f.v6, {
+      }) : (0, r.jsx)(m.v6, {
         className: M.marginTop40
       })
     })

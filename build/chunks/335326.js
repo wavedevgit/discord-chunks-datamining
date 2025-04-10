@@ -1,46 +1,48 @@
-/** Chunk was on 41150 **/
-n.d(l, {
-  Z: () => u,
-  t: () => o
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => f,
+  t: () => u
 });
-var t = n(200651),
+var r = n(200651),
   i = n(192379),
-  r = n(379357),
+  o = n(379357),
   a = n(442550),
   s = n(297781),
-  d = n(443487),
+  l = n(443487),
   c = n(522314);
-let o = [s.Yl, s.Rg],
-  u = i.memo(e => {
+let u = [s.Yl, s.Rg],
+  d = e => {
     let {
-      entry: l,
+      entry: t,
       channel: n,
       selected: i
     } = e, {
-      largeImage: u
-    } = (0, r.rv)({
-      entry: l
+      largeImage: d
+    } = (0, o.rv)({
+      entry: t
     });
-    return (0, t.jsxs)(d.Zb, {
+    return (0, r.jsxs)(l.Zb, {
       selected: i,
-      children: [(0, t.jsxs)(d.e$, {
-        children: [(0, t.jsx)(d.F9, {
-          entry: l,
+      children: [(0, r.jsxs)(l.e$, {
+        children: [(0, r.jsx)(l.F9, {
+          entry: t,
           channelId: n.id,
           guildId: n.guild_id
-        }), (0, t.jsx)(d.ll, {
-          children: l.extra.media_title
-        }), (0, t.jsx)(s.Gk, {
+        }), (0, r.jsx)(l.ll, {
+          children: t.extra.media_title
+        }), (0, r.jsx)(s.Gk, {
           location: s.Gt.CARD,
-          children: o.map((e, n) => (0, t.jsx)(e, {
-            entry: l
+          children: u.map((e, n) => (0, r.jsx)(e, {
+            entry: t
           }, n))
         })]
-      }), (0, t.jsx)(a.f, {
-        src: null == u ? void 0 : u.src,
+      }), (0, r.jsx)(a.f, {
+        src: null == d ? void 0 : d.src,
         size: 48,
         className: c.thumbnail,
-        alt: null == u ? void 0 : u.alt
+        alt: null == d ? void 0 : d.alt
       })]
     })
-  })
+  },
+  f = i.memo(d)

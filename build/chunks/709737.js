@@ -1,41 +1,42 @@
-/** Chunk was on 95287 **/
-r.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   DC: () => c,
   Js: () => u,
   ZR: () => d
 });
-var n = r(200651);
-r(192379);
-var a = r(657707),
-  o = r(297781),
-  i = r(709054),
-  l = r(528567);
-r(814059);
-var s = r(388032);
+var r = n(200651);
+n(192379);
+var i = n(657707),
+  o = n(297781),
+  a = n(709054),
+  s = n(528567);
+n(814059);
+var l = n(388032);
 
 function c(e) {
   let {
     value: t,
-    statisticId: r
-  } = e, a = s.NW.formatToPlainString(s.t.yhdo8v, {
+    statisticId: n
+  } = e, i = l.NW.formatToPlainString(l.t.yhdo8v, {
     value: t,
-    statisticName: (0, l.C)(r)
+    statisticName: (0, s.C)(n)
   });
-  return (0, n.jsx)(d, {
-    text: a
+  return (0, r.jsx)(d, {
+    text: i
   })
 }
 
 function u(e) {
   let {
     intervalStart: t,
-    intervalEnd: r
-  } = e, l = new Date(i.default.extractTimestamp(t)), c = new Date(i.default.extractTimestamp(r)), u = new Intl.DateTimeFormat(s.NW.currentLocale, {
+    intervalEnd: n
+  } = e, s = new Date(a.default.extractTimestamp(t)), c = new Date(a.default.extractTimestamp(n)), u = new Intl.DateTimeFormat(l.NW.currentLocale, {
     month: "numeric",
     day: "numeric"
-  }).formatRange(l, c);
-  return (0, n.jsx)(o.ej, {
-    Icon: a.Que,
+  }).formatRange(s, c);
+  return (0, r.jsx)(o.ej, {
+    Icon: i.Que,
     text: u
   })
 }
@@ -44,8 +45,8 @@ function d(e) {
   let {
     text: t
   } = e;
-  return (0, n.jsx)(o.ej, {
-    Icon: a.hAD,
+  return (0, r.jsx)(o.ej, {
+    Icon: i.hAD,
     text: t
   })
 }

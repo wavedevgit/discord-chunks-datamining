@@ -1,154 +1,155 @@
-/** Chunk was on 41150 **/
-n.d(l, {
-  F9: () => Z,
-  Zb: () => g,
-  cA: () => f,
-  e$: () => p,
-  ll: () => _
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  F9: () => v,
+  Zb: () => E,
+  cA: () => g,
+  e$: () => b,
+  ll: () => O
 });
-var t = n(200651);
+var r = n(200651);
 n(192379);
 var i = n(120356),
-  r = n.n(i),
+  o = n.n(i),
   a = n(442837),
   s = n(481060),
-  d = n(686546),
+  l = n(686546),
   c = n(884902),
-  o = n(271383),
-  u = n(430824),
-  h = n(594174),
-  m = n(5192),
-  x = n(192918),
-  v = n(388032),
-  j = n(522314);
+  u = n(271383),
+  d = n(430824),
+  f = n(594174),
+  _ = n(5192),
+  p = n(192918),
+  h = n(388032),
+  m = n(522314);
 
-function f() {
-  return (0, t.jsx)("div", {
-    className: j.container,
+function g() {
+  return (0, r.jsx)("div", {
+    className: m.container,
     "aria-hidden": !0
   })
 }
 
-function g(e) {
+function E(e) {
   let {
-    children: l,
+    children: t,
     selected: n
   } = e;
-  return (0, t.jsx)("div", {
-    className: r()(j.container, j.openOnHover, {
-      [j.selected]: n
+  return (0, r.jsx)("div", {
+    className: o()(m.container, m.openOnHover, {
+      [m.selected]: n
     }),
-    children: l
+    children: t
   })
 }
 
-function p(e) {
+function b(e) {
   let {
-    children: l
+    children: t
   } = e;
-  return (0, t.jsx)("div", {
-    className: j.infoSection,
-    children: l
+  return (0, r.jsx)("div", {
+    className: m.infoSection,
+    children: t
   })
 }
 
-function N(e) {
+function y(e) {
   let {
-    users: l,
+    users: t,
     guildId: n,
     "aria-hidden": i
   } = e;
-  return (0, t.jsx)("div", {
-    className: j.facePile,
-    children: l.map((e, r) => {
-      let a = (0, t.jsx)(s.qEK, {
+  return (0, r.jsx)("div", {
+    className: m.facePile,
+    children: t.map((e, o) => {
+      let a = (0, r.jsx)(s.qEK, {
         src: e.getAvatarURL(n, 80),
         size: s.EFr.SIZE_16,
         "aria-label": i ? void 0 : e.username,
         "aria-hidden": i
       });
-      return r === l.length - 1 ? (0, t.jsx)("div", {
-        className: j.facePileItem,
+      return o === t.length - 1 ? (0, r.jsx)("div", {
+        className: m.facePileItem,
         children: a
-      }, e.id) : (0, t.jsx)(d.ZP, {
+      }, e.id) : (0, r.jsx)(l.ZP, {
         width: 16,
         height: 16,
-        className: j.facePileItem,
-        mask: d.ZP.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
+        className: m.facePileItem,
+        mask: l.ZP.Masks.CONTENT_INVENTORY_CARD_FACE_PILE_AVATAR,
         children: a
       }, e.id)
     })
   })
 }
 
-function Z(e) {
+function v(e) {
   let {
-    guildId: l,
+    guildId: t,
     channelId: n,
     entry: i,
-    maxAvatars: r = 3
-  } = e, d = i.author_id, f = (0, a.e7)([h.default], () => h.default.getUser(d)), {
-    displayParticipants: g,
-    participant1: p,
-    participant2: Z,
-    numOtherParticipants: _
-  } = (0, x.Z)(i, r), I = (0, a.e7)([o.ZP], () => o.ZP.getMember(l, d)), A = (0, a.e7)([u.Z], () => {
+    maxAvatars: o = 3
+  } = e, l = i.author_id, g = (0, a.e7)([f.default], () => f.default.getUser(l)), {
+    displayParticipants: E,
+    participant1: b,
+    participant2: v,
+    numOtherParticipants: O
+  } = (0, p.Z)(i, o), I = (0, a.e7)([u.ZP], () => u.ZP.getMember(t, l)), S = (0, a.e7)([d.Z], () => {
     var e;
-    return (null == I ? void 0 : I.colorRoleId) != null ? null == (e = u.Z.getRole(l, I.colorRoleId)) ? void 0 : e.name : void 0
-  }, [l, I]), P = (0, c.X)(l, null == I ? void 0 : I.colorStrings);
-  if (null == f) return null;
-  let b = null == I ? void 0 : I.colorString,
-    C = m.ZP.getName(l, n, f);
-  return (0, t.jsxs)("div", {
-    className: j.userSection,
-    children: [(0, t.jsx)(N, {
-      users: g,
-      guildId: l,
+    return (null == I ? void 0 : I.colorRoleId) != null ? null == (e = d.Z.getRole(t, I.colorRoleId)) ? void 0 : e.name : void 0
+  }, [t, I]), T = (0, c.X)(t, null == I ? void 0 : I.colorStrings);
+  if (null == g) return null;
+  let N = null == I ? void 0 : I.colorString,
+    A = _.ZP.getName(t, n, g);
+  return (0, r.jsxs)("div", {
+    className: m.userSection,
+    children: [(0, r.jsx)(y, {
+      users: E,
+      guildId: t,
       "aria-hidden": !0
-    }), (0, t.jsx)(s.PUh, {
-      color: null != b ? b : void 0,
-      roleName: A,
-      roleColors: P,
-      name: C,
-      className: j.userName,
+    }), (0, r.jsx)(s.PUh, {
+      color: null != N ? N : void 0,
+      roleName: S,
+      roleColors: T,
+      name: A,
+      className: m.userName,
       "aria-hidden": !0
-    }), _ > 0 ? (0, t.jsx)("div", {
-      className: j.additionalParticipantBadge,
+    }), O > 0 ? (0, r.jsx)("div", {
+      className: m.additionalParticipantBadge,
       "aria-hidden": !0,
-      children: (0, t.jsxs)(s.Text, {
+      children: (0, r.jsxs)(s.Text, {
         variant: "text-xxs/medium",
         color: "text-normal",
-        className: j.additionalParticipantBadgeText,
-        children: ["+", _]
+        className: m.additionalParticipantBadgeText,
+        children: ["+", O]
       })
-    }) : null, (0, t.jsx)(s.nn4, {
-      children: v.NW.format(v.t.rH95Gh, {
-        user0: m.ZP.getName(l, n, p),
-        user1: m.ZP.getName(l, n, Z),
-        countOthers: _,
-        name0Hook: (e, l) => (0, t.jsx)("span", {
+    }) : null, (0, r.jsx)(s.nn4, {
+      children: h.NW.format(h.t.rH95Gh, {
+        user0: _.ZP.getName(t, n, b),
+        user1: _.ZP.getName(t, n, v),
+        countOthers: O,
+        name0Hook: (e, t) => (0, r.jsx)("span", {
           children: e
-        }, l),
-        name1Hook: (e, l) => (0, t.jsx)("span", {
+        }, t),
+        name1Hook: (e, t) => (0, r.jsx)("span", {
           children: e
-        }, l),
-        countOthersHook: (e, l) => (0, t.jsx)("span", {
+        }, t),
+        countOthersHook: (e, t) => (0, r.jsx)("span", {
           children: e
-        }, l)
+        }, t)
       })
     })]
   })
 }
 
-function _(e) {
+function O(e) {
   let {
-    children: l
+    children: t
   } = e;
-  return (0, t.jsx)(s.X6q, {
+  return (0, r.jsx)(s.X6q, {
     color: "text-normal",
     variant: "heading-sm/medium",
-    className: j.contentTitle,
+    className: m.contentTitle,
     lineClamp: 1,
-    children: l
+    children: t
   })
 }

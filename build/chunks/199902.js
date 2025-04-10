@@ -24,7 +24,7 @@ var c, u = n(442837),
   A = n(981631),
   C = n(70722);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -33,14 +33,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -132,7 +132,7 @@ function Z(e) {
   let {
     streamKey: t
   } = e, n = (0, p.my)(t);
-  r.delete(t), r.set(t, D(P({}, n), {
+  r.delete(t), r.set(t, D(R({}, n), {
     state: A.jm8.CONNECTING
   })), n.ownerId === b.default.getId() && (x[n.channelId] = !1)
 }
@@ -199,7 +199,7 @@ function Y(e) {
   let o = !1;
   for (let e in a) {
     var c, u;
-    (null == (u = a[e]) || null == (c = u.sourceId) ? void 0 : c.startsWith("prepicked:")) && (a[e] = P({}, a[e], i), o = !0)
+    (null == (u = a[e]) || null == (c = u.sourceId) ? void 0 : c.startsWith("prepicked:")) && (a[e] = R({}, a[e], i), o = !0)
   }
   return o
 }
@@ -218,7 +218,7 @@ function z(e) {
     viewerIds: i,
     paused: a
   } = e;
-  r.set(t, D(P({}, (0, p.my)(t)), {
+  r.set(t, D(R({}, (0, p.my)(t)), {
     state: a ? A.jm8.PAUSED : A.jm8.ACTIVE
   })), o[t] = {
     streamKey: t,
@@ -267,7 +267,7 @@ function X(e) {
       n(e)
     }), l = A.jm8.ENDED
   }
-  r.set(t, D(P({}, s), {
+  r.set(t, D(R({}, s), {
     state: l
   })), l === A.jm8.ENDED && L !== t && G(t)
 }
@@ -277,7 +277,7 @@ function J(e) {
     streamKey: t
   } = e, n = r.get(t);
   if (null == n) return !1;
-  r.set(t, D(P({}, n), {
+  r.set(t, D(R({}, n), {
     state: A.jm8.FAILED
   }))
 }
@@ -299,7 +299,7 @@ function $(e) {
       o = A.jm8.ACTIVE
   }
   if (o === i.state) return !1;
-  r.set(t, D(P({}, i), {
+  r.set(t, D(R({}, i), {
     state: o
   }))
 }
@@ -441,7 +441,7 @@ class ei extends(c = u.ZP.PersistedStore) {
     }
   }
 }
-R(ei, "displayName", "ApplicationStreamingStore"), R(ei, "persistKey", "ApplicationStreamingStore");
+P(ei, "displayName", "ApplicationStreamingStore"), P(ei, "persistKey", "ApplicationStreamingStore");
 let eo = new ei(d.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: Y,
   OVERLAY_INITIALIZE: V,

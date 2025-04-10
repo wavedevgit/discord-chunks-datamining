@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => A
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
@@ -127,7 +127,7 @@ function A(e) {
     })
   }
 
-  function H() {
+  function G() {
     y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -141,7 +141,7 @@ function A(e) {
     })
   }
 
-  function G() {
+  function F() {
     let e = w,
       n = "txt",
       r = "",
@@ -192,7 +192,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: i,
-            action: G
+            action: F
           }, "upload-text-as-file");
         case O.r.CLIPS:
           return (0, r.jsx)(s.sNh, {
@@ -264,7 +264,7 @@ function A(e) {
           return (0, r.jsx)(s.sNh, {
             id: "activity",
             label: i,
-            action: H,
+            action: G,
             hint: (0, r.jsx)(T, {})
           }, "activity");
         case O.r.SCHEDULED_MESSAGE:

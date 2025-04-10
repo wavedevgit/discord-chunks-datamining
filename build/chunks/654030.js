@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => G
 }), n(388685), n(35282);
@@ -32,8 +32,8 @@ var r, i = n(200651),
   A = n(181106),
   w = n(417363),
   Z = n(768581),
-  k = n(358085),
-  R = n(804739),
+  R = n(358085),
+  k = n(804739),
   D = n(410575),
   L = n(981631),
   M = n(701488);
@@ -95,7 +95,7 @@ class B extends(r = a.PureComponent) {
       isLaunchable: e,
       application: t
     } = this.props;
-    return null != t && null != t.primarySkuId && !e && k.isPlatformEmbedded
+    return null != t && null != t.primarySkuId && !e && R.isPlatformEmbedded
   }
   render() {
     return (0, i.jsx)(D.Z, {
@@ -235,7 +235,7 @@ class B extends(r = a.PureComponent) {
         isGameLaunchable: _,
         isLoading: s || this.state.sending,
         activityActionType: u,
-        isInBrowser: !k.isPlatformEmbedded,
+        isInBrowser: !R.isPlatformEmbedded,
         isSyncable: h,
         isSender: c,
         channelId: p,
@@ -295,7 +295,7 @@ let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, N.Z, A.Z, S.Z, b.Z, w.Z, P.defau
     myPartyId: null != u && null != u.party ? u.party.id : null,
     isLaunching: d,
     isSyncable: m && !h,
-    isLaunchable: null != s && (0, R.t)({
+    isLaunchable: null != s && (0, k.t)({
       LibraryApplicationStore: S.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: w.Z,

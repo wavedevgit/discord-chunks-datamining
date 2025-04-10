@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   k: () => I
 }), n(388685);
@@ -38,7 +38,7 @@ function I(e) {
     popoutAlign: A
   } = e, {
     analyticsLocations: w
-  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [Z, k] = i.useState(!1), [R, D] = function() {
+  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [Z, R] = i.useState(!1), [k, D] = function() {
     let {
       showForYouTab: e
     } = b.V.useExperiment({
@@ -72,10 +72,10 @@ function I(e) {
       showTutorial: !t && e === o.X.UNREADS,
       setSeenTutorial: n
     }
-  }(R), W = i.useCallback(() => {
-    k(!1), Z && (null == n || n())
+  }(k), W = i.useCallback(() => {
+    R(!1), Z && (null == n || n())
   }, [n, Z]), U = i.useCallback(() => {
-    k(!Z), Z ? null == n || n() : null == t || t()
+    R(!Z), Z ? null == n || n() : null == t || t()
   }, [n, t, Z]);
   i.useEffect(() => (_.S.subscribe(C.CkL.TOGGLE_INBOX, U), () => void _.S.unsubscribe(C.CkL.TOGGLE_INBOX, U)), [U]);
   let {
@@ -93,7 +93,7 @@ function I(e) {
     location: "RecentsPopout"
   });
   i.useEffect(() => {
-    ((!F || B && G) && R === o.X.TODOS || R === o.X.BOOKMARKS && !(B || G)) && D(o.X.MENTIONS)
+    ((!F || B && G) && k === o.X.TODOS || k === o.X.BOOKMARKS && !(B || G)) && D(o.X.MENTIONS)
   });
   let z = i.useCallback(e => {
     e.shiftKey || W()
@@ -110,28 +110,28 @@ function I(e) {
       renderPopout: function() {
         return (0, r.jsx)(s.VqE, {
           "aria-label": S.NW.string(S.t.GSmTKC),
-          children: R === o.X.FOR_YOU ? (0, r.jsx)(y.Z, {
+          children: k === o.X.FOR_YOU ? (0, r.jsx)(y.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === o.X.MENTIONS ? (0, r.jsx)(E.Z, {
+          }) : k === o.X.MENTIONS ? (0, r.jsx)(E.Z, {
             setTab: D,
             onJump: z,
             badgeState: T,
             closePopout: W
-          }) : V && R === o.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
+          }) : V && k === o.X.GAME_INVITES ? (0, r.jsx)(j.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : F && R === o.X.TODOS ? (0, r.jsx)(v.Z, {
+          }) : F && k === o.X.TODOS ? (0, r.jsx)(v.Z, {
             setTab: D,
             onJump: z,
             closePopout: W
-          }) : B && G && R === o.X.BOOKMARKS ? (0, r.jsx)(x.Z, {
+          }) : B && G && k === o.X.BOOKMARKS ? (0, r.jsx)(x.Z, {
             setTab: D,
             badgeState: T,
             closePopout: W
-          }) : R === o.X.SCHEDULED ? (0, r.jsx)(O._, {
+          }) : k === o.X.SCHEDULED ? (0, r.jsx)(O._, {
             setTab: D,
             closePopout: W
           }) : (0, r.jsx)(a.SV, {

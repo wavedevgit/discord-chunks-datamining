@@ -78,14 +78,14 @@ function C() {
   }))
 }
 
-function R(e) {
+function P(e) {
   for (let t of e) {
     let e = c.Z.createFromServer(t);
     v[(0, d.Tu)(e.id, e.branchId)] = e
   }
 }
 
-function P() {
+function R() {
   y = !1
 }
 
@@ -93,14 +93,14 @@ function w(e) {
   let {
     libraryApplications: t
   } = e;
-  v = {}, R(t), y = !0
+  v = {}, P(t), y = !0
 }
 
 function D(e) {
   let {
     libraryApplications: t
   } = e;
-  R(t)
+  P(t)
 }
 
 function L(e) {
@@ -228,7 +228,7 @@ class F extends(r = a.ZP.Store) {
 }
 p(F, "displayName", "LibraryApplicationStore");
 let Z = new F(l.Z, {
-  LOGOUT: P,
+  LOGOUT: R,
   LIBRARY_FETCH_SUCCESS: w,
   SKU_PURCHASE_SUCCESS: D,
   LIBRARY_APPLICATION_FLAGS_UPDATE_START: L,

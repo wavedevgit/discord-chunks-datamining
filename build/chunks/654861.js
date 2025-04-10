@@ -166,11 +166,11 @@ var r = function(e) {
     return -.012 * e - .012 * t + 15e-6 * e * t > 0
   }
 
-  function R(e, n, r) {
+  function P(e, n, r) {
     return e < t ? new c(T(n, e), r) : new c(S(n, _(e)), r)
   }
 
-  function P(e) {
+  function R(e) {
     var n, r, i, o, a = e.length,
       s = m(a + a),
       l = t;
@@ -336,18 +336,18 @@ var r = function(e) {
     }
     return C(i.length, o.length) ? new c(A(i, o), a) : new c(S(i, o), a)
   }, c.prototype.times = c.prototype.multiply, u.prototype._multiplyBySmall = function(e) {
-    return f(e.value * this.value) ? new u(e.value * this.value) : R(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
+    return f(e.value * this.value) ? new u(e.value * this.value) : P(Math.abs(e.value), _(Math.abs(this.value)), this.sign !== e.sign)
   }, c.prototype._multiplyBySmall = function(e) {
-    return 0 === e.value ? l[0] : 1 === e.value ? this : -1 === e.value ? this.negate() : R(Math.abs(e.value), this.value, this.sign !== e.sign)
+    return 0 === e.value ? l[0] : 1 === e.value ? this : -1 === e.value ? this.negate() : P(Math.abs(e.value), this.value, this.sign !== e.sign)
   }, u.prototype.multiply = function(e) {
     return eo(e)._multiplyBySmall(this)
   }, u.prototype.times = u.prototype.multiply, d.prototype.multiply = function(e) {
     return new d(this.value * eo(e).value)
   }, d.prototype.times = d.prototype.multiply, c.prototype.square = function() {
-    return new c(P(this.value), !1)
+    return new c(R(this.value), !1)
   }, u.prototype.square = function() {
     var e = this.value * this.value;
-    return f(e) ? new u(e) : new c(P(_(Math.abs(this.value))), !1)
+    return f(e) ? new u(e) : new c(R(_(Math.abs(this.value))), !1)
   }, d.prototype.square = function(e) {
     return new d(this.value * this.value)
   }, c.prototype.divmod = function(e) {

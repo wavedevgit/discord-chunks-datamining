@@ -64,8 +64,8 @@ let v = Symbol("NO GUILD ID"),
   N = 0x7fffffff,
   A = new Map,
   C = new Map,
-  R = new Map,
   P = new Map,
+  R = new Map,
   w = new Map,
   D = new Map,
   L = new Map,
@@ -78,9 +78,9 @@ function U(e) {
   let t = A.get(e);
   if ((null == t ? void 0 : t.profileEffectExpiresAt) == null) return;
   let n = 1e3 * t.profileEffectExpiresAt + h.Cm - Date.now();
-  if (n <= 0) t.profileEffectId = void 0, t.profileEffectExpiresAt = void 0, R.delete(e), el.emitChange();
+  if (n <= 0) t.profileEffectId = void 0, t.profileEffectExpiresAt = void 0, P.delete(e), el.emitChange();
   else {
-    let t = R.get(e);
+    let t = P.get(e);
     if (null == t) return;
     t.start(Math.min(N, n), () => U(e))
   }
@@ -91,7 +91,7 @@ function G(e, t) {
   if (null == n) return;
   let r = n.get(t);
   if ((null == r ? void 0 : r.profileEffectExpiresAt) == null) return;
-  let i = P.get(e),
+  let i = R.get(e),
     o = 1e3 * r.profileEffectExpiresAt + h.Cm - Date.now();
   if (o <= 0) n.set(t, y(E({}, r), {
     profileEffectId: void 0,
@@ -218,7 +218,7 @@ function W(e) {
       badges: eo
     }), (null == (M = ee.user_profile) || null == (N = M.profile_effect) ? void 0 : N.expires_at) != null) {
     let e = new o.V7;
-    R.set(ee.user.id, e), U(ee.user.id)
+    P.set(ee.user.id, e), U(ee.user.id)
   }
   if (null != ee.guild_member_profile) {
     let e = {
@@ -242,11 +242,11 @@ function W(e) {
     }
     if ((null == ($ = ee.guild_member_profile) || null == (J = $.profile_effect) ? void 0 : J.expires_at) != null) {
       let e = new o.V7,
-        t = P.get(ee.user.id);
+        t = R.get(ee.user.id);
       if (null != t) t.set(ee.guild_member_profile.guild_id, e);
       else {
         let t = new Map;
-        t.set(ee.guild_member_profile.guild_id, e), P.set(ee.user.id, t)
+        t.set(ee.guild_member_profile.guild_id, e), R.set(ee.user.id, t)
       }
       G(ee.user.id, ee.guild_member_profile.guild_id)
     }
@@ -325,7 +325,7 @@ function q(e) {
       profileEffectExpiresAt: u
     })), null != u) {
     let e = new o.V7;
-    R.set(t, e), U(t)
+    P.set(t, e), U(t)
   }
 }
 
@@ -356,11 +356,11 @@ function Q(e) {
       profileEffectExpiresAt: d
     })), null != d) {
     let e = new o.V7,
-      r = P.get(t);
+      r = R.get(t);
     if (null != r) r.set(n, e);
     else {
       let r = new Map;
-      r.set(n, e), P.set(t, r)
+      r.set(n, e), R.set(t, r)
     }
     G(t, n)
   }

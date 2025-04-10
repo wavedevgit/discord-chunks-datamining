@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => Z
 });
@@ -67,8 +67,8 @@ let Z = i.memo(function(e) {
   let {
     message: a,
     compact: Z = !1,
-    className: k,
-    onContextMenu: R,
+    className: R,
+    onContextMenu: k,
     onClick: D,
     hideSimpleEmbedContent: L = !0,
     channel: M,
@@ -113,7 +113,7 @@ let Z = i.memo(function(e) {
     eo = (0, y.Gx)(a);
   return (0, r.jsx)(x.Z, A({
     compact: Z,
-    className: l()(k, {
+    className: l()(R, {
       [P.ephemeral]: (0, g.Pv)(a),
       [P.disableInteraction]: V
     }),
@@ -130,7 +130,7 @@ let Z = i.memo(function(e) {
     childrenSystemMessage: (0, C.Z)(w(A({}, e), {
       disableInteraction: V
     })),
-    onContextMenu: R,
+    onContextMenu: k,
     onClick: D,
     hasThread: B && null != en && a.hasFlag(T.iLy.HAS_THREAD),
     hasReply: a.type === T.uaV.REPLY,

@@ -96,8 +96,8 @@ function S(e, t) {
     size: N = 1
   } = e, A = (0, s.JA)(n), {
     onFocus: C
-  } = A, R = y(A, ["onFocus"]), {
-    handleFocus: P,
+  } = A, P = y(A, ["onFocus"]), {
+    handleFocus: R,
     handleBlur: w
   } = (0, f.b)(C), D = 0 === N, L = null != E, x = e => {
     if (O) {
@@ -122,8 +122,8 @@ function S(e, t) {
     }
   };
   return (0, r.jsx)(l.tEY, {
-    children: (0, r.jsx)("li", b(g({}, R), {
-      onFocus: P,
+    children: (0, r.jsx)("li", b(g({}, P), {
+      onFocus: R,
       onBlur: w,
       onKeyDown: x,
       className: a()(h.upload, o, {

@@ -16,8 +16,8 @@ var l = n(442837),
   f = n(585483),
   m = n(915863),
   g = n(981631),
-  b = n(388032),
-  O = n(128746);
+  O = n(388032),
+  b = n(128746);
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,14 +69,14 @@ function v(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(E), x = (0, c.Aq)(), C = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, w = e => {
+  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(E), x = (0, c.Aq)(), C = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
     null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), C || (0, s.iV)(j, {
       forceMultiple: e
     }), x.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
   };
   if (null == j) return null;
-  let T = (0, u.P9)(Z);
-  t ? T = b.NW.string(b.t.XvBdeX) : C && (T = b.NW.string(b.t.JH1SJy));
+  let w = (0, u.P9)(Z);
+  t ? w = O.NW.string(O.t.XvBdeX) : C && (w = O.NW.string(O.t.JH1SJy));
   let A = {
     color: n,
     look: v
@@ -84,28 +84,28 @@ function v(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, h(y({
       disabled: t || C || !I,
-      onClick: () => w(!1)
+      onClick: () => T(!1)
     }, A), {
       fullWidth: !0,
       children: [(0, r.jsx)(i.hGI, {
         size: "md",
         color: "currentColor",
-        className: O.streamIcon
-      }), T]
+        className: b.streamIcon
+      }), w]
     }), "play"), N && !C ? (0, r.jsx)(i.ua7, {
-      text: b.NW.string(b.t.wCrzur),
+      text: O.NW.string(O.t.wCrzur),
       children: e => (0, r.jsx)(m.Z, h(y(h(y({}, e), {
         onClick: () => {
           var t;
-          null == (t = e.onClick) || t.call(e), w(!0)
+          null == (t = e.onClick) || t.call(e), T(!0)
         }
       }), A), {
-        className: O.iconButton,
-        size: O.iconButtonSize,
+        className: b.iconButton,
+        size: b.iconButtonSize,
         children: (0, r.jsx)(i.OgY, {
           size: "xs",
           color: "currentColor",
-          className: O.iconSize
+          className: b.iconSize
         })
       }))
     }) : null]

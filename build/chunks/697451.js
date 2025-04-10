@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => F
 });
@@ -34,7 +34,7 @@ var r = n(200651),
   w = n(388032),
   Z = n(848697);
 
-function k(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,7 +53,7 @@ function k(e) {
   return e
 }
 
-function R(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -194,7 +194,7 @@ function U(e) {
   }, {
     autoTrackExposure: !0
   }), n = t ? d.iWm : d.jje;
-  return (0, r.jsx)(n, k({}, e))
+  return (0, r.jsx)(n, R({}, e))
 }
 
 function F(e) {
@@ -206,14 +206,14 @@ function F(e) {
     {
       analyticsLocations: c
     } = (0, b.ZP)(_.Z.EXECUTED_COMMAND),
-    m = i.useMemo(() => (e, t, n) => (s()(null != o && null != t, "ExecuteCommand: user and channel cannot be undefined"), (0, r.jsx)(E.Z, R(k({}, e), {
+    m = i.useMemo(() => (e, t, n) => (s()(null != o && null != t, "ExecuteCommand: user and channel cannot be undefined"), (0, r.jsx)(E.Z, k(R({}, e), {
       channelId: o.id,
       messageId: a.id,
       guildId: o.guild_id,
       userId: t.id,
       newAnalyticsLocations: n
     }))), [o, a.id]),
-    N = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(T.Z, R(k({}, e), {
+    N = i.useMemo(() => e => (s()(null != o, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(T.Z, k(R({}, e), {
       channel: o,
       messageId: a.id,
       interactionData: a.interactionData
@@ -270,7 +270,7 @@ function F(e) {
               }
               return i
             }(e, ["onClick"]);
-            if (i.type === A.uaV.CHAT_INPUT_COMMAND || i.type === A.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(d.P3F, R(k({}, n), {
+            if (i.type === A.uaV.CHAT_INPUT_COMMAND || i.type === A.uaV.INTERACTION_PREMIUM_UPSELL) return (0, r.jsx)(d.P3F, k(R({}, n), {
               tag: "span",
               onClick: a,
               children: (0, r.jsxs)("div", {
@@ -290,7 +290,7 @@ function F(e) {
             });
             {
               let e = (0, x.XZ)(s);
-              return (0, r.jsx)(d.P3F, R(k({}, n), {
+              return (0, r.jsx)(d.P3F, k(R({}, n), {
                 tag: "span",
                 onClick: () => {
                   j.S.dispatchToLastSubscribed(A.CkL.OPEN_APP_LAUNCHER, {

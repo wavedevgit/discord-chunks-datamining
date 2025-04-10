@@ -25,8 +25,8 @@ var s, l = n(512722),
   N = n(535911),
   A = n(785141),
   C = n(353926),
-  R = n(646047),
-  P = n(594190),
+  P = n(646047),
+  R = n(594190),
   w = n(502286),
   D = n(355552),
   L = n(294473),
@@ -114,11 +114,11 @@ let ev = new T.Z("MediaEngineStore"),
   eN = 1,
   eA = 1,
   eC = 2,
-  eR = {
+  eP = {
     left: 1,
     right: 1
   },
-  eP = 500,
+  eR = 500,
   ew = 5 * Q.Z.Millis.SECOND,
   eD = -60,
   eL = 100,
@@ -297,11 +297,11 @@ function tT() {
           id: a.desktopSource.id,
           soundshareId: a.desktopSource.soundshareId,
           useVideoHook: n,
-          useGraphicsCapture: tP(),
+          useGraphicsCapture: tR(),
           useLoopback: r.getExperimentalSoundshare(),
           useQuartzCapturer: !0,
           allowScreenCaptureKit: tw(),
-          videoHookStaleFrameTimeoutMs: eP,
+          videoHookStaleFrameTimeoutMs: eR,
           graphicsCaptureStaleFrameTimeoutMs: ew,
           hdrCaptureMode: t
         },
@@ -352,7 +352,7 @@ function tC(e) {
   }
 }
 
-function tR() {
+function tP() {
   eU.on(m.aB.Connection, e => {
     var t, n;
     tv(e), tI(e), tC(e);
@@ -669,7 +669,7 @@ function tR() {
   })
 }
 
-function tP() {
+function tR() {
   return (0, X.isWindows)() && _().satisfies(null === y.Z || void 0 === y.Z ? void 0 : y.Z.os.release, ef.nz)
 }
 
@@ -860,7 +860,7 @@ function tK(e, t) {
   (0, X.isWindows)() && v.YT(e, {
     soundshare_session: t
   }).then(t => {
-    null == t || P.ZP.shouldContinueWithoutElevatedProcessForPID(e) || b.Z.wait(() => {
+    null == t || R.ZP.shouldContinueWithoutElevatedProcessForPID(e) || b.Z.wait(() => {
       b.Z.dispatch({
         type: "MEDIA_ENGINE_SOUNDSHARE_FAILED",
         errorMessage: t
@@ -1339,11 +1339,11 @@ function nC(e) {
   }), eU.eachConnection(e => e.setQoS(t))
 }
 
-function nR() {
+function nP() {
   tk()
 }
 
-function nP(e) {
+function nR(e) {
   let {
     inputDetected: t
   } = e;
@@ -1556,11 +1556,11 @@ function nQ(e) {
       id: a.desktopSource.id,
       soundshareId: a.desktopSource.soundshareId,
       useVideoHook: _,
-      useGraphicsCapture: tP(),
+      useGraphicsCapture: tR(),
       useLoopback: r.getExperimentalSoundshare(),
       useQuartzCapturer: !0,
       allowScreenCaptureKit: tw(),
-      videoHookStaleFrameTimeoutMs: eP,
+      videoHookStaleFrameTimeoutMs: eR,
       graphicsCaptureStaleFrameTimeoutMs: ew,
       hdrCaptureMode: f
     },
@@ -1668,7 +1668,7 @@ function n2(e) {
 function n3(e) {
   let {
     state: t
-  } = e, n = R.Z.isEnabled();
+  } = e, n = P.Z.isEnabled();
   if (t === ed.$7l.BACKGROUND && eX && !n) e3 = !0, tT(!1);
   else {
     if (t !== ed.$7l.ACTIVE || !e3) return !1;
@@ -1716,11 +1716,11 @@ function rt(e) {
 }
 class rn extends(s = h.ZP.Store) {
   initialize() {
-    tR(), tx(), nk(), t8(), t_ = {
+    tP(), tx(), nk(), t8(), t_ = {
       [eh.AN.VIDEO]: eU.supports(eh.AN.VIDEO),
       [eh.AN.DESKTOP_CAPTURE]: eU.supports(eh.AN.DESKTOP_CAPTURE),
       [eh.AN.HYBRID_VIDEO]: eU.supports(eh.AN.HYBRID_VIDEO)
-    }, this.waitFor(en.default, ei.Z, eo.Z, ea.Z, es.ZP, P.ZP, Z.Z.storage, W.Z, C.Z, I.Z)
+    }, this.waitFor(en.default, ei.Z, eo.Z, ea.Z, es.ZP, R.ZP, Z.Z.storage, W.Z, C.Z, I.Z)
   }
   supports(e) {
     return eU.supports(e)
@@ -1870,7 +1870,7 @@ class rn extends(s = h.ZP.Store) {
   getLocalPan(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eh.Yn.DEFAULT,
       n = ty(t).localPans[e];
-    return null != n ? n : eR
+    return null != n ? n : eP
   }
   getLocalVolume(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : eh.Yn.DEFAULT,
@@ -2166,8 +2166,8 @@ let ri = r = new rn(b.Z, {
   AUDIO_SET_QOS: nC,
   MEDIA_ENGINE_DEVICES: ns,
   AUDIO_VOLUME_CHANGE: nl,
-  AUDIO_RESET: nR,
-  AUDIO_INPUT_DETECTED: nP,
+  AUDIO_RESET: nP,
+  AUDIO_INPUT_DETECTED: nR,
   AUDIO_SET_SUBSYSTEM: nV,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: nz,
   MEDIA_ENGINE_SET_VIDEO_ENABLED: nq,

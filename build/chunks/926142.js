@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
-e.exports = {
+/** Chunk was on 67071 **/
+t.exports = {
   customButton: "customButton__70335"
 }

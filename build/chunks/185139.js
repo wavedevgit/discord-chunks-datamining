@@ -36,13 +36,13 @@ function v(e) {
     hideBreadcrumbs: N = !1,
     isLoading: A = !1,
     purchaseError: C,
-    purchaseErrorBlockRef: R,
-    planError: P,
+    purchaseErrorBlockRef: P,
+    planError: R,
     onScroll: w,
     scrollerClassName: D,
     hasCurrencies: L = !1
   } = e, x = null;
-  null != v && null == (0, p.ly)(v) ? x = v : null != C ? x = C : null != P && (x = P);
+  null != v && null == (0, p.ly)(v) ? x = v : null != C ? x = C : null != R && (x = R);
   let M = null != x ? x.message : "";
   null != x && x instanceof d.HF && (x.code === f.SM.CARD_DECLINED && L && (M += " ".concat(E.NW.string(E.t.iWvwQU))), x.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (M = E.NW.string(E.t.ypuSd3)), x.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (M = E.NW.string(E.t.mXMmWF)));
   let {
@@ -85,7 +85,7 @@ function v(e) {
         children: [null == x ? null : (0, r.jsx)("div", {
           className: b.errorBlockWrapper,
           children: (0, r.jsx)(c.kzN, {
-            ref: R,
+            ref: P,
             children: M
           })
         }), A ? (0, r.jsx)(c.$jN, {

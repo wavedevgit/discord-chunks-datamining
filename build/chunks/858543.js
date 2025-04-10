@@ -1,12 +1,12 @@
-/** Chunk was on 18895 **/
+/** Chunk was on 22173 **/
 n.d(t, {
   DM: () => f,
   ZP: () => g
 });
 var i = n(200651);
 n(192379);
-var o = n(120356),
-  r = n.n(o),
+var r = n(120356),
+  o = n.n(r),
   a = n(692547),
   s = n(481060),
   l = n(109434),
@@ -21,10 +21,10 @@ function f(e) {
   let {
     channel: t,
     isNew: n
-  } = e, i = (0, c.eV)(t), o = i.slice(void 0, 3), r = i.slice(3), a = i.length > 3 ? i.length - 3 : 0, s = t.hasFlag(d.zZ.PINNED), l = o.length > 0 || s || n;
+  } = e, i = (0, c.eV)(t), r = i.slice(void 0, 3), o = i.slice(3), a = i.length > 3 ? i.length - 3 : 0, s = t.hasFlag(d.zZ.PINNED), l = r.length > 0 || s || n;
   return {
-    shownTags: o,
-    remainingTags: r,
+    shownTags: r,
+    remainingTags: o,
     moreTagsCount: a,
     isPinned: s,
     shouldRenderTagsRow: l,
@@ -36,7 +36,7 @@ function g(e) {
   let {
     channel: t,
     isNew: n,
-    tagsClassName: o,
+    tagsClassName: r,
     className: c
   } = e, {
     shownTags: d,
@@ -51,9 +51,9 @@ function g(e) {
     tagFilter: O
   } = (0, l.H)(t.id);
   return v ? (0, i.jsxs)("div", {
-    className: r()(m.tags, c),
+    className: o()(m.tags, c),
     children: [n ? (0, i.jsx)(s.IGR, {
-      className: r()(p.newBadge, p.inTagsRow),
+      className: o()(p.newBadge, p.inTagsRow),
       color: a.Z.unsafe_rawColors.BRAND_260.css,
       text: h.NW.string(h.t.y2b7CA)
     }) : null, j && (0, i.jsx)("div", {
@@ -100,7 +100,7 @@ function g(e) {
     }), d.map(e => (0, i.jsx)(u.Z, {
       tag: e,
       size: u.Z.Sizes.SMALL,
-      className: r()(o, {
+      className: o()(r, {
         [m.tagFiltered]: O.has(e.id)
       })
     }, e.id)), b > 0 ? (0, i.jsx)(u.f, {

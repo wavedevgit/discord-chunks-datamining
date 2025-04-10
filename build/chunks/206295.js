@@ -1,33 +1,36 @@
-/** Chunk was on 46923 **/
-t.d(a, {
-  Z: () => m
-}), t(388685);
-var n = t(192379),
-  l = t(688619),
-  s = t.n(l);
-t(979590);
-var i = t(442837),
-  r = t(866442),
-  o = t(607070),
-  c = t(220082),
-  d = t(981631);
-let m = e => {
-  var a, l, m, u, h, g;
-  let x;
-  x = t(481060).TVs;
-  let N = (0, i.e7)([o.Z], () => o.Z.saturation),
-    [p, f] = (0, c.Cf)(e, null != (g = null == x || null == (h = x.colors) || null == (u = h.BACKGROUND_FLOATING) || null == (m = u.resolve) || null == (l = m.call(u, {
-      theme: d.BRd.DARK,
-      saturation: N
-    })) || null == (a = l.hex) ? void 0 : a.call(l)) ? g : "#000");
-  return n.useMemo(() => {
-    let e = (0, r._i)(p),
-      a = (0, r._i)(f);
-    for (let a = 1; a < 8 && !((0, r.Bd)(e) >= .725); a++) e = s()(e).darken(.5).num();
-    for (let e = 1; e < 8 && !((0, r.Bd)(a) >= .725); e++) a = s()(a).darken(.5).num();
-    return {
-      primaryColor: (0, r.Rf)(e),
-      secondaryColor: (0, r.Rf)(a)
-    }
-  }, [p, f])
-}
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => _
+}), n(388685);
+var r = n(192379),
+  i = n(688619),
+  o = n.n(i);
+n(979590);
+var a = n(442837),
+  s = n(866442),
+  l = n(607070),
+  c = n(220082),
+  u = n(981631);
+let d = 8,
+  f = .725,
+  _ = e => {
+    var t, i, _, p, h, m;
+    let g;
+    g = n(481060).TVs;
+    let E = (0, a.e7)([l.Z], () => l.Z.saturation),
+      [b, y] = (0, c.Cf)(e, null != (m = null == g || null == (h = g.colors) || null == (p = h.BACKGROUND_FLOATING) || null == (_ = p.resolve) || null == (i = _.call(p, {
+        theme: u.BRd.DARK,
+        saturation: E
+      })) || null == (t = i.hex) ? void 0 : t.call(i)) ? m : "#000");
+    return r.useMemo(() => {
+      let e = (0, s._i)(b),
+        t = (0, s._i)(y);
+      for (let t = 1; t < d && !((0, s.Bd)(e) >= f); t++) e = o()(e).darken(.5).num();
+      for (let e = 1; e < d && !((0, s.Bd)(t) >= f); e++) t = o()(t).darken(.5).num();
+      return {
+        primaryColor: (0, s.Rf)(e),
+        secondaryColor: (0, s.Rf)(t)
+      }
+    }, [b, y])
+  }

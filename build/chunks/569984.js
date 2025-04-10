@@ -12,8 +12,8 @@ var y, v = n(392711),
   N = n(497505),
   A = n(918701),
   C = n(184299),
-  R = n(5881),
-  P = n(46140);
+  P = n(5881),
+  R = n(46140);
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -133,8 +133,8 @@ function Y(e) {
     quests: t,
     excludedQuests: n
   } = e;
-  for (let e of (r = !1, o = new Map, t)) o.set(e.id, e), e.targetedContent.includes(N.jn.QUEST_BAR) && (0, R.T)({
-    location: P.dr.QUESTS_STORE
+  for (let e of (r = !1, o = new Map, t)) o.set(e.id, e), e.targetedContent.includes(N.jn.QUEST_BAR) && (0, P.T)({
+    location: R.dr.QUESTS_STORE
   }).log("Delivered ".concat(e.config.messages.questName, " (").concat(e.id, ")"));
   for (let e of (a = new Map, n)) a.set(e.id, e)
 }
@@ -298,8 +298,8 @@ function ep(e) {
 function eh(e) {
   let {
     user_status: t
-  } = e, n = (0, R.T)({
-    location: P.dr.QUESTS_STORE
+  } = e, n = (0, P.T)({
+    location: R.dr.QUESTS_STORE
   });
   n.log("Received user status update for ".concat(t.quest_id), t);
   let r = (0, A.U3)(t);

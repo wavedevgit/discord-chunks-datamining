@@ -73,8 +73,8 @@ let I = e => {
         upgradeToPremiumType: N,
         headerTheme: A = b.nL.DEFAULT,
         className: C,
-        showTrialBadge: R = !1,
-        showDiscountBadge: P = !1
+        showTrialBadge: P = !1,
+        showDiscountBadge: R = !1
       } = e,
       w = N === b.p9.TIER_2;
     n = N === b.p9.TIER_0 ? d.Z : N === b.p9.TIER_1 ? f.Z : u.Z;
@@ -90,7 +90,7 @@ let I = e => {
       children: [D || A !== b.nL.WINTER ? null : (0, r.jsx)(E.Z, {
         className: v.snow,
         wind: 5
-      }), (R || P) && (0, r.jsx)(_.Z, {
+      }), (P || R) && (0, r.jsx)(_.Z, {
         className: v.trialBadgeSparkles
       }), y(), (0, r.jsxs)(c.Z, {
         align: c.Z.Align.START,
@@ -101,9 +101,9 @@ let I = e => {
             className: o()(v.headerIcon, {
               [v.nonTier2]: !w
             })
-          }), (R || P) && (0, r.jsx)(I, {
+          }), (P || R) && (0, r.jsx)(I, {
             isTier0: N === b.p9.TIER_0,
-            discountAmount: P ? x : void 0
+            discountAmount: R ? x : void 0
           })]
         }), !i && (0, r.jsx)(s.olH, {
           hideOnFullscreen: p,

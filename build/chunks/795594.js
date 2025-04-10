@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(513202),
   A = n(279332),
   C = n(445446),
-  R = n(979200),
-  P = n(870822),
+  P = n(979200),
+  R = n(870822),
   w = n(600164),
   D = n(299206),
   L = n(726721),
@@ -161,7 +161,7 @@ let ef = e => {
       i = en.NW.formatToPlainString(en.t.QWGvxM, {
         applicationName: e.name
       });
-    return (0, P.Z)(e) && (n = en.NW.formatToPlainString(en.t["paC+UV"], {
+    return (0, R.Z)(e) && (n = en.NW.formatToPlainString(en.t["paC+UV"], {
       applicationName: e.name
     }), i = (0, r.jsxs)(r.Fragment, {
       children: [en.NW.formatToPlainString(en.t.inM1Ym, {
@@ -266,7 +266,7 @@ let ef = e => {
               children: e
             })]
           }, t)), null == u ? void 0 : u.map((t, n) => {
-            let i = (0, R.PM)(t);
+            let i = (0, P.PM)(t);
             return null != i ? (0, r.jsxs)("li", {
               className: er.permission,
               children: [(0, r.jsx)(ef, {
@@ -375,7 +375,7 @@ let ef = e => {
     } = e, O = o.id, I = i.useMemo(() => j.ZP.createFromServer(o), [o]), S = (0, _.e7)([X.Z], () => {
       var e, t, n, r;
       return null == (r = X.Z.settings.applications) || null == (n = r.appSettings) || null == (t = n[O]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
-    }, [O]), T = o.bot, N = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == T ? void 0 : T.id)), A = (0, _.e7)([F.ZP], () => null == N ? null : F.ZP.isChannelMuted(null, N)), [C, P] = i.useState(!1), [D, x] = i.useState(!1), U = L.Z.useExperiment({
+    }, [O]), T = o.bot, N = (0, _.e7)([G.Z], () => G.Z.getDMFromUserId(null == T ? void 0 : T.id)), A = (0, _.e7)([F.ZP], () => null == N ? null : F.ZP.isChannelMuted(null, N)), [C, R] = i.useState(!1), [D, x] = i.useState(!1), U = L.Z.useExperiment({
       location: "Authorized Applications"
     }, {
       autoTrackExposure: !0
@@ -395,7 +395,7 @@ let ef = e => {
               children: e
             })]
           }, t)), null == d ? void 0 : d.map((t, n) => {
-            let i = (0, R.PM)(t);
+            let i = (0, P.PM)(t);
             return null != i ? (0, r.jsxs)("li", {
               className: er.permission,
               children: [(0, r.jsx)(ef, {
@@ -465,7 +465,7 @@ let ef = e => {
           return (0, r.jsxs)(m.P, {
             className: er.appDetailsSectionHeader,
             onClick: e => {
-              P(!C), t(e)
+              R(!C), t(e)
             },
             children: [(0, r.jsx)(g.X6q, {
               variant: "heading-sm/medium",

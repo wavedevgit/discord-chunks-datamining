@@ -13,7 +13,7 @@ n.d(t, {
   Y4: () => B,
   hn: () => b,
   iA: () => M,
-  ib: () => R,
+  ib: () => P,
   lh: () => J,
   mF: () => q,
   ub: () => D,
@@ -88,15 +88,15 @@ function C(e) {
     label: _.NW.string(_.t["jYR/MT"])
   }), o
 }
-let R = () => {
+let P = () => {
     let e = o()().add(1, "hour"),
       t = e.hour();
     return e.minutes() >= 30 && (t += 1), e.hour(t).minutes(0).seconds(0)
   },
-  P = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
+  R = (e, t) => (0, l.vc)(e, e.get("years") === t.get("years") ? m : g),
   w = (e, t) => {
     let n = (0, l.wY)(e.toDate(), t.toDate());
-    return n > 1 || n < 0 ? P(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
+    return n > 1 || n < 0 ? R(e, t) : (0, l.vc)(e, e.localeData().calendar(n < 1 ? "sameDay" : "nextDay", e, t))
   };
 
 function D(e, t, n) {
@@ -106,7 +106,7 @@ function D(e, t, n) {
     a = null != t && r.isSame(i, "day");
   return {
     startDateTimeString: w(r, n),
-    endDateTimeString: null != i ? a ? i.format(E) : P(i, n) : void 0,
+    endDateTimeString: null != i ? a ? i.format(E) : R(i, n) : void 0,
     currentOrPastEvent: r <= n,
     upcomingEvent: r <= o()().add(1, "hour"),
     withinStartWindow: r <= o()().add(15, "minute"),

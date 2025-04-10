@@ -35,8 +35,8 @@ function T(e, t, n) {
 let N = {},
   A = {},
   C = {},
-  R = {},
   P = {},
+  R = {},
   w = S.hVg.THEATRE,
   D = {};
 
@@ -88,7 +88,7 @@ function j(e) {
         isOwner: n
       } = e;
       t.setActionContext(i), t.setNativePickerStyleUsed(s), n && t.trackStart()
-    }), R[u] = a, C[u] = o, null != o) {
+    }), P[u] = a, C[u] = o, null != o) {
     let e = f.ZP.getGameForPID(o);
     null != e && (A[u] = {
       name: e.name,
@@ -97,7 +97,7 @@ function j(e) {
       distributor: e.distributor
     })
   }
-  null != l ? P[u] = l : delete P[u]
+  null != l ? R[u] = l : delete R[u]
 }
 
 function U(e) {
@@ -111,7 +111,7 @@ function U(e) {
       isOwner: r
     } = e;
     n.setActionContext(t), r && n.trackEnd()
-  }), R[n] = null, C[n] = null, delete P[n]
+  }), P[n] = null, C[n] = null, delete R[n]
 }
 
 function G(e) {
@@ -126,14 +126,14 @@ function G(e) {
   if (null == a && null != n) {
     null == C[t] && (A[t] = null);
     let e = (0, p.my)(t);
-    null == A[t] && null == R[t] && (A[t] = (0, h.L2)(e, O.Z));
+    null == A[t] && null == P[t] && (A[t] = (0, h.L2)(e, O.Z));
     let i = new _.A({
       streamRegion: r,
       streamApplication: A[t],
-      streamSourceType: q(R[t]),
+      streamSourceType: q(P[t]),
       actionContext: N[t],
       numViewers: null != o ? o.length : 0,
-      goLiveModalDurationMs: P[t]
+      goLiveModalDurationMs: R[t]
     });
     a = L(t, n, i), D[t] = a
   }
@@ -286,7 +286,7 @@ class Q extends(o = u.ZP.Store) {
     return null != t ? t.getMaxViewers() : null
   }
   getStreamSourceId(e) {
-    return R[e]
+    return P[e]
   }
   getUserIds(e) {
     let t = D[e];

@@ -1,6 +1,6 @@
 /** Chunk was on 30243 **/
 r.d(t, {
-  Z: () => p
+  Z: () => d
 }), r(388685);
 var n = r(200651),
   l = r(192379),
@@ -29,37 +29,37 @@ function u(e) {
   return e
 }
 
-function p(e) {
+function d(e) {
   let t, {
       type: r,
-      style: p,
-      label: d,
+      style: d,
+      label: p,
       placeholder: f,
       minLength: b,
       maxLength: O,
-      required: y,
-      value: m
+      required: m,
+      value: y
     } = e,
-    [j, g] = l.useState(null != m ? m : ""),
+    [j, g] = l.useState(null != y ? y : ""),
     {
       state: h,
       executeStateUpdate: v,
       error: P
-    } = (0, a.Ee)(e, null != m ? {
+    } = (0, a.Ee)(e, null != y ? {
       type: r,
-      value: m
+      value: y
     } : void 0),
     x = (0, c.hz)(e.id);
   l.useEffect(() => {
     (null == h ? void 0 : h.type) === r && g(h.value)
   }, [r, h]);
-  let w = {
-    name: d,
+  let S = {
+    name: p,
     value: j,
     placeholder: f,
     minLength: b,
     maxLength: O,
-    required: y,
+    required: m,
     onChange: e => {
       g(e), v({
         type: r,
@@ -68,18 +68,18 @@ function p(e) {
     },
     autoFocus: x
   };
-  switch (p) {
+  switch (d) {
     case o.PT.SMALL:
-      t = (0, n.jsx)(i.oil, u({}, w));
+      t = (0, n.jsx)(i.oil, u({}, S));
       break;
     case o.PT.PARAGRAPH:
       t = (0, n.jsx)(i.Kx8, u({
         autosize: !0
-      }, w))
+      }, S))
   }
   return (0, n.jsx)(i.xJW, {
-    title: d,
-    required: y,
+    title: p,
+    required: m,
     className: s.formItem,
     error: P,
     children: t

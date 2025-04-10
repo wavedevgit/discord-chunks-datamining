@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -57,8 +57,8 @@ let O = (0, o.Z)(e => {
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, M, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
-    speakerTileHeight: H
-  } = C(y, k), G = N ? y - 32 : Math.min(y - 64, 3 * B + 8), F = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+    speakerTileHeight: G
+  } = C(y, k), F = N ? y - 32 : Math.min(y - 64, 3 * B + 8), H = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
@@ -98,7 +98,7 @@ let O = (0, o.Z)(e => {
             children: (0, r.jsx)(g.Z, {
               channel: o,
               participant: l[0],
-              width: G
+              width: F
             })
           }, "selected-participant");
         case 1:
@@ -122,16 +122,16 @@ let O = (0, o.Z)(e => {
           return null
       }
     },
-    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? G / g.Q + 8 : 1 === e ? V ? 0 : H : 98 * !Y,
+    rowHeight: e => null == W[e][0] ? 0 : 0 === e ? F / g.Q + 8 : 1 === e ? V ? 0 : G : 98 * !Y,
     renderFooter: e => {
       let {
         section: t
       } = e;
-      return F(t) ? (0, r.jsx)("div", {
+      return H(t) ? (0, r.jsx)("div", {
         className: _.spacer
       }, "bottom-spacer") : null
     },
-    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
+    footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!H(e),
     className: _.scroller,
     chunkSize: 60,
     onScroll: O

@@ -11,8 +11,8 @@ var n = r(200651),
   c = r(775379),
   s = r(879046),
   u = r(214597),
-  p = r(498187),
-  d = r(482417),
+  d = r(498187),
+  p = r(482417),
   f = r(301419),
   b = r(397035);
 
@@ -35,7 +35,7 @@ function O(e) {
   return e
 }
 
-function y(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var r, n, l = function(e, t) {
     if (null == e) return {};
@@ -50,17 +50,17 @@ function y(e, t) {
   }
   return l
 }
-let m = l.createContext(void 0);
+let y = l.createContext(void 0);
 
 function j() {
-  let e = l.useContext(m);
+  let e = l.useContext(y);
   return o()(null != e, "useEntryDataContext must be used within a EntryDataContextProvider"), e
 }
 
 function g(e) {
   var {
     entry: t
-  } = e, r = y(e, ["entry"]);
+  } = e, r = m(e, ["entry"]);
   let l = O({
     baseEntryData: (0, u.Z)({
       entry: t,
@@ -77,11 +77,11 @@ function g(e) {
         entry: t
       }, l));
     case a.s.PLAYED_GAME:
-      return (0, n.jsx)(w, O({
+      return (0, n.jsx)(S, O({
         entry: t
       }, l));
     case a.s.WATCHED_MEDIA:
-      return (0, n.jsx)(S, O({
+      return (0, n.jsx)(w, O({
         entry: t
       }, l));
     case a.s.LISTENED_SESSION:
@@ -100,7 +100,7 @@ function g(e) {
 function h(e) {
   var {
     errorFallback: t
-  } = e, r = y(e, ["errorFallback"]);
+  } = e, r = m(e, ["errorFallback"]);
   return (0, n.jsx)(c.S, {
     fallback: t,
     children: (0, n.jsx)(g, O({}, r))
@@ -111,11 +111,11 @@ function v(e) {
   var {
     entry: t,
     children: r
-  } = e, l = y(e, ["entry", "children"]);
+  } = e, l = m(e, ["entry", "children"]);
   let i = (0, s.Z)(O({
     entry: t
   }, l));
-  return (0, n.jsx)(m.Provider, {
+  return (0, n.jsx)(y.Provider, {
     value: O({
       parsedEntry: i
     }, l),
@@ -127,11 +127,11 @@ function P(e) {
   var {
     entry: t,
     children: r
-  } = e, l = y(e, ["entry", "children"]);
+  } = e, l = m(e, ["entry", "children"]);
   let i = (0, f.Z)(O({
     entry: t
   }, l));
-  return (0, n.jsx)(m.Provider, {
+  return (0, n.jsx)(y.Provider, {
     value: O({
       parsedEntry: i
     }, l),
@@ -143,27 +143,11 @@ function x(e) {
   var {
     entry: t,
     children: r
-  } = e, l = y(e, ["entry", "children"]);
-  let i = (0, p.Z)(O({
+  } = e, l = m(e, ["entry", "children"]);
+  let i = (0, d.Z)(O({
     entry: t
   }, l));
-  return (0, n.jsx)(m.Provider, {
-    value: O({
-      parsedEntry: i
-    }, l),
-    children: r
-  })
-}
-
-function w(e) {
-  var {
-    entry: t,
-    children: r
-  } = e, l = y(e, ["entry", "children"]);
-  let i = (0, p.Z)(O({
-    entry: t
-  }, l));
-  return (0, n.jsx)(m.Provider, {
+  return (0, n.jsx)(y.Provider, {
     value: O({
       parsedEntry: i
     }, l),
@@ -175,11 +159,27 @@ function S(e) {
   var {
     entry: t,
     children: r
-  } = e, l = y(e, ["entry", "children"]);
+  } = e, l = m(e, ["entry", "children"]);
+  let i = (0, d.Z)(O({
+    entry: t
+  }, l));
+  return (0, n.jsx)(y.Provider, {
+    value: O({
+      parsedEntry: i
+    }, l),
+    children: r
+  })
+}
+
+function w(e) {
+  var {
+    entry: t,
+    children: r
+  } = e, l = m(e, ["entry", "children"]);
   let i = (0, b.Z)(O({
     entry: t
   }, l));
-  return (0, n.jsx)(m.Provider, {
+  return (0, n.jsx)(y.Provider, {
     value: O({
       parsedEntry: i
     }, l),
@@ -191,11 +191,11 @@ function C(e) {
   var {
     entry: t,
     children: r
-  } = e, l = y(e, ["entry", "children"]);
-  let i = (0, d.Z)(O({
+  } = e, l = m(e, ["entry", "children"]);
+  let i = (0, p.Z)(O({
     entry: t
   }, l));
-  return (0, n.jsx)(m.Provider, {
+  return (0, n.jsx)(y.Provider, {
     value: O({
       parsedEntry: i
     }, l),

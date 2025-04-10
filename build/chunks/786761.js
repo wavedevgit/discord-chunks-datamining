@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Pv: () => G,
-  e5: () => P,
+  e5: () => R,
   gx: () => w,
   lp: () => U,
   wi: () => D
@@ -82,7 +82,7 @@ function C(e) {
   return !1
 }
 
-function R(e) {
+function P(e) {
   var t;
   return new d.pi(T(I({}, e), {
     timestamp: new Date(e.timestamp),
@@ -96,16 +96,16 @@ function R(e) {
   }))
 }
 
-function P(e) {
+function R(e) {
   var t, n, r, i, a, s, c;
   let f, h, {
       reactions: m,
       interactionData: y
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-    O = R(e),
+    O = P(e),
     S = null != (i = null == (t = e.mentions) ? void 0 : t.map(e => e.id)) ? i : [],
     N = null != (a = e.mention_roles) ? a : [],
-    P = null != (s = e.mention_channels) ? s : [],
+    R = null != (s = e.mention_channels) ? s : [],
     w = e.message_reference,
     D = A(e),
     L = null,
@@ -129,7 +129,7 @@ function P(e) {
     mentionEveryone: e.mention_everyone,
     mentions: S,
     mentionRoles: N,
-    mentionChannels: P,
+    mentionChannels: R,
     messageReference: w,
     mentioned: (0, b.Sz)({
       userId: _.default.getId(),
@@ -165,7 +165,7 @@ function w(e, t) {
 }
 
 function D(e, t) {
-  if (null != t.edited_timestamp) return P(t, {
+  if (null != t.edited_timestamp) return R(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });
@@ -242,7 +242,7 @@ function j(e) {
       message: t
     } = e;
     return new d.Hx({
-      message: R(t)
+      message: P(t)
     })
   })
 }

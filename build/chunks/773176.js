@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => e_
 }), n(388685);
@@ -41,9 +41,9 @@ var r = n(200651),
   W = n(314897),
   U = n(323873),
   B = n(271383),
-  H = n(430824),
-  G = n(607744),
-  F = n(496675),
+  G = n(430824),
+  F = n(607744),
+  H = n(496675),
   V = n(626135),
   z = n(572004),
   Y = n(176354),
@@ -206,12 +206,12 @@ function ef(e) {
       isFocused: a
     } = e, {
       author: s
-    } = n, u = (0, c.e7)([H.Z], () => H.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([W.default], () => W.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
+    } = n, u = (0, c.e7)([G.Z], () => G.Z.getGuild(t.guild_id), [t.guild_id]), d = (0, c.e7)([W.default], () => W.default.getId()), p = (0, L.$R)(t), m = (0, L.Gu)(t), g = D.nc.useSetting(), b = D.Sb.useSetting(), _ = (0, c.e7)([F.Z], () => null == t.guild_id || F.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: y,
       canAddNewReactions: x
-    } = (0, c.cj)([F.Z], () => ({
-      canAddNewReactions: _ && F.Z.can(ei.Plq.ADD_REACTIONS, t),
-      canManageMessages: F.Z.can(ei.Plq.MANAGE_MESSAGES, t)
+    } = (0, c.cj)([H.Z], () => ({
+      canAddNewReactions: _ && H.Z.can(ei.Plq.ADD_REACTIONS, t),
+      canManageMessages: H.Z.can(ei.Plq.MANAGE_MESSAGES, t)
     }), [t, _]), v = (0, R.U)(t, n), j = (0, L.NE)(t, n), E = (0, L.Ek)(n), N = (0, c.e7)([O.Z], () => null != t.guild_id && O.Z.isLurking(t.guild_id), [t]), I = (0, c.e7)([B.ZP], () => null != t.guild_id && B.ZP.isCurrentUserGuest(t.guild_id), [t]), P = s.id === d, S = (y || n.canDeleteOwnMessage(d)) && p && !ei.V$x.UNDELETABLE.has(n.type);
     n.type === ei.uaV.AUTO_MODERATION_ACTION && (S = S && y);
     let Z = (0, K.a4)(n),
@@ -230,7 +230,7 @@ function ef(e) {
       }),
       U = t.type === ei.d4z.GUILD_ANNOUNCEMENT && null != u && u.hasFeature(ei.oNc.NEWS) && (P || y) && (0, f.Z)(n),
       V = t.getGuildId(),
-      Y = null != V && (n.type === ei.uaV.USER_JOIN || n.type === ei.uaV.GUILD_INVITE_REMINDER) && F.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
+      Y = null != V && (n.type === ei.uaV.USER_JOIN || n.type === ei.uaV.GUILD_INVITE_REMINDER) && H.Z.canWithPartialContext(ei.Plq.MANAGE_GUILD, {
         guildId: V
       }),
       q = (0, C.a)(n),

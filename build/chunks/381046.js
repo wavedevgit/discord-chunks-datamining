@@ -51,12 +51,12 @@ var r = n(260674),
   },
   h = {},
   m = function e(t, n, o, a, s, c, d, f, m, g, E, b, y, v, O, I, S, T) {
-    for (var N, A = t, C = T, R = 0, P = !1; void 0 !== (C = C.get(h)) && !P;) {
+    for (var N, A = t, C = T, P = 0, R = !1; void 0 !== (C = C.get(h)) && !R;) {
       var w = C.get(t);
-      if (R += 1, void 0 !== w)
-        if (w === R) throw RangeError("Cyclic object value");
-        else P = !0;
-      void 0 === C.get(h) && (R = 0)
+      if (P += 1, void 0 !== w)
+        if (w === P) throw RangeError("Cyclic object value");
+        else R = !0;
+      void 0 === C.get(h) && (P = 0)
     }
     if ("function" == typeof g ? A = g(n, A) : A instanceof Date ? A = y(A) : "comma" === o && l(A) && (A = i.maybeMap(A, function(e) {
         return e instanceof Date ? y(e) : e
@@ -84,7 +84,7 @@ var r = n(260674),
       if (!d || null !== U) {
         var G = b && f ? String(j).replace(/\./g, "%2E") : String(j),
           B = l(A) ? "function" == typeof o ? o(M, G) : M : M + (b ? "." + G : "[" + G + "]");
-        T.set(t, R);
+        T.set(t, P);
         var V = r();
         V.set(h, T), u(D, e(U, B, o, a, s, c, d, f, "comma" === o && I && l(A) ? null : m, g, E, b, y, v, O, I, S, V))
       }

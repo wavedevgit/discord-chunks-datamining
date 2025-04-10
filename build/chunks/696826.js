@@ -4,10 +4,10 @@ n.d(t, {
   Dk: () => N,
   QF: () => I,
   Sk: () => d.Skl,
-  W5: () => P,
+  W5: () => R,
   lm: () => O,
   qb: () => w,
-  rs: () => R,
+  rs: () => P,
   vP: () => C,
   vj: () => v
 }), n(388685);
@@ -251,7 +251,7 @@ function C(e, t, n) {
   })
 }
 
-function R(e, t) {
+function P(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
   if (n) return c.ZP.Masks.STATUS_TYPING;
   switch (e) {
@@ -272,7 +272,7 @@ function R(e, t) {
   }
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   let r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
   return t === d.Skl.ONLINE && n && !r ? {
     width: e,
@@ -293,10 +293,10 @@ function w(e) {
     color: l
   } = e, u = t === d.Skl.ONLINE && n, f = v(t, l);
   return (0, r.jsx)(c.ZP, g(h({
-    mask: R(t, u),
+    mask: P(t, u),
     className: o()(_.mask, a),
     style: s
-  }, P(i, t, u)), {
+  }, R(i, t, u)), {
     children: (0, r.jsx)("div", {
       style: {
         backgroundColor: f

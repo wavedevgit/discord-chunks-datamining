@@ -13,7 +13,7 @@ n.d(t, {
   ho: () => b,
   pG: () => E,
   rf: () => C,
-  x3: () => R,
+  x3: () => P,
   z5: () => S
 });
 var r = n(544891),
@@ -183,7 +183,7 @@ function C(e) {
   }), h(f.QP.PROFILE_THEME_COLOR)
 }
 
-function R(e) {
+function P(e) {
   i.Z.dispatch(p({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), h(f.QP.PRESET)

@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   NZ: () => eZ,
   ZP: () => ek,
@@ -43,9 +43,9 @@ var r = n(200651),
   W = n(459502),
   U = n(576645),
   B = n(140465),
-  H = n(800966),
-  G = n(641015),
-  F = n(618158),
+  G = n(800966),
+  F = n(641015),
+  H = n(618158),
   V = n(390322),
   z = n(791592),
   Y = n(136995),
@@ -212,7 +212,7 @@ function eZ(e) {
             visibleContent: t,
             markAsDismissed: n
           } = e;
-          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(H.h, {
+          if (t === d.z.TRIAL_NUX_STREAM_COACH_MARK) return O(!0), (0, r.jsx)(G.h, {
             buttonRef: b,
             dismissed: !1,
             onDismiss: () => {
@@ -221,7 +221,7 @@ function eZ(e) {
           })
         }
       })
-    })(), (0, r.jsx)(F.Z, {
+    })(), (0, r.jsx)(H.Z, {
       children: (0, r.jsx)(p.yRy, {
         renderPopout: e => {
           let {
@@ -480,12 +480,12 @@ let ek = function(e) {
     selfMute: U,
     mute: B
   } = (0, eh.Z)(l), {
-    canGoLive: H
+    canGoLive: G
   } = (0, u.cj)([er.Z], () => ({
     canGoLive: (0, k.Z)(er.Z)
-  })), F = (0, w.Z)(), z = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), Y = null != F, q = (0, u.e7)([ei.Z], () => {
+  })), H = (0, w.Z)(), z = (0, u.e7)([A.Z], () => null != A.Z.getAwaitingRemoteSessionInfo()), Y = null != H, q = (0, u.e7)([ei.Z], () => {
     var e;
-    return (null != (e = null == F ? void 0 : F.channelId) ? e : ei.Z.getVoiceChannelId()) === l.id
+    return (null != (e = null == H ? void 0 : H.channelId) ? e : ei.Z.getVoiceChannelId()) === l.id
   }), K = (0, O.Z)(l, !0), Q = (0, u.e7)([y.ZP], () => y.ZP.getCurrentEmbeddedActivity()), {
     reachedLimit: et,
     limit: en
@@ -505,7 +505,7 @@ let ek = function(e) {
     })
   });
   let eC = eb && !K,
-    ex = (0, G.Z)(l),
+    ex = (0, F.Z)(l),
     ej = ey ? e => {
       (0, f.jW)(e, () => Promise.resolve(() => (0, r.jsx)(E.default, {
         onClose: f.Zy,
@@ -627,7 +627,7 @@ let ek = function(e) {
             channel: l,
             currentUser: T,
             exitFullScreen: d,
-            canGoLive: H,
+            canGoLive: G,
             hasPermission: L
           }), !Y && (0, r.jsx)(eT, {
             channel: l,
@@ -752,7 +752,7 @@ let ek = function(e) {
           channel: l,
           currentUser: T,
           exitFullScreen: d,
-          canGoLive: H,
+          canGoLive: G,
           hasPermission: L
         }), m === eo.BK.MicPushToEnable ? (0, r.jsx)(p.yRy, {
           renderPopout: e => {

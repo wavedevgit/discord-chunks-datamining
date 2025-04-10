@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => U,
   i: () => W
@@ -114,12 +114,12 @@ function U(e) {
   } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([y.default], () => (null == l ? void 0 : l.ownerId) === y.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
-    canMessage: H
-  } = (0, m.TE)(t, l), G = (0, s.e7)([x.default], () => {
+    canMessage: G
+  } = (0, m.TE)(t, l), F = (0, s.e7)([x.default], () => {
     var e, t;
     return (null == (e = x.default.getCurrentUser()) ? void 0 : e.desktop) === !0 || (null == (t = x.default.getCurrentUser()) ? void 0 : t.mobile) === !0
   }), {
-    guildPopulated: F,
+    guildPopulated: H,
     guildMessaged: V,
     guildPersonalized: z
   } = (0, m.h_)(l), {
@@ -199,7 +199,7 @@ function U(e) {
         }))
       }, [e])
     }
-  }(l), J = !(G || F || V || z), {
+  }(l), J = !(F || H || V || z), {
     titleAnimatedStyle: $,
     opacities: ee
   } = function(e) {
@@ -257,7 +257,7 @@ function U(e) {
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.YvY : R,
       header: Z.NW.string(Z.t.q9n0TU),
-      completed: F,
+      completed: H,
       onClick: Y
     })
   }, "invite")), B && el.push((0, r.jsx)(a.Z.div, {
@@ -271,7 +271,7 @@ function U(e) {
       completed: z,
       onClick: K
     })
-  }, "customize")), H && el.push((0, r.jsx)(a.Z.div, {
+  }, "customize")), G && el.push((0, r.jsx)(a.Z.div, {
     className: T.cardWrapper,
     style: J ? {
       opacity: ee[el.length]
@@ -290,7 +290,7 @@ function U(e) {
     children: (0, r.jsx)(W, {
       iconUrl: ei ? u.yIb : w,
       header: Z.NW.string(Z.t.pGVNIy),
-      completed: G,
+      completed: F,
       onClick: X
     })
   }, "download")), el.push((0, r.jsx)(a.Z.div, {

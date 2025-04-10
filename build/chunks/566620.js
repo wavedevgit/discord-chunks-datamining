@@ -40,8 +40,8 @@ var r = n(990547),
   N = n(973616),
   A = n(314897),
   C = n(592125),
-  R = n(430824),
-  P = n(496675),
+  P = n(430824),
+  R = n(496675),
   w = n(594174),
   D = n(979651),
   L = n(626135),
@@ -118,8 +118,8 @@ async function en(e) {
     secret: T,
     inviterUserId: N,
     instanceId: A,
-    isContextlessActivity: R,
-    onConfirmActivityLaunchChecksAlertOpen: P
+    isContextlessActivity: P,
+    onConfirmActivityLaunchChecksAlertOpen: R
   } = e, D = C.Z.getChannel(r), L = null != (t = null == D ? void 0 : D.getGuildId()) ? t : void 0, x = (0, G.sq)();
   if (!x && null == L && !(null != (n = null == D ? void 0 : D.isPrivate()) && n)) return !1;
   let M = (0, S.r)();
@@ -165,9 +165,9 @@ async function en(e) {
         source: h,
         onExecutedCallback: g,
         clientSupportsContextlessActivityLaunch: x,
-        onConfirmActivityLaunchChecksAlertOpen: P,
+        onConfirmActivityLaunchChecksAlertOpen: R,
         embeddedActivitiesManager: u,
-        isContextlessActivity: R
+        isContextlessActivity: P
       });
       if ("failure" === e.result && 4 !== e.reason) throw new v.Z(v.Z.Reasons.PRIMARY_APP_COMMAND_NOT_FOUND)
     } else {
@@ -181,7 +181,7 @@ async function en(e) {
         joinSessionId: I,
         secret: T,
         instanceId: A,
-        isContextlessActivity: R
+        isContextlessActivity: P
       });
       if (null == g || g(), "failure" === e.result) throw new v.Z(v.Z.Reasons.LEGACY_LAUNCH_CLIENT_VALIDATION_FAILED, e.reason)
     }
@@ -192,7 +192,7 @@ async function en(e) {
       channelId: null != r ? r : null
     })
   } catch (t) {
-    let e = R ? i.E.CONTEXTLESS : null != L ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
+    let e = P ? i.E.CONTEXTLESS : null != L ? i.E.GUILD_CHANNEL : i.E.PRIVATE_CHANNEL;
     return a.Z.dispatch({
       type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
       nonce: M,
@@ -259,7 +259,7 @@ async function ei(e) {
     }
   }
   let I = C.Z.getChannel(r),
-    S = null != i ? R.Z.getGuild(i) : null;
+    S = null != i ? P.Z.getGuild(i) : null;
   if (null == I) return {
     result: "failure",
     reason: 3
@@ -366,8 +366,8 @@ async function eo(e) {
   let v = (0, H.e4)({
     channelId: i,
     ChannelStore: C.Z,
-    GuildStore: R.Z,
-    PermissionStore: P.Z,
+    GuildStore: P.Z,
+    PermissionStore: R.Z,
     VoiceStateStore: D.Z
   });
   if (v !== H.jy.CAN_LAUNCH) {

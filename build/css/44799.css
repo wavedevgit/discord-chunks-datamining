@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 9c17d795a1993cc7
+  Original File Name: bbd12a7574c91786
 **/
 .container__98cbd {
     min-width: 220px;
@@ -83,6 +83,12 @@
     bottom: 0;
     left: var(--spacing-16);
     right: var(--spacing-16)
+}
+
+.new__98cbd {
+    position: absolute;
+    top: var(--spacing-12);
+    right: var(--spacing-12)
 }
 
 .full-motion .container__98cbd {
@@ -509,4 +515,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=9c17d795a1993cc7.css.map*/
+/*# sourceMappingURL=bbd12a7574c91786.css.map*/

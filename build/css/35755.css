@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: 25d3199a151f2cec
+  Original File Name: c92dfea899147121
 **/
 .brokenImageIcon_f68fcb {
     width: 48px;
@@ -445,6 +445,208 @@
 
 .searchBar_d806b9 {
     padding: 8px
+}
+
+.profileEntryCard__655fa {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-faint);
+    cursor: pointer;
+    gap: 10px
+}
+
+.profileEntryCard__655fa:last-child {
+    border-bottom: none
+}
+
+.profileEntryCard__655fa:hover .reactions__655fa {
+    opacity: 1
+}
+
+.avatar__655fa {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer
+}
+
+.playerInfo__655fa {
+    gap: 8px;
+    flex-grow: 1
+}
+
+.reactions__655fa {
+    opacity: 0;
+    transition: opacity .15s ease-in-out
+}
+
+.row__8e830 {
+    display: flex;
+    flex-direction: row
+}
+
+.column__8e830 {
+    display: flex;
+    flex-direction: column
+}
+
+.gapXs__8e830 {
+    gap: 2px
+}
+
+.gapSm__8e830 {
+    gap: 4px
+}
+
+.gapMd__8e830 {
+    gap: 8px
+}
+
+.gapLg__8e830 {
+    gap: var(--custom-spacing)
+}
+
+.clickable__8e830 {
+    cursor: pointer
+}
+
+.content__8e830 {
+    padding-left: calc(var(--custom-spacing) + var(--custom-spacing));
+    padding-right: calc(var(--custom-spacing) + var(--custom-spacing))
+}
+
+.gameProfileModal__8e830 {
+    --custom-spacing: 16px;
+    position: relative;
+    display: grid;
+    max-width: 884px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 32px
+}
+
+.gameArtHero__8e830 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    -webkit-mask-image: linear-gradient(183deg,#000,#000 50px,transparent 325px);
+    mask-image: linear-gradient(183deg,#000,#000 50px,transparent 325px);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    width: 100%;
+    pointer-events: none
+}
+
+.coverArtRow__8e830 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%
+}
+
+.overflowMenu__8e830 {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: hsl(var(--black-hsl)/.6);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    cursor: pointer
+}
+
+.headerInfo__8e830 {
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 12px;
+    padding-top: 32px;
+    position: relative
+}
+
+.logoWrapper__8e830 {
+    border-radius: 8px;
+    background-color: var(--modal-background);
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.logo__8e830,.logoWrapper__8e830 {
+    width: 120px;
+    height: 154px
+}
+
+.logo__8e830 {
+    border-radius: 4px
+}
+
+.gameDetails__8e830 {
+    margin-bottom: var(--custom-spacing);
+    width: 100%
+}
+
+.gameBadge__8e830,.gameDetails__8e830 {
+    justify-content: space-between
+}
+
+.gameBadge__8e830 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px
+}
+
+.newBadge__8e830 {
+    background-color: var(--bg-brand);
+    color: var(--white-500);
+    padding: 1px 5px 0;
+    align-self: end
+}
+
+.gameIcon__8e830,.newBadge__8e830 {
+    border-radius: 4px
+}
+
+.mainContent__8e830 {
+    display: grid;
+    grid-gap: var(--custom-spacing) calc(var(--custom-spacing)*2);
+    gap: var(--custom-spacing) calc(var(--custom-spacing)*2);
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: calc(var(--custom-spacing)*2)
+}
+
+.mainContent__8e830>* {
+    overflow: hidden
+}
+
+.sidebar__8e830 {
+    border-left: 1px solid var(--border-subtle);
+    padding-left: calc(var(--custom-spacing)*2)
+}
+
+.sections__8e830 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px
+}
+
+.sectionHeader__8e830 {
+    margin-bottom: 8px
+}
+
+.joinButton__18453 {
+    width: 32px
 }
 
 .friendsWhoPlay__4daa6 {
@@ -1403,4 +1605,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=25d3199a151f2cec.css.map*/
+/*# sourceMappingURL=c92dfea899147121.css.map*/

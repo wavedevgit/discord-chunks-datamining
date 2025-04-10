@@ -1,14 +1,14 @@
-/** Chunk was on 95287 **/
+/** Chunk was on 89311 **/
 r.d(t, {
   Z: () => d
 });
-var n, a, o, i = r(442837),
-  l = r(570140);
-let s = {},
+var n, a, i, l = r(442837),
+  s = r(570140);
+let o = {},
   c = {};
-class u extends(o = i.ZP.Store) {
+class u extends(i = l.ZP.Store) {
   getSimilarGames(e) {
-    return s[e]
+    return o[e]
   }
   getSimilarGamesError(e) {
     return c[e]
@@ -20,13 +20,13 @@ a = "GameProfileStore", (n = "displayName") in u ? Object.defineProperty(u, n, {
   configurable: !0,
   writable: !0
 }) : u[n] = a;
-let d = new u(l.Z, {
+let d = new u(s.Z, {
   GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
     let {
       applicationId: t,
       games: r
     } = e;
-    s[t] = r
+    o[t] = r
   },
   GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
     let {

@@ -13,7 +13,7 @@ n.d(t, {
   M5: () => O.M5,
   MY: () => eW,
   N1: () => eb,
-  PK: () => eR,
+  PK: () => eP,
   PV: () => eh,
   Px: () => et,
   Qo: () => eH,
@@ -27,7 +27,7 @@ n.d(t, {
   Wz: () => tI,
   XK: () => ez,
   Z8: () => ep,
-  ZP: () => tP,
+  ZP: () => tR,
   Zx: () => eq,
   _O: () => tS,
   a5: () => eG,
@@ -53,7 +53,7 @@ n.d(t, {
   uZ: () => e_,
   v6: () => eN,
   v9: () => eX,
-  xG: () => tR,
+  xG: () => tP,
   yd: () => O.yd,
   zL: () => ei,
   zV: () => eL
@@ -86,7 +86,7 @@ var s = n(782568),
   A = n(231338),
   C = n(388032);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -95,14 +95,14 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -203,7 +203,7 @@ function V(e) {
       planId: e,
       currency: null != o ? o : "unknown"
     },
-    extra: D(P({}, r), {
+    extra: D(R({}, r), {
       isGift: n
     })
   }), a
@@ -497,15 +497,15 @@ function en(e) {
     activeDiscountInfo: y,
     renewalInvoicePreview: v,
     hasFractionalPremiumWithSub: O
-  } = e, I = N.GP[h], T = tO(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null == (t = d.default.getCurrentUser()) ? void 0 : t.hasFreePremium()), R = null != m && null == p.paymentGateway, P = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null == (n = p.latestInvoice) ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : P ? S.O0b.UNPAID : p.status, D = null == (o = null != (i = null == v ? void 0 : v.taxInclusive) ? i : null == (r = p.latestInvoice) ? void 0 : r.taxInclusive) || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = R ? D ? C.NW.format(C.t["cd+hqK"], {
+  } = e, I = N.GP[h], T = tO(B(I.id), I.interval), A = eD(p) || null == p.paymentSourceId && !p.isPurchasedExternally && !(null == (t = d.default.getCurrentUser()) ? void 0 : t.hasFreePremium()), P = null != m && null == p.paymentGateway, R = p.status === S.O0b.UNPAID && null !== p.latestInvoice && (null == (n = p.latestInvoice) ? void 0 : n.status) === S.hUK.OPEN, w = A ? S.O0b.CANCELED : R ? S.O0b.UNPAID : p.status, D = null == (o = null != (i = null == v ? void 0 : v.taxInclusive) ? i : null == (r = p.latestInvoice) ? void 0 : r.taxInclusive) || o, L = N.cb + (E ? ed(p.additionalPlans) : 0), x = P ? D ? C.NW.format(C.t["cd+hqK"], {
     price: m
   }) : C.NW.format(C.t.NUkcpK, {
     price: m
-  }) : C.NW.string(C.t.zYx3Y2), M = R ? D ? C.NW.format(C.t.VsKcFB, {
+  }) : C.NW.string(C.t.zYx3Y2), M = P ? D ? C.NW.format(C.t.VsKcFB, {
     price: m
   }) : C.NW.format(C.t.hJ5xER, {
     price: m
-  }) : C.NW.string(C.t["8rSipK"]), k = R ? D ? C.NW.format(C.t["jRy6/P"], {
+  }) : C.NW.string(C.t["8rSipK"]), k = P ? D ? C.NW.format(C.t["jRy6/P"], {
     price: m,
     num: L
   }) : C.NW.format(C.t.tTNE8P, {
@@ -519,13 +519,13 @@ function en(e) {
     case N.Xh.PREMIUM_YEAR_TIER_0:
       switch (w) {
         case S.O0b.CANCELED:
-          return R ? D ? C.NW.format(C.t["USi/nZ"], {
+          return P ? D ? C.NW.format(C.t["USi/nZ"], {
             price: m
           }) : C.NW.format(C.t["FS//l5"], {
             price: m
           }) : C.NW.string(C.t.JshLzs);
         case S.O0b.ACCOUNT_HOLD:
-          return R ? D ? C.NW.format(C.t["5mv+2t"], {
+          return P ? D ? C.NW.format(C.t["5mv+2t"], {
             price: m
           }) : C.NW.format(C.t.nkAEfX, {
             price: m
@@ -559,13 +559,13 @@ function en(e) {
     case N.Xh.PREMIUM_YEAR_TIER_1:
       switch (w) {
         case S.O0b.CANCELED:
-          return R ? D ? C.NW.format(C.t.cXy8Bg, {
+          return P ? D ? C.NW.format(C.t.cXy8Bg, {
             price: m
           }) : C.NW.format(C.t["C/XsHh"], {
             price: m
           }) : C.NW.string(C.t.K6tYFR);
         case S.O0b.ACCOUNT_HOLD:
-          return R ? D ? C.NW.format(C.t.HBkIBg, {
+          return P ? D ? C.NW.format(C.t.HBkIBg, {
             price: m
           }) : C.NW.format(C.t.ZsO1S0, {
             price: m
@@ -601,7 +601,7 @@ function en(e) {
     case N.Xh.PREMIUM_6_MONTH_TIER_2:
       switch (w) {
         case S.O0b.CANCELED:
-          return R ? D ? C.NW.format(C.t.xoFgRk, {
+          return P ? D ? C.NW.format(C.t.xoFgRk, {
             price: m,
             num: L
           }) : C.NW.format(C.t.nXdbKi, {
@@ -611,7 +611,7 @@ function en(e) {
             num: L
           });
         case S.O0b.ACCOUNT_HOLD:
-          return R ? D ? C.NW.format(C.t["5C/0QE"], {
+          return P ? D ? C.NW.format(C.t["5C/0QE"], {
             price: m,
             num: L
           }) : C.NW.format(C.t.xfYkho, {
@@ -1072,12 +1072,12 @@ function eC(e, t, n) {
   return e.currency !== A.pK.USD && !0 === n && (o = o.concat("*")), o
 }
 
-function eR(e, t, n) {
+function eP(e, t, n) {
   let r = eC(e, t, n);
   return (0, I.og)(r, e.interval, e.intervalCount)
 }
 
-function eP(e, t) {
+function eR(e, t) {
   let {
     planId: n
   } = e;
@@ -1362,7 +1362,7 @@ function eW(e, t) {
     o = (null != (r = null == (n = e.renewalMutations) ? void 0 : n.items) ? r : e.items).find(e => N.dJ.has(e.planId));
   return null != o && i.push(o), i.push(...t), i.map(t => {
     for (let n of e.items)
-      if (t.planId === n.planId) return P({}, n, t);
+      if (t.planId === n.planId) return R({}, n, t);
     return t
   })
 }
@@ -1375,7 +1375,7 @@ function eK(e, t, n, r) {
   var o, a;
   i()(r.has(t), "Expected planId in group");
   let s = !1,
-    l = (null != (a = null == (o = e.renewalMutations) ? void 0 : o.items) ? a : e.items).map(e => r.has(e.planId) ? (s = !0, D(P({}, e), {
+    l = (null != (a = null == (o = e.renewalMutations) ? void 0 : o.items) ? a : e.items).map(e => r.has(e.planId) ? (s = !0, D(R({}, e), {
       quantity: n,
       planId: t
     })) : e);
@@ -1408,7 +1408,7 @@ function eQ(e) {
       let r = p.Z.get(e.planId);
       i()(null != r, "Missing plan");
       let o = p.Z.getForSkuAndInterval(r.skuId, t.interval, t.intervalCount);
-      return i()(null != o, "Missing planForInterval"), D(P({}, e), {
+      return i()(null != o, "Missing planForInterval"), D(R({}, e), {
         planId: o.id
       })
     })
@@ -1606,10 +1606,10 @@ function tA(e) {
 }
 
 function tC(e) {
-  return tR(e.map(e => e.skuId))
+  return tP(e.map(e => e.skuId))
 }
 
-function tR(e) {
+function tP(e) {
   return e.reduce((e, t) => {
     let [n, r] = N.Cx[t], i = 1;
     switch (n) {
@@ -1622,7 +1622,7 @@ function tR(e) {
     return e + i * r
   }, 0)
 }
-let tP = Object.freeze({
+let tR = Object.freeze({
   isNewUser: e => null != e && Date.now() - e.createdAt.getTime() < j,
   isPremiumAtLeast: O.yd,
   isPremium: O.I5,
@@ -1654,7 +1654,7 @@ let tP = Object.freeze({
   isSwitchingPlansDisabled: ev,
   getSwitchingPlansDisabledMessage: eO,
   isNoneSubscription: u.Q0,
-  getPlanIdFromInvoice: eP,
+  getPlanIdFromInvoice: eR,
   getStatusFromInvoice: ew,
   isBaseSubscriptionCanceled: eD,
   getPremiumGuildIntervalPrice: eM,

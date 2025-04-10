@@ -1,6 +1,6 @@
-/** Chunk was on 92457 **/
+/** Chunk was on 21924 **/
 n.d(t, {
-  default: () => f
+  default: () => b
 }), n(388685), n(539854);
 var r = n(200651),
   l = n(192379),
@@ -14,21 +14,21 @@ var r = n(200651),
   m = n(255514),
   x = n(981631),
   p = n(864012);
-let f = e => {
+let b = e => {
   let {
     reportType: t,
     menu: n,
-    modalProps: f,
-    onSubmit: b,
-    onNavigate: h,
-    emailToken: _,
+    modalProps: b,
+    onSubmit: h,
+    onNavigate: _,
+    emailToken: f,
     isAuthenticated: g = !0
   } = e, v = (0, s.Dt)(), {
     nodes: j,
     root_node_id: N,
     success_node_id: y,
     fail_node_id: O
-  } = n, [Z, I] = l.useState(N), [C, T] = l.useState(void 0), [S, P] = l.useState(void 0), [k, E] = l.useState([]), [W, L] = l.useState(void 0), [w, A] = l.useState(void 0), D = e => {
+  } = n, [Z, I] = l.useState(N), [C, P] = l.useState(void 0), [S, T] = l.useState(void 0), [k, E] = l.useState([]), [w, W] = l.useState(void 0), [R, D] = l.useState(void 0), A = e => {
     var n, r, l;
     let {
       destination: a
@@ -36,7 +36,7 @@ let f = e => {
     if (void 0 === u) return void c.Z.increment({
       name: i.V.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
     });
-    if (u.elements.some(e => "skip" === e.type) && (null == (n = u.button) ? void 0 : n.type) === "next") return D((r = function(e) {
+    if (u.elements.some(e => "skip" === e.type) && (null == (n = u.button) ? void 0 : n.type) === "next") return A((r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -65,7 +65,7 @@ let f = e => {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
     }), r));
-    if (E([...k, e]), null != u.key && (null == h || h(u.key)), T(void 0), P(void 0), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
+    if (E([...k, e]), null != u.key && (null == _ || _(u.key)), P(void 0), T(void 0), t.name === d.b.MESSAGE || t.name === d.b.FIRST_DM) {
       let e = t.record.id;
       o.ZP.trackWithMetadata(x.rMx.IAR_NAVIGATE, {
         message_id: e,
@@ -76,11 +76,11 @@ let f = e => {
       })
     }
     I(s)
-  }, R = async e => {
+  }, L = async e => {
     var r;
-    let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], _),
+    let l = g ? await (0, u.ZD)(n, t, [...k, e]) : await (0, u.fw)(n, t, [...k, e], f),
       i = null == l || null == (r = l.body) ? void 0 : r.report_id;
-    null != i && L(i), A(j[e.nodeRef].report_type), null == b || b(i)
+    null != i && W(i), D(j[e.nodeRef].report_type), null == h || h(i)
   }, M = () => {
     var e, n;
     if (k.length < 1) return;
@@ -97,7 +97,7 @@ let f = e => {
         next_node: j[i].id
       })
     }
-    T(null == l || null == (e = l.multiSelect) ? void 0 : e.state), P(null == l ? void 0 : l.textInput), I(i), E(r), null == h || h("..")
+    P(null == l || null == (e = l.multiSelect) ? void 0 : e.state), T(null == l ? void 0 : l.textInput), I(i), E(r), null == _ || _("..")
   }, B = l.useMemo(() => {
     let e = [],
       t = [];
@@ -118,7 +118,7 @@ let f = e => {
     return [j[N], ...e, ...t, j[y], j[O]]
   }, [j, N, O, y]);
   return (0, r.jsx)(a.Y0X, {
-    transitionState: f.transitionState,
+    transitionState: b.transitionState,
     "aria-labelledby": v,
     children: (0, r.jsx)(a.MyZ, {
       width: 440,
@@ -131,17 +131,17 @@ let f = e => {
           children: (0, r.jsx)(m.Z, {
             node: e,
             reportType: t,
-            reportSubType: w,
+            reportSubType: R,
             history: k,
-            onModalClose: f.onClose,
-            onSelectChild: D,
+            onModalClose: b.onClose,
+            onSelectChild: A,
             onNavigateBack: M,
             multiSelect: C,
             textInput: S,
             successNodeId: y,
             failNodeId: O,
-            onSubmit: R,
-            reportId: W
+            onSubmit: L,
+            reportId: w
           })
         })
       }, e.id))

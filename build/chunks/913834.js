@@ -1,4 +1,4 @@
-/** Chunk was on 86328 **/
+/** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -8,8 +8,8 @@ var r = n(200651),
   a = n(481060),
   i = n(100527),
   s = n(873128),
-  c = n(704041),
-  l = n(986398),
+  l = n(704041),
+  c = n(986398),
   u = n(463031),
   d = n(791644);
 
@@ -21,13 +21,13 @@ function p(e) {
     guildId: t.id,
     leaderboardId: u.z,
     intervalOffset: 0
-  }), _ = o.useMemo(() => {
+  }), b = o.useMemo(() => {
     var e;
     if ((null == f || null == (e = f.guild_settings) ? void 0 : e.show_winner_crown) !== !0) return !1;
     let t = f.users[0];
     return n.author.id === (null == t ? void 0 : t.user_id)
   }, [f, n]);
-  return null != f && _ ? (0, r.jsx)("div", {
+  return null != f && b ? (0, r.jsx)("div", {
     className: d.badge,
     onMouseEnter: () => {
       m.current = !0, g(!0)
@@ -44,13 +44,13 @@ function p(e) {
       nudgeAlignIntoViewport: !0,
       position: "top",
       shouldShow: p,
-      renderPopout: () => (0, r.jsx)(c.Z, {
+      renderPopout: () => (0, r.jsx)(l.Z, {
         guildId: t.id,
         previewMode: !0,
         source: i.Z.MEMBER_LIST,
         leaderboardId: f.leaderboard_id
       }),
-      children: () => (0, r.jsx)(l.Z, {
+      children: () => (0, r.jsx)(c.Z, {
         leaderboard: f,
         className: d.image
       })

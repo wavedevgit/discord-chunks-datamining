@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
   q: () => _
 }), n(953529);
@@ -19,7 +19,7 @@ let _ = e => {
     noticeType: n
   } = e, {
     analyticsLocations: _
-  } = (0, o.ZP)(), N = (0, s.Z)();
+  } = (0, o.ZP)(), I = (0, s.Z)();
   return (0, r.jsx)(u.Xf, {
     contentType: t,
     latestVersion: (0, c.t)(t),
@@ -31,7 +31,7 @@ let _ = e => {
         markAsDismissed: o
       } = e;
       if (t === i.z.GIFTING_PROMOTION_REMINDER) {
-        let e = null == N ? void 0 : N.reminderNagbar;
+        let e = null == I ? void 0 : I.reminderNagbar;
         return (0, r.jsxs)(l.qXd, {
           color: l.DM8.PREMIUM_TIER_2,
           children: [(0, r.jsx)(l.RyX, {

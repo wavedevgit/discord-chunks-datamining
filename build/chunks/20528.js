@@ -49,8 +49,8 @@ let T = (0, r.debounce)(a.xc, 1e3),
   N = new i.V7,
   A = new i.V7,
   C = 3 * b.Z.Millis.MINUTE,
-  R = 5 * b.Z.Millis.SECOND,
-  P = 12 * b.Z.Millis.SECOND,
+  P = 5 * b.Z.Millis.SECOND,
+  R = 12 * b.Z.Millis.SECOND,
   w = null;
 
 function D(e, t) {
@@ -71,7 +71,7 @@ function L(e, t) {
 }
 
 function x(e, t) {
-  g.Z.getAllActiveStreamKeys().includes(e) || A.start(t ? P : R, () => {
+  g.Z.getAllActiveStreamKeys().includes(e) || A.start(t ? R : P, () => {
     o.Z.dispatch({
       type: "STREAM_TIMED_OUT",
       streamKey: e

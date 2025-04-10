@@ -1,4 +1,4 @@
-/** Chunk was on 69606 **/
+/** Chunk was on 49843 **/
 n.d(t, {
   Z: () => M,
   c: () => A
@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(584825),
   g = n(290348),
   h = n(934826),
-  v = n(768318),
-  b = n(570533),
+  b = n(768318),
+  v = n(570533),
   y = n(971792),
   x = n(629262),
   j = n(761966),
@@ -102,7 +102,7 @@ let Z = e => {
     let {
       guildId: t,
       listingId: n
-    } = e, i = (0, b.Z)(t), [a] = g.XZ(n, t), o = i.filter(e => a.has(e.id));
+    } = e, i = (0, v.Z)(t), [a] = g.XZ(n, t), o = i.filter(e => a.has(e.id));
     return 0 === o.length ? null : (0, r.jsxs)("div", {
       className: T.benefitsSection,
       children: [(0, r.jsx)(s.X6q, {
@@ -207,18 +207,18 @@ let Z = e => {
       guildId: a,
       groupListingId: d,
       analyticsLocation: m
-    } = e, b = (0, p.jO)(n), {
+    } = e, v = (0, p.jO)(n), {
       openModal: y,
       canOpenModal: x,
       cannotOpenReason: C,
       isCheckingTrialEligibility: I
-    } = (0, E.Z)(b, a, d, m), Z = (0, l.e7)([_.Z], () => _.Z.isSyncing), {
+    } = (0, E.Z)(v, a, d, m), Z = (0, l.e7)([_.Z], () => _.Z.isSyncing), {
       activeSubscription: D,
       activeSubscriptionListing: M
     } = (0, h.Z)(d), F = (null == M ? void 0 : M.id) === n, R = (null == D ? void 0 : D.status) === S.O0b.CANCELED, [B, z] = i.useState(!1), [U, V] = i.useState(!1), H = i.useCallback(e => {
       let t = !1;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), V(t)
-    }, []), [G] = g._T(n), [Y] = g.PK(n), [q] = g.TT(n), [X] = g.F2(n), K = (0, v.Z)(a, n), J = null != q && null == D && K, Q = (0, c.Z)(P.iP), [$, ee] = i.useState(!1), et = $ || !Q, en = (0, l.e7)([u.Z], () => u.Z.isViewingServerShop(a)), er = (null == b ? void 0 : b.published) === !0, ei = (null == b ? void 0 : b.soft_deleted) === !0, ea = w.NW.string(w.t.KzmEAw);
+    }, []), [G] = g._T(n), [Y] = g.PK(n), [q] = g.TT(n), [X] = g.F2(n), K = (0, b.Z)(a, n), J = null != q && null == D && K, Q = (0, c.Z)(P.iP), [$, ee] = i.useState(!1), et = $ || !Q, en = (0, l.e7)([u.Z], () => u.Z.isViewingServerShop(a)), er = (null == v ? void 0 : v.published) === !0, ei = (null == v ? void 0 : v.soft_deleted) === !0, ea = w.NW.string(w.t.KzmEAw);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: T.container,
       "aria-label": G,

@@ -1,6 +1,6 @@
-/** Chunk was on 78604 **/
+/** Chunk was on 69774 **/
 t.d(n, {
-  Z: () => _
+  Z: () => x
 });
 var r = t(200651);
 t(192379);
@@ -16,23 +16,23 @@ var o = t(442837),
   p = t(91433),
   b = t(944043),
   y = t(502762),
-  m = t(530),
+  I = t(530),
   g = t(740628),
-  I = t(643518),
+  m = t(643518),
   j = t(228168),
   v = t(981631),
   h = t(405666);
 
-function _(e) {
+function x(e) {
   var n;
   let {
     user: t,
-    currentUser: _,
-    guildId: x,
-    channelId: O,
+    currentUser: x,
+    guildId: O,
+    channelId: _,
     displayProfile: Z,
-    initialSection: P,
-    initialSubsection: N,
+    initialSection: N,
+    initialSubsection: P,
     friendToken: E,
     onClose: S
   } = e, {
@@ -43,15 +43,15 @@ function _(e) {
     originApplicationId: s.Z.getOriginApplicationId(t.id)
   })), A = (0, l.vh)(t.id), w = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === _.id, R = (0, a.I5)(_), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), B = (0, I.Z)({
+  }), L = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, _, t), U = (0, m.Z)({
     user: t,
-    currentUser: _,
-    guildId: x,
-    initialSubsection: N
+    currentUser: x,
+    guildId: O,
+    initialSubsection: P
   });
   return (0, r.jsxs)("div", {
     className: h.body,
-    children: [(0, r.jsx)(m.Z, {
+    children: [(0, r.jsx)(I.Z, {
       user: t,
       profileType: j.y0.FULL_SIZE,
       nickname: M,
@@ -71,7 +71,7 @@ function _(e) {
         user: t,
         applicationId: w ? C : void 0,
         guildId: null != (n = null == Z ? void 0 : Z.guildId) ? n : void 0,
-        channelId: O,
+        channelId: _,
         friendToken: E,
         className: h.friendRequestBanner
       })
@@ -79,7 +79,7 @@ function _(e) {
       className: h.friendRequestBannerOverlay,
       children: (0, r.jsx)(p.Z, {
         user: t,
-        channelId: O,
+        channelId: _,
         isGameRelationship: !0,
         applicationId: e.applicationId,
         className: h.friendRequestBanner
@@ -94,12 +94,12 @@ function _(e) {
       className: h.overlay,
       children: (0, r.jsx)(g.Z, {
         user: t,
-        currentUser: _,
+        currentUser: x,
         displayProfile: Z,
-        guildId: x,
-        items: B,
-        initialSection: P,
-        initialSubsection: N,
+        guildId: O,
+        items: U,
+        initialSection: N,
+        initialSubsection: P,
         onClose: S
       })
     })]

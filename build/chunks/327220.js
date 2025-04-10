@@ -1,27 +1,27 @@
-/** Chunk was on 95287 **/
-r.d(t, {
-  Z: () => l
-}), r(388685);
-var n = r(192379),
-  a = r(442837),
-  o = r(592125),
-  i = r(9156);
+/** Chunk was on 93594 **/
+n.d(t, {
+  Z: () => o
+}), n(388685);
+var r = n(192379),
+  l = n(442837),
+  i = n(592125),
+  u = n(9156);
 
-function l(e) {
-  let t = (0, a.e7)([o.Z], () => o.Z.getPrivateChannelsVersion()),
-    r = (0, a.e7)([o.Z], () => o.Z.getMutableDMsByUserIds(), [t]),
-    l = (0, a.e7)([i.ZP], () => i.ZP.getMutedChannels(null)),
-    s = n.useMemo(() => {
+function o(e) {
+  let t = (0, l.e7)([i.Z], () => i.Z.getPrivateChannelsVersion()),
+    n = (0, l.e7)([i.Z], () => i.Z.getMutableDMsByUserIds(), [t]),
+    o = (0, l.e7)([u.ZP], () => u.ZP.getMutedChannels(null)),
+    c = r.useMemo(() => {
       let e = new Set;
-      for (let t in r) {
-        let n = r[t];
-        null != n && l.has(n) && e.add(t)
+      for (let t in n) {
+        let r = n[t];
+        null != r && o.has(r) && e.add(t)
       }
       return e
-    }, [r, l]);
-  return n.useMemo(() => null == e ? void 0 : e.filter(e => {
+    }, [n, o]);
+  return r.useMemo(() => null == e ? void 0 : e.filter(e => {
     for (let t of e.participants)
-      if (s.has(t)) return !1;
+      if (c.has(t)) return !1;
     return !0
-  }), [e, s])
+  }), [e, c])
 }

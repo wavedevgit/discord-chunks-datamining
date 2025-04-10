@@ -77,7 +77,7 @@ function C(e) {
   return !!S.has(t) && !r && A(t)
 }
 
-function R(e) {
+function P(e) {
   let {
     channelId: t
   } = e;
@@ -87,7 +87,7 @@ function R(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && A(t)
 }
 
-function P(e) {
+function R(e) {
   let {
     channelId: t
   } = e;
@@ -145,10 +145,10 @@ g(M, "displayName", "IncomingCallStore");
 let k = new M(s.Z, {
   CALL_CREATE: C,
   CALL_UPDATE: C,
-  CALL_DELETE: R,
+  CALL_DELETE: P,
   GUILD_RING_START: C,
-  GUILD_RING_STOP: R,
-  VOICE_CHANNEL_SELECT: P,
+  GUILD_RING_STOP: P,
+  VOICE_CHANNEL_SELECT: R,
   INCOMING_CALL_MOVE: w,
   CHANNEL_DELETE: D
 })

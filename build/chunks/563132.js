@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(896246),
   A = n(320317),
   C = n(994427),
-  R = n(814076),
-  P = n(712297),
+  P = n(814076),
+  R = n(712297),
   w = n(585686),
   D = n(771206),
   L = n(362755),
@@ -113,7 +113,7 @@ function Z(e) {
     skuIDs: Z,
     paymentSourceId: en,
     isGift: H
-  }), ed = (0, R.Z)(), [ef, e_] = i.useState(!1), {
+  }), ed = (0, P.Z)(), [ef, e_] = i.useState(!1), {
     step: ep,
     setStep: eh,
     steps: em,
@@ -140,8 +140,8 @@ function Z(e) {
   }), {
     selectedSkuId: eA,
     selectedPlan: eC,
-    selectedPlanNotification: eR,
-    setSelectedSkuId: eP,
+    selectedPlanNotification: eP,
+    setSelectedSkuId: eR,
     setSelectedPlanId: ew,
     setSelectedPlanNotification: eD
   } = (0, O.Z)(), [eL, ex] = (0, s.Wu)([h.Z], () => [h.Z.purchaseTokenAuthState, h.Z.purchaseTokenHash]), [eM, ek, ej, eU] = (0, s.Wu)([L.Z], () => [L.Z.browserCheckoutState, L.Z.loadId, L.Z.skuId, L.Z.planId]), [eG, eB] = i.useState(null), [eV, eF] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(void 0), [eX, eJ] = i.useState([]), e$ = i.useMemo(() => null == eC || (0, y.PV)(eC.id), [eC]), e0 = i.useRef(null != U ? U.planId : null);
@@ -153,7 +153,7 @@ function Z(e) {
     hasFetchedSkus: e2,
     skuPricePreviewsById: e3,
     previewErrorsById: e4
-  } = (0, P.Z)({
+  } = (0, R.Z)({
     applicationId: null != z ? z : M.CL,
     skuIDs: Z,
     currentPaymentSourceId: en,
@@ -235,9 +235,9 @@ function Z(e) {
       selectedSku: ta,
       selectedStoreListing: to,
       selectedPlan: eC,
-      setSelectedSkuId: eP,
+      setSelectedSkuId: eR,
       setSelectedPlanId: ew,
-      selectedPlanNotification: eR,
+      selectedPlanNotification: eP,
       setSelectedPlanNotification: eD,
       readySlideId: eq,
       setReadySlideId: eQ,

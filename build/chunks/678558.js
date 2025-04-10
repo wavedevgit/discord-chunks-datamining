@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -66,7 +66,7 @@ function A(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = R(e, t);
+  var n, r, i = P(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,22 +74,22 @@ function C(e, t) {
   return i
 }
 
-function R(e, t) {
+function P(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = e => {
+let R = e => {
   let {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: o,
     buttonText: S,
     targetBoostedGuildTier: N,
-    onClose: R = () => {},
-    closeLayer: P = () => {},
+    onClose: P = () => {},
+    closeLayer: R = () => {},
     pauseAnimation: w = !1,
     applicationId: D,
     handleSubscribeModalClose: L,
@@ -114,8 +114,8 @@ let P = e => {
         analyticsSourceLocation: n,
         guild: o,
         numberOfBoostsToAdd: Y,
-        onClose: R,
-        closeLayer: P,
+        onClose: P,
+        closeLayer: R,
         inPopout: G,
         applicationId: D,
         handleSubscribeModalClose: L,

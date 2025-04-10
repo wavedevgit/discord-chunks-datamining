@@ -1,6 +1,6 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
-  Z: () => T
+  Z: () => O
 });
 var r = n(200651);
 n(192379);
@@ -15,14 +15,14 @@ var i = n(120356),
   d = n(388032),
   _ = n(957991);
 
-function N(e) {
+function I(e) {
   let t = s.Z.getVoiceChannelId();
   if (null == t) return;
   let n = a.Z.getChannel(t);
   null != n && (0, c.RK)(n, e)
 }
 
-function I(e) {
+function N(e) {
   var t, n;
   let {
     channelId: i
@@ -48,20 +48,20 @@ function I(e) {
   }) : null
 }
 
-function T() {
+function O() {
   let e = (0, u.Z)();
   return null == e ? null : (0, r.jsxs)(o.qXd, {
     className: _.container,
     color: o.DM8.DEFAULT,
     children: [(0, r.jsx)("div", {
       children: d.NW.string(d.t.Ul1RJS)
-    }), (0, r.jsx)(I, {
+    }), (0, r.jsx)(N, {
       channelId: e.id
     }), (0, r.jsx)(o.zxk, {
       className: _.acceptButton,
       size: o.zxk.Sizes.MIN,
       color: o.zxk.Colors.WHITE,
-      onClick: () => N(!1),
+      onClick: () => I(!1),
       children: (0, r.jsx)(o.Text, {
         className: _.acceptText,
         variant: "text-xs/normal",
@@ -73,7 +73,7 @@ function T() {
       look: o.zxk.Looks.OUTLINED,
       size: o.zxk.Sizes.MIN,
       color: o.zxk.Colors.WHITE,
-      onClick: () => N(!0),
+      onClick: () => I(!0),
       children: (0, r.jsx)(o.Text, {
         className: _.declineText,
         variant: "text-xs/normal",

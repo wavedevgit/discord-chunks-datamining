@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => I,
   h: () => P
@@ -34,8 +34,8 @@ function I(e) {
   let {
     setTab: w,
     onJump: Z,
-    showTutorial: k,
-    setSeenTutorial: R,
+    showTutorial: R,
+    setSeenTutorial: k,
     closePopout: D,
     badgeState: L
   } = e, M = i.useRef(null), [W, U] = (0, N.ZP)(M), {
@@ -171,8 +171,8 @@ function I(e) {
           }, a), n = n = {
             onScroll: F === N.jd.Done ? void 0 : G,
             className: S.scroller,
-            children: [k ? (0, r.jsx)(T, {
-              setSeenTutorial: R
+            children: [R ? (0, r.jsx)(T, {
+              setSeenTutorial: k
             }) : null, (0, O.Z)(B, U, Z), F === N.jd.Done ? null : (0, r.jsx)(p.$jN, {
               className: S.spinner
             })]

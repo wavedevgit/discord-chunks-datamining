@@ -11,9 +11,9 @@ var l = r(512722),
   c = r(592125),
   s = r(970184),
   u = r(151200),
-  p = r(96513);
+  d = r(96513);
 
-function d(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -52,7 +52,7 @@ function b(e) {
   } = e, {
     parsedEntry: l
   } = (0, a.B)();
-  return (0, n.jsx)(u.Z, f(d({}, l), {
+  return (0, n.jsx)(u.Z, f(p({}, l), {
     entry: t,
     channel: r
   }))
@@ -65,11 +65,11 @@ function O(e) {
     channelId: r
   } = t, l = (0, o.e7)([c.Z], () => c.Z.getChannel(r));
   return i()(null != l, "channel must be defined"), (0, n.jsx)(a.r, {
-    location: p._.EMBED,
+    location: d._.EMBED,
     entry: e.contentInventoryEntry,
     channel: l,
     errorFallback: null,
-    children: (0, n.jsx)(b, f(d({}, e), {
+    children: (0, n.jsx)(b, f(p({}, e), {
       channel: l
     }))
   })

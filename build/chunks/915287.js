@@ -166,8 +166,8 @@ function O(e, t, n, o) {
       sections: N,
       sectionHeight: A,
       rowHeight: C,
-      footerHeight: R = 0,
-      sidebarHeight: P,
+      footerHeight: P = 0,
+      sidebarHeight: R,
       listHeaderHeight: w = 0,
       renderSection: D,
       renderRow: L,
@@ -218,8 +218,8 @@ function O(e, t, n, o) {
       sections: N,
       sectionHeight: A,
       rowHeight: C,
-      footerHeight: R,
-      sidebarHeight: P,
+      footerHeight: P,
+      sidebarHeight: R,
       listHeaderHeight: w,
       paddingTop: B,
       paddingBottom: V,
@@ -315,9 +315,9 @@ function O(e, t, n, o) {
       }), [J, Y, K, z, q, Q, el, X, ec, k, j, D, L, x, U, es]), i.useMemo(() => v({
         isSidebarVisible: eu,
         renderSidebar: M,
-        sidebarHeight: P,
+        sidebarHeight: R,
         isListVisible: 0 !== ec.length
-      }), [eu, M, P, ec.length])]
+      }), [eu, M, R, ec.length])]
     }))
   })
 }

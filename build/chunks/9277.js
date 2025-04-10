@@ -67,16 +67,16 @@ function S(e, t) {
   } = e, [y, O] = i.useState(!1), S = (0, l.e7)([_.Z], () => {
     var e, t;
     return y && Object.values(null != (t = null == (e = _.Z.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : e.gifs) ? t : {}).length <= 2
-  }), [T, N, A] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), R = i.useCallback(() => {
+  }), [T, N, A] = (0, f.Iu)(e => [e.activeView, e.activeViewType, e.pickerId], s.X), C = i.useRef(0), P = i.useCallback(() => {
     O(!0), clearTimeout(C.current), C.current = setTimeout(() => {
       O(!1), C.current = 0
     }, 2e3)
   }, []);
   (0, p.yp)({
     event: m.CkL.FAVORITE_GIF,
-    handler: R
+    handler: P
   });
-  let P = i.useCallback(() => {
+  let R = i.useCallback(() => {
       (0, f.RO)(g.X1.GIF, o)
     }, [o]),
     {
@@ -99,7 +99,7 @@ function S(e, t) {
         onMouseEnter: D.onMouseEnter,
         onMouseLeave: D.onMouseLeave,
         onClick: () => {
-          P(), L()
+          R(), L()
         },
         isActive: M,
         pulse: y,

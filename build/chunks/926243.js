@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => R
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -80,7 +80,7 @@ function A(e, t) {
   return i
 }
 let C = (e, t) => "".concat(e, ":").concat(t),
-  R = i.forwardRef(function(e, t) {
+  P = i.forwardRef(function(e, t) {
     var {
       emoji: n,
       isFavorite: i,
@@ -96,20 +96,20 @@ let C = (e, t) => "".concat(e, ":").concat(t),
       allowAnimatedEmoji: S,
       selectedItemClassName: A,
       inNitroLockedSection: C
-    } = e, R = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
-    let P = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
+    } = e, P = N(e, ["emoji", "isFavorite", "isLargeSize", "isMediumSize", "isInspected", "isDisabled", "showPulse", "columnIndex", "rowIndex", "size", "surrogateCodePoint", "allowAnimatedEmoji", "selectedItemClassName", "inNitroLockedSection"]);
+    let R = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : void 0, [n]),
       w = () => {
         let e = n.allNamesString;
-        return ((null == P ? void 0 : P.name) != null && (e = y.NW.formatToPlainString(y.t["nXv4/P"], {
+        return ((null == R ? void 0 : R.name) != null && (e = y.NW.formatToPlainString(y.t["nXv4/P"], {
           names: e,
-          guildName: P.name
+          guildName: R.name
         })), i) ? y.NW.formatToPlainString(y.t["9FI9Z2"], {
           names: e
         }) : e
       },
       D = d && !C;
     return (0, r.jsx)(l.tEY, {
-      children: (0, r.jsx)("button", T(I({}, R), {
+      children: (0, r.jsx)("button", T(I({}, P), {
         className: a()(v.emojiItem, {
           [v.emojiItemLarge]: o,
           [v.emojiItemMedium]: c,
@@ -137,7 +137,7 @@ let C = (e, t) => "".concat(e, ":").concat(t),
     })
   });
 
-function P(e) {
+function R(e) {
   let {
     descriptor: t,
     emojiItemKey: o,
@@ -150,7 +150,7 @@ function P(e) {
     isUsingKeyboardNavigation: O,
     showEmojiFavoriteTooltip: S,
     surrogateCodePoint: A,
-    selectedItemClassName: P,
+    selectedItemClassName: R,
     getEmojiItemProps: w,
     isMediumSize: D,
     isLargeSize: L,
@@ -195,7 +195,7 @@ function P(e) {
     return (0, i.createElement)("li", T(I({}, d), {
       key: o,
       ref: W
-    }), V !== C(q, f) && (0, r.jsx)(R, {
+    }), V !== C(q, f) && (0, r.jsx)(P, {
       ref: l,
       emoji: Y,
       isFavorite: H.isFavoriteEmojiWithoutFetchingLatest(Y),
@@ -223,7 +223,7 @@ function P(e) {
       rowIndex: f,
       size: K,
       surrogateCodePoint: A,
-      selectedItemClassName: P,
+      selectedItemClassName: R,
       inNitroLockedSection: B
     }))
   };

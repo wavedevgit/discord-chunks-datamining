@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -75,7 +75,7 @@ function M(e) {
   } = e, {
     ref: L,
     width: D
-  } = (0, h.Z)(), [W, U] = i.useState(3), [B, H] = i.useState(!n), [G, F] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
+  } = (0, h.Z)(), [W, U] = i.useState(3), [B, G] = i.useState(!n), [F, H] = (0, f.Z)(!1, 2e3), V = (0, s.e7)([E.Z], () => E.Z.getChannel(t), [t]), {
     firstMessage: z
   } = (0, P.cl)(V), Y = (0, s.e7)([j.Z], () => j.Z.hasJoined(t)), {
     disableReactionUpdates: q,
@@ -88,7 +88,7 @@ function M(e) {
     if (null != t && n) {
       let e = t.intersectionRect,
         n = t.boundingClientRect;
-      H((e.bottom - e.top) / (n.bottom - n.top) < 1)
+      G((e.bottom - e.top) / (n.bottom - n.top) < 1)
     }
   }, [n]);
   i.useLayoutEffect(() => {
@@ -115,7 +115,7 @@ function M(e) {
         location: {
           section: Z.jXE.CHANNEL_HEADER
         }
-      }), (0, a.J)((0, N.EO)(V, $)), F(!0)
+      }), (0, a.J)((0, N.EO)(V, $)), H(!0)
     },
     es = () => {
       d.Z.jumpToMessage({
@@ -203,7 +203,7 @@ function M(e) {
             onClick: ea,
             className: A.button,
             innerClassName: A.buttonInner,
-            children: [G ? (0, r.jsx)(u.dz2, {
+            children: [F ? (0, r.jsx)(u.dz2, {
               size: "custom",
               color: "currentColor",
               width: 16,
@@ -213,7 +213,7 @@ function M(e) {
               color: "currentColor",
               width: 16,
               height: 16
-            }), G ? T.NW.string(T.t["t5VZ8/"]) : null]
+            }), F ? T.NW.string(T.t["t5VZ8/"]) : null]
           }))
         }), !n && (0, r.jsx)(u.ua7, {
           text: T.NW.string(T.t.nFP4oa),

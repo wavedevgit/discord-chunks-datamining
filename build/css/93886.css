@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 4550e11b2bd128eb
+  Original File Name: 153d7f5eb03d4ff1
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -2343,26 +2343,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     left: calc(50% - 24px)
 }
 
-.container_a804d4 {
-    position: relative
-}
-
-.frame_a804d4 {
-    position: absolute;
-    z-index: 2;
-    margin-top: -4px;
-    margin-left: -4px
-}
-
-.rankBadge_a804d4 {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -8px;
-    z-index: 3;
-    text-align: center
-}
-
 .container_de50c1 {
     position: relative
 }
@@ -3626,93 +3606,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .loader__06f11 {
     position: absolute
-}
-
-.container_b2d72f {
-    align-items: center;
-    display: flex;
-    position: relative
-}
-
-.iconContainer_b2d72f {
-    flex: 0 0 auto;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    margin-right: 4px
-}
-
-.icon_b2d72f {
-    position: relative;
-    color: var(--primary-300);
-    width: 100%
-}
-
-.foreground_b2d72f,.icon_b2d72f {
-    opacity: .6
-}
-
-.avatar_b2d72f {
-    margin-right: -4px
-}
-
-.avatarSize_b2d72f {
-    width: 20px!important;
-    height: 20px!important
-}
-
-.emptyUser_b2d72f {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: var(--primary-500)
-}
-
-.avatarMasked_b2d72f {
-    -webkit-mask-image: url(/assets/1f9b76e0279b91a4.svg);
-    mask-image: url(/assets/1f9b76e0279b91a4.svg);
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat
-}
-
-.moreUsers_b2d72f {
-    position: relative;
-    background-color: var(--primary-500);
-    font-size: 12px;
-    font-weight: 700;
-    color: var(--primary-300);
-    height: 20px;
-    line-height: 20px;
-    border-radius: 10px;
-    padding: 0 8px 0 6px
-}
-
-.noUserDrag_c8743f {
-    -webkit-user-drag: none
-}
-
-.userSelectText_c8743f {
-    -webkit-user-select: text;
-    -moz-user-select: text;
-    user-select: text
-}
-
-.userSelectNone_c8743f {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none
-}
-
-.cursorDefault_c8743f {
-    cursor: default
-}
-
-.cursorPointer_c8743f {
-    cursor: pointer
 }
 
 .premiumIcon__9671b {
@@ -5140,4 +5033,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=4550e11b2bd128eb.css.map*/
+/*# sourceMappingURL=153d7f5eb03d4ff1.css.map*/

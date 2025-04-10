@@ -153,11 +153,11 @@ function C(e) {
   return i = e.sessionId, y = null, v = null, A(), !1
 }
 
-function R() {
+function P() {
   i = null, y = null, v = null, A()
 }
 
-function P(e) {
+function R(e) {
   let {
     voiceStates: t
   } = e;
@@ -374,7 +374,7 @@ class Y extends(o = a.ZP.Store) {
 g(Y, "displayName", "RTCConnectionStore");
 let K = new Y(s.Z, __OVERLAY__ ? {} : {
   CONNECTION_OPEN: C,
-  CONNECTION_CLOSED: R,
+  CONNECTION_CLOSED: P,
   RTC_CONNECTION_STATE: G,
   RTC_CONNECTION_PING: B,
   RTC_CONNECTION_LOSS_RATE: B,
@@ -383,7 +383,7 @@ let K = new Y(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_CLIENT_CONNECT: B,
   RTC_CONNECTION_CLIENT_DISCONNECT: B,
   VIDEO_SIZE_UPDATE: Z,
-  VOICE_STATE_UPDATES: P,
+  VOICE_STATE_UPDATES: R,
   VOICE_CHANNEL_SELECT: j,
   VOICE_SERVER_UPDATE: w,
   CLEAR_REMOTE_DISCONNECT_VOICE_CHANNEL_ID: D,

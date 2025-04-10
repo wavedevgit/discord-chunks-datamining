@@ -121,14 +121,14 @@ function Z() {
       location: "DevToolsContentInventory",
       source: g.m1.DevTools
     }),
-    B = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
+    z = Object.entries(null != (t = m.K.get("GameProfileModal")) ? t : {}).filter(e => {
       let [t, n] = e;
       return n
     }).map(e => {
       let [t] = e;
       return t
     }),
-    z = (0, b.Z)(B).filter(y.lm),
+    B = (0, b.Z)(z).filter(y.lm),
     M = (0, u.e7)([C.Z], () => C.Z.getFakeGameToShow());
   return (0, r.jsx)("div", {
     className: w.panel,
@@ -210,7 +210,7 @@ function Z() {
             border: "1px solid green"
           } : {}
         }), (0, r.jsx)("ul", {
-          children: z.map(e => (0, r.jsx)("li", {
+          children: B.map(e => (0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
               application: e
             })

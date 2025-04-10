@@ -1,15 +1,16 @@
-/** Chunk was on 95287 **/
-r.d(t, {
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
   Z: () => o
 });
-var n = r(442837),
-  a = r(994752);
+var r = n(442837),
+  i = n(994752);
 
 function o(e) {
   let {
     guildId: t,
-    leaderboardId: r,
+    leaderboardId: n,
     intervalOffset: o = 0
   } = e;
-  return (0, n.e7)([a.Z], () => a.Z.get(t, r, o))
+  return (0, r.e7)([i.Z], () => i.Z.get(t, n, o))
 }

@@ -81,8 +81,8 @@ function A(e) {
     setPopoutRef: E,
     modalKey: A,
     onAction: C,
-    onClose: R,
-    entry: P
+    onClose: P,
+    entry: R
   } = e, {
     resetInteraction: w,
     setInteractionToast: D
@@ -117,7 +117,7 @@ function A(e) {
         location: "UserProfileReplyPopout",
         openChannel: !1,
         whenReady: !1,
-        entry: P
+        entry: R
       })
     } catch (e) {}
     D(y.P.REPLY)
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await V(n), w(), null == R || R(), {
+            return await V(n), w(), null == P || P(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

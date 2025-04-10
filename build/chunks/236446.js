@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(409059),
   h = n(659900),
   g = n(962220),
-  f = n(473855),
-  m = n(306453),
+  m = n(473855),
+  f = n(306453),
   _ = n(929809),
   b = n(108427),
   x = n(390885),
@@ -95,7 +95,7 @@ class L extends i.PureComponent {
     } = this.props;
     return (s()(null != e, "guild template must not be null"), e.state === C.Rj.RESOLVING) ? (0, r.jsx)(u.ZP, {
       className: Z.authBox,
-      children: (0, r.jsx)(m.Z, {
+      children: (0, r.jsx)(f.Z, {
         guildTemplate: e
       })
     }) : (0, r.jsx)(k, {
@@ -196,7 +196,7 @@ function k(e) {
   });
   return (0, r.jsx)(j.Z, {
     className: Z.authBox,
-    children: () => [(0, r.jsx)(f.Z, {
+    children: () => [(0, r.jsx)(m.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: Z.formContainer,

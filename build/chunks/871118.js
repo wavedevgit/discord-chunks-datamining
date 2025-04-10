@@ -1,71 +1,72 @@
-/** Chunk was on 95287 **/
-r.d(t, {
-  Z: () => b
+/** Chunk was on web.js **/
+"use strict";
+n.d(t, {
+  Z: () => m
 });
-var n = r(200651),
-  a = r(192379),
-  o = r(120356),
-  i = r.n(o),
-  l = r(442837),
-  s = r(481060),
-  c = r(592125),
-  u = r(496675),
-  d = r(449605),
-  p = r(981631),
-  f = r(388032),
-  m = r(269363);
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  s = n(442837),
+  l = n(481060),
+  c = n(592125),
+  u = n(496675),
+  d = n(449605),
+  f = n(981631),
+  _ = n(388032),
+  p = n(269363);
 
-function g(e) {
+function h(e) {
   let {
     isLoading: t,
-    noText: r,
-    noImage: a,
+    noText: n,
+    noImage: i,
     previewText: o,
-    className: l
+    className: s
   } = e;
-  return (0, n.jsx)("div", {
-    className: i()(m.emptyPreviewContainer, l),
-    children: t ? (0, n.jsx)(s.$jN, {}) : (0, n.jsxs)(n.Fragment, {
-      children: [(0, n.jsx)("div", {
-        className: i()(m.emptyPreviewImage, {
-          [m.noImage]: a
+  return (0, r.jsx)("div", {
+    className: a()(p.emptyPreviewContainer, s),
+    children: t ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)("div", {
+        className: a()(p.emptyPreviewImage, {
+          [p.noImage]: i
         })
-      }), r ? null : (0, n.jsx)(s.Text, {
+      }), n ? null : (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "none",
-        className: m.emptyPreviewText,
-        children: null != o ? o : f.NW.string(f.t.uQZTBQ)
+        className: p.emptyPreviewText,
+        children: null != o ? o : _.NW.string(_.t.uQZTBQ)
       })]
     })
   })
 }
 
-function b(e) {
+function m(e) {
   let {
     stream: t,
-    className: r,
+    className: n,
     noText: o = !1,
-    noImage: i = !1
-  } = e, s = (0, l.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), b = (0, l.e7)([u.Z], () => null != s && u.Z.canBasicChannel(p.S7T.CONNECT, s)), {
-    previewUrl: _,
-    isLoading: O
-  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), h = a.useRef(O ? null : _);
-  a.useEffect(() => {
-    O || (h.current = _)
-  }, [_, O]);
-  let y = null == _ || O ? h.current : _;
-  return null == y ? (0, n.jsx)(g, {
-    className: r,
-    isLoading: O,
+    noImage: a = !1
+  } = e, l = (0, s.e7)([c.Z], () => c.Z.getBasicChannel(t.channelId)), m = (0, s.e7)([u.Z], () => null != l && u.Z.canBasicChannel(f.S7T.CONNECT, l)), {
+    previewUrl: g,
+    isLoading: E
+  } = (0, d.Z)(t.guildId, t.channelId, t.ownerId), b = i.useRef(E ? null : g);
+  i.useEffect(() => {
+    E || (b.current = g)
+  }, [g, E]);
+  let y = null == g || E ? b.current : g;
+  return null == y ? (0, r.jsx)(h, {
+    className: n,
+    isLoading: E,
     noText: o,
-    noImage: i,
-    previewText: b ? void 0 : f.NW.string(f.t.pgUTZG)
-  }) : (0, n.jsx)("div", {
-    className: r,
-    children: (0, n.jsx)("img", {
+    noImage: a,
+    previewText: m ? void 0 : _.NW.string(_.t.pgUTZG)
+  }) : (0, r.jsx)("div", {
+    className: n,
+    children: (0, r.jsx)("img", {
       src: y,
       alt: "",
-      className: m.image
+      className: p.image
     })
   })
 }

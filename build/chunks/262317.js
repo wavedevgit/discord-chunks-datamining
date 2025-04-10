@@ -1,4 +1,4 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
   XX: () => k,
   ZP: () => L,
@@ -118,9 +118,9 @@ let L = (0, p.$)(function(e) {
     deaf: W,
     video: U,
     embeddedApplication: B,
-    serverMute: H,
-    serverDeaf: G,
-    nick: F,
+    serverMute: G,
+    serverDeaf: F,
+    nick: H,
     ringing: V,
     speaking: z,
     disconnected: Y,
@@ -193,11 +193,11 @@ let L = (0, p.$)(function(e) {
         priority: $,
         ringing: V,
         deaf: W,
-        nick: F,
+        nick: H,
         collapsed: l,
         overlap: l,
-        serverMute: H,
-        serverDeaf: G,
+        serverMute: G,
+        serverDeaf: F,
         tabIndex: ea,
         otherClientSessionType: ei,
         voicePlatform: el,

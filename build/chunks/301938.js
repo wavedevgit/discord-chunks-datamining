@@ -14,8 +14,8 @@ var r = n(200651),
   p = n(573261),
   h = n(720196),
   g = n(981631),
-  f = n(388032),
-  m = n(578605),
+  m = n(388032),
+  f = n(578605),
   _ = n(20493);
 
 function b(e) {
@@ -35,7 +35,7 @@ function b(e) {
       src: null == j ? n(26230) : n(935227),
       className: a()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: f.NW.string(f.t["IfBQ5+"])
+      children: m.NW.string(m.t["IfBQ5+"])
     }), null != j && "" !== j ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
@@ -45,7 +45,7 @@ function b(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: f.NW.string(f.t["8dM4FB"]),
+        label: m.NW.string(m.t["8dM4FB"]),
         setRef: y,
         className: _.marginBottom20,
         value: O,
@@ -53,13 +53,13 @@ function b(e) {
         error: E,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: f.NW.string(f.t["yY/PXV"])
+        placeholder: m.NW.string(m.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
           if (!N) {
             if (0 === O.length) {
-              I(f.NW.string(f.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
+              I(m.NW.string(m.t.R98xDw)), d.S.dispatch(g.CkL.WAVE_EMPHASIZE);
               return
             }
             return null != j && S(null), null != E && I(null), t(""), v(!0), p.Z.post({
@@ -80,7 +80,7 @@ function b(e) {
               } = e;
               C(""), t(n), o(h.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) S(f.NW.formatToPlainString(f.t.aTVNen, {
+              if (e instanceof Error) S(m.NW.formatToPlainString(m.t.aTVNen, {
                 statusPageURL: g.yXt.STATUS
               }));
               else {
@@ -88,13 +88,13 @@ function b(e) {
                 t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : S((function(e) {
                   switch (e) {
                     case g.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
-                      return f.NW.string(f.t["11zzGR"]);
+                      return m.NW.string(m.t["11zzGR"]);
                     case g.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return f.NW.string(f.t["6qmgaG"]);
+                      return m.NW.string(m.t["6qmgaG"]);
                     case g.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return f.NW.string(f.t.bChnKi);
+                      return m.NW.string(m.t.bChnKi);
                     default:
-                      return f.NW.format(f.t.aTVNen, {
+                      return m.NW.format(m.t.aTVNen, {
                         statusPageURL: g.yXt.STATUS
                       })
                   }
@@ -108,16 +108,16 @@ function b(e) {
         },
         submitting: N,
         disabled: N,
-        children: f.NW.string(f.t.ezv91d)
+        children: m.NW.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: f.buttonContainer,
       children: (0, r.jsx)(u.zx, {
         color: u.zx.Colors.PRIMARY,
         onClick: () => {
           C(""), o(h.n.START)
         },
-        children: f.NW.string(f.t.rzxnQ0)
+        children: m.NW.string(m.t.rzxnQ0)
       })
     })]
   })

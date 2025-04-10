@@ -1,10 +1,10 @@
-/** Chunk was on 92216 **/
+/** Chunk was on 12910 **/
 n.d(t, {
   Fo: () => L,
   KY: () => C,
   Uo: () => m,
-  fU: () => b,
-  qw: () => v,
+  fU: () => v,
+  qw: () => b,
   tn: () => M
 }), n(290780);
 var r = n(192379),
@@ -109,7 +109,7 @@ function M(e, t, n, r) {
   }), s
 }
 
-function b(e) {
+function v(e) {
   var t, n;
   let r = (0, i.e7)([O.Z], () => O.Z.getCategories(e)),
     l = r._categories.length,
@@ -119,7 +119,7 @@ function b(e) {
   return null == s ? 0 : 0 === s.length ? a.index + 2 - l : s[s.length - 1].index + 2 - l
 }
 
-function v(e) {
+function b(e) {
   var t;
   return U.NW.formatToPlainString(U.t["8N0BHR"], {
     timeAgo: o()(f.default.extractTimestamp(null != (t = g.ZP.lastMessageId(e)) ? t : e)).fromNow()

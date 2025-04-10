@@ -1,11 +1,11 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
-  IE: () => R,
-  K9: () => A,
-  NX: () => O,
+  IE: () => A,
+  K9: () => p,
+  NX: () => T,
   R_: () => S,
   e$: () => _,
-  ti: () => P,
+  ti: () => R,
   zV: () => d
 }), n(704826), n(35282), n(388685), n(314940);
 var r = n(913527),
@@ -32,19 +32,19 @@ function _(e) {
   let t = (0, s._I)(e.username).replace(u.RN, "").replace(u.iF, ".").toLowerCase();
   return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
-let N = ["@", "#", ":"],
-  I = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-  T = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+let I = ["@", "#", ":"],
+  N = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+  O = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
-function O(e) {
+function T(e) {
   var t;
   let n = e.username.toLowerCase();
   if ((t = u.kt, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
-  for (let e of N)
-    if (n.includes(e)) return !0;
-  for (let e of T)
-    if (n === e.toLowerCase()) return !0;
   for (let e of I)
+    if (n.includes(e)) return !0;
+  for (let e of O)
+    if (n === e.toLowerCase()) return !0;
+  for (let e of N)
     if (n.includes(e.toLowerCase())) return !0;
   return !1
 }
@@ -53,7 +53,7 @@ function S(e) {
   return e.toLowerCase().replace(/\s/g, "").replace("@", "")
 }
 
-function A(e) {
+function p(e) {
   let t = a.default.extractTimestamp(e);
   try {
     return i()(new Date(t)).format("MMM DD, YYYY")
@@ -61,7 +61,7 @@ function A(e) {
   return null
 }
 
-function P(e) {
+function R(e) {
   return (0, l.EQ)(e).with({
     rateLimited: !0
   }, () => ({
@@ -95,7 +95,7 @@ function P(e) {
   })).otherwise(() => void 0)
 }
 
-function R(e) {
+function A(e) {
   return new Date(2024, 2, 4).toLocaleDateString(e, {
     month: "long",
     day: "numeric",

@@ -37,7 +37,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function R(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -62,7 +62,7 @@ function P(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -389,7 +389,7 @@ function eN(e) {
     layout: n,
     appContext: r
   } = e;
-  G[t] = w(R({}, G[t]), {
+  G[t] = w(P({}, G[t]), {
     [r]: n
   })
 }
@@ -414,7 +414,7 @@ function eC(e) {
   return Q(r, [n])
 }
 
-function eR(e) {
+function eP(e) {
   let {
     channelId: t,
     userId: n
@@ -422,7 +422,7 @@ function eR(e) {
   return Q(n, [t])
 }
 
-function eP(e) {
+function eR(e) {
   let {
     channelId: t,
     userId: n
@@ -606,8 +606,8 @@ let ej = new ek(c.Z, {
   STREAM_UPDATE_SELF_HIDDEN: eE,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: ev,
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: eO,
-  RTC_CONNECTION_VIDEO: eR,
-  RTC_CONNECTION_PLATFORM: eP,
+  RTC_CONNECTION_VIDEO: eP,
+  RTC_CONNECTION_PLATFORM: eR,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: ew,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: eD,
   STREAM_CLOSE: eA,

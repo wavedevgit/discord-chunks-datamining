@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => E
 }), n(997841), n(388685);
@@ -34,12 +34,12 @@ function E(e) {
     } = e,
     Z = w === A.id,
     {
-      channel: k,
-      approximate_member_count: R,
+      channel: R,
+      approximate_member_count: k,
       approximate_presence_count: D
     } = P,
     L = P.state === x.r2o.ACCEPTING,
-    M = null != k ? (0, f.jD)(k) : null,
+    M = null != R ? (0, f.jD)(R) : null,
     W = null != T,
     U = null != M,
     F = null != M && M.isGuildVocal(),
@@ -112,8 +112,8 @@ function E(e) {
         isBannerVisible: !1
       })
     })]
-  })) : null != R && R >= 5 || null != D && D > 0 ? N = (0, r.jsx)(m.Z.Data, {
-    members: R,
+  })) : null != k && k >= 5 || null != D && D > 0 ? N = (0, r.jsx)(m.Z.Data, {
+    members: k,
     membersOnline: D
   }) : U && (N = (0, r.jsx)(m.Z.Channel, {
     channel: M,

@@ -152,10 +152,10 @@ let C = m(p({}, l().defaultRules.link), {
     let [r, o, a, s] = e, u = () => ({
       type: d.b.TEXT,
       content: r
-    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, R = b.trim();
-    if (0 === g.trim().length || 0 === R.length) return u();
-    let P = A(l().unescapeUrl(a)),
-      w = null == P,
+    }), f = E(a), _ = E(o), h = E(null != s ? s : ""), g = f.whitespaceSanitized, b = _.fullySanitized, C = h.fullySanitized, P = b.trim();
+    if (0 === g.trim().length || 0 === P.length) return u();
+    let R = A(l().unescapeUrl(a)),
+      w = null == R,
       D = (0, c.ZP)(o).length > 0 || (0, c.ZP)(s).length > 0;
     if (w || D) return u();
     let L = m(p({}, n), {
@@ -173,7 +173,7 @@ let C = m(p({}, l().defaultRules.link), {
       V = h.whitespaceSanitized,
       {
         target: F
-      } = P;
+      } = R;
     return {
       content: B,
       target: F,

@@ -1,4 +1,5 @@
-/** Chunk was on 95287 **/
+/** Chunk was on web.js **/
+"use strict";
 e.exports = {
   gameTitle: "gameTitle_d5d1e1",
   gameIcon: "gameIcon_d5d1e1",

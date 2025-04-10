@@ -1,4 +1,4 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
   Z: () => S
 }), n(388685);
@@ -13,11 +13,11 @@ var r = n(200651),
   E = n(430824),
   d = n(914010),
   _ = n(900849),
-  N = n(981631),
-  I = n(388032),
-  T = n(8940),
-  O = n(240211);
-let S = 12633 == n.j ? () => {
+  I = n(981631),
+  N = n(388032),
+  O = n(8940),
+  T = n(240211);
+let S = () => {
   let e = (0, a.e7)([d.Z], () => d.Z.getGuildId(), []),
     t = (0, a.e7)([E.Z], () => E.Z.getGuild(e), [e]),
     [n, l] = i.useState(!1);
@@ -26,42 +26,42 @@ let S = 12633 == n.j ? () => {
     l(!0);
     try {
       _.mT(t.id), await c.Z.joinGuild(t.id, {
-        source: N.vtS.NOTICE_BAR
+        source: I.vtS.NOTICE_BAR
       })
     } catch (e) {
       l(!1)
     }
   };
   return (0, r.jsxs)("div", {
-    className: o()(T.notice, O.notice),
+    className: o()(O.notice, T.notice),
     children: [(0, r.jsxs)(s.zxk, {
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
-      className: o()(T.button, T.back),
-      innerClassName: T.iconButton,
+      className: o()(O.button, O.back),
+      innerClassName: O.iconButton,
       onClick: () => {
         (0, u.s1)().goBack()
       },
       children: [(0, r.jsx)(s.whL, {
         size: "xs",
         color: "currentColor",
-        className: T.arrow
-      }), I.NW.string(I.t["13/7kZ"])]
+        className: O.arrow
+      }), N.NW.string(N.t["13/7kZ"])]
     }), (0, r.jsx)(s.Text, {
-      className: T.header,
+      className: O.header,
       variant: "text-sm/normal",
-      children: I.NW.string(I.t["N/y2WF"])
+      children: N.NW.string(N.t["N/y2WF"])
     }), (0, r.jsx)(s.zxk, {
-      className: T.button,
+      className: O.button,
       look: s.zxk.Looks.OUTLINED,
       color: s.zxk.Colors.WHITE,
       size: s.zxk.Sizes.NONE,
       submitting: n,
       onClick: S,
-      children: I.NW.format(I.t.uHN7n5, {
+      children: N.NW.format(N.t.uHN7n5, {
         guild: t.name
       })
     })]
   })
-} : null
+}

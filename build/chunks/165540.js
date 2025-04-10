@@ -1,6 +1,6 @@
-/** Chunk was on 89107 **/
+/** Chunk was on 9059 **/
 n.d(t, {
-  Z: () => H
+  Z: () => G
 });
 var r = n(200651),
   i = n(192379),
@@ -60,24 +60,24 @@ let U = i.forwardRef(function(e, t) {
   } = (0, u.B)(), {
     Component: U,
     play: B
-  } = (0, d.P)(), H = (0, P.Q3)("ChannelAppLauncherButton");
+  } = (0, d.P)(), G = (0, P.Q3)("ChannelAppLauncherButton");
   i.useImperativeHandle(O, () => ({
     animate: () => {
       T.onMouseEnter()
     }
   }), [T]);
-  let G = (0, g.a)(h.eR.TEXT_LAUNCHER),
-    F = i.useCallback(() => {
+  let F = (0, g.a)(h.eR.TEXT_LAUNCHER),
+    H = i.useCallback(() => {
       (0, _.yw)(R.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
         source: v._b.TEXT,
-        badge_type: G ? I.valueOf() : null
+        badge_type: F ? I.valueOf() : null
       }), E ? C.yT(v.ti.DISMISSED) : ((0, S.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
         dismissAction: M.L.TAKE_ACTION
       }), C.__(v._b.TEXT, j), m.ux()), A()
-    }, [E, j, A, G, I]);
+    }, [E, j, A, F, I]);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      I !== f.O.NONE && G && (W(), B(), (0, y.h)({
+      I !== f.O.NONE && F && (W(), B(), (0, y.h)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.APP_LAUNCHER_BADGE,
         properties: {
@@ -87,18 +87,18 @@ let U = i.forwardRef(function(e, t) {
       }))
     }, 1e3);
     return () => clearTimeout(e)
-  }, [W, B, I, G]);
+  }, [W, B, I, F]);
   let V = i.useMemo(() => {
     let e = (0, r.jsx)(Z, {
-      size: H ? "refresh_sm" : void 0,
+      size: G ? "refresh_sm" : void 0,
       color: "currentColor"
     });
-    if (!G) return e;
+    if (!F) return e;
     switch (I) {
       case f.O.WORDLE_LOGO_ANIMATION:
         return (0, r.jsx)("div", {
           children: (0, r.jsx)(U, {
-            size: H ? "refresh_sm" : void 0,
+            size: G ? "refresh_sm" : void 0,
             useLottieDefaultColors: !0
           })
         });
@@ -108,9 +108,9 @@ let U = i.forwardRef(function(e, t) {
       default:
         return e
     }
-  }, [Z, U, I, H, G]);
+  }, [Z, U, I, G, F]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [G && I === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
+    children: [F && I === f.O.GLOWING_ANIMATION && (0, r.jsx)("div", {
       className: D.appLauncherGlow,
       children: (0, r.jsx)(w, {
         size: "custom",
@@ -147,7 +147,7 @@ let U = i.forwardRef(function(e, t) {
         className: o()(D.button, {
           [D.buttonActive]: E
         }),
-        onClick: F,
+        onClick: H,
         "aria-label": L.NW.string(L.t.erHFxM),
         focusProps: {
           offset: {
@@ -169,7 +169,7 @@ let U = i.forwardRef(function(e, t) {
         return n
       })(Object(l)).forEach(function(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
-      }), n)), G && I === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
+      }), n)), F && I === f.O.SIMPLE_BADGE && (0, r.jsx)(b.r, {
         top: -1,
         right: -1,
         size: 7,
@@ -224,7 +224,7 @@ function B(e) {
     children: [d, n]
   })
 }
-let H = i.memo(function(e) {
+let G = i.memo(function(e) {
   let {
     channel: t,
     type: n,

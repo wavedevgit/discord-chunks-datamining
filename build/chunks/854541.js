@@ -83,9 +83,9 @@ function N(e, t) {
 }
 let A = i.lazy(() => Promise.all([n.e("26436"), n.e("28102")]).then(n.bind(n, 534828))),
   C = 7,
-  R = () => Promise.resolve();
+  P = () => Promise.resolve();
 
-function P(e) {
+function R(e) {
   return null == e ? null : "string" == typeof e ? (0, c.FX)(e) ? (0, c._i)(e) : null : e
 }
 
@@ -202,8 +202,8 @@ function x(e) {
     showEyeDropper: E,
     wrapperComponentType: v,
     className: I
-  } = e, T = (0, h.Z)(), N = P(t), R = null != N ? N : 0, w = (0, c.Rf)(R), D = (0, c.O)(R), [L, x] = i.useState({
-    current: R,
+  } = e, T = (0, h.Z)(), N = R(t), P = null != N ? N : 0, w = (0, c.Rf)(P), D = (0, c.O)(P), [L, x] = i.useState({
+    current: P,
     pending: {
       hex: w,
       hsl: D
@@ -336,8 +336,8 @@ function k(e) {
   }), b = o.slice(0, o.length / 2), v = o.slice(o.length / 2, o.length), I = (0, l.ZP)({
     id: "color-picker",
     isEnabled: !0,
-    scrollToStart: R,
-    scrollToEnd: R
+    scrollToStart: P,
+    scrollToEnd: P
   });
   return (0, r.jsx)(s.bG, {
     navigator: I,

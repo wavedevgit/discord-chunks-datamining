@@ -1,85 +1,85 @@
-/** Chunk was on 97161 **/
+/** Chunk was on 99391 **/
 n.d(t, {
-  Qo: () => g,
-  ZP: () => h
+  Qo: () => m,
+  ZP: () => g
 });
-var o, a = n(200651),
-  r = n(192379),
-  i = n(120356),
-  c = n.n(i),
-  l = n(442837),
-  s = n(481060),
-  _ = n(607070),
+var r, i = n(200651),
+  o = n(192379),
+  l = n(120356),
+  s = n.n(l),
+  a = n(442837),
+  c = n(481060),
+  u = n(607070),
   d = n(821982),
-  u = n(967538),
-  b = n(885302),
-  p = n(914677),
+  p = n(967538),
+  _ = n(885302),
+  h = n(914677),
   f = n(914242),
-  g = ((o = {})[o.NITRO_GEM = 0] = "NITRO_GEM", o[o.NITRO_LOGO = 1] = "NITRO_LOGO", o[o.AVATAR_DECO = 2] = "AVATAR_DECO", o);
-let m = e => {
+  m = ((r = {})[r.NITRO_GEM = 0] = "NITRO_GEM", r[r.NITRO_LOGO = 1] = "NITRO_LOGO", r[r.AVATAR_DECO = 2] = "AVATAR_DECO", r);
+let b = e => {
     let {
       avatarDecoAssetId: t,
       avatarDecoAssetDescription: n
-    } = e, o = r.useMemo(() => (0, d.Z)(t, s.EFr.SIZE_120, !1), [t]);
-    return (0, a.jsx)("div", {
+    } = e, r = o.useMemo(() => (0, d.Z)(t, c.EFr.SIZE_120, !1), [t]);
+    return (0, i.jsx)("div", {
       className: f.avatarDecoContainer,
-      children: (0, a.jsx)("div", {
+      children: (0, i.jsx)("div", {
         className: f.avatarDeco,
-        children: (0, a.jsx)("img", {
+        children: (0, i.jsx)("img", {
           className: f.avatarDecoImage,
           alt: n,
-          src: o
+          src: r
         })
       })
     })
   },
-  h = e => {
+  g = e => {
     let {
       showAnimations: t = !0,
       iconClassName: n,
-      staticPercentage: o,
-      innerCircleClassName: r,
-      progressCircleStrokeSize: i,
-      backgroundCircleSize: s,
+      staticPercentage: r,
+      innerCircleClassName: o,
+      progressCircleStrokeSize: l,
+      backgroundCircleSize: c,
       percentage: d,
-      initialPercentage: g,
-      progressCircleVariation: h = 0,
-      avatarDecoAssetId: S,
-      avatarDecoAssetDescription: x,
-      ellipseOpacity: C,
-      customAnimationClassName: v,
-      circleColor: I,
-      circleStroke: O
-    } = e, T = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), y = t && !T;
-    return (0, a.jsx)("div", {
-      className: c()(f.progressCircle, n),
-      children: (0, a.jsx)(p.Z, {
-        animationClassName: c()(f.activeProgressCircle, {
-          [f.activeProgressCircleAnimation]: y,
-          [null != v ? v : ""]: y
+      initialPercentage: m,
+      progressCircleVariation: g = 0,
+      avatarDecoAssetId: E,
+      avatarDecoAssetDescription: O,
+      ellipseOpacity: y,
+      customAnimationClassName: C,
+      circleColor: S,
+      circleStroke: N
+    } = e, v = (0, a.e7)([u.Z], () => u.Z.useReducedMotion), T = t && !v;
+    return (0, i.jsx)("div", {
+      className: s()(f.progressCircle, n),
+      children: (0, i.jsx)(h.Z, {
+        animationClassName: s()(f.activeProgressCircle, {
+          [f.activeProgressCircleAnimation]: T,
+          [null != C ? C : ""]: T
         }),
-        progressCircleStroke: O,
-        progressCircleStrokeSize: i,
-        percentage: null != o ? o : d,
-        initialPercentage: null != o ? o : g,
-        progressCircleVariation: h,
+        progressCircleStroke: N,
+        progressCircleStrokeSize: l,
+        percentage: null != r ? r : d,
+        initialPercentage: null != r ? r : m,
+        progressCircleVariation: g,
         children: (() => {
-          switch (h) {
+          switch (g) {
             case 0:
-              return (0, a.jsx)(u.Z, {
-                className: y ? f.nitroGemAnimation : void 0,
-                backgroundColor: c()(f.gemBackgroundFill, r),
-                backgroundCircleSize: s
+              return (0, i.jsx)(p.Z, {
+                className: T ? f.nitroGemAnimation : void 0,
+                backgroundColor: s()(f.gemBackgroundFill, o),
+                backgroundCircleSize: c
               });
             case 1:
-              return (0, a.jsx)(b.Z, {
-                circleColor: I,
-                ellipseOpacity: C
+              return (0, i.jsx)(_.Z, {
+                circleColor: S,
+                ellipseOpacity: y
               });
             case 2:
-              if (null != S) return (0, a.jsx)(m, {
-                avatarDecoAssetId: S,
-                avatarDecoAssetDescription: x
+              if (null != E) return (0, i.jsx)(b, {
+                avatarDecoAssetId: E,
+                avatarDecoAssetDescription: O
               });
               return null;
             default:

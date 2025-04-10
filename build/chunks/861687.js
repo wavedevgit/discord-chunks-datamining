@@ -29,8 +29,8 @@ var r = n(654861),
   N = n(868616),
   A = n(450109),
   C = n(159846),
-  R = n(307320),
-  P = n(615830),
+  P = n(307320),
+  R = n(615830),
   w = n(314897),
   D = n(592125),
   L = n(131951),
@@ -476,7 +476,7 @@ class ey extends d.Z {
       active: !1
     });
     let u = L.Z.getMediaEngine(),
-      d = P.Z.getPersistentCodesEnabled(),
+      d = R.Z.getPersistentCodesEnabled(),
       p = null != (s = w.default.getStaticAuthSessionId()) ? s : void 0,
       h = u.connect(this.context, this.userId, es({
         ssrc: i,
@@ -634,7 +634,7 @@ class ey extends d.Z {
         allowedPoorFpsRatio: n,
         fpsThreshold: r,
         backoffTimeSec: i
-      } = R.Z.getConfig(!0);
+      } = P.Z.getConfig(!0);
       if (e) {
         this._videoHealthManager = new $.y(t, n, r, i), null != this._localMediaSinkWantsManager && (this._localMediaSinkWantsManager.videoHealthManager = this._videoHealthManager);
         let e = (e, t, n) => {

@@ -10,13 +10,13 @@ var n, l = r(200651),
   c = r(481060),
   s = r(911969),
   u = r(739754),
-  p = r(970184),
-  d = r(280501),
+  d = r(970184),
+  p = r(280501),
   f = r(388032),
   b = r(749778),
   O = r(950386);
 
-function y(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var r = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(r);
@@ -35,7 +35,7 @@ function y(e) {
   return e
 }
 
-function m(e) {
+function y(e) {
   let {
     icon: t,
     iconSize: r
@@ -63,43 +63,43 @@ function g(e) {
     type: v,
     placeholder: P,
     maxValues: x,
-    disabled: w
-  } = n, [S, C] = i.useState(!1), [E, N] = i.useState(!1), [I, k] = i.useState(new Map(null == h ? void 0 : h.map(e => [e.value, e]))), [Z, T] = i.useState(new Set(I.keys())), [D, L] = i.useState(() => (null != h ? h : []).map(e => e.value)), [R, _] = i.useState(0);
+    disabled: S
+  } = n, [w, C] = i.useState(!1), [E, N] = i.useState(!1), [I, T] = i.useState(new Map(null == h ? void 0 : h.map(e => [e.value, e]))), [k, Z] = i.useState(new Set(I.keys())), [L, D] = i.useState(() => (null != h ? h : []).map(e => e.value)), [R, _] = i.useState(0);
   i.useEffect(() => {
     let e = (null != h ? h : []).map(e => e.value);
-    if (e.every(e => D.includes(e)) && D.every(t => e.includes(t))) return;
-    L(e);
+    if (e.every(e => L.includes(e)) && L.every(t => e.includes(t))) return;
+    D(e);
     let t = new Map(null == h ? void 0 : h.map(e => [e.value, e]));
-    k(t), T(new Set(t.keys())), _(e => e + 1)
-  }, [h, D]);
+    T(t), Z(new Set(t.keys())), _(e => e + 1)
+  }, [h, L]);
   let {
     state: A,
     executeStateUpdate: M,
     visualState: U,
     isDisabled: W,
-    error: F
-  } = (0, p.Ee)(n, {
+    error: H
+  } = (0, d.Ee)(n, {
     type: v,
     selectedOptions: Array.from(I.values())
-  }), H = U === d.gH.LOADING;
+  }), G = U === p.gH.LOADING;
   i.useEffect(() => {
     if ((null == A ? void 0 : A.type) === s.re.USER_SELECT || (null == A ? void 0 : A.type) === s.re.ROLE_SELECT || (null == A ? void 0 : A.type) === s.re.MENTIONABLE_SELECT || (null == A ? void 0 : A.type) === s.re.CHANNEL_SELECT) {
       let e = new Map(A.selectedOptions.map(e => [e.value, e]));
-      k(e), T(new Set(e.keys()))
+      T(e), Z(new Set(e.keys()))
     }
   }, [A]);
-  let G = i.useCallback(() => {
+  let F = i.useCallback(() => {
     M({
       type: v,
       selectedOptions: Array.from(I.values())
-    }) && T(new Set(I.keys()))
+    }) && Z(new Set(I.keys()))
   }, [M, v, I]);
   i.useEffect(() => {
-    !S && !E && (I.size === Z.size && Array.from(I.keys()).every(e => Z.has(e)) || G())
-  }, [S, E, Z, I, G]);
-  let z = 0 === I.size || S,
+    !w && !E && (I.size === k.size && Array.from(I.keys()).every(e => k.has(e)) || F())
+  }, [w, E, k, I, F]);
+  let z = 0 === I.size || w,
     B = {
-      isDisabled: w || W,
+      isDisabled: S || W,
       wrapperClassName: b.select,
       options: e => new Promise(t => {
         t(o(e))
@@ -114,7 +114,7 @@ function g(e) {
         let {
           inPill: r
         } = t, n = r ? 16 : 24, i = j(e, n);
-        return null != i ? (0, l.jsx)(m, {
+        return null != i ? (0, l.jsx)(y, {
           icon: i,
           iconSize: n
         }) : null
@@ -124,11 +124,11 @@ function g(e) {
   return (0, l.jsxs)(i.Fragment, {
     children: [(0, l.jsxs)("div", {
       className: b.container,
-      children: [x > 1 ? (0, l.jsx)(c.VcW, y({
+      children: [x > 1 ? (0, l.jsx)(c.VcW, m({
         className: b.badges,
         value: Array.from(I.values()),
         onChange: e => {
-          S || N(!0), k(new Map(e.map(e => [e.value, e])))
+          w || N(!0), T(new Map(e.map(e => [e.value, e])))
         },
         multi: !0,
         inputClassNames: a()({
@@ -138,22 +138,22 @@ function g(e) {
         }),
         closeOnSelect: !1,
         centerCaret: !0
-      }, B), R) : (0, l.jsx)(c.VcW, y({
+      }, B), R) : (0, l.jsx)(c.VcW, m({
         className: (b.badges, b.singleSelect),
         value: [...I.values()][0],
-        onChange: e => k(null != e ? new Map([
+        onChange: e => T(null != e ? new Map([
           [e.value, e]
         ]) : new Map),
         clearable: !0,
         centerCaret: !0
-      }, B), R), H ? (0, l.jsx)("div", {
+      }, B), R), G ? (0, l.jsx)("div", {
         className: b.loading,
         children: (0, l.jsx)(c.bbz, {
           dotRadius: 3.5,
           themed: !0
         })
       }) : null]
-    }), null != F ? (0, l.jsx)(u.st, (t = y({}, (0, u.c4)(F)), r = r = {
+    }), null != H ? (0, l.jsx)(u.st, (t = m({}, (0, u.c4)(H)), r = r = {
       className: O.error
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);

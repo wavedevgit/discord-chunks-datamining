@@ -111,7 +111,7 @@ function C(e, t, n) {
   }
 }
 
-function R(e) {
+function P(e) {
   switch (e) {
     case "top":
       return "bottom";
@@ -130,7 +130,7 @@ function R(e) {
   }
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   if (null != e && e < 0 && ("top" === n.position || "bottom" === n.position) && null != t && Math.abs(e) < (null == t ? void 0 : t.offsetHeight) && null != n.style) {
     let t = "top" === n.position ? "bottom" : "top",
       r = n.style[t];
@@ -313,18 +313,18 @@ class L extends(r = o.Component) {
       a = null,
       s = null;
     if (t && (a = A(e, i, n, r)) < 0) {
-      let t = R(e),
+      let t = P(e),
         {
           style: i,
           nudge: o
         } = this.calculatePositionStyle(t, n, r);
-      if ((s = A(t, i, n, r)) > a) return P(s, n, {
+      if ((s = A(t, i, n, r)) > a) return R(s, n, {
         position: t,
         nudge: o,
         style: i
       })
     }
-    return P(a, n, {
+    return R(a, n, {
       position: e,
       nudge: o,
       style: i

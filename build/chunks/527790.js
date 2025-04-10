@@ -1,4 +1,4 @@
-/** Chunk was on 2960 **/
+/** Chunk was on 62880 **/
 t.d(n, {
   Z: () => d
 });
@@ -20,10 +20,10 @@ function d(e) {
     hideContextMenu: m = !1,
     appContext: u
   } = e, {
-    analyticsLocations: E
+    analyticsLocations: j
   } = (0, i.ZP)(a.Z.USER_PROFILE_RECENT_ACTIVITY_CARD);
   return (0, l.Rh)(t) ? (0, s.jsx)(i.Gt, {
-    value: E,
+    value: j,
     children: (0, s.jsx)(c.Z, {
       entry: t,
       user: n,

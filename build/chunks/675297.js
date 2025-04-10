@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   H: () => x
 }), n(953529);
@@ -38,9 +38,9 @@ function x(e) {
     return s.Z.getRole(n, null != (e = null == t ? void 0 : t.role_id) ? e : b.lds)
   }), P = (0, a.U)(t, 600), A = (0, f.C)(t), w = (0, u.SO)(I), {
     shouldHideGuildPurchaseEntryPoints: Z
-  } = (0, o.uP)(n), k = (0, f.k)(t);
+  } = (0, o.uP)(n), R = (0, f.k)(t);
   if (null == I || Z) return null;
-  let R = () => (0, g.e)({
+  let k = () => (0, g.e)({
       guildId: n,
       guildProductListingId: t.id,
       analyticsLocation: x
@@ -73,7 +73,7 @@ function x(e) {
     imageUrl: P,
     name: t.name,
     description: t.description,
-    formattedPrice: k,
+    formattedPrice: R,
     role: T,
     ctaComponent: (0, r.jsx)(_.Z, {
       guildId: n,
@@ -82,8 +82,8 @@ function x(e) {
     }),
     productType: A,
     shouldShowFullDescriptionButton: y,
-    onShowFullDescription: R,
-    onTapCard: R,
+    onShowFullDescription: k,
+    onTapCard: k,
     actionMenu: D,
     showOpaqueBackground: S,
     hideRoleTag: v,

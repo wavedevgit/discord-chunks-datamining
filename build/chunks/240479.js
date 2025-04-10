@@ -61,16 +61,16 @@ function N(e) {
     channel: n,
     closePopout: c,
     refreshPosition: g
-  } = e, y = t.guildId === O.X8, v = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !y && null != v, [A, C] = i.useState(), R = (0, E.V2)({
+  } = e, y = t.guildId === O.X8, v = (0, s.e7)([m.Z], () => m.Z.getGuild(t.guildId)), N = !y && null != v, [A, C] = i.useState(), P = (0, E.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = y || N || null != A || !R, [w, D] = i.useState(!P);
+  }), R = y || N || null != A || !P, [w, D] = i.useState(!R);
   i.useEffect(() => {
-    P || (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
+    R || (D(!0), (0, _.xU)(t.soundId, t.guildId).then(e => {
       C(e)
     }).finally(() => {
       D(!1), g()
     }))
-  }, [g, P, t.guildId, t.soundId]);
+  }, [g, R, t.guildId, t.soundId]);
   let {
     buttonType: L,
     description: x

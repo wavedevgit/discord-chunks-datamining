@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685), n(642613), n(539854);
 var r, i = n(442837),
   o = n(570140),
@@ -165,7 +165,7 @@ class C extends(r = i.ZP.Store) {
   }
 }
 d(C, "displayName", "SubscriptionPlanStore");
-let R = new C(o.Z, {
+let P = new C(o.Z, {
   SUBSCRIPTION_PLANS_FETCH: v,
   SUBSCRIPTION_PLANS_FETCH_SUCCESS: O,
   SUBSCRIPTION_PLANS_FETCH_FAILURE: S,

@@ -1,4 +1,4 @@
-/** Chunk was on 53458 **/
-t.exports = {
+/** Chunk was on 92976 **/
+e.exports = {
   btnContent: "btnContent__3b75d"
 }

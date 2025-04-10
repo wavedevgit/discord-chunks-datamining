@@ -1,6 +1,6 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
-  O: () => k,
+  O: () => R,
   U: () => I.Un
 }), n(539854), n(784620), n(973216), n(953529), n(388685);
 var r = n(200651),
@@ -35,7 +35,7 @@ var r = n(200651),
   w = n(388032),
   Z = n(758364);
 
-function k(e) {
+function R(e) {
   let {
     app: t,
     embedUrl: n,
@@ -54,7 +54,7 @@ function k(e) {
     staticBannerSrc: N,
     videoBannerSrc: S,
     bannerAspectRatio: Z
-  } = (0, P.E)(t), k = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
+  } = (0, P.E)(t), R = (0, o.e7)([x.default], () => null != s ? s : x.default.getId(), [s]), {
     analyticsLocations: L
   } = (0, p.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: M,
@@ -80,7 +80,7 @@ function k(e) {
           instanceId: null != W ? W : void 0,
           embeddedActivitiesManager: B,
           customId: l,
-          referrerId: k,
+          referrerId: R,
           analyticsLocations: L
         })
       },
@@ -94,13 +94,13 @@ function k(e) {
           botId: y,
           analyticsLocations: L,
           customId: l,
-          referrerId: k
+          referrerId: R
         })
       }
     }), null != z && e.push(z), e
-  }, [V, H, z, W, U, M, t.id, B, l, k, L, y]), Y = v ? (0, r.jsx)(D, {
+  }, [V, H, z, W, U, M, t.id, B, l, R, L, y]), Y = v ? (0, r.jsx)(D, {
     app: t
-  }) : (0, r.jsx)(R, {
+  }) : (0, r.jsx)(k, {
     app: t
   });
   return (0, r.jsx)(C.W, {
@@ -115,14 +115,14 @@ function k(e) {
     trackingConfig: {
       id: t.id,
       linkType: a,
-      referrerId: k,
+      referrerId: R,
       activityCustomId: l,
       onView: g
     }
   })
 }
 
-function R(e) {
+function k(e) {
   var t, n, l;
   let {
     app: c

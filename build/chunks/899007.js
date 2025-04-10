@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -65,7 +65,7 @@ function A(e, t) {
 }
 let C = h.ZP.getEnableHardwareAcceleration() ? l.Xo$ : l.qEK;
 
-function R(e) {
+function P(e) {
   let {
     user: t,
     displayProfile: n,
@@ -73,8 +73,8 @@ function R(e) {
     channelId: h,
     profileType: S,
     animateOnHover: N,
-    onOpenProfile: R,
-    className: P,
+    onOpenProfile: P,
+    className: R,
     previewStatus: w
   } = e, {
     theme: D
@@ -94,7 +94,7 @@ function R(e) {
     [I.biteSize]: S === y.y0.BITE_SIZE,
     [I.fullSize]: S === y.y0.FULL_SIZE,
     [I.panel]: S === y.y0.PANEL
-  }, P), {
+  }, R), {
     avatarDecorationSrc: H,
     avatarSrc: W,
     eventHandlers: Y
@@ -108,14 +108,14 @@ function R(e) {
     avatarDecoration: H,
     size: F,
     "aria-label": t.username,
-    imageClassName: null != R ? I.overlay : void 0,
+    imageClassName: null != P ? I.overlay : void 0,
     status: k ? v.Skl.UNKNOWN : V,
     statusBackdropColor: M && !k ? (0, l.QFD)(D) : void 0,
     isMobile: B,
     statusTooltip: !0,
     statusTooltipDelay: y.vB
   });
-  return null == R ? (0, r.jsx)("div", A(T({}, Y), {
+  return null == P ? (0, r.jsx)("div", A(T({}, Y), {
     className: Z,
     children: K
   })) : (0, r.jsx)(l.P3F, A(T({}, Y), {
@@ -127,7 +127,7 @@ function R(e) {
       x({
         action: "PRESS_VIEW_PROFILE",
         analyticsLocations: L
-      }), null == R || R()
+      }), null == P || P()
     },
     children: K
   }))

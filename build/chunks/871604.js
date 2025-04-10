@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 });
 var r = n(200651),
   i = n(192379),
@@ -66,7 +66,7 @@ function C(e, t) {
   return i
 }
 
-function R(e) {
+function P(e) {
   var {
     user: t,
     closePopout: n
@@ -75,18 +75,18 @@ function R(e) {
       var e;
       return null == (e = y.Z.getUserProfile(t.id)) ? void 0 : e.application
     }),
-    R = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
-    P = (0, o.e7)([p.Z], () => p.Z.getChannel(R)),
+    P = (0, o.e7)([h.Z], () => h.Z.getChannelId()),
+    R = (0, o.e7)([p.Z], () => p.Z.getChannel(P)),
     w = (0, o.e7)([p.Z], () => {
       var e;
-      return null == (e = p.Z.getChannel(R)) ? void 0 : e.guild_id
+      return null == (e = p.Z.getChannel(P)) ? void 0 : e.guild_id
     }),
-    D = i.useMemo(() => null != P ? {
-      channel: P,
+    D = i.useMemo(() => null != R ? {
+      channel: R,
       type: "channel"
     } : {
       type: "contextless"
-    }, [P]),
+    }, [R]),
     L = (0, s.Z)({
       context: D
     }),

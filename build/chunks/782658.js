@@ -1,6 +1,6 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
-  Z: () => k
+  Z: () => R
 });
 var r = n(200651),
   i = n(192379),
@@ -34,22 +34,22 @@ var r = n(200651),
   w = n(981631),
   Z = n(723359);
 
-function k(e) {
+function R(e) {
   let {
     code: t,
     author: n,
-    getAcceptInviteContext: k
+    getAcceptInviteContext: R
   } = e, {
-    invite: R,
+    invite: k,
     inviteError: D
   } = (0, a.cj)([y.Z], () => ({
     invite: y.Z.getInvite(t),
     inviteError: y.Z.getInviteError(t)
-  }), [t]), L = null == R;
+  }), [t]), L = null == k;
   i.useEffect(() => {
     L && l.ZP.resolveInvite(t)
   }, [t, L]);
-  let M = null != R ? R : {
+  let M = null != k ? k : {
       state: w.r2o.RESOLVING,
       code: ""
     },
@@ -57,7 +57,7 @@ function k(e) {
       analyticsLocations: W
     } = (0, u.ZP)(),
     U = (0, d.O)(),
-    F = (0, a.e7)([x.Z], () => (null == R ? void 0 : R.guild) != null ? x.Z.getGuild(R.guild.id) : null, [R]),
+    F = (0, a.e7)([x.Z], () => (null == k ? void 0 : k.guild) != null ? x.Z.getGuild(k.guild.id) : null, [k]),
     B = (0, a.e7)([b.default], () => b.default.getId()),
     G = (0, a.e7)([p.ZP], () => {
       var e;
@@ -67,8 +67,8 @@ function k(e) {
       null != M.channel && l.ZP.transitionToInviteSync(M)
     },
     V = () => {
-      if (null == F && (null == R ? void 0 : R.guild) != null) {
-        let e = v.Qs(R.guild);
+      if (null == F && (null == k ? void 0 : k.guild) != null) {
+        let e = v.Qs(k.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, h.yU)() ? (0, g.Z)({
         analyticsSource: {
@@ -81,7 +81,7 @@ function k(e) {
         analyticsLocations: W
       }) : l.ZP.acceptInviteAndTransitionToInviteChannel({
         inviteKey: t,
-        context: k("Invite Button Embed")
+        context: R("Invite Button Embed")
       })
     },
     z = (0, r.jsx)(C.Z, {
@@ -124,7 +124,7 @@ function k(e) {
           z = (0, r.jsx)(N.Z, {
             invite: M,
             author: n,
-            getAcceptInviteContext: k
+            getAcceptInviteContext: R
           });
           break;
         default:
@@ -162,9 +162,9 @@ function k(e) {
           }
           if ((0, f.P1)(M) && (z = (0, r.jsx)(E.Z, {
               invite: M,
-              getAcceptInviteContext: k
+              getAcceptInviteContext: R
             })), U) {
-            let e = (null == R ? void 0 : R.channel) != null ? (0, _.jD)(R.channel) : null;
+            let e = (null == k ? void 0 : k.channel) != null ? (0, _.jD)(k.channel) : null;
             null != e && e.isGuildVocal() || (z = (0, r.jsx)(S.Z, {
               onTransitionToInviteChannel: H,
               onAcceptInstantInvite: V,

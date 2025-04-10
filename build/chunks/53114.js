@@ -407,8 +407,8 @@ class v extends o.Z {
         nackCount: N,
         pliCount: A,
         qpSum: C,
-        pauseCount: R,
-        freezeCount: P,
+        pauseCount: P,
+        freezeCount: R,
         totalPausesDuration: w,
         totalFreezesDuration: D,
         totalFramesDuration: L,
@@ -426,7 +426,7 @@ class v extends o.Z {
         qualityFrameDrops: W,
         qualitySizeMismatches: Y
       } = e.aggregatedProperties;
-    return e instanceof f.nt ? (E.sender_freeze_count = P, E.sender_total_freezes_duration = D, E.sender_total_frames_duration = L) : (E.receiver_freeze_count = P, E.receiver_total_freezes_duration = D, E.receiver_total_frames_duration = L, E.receiver_pause_count = R, E.receiver_total_pauses_duration = w), m(p({}, E), {
+    return e instanceof f.nt ? (E.sender_freeze_count = R, E.sender_total_freezes_duration = D, E.sender_total_frames_duration = L) : (E.receiver_freeze_count = R, E.receiver_total_freezes_duration = D, E.receiver_total_frames_duration = L, E.receiver_pause_count = P, E.receiver_total_pauses_duration = w), m(p({}, E), {
       avg_bitrate: r > 0 ? Math.round((null != b ? b : 0) * 8 / r) : 0,
       avg_fps: r > 0 ? Math.round((null != O ? O : 0) / r) : 0,
       num_bytes: b,

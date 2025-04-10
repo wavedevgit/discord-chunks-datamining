@@ -5,8 +5,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(200651),
   o = n(192379),
-  a = n(442837),
-  i = n(13245),
+  i = n(442837),
+  a = n(13245),
   c = n(615287),
   l = n(493773),
   s = n(522474),
@@ -25,11 +25,11 @@ var m = n(554370),
   v = n(981631);
 
 function I(e, t) {
-  let n = (0, a.e7)([s.Z], () => {
+  let n = (0, i.e7)([s.Z], () => {
       var t;
       return null != (t = s.Z.getWindow(e)) ? t : window
     }),
-    r = (0, a.e7)([h.ZP], () => {
+    r = (0, i.e7)([h.ZP], () => {
       let e = h.ZP.getFocusedPID();
       return !f.isPlatformEmbedded || null != e && e !== b.UNSET_PID
     }),
@@ -49,7 +49,7 @@ function I(e, t) {
   let y = o.useCallback(() => {
     n.requestAnimationFrame(() => {
       try {
-        i.Z.successfullyShown((0, b.getPID)()), p.ZP.showInactive(e)
+        a.Z.successfullyShown((0, b.getPID)()), p.ZP.showInactive(e)
       } catch (t) {
         t.message.includes("IPC") && setTimeout(() => {
           p.ZP.showInactive(e)
@@ -64,7 +64,7 @@ function I(e, t) {
     u && y();
     let n = null != (e = h.ZP.getFocusedPID()) ? e : (0, b.getPID)(),
       r = null != d.Z.getVoiceChannelId();
-    i.Z.track(v.rMx.OVERLAY_INITIALIZED, {
+    a.Z.track(v.rMx.OVERLAY_INITIALIZED, {
       voice_widget_connected: r,
       text_widget_connected: h.ZP.isPinned(v.Odu.TEXT),
       overlay_render_method: c.gl[g.default.getOverlayMethod(n)],

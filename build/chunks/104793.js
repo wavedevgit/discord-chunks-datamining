@@ -37,8 +37,8 @@ function g(e, t, n) {
   } = t, {
     applicationAllowedForUser: A,
     applicationAllowedForChannel: C,
-    isGuildInstalled: R,
-    isUserInstalled: P,
+    isGuildInstalled: P,
+    isUserInstalled: R,
     commandBotId: w
   } = n;
   if (!m.includes(e.type)) return 2;
@@ -56,8 +56,8 @@ function g(e, t, n) {
   }
   if (e.applicationId === p.bi.BUILT_IN) return 0;
   let L = null != l ? (0, _.ny)(l) : void 0;
-  if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || P && (null == (r = e.integration_types) ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
-  if (!N && R && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
+  if (null == L || a.e$(O, h.Plq.ADMINISTRATOR) || R && (null == (r = e.integration_types) ? void 0 : r.includes(o.Y.USER_INSTALL))) return 0;
+  if (!N && P && (null == e.integration_types || e.integration_types.includes(o.Y.GUILD_INSTALL))) return 5;
   if (l instanceof c.Sf) {
     i()(void 0 !== C, "missing applicationAllowedForChannel");
     let t = y(e.permissions, l, L);

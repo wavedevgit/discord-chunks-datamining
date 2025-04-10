@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(350327),
   A = n(594174),
   C = n(626135),
-  R = n(585483),
-  P = n(597688),
+  P = n(585483),
+  R = n(597688),
   w = n(1870),
   D = n(429368),
   L = n(884697),
@@ -252,10 +252,10 @@ let el = 880,
     }), N = i.useMemo(() => {
       if (!O) return;
       let e = I.type === u.Z.AVATAR_DECORATION ? (0, X.R9)(I.skuId, T) : null;
-      return null != e ? P.Z.getProduct(e) : void 0
+      return null != e ? R.Z.getProduct(e) : void 0
     }, [O, I.skuId, I.type, T]), {
       confettiColors: C
-    } = (0, G.Z)(I.styles), R = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), w = i.useRef(null), {
+    } = (0, G.Z)(I.styles), P = (0, f.e7)([h.Z], () => h.Z.useReducedMotion), w = i.useRef(null), {
       analyticsLocations: D
     } = (0, g.ZP)([...l, m.Z.COLLECTIBLES_COLLECTED_MODAL]), {
       collectedModalBackground: L
@@ -287,7 +287,7 @@ let el = 880,
           }), (0, r.jsx)(ed, {
             product: I,
             pairedProduct: N,
-            reducedMotion: R
+            reducedMotion: P
           })]
         }), (0, r.jsx)(ep, {
           product: I,
@@ -312,7 +312,7 @@ let el = 880,
         className: er.modalInner,
         ref: w,
         children: M()
-      }), !s && !R && (0, r.jsx)(B.Z, {
+      }), !s && !P && (0, r.jsx)(B.Z, {
         confettiTarget: null != o ? o : w.current,
         confettiCanvas: a,
         sprites: (0, F.vK)(I.categorySkuId),
@@ -351,7 +351,7 @@ let el = 880,
       }) : p && !f ? en.NW.string(en.t["1xr2SU"]) : en.NW.format(en.t.YNaxMj, {
         itemName: h
       }), [l, n.skuId, g, p, f, h, m]),
-      P = i.useMemo(() => null != d ? d : J.Vt.ORB_PROFILE_BADGE === n.skuId ? en.NW.string(et.Z.UnPGio) : g ? en.NW.format(new Date < J.a$ ? en.t["1jBC0t"] : en.t.qSrp39, {
+      R = i.useMemo(() => null != d ? d : J.Vt.ORB_PROFILE_BADGE === n.skuId ? en.NW.string(et.Z.UnPGio) : g ? en.NW.format(new Date < J.a$ ? en.t["1jBC0t"] : en.t.qSrp39, {
         purchased_item: h,
         suggested_item: m
       }) : (0, c.EQ)(null == n ? void 0 : n.type).with(u.Z.BUNDLE, () => en.NW.string(en.t.zJPoLy)).with(u.Z.PROFILE_EFFECT, () => en.NW.string(en.t.f9M1YG)).with(u.Z.NAMEPLATE, () => en.NW.string(en.t.lvwvIi)).otherwise(() => f && null != b ? b : en.NW.string(en.t["44b50t"])), [d, n.skuId, null == n ? void 0 : n.type, g, h, m, f, b]),
@@ -360,7 +360,7 @@ let el = 880,
         children: [(0, r.jsx)(_.zxk, {
           color: _.Ttl.BRAND,
           onClick: () => {
-            a(), R.S.dispatch($.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+            a(), P.S.dispatch($.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
           },
           children: en.NW.string(et.Z.yfwZu7)
         }), (0, r.jsx)(_.zxk, {
@@ -380,7 +380,7 @@ let el = 880,
           children: C
         }), (0, r.jsx)(_.Text, {
           variant: "text-sm/normal",
-          children: P
+          children: R
         })]
       }), (0, r.jsxs)("div", {
         className: er.buttons,

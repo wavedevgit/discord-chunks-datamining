@@ -1,7 +1,7 @@
-/** Chunk was on 84466 **/
+/** Chunk was on 91348 **/
 n.d(t, {
-  E: () => N,
-  Z: () => T
+  E: () => I,
+  Z: () => O
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -22,13 +22,13 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let N = {
+let I = {
   DropdownSizes: s.Z.DropdownSizes,
   Sizes: s.Z.Sizes,
   Colors: s.Z.Colors,
   Looks: s.Z.Looks
 };
-class I extends i.PureComponent {
+class N extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -113,7 +113,7 @@ class I extends i.PureComponent {
     })
   }
 }
-let T = l.ZP.connectStores([u.Z, c.Z], e => {
+let O = l.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n
@@ -122,4 +122,4 @@ let T = l.ZP.connectStores([u.Z, c.Z], e => {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(I)
+})(N)

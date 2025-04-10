@@ -1,4 +1,4 @@
-/** Chunk was on 74367 **/
+/** Chunk was on 92976 **/
 e.exports = {
   descriptionText: "descriptionText__535f5",
   truncate: "truncate__535f5"

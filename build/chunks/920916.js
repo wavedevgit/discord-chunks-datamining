@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(960048),
   A = n(272008),
   C = n(113434),
-  R = n(497505),
-  P = n(918701),
+  P = n(497505),
+  R = n(918701),
   w = n(475595),
   D = n(566078),
   L = n(114732),
@@ -116,12 +116,12 @@ function K(e) {
     decoration: p,
     onUseNow: h,
     preview: m
-  } = e, g = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = i.useMemo(() => (0, w.fh)(l, w.eC.HERO), [l]), N = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [C, P] = i.useState(!0 === m || N ? "claimed" : "loading");
+  } = e, g = i.useRef(null), [b, y] = i.useState(null), v = i.useRef(new s.qA), O = (0, c.e7)([_.Z], () => _.Z.useReducedMotion), I = (0, c.e7)([T.default], () => T.default.getCurrentUser()), S = i.useMemo(() => (0, w.fh)(l, w.eC.HERO), [l]), N = (null == (t = l.userStatus) ? void 0 : t.claimedAt) != null, [C, R] = i.useState(!0 === m || N ? "claimed" : "loading");
   i.useEffect(() => {
-    N || !0 === m || (0, A.QB)(l.id, R.y$.CROSS_PLATFORM, d).then(() => P("claimed")).catch(() => P("error"))
+    N || !0 === m || (0, A.QB)(l.id, P.y$.CROSS_PLATFORM, d).then(() => R("claimed")).catch(() => R("error"))
   }, [l, d, N, m]);
   let D = () => {
-      P("applying"), h().finally(o)
+      R("applying"), h().finally(o)
     },
     x = !0 === m && null === p && (null == f ? void 0 : f.skuId) !== "",
     M = null == p && !0 !== m,
@@ -170,7 +170,7 @@ function K(e) {
 function z(e) {
   let {
     quest: t
-  } = e, n = i.useMemo(() => (0, w.fh)(t, w.eC.LOGO_TYPE, "dark"), [t]), o = D.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[R.y$.CROSS_PLATFORM];
+  } = e, n = i.useMemo(() => (0, w.fh)(t, w.eC.LOGO_TYPE, "dark"), [t]), o = D.r.build(t.config).defaultRewardRedemptionInstructionsByPlatform[P.y$.CROSS_PLATFORM];
   return (0, r.jsxs)("div", {
     className: G.additionalRedemptionInstructions,
     children: [(0, r.jsx)("img", {
@@ -196,7 +196,7 @@ function q(e) {
     isSaving: a,
     onClose: s,
     onConfirm: l
-  } = e, c = (0, w.fh)(t, w.eC.REWARD).url, d = (0, P.f$)(t.config), {
+  } = e, c = (0, w.fh)(t, w.eC.REWARD).url, d = (0, R.f$)(t.config), {
     fractionalState: f
   } = (0, m.Z)(), _ = f === j.a$.FP_ONLY, p = (0, C.Qy)(t.config), g = d && !_;
   return (0, r.jsxs)("div", {
@@ -246,7 +246,7 @@ function q(e) {
           submitting: a,
           onClick: l,
           children: U.NW.string(U.t.MAS7uL)
-        }), (0, P.zK)(t, x.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
+        }), (0, R.zK)(t, x.S7.ADDITIONAL_REDEMPTION_INSTRUCTIONS) && (0, r.jsx)(z, {
           quest: t
         }), g && (0, r.jsx)(v.p, {
           className: G.upsell,
@@ -272,7 +272,7 @@ function Q(e) {
     onClose: s,
     transitionState: l,
     preview: c
-  } = e, u = i.useMemo(() => (0, P.xn)(o.config), [o]), [d, f] = Y(null != (n = null == u ? void 0 : u.skuId) ? n : null);
+  } = e, u = i.useMemo(() => (0, R.xn)(o.config), [o]), [d, f] = Y(null != (n = null == u ? void 0 : u.skuId) ? n : null);
   return null == u ? null : (null == (t = o.userStatus) ? void 0 : t.claimedAt) != null ? (0, r.jsx)(p.default, {
     transitionState: l,
     onCloseModal: H,

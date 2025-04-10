@@ -26,18 +26,18 @@ var r = n(127849),
   N = s.PROPER,
   A = s.CONFIGURABLE,
   C = "ArrayBuffer",
-  R = "DataView",
-  P = "prototype",
+  P = "DataView",
+  R = "prototype",
   w = "Wrong length",
   D = "Wrong index",
   L = T.getterFor(C),
-  x = T.getterFor(R),
+  x = T.getterFor(P),
   M = T.set,
   k = r[C],
   j = k,
-  U = j && j[P],
-  G = r[R],
-  B = G && G[P],
+  U = j && j[R],
+  G = r[P],
+  B = G && G[R],
   V = Object.prototype,
   F = r.Array,
   Z = r.RangeError,
@@ -64,7 +64,7 @@ var r = n(127849),
     return Y(e, 52, 8)
   },
   ee = function(e, t, n) {
-    c(e[P], t, {
+    c(e[R], t, {
       configurable: !0,
       get: function() {
         return n(this)[t]
@@ -99,7 +99,7 @@ if (a) {
     return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !A
   }) ? ((j = function(e) {
     return f(this, U), O(new k(h(e)), this, j)
-  })[P] = U, U.constructor = j, I(j, k)) : er && A && l(k, "name", C), b && E(B) !== V && b(B, V);
+  })[R] = U, U.constructor = j, I(j, k)) : er && A && l(k, "name", C), b && E(B) !== V && b(B, V);
   var ei = new G(new j(2)),
     eo = i(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && u(B, {
@@ -120,7 +120,7 @@ if (a) {
     bytes: H(F(t), 0),
     byteLength: t
   }), o || (this.byteLength = t, this.detached = !1)
-})[P], B = (G = function(e, t, n) {
+})[R], B = (G = function(e, t, n) {
   f(this, B), f(e, U);
   var r = L(e),
     i = r.byteLength,
@@ -128,13 +128,13 @@ if (a) {
   if (a < 0 || a > i) throw new Z("Wrong offset");
   if (n = void 0 === n ? i - a : p(n), a + n > i) throw new Z(w);
   M(this, {
-    type: R,
+    type: P,
     buffer: e,
     byteLength: n,
     byteOffset: a,
     bytes: r.bytes
   }), o || (this.buffer = e, this.byteLength = n, this.byteOffset = a)
-})[P], o && (ee(j, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), u(B, {
+})[R], o && (ee(j, "byteLength", L), ee(G, "buffer", x), ee(G, "byteLength", x), ee(G, "byteOffset", x)), u(B, {
   getInt8: function(e) {
     return et(this, 1, e)[0] << 24 >> 24
   },
@@ -186,7 +186,7 @@ if (a) {
     en(this, 8, e, $, t, arguments.length > 2 && arguments[2])
   }
 });
-S(j, C), S(G, R), e.exports = {
+S(j, C), S(G, P), e.exports = {
   ArrayBuffer: j,
   DataView: G
 }

@@ -1,6 +1,6 @@
-/** Chunk was on 21128 **/
+/** Chunk was on 99391 **/
 n.d(t, {
-  Z: () => _
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -35,7 +35,7 @@ let d = "ActivityInviteManager",
       type: "ACTIVITY_INVITE_MODAL_CLOSE"
     })
   };
-class h extends s.Z {
+class _ extends s.Z {
   _initialize() {
     o.Z.subscribe("ACTIVITY_INVITE_MODAL_OPEN", this.handleModalOpen), o.Z.subscribe("ACTIVITY_INVITE_MODAL_CLOSE", this.handleModalClose)
   }
@@ -47,7 +47,7 @@ class h extends s.Z {
       activity: t,
       isPrivate: o,
       context: s
-    } = e, h = s === a.IlC.POPOUT ? i.u1M : i.z1l;
+    } = e, _ = s === a.IlC.POPOUT ? i.u1M : i.z1l;
     o ? (0, i.h7j)(e => (0, r.jsx)(l.default, u({
       title: c.NW.formatToPlainString(c.t["2tN7io"], {
         name: t.name
@@ -57,7 +57,7 @@ class h extends s.Z {
     }, e)), {
       onCloseCallback: p,
       modalKey: d
-    }, h) : (0, i.ZDy)(async () => {
+    }, _) : (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("79921").then(n.bind(n, 699099));
@@ -65,11 +65,11 @@ class h extends s.Z {
     }, {
       onCloseCallback: p,
       modalKey: d,
-      contextKey: h
+      contextKey: _
     })
   }
   handleModalClose(e) {
     (0, i.Mr3)(d)
   }
 }
-let _ = new h
+let h = new _

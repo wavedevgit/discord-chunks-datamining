@@ -1,5 +1,5 @@
-/** Chunk was on 11212 **/
-var c = {
+/** Chunk was on web.js **/
+var r = {
   "./champion_1.jpg": "619636",
   "./champion_10.jpg": "41404",
   "./champion_101.jpg": "985966",
@@ -134,7 +134,7 @@ var c = {
   "./champion_7.jpg": "216849",
   "./champion_711.jpg": "238433",
   "./champion_72.jpg": "389683",
-  "./champion_74.jpg": "573161",
+  "./champion_74.jpg": "941467",
   "./champion_75.jpg": "963635",
   "./champion_76.jpg": "251748",
   "./champion_77.jpg": "241239",
@@ -171,17 +171,17 @@ var c = {
   "./champion_99.jpg": "751384"
 };
 
-function d(t) {
-  return a(s(t))
+function i(e) {
+  return n(o(e))
 }
 
-function s(t) {
-  if (!a.o(c, t)) {
-    var e = Error("Cannot find module '" + t + "'");
-    throw e.code = "MODULE_NOT_FOUND", e
+function o(e) {
+  if (!n.o(r, e)) {
+    var t = Error("Cannot find module '" + e + "'");
+    throw t.code = "MODULE_NOT_FOUND", t
   }
-  return c[t]
+  return r[e]
 }
-d.keys = function() {
-  return Object.keys(c)
-}, d.resolve = s, t.exports = d, d.id = 624119
+i.keys = function() {
+  return Object.keys(r)
+}, i.resolve = o, e.exports = i, i.id = 624119

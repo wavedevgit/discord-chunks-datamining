@@ -1,4 +1,4 @@
-/** Chunk was on 37658 **/
+/** Chunk was on 92976 **/
 n.d(t, {
   Z: () => H,
   n: () => L
@@ -53,7 +53,7 @@ function Z(e) {
   return e
 }
 
-function k(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function k(e, t) {
   }), e
 }
 
-function R(e, t) {
+function k(e, t) {
   let n = [...t],
     r = 0,
     i = 0;
@@ -206,7 +206,7 @@ async function F(e) {
   });
   try {
     let e = [...a.selectedAnswerIds.values()];
-    (0, T.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), k(Z({}, e), {
+    (0, T.eu)(t, n, e => (i()(null != e, "Must not be able to vote without existing state!"), R(Z({}, e), {
       submitting: !0,
       editing: !1
     }))), await U({
@@ -228,7 +228,7 @@ async function F(e) {
       messageId: n,
       answerIds: l
     }), (0, T.eu)(t, n, e => {
-      if (null != e) return k(Z({}, e), {
+      if (null != e) return R(Z({}, e), {
         submitting: !1,
         editing: !1
       })
@@ -383,7 +383,7 @@ let H = {
             analyticsSelectedAnswerIds: t,
             selectedTextAnswersCount: i,
             selectedEmojiAnswersCount: s
-          } = R(null == (n = o.poll) ? void 0 : n.answers, e);
+          } = k(null == (n = o.poll) ? void 0 : n.answers, e);
         return h.ZP.trackWithMetadata(A.rMx.POLL_VOTE_SELECTED, {
           channel_id: a,
           message_id: l,
@@ -410,7 +410,7 @@ let H = {
         analyticsSelectedAnswerIds: u,
         selectedTextAnswersCount: d,
         selectedEmojiAnswersCount: p
-      } = R(null == (t = o.poll) ? void 0 : t.answers, s);
+      } = k(null == (t = o.poll) ? void 0 : t.answers, s);
       return h.ZP.trackWithMetadata(A.rMx.POLL_VOTE_SELECTED, {
         channel_id: a,
         message_id: l,
@@ -472,7 +472,7 @@ let H = {
       } else await m.Z.sendPollMessage(t.id, d);
       null == s || s()
     } catch (e) {
-      if ("poll" === (e instanceof f.Hx ? e : new f.Hx(e)).getAnyErrorMessage() && null != e.text) throw k(Z({}, e), {
+      if ("poll" === (e instanceof f.Hx ? e : new f.Hx(e)).getAnyErrorMessage() && null != e.text) throw R(Z({}, e), {
         body: JSON.parse(e.text)
       });
       throw e

@@ -33,7 +33,7 @@ let u = i.memo(i.forwardRef((e, t) => {
     fade: N = !1,
     initialScrollTop: A = 0,
     role: C = "list"
-  } = e, [R, P] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), M = i.useRef(-1);
+  } = e, [P, R] = i.useState(-1), [w, D] = i.useState(-1), L = i.useRef(null), x = i.useRef(0), M = i.useRef(-1);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = L.current) ? void 0 : e.getScrollerNode();
@@ -112,7 +112,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       offsetHeight: r,
       scrollTop: i
     } = t;
-    D(r), P(i), null == o || o({
+    D(r), R(i), null == o || o({
       width: n,
       height: r
     })
@@ -134,7 +134,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       let {
         scrollTop: e
       } = t;
-      x.current = e, null == n || n(e), P(e)
+      x.current = e, null == n || n(e), R(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -217,12 +217,12 @@ let u = i.memo(i.forwardRef((e, t) => {
     visibleItems: z,
     listOffset: q
   } = i.useMemo(() => {
-    if (-1 === w || -1 === R) return {
+    if (-1 === w || -1 === P) return {
       visibleItems: null,
       listOffset: 0
     };
-    let e = R,
-      t = R + w,
+    let e = P,
+      t = P + w,
       n = 0,
       r = u[0],
       i = [],
@@ -269,7 +269,7 @@ let u = i.memo(i.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [j, G, U, B, u, d, f, p, _, R, W, I, h, k, w]), Q = i.useMemo(() => {
+  }, [j, G, U, B, u, d, f, p, _, P, W, I, h, k, w]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: q,

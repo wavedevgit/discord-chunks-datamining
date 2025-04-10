@@ -71,8 +71,8 @@ async function y(e) {
     subscriptionPlan: N,
     planGroup: A,
     trialId: C,
-    priceOptions: R,
-    paymentSource: P,
+    priceOptions: P,
+    paymentSource: R,
     isPrepaidPaymentPastDue: w,
     openInvoiceId: D,
     premiumSubscription: L,
@@ -100,7 +100,7 @@ async function y(e) {
       expectedAmount: j.amount,
       expectedCurrency: j.currency,
       isGift: v,
-      paymentSource: P,
+      paymentSource: R,
       loadId: B,
       giftInfoOptions: V
     });
@@ -111,27 +111,27 @@ async function y(e) {
       e = await (0, c.ZZ)(h.CL, N.skuId, {
         expectedAmount: t,
         expectedCurrency: n,
-        paymentSource: P,
+        paymentSource: R,
         subscriptionPlanId: N.id,
         isGift: !0,
         loadId: B,
         giftInfoOptions: V
       })
-    } else if (w && null != D && null != P && null != L) e = p.Uk1.has(P.type) ? await (0, a.G)(L, D, P, R.currency) : await (0, a.Mg)(L, {
-      paymentSource: P,
-      currency: R.currency
+    } else if (w && null != D && null != R && null != L) e = p.Uk1.has(R.type) ? await (0, a.G)(L, D, R, P.currency) : await (0, a.Mg)(L, {
+      paymentSource: R,
+      currency: P.currency
     }, S, I, B);
     else if (null != L) {
       let t = (0, f.al)(L, N.id, 1, new Set(A)),
         n = {
-          paymentSource: P,
-          currency: R.currency
+          paymentSource: R,
+          currency: P.currency
         };
       L.status === p.O0b.PAUSED && (n.status = p.O0b.ACTIVE), L.isPausedAllowsResumeButNotUpdates || (n.items = t), e = await (0, a.Mg)(L, n, S, I, B)
     } else e = await (0, l.Ld)({
       planId: N.id,
-      currency: R.currency,
-      paymentSource: P,
+      currency: P.currency,
+      paymentSource: R,
       trialId: C,
       metadata: M,
       referralCode: G,
@@ -142,8 +142,8 @@ async function y(e) {
   } catch (e) {
     t(_.A.FAIL), m(e), d.default.track(p.rMx.PAYMENT_FLOW_FAILED, b(g({}, O), {
       payment_error_code: null == e ? void 0 : e.code,
-      payment_source_id: null == P ? void 0 : P.id,
-      payment_source_type: null == P ? void 0 : P.type,
+      payment_source_id: null == R ? void 0 : R.id,
+      payment_source_type: null == R ? void 0 : R.type,
       duration_ms: Date.now() - T
     }))
   } finally {

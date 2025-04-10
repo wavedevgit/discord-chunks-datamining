@@ -3,8 +3,8 @@
 n.d(t, {
   NE: () => C,
   QN: () => T,
-  Qf: () => R,
-  TY: () => P,
+  Qf: () => P,
+  TY: () => R,
   pQ: () => N,
   z7: () => A
 }), n(539854), n(388685);
@@ -214,7 +214,7 @@ let v = e => {
       badge: o
     }))
   },
-  R = e => {
+  P = e => {
     let {
       guildId: t,
       channelId: n,
@@ -226,7 +226,7 @@ let v = e => {
       badge: o
     }))
   },
-  P = e => {
+  R = e => {
     var t, n, r;
     let {
       displayProfile: i,

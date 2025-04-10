@@ -101,8 +101,8 @@ function A(e) {
     forceTooltipOpen: N = !1,
     buttonRef: A,
     grow: C,
-    "aria-label": R,
-    look: P,
+    "aria-label": P,
+    look: R,
     buttonText: w,
     size: D
   } = e;
@@ -110,7 +110,7 @@ function A(e) {
     children: (0, r.jsx)(l.ua7, {
       position: O,
       text: t,
-      "aria-label": R,
+      "aria-label": P,
       shouldShow: T,
       forceOpen: N,
       children: e => {
@@ -121,7 +121,7 @@ function A(e) {
           onMouseLeave: T
         } = e, N = S(e, ["onClick", "onContextMenu", "onMouseEnter", "onMouseLeave"]);
         return (0, r.jsxs)(l.zxk, I(v({
-          look: null != P ? P : l.zxk.Looks.BLANK,
+          look: null != R ? R : l.zxk.Looks.BLANK,
           size: null != D ? D : l.zxk.Sizes.NONE,
           onKeyDown: e => {
             null == i || i(e)
@@ -154,7 +154,7 @@ function A(e) {
           wrapperClassName: f,
           buttonRef: A,
           grow: C,
-          "aria-label": R
+          "aria-label": P
         }, N), {
           children: [(0, r.jsx)(h, {
             size: s.Z.md,
@@ -182,7 +182,7 @@ let C = {
     activeLight: b.activeLight,
     premiumGradient: b.premiumGradient
   },
-  R = {
+  P = {
     disconnect: b.disconnect,
     join: b.join,
     red: b.experimentRed,
@@ -194,7 +194,7 @@ let C = {
     activeLight: b.experimentActiveLight,
     premiumGradient: b.premiumGradient
   },
-  P = {
+  R = {
     disconnect: b.disconnect,
     join: b.join,
     red: b.redGlow,
@@ -239,7 +239,7 @@ function w(e) {
       location: "CenterControlButton"
     }),
     H = M || Z,
-    W = H ? [b.experimentButton, F ? P[j] : R[j], x && null == T && b.fullRegionButton, F && !x && null != T && b.attachedButton] : [C[j]],
+    W = H ? [b.experimentButton, F ? R[j] : P[j], x && null == T && b.fullRegionButton, F && !x && null != T && b.attachedButton] : [C[j]],
     Y = null != (t = k.onContextMenu) ? t : T,
     K = (0, r.jsx)(A, I(v({}, k), {
       grow: !1,
@@ -248,13 +248,13 @@ function w(e) {
       className: a()(G ? y : null, b.staticButton, b.centerButton, s && b.active, ...W)
     }));
   return G ? K : H ? (0, r.jsxs)("div", {
-    className: a()(F ? b.attachedCaretButtonContainer : b.caretButtonContainer, F && w && b.popoutOpen, y, x && null != T && [b.fullRegionDropdownButton, R[j]]),
+    className: a()(F ? b.attachedCaretButtonContainer : b.caretButtonContainer, F && w && b.popoutOpen, y, x && null != T && [b.fullRegionDropdownButton, P[j]]),
     children: [K, null != T ? (0, r.jsx)(m.Z, {
       children: (0, r.jsx)(l.P3F, {
         "aria-label": E.NW.string(E.t.PdRCRk),
         onClick: D ? void 0 : T,
         onContextMenu: D ? void 0 : T,
-        className: a()(b.contextMenuNubExperiment, F && !x && b.attachedCaret, F ? P[U] : R[U], {
+        className: a()(b.contextMenuNubExperiment, F && !x && b.attachedCaret, F ? R[U] : P[U], {
           [b.popoutOpen]: w && F,
           [b.active]: w,
           [b.disabled]: D
