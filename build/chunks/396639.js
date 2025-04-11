@@ -24,7 +24,7 @@ var r = n(200651),
   E = n(614277),
   j = n(712297),
   C = n(982204),
-  O = n(653798),
+  O = n(811334),
   S = n(626135),
   v = n(932563),
   T = n(82856),
@@ -139,7 +139,7 @@ let B = e => e === P.Vt.FRACTIONAL_PREMIUM ? R.CL : A.XAJ,
       isGift: !1,
       currentPaymentSourceId: null
     }), a = i[n], l = (0, d.ed)("OrbCheckoutPurchaseDetails");
-    return void 0 === a ? (0, r.jsx)(O.PO, {
+    return void 0 === a ? (0, r.jsx)(O.aO, {
       children: (0, r.jsx)(s.$jN, {
         type: s.$jN.Type.PULSING_ELLIPSIS,
         className: w.purchaseDetailsSpinner

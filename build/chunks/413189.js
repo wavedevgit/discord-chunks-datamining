@@ -31,7 +31,9 @@ function N(e) {
       compact: P
     } = e,
     A = null == (t = I.chatWallpaperInfo) ? void 0 : t.wallpaperId,
-    w = (0, m.sQ)({
+    {
+      enabled: w
+    } = (0, m.sX)({
       location: "ChatWallpaperSetSystemMessage"
     }),
     Z = (0, s.ZP)(I),

@@ -28,7 +28,7 @@ var r, i = n(200651),
   v = n(374649),
   T = n(140465),
   I = n(314684),
-  y = n(653798),
+  y = n(811334),
   A = n(625881),
   P = n(440984),
   R = n(398775),
@@ -230,16 +230,16 @@ function K(e) {
       }) : V.NW.format(V.t["+y0Tj4"], {
         renewalDate: a.subscriptionPeriodStart
       })
-    }), (0, i.jsxs)(y.PO, {
-      children: [(0, i.jsx)(y.q9, {
+    }), (0, i.jsxs)(y.aO, {
+      children: [(0, i.jsx)(y.Z9, {
         children: V.NW.string(V.t.iqhIp6)
-      }), (0, i.jsx)(y.R$, {
+      }), (0, i.jsx)(y.B1, {
         label: V.NW.formatToPlainString(V.t.r3jVZm, {
           planName: O.ZP.getDisplayName(l.id)
         }),
         value: (0, O.PK)(l),
         className: G.invoiceCancelRow
-      }), (0, i.jsx)(y.KU, {}), (0, i.jsx)(w.nd, {
+      }), (0, i.jsx)(y.UN, {}), (0, i.jsx)(w.nd, {
         premiumSubscription: r,
         renewalInvoice: a,
         isUpdate: !0

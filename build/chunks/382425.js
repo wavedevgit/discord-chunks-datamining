@@ -114,9 +114,6 @@ function J(e) {
           e.stopPropagation(), e_({
             action: "PRESS_IMAGE"
           }), c.default.selectVoiceChannel(o.channelId), (0, u.iV)(o), null == $ || $()
-        },
-        n = e => {
-          (e.keyCode === Y.yXg.SPACE || e.keyCode === Y.yXg.ENTER) && t(e)
         };
       return null == eO && eE ? (0, r.jsx)("div", {
         className: e,
@@ -126,7 +123,6 @@ function J(e) {
           [q.clickable]: eh
         }),
         onClick: eh ? t : void 0,
-        onKeyDown: eh ? n : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: en === Y.BRd.LIGHT ? X : Q
@@ -146,7 +142,6 @@ function J(e) {
           [q.clickable]: eh
         }),
         onClick: eh ? t : void 0,
-        onKeyDown: eh ? n : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
           src: eO,

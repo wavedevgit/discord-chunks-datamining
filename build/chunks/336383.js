@@ -93,9 +93,12 @@ let O = i.forwardRef(function(e, t) {
     className: a()(h.card, i)
   }, v), {
     children: n
-  })) : (0, r.jsx)(s.P3F, {
+  })) : (0, r.jsx)(s.kL8, {
     className: h.clickableContainer,
     "aria-label": p.NW.string(p.t.pD1L1t),
+    focusProps: {
+      ringTarget: t
+    },
     onClick: () => {
       null == m || m({
         action: "PRESS_CARD"
