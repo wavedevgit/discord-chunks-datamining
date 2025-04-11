@@ -1,18 +1,22 @@
 /**
   Module ID: 86653
-  Original File Name: 5c8f59a483179d24
+  Original File Name: 408008c1090f92f4
 **/
 .root__2a5c7 {
     position: relative;
     width: 680px;
     height: 660px;
-    border-radius: 12px;
+    border-radius: 8px;
     background: var(--black);
     overflow: hidden
 }
 
 .visual-refresh .root__2a5c7 {
-    border: none
+    border: 1px solid var(--border-normal)
+}
+
+.visual-refresh .featureCard__2a5c7 {
+    background: var(--background-base-lowest)
 }
 
 .heroAsset__2a5c7 {
@@ -98,9 +102,10 @@
     flex-direction: column;
     justify-content: flex-end;
     flex-shrink: 0;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 4px 42px 0 hsl(var(--black-hsl)/.4);
     border-radius: 20px;
     background: hsl(var(--primary-400-hsl)/.08);
-    box-shadow: 0 4px 42px 0 hsl(var(--black-hsl)/.4);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px)
 }
@@ -152,9 +157,7 @@
 }
 
 .theme-light .featureCard__2a5c7 {
-    background: var(--bg-mod-faint);
-    border: 1px solid rgba(0,0,0,.08);
-    border: 1px solid var(--border-subtle,rgba(0,0,0,.08));
+    border: 1px solid var(--border-faint);
     box-shadow: none
 }
 
@@ -162,4 +165,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=5c8f59a483179d24.css.map*/
+/*# sourceMappingURL=408008c1090f92f4.css.map*/
