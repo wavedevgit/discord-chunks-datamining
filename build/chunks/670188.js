@@ -111,15 +111,16 @@ function T(e) {
     V = i.useRef(void 0),
     F = i.useRef(void 0),
     Z = (0, u.Z)(),
-    H = (0, l.Z)(Z);
-  if ((0, s.zq)(() => {
+    H = (0, l.Z)(Z),
+    W = i.useCallback(() => {
       clearTimeout(B.current), clearTimeout(V.current), clearTimeout(F.current)
-    }), null == x || null == L) return t(I, S);
-  let W = () => null != T ? T() : (0, d.Z)(x.id, null != v ? v : x.getAvatarURL(m, O), {
+    }, []);
+  if ((0, s.zq)(W), null == x || null == L) return t(I, S);
+  let Y = () => null != T ? T() : (0, d.Z)(x.id, null != v ? v : x.getAvatarURL(m, O), {
       guildId: m,
       channelId: E
     }),
-    Y = e => j ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, D, e), {
+    K = e => j ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, D, e), {
       userId: x.id,
       user: x,
       guildId: m,
@@ -131,9 +132,9 @@ function T(e) {
   return w ? (0, r.jsx)("div", {
     className: h.hoverable,
     onMouseEnter: () => {
-      G.current = !0, R && (B.current = setTimeout(async () => {
+      W(), G.current = !0, R && (B.current = setTimeout(async () => {
         if (G.current) try {
-          U(!0), await W()
+          U(!0), await Y()
         } finally {
           U(!1)
         }
@@ -142,15 +143,15 @@ function T(e) {
       }, _.JX)
     },
     onMouseLeave: () => {
-      G.current = !1, F.current = setTimeout(() => {
+      W(), G.current = !1, F.current = setTimeout(() => {
         G.current || k(!1)
       }, _.Ig)
     },
     children: (0, r.jsx)(a.yRy, b(g({
       popoutKey: _.Tg,
       shouldShow: !0 === P || M,
-      preload: !R || j || M ? void 0 : W,
-      renderPopout: Y,
+      preload: !R || j || M ? void 0 : Y,
+      renderPopout: K,
       onRequestClose: () => {
         k(!1), null == A || A()
       }
@@ -160,8 +161,8 @@ function T(e) {
   }) : (0, r.jsx)(a.yRy, b(g({
     popoutKey: _.Tg,
     shouldShow: P,
-    preload: R ? W : void 0,
-    renderPopout: Y,
+    preload: R ? Y : void 0,
+    renderPopout: K,
     onRequestClose: A
   }, D), {
     children: t

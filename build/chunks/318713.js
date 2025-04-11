@@ -74,8 +74,8 @@ let d = function(e) {
     timestampFormat: f,
     isVisibleOnlyOnHover: b = !1,
     cozyAlt: y = !1,
-    isInline: O = !0,
-    id: g,
+    isInline: g = !0,
+    id: O,
     isEdited: j = !1,
     application: v,
     tooltipPosition: h
@@ -86,7 +86,7 @@ let d = function(e) {
     className: i()(r, N, {
       [m.timestamp]: !0,
       [m.timestampVisibleOnHover]: b,
-      [m.timestampInline]: O,
+      [m.timestampInline]: g,
       [m.alt]: y
     }),
     children: null == v ? (0, n.jsx)(a.ua7, {
@@ -99,7 +99,7 @@ let d = function(e) {
         tooltipProps: e,
         timeFormatted: S,
         timestamp: x,
-        id: g,
+        id: O,
         compact: l,
         children: t
       })
@@ -110,7 +110,7 @@ let d = function(e) {
       children: (0, n.jsx)(p, {
         timeFormatted: S,
         timestamp: x,
-        id: g,
+        id: O,
         compact: l,
         children: t
       })

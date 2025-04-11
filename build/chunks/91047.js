@@ -2,8 +2,8 @@
 "use strict";
 r.d(t, {
   Pv: () => u,
-  _j: () => a,
-  nm: () => c,
+  _j: () => c,
+  nm: () => a,
   xS: () => s
 }), r(415506);
 var n = r(200651);
@@ -80,11 +80,11 @@ function u(e, t, u) {
   })
 }
 
-function a(e, t) {
+function c(e, t) {
   var {
     user: u,
-    channel: a,
-    moderationAlertId: c,
+    channel: c,
+    moderationAlertId: a,
     guildId: s
   } = t, d = function(e, t) {
     if (null == e) return {};
@@ -101,26 +101,26 @@ function a(e, t) {
     }
     return l
   }(t, ["user", "channel", "moderationAlertId", "guildId"]);
-  if ((null == a ? void 0 : a.isGroupDM()) || (null == a ? void 0 : a.isDM())) throw Error("Cannot moderate user in DM or group DM");
-  let f = null != s ? s : null == a ? void 0 : a.getGuildId();
+  if ((null == c ? void 0 : c.isGroupDM()) || (null == c ? void 0 : c.isDM())) throw Error("Cannot moderate user in DM or group DM");
+  let f = null != s ? s : null == c ? void 0 : c.getGuildId();
   null != f && (0, l.jW)(e, async () => {
     let {
       default: e
     } = await r.e("16120").then(r.bind(r, 833737));
     return t => (0, n.jsx)(e, o(i(o({}, t), {
       user: u,
-      channelId: null == a ? void 0 : a.id,
+      channelId: null == c ? void 0 : c.id,
       guildId: f,
-      moderationAlertId: c
+      moderationAlertId: a
     }), d))
   })
 }
 
-function c(e, t) {
+function a(e, t) {
   let {
     user: u,
-    guildId: a,
-    analyticsLocations: c,
+    guildId: c,
+    analyticsLocations: a,
     onCloseContextMenu: s,
     isViewOnly: d
   } = t;
@@ -130,8 +130,8 @@ function c(e, t) {
     } = await r.e("45130").then(r.bind(r, 246389));
     return t => (0, n.jsx)(e, i(o({}, t), {
       user: u,
-      guildId: a,
-      analyticsLocations: c,
+      guildId: c,
+      analyticsLocations: a,
       onCloseContextMenu: s,
       isViewOnly: d
     }))

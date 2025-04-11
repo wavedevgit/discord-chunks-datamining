@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n, l, o, i = r(442837),
   u = r(570140),
-  a = r(358085),
-  c = r(998502),
+  c = r(358085),
+  a = r(998502),
   s = r(869614),
   d = r(281083),
   f = r(672598);
@@ -15,7 +15,7 @@ let p = !1,
   v = !1;
 class O extends(o = i.ZP.Store) {
   initialize() {
-    !a.isPlatformEmbedded || __OVERLAY__ || c.ZP.getGPUDriverVersions().then(e => {
+    !c.isPlatformEmbedded || __OVERLAY__ || a.ZP.getGPUDriverVersions().then(e => {
       p = (0, f.Z)(e), b = (0, s.Z)(e), v = (0, d.Z)(e), this.emitChange()
     })
   }

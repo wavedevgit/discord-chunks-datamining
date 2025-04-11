@@ -43,8 +43,8 @@ var i = n(200651),
   F = n(91047),
   W = n(981631),
   V = n(388032),
-  H = n(111932),
-  G = n(20493);
+  G = n(111932),
+  H = n(20493);
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ let Y = e => {
       messageId: o
     });
     return (0, i.jsx)(T.Z, {
-      className: H.__invalid_effect,
+      className: G.__invalid_effect,
       effect: e,
       emojiSize: T.M.LARGE,
       onComplete: () => l(!1)
@@ -111,10 +111,10 @@ let Y = e => {
       e = !0
     }
   }, [t]), (0, i.jsxs)("div", {
-    className: H.burstEmojiSection,
+    className: G.burstEmojiSection,
     children: [d, (0, i.jsx)(p.Z, {
-      className: a()(H.burstEmoji, {
-        [H.hideEmoji]: s
+      className: a()(G.burstEmoji, {
+        [G.hideEmoji]: s
       }),
       emojiId: t.id,
       emojiName: t.name,
@@ -149,7 +149,7 @@ class q extends r.PureComponent {
         className: r,
         children: e.name
       })
-    }(e, 0, H.emoji, a()(H.emoji, H.emojiText)), d = o === x.O.BURST, p = d ? V.t.VmiNjY : V.t.cNfs19, m = V.NW.formatToPlainString(p, {
+    }(e, 0, G.emoji, a()(G.emoji, G.emojiText)), d = o === x.O.BURST, p = d ? V.t.VmiNjY : V.t.cNfs19, m = V.NW.formatToPlainString(p, {
       name: l,
       n: t
     }), f = {}, g = {};
@@ -174,8 +174,8 @@ class q extends r.PureComponent {
         } = s;
         return (0, i.jsxs)(h.P3F, {
           className: a()({
-            [H.reactionDefault]: !n,
-            [H.reactionSelected]: n
+            [G.reactionDefault]: !n,
+            [G.reactionSelected]: n
           }),
           "aria-label": m,
           onClick: () => r({
@@ -208,14 +208,14 @@ function $(e) {
     disableManage: c = !1
   } = e, d = (0, u.e7)([P.default], () => P.default.getId()), p = (0, u.e7)([k.default], () => k.default.getUser(n.id), [n]), g = (0, C.$R)(o), j = (0, u.e7)([A.Z], () => A.Z.can(W.Plq.MANAGE_MESSAGES, o) && g) || d === n.id, v = (0, u.e7)([I.ZP, E.Z, M.Z], () => B.ZP.getName(a, o.id, n));
   return (0, i.jsxs)(b.Z, {
-    className: H.reactorDefault,
+    className: G.reactorDefault,
     onContextMenu: e => (0, F.Pv)(e, n, o),
     align: b.Z.Align.CENTER,
     children: [(0, i.jsx)(b.Z.Child, {
       wrap: !0,
       grow: 0,
       shrink: 0,
-      className: G.marginReset,
+      className: H.marginReset,
       children: (0, i.jsx)(f.Z, {
         user: null != p ? p : n,
         size: h.EFr.SIZE_24
@@ -224,15 +224,15 @@ function $(e) {
       children: (0, i.jsxs)(h.Text, {
         tag: "strong",
         variant: "text-md/normal",
-        className: H.name,
+        className: G.name,
         children: [null != v && "" !== v && (0, i.jsx)("span", {
-          className: n.isPomelo() ? "" : H.nickname,
+          className: n.isPomelo() ? "" : G.nickname,
           children: v
         }), (0, i.jsx)(m.Z, {
           user: n,
-          className: null != v && "" !== v ? H.tagFaded : null,
-          usernameClass: H.username,
-          discriminatorClass: H.discriminator,
+          className: null != v && "" !== v ? G.tagFaded : null,
+          usernameClass: G.username,
+          discriminatorClass: G.discriminator,
           forceUsername: !0
         })]
       })
@@ -252,7 +252,7 @@ function $(e) {
       children: (0, i.jsx)(h.Dio, {
         size: "xs",
         color: "currentColor",
-        className: H.remove
+        className: G.remove
       })
     })]
   })
@@ -304,13 +304,13 @@ class Q extends r.PureComponent {
       reactionType: o
     } = this.props, a = [];
     return 0 === t.length && this.state.loadingMore ? a.push(length) : (a.push(t.length), e && a.push(1)), (0, i.jsxs)("div", {
-      className: H.reactorsContainer,
+      className: G.reactorsContainer,
       children: [o === x.O.BURST && (0, i.jsx)(Y, {
         emoji: n.emoji,
         channelId: r.getChannelId(),
         messageId: r.id
       }), (0, i.jsx)(h.aVo, {
-        className: H.reactors,
+        className: G.reactors,
         fade: !0,
         ref: this.scrollerRef,
         sections: a,
@@ -357,9 +357,9 @@ class Q extends r.PureComponent {
         disableManage: u
       } = this.props, d = l[n];
       return 1 === t ? 0 === n ? (0, i.jsx)(h.$jN, {
-        className: H.spinnerMore
+        className: G.spinnerMore
       }, "hasMore") : null : 0 === l.length && this.state.loadingMore ? (0, i.jsx)(h.$jN, {
-        className: H.spinner
+        className: G.spinner
       }, "loadingMore") : null != d && (0, i.jsx)($, {
         message: r,
         emoji: s.emoji,
@@ -441,9 +441,9 @@ function et(e) {
       "aria-label": c,
       transitionState: l,
       size: h.CgR.DYNAMIC,
-      className: H.container,
+      className: G.container,
       children: [a ? null : (0, i.jsx)(h.Ttm, {
-        className: H.scroller,
+        className: G.scroller,
         fade: !0,
         children: b.map(e => {
           var t;
