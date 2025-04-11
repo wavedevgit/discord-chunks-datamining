@@ -1,31 +1,31 @@
 /** Chunk was on 56035 **/
-t.d(n, {
+n.d(t, {
   p: () => o
 });
-var l = t(359959),
-  a = t(993192),
-  i = t(731965),
-  r = t(174727);
+var l = n(359959),
+  a = n(993192),
+  r = n(731965),
+  i = n(174727);
 let s = (0, a.F)(e => ({
   audio: null,
   file: null,
   loading: !1,
-  loadAudioFromFile: async n => {
-    if ((0, i.j)(() => e({
-        file: n,
+  loadAudioFromFile: async t => {
+    if ((0, r.j)(() => e({
+        file: t,
         audio: null,
-        loading: null != n
-      })), null == n) return;
-    let t = await (0, r.lj)(n);
-    null != t && (0, i.j)(() => e({
-      audio: t,
+        loading: null != t
+      })), null == t) return;
+    let n = await (0, i.lj)(t);
+    null != n && (0, r.j)(() => e({
+      audio: n,
       loading: !1
     }))
   },
   maxVolume: 1,
-  setMaxVolume: n => {
-    (0, i.j)(() => e({
-      maxVolume: n
+  setMaxVolume: t => {
+    (0, r.j)(() => e({
+      maxVolume: t
     }))
   }
 }));

@@ -1,19 +1,19 @@
 /** Chunk was on 56035 **/
-t.d(n, {
+n.d(t, {
   Z: () => p
-}), t(388685);
-var l = t(200651),
-  a = t(192379),
-  i = t(120356),
-  r = t.n(i),
-  s = t(481060),
-  o = t(70956),
-  u = t(747071),
-  c = t(586826),
-  d = t(622594),
-  f = t(174727),
-  m = t(710111),
-  h = t(891694);
+}), n(388685);
+var l = n(200651),
+  a = n(192379),
+  r = n(120356),
+  i = n.n(r),
+  s = n(481060),
+  o = n(70956),
+  u = n(747071),
+  c = n(586826),
+  d = n(622594),
+  f = n(174727),
+  m = n(710111),
+  h = n(891694);
 let g = {
     startPositionMs: 0,
     endPositionMs: 2 * (10 * o.Z.Millis.SECOND),
@@ -21,9 +21,9 @@ let g = {
   },
   p = a.memo(function(e) {
     let {
-      className: n,
-      volume: t,
-      disabled: i = !1,
+      className: t,
+      volume: n,
+      disabled: r = !1,
       onChange: p
     } = e, {
       audio: b
@@ -41,15 +41,15 @@ let g = {
         b.pause(), v(!1)
       }
     }, [b]);
-    let k = a.useCallback(e => {
+    let E = a.useCallback(e => {
         null != b && (b.pause(), null != e && (b.currentTime = e), v(!1))
       }, [b]),
-      E = a.useCallback(() => {
+      k = a.useCallback(() => {
         if (null != b) {
-          if (y) return void k();
-          N >= w ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(N), b.volume = (0, u.Z)(t), b.play(), v(!0)
+          if (y) return void E();
+          N >= w ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(N), b.volume = (0, u.Z)(n), b.play(), v(!0)
         }
-      }, [b, w, k, N, y, C, t]),
+      }, [b, w, E, N, y, C, n]),
       Z = a.useCallback(e => {
         j(e), null == p || p({
           startMs: e.startPositionMs,
@@ -60,15 +60,15 @@ let g = {
         null != b && (b.currentTime = e)
       }, [b]);
     return (0, l.jsxs)("div", {
-      className: r()(h.container, {
+      className: i()(h.container, {
         [h.initialized]: S,
-        [h.disabled]: !S || i
-      }, n),
+        [h.disabled]: !S || r
+      }, t),
       children: [(0, l.jsxs)("div", {
         className: h.playButtonContainer,
         children: [(0, l.jsx)(s.P3F, {
           className: h.playButton,
-          onClick: S ? E : void 0,
+          onClick: S ? k : void 0,
           children: y ? (0, l.jsx)(s.wNq, {
             size: "xs",
             color: "currentColor",
@@ -90,9 +90,9 @@ let g = {
       }), (0, l.jsx)(d.Z, {
         playing: y,
         onPlaybackChange: M,
-        onPausePlayback: k,
+        onPausePlayback: E,
         onChangePosition: Z,
-        disabled: i
+        disabled: r
       })]
     })
   })

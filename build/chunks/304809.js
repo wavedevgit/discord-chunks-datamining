@@ -6,5 +6,8 @@ n.d(t, {
 let r = null;
 
 function i() {
-  return null == r && (r = new AudioContext), r
+  if (null == r) try {
+    r = new AudioContext
+  } catch (e) {}
+  return r
 }
