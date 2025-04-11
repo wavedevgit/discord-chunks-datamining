@@ -1,8 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => m,
-  t: () => h
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
@@ -16,15 +15,12 @@ var i = n(120356),
   d = n(502762),
   f = n(981631),
   _ = n(388032),
-  p = n(432940),
-  h = function(e) {
-    return e[e.PANEL = 0] = "PANEL", e[e.MODAL = 1] = "MODAL", e[e.POPOUT = 2] = "POPOUT", e
-  }({});
+  p = n(432940);
 
-function m(e) {
+function h(e) {
   let {
     user: t,
-    source: n
+    className: n
   } = e, {
     isPendingIncoming: i,
     isBlocked: h,
@@ -35,9 +31,7 @@ function m(e) {
     isIgnored: u.Z.isIgnored(t.id)
   }));
   return h || m && !i ? (0, r.jsxs)(d.Z.Overlay, {
-    className: o()(p.container, {
-      [p.panel]: 0 === n
-    }),
+    className: o()(p.container, n),
     children: [h && (0, r.jsx)(a.xv, {
       variant: "text-sm/semibold",
       color: "header-secondary",

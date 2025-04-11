@@ -90,7 +90,7 @@ function Z(e) {
       })
     }, e.applicationId)), (0, r.jsx)(x.Z, {
       user: t,
-      source: x.t.PANEL
+      className: S.card
     }), t.isProvisional && (0, r.jsx)(s.wQ, {
       userId: t.id,
       headingColor: "header-primary"
@@ -98,7 +98,7 @@ function Z(e) {
       user: t,
       currentUser: n,
       displayProfile: Z,
-      className: S.activity
+      className: S.card
     }), (0, r.jsxs)(j.Z.Overlay, {
       className: S.overlay,
       children: [!W && (null == Z ? void 0 : Z.bio) != null && (null == Z ? void 0 : Z.bio) !== "" && (0, r.jsx)(v.Z, {

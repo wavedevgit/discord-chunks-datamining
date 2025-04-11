@@ -1,6 +1,6 @@
 /**
   Module ID: 34600
-  Original File Name: b97df8381167c497
+  Original File Name: 5cbe92ab680a213a
 **/
 :root {
     --application-subscription-end: hotpink;
@@ -3528,11 +3528,9 @@
     --polls-victor-fill: rgba(36,166,89,.2);
     --polls-voted-fill: rgba(89,102,242,.2);
     --premium-nitro-pink-text: #c269c2;
-    --profile-gradient-message-input-border: rgba(79,79,89,.48);
     --profile-gradient-note-background: rgba(0,0,0,.3);
     --profile-gradient-overlay: rgba(0,0,0,.6);
     --profile-gradient-overlay-synced-with-user-theme: rgba(0,0,0,.8);
-    --profile-gradient-profile-body-background-hover: hsla(0,0%,100%,.16);
     --profile-gradient-role-pill-background: rgba(36,36,41,.5);
     --profile-gradient-role-pill-border: hsla(0,0%,100%,.2);
     --profile-gradient-section-box: rgba(0,0,0,.45);
@@ -3640,7 +3638,12 @@
     --thread-channel-spine: #4f4f59;
     --toast-bg: #111214;
     --typing-indicator-bg: #2b2e30;
+    --user-profile-background-hover: rgba(79,79,89,.3);
+    --user-profile-border: hsla(0,0%,100%,.08);
     --user-profile-header-overflow-background: rgba(31,31,33,.5);
+    --user-profile-note-background-focus: #1f1f21;
+    --user-profile-overlay-background: #111214;
+    --user-profile-overlay-background-hover: rgba(79,79,89,.3);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -3883,11 +3886,9 @@
     --polls-victor-fill: rgba(36,148,79,.2);
     --polls-voted-fill: rgba(89,102,242,.2);
     --premium-nitro-pink-text: #b54ab8;
-    --profile-gradient-message-input-border: hsla(225,4%,45%,.24);
     --profile-gradient-note-background: hsla(0,0%,100%,.3);
     --profile-gradient-overlay: hsla(0,0%,100%,.6);
     --profile-gradient-overlay-synced-with-user-theme: hsla(0,0%,100%,.8);
-    --profile-gradient-profile-body-background-hover: rgba(0,0,0,.08);
     --profile-gradient-role-pill-background: hsla(0,0%,100%,.5);
     --profile-gradient-role-pill-border: rgba(36,36,41,.2);
     --profile-gradient-section-box: hsla(0,0%,100%,.45);
@@ -3995,7 +3996,12 @@
     --thread-channel-spine: #c4c9cf;
     --toast-bg: #fff;
     --typing-indicator-bg: #f2f2f5;
+    --user-profile-background-hover: hsla(220,6%,53%,.16);
+    --user-profile-border: rgba(0,0,0,.08);
     --user-profile-header-overflow-background: hsla(0,0%,100%,.5);
+    --user-profile-note-background-focus: #e3e6e8;
+    --user-profile-overlay-background: #fff;
+    --user-profile-overlay-background-hover: hsla(220,6%,53%,.16);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -4238,11 +4244,9 @@
     --polls-victor-fill: rgba(36,166,89,.2);
     --polls-voted-fill: rgba(89,102,242,.2);
     --premium-nitro-pink-text: #c269c2;
-    --profile-gradient-message-input-border: rgba(79,79,89,.48);
     --profile-gradient-note-background: rgba(0,0,0,.3);
     --profile-gradient-overlay: rgba(0,0,0,.6);
     --profile-gradient-overlay-synced-with-user-theme: rgba(0,0,0,.8);
-    --profile-gradient-profile-body-background-hover: hsla(0,0%,100%,.16);
     --profile-gradient-role-pill-background: rgba(36,36,41,.5);
     --profile-gradient-role-pill-border: hsla(0,0%,100%,.2);
     --profile-gradient-section-box: rgba(0,0,0,.45);
@@ -4350,7 +4354,12 @@
     --thread-channel-spine: #4d4f5c;
     --toast-bg: #212129;
     --typing-indicator-bg: #000;
+    --user-profile-background-hover: rgba(77,79,92,.3);
+    --user-profile-border: hsla(223,8%,46%,.14);
     --user-profile-header-overflow-background: rgba(28,28,36,.5);
+    --user-profile-note-background-focus: #212129;
+    --user-profile-overlay-background: #131318;
+    --user-profile-overlay-background-hover: rgba(77,79,92,.3);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
@@ -4593,11 +4602,9 @@
     --polls-victor-fill: rgba(36,166,89,.2);
     --polls-voted-fill: rgba(89,102,242,.2);
     --premium-nitro-pink-text: #c269c2;
-    --profile-gradient-message-input-border: rgba(79,79,89,.48);
     --profile-gradient-note-background: rgba(0,0,0,.3);
     --profile-gradient-overlay: rgba(0,0,0,.6);
     --profile-gradient-overlay-synced-with-user-theme: rgba(0,0,0,.8);
-    --profile-gradient-profile-body-background-hover: hsla(0,0%,100%,.16);
     --profile-gradient-role-pill-background: rgba(36,36,41,.5);
     --profile-gradient-role-pill-border: hsla(0,0%,100%,.2);
     --profile-gradient-section-box: rgba(0,0,0,.45);
@@ -4705,10 +4712,15 @@
     --thread-channel-spine: #4d4f5c;
     --toast-bg: #2b2e36;
     --typing-indicator-bg: #1c1c24;
+    --user-profile-background-hover: rgba(77,79,92,.3);
+    --user-profile-border: hsla(223,8%,46%,.12);
     --user-profile-header-overflow-background: rgba(28,28,36,.5);
+    --user-profile-note-background-focus: #30333b;
+    --user-profile-overlay-background: #26262e;
+    --user-profile-overlay-background-hover: rgba(77,79,92,.3);
     --voice-video-video-tile-background: rgba(43,46,54,.4);
     --voice-video-video-tile-blur-fallback: rgba(31,31,33,.48);
     --white: #fff
 }
 
-/*# sourceMappingURL=b97df8381167c497.css.map*/
+/*# sourceMappingURL=5cbe92ab680a213a.css.map*/

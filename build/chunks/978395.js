@@ -91,8 +91,7 @@ function P(e) {
         channelId: L
       })
     }, e.applicationId)), (0, r.jsx)(E.Z, {
-      user: t,
-      source: E.t.POPOUT
+      user: t
     }), !V && (0, r.jsx)(T.Z, {
       user: t,
       onOpenProfile: e => null == D ? void 0 : D({
@@ -108,15 +107,13 @@ function P(e) {
       onClose: x
     }), V && (0, r.jsx)(p.Z, {
       isPremiumUser: F,
-      onInteraction: x,
-      className: C.upsell
+      onInteraction: x
     }), (0, r.jsx)(h.Z, {
       user: t,
       currentUser: n,
       displayProfile: P,
       guildId: null == R ? void 0 : R.id,
-      onClose: x,
-      className: C.activity
+      onClose: x
     }), null != R && (0, r.jsx)(S.Z, {
       user: t,
       currentUser: n,

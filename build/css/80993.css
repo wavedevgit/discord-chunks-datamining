@@ -1,6 +1,6 @@
 /**
   Module ID: 80993
-  Original File Name: 86fe74c4161f3ed0
+  Original File Name: ccf6e1d32982ca5c
 **/
 .connectedAccountVanityMetadata_fffe42 {
     margin-top: 4px
@@ -92,8 +92,8 @@
 }
 
 .connectedAccountContainer_e6abe8 {
-    border: 1px solid var(--profile-body-divider-color,var(--background-modifier-accent));
-    border-radius: 4px;
+    border: 1px solid var(--user-profile-border);
+    border-radius: var(--radius-sm);
     margin-top: 16px;
     padding: 8px
 }
@@ -433,4 +433,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=86fe74c4161f3ed0.css.map*/
+/*# sourceMappingURL=ccf6e1d32982ca5c.css.map*/

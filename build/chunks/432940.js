@@ -1,6 +1,5 @@
 /** Chunk was on web.js **/
 "use strict";
 e.exports = {
-  container: "container__581dd",
-  panel: "panel__581dd"
+  container: "container__581dd"
 }

@@ -44,7 +44,7 @@ function b(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let y = [l.Z.BITE_SIZE_PROFILE_POPOUT, l.Z.PROFILE_PANEL];
+let m = [l.Z.BITE_SIZE_PROFILE_POPOUT, l.Z.PROFILE_PANEL];
 
 function I(e) {
   var {
@@ -70,18 +70,18 @@ function I(e) {
   } = (0, i.cj)([c.Z], () => ({
     isBlocked: c.Z.isBlocked(n.id),
     isIgnored: c.Z.isIgnored(n.id)
-  })), [g, m] = o.useState(l || I || l);
+  })), [g, y] = o.useState(l || I || l);
   o.useEffect(() => {
-    m(I || l)
+    y(I || l)
   }, [I, l]);
-  let j = !y.some(e => {
+  let j = !m.some(e => {
       var n;
       return (null != (n = t.sourceAnalyticsLocations) ? n : []).includes(e)
     }),
-    v = s.Rt.useSetting();
-  return g && j && !(I && v) ? (0, r.jsx)(a.W, p({
+    h = s.Rt.useSetting();
+  return g && j && !(I && h) ? (0, r.jsx)(a.W, p({
     user: n,
-    onViewBlockedProfileClick: () => m(!1)
+    onViewBlockedProfileClick: () => y(!1)
   }, t)) : n.isNonUserBot() ? (0, r.jsx)(u.Z, b(p({}, t), {
     user: n
   })) : n.bot ? (0, r.jsx)(d.Z, b(p({}, t), {

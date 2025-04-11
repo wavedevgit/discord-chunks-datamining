@@ -1,6 +1,6 @@
 /**
   Module ID: 69774
-  Original File Name: a17cfefd457692d9
+  Original File Name: b27424365fd5bbbf
 **/
 .row__19fd1 {
     align-items: center;
@@ -292,7 +292,7 @@
 }
 
 .note_fcb628 textarea:focus {
-    background-color: var(--profile-note-background-color);
+    background: var(--user-profile-note-background-focus);
     border-color: var(--input-focused-border)
 }
 
@@ -329,12 +329,12 @@
     display: flex;
     font-weight: 500;
     line-height: 30px;
-    margin: 1px 0 1px 8px;
+    margin: 1px 0 1px 12px;
     padding: 4px
 }
 
 .listRow__9d78f:hover {
-    background-color: var(--profile-body-background-hover)
+    background-color: var(--user-profile-background-hover)
 }
 
 .listRowContent__9d78f {
@@ -390,8 +390,8 @@
 
 .listScroller__9d78f {
     height: 100%;
-    padding: 12px 0;
-    width: 100%
+    margin-right: 4px;
+    padding: 12px 0
 }
 
 .emptyIconFriends__9d78f,.emptyIconGuilds__9d78f,.emptyIconStreamerMode__9d78f {
@@ -511,8 +511,8 @@
 }
 
 .connectedAccountContainer_e6abe8 {
-    border: 1px solid var(--profile-body-divider-color,var(--background-modifier-accent));
-    border-radius: 4px;
+    border: 1px solid var(--user-profile-border);
+    border-radius: var(--radius-sm);
     margin-top: 16px;
     padding: 8px
 }
@@ -649,10 +649,11 @@
 }
 
 .tabBar_d1d9f3 {
-    border-bottom: 1px solid var(--profile-body-divider-color);
+    border-bottom: 1px solid var(--user-profile-border);
     display: flex;
     gap: 32px;
-    margin: 16px 16px 0
+    margin-top: 16px;
+    padding: 0 16px
 }
 
 .tabBar_d1d9f3 .tabBarItem_d1d9f3 {
@@ -715,15 +716,16 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin: 16px;
+    height: 100%;
     overflow: hidden
 }
 
-.body__24502,.overlay__24502 {
-    height: 100%
+.username__24502 {
+    margin: 16px 16px 0
 }
 
-.friendRequestBannerOverlay__24502 {
+.bannerContainer__24502 {
+    margin: 0 16px;
     overflow: visible
 }
 
@@ -760,4 +762,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=a17cfefd457692d9.css.map*/
+/*# sourceMappingURL=b27424365fd5bbbf.css.map*/

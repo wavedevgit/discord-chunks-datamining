@@ -14,7 +14,7 @@ var r = t(442837),
   f = t(146078),
   p = t(228168),
   b = t(981631),
-  y = t(388032);
+  m = t(388032);
 
 function I(e) {
   let {
@@ -23,17 +23,17 @@ function I(e) {
     guildId: I,
     initialSubsection: g
   } = e, {
-    voiceActivityStatusEnabled: m
+    voiceActivityStatusEnabled: y
   } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
     live: j,
-    recent: v,
-    stream: h,
+    recent: h,
+    stream: v,
     outbox: x
   } = (0, s.Z)(n.id), {
-    voiceChannel: O,
-    voiceActivity: _
+    voiceChannel: _,
+    voiceActivity: O
   } = (0, a.Z)({
     userId: n.id,
     guildId: I,
@@ -41,7 +41,7 @@ function I(e) {
   }), Z = n.id === (null == t ? void 0 : t.id), N = (0, r.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
-  }), P = null != h || j.length > 0, E = v.length > 0, {
+  }), P = null != v || j.length > 0, E = h.length > 0, {
     mutualFriendsCount: S,
     mutualGuilds: T
   } = (0, c.Z)(n), C = null == T ? void 0 : T.length, A = (0, d.Z)({
@@ -49,14 +49,14 @@ function I(e) {
     location: b.Sbl.PROFILE_MODAL_TABS
   }), w = [{
     section: p.oh.USER_INFO,
-    text: y.NW.string(y.t.jGoPJS)
+    text: m.NW.string(m.t.jGoPJS)
   }];
-  return !N && (P || m && null == h && null == _ && null != O) ? w.push({
+  return !N && (P || y && null == v && null == O && null != _) ? w.push({
     section: p.oh.ACTIVITY,
-    text: y.NW.string(y.t.chq59f)
+    text: m.NW.string(m.t.chq59f)
   }) : (E || null == x && g === p.Tb.RECENT_ACTIVITY) && w.push({
     section: p.oh.ACTIVITY,
-    text: y.NW.string(y.t.chq59f)
+    text: m.NW.string(m.t.chq59f)
   }), !Z && A && (w.push({
     section: p.oh.MUTUAL_FRIENDS,
     text: (0, u.Z)(S)

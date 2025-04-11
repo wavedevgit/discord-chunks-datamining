@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: 312a0292fd1c94e2
+  Original File Name: 64202084ddc5bc00
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -1246,13 +1246,10 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .menuOverlay_af7fb7 {
-    border: none;
     padding: 8px
 }
 
 .menuDivider_af7fb7 {
-    background-color: var(--profile-body-divider-color);
-    height: 1px;
     margin: 8px 4px
 }
 
@@ -1293,7 +1290,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .menuItemColor_af7fb7:hover {
-    background-color: var(--profile-body-background-hover);
+    background-color: var(--user-profile-overlay-background-hover);
     color: var(--interactive-hover)
 }
 
@@ -17084,4 +17081,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=312a0292fd1c94e2.css.map*/
+/*# sourceMappingURL=64202084ddc5bc00.css.map*/

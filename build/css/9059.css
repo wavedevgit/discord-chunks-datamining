@@ -1,6 +1,6 @@
 /**
   Module ID: 9059
-  Original File Name: bfefe3ada4e535d3
+  Original File Name: 3c99a9183107e26a
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -13228,7 +13228,7 @@ div.profileThemedContainer__656be {
 }
 
 .footer__537ec {
-    border-top: 1px solid var(--border-subtle);
+    border-top: 1px solid var(--user-profile-border);
     z-index: 1
 }
 
@@ -13273,7 +13273,7 @@ div.profileThemedContainer__656be {
     gap: 12px
 }
 
-.activity__747b1,.overlay__747b1 {
+.card__747b1,.overlay__747b1 {
     padding: 12px
 }
 
@@ -13289,7 +13289,7 @@ div.profileThemedContainer__656be {
 }
 
 .note__747b1 textarea:focus {
-    background-color: var(--profile-note-background-color)
+    background: var(--user-profile-note-background-focus)
 }
 
 .note__747b1 textarea:focus::-moz-placeholder {
@@ -13300,11 +13300,6 @@ div.profileThemedContainer__656be {
     color: transparent
 }
 
-.divider__23eb0 {
-    background-color: var(--profile-body-divider-color);
-    height: 1px
-}
-
 .listRow__9d78f {
     align-items: center;
     border-radius: 4px;
@@ -13313,12 +13308,12 @@ div.profileThemedContainer__656be {
     display: flex;
     font-weight: 500;
     line-height: 30px;
-    margin: 1px 0 1px 8px;
+    margin: 1px 0 1px 12px;
     padding: 4px
 }
 
 .listRow__9d78f:hover {
-    background-color: var(--profile-body-background-hover)
+    background-color: var(--user-profile-background-hover)
 }
 
 .listRowContent__9d78f {
@@ -13374,8 +13369,8 @@ div.profileThemedContainer__656be {
 
 .listScroller__9d78f {
     height: 100%;
-    padding: 12px 0;
-    width: 100%
+    margin-right: 4px;
+    padding: 12px 0
 }
 
 .emptyIconFriends__9d78f,.emptyIconGuilds__9d78f,.emptyIconStreamerMode__9d78f {
@@ -13562,4 +13557,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=bfefe3ada4e535d3.css.map*/
+/*# sourceMappingURL=3c99a9183107e26a.css.map*/
