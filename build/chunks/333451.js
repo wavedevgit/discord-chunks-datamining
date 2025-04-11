@@ -16,8 +16,8 @@ var r = n(200651),
   P = n(639119),
   m = n(165583),
   h = n(263954),
-  _ = n(706454),
-  N = n(709586),
+  N = n(706454),
+  _ = n(709586),
   S = n(626135),
   y = n(930153),
   f = n(74538),
@@ -30,17 +30,17 @@ var r = n(200651),
 function M(e) {
   let {
     shouldUpsellFromNoneTier: t
-  } = e, n = (0, o.e7)([_.default], () => _.default.locale);
+  } = e, n = (0, o.e7)([N.default], () => N.default.locale);
   return (0, r.jsxs)("div", {
     className: x.perksList,
     children: [(0, r.jsx)(h.Z, {
-      icon: N.Z,
+      icon: _.Z,
       iconClassName: x.perkIconGuild,
       description: O.NW.formatToPlainString(O.t.sQBgs7, {
         numFreeGuildSubscriptions: b.cb
       })
     }), (0, r.jsx)(h.Z, {
-      icon: N.Z,
+      icon: _.Z,
       iconClassName: x.perkIconGuild,
       description: O.NW.formatToPlainString(O.t["1A6vXl"], {
         percent: (0, y.T3)(n, b.Rr / 100)
@@ -68,8 +68,8 @@ function L(e) {
     onClose: i,
     onBack: o,
     onSkip: h,
-    onSubscriptionConfirmation: _,
-    analyticsLocation: N,
+    onSubscriptionConfirmation: N,
+    analyticsLocation: _,
     analyticsSourceLocation: y,
     priceOptions: L
   } = e, {
@@ -139,7 +139,7 @@ function L(e) {
                   })
                 }
                 return e
-              }({}, N), t = t = {
+              }({}, _), t = t = {
                 section: g.jXE.PREMIUM_GUILD_PURCHASE_MODAL
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -152,7 +152,7 @@ function L(e) {
                 Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
               }), e),
               analyticsSourceLocation: y,
-              onSubscriptionConfirmation: _,
+              onSubscriptionConfirmation: N,
               trialId: v
             })
           },
