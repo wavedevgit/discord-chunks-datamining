@@ -35,8 +35,8 @@ var i = n(200651),
   L = n(886792),
   w = n(635753),
   R = n(520315),
-  Z = n(29380),
-  k = n(783685),
+  k = n(29380),
+  Z = n(783685),
   M = n(981631),
   W = n(206583),
   D = n(388032),
@@ -99,11 +99,11 @@ function F(e) {
       location: "AppLauncherProfile"
     }),
     {
-      enabled: Z
+      enabled: k
     } = I.X.useExperiment({
       location: "AppLauncherProfile"
     }),
-    [k, M] = r.useState(y),
+    [Z, M] = r.useState(y),
     {
       friends: U,
       friendsLastPlayed: F
@@ -140,7 +140,7 @@ function F(e) {
     className: o()({
       [B.experimentLayout]: R.enabled,
       [B.altLayout]: R.altLayout,
-      [B.fixedHeight]: k && U.length > 1 && U.length <= 3
+      [B.fixedHeight]: Z && U.length > 1 && U.length <= 3
     }, B.container),
     children: [R.enabled ? (0, i.jsxs)("div", {
       className: B.experimentTitleContainer,
@@ -149,14 +149,16 @@ function F(e) {
       }), (0, i.jsx)(G, {
         application: l
       })]
-    }) : null, Z && 0 !== U.length ? (0, i.jsxs)(m.njP, {
-      selectedItem: k ? "friends" : "overview",
+    }) : null, k && 0 !== U.length ? (0, i.jsxs)(m.njP, {
+      className: B.tabBar,
+      selectedItem: Z ? "friends" : "overview",
       onItemSelect: e => {
         "friends" === e ? M(!0) : M(!1)
       },
       type: "top",
       children: [(0, i.jsx)(m.njP.Item, {
         id: "overview",
+        className: B.tabItem,
         children: D.NW.string(D.t["/dp6yc"])
       }), (0, i.jsx)(m.njP.Item, {
         id: "friends",
@@ -166,7 +168,7 @@ function F(e) {
           shortText: !1
         })
       })]
-    }) : null, k ? (0, i.jsx)(z, {
+    }) : null, Z ? (0, i.jsx)(z, {
       application: l,
       pepButtonLabelEnabled: R.enabled,
       children: (0, i.jsxs)("div", {
@@ -368,7 +370,7 @@ function Q(e) {
     }, B.entrypointContainer),
     children: [(0, i.jsx)("div", {
       className: B.entryPointContainerFlexChild,
-      children: (0, i.jsx)(Z.Z, {
+      children: (0, i.jsx)(k.Z, {
         context: n,
         application: l,
         sectionName: a,
@@ -398,7 +400,7 @@ function Q(e) {
       })
     }) : (0, i.jsx)("div", {
       className: B.entryPointContainerFlexChild,
-      children: (0, i.jsx)(k.Z, {
+      children: (0, i.jsx)(Z.Z, {
         botUserId: f,
         applicationId: l.id,
         buttonSize: j,

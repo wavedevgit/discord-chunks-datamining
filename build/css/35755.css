@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: c29e7e48388bc992
+  Original File Name: 83a61ff5a9c24008
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -652,6 +652,10 @@
     margin-left: 6px
 }
 
+.floatLeft__4daa6 {
+    float: left
+}
+
 .tooltipContent__3f9f9 {
     text-align: center
 }
@@ -879,6 +883,11 @@
     height: 100%
 }
 
+:where(.visual-refresh) .tabBar__95856 .tabItem__95856 {
+    font-weight: 500;
+    line-height: 18px
+}
+
 :root {
     --custom-app-launcher-sticky-header-height: 66px;
     --custom-app-launcher-container-border-radius: var(--radius-sm)
@@ -931,10 +940,16 @@
     border-radius: var(--radius-md)
 }
 
+.friendsWhoPlayHover_cb32c7 {
+    color: var(--text-secondary);
+    margin-top: 2px
+}
+
 .friendsWhoPlayHover_cb32c7:hover {
+    color: var(--interactive-active);
     text-decoration: underline;
-    -webkit-text-decoration-color: var(--text-normal);
-    text-decoration-color: var(--text-normal)
+    -webkit-text-decoration-color: var(--interactive-active);
+    text-decoration-color: var(--interactive-active)
 }
 
 .rowContainer_cb32c7:first-child {
@@ -1590,4 +1605,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=c29e7e48388bc992.css.map*/
+/*# sourceMappingURL=83a61ff5a9c24008.css.map*/

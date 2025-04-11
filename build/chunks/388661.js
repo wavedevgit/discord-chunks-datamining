@@ -1,4 +1,4 @@
-/** Chunk was on 55666 **/
+/** Chunk was on 32652 **/
 B.d(g, {
   Z: () => t
 });
@@ -23,7 +23,7 @@ let t = function(A) {
     primaryColor: d,
     secondaryColor: n,
     isDisabled: M = !1
-  } = A, L = (0, D.e7)([P.Z], () => P.Z.getProps().originalProfile), s = null != L && L.tag !== Q;
+  } = A, s = (0, D.e7)([P.Z], () => P.Z.getProps().originalProfile), L = null != s && s.tag !== Q;
   return (0, C.jsxs)("div", {
     className: g,
     children: [(0, C.jsx)(f.vwX, {
@@ -62,7 +62,7 @@ let t = function(A) {
           children: e.NW.string(r.Z.UbC8y8)
         })
       })]
-    }), s && (0, C.jsx)(v.Z, {
+    }), L && (0, C.jsx)(v.Z, {
       className: o.tagChangeInfoBox,
       children: (0, C.jsx)(f.Text, {
         variant: "text-xs/medium",

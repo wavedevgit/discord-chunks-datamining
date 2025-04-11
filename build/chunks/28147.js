@@ -1,6 +1,6 @@
 /** Chunk was on 35755 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => k
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -53,11 +53,11 @@ let L = Array(6).fill(0).map((e, t) => t),
   w = [, , , ].fill(0).map((e, t) => t),
   R = [, , , , ].fill(0).map((e, t) => t);
 
-function Z(e) {
-  return (0, i.jsx)(k, T({}, e))
+function k(e) {
+  return (0, i.jsx)(Z, T({}, e))
 }
 
-function k(e) {
+function Z(e) {
   let {
     context: t,
     query: n,
@@ -152,13 +152,13 @@ function M(e) {
       num: o.length
     })
   }, [o.length, g, x]);
-  let Z = T || w,
-    k = T ? j.Z.buttonTypes.VIEW_LESS : j.Z.buttonTypes.VIEW_MORE,
-    M = Z ? o : y;
+  let k = T || w,
+    Z = T ? j.Z.buttonTypes.VIEW_LESS : j.Z.buttonTypes.VIEW_MORE,
+    M = k ? o : y;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(j.Z, {
       title: I.NW.string(I.t["0hKkS0"]),
-      buttonType: k,
+      buttonType: Z,
       onClickViewButton: m ? N : void 0
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,

@@ -34,8 +34,8 @@ function P(e) {
     showFriendsTab: P
   } = e, O = "channel" === n.type ? n.channel : void 0, A = (0, l.e7)([f.Z], () => f.Z.entrypoint()), I = null != (t = (0, p.q)(c.id === v.bi.BUILT_IN ? null : c.id)) ? t : c, S = (0, l.e7)([s.Z], () => s.Z.inDevModeForApplication(I.id)), T = (0, b.ye)(I) ? E : C.Z, L = m.PM.useExperiment({
     location: "AppLauncherApplicationViewScreen"
-  }), w = r.useRef(null), [R, Z] = r.useState(!1), {
-    iconURL: k,
+  }), w = r.useRef(null), [R, k] = r.useState(!1), {
+    iconURL: Z,
     name: M
   } = r.useMemo(() => (0, b.sl)(I, {
     fakeAppIconURL: j,
@@ -55,11 +55,11 @@ function P(e) {
       application: I,
       context: n,
       name: M,
-      iconURL: k,
+      iconURL: Z,
       scrollerRef: w,
       sectionName: u
-    }), null != k && (0, i.jsx)(_.Z, {
-      src: k,
+    }), null != Z && (0, i.jsx)(_.Z, {
+      src: Z,
       className: N.appIcon
     }), (0, i.jsx)(o.Z, {
       size: L.enabled ? 44 : 54
@@ -74,7 +74,7 @@ function P(e) {
       application: I,
       sectionName: u,
       installOnDemand: U,
-      setHasCommands: Z
+      setHasCommands: k
     }) : null, L.enabled ? (0, i.jsx)(C.u, {
       context: n,
       application: I,

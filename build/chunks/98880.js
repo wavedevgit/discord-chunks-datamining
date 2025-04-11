@@ -36,8 +36,8 @@ var i, r = n(200651),
   L = n(783097),
   w = n(695676),
   R = n(176412),
-  Z = n(226026),
-  k = n(570949),
+  k = n(226026),
+  Z = n(570949),
   M = n(753972),
   W = n(635753),
   D = n(981631),
@@ -147,31 +147,28 @@ function Q(e) {
     disabled: m,
     containerStyle: f,
     look: h
-  } = e, _ = l.useCallback(e => {
+  } = e, b = l.useCallback(e => {
     if ((0, L.BQ)(t)) {
       let n = t instanceof P.ZP ? t : P.ZP.createFromServer(t);
-      (0, u.vq)(e, e => (0, r.jsx)(k.Z, G({
+      (0, u.vq)(e, e => (0, r.jsx)(Z.Z, G({
         application: n
       }, e)))
     }
   }, [t]), {
-    name: y,
-    description: x
+    name: _,
+    description: y
   } = l.useMemo(() => (0, L.sl)(t, {
     fakeAppIconURL: V
   }), [t]), {
-    friends: C
-  } = (0, b.Z)(t), {
-    trackItemImpressionRef: v
-  } = (0, Z.Z)({
+    trackItemImpressionRef: x
+  } = (0, k.Z)({
     applicationId: t.id,
     applicationFlags: (0, L.BQ)(t) ? t.flags : void 0,
     sectionName: o,
     sectionPosition: s,
     sectionOverallPosition: d,
-    promotionalLabel: (0, L.dF)(t),
-    numFriendsWhoPlay: C.length
-  }), g = l.useMemo(() => {
+    promotionalLabel: (0, L.dF)(t)
+  }), C = l.useMemo(() => {
     let e = m ? H.containerDisabled : H.container;
     return a()(e, {
       [H.containerBorderRadius]: "row" !== h,
@@ -180,17 +177,17 @@ function Q(e) {
     }, f)
   }, [f, m, h]);
   return m ? (0, r.jsx)("div", {
-    ref: p ? v : void 0,
-    className: g,
+    ref: p ? x : void 0,
+    className: C,
     children: i
   }) : (0, r.jsx)(c.P3F, {
-    innerRef: p ? v : void 0,
-    className: g,
+    innerRef: p ? x : void 0,
+    className: C,
     onClick: n,
-    onContextMenu: _,
+    onContextMenu: b,
     "aria-label": U.NW.formatToPlainString(U.t["zLhr9/"], {
-      applicationName: y,
-      applicationDescription: x
+      applicationName: _,
+      applicationDescription: y
     }),
     children: (0, r.jsx)(c.Rny, {
       children: i
@@ -250,7 +247,7 @@ function K(e) {
     fakeAppIconURL: V
   }), [t]), g = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), j = (0, N.ZP)(y, ""), [P, E] = l.useState(!1), A = l.useCallback(() => {
     !0 === o && E(!0)
-  }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => E(!1), []), Z = (0, s.e7)([f.Z, O.Z], () => f.Z.inDevModeForApplication(t.id) || O.Z.inTestModeForApplication(t.id), [t.id]), k = (0, L.WA)(t), {
+  }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => E(!1), []), k = (0, s.e7)([f.Z, O.Z], () => f.Z.inDevModeForApplication(t.id) || O.Z.inTestModeForApplication(t.id), [t.id]), Z = (0, L.WA)(t), {
     enabled: D
   } = S.X.useExperiment({
     location: "AppLauncherAppCard"
@@ -278,7 +275,7 @@ function K(e) {
           disableFadeIn: u,
           overrideImageUrl: m
         })
-      }), Z || I || k !== d.ww.NONE ? (0, r.jsxs)("div", {
+      }), k || I || Z !== d.ww.NONE ? (0, r.jsxs)("div", {
         className: H.bannerUpperRightContainer,
         children: [I && (0, r.jsx)("div", {
           className: H.promotedLabelWrapperBanner,
@@ -287,8 +284,8 @@ function K(e) {
             color: "header-primary",
             children: U.NW.string(U.t["/eVltr"])
           })
-        }), Z && (0, r.jsx)($, {}), k !== d.ww.NONE && (0, r.jsx)(v.Z, {
-          labelType: k
+        }), k && (0, r.jsx)($, {}), Z !== d.ww.NONE && (0, r.jsx)(v.Z, {
+          labelType: Z
         })]
       }) : null, (0, r.jsx)("div", {
         className: H.bannerImageChildContainer,
