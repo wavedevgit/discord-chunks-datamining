@@ -142,9 +142,9 @@ let P = (e, t) => N.NW.formatToPlainString(N.t.tAwI1t, {
         badges: z,
         entry: n,
         showCoverImage: !1,
-        onClickTitle: W,
-        onClickSubtitle: W,
-        onClickThumbnail: W
+        onClickTitle: D ? void 0 : W,
+        onClickSubtitle: D ? void 0 : W,
+        onClickThumbnail: D ? void 0 : W
       }),
       Q = (0, l.Z)(k, T.xjy.JOIN) || (0, c.Z)(k),
       X = Q ? (0, r.jsx)(u.Z, {
@@ -161,7 +161,7 @@ let P = (e, t) => N.NW.formatToPlainString(N.t.tAwI1t, {
         IconComponent: J,
         children: N.NW.string(N.t.GDWYR0)
       }),
-      ee = [Q ? X : $].filter(h.lm);
+      ee = [Q && !D ? X : $].filter(h.lm);
     return (0, r.jsxs)(I.yR, {
       children: [q, (0, r.jsx)(I.St, {
         children: (0, r.jsx)(I.WT, {

@@ -105,6 +105,8 @@ function b(e) {
     className: d.oauth2ModalWrapper
   }, s), {
     children: [(0, r.jsx)(a.hz, {
+      paddingFix: !1,
+      className: d.oauth2ModalContent,
       children: t
     }), null != n && (0, r.jsx)(a.mz, {
       className: d.footer,
