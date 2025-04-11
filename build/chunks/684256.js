@@ -24,7 +24,7 @@ function h(e) {
     items: b,
     sectionName: _,
     sectionOverallPosition: y
-  } = e, x = (0, u.s)("AppLauncherApplicationListViewScreen"), C = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
+  } = e, x = (0, u.s)(), C = r.useMemo(() => n === c._b.TEXT ? d.kA : d.qR, [n]);
   return (0, i.jsxs)("section", {
     className: f.container,
     "aria-label": m.NW.formatToPlainString(m.t.iobNIC, {

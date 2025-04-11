@@ -69,14 +69,14 @@ function w(e) {
     application: l,
     context: w,
     className: R,
-    sectionName: k
-  } = e, Z = r.useRef(null), M = (0, a.e7)([j.Z], () => j.Z.entrypoint()), W = (0, P.L1)(l), D = (0, m.Eb)(W), B = (0, d.R)(l.id), U = (0, a.e7)([y.Z], () => {
+    sectionName: Z
+  } = e, k = r.useRef(null), M = (0, a.e7)([j.Z], () => j.Z.entrypoint()), W = (0, P.L1)(l), D = (0, m.Eb)(W), B = (0, d.R)(l.id), U = (0, a.e7)([y.Z], () => {
     var e;
     return null != (e = y.Z.getGuildId()) ? e : void 0
   }, []), H = {
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU,
     application_id: l.id,
-    section_name: k,
+    section_name: Z,
     source: j.Z.lastShownEntrypoint()
   }, V = x.default.getCurrentUser(), F = h.Z.useExperiment({
     location: u.Vh.APP_LAUNCHER_APPLICATION_VIEW_MORE_MENU
@@ -110,7 +110,7 @@ function w(e) {
         color: s.TVs.colors.INTERACTIVE_ACTIVE
       })
     }), (0, i.jsx)(s.yRy, {
-      targetElementRef: Z,
+      targetElementRef: k,
       renderPopout: e => {
         let {
           closePopout: t
@@ -174,7 +174,7 @@ function w(e) {
       align: "right",
       position: "bottom",
       children: e => (0, i.jsx)(s.P3F, L(T({
-        innerRef: Z
+        innerRef: k
       }, e), {
         onClick: e.onClick,
         className: o()(S.clickable, R),

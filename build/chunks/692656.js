@@ -34,8 +34,8 @@ var i = n(200651),
   L = n(823379),
   w = n(424602),
   R = n(541099),
-  k = n(827498),
-  Z = n(87005),
+  Z = n(827498),
+  k = n(87005),
   M = n(219066),
   W = n(106066),
   D = n(783097),
@@ -74,7 +74,7 @@ function ei(e) {
     setSearchQuery: o,
     setScroller: a,
     isScrollCloseToBottom: s
-  } = e, c = (0, f.e7)([_.Z], () => _.Z.getIsEnabled(), []), u = n === k._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, D.Yn)(n), p = !(0, D.Yn)(n), m = n === k._b.TEXT, [b, x] = ed(!0), [C, v] = ed(u), [g, N] = ed(d), [j, P] = ed(p), E = b && C && g && j, O = (d || u) && !E, A = p && c;
+  } = e, c = (0, f.e7)([_.Z], () => _.Z.getIsEnabled(), []), u = n === Z._b.TEXT && "channel" === t.type && null != t.channel && !t.channel.isPrivate(), d = (0, D.Yn)(n), p = !(0, D.Yn)(n), m = n === Z._b.TEXT, [b, x] = ed(!0), [C, v] = ed(u), [g, N] = ed(d), [j, P] = ed(p), E = b && C && g && j, O = (d || u) && !E, A = p && c;
   r.useEffect(() => {
     var e;
     let n = "channel" === t.type ? null == (e = t.channel) ? void 0 : e.guild_id : void 0;
@@ -83,7 +83,7 @@ function ei(e) {
       force: !0
     })
   }, [t]), r.useEffect(() => {
-    n === k._b.VOICE && y.ux()
+    n === Z._b.VOICE && y.ux()
   }, [n]);
   let I = l.length > 0;
   return (0, i.jsxs)("div", {
@@ -117,8 +117,8 @@ function ei(e) {
           context: t,
           onEmptyState: P
         }), E && (0, i.jsx)(F.A, {
-          type: k.LG.HOME_EMPTY,
-          textContent: n === k._b.TEXT ? J.NW.string(J.t.iKZctb) : J.NW.string(J.t.RL7Ncn)
+          type: Z.LG.HOME_EMPTY,
+          textContent: n === Z._b.TEXT ? J.NW.string(J.t.iKZctb) : J.NW.string(J.t.RL7Ncn)
         }), O && (0, i.jsx)(G.Z, {})]
       })
     })]
@@ -194,10 +194,10 @@ function eo(e) {
     context: t,
     entrypoint: n,
     onEmptyState: l
-  } = e, o = n === k._b.VOICE, {
+  } = e, o = n === Z._b.VOICE, {
     frecentApps: a,
     loading: s
-  } = (0, Z.f)({
+  } = (0, k.f)({
     context: t,
     onlyActivityApps: o,
     allowCommandFetch: !0,
@@ -215,16 +215,16 @@ function eo(e) {
     handleViewMore: m
   } = ep({
     title: d,
-    look: n === k._b.VOICE ? U.U4.LARGE_BANNER : U.U4.ROW,
+    look: n === Z._b.VOICE ? U.U4.LARGE_BANNER : U.U4.ROW,
     items: c,
     limit: 8,
-    sectionName: k.L3.RECENT_APPS
+    sectionName: Z.L3.RECENT_APPS
   });
   r.useEffect(() => {
     s || 0 !== p.length && (0, g.yw)(Y.rMx.APP_LAUNCHER_FRECENTS_SEEN, {
       num: p.length,
-      section_name: k.L3.RECENT_APPS,
-      location: k.G0.HOME,
+      section_name: Z.L3.RECENT_APPS,
+      location: Z.G0.HOME,
       source: n
     })
   }, [p.length, n, s]);
@@ -262,8 +262,8 @@ function eo(e) {
             context: t,
             application: r,
             look: U.U4.ICON,
-            location: k.G0.HOME,
-            sectionName: k.L3.RECENT_APPS,
+            location: Z.G0.HOME,
+            sectionName: Z.L3.RECENT_APPS,
             resultsPosition: n,
             isOneClickCTA: !0,
             fetchesApplication: !1
@@ -271,8 +271,8 @@ function eo(e) {
             context: t,
             application: r,
             look: U.U4.ICON,
-            location: k.G0.HOME,
-            sectionName: k.L3.RECENT_APPS,
+            location: Z.G0.HOME,
+            sectionName: Z.L3.RECENT_APPS,
             resultsPosition: n
           }, r.id)
         })
@@ -296,11 +296,11 @@ function ea(e) {
     {
       trackSectionImpressionRef: s
     } = (0, V.Z)({
-      sectionName: k.L3.ACTIVITIES,
+      sectionName: Z.L3.ACTIVITIES,
       numItems: o.length,
       numVisibleItems: o.length
     }),
-    c = (0, W.s)("ActivitiesShelfSection"),
+    c = (0, W.s)(),
     u = 0 === o.length;
   return (r.useEffect(() => {
     l(u)
@@ -323,7 +323,7 @@ function ea(e) {
           application: r,
           look: a,
           location: j.Vh.APP_LAUNCHER_HOME,
-          sectionName: k.L3.ACTIVITIES,
+          sectionName: Z.L3.ACTIVITIES,
           resultsPosition: t,
           sectionOverallPosition: 0,
           isOneClickCTA: !c,
@@ -338,7 +338,7 @@ function es(e) {
   let {
     context: t,
     onEmptyState: n
-  } = e, l = k.L3.APPS_IN_THIS_SERVER, {
+  } = e, l = Z.L3.APPS_IN_THIS_SERVER, {
     appsInThisServer: o,
     isLoading: a
   } = (0, M.Z)({
@@ -447,7 +447,7 @@ function ec(e) {
     }
   }({
     context: t,
-    location: n === k._b.TEXT ? a.I.APP_LAUNCHER_TEXT : a.I.APP_LAUNCHER_VOICE
+    location: n === Z._b.TEXT ? a.I.APP_LAUNCHER_TEXT : a.I.APP_LAUNCHER_VOICE
   }), m = function(e) {
     var t;
     let {

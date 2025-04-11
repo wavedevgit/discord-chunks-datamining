@@ -47,8 +47,8 @@ function C(e) {
     location: "AppPrimaryEntryPointButton()"
   }), w = r.useMemo(() => (0, f.XZ)(v.displayName), [v.displayName]), {
     onActivityItemSelected: R,
-    buttonColor: k,
-    buttonText: Z
+    buttonColor: Z,
+    buttonText: k
   } = (0, b.P7)({
     context: t,
     application: n,
@@ -67,7 +67,7 @@ function C(e) {
     context: t,
     application: n,
     activityAction: T
-  }), D = L.enabled ? y.NW.string(y.t["1KxmJi"]) : Z;
+  }), D = L.enabled ? y.NW.string(y.t["1KxmJi"]) : k;
   return (0, i.jsx)(l.ua7, {
     shouldShow: null != W,
     tooltipContentClassName: x.tooltipContent,
@@ -111,7 +111,7 @@ function C(e) {
       }({}, a), r = r = {
         type: "submit",
         size: g,
-        color: k,
+        color: Z,
         disabled: M,
         submitting: I,
         onClick: () => {
