@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => M
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -16,22 +16,21 @@ var r = n(200651),
   _ = n(879892),
   p = n(245004),
   h = n(430824),
-  m = n(496675),
-  g = n(713081),
-  E = n(905128),
-  b = n(50101),
-  y = n(156732),
-  v = n(690786),
-  O = n(639777),
-  I = n(441536),
-  S = n(535396),
-  T = n(981631),
-  N = n(680278),
-  A = n(388032),
-  C = n(840969),
-  P = n(501867);
+  m = n(713081),
+  g = n(905128),
+  E = n(50101),
+  b = n(156732),
+  y = n(690786),
+  v = n(639777),
+  O = n(441536),
+  I = n(535396),
+  S = n(981631),
+  T = n(680278),
+  N = n(388032),
+  A = n(840969),
+  C = n(501867);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -40,20 +39,20 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 
-function w(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -64,136 +63,136 @@ function D(e, t) {
   return n
 }
 
-function L(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function x(e) {
+function L(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: o
   } = e, {
     analyticsLocations: l
-  } = (0, f.ZP)(), g = null != (0, v.Z)(t, n), E = (0, c.e7)([h.Z, m.Z], () => (0, O.D)(m.Z, h.Z.getGuild(t))), [b, S] = i.useState(!1), [R, D] = i.useState(!1), x = R, M = i.useCallback(() => {
+  } = (0, f.ZP)(), c = null != (0, y.Z)(t, n), m = (0, v.Z)(t), [g, E] = i.useState(!1), [I, P] = i.useState(!1), w = I, L = i.useCallback(() => {
     let e = h.Z.getGuild(t);
     null != e && (0, _.u)({
       analyticsLocation: {
-        page: T.ZY5.GUILD_POWERUPS_MARKETING,
-        section: T.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
+        page: S.ZY5.GUILD_POWERUPS_MARKETING,
+        section: S.jXE.GUILD_POWERUPS_MARKETING_PERKS_SECTION
       },
       numberOfBoostsToAdd: 1,
       analyticsLocations: l,
       guild: e
     })
-  }, [t, l]), k = i.useCallback(() => {
-    o(), (0, I.Z)(t, n.skuId)
-  }, [t, n.skuId, o]), j = {
+  }, [t, l]), x = i.useCallback(() => {
+    o(), (0, O.Z)(t, n.skuId)
+  }, [t, n.skuId, o]), M = {
     tension: 400,
     friction: 30
-  }, U = (0, u.q_F)({
-    transform: x ? "translateX(-50%) translateY(0px) scale(2.40)" : "translateX(-50%) translateY(32px) scale(1)",
-    borderRadius: x ? "7px" : "0px",
-    opacity: x ? .3 : 1,
+  }, k = (0, u.q_F)({
+    transform: w ? "translateX(-50%) translateY(0px) scale(2.40)" : "translateX(-50%) translateY(32px) scale(1)",
+    borderRadius: w ? "7px" : "0px",
+    opacity: w ? .3 : 1,
     transformOrigin: "center 0%",
-    config: j
+    config: M
+  }), j = (0, u.q_F)({
+    y: w ? -25 : 0,
+    config: M
+  }), U = (0, u.q_F)({
+    opacity: +!!w,
+    transform: w ? "translateY(0)" : "translateY(20px)",
+    config: M
   }), G = (0, u.q_F)({
-    y: x ? -25 : 0,
-    config: j
-  }), B = (0, u.q_F)({
-    opacity: +!!x,
-    transform: x ? "translateY(0)" : "translateY(20px)",
-    config: j
-  }), V = (0, u.q_F)({
-    opacity: +!!x,
-    config: j
-  }), F = i.useCallback(e => {
-    e && S(!0)
-  }, []), Z = (0, d.O)(F), H = (0, y.Z)(n);
+    opacity: +!!w,
+    config: M
+  }), B = i.useCallback(e => {
+    e && E(!0)
+  }, []), V = (0, d.O)(B), F = (0, b.Z)(n);
   return (0, r.jsxs)("div", {
-    className: a()(P.topPerksCard, P.animatedTopPerksCard, C.powerupCard, {
-      [P.animate]: b
+    className: a()(C.topPerksCard, C.animatedTopPerksCard, A.powerupCard, {
+      [C.animate]: g
     }),
-    onMouseEnter: () => D(!0),
-    onMouseLeave: () => D(!1),
+    onMouseEnter: () => P(!0),
+    onMouseLeave: () => P(!1),
     children: [(0, r.jsx)("div", {
-      className: P.intObserver,
-      ref: Z
+      className: C.intObserver,
+      ref: V
     }), (0, r.jsxs)("div", {
-      className: P.topPerksCardImageWrapper,
+      className: C.topPerksCardImageWrapper,
       children: [(0, r.jsx)(s.animated.img, {
-        className: a()(P.topPerksCardImage, C.image),
-        src: H,
+        className: a()(C.topPerksCardImage, A.image),
+        src: F,
         alt: "",
-        style: U
+        style: k
       }), (0, r.jsx)(s.animated.div, {
-        className: P.imageGradientOverlay,
-        style: V
+        className: C.imageGradientOverlay,
+        style: G
       })]
-    }), x && (0, r.jsx)("div", {
-      className: P.borderGlowOverlay
+    }), w && (0, r.jsx)("div", {
+      className: C.borderGlowOverlay
     }), (0, r.jsxs)(s.animated.div, {
-      style: L(w({}, G), {
-        transform: G.y.to(e => "translateY(".concat(e, "px)"))
+      style: D(R({}, j), {
+        transform: j.y.to(e => "translateY(".concat(e, "px)"))
       }),
-      className: a()(P.contentContainer, C.contentContainer),
+      className: a()(C.contentContainer, A.contentContainer),
       children: [(0, r.jsx)(p.xm, {
         heading: n.title,
         description: n.description,
-        label: A.NW.formatToPlainString(N.Z.QOacIS, {
+        label: N.NW.formatToPlainString(T.Z.QOacIS, {
           quantity: n.cost
         }),
-        isEnabled: g
+        isEnabled: c
       }), (0, r.jsxs)(s.animated.div, {
-        style: B,
-        className: P.buttonsContainer,
+        style: U,
+        className: C.buttonsContainer,
         children: [(0, r.jsx)(u.zxk, {
           grow: !0,
-          onClick: M,
+          onClick: L,
           color: u.zxk.Colors.BRAND,
-          className: P.button,
-          children: A.NW.string(A.t["oPAx7+"])
-        }), E && (0, r.jsx)(u.zxk, {
+          className: C.button,
+          children: N.NW.string(N.t["oPAx7+"])
+        }), m && (0, r.jsx)(u.zxk, {
           grow: !0,
-          onClick: k,
+          onClick: x,
           color: u.zxk.Colors.PRIMARY,
-          className: P.button,
-          children: A.NW.string(A.t.GoCQxc)
+          className: C.button,
+          children: N.NW.string(N.t.GoCQxc)
         })]
       })]
     }), (0, r.jsx)(u.IGR, {
-      className: P.topPerksCardNew,
-      text: A.NW.string(A.t.y2b7CA)
-    }), b && (0, r.jsx)("div", {
-      className: P.shineLine
+      className: C.topPerksCardNew,
+      text: N.NW.string(N.t.y2b7CA)
+    }), g && (0, r.jsx)("div", {
+      className: C.shineLine
     })]
   })
 }
-let M = i.forwardRef((e, t) => {
+let x = i.forwardRef((e, t) => {
   var n;
   let {
     guild: o,
     onClose: a
-  } = e, s = (0, b.Ek)(o.id, "GuildPowerupsMarketingPowerupCards");
+  } = e, s = (0, E.Ek)(o.id, "GuildPowerupsMarketingPowerupCards");
   i.useEffect(() => {
-    s && ((0, g.Sn)(o.id), (0, g.Fm)(o.id))
+    s && ((0, m.Sn)(o.id), (0, m.Fm)(o.id))
   }, [s, o.id]);
-  let u = (0, c.e7)([E.Z], () => E.Z.getStateForGuild(o.id)),
-    d = null != (n = null == u ? void 0 : u.catalog.get(S.Us.PERK)) ? n : [];
+  let u = (0, c.e7)([g.Z], () => g.Z.getStateForGuild(o.id)),
+    d = null != (n = null == u ? void 0 : u.catalog.get(I.Us.PERK)) ? n : [];
   return s && 0 !== d.length ? (0, r.jsxs)("div", {
     ref: t,
-    className: C.container,
+    className: A.container,
     children: [(0, r.jsx)(l.X6, {
       variant: "heading-xxl/extrabold",
-      children: A.NW.string(N.Z.p6HUDQ)
+      children: N.NW.string(T.Z.p6HUDQ)
     }), (0, r.jsx)(l.xv, {
       variant: "text-lg/medium",
-      children: A.NW.string(N.Z.MYYPa2)
+      children: N.NW.string(T.Z.MYYPa2)
     }), (0, r.jsx)("div", {
-      className: C.powerupsContainer,
-      children: d.map(e => (0, r.jsx)(x, {
+      className: A.powerupsContainer,
+      children: d.map(e => (0, r.jsx)(L, {
         guildId: o.id,
         powerup: e,
         onClose: a
@@ -201,5 +200,5 @@ let M = i.forwardRef((e, t) => {
     })]
   }) : null
 });
-M.displayName = "GuildPowerupsMarketingPowerupCards";
-let k = M
+x.displayName = "GuildPowerupsMarketingPowerupCards";
+let M = x

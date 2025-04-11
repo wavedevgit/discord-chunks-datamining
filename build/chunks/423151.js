@@ -1,8 +1,11 @@
 /** Chunk was on 8039 **/
-e.exports = {
+n.r(e.exports = {
   container: "container_a1bfef",
+  caretLeftTop: "caretLeftTop_a1bfef",
+  caretTopCenter: "caretTopCenter_a1bfef",
   imageContainer: "imageContainer_a1bfef",
   image: "image_a1bfef",
   close: "close_a1bfef",
-  header: "header_a1bfef"
-}
+  header: "header_a1bfef",
+  description: "description_a1bfef"
+})
