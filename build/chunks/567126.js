@@ -8,8 +8,8 @@ var r = n(200651),
   l = n(192379),
   i = n(120356),
   s = n.n(i),
-  o = n(209739),
-  a = n.n(o),
+  a = n(209739),
+  o = n.n(a),
   c = n(268146),
   d = n(442837),
   u = n(846519),
@@ -22,15 +22,15 @@ var r = n(200651),
   _ = n(569984),
   j = n(918701),
   v = n(977156),
-  b = n(28798),
-  S = n(131951),
+  S = n(28798),
+  N = n(131951),
   C = n(449224),
-  N = n(358085),
+  b = n(358085),
   y = n(463727),
   Z = n(855403),
   I = n(299570),
-  w = n(960861),
-  O = n(59468),
+  O = n(960861),
+  w = n(59468),
   T = n(989941),
   E = n(39540),
   P = n(958707),
@@ -63,7 +63,7 @@ function U(e) {
 }
 
 function B(e) {
-  let t = (0, N.isWindows)() ? (0, T.Z)(p.ZP, C.Z) : null,
+  let t = (0, b.isWindows)() ? (0, T.Z)(p.ZP, C.Z) : null,
     n = p.ZP.getRunningGames();
   return null != t && (0, Z.Z)(e.id, t.windowHandle) ? 2 : +(null != n.find(t => (0, Z.Z)(e.id, t.windowHandle)))
 }
@@ -76,7 +76,7 @@ function z(e) {
     enableGoLiveCaptureCard: i
   } = y.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = S.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, m] = l.useState(null), [C, N] = l.useState(null), [I, w] = l.useState(null), T = null != I && I.length > 0, [E, R] = l.useState(c.vA.WINDOW), [k, U] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
+  }), a = N.Z.supports(L.AN.GO_LIVE_HARDWARE), [o, m] = l.useState(null), [C, b] = l.useState(null), [I, O] = l.useState(null), T = null != I && I.length > 0, [E, R] = l.useState(c.vA.WINDOW), [k, U] = l.useState(!1), z = l.useRef(null), F = l.useRef(new u.Xp), H = (0, d.e7)([p.ZP], () => p.ZP.getRunningGames()), V = function(e, t, n) {
     let r = (0, v.Zy)({
       location: M.dr.STREAM_SOURCE_SELECT
     });
@@ -97,7 +97,7 @@ function z(e) {
   }((0, d.e7)([_.Z], () => _.Z.quests), H, C), Y = l.useMemo(() => null == C ? null : [...C].sort((e, t) => (null == V ? void 0 : V.source.id) === e.id ? -1 : (null == V ? void 0 : V.source.id) === t.id ? 1 : B(t) - B(e)), [V, C]);
   l.useEffect(() => {
     let e = F.current;
-    return (0, O.t)({
+    return (0, w.t)({
       width: 176,
       height: 99
     }).then(e => {
@@ -106,17 +106,17 @@ function z(e) {
         windowSources: n,
         cameraSources: r
       } = e;
-      m(t), N(n), w(r)
+      m(t), b(n), O(r)
     }), e.start(1e3, async () => {
       let {
         screenSources: e,
         windowSources: t,
         cameraSources: n
-      } = await (0, O.t)({
+      } = await (0, w.t)({
         width: 176,
         height: 99
       });
-      m(e), N(t), w(n)
+      m(e), b(t), O(n)
     }), () => {
       e.stop()
     }
@@ -135,7 +135,7 @@ function z(e) {
       case c.vA.WINDOW:
         return Y;
       case c.vA.SCREEN:
-        return a;
+        return o;
       case c.vA.CAMERA:
         return I
     }
@@ -180,7 +180,7 @@ function z(e) {
             name: D.NW.string(D.t["/iX8u7"]),
             value: c.vA.SCREEN
           }];
-          return i && o && T && e.push({
+          return i && a && T && e.push({
             name: D.NW.string(D.t.cWt5Ul),
             value: c.vA.CAMERA
           }), e
@@ -202,7 +202,7 @@ function z(e) {
         let e = z.current;
         null != e && U(!e.isScrolledToTop())
       },
-      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(b.Z, {
+      children: [E === c.vA.WINDOW && null != V && (0, r.jsx)(S.Z, {
         quest: V.quest
       }), (0, r.jsx)(x.Z, {
         layout: x.Z.Layout.WRAP,
@@ -248,15 +248,15 @@ function H(e) {
     id: t,
     name: n,
     text: i,
-    icon: o,
-    onSelect: a
+    icon: a,
+    onSelect: o
   } = e, c = l.useCallback(() => {
-    a({
+    o({
       id: "prepicked:" + t,
       name: n,
       url: ""
     })
-  }, [t, n, a]);
+  }, [t, n, o]);
   return (0, r.jsx)(f.P3F, {
     role: "radio",
     "aria-checked": !1,
@@ -265,7 +265,7 @@ function H(e) {
     className: s()(G.nativeSourceTypeButton, G.nativePickerRadioItem),
     children: (0, r.jsxs)("div", {
       className: G.nativeSourceTypeButtonInner,
-      children: [(0, r.jsx)(o, {
+      children: [(0, r.jsx)(a, {
         size: "lg"
       }), (0, r.jsx)(f.Text, {
         variant: "text-sm/medium",
@@ -279,11 +279,11 @@ function H(e) {
 function V(e) {
   let {
     onSourceSelect: t
-  } = e, [n, i] = l.useState([]), [o, c] = l.useState({}), d = l.useRef(new u.Xp);
+  } = e, [n, i] = l.useState([]), [a, c] = l.useState({}), d = l.useRef(new u.Xp);
   l.useEffect(() => {
     let e = d.current,
       t = () => {
-        let e = Object.entries(S.Z.getVideoDevices()).filter(e => {
+        let e = Object.entries(N.Z.getVideoDevices()).filter(e => {
           let [t, n] = e;
           return !n.disabled
         });
@@ -315,12 +315,12 @@ function V(e) {
       } = e;
       t({
         id: r,
-        name: null != (n = o[r]) ? n : "",
+        name: null != (n = a[r]) ? n : "",
         url: ""
       })
-    }, [t, o]),
-    x = (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
-    p = (0, N.isMac)(),
+    }, [t, a]),
+    x = (0, b.isMac)() && o().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR),
+    p = (0, b.isMac)(),
     [g, _] = l.useState(!1),
     j = l.useCallback(() => {
       _(!g)
@@ -396,15 +396,15 @@ function Y(e) {
     pickerType: i
   } = e, {
     lastPickerAction: s,
-    lastPickerError: o
+    lastPickerError: a
   } = (0, E.Z)(t, n);
   return l.useEffect(() => {
-    (0, N.isLinux)() || (0, N.isMac)() && a().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, I.T)(i) : (0, I.t)()
-  }, [i]), s === w.Uc.Error ? (0, r.jsx)(f.Text, {
+    (0, b.isLinux)() || (0, b.isMac)() && o().satisfies(null === m.Z || void 0 === m.Z ? void 0 : m.Z.os.release, k.jR) ? (0, I.T)(i) : (0, I.t)()
+  }, [i]), s === O.Uc.Error ? (0, r.jsx)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
-    children: null != o && o.length > 0 ? o : D.NW.string(D.t.CKsXk5)
+    children: null != a && a.length > 0 ? a : D.NW.string(D.t.CKsXk5)
   }) : (0, r.jsx)(R.Z, {
     animated: !0,
     className: G.nativePickerGuide

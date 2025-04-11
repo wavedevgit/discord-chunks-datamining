@@ -1,33 +1,33 @@
-/** Chunk was on 28965 **/
+/** Chunk was on 79887 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   l: () => b
-}), n(388685);
-var r = n(200651),
-  l = n(192379),
-  o = n(481060),
-  i = n(100527),
-  u = n(906732),
-  a = n(181918),
-  s = n(823415),
-  c = n(670188),
-  d = n(592125),
-  f = n(91047);
+}), r(388685);
+var n = r(200651),
+  l = r(192379),
+  o = r(481060),
+  i = r(100527),
+  u = r(906732),
+  a = r(181918),
+  c = r(823415),
+  s = r(670188),
+  d = r(592125),
+  f = r(91047);
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
@@ -36,56 +36,56 @@ function p(e) {
 function b(e) {
   let {
     user: t,
-    channelId: n,
+    channelId: r,
     guildId: b,
     messageId: v,
-    stopPropagation: h = !1,
+    stopPropagation: O = !1,
     ariaLabel: g
   } = e, {
-    analyticsLocations: O
-  } = (0, u.ZP)(i.Z.USERNAME), m = (0, a.$V)(b, "useUsernameHook"), [y, j] = l.useState(!1), w = (0, s.ic)({
+    analyticsLocations: y
+  } = (0, u.ZP)(i.Z.USERNAME), h = (0, a.$V)(b, "useUsernameHook"), [m, j] = l.useState(!1), w = (0, c.ic)({
     location: "useUsernameHook"
   }), P = l.useCallback(e => {
-    let r = d.Z.getChannel(n);
-    null != r && null != t && (0, f.Pv)(e, t, r)
-  }, [t, n]);
+    let n = d.Z.getChannel(r);
+    null != n && null != t && (0, f.Pv)(e, t, n)
+  }, [t, r]);
   return l.useCallback(e => (l, i) => {
     let a = null == e ? void 0 : e.colorStrings,
-      s = m && null != a && null != a.primaryColor && null != a.secondaryColor,
+      c = h && null != a && null != a.primaryColor && null != a.secondaryColor,
       d = t => {
-        var n, i;
-        return (0, r.jsx)(o.rz2, (n = p({}, null != t ? t : {}), i = i = {
+        var r, i;
+        return (0, n.jsx)(o.rz2, (r = p({}, null != t ? t : {}), i = i = {
           onContextMenu: P,
           name: l,
           color: null == e ? void 0 : e.colorString,
           roleName: null == e ? void 0 : e.colorRoleName,
-          roleColors: s ? a : null,
+          roleColors: c ? a : null,
           "aria-label": g
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
+          return r
         })(Object(i)).forEach(function(e) {
-          Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
-        }), n))
+          Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
+        }), r))
       },
       f = e => {
-        h && (null == e || e.stopPropagation()), j(!y)
+        O && (null == e || e.stopPropagation()), j(!m)
       };
-    return (0, r.jsx)(u.Gt, {
-      value: O,
-      children: null != t ? (0, r.jsx)(c.Z, {
+    return (0, n.jsx)(u.Gt, {
+      value: y,
+      children: null != t ? (0, n.jsx)(s.Z, {
         user: t,
         guildId: b,
-        channelId: n,
+        channelId: r,
         messageId: v,
         shouldShowOnHover: w,
         roleId: null == e ? void 0 : e.colorRoleId,
-        clickTrap: y,
-        shouldShow: y,
+        clickTrap: m,
+        shouldShow: m,
         onRequestClose: () => j(!1),
         children: e => {
           var {
@@ -95,21 +95,21 @@ function b(e) {
             onClick: f
           }, function(e, t) {
             if (null == e) return {};
-            var n, r, l = function(e, t) {
+            var r, n, l = function(e, t) {
               if (null == e) return {};
-              var n, r, l = {},
+              var r, n, l = {},
                 o = Object.keys(e);
-              for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+              for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
               return l
             }(e, t);
             if (Object.getOwnPropertySymbols) {
               var o = Object.getOwnPropertySymbols(e);
-              for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+              for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
             }
             return l
           }(e, ["onClick"])))
         }
       }) : d(void 0)
     }, i)
-  }, [O, t, n, b, v, P, h, g, m, w, y])
+  }, [y, t, r, b, v, P, O, g, h, w, m])
 }

@@ -1,15 +1,15 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  E_: () => S,
-  Ti: () => b,
+  E_: () => N,
+  Ti: () => S,
   Yw: () => v
 }), n(415506), n(388685);
 var r = n(200651),
   l = n(192379),
   i = n(268146),
   s = n(442837),
-  o = n(751571),
-  a = n(695346),
+  a = n(751571),
+  o = n(695346),
   c = n(361291),
   d = n(131951),
   u = n(451467),
@@ -139,27 +139,27 @@ function v(e) {
   })
 }
 
-function b(e, t, n) {
+function S(e, t, n) {
   var r, i;
   let {
     preset: g,
     resolution: _,
     fps: v,
-    soundshareEnabled: b
-  } = (0, s.cj)([c.Z], () => c.Z.getState()), S = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()), C = null != (r = a.I0.useSetting()) && r, N = null != (i = a.eo.useSetting()) && i;
+    soundshareEnabled: S
+  } = (0, s.cj)([c.Z], () => c.Z.getState()), N = (0, s.e7)([d.Z], () => d.Z.getInputDeviceId()), C = null != (r = o.I0.useSetting()) && r, b = null != (i = o.eo.useSetting()) && i;
   (0, u.Z)(f.tI.PRESET_CUSTOM, _, v, t, n) || (_ = f.LY.RESOLUTION_720, v = f.ws.FPS_30);
   let [y, Z] = l.useReducer(j, x(h({}, p), {
-    muteStreamAudio: !b,
+    muteStreamAudio: !S,
     preset: g,
     resolution: _,
     fps: v,
     hidePreview: C,
-    notifyFriends: N,
+    notifyFriends: b,
     selectedSource: e,
-    audioSourceId: S
+    audioSourceId: N
   }));
   return l.useEffect(() => {
-    o.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
+    a.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
       showAuthorizationError: !1
     }).then(e => Z({
       type: "set_has_permission",
@@ -171,6 +171,6 @@ function b(e, t, n) {
   }
 }
 
-function S() {
+function N() {
   return [l.useContext(g), l.useContext(_)]
 }

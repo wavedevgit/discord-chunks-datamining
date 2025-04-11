@@ -1,6 +1,6 @@
 /**
   Module ID: 9059
-  Original File Name: c327caba27d5e503
+  Original File Name: a61af153ae5fb2df
 **/
 .content__79cbe {
     box-sizing: border-box;
@@ -4906,14 +4906,26 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .wallpaperContainer__5fa7b {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-position: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat
+}
+
+.thumbhashContainer__5fa7b,.wallpaperContainer__5fa7b {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.thumbhashContainer__5fa7b img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: right bottom;
+    object-position: right bottom
 }
 
 .spamBanner_a2eac3 {
@@ -13524,4 +13536,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=c327caba27d5e503.css.map*/
+/*# sourceMappingURL=a61af153ae5fb2df.css.map*/

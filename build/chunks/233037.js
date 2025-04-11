@@ -7,8 +7,8 @@ n(192379);
 var l = n(442837),
   i = n(481060),
   s = n(984933),
-  o = n(430824),
-  a = n(496675),
+  a = n(430824),
+  o = n(496675),
   c = n(594174),
   d = n(938475),
   u = n(102172),
@@ -22,7 +22,7 @@ function p(e) {
     selectedChannelId: t,
     guildId: n,
     onChangeSelectedChannelId: p
-  } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([o.Z, s.ZP, a.Z], () => (0, u.h_)(s.ZP.getChannels(n), o.Z, a.Z)), j = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), v = _.map(e => {
+  } = e, g = (0, l.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, l.e7)([a.Z, s.ZP, o.Z], () => (0, u.h_)(s.ZP.getChannels(n), a.Z, o.Z)), j = (0, l.e7)([d.ZP], () => d.ZP.getVoiceStates(n)), v = _.map(e => {
     var n;
     return {
       name: (0, r.jsx)(f.Z, {

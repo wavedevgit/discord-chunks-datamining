@@ -7,8 +7,8 @@ n(192379);
 var l = n(120356),
   i = n.n(l),
   s = n(268146),
-  o = n(481060),
-  a = n(63063),
+  a = n(481060),
+  o = n(63063),
   c = n(668519),
   d = n(615161),
   u = n(843874),
@@ -19,15 +19,15 @@ function h(e) {
   let {
     source: t
   } = e;
-  return t.id.startsWith(s.vA.SCREEN) ? (0, r.jsx)(o.pzj, {
+  return t.id.startsWith(s.vA.SCREEN) ? (0, r.jsx)(a.pzj, {
     size: "xs"
   }) : t.id.startsWith(s.vA.WINDOW) ? null != t.icon && "" !== t.icon ? (0, r.jsx)("img", {
     src: t.icon,
     className: m.sourceIcon,
     alt: ""
-  }) : (0, r.jsx)(o.GON, {
+  }) : (0, r.jsx)(a.GON, {
     size: "xs"
-  }) : (0, r.jsx)(o.Odl, {
+  }) : (0, r.jsx)(a.Odl, {
     size: "xs"
   })
 }
@@ -39,10 +39,10 @@ function x(e) {
     twoClickVariant: l,
     onClick: s
   } = e, {
-    url: a,
+    url: o,
     name: c
   } = t;
-  return (0, r.jsxs)(o.P3F, {
+  return (0, r.jsxs)(a.P3F, {
     onClick: () => s(t),
     className: i()(m.source, {
       [m.selectedSource]: n
@@ -52,14 +52,14 @@ function x(e) {
       children: (0, r.jsxs)("div", {
         className: m.sourcePreview,
         children: [(0, r.jsx)("img", {
-          src: a,
+          src: o,
           className: m.sourcePreviewImage,
           alt: ""
         }), !l && (0, r.jsx)("div", {
           className: m.sourceOverlay,
           children: (0, r.jsx)("div", {
             className: m.sourceOverlayCTA,
-            children: (0, r.jsx)(o.Text, {
+            children: (0, r.jsx)(a.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
               children: f.NW.string(f.t.z7WGho)
@@ -71,7 +71,7 @@ function x(e) {
       className: m.sourceNameContainer,
       children: [(0, r.jsx)(h, {
         source: t
-      }), (0, r.jsx)(o.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         className: m.sourceName,
         children: c
@@ -91,7 +91,7 @@ function p(e) {
     location: "sourcegrid"
   }), [{
     windowSources: i,
-    deviceSources: a,
+    deviceSources: o,
     screenSources: u,
     sourceType: f,
     fetchingSources: h,
@@ -99,8 +99,8 @@ function p(e) {
   }] = (0, d.E_)();
   return h ? (0, r.jsx)("div", {
     className: m.loading,
-    children: (0, r.jsx)(o.$jN, {})
-  }) : (t = f === s.vA.WINDOW ? i : f === s.vA.SCREEN ? u : a, f === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
+    children: (0, r.jsx)(a.$jN, {})
+  }) : (t = f === s.vA.WINDOW ? i : f === s.vA.SCREEN ? u : o, f === s.vA.CAMERA && 0 === t.length ? (0, r.jsx)(g, {}) : (0, r.jsx)("div", {
     className: m.root,
     children: t.map(e => (0, r.jsx)(x, {
       onClick: n,
@@ -114,24 +114,24 @@ function p(e) {
 function g() {
   return (0, r.jsxs)("div", {
     className: m.emptyState,
-    children: [(0, r.jsx)(o.Odl, {
+    children: [(0, r.jsx)(a.Odl, {
       size: "md",
-      color: o.TVs.colors.ICON_MUTED,
+      color: a.TVs.colors.ICON_MUTED,
       className: m.emptyIcon
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-lg/medium",
       color: "header-primary",
       className: m.emptyHeader,
       children: f.NW.string(u.Z["/z3YaW"])
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: m.emptyBody,
       children: f.NW.string(u.Z.agwSGB)
-    }), (0, r.jsx)(o.Text, {
+    }), (0, r.jsx)(a.Text, {
       variant: "text-sm/semibold",
       children: f.NW.format(u.Z.xpVzr6, {
-        helpdeskURL: a.Z.getArticleURL(0x53d41ade17)
+        helpdeskURL: o.Z.getArticleURL(0x53d41ade17)
       })
     })]
   })

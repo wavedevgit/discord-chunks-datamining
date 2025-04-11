@@ -6,8 +6,8 @@ var r = n(200651),
   l = n(192379),
   i = n(120356),
   s = n.n(i),
-  o = n(209739),
-  a = n.n(o),
+  a = n(209739),
+  o = n.n(a),
   c = n(990547),
   d = n(435935),
   u = n(268146),
@@ -20,15 +20,15 @@ var r = n(200651),
   _ = n(906732),
   j = n(594190),
   v = n(695346),
-  b = n(131951),
-  S = n(19780),
+  S = n(131951),
+  N = n(19780),
   C = n(594174),
-  N = n(449224),
+  b = n(449224),
   y = n(358085),
   Z = n(74538),
   I = n(668519),
-  w = n(299570),
-  O = n(989941),
+  O = n(299570),
+  w = n(989941),
   T = n(562224),
   E = n(544753),
   P = n(560749),
@@ -49,18 +49,18 @@ function F(e) {
   let {
     onClose: n,
     transitionState: i,
-    sourceApplication: o
+    sourceApplication: a
   } = e, {
     twoClickVariant: F
   } = (0, I.a)({
     location: "golivemodalv2",
     autoTrackExposure: !1
-  }), H = l.useRef(performance.now()), V = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && (0, y.isMac)() && a().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, G.jR)), Y = (0, f.e7)([C.default], () => C.default.getCurrentUser()), J = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, Y), {
+  }), H = l.useRef(performance.now()), V = (0, f.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && (0, y.isMac)() && o().satisfies(null === x.Z || void 0 === x.Z ? void 0 : x.Z.os.release, G.jR)), Y = (0, f.e7)([C.default], () => C.default.getCurrentUser()), J = !Z.ZP.canStreamQuality(Z.ZP.StreamQuality.HIGH, Y), {
     analyticsLocations: X
-  } = (0, _.ZP)(g.Z.GO_LIVE_MODAL_V2), K = null != o, q = (0, E.Z)(), {
+  } = (0, _.ZP)(g.Z.GO_LIVE_MODAL_V2), K = null != a, q = (0, E.Z)(), {
     state: Q,
     dispatch: $
-  } = (0, R.Ti)(o, Y, q), ee = !K && F && (!V || Q.sourceType === u.vA.CAMERA);
+  } = (0, R.Ti)(a, Y, q), ee = !K && F && (!V || Q.sourceType === u.vA.CAMERA);
   (0, D.Z)(V, $);
   let et = l.useMemo(() => {
       let e = [{
@@ -101,7 +101,7 @@ function F(e) {
   async function el(e) {
     await (0, p.Z)({
       channelId: e
-    }) && null != o && er(o)
+    }) && null != a && er(a)
   }
   let ei = l.useCallback(() => {
     er({
@@ -118,12 +118,12 @@ function F(e) {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
           location_stack: X,
-          application_id: (0, y.isWindows)() ? null == (t = (0, O.Z)(j.ZP, N.Z)) ? void 0 : t.id : void 0,
-          parent_media_session_id: S.ZP.getMediaSessionId()
+          application_id: (0, y.isWindows)() ? null == (t = (0, w.Z)(j.ZP, b.Z)) ? void 0 : t.id : void 0,
+          parent_media_session_id: N.ZP.getMediaSessionId()
         }
       },
       className: s()(z.root, {
-        [z.nativePicker]: V && null == o,
+        [z.nativePicker]: V && null == a,
         [z.channelSelector]: K
       }),
       size: m.CgR.DYNAMIC,
@@ -181,7 +181,7 @@ function F(e) {
           children: [V && en !== u.vA.CAMERA && (0, r.jsx)(m.zxk, {
             size: m.zxk.Sizes.LARGE,
             onClick: () => {
-              (0, w.t)(), (0, w.T)("")
+              (0, O.t)(), (0, O.T)("")
             },
             children: B.NW.string(B.t.FiBjwc)
           }), ee && (0, r.jsx)(m.zxk, {

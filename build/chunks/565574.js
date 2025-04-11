@@ -1,15 +1,15 @@
 /** Chunk was on 46746 **/
 n.d(t, {
-  Z: () => a
+  Z: () => o
 });
 var r = n(200651);
 n(192379);
 var l = n(481060),
   i = n(812652),
   s = n(388032),
-  o = n(79309);
+  a = n(79309);
 
-function a(e) {
+function o(e) {
   let {
     align: t = "left"
   } = e;
@@ -48,10 +48,10 @@ function a(e) {
         size: l.zxk.Sizes.ICON,
         "aria-label": s.NW.string(s.t["+1H47u"]),
         color: l.zxk.Colors.PRIMARY,
-        className: o.streamOptionsButton
+        className: a.streamOptionsButton
       }, e), n = n = {
         children: (0, r.jsx)(l.ewm, {
-          className: o.settingsIcon,
+          className: a.settingsIcon,
           size: "refresh_sm",
           color: "currentColor"
         })

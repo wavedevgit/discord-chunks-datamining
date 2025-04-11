@@ -1,29 +1,29 @@
-/** Chunk was on 50844 **/
+/** Chunk was on 79887 **/
 "use strict";
-n.d(t, {
-  Z: () => o
-}), n(388685);
-var r = n(209739),
-  i = n.n(r),
-  l = n(358085);
-let u = {
-  [l.PlatformTypes.WINDOWS]: {
+r.d(t, {
+  Z: () => u
+}), r(388685);
+var n = r(209739),
+  l = r.n(n),
+  o = r(358085);
+let i = {
+  [o.PlatformTypes.WINDOWS]: {
     nvidia: ">=397.93.0"
   }
 };
 
-function o(e) {
-  let t = u[(0, l.getPlatform)()];
+function u(e) {
+  let t = i[(0, o.getPlatform)()];
   if (null == t) return !1;
-  for (let n of Object.keys(e)) {
-    let r = e[n],
-      l = t[n];
-    if (null == r || null == l || null != r.error) continue;
-    let u = function(e) {
-      var t, n;
-      return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (n = e.minor) ? n : 0, ".0")
-    }(r);
-    if (!i().satisfies(u, l)) return !0
+  for (let r of Object.keys(e)) {
+    let n = e[r],
+      o = t[r];
+    if (null == n || null == o || null != n.error) continue;
+    let i = function(e) {
+      var t, r;
+      return "".concat(null != (t = e.major) ? t : 0, ".").concat(null != (r = e.minor) ? r : 0, ".0")
+    }(n);
+    if (!l().satisfies(i, o)) return !0
   }
   return !1
 }

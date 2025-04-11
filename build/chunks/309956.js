@@ -13,10 +13,10 @@ let s = (e, t, n) => {
     enabled: s
   } = (0, a.W)({
     location: "useShopViewTransition"
-  }), c = r.useMemo(() => t !== o.AW.ORBS || s ? t : o.AW.HOME, [t, s]), [u, d] = r.useState(c), [b, p] = r.useState(o.f7.HIDDEN);
+  }), c = r.useMemo(() => t !== o.AW.ORBS || s ? t : o.AW.HOME, [t, s]), [u, d] = r.useState(c), [b, p] = r.useState(o.f7.VISIBLE);
   r.useEffect(() => {
-    d(c), p(o.f7.VISIBLE)
-  }, [c]);
+    d(c), b !== o.f7.VISIBLE && p(o.f7.VISIBLE)
+  }, [c, b]);
   let f = e => new Promise(t => setTimeout(t, e)),
     g = (0, l.k6)();
   return {
