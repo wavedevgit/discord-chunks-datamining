@@ -317,7 +317,7 @@ let q = i.forwardRef(function(e, t) {
     })
   }), eE = (0, r.jsxs)(Y, {
     profileType: h,
-    className: D.withLabel,
+    className: null != O ? D.withLabel : void 0,
     children: [eu, eh, em]
   });
   return null == y ? (0, r.jsxs)(r.Fragment, {
