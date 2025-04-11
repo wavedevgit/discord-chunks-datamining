@@ -15,8 +15,8 @@ var r = n(200651),
   p = n(742409),
   f = n(369509),
   _ = n(116175),
-  g = n(680278),
-  m = n(388032),
+  m = n(680278),
+  g = n(388032),
   b = n(606217);
 
 function C() {
@@ -28,7 +28,7 @@ function C() {
       username: "Cherry",
       usernameStyle: e.text.gradientStyle,
       usernameClassName: i()(e.text.gradientClassName, e.gradient.gradientClassName),
-      message: m.NW.string(g.Z.eTHkQU)
+      message: g.NW.string(m.Z.eTHkQU)
     })
   })
 }
@@ -47,7 +47,7 @@ function x(e) {
         usernameStyle: {
           color: "var(--brand-400)"
         },
-        message: m.NW.string(g.Z.eTHkQU),
+        message: g.NW.string(m.Z.eTHkQU),
         decorations: (0, r.jsx)(f.S, {
           guildId: t,
           tag: "GGEZ",

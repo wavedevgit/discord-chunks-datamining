@@ -1,6 +1,6 @@
 /**
   Module ID: 8039
-  Original File Name: 0eb67bb7c8d20027
+  Original File Name: 89208cc5c6e71039
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2547,6 +2547,20 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .visual-refresh .content__65844 {
     gap: var(--space-xs)
+}
+
+.background__6343b {
+    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center;
+    width: 100%;
+    box-sizing: border-box
+}
+
+.gradientRoleColorsImage__6343b {
+    padding: 0 var(--spacing-16)
 }
 
 .header__7e090 {
@@ -6008,4 +6022,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=0eb67bb7c8d20027.css.map*/
+/*# sourceMappingURL=89208cc5c6e71039.css.map*/

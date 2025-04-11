@@ -1,21 +1,7 @@
 /**
   Module ID: 31924
-  Original File Name: a3b8225c58e74075
+  Original File Name: 9a0d75a0e3d03e69
 **/
-.background__6343b {
-    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
-    -o-object-fit: contain;
-    object-fit: contain;
-    -o-object-position: center;
-    object-position: center;
-    width: 100%;
-    box-sizing: border-box
-}
-
-.gradientRoleColorsImage__6343b {
-    padding: 0 var(--spacing-16)
-}
-
 .icon_f4b9b5 {
     filter: saturate(1);
     filter: saturate(var(--saturation-factor,1))
@@ -157,4 +143,4 @@
     background: var(--bg-base-tertiary)
 }
 
-/*# sourceMappingURL=a3b8225c58e74075.css.map*/
+/*# sourceMappingURL=9a0d75a0e3d03e69.css.map*/

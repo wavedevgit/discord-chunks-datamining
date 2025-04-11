@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => p
+  Z: () => m
 }), t(388685), t(953529);
 var r = t(200651),
   o = t(192379),
@@ -11,29 +11,29 @@ var r = t(200651),
   c = t(795338),
   d = t(279604),
   u = t(388032),
-  m = t(117172);
+  p = t(117172);
 
-function p(e) {
+function m(e) {
   let {
     guildId: n,
     powerup: t
-  } = e, [p, x] = o.useState(void 0);
-  return (0, d.KT)(p), (0, r.jsxs)(a.Z, {
+  } = e, [m, x] = o.useState(void 0);
+  return (0, d.KT)(m), (0, r.jsxs)(a.Z, {
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)(c.m, {
-      className: m.image,
+      className: p.image,
       powerup: t
     }), (0, r.jsxs)("div", {
-      className: m.contentContainer,
+      className: p.contentContainer,
       children: [(0, r.jsx)("div", {
-        className: m.headerContainer,
+        className: p.headerContainer,
         children: (0, r.jsx)(s.X6, {
           variant: "heading-md/bold",
           children: t.title
         })
       }), (0, r.jsx)(s.xv, {
-        className: m.description,
+        className: p.description,
         variant: "text-sm/medium",
         children: t.description
       }), (0, r.jsx)(a.u, {
@@ -41,14 +41,14 @@ function p(e) {
         powerup: t
       })]
     }), (0, r.jsx)("div", {
-      className: m.buttonContainer,
+      className: p.buttonContainer,
       children: (0, r.jsx)(l.ZP, {
         guildId: n,
         powerup: t,
         onError: x
       })
     }), (0, r.jsx)(i.IGR, {
-      className: m.new,
+      className: p.new,
       text: u.NW.string(u.t.y2b7CA)
     })]
   })

@@ -1,32 +1,41 @@
-/** Chunk was on 74529 **/
+/** Chunk was on 8039 **/
 n.d(t, {
-  m: () => u
+  g: () => u,
+  m: () => d
 });
 var r = n(200651),
-  o = n(120356),
-  a = n.n(o),
-  i = n(156732),
-  s = n(535396),
-  l = n(4308),
+  i = n(120356),
+  l = n.n(i),
+  o = n(156732),
+  a = n(535396),
+  s = n(4308),
   c = n(942570);
 
 function u(e) {
   let {
+    className: t
+  } = e;
+  return (0, r.jsx)("img", {
+    className: t,
+    alt: "",
+    src: c
+  })
+}
+
+function d(e) {
+  let {
     className: t,
     powerup: n
-  } = e, o = (0, i.Z)(n);
+  } = e, i = (0, o.Z)(n);
   switch (n.type) {
-    case s.Us.LEVEL:
+    case a.Us.LEVEL:
+      return (0, r.jsx)(u, {});
+    case a.Us.PERK:
       return (0, r.jsx)("img", {
         alt: "",
-        src: c
-      });
-    case s.Us.PERK:
-      return (0, r.jsx)("img", {
-        alt: "",
-        src: o,
-        className: a()(l.background, {
-          [l.gradientRoleColorsImage]: n.skuId === s.If
+        src: i,
+        className: l()(s.background, {
+          [s.gradientRoleColorsImage]: n.skuId === a.If
         }, t)
       })
   }

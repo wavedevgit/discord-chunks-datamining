@@ -1,6 +1,6 @@
 /** Chunk was on 44799 **/
 t.d(n, {
-  Z: () => f
+  Z: () => g
 });
 var r = t(200651);
 t(192379);
@@ -12,51 +12,51 @@ var o = t(793030),
   c = t(430824),
   d = t(63063),
   u = t(317169),
-  m = t(639660),
-  p = t(767218),
+  p = t(639660),
+  m = t(767218),
   x = t(981631),
   _ = t(680278),
-  g = t(388032),
-  v = t(658585);
+  v = t(388032),
+  f = t(658585);
 
-function f(e) {
+function g(e) {
   let {
     guildId: n
   } = e, t = (0, s.e7)([c.Z], () => c.Z.getGuild(n)), {
-    available: f,
-    spent: b,
-    total: j
+    available: g,
+    spent: j,
+    total: b
   } = (0, u.Z)(n);
   if (null != t) return (0, r.jsxs)("div", {
-    className: v.container,
+    className: f.container,
     children: [(0, r.jsxs)("div", {
-      className: v.headerContainer,
+      className: f.headerContainer,
       children: [(0, r.jsx)(o.xv, {
         variant: "eyebrow",
-        children: g.NW.string(_.Z.hjvcLC)
+        children: v.NW.string(_.Z.hjvcLC)
       }), (0, r.jsx)(o.xv, {
-        className: v.learnMore,
+        className: f.learnMore,
         variant: "text-xs/semibold",
-        children: g.NW.format(_.Z.fXE30d, {
+        children: v.NW.format(_.Z.fXE30d, {
           helpDeskArticle: d.Z.getArticleURL(x.BhN.GUILD_BOOSTING_FAQ)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: v.contentContainer,
-      children: [(0, r.jsx)(p.Z, {
-        count: f,
-        type: p.b.AVAILABLE
-      }), (0, r.jsx)(p.Z, {
-        count: b,
-        type: p.b.SPENT
-      }), (0, r.jsx)(p.Z, {
+      className: f.contentContainer,
+      children: [(0, r.jsx)(m.Z, {
+        count: g,
+        type: m.b.AVAILABLE
+      }), (0, r.jsx)(m.Z, {
         count: j,
-        type: p.b.TOTAL
+        type: m.b.SPENT
+      }), (0, r.jsx)(m.Z, {
+        count: b,
+        type: m.b.TOTAL
       })]
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(p.Z, {
       guildId: n
     }), (0, r.jsx)(a.Z, {
-      className: v.boostButton,
+      className: f.boostButton,
       guild: t,
       analyticsLocation: {
         page: x.ZY5.GUILD_POWERUPS_OVERVIEW,
@@ -66,7 +66,7 @@ function f(e) {
       size: i.PhG.LARGE,
       intent: l.P.NONE,
       icon: (0, r.jsx)(i.$Eu, {
-        className: v.boostButtonIcon,
+        className: f.boostButtonIcon,
         size: "sm",
         color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })

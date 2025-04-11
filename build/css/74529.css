@@ -1,6 +1,6 @@
 /**
   Module ID: 74529
-  Original File Name: 3e1b2118fd7b6af4
+  Original File Name: 84d91cd4ba64c078
 **/
 .container__6f9f7 {
     display: flex;
@@ -39,20 +39,6 @@
 .boost__6f9f7 {
     align-self: center;
     justify-self: center
-}
-
-.background__6343b {
-    background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
-    -o-object-fit: contain;
-    object-fit: contain;
-    -o-object-position: center;
-    object-position: center;
-    width: 100%;
-    box-sizing: border-box
-}
-
-.gradientRoleColorsImage__6343b {
-    padding: 0 var(--spacing-16)
 }
 
 .upsellButton__71816 {
@@ -390,4 +376,4 @@
     margin-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=3e1b2118fd7b6af4.css.map*/
+/*# sourceMappingURL=84d91cd4ba64c078.css.map*/
