@@ -1,12 +1,12 @@
 /**
   Module ID: 29396
-  Original File Name: 0565649dbe8657b6
+  Original File Name: 38f6d7cace4d9b26
 **/
 .closeButton_c9f030 {
-    position: absolute;
     box-sizing: content-box;
-    top: 12px;
-    right: 4px
+    position: absolute;
+    right: 4px;
+    top: 12px
 }
 
 .content_c9f030 {
@@ -14,8 +14,8 @@
 }
 
 .image_c9f030 {
-    margin-top: 24px;
     height: 90px;
+    margin-top: 24px;
     width: auto
 }
 
@@ -24,12 +24,12 @@
 }
 
 .body_c9f030 {
-    margin-top: 8px;
-    margin-bottom: 32px
+    margin-bottom: 32px;
+    margin-top: 8px
 }
 
 .button_c9f030 {
     width: 100%
 }
 
-/*# sourceMappingURL=0565649dbe8657b6.css.map*/
+/*# sourceMappingURL=38f6d7cace4d9b26.css.map*/

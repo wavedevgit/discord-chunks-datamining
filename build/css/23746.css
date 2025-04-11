@@ -1,14 +1,14 @@
 /**
   Module ID: 23746
-  Original File Name: cf772e6c95a5b126
+  Original File Name: af733ec53b6b2df7
 **/
 .qrCodeOverlay_c28498 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
     align-items: center;
-    justify-content: center
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%
 }
 
 .qrCodeOverlay_c28498 img {
@@ -16,25 +16,26 @@
 }
 
 .size-40_c28498 {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .size-60_c28498 {
-    width: 60px;
-    height: 60px
+    height: 60px;
+    width: 60px
 }
 
 .qrCodeOverlayContainer_c28498 {
     display: flex;
+    position: relative;
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    position: relative
+    width: fit-content
 }
 
 .qrCodeContainer_c28498 {
-    padding: var(--spacing-8);
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-xs);
+    padding: var(--spacing-8)
 }
 
 .spacing_eb51ec {
@@ -78,4 +79,4 @@
     color: var(--text-muted-on-default)
 }
 
-/*# sourceMappingURL=cf772e6c95a5b126.css.map*/
+/*# sourceMappingURL=af733ec53b6b2df7.css.map*/

@@ -1,50 +1,50 @@
 /**
   Module ID: 39627
-  Original File Name: 73b253184f7dd40f
+  Original File Name: 0a98701a75b3e038
 **/
 .modal__45314 {
     border-radius: var(--radius-sm)
 }
 
 .header__45314 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     overflow: visible
 }
 
 html:not(.visual-refresh) .header__45314 {
-    padding-bottom: 32px;
-    background: var(--channeltextarea-background)
+    background: var(--channeltextarea-background);
+    padding-bottom: 32px
 }
 
 .headerIconContainer__45314,.visual-refresh .headerIconContainer__45314 {
-    position: absolute;
-    width: auto;
+    flex: 0;
     height: auto;
+    position: absolute;
     top: -16px;
-    flex: 0
+    width: auto
 }
 
 .acronym__45314 {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 120px;
-    height: 120px;
+    background-color: var(--background-primary);
     border-radius: 50%;
+    color: var(--text-normal);
+    display: flex;
+    font-size: 40px;
+    height: 120px;
+    justify-content: center;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: var(--background-primary);
-    color: var(--text-normal);
-    font-size: 40px
+    width: 120px
 }
 
 .headerText__45314 {
     align-items: center;
-    text-align: center;
     margin-top: 112px;
-    max-width: 350px
+    max-width: 350px;
+    text-align: center
 }
 
 .headerText__45314,.table__45314 {
@@ -58,11 +58,11 @@ html:not(.visual-refresh) .header__45314 {
 }
 
 .tableContainer__45314 {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-xs);
     display: flex;
     flex-direction: column;
-    padding: 16px 20px;
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-xs)
+    padding: 16px 20px
 }
 
 .visual-refresh .tableContainer__45314 {
@@ -77,9 +77,8 @@ html:not(.visual-refresh) .header__45314 {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-gap: 32px;
-    grid-row-gap: 8px;
-    row-gap: 8px;
-    margin-top: 8px
+    margin-top: 8px;
+    row-gap: 8px
 }
 
 .permissionRow__45314 {
@@ -87,13 +86,13 @@ html:not(.visual-refresh) .header__45314 {
 }
 
 .bullet__45314 {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
     background-color: var(--background-accent);
+    border-radius: 50%;
+    height: 6px;
     margin-right: 8px;
     position: relative;
-    top: 5px
+    top: 5px;
+    width: 6px
 }
 
 .bulletWarning__45314 {
@@ -105,4 +104,4 @@ html:not(.visual-refresh) .header__45314 {
     gap: 4px
 }
 
-/*# sourceMappingURL=73b253184f7dd40f.css.map*/
+/*# sourceMappingURL=0a98701a75b3e038.css.map*/

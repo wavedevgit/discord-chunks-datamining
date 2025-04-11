@@ -1,6 +1,6 @@
 /**
   Module ID: 638
-  Original File Name: 145fe1f6b2c0df96
+  Original File Name: efb7c8e435065930
 **/
 .modalRoot__6efa2 {
     width: 480px
@@ -9,8 +9,8 @@
 .modalHeaderContainer__6efa2 {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 24px 52px 16px
+    padding: 24px 52px 16px;
+    text-align: center
 }
 
 .modalHeader__6efa2 {
@@ -18,15 +18,15 @@
 }
 
 .content__6efa2 {
-    padding-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    padding-bottom: 16px
 }
 
 .closeButton__6efa2 {
     position: absolute;
-    z-index: 1;
+    right: 16px;
     top: 16px;
-    right: 16px
+    z-index: 1
 }
 
 .deviceItem__6efa2 {
@@ -34,16 +34,16 @@
 }
 
 .deviceItemIcon__6efa2 {
-    width: 32px;
+    color: var(--interactive-active);
     height: 32px;
-    padding: 8px;
     margin-right: 8px;
-    color: var(--interactive-active)
+    padding: 8px;
+    width: 32px
 }
 
 .deviceItemName__6efa2 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .spinnerContainer__6efa2 {
@@ -51,9 +51,9 @@
 }
 
 .emptyArt__6efa2 {
-    margin-bottom: 16px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    margin-bottom: 16px
 }
 
-/*# sourceMappingURL=145fe1f6b2c0df96.css.map*/
+/*# sourceMappingURL=efb7c8e435065930.css.map*/

@@ -1,19 +1,19 @@
 /**
   Module ID: 31835
-  Original File Name: 924f7d085165f504
+  Original File Name: 9e5959f081216c7e
 **/
 .content__1c69f {
-    padding: 16px;
-    max-width: 760px
+    max-width: 760px;
+    padding: 16px
 }
 
 .header__1c69f {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .warningIcon__1c69f {
     color: var(--status-warning)
 }
 
-/*# sourceMappingURL=924f7d085165f504.css.map*/
+/*# sourceMappingURL=9e5959f081216c7e.css.map*/

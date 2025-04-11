@@ -1,6 +1,6 @@
 /**
   Module ID: 88261
-  Original File Name: 9b26afcd53809f10
+  Original File Name: 541d79d4718070f7
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -47,12 +47,12 @@
 }
 
 .container_fcf29c {
-    box-shadow: var(--legacy-elevation-high);
-    padding: 10px 10px 10px 16px;
-    overflow: hidden;
-    border-radius: 5px;
-    transition-duration: .2s;
     background-color: var(--background-floating);
+    border-radius: 5px;
+    box-shadow: var(--legacy-elevation-high);
+    overflow: hidden;
+    padding: 10px 10px 10px 16px;
+    transition-duration: .2s;
     transition-property: background-color,color,border-color;
     transition-timing-function: ease
 }
@@ -63,10 +63,10 @@
 }
 
 .flexContainer_fcf29c {
-    position: relative;
-    display: flex;
     align-items: center;
-    justify-content: space-between
+    display: flex;
+    justify-content: space-between;
+    position: relative
 }
 
 .shrinkingContainer_fcf29c {
@@ -74,10 +74,10 @@
 }
 
 .actions_fcf29c {
-    flex-grow: 0;
     display: flex;
-    justify-content: end;
-    gap: 0 10px
+    flex-grow: 0;
+    gap: 0 10px;
+    justify-content: end
 }
 
 .resetButton_fcf29c {
@@ -86,12 +86,12 @@
 }
 
 .message_fcf29c {
-    font-weight: 500;
     font-size: 16px;
+    font-weight: 500;
     line-height: 20px;
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .theme-light .notice_fcf29c {
@@ -107,15 +107,15 @@
 }
 
 .visual-refresh .container_fcf29c {
-    border-radius: var(--radius-sm);
     background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm)
 }
 
 .visual-refresh .container_fcf29c[data-emphasized=true] {
     background-color: var(--background-feedback-critical);
-    color: var(--text-feedback-critical);
-    border-color: var(--border-feedback-critical)
+    border-color: var(--border-feedback-critical);
+    color: var(--text-feedback-critical)
 }
 
 .enable-forced-colors .container_fcf29c {
@@ -125,13 +125,13 @@
 @use postcss-pxtorem;
 
 .card__991c2 {
+    border-radius: var(--radius-sm);
     display: flex;
     flex-direction: column;
     height: var(--custom-discover-static-guild-card-card-height);
-    width: 200px;
     overflow: hidden;
-    border-radius: var(--radius-sm);
-    position: relative
+    position: relative;
+    width: 200px
 }
 
 .card__991c2,.iconMask__991c2 {
@@ -161,29 +161,28 @@
 }
 
 .cardHeader__991c2 {
-    flex: 0 0 112px;
-    position: relative;
     display: block;
+    flex: 0 0 112px;
+    margin-bottom: 28px;
     overflow: visible;
-    margin-bottom: 28px
+    position: relative
 }
 
 .splash__991c2 {
     display: block;
+    left: 0;
+    opacity: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    transform: scale(1);
-    opacity: 0
+    transform: scale(1)
 }
 
 .splash__991c2,.splashImage__991c2 {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .splashImage__991c2 {
-    -o-object-fit: cover;
     object-fit: cover
 }
 
@@ -192,17 +191,17 @@
 }
 
 .guildIcon__991c2 {
-    position: absolute;
     bottom: -21px;
-    left: 12px
+    left: 12px;
+    position: absolute
 }
 
 .defaultIcon__991c2 {
+    align-items: center;
     background-color: var(--brand-500);
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
+    justify-content: center;
     width: 100%
 }
 
@@ -211,38 +210,38 @@
 }
 
 .avatar__991c2 {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .guildInfo__991c2 {
-    flex: 1 1 auto;
-    position: relative;
-    display: flex;
-    flex-direction: column;
     align-content: stretch;
-    padding: 0 12px 12px
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0 12px 12px;
+    position: relative
 }
 
 .title__991c2 {
-    display: flex;
     align-items: center;
-    width: 100%;
-    font-weight: 600
+    display: flex;
+    font-weight: 600;
+    width: 100%
 }
 
 .verifiedIcon__991c2 {
     flex: 0 0 16px;
-    width: 16px;
     height: 16px;
+    margin-left: -2px;
     margin-right: 4px;
-    margin-left: -2px
+    width: 16px
 }
 
 .guildName__991c2 {
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .descriptionContainer__991c2 {
@@ -250,24 +249,24 @@
 }
 
 .description__991c2 {
-    overflow: hidden;
-    text-overflow: ellipsis;
     margin: 8px 0;
-    word-wrap: break-word
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis
 }
 
 .memberInfo__991c2 {
+    display: flex;
     flex: 0 0 auto;
-    justify-self: flex-end;
-    display: flex
+    justify-self: flex-end
 }
 
 .memberCount__991c2 {
-    font-size: 0.75rem;
-    line-height: 1rem;
-    display: flex;
     align-items: center;
+    display: flex;
+    font-size: .75rem;
     font-weight: 600;
+    line-height: 1rem;
     margin-right: 16px
 }
 
@@ -277,10 +276,10 @@
 
 .memberDot__991c2 {
     border-radius: 50%;
-    width: 8px;
+    flex-shrink: 0;
     height: 8px;
     margin-right: 4px;
-    flex-shrink: 0
+    width: 8px
 }
 
 .dotOnline__991c2 {
@@ -323,17 +322,17 @@
 .questionTitle__175a5 {
     margin-bottom: 12px;
     overflow: hidden;
-    word-wrap: break-word
+    overflow-wrap: break-word
 }
 
 .requirementContainer__175a5 {
-    display: flex;
     align-items: center;
     background-color: var(--background-modifier-accent);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    padding: 12px;
-    margin-bottom: 24px
+    display: flex;
+    margin-bottom: 24px;
+    padding: 12px
 }
 
 .requirementIcon__175a5 {
@@ -358,14 +357,14 @@
 }
 
 .footnote__175a5 {
-    text-align: left;
-    margin-top: 8px
+    margin-top: 8px;
+    text-align: left
 }
 
 .formItem__523ab {
-    width: 100%;
+    margin-bottom: 24px;
     padding: 0;
-    margin-bottom: 24px
+    width: 100%
 }
 
 .formItem__523ab:last-child {
@@ -383,9 +382,9 @@
 }
 
 .verificationFieldWrapper__523ab {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: space-between
 }
 
 .verificationIcon__523ab {
@@ -394,28 +393,28 @@
 }
 
 .verificationLabel__523ab {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .verificationCheckmark__523ab {
     color: var(--text-positive);
+    height: 16px;
     margin-right: 8px;
-    width: 16px;
-    height: 16px
+    width: 16px
 }
 
 .verificationConfirmation__523ab {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-grow: 0
 }
 
 .termsRow__523ab {
-    display: flex;
     align-items: flex-start;
-    padding: 16px 4px;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    padding: 16px 4px
 }
 
 .termsRow__523ab:first-child {
@@ -428,15 +427,15 @@
 }
 
 .termsRowContent__523ab {
+    overflow-wrap: break-word;
     padding-left: 12px;
     white-space: pre-wrap;
-    width: calc(100% - 12px);
-    word-wrap: break-word
+    width: calc(100% - 12px)
 }
 
 .checkbox__523ab {
-    margin-top: 16px;
     cursor: pointer;
+    margin-top: 16px;
     opacity: 1
 }
 
@@ -463,8 +462,8 @@
 }
 
 .termsFieldBody__523ab {
-    padding: 10px 17px;
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 10px 17px
 }
 
 .paragraphFieldBody__523ab {
@@ -472,8 +471,8 @@
 }
 
 .paragraphFieldBody__523ab>textarea {
-    border: none;
     background: none;
+    border: none;
     opacity: 1
 }
 
@@ -482,18 +481,18 @@
 }
 
 .multipleChoiceIcon__523ab>svg {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .editableRequirementContainer__523ab {
-    margin-top: 40px;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    margin-top: 40px
 }
 
 .multipleChoiceTitle__523ab {
     overflow: hidden;
-    word-wrap: break-word
+    overflow-wrap: break-word
 }
 
 .multipleChoiceItem__523ab {
@@ -509,57 +508,60 @@ div:has(>div>.container_f792fa) {
 }
 
 .container_f792fa {
-    position: relative;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     background-color: var(--bg-surface-overlay)!important;
-    height: 100vh;
-    width: 100vw;
+    border: none;
     border-radius: 0;
-    border: none
+    flex-direction: row;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw
 }
 
 .container_f792fa,.guildSidebar_f792fa {
-    display: flex;
     box-sizing: border-box;
+    display: flex;
     padding: 12px
 }
 
 .guildSidebar_f792fa {
     flex-direction: column;
-    width: 33%;
     height: 100%;
-    min-width: 400px
+    min-width: 400px;
+    width: 33%
 }
 
 .sidebarCard_f792fa {
-    position: relative;
     background-color: var(--bg-base-tertiary);
     border-radius: 8px;
+    flex-direction: column;
     justify-content: center;
-    padding: 12px 0
+    padding: 12px 0;
+    position: relative
 }
 
 .modal_f792fa,.sidebarCard_f792fa {
-    display: flex;
-    flex-direction: column;
     align-items: center;
+    display: flex;
     flex: 1
 }
 
 .modal_f792fa {
+    box-sizing: border-box;
     height: 100%;
-    width: 100%;
-    box-sizing: border-box
+    width: 100%
+}
+
+.modal_f792fa,.sequencer_f792fa {
+    flex-direction: column
 }
 
 .sequencer_f792fa {
-    min-height: 100%;
+    align-items: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center
+    min-height: 100%
 }
 
 .modalContent_f792fa::-webkit-scrollbar-track-piece:start {
@@ -571,14 +573,14 @@ div:has(>div>.container_f792fa) {
 }
 
 .mainContentWrapper_f792fa {
-    max-width: 720px;
+    align-items: center;
+    box-sizing: border-box;
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
-    padding: 60px 24px 48px;
-    box-sizing: border-box;
-    height: 100%
+    height: 100%;
+    max-width: 720px;
+    padding: 60px 24px 48px
 }
 
 .content_f792fa {
@@ -587,13 +589,13 @@ div:has(>div>.container_f792fa) {
 }
 
 .closeButton_f792fa {
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
     border: 1px solid var(--border-subtle);
+    border-radius: 50%;
+    height: 32px;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
     z-index: 2
 }
 
@@ -615,21 +617,21 @@ div:has(>div>.container_f792fa) {
 }
 
 .footer_f792fa {
-    display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    display: flex;
     flex: 0 0 auto;
+    flex-direction: row-reverse;
     gap: 16px;
+    justify-content: space-between;
     padding: 8px 0;
     position: relative;
     width: 100%
 }
 
 .divider_f792fa {
-    margin: 24px 0;
     border: none;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin: 24px 0
 }
 
 .submitButton_f792fa {
@@ -637,9 +639,8 @@ div:has(>div>.container_f792fa) {
 }
 
 .formItem_f792fa {
-    text-align: left;
-    text-align: initial;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    text-align: initial
 }
 
 .resendButton_f792fa {
@@ -647,14 +648,14 @@ div:has(>div>.container_f792fa) {
 }
 
 .confirmation_f792fa {
-    max-width: 440px;
     box-shadow: var(--elevation-high);
+    max-width: 440px;
     text-align: center
 }
 
 .confirmation_f792fa,.confirmationContent_f792fa {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column
 }
 
@@ -663,19 +664,19 @@ div:has(>div>.container_f792fa) {
 }
 
 .confirmationButtonRow_f792fa {
+    background-color: var(--background-secondary);
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    background-color: var(--background-secondary);
     margin-top: 24px;
     padding: 12px 8px;
-    width: 100%;
-    box-sizing: border-box;
-    border-radius: 0 0 4px 4px
+    width: 100%
 }
 
 .confirmationButton_f792fa {
-    width: 100%;
-    margin: 4px
+    margin: 4px;
+    width: 100%
 }
 
 .confirmationTooltipContents_f792fa {
@@ -690,12 +691,12 @@ div:has(>div>.container_f792fa) {
 }
 
 .notice_f792fa {
-    pointer-events: all;
-    position: absolute;
     bottom: 0;
     left: 0;
+    margin: 0 auto 16px;
     max-width: 740px;
-    margin: 0 auto 16px
+    pointer-events: all;
+    position: absolute
 }
 
 .rejectionReasonLabel_f792fa {
@@ -719,8 +720,7 @@ div:has(>div>.container_f792fa) {
     }
 
     .mainContentWrapper_f792fa {
-        height: auto;
-        height: initial
+        height: unset
     }
 
     .sidebarCard_f792fa {
@@ -729,8 +729,8 @@ div:has(>div>.container_f792fa) {
 }
 
 .clanGdmConsentCheckbox_f792fa {
-    margin-top: 24px;
-    border-width: 2px
+    border-width: 2px;
+    margin-top: 24px
 }
 
 .disclaimerFooter_f792fa {
@@ -740,23 +740,23 @@ div:has(>div>.container_f792fa) {
 }
 
 .guildProfile_f792fa {
-    z-index: 2;
-    width: 280px
+    width: 280px;
+    z-index: 2
 }
 
 .sidebarGradientOverlay_f792fa {
-    z-index: 0;
+    border-radius: 8px;
+    bottom: 0;
+    left: 0;
     opacity: .33;
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    border-radius: 8px
+    top: 0;
+    z-index: 0
 }
 
 .visual-refresh .container_f792fa {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=9b26afcd53809f10.css.map*/
+/*# sourceMappingURL=541d79d4718070f7.css.map*/

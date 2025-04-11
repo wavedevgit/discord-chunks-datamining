@@ -1,6 +1,6 @@
 /**
   Module ID: 54642
-  Original File Name: bea34146728fffc2
+  Original File Name: e7ca6c3dff6a53d0
 **/
 .bottomMargin_d5f35b {
     margin-bottom: 16px
@@ -16,16 +16,16 @@
 }
 
 .body_d5f35b,.header_d5f35b {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .header_d5f35b {
     background-color: var(--background-tertiary);
     background-size: cover;
-    justify-content: center;
+    border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-top-left-radius: 4px
+    justify-content: center
 }
 
 .formMargin_d5f35b {
@@ -37,14 +37,14 @@
 }
 
 .content_d5f35b {
-    z-index: 2;
+    font-weight: 500;
     padding-top: 32px;
-    font-weight: 500
+    z-index: 2
 }
 
 .guildOption_d5f35b {
-    display: flex;
     align-items: center;
+    display: flex;
     font-weight: 500
 }
 
@@ -61,23 +61,23 @@
 }
 
 .channel_d5f35b {
+    align-items: center;
     background-color: var(--background-modifier-selected);
     display: flex;
-    align-items: center;
     padding: 8px
 }
 
 .channelName_d5f35b {
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .channelIcon_d5f35b {
-    margin-right: 8px;
+    color: var(--text-muted);
     margin-left: 2px;
-    min-width: 16px;
-    color: var(--text-muted)
+    margin-right: 8px;
+    min-width: 16px
 }
 
 .images-light .header_d5f35b {
@@ -88,4 +88,4 @@
     background-image: url(/assets/ef95e909088f721c.svg)
 }
 
-/*# sourceMappingURL=bea34146728fffc2.css.map*/
+/*# sourceMappingURL=e7ca6c3dff6a53d0.css.map*/

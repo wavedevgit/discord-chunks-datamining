@@ -1,6 +1,6 @@
 /**
   Module ID: 8653
-  Original File Name: c0bf721d23762115
+  Original File Name: 634dbc9e839ba1a5
 **/
 .akaBadge__910e1 {
     background-color: var(--background-secondary);
@@ -35,8 +35,8 @@
 }
 
 .guildName__910e1,.nickname__910e1 {
-    margin-left: 4px;
-    display: inline-block
+    display: inline-block;
+    margin-left: 4px
 }
 
 .spacing__910e1 {
@@ -44,9 +44,9 @@
 }
 
 .fromToWrapper__910e1 {
-    padding-top: 24px;
+    background: no-repeat 50% 0;
     margin-top: 24px;
-    background: no-repeat 50% 0
+    padding-top: 24px
 }
 
 .from__910e1,.to__910e1 {
@@ -59,9 +59,9 @@
 }
 
 .to__910e1 {
+    background-color: var(--background-secondary);
     position: relative;
-    z-index: 1;
-    background-color: var(--background-secondary)
+    z-index: 1
 }
 
 .theme-dark .to__910e1 {
@@ -88,4 +88,4 @@
     background-image: url(/assets/8b0b7b6309375fb9.svg)
 }
 
-/*# sourceMappingURL=c0bf721d23762115.css.map*/
+/*# sourceMappingURL=634dbc9e839ba1a5.css.map*/

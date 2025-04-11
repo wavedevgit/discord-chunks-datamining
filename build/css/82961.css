@@ -1,14 +1,14 @@
 /**
   Module ID: 82961
-  Original File Name: 66ee6734a4e51159
+  Original File Name: 881c32faf316117a
 **/
 .row__19fd1 {
     align-items: center;
-    display: flex;
     border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
-    gap: var(--spacing-16)
+    padding: var(--spacing-16) 0
 }
 
 .row__19fd1:last-child {
@@ -36,19 +36,19 @@
 }
 
 .button__19fd1 {
-    min-width: 75px;
-    margin-left: auto;
     flex-shrink: 0;
+    margin-left: auto;
+    min-width: 75px;
     padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
-    border-radius: var(--radius-round);
+    align-items: center;
     background-color: var(--bg-mod-subtle);
-    min-width: 32px;
+    border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
-    align-items: center
+    min-width: 32px
 }
 
 .number__19fd1,.tableRowGroup__19fd1 {
@@ -62,12 +62,12 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    overflow: hidden;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
-    padding: 0;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary)
+    overflow: hidden;
+    padding: 0
 }
 
 .visual-refresh .row__19fd1 {
@@ -79,15 +79,15 @@
 }
 
 .buttonContainer__19fd1 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: var(--spacing-4)
 }
 
 .buttonIcon__19fd1 {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .header_f476f9 {
@@ -95,9 +95,9 @@
 }
 
 .content_f476f9,.header_f476f9 {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .content_f476f9 {
@@ -106,19 +106,20 @@
 }
 
 .footer_f476f9 {
-    gap: var(--spacing-8);
     align-items: center;
-    background: var(--background-secondary)
+    background: var(--background-secondary);
+    gap: var(--spacing-8)
 }
 
 .root_f476f9 {
+    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content
 }
 
 .table_f476f9 {
-    border-radius: 8px;
     background: var(--background-secondary);
+    border-radius: 8px;
     width: 408px
 }
 
@@ -128,9 +129,9 @@
 }
 
 .anotherOption_f476f9 {
-    padding-top: 8px;
+    align-self: stretch;
     gap: 8px;
-    align-self: stretch
+    padding-top: 8px
 }
 
 .optionEyebrow_f476f9 {
@@ -142,17 +143,17 @@
 }
 
 .listContent_f476f9 {
-    gap: 8px;
-    flex-direction: column
+    flex-direction: column;
+    gap: 8px
 }
 
 .learnMore_f476f9,.listContent_f476f9 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .learnMore_f476f9 {
     justify-content: center
 }
 
-/*# sourceMappingURL=66ee6734a4e51159.css.map*/
+/*# sourceMappingURL=881c32faf316117a.css.map*/

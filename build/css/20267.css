@@ -1,56 +1,56 @@
 /**
   Module ID: 20267
-  Original File Name: a65616b4eb791785
+  Original File Name: bb0c53002c0b4e2e
 **/
 .avatarDecorationPreview__9baf3 {
     padding: 16px 0 32px
 }
 
 .profileEffectPreview__9baf3 {
-    scale: .9;
-    position: relative
+    position: relative;
+    scale: .9
 }
 
 .header__7560f {
+    color: var(--header-primary);
     font-size: 20px;
-    margin-top: 20px;
-    color: var(--header-primary)
+    margin-top: 20px
 }
 
 .customGiftHeader__7560f {
     font-size: 20px;
-    text-align: center;
+    line-height: 1.25;
     margin-top: 10px;
-    width: 75%;
-    line-height: 1.25
+    text-align: center;
+    width: 75%
 }
 
 .backSplash__7560f {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    opacity: .15;
-    background-size: cover;
+    background-image: url(/assets/9565a0e7b9291ad9.png);
     background-position: bottom;
+    background-size: cover;
+    bottom: 0;
     filter: grayscale(100%);
+    left: 0;
     -webkit-mask: radial-gradient(circle at 50% 0,#000,transparent);
     mask: radial-gradient(circle at 50% 0,#000,transparent);
-    background-image: url(/assets/9565a0e7b9291ad9.png)
+    opacity: .15;
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .customMessage__7560f {
     font-size: calc(10px + 1.4vw);
-    margin-bottom: 35px;
     line-height: 1;
-    text-align: center;
+    margin-bottom: 35px;
     padding-left: 40px;
     padding-right: 40px;
-    word-wrap: break-word;
+    text-align: center;
     word-wrap: break-word;
     box-sizing: border-box;
-    max-width: 450px
+    max-width: 450px;
+    overflow-wrap: break-word
 }
 
 .giftAnimation__7560f {
@@ -66,8 +66,8 @@
 }
 
 .content__7560f,.contentCustomGift__7560f {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column
 }
 
@@ -76,38 +76,38 @@
 }
 
 .body__7560f {
-    margin-top: 8px;
+    color: var(--text-normal);
     margin-bottom: 20px;
-    text-align: center;
-    color: var(--text-normal)
+    margin-top: 8px;
+    text-align: center
 }
 
 .closeButton__7560f {
     position: absolute;
-    top: var(--modal-vertical-padding);
-    right: var(--modal-horizontal-padding)
+    right: var(--modal-horizontal-padding);
+    top: var(--modal-vertical-padding)
 }
 
 .seasonalGiftIcon__7560f {
+    left: 92px;
     position: absolute;
-    width: 260px;
     top: -170px;
-    z-index: 2;
-    left: 92px
+    width: 260px;
+    z-index: 2
 }
 
 .cannon__7560f {
-    position: absolute;
-    width: 100vw;
     height: 130vh;
-    top: -30vh;
     left: 0;
+    position: absolute;
+    top: -30vh;
+    width: 100vw;
     z-index: 1
 }
 
 .modal__7560f {
-    z-index: 0;
-    max-height: 100%
+    max-height: 100%;
+    z-index: 0
 }
 
-/*# sourceMappingURL=a65616b4eb791785.css.map*/
+/*# sourceMappingURL=bb0c53002c0b4e2e.css.map*/

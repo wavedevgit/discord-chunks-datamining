@@ -1,15 +1,14 @@
 /**
   Module ID: 94904
-  Original File Name: c5ee3970f5f2a7bc
+  Original File Name: 07f5c932eb15114c
 **/
 .code__1a1f5 {
-    display: grid;
-    grid-row-gap: 16px;
-    row-gap: 16px;
-    padding: 12px;
-    grid-template-columns: repeat(var(--secure-frames-columns),1fr);
     background-color: var(--background-modifier-accent);
-    overflow: hidden
+    display: grid;
+    grid-template-columns: repeat(var(--secure-frames-columns),1fr);
+    overflow: hidden;
+    padding: 12px;
+    row-gap: 16px
 }
 
 .chunk__1a1f5 {
@@ -21,14 +20,14 @@
 }
 
 .divider__1a1f5:after {
-    content: "";
-    position: absolute;
     background-color: var(--divider-subtle);
-    z-index: 1;
-    width: 100%;
+    content: "";
     height: 1px;
     left: 0;
-    top: -8px
+    position: absolute;
+    top: -8px;
+    width: 100%;
+    z-index: 1
 }
 
 .codeText__1a1f5 {
@@ -36,8 +35,8 @@
 }
 
 .loading__1a1f5 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     min-height: 104px
 }
@@ -51,9 +50,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    overflow: visible;
     padding: 68px var(--spacing-16) var(--spacing-16);
-    overflow: visible
+    position: relative
 }
 
 .title_d43202 {
@@ -69,10 +68,10 @@
 }
 
 .shieldIconContainer_d43202 {
-    position: absolute;
-    top: -50px;
     left: 0;
-    right: 0
+    position: absolute;
+    right: 0;
+    top: -50px
 }
 
 .shieldIcon_d43202,.shieldIconContainer_d43202 {
@@ -82,10 +81,10 @@
 
 .shieldIcon_d43202 {
     align-items: center;
-    width: 100px;
-    height: 100px;
+    background-color: var(--background-secondary-alt);
     border-radius: 50px;
-    background-color: var(--background-secondary-alt)
+    height: 100px;
+    width: 100px
 }
 
 .verification_d43202 {
@@ -96,14 +95,14 @@
 
 .header_d43202 {
     background-color: var(--background-secondary-alt);
-    padding: var(--spacing-8) var(--spacing-16);
     border-top-left-radius: var(--radius-md);
-    border-top-right-radius: var(--radius-md)
+    border-top-right-radius: var(--radius-md);
+    padding: var(--spacing-8) var(--spacing-16)
 }
 
 .copyIcon_d43202,.header_d43202 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .copyIcon_d43202 {
@@ -118,8 +117,8 @@
 }
 
 .footer_d43202 {
-    text-align: center;
-    margin: var(--spacing-8) 0 var(--spacing-16)
+    margin: var(--spacing-8) 0 var(--spacing-16);
+    text-align: center
 }
 
 .verifiedButton_d43202 {
@@ -127,8 +126,8 @@
 }
 
 .codeStatus_d43202 {
-    flex: 1;
     display: flex;
+    flex: 1;
     justify-content: flex-end
 }
 
@@ -146,13 +145,13 @@
 }
 
 .visual-refresh .code_d43202 {
+    border-bottom: 1px solid var(--border-faint);
     border-left: 1px solid var(--border-faint);
-    border-right: 1px solid var(--border-faint);
-    border-bottom: 1px solid var(--border-faint)
+    border-right: 1px solid var(--border-faint)
 }
 
 .visual-refresh .shieldIcon_d43202 {
     display: none
 }
 
-/*# sourceMappingURL=c5ee3970f5f2a7bc.css.map*/
+/*# sourceMappingURL=07f5c932eb15114c.css.map*/

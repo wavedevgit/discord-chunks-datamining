@@ -1,14 +1,14 @@
 /**
   Module ID: 86653
-  Original File Name: 5c8f59a483179d24
+  Original File Name: 572ec99a369c72e2
 **/
 .root__2a5c7 {
-    position: relative;
-    width: 680px;
-    height: 660px;
-    border-radius: 12px;
     background: var(--black);
-    overflow: hidden
+    border-radius: 12px;
+    height: 660px;
+    overflow: hidden;
+    position: relative;
+    width: 680px
 }
 
 .visual-refresh .root__2a5c7 {
@@ -20,12 +20,12 @@
 }
 
 .button__2a5c7 {
-    display: flex;
-    width: 350px;
-    flex-direction: column;
     align-items: center;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-    border-radius: 8px
+    width: 350px
 }
 
 .buttonColor__2a5c7 {
@@ -34,23 +34,23 @@
 }
 
 .closeButton__2a5c7 {
+    cursor: pointer;
+    margin: 16px;
     position: absolute;
     right: 0;
-    margin: 16px;
-    cursor: pointer;
     z-index: 5
 }
 
 .closeButtonIcon__2a5c7 {
-    width: 24px;
+    color: var(--interactive-normal);
     height: 24px;
-    color: var(--interactive-normal)
+    width: 24px
 }
 
 .content__2a5c7 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 24px
 }
 
@@ -63,60 +63,60 @@
 }
 
 .header__2a5c7,.subHeader__2a5c7 {
-    text-align: center;
-    font-style: normal
+    font-style: normal;
+    text-align: center
 }
 
 .subHeader__2a5c7 {
     color: var(--primary-400);
-    margin: 8px 0 16px;
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 500;
-    line-height: 20px
+    line-height: 20px;
+    margin: 8px 0 16px
 }
 
 .featureCardGroup__2a5c7 {
-    flex-wrap: wrap;
-    margin-top: 12px;
-    margin-bottom: 24px;
+    color: var(--header-primary);
     -moz-column-gap: 24px;
     column-gap: 24px;
-    color: var(--header-primary);
-    position: relative;
-    justify-content: center
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    position: relative
 }
 
 .featureCard__2a5c7,.featureCardGroup__2a5c7 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .featureCard__2a5c7 {
-    width: 288px;
-    height: 200px;
-    flex-direction: column;
-    justify-content: flex-end;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: hsl(var(--primary-400-hsl)/.08);
-    box-shadow: 0 4px 42px 0 hsl(var(--black-hsl)/.4);
     -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px)
+    backdrop-filter: blur(10px);
+    background: hsl(var(--primary-400-hsl)/.08);
+    border-radius: 20px;
+    box-shadow: 0 4px 42px 0 hsl(var(--black-hsl)/.4);
+    flex-direction: column;
+    flex-shrink: 0;
+    height: 200px;
+    justify-content: flex-end;
+    width: 288px
 }
 
 .featureCardImg__2a5c7 {
+    height: 125px;
     padding: 24px 16px 0;
-    width: 179px;
-    height: 125px
+    width: 179px
 }
 
 .featureCardTextGroup__2a5c7 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    row-gap: 8px;
-    padding: 12px 16px 24px
+    padding: 12px 16px 24px;
+    row-gap: 8px
 }
 
 .featureCardTextHeader__2a5c7 {
@@ -127,9 +127,9 @@
 }
 
 .featureCardTextHeader__2a5c7,.featureCardTextSubHeader__2a5c7 {
-    text-align: center;
     font-family: var(--font-primary);
-    font-style: normal
+    font-style: normal;
+    text-align: center
 }
 
 .featureCardTextSubHeader__2a5c7 {
@@ -153,7 +153,6 @@
 
 .theme-light .featureCard__2a5c7 {
     background: var(--bg-mod-faint);
-    border: 1px solid rgba(0,0,0,.08);
     border: 1px solid var(--border-subtle,rgba(0,0,0,.08));
     box-shadow: none
 }
@@ -162,4 +161,4 @@
     color: var(--black-500)
 }
 
-/*# sourceMappingURL=5c8f59a483179d24.css.map*/
+/*# sourceMappingURL=572ec99a369c72e2.css.map*/

@@ -1,19 +1,19 @@
 /**
   Module ID: 51458
-  Original File Name: 339fc7ba0624d3f9
+  Original File Name: 90883aab80a83505
 **/
 .labelWrapper_abe771 {
-    display: flex;
+    align-items: center;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    row-gap: 4px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center
+    row-gap: 4px
 }
 
 .label_abe771 {
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .newBadge_abe771 {
@@ -30,14 +30,14 @@
 }
 
 .inviteGuestContainer_abe771 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .videoPaused_afb275 {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    align-items: center
+    justify-content: left
 }
 
 .warningCircle_afb275 {
@@ -45,13 +45,13 @@
 }
 
 .roleRow_b82947 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=339fc7ba0624d3f9.css.map*/
+/*# sourceMappingURL=90883aab80a83505.css.map*/

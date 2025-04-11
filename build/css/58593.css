@@ -1,30 +1,29 @@
 /**
   Module ID: 58593
-  Original File Name: 5f94abf4d3c28e36
+  Original File Name: ae9042ded8d94e45
 **/
 @use postcss-pxtorem;
 
 .gameIcon__5a366 {
-    margin-right: 4px;
     height: 1rem;
+    margin-right: 4px;
     vertical-align: text-top
 }
 
 .gameMessageTooltip__5a366 {
-    max-width: none;
-    max-width: initial
+    max-width: unset
 }
 
 .gameMessageTooltipContent__5a366 {
+    align-items: center;
     display: flex;
-    padding: 16px;
-    align-items: center
+    padding: 16px
 }
 
 .textContainer__5a366 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     margin-left: 8px;
     width: 240px
 }
@@ -38,24 +37,24 @@
 .wrapper_c19a55 {
     position: relative;
     word-wrap: break-word;
+    flex: 0 0 auto;
+    min-height: 1.375rem;
+    padding-right: var(--custom-message-margin-horizontal);
     -webkit-user-select: text;
     -moz-user-select: text;
-    user-select: text;
-    flex: 0 0 auto;
-    padding-right: var(--custom-message-margin-horizontal);
-    min-height: 1.375rem
+    user-select: text
 }
 
 .compact_c19a55.wrapper_c19a55 {
-    padding-top: var(--custom-message-padding-vertical-container-compact);
     padding-bottom: var(--custom-message-padding-vertical-container-compact);
-    padding-left: var(--custom-message-margin-compact-indent)
+    padding-left: var(--custom-message-margin-compact-indent);
+    padding-top: var(--custom-message-padding-vertical-container-compact)
 }
 
 .cozy_c19a55.wrapper_c19a55 {
-    padding-top: var(--custom-message-spacing-vertical-container-cozy);
     padding-bottom: var(--custom-message-spacing-vertical-container-cozy);
-    padding-left: var(--custom-message-margin-left-content-cozy)
+    padding-left: var(--custom-message-margin-left-content-cozy);
+    padding-top: var(--custom-message-spacing-vertical-container-cozy)
 }
 
 .compact_c19a55.wrapper_c19a55.contentOnly_c19a55,.cozy_c19a55.wrapper_c19a55.contentOnly_c19a55,.preview_c19a55.compact_c19a55.wrapper_c19a55,.preview_c19a55.cozy_c19a55.wrapper_c19a55 {
@@ -64,22 +63,22 @@
 
 .repliedMessage_c19a55 {
     --reply-spacing: 4px;
-    display: flex;
     align-items: center;
     color: var(--header-secondary);
-    font-size: 0.875rem;
+    display: flex;
+    font-size: .875rem;
     line-height: var(--custom-message-reply-message-preview-line-height);
     position: relative;
-    white-space: pre;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none
+    user-select: none;
+    white-space: pre
 }
 
 .executedCommand_c19a55,.threadMessageAccessory_c19a55 {
-    display: flex;
     align-items: center;
-    font-size: 0.875rem;
+    display: flex;
+    font-size: .875rem;
     height: 18px;
     line-height: 1.125rem;
     min-width: 0
@@ -98,7 +97,7 @@
 }
 
 .compact_c19a55 .repliedMessage_c19a55 {
-    --text-indent: calc(var(--custom-message-margin-compact-indent)*-1 - -1rem);
+    --text-indent: calc((var(--custom-message-margin-compact-indent) - 1rem)*-1);
     margin-left: calc(var(--timestamp-width) + var(--custom-message-meta-space) + var(--text-indent));
     padding-left: var(--custom-message-reply-indent)
 }
@@ -129,23 +128,19 @@
 
 .messageSpine_c19a55:before,.repliedMessageClickableSpine_c19a55 {
     --spine-width: 2px;
+    border-color: var(--spine-default);
+    border-style: solid;
+    border-top-left-radius: 6px;
+    border-width: var(--spine-width) 0 0 var(--spine-width);
+    bottom: 0;
+    box-sizing: border-box;
     content: "";
     display: block;
-    position: absolute;
-    box-sizing: border-box;
-    top: 50%;
-    right: 100%;
-    bottom: 0;
-    left: calc(var(--chat-avatar-size)/2*-1 + var(--gutter)*-1);
-    margin: calc(2px*-1/2) var(--reply-spacing) calc(var(--custom-message-spacing-vertical-container-cozy) - 4px) calc(2px*-1/2);
+    left: calc((var(--chat-avatar-size)/2 + var(--gutter))*-1);
     margin: calc(var(--spine-width)*-1/2) var(--reply-spacing) calc(var(--custom-message-spacing-vertical-container-cozy) - 4px) calc(var(--spine-width)*-1/2);
-    border-left: 2px solid var(--spine-default);
-    border-left: var(--spine-width) solid var(--spine-default);
-    border-bottom: 0 solid var(--spine-default);
-    border-right: 0 solid var(--spine-default);
-    border-top: 2px solid var(--spine-default);
-    border-top: var(--spine-width) solid var(--spine-default);
-    border-top-left-radius: 6px
+    position: absolute;
+    right: 100%;
+    top: 50%
 }
 
 .compact_c19a55 .messageSpine_c19a55:before,.compact_c19a55 .repliedMessageClickableSpine_c19a55 {
@@ -162,13 +157,13 @@
 }
 
 .repliedMessageClickableSpine_c19a55:before {
-    content: "";
-    position: absolute;
-    top: -10px;
     bottom: -5px;
+    content: "";
+    cursor: pointer;
     left: -5px;
+    position: absolute;
     right: -5px;
-    cursor: pointer
+    top: -10px
 }
 
 .repliedMessageClickableSpine_c19a55.repliedMessageContentHovered_c19a55 {
@@ -176,14 +171,14 @@
 }
 
 .executedCommandAvatar_c19a55,.replyAvatar_c19a55,.replyBadge_c19a55,.replyChatIconContainer_c19a55,.threadMessageAccessoryAvatar_c19a55 {
-    flex: 0 0 auto;
-    width: 16px;
-    height: 16px;
     border-radius: 50%;
+    flex: 0 0 auto;
+    height: 16px;
+    margin-right: var(--custom-message-meta-space);
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    margin-right: var(--custom-message-meta-space)
+    width: 16px
 }
 
 .threadMessageAccessoryAvatar_c19a55 {
@@ -191,34 +186,34 @@
 }
 
 .replyBadge_c19a55 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background: var(--background-tertiary);
     color: var(--header-secondary);
-    background: var(--background-tertiary)
+    display: flex;
+    justify-content: center
 }
 
 .replyIcon_c19a55 {
-    width: 10.8px;
-    height: 7.2px
+    height: 7.2px;
+    width: 10.8px
 }
 
 .clanTagChiplet_c19a55 {
-    margin-right: 0;
-    margin-left: 4px
+    margin-left: 4px;
+    margin-right: 0
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55 {
-    display: inline;
     background: transparent;
+    display: inline;
     padding: 0;
     vertical-align: baseline
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55>span {
     background: var(--bg-mod-strong);
-    padding: 1px 4px 0;
-    border-radius: 4px
+    border-radius: 4px;
+    padding: 1px 4px 0
 }
 
 .compact_c19a55 .clanTagChiplet_c19a55:hover {
@@ -230,14 +225,14 @@
 }
 
 .ticketIcon_c19a55,.userJoinSystemMessageIcon_c19a55 {
-    width: 12px;
     height: 12px;
-    margin-right: var(--custom-message-meta-space)
+    margin-right: var(--custom-message-meta-space);
+    width: 12px
 }
 
 .commandIcon_c19a55 {
-    width: 5px;
-    height: 9px
+    height: 9px;
+    width: 5px
 }
 
 .executedCommand_c19a55 .applicationName_c19a55,.executedCommand_c19a55 .clanTagChiplet_c19a55,.executedCommand_c19a55 .commandName_c19a55,.executedCommand_c19a55 .username_c19a55,.repliedMessage_c19a55 .clanTagChiplet_c19a55,.repliedMessage_c19a55 .roleDot_c19a55,.repliedMessage_c19a55 .username_c19a55,.threadMessageAccessory_c19a55 .clanTagChiplet_c19a55,.threadMessageAccessory_c19a55 .username_c19a55 {
@@ -261,8 +256,8 @@
 }
 
 .executedCommand_c19a55 .commandName_c19a55 {
-    font-weight: 500;
-    color: var(--text-link)
+    color: var(--text-link);
+    font-weight: 500
 }
 
 .executedCommand_c19a55 .appsIcon_c19a55 {
@@ -270,21 +265,21 @@
 }
 
 .executedCommand_c19a55 .appLauncherOnboardingCommandName_c19a55 {
-    font-weight: 500;
-    color: var(--text-link);
     background-color: var(--mention-background);
     border-radius: 3px;
+    color: var(--text-link);
+    font-weight: 500;
     padding: 0 2px
 }
 
 .executedCommand_c19a55 .appLauncherOnboardingCommandName_c19a55:hover {
-    color: var(--white-500);
-    background-color: var(--brand-500)
+    background-color: var(--brand-500);
+    color: var(--white-500)
 }
 
 .executedCommand_c19a55 .applicationName_c19a55 {
-    font-weight: 500;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    font-weight: 500
 }
 
 .executedCommand_c19a55 .repliedMessage_c19a55 .username_c19a55,.executedCommand_c19a55 .targetUsername_c19a55 {
@@ -316,8 +311,8 @@
     display: -webkit-inline-box!important;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
-    word-break: break-all;
-    width: 100%
+    width: 100%;
+    word-break: break-all
 }
 
 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 a {
@@ -330,8 +325,8 @@
 }
 
 .repliedTextPreview_c19a55 .emoji {
-    width: 1.25em;
-    height: 1.25em
+    height: 1.25em;
+    width: 1.25em
 }
 
 .threadMessageAccessoryPreview_c19a55 {
@@ -358,8 +353,8 @@
 }
 
 .threadMessageAccessory_c19a55 .threadMessageAccessoryPreview_c19a55 .threadMessageAccessoryContent_c19a55 {
-    white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .repliedMessage_c19a55 .repliedTextPreview_c19a55 .repliedTextContent_c19a55 code,.threadMessageAccessory_c19a55 .threadMessageAccessoryPreview_c19a55 .threadMessageAccessoryContent_c19a55 code {
@@ -367,8 +362,9 @@
 }
 
 .repliedTextContent_c19a55 {
-    width: -moz-max-content;
-    width: max-content
+    inline-size: -webkit-max-content;
+    inline-size: -moz-max-content;
+    inline-size: max-content
 }
 
 .repliedTextPlaceholder_c19a55,.threadMessageAccessoryPlaceholder_c19a55 {
@@ -389,13 +385,13 @@
 .compact_c19a55 .contents_c19a55 {
     margin-left: calc(var(--custom-message-margin-compact-indent)*-1);
     padding-left: var(--custom-message-margin-compact-indent);
-    text-indent: calc(var(--custom-message-margin-compact-indent)*-1 - -1rem)
+    text-indent: calc((var(--custom-message-margin-compact-indent) - 1rem)*-1)
 }
 
 .cozy_c19a55 .contents_c19a55 {
-    position: static;
     margin-left: 0;
     padding-left: 0;
+    position: static;
     text-indent: 0
 }
 
@@ -413,11 +409,11 @@
 }
 
 .cozy_c19a55 .header_c19a55 {
+    color: var(--text-muted);
     display: block;
-    position: relative;
     line-height: 1.375rem;
     min-height: 1.375rem;
-    color: var(--text-muted);
+    position: relative;
     white-space: break-spaces;
     word-wrap: pre-wrap
 }
@@ -440,8 +436,8 @@
 
 .buttonContainer_c19a55 {
     position: absolute;
-    top: 0;
-    right: 0
+    right: 0;
+    top: 0
 }
 
 .systemMessageAccessories_c19a55 {
@@ -449,31 +445,31 @@
 }
 
 .avatar_c19a55 {
-    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    flex: 0 0 auto;
+    height: var(--chat-avatar-size);
     left: var(--custom-message-margin-horizontal);
     margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy));
-    width: var(--chat-avatar-size);
-    height: var(--chat-avatar-size);
-    border-radius: 50%;
     overflow: hidden;
-    cursor: pointer;
+    pointer-events: none;
+    position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    flex: 0 0 auto;
-    pointer-events: none;
+    width: var(--chat-avatar-size);
     z-index: 1
 }
 
 .compact_c19a55 .avatar_c19a55 {
-    position: relative;
-    left: 0;
-    margin-top: 0;
-    width: 1em;
     height: 1em;
-    top: .18em;
+    left: 0;
     margin-left: .1em;
-    margin-right: .25em
+    margin-right: .25em;
+    margin-top: 0;
+    position: relative;
+    top: .18em;
+    width: 1em
 }
 
 .preview_c19a55 .avatar_c19a55 {
@@ -481,37 +477,37 @@
 }
 
 .avatar_c19a55:before {
+    background-color: var(--background-modifier-accent);
     content: "";
     display: block;
-    width: 100%;
     height: 100%;
-    background-color: var(--background-modifier-accent)
+    width: 100%
 }
 
 .avatarDecoration_c19a55 {
-    position: absolute;
-    z-index: 1;
-    left: calc(var(--custom-message-margin-horizontal) - var(--custom-message-avatar-decoration-size)/2 + var(--custom-message-avatar-size)/2);
-    margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy) - var(--custom-message-avatar-decoration-size)/2 + var(--custom-message-avatar-size)/2);
-    width: var(--custom-message-avatar-decoration-size);
     height: var(--custom-message-avatar-decoration-size);
+    left: calc(var(--custom-message-margin-horizontal) - (var(--custom-message-avatar-decoration-size) - var(--custom-message-avatar-size))/2);
+    margin-top: calc(4px - var(--custom-message-spacing-vertical-container-cozy) - (var(--custom-message-avatar-decoration-size) - var(--custom-message-avatar-size))/2);
     pointer-events: none;
+    position: absolute;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none
+    user-select: none;
+    width: var(--custom-message-avatar-decoration-size);
+    z-index: 1
 }
 
 .a11y-font-scaled-down .avatar_c19a55:not(.compact_c19a55) {
-    width: 2.5rem;
     height: 2.5rem;
     left: 1rem;
-    margin-top: calc(.25rem - var(--custom-message-spacing-vertical-container-cozy))
+    margin-top: calc(.25rem - var(--custom-message-spacing-vertical-container-cozy));
+    width: 2.5rem
 }
 
 .a11y-font-scaled-down .avatarDecoration_c19a55:not(.compact_c19a55) {
-    width: calc(2.5rem*var(--decoration-to-avatar-ratio));
     height: calc(2.5rem*var(--decoration-to-avatar-ratio));
-    left: .8rem
+    left: .8rem;
+    width: calc(2.5rem*var(--decoration-to-avatar-ratio))
 }
 
 .avatar_c19a55.clickable_c19a55 {
@@ -527,20 +523,20 @@
 }
 
 .roleIcon_c19a55 {
+    height: calc(1rem + 4px);
     margin-left: .25rem;
-    vertical-align: top;
     position: relative;
     top: 1px;
-    height: calc(1rem + 4px);
+    vertical-align: top;
     width: calc(1rem + 4px)
 }
 
 .timestamp_c19a55 {
-    display: inline-block;
-    height: 1.25rem;
     cursor: default;
-    pointer-events: none;
-    font-weight: 500
+    display: inline-block;
+    font-weight: 500;
+    height: 1.25rem;
+    pointer-events: none
 }
 
 .timestampInline_c19a55 {
@@ -564,9 +560,9 @@
 }
 
 .cozy_c19a55 .timestamp_c19a55 {
-    font-size: 0.75rem;
-    line-height: 1.375rem;
     color: var(--text-muted);
+    font-size: .75rem;
+    line-height: 1.375rem;
     vertical-align: baseline
 }
 
@@ -579,24 +575,24 @@
 }
 
 .compact_c19a55 .timestamp_c19a55,.cozy_c19a55 .timestamp_c19a55.alt_c19a55 {
-    text-align: right;
-    font-size: 0.6875rem;
+    color: var(--text-muted);
+    font-size: .6875rem;
     line-height: 1.375rem;
     margin-right: var(--custom-message-meta-space);
-    color: var(--text-muted);
+    text-align: right;
     text-indent: 0
 }
 
 .cozy_c19a55 .timestamp_c19a55.alt_c19a55 {
-    position: absolute;
-    left: 0;
     height: 1.375rem;
+    left: 0;
     line-height: 1.375rem;
-    width: 56px;
+    position: absolute;
+    text-align: right;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    text-align: right;
+    width: 56px;
     z-index: 1
 }
 
@@ -609,7 +605,10 @@
 }
 
 .background-opacity-high .compact_c19a55 .timestamp_c19a55,.background-opacity-low .compact_c19a55 .timestamp_c19a55,.background-opacity-medium .compact_c19a55 .timestamp_c19a55 {
-    text-shadow: none;
+    text-shadow: none
+}
+
+.background-opacity-high .compact_c19a55 .timestamp_c19a55,.background-opacity-low .compact_c19a55 .timestamp_c19a55,.background-opacity-medium .compact_c19a55 .timestamp_c19a55 {
     color: var(--primary-100)
 }
 
@@ -627,20 +626,24 @@
     white-space: nowrap
 }
 
-.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55,.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
+.mouse-mode .wrapper_c19a55:hover .timestampVisibleOnHover_c19a55 {
+    opacity: 1
+}
+
+.keyboard-mode .wrapper_c19a55:focus .timestampVisibleOnHover_c19a55 {
     opacity: 1
 }
 
 .username_c19a55 {
+    color: var(--header-primary);
+    display: inline;
+    flex-shrink: 0;
     font-size: 1rem;
     font-weight: 500;
     line-height: 1.375rem;
-    color: var(--header-primary);
-    display: inline;
-    vertical-align: baseline;
-    position: relative;
     overflow: hidden;
-    flex-shrink: 0
+    position: relative;
+    vertical-align: baseline
 }
 
 .compact_c19a55 .headerText_c19a55,.cozy_c19a55 .headerText_c19a55,.roleDot_c19a55 {
@@ -657,7 +660,6 @@
 
 .applicationName_c19a55.clickable_c19a55:hover,.commandName_c19a55.clickable_c19a55:hover,.username_c19a55.clickable_c19a55:hover {
     cursor: pointer;
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -689,10 +691,10 @@
 }
 
 .nitroBadgeSvg_c19a55 {
-    position: relative;
+    height: 14px;
     margin-left: .2rem;
-    width: 24px;
-    height: 14px
+    position: relative;
+    width: 24px
 }
 
 .nitroBadgeSvgRepliedMessage_c19a55 {
@@ -714,15 +716,14 @@
 }
 
 .replyLink_c19a55.clickable_c19a55:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .separator_c19a55 {
-    position: absolute;
-    opacity: 0;
     display: inline-block;
     font-style: normal;
+    opacity: 0;
+    position: absolute;
     z-index: -1
 }
 
@@ -740,36 +741,36 @@
 }
 
 .cozy_c19a55.hasThread_c19a55:after {
-    border-left: 2px solid var(--spine-default);
     border-bottom: 2px solid var(--spine-default);
     border-bottom-left-radius: 8px;
+    border-left: 2px solid var(--spine-default);
     bottom: 29px;
     content: "";
     position: absolute
 }
 
 .font-size-24 .cozy_c19a55.hasThread_c19a55:after {
-    width: 1.25rem;
     left: 1.5rem;
-    top: 2rem
+    top: 2rem;
+    width: 1.25rem
 }
 
 .font-size-20 .cozy_c19a55.hasThread_c19a55:after {
-    width: 1.625rem;
     left: 1.75rem;
-    top: 2.375rem
+    top: 2.375rem;
+    width: 1.625rem
 }
 
 .font-size-18 .cozy_c19a55.hasThread_c19a55:after {
-    width: 1.75rem;
     left: 2rem;
-    top: 2.75rem
+    top: 2.75rem;
+    width: 1.75rem
 }
 
 .font-size-12 .cozy_c19a55.hasThread_c19a55:after,.font-size-14 .cozy_c19a55.hasThread_c19a55:after,.font-size-15 .cozy_c19a55.hasThread_c19a55:after,.font-size-16 .cozy_c19a55.hasThread_c19a55:after {
-    width: 2rem;
     left: 2.2rem;
-    top: 3rem
+    top: 3rem;
+    width: 2rem
 }
 
 .visual-refresh .cozy_c19a55.hasThread_c19a55:after {
@@ -813,10 +814,10 @@
     background-color: var(--background-accent);
     bottom: 0;
     content: "";
-    position: absolute;
-    width: 2px;
     left: 2.5rem;
-    top: 1.5rem
+    position: absolute;
+    top: 1.5rem;
+    width: 2px
 }
 
 .compact_c19a55.hasThread_c19a55.isSystemMessage_c19a55 .contents_c19a55:before {
@@ -837,10 +838,10 @@
 }
 
 .compact_c19a55 .messageContent_c19a55 {
+    display: inline;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text;
-    display: inline;
     word-wrap: break-word
 }
 
@@ -849,9 +850,9 @@
 }
 
 .compact_c19a55 .messageContent_c19a55 .jumboable {
-    width: var(--custom-emoji-size-emoji);
     height: var(--custom-emoji-size-emoji);
-    min-height: var(--custom-emoji-size-emoji)
+    min-height: var(--custom-emoji-size-emoji);
+    width: var(--custom-emoji-size-emoji)
 }
 
 .compact_c19a55 .messageContent_c19a55.markupRtl_c19a55 {
@@ -860,11 +861,11 @@
 }
 
 .cozy_c19a55 .messageContent_c19a55 {
+    margin-left: calc(var(--custom-message-margin-left-content-cozy)*-1);
+    padding-left: var(--custom-message-margin-left-content-cozy);
     -webkit-user-select: text;
     -moz-user-select: text;
-    user-select: text;
-    margin-left: calc(var(--custom-message-margin-left-content-cozy)*-1);
-    padding-left: var(--custom-message-margin-left-content-cozy)
+    user-select: text
 }
 
 .isSending_c19a55 {
@@ -889,7 +890,7 @@
 }
 
 .edited_c19a55 {
-    font-size: 0.625rem;
+    font-size: .625rem;
     font-weight: 400;
     line-height: 1;
     -webkit-user-select: none;
@@ -898,15 +899,15 @@
 }
 
 .communicationDisabled_c19a55 {
+    color: var(--status-danger);
     margin-right: 8px;
-    vertical-align: -1px;
-    color: var(--status-danger)
+    vertical-align: -1px
 }
 
 .compactCommunicationDisabled_c19a55 {
+    color: var(--status-danger);
     margin: 0 4px;
-    vertical-align: -1px;
-    color: var(--status-danger)
+    vertical-align: -1px
 }
 
 .communicationDisabledOpacity_c19a55 {
@@ -931,11 +932,11 @@
 }
 
 .badgesContainer_c19a55 {
+    align-items: baseline;
     display: inline-flex;
-    row-gap: .25rem;
     margin-right: .25rem;
-    text-indent: 0;
-    align-items: baseline
+    row-gap: .25rem;
+    text-indent: 0
 }
 
 .compact_c19a55 .badgesContainer_c19a55 {
@@ -947,9 +948,9 @@
 }
 
 .enable-forced-colors .headerText_c19a55 .username_c19a55 {
-    forced-color-adjust: none;
     background-color: Canvas;
-    color: ButtonText
+    color: ButtonText;
+    forced-color-adjust: none
 }
 
 .cozy_c19a55 .pollBadgeDefault_c19a55,.pollBadgeReplied_c19a55 {
@@ -971,18 +972,16 @@
 }
 
 .actionButtons_cc1819 {
-    grid-row: 1;
-    grid-column: 4;
-    align-self: self-end;
-    justify-self: self-end;
-    place-self: self-end;
-    padding: 3px;
-    border-radius: 8px;
     background-color: var(--bg-surface-overlay);
     border: 1px solid var(--border-faint);
+    border-radius: 8px;
     display: flex;
     gap: 4px;
+    grid-column: 4;
+    grid-row: 1;
     justify-content: space-between;
+    padding: 3px;
+    place-self: self-end;
     z-index: 1
 }
 
@@ -991,21 +990,21 @@
 }
 
 .actionButton_cc1819 {
-    width: 32px;
-    height: 32px;
     border-radius: 4px;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    height: 32px;
+    transition: background-color .2s ease-in-out,color .2s ease-in-out;
+    width: 32px
 }
 
 .actionButton_cc1819:hover {
-    color: var(--interactive-hover);
-    background-color: var(--bg-mod-faint)
+    background-color: var(--bg-mod-faint);
+    color: var(--interactive-hover)
 }
 
 .actionButton_cc1819.selected_cc1819,.actionButton_cc1819:active {
-    color: var(--interactive-active);
-    background-color: var(--bg-mod-subtle)
+    background-color: var(--bg-mod-subtle);
+    color: var(--interactive-active)
 }
 
 .actionButtonWrapper_cc1819 {
@@ -1013,22 +1012,20 @@
 }
 
 .actionButtonInner_cc1819 {
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 24px;
     justify-content: center;
-    width: 24px;
-    height: 24px
+    width: 24px
 }
 
 .topBar__6088c {
-    grid-row: 1;
-    grid-column: 1/span 5;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: subgrid;
     align-items: center;
-    align-self: flex-end;
-    justify-self: flex-end;
+    display: grid;
+    grid-column: 1/span 5;
+    grid-row: 1;
+    grid-template-columns: subgrid;
+    grid-template-rows: 1fr;
     place-self: flex-end
 }
 
@@ -1041,56 +1038,53 @@
 }
 
 .authorNameWrapper__6088c {
-    display: flex;
     align-items: baseline;
+    display: flex;
     white-space: nowrap
 }
 
 .authorName__6088c {
     flex-shrink: 1;
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .authorAvatar__6088c {
-    grid-row: 1;
     grid-column: 1;
-    align-self: self-end;
-    justify-self: self-end;
+    grid-row: 1;
     place-self: self-end
 }
 
 .timestamp__6088c {
-    font-size: 12px;
-    line-height: 16px;
-    vertical-align: middle;
-    display: inline-block;
     color: var(--text-muted);
+    display: inline-block;
+    font-size: 12px;
+    height: auto;
+    line-height: 16px;
     margin: 0;
-    height: auto
+    vertical-align: middle
 }
 
 .closeButton__6088c {
-    grid-row: 1;
-    grid-column: 5;
     align-self: self-end;
+    grid-column: 5;
+    grid-row: 1;
     z-index: 1
 }
 
 .carouselModal_d3a6f0 {
     background: transparent!important;
     border: none!important;
-    position: absolute;
-    top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
     display: grid;
-    grid-template-rows: 40px 1fr 40px;
-    grid-template-columns: 40px 184px 1fr 184px 40px;
-    grid-gap: 12px;
     gap: 12px;
-    margin: 36px 24px
+    grid-template-columns: 40px 184px 1fr 184px 40px;
+    grid-template-rows: 40px 1fr 40px;
+    left: 0;
+    margin: 36px 24px;
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
-/*# sourceMappingURL=5f94abf4d3c28e36.css.map*/
+/*# sourceMappingURL=ae9042ded8d94e45.css.map*/

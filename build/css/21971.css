@@ -1,6 +1,6 @@
 /**
   Module ID: 21971
-  Original File Name: 5a795836bc9550d3
+  Original File Name: fe6c00e31ea2335b
 **/
 .footer__1c948 {
     display: flex;
@@ -12,23 +12,23 @@
 }
 
 .buttons__1c948 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 8px
 }
 
 .inputContainer__1c948 {
-    position: relative;
-    margin-top: 16px
+    margin-top: 16px;
+    position: relative
 }
 
 .emojiButtonContainer__1c948 {
-    display: flex;
     align-items: center;
-    position: absolute;
+    bottom: 0;
+    display: flex;
     left: var(--space-12);
-    top: 0;
-    bottom: 0
+    position: absolute;
+    top: 0
 }
 
 .emojiButton__1c948.fullOpacity__1c948 {
@@ -36,8 +36,8 @@
 }
 
 .emoji__1c948 {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .input__1c948 {
@@ -46,14 +46,14 @@
 }
 
 .clearButton__1c948 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-    transition: opacity .2s ease-in-out;
-    opacity: .6;
+    height: 100%;
     line-height: 0;
-    height: 100%
+    opacity: .6;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .2s ease-in-out
 }
 
 .clearButton__1c948:focus,.clearButton__1c948:hover {
@@ -61,18 +61,18 @@
 }
 
 .clearIcon__1c948 {
-    width: 16px;
+    color: var(--interactive-normal);
     height: 16px;
-    color: var(--interactive-normal)
+    width: 16px
 }
 
 .moderatedCheckbox__1c948 {
-    margin-left: var(--modal-horizontal-padding);
-    margin-bottom: var(--modal-vertical-padding)
+    margin-bottom: var(--modal-vertical-padding);
+    margin-left: var(--modal-horizontal-padding)
 }
 
 .visual-refresh .moderatedCheckbox__1c948 {
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=5a795836bc9550d3.css.map*/
+/*# sourceMappingURL=fe6c00e31ea2335b.css.map*/

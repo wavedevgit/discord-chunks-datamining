@@ -1,15 +1,15 @@
 /**
   Module ID: 86513
-  Original File Name: bf9b5c43250b596e
+  Original File Name: 9ff112c7e3e47a10
 **/
 .confirmationContainer_f473af {
     margin-top: 56px
 }
 
 .confirmationHeader_f473af {
-    text-align: center;
+    color: var(--header-secondary);
     margin-bottom: 8px;
-    color: var(--header-secondary)
+    text-align: center
 }
 
 .confirmationHeader_f473af strong {
@@ -22,9 +22,8 @@
 
 .buttonContainer_f473af {
     display: grid;
-    padding-top: 24px;
-    grid-gap: 8px;
     gap: 8px;
+    padding-top: 24px;
     width: 100%
 }
 
@@ -38,9 +37,9 @@
 }
 
 .breadcrumbs__99854:after {
+    border-bottom: 1px solid var(--background-modifier-accent);
     content: "";
     display: block;
-    border-bottom: 1px solid var(--background-modifier-accent);
     margin-top: 16px;
     padding-bottom: 0
 }
@@ -51,10 +50,10 @@
 
 .guildNameContainer__99854 {
     background-color: var(--background-secondary-alt);
-    padding: 16px;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 16px
 }
 
-/*# sourceMappingURL=bf9b5c43250b596e.css.map*/
+/*# sourceMappingURL=9ff112c7e3e47a10.css.map*/

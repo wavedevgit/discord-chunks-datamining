@@ -1,14 +1,14 @@
 /**
   Module ID: 76916
-  Original File Name: a3052de4eac8fba2
+  Original File Name: 975d320ed2ba5573
 **/
 .container_fea832 {
+    background-color: var(--background-tertiary);
+    border-radius: 4px;
     box-sizing: border-box;
     display: flex;
     flex-shrink: 0;
-    border-radius: 4px;
-    overflow: hidden;
-    background-color: var(--background-tertiary)
+    overflow: hidden
 }
 
 .visual-refresh .container_fea832 {
@@ -19,12 +19,12 @@
 
 .inner_fea832 {
     box-sizing: border-box;
-    position: relative;
-    flex: 1 1 auto;
     display: flex;
+    flex: 1 1 auto;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1px
+    padding: 1px;
+    position: relative
 }
 
 .disabled_fea832 .inner_fea832 {
@@ -32,17 +32,17 @@
 }
 
 .input_fea832 {
-    box-sizing: border-box;
-    background: transparent;
-    border: none;
-    resize: none;
-    flex: 1;
-    min-width: 48px;
-    margin: 1px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    color: var(--text-normal)
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: var(--text-normal);
+    flex: 1;
+    margin: 1px;
+    min-width: 48px;
+    resize: none
 }
 
 .input_fea832::-webkit-input-placeholder {
@@ -55,29 +55,28 @@
 }
 
 .tag_fea832 {
-    box-sizing: border-box;
-    border-radius: 2px;
-    text-align: center;
-    margin: 1px;
-    display: flex;
     align-items: center;
-    flex-direction: row;
-    cursor: pointer;
-    transition: none;
     background-color: var(--background-primary);
-    color: var(--text-normal)
+    border-radius: 2px;
+    box-sizing: border-box;
+    color: var(--text-normal);
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    text-align: center;
+    transition: none
 }
 
 .tag_fea832:hover {
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    opacity: .9
+    opacity: .9;
+    text-decoration: none
 }
 
 .visual-refresh .tag_fea832 {
     background-color: var(--background-mod-normal);
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm)
 }
 
 .visual-refresh .tag_fea832:hover {
@@ -88,61 +87,61 @@
 .small_fea832 .input_fea832,.small_fea832 .tag_fea832 {
     font-size: 14px;
     font-weight: 500;
-    line-height: 20px;
     height: 20px;
+    line-height: 20px;
     padding: 0 4px
 }
 
 .medium_fea832 .input_fea832,.medium_fea832 .tag_fea832 {
     font-size: 16px;
-    line-height: 32px;
     height: 30px;
+    line-height: 32px;
     padding: 0 8px
 }
 
 .large_fea832 .input_fea832,.large_fea832 .tag_fea832 {
     font-size: 20px;
-    line-height: 40px;
     height: 38px;
+    line-height: 40px;
     padding: 0 16px
 }
 
 .richTag_fea832 {
     background-color: var(--background-secondary-alt);
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .medium_fea832 .richTag_fea832,.medium_fea832 .richTagInput_fea832 {
-    margin: 3px 0 3px 3px;
     height: 26px;
-    line-height: 24px
+    line-height: 24px;
+    margin: 3px 0 3px 3px
 }
 
 .large_fea832 .richTag_fea832,.large_fea832 .richTagInput_fea832 {
-    margin: 4px 0 4px 4px;
     height: 32px;
-    line-height: 30px
+    line-height: 30px;
+    margin: 4px 0 4px 4px
 }
 
 .tagLabel_fea832 {
-    padding-left: 6px;
     overflow: hidden;
+    padding-left: 6px;
     text-overflow: ellipsis
 }
 
 .tagRoleColor_fea832 {
-    height: 8px;
-    width: 8px;
     border-radius: 50%;
-    flex-shrink: 0
+    flex-shrink: 0;
+    height: 8px;
+    width: 8px
 }
 
 .close_fea832 {
-    width: 12px;
     height: 12px;
-    margin-left: 4px
+    margin-left: 4px;
+    width: 12px
 }
 
 .close_fea832,.iconLayout_fea832 {
@@ -150,58 +149,58 @@
 }
 
 .iconLayout_fea832 {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 22px;
+    cursor: text;
+    display: flex;
     height: 22px;
-    cursor: text
+    justify-content: center;
+    width: 22px
 }
 
 .medium_fea832.iconLayout_fea832 {
-    width: 32px;
-    height: 32px
+    height: 32px;
+    width: 32px
 }
 
 .large_fea832.iconLayout_fea832 {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .iconContainer_fea832 {
     box-sizing: border-box;
+    height: 16px;
     position: relative;
-    width: 16px;
-    height: 16px
+    width: 16px
 }
 
 .medium_fea832 .iconContainer_fea832 {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .large_fea832 .iconContainer_fea832 {
-    width: 24px;
-    height: 24px
+    height: 24px;
+    width: 24px
 }
 
 .icon_fea832 {
     box-sizing: border-box;
-    position: absolute;
-    top: 0;
+    color: var(--text-muted);
+    height: 100%;
     left: 0;
     opacity: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    transition: transform .1s ease-out, opacity .1s ease-out;
+    position: absolute;
+    top: 0;
     transform: rotate(90deg);
-    color: var(--text-muted)
+    transition: transform .1s ease-out,opacity .1s ease-out;
+    width: 100%;
+    z-index: 2
 }
 
 .icon_fea832.visible_fea832 {
-    transform: rotate(0deg);
-    opacity: 1
+    opacity: 1;
+    transform: rotate(0deg)
 }
 
 .clear_fea832 {
@@ -227,8 +226,8 @@
 }
 
 .enable-forced-colors .icon_fea832 {
-    border: 1px solid Canvas;
     background-color: Canvas;
+    border: 1px solid Canvas;
     color: GrayText
 }
 
@@ -276,8 +275,8 @@
 }
 
 .alignCenter__01dab,.headerSubtitle__01dab {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .headerSubtitleIcon__01dab {
@@ -285,11 +284,11 @@
 }
 
 .content__01dab {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%
+    height: 100%;
+    overflow: hidden
 }
 
 .searchBox__01dab {
@@ -301,11 +300,11 @@
 }
 
 .addMemberRow__01dab {
+    border-radius: 4px;
+    cursor: pointer;
     margin-left: 12px;
     margin-right: 4px;
-    padding: 8px 6px;
-    border-radius: 4px;
-    cursor: pointer
+    padding: 8px 6px
 }
 
 .addMemberRow__01dab.selectedRow__01dab {
@@ -313,8 +312,8 @@
 }
 
 .rowBody__01dab {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .checkboxLabel__01dab {
@@ -331,23 +330,23 @@
 }
 
 .rowLabelSubText__01dab {
-    margin-left: 4px;
     flex: 1;
-    white-space: nowrap;
+    margin-left: 4px;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .sectionTitle__01dab {
     color: var(--text-normal);
-    padding-top: 8px;
-    padding-left: 16px
+    padding-left: 16px;
+    padding-top: 8px
 }
 
 .noResultIcon__01dab {
+    height: 85px;
     margin-bottom: 16px;
-    width: 85px;
-    height: 85px
+    width: 85px
 }
 
 .description__01dab {
@@ -364,8 +363,8 @@
 }
 
 .visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
-    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8));
-    padding-left: var(--modal-horizontal-padding)
+    padding-left: var(--modal-horizontal-padding);
+    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8))
 }
 
 .visual-refresh .addMemberRow__01dab {
@@ -373,8 +372,8 @@
 }
 
 .visual-refresh .scrollSeparator__01dab {
-    box-shadow: none;
-    border-bottom: 1px solid var(--border-subtle)
+    border-bottom: 1px solid var(--border-subtle);
+    box-shadow: none
 }
 
 .modalRoot__7169d {
@@ -386,8 +385,8 @@
 }
 
 .headerSubtitle__7169d {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .headerSubtitleIcon__7169d {
@@ -431,8 +430,8 @@
 }
 
 .icon_ac72c6 {
-    opacity: .6;
     margin-right: 12px;
+    opacity: .6;
     fill: var(--primary-300)
 }
 
@@ -441,8 +440,8 @@
 }
 
 .header_ac72c6 {
-    margin-top: 4px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    margin-top: 4px
 }
 
 .title_ac72c6 {
@@ -450,9 +449,9 @@
 }
 
 .subtitle_ac72c6 {
-    display: flex;
     align-items: center;
-    color: var(--text-muted-on-default)
+    color: var(--text-muted-on-default);
+    display: flex
 }
 
 .subtitleIcon_ac72c6 {
@@ -497,20 +496,20 @@
 }
 
 .inputPrefix_ac72c6 {
-    position: absolute;
-    top: 12px;
+    color: var(--text-normal);
     left: 8px;
-    color: var(--text-normal)
+    position: absolute;
+    top: 12px
 }
 
 .switchIcon_ac72c6 {
+    display: inline-block;
+    height: 16px;
+    margin-right: 3px;
+    opacity: .6;
     position: relative;
     top: 2px;
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    opacity: .6;
-    margin-right: 3px
+    width: 16px
 }
 
 .channelTypeDescription_ac72c6,.storeChannelOptionSelector_ac72c6 {
@@ -518,17 +517,17 @@
 }
 
 .username_ac72c6 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin-left: 8px;
     font-size: 16px;
-    line-height: 20px
+    line-height: 20px;
+    margin-left: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .emptyRoles_ac72c6 {
-    margin-top: 16px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    margin-top: 16px
 }
 
 .owner_ac72c6 {
@@ -551,8 +550,8 @@
 }
 
 .radioLabelName_ac72c6 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .radioLabelDescription_ac72c6 {
@@ -580,8 +579,8 @@
 }
 
 .radioItemName_ac72c6 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .channelNameNote_ac72c6 strong {
@@ -592,4 +591,4 @@
     top: 14px
 }
 
-/*# sourceMappingURL=a3052de4eac8fba2.css.map*/
+/*# sourceMappingURL=975d320ed2ba5573.css.map*/

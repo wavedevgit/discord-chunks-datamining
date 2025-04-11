@@ -1,11 +1,11 @@
 /**
   Module ID: 37908
-  Original File Name: 40f47e832d82d7b0
+  Original File Name: 9bb4a737f4001976
 **/
 .header__7c901 {
-    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 16px 0
 }
 
 .subtitle__7c901 {
@@ -13,10 +13,10 @@
 }
 
 .closeButton__7c901 {
-    z-index: 1000;
     position: absolute;
+    right: 12px;
     top: 12px;
-    right: 12px
+    z-index: 1000
 }
 
 .content__7c901 {
@@ -48,15 +48,15 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemContainer__7c901 {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
-    background-color: var(--background-primary);
-    margin-bottom: 8px;
-    display: flex;
     align-items: center;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    padding: 0 0 0 8px
+    display: flex;
+    margin-bottom: 8px;
+    padding: 0 0 0 8px;
+    width: 100%
 }
 
 .listItemContainer__7c901:hover {
@@ -72,27 +72,26 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemIcon__7c901 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     margin: 8px 8px 8px 16px
 }
 
 .listItemText__7c901 {
+    margin-left: 8px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 8px
+    text-overflow: ellipsis
 }
 
 .listItemArrow__7c901 {
-    margin-left: auto;
-    margin-right: 16px;
+    color: var(--interactive-normal);
     height: 50px;
-    color: var(--interactive-normal)
+    margin-left: auto;
+    margin-right: 16px
 }
 
 .error__584e1 {
-    margin-top: 8px;
-    color: var(--status-danger)
+    color: var(--status-danger);
+    margin-top: 8px
 }
 
 .subTitle__584e1 {
@@ -125,15 +124,15 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .countryCode__310be {
-    padding: 9px 8px;
     line-height: normal;
+    padding: 9px 8px;
     white-space: nowrap
 }
 
 .separator__310be {
-    width: 1px;
     background-color: var(--background-modifier-accent);
-    margin: 8px 4px
+    margin: 8px 4px;
+    width: 1px
 }
 
 .popout__310be {
@@ -162,8 +161,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .input_d64f22 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .visual-refresh .input_d64f22 {
@@ -179,8 +178,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .inputField_d64f22 {
-    border: none;
-    background-color: transparent
+    background-color: transparent;
+    border: none
 }
 
 .enable-forced-colors .input_d64f22 {
@@ -188,10 +187,10 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .mainLoginContainer__86e92 {
+    align-items: start;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
-    align-items: start
+    flex-grow: 1
 }
 
 .title__86e92 {
@@ -200,8 +199,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .subtitle__86e92 {
-    padding: 0 20px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    padding: 0 20px
 }
 
 .loginForm__86e92 {
@@ -236,16 +235,16 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .backButton__86e92:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline;
+    -webkit-text-decoration-color: var(--interactive-normal);
     text-decoration-color: var(--interactive-normal)
 }
 
 .modal_f04ae9 {
     display: flex;
     flex-direction: row;
-    width: 480px;
-    min-height: 300px
+    min-height: 300px;
+    width: 480px
 }
 
 .container_f04ae9 .card_f04ae9 {
@@ -253,25 +252,25 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .card_f04ae9 {
-    flex-shrink: 0;
-    width: 480px;
+    border-radius: 5px 5px 0 0;
     display: flex;
     flex-direction: column;
-    border-radius: 5px 5px 0 0;
-    padding: var(--space-24)
+    flex-shrink: 0;
+    padding: var(--space-24);
+    width: 480px
 }
 
 .list__920b8 {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     background-color: var(--background-secondary);
-    border-radius: 4px
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column
 }
 
 .accountCard__920b8 {
-    display: flex;
     align-self: stretch;
+    display: flex;
     padding: 12px 16px
 }
 
@@ -282,8 +281,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .userDetails__920b8 {
-    display: flex;
     align-items: center;
+    display: flex;
     width: 100%
 }
 
@@ -297,8 +296,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .userActions__920b8,.username__920b8 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .userActions__920b8 {
@@ -306,9 +305,9 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .userActionMenu__920b8 {
+    line-height: 0;
     margin-left: 16px;
-    padding: 0;
-    line-height: 0
+    padding: 0
 }
 
 .userActionMenu__920b8:hover {
@@ -324,8 +323,8 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .textOverflow__920b8 {
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .hintText__920b8 {
@@ -333,22 +332,22 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .modal__56d1c {
-    position: relative;
-    overflow: hidden
+    overflow: hidden;
+    position: relative
 }
 
 .header__56d1c {
-    padding: 8px 0;
-    width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center
+    padding: 8px 0;
+    width: 100%
 }
 
 .modalCloseButton__56d1c {
     position: absolute;
-    top: 12px;
     right: 8px;
+    top: 12px;
     z-index: 10
 }
 
@@ -368,4 +367,4 @@ html:not(.visual-refresh) .footer__7c901 {
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=40f47e832d82d7b0.css.map*/
+/*# sourceMappingURL=9bb4a737f4001976.css.map*/

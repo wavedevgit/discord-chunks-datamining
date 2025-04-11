@@ -1,24 +1,24 @@
 /**
   Module ID: 3378
-  Original File Name: e29328781ba4751c
+  Original File Name: 04f0a3b2b6b1c63f
 **/
 .container_b962dc {
-    padding: 0;
+    border-radius: 8px;
     display: flex;
     flex-direction: row;
-    width: 720px;
     height: auto;
-    border-radius: 8px
+    padding: 0;
+    width: 720px
 }
 
 .guildSidebar_b962dc {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    box-sizing: border-box;
     background-color: var(--background-secondary);
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    box-sizing: border-box;
+    flex-shrink: 0;
     padding: 24px;
-    width: 256px;
-    flex-shrink: 0
+    width: 256px
 }
 
 .guildDescription_b962dc {
@@ -38,17 +38,16 @@
 }
 
 .emojisContainer_b962dc {
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center
+    flex-wrap: wrap
 }
 
 .emoji_b962dc {
-    margin-right: 8px;
-    -o-object-fit: contain;
-    object-fit: contain;
     background-position: 50%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    object-fit: contain
 }
 
 .emoji_b962dc,.onlineCount_b962dc {
@@ -57,9 +56,9 @@
 
 .dot_b962dc {
     border-radius: 50%;
-    width: 8px;
     height: 8px;
-    margin-right: 8px
+    margin-right: 8px;
+    width: 8px
 }
 
 .dotOnline_b962dc {
@@ -71,17 +70,17 @@
 }
 
 .divider_b962dc {
-    margin: 24px 0;
     border: none;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    border-bottom: 1px solid var(--background-modifier-accent);
+    margin: 24px 0
 }
 
 .modal_b962dc {
-    width: 100%;
-    overflow-x: hidden;
-    border-top-right-radius: 8px;
+    background-color: var(--background-primary);
     border-bottom-right-radius: 8px;
-    background-color: var(--background-primary)
+    border-top-right-radius: 8px;
+    overflow-x: hidden;
+    width: 100%
 }
 
 .modal_b962dc,.sequencer_b962dc {
@@ -111,8 +110,8 @@
 
 .closeButton_b962dc {
     position: absolute;
-    top: 8px;
     right: 8px;
+    top: 8px;
     z-index: 2
 }
 
@@ -128,8 +127,8 @@
 .animationAndSparklesContainer_b962dc {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 80px
+    height: 80px;
+    justify-content: center
 }
 
 .sparkleIcon_b962dc {
@@ -149,9 +148,9 @@
 
 .animation_b962dc {
     height: 56px;
-    width: 56px;
     margin-left: 4px;
-    margin-top: 12px
+    margin-top: 12px;
+    width: 56px
 }
 
 .header_b962dc {
@@ -163,13 +162,13 @@
 }
 
 .footer_b962dc {
-    background-color: var(--background-secondary);
-    display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    background-color: var(--background-secondary);
+    box-shadow: inset 0 1px 0 var(--background-modifier-accent);
+    display: flex;
     flex: 0 0 auto;
-    box-shadow: inset 0 1px 0 var(--background-modifier-accent)
+    flex-direction: row-reverse;
+    justify-content: space-between
 }
 
 .submitButton_b962dc {
@@ -177,9 +176,8 @@
 }
 
 .formItem_b962dc {
-    text-align: left;
-    text-align: initial;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    text-align: initial
 }
 
 .resendButton_b962dc {
@@ -187,22 +185,22 @@
 }
 
 .confirmation_b962dc {
-    display: flex;
     align-items: center;
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    display: flex;
     flex-direction: column;
+    gap: 24px;
     max-width: 400px;
     padding: 24px;
-    border-radius: 16px;
-    gap: 24px;
-    text-align: center;
-    background-color: var(--bg-surface-raised);
-    border: 1px solid var(--border-subtle)
+    text-align: center
 }
 
 .iconWrapper_b962dc {
-    padding: 12px;
+    background: var(--bg-base-tertiary);
     border-radius: 50%;
-    background: var(--bg-base-tertiary)
+    padding: 12px
 }
 
 .confirmationButtonRow_b962dc {
@@ -217,19 +215,19 @@
 }
 
 .notice_b962dc {
-    pointer-events: all;
-    position: absolute;
     bottom: 0;
     left: 0;
+    margin: 0 auto 16px;
     max-width: 740px;
-    margin: 0 auto 16px
+    pointer-events: all;
+    position: absolute
 }
 
 .rejectionReasonLabel_b962dc {
     margin-right: 4px
 }
 
-@media (max-width: 485px) {
+@media (max-width:485px) {
     .container_b962dc {
         flex-direction: column
     }
@@ -240,8 +238,8 @@
 }
 
 .clanGdmConsentCheckbox_b962dc {
-    margin-top: 24px;
-    border-width: 2px
+    border-width: 2px;
+    margin-top: 24px
 }
 
 .disclaimerFooter_b962dc {
@@ -251,12 +249,12 @@
 }
 
 .statusTextContainer_b962dc {
-    max-width: 100%;
-    overflow: hidden;
-    word-wrap: break-word;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word
 }
 
 .incompleteButtonsContainer_b962dc {
@@ -266,4 +264,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=e29328781ba4751c.css.map*/
+/*# sourceMappingURL=04f0a3b2b6b1c63f.css.map*/

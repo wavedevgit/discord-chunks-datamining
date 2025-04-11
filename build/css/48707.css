@@ -1,13 +1,13 @@
 /**
   Module ID: 48707
-  Original File Name: cc7d27516e9ef276
+  Original File Name: 0d7caf28f62ebd15
 **/
 .header__6dc27 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 24px;
-    padding-bottom: 24px
+    padding-bottom: 24px;
+    padding-top: 24px
 }
 
 .title__6dc27 {
@@ -24,8 +24,8 @@
 
 .modalCloseButton__6dc27 {
     position: absolute;
-    top: 16px;
-    right: 16px
+    right: 16px;
+    top: 16px
 }
 
 .content__6dc27 {
@@ -40,4 +40,4 @@
     margin-right: 8px
 }
 
-/*# sourceMappingURL=cc7d27516e9ef276.css.map*/
+/*# sourceMappingURL=0d7caf28f62ebd15.css.map*/

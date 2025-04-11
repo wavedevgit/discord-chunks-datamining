@@ -1,6 +1,6 @@
 /**
   Module ID: 13965
-  Original File Name: f3a582dbb0133e73
+  Original File Name: efebe8ba4ed1da89
 **/
 .container__6f9f7 {
     display: flex;
@@ -24,8 +24,8 @@
 
 .buttonInner__6f9f7 {
     align-items: center;
-    justify-content: center;
-    display: flex
+    display: flex;
+    justify-content: center
 }
 
 .buttonWrapper__6f9f7 {
@@ -42,20 +42,20 @@
 }
 
 .confettiCanvas__8fcbd {
+    height: 100%;
     position: absolute;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .close__8fcbd {
     position: absolute;
-    top: var(--spacing-16);
-    right: var(--spacing-16)
+    right: var(--spacing-16);
+    top: var(--spacing-16)
 }
 
 .modal__8fcbd {
-    overflow: hidden;
     margin: 0;
+    overflow: hidden;
     width: 440px
 }
 
@@ -74,9 +74,9 @@
 }
 
 .contentContainer__8fcbd {
+    align-items: center;
     padding: var(--spacing-24) var(--spacing-48);
-    text-align: center;
-    align-items: center
+    text-align: center
 }
 
 .description__8fcbd {
@@ -91,4 +91,4 @@
     height: 228px
 }
 
-/*# sourceMappingURL=f3a582dbb0133e73.css.map*/
+/*# sourceMappingURL=efebe8ba4ed1da89.css.map*/

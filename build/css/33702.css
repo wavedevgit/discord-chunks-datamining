@@ -1,6 +1,6 @@
 /**
   Module ID: 33702
-  Original File Name: c8e4a961ccf2bc06
+  Original File Name: cc0153ae355cd8d3
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -17,14 +17,15 @@
 }
 
 .newBadge_f4adbd {
+    margin-bottom: var(--spacing-4);
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: var(--spacing-4)
+    width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-top: 1px;
-    margin-left: var(--spacing-4)
+    margin-left: var(--spacing-4);
+    margin-top: 1px
 }
 
 .tooltip_f4adbd {
@@ -32,22 +33,22 @@
 }
 
 .labelContainer_f4adbd {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between
 }
 
 .playButton_f4adbd {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .mutedLabel_f4adbd {
-    width: 180px;
-    overflow: auto;
     color: currentColor;
-    white-space: normal
+    overflow: auto;
+    white-space: normal;
+    width: 180px
 }
 
 .widthForAddPack__5b977 {
@@ -60,12 +61,12 @@
 }
 
 .betaTag__5b977 {
-    color: var(--premium-tier-2-pink-for-gradients-2);
-    height: 20px;
-    display: inline-flex;
     align-items: center;
-    justify-content: center;
     border-radius: 10px;
+    color: var(--premium-tier-2-pink-for-gradients-2);
+    display: inline-flex;
+    height: 20px;
+    justify-content: center;
     margin-left: 10px
 }
 
@@ -80,8 +81,8 @@
 }
 
 .inventoryLeaveServerDescription__5b977 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .maxPacksNoticeText__5b977 {
@@ -89,17 +90,17 @@
 }
 
 .labelWrapper_abe771 {
-    display: flex;
+    align-items: center;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    row-gap: 4px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center
+    row-gap: 4px
 }
 
 .label_abe771 {
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .newBadge_abe771 {
@@ -116,8 +117,8 @@
 }
 
 .inviteGuestContainer_abe771 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
-/*# sourceMappingURL=c8e4a961ccf2bc06.css.map*/
+/*# sourceMappingURL=cc0153ae355cd8d3.css.map*/

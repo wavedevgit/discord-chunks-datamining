@@ -1,10 +1,10 @@
 /**
   Module ID: 59385
-  Original File Name: 3a2a534acf39f643
+  Original File Name: 62508f286b9b4bf0
 **/
 .feedback__4c857 {
-    flex-direction: column;
-    align-items: center
+    align-items: center;
+    flex-direction: column
 }
 
 .buttonsContainer__4c857,.feedback__4c857 {
@@ -17,12 +17,12 @@
 }
 
 .buttonsBackground__4c857 {
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-round);
-    padding: 6px;
-    display: flex;
     align-items: center;
-    border: 1px solid transparent
+    background-color: var(--background-secondary);
+    border: 1px solid transparent;
+    border-radius: var(--radius-round);
+    display: flex;
+    padding: 6px
 }
 
 .buttonsBackground__4c857 svg {
@@ -36,8 +36,8 @@
 }
 
 .buttonsBackgroundActive__4c857 {
-    border: 1px solid var(--brand-500);
-    background: hsl(var(--brand-500-hsl)/.15)
+    background: hsl(var(--brand-500-hsl)/.15);
+    border: 1px solid var(--brand-500)
 }
 
 .buttonsBackgroundActive__4c857 svg {
@@ -45,8 +45,8 @@
 }
 
 .buttonsBackgroundInactive__4c857:hover {
-    cursor: pointer;
-    border: 1px solid var(--background-modifier-hover)
+    border: 1px solid var(--background-modifier-hover);
+    cursor: pointer
 }
 
 .buttonsBackgroundInactive__4c857:hover svg {
@@ -58,15 +58,15 @@
 }
 
 .modalHeader__3fee9 {
-    background: linear-gradient(270deg,rgba(88,101,242,0),var(--brand-500) 70.8%),url(/assets/ac6a68103ec2c223.jpg);
-    padding: var(--spacing-32);
-    background-size: cover
+    background: linear-gradient(270deg,rgba(88,101,242,0) 0,var(--brand-500) 70.8%),url(/assets/ac6a68103ec2c223.jpg);
+    background-size: cover;
+    padding: var(--spacing-32)
 }
 
 .modalHeaderText__3fee9 {
     align-items: flex-start;
-    max-width: 211px;
-    gap: var(--spacing-4)
+    gap: var(--spacing-4);
+    max-width: 211px
 }
 
 .modalContent__3fee9,.modalHeaderText__3fee9 {
@@ -75,33 +75,33 @@
 }
 
 .modalContent__3fee9 {
-    padding: var(--spacing-32);
-    gap: var(--spacing-32)
+    gap: var(--spacing-32);
+    padding: var(--spacing-32)
 }
 
 .closeButton__3fee9 {
+    border-radius: var(--radius-round);
+    cursor: pointer;
+    padding: 0;
     position: absolute;
     right: var(--spacing-12);
-    top: var(--spacing-12);
-    padding: 0;
-    border-radius: var(--radius-round);
-    cursor: pointer
+    top: var(--spacing-12)
 }
 
 .closeButton__3fee9:hover {
-    opacity: 1;
-    color: var(--interactive-hover)
+    color: var(--interactive-hover);
+    opacity: 1
 }
 
 .closeButton__3fee9 .closeButtonInner__3fee9 {
-    height: 34px;
-    width: 34px;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: rgba(30,31,34,.5);
+    border-radius: var(--radius-round);
+    display: flex;
+    height: 34px;
+    justify-content: center;
     transition: background-color .2s ease-in-out;
-    border-radius: var(--radius-round)
+    width: 34px
 }
 
 .closeButton__3fee9 .closeButtonInner__3fee9 .closeIcon__3fee9 {
@@ -127,29 +127,29 @@
 }
 
 .tipsSection__3fee9 {
-    flex-grow: 0;
-    padding: var(--spacing-16);
     background: var(--background-secondary);
     border-radius: var(--radius-sm);
-    gap: var(--spacing-16)
+    flex-grow: 0;
+    gap: var(--spacing-16);
+    padding: var(--spacing-16)
 }
 
 .tipRow__3fee9 {
     display: flex;
-    flex-wrap: nowrap;
     flex-grow: 0;
+    flex-wrap: nowrap;
     gap: var(--spacing-8)
 }
 
 .tipNumber__3fee9 {
-    border-radius: var(--radius-round);
+    align-items: center;
     background: var(--background-tertiary);
+    border-radius: var(--radius-round);
     display: flex;
-    min-width: 32px;
-    height: 32px;
     flex-direction: column;
+    height: 32px;
     justify-content: center;
-    align-items: center
+    min-width: 32px
 }
 
 .visual-refresh .modalHeader__3fee9 {
@@ -160,8 +160,8 @@
 
 .visual-refresh .modalContent__3fee9 {
     gap: var(--spacing-24);
-    padding-top: var(--spacing-24);
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--spacing-16);
+    padding-top: var(--spacing-24)
 }
 
-/*# sourceMappingURL=3a2a534acf39f643.css.map*/
+/*# sourceMappingURL=62508f286b9b4bf0.css.map*/

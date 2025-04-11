@@ -1,6 +1,6 @@
 /**
   Module ID: 79921
-  Original File Name: 264fdbde8dcfa57c
+  Original File Name: a9aa9ce6292d99b4
 **/
 .wrapper__6d749 {
     width: 500px;
@@ -8,48 +8,48 @@
 }
 
 .modalHeader__6d749 {
-    padding-bottom: 16px;
-    flex: 1
+    flex: 1;
+    padding-bottom: 16px
 }
 
 .header__6d749 {
-    width: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%
 }
 
 .closeButton__6d749.closeButton__6d749 {
     position: absolute;
-    top: 10px;
     right: 12px;
+    top: 10px;
     z-index: 3
 }
 
 .resultWrapper__6d749 {
-    justify-content: space-between;
     align-items: center;
-    display: flex;
-    box-sizing: border-box;
     border-radius: var(--radius-md);
+    box-sizing: border-box;
+    color: var(--primary-300);
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    height: 48px;
+    justify-content: space-between;
     margin-left: 16px;
     margin-right: 8px;
-    padding: 8px;
-    height: 48px;
-    color: var(--primary-300);
-    font-size: 16px;
-    cursor: pointer
+    padding: 8px
 }
 
 .resultWrapperSelected__6d749 {
-    color: var(--white-500);
-    background-color: hsl(var(--primary-500-hsl)/.3)
+    background-color: hsl(var(--primary-500-hsl)/.3);
+    color: var(--white-500)
 }
 
 .result__6d749 {
     align-items: center;
     display: flex;
-    overflow: hidden;
-    flex: 1
+    flex: 1;
+    overflow: hidden
 }
 
 .resultAvatar__6d749 {
@@ -57,13 +57,13 @@
 }
 
 .resultIcon__6d749 {
-    justify-content: center;
     align-items: center;
-    flex-shrink: 0;
-    flex-grow: 0;
-    width: 30px;
     display: flex;
-    opacity: .6
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+    opacity: .6;
+    width: 30px
 }
 
 .resultIconBackground__6d749 {
@@ -71,46 +71,45 @@
 }
 
 .resultText__6d749 {
-    font-weight: 500;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
     flex: 1;
-    margin-right: 16px
+    font-weight: 500;
+    margin-right: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .resultUsername__6d749 {
+    font-weight: 400;
     margin-left: 4px;
-    opacity: .5;
-    font-weight: 400
+    opacity: .5
 }
 
 .resultCategoryName__6d749 {
     font-size: 10px;
-    text-transform: uppercase;
-    line-height: 16px
+    line-height: 16px;
+    text-transform: uppercase
 }
 
 .resultCategoryName__6d749,.resultGuildName__6d749 {
+    font-weight: 500;
     margin-left: 4px;
-    opacity: .5;
-    font-weight: 500
+    opacity: .5
 }
 
 .resultGuildName__6d749 {
     font-size: 14px;
     margin-right: 10px;
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .inviteButton__6d749 {
-    width: 72px;
+    flex: none;
     height: 32px;
-    transition: none 0s ease 0s;
-    transition: initial;
-    flex: none
+    transition: unset;
+    width: 72px
 }
 
 .results__6d749 {
@@ -118,8 +117,8 @@
 }
 
 .noResults__6d749 {
-    width: 100%;
-    background: url(/assets/05207174d5432737.svg) no-repeat 50% 40%
+    background: url(/assets/05207174d5432737.svg) no-repeat 50% 40%;
+    width: 100%
 }
 
-/*# sourceMappingURL=264fdbde8dcfa57c.css.map*/
+/*# sourceMappingURL=a9aa9ce6292d99b4.css.map*/

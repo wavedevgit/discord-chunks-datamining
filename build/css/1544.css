@@ -1,22 +1,22 @@
 /**
   Module ID: 1544
-  Original File Name: 44104a765e235341
+  Original File Name: 7feda29fd6315162
 **/
 .verifyConnectedAccount_fb52a4 {
-    color: var(--white-500);
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
-    background-color: #282b30
+    background-color: #282b30;
+    bottom: 0;
+    color: var(--white-500);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .logos_fb52a4,.verifyConnectedAccount_fb52a4 {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .logos_fb52a4 {
@@ -24,19 +24,19 @@
 }
 
 .logosDivider_fb52a4 {
-    width: 28px;
+    background-image: url(/assets/f9951f6f63451f68.svg);
+    background-size: 28px 28px;
+    content: " ";
+    display: inline-block;
     height: 28px;
     margin: 0 37px;
-    background-size: 28px 28px;
-    background-image: url(/assets/f9951f6f63451f68.svg);
-    content: " ";
-    display: inline-block
+    width: 28px
 }
 
 .logo_fb52a4 {
-    width: 88px;
+    background-size: 88px 88px;
     height: 88px;
-    background-size: 88px 88px
+    width: 88px
 }
 
 .logoDiscord_fb52a4 {
@@ -44,8 +44,8 @@
 }
 
 .message_d9edaa {
-    text-align: center;
-    font-size: 18px
+    font-size: 18px;
+    text-align: center
 }
 
 .message_d9edaa.error_d9edaa {
@@ -57,8 +57,8 @@
 }
 
 .message_d9edaa.details_d9edaa,.message_d9edaa.errorDetails_d9edaa {
-    margin-top: 16px;
-    color: var(--text-muted)
+    color: var(--text-muted);
+    margin-top: 16px
 }
 
 .message_d9edaa.errorDetails_d9edaa {
@@ -71,15 +71,15 @@
 
 .btn_d9edaa {
     margin-top: 22px;
-    width: 100%;
-    transition: background-color .2s ease
+    transition: background-color .2s ease;
+    width: 100%
 }
 
 .btn_d9edaa:disabled {
-    cursor: default;
     background-color: transparent;
+    cursor: default;
     opacity: 1;
     padding: 28px
 }
 
-/*# sourceMappingURL=44104a765e235341.css.map*/
+/*# sourceMappingURL=7feda29fd6315162.css.map*/

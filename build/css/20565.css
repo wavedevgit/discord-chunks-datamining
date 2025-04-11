@@ -1,14 +1,14 @@
 /**
   Module ID: 20565
-  Original File Name: ae25035f6bbb5d6a
+  Original File Name: 104c715be1a6de74
 **/
 .modal_cf1d1c {
+    align-items: center;
     background-color: var(--black);
     border-radius: 20px;
-    padding: 20px;
-    width: 290px;
     height: 400px;
-    align-items: center
+    padding: 20px;
+    width: 290px
 }
 
 .closeBtn_cf1d1c {
@@ -28,31 +28,31 @@
 }
 
 .spinnerContainer_cf1d1c {
-    height: 100%;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    height: 100%;
+    justify-content: center
 }
 
 .errorContainer_cf1d1c {
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    height: 100%;
+    justify-content: space-between;
+    width: 100%
 }
 
 .errorImage_cf1d1c {
-    width: 180px;
-    margin: 50px auto 0
+    margin: 50px auto 0;
+    width: 180px
 }
 
 .errorContentContainer_cf1d1c {
-    flex: 1;
+    align-items: center;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .errorHeader_cf1d1c {
@@ -60,11 +60,11 @@
 }
 
 .header_cf1d1c {
+    align-items: center;
     display: flex;
-    width: 100%;
     flex-wrap: nowrap;
     justify-content: right;
-    align-items: center
+    width: 100%
 }
 
 .amountLabel_cf1d1c {
@@ -72,28 +72,27 @@
 }
 
 .closeBtn_cf1d1c {
-    grid-area: close-btn;
-    color: #fff
+    color: #fff;
+    grid-area: close-btn
 }
 
 .videoLayers_cf1d1c {
     display: grid;
     grid-template: "layer" 1fr/1fr;
-    width: 100%;
+    margin-bottom: 25px;
     margin-top: 20px;
-    margin-bottom: 25px
+    width: 100%
 }
 
 .videoAsset_cf1d1c {
-    -o-object-fit: cover;
     object-fit: cover
 }
 
 .videoAsset_cf1d1c,.videoPlaceholder_cf1d1c {
     grid-area: layer;
-    width: 100%;
+    margin-bottom: -63.5px;
     margin-top: -63.5px;
-    margin-bottom: -63.5px
+    width: 100%
 }
 
 .videoPlaceholder_cf1d1c {
@@ -105,8 +104,8 @@
 }
 
 .title_cf1d1c {
-    max-width: 200px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    max-width: 200px
 }
 
 .subtext_cf1d1c,.title_cf1d1c {
@@ -118,8 +117,8 @@
 }
 
 .ctaBtn_cf1d1c {
-    width: 100%;
-    margin-top: 32px
+    margin-top: 32px;
+    width: 100%
 }
 
-/*# sourceMappingURL=ae25035f6bbb5d6a.css.map*/
+/*# sourceMappingURL=104c715be1a6de74.css.map*/

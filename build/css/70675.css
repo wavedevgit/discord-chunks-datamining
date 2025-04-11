@@ -1,19 +1,19 @@
 /**
   Module ID: 70675
-  Original File Name: 80bbae4e993c991e
+  Original File Name: f182e7782f877a3c
 **/
 .labelWrapper_abe771 {
-    display: flex;
+    align-items: center;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    row-gap: 4px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center
+    row-gap: 4px
 }
 
 .label_abe771 {
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .newBadge_abe771 {
@@ -30,8 +30,8 @@
 }
 
 .inviteGuestContainer_abe771 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 @keyframes outgoing-call-pulse__3751b {
@@ -53,32 +53,36 @@
 }
 
 .label__3751b,.subtext__3751b {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
 .ringing__3751b {
-    opacity: .3;
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    opacity: .3
 }
 
 .channelName__3751b {
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
+    color: var(--header-primary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
 .roleRow_b82947 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=80bbae4e993c991e.css.map*/
+/*# sourceMappingURL=f182e7782f877a3c.css.map*/

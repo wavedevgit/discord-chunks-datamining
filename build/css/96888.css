@@ -1,21 +1,21 @@
 /**
   Module ID: 96888
-  Original File Name: c394dab3c8b2d5d9
+  Original File Name: 0ff6e1b24551c88b
 **/
 .root__66e7e {
-    border-radius: 8px;
     background: var(--background-secondary);
+    border-radius: 8px;
     overflow: hidden
 }
 
 .option__66e7e {
+    align-items: center;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    color: var(--interactive-active);
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: var(--interactive-active);
-    padding: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    padding: 12px
 }
 
 .option__66e7e:hover {
@@ -33,10 +33,10 @@
 
 .caret__66e7e {
     color: var(--interactive-normal);
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
-    margin-left: 8px
+    height: 24px;
+    margin-left: 8px;
+    width: 24px
 }
 
 .visual-refresh .root__66e7e {
@@ -54,10 +54,10 @@
 }
 
 .ratingSelector__5c58b {
-    width: 240px;
     display: grid;
     grid-auto-flow: column;
-    justify-content: space-around
+    justify-content: space-around;
+    width: 240px
 }
 
 .textLabels__5c58b {
@@ -73,22 +73,22 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    width: var(--custom-feedback-modal-emoji-size);
-    height: var(--custom-feedback-modal-emoji-size);
     cursor: pointer;
-    filter: grayscale(100%)
+    filter: grayscale(100%);
+    height: var(--custom-feedback-modal-emoji-size);
+    width: var(--custom-feedback-modal-emoji-size)
 }
 
 .textLabel__5c58b {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: .5em;
-    align-items: center
+    gap: .5em
 }
 
 .textLabel__5c58b .emoji__5c58b {
-    width: 1.75em;
-    height: 1.75em
+    height: 1.75em;
+    width: 1.75em
 }
 
 .full-motion .emojiContainer__5c58b .emoji__5c58b {
@@ -135,8 +135,8 @@
 
 .modalCloseButton__6c12c {
     position: absolute;
-    top: var(--custom-feedback-modal-close-button-margin);
-    right: var(--custom-feedback-modal-close-button-margin)
+    right: var(--custom-feedback-modal-close-button-margin);
+    top: var(--custom-feedback-modal-close-button-margin)
 }
 
 .helpdeskLink__6c12c {
@@ -149,8 +149,8 @@
 }
 
 .ratingBody__6c12c {
-    margin-top: var(--space-8);
-    color: var(--text-normal)
+    color: var(--text-normal);
+    margin-top: var(--space-8)
 }
 
 .footer__6c12c {
@@ -158,8 +158,8 @@
 }
 
 .problemInfo__6c12c {
-    margin-top: var(--space-8);
-    margin-bottom: var(--space-24)
+    margin-bottom: var(--space-24);
+    margin-top: var(--space-8)
 }
 
 .ratingSelectorContainer__6c12c {
@@ -198,4 +198,4 @@
     margin-bottom: var(--space-16)
 }
 
-/*# sourceMappingURL=c394dab3c8b2d5d9.css.map*/
+/*# sourceMappingURL=0ff6e1b24551c88b.css.map*/

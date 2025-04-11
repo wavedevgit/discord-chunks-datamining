@@ -1,6 +1,6 @@
 /**
   Module ID: 27919
-  Original File Name: b4c6610cb4200361
+  Original File Name: 1b830b87e41645cf
 **/
 .title__0396e {
     display: inline-flex;
@@ -11,8 +11,8 @@
 .doubleInput__6dc4b {
     display: flex;
     flex-direction: row;
-    position: relative;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    position: relative
 }
 
 .doubleInput__6dc4b>div {
@@ -30,12 +30,12 @@
 
 .link__6dc4b {
     align-items: center;
-    justify-content: center;
+    color: var(--interactive-active);
     display: flex;
-    transition: opacity .2s;
     font-size: 16px;
     font-weight: 400;
-    color: var(--interactive-active)
+    justify-content: center;
+    transition: opacity .2s
 }
 
 .link__6dc4b:hover {
@@ -43,18 +43,18 @@
 }
 
 .addIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--brand-500)
+    color: var(--brand-500);
+    margin-right: 8px
 }
 
 .removeIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--status-danger)
+    color: var(--status-danger);
+    margin-right: 8px
 }
 
 .content__3ff0e {
-    padding-top: 16px;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    padding-top: 16px
 }
 
 .warning__3ff0e {
@@ -62,12 +62,12 @@
 }
 
 .footer__3ff0e {
-    display: flex;
-    align-items: flex-end
+    align-items: flex-end;
+    display: flex
 }
 
 .button__3ff0e {
     margin-left: 8px
 }
 
-/*# sourceMappingURL=b4c6610cb4200361.css.map*/
+/*# sourceMappingURL=1b830b87e41645cf.css.map*/

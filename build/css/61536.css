@@ -1,11 +1,11 @@
 /**
   Module ID: 61536
-  Original File Name: 70bc2a97aace09cd
+  Original File Name: 387d491c84e6789c
 **/
 .center__7e1d8 {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .textCenter__7e1d8 {
@@ -18,8 +18,8 @@
 }
 
 .headerContainer__7e1d8,.headerText__7e1d8 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .headerText__7e1d8 {
@@ -27,36 +27,36 @@
 }
 
 .closeIcon__7e1d8 {
-    cursor: pointer;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    cursor: pointer
 }
 
 .options__7e1d8 {
-    margin-top: 12px;
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-top: 12px
 }
 
 .optionContainer__7e1d8 {
     border: 1px solid var(--background-accent);
     border-radius: 4px;
-    padding: 12px;
-    display: flex
+    display: flex;
+    padding: 12px
 }
 
 .optionContainerOther__7e1d8 {
-    flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    flex-direction: column
 }
 
 .optionText__7e1d8 {
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 14px
+    gap: 14px;
+    width: 100%
 }
 
 .textboxContainer__7e1d8 {
@@ -64,14 +64,14 @@
 }
 
 .serverLockdownReasonText__7e1d8 {
-    margin-top: 8px;
+    flex: 1;
     margin-left: 32px;
-    flex: 1
+    margin-top: 8px
 }
 
 .headerContainer_c38e9f {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 6px
 }
 
@@ -84,13 +84,13 @@
 }
 
 .pauseContainer_c38e9f {
-    padding: 12px;
+    align-items: flex-start;
     border: 1px solid var(--background-accent);
     border-radius: 4px;
     display: flex;
-    align-items: flex-start;
+    gap: 8px;
     justify-content: space-between;
-    gap: 8px
+    padding: 12px
 }
 
 .pauseText_c38e9f {
@@ -103,4 +103,4 @@
     flex-shrink: 0
 }
 
-/*# sourceMappingURL=70bc2a97aace09cd.css.map*/
+/*# sourceMappingURL=387d491c84e6789c.css.map*/

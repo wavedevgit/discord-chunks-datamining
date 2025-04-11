@@ -1,11 +1,10 @@
 /**
   Module ID: 94064
-  Original File Name: d25e4de4ab44e821
+  Original File Name: 13303d456e3dc194
 **/
 .modal__0651b {
-    min-height: 0;
-    min-height: initial;
-    max-height: 100%
+    max-height: 100%;
+    min-height: unset
 }
 
 .description__0651b {
@@ -21,9 +20,9 @@
 }
 
 .addItemContainer__0651b {
+    cursor: pointer;
     display: flex;
-    margin-top: 8px;
-    cursor: pointer
+    margin-top: 8px
 }
 
 .addItemButton__0651b {
@@ -37,17 +36,17 @@
 }
 
 .draggableInputContainer__0651b {
-    position: relative;
-    display: flex;
     align-items: center;
-    margin-right: -8px
+    display: flex;
+    margin-right: -8px;
+    position: relative
 }
 
 .inputWrapper__0651b {
     flex: 1;
     flex-direction: row-reverse;
-    position: relative;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    position: relative
 }
 
 .inputWrapper__0651b:hover .clearButton__0651b {
@@ -55,11 +54,11 @@
 }
 
 .clearButton__0651b {
-    position: absolute;
-    top: 12px;
-    right: 8px;
     color: var(--interactive-normal);
     opacity: 0;
+    position: absolute;
+    right: 8px;
+    top: 12px;
     transition: opacity .2s ease-in-out;
     z-index: 2
 }
@@ -69,17 +68,17 @@
 }
 
 .clearIcon__0651b {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .dragContainer__0651b {
-    cursor: move;
-    width: 32px;
-    display: flex;
     align-items: center;
+    cursor: move;
+    display: flex;
     justify-content: center;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    width: 32px
 }
 
 .dragIcon__0651b {
@@ -87,8 +86,8 @@
 }
 
 .divider__0651b {
-    height: 1px;
     background-color: var(--background-modifier-accent);
+    height: 1px;
     margin: 24px 0
 }
 
@@ -109,13 +108,13 @@
 }
 
 .radioIconEmptyContainer__0651b {
-    padding-right: 10px;
     display: flex;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    padding-right: 10px
 }
 
 .radioIconEmpty__0651b {
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=d25e4de4ab44e821.css.map*/
+/*# sourceMappingURL=13303d456e3dc194.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 226
-  Original File Name: ba7a6b32c6c1907e
+  Original File Name: c93ed6874f7b04c8
 **/
 .error__6e36d {
     color: var(--status-danger);
@@ -10,17 +10,17 @@
 }
 
 .splash__15293 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     background-position: 50%;
     background-size: cover;
-    height: 120px;
     filter: grayscale(100%);
-    opacity: .1;
+    height: 120px;
+    left: 0;
     -webkit-mask: linear-gradient(#000,transparent);
-    mask: linear-gradient(#000,transparent)
+    mask: linear-gradient(#000,transparent);
+    opacity: .1;
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .gameIcon__15293 {
@@ -51,8 +51,8 @@
 }
 
 .installButton__15293 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .premiumIcon__15293 {
@@ -80,4 +80,4 @@
     color: var(--primary-200)
 }
 
-/*# sourceMappingURL=ba7a6b32c6c1907e.css.map*/
+/*# sourceMappingURL=c93ed6874f7b04c8.css.map*/

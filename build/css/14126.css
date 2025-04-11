@@ -1,11 +1,11 @@
 /**
   Module ID: 14126
-  Original File Name: 858bb42fa4408d24
+  Original File Name: c9cf14d7be0bb7bf
 **/
 .confirmModal__1b38b {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 10px
 }
 
@@ -19,8 +19,8 @@
 }
 
 .username__1b38b {
-    display: flex;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    display: flex
 }
 
 .discriminator__1b38b {
@@ -28,10 +28,10 @@
 }
 
 .fromToWrapper__1b38b {
+    background: no-repeat 50% 0;
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
-    background: no-repeat 50% 0
+    margin-bottom: 20px
 }
 
 .from__1b38b,.to__1b38b {
@@ -67,32 +67,36 @@
 }
 
 .label__3751b,.subtext__3751b {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
 .ringing__3751b {
-    opacity: .3;
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    opacity: .3
 }
 
 .channelName__3751b {
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
+    color: var(--header-primary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
 .videoPaused_afb275 {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    align-items: center
+    justify-content: left
 }
 
 .warningCircle_afb275 {
     margin-right: 4px
 }
 
-/*# sourceMappingURL=858bb42fa4408d24.css.map*/
+/*# sourceMappingURL=c9cf14d7be0bb7bf.css.map*/

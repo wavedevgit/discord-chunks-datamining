@@ -1,11 +1,11 @@
 /**
   Module ID: 17712
-  Original File Name: 3b10edaf5d98a888
+  Original File Name: 9c55f8032b49e2b7
 **/
 .card__9522a {
+    line-height: 20px;
     margin-bottom: 20px;
-    padding: 10px;
-    line-height: 20px
+    padding: 10px
 }
 
 .itemGroup__9522a {
@@ -18,14 +18,13 @@
 
 .reset__9522a {
     cursor: pointer;
+    margin-top: 8px;
     padding-left: 0;
-    padding-right: 0;
-    margin-top: 8px
+    padding-right: 0
 }
 
 .reset__9522a:hover {
     opacity: 1;
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -43,12 +42,12 @@
 }
 
 .disabled__9522a:after {
-    content: "";
-    position: absolute;
-    top: 0;
     bottom: 0;
+    content: "";
     left: 0;
-    right: 0
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
-/*# sourceMappingURL=3b10edaf5d98a888.css.map*/
+/*# sourceMappingURL=9c55f8032b49e2b7.css.map*/

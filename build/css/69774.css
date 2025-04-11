@@ -1,14 +1,14 @@
 /**
   Module ID: 69774
-  Original File Name: b122cafa012b9709
+  Original File Name: a17cfefd457692d9
 **/
 .row__19fd1 {
     align-items: center;
-    display: flex;
     border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
-    gap: var(--spacing-16)
+    padding: var(--spacing-16) 0
 }
 
 .row__19fd1:last-child {
@@ -36,19 +36,19 @@
 }
 
 .button__19fd1 {
-    min-width: 75px;
-    margin-left: auto;
     flex-shrink: 0;
+    margin-left: auto;
+    min-width: 75px;
     padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
-    border-radius: var(--radius-round);
+    align-items: center;
     background-color: var(--bg-mod-subtle);
-    min-width: 32px;
+    border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
-    align-items: center
+    min-width: 32px
 }
 
 .number__19fd1,.tableRowGroup__19fd1 {
@@ -62,12 +62,12 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    overflow: hidden;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
-    padding: 0;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary)
+    overflow: hidden;
+    padding: 0
 }
 
 .visual-refresh .row__19fd1 {
@@ -79,24 +79,22 @@
 }
 
 .buttonContainer__19fd1 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: var(--spacing-4)
 }
 
 .buttonIcon__19fd1 {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .root__573a4 {
     border-radius: var(--radius-sm);
+    max-height: unset;
     overflow: hidden;
-    width: auto;
-    width: initial;
-    max-height: none;
-    max-height: initial
+    width: unset
 }
 
 .preview__573a4,.root__573a4 {
@@ -104,17 +102,15 @@
 }
 
 .preview__573a4 {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .previewForCollected__573a4 {
-    -o-object-fit: contain;
+    filter: blur(5px);
     object-fit: contain;
-    -o-object-position: top;
     object-position: top;
-    opacity: .3;
-    filter: blur(5px)
+    opacity: .3
 }
 
 .container__573a4 {
@@ -131,20 +127,20 @@
 }
 
 .body__573a4,.headerContainer__573a4 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .body__573a4 {
-    position: absolute;
-    width: 60%;
-    top: 50%;
     left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1;
-    text-align: center
+    width: 60%;
+    z-index: 1
 }
 
 .bodySpacing__573a4 {
@@ -152,10 +148,10 @@
 }
 
 .centeredButton__573a4 {
+    height: var(--custom-button-button-md-height);
     margin-top: var(--spacing-16);
     width: 100%;
-    z-index: 1;
-    height: var(--custom-button-button-md-height)
+    z-index: 1
 }
 
 .safetyTable__573a4 {
@@ -163,8 +159,8 @@
 }
 
 .restrictedSafetyTable__573a4,.safetyTable__573a4 {
-    width: 100%;
-    background-color: var(--bg-surface-raised)
+    background-color: var(--bg-surface-raised);
+    width: 100%
 }
 
 .restrictedSafetyTable__573a4 {
@@ -172,10 +168,10 @@
 }
 
 .scroller__95bea {
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
+    height: 100%;
     padding: 16px
 }
 
@@ -184,19 +180,19 @@
 }
 
 .row__95bea,.rowIcon__95bea {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .rowIcon__95bea {
-    border-radius: var(--radius-round);
     background-color: var(--background-accent);
+    border-radius: var(--radius-round);
     color: var(--white-500);
     justify-content: center;
-    min-width: 40px;
-    min-height: 40px;
+    max-height: 40px;
     max-width: 40px;
-    max-height: 40px
+    min-height: 40px;
+    min-width: 40px
 }
 
 .rowText__95bea {
@@ -231,43 +227,43 @@
 }
 
 .memberSinceWrapper_c4eb81 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 8px
 }
 
 .memberSince_c4eb81 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
 .discordIcon_c4eb81 {
+    color: var(--interactive-normal);
     height: 16px;
-    width: 16px;
-    color: var(--interactive-normal)
+    width: 16px
 }
 
 .divider_c4eb81 {
-    height: 4px;
-    width: 4px;
+    background-color: var(--interactive-normal);
     border-radius: 50%;
-    background-color: var(--interactive-normal)
+    height: 4px;
+    width: 4px
 }
 
 .root_af8192 {
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
     color: var(--text-normal);
-    gap: 4px
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    position: relative
 }
 
 .scroller_fcb628 {
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    height: 100%;
     padding: 16px
 }
 
@@ -286,9 +282,9 @@
 .note_fcb628 textarea {
     border: 1px solid transparent;
     border-radius: 3px;
-    padding: 4px;
     font-size: 14px;
-    line-height: 18px
+    line-height: 18px;
+    padding: 4px
 }
 
 .note_fcb628 textarea:hover {
@@ -313,10 +309,10 @@
 }
 
 .scroller_ac477d {
-    height: 100%;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    height: 100%;
     padding: 16px
 }
 
@@ -326,15 +322,15 @@
 }
 
 .listRow__9d78f {
+    align-items: center;
+    border-radius: 4px;
+    color: var(--text-normal);
+    cursor: pointer;
     display: flex;
     font-weight: 500;
-    align-items: center;
-    cursor: pointer;
     line-height: 30px;
-    padding: 4px;
-    color: var(--text-normal);
-    border-radius: 4px;
-    margin: 1px 0 1px 8px
+    margin: 1px 0 1px 8px;
+    padding: 4px
 }
 
 .listRow__9d78f:hover {
@@ -349,14 +345,14 @@
 .listName__9d78f {
     font-size: 16px;
     line-height: 20px;
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .listAvatar__9d78f {
-    margin-right: 10px;
-    flex-shrink: 0
+    flex-shrink: 0;
+    margin-right: 10px
 }
 
 .listDiscriminator__9d78f {
@@ -365,36 +361,36 @@
 }
 
 .empty__9d78f {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     box-sizing: border-box;
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    justify-content: center;
     min-height: 100%;
     padding: 20px 0
 }
 
 .emptyIcon__9d78f {
-    width: 240px;
-    height: 130px;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    height: 130px;
+    width: 240px
 }
 
 .emptyText__9d78f {
-    font-weight: 500;
+    color: var(--header-secondary);
     font-size: 14px;
+    font-weight: 500;
     line-height: 16px;
     margin-top: 12px;
-    text-transform: uppercase;
-    color: var(--header-secondary)
+    text-transform: uppercase
 }
 
 .listScroller__9d78f {
-    padding: 12px 0;
     height: 100%;
+    padding: 12px 0;
     width: 100%
 }
 
@@ -440,14 +436,14 @@
 }
 
 .connectedAccountVanityMetadataItem_fffe42 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .connectedAccountVanityMetadataItemIcon_fffe42 {
     height: 18px;
-    width: 18px;
-    margin-right: 4px
+    margin-right: 4px;
+    width: 18px
 }
 
 .paypalVerifiedTag_fffe42 {
@@ -482,11 +478,11 @@
 
 .discordMemberCreatedAtIconContainer_e6abe8 {
     background-color: var(--background-modifier-hover);
+    border-radius: 50%;
     color: var(--interactive-active);
     height: 24px;
-    width: 24px;
     padding: 8px;
-    border-radius: 50%
+    width: 24px
 }
 
 .discordMemberCreatedAtIcon_e6abe8 {
@@ -515,30 +511,30 @@
 }
 
 .connectedAccountContainer_e6abe8 {
-    margin-top: 16px;
-    padding: 8px;
+    border: 1px solid var(--profile-body-divider-color,var(--background-modifier-accent));
     border-radius: 4px;
-    border: 1px solid var(--profile-body-divider-color,var(--background-modifier-accent))
+    margin-top: 16px;
+    padding: 8px
 }
 
 .connectedAccountContainerWithMetadata_e6abe8 {
-    padding-top: 8px;
-    padding-bottom: 8px
+    padding-bottom: 8px;
+    padding-top: 8px
 }
 
 .connectedAccount_e6abe8 {
+    align-items: center;
     display: flex;
     flex: 0 1;
-    align-items: center;
     gap: 8px
 }
 
 .connectedAccountChildren_e6abe8 {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin-left: 32px;
-    align-items: center;
     overflow: hidden
 }
 
@@ -547,10 +543,10 @@
 }
 
 .connectedAccountPoweredBy_e6abe8 {
-    display: inline-block;
-    margin-top: 8px;
     color: var(--text-muted);
-    cursor: pointer
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 8px
 }
 
 .connectedAccountPoweredByText_e6abe8 {
@@ -561,9 +557,9 @@
 }
 
 .connectedAccountIcon_e6abe8 {
-    width: 24px;
+    flex-shrink: 0;
     height: 24px;
-    flex-shrink: 0
+    width: 24px
 }
 
 .connectedAccountNameContainer_e6abe8 {
@@ -576,8 +572,8 @@
 }
 
 .connectedAccountName_e6abe8,.connectedAccountNameTextContainer_e6abe8 {
-    display: flex;
     align-items: center;
+    display: flex;
     overflow: hidden
 }
 
@@ -586,12 +582,12 @@
 }
 
 .connectedAccountNameText_e6abe8 {
-    white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     -webkit-user-select: text;
     -moz-user-select: text;
-    user-select: text
+    user-select: text;
+    white-space: nowrap
 }
 
 .connectedAccountVerifiedIcon_e6abe8 {
@@ -600,17 +596,17 @@
 
 .connectedAccountHideIcon_e6abe8 {
     color: var(--interactive-normal);
-    width: 14px;
     height: 14px;
-    margin: 2px
+    margin: 2px;
+    width: 14px
 }
 
 .connectedAccountOpenIcon_e6abe8 {
-    width: 16px;
-    height: 16px;
     color: var(--interactive-normal);
     display: block;
-    transform: rotate(45deg)
+    height: 16px;
+    transform: rotate(45deg);
+    width: 16px
 }
 
 .connectedAccountOpenIcon_e6abe8:hover {
@@ -622,8 +618,8 @@
 }
 
 .guildAvatar_aafe31 {
-    margin-right: 4px;
-    flex: 0 0 auto
+    flex: 0 0 auto;
+    margin-right: 4px
 }
 
 .guildAvatarWithoutIcon_aafe31 {
@@ -632,31 +628,31 @@
 }
 
 .guildNick_aafe31 {
-    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    font-weight: 500;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    color: var(--text-muted);
+    display: flex;
     font-size: 12px;
+    font-weight: 500;
+    justify-content: flex-start;
     line-height: 16px;
-    color: var(--text-muted)
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .container_d1d9f3 {
+    border-radius: var(--radius-sm);
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    border-radius: var(--radius-sm);
     overflow: hidden
 }
 
 .tabBar_d1d9f3 {
+    border-bottom: 1px solid var(--profile-body-divider-color);
     display: flex;
     gap: 32px;
-    margin: 16px 16px 0;
-    border-bottom: 1px solid var(--profile-body-divider-color)
+    margin: 16px 16px 0
 }
 
 .tabBar_d1d9f3 .tabBarItem_d1d9f3 {
@@ -664,28 +660,26 @@
 }
 
 .tabBarItem_d1d9f3 {
-    height: 25px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    height: 25px
 }
 
 .root__24502 {
     border-radius: var(--radius-sm);
+    max-height: unset;
     overflow: hidden;
     position: relative;
-    width: auto;
-    width: initial;
-    max-height: none;
-    max-height: initial
+    width: unset
 }
 
 .visual-refresh .root__24502 {
-    border-radius: var(--radius-sm);
-    border: none
+    border: none;
+    border-radius: var(--radius-sm)
 }
 
 .headerInner__24502 {
-    position: relative;
-    margin-right: 16px
+    margin-right: 16px;
+    position: relative
 }
 
 .headerButtons__24502,.headerInner__24502 {
@@ -694,8 +688,8 @@
 }
 
 .headerButtons__24502 {
-    flex: 1;
     align-items: center;
+    flex: 1;
     gap: 8px;
     height: var(--custom-button-button-md-height);
     padding-top: 16px
@@ -710,7 +704,6 @@
 }
 
 .messageTextButton__24502:has(+.messageIconButton__24502:last-child) {
-    display: inline;
     display: initial
 }
 
@@ -735,18 +728,18 @@
 }
 
 .friendRequestBanner__24502 {
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
     justify-content: space-between
 }
 
 .backdrop__24502 {
-    position: absolute;
-    top: 0;
-    right: 0;
+    background: var(--bg-backdrop);
     bottom: 0;
     left: 0;
-    background: var(--bg-backdrop);
+    position: absolute;
+    right: 0;
+    top: 0;
     z-index: 4
 }
 
@@ -762,9 +755,9 @@
 }
 
 .iconTextButton_ea99c4 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
-/*# sourceMappingURL=b122cafa012b9709.css.map*/
+/*# sourceMappingURL=a17cfefd457692d9.css.map*/

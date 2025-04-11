@@ -1,16 +1,16 @@
 /**
   Module ID: 21112
-  Original File Name: cf0f189e381bfb19
+  Original File Name: 855c467e8e82cdc5
 **/
 .closeButton__9cef2 {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .modalContent__9cef2 {
-    padding-top: 16px;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    padding-top: 16px
 }
 
 .emojiContainer__9cef2 {
@@ -21,9 +21,9 @@
 
 .emojiRow__9cef2 {
     background: var(--background-secondary-alt);
+    cursor: pointer;
     padding: 18px 16px;
-    position: relative;
-    cursor: pointer
+    position: relative
 }
 
 .emojiRow__9cef2:hover {
@@ -31,32 +31,32 @@
 }
 
 .emojiRow__9cef2+.emojiRow__9cef2:before {
+    background-color: var(--background-modifier-accent);
     content: "";
-    position: absolute;
-    top: -.5px;
-    left: 0;
-    right: 0;
     height: 1px;
+    left: 0;
     margin-left: 56px;
-    background-color: var(--background-modifier-accent)
+    position: absolute;
+    right: 0;
+    top: -.5px
 }
 
 .emojiLabel__9cef2 {
-    display: flex;
     align-items: center;
+    display: flex;
     padding-right: 8px
 }
 
 .emojiImage__9cef2 {
-    width: 24px;
     height: 24px;
-    margin-right: 16px
+    margin-right: 16px;
+    width: 24px
 }
 
 .emojiAlias__9cef2 {
+    overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .emojiAlias__9cef2:after,.emojiAlias__9cef2:before {
@@ -74,4 +74,4 @@
     padding: 0
 }
 
-/*# sourceMappingURL=cf0f189e381bfb19.css.map*/
+/*# sourceMappingURL=855c467e8e82cdc5.css.map*/

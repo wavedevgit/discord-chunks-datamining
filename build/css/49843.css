@@ -1,24 +1,24 @@
 /**
   Module ID: 49843
-  Original File Name: 2a2e362446c06506
+  Original File Name: 10c8c03ed886ad33
 **/
 .menu__43313 {
     max-height: 70vh
 }
 
 .upsellOuter__50e68 {
-    margin: 8px 12px;
     border-radius: var(--radius-sm);
+    margin: 8px 12px;
     position: relative
 }
 
 .upsellInner__50e68 {
-    padding: 12px;
+    background: linear-gradient(to right,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.1) 0,hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.1) 100%) border-box;
+    border-radius: calc(var(--radius-sm) - 2px);
     display: flex;
     flex-direction: column;
     gap: 8px;
-    border-radius: calc(var(--radius-sm) - 2px);
-    background: linear-gradient(90deg,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.1) 0,hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.1)) border-box
+    padding: 12px
 }
 
 .upsellTitle__50e68 {
@@ -31,10 +31,10 @@
 }
 
 .close__50e68 {
+    cursor: pointer;
     position: absolute;
     right: 8px;
-    top: 8px;
-    cursor: pointer
+    top: 8px
 }
 
 .closeIcon__50e68 {
@@ -42,23 +42,23 @@
 }
 
 .effectsWrapper__78936 {
-    position: relative;
-    height: 100%
+    height: 100%;
+    position: relative
 }
 
 .effects__78936 {
-    position: absolute;
     bottom: 0;
     left: 0;
+    position: absolute;
     right: 0;
     top: 0
 }
 
 .text_c8b06d {
-    line-height: 12px;
+    color: var(--opacity-white-80);
     font-size: 12px;
     font-weight: 500;
-    color: var(--opacity-white-80)
+    line-height: 12px
 }
 
 .textLeft_c8b06d,.textRight_c8b06d {
@@ -90,8 +90,8 @@
 }
 
 .singleLineContainer_c8b06d {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .barInSingleLine_c8b06d {
@@ -106,17 +106,17 @@
 }
 
 .ellipsis__2ef49 {
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .headerContainer__2ef49 {
-    width: 100%;
-    min-width: 0;
-    margin-bottom: 8px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 8px;
+    min-width: 0;
+    width: 100%
 }
 
 .headerText__2ef49 {
@@ -147,13 +147,12 @@
 }
 
 .openGameProfile__2ef49:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .assets__2ef49 {
-    position: relative;
-    align-self: flex-start
+    align-self: flex-start;
+    position: relative
 }
 
 .assetsLargeMaskStreamPreview__2ef49,.assetsLargeMaskVoiceChannel__2ef49 {
@@ -170,7 +169,6 @@
     -webkit-user-drag: none;
     border-radius: 8px;
     display: block;
-    -o-object-fit: cover;
     object-fit: cover
 }
 
@@ -179,58 +177,58 @@
 }
 
 .assetsLargeImageStreamPreview__2ef49,.assetsLargeImageStreamPreviewXbox__2ef49 {
-    width: 60px;
-    height: 60px
+    height: 60px;
+    width: 60px
 }
 
 .assetsLargeImageStreamPreview__2ef49,.assetsLargeImageStreamPreviewXbox__2ef49 {
 }
 
 .assetsLargeImageActivityFeed__2ef49,.assetsLargeImageActivityFeedXbox__2ef49 {
-    width: 90px;
-    height: 90px
+    height: 90px;
+    width: 90px
 }
 
 .assetsLargeImageActivityFeed__2ef49,.assetsLargeImageActivityFeedXbox__2ef49 {
 }
 
 .assetsLargeImageVoiceChannel__2ef49 {
-    width: 64px;
-    height: 64px
+    height: 64px;
+    width: 64px
 }
 
 .assetsLargeImageActivityFeedTwitch__2ef49 {
-    width: 100%;
+    border-radius: 8px;
     height: 260px;
     -webkit-mask: linear-gradient(0deg,transparent 10%,#000 80%);
     mask: linear-gradient(0deg,transparent 10%,#000 80%);
-    border-radius: 8px
+    width: 100%
 }
 
 .assetsSmallImage__2ef49 {
     -webkit-user-drag: none;
     border-radius: 50%;
-    position: absolute;
     bottom: -4px;
+    position: absolute;
     right: -4px
 }
 
 .assetsSmallImageStreamPreview__2ef49,.assetsSmallImageVoiceChannel__2ef49 {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .assetsSmallImageStreamPreview__2ef49,.assetsSmallImageVoiceChannel__2ef49 {
 }
 
 .assetsSmallImageActivityFeed__2ef49 {
-    width: 30px;
     height: 30px;
+    width: 30px;
 }
 
 .assetsSmallImageActivityFeedWithoutLargeImage__2ef49,.assetsSmallImageStreamPreviewWithoutLargeImage__2ef49,.assetsSmallImageVoiceChannelWithoutLargeImage__2ef49 {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .assetsSmallImageActivityFeedWithoutLargeImage__2ef49,.assetsSmallImageStreamPreviewWithoutLargeImage__2ef49,.assetsSmallImageVoiceChannelWithoutLargeImage__2ef49 {
@@ -241,9 +239,9 @@
 }
 
 .screenshareIcon__2ef49 {
-    width: 40px;
+    background-image: url(/assets/aa013155f3c2ecb0.svg);
     height: 40px;
-    background-image: url(/assets/aa013155f3c2ecb0.svg)
+    width: 40px
 }
 
 .content__2ef49 {
@@ -290,7 +288,6 @@
 }
 
 .clickableDetails__2ef49:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -305,15 +302,15 @@
 }
 
 .guildDetails__2ef49 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px;
     margin-top: 4px
 }
 
 .voiceChannelInfo__2ef49 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 2px
 }
 
@@ -344,49 +341,48 @@
 }
 
 .bodyLink__2ef49:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .twitchImageContainer__2ef49 {
     background: var(--primary-800);
-    position: relative;
-    border-radius: 8px
+    border-radius: 8px;
+    position: relative
 }
 
 .twitchImageOverlay__2ef49 {
-    position: absolute;
-    left: 0;
-    right: 0;
     bottom: 0;
-    padding: 16px
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    right: 0
 }
 
 .twitchBackgroundImage__2ef49 {
-    min-height: 260px;
-    display: inline-block
+    display: inline-block;
+    min-height: 260px
 }
 
 .streamUsername__2ef49 {
-    font-weight: 600;
+    color: var(--primary-200);
     font-size: 16px;
-    line-height: 1.25;
-    color: var(--primary-200)
+    font-weight: 600;
+    line-height: 1.25
 }
 
 .streamName__2ef49 {
-    margin-top: 8px;
     color: var(--primary-300);
+    font-size: 14px;
     font-weight: 500;
-    font-size: 14px
+    margin-top: 8px
 }
 
 .streamGame__2ef49 {
-    text-transform: uppercase;
     color: var(--primary-400);
     font-size: 12px;
     font-weight: 600;
-    margin-top: 8px
+    margin-top: 8px;
+    text-transform: uppercase
 }
 
 .activityVoiceChannel__2ef49 .headerText__2ef49 {
@@ -406,12 +402,12 @@
 }
 
 .icon__2ef49 {
+    color: var(--header-secondary);
     display: block;
-    width: 16px;
+    flex: 0 0 auto;
     height: 16px;
     margin-right: 4px;
-    color: var(--header-secondary);
-    flex: 0 0 auto
+    width: 16px
 }
 
 .wrap__2ef49 {
@@ -433,17 +429,16 @@
 }
 
 .flex__08d32 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .platformIcon__08d32 {
-    width: 20px;
     height: 20px;
-    -o-object-fit: contain;
-    object-fit: contain;
     margin-right: 8px;
-    position: relative
+    object-fit: contain;
+    position: relative;
+    width: 20px
 }
 
 .button__6e0e0 {
@@ -457,43 +452,43 @@
 }
 
 .syncButton__2024e {
-    width: 32px;
-    height: 32px
+    height: 32px;
+    width: 32px
 }
 
 .syncButtonInner__2024e {
-    min-width: 16px;
-    min-height: 16px;
+    max-height: 16px;
     max-width: 16px;
-    max-height: 16px
+    min-height: 16px;
+    min-width: 16px
 }
 
 .streamIcon__43481 {
-    width: 16px;
     height: 16px;
+    margin-right: 5px;
     vertical-align: bottom;
-    margin-right: 5px
+    width: 16px
 }
 
 .iconButton__43481 {
-    padding: 0;
     line-height: 0;
-    margin-left: 8px
+    margin-left: 8px;
+    padding: 0
 }
 
 .iconButtonSize__43481 {
-    min-width: 32px;
-    max-width: 32px
+    max-width: 32px;
+    min-width: 32px
 }
 
 .iconSize__43481 {
-    width: 24px;
-    height: 24px
+    height: 24px;
+    width: 24px
 }
 
 .buttonsWrapper__65bb6 {
-    margin-top: 12px;
-    flex: 0 1 auto
+    flex: 0 1 auto;
+    margin-top: 12px
 }
 
 .buttonsWrapper__65bb6:empty {
@@ -513,15 +508,15 @@
 }
 
 .actionsProfile__34f7d,.actionsProfileV2__34f7d {
+    flex: 1 1 auto;
     margin-left: 20px;
-    margin-top: 0;
-    flex: 1 1 auto
+    margin-top: 0
 }
 
 .actionsSimplifiedProfile__34f7d {
+    flex: 1 1 auto;
     margin-left: 10px;
-    margin-top: 0;
-    flex: 1 1 auto
+    margin-top: 0
 }
 
 .actionsActivityFeed__34f7d {
@@ -536,9 +531,9 @@
 }
 
 .actionsWrapper__34f7d {
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     justify-content: space-between;
     width: 100%
 }
@@ -553,15 +548,15 @@
 }
 
 .streamPreviewWrapper__6da2d {
-    padding-left: 16px;
     opacity: 0;
+    padding-left: 16px;
     position: relative;
     transform: translate3d(8px,0,0) scale(.98);
     transform-origin: 50% 50%
 }
 
 .full-motion .streamPreviewWrapper__6da2d {
-    transition: opacity .15s ease, transform 125ms ease-in
+    transition: opacity .15s ease,transform 125ms ease-in
 }
 
 .streamPreviewWrapper__6da2d.mounted__6da2d {
@@ -570,11 +565,11 @@
 }
 
 .streamPreview__6da2d {
-    width: 252px;
+    background-color: var(--background-tertiary);
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: var(--elevation-high);
-    background-color: var(--background-tertiary)
+    overflow: hidden;
+    width: 252px
 }
 
 .visual-refresh .streamPreview__6da2d {
@@ -582,11 +577,11 @@
 }
 
 .previewContainer__6da2d {
-    width: 100%;
+    background-color: var(--background-secondary-alt);
     box-sizing: border-box;
     height: 142px;
     position: relative;
-    background-color: var(--background-secondary-alt)
+    width: 100%
 }
 
 .previewContainer__6da2d:hover .previewHover__6da2d {
@@ -594,38 +589,38 @@
 }
 
 .previewHover__6da2d {
-    transition: opacity .2s ease-in-out;
+    align-items: center;
+    bottom: 0;
+    cursor: pointer;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    left: 0;
+    line-height: 18px;
     opacity: 0;
     position: absolute;
-    top: 0;
-    left: 0;
     right: 0;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    line-height: 18px;
-    font-weight: 600
+    top: 0;
+    transition: opacity .2s ease-in-out
 }
 
 .previewImage__6da2d {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .applicationName__6da2d {
-    position: absolute;
-    top: 8px;
-    left: 12px;
+    color: var(--text-normal);
     font-size: 14px;
+    left: 12px;
     line-height: 18px;
-    color: var(--text-normal)
+    position: absolute;
+    top: 8px
 }
 
 .watchButtonInner__6da2d {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .liveIcon__6da2d {
@@ -637,8 +632,8 @@
 }
 
 .protip__6da2d {
-    text-align: center;
-    margin-top: 10px
+    margin-top: 10px;
+    text-align: center
 }
 
 .white__6da2d {
@@ -678,44 +673,44 @@
 }
 
 .container__91e7c {
-    position: relative;
+    align-items: center;
     display: block;
-    overflow: hidden;
-    white-space: nowrap;
-    vertical-align: middle;
     flex: 1 1 auto;
-    align-items: center
+    overflow: hidden;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap
 }
 
 .container__91e7c .chipletContainer__91e7c {
-    overflow: hidden;
-    display: inline-block
+    display: inline-block;
+    overflow: hidden
 }
 
 .container__91e7c .chipletParent__91e7c {
-    position: relative;
-    overflow: hidden;
     display: inline;
-    padding-left: 4px
+    overflow: hidden;
+    padding-left: 4px;
+    position: relative
 }
 
 .container__91e7c .usernameContainer__91e7c {
     display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    max-width: 100%;
     flex: 1;
-    margin-top: 2px
+    margin-top: 2px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap
 }
 
 .container__91e7c.isOverlayContainer__91e7c {
-    height: 20px;
+    align-content: center;
     background: var(--background-primary);
-    flex: none;
     border-radius: 4px;
     display: flex;
+    flex: none;
     flex-direction: row;
-    align-content: center
+    height: 20px
 }
 
 .container__91e7c.isOverlayContainer__91e7c .usernameContainer__91e7c {
@@ -723,9 +718,9 @@
 }
 
 .container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c,.container__91e7c.isOverlayContainer__91e7c .chipletParent__91e7c {
-    display: flex;
     align-content: center;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c {
@@ -761,15 +756,15 @@
 }
 
 .listDefault__07f91 {
+    align-items: stretch;
     flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: stretch
+    flex-wrap: nowrap
 }
 
 .listCollapse__07f91 {
+    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start
+    flex-wrap: wrap
 }
 
 .voiceUser__07f91 {
@@ -781,12 +776,12 @@
 }
 
 .content__07f91 {
-    display: flex;
-    border-radius: 4px;
-    justify-content: flex-start;
     align-items: center;
-    margin-top: 1px;
-    margin-bottom: 1px
+    border-radius: 4px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1px;
+    margin-top: 1px
 }
 
 .flipped__07f91 {
@@ -811,8 +806,8 @@
 }
 
 .listDefault__07f91 .avatarContainer__07f91 {
-    margin-right: 8px;
-    margin-left: 8px
+    margin-left: 8px;
+    margin-right: 8px
 }
 
 .overlap__07f91 {
@@ -824,28 +819,28 @@
 }
 
 .overlap__07f91 .avatar__07f91 {
-    margin: 0;
-    border: 4px solid var(--background-secondary)
+    border: 4px solid var(--background-secondary);
+    margin: 0
 }
 
 .avatar__07f91 {
-    flex: 0 0 auto;
-    border-radius: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: 50% 50%;
-    margin-top: 3px;
-    margin-bottom: 3px
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    flex: 0 0 auto;
+    margin-bottom: 3px;
+    margin-top: 3px
 }
 
 .avatarSmall__07f91 {
-    width: 24px;
-    height: 24px
+    height: 24px;
+    width: 24px
 }
 
 .avatarLarge__07f91 {
-    width: 30px;
-    height: 30px
+    height: 30px;
+    width: 30px
 }
 
 .avatarSpeaking__07f91 {
@@ -854,9 +849,9 @@
 
 .username__07f91 {
     flex: 1 1 auto;
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 div.clanTagBadgeContainer__07f91 {
@@ -870,8 +865,8 @@ div.clanTagBadgeContainer__07f91 {
 
 .usernameFont__07f91 {
     font-size: 14px;
-    line-height: 18px;
-    font-weight: 500
+    font-weight: 500;
+    line-height: 18px
 }
 
 .icons__07f91 {
@@ -880,8 +875,8 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconGroup__07f91,.icons__07f91 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconGroup__07f91 {
@@ -889,13 +884,13 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .flipped__07f91 .icons__07f91 {
-    margin-right: 0;
-    margin-left: 8px
+    margin-left: 8px;
+    margin-right: 0
 }
 
 .icon__07f91 {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .iconTooltipContainer__07f91 {
@@ -910,10 +905,10 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconSpacing__07f91 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex: 0 0 auto;
+    justify-content: center;
     margin-left: 4px
 }
 
@@ -927,11 +922,11 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconPriortySpeaker__07f91 {
-    position: absolute;
-    left: -16px;
-    width: 6px;
+    border-radius: 8px;
     height: 6px;
-    border-radius: 8px
+    left: -16px;
+    position: absolute;
+    width: 6px
 }
 
 .icon__07f91,.username__07f91 {
@@ -959,33 +954,33 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .optionsButton__07f91 {
-    display: flex;
     align-items: center;
-    justify-content: center;
     border-radius: 4px;
+    display: flex;
+    flex-shrink: 0;
     height: 24px;
-    width: 24px;
+    justify-content: center;
     right: 5px;
-    flex-shrink: 0
+    width: 24px
 }
 
 .optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
-.voiceUser__07f91:not(:hover):not(:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
+.voiceUser__07f91:not(:hover,:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
     width: 0
 }
 
-.visual-refresh .voiceUser__07f91:not(:hover):not(:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
+.visual-refresh .voiceUser__07f91:not(:hover,:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
     display: none
 }
 
 span.clanTag__07f91 {
+    background: var(--bg-mod-subtle);
     flex: 0;
-    white-space: nowrap;
     text-overflow: ellipsis;
-    background: var(--bg-mod-subtle)
+    white-space: nowrap
 }
 
 span.clanTag__07f91.isOverlay__07f91 {
@@ -1026,8 +1021,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .ringing__07f91 {
-    opacity: .3;
-    animation: outgoing-call-pulse__07f91 1s ease-out infinite
+    animation: outgoing-call-pulse__07f91 1s ease-out infinite;
+    opacity: .3
 }
 
 .guestSuffix__07f91 {
@@ -1036,8 +1031,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 :where(.visual-refresh) .content__07f91 {
     border-radius: var(--radius-sm);
-    padding: 4px var(--space-xs) 4px var(--space-xs);
-    gap: 8px
+    gap: 8px;
+    padding: 4px var(--space-xs) 4px var(--space-xs)
 }
 
 :where(.visual-refresh) .icons__07f91 {
@@ -1061,10 +1056,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .enable-forced-colors .clickable__07f91:hover .username__07f91,.enable-forced-colors .username__07f91 {
-    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
-    -webkit-text-decoration: underline;
+    forced-color-adjust: none;
     text-decoration: underline
 }
 
@@ -1075,10 +1069,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 .selector_e1dc93 {
     background: transparent;
     border: 1px solid var(--border-subtle);
-    padding: 0 10px;
     border-radius: 8px;
+    flex-grow: 1;
     min-height: 40px;
-    flex-grow: 1
+    padding: 0 10px
 }
 
 .selectedDevice_e1dc93 {
@@ -1088,47 +1082,44 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .floaterWrapper__1836e {
-    position: absolute;
     bottom: 80px;
     left: 0;
+    position: absolute;
     width: 100%
 }
 
 .visibleFloater__1836e {
-    border-radius: 8px;
-    border: 1px solid var(--border-faint);
     background: var(--brand-500);
-    padding: 8px;
-    margin: 0 8px;
+    border: 1px solid var(--border-faint);
+    border-radius: 8px;
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
     display: flex;
     flex-direction: column;
     gap: 8px;
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
+    margin: 0 8px;
+    padding: 8px
 }
 
 .progressText__1836e {
     display: flex;
-    justify-content: space-between;
-    gap: 8px
+    gap: 8px;
+    justify-content: space-between
 }
 
 .voiceFilterHero_cb3698 {
-    position: relative;
-    height: 72px;
-    padding: 0 16px;
-    flex-shrink: 0;
+    box-shadow: var(--shadow-top-high);
     display: flex;
     flex-direction: row;
-    box-shadow: var(--shadow-top-high)
+    flex-shrink: 0;
+    height: 72px;
+    padding: 0 16px;
+    position: relative
 }
 
 .voiceFilterHero_cb3698 .bgGradient_cb3698 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    pointer-events: none
+    inset: 0;
+    pointer-events: none;
+    position: absolute
 }
 
 .voiceFilterHero_cb3698 .bgGradientHighlight_cb3698 {
@@ -1136,17 +1127,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFilterHero_cb3698:after,.voiceFilterHero_cb3698:before {
-    content: "";
-    position: absolute;
-    pointer-events: none;
     background: linear-gradient(90deg,hsla(0,0%,100%,.2),hsla(0,0%,100%,0));
-    top: auto;
-    top: initial;
-    right: 0;
-    bottom: auto;
-    bottom: initial;
-    left: 0;
-    height: 1px
+    content: "";
+    height: 1px;
+    inset: unset 0;
+    pointer-events: none;
+    position: absolute
 }
 
 .voiceFilterHero_cb3698:before {
@@ -1158,20 +1144,20 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFilterHero_cb3698 .iconWrapper_cb3698 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     position: relative;
     width: 88px
 }
 
 .voiceFilterHero_cb3698 .activeVoiceIcon_cb3698 {
-    width: 88px;
-    height: 88px;
-    position: absolute;
-    left: 0;
     bottom: 0;
-    transform-origin: center bottom
+    height: 88px;
+    left: 0;
+    position: absolute;
+    transform-origin: center bottom;
+    width: 88px
 }
 
 .tooltip_cb3698 {
@@ -1179,9 +1165,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .tooltipContent_cb3698 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     text-align: center
 }
@@ -1191,26 +1177,26 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .buttonWrapper_cb3698 {
+    align-self: center;
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    align-self: center
+    gap: 8px
 }
 
 .descriptionWrapper_cb3698 {
-    position: relative;
-    padding-left: 16px;
     flex-grow: 1;
-    overflow: hidden
+    overflow: hidden;
+    padding-left: 16px;
+    position: relative
 }
 
 .description_cb3698 {
-    position: absolute;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2px;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
     transform-origin: left center
 }
 
@@ -1219,13 +1205,13 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .button_cb3698 {
-    display: flex;
     align-items: center;
-    justify-content: center;
     align-self: center;
+    border-radius: 8px;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 8px
+    display: flex;
+    justify-content: center;
+    padding: 10px
 }
 
 .button_cb3698.loopbackEnabled_cb3698 {
@@ -1238,15 +1224,15 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .countdownContainer__8fece {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 8px;
-    border-radius: 8px;
-    flex: 1;
-    margin: var(--spacing-8);
     background: var(--background-primary);
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
+    border-radius: 8px;
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: var(--spacing-8);
+    padding: 8px
 }
 
 .visual-refresh .countdownContainer__8fece {
@@ -1254,16 +1240,16 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconContainer__8fece {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     flex-direction: row;
-    gap: 8px
+    gap: 8px;
+    justify-content: center
 }
 
 .upsellText__8fece {
-    margin: auto 16px auto 8px;
-    flex: 1
+    flex: 1;
+    margin: auto 16px auto 8px
 }
 
 .clockIcon__8fece {
@@ -1277,17 +1263,17 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .clockIconWrapper__8fece,.digitContainer__8fece {
-    height: 24px;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 24px;
     justify-content: center
 }
 
 .digitContainer__8fece {
     background-color: var(--bg-mod-subtle);
+    border-radius: 4px;
     color: var(--header-primary);
-    width: 16px;
-    border-radius: 4px
+    width: 16px
 }
 
 .digitsContainer__8fece {
@@ -1299,23 +1285,23 @@ span.clanTag__07f91.isOverlay__07f91 {
 .colonContainer__8fece {
     display: flex;
     flex-direction: column;
+    gap: 3px;
     justify-content: center;
-    padding: 0 4px;
-    gap: 3px
+    padding: 0 4px
 }
 
 .animatedDigit__8fece {
-    position: relative;
     height: 1.1rem;
-    width: 1rem;
-    overflow: hidden
+    overflow: hidden;
+    position: relative;
+    width: 1rem
 }
 
 .tinyDot__8fece {
-    width: 2px;
-    height: 2px;
     background-color: var(--header-muted);
-    border-radius: 50%
+    border-radius: 50%;
+    height: 2px;
+    width: 2px
 }
 
 .isScrolled__8fece {
@@ -1328,12 +1314,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .profile_ed0705 {
-    display: flex;
     border-radius: 50%;
-    width: 80px;
+    display: flex;
     height: 80px;
+    overflow: hidden;
     position: relative;
-    overflow: hidden
+    width: 80px
 }
 
 .profile_ed0705.underDevelopment_ed0705 {
@@ -1341,18 +1327,18 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .insetBorder_ed0705 {
-    box-sizing: border-box;
-    border-radius: 50%;
     border: 1px solid var(--border-subtle);
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: 0;
     pointer-events: none;
-    top: 0;
-    left: 0
+    top: 0
 }
 
 .insetBorder_ed0705,.thumbnail_ed0705 {
-    width: 80px;
     height: 80px;
-    position: absolute
+    position: absolute;
+    width: 80px
 }
 
 .filterName_ed0705 {
@@ -1360,37 +1346,39 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconCircle_ed0705 {
-    position: absolute;
-    right: -3px;
-    bottom: -3px;
-    padding: 2px;
     background: var(--background-tertiary);
     border-radius: 50%;
+    bottom: -3px;
     display: flex;
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
+    padding: 2px;
+    position: absolute;
+    right: -3px;
+    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .lockedCircle_ed0705 {
-    border-radius: 50%;
+    background: linear-gradient(0deg,var(--bg-mod-subtle) 0,var(--bg-mod-subtle) 100%),var(--background-secondary-alt);
     border: 3px solid var(--background-tertiary);
-    background: linear-gradient(0deg,var(--bg-mod-subtle),var(--bg-mod-subtle)),var(--background-secondary-alt);
+    border-radius: 50%;
     height: 18px;
     width: 18px
 }
 
 .clockCircle_ed0705,.lockedCircle_ed0705 {
+    align-items: center;
     display: flex;
     flex-shrink: 0;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .clockCircle_ed0705 {
-    border-radius: 50%;
     background: var(--brand-500);
+    border-radius: 50%;
     height: 24px;
     width: 24px
 }
@@ -1408,14 +1396,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .hoverButtonCircle_ed0705 {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
     background: var(--opacity-black-48);
-    transition-duration: 80ms
+    border-radius: 50%;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    transition-duration: 80ms;
+    width: 24px
 }
 
 .hoverButtonCircle_ed0705 svg {
@@ -1423,33 +1411,33 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .previewButton_ed0705 {
+    left: 8px;
     position: absolute;
-    top: 8px;
-    left: 8px
+    top: 8px
 }
 
 .filter_ed0705,.selector_ed0705 {
-    width: 96px;
-    height: 104px
+    height: 104px;
+    width: 96px
 }
 
 .selector_ed0705 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 8px;
     justify-content: flex-start;
-    text-align: center;
-    gap: 8px
+    text-align: center
 }
 
 .filter_ed0705 {
+    border-radius: 8px;
+    cursor: pointer;
     flex-shrink: 0;
     padding: 8px 0;
     position: relative;
-    border-radius: 8px;
     transition: background-color;
-    transition-duration: 80ms;
-    cursor: pointer
+    transition-duration: 80ms
 }
 
 .filter_ed0705:hover {
@@ -1492,14 +1480,16 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconTreatmentsWrapper_ed0705 {
-    position: relative;
-    width: -moz-fit-content;
-    width: fit-content;
+    align-items: center;
+    display: flex;
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center
+    justify-content: center;
+    position: relative;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content
 }
 
 .checkmark_ed0705 {
@@ -1507,8 +1497,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spinner_ed0705 {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .spinner_ed0705 span {
@@ -1516,12 +1506,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spinnerWrapper_ed0705 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%
 }
 
 .skye_ed0705 {
@@ -1530,10 +1520,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .skye_ed0705 .thumbnail_ed0705 {
-    width: 80px;
     height: 80px;
+    left: -8px;
     top: 8px;
-    left: -8px
+    width: 80px
 }
 
 .quinn_ed0705 {
@@ -1542,10 +1532,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .quinn_ed0705 .thumbnail_ed0705 {
-    width: 88px;
     height: 88px;
+    left: -14px;
     top: 8px;
-    left: -14px
+    width: 88px
 }
 
 .axel_ed0705 {
@@ -1554,10 +1544,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .axel_ed0705 .thumbnail_ed0705 {
-    width: 88px;
     height: 88px;
+    left: -10px;
     top: 8px;
-    left: -10px
+    width: 88px
 }
 
 .sebastien_ed0705 {
@@ -1566,10 +1556,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .sebastien_ed0705 .thumbnail_ed0705 {
-    width: 80px;
     height: 80px;
+    left: -8px;
     top: 8px;
-    left: -8px
+    width: 80px
 }
 
 .megaphone_ed0705 {
@@ -1579,9 +1569,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .megaphone_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    width: 64px;
+    left: 9px;
     top: 7px;
-    left: 9px
+    width: 64px
 }
 
 .robot_ed0705 {
@@ -1591,9 +1581,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .robot_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
     left: -8px;
-    top: 12px
+    top: 12px;
+    width: 80px
 }
 
 .tunes_ed0705 {
@@ -1603,9 +1593,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tunes_ed0705 .thumbnail_ed0705 {
     height: 88px;
-    width: 88px;
     left: -8px;
-    top: 7px
+    top: 7px;
+    width: 88px
 }
 
 .ghost_ed0705 {
@@ -1615,9 +1605,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .ghost_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    width: 64px;
+    left: 10px;
     top: 8px;
-    left: 10px
+    width: 64px
 }
 
 .spacebunny_ed0705 {
@@ -1627,9 +1617,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .spacebunny_ed0705 .thumbnail_ed0705 {
     height: 72px;
-    width: 72px;
+    left: 2px;
     top: 8px;
-    left: 2px
+    width: 72px
 }
 
 .justus_ed0705 {
@@ -1639,9 +1629,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .justus_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
+    left: -4px;
     top: 10px;
-    left: -4px
+    width: 80px
 }
 
 .harper_ed0705 {
@@ -1651,9 +1641,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .harper_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
+    left: -2px;
     top: 8px;
-    left: -2px
+    width: 80px
 }
 
 .villain_ed0705 {
@@ -1663,9 +1653,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .villain_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
+    left: -6px;
     top: 8px;
-    left: -6px
+    width: 80px
 }
 
 .solara_ed0705 {
@@ -1675,9 +1665,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .solara_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
+    left: -6px;
     top: 8px;
-    left: -6px
+    width: 80px
 }
 
 .cave_ed0705 {
@@ -1687,9 +1677,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .cave_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    width: 80px;
+    left: 0;
     top: 8px;
-    left: 0
+    width: 80px
 }
 
 .deepfried_ed0705 {
@@ -1703,14 +1693,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .deepfried_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    width: 64px;
+    left: 6px;
     top: 10px;
-    left: 6px
+    width: 64px
 }
 
 .row__6500b {
-    height: 120px;
     display: flex;
+    height: 120px;
     position: relative
 }
 
@@ -1723,14 +1713,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spacer__6500b {
-    height: 1px;
     align-self: stretch;
-    background: var(--border-subtle)
+    background: var(--border-subtle);
+    height: 1px
 }
 
 .header__6500b {
-    padding: 16px 0;
-    border-top: 1px solid var(--border-subtle)
+    border-top: 1px solid var(--border-subtle);
+    padding: 16px 0
 }
 
 .header__6500b:first-child {
@@ -1742,12 +1732,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconMessage__6500b,.loading__6500b {
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    display: flex;
     align-items: center;
-    justify-content: center
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%
 }
 
 .iconMessage__6500b {
@@ -1758,14 +1748,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersPopout_e2f668 {
-    position: relative;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
     background: var(--background-tertiary);
     border-radius: 16px;
-    outline: 1px solid var(--border-subtle);
     box-shadow: var(--shadow-high);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    outline: 1px solid var(--border-subtle);
+    position: relative;
     width: 400px
 }
 
@@ -1774,19 +1764,19 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersHeader_e2f668 {
-    margin: 0 16px;
-    flex-shrink: 0;
     background-color: transparent;
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    flex-shrink: 0;
+    margin: 0 16px
 }
 
 .voiceFiltersFooter_e2f668 {
-    display: flex;
-    flex-direction: row;
-    padding: 16px;
-    gap: 8px;
     background-color: var(--background-secondary-alt);
     border-radius: 0 0 16px 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 16px;
     z-index: 1
 }
 
@@ -1803,12 +1793,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersFooterButton_e2f668 {
-    border-radius: 8px;
     background: var(--bg-mod-faint);
     border: 1px solid var(--border-subtle);
-    width: 40px;
+    border-radius: 8px;
+    flex-grow: 0;
     height: 40px;
-    flex-grow: 0
+    width: 40px
 }
 
 .voiceFiltersFooterButton_e2f668:hover {
@@ -1816,32 +1806,32 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .resizeHandle_e2f668,.voiceFiltersFooterButton_e2f668 .voiceFiltersFooterButtonInner_e2f668 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
 .resizeHandle_e2f668 {
     cursor: ns-resize;
-    padding: 8px 0;
-    margin-top: -2px
+    margin-top: -2px;
+    padding: 8px 0
 }
 
 .resizePill_e2f668 {
-    height: 4px;
-    width: 48px;
     background: var(--border-subtle);
-    border-radius: 2px
+    border-radius: 2px;
+    height: 4px;
+    width: 48px
 }
 
 .upsell_e2f668 {
-    border-radius: 8px;
-    border: 1px solid var(--border-faint);
     background: var(--background-primary);
+    border: 1px solid var(--border-faint);
+    border-radius: 8px;
     box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
+    height: 22px;
     margin: 8px;
-    padding: 8px;
-    height: 22px
+    padding: 8px
 }
 
 .visual-refresh .upsell_e2f668 {
@@ -1849,64 +1839,63 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .subscribeButton_e2f668 {
+    border-radius: 4px;
     height: 28px;
-    padding: 4px 12px 4px 8px;
-    border-radius: 4px
+    padding: 4px 12px 4px 8px
 }
 
 .upsellCountdownContainer_e2f668 {
-    position: relative;
     bottom: -50px;
-    margin-top: -104px
+    margin-top: -104px;
+    position: relative
 }
 
 .upsellContainer_e2f668 {
-    position: relative;
-    bottom: 50px
+    bottom: 50px;
+    position: relative
 }
 
 .button__2723e {
-    box-sizing: border-box;
-    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+    align-items: center;
     background: initial;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    box-sizing: border-box;
     color: inherit;
-    padding: 0;
-    margin: 0;
+    cursor: pointer;
+    display: flex;
     flex-grow: 0;
     flex-shrink: 0;
-    width: auto;
-    max-width: 100%;
-    text-align: left;
-    font-weight: 400;
     font-size: medium;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 400;
     gap: var(--spacing-4);
-    border-radius: var(--radius-sm);
-    border: 1px solid transparent;
+    justify-content: center;
+    margin: 0;
+    max-width: 100%;
+    padding: 0;
+    text-align: start;
     transition: background-color .3s ease;
-    cursor: pointer
+    width: auto
 }
 
 .xs__2723e {
-    padding: 7px 11px;
-    min-height: 32px
+    min-height: 32px;
+    padding: 7px 11px
 }
 
 .sm__2723e {
-    padding: 11px 15px;
-    min-height: 40px
+    min-height: 40px;
+    padding: 11px 15px
 }
 
 .md__2723e {
-    padding: 11px 23px;
-    min-height: 44px
+    min-height: 44px;
+    padding: 11px 23px
 }
 
 .lg__2723e {
-    padding: 15px 31px;
-    min-height: 56px
+    min-height: 56px;
+    padding: 15px 31px
 }
 
 .lg__2723e .text__2723e {
@@ -1914,9 +1903,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .primary__2723e {
-    color: var(--white);
     background-color: var(--button-filled-brand-background);
-    border-color: var(--button-filled-brand-border)
+    border-color: var(--button-filled-brand-border);
+    color: var(--white)
 }
 
 :where(.visual-refresh) .primary__2723e:hover {
@@ -1928,9 +1917,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .secondary__2723e {
-    color: var(--text-primary);
     background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint)
+    border-color: var(--border-faint);
+    color: var(--text-primary)
 }
 
 :where(.visual-refresh) .secondary__2723e:hover {
@@ -1942,9 +1931,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .tertiary__2723e {
-    color: var(--text-primary);
     background-color: transparent;
-    border-color: transparent
+    border-color: transparent;
+    color: var(--text-primary)
 }
 
 :where(.visual-refresh) .tertiary__2723e:hover {
@@ -1956,9 +1945,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .destructive-primary__2723e {
-    color: var(--white);
     background-color: var(--button-danger-background);
-    border-color: var(--button-danger-border)
+    border-color: var(--button-danger-border);
+    color: var(--white)
 }
 
 :where(.visual-refresh) .destructive-primary__2723e:hover {
@@ -1970,9 +1959,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .destructive-secondary__2723e {
-    color: var(--text-feedback-critical);
     background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint)
+    border-color: var(--border-faint);
+    color: var(--text-feedback-critical)
 }
 
 :where(.visual-refresh) .destructive-secondary__2723e:hover {
@@ -1984,9 +1973,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .active__2723e {
-    color: var(--white);
     background-color: var(--button-positive-background);
-    border-color: var(--button-positive-border)
+    border-color: var(--button-positive-border);
+    color: var(--white)
 }
 
 :where(.visual-refresh) .active__2723e:hover {
@@ -1998,9 +1987,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .overlay-primary__2723e {
-    color: var(--black);
     background-color: var(--white);
-    border-color: transparent
+    border-color: transparent;
+    color: var(--black)
 }
 
 :where(.visual-refresh) .overlay-primary__2723e:hover {
@@ -2012,9 +2001,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .overlay-secondary__2723e {
-    color: var(--white);
     background-color: rgba(0,0,0,.54);
-    border-color: transparent
+    border-color: transparent;
+    color: var(--white)
 }
 
 :where(.visual-refresh) .overlay-secondary__2723e:hover {
@@ -2039,14 +2028,13 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .linkedName__6b8b8:hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    cursor: pointer
+    cursor: pointer;
+    text-decoration: underline
 }
 
 .channelNameContainer__6b8b8 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .infoContainer__6b8b8 {
@@ -2054,38 +2042,37 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .draftBadgeContainer_ea81a9 {
+    background-color: var(--background-tertiary);
+    border-radius: 8px;
     display: flex;
     justify-content: center;
-    position: relative;
     margin-top: -20px;
-    padding: 2px;
-    background-color: var(--background-tertiary);
-    z-index: 1;
     overflow: hidden;
-    border-radius: 8px
+    padding: 2px;
+    position: relative;
+    z-index: 1
 }
 
 .tierName_ea81a9 {
-    margin-bottom: 16px;
     font-family: var(--font-display);
-    text-align: left
+    margin-bottom: 16px;
+    text-align: start
 }
 
 .tierImage_ea81a9 {
-    width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size);
-    height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size);
     border-radius: 50%;
-    -o-object-fit: cover;
+    height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size);
     object-fit: cover;
-    overflow: hidden
+    overflow: hidden;
+    width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size)
 }
 
 .tierPrice_ea81a9 {
-    margin-bottom: 2px;
-    margin-top: 16px;
-    font-weight: 600;
     color: var(--interactive-active);
-    font-size: 24px
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    margin-top: 16px
 }
 
 .tierPeriod_ea81a9,.tierPrice_ea81a9 {
@@ -2093,54 +2080,54 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .tierPeriod_ea81a9 {
-    text-transform: uppercase;
+    letter-spacing: .02em;
     margin-bottom: 16px;
-    letter-spacing: .02em
+    text-transform: uppercase
 }
 
-@media (max-width: 485px) {
+@media (max-width:485px) {
     .tierName_ea81a9 {
         margin-bottom: 4px
     }
 
     .tierImage_ea81a9 {
-        width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile;
-        height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile
+        height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile;
+        width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile
     }
 }
 
 .container_b27fdc {
-    flex-direction: row;
     align-items: center;
     align-self: stretch;
-    display: flex
+    display: flex;
+    flex-direction: row
 }
 
 .tierTextInfoContainer_b27fdc {
+    align-items: flex-start;
     flex: 1;
     flex-direction: column;
-    align-items: flex-start;
     margin-left: 16px
 }
 
 .tierPriceContainer_b27fdc {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .tierPrice_b27fdc {
     color: var(--header-secondary);
     font-size: 16px;
     height: 20px;
-    text-align: left
+    text-align: start
 }
 
 .toggleButton_b27fdc {
-    justify-content: flex-end;
-    width: 24px;
+    color: var(--interactive-normal);
     height: 24px;
-    color: var(--interactive-normal)
+    justify-content: flex-end;
+    width: 24px
 }
 
 .confirmationContainer_e64651 {
@@ -2148,9 +2135,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationHeader_e64651 {
-    text-align: center;
+    color: var(--header-secondary);
     margin-bottom: 8px;
-    color: var(--header-secondary)
+    text-align: center
 }
 
 .confirmationHeader_e64651 strong {
@@ -2162,10 +2149,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .openDiscordButton_e64651 {
-    margin-top: 24px;
+    font-weight: 600;
     margin-bottom: 8px;
-    width: 100%;
-    font-weight: 600
+    margin-top: 24px;
+    width: 100%
 }
 
 .doneButton_e64651 {
@@ -2176,9 +2163,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .container__24a95 {
-    display: flex;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    display: flex;
     padding: 16px
 }
 
@@ -2196,8 +2183,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .channelNameContainer__24a95 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .infoContainer__24a95 {
@@ -2205,22 +2192,22 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .caret__24a95 {
+    color: var(--interactive-normal);
     flex: 0 0 auto;
-    margin-left: 16px;
-    color: var(--interactive-normal)
+    margin-left: 16px
 }
 
 .headerContainer__4dd8e {
-    width: 100%;
     height: 146px;
-    position: relative
+    position: relative;
+    width: 100%
 }
 
 .headerEmpty__4dd8e {
     height: 10px;
+    left: 0;
     position: absolute;
-    top: 0;
-    left: 0
+    top: 0
 }
 
 .headerEmpty__4dd8e+.breadcrumb,.headerEmpty__4dd8e+.paymentModalContent {
@@ -2234,56 +2221,54 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .headerImage__4dd8e {
-    width: 100%;
     height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover
+    object-fit: cover;
+    width: 100%
 }
 
 .headerImageEmpty__4dd8e {
-    width: 100%;
+    background-color: var(--background-secondary);
     height: 100%;
-    background-color: var(--background-secondary)
+    width: 100%
 }
 
 .closeContainer__4dd8e {
-    width: 24px;
-    height: 24px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 16px;
-    right: 16px;
     background-color: var(--opacity-black-84);
     border-radius: 50%;
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 24px
 }
 
 .closeIcon__4dd8e {
-    width: 16px;
+    color: var(--interactive-normal);
     height: 16px;
-    color: var(--interactive-normal)
+    width: 16px
 }
 
 .tierImageContainer__4dd8e {
-    width: 80px;
-    height: 80px;
-    padding: 8px;
     background-color: var(--background-primary);
     border-radius: 50%;
-    position: absolute;
     bottom: -48px;
+    height: 80px;
     left: calc(50% - 48px);
+    padding: 8px;
+    position: absolute;
+    width: 80px;
     z-index: 1
 }
 
 .tierImage__4dd8e {
-    width: 100%;
-    height: 100%;
     border-radius: 50%;
-    -o-object-fit: cover;
-    object-fit: cover
+    height: 100%;
+    object-fit: cover;
+    width: 100%
 }
 
 .confirmationContainer__4dd8e {
@@ -2291,8 +2276,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationHeader__4dd8e {
-    text-align: center;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    text-align: center
 }
 
 .confirmationHeader__4dd8e strong {
@@ -2300,21 +2285,21 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationSubtitle__4dd8e {
-    text-align: center;
-    margin-bottom: 32px
+    margin-bottom: 32px;
+    text-align: center
 }
 
 .confirmationSectionLabel__4dd8e {
     font-family: var(--font-display);
+    letter-spacing: .02em;
     margin-bottom: 8px;
-    text-transform: uppercase;
-    letter-spacing: .02em
+    text-transform: uppercase
 }
 
 .confirmationBenefits__4dd8e {
-    gap: 8px;
     display: flex;
     flex-direction: column;
+    gap: 8px;
     margin-bottom: 20px
 }
 
@@ -2323,9 +2308,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .emojiBenefitsRow__4dd8e {
-    display: flex;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    display: flex;
     padding: 16px
 }
 
@@ -2338,11 +2323,11 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .container__3efc4 {
-    position: relative;
-    max-width: 320px;
+    border-radius: 8px;
     flex: 1;
+    max-width: 320px;
     overflow: hidden;
-    border-radius: 8px
+    position: relative
 }
 
 .cardContainerWithoutTopIndicator__3efc4 {
@@ -2353,10 +2338,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tierTrialIndicator__3efc4 {
     background-color: var(--brand-500);
-    padding-top: 4px;
-    padding-bottom: 4px;
+    color: var(--white-500);
     font-weight: 500;
-    color: var(--white-500)
+    padding-bottom: 4px;
+    padding-top: 4px
 }
 
 .tierTrialIndicatorIcon__3efc4 {
@@ -2365,19 +2350,19 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tierTopIndicator__3efc4 {
     display: flex;
-    justify-content: center;
     font-family: var(--font-display);
     font-size: 12px;
+    justify-content: center;
     line-height: 16px;
     text-transform: uppercase
 }
 
 .tierInfoContainer__3efc4 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 32px 16px 16px
+    padding: 32px 16px 16px;
+    text-align: center
 }
 
 .theme-light .tierInfoContainer__3efc4 {
@@ -2406,8 +2391,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .toggleTruncationButtonIcon__3efc4 {
-    width: 18px;
-    height: 18px
+    height: 18px;
+    width: 18px
 }
 
 .subscriptionPerks__3efc4 {
@@ -2416,10 +2401,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .roleMessagePreview__3efc4 {
-    padding: 12px 0;
     background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-accent);
     border-radius: 4px;
-    border: 1px solid var(--background-modifier-accent)
+    padding: 12px 0
 }
 
 .roleMessagePreview__3efc4:not(:last-child) {
@@ -2428,42 +2413,40 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .sectionHeader__3efc4 {
     font-family: var(--font-display);
-    text-transform: uppercase;
-    letter-spacing: .02em
+    letter-spacing: .02em;
+    text-transform: uppercase
 }
 
 .benefitsSection__3efc4:not(:last-child) {
     border-bottom: 1px solid var(--opacity-white-4);
-    padding-bottom: 16px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    padding-bottom: 16px
 }
 
 .benefitsList__3efc4 {
-    gap: 16px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    gap: 16px
 }
 
 .emojiList__3efc4 {
     display: grid;
-    grid-template-columns: repeat(9,1fr);
-    grid-gap: 9px 8px;
-    gap: 9px 8px
+    gap: 9px 8px;
+    grid-template-columns: repeat(9,1fr)
 }
 
 .emojiListEmoji__3efc4 {
-    -o-object-fit: contain;
     object-fit: contain
 }
 
 .divider__3efc4 {
-    margin: 16px 0;
-    width: 100%;
+    background-color: hsla(0,0%,100%,.06);
     height: 1px;
-    background-color: hsla(0,0%,100%,.06)
+    margin: 16px 0;
+    width: 100%
 }
 
-@media (max-width: 485px) {
+@media (max-width:485px) {
     .container__3efc4 {
         width: auto
     }
@@ -2552,8 +2535,8 @@ span.clanTag__07f91.isOverlay__07f91 {
     position: absolute;
     text-align: center;
     top: 4px;
-    word-break: break-word;
-    width: calc(100% - 8px)
+    width: calc(100% - 8px);
+    word-break: break-word
 }
 
 .content_e9b191 {
@@ -2597,8 +2580,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 .submenuWrapper_e9b191 {
     cursor: pointer;
     position: absolute;
-    top: 8px;
-    right: 8px
+    right: 8px;
+    top: 8px
 }
 
 .submenuIcon_e9b191 {
@@ -2615,4 +2598,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: var(--interactive-active)
 }
 
-/*# sourceMappingURL=2a2e362446c06506.css.map*/
+/*# sourceMappingURL=10c8c03ed886ad33.css.map*/

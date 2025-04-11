@@ -1,12 +1,12 @@
 /**
   Module ID: 77942
-  Original File Name: a2dea834a829fa45
+  Original File Name: 2a0961b4e178bcef
 **/
 .container_aea6af {
+    align-items: center;
     background-color: var(--background-tertiary);
     display: flex;
-    height: 44px;
-    align-items: center
+    height: 44px
 }
 
 .guildBoostingIcon_aea6af {
@@ -16,15 +16,15 @@
 }
 
 .subscribeButton_aea6af {
-    margin-left: auto;
-    font-weight: 600
+    font-weight: 600;
+    margin-left: auto
 }
 
 .notice_d37fb3 {
+    align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 4px;
-    display: flex;
-    align-items: center
+    display: flex
 }
 
 .noticeWithoutRightPadding_d37fb3 {
@@ -36,16 +36,16 @@
 }
 
 .noticeLeft_d37fb3 {
-    flex-grow: 1;
+    align-items: center;
     display: flex;
-    align-items: center
+    flex-grow: 1
 }
 
 .icon_d37fb3 {
-    width: 24px;
+    flex-shrink: 0;
     height: 24px;
     margin-right: 8px;
-    flex-shrink: 0
+    width: 24px
 }
 
 .text_d37fb3 {
@@ -55,8 +55,8 @@
 
 .nitroPreviewUpsell_c8eb34 {
     border-radius: 5px 5px 0 0;
-    padding-right: 0;
-    padding-left: 12px
+    padding-left: 12px;
+    padding-right: 0
 }
 
 .modal__038c3 {
@@ -64,30 +64,30 @@
 }
 
 .modalContent__038c3 {
-    padding-left: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    padding-left: 0
 }
 
 .previewContainerParent__038c3 {
-    padding: var(--spacing-32);
-    padding-bottom: 0;
+    background: var(--background-secondary);
     margin-bottom: -12px;
-    background: var(--background-secondary)
+    padding: var(--spacing-32);
+    padding-bottom: 0
 }
 
 .previewContainer__038c3 {
-    width: 240px;
-    text-align: left
+    text-align: start;
+    width: 240px
 }
 
 .container__0c185 {
-    border-radius: var(--radius-xs);
-    background: var(--background-secondary-alt)
+    background: var(--background-secondary-alt);
+    border-radius: var(--radius-xs)
 }
 
 .modalHeader__57752 {
-    padding-bottom: 0;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-bottom: 0
 }
 
 .modalCloseButton__57752 {
@@ -102,18 +102,18 @@
 }
 
 .editingContainer__57752 {
-    position: relative;
-    overflow: hidden;
     background-color: var(--black-500);
     border-radius: var(--radius-sm);
-    min-height: 300px;
     height: 400px;
-    max-height: 500px
+    max-height: 500px;
+    min-height: 300px;
+    overflow: hidden;
+    position: relative
 }
 
 .editingContainer__57752,.errorContainer__57752 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -123,10 +123,10 @@
 }
 
 .image__57752 {
+    cursor: grab;
     height: 100%;
     pointer-events: all;
-    position: absolute;
-    cursor: grab
+    position: absolute
 }
 
 .rotationSupported__57752 {
@@ -147,12 +147,12 @@
 }
 
 .overlay__57752 {
-    z-index: 1;
     border: 5px solid var(--white-500);
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6);
     box-sizing: border-box;
     pointer-events: none;
     position: absolute;
-    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
+    z-index: 1
 }
 
 .overlayAvatar__57752 {
@@ -164,34 +164,34 @@
 
 .sliderContainer__57752 {
     justify-content: center;
-    width: 90%;
-    margin: 20px auto
+    margin: 20px auto;
+    width: 90%
 }
 
 .sliderContainer__57752,.toolsContainer__57752 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .toolsContainer__57752 {
-    padding: 18px 0 18px 36px;
-    margin: 0 -6px
+    margin: 0 -6px;
+    padding: 18px 0 18px 36px
 }
 
 .zoomControls__57752 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     -moz-column-gap: 8px;
     column-gap: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     margin: 0 auto
 }
 
 .zoomIcon__57752 {
-    width: 24px;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    width: 24px
 }
 
 .slider__57752 {
@@ -200,13 +200,13 @@
 
 .rotateButton__57752 {
     box-sizing: content-box;
-    position: relative;
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-    padding: 6px;
     color: var(--interactive-normal);
-    transition: color var(--custom-button-transition-duration) ease
+    cursor: pointer;
+    height: 24px;
+    padding: 6px;
+    position: relative;
+    transition: color var(--custom-button-transition-duration) ease;
+    width: 24px
 }
 
 .rotateButton__57752:hover {
@@ -214,16 +214,16 @@
 }
 
 .premiumUpsell__57752 {
+    border-radius: var(--radius-sm);
     margin: -4px 0 0;
-    margin-bottom: var(--spacing-16);
-    border-radius: var(--radius-sm)
+    margin-bottom: var(--spacing-16)
 }
 
 .modalFooter__57752 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    gap: var(--spacing-16)
+    gap: var(--spacing-16);
+    justify-content: flex-end
 }
 
 .linkButton__57752 {
@@ -239,4 +239,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=a2dea834a829fa45.css.map*/
+/*# sourceMappingURL=2a0961b4e178bcef.css.map*/

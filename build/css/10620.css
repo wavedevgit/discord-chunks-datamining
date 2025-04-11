@@ -1,21 +1,21 @@
 /**
   Module ID: 10620
-  Original File Name: ec0828ff7c4c1bf5
+  Original File Name: 5a96cde8773cb27f
 **/
 .root__66e7e {
-    border-radius: 8px;
     background: var(--background-secondary);
+    border-radius: 8px;
     overflow: hidden
 }
 
 .option__66e7e {
+    align-items: center;
+    border-bottom: 1px solid var(--background-modifier-accent);
+    color: var(--interactive-active);
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: var(--interactive-active);
-    padding: 12px;
-    cursor: pointer;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    padding: 12px
 }
 
 .option__66e7e:hover {
@@ -33,10 +33,10 @@
 
 .caret__66e7e {
     color: var(--interactive-normal);
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
-    margin-left: 8px
+    height: 24px;
+    margin-left: 8px;
+    width: 24px
 }
 
 .visual-refresh .root__66e7e {
@@ -63,8 +63,8 @@
 
 .modalCloseButton__6c12c {
     position: absolute;
-    top: var(--custom-feedback-modal-close-button-margin);
-    right: var(--custom-feedback-modal-close-button-margin)
+    right: var(--custom-feedback-modal-close-button-margin);
+    top: var(--custom-feedback-modal-close-button-margin)
 }
 
 .helpdeskLink__6c12c {
@@ -77,8 +77,8 @@
 }
 
 .ratingBody__6c12c {
-    margin-top: var(--space-8);
-    color: var(--text-normal)
+    color: var(--text-normal);
+    margin-top: var(--space-8)
 }
 
 .footer__6c12c {
@@ -86,8 +86,8 @@
 }
 
 .problemInfo__6c12c {
-    margin-top: var(--space-8);
-    margin-bottom: var(--space-24)
+    margin-bottom: var(--space-24);
+    margin-top: var(--space-8)
 }
 
 .ratingSelectorContainer__6c12c {
@@ -164,4 +164,4 @@
     padding: var(--modal-vertical-padding) var(--modal-horizontal-padding)
 }
 
-/*# sourceMappingURL=ec0828ff7c4c1bf5.css.map*/
+/*# sourceMappingURL=5a96cde8773cb27f.css.map*/

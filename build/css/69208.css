@@ -1,6 +1,6 @@
 /**
   Module ID: 69208
-  Original File Name: 28cad125de653fe7
+  Original File Name: f51055077f7ae667
 **/
 .content__5003d {
     display: flex;
@@ -8,10 +8,10 @@
 }
 
 .header__5003d {
+    align-self: center;
     margin-top: 32px;
-    text-align: center;
     max-width: 280px;
-    align-self: center
+    text-align: center
 }
 
 .body__5003d {
@@ -28,12 +28,12 @@
 
 .closeButton__5003d {
     position: absolute;
-    top: 20px;
-    right: 20px
+    right: 20px;
+    top: 20px
 }
 
 .soundWheel__5003d {
     margin-bottom: 32px
 }
 
-/*# sourceMappingURL=28cad125de653fe7.css.map*/
+/*# sourceMappingURL=f51055077f7ae667.css.map*/

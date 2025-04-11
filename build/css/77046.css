@@ -1,18 +1,18 @@
 /**
   Module ID: 77046
-  Original File Name: 86416f59d8bf1719
+  Original File Name: 88c06e3b94637dc9
 **/
 .animation_bdbb1b {
     height: 150px;
-    margin-top: 24px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    margin-top: 24px
 }
 
 .modalContent_bdbb1b {
-    margin: 24px;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center
+    margin: 24px
 }
 
 .subheader_bdbb1b {
@@ -20,10 +20,10 @@
 }
 
 .icon_bdbb1b {
-    width: 24px;
-    height: 24px;
+    align-self: flex-start;
     flex-shrink: 0;
-    align-self: flex-start
+    height: 24px;
+    width: 24px
 }
 
 .wandIcon_bdbb1b {
@@ -39,20 +39,20 @@
 }
 
 .listContainer_bdbb1b {
-    margin-top: 16px;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 8px 16px;
-    border-radius: 8px;
-    background-color: var(--background-secondary)
+    margin-top: 16px;
+    padding: 8px 16px
 }
 
 .listItem_bdbb1b {
+    align-items: center;
     display: flex;
     gap: 8px;
-    margin: 8px 0;
-    align-items: center
+    margin: 8px 0
 }
 
 .modalFooter_bdbb1b {
@@ -69,9 +69,9 @@
 }
 
 .visual-refresh .listContainer_bdbb1b {
-    box-sizing: border-box;
     background-color: var(--background-surface-higher);
     border: 1px solid var(--border-subtle);
+    box-sizing: border-box;
     width: 100%
 }
 
@@ -79,4 +79,4 @@
     background-color: var(--border-faint)
 }
 
-/*# sourceMappingURL=86416f59d8bf1719.css.map*/
+/*# sourceMappingURL=88c06e3b94637dc9.css.map*/

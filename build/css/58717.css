@@ -1,11 +1,11 @@
 /**
   Module ID: 58717
-  Original File Name: 324728657e333f9f
+  Original File Name: 1b88367208dfb6b4
 **/
 .header__7c901 {
-    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 16px 0
 }
 
 .subtitle__7c901 {
@@ -13,10 +13,10 @@
 }
 
 .closeButton__7c901 {
-    z-index: 1000;
     position: absolute;
+    right: 12px;
     top: 12px;
-    right: 12px
+    z-index: 1000
 }
 
 .content__7c901 {
@@ -48,15 +48,15 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemContainer__7c901 {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
-    background-color: var(--background-primary);
-    margin-bottom: 8px;
-    display: flex;
     align-items: center;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    padding: 0 0 0 8px
+    display: flex;
+    margin-bottom: 8px;
+    padding: 0 0 0 8px;
+    width: 100%
 }
 
 .listItemContainer__7c901:hover {
@@ -72,22 +72,21 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemIcon__7c901 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     margin: 8px 8px 8px 16px
 }
 
 .listItemText__7c901 {
+    margin-left: 8px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 8px
+    text-overflow: ellipsis
 }
 
 .listItemArrow__7c901 {
-    margin-left: auto;
-    margin-right: 16px;
+    color: var(--interactive-normal);
     height: 50px;
-    color: var(--interactive-normal)
+    margin-left: auto;
+    margin-right: 16px
 }
 
-/*# sourceMappingURL=324728657e333f9f.css.map*/
+/*# sourceMappingURL=1b88367208dfb6b4.css.map*/

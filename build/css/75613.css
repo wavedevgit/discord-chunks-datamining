@@ -1,11 +1,11 @@
 /**
   Module ID: 75613
-  Original File Name: eb8806d53ab83848
+  Original File Name: 9c3c7949f2ea033a
 **/
 .perkRow_c609c8 {
     align-items: center;
-    display: flex;
     border-bottom: 1px solid var(--channeltextarea-background);
+    display: flex;
     margin: 0 16px;
     padding: 16px 0
 }
@@ -47,8 +47,8 @@
 }
 
 .premiumTrialBadge__7b551 {
-    position: absolute;
     left: 50%;
+    position: absolute;
     top: 20px;
     transform: translateX(-50%)
 }
@@ -107,8 +107,8 @@
 
 .footer__7b551 {
     align-items: center;
-    justify-content: flex-end;
-    flex-direction: row
+    flex-direction: row;
+    justify-content: flex-end
 }
 
-/*# sourceMappingURL=eb8806d53ab83848.css.map*/
+/*# sourceMappingURL=9c3c7949f2ea033a.css.map*/

@@ -1,34 +1,34 @@
 /**
   Module ID: 67071
-  Original File Name: 70a41d412a5f6b02
+  Original File Name: 4828880a875254c7
 **/
 .content__72a27 {
+    color: var(--text-normal);
+    margin-bottom: -2px;
     margin-top: -5px;
     padding-left: 31.5px;
     padding-right: 43.5px;
-    margin-bottom: -2px;
-    color: var(--text-normal);
     z-index: 0
 }
 
 .content__72a27.fullHeight__72a27 {
     display: flex;
-    flex-direction: column;
-    flex: 1
+    flex: 1;
+    flex-direction: column
 }
 
 .innerContent__72a27 {
-    padding: 20px;
+    box-shadow: var(--shadow-high);
     max-width: 250px;
+    padding: 20px;
     width: 100%;
-    z-index: -1;
-    box-shadow: var(--shadow-high)
+    z-index: -1
 }
 
 .innerContent__72a27.fullHeight__72a27 {
     display: flex;
-    flex-direction: column;
-    flex: 1
+    flex: 1;
+    flex-direction: column
 }
 
 .bottom__72a27 {
@@ -37,8 +37,8 @@
 
 .contentAnimContainer__72a27.fullHeight__72a27 {
     display: flex;
-    flex-direction: column;
-    flex: 1
+    flex: 1;
+    flex-direction: column
 }
 
 .container__72a27 {
@@ -79,77 +79,81 @@
 
 .overviewSidebarWrapper__66682.fullHeight__66682 {
     display: flex;
-    flex-direction: column;
-    flex: 1
+    flex: 1;
+    flex-direction: column
 }
 
 .scrollBg__66682 {
-    opacity: .8;
-    position: absolute;
-    top: 0;
-    left: 24px;
-    right: 24px;
-    bottom: 0;
     background-color: var(--background-secondary);
     border-radius: 20px;
-    box-shadow: var(--elevation-high)
+    bottom: 0;
+    box-shadow: var(--elevation-high);
+    left: 24px;
+    opacity: .8;
+    position: absolute;
+    right: 24px;
+    top: 0
 }
 
 .scrollBg__66682 .scrollBgTop__66682 {
+    background-color: var(--background-secondary);
     left: 0;
     right: -24px;
-    top: 0;
-    background-color: var(--background-secondary)
+    top: 0
 }
 
 .scrollBg__66682 .scrollBgTop__66682,.scrollBg__66682 .scrollBgTop__66682:before {
-    position: absolute;
-    height: 36px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px
+    border-top-right-radius: 20px;
+    height: 36px;
+    position: absolute
 }
 
 .scrollBg__66682 .scrollBgTop__66682:before {
-    content: "";
     background-color: var(--background-tertiary);
     bottom: 0;
+    content: "";
     right: 0;
     width: 24px
 }
 
 .scrollBg__66682 .scrollBgBottom__66682 {
-    left: -20px;
-    background-color: var(--background-tertiary)
+    background-color: var(--background-tertiary);
+    left: -20px
 }
 
 .scrollBg__66682 .scrollBgBottom__66682,.scrollBg__66682 .scrollBgBottom__66682:after {
-    position: absolute;
-    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     bottom: 0;
     height: 36px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px
+    position: absolute;
+    right: 0
 }
 
 .scrollBg__66682 .scrollBgBottom__66682:after {
-    content: "";
     background-color: var(--background-secondary);
+    content: "";
     width: 24px
 }
 
 .signatureBlock__66682 {
     border-bottom: 1px solid var(--border-strong);
     color: var(--border-strong);
-    padding: 0 8px;
-    margin-bottom: 20px
+    flex: 1;
+    margin-bottom: 20px;
+    padding: 0 8px
 }
 
 .signatureBlock__66682,.signatureContainer__66682 {
-    flex: 1;
-    display: flex;
     align-items: flex-end;
+    display: flex;
     flex-direction: row;
     gap: 8px
+}
+
+.signatureContainer__66682 {
+    flex: 1
 }
 
 .signatureText__66682 {
@@ -171,8 +175,8 @@
 }
 
 .signHintAnimationContainer__66682 {
-    position: absolute;
-    gap: 12px
+    gap: 12px;
+    position: absolute
 }
 
 .signContainerButton__66682 {
@@ -181,9 +185,9 @@
 }
 
 .signTextLeft__66682 {
-    top: -24px;
     align-items: flex-end;
-    text-align: right
+    text-align: right;
+    top: -24px
 }
 
 .signTextLeft__66682 .signButton__66682 {
@@ -191,13 +195,13 @@
 }
 
 .signTextLeft__66682 .signButton__66682 .signCarot__66682 {
-    position: absolute;
-    transform: rotate(45deg);
-    height: 0;
-    width: 0;
     border: 8px solid;
+    height: 0;
+    position: absolute;
     right: -5px;
-    transition: border-color .25s
+    transform: rotate(45deg);
+    transition: border-color .25s;
+    width: 0
 }
 
 .signTextLeft__66682 .signButton__66682 .signCarotCustomColors__66682 {
@@ -221,13 +225,13 @@
 }
 
 .signTextRight__66682 .signButton__66682 .signCarot__66682 {
+    border: 8px solid;
+    height: 0;
+    left: -5px;
     position: absolute;
     transform: rotate(45deg);
-    height: 0;
-    width: 0;
-    border: 8px solid;
-    left: -5px;
-    transition: border-color .25s
+    transition: border-color .25s;
+    width: 0
 }
 
 .signTextRight__66682 .signButton__66682 .signCarotCustomColors__66682 {
@@ -251,9 +255,9 @@
 }
 
 .signHintContainer__66682 {
+    height: 0;
     position: relative;
-    width: 0;
-    height: 0
+    width: 0
 }
 
 .noDisplay__66682 {
@@ -265,37 +269,37 @@
 }
 
 .previewSection__9ab62 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
     background-color: var(--bg-base-tertiary);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%
 }
 
 .previewSection__9ab62 .chatPreview__9ab62 {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    display: flex;
     flex: 1;
-    gap: 8px
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px 16px
 }
 
 .previewSection__9ab62 .chatPreview__9ab62 .previewText__9ab62 {
     display: flex;
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
     gap: 4px
 }
 
 .previewSection__9ab62 .chatPreview__9ab62 .userName__9ab62 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     color: var(--header-primary);
+    display: flex;
+    flex-direction: row;
     font-weight: 600;
     gap: 4px
 }
@@ -313,22 +317,22 @@
 }
 
 .settingSection__9ab62 {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
     justify-content: space-between;
-    flex: 1
+    padding: 12px 16px
 }
 
 .scrollBg_f8a1b1 {
-    position: absolute;
-    top: 24px;
-    left: 36px;
-    right: 52px;
-    bottom: 48px;
     border-radius: 20px;
-    box-shadow: var(--shadow-high)
+    bottom: 48px;
+    box-shadow: var(--shadow-high);
+    left: 36px;
+    position: absolute;
+    right: 52px;
+    top: 24px
 }
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
@@ -338,37 +342,37 @@
 }
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1,.scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
-    position: absolute;
-    height: 36px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px
+    border-top-right-radius: 20px;
+    height: 36px;
+    position: absolute
 }
 
 .scrollBg_f8a1b1 .scrollBgTop_f8a1b1:before {
-    content: "";
+    background-color: var(--background-tertiary);
     bottom: 0;
+    content: "";
     right: 0;
-    width: 24px;
-    background-color: var(--background-tertiary)
+    width: 24px
 }
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1 {
-    left: -20px;
-    background-color: var(--background-tertiary)
+    background-color: var(--background-tertiary);
+    left: -20px
 }
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1,.scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
-    position: absolute;
-    right: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     bottom: 0;
     height: 36px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px
+    position: absolute;
+    right: 0
 }
 
 .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
-    content: "";
     background-color: var(--background-secondary);
+    content: "";
     width: 24px
 }
 
@@ -385,17 +389,17 @@
 
 .overviewText_f8a1b1 {
     font-family: var(--font-clan-body);
-    font-weight: 300;
     font-size: 14px;
+    font-weight: 300;
     line-height: 20px;
-    text-overflow: ellipsis;
+    margin-bottom: 24px;
     max-width: 240px;
-    margin-bottom: 24px
+    text-overflow: ellipsis
 }
 
 .overviewText_f8a1b1 strong {
-    font-weight: 300;
-    color: var(--interactive-active)
+    color: var(--interactive-active);
+    font-weight: 300
 }
 
 .overviewHeaderPrelude_f8a1b1 {
@@ -413,25 +417,25 @@
 
 .placeholderIcon_f8a1b1 {
     color: var(--interactive-normal);
-    margin-bottom: 24px;
-    height: 42px
+    height: 42px;
+    margin-bottom: 24px
 }
 
 .charterClanTag_f8a1b1 {
-    border: 1px solid var(--border-subtle);
-    background-color: var(--bg-base-tertiary);
-    box-shadow: var(--shadow-low);
-    padding: 8px 12px;
-    margin-bottom: 24px;
-    border-radius: 8px;
-    display: flex;
     align-self: flex-start;
-    margin-top: 0
+    background-color: var(--bg-base-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    box-shadow: var(--shadow-low);
+    display: flex;
+    margin-bottom: 24px;
+    margin-top: 0;
+    padding: 8px 12px
 }
 
 .charterClanTag_f8a1b1>span {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .charterClanBadge_f8a1b1 {
@@ -439,23 +443,23 @@
 }
 
 .signatureBlock_f8a1b1 {
-    flex: 1;
-    display: flex;
     align-items: flex-end;
     border-bottom: 1px solid var(--border-strong);
+    color: var(--border-strong);
+    display: flex;
+    flex: 1;
     flex-direction: row;
     gap: 8px;
-    color: var(--border-strong);
-    padding: 0 8px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    padding: 0 8px
 }
 
 .signatureText_f8a1b1 {
+    color: var(--border-strong);
     font-family: var(--font-clan-signature);
     font-size: 32px;
     font-weight: 400;
     line-height: 32px;
-    color: var(--border-strong);
     margin-bottom: -4px
 }
 
@@ -463,48 +467,64 @@
     cursor: pointer
 }
 
-.theme-light .scrollBg_f8a1b1,.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1 {
     background-color: var(--background-primary)
 }
 
-.theme-dark .scrollBg_f8a1b1,.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after,.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+.theme-light .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    background-color: var(--background-primary)
+}
+
+.theme-light .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
+    background-color: var(--background-primary)
+}
+
+.theme-dark .scrollBg_f8a1b1 {
+    background-color: var(--background-secondary)
+}
+
+.theme-dark .scrollBg_f8a1b1 .scrollBgTop_f8a1b1 {
+    background-color: var(--background-secondary)
+}
+
+.theme-dark .scrollBg_f8a1b1 .scrollBgBottom_f8a1b1:after {
     background-color: var(--background-secondary)
 }
 
 .modal__0870d {
     background-color: var(--bg-surface-overlay);
-    border-radius: var(--radius-md);
     border: 1px solid var(--border-faint);
+    border-radius: var(--radius-md);
     max-width: 960px;
     min-height: 500px
 }
 
 .content__0870d {
-    flex-direction: row;
-    padding: 32px;
-    text-align: center;
     border-radius: var(--radius-md);
-    gap: 88px
+    flex-direction: row;
+    gap: 88px;
+    padding: 32px;
+    text-align: center
 }
 
 .content__0870d,.infoSide__0870d {
-    display: flex;
-    align-items: flex-start
+    align-items: flex-start;
+    display: flex
 }
 
 .infoSide__0870d {
+    flex: 1;
     flex-direction: column;
     gap: 40px;
-    padding-top: 46px;
-    flex: 1;
-    max-width: 480px
+    max-width: 480px;
+    padding-top: 46px
 }
 
 .infoSide__0870d .titlesContainer__0870d {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    gap: 16px
+    gap: 16px;
+    text-align: left
 }
 
 .infoSide__0870d .titlesContainer__0870d .subtitle__0870d,.infoSide__0870d .titlesContainer__0870d .title__0870d {
@@ -512,37 +532,37 @@
 }
 
 .infoSide__0870d .previewSection__0870d {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
     background-color: var(--bg-base-tertiary);
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    width: 100%;
-    box-sizing: border-box
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%
 }
 
 .infoSide__0870d .previewSection__0870d .chatPreview__0870d {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    display: flex;
     flex: 1;
-    gap: 8px
+    flex-direction: row;
+    gap: 8px;
+    padding: 12px 16px
 }
 
 .infoSide__0870d .previewSection__0870d .chatPreview__0870d .previewText__0870d {
     display: flex;
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
     gap: 4px
 }
 
 .infoSide__0870d .previewSection__0870d .chatPreview__0870d .userName__0870d {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     color: var(--header-primary);
+    display: flex;
+    flex-direction: row;
     font-weight: 600
 }
 
@@ -554,17 +574,17 @@
 }
 
 .clanTagChiplet__0870d {
-    padding: 8px;
-    margin: 0;
     border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    margin: 0;
+    padding: 8px
 }
 
 .clanTagChiplet__0870d>span {
-    gap: 4px;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center
+    gap: 4px
 }
 
 .clanTagChiplet__0870d>span>img {
@@ -573,17 +593,17 @@
 
 .scrollMainContainer__0870d {
     display: flex;
-    flex-direction: column;
-    flex: 0 0 320px
+    flex: 0 0 320px;
+    flex-direction: column
 }
 
 .scrollContentsContainer__0870d {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
+    gap: 24px;
     text-align: left;
-    gap: 24px
+    width: 100%
 }
 
 .gameSection__0870d {
@@ -592,8 +612,8 @@
 
 .charterHeaderText__0870d {
     font-family: var(--font-clan-body);
-    font-weight: 300;
     font-size: 24px;
+    font-weight: 300;
     line-height: 28px
 }
 
@@ -618,22 +638,22 @@
 }
 
 .settingSection__0870d {
-    padding: 12px 16px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
     justify-content: space-between;
-    flex: 1
+    padding: 12px 16px
 }
 
 .ctaButton__0870d {
-    position: absolute;
     bottom: 32px;
-    left: 32px;
-    max-width: 120px;
+    filter: grayscale(.6);
     flex: auto;
     flex-grow: 0;
-    filter: grayscale(.6);
+    left: 32px;
+    max-width: 120px;
+    position: absolute;
     transition: filter 1s
 }
 
@@ -642,10 +662,10 @@
 }
 
 .ctaButton__0870d .ctaButtonInner__0870d {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 4px
 }
 
-/*# sourceMappingURL=70a41d412a5f6b02.css.map*/
+/*# sourceMappingURL=4828880a875254c7.css.map*/

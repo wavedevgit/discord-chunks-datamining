@@ -1,10 +1,10 @@
 /**
   Module ID: 22482
-  Original File Name: a0c56872b1201c08
+  Original File Name: dd3841ffbdfbe470
 **/
 .modal_a8217b {
-    min-height: 400px;
     height: 60vh;
+    min-height: 400px;
     width: 600px
 }
 
@@ -17,16 +17,16 @@
     box-sizing: border-box;
     cursor: default;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    overflow: auto;
-    flex: 1
+    overflow: auto
 }
 
 .header_a8217b {
+    align-items: center;
     background-color: var(--background-tertiary);
     display: flex;
     height: 48px;
-    align-items: center;
     min-height: 48px;
     padding: 0 16px
 }
@@ -51,4 +51,4 @@
     color: var(--interactive-hover)
 }
 
-/*# sourceMappingURL=a0c56872b1201c08.css.map*/
+/*# sourceMappingURL=dd3841ffbdfbe470.css.map*/

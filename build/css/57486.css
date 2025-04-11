@@ -1,6 +1,6 @@
 /**
   Module ID: 57486
-  Original File Name: f04fe216e5933178
+  Original File Name: 661b383c7b56d7ad
 **/
 .noScroll_afb566 {
     overflow-y: visible!important;
@@ -19,8 +19,7 @@
 }
 
 .innerSequencer_afb566,.sequencer_afb566 {
-    overflow: visible;
-    overflow: initial;
+    overflow: unset;
     overflow-y: visible
 }
 
@@ -35,15 +34,14 @@
 }
 
 .overviewSidebar_afb566 {
-    justify-content: space-between;
+    background: linear-gradient(180deg,hsl(254,calc(var(--saturation-factor, 1)*92%),53%) 6.65%,hsl(246,calc(var(--saturation-factor, 1)*82%),62%) 69.44%,hsl(239,calc(var(--saturation-factor, 1)*77%),66%) 106.24%);
+    border-radius: 4px 0 0 4px;
     flex-basis: 192px;
     flex-shrink: 0;
-    border-radius: 4px 0 0 4px;
-    background: linear-gradient(180deg,hsl(254,calc(1*92%),53%) 6.65%,hsl(246,calc(1*82%),62%) 69.44%,hsl(239,calc(1*77%),66%) 106.24%);
-    background: linear-gradient(180deg,hsl(254,calc(var(--saturation-factor, 1)*92%),53%) 6.65%,hsl(246,calc(var(--saturation-factor, 1)*82%),62%) 69.44%,hsl(239,calc(var(--saturation-factor, 1)*77%),66%) 106.24%);
-    padding: 24px;
+    justify-content: space-between;
+    margin: -1px 1px 0 -1px;
     overflow: hidden;
-    margin: -1px 1px 0 -1px
+    padding: 24px
 }
 
 .header_afb566 {
@@ -52,16 +50,16 @@
 
 .closeButton_afb566 {
     position: absolute;
-    top: 12px;
     right: 0;
+    top: 12px;
     z-index: 2
 }
 
 .footer_afb566 {
     display: flex;
+    flex: 0 0 auto;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    flex: 0 0 auto
+    justify-content: space-between
 }
 
 .overviewSteps_afb566 {
@@ -71,8 +69,8 @@
 }
 
 .overviewStep_afb566 {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 16px
 }
 
@@ -81,24 +79,24 @@
 }
 
 .stepIndex_afb566 {
-    border-radius: 50%;
-    background-color: var(--opacity-white-16);
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
-    display: flex;
     align-items: center;
-    justify-content: center
+    background-color: var(--opacity-white-16);
+    border-radius: 50%;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    margin-right: 8px;
+    width: 24px
 }
 
 .selected_afb566 .stepTitle_afb566 {
-    font-weight: 700;
-    color: var(--white-500)
+    color: var(--white-500);
+    font-weight: 700
 }
 
 .selected_afb566 .stepIndex_afb566 {
-    color: var(--brand-500);
-    background-color: var(--white-500)
+    background-color: var(--white-500);
+    color: var(--brand-500)
 }
 
 .container_ef2eb4 {
@@ -126,14 +124,14 @@
 }
 
 .header_ef2eb4 {
-    margin-top: 20px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    margin-top: 20px
 }
 
 .closeButton_ef2eb4 {
     position: absolute;
-    top: 16px;
-    right: 12px
+    right: 12px;
+    top: 16px
 }
 
 .footer_ef2eb4 {
@@ -152,7 +150,6 @@
 }
 
 .footerImage_ef2eb4 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     transform: translate(60px,20px)
 }
@@ -166,29 +163,29 @@
 }
 
 .formTitle_ef2eb4 {
-    margin-bottom: 8px;
-    font-weight: 700
+    font-weight: 700;
+    margin-bottom: 8px
 }
 
 .checklistRow_ef2eb4 {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-top: 8px
 }
 
 .checklistIcon_ef2eb4 {
-    width: 18px;
-    margin-right: 8px
+    margin-right: 8px;
+    width: 18px
 }
 
 .roleRow_ef2eb4 {
+    align-items: center;
+    background: var(--background-modifier-selected);
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-left: 4px;
-    padding: 4px 6px 4px 5px;
-    border-radius: 4px;
-    background: var(--background-modifier-selected)
+    padding: 4px 6px 4px 5px
 }
 
 .roleDot_ef2eb4 {
@@ -210,9 +207,9 @@
 }
 
 .tableContainer_ef2eb4 {
-    padding: 16px 20px;
     background-color: var(--background-secondary);
-    border-radius: 4px
+    border-radius: 4px;
+    padding: 16px 20px
 }
 
 .tableHeader_ef2eb4 {
@@ -223,9 +220,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 32px;
-    grid-row-gap: 8px;
-    row-gap: 8px;
-    margin-top: 8px
+    margin-top: 8px;
+    row-gap: 8px
 }
 
 .permissionRow_ef2eb4 {
@@ -233,12 +229,12 @@
 }
 
 .bullet_ef2eb4 {
-    width: 6px;
-    height: 6px;
     align-self: center;
-    border-radius: 50%;
     background-color: var(--background-accent);
-    margin-right: 8px
+    border-radius: 50%;
+    height: 6px;
+    margin-right: 8px;
+    width: 6px
 }
 
 .bulletWarning_ef2eb4 {
@@ -250,4 +246,4 @@
     margin-left: 16px
 }
 
-/*# sourceMappingURL=f04fe216e5933178.css.map*/
+/*# sourceMappingURL=661b383c7b56d7ad.css.map*/

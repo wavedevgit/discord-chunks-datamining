@@ -1,14 +1,14 @@
 /**
   Module ID: 68464
-  Original File Name: 4b27e3372493029c
+  Original File Name: ed89e32cc55d5bf8
 **/
 .classificationEvidenceCard_f57acb {
     background: var(--channeltextarea-background);
+    border: 1px solid var(--bg-base-tertiary);
     border-radius: var(--radius-sm);
-    padding: 20px var(--spacing-8) 20px var(--spacing-8);
     display: flex;
     flex-direction: row;
-    border: 1px solid var(--bg-base-tertiary)
+    padding: 20px var(--spacing-8) 20px var(--spacing-8)
 }
 
 .classificationEvidenceMessageAttachment_f57acb {
@@ -18,8 +18,8 @@
 .classificationEvidenceContainer_a2ffaf {
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-40);
-    gap: var(--spacing-12)
+    gap: var(--spacing-12);
+    margin-top: var(--spacing-40)
 }
 
 .visual-refresh .classificationEvidenceContainer_a2ffaf {
@@ -41,28 +41,28 @@
 }
 
 .classificationActionsTakenCard_a48d6b {
-    margin-top: 14px;
     border-radius: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px
+    margin-top: 14px;
+    padding-bottom: 8px;
+    padding-top: 8px
 }
 
 .classificationActionsTakenRow_a48d6b {
     color: var(--text-primary);
     display: list-item;
-    margin-top: 10px;
-    margin-left: 4px
+    margin-left: 4px;
+    margin-top: 10px
 }
 
 .classificationActionsTakenRowIcon_a48d6b {
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
-    width: 24px;
+    display: flex;
     height: 24px;
-    margin-right: 12px
+    justify-content: center;
+    margin-right: 12px;
+    width: 24px
 }
 
 .classificationActionsTakenList_a48d6b {
@@ -90,17 +90,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 22px;
-    margin-bottom: 22px
+    margin-bottom: 22px;
+    margin-top: 22px
 }
 
 .classificationPolicyCard_a48d6b {
-    margin-top: 14px;
+    align-items: center;
     background: var(--bg-base-secondary);
     border-radius: 8px;
-    padding: var(--spacing-12) var(--spacing-16);
     display: flex;
-    align-items: center
+    margin-top: 14px;
+    padding: var(--spacing-12) var(--spacing-16)
 }
 
 .classificationPolicyCard_a48d6b:hover {
@@ -108,13 +108,13 @@
 }
 
 .classificationPolicyCardIcon_a48d6b {
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 200px;
-    width: 40px;
-    height: 40px
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px
 }
 
 .classificationPolicyDescriptionContainer_a48d6b {
@@ -146,9 +146,9 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
 }
 
 .image__859a7 {
-    width: 141px;
+    filter: var(--shadow-ledge-filter);
     margin: -40px auto 12px;
-    filter: var(--shadow-ledge-filter)
+    width: 141px
 }
 
 .modalRoot__859a7 {
@@ -183,4 +183,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=4b27e3372493029c.css.map*/
+/*# sourceMappingURL=ed89e32cc55d5bf8.css.map*/

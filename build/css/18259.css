@@ -1,14 +1,14 @@
 /**
   Module ID: 18259
-  Original File Name: 7d66cb1fb271ea33
+  Original File Name: 8c76c250c43837cf
 **/
 .spacing_b3ae06 {
     margin-bottom: 20px
 }
 
 .card_b3ae06 {
-    padding: 10px;
-    line-height: 20px
+    line-height: 20px;
+    padding: 10px
 }
 
 .error_b3ae06 {
@@ -19,4 +19,4 @@
     color: var(--white-500)
 }
 
-/*# sourceMappingURL=7d66cb1fb271ea33.css.map*/
+/*# sourceMappingURL=8c76c250c43837cf.css.map*/

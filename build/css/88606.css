@@ -1,11 +1,11 @@
 /**
   Module ID: 88606
-  Original File Name: 9a4a6b64e2ce40a3
+  Original File Name: 5aaf15bcf48f4fb0
 **/
 .videoPaused_afb275 {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    align-items: center
+    justify-content: left
 }
 
 .warningCircle_afb275 {
@@ -13,13 +13,13 @@
 }
 
 .roleRow_b82947 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=9a4a6b64e2ce40a3.css.map*/
+/*# sourceMappingURL=5aaf15bcf48f4fb0.css.map*/

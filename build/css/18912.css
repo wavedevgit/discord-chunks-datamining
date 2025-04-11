@@ -1,13 +1,13 @@
 /**
   Module ID: 18912
-  Original File Name: 80ed404cf153d342
+  Original File Name: 4b51a2778b032316
 **/
 .art_cb3c76 {
     background-position: 50%;
     background-repeat: no-repeat;
-    width: 238.48px;
     height: 95.7px;
-    margin: 0 auto 20px
+    margin: 0 auto 20px;
+    width: 238.48px
 }
 
 .images-light .art_cb3c76 {
@@ -23,9 +23,9 @@
 }
 
 .visual-refresh .modalHeader_cb3c76 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between
 }
 
@@ -35,8 +35,8 @@
 
 .closeButton__6ee2f {
     position: absolute;
-    top: 14px;
-    right: 14px
+    right: 14px;
+    top: 14px
 }
 
 .title__6ee2f {
@@ -54,10 +54,8 @@
 
 .visual-refresh .closeButton__6ee2f {
     position: relative;
-    top: auto;
-    top: initial;
-    right: auto;
-    right: initial
+    right: unset;
+    top: unset
 }
 
-/*# sourceMappingURL=80ed404cf153d342.css.map*/
+/*# sourceMappingURL=4b51a2778b032316.css.map*/

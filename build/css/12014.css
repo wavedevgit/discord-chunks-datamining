@@ -1,16 +1,17 @@
 /**
   Module ID: 12014
-  Original File Name: 697957ed4249f089
+  Original File Name: 6a00494afa3ac6cb
 **/
 .root__10a0c {
+    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content
 }
 
 .content__10a0c {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px;
     padding: 16px 16px 20px
 }
@@ -42,4 +43,4 @@
     padding: var(--spacing-12) var(--spacing-16)
 }
 
-/*# sourceMappingURL=697957ed4249f089.css.map*/
+/*# sourceMappingURL=6a00494afa3ac6cb.css.map*/

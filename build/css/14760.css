@@ -1,16 +1,16 @@
 /**
   Module ID: 14760
-  Original File Name: 60ca7db6546ee725
+  Original File Name: f6e4fb96b1bd7014
 **/
 .modal__7db36 {
-    display: flex;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
     box-sizing: border-box;
-    width: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
     padding: 32px;
-    overflow: visible
+    text-align: center;
+    width: 400px
 }
 
 .followSuccessHeader__7db36 {
@@ -18,9 +18,9 @@
 }
 
 .image__7db36 {
-    width: 280px;
+    margin-bottom: 0;
     margin-top: -96px;
-    margin-bottom: 0
+    width: 280px
 }
 
 .body__7db36 {
@@ -28,10 +28,10 @@
 }
 
 .root__7db36 {
-    overflow: visible;
-    display: flex;
     align-items: center;
-    flex-direction: column
+    display: flex;
+    flex-direction: column;
+    overflow: visible
 }
 
-/*# sourceMappingURL=60ca7db6546ee725.css.map*/
+/*# sourceMappingURL=f6e4fb96b1bd7014.css.map*/

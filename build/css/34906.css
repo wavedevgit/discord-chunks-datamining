@@ -1,21 +1,21 @@
 /**
   Module ID: 34906
-  Original File Name: 602f0d5d2a26b5ea
+  Original File Name: 5b5e48ce5ad7b2ae
 **/
 .artContainer__22b59 {
-    display: flex;
-    width: 100%;
-    height: 120px;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-tertiary);
     border-radius: 8px;
-    pointer-events: none
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%
 }
 
 .artAsset__22b59 {
-    width: 100px;
-    height: 80px
+    height: 80px;
+    width: 100px
 }
 
-/*# sourceMappingURL=602f0d5d2a26b5ea.css.map*/
+/*# sourceMappingURL=5b5e48ce5ad7b2ae.css.map*/

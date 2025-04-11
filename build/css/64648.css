@@ -1,16 +1,16 @@
 /**
   Module ID: 64648
-  Original File Name: 986b047cf49da70e
+  Original File Name: 5e26fb7b18d1bf2e
 **/
 .bugReporterSubmitModalRoot__341b5 {
-    width: 720px;
-    height: auto;
     background-color: transparent!important;
-    box-shadow: none!important;
     background-image: url(/assets/2f537bacfaadd7c3.png)!important;
-    background-size: contain!important;
+    background-position: 50%!important;
     background-repeat: no-repeat!important;
-    background-position: 50%!important
+    background-size: contain!important;
+    box-shadow: none!important;
+    height: auto;
+    width: 720px
 }
 
 .visual-refresh .bugReporterSubmitModalRoot__341b5 {
@@ -18,27 +18,27 @@
 }
 
 .modalContent__341b5 {
-    padding: 0;
-    display: flex;
     align-items: center;
-    justify-content: center
+    display: flex;
+    justify-content: center;
+    padding: 0
 }
 
 .closeButton__341b5 {
-    position: absolute;
     box-sizing: content-box;
-    top: 12px;
-    right: 4px
+    position: absolute;
+    right: 4px;
+    top: 12px
 }
 
 .submitText__341b5 {
-    max-width: 360px;
-    margin-top: 20px;
-    font-family: Arial Rounded MT Bold;
     color: #74664b;
+    font-family: Arial Rounded MT Bold;
     font-size: 20px;
     line-height: 28px;
+    margin-top: 20px;
+    max-width: 360px;
     text-align: center
 }
 
-/*# sourceMappingURL=986b047cf49da70e.css.map*/
+/*# sourceMappingURL=5e26fb7b18d1bf2e.css.map*/

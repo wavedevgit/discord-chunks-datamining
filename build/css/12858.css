@@ -1,6 +1,6 @@
 /**
   Module ID: 12858
-  Original File Name: 95f5f36efc72ead8
+  Original File Name: 9f6056cf7937f6f9
 **/
 .container__1ce5d {
     position: relative
@@ -15,9 +15,9 @@
 }
 
 .header_f549e5 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: var(--spacing-16);
     padding-top: var(--spacing-64);
     text-align: center
@@ -43,8 +43,8 @@
 }
 
 .content_f549e5,.guildInfo_f549e5 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .guildName_f549e5 {
@@ -63,29 +63,29 @@
 }
 
 .infoGroup_f549e5 {
-    border-radius: var(--radius-sm);
     background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
     margin-bottom: var(--spacing-24);
     width: 100%
 }
 
 .infoRow_f549e5 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: var(--spacing-16);
     padding: var(--spacing-16)
 }
 
 .row__6e3d6 {
-    padding: var(--spacing-12);
-    gap: var(--spacing-12)
+    gap: var(--spacing-12);
+    padding: var(--spacing-12)
 }
 
 .icon__6e3d6 {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-width: 32px
 }
 
@@ -93,4 +93,4 @@
     display: inline
 }
 
-/*# sourceMappingURL=95f5f36efc72ead8.css.map*/
+/*# sourceMappingURL=9f6056cf7937f6f9.css.map*/

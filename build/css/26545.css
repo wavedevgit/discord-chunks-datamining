@@ -1,16 +1,16 @@
 /**
   Module ID: 26545
-  Original File Name: 81803986896985cd
+  Original File Name: 4c930a3eb25807d7
 **/
 .content_d7fb2d {
     padding: 16px
 }
 
 .card_d7fb2d {
-    pointer-events: none;
-    margin-top: 16px;
     background: var(--bg-mod-faint);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    margin-top: 16px;
+    pointer-events: none
 }
 
 .error_d7fb2d,.footer_d7fb2d {
@@ -19,12 +19,12 @@
 }
 
 .error_d7fb2d {
-    border-radius: 4px;
+    align-items: center;
     background-color: hsl(var(--red-400-hsl)/.1);
     border: 1px solid var(--red-400);
-    align-items: center;
-    padding: 8px;
-    margin-bottom: 8px
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 8px
 }
 
-/*# sourceMappingURL=81803986896985cd.css.map*/
+/*# sourceMappingURL=4c930a3eb25807d7.css.map*/

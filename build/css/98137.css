@@ -1,17 +1,17 @@
 /**
   Module ID: 98137
-  Original File Name: cb6181878518f5d3
+  Original File Name: 41c04830ccc9b8ac
 **/
 .modalHeader__4acc1 {
-    padding-top: 32px;
-    justify-content: center
+    justify-content: center;
+    padding-top: 32px
 }
 
 .modalHeader__4acc1 .closeButton__4acc1 {
+    color: var(--interactive-normal);
     position: absolute;
     right: 12px;
-    top: 12px;
-    color: var(--interactive-normal)
+    top: 12px
 }
 
 .modalHeader__4acc1 .closeButton__4acc1:hover {
@@ -30,4 +30,4 @@
     padding: 11px 20px
 }
 
-/*# sourceMappingURL=cb6181878518f5d3.css.map*/
+/*# sourceMappingURL=41c04830ccc9b8ac.css.map*/
