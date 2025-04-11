@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => R
 }), n(415506), n(388685);
@@ -18,10 +18,10 @@ var r, i, a = n(200651),
   b = n(941128),
   x = n(780570),
   y = n(358085),
-  v = n(814225),
-  E = n(346329),
-  O = n(701560),
-  N = n(981631),
+  E = n(814225),
+  v = n(346329),
+  N = n(701560),
+  O = n(981631),
   j = n(388032),
   C = n(207178);
 
@@ -61,18 +61,18 @@ function T(e, t) {
 }
 var P = ((i = P || {}).PLAY = "play", i.NOW_PLAYING = "now_playing", i.INSTALL = "install", i.UPDATE = "update", i.PAUSED = "paused", i.LOCATE = "locate", i.UNINSTALLING = "uninstalling", i.QUEUED = "queued", i.DOWNLOADING = "downloading", i.UNSUPPORTED_OS = "unsupported_os", i.ADD_TO_LIBRARY = "add_to_library", i.PREORDER_WAIT = "preorder_wait", i);
 let A = Object.freeze({
-    [N.apO.PLAY]: "play",
-    [N.apO.INSTALL]: "install",
-    [N.apO.UPDATE]: "update",
-    [N.apO.PAUSE]: "downloading",
-    [N.apO.MOVE_UP]: "queued",
-    [N.apO.RESUME]: "paused"
+    [O.apO.PLAY]: "play",
+    [O.apO.INSTALL]: "install",
+    [O.apO.UPDATE]: "update",
+    [O.apO.PAUSE]: "downloading",
+    [O.apO.MOVE_UP]: "queued",
+    [O.apO.RESUME]: "paused"
   }),
   w = () => [j.NW.string(j.t.r9wmKi), j.NW.string(j.t["6CpimZ"]), j.NW.string(j.t.ysbNDQ), j.NW.string(j.t.TLnXx8), j.NW.string(j.t.Qi8mnZ), j.NW.string(j.t.yvMu3d), j.NW.string(j.t.PnNUZ2), j.NW.string(j.t.hU2TEB), j.NW.string(j.t.YyY519), j.NW.string(j.t.PbHJb2)];
 class Z extends(r = l.Component) {
   get analyticsLocation() {
     return T(I({}, this.props.analyticsContext.location), {
-      object: N.qAy.BUTTON_CTA
+      object: O.qAy.BUTTON_CTA
     })
   }
   getText(e) {
@@ -110,7 +110,7 @@ class Z extends(r = l.Component) {
     if (e.isHidden()) return "add_to_library";
     if (e.isPreorder()) return "preorder_wait";
     let r = null != n ? A[n] : null;
-    return null != r ? r : null != t && t.type === N.vxO.UNINSTALLING ? "uninstalling" : (0, y.isWeb)() ? "play" : "unsupported_os"
+    return null != r ? r : null != t && t.type === O.vxO.UNINSTALLING ? "uninstalling" : (0, y.isWeb)() ? "play" : "unsupported_os"
   }
   renderPlayButton() {
     let {
@@ -125,7 +125,7 @@ class Z extends(r = l.Component) {
       analyticsListSort: c,
       analyticsListIndex: u
     } = this.props;
-    return (0, a.jsx)(O.Z, {
+    return (0, a.jsx)(N.Z, {
       applicationId: e.id,
       libraryApplication: e,
       fullWidth: t,
@@ -173,7 +173,7 @@ class Z extends(r = l.Component) {
     if (e) return null;
     let n = x.KJ(t);
     if (null == n) return null;
-    let r = n.type === N.vxO.UNINSTALLING ? c.Exd.INDETERMINATE : x.xI(Number(n.progress), Number(n.total));
+    let r = n.type === O.vxO.UNINSTALLING ? c.Exd.INDETERMINATE : x.xI(Number(n.progress), Number(n.total));
     return (0, a.jsx)(c.Exd, {
       percent: r,
       size: c.Exd.Sizes.XSMALL,
@@ -207,7 +207,7 @@ class Z extends(r = l.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === n) return this.renderPlayButton();
     if ("preorder_wait" === n) return this.renderDisabledButton(n, function(e) {
-      let t = v.en(e.sku);
+      let t = E.en(e.sku);
       return null != t ? j.NW.formatToPlainString(j.t.Aqe2ZG, {
         date: t
       }) : null
@@ -225,7 +225,7 @@ class Z extends(r = l.Component) {
         let {
           libraryApplication: e
         } = this.props;
-        await u.h(e.id, e.branchId, e.getFlags() & ~N.eHb.HIDDEN), (0, m.uL)(N.Z5c.APPLICATION_LIBRARY)
+        await u.h(e.id, e.branchId, e.getFlags() & ~O.eHb.HIDDEN), (0, m.uL)(O.Z5c.APPLICATION_LIBRARY)
       } catch (e) {
         new p.Z("LibraryApplicationButton").error(e)
       }
@@ -234,12 +234,12 @@ class Z extends(r = l.Component) {
         libraryApplication: e,
         source: t
       } = this.props;
-      E.installApplication(e.id, e.branchId, t)
+      v.installApplication(e.id, e.branchId, t)
     }), S(this, "handleUpdate", () => {
       let {
         libraryApplication: e
       } = this.props;
-      E.updateApplication(e.id, e.branchId)
+      v.updateApplication(e.id, e.branchId)
     }), S(this, "onClickHandlers", {
       add_to_library: this.handleAddToLibrary,
       install: this.handleInstall,

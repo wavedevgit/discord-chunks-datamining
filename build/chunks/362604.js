@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => x
 }), n(388685), n(472816), n(794429);
@@ -24,10 +24,10 @@ function x(e) {
     message: t,
     channel: a,
     compact: x
-  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [v, E] = i.useState(null);
+  } = e, y = (0, o.Wu)([d.Z], () => Array.from(d.Z.getAllGuildStickers().values()).flat()).slice(0, 20), [E, v] = i.useState(null);
   return (i.useEffect(() => {
     let e = setInterval(() => {
-      y.length > 0 && E(y[Math.floor(Math.random() * y.length)])
+      y.length > 0 && v(y[Math.floor(Math.random() * y.length)])
     }, 500);
     return () => clearInterval(e)
   }, [y]), null == a.guild_id) ? null : (0, r.jsxs)("div", {
@@ -83,9 +83,9 @@ function x(e) {
               action_type: "sticker"
             }), (0, h.O)(t.id, a)
           },
-          children: null != v ? (0, r.jsx)(p.Z, {
+          children: null != E ? (0, r.jsx)(p.Z, {
             size: 32,
-            sticker: v
+            sticker: E
           }) : (0, r.jsx)(s.EO4, {
             size: "md",
             color: "currentColor"

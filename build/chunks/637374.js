@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => K
 }), n(388685);
@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(479446),
   x = n(930114),
   y = n(981632),
-  v = n(108989),
-  E = n(703656),
-  O = n(314897),
-  N = n(82142),
+  E = n(108989),
+  v = n(703656),
+  N = n(314897),
+  O = n(82142),
   j = n(283595),
   C = n(594174),
   S = n(509545),
@@ -324,7 +324,7 @@ class V extends i.Component {
       let {
         libraryApplication: t
       } = this.props;
-      e.preventDefault(), null != t && t.isHidden() ? (0, E.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, E.uL)(D.Z5c.APPLICATION_LIBRARY, {
+      e.preventDefault(), null != t && t.isHidden() ? (0, v.uL)(D.Z5c.APPLICATION_LIBRARY_SETTINGS) : (0, v.uL)(D.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != t ? t.id : void 0
         }
@@ -381,7 +381,7 @@ class V extends i.Component {
         });
       return (0, r.jsxs)("div", {
         className: a,
-        children: [!t && L.eZ.includes(e.giftStyle) && (0, r.jsx)(v.Z, {
+        children: [!t && L.eZ.includes(e.giftStyle) && (0, r.jsx)(E.Z, {
           className: W.snow,
           wind: 5
         }), i && (0, r.jsx)(T.Z, {
@@ -396,20 +396,20 @@ class V extends i.Component {
   }
 }
 let z = (0, f.Z)((0, m.Z)(V)),
-  K = c.ZP.connectStores([N.Z, I.Z, C.default, j.Z, S.Z, O.default, h.Z], e => {
+  K = c.ZP.connectStores([O.Z, I.Z, C.default, j.Z, S.Z, N.default, h.Z], e => {
     let {
       code: t,
       author: n,
       currentUser: r
-    } = e, i = N.Z.get(t), a = null != i ? I.Z.get(i.skuId) : null, l = null != i && null != i.userId ? C.default.getUser(i.userId) : null, o = h.Z.useReducedMotion;
+    } = e, i = O.Z.get(t), a = null != i ? I.Z.get(i.skuId) : null, l = null != i && null != i.userId ? C.default.getUser(i.userId) : null, o = h.Z.useReducedMotion;
     return {
       sku: a,
       giftCode: i,
       gifter: l,
       currentUser: r,
       subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, Z.oE)(i.subscriptionPlanId) : null,
-      isSelfGift: null != i ? O.default.getId() === i.userId : O.default.getId() === n.id,
-      resolved: N.Z.getIsResolved(t),
+      isSelfGift: null != i ? N.default.getId() === i.userId : N.default.getId() === n.id,
+      resolved: O.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? void 0 : i.entitlementBranches) != null ? A.z2(i.entitlementBranches, a, j.Z) : null,
       useReducedMotion: o
     }

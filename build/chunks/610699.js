@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => L
 }), n(539854), n(361932), n(187205), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(880251),
   x = n(208444),
   y = n(835473),
-  v = n(471445),
-  E = n(111028),
-  O = n(601964),
-  N = n(592125),
+  E = n(471445),
+  v = n(111028),
+  N = n(601964),
+  O = n(592125),
   j = n(430824),
   C = n(496675),
   S = n(594174),
@@ -79,7 +79,7 @@ function D(e) {
     textColor: a
   } = e;
   if (null != t && null != n) {
-    let e = (0, v.KS)(t, n);
+    let e = (0, E.KS)(t, n);
     return (0, r.jsxs)("div", {
       className: l()(R.channel, {
         [R.ended]: i
@@ -88,7 +88,7 @@ function D(e) {
         className: R.channelIcon,
         size: "xs",
         color: "currentColor"
-      }) : null, (0, r.jsx)(E.Z, {
+      }) : null, (0, r.jsx)(v.Z, {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: a,
@@ -104,7 +104,7 @@ function D(e) {
     className: l()(R.channel, {
       [R.ended]: i
     }),
-    children: (0, r.jsx)(E.Z, {
+    children: (0, r.jsx)(v.Z, {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: a,
@@ -137,8 +137,8 @@ function L(e) {
       })
     }, [null == (t = l.inviter) ? void 0 : t.id, _.id]),
     x = (0, c.e7)([j.Z], () => null != l.guild ? j.Z.getGuild(l.guild.id) : null, [l]),
-    v = (0, y.Z)([_.id])[0],
-    E = (0, c.e7)([p.ZP], () => {
+    E = (0, y.Z)([_.id])[0],
+    v = (0, c.e7)([p.ZP], () => {
       var e;
       return (null == l ? void 0 : l.channel) != null && (null == (e = p.ZP.getSelfEmbeddedActivityForChannel(l.channel.id)) ? void 0 : e.applicationId) === _.id
     }),
@@ -151,7 +151,7 @@ function L(e) {
         return _.id === t
       })
     }),
-    R = N.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
+    R = O.Z.getChannel(null == (n = l.channel) ? void 0 : n.id),
     k = (0, c.e7)([C.Z], () => null != R && C.Z.can(A.Plq.USE_EMBEDDED_ACTIVITIES, R), [R]),
     {
       analyticsLocations: D
@@ -169,13 +169,13 @@ function L(e) {
     B = null != x;
   if (null == x) {
     if (null == l.guild) return (0, r.jsx)(P.Z, {});
-    x = new O.ZP(l.guild)
+    x = new N.ZP(l.guild)
   }
-  let G = B && !k || B && E;
-  return (B && E && (a = Z.NW.string(Z.t.wJNK8P)), k || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == v) ? null : (0, r.jsx)(f.Gt, {
+  let G = B && !k || B && v;
+  return (B && v && (a = Z.NW.string(Z.t.wJNK8P)), k || (a = Z.NW.string(Z.t.hHGrW1)), null == l.code || "" === l.code || null == E) ? null : (0, r.jsx)(f.Gt, {
     value: D,
     children: (0, r.jsx)(M, {
-      app: v,
+      app: E,
       invite: l,
       activityUsers: W,
       isMember: B,
@@ -207,10 +207,10 @@ function M(e) {
     isActivityActive: m,
     submitting: f,
     isDisabled: y,
-    tooltip: v,
-    handleAcceptInvite: E,
-    onView: O
-  } = e, N = new URL(l.code, "https://discord.gg").toString(), {
+    tooltip: E,
+    handleAcceptInvite: v,
+    onView: N
+  } = e, O = new URL(l.code, "https://discord.gg").toString(), {
     bot: j,
     icon: C
   } = a, S = T.ZP.getApplicationIconURL({
@@ -222,11 +222,11 @@ function M(e) {
       label: s ? m ? Z.NW.string(Z.t.VJlc0d) : Z.NW.string(Z.t.RscU7O) : Z.NW.string(Z.t["2BP08P"]),
       trackingArea: s ? _.j_.PLAY : _.j_.JOIN_SERVER,
       submitting: f,
-      disabledReason: y && null != v ? v : void 0,
-      onClick: E
+      disabledReason: y && null != E ? E : void 0,
+      onClick: v
     }];
     return null != I && e.push(I), e
-  }, [E, m, y, s, f, v, I]);
+  }, [v, m, y, s, f, E, I]);
   return (0, r.jsx)(h.W, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -248,7 +248,7 @@ function M(e) {
     header: a.name,
     title: Z.NW.string(Z.t["7vb6n5"]),
     iconSrc: S,
-    embedUrl: N
+    embedUrl: O
   }, P), n = n = {
     info: (0, r.jsxs)("div", {
       className: R.infoWrapper,
@@ -271,7 +271,7 @@ function M(e) {
     trackingConfig: {
       id: a.id,
       linkType: _.Un.ACTIVITY_INVITE,
-      onView: O
+      onView: N
     }
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

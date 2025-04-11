@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   H: () => x
 }), n(953529);
@@ -26,10 +26,10 @@ function x(e) {
     guildId: n,
     location: x,
     shouldShowFullDescriptionButton: y = !0,
-    hideRoleTag: v = !1,
-    lineClamp: E = 1,
-    cardWidth: O,
-    cardHeight: N,
+    hideRoleTag: E = !1,
+    lineClamp: v = 1,
+    cardWidth: N,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: C = "text-sm/normal",
     showOpaqueBackground: S = !1
@@ -86,10 +86,10 @@ function x(e) {
     onTapCard: k,
     actionMenu: D,
     showOpaqueBackground: S,
-    hideRoleTag: v,
-    lineClamp: E,
-    cardWidth: O,
-    cardHeight: N,
+    hideRoleTag: E,
+    lineClamp: v,
+    cardWidth: N,
+    cardHeight: O,
     thumbnailHeight: j,
     descriptionTextVariant: C,
     isDraft: !t.published

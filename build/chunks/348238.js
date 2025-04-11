@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   $3: () => V,
   Go: () => B,
@@ -35,10 +35,10 @@ var r = n(200651),
   b = n(594174),
   x = n(585483),
   y = n(5967),
-  v = n(630388),
-  E = n(358085),
-  O = n(51144),
-  N = n(91047),
+  E = n(630388),
+  v = n(358085),
+  N = n(51144),
+  O = n(91047),
   j = n(50284),
   C = n(981631),
   S = n(388032);
@@ -56,7 +56,7 @@ function T(e, t, n) {
     let i = b.default.getUser(e);
     if (null == i) return;
     if (r.preventDefault(), r.stopPropagation(), !r.shiftKey) return void n();
-    let a = "@".concat(O.ZP.getUserTag(i, {
+    let a = "@".concat(N.ZP.getUserTag(i, {
         decoration: "never"
       })),
       l = "<@".concat(e, ">");
@@ -111,10 +111,10 @@ function M(e, t, a, o) {
   } = t, {
     id: u,
     flags: d
-  } = e, p = (0, v.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
+  } = e, p = (0, E.yE)(d, C.iLy.EPHEMERAL), m = (0, c.bp)();
   return i.useCallback((e, t) => {
     if (p) return;
-    if (!E.isPlatformEmbedded) {
+    if (!v.isPlatformEmbedded) {
       let t = e.target;
       if ("A" === t.tagName && "" !== t.textContent || null == window.getSelection) return;
       let n = window.getSelection();
@@ -177,7 +177,7 @@ function W(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, N.Pv)(n, r, i))
+    null != r && null != i && (n.stopPropagation(), (0, O.Pv)(n, r, i))
   }, [e, t])
 }
 
@@ -185,7 +185,7 @@ function U(e, t, n) {
   return i.useCallback(r => {
     let i = b.default.getUser(e),
       a = h.Z.getChannel(t);
-    null != i && null != a && (r.stopPropagation(), (0, N._j)(r, {
+    null != i && null != a && (r.stopPropagation(), (0, O._j)(r, {
       user: i,
       channel: a,
       moderationAlertId: n
@@ -197,7 +197,7 @@ function F(e, t) {
   return i.useCallback(n => {
     let r = b.default.getUser(e),
       i = h.Z.getChannel(t);
-    null != r && null != i && (n.stopPropagation(), (0, N.xS)(n, r, i.guild_id))
+    null != r && null != i && (n.stopPropagation(), (0, O.xS)(n, r, i.guild_id))
   }, [e, t])
 }
 
@@ -244,17 +244,17 @@ function G(e) {
     }
   }, [t, n])), [b, y] = i.useState(l);
   g.current = b || g.current;
-  let v = i.useCallback(e => {
+  let E = i.useCallback(e => {
       s && (0, f.T6)(), b || (x.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !0), _(e), y(!0))
     }, [b, h, s, _]),
-    E = i.useCallback(() => {
+    v = i.useCallback(() => {
       x.S.dispatchKeyed(C.LPv.ANIMATE_CHAT_AVATAR, h, !1), y(!1)
     }, [h]);
   return {
     hasHovered: g.current,
     isHovered: b,
-    handleMouseEnter: v,
-    handleMouseLeave: E
+    handleMouseEnter: E,
+    handleMouseLeave: v
   }
 }
 

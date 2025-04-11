@@ -4,8 +4,8 @@ n.d(t, {
   U1: () => E,
   XW: () => u,
   _J: () => f,
-  aP: () => _,
-  e7: () => h,
+  aP: () => h,
+  e7: () => _,
   h6: () => b,
   oE: () => p,
   pB: () => d,
@@ -114,11 +114,11 @@ let u = (0, r.U)(e => ({
   p = () => {
     u.getState().reset()
   },
-  _ = () => {
+  h = () => {
     let e = u.getState();
     return e.nickname !== a.nickname || e.dmsAllowed !== a.dmsAllowed || e.showActivity !== c(e.guildSize) || e.mutedServer !== a.mutedServer
   },
-  h = () => u.getState().inviteCode,
+  _ = () => u.getState().inviteCode,
   f = () => u.getState().guildId,
   m = () => u.getState().touched,
   b = () => u.getState().dmsAllowed,

@@ -12,7 +12,7 @@ function a(e, t) {
     reasonDescription: r,
     feedback: l,
     analyticsData: s
-  } = t, c = o.Z.getSettings(), u = o.Z.getInputDeviceId(), d = o.Z.getInputDevices()[u], b = o.Z.getOutputDeviceId(), p = o.Z.getOutputDevices()[b], m = o.Z.getVideoDeviceId(), _ = o.Z.getVideoDevices()[m], h = o.Z.getNoiseCancellation(), f = o.Z.getMediaEngine().getAudioSubsystem(), v = o.Z.getMediaEngine().getAudioLayer();
+  } = t, c = o.Z.getSettings(), u = o.Z.getInputDeviceId(), d = o.Z.getInputDevices()[u], b = o.Z.getOutputDeviceId(), m = o.Z.getOutputDevices()[b], p = o.Z.getVideoDeviceId(), _ = o.Z.getVideoDevices()[p], h = o.Z.getNoiseCancellation(), f = o.Z.getMediaEngine().getAudioSubsystem(), v = o.Z.getMediaEngine().getAudioLayer();
   i.default.track(e, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -44,7 +44,7 @@ function a(e, t) {
     voice_output_volume: c.outputVolume,
     noise_cancellation_enabled: h,
     input_device_name: null == d ? void 0 : d.name,
-    output_device_name: null == p ? void 0 : p.name,
+    output_device_name: null == m ? void 0 : m.name,
     video_device_name: null == _ ? void 0 : _.name,
     audio_subsystem: f,
     audio_layer: v,

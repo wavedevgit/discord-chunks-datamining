@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   FZ: () => A,
   Hl: () => M,
@@ -36,11 +36,11 @@ var r = n(5148),
   b = n(473552),
   x = n.n(b),
   y = n(634523),
-  v = n.n(y),
-  E = n(302648),
-  O = n.n(E);
+  E = n.n(y),
+  v = n(302648),
+  N = n.n(v);
 
-function N(e, t, n, i) {
+function O(e, t, n, i) {
   let a = i.getCurrentContent(),
     l = null;
   null != e && (l = (a = a.createEntity(...e)).getLastCreatedEntityKey());
@@ -74,7 +74,7 @@ function j(e, t, n, i) {
 function C(e, t) {
   switch (e) {
     case "delete":
-      return v()(t);
+      return E()(t);
     case "delete-word":
       return m()(t);
     case "backspace":
@@ -91,7 +91,7 @@ function C(e, t) {
 function S(e, t) {
   switch (e) {
     case "transpose-characters":
-      return O()(t);
+      return N()(t);
     case "move-selection-to-start-of-block":
       return _()(t);
     case "move-selection-to-end-of-block":
@@ -129,14 +129,14 @@ function T(e, t) {
           start: a,
           end: l
         } = e, o = e.getFullMatch();
-        !n.processed && (n.type === i && n.start === a && n.text === o ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || l > n.start && l <= n.end) && (n.processed = !0, t = N(null, n.start, n.end, t)))
+        !n.processed && (n.type === i && n.start === a && n.text === o ? (n.processed = !0, r = !0) : (a >= n.start && a < n.end || l > n.start && l <= n.end) && (n.processed = !0, t = O(null, n.start, n.end, t)))
       }), r) return;
     let i = n[e.type];
-    t = N([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
+    t = O([e.type, null != i && i.mutable ? "MUTABLE" : "IMMUTABLE", {
       token: e
     }], e.start, e.end, t)
   }), l.forEach(e => {
-    e.processed || (t = N(null, e.start, e.end, t))
+    e.processed || (t = O(null, e.start, e.end, t))
   }), t
 }
 

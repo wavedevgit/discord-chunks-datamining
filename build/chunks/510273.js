@@ -1,6 +1,6 @@
 /** Chunk was on 99391 **/
 n.d(t, {
-  Z: () => _
+  Z: () => h
 }), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -63,19 +63,19 @@ let p = e => {
   })
 };
 
-function _(e) {
+function h(e) {
   let {
     achievement: t,
     unlocked: n
   } = e, {
     name: o,
-    description: _,
-    rarity: h,
+    description: h,
+    rarity: _,
     hideDescriptionUntilUnlock: f,
     onAction: m
   } = t, {
     color: b
-  } = (0, a.F7)(h);
+  } = (0, a.F7)(_);
   i.useEffect(() => {
     let e = setTimeout(() => {
       c.Z.playAchievementUnlockSound()
@@ -107,7 +107,7 @@ function _(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
-        children: f && !n ? "?????" : _()
+        children: f && !n ? "?????" : h()
       })]
     }), (0, r.jsx)("div", {
       className: d.flair,

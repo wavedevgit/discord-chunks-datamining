@@ -17,8 +17,8 @@ let c = "orb-checkout-payment-modal-key",
       analyticsLocations: u = [],
       analyticsSourceLocation: d,
       onCloseCallback: p,
-      onCheckoutSuccess: _
-    } = e, h = function(e, t) {
+      onCheckoutSuccess: h
+    } = e, _ = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -63,9 +63,9 @@ let c = "orb-checkout-payment-modal-key",
           analyticsLocations: u,
           analyticsSourceLocation: d,
           onCheckoutSuccess: e => {
-            f = !0, _(e)
+            f = !0, h(e)
           }
-        }, h, n), o = o = {
+        }, _, n), o = o = {
           loadId: m
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => h
 }), n(953529);
@@ -82,10 +82,10 @@ function h(e) {
     onShowFullDescription: b,
     productType: x,
     onTapCard: y,
-    actionMenu: v,
-    showOpaqueBackground: E = !1,
-    hideRoleTag: O = !1,
-    lineClamp: N = 1,
+    actionMenu: E,
+    showOpaqueBackground: v = !1,
+    hideRoleTag: N = !1,
+    lineClamp: O = 1,
     cardWidth: j = 332,
     cardHeight: C,
     thumbnailHeight: S = 187,
@@ -117,20 +117,20 @@ function h(e) {
           children: (0, r.jsx)(s.Z, {
             variant: I,
             color: "text-muted",
-            lineClamp: N,
+            lineClamp: O,
             text: i
           })
         }), _ && (0, r.jsx)(f, {
           onShowFullDescription: b,
           variant: I
-        }), O || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
+        }), N || null == h || "" === h.name ? null : (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.LZC, {
             size: 16
           }), (0, r.jsx)(u.Z, {
             role: h
           })]
         })]
-      }), v]
+      }), E]
     }), (0, r.jsxs)("div", {
       className: p.purchaseDetails,
       children: [(0, r.jsx)(l.Text, {
@@ -153,7 +153,7 @@ function h(e) {
     })]
   });
   return null == y ? (0, r.jsx)("article", {
-    className: a()(p.productCard, E ? p.opaqueBackground : p.solidBackground),
+    className: a()(p.productCard, v ? p.opaqueBackground : p.solidBackground),
     "aria-labelledby": P,
     children: A
   }) : (0, r.jsx)("div", {
@@ -166,7 +166,7 @@ function h(e) {
       "aria-label": d.NW.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
-      className: a()(p.productCard, E ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
+      className: a()(p.productCard, v ? p.opaqueBackground : p.solidBackground, p.cardClickableContainer),
       onClick: y,
       children: A
     })

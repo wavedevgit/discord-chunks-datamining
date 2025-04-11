@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   ZP: () => _,
   fO: () => g,
@@ -60,10 +60,10 @@ let h = i.forwardRef(function(e, t) {
     onClick: b,
     onTooltipShow: x,
     onTooltipHide: y,
-    disabled: v,
-    dangerous: E,
-    separator: O,
-    sparkle: N,
+    disabled: E,
+    dangerous: v,
+    separator: N,
+    sparkle: O,
     showNewBadge: j,
     buttonClassName: C,
     children: S
@@ -106,8 +106,8 @@ let h = i.forwardRef(function(e, t) {
             null == x || x(), b(e)
           },
           "aria-label": null != i ? i : n,
-          disabled: v,
-          dangerous: E
+          disabled: E,
+          dangerous: v
         }, I), u = u = {
           children: [null != g ? (0, r.jsx)(g, m({
             className: p.icon,
@@ -115,7 +115,7 @@ let h = i.forwardRef(function(e, t) {
           }, _)) : null, null != S ? (0, r.jsx)("div", {
             className: l()(p.icon, p.buttonContent),
             children: S
-          }) : null, N && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
+          }) : null, O && (0, r.jsx)(o.K1N, {}), j && (0, r.jsx)(o.IGR, {
             text: d.NW.string(d.t.y2b7CA),
             color: s.Z.BG_BRAND,
             className: p.newBadge
@@ -129,7 +129,7 @@ let h = i.forwardRef(function(e, t) {
           return n
         })(Object(u)).forEach(function(e) {
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(u, e))
-        }), a)), O && (0, r.jsx)(c.Z0, {})]
+        }), a)), N && (0, r.jsx)(c.Z0, {})]
       })
     }
   })

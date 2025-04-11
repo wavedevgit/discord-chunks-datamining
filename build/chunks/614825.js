@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => A
 }), n(953529), n(388685);
@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(55935),
   x = n(63063),
   y = n(74538),
-  v = n(276444),
-  E = n(93237),
-  O = n(786397),
-  N = n(474936),
+  E = n(276444),
+  v = n(93237),
+  N = n(786397),
+  O = n(474936),
   j = n(981631),
   C = n(388032),
   S = n(271818);
@@ -82,7 +82,7 @@ class P extends i.Component {
         this.handleStartTrial(l, s)
       },
       color: d.zxk.Colors.BRAND
-    }, u = o.id !== l.user_id || (0, y.I5)(o) || !o.verified || (0, O.B)(l), p = this.renderExpirationDate(e, t, n);
+    }, u = o.id !== l.user_id || (0, y.I5)(o) || !o.verified || (0, N.B)(l), p = this.renderExpirationDate(e, t, n);
     return c.disabled = u, (0, r.jsxs)("div", {
       className: S.buttonContainer,
       children: [(0, r.jsx)("div", {
@@ -91,7 +91,7 @@ class P extends i.Component {
           onClick: () => {
             (0, h.Z)({
               initialPlanId: null,
-              subscriptionTier: N.Si.TIER_2,
+              subscriptionTier: O.Si.TIER_2,
               analyticsLocations: s,
               trialId: l.trial_id,
               referralTrialOfferId: l.id
@@ -126,7 +126,7 @@ class P extends i.Component {
     let a = new Date("2025-03-27T10:00:00.000-07:00");
     return t ? C.NW.formatToPlainString(C.t.PuSHfX, {
       date: (0, b.vc)(s()(a), "LL")
-    }) : (0, E.F)(a.valueOf())
+    }) : (0, v.F)(a.valueOf())
   }
   renderMedia() {
     return (0, r.jsx)("div", {
@@ -138,7 +138,7 @@ class P extends i.Component {
       trialOffer: e,
       currentUser: t,
       recipientHasNitro: n
-    } = this.props, i = (0, O.B)(e), a = t.id === e.referrer_id;
+    } = this.props, i = (0, N.B)(e), a = t.id === e.referrer_id;
     return (0, r.jsxs)("div", {
       className: l()(S.tile, S.container),
       children: [(0, r.jsx)("div", {
@@ -163,7 +163,7 @@ class P extends i.Component {
     super(...e), I(this, "handleStartTrial", (e, t) => {
       (0, h.Z)({
         initialPlanId: null,
-        subscriptionTier: N.Si.TIER_2,
+        subscriptionTier: O.Si.TIER_2,
         analyticsLocations: t,
         trialId: e.trial_id
       })
@@ -178,9 +178,9 @@ function A(e) {
   } = e, {
     trialOffer: i,
     isResolving: a
-  } = (0, u.cj)([v.Z], () => ({
-    trialOffer: n ? v.Z.getRelevantUserTrialOffer(t) : null,
-    isResolving: !!n && v.Z.isResolving(t)
+  } = (0, u.cj)([E.Z], () => ({
+    trialOffer: n ? E.Z.getRelevantUserTrialOffer(t) : null,
+    isResolving: !!n && E.Z.isResolving(t)
   }), [n, t]), l = g.default.getCurrentUser(), o = (0, u.e7)([g.default], () => null != i && (0, y.I5)(void 0 !== l && i.user_id === l.id ? l : g.default.getUser(i.user_id))), s = (0, u.e7)([_.ZP], () => {
     var e;
     return o ? null == (e = _.ZP.getPremiumTypeSubscription()) ? void 0 : e.trialEndsAt : null

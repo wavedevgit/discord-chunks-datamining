@@ -5,8 +5,8 @@ n.d(t, {
   W9: () => g
 }), n(388685), n(997841);
 var i = n(442837),
-  r = n(798140),
-  a = n(9156),
+  a = n(798140),
+  r = n(9156),
   l = n(630388),
   o = n(709054),
   u = n(312400),
@@ -45,15 +45,15 @@ let O = {
 function p(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : O;
   return o.default.keys(e).filter(n => {
-    var i, a;
+    var i, r;
     let o = e[n].message_notifications !== s.bL.NULL,
-      u = l.yE(null != (i = e[n].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || l.yE(null != (a = e[n].flags) ? a : 0, d.ic.UNREADS_ONLY_MENTIONS);
-    return !t.ignoreUnreadSetting && u || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, r.m$)(e[n])
+      u = l.yE(null != (i = e[n].flags) ? i : 0, d.ic.UNREADS_ALL_MESSAGES) || l.yE(null != (r = e[n].flags) ? r : 0, d.ic.UNREADS_ONLY_MENTIONS);
+    return !t.ignoreUnreadSetting && u || !t.ignoreNotificationSetting && o || !t.ignoreMute && (0, a.m$)(e[n])
   })
 }
 
 function E(e) {
-  let t = (0, i.e7)([a.ZP], () => a.ZP.useNewNotifications);
+  let t = (0, i.e7)([r.ZP], () => r.ZP.useNewNotifications);
   return u.xT.useExperiment({
     location: e
   }, {

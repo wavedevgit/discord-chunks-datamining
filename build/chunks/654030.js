@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   Z: () => G
 }), n(388685), n(35282);
@@ -19,10 +19,10 @@ var r, i = n(200651),
   b = n(592745),
   x = n(952164),
   y = n(768419),
-  v = n(456432),
-  E = n(789407),
-  O = n(598077),
-  N = n(757266),
+  E = n(456432),
+  v = n(789407),
+  N = n(598077),
+  O = n(757266),
   j = n(831506),
   C = n(271383),
   S = n(283595),
@@ -75,7 +75,7 @@ class B extends(r = a.PureComponent) {
       let t = (0, p.Z)(e, n.id);
       if (null != t) return t
     }
-    return null == n || n instanceof E.ZP ? null : Z.ZP.getApplicationIconURL({
+    return null == n || n instanceof v.ZP ? null : Z.ZP.getApplicationIconURL({
       id: n.id,
       icon: null != t ? t.coverImage : n.coverImage,
       size: M.cc
@@ -174,7 +174,7 @@ class B extends(r = a.PureComponent) {
         channelId: t,
         guildId: n
       } = this.props;
-      return (0, i.jsx)(v.Z, U({
+      return (0, i.jsx)(E.Z, U({
         guildId: null != n ? n : void 0,
         channelId: t,
         source: "Invite Embed"
@@ -259,7 +259,7 @@ class B extends(r = a.PureComponent) {
 W(B, "defaultProps", {
   isPreview: !1
 });
-let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, N.Z, A.Z, S.Z, b.Z, w.Z, P.default, C.ZP], e => {
+let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, O.Z, A.Z, S.Z, b.Z, w.Z, P.default, C.ZP], e => {
   var t;
   let {
     activity: n,
@@ -277,7 +277,7 @@ let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, N.Z, A.Z, S.Z, b.Z, w.Z, P.defau
         n = null != t ? t.nick : null,
         r = P.default.getUser(e),
         i = null == r;
-      return null == r && (r = new O.Z({
+      return null == r && (r = new N.Z({
         discriminator: "0005"
       })), {
         user: r,
@@ -291,7 +291,7 @@ let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, N.Z, A.Z, S.Z, b.Z, w.Z, P.defau
   return {
     analyticsLocations: r,
     partyMembers: p,
-    connectedApplication: null != s ? N.Z.getApplication(s) : null,
+    connectedApplication: null != s ? O.Z.getApplication(s) : null,
     myPartyId: null != u && null != u.party ? u.party.id : null,
     isLaunching: d,
     isSyncable: m && !h,
@@ -299,7 +299,7 @@ let G = l.ZP.connectStores([y.Z, j.Z, I.Z, T.Z, N.Z, A.Z, S.Z, b.Z, w.Z, P.defau
       LibraryApplicationStore: S.Z,
       LaunchableGameStore: b.Z,
       DispatchApplicationStore: w.Z,
-      ConnectedAppsStore: N.Z,
+      ConnectedAppsStore: O.Z,
       applicationId: s
     })
   }

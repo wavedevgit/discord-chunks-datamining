@@ -11,8 +11,8 @@ var i, o = n(442837),
   u = n(601964),
   d = n(592125),
   p = n(430824),
-  _ = n(701190),
-  h = n(496675),
+  h = n(701190),
+  _ = n(496675),
   f = n(594174),
   m = n(998502),
   b = n(981631),
@@ -49,7 +49,7 @@ function v() {
 }
 class T extends(i = o.ZP.Store) {
   initialize() {
-    this.waitFor(p.Z, _.Z, f.default)
+    this.waitFor(p.Z, h.Z, f.default)
   }
   isOpen() {
     let e = __OVERLAY__ ? b.IlC.OVERLAY : b.IlC.APP;
@@ -91,7 +91,7 @@ let I = new T(l.Z, {
             } = e;
             if (null != t) {
               let e = d.Z.getChannel(t.id);
-              if (h.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
+              if (_.Z.can(b.Plq.VIEW_CHANNEL, e)) return t.id
             }
             return null
           }(t);
@@ -117,8 +117,8 @@ let I = new T(l.Z, {
         type: c,
         channel: d,
         guild: p,
-        is_nickname_changeable: _
-      } = e, h = {
+        is_nickname_changeable: h
+      } = e, _ = {
         code: r,
         state: i,
         approximate_member_count: t,
@@ -128,9 +128,9 @@ let I = new T(l.Z, {
         target_application: s,
         stage_instance: a,
         type: c,
-        is_nickname_changeable: _
+        is_nickname_changeable: h
       };
-      return null != d && (h.channel = O({}, d)), null != p && (h.guild = new u.ZP(p)), null != e.inviter && (h.inviter = O({}, e.inviter)), h
+      return null != d && (_.channel = O({}, d)), null != p && (_.guild = new u.ZP(p)), null != e.inviter && (_.inviter = O({}, e.inviter)), _
     }(t);
     N.push([n, e.resolve])
   },

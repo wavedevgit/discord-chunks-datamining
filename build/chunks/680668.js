@@ -1,6 +1,6 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => E
+  Z: () => v
 }), n(997841), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -20,11 +20,11 @@ var r = n(200651),
   b = n(358595),
   x = n(981631),
   y = n(388032),
-  v = n(273254);
+  E = n(273254);
 
-function E(e) {
-  var t, E, O;
-  let N, j, C, {
+function v(e) {
+  var t, v, N;
+  let O, j, C, {
       onTransitionToInviteChannel: S,
       onAcceptInstantInvite: I,
       guild: T,
@@ -45,7 +45,7 @@ function E(e) {
     F = null != M && M.isGuildVocal(),
     B = null != M && M.isGuildStageVoice(),
     G = (0, h.yE)(null != (t = P.flags) ? t : 0, a.$.IS_GUEST_INVITE),
-    H = null != (E = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && E,
+    H = null != (v = null == T ? void 0 : T.hasFeature(x.oNc.HUB)) && v,
     V = (0, u.h)(),
     z = null == T ? void 0 : T.id,
     {
@@ -63,7 +63,7 @@ function E(e) {
     }, [P, K, W, S, I]);
   if (null == T) {
     if (null == P.guild) return (0, r.jsx)(b.Z, {});
-    (T = g.Qs(P.guild)).premiumTier = null != (O = P.guild.premium_tier) ? O : x.Eu4.NONE
+    (T = g.Qs(P.guild)).premiumTier = null != (N = P.guild.premium_tier) ? N : x.Eu4.NONE
   }
   let $ = (0, _.e)({
     isVoiceChannel: F,
@@ -74,7 +74,7 @@ function E(e) {
     isStream: !1
   });
   return j = (0, r.jsxs)("span", {
-    className: v.infoTitle,
+    className: E.infoTitle,
     children: [(0, r.jsx)(d.Z, {
       guildId: T.id,
       name: T.name,
@@ -84,7 +84,7 @@ function E(e) {
         guild: T
       })
     }), (0, r.jsx)("span", {
-      className: v.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1,
@@ -92,30 +92,30 @@ function E(e) {
       })
     })]
   }), G && (C = (0, r.jsx)(l.DY3, {
-    className: v.tooltipContainer,
+    className: E.tooltipContainer,
     text: y.NW.string(y.t["/FeTKy"]),
     children: (0, r.jsx)(l.d3s, {
       size: "md",
       color: "currentColor",
-      className: v.infoIcon
+      className: E.infoIcon
     })
   })), F ? (j = (0, r.jsx)(m.Z.Channel, {
     channel: M
-  }), N = (0, r.jsxs)("span", {
-    className: v.infoTitle,
+  }), O = (0, r.jsxs)("span", {
+    className: E.infoTitle,
     children: [y.NW.format(y.t["2wimj4"], {
       guildName: T.name
     }), (0, r.jsx)("span", {
-      className: v.infoBadge,
+      className: E.infoBadge,
       children: (0, r.jsx)(p.Z, {
         guild: T,
         isBannerVisible: !1
       })
     })]
-  })) : null != k && k >= 5 || null != D && D > 0 ? N = (0, r.jsx)(m.Z.Data, {
+  })) : null != k && k >= 5 || null != D && D > 0 ? O = (0, r.jsx)(m.Z.Data, {
     members: k,
     membersOnline: D
-  }) : U && (N = (0, r.jsx)(m.Z.Channel, {
+  }) : U && (O = (0, r.jsx)(m.Z.Channel, {
     channel: M,
     guild: T
   })), (0, r.jsxs)(m.Z, {
@@ -126,13 +126,13 @@ function E(e) {
       extra: C
     }), (0, r.jsxs)(m.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: v.headerLine,
+        className: E.headerLine,
         children: [(0, r.jsx)(m.Z.Icon, {
           guild: T
         }), (0, r.jsx)(m.Z.Info, {
           title: j,
           onClick: Q,
-          children: N
+          children: O
         })]
       }), (0, r.jsx)(m.Z.Button, {
         onClick: J,
@@ -142,7 +142,7 @@ function E(e) {
       })]
     }), T.hasFeature(x.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: v.separator
+        className: E.separator
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",

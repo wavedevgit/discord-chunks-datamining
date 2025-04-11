@@ -23,8 +23,8 @@ var i = n(442837),
   R = n(933429),
   A = n(395361),
   P = n(626135),
-  f = n(243778),
-  C = n(921944),
+  C = n(243778),
+  f = n(921944),
   D = n(981631),
   g = n(801461),
   m = n(474936),
@@ -35,9 +35,9 @@ let U = e => {
     dismissibleContent: t,
     noticeType: U
   } = e, b = (0, i.e7)([R.ZP], () => R.ZP.getNotice()), M = (0, i.e7)([p.default], () => p.default.locale);
-  return (0, r.jsx)(f.ZP, {
+  return (0, r.jsx)(C.ZP, {
     contentTypes: [t],
-    groupName: C.R.NOTICE_BAR,
+    groupName: f.R.NOTICE_BAR,
     bypassAutoDismiss: !0,
     children: e => {
       let {
@@ -49,7 +49,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.string(y.t["+xn1o6"]), (0, r.jsx)("i", {
               className: h.iconApple
@@ -93,7 +93,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.SPOTIFY,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), (0, r.jsx)(A.Z, {
               className: h.platformIcon
@@ -110,7 +110,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.PLAYSTATION,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN)
+              onClick: () => i(f.L.UNKNOWN)
             }), (0, r.jsx)("img", {
               alt: "",
               className: h.platformIcon,
@@ -127,7 +127,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.string(y.t.B2hnhY), (0, r.jsx)(o.NoS, {
               onClick: () => s.Z.open(D.oAB.ACCOUNT),
@@ -155,19 +155,19 @@ let U = e => {
               children: y.NW.string(y.t["8JC5e3"])
             }), (0, r.jsx)(o.RyX, {
               onClick: () => {
-                i(C.L.UNKNOWN), (0, a.mB)(D.xW$.PREMIUM_PROMO_DISMISSED, !0)
+                i(f.L.UNKNOWN), (0, a.mB)(D.xW$.PREMIUM_PROMO_DISMISSED, !0)
               },
               noticeType: U
             })]
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING:
           return (0, r.jsx)(T.Z, {
-            dismissCurrentNotice: () => i(C.L.UNKNOWN),
+            dismissCurrentNotice: () => i(f.L.UNKNOWN),
             subscriptionTier: m.Si.TIER_2
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_TIER_0_TRIAL_ENDING:
           return (0, r.jsx)(T.Z, {
-            dismissCurrentNotice: () => i(C.L.UNKNOWN),
+            dismissCurrentNotice: () => i(f.L.UNKNOWN),
             subscriptionTier: m.Si.TIER_0
           });
         case l.z.NAGBAR_NOTICE_PREMIUM_REACTIVATE:
@@ -175,11 +175,11 @@ let U = e => {
             color: o.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(o.RyX, {
               noticeType: U,
-              onClick: () => i(C.L.UNKNOWN)
+              onClick: () => i(f.L.UNKNOWN)
             }), y.NW.string(y.t["0KFB2N"]), (0, r.jsx)(o.NoS, {
               noticeType: U,
               onClick: () => {
-                i(C.L.UNKNOWN), s.Z.open(D.oAB.PREMIUM)
+                i(f.L.UNKNOWN), s.Z.open(D.oAB.PREMIUM)
               },
               children: y.NW.string(y.t.pyYSiI)
             })]
@@ -188,13 +188,13 @@ let U = e => {
           return (0, r.jsx)(O.Z, {
             notice: b,
             noticeType: U,
-            dismissCurrentNotice: () => i(C.L.UNKNOWN)
+            dismissCurrentNotice: () => i(f.L.UNKNOWN)
           });
         case l.z.NAGBAR_BOUNCED_EMAIL_NOTICE:
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.DANGER,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.string(y.t["7490vb"]), (0, r.jsx)(o.NoS, {
               noticeType: U,
@@ -209,12 +209,12 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.DEFAULT,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.string(y.t.pJ4hJC), (0, r.jsx)(o.NoS, {
               noticeType: U,
               onClick: () => {
-                i(C.L.PRIMARY), (0, S.uL)(1 === p.length ? D.Z5c.GUILD_SETTINGS(p[0], "role-subscriptions") : D.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
+                i(f.L.PRIMARY), (0, S.uL)(1 === p.length ? D.Z5c.GUILD_SETTINGS(p[0], "role-subscriptions") : D.Z5c.PICK_GUILD_SETTINGS("role-subscriptions", void 0, "server-subscriptions-finish-setting-up"))
               },
               children: y.NW.string(y.t["74s74O"])
             })]
@@ -223,7 +223,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.WARNING,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.format(y.t.pdYZys, {}), (0, r.jsx)(o.NoS, {
               onClick: () => (0, N.Z)(g.Kq.NOTICE),
@@ -235,7 +235,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.WARNING,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.format(y.t.zT1hgo, {
               date: (0, I.IE)(M)
@@ -249,7 +249,7 @@ let U = e => {
           return (0, r.jsxs)(o.qXd, {
             color: o.DM8.PREMIUM_TIER_2,
             children: [(0, r.jsx)(o.RyX, {
-              onClick: () => i(C.L.UNKNOWN),
+              onClick: () => i(f.L.UNKNOWN),
               noticeType: U
             }), y.NW.string(y.t["O9GI+v"]), (0, r.jsx)(o.NoS, {
               onClick: () => {
@@ -257,7 +257,7 @@ let U = e => {
                   subscriptionTier: m.Si.TIER_2,
                   analyticsLocations: [u.Z.CHECKOUT_RECOVERY_NAGBAR],
                   analyticsLocation: D.Sbl.CHECKOUT_RECOVERY_NAGBAR,
-                  onClose: () => i(C.L.UNKNOWN)
+                  onClose: () => i(f.L.UNKNOWN)
                 })
               },
               noticeType: U,

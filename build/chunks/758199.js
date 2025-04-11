@@ -1,7 +1,7 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
-  W: () => O,
-  u: () => E
+  W: () => N,
+  u: () => v
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(200651),
   a = n(192379),
@@ -30,7 +30,7 @@ function y() {
   }).apply(this, arguments)
 }
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,14 +48,14 @@ function v(e) {
   }
   return e
 }
-var E = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
+var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
-function O(e) {
+function N(e) {
   var t, n, r, l;
   let {
-    title: E,
-    header: O,
-    info: N,
+    title: v,
+    header: N,
+    info: O,
     staticBannerSrc: j,
     videoBannerSrc: C,
     bannerAspectRatio: S = 0,
@@ -127,12 +127,12 @@ function O(e) {
       style: {
         background: R
       },
-      children: [null != O && (0, i.jsxs)("div", {
+      children: [null != N && (0, i.jsxs)("div", {
         className: x.header,
         children: [(0, i.jsx)(c.Text, {
           variant: "eyebrow",
           color: "none",
-          children: O
+          children: N
         }), M]
       }), (0, i.jsxs)("div", {
         className: x.contentWrapper,
@@ -147,9 +147,9 @@ function O(e) {
             variant: "text-md/semibold",
             color: "none",
             lineClamp: 1,
-            children: E
-          }), N]
-        }), null == O && M]
+            children: v
+          }), O]
+        }), null == N && M]
       }), P.length > 0 && (0, i.jsx)("div", {
         className: x.actionWrapper,
         children: P.map((e, t) => {
@@ -176,9 +176,9 @@ function O(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);
                 return e
               }(e));
-              return (0, i.jsx)(c.zxk, v({}, d, t))
+              return (0, i.jsx)(c.zxk, E({}, d, t))
             }
-          }, n) : (0, i.jsx)(c.zxk, v({}, d), n)
+          }, n) : (0, i.jsx)(c.zxk, E({}, d), n)
         })
       })]
     })]

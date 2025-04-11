@@ -1,6 +1,6 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => v
+  Z: () => E
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -41,11 +41,11 @@ function y(e) {
     assets: d,
     currentUser: t,
     message: a
-  }), [d, t, a]), v = i.useMemo(() => x({
+  }), [d, t, a]), E = i.useMemo(() => x({
     assets: u,
     currentUser: t,
     message: a
-  }), [u, t, a]), E = i.useCallback(async () => {
+  }), [u, t, a]), v = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, g.v)({
@@ -117,17 +117,17 @@ function y(e) {
     color: l.Ttl.PRIMARY,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
-    onClick: E,
+    onClick: v,
     children: [(0, r.jsx)(c.Z, {
       className: b.CTAMessageSticker,
       isInteracting: h,
       sticker: y,
       size: 28
-    }), v]
+    }), E]
   })
 }
 
-function v(e) {
+function E(e) {
   let {
     channel: t,
     message: n,

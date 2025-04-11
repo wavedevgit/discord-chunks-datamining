@@ -1,4 +1,4 @@
-/** Chunk was on 92976 **/
+/** Chunk was on 91259 **/
 n.d(t, {
   K: () => F,
   P: () => B
@@ -21,10 +21,10 @@ var r = n(200651),
   b = n(213609),
   x = n(294218),
   y = n(373662),
-  v = n(695346),
-  E = n(496675),
-  O = n(626135),
-  N = n(585483),
+  E = n(695346),
+  v = n(496675),
+  N = n(626135),
+  O = n(585483),
   j = n(70956),
   C = n(324701),
   S = n(575016),
@@ -123,7 +123,7 @@ function B(e) {
   }, [n, s]), d = i.useCallback(() => {
     c(!s), s ? null == n || n() : null == t || t()
   }, [n, t, s]);
-  i.useEffect(() => (N.S.subscribe(R.CkL.TOGGLE_FOR_LATER, d), () => void N.S.unsubscribe(R.CkL.TOGGLE_FOR_LATER, d)), [d]);
+  i.useEffect(() => (O.S.subscribe(R.CkL.TOGGLE_FOR_LATER, d), () => void O.S.unsubscribe(R.CkL.TOGGLE_FOR_LATER, d)), [d]);
   let p = (0, m.e7)([I.Z], () => I.Z.hasOverdueReminder(), []);
   return (0, r.jsx)(f.yRy, {
     animation: f.yRy.Animation.NONE,
@@ -203,14 +203,14 @@ function H(e) {
     throttledNow: a
   } = e, o = (0, S.gr)(t), s = i.useCallback(async e => {
     var r;
-    await (0, S.fC)(t, o), e.shiftKey || n(), O.default.track(R.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
+    await (0, S.fC)(t, o), e.shiftKey || n(), N.default.track(R.rMx.FOR_LATER_SAVED_MESSAGE_JUMP, {
       channel_id: t.saveData.channelId,
       message_id: t.saveData.messageId,
       message_author_id: null == (r = t.message) ? void 0 : r.author.id,
       type: null != t.saveData.dueAt ? T._l.REMINDER : T._l.BOOKMARK,
       due_duration: null != t.saveData.dueAt ? u()().diff(t.saveData.dueAt) : void 0
     })
-  }, [n, t, o]), c = (0, m.e7)([E.Z], () => !!((null == o ? void 0 : o.type) === R.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || E.Z.can(R.Plq.VIEW_CHANNEL, o));
+  }, [n, t, o]), c = (0, m.e7)([v.Z], () => !!((null == o ? void 0 : o.type) === R.d4z.UNKNOWN || (null == o ? void 0 : o.isPrivate())) || v.Z.can(R.Plq.VIEW_CHANNEL, o));
   return null != o && null != t.message && c ? (0, r.jsxs)("div", {
     className: D.messageContainer,
     children: [(0, r.jsx)(f.P3F, {
@@ -226,7 +226,7 @@ function H(e) {
       message: t.message,
       channel: o,
       className: D.message,
-      compact: v.jU.getSetting(),
+      compact: E.jU.getSetting(),
       animateAvatar: !1,
       focusProps: W,
       trackAnnouncementViews: !0

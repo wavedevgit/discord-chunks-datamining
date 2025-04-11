@@ -13,8 +13,8 @@ var r = n(192379),
   u = n(430824),
   d = n(594174),
   p = n(731722),
-  _ = n(864133),
-  h = n(981631);
+  h = n(864133),
+  _ = n(981631);
 
 function f(e) {
   let {
@@ -22,7 +22,7 @@ function f(e) {
     fetchStatus: n,
     guildProfile: f
   } = (0, a.u)(e), m = function(e) {
-    let t = (0, l.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : h.lds);
+    let t = (0, l.FT)(o.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : _.lds);
     return (0, i.e7)([u.Z, d.default, c.ZP], () => {
       var t;
       if (null === e) return !1;
@@ -34,7 +34,7 @@ function f(e) {
       return null != i && !i.isPending
     }, [e]) && !t
   }(e), b = function(e, t) {
-    let n = (0, i.e7)([_.Z], () => null === e ? null : _.Z.getGuildLastSeenInfo(e)),
+    let n = (0, i.e7)([h.Z], () => null === e ? null : h.Z.getGuildLastSeenInfo(e)),
       r = (0, i.e7)([d.default], () => {
         var e;
         return null == (e = d.default.getCurrentUser()) ? void 0 : e.primaryGuild

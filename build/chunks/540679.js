@@ -17,7 +17,7 @@ let g = e => {
     onClose: t,
     channelId: n,
     transitionState: g
-  } = e, f = (0, a.e7)([c.ZP], () => c.ZP.getChannelMuteConfig(null, n)), _ = e => {
+  } = e, f = (0, a.e7)([c.ZP], () => c.ZP.getChannelMuteConfig(null, n)), b = e => {
     r.Z.updateChannelOverrideSettings(null, n, (0, u.u9)(e), s.ZB.Muted)
   };
   return (0, i.jsxs)(l.Y0X, {
@@ -40,7 +40,7 @@ let g = e => {
               value: n
             }
           }),
-          onChange: e => _(e.value),
+          onChange: e => b(e.value),
           value: null == f ? void 0 : f.selected_time_window
         })
       })
