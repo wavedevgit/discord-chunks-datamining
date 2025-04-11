@@ -1,6 +1,6 @@
 /**
   Module ID: 31649
-  Original File Name: 7e7b0a62f8736785
+  Original File Name: 97dec9cd5e1a7125
 **/
 .formGroup__9b8f6 {
     margin-bottom: 20px
@@ -20,15 +20,15 @@
 
 .modalCloseButton__9b8f6 {
     position: absolute;
-    right: 12px;
-    top: 12px
+    top: 12px;
+    right: 12px
 }
 
 .headerText__9b8f6 {
-    color: var(--interactive-active);
     font-size: 20px;
+    line-height: 24px;
     font-weight: 600;
-    line-height: 24px
+    color: var(--interactive-active)
 }
 
 .emojiButton__9b8f6.fullOpacity__9b8f6 {
@@ -36,18 +36,18 @@
 }
 
 .emojiButtonContainer__9b8f6 {
-    align-items: center;
     display: flex;
-    height: 100%;
-    left: 0;
-    margin: 0 10px;
+    align-items: center;
     position: absolute;
-    top: 0
+    left: 0;
+    top: 0;
+    margin: 0 10px;
+    height: 100%
 }
 
 .emoji__9b8f6 {
-    height: 22px;
-    width: 22px
+    width: 22px;
+    height: 22px
 }
 
 .input__9b8f6 {
@@ -56,15 +56,15 @@
 }
 
 .clearButton__9b8f6 {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    line-height: 0;
-    opacity: .6;
     position: absolute;
-    right: 10px;
     top: 0;
-    transition: opacity .2s ease-in-out
+    right: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: opacity .2s ease-in-out;
+    line-height: 0;
+    opacity: .6
 }
 
 .clearButton__9b8f6:focus,.clearButton__9b8f6:hover {
@@ -72,9 +72,9 @@
 }
 
 .clearIcon__9b8f6 {
-    color: var(--interactive-normal);
+    width: 16px;
     height: 16px;
-    width: 16px
+    color: var(--interactive-normal)
 }
 
 .headerContainer__9b8f6 {
@@ -83,23 +83,23 @@
 }
 
 .header__9b8f6 {
-    align-items: center;
+    padding-top: 52px;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 52px;
-    width: 100%
+    align-items: center
 }
 
 .art__9b8f6 {
-    background-image: url(/assets/7d67842f58b6d155.svg);
-    background-repeat: no-repeat;
     background-size: contain;
-    height: 120px;
-    left: 50%;
+    background-repeat: no-repeat;
     position: absolute;
     top: 0;
+    left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    width: 200px
+    width: 200px;
+    height: 120px;
+    background-image: url(/assets/7d67842f58b6d155.svg)
 }
 
 .cancelButton__9b8f6 {
@@ -107,12 +107,13 @@
 }
 
 .cancelButton__9b8f6:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .statusOptionItem__9b8f6 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .statusIcon__9b8f6 {
@@ -128,8 +129,8 @@
 }
 
 .custom-user-profile-theme .avatar__8771c {
-    left: 16px;
-    top: 61px
+    top: 61px;
+    left: 16px
 }
 
 .formGroup_dbc4b7 {
@@ -145,16 +146,16 @@
 }
 
 .hiddenPlaceholder_dbc4b7 {
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    height: 0;
-    letter-spacing: inherit;
-    pointer-events: none;
     position: absolute;
     visibility: hidden;
-    white-space: nowrap;
+    height: 0;
     width: auto;
+    white-space: nowrap;
+    pointer-events: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    letter-spacing: inherit;
     z-index: -1
 }
 
@@ -164,17 +165,17 @@
 
 .emojiButtonContainer_dbc4b7 {
     display: flex;
-    height: 100%;
-    left: 0;
-    margin: 0 10px;
     position: absolute;
+    left: 0;
     top: 0;
-    z-index: 1
+    margin: 0 10px;
+    z-index: 1;
+    height: 100%
 }
 
 .emoji_dbc4b7 {
-    height: 22px;
-    width: 22px
+    width: 22px;
+    height: 22px
 }
 
 .input_dbc4b7 {
@@ -183,12 +184,12 @@
 }
 
 .clearButtonWrapper_dbc4b7 {
-    display: flex;
-    height: 100%;
     max-height: 50px;
+    height: 100%;
     position: absolute;
+    top: 0;
     right: 10px;
-    top: 0
+    display: flex
 }
 
 .clearButton_dbc4b7 {
@@ -204,36 +205,36 @@
 }
 
 .clearIcon_dbc4b7 {
-    color: var(--interactive-normal);
+    width: 16px;
     height: 16px;
-    width: 16px
+    color: var(--interactive-normal)
 }
 
 .header_dbc4b7 {
-    align-items: center;
+    position: relative;
     display: flex;
     justify-content: flex-end;
-    position: relative
+    align-items: center
 }
 
 .headerTitle_dbc4b7 {
-    left: 50%;
     position: absolute;
-    text-align: center;
-    transform: translateX(-50%)
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center
 }
 
 .headerCloseButton_dbc4b7 {
     flex-shrink: 0;
-    margin-right: -8px;
-    padding: 0
+    padding: 0;
+    margin-right: -8px
 }
 
 .footer_dbc4b7 {
-    align-items: center;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    width: 100%
+    align-items: center;
+    justify-content: space-between
 }
 
 .clearAfterSelectContainer_dbc4b7 {
@@ -241,22 +242,21 @@
 }
 
 .profilePreview_dbc4b7 {
-    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 36px;
+    width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 36px;
-    margin-top: 8px;
-    width: 100%
+    align-items: center
 }
 
 .needInspiration_dbc4b7 {
+    display: flex;
     align-items: center;
+    gap: 4px;
     color: var(--interactive-normal);
     cursor: pointer;
-    display: flex;
-    gap: 4px;
     margin-top: 10px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
@@ -271,4 +271,4 @@
     opacity: .5
 }
 
-/*# sourceMappingURL=7e7b0a62f8736785.css.map*/
+/*# sourceMappingURL=97dec9cd5e1a7125.css.map*/

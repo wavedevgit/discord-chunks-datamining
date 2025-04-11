@@ -1,16 +1,16 @@
 /**
   Module ID: 99922
-  Original File Name: 053a407e2fbd8f90
+  Original File Name: 2f3ebafbd19b9205
 **/
 .container__6b668 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border: 1px solid transparent;
-    border-radius: var(--radius-sm);
-    cursor: pointer;
     display: flex;
     flex-direction: row;
-    padding: var(--spacing-12)
+    align-items: center;
+    background-color: var(--background-secondary-alt);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-12);
+    border: 1px solid transparent;
+    cursor: pointer
 }
 
 .containerActive__6b668 {
@@ -22,20 +22,20 @@
 }
 
 .textContainer__6b668 {
-    display: grid;
     width: 100%;
+    display: grid;
     grid-gap: 4px;
     align-items: center
 }
 
 .container_a9b435 {
-    align-items: center;
-    background-color: var(--background-tertiary);
-    border-radius: var(--radius-xs);
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: var(--spacing-12);
     margin-top: var(--spacing-24);
-    padding: var(--spacing-12)
+    background-color: var(--background-tertiary);
+    border-radius: var(--radius-xs)
 }
 
 .nitroWheel_a9b435 {
@@ -51,20 +51,20 @@
 }
 
 .header__654c5 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .nitroWheelContainer__654c5 {
-    cursor: pointer;
-    margin-left: var(--spacing-4)
+    margin-left: var(--spacing-4);
+    cursor: pointer
 }
 
 .nitroWheel__654c5 {
-    color: var(--text-normal);
+    width: 20px;
     height: 20px;
-    width: 20px
+    color: var(--text-normal)
 }
 
 .newBadge__654c5 {
@@ -76,11 +76,11 @@
 }
 
 .warningContainer__654c5 {
+    padding: var(--spacing-8);
     background-color: var(--background-tertiary);
-    border-radius: var(--radius-xs);
-    display: flex;
     flex-direction: row;
-    padding: var(--spacing-8)
+    display: flex;
+    border-radius: var(--radius-xs)
 }
 
 .warningLabel__654c5 {
@@ -92,16 +92,18 @@
 }
 
 .options__654c5 {
-    -moz-column-gap: var(--spacing-8);
-    column-gap: var(--spacing-8);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: var(--spacing-8);
+    -moz-column-gap: var(--spacing-8);
+    column-gap: var(--spacing-8);
+    grid-row-gap: var(--spacing-8);
     row-gap: var(--spacing-8)
 }
 
 .option__654c5 {
-    border: 1px solid transparent;
-    margin: 0
+    margin: 0;
+    border: 1px solid transparent
 }
 
 .optionRedesign__654c5 {
@@ -125,8 +127,8 @@
 }
 
 .advanceSettingTitle_e7c13f {
-    align-items: center;
-    display: inline-flex
+    display: inline-flex;
+    align-items: center
 }
 
 .settingTitleIcon_e7c13f {
@@ -150,20 +152,21 @@
 }
 
 .rowName__4126d,.rowOption__4126d {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .rowOption__4126d {
-    justify-content: center;
-    width: 80px
+    width: 80px;
+    justify-content: center
 }
 
 .customRow__4126d {
+    padding: 12px;
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(2,1fr);
-    padding: 12px
+    grid-gap: 20px;
+    gap: 20px
 }
 
 .icon__4126d {
@@ -171,13 +174,11 @@
 }
 
 .channels__4126d {
-    background-color: var(--bg-base-secondary);
-    border-color: var(--bg-mod-subtle);
     border-radius: 8px;
-    border-style: solid;
-    border-width: 1px;
-    margin-top: 8px;
-    padding-right: 0
+    padding-right: 0;
+    border: 1px solid var(--bg-mod-subtle);
+    background-color: var(--bg-base-secondary);
+    margin-top: 8px
 }
 
 .channelRow__4126d {
@@ -208,22 +209,20 @@
 }
 
 .separator__4126d {
-    border-color: var(--bg-mod-subtle);
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid var(--bg-mod-subtle);
     margin: 0 12px
 }
 
 .mutedConfig__3e00b {
     display: flex;
-    justify-content: space-between;
-    margin-top: 16px
+    margin-top: 16px;
+    justify-content: space-between
 }
 
 .setting__9c019 {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    justify-content: space-between
 }
 
 .setting__9c019:first-child {
@@ -243,8 +242,8 @@
 }
 
 .presetSeparator__9c019 {
-    background-color: var(--modal-background);
-    height: 1px
+    height: 1px;
+    background-color: var(--modal-background)
 }
 
 .segmentedControl__9c019 {
@@ -265,9 +264,10 @@
 
 .grid__9c019 {
     display: grid;
-    gap: 24px;
     grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    gap: 24px
 }
 
 .grid__9c019:not(:first-child) {
@@ -285,13 +285,13 @@
 
 .channeList__9c019 {
     border-radius: 12px;
-    overflow: hidden;
-    padding: 8px 0
+    padding: 8px 0;
+    overflow: hidden
 }
 
 .channelListChannel__9c019 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 8px
 }
@@ -301,13 +301,13 @@
 }
 
 .channelListChannelIcon__9c019 {
-    color: var(--text-normal);
-    margin-right: 6px
+    margin-right: 6px;
+    color: var(--text-normal)
 }
 
 .channelListChannelName__9c019 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .muted__9c019 {
@@ -315,12 +315,12 @@
 }
 
 .unread__9c019 {
-    background-color: var(--text-normal);
-    border-radius: 6px;
-    height: 6px;
-    margin-left: -3px;
     margin-right: 6px;
-    width: 6px
+    margin-left: -3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background-color: var(--text-normal)
 }
 
 .unreadMuted__9c019 {
@@ -344,36 +344,36 @@
 }
 
 .theme-light .mockMessageDisabled__9c019 {
-    background-color: hsla(0,0%,89%,.8)
+    background-color: hsla(0,0%,88.6%,.8)
 }
 
 .mockMessage__9c019 {
-    align-items: center;
     border-radius: 12px;
-    display: flex;
     padding: 12px;
+    display: flex;
+    align-items: center;
     position: relative
 }
 
 .mockMessageDisabled__9c019 {
-    border-radius: 12px;
-    bottom: 0;
-    left: 0;
     position: absolute;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
     right: 0;
-    top: 0
+    bottom: 0
 }
 
 .mockMessageAvatar__9c019 {
-    border-radius: 50px;
+    width: 50px;
     height: 50px;
-    margin-right: 12px;
-    width: 50px
+    border-radius: 50px;
+    margin-right: 12px
 }
 
 .separator__9c019 {
-    background-color: var(--bg-mod-subtle);
-    height: 1px
+    height: 1px;
+    background-color: var(--bg-mod-subtle)
 }
 
 .channeList__9c019,.mockMessage__9c019 {
@@ -381,8 +381,8 @@
 }
 
 .header_da32a8 {
-    background-color: var(--bg-base-tertiary);
-    justify-content: space-between
+    justify-content: space-between;
+    background-color: var(--bg-base-tertiary)
 }
 
 .header_da32a8,.headerLeft_da32a8 {
@@ -396,8 +396,8 @@
 
 .sectionContent_da32a8 {
     background-color: var(--bg-base-secondary);
-    border-radius: 12px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    border-radius: 12px
 }
 
 .sectionContentPadding_da32a8 {
@@ -445,11 +445,11 @@
 
 .checkboxContainer_db81c6:before {
     content: "";
-    height: 100%;
-    left: -26px;
     position: absolute;
     top: 0;
-    width: 1px
+    left: -26px;
+    width: 1px;
+    height: 100%
 }
 
 .checkboxMute_db81c6 {
@@ -459,13 +459,13 @@
 }
 
 .checkboxMute_db81c6:before {
-    background-color: var(--opacity-black-8);
-    bottom: -16px;
     content: "";
-    left: -26px;
     position: absolute;
+    top: -16px;
+    left: -26px;
     right: -26px;
-    top: -16px
+    bottom: -16px;
+    background-color: var(--opacity-black-8)
 }
 
 .checkboxContainerMuted_db81c6 {
@@ -495,11 +495,11 @@
 }
 
 .override_db81c6,.overrideHighlight_db81c6 {
-    align-items: stretch;
-    display: flex;
     margin-bottom: 8px;
-    padding: 10px 0 10px 10px;
     position: relative;
+    padding: 10px 0 10px 10px;
+    display: flex;
+    align-items: stretch;
     transition: background-color .1s ease-in-out
 }
 
@@ -508,13 +508,13 @@
 }
 
 .overridePlaceholder_db81c6 {
-    align-items: center;
-    border-radius: 3px;
-    display: flex;
-    height: 56px;
-    justify-content: center;
     margin-bottom: 8px;
-    text-align: center
+    height: 56px;
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 .nameContainer_db81c6 {
@@ -522,8 +522,8 @@
 }
 
 .icon_db81c6 {
-    align-self: center;
     flex-shrink: 0;
+    align-self: center;
     height: 20px
 }
 
@@ -531,27 +531,27 @@
 }
 
 .header_db81c6 {
-    color: var(--text-normal);
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    color: var(--text-normal)
 }
 
 .headerName_db81c6 {
-    flex: 1 1 auto;
-    margin-left: 8px
+    margin-left: 8px;
+    flex: 1 1 auto
 }
 
 .headerOption_db81c6 {
     cursor: default;
-    flex: 0 0 auto;
     text-align: center;
-    width: 75px
+    width: 75px;
+    flex: 0 0 auto
 }
 
 .removeOverride_db81c6 {
-    opacity: 0;
     position: absolute;
+    top: -12px;
     right: -12px;
-    top: -12px
+    opacity: 0
 }
 
 .channelNameContainer_db81c6 {
@@ -573,10 +573,10 @@
 }
 
 .channelNameCategory_db81c6 {
-    font-size: 11px;
     font-weight: 500;
     opacity: .3;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-size: 11px
 }
 
 .betaTag_db81c6 {
@@ -632,4 +632,4 @@
     padding-bottom: var(--spacing-12)
 }
 
-/*# sourceMappingURL=053a407e2fbd8f90.css.map*/
+/*# sourceMappingURL=2f3ebafbd19b9205.css.map*/

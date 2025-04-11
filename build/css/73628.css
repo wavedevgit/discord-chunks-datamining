@@ -1,6 +1,6 @@
 /**
   Module ID: 73628
-  Original File Name: ffdde64d8a589e9b
+  Original File Name: 7b5e7340032d4266
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -47,12 +47,12 @@
 }
 
 .container_fcf29c {
-    background-color: var(--background-floating);
-    border-radius: 5px;
     box-shadow: var(--legacy-elevation-high);
-    overflow: hidden;
     padding: 10px 10px 10px 16px;
+    overflow: hidden;
+    border-radius: 5px;
     transition-duration: .2s;
+    background-color: var(--background-floating);
     transition-property: background-color,color,border-color;
     transition-timing-function: ease
 }
@@ -63,10 +63,10 @@
 }
 
 .flexContainer_fcf29c {
-    align-items: center;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    position: relative
+    align-items: center;
+    justify-content: space-between
 }
 
 .shrinkingContainer_fcf29c {
@@ -74,10 +74,10 @@
 }
 
 .actions_fcf29c {
-    display: flex;
     flex-grow: 0;
-    gap: 0 10px;
-    justify-content: end
+    display: flex;
+    justify-content: end;
+    gap: 0 10px
 }
 
 .resetButton_fcf29c {
@@ -86,12 +86,12 @@
 }
 
 .message_fcf29c {
-    font-size: 16px;
     font-weight: 500;
+    font-size: 16px;
     line-height: 20px;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .theme-light .notice_fcf29c {
@@ -107,15 +107,15 @@
 }
 
 .visual-refresh .container_fcf29c {
+    border-radius: var(--radius-sm);
     background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm)
+    border: 1px solid var(--border-subtle)
 }
 
 .visual-refresh .container_fcf29c[data-emphasized=true] {
     background-color: var(--background-feedback-critical);
-    border-color: var(--border-feedback-critical);
-    color: var(--text-feedback-critical)
+    color: var(--text-feedback-critical);
+    border-color: var(--border-feedback-critical)
 }
 
 .enable-forced-colors .container_fcf29c {
@@ -145,17 +145,17 @@
 }
 
 .roleTag__9cd44 {
-    align-items: center;
-    background: var(--background-modifier-hover);
+    padding: 8px;
     border-radius: 4px;
-    padding: 8px
+    background: var(--background-modifier-hover);
+    align-items: center
 }
 
 .roleColor__9cd44 {
-    border-radius: 6px;
-    flex: none;
+    width: 12px;
     height: 12px;
-    width: 12px
+    border-radius: 6px;
+    flex: none
 }
 
 .productCard__79d38 {
@@ -181,31 +181,32 @@
 }
 
 .productThumbnail__79d38 {
-    background: #2b2c31;
+    width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
-    width: 100%
+    background: #2b2c31
 }
 
 .purchaseToUnlockBadge__79d38 {
-    align-items: center;
-    background-color: rgba(43,45,49,.7);
-    border-radius: 30px;
-    color: var(--white-500);
-    display: flex;
-    gap: 6px;
-    justify-content: center;
-    left: 50%;
-    padding: 4px 12px;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    transition: background-color .2s ease-in-out;
-    white-space: nowrap
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 30px;
+    color: var(--white-500);
+    background-color: rgba(43,45,49,.7);
+    white-space: nowrap;
+    transition: background-color .2s ease-in-out
 }
 
 .draftBadge__79d38 {
-    bottom: 10px;
     position: absolute;
+    bottom: 10px;
     right: 8px
 }
 
@@ -214,30 +215,30 @@
 }
 
 .lockIcon__79d38 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .productName__79d38 {
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .productDetails__79d38 {
-    align-content: flex-start;
-    border-bottom: 1px solid var(--background-modifier-accent);
     display: flex;
     flex-direction: row;
+    padding: 16px;
+    border-bottom: 1px solid var(--background-modifier-accent);
     flex-grow: 1;
-    padding: 16px
+    align-content: flex-start
 }
 
 .productDetailContent__79d38 {
     display: flex;
-    flex: 1;
     flex-direction: column;
     gap: 4px;
+    flex: 1;
     margin-right: 24px;
     overflow: hidden
 }
@@ -253,11 +254,11 @@
 }
 
 .showMoreButton__79d38 {
-    align-items: center;
-    color: var(--interactive-hover);
+    padding-top: 2px;
     display: flex;
     gap: 4px;
-    padding-top: 2px
+    color: var(--interactive-hover);
+    align-items: center
 }
 
 .arrowIcon__79d38 {
@@ -265,8 +266,8 @@
 }
 
 .hasAction__79d38 {
-    color: var(--text-link);
-    cursor: pointer
+    cursor: pointer;
+    color: var(--text-link)
 }
 
 .cardClickableContainer__79d38 {
@@ -277,32 +278,32 @@
 }
 
 .base_e42a84 {
-    background-position: 0;
     display: block;
-    position: absolute
+    position: absolute;
+    background-position: 0
 }
 
 .sparkle_e42a84 {
-    animation: sparkle_e42a84 1.5s steps(17,start) infinite forwards;
-    background-position: -731px;
-    background-size: 774px 43px;
+    width: 43px;
     height: 43px;
-    width: 43px
+    background-size: 774px 43px;
+    background-position: -731px;
+    animation: sparkle_e42a84 1.5s steps(17,start) infinite forwards
 }
 
 .pop_e42a84 {
-    animation: pop_e42a84 2.91666666667s steps(34,start) infinite forwards;
-    background-position: -816px;
-    background-size: 840px 24px;
+    width: 24px;
     height: 24px;
-    width: 24px
+    background-size: 840px 24px;
+    background-position: -816px;
+    animation: pop_e42a84 2.91666666667s steps(34,start) infinite forwards
 }
 
 .light_e42a84 {
-    animation: light_e42a84 2.58333333333s steps(30,start) infinite forwards;
-    background-size: 620px 20px;
+    width: 20px;
     height: 20px;
-    width: 20px
+    background-size: 620px 20px;
+    animation: light_e42a84 2.58333333333s steps(30,start) infinite forwards
 }
 
 .cross_e42a84,.light_e42a84 {
@@ -310,10 +311,10 @@
 }
 
 .cross_e42a84 {
-    animation: cross_e42a84 2.083325s steps(23,start) infinite forwards;
-    background-size: 625px 25px;
+    width: 25px;
     height: 25px;
-    width: 25px
+    background-size: 625px 25px;
+    animation: cross_e42a84 2.083325s steps(23,start) infinite forwards
 }
 
 .sparkleBlurple_e42a84,.sparkleGrey_e42a84,.sparkleWhite_e42a84 {
@@ -445,10 +446,9 @@
 .addFileButtonLook_f8a8fa {
     background-color: var(--button-secondary-background);
     color: var(--white-500);
-    padding: 0 10px;
-    width: -webkit-max-content;
     width: -moz-max-content;
-    width: max-content
+    width: max-content;
+    padding: 0 10px
 }
 
 .addFileButtonLook_f8a8fa:hover {
@@ -470,15 +470,14 @@
 }
 
 .addFileButtonIcon_f8a8fa {
-    -webkit-margin-end: 6px;
-    margin-inline-end: 6px
+    margin-right: 6px
 }
 
 .separator_f8a8fa {
-    background-color: var(--background-modifier-hover);
+    width: 100%;
     height: 1px;
-    margin: 16px 0;
-    width: 100%
+    background-color: var(--background-modifier-hover);
+    margin: 16px 0
 }
 
 .attachedFilesContainer_f8a8fa {
@@ -495,16 +494,15 @@
     border-radius: 8px;
     color: var(--interactive-normal);
     display: flex;
+    padding-left: 10px;
     flex: 0;
-    flex-direction: row;
-    padding-left: 10px
+    flex-direction: row
 }
 
 .attachedFileCardSpinner_f8a8fa {
-    height: 24px;
     width: 24px;
-    -webkit-margin-start: 8px;
-    margin-inline-start: 8px
+    height: 24px;
+    margin-left: 8px
 }
 
 .attachedFileCardError_f8a8fa {
@@ -513,9 +511,9 @@
 
 .attachedFileCardUploading_f8a8fa {
     opacity: .3;
-    padding-bottom: 6px;
     padding-right: 10px;
-    padding-top: 6px
+    padding-top: 6px;
+    padding-bottom: 6px
 }
 
 .deleteButton_f8a8fa {
@@ -529,13 +527,13 @@
 }
 
 .content__33e3e {
-    max-width: 760px;
-    padding: 16px
+    padding: 16px;
+    max-width: 760px
 }
 
 .header__33e3e {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .warningIcon__33e3e {
@@ -547,40 +545,40 @@
 }
 
 .imageSelectionContainer_da21bd {
+    position: relative;
     display: flex;
-    gap: 8px;
-    position: relative
+    gap: 8px
 }
 
 .clickableItem_da21bd {
-    border-radius: 6px;
-    cursor: pointer;
+    width: 135px;
     height: 76px;
+    cursor: pointer;
     overflow: hidden;
-    width: 135px
+    border-radius: 6px
 }
 
 .uploadButton_da21bd {
-    align-items: center;
-    border: 1px dashed var(--interactive-muted);
-    color: var(--text-muted);
+    position: relative;
+    height: 74px;
+    margin: 2px 2px 2px 0;
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    height: 74px;
     justify-content: center;
-    margin: 2px 2px 2px 0;
-    position: relative
+    align-items: center;
+    gap: 4px;
+    border: 1px dashed var(--interactive-muted);
+    color: var(--text-muted)
 }
 
 .customImageActionContainer_da21bd {
+    position: absolute;
+    left: 87px;
+    top: -4px;
+    display: flex;
     background-color: var(--background-secondary);
     border-radius: var(--radius-xs);
     box-shadow: var(--elevation-stroke);
-    display: flex;
-    left: 87px;
-    position: absolute;
-    top: -4px;
     transition: opacity .15s ease-in-out;
     z-index: 2
 }
@@ -594,13 +592,13 @@
 }
 
 .customImageAction_da21bd {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
+    width: 28px;
     height: 26px;
-    justify-content: center;
     padding-bottom: 2px;
-    width: 28px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer
 }
 
 .editIcon_da21bd {
@@ -608,8 +606,8 @@
 }
 
 .deleteIcon_da21bd,.editIcon_da21bd {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .deleteIcon_da21bd {
@@ -618,8 +616,8 @@
 
 .radioGroup_da21bd {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px
+    gap: 8px;
+    flex-wrap: wrap
 }
 
 .radioOption_da21bd {
@@ -627,9 +625,10 @@
 }
 
 .radioOptionImage_da21bd {
+    width: 135px;
     height: 76px;
-    object-fit: cover;
-    width: 135px
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .selected_da21bd {
@@ -637,8 +636,8 @@
 }
 
 .disabled_da21bd {
-    cursor: not-allowed;
-    opacity: .3
+    opacity: .3;
+    cursor: not-allowed
 }
 
 .hidden_da21bd {
@@ -647,13 +646,13 @@
 
 .container_b6a3c4 {
     align-items: center;
-    background: var(--background-modifier-hover);
-    border: 1px solid transparent;
-    border-radius: var(--radius-sm);
     display: flex;
     flex-direction: row;
     gap: 16px;
-    padding: 12px
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    background: var(--background-modifier-hover);
+    border: 1px solid transparent
 }
 
 .full-motion .container_b6a3c4 {
@@ -661,15 +660,15 @@
 }
 
 .publishable_b6a3c4 {
-    background: rgba(32,123,141,.1);
     border: 1px solid var(--button-creator-revenue-background);
+    background: rgba(32,123,141,.1);
     box-shadow: 0 0 10px 0 rgba(32,123,141,.5)
 }
 
 .explanationColumn_b6a3c4 {
     display: flex;
-    flex: 2;
     flex-direction: column;
+    flex: 2;
     gap: 4px
 }
 
@@ -709,23 +708,23 @@
 }
 
 .roleColorContainer_cfa6c7 {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    padding-right: 10px;
     position: absolute;
     right: 0;
-    top: 0
+    top: 0;
+    padding-right: 10px;
+    height: 100%;
+    align-items: center;
+    display: flex
 }
 
 .dropperIconContainer_cfa6c7 {
-    cursor: pointer;
-    height: 16px
+    height: 16px;
+    cursor: pointer
 }
 
 .dropperIconContainer_cfa6c7:hover {
-    opacity: .85;
-    transition: opacity .2s ease
+    transition: opacity .2s ease;
+    opacity: .85
 }
 
 .dropperIcon_cfa6c7 {
@@ -733,9 +732,9 @@
 }
 
 .roleColorPreview_cfa6c7 {
-    border-radius: 50%;
+    width: 16px;
     height: 16px;
-    width: 16px
+    border-radius: 50%
 }
 
 .input_cfa6c7 {
@@ -756,19 +755,19 @@
 }
 
 .attachedRoleContainer_e3f977 {
-    align-items: center;
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-modifier-active);
-    border-radius: 6px;
     display: inline-flex;
-    padding: 12px 10px
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 6px;
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-modifier-active)
 }
 
 .attachedRoleColor_e3f977 {
-    border-radius: 50%;
     flex-shrink: 0;
+    width: 16px;
     height: 16px;
-    width: 16px
+    border-radius: 50%
 }
 
 .attachedRoleClose_e3f977 {
@@ -776,8 +775,8 @@
 }
 
 .attachedRoleClose_e3f977:hover {
-    opacity: .7;
-    transition: opacity .2s ease
+    transition: opacity .2s ease;
+    opacity: .7
 }
 
 .attachedRoleCloseIcon_e3f977 {
@@ -786,8 +785,8 @@
 }
 
 .detachWarningHeading_e3f977 {
-    margin-bottom: 4px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 4px
 }
 
 .detachWarningHeading_e3f977,.reattachRoleRow_e3f977,.restoreDetachedRoleButtonInner_e3f977 {
@@ -797,17 +796,17 @@
 }
 
 .modalRoot__7fffd {
-    border-radius: 12px;
+    max-width: 1026px;
     height: 896px;
-    margin: 0 40px;
-    max-width: 1026px
+    border-radius: 12px;
+    margin: 0 40px
 }
 
 .modalHeader__7fffd {
-    border-bottom: 1px solid var(--background-modifier-accent);
-    gap: 8px;
+    padding: 24px 16px 24px 24px;
     justify-content: space-between;
-    padding: 24px 16px 24px 24px
+    gap: 8px;
+    border-bottom: 1px solid var(--background-modifier-accent)
 }
 
 .headerText__7fffd {
@@ -817,17 +816,17 @@
 }
 
 .modalContent__7fffd {
+    padding: 0;
     background-color: var(--background-primary);
     display: grid;
-    grid-template-columns: 1fr 1px 388px;
-    padding: 0
+    grid-template-columns: 1fr 1px 388px
 }
 
 .productFieldsSection__7fffd {
+    padding: 24px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    padding: 24px
+    gap: 24px
 }
 
 .nameArea__7fffd {
@@ -848,9 +847,9 @@
 }
 
 .productPreview__7fffd {
+    padding: 24px 16px 24px 24px;
     display: flex;
-    flex-direction: column;
-    padding: 24px 16px 24px 24px
+    flex-direction: column
 }
 
 .productPreviewCtaButton__7fffd {
@@ -873,13 +872,13 @@
 }
 
 .benefitToggleContainer__7fffd {
+    display: flex;
     align-items: center;
+    justify-content: center;
     background-color: var(--background-modifier-hover);
     border-radius: 8px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 7px 10px
+    padding: 7px 10px;
+    cursor: pointer
 }
 
 .disabled__7fffd {
@@ -897,8 +896,8 @@
 }
 
 .verticalSeparator__7fffd {
-    height: 1px;
-    width: 100%
+    width: 100%;
+    height: 1px
 }
 
 .successNoticeContainer__7fffd {
@@ -908,16 +907,16 @@
 }
 
 .successNotice__7fffd {
-    bottom: 20px;
     left: auto;
     right: auto;
-    width: 480px
+    width: 480px;
+    bottom: 20px
 }
 
 .successNoticeMessage__7fffd {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 16px
 }
 
-/*# sourceMappingURL=ffdde64d8a589e9b.css.map*/
+/*# sourceMappingURL=7b5e7340032d4266.css.map*/

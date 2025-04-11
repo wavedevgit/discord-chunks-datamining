@@ -1,35 +1,35 @@
 /**
   Module ID: 50331
-  Original File Name: ebe84b931f44db61
+  Original File Name: 4a5649c3e987ed7d
 **/
 .mainChannelContainer__3e027 {
-    align-items: stretch;
     display: flex;
+    align-items: stretch;
     flex: 1;
     flex-direction: column;
     gap: 4px;
-    margin-bottom: 20px;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 
 .enableAlertsContainer__3e027 {
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 4px;
     background-color: var(--background-secondary-alt);
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 4px;
     cursor: pointer;
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: space-between;
-    padding: 12px;
-    transition: background-color .1s,border-color .1s
+    transition: background-color .1s, border-color .1s
 }
 
 .enableAlertsContainer__3e027:hover {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-modifier-hover)
+    border: 1px solid var(--background-modifier-hover);
+    background-color: var(--background-secondary)
 }
 
 .enabledAlertsCheckbox__3e027 {
@@ -39,12 +39,12 @@
 .channelSelect__3e027 {
     background-color: var(--background-secondary-alt)!important;
     border: 1px solid var(--background-modifier-accent)!important;
-    transition: background-color .1s,border-color .1s
+    transition: background-color .1s, border-color .1s
 }
 
 .channelSelect__3e027:hover {
-    background-color: var(--background-secondary)!important;
-    border: 1px solid var(--background-modifier-hover)!important
+    border: 1px solid var(--background-modifier-hover)!important;
+    background-color: var(--background-secondary)!important
 }
 
-/*# sourceMappingURL=ebe84b931f44db61.css.map*/
+/*# sourceMappingURL=4a5649c3e987ed7d.css.map*/

@@ -1,24 +1,24 @@
 /**
   Module ID: 49843
-  Original File Name: 10c8c03ed886ad33
+  Original File Name: 2a2e362446c06506
 **/
 .menu__43313 {
     max-height: 70vh
 }
 
 .upsellOuter__50e68 {
-    border-radius: var(--radius-sm);
     margin: 8px 12px;
+    border-radius: var(--radius-sm);
     position: relative
 }
 
 .upsellInner__50e68 {
-    background: linear-gradient(to right,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.1) 0,hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.1) 100%) border-box;
-    border-radius: calc(var(--radius-sm) - 2px);
+    padding: 12px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding: 12px
+    border-radius: calc(var(--radius-sm) - 2px);
+    background: linear-gradient(90deg,hsl(var(--premium-tier-2-purple-for-gradients-hsl)/.1) 0,hsl(var(--premium-tier-2-pink-for-gradients-hsl)/.1)) border-box
 }
 
 .upsellTitle__50e68 {
@@ -31,10 +31,10 @@
 }
 
 .close__50e68 {
-    cursor: pointer;
     position: absolute;
     right: 8px;
-    top: 8px
+    top: 8px;
+    cursor: pointer
 }
 
 .closeIcon__50e68 {
@@ -42,23 +42,23 @@
 }
 
 .effectsWrapper__78936 {
-    height: 100%;
-    position: relative
+    position: relative;
+    height: 100%
 }
 
 .effects__78936 {
+    position: absolute;
     bottom: 0;
     left: 0;
-    position: absolute;
     right: 0;
     top: 0
 }
 
 .text_c8b06d {
-    color: var(--opacity-white-80);
+    line-height: 12px;
     font-size: 12px;
     font-weight: 500;
-    line-height: 12px
+    color: var(--opacity-white-80)
 }
 
 .textLeft_c8b06d,.textRight_c8b06d {
@@ -90,8 +90,8 @@
 }
 
 .singleLineContainer_c8b06d {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .barInSingleLine_c8b06d {
@@ -106,17 +106,17 @@
 }
 
 .ellipsis__2ef49 {
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .headerContainer__2ef49 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 8px;
+    width: 100%;
     min-width: 0;
-    width: 100%
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between
 }
 
 .headerText__2ef49 {
@@ -147,12 +147,13 @@
 }
 
 .openGameProfile__2ef49:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .assets__2ef49 {
-    align-self: flex-start;
-    position: relative
+    position: relative;
+    align-self: flex-start
 }
 
 .assetsLargeMaskStreamPreview__2ef49,.assetsLargeMaskVoiceChannel__2ef49 {
@@ -169,6 +170,7 @@
     -webkit-user-drag: none;
     border-radius: 8px;
     display: block;
+    -o-object-fit: cover;
     object-fit: cover
 }
 
@@ -177,58 +179,58 @@
 }
 
 .assetsLargeImageStreamPreview__2ef49,.assetsLargeImageStreamPreviewXbox__2ef49 {
-    height: 60px;
-    width: 60px
+    width: 60px;
+    height: 60px
 }
 
 .assetsLargeImageStreamPreview__2ef49,.assetsLargeImageStreamPreviewXbox__2ef49 {
 }
 
 .assetsLargeImageActivityFeed__2ef49,.assetsLargeImageActivityFeedXbox__2ef49 {
-    height: 90px;
-    width: 90px
+    width: 90px;
+    height: 90px
 }
 
 .assetsLargeImageActivityFeed__2ef49,.assetsLargeImageActivityFeedXbox__2ef49 {
 }
 
 .assetsLargeImageVoiceChannel__2ef49 {
-    height: 64px;
-    width: 64px
+    width: 64px;
+    height: 64px
 }
 
 .assetsLargeImageActivityFeedTwitch__2ef49 {
-    border-radius: 8px;
+    width: 100%;
     height: 260px;
     -webkit-mask: linear-gradient(0deg,transparent 10%,#000 80%);
     mask: linear-gradient(0deg,transparent 10%,#000 80%);
-    width: 100%
+    border-radius: 8px
 }
 
 .assetsSmallImage__2ef49 {
     -webkit-user-drag: none;
     border-radius: 50%;
-    bottom: -4px;
     position: absolute;
+    bottom: -4px;
     right: -4px
 }
 
 .assetsSmallImageStreamPreview__2ef49,.assetsSmallImageVoiceChannel__2ef49 {
-    height: 20px;
-    width: 20px
+    width: 20px;
+    height: 20px
 }
 
 .assetsSmallImageStreamPreview__2ef49,.assetsSmallImageVoiceChannel__2ef49 {
 }
 
 .assetsSmallImageActivityFeed__2ef49 {
-    height: 30px;
     width: 30px;
+    height: 30px;
 }
 
 .assetsSmallImageActivityFeedWithoutLargeImage__2ef49,.assetsSmallImageStreamPreviewWithoutLargeImage__2ef49,.assetsSmallImageVoiceChannelWithoutLargeImage__2ef49 {
-    height: 40px;
-    width: 40px
+    width: 40px;
+    height: 40px
 }
 
 .assetsSmallImageActivityFeedWithoutLargeImage__2ef49,.assetsSmallImageStreamPreviewWithoutLargeImage__2ef49,.assetsSmallImageVoiceChannelWithoutLargeImage__2ef49 {
@@ -239,9 +241,9 @@
 }
 
 .screenshareIcon__2ef49 {
-    background-image: url(/assets/aa013155f3c2ecb0.svg);
+    width: 40px;
     height: 40px;
-    width: 40px
+    background-image: url(/assets/aa013155f3c2ecb0.svg)
 }
 
 .content__2ef49 {
@@ -288,6 +290,7 @@
 }
 
 .clickableDetails__2ef49:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -302,15 +305,15 @@
 }
 
 .guildDetails__2ef49 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 4px;
     margin-top: 4px
 }
 
 .voiceChannelInfo__2ef49 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 2px
 }
 
@@ -341,48 +344,49 @@
 }
 
 .bodyLink__2ef49:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .twitchImageContainer__2ef49 {
     background: var(--primary-800);
-    border-radius: 8px;
-    position: relative
+    position: relative;
+    border-radius: 8px
 }
 
 .twitchImageOverlay__2ef49 {
-    bottom: 0;
-    left: 0;
-    padding: 16px;
     position: absolute;
-    right: 0
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px
 }
 
 .twitchBackgroundImage__2ef49 {
-    display: inline-block;
-    min-height: 260px
+    min-height: 260px;
+    display: inline-block
 }
 
 .streamUsername__2ef49 {
-    color: var(--primary-200);
-    font-size: 16px;
     font-weight: 600;
-    line-height: 1.25
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--primary-200)
 }
 
 .streamName__2ef49 {
+    margin-top: 8px;
     color: var(--primary-300);
-    font-size: 14px;
     font-weight: 500;
-    margin-top: 8px
+    font-size: 14px
 }
 
 .streamGame__2ef49 {
+    text-transform: uppercase;
     color: var(--primary-400);
     font-size: 12px;
     font-weight: 600;
-    margin-top: 8px;
-    text-transform: uppercase
+    margin-top: 8px
 }
 
 .activityVoiceChannel__2ef49 .headerText__2ef49 {
@@ -402,12 +406,12 @@
 }
 
 .icon__2ef49 {
-    color: var(--header-secondary);
     display: block;
-    flex: 0 0 auto;
+    width: 16px;
     height: 16px;
     margin-right: 4px;
-    width: 16px
+    color: var(--header-secondary);
+    flex: 0 0 auto
 }
 
 .wrap__2ef49 {
@@ -429,16 +433,17 @@
 }
 
 .flex__08d32 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .platformIcon__08d32 {
+    width: 20px;
     height: 20px;
-    margin-right: 8px;
+    -o-object-fit: contain;
     object-fit: contain;
-    position: relative;
-    width: 20px
+    margin-right: 8px;
+    position: relative
 }
 
 .button__6e0e0 {
@@ -452,43 +457,43 @@
 }
 
 .syncButton__2024e {
-    height: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .syncButtonInner__2024e {
-    max-height: 16px;
-    max-width: 16px;
+    min-width: 16px;
     min-height: 16px;
-    min-width: 16px
+    max-width: 16px;
+    max-height: 16px
 }
 
 .streamIcon__43481 {
+    width: 16px;
     height: 16px;
-    margin-right: 5px;
     vertical-align: bottom;
-    width: 16px
+    margin-right: 5px
 }
 
 .iconButton__43481 {
+    padding: 0;
     line-height: 0;
-    margin-left: 8px;
-    padding: 0
+    margin-left: 8px
 }
 
 .iconButtonSize__43481 {
-    max-width: 32px;
-    min-width: 32px
+    min-width: 32px;
+    max-width: 32px
 }
 
 .iconSize__43481 {
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .buttonsWrapper__65bb6 {
-    flex: 0 1 auto;
-    margin-top: 12px
+    margin-top: 12px;
+    flex: 0 1 auto
 }
 
 .buttonsWrapper__65bb6:empty {
@@ -508,15 +513,15 @@
 }
 
 .actionsProfile__34f7d,.actionsProfileV2__34f7d {
-    flex: 1 1 auto;
     margin-left: 20px;
-    margin-top: 0
+    margin-top: 0;
+    flex: 1 1 auto
 }
 
 .actionsSimplifiedProfile__34f7d {
-    flex: 1 1 auto;
     margin-left: 10px;
-    margin-top: 0
+    margin-top: 0;
+    flex: 1 1 auto
 }
 
 .actionsActivityFeed__34f7d {
@@ -531,9 +536,9 @@
 }
 
 .actionsWrapper__34f7d {
-    align-items: flex-end;
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
     width: 100%
 }
@@ -548,15 +553,15 @@
 }
 
 .streamPreviewWrapper__6da2d {
-    opacity: 0;
     padding-left: 16px;
+    opacity: 0;
     position: relative;
     transform: translate3d(8px,0,0) scale(.98);
     transform-origin: 50% 50%
 }
 
 .full-motion .streamPreviewWrapper__6da2d {
-    transition: opacity .15s ease,transform 125ms ease-in
+    transition: opacity .15s ease, transform 125ms ease-in
 }
 
 .streamPreviewWrapper__6da2d.mounted__6da2d {
@@ -565,11 +570,11 @@
 }
 
 .streamPreview__6da2d {
-    background-color: var(--background-tertiary);
+    width: 252px;
     border-radius: 5px;
-    box-shadow: var(--elevation-high);
     overflow: hidden;
-    width: 252px
+    box-shadow: var(--elevation-high);
+    background-color: var(--background-tertiary)
 }
 
 .visual-refresh .streamPreview__6da2d {
@@ -577,11 +582,11 @@
 }
 
 .previewContainer__6da2d {
-    background-color: var(--background-secondary-alt);
+    width: 100%;
     box-sizing: border-box;
     height: 142px;
     position: relative;
-    width: 100%
+    background-color: var(--background-secondary-alt)
 }
 
 .previewContainer__6da2d:hover .previewHover__6da2d {
@@ -589,38 +594,38 @@
 }
 
 .previewHover__6da2d {
-    align-items: center;
-    bottom: 0;
-    cursor: pointer;
-    display: flex;
-    font-weight: 600;
-    justify-content: center;
-    left: 0;
-    line-height: 18px;
+    transition: opacity .2s ease-in-out;
     opacity: 0;
     position: absolute;
-    right: 0;
     top: 0;
-    transition: opacity .2s ease-in-out
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    line-height: 18px;
+    font-weight: 600
 }
 
 .previewImage__6da2d {
-    height: 100%;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .applicationName__6da2d {
-    color: var(--text-normal);
-    font-size: 14px;
-    left: 12px;
-    line-height: 18px;
     position: absolute;
-    top: 8px
+    top: 8px;
+    left: 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--text-normal)
 }
 
 .watchButtonInner__6da2d {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .liveIcon__6da2d {
@@ -632,8 +637,8 @@
 }
 
 .protip__6da2d {
-    margin-top: 10px;
-    text-align: center
+    text-align: center;
+    margin-top: 10px
 }
 
 .white__6da2d {
@@ -673,44 +678,44 @@
 }
 
 .container__91e7c {
-    align-items: center;
-    display: block;
-    flex: 1 1 auto;
-    overflow: hidden;
     position: relative;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
     vertical-align: middle;
-    white-space: nowrap
+    flex: 1 1 auto;
+    align-items: center
 }
 
 .container__91e7c .chipletContainer__91e7c {
-    display: inline-block;
-    overflow: hidden
+    overflow: hidden;
+    display: inline-block
 }
 
 .container__91e7c .chipletParent__91e7c {
-    display: inline;
+    position: relative;
     overflow: hidden;
-    padding-left: 4px;
-    position: relative
+    display: inline;
+    padding-left: 4px
 }
 
 .container__91e7c .usernameContainer__91e7c {
     display: inline-block;
-    flex: 1;
-    margin-top: 2px;
-    max-width: 100%;
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    max-width: 100%;
+    flex: 1;
+    margin-top: 2px
 }
 
 .container__91e7c.isOverlayContainer__91e7c {
-    align-content: center;
+    height: 20px;
     background: var(--background-primary);
+    flex: none;
     border-radius: 4px;
     display: flex;
-    flex: none;
     flex-direction: row;
-    height: 20px
+    align-content: center
 }
 
 .container__91e7c.isOverlayContainer__91e7c .usernameContainer__91e7c {
@@ -718,9 +723,9 @@
 }
 
 .container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c,.container__91e7c.isOverlayContainer__91e7c .chipletParent__91e7c {
+    display: flex;
     align-content: center;
-    align-items: center;
-    display: flex
+    align-items: center
 }
 
 .container__91e7c.isOverlayContainer__91e7c .chipletContainer__91e7c {
@@ -756,15 +761,15 @@
 }
 
 .listDefault__07f91 {
-    align-items: stretch;
     flex-direction: column;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+    align-items: stretch
 }
 
 .listCollapse__07f91 {
-    align-items: flex-start;
     flex-direction: row;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    align-items: flex-start
 }
 
 .voiceUser__07f91 {
@@ -776,12 +781,12 @@
 }
 
 .content__07f91 {
-    align-items: center;
-    border-radius: 4px;
     display: flex;
+    border-radius: 4px;
     justify-content: flex-start;
-    margin-bottom: 1px;
-    margin-top: 1px
+    align-items: center;
+    margin-top: 1px;
+    margin-bottom: 1px
 }
 
 .flipped__07f91 {
@@ -806,8 +811,8 @@
 }
 
 .listDefault__07f91 .avatarContainer__07f91 {
-    margin-left: 8px;
-    margin-right: 8px
+    margin-right: 8px;
+    margin-left: 8px
 }
 
 .overlap__07f91 {
@@ -819,28 +824,28 @@
 }
 
 .overlap__07f91 .avatar__07f91 {
-    border: 4px solid var(--background-secondary);
-    margin: 0
+    margin: 0;
+    border: 4px solid var(--background-secondary)
 }
 
 .avatar__07f91 {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 50%;
     flex: 0 0 auto;
-    margin-bottom: 3px;
-    margin-top: 3px
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-top: 3px;
+    margin-bottom: 3px
 }
 
 .avatarSmall__07f91 {
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .avatarLarge__07f91 {
-    height: 30px;
-    width: 30px
+    width: 30px;
+    height: 30px
 }
 
 .avatarSpeaking__07f91 {
@@ -849,9 +854,9 @@
 
 .username__07f91 {
     flex: 1 1 auto;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 div.clanTagBadgeContainer__07f91 {
@@ -865,8 +870,8 @@ div.clanTagBadgeContainer__07f91 {
 
 .usernameFont__07f91 {
     font-size: 14px;
-    font-weight: 500;
-    line-height: 18px
+    line-height: 18px;
+    font-weight: 500
 }
 
 .icons__07f91 {
@@ -875,8 +880,8 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconGroup__07f91,.icons__07f91 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .iconGroup__07f91 {
@@ -884,13 +889,13 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .flipped__07f91 .icons__07f91 {
-    margin-left: 8px;
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 8px
 }
 
 .icon__07f91 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .iconTooltipContainer__07f91 {
@@ -905,10 +910,10 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconSpacing__07f91 {
-    align-items: center;
     display: flex;
-    flex: 0 0 auto;
+    align-items: center;
     justify-content: center;
+    flex: 0 0 auto;
     margin-left: 4px
 }
 
@@ -922,11 +927,11 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .iconPriortySpeaker__07f91 {
-    border-radius: 8px;
-    height: 6px;
-    left: -16px;
     position: absolute;
-    width: 6px
+    left: -16px;
+    width: 6px;
+    height: 6px;
+    border-radius: 8px
 }
 
 .icon__07f91,.username__07f91 {
@@ -954,33 +959,33 @@ div.clanTagBadgeContainer__07f91 {
 }
 
 .optionsButton__07f91 {
-    align-items: center;
-    border-radius: 4px;
     display: flex;
-    flex-shrink: 0;
-    height: 24px;
+    align-items: center;
     justify-content: center;
+    border-radius: 4px;
+    height: 24px;
+    width: 24px;
     right: 5px;
-    width: 24px
+    flex-shrink: 0
 }
 
 .optionsActive__07f91,.optionsButton__07f91:hover {
     background: var(--bg-overlay-active,var(--background-modifier-active))
 }
 
-.voiceUser__07f91:not(:hover,:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
+.voiceUser__07f91:not(:hover):not(:focus-within) .optionsButton__07f91:not(.optionsActive__07f91) {
     width: 0
 }
 
-.visual-refresh .voiceUser__07f91:not(:hover,:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
+.visual-refresh .voiceUser__07f91:not(:hover):not(:focus-within) .optionsButtonContainer__07f91:not(.optionsContainerActive__07f91) {
     display: none
 }
 
 span.clanTag__07f91 {
-    background: var(--bg-mod-subtle);
     flex: 0;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    background: var(--bg-mod-subtle)
 }
 
 span.clanTag__07f91.isOverlay__07f91 {
@@ -1021,8 +1026,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .ringing__07f91 {
-    animation: outgoing-call-pulse__07f91 1s ease-out infinite;
-    opacity: .3
+    opacity: .3;
+    animation: outgoing-call-pulse__07f91 1s ease-out infinite
 }
 
 .guestSuffix__07f91 {
@@ -1031,8 +1036,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 :where(.visual-refresh) .content__07f91 {
     border-radius: var(--radius-sm);
-    gap: 8px;
-    padding: 4px var(--space-xs) 4px var(--space-xs)
+    padding: 4px var(--space-xs) 4px var(--space-xs);
+    gap: 8px
 }
 
 :where(.visual-refresh) .icons__07f91 {
@@ -1056,9 +1061,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .enable-forced-colors .clickable__07f91:hover .username__07f91,.enable-forced-colors .username__07f91 {
+    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
-    forced-color-adjust: none;
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -1069,10 +1075,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 .selector_e1dc93 {
     background: transparent;
     border: 1px solid var(--border-subtle);
+    padding: 0 10px;
     border-radius: 8px;
-    flex-grow: 1;
     min-height: 40px;
-    padding: 0 10px
+    flex-grow: 1
 }
 
 .selectedDevice_e1dc93 {
@@ -1082,44 +1088,47 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .floaterWrapper__1836e {
+    position: absolute;
     bottom: 80px;
     left: 0;
-    position: absolute;
     width: 100%
 }
 
 .visibleFloater__1836e {
-    background: var(--brand-500);
-    border: 1px solid var(--border-faint);
     border-radius: 8px;
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
+    border: 1px solid var(--border-faint);
+    background: var(--brand-500);
+    padding: 8px;
+    margin: 0 8px;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 0 8px;
-    padding: 8px
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
 }
 
 .progressText__1836e {
     display: flex;
-    gap: 8px;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 8px
 }
 
 .voiceFilterHero_cb3698 {
-    box-shadow: var(--shadow-top-high);
-    display: flex;
-    flex-direction: row;
-    flex-shrink: 0;
+    position: relative;
     height: 72px;
     padding: 0 16px;
-    position: relative
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--shadow-top-high)
 }
 
 .voiceFilterHero_cb3698 .bgGradient_cb3698 {
-    inset: 0;
-    pointer-events: none;
-    position: absolute
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    pointer-events: none
 }
 
 .voiceFilterHero_cb3698 .bgGradientHighlight_cb3698 {
@@ -1127,12 +1136,17 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFilterHero_cb3698:after,.voiceFilterHero_cb3698:before {
-    background: linear-gradient(90deg,hsla(0,0%,100%,.2),hsla(0,0%,100%,0));
     content: "";
-    height: 1px;
-    inset: unset 0;
+    position: absolute;
     pointer-events: none;
-    position: absolute
+    background: linear-gradient(90deg,hsla(0,0%,100%,.2),hsla(0,0%,100%,0));
+    top: auto;
+    top: initial;
+    right: 0;
+    bottom: auto;
+    bottom: initial;
+    left: 0;
+    height: 1px
 }
 
 .voiceFilterHero_cb3698:before {
@@ -1144,20 +1158,20 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFilterHero_cb3698 .iconWrapper_cb3698 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     position: relative;
     width: 88px
 }
 
 .voiceFilterHero_cb3698 .activeVoiceIcon_cb3698 {
-    bottom: 0;
+    width: 88px;
     height: 88px;
-    left: 0;
     position: absolute;
-    transform-origin: center bottom;
-    width: 88px
+    left: 0;
+    bottom: 0;
+    transform-origin: center bottom
 }
 
 .tooltip_cb3698 {
@@ -1165,9 +1179,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .tooltipContent_cb3698 {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     text-align: center
 }
@@ -1177,26 +1191,26 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .buttonWrapper_cb3698 {
-    align-self: center;
     display: flex;
     flex-direction: row;
-    gap: 8px
+    gap: 8px;
+    align-self: center
 }
 
 .descriptionWrapper_cb3698 {
-    flex-grow: 1;
-    overflow: hidden;
+    position: relative;
     padding-left: 16px;
-    position: relative
+    flex-grow: 1;
+    overflow: hidden
 }
 
 .description_cb3698 {
+    position: absolute;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2px;
-    height: 100%;
     justify-content: center;
-    position: absolute;
+    gap: 2px;
     transform-origin: left center
 }
 
@@ -1205,13 +1219,13 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .button_cb3698 {
-    align-items: center;
-    align-self: center;
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
+    align-items: center;
     justify-content: center;
-    padding: 10px
+    align-self: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px
 }
 
 .button_cb3698.loopbackEnabled_cb3698 {
@@ -1224,15 +1238,15 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .countdownContainer__8fece {
-    align-items: center;
-    background: var(--background-primary);
-    border-radius: 8px;
-    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
     display: flex;
-    flex: 1;
+    align-items: center;
     justify-content: space-between;
+    padding: 8px;
+    border-radius: 8px;
+    flex: 1;
     margin: var(--spacing-8);
-    padding: 8px
+    background: var(--background-primary);
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,.24)
 }
 
 .visual-refresh .countdownContainer__8fece {
@@ -1240,16 +1254,16 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconContainer__8fece {
-    align-items: center;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: row;
-    gap: 8px;
-    justify-content: center
+    gap: 8px
 }
 
 .upsellText__8fece {
-    flex: 1;
-    margin: auto 16px auto 8px
+    margin: auto 16px auto 8px;
+    flex: 1
 }
 
 .clockIcon__8fece {
@@ -1263,17 +1277,17 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .clockIconWrapper__8fece,.digitContainer__8fece {
-    align-items: center;
-    display: flex;
     height: 24px;
+    display: flex;
+    align-items: center;
     justify-content: center
 }
 
 .digitContainer__8fece {
     background-color: var(--bg-mod-subtle);
-    border-radius: 4px;
     color: var(--header-primary);
-    width: 16px
+    width: 16px;
+    border-radius: 4px
 }
 
 .digitsContainer__8fece {
@@ -1285,23 +1299,23 @@ span.clanTag__07f91.isOverlay__07f91 {
 .colonContainer__8fece {
     display: flex;
     flex-direction: column;
-    gap: 3px;
     justify-content: center;
-    padding: 0 4px
+    padding: 0 4px;
+    gap: 3px
 }
 
 .animatedDigit__8fece {
-    height: 1.1rem;
-    overflow: hidden;
     position: relative;
-    width: 1rem
+    height: 1.1rem;
+    width: 1rem;
+    overflow: hidden
 }
 
 .tinyDot__8fece {
-    background-color: var(--header-muted);
-    border-radius: 50%;
+    width: 2px;
     height: 2px;
-    width: 2px
+    background-color: var(--header-muted);
+    border-radius: 50%
 }
 
 .isScrolled__8fece {
@@ -1314,12 +1328,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .profile_ed0705 {
-    border-radius: 50%;
     display: flex;
+    border-radius: 50%;
+    width: 80px;
     height: 80px;
-    overflow: hidden;
     position: relative;
-    width: 80px
+    overflow: hidden
 }
 
 .profile_ed0705.underDevelopment_ed0705 {
@@ -1327,18 +1341,18 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .insetBorder_ed0705 {
-    border: 1px solid var(--border-subtle);
-    border-radius: 50%;
     box-sizing: border-box;
-    left: 0;
+    border-radius: 50%;
+    border: 1px solid var(--border-subtle);
     pointer-events: none;
-    top: 0
+    top: 0;
+    left: 0
 }
 
 .insetBorder_ed0705,.thumbnail_ed0705 {
+    width: 80px;
     height: 80px;
-    position: absolute;
-    width: 80px
+    position: absolute
 }
 
 .filterName_ed0705 {
@@ -1346,39 +1360,37 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconCircle_ed0705 {
-    background: var(--background-tertiary);
-    border-radius: 50%;
-    bottom: -3px;
-    display: flex;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    padding: 2px;
     position: absolute;
     right: -3px;
-    width: -webkit-fit-content;
+    bottom: -3px;
+    padding: 2px;
+    background: var(--background-tertiary);
+    border-radius: 50%;
+    display: flex;
+    height: -moz-fit-content;
+    height: fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .lockedCircle_ed0705 {
-    background: linear-gradient(0deg,var(--bg-mod-subtle) 0,var(--bg-mod-subtle) 100%),var(--background-secondary-alt);
-    border: 3px solid var(--background-tertiary);
     border-radius: 50%;
+    border: 3px solid var(--background-tertiary);
+    background: linear-gradient(0deg,var(--bg-mod-subtle),var(--bg-mod-subtle)),var(--background-secondary-alt);
     height: 18px;
     width: 18px
 }
 
 .clockCircle_ed0705,.lockedCircle_ed0705 {
-    align-items: center;
     display: flex;
     flex-shrink: 0;
-    justify-content: center
+    justify-content: center;
+    align-items: center
 }
 
 .clockCircle_ed0705 {
-    background: var(--brand-500);
     border-radius: 50%;
+    background: var(--brand-500);
     height: 24px;
     width: 24px
 }
@@ -1396,14 +1408,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .hoverButtonCircle_ed0705 {
-    align-items: center;
-    background: var(--opacity-black-48);
-    border-radius: 50%;
     display: flex;
-    height: 24px;
+    align-items: center;
     justify-content: center;
-    transition-duration: 80ms;
-    width: 24px
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--opacity-black-48);
+    transition-duration: 80ms
 }
 
 .hoverButtonCircle_ed0705 svg {
@@ -1411,33 +1423,33 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .previewButton_ed0705 {
-    left: 8px;
     position: absolute;
-    top: 8px
+    top: 8px;
+    left: 8px
 }
 
 .filter_ed0705,.selector_ed0705 {
-    height: 104px;
-    width: 96px
+    width: 96px;
+    height: 104px
 }
 
 .selector_ed0705 {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    align-items: center;
     justify-content: flex-start;
-    text-align: center
+    text-align: center;
+    gap: 8px
 }
 
 .filter_ed0705 {
-    border-radius: 8px;
-    cursor: pointer;
     flex-shrink: 0;
     padding: 8px 0;
     position: relative;
+    border-radius: 8px;
     transition: background-color;
-    transition-duration: 80ms
+    transition-duration: 80ms;
+    cursor: pointer
 }
 
 .filter_ed0705:hover {
@@ -1480,16 +1492,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconTreatmentsWrapper_ed0705 {
-    align-items: center;
-    display: flex;
-    height: -webkit-fit-content;
+    position: relative;
+    width: -moz-fit-content;
+    width: fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    justify-content: center;
-    position: relative;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .checkmark_ed0705 {
@@ -1497,8 +1507,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spinner_ed0705 {
-    height: 40px;
-    width: 40px
+    width: 40px;
+    height: 40px
 }
 
 .spinner_ed0705 span {
@@ -1506,12 +1516,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spinnerWrapper_ed0705 {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
     position: absolute;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .skye_ed0705 {
@@ -1520,10 +1530,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .skye_ed0705 .thumbnail_ed0705 {
+    width: 80px;
     height: 80px;
-    left: -8px;
     top: 8px;
-    width: 80px
+    left: -8px
 }
 
 .quinn_ed0705 {
@@ -1532,10 +1542,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .quinn_ed0705 .thumbnail_ed0705 {
+    width: 88px;
     height: 88px;
-    left: -14px;
     top: 8px;
-    width: 88px
+    left: -14px
 }
 
 .axel_ed0705 {
@@ -1544,10 +1554,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .axel_ed0705 .thumbnail_ed0705 {
+    width: 88px;
     height: 88px;
-    left: -10px;
     top: 8px;
-    width: 88px
+    left: -10px
 }
 
 .sebastien_ed0705 {
@@ -1556,10 +1566,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .sebastien_ed0705 .thumbnail_ed0705 {
+    width: 80px;
     height: 80px;
-    left: -8px;
     top: 8px;
-    width: 80px
+    left: -8px
 }
 
 .megaphone_ed0705 {
@@ -1569,9 +1579,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .megaphone_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    left: 9px;
+    width: 64px;
     top: 7px;
-    width: 64px
+    left: 9px
 }
 
 .robot_ed0705 {
@@ -1581,9 +1591,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .robot_ed0705 .thumbnail_ed0705 {
     height: 80px;
+    width: 80px;
     left: -8px;
-    top: 12px;
-    width: 80px
+    top: 12px
 }
 
 .tunes_ed0705 {
@@ -1593,9 +1603,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tunes_ed0705 .thumbnail_ed0705 {
     height: 88px;
+    width: 88px;
     left: -8px;
-    top: 7px;
-    width: 88px
+    top: 7px
 }
 
 .ghost_ed0705 {
@@ -1605,9 +1615,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .ghost_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    left: 10px;
+    width: 64px;
     top: 8px;
-    width: 64px
+    left: 10px
 }
 
 .spacebunny_ed0705 {
@@ -1617,9 +1627,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .spacebunny_ed0705 .thumbnail_ed0705 {
     height: 72px;
-    left: 2px;
+    width: 72px;
     top: 8px;
-    width: 72px
+    left: 2px
 }
 
 .justus_ed0705 {
@@ -1629,9 +1639,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .justus_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    left: -4px;
+    width: 80px;
     top: 10px;
-    width: 80px
+    left: -4px
 }
 
 .harper_ed0705 {
@@ -1641,9 +1651,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .harper_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    left: -2px;
+    width: 80px;
     top: 8px;
-    width: 80px
+    left: -2px
 }
 
 .villain_ed0705 {
@@ -1653,9 +1663,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .villain_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    left: -6px;
+    width: 80px;
     top: 8px;
-    width: 80px
+    left: -6px
 }
 
 .solara_ed0705 {
@@ -1665,9 +1675,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .solara_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    left: -6px;
+    width: 80px;
     top: 8px;
-    width: 80px
+    left: -6px
 }
 
 .cave_ed0705 {
@@ -1677,9 +1687,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .cave_ed0705 .thumbnail_ed0705 {
     height: 80px;
-    left: 0;
+    width: 80px;
     top: 8px;
-    width: 80px
+    left: 0
 }
 
 .deepfried_ed0705 {
@@ -1693,14 +1703,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .deepfried_ed0705 .thumbnail_ed0705 {
     height: 64px;
-    left: 6px;
+    width: 64px;
     top: 10px;
-    width: 64px
+    left: 6px
 }
 
 .row__6500b {
-    display: flex;
     height: 120px;
+    display: flex;
     position: relative
 }
 
@@ -1713,14 +1723,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .spacer__6500b {
+    height: 1px;
     align-self: stretch;
-    background: var(--border-subtle);
-    height: 1px
+    background: var(--border-subtle)
 }
 
 .header__6500b {
-    border-top: 1px solid var(--border-subtle);
-    padding: 16px 0
+    padding: 16px 0;
+    border-top: 1px solid var(--border-subtle)
 }
 
 .header__6500b:first-child {
@@ -1732,12 +1742,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .iconMessage__6500b,.loading__6500b {
-    align-items: center;
     box-sizing: border-box;
-    display: flex;
     height: 100%;
-    justify-content: center;
-    width: 100%
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .iconMessage__6500b {
@@ -1748,14 +1758,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersPopout_e2f668 {
-    background: var(--background-tertiary);
-    border-radius: 16px;
-    box-shadow: var(--shadow-high);
+    position: relative;
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
+    background: var(--background-tertiary);
+    border-radius: 16px;
     outline: 1px solid var(--border-subtle);
-    position: relative;
+    box-shadow: var(--shadow-high);
     width: 400px
 }
 
@@ -1764,19 +1774,19 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersHeader_e2f668 {
-    background-color: transparent;
-    border: 1px solid var(--border-subtle);
+    margin: 0 16px;
     flex-shrink: 0;
-    margin: 0 16px
+    background-color: transparent;
+    border: 1px solid var(--border-subtle)
 }
 
 .voiceFiltersFooter_e2f668 {
-    background-color: var(--background-secondary-alt);
-    border-radius: 0 0 16px 16px;
     display: flex;
     flex-direction: row;
-    gap: 8px;
     padding: 16px;
+    gap: 8px;
+    background-color: var(--background-secondary-alt);
+    border-radius: 0 0 16px 16px;
     z-index: 1
 }
 
@@ -1793,12 +1803,12 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .voiceFiltersFooterButton_e2f668 {
+    border-radius: 8px;
     background: var(--bg-mod-faint);
     border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-    flex-grow: 0;
+    width: 40px;
     height: 40px;
-    width: 40px
+    flex-grow: 0
 }
 
 .voiceFiltersFooterButton_e2f668:hover {
@@ -1806,32 +1816,32 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .resizeHandle_e2f668,.voiceFiltersFooterButton_e2f668 .voiceFiltersFooterButtonInner_e2f668 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
 .resizeHandle_e2f668 {
     cursor: ns-resize;
-    margin-top: -2px;
-    padding: 8px 0
+    padding: 8px 0;
+    margin-top: -2px
 }
 
 .resizePill_e2f668 {
-    background: var(--border-subtle);
-    border-radius: 2px;
     height: 4px;
-    width: 48px
+    width: 48px;
+    background: var(--border-subtle);
+    border-radius: 2px
 }
 
 .upsell_e2f668 {
-    background: var(--background-primary);
-    border: 1px solid var(--border-faint);
     border-radius: 8px;
+    border: 1px solid var(--border-faint);
+    background: var(--background-primary);
     box-shadow: 0 12px 32px 0 rgba(0,0,0,.24);
-    height: 22px;
     margin: 8px;
-    padding: 8px
+    padding: 8px;
+    height: 22px
 }
 
 .visual-refresh .upsell_e2f668 {
@@ -1839,63 +1849,64 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .subscribeButton_e2f668 {
-    border-radius: 4px;
     height: 28px;
-    padding: 4px 12px 4px 8px
+    padding: 4px 12px 4px 8px;
+    border-radius: 4px
 }
 
 .upsellCountdownContainer_e2f668 {
+    position: relative;
     bottom: -50px;
-    margin-top: -104px;
-    position: relative
+    margin-top: -104px
 }
 
 .upsellContainer_e2f668 {
-    bottom: 50px;
-    position: relative
+    position: relative;
+    bottom: 50px
 }
 
 .button__2723e {
-    align-items: center;
-    background: initial;
-    border: 1px solid transparent;
-    border-radius: var(--radius-sm);
     box-sizing: border-box;
+    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+    background: initial;
     color: inherit;
-    cursor: pointer;
-    display: flex;
+    padding: 0;
+    margin: 0;
     flex-grow: 0;
     flex-shrink: 0;
-    font-size: medium;
-    font-weight: 400;
-    gap: var(--spacing-4);
-    justify-content: center;
-    margin: 0;
+    width: auto;
     max-width: 100%;
-    padding: 0;
-    text-align: start;
+    text-align: left;
+    font-weight: 400;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-4);
+    border-radius: var(--radius-sm);
+    border: 1px solid transparent;
     transition: background-color .3s ease;
-    width: auto
+    cursor: pointer
 }
 
 .xs__2723e {
-    min-height: 32px;
-    padding: 7px 11px
+    padding: 7px 11px;
+    min-height: 32px
 }
 
 .sm__2723e {
-    min-height: 40px;
-    padding: 11px 15px
+    padding: 11px 15px;
+    min-height: 40px
 }
 
 .md__2723e {
-    min-height: 44px;
-    padding: 11px 23px
+    padding: 11px 23px;
+    min-height: 44px
 }
 
 .lg__2723e {
-    min-height: 56px;
-    padding: 15px 31px
+    padding: 15px 31px;
+    min-height: 56px
 }
 
 .lg__2723e .text__2723e {
@@ -1903,9 +1914,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .primary__2723e {
+    color: var(--white);
     background-color: var(--button-filled-brand-background);
-    border-color: var(--button-filled-brand-border);
-    color: var(--white)
+    border-color: var(--button-filled-brand-border)
 }
 
 :where(.visual-refresh) .primary__2723e:hover {
@@ -1917,9 +1928,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .secondary__2723e {
+    color: var(--text-primary);
     background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint);
-    color: var(--text-primary)
+    border-color: var(--border-faint)
 }
 
 :where(.visual-refresh) .secondary__2723e:hover {
@@ -1931,9 +1942,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .tertiary__2723e {
+    color: var(--text-primary);
     background-color: transparent;
-    border-color: transparent;
-    color: var(--text-primary)
+    border-color: transparent
 }
 
 :where(.visual-refresh) .tertiary__2723e:hover {
@@ -1945,9 +1956,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .destructive-primary__2723e {
+    color: var(--white);
     background-color: var(--button-danger-background);
-    border-color: var(--button-danger-border);
-    color: var(--white)
+    border-color: var(--button-danger-border)
 }
 
 :where(.visual-refresh) .destructive-primary__2723e:hover {
@@ -1959,9 +1970,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .destructive-secondary__2723e {
+    color: var(--text-feedback-critical);
     background-color: var(--bg-mod-subtle);
-    border-color: var(--border-faint);
-    color: var(--text-feedback-critical)
+    border-color: var(--border-faint)
 }
 
 :where(.visual-refresh) .destructive-secondary__2723e:hover {
@@ -1973,9 +1984,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .active__2723e {
+    color: var(--white);
     background-color: var(--button-positive-background);
-    border-color: var(--button-positive-border);
-    color: var(--white)
+    border-color: var(--button-positive-border)
 }
 
 :where(.visual-refresh) .active__2723e:hover {
@@ -1987,9 +1998,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .overlay-primary__2723e {
+    color: var(--black);
     background-color: var(--white);
-    border-color: transparent;
-    color: var(--black)
+    border-color: transparent
 }
 
 :where(.visual-refresh) .overlay-primary__2723e:hover {
@@ -2001,9 +2012,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 :where(.visual-refresh) .overlay-secondary__2723e {
+    color: var(--white);
     background-color: rgba(0,0,0,.54);
-    border-color: transparent;
-    color: var(--white)
+    border-color: transparent
 }
 
 :where(.visual-refresh) .overlay-secondary__2723e:hover {
@@ -2028,13 +2039,14 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .linkedName__6b8b8:hover {
-    cursor: pointer;
-    text-decoration: underline
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer
 }
 
 .channelNameContainer__6b8b8 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .infoContainer__6b8b8 {
@@ -2042,37 +2054,38 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .draftBadgeContainer_ea81a9 {
-    background-color: var(--background-tertiary);
-    border-radius: 8px;
     display: flex;
     justify-content: center;
-    margin-top: -20px;
-    overflow: hidden;
-    padding: 2px;
     position: relative;
-    z-index: 1
+    margin-top: -20px;
+    padding: 2px;
+    background-color: var(--background-tertiary);
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 8px
 }
 
 .tierName_ea81a9 {
-    font-family: var(--font-display);
     margin-bottom: 16px;
-    text-align: start
+    font-family: var(--font-display);
+    text-align: left
 }
 
 .tierImage_ea81a9 {
-    border-radius: 50%;
+    width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size);
     height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size);
+    border-radius: 50%;
+    -o-object-fit: cover;
     object-fit: cover;
-    overflow: hidden;
-    width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size)
+    overflow: hidden
 }
 
 .tierPrice_ea81a9 {
-    color: var(--interactive-active);
-    font-size: 24px;
-    font-weight: 600;
     margin-bottom: 2px;
-    margin-top: 16px
+    margin-top: 16px;
+    font-weight: 600;
+    color: var(--interactive-active);
+    font-size: 24px
 }
 
 .tierPeriod_ea81a9,.tierPrice_ea81a9 {
@@ -2080,54 +2093,54 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .tierPeriod_ea81a9 {
-    letter-spacing: .02em;
+    text-transform: uppercase;
     margin-bottom: 16px;
-    text-transform: uppercase
+    letter-spacing: .02em
 }
 
-@media (max-width:485px) {
+@media (max-width: 485px) {
     .tierName_ea81a9 {
         margin-bottom: 4px
     }
 
     .tierImage_ea81a9 {
-        height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile;
-        width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile
+        width: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile;
+        height: var(--custom-guild-role-subscription-card-basic-info-tier-image-size) Mobile
     }
 }
 
 .container_b27fdc {
+    flex-direction: row;
     align-items: center;
     align-self: stretch;
-    display: flex;
-    flex-direction: row
+    display: flex
 }
 
 .tierTextInfoContainer_b27fdc {
-    align-items: flex-start;
     flex: 1;
     flex-direction: column;
+    align-items: flex-start;
     margin-left: 16px
 }
 
 .tierPriceContainer_b27fdc {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .tierPrice_b27fdc {
     color: var(--header-secondary);
     font-size: 16px;
     height: 20px;
-    text-align: start
+    text-align: left
 }
 
 .toggleButton_b27fdc {
-    color: var(--interactive-normal);
-    height: 24px;
     justify-content: flex-end;
-    width: 24px
+    width: 24px;
+    height: 24px;
+    color: var(--interactive-normal)
 }
 
 .confirmationContainer_e64651 {
@@ -2135,9 +2148,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationHeader_e64651 {
-    color: var(--header-secondary);
+    text-align: center;
     margin-bottom: 8px;
-    text-align: center
+    color: var(--header-secondary)
 }
 
 .confirmationHeader_e64651 strong {
@@ -2149,10 +2162,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .openDiscordButton_e64651 {
-    font-weight: 600;
-    margin-bottom: 8px;
     margin-top: 24px;
-    width: 100%
+    margin-bottom: 8px;
+    width: 100%;
+    font-weight: 600
 }
 
 .doneButton_e64651 {
@@ -2163,9 +2176,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .container__24a95 {
+    display: flex;
     background-color: var(--background-secondary);
     border-radius: 8px;
-    display: flex;
     padding: 16px
 }
 
@@ -2183,8 +2196,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .channelNameContainer__24a95 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .infoContainer__24a95 {
@@ -2192,22 +2205,22 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .caret__24a95 {
-    color: var(--interactive-normal);
     flex: 0 0 auto;
-    margin-left: 16px
+    margin-left: 16px;
+    color: var(--interactive-normal)
 }
 
 .headerContainer__4dd8e {
+    width: 100%;
     height: 146px;
-    position: relative;
-    width: 100%
+    position: relative
 }
 
 .headerEmpty__4dd8e {
     height: 10px;
-    left: 0;
     position: absolute;
-    top: 0
+    top: 0;
+    left: 0
 }
 
 .headerEmpty__4dd8e+.breadcrumb,.headerEmpty__4dd8e+.paymentModalContent {
@@ -2221,54 +2234,56 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .headerImage__4dd8e {
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    width: 100%
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .headerImageEmpty__4dd8e {
-    background-color: var(--background-secondary);
+    width: 100%;
     height: 100%;
-    width: 100%
+    background-color: var(--background-secondary)
 }
 
 .closeContainer__4dd8e {
-    align-items: center;
-    background-color: var(--opacity-black-84);
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
+    width: 24px;
     height: 24px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     position: absolute;
-    right: 16px;
     top: 16px;
-    width: 24px
+    right: 16px;
+    background-color: var(--opacity-black-84);
+    border-radius: 50%;
+    cursor: pointer
 }
 
 .closeIcon__4dd8e {
-    color: var(--interactive-normal);
+    width: 16px;
     height: 16px;
-    width: 16px
+    color: var(--interactive-normal)
 }
 
 .tierImageContainer__4dd8e {
+    width: 80px;
+    height: 80px;
+    padding: 8px;
     background-color: var(--background-primary);
     border-radius: 50%;
-    bottom: -48px;
-    height: 80px;
-    left: calc(50% - 48px);
-    padding: 8px;
     position: absolute;
-    width: 80px;
+    bottom: -48px;
+    left: calc(50% - 48px);
     z-index: 1
 }
 
 .tierImage__4dd8e {
-    border-radius: 50%;
+    width: 100%;
     height: 100%;
-    object-fit: cover;
-    width: 100%
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .confirmationContainer__4dd8e {
@@ -2276,8 +2291,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationHeader__4dd8e {
-    margin-bottom: 8px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 8px
 }
 
 .confirmationHeader__4dd8e strong {
@@ -2285,21 +2300,21 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .confirmationSubtitle__4dd8e {
-    margin-bottom: 32px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 32px
 }
 
 .confirmationSectionLabel__4dd8e {
     font-family: var(--font-display);
-    letter-spacing: .02em;
     margin-bottom: 8px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    letter-spacing: .02em
 }
 
 .confirmationBenefits__4dd8e {
+    gap: 8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
     margin-bottom: 20px
 }
 
@@ -2308,9 +2323,9 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .emojiBenefitsRow__4dd8e {
+    display: flex;
     background-color: var(--background-secondary);
     border-radius: 8px;
-    display: flex;
     padding: 16px
 }
 
@@ -2323,11 +2338,11 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .container__3efc4 {
-    border-radius: 8px;
-    flex: 1;
+    position: relative;
     max-width: 320px;
+    flex: 1;
     overflow: hidden;
-    position: relative
+    border-radius: 8px
 }
 
 .cardContainerWithoutTopIndicator__3efc4 {
@@ -2338,10 +2353,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tierTrialIndicator__3efc4 {
     background-color: var(--brand-500);
-    color: var(--white-500);
-    font-weight: 500;
+    padding-top: 4px;
     padding-bottom: 4px;
-    padding-top: 4px
+    font-weight: 500;
+    color: var(--white-500)
 }
 
 .tierTrialIndicatorIcon__3efc4 {
@@ -2350,19 +2365,19 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .tierTopIndicator__3efc4 {
     display: flex;
+    justify-content: center;
     font-family: var(--font-display);
     font-size: 12px;
-    justify-content: center;
     line-height: 16px;
     text-transform: uppercase
 }
 
 .tierInfoContainer__3efc4 {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 32px 16px 16px;
-    text-align: center
+    align-items: center;
+    text-align: center;
+    padding: 32px 16px 16px
 }
 
 .theme-light .tierInfoContainer__3efc4 {
@@ -2391,8 +2406,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .toggleTruncationButtonIcon__3efc4 {
-    height: 18px;
-    width: 18px
+    width: 18px;
+    height: 18px
 }
 
 .subscriptionPerks__3efc4 {
@@ -2401,10 +2416,10 @@ span.clanTag__07f91.isOverlay__07f91 {
 }
 
 .roleMessagePreview__3efc4 {
+    padding: 12px 0;
     background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
     border-radius: 4px;
-    padding: 12px 0
+    border: 1px solid var(--background-modifier-accent)
 }
 
 .roleMessagePreview__3efc4:not(:last-child) {
@@ -2413,40 +2428,42 @@ span.clanTag__07f91.isOverlay__07f91 {
 
 .sectionHeader__3efc4 {
     font-family: var(--font-display);
-    letter-spacing: .02em;
-    text-transform: uppercase
+    text-transform: uppercase;
+    letter-spacing: .02em
 }
 
 .benefitsSection__3efc4:not(:last-child) {
     border-bottom: 1px solid var(--opacity-white-4);
-    margin-bottom: 16px;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    margin-bottom: 16px
 }
 
 .benefitsList__3efc4 {
+    gap: 16px;
     display: flex;
-    flex-direction: column;
-    gap: 16px
+    flex-direction: column
 }
 
 .emojiList__3efc4 {
     display: grid;
-    gap: 9px 8px;
-    grid-template-columns: repeat(9,1fr)
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 9px 8px;
+    gap: 9px 8px
 }
 
 .emojiListEmoji__3efc4 {
+    -o-object-fit: contain;
     object-fit: contain
 }
 
 .divider__3efc4 {
-    background-color: hsla(0,0%,100%,.06);
-    height: 1px;
     margin: 16px 0;
-    width: 100%
+    width: 100%;
+    height: 1px;
+    background-color: hsla(0,0%,100%,.06)
 }
 
-@media (max-width:485px) {
+@media (max-width: 485px) {
     .container__3efc4 {
         width: auto
     }
@@ -2535,8 +2552,8 @@ span.clanTag__07f91.isOverlay__07f91 {
     position: absolute;
     text-align: center;
     top: 4px;
-    width: calc(100% - 8px);
-    word-break: break-word
+    word-break: break-word;
+    width: calc(100% - 8px)
 }
 
 .content_e9b191 {
@@ -2580,8 +2597,8 @@ span.clanTag__07f91.isOverlay__07f91 {
 .submenuWrapper_e9b191 {
     cursor: pointer;
     position: absolute;
-    right: 8px;
-    top: 8px
+    top: 8px;
+    right: 8px
 }
 
 .submenuIcon_e9b191 {
@@ -2598,4 +2615,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     color: var(--interactive-active)
 }
 
-/*# sourceMappingURL=10c8c03ed886ad33.css.map*/
+/*# sourceMappingURL=2a2e362446c06506.css.map*/

@@ -1,28 +1,28 @@
 /**
   Module ID: 18367
-  Original File Name: f155ac580f8973be
+  Original File Name: 035b15ab96e598db
 **/
 .modalRoot__9c82a {
     width: 378px
 }
 
 .birbContainer__9c82a {
+    width: 100%;
     display: flex;
-    justify-content: center;
     position: absolute;
     top: -52px;
-    width: 100%
+    justify-content: center
 }
 
 .announcementBirb__9c82a {
-    height: 100px;
-    width: 90px
+    width: 90px;
+    height: 100px
 }
 
 .modalContent__9c82a {
     margin-top: 30px;
-    padding: 16px;
-    text-align: center
+    text-align: center;
+    padding: 16px
 }
 
 .eyebrow__9c82a,.header__9c82a {
@@ -30,15 +30,15 @@
 }
 
 .subHeader__9c82a {
-    color: var(--header-secondary);
-    margin-top: 8px
+    margin-top: 8px;
+    color: var(--header-secondary)
 }
 
 .buttonContainer__9c82a {
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 24px
+    gap: 8px
 }
 
-/*# sourceMappingURL=f155ac580f8973be.css.map*/
+/*# sourceMappingURL=035b15ab96e598db.css.map*/

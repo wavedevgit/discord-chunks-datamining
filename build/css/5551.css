@@ -1,11 +1,11 @@
 /**
   Module ID: 5551
-  Original File Name: 7f10b6b2679d2ef2
+  Original File Name: a4ea639e6a9353c4
 **/
 .closeButton__915cb {
     position: absolute;
-    right: 4px;
-    top: 4px
+    top: 4px;
+    right: 4px
 }
 
 .content__915cb {
@@ -26,10 +26,10 @@
 }
 
 .action__915cb {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
+    padding: 8px;
     border-radius: var(--radius-xs);
-    padding: 8px
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary)
 }
 
 .actionDescription__915cb {
@@ -41,4 +41,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=7f10b6b2679d2ef2.css.map*/
+/*# sourceMappingURL=a4ea639e6a9353c4.css.map*/

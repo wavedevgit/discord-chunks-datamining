@@ -1,10 +1,10 @@
 /**
   Module ID: 12009
-  Original File Name: a291b888c3e2724f
+  Original File Name: 94accf37a8f8a697
 **/
 .header__553a5 {
-    margin-top: -32px;
-    width: 100%
+    width: 100%;
+    margin-top: -32px
 }
 
 .visual-refresh .header__553a5 {
@@ -12,20 +12,20 @@
 }
 
 .headerArtWrapper__553a5 {
-    border-radius: 16px;
     margin-left: -16px;
     margin-right: -32px;
-    overflow: hidden;
     position: relative;
-    width: calc(100% + 32px)
+    width: calc(100% + 32px);
+    border-radius: 16px;
+    overflow: hidden
 }
 
 .headerArt__553a5 {
-    background-position: 50%;
-    background-size: cover;
-    border-radius: 0 0 8px 8px;
+    width: 100%;
     padding-top: 25%;
-    width: 100%
+    border-radius: 0 0 8px 8px;
+    background-size: cover;
+    background-position: 50%
 }
 
 .headerArtPlaceholder__553a5 {
@@ -41,12 +41,12 @@
 }
 
 .editButton__553a5 {
-    bottom: 24px;
-    box-shadow: var(--legacy-elevation-high);
     opacity: 0;
+    transition: opacity .2 ease-in-out;
     position: absolute;
     right: 24px;
-    transition: opacity .2 ease-in-out
+    bottom: 24px;
+    box-shadow: var(--legacy-elevation-high)
 }
 
 .editButton__553a5:focus,.headerArtWrapper__553a5:hover .editButton__553a5 {
@@ -54,21 +54,21 @@
 }
 
 .editButtonInner__553a5 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 8px
 }
 
 .headerIcon__553a5 {
-    background-color: var(--background-primary);
-    border: 4px solid var(--background-primary);
+    margin-top: -50px;
     margin-bottom: 16px;
-    margin-top: -50px
+    border: 4px solid var(--background-primary);
+    background-color: var(--background-primary)
 }
 
 .headerName__553a5 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 8px
 }
 
@@ -82,27 +82,27 @@
 }
 
 .container__7449f {
-    background: var(--bg-overlay-chat,var(--background-primary));
-    display: flex;
-    flex: 1 1 auto;
-    flex-direction: column;
-    min-height: 0;
     min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     overflow: hidden;
-    position: relative
+    background: var(--bg-overlay-chat,var(--background-primary));
+    flex: 1 1 auto
 }
 
 .maxWidthWrapper__7449f {
-    max-width: var(--custom-guild-onboarding-home-page-max-page-width);
-    width: 100%
+    width: 100%;
+    max-width: var(--custom-guild-onboarding-home-page-max-page-width)
 }
 
 .homeContainer__7449f {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 32px;
     justify-content: center;
+    align-items: center;
+    gap: 32px;
     padding: 32px
 }
 
@@ -115,13 +115,13 @@
 }
 
 .emptyHomeContainer__7449f {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 32px;
     justify-content: center;
-    margin: 32px;
-    padding: 0
+    align-items: center;
+    gap: 32px;
+    padding: 0;
+    margin: 32px
 }
 
 .emptyHeaderTitle__7449f {
@@ -133,7 +133,7 @@
     width: 100%
 }
 
-@media (max-width:486px) {
+@media (max-width: 486px) {
     .homeContainer__7449f {
         padding: 16px
     }
@@ -143,8 +143,8 @@
     display: flex;
     flex-direction: row;
     gap: 24px;
-    margin-top: 12px;
-    min-width: 0
+    min-width: 0;
+    margin-top: 12px
 }
 
 .homeContent__7449f,.mainContent__7449f {
@@ -153,11 +153,11 @@
 }
 
 .sidebar__7449f {
+    width: 25%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    min-width: 300px;
-    width: 25%
+    gap: 8px
 }
 
 .sidebarCardWrapper__7449f {
@@ -181,10 +181,10 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .guildInfo__7449f {
-    align-items: center;
     color: var(--text-muted);
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .guildInfoText__7449f {
@@ -192,26 +192,26 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .dotOnline__7449f {
-    background-color: var(--green-360);
     border-radius: 50%;
-    flex-shrink: 0;
+    width: 4px;
     height: 4px;
-    width: 4px
+    flex-shrink: 0;
+    background-color: var(--green-360)
 }
 
 .resourceChannelsList__7449f {
+    margin: 0 -8px;
     display: flex;
-    flex-direction: column;
-    margin: 0 -8px
+    flex-direction: column
 }
 
 .resourceChannel__7449f {
-    align-items: center;
-    border-radius: 4px;
-    color: var(--interactive-normal);
-    cursor: pointer;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    color: var(--interactive-normal);
+    border-radius: 4px;
     padding: 8px
 }
 
@@ -221,21 +221,22 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .resourceImageBase__7449f {
-    border-radius: 4px;
     height: 24px;
-    margin-right: 4px;
-    width: 24px
+    width: 24px;
+    border-radius: 4px;
+    margin-right: 4px
 }
 
 .resourceImage__7449f {
+    -o-object-fit: cover;
     object-fit: cover
 }
 
 .placeholderImage__7449f {
-    align-items: center;
-    background-color: var(--background-tertiary);
     display: flex;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-tertiary)
 }
 
 @media (max-width:1300px) {
@@ -252,8 +253,8 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .title__7449f {
-    flex: 0 0 auto;
     position: relative;
+    flex: 0 0 auto;
     z-index: 100
 }
 
@@ -266,11 +267,11 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .theme-dark .headerBarInner__7449f:after {
-    background: linear-gradient(to bottom,rgba(50,52,58,0) 0,var(--home-background) 100%)
+    background: linear-gradient(180deg,rgba(50,52,58,0) 0,var(--home-background))
 }
 
 .theme-light .headerBarInner__7449f:after {
-    background: linear-gradient(to bottom,rgba(247,248,249,0) 0,var(--home-background) 100%)
+    background: linear-gradient(180deg,rgba(247,248,249,0) 0,var(--home-background))
 }
 
 .theme-midnight .background__7449f {
@@ -286,15 +287,15 @@ html:not(.visual-refresh) .sidebarCardWrapper__7449f {
 }
 
 .container_c66e86 {
+    padding: 16px 0;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 16px 0
+    gap: 8px
 }
 
 .action_c66e86 {
-    align-items: center;
     display: flex;
+    align-items: center;
     padding: 12px 20px;
     transition: background-color .2s ease-in-out
 }
@@ -324,25 +325,25 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .channelIcon_c66e86 {
-    color: var(--channel-icon);
+    width: 20px;
     height: 20px;
-    width: 20px
+    color: var(--channel-icon)
 }
 
 .channelIconContainer_c66e86,.rulesIconContainer_c66e86,.tagIconContainer_c66e86 {
-    align-items: center;
-    background-color: var(--background-tertiary);
-    border-radius: 20px;
-    display: flex;
+    width: 40px;
     height: 40px;
-    justify-content: center;
-    width: 40px
+    border-radius: 20px;
+    background-color: var(--background-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .rulesIcon_c66e86 {
-    color: var(--channel-icon);
+    width: 16px;
     height: 16px;
-    width: 16px
+    color: var(--channel-icon)
 }
 
 .checkCircle_c66e86 {
@@ -358,9 +359,9 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .container_d13feb {
+    margin-top: 16px;
     flex-direction: column;
-    gap: 8px;
-    margin-top: 16px
+    gap: 8px
 }
 
 .container_d13feb,.row_d13feb {
@@ -369,9 +370,9 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .row_d13feb {
+    flex-direction: row;
     background-color: var(--background-primary);
     cursor: pointer;
-    flex-direction: row;
     padding: 16px;
     transition: background-color .2s ease-in-out
 }
@@ -387,9 +388,9 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 
 .content_d13feb {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    overflow-wrap: anywhere
+    flex: 1;
+    word-wrap: anywhere
 }
 
 .title_d13feb {
@@ -399,18 +400,18 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 .media_d13feb {
     border-radius: 8px;
     box-sizing: border-box;
-    flex-shrink: 0;
     height: 100%;
-    margin-left: 12px;
     min-height: 72px;
+    margin-left: 12px;
     overflow: hidden;
+    width: 72px;
     position: relative;
-    width: 72px
+    flex-shrink: 0
 }
 
 .media_d13feb,.thumbnailContainer_d13feb {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .thumbnailContainer_d13feb {
@@ -424,22 +425,22 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .obscuredTag_d13feb {
-    color: var(--opacity-black-60);
-    left: 50%;
     position: absolute;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+    color: var(--opacity-black-60)
 }
 
 .emptyContainer_d13feb {
-    align-items: center;
-    background-color: var(--background-primary);
+    margin-top: 16px;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: 16px;
-    padding: 40px
+    padding: 40px;
+    align-items: center;
+    background-color: var(--background-primary)
 }
 
 .emptyStateButton_d13feb,.emptyStateImage_d13feb {
@@ -447,9 +448,9 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .messageContent_d13feb pre {
+    white-space: pre-wrap;
     margin-bottom: 8px;
-    max-height: 82px;
-    white-space: pre-wrap
+    max-height: 82px
 }
 
 .messageContent_d13feb pre:not(:first-child) {
@@ -462,8 +463,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .welcomeMessageProfileContainer__6f212 {
-    border-radius: var(--radius-sm);
-    overflow: visible
+    overflow: visible;
+    border-radius: var(--radius-sm)
 }
 
 .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
@@ -471,8 +472,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .welcomeMessageProfileContainer__6f212>div {
-    border-radius: var(--radius-sm);
-    flex-grow: 0
+    flex-grow: 0;
+    border-radius: var(--radius-sm)
 }
 
 .avatar__6f212 {
@@ -480,49 +481,49 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .avatar__6f212,.avatarBackground__6f212 {
-    left: 20px;
     position: absolute;
+    left: 20px;
     top: -20px
 }
 
 .avatarBackground__6f212 {
-    background-color: var(--background-primary);
-    border-radius: 1000px;
+    width: 48px;
     height: 48px;
-    width: 48px
+    border-radius: 1000px;
+    background-color: var(--background-primary)
 }
 
 .avatarBorder__6f212 {
-    border-radius: 1000px;
-    height: 52px;
-    left: 18px;
     position: absolute;
-    top: -22px;
     width: 52px;
-    z-index: -1
+    height: 52px;
+    border-radius: 1000px;
+    z-index: -1;
+    left: 18px;
+    top: -22px
 }
 
 .adminUsernameContainer__6f212 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 4px;
     margin-bottom: 10px;
     padding-left: 58px
 }
 
 .welcomeMessageContent__6f212 {
-    min-height: 56px;
-    overflow-wrap: anywhere;
-    padding: 4px 16px 16px
+    padding: 4px 16px 16px;
+    word-wrap: anywhere;
+    min-height: 56px
 }
 
 .ownerIcon__6f212 {
-    color: var(--text-warning);
     flex: 0 0 auto;
-    flex-shrink: 0;
     position: relative;
-    top: 1px
+    top: 1px;
+    flex-shrink: 0;
+    color: var(--text-warning)
 }
 
 html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
@@ -530,10 +531,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .visual-refresh .avatarBorder__6f212 {
+    width: 50px;
     height: 50px;
     left: 19px;
-    top: -21px;
-    width: 50px
+    top: -21px
 }
 
 .visual-refresh .welcomeMessageProfileContainer__6f212 {
@@ -548,4 +549,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     border-radius: var(--radius-md)
 }
 
-/*# sourceMappingURL=a291b888c3e2724f.css.map*/
+/*# sourceMappingURL=94accf37a8f8a697.css.map*/

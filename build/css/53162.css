@@ -1,20 +1,20 @@
 /**
   Module ID: 53162
-  Original File Name: 9c40c7e5fc973cbb
+  Original File Name: 809e083f52d3809f
 **/
 .container__1ff2f {
-    align-items: center;
-    background-color: var(--background-modifier-hover);
     border-radius: 8px;
+    padding: 10px;
+    background-color: var(--background-modifier-hover);
     display: inline-flex;
-    padding: 10px
+    align-items: center
 }
 
 .dot__1ff2f {
-    background-color: var(--interactive-muted);
-    border-radius: 50%;
+    width: 4px;
     height: 4px;
-    width: 4px
+    border-radius: 50%;
+    background-color: var(--interactive-muted)
 }
 
 .fileIcon__1ff2f {
@@ -23,9 +23,9 @@
 
 .fileName__1ff2f {
     max-width: 250px;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .modal__1e7f0 {
@@ -38,10 +38,11 @@
 }
 
 .headerImage__1e7f0 {
-    border-radius: var(--radius-sm);
     height: 66px;
-    object-fit: cover;
-    width: var(--custom-guild-product-download-modal-header-image-width)
+    width: var(--custom-guild-product-download-modal-header-image-width);
+    border-radius: var(--radius-sm);
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .headerTextColumn__1e7f0 {
@@ -51,13 +52,12 @@
 
 .closeButton__1e7f0 {
     align-self: flex-start;
-    -webkit-margin-start: auto;
-    margin-inline-start: auto
+    margin-left: auto
 }
 
 .attachmentRow__1e7f0 {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: space-between;
     padding: 24px 0
@@ -71,4 +71,4 @@
     min-width: 0
 }
 
-/*# sourceMappingURL=9c40c7e5fc973cbb.css.map*/
+/*# sourceMappingURL=809e083f52d3809f.css.map*/

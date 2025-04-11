@@ -1,28 +1,28 @@
 /**
   Module ID: 2089
-  Original File Name: 7d26515879b70e10
+  Original File Name: 5dced054bdc7e559
 **/
 .list_c47777 {
     max-height: 500px
 }
 
 .actionContainer_bc4513 {
-    background-color: var(--background-secondary-alt);
-    border-radius: 80px;
     flex-direction: row;
-    padding: 4px 8px 4px 6px
+    padding: 4px 8px 4px 6px;
+    background-color: var(--background-secondary-alt);
+    border-radius: 80px
 }
 
 .actionContainer_bc4513,.actionIconContainer_bc4513 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
 .actionIconContainer_bc4513 {
     height: 16px;
-    margin-right: 4px;
-    width: 16px
+    width: 16px;
+    margin-right: 4px
 }
 
 .actionIcon_bc4513 {
@@ -52,14 +52,14 @@
 }
 
 .message__89466 {
-    background-color: var(--background-primary);
+    position: relative;
     border-radius: 3px;
-    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high);
     overflow: hidden;
-    padding-bottom: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
     pointer-events: none;
-    position: relative
+    background-color: var(--background-primary);
+    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
 .wrapper_f563df {
@@ -75,31 +75,31 @@
 }
 
 .button_f563df {
-    background-color: var(--background-tertiary);
-    border-radius: 50%;
-    cursor: pointer;
     display: flex;
-    flex: 0 0 auto;
-    height: 32px;
     justify-content: center;
+    width: 32px;
+    height: 32px;
     padding: 4px;
-    width: 32px
+    flex: 0 0 auto;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: var(--background-tertiary)
 }
 
-.button_f563df:hover {
+.button_f563df:hover,.keyboard-mode .button_f563df.focused_f563df {
     background-color: var(--background-secondary-alt)
 }
 
 .keyboard-mode .button_f563df.focused_f563df {
-    background-color: var(--background-secondary-alt);
     box-shadow: 0 0 0 2px var(--blue-345)
 }
 
 .icon_f563df {
-    display: block;
+    width: 20px;
     height: 20px;
-    object-fit: contain;
-    width: 20px
+    display: block;
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 :where(.visual-refresh) .wrapper_f563df {
@@ -110,9 +110,9 @@
 :where(.visual-refresh) .button_f563df {
     background-color: var(--bg-mod-subtle);
     border-radius: 8px;
+    width: 44px;
     height: 44px;
-    padding: 0;
-    width: 44px
+    padding: 0
 }
 
 :where(.visual-refresh) .button_f563df:hover {
@@ -124,8 +124,8 @@
 }
 
 .interactionInfoMenuItem_e1195d {
-    align-items: flex-start;
-    opacity: 1
+    opacity: 1;
+    align-items: flex-start
 }
 
-/*# sourceMappingURL=7d26515879b70e10.css.map*/
+/*# sourceMappingURL=5dced054bdc7e559.css.map*/

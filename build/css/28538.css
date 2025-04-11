@@ -1,16 +1,16 @@
 /**
   Module ID: 28538
-  Original File Name: fcf8132f15a5398f
+  Original File Name: a150099b88c83465
 **/
 .container__750de {
-    min-height: 160px;
-    width: 472px
+    width: 472px;
+    min-height: 160px
 }
 
 .header__750de {
-    align-items: center;
+    margin-top: 16px;
     display: flex;
-    margin-top: 16px
+    align-items: center
 }
 
 .title__750de {
@@ -26,14 +26,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 16px;
     margin-bottom: 8px;
-    margin-right: -8px;
-    margin-top: 16px
+    margin-right: -8px
 }
 
 .accountBtn__750de {
-    margin-bottom: 8px;
-    margin-right: 8px
+    margin-right: 8px;
+    margin-bottom: 8px
 }
 
 .accountBtn__750de:last-child {
@@ -56,18 +56,18 @@
 .applicationsContainer__750de {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 16px;
     margin-right: -8px;
-    margin-top: 12px
+    margin-bottom: 16px;
+    margin-top: 12px;
+    gap: 8px
 }
 
 .application__750de {
-    align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
     display: flex;
     gap: 12px;
+    align-items: center;
     padding: 16px;
     width: 184px
 }
@@ -78,16 +78,16 @@
 }
 
 .applicationIcon__750de {
-    height: 32px;
     min-width: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .applicationNameContainer__750de {
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
-    overflow: hidden
+    overflow: hidden;
+    flex-shrink: 1
 }
 
 .applicationNameText__750de {
@@ -96,4 +96,4 @@
     white-space: nowrap
 }
 
-/*# sourceMappingURL=fcf8132f15a5398f.css.map*/
+/*# sourceMappingURL=a150099b88c83465.css.map*/

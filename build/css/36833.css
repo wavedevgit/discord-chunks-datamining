@@ -1,11 +1,11 @@
 /**
   Module ID: 36833
-  Original File Name: 1b88367208dfb6b4
+  Original File Name: 324728657e333f9f
 **/
 .header__7c901 {
+    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden;
-    padding: 24px 16px 0
+    overflow: hidden
 }
 
 .subtitle__7c901 {
@@ -13,10 +13,10 @@
 }
 
 .closeButton__7c901 {
+    z-index: 1000;
     position: absolute;
-    right: 12px;
     top: 12px;
-    z-index: 1000
+    right: 12px
 }
 
 .content__7c901 {
@@ -48,15 +48,15 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemContainer__7c901 {
-    align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
     border-radius: 8px;
-    cursor: pointer;
-    display: flex;
+    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-primary);
     margin-bottom: 8px;
-    padding: 0 0 0 8px;
-    width: 100%
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0 0 0 8px
 }
 
 .listItemContainer__7c901:hover {
@@ -72,21 +72,22 @@ html:not(.visual-refresh) .footer__7c901 {
 }
 
 .listItemIcon__7c901 {
+    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     margin: 8px 8px 8px 16px
 }
 
 .listItemText__7c901 {
-    margin-left: 8px;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    margin-left: 8px
 }
 
 .listItemArrow__7c901 {
-    color: var(--interactive-normal);
-    height: 50px;
     margin-left: auto;
-    margin-right: 16px
+    margin-right: 16px;
+    height: 50px;
+    color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=1b88367208dfb6b4.css.map*/
+/*# sourceMappingURL=324728657e333f9f.css.map*/

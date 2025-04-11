@@ -1,13 +1,13 @@
 /**
   Module ID: 1906
-  Original File Name: 61979ec9e3eae509
+  Original File Name: 96d999a09bcef247
 **/
 .container__26abc {
     background-color: var(--background-floating);
+    padding: 8px;
     border-radius: 4px;
     box-shadow: var(--elevation-high);
-    max-height: 300px;
-    padding: 8px
+    max-height: 300px
 }
 
 .user__26abc {
@@ -16,8 +16,8 @@
 }
 
 .user__26abc,.username__26abc {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .username__26abc {
@@ -30,31 +30,31 @@
 }
 
 .blockedNotice__26abc {
+    display: flex;
     align-content: center;
     align-items: center;
-    display: flex;
     margin-bottom: 24px
 }
 
 .blockedButton__26abc {
-    color: var(--text-link);
-    cursor: pointer;
     font-size: 12px;
+    margin-left: 4px;
     font-weight: 600;
-    margin-left: 4px
+    color: var(--text-link);
+    cursor: pointer
 }
 
 .icon__26abc {
     background-clip: padding-box;
-    background-color: var(--background-accent);
     border-radius: 50%;
-    color: var(--white-500);
-    height: 12px;
     padding: 2px;
+    background-color: var(--background-accent);
+    color: var(--white-500);
+    width: 12px;
+    height: 12px;
     position: absolute;
     right: -2px;
-    top: 0;
-    width: 12px
+    top: 0
 }
 
 .userInfo__26abc {
@@ -84,4 +84,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=61979ec9e3eae509.css.map*/
+/*# sourceMappingURL=96d999a09bcef247.css.map*/

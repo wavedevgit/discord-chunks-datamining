@@ -1,38 +1,38 @@
 /**
   Module ID: 88452
-  Original File Name: 2d3e0c87f1f250f1
+  Original File Name: 8d74652ec0f3107d
 **/
 .modal__36aad {
-    border-radius: var(--radius-sm);
-    width: 440px
+    width: 440px;
+    border-radius: var(--radius-sm)
 }
 
 .img__36aad {
-    border-top-left-radius: var(--radius-sm);
-    border-top-right-radius: var(--radius-sm);
+    width: 100%;
     height: 150px;
-    width: 100%
+    border-top-left-radius: var(--radius-sm);
+    border-top-right-radius: var(--radius-sm)
 }
 
 .body__36aad {
-    align-items: center;
-    background: var(--background-primary);
+    height: 86px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    height: 86px;
+    align-items: center;
     padding: 34px 50px;
-    text-align: center
+    text-align: center;
+    gap: 8px;
+    background: var(--background-primary)
 }
 
 .footer__36aad {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
     background: var(--background-secondary);
     border-bottom-left-radius: var(--radius-sm);
-    border-bottom-right-radius: var(--radius-sm);
-    display: flex;
-    height: 40px;
-    justify-content: space-between;
-    padding: 16px
+    border-bottom-right-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=2d3e0c87f1f250f1.css.map*/
+/*# sourceMappingURL=8d74652ec0f3107d.css.map*/

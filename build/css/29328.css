@@ -1,12 +1,12 @@
 /**
   Module ID: 29328
-  Original File Name: 29cffba3007dd910
+  Original File Name: de7cb575a8c42269
 **/
 .icon__2894c {
     display: block;
-    flex: 0 0 auto;
+    width: 20px;
     height: 20px;
-    width: 20px
+    flex: 0 0 auto
 }
 
 .iconWithGuildIcon__2894c {
@@ -27,39 +27,39 @@
 }
 
 .acronym__2894c {
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--bg-mod-strong);
-    color: var(--text-normal);
-    display: flex;
-    font-weight: 500;
-    justify-content: center;
-    line-height: 1.2em;
-    white-space: nowrap
+    color: var(--text-normal)
 }
 
 .footer__6be55 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    justify-content: flex-start
+    justify-content: flex-start;
+    gap: 16px
 }
 
 .guildRow__6be55 {
-    align-items: center;
     display: flex;
-    gap: var(--space-sm)
+    gap: var(--space-sm);
+    align-items: center
 }
 
 .guildAsset__6be55 {
-    background-color: var(--bg-mod-faint);
-    border-radius: 8px;
     height: 32px;
-    width: 32px
+    width: 32px;
+    background-color: var(--bg-mod-faint);
+    border-radius: 8px
 }
 
 .inviteTarget__6be55 {
-    display: flex;
     flex: 1;
+    display: flex;
     flex-direction: column;
     gap: 2px;
     overflow: hidden
@@ -70,16 +70,16 @@
 }
 
 .inviteTargetHeading__6be55 {
-    align-items: center;
-    display: flex;
     flex: 1;
+    display: flex;
+    align-items: center;
     gap: var(--space-xxs);
     overflow: hidden
 }
 
 .inviteTargetContent__6be55 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 1ch
 }
 
@@ -89,15 +89,15 @@
 }
 
 .memberCount__6be55,.onlineCount__6be55 {
-    align-items: center;
     display: flex;
-    gap: 4px
+    gap: 4px;
+    align-items: center
 }
 
 .dot__6be55 {
-    border-radius: 50%;
+    width: 8px;
     height: 8px;
-    width: 8px
+    border-radius: 50%
 }
 
 .memberCount__6be55 .dot__6be55 {
@@ -109,13 +109,13 @@
 }
 
 .settingsButton__6be55 {
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
-    height: 32px;
+    align-items: center;
     justify-content: center;
-    width: 32px
+    cursor: pointer;
+    border-radius: 8px;
+    width: 32px;
+    height: 32px
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
@@ -133,8 +133,8 @@
 }
 
 .advancedOption__6be55 {
-    cursor: pointer;
-    height: 52px
+    height: 52px;
+    cursor: pointer
 }
 
 .advancedOption__6be55:hover {
@@ -152,24 +152,24 @@
 }
 
 .advancedOption__6be55:not(:last-child):after {
-    border-bottom: 1px solid var(--border-subtle);
     content: "";
     display: block;
-    margin: 0 var(--space-sm)
+    margin: 0 var(--space-sm);
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .advancedOptionInner__6be55 {
-    align-items: center;
-    cursor: pointer;
-    display: flex;
     flex: 1;
+    display: flex;
     justify-content: space-between;
-    padding: 0 var(--space-sm) 0 var(--space-lg)
+    align-items: center;
+    padding: 0 var(--space-sm) 0 var(--space-lg);
+    cursor: pointer
 }
 
 .advancedOptionContent__6be55 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 4px
 }
 
@@ -183,9 +183,9 @@
 }
 
 .buttonInner__6be55 {
-    align-items: center;
     display: flex;
-    gap: var(--space-xxs)
+    gap: var(--space-xxs);
+    align-items: center
 }
 
 .wrapper__67dba {
@@ -194,8 +194,8 @@
 
 .scroller__67dba {
     max-height: 200px;
-    padding-left: 12px;
-    padding-top: 8px
+    padding-top: 8px;
+    padding-left: 12px
 }
 
 .modal__67dba {
@@ -205,10 +205,10 @@
 
 .closeButton__67dba {
     height: 12px;
-    position: absolute;
-    right: 28px;
-    top: 12px;
     width: 12px;
+    position: absolute;
+    top: 12px;
+    right: 28px;
     z-index: 3
 }
 
@@ -217,9 +217,9 @@
 }
 
 .header__67dba {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    width: 100%
+    flex-direction: column
 }
 
 .headerText__67dba {
@@ -227,17 +227,17 @@
 }
 
 .headerChannelContainer__67dba {
-    align-items: center;
     display: flex;
+    align-items: center;
     margin-bottom: 4px
 }
 
 .channelIcon__67dba {
-    color: var(--interactive-normal);
-    height: 20px;
     margin-right: 8px;
     margin-top: 4px;
-    width: 20px
+    height: 20px;
+    width: 20px;
+    color: var(--interactive-normal)
 }
 
 .searchBar__67dba {
@@ -246,10 +246,10 @@
 }
 
 .hubHeader__67dba {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    width: 100%
+    text-align: center
 }
 
 .hubInviteTitle__67dba {
@@ -261,40 +261,41 @@
 }
 
 .inviteRow__67dba {
-    align-items: center;
-    border-radius: 3px;
-    box-sizing: border-box;
-    display: flex;
-    height: 44px;
     justify-content: space-between;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 3px;
     margin-right: -10px;
-    padding: 7px 16px 7px 8px
+    padding: 7px 16px 7px 8px;
+    height: 44px
 }
 
 .inviteRowAvatar__67dba {
+    margin-top: 0;
     flex: none;
-    margin-right: 10px;
-    margin-top: 0
+    margin-right: 10px
 }
 
 .inviteRowInfo__67dba {
     align-items: center;
     display: flex;
-    margin-right: 4px;
-    overflow: hidden
+    overflow: hidden;
+    margin-right: 4px
 }
 
 .inviteRowName__67dba {
-    color: var(--interactive-normal);
-    overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--interactive-normal)
 }
 
 .inviteRowButton__67dba {
-    flex: none;
     height: 32px;
-    transition: unset;
+    transition: none 0s ease 0s;
+    transition: initial;
+    flex: none;
     width: 72px
 }
 
@@ -304,8 +305,8 @@
 }
 
 .inviteRowEmptyState__67dba,.warningContainer__67dba {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .warningIcon__67dba {
@@ -313,8 +314,8 @@
 }
 
 .input__67dba {
-    background-color: transparent;
-    border: none
+    border: none;
+    background-color: transparent
 }
 
 .noPadding__67dba {
@@ -327,10 +328,10 @@
 
 .content__67dba:before {
     content: "";
+    width: 412px;
     height: 1px;
     margin-left: -6px;
-    transform: translateY(-20px);
-    width: 412px
+    transform: translateY(-20px)
 }
 
 .copyInput__67dba {
@@ -343,22 +344,22 @@
 }
 
 .subText__67dba {
-    color: var(--text-secondary);
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    color: var(--text-secondary)
 }
 
 .formText__67dba {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 8px
 }
 
 .toggle__67dba {
-    align-items: flex-start;
     display: flex;
+    max-width: 100%;
+    align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 0;
-    max-width: 100%
+    margin-bottom: 0
 }
 
 .noScroll__67dba {
@@ -392,9 +393,9 @@
 
 .welcomeImage__67dba {
     display: block;
+    width: auto;
     height: 148px;
-    margin: 8px auto 16px;
-    width: auto
+    margin: 8px auto 16px
 }
 
 .welcomeHeading__67dba {
@@ -419,25 +420,25 @@
 .premiumIcon__67dba {
     color: var(--guild-boosting-pink);
     flex: 0 0 auto;
-    height: 24px;
-    margin: 0 12px;
     position: relative;
+    margin: 0 12px;
     top: 1px;
-    width: 16px
+    width: 16px;
+    height: 24px
 }
 
 .acronym__67dba {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border-radius: 16px;
-    display: flex;
-    flex: none;
+    width: 32px;
     height: 32px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-right: 10px;
-    margin-top: 0;
+    background-color: var(--background-secondary-alt);
     white-space: nowrap;
-    width: 32px
+    margin-top: 0;
+    flex: none;
+    margin-right: 10px;
+    border-radius: 16px
 }
 
 .guestBody__67dba {
@@ -455,29 +456,29 @@
 }
 
 .divider__67dba {
-    align-self: stretch;
-    background: var(--border-subtle);
     height: 1px;
-    margin: 16px 0
+    margin: 16px 0;
+    align-self: stretch;
+    background: var(--border-subtle)
 }
 
 .modal__28554 {
-    height: 75vh;
+    width: 480px;
     max-height: 640px;
-    width: 480px
+    height: 75vh
 }
 
 .header__28554 {
-    align-items: stretch;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 16px
 }
 
 .titleLine__28554 {
-    align-items: start;
     flex: 1;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: start
 }
 
 .title__28554,.titleLine__28554 {
@@ -489,9 +490,9 @@
 }
 
 .body__28554.empty__28554 {
-    align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center
 }
 
 .recipientList__28554 {
@@ -499,14 +500,14 @@
 }
 
 .recipientRow__28554 {
-    align-items: center;
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
     gap: var(--space-sm);
-    height: var(--custom-recipient-row-height);
+    align-items: center;
     justify-content: space-between;
-    padding: 0 var(--space-sm)
+    height: var(--custom-recipient-row-height);
+    padding: 0 var(--space-sm);
+    border-radius: 8px;
+    cursor: pointer
 }
 
 .recipientRow__28554:hover {
@@ -514,15 +515,15 @@
 }
 
 .recipientAsset__28554 {
-    height: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .recipientLabels__28554 {
-    align-items: flex-start;
-    display: flex;
     flex: 1;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 2px;
     overflow: hidden
 }
@@ -540,7 +541,8 @@
 }
 
 .disabled__28554 .recipientRow__28554:hover {
-    background-color: unset
+    background-color: transparent;
+    background-color: initial
 }
 
 .disabled__28554 .recipientAsset__28554 {
@@ -556,9 +558,9 @@
 }
 
 .footer__28554 {
-    border-top: 1px solid var(--border-subtle);
     display: flex;
-    padding: var(--space-xl)
+    padding: var(--space-xl);
+    border-top: 1px solid var(--border-subtle)
 }
 
 .footerContent__28554 {
@@ -590,4 +592,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=29cffba3007dd910.css.map*/
+/*# sourceMappingURL=de7cb575a8c42269.css.map*/

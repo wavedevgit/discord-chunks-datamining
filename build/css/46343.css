@@ -1,22 +1,22 @@
 /**
   Module ID: 46343
-  Original File Name: 85a6606dbeed91a5
+  Original File Name: 45df36b6d11a4ea4
 **/
 .container__30f2d {
-    align-items: center;
+    padding: 24px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 24px
+    flex-direction: column
 }
 
 .topImage__30f2d {
-    background-image: url(/assets/fe7f670e6ffe6cf6.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
+    width: 200px;
     height: 139px;
-    margin-bottom: 16px;
-    width: 200px
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/fe7f670e6ffe6cf6.svg);
+    margin-bottom: 16px
 }
 
 .centerText__30f2d {
@@ -29,8 +29,8 @@
 }
 
 .descriptionWidth__30f2d {
-    margin-bottom: 24px;
-    width: 265px
+    width: 265px;
+    margin-bottom: 24px
 }
 
 .formContent__30f2d {
@@ -50,17 +50,17 @@
 }
 
 .cancelButton__30f2d {
-    color: var(--header-secondary);
     margin-top: 12px;
-    width: 100%
+    width: 100%;
+    color: var(--header-secondary)
 }
 
 .container_a3fac7 {
-    align-items: center;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
     padding: 24px 0;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 100%
 }
 
@@ -78,10 +78,10 @@
 }
 
 .guildList_a3fac7 {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 100%
+    justify-content: flex-start
 }
 
 .forcedHeight_a3fac7 {
@@ -94,9 +94,9 @@
 
 .container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7 {
     background-color: var(--background-tertiary);
-    box-shadow: none;
     margin-bottom: 8px;
-    padding-right: 8px
+    padding-right: 8px;
+    box-shadow: none
 }
 
 .container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus,.container_a3fac7 .guildList_a3fac7 .searchBox_a3fac7:focus-within {
@@ -114,15 +114,15 @@
 }
 
 .guildRow_a3fac7 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    border-radius: 8px;
+    position: relative;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
-    padding: 12px 16px 12px 12px;
-    position: relative
+    border-radius: 8px;
+    background-color: var(--background-secondary-alt);
+    padding: 12px 16px 12px 12px
 }
 
 .clickableGuildInfoRow_a3fac7 {
@@ -138,36 +138,36 @@
 }
 
 .guildName_a3fac7 {
-    flex: 1;
-    margin-left: 16px
+    margin-left: 16px;
+    flex: 1
 }
 
 .noResultsContainer_a3fac7 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
     min-height: 446px;
-    padding: 16px 24px 0
-}
-
-.noResultsContent_a3fac7 {
-    align-items: center;
-    background-color: var(--background-secondary);
-    border-radius: 8px;
+    height: 100%;
+    padding: 16px 24px 0;
     display: flex;
-    flex: 1;
     flex-direction: column;
     justify-content: center
 }
 
+.noResultsContent_a3fac7 {
+    background-color: var(--background-secondary);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px
+}
+
 .noResultsImage_a3fac7 {
-    background-image: url(/assets/e4f29c32b2c213bd.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
+    width: 120px;
     height: 96px;
-    margin-bottom: 16px;
-    width: 120px
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/e4f29c32b2c213bd.svg);
+    margin-bottom: 16px
 }
 
 .scroller_a3fac7 {
@@ -179,12 +179,12 @@
 }
 
 .container__07ec5 {
-    align-items: center;
+    padding: 24px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 24px;
+    flex-direction: column;
     width: 100%
 }
 
@@ -198,8 +198,8 @@
 }
 
 .descriptionWidth__07ec5 {
-    margin-bottom: 24px;
-    width: 351px
+    width: 351px;
+    margin-bottom: 24px
 }
 
 .formItem__07ec5 {
@@ -207,39 +207,39 @@
 }
 
 .footer__07ec5 {
-    border-top: 1px solid var(--background-modifier-accent);
+    position: absolute;
     bottom: 0;
+    width: 464px;
     box-sizing: border-box;
-    display: flex;
+    padding: 12px 16px;
+    border-top: 1px solid var(--background-modifier-accent);
     flex-direction: row;
     justify-content: space-between;
-    padding: 12px 16px;
-    position: absolute;
-    width: 464px
+    display: flex
 }
 
 .backButton__07ec5 {
+    padding: 0;
     min-height: 40px;
-    min-width: 40px;
-    padding: 0
+    min-width: 40px
 }
 
 .container_bfddf1 {
-    align-items: center;
+    padding: 24px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 24px
+    flex-direction: column
 }
 
 .topImage_bfddf1 {
-    background-image: url(/assets/6ab87cfd55c95d33.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 119px;
     height: 83px;
-    margin-bottom: 16px;
-    width: 119px
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/6ab87cfd55c95d33.svg);
+    margin-bottom: 16px
 }
 
 .centerText_bfddf1 {
@@ -248,8 +248,8 @@
 }
 
 .formItem_bfddf1 {
-    margin-bottom: 16px;
-    width: 100%
+    width: 100%;
+    margin-bottom: 16px
 }
 
 .header_bfddf1 {
@@ -270,20 +270,20 @@
 }
 
 .iconContainer_c1298c {
-    align-items: center;
-    background-color: var(--green-360);
+    height: 48px;
+    width: 48px;
     border-radius: 48px;
     display: flex;
-    height: 48px;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
-    width: 48px
+    background-color: var(--green-360);
+    margin-bottom: 16px
 }
 
 .icon_c1298c {
-    background-image: url(/assets/4d5f9c527be0f6cd.svg);
+    width: 24px;
     height: 24px;
-    width: 24px
+    background-image: url(/assets/4d5f9c527be0f6cd.svg)
 }
 
 .header_c1298c {
@@ -299,20 +299,20 @@
 }
 
 .sidebarContainer__1d6c7 {
-    background-color: var(--background-secondary);
-    box-sizing: border-box;
+    width: 256px;
     padding: 24px;
-    width: 256px
+    background-color: var(--background-secondary);
+    box-sizing: border-box
 }
 
 .contentContainer__1d6c7 {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    flex: 1;
+    width: 464px;
     height: 640px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 464px
+    box-sizing: border-box;
+    flex: 1
 }
 
 .modalContent__1d6c7 {
@@ -325,10 +325,10 @@
 }
 
 .closeButton__1d6c7 {
-    box-sizing: content-box;
     position: absolute;
-    right: 4px;
-    top: 12px
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
 }
 
-/*# sourceMappingURL=85a6606dbeed91a5.css.map*/
+/*# sourceMappingURL=45df36b6d11a4ea4.css.map*/

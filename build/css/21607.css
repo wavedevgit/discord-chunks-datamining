@@ -1,31 +1,31 @@
 /**
   Module ID: 21607
-  Original File Name: a121a85a719d00af
+  Original File Name: 60f4bed351d2dea4
 **/
 .clipPill_d762d7 {
-    align-items: center;
-    background-color: var(--brand-500);
-    border-radius: var(--radius-xs);
-    display: flex;
-    gap: 4px;
-    justify-content: center;
+    position: absolute;
+    top: 4px;
     left: 4px;
     padding: 4px 8px;
-    position: absolute;
+    background-color: var(--brand-500);
+    border-radius: var(--radius-xs);
+    z-index: 1;
     text-transform: uppercase;
-    top: 4px;
-    z-index: 1
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px
 }
 
 .loadingWrapper__5a143 {
-    align-items: center;
-    border-radius: 2px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 8px 4px;
     height: 16px;
-    justify-content: center;
+    border-radius: 2px;
     margin: 2px 0;
-    padding: 8px 4px
+    justify-content: center
 }
 
 .flexRow_a9fc04 {
@@ -34,14 +34,14 @@
 }
 
 .flexRow_a9fc04,.title_a9fc04 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .title_a9fc04 {
-    padding-bottom: 8px;
+    padding-top: 12px;
     padding-left: 4px;
-    padding-top: 12px
+    padding-bottom: 8px
 }
 
 .appIcon_a9fc04 {
@@ -51,8 +51,8 @@
 }
 
 .appIcon_a9fc04,.icon_a9fc04 {
-    height: var(--custom-icon-size);
-    width: var(--custom-icon-size)
+    width: var(--custom-icon-size);
+    height: var(--custom-icon-size)
 }
 
 .icon_a9fc04 {
@@ -61,8 +61,8 @@
 
 .name_a9fc04 {
     color: var(--header-primary);
-    font-weight: 600;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-weight: 600
 }
 
 .name_a9fc04.focused_a9fc04 {
@@ -70,9 +70,9 @@
 }
 
 .description_a9fc04 {
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .inline__6c706 {
@@ -104,8 +104,8 @@
 }
 
 .obscureVideoSpacing__6c706 {
-    bottom: 36px;
-    transition: bottom .1s ease-in-out
+    transition: bottom .1s ease-in-out;
+    bottom: 36px
 }
 
 .mosaicItemContent__6c706 {
@@ -113,26 +113,26 @@
 }
 
 .removeMosaicItemButton__6c706 {
-    align-self: flex-start;
-    color: var(--interactive-normal);
-    cursor: pointer;
-    flex: 0 0 auto;
     opacity: 0;
+    align-self: flex-start;
+    flex: 0 0 auto;
+    cursor: pointer;
+    color: var(--interactive-normal);
     padding: 2px
 }
 
 .spoilerRemoveMosaicItemButton__6c706 {
     position: absolute;
-    right: -20px;
-    top: -2px
+    top: -2px;
+    right: -20px
 }
 
 .mosaicItem__6c706 {
-    align-items: start;
     display: flex;
     flex-flow: row nowrap;
-    height: 100%;
-    max-width: 100%
+    align-items: start;
+    max-width: 100%;
+    height: 100%
 }
 
 .mosaicItemNoJustify__6c706 {
@@ -140,14 +140,14 @@
 }
 
 .mosaicItemFullWidth__6c706 {
-    align-items: center;
-    width: 100%
+    width: 100%;
+    align-items: center
 }
 
 .mosaicItemMediaMosaic__6c706 {
-    border-radius: 2px;
+    position: relative;
     max-height: inherit;
-    position: relative
+    border-radius: 2px
 }
 
 .hasFooter__6c706 {
@@ -172,9 +172,9 @@
 }
 
 .nonMediaMosaicItem__6c706 {
-    outline: 1px solid var(--background-secondary);
+    top: -8px;
     right: -8px;
-    top: -8px
+    outline: 1px solid var(--background-secondary)
 }
 
 .removeMosaicItemHoverButton__6c706:hover,.keyboard-mode .removeMosaicItemHoverButton__6c706:focus {
@@ -188,8 +188,8 @@
 }
 
 .downloadHoverButtonIcon__6c706 {
-    height: 20px;
-    width: 20px
+    width: 20px;
+    height: 20px
 }
 
 .enable-forced-colors .removeMosaicItemButton__6c706 {
@@ -208,10 +208,10 @@
 }
 
 .hoverButton__06ab4 {
-    color: var(--interactive-normal);
-    cursor: pointer;
     display: flex;
-    padding: 6px
+    padding: 6px;
+    color: var(--interactive-normal);
+    cursor: pointer
 }
 
 .hoverButton__06ab4.selected__06ab4,.hoverButton__06ab4:hover,.keyboard-mode .hoverButton__06ab4:focus {
@@ -225,43 +225,42 @@
 }
 
 .hoverButtonGroup__06ab4 {
-    background-color: var(--background-primary);
-    border-radius: 5px;
     display: flex;
     opacity: 0;
-    overflow: hidden;
+    z-index: 2;
     position: absolute;
-    right: 4px;
+    border-radius: 5px;
     top: 4px;
-    z-index: 2
+    right: 4px;
+    background-color: var(--background-primary);
+    overflow: hidden
 }
 
 .nonMediaMosaicItem__06ab4 {
-    outline: 1px solid var(--background-secondary);
+    top: -8px;
     right: -8px;
-    top: -8px
+    outline: 1px solid var(--background-secondary)
 }
 
 .sizer__06ab4 {
-    height: 0;
-    left: 0;
-    pointer-events: none;
     position: absolute;
     top: 0;
-    width: 100%
+    left: 0;
+    width: 100%;
+    height: 0;
+    pointer-events: none
 }
 
 .oneByOneGrid_f4758a {
     display: inline-block;
-    max-height: 350px;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    max-height: 350px
 }
 
 .oneByOneGridSingle_f4758a {
-    border-radius: 8px;
     max-width: 100%;
+    border-radius: 8px;
     overflow: hidden
 }
 
@@ -302,8 +301,8 @@
 .twoByOneGrid_f4758a {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    height: 100%
+    height: 100%;
+    gap: 4px
 }
 
 .twoByOneGridItem_f4758a {
@@ -336,11 +335,11 @@
 }
 
 .visualMediaItemContainer_f4758a {
-    border-radius: 8px;
+    width: 100%;
     height: 100%;
     max-width: 550px;
-    overflow: hidden;
-    width: 100%
+    border-radius: 8px;
+    overflow: hidden
 }
 
 .visualMediaItemContainer_f4758a.isInAppComponentsV2_f4758a {
@@ -348,16 +347,15 @@
 }
 
 .nonVisualMediaItemContainer_f4758a {
+    max-width: 100%;
     display: flex;
-    flex-direction: column;
-    max-width: 100%
+    flex-direction: column
 }
 
 .nonVisualMediaItem_f4758a {
-    max-width: 100%;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    max-width: 100%
 }
 
 .nonVisualMediaItem_f4758a+.nonVisualMediaItem_f4758a,.nonVisualMediaItemContainer_f4758a {
@@ -365,8 +363,8 @@
 }
 
 .itemContentContainer_f4758a {
-    height: 100%;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .hasFooter_f4758a {
@@ -375,11 +373,11 @@
 
 .classificationEvidenceCard_f57acb {
     background: var(--channeltextarea-background);
-    border: 1px solid var(--bg-base-tertiary);
     border-radius: var(--radius-sm);
+    padding: 20px var(--spacing-8) 20px var(--spacing-8);
     display: flex;
     flex-direction: row;
-    padding: 20px var(--spacing-8) 20px var(--spacing-8)
+    border: 1px solid var(--bg-base-tertiary)
 }
 
 .classificationEvidenceMessageAttachment_f57acb {
@@ -389,8 +387,8 @@
 .classificationEvidenceContainer_a2ffaf {
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-12);
-    margin-top: var(--spacing-40)
+    margin-top: var(--spacing-40);
+    gap: var(--spacing-12)
 }
 
 .visual-refresh .classificationEvidenceContainer_a2ffaf {
@@ -412,28 +410,28 @@
 }
 
 .classificationActionsTakenCard_a48d6b {
-    border-radius: 4px;
     margin-top: 14px;
-    padding-bottom: 8px;
-    padding-top: 8px
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px
 }
 
 .classificationActionsTakenRow_a48d6b {
     color: var(--text-primary);
     display: list-item;
-    margin-left: 4px;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-left: 4px
 }
 
 .classificationActionsTakenRowIcon_a48d6b {
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
-    display: flex;
+    width: 24px;
     height: 24px;
-    justify-content: center;
-    margin-right: 12px;
-    width: 24px
+    margin-right: 12px
 }
 
 .classificationActionsTakenList_a48d6b {
@@ -461,17 +459,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 22px;
-    margin-top: 22px
+    margin-top: 22px;
+    margin-bottom: 22px
 }
 
 .classificationPolicyCard_a48d6b {
-    align-items: center;
+    margin-top: 14px;
     background: var(--bg-base-secondary);
     border-radius: 8px;
+    padding: var(--spacing-12) var(--spacing-16);
     display: flex;
-    margin-top: 14px;
-    padding: var(--spacing-12) var(--spacing-16)
+    align-items: center
 }
 
 .classificationPolicyCard_a48d6b:hover {
@@ -479,13 +477,13 @@
 }
 
 .classificationPolicyCardIcon_a48d6b {
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 200px;
-    display: flex;
-    height: 40px;
-    justify-content: center;
-    width: 40px
+    width: 40px;
+    height: 40px
 }
 
 .classificationPolicyDescriptionContainer_a48d6b {
@@ -517,9 +515,9 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
 }
 
 .image__859a7 {
-    filter: var(--shadow-ledge-filter);
+    width: 141px;
     margin: -40px auto 12px;
-    width: 141px
+    filter: var(--shadow-ledge-filter)
 }
 
 .modalRoot__859a7 {
@@ -554,4 +552,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=a121a85a719d00af.css.map*/
+/*# sourceMappingURL=60f4bed351d2dea4.css.map*/

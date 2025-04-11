@@ -1,10 +1,10 @@
 /**
   Module ID: 78704
-  Original File Name: d9bc4f462e4a598c
+  Original File Name: 314e7ded57efdd7a
 **/
 .container_f0aa37 {
-    margin-left: -16px;
-    min-width: 440px
+    min-width: 440px;
+    margin-left: -16px
 }
 
 .modalHeader_f0aa37 {
@@ -16,9 +16,9 @@
 }
 
 .row_f0aa37 {
-    color: var(--interactive-normal);
+    margin: 16px;
     line-height: 18px;
-    margin: 16px
+    color: var(--interactive-normal)
 }
 
 .switchGroup_f0aa37 {
@@ -35,16 +35,16 @@
 }
 
 .roleCircle_f0aa37 {
-    border-radius: 50%;
     display: inline-block;
+    border-radius: 50%;
+    width: 8px;
     height: 8px;
-    padding: 0;
-    width: 8px
+    padding: 0
 }
 
 .roleOption_f0aa37 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .footer_f0aa37 {
@@ -55,4 +55,4 @@
     margin-left: 8px
 }
 
-/*# sourceMappingURL=d9bc4f462e4a598c.css.map*/
+/*# sourceMappingURL=314e7ded57efdd7a.css.map*/

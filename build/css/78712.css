@@ -1,22 +1,22 @@
 /**
   Module ID: 78712
-  Original File Name: 7d568fc93db6d22c
+  Original File Name: b9db3ca9da394541
 **/
 .container__444a0 {
     max-width: 960px
 }
 
 .header__444a0 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 8px
 }
 
 .content__444a0 {
     font-size: 14px;
     font-weight: 400;
-    overflow: hidden;
     padding: 0 0 16px;
+    overflow: hidden;
     white-space: pre-wrap
 }
 
@@ -25,6 +25,7 @@
 }
 
 .content__444a0 a:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -32,4 +33,4 @@
     color: var(--header-primary)
 }
 
-/*# sourceMappingURL=7d568fc93db6d22c.css.map*/
+/*# sourceMappingURL=b9db3ca9da394541.css.map*/

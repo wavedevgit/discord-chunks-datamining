@@ -1,14 +1,14 @@
 /**
   Module ID: 90688
-  Original File Name: 6e4dc507ce4d48a8
+  Original File Name: bb62dfc1e16296d6
 **/
 .qrCodeOverlay_c28498 {
-    align-items: center;
-    display: flex;
+    width: 100%;
     height: 100%;
-    justify-content: center;
     position: absolute;
-    width: 100%
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .qrCodeOverlay_c28498 img {
@@ -16,33 +16,32 @@
 }
 
 .size-40_c28498 {
-    height: 40px;
-    width: 40px
+    width: 40px;
+    height: 40px
 }
 
 .size-60_c28498 {
-    height: 60px;
-    width: 60px
+    width: 60px;
+    height: 60px
 }
 
 .qrCodeOverlayContainer_c28498 {
     display: flex;
-    position: relative;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    position: relative
 }
 
 .qrCodeContainer_c28498 {
-    border-radius: var(--radius-xs);
-    padding: var(--spacing-8)
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xs)
 }
 
 .heading-sm\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 400
 }
 
 .heading-sm\/normal__8a2c0.fontScaling__8a2c0 {
@@ -52,8 +51,8 @@
 .heading-sm\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 500
 }
 
 .heading-sm\/medium__8a2c0.fontScaling__8a2c0 {
@@ -63,8 +62,8 @@
 .heading-sm\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 600;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 600
 }
 
 .heading-sm\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -74,8 +73,8 @@
 .heading-sm\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 700;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 700
 }
 
 .heading-sm\/bold__8a2c0.fontScaling__8a2c0 {
@@ -85,8 +84,8 @@
 .heading-sm\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 14px;
-    font-weight: 800;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 800
 }
 
 .heading-sm\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -96,8 +95,8 @@
 .heading-md\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 400
 }
 
 .heading-md\/normal__8a2c0.fontScaling__8a2c0 {
@@ -107,8 +106,8 @@
 .heading-md\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 500
 }
 
 .heading-md\/medium__8a2c0.fontScaling__8a2c0 {
@@ -118,8 +117,8 @@
 .heading-md\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 600;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 600
 }
 
 .heading-md\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -129,8 +128,8 @@
 .heading-md\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 700
 }
 
 .heading-md\/bold__8a2c0.fontScaling__8a2c0 {
@@ -140,8 +139,8 @@
 .heading-md\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 16px;
-    font-weight: 800;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 800
 }
 
 .heading-md\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -151,8 +150,8 @@
 .heading-lg\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 400;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 400
 }
 
 .heading-lg\/normal__8a2c0.fontScaling__8a2c0 {
@@ -162,8 +161,8 @@
 .heading-lg\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 500
 }
 
 .heading-lg\/medium__8a2c0.fontScaling__8a2c0 {
@@ -173,8 +172,8 @@
 .heading-lg\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 600
 }
 
 .heading-lg\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -184,8 +183,8 @@
 .heading-lg\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 700
 }
 
 .heading-lg\/bold__8a2c0.fontScaling__8a2c0 {
@@ -195,8 +194,8 @@
 .heading-lg\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 20px;
-    font-weight: 800;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 800
 }
 
 .heading-lg\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -206,8 +205,8 @@
 .heading-xl\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 24px;
-    font-weight: 400;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 400
 }
 
 .heading-xl\/normal__8a2c0.fontScaling__8a2c0 {
@@ -217,8 +216,8 @@
 .heading-xl\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 24px;
-    font-weight: 500;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 500
 }
 
 .heading-xl\/medium__8a2c0.fontScaling__8a2c0 {
@@ -228,8 +227,8 @@
 .heading-xl\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 24px;
-    font-weight: 600;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 600
 }
 
 .heading-xl\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -239,8 +238,8 @@
 .heading-xl\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 24px;
-    font-weight: 700;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 700
 }
 
 .heading-xl\/bold__8a2c0.fontScaling__8a2c0 {
@@ -250,8 +249,8 @@
 .heading-xl\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 24px;
-    font-weight: 800;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 800
 }
 
 .heading-xl\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -261,8 +260,8 @@
 .heading-xxl\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 32px;
-    font-weight: 400;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 400
 }
 
 .heading-xxl\/normal__8a2c0.fontScaling__8a2c0 {
@@ -272,8 +271,8 @@
 .heading-xxl\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 32px;
-    font-weight: 500;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 500
 }
 
 .heading-xxl\/medium__8a2c0.fontScaling__8a2c0 {
@@ -283,8 +282,8 @@
 .heading-xxl\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 32px;
-    font-weight: 600;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 600
 }
 
 .heading-xxl\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -294,8 +293,8 @@
 .heading-xxl\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 32px;
-    font-weight: 700;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 700
 }
 
 .heading-xxl\/bold__8a2c0.fontScaling__8a2c0 {
@@ -305,8 +304,8 @@
 .heading-xxl\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 32px;
-    font-weight: 800;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 800
 }
 
 .heading-xxl\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -316,10 +315,10 @@
 .eyebrow__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: .02em;
     line-height: 1.3333333333333333;
-    text-transform: uppercase
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .02em
 }
 
 .eyebrow__8a2c0.fontScaling__8a2c0 {
@@ -329,8 +328,8 @@
 .heading-deprecated-12\/normal__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 400;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 400
 }
 
 .heading-deprecated-12\/normal__8a2c0.fontScaling__8a2c0 {
@@ -340,8 +339,8 @@
 .heading-deprecated-12\/medium__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 500;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 500
 }
 
 .heading-deprecated-12\/medium__8a2c0.fontScaling__8a2c0 {
@@ -351,8 +350,8 @@
 .heading-deprecated-12\/semibold__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 600;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 600
 }
 
 .heading-deprecated-12\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -362,8 +361,8 @@
 .heading-deprecated-12\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 700;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 700
 }
 
 .heading-deprecated-12\/bold__8a2c0.fontScaling__8a2c0 {
@@ -373,8 +372,8 @@
 .heading-deprecated-12\/extrabold__8a2c0 {
     font-family: var(--font-display);
     font-size: 12px;
-    font-weight: 800;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 800
 }
 
 .heading-deprecated-12\/extrabold__8a2c0.fontScaling__8a2c0 {
@@ -384,8 +383,8 @@
 .redesign\/heading-18\/bold__8a2c0 {
     font-family: var(--font-display);
     font-size: 18px;
-    font-weight: 700;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 700
 }
 
 .redesign\/heading-18\/bold__8a2c0.fontScaling__8a2c0 {
@@ -395,8 +394,8 @@
 .text-xxs\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 10px;
-    font-weight: 400;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 400
 }
 
 .text-xxs\/normal__8a2c0.fontScaling__8a2c0 {
@@ -406,8 +405,8 @@
 .text-xxs\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 10px;
-    font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 500
 }
 
 .text-xxs\/medium__8a2c0.fontScaling__8a2c0 {
@@ -417,8 +416,8 @@
 .text-xxs\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 10px;
-    font-weight: 600;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 600
 }
 
 .text-xxs\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -428,8 +427,8 @@
 .text-xxs\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 10px;
-    font-weight: 700;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 700
 }
 
 .text-xxs\/bold__8a2c0.fontScaling__8a2c0 {
@@ -439,8 +438,8 @@
 .text-xs\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 12px;
-    font-weight: 400;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 400
 }
 
 .text-xs\/normal__8a2c0.fontScaling__8a2c0 {
@@ -450,8 +449,8 @@
 .text-xs\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 12px;
-    font-weight: 500;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 500
 }
 
 .text-xs\/medium__8a2c0.fontScaling__8a2c0 {
@@ -461,8 +460,8 @@
 .text-xs\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 12px;
-    font-weight: 600;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 600
 }
 
 .text-xs\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -472,8 +471,8 @@
 .text-xs\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 12px;
-    font-weight: 700;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 700
 }
 
 .text-xs\/bold__8a2c0.fontScaling__8a2c0 {
@@ -483,8 +482,8 @@
 .text-sm\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 400;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 400
 }
 
 .text-sm\/normal__8a2c0.fontScaling__8a2c0 {
@@ -494,8 +493,8 @@
 .text-sm\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 500;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 500
 }
 
 .text-sm\/medium__8a2c0.fontScaling__8a2c0 {
@@ -505,8 +504,8 @@
 .text-sm\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 600;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 600
 }
 
 .text-sm\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -516,8 +515,8 @@
 .text-sm\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 14px;
-    font-weight: 700;
-    line-height: 1.2857142857142858
+    line-height: 1.2857142857142858;
+    font-weight: 700
 }
 
 .text-sm\/bold__8a2c0.fontScaling__8a2c0 {
@@ -527,8 +526,8 @@
 .text-md\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 400
 }
 
 .text-md\/normal__8a2c0.fontScaling__8a2c0 {
@@ -538,8 +537,8 @@
 .text-md\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 500
 }
 
 .text-md\/medium__8a2c0.fontScaling__8a2c0 {
@@ -549,8 +548,8 @@
 .text-md\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 600;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 600
 }
 
 .text-md\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -560,8 +559,8 @@
 .text-md\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 700;
-    line-height: 1.25
+    line-height: 1.25;
+    font-weight: 700
 }
 
 .text-md\/bold__8a2c0.fontScaling__8a2c0 {
@@ -571,8 +570,8 @@
 .text-lg\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 20px;
-    font-weight: 400;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 400
 }
 
 .text-lg\/normal__8a2c0.fontScaling__8a2c0 {
@@ -582,8 +581,8 @@
 .text-lg\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 500
 }
 
 .text-lg\/medium__8a2c0.fontScaling__8a2c0 {
@@ -593,8 +592,8 @@
 .text-lg\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 20px;
-    font-weight: 600;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 600
 }
 
 .text-lg\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -604,8 +603,8 @@
 .text-lg\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 20px;
-    font-weight: 700;
-    line-height: 1.2
+    line-height: 1.2;
+    font-weight: 700
 }
 
 .text-lg\/bold__8a2c0.fontScaling__8a2c0 {
@@ -615,8 +614,8 @@
 .redesign\/message-preview\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 15px;
-    font-weight: 400;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 400
 }
 
 .redesign\/message-preview\/normal__8a2c0.fontScaling__8a2c0 {
@@ -626,8 +625,8 @@
 .redesign\/message-preview\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 15px;
-    font-weight: 500;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 500
 }
 
 .redesign\/message-preview\/medium__8a2c0.fontScaling__8a2c0 {
@@ -637,8 +636,8 @@
 .redesign\/message-preview\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 15px;
-    font-weight: 600;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 600
 }
 
 .redesign\/message-preview\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -648,8 +647,8 @@
 .redesign\/message-preview\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 15px;
-    font-weight: 700;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 700
 }
 
 .redesign\/message-preview\/bold__8a2c0.fontScaling__8a2c0 {
@@ -659,8 +658,8 @@
 .redesign\/channel-title\/normal__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 400;
-    line-height: 1.375
+    line-height: 1.375;
+    font-weight: 400
 }
 
 .redesign\/channel-title\/normal__8a2c0.fontScaling__8a2c0 {
@@ -670,8 +669,8 @@
 .redesign\/channel-title\/medium__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.375
+    line-height: 1.375;
+    font-weight: 500
 }
 
 .redesign\/channel-title\/medium__8a2c0.fontScaling__8a2c0 {
@@ -681,8 +680,8 @@
 .redesign\/channel-title\/semibold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 600;
-    line-height: 1.375
+    line-height: 1.375;
+    font-weight: 600
 }
 
 .redesign\/channel-title\/semibold__8a2c0.fontScaling__8a2c0 {
@@ -692,8 +691,8 @@
 .redesign\/channel-title\/bold__8a2c0 {
     font-family: var(--font-primary);
     font-size: 16px;
-    font-weight: 700;
-    line-height: 1.375
+    line-height: 1.375;
+    font-weight: 700
 }
 
 .redesign\/channel-title\/bold__8a2c0.fontScaling__8a2c0 {
@@ -703,8 +702,8 @@
 .display-sm__8a2c0 {
     font-family: var(--font-headline);
     font-size: 20px;
-    font-weight: 800;
-    line-height: 1
+    line-height: 1;
+    font-weight: 800
 }
 
 .display-sm__8a2c0.fontScaling__8a2c0 {
@@ -714,8 +713,8 @@
 .display-md__8a2c0 {
     font-family: var(--font-headline);
     font-size: 34px;
-    font-weight: 800;
-    line-height: 1.0588235294117647
+    line-height: 1.0588235294117647;
+    font-weight: 800
 }
 
 .display-md__8a2c0.fontScaling__8a2c0 {
@@ -725,8 +724,8 @@
 .display-lg__8a2c0 {
     font-family: var(--font-headline);
     font-size: 44px;
-    font-weight: 800;
-    line-height: .9545454545454546
+    line-height: .9545454545454546;
+    font-weight: 800
 }
 
 .display-lg__8a2c0.fontScaling__8a2c0 {
@@ -736,8 +735,8 @@
 .code__8a2c0 {
     font-family: var(--font-code);
     font-size: 12px;
-    font-weight: 700;
-    line-height: 1.3333333333333333
+    line-height: 1.3333333333333333;
+    font-weight: 700
 }
 
 .code__8a2c0.fontScaling__8a2c0 {
@@ -753,10 +752,10 @@
 }
 
 .notice__8a2c0 {
-    align-items: center;
     display: flex;
-    gap: var(--spacing-4);
+    align-items: center;
     justify-content: center;
+    gap: var(--spacing-4);
     width: 100%
 }
 
@@ -767,22 +766,22 @@
 }
 
 .qrCodeContainer__8a2c0 {
+    overflow: hidden;
+    justify-self: center;
     border-radius: var(--radius-md);
     display: flex;
-    justify-content: center;
-    justify-self: center;
-    overflow: hidden
+    justify-content: center
 }
 
 .qrCodeObscure__8a2c0 {
-    filter: blur(11px);
     position: relative;
+    filter: blur(11px);
     transition: filter .3s ease-in-out
 }
 
 .qrCodeOverlay__8a2c0 {
-    border-radius: var(--radius-md);
-    padding: 0
+    padding: 0;
+    border-radius: var(--radius-md)
 }
 
 .qrCodeObscure__8a2c0.visible__8a2c0 {
@@ -798,12 +797,12 @@
 }
 
 html:not(.visual-refresh) .modalRoot__8a2c0 {
-    border-radius: var(--spacing-8);
-    width: 368px
+    width: 368px;
+    border-radius: var(--spacing-8)
 }
 
 html:not(.visual-refresh) .content__8a2c0 {
     padding: var(--spacing-32) var(--spacing-40)
 }
 
-/*# sourceMappingURL=6e4dc507ce4d48a8.css.map*/
+/*# sourceMappingURL=bb62dfc1e16296d6.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 25070
-  Original File Name: 7d6b8cfaac8deffc
+  Original File Name: d609a0bb400b9eae
 **/
 .description_d9ee11 {
     margin-bottom: 16px
@@ -11,17 +11,18 @@
 }
 
 .reset_d9ee11 {
+    text-transform: capitalize;
     cursor: pointer;
     margin-bottom: 20px;
-    opacity: .6;
     padding-left: 1px;
     padding-right: 1px;
-    text-transform: capitalize
+    opacity: .6
 }
 
 .reset_d9ee11:hover {
     opacity: 1;
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
-/*# sourceMappingURL=7d6b8cfaac8deffc.css.map*/
+/*# sourceMappingURL=d609a0bb400b9eae.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 86590
-  Original File Name: 5c767d813d53a489
+  Original File Name: 5c9a49aed486f282
 **/
 .container__1ce5d {
     position: relative
@@ -16,9 +16,9 @@
 
 .icon__2894c {
     display: block;
-    flex: 0 0 auto;
+    width: 20px;
     height: 20px;
-    width: 20px
+    flex: 0 0 auto
 }
 
 .iconWithGuildIcon__2894c {
@@ -39,38 +39,38 @@
 }
 
 .acronym__2894c {
+    font-weight: 500;
+    line-height: 1.2em;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--bg-mod-strong);
-    color: var(--text-normal);
-    display: flex;
-    font-weight: 500;
-    justify-content: center;
-    line-height: 1.2em;
-    white-space: nowrap
+    color: var(--text-normal)
 }
 
 .footer_c3ef83 {
-    align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .failedDestinations_c3ef83 {
     border: 1px solid var(--border-subtle);
     border-radius: 8px;
-    margin-top: 16px;
-    padding: 8px 16px
+    padding: 8px 16px;
+    margin-top: 16px
 }
 
 .failedRow_c3ef83 {
-    align-items: center;
     display: flex;
+    height: 48px;
     flex-direction: row;
-    gap: 12px;
-    height: 48px
+    align-items: center;
+    gap: 12px
 }
 
 .label_c3ef83 {
     color: var(--header-primary)
 }
 
-/*# sourceMappingURL=5c767d813d53a489.css.map*/
+/*# sourceMappingURL=5c9a49aed486f282.css.map*/

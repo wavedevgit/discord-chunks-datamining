@@ -1,6 +1,6 @@
 /**
   Module ID: 67376
-  Original File Name: ef4fe9c958f13c51
+  Original File Name: e03b0ac658298e49
 **/
 .modal__657c0 {
     min-width: 480px
@@ -8,8 +8,8 @@
 
 .close__657c0 {
     position: absolute;
-    right: 16px;
     top: 16px;
+    right: 16px;
     z-index: 1
 }
 
@@ -19,9 +19,9 @@
 }
 
 .content__657c0,.header__657c0 {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .content__657c0 {
@@ -44,9 +44,9 @@
 }
 
 .checkbox__657c0 {
+    padding: 12px 16px;
     background: var(--bg-base-secondary);
-    border-radius: var(--radius-sm);
-    padding: 12px 16px
+    border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=ef4fe9c958f13c51.css.map*/
+/*# sourceMappingURL=e03b0ac658298e49.css.map*/

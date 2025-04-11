@@ -1,28 +1,28 @@
 /**
   Module ID: 77370
-  Original File Name: 325e9b7559cce635
+  Original File Name: 929c13ef0781706b
 **/
 .container__6a597 {
-    height: 294px;
-    width: 432px
+    width: 432px;
+    height: 294px
 }
 
 .content__6a597 {
-    align-items: center;
-    background-color: var(--modal-background);
     border-radius: 8px;
+    background-color: var(--modal-background);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 16px;
-    margin-top: -36px;
-    padding: 0 32px
+    padding: 0 32px;
+    margin-top: -36px
 }
 
 .closeButton__6a597 {
-    color: var(--interactive-active);
     position: absolute;
+    top: 12px;
     right: 12px;
-    top: 12px
+    color: var(--interactive-active)
 }
 
 .avatarBackground__6a597 {
@@ -34,21 +34,21 @@
 }
 
 .leftAvatar__6a597 {
-    left: 32px;
+    transform: rotate(-5.36deg);
     position: relative;
-    transform: rotate(-5.36deg)
+    left: 32px
 }
 
 .centerAvatar__6a597 {
+    z-index: 2;
     position: relative;
-    top: 4px;
-    z-index: 2
+    top: 4px
 }
 
 .rightAvatar__6a597 {
+    transform: rotate(5.36deg);
     position: relative;
-    right: 32px;
-    transform: rotate(5.36deg)
+    right: 32px
 }
 
 .body__6a597,.title__6a597 {
@@ -62,4 +62,4 @@
     padding: 16px
 }
 
-/*# sourceMappingURL=325e9b7559cce635.css.map*/
+/*# sourceMappingURL=929c13ef0781706b.css.map*/

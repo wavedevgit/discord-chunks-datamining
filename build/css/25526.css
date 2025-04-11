@@ -1,15 +1,15 @@
 /**
   Module ID: 25526
-  Original File Name: 7446cb25253b7550
+  Original File Name: b387465b792d8780
 **/
 .gradientSplash__6d426 {
     background: linear-gradient(270deg,#0a212c,#1b3b50);
+    width: 100%;
     height: 96px;
-    -webkit-mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
-    mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
     position: absolute;
     top: 0;
-    width: 100%
+    -webkit-mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
+    mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px)
 }
 
 .theme-light .gradientSplash__6d426 {
@@ -17,9 +17,9 @@
 }
 
 .modalHeader__6d426 {
+    overflow: visible;
     display: flex;
-    flex-direction: column;
-    overflow: visible
+    flex-direction: column
 }
 
 .title__6d426 {
@@ -31,17 +31,17 @@
 }
 
 .heroImage__6d426 {
-    border-radius: var(--radius-sm);
-    height: 48px;
     position: relative;
-    width: 48px
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm)
 }
 
 .guildContainer__6d426 {
-    align-items: center;
     display: flex;
-    gap: 8px;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    gap: 8px
 }
 
 .guildIcon__6d426 {
@@ -49,14 +49,14 @@
 }
 
 .closeButton__6d426 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .close__6d426 {
     position: absolute;
-    right: 8px;
-    top: 2px
+    top: 2px;
+    right: 8px
 }
 
 .footerButtons__6d426 {
@@ -65,14 +65,14 @@
 }
 
 .footer__6d426 {
-    align-items: center;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .container__6d426 {
-    border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 8px
 }
 
 .content_fd449b {
@@ -95,8 +95,8 @@
 }
 
 .winnerImage_fd449b {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
-/*# sourceMappingURL=7446cb25253b7550.css.map*/
+/*# sourceMappingURL=b387465b792d8780.css.map*/

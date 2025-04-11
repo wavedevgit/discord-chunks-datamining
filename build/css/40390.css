@@ -1,14 +1,14 @@
 /**
   Module ID: 40390
-  Original File Name: 319f4338f38ac014
+  Original File Name: ebba1e7b489958a5
 **/
 .headerContainer__56d15 {
-    align-items: center;
+    padding-top: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
+    align-items: center;
     justify-content: center;
-    padding-top: 8px;
     text-align: center
 }
 
@@ -17,17 +17,17 @@
 }
 
 .statusContainer__56d15 {
-    align-items: center;
-    background-color: var(--background-primary);
-    border: 3px solid var(--background-primary);
-    border-radius: 50%;
-    bottom: -4px;
-    display: flex;
-    height: 24px;
-    justify-content: center;
     position: absolute;
+    bottom: -4px;
     right: -4px;
-    width: 24px
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--background-primary);
+    border: 3px solid var(--background-primary)
 }
 
 .statusIcon__56d15 {
@@ -35,12 +35,12 @@
 }
 
 .descriptionContainer__56d15 {
-    align-items: center;
+    padding: 0 16px 24px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 0 16px 24px;
     text-align: center
 }
 
-/*# sourceMappingURL=319f4338f38ac014.css.map*/
+/*# sourceMappingURL=ebba1e7b489958a5.css.map*/

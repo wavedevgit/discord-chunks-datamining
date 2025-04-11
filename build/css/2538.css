@@ -1,13 +1,13 @@
 /**
   Module ID: 2538
-  Original File Name: 2f47a3c5f769aab4
+  Original File Name: d0562c87b6951233
 **/
 .modal__59133 {
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-sm);
-    overflow: visible;
+    width: 600px;
     padding-top: 50px;
-    width: 600px
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    overflow: visible
 }
 
 .hasEmoji__59133 {
@@ -22,38 +22,39 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 20px 24px;
-    position: relative
+    position: relative;
+    padding: 0 20px 24px
 }
 
 .imagePreview__59133 {
-    border-radius: var(--radius-md);
-    height: 175px;
-    left: 20px;
-    object-fit: cover;
     position: absolute;
     top: -50px;
-    width: 175px
+    left: 20px;
+    width: 175px;
+    height: 175px;
+    border-radius: var(--radius-md);
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .emojiPreview__59133 {
-    height: 100px;
-    left: 20px;
     position: absolute;
     top: -30px;
-    width: 100px
+    left: 20px;
+    width: 100px;
+    height: 100px
 }
 
 .input__59133 {
-    border-radius: var(--radius-xs);
     display: block;
     min-height: 48px;
-    padding: 20px
+    padding: 20px;
+    border-radius: var(--radius-xs)
 }
 
 .footer__59133 {
-    background-color: var(--background-secondary-alt);
-    padding: 20px
+    padding: 20px;
+    background-color: var(--background-secondary-alt)
 }
 
-/*# sourceMappingURL=2f47a3c5f769aab4.css.map*/
+/*# sourceMappingURL=d0562c87b6951233.css.map*/

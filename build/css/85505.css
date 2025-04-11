@@ -1,11 +1,11 @@
 /**
   Module ID: 85505
-  Original File Name: d323933a1da82aa0
+  Original File Name: 3f5709b39c097583
 **/
 .header_f549e5 {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: var(--spacing-16);
     padding-top: var(--spacing-64);
     text-align: center
@@ -31,8 +31,8 @@
 }
 
 .content_f549e5,.guildInfo_f549e5 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .guildName_f549e5 {
@@ -51,16 +51,16 @@
 }
 
 .infoGroup_f549e5 {
-    background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
     margin-bottom: var(--spacing-24);
     width: 100%
 }
 
 .infoRow_f549e5 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: var(--spacing-16);
     padding: var(--spacing-16)
 }
@@ -78,14 +78,14 @@
 }
 
 .row__6e3d6 {
-    gap: var(--spacing-12);
-    padding: var(--spacing-12)
+    padding: var(--spacing-12);
+    gap: var(--spacing-12)
 }
 
 .icon__6e3d6 {
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-width: 32px
 }
 
@@ -94,15 +94,15 @@
 }
 
 .row__23bf1 {
-    gap: var(--spacing-12);
-    padding: var(--spacing-12)
+    padding: var(--spacing-12);
+    gap: var(--spacing-12)
 }
 
 .icon__23bf1 {
-    align-items: center;
     display: flex;
     justify-content: center;
+    align-items: center;
     min-width: 32px
 }
 
-/*# sourceMappingURL=d323933a1da82aa0.css.map*/
+/*# sourceMappingURL=3f5709b39c097583.css.map*/

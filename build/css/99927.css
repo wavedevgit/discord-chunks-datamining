@@ -1,6 +1,6 @@
 /**
   Module ID: 99927
-  Original File Name: 005520a760f76cb1
+  Original File Name: 9586d1f22f452a54
 **/
 .searchBar__3e00d {
     background-color: var(--background-secondary);
@@ -21,8 +21,8 @@
 }
 
 .alignCenter__01dab,.headerSubtitle__01dab {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .headerSubtitleIcon__01dab {
@@ -30,11 +30,11 @@
 }
 
 .content__01dab {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
-    overflow: hidden
+    height: 100%
 }
 
 .searchBox__01dab {
@@ -46,11 +46,11 @@
 }
 
 .addMemberRow__01dab {
-    border-radius: 4px;
-    cursor: pointer;
     margin-left: 12px;
     margin-right: 4px;
-    padding: 8px 6px
+    padding: 8px 6px;
+    border-radius: 4px;
+    cursor: pointer
 }
 
 .addMemberRow__01dab.selectedRow__01dab {
@@ -58,8 +58,8 @@
 }
 
 .rowBody__01dab {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .checkboxLabel__01dab {
@@ -76,23 +76,23 @@
 }
 
 .rowLabelSubText__01dab {
-    flex: 1;
     margin-left: 4px;
+    flex: 1;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    text-overflow: ellipsis
 }
 
 .sectionTitle__01dab {
     color: var(--text-normal);
-    padding-left: 16px;
-    padding-top: 8px
+    padding-top: 8px;
+    padding-left: 16px
 }
 
 .noResultIcon__01dab {
-    height: 85px;
     margin-bottom: 16px;
-    width: 85px
+    width: 85px;
+    height: 85px
 }
 
 .description__01dab {
@@ -109,8 +109,8 @@
 }
 
 .visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
-    padding-left: var(--modal-horizontal-padding);
-    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8))
+    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    padding-left: var(--modal-horizontal-padding)
 }
 
 .visual-refresh .addMemberRow__01dab {
@@ -118,8 +118,8 @@
 }
 
 .visual-refresh .scrollSeparator__01dab {
-    border-bottom: 1px solid var(--border-subtle);
-    box-shadow: none
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .modalRoot__7169d {
@@ -131,8 +131,8 @@
 }
 
 .headerSubtitle__7169d {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .headerSubtitleIcon__7169d {
@@ -176,8 +176,8 @@
 }
 
 .icon_ac72c6 {
-    margin-right: 12px;
     opacity: .6;
+    margin-right: 12px;
     fill: var(--primary-300)
 }
 
@@ -186,8 +186,8 @@
 }
 
 .header_ac72c6 {
-    margin-bottom: 4px;
-    margin-top: 4px
+    margin-top: 4px;
+    margin-bottom: 4px
 }
 
 .title_ac72c6 {
@@ -195,9 +195,9 @@
 }
 
 .subtitle_ac72c6 {
+    display: flex;
     align-items: center;
-    color: var(--text-muted-on-default);
-    display: flex
+    color: var(--text-muted-on-default)
 }
 
 .subtitleIcon_ac72c6 {
@@ -242,20 +242,20 @@
 }
 
 .inputPrefix_ac72c6 {
-    color: var(--text-normal);
-    left: 8px;
     position: absolute;
-    top: 12px
+    top: 12px;
+    left: 8px;
+    color: var(--text-normal)
 }
 
 .switchIcon_ac72c6 {
-    display: inline-block;
-    height: 16px;
-    margin-right: 3px;
-    opacity: .6;
     position: relative;
     top: 2px;
-    width: 16px
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    opacity: .6;
+    margin-right: 3px
 }
 
 .channelTypeDescription_ac72c6,.storeChannelOptionSelector_ac72c6 {
@@ -263,17 +263,17 @@
 }
 
 .username_ac72c6 {
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 8px;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px
 }
 
 .emptyRoles_ac72c6 {
-    margin-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .owner_ac72c6 {
@@ -296,8 +296,8 @@
 }
 
 .radioLabelName_ac72c6 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .radioLabelDescription_ac72c6 {
@@ -325,8 +325,8 @@
 }
 
 .radioItemName_ac72c6 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .channelNameNote_ac72c6 strong {
@@ -339,18 +339,18 @@
 
 .closeButton_f9ff5f {
     position: absolute;
-    right: 12px;
-    top: 12px
+    top: 12px;
+    right: 12px
 }
 
 .modalContent_f9ff5f {
-    padding-bottom: 16px;
-    padding-top: 16px
+    padding-top: 16px;
+    padding-bottom: 16px
 }
 
 .channelOptionWrapper_f9ff5f {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .icon_f9ff5f,.spacer_f9ff5f {
@@ -358,9 +358,9 @@
 }
 
 .icon_f9ff5f {
+    width: 24px;
     color: var(--interactive-normal);
-    margin-right: 8px;
-    width: 24px
+    margin-right: 8px
 }
 
 .inputWrapper_f9ff5f {
@@ -372,12 +372,12 @@
 }
 
 .inputPrefix_f9ff5f {
-    color: var(--interactive-normal);
-    height: 20px;
-    left: 8px;
     position: absolute;
+    width: 20px;
+    height: 20px;
     top: 10px;
-    width: 20px
+    left: 8px;
+    color: var(--interactive-normal)
 }
 
 .backButton_f9ff5f {
@@ -386,8 +386,8 @@
 }
 
 .backButtonInner_f9ff5f {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
-/*# sourceMappingURL=005520a760f76cb1.css.map*/
+/*# sourceMappingURL=9586d1f22f452a54.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 59650
-  Original File Name: a482074b09295ce6
+  Original File Name: bf461b805d46082a
 **/
 .buttonContainer__3e6b4 {
     margin-top: var(--spacing-32)
@@ -12,9 +12,9 @@
 }
 
 .buttonInner__3e6b4 {
-    align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center
 }
 
 .buttonIcon__3e6b4 {
@@ -26,18 +26,18 @@
 }
 
 .textContainer__3e6b4 {
-    margin-bottom: var(--spacing-16);
-    text-align: center
+    text-align: center;
+    margin-bottom: var(--spacing-16)
 }
 
 .description__3e6b4 {
-    margin: var(--spacing-4) auto 0;
-    max-width: 80%
+    max-width: 80%;
+    margin: var(--spacing-4) auto 0
 }
 
 .heroImage__3e6b4 {
-    height: 140px;
-    margin: -72px auto 0
+    margin: -72px auto 0;
+    height: 140px
 }
 
 .safetyTips__3e6b4 {
@@ -45,24 +45,24 @@
 }
 
 .tipRow__5bc4e {
-    flex-grow: 0;
     flex-wrap: nowrap;
+    flex-grow: 0;
     gap: var(--spacing-8);
     margin-top: var(--spacing-16)
 }
 
 .tipNumber__5bc4e,.tipRow__5bc4e {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .tipNumber__5bc4e {
-    background: var(--bg-mod-subtle);
     border-radius: var(--radius-round);
-    flex-direction: column;
-    justify-content: center;
+    background: var(--bg-mod-subtle);
+    min-width: 32px;
     min-height: 32px;
-    min-width: 32px
+    flex-direction: column;
+    justify-content: center
 }
 
 .tipsList__5bc4e {
@@ -70,22 +70,22 @@
 }
 
 .tipsHeader__5bc4e {
-    background: linear-gradient(270deg,rgba(88,101,242,0) 0,var(--brand-500) 70.8%),url(/assets/a9ff2b87dfa85265.png);
-    background-size: cover;
-    border-radius: var(--radius-sm) var(--radius-sm) 0 0;
     padding: var(--spacing-16);
-    text-align: start
+    text-align: left;
+    background: linear-gradient(270deg,rgba(88,101,242,0),var(--brand-500) 70.8%),url(/assets/a9ff2b87dfa85265.png);
+    background-size: cover;
+    border-radius: var(--radius-sm) var(--radius-sm) 0 0
 }
 
 .headerText__5bc4e {
-    color: var(--status-positive-text);
-    max-width: 70%
+    max-width: 70%;
+    color: var(--status-positive-text)
 }
 
 .tipsSection__5bc4e {
+    text-align: left;
     background-color: var(--background-secondary);
-    border-radius: 0 0 var(--radius-sm) var(--radius-sm);
-    text-align: start
+    border-radius: 0 0 var(--radius-sm) var(--radius-sm)
 }
 
 .container_ca98d9 {
@@ -102,7 +102,8 @@
 }
 
 .footerButton_ca98d9:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
-/*# sourceMappingURL=a482074b09295ce6.css.map*/
+/*# sourceMappingURL=bf461b805d46082a.css.map*/

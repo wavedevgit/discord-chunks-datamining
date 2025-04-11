@@ -1,6 +1,6 @@
 /**
   Module ID: 72920
-  Original File Name: d6de4d8a1a4c3bf5
+  Original File Name: 1f5a6b7e0b2d097c
 **/
 .header__0907c {
     justify-content: space-between
@@ -19,8 +19,8 @@
 }
 
 .selectorHeader__0907c {
-    padding-bottom: 8px;
-    padding-top: 16px
+    padding-top: 16px;
+    padding-bottom: 8px
 }
 
 .selectorText__0907c {
@@ -32,10 +32,10 @@
 }
 
 .selectorButton__0907c {
-    background: var(--background-secondary);
-    flex: 1 1 auto;
     min-width: 36px;
-    padding: 6px 0
+    padding: 6px 0;
+    flex: 1 1 auto;
+    background: var(--background-secondary)
 }
 
 .selectorButtonSelected__0907c {
@@ -43,12 +43,12 @@
 }
 
 .auditLogDisclosure__0907c {
-    padding-bottom: 16px;
-    padding-top: 8px
+    padding-top: 8px;
+    padding-bottom: 16px
 }
 
 .contentContainer__0907c {
     padding-bottom: 20px
 }
 
-/*# sourceMappingURL=d6de4d8a1a4c3bf5.css.map*/
+/*# sourceMappingURL=1f5a6b7e0b2d097c.css.map*/

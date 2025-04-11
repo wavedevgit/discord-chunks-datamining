@@ -1,36 +1,37 @@
 /**
   Module ID: 69773
-  Original File Name: 4cf95e35789d914a
+  Original File Name: 8a7428fbeffe69a4
 **/
 .logo__11f7b {
-    background: url(/assets/bbbc3d376d38e7bc.svg) no-repeat;
     flex: 0 0 auto;
+    width: 130px;
     height: 36px;
-    width: 130px
+    background: url(/assets/bbbc3d376d38e7bc.svg) no-repeat
 }
 
 .content__89631 {
-    gap: 24px;
-    justify-content: center;
-    max-width: 408px;
     min-width: 408px;
+    max-width: 408px;
+    justify-content: center;
     padding: 24px;
+    gap: 24px;
     text-align: center
 }
 
 .content__89631,.innerContent__89631 {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .innerContent__89631 {
     gap: 8px
 }
 
-@media (max-width:485px) {
+@media (max-width: 485px) {
     .content__89631 {
-        min-width: unset
+        min-width: 0;
+        min-width: initial
     }
 }
 
@@ -39,17 +40,17 @@
 }
 
 .artwork__89631 {
-    height: auto;
-    width: 80%
+    width: 80%;
+    height: auto
 }
 
 .qrCodeOverlay_c28498 {
-    align-items: center;
-    display: flex;
+    width: 100%;
     height: 100%;
-    justify-content: center;
     position: absolute;
-    width: 100%
+    display: flex;
+    align-items: center;
+    justify-content: center
 }
 
 .qrCodeOverlay_c28498 img {
@@ -57,45 +58,44 @@
 }
 
 .size-40_c28498 {
-    height: 40px;
-    width: 40px
+    width: 40px;
+    height: 40px
 }
 
 .size-60_c28498 {
-    height: 60px;
-    width: 60px
+    width: 60px;
+    height: 60px
 }
 
 .qrCodeOverlayContainer_c28498 {
     display: flex;
-    position: relative;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    position: relative
 }
 
 .qrCodeContainer_c28498 {
-    border-radius: var(--radius-xs);
-    padding: var(--spacing-8)
+    padding: var(--spacing-8);
+    border-radius: var(--radius-xs)
 }
 
 .panel__79a1f {
-    align-items: center;
     background-color: var(--panel-bg);
-    border-radius: 32px;
     box-shadow: var(--shadow-high);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    justify-content: center;
-    max-height: 720px;
+    border-radius: 32px;
+    min-width: 1260px;
     max-width: 1260px;
     min-height: 720px;
-    min-width: 1260px;
-    opacity: 1;
+    max-height: 720px;
     padding: 56px 72px;
-    position: relative;
-    transform: scale(1)
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: scale(1);
+    position: relative
 }
 
 .panelHeader__79a1f {
@@ -103,75 +103,75 @@
 }
 
 .panelContent__79a1f {
-    align-items: center;
     display: flex;
-    flex: 1;
     flex-direction: row;
     gap: 72px;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    flex: 1
 }
 
 .logo__79a1f {
     background: url(/assets/bbbc3d376d38e7bc.svg) no-repeat;
     background-size: contain;
-    height: 60px;
-    width: 200px
+    width: 200px;
+    height: 60px
 }
 
 .qrcodeContent__79a1f {
-    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 48px;
+    align-items: center;
     width: 50%
 }
 
 .qrcodeCard__79a1f {
-    -webkit-backdrop-filter: blur(100px);
-    backdrop-filter: blur(100px);
-    background: linear-gradient(86deg,hsla(0,0%,100%,.2) 11.14%,hsla(0,0%,100%,.04) 113.29%);
-    border: 3px solid hsla(0,0%,100%,.5);
+    position: relative;
     border-radius: 12px;
-    box-shadow: 0 1.389px 34.732px 0 rgba(69,42,124,.1);
     padding: 32px;
-    position: relative
+    border: 3px solid hsla(0,0%,100%,.5);
+    background: linear-gradient(86deg,hsla(0,0%,100%,.2) 11.14%,hsla(0,0%,100%,.04) 113.29%);
+    box-shadow: 0 1.389px 34.732px 0 rgba(69,42,124,.1);
+    -webkit-backdrop-filter: blur(100px);
+    backdrop-filter: blur(100px)
 }
 
 .qrcodeOverlay__79a1f {
-    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     display: flex;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%
+    align-items: center;
+    justify-content: center
 }
 
 .qrcodeOverlay__79a1f img {
-    display: flex;
+    width: 50px;
     height: 50px;
-    image-rendering: crisp-edges;
-    width: 50px
+    display: flex;
+    image-rendering: crisp-edges
 }
 
 .qrcodeSpinner__79a1f {
-    height: 288px;
     justify-content: center;
-    width: 288px
+    width: 288px;
+    height: 288px
 }
 
 .qrcodeSpinner__79a1f,.qrcodeText__79a1f {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .qrcodeText__79a1f {
-    align-self: stretch;
     flex-direction: column;
     gap: 12px;
+    align-self: stretch;
     text-align: center
 }
 
@@ -181,20 +181,20 @@
 }
 
 .dividerContent__79a1f {
-    align-items: center;
-    align-self: stretch;
     display: flex;
+    padding: 24px 0;
     flex-direction: column;
-    gap: 20px;
     justify-content: center;
-    padding: 24px 0
+    align-items: center;
+    gap: 20px;
+    align-self: stretch
 }
 
 .divider__79a1f {
-    background-color: var(--header-primary);
     flex: 1;
-    opacity: .4;
-    width: 2px
+    width: 2px;
+    background-color: var(--header-primary);
+    opacity: .4
 }
 
 .dividerText__79a1f {
@@ -203,19 +203,19 @@
 
 .fallbackContent__79a1f {
     gap: 32px;
-    text-align: center;
-    width: 50%
+    width: 50%;
+    text-align: center
 }
 
 .fallbackContent__79a1f,.fallbackContentTextGroup__79a1f {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .fallbackContentTextGroup__79a1f {
-    align-self: stretch;
-    gap: 12px
+    gap: 12px;
+    align-self: stretch
 }
 
 .fallbackContentHeading__79a1f {
@@ -224,11 +224,11 @@
 }
 
 .fallbackContentAction__79a1f {
-    align-items: center;
-    align-self: stretch;
     display: flex;
     flex-direction: column;
-    gap: 48px
+    align-items: center;
+    gap: 48px;
+    align-self: stretch
 }
 
 .fallbackContentCode__79a1f {
@@ -237,12 +237,12 @@
 }
 
 .wumpus__79a1f {
-    bottom: -42px;
     display: none;
-    image-rendering: crisp-edges;
-    pointer-events: none;
     position: absolute;
-    right: -280px
+    bottom: -42px;
+    right: -280px;
+    pointer-events: none;
+    image-rendering: crisp-edges
 }
 
 @media (min-width:1800px) and (min-height:950px) {
@@ -254,32 +254,32 @@
 @media (max-width:900px) or (max-height:500px) {
     .panelHeader__79a1f {
         display: flex;
-        justify-content: center;
-        width: 100%
+        width: 100%;
+        justify-content: center
     }
 
     .panel__79a1f {
-        border-radius: 0;
-        bottom: 0;
-        left: 0;
-        max-height: 100%;
-        max-width: 100%;
         position: absolute;
+        top: 0;
+        left: 0;
         right: 0;
-        top: 0
+        bottom: 0;
+        border-radius: 0;
+        max-width: 100%;
+        max-height: 100%
     }
 }
 
 .content_b394b8 {
-    gap: 24px;
     max-width: 375px;
-    padding: 24px
+    padding: 24px;
+    gap: 24px
 }
 
 .content_b394b8,.innerContent_b394b8 {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .innerContent_b394b8 {
@@ -291,8 +291,8 @@
 }
 
 .textInputContainer_b394b8 {
-    margin-top: 16px;
-    width: 100%
+    width: 100%;
+    margin-top: 16px
 }
 
 .textInputContainer_b394b8 .textInput_b394b8 {
@@ -304,42 +304,42 @@
 }
 
 .activatePage__8cc35 {
-    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
+    align-items: center;
     max-height: -webkit-fill-available;
     max-height: -moz-available;
-    max-height: stretch;
-    overflow: hidden;
-    position: relative;
-    width: 100vw
+    max-height: stretch
 }
 
 .content__8cc35 {
+    opacity: 1;
+    transform: scale(1);
+    overflow-y: auto;
     background-color: var(--background-secondary);
     border-radius: 8px;
     box-shadow: var(--elevation-high);
-    margin: 16px;
-    opacity: 1;
-    overflow-y: auto;
-    transform: scale(1)
+    margin: 16px
 }
 
 .artwork__8cc35 {
-    height: 100%;
-    left: 0;
     position: absolute;
     top: 0;
-    width: 100%
+    left: 0;
+    width: 100%;
+    height: 100%
 }
 
 .logo__8cc35 {
     display: block;
-    left: 24px;
     position: fixed;
-    top: 24px
+    top: 24px;
+    left: 24px
 }
 
-/*# sourceMappingURL=4cf95e35789d914a.css.map*/
+/*# sourceMappingURL=8a7428fbeffe69a4.css.map*/

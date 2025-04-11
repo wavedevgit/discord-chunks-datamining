@@ -1,10 +1,9 @@
 /**
   Module ID: 60333
-  Original File Name: d7beea9eafe3efbe
+  Original File Name: 8eaf4a07a8242e88
 **/
 .ctaButtons_a77fde {
     display: grid;
-    grid-template: "back cta" 1fr/-webkit-max-content 1fr;
     grid-template: "back cta" 1fr/max-content 1fr
 }
 
@@ -18,13 +17,13 @@
 }
 
 .iconButtonLarge_a77fde {
-    align-items: center;
-    background-color: var(--background-modifier-hover);
     display: flex;
-    flex: 1 0 0;
     height: 32px;
+    padding: 8px;
     justify-content: center;
-    padding: 8px
+    align-items: center;
+    flex: 1 0 0;
+    background-color: var(--background-modifier-hover)
 }
 
 .iconButtonLarge_a77fde:hover {
@@ -32,8 +31,8 @@
 }
 
 .iconButton_a77fde {
-    background-color: var(--background-modifier-hover);
-    padding: 8px
+    padding: 8px;
+    background-color: var(--background-modifier-hover)
 }
 
 .iconButton_a77fde:hover {
@@ -41,9 +40,9 @@
 }
 
 .iconButtonInner_a77fde {
-    align-items: center;
     color: var(--interactive-normal);
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .shine_a77fde {
@@ -51,14 +50,14 @@
 }
 
 .backButton_a77fde {
-    aspect-ratio: 1/1;
+    grid-area: back;
     background-color: var(--background-modifier-hover);
     border: 1px solid var(--background-modifier-hover);
     border-radius: 4px;
-    grid-area: back;
+    padding: 3px;
+    aspect-ratio: 1/1;
     margin-right: 8px;
-    margin-top: 12px;
-    padding: 3px
+    margin-top: 12px
 }
 
 .backButton_a77fde:focus,.backButton_a77fde:hover {
@@ -72,8 +71,8 @@
 }
 
 .backButtonInner_a77fde {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
@@ -88,20 +87,20 @@
 }
 
 .outer_bb1069 {
-    align-items: center;
     display: flex;
-    justify-content: center;
     position: relative;
+    align-items: center;
+    justify-content: center;
     z-index: 2
 }
 
 .progressBar_bb1069 {
-    bottom: 0;
-    left: 0;
     overflow: visible;
     position: absolute;
-    right: 0;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     shape-rendering: geometricPrecision
 }
 
@@ -119,15 +118,18 @@
 }
 
 .coverContent_bb1069 {
-    border-radius: 50%;
-    inset: 0;
     position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
     z-index: 999
 }
 
 .progressTextWrapper_bb1069 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
@@ -142,10 +144,10 @@
 }
 
 .modalRoot_de2fa0 {
-    border: none!important;
     border-radius: 12px;
+    width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px);
     min-width: 500px;
-    width: min(calc(100vw - 110px),calc(177.77778vh - 551.11111px),1900px)
+    border: none!important
 }
 
 .modalBody_de2fa0 {
@@ -162,12 +164,12 @@
 }
 
 .modalContent_de2fa0 {
-    background-color: var(--bg-base-tertiary);
     display: flex;
-    flex: 1;
     flex-direction: column;
+    flex: 1;
+    width: 100%;
     height: 100%;
-    width: 100%
+    background-color: var(--bg-base-tertiary)
 }
 
 .closeButton_de2fa0 {
@@ -192,28 +194,28 @@
 }
 
 .videoCont_de2fa0 {
-    align-items: center;
     display: flex;
-    height: 100%;
+    align-items: center;
     justify-content: center;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .videoContInnerRelative_de2fa0 {
-    aspect-ratio: 16/9;
-    height: 100%;
     position: relative;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16/9
 }
 
 .videoContOverlay_de2fa0 {
-    background: linear-gradient(180deg,transparent,rgba(0,0,0,.7) 59.99%);
-    display: inline-block;
-    height: 100%;
-    left: 0;
     position: absolute;
+    left: 0;
     top: 0;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgba(0,0,0,.7) 59.99%);
+    display: inline-block
 }
 
 @keyframes animate-fade-in_de2fa0 {
@@ -232,10 +234,11 @@
 }
 
 .videoInner_de2fa0 {
+    width: 100%;
     max-height: 100%;
-    object-fit: contain;
     position: relative;
-    width: 100%
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .videoInner_de2fa0:-webkit-full-screen {
@@ -251,27 +254,27 @@
 }
 
 .videoFooterCont_de2fa0,.videoFooterContGradient_de2fa0 {
-    box-sizing: border-box;
-    padding: 0;
     position: absolute;
-    width: 100%
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box
 }
 
 .videoFooterContGradient_de2fa0 {
-    background: linear-gradient(180deg,transparent,#000);
     bottom: -1px;
     height: 113px;
+    background: linear-gradient(180deg,transparent,#000);
     pointer-events: none
 }
 
 .videoControlsCont_de2fa0 {
-    box-sizing: border-box;
-    width: 100%
+    width: 100%;
+    box-sizing: border-box
 }
 
 .videoControlsCont_de2fa0,.videoControlsGroup_de2fa0 {
-    align-items: center;
     display: flex;
+    align-items: center;
     height: 100%
 }
 
@@ -287,9 +290,9 @@
 
 .videoControlsGroupEnd_de2fa0 {
     display: flex;
-    justify-content: flex-end;
     margin-left: auto;
-    width: 200px
+    width: 200px;
+    justify-content: flex-end
 }
 
 .videoControlsBtnCont_de2fa0 {
@@ -309,8 +312,8 @@
 }
 
 .videoControlsBtnTooltip_de2fa0 {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 4px
 }
 
@@ -323,8 +326,8 @@
 }
 
 .controlsBarItem_de2fa0 {
-    color: var(--interactive-active);
-    opacity: .6
+    opacity: .6;
+    color: var(--interactive-active)
 }
 
 .controlsBarItemActive_de2fa0 {
@@ -333,14 +336,14 @@
 
 .durationTimeWrapper_de2fa0 {
     flex: 0 0 auto;
-    height: 16px;
-    margin-left: 3px
+    margin-left: 3px;
+    height: 16px
 }
 
 .durationTimeDisplay_de2fa0,.durationTimeSeparator_de2fa0 {
-    color: var(--white);
+    text-align: center;
     display: inline;
-    text-align: center
+    color: var(--white)
 }
 
 .durationTimeSeparator_de2fa0 {
@@ -348,22 +351,22 @@
 }
 
 .volumeSlider_de2fa0 {
-    cursor: pointer;
-    margin-left: 6px
+    margin-left: 6px;
+    cursor: pointer
 }
 
 .contentHeader_de2fa0 {
-    align-items: center;
-    background-image: linear-gradient(90deg,rgba(205,216,255,.08) 23%,rgba(35,36,40,0));
     display: flex;
+    padding: 4px 24px;
+    align-items: center;
     height: 77px;
-    padding: 4px 24px
+    background-image: linear-gradient(90deg,rgba(205,216,255,.08) 23%,rgba(35,36,40,0))
 }
 
 .contentHeaderGameInfo_de2fa0 {
+    display: flex;
     align-items: center;
-    cursor: pointer;
-    display: flex
+    cursor: pointer
 }
 
 .contentHeaderLogotype_de2fa0 {
@@ -385,28 +388,28 @@
 }
 
 .questHeading_de2fa0 {
-    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 4px;
     opacity: .9
 }
 
 .contentFooter_de2fa0 {
-    align-items: center;
-    box-sizing: border-box;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
     padding: 16px 24px;
-    width: 100%
+    box-sizing: border-box
 }
 
 .contentFooterButtonCont_de2fa0 {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    justify-content: flex-end
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px
 }
 
 .claimBtn_de2fa0 {
@@ -414,9 +417,9 @@
 }
 
 .orbClaimCopy_de2fa0 {
-    align-items: center;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     gap: 3px
 }
 
@@ -430,8 +433,8 @@
 }
 
 .progressCont_de2fa0 {
-    margin-left: auto;
-    margin-top: 5px
+    margin-top: 5px;
+    margin-left: auto
 }
 
 .questProgressRewardTile_de2fa0 {
@@ -447,35 +450,36 @@
 }
 
 .transcriptOverlay_de2fa0 {
-    background-color: var(--opacity-black-68);
-    height: 100%;
-    left: 0;
     top: 0;
-    width: 100%
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--opacity-black-68)
 }
 
 .transcriptCont_de2fa0,.transcriptOverlay_de2fa0 {
-    animation-duration: .2s;
+    position: absolute;
     animation-name: animate-fade-in_de2fa0;
-    position: absolute
+    animation-duration: .2s
 }
 
 .transcriptCont_de2fa0 {
-    align-items: flex-start;
-    background-color: var(--background-tertiary);
-    border: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
-    border-radius: 16px;
+    top: 24px;
+    right: 24px;
     bottom: 24px;
     display: flex;
+    width: 363px;
     flex-direction: column;
-    right: 24px;
-    top: 24px;
-    width: 363px
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid rgba(78,80,88,.48);
+    border: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
+    background-color: var(--background-tertiary)
 }
 
 .transcriptScroller_de2fa0 {
-    height: 100%;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .transcriptBackBtn_de2fa0 {
@@ -484,17 +488,18 @@
 }
 
 .transcriptHeader_de2fa0 {
+    justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48));
-    color: var(--header-primary);
     gap: 12px;
-    justify-content: space-between
+    color: var(--header-primary);
+    border-bottom: 1px solid rgba(78,80,88,.48);
+    border-bottom: 1px solid var(--alpha-primary-500048,rgba(78,80,88,.48))
 }
 
 .transcriptBody_de2fa0,.transcriptHeader_de2fa0 {
-    align-self: stretch;
     display: flex;
-    padding: 12px 16px
+    padding: 12px 16px;
+    align-self: stretch
 }
 
 .transcriptBody_de2fa0 {
@@ -508,12 +513,13 @@
 }
 
 .stillFrameImageCard_de2fa0 {
-    animation-duration: .5s;
-    animation-name: animate-fade-in_de2fa0;
-    height: 100%;
-    object-fit: contain;
     pointer-events: none;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    animation-name: animate-fade-in_de2fa0;
+    animation-duration: .5s
 }
 
 .stillFrameImageCardHidden_de2fa0 {
@@ -521,27 +527,27 @@
 }
 
 .endScreenPanel_de2fa0 {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
     align-items: center;
-    animation-duration: .5s;
-    animation-name: animate-fade-in_de2fa0;
+    gap: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid hsla(0,0%,100%,.05);
+    background: linear-gradient(90deg,rgba(109,114,131,.45) 34.5%,hsla(0,0%,59.2%,.45));
+    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
     -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
-    background: linear-gradient(90deg,hsla(226,9%,47%,.45) 34.5%,hsla(0,0%,59%,.45));
-    border: 1px solid hsla(0,0%,100%,.05);
-    border-radius: 12px;
-    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
-    cursor: pointer;
-    display: inline-flex;
-    flex-shrink: 0;
-    gap: 16px;
-    justify-content: center;
-    padding: 8px 16px
+    animation-name: animate-fade-in_de2fa0;
+    animation-duration: .5s
 }
 
 .endScreenPanelInner_de2fa0 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .endScreenPanelTextCont_de2fa0 {
@@ -559,8 +565,8 @@
 }
 
 .endScreenPanelRight_de2fa0 {
-    bottom: 82px;
     position: absolute;
+    bottom: 82px;
     right: 22px
 }
 
@@ -569,56 +575,56 @@
 }
 
 .verticalDivider_de2fa0 {
-    margin: 0 16px;
-    width: 2px
+    width: 2px;
+    margin: 0 16px
 }
 
 .loadingSpinner_de2fa0 {
-    align-items: center;
-    -webkit-backdrop-filter: blur(15.85px);
-    backdrop-filter: blur(15.85px);
-    background: rgba(0,0,0,.45);
-    border: 1px solid hsla(0,0%,100%,.05);
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    left: 32px;
-    padding: 8px;
     position: absolute;
-    top: 32px
+    top: 32px;
+    left: 32px;
+    display: flex;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid hsla(0,0%,100%,.05);
+    background: rgba(0,0,0,.45);
+    -webkit-backdrop-filter: blur(15.85px);
+    backdrop-filter: blur(15.85px)
 }
 
 .captionContainer_de2fa0 {
+    position: absolute;
+    padding: 4px;
     bottom: 16px;
     left: 0;
-    padding: 4px;
-    position: absolute;
     right: 0
 }
 
 .captionText_de2fa0 {
-    text-align: center;
-    text-shadow: 0 2px 7px #000
+    text-shadow: 0 2px 7px #000;
+    text-align: center
 }
 
 .playPausePopCont_de2fa0 {
-    background-color: var(--opacity-black-60);
-    border-radius: 50%;
-    color: var(--white-500);
-    height: 24px;
-    left: 50%;
-    opacity: 0;
-    padding: 12px;
-    pointer-events: none;
     position: absolute;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: var(--opacity-black-60);
+    color: var(--white-500);
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    width: 24px
+    opacity: 0
 }
 
 .playPausePopCont_de2fa0 .playPausePopIcon_de2fa0 {
-    height: 100%;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .full-motion .pause_de2fa0,.full-motion .play_de2fa0 {
@@ -644,24 +650,24 @@
 
 .transcriptBodySpinner_de2fa0 {
     display: flex;
+    width: 100%;
     height: 100%;
-    justify-content: center;
-    width: 100%
+    justify-content: center
 }
 
 .pauseText_de2fa0 {
-    -webkit-backdrop-filter: blur(15.85px);
-    backdrop-filter: blur(15.85px);
-    background-color: var(--background-primary);
-    border-radius: 12px;
-    left: 50%;
-    opacity: .9;
-    padding: 20px;
-    pointer-events: none;
     position: absolute;
     top: 50%;
+    left: 50%;
+    z-index: 1;
     transform: translate(-50%,-50%);
-    z-index: 1
+    background-color: var(--background-primary);
+    padding: 20px;
+    opacity: .9;
+    border-radius: 12px;
+    -webkit-backdrop-filter: blur(15.85px);
+    backdrop-filter: blur(15.85px);
+    pointer-events: none
 }
 
 .copyLinkBtn_de2fa0 {
@@ -685,15 +691,15 @@
 }
 
 .endScreenOverlay_afedfc {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(25,26,28,.75);
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
-    background: rgba(25,26,28,.75);
-    display: inline-block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%
+    display: inline-block
 }
 
 @keyframes animate-fade-in_afedfc {
@@ -707,39 +713,40 @@
 }
 
 .endScreenImageBackground_afedfc {
-    object-fit: contain;
-    pointer-events: none
+    pointer-events: none;
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .endScreenContainer_afedfc,.endScreenImageBackground_afedfc {
-    animation-duration: .5s;
-    animation-name: animate-fade-in_afedfc;
+    width: 100%;
     height: 100%;
-    width: 100%
+    animation-name: animate-fade-in_afedfc;
+    animation-duration: .5s
 }
 
 .endScreenContainer_afedfc {
-    align-items: center;
-    box-sizing: border-box;
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    left: 0;
-    padding: 10px 10px 60px;
     position: absolute;
-    top: 0
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    box-sizing: border-box;
+    padding: 10px 10px 60px
 }
 
 .endScreenCard_afedfc {
-    border: 1px solid hsla(0,0%,100%,.15);
     border-radius: 12px;
+    border: 1px solid hsla(0,0%,100%,.15);
     width: 53%
 }
 
 .endScreenCtaContainer_afedfc {
-    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 24px;
     max-width: 269px
 }
@@ -759,20 +766,20 @@
 }
 
 .endScreenCtaBtn_afedfc {
+    display: inline-flex;
+    padding: 8px 16px;
+    justify-content: center;
     align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 1px solid hsla(0,0%,100%,.05);
+    background: rgba(109,114,131,.45);
+    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
     -webkit-backdrop-filter: blur(16px);
     backdrop-filter: blur(16px);
-    background: hsla(226,9%,47%,.45);
-    border: 1px solid hsla(0,0%,100%,.05);
-    border-radius: 12px;
-    box-shadow: 0 0 30px 0 rgba(220,239,255,.25);
-    cursor: pointer;
-    display: inline-flex;
-    flex-shrink: 0;
-    gap: 16px;
-    justify-content: center;
-    overflow: hidden;
-    padding: 8px 16px
+    overflow: hidden
 }
 
 .full-motion .accentOnHover_afedfc {
@@ -803,18 +810,18 @@
 }
 
 .full-motion .endScreenCtaBtn_afedfc:after {
-    animation-delay: .75s;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-name: shine_afedfc;
-    animation-timing-function: ease-in-out;
+    content: "";
+    position: absolute;
+    height: 100%;
     aspect-ratio: 1;
     background-color: #9497a0;
-    content: "";
     filter: blur(22.45px);
-    height: 100%;
     left: -50%;
-    position: absolute
+    animation-name: shine_afedfc;
+    animation-duration: 2s;
+    animation-delay: .75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out
 }
 
 @media (min-width:1400px) {
@@ -837,12 +844,12 @@
 }
 
 .hitboxArea__370d1 {
-    align-items: center;
-    display: flex;
-    height: 2px;
     position: absolute;
-    top: -1px;
-    width: 100%
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 2px;
+    top: -1px
 }
 
 .interactionEnabled__370d1 {
@@ -865,13 +872,13 @@
 }
 
 .buffer__370d1,.seekableBar__370d1 {
-    height: 2px;
-    position: absolute
+    position: absolute;
+    height: 2px
 }
 
 .seekableBar__370d1 {
-    background-color: var(--white-600);
     left: 0;
+    background-color: var(--white-600);
     opacity: 0
 }
 
@@ -880,22 +887,22 @@
 }
 
 .timeDisplay__370d1 {
-    pointer-events: none;
-    position: absolute;
     text-shadow: 2px 2px 2px var(--black);
-    top: -12px
+    position: absolute;
+    top: -12px;
+    pointer-events: none
 }
 
 .grabber__370d1 {
-    background-color: var(--white-500);
-    border-radius: 50%;
+    width: 12px;
     height: 12px;
+    border-radius: 50%;
     position: absolute;
-    width: 12px
+    background-color: var(--white-500)
 }
 
 .grabberPast__370d1 {
     background-color: var(--white)
 }
 
-/*# sourceMappingURL=d7beea9eafe3efbe.css.map*/
+/*# sourceMappingURL=8eaf4a07a8242e88.css.map*/

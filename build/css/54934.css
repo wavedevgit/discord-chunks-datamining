@@ -1,19 +1,19 @@
 /**
   Module ID: 54934
-  Original File Name: b4244bbb1965e820
+  Original File Name: 9903c4db1ff530c7
 **/
 .header_fc3cf0 {
+    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden;
-    padding: 24px 16px 0
+    overflow: hidden
 }
 
 .closeButton_fc3cf0 {
-    color: var(--interactive-normal);
+    z-index: 1000;
     position: absolute;
-    right: 12px;
     top: 12px;
-    z-index: 1000
+    right: 12px;
+    color: var(--interactive-normal)
 }
 
 .description_fc3cf0 {
@@ -34,4 +34,4 @@
     padding-left: 8px
 }
 
-/*# sourceMappingURL=b4244bbb1965e820.css.map*/
+/*# sourceMappingURL=9903c4db1ff530c7.css.map*/

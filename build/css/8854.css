@@ -1,6 +1,6 @@
 /**
   Module ID: 8854
-  Original File Name: 21a7b34f0cfb8ef3
+  Original File Name: 7197e01fdd4117f9
 **/
 .confirmation__2db04 {
     align-items: center;
@@ -38,11 +38,11 @@
 }
 
 .promotionalFooter__82bb4 {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     -moz-column-gap: 12px;
-    column-gap: 12px;
-    display: flex;
-    flex-direction: row
+    column-gap: 12px
 }
 
 .bodyColumnLeft_d64c23 {
@@ -53,38 +53,38 @@
 }
 
 .bodyColumnRight_d64c23 {
-    align-items: center;
-    background-color: var(--background-tertiary);
-    display: flex;
-    justify-content: center;
+    width: 340px;
     min-height: 300px;
-    width: 340px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-tertiary)
 }
 
 .stepBodySkuSelect_d64c23 {
-    background-color: var(--modal-background);
-    border-radius: 5px 5px 0 0;
     display: flex;
     flex-direction: row;
+    background-color: var(--modal-background);
+    border-radius: 5px 5px 0 0;
     overflow: hidden
 }
 
 .header_d64c23 {
-    display: flex;
-    justify-content: center;
+    padding-top: 48px;
     padding-bottom: 32px;
-    padding-top: 48px
+    display: flex;
+    justify-content: center
 }
 
 .giftSelectItem_d64c23 {
-    cursor: pointer;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    cursor: pointer
 }
 
 .modalFooter_d64c23 {
-    align-items: center;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .closeButton_d64c23 {
@@ -99,42 +99,44 @@
 }
 
 .visual-refresh .bodyColumnRight_d64c23 {
-    background-color: unset
+    background-color: transparent;
+    background-color: initial
 }
 
 .visual-refresh .giftSelectItem_d64c23 {
-    margin-bottom: unset
+    margin-bottom: 0;
+    margin-bottom: initial
 }
 
 .promotionalFooterBanner_e68795 {
-    align-items: center;
     background: linear-gradient(78.98deg,#ff9090,#f30ed8);
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding: 8px 16px
 }
 
 .bannerText_e68795 {
-    color: var(--black);
-    margin-left: 12px
+    margin-left: 12px;
+    color: var(--black)
 }
 
 .attributionBannerContainer__7b5f3 {
-    align-items: center;
-    border-radius: 4px;
+    position: relative;
     display: flex;
     flex-direction: row;
-    margin-top: 16px;
+    align-items: center;
     min-height: 48px;
-    padding-bottom: 8px;
+    border-radius: 4px;
     padding-left: 28px;
     padding-top: 8px;
-    position: relative
+    padding-bottom: 8px;
+    margin-top: 16px
 }
 
 .avatarContainer__7b5f3 {
-    height: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .bannerHeader__7b5f3 {
@@ -143,17 +145,17 @@
 }
 
 .bannerIcon__7b5f3 {
-    border-radius: 4px;
-    bottom: 0;
     position: absolute;
+    bottom: 0;
     right: 0;
+    border-radius: 4px;
     z-index: -1
 }
 
 .bannerCopy__7b5f3 {
-    border-bottom: 1px solid rgba(78,80,88,.48);
+    padding-top: 8px;
     padding-bottom: 16px;
-    padding-top: 8px
+    border-bottom: 1px solid rgba(78,80,88,.48)
 }
 
 .theme-light .attributionBannerContainer__7b5f3 {
@@ -165,10 +167,10 @@
 }
 
 .planSelectSeparatorLower__7ec3a,.planSelectSeparatorUpper__7ec3a {
-    background: var(--background-modifier-accent);
-    border: 0;
+    width: 100%;
     height: 1px;
-    width: 100%
+    border: 0;
+    background: var(--background-modifier-accent)
 }
 
 .planSelectSeparatorUpper__7ec3a {
@@ -181,16 +183,16 @@
 }
 
 .button__9e160 {
-    border-radius: 8px;
     box-sizing: border-box;
     color: var(--white-500);
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
     min-height: 258px;
+    border-radius: 8px;
     padding: 24px;
-    position: relative
+    position: relative;
+    margin-bottom: 16px
 }
 
 .tier2__9e160 {
@@ -198,16 +200,17 @@
 }
 
 .tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
-    width: unset
+    width: auto;
+    width: initial
 }
 
 .tier0MarketingCard__9e160 {
-    margin-bottom: 20px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 20px
 }
 
 .tier1__9e160 {
-    background-image: linear-gradient(270deg,var(--premium-tier-0-purple) 0,var(--premium-tier-1-dark-blue-for-gradients) 100%)
+    background-image: linear-gradient(270deg,var(--premium-tier-0-purple),var(--premium-tier-1-dark-blue-for-gradients))
 }
 
 .tier0__9e160 {
@@ -221,9 +224,10 @@
 }
 
 .tier1Image__9e160,.tier2Image__9e160 {
-    bottom: 0;
+    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     position: absolute;
+    bottom: 0;
     right: 0
 }
 
@@ -234,12 +238,13 @@
 }
 
 .tier0Image__9e160 {
-    background-image: url(/assets/a90cdee2f33db143.svg);
-    bottom: 0;
+    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
-    height: 251px;
+    background-image: url(/assets/a90cdee2f33db143.svg);
     position: absolute;
+    bottom: 0;
     right: 0;
+    height: 251px;
     width: 357px
 }
 
@@ -248,10 +253,10 @@
 }
 
 .text__9e160 {
+    width: 160px;
     font-size: 16px;
-    font-weight: 500;
     line-height: 20px;
-    width: 160px
+    font-weight: 500
 }
 
 .description__9e160 {
@@ -293,9 +298,9 @@
 }
 
 .skuSelectModalContent_e50a4d.modalSize_e50a4d {
+    width: 440px;
     max-height: 720px;
-    min-height: 200px;
-    width: 440px
+    min-height: 200px
 }
 
 .skuSelectModalContent_e50a4d,.skuSelectModalHeader_e50a4d {
@@ -320,18 +325,18 @@
 }
 
 .churnFooterContainer__64988 {
-    overflow-x: clip;
-    position: relative
+    position: relative;
+    overflow-x: clip
 }
 
 .churnFooterGlow__64988 {
     background: linear-gradient(90deg,rgba(125,74,191,.5),rgba(171,77,187,.5) 50.5%,rgba(161,97,136,.5));
     filter: blur(20px);
+    width: 410px;
     height: 42px;
-    left: 15px;
     position: absolute;
     top: -4px;
-    width: 410px
+    left: 15px
 }
 
 .churnFooterTopBorder__64988 {
@@ -341,11 +346,11 @@
 }
 
 .churnFooterContent__64988 {
-    background: var(--bg-surface-overlay-tmp);
     min-height: 132px;
-    position: relative;
     width: 100%;
-    z-index: 1
+    position: relative;
+    z-index: 1;
+    background: var(--bg-surface-overlay-tmp)
 }
 
 .churnFooterContentBody__64988 {
@@ -354,20 +359,20 @@
 
 .churnFooterIcon__64988 {
     align-self: flex-start;
-    padding-left: 16px;
-    padding-top: 20px
+    padding-top: 20px;
+    padding-left: 16px
 }
 
 .churnFooterContentBodyInner__64988 {
-    align-items: flex-start;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 22px 22px 24px 20px
 }
 
 .churnFooterCopy__64988 {
-    color: var(--header-primary);
-    margin-bottom: 14px
+    margin-bottom: 14px;
+    color: var(--header-primary)
 }
 
 .churnFooterCTAs__64988 {
@@ -375,39 +380,39 @@
 }
 
 .churnFooterClaimCTA__64988 {
-    border-color: #764db9;
+    min-width: 153px;
     margin-right: 8px;
-    min-width: 153px
+    border-color: #764db9
 }
 
 .churnFooterClaimCTAInner__64988 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .churnFooterClaimIcon__64988 {
     padding-right: 4px
 }
 
-.theme-dark .churnFooterClaimCTA__64988,.theme-dark .churnFooterClaimCopy__64988 {
+.theme-dark .churnFooterClaimCopy__64988,.theme-dark .churnFooterClaimCTA__64988 {
     color: var(--white-500)
 }
 
-.theme-light .churnFooterClaimCTA__64988,.theme-light .churnFooterClaimCopy__64988 {
+.theme-light .churnFooterClaimCopy__64988,.theme-light .churnFooterClaimCTA__64988 {
     color: #b449b6
 }
 
 .body__89307 {
-    background-color: var(--modal-background);
     color: var(--text-normal);
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    background-color: var(--modal-background)
 }
 
 .body__89307 .title__89307 {
-    font-weight: 600;
-    margin-top: 16px
+    margin-top: 16px;
+    font-weight: 600
 }
 
 .clickable__89307 {
@@ -417,54 +422,53 @@
 .whatYouLoseItemContainer__89307 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 16px;
+    row-gap: 8px;
     margin-top: 16px;
-    row-gap: 8px
+    margin-bottom: 16px
 }
 
 .whatYouLoseItem__89307 {
-    background: var(--background-tertiary);
-    border-radius: 8px;
-    box-sizing: border-box;
     display: flex;
     min-height: 140px;
-    padding: 16px
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 16px;
+    background: var(--background-tertiary)
 }
 
 .whatYouLoseItemLeftColumn__89307 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-right: 16px;
-    width: 100%
+    width: 100%;
+    padding-right: 16px
 }
 
 .whatYouLoseItemLearnMore__89307 {
-    padding: 0;
-    width: -webkit-min-content;
     width: -moz-min-content;
-    width: min-content
+    width: min-content;
+    padding: 0
 }
 
 .whatYouLoseItemRightColumn__89307 {
     display: flex;
-    max-width: 180px;
-    min-width: 180px
+    min-width: 180px;
+    max-width: 180px
 }
 
 .textSingleLineEllipsis__89307 {
     display: block;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    text-overflow: ellipsis
 }
 
 .profileCard__89307 {
-    min-height: 96px;
-    overflow: hidden;
-    padding: 4px;
     position: relative;
-    width: 100%
+    width: 100%;
+    overflow: hidden;
+    min-height: 96px;
+    padding: 4px
 }
 
 .profileCardTier1__89307 {
@@ -473,48 +477,48 @@
 }
 
 .profileAvatar__89307 {
-    left: 12px;
     position: absolute;
-    top: 30px
+    top: 30px;
+    left: 12px
 }
 
 .profileAvatarTier1__89307 {
-    left: 60px;
     position: relative;
-    top: 16px
+    top: 16px;
+    left: 60px
 }
 
 .profileInner__89307 {
     background: transparent;
+    margin-top: 30px;
     margin-bottom: 8px;
-    margin-left: 0;
-    margin-top: 30px
+    margin-left: 0
 }
 
 .profileUserInfo__89307 {
-    align-items: center;
     display: flex;
+    align-items: center;
     margin: 30px 0 8px;
     padding: 0 16px
 }
 
 .profileUserInfoTier1__89307 {
     display: flex;
+    position: relative;
     justify-content: center;
-    padding-top: 16px;
-    position: relative
+    padding-top: 16px
 }
 
 .profileNameTag__89307 {
-    color: var(--interactive-active);
     font-weight: 600;
     line-height: 20px;
-    max-width: 118px
+    max-width: 118px;
+    color: var(--interactive-active)
 }
 
 .profileNameTagUsername__89307 {
-    line-height: 20px;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    line-height: 20px
 }
 
 .profilePremiumIcon__89307 {
@@ -522,10 +526,10 @@
 }
 
 .emojiStickersPersonalizedContainer__89307 {
-    align-items: center;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    width: 100%
+    align-items: center
 }
 
 .emojiStickersPersonalizedContainer__89307 :not(:last-child) {
@@ -533,8 +537,8 @@
 }
 
 .personalizedEmoji__89307 {
-    height: 58px;
-    width: 58px
+    width: 58px;
+    height: 58px
 }
 
 .boostCardContainer__89307 {
@@ -543,13 +547,13 @@
 }
 
 .boostCard__89307 {
+    height: 100%;
     background-color: var(--background-primary);
     border-radius: 8px;
     box-sizing: border-box;
+    padding: 10px;
     flex-grow: 1;
-    height: 100%;
-    overflow: hidden;
-    padding: 10px
+    overflow: hidden
 }
 
 .boostCardIcon__89307 {
@@ -566,16 +570,16 @@
 }
 
 .boostCardSubtitle__89307 {
-    align-items: center;
     display: flex;
+    align-items: center;
     padding-top: 2px
 }
 
 .boostCardGem__89307 {
     color: var(--guild-boosting-pink);
+    width: auto;
     height: 16px;
-    margin-right: 4px;
-    width: auto
+    margin-right: 4px
 }
 
 .boostCardCount__89307 {
@@ -584,13 +588,13 @@
 }
 
 .nonPersonalizedGraphic__89307 {
-    max-width: 168px;
-    width: 100%
+    width: 100%;
+    max-width: 168px
 }
 
 .spinner__89307 {
-    padding-bottom: 44px;
-    padding-top: 60px
+    padding-top: 60px;
+    padding-bottom: 44px
 }
 
 .whatYouLoseButtonContainer__1fb50 {
@@ -598,4 +602,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=21a7b34f0cfb8ef3.css.map*/
+/*# sourceMappingURL=7197e01fdd4117f9.css.map*/

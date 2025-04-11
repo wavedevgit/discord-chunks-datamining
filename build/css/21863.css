@@ -1,20 +1,20 @@
 /**
   Module ID: 21863
-  Original File Name: 10affddbf0699735
+  Original File Name: 315014ce82782561
 **/
 .container__54e17 {
+    max-width: 560px;
+    margin: 0 auto;
     background-color: var(--background-secondary);
     border-radius: 8px;
-    margin: 0 auto;
-    max-width: 560px;
     overflow: hidden
 }
 
 .header__54e17 {
-    align-items: center;
     background-color: var(--background-tertiary);
+    padding: 18px 16px 16px;
     display: flex;
-    padding: 18px 16px 16px
+    align-items: center
 }
 
 .headerIcon__54e17 {
@@ -52,10 +52,10 @@
 }
 
 .eligibilityActionContainer__54e17 {
-    align-items: center;
     display: flex;
     flex: 1;
-    justify-content: flex-end
+    justify-content: flex-end;
+    align-items: center
 }
 
 .eligibilityActionButton__54e17 {
@@ -63,16 +63,16 @@
 }
 
 .eligibilityModal__17e0d {
-    border-radius: 8px;
     min-height: 340px;
+    border-radius: 8px;
     overflow: hidden
 }
 
 .eligibilityHeader__17e0d {
-    align-items: center;
     background-color: var(--background-tertiary);
+    padding: 24px 16px;
     display: flex;
-    padding: 24px 16px
+    align-items: center
 }
 
 .eligibilityHeaderText__17e0d {
@@ -80,8 +80,8 @@
 }
 
 .eligibilityHeaderImage__17e0d {
-    margin-left: 10px;
-    max-height: 48px
+    max-height: 48px;
+    margin-left: 10px
 }
 
 .eligibilityHeaderCloseButton__17e0d {
@@ -93,4 +93,4 @@
     padding: 15px 0
 }
 
-/*# sourceMappingURL=10affddbf0699735.css.map*/
+/*# sourceMappingURL=315014ce82782561.css.map*/

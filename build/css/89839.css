@@ -1,19 +1,19 @@
 /**
   Module ID: 89839
-  Original File Name: 5814c831ff079206
+  Original File Name: 52ae53b6b0eae916
 **/
 .container_a92dc5 {
-    align-items: center;
-    background: url(https://cdn.discordapp.com/assets/content/81bfa947015d852b2a9febacee3bd1cc7bf82feef59d8d2a4777aaacdc5c592f.png) no-repeat fixed 50%,linear-gradient(204.56deg,#251045 -7.15%,#301d42 20.93%,#24415c 60.11%,#1a1440 98.95%);
-    background-size: cover;
-    border-radius: 4px;
     display: flex;
+    align-items: center;
+    width: 100%;
     max-width: 65vw;
     min-width: 630px;
-    padding-bottom: 48px;
-    padding-top: 24px;
     position: relative;
-    width: 100%
+    padding-top: 24px;
+    padding-bottom: 48px;
+    border-radius: 4px;
+    background: url(https://cdn.discordapp.com/assets/content/81bfa947015d852b2a9febacee3bd1cc7bf82feef59d8d2a4777aaacdc5c592f.png) no-repeat fixed 50%,linear-gradient(204.56deg,#251045 -7.15%,#301d42 20.93%,#24415c 60.11%,#1a1440 98.95%);
+    background-size: cover
 }
 
 .visual-refresh .container_a92dc5 {
@@ -21,23 +21,23 @@
 }
 
 .closeButton_a92dc5 {
-    color: var(--interactive-active);
     position: absolute;
     right: 16px;
     top: 16px;
+    color: var(--interactive-active);
     z-index: 100
 }
 
 .content_a92dc5 {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column
 }
 
 .header_a92dc5 {
-    margin-bottom: 16px;
     max-width: 700px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 16px
 }
 
 .subHeader_a92dc5 {
@@ -45,31 +45,31 @@
 }
 
 .badge_a92dc5 {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: flex-start
 }
 
 .badge_a92dc5>div {
-    min-width: 115px;
-    padding-left: 0
+    padding-left: 0;
+    min-width: 115px
 }
 
 .badgeImage_a92dc5 {
+    width: auto;
     height: 75px;
     margin-bottom: 8px;
-    pointer-events: none;
-    width: auto
+    pointer-events: none
 }
 
 .badgeText_a92dc5 {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding-left: 0;
-    text-align: center
+    text-align: center;
+    padding-left: 0
 }
 
 .badgeName_a92dc5 {
@@ -80,8 +80,8 @@
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    gap: 24px;
     justify-content: center;
+    gap: 24px;
     padding: 24px
 }
 
@@ -90,17 +90,17 @@
 }
 
 .learnMoreButton_a92dc5 {
-    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color);
+    margin-top: 24px;
     color: var(--white-500);
-    margin-top: 24px
+    background: var(--custom-premium-colors-premium-gradient-tier-2-tri-color)
 }
 
 .earnedBadge_a92dc5 {
     background-color: var(--bg-mod-strong);
     border: 1px solid var(--bg-mod-strong);
-    border-radius: var(--radius-md);
+    padding: var(--spacing-12);
     margin: calc(var(--spacing-12)*-1);
-    padding: var(--spacing-12)
+    border-radius: var(--radius-md)
 }
 
 .earnedBadgeSubSince_a92dc5 {
@@ -108,4 +108,4 @@
     max-width: 100px
 }
 
-/*# sourceMappingURL=5814c831ff079206.css.map*/
+/*# sourceMappingURL=52ae53b6b0eae916.css.map*/

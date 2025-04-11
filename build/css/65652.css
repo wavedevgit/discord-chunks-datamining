@@ -1,10 +1,9 @@
 /**
   Module ID: 65652
-  Original File Name: 53ecacca8f80a5db
+  Original File Name: 1663d2f436e12af5
 **/
 .modalContent__2379f {
     margin-bottom: var(--spacing-16);
-    min-height: -webkit-min-content;
     min-height: -moz-min-content;
     min-height: min-content
 }
@@ -23,10 +22,10 @@
 }
 
 .closeButton__3847f {
+    z-index: 1000;
     position: absolute;
-    right: 12px;
     top: 12px;
-    z-index: 1000
+    right: 12px
 }
 
 .visual-refresh .modalContent__3847f {
@@ -59,10 +58,10 @@ html:not(.visual-refresh) .modalContent__3847f {
 }
 
 .policyContainer__3847f {
+    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
     border-radius: 8px;
-    margin-bottom: 8px;
-    padding: 16px
+    margin-bottom: 8px
 }
 
 .radioItem__3847f {
@@ -84,8 +83,8 @@ html:not(.visual-refresh) .modalContent__3847f {
 
 .listItem_a95388 {
     display: list-item;
-    margin-left: 4px;
-    margin-top: 10px
+    margin-top: 10px;
+    margin-left: 4px
 }
 
 .anchorContainer_a95388 {
@@ -104,12 +103,12 @@ html:not(.visual-refresh) .modalContent__3847f {
 }
 
 .errorText_a95388 {
+    color: var(--status-danger-text);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     align-self: flex-end;
-    color: var(--status-danger-text);
-    display: flex;
-    font-size: 14px;
-    justify-content: center;
     margin-bottom: 12px
 }
 
@@ -123,15 +122,15 @@ html:not(.visual-refresh) .modalContent__3847f {
 }
 
 .childButton__3ed08 {
-    align-items: center;
-    background-color: var(--background-secondary);
-    border-radius: 4px;
-    cursor: pointer;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    cursor: pointer;
     margin-bottom: 8px;
-    min-height: 64px;
-    padding: 0
+    padding: 0;
+    border-radius: 4px;
+    background-color: var(--background-secondary);
+    min-height: 64px
 }
 
 .childButton__3ed08:hover {
@@ -153,10 +152,10 @@ html:not(.visual-refresh) .modalContent__3847f {
 
 .childIcon__3ed08 {
     color: var(--interactive-normal);
-    flex-shrink: 0;
+    width: 24px;
     height: 24px;
-    margin: 0 16px 0 8px;
-    width: 24px
+    flex-shrink: 0;
+    margin: 0 16px 0 8px
 }
 
 .externalLinkWrapper__3ed08 {
@@ -165,14 +164,14 @@ html:not(.visual-refresh) .modalContent__3847f {
 
 .iconContainer__8310d {
     align-self: center;
-    margin-bottom: var(--spacing-4);
-    padding: 8px
+    padding: 8px;
+    margin-bottom: var(--spacing-4)
 }
 
 .icon__8310d {
+    width: 86px;
     height: 78.33px;
-    margin-left: -2px;
-    width: 86px
+    margin-left: -2px
 }
 
 .modalContent__8310d {
@@ -182,15 +181,15 @@ html:not(.visual-refresh) .modalContent__3847f {
 }
 
 .actionsHeader__8310d {
-    margin-bottom: 16px;
-    margin-top: 31px
+    margin-top: 31px;
+    margin-bottom: 16px
 }
 
 .container__7fab2 {
-    display: flex;
-    flex-direction: column;
+    width: 500px;
     max-height: 880px;
-    width: 500px
+    display: flex;
+    flex-direction: column
 }
 
 @media (max-width:500px) {
@@ -199,4 +198,4 @@ html:not(.visual-refresh) .modalContent__3847f {
     }
 }
 
-/*# sourceMappingURL=53ecacca8f80a5db.css.map*/
+/*# sourceMappingURL=1663d2f436e12af5.css.map*/

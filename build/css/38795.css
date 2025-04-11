@@ -1,15 +1,15 @@
 /**
   Module ID: 38795
-  Original File Name: 8b08037d0d206ee2
+  Original File Name: 27a6c32acb2d0873
 **/
 .content_fc289e {
-    max-width: 760px;
-    padding: 16px
+    padding: 16px;
+    max-width: 760px
 }
 
 .header_fc289e {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .warningIcon_fc289e {
@@ -20,4 +20,4 @@
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=8b08037d0d206ee2.css.map*/
+/*# sourceMappingURL=27a6c32acb2d0873.css.map*/

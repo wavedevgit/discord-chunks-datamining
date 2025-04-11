@@ -1,25 +1,25 @@
 /**
   Module ID: 6074
-  Original File Name: d81c3197eccbf8bb
+  Original File Name: 19684b9ea8f22891
 **/
 .container_b2b772 {
-    align-items: center;
+    position: relative;
     display: flex;
-    justify-content: center;
     margin-right: 12px;
-    position: relative
+    align-items: center;
+    justify-content: center
 }
 
 .inner_b2b772 {
-    align-self: center;
-    flex: 1
+    flex: 1;
+    align-self: center
 }
 
 .modalCloseButton_b2b772 {
     color: var(--interactive-normal);
     position: absolute;
-    right: 12px;
-    top: 12px
+    top: 12px;
+    right: 12px
 }
 
 .modalCloseButton_b2b772:hover {
@@ -27,11 +27,11 @@
 }
 
 .contactSync_b2b772 {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 32px;
-    position: relative;
     width: 568px
 }
 
@@ -39,4 +39,4 @@
     padding-bottom: 8px
 }
 
-/*# sourceMappingURL=d81c3197eccbf8bb.css.map*/
+/*# sourceMappingURL=19684b9ea8f22891.css.map*/

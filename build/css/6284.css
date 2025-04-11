@@ -1,6 +1,6 @@
 /**
   Module ID: 6284
-  Original File Name: b6d7446d8c01d642
+  Original File Name: daff248200af3158
 **/
 .headerContainer__6d90b {
     flex-direction: column
@@ -18,8 +18,8 @@
 .modalCloseButton__6d90b {
     padding: 0;
     position: absolute;
-    right: 16px;
-    top: 16px
+    top: 16px;
+    right: 16px
 }
 
 .headerSubtitle__6d90b,.modalCloseButton__6d90b {
@@ -27,8 +27,8 @@
 }
 
 .answerChoicesContainer__6d90b {
-    background-color: var(--background-secondary);
     border-radius: 4px;
+    background-color: var(--background-secondary);
     margin-bottom: 16px
 }
 
@@ -45,15 +45,16 @@
 }
 
 .headerImage__339fa {
+    width: 100%;
     height: 146px;
-    object-fit: cover;
-    width: 100%
+    -o-object-fit: cover;
+    object-fit: cover
 }
 
 .content__339fa {
+    padding: 16px;
     display: flex;
-    flex-direction: column;
-    padding: 16px
+    flex-direction: column
 }
 
 .footer__339fa {
@@ -61,14 +62,14 @@
 }
 
 .goBackButton__339fa {
-    min-width: auto;
-    padding: 0
+    padding: 0;
+    min-width: 0
 }
 
 .slideContainer__339fa {
     display: flex;
     flex-direction: column;
-    max-height: clamp(200px,calc(100vh - 80px),660px)
+    max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=b6d7446d8c01d642.css.map*/
+/*# sourceMappingURL=daff248200af3158.css.map*/

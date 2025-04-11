@@ -1,16 +1,16 @@
 /**
   Module ID: 34191
-  Original File Name: 47502318736011d2
+  Original File Name: e7d3510b1fd4dcb3
 **/
 .header_b917ac {
-    overflow: hidden;
-    padding: 24px 24px 0
+    padding: 24px 24px 0;
+    overflow: hidden
 }
 
 .closeButton_b917ac {
     position: absolute;
-    right: 12px;
-    top: 12px
+    top: 12px;
+    right: 12px
 }
 
 .visual-refresh .closeButton_b917ac {
@@ -18,8 +18,8 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }
 
 .backButton_b917ac {
@@ -32,15 +32,15 @@
 }
 
 .createGuild_b917ac {
-    flex-grow: 0;
-    margin: 16px 0
+    margin: 16px 0;
+    flex-grow: 0
 }
 
 .uploadIcon_b917ac {
-    color: var(--interactive-normal);
+    padding-top: 4px;
     display: flex;
     justify-content: center;
-    padding-top: 4px
+    color: var(--interactive-normal)
 }
 
 .nameInput_b917ac {
@@ -68,4 +68,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=47502318736011d2.css.map*/
+/*# sourceMappingURL=e7d3510b1fd4dcb3.css.map*/

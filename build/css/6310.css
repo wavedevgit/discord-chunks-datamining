@@ -1,6 +1,6 @@
 /**
   Module ID: 6310
-  Original File Name: c608755b495f756b
+  Original File Name: 8695b69e5c7703bb
 **/
 .spacing__89466 {
     margin-bottom: 20px
@@ -11,14 +11,14 @@
 }
 
 .message__89466 {
-    background-color: var(--background-primary);
+    position: relative;
     border-radius: 3px;
-    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high);
     overflow: hidden;
-    padding-bottom: 10px;
     padding-top: 10px;
+    padding-bottom: 10px;
     pointer-events: none;
-    position: relative
+    background-color: var(--background-primary);
+    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-high)
 }
 
-/*# sourceMappingURL=c608755b495f756b.css.map*/
+/*# sourceMappingURL=8695b69e5c7703bb.css.map*/

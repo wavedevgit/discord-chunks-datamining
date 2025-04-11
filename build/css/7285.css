@@ -1,12 +1,12 @@
 /**
   Module ID: 7285
-  Original File Name: 7a7d0833bd087032
+  Original File Name: b58c0c1fdc49e215
 **/
 .closeButton__52eda {
-    box-sizing: content-box;
     position: absolute;
-    right: 4px;
-    top: 12px
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
 }
 
 .content__52eda {
@@ -14,23 +14,23 @@
 }
 
 .image__52eda {
-    height: 90px;
     margin-top: 24px;
+    height: 90px;
     width: auto
 }
 
 .title__52eda {
-    font-weight: 700;
-    margin-top: 16px
+    margin-top: 16px;
+    font-weight: 700
 }
 
 .subtitle__52eda {
-    margin-bottom: 32px;
-    margin-top: 8px
+    margin-top: 8px;
+    margin-bottom: 32px
 }
 
 .button__52eda {
     width: 100%
 }
 
-/*# sourceMappingURL=7a7d0833bd087032.css.map*/
+/*# sourceMappingURL=b58c0c1fdc49e215.css.map*/

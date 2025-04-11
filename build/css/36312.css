@@ -1,6 +1,6 @@
 /**
   Module ID: 36312
-  Original File Name: 8d08fe04e6cb472f
+  Original File Name: ce40687485807b2e
 **/
 .modal__2bb83 {
     min-height: 150px
@@ -29,8 +29,8 @@
 }
 
 .modalFooter__2bb83 {
-    display: flex;
-    padding: 0 var(--spacing-16) var(--spacing-24) var(--spacing-16)
+    padding: 0 var(--spacing-16) var(--spacing-24) var(--spacing-16);
+    display: flex
 }
 
 .clearAllButton__2bb83 {
@@ -59,13 +59,13 @@
 }
 
 .listItemContents__2bb83 {
-    padding: 0 var(--spacing-8);
-    width: 100%
+    width: 100%;
+    padding: 0 var(--spacing-8)
 }
 
 .listItemContents__2bb83,.userInfo__2bb83 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .userInfo__2bb83 {
@@ -77,4 +77,4 @@
     margin-left: auto
 }
 
-/*# sourceMappingURL=8d08fe04e6cb472f.css.map*/
+/*# sourceMappingURL=ce40687485807b2e.css.map*/

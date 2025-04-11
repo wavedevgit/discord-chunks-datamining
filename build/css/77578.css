@@ -1,6 +1,6 @@
 /**
   Module ID: 77578
-  Original File Name: 75eb0236d96b83e8
+  Original File Name: 907acab10bc7f248
 **/
 .headerGuildName__949ab {
     color: var(--header-primary)
@@ -16,27 +16,27 @@
 }
 
 .main__949ab {
-    align-items: center;
     background: var(--background-primary);
     border-radius: 8px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     padding: 16px;
-    position: relative;
-    width: 440px
+    width: 440px;
+    position: relative
 }
 
 .close__949ab {
-    height: 24px;
-    padding: 0;
     position: absolute;
+    top: 16px;
     right: 16px;
-    top: 16px
+    padding: 0;
+    height: 24px
 }
 
 .guildIcon__949ab {
-    margin-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .header__949ab {
@@ -46,28 +46,28 @@
 
 .guildDescription__949ab {
     margin-top: 8px;
-    padding: 0 8px;
-    text-align: center
+    text-align: center;
+    padding: 0 8px
 }
 
 .choiceHeader__949ab {
-    align-self: flex-start;
-    margin-top: 32px
+    margin-top: 32px;
+    align-self: flex-start
 }
 
 .options__949ab {
-    margin-top: 8px;
-    width: 100%
+    width: 100%;
+    margin-top: 8px
 }
 
 .optionContainer__949ab {
-    align-items: center;
+    margin-top: 8px;
     background: var(--background-secondary);
     border-radius: 8px;
+    padding: 12px;
     display: flex;
     flex-direction: row;
-    margin-top: 8px;
-    padding: 12px
+    align-items: center
 }
 
 .optionContainer__949ab:hover {
@@ -86,8 +86,8 @@
 }
 
 .channelIcon__949ab,.optionEmoji__949ab {
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .channelIcon__949ab {
@@ -96,8 +96,8 @@
 
 .channelTitleIcon__949ab {
     color: var(--header-secondary);
-    margin-right: 2px;
-    vertical-align: middle
+    vertical-align: middle;
+    margin-right: 2px
 }
 
 .channelDescription__949ab {
@@ -120,10 +120,10 @@
     color: var(--interactive-active)
 }
 
-@media (max-width:485px) {
+@media (max-width: 485px) {
     .main__949ab {
         width: 350px
     }
 }
 
-/*# sourceMappingURL=75eb0236d96b83e8.css.map*/
+/*# sourceMappingURL=907acab10bc7f248.css.map*/

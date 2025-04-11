@@ -1,33 +1,34 @@
 /**
   Module ID: 18327
-  Original File Name: 1f0ce5b5fd349793
+  Original File Name: 84d240072fd3d6c3
 **/
 .container__71af4 {
-    height: 300px;
-    width: 440px
+    width: 440px;
+    height: 300px
 }
 
 .content__71af4 {
+    border-radius: 8px;
     background-color: var(--modal-background)
 }
 
 .avatarBackground__71af4,.content__71af4 {
-    align-items: center;
-    border-radius: 8px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .avatarBackground__71af4 {
-    background: linear-gradient(0deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.7)),linear-gradient(180deg,#94d783,#139968);
+    width: 221px;
+    height: 168px;
+    border-radius: 8px;
     border: 3px solid #94d783;
+    background: linear-gradient(0deg,hsla(0,0%,100%,.7),hsla(0,0%,100%,.7)),linear-gradient(180deg,#94d783,#139968);
+    position: relative;
     bottom: -35px;
     gap: 12px;
-    height: 168px;
-    margin: -95px auto auto;
-    position: relative;
-    width: 221px;
-    z-index: -1
+    z-index: -1;
+    margin: -95px auto auto
 }
 
 .avatar__71af4 {
@@ -35,23 +36,23 @@
 }
 
 .rect__71af4 {
-    background-color: var(--white-500);
-    border-radius: 4px;
+    width: 206px;
     height: 24px;
+    border-radius: 4px;
     opacity: .45;
-    width: 206px
+    background-color: var(--white-500)
 }
 
 .bottomOverlay__71af4 {
-    background: linear-gradient(180deg,rgba(49,51,56,0),#313338 57.5%);
+    position: absolute;
     bottom: 0;
     height: 89px;
-    position: absolute;
-    width: 257px
+    width: 257px;
+    background: linear-gradient(180deg,rgba(49,51,56,0),#313338 57.5%)
 }
 
 .bodyText__71af4 {
     text-align: center
 }
 
-/*# sourceMappingURL=1f0ce5b5fd349793.css.map*/
+/*# sourceMappingURL=84d240072fd3d6c3.css.map*/

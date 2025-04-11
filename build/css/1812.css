@@ -1,22 +1,22 @@
 /**
   Module ID: 1812
-  Original File Name: 237647df7903246f
+  Original File Name: 1183046db6d6e4f9
 **/
 .closeButton__8e05e {
     position: absolute;
-    right: 0;
-    top: 8px
+    top: 8px;
+    right: 0
 }
 
 .headerContainer__8e05e {
-    align-items: center;
     display: flex;
-    flex-direction: vertical
+    flex-direction: vertical;
+    align-items: center
 }
 
 .header__8e05e {
-    font-weight: 700;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }
 
 .header__8e05e,.name__8e05e {
@@ -27,4 +27,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=237647df7903246f.css.map*/
+/*# sourceMappingURL=1183046db6d6e4f9.css.map*/

@@ -1,20 +1,20 @@
 /**
   Module ID: 16359
-  Original File Name: a5e3fb85c619a228
+  Original File Name: ad62566d28cc352f
 **/
 .container__1ff2f {
-    align-items: center;
-    background-color: var(--background-modifier-hover);
     border-radius: 8px;
+    padding: 10px;
+    background-color: var(--background-modifier-hover);
     display: inline-flex;
-    padding: 10px
+    align-items: center
 }
 
 .dot__1ff2f {
-    background-color: var(--interactive-muted);
-    border-radius: 50%;
+    width: 4px;
     height: 4px;
-    width: 4px
+    border-radius: 50%;
+    background-color: var(--interactive-muted)
 }
 
 .fileIcon__1ff2f {
@@ -23,9 +23,9 @@
 
 .fileName__1ff2f {
     max-width: 250px;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden
 }
 
 .benefitLabel_f0fc41 {
@@ -38,9 +38,9 @@
 }
 
 .modal_fe72c8 {
-    border-radius: 8px;
+    width: 100%;
     max-width: 638px;
-    width: 100%
+    border-radius: 8px
 }
 
 .header_fe72c8 {
@@ -59,11 +59,11 @@
 }
 
 .purchaseSummaryContainer_fe72c8 {
+    padding: 12px;
+    display: flex;
     background-color: var(--background-secondary);
     border-radius: 8px;
-    display: flex;
-    gap: 12px;
-    padding: 12px
+    gap: 12px
 }
 
 .purchaseSummarInfo_fe72c8 {
@@ -71,11 +71,12 @@
 }
 
 .purchaseSummaryImage_fe72c8 {
-    background-color: var(--background-primary);
-    border-radius: 4px;
+    width: 100px;
     height: 56px;
+    border-radius: 4px;
+    -o-object-fit: cover;
     object-fit: cover;
-    width: 100px
+    background-color: var(--background-primary)
 }
 
 .footer_fe72c8 {
@@ -86,45 +87,45 @@
 }
 
 .productTypeContainer_fe72c8 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .dotSeparator_fe72c8 {
-    background-color: var(--text-muted);
-    border-radius: 50%;
+    width: 2px;
     height: 2px;
-    margin: 0 4px;
-    width: 2px
+    border-radius: 50%;
+    background-color: var(--text-muted);
+    margin: 0 4px
 }
 
 .purchaseSummaryPrice_fe72c8 {
-    align-items: flex-end;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: flex-end
 }
 
 .divider_fe72c8 {
-    border-top: 1px solid var(--background-modifier-hover);
-    width: 100%
+    width: 100%;
+    border-top: 1px solid var(--background-modifier-hover)
 }
 
 .benefitsContainer_fe72c8 {
-    background-color: var(--background-secondary);
     border-radius: 8px;
+    background-color: var(--background-secondary);
     padding: 16px
 }
 
 .benefitsContainer_fe72c8 li:not(:last-child) {
+    padding-bottom: 16px;
     border-bottom: 1px solid var(--background-modifier-hover);
-    margin-bottom: 16px;
-    padding-bottom: 16px
+    margin-bottom: 16px
 }
 
 .attachmentsContainer_fe72c8 {
     display: flex;
-    gap: 24px;
-    justify-content: space-between
+    justify-content: space-between;
+    gap: 24px
 }
 
 .attachmentsContainerMultiple_fe72c8 {
@@ -133,8 +134,8 @@
 
 .attachmentGrid_fe72c8 {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px
+    gap: 10px;
+    flex-wrap: wrap
 }
 
-/*# sourceMappingURL=a5e3fb85c619a228.css.map*/
+/*# sourceMappingURL=ad62566d28cc352f.css.map*/

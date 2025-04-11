@@ -1,22 +1,22 @@
 /**
   Module ID: 89515
-  Original File Name: 3dbeef4c944e6f33
+  Original File Name: d9db3fcdb684e55c
 **/
 .verifyConnectedAccount_fb52a4 {
-    background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
-    background-color: #282b30;
-    bottom: 0;
     color: var(--white-500);
-    left: 0;
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
     right: 0;
-    top: 0
+    background: url(/assets/1243734d7e2a4654.png) 0 0 repeat;
+    background-color: #282b30
 }
 
 .logos_fb52a4,.verifyConnectedAccount_fb52a4 {
-    align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    align-items: center
 }
 
 .logos_fb52a4 {
@@ -24,19 +24,19 @@
 }
 
 .logosDivider_fb52a4 {
-    background-image: url(/assets/f9951f6f63451f68.svg);
-    background-size: 28px 28px;
-    content: " ";
-    display: inline-block;
+    width: 28px;
     height: 28px;
     margin: 0 37px;
-    width: 28px
+    background-size: 28px 28px;
+    background-image: url(/assets/f9951f6f63451f68.svg);
+    content: " ";
+    display: inline-block
 }
 
 .logo_fb52a4 {
-    background-size: 88px 88px;
+    width: 88px;
     height: 88px;
-    width: 88px
+    background-size: 88px 88px
 }
 
 .logoDiscord_fb52a4 {
@@ -45,10 +45,10 @@
 
 .root__0d52d {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding: var(--spacing-24);
-    text-align: center
+    flex-direction: column;
+    text-align: center;
+    padding: var(--spacing-24)
 }
 
 .wrapper__0d52d {
@@ -64,11 +64,11 @@
 }
 
 .error__0d52d {
-    align-items: center;
+    text-align: center;
+    width: 100%;
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 100%
+    align-items: center
 }
 
-/*# sourceMappingURL=3dbeef4c944e6f33.css.map*/
+/*# sourceMappingURL=d9db3fcdb684e55c.css.map*/

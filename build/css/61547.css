@@ -1,18 +1,18 @@
 /**
   Module ID: 61547
-  Original File Name: c63f42d1d319f123
+  Original File Name: 96c837ba4847dabb
 **/
 .button_e18686 {
+    text-indent: -9999em;
+    overflow: hidden;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     border-radius: 50%;
-    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low);
-    cursor: pointer;
-    height: 24px;
-    overflow: hidden;
-    text-indent: -9999em;
-    transition: opacity .1s ease-in-out,box-shadow .1s ease-in-out,transform .2s ease;
-    width: 24px
+    transition: opacity .1s ease-in-out, box-shadow .1s ease-in-out, transform .2s ease;
+    box-shadow: var(--legacy-elevation-border),var(--legacy-elevation-low)
 }
 
 .button_e18686:active {
@@ -24,8 +24,8 @@
 }
 
 .default_e18686 {
-    background-color: var(--background-secondary-alt);
-    background-image: url(/assets/14c3c4a641591d42.svg)
+    background-image: url(/assets/14c3c4a641591d42.svg);
+    background-color: var(--background-secondary-alt)
 }
 
 .default_e18686:hover {
@@ -33,8 +33,8 @@
 }
 
 .filled_e18686 {
-    background-color: var(--button-danger-background);
-    background-image: url(/assets/cc9937ea92f932c3.svg)
+    background-image: url(/assets/cc9937ea92f932c3.svg);
+    background-color: var(--button-danger-background)
 }
 
 .filled_e18686:hover {
@@ -55,71 +55,71 @@
 }
 
 .emojiButton__82d84 {
+    position: absolute;
     height: 100%;
-    margin: 0 10px;
-    position: absolute
+    margin: 0 10px
 }
 
 .emojiText__82d84 {
-    cursor: pointer;
-    padding-left: 40px
+    padding-left: 40px;
+    cursor: pointer
 }
 
 .removeButton__82d84 {
-    height: 20px;
-    margin: 10px;
     position: absolute;
-    right: 0;
+    height: 20px;
+    width: 20px;
     top: 0;
-    width: 20px
+    right: 0;
+    margin: 10px
 }
 
 .container_f89b2c {
-    border: 1px solid;
-    border-radius: 3px;
     box-sizing: border-box;
+    position: relative;
+    border: 1px solid;
     cursor: pointer;
-    height: 40px;
-    position: relative
+    border-radius: 3px;
+    height: 40px
 }
 
 .layout_f89b2c {
-    bottom: 0;
-    left: 0;
     position: absolute;
+    top: 0;
     right: 0;
-    top: 0
+    bottom: 0;
+    left: 0
 }
 
 .base_f89b2c {
-    background-color: transparent;
     font-size: 16px;
     line-height: 22px;
-    overflow: hidden;
+    background-color: transparent;
     padding: 10px 0 10px 10px;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    transition: color .15s ease;
-    white-space: nowrap
+    overflow: hidden;
+    transition: color .15s ease
 }
 
 .hiddenMessage_f89b2c {
-    bottom: 0;
-    left: 0;
+    z-index: 0;
     position: absolute;
-    right: 0;
     top: 0;
-    z-index: 0
+    left: 0;
+    bottom: 0;
+    right: 0
 }
 
 .input_f89b2c {
-    border: none;
-    box-sizing: border-box;
-    color: var(--header-primary);
-    flex: 1 1 auto;
-    min-width: 0;
     position: relative;
     width: 100%;
-    z-index: 1
+    z-index: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    flex: 1 1 auto;
+    border: none;
+    color: var(--header-primary)
 }
 
 .input_f89b2c::-moz-placeholder {
@@ -131,15 +131,15 @@
 }
 
 .button_f89b2c {
-    border-radius: 2px;
     margin: 4px 4px 4px 0;
     padding: 2px 20px;
-    transition: background-color .2s ease-in-out,color .2s ease-in-out
+    border-radius: 2px;
+    transition: background-color .2s ease-in-out, color .2s ease-in-out
 }
 
 .disabled_f89b2c {
-    cursor: not-allowed;
-    opacity: .3
+    opacity: .3;
+    cursor: not-allowed
 }
 
 .disabled_f89b2c .button_f89b2c {
@@ -189,8 +189,8 @@
 }
 
 .modal__4e29d {
-    max-height: 100%;
-    width: 600px
+    width: 600px;
+    max-height: 100%
 }
 
 .modalHeader__4e29d {
@@ -203,8 +203,8 @@
 
 .modalClose__4e29d {
     position: absolute;
-    right: 16px;
     top: 16px;
+    right: 16px;
     z-index: 1
 }
 
@@ -217,8 +217,8 @@
 }
 
 .formItemRow__4e29d .formItemRowChild__4e29d {
-    flex-basis: 100%;
-    flex-grow: 1
+    flex-grow: 1;
+    flex-basis: 100%
 }
 
 .formItemRow__4e29d .formItemRowChild__4e29d:first-child {
@@ -226,17 +226,17 @@
 }
 
 .preview__4e29d {
-    border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px;
-    display: flex;
     height: 214px;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    display: flex;
     overflow: hidden
 }
 
 .previewDark__4e29d,.previewLight__4e29d {
-    align-items: center;
-    display: flex;
     flex-grow: 1;
+    display: flex;
+    align-items: center;
     justify-content: center;
     position: relative
 }
@@ -274,8 +274,8 @@
 }
 
 .emojiText__4e29d {
-    cursor: pointer;
-    padding-left: calc(var(--custom-guild-sticker-upload-modal-emoji-margin) + var(--custom-guild-sticker-upload-modal-emoji-size) + var(--custom-guild-sticker-upload-modal-emoji-margin))
+    padding-left: calc(var(--custom-guild-sticker-upload-modal-emoji-margin) + var(--custom-guild-sticker-upload-modal-emoji-size) + var(--custom-guild-sticker-upload-modal-emoji-margin));
+    cursor: pointer
 }
 
 .form__4e29d {
@@ -294,4 +294,4 @@
     min-height: 0
 }
 
-/*# sourceMappingURL=c63f42d1d319f123.css.map*/
+/*# sourceMappingURL=96c837ba4847dabb.css.map*/

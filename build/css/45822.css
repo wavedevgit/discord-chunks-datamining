@@ -1,6 +1,6 @@
 /**
   Module ID: 45822
-  Original File Name: 244269728216c9c7
+  Original File Name: 0fd5464eaf06dc3c
 **/
 .modalRoot__7169d {
     height: 478px
@@ -11,8 +11,8 @@
 }
 
 .headerSubtitle__7169d {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .headerSubtitleIcon__7169d {
@@ -56,8 +56,8 @@
 }
 
 .icon_ac72c6 {
-    margin-right: 12px;
     opacity: .6;
+    margin-right: 12px;
     fill: var(--primary-300)
 }
 
@@ -66,8 +66,8 @@
 }
 
 .header_ac72c6 {
-    margin-bottom: 4px;
-    margin-top: 4px
+    margin-top: 4px;
+    margin-bottom: 4px
 }
 
 .title_ac72c6 {
@@ -75,9 +75,9 @@
 }
 
 .subtitle_ac72c6 {
+    display: flex;
     align-items: center;
-    color: var(--text-muted-on-default);
-    display: flex
+    color: var(--text-muted-on-default)
 }
 
 .subtitleIcon_ac72c6 {
@@ -122,20 +122,20 @@
 }
 
 .inputPrefix_ac72c6 {
-    color: var(--text-normal);
-    left: 8px;
     position: absolute;
-    top: 12px
+    top: 12px;
+    left: 8px;
+    color: var(--text-normal)
 }
 
 .switchIcon_ac72c6 {
-    display: inline-block;
-    height: 16px;
-    margin-right: 3px;
-    opacity: .6;
     position: relative;
     top: 2px;
-    width: 16px
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    opacity: .6;
+    margin-right: 3px
 }
 
 .channelTypeDescription_ac72c6,.storeChannelOptionSelector_ac72c6 {
@@ -143,17 +143,17 @@
 }
 
 .username_ac72c6 {
-    font-size: 16px;
-    line-height: 20px;
-    margin-left: 8px;
-    overflow: hidden;
+    white-space: nowrap;
     text-overflow: ellipsis;
-    white-space: nowrap
+    overflow: hidden;
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 20px
 }
 
 .emptyRoles_ac72c6 {
-    margin-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .owner_ac72c6 {
@@ -176,8 +176,8 @@
 }
 
 .radioLabelName_ac72c6 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .radioLabelDescription_ac72c6 {
@@ -205,8 +205,8 @@
 }
 
 .radioItemName_ac72c6 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .channelNameNote_ac72c6 strong {
@@ -217,4 +217,4 @@
     top: 14px
 }
 
-/*# sourceMappingURL=244269728216c9c7.css.map*/
+/*# sourceMappingURL=0fd5464eaf06dc3c.css.map*/

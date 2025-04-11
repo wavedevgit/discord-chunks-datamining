@@ -1,10 +1,10 @@
 /**
   Module ID: 93157
-  Original File Name: 45a85a004932ea2f
+  Original File Name: 58c90839eecedcd7
 **/
 .modalHeader__57752 {
-    justify-content: space-between;
-    padding-bottom: 0
+    padding-bottom: 0;
+    justify-content: space-between
 }
 
 .modalCloseButton__57752 {
@@ -19,18 +19,18 @@
 }
 
 .editingContainer__57752 {
+    position: relative;
+    overflow: hidden;
     background-color: var(--black-500);
     border-radius: var(--radius-sm);
-    height: 400px;
-    max-height: 500px;
     min-height: 300px;
-    overflow: hidden;
-    position: relative
+    height: 400px;
+    max-height: 500px
 }
 
 .editingContainer__57752,.errorContainer__57752 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
@@ -40,10 +40,10 @@
 }
 
 .image__57752 {
-    cursor: grab;
     height: 100%;
     pointer-events: all;
-    position: absolute
+    position: absolute;
+    cursor: grab
 }
 
 .rotationSupported__57752 {
@@ -64,12 +64,12 @@
 }
 
 .overlay__57752 {
+    z-index: 1;
     border: 5px solid var(--white-500);
-    box-shadow: 0 0 0 9999px rgba(47,49,54,.6);
     box-sizing: border-box;
     pointer-events: none;
     position: absolute;
-    z-index: 1
+    box-shadow: 0 0 0 9999px rgba(47,49,54,.6)
 }
 
 .overlayAvatar__57752 {
@@ -81,34 +81,34 @@
 
 .sliderContainer__57752 {
     justify-content: center;
-    margin: 20px auto;
-    width: 90%
+    width: 90%;
+    margin: 20px auto
 }
 
 .sliderContainer__57752,.toolsContainer__57752 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .toolsContainer__57752 {
-    margin: 0 -6px;
-    padding: 18px 0 18px 36px
+    padding: 18px 0 18px 36px;
+    margin: 0 -6px
 }
 
 .zoomControls__57752 {
-    align-items: center;
-    -moz-column-gap: 8px;
-    column-gap: 8px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
     margin: 0 auto
 }
 
 .zoomIcon__57752 {
-    color: var(--interactive-normal);
-    width: 24px
+    width: 24px;
+    color: var(--interactive-normal)
 }
 
 .slider__57752 {
@@ -117,13 +117,13 @@
 
 .rotateButton__57752 {
     box-sizing: content-box;
-    color: var(--interactive-normal);
-    cursor: pointer;
-    height: 24px;
-    padding: 6px;
     position: relative;
-    transition: color var(--custom-button-transition-duration) ease;
-    width: 24px
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    padding: 6px;
+    color: var(--interactive-normal);
+    transition: color var(--custom-button-transition-duration) ease
 }
 
 .rotateButton__57752:hover {
@@ -131,16 +131,16 @@
 }
 
 .premiumUpsell__57752 {
-    border-radius: var(--radius-sm);
     margin: -4px 0 0;
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--spacing-16);
+    border-radius: var(--radius-sm)
 }
 
 .modalFooter__57752 {
     display: flex;
     flex-direction: row;
-    gap: var(--spacing-16);
-    justify-content: flex-end
+    justify-content: flex-end;
+    gap: var(--spacing-16)
 }
 
 .linkButton__57752 {
@@ -156,4 +156,4 @@
     text-transform: none
 }
 
-/*# sourceMappingURL=45a85a004932ea2f.css.map*/
+/*# sourceMappingURL=58c90839eecedcd7.css.map*/

@@ -1,36 +1,36 @@
 /**
   Module ID: 20212
-  Original File Name: 72e82ab133fbbb77
+  Original File Name: 51055bbdadd89396
 **/
 .errorLabel_f3e49b,.supportCallToAction_f3e49b {
     margin-top: 20px
 }
 
 .errorLabel_f3e49b {
-    color: var(--text-muted-on-default);
     font-size: 12px;
     font-weight: 700;
     letter-spacing: .5px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    color: var(--text-muted-on-default)
 }
 
 .errorDetails_f3e49b {
-    background: var(--background-secondary);
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 2px;
     box-sizing: border-box;
-    color: var(--text-normal);
-    font-family: var(--font-code);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
     font-size: 14px;
     line-height: 16px;
-    margin-bottom: 20px;
     margin-top: 10px;
+    margin-bottom: 20px;
     padding: 12px;
+    font-family: var(--font-code);
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text;
-    white-space: pre
+    white-space: pre;
+    background: var(--background-secondary);
+    color: var(--text-normal)
 }
 
 .theme-dark .errorDetails_f3e49b {
@@ -53,4 +53,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=72e82ab133fbbb77.css.map*/
+/*# sourceMappingURL=51055bbdadd89396.css.map*/

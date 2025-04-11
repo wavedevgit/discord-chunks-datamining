@@ -1,10 +1,10 @@
 /**
   Module ID: 53900
-  Original File Name: 1dc286c7f0b350a7
+  Original File Name: 15d9339ea18e9022
 **/
 .formHeaderContainer__23a6b {
-    overflow: visible;
     padding: 24px 16px 0;
+    overflow: visible;
     text-align: center;
     white-space: break-spaces
 }
@@ -21,12 +21,12 @@
 }
 
 .formImage__23a6b {
-    background-image: url(/assets/a4f2b08bda267ae6.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 80px;
     height: 80px;
-    width: 80px
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/a4f2b08bda267ae6.svg)
 }
 
 .formSubHeader__23a6b {
@@ -38,13 +38,13 @@
 }
 
 .cannon__23a6b {
-    height: 130vh;
-    left: 0;
-    pointer-events: none;
     position: absolute;
-    top: -30vh;
     width: 100vw;
-    z-index: 1
+    height: 130vh;
+    top: -30vh;
+    left: 0;
+    z-index: 1;
+    pointer-events: none
 }
 
-/*# sourceMappingURL=1dc286c7f0b350a7.css.map*/
+/*# sourceMappingURL=15d9339ea18e9022.css.map*/

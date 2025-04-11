@@ -1,14 +1,14 @@
 /**
   Module ID: 35641
-  Original File Name: a51e2c2bbaea9654
+  Original File Name: bdabe4282ac42a04
 **/
 .modalHeader_e6fa8e {
-    align-items: center;
-    color: var(--text-normal);
     display: flex;
     flex-direction: column;
+    color: var(--text-normal);
     gap: 8px;
-    text-align: center
+    text-align: center;
+    align-items: center
 }
 
 .modalFooter_e6fa8e {
@@ -16,8 +16,8 @@
 }
 
 .modalImage_e6fa8e {
-    margin-bottom: 16px;
-    width: 160px
+    width: 160px;
+    margin-bottom: 16px
 }
 
 .infoContent_e6fa8e {
@@ -29,18 +29,18 @@
 }
 
 .infoListItem_e6fa8e {
-    color: var(--text-normal);
     display: flex;
     gap: 16px;
+    color: var(--text-normal);
     margin-top: 24px
 }
 
 .iconWrapper_e6fa8e {
+    padding: 8px;
     background-color: var(--background-tertiary);
     border-radius: 50%;
-    height: 24px;
-    padding: 8px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .deprivateTableBody_e6fa8e {
@@ -72,21 +72,21 @@
 }
 
 .selectableChannelRow_e6fa8e {
-    align-items: center;
-    cursor: pointer;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    cursor: pointer;
     padding: 12px 16px
 }
 
 .selectableChannelRow_e6fa8e:after {
-    background-color: var(--background-modifier-accent);
     content: "";
-    height: 1px;
-    margin-top: 54px;
     position: absolute;
-    width: calc(100% - 54px)
+    height: 1px;
+    width: calc(100% - 54px);
+    margin-top: 54px;
+    background-color: var(--background-modifier-accent)
 }
 
 .selectableChannelRow_e6fa8e:hover {
@@ -110,10 +110,10 @@
 }
 
 .selectAllButton_e6fa8e {
-    cursor: pointer;
     display: flex;
     flex-direction: row;
-    gap: 4px
+    gap: 4px;
+    cursor: pointer
 }
 
-/*# sourceMappingURL=a51e2c2bbaea9654.css.map*/
+/*# sourceMappingURL=bdabe4282ac42a04.css.map*/

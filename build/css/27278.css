@@ -1,28 +1,30 @@
 /**
   Module ID: 27278
-  Original File Name: a7f1e8f91f6ea11a
+  Original File Name: d79f2fc9e1a14284
 **/
 .iframe__8c55d {
+    width: 100%;
     height: 100%;
-    min-height: 2px;
     min-width: 2px;
-    width: 100%
+    min-height: 2px
 }
 
 .container_c8f358 {
     --custom-activity-popout-header-height: 48px;
     --custom-activity-popout-header-background-color: var(--black);
-    background-color: var(--custom-activity-popout-header-background-color);
     justify-content: space-between;
-    max-height: var(--custom-activity-popout-header-height);
+    background-color: var(--custom-activity-popout-header-background-color);
+    min-height: 48px;
     min-height: var(--custom-activity-popout-header-height);
+    max-height: 48px;
+    max-height: var(--custom-activity-popout-header-height);
     padding: 0 var(--spacing-32)
 }
 
 .container_c8f358,.headerSection_c8f358 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .headerSectionLeft_c8f358 {
@@ -38,13 +40,13 @@
 }
 
 .appIcon_c8f358 {
-    border-radius: var(--radius-sm);
-    margin-right: var(--spacing-8)
+    margin-right: var(--spacing-8);
+    border-radius: var(--radius-sm)
 }
 
 .appIcon_c8f358,.avatar_c8f358 {
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .avatar_c8f358 {
@@ -67,44 +69,44 @@
 }
 
 .applicationName_c8f358 {
-    flex: 0 1 auto;
-    min-width: 24px
+    min-width: 24px;
+    flex: 0 1 auto
 }
 
 .fade_c8f358 {
     --custom-activity-popout-header-fade-width: var(--spacing-16);
-    background: linear-gradient(to right,transparent,var(--custom-activity-popout-header-background-color));
-    height: var(--custom-activity-popout-header-height);
-    left: calc(var(--custom-activity-popout-header-fade-width)*-1);
     pointer-events: none;
+    background: linear-gradient(90deg,transparent,var(--custom-activity-popout-header-background-color));
     position: absolute;
-    width: var(--custom-activity-popout-header-fade-width)
+    left: calc(var(--custom-activity-popout-header-fade-width)*-1);
+    width: var(--custom-activity-popout-header-fade-width);
+    height: var(--custom-activity-popout-header-height)
 }
 
 .inviteButtonIcon_c8f358 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .container__0b406 {
-    background-color: var(--background-primary);
+    width: 100%;
     height: 100%;
-    width: 100%
+    background-color: var(--background-primary)
 }
 
 .loadedContentContainer__0b406 {
     display: flex;
-    flex-direction: row;
+    width: 100%;
     height: 100%;
-    width: 100%
+    flex-direction: row
 }
 
 .iframeAndHeaderContainer__0b406 {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
-    position: relative;
-    width: 100%
+    position: relative
 }
 
 .headerContainer__0b406 {
@@ -117,17 +119,17 @@
 }
 
 .iframe__0b406 {
+    width: 100%;
     height: 100%;
-    min-height: 2px;
     min-width: 2px;
-    width: 100%
+    min-height: 2px
 }
 
 .nuxBackground__0b406 {
-    background-color: var(--black);
-    height: 100%;
     position: relative;
-    width: 100%
+    background-color: var(--black);
+    width: 100%;
+    height: 100%
 }
 
-/*# sourceMappingURL=a7f1e8f91f6ea11a.css.map*/
+/*# sourceMappingURL=d79f2fc9e1a14284.css.map*/

@@ -1,17 +1,17 @@
 /**
   Module ID: 91081
-  Original File Name: 86cb86acc32a730c
+  Original File Name: 2fa1639d36301bda
 **/
 .closeButton__47998 {
     position: absolute;
-    right: 14px;
-    top: 14px
+    top: 14px;
+    right: 14px
 }
 
 .art__47998 {
-    background-position: 50%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: contain
+    background-position: 50%
 }
 
 .description__47998 {
@@ -20,12 +20,12 @@
 }
 
 .conflictButton__47998 {
-    background-color: var(--background-secondary);
-    border: 1px solid;
     height: 100px;
-    justify-content: flex-start;
+    width: 100%;
+    border: 1px solid;
     padding: 20px;
-    width: 100%
+    justify-content: flex-start;
+    background-color: var(--background-secondary)
 }
 
 .linkButtonSize__47998 {
@@ -38,6 +38,7 @@
 }
 
 .linkButton__47998:hover {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -46,24 +47,24 @@
 }
 
 .conflictButtonInner__47998 {
-    align-items: center;
+    width: 100%;
     display: flex;
-    width: 100%
+    align-items: center
 }
 
 .title__47998 {
-    color: var(--primary-300);
     font-size: 12px;
+    text-transform: uppercase;
     font-weight: 700;
     letter-spacing: .5px;
-    text-transform: uppercase
+    color: var(--primary-300)
 }
 
 .buttonBody__47998 {
-    color: var(--text-normal);
-    font-size: 16px;
     line-height: 1.25;
-    text-align: left
+    text-align: left;
+    font-size: 16px;
+    color: var(--text-normal)
 }
 
 .timestamp__47998 {
@@ -71,8 +72,8 @@
 }
 
 .choiceWrapper__47998 {
-    margin-bottom: 20px;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px
 }
 
 .choiceLine__47998 {
@@ -89,19 +90,19 @@
 }
 
 .conflictArt__47998 {
+    width: 60px;
     height: 60px;
-    margin-right: 20px;
-    width: 60px
+    margin-right: 20px
 }
 
 .conflictDownloadArt__47998,.conflictUploadArt__47998 {
 }
 
 .errorArt__47998 {
+    width: 220px;
     height: 123px;
-    margin-bottom: 40px;
     margin-top: 20px;
-    width: 220px
+    margin-bottom: 40px
 }
 
 .theme-dark .conflictButton__47998 {
@@ -121,8 +122,8 @@
 }
 
 .theme-light .conflictButton__47998:hover {
-    background-color: hsl(var(--primary-200-hsl)/.3);
-    border-color: hsl(var(--primary-300-hsl)/.6)
+    border-color: hsl(var(--primary-300-hsl)/.6);
+    background-color: hsl(var(--primary-200-hsl)/.3)
 }
 
 .theme-light .choiceLine__47998 {
@@ -175,8 +176,8 @@
 .tips_ea12e5 {
     background-color: var(--background-secondary-alt);
     border-radius: 8px;
-    margin: 16px 0;
-    padding: 16px
+    padding: 16px;
+    margin: 16px 0
 }
 
 .tips_ea12e5 li {
@@ -184,4 +185,4 @@
     grid-template-columns: auto 1fr
 }
 
-/*# sourceMappingURL=86cb86acc32a730c.css.map*/
+/*# sourceMappingURL=2fa1639d36301bda.css.map*/

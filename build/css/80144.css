@@ -1,14 +1,14 @@
 /**
   Module ID: 80144
-  Original File Name: 1bc684c122db0692
+  Original File Name: 3b67707e7f983ae2
 **/
 .row__19fd1 {
     align-items: center;
-    border-bottom: 1px solid var(--background-modifier-accent);
     display: flex;
-    gap: var(--spacing-16);
+    border-bottom: 1px solid var(--background-modifier-accent);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0
+    padding: var(--spacing-16) 0;
+    gap: var(--spacing-16)
 }
 
 .row__19fd1:last-child {
@@ -36,19 +36,19 @@
 }
 
 .button__19fd1 {
-    flex-shrink: 0;
-    margin-left: auto;
     min-width: 75px;
+    margin-left: auto;
+    flex-shrink: 0;
     padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
-    align-items: center;
-    background-color: var(--bg-mod-subtle);
     border-radius: var(--radius-round);
+    background-color: var(--bg-mod-subtle);
+    min-width: 32px;
     height: 32px;
     justify-content: center;
-    min-width: 32px
+    align-items: center
 }
 
 .number__19fd1,.tableRowGroup__19fd1 {
@@ -62,12 +62,12 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-sm);
+    overflow: hidden;
     flex-grow: 1;
     flex-shrink: 0;
-    overflow: hidden;
-    padding: 0
+    padding: 0;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary)
 }
 
 .visual-refresh .row__19fd1 {
@@ -79,19 +79,18 @@
 }
 
 .buttonContainer__19fd1 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: var(--spacing-4)
 }
 
 .buttonIcon__19fd1 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .root_a2e66b {
-    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content
 }
@@ -107,14 +106,14 @@
 }
 
 .requestContainer_a2e66b {
+    padding-top: var(--spacing-16);
     padding-left: var(--spacing-16);
-    padding-right: var(--spacing-16);
-    padding-top: var(--spacing-16)
+    padding-right: var(--spacing-16)
 }
 
 .button_a2e66b {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: var(--spacing-4)
 }
 
@@ -133,4 +132,4 @@ html:not(.visual-refresh) .modalFooter_a2e66b {
     padding-left: 0
 }
 
-/*# sourceMappingURL=1bc684c122db0692.css.map*/
+/*# sourceMappingURL=3b67707e7f983ae2.css.map*/

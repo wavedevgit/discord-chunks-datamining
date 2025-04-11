@@ -1,19 +1,19 @@
 /**
   Module ID: 16120
-  Original File Name: 65e8c5d2f7d2d182
+  Original File Name: ffea4c2ffed507e5
 **/
 .labelWrapper_abe771 {
-    align-items: center;
+    display: flex;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    display: flex;
+    row-gap: 4px;
     flex-wrap: wrap;
-    row-gap: 4px
+    align-items: center
 }
 
 .label_abe771 {
-    overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge_abe771 {
@@ -30,18 +30,18 @@
 }
 
 .inviteGuestContainer_abe771 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .roleRow_b82947 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=65e8c5d2f7d2d182.css.map*/
+/*# sourceMappingURL=ffea4c2ffed507e5.css.map*/

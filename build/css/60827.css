@@ -1,6 +1,6 @@
 /**
   Module ID: 60827
-  Original File Name: c6ba9ca298b0f06c
+  Original File Name: ee62eda3b2829c4d
 **/
 .formHeader__80325 {
     overflow: visible;
@@ -15,10 +15,10 @@
 }
 
 .formImage__80325 {
-    background-image: url(/assets/4a3edc976e06f278.svg);
-    height: 80px;
     position: absolute;
-    width: 88px
+    width: 88px;
+    height: 80px;
+    background-image: url(/assets/4a3edc976e06f278.svg)
 }
 
 .formTitle__80325 {
@@ -36,45 +36,44 @@
 
 .logoutButton__80325 {
     margin: 4px auto auto;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
 
 .closeButton__80325 {
-    box-sizing: content-box;
     position: absolute;
-    right: 4px;
-    top: 12px
+    box-sizing: content-box;
+    top: 12px;
+    right: 4px
 }
 
 .successContent__80325 {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .successTitle__80325 {
-    color: var(--header-primary);
     margin-bottom: 12px;
-    text-align: center
+    text-align: center;
+    color: var(--header-primary)
 }
 
 .successPromotion__80325 {
-    color: var(--header-secondary);
     margin-bottom: 20px;
-    text-align: center
+    text-align: center;
+    color: var(--header-secondary)
 }
 
 .successImage__80325 {
-    background-image: url(/assets/535c99dc2f0346cb.svg);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 80px;
-    margin-bottom: 16px;
     margin-top: 16px;
-    width: 104px
+    margin-bottom: 16px;
+    width: 104px;
+    height: 80px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-image: url(/assets/535c99dc2f0346cb.svg)
 }
 
-/*# sourceMappingURL=c6ba9ca298b0f06c.css.map*/
+/*# sourceMappingURL=ee62eda3b2829c4d.css.map*/

@@ -1,36 +1,36 @@
 /**
   Module ID: 53682
-  Original File Name: 6cc7898da5dbd5c8
+  Original File Name: 591796273c4ee3b0
 **/
 .previewContainer__9a244 {
-    align-items: center;
     display: flex;
-    gap: 12px;
+    align-items: center;
+    overflow: hidden;
     height: 100%;
-    overflow: hidden
+    gap: 12px
 }
 
 .quote__9a244 {
+    width: 4px;
+    height: 100%;
     background-color: var(--border-subtle);
     border-radius: 2px;
-    flex-shrink: 0;
-    height: 100%;
-    width: 4px
+    flex-shrink: 0
 }
 
 .content__9a244 {
     display: flex;
-    flex: 1;
     flex-direction: column;
-    gap: 6px;
-    padding: 4px 0
+    flex: 1;
+    padding: 4px 0;
+    gap: 6px
 }
 
 .previewImage__9a244 {
+    width: auto;
     height: auto;
-    max-height: 225px;
     max-width: 225px;
-    width: auto
+    max-height: 225px
 }
 
 .icon__506b8 {
@@ -38,15 +38,15 @@
 }
 
 .modal__506b8 {
-    height: 85vh;
     max-height: 800px;
-    min-height: 400px
+    min-height: 400px;
+    height: 85vh
 }
 
 .header__506b8 {
-    align-items: stretch;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     gap: 12px
 }
 
@@ -55,10 +55,10 @@
 }
 
 .titleLine__506b8 {
-    align-items: start;
-    display: flex;
     flex: 1;
-    justify-content: space-between
+    display: flex;
+    justify-content: space-between;
+    align-items: start
 }
 
 .title__506b8 {
@@ -72,8 +72,8 @@
 }
 
 .footer__506b8 {
-    align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .footerWithMessage__506b8 {
@@ -88,19 +88,19 @@
 }
 
 .destinationRow__506b8,.footerButtons__506b8 {
-    align-items: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .destinationRow__506b8 {
-    border-radius: 4px;
-    cursor: pointer;
+    min-height: 48px;
+    padding: 0 8px;
     margin-left: 16px;
     margin-right: 8px;
-    min-height: 48px;
-    padding: 0 8px
+    border-radius: 4px;
+    cursor: pointer
 }
 
 .destinationRow__506b8.disabled__506b8 {
@@ -112,9 +112,9 @@
 }
 
 .identity__506b8 {
-    align-items: center;
-    flex-direction: row;
     flex-shrink: 1;
+    flex-direction: row;
+    align-items: center;
     gap: 12px
 }
 
@@ -137,14 +137,14 @@
 }
 
 .threadSubLabel__506b8 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .subLabelIcon__506b8 {
+    width: 12px;
     height: 12px;
-    margin-right: 2px;
-    width: 12px
+    margin-right: 2px
 }
 
 .subLabelSeparator__506b8 {
@@ -152,7 +152,7 @@
 }
 
 .disabled__506b8 .iconWrapper__506b8 {
-    opacity: 50%
+    opacity: 0.01
 }
 
 .disabled__506b8 .label__506b8 {
@@ -177,11 +177,11 @@
 }
 
 .noResults__506b8 {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
     justify-content: center;
+    gap: 16px;
     margin: 0 32px;
     text-align: center
 }
@@ -197,13 +197,13 @@
 }
 
 .sendWithMessage__506b8 {
-    align-self: flex-end;
-    border-radius: 8px;
-    flex-shrink: 0;
     height: 100%;
     max-height: 44px;
+    align-self: flex-end;
+    flex-shrink: 0;
     min-width: 0;
-    padding: 2px 16px
+    padding: 2px 16px;
+    border-radius: 8px
 }
 
 .messageInput__506b8 {
@@ -211,27 +211,27 @@
 }
 
 .commandTextContainer__506b8 {
+    gap: var(--spacing-4);
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    gap: var(--spacing-4);
-    margin-right: var(--spacing-8);
-    width: 1px
+    width: 1px;
+    margin-right: var(--spacing-8)
 }
 
 .command__506b8 {
-    align-items: center;
-    background-color: var(--background-primary);
+    padding: var(--spacing-8) var(--spacing-12);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: var(--spacing-8) var(--spacing-12)
+    align-items: center;
+    background-color: var(--background-primary)
 }
 
 .icon__506b8 {
+    width: var(--custom-app-icon-size);
     height: var(--custom-app-icon-size);
-    padding-right: 10px;
-    width: var(--custom-app-icon-size)
+    padding-right: 10px
 }
 
 .spinnerContainer__506b8 {
@@ -242,4 +242,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=6cc7898da5dbd5c8.css.map*/
+/*# sourceMappingURL=591796273c4ee3b0.css.map*/

@@ -1,17 +1,17 @@
 /**
   Module ID: 2045
-  Original File Name: dc39f6e843d26cf4
+  Original File Name: b3e499c3bfc5b311
 **/
 .modalHeader__68de9 {
-    justify-content: center;
-    padding-top: 32px
+    padding-top: 32px;
+    justify-content: center
 }
 
 .modalHeader__68de9 .closeButton__68de9 {
-    color: var(--interactive-normal);
     position: absolute;
     right: 12px;
-    top: 12px
+    top: 12px;
+    color: var(--interactive-normal)
 }
 
 .modalHeader__68de9 .closeButton__68de9:hover {
@@ -30,4 +30,4 @@
     padding: 11px 20px
 }
 
-/*# sourceMappingURL=dc39f6e843d26cf4.css.map*/
+/*# sourceMappingURL=b3e499c3bfc5b311.css.map*/

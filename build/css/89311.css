@@ -1,16 +1,16 @@
 /**
   Module ID: 89311
-  Original File Name: 45dc00b4f84723c8
+  Original File Name: 0c2191da969c1605
 **/
 .fallback_b789ab {
-    align-items: center;
-    background-color: #423d80;
     box-sizing: border-box;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    text-align: center;
+    align-items: center;
     padding: 12px;
-    text-align: center
+    background-color: #423d80
 }
 
 .spacer_b789ab {
@@ -54,71 +54,71 @@
 
 .gameProfileModal__8e830 {
     --custom-spacing: 16px;
-    display: grid;
-    margin-bottom: 32px;
-    margin-top: 32px;
-    max-width: 884px;
-    overflow: hidden;
     position: relative;
-    width: 100%
+    display: grid;
+    max-width: 884px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 32px;
+    margin-bottom: 32px
 }
 
 .gameArtHero__8e830 {
-    background-position: 50%;
-    background-repeat: no-repeat;
     background-size: cover;
-    bottom: 0;
-    height: 450px;
-    left: 0;
+    background-repeat: no-repeat;
+    background-position: 50%;
     -webkit-mask-image: linear-gradient(183deg,#000,#000 50px,transparent 325px);
     mask-image: linear-gradient(183deg,#000,#000 50px,transparent 325px);
-    pointer-events: none;
     position: absolute;
-    right: 0;
     top: 0;
-    width: 100%
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    width: 100%;
+    pointer-events: none
 }
 
 .coverArtRow__8e830 {
-    align-items: flex-start;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%
 }
 
 .overflowMenu__8e830 {
+    display: flex;
+    padding: 8px;
+    justify-content: center;
     align-items: center;
+    border-radius: 50px;
+    background-color: hsl(var(--black-hsl)/.6);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background-color: hsl(var(--black-hsl)/.6);
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    padding: 8px
+    cursor: pointer
 }
 
 .headerInfo__8e830 {
-    align-items: baseline;
     justify-content: space-between;
+    align-items: baseline;
     margin-bottom: 12px;
     padding-top: 32px;
     position: relative
 }
 
 .logoWrapper__8e830 {
-    align-items: center;
-    background-color: var(--modal-background);
     border-radius: 8px;
+    background-color: var(--modal-background);
+    padding: 4px;
     display: flex;
-    justify-content: center;
-    padding: 4px
+    align-items: center;
+    justify-content: center
 }
 
 .logo__8e830,.logoWrapper__8e830 {
-    height: 154px;
-    width: 120px
+    width: 120px;
+    height: 154px
 }
 
 .logo__8e830 {
@@ -135,17 +135,17 @@
 }
 
 .gameBadge__8e830 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 3px
 }
 
 .newBadge__8e830 {
-    align-self: end;
     background-color: var(--bg-brand);
     color: var(--white-500);
-    padding: 1px 5px 0
+    padding: 1px 5px 0;
+    align-self: end
 }
 
 .gameIcon__8e830,.newBadge__8e830 {
@@ -154,6 +154,7 @@
 
 .mainContent__8e830 {
     display: grid;
+    grid-gap: var(--custom-spacing) calc(var(--custom-spacing)*2);
     gap: var(--custom-spacing) calc(var(--custom-spacing)*2);
     grid-template-columns: 2fr 1fr;
     padding-bottom: calc(var(--custom-spacing)*2)
@@ -191,8 +192,8 @@
 }
 
 .tooltipContent__22275 {
-    text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    text-overflow: ellipsis
 }
 
 .gameProfileMedia_a1cc72 {
@@ -219,14 +220,14 @@
 }
 
 .gameProfileMediaLarge_a1cc72 .gameArtwork_a1cc72 {
-    min-height: 146px;
-    width: 100%
+    width: 100%;
+    min-height: 146px
 }
 
 .imageScroller_a1cc72 {
-    border-radius: 4px;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    border-radius: 4px
 }
 
 .imageClickable_a1cc72 {
@@ -242,27 +243,28 @@
 }
 
 .gameArtwork_a1cc72 {
-    background-color: var(--bg-base-secondary);
     border-radius: 4px;
+    background-color: var(--bg-base-secondary);
+    -o-object-fit: cover;
     object-fit: cover
 }
 
 .mediaOverlay_a1cc72 {
-    align-items: center;
-    border-radius: 4px;
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
     left: 0;
+    border-radius: 4px;
     overflow: hidden;
-    padding: 0 16px;
     pointer-events: none;
-    width: 100%
+    padding: 0 16px
 }
 
 .gradient_a1cc72,.mediaOverlay_a1cc72 {
-    height: 100%;
     position: absolute;
+    height: 100%;
     top: 0
 }
 
@@ -271,13 +273,13 @@
 }
 
 .gradientLeft_a1cc72 {
-    background: linear-gradient(90deg,var(--primary-700) 0,hsl(var(--primary-700-hsl)/0) 100%);
-    left: 0
+    left: 0;
+    background: linear-gradient(90deg,var(--primary-700),hsl(var(--primary-700-hsl)/0))
 }
 
 .gradientRight_a1cc72 {
-    background: linear-gradient(270deg,var(--primary-700) 0,hsl(var(--primary-700-hsl)/0) 100%);
-    right: 0
+    right: 0;
+    background: linear-gradient(270deg,var(--primary-700),hsl(var(--primary-700-hsl)/0))
 }
 
 .arrowClickable_a1cc72 {
@@ -286,11 +288,11 @@
 }
 
 .arrow_a1cc72 {
-    background-color: var(--black);
-    border-radius: 50%;
     color: var(--white);
-    opacity: .8;
+    background-color: var(--black);
     padding: 8px;
+    border-radius: 50%;
+    opacity: .8;
     transition: opacity .2s ease
 }
 
@@ -299,14 +301,14 @@
 }
 
 .profileEntryCard__655fa {
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border-faint);
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    justify-content: space-between;
-    padding: 8px
+    gap: 10px
 }
 
 .profileEntryCard__655fa:last-child {
@@ -318,15 +320,15 @@
 }
 
 .avatar__655fa {
-    border-radius: 20px;
-    cursor: pointer;
     height: 40px;
-    width: 40px
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer
 }
 
 .playerInfo__655fa {
-    flex-grow: 1;
-    gap: 8px
+    gap: 8px;
+    flex-grow: 1
 }
 
 .reactions__655fa {
@@ -335,8 +337,8 @@
 }
 
 .friends_b37a75 {
-    background-color: var(--bg-base-secondary);
     border-radius: 8px;
+    background-color: var(--bg-base-secondary);
     overflow: hidden
 }
 
@@ -346,15 +348,15 @@
 }
 
 .fadedEntries_b37a75 {
+    overflow-y: hidden;
     -webkit-mask-image: linear-gradient(0deg,transparent 0,#000 50px);
-    mask-image: linear-gradient(0deg,transparent 0,#000 50px);
-    overflow-y: hidden
+    mask-image: linear-gradient(0deg,transparent 0,#000 50px)
 }
 
 .expandEntriesButton_b37a75 {
+    display: flex;
     align-items: center;
     cursor: pointer;
-    display: flex;
     margin: 16px auto 0
 }
 
@@ -363,15 +365,16 @@
 }
 
 .guildIcon__29497 {
-    border-radius: 4px;
+    width: 32px;
     height: 32px;
-    width: 32px
+    border-radius: 4px
 }
 
 .similarGames_a02225 {
     display: grid;
-    gap: var(--custom-spacing);
-    grid-template-columns: repeat(5,1fr)
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: var(--custom-spacing);
+    gap: var(--custom-spacing)
 }
 
 .similarGameImageWrapper_a02225 {
@@ -383,9 +386,9 @@
 }
 
 .similarGameImage_a02225 {
-    border-radius: 4px;
     height: 100%;
-    width: 100%
+    width: 100%;
+    border-radius: 4px
 }
 
 .loadingArtwork_a02225 {
@@ -396,12 +399,12 @@
 .loadingHeading_a02225 {
     background-color: var(--bg-mod-strong);
     border-radius: 8px;
-    height: 16px;
-    width: 136px
+    width: 136px;
+    height: 16px
 }
 
 .platforms__93ebb {
     margin-top: 8px
 }
 
-/*# sourceMappingURL=45dc00b4f84723c8.css.map*/
+/*# sourceMappingURL=0c2191da969c1605.css.map*/

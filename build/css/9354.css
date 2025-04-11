@@ -1,27 +1,27 @@
 /**
   Module ID: 9354
-  Original File Name: f53012040d2c5716
+  Original File Name: 4f9113d9ab39fddf
 **/
 .mainCheckboxContainer__16db0 {
-    align-items: stretch;
     display: flex;
+    align-items: stretch;
     flex: 1;
     flex-direction: column;
     gap: 8px;
-    margin-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .checkboxContainer__16db0 {
-    align-items: center;
-    background-color: var(--background-secondary);
-    border-radius: 4px;
-    cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-direction: row;
     gap: 8px;
-    justify-content: flex-start;
-    padding: 8px
+    padding: 8px;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    cursor: pointer
 }
 
 .checkboxContainer__16db0:hover {
@@ -32,4 +32,4 @@
     flex-grow: 0
 }
 
-/*# sourceMappingURL=f53012040d2c5716.css.map*/
+/*# sourceMappingURL=4f9113d9ab39fddf.css.map*/

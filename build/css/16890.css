@@ -1,6 +1,6 @@
 /**
   Module ID: 16890
-  Original File Name: 33c0d206a6a43095
+  Original File Name: 280c5418f9e4fc99
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -17,15 +17,14 @@
 }
 
 .newBadge_f4adbd {
-    margin-bottom: var(--spacing-4);
-    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content
+    width: fit-content;
+    margin-bottom: var(--spacing-4)
 }
 
 .nitroWheel_f4adbd {
-    margin-left: var(--spacing-4);
-    margin-top: 1px
+    margin-top: 1px;
+    margin-left: var(--spacing-4)
 }
 
 .tooltip_f4adbd {
@@ -33,22 +32,22 @@
 }
 
 .labelContainer_f4adbd {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between
 }
 
 .playButton_f4adbd {
-    height: 20px;
-    width: 20px
+    width: 20px;
+    height: 20px
 }
 
 .mutedLabel_f4adbd {
-    color: currentColor;
+    width: 180px;
     overflow: auto;
-    white-space: normal;
-    width: 180px
+    color: currentColor;
+    white-space: normal
 }
 
 .widthForAddPack__5b977 {
@@ -61,12 +60,12 @@
 }
 
 .betaTag__5b977 {
-    align-items: center;
-    border-radius: 10px;
     color: var(--premium-tier-2-pink-for-gradients-2);
-    display: inline-flex;
     height: 20px;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
+    border-radius: 10px;
     margin-left: 10px
 }
 
@@ -81,8 +80,8 @@
 }
 
 .inventoryLeaveServerDescription__5b977 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .maxPacksNoticeText__5b977 {
@@ -90,17 +89,17 @@
 }
 
 .labelWrapper_abe771 {
-    align-items: center;
+    display: flex;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    display: flex;
+    row-gap: 4px;
     flex-wrap: wrap;
-    row-gap: 4px
+    align-items: center
 }
 
 .label_abe771 {
-    overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge_abe771 {
@@ -117,8 +116,8 @@
 }
 
 .inviteGuestContainer_abe771 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .row__5fe04 {
@@ -126,8 +125,8 @@
 }
 
 .clickable__5fe04 {
-    color: var(--interactive-normal);
-    cursor: pointer
+    cursor: pointer;
+    color: var(--interactive-normal)
 }
 
 .clickable__5fe04:hover {
@@ -139,23 +138,22 @@
 }
 
 .headerCellContent__5fe04 {
-    align-items: center;
     display: flex;
+    align-items: center;
     min-height: 18px
 }
 
 .stickyHeader__5fe04 {
-    left: 0;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
+    left: 0;
     z-index: 2
 }
 
 .sortIcon__5fe04 {
+    width: 18px;
     height: 18px;
-    margin-left: 4px;
-    width: 18px
+    margin-left: 4px
 }
 
 .headerCellSorted__5fe04 {
@@ -170,8 +168,9 @@
 
 .container__83c7c {
     display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    gap: 10px
 }
 
 .header__83c7c {
@@ -187,12 +186,12 @@
 }
 
 .check__83c7c,.cross__83c7c {
-    flex-shrink: 0;
-    margin-right: 8px
+    margin-right: 8px;
+    flex-shrink: 0
 }
 
 .cross__83c7c {
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=33c0d206a6a43095.css.map*/
+/*# sourceMappingURL=280c5418f9e4fc99.css.map*/

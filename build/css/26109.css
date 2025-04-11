@@ -1,12 +1,12 @@
 /**
   Module ID: 26109
-  Original File Name: e626822a99411067
+  Original File Name: d881db30816fb5f2
 **/
 .root_ccf174 {
-    border-radius: var(--custom-app-launcher-container-border-radius);
-    display: flex;
+    width: var(--custom-app-launcher-width);
     height: var(--custom-app-launcher-height);
-    width: var(--custom-app-launcher-width)
+    display: flex;
+    border-radius: var(--custom-app-launcher-container-border-radius)
 }
 
-/*# sourceMappingURL=e626822a99411067.css.map*/
+/*# sourceMappingURL=d881db30816fb5f2.css.map*/

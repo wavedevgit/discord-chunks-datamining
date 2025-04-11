@@ -1,12 +1,12 @@
 /**
   Module ID: 9558
-  Original File Name: 64828e4786897e78
+  Original File Name: 42bdf83753c69963
 **/
 .container_fa0751 {
+    padding: 40px 28px 24px 24px;
     background-color: var(--background-secondary);
     display: flex;
     flex-direction: column;
-    padding: 40px 28px 24px 24px;
     width: 279px
 }
 
@@ -16,17 +16,17 @@
 }
 
 .listingInfoRow_fa0751 {
-    align-items: start;
     display: flex;
     flex-direction: row;
+    align-items: start;
     gap: 16px;
     margin-bottom: 16px
 }
 
 .avatar_fa0751 {
-    border-radius: 2px;
+    width: 44px;
     height: 44px;
-    width: 44px
+    border-radius: 2px
 }
 
 .tierName_fa0751 {
@@ -34,37 +34,37 @@
 }
 
 .listingRoleRow_fa0751 {
-    align-items: center;
-    border: 1px solid var(--interactive-active);
-    border-radius: 4px;
     display: inline-flex;
     flex-direction: row;
-    padding: 4px
+    align-items: center;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--interactive-active)
 }
 
 .roleColor_fa0751 {
-    border-radius: 50%;
+    width: 12px;
     height: 12px;
-    width: 12px
+    border-radius: 50%
 }
 
 .roleIcon_fa0751 {
-    border-radius: 2px;
+    width: 16px;
     height: 16px;
+    border-radius: 2px;
     margin-left: 8px;
-    margin-right: 4px;
-    width: 16px
+    margin-right: 4px
 }
 
 .tierDescription_fa0751 {
-    color: var(--text-muted);
-    margin-top: 16px
+    margin-top: 16px;
+    color: var(--text-muted)
 }
 
 .divider_fa0751 {
     border-bottom: 1px solid var(--background-modifier-accent);
-    margin-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 16px
 }
 
 .perksHeader_fa0751 {
@@ -72,29 +72,29 @@
 }
 
 .benefitTypeHeader_fa0751 {
-    color: var(--text-muted);
+    padding-top: 12px;
     padding-bottom: 14px;
-    padding-top: 12px
+    color: var(--text-muted)
 }
 
 .channelBenefitRow_fa0751 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-bottom: 12px;
     padding-left: 8px
 }
 
 .channelBenefitIcon_fa0751 {
-    color: var(--interactive-normal);
+    width: 16px;
     height: 16px;
-    width: 16px
+    color: var(--interactive-normal)
 }
 
 .channelBenefitText_fa0751 {
-    flex: 1;
     margin-left: 14px;
-    margin-right: 6px
+    margin-right: 6px;
+    flex: 1
 }
 
 .channelBenefitTagline_fa0751 {
@@ -102,27 +102,27 @@
 }
 
 .intangibleBenefitRow_fa0751 {
-    align-items: center;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-bottom: 12px;
     padding-left: 8px
 }
 
 .intangibleBenefitIcon_fa0751 {
-    background-color: var(--background-modifier-selected);
-    border-radius: 50%;
+    width: 12px;
     height: 12px;
     margin-right: 14px;
-    width: 12px
+    border-radius: 50%;
+    background-color: var(--background-modifier-selected)
 }
 
 .container_afa88e {
+    padding: 40px 28px 24px 24px;
     background-color: var(--background-secondary);
     display: flex;
     flex-direction: column;
-    max-width: 279px;
-    padding: 40px 28px 24px 24px
+    max-width: 279px
 }
 
 .content_afa88e {
@@ -130,21 +130,21 @@
 }
 
 .bodyText_afa88e {
-    color: var(--text-muted);
+    margin-top: 12px;
     margin-bottom: 24px;
-    margin-top: 12px
+    color: var(--text-muted)
 }
 
 .priceRow_afa88e {
-    align-items: center;
-    border: 1px solid var(--interactive-muted);
-    border-radius: 8px;
     display: flex;
     flex-direction: row;
     height: 40px;
-    margin-bottom: 12px;
+    align-items: center;
     padding-left: 14px;
-    padding-right: 14px
+    padding-right: 14px;
+    border-radius: 8px;
+    border: 1px solid var(--interactive-muted);
+    margin-bottom: 12px
 }
 
 .selected_afa88e {
@@ -166,20 +166,20 @@
 }
 
 .closeButton__6f8c0 {
-    color: var(--interactive-normal);
-    cursor: pointer;
     position: absolute;
-    right: 24px;
     top: 24px;
-    z-index: 1
+    right: 24px;
+    color: var(--interactive-normal);
+    z-index: 1;
+    cursor: pointer
 }
 
 .modalContent__6f8c0 {
-    background-color: var(--background-primary);
-    border-radius: 12px;
     display: flex;
     flex-direction: row;
-    padding: 0
+    background-color: var(--background-primary);
+    padding: 0;
+    border-radius: 12px
 }
 
 .no-webkit-scrollbar .modalContent__6f8c0 {
@@ -187,29 +187,29 @@
 }
 
 .modalContent__6f8c0::-webkit-scrollbar {
-    height: 0;
-    width: 0
+    width: 0;
+    height: 0
 }
 
 .templatesContainer__6f8c0 {
-    align-items: start;
     display: flex;
     flex-direction: column;
-    max-width: 508px;
+    align-items: start;
     padding: 40px 124px 24px 40px;
+    max-width: 508px;
     position: relative
 }
 
 .templatesContainerBody__6f8c0 {
-    flex-grow: 1;
-    flex-shrink: 1;
+    margin-bottom: 24px;
     height: 640px;
-    margin-bottom: 24px
+    flex-shrink: 1;
+    flex-grow: 1
 }
 
 .templatesContentContainer__6f8c0 {
-    align-self: stretch;
     justify-content: center;
+    align-self: stretch;
     padding-top: 24px
 }
 
@@ -218,30 +218,31 @@
 }
 
 .creatorPortalText__6f8c0,.modalBodyText__6f8c0 {
-    color: var(--header-secondary);
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    color: var(--header-secondary)
 }
 
 .templateCardList__6f8c0 {
     display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 24px;
+    gap: 24px
 }
 
 .templateCard__6f8c0 {
     border-radius: 8px;
-    line-height: 0px;
-    overflow: hidden
+    overflow: hidden;
+    line-height: 0
 }
 
 .templateNameRow__6f8c0 {
-    align-items: center;
-    background-color: var(--background-secondary);
+    padding: 14px 16px;
     display: flex;
     flex-direction: row;
-    height: 24px;
     justify-content: space-between;
-    padding: 14px 16px
+    align-items: center;
+    background-color: var(--background-secondary);
+    height: 24px
 }
 
 .unselectedTemplateName__6f8c0 {
@@ -253,13 +254,13 @@
 }
 
 .createFromStratchButton__6f8c0 {
-    border-radius: 4px;
-    margin-top: 16px
+    margin-top: 16px;
+    border-radius: 4px
 }
 
 .createFromStratchButtonInner__6f8c0 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .editIcon__6f8c0 {
@@ -268,12 +269,12 @@
 
 .blackoutOverlay__6f8c0 {
     background-color: var(--opacity-black-80);
-    bottom: 0;
-    left: 0;
     position: absolute;
-    right: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
     z-index: 100
 }
 
-/*# sourceMappingURL=64828e4786897e78.css.map*/
+/*# sourceMappingURL=42bdf83753c69963.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: 1815e2669192eb2a
+  Original File Name: cb24da9b09554431
 **/
 .container__05cdc {
     display: flex
@@ -23,21 +23,22 @@
 
 .grid__28d93 {
     display: grid;
-    gap: 8px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 8px;
+    gap: 8px
 }
 
 .speakerContainer__28d93 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .avatar__28d93 {
     height: 20px!important;
-    margin-right: 8px;
-    width: 20px!important
+    width: 20px!important;
+    margin-right: 8px
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
@@ -45,14 +46,14 @@
 }
 
 .iconMicrophone__28d93 {
-    align-items: center;
-    border-radius: 50%;
-    color: var(--header-secondary);
-    display: flex;
     height: 20px;
-    justify-content: center;
+    width: 20px;
     margin-right: 8px;
-    width: 20px
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-secondary);
+    border-radius: 50%
 }
 
 .textInGridContainer__28d93 {
@@ -73,17 +74,17 @@
 }
 
 .container_e74d28 {
-    align-items: center;
-    background-color: var(--background-tertiary);
-    border-radius: 12px;
+    padding: 4px 8px;
     display: flex;
     flex-direction: row;
-    padding: 4px 8px
+    align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 12px
 }
 
 .icon_e74d28 {
-    color: var(--header-primary);
-    margin-right: 4px
+    margin-right: 4px;
+    color: var(--header-primary)
 }
 
 .contentContainer_e4e1bb {
@@ -96,8 +97,8 @@
 }
 
 .guildIcon_e4e1bb {
-    border-radius: 4px;
-    margin-right: 8px
+    margin-right: 8px;
+    border-radius: 4px
 }
 
 .flexContainerRow_e4e1bb {
@@ -124,9 +125,9 @@
 }
 
 .description_e4e1bb,.guildName_e4e1bb,.topicText_e4e1bb {
-    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
     -webkit-box-orient: vertical
 }
 
@@ -136,18 +137,19 @@
 }
 
 .guildName_e4e1bb:not(.disabled_e4e1bb):hover {
-    color: var(--header-primary);
-    text-decoration: underline
+    -webkit-text-decoration: underline;
+    text-decoration: underline;
+    color: var(--header-primary)
 }
 
 .featuredTag_e4e1bb {
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     background-color: var(--brand-500);
     border-radius: 12px;
-    display: flex;
-    flex-direction: row;
-    margin-right: 12px;
-    padding: 4px 8px
+    margin-right: 12px
 }
 
 .featuredTagText_e4e1bb {
@@ -155,13 +157,13 @@
 }
 
 .rightJustifiedContent_e4e1bb {
-    flex-direction: row;
-    margin-left: auto
+    margin-left: auto;
+    flex-direction: row
 }
 
 .footer_e4e1bb,.rightJustifiedContent_e4e1bb {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .icon_e4e1bb {
@@ -170,15 +172,15 @@
 }
 
 .divider_e4e1bb {
+    height: 1px;
     background-color: var(--background-modifier-accent);
     border: none;
-    height: 1px;
     margin: 16px -16px 12px
 }
 
 .container__68bd0 {
-    padding-bottom: 24px;
-    padding-top: 24px
+    padding-top: 24px;
+    padding-bottom: 24px
 }
 
 .header__68bd0 {
@@ -198,12 +200,12 @@
 }
 
 .listItemContainer__68bd0 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+    margin-top: 24px;
     margin-left: 16px;
     margin-right: 16px;
-    margin-top: 24px
+    display: flex;
+    flex-direction: row;
+    align-items: center
 }
 
 .listItemIconContainer__68bd0 {
@@ -215,11 +217,11 @@
 }
 
 .iconContainer__68bd0 {
-    background-color: var(--background-tertiary);
-    border-radius: 50%;
-    color: var(--interactive-normal);
+    padding: 8px;
     display: flex;
-    padding: 8px
+    background-color: var(--background-tertiary);
+    color: var(--interactive-normal);
+    border-radius: 50%
 }
 
 .badgeIconBackground__68bd0 {
@@ -231,22 +233,22 @@
 }
 
 .previewCardContainer__68bd0 {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
     padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 16px
+    padding-right: 16px
 }
 
 .previewCard__68bd0 {
     background-color: var(--background-floating);
-    border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px;
-    box-sizing: border-box;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
     z-index: 3
 }
 
@@ -255,25 +257,25 @@
 }
 
 .notificationContent__74570 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .tooltipIcon__74570 {
-    color: var(--interactive-active);
-    margin-left: 4px
+    margin-left: 4px;
+    color: var(--interactive-active)
 }
 
 .pill__74570 {
-    background-color: var(--brand-500);
-    border-radius: 4px;
-    color: var(--white-500);
-    display: flex;
-    font-weight: 600;
-    margin-left: 8px;
     padding: 2px 4px;
-    text-transform: uppercase
+    margin-left: 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--brand-500);
+    color: var(--white-500);
+    display: flex
 }
 
 .tooltip__74570 {
@@ -289,8 +291,8 @@
 .doubleInput__6dc4b {
     display: flex;
     flex-direction: row;
-    margin-bottom: 16px;
-    position: relative
+    position: relative;
+    margin-bottom: 16px
 }
 
 .doubleInput__6dc4b>div {
@@ -308,12 +310,12 @@
 
 .link__6dc4b {
     align-items: center;
-    color: var(--interactive-active);
+    justify-content: center;
     display: flex;
+    transition: opacity .2s;
     font-size: 16px;
     font-weight: 400;
-    justify-content: center;
-    transition: opacity .2s
+    color: var(--interactive-active)
 }
 
 .link__6dc4b:hover {
@@ -321,21 +323,21 @@
 }
 
 .addIcon__6dc4b {
-    color: var(--brand-500);
-    margin-right: 8px
+    margin-right: 8px;
+    color: var(--brand-500)
 }
 
 .removeIcon__6dc4b {
-    color: var(--status-danger);
-    margin-right: 8px
+    margin-right: 8px;
+    color: var(--status-danger)
 }
 
 .container__26abc {
     background-color: var(--background-floating);
+    padding: 8px;
     border-radius: 4px;
     box-shadow: var(--elevation-high);
-    max-height: 300px;
-    padding: 8px
+    max-height: 300px
 }
 
 .user__26abc {
@@ -344,8 +346,8 @@
 }
 
 .user__26abc,.username__26abc {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .username__26abc {
@@ -358,31 +360,31 @@
 }
 
 .blockedNotice__26abc {
+    display: flex;
     align-content: center;
     align-items: center;
-    display: flex;
     margin-bottom: 24px
 }
 
 .blockedButton__26abc {
-    color: var(--text-link);
-    cursor: pointer;
     font-size: 12px;
+    margin-left: 4px;
     font-weight: 600;
-    margin-left: 4px
+    color: var(--text-link);
+    cursor: pointer
 }
 
 .icon__26abc {
     background-clip: padding-box;
-    background-color: var(--background-accent);
     border-radius: 50%;
-    color: var(--white-500);
-    height: 12px;
     padding: 2px;
+    background-color: var(--background-accent);
+    color: var(--white-500);
+    width: 12px;
+    height: 12px;
     position: absolute;
     right: -2px;
-    top: 0;
-    width: 12px
+    top: 0
 }
 
 .userInfo__26abc {
@@ -404,13 +406,13 @@
 }
 
 .formItem__327b5 {
-    margin-top: 24px;
-    width: 100%
+    width: 100%;
+    margin-top: 24px
 }
 
 .topicFormItem__327b5 {
-    margin-bottom: 16px;
-    width: 100%
+    width: 100%;
+    margin-bottom: 16px
 }
 
 .channelSelectionFormItem__327b5 {
@@ -428,10 +430,10 @@
 }
 
 .buttonsContainer__327b5 {
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%
+    justify-content: center
 }
 
 .speakerHint__327b5 {
@@ -439,8 +441,8 @@
 }
 
 .itemIcon__327b5 {
-    color: var(--interactive-normal);
-    flex-shrink: 0
+    flex-shrink: 0;
+    color: var(--interactive-normal)
 }
 
 .channelName__327b5 {
@@ -453,9 +455,9 @@
 }
 
 .label__327b5 {
-    font-weight: 700;
     margin: 24px 0 8px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: 700
 }
 
 .warning__327b5 {
@@ -467,25 +469,25 @@
 }
 
 .notificationContent__327b5 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .tooltipIcon__327b5 {
-    color: var(--interactive-active);
-    margin-left: 4px
+    margin-left: 4px;
+    color: var(--interactive-active)
 }
 
 .pill__327b5 {
-    background-color: var(--brand-500);
-    border-radius: 4px;
-    color: var(--white-500);
-    display: flex;
-    font-weight: 600;
-    margin-left: 8px;
     padding: 2px 4px;
-    text-transform: uppercase
+    margin-left: 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--brand-500);
+    color: var(--white-500);
+    display: flex
 }
 
 .content__4c084 {
@@ -493,16 +495,16 @@
 }
 
 .content__4c084,.stageIconBackground__4c084 {
-    align-items: center;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .stageIconBackground__4c084 {
+    justify-content: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
     height: 60px;
-    justify-content: center;
     width: 60px
 }
 
@@ -527,7 +529,7 @@
 .slideContainer__4c084 {
     display: flex;
     flex-direction: column;
-    max-height: clamp(200px,calc(100vh - 80px),660px)
+    max-height: max(200px, min(calc(100vh - 80px), 660px))
 }
 
-/*# sourceMappingURL=1815e2669192eb2a.css.map*/
+/*# sourceMappingURL=cb24da9b09554431.css.map*/

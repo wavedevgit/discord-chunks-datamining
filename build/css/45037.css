@@ -1,6 +1,6 @@
 /**
   Module ID: 45037
-  Original File Name: 6c8926ed32366f95
+  Original File Name: 30fd0061a14cd580
 **/
 .searchBar__3e00d {
     background-color: var(--background-secondary);
@@ -21,8 +21,8 @@
 }
 
 .alignCenter__01dab,.headerSubtitle__01dab {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .headerSubtitleIcon__01dab {
@@ -30,11 +30,11 @@
 }
 
 .content__01dab {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    height: 100%;
-    overflow: hidden
+    height: 100%
 }
 
 .searchBox__01dab {
@@ -46,11 +46,11 @@
 }
 
 .addMemberRow__01dab {
-    border-radius: 4px;
-    cursor: pointer;
     margin-left: 12px;
     margin-right: 4px;
-    padding: 8px 6px
+    padding: 8px 6px;
+    border-radius: 4px;
+    cursor: pointer
 }
 
 .addMemberRow__01dab.selectedRow__01dab {
@@ -58,8 +58,8 @@
 }
 
 .rowBody__01dab {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .checkboxLabel__01dab {
@@ -76,23 +76,23 @@
 }
 
 .rowLabelSubText__01dab {
-    flex: 1;
     margin-left: 4px;
+    flex: 1;
+    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap
+    text-overflow: ellipsis
 }
 
 .sectionTitle__01dab {
     color: var(--text-normal);
-    padding-left: 16px;
-    padding-top: 8px
+    padding-top: 8px;
+    padding-left: 16px
 }
 
 .noResultIcon__01dab {
-    height: 85px;
     margin-bottom: 16px;
-    width: 85px
+    width: 85px;
+    height: 85px
 }
 
 .description__01dab {
@@ -109,8 +109,8 @@
 }
 
 .visual-refresh .roleMemberList__01dab,.visual-refresh .searchBox__01dab {
-    padding-left: var(--modal-horizontal-padding);
-    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8))
+    padding-right: calc(var(--modal-horizontal-padding) - var(--space-8));
+    padding-left: var(--modal-horizontal-padding)
 }
 
 .visual-refresh .addMemberRow__01dab {
@@ -118,13 +118,13 @@
 }
 
 .visual-refresh .scrollSeparator__01dab {
-    border-bottom: 1px solid var(--border-subtle);
-    box-shadow: none
+    box-shadow: none;
+    border-bottom: 1px solid var(--border-subtle)
 }
 
 .header__38262 {
-    padding-bottom: 24px;
     padding-top: 32px;
+    padding-bottom: 24px;
     text-align: center
 }
 
@@ -133,8 +133,8 @@
 }
 
 .roleContainer__38262 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .roleName__38262 {
@@ -158,12 +158,12 @@
 }
 
 .rowContainer__38262 {
-    align-items: center;
-    display: flex;
-    height: 32px;
-    margin-bottom: 8px;
     margin-left: 16px;
-    margin-right: 16px
+    margin-right: 16px;
+    margin-bottom: 8px;
+    height: 32px;
+    display: flex;
+    align-items: center
 }
 
 .checkBox__38262 {
@@ -177,18 +177,18 @@
 }
 
 .footer__38262 {
-    align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .buttonsRight__38262 {
-    align-items: center;
     display: flex;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+    align-items: center
 }
 
 .backButton__38262 {
     padding-left: 0
 }
 
-/*# sourceMappingURL=6c8926ed32366f95.css.map*/
+/*# sourceMappingURL=30fd0061a14cd580.css.map*/

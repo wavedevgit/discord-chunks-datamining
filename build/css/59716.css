@@ -1,17 +1,17 @@
 /**
   Module ID: 59716
-  Original File Name: 703f465330987a30
+  Original File Name: 4f8c2f01757fec15
 **/
 .header__8f3be {
-    gap: var(--spacing-16);
-    text-align: center
+    text-align: center;
+    gap: var(--spacing-16)
 }
 
 .header__8f3be,.heading__8f3be {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    align-items: center
 }
 
 .heading__8f3be {
@@ -19,27 +19,27 @@
 }
 
 .footer__8f3be {
-    align-items: center;
     display: flex;
-    gap: var(--spacing-8);
-    justify-content: center
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-8)
 }
 
 .notice__8f3be {
-    background-color: var(--background-secondary);
-    border-radius: var(--radius-sm);
-    box-shadow: var(--elevation-low);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
-    padding: var(--spacing-24)
+    padding: var(--spacing-24);
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary);
+    box-shadow: var(--elevation-low)
 }
 
 .error__8f3be {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
     border-top-left-radius: var(--radius-xs);
-    border-top-right-radius: var(--radius-xs)
+    border-top-right-radius: var(--radius-xs);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0
 }
 
 .visual-refresh .notice__8f3be {
@@ -60,9 +60,9 @@ html:not(.visual-refresh) .header__8f3be {
 }
 
 html:not(.visual-refresh) .content__8f3be {
-    margin-bottom: var(--spacing-24);
     padding-left: var(--spacing-24);
-    padding-right: var(--spacing-24)
+    padding-right: var(--spacing-24);
+    margin-bottom: var(--spacing-24)
 }
 
 .root__59ad9 {
@@ -78,4 +78,4 @@ html:not(.visual-refresh) .content__8f3be {
     transform: rotate(45deg)
 }
 
-/*# sourceMappingURL=703f465330987a30.css.map*/
+/*# sourceMappingURL=4f8c2f01757fec15.css.map*/

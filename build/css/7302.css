@@ -1,16 +1,16 @@
 /**
   Module ID: 7302
-  Original File Name: 9af1aa1eeb4a9621
+  Original File Name: 1a307d623ff3ed90
 **/
 .header__89b2b {
-    align-items: flex-start;
+    padding: 24px 16px;
     flex-direction: column;
-    padding: 24px 16px
+    align-items: flex-start
 }
 
 .divider__89b2b {
-    border-bottom: 1px solid var(--background-modifier-accent);
-    margin: 0 16px
+    margin: 0 16px;
+    border-bottom: 1px solid var(--background-modifier-accent)
 }
 
 .content__89b2b {
@@ -28,17 +28,17 @@
 }
 
 .demo__89b2b {
-    border-radius: 12px;
-    width: 663px
+    width: 663px;
+    border-radius: 12px
 }
 
 .content__89b2b {
-    display: flex;
-    gap: 24px
+    gap: 24px;
+    display: flex
 }
 
 .description__89b2b {
     margin-right: 24px
 }
 
-/*# sourceMappingURL=9af1aa1eeb4a9621.css.map*/
+/*# sourceMappingURL=1a307d623ff3ed90.css.map*/

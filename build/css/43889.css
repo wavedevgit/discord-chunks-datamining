@@ -1,6 +1,6 @@
 /**
   Module ID: 43889
-  Original File Name: bde304a84ae94fb2
+  Original File Name: d4f89b96733c7cd0
 **/
 .modal__560ae {
     border-radius: var(--radius-xs);
@@ -12,9 +12,9 @@
 }
 
 .breadCrumb__560ae {
-    border-bottom: 1px solid var(--background-modifier-accent);
+    padding-bottom: 16px;
     margin-bottom: 16px;
-    padding-bottom: 16px
+    border-bottom: 1px solid var(--background-modifier-accent)
 }
 
 .selectionBody__560ae {
@@ -36,4 +36,4 @@
     height: 43px
 }
 
-/*# sourceMappingURL=bde304a84ae94fb2.css.map*/
+/*# sourceMappingURL=d4f89b96733c7cd0.css.map*/

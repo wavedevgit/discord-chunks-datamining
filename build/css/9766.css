@@ -1,31 +1,31 @@
 /**
   Module ID: 9766
-  Original File Name: a247ff00a528259c
+  Original File Name: 008c773240f42d50
 **/
 .closeButton_b1292a {
     position: absolute;
-    right: 4px;
-    top: 4px
+    top: 4px;
+    right: 4px
 }
 
 .content_b1292a {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 24px;
-    text-align: center
+    align-items: center;
+    text-align: center;
+    padding: 24px
 }
 
 .image_b1292a {
-    background-repeat: no-repeat;
-    background-size: 100%;
+    width: 120px;
     height: 80px;
-    width: 120px
+    background-repeat: no-repeat;
+    background-size: 100%
 }
 
 .header_b1292a {
-    margin-bottom: 8px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 8px
 }
 
 .images-light .image_b1292a {
@@ -36,4 +36,4 @@
     background-image: url(/assets/b2f5d4d002a97f3a.svg)
 }
 
-/*# sourceMappingURL=a247ff00a528259c.css.map*/
+/*# sourceMappingURL=008c773240f42d50.css.map*/

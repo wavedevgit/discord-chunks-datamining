@@ -1,6 +1,6 @@
 /**
   Module ID: 85449
-  Original File Name: 11df4d6d606fdcef
+  Original File Name: c927a5a14bb8bedd
 **/
 .availabilityIndicator__40463 {
     display: flex;
@@ -9,11 +9,11 @@
 
 .icon__40463 {
     flex: 0 0 auto;
-    height: 14px;
-    margin-right: 3px;
     position: relative;
     top: 1px;
-    width: 14px
+    width: 14px;
+    height: 14px;
+    margin-right: 3px
 }
 
 .lockedIcon__40463 {
@@ -34,8 +34,8 @@
 }
 
 .container__0c185 {
-    background: var(--background-secondary-alt);
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-xs);
+    background: var(--background-secondary-alt)
 }
 
 .placeholderFill__7ffbc {
@@ -53,9 +53,9 @@
 }
 
 .circular__1df30 {
-    border-radius: var(--radius-round);
     display: block;
-    width: 56px
+    width: 56px;
+    border-radius: var(--radius-round)
 }
 
 .recentAvatarContainer__1df30 {
@@ -69,10 +69,11 @@
 }
 
 .recentAvatarSlots__1df30 {
+    position: relative;
     display: grid;
-    gap: var(--spacing-12);
     grid-template-columns: auto auto;
-    position: relative
+    grid-gap: var(--spacing-12);
+    gap: var(--spacing-12)
 }
 
 .recentAvatarSlots__1df30.withPremiumUpsell__1df30 {
@@ -90,19 +91,19 @@
 
 .recentAvatarButton__1df30 {
     position: relative;
-    cursor: pointer;
-    overflow: hidden
+    overflow: hidden;
+    cursor: pointer
 }
 
 .recentAvatarButton__1df30:after {
-    background-color: transparent;
     content: "";
-    height: 100%;
-    left: 0;
     position: absolute;
     top: 0;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    width: 100%
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
 }
 
 .recentAvatarButton__1df30:hover:after {
@@ -119,36 +120,37 @@
 }
 
 .recentAvatar__1df30 {
+    -o-object-fit: cover;
     object-fit: cover
 }
 
 .deleteButton__1df30 {
-    background-color: var(--bg-base-tertiary);
-    color: var(--text-danger);
-    cursor: pointer;
+    width: 28px;
     height: 28px;
-    opacity: 0;
-    right: -6px;
     top: -6px;
+    right: -6px;
+    color: var(--text-danger);
+    background-color: var(--bg-base-tertiary);
+    opacity: 0;
     transition: opacity var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration);
-    width: 28px
+    cursor: pointer
 }
 
 .deleteButton__1df30,.deleteButton__1df30:after {
-    border-radius: var(--radius-round);
-    position: absolute
+    position: absolute;
+    border-radius: var(--radius-round)
 }
 
 .deleteButton__1df30:after {
-    background-color: transparent;
     content: "";
-    height: 100%;
-    left: 0;
     top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
     transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    transition-delay: var(--custom-button-transition-duration);
-    width: 100%
+    transition-delay: var(--custom-button-transition-duration)
 }
 
 .deleteButton__1df30:hover:after {
@@ -164,8 +166,8 @@
 }
 
 .deleteButtonInner__1df30 {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center
 }
 
@@ -191,29 +193,29 @@
 }
 
 .premiumUpsellButton__1df30 {
-    align-items: center;
-    background-color: var(--background-secondary-alt);
-    cursor: pointer;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
-    position: relative
+    background-color: var(--background-secondary-alt);
+    cursor: pointer
 }
 
 .premiumUpsellButton__1df30 :after {
-    background-color: var(--modal-background);
-    border-radius: var(--radius-round);
-    bottom: -4px;
     content: "";
-    height: 24px;
     position: absolute;
     right: -4px;
-    width: 24px
+    bottom: -4px;
+    width: 24px;
+    height: 24px;
+    background-color: var(--modal-background);
+    border-radius: var(--radius-round)
 }
 
 .premiumUpsellLockIcon__1df30 {
-    bottom: 2px;
     position: absolute;
-    right: 2px
+    right: 2px;
+    bottom: 2px
 }
 
 .modal_edf440 {
@@ -221,16 +223,16 @@
 }
 
 .modalHeader_edf440 {
-    justify-content: space-between;
-    padding-bottom: 0
+    padding-bottom: 0;
+    justify-content: space-between
 }
 
 .modalContent_edf440 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-24);
-    padding-bottom: var(--modal-horizontal-padding);
-    padding-top: var(--spacing-8)
+    padding-top: var(--spacing-8);
+    padding-bottom: var(--modal-horizontal-padding)
 }
 
 .modalCloseButton_edf440 {
@@ -246,29 +248,30 @@
 
 .optionsList_edf440 {
     display: grid;
-    gap: var(--spacing-12);
-    grid-template-columns: 1fr 1fr
+    grid-template-columns: 1fr 1fr;
+    grid-gap: var(--spacing-12);
+    gap: var(--spacing-12)
 }
 
 .option_edf440 {
-    align-items: stretch;
+    position: relative;
+    z-index: 1;
     aspect-ratio: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    row-gap: var(--spacing-12);
+    padding: var(--spacing-16);
     background-color: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
     cursor: pointer;
-    display: flex;
-    justify-content: center;
     overflow: hidden;
-    padding: var(--spacing-16);
-    position: relative;
-    row-gap: var(--spacing-12);
-    transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    z-index: 1
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
 }
 
 .optionDescription_edf440 {
-    align-items: center;
     display: grid;
+    align-items: center;
     justify-items: center
 }
 
@@ -283,22 +286,22 @@
 }
 
 .optionIconAndLabel_edf440 {
-    align-items: center;
-    color: var(--interactive-normal);
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: var(--spacing-8);
+    color: var(--interactive-normal);
     transition: color var(--custom-button-transition-duration) ease-in-out
 }
 
 .optionLabelText_edf440 {
-    align-items: center;
-    color: currentColor;
-    -moz-column-gap: var(--spacing-4);
-    column-gap: var(--spacing-4);
     display: flex;
     flex-direction: row;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    -moz-column-gap: var(--spacing-4);
+    column-gap: var(--spacing-4);
+    color: currentColor
 }
 
 .hasPremiumIcon_edf440 {
@@ -306,23 +309,26 @@
 }
 
 .gifGrid_edf440 {
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    left: 0;
     position: absolute;
-    right: 0;
     top: 0;
-    z-index: -1
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr
 }
 
 .gifGrid_edf440:after {
     content: "";
-    inset: 0;
     position: absolute;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    z-index: 1
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
 }
 
 .option_edf440:hover .optionIconAndLabel_edf440 {
@@ -330,15 +336,15 @@
 }
 
 .theme-dark .imageUploadOption_edf440:before {
-    background-color: transparent;
-    bottom: 0;
     content: "";
-    left: 0;
     position: absolute;
-    right: 0;
     top: 0;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    z-index: -1
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: transparent;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out
 }
 
 .theme-dark .gifGrid_edf440:after {
@@ -375,10 +381,10 @@
 }
 
 .boostingPill_edf440 {
-    background-color: var(--bg-surface-overlay);
+    padding: 4px;
     border-radius: var(--radius-round);
-    color: var(--interactive-normal);
-    padding: 4px
+    background-color: var(--bg-surface-overlay);
+    color: var(--interactive-normal)
 }
 
 .imagePickerContainer_edf440 {
@@ -391,8 +397,8 @@
 }
 
 .premiumUpsell_edf440 {
-    border-radius: var(--radius-sm);
-    margin: 0
+    margin: 0;
+    border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=11df4d6d606fdcef.css.map*/
+/*# sourceMappingURL=c927a5a14bb8bedd.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 20114
-  Original File Name: 496a3a69353fc463
+  Original File Name: f3ff5ec5d09798c6
 **/
 .header__1347c {
     padding: 8px 0
@@ -18,9 +18,9 @@
 
 .radioItem__1347c {
     background-color: var(--bg-base-secondary);
-    border-radius: 8px;
+    padding: 0;
     margin: 0;
-    padding: 0
+    border-radius: 8px
 }
 
 .commentContainer__1347c {
@@ -32,8 +32,8 @@
 }
 
 .description__1347c {
-    max-width: 450px;
-    padding-top: 8px
+    padding-top: 8px;
+    max-width: 450px
 }
 
 .root__1347c {
@@ -45,11 +45,11 @@
 }
 
 .buttons__1347c {
+    padding: 24px;
     display: flex;
     flex-direction: row;
     gap: 8px;
-    justify-content: flex-end;
-    padding: 24px
+    justify-content: flex-end
 }
 
 .closeButton__1347c {
@@ -58,4 +58,4 @@
     top: 16px
 }
 
-/*# sourceMappingURL=496a3a69353fc463.css.map*/
+/*# sourceMappingURL=f3ff5ec5d09798c6.css.map*/

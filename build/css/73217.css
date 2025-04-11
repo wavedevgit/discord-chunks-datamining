@@ -1,15 +1,15 @@
 /**
   Module ID: 73217
-  Original File Name: e2f7b904d19c5498
+  Original File Name: 8a37d10f398b2627
 **/
 .gradientSplash__6d426 {
     background: linear-gradient(270deg,#0a212c,#1b3b50);
+    width: 100%;
     height: 96px;
-    -webkit-mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
-    mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
     position: absolute;
     top: 0;
-    width: 100%
+    -webkit-mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px);
+    mask-image: linear-gradient(180deg,#000,#000 10px,transparent 96px)
 }
 
 .theme-light .gradientSplash__6d426 {
@@ -17,9 +17,9 @@
 }
 
 .modalHeader__6d426 {
+    overflow: visible;
     display: flex;
-    flex-direction: column;
-    overflow: visible
+    flex-direction: column
 }
 
 .title__6d426 {
@@ -31,17 +31,17 @@
 }
 
 .heroImage__6d426 {
-    border-radius: var(--radius-sm);
-    height: 48px;
     position: relative;
-    width: 48px
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm)
 }
 
 .guildContainer__6d426 {
-    align-items: center;
     display: flex;
-    gap: 8px;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    gap: 8px
 }
 
 .guildIcon__6d426 {
@@ -49,14 +49,14 @@
 }
 
 .closeButton__6d426 {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .close__6d426 {
     position: absolute;
-    right: 8px;
-    top: 2px
+    top: 2px;
+    right: 8px
 }
 
 .footerButtons__6d426 {
@@ -65,26 +65,26 @@
 }
 
 .footer__6d426 {
-    align-items: center;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .container__6d426 {
-    border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    border-radius: 8px
 }
 
 .subtitleContainer__8dbfd {
-    align-items: center;
     display: flex;
-    gap: 4px;
-    justify-content: center
+    align-items: center;
+    justify-content: center;
+    gap: 4px
 }
 
 .winnerImage__8dbfd {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .modalContent__8dbfd {
@@ -101,8 +101,8 @@
 }
 
 .row__8dbfd {
-    align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center
 }
 
 .notes__8dbfd .divider__8dbfd {
@@ -110,12 +110,12 @@
 }
 
 .doneButton__8dbfd {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .guildOptoutSwitch__8dbfd {
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=e2f7b904d19c5498.css.map*/
+/*# sourceMappingURL=8a37d10f398b2627.css.map*/

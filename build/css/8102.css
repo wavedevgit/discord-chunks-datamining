@@ -1,6 +1,6 @@
 /**
   Module ID: 8102
-  Original File Name: eda4623f21e72636
+  Original File Name: 607228633591b11a
 **/
 .modalHeader__5a555 {
     align-items: center;
@@ -8,18 +8,18 @@
 }
 
 .modalContent__5a555 {
-    padding-bottom: 16px;
-    padding-top: 16px
+    padding-top: 16px;
+    padding-bottom: 16px
 }
 
 .guildSelection__5a555 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .guildSelectorContainer__5a555 {
     flex: 1
 }
 
-/*# sourceMappingURL=eda4623f21e72636.css.map*/
+/*# sourceMappingURL=607228633591b11a.css.map*/

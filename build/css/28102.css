@@ -1,16 +1,16 @@
 /**
   Module ID: 28102
-  Original File Name: 2d93d17191b2d6aa
+  Original File Name: eb65ded6ffd633c9
 **/
 .wrapper__889ee {
     width: auto
 }
 
 .saturation__889ee {
-    cursor: crosshair;
-    height: 150px;
     position: relative;
-    width: auto
+    width: auto;
+    height: 150px;
+    cursor: crosshair
 }
 
 .saturation__889ee>div,.saturation__889ee>div>div {
@@ -22,10 +22,10 @@
 }
 
 .hue__889ee {
-    cursor: crosshair;
     height: 8px;
     margin: 8px 0;
-    position: relative
+    position: relative;
+    cursor: crosshair
 }
 
 .hue__889ee>div>div {
@@ -33,15 +33,15 @@
 }
 
 .hue__889ee>div>div>div>div {
-    border-radius: 3px!important;
-    cursor: ew-resize;
     height: 16px!important;
+    width: 8px!important;
     margin-top: -3px!important;
-    width: 8px!important
+    border-radius: 3px!important;
+    cursor: ew-resize
 }
 
 .enable-forced-colors .wrapper__889ee {
     forced-color-adjust: none
 }
 
-/*# sourceMappingURL=2d93d17191b2d6aa.css.map*/
+/*# sourceMappingURL=eb65ded6ffd633c9.css.map*/

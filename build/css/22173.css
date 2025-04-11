@@ -1,33 +1,33 @@
 /**
   Module ID: 22173
-  Original File Name: c98d5e6c645d7846
+  Original File Name: 21f2cb34ed65d14d
 **/
 .effect_a9ddb3 {
-    bottom: 0;
-    overflow: hidden;
+    position: absolute;
     pointer-events: none;
-    position: absolute
+    bottom: 0;
+    overflow: hidden
 }
 
 .effectsWrapper_a9ddb3 {
-    display: flex;
-    height: 100%;
-    justify-content: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
     z-index: 1
 }
 
 .container_cc2dff {
-    flex: 0 0 auto;
     flex-direction: row;
-    height: 440px;
-    width: 500px
+    flex: 0 0 auto;
+    width: 500px;
+    height: 440px
 }
 
 .scroller_cc2dff {
-    flex: 0 0 auto;
     padding: 8px;
-    width: 90px
+    width: 90px;
+    flex: 0 0 auto
 }
 
 .reactorsContainer_cc2dff {
@@ -41,13 +41,13 @@
 }
 
 .reactionDefault_cc2dff,.reactionSelected_cc2dff {
-    align-items: center;
-    border-radius: 8px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-bottom: 4px;
-    overflow: hidden;
-    padding: 0 4px
+    border-radius: 8px;
+    padding: 0 4px;
+    overflow: hidden
 }
 
 .reactionDefault_cc2dff {
@@ -55,27 +55,28 @@
 }
 
 .emoji_cc2dff {
-    height: 24px;
-    min-height: auto;
-    min-width: auto;
-    object-fit: contain;
     padding: 4px 8px 4px 4px;
+    width: 24px;
+    height: 24px;
+    min-width: auto;
+    min-height: auto;
     vertical-align: middle;
-    width: 24px
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .emojiText_cc2dff {
-    display: inline-block;
-    vertical-align: -3px
+    vertical-align: -3px;
+    display: inline-block
 }
 
 .burstEmojiSection_cc2dff {
-    align-items: center;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 32px 0;
-    position: relative
+    align-items: center;
+    padding: 32px 0
 }
 
 .hideEmoji_cc2dff {
@@ -83,20 +84,21 @@
 }
 
 .burstEmoji_cc2dff {
+    width: 32px;
     height: 32px;
     margin-bottom: 8px;
-    object-fit: contain;
-    width: 32px
+    -o-object-fit: contain;
+    object-fit: contain
 }
 
 .spinner_cc2dff {
-    height: 440px;
-    width: 100%
+    width: 100%;
+    height: 440px
 }
 
 .spinnerMore_cc2dff {
-    height: 44px;
-    width: 100%
+    width: 100%;
+    height: 44px
 }
 
 .reactor_cc2dff {
@@ -104,19 +106,19 @@
     height: 44px;
     margin-left: 10px;
     margin-right: 2px;
-    overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap
+    white-space: nowrap;
+    overflow: hidden
 }
 
 .reactorDefault_cc2dff,.reactorFinal_cc2dff {
 }
 
 .name_cc2dff {
+    text-overflow: ellipsis;
     display: flex;
     flex: 1;
     overflow: hidden;
-    text-overflow: ellipsis;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -131,8 +133,8 @@
 }
 
 .tagFaded_cc2dff {
-    opacity: .6;
-    padding-left: 6px
+    padding-left: 6px;
+    opacity: .6
 }
 
 .discriminator_cc2dff {
@@ -140,13 +142,13 @@
 }
 
 .remove_cc2dff {
-    border-radius: 3px;
-    color: var(--text-muted-on-default);
     cursor: pointer;
     display: none;
     font-size: 16px;
     opacity: .3;
-    padding: 3px
+    padding: 3px;
+    border-radius: 3px;
+    color: var(--text-muted-on-default)
 }
 
 .remove_cc2dff:hover {
@@ -164,8 +166,8 @@
 
 .scroller_cc2dff {
     background: var(--background-secondary);
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
 }
 
 .reactionSelected_cc2dff {
@@ -193,29 +195,29 @@
 }
 
 .reactionSeparator_cc2dff {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
     background-color: var(--interactive-muted);
     border: none;
-    display: inline-block;
-    height: 1px;
-    margin-bottom: 4px;
     margin-top: 4px;
-    width: 100%
+    margin-bottom: 4px
 }
 
 .visual-refresh .container_cc2dff,.visual-refresh .reactors_cc2dff {
-    background-color: var(--modal-background);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    background-color: var(--modal-background)
 }
 
 .visual-refresh .scroller_cc2dff {
     background: var(--background-mod-subtle);
-    border-bottom-left-radius: var(--radius-sm);
-    border-top-left-radius: var(--radius-sm)
+    border-top-left-radius: var(--radius-sm);
+    border-bottom-left-radius: var(--radius-sm)
 }
 
 .visual-refresh .remove_cc2dff {
-    color: var(--icon-secondary);
-    opacity: 1
+    opacity: 1;
+    color: var(--icon-secondary)
 }
 
 .visual-refresh .remove_cc2dff:hover {
@@ -239,8 +241,8 @@
 }
 
 .emojiContainer__0524a {
-    isolation: isolate;
-    position: absolute
+    position: absolute;
+    isolation: isolate
 }
 
 .emoji__0524a {
@@ -248,18 +250,18 @@
 }
 
 .cannon__0524a {
-    height: 100%;
     position: absolute;
-    width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .container__7e919 {
-    align-items: flex-start;
     background-color: var(--background-floating);
     border-radius: 8px;
+    padding: 16px;
     box-shadow: var(--elevation-high),var(--elevation-stroke);
     display: flex;
-    padding: 16px
+    align-items: flex-start
 }
 
 .visual-refresh .container__7e919 {
@@ -272,8 +274,8 @@
 }
 
 .buttonContainer__7e919 {
-    display: flex;
-    margin-top: 16px
+    margin-top: 16px;
+    display: flex
 }
 
 .cancel__7e919 {
@@ -290,14 +292,14 @@
 }
 
 .image__7e919 {
-    height: 64px;
-    width: 64px
+    width: 64px;
+    height: 64px
 }
 
 .artContainer_ade26d {
-    border-radius: 8px;
     box-shadow: none;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,.24));
+    border-radius: 8px;
     overflow: hidden
 }
 
@@ -310,38 +312,38 @@
 }
 
 .reactions_f8896c {
-    align-items: center;
     display: flex;
     flex: 1 0 auto;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: -8px;
     padding-bottom: 4px
 }
 
 .largeReactions_f8896c {
-    padding-bottom: 6px;
-    padding-top: 1px
+    padding-top: 1px;
+    padding-bottom: 6px
 }
 
 .icon_f8896c {
-    height: 16px;
-    width: 16px
+    width: 16px;
+    height: 16px
 }
 
 .largeIcon_f8896c {
-    height: 18px;
-    width: 18px
+    width: 18px;
+    height: 18px
 }
 
 .reactionBtn_f8896c {
-    color: var(--interactive-normal);
-    cursor: pointer;
-    height: 16px;
-    margin-bottom: 2px;
     margin-left: 4px;
     margin-right: 4px;
+    margin-bottom: 2px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
     opacity: 0;
-    width: 16px
+    color: var(--interactive-normal)
 }
 
 .reactionBtn_f8896c:hover .icon_f8896c {
@@ -353,8 +355,8 @@
 }
 
 .largeReactionBtn_f8896c {
-    height: 18px;
-    width: 18px
+    width: 18px;
+    height: 18px
 }
 
 .reactionBtn_f8896c.active_f8896c,.reactionBtn_f8896c.visible_f8896c,.reactions_f8896c:hover .reactionBtn_f8896c {
@@ -362,13 +364,13 @@
 }
 
 .reactionBtn_f8896c.forceShow_f8896c {
+    opacity: 1;
+    padding: 4px 6px;
+    border-radius: 8px;
     background-color: var(--background-secondary);
     border: 1px solid transparent;
-    border-radius: 8px;
-    margin-bottom: 4px;
     margin-left: 0;
-    opacity: 1;
-    padding: 4px 6px
+    margin-bottom: 4px
 }
 
 .reactionBtn_f8896c.forceShow_f8896c:hover {
@@ -385,19 +387,19 @@
 }
 
 .reaction_f8896c {
-    background: var(--background-secondary);
-    border: 1px solid transparent;
     border-radius: 8px;
-    box-sizing: border-box;
     cursor: pointer;
+    box-sizing: border-box;
     flex-shrink: 0;
-    margin-bottom: 4px;
     margin-right: 4px;
-    transition: none .1s ease;
-    transition-property: background-color,border-color;
+    margin-bottom: 4px;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none
+    user-select: none;
+    transition: none .1s ease;
+    transition-property: background-color,border-color;
+    background: var(--background-secondary);
+    border: 1px solid transparent
 }
 
 .full-motion .reaction_f8896c.shakeReaction_f8896c {
@@ -410,22 +412,22 @@
 }
 
 .reaction_f8896c .emoji {
+    width: 16px;
     height: 16px;
     margin: 2px 0;
-    min-height: auto;
     min-width: auto;
-    width: 16px
+    min-height: auto
 }
 
 .reaction_f8896c .reactionLarge {
-    height: 20px;
-    width: 20px
+    width: 20px;
+    height: 20px
 }
 
 .reaction_f8896c .emoji-text {
     color: var(--text-normal);
-    display: inline-block;
-    vertical-align: -2px
+    vertical-align: -2px;
+    display: inline-block
 }
 
 .reaction_f8896c:hover {
@@ -508,18 +510,18 @@
 }
 
 .reactionInner_f8896c {
-    align-items: center;
     display: flex;
+    align-items: center;
     padding: 2px 6px;
     position: relative
 }
 
 .reactionCount_f8896c {
-    color: var(--interactive-normal);
     font-size: 14px;
     font-weight: 600;
     margin-left: 6px;
-    text-align: center
+    text-align: center;
+    color: var(--interactive-normal)
 }
 
 .remainingReactions_f8896c {
@@ -562,21 +564,21 @@
 }
 
 .sparkles_f8896c {
-    height: 32px;
-    left: -8px;
     top: -8px;
-    width: 32px
+    left: -8px;
+    width: 32px;
+    height: 32px
 }
 
 .burstGlow_f8896c {
-    border-radius: 8px;
-    bottom: 0;
-    left: 0;
-    opacity: .35;
     position: absolute;
+    left: 0;
     right: 0;
     top: 0;
-    z-index: -1
+    bottom: 0;
+    border-radius: 8px;
+    z-index: -1;
+    opacity: .35
 }
 
 @keyframes shake_f8896c {
@@ -626,38 +628,38 @@
 }
 
 .reactions__23977 {
-    align-items: center;
     display: flex;
     flex: 1 0 auto;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: -.5rem;
     padding-bottom: .25rem
 }
 
 .largeReactions__23977 {
-    padding-bottom: .375rem;
-    padding-top: .125rem
+    padding-top: .125rem;
+    padding-bottom: .375rem
 }
 
 .icon__23977 {
-    height: 1rem;
-    width: 1rem
+    width: 1rem;
+    height: 1rem
 }
 
 .largeIcon__23977 {
-    height: 1.125rem;
-    width: 1.125rem
+    width: 1.125rem;
+    height: 1.125rem
 }
 
 .reactionBtn__23977 {
-    color: var(--interactive-normal);
-    cursor: pointer;
-    height: 1rem;
-    margin-bottom: .125rem;
     margin-left: .25rem;
     margin-right: .25rem;
+    margin-bottom: .125rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
     opacity: 0;
-    width: 1rem
+    color: var(--interactive-normal)
 }
 
 .reactionBtn__23977:hover .icon__23977 {
@@ -669,8 +671,8 @@
 }
 
 .largeReactionBtn__23977 {
-    height: 1.125rem;
-    width: 1.125rem
+    width: 1.125rem;
+    height: 1.125rem
 }
 
 .reactionBtn__23977.active__23977,.reactionBtn__23977.visible__23977,.reactions__23977:hover .reactionBtn__23977 {
@@ -678,13 +680,13 @@
 }
 
 .reactionBtn__23977.forceShow__23977 {
+    opacity: 1;
+    padding: .25rem .375rem;
+    border-radius: .5rem;
     background-color: var(--background-secondary);
     border: .0625rem solid transparent;
-    border-radius: .5rem;
-    margin-bottom: .25rem;
     margin-left: 0;
-    opacity: 1;
-    padding: .25rem .375rem
+    margin-bottom: .25rem
 }
 
 .reactionBtn__23977.forceShow__23977:hover {
@@ -701,19 +703,19 @@
 }
 
 .reaction__23977 {
-    background: var(--background-secondary);
-    border: .0625rem solid transparent;
     border-radius: .5rem;
-    box-sizing: border-box;
     cursor: pointer;
+    box-sizing: border-box;
     flex-shrink: 0;
-    margin-bottom: .25rem;
     margin-right: .25rem;
-    transition: none .1s ease;
-    transition-property: background-color,border-color;
+    margin-bottom: .25rem;
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none
+    user-select: none;
+    transition: none .1s ease;
+    transition-property: background-color,border-color;
+    background: var(--background-secondary);
+    border: .0625rem solid transparent
 }
 
 .full-motion .reaction__23977.shakeReaction__23977 {
@@ -726,22 +728,22 @@
 }
 
 .reaction__23977 .emoji {
+    width: 1rem;
     height: 1rem;
     margin: .125rem 0;
-    min-height: auto;
     min-width: auto;
-    width: 1rem
+    min-height: auto
 }
 
 .reaction__23977 .reactionLarge {
-    height: 1.25rem;
-    width: 1.25rem
+    width: 1.25rem;
+    height: 1.25rem
 }
 
 .reaction__23977 .emoji-text {
     color: var(--text-normal);
-    display: inline-block;
-    vertical-align: -.125rem
+    vertical-align: -.125rem;
+    display: inline-block
 }
 
 .reaction__23977:hover {
@@ -781,17 +783,17 @@
 }
 
 .reactionInner__23977 {
-    align-items: center;
     display: flex;
+    align-items: center;
     padding: .125rem .375rem;
     position: relative
 }
 
 .reactionCount__23977 {
-    color: var(--interactive-normal);
     font-weight: 600;
     margin-left: .375rem;
-    text-align: center
+    text-align: center;
+    color: var(--interactive-normal)
 }
 
 .remainingReactions__23977 {
@@ -877,21 +879,21 @@
 }
 
 .sparkles__23977 {
-    height: 2rem;
-    left: -.5rem;
     top: -.5rem;
-    width: 2rem
+    left: -.5rem;
+    width: 2rem;
+    height: 2rem
 }
 
 .burstGlow__23977 {
-    border-radius: .5rem;
-    bottom: 0;
-    left: 0;
-    opacity: .35;
     position: absolute;
+    left: 0;
     right: 0;
     top: 0;
-    z-index: -1
+    bottom: 0;
+    border-radius: .5rem;
+    z-index: -1;
+    opacity: .35
 }
 
 @keyframes shake__23977 {
@@ -959,10 +961,10 @@
 }
 
 .effects__263e4 {
-    bottom: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute
+    bottom: 0
 }
 
 .effect_e5f2cb {
@@ -970,26 +972,26 @@
 }
 
 .effects_e5f2cb {
-    bottom: 0;
+    position: absolute;
     display: flex;
     justify-content: center;
-    position: absolute
+    bottom: 0
 }
 
 .reactionTooltip_b49891 {
+    max-width: 288px;
+    padding: 16px;
+    overflow: hidden;
     background: var(--background-floating);
-    border-radius: var(--radius-xs);
+    font-weight: 500;
     box-shadow: var(--elevation-high);
     color: var(--text-normal);
-    font-weight: 500;
-    max-width: 288px;
-    overflow: hidden;
-    padding: 16px
+    border-radius: var(--radius-xs)
 }
 
 .reactionTooltipEmoji_b49891 {
-    height: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .reactionTooltipText_b49891 {
@@ -997,12 +999,12 @@
 }
 
 .reactionTooltipInner_b49891 {
-    align-items: center;
-    display: flex;
-    -webkit-hyphens: auto;
-    hyphens: auto;
     pointer-events: all;
-    word-break: break-word
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    hyphens: auto
 }
 
 .reactionTooltipInner_b49891:hover {
@@ -1010,6 +1012,7 @@
 }
 
 .reactionTooltipInner_b49891:hover a {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -1022,30 +1025,31 @@
 }
 
 .burstReactionTooltipInner_b49891:hover a {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .burstReactionTooltipMessage_b49891 {
-    align-items: center;
+    pointer-events: all;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    word-break: break-word;
     -webkit-hyphens: auto;
-    hyphens: auto;
-    pointer-events: all;
-    word-break: break-word
+    hyphens: auto
 }
 
 .burstReactionTooltipSpacer_b49891 {
-    border-top: 1px solid var(--background-modifier-accent);
+    padding-top: 8px;
     margin-top: 8px;
-    padding-top: 8px
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .burstReactionTooltipPrompt_b49891 {
-    align-items: center;
     display: flex;
-    margin: 12px 0 0;
-    width: 100%
+    align-items: center;
+    width: 100%;
+    margin: 12px 0 0
 }
 
 .burstReactionTooltipPromptClickable_b49891 {
@@ -1057,6 +1061,7 @@
 }
 
 .burstReactionTooltipPromptClickable_b49891:hover a {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -1065,15 +1070,15 @@
 }
 
 .burstReactionTooltipUpsellCta_b49891 {
-    background: linear-gradient(270deg,var(--premium-tier-2-pink-for-gradients) 0,var(--premium-tier-2-pink-for-gradients-2) 33.63%,var(--premium-tier-2-purple-for-gradients) 100%);
-    border-radius: 4px;
     margin-top: 8px;
-    width: 100%
+    width: 100%;
+    background: linear-gradient(270deg,var(--premium-tier-2-pink-for-gradients),var(--premium-tier-2-pink-for-gradients-2) 33.63%,var(--premium-tier-2-purple-for-gradients));
+    border-radius: 4px
 }
 
 .obscuredIcon__43090 {
-    height: 32px;
-    width: 32px
+    width: 32px;
+    height: 32px
 }
 
 .author_d3eee8 {
@@ -1092,13 +1097,12 @@
     border: 1px solid var(--background-modifier-hover)
 }
 
-.theme-light .container_faa96b:active {
+.theme-light .container_faa96b.isOpen_faa96b,.theme-light .container_faa96b:active {
     border: 1px solid var(--background-modifier-selected)
 }
 
 .theme-light .container_faa96b.isOpen_faa96b {
-    background-color: var(--background-modifier-active);
-    border: 1px solid var(--background-modifier-selected)
+    background-color: var(--background-modifier-active)
 }
 
 .theme-dark .container_faa96b.isOpen_faa96b {
@@ -1107,18 +1111,18 @@
 
 .container_faa96b {
     align-items: start;
-    border: 1px solid transparent;
     box-sizing: border-box;
     cursor: pointer;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     padding: 12px;
-    position: relative
+    position: relative;
+    border: 1px solid transparent
 }
 
 .full-motion .container_faa96b {
-    transition: box-shadow .2s ease-out,transform .2s ease-out,background .2s ease-out,border .2s ease-out
+    transition: box-shadow .2s ease-out, transform .2s ease-out, background .2s ease-out, border .2s ease-out
 }
 
 .container_faa96b:hover {
@@ -1154,22 +1158,22 @@
 }
 
 .visual-refresh .container_faa96b:hover {
+    transform: none;
     background-color: var(--background-surface-high);
-    border-color: var(--border-strong);
-    box-shadow: var(--shadow-low);
-    transform: none
-}
-
-.visual-refresh .container_faa96b.isOpen_faa96b {
-    background-color: var(--background-surface-higher);
     border-color: var(--border-strong);
     box-shadow: var(--shadow-low)
 }
 
+.visual-refresh .container_faa96b.isOpen_faa96b {
+    border-color: var(--border-strong);
+    background-color: var(--background-surface-higher);
+    box-shadow: var(--shadow-low)
+}
+
 .focusTarget_faa96b {
+    width: 0;
     height: 0;
-    pointer-events: none;
-    width: 0
+    pointer-events: none
 }
 
 .left_faa96b {
@@ -1195,7 +1199,7 @@
 }
 
 .messageContent_faa96b {
-    color: unset;
+    color: inherit;
     font-size: 14px!important;
     font-weight: 500;
     height: 18px;
@@ -1225,32 +1229,34 @@
     align-items: center;
     border-radius: var(--radius-sm);
     box-sizing: border-box;
-    flex-shrink: 0;
     height: 100%;
-    margin-left: 12px;
     min-height: 72px;
+    margin-left: 12px;
     overflow: hidden;
+    width: 72px;
     position: relative;
-    width: 72px
+    flex-shrink: 0
 }
 
 .obscuredTag_faa96b {
-    color: var(--opacity-black-60);
-    left: 50%;
     position: absolute;
+    left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+    color: var(--opacity-black-60)
 }
 
 .thumbnailContainer_faa96b {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     max-height: 72px
 }
 
 .thumbnailOverride_faa96b {
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center left;
     object-position: center left
 }
 
@@ -1285,18 +1291,18 @@
 }
 
 .headerText_faa96b {
-    align-items: center;
-    display: flex;
     flex-grow: 1;
+    display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-right: 8px;
     max-height: 48px;
     overflow: hidden
 }
 
 .headerText_faa96b .emoji {
-    height: 20px;
-    width: 20px
+    width: 20px;
+    height: 20px
 }
 
 .postTitleText_faa96b {
@@ -1309,10 +1315,10 @@
 }
 
 .newBadge_faa96b {
-    border-radius: var(--radius-md);
-    color: var(--brand-560);
     display: inline;
     padding: 2px 8px;
+    border-radius: var(--radius-md);
+    color: var(--brand-560);
     position: relative;
     top: -2px
 }
@@ -1357,9 +1363,9 @@
     align-items: center;
     color: var(--header-secondary);
     display: flex;
-    height: 24px;
     margin-right: 4px;
-    margin-top: 1px
+    margin-top: 1px;
+    height: 24px
 }
 
 .hasRead_faa96b .messageCountIcon_faa96b {
@@ -1381,17 +1387,19 @@
 }
 
 .addReactButton_faa96b {
-    align-items: center;
-    color: var(--interactive-normal);
     display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--interactive-normal);
+    width: auto;
+    width: initial;
+    height: auto;
+    height: initial;
+    margin: 0;
     font-size: 14px;
     font-weight: 500;
-    gap: 8px;
-    height: unset;
     line-height: 18px;
-    margin: 0;
-    visibility: visible;
-    width: unset
+    visibility: visible
 }
 
 .addReactButton_faa96b:hover {
@@ -1404,8 +1412,8 @@
 }
 
 .updateReactionButton_faa96b {
-    margin-bottom: 0;
-    margin-right: 4px
+    margin-right: 4px;
+    margin-bottom: 0
 }
 
 .updateReactionButton_faa96b>div {
@@ -1423,9 +1431,9 @@
 }
 
 .withNewBadgeOverflow_faa96b .headerText_faa96b {
-    align-items: flex-start;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: flex-start
 }
 
 .withNewBadgeOverflow_faa96b .postTitleText_faa96b {
@@ -1438,16 +1446,16 @@
 }
 
 .tags__08166 {
+    height: 24px;
+    gap: 8px;
     font-family: var(--font-primary);
     font-weight: 500;
-    gap: 8px;
-    height: 24px;
     margin-bottom: 8px
 }
 
 .pinIcon__08166,.tags__08166 {
-    align-items: center;
-    display: inline-flex
+    display: inline-flex;
+    align-items: center
 }
 
 .pinIcon__08166 {
@@ -1463,4 +1471,4 @@
     background-color: var(--background-tertiary)
 }
 
-/*# sourceMappingURL=c98d5e6c645d7846.css.map*/
+/*# sourceMappingURL=21f2cb34ed65d14d.css.map*/

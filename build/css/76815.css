@@ -1,14 +1,14 @@
 /**
   Module ID: 76815
-  Original File Name: c299af8f77556cff
+  Original File Name: 8e339caed7fd4c4e
 **/
 .body__7ce16 {
     padding-top: var(--spacing-16)
 }
 
 .wumpus__7ce16 {
-    height: 187px;
-    margin: -95px auto 0
+    margin: -95px auto 0;
+    height: 187px
 }
 
 .textContainer__7ce16 {
@@ -33,11 +33,11 @@
 }
 
 .ringContainer__7ce16 {
-    height: 210px;
-    overflow: hidden;
     position: absolute;
     top: -211px;
-    width: 440px
+    overflow: hidden;
+    width: 440px;
+    height: 210px
 }
 
 .full-motion .iconButton__7ce16 {
@@ -49,20 +49,20 @@
 }
 
 .iconButton__7ce16 {
-    align-items: center;
-    background-color: var(--background-tertiary);
-    border-radius: var(--radius-round);
-    display: flex;
-    justify-content: center;
-    padding: var(--spacing-8);
     position: absolute;
+    top: var(--spacing-16);
     right: var(--spacing-16);
-    top: var(--spacing-16)
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-tertiary);
+    padding: var(--spacing-8);
+    border-radius: var(--radius-round)
 }
 
 .iconButton__7ce16:hover {
-    background-color: var(--background-modifier-hover);
-    cursor: pointer
+    cursor: pointer;
+    background-color: var(--background-modifier-hover)
 }
 
 .iconButton__7ce16:hover .icon__7ce16 {
@@ -78,8 +78,8 @@
 }
 
 html:not(.visual-refresh) .body__7ce16 {
-    padding-bottom: var(--spacing-16);
-    padding-top: var(--spacing-16)
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-16)
 }
 
-/*# sourceMappingURL=c299af8f77556cff.css.map*/
+/*# sourceMappingURL=8e339caed7fd4c4e.css.map*/

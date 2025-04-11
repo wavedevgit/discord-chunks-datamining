@@ -1,6 +1,6 @@
 /**
   Module ID: 11900
-  Original File Name: a40f84a992844c14
+  Original File Name: 8b773c615ea1e87a
 **/
 .content__7e015 {
     border-radius: 8px;
@@ -9,11 +9,11 @@
 }
 
 .contentInner__7e015 {
+    height: 600px;
+    padding: 0 40px 40px;
     display: flex;
     flex-direction: column;
-    height: 600px;
-    justify-content: space-between;
-    padding: 0 40px 40px
+    justify-content: space-between
 }
 
 .modal__7e015 {
@@ -35,13 +35,13 @@
 }
 
 .option__7e015 {
-    border: 1px solid var(--border-subtle);
+    padding: 16px;
+    flex-direction: column;
+    flex: 1 0 0;
     border-radius: 8px;
     box-sizing: border-box;
-    cursor: pointer;
-    flex: 1 0 0;
-    flex-direction: column;
-    padding: 16px
+    border: 1px solid var(--border-subtle);
+    cursor: pointer
 }
 
 .option__7e015:hover {
@@ -63,21 +63,21 @@
 }
 
 .iconContainer__7e015 {
-    align-items: center;
-    background-color: var(--background-primary);
-    border-radius: 20px;
-    box-sizing: border-box;
     display: flex;
+    width: 40px;
     height: 40px;
-    justify-content: center;
     padding: 8px;
-    width: 40px
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--background-primary);
+    box-sizing: border-box
 }
 
 .icon__7e015 {
     color: var(--interactive-normal);
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .emailContainer__7e015 {
@@ -97,27 +97,27 @@
 .completedContainer__7e015 {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    height: 100%;
     justify-content: flex-end;
+    gap: 16px;
     min-height: 560px;
-    min-width: 890px
+    min-width: 890px;
+    height: 100%
 }
 
 .closeButtonContainer__7e015 {
     position: absolute;
-    right: 24px;
-    top: 24px
+    top: 24px;
+    right: 24px
 }
 
 .select__7e015 {
-    border: 1px solid var(--border-subtle)!important;
-    max-width: 240px
+    max-width: 240px;
+    border: 1px solid var(--border-subtle)!important
 }
 
 .form__7e015 {
-    gap: 40px;
-    margin-top: 40px
+    margin-top: 40px;
+    gap: 40px
 }
 
 .form__7e015,.formGroup__7e015 {
@@ -137,15 +137,15 @@
 }
 
 .acknowledgement__7e015 {
-    align-items: center;
-    background: var(--input-background);
-    border: 1px solid var(--border-subtle);
-    border-radius: 8px;
-    cursor: pointer;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
     padding: 8px;
-    width: 100%
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    background: var(--input-background);
+    cursor: pointer
 }
 
 .acknowledgement__7e015:hover {
@@ -154,15 +154,15 @@
 
 .checkboxWrapper__7e015 {
     display: inline-block;
-    height: 24px;
-    width: 24px
+    width: 24px;
+    height: 24px
 }
 
 .eyebrow__7e015 {
-    align-items: center;
     color: var(--yellow-200);
     display: flex;
-    gap: 8px
+    gap: 8px;
+    align-items: center
 }
 
-/*# sourceMappingURL=a40f84a992844c14.css.map*/
+/*# sourceMappingURL=8b773c615ea1e87a.css.map*/

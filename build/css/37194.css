@@ -1,6 +1,6 @@
 /**
   Module ID: 37194
-  Original File Name: 0b2570a721788050
+  Original File Name: 397dc96791dfb00e
 **/
 .content__03273 {
     display: flex;
@@ -10,21 +10,21 @@
 }
 
 .bulletContainer__03273 {
-    align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     margin-bottom: 24px
 }
 
 .iconContainer__03273 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
-    display: flex;
-    flex-direction: column;
     height: 40px;
-    justify-content: center;
     width: 40px
 }
 
@@ -38,8 +38,8 @@
 }
 
 .headerTitle__03273 {
-    margin-bottom: 24px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 24px
 }
 
 .button__03273 {
@@ -48,20 +48,20 @@
 }
 
 .icon__03273 {
-    align-items: center;
+    margin-right: 8px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-right: 8px
+    align-items: center;
+    justify-content: center
 }
 
 .illustration__03273 {
-    margin: auto auto 24px;
-    width: 300px
+    width: 300px;
+    margin: auto auto 24px
 }
 
 .red__03273 {
     color: var(--status-danger)
 }
 
-/*# sourceMappingURL=0b2570a721788050.css.map*/
+/*# sourceMappingURL=397dc96791dfb00e.css.map*/

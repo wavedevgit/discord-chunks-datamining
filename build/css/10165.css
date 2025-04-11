@@ -1,6 +1,6 @@
 /**
   Module ID: 10165
-  Original File Name: 055731db54bd8c49
+  Original File Name: 4c7f134416b811ab
 **/
 .header_cd8d1b {
     padding: 0 50px
@@ -12,15 +12,15 @@
 
 .artContainer_cd8d1b {
     margin: 24px 38px;
+    width: 320px;
     padding-left: var(--modal-horizontal-padding);
-    padding-right: var(--modal-horizontal-padding);
-    width: 320px
+    padding-right: var(--modal-horizontal-padding)
 }
 
 .modal_cd8d1b {
-    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-end) 0,var(--bg-modal-gradient-lavender-start) 100%);
+    position: relative;
     overflow: hidden;
-    position: relative
+    background: radial-gradient(100% 100% at 50% 100%,var(--background-primary) 60%,var(--transparent) 100%),linear-gradient(270deg,var(--bg-modal-gradient-lavender-end),var(--bg-modal-gradient-lavender-start))
 }
 
 .modal_cd8d1b .footer_cd8d1b {
@@ -28,20 +28,21 @@
 }
 
 .footer_cd8d1b {
-    background: unset;
+    background: transparent none repeat 0 0 / auto auto padding-box border-box scroll;
+    background: initial;
     padding: 24px
 }
 
 .subscribeButton_cd8d1b {
-    align-items: center;
-    background: var(--custom-premium-colors-premium-gradient-tier-2) no-repeat;
-    border: 1px solid hsla(0,3%,54%,.1);
     border-radius: var(--radius-sm);
+    border: 1px solid hsla(0,3%,53.9%,.1);
+    background: var(--custom-premium-colors-premium-gradient-tier-2) no-repeat;
     display: flex;
-    gap: var(--space-4);
-    justify-content: center;
     min-width: 80px;
-    padding: 20px 16px
+    padding: 20px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-4)
 }
 
-/*# sourceMappingURL=055731db54bd8c49.css.map*/
+/*# sourceMappingURL=4c7f134416b811ab.css.map*/

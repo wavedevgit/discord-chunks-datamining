@@ -1,11 +1,11 @@
 /**
   Module ID: 89675
-  Original File Name: 088eab471d5fc3e1
+  Original File Name: 71acf473ebc6a702
 **/
 .perkRow_c609c8 {
     align-items: center;
-    border-bottom: 1px solid var(--channeltextarea-background);
     display: flex;
+    border-bottom: 1px solid var(--channeltextarea-background);
     margin: 0 16px;
     padding: 16px 0
 }
@@ -74,8 +74,8 @@
 }
 
 .footer__30359 {
-    flex-direction: row;
-    justify-content: flex-end
+    justify-content: flex-end;
+    flex-direction: row
 }
 
 .footer__30359,.header__30359 {
@@ -88,14 +88,14 @@
 }
 
 .subtitleText__30359 {
-    margin-bottom: 16px;
-    text-align: center
+    text-align: center;
+    margin-bottom: 16px
 }
 
 .inviteBannerPreview__30359 {
     height: 104px;
-    margin: 0 auto 24px;
-    width: 248px
+    width: 248px;
+    margin: 0 auto 24px
 }
 
 .featureHeading__30359 {
@@ -106,4 +106,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=088eab471d5fc3e1.css.map*/
+/*# sourceMappingURL=71acf473ebc6a702.css.map*/

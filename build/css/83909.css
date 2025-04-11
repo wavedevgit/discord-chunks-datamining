@@ -1,6 +1,6 @@
 /**
   Module ID: 83909
-  Original File Name: 1d5c226562158b8d
+  Original File Name: 12decbc69e5e7b70
 **/
 .otherOptions_b97ca2 {
     margin-top: 16px
@@ -9,16 +9,16 @@
 .linksContainer_b97ca2 {
     background-color: var(--bg-mod-faint);
     border-radius: var(--radius-sm);
-    margin-top: 4px;
-    overflow: hidden
+    overflow: hidden;
+    margin-top: 4px
 }
 
 .link_b97ca2 {
-    align-items: center;
-    cursor: pointer;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 20px 16px
+    padding: 20px 16px;
+    cursor: pointer
 }
 
 .link_b97ca2:hover {
@@ -26,8 +26,8 @@
 }
 
 .linkDivider_b97ca2 {
-    margin: 0 16px;
-    width: auto
+    width: auto;
+    margin: 0 16px
 }
 
 .footer_b97ca2 {
@@ -35,4 +35,4 @@
     justify-content: flex-start
 }
 
-/*# sourceMappingURL=1d5c226562158b8d.css.map*/
+/*# sourceMappingURL=12decbc69e5e7b70.css.map*/

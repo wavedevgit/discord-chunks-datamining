@@ -1,11 +1,11 @@
 /**
   Module ID: 46923
-  Original File Name: 6f014cae94c40993
+  Original File Name: c207f66c36cca327
 **/
 .content__50a6f {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-items: stretch;
     padding: 22px 24px
 }
@@ -24,13 +24,13 @@
 }
 
 .applicationSearch__50a6f,.radioGroup__50a6f {
-    align-self: stretch;
-    margin-top: 24px
+    margin-top: 24px;
+    align-self: stretch
 }
 
 .applicationSearch__50a6f {
-    border-top: 1px solid var(--background-modifier-accent);
-    padding-top: 20px
+    padding-top: 20px;
+    border-top: 1px solid var(--background-modifier-accent)
 }
 
 .gameSuggestion__50a6f {
@@ -41,9 +41,9 @@
 
 .gameSuggestionRadioItem__50a6f {
     background-color: transparent;
-    margin: 0;
+    transition: background-color .2s ease;
     padding: 4px;
-    transition: background-color .2s ease
+    margin: 0
 }
 
 .gameSuggestionRadioItem__50a6f:hover {
@@ -51,8 +51,8 @@
 }
 
 .otherFeedbackInput__50a6f {
-    align-self: stretch;
     margin-top: 24px;
+    align-self: stretch;
     width: 100%
 }
 
@@ -61,30 +61,30 @@
 }
 
 .gameInfoBox__50a6f {
-    align-items: center;
     border-radius: 8px;
-    box-shadow: 0 1px 0 0 rgba(0,0,0,.16),0 1.5px 0 0 rgba(0,0,0,.05),0 2px 0 0 rgba(0,0,0,.05);
-    box-sizing: border-box;
+    margin-top: 24px;
+    padding: 12px;
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-top: 24px;
-    padding: 12px;
-    width: 100%
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,.16),0 1.5px 0 0 rgba(0,0,0,.05),0 2px 0 0 rgba(0,0,0,.05)
 }
 
 .gameIcon__50a6f {
-    border-radius: 3px;
-    display: block;
+    width: 32px;
     height: 32px;
-    width: 32px
+    border-radius: 3px;
+    display: block
 }
 
 .smolGameIcon__50a6f {
-    border-radius: var(--radius-xs);
     display: block;
+    width: 20px;
     height: 20px;
-    width: 20px
+    border-radius: var(--radius-xs)
 }
 
 .customGameNameIcon__50a6f {
@@ -95,4 +95,4 @@
     color: hsla(0,0%,100%,.85)
 }
 
-/*# sourceMappingURL=6f014cae94c40993.css.map*/
+/*# sourceMappingURL=c207f66c36cca327.css.map*/

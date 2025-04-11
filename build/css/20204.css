@@ -1,19 +1,19 @@
 /**
   Module ID: 20204
-  Original File Name: 7ccdefa0425dab05
+  Original File Name: 60e2de9504135a83
 **/
 .labelWrapper_abe771 {
-    align-items: center;
+    display: flex;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    display: flex;
+    row-gap: 4px;
     flex-wrap: wrap;
-    row-gap: 4px
+    align-items: center
 }
 
 .label_abe771 {
-    overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    overflow: hidden
 }
 
 .newBadge_abe771 {
@@ -30,19 +30,19 @@
 }
 
 .inviteGuestContainer_abe771 {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .loadingWrapper__5a143 {
-    align-items: center;
-    border-radius: 2px;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    padding: 8px 4px;
     height: 16px;
-    justify-content: center;
+    border-radius: 2px;
     margin: 2px 0;
-    padding: 8px 4px
+    justify-content: center
 }
 
 .list_c47777 {
@@ -68,32 +68,28 @@
 }
 
 .label__3751b,.subtext__3751b {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 4px
 }
 
 .ringing__3751b {
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
-    opacity: .3
+    opacity: .3;
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite
 }
 
 .channelName__3751b {
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
-    color: var(--header-primary)
-}
-
-:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
 .videoPaused_afb275 {
-    align-items: center;
     display: flex;
-    justify-content: left
+    justify-content: left;
+    align-items: center
 }
 
 .warningCircle_afb275 {
@@ -101,13 +97,13 @@
 }
 
 .roleRow_b82947 {
-    align-items: center;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=7ccdefa0425dab05.css.map*/
+/*# sourceMappingURL=60e2de9504135a83.css.map*/

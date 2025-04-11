@@ -1,38 +1,38 @@
 /**
   Module ID: 37709
-  Original File Name: d28bd39ddd55f3db
+  Original File Name: 6e5cb556f7b4c855
 **/
 .coverContainer__2f300 {
-    align-items: center;
-    border-radius: 12px;
-    box-sizing: border-box;
     height: 640px;
+    box-sizing: border-box;
+    align-items: center;
     justify-content: space-between;
+    border-radius: 12px;
     padding: 0 24px
 }
 
 .centerArt__2f300,.coverContainer__2f300 {
-    display: flex;
-    position: relative
+    position: relative;
+    display: flex
 }
 
 .centerArt__2f300 {
-    height: 256px;
-    width: 480px
+    width: 480px;
+    height: 256px
 }
 
 .mainIsland__2f300 {
-    bottom: -18px;
     position: absolute;
+    width: 400px;
     right: -24px;
-    width: 400px
+    bottom: -18px
 }
 
 .balloonDog__2f300 {
-    bottom: -24px;
-    left: 8px;
     position: absolute;
-    width: 160px
+    width: 160px;
+    bottom: -24px;
+    left: 8px
 }
 
 .leftArt__2f300 {
@@ -43,36 +43,36 @@
 
 .grillingIsland__2f300 {
     position: absolute;
-    top: -20px;
-    width: 220px
+    width: 220px;
+    top: -20px
 }
 
 .rightArt__2f300 {
-    animation-delay: .4s;
     flex: 0 0 120px;
     height: 100%;
-    position: relative
+    position: relative;
+    animation-delay: .4s
 }
 
 .waffleIsland__2f300 {
     position: absolute;
-    top: 40px;
-    width: 160px
+    width: 160px;
+    top: 40px
 }
 
 .full-motion .float__2f300 {
-    animation-direction: alternate;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
     animation-name: float__2f300;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     transition: ease-in-out
 }
 
 .full-motion .altFloat__2f300 {
-    animation-direction: alternate;
     animation-duration: 2s;
-    animation-iteration-count: infinite;
     animation-name: altFloat__2f300;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     transition: ease-in-out
 }
 
@@ -97,14 +97,14 @@
 }
 
 .centerContent__2f300 {
-    align-items: center;
+    z-index: 1;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    height: 100%;
+    align-items: center;
     justify-content: center;
-    z-index: 1
+    gap: 24px;
+    height: 100%
 }
 
 .coverContent__2f300 {
@@ -114,17 +114,17 @@
 }
 
 .avatarContainer__2f300 {
-    align-items: center;
-    display: flex;
     height: 280px;
+    position: relative;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
-    position: relative
+    margin-bottom: 24px
 }
 
 .avatarCloud__2f300 {
-    position: absolute;
-    width: 300px
+    width: 300px;
+    position: absolute
 }
 
 .userIconMask__2f300 {
@@ -145,8 +145,8 @@
 }
 
 :where(.visual-refresh) .coverTitle__2f300 {
-    margin-bottom: var(--spacing-16);
-    opacity: 1
+    opacity: 1;
+    margin-bottom: var(--spacing-16)
 }
 
 :where(.visual-refresh) .guildImage__2f300 {
@@ -162,11 +162,11 @@
 }
 
 .optionButtonWrapper__270d7 {
-    align-items: center;
+    position: relative;
     border: 2px solid var(--background-modifier-accent);
     border-radius: 12px;
     display: flex;
-    position: relative
+    align-items: center
 }
 
 .optionButtonWrapper__270d7:hover {
@@ -192,13 +192,13 @@
 }
 
 .visual-refresh .optionButtonWrapper__270d7.pressed__270d7 {
-    background-color: var(--background-mod-normal);
-    transform: none
+    transform: none;
+    background-color: var(--background-mod-normal)
 }
 
 .visual-refresh .optionButtonWrapper__270d7.selected__270d7 {
-    background-color: var(--opacity-blurple-8);
-    border-color: var(--bg-brand)
+    border-color: var(--bg-brand);
+    background-color: var(--opacity-blurple-8)
 }
 
 .visual-refresh .optionButtonWrapper__270d7.selected__270d7.pressed__270d7 {
@@ -206,11 +206,11 @@
 }
 
 .optionButton__270d7 {
-    align-items: center;
-    cursor: pointer;
     display: flex;
     flex-grow: 1;
-    padding: 12px 16px
+    padding: 12px 16px;
+    cursor: pointer;
+    align-items: center
 }
 
 .full-motion .optionButton__270d7 {
@@ -218,32 +218,32 @@
 }
 
 .checkIcon__270d7 {
-    border-radius: 50%;
     right: -10px;
-    width: 20px
+    width: 20px;
+    border-radius: 50%
 }
 
 .checkIcon__270d7,.memberCount__270d7 {
-    align-items: center;
+    position: absolute;
+    top: -10px;
+    height: 20px;
     background-color: var(--brand-500);
     box-sizing: border-box;
     display: flex;
-    height: 20px;
-    justify-content: center;
-    position: absolute;
-    top: -10px
+    align-items: center;
+    justify-content: center
 }
 
 .memberCount__270d7 {
+    right: 20px;
     border-radius: 10px;
     padding: 0 8px;
-    right: 20px;
     white-space: nowrap
 }
 
 .buttonEmoji__270d7 {
-    align-self: center;
-    margin-right: 12px
+    margin-right: 12px;
+    align-self: center
 }
 
 .buttonText__270d7 {
@@ -253,10 +253,10 @@
 }
 
 .newBadge__270d7 {
-    color: var(--brand-560);
     position: absolute;
+    top: -10px;
     right: -10px;
-    top: -10px
+    color: var(--brand-560)
 }
 
 .suffix__05934 {
@@ -282,15 +282,15 @@
 }
 
 .prompt_fe70ca {
-    background-color: var(--modal-background);
-    border-radius: 12px;
+    width: 800px;
     height: 640px;
     max-height: 640px;
+    background-color: var(--modal-background);
+    z-index: 1;
+    border-radius: 12px;
     position: absolute;
     top: 50%;
-    transform: translate(-50%,-50%);
-    width: 800px;
-    z-index: 1
+    transform: translate(-50%,-50%)
 }
 
 .promptContent_fe70ca {
@@ -305,53 +305,54 @@
 }
 
 .questionHeader_fe70ca {
-    align-items: center;
-    display: flex
+    display: flex;
+    align-items: center
 }
 
 .title_fe70ca {
-    margin-bottom: 24px;
-    margin-top: 8px
+    margin-top: 8px;
+    margin-bottom: 24px
 }
 
 .headerSeparator_fe70ca {
-    align-self: center;
-    background-color: var(--background-modifier-accent);
-    border-radius: 4px;
-    color: var(--background-modifier-accent);
     flex-shrink: 0;
-    height: 4px;
     margin: 0 8px;
-    width: 4px
+    color: var(--background-modifier-accent);
+    background-color: var(--background-modifier-accent);
+    width: 4px;
+    height: 4px;
+    border-radius: 4px;
+    align-self: center
 }
 
 .promptOptions_fe70ca {
+    margin-bottom: 24px;
     display: grid;
-    gap: 12px;
-    grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 24px
+    grid-auto-rows: 1fr;
+    grid-gap: 12px;
+    gap: 12px
 }
 
 .selectValuePill_fe70ca {
     background-color: var(--background-primary);
-    border-radius: 4px;
     margin-right: 8px;
+    border-radius: 4px;
     padding: 4px 8px
 }
 
 .subtitle_fe70ca {
-    align-items: center;
+    min-height: 50px;
     display: flex;
-    justify-content: center;
-    min-height: 50px
+    align-items: center;
+    justify-content: center
 }
 
 .helpText_fe70ca {
-    align-self: center;
-    flex-wrap: wrap;
     margin-left: 12px;
+    flex-wrap: wrap;
     max-width: 300px;
+    align-self: center;
     text-align: right
 }
 
@@ -360,13 +361,13 @@
 }
 
 .navButtons_fe70ca {
-    align-items: center;
     background-color: var(--background-secondary);
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    padding: 20px
+    align-items: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px
 }
 
 .finishEmoji_fe70ca {
@@ -374,19 +375,19 @@
 }
 
 .termsFieldBody_fe70ca {
+    margin-top: 32px;
     background-color: var(--background-secondary);
     border-radius: 12px;
-    margin-top: 32px;
     padding: 0 16px
 }
 
 .termsRow_fe70ca {
-    align-items: flex-start;
     border-bottom: 1px solid var(--background-modifier-accent);
+    padding: 16px 0;
     display: flex;
     flex-direction: row;
-    gap: 8px;
-    padding: 16px 0
+    align-items: flex-start;
+    gap: 8px
 }
 
 .termsRow_fe70ca:last-child {
@@ -398,13 +399,13 @@
 }
 
 .termsCheckbox_fe70ca {
-    margin-bottom: 32px;
-    margin-top: 16px
+    margin-top: 16px;
+    margin-bottom: 32px
 }
 
 .leftButtons_fe70ca,.rightButtons_fe70ca {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 16px
 }
 
@@ -413,8 +414,8 @@
 }
 
 .buttonInner_fe70ca {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 4px
 }
 
@@ -424,12 +425,12 @@
 }
 
 .overlay_fe70ca {
-    background: linear-gradient(to top,var(--modal-background),transparent);
-    bottom: 78px;
-    height: 80px;
     pointer-events: none;
+    height: 80px;
+    width: 100%;
     position: absolute;
-    width: 100%
+    bottom: 78px;
+    background: linear-gradient(0deg,var(--modal-background),transparent)
 }
 
-/*# sourceMappingURL=d28bd39ddd55f3db.css.map*/
+/*# sourceMappingURL=6e5cb556f7b4c855.css.map*/

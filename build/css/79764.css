@@ -1,8 +1,9 @@
 /**
   Module ID: 79764
-  Original File Name: b027b6a2a33411c4
+  Original File Name: a54fe46921a19f33
 **/
 .iconContainer__98cf7 {
+    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     height: 80px;
     position: relative;
@@ -17,14 +18,14 @@
 }
 
 .header_b917ac {
-    overflow: hidden;
-    padding: 24px 24px 0
+    padding: 24px 24px 0;
+    overflow: hidden
 }
 
 .closeButton_b917ac {
     position: absolute;
-    right: 12px;
-    top: 12px
+    top: 12px;
+    right: 12px
 }
 
 .visual-refresh .closeButton_b917ac {
@@ -32,8 +33,8 @@
 }
 
 .title_b917ac {
-    font-weight: 700;
-    text-align: center
+    text-align: center;
+    font-weight: 700
 }
 
 .backButton_b917ac {
@@ -46,15 +47,15 @@
 }
 
 .createGuild_b917ac {
-    flex-grow: 0;
-    margin: 16px 0
+    margin: 16px 0;
+    flex-grow: 0
 }
 
 .uploadIcon_b917ac {
-    color: var(--interactive-normal);
+    padding-top: 4px;
     display: flex;
     justify-content: center;
-    padding-top: 4px
+    color: var(--interactive-normal)
 }
 
 .nameInput_b917ac {
@@ -83,28 +84,28 @@
 }
 
 .header__66057 {
-    flex-grow: 0;
-    padding: 16px 24px 0
+    padding: 16px 24px 0;
+    flex-grow: 0
 }
 
 .closeButton__66057 {
     position: absolute;
-    right: 9px;
-    top: 12px
+    top: 12px;
+    right: 9px
 }
 
 .tabBar__66057 {
-    align-items: center;
-    border-bottom: 2px solid var(--background-modifier-accent);
+    width: calc(100% + 12px);
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 20px;
-    width: calc(100% + 12px)
+    border-bottom: 2px solid var(--background-modifier-accent)
 }
 
 .tabBarItem__66057 {
-    margin: 0 16px -2px;
-    padding: 0 0 12px
+    padding: 0 0 12px;
+    margin: 0 16px -2px
 }
 
 .selectedTab__66057 {
@@ -112,9 +113,9 @@
 }
 
 .guildList__66057 {
-    height: 276px;
     margin-top: 20px;
-    padding: 0 8px 8px 16px
+    padding: 0 8px 8px 16px;
+    height: 276px
 }
 
 .title__66057 {
@@ -127,14 +128,14 @@
 }
 
 .guildRow__66057 {
-    align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px;
+    margin-bottom: 8px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-primary);
     padding: 12px 16px 12px 12px
 }
 
@@ -151,13 +152,13 @@
 }
 
 .guildName__66057 {
-    flex: 1;
-    margin-left: 16px
+    margin-left: 16px;
+    flex: 1
 }
 
 .footer__66057 {
-    align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    align-items: center
 }
 
 .footerTitle__66057 {
@@ -169,13 +170,13 @@
 }
 
 .emptyContainer__66057 {
-    align-items: center;
     box-sizing: border-box;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    width: 100%
+    align-items: center;
+    justify-content: center
 }
 
 .emptyImage__66057 {
@@ -187,9 +188,9 @@
 }
 
 .overflowIcon__66057,.trashIcon__66057 {
-    color: var(--interactive-normal);
     cursor: pointer;
-    display: flex
+    display: flex;
+    color: var(--interactive-normal)
 }
 
 .overflowIcon__66057:hover,.trashIcon__66057:hover {
@@ -207,8 +208,8 @@
 
 .closeButton__21615 {
     position: absolute;
-    right: 9px;
-    top: 12px
+    top: 12px;
+    right: 9px
 }
 
 .title__21615 {
@@ -239,15 +240,15 @@
 }
 
 .container_eb2cd2 {
-    align-items: center;
-    background-color: var(--background-primary);
-    border: 1px solid var(--background-modifier-accent);
     border-radius: 8px;
-    cursor: pointer;
-    display: flex;
+    border: 1px solid var(--background-modifier-accent);
+    background-color: var(--background-primary);
     margin-bottom: 8px;
-    padding: 0;
-    width: 100%
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 100%;
+    padding: 0
 }
 
 .container_eb2cd2:hover {
@@ -263,6 +264,7 @@
 }
 
 .icon_eb2cd2 {
+    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     margin: 8px 8px 8px 16px
 }
@@ -286,26 +288,26 @@
 }
 
 :where(.visual-refresh) .container_eb2cd2 {
-    background-color: var(--background-mod-faint);
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    background-color: var(--background-mod-faint)
 }
 
 .header__1f657 {
+    padding: 16px 24px 0;
     flex-grow: 0;
-    overflow: hidden;
-    padding: 16px 24px 0
+    overflow: hidden
 }
 
 .closeButton__1f657 {
     position: absolute;
-    right: 9px;
-    top: 12px
+    top: 12px;
+    right: 9px
 }
 
 .templatesList__1f657 {
-    height: 330px;
     margin-top: 16px;
-    padding: 0 8px 8px 16px
+    padding: 0 8px 8px 16px;
+    height: 330px
 }
 
 .title__1f657 {
@@ -318,8 +320,8 @@
 }
 
 .optionHeader__1f657 {
-    margin-bottom: 8px;
     margin-top: 16px;
+    margin-bottom: 8px;
     text-transform: uppercase
 }
 
@@ -333,10 +335,10 @@
 }
 
 .container__92910 {
-    display: flex;
-    flex-direction: column;
+    width: 440px;
     max-height: 580px;
-    width: 440px
+    display: flex;
+    flex-direction: column
 }
 
 @media (max-width:440px) {
@@ -345,4 +347,4 @@
     }
 }
 
-/*# sourceMappingURL=b027b6a2a33411c4.css.map*/
+/*# sourceMappingURL=a54fe46921a19f33.css.map*/

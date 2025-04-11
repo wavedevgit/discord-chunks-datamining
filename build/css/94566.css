@@ -1,19 +1,19 @@
 /**
   Module ID: 94566
-  Original File Name: 9dc20831d0f96ab5
+  Original File Name: 3e308d97730c68f3
 **/
 .header__61c70 {
-    align-items: center;
     display: flex;
     flex-direction: column;
-    padding-bottom: 14px;
-    padding-top: 64px
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 14px
 }
 
 .headerImage__61c70 {
-    left: 140px;
     position: absolute;
     top: -68px;
+    left: 140px;
     width: 170px
 }
 
@@ -32,14 +32,14 @@
 
 .description__61c70 {
     color: var(--text-normal);
-    margin-top: 8px;
-    text-align: center
+    text-align: center;
+    margin-top: 8px
 }
 
 .modalCloseButton__61c70 {
     position: absolute;
-    right: 16px;
-    top: 16px
+    top: 16px;
+    right: 16px
 }
 
 .content__61c70 {
@@ -47,8 +47,8 @@
 }
 
 .help__61c70 {
-    margin-bottom: 8px;
-    margin-top: 8px
+    margin-top: 8px;
+    margin-bottom: 8px
 }
 
 .password__61c70 {
@@ -56,12 +56,12 @@
 }
 
 .buttons__61c70 {
+    margin-top: 24px;
     display: flex;
-    flex-direction: column;
-    margin-top: 24px
+    flex-direction: column
 }
 
-@media (max-width:485px) {
+@media (max-width: 485px) {
     .header__61c70 {
         padding-top: 144px
     }
@@ -71,4 +71,4 @@
     }
 }
 
-/*# sourceMappingURL=9dc20831d0f96ab5.css.map*/
+/*# sourceMappingURL=3e308d97730c68f3.css.map*/

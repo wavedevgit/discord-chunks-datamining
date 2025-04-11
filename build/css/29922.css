@@ -1,6 +1,6 @@
 /**
   Module ID: 29922
-  Original File Name: d2c7f00f26e5617a
+  Original File Name: bf29f282149911a8
 **/
 .header__7e090 {
     background-image: url(/assets/cb4131669938b6ad.svg);
@@ -12,11 +12,11 @@
 }
 
 .animation__7e090 {
-    bottom: 0;
-    left: 0;
     position: absolute;
+    top: 0;
+    left: 0;
     right: 0;
-    top: 0
+    bottom: 0
 }
 
 .headerTitle__7e090 {
@@ -26,27 +26,23 @@
 }
 
 .header__7e090 .closeButton__7e090 {
-    color: var(--white-500);
-    opacity: .8;
     position: absolute;
     right: 12px;
-    top: 12px
+    top: 12px;
+    color: var(--white-500);
+    opacity: .8
 }
 
-.header__7e090 .closeButton__7e090:hover {
-    opacity: 1
-}
-
-.enable-forced-colors .header__7e090 .closeButton__7e090 {
+.header__7e090 .closeButton__7e090:hover,.enable-forced-colors .header__7e090 .closeButton__7e090 {
     opacity: 1
 }
 
 .upsellFooter__5e07c {
-    align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 18px;
     margin-top: 16px;
@@ -55,24 +51,24 @@
 
 .upsellFooterIcon__5e07c {
     flex-shrink: 0;
-    height: 24px;
     margin-right: 8px;
+    height: 24px;
     width: 24px
 }
 
 .reverseTrialUpsellContainer__5e07c {
+    position: relative;
     border-radius: 4px;
-    box-shadow: 0 0 40px 0 rgba(229,85,211,.5);
-    position: relative
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
 }
 
 .unlockIcon__5e07c {
     height: 46px;
-    left: 7px;
+    width: 46px;
     pointer-events: none;
     position: absolute;
-    top: -14px;
-    width: 46px
+    left: 7px;
+    top: -14px
 }
 
 .upsellText__5e07c {
@@ -164,9 +160,9 @@
 }
 
 .confirmationAnimation__945b8 {
+    width: 400px;
     height: 140px;
-    margin-bottom: 32px;
-    width: 400px
+    margin-bottom: 32px
 }
 
 .confirmationText__945b8,.confirmationUpgradedBanner__945b8 {
@@ -190,31 +186,31 @@
 }
 
 .existingSlotNotice__945b8 {
-    align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 16px;
     margin-top: 16px;
-    padding: 8px
+    padding: 8px;
+    margin-bottom: 16px
 }
 
 .existingSlotIcon__945b8 {
     flex-shrink: 0;
-    height: 24px;
     margin-right: 8px;
+    height: 24px;
     width: 24px
 }
 
 .existingSlotTooltipWarningIcon__945b8 {
-    cursor: pointer;
     height: 16px;
-    margin-left: 6px;
+    width: 14px;
     vertical-align: text-bottom;
-    width: 14px
+    margin-left: 6px;
+    cursor: pointer
 }
 
 .loadingSpinner__945b8 {
@@ -237,8 +233,8 @@
 
 .perkRow_c609c8 {
     align-items: center;
-    border-bottom: 1px solid var(--channeltextarea-background);
     display: flex;
+    border-bottom: 1px solid var(--channeltextarea-background);
     margin: 0 16px;
     padding: 16px 0
 }
@@ -279,8 +275,8 @@
     background-image: url(/assets/7a8cfb4e8b5926c9.svg);
     background-size: cover;
     height: 120px;
-    margin: 0 auto 32px;
-    width: 265px
+    width: 265px;
+    margin: 0 auto 32px
 }
 
 .upsellImageWithTrialOffer__3bf54 {
@@ -288,8 +284,8 @@
 }
 
 .premiumTrialBadge__3bf54 {
-    left: 50%;
     position: absolute;
+    left: 50%;
     top: 20px;
     transform: translateX(-50%)
 }
@@ -357,6 +353,7 @@
 }
 
 .externalErrorBlock__65b48 a {
+    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -378,11 +375,11 @@
 }
 
 .loadingWrapper__65b48 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
     min-height: 398px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-top: 16px
 }
 
-/*# sourceMappingURL=d2c7f00f26e5617a.css.map*/
+/*# sourceMappingURL=bf29f282149911a8.css.map*/
