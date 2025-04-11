@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: 6362f1ee7c0828b9
+  Original File Name: 0ab3952c388b4cdd
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -797,12 +797,6 @@ h1.title_feb59c,h2.title_feb59c {
     display: flex;
     align-items: center;
     gap: 8px
-}
-
-.buttonsContainer_a8b931 {
-    display: flex;
-    gap: var(--spacing-8);
-    margin-bottom: var(--spacing-24)
 }
 
 .tryItOutButtons_fbfab6 {
@@ -17133,4 +17127,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=6362f1ee7c0828b9.css.map*/
+/*# sourceMappingURL=0ab3952c388b4cdd.css.map*/

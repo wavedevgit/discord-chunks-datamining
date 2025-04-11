@@ -1,15 +1,15 @@
-/** Chunk was on 99391 **/
+/** Chunk was on 69313 **/
 n.d(t, {
-  c: () => o,
-  z: () => l
+  c: () => l,
+  z: () => o
 });
-var r = n(442837),
-  i = n(479766);
-
-function o() {
-  return (0, r.e7)([i.Z], () => i.Z.balance)
-}
+var i = n(442837),
+  r = n(479766);
 
 function l() {
-  return i.Z.getCurrentBalance()
+  return (0, i.e7)([r.Z], () => r.Z.balance)
+}
+
+function o() {
+  return r.Z.getCurrentBalance()
 }

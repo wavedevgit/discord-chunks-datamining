@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: c8a2636ee6e13c98
+  Original File Name: 11c7ef895efd82c2
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1383,6 +1383,12 @@ html:not(.visual-refresh) .footer__7c901 {
 
 .visual-refresh .contentRegionScroller__23e6b {
     background-color: var(--background-base-low)
+}
+
+.buttonsContainer_a8b931 {
+    display: flex;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-24)
 }
 
 .base_e42a84 {
@@ -5264,4 +5270,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     height: 100px
 }
 
-/*# sourceMappingURL=c8a2636ee6e13c98.css.map*/
+/*# sourceMappingURL=11c7ef895efd82c2.css.map*/

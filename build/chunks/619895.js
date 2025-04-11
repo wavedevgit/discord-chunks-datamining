@@ -74,24 +74,24 @@ function m(e) {
           t[e] = r[e]
         })
       }), Object.keys(t).map(t => {
-        var n, r, l, o, c, u, s, d, m, p, f, b, O, E;
-        let g, y, h = e.find(e => {
+        var n, r, l, o, c, u, s, d, m, p, f, b, O, g;
+        let E, y, h = e.find(e => {
           var n;
-          return null != (g = null == (n = e.commands) ? void 0 : n.find(e => e.id === t))
+          return null != (E = null == (n = e.commands) ? void 0 : n.find(e => e.id === t))
         });
         if (null == h) return null;
         let {
           application: v
         } = h;
-        if (null == g) return null;
-        let C = (0, i.Z8)({
-            rootCommand: g,
-            command: g,
+        if (null == E) return null;
+        let j = (0, i.Z8)({
+            rootCommand: E,
+            command: E,
             applicationId: v.id
           }),
-          j = null == (l = h.command_metadata) || null == (r = l[t]) || null == (n = r.overrideSendCommandInfo) ? void 0 : n.commandId;
-        if (null != j) {
-          let e = null != j ? null == (f = h.commands) ? void 0 : f.find(e => e.id === j) : void 0;
+          C = null == (l = h.command_metadata) || null == (r = l[t]) || null == (n = r.overrideSendCommandInfo) ? void 0 : n.commandId;
+        if (null != C) {
+          let e = null != C ? null == (f = h.commands) ? void 0 : f.find(e => e.id === C) : void 0;
           null != e && (y = (0, i.Z8)({
             rootCommand: e,
             command: e,
@@ -116,17 +116,17 @@ function m(e) {
               })
             }
             return e
-          }({}, C), E = E = {
-            displayName: C.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
+          }({}, j), g = g = {
+            displayName: j.displayName.split(/[_ ]/).map(e => e.charAt(0).toUpperCase() + e.slice(1)).join(" ")
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(O, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(E)).forEach(function(e) {
-            Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(E, e))
+          })(Object(g)).forEach(function(e) {
+            Object.defineProperty(O, e, Object.getOwnPropertyDescriptor(g, e))
           }), O),
           imageOption: null == (c = h.command_metadata) || null == (o = c[t]) ? void 0 : o.imageOption,
           overrideSendCommand: y,

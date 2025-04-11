@@ -26,8 +26,8 @@ var i = n(200651),
   N = n(26033),
   j = n(70097),
   P = n(240991),
-  E = n(973616),
-  O = n(626135),
+  O = n(973616),
+  E = n(626135),
   A = n(424602),
   I = n(573188),
   S = n(783097),
@@ -90,11 +90,11 @@ function F(e) {
     return null != (e = (0, S.jD)(l)) ? e : ""
   }, [l]), C = (0, d.e7)([f.Z], () => f.Z.inDevModeForApplication(l.id)), {
     isSlideReady: v
-  } = (0, T.hH)(), [P, E] = r.useState(!1);
+  } = (0, T.hH)(), [P, O] = r.useState(!1);
   r.useEffect(() => {
-    v && E(!0)
+    v && O(!0)
   }, [v]);
-  let O = null != a,
+  let E = null != a,
     R = A.PM.useExperiment({
       location: "AppLauncherProfile"
     }),
@@ -185,7 +185,7 @@ function F(e) {
     }) : (0, i.jsxs)(z, {
       application: l,
       pepButtonLabelEnabled: R.enabled,
-      children: [O ? (0, i.jsxs)("div", {
+      children: [E ? (0, i.jsxs)("div", {
         className: B.videoContainer,
         children: [P ? (0, i.jsx)(j.Z, {
           className: o()(B.videoCover, B.video),
@@ -200,7 +200,7 @@ function F(e) {
           "aria-label": D.NW.string(D.t.X4IxWF)
         })]
       }) : null, (0, i.jsxs)("div", {
-        className: O ? B.overviewContainerWithVideo : B.overviewContainerNoVideo,
+        className: E ? B.overviewContainerWithVideo : B.overviewContainerNoVideo,
         children: [R.enabled ? null : (0, i.jsx)(X, {
           application: l
         }), (0, i.jsx)(q, {
@@ -318,7 +318,7 @@ function Y(e) {
     application: n
   } = e;
   if (!(0, S.ye)(n)) return null;
-  let r = null != (t = (0, S.BQ)(n) ? n instanceof E.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
+  let r = null != (t = (0, S.BQ)(n) ? n instanceof O.ZP ? n.maxParticipants : n.max_participants : 0) ? t : 0;
   return (0, i.jsxs)("div", {
     className: B.tagContainer,
     children: [(0, i.jsx)(m.BFJ, {
@@ -352,7 +352,7 @@ function Q(e) {
   if (r.useEffect(() => {
       if (!(0, S.BQ)(l) || !(0, S.ye)(l)) return;
       let e = setTimeout(() => {
-        (null == u || null == f) && O.default.track(M.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
+        (null == u || null == f) && E.default.track(M.rMx.APP_LAUNCHER_PEP_BUTTON_NOT_RENDERED, {
           application_id: l.id,
           is_primary_entry_point_command_non_null: null != u,
           is_bot_user_id_non_null: null != f,

@@ -25,8 +25,8 @@ var i = n(200651),
   N = n(561160),
   j = n(41558),
   P = n(106771),
-  E = n(79984),
-  O = n(314734),
+  O = n(79984),
+  E = n(314734),
   A = n(981631),
   I = n(388032),
   S = n(946908);
@@ -107,8 +107,8 @@ function Z(e) {
       }))]
     }, [C, b]),
     P = j.length > 0,
-    E = p && !P && !g;
-  return d ? (0, i.jsx)(U, {}) : E ? (0, i.jsx)(N.A, {
+    O = p && !P && !g;
+  return d ? (0, i.jsx)(U, {}) : O ? (0, i.jsx)(N.A, {
     type: _.LG.SEARCH_EMPTY,
     searchQuery: n,
     textContent: l === _._b.TEXT ? I.NW.string(I.t.LSNOYW) : I.NW.string(I.t.Clu7Qk)
@@ -133,8 +133,8 @@ function M(e) {
     context: l,
     commandResults: o,
     query: a
-  } = e, m = o.length > 4, y = r.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [x, C] = r.useState(!1), g = null != (t = (0, s.Z)(x)) ? t : x, N = r.useCallback(() => C(e => !e), []), E = (null != (n = (0, s.Z)(a)) ? n : a)[0] !== a[0], T = x && !E;
-  r.useLayoutEffect(() => C(!1), [E]);
+  } = e, m = o.length > 4, y = r.useMemo(() => m ? o.slice(0, 4) : o, [o, m]), [x, C] = r.useState(!1), g = null != (t = (0, s.Z)(x)) ? t : x, N = r.useCallback(() => C(e => !e), []), O = (null != (n = (0, s.Z)(a)) ? n : a)[0] !== a[0], T = x && !O;
+  r.useLayoutEffect(() => C(!1), [O]);
   let {
     ref: L,
     isTransitioning: w,
@@ -143,7 +143,7 @@ function M(e) {
     key: a,
     isExpanded: T,
     durationMs: 200,
-    maxAnimationHeight: O.K7
+    maxAnimationHeight: E.K7
   });
   r.useEffect(() => {
     !g && x && (0, c.yw)(A.rMx.APP_LAUNCHER_SECTION_VIEW_MORE, {
@@ -259,7 +259,7 @@ function D(e) {
           installOnDemand: o,
           query: l
         }, r.id)
-      }), r && w.map(e => (0, i.jsx)(E.Z, {}, e))]
+      }), r && w.map(e => (0, i.jsx)(O.Z, {}, e))]
     })]
   }) : (0, i.jsxs)("div", {
     children: [(0, i.jsx)(j.Z, {
@@ -308,12 +308,12 @@ function U() {
       title: I.NW.string(I.t["0hKkS0"])
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
-      children: L.map(e => (0, i.jsx)(E.Z, {}, e))
+      children: L.map(e => (0, i.jsx)(O.Z, {}, e))
     }), (0, i.jsx)(j.Z, {
       title: I.NW.string(I.t.PHjkRE)
     }), (0, i.jsx)("div", {
       className: S.sectionContentContainer,
-      children: w.map(e => (0, i.jsx)(E.Z, {}, e))
+      children: w.map(e => (0, i.jsx)(O.Z, {}, e))
     })]
   })
 }

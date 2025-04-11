@@ -54,14 +54,14 @@ function y(e) {
   }, [y]), {
     iconURL: j,
     name: P,
-    description: E
+    description: O
   } = r.useMemo(() => (0, u.sl)(y, {
     fakeAppIconURL: _
-  }), [y]), O = r.useMemo(() => {
+  }), [y]), E = r.useMemo(() => {
     var e;
-    let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : E;
+    let t = null != (e = null == n ? void 0 : n.displayDescription) ? e : O;
     return null == t ? null : (0, d.ae)(t, void 0)
-  }, [E, null == n ? void 0 : n.displayDescription]), {
+  }, [O, null == n ? void 0 : n.displayDescription]), {
     trackSearchResultsItemImpressionRef: A
   } = (0, h.Z)({
     applicationId: y.id,
@@ -105,7 +105,7 @@ function y(e) {
           variant: "text-sm/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: O
+          children: E
         })]
       }), null != n ? (0, i.jsx)(l.Text, {
         className: b.cmdAppName,

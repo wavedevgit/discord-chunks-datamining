@@ -1,6 +1,6 @@
 /**
   Module ID: 93886
-  Original File Name: 153d7f5eb03d4ff1
+  Original File Name: 420934b77780fd9f
 **/
 .panel_fe7ab2 {
     flex: 1;
@@ -1102,12 +1102,22 @@
     padding: 0
 }
 
+.buttonsContainer_a8b931 {
+    display: flex;
+    gap: var(--spacing-8);
+    margin-bottom: var(--spacing-24)
+}
+
 .container__9b0bb {
     padding: var(--spacing-24)
 }
 
 .section__9b0bb {
-    padding: var(--spacing-24) 0
+    padding-bottom: var(--spacing-24)
+}
+
+.formSwitch__9b0bb,.header__9b0bb {
+    margin-bottom: var(--spacing-8)
 }
 
 .switch__9d40d {
@@ -5033,4 +5043,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     right: 0
 }
 
-/*# sourceMappingURL=153d7f5eb03d4ff1.css.map*/
+/*# sourceMappingURL=420934b77780fd9f.css.map*/

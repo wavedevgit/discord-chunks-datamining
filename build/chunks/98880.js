@@ -27,8 +27,8 @@ var i, r = n(200651),
   N = n(220082),
   j = n(70097),
   P = n(973616),
-  E = n(594174),
-  O = n(695103),
+  O = n(594174),
+  E = n(695103),
   A = n(880448),
   I = n(768581),
   S = n(573188),
@@ -245,9 +245,9 @@ function K(e) {
     description: C
   } = l.useMemo(() => (0, L.sl)(t, {
     fakeAppIconURL: V
-  }), [t]), g = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), j = (0, N.ZP)(y, ""), [P, E] = l.useState(!1), A = l.useCallback(() => {
-    !0 === o && E(!0)
-  }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => E(!1), []), k = (0, s.e7)([f.Z, O.Z], () => f.Z.inDevModeForApplication(t.id) || O.Z.inTestModeForApplication(t.id), [t.id]), Z = (0, L.WA)(t), {
+  }), [t]), g = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), j = (0, N.ZP)(y, ""), [P, O] = l.useState(!1), A = l.useCallback(() => {
+    !0 === o && O(!0)
+  }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => O(!1), []), k = (0, s.e7)([f.Z, E.Z], () => f.Z.inDevModeForApplication(t.id) || E.Z.inTestModeForApplication(t.id), [t.id]), Z = (0, L.WA)(t), {
     enabled: D
   } = S.X.useExperiment({
     location: "AppLauncherAppCard"
@@ -355,7 +355,7 @@ function $() {
 function ee(e) {
   let {
     application: t
-  } = e, n = E.default.getCurrentUser();
+  } = e, n = O.default.getCurrentUser();
   if (!(null == n ? void 0 : n.isStaff()) && !(null == n ? void 0 : n.isStaffPersonal())) return null;
   let i = (0, L.yJ)(t);
   if (null == i || !(0, L.BQ)(t)) return null;

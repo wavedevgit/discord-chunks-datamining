@@ -1,7 +1,7 @@
 /** Chunk was on 35755 **/
 n.d(t, {
   Q2: () => A,
-  pe: () => O
+  pe: () => E
 }), n(388685), n(539854), n(35282), n(472816), n(794429);
 var i = n(192379),
   r = n(392711),
@@ -36,11 +36,11 @@ function P(e, t) {
   return (0, p.un)(n, i)
 }
 
-function E(e, t) {
+function O(e, t) {
   return (0, p.un)(e.displayName, t.displayName)
 }
 
-function O(e) {
+function E(e) {
   let {
     context: t,
     query: n,
@@ -88,7 +88,7 @@ function O(e) {
     context: t,
     includeBuiltIn: !0
   }), {
-    apps: O
+    apps: E
   } = function(e) {
     let {
       context: t,
@@ -212,11 +212,11 @@ function O(e) {
       }, (e, t) => {
         let n = d.ZP.getScoreWithoutLoadingLatest(u, e);
         return d.ZP.getScoreWithoutLoadingLatest(u, t) - n
-      }), E]
+      }), O]
     })
   }, [a, b, r, t, n]), S = i.useMemo(() => {
     if (0 === I.length) return [];
-    let e = new Map(O.map(e => [e.id, e]));
+    let e = new Map(E.map(e => [e.id, e]));
     return l().compact(I.map(t => {
       var n;
       let i = e.get(t.applicationId);
@@ -228,17 +228,17 @@ function O(e) {
         section: r
       }
     }))
-  }, [O, I, _]), T = i.useMemo(() => {
+  }, [E, I, _]), T = i.useMemo(() => {
     var e, i, r, l, a;
     let u = [];
     if (h) {
-      let e = new Set(O.map(e => {
+      let e = new Set(E.map(e => {
         let {
           id: t
         } = e;
         return t
       }));
-      u.push(...O), u.push(...A.filter(t => {
+      u.push(...E), u.push(...A.filter(t => {
         let {
           application: {
             id: n
@@ -251,7 +251,7 @@ function O(e) {
         } = e;
         return t
       }))
-    } else s && (u = O);
+    } else s && (u = E);
     return (0, y.N)(u, {
       limit: o,
       filterPredicates: [function(e) {
@@ -288,7 +288,7 @@ function O(e) {
       })],
       sortComparers: [j, P]
     })
-  }, [s, h, o, t, n, O, A]), L = S.length > 0, w = T.length > 0;
+  }, [s, h, o, t, n, E, A]), L = S.length > 0, w = T.length > 0;
   return {
     commandResults: S,
     hasCommandResults: L,

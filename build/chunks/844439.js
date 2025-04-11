@@ -1,7 +1,7 @@
 /** Chunk was on 22878 **/
 n.d(t, {
   M: () => s,
-  ZP: () => E
+  ZP: () => g
 });
 var r, l, o = n(442837),
   a = n(570140);
@@ -94,7 +94,7 @@ class O extends(l = o.ZP.Store) {
   }
 }
 i(O, "displayName", void 0);
-let E = new O(a.Z, {
+let g = new O(a.Z, {
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS: function(e) {
     let {
       location: t,
