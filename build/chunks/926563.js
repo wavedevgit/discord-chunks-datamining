@@ -6,8 +6,8 @@ var r = n(200651);
 n(192379);
 var a = n(481060),
   i = n(680295),
-  o = n(687158),
-  l = n(899007),
+  l = n(687158),
+  o = n(899007),
   s = n(648052),
   u = n(867176),
   c = n(502762),
@@ -25,7 +25,7 @@ function b(e) {
     previewStatus: S,
     placeHolderText: j,
     transitionState: g
-  } = e, x = (0, o.ZP)(t.id);
+  } = e, x = (0, l.ZP)(t.id);
   return (0, r.jsxs)(c.Z, {
     user: t,
     displayProfile: x,
@@ -38,7 +38,7 @@ function b(e) {
         profileType: p.y0.BITE_SIZE
       }), (0, r.jsx)("div", {
         inert: "",
-        children: (0, r.jsx)(l.Z, {
+        children: (0, r.jsx)(o.Z, {
           user: t,
           displayProfile: x,
           profileType: p.y0.BITE_SIZE,

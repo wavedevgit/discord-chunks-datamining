@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651),
   a = n(192379),
   i = n(120356),
-  o = n.n(i),
-  l = n(442837),
+  l = n.n(i),
+  o = n(442837),
   s = n(481060),
   u = n(596454),
   c = n(393238),
@@ -20,8 +20,8 @@ var r = n(200651),
   j = n(368326),
   g = n(720449),
   x = n(684269),
-  O = n(397416),
-  v = n(745579),
+  v = n(397416),
+  O = n(745579),
   _ = n(429467),
   N = n(676035),
   y = n(926563),
@@ -44,15 +44,15 @@ function D(e) {
     location: "CustomStatusModalWithPreview"
   }), R = (0, S.P)({
     location: "CustomStatusModalWithPreview"
-  }), W = (0, l.e7)([h.default], () => {
+  }), W = (0, o.e7)([h.default], () => {
     var e;
     return null != (e = h.default.getCurrentUser()) ? e : null
-  }), M = (0, N.a)(), [U, z] = a.useState(null != (t = null == M ? void 0 : M.state) ? t : ""), [L, F] = a.useState(null != (n = null == M ? void 0 : M.emoji) ? n : null), [H, Y] = a.useState((0, x.Z)()), K = a.useRef(null), q = a.useRef(null), G = a.useRef(null), [V, X] = a.useState(null != B ? B : null), $ = U.length > 0 || null != L, Q = A && null != V ? V.label() : w.NW.string(w.t["xod36+"]), [J, ee] = a.useState(Q), {
+  }), M = (0, N.a)(), [U, z] = a.useState(null != (t = null == M ? void 0 : M.state) ? t : ""), [L, F] = a.useState(null != (n = null == M ? void 0 : M.emoji) ? n : null), [H, Y] = a.useState((0, x.Z)()), K = a.useRef(null), G = a.useRef(null), q = a.useRef(null), [V, X] = a.useState(null != B ? B : null), $ = U.length > 0 || null != L, Q = A && null != V ? V.label() : w.NW.string(w.t["xod36+"]), [J, ee] = a.useState(Q), {
     ref: et,
     width: en
   } = (0, c.Z)(Q);
   a.useEffect(() => {
-    let e = G.current;
+    let e = q.current;
     if (null == en || null == e) return;
     let t = en - 78;
     e.textContent = Q;
@@ -98,8 +98,8 @@ function D(e) {
       emojiName: L.name,
       animated: !!L.animated
     }),
-    eo = A ? w.NW.string(w.t.rp0aho) : w.NW.string(w.t.UcdRn5),
-    el = "custom-status-placeholder-text";
+    el = A ? w.NW.string(w.t.rp0aho) : w.NW.string(w.t.UcdRn5),
+    eo = "custom-status-placeholder-text";
   return (0, r.jsxs)(s.Y0X, {
     transitionState: i,
     children: [(0, r.jsxs)(s.xBx, {
@@ -130,18 +130,18 @@ function D(e) {
       }), (0, r.jsxs)(s.hjN, {
         className: E.formGroup,
         titleClassName: E.customStatusInputTitle,
-        title: eo,
+        title: el,
         children: [(0, r.jsxs)("div", {
           className: E.inputContainer,
           ref: et,
           children: [(0, r.jsx)("span", {
-            ref: G,
+            ref: q,
             className: E.hiddenPlaceholder,
             "aria-hidden": "true"
           }), (0, r.jsx)("div", {
             className: E.emojiButtonContainer,
             children: (0, r.jsx)(s.yRy, {
-              targetElementRef: q,
+              targetElementRef: G,
               renderPopout: e => {
                 let {
                   closePopout: t
@@ -181,7 +181,7 @@ function D(e) {
                   }
                   return e
                 }({}, e), a = a = {
-                  ref: q,
+                  ref: G,
                   active: i,
                   className: E.emojiButton,
                   tabIndex: 0,
@@ -200,7 +200,7 @@ function D(e) {
             })
           }), (0, r.jsx)(s.Kx8, {
             autosize: !0,
-            "aria-describedby": el,
+            "aria-describedby": eo,
             value: U,
             maxLength: C.s0,
             rows: 1,
@@ -215,7 +215,7 @@ function D(e) {
             className: E.input,
             inputRef: K
           }), (0, r.jsx)(s.nn4, {
-            id: el,
+            id: eo,
             children: "".concat(w.NW.string(w.t.EVV6ub), ": ").concat(Q)
           }), (U.length > 0 || null != L) && (0, r.jsx)("div", {
             className: E.clearButtonWrapper,
@@ -244,7 +244,7 @@ function D(e) {
         }), A && (0, r.jsxs)(s.P3F, {
           ignoreKeyPress: $,
           "aria-disabled": $,
-          className: o()(E.needInspiration, $ && E.needInspirationDisabled),
+          className: l()(E.needInspiration, $ && E.needInspirationDisabled),
           onClick: $ ? void 0 : () => {
             let e = (0, _.Z)((null == V ? void 0 : V.value) != null ? new Set([V.value, ...I]) : void 0);
             b.default.track(T.rMx.CUSTOM_STATUS_RANDOMIZER_CLICKED, {
@@ -272,14 +272,14 @@ function D(e) {
             options: C.wS.map(e => ({
               value: e,
               key: e,
-              label: (0, O.Z)(e, R)
+              label: (0, v.Z)(e, R)
             })),
             onChange: e => Y(e),
             renderOptionLabel: e => {
               let {
                 value: t
               } = e;
-              return (0, v.Z)(t, R)
+              return (0, O.Z)(t, R)
             },
             look: s.qQH.CUSTOM,
             popoutWidth: 200,
