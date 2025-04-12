@@ -93,9 +93,8 @@ function L(e) {
     tension: 400,
     friction: 30
   }, k = (0, u.q_F)({
-    transform: w ? "translateX(-50%) translateY(0px) scale(2.40)" : "translateX(-50%) translateY(32px) scale(1)",
-    borderRadius: w ? "7px" : "0px",
-    opacity: w ? .3 : 1,
+    transform: w ? "translateX(-50%) translateY(16px) scale(1)" : "translateX(-50%) translateY(24px) scale(1.40)",
+    borderRadius: "0px",
     transformOrigin: "center 0%",
     config: M
   }), j = (0, u.q_F)({
@@ -105,12 +104,9 @@ function L(e) {
     opacity: +!!w,
     transform: w ? "translateY(0)" : "translateY(20px)",
     config: M
-  }), G = (0, u.q_F)({
-    opacity: +!!w,
-    config: M
-  }), B = i.useCallback(e => {
+  }), G = i.useCallback(e => {
     e && E(!0)
-  }, []), V = (0, d.O)(B), F = (0, b.Z)(n);
+  }, []), B = (0, d.O)(G), V = (0, b.Z)(n, I);
   return (0, r.jsxs)("div", {
     className: a()(C.topPerksCard, C.animatedTopPerksCard, A.powerupCard, {
       [C.animate]: g
@@ -119,20 +115,15 @@ function L(e) {
     onMouseLeave: () => P(!1),
     children: [(0, r.jsx)("div", {
       className: C.intObserver,
-      ref: V
-    }), (0, r.jsxs)("div", {
+      ref: B
+    }), (0, r.jsx)("div", {
       className: C.topPerksCardImageWrapper,
-      children: [(0, r.jsx)(s.animated.img, {
+      children: (0, r.jsx)(s.animated.img, {
         className: a()(C.topPerksCardImage, A.image),
-        src: F,
+        src: V,
         alt: "",
         style: k
-      }), (0, r.jsx)(s.animated.div, {
-        className: C.imageGradientOverlay,
-        style: G
-      })]
-    }), w && (0, r.jsx)("div", {
-      className: C.borderGlowOverlay
+      })
     }), (0, r.jsxs)(s.animated.div, {
       style: D(R({}, j), {
         transform: j.y.to(e => "translateY(".concat(e, "px)"))

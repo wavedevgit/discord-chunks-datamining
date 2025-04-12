@@ -21,11 +21,11 @@ function x(e) {
   } = e, x = (0, a.e7)([d.Z], () => {
     var e, t;
     return null != (t = null == (e = d.Z.getStateForGuild(n)) ? void 0 : e.appliedBoosts) ? t : 0
-  }), _ = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), f = x - o.useMemo(() => {
+  }), _ = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(n), [n]), v = x - o.useMemo(() => {
     var e, n, t;
     return null != (t = null == _ || null == (n = _.filter) || null == (e = n.call(_, e => !e.ended && null == e.endsAt)) ? void 0 : e.length) ? t : 0
   }, [_]);
-  return f <= 0 ? null : (0, r.jsxs)("div", {
+  return v <= 0 ? null : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(s.P4T, {
       color: l.Z.colors.TEXT_WARNING,
@@ -37,7 +37,7 @@ function x(e) {
     }), (0, r.jsx)(i.xv, {
       variant: "text-sm/medium",
       children: m.NW.formatToPlainString(u.Z.iAaAiI, {
-        boostCount: f,
+        boostCount: v,
         perksString: t.map(e => e.title).join(", ")
       })
     })]

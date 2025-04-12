@@ -18,12 +18,16 @@ function p(e) {
     guildId: n,
     powerup: t
   } = e, [p, x] = o.useState(void 0);
-  return (0, d.KT)(p), (0, r.jsxs)(a.Z, {
+  (0, d.KT)(p);
+  let [_, v] = o.useState(!1);
+  return (0, r.jsxs)(a.Z, {
+    onHover: e => v(e),
     guildId: n,
     powerup: t,
     children: [(0, r.jsx)(c.m, {
       className: m.image,
-      powerup: t
+      powerup: t,
+      isHovering: _
     }), (0, r.jsxs)("div", {
       className: m.contentContainer,
       children: [(0, r.jsx)("div", {
