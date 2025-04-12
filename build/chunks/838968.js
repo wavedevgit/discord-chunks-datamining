@@ -13,14 +13,14 @@ var o = t(120356),
   c = t(279604),
   d = t(680278),
   u = t(388032),
-  p = t(117172);
+  m = t(117172);
 
-function m(e) {
+function p(e) {
   let {
     dateString: n
   } = e;
   return (0, r.jsxs)("div", {
-    className: p.inline,
+    className: m.inline,
     children: [(0, r.jsx)(i.owK, {
       size: "xs",
       color: i.TVs.colors.STATUS_WARNING
@@ -41,9 +41,9 @@ function x(e) {
     className: o
   } = e, l = (0, a.Z)(n, t);
   return (0, r.jsxs)("div", {
-    className: s()(p.labelContainer, o),
+    className: s()(m.labelContainer, o),
     children: [(0, r.jsxs)("div", {
-      className: s()(p.inline, p.inlineBoost),
+      className: s()(m.inline, m.inlineBoost),
       children: [(0, r.jsx)(i.$Eu, {
         size: "sm",
         color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
@@ -52,10 +52,10 @@ function x(e) {
         variant: "heading-md/bold",
         children: t.cost
       })]
-    }), null != l && ((null == l ? void 0 : l.ends_at) != null ? (0, r.jsx)(m, {
+    }), null != l && ((null == l ? void 0 : l.ends_at) != null ? (0, r.jsx)(p, {
       dateString: l.ends_at
     }) : (0, r.jsxs)("div", {
-      className: p.inline,
+      className: m.inline,
       children: [(0, r.jsx)(i.owK, {
         size: "xs",
         color: i.TVs.colors.STATUS_POSITIVE
@@ -74,15 +74,15 @@ function _(e) {
     powerup: t,
     className: o,
     children: l
-  } = e, d = (0, a.Z)(n, t), u = null != d, m = (null == d ? void 0 : d.ends_at) != null, {
+  } = e, d = (0, a.Z)(n, t), u = null != d, p = (null == d ? void 0 : d.ends_at) != null, {
     onShowMore: x
   } = (0, c.ZP)(n, t);
   return (0, r.jsx)(i.kL8, {
     "aria-label": t.title,
     onClick: x,
-    className: s()(p.container, {
-      [p.active]: u,
-      [p.warning]: m
+    className: s()(m.container, {
+      [m.active]: u,
+      [m.warning]: p
     }, o),
     children: l
   })
