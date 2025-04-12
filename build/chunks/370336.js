@@ -1,12 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  xp: () => o
+  Sh: () => l,
+  xp: () => s
 });
-var r = n(176984),
-  i = n(622916);
+var r = n(467510),
+  i = n(176984),
+  o = n(573736),
+  a = n(622916);
 
-function o(e, t, n) {
+function s(e, t, n) {
   try {
     Object.defineProperty(e, t, {
       value: n,
@@ -14,19 +17,38 @@ function o(e, t, n) {
       configurable: !0
     })
   } catch (n) {
-    r.X && i.kg.log(`Failed to add non-enumerable property "${t}" to object`, e)
+    i.X && a.kg.log(`Failed to add non-enumerable property "${t}" to object`, e)
   }
 }
 
-function a(e) {
+function l(e) {
+  if ((0, o.VZ)(e)) return {
+    message: e.message,
+    name: e.name,
+    stack: e.stack,
+    ...u(e)
+  };
+  if (!(0, o.cO)(e)) return e;
+  {
+    let t = {
+      type: e.type,
+      target: c(e.target),
+      currentTarget: c(e.currentTarget),
+      ...u(e)
+    };
+    return "undefined" != typeof CustomEvent && (0, o.V9)(e, CustomEvent) && (t.detail = e.detail), t
+  }
+}
+
+function c(e) {
   try {
-    return isElement(e) ? htmlTreeAsString(e) : Object.prototype.toString.call(e)
+    return (0, o.kK)(e) ? (0, r.Rt)(e) : Object.prototype.toString.call(e)
   } catch (e) {
     return "<unknown>"
   }
 }
 
-function s(e) {
+function u(e) {
   if ("object" != typeof e || null === e) return {};
   {
     let t = {};
@@ -35,7 +57,7 @@ function s(e) {
   }
 }
 
-function l(e) {
+function d(e) {
   if (!isPlainObject(e)) return !1;
   try {
     let t = Object.getPrototypeOf(e).constructor.name;

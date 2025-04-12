@@ -1,6 +1,6 @@
 /** Chunk was on 69774 **/
 t.d(n, {
-  Z: () => h
+  Z: () => j
 });
 var r = t(200651);
 t(192379);
@@ -82,7 +82,7 @@ function y(e) {
   })
 }
 
-function j(e) {
+function h(e) {
   let {
     gameFriends: n,
     hasIncomingPendingGameFriends: t,
@@ -109,7 +109,7 @@ function j(e) {
   })
 }
 
-function h(e) {
+function j(e) {
   let {
     isCurrentUser: n,
     user: t,
@@ -118,7 +118,7 @@ function h(e) {
     onClose: I
   } = e, {
     newestAnalyticsLocation: g
-  } = (0, l.ZP)(), h = (0, s.wn)({
+  } = (0, l.ZP)(), j = (0, s.wn)({
     location: "UserProfileModalHeaderActionButtons"
   }), {
     gameFriends: v,
@@ -133,9 +133,9 @@ function h(e) {
       userId: t.id,
       onClose: I
     })
-  }) : d === p.OGo.NONE && h && O ? (0, r.jsxs)("div", {
+  }) : d === p.OGo.NONE && j && O ? (0, r.jsxs)("div", {
     className: m.multipleButtons,
-    children: [(0, r.jsx)(j, {
+    children: [(0, r.jsx)(h, {
       user: t,
       analyticsLocation: g,
       gameFriends: v,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P
+  Z: () => C
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -10,25 +10,24 @@ var r = n(200651),
   s = n(727637),
   l = n(100527),
   c = n(906732),
-  u = n(271383),
-  d = n(430824),
-  f = n(785717),
-  _ = n(221292),
-  p = n(687158),
-  h = n(899007),
-  m = n(867176),
-  g = n(502762),
-  E = n(952124),
-  b = n(544989),
-  y = n(4517),
-  v = n(171368),
-  O = n(895697),
-  I = n(161572),
-  S = n(228168),
-  T = n(388032),
-  N = n(200669);
+  u = n(430824),
+  d = n(785717),
+  f = n(221292),
+  _ = n(687158),
+  p = n(899007),
+  h = n(867176),
+  m = n(502762),
+  g = n(952124),
+  E = n(544989),
+  b = n(4517),
+  y = n(171368),
+  v = n(895697),
+  O = n(161572),
+  I = n(228168),
+  S = n(388032),
+  T = n(200669);
 
-function A(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,54 +36,55 @@ function A(e, t, n) {
   }) : e[t] = n, e
 }
 
-function C(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      A(e, t, n[t])
+      N(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e) {
+function C(e) {
   let {
     user: t,
     currentUser: n,
-    guildId: A,
-    channelId: P,
-    messageId: R,
-    roleId: w,
+    guildId: N,
+    channelId: C,
+    messageId: P,
+    roleId: R,
+    openedAt: w,
     closePopout: D,
     setPopoutRef: L,
     disableUserProfileLink: x = __OVERLAY__,
     newAnalyticsLocations: M = []
   } = e, {
     analyticsLocations: k
-  } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, f.ZB)({
+  } = (0, c.ZP)([...M, l.Z.BITE_SIZE_PROFILE_POPOUT]), j = (0, d.ZB)({
     layout: "BITE_SIZE_POPOUT",
     userId: t.id,
-    guildId: A,
-    channelId: P,
-    messageId: R,
-    roleId: w
-  }), U = (0, p.ZP)(t.id, A), G = (0, o.e7)([d.Z], () => null != A ? d.Z.getGuild(A) : null), B = (0, o.e7)([u.ZP], () => null != A ? u.ZP.getMember(A, t.id) : null), V = i.useRef(null), F = (0, s.Z)(V);
+    guildId: N,
+    channelId: C,
+    messageId: P,
+    roleId: R
+  }), U = (0, _.ZP)(t.id, N), G = (0, o.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), V = (0, s.Z)(B);
   i.useEffect(() => {
-    null == L || L(null == V ? void 0 : V.current)
-  }, [V, L]);
-  let Z = e => {
-      null == D || D(), (0, v.openUserProfileModal)(C({
+    null == L || L(null == B ? void 0 : B.current)
+  }, [B, L]);
+  let F = e => {
+      null == D || D(), (0, y.openUserProfileModal)(A({
         sourceAnalyticsLocations: k
       }, j, e))
     },
-    H = () => x ? null : (0, r.jsx)(a.sNh, {
+    Z = () => x ? null : (0, r.jsx)(a.sNh, {
       id: "view-profile",
-      label: T.NW.string(T.t["+Xp3ho"]),
+      label: S.NW.string(S.t["+Xp3ho"]),
       action: () => {
-        Z(), (0, _.pQ)(C({
+        F(), (0, f.pQ)(A({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: k
         }, j))
@@ -92,57 +92,60 @@ function P(e) {
     });
   return (0, r.jsx)(c.Gt, {
     value: k,
-    children: (0, r.jsx)(f.Mt, {
+    children: (0, r.jsx)(d.Mt, {
       value: j,
-      shouldTrackViewOnMount: null == B || null != B.fullProfileLoadedTimestamp,
+      openedAt: w,
+      fetchStartedAt: null == U ? void 0 : U.fetchStartedAt,
+      fetchEndedAt: null == U ? void 0 : U.fetchEndedAt,
+      isLoaded: null == U ? void 0 : U.isLoaded,
       children: (0, r.jsx)(a.VqE, {
-        ref: V,
+        ref: B,
         "aria-label": t.username,
-        children: (0, r.jsxs)(g.Z, {
+        children: (0, r.jsxs)(m.Z, {
           user: t,
           displayProfile: U,
-          profileType: S.y0.BITE_SIZE,
-          children: [(0, r.jsx)(b.Z, {
-            profileType: S.y0.BITE_SIZE,
-            children: (0, r.jsx)(E.Z, {
+          profileType: I.y0.BITE_SIZE,
+          children: [(0, r.jsx)(E.Z, {
+            profileType: I.y0.BITE_SIZE,
+            children: (0, r.jsx)(g.Z, {
               user: t,
-              guildId: A,
-              viewProfileItem: H(),
+              guildId: N,
+              viewProfileItem: Z(),
               onCloseProfile: D
             })
           }), (0, r.jsxs)("header", {
-            className: N.header,
-            children: [(0, r.jsx)(m.Z, {
+            className: T.header,
+            children: [(0, r.jsx)(h.Z, {
               user: t,
               displayProfile: U,
-              guildId: A,
-              profileType: S.y0.BITE_SIZE
-            }), (0, r.jsx)(h.Z, {
+              guildId: N,
+              profileType: I.y0.BITE_SIZE
+            }), (0, r.jsx)(p.Z, {
               user: t,
               displayProfile: U,
-              guildId: A,
-              channelId: P,
-              profileType: S.y0.BITE_SIZE,
-              onOpenProfile: x ? void 0 : Z
-            }), (0, r.jsx)(y.Z, {
+              guildId: N,
+              channelId: C,
+              profileType: I.y0.BITE_SIZE,
+              onOpenProfile: x ? void 0 : F
+            }), (0, r.jsx)(b.Z, {
               location: "BotUserProfilePopout",
               user: t,
-              profileType: S.y0.BITE_SIZE,
+              profileType: I.y0.BITE_SIZE,
               onCloseProfile: D
             })]
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
             displayProfile: U,
             guild: G,
-            isHovering: F,
-            onOpenProfile: x ? void 0 : Z,
-            channelId: P,
+            isHovering: V,
+            onOpenProfile: x ? void 0 : F,
+            channelId: C,
             onClose: D
-          }), (0, r.jsx)(I.Z, {
+          }), (0, r.jsx)(O.Z, {
             user: t,
-            guildId: A,
-            channelId: P,
+            guildId: N,
+            channelId: C,
             onClose: D
           })]
         })

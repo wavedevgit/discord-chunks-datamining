@@ -1,6 +1,6 @@
 /** Chunk was on 69774 **/
 t.d(n, {
-  Z: () => j
+  Z: () => h
 });
 var r = t(200651);
 t(192379);
@@ -20,13 +20,13 @@ var o = t(120356),
   g = t(228168),
   y = t(227832);
 
-function j(e) {
+function h(e) {
   let {
     user: n,
     entry: t,
     profileGuildId: o,
-    className: j,
-    onClose: h,
+    className: h,
+    onClose: j,
     hideContextMenu: v = !1
   } = e, {
     analyticsLocations: x
@@ -67,14 +67,14 @@ function j(e) {
             display: "recent",
             entry: t,
             user: n,
-            onClose: h,
+            onClose: j,
             children: e
           }),
           children: (0, r.jsx)(m.Z, {
             entry: t,
             user: n,
-            onClose: h,
-            className: i()(j, {
+            onClose: j,
+            className: i()(h, {
               [y.hoisted]: O === g.n_.ACTIVITY && Z === t.id
             })
           })

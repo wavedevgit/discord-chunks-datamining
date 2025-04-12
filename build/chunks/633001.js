@@ -24,14 +24,14 @@ var r = n(200651),
   y = n(572004),
   C = n(70956),
   O = n(145597),
-  S = n(246992),
-  N = n(981631),
+  N = n(246992),
+  S = n(981631),
   T = n(757744),
   E = n(388032),
   k = n(931207),
   P = n(616257);
 
-function w(e) {
+function I(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -50,7 +50,7 @@ function w(e) {
   return e
 }
 
-function I(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,8 +63,8 @@ function I(e, t) {
   }), e
 }
 let R = {
-    [N.Odu.CLICK_ZONE_DEBUG]: e => I(w({
-      type: N.Odu.CLICK_ZONE_DEBUG,
+    [S.Odu.CLICK_ZONE_DEBUG]: e => w(I({
+      type: S.Odu.CLICK_ZONE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -75,11 +75,11 @@ let R = {
         width: 100,
         height: 100
       }
-    }, g.Z.getWidgetDefaultSettings(N.Odu.CLICK_ZONE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(S.Odu.CLICK_ZONE_DEBUG)), {
       pinned: !0
     }),
-    [N.Odu.PERFORMANCE_DEBUG]: e => I(w({
-      type: N.Odu.PERFORMANCE_DEBUG,
+    [S.Odu.PERFORMANCE_DEBUG]: e => w(I({
+      type: S.Odu.PERFORMANCE_DEBUG,
       id: (0, o.Z)(),
       layoutId: e,
       anchor: {
@@ -91,7 +91,7 @@ let R = {
         width: "auto",
         height: "auto"
       }
-    }, g.Z.getWidgetDefaultSettings(N.Odu.PERFORMANCE_DEBUG)), {
+    }, g.Z.getWidgetDefaultSettings(S.Odu.PERFORMANCE_DEBUG)), {
       pinned: !0
     })
   },
@@ -274,7 +274,7 @@ function z(e) {
 
 function B() {
   var e, t;
-  let [n, l] = z(N.Odu.CLICK_ZONE_DEBUG), [o, d] = z(N.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, B] = a.useState(E), M = e => {
+  let [n, l] = z(S.Odu.CLICK_ZONE_DEBUG), [o, d] = z(S.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, B] = a.useState(E), M = e => {
     B(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
@@ -291,7 +291,7 @@ function B() {
   }, {
     label: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
-  }].map(e => I(w({}, e), {
+  }].map(e => w(I({}, e), {
     label: "".concat(e.label, " ").concat(E === e.value ? "(current)" : "")
   })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), F = (0, s.e7)([j.default], () => j.default.getFocusedPID()), W = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   a.useEffect(() => {
@@ -317,7 +317,7 @@ function B() {
         screenType: a,
         timestamp: l
       }]), e
-    }, w({}, e)))
+    }, I({}, e)))
   }, 10 * C.Z.Millis.SECOND), () => clearInterval($.current)), []);
   let Q = e => {
       u.Z.setRenderDebugMode(!f.ZP.hasRenderDebugMode(e), e)
@@ -351,7 +351,7 @@ function B() {
         children: [(0, r.jsx)(c.ua7, {
           position: "left",
           text: "Enables a red border around click zones to help with debugging.",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: g,
               onChange: () => ee(),
@@ -369,7 +369,7 @@ function B() {
         }), (0, r.jsx)(c.ua7, {
           position: "left",
           text: "Enables a border around any widgets that are rendered on screen that are pinned (even if they are hidden). Blue = pinned widgets, Gray = unpinned widgets",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: v,
               onChange: () => et(),
@@ -387,7 +387,7 @@ function B() {
         }), (0, r.jsx)(c.ua7, {
           position: "left",
           text: "Disables GPU Boost, which can help with performance when games compete for GPU resources.",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: y,
               onChange: () => en(),
@@ -405,7 +405,7 @@ function B() {
         }), (0, r.jsx)(c.ua7, {
           position: "left",
           text: "Forces GPU Boost, which can help with performance when games compete for GPU resources.",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: T,
               onChange: () => er(),
@@ -424,7 +424,7 @@ function B() {
         }), (0, r.jsx)(c.ua7, {
           position: "left",
           text: "Creates a widget that has a clickzone inside of it, which will show/hide every few seconds.",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: null != n,
               onChange: () => l(),
@@ -442,7 +442,7 @@ function B() {
         }), (0, r.jsx)(c.ua7, {
           position: "left",
           text: "Creates a widget that shows the overlay's window performance metrics.",
-          children: e => (0, r.jsx)("div", I(w({}, e), {
+          children: e => (0, r.jsx)("div", w(I({}, e), {
             children: (0, r.jsx)(c.XZJ, {
               value: null != o,
               onChange: () => d(),
@@ -461,20 +461,20 @@ function B() {
       }), (0, r.jsx)(c.ua7, {
         position: "left",
         text: "Override the overlay render mode",
-        children: e => (0, r.jsx)("div", I(w({}, e), {
+        children: e => (0, r.jsx)("div", w(I({}, e), {
           className: k.panelGroup,
           children: (0, r.jsx)(c.PhF, {
             serialize: e => e,
             isSelected: e => e === L,
             options: U,
             select: M,
-            popoutLayerContext: S.O$
+            popoutLayerContext: N.O$
           })
         }))
       }), ei.length > 0 && (0, r.jsx)(c.ua7, {
         position: "left",
         text: "Games that are running but not tracked by the overlay",
-        children: e => (0, r.jsx)("div", I(w({}, e), {
+        children: e => (0, r.jsx)("div", w(I({}, e), {
           children: (0, r.jsxs)("div", {
             className: k.panelGroup,
             children: [(0, r.jsx)(c.Text, {
@@ -491,7 +491,7 @@ function B() {
       }), (0, r.jsx)(c.ua7, {
         position: "left",
         text: "The current running games process information",
-        children: e => (0, r.jsx)("div", I(w({}, e), {
+        children: e => (0, r.jsx)("div", w(I({}, e), {
           children: (0, r.jsxs)("div", {
             className: k.panelGroup,
             children: [0 === Object.keys(G).length && (0, r.jsx)(c.Text, {
@@ -541,7 +541,7 @@ function B() {
       }), (0, r.jsx)(c.ua7, {
         position: "left",
         text: "The most recent screen types we've logged, indexed by pid",
-        children: e => (0, r.jsx)("div", I(w({}, e), {
+        children: e => (0, r.jsx)("div", w(I({}, e), {
           children: (0, r.jsxs)("div", {
             className: k.panelGroup,
             children: [0 === Object.keys(G).length && (0, r.jsx)(c.Text, {

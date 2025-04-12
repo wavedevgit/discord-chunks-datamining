@@ -1,6 +1,6 @@
 /**
   Module ID: 31924
-  Original File Name: 9a0d75a0e3d03e69
+  Original File Name: 035f78e6dcaa30db
 **/
 .icon_f4b9b5 {
     filter: saturate(1);
@@ -119,13 +119,20 @@
 
 .warningContainer_bc32e9 {
     padding: var(--spacing-16);
-    display: flex;
-    flex-direction: column;
     gap: var(--spacing-4);
     border: 1px solid var(--border-faint);
     box-shadow: var(--shadow-low);
     background: var(--bg-mod-subtle);
     border-radius: var(--radius-sm)
+}
+
+.warningContainer_bc32e9,.warningText_bc32e9 {
+    display: flex;
+    flex-direction: column
+}
+
+.warningText_bc32e9 {
+    gap: 2px
 }
 
 .errorText_bc32e9 {
@@ -143,4 +150,4 @@
     background: var(--bg-base-tertiary)
 }
 
-/*# sourceMappingURL=9a0d75a0e3d03e69.css.map*/
+/*# sourceMappingURL=035f78e6dcaa30db.css.map*/

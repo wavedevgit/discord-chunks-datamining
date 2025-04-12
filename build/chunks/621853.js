@@ -143,9 +143,10 @@ function H(e) {
 function W(e) {
   var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, B, V, F, H, W, K, z, q, Q, X, J, $;
   let {
-    userProfile: ee
-  } = e, et = null != (k = null == (t = ee.guild_member_profile) ? void 0 : t.guild_id) ? k : v;
-  if (null == (n = O.get(ee.user.id)) || n.delete(et), I.delete(ee.user.id), null != ee.mutual_guilds) {
+    userProfile: ee,
+    fetchStartedAt: et
+  } = e, en = null != (k = null == (t = ee.guild_member_profile) ? void 0 : t.guild_id) ? k : v;
+  if (null == (n = O.get(ee.user.id)) || n.delete(en), I.delete(ee.user.id), null != ee.mutual_guilds) {
     let e = {};
     ee.mutual_guilds.forEach(t => {
       let {
@@ -166,28 +167,28 @@ function W(e) {
     D.set(ee.user.id, e), 0 === e && w.set(ee.user.id, x)
   }
   null != ee.mutual_friends && (w.set(ee.user.id, Z(ee.mutual_friends)), D.set(ee.user.id, ee.mutual_friends.length));
-  let en = null != ee.premium_since ? new Date(ee.premium_since) : null,
-    er = null != ee.premium_guild_since ? new Date(ee.premium_guild_since) : null,
-    ei = ee.application,
-    eo = null != ee.badges ? ee.badges.map(e => {
+  let er = null != ee.premium_since ? new Date(ee.premium_since) : null,
+    ei = null != ee.premium_guild_since ? new Date(ee.premium_guild_since) : null,
+    eo = ee.application,
+    ea = null != ee.badges ? ee.badges.map(e => {
       let t = (0, p.fv)(e.id);
-      if ((e.id === S || null != t) && null != en) {
+      if ((e.id === S || null != t) && null != er) {
         let n = m.NW.formatToPlainString(m.t["8zbGNT"], {
-          date: en
+          date: er
         });
         return null != t && (n = m.NW.formatToPlainString(m.t.Hu4jfn, {
-          date: en
+          date: er
         })), y(E({}, e), {
           description: n
         })
       }
-      return e.id.startsWith(T) && null != er ? y(E({}, e), {
+      return e.id.startsWith(T) && null != ei ? y(E({}, e), {
         description: m.NW.formatToPlainString(m.t.IWkAq6, {
-          date: er
+          date: ei
         })
       }) : e
     }) : [];
-  if (null != j && j.userId === ee.user.id && (Date.now() > j.expiresAtMs ? j = null : Y(eo, j)), A.set(ee.user.id, {
+  if (null != j && j.userId === ee.user.id && (Date.now() > j.expiresAtMs ? j = null : Y(ea, j)), A.set(ee.user.id, {
       userId: ee.user.id,
       banner: null == (r = ee.user_profile) ? void 0 : r.banner,
       accentColor: null == (i = ee.user_profile) ? void 0 : i.accent_color,
@@ -199,23 +200,24 @@ function W(e) {
       pronouns: null != (V = null == (b = ee.user_profile) ? void 0 : b.pronouns) ? V : "",
       connectedAccounts: null != (F = ee.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? F : [],
       applicationRoleConnections: null != (H = ee.application_role_connections) ? H : [],
-      premiumSince: en,
+      premiumSince: er,
       premiumType: ee.premium_type,
-      premiumGuildSince: er,
-      lastFetched: Date.now(),
+      premiumGuildSince: ei,
+      fetchStartedAt: et,
+      fetchEndedAt: Date.now(),
       legacyUsername: ee.legacy_username,
-      application: null != ei ? {
-        id: ei.id,
-        primarySkuId: ei.primary_sku_id,
-        customInstallUrl: ei.custom_install_url,
-        installParams: ei.install_params,
-        integrationTypesConfig: ei.integration_types_config,
-        flags: ei.flags,
-        popularApplicationCommandIds: ei.popular_application_command_ids,
-        storefront_available: ei.storefront_available,
-        name: ei.name
+      application: null != eo ? {
+        id: eo.id,
+        primarySkuId: eo.primary_sku_id,
+        customInstallUrl: eo.custom_install_url,
+        installParams: eo.install_params,
+        integrationTypesConfig: eo.integration_types_config,
+        flags: eo.flags,
+        popularApplicationCommandIds: eo.popular_application_command_ids,
+        storefront_available: eo.storefront_available,
+        name: eo.name
       } : null,
-      badges: eo
+      badges: ea
     }), (null == (M = ee.user_profile) || null == (N = M.profile_effect) ? void 0 : N.expires_at) != null) {
     let e = new o.V7;
     P.set(ee.user.id, e), U(ee.user.id)
@@ -279,10 +281,11 @@ function z(e) {
   let {
     userId: r,
     guildId: i,
-    apiError: o
+    apiError: o,
+    fetchStartedAt: a
   } = e;
   null == (t = O.get(r)) || t.delete(null != i ? i : v), I.delete(r);
-  let a = null != (n = A.get(r)) ? n : {
+  let s = null != (n = A.get(r)) ? n : {
     connectedAccounts: [],
     applicationRoleConnections: [],
     premiumSince: null,
@@ -295,10 +298,11 @@ function z(e) {
     bio: "",
     pronouns: "",
     premiumType: null,
-    lastFetched: 0,
+    fetchStartedAt: 0,
+    fetchEndedAt: 0,
     fetchError: void 0
   };
-  a.lastFetched = Date.now(), a.fetchError = o, A.set(r, a), (null == o ? void 0 : o.status) === 404 && (D.set(r, 0), w.set(r, x), L.set(r, M))
+  s.fetchStartedAt = a, s.fetchEndedAt = Date.now(), s.fetchError = o, A.set(r, s), (null == o ? void 0 : o.status) === 404 && (D.set(r, 0), w.set(r, x), L.set(r, M))
 }
 
 function q(e) {
@@ -425,7 +429,7 @@ function ea(e) {
   if (null == e) return !1;
   let t = A.get(e);
   if (null == t) return !1;
-  t.lastFetched = 0, t.fetchError = void 0
+  t.fetchStartedAt = 0, t.fetchEndedAt = 0, t.fetchError = void 0
 }
 class es extends f.Z {
   initialize() {

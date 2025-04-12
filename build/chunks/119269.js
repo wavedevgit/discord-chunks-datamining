@@ -50,13 +50,13 @@ let f = e => {
       customAnimationClassName: y,
       circleColor: C,
       circleStroke: O
-    } = e, S = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), N = t && !S;
+    } = e, N = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), S = t && !N;
     return (0, a.jsx)("div", {
       className: o()(p.progressCircle, n),
       children: (0, a.jsx)(h.Z, {
         animationClassName: o()(p.activeProgressCircle, {
-          [p.activeProgressCircleAnimation]: N,
-          [null != y ? y : ""]: N
+          [p.activeProgressCircleAnimation]: S,
+          [null != y ? y : ""]: S
         }),
         progressCircleStroke: O,
         progressCircleStrokeSize: i,
@@ -67,7 +67,7 @@ let f = e => {
           switch (_) {
             case 0:
               return (0, a.jsx)(m.Z, {
-                className: N ? p.nitroGemAnimation : void 0,
+                className: S ? p.nitroGemAnimation : void 0,
                 backgroundColor: o()(p.gemBackgroundFill, l),
                 backgroundCircleSize: c
               });

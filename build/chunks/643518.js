@@ -27,8 +27,8 @@ function I(e) {
   } = (0, o.U)({
     location: "useUserProfileModalTabBarItems"
   }), {
-    live: j,
-    recent: h,
+    live: h,
+    recent: j,
     stream: v,
     outbox: x
   } = (0, s.Z)(n.id), {
@@ -41,27 +41,27 @@ function I(e) {
   }), Z = n.id === (null == t ? void 0 : t.id), N = (0, r.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE
-  }), P = null != v || j.length > 0, E = h.length > 0, {
+  }), P = null != v || h.length > 0, E = j.length > 0, {
     mutualFriendsCount: S,
     mutualGuilds: T
   } = (0, c.Z)(n), C = null == T ? void 0 : T.length, A = (0, d.Z)({
     user: n,
     location: b.Sbl.PROFILE_MODAL_TABS
-  }), w = [{
+  }), L = [{
     section: p.oh.USER_INFO,
     text: m.NW.string(m.t.jGoPJS)
   }];
-  return !N && (P || y && null == v && null == O && null != _) ? w.push({
+  return !N && (P || y && null == v && null == O && null != _) ? L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
-  }) : (E || null == x && g === p.Tb.RECENT_ACTIVITY) && w.push({
+  }) : (E || null == x && g === p.Tb.RECENT_ACTIVITY) && L.push({
     section: p.oh.ACTIVITY,
     text: m.NW.string(m.t.chq59f)
-  }), !Z && A && (w.push({
+  }), !Z && A && (L.push({
     section: p.oh.MUTUAL_FRIENDS,
     text: (0, u.Z)(S)
-  }), w.push({
+  }), L.push({
     section: p.oh.MUTUAL_GUILDS,
     text: (0, f.Z)(C)
-  })), w
+  })), L
 }

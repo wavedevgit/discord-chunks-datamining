@@ -68,8 +68,8 @@ var r = n(200651),
   eu = n(14357),
   em = n(763296),
   eg = n(640806),
-  ep = n(184301),
-  eh = n(52538),
+  ep = n(52538),
+  eh = n(670188),
   ef = n(861254),
   eb = n(221241),
   eN = n(879815),
@@ -197,23 +197,25 @@ function e4(e) {
   }(), S = (0, en.A)(u);
   return null == s ? null : (0, r.jsx)(_.Z, {
     object: eq.qAy.AVATAR,
-    children: (0, r.jsx)(f.yRy, {
+    children: (0, r.jsx)(eh.Z, {
+      user: s,
       targetElementRef: g,
       clickTrap: !0,
-      renderPopout: e => {
+      renderPopout: (e, t) => {
         let {
-          closePopout: t,
-          setPopoutRef: n
+          closePopout: n,
+          setPopoutRef: i
         } = e;
         return (0, r.jsx)("div", {
           className: eQ.accountProfilePopoutWrapper,
           children: (0, r.jsx)($.Z, {
             currentUser: s,
             highlightBadge: j,
+            openedAt: t,
             onClose: () => {
-              null == t || t()
+              null == n || n()
             },
-            setPopoutRef: n
+            setPopoutRef: i
           })
         })
       },
@@ -225,10 +227,6 @@ function e4(e) {
       onRequestClose: () => {
         c(), C(void 0)
       },
-      preload: () => (0, ep.Z)(s, void 0, {
-        withMutualGuilds: !1,
-        withMutualFriends: !1
-      }),
       children: e => (E(e), (0, r.jsxs)(f.P3F, e1(e0({
         innerRef: g,
         style: S
@@ -847,7 +845,7 @@ function te(e) {
       markAsDismissed: b
     }) : h === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(eg.Z, {
       markAsDismissed: b
-    }) : h === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(eh.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
+    }) : h === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(ep.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
     children: () => (0, r.jsx)(ez.Z, e1(e0({
       ref: u,
       tooltipText: null != t ? eJ.NW.formatToPlainString(eJ.t.Gzh6ZG, {

@@ -31,7 +31,7 @@ function _(e, t) {
   } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
   if ("" === e || u.Z.isFetchingProfile(e, I)) return Promise.resolve();
   let A = u.Z.getUserProfile(e),
-    C = Date.now() - (null != (h = null == A ? void 0 : A.lastFetched) ? h : 0) >= f;
+    C = Date.now() - (null != (h = null == A ? void 0 : A.fetchEndedAt) ? h : 0) >= f;
   if (((null == A || null == (n = A.fetchError) ? void 0 : n.status) === 404 || (null == A || null == (_ = A.fetchError) ? void 0 : _.status) === 429) && !C) return Promise.resolve();
   let P = u.Z.getGuildMemberProfile(e, I),
     R = u.Z.getMutualGuilds(e),

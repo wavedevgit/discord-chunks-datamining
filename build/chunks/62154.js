@@ -19,8 +19,8 @@ var o = t(442837),
   I = t(530),
   g = t(740628),
   y = t(643518),
-  j = t(228168),
-  h = t(981631),
+  h = t(228168),
+  j = t(981631),
   v = t(405666);
 
 function x(e) {
@@ -41,9 +41,9 @@ function x(e) {
   } = (0, o.cj)([s.Z], () => ({
     relationshipType: s.Z.getRelationshipType(t.id),
     originApplicationId: s.Z.getOriginApplicationId(t.id)
-  })), A = (0, l.vh)(t.id), w = (0, i.wn)({
+  })), A = (0, l.vh)(t.id), L = (0, i.wn)({
     location: "UserProfileModalBody"
-  }), L = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), U = (0, y.Z)({
+  }), w = t.id === x.id, R = (0, a.I5)(x), M = c.ZP.useName(null == Z ? void 0 : Z.guildId, O, t), U = (0, y.Z)({
     user: t,
     currentUser: x,
     guildId: _,
@@ -54,7 +54,7 @@ function x(e) {
     children: [(0, r.jsx)(I.Z, {
       className: v.username,
       user: t,
-      profileType: j.y0.FULL_SIZE,
+      profileType: h.y0.FULL_SIZE,
       nickname: M,
       pronouns: null == Z ? void 0 : Z.pronouns,
       nicknameVariant: "heading-xl/bold",
@@ -63,20 +63,20 @@ function x(e) {
       }),
       tags: (0, r.jsx)(d.Z, {
         displayProfile: Z,
-        profileType: j.y0.FULL_SIZE,
+        profileType: h.y0.FULL_SIZE,
         onClose: S
       })
-    }), T === h.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
+    }), T === j.OGo.PENDING_INCOMING && (0, r.jsx)(m.Z.Overlay, {
       className: v.bannerContainer,
       children: (0, r.jsx)(p.Z, {
         user: t,
-        applicationId: w ? C : void 0,
+        applicationId: L ? C : void 0,
         guildId: null != (n = null == Z ? void 0 : Z.guildId) ? n : void 0,
         channelId: O,
         friendToken: E,
         className: v.friendRequestBanner
       })
-    }), w && A.map(e => (0, r.jsx)(m.Z.Overlay, {
+    }), L && A.map(e => (0, r.jsx)(m.Z.Overlay, {
       className: v.bannerContainer,
       children: (0, r.jsx)(p.Z, {
         user: t,
@@ -88,7 +88,7 @@ function x(e) {
     }, e.applicationId)), (0, r.jsx)(b.Z, {
       user: t,
       className: v.bannerContainer
-    }), L && (0, r.jsx)(u.Z, {
+    }), w && (0, r.jsx)(u.Z, {
       className: v.bannerContainer,
       isPremiumUser: R,
       onInteraction: S

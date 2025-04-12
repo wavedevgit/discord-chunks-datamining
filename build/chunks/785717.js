@@ -37,26 +37,38 @@ let u = i.createContext(null),
     let {
       value: t,
       children: n,
-      shouldTrackViewOnMount: o = !0
+      openedAt: o,
+      fetchStartedAt: l,
+      fetchEndedAt: d,
+      isLoaded: f = !1
     } = e, {
-      analyticsLocations: l
-    } = (0, a.ZP)(), d = {
-      analyticsLocations: l,
+      analyticsLocations: _
+    } = (0, a.ZP)(), p = i.useRef(void 0), h = {
+      analyticsLocations: _,
       value: t
-    }, f = i.useRef(d);
+    }, m = i.useRef(h);
     return i.useEffect(() => {
-      f.current = d
+      m.current = h
     }), i.useEffect(() => {
-      if (!o) return;
+      let e = Date.now();
+      if (null == p.current && null != o && (p.current = e - o), !f) return;
       let {
-        analyticsLocations: e,
-        value: t
-      } = f.current;
+        analyticsLocations: t,
+        value: n
+      } = m.current;
       (0, s.pQ)(c({
         action: "VIEW",
-        analyticsLocations: e
-      }, t))
-    }, [o]), (0, r.jsx)(u.Provider, {
+        analyticsLocations: t
+      }, n)), (0, s.RV)(c({
+        profileUi: "USER_PROFILE",
+        timeToInteractiveMs: p.current,
+        timeToLoadMs: null != o ? e - o : void 0,
+        timeToFetchMs: null != l && null != d ? d - l : void 0,
+        viewStartedAt: o,
+        fetchStartedAt: l,
+        analyticsLocations: t
+      }, n))
+    }, [f]), (0, r.jsx)(u.Provider, {
       value: t,
       children: n
     })

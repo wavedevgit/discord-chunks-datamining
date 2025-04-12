@@ -1,6 +1,6 @@
 /** Chunk was on 69774 **/
 t.d(n, {
-  Z: () => h
+  Z: () => j
 });
 var r = t(200651);
 t(192379);
@@ -19,13 +19,13 @@ var o = t(442837),
   I = t(179828),
   g = t(228168),
   y = t(388032),
-  j = t(349966);
+  h = t(349966);
 
-function h(e) {
+function j(e) {
   var n;
   let {
     user: t,
-    currentUser: h,
+    currentUser: j,
     displayProfile: v,
     subsection: x,
     onClose: _
@@ -37,7 +37,7 @@ function h(e) {
   }), P = (0, o.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
-    className: j.scroller,
+    className: h.scroller,
     children: [(null == v ? void 0 : v.bio) != null && (null == v ? void 0 : v.bio) !== "" && (0, r.jsx)(p.Z, {
       userBio: v.bio,
       setLineClamp: !1
@@ -49,7 +49,7 @@ function h(e) {
       onClick: _
     }), null != Z && (0, r.jsx)(I.Z, {
       user: t,
-      currentUser: h,
+      currentUser: j,
       guild: Z,
       scrollIntoView: x === g.Tb.ROLES
     }), (0, r.jsx)(m.Z, {
@@ -64,7 +64,7 @@ function h(e) {
       scrollIntoView: x === g.Tb.NOTE,
       children: (0, r.jsx)(l.Z, {
         userId: t.id,
-        className: j.note,
+        className: h.note,
         autoFocus: x === g.Tb.NOTE,
         onUpdate: () => O({
           action: "SET_NOTE"

@@ -93,7 +93,7 @@ async function b(e) {
     connectionsRoleId: u,
     joinRequestId: d,
     abortSignal: f
-  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = arguments.length > 2 ? arguments[2] : void 0;
+  } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, h = arguments.length > 2 ? arguments[2] : void 0, m = Date.now();
   l.Z.dispatch({
     type: "USER_PROFILE_FETCH_START",
     userId: e,
@@ -121,7 +121,8 @@ async function b(e) {
       user: c.body.user
     }), l.Z.dispatch({
       type: "USER_PROFILE_FETCH_SUCCESS",
-      userProfile: c.body
+      userProfile: c.body,
+      fetchStartedAt: m
     }), null != a && null != c.body.guild_member && l.Z.dispatch({
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildId: a,
@@ -131,6 +132,7 @@ async function b(e) {
     throw null != t && (null == t ? void 0 : t.body) != null && p.warn("fetchProfile error: ".concat(t.body.code, " - ").concat(t.body.message)), l.Z.dispatch({
       type: "USER_PROFILE_FETCH_FAILURE",
       apiError: new c.Hx(t),
+      fetchStartedAt: m,
       userId: e,
       guildId: a
     }), t

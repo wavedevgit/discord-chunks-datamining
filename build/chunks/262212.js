@@ -94,17 +94,21 @@ function v(e) {
     powerup: n,
     onClick: o
   } = e, a = g(e, ["guildId", "powerup", "onClick"]);
-  let s = (0, u.Z)(t, n);
+  let s = (0, u.Z)(t, n),
+    {
+      onShowMore: i
+    } = (0, d.ZP)(t, n),
+    l = p.uc.has(n.skuId);
   return (0, r.jsx)(c.zxk, j(O({
     className: m.primaryButton,
     innerClassName: m.buttonInner,
     wrapperClassName: m.buttonWrapper,
     grow: !0,
     onClick: e => {
-      null == o || o(e), null == s || s(e)
+      null == o || o(e), l ? null == s || s(e) : null == i || i()
     }
   }, a), {
-    children: b.NW.string(f.Z["g5Ds6+"])
+    children: l ? b.NW.string(f.Z["g5Ds6+"]) : b.NW.string(b.t["OBCR+v"])
   }))
 }
 
@@ -168,16 +172,16 @@ function y(e) {
     guildId: n,
     powerup: o,
     onError: a
-  } = e, c = null != (0, l.Z)(n, o), i = p.uc.has(o.skuId), u = !c || !i;
+  } = e, c = null != (0, l.Z)(n, o), i = !c;
   return (0, r.jsxs)("div", {
     className: s()(m.container, t),
     children: [(0, r.jsx)(x, {
       guildId: n,
       powerup: o,
       onError: a,
-      grow: u,
-      compact: !u
-    }), i && c && (0, r.jsx)(v, {
+      grow: i,
+      compact: !i
+    }), c && (0, r.jsx)(v, {
       guildId: n,
       powerup: o
     })]

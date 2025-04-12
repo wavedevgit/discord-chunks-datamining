@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => S
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   a = n(192379),
@@ -90,14 +90,14 @@ let g = e => {
     value: o.a.PREMIUM_TIER_2_3_DAY
   }];
 
-function S() {
-  let [e, t] = a.useState(!1), [n, l] = a.useState(!1), [s, d] = a.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = a.useState([]), [S, N] = a.useState([]), [T, E] = a.useState([]), k = async e => {
-    await j(e), await I()
+function N() {
+  let [e, t] = a.useState(!1), [n, l] = a.useState(!1), [s, d] = a.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = a.useState([]), [N, S] = a.useState([]), [T, E] = a.useState([]), k = async e => {
+    await j(e), await w()
   }, P = async e => {
-    await y(e), await I()
-  }, w = async () => {
-    await C(), await I()
+    await y(e), await w()
   }, I = async () => {
+    await C(), await w()
+  }, w = async () => {
     try {
       t(!0);
       let e = await v();
@@ -107,9 +107,9 @@ function S() {
     }
   }, R = e => e.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION), Z = e => e.filter(e => Object.values(o.a).includes(e.skuId) && null == e.startsAt);
   return a.useEffect(() => {
-    I()
+    w()
   }, []), a.useEffect(() => {
-    N(R(m)), E(Z(m))
+    S(R(m)), E(Z(m))
   }, [m]), (0, r.jsx)(c.zJl, {
     className: f.panel,
     children: (0, r.jsxs)("div", {
@@ -192,7 +192,7 @@ function S() {
               size: c.zxk.Sizes.TINY,
               color: c.zxk.Colors.PRIMARY,
               look: c.zxk.Looks.OUTLINED,
-              onClick: () => w(),
+              onClick: () => I(),
               children: "Run fulfillment"
             }), (0, r.jsx)(c.zxk, {
               disabled: e,
@@ -205,7 +205,7 @@ function S() {
               disabled: e,
               look: c.zxk.Looks.BLANK,
               size: c.zxk.Sizes.ICON,
-              onClick: I,
+              onClick: w,
               children: (0, r.jsx)("span", {
                 title: "Refresh",
                 children: (0, r.jsx)(c.DuK, {
@@ -215,7 +215,7 @@ function S() {
               })
             })]
           })]
-        }), S.length > 0 && (0, r.jsxs)("div", {
+        }), N.length > 0 && (0, r.jsxs)("div", {
           children: [(0, r.jsx)(c.Text, {
             style: {
               marginTop: "15px"
@@ -223,7 +223,7 @@ function S() {
             variant: "text-md/bold",
             children: "Active premium"
           }), (0, r.jsx)("div", {
-            children: S.map(e => (0, r.jsx)(g, {
+            children: N.map(e => (0, r.jsx)(g, {
               entitlement: e,
               active: !0,
               onDelete: () => P(e.id)
