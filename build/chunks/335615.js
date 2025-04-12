@@ -149,7 +149,16 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           showMediaItems: t
         }))
       })
-    }, T = e => {
+    }, T = () => {
+      let e = "@".concat(q.ZP.getUserTag(u, {
+          decoration: "never"
+        })),
+        t = "<@".concat(u.id, ">");
+      z.S.dispatchToLastSubscribed(X.CkL.INSERT_TEXT, {
+        plainText: e,
+        rawText: t
+      }), b.Z.startTyping(y.id)
+    }, w = e => {
       null != C && (e.stopPropagation(), (0, A.f)({
         guildId: C,
         location: {
@@ -165,16 +174,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       roleId: a,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
-      onShiftClick: () => {
-        let e = "@".concat(q.ZP.getUserTag(u, {
-            decoration: "never"
-          })),
-          t = "<@".concat(u.id, ">");
-        z.S.dispatchToLastSubscribed(X.CkL.INSERT_TEXT, {
-          plainText: e,
-          rawText: t
-        }), b.Z.startTyping(y.id)
-      },
+      onShiftClick: T,
       shouldShowOnHover: E,
       clickTrap: I,
       shouldShow: I,
@@ -204,11 +204,13 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           channel: y,
           guildId: C,
           isMobile: v,
-          onClickPremiumGuildIcon: T,
+          onClickPremiumGuildIcon: w,
           selected: I,
           itemProps: N,
           nameplate: O,
-          onClick: () => P(!I)
+          onClick: e => {
+            e.shiftKey ? null == T || T() : P(e => !e)
+          }
         }, i))
       }
     })

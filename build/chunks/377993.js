@@ -80,31 +80,31 @@ function R(e) {
         }), i))
       }
     })
-  }, A = (0, m.K)({
+  }, A = () => {
+    let e = "@".concat(E.ZP.getUserTag(t, {
+        decoration: "never"
+      })),
+      n = "<@".concat(t.id, ">");
+    j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+      plainText: e,
+      rawText: n
+    }), c.Z.startTyping(a.id)
+  }, R = (0, m.K)({
     location: "PrivateChannelRecipients",
     user: t
-  }), [R, k] = i.useState(!1), M = (0, g.ic)({
+  }), [k, M] = i.useState(!1), L = (0, g.ic)({
     location: "PrivateChannelRecipients"
   });
   return (0, r.jsx)(b.Z, {
     user: t,
     channelId: a.id,
-    shouldShowOnHover: M,
+    shouldShowOnHover: L,
     position: l.tq ? "window_center" : "left",
     spacing: 16,
-    onShiftClick: () => {
-      let e = "@".concat(E.ZP.getUserTag(t, {
-          decoration: "never"
-        })),
-        n = "<@".concat(t.id, ">");
-      j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
-        plainText: e,
-        rawText: n
-      }), c.Z.startTyping(a.id)
-    },
-    clickTrap: R,
-    shouldShow: R,
-    onRequestClose: () => k(!1),
+    onShiftClick: A,
+    clickTrap: k,
+    shouldShow: k,
+    onRequestClose: () => M(!1),
     children: e => {
       var {
         onClick: n
@@ -135,11 +135,13 @@ function R(e) {
         applicationStream: N,
         channel: a,
         onContextMenu: Z,
-        selected: R,
+        selected: k,
         isMobile: v,
         nick: O,
-        nameplate: A,
-        onClick: () => k(e => !e)
+        nameplate: R,
+        onClick: e => {
+          e.shiftKey ? null == A || A() : M(e => !e)
+        }
       }, i), t.id)
     }
   })
