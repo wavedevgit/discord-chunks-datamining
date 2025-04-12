@@ -16,6 +16,6 @@ function l(e) {
       powerups: e,
       unlocked: t
     } = n;
-    return (0, a.h)(t).map(n => e.get(n.sku_id)).filter(s.lm).slice(0, 1)
+    return (0, a.h)(t).map(n => e.get(n.sku_id)).filter(s.lm)
   }, [n])
 }
