@@ -4,9 +4,9 @@ n.d(t, {
 }), n(388685), n(290780);
 var i, r = n(442837),
   l = n(570140),
-  o = n(592125),
-  s = n(271383),
-  a = n(430824);
+  a = n(592125),
+  o = n(271383),
+  s = n(430824);
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ let u = [],
 class g extends(i = r.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(s.ZP, a.Z, o.Z), d = new Set([...u = null != (t = null == e ? void 0 : e.channelHistory) ? t : []])
+    this.waitFor(o.ZP, s.Z, a.Z), d = new Set([...u = null != (t = null == e ? void 0 : e.channelHistory) ? t : []])
   }
   getState() {
     return {
@@ -42,6 +42,6 @@ let p = new g(l.Z, {
     let {
       channelId: i
     } = e;
-    return null != i && !!(null != (n = null == (t = o.Z.getChannel(i)) ? void 0 : t.isVocal()) && n) && (d.has(i) ? ((u = u.filter(e => e !== i)).unshift(i), d = new Set([...u])) : (u.unshift(i), d.add(i)), u.length > 10 && (u.length = 10, d = new Set([...u])), !0)
+    return null != i && !!(null != (n = null == (t = a.Z.getChannel(i)) ? void 0 : t.isVocal()) && n) && (d.has(i) ? ((u = u.filter(e => e !== i)).unshift(i), d = new Set([...u])) : (u.unshift(i), d.add(i)), u.length > 10 && (u.length = 10, d = new Set([...u])), !0)
   }
 })
