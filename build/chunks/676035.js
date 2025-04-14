@@ -12,29 +12,33 @@ var r = n(192379),
   l = n(981631);
 
 function c(e, t) {
-  let n = null;
-  if (null != t) n = {
+  var n;
+  let r = null;
+  if (null != t) r = {
     id: t.id,
     name: t.name,
     animated: t.animated
   };
   else if (null != e.emojiName && "" !== e.emojiName) {
     let t = a.ZP.getByName(a.ZP.convertSurrogateToName(e.emojiName, !1));
-    n = null != t ? {
+    r = null != t ? {
       id: null,
       name: t.surrogates,
       animated: !1
     } : null
   }
-  let r = Number(e.expiresAtMs);
+  let i = Number(e.expiresAtMs);
   return {
     name: "Custom Status",
     type: l.IIU.CUSTOM_STATUS,
     state: e.text.length > 0 ? e.text : void 0,
-    timestamps: r > 0 ? {
-      end: r
+    timestamps: i > 0 ? {
+      end: i
     } : void 0,
-    emoji: n
+    emoji: r,
+    metadata: {
+      label: null == (n = e.label) ? void 0 : n.value
+    }
   }
 }
 
