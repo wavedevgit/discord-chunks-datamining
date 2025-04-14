@@ -51,13 +51,13 @@ function E() {
       var n, i;
       return (0, r.jsx)(a.ConfirmModal, (n = _({
         header: x.NW.string(x.t.aqpAvr),
-        confirmText: x.NW.string(x.t.BddRzc),
+        confirmText: x.NW.string(x.t.vT7ckp),
         cancelText: x.NW.string(x.t["ETE/oK"]),
         onConfirm: () => g.ZP.setEnableHardwareAcceleration(e)
       }, t), i = i = {
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: x.NW.string(x.t.uDP3Ky)
+          children: x.NW.format(x.t.uDP3Ky, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);

@@ -1,6 +1,6 @@
 /** Chunk was on 49286 **/
 n.d(t, {
-  Z: () => P
+  Z: () => w
 });
 var r = n(200651),
   i = n(192379),
@@ -21,8 +21,8 @@ var r = n(200651),
   j = n(271383),
   O = n(430824),
   N = n(246946),
-  y = n(594174),
-  v = n(51144),
+  v = n(594174),
+  y = n(51144),
   _ = n(981631),
   C = n(388032),
   I = n(555781);
@@ -59,7 +59,7 @@ function E(e, t) {
   }), e
 }
 
-function P(e) {
+function w(e) {
   let {
     guild: t,
     id: l,
@@ -81,7 +81,7 @@ function P(e) {
   }, [l]);
   switch (o) {
     case m.Kw.CHANNEL:
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(P, {
         guild: t,
         id: l,
         isLocked: a,
@@ -107,7 +107,7 @@ function P(e) {
   }
 }
 
-function w(e) {
+function P(e) {
   let {
     guild: t,
     id: n,
@@ -208,7 +208,7 @@ function Z(e) {
     isLocked: i,
     lockTooltipText: l,
     openEntryContextMenu: o
-  } = e, a = (0, d.e7)([y.default], () => y.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
+  } = e, a = (0, d.e7)([v.default], () => v.default.getUser(n)), s = (0, d.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? void 0 : e.nick
   }, [t.id, n]), c = (0, d.e7)([N.Z], () => N.Z.hidePersonalInformation);
@@ -228,7 +228,7 @@ function Z(e) {
     }), c ? null : (0, r.jsx)(u.Text, {
       className: I.tag,
       variant: "text-sm/normal",
-      children: v.ZP.getUserTag(a)
+      children: y.ZP.getUserTag(a)
     }), i ? (0, r.jsx)(W, {
       tooltipText: l
     }) : null]

@@ -80,11 +80,11 @@ function f(e) {
         Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(i, e))
       }), n))
     })
-  }, [t.guild_id, t.id, t.name]), y = [];
-  null != t.source_channel && null != t.source_guild && (y.push({
+  }, [t.guild_id, t.id, t.name]), v = [];
+  null != t.source_channel && null != t.source_guild && (v.push({
     icon: l.MqZ,
     text: t.source_channel.name
-  }), y.push({
+  }), v.push({
     text: (0, r.jsx)("span", {
       className: g.guildSource,
       children: b.NW.format(b.t["H/jJ6e"], {
@@ -95,8 +95,8 @@ function f(e) {
       })
     }, "guild-source")
   }));
-  let v = null;
-  return h && null != n && (v = (0, r.jsxs)("div", {
+  let y = null;
+  return h && null != n && (y = (0, r.jsxs)("div", {
     className: g.body,
     children: [(0, r.jsx)(l.$i$, {
       className: g.topDivider
@@ -163,14 +163,14 @@ function f(e) {
             name: t.name,
             imageSrc: O,
             detailsClassName: g.__invalid_description,
-            details: y
+            details: v
           }), (0, r.jsx)(d.Z, {
             className: g.expandIcon,
             expanded: h,
             "aria-hidden": !0
           })]
         })
-      }), v]
+      }), y]
     })
   })
 }

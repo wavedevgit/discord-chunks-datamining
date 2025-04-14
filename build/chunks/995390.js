@@ -62,18 +62,18 @@ function N(e, t, n) {
       let t = h.Z.getCommand(n);
       return null != (e = null == t ? void 0 : t.permissions) ? e : {}
     }, [n]),
-    y = (0, s.e7)([h.Z], () => {
+    v = (0, s.e7)([h.Z], () => {
       var e;
       return null == n ? h.Z.getEditedApplication() : null == (e = h.Z.getEditedCommand()) ? void 0 : e.permissions
     }, [n]),
-    v = null != n ? n : t,
+    y = null != n ? n : t,
     _ = null != n ? N : o,
-    C = r.useMemo(() => null != y ? y : O({}, null != _ ? _ : {}), [y, _]),
+    C = r.useMemo(() => null != v ? v : O({}, null != _ ? _ : {}), [v, _]),
     I = r.useMemo(() => Object.keys(C).length, [C]),
     S = r.useMemo(() => null == _ || null == C ? null : !a().isEqual(_, C), [_, C]);
   return r.useEffect(() => {
-    v === t && (S ? c.Z.startEditingCommandPermissions(v) : c.Z.stopEditingCommandPermissions(v))
-  }, [t, S, v]), {
+    y === t && (S ? c.Z.startEditingCommandPermissions(y) : c.Z.stopEditingCommandPermissions(y))
+  }, [t, S, y]), {
     originalApplicationPermissions: o,
     originalCommandPermissions: N,
     editedTargetPermissions: function(e, t) {
@@ -102,8 +102,8 @@ function N(e, t, n) {
           }
         }, [t]),
         N = (0, s.cj)([p.Z], () => Object.fromEntries(c.map(p.Z.getChannel).filter(f.lm).map(e => [e.id, e])), [c]),
-        y = (0, s.cj)([m.Z], () => Object.fromEntries(h.map(t => m.Z.getRole(e, t)).filter(f.lm).map(e => [e.id, e])), [h, e]),
-        v = (0, s.cj)([g.default], () => Object.fromEntries(x.map(g.default.getUser).filter(f.lm).map(e => [e.id, e])), [x]);
+        v = (0, s.cj)([m.Z], () => Object.fromEntries(h.map(t => m.Z.getRole(e, t)).filter(f.lm).map(e => [e.id, e])), [h, e]),
+        y = (0, s.cj)([g.default], () => Object.fromEntries(x.map(g.default.getUser).filter(f.lm).map(e => [e.id, e])), [x]);
       return r.useMemo(() => {
         let e = n.id,
           r = (0, u.bD)(n.id),
@@ -117,10 +117,10 @@ function N(e, t, n) {
             t = e || b.Z.can(j.Plq.VIEW_CHANNEL, n), c = !0
           } else if (s.type === d.Kw.ROLE) {
             let r = s.id === e,
-              l = y[s.id];
+              l = v[s.id];
             t = r || null != l, c = a || r || b.Z.isRoleHigher(n, i, l)
           } else if (s.type === d.Kw.USER) {
-            let e = v[s.id];
+            let e = y[s.id];
             t = null != e, c = null != e && (a || b.Z.canManageUser(j.Plq.USE_APPLICATION_COMMANDS, e, n))
           }
           l[o] = function(e, t) {
@@ -140,7 +140,7 @@ function N(e, t, n) {
           })
         }
         return l
-      }, [N, n, i, a, t, y, v])
+      }, [N, n, i, a, t, v, y])
     }(e, C),
     hasChanges: S,
     selectedPermissionCount: I

@@ -1,11 +1,11 @@
 /** Chunk was on 29709 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var i = n(544891),
   r = n(570140),
   l = n(981631);
-let a = {
+let s = {
   async fetch() {
     try {
       let e = await i.tn.get({

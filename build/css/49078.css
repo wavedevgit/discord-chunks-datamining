@@ -1,0 +1,113 @@
+/**
+  Module ID: 49078
+  Original File Name: f3cc4c6bf633b57c
+**/
+.addFriendInputWrapper__72ba7 {
+    align-items: center;
+    background-color: var(--deprecated-text-input-bg);
+    border: 1px solid var(--deprecated-text-input-border);
+    border-radius: 8px;
+    display: flex;
+    margin-top: 16px;
+    padding: 0 12px;
+    position: relative
+}
+
+.addFriendInputWrapper__72ba7:focus-within {
+    border-color: var(--text-link)
+}
+
+.addFriendInputWrapper__72ba7.error__72ba7 {
+    border-color: var(--status-danger)
+}
+
+.addFriendInputWrapper__72ba7.success__72ba7 {
+    border-color: var(--green-360)
+}
+
+.addFriendWumpusWrapper__72ba7 {
+    position: relative
+}
+
+.inputText__72ba7 {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 20px;
+    white-space: pre
+}
+
+.addFriendInput__72ba7 {
+    background-color: transparent;
+    border: none;
+    box-sizing: border-box;
+    color: var(--text-normal);
+    flex: 1 1 auto;
+    margin-right: 16px;
+    padding: 4px 0;
+    z-index: 1
+}
+
+.addFriendInput__72ba7::-moz-placeholder {
+    -moz-user-select: none;
+    user-select: none;
+    color: var(--text-muted)
+}
+
+.addFriendInput__72ba7::placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: var(--text-muted)
+}
+
+.input__72ba7 {
+    background-color: transparent;
+    background-color: initial;
+    border: none;
+    padding: 0
+}
+
+.visual-refresh .input__72ba7:focus,.visual-refresh .input__72ba7:focus-within,.visual-refresh .input__72ba7:hover {
+    border: none
+}
+
+.addFriendHint__72ba7 {
+    box-sizing: border-box;
+    color: var(--interactive-muted);
+    cursor: text;
+    top: 15px;
+    pointer-events: none;
+    position: absolute
+}
+
+.ring__72ba7 {
+    border-radius: 8px
+}
+
+.enable-forced-colors .addFriendInputWrapper__72ba7 {
+    border-color: ButtonText
+}
+
+.enable-forced-colors .addFriendInputWrapper__72ba7:focus-within {
+    border-color: Highlight
+}
+
+:where(.visual-refresh) .addFriendWumpusWrapper__72ba7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: var(--space-128)
+}
+
+:where(.visual-refresh) .addFriendWumpusWrapper__72ba7 img {
+    position: absolute;
+    right: var(--space-16);
+    bottom: calc(var(--space-16)*-1)
+}
+
+.content__16b50 {
+    padding-top: var(--space-16)
+}
+
+/*# sourceMappingURL=f3cc4c6bf633b57c.css.map*/

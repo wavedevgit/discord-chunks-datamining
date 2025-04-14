@@ -1,6 +1,6 @@
 /**
   Module ID: 47888
-  Original File Name: a277bbd829018046
+  Original File Name: 1f8da4cf962fc5bb
 **/
 .container__1ce5d {
     position: relative
@@ -56,13 +56,17 @@
     gap: 16px
 }
 
+.preview__6be55 {
+    display: contents
+}
+
 .guildRow__6be55 {
     display: flex;
     gap: var(--space-sm);
     align-items: center
 }
 
-.guildAsset__6be55 {
+.inviteIcon__6be55 {
     height: 32px;
     width: 32px;
     background-color: var(--bg-mod-faint);
@@ -604,4 +608,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=a277bbd829018046.css.map*/
+/*# sourceMappingURL=1f8da4cf962fc5bb.css.map*/
