@@ -42,13 +42,13 @@ let N = e => {
       listing: o,
       subscription: x,
       onClose: _
-    } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), C = (null == j || null == (t = j.cover_image_asset) ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
-      analyticsLocations: O
+    } = e, E = (0, u.Dt)(), j = (0, g.YB)(s), O = (null == j || null == (t = j.cover_image_asset) ? void 0 : t.application_id) != null ? (0, m._W)(j.cover_image_asset.application_id, j.cover_image_asset, 440) : void 0, {
+      analyticsLocations: C
     } = (0, d.ZP)(c.Z.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
       cancelSubscription: S,
       error: v,
       submitting: T
-    } = N(O), I = async () => {
+    } = N(C), I = async () => {
       await S(x.id) && _()
     }, y = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.CHANNEL), A = o.role_benefits.benefits.filter(e => e.ref_type === h.Qs.INTANGIBLE), P = a()(x.currentPeriodEnd).format("MMMM Do, YYYY"), R = f.NW.formatToPlainString(f.t.KsMRPz, {
       numChannels: y.length,
@@ -61,7 +61,7 @@ let N = e => {
       "aria-labelledby": E,
       children: [(0, r.jsxs)("div", {
         children: [(0, r.jsx)("img", {
-          src: C,
+          src: O,
           alt: "",
           className: b.headerImage
         }), (0, r.jsx)(l.olH, {

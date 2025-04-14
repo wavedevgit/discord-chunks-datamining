@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  GF: () => O,
+  GF: () => C,
   ZP: () => v,
   yo: () => S
 }), n(388685);
@@ -94,7 +94,7 @@ function j(e) {
   })
 }
 
-function C(e) {
+function O(e) {
   let {
     setting: t,
     userIds: n,
@@ -133,9 +133,9 @@ function C(e) {
   })
 }
 
-function O() {
+function C() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getBlockedIDs());
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(O, {
     setting: b.s6.BLOCKED_USERS,
     userIds: e,
     listType: "blocked"
@@ -144,7 +144,7 @@ function O() {
 
 function S() {
   let e = (0, l.Wu)([m.Z], () => m.Z.getIgnoredIDs());
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(O, {
     setting: b.s6.IGNORED_USERS,
     userIds: e,
     listType: "ignored"
@@ -161,6 +161,6 @@ function v() {
       description: x.NW.format(x.t["0aNQo6"], {
         helpArticle: p.Z.getArticleURL(N.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
-    }), (0, r.jsx)(O, {}), (0, r.jsx)(S, {})]
+    }), (0, r.jsx)(C, {}), (0, r.jsx)(S, {})]
   })
 }

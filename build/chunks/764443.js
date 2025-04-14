@@ -88,7 +88,7 @@ function _(e) {
         dontCloseOnAction: !0
       }, i)
     })
-  }), C = (0, r.jsx)("div", {
+  }), O = (0, r.jsx)("div", {
     className: f.durationButtons,
     children: N.map(e => {
       let {
@@ -134,7 +134,7 @@ function _(e) {
         }), null != s && (0, r.jsx)("div", {
           className: f.description,
           children: s
-        }), h && d && E ? C : void 0]
+        }), h && d && E ? O : void 0]
       })
     },
     action: () => {
@@ -208,11 +208,11 @@ function j(e) {
   }), j = _({
     status: p.Skl.ONLINE,
     currentStatus: e
-  }), C = _({
+  }), O = _({
     status: p.Skl.IDLE,
     currentStatus: e,
     description: N(p.Skl.IDLE)
-  }), O = _({
+  }), C = _({
     status: p.Skl.DND,
     currentStatus: e,
     description: N(p.Skl.DND)
@@ -222,7 +222,7 @@ function j(e) {
     description: N(p.Skl.INVISIBLE)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), C, O, S, u || i ? (0, r.jsxs)(r.Fragment, {
+    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), O, C, S, u || i ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(a.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",

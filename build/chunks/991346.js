@@ -26,8 +26,8 @@ var r = n(192379),
   _ = n(977156),
   E = n(921157),
   j = n(667172),
-  C = n(237292),
-  O = n(314897),
+  O = n(237292),
+  C = n(314897),
   S = n(906467),
   v = n(283595),
   T = n(699516),
@@ -103,7 +103,7 @@ function U() {
     location: "settings"
   }), F = (0, g.Xo)({
     location: "settings"
-  }), H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n, z = (0, C.y0)({
+  }), H = null != (n = null == (e = y.default.getCurrentUser()) ? void 0 : e.isStaff()) && n, z = (0, O.y0)({
     location: "settings"
   }), Y = (0, j.v4)({
     location: "settings"
@@ -115,7 +115,7 @@ function U() {
     location: "UserSettingsInventory"
   }, {
     autoTrackExposure: !0
-  }), J = (0, i.e7)([v.Z], () => v.Z.hasLibraryApplication()), Q = (0, i.e7)([O.default], () => O.default.hasTOTPEnabled()), $ = R.Sb.useSetting(), ee = (0, p.Z)(), {
+  }), J = (0, i.e7)([v.Z], () => v.Z.hasLibraryApplication()), Q = (0, i.e7)([C.default], () => C.default.hasTOTPEnabled()), $ = R.Sb.useSetting(), ee = (0, p.Z)(), {
     hypeSquadRemoved: et
   } = m.Z.useExperiment({
     location: "settings"

@@ -84,11 +84,11 @@ function j() {
       newUserMinAgeRequiredOverridden: h.Z.newUserMinAgeRequiredOverridden
     })),
     [_, j] = i.useState(""),
-    C = null != (e = (0, l.e7)([g.Z], () => {
+    O = null != (e = (0, l.e7)([g.Z], () => {
       var e;
       return null == (e = g.Z.settings.userContent) ? void 0 : e.dismissedContents
     })) ? e : new Uint8Array,
-    [O, S] = function(e, t) {
+    [C, S] = function(e, t) {
       let [n, r] = i.useState(() => {
         let n = c.K.get(e);
         return null != n ? n : t
@@ -106,8 +106,8 @@ function j() {
       })
     },
     T = t.map(e => o.z[e]),
-    I = O.filter(e => e.toLowerCase().includes(_.toLowerCase())).filter(e => !T.includes(e)),
-    y = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !O.includes(e)).filter(e => e.toLowerCase().includes(_.toLowerCase())).sort((e, t) => e.localeCompare(t));
+    I = C.filter(e => e.toLowerCase().includes(_.toLowerCase())).filter(e => !T.includes(e)),
+    y = Object.keys(o.z).filter(e => !T.includes(e)).filter(e => !C.includes(e)).filter(e => e.toLowerCase().includes(_.toLowerCase())).sort((e, t) => e.localeCompare(t));
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.hjN, {
       title: "Dismissible Content Fatigue",
@@ -162,7 +162,7 @@ function j() {
           })
         }), (0, r.jsx)(E, {
           items: T,
-          dismissedContents: C,
+          dismissedContents: O,
           handleChange: v
         })]
       }) : null, I.length > 0 ? (0, r.jsxs)(r.Fragment, {
@@ -173,7 +173,7 @@ function j() {
           })
         }), (0, r.jsx)(E, {
           items: I,
-          dismissedContents: C,
+          dismissedContents: O,
           handleChange: v
         })]
       }) : null, (0, r.jsx)(u.Z, {
@@ -183,7 +183,7 @@ function j() {
         })
       }), (0, r.jsx)(E, {
         items: y,
-        dismissedContents: C,
+        dismissedContents: O,
         handleChange: v
       })]
     })]

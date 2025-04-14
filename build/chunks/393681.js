@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(347649),
   E = n(332473),
   j = n(303172),
-  C = n(518560),
-  O = n(921801),
+  O = n(518560),
+  C = n(921801),
   S = n(484459),
   v = n(430824),
   T = n(325067),
@@ -185,7 +185,7 @@ class X extends i.PureComponent {
             src: n(511391)
           }), H.NW.string(H.t.FsmBy8)]
         })
-      }) : null, (0, r.jsx)(O.F, {
+      }) : null, (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.zxk, {
@@ -197,7 +197,7 @@ class X extends i.PureComponent {
             children: H.NW.string(H.t["FRep5+"])
           })
         })
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
         children: (0, r.jsxs)(b.Z, {
           align: b.Z.Align.STRETCH,
@@ -294,13 +294,13 @@ class X extends i.PureComponent {
   }
   renderSecuritySettingsRedesign() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [this.renderConfirmModals(), (0, r.jsx)(O.F, {
+      children: [this.renderConfirmModals(), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(!1)
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, r.jsx)(O.F, {
+      }), (0, r.jsx)(C.F, {
         setting: V.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: C.Z,
+          component: O.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })

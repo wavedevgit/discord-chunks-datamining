@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -53,11 +53,11 @@ function j(e, t) {
   }), e
 }
 
-function C(e) {
+function O(e) {
   let {
     onLearnMore: t,
-    selectedBackgroundOption: C,
-    onSelectBackgroundOption: O,
+    selectedBackgroundOption: O,
+    onSelectBackgroundOption: C,
     currentDeviceId: S,
     smallerBackgroundOptions: v,
     className: T
@@ -70,8 +70,8 @@ function C(e) {
     w = (0, l.O)(),
     k = {
       isVideoBackgroundSupported: P,
-      onSelectBackgroundOption: O,
-      selectedBackgroundOption: C
+      onSelectBackgroundOption: C,
+      selectedBackgroundOption: O
     },
     W = i.useRef(k);
   i.useEffect(() => {
@@ -87,7 +87,7 @@ function C(e) {
     }).catch(() => t(null)) : null != n && t(null)
   }, [S]);
   let L = e => {
-    O(e), (0, g.FU)(e, S, {
+    C(e), (0, g.FU)(e, S, {
       location: w.location
     }).then(() => A(null)).catch(() => {
       A(x.NW.string(x.t.ejrSLS)), (0, g.FU)(null, S, {
@@ -104,7 +104,7 @@ function C(e) {
     }) : null, (0, r.jsx)(h.Z, {
       canUseCustomBackgrounds: R,
       customBackgroundOptions: Z,
-      selectedOption: C,
+      selectedOption: O,
       onSelectOption: L,
       onUpsellClick: () => {
         (0, a.ZDy)(async () => {

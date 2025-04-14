@@ -91,9 +91,9 @@ let g = e => {
   }];
 
 function N() {
-  let [e, t] = a.useState(!1), [n, l] = a.useState(!1), [s, d] = a.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = a.useState([]), [N, S] = a.useState([]), [T, E] = a.useState([]), k = async e => {
+  let [e, t] = a.useState(!1), [n, l] = a.useState(!1), [s, d] = a.useState(o.a.PREMIUM_TIER_2_1_HOUR), [m, p] = a.useState([]), [N, S] = a.useState([]), [T, E] = a.useState([]), P = async e => {
     await j(e), await I()
-  }, P = async e => {
+  }, k = async e => {
     await y(e), await I()
   }, w = async () => {
     await C(), await I()
@@ -169,7 +169,7 @@ function N() {
           popoutLayerContext: x.O$
         }), (0, r.jsx)(c.zxk, {
           size: c.zxk.Sizes.MEDIUM,
-          onClick: () => k(s),
+          onClick: () => P(s),
           children: "Grant Fractional Nitro"
         })]
       }), (0, r.jsxs)("section", {
@@ -199,7 +199,7 @@ function N() {
               size: c.zxk.Sizes.TINY,
               color: c.zxk.Colors.RED,
               look: c.zxk.Looks.OUTLINED,
-              onClick: () => P(),
+              onClick: () => k(),
               children: "Delete all"
             }), (0, r.jsx)(c.zxk, {
               disabled: e,
@@ -226,7 +226,7 @@ function N() {
             children: N.map(e => (0, r.jsx)(g, {
               entitlement: e,
               active: !0,
-              onDelete: () => P(e.id)
+              onDelete: () => k(e.id)
             }, e.id))
           })]
         }), T.length > 0 && (0, r.jsxs)("div", {

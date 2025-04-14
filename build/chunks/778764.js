@@ -53,13 +53,13 @@ function j(e, t) {
   }), e
 }
 
-function C(e) {
+function O(e) {
   let {
     transitionState: t,
     onClose: a,
     ticket: o,
     challenge: u
-  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [C, O] = i.useState(!0), [S, v] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
+  } = e, f = (0, c.Dt)(), [E, j] = i.useState(""), [O, C] = i.useState(!0), [S, v] = i.useState(b.x.INIT), [T, I] = i.useState(""), [y, A] = i.useState(null), P = async () => {
     let e;
     v(b.x.REGISTER);
     let t = m.isPlatformEmbedded && p.ZP.supportsFeature(N.eRX.WEBAUTHN) ? p.ZP.webAuthnRegister(u) : s.Ue(JSON.parse(u)).then(e => JSON.stringify(e));
@@ -163,7 +163,7 @@ function C(e) {
                 className: _.input,
                 value: E,
                 onChange: e => {
-                  j(e), O(0 === e.length)
+                  j(e), C(0 === e.length)
                 },
                 autoFocus: !0,
                 minLength: 1
@@ -173,7 +173,7 @@ function C(e) {
             className: _.footer,
             children: [(0, r.jsx)(l.zxk, {
               type: "submit",
-              disabled: C,
+              disabled: O,
               children: x.NW.string(x.t["5dyZ1d"])
             }), (0, r.jsx)(l.zxk, {
               look: l.zxk.Looks.LINK,
@@ -190,7 +190,7 @@ function C(e) {
   })
 }
 
-function O(e) {
+function C(e) {
   let {
     onSelect: t,
     credential: i
@@ -255,7 +255,7 @@ function S() {
           color: l.zxk.Colors.TRANSPARENT,
           size: l.zxk.Sizes.ICON,
           onClick: t => {
-            (0, o.vq)(t, t => (0, r.jsx)(O, j(E({}, t), {
+            (0, o.vq)(t, t => (0, r.jsx)(C, j(E({}, t), {
               credential: e
             })))
           },
@@ -277,7 +277,7 @@ function S() {
               ticket: t,
               challenge: n
             } = e;
-            (0, l.h7j)(e => (0, r.jsx)(C, j(E({}, e), {
+            (0, l.h7j)(e => (0, r.jsx)(O, j(E({}, e), {
               ticket: t,
               challenge: n
             })))

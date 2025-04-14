@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  Z: () => B
+  Z: () => z
 }), n(388685), n(539854), n(583741);
 var r = n(200651),
   a = n(192379),
@@ -28,8 +28,8 @@ var r = n(200651),
   S = n(981631),
   T = n(757744),
   E = n(388032),
-  k = n(931207),
-  P = n(616257);
+  P = n(931207),
+  k = n(616257);
 
 function w(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -115,7 +115,7 @@ function L(e) {
     onClick: function() {
       (0, y.JG)(t), l(!0)
     },
-    className: k.copyId,
+    className: P.copyId,
     children: ["Application Id: ", t, " ", n ? E.NW.string(E.t["t5VZ8/"]) : null]
   })
 }
@@ -125,7 +125,7 @@ function A(e) {
     trackedGame: t
   } = e, n = (0, s.e7)([x.ZP], () => x.ZP.getGameForPID(t.pid)), a = (0, s.e7)([v.Z], () => v.Z.getGameForPID(t.pid));
   return (0, r.jsxs)("div", {
-    className: k.panelGroup,
+    className: P.panelGroup,
     children: [(0, r.jsx)(c.Text, {
       variant: "text-md/bold",
       color: "text-primary",
@@ -259,7 +259,7 @@ function D(e) {
   })
 }
 
-function z(e) {
+function B(e) {
   let t = Z(Object.values((0, s.Wu)([g.Z], () => g.Z.getWidgetsForLayout(T.$))), e);
   return [t, () => {
     if (null != t)(0, d.E9)(t.id);
@@ -272,10 +272,10 @@ function z(e) {
   }]
 }
 
-function B() {
+function z() {
   var e, t;
-  let [n, l] = z(S.Odu.CLICK_ZONE_DEBUG), [o, d] = z(S.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, B] = a.useState(E), M = e => {
-    B(e), u.Z.forceRenderMode(e)
+  let [n, l] = B(S.Odu.CLICK_ZONE_DEBUG), [o, d] = B(S.Odu.PERFORMANCE_DEBUG), g = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ClickZones)), v = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.WidgetAreas)), y = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.DisabledGPUBoost)), T = (0, s.e7)([f.ZP], () => f.ZP.hasRenderDebugMode(h.G.ForceGPUBoost)), E = (0, s.e7)([p.default], () => p.default.getForcedRenderMode()), [R, Z] = a.useState({}), [L, z] = a.useState(E), M = e => {
+    z(e), u.Z.forceRenderMode(e)
   }, U = [{
     label: m.R5.UNSET,
     value: m.R5.UNSET
@@ -293,21 +293,21 @@ function B() {
     value: m.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION
   }].map(e => I(w({}, e), {
     label: "".concat(e.label, " ").concat(E === e.value ? "(current)" : "")
-  })), G = (0, s.cj)([p.default], () => p.default.getTrackedGames()), F = (0, s.e7)([j.default], () => j.default.getFocusedPID()), W = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), H = (0, O.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(H), [H]), [X, K] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
+  })), F = (0, s.cj)([p.default], () => p.default.getTrackedGames()), G = (0, s.e7)([j.default], () => j.default.getFocusedPID()), H = (0, s.e7)([j.default], () => j.default.isFocusedPidOutOfProcess()), W = (0, O.getPID)(), V = (0, s.e7)([p.default], () => p.default.isOverlayOOPEnabledForPid(W), [W]), [X, K] = (0, s.Wu)([_.Z], () => [_.Z.enabled, _.Z.keepOpen]), Y = (0, s.e7)([x.ZP], () => x.ZP.getRunningGames());
   a.useEffect(() => {
     Z(e => {
-      for (let t of Object.keys(G)) e[Number(t)] = G[Number(t)];
+      for (let t of Object.keys(F)) e[Number(t)] = F[Number(t)];
       return e
     })
-  }, [G]);
-  let [J, q] = a.useState({}), $ = a.useRef(null);
+  }, [F]);
+  let [q, J] = a.useState({}), $ = a.useRef(null);
   a.useEffect(() => ($.current = setInterval(async () => {
     let e = x.ZP.getRunningGames(),
       t = [],
       n = Date.now();
     for (let r of e) t.push((0, b.hj)(r.pid, 0).then(e => [r.pid, e, n]));
     let r = await Promise.all(t);
-    q(e => r.reduce((e, t) => {
+    J(e => r.reduce((e, t) => {
       var n;
       let [r, a, l] = t;
       if (null == a || null == r) return e;
@@ -342,12 +342,12 @@ function B() {
       var t, n;
       return null != (n = null == (t = R[e]) ? void 0 : t.fullscreenType) ? n : "Unknown"
     },
-    ei = Y.filter(e => null == G[e.pid]);
+    ei = Y.filter(e => null == F[e.pid]);
   return (0, r.jsx)(c.w0Z, {
     children: (0, r.jsxs)("div", {
-      className: i()(P.panel, k.panel),
+      className: i()(k.panel, P.panel),
       children: [(0, r.jsxs)("div", {
-        className: k.panelGroup,
+        className: P.panelGroup,
         children: [(0, r.jsx)(c.ua7, {
           position: "left",
           text: "Enables a red border around click zones to help with debugging.",
@@ -462,7 +462,7 @@ function B() {
         position: "left",
         text: "Override the overlay render mode",
         children: e => (0, r.jsx)("div", I(w({}, e), {
-          className: k.panelGroup,
+          className: P.panelGroup,
           children: (0, r.jsx)(c.PhF, {
             serialize: e => e,
             isSelected: e => e === L,
@@ -476,7 +476,7 @@ function B() {
         text: "Games that are running but not tracked by the overlay",
         children: e => (0, r.jsx)("div", I(w({}, e), {
           children: (0, r.jsxs)("div", {
-            className: k.panelGroup,
+            className: P.panelGroup,
             children: [(0, r.jsx)(c.Text, {
               variant: "text-md/bold",
               color: "text-danger",
@@ -493,37 +493,37 @@ function B() {
         text: "The current running games process information",
         children: e => (0, r.jsx)("div", I(w({}, e), {
           children: (0, r.jsxs)("div", {
-            className: k.panelGroup,
-            children: [0 === Object.keys(G).length && (0, r.jsx)(c.Text, {
+            className: P.panelGroup,
+            children: [0 === Object.keys(F).length && (0, r.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-normal",
               children: "No running games"
-            }), Object.values(G).map(e => (0, r.jsx)(A, {
+            }), Object.values(F).map(e => (0, r.jsx)(A, {
               trackedGame: e
             }, e.pid))]
           })
         }))
       }), (0, r.jsxs)("div", {
-        className: k.panelGroup,
-        children: [0 === Object.keys(G).length && (0, r.jsx)(c.Text, {
+        className: P.panelGroup,
+        children: [0 === Object.keys(F).length && (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "text-normal",
           children: "No tracked game times"
-        }), Object.values(G).map(e => (0, r.jsx)(D, {
+        }), Object.values(F).map(e => (0, r.jsx)(D, {
           pid: e.pid
         }, e.pid)), (0, r.jsxs)("div", {
           children: [(0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-primary",
-            children: ["focusedPID: ", null != (e = null == F ? void 0 : F.toString()) ? e : "null"]
+            children: ["focusedPID: ", null != (e = null == G ? void 0 : G.toString()) ? e : "null"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
-            children: ["isFocusedPidOutOfProcess: ", W ? "Yes" : "No"]
+            children: ["isFocusedPidOutOfProcess: ", H ? "Yes" : "No"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-primary",
-            children: ["processPid: ", null != (t = null == H ? void 0 : H.toString()) ? t : "unknown"]
+            children: ["processPid: ", null != (t = null == W ? void 0 : W.toString()) ? t : "unknown"]
           }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/normal",
             color: "text-secondary",
@@ -543,12 +543,12 @@ function B() {
         text: "The most recent screen types we've logged, indexed by pid",
         children: e => (0, r.jsx)("div", I(w({}, e), {
           children: (0, r.jsxs)("div", {
-            className: k.panelGroup,
-            children: [0 === Object.keys(G).length && (0, r.jsx)(c.Text, {
+            className: P.panelGroup,
+            children: [0 === Object.keys(F).length && (0, r.jsx)(c.Text, {
               variant: "text-sm/normal",
               color: "text-normal",
               children: "No recent screen types"
-            }), Object.values(G).map(e => {
+            }), Object.values(F).map(e => {
               var t;
               return (0, r.jsxs)("div", {
                 children: [(0, r.jsx)(c.Text, {
@@ -559,7 +559,7 @@ function B() {
                   variant: "text-sm/medium",
                   color: "text-secondary",
                   children: ["Original Screen Type: ", el(e.pid)]
-                }), null == (t = J[e.pid]) ? void 0 : t.reverse().map(t => {
+                }), null == (t = q[e.pid]) ? void 0 : t.reverse().map(t => {
                   let {
                     screenType: n,
                     timestamp: a

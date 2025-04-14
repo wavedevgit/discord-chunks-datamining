@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(853872),
   E = n(78839),
   j = n(706454),
-  C = n(726985),
-  O = n(981631),
+  O = n(726985),
+  C = n(981631),
   S = n(388032),
   v = n(189435);
 class T extends i.PureComponent {
@@ -33,7 +33,7 @@ class T extends i.PureComponent {
     })
   }
   handleRedemptionRedirect() {
-    u.Z.setSection(O.oAB.INVENTORY)
+    u.Z.setSection(C.oAB.INVENTORY)
   }
   render() {
     let {
@@ -52,17 +52,17 @@ class T extends i.PureComponent {
         className: v.syncing,
         children: (0, r.jsx)(o.$jN, {})
       }) : (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_PAYMENT_METHODS,
+        setting: O.s6.BILLING_PAYMENT_METHODS,
         children: (0, r.jsx)(p.Z, {
           paymentSources: n,
           defaultPaymentSourceId: i,
-          premiumSubscriptionPaymentSourceId: null != a && a.status !== O.O0b.CANCELED ? a.paymentSourceId : null,
+          premiumSubscriptionPaymentSourceId: null != a && a.status !== C.O0b.CANCELED ? a.paymentSourceId : null,
           locale: s,
           removing: l,
           submitting: c
         })
       }), (0, r.jsx)(f.F, {
-        setting: C.s6.BILLING_TRANSACTION_HISTORY,
+        setting: O.s6.BILLING_TRANSACTION_HISTORY,
         children: (0, r.jsx)("div", {
           className: v.paymentHistory,
           children: (0, r.jsxs)(o.y5t, {

@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: 4937495a8a9c6f7a
+  Original File Name: 4578bec38aa0e2c0
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -16957,23 +16957,23 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     }
 }
 
-.stepBody__42615 {
+.stepBody_ae9991 {
     padding-top: 16px
 }
 
-.visual-refresh .stepBody__42615 {
+.visual-refresh .stepBody_ae9991 {
     padding-top: var(--space-8)
 }
 
-.formErrorContainer__42615 {
+.formErrorContainer_ae9991 {
     margin: 8px 0
 }
 
-.paymentSourceWrapper__42615 {
+.paymentSourceWrapper_ae9991 {
     margin: 16px 0
 }
 
-.paymentSourceItem__42615 {
+.paymentSourceItem_ae9991 {
     align-items: center;
     background-color: var(--input-background);
     border-color: var(--input-background);
@@ -16985,25 +16985,25 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     padding: 14px 16px
 }
 
-:where(.visual-refresh) .paymentSourceItem__42615 {
+:where(.visual-refresh) .paymentSourceItem_ae9991 {
     background-color: var(--input-background);
     border: 1px solid var(--input-border);
     border-radius: var(--radius-sm);
     box-sizing: border-box
 }
 
-.purchaseDetailsSpinner__42615 {
+.purchaseDetailsSpinner_ae9991 {
     height: 20px
 }
 
-.orbAmountTag__42615 {
+.orbAmountTag_ae9991 {
     align-items: center;
     display: flex;
     flex-direction: row;
     gap: 4px
 }
 
-.displayFlex__42615 {
+.displayFlex_ae9991 {
     display: flex
 }
 
@@ -17105,4 +17105,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=4937495a8a9c6f7a.css.map*/
+/*# sourceMappingURL=4578bec38aa0e2c0.css.map*/

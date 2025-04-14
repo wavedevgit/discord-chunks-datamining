@@ -142,7 +142,7 @@ let y = (0, o.U)(e => ({
         let r = URL.createObjectURL(t),
           i = f({}, e.avatarDecorationAssets);
         return i[t.name] = {
-          type: u.Fr.AVATAR_DECORATION,
+          type: u.aB.AVATAR_DECORATION,
           name: t.name,
           src: r
         }, p(f({}, e), {

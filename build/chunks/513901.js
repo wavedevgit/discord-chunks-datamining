@@ -28,8 +28,8 @@ function x(e) {
     forcedDivider: _ = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
-    isTryItOutFlow: C = !1,
-    initialSelectedEffectId: O
+    isTryItOutFlow: O = !1,
+    initialSelectedEffectId: C
   } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
   } = (0, o.ZP)(), {
@@ -37,9 +37,9 @@ function x(e) {
     errors: y
   } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
     analyticsLocations: T,
-    initialSelectedEffectId: O,
+    initialSelectedEffectId: C,
     guild: n
-  }), [T, O, n]);
+  }), [T, C, n]);
   i.useEffect(() => {
     v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -65,7 +65,7 @@ function x(e) {
           [N.buttonHighlighted]: E
         }),
         children: b.NW.string(b.t["0nEVoK"])
-      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
+      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
         className: N.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,

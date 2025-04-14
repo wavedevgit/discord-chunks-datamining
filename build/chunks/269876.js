@@ -25,9 +25,9 @@ let E = (0, g.hQ)();
 function j() {
   let [e, t] = i.useState(-100), [n, s] = i.useState(!1), {
     threshold: j,
-    autoThreshold: C
+    autoThreshold: O
   } = (0, l.cj)([p.Z], () => p.Z.getModeOptions()), {
-    inputMode: O,
+    inputMode: C,
     automaticVADSupported: S,
     isEnabled: v
   } = (0, l.cj)([p.Z], () => ({
@@ -41,7 +41,7 @@ function j() {
   }
 
   function I(e, t) {
-    m.Z.setMode(O, {
+    m.Z.setMode(C, {
       threshold: e,
       autoThreshold: t
     })
@@ -59,7 +59,7 @@ function j() {
     children: (0, r.jsx)(u.iRW, {
       initialValue: j + 100,
       onValueRender: e => "".concat((-((100 - e) * 1)).toFixed(0), "dB"),
-      onValueChange: e => I(-((100 - e) * 1), C),
+      onValueChange: e => I(-((100 - e) * 1), O),
       barStyles: {
         background: d.Z.unsafe_rawColors.GREEN_360.css
       },
@@ -80,7 +80,7 @@ function j() {
       })
     })
   });
-  return C && (y = (0, r.jsxs)("section", {
+  return O && (y = (0, r.jsxs)("section", {
     className: b.inputSensitivityToggle,
     children: [(0, r.jsx)("div", {
       className: b.inputSensitivitySlider,
@@ -110,7 +110,7 @@ function j() {
           })
         }), (0, r.jsx)(u.rsf, {
           id: e,
-          checked: C,
+          checked: O,
           onChange: e => I(j, e)
         })]
       })

@@ -32,7 +32,7 @@ let b = {
       className: E
     } = e, {
       balance: j
-    } = (0, c.A)(), [C, O] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
+    } = (0, c.A)(), [O, C] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
       shouldOpen: A
     } = (0, g.lJ)({
       backgroundElementRef: y
@@ -51,7 +51,7 @@ let b = {
     }, [N, R]);
     let D = i.useCallback(() => {
         let e = !S;
-        O(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
+        C(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
       }, [S]),
       Z = i.useCallback(() => {
         S && D()
@@ -65,7 +65,7 @@ let b = {
       children: [(0, r.jsx)(m.A4, {
         ref: y,
         balance: j,
-        balanceWidgetMode: R ? d.b.DEFAULT : C,
+        balanceWidgetMode: R ? d.b.DEFAULT : O,
         onMouseDown: e => {
           e.stopPropagation()
         },

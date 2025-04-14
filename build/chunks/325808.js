@@ -23,11 +23,11 @@ var r = n(200651),
 let E = !h.isPlatformEmbedded,
   j = (0, g.hQ)();
 
-function C(e) {
+function O(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), " ms")
 }
 
-function O(e) {
+function C(e) {
   let t, {
       inputMode: n
     } = e,
@@ -75,7 +75,7 @@ function O(e) {
             onValueChange: e => c.Z.setMode(n, {
               delay: e
             }),
-            onValueRender: C,
+            onValueRender: O,
             maxValue: b.qhL,
             "aria-labelledby": j
           })]
@@ -139,7 +139,7 @@ function S() {
         options: s,
         value: t
       })
-    }), t === b.pM4.PUSH_TO_TALK && (0, r.jsx)(O, {
+    }), t === b.pM4.PUSH_TO_TALK && (0, r.jsx)(C, {
       inputMode: t
     })]
   })

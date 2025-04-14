@@ -23,8 +23,8 @@ var r = n(200651),
   _ = n(984370),
   E = n(797614),
   j = n(108427),
-  C = n(210887),
-  O = n(695346),
+  O = n(210887),
+  C = n(695346),
   S = n(594174),
   v = n(626135),
   T = n(260722),
@@ -142,22 +142,22 @@ function Y() {
     h = (0, N.Dt)(),
     f = S.default.getCurrentUser(),
     _ = null != e,
-    C = s && null != f && !_;
+    O = s && null != f && !_;
   (0, g.ZP)(() => {
     (0, j.e)("family-center"), T.ZP.initialPageLoad(), n || (0, x.EW)(d.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: B.L.AUTO,
       forceTrack: !0
     })
   });
-  let O = {
+  let C = {
       isConsideredAdult: e,
       numOfAcceptedRequests: t,
       selectedTab: l,
       selectedTeenId: a
     },
-    D = i.useRef(O);
+    D = i.useRef(C);
   return (i.useEffect(() => {
-    D.current = O
+    D.current = C
   }), i.useEffect(() => {
     if (s && _) {
       let {
@@ -177,8 +177,8 @@ function Y() {
       })
     }
   }, [s, _]), i.useEffect(() => {
-    C && (0, p.mN)(L.L0.FAMILY_CENTER)
-  }, [C]), C) ? null : (0, r.jsxs)("main", {
+    O && (0, p.mN)(L.L0.FAMILY_CENTER)
+  }, [O]), O) ? null : (0, r.jsxs)("main", {
     className: V.container,
     "aria-label": U.NW.string(M.Z.RZqaJi),
     children: [(0, r.jsx)(b.yY, {
@@ -202,7 +202,7 @@ function Y() {
 function K() {
   let {
     analyticsLocations: e
-  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([C.Z], () => C.Z.theme), {
+  } = (0, f.ZP)(h.Z.FAMILY_CENTER), t = (0, P.Z)(), n = (0, R.M8)(), s = (0, x.wE)(d.z.FAMILY_CENTER_NEW_BADGE), l = (0, c.e7)([I.Z], () => I.Z.getIsInitialized()), _ = (0, A.M)(), D = (0, c.e7)([O.Z], () => O.Z.theme), {
     selectedTab: Z,
     handleTabChange: w
   } = (0, y.Z)(), G = (0, N.Dt)(), H = S.default.getCurrentUser(), Y = null != t, K = l && null != H && !Y;
@@ -240,8 +240,8 @@ function K() {
         })
       }
     }, [l, Y]), i.useEffect(() => {
-      let e = O.Ex.getSetting();
-      l && t && void 0 === e && O.Ex.updateSetting(!0)
+      let e = C.Ex.getSetting();
+      l && t && void 0 === e && C.Ex.updateSetting(!0)
     }, [l, t]), i.useEffect(() => {
       K && (0, p.mN)(L.L0.FAMILY_CENTER)
     }, [K]), K) return null;

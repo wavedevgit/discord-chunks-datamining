@@ -63,7 +63,7 @@ function _(e) {
         otherUser: t
       }))
     })
-  }, [E, t]), C = i.useCallback(() => {
+  }, [E, t]), O = i.useCallback(() => {
     a()(void 0 !== E, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
@@ -73,7 +73,7 @@ function _(e) {
         otherUser: t
       }))
     })
-  }, [E, t]), O = i.useCallback(() => {
+  }, [E, t]), C = i.useCallback(() => {
     a()(void 0 !== E, "User must be logged in to decline a link request"), (0, o.ZDy)(async () => {
       let {
         default: e
@@ -98,7 +98,7 @@ function _(e) {
         icon: o.Dio,
         className: b.__invalid_actionDeny,
         tooltip: f.NW.string(h.Z.e5iHmZ),
-        onClick: O
+        onClick: C
       }) : (0, r.jsxs)(r.Fragment, {
         children: [_ ? null : (0, r.jsx)(m.Z, {
           icon: o.dz2,
@@ -109,7 +109,7 @@ function _(e) {
           icon: o.Dio,
           className: b.__invalid_actionDeny,
           tooltip: f.NW.string(h.Z.bBDeND),
-          onClick: C
+          onClick: O
         })]
       })
     })]

@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(240351),
   E = n(792258),
   j = n(657825),
-  C = n(198952),
-  O = n(329242),
+  O = n(198952),
+  C = n(329242),
   S = n(895328),
   v = n(292352),
   T = n(981631),
@@ -81,9 +81,9 @@ function D(e) {
     isMoreLoading: p
   } = (0, h.G)({
     onError: n
-  }), b = v.tx.get(t), [x, _] = i.useState(v.iB), C = (0, g.Xi)({
+  }), b = v.tx.get(t), [x, _] = i.useState(v.iB), O = (0, g.Xi)({
     location: "family_center_activity_section_web"
-  }), O = i.useCallback(() => {
+  }), C = i.useCallback(() => {
     _(e => e + v.iB), u(t)
   }, [t, u]);
   a()(b, "No text for action type");
@@ -110,9 +110,9 @@ function D(e) {
         className: A.sectionDescription,
         variant: "text-md/medium",
         color: "text-muted",
-        children: b.sectionDescription(null != s && s, C)
+        children: b.sectionDescription(null != s && s, O)
       }) : null]
-    }), [S, b, s, C]);
+    }), [S, b, s, O]);
   if (0 === l.length) return null;
   let R = l.slice(0, x);
   return (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function D(e) {
       }))
     }), R.length !== c ? (0, r.jsx)(o.P3F, {
       className: A.loadMoreBar,
-      onClick: O,
+      onClick: C,
       role: "button",
       children: p ? (0, r.jsx)(o.$jN, {
         type: o.$jN.Type.PULSING_ELLIPSIS,
@@ -172,12 +172,12 @@ let Z = () => {
     } = e, s = (0, b.I)(t);
     return void 0 === s ? null : (0, r.jsxs)("div", {
       className: A.accountRow,
-      children: [(0, r.jsx)(C.r, {
+      children: [(0, r.jsx)(O.r, {
         user: s,
         avatarSize: i
       }), (0, r.jsxs)("div", {
         className: A.headerText,
-        children: [(0, r.jsx)(O.Z, {
+        children: [(0, r.jsx)(C.Z, {
           user: s
         }), void 0 !== n ? (0, r.jsx)(o.Text, {
           variant: "text-sm/medium",

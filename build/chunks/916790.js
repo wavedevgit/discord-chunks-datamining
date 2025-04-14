@@ -63,7 +63,7 @@ function E(e) {
     })
   })
 }
-let k = [{
+let P = [{
   id: "action",
   name: "Action",
   group: y.v0.NONE,
@@ -108,11 +108,11 @@ let k = [{
   }
 }];
 
-function P(e) {
+function k(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, l = a.useMemo(() => t.error ? [...k, {
+  } = e, l = a.useMemo(() => t.error ? [...P, {
     id: "error",
     name: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(p.Z, {
@@ -144,7 +144,7 @@ function P(e) {
         })]
       })
     }
-  }] : k, [t]), {
+  }] : P, [t]), {
     TabBar: o,
     renderSelectedTab: s
   } = (0, y.ZP)({
@@ -271,7 +271,7 @@ function R() {
       data: S,
       selectedRowKey: null == _ ? void 0 : _.id.toString(),
       onClickRow: e => g(e.actionLog)
-    }), null != _ && (0, r.jsx)(P, {
+    }), null != _ && (0, r.jsx)(k, {
       actionLog: _,
       initialHeight: null != e.current ? e.current.clientHeight / 2 : 300
     })]

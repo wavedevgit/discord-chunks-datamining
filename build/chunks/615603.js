@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(267642),
   E = n(63063),
   j = n(74538),
-  C = n(283029),
-  O = n(357956),
+  O = n(283029),
+  C = n(357956),
   S = n(275909),
   v = n(981631),
   T = n(474936),
@@ -89,7 +89,7 @@ function R(e) {
         children: I.NW.format(I.t.Z4ULRE, {
           date: l.currentPeriodEnd
         })
-      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(O.Z, {
+      }) : t.isOnCooldown() && null != u ? (0, r.jsx)(C.Z, {
         cooldown: u.getTime()
       }) : (0, r.jsx)(c.Text, {
         className: y.__invalid_unappliedGuildBoostSlotDescription,
@@ -148,12 +148,12 @@ let w = function(e) {
     p = (0, o.e7)([x.ZP], () => x.ZP.getPremiumTypeSubscription()),
     h = (null == p ? void 0 : p.isPausedOrPausePending) === !0,
     {
-      fractionalState: O
+      fractionalState: C
     } = (0, u.Z)(),
     S = (0, o.e7)([d.Z], () => d.Z.useReducedMotion),
     w = (0, o.e7)([N.default], () => N.default.getCurrentUser()),
-    k = O === T.a$.FP_SUB_PAUSED,
-    W = (0, b.y)("guild_boost_settings_unapplied", w, O),
+    k = C === T.a$.FP_SUB_PAUSED,
+    W = (0, b.y)("guild_boost_settings_unapplied", w, C),
     L = h && !k,
     {
       appliedGuildBoostSlots: B,
@@ -184,7 +184,7 @@ let w = function(e) {
     K = Y ? H : 1,
     q = i.useMemo(() => {
       let e = [];
-      for (let t = 0; t < K; t++) e.push((0, r.jsx)(C.Z, {
+      for (let t = 0; t < K; t++) e.push((0, r.jsx)(O.Z, {
         className: y.headerBoostGem,
         useReducedMotion: S
       }, t));

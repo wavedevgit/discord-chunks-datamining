@@ -1,6 +1,6 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => O
+  Z: () => C
 }), n(388685), n(704826), n(35282), n(539854), n(49124), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749);
 var r = n(200651),
   i = n(192379),
@@ -56,20 +56,20 @@ let j = {
     [h.cq.STATIC]: null,
     [h.cq.REDUCED_MOTION]: null
   },
-  C = "debug",
-  O = e => {
+  O = "debug",
+  C = e => {
     let {
       effect: t,
       back: n
     } = e, {
       upsertConfig: s
-    } = (0, p.n6)(), O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, v] = i.useState(!0), T = i.useRef(null), [I, y] = i.useState(!1), [A, P] = i.useState(!1), [R, D] = i.useState([]), [Z, w] = i.useState(j), k = i.useRef([]), [W, L] = i.useState(t.name), B = W.toLowerCase().replace(/\s+/g, "_"), M = i.useMemo(() => ({
+    } = (0, p.n6)(), C = (0, o.e7)([g.default], () => g.default.getCurrentUser()), [S, v] = i.useState(!0), T = i.useRef(null), [I, y] = i.useState(!1), [A, P] = i.useState(!1), [R, D] = i.useState([]), [Z, w] = i.useState(j), k = i.useRef([]), [W, L] = i.useState(t.name), B = W.toLowerCase().replace(/\s+/g, "_"), M = i.useMemo(() => ({
       type: l.Z.PROFILE_EFFECT,
-      id: C,
-      skuId: C,
-      title: C,
-      description: C,
-      accessibilityLabel: C,
+      id: O,
+      skuId: O,
+      title: O,
+      description: O,
+      accessibilityLabel: O,
       reducedMotionSrc: "",
       effects: R,
       animationType: 0
@@ -144,7 +144,7 @@ let j = {
       k.current.forEach(e => {
         URL.revokeObjectURL(e)
       }), k.current = []
-    }, []), null == O) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
+    }, []), null == C) ? (0, r.jsx)("div", {}) : (0, r.jsxs)("div", {
       className: b.root,
       children: [(0, r.jsx)("div", {
         className: b.row,
@@ -350,7 +350,7 @@ let j = {
             children: A && (0, r.jsxs)("div", {
               className: a()(b.userProfilePreview, b.preview),
               children: [(0, r.jsx)(m.Z, {
-                user: O,
+                user: C,
                 pendingAvatar: void 0,
                 pendingProfileEffectId: null,
                 canUsePremiumCustomization: !0,

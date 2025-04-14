@@ -29,7 +29,7 @@ function b(e) {
     authorizedApplicationId: m.Z.testModeApplicationId,
     authorizationError: m.Z.error,
     authorizing: m.Z.isFetchingAuthorization
-  })), [_, E] = i.useState(null != b ? b : ""), [j, C] = i.useState("8080"), [O, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
+  })), [_, E] = i.useState(null != b ? b : ""), [j, O] = i.useState("8080"), [C, S] = i.useState("localhost"), v = (0, u.Dt)(), T = f.test(_);
   async function I() {
     o.q$();
     let e = function(e, t, n) {
@@ -40,7 +40,7 @@ function b(e) {
         case "proxy":
           return (0, c.ZP)(n)
       }
-    }(O, j, _);
+    }(C, j, _);
     null != await o.Wt(_, e) && t()
   }
   i.useEffect(() => () => l.Z.wait(() => o.q$()), []);
@@ -96,7 +96,7 @@ function b(e) {
             title: g.NW.string(g.t["/GTqXF"]),
             children: (0, r.jsx)(a.q4e, {
               isDisabled: !T || "" === _,
-              value: O,
+              value: C,
               options: [{
                 value: "localhost",
                 label: g.NW.string(g.t["+Y9Y6u"]),
@@ -111,20 +111,20 @@ function b(e) {
               },
               placeholder: "URL Origin Type"
             })
-          }), "localhost" !== O ? null : (0, r.jsx)(a.xJW, {
+          }), "localhost" !== C ? null : (0, r.jsx)(a.xJW, {
             className: p.inputWrapper,
             title: g.NW.string(g.t.fF4zxs),
             required: !0,
             children: (0, r.jsx)(a.oil, {
               value: j,
               maxLength: 5,
-              onChange: e => C(e),
+              onChange: e => O(e),
               disabled: x
             })
           }), (0, r.jsx)(a.zxk, {
             submitting: x,
             type: "submit",
-            disabled: !T || 0 === _.length || "localhost" === O && 0 === j.length,
+            disabled: !T || 0 === _.length || "localhost" === C && 0 === j.length,
             color: y ? a.zxk.Colors.RED : a.zxk.Colors.GREEN,
             children: y ? g.NW.string(g.t.d6TR3N) : g.NW.string(g.t.qwuK5O)
           })]

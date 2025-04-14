@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(581883),
   E = n(738486),
   j = n(918257),
-  C = n(970813),
-  O = n(726985),
+  O = n(970813),
+  C = n(726985),
   S = n(981631),
   v = n(710111),
   T = n(388032),
@@ -46,14 +46,14 @@ function P(e) {
     refreshStyles: t = !1
   } = e, n = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(g.F, {
-      setting: O.s6.VOICE_AND_VIDEO_SOUNDBOARD,
+      setting: C.s6.VOICE_AND_VIDEO_SOUNDBOARD,
       children: [(0, r.jsx)(j.Z, {
         refreshStyles: t
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(O.Z, {
         refreshStyles: t
       })]
     }), (0, r.jsxs)(g.F, {
-      setting: O.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
+      setting: C.s6.VOICE_AND_VIDEO_ENTRANCE_SOUNDS,
       children: [t ? null : (0, r.jsx)(o.$i$, {
         className: I.callSoundsDivider
       }), (0, r.jsx)(R, {
@@ -75,15 +75,15 @@ function R(e) {
     refreshStyles: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, C = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
+  } = (0, d.ZP)(), [s, c] = i.useState(v.hY), g = (0, b.tT)(s), _ = A(g), j = (null == g ? void 0 : g.type) === b.zx.GLOBAL, O = (0, l.e7)([h.Z], () => h.Z.hasFetchedAllSounds()) && null != g && null == _;
   i.useEffect(() => {
-    C && (0, f.tt)({
+    O && (0, f.tt)({
       location: n
     })
-  }, [C, n]), i.useEffect(() => {
+  }, [O, n]), i.useEffect(() => {
     (0, p.w)()
   }, []);
-  let O = i.useCallback((e, t) => {
+  let C = i.useCallback((e, t) => {
       let {
         inDropdown: n
       } = t;
@@ -111,7 +111,7 @@ function R(e) {
         onChange: e => {
           c(null == e ? v.hY : e.id)
         },
-        renderOptionSuffix: O,
+        renderOptionSuffix: C,
         hideDivider: !0
       }), (0, r.jsxs)(m.Z, {
         className: a()({
@@ -131,7 +131,7 @@ function R(e) {
           onSelect: e => {
             null == e ? (0, f.aC)(s, n) : (0, f.SZ)(s, e, n)
           }
-        }), C && (0, r.jsx)(o.Wn, {
+        }), O && (0, r.jsx)(o.Wn, {
           className: I.notice,
           messageType: o.QYI.WARNING,
           children: T.NW.string(T.t.WkPsFR)

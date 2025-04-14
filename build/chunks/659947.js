@@ -59,7 +59,7 @@ function j(e) {
   }), e.setLimit(1 / 0)
 }
 
-function C(e) {
+function O(e) {
   let {
     height: t
   } = e;
@@ -70,14 +70,14 @@ function C(e) {
   })
 }
 
-function O() {
-  return (0, r.jsx)(C, {
+function C() {
+  return (0, r.jsx)(O, {
     height: 16
   }, "footer")
 }
 
 function S() {
-  return (0, r.jsx)(C, {
+  return (0, r.jsx)(O, {
     height: 8
   }, "header")
 }
@@ -143,7 +143,7 @@ function I(e) {
   } = e, c = i.useId(), N = i.useRef(null), {
     mouseFocusEnabled: x,
     enableMouseFocus: _,
-    disableMouseFocus: C
+    disableMouseFocus: O
   } = function() {
     let e = i.useRef(!1),
       t = i.useCallback(() => {
@@ -221,7 +221,7 @@ function I(e) {
           value: T,
           onChange: I,
           onKeyDown: function(e) {
-            C();
+            O();
             let t = e.key.toLowerCase();
             if ("arrowdown" === t || "arrowup" === t || "enter" === t || "escape" === t) switch (e.preventDefault(), t) {
               case "escape":
@@ -285,7 +285,7 @@ function I(e) {
           }, i.id)
         },
         renderListHeader: S,
-        renderFooter: O,
+        renderFooter: C,
         sectionHeight: 0,
         rowHeight: 34,
         className: b.voiceChannelList,

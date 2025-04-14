@@ -22,8 +22,8 @@ var r = n(200651),
   _ = n(647177),
   E = n(63985),
   j = n(678916),
-  C = n(981631),
-  O = n(190378),
+  O = n(981631),
+  C = n(190378),
   S = n(486324),
   v = n(474936),
   T = n(388032),
@@ -158,7 +158,7 @@ function D(e) {
     }
     return i
   }(e, ["option", "source", "selected", "onSelectOption", "isAnimatedImage", "isVideo", "hotspotLocation"]);
-  let O = (0, d.O)(),
+  let C = (0, d.O)(),
     {
       analyticsLocations: S
     } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_IMAGE_OPTION),
@@ -176,9 +176,9 @@ function D(e) {
     });
 
   function Z() {
-    null != E && P && (h.Kw(E), b.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
+    null != E && P && (h.Kw(E), b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: v.cd.ANIMATED_VIDEO_BACKGROUND_NEW_PRESET,
-      location: O.location,
+      location: C.location,
       location_stack: S
     }))
   }
@@ -235,10 +235,10 @@ function w(e) {
     onClick: t,
     tooltipText: n,
     disabled: i = !1
-  } = e, s = (0, l.e7)([f.Z], () => f.Z.hasHotspot(O.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
+  } = e, s = (0, l.e7)([f.Z], () => f.Z.hasHotspot(C.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW));
 
   function a() {
-    h.Kw(O.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
+    h.Kw(C.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
   let c = s ? T.NW.string(T.t["5TUJOj"]) : n;
   return (0, r.jsxs)(o.DY3, {
@@ -281,7 +281,7 @@ function k(e) {
     analyticsLocations: i
   } = (0, g.ZP)(m.Z.VIDEO_BACKGROUND_CUSTOM_UPSELL);
   return (0, u.ZP)(() => {
-    b.default.track(C.rMx.PREMIUM_UPSELL_VIEWED, {
+    b.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
       type: v.cd.VIDEO_BACKGROUNDS_INLINE,
       location: n.location,
       location_stack: i

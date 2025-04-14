@@ -26,12 +26,12 @@ let h = e => {
       onCtaClick: _,
       perkComponent: E,
       subtitle: j = "",
-      descriptionCta: C = "",
-      cardVariant: O,
+      descriptionCta: O = "",
+      cardVariant: C,
       subtitleClassName: S,
       imageOverlayText: v
     } = e,
-    T = (0, o._)(O),
+    T = (0, o._)(C),
     I = (0, l.Er)(),
     y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
@@ -76,7 +76,7 @@ let h = e => {
       }) : null]
     }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [E, 0 !== C.length && null != _ && (0, r.jsx)(a.zxk, {
+      children: [E, 0 !== O.length && null != _ && (0, r.jsx)(a.zxk, {
         className: b,
         disabled: !y,
         fullWidth: !0,
@@ -86,7 +86,7 @@ let h = e => {
           children: [(0, r.jsx)("img", {
             alt: i,
             src: n
-          }), C]
+          }), O]
         })
       })]
     })]

@@ -29,14 +29,14 @@ function N(e) {
     navigateToHome: _,
     subscriptionGroup: E,
     renewalSkuId: j
-  } = e, C = (0, a.y)(n, 100), O = (0, m.KK)(E.flags), S = O ? s.QTo : s.tBG, v = O ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null == (t = g.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => O && null != T ? d.Z.getGuild(T) : void 0, [T, O]), y = (0, i.e7)([u.Z], () => {
+  } = e, O = (0, a.y)(n, 100), C = (0, m.KK)(E.flags), S = C ? s.QTo : s.tBG, v = C ? f.NW.string(f.t["46YF2N"]) : f.NW.string(f.t.fFyGiI), T = null == (t = g.metadata) ? void 0 : t.application_subscription_guild_id, I = (0, i.e7)([d.Z], () => C && null != T ? d.Z.getGuild(T) : void 0, [T, C]), y = (0, i.e7)([u.Z], () => {
     if (null != j) return u.Z.get(j)
   }, [j]), A = (0, p.p)(g.currentPeriodEnd);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
       className: b.header,
-      children: [null != C && (0, r.jsx)(s.Eep, {
-        src: C.href,
+      children: [null != O && (0, r.jsx)(s.Eep, {
+        src: O.href,
         imageClassName: b.appIcon,
         width: 48,
         height: 48

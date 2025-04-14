@@ -74,12 +74,12 @@ function j() {
       children: "Payment Request Components - Google Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Default View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(O, {
         paymentRequestWallet: "googlePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Google Pay - Connector View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(O, {
         paymentRequestWallet: "googlePay",
         renderConnectorView: !0
       })
@@ -93,12 +93,12 @@ function j() {
       children: "Payment Request Components - Apple Pay"
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Default View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(O, {
         paymentRequestWallet: "applePay"
       })
     }), (0, r.jsx)(h.E_, {
       label: "Apple Pay - Connector View",
-      children: (0, r.jsx)(C, {
+      children: (0, r.jsx)(O, {
         renderConnectorView: !0,
         paymentRequestWallet: "applePay"
       })
@@ -111,7 +111,7 @@ function j() {
   })
 }
 
-function C(e) {
+function O(e) {
   let t = i.useRef(null),
     n = {
       paymentLabel: f.NW.string(f.t.ZURqX1),
@@ -129,7 +129,7 @@ function C(e) {
   return e.renderStepBody ? (0, r.jsx)(p.t, x({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(d.Ch, x({}, n, e)) : (0, r.jsx)(d.Tr, x({}, n, e))
 }
 
-function O(e) {
+function C(e) {
   let {
     children: t,
     footer: n,
@@ -157,7 +157,7 @@ function S(e) {
   } = e, n = i.useRef(null), [s, a] = i.useState(!1), l = () => {
     null != n.current && n.current.show()
   };
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(C, {
     footer: (0, r.jsx)(g.Z, {
       primaryCTA: g.Z.CTAType.CONTINUE,
       primaryText: f.NW.string("applePay" === t ? f.t.WoXvJC : f.t.wnVVr6),
@@ -165,7 +165,7 @@ function S(e) {
       onPrimary: () => l(),
       onBack: () => {}
     }),
-    children: (0, r.jsx)(C, {
+    children: (0, r.jsx)(O, {
       renderConnectorView: !0,
       renderStepBody: !0,
       paymentRequestWallet: t,
@@ -179,7 +179,7 @@ function v(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(C, {
     className: b.choosePaymentTypeModal,
     children: (0, r.jsx)("div", {
       className: b.choosePaymentTypeContainer,

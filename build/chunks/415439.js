@@ -1,9 +1,9 @@
 /** Chunk was on 70371 **/
 n.d(t, {
   BV: () => j,
-  FW: () => C,
+  FW: () => O,
   Kt: () => E,
-  ZC: () => O
+  ZC: () => C
 });
 var r = n(442837),
   i = n(493683),
@@ -75,15 +75,15 @@ function j(e, t) {
   })
 }
 
-function C() {
+function O() {
   let e = (0, r.e7)([g.ZP], () => g.ZP.showPlayAgain),
     {
       frecentApps: t
-    } = O();
+    } = C();
   return e && t.length > 0
 }
 
-function O() {
+function C() {
   let {
     frecentApps: e,
     loading: t
