@@ -1,6 +1,6 @@
 /**
   Module ID: 81954
-  Original File Name: 9ee8875283311a73
+  Original File Name: 224748eb854ccbc5
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -87,8 +87,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -759,4 +759,4 @@ div:has(>div>.container_f792fa) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=9ee8875283311a73.css.map*/
+/*# sourceMappingURL=224748eb854ccbc5.css.map*/
