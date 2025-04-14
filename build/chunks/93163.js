@@ -1,4 +1,4 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 e.exports = {
   newMembersNotice: "newMembersNotice_acdcc0",
   memberNoticeAction: "memberNoticeAction_acdcc0",

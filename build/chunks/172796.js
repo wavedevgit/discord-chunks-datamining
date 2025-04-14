@@ -1,4 +1,4 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 e.exports = {
   table: "table_b4ec0b"
 }

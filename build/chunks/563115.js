@@ -1,16 +1,16 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 n.d(t, {
   Z: () => s,
-  h: () => a
+  h: () => i
 });
 var r = n(200651);
 n(192379);
 var l = n(442837),
   o = n(430824),
-  i = n(512508);
+  a = n(512508);
 
-function a(e, t, n, r) {
-  return (0, l.Wu)([o.Z], () => Object.values(o.Z.getRoles(e)).filter(e => !t.has(e.id)).filter(t => !n || t.id !== e).filter(null != r ? r : () => !0).map(e => (0, i.WG)(e).row), [n, e, r, t])
+function i(e, t, n, r) {
+  return (0, l.Wu)([o.Z], () => Object.values(o.Z.getRoles(e)).filter(e => !t.has(e.id)).filter(t => !n || t.id !== e).filter(null != r ? r : () => !0).map(e => (0, a.WG)(e).row), [n, e, r, t])
 }
 
 function s(e) {
@@ -22,10 +22,10 @@ function s(e) {
     disableEveryoneRole: s,
     helperText: c,
     className: u,
-    selectableRoleFilter: C
-  } = e, d = a(t, n, s, C);
-  return (0, r.jsx)(i.ZP, {
-    roleRows: d,
+    selectableRoleFilter: d
+  } = e, C = i(t, n, s, d);
+  return (0, r.jsx)(a.ZP, {
+    roleRows: C,
     guildId: t,
     selectedRoleIds: n,
     onChange: (e, t) => l(t),

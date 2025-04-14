@@ -1,106 +1,106 @@
-/** Chunk was on 58157 **/
-r.d(t, {
-  B: () => f,
+/** Chunk was on 77025 **/
+n.d(t, {
+  B: () => m,
   b: () => d
-}), r(388685);
-var n = r(200651),
-  i = r(192379),
-  o = r(481060),
-  l = r(893776),
-  s = r(489813),
-  u = r(388032),
-  c = r(667084);
+}), n(388685);
+var r = n(200651),
+  i = n(192379),
+  l = n(481060),
+  o = n(893776),
+  s = n(489813),
+  a = n(388032),
+  c = n(667084);
 
-function a() {
-  let [e, t] = i.useState(!1), [r, s] = i.useState(!1), [a, d] = i.useState(!1);
+function u() {
+  let [e, t] = i.useState(!1), [n, s] = i.useState(!1), [u, d] = i.useState(!1);
   i.useEffect(() => {
     let e;
-    return r && (e = setTimeout(() => {
+    return n && (e = setTimeout(() => {
       s(!1)
     }, 2e3)), () => {
       null != e && clearTimeout(e)
     }
-  }, [r]);
-  let f = async () => {
+  }, [n]);
+  let m = async () => {
     if (!e) {
       t(!0);
       try {
-        await l.Z.verifyResend(), s(!0), d(!0)
+        await o.Z.verifyResend(), s(!0), d(!0)
       } catch (e) {} finally {
         t(!1)
       }
     }
   };
-  return r ? (0, n.jsx)(o.Text, {
+  return n ? (0, r.jsx)(l.Text, {
     className: c.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-positive",
-    children: u.NW.string(u.t.H3Q7U1)
-  }) : (0, n.jsx)(o.zxk, {
-    size: o.zxk.Sizes.SMALL,
+    children: a.NW.string(a.t.H3Q7U1)
+  }) : (0, r.jsx)(l.zxk, {
+    size: l.zxk.Sizes.SMALL,
     submitting: e,
-    onClick: f,
-    children: a ? u.NW.string(u.t.WnX4Jy) : u.NW.string(u.t["13ofGh"])
+    onClick: m,
+    children: u ? a.NW.string(a.t.WnX4Jy) : a.NW.string(a.t["13ofGh"])
   })
 }
 
 function d() {
-  return (0, n.jsx)(s.PU, {
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
-    icon: o._XJ,
-    text: u.NW.string(u.t.c6EUJC),
-    footnote: u.NW.string(u.t["jMh+TU"]),
+    icon: l._XJ,
+    text: a.NW.string(a.t.c6EUJC),
+    footnote: a.NW.string(a.t["jMh+TU"]),
     meetsRequirement: !1,
-    children: (0, n.jsx)(o.ua7, {
-      text: u.NW.string(u.t.mGlP39),
+    children: (0, r.jsx)(l.ua7, {
+      text: a.NW.string(a.t.mGlP39),
       children: e => {
-        var t, r;
-        return (0, n.jsx)(o.zxk, (t = function(e) {
+        var t, n;
+        return (0, r.jsx)(l.zxk, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, e), r = r = {
-          size: o.zxk.Sizes.SMALL,
+        }({}, e), n = n = {
+          size: l.zxk.Sizes.SMALL,
           disabled: !0,
-          children: u.NW.string(u.t["13ofGh"])
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-          var r = Object.keys(e);
+          children: a.NW.string(a.t["13ofGh"])
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       }
     })
   })
 }
 
-function f(e) {
+function m(e) {
   let {
     isUserVerified: t
-  } = e, r = t ? u.NW.string(u.t.qY1jHB) : u.NW.string(u.t.c6EUJC);
-  return (0, n.jsx)(s.PU, {
+  } = e, n = t ? a.NW.string(a.t.qY1jHB) : a.NW.string(a.t.c6EUJC);
+  return (0, r.jsx)(s.PU, {
     className: c.editableRequirementContainer,
-    icon: o._XJ,
-    text: r,
-    footnote: u.NW.string(u.t["jMh+TU"]),
+    icon: l._XJ,
+    text: n,
+    footnote: a.NW.string(a.t["jMh+TU"]),
     meetsRequirement: t,
-    children: (0, n.jsx)(a, {})
+    children: (0, r.jsx)(u, {})
   })
 }

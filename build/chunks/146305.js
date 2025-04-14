@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => eI
@@ -36,8 +36,8 @@ var r = n(200651),
   Z = n(44550),
   D = n(853714),
   A = n(359191),
-  k = n(84658),
-  W = n(142961),
+  W = n(84658),
+  k = n(142961),
   L = n(730910),
   M = n(475013),
   G = n(213956),
@@ -283,8 +283,8 @@ let eI = {
             element: L.Z
           }, predicate: () => (0, h.wC)(t.guild.id), decoration: function(e, t) {
             if (p.Z.getEnabled(e)) return ev.NW.string(ev.t.pPSmxs).toUpperCase();
-            if ((0, W.C)(e)) return ev.NW.string(ev.t.HDF4o6).toUpperCase();
-            let n = k.ug,
+            if ((0, k.C)(e)) return ev.NW.string(ev.t.HDF4o6).toUpperCase();
+            let n = W.ug,
               r = n.findIndex(e => e === t);
             if (-1 !== r) return ev.NW.formatToPlainString(ev.t["5r28iY"], {
               count: r + 1,

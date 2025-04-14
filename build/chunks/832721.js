@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 e.exports = {
   subtext: "subtext__65a39",

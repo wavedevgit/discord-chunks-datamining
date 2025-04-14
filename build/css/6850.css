@@ -1,194 +1,7 @@
 /**
   Module ID: 6850
-  Original File Name: 80c536155a205c37
+  Original File Name: 63525bf584a16f8d
 **/
-.questionContainer__0a749 {
-    margin-top: 24px
-}
-
-.questionTitle__0a749 {
-    margin-bottom: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis
-}
-
-.requirementContainer__0a749 {
-    display: flex;
-    align-items: center;
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    padding: 12px;
-    margin-top: 8px
-}
-
-.requirementIcon__0a749 {
-    color: var(--interactive-normal);
-    margin-right: 8px
-}
-
-.requirementText__0a749 {
-    flex: 1
-}
-
-.requirementSuccess__0a749 {
-    color: var(--green-360)
-}
-
-.requirementFailure__0a749 {
-    color: var(--status-danger)
-}
-
-.container__0a749 {
-    padding: 0 16px 40px
-}
-
-.footnote__0a749 {
-    text-align: left;
-    margin-top: 8px
-}
-
-.formItem_d48a51 {
-    width: 100%;
-    padding: 0;
-    margin-bottom: 24px
-}
-
-.formItem_d48a51:last-child {
-    margin-bottom: 0
-}
-
-.settingsFormItem_d48a51 {
-    width: 100%;
-    margin-bottom: 16px;
-    border-radius: 8px;
-    padding: 16px;
-    background-color: var(--background-secondary)
-}
-
-.wrapperBase_d48a51 {
-    border-radius: 4px;
-    padding: 8px 12px
-}
-
-.formFieldWrapper_d48a51 {
-    background-color: var(--background-secondary)
-}
-
-.formFieldWrapper_d48a51,.settingsFormFieldWrapper_d48a51 {
-    border: 1px solid var(--background-tertiary)
-}
-
-.settingsFormFieldWrapper_d48a51 {
-    background-color: var(--background-secondary-alt)
-}
-
-.verificationFieldWrapper_d48a51 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.verificationIcon_d48a51 {
-    color: var(--interactive-normal);
-    margin-right: 8px
-}
-
-.verificationLabel_d48a51 {
-    display: flex;
-    align-items: center
-}
-
-.verificationCheckmark_d48a51 {
-    color: var(--text-positive);
-    margin-right: 8px;
-    width: 16px;
-    height: 16px
-}
-
-.verificationConfirmation_d48a51 {
-    display: flex;
-    align-items: center;
-    flex-grow: 0
-}
-
-.termsRow_d48a51 {
-    display: flex;
-    align-items: flex-start;
-    padding: 16px 4px;
-    border-bottom: 1px solid var(--background-modifier-accent)
-}
-
-.termsRow_d48a51:first-child {
-    padding-top: 8px
-}
-
-.termsRow_d48a51:last-child {
-    border-bottom: none;
-    padding-bottom: 8px
-}
-
-.termsRowContent_d48a51 {
-    padding-left: 12px;
-    white-space: pre-wrap;
-    width: calc(100% - 12px);
-    word-wrap: break-word
-}
-
-.checkbox_d48a51 {
-    margin-top: 16px;
-    cursor: pointer;
-    opacity: 1
-}
-
-.formItemDescription_d48a51 {
-    margin-bottom: 8px
-}
-
-.verifyConfirmText_d48a51 {
-    box-sizing: border-box;
-    height: 32px;
-    padding: 8px
-}
-
-.settingsLink_d48a51 {
-    margin-top: 8px
-}
-
-.radioItem_d48a51 {
-    border: 1px solid var(--background-modifier-accent)
-}
-
-.fieldBackground_d48a51,.fieldBackground_d48a51:hover:not(:focus) {
-    background-color: var(--background-secondary);
-    border: 1px solid var(--background-tertiary);
-    border-radius: 4px;
-    opacity: 1
-}
-
-.termsFieldBody_d48a51 {
-    padding: 10px 17px
-}
-
-.paragraphFieldBody_d48a51,.textInputFieldBodyInput_d48a51 {
-    opacity: 1
-}
-
-.paragraphFieldBody_d48a51>textarea {
-    border: none;
-    background: none;
-    opacity: 1
-}
-
-.multipleChoiceIcon_d48a51 {
-    display: flex
-}
-
-.multipleChoiceIcon_d48a51>svg {
-    width: 20px;
-    height: 20px
-}
-
 .searchContainer__6ae25 {
     position: relative
 }
@@ -314,6 +127,56 @@
 .channelIcon__6ae25 {
     margin-right: 4px;
     color: var(--text-muted)
+}
+
+.questionContainer__0a749 {
+    margin-top: 40px
+}
+
+.disabledQuestionContainer__0a749 {
+    margin-bottom: 24px
+}
+
+.questionTitle__0a749 {
+    margin-bottom: 12px;
+    overflow: hidden;
+    word-wrap: break-word
+}
+
+.requirementContainer__0a749 {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-modifier-accent);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 24px
+}
+
+.requirementIcon__0a749 {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.requirementText__0a749 {
+    flex: 1
+}
+
+.requirementSuccess__0a749 {
+    color: var(--green-360)
+}
+
+.requirementFailure__0a749 {
+    color: var(--status-danger)
+}
+
+.container__0a749 {
+    padding: 0 16px 40px
+}
+
+.footnote__0a749 {
+    text-align: left;
+    margin-top: 8px
 }
 
 .tableHeaderRow__9dd6b {
@@ -2588,4 +2451,4 @@
     margin-left: 4px
 }
 
-/*# sourceMappingURL=80c536155a205c37.css.map*/
+/*# sourceMappingURL=63525bf584a16f8d.css.map*/

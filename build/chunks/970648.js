@@ -1,12 +1,11 @@
-/** Chunk was on 71018 **/
-"use strict";
+/** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 }), n(415506);
 var r = n(772848),
   i = n(544891),
-  s = n(981631);
-let l = {
+  o = n(981631);
+let a = {
   generateNonce: function() {
     return (0, r.Z)()
   },
@@ -16,7 +15,7 @@ let l = {
         handoff_token: t
       }
     } = await i.tn.post({
-      url: s.ANM.HANDOFF,
+      url: o.ANM.HANDOFF,
       body: {
         key: e
       },

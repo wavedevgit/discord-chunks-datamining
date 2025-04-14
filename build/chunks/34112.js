@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => A
@@ -99,9 +99,9 @@ function A(e) {
       let {
         row: s
       } = e;
-      if (0 === x.length) return (0, r.jsx)(k, {}, "empty-role");
+      if (0 === x.length) return (0, r.jsx)(W, {}, "empty-role");
       let o = x[s];
-      return (0, r.jsx)(W, {
+      return (0, r.jsx)(k, {
         role: o,
         guild: n,
         highestRole: p,
@@ -125,7 +125,7 @@ function A(e) {
   })
 }
 
-function k() {
+function W() {
   return (0, r.jsxs)("div", {
     className: P.emptyRoles,
     children: [(0, r.jsx)("div", {
@@ -142,7 +142,7 @@ function k() {
   })
 }
 
-function W(e) {
+function k(e) {
   var t, s, c;
   let {
     role: d,
@@ -157,13 +157,13 @@ function W(e) {
     disableDrag: I,
     setEditRoleId: S,
     setSelectedSection: A
-  } = e, k = (0, y.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
+  } = e, W = (0, y.T)(g, h, d), k = null != W, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: D,
     item: () => (_(d.id), {
       id: d.id,
       position: b
     }),
-    canDrag: () => M && !W,
+    canDrag: () => M && !k,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -172,11 +172,11 @@ function W(e) {
       if (null == n) return void v();
       O(n.roleId)
     }
-  }), [d, _, v, O, W, M, b]), [{
+  }), [d, _, v, O, k, M, b]), [{
     isDragging: B
   }, F] = (0, a.c)(U), z = i.useMemo(() => ({
     accept: D,
-    canDrop: () => !W,
+    canDrop: () => !k,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -188,7 +188,7 @@ function W(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [W, d]), [{
+  }), [k, d]), [{
     dragSourcePosition: H
   }, V] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
@@ -231,7 +231,7 @@ function W(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: l()(P.dragIcon, w.dragSpacing, {
-        [P.dragIconHidden]: W || I
+        [P.dragIconHidden]: k || I
       }),
       onMouseEnter: () => G(!0),
       onMouseLeave: () => G(!1),
@@ -251,9 +251,9 @@ function W(e) {
         size: 24,
         className: P.roleIcon,
         defaultIconClassName: P.shield
-      }), null != k ? (0, r.jsx)(y.Z, {
+      }), null != W ? (0, r.jsx)(y.Z, {
         className: P.lock,
-        tooltipText: k
+        tooltipText: W
       }) : null, (0, r.jsx)(u.Text, {
         className: P.roleName,
         color: "header-primary",
@@ -288,10 +288,10 @@ function W(e) {
       className: l()(P.buttonsContainer, w.buttonsSpacing),
       children: [(0, r.jsx)(u.M0o, {
         className: l()(P.circleButton, P.editButton),
-        tooltip: W ? T.NW.string(T.t["HO/oXl"]) : T.NW.string(T.t.bt75u7),
+        tooltip: k ? T.NW.string(T.t["HO/oXl"]) : T.NW.string(T.t.bt75u7),
         color: u.YX$.SECONDARY,
         size: u.tT7.SIZE_36,
-        icon: W ? (0, r.jsx)(u.tEF, {
+        icon: k ? (0, r.jsx)(u.tEF, {
           size: "custom",
           color: "currentColor",
           width: 20,

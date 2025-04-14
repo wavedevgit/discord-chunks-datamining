@@ -1,4 +1,4 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 e.exports = {
   spacing: "spacing_bad290",
   content: "content_bad290",

@@ -17,8 +17,8 @@ var r = n(200651),
   f = n(367907),
   m = n(906732),
   g = n(522651),
-  O = n(795318),
-  b = n(194082),
+  b = n(795318),
+  O = n(194082),
   y = n(282256),
   h = n(925329),
   v = n(880395),
@@ -80,7 +80,7 @@ function W(e) {
     collapsed: f,
     video: m,
     isStreaming: g,
-    disabled: O,
+    disabled: b,
     isWatching: y,
     iconClassName: h,
     embeddedApplication: v,
@@ -98,7 +98,7 @@ function W(e) {
   }, {
     autoTrackExposure: !0
   });
-  if (f || O) return null;
+  if (f || b) return null;
   let W = [],
     M = (0, r.jsx)(R, {
       iconClassName: h,
@@ -162,8 +162,8 @@ function W(e) {
     })
   }, "watch")), g && W.push((0, r.jsx)("div", {
     className: o()(_.iconSpacing, _.liveIconSpacing),
-    children: (0, r.jsx)(b.ZP, {
-      size: b.ZP.Sizes.SMALL
+    children: (0, r.jsx)(O.ZP, {
+      size: O.ZP.Sizes.SMALL
     })
   }, "stream"));
   let F = null != P && !(0, x.yE)(P.flags, T.udG.EMBEDDED);
@@ -191,7 +191,7 @@ let M = l.forwardRef(function(e, t) {
       size: d = T.ipw.SMALL,
       selected: p = !1,
       disabled: f = !1,
-      isOverlay: b = !1
+      isOverlay: O = !1
     } = e,
     h = function(e, t) {
       if (null == e) return {};
@@ -313,14 +313,14 @@ let M = l.forwardRef(function(e, t) {
             primaryGuild: Q.primaryGuild,
             userId: Q.id,
             contextGuildId: B,
-            isOverlay: b,
+            isOverlay: O,
             disableTooltip: !0,
-            className: o()(_.clanTag, b && _.isOverlay),
+            className: o()(_.clanTag, O && _.isOverlay),
             profileViewedAnalytics: {
-              source: b ? T.jXE.OVERLAY : T.Sbl.VOICE_PANEL
+              source: O ? T.jXE.OVERLAY : T.Sbl.VOICE_PANEL
             }
           };
-        return !V || b ? (0, r.jsx)(y.Z, (e = k({}, l), t = t = {
+        return !V || O ? (0, r.jsx)(y.Z, (e = k({}, l), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -347,7 +347,7 @@ let M = l.forwardRef(function(e, t) {
             null != B && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, v.D)(e, Q, en, {
               context: et
             }, (e, t) => {
-              (0, O.o)({
+              (0, b.o)({
                 menuName: e,
                 menuItemProps: t,
                 entrypoint: w.A5.THREE_DOT,

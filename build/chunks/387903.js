@@ -14,8 +14,8 @@ var r, l, i = n(200651),
   f = n(438139),
   m = n(410030),
   g = n(726542),
-  O = n(600164),
-  b = n(686546),
+  b = n(600164),
+  O = n(686546),
   y = n(111028),
   h = n(925329),
   v = n(810568),
@@ -206,8 +206,8 @@ class H extends(r = o.PureComponent) {
     else if ((0, E.dS)(e)) {
       let t = (0, E.rq)(e);
       if (null == t) return null;
-      m = (0, i.jsx)(b.ZP, {
-        mask: b.ZP.Masks.SQUIRCLE,
+      m = (0, i.jsx)(O.ZP, {
+        mask: O.ZP.Masks.SQUIRCLE,
         width: W.Si.SMALL,
         height: W.Si.SMALL,
         children: (0, i.jsx)("img", {
@@ -470,26 +470,26 @@ class H extends(r = o.PureComponent) {
     (0, _.Z)(c) ? (e = this.renderXboxImage(), f = !0) : null == (e = this.renderImage(c)) && (f = null != (e = this.renderGameImage(c)));
     let m = this.renderName(c),
       g = this.renderDetails(c),
-      b = this.renderState(c, l),
+      O = this.renderState(c, l),
       y = this.renderTimePlayed(c),
       h = this.renderChannelDetails(c),
       v = null != n ? n() : null,
       j = this.renderTimeBar(c),
-      S = ![e, m, g, b, y, j, v].some(e => null != e);
+      S = ![e, m, g, O, y, j, v].some(e => null != e);
     return (0, i.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(S), (0, i.jsx)("div", {
         className: s()(f ? R.bodyAlignCenter : R.bodyNormal),
         children: (0, i.jsxs)("div", {
           className: R.activityDetails,
-          children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, i.jsxs)(O.Z.Child, {
+          children: [e, this.isStreamerOnTypeActivityFeed() ? null : (0, i.jsxs)(b.Z.Child, {
             className: s()((0, C.l)(R, "content", f ? "GameImage" : null != e ? "Images" : "NoImages", t)),
             children: [(0, i.jsxs)(p.P3F, {
               className: s()(null != a && R.openGameProfile),
               onClick: null != a ? e => {
                 a(e), null == o || o()
               } : void 0,
-              children: [m, g, b, y]
+              children: [m, g, O, y]
             }), h, d ? null : j, u ? v : null]
           })]
         })

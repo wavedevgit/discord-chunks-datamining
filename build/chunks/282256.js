@@ -33,8 +33,8 @@ let f = l.memo(function(e) {
       }
       return l
     }(e, ["children", "isOverlay", "contextGuildId"]);
-  let O = l.useRef(null),
-    [b, y] = l.useState({
+  let b = l.useRef(null),
+    [O, y] = l.useState({
       maskImage: "none"
     }),
     h = (0, c.Z)(() => {
@@ -43,7 +43,7 @@ let f = l.memo(function(e) {
         maskImage: "none"
       });
       let n = null == (e = v.current) ? void 0 : e.getBoundingClientRect(),
-        r = null == (t = O.current) ? void 0 : t.getBoundingClientRect();
+        r = null == (t = b.current) ? void 0 : t.getBoundingClientRect();
       if (null == n || null == r) return void y({
         maskImage: "none"
       });
@@ -84,8 +84,8 @@ let f = l.memo(function(e) {
       ref: N,
       children: (0, r.jsx)("span", {
         className: o()(p.chipletContainer, !j && f && p.noPadding),
-        ref: O,
-        style: b,
+        ref: b,
+        style: O,
         children: (0, r.jsx)(d.ZP, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

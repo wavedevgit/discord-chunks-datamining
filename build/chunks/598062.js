@@ -1,5 +1,6 @@
 /** Chunk was on 93602 **/
 n.d(t, {
+  PW: () => a,
   XD: () => o,
   i5: () => i
 });
@@ -11,24 +12,24 @@ let i = (0, r.B)({
     label: "Nameplates Experiment",
     commonTriggerPoint: l.$P.CONNECTION_OPEN,
     defaultConfig: {
-      canSee: !1,
-      canSeeOffline: !1,
+      canView: !1,
+      canViewAll: !1,
       hasUpdatedDMBehavior: !1
     },
     treatments: [{
       id: 1,
       label: "Can see",
       config: {
-        canSee: !0,
-        canSeeOffline: !1,
+        canView: !0,
+        canViewAll: !1,
         hasUpdatedDMBehavior: !1
       }
     }, {
       id: 2,
       label: "Can see (updated)",
       config: {
-        canSee: !0,
-        canSeeOffline: !0,
+        canView: !0,
+        canViewAll: !0,
         hasUpdatedDMBehavior: !0
       }
     }]
@@ -37,4 +38,9 @@ let i = (0, r.B)({
     location: e
   }, {
     autoTrackExposure: !1
-  }).canSee
+  }).canView,
+  a = e => i.useExperiment({
+    location: e
+  }, {
+    autoTrackExposure: !1
+  }).canViewAll

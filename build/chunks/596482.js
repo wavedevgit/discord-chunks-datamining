@@ -1,17 +1,17 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 n.d(t, {
   Z: () => g
 });
 var r = n(200651),
   l = n(192379),
   o = n(722770),
-  i = n(481060),
-  a = n(100527),
+  a = n(481060),
+  i = n(100527),
   s = n(666657),
   c = n(533244),
   u = n(664452),
-  C = n(226192),
-  d = n(223606),
+  d = n(226192),
+  C = n(223606),
   m = n(388032),
   b = n(708210);
 
@@ -37,24 +37,24 @@ function f(e) {
   let {
     onHandleEnableLockdown: n,
     onHandleReportFalseAlarm: l,
-    incidentData: a
-  } = e, s = null != (t = a.raidDetectedAt) ? t : a.dmSpamDetectedAt;
+    incidentData: i
+  } = e, s = null != (t = i.raidDetectedAt) ? t : i.dmSpamDetectedAt;
   return (0, r.jsxs)("div", {
     className: b.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: b.subHeaderTextContainer,
-      children: [(0, r.jsx)(i.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: b.shieldIcon,
         color: o.Z.RED_345
       }), (0, r.jsxs)("div", {
         className: b.subHeaderText,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           className: b.heading,
           variant: "heading-lg/semibold",
           color: "text-danger",
-          children: (0, c.kk)(a) ? m.NW.string(m.t.raRxxc) : m.NW.string(m.t["4nbAtb"])
-        }), (0, r.jsx)(i.Text, {
+          children: (0, c.kk)(i) ? m.NW.string(m.t.raRxxc) : m.NW.string(m.t["4nbAtb"])
+        }), (0, r.jsx)(a.Text, {
           className: b.tagLine,
           variant: "text-sm/medium",
           children: m.NW.format(m.t["4QIIZm"], {
@@ -64,25 +64,25 @@ function f(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: b.buttonContainer,
-      children: [(0, r.jsx)(i.zxk, {
+      children: [(0, r.jsx)(a.zxk, {
         className: b.reportButton,
-        color: i.zxk.Colors.TRANSPARENT,
+        color: a.zxk.Colors.TRANSPARENT,
         onClick: l,
-        children: (0, r.jsx)(i.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           children: m.NW.string(m.t.ISiXbW)
         })
-      }), (0, r.jsx)(i.gtL, {
+      }), (0, r.jsx)(a.gtL, {
         className: b.__invalid_lockdownButton,
-        color: i.zxk.Colors.RED,
+        color: a.zxk.Colors.RED,
         onClick: n,
         children: (0, r.jsxs)("div", {
           className: b.lockdownButtonInnerRaidDetected,
-          children: [(0, r.jsx)(i.mBM, {
+          children: [(0, r.jsx)(a.mBM, {
             size: "xs",
             color: "currentColor",
             className: b.lockIcon
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: b.lockdownButtonText,
             variant: "text-sm/semibold",
             children: m.NW.string(m.t.UgXhdn)
@@ -103,34 +103,34 @@ function h(e) {
     className: b.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: b.subHeaderTextContainer,
-      children: [(0, r.jsx)(i.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: b.shieldIcon,
         color: o.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: b.subHeaderText,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           className: b.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(n)
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: b.tagLine,
           variant: "text-sm/medium",
           children: (0, c.OY)(n, l)
         })]
       })]
-    }), (0, r.jsx)(i.zxk, {
+    }), (0, r.jsx)(a.zxk, {
       className: b.lockdownNoticeButton,
-      color: i.zxk.Colors.BRAND,
+      color: a.zxk.Colors.BRAND,
       onClick: t,
       children: (0, r.jsxs)("div", {
         className: b.lockdownButtonInner,
-        children: [(0, r.jsx)(i.mBM, {
+        children: [(0, r.jsx)(a.mBM, {
           size: "xs",
           color: "currentColor",
           className: b.lockIcon
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: b.lockdownButtonText,
           variant: "text-sm/semibold",
           children: m.NW.string(m.t.e1bMNT)
@@ -145,50 +145,50 @@ function j(e) {
     onHandleEnableLockdown: t,
     onHandleReportFalseAlarm: n,
     incidentData: l,
-    guildName: a
+    guildName: i
   } = e;
   return (0, r.jsxs)("div", {
     className: b.subheaderContainer,
     children: [(0, r.jsxs)("div", {
       className: b.subHeaderTextContainer,
-      children: [(0, r.jsx)(i.b7C, {
+      children: [(0, r.jsx)(a.b7C, {
         size: "md",
         className: b.shieldIcon,
         color: o.Z.BRAND_360
       }), (0, r.jsxs)("div", {
         className: b.subHeaderText,
-        children: [(0, r.jsx)(i.X6q, {
+        children: [(0, r.jsx)(a.X6q, {
           className: b.heading,
           variant: "heading-lg/semibold",
           color: "text-brand",
           children: p(l)
-        }), (0, r.jsx)(i.Text, {
+        }), (0, r.jsx)(a.Text, {
           className: b.tagLine,
           variant: "text-sm/medium",
-          children: (0, c.OY)(l, a)
+          children: (0, c.OY)(l, i)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: b.buttonContainer,
-      children: [(0, r.jsx)(i.zxk, {
+      children: [(0, r.jsx)(a.zxk, {
         className: b.reportButton,
-        color: i.zxk.Colors.TRANSPARENT,
+        color: a.zxk.Colors.TRANSPARENT,
         onClick: n,
-        children: (0, r.jsx)(i.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           children: m.NW.string(m.t.ISiXbW)
         })
-      }), (0, r.jsx)(i.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         className: b.__invalid_lockdownButton,
-        color: i.zxk.Colors.BRAND,
+        color: a.zxk.Colors.BRAND,
         onClick: t,
         children: (0, r.jsxs)("div", {
           className: b.lockdownButtonInnerRaidDetected,
-          children: [(0, r.jsx)(i.mBM, {
+          children: [(0, r.jsx)(a.mBM, {
             size: "xs",
             color: "currentColor",
             className: b.lockIcon
-          }), (0, r.jsx)(i.Text, {
+          }), (0, r.jsx)(a.Text, {
             className: b.lockdownButtonText,
             variant: "text-sm/semibold",
             children: m.NW.string(m.t.e1bMNT)
@@ -206,10 +206,10 @@ function g(e) {
     isUnderLockdown: o,
     isRaidDetected: m
   } = e, b = l.useCallback(() => {
-    (0, i.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let e = {
         source: s.Zu.MEMBER_SAFETY_PAGE,
-        location: a.Z.MEMBER_SAFETY_PAGE,
+        location: i.Z.MEMBER_SAFETY_PAGE,
         alertType: (0, c.T1)(n)
       };
       return n => {
@@ -247,8 +247,8 @@ function g(e) {
       }
     })
   }, [t.id, n]), p = l.useCallback(() => {
-    let e = d.Z.getLastIncidentAlertMessage(t.id);
-    (0, C.kW)(e, t.id)
+    let e = C.Z.getLastIncidentAlertMessage(t.id);
+    (0, d.kW)(e, t.id)
   }, [t.id]), g = (() => {
     switch (!0) {
       case m && o:

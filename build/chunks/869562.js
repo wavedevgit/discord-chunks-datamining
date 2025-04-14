@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 e.exports = {
   settingsColumn: "settingsColumn_ebb372 " + n(319586).customColumn,

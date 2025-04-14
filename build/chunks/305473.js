@@ -1,24 +1,24 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 n.d(t, {
-  Z: () => a
+  Z: () => i
 });
 var r = n(200651);
 n(192379);
 var l = n(528011),
   o = n(533244),
-  i = n(596482);
+  a = n(596482);
 
-function a(e) {
+function i(e) {
   let {
     guild: t
   } = e, {
     shouldShowIncidentActions: n,
-    incidentData: a,
+    incidentData: i,
     isUnderLockdown: s
   } = (0, l.mI)(t.id), c = !1;
-  return (null != a && (c = (0, o.i9)(a) && n), c || s) ? (0, r.jsx)(i.Z, {
+  return (null != i && (c = (0, o.i9)(i) && n), c || s) ? (0, r.jsx)(a.Z, {
     guild: t,
-    incidentData: a,
+    incidentData: i,
     isUnderLockdown: s,
     isRaidDetected: c
   }) : null

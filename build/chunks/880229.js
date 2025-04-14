@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   C: () => z,
@@ -38,7 +38,7 @@ let Z = (0, b.hQ)(),
   D = (0, b.hQ)(),
   A = (0, y.Mg)(u.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
-function k(e) {
+function W(e) {
   var t;
   let {
     emojiId: n,
@@ -53,7 +53,7 @@ function k(e) {
   })
 }
 
-function W(e) {
+function k(e) {
   let {
     icon: t,
     children: n,
@@ -111,7 +111,7 @@ function L(e) {
     className: R.section,
     children: [i.length - s.size > 1 && (0, r.jsx)("div", {
       className: R.list,
-      children: (0, r.jsx)(W, {
+      children: (0, r.jsx)(k, {
         icon: (0, r.jsx)(m.avL, {
           size: "md",
           color: "currentColor",
@@ -129,8 +129,8 @@ function L(e) {
       })
     }), (0, r.jsx)("div", {
       className: R.list,
-      children: i.map(e => (0, r.jsxs)(W, {
-        icon: (0, r.jsx)(k, {
+      children: i.map(e => (0, r.jsxs)(k, {
+        icon: (0, r.jsx)(W, {
           emojiId: e.emoji_id,
           emojiName: e.emoji_name,
           className: R.rowIcon
@@ -400,7 +400,7 @@ function F(e) {
       className: R.modalContent,
       children: [u.length > 1 && (0, r.jsx)("div", {
         className: R.list,
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(k, {
           icon: (0, r.jsx)(m.avL, {
             size: "md",
             color: "currentColor"
@@ -420,7 +420,7 @@ function F(e) {
         children: u.map(e => {
           var t;
           let n = null != (t = (0, h.Th)(e.type)) ? t : m.VL1;
-          return (0, r.jsx)(W, {
+          return (0, r.jsx)(k, {
             icon: (0, r.jsx)("div", {
               className: R.rowIcon,
               children: (0, r.jsx)(n, {

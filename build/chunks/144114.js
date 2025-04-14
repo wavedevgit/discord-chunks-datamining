@@ -1,26 +1,25 @@
-/** Chunk was on 69422 **/
-"use strict";
+/** Chunk was on 77025 **/
 n.d(t, {
-  L: () => u,
-  Z: () => h
+  L: () => d,
+  Z: () => m
 });
-var r, o = n(990547),
-  i = n(544891),
-  a = n(570140),
+var r, i = n(990547),
+  l = n(544891),
+  o = n(570140),
   s = n(314897),
-  l = n(573261),
+  a = n(573261),
   c = n(815660),
-  d = n(981631),
-  u = ((r = {}).USER_ACTION_REQUIRED = "user_action_required", r.USER_SETTINGS_UPDATE = "user_settings_update", r.GUILD_PHONE_REQUIRED = "guild_phone_required", r.MFA_PHONE_UPDATE = "mfa_phone_update", r.CONTACT_SYNC = "contact_sync", r);
-let h = {
+  u = n(981631),
+  d = ((r = {}).USER_ACTION_REQUIRED = "user_action_required", r.USER_SETTINGS_UPDATE = "user_settings_update", r.GUILD_PHONE_REQUIRED = "guild_phone_required", r.MFA_PHONE_UPDATE = "mfa_phone_update", r.CONTACT_SYNC = "contact_sync", r);
+let m = {
   setCountryCode(e) {
-    a.Z.dispatch({
+    o.Z.dispatch({
       type: "PHONE_SET_COUNTRY_CODE",
       countryCode: e
     })
   },
-  removePhone: (e, t) => i.tn.del({
-    url: d.ANM.PHONE,
+  removePhone: (e, t) => l.tn.del({
+    url: u.ANM.PHONE,
     body: {
       password: e,
       change_phone_reason: t
@@ -31,8 +30,8 @@ let h = {
   resendCode(e) {
     let t = {},
       n = s.default.getFingerprint();
-    return null != n && "" !== n && (t["X-Fingerprint"] = n), i.tn.post({
-      url: d.ANM.RESEND_PHONE,
+    return null != n && "" !== n && (t["X-Fingerprint"] = n), l.tn.post({
+      url: u.ANM.RESEND_PHONE,
       headers: t,
       body: {
         phone: e
@@ -40,16 +39,16 @@ let h = {
       rejectWithError: !1
     })
   },
-  beginAddPhone: (e, t) => i.tn.post({
-    url: d.ANM.PHONE,
+  beginAddPhone: (e, t) => l.tn.post({
+    url: u.ANM.PHONE,
     body: {
       phone: e,
       change_phone_reason: t
     },
     rejectWithError: !1
   }),
-  addPhone: (e, t, n) => i.tn.post({
-    url: d.ANM.PHONE,
+  addPhone: (e, t, n) => l.tn.post({
+    url: u.ANM.PHONE,
     body: {
       phone_token: e,
       password: t,
@@ -58,23 +57,23 @@ let h = {
     oldFormErrors: !0,
     rejectWithError: !1
   }),
-  addPhoneWithoutPassword: e => i.tn.post({
-    url: d.ANM.PHONE_VERIFY_NO_PASSWORD,
+  addPhoneWithoutPassword: e => l.tn.post({
+    url: u.ANM.PHONE_VERIFY_NO_PASSWORD,
     body: {
       code: e
     },
     rejectWithError: !1
   }),
-  beginReverifyPhone: (e, t) => i.tn.post({
-    url: d.ANM.PHONE_REVERIFY,
+  beginReverifyPhone: (e, t) => l.tn.post({
+    url: u.ANM.PHONE_REVERIFY,
     body: {
       phone: e,
       change_phone_reason: t
     },
     rejectWithError: !1
   }),
-  reverifyPhone: (e, t, n) => i.tn.post({
-    url: d.ANM.PHONE_REVERIFY,
+  reverifyPhone: (e, t, n) => l.tn.post({
+    url: u.ANM.PHONE_REVERIFY,
     body: {
       phone_token: e,
       password: t,
@@ -83,8 +82,8 @@ let h = {
     oldFormErrors: !0,
     rejectWithError: !1
   }),
-  validatePhoneForSupport: e => i.tn.post({
-    url: d.ANM.VERIFY_PHONE_FOR_TICKET,
+  validatePhoneForSupport: e => l.tn.post({
+    url: u.ANM.VERIFY_PHONE_FOR_TICKET,
     body: {
       token: e
     },
@@ -94,25 +93,25 @@ let h = {
   async verifyPhone(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
       r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-      i = {},
-      u = s.default.getFingerprint();
-    null != u && "" !== u && (i["X-Fingerprint"] = u), r && (i.authorization = "");
-    let h = await l.Z.post({
-      url: d.ANM.VERIFY_PHONE,
-      headers: i,
+      l = {},
+      d = s.default.getFingerprint();
+    null != d && "" !== d && (l["X-Fingerprint"] = d), r && (l.authorization = "");
+    let m = await a.Z.post({
+      url: u.ANM.VERIFY_PHONE,
+      headers: l,
       body: {
         phone: e,
         code: t
       },
       oldFormErrors: !0,
       trackedActionData: {
-        event: o.NetworkActionNames.USER_VERIFY_PHONE
+        event: i.NetworkActionNames.USER_VERIFY_PHONE
       },
       rejectWithError: !1
     });
-    return n && a.Z.dispatch({
+    return n && o.Z.dispatch({
       type: "MODAL_POP",
       key: c.M
-    }), h.body
+    }), m.body
   }
 }

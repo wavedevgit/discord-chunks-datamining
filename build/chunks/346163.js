@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => h
@@ -60,7 +60,7 @@ function h(e) {
   let Z = n && x && !1 === f,
     D = n && !1 === h,
     A = (0, m.f)(),
-    k = I && w && x ? p.NW.format(p.t.wbVIUF, {}) : void 0;
+    W = I && w && x ? p.NW.format(p.t.wbVIUF, {}) : void 0;
   return r.useEffect(() => {
     Z && C()
   }, [C, Z]), {
@@ -77,7 +77,7 @@ function h(e) {
     isApplicationPending: P,
     hasPreviousApplicationRejection: I,
     requestRejectedNoticeText: t,
-    reapplyNoticeText: k,
+    reapplyNoticeText: W,
     showAcceptTermsFlow: D,
     wasRejectedInV1: D && (S || I),
     requirementsFinePrintText: R,

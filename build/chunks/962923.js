@@ -1,4 +1,4 @@
-/** Chunk was on 88256 **/
+/** Chunk was on 6850 **/
 e.exports = {
   searchContainer: "searchContainer__6ae25",
   searchBox: "searchBox__6ae25",

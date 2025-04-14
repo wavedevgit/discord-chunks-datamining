@@ -1,5 +1,4 @@
-/** Chunk was on 71018 **/
-"use strict";
+/** Chunk was on 21487 **/
 e.exports = {
   popoutContainer: "popoutContainer_a912c3",
   customColorsHeader: "customColorsHeader_a912c3",

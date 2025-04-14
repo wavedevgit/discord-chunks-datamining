@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => O
@@ -44,8 +44,8 @@ function O(e) {
   } = (0, m.Ug)(n.id), R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
     drag: D,
     dragSourcePosition: A,
-    drop: k,
-    setIsDraggable: W
+    drop: W,
+    setIsDraggable: k
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: O,
@@ -78,12 +78,12 @@ function O(e) {
         [_.containerFocused]: U
       }),
       ref: e => {
-        D(k(e))
+        D(W(e))
       },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
-        onMouseEnter: () => W(!0),
-        onMouseLeave: () => W(!1),
+        onMouseEnter: () => k(!0),
+        onMouseLeave: () => k(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -132,12 +132,12 @@ function O(e) {
         [_.containerFocused]: U
       }),
       ref: e => {
-        D(k(e))
+        D(W(e))
       },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
-        onMouseEnter: () => W(!0),
-        onMouseLeave: () => W(!1),
+        onMouseEnter: () => k(!0),
+        onMouseLeave: () => k(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",

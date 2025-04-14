@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => L
@@ -198,7 +198,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let k = i.forwardRef(function(e, t) {
+let W = i.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: s,
@@ -234,7 +234,7 @@ let k = i.forwardRef(function(e, t) {
   })
 });
 
-function W(e) {
+function k(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -344,12 +344,12 @@ function L() {
   }, [B, M.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
     className: P.container,
-    children: [(0, r.jsx)(W, {
+    children: [(0, r.jsx)(k, {
       guildId: O,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: P.scrollerContainer,
-      children: [!L && (0, r.jsx)(k, {
+      children: [!L && (0, r.jsx)(W, {
         guild: c,
         bans: x,
         sortedBans: H,

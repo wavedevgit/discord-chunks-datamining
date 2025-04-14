@@ -1,4 +1,4 @@
-/** Chunk was on 71018 **/
+/** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
   Z: () => S
@@ -90,11 +90,11 @@ function E(e) {
     R(n => C(O({}, n), {
       [e]: t
     }))
-  }, A = (0, p.ss)(t), k = (0, p.Gp)(), W = i.useCallback(() => {
-    k && g.jJ.trackExposure({
+  }, A = (0, p.ss)(t), W = (0, p.Gp)(), k = i.useCallback(() => {
+    W && g.jJ.trackExposure({
       guildId: t,
       location: "b2d9de_1"
-    }), k && A ? (0, d.ZDy)(async () => {
+    }), W && A ? (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("9558").then(n.bind(n, 34460));
@@ -107,10 +107,10 @@ function E(e) {
     }, {
       modalKey: y
     }) : S()
-  }, [t, T, S, s, k, A]), L = b.Lo(Z), M = i.useCallback(() => Z.forEach(b.GM), [Z]), G = (0, x.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
-  return i.useEffect(() => (U === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && W(), () => {
+  }, [t, T, S, s, W, A]), L = b.Lo(Z), M = i.useCallback(() => Z.forEach(b.GM), [Z]), G = (0, x.mY)(), U = (0, o.e7)([m.Z], () => m.Z.getProps().subsection);
+  return i.useEffect(() => (U === N.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && k(), () => {
     (0, d.Mr3)(y)
-  }), [U, W]), (0, r.jsxs)(r.Fragment, {
+  }), [U, k]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: v.groupListings,
       children: [Z.map(e => (0, r.jsx)(j.Z, {
@@ -123,7 +123,7 @@ function E(e) {
         onBeforeDispatchNewListing: t => D(t.id, e),
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
-        onClick: G ? void 0 : W,
+        onClick: G ? void 0 : k,
         className: l()(v.createTierButton, {
           [v.disabled]: G
         }),

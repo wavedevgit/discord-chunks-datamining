@@ -16,8 +16,8 @@ var l = n(990547),
   f = n(453925),
   m = n(632304),
   g = n(131951),
-  O = n(358085),
-  b = n(947150),
+  b = n(358085),
+  O = n(947150),
   y = n(488021),
   h = n(822556),
   v = n(981631),
@@ -48,7 +48,7 @@ function P(e) {
     }
   });
   let D = (0, h.Z)(T),
-    _ = (0, b.Z)(A, x),
+    _ = (0, O.Z)(A, x),
     k = (0, y.Z)(A, x),
     L = (0, p.Z)(A),
     W = (0, f.Z)(A),
@@ -78,7 +78,7 @@ function P(e) {
             location: "AudioDeviceMenu"
           }),
           checked: R
-        }, "self-deafen") : null, x && P && O.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+        }, "self-deafen") : null, x && P && b.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
           checked: V === v.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: j.NW.string(j.t.Q8gkVF),

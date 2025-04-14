@@ -1,85 +1,85 @@
 /** Chunk was on 3378 **/
-t.d(n, {
-  Z: () => u
+n.d(t, {
+  Z: () => d
 });
-var o = t(200651),
-  i = t(192379),
-  r = t(442837),
-  c = t(481060),
-  l = t(693546),
-  a = t(937111),
-  d = t(388032),
-  s = t(916199);
-let u = e => {
+var r = n(200651),
+  o = n(192379),
+  i = n(442837),
+  l = n(481060),
+  a = n(693546),
+  c = n(937111),
+  s = n(388032),
+  u = n(568410);
+let d = e => {
   let {
-    headerId: n,
-    reapplyText: t,
-    onReapply: u,
-    confirmText: b,
-    onWithdrawApplication: m,
-    rejectionReason: p = null,
-    guild: f = null
-  } = e, _ = (0, r.e7)([a.Z], () => {
+    headerId: t,
+    reapplyText: n,
+    onReapply: d,
+    confirmText: f,
+    onWithdrawApplication: p,
+    rejectionReason: m = null,
+    guild: g = null
+  } = e, b = (0, i.e7)([c.Z], () => {
     var e;
-    return a.Z.getCooldown(null != (e = null == f ? void 0 : f.id) ? e : "0")
+    return c.Z.getCooldown(null != (e = null == g ? void 0 : g.id) ? e : "0")
   });
-  i.useEffect(() => {
-    null == _ && null != f && l.Z.fetchJoinRequestCooldown(f.id)
-  }, [_, f]);
-  let g = (null != _ ? _ : 0) > 0,
-    C = g && null != _ ? Math.ceil((1e3 * _ - Date.now()) / 864e5) : 0;
-  return (0, o.jsxs)("div", {
-    className: s.confirmation,
-    children: [(0, o.jsx)("div", {
-      className: s.iconWrapper,
-      children: (0, o.jsx)(c.P$X, {
+  o.useEffect(() => {
+    null == b && null != g && a.Z.fetchJoinRequestCooldown(g.id)
+  }, [b, g]);
+  let _ = (null != b ? b : 0) > 0,
+    j = _ && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
+  return (0, r.jsxs)("div", {
+    className: u.confirmation,
+    children: [(0, r.jsx)("div", {
+      className: u.iconWrapper,
+      children: (0, r.jsx)(l.P$X, {
         size: "md",
-        color: c.TVs.colors.INTERACTIVE_ACTIVE
+        color: l.TVs.colors.INTERACTIVE_ACTIVE
       })
-    }), (0, o.jsxs)("div", {
-      className: s.statusTextContainer,
-      children: [(0, o.jsx)(c.X6q, {
-        id: n,
+    }), (0, r.jsxs)("div", {
+      className: u.statusTextContainer,
+      children: [(0, r.jsx)(l.X6q, {
+        id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == f ? void 0 : f.name) != null ? d.NW.formatToPlainString(d.t["P+/gzM"], {
-          guildName: f.name
-        }) : d.NW.string(d.t.gBPcuL)
-      }), null != p && "" !== p ? (0, o.jsxs)(c.Text, {
+        children: (null == g ? void 0 : g.name) != null ? s.NW.formatToPlainString(s.t["P+/gzM"], {
+          guildName: g.name
+        }) : s.NW.string(s.t.gBPcuL)
+      }), null != m && "" !== m ? (0, r.jsxs)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: [(0, o.jsx)("span", {
-          className: s.rejectionReasonLabel,
-          children: d.NW.string(d.t.cf1psb)
-        }), (0, o.jsx)("span", {
-          children: p
+        children: [(0, r.jsx)("span", {
+          className: u.rejectionReasonLabel,
+          children: s.NW.string(s.t.cf1psb)
+        }), (0, r.jsx)("span", {
+          children: m
         })]
       }) : null]
-    }), (0, o.jsxs)("div", {
-      className: s.confirmationButtonRow,
-      children: [(0, o.jsx)(c.DY3, {
-        className: s.confirmationButton,
-        text: g ? d.NW.formatToPlainString(d.t.A0f0Pz, {
-          days: C
+    }), (0, r.jsxs)("div", {
+      className: u.confirmationButtonRow,
+      children: [(0, r.jsx)(l.DY3, {
+        className: u.confirmationButton,
+        text: _ ? s.NW.formatToPlainString(s.t.A0f0Pz, {
+          days: j
         }) : null,
-        "aria-label": g ? d.NW.formatToPlainString(d.t.A0f0Pz, {
-          days: C
+        "aria-label": _ ? s.NW.formatToPlainString(s.t.A0f0Pz, {
+          days: j
         }) : void 0,
-        children: (0, o.jsx)(c.zxk, {
-          className: s.confirmationTooltipContents,
-          onClick: u,
-          color: c.zxk.Colors.PRIMARY,
-          size: c.zxk.Sizes.LARGE,
-          submitting: null == _,
-          disabled: g,
-          children: t
+        children: (0, r.jsx)(l.zxk, {
+          className: u.confirmationTooltipContents,
+          onClick: d,
+          color: l.zxk.Colors.PRIMARY,
+          size: l.zxk.Sizes.LARGE,
+          submitting: null == b,
+          disabled: _,
+          children: n
         })
-      }), (0, o.jsx)(c.zxk, {
-        onClick: m,
-        size: c.zxk.Sizes.LARGE,
-        color: c.zxk.Colors.RED,
-        className: s.confirmationButton,
-        children: b
+      }), (0, r.jsx)(l.zxk, {
+        onClick: p,
+        size: l.zxk.Sizes.LARGE,
+        color: l.zxk.Colors.RED,
+        className: u.confirmationButton,
+        children: f
       })]
     })]
   })

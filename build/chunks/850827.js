@@ -16,8 +16,8 @@ var l = n(120356),
   f = n(600164),
   m = n(750154),
   g = n(171368),
-  O = n(594174),
-  b = n(374129),
+  b = n(594174),
+  O = n(374129),
   y = n(639351),
   h = n(503438),
   v = n(802856),
@@ -68,8 +68,8 @@ let L = e => {
       look: U = c.zxk.Looks.OUTLINED,
       type: R,
       onAction: V
-    } = e, F = (0, s.e7)([O.default], () => {
-      let e = O.default.getCurrentUser();
+    } = e, F = (0, s.e7)([b.default], () => {
+      let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
     }), Y = R === j.Y.STREAM_PREVIEW || null != o, B = (0, h.Z)(t), G = B || Y ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === A.bO) {
@@ -133,7 +133,7 @@ let L = e => {
           color: M,
           platform: d.Z.get(w.ABu.PLAYSTATION),
           onAction: V,
-          Icon: b.Z
+          Icon: O.Z
         }, "ConnectPlatformActivityButton");
         if (B) {
           let e = (0, r.jsx)(x.Z, {
