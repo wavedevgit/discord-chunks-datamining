@@ -136,8 +136,9 @@ function _(e) {
     disabled: d = !1,
     customPickerPosition: _ = "bottom",
     secondaryValue: j,
-    onChangeGradientColors: y
-  } = e, O = null != j, h = o.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = o.useRef(null), x = o.useRef(null), v = o.useRef(null), [P, w] = o.useState(() => h(a) ? a : null), [k, S] = o.useState({
+    onChangeGradientColors: y,
+    isGradient: O = !1
+  } = e, h = o.useCallback(e => 0 !== e && e !== t && !r.some(t => t === e), [r, t]), C = o.useRef(null), x = o.useRef(null), v = o.useRef(null), [P, w] = o.useState(() => h(a) ? a : null), [k, S] = o.useState({
     start: h(a) ? a : void 0,
     end: null != j ? j : c.p6O
   }), [N, I] = o.useState({

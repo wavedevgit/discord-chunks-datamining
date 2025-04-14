@@ -203,8 +203,9 @@ function H(e) {
         secondary_color: e[1],
         tertiary_color: void 0
       }),
+      isGradient: "gradient" === s,
       customPickerPosition: "right"
-    }, n.id)]
+    })]
   })
 }
 
