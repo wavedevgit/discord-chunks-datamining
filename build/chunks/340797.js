@@ -1,7 +1,7 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => c
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
@@ -9,9 +9,9 @@ var o = n(481060),
   a = n(946273),
   i = n(441110),
   s = n(388032),
-  l = n(374701);
+  c = n(374701);
 
-function c(e) {
+function l(e) {
   let {
     guild: t,
     message: n
@@ -61,7 +61,7 @@ function c(e) {
               }
               return e
             }({
-              className: l.newMemberBadge
+              className: c.newMemberBadge
             }, e), n = n = {
               children: (0, r.jsx)(o.hg2, {
                 size: "custom",

@@ -1,4 +1,4 @@
-/** Chunk was on 27146 **/
+/** Chunk was on 52066 **/
 n.d(t, {
   Z: () => g,
   m: () => I
@@ -186,14 +186,14 @@ function g(e) {
     onDeleteProduct: T,
     onCopyProductLink: b,
     onTestDownload: h,
-    disabled: N = !1
-  } = e, C = (0, u.U)(t, 600), y = null !== t.price_tier ? (0, c.T4)(t.price_tier, p.pK.USD) : void 0, P = (0, s.C)(t);
+    disabled: C = !1
+  } = e, N = (0, u.U)(t, 600), y = null !== t.price_tier ? (0, c.T4)(t.price_tier, p.pK.USD) : void 0, P = (0, s.C)(t);
   return (0, r.jsxs)(o.kL8, {
     tag: "article",
     className: l()(f.productCardClickable, f.productCard, {
-      [f.disabled]: N
+      [f.disabled]: C
     }),
-    onClick: N ? void 0 : i,
+    onClick: C ? void 0 : i,
     onContextMenu: function(e) {
       (0, a.jW)(e, () => Promise.resolve(e => (0, r.jsx)(O, S(_({}, e), {
         closePopout: a.Zy,
@@ -218,7 +218,7 @@ function g(e) {
     }),
     children: [(0, r.jsx)("img", {
       alt: "",
-      src: C,
+      src: N,
       className: f.productThumbnail
     }), (0, r.jsxs)("div", {
       className: f.productInfo,
@@ -249,7 +249,7 @@ function g(e) {
         }), (0, r.jsx)(o.LZC, {
           size: 16
         }), t.published ? (0, r.jsx)(d.t, {}) : (0, r.jsx)(d.b, {})]
-      }), !N && (0, r.jsx)(I, {
+      }), !C && (0, r.jsx)(I, {
         product: t,
         guildId: n,
         showEditProduct: !0,

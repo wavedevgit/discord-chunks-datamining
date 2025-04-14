@@ -9,8 +9,8 @@ var o = n(442837),
   a = n(481060),
   i = n(493773),
   s = n(367907),
-  l = n(111028),
-  c = n(91218),
+  c = n(111028),
+  l = n(91218),
   u = n(829883),
   d = n(623624),
   p = n(973542),
@@ -99,7 +99,7 @@ let N = e => {
           className: x.mainContent,
           children: [(0, r.jsx)("div", {
             className: x.roleIconContainer,
-            children: (0, r.jsx)(c.Z, P(C({}, I), {
+            children: (0, r.jsx)(l.Z, P(C({}, I), {
               enableTooltip: !1,
               className: x.__invalid_roleIcon,
               enableHeight: !1
@@ -109,7 +109,7 @@ let N = e => {
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-md/semibold",
               className: x.roleName,
-              children: (0, r.jsx)(l.Z, {
+              children: (0, r.jsx)(c.Z, {
                 children: N
               })
             }), (0, r.jsx)(a.Text, {

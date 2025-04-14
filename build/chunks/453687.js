@@ -1,10 +1,10 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Dv: () => c,
+  Dv: () => l,
   Gq: () => s,
   Gx: () => g,
-  XX: () => l,
+  XX: () => c,
   bX: () => d,
   bY: () => u,
   iG: () => p,
@@ -22,12 +22,12 @@ function s(e) {
   return "message-reply-context-".concat(e.id)
 }
 
-function l(e, t) {
+function c(e, t) {
   let n = null != t ? t : e.id;
   return "message-username-".concat(n)
 }
 
-function c(e) {
+function l(e) {
   return "message-timestamp-".concat(e.id)
 }
 
@@ -51,7 +51,7 @@ function p(e, t, n) {
     _ = e.type !== a.uaV.DEFAULT || !y && "" !== e.content,
     O = (0, o.Z)(e),
     v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
-    j = l(e, t),
+    j = c(e, t),
     x = s(e),
     C = O ? "" : "".concat(u ? x : j, " ").concat(r.Z0);
   if (_) {
@@ -63,7 +63,7 @@ function p(e, t, n) {
     C += " ".concat(t)
   }
   if (v) {
-    let t = c(e);
+    let t = l(e);
     C += " ".concat(r.fy, " ").concat(t)
   }
   return C.trim()

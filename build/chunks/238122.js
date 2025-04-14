@@ -1,4 +1,4 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 21411 **/
 n.d(t, {
   Z: () => m
 }), n(388685), n(413496), n(433524), n(35282);
@@ -19,10 +19,10 @@ let u = e => {
         placeholder: x,
         rows: p,
         character_limit: b,
-        pattern: h
+        pattern: f
       },
-      onChange: _,
-      initialText: f,
+      onChange: h,
+      initialText: _,
       isRequired: g
     } = e, v = l.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -52,21 +52,21 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, N] = l.useState(""), [y, O] = l.useState("");
+    }), t))), [j, N] = l.useState(""), [y, Z] = l.useState("");
     l.useEffect(() => {
       var e;
-      N(null != (e = null == f ? void 0 : f.value) ? e : "")
-    }, [f]);
-    let Z = l.useCallback(e => {
-      let t = null != h ? new RegExp(h) : null;
-      null != t && null == t.exec(e) ? (O(s.NW.string(s.t["24xrGR"])), _({
+      N(null != (e = null == _ ? void 0 : _.value) ? e : "")
+    }, [_]);
+    let O = l.useCallback(e => {
+      let t = null != f ? new RegExp(f) : null;
+      null != t && null == t.exec(e) ? (Z(s.NW.string(s.t["24xrGR"])), h({
         value: e,
         isValid: !1
-      })) : null != e && (O(""), N(e), _({
+      })) : null != e && (Z(""), N(e), h({
         value: e,
         isValid: !0
       }))
-    }, [_, h]);
+    }, [h, f]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
@@ -80,7 +80,7 @@ let u = e => {
         })
       }), (0, r.jsx)(i.Kx8, {
         maxLength: b,
-        onChange: Z,
+        onChange: O,
         value: j,
         error: y,
         rows: p,

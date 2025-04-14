@@ -9,8 +9,8 @@ var o = n(477660),
   a = n.n(o),
   i = n(800927),
   s = n(945884),
-  l = n(594199),
-  c = n(454585);
+  c = n(594199),
+  l = n(454585);
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -72,7 +72,7 @@ let v = e => {
     link: u({}, m, "function" == typeof r.customRules.link ? r.customRules.link(e) : r.customRules.link),
     list: u({}, b, "function" == typeof r.customRules.list ? r.customRules.list(e) : r.customRules.list),
     interpolation: {
-      order: l.ZP.order,
+      order: c.ZP.order,
       match: e => O.exec(e),
       parse(e, t, n) {
         let r = n.interpolations[e[1]];
@@ -104,7 +104,7 @@ let v = e => {
   }),
   C = e => d(u({}, j(e)), {
     newline: u({}, a().defaultRules.newline),
-    text: l.ZP,
+    text: c.ZP,
     list: i.Z,
     subtext: s.Z
   });
@@ -121,7 +121,7 @@ let N = {
 function T(e, t, n) {
   return {
     hasSpoilerEmbeds: !1,
-    content: c.Z.reactParserFor(P(t))(e.content, !1, null != n ? {
+    content: l.Z.reactParserFor(P(t))(e.content, !1, null != n ? {
       changeLog: n
     } : {})
   }

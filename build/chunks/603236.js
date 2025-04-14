@@ -1,101 +1,101 @@
 /** Chunk was on 58023 **/
 n.d(t, {
   I: () => O,
-  S: () => y
+  S: () => N
 }), n(997841);
 var r = n(200651),
   l = n(192379),
-  a = n(120356),
-  i = n.n(a),
+  i = n(120356),
+  a = n.n(i),
   s = n(533800),
   o = n(442837),
   c = n(481060),
   u = n(484614),
   d = n(914010),
   m = n(246946),
-  x = n(626135),
-  g = n(630388),
-  h = n(971130),
-  v = n(530436),
+  h = n(626135),
+  x = n(630388),
+  g = n(971130),
+  p = n(530436),
   f = n(245335),
-  p = n(981631),
-  j = n(388032),
-  N = n(821022),
-  b = n(20493);
-let y = o.ZP.connectStores([m.Z], () => ({
+  v = n(981631),
+  b = n(388032),
+  j = n(821022),
+  y = n(20493);
+let N = o.ZP.connectStores([m.Z], () => ({
     hideValue: m.Z.hideInstantInvites
   }))(e => {
     let {
       value: t,
       autoFocus: n,
       hideValue: l,
-      onCopy: a,
-      disabled: i
+      onCopy: i,
+      disabled: a
     } = e;
     return (0, r.jsx)(u.Z, {
-      value: l ? j.NW.string(j.t["6HzNgY"]) : t,
+      value: l ? b.NW.string(b.t["6HzNgY"]) : t,
       buttonColor: c.zxk.Colors.BRAND,
-      onCopy: a,
+      onCopy: i,
       autoFocus: n,
-      disabled: i
+      disabled: a
     })
   }),
   O = e => {
     let {
       guild: t,
       noInvitesAvailable: n,
-      showFriends: a,
+      showFriends: i,
       onClose: o,
       modalState: u,
       isApplicationBypassToggleEnabled: m,
       setInviteFlags: O,
       copyValue: E,
-      changePage: C,
-      inviteChannel: I,
-      source: S,
-      code: T,
-      guildScheduledEvent: P,
-      disabled: W,
-      application: w
+      changePage: S,
+      inviteChannel: C,
+      source: P,
+      code: I,
+      guildScheduledEvent: T,
+      disabled: w,
+      application: W
     } = e, {
       maxAge: Z,
       maxUses: k,
-      networkError: _,
-      showVanityURL: D,
-      flags: R
+      networkError: D,
+      showVanityURL: R,
+      flags: _
     } = u, A = l.useCallback(() => {
-      x.default.track(p.rMx.COPY_INSTANT_INVITE, {
+      h.default.track(v.rMx.COPY_INSTANT_INVITE, {
         server: d.Z.getGuildId(),
-        channel: null == I ? void 0 : I.id,
-        channel_type: null == I ? void 0 : I.type,
-        location: S,
-        code: T,
-        guild_scheduled_event_id: null == P ? void 0 : P.id,
-        application_id: null == w ? void 0 : w.id
+        channel: null == C ? void 0 : C.id,
+        channel_type: null == C ? void 0 : C.type,
+        location: P,
+        code: I,
+        guild_scheduled_event_id: null == T ? void 0 : T.id,
+        application_id: null == W ? void 0 : W.id
       })
-    }, [null == w ? void 0 : w.id, I, S, T, P]);
+    }, [null == W ? void 0 : W.id, C, P, I, T]);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(N, {
         value: E,
-        autoFocus: a,
+        autoFocus: i,
         onCopy: A,
-        disabled: W
+        disabled: w
       }), m && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: N.divider
+          className: j.divider
         }), (0, r.jsx)(c.j7V, {
-          className: N.toggle,
-          value: (0, g.yE)(R, s.$.IS_APPLICATION_BYPASS),
-          onChange: e => O((0, g.mB)(R, s.$.IS_APPLICATION_BYPASS, e)),
-          disabled: W,
+          className: j.toggle,
+          value: (0, x.yE)(_, s.$.IS_APPLICATION_BYPASS),
+          onChange: e => O((0, x.mB)(_, s.$.IS_APPLICATION_BYPASS, e)),
+          disabled: w,
           hideBorder: !0,
           children: (0, r.jsxs)("div", {
-            className: N.formText,
+            className: j.formText,
             children: [(0, r.jsx)(c.Text, {
               variant: "text-md/semibold",
-              children: j.NW.string(j.t["1i1bUl"])
+              children: b.NW.string(b.t["1i1bUl"])
             }), (0, r.jsx)(c.ua7, {
-              text: j.NW.string(j.t["jvd/LC"]),
+              text: b.NW.string(b.t["jvd/LC"]),
               children: e => (0, r.jsx)(c.d3s, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
@@ -120,20 +120,20 @@ let y = o.ZP.connectStores([m.Z], () => ({
             })]
           })
         })]
-      }), n || D ? null : (0, r.jsxs)(c.Text, {
+      }), n || R ? null : (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
-        className: i()(b.marginTop8, N.footerText),
-        children: [(0, h.Vg)(Z, k), " ", a ? (0, r.jsx)(c.eee, {
-          onClick: () => C(f.RV.SETTINGS),
-          children: j.NW.string(j.t.VNe8Pz)
+        className: a()(y.marginTop8, j.footerText),
+        children: [(0, g.Vg)(Z, k), " ", i ? (0, r.jsx)(c.eee, {
+          onClick: () => S(f.RV.SETTINGS),
+          children: b.NW.string(b.t.VNe8Pz)
         }) : null]
-      }), !n && a && D ? (0, r.jsxs)(c.Text, {
+      }), !n && i && R ? (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
-        className: i()(b.marginTop8, N.footerText),
-        children: [j.NW.string(j.t["0M2U9/"]), " "]
-      }) : null, null != _ ? (0, r.jsx)(v.W, {
+        className: a()(y.marginTop8, j.footerText),
+        children: [b.NW.string(b.t["0M2U9/"]), " "]
+      }) : null, null != D ? (0, r.jsx)(p.W, {
         guild: t,
-        error: _,
+        error: D,
         onClose: o
       }) : null]
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 21411 **/
 n.d(t, {
   Z: () => g
 });
@@ -15,44 +15,44 @@ var r = n(200651),
   x = n(25015),
   p = n(367814),
   b = n(592125),
-  h = n(217702),
-  _ = n(388032),
-  f = n(782544);
+  f = n(217702),
+  h = n(388032),
+  _ = n(782544);
 let g = e => {
   var t;
   let {
     message: n
   } = e, g = (0, s.ZP)(n), v = null != (t = n.getGuildId()) ? t : void 0, j = (0, p.Z)(g), N = (0, i.e7)([b.Z], () => b.Z.getChannel(n.channel_id)), y = l.useMemo(() => (0, o.Z)(n), [n]), {
-    content: O
+    content: Z
   } = (0, x.Z)(y, {
     hideSimpleEmbedContent: !1
-  }), Z = l.useCallback(() => {
+  }), O = l.useCallback(() => {
     let {
       leadingIcon: e,
       trailingIcon: t
-    } = (0, m.f)(n, O, !1, !1, "", {
-      leadingIconClass: f.attachmentIcon,
-      trailingIconClass: f.attachmentIcon,
-      iconSize: h.WW
+    } = (0, m.f)(n, Z, !1, !1, "", {
+      leadingIconClass: _.attachmentIcon,
+      trailingIconClass: _.attachmentIcon,
+      iconSize: f.WW
     });
     return (0, r.jsxs)("div", {
-      className: f.contentContainer,
+      className: _.contentContainer,
       children: [e, (0, r.jsx)(d.ZP, {
         message: n,
-        content: O
+        content: Z
       }), t]
     })
-  }, [n, O]);
+  }, [n, Z]);
   return null == N ? null : (0, r.jsxs)("div", {
-    className: f.container,
+    className: _.container,
     children: [(0, r.jsx)(a.X6q, {
-      className: f.header,
+      className: _.header,
       variant: "heading-sm/semibold",
-      children: _.NW.string(_.t.iouM3d)
+      children: h.NW.string(h.t.iouM3d)
     }), (0, r.jsx)(a.Ttm, {
-      className: f.messagePreviewContainer,
+      className: _.messagePreviewContainer,
       children: (0, r.jsx)(c.Z, {
-        childrenMessageContent: Z(),
+        childrenMessageContent: O(),
         childrenHeader: (0, r.jsx)(u.ZP, {
           message: n,
           channel: N,

@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var l = n(481060),
-  a = n(195367),
-  i = n(388032),
+  i = n(195367),
+  a = n(388032),
   s = n(367612);
 
 function o(e) {
@@ -18,13 +18,13 @@ function o(e) {
       var n, r, l = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+          i = Object.keys(e);
+        for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var i = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
     }(e, ["isSlideReady"]);
@@ -34,14 +34,14 @@ function o(e) {
       className: s.header,
       children: [(0, r.jsx)(l.X6q, {
         variant: "heading-xl/semibold",
-        children: i.NW.string(i.t.GG6vbm)
+        children: a.NW.string(a.t.GG6vbm)
       }), (0, r.jsx)(l.Text, {
         color: "header-secondary",
         className: s.text,
         variant: "text-sm/normal",
-        children: i.NW.string(i.t.q5lgwc)
+        children: a.NW.string(a.t.q5lgwc)
       })]
-    }), (0, r.jsx)(a.Z, (t = function(e) {
+    }), (0, r.jsx)(i.Z, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

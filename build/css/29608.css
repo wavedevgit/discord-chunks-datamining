@@ -1,7 +1,15 @@
 /**
   Module ID: 29608
-  Original File Name: bf97b1a136e86d7c
+  Original File Name: 60c32b84ed37e55b
 **/
+.section__999b5 {
+    margin-top: 16px
+}
+
+.guildSelectOptionIcon__999b5 {
+    border-radius: 4px
+}
+
 .modalHeader_d295eb {
     display: flex;
     flex-direction: column
@@ -70,4 +78,4 @@
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=bf97b1a136e86d7c.css.map*/
+/*# sourceMappingURL=60c32b84ed37e55b.css.map*/

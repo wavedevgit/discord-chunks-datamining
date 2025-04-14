@@ -226,7 +226,24 @@ class eT extends i.PureComponent {
       bannerVisibleHeight: p,
       communityInfoVisible: h
     } = this.state, g = i || l || a;
-    return null == t ? null : (0, r.jsx)(N.Gt, {
+    return null == t ? null : (0, U.jW)({
+      location: "guild_sidebar"
+    }) ? (0, r.jsx)(N.Gt, {
+      value: o,
+      children: (0, r.jsx)(ed.ZP, {
+        guild: t,
+        controller: c,
+        renderBanner: u,
+        hasSubheader: e,
+        bannerVisible: d,
+        communityInfoVisible: h,
+        guildBanner: this.getGuildBannerHash(),
+        onContextMenu: this.handleHeaderContextMenu,
+        disableBannerAnimation: g,
+        animationOverlayHeight: p,
+        children: this.renderGuildHeaderNotices(n)
+      })
+    }) : (0, r.jsx)(N.Gt, {
       value: o,
       children: (0, r.jsx)(f.KeG, {
         renderPopout: this.renderMenuPopout,

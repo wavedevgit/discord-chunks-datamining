@@ -1,6 +1,6 @@
-/** Chunk was on 21924 **/
+/** Chunk was on 21411 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(953529), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -15,9 +15,9 @@ var r = n(200651),
   x = n(185625),
   p = n(981631),
   b = n(388032),
-  h = n(305086);
+  f = n(305086);
 
-function _(e) {
+function h(e) {
   let {
     title: t,
     description: n,
@@ -37,30 +37,30 @@ function _(e) {
   })
 }
 
-function f(e) {
+function _(e) {
   let {
     settingsUpsells: t,
     channelId: n,
     onModalClose: l,
     reportId: s,
     reportType: d,
-    reportSubType: f
-  } = e, g = (0, i.e7)([u.Z], () => u.Z.getChannel(n)), v = (0, m.jc)(t, null == g ? void 0 : g.type), j = (0, x.i_)(d, f, s);
+    reportSubType: _
+  } = e, g = (0, i.e7)([u.Z], () => u.Z.getChannel(n)), v = (0, m.jc)(t, null == g ? void 0 : g.type), j = (0, x.i_)(d, _, s);
   return 0 === v.length ? null : (0, r.jsxs)("div", {
-    className: h.container,
+    className: f.container,
     children: [(0, r.jsx)(a.X6q, {
       variant: "text-sm/semibold",
-      className: h.header,
+      className: f.header,
       children: b.NW.string(b.t["1yxTIC"])
     }), (0, r.jsx)("div", {
-      className: h.upsellsContainer,
+      className: f.upsellsContainer,
       children: v.map((e, n) => {
         let {
           getTitle: l,
           getDescription: i,
           onApply: a
         } = e;
-        return (0, r.jsx)(_, {
+        return (0, r.jsx)(h, {
           title: l(),
           description: i(),
           onButtonClick: a,
@@ -68,12 +68,12 @@ function f(e) {
         }, n)
       })
     }), (0, r.jsx)(a.zxk, {
-      className: h.navLinkButton,
+      className: f.navLinkButton,
       onClick: () => {
         o.Z.open(p.oAB.CONTENT_AND_SOCIAL), l(), c.ZP.trackWithMetadata(p.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
           report_id: s,
           report_type: d.name,
-          report_subtype: f,
+          report_subtype: _,
           action: x.M4.SETTINGS_UPSELLS_GO_TO_SETTINGS_LINK_CLICKED
         })
       },

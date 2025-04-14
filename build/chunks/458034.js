@@ -3,7 +3,7 @@
 n.d(t, {
   Am: () => u,
   ZP: () => d,
-  s$: () => c
+  s$: () => l
 });
 var r = n(200651);
 n(192379);
@@ -11,8 +11,8 @@ var o = n(442837),
   a = n(481060),
   i = n(430824),
   s = n(275759),
-  l = n(388032);
-let c = "guild-connection-roles";
+  c = n(388032);
+let l = "guild-connection-roles";
 
 function u(e) {
   (0, a.ZDy)(async () => {
@@ -52,10 +52,10 @@ function u(e) {
       }), o))
     }
   }, {
-    modalKey: c,
+    modalKey: l,
     contextKey: a.z1l,
     onCloseRequest: () => {
-      (0, a.Mr3)(c, a.z1l)
+      (0, a.Mr3)(l, a.z1l)
     }
   })
 }
@@ -63,7 +63,7 @@ function u(e) {
 function d(e) {
   return (0, o.e7)([i.Z], () => (0, s.kQ)(e, i.Z.getRoles(e.id)), [e]) ? (0, r.jsx)(a.sNh, {
     id: "guild-connection-roles",
-    label: l.NW.string(l.t.ghtnsr),
+    label: c.NW.string(c.t.ghtnsr),
     icon: a.xPt,
     action: () => u(e.id)
   }) : null

@@ -9,9 +9,9 @@ var o = n(120356),
   a = n.n(o),
   i = n(481060),
   s = n(477747),
-  l = n(848697);
+  c = n(848697);
 
-function c(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -85,28 +85,28 @@ let d = function(e) {
     return o
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "authorHasGradientRole", "guildId"]);
   let S = (0, s.Z)(T, "BaseMessage"),
-    I = (0, r.jsx)(i.tEY, u(c({}, j), {
-      children: (0, r.jsxs)("div", u(c({
+    I = (0, r.jsx)(i.tEY, u(l({}, j), {
+      children: (0, r.jsxs)("div", u(l({
         className: a()(t, {
-          [l.gradient]: !!S && N,
-          [l.wrapper]: !0,
-          [l.contentOnly]: o,
-          [l.compact]: n,
-          [l.preview]: p,
-          [l.cozy]: !n,
-          [l.zalgo]: d,
-          [l.hasThread]: x,
-          [l.isSystemMessage]: C,
-          [l.hasReply]: P
+          [c.gradient]: !!S && N,
+          [c.wrapper]: !0,
+          [c.contentOnly]: o,
+          [c.compact]: n,
+          [c.preview]: p,
+          [c.cozy]: !n,
+          [c.zalgo]: d,
+          [c.hasThread]: x,
+          [c.isSystemMessage]: C,
+          [c.hasReply]: P
         }),
         ref: v
       }, w), {
         role: "article",
         children: [m, f, (0, r.jsxs)("div", {
-          className: l.contents,
+          className: c.contents,
           children: [h, b, null == h && _]
         }), O, null != y ? (0, r.jsx)("div", {
-          className: l.buttonContainer,
+          className: c.buttonContainer,
           children: y
         }) : null]
       }))
