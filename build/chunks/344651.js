@@ -226,7 +226,8 @@ function X(e) {
     status: r,
     activities: i,
     hiddenActivities: o,
-    clientStatus: a
+    clientStatus: a,
+    processedAtTimestamp: s
   } = e;
   F.add({
     guildId: t,
@@ -234,7 +235,8 @@ function X(e) {
     status: r,
     clientStatus: a,
     activities: i,
-    hiddenActivities: o
+    hiddenActivities: o,
+    processedAtTimestamp: s
   })
 }
 W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id]), e => {
@@ -277,7 +279,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
           status: e.status,
           clientStatus: e.client_status,
           activities: e.activities,
-          hiddenActivities: e.hidden_activities
+          hiddenActivities: e.hidden_activities,
+          processedAtTimestamp: e.processed_at_timestamp
         })),
         i = e.guilds.filter(e => !0 !== e.unavailable);
       i.forEach(e => {
@@ -665,7 +668,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         status: r,
         client_status: i,
         activities: o,
-        hidden_activities: a
+        hidden_activities: a,
+        processed_at_timestamp: s
       } = t;
       return X({
         guildId: e.guild_id,
@@ -673,7 +677,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         status: r,
         activities: o,
         hiddenActivities: a,
-        clientStatus: i
+        clientStatus: i,
+        processedAtTimestamp: s
       })
     }), P.Z.flush("GUILD_MEMBERS_CHUNK")
   })
@@ -690,7 +695,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         status: r,
         client_status: i,
         activities: o,
-        hidden_activities: a
+        hidden_activities: a,
+        processed_at_timestamp: s
       } = t;
       return X({
         guildId: e.guild_id,
@@ -698,7 +704,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         status: r,
         activities: o,
         hiddenActivities: a,
-        clientStatus: i
+        clientStatus: i,
+        processedAtTimestamp: s
       })
     }), P.Z.flush()
   })
@@ -861,7 +868,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
     status: e.status,
     activities: e.activities,
     hiddenActivities: e.hidden_activities,
-    clientStatus: e.client_status
+    clientStatus: e.client_status,
+    processedAtTimestamp: e.processed_at_timestamp
   })
 }), H(["PRESENCES_REPLACE"], e => {
   K({
@@ -1090,7 +1098,8 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
         status: r.status,
         activities: r.activities,
         hiddenActivities: r.hidden_activities,
-        clientStatus: r.client_status
+        clientStatus: r.client_status,
+        processedAtTimestamp: r.processed_at_timestamp
       })
     };
     e.ops.forEach(e => {

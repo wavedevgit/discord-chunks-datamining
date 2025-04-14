@@ -3,7 +3,7 @@
 n.d(t, {
   Z: () => Q,
   f: () => R
-}), n(388685), n(361932), n(187205), n(583741), n(642613), n(539854);
+}), n(361932), n(187205), n(388685), n(583741), n(642613), n(539854);
 var r, i = n(348327),
   o = n.n(i),
   a = n(392711),
@@ -71,8 +71,14 @@ function R(e, t) {
 
 function P(e) {
   if (delete E[e], delete b[e], delete y[e], delete v[e], null == g[e]) return;
-  let t = s().sortBy(g[e], e => -e.timestamp),
-    [n] = t;
+  let t = Object.values(g[e]),
+    n = t.reduce((e, t) => {
+      let n = t.processedAtTimestamp,
+        r = e.processedAtTimestamp,
+        i = null != t.activities ? t.activities.length : 0,
+        o = null != e.activities ? e.activities.length : 0;
+      return n > r || n === r && i > o ? t : e
+    }, t[0]);
   n.status !== p.Skl.OFFLINE ? (E[e] = n.status, b[e] = n.activities, y[e] = w(Object.values(t).flatMap(e => {
     var t;
     return null != (t = e.hiddenActivities) ? t : []
@@ -89,7 +95,7 @@ function w(e) {
 function D(e) {
   let t = g[e];
   if (null == t) return;
-  let n = s().maxBy(Object.values(t), e => e.timestamp);
+  let n = s().maxBy(Object.values(t), e => e.processedAtTimestamp);
   n.status !== p.Skl.OFFLINE && (E[e] = n.status, b[e] = n.activities, y[e] = n.hiddenActivities, null != n.clientStatus && (v[e] = n.clientStatus))
 }
 
@@ -100,30 +106,31 @@ function L(e) {
     status: r,
     clientStatus: i,
     activities: a,
-    hiddenActivities: s
+    hiddenActivities: s,
+    processedAtTimestamp: l
   } = e;
   if (n === f.default.getId()) return !1;
-  let l = g[n];
-  if (null == l) {
+  let c = g[n];
+  if (null == c) {
     if (r === p.Skl.OFFLINE) return !1;
-    l = g[n] = {}
+    c = g[n] = {}
   }
-  if (r === p.Skl.OFFLINE) l[t] = {
+  if (r === p.Skl.OFFLINE) c[t] = {
     status: r,
     clientStatus: i,
     activities: m,
     hiddenActivities: m,
-    timestamp: Date.now()
+    processedAtTimestamp: l
   };
   else {
     let e = a.length > 1 ? [...a].sort(R) : a,
-      n = l[t];
-    a = null != n && o()(n.activities, e) ? n.activities : e, l[t] = {
+      n = c[t];
+    a = null != n && o()(n.activities, e) ? n.activities : e, c[t] = {
       status: r,
       clientStatus: i,
       activities: a,
       hiddenActivities: s,
-      timestamp: Date.now()
+      processedAtTimestamp: l
     }
   }
   return delete O[n], P(n), !0
@@ -137,7 +144,7 @@ function x(e) {
     clientStatus: i,
     activities: o,
     hiddenActivities: a,
-    timestamp: s
+    processedAtTimestamp: s
   } = e;
   if (n === f.default.getId()) return;
   let l = g[n];
@@ -150,7 +157,7 @@ function x(e) {
     clientStatus: i,
     activities: m,
     hiddenActivities: m,
-    timestamp: Date.now()
+    processedAtTimestamp: s
   };
   else {
     let e = o.length > 1 ? [...o].sort(R) : o;
@@ -159,7 +166,7 @@ function x(e) {
       clientStatus: i,
       activities: e,
       hiddenActivities: a,
-      timestamp: s
+      processedAtTimestamp: s
     }
   }
 }
@@ -193,25 +200,25 @@ function U(e) {
   }, v = {
     [r]: {}
   };
-  let i = new Set,
-    o = Date.now();
+  let i = new Set;
   t.forEach(e => {
     e.presences.forEach(t => {
       let {
         user: n,
         status: r,
-        clientStatus: a,
-        activities: s,
-        hiddenActivities: l
+        clientStatus: o,
+        activities: a,
+        hiddenActivities: s,
+        processedAtTimestamp: l
       } = t;
       x({
         guildId: e.id,
         userId: n.id,
         status: r,
-        clientStatus: a,
-        activities: s,
-        hiddenActivities: l,
-        timestamp: o
+        clientStatus: o,
+        activities: a,
+        hiddenActivities: s,
+        processedAtTimestamp: l
       }), i.add(n.id)
     })
   }), n.forEach(e => {
@@ -219,17 +226,18 @@ function U(e) {
       user: t,
       status: n,
       clientStatus: r,
-      activities: a,
-      hiddenActivities: s
+      activities: o,
+      hiddenActivities: a,
+      processedAtTimestamp: s
     } = e;
     null != t && (x({
       guildId: p.ME,
       userId: t.id,
       status: n,
       clientStatus: r,
-      activities: a,
-      hiddenActivities: s,
-      timestamp: o
+      activities: o,
+      hiddenActivities: a,
+      processedAtTimestamp: s
     }), i.add(t.id))
   }), i.delete(r), i.forEach(D)
 }
@@ -251,7 +259,8 @@ function B(e) {
       status: n,
       clientStatus: r,
       activities: i,
-      hiddenActivities: o
+      hiddenActivities: o,
+      processedAtTimestamp: a
     } = e;
     null != t && L({
       guildId: p.ME,
@@ -259,7 +268,8 @@ function B(e) {
       status: n,
       clientStatus: r,
       activities: i,
-      hiddenActivities: o
+      hiddenActivities: o,
+      processedAtTimestamp: a
     })
   })
 }
@@ -274,7 +284,8 @@ function V(e) {
       status: r,
       clientStatus: i,
       activities: o,
-      hiddenActivities: a
+      hiddenActivities: a,
+      processedAtTimestamp: s
     } = e;
     L({
       guildId: t.id,
@@ -282,7 +293,8 @@ function V(e) {
       status: r,
       clientStatus: i,
       activities: o,
-      hiddenActivities: a
+      hiddenActivities: a,
+      processedAtTimestamp: s
     })
   })
 }
@@ -313,7 +325,8 @@ function H(e) {
       status: r,
       clientStatus: i,
       activities: o,
-      hiddenActivities: a
+      hiddenActivities: a,
+      processedAtTimestamp: s
     } = e;
     return L({
       guildId: null != t ? t : p.ME,
@@ -321,7 +334,8 @@ function H(e) {
       status: r,
       clientStatus: i,
       activities: o,
-      hiddenActivities: a
+      hiddenActivities: a,
+      processedAtTimestamp: s
     })
   }).some(e => e)
 }
@@ -338,7 +352,8 @@ function W(e) {
       status: e.presence.status,
       clientStatus: e.presence.clientStatus,
       activities: e.presence.activities,
-      hiddenActivities: e.presence.hiddenActivities
+      hiddenActivities: e.presence.hiddenActivities,
+      processedAtTimestamp: e.presence.processedAtTimestamp
     })
   })
 }
@@ -355,7 +370,8 @@ function Y(e) {
       status: e.presence.status,
       clientStatus: e.presence.clientStatus,
       activities: e.presence.activities,
-      hiddenActivities: e.presence.hiddenActivities
+      hiddenActivities: e.presence.hiddenActivities,
+      processedAtTimestamp: e.presence.processedAtTimestamp
     })
   })
 }

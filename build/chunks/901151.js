@@ -1,32 +1,29 @@
 /** Chunk was on 70371 **/
 n.d(t, {
-  Z: () => v
+  Z: () => O
 }), n(642613), n(539854);
 var r = n(200651),
   i = n(192379),
-  s = n(442837),
-  a = n(524437),
-  l = n(481060),
-  o = n(384275),
-  c = n(230711),
-  d = n(870822),
-  u = n(881998),
-  m = n(768581),
-  g = n(63063),
-  p = n(709054),
-  h = n(695346),
-  f = n(546957),
-  b = n(838436),
-  N = n(51331),
-  x = n(726985),
-  _ = n(981631),
-  E = n(388032),
-  j = n(296281);
+  s = n(524437),
+  a = n(481060),
+  l = n(230711),
+  o = n(768581),
+  c = n(63063),
+  d = n(709054),
+  u = n(695346),
+  m = n(749876),
+  g = n(546957),
+  p = n(838436),
+  h = n(51331),
+  f = n(726985),
+  b = n(981631),
+  N = n(388032),
+  x = n(296281);
 
-function O(e) {
+function _(e) {
   let {
     applications: t
-  } = e, n = i.useMemo(() => t.sort((e, t) => p.default.compare(t.id, e.id)), [t]), s = i.useMemo(() => {
+  } = e, n = i.useMemo(() => t.sort((e, t) => d.default.compare(t.id, e.id)), [t]), s = i.useMemo(() => {
     let e = [];
     for (let t = 0; t < 3; t++) {
       let r = n[t];
@@ -35,18 +32,18 @@ function O(e) {
     }
     let t = e.join(", "),
       i = n.length - 3;
-    return i > 0 ? E.NW.format(E.t.sHFdTk, {
+    return i > 0 ? N.NW.format(N.t.sHFdTk, {
       gameList: t,
-      plusMoreHook: (e, t) => (0, r.jsx)(l.Text, {
+      plusMoreHook: (e, t) => (0, r.jsx)(a.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: E.NW.format(E.t["EADv+/"], {
+        children: N.NW.format(N.t["EADv+/"], {
           count: i
         })
       }, t)
     }) : e.join(", ")
-  }, [n]), a = i.useMemo(() => {
+  }, [n]), c = i.useMemo(() => {
     let e = [];
     for (let t = 0; t < 3; t++) {
       let i = n[t];
@@ -55,132 +52,128 @@ function O(e) {
         icon: s,
         name: a,
         id: l
-      } = i, o = m.ZP.getApplicationIconURL({
+      } = i, c = o.ZP.getApplicationIconURL({
         id: i.id,
         icon: s
       });
       e.push((0, r.jsx)("img", {
-        src: o,
+        src: c,
         "aria-label": a,
-        className: j.icon
+        className: x.icon
       }, l))
     }
     let t = n.length - 3;
     return t > 0 && e.push((0, r.jsx)("div", {
-      className: j.moreIcon,
-      children: (0, r.jsx)(l.Text, {
+      className: x.moreIcon,
+      children: (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-normal",
         children: "+".concat(t)
       })
     }, "omitted")), e
-  }, [n]), o = i.useCallback(() => {
-    c.Z.open(_.oAB.AUTHORIZED_APPS)
+  }, [n]), u = i.useCallback(() => {
+    l.Z.open(b.oAB.AUTHORIZED_APPS)
   }, []);
   return (0, r.jsxs)("div", {
-    className: j.header,
+    className: x.header,
     children: [(0, r.jsxs)("div", {
-      className: j.gameNamesHeader,
-      children: [(0, r.jsx)(l.Text, {
+      className: x.gameNamesHeader,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-primary",
         children: s
-      }), (0, r.jsxs)(l.P3F, {
-        onClick: o,
-        className: j.manageGamesLink,
-        children: [(0, r.jsx)(l.Text, {
+      }), (0, r.jsxs)(a.P3F, {
+        onClick: u,
+        className: x.manageGamesLink,
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: E.NW.format(E.t.oYaYOT, {})
-        }), (0, r.jsx)(l.Fbu, {
+          children: N.NW.format(N.t.oYaYOT, {})
+        }), (0, r.jsx)(a.Fbu, {
           size: "xxs",
-          color: l.TVs.colors.INTERACTIVE_NORMAL,
-          className: j.manageGamesChevron
+          color: a.TVs.colors.INTERACTIVE_NORMAL,
+          className: x.manageGamesChevron
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: j.divider
+      className: x.divider
     }), (0, r.jsx)("div", {
-      className: j.gameIcons,
-      children: a
+      className: x.gameIcons,
+      children: c
     })]
   })
 }
 
-function C() {
-  let e = h._j.useSetting();
-  return (0, r.jsx)(b.U, {
-    setting: x.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-    children: (0, r.jsx)(N.Z, {
-      title: E.NW.string(E.t.XpBObG),
-      note: E.NW.format(E.t.oZsHTE, {
-        helpdeskArticle: g.Z.getArticleURL(_.BhN.SLAYER_GAME_FRIENDS)
+function E() {
+  let e = u._j.useSetting();
+  return (0, r.jsx)(p.U, {
+    setting: f.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
+    children: (0, r.jsx)(h.Z, {
+      title: N.NW.string(N.t.XpBObG),
+      note: N.NW.format(N.t.oZsHTE, {
+        helpdeskArticle: c.Z.getArticleURL(b.BhN.SLAYER_GAME_FRIENDS)
       }),
       value: e,
-      onChange: h._j.updateSetting
+      onChange: u._j.updateSetting
     })
   })
 }
 
-function S() {
-  let e = h.JG.useSetting(),
-    t = e === a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
+function j() {
+  let e = u.JG.useSetting(),
+    t = e === s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
     n = [{
-      name: E.NW.string(E.t.JIFnNz),
-      value: a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
+      name: N.NW.string(N.t.JIFnNz),
+      value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
     }, {
-      name: E.NW.string(E.t.rRdsk5),
-      value: a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
+      name: N.NW.string(N.t.rRdsk5),
+      value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
     }, {
-      name: E.NW.string(E.t.AolKwM),
-      value: a.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
+      name: N.NW.string(N.t.AolKwM),
+      value: s.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }];
-  return (0, r.jsxs)(b.U, {
-    setting: x.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
-    children: [(0, r.jsx)(b.H, {
-      header: E.NW.string(E.t["ms+TmZ"]),
-      description: E.NW.string(E.t["4NN4+/"])
-    }), (0, r.jsx)(l.FXm, {
+  return (0, r.jsxs)(p.U, {
+    setting: f.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
+    children: [(0, r.jsx)(p.H, {
+      header: N.NW.string(N.t["ms+TmZ"]),
+      description: N.NW.string(N.t["4NN4+/"])
+    }), (0, r.jsx)(a.FXm, {
       value: t,
       options: n,
       onChange: e => {
         let {
           value: t
         } = e;
-        return h.JG.updateSetting(t)
+        return u.JG.updateSetting(t)
       }
     })]
   })
 }
 
-function v() {
-  let e = (0, s.e7)([u.Z], () => u.Z.getFetchState()),
-    t = (0, s.e7)([u.Z], () => u.Z.getApps()),
-    n = i.useMemo(() => null == t ? [] : t.filter(e => (0, d.Z)(e.application)).map(e => e.application), [t]);
-  i.useEffect(() => {
-    o.Z.fetch()
-  }, []);
-  let a = e === u.M.FETCHING && null == t,
-    c = n.length > 0;
-  return (0, r.jsx)(f.Z, {
-    children: a ? (0, r.jsx)(l.$jN, {}) : c ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(O, {
-        applications: n
-      }), (0, r.jsx)(C, {}), (0, r.jsx)("div", {
-        className: j.divider
-      }), (0, r.jsx)(S, {})]
+function O() {
+  let {
+    showLoadingIndicator: e,
+    slayerSdkApplications: t
+  } = (0, m.Z)();
+  return (0, r.jsx)(g.Z, {
+    children: e ? (0, r.jsx)(a.$jN, {}) : t.length > 0 ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(_, {
+        applications: t
+      }), (0, r.jsx)(E, {}), (0, r.jsx)("div", {
+        className: x.divider
+      }), (0, r.jsx)(j, {})]
     }) : (0, r.jsxs)("div", {
-      className: j.emptyContainer,
-      children: [(0, r.jsx)(l.Text, {
+      className: x.emptyContainer,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: j.noGamesConnectedText,
-        children: E.NW.string(E.t["+0U77e"])
-      }), (0, r.jsx)(l.Text, {
+        className: x.noGamesConnectedText,
+        children: N.NW.string(N.t["+0U77e"])
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: E.NW.format(E.t.V8wClJ, {
-          helpdeskArticle: g.Z.getArticleURL(_.BhN.SOCIAL_LAYER_CONNECTIONS)
+        children: N.NW.format(N.t.V8wClJ, {
+          helpdeskArticle: c.Z.getArticleURL(b.BhN.SOCIAL_LAYER_CONNECTIONS)
         })
       })]
     })
