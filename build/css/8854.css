@@ -1,6 +1,6 @@
 /**
   Module ID: 8854
-  Original File Name: 7197e01fdd4117f9
+  Original File Name: 21a7b34f0cfb8ef3
 **/
 .confirmation__2db04 {
     align-items: center;
@@ -38,11 +38,11 @@
 }
 
 .promotionalFooter__82bb4 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     -moz-column-gap: 12px;
-    column-gap: 12px
+    column-gap: 12px;
+    display: flex;
+    flex-direction: row
 }
 
 .bodyColumnLeft_d64c23 {
@@ -53,38 +53,38 @@
 }
 
 .bodyColumnRight_d64c23 {
-    width: 340px;
-    min-height: 300px;
-    display: flex;
     align-items: center;
+    background-color: var(--background-tertiary);
+    display: flex;
     justify-content: center;
-    background-color: var(--background-tertiary)
+    min-height: 300px;
+    width: 340px
 }
 
 .stepBodySkuSelect_d64c23 {
-    display: flex;
-    flex-direction: row;
     background-color: var(--modal-background);
     border-radius: 5px 5px 0 0;
+    display: flex;
+    flex-direction: row;
     overflow: hidden
 }
 
 .header_d64c23 {
-    padding-top: 48px;
-    padding-bottom: 32px;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    padding-bottom: 32px;
+    padding-top: 48px
 }
 
 .giftSelectItem_d64c23 {
-    margin-bottom: 10px;
-    cursor: pointer
+    cursor: pointer;
+    margin-bottom: 10px
 }
 
 .modalFooter_d64c23 {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center
+    justify-content: space-between
 }
 
 .closeButton_d64c23 {
@@ -99,44 +99,42 @@
 }
 
 .visual-refresh .bodyColumnRight_d64c23 {
-    background-color: transparent;
-    background-color: initial
+    background-color: unset
 }
 
 .visual-refresh .giftSelectItem_d64c23 {
-    margin-bottom: 0;
-    margin-bottom: initial
+    margin-bottom: unset
 }
 
 .promotionalFooterBanner_e68795 {
+    align-items: center;
     background: linear-gradient(78.98deg,#ff9090,#f30ed8);
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 8px 16px
 }
 
 .bannerText_e68795 {
-    margin-left: 12px;
-    color: var(--black)
+    color: var(--black);
+    margin-left: 12px
 }
 
 .attributionBannerContainer__7b5f3 {
-    position: relative;
+    align-items: center;
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    margin-top: 16px;
     min-height: 48px;
-    border-radius: 4px;
+    padding-bottom: 8px;
     padding-left: 28px;
     padding-top: 8px;
-    padding-bottom: 8px;
-    margin-top: 16px
+    position: relative
 }
 
 .avatarContainer__7b5f3 {
-    width: 32px;
-    height: 32px
+    height: 32px;
+    width: 32px
 }
 
 .bannerHeader__7b5f3 {
@@ -145,17 +143,17 @@
 }
 
 .bannerIcon__7b5f3 {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     border-radius: 4px;
+    bottom: 0;
+    position: absolute;
+    right: 0;
     z-index: -1
 }
 
 .bannerCopy__7b5f3 {
-    padding-top: 8px;
+    border-bottom: 1px solid rgba(78,80,88,.48);
     padding-bottom: 16px;
-    border-bottom: 1px solid rgba(78,80,88,.48)
+    padding-top: 8px
 }
 
 .theme-light .attributionBannerContainer__7b5f3 {
@@ -167,10 +165,10 @@
 }
 
 .planSelectSeparatorLower__7ec3a,.planSelectSeparatorUpper__7ec3a {
-    width: 100%;
-    height: 1px;
+    background: var(--background-modifier-accent);
     border: 0;
-    background: var(--background-modifier-accent)
+    height: 1px;
+    width: 100%
 }
 
 .planSelectSeparatorUpper__7ec3a {
@@ -183,16 +181,16 @@
 }
 
 .button__9e160 {
+    border-radius: 8px;
     box-sizing: border-box;
     color: var(--white-500);
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    margin-bottom: 16px;
     min-height: 258px;
-    border-radius: 8px;
     padding: 24px;
-    position: relative;
-    margin-bottom: 16px
+    position: relative
 }
 
 .tier2__9e160 {
@@ -200,17 +198,16 @@
 }
 
 .tier0MarketingCard__9e160,.tier2MarketingCard__9e160 {
-    width: auto;
-    width: initial
+    width: unset
 }
 
 .tier0MarketingCard__9e160 {
-    margin-top: 16px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    margin-top: 16px
 }
 
 .tier1__9e160 {
-    background-image: linear-gradient(270deg,var(--premium-tier-0-purple),var(--premium-tier-1-dark-blue-for-gradients))
+    background-image: linear-gradient(270deg,var(--premium-tier-0-purple) 0,var(--premium-tier-1-dark-blue-for-gradients) 100%)
 }
 
 .tier0__9e160 {
@@ -224,10 +221,9 @@
 }
 
 .tier1Image__9e160,.tier2Image__9e160 {
-    filter: saturate(1);
+    bottom: 0;
     filter: saturate(var(--saturation-factor,1));
     position: absolute;
-    bottom: 0;
     right: 0
 }
 
@@ -238,13 +234,12 @@
 }
 
 .tier0Image__9e160 {
-    filter: saturate(1);
-    filter: saturate(var(--saturation-factor,1));
     background-image: url(/assets/a90cdee2f33db143.svg);
-    position: absolute;
     bottom: 0;
-    right: 0;
+    filter: saturate(var(--saturation-factor,1));
     height: 251px;
+    position: absolute;
+    right: 0;
     width: 357px
 }
 
@@ -253,10 +248,10 @@
 }
 
 .text__9e160 {
-    width: 160px;
     font-size: 16px;
+    font-weight: 500;
     line-height: 20px;
-    font-weight: 500
+    width: 160px
 }
 
 .description__9e160 {
@@ -298,9 +293,9 @@
 }
 
 .skuSelectModalContent_e50a4d.modalSize_e50a4d {
-    width: 440px;
     max-height: 720px;
-    min-height: 200px
+    min-height: 200px;
+    width: 440px
 }
 
 .skuSelectModalContent_e50a4d,.skuSelectModalHeader_e50a4d {
@@ -325,18 +320,18 @@
 }
 
 .churnFooterContainer__64988 {
-    position: relative;
-    overflow-x: clip
+    overflow-x: clip;
+    position: relative
 }
 
 .churnFooterGlow__64988 {
     background: linear-gradient(90deg,rgba(125,74,191,.5),rgba(171,77,187,.5) 50.5%,rgba(161,97,136,.5));
     filter: blur(20px);
-    width: 410px;
     height: 42px;
+    left: 15px;
     position: absolute;
     top: -4px;
-    left: 15px
+    width: 410px
 }
 
 .churnFooterTopBorder__64988 {
@@ -346,11 +341,11 @@
 }
 
 .churnFooterContent__64988 {
+    background: var(--bg-surface-overlay-tmp);
     min-height: 132px;
-    width: 100%;
     position: relative;
-    z-index: 1;
-    background: var(--bg-surface-overlay-tmp)
+    width: 100%;
+    z-index: 1
 }
 
 .churnFooterContentBody__64988 {
@@ -359,20 +354,20 @@
 
 .churnFooterIcon__64988 {
     align-self: flex-start;
-    padding-top: 20px;
-    padding-left: 16px
+    padding-left: 16px;
+    padding-top: 20px
 }
 
 .churnFooterContentBodyInner__64988 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 22px 22px 24px 20px
 }
 
 .churnFooterCopy__64988 {
-    margin-bottom: 14px;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    margin-bottom: 14px
 }
 
 .churnFooterCTAs__64988 {
@@ -380,39 +375,39 @@
 }
 
 .churnFooterClaimCTA__64988 {
-    min-width: 153px;
+    border-color: #764db9;
     margin-right: 8px;
-    border-color: #764db9
+    min-width: 153px
 }
 
 .churnFooterClaimCTAInner__64988 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .churnFooterClaimIcon__64988 {
     padding-right: 4px
 }
 
-.theme-dark .churnFooterClaimCopy__64988,.theme-dark .churnFooterClaimCTA__64988 {
+.theme-dark .churnFooterClaimCTA__64988,.theme-dark .churnFooterClaimCopy__64988 {
     color: var(--white-500)
 }
 
-.theme-light .churnFooterClaimCopy__64988,.theme-light .churnFooterClaimCTA__64988 {
+.theme-light .churnFooterClaimCTA__64988,.theme-light .churnFooterClaimCopy__64988 {
     color: #b449b6
 }
 
 .body__89307 {
+    background-color: var(--modal-background);
     color: var(--text-normal);
     font-size: 16px;
     line-height: 20px;
-    padding-bottom: 16px;
-    background-color: var(--modal-background)
+    padding-bottom: 16px
 }
 
 .body__89307 .title__89307 {
-    margin-top: 16px;
-    font-weight: 600
+    font-weight: 600;
+    margin-top: 16px
 }
 
 .clickable__89307 {
@@ -422,53 +417,54 @@
 .whatYouLoseItemContainer__89307 {
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    margin-bottom: 16px;
     margin-top: 16px;
-    margin-bottom: 16px
+    row-gap: 8px
 }
 
 .whatYouLoseItem__89307 {
+    background: var(--background-tertiary);
+    border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     min-height: 140px;
-    box-sizing: border-box;
-    border-radius: 8px;
-    padding: 16px;
-    background: var(--background-tertiary)
+    padding: 16px
 }
 
 .whatYouLoseItemLeftColumn__89307 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    padding-right: 16px
+    padding-right: 16px;
+    width: 100%
 }
 
 .whatYouLoseItemLearnMore__89307 {
+    padding: 0;
+    width: -webkit-min-content;
     width: -moz-min-content;
-    width: min-content;
-    padding: 0
+    width: min-content
 }
 
 .whatYouLoseItemRightColumn__89307 {
     display: flex;
-    min-width: 180px;
-    max-width: 180px
+    max-width: 180px;
+    min-width: 180px
 }
 
 .textSingleLineEllipsis__89307 {
     display: block;
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .profileCard__89307 {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
     min-height: 96px;
-    padding: 4px
+    overflow: hidden;
+    padding: 4px;
+    position: relative;
+    width: 100%
 }
 
 .profileCardTier1__89307 {
@@ -477,48 +473,48 @@
 }
 
 .profileAvatar__89307 {
+    left: 12px;
     position: absolute;
-    top: 30px;
-    left: 12px
+    top: 30px
 }
 
 .profileAvatarTier1__89307 {
+    left: 60px;
     position: relative;
-    top: 16px;
-    left: 60px
+    top: 16px
 }
 
 .profileInner__89307 {
     background: transparent;
-    margin-top: 30px;
     margin-bottom: 8px;
-    margin-left: 0
+    margin-left: 0;
+    margin-top: 30px
 }
 
 .profileUserInfo__89307 {
-    display: flex;
     align-items: center;
+    display: flex;
     margin: 30px 0 8px;
     padding: 0 16px
 }
 
 .profileUserInfoTier1__89307 {
     display: flex;
-    position: relative;
     justify-content: center;
-    padding-top: 16px
+    padding-top: 16px;
+    position: relative
 }
 
 .profileNameTag__89307 {
+    color: var(--interactive-active);
     font-weight: 600;
     line-height: 20px;
-    max-width: 118px;
-    color: var(--interactive-active)
+    max-width: 118px
 }
 
 .profileNameTagUsername__89307 {
-    text-overflow: ellipsis;
-    line-height: 20px
+    line-height: 20px;
+    text-overflow: ellipsis
 }
 
 .profilePremiumIcon__89307 {
@@ -526,10 +522,10 @@
 }
 
 .emojiStickersPersonalizedContainer__89307 {
-    width: 100%;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    width: 100%
 }
 
 .emojiStickersPersonalizedContainer__89307 :not(:last-child) {
@@ -537,8 +533,8 @@
 }
 
 .personalizedEmoji__89307 {
-    width: 58px;
-    height: 58px
+    height: 58px;
+    width: 58px
 }
 
 .boostCardContainer__89307 {
@@ -547,13 +543,13 @@
 }
 
 .boostCard__89307 {
-    height: 100%;
     background-color: var(--background-primary);
     border-radius: 8px;
     box-sizing: border-box;
-    padding: 10px;
     flex-grow: 1;
-    overflow: hidden
+    height: 100%;
+    overflow: hidden;
+    padding: 10px
 }
 
 .boostCardIcon__89307 {
@@ -570,16 +566,16 @@
 }
 
 .boostCardSubtitle__89307 {
-    display: flex;
     align-items: center;
+    display: flex;
     padding-top: 2px
 }
 
 .boostCardGem__89307 {
     color: var(--guild-boosting-pink);
-    width: auto;
     height: 16px;
-    margin-right: 4px
+    margin-right: 4px;
+    width: auto
 }
 
 .boostCardCount__89307 {
@@ -588,13 +584,13 @@
 }
 
 .nonPersonalizedGraphic__89307 {
-    width: 100%;
-    max-width: 168px
+    max-width: 168px;
+    width: 100%
 }
 
 .spinner__89307 {
-    padding-top: 60px;
-    padding-bottom: 44px
+    padding-bottom: 44px;
+    padding-top: 60px
 }
 
 .whatYouLoseButtonContainer__1fb50 {
@@ -602,4 +598,4 @@
     flex-direction: row-reverse
 }
 
-/*# sourceMappingURL=7197e01fdd4117f9.css.map*/
+/*# sourceMappingURL=21a7b34f0cfb8ef3.css.map*/

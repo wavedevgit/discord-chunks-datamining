@@ -1,14 +1,14 @@
 /**
   Module ID: 22447
-  Original File Name: 6eab0c5d285fd9b8
+  Original File Name: 72b50bb4892501d6
 **/
 .row__19fd1 {
     align-items: center;
-    display: flex;
     border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
-    gap: var(--spacing-16)
+    padding: var(--spacing-16) 0
 }
 
 .row__19fd1:last-child {
@@ -36,19 +36,19 @@
 }
 
 .button__19fd1 {
-    min-width: 75px;
-    margin-left: auto;
     flex-shrink: 0;
+    margin-left: auto;
+    min-width: 75px;
     padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
-    border-radius: var(--radius-round);
+    align-items: center;
     background-color: var(--bg-mod-subtle);
-    min-width: 32px;
+    border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
-    align-items: center
+    min-width: 32px
 }
 
 .number__19fd1,.tableRowGroup__19fd1 {
@@ -62,12 +62,12 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    overflow: hidden;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
-    padding: 0;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary)
+    overflow: hidden;
+    padding: 0
 }
 
 .visual-refresh .row__19fd1 {
@@ -79,18 +79,19 @@
 }
 
 .buttonContainer__19fd1 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: var(--spacing-4)
 }
 
 .buttonIcon__19fd1 {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .root__75df3 {
+    min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content
 }
@@ -115,4 +116,4 @@
     padding: var(--spacing-16)
 }
 
-/*# sourceMappingURL=6eab0c5d285fd9b8.css.map*/
+/*# sourceMappingURL=72b50bb4892501d6.css.map*/

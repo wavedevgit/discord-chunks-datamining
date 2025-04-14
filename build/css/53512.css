@@ -1,6 +1,6 @@
 /**
   Module ID: 53512
-  Original File Name: 13405865ea867560
+  Original File Name: 589f2f172d66e289
 **/
 .container__84aed {
     display: flex;
@@ -46,9 +46,9 @@
 }
 
 .tooltipRow__84aed {
+    align-items: center;
     display: flex;
-    gap: 8px;
-    align-items: center
+    gap: 8px
 }
 
 .guild__84aed {
@@ -126,8 +126,8 @@
 
 .guilds_adcef2 {
     display: flex;
-    flex-direction: column;
     flex: 0;
+    flex-direction: column;
     gap: 8px;
     justify-content: center;
     padding: 12px;
@@ -228,14 +228,14 @@
 
 .tip_adcef2 {
     height: 36px;
-    position: absolute;
-    width: 240px;
     opacity: 1;
-    transform: translateX(0)
+    position: absolute;
+    transform: translateX(0);
+    width: 240px
 }
 
 .full-motion .tip_adcef2 {
-    transition: transform .25s ease-in-out, opacity .25s ease-in-out
+    transition: transform .25s ease-in-out,opacity .25s ease-in-out
 }
 
 .tipLine_adcef2 {
@@ -299,8 +299,8 @@
 }
 
 .right__7c233 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 8px
 }
 
@@ -320,14 +320,13 @@
 }
 
 .dismiss__7c233:hover>div {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .hackyTips__7c233 {
     display: flex;
-    justify-content: center;
-    gap: 24px
+    gap: 24px;
+    justify-content: center
 }
 
 .hackyTips__7c233 img {
@@ -335,12 +334,12 @@
 }
 
 .hackyTip__7c233 {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-secondary);
     border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     min-width: 300px
 }
 
@@ -348,9 +347,9 @@
     background-color: var(--background-tertiary);
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
+    box-sizing: border-box;
     padding: 16px;
-    width: 100%;
-    box-sizing: border-box
+    width: 100%
 }
 
 .tabs__0afb5 {
@@ -477,8 +476,8 @@
     align-items: center;
     border-radius: 6px;
     display: flex;
-    height: 36px;
     flex-shrink: 0;
+    height: 36px;
     margin: 0 8px;
     position: relative
 }
@@ -544,14 +543,14 @@
 
 .tip__8683b {
     height: 36px;
-    position: absolute;
-    width: 240px;
     opacity: 1;
-    transform: translateX(0)
+    position: absolute;
+    transform: translateX(0);
+    width: 240px
 }
 
 .full-motion .tip__8683b {
-    transition: transform .25s ease-in-out, opacity .25s ease-in-out
+    transition: transform .25s ease-in-out,opacity .25s ease-in-out
 }
 
 .tipLine__8683b {
@@ -613,14 +612,14 @@
     left: 72px;
     opacity: 0;
     position: absolute;
-    transform: translateY(-8px);
     top: 62px;
+    transform: translateY(-8px);
     width: 240px
 }
 
 .showBigMenu__8683b .bigMenu__8683b {
-    transform: translateY(0);
-    opacity: 1
+    opacity: 1;
+    transform: translateY(0)
 }
 
 .showModal__8683b .bigMenu__8683b {
@@ -720,10 +719,10 @@
 }
 
 .controlPlaceholder__8683b {
-    width: 120px;
-    height: 8px;
+    background-color: var(--bg-mod-subtle);
     border-radius: 8px;
-    background-color: var(--bg-mod-subtle)
+    height: 8px;
+    width: 120px
 }
 
 .switchOff__8683b,.switchOn__8683b {
@@ -766,10 +765,10 @@
 }
 
 .menu__8683b.leftMenu__8683b {
-    opacity: 0;
     left: 72px;
-    transform: translateY(-8px);
+    opacity: 0;
     top: 56px;
+    transform: translateY(-8px);
     width: 120px
 }
 
@@ -779,10 +778,10 @@
 }
 
 .menu__8683b.rightMenu__8683b {
-    opacity: 0;
     left: 196px;
-    transform: translateX(-8px);
+    opacity: 0;
     top: 56px;
+    transform: translateX(-8px);
     width: 132px
 }
 
@@ -804,4 +803,4 @@
     rotate: -90deg
 }
 
-/*# sourceMappingURL=13405865ea867560.css.map*/
+/*# sourceMappingURL=589f2f172d66e289.css.map*/

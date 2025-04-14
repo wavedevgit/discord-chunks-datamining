@@ -1,10 +1,10 @@
 /**
   Module ID: 14021
-  Original File Name: 78773c8e5ae69555
+  Original File Name: 704df7017b59a0db
 **/
 .headerImg__3b9cf {
-    width: 85px;
-    height: 100px
+    height: 100px;
+    width: 85px
 }
 
 .headerText__3b9cf {
@@ -12,8 +12,8 @@
 }
 
 .modalBody__3b9cf {
-    text-align: center;
-    padding: 0 var(--spacing-16) var(--spacing-16)
+    padding: 0 var(--spacing-16) var(--spacing-16);
+    text-align: center
 }
 
 .modalInteriorHeader__3b9cf {
@@ -21,11 +21,11 @@
 }
 
 .modalHeader__3b9cf {
-    overflow: visible;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin-top: -60px
+    justify-content: center;
+    margin-top: -60px;
+    overflow: visible
 }
 
 .buttonContainer__3b9cf {
@@ -36,4 +36,4 @@
     margin-bottom: var(--spacing-8)
 }
 
-/*# sourceMappingURL=78773c8e5ae69555.css.map*/
+/*# sourceMappingURL=704df7017b59a0db.css.map*/

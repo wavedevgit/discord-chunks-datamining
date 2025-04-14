@@ -1,6 +1,6 @@
 /**
   Module ID: 49078
-  Original File Name: f3cc4c6bf633b57c
+  Original File Name: e97fb0b2e166344a
 **/
 .addFriendInputWrapper__72ba7 {
     align-items: center;
@@ -49,21 +49,20 @@
 }
 
 .addFriendInput__72ba7::-moz-placeholder {
+    color: var(--text-muted);
     -moz-user-select: none;
-    user-select: none;
-    color: var(--text-muted)
+    user-select: none
 }
 
 .addFriendInput__72ba7::placeholder {
+    color: var(--text-muted);
     -webkit-user-select: none;
     -moz-user-select: none;
-    user-select: none;
-    color: var(--text-muted)
+    user-select: none
 }
 
 .input__72ba7 {
-    background-color: transparent;
-    background-color: initial;
+    background-color: unset;
     border: none;
     padding: 0
 }
@@ -76,9 +75,9 @@
     box-sizing: border-box;
     color: var(--interactive-muted);
     cursor: text;
-    top: 15px;
     pointer-events: none;
-    position: absolute
+    position: absolute;
+    top: 15px
 }
 
 .ring__72ba7 {
@@ -94,20 +93,20 @@
 }
 
 :where(.visual-refresh) .addFriendWumpusWrapper__72ba7 {
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     padding-right: var(--space-128)
 }
 
 :where(.visual-refresh) .addFriendWumpusWrapper__72ba7 img {
+    bottom: calc(var(--space-16)*-1);
     position: absolute;
-    right: var(--space-16);
-    bottom: calc(var(--space-16)*-1)
+    right: var(--space-16)
 }
 
 .content__16b50 {
     padding-top: var(--space-16)
 }
 
-/*# sourceMappingURL=f3cc4c6bf633b57c.css.map*/
+/*# sourceMappingURL=e97fb0b2e166344a.css.map*/

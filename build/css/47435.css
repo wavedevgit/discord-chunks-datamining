@@ -1,21 +1,21 @@
 /**
   Module ID: 47435
-  Original File Name: 0584422a20126da8
+  Original File Name: 89e856a34e7af9ca
 **/
 .container__60870 {
     display: flex;
+    height: 40px;
     justify-content: space-between;
-    margin: 3px 8px 5px;
-    height: 40px
+    margin: 3px 8px 5px
 }
 
 .muted__60870 {
-    opacity: 0.01
+    opacity: 10%
 }
 
 .user__60870 {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 100%
 }
 
@@ -24,8 +24,8 @@
 }
 
 .checkbox__60870 {
-    display: flex;
     align-items: center;
+    display: flex;
     height: 100%
 }
 
@@ -47,10 +47,10 @@
 }
 
 .title_bf2caa {
-    display: flex;
-    margin: 0 22px 8px;
     align-items: center;
-    height: 38px
+    display: flex;
+    height: 38px;
+    margin: 0 22px 8px
 }
 
 .titleImage_bf2caa {
@@ -59,8 +59,8 @@
 }
 
 .description_bf2caa {
-    margin: 0 20.5px 16px;
-    height: 40px
+    height: 40px;
+    margin: 0 20.5px 16px
 }
 
 .searchbar_bf2caa {
@@ -73,29 +73,29 @@
 }
 
 .erroredContent_bf2caa {
-    height: 260px;
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    height: 260px;
+    justify-content: center
 }
 
 .separator_bf2caa {
+    box-shadow: 0 -1px 0 hsl(var(--white-500-hsl)/4%);
     height: 1px;
-    margin: 0 10px;
-    box-shadow: 0 -1px 0 hsl(var(--white-500-hsl)/4%)
+    margin: 0 10px
 }
 
 .footer_bf2caa {
-    display: flex;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    display: flex;
     width: 100%
 }
 
 .submit_bf2caa {
     height: 40px;
-    width: 100%;
-    margin: 20px 16px 21px
+    margin: 20px 16px 21px;
+    width: 100%
 }
 
 .theme-dark .headerSeparator_bf2caa {
@@ -119,8 +119,8 @@
 }
 
 .remindHeader_bf2caa {
-    height: 126px;
     box-sizing: border-box;
+    height: 126px;
     padding-top: 24px
 }
 
@@ -134,15 +134,15 @@
 
 .closeButtonContainer_daaad8 {
     position: absolute;
-    top: 18px;
-    right: 16px
+    right: 16px;
+    top: 18px
 }
 
 .headerIcon_daaad8 {
+    height: 190px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -145px;
-    height: 190px
+    margin-top: -145px
 }
 
 .heading_daaad8 {
@@ -150,26 +150,26 @@
 }
 
 .confirmedUserContainer_daaad8 {
-    padding-top: 8px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid rgba(78,80,88,.47843137254901963);
+    border-bottom: 2px solid #4e50587a;
+    margin-bottom: 16px;
     margin-top: 8px;
-    margin-bottom: 16px
+    padding-bottom: 12px;
+    padding-top: 8px
 }
 
 .referredUserRowContainer_daaad8 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 8px
 }
 
 .referredUserRowBody_daaad8 {
     display: flex;
     flex-direction: column;
-    text-align: left;
     max-width: 246px;
-    padding-left: 8px
+    padding-left: 8px;
+    text-align: left
 }
 
 .displayNameTooltip_daaad8 {
@@ -177,6 +177,7 @@
 }
 
 .displayNameClickableContainer_daaad8 {
+    width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content
 }
@@ -197,4 +198,4 @@
     opacity: .5
 }
 
-/*# sourceMappingURL=0584422a20126da8.css.map*/
+/*# sourceMappingURL=89e856a34e7af9ca.css.map*/

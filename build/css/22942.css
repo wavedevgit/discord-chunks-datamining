@@ -1,6 +1,6 @@
 /**
   Module ID: 22942
-  Original File Name: a77b19768d76db05
+  Original File Name: 5f4a4163e43f9d75
 **/
 .modalRoot_d507dd {
     height: 100%;
@@ -13,23 +13,24 @@
     box-shadow: var(--shadow-border),var(--shadow-high);
     box-sizing: border-box;
     display: grid;
-    height: 100%;
-    width: 424px;
     grid-template-rows: auto 1fr;
+    height: 100%;
     overflow: hidden;
     position: relative;
+    width: 424px;
     z-index: 1
 }
 
 .nav_d507dd {
-    padding: 16px 16px 8px;
+    height: -webkit-min-content;
     height: -moz-min-content;
-    height: min-content
+    height: min-content;
+    padding: 16px 16px 8px
 }
 
 .navUploadSelected_d507dd {
-    padding-bottom: 16px;
-    box-shadow: var(--elevation-low)
+    box-shadow: var(--elevation-low);
+    padding-bottom: 16px
 }
 
 .navList_d507dd {
@@ -51,7 +52,7 @@
     font-weight: 600;
     line-height: 20px;
     padding: 2px 8px;
-    transition: background-color .1s ease-in-out, color .1s ease-in-out
+    transition: background-color .1s ease-in-out,color .1s ease-in-out
 }
 
 .navButton_d507dd:hover {
@@ -67,15 +68,15 @@
 }
 
 .uploadContainer_d507dd {
+    color: var(--text-normal);
     flex-direction: column;
-    width: 100%;
     height: 100%;
-    color: var(--text-normal)
+    width: 100%
 }
 
 .uploadContainer_d507dd,.uploadIconOuterContainer_d507dd {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -84,26 +85,26 @@
 }
 
 .uploadIconInnerContainer_d507dd {
-    padding: 8px;
-    position: absolute;
+    background: var(--background-tertiary);
     border-radius: var(--radius-sm);
-    background: var(--background-tertiary)
+    padding: 8px;
+    position: absolute
 }
 
 .uploadIcon_d507dd {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .uploadInfo_d507dd {
-    padding-top: 24px;
-    padding-bottom: 10px
+    padding-bottom: 10px;
+    padding-top: 24px
 }
 
 .uploadError_d507dd {
+    line-height: 20px;
     padding: 8px 32px;
-    text-align: center;
-    line-height: 20px
+    text-align: center
 }
 
-/*# sourceMappingURL=a77b19768d76db05.css.map*/
+/*# sourceMappingURL=5f4a4163e43f9d75.css.map*/

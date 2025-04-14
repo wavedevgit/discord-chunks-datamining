@@ -1,34 +1,34 @@
 /**
   Module ID: 29393
-  Original File Name: 92147887f12e86fd
+  Original File Name: 67aa792d34633d55
 **/
 .image_b026d9 {
-    margin: 20px auto;
     background-repeat: no-repeat;
-    background-size: cover
+    background-size: cover;
+    margin: 20px auto
 }
 
 .imageUpgrade_b026d9 {
-    width: 267px;
-    height: 120px
+    height: 120px;
+    width: 267px
 }
 
 .imageCancel_b026d9 {
-    width: 166px;
-    height: 144px
+    height: 144px;
+    width: 166px
 }
 
 .imageUnclaimed_b026d9,.imageUnverified_b026d9 {
-    width: 162px;
-    height: 100px
+    height: 100px;
+    width: 162px
 }
 
 .message_b026d9 {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    color: var(--text-muted-on-default);
     font-size: 16px;
     line-height: 1.44;
-    color: var(--text-muted-on-default)
+    margin-bottom: 20px;
+    margin-top: 20px
 }
 
 .theme-dark .imageCancel_b026d9 {
@@ -67,4 +67,4 @@
     background-image: url(/assets/f7db12df7391974c.svg)
 }
 
-/*# sourceMappingURL=92147887f12e86fd.css.map*/
+/*# sourceMappingURL=67aa792d34633d55.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 24231
-  Original File Name: cb24da9b09554431
+  Original File Name: 1815e2669192eb2a
 **/
 .container__05cdc {
     display: flex
@@ -23,22 +23,21 @@
 
 .grid__28d93 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     grid-auto-flow: row;
-    grid-gap: 8px;
-    gap: 8px
+    grid-template-columns: 1fr 1fr 1fr
 }
 
 .speakerContainer__28d93 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important;
-    margin-right: 8px
+    margin-right: 8px;
+    width: 20px!important
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
@@ -46,14 +45,14 @@
 }
 
 .iconMicrophone__28d93 {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    border-radius: 50%;
     color: var(--header-secondary);
-    border-radius: 50%
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-right: 8px;
+    width: 20px
 }
 
 .textInGridContainer__28d93 {
@@ -74,17 +73,17 @@
 }
 
 .container_e74d28 {
-    padding: 4px 8px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: var(--background-tertiary);
-    border-radius: 12px
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    padding: 4px 8px
 }
 
 .icon_e74d28 {
-    margin-right: 4px;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    margin-right: 4px
 }
 
 .contentContainer_e4e1bb {
@@ -97,8 +96,8 @@
 }
 
 .guildIcon_e4e1bb {
-    margin-right: 8px;
-    border-radius: 4px
+    border-radius: 4px;
+    margin-right: 8px
 }
 
 .flexContainerRow_e4e1bb {
@@ -125,9 +124,9 @@
 }
 
 .description_e4e1bb,.guildName_e4e1bb,.topicText_e4e1bb {
+    display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
     -webkit-box-orient: vertical
 }
 
@@ -137,19 +136,18 @@
 }
 
 .guildName_e4e1bb:not(.disabled_e4e1bb):hover {
-    -webkit-text-decoration: underline;
-    text-decoration: underline;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    text-decoration: underline
 }
 
 .featuredTag_e4e1bb {
-    padding: 4px 8px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     background-color: var(--brand-500);
     border-radius: 12px;
-    margin-right: 12px
+    display: flex;
+    flex-direction: row;
+    margin-right: 12px;
+    padding: 4px 8px
 }
 
 .featuredTagText_e4e1bb {
@@ -157,13 +155,13 @@
 }
 
 .rightJustifiedContent_e4e1bb {
-    margin-left: auto;
-    flex-direction: row
+    flex-direction: row;
+    margin-left: auto
 }
 
 .footer_e4e1bb,.rightJustifiedContent_e4e1bb {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .icon_e4e1bb {
@@ -172,15 +170,15 @@
 }
 
 .divider_e4e1bb {
-    height: 1px;
     background-color: var(--background-modifier-accent);
     border: none;
+    height: 1px;
     margin: 16px -16px 12px
 }
 
 .container__68bd0 {
-    padding-top: 24px;
-    padding-bottom: 24px
+    padding-bottom: 24px;
+    padding-top: 24px
 }
 
 .header__68bd0 {
@@ -200,12 +198,12 @@
 }
 
 .listItemContainer__68bd0 {
-    margin-top: 24px;
-    margin-left: 16px;
-    margin-right: 16px;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 24px
 }
 
 .listItemIconContainer__68bd0 {
@@ -217,11 +215,11 @@
 }
 
 .iconContainer__68bd0 {
-    padding: 8px;
-    display: flex;
     background-color: var(--background-tertiary);
+    border-radius: 50%;
     color: var(--interactive-normal);
-    border-radius: 50%
+    display: flex;
+    padding: 8px
 }
 
 .badgeIconBackground__68bd0 {
@@ -233,22 +231,22 @@
 }
 
 .previewCardContainer__68bd0 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 16px;
     padding-left: 16px;
-    padding-right: 16px
+    padding-right: 16px;
+    padding-top: 16px
 }
 
 .previewCard__68bd0 {
     background-color: var(--background-floating);
-    width: 100%;
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
+    width: 100%;
     z-index: 3
 }
 
@@ -257,25 +255,25 @@
 }
 
 .notificationContent__74570 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .tooltipIcon__74570 {
-    margin-left: 4px;
-    color: var(--interactive-active)
+    color: var(--interactive-active);
+    margin-left: 4px
 }
 
 .pill__74570 {
-    padding: 2px 4px;
-    margin-left: 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: 600;
     background-color: var(--brand-500);
+    border-radius: 4px;
     color: var(--white-500);
-    display: flex
+    display: flex;
+    font-weight: 600;
+    margin-left: 8px;
+    padding: 2px 4px;
+    text-transform: uppercase
 }
 
 .tooltip__74570 {
@@ -291,8 +289,8 @@
 .doubleInput__6dc4b {
     display: flex;
     flex-direction: row;
-    position: relative;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    position: relative
 }
 
 .doubleInput__6dc4b>div {
@@ -310,12 +308,12 @@
 
 .link__6dc4b {
     align-items: center;
-    justify-content: center;
+    color: var(--interactive-active);
     display: flex;
-    transition: opacity .2s;
     font-size: 16px;
     font-weight: 400;
-    color: var(--interactive-active)
+    justify-content: center;
+    transition: opacity .2s
 }
 
 .link__6dc4b:hover {
@@ -323,21 +321,21 @@
 }
 
 .addIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--brand-500)
+    color: var(--brand-500);
+    margin-right: 8px
 }
 
 .removeIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--status-danger)
+    color: var(--status-danger);
+    margin-right: 8px
 }
 
 .container__26abc {
     background-color: var(--background-floating);
-    padding: 8px;
     border-radius: 4px;
     box-shadow: var(--elevation-high);
-    max-height: 300px
+    max-height: 300px;
+    padding: 8px
 }
 
 .user__26abc {
@@ -346,8 +344,8 @@
 }
 
 .user__26abc,.username__26abc {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .username__26abc {
@@ -360,31 +358,31 @@
 }
 
 .blockedNotice__26abc {
-    display: flex;
     align-content: center;
     align-items: center;
+    display: flex;
     margin-bottom: 24px
 }
 
 .blockedButton__26abc {
-    font-size: 12px;
-    margin-left: 4px;
-    font-weight: 600;
     color: var(--text-link);
-    cursor: pointer
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 4px
 }
 
 .icon__26abc {
     background-clip: padding-box;
-    border-radius: 50%;
-    padding: 2px;
     background-color: var(--background-accent);
+    border-radius: 50%;
     color: var(--white-500);
-    width: 12px;
     height: 12px;
+    padding: 2px;
     position: absolute;
     right: -2px;
-    top: 0
+    top: 0;
+    width: 12px
 }
 
 .userInfo__26abc {
@@ -406,13 +404,13 @@
 }
 
 .formItem__327b5 {
-    width: 100%;
-    margin-top: 24px
+    margin-top: 24px;
+    width: 100%
 }
 
 .topicFormItem__327b5 {
-    width: 100%;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    width: 100%
 }
 
 .channelSelectionFormItem__327b5 {
@@ -430,10 +428,10 @@
 }
 
 .buttonsContainer__327b5 {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
+    width: 100%
 }
 
 .speakerHint__327b5 {
@@ -441,8 +439,8 @@
 }
 
 .itemIcon__327b5 {
-    flex-shrink: 0;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    flex-shrink: 0
 }
 
 .channelName__327b5 {
@@ -455,9 +453,9 @@
 }
 
 .label__327b5 {
+    font-weight: 700;
     margin: 24px 0 8px;
-    text-transform: uppercase;
-    font-weight: 700
+    text-transform: uppercase
 }
 
 .warning__327b5 {
@@ -469,25 +467,25 @@
 }
 
 .notificationContent__327b5 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .tooltipIcon__327b5 {
-    margin-left: 4px;
-    color: var(--interactive-active)
+    color: var(--interactive-active);
+    margin-left: 4px
 }
 
 .pill__327b5 {
-    padding: 2px 4px;
-    margin-left: 8px;
-    border-radius: 4px;
-    text-transform: uppercase;
-    font-weight: 600;
     background-color: var(--brand-500);
+    border-radius: 4px;
     color: var(--white-500);
-    display: flex
+    display: flex;
+    font-weight: 600;
+    margin-left: 8px;
+    padding: 2px 4px;
+    text-transform: uppercase
 }
 
 .content__4c084 {
@@ -495,16 +493,16 @@
 }
 
 .content__4c084,.stageIconBackground__4c084 {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .stageIconBackground__4c084 {
-    justify-content: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
     height: 60px;
+    justify-content: center;
     width: 60px
 }
 
@@ -529,7 +527,7 @@
 .slideContainer__4c084 {
     display: flex;
     flex-direction: column;
-    max-height: max(200px, min(calc(100vh - 80px), 660px))
+    max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=cb24da9b09554431.css.map*/
+/*# sourceMappingURL=1815e2669192eb2a.css.map*/

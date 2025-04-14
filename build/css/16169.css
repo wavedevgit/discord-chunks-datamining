@@ -1,12 +1,12 @@
 /**
   Module ID: 16169
-  Original File Name: a749989374dfa405
+  Original File Name: 957ab19cf1dee0e8
 **/
 .modalContent__9ae4f {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     padding: 32px 16px;
     text-align: center
 }
@@ -16,8 +16,8 @@
 }
 
 .title__9ae4f {
-    margin-bottom: 8px;
-    font-size: 24px
+    font-size: 24px;
+    margin-bottom: 8px
 }
 
 .description__9ae4f {
@@ -26,8 +26,8 @@
 }
 
 .button__9ae4f {
-    width: 80px;
-    margin: 0 auto
+    margin: 0 auto;
+    width: 80px
 }
 
-/*# sourceMappingURL=a749989374dfa405.css.map*/
+/*# sourceMappingURL=957ab19cf1dee0e8.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 30057
-  Original File Name: b442cfa1c33c6cc8
+  Original File Name: 00a5342764ac0832
 **/
 .container__270b2 {
     flex-direction: row;
@@ -8,8 +8,8 @@
 }
 
 .container__270b2,.iconButton__270b2 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconButton__270b2 {
@@ -33,8 +33,8 @@
 }
 
 .innerButton__270b2 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
@@ -61,10 +61,10 @@
 }
 
 .container__04119 {
-    padding: 4px;
     border-radius: var(--radius-xs);
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 4px
 }
 
 .container__04119.canceled__04119 {
@@ -88,8 +88,8 @@
 }
 
 .iconButton__04119 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -142,8 +142,8 @@
 }
 
 .container__6cf35,.iconButton__6cf35 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconButton__6cf35 {
@@ -171,8 +171,8 @@
 }
 
 .innerButton__6cf35 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .button__6cf35,.button__6cf35+.button__6cf35 {
@@ -194,22 +194,21 @@
 
 .grid__28d93 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     grid-auto-flow: row;
-    grid-gap: 8px;
-    gap: 8px
+    grid-template-columns: 1fr 1fr 1fr
 }
 
 .speakerContainer__28d93 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important;
-    margin-right: 8px
+    margin-right: 8px;
+    width: 20px!important
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
@@ -217,14 +216,14 @@
 }
 
 .iconMicrophone__28d93 {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    border-radius: 50%;
     color: var(--header-secondary);
-    border-radius: 50%
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-right: 8px;
+    width: 20px
 }
 
 .textInGridContainer__28d93 {
@@ -246,10 +245,10 @@
 
 .card__88264 {
     background-color: var(--background-secondary);
-    border-radius: 8px;
     border: 1px solid var(--background-secondary);
-    transition: border-color .5s;
-    cursor: pointer
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color .5s
 }
 
 .card__88264:hover {
@@ -282,15 +281,15 @@
 }
 
 .inline__88264 {
-    display: flex;
     align-items: center;
+    display: flex;
     overflow: hidden
 }
 
 .guildIcon__88264 {
-    margin-right: 8px;
+    background-color: var(--brand-500);
     color: var(--white-500);
-    background-color: var(--brand-500)
+    margin-right: 8px
 }
 
 .channelContainer__88264 {
@@ -303,7 +302,6 @@
 
 .channelContainerEnabled__88264:hover {
     color: var(--interactive-active);
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -324,8 +322,8 @@
     margin-left: 8px;
     margin-right: 8px;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .spacing__88264 {
@@ -333,16 +331,16 @@
 }
 
 .dot__88264 {
-    border-radius: 50%;
     background-color: var(--red-360);
-    width: 8px;
-    height: 8px
+    border-radius: 50%;
+    height: 8px;
+    width: 8px
 }
 
 .divider__88264 {
-    height: 1px;
     background-color: var(--background-modifier-accent);
     border: none;
+    height: 1px;
     margin: 16px -16px 12px
 }
 
@@ -355,59 +353,57 @@
 }
 
 .channelLocation__88264:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .externalLocation__88264 {
-    display: flex;
     cursor: auto;
+    display: flex;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
 }
 
 .enable-forced-colors .channelContainer__88264 {
-    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
-    -webkit-text-decoration: underline;
+    forced-color-adjust: none;
     text-decoration: underline
 }
 
 .content__735fb {
-    display: flex;
     align-items: center;
+    display: flex;
     flex-direction: column;
     padding: 24px
 }
 
 .previewCard__735fb {
-    width: 100%;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    width: 100%
 }
 
 .inline__735fb {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .header__735fb {
     margin-top: 8px;
-    text-align: center;
     max-width: 400px;
     min-height: 32px;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .icon__735fb {
     background-color: var(--background-tertiary);
-    color: var(--interactive-normal);
-    padding: 8px;
     border-radius: 50%;
-    margin-bottom: 24px
+    color: var(--interactive-normal);
+    margin-bottom: 24px;
+    padding: 8px
 }
 
 .privacyLevel__735fb {
@@ -438,4 +434,4 @@
     margin-top: 8px
 }
 
-/*# sourceMappingURL=b442cfa1c33c6cc8.css.map*/
+/*# sourceMappingURL=00a5342764ac0832.css.map*/

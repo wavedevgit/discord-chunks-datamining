@@ -1,20 +1,20 @@
 /**
   Module ID: 82081
-  Original File Name: 1f942e3fe4612140
+  Original File Name: a5cdaa91e94aa254
 **/
 .closeButton_b425c1 {
-    transition-duration: 0s;
-    pointer-events: all;
+    align-items: center;
     cursor: pointer;
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    padding: var(--space-8);
+    pointer-events: all;
     position: absolute;
     right: 12px;
     top: 12px;
-    display: flex;
-    width: 20px;
-    height: 20px;
-    padding: var(--space-8);
-    justify-content: center;
-    align-items: center
+    transition-duration: 0s;
+    width: 20px
 }
 
 .closeButtonInner_b425c1 {
@@ -26,19 +26,18 @@
 }
 
 .container__6e9b4 {
-    position: relative;
-    pointer-events: all;
-    display: flex;
-    width: 256px;
-    padding: 16px;
-    flex-direction: column;
     align-items: center;
     background: var(--bg-surface-overlay);
-    border: 1px solid rgba(0,0,0,.08);
     border: 1px solid var(--border-subtle,rgba(0,0,0,.08));
     border-radius: 12px;
     box-shadow: 0 12px 36px 0 rgba(0,0,0,.12);
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    pointer-events: all;
+    position: relative;
+    width: 256px;
     z-index: 1000
 }
 
@@ -58,9 +57,9 @@
 }
 
 .content__6e9b4 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 4px
 }
 
@@ -70,17 +69,17 @@
 }
 
 .ctaButton__6e9b4 {
-    height: 40px;
-    border-radius: 8px
+    border-radius: 8px;
+    height: 40px
 }
 
 .tail__6e9b4 {
-    position: absolute;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 0;
     justify-content: center;
-    align-items: center
+    padding: 0;
+    position: absolute
 }
 
 .tailPositionNormal__6e9b4 {
@@ -92,9 +91,9 @@
 }
 
 .tailSpine__6e9b4 {
-    width: 2px;
+    background: var(--interactive-active);
     height: 12px;
-    background: var(--interactive-active)
+    width: 2px
 }
 
 .tailTargetPositionNormal__6e9b4 {
@@ -106,10 +105,10 @@
 }
 
 .tailTargetOuter__6e9b4 {
-    position: absolute;
     display: flex;
-    width: 8px;
-    height: 8px
+    height: 8px;
+    position: absolute;
+    width: 8px
 }
 
 .tailTargetInner__6e9b4 {
@@ -119,27 +118,26 @@
 }
 
 :root {
-    --custom-virtual-currency-border-subtle: var(--border-subtle,rgba(108,111,124,0.12))
+    --custom-virtual-currency-border-subtle: var(--border-subtle,hsla(229,7%,45%,.12))
 }
 
 .baseCardOutline__1ab14 {
-    border-radius: 12px;
-    border: 1px solid rgba(108,111,124,.12);
-    border: 1px solid var(--border-border-subtle,rgba(108,111,124,.12));
-    box-shadow: 0 12px 64px 0 rgba(0,0,0,.32);
     -webkit-backdrop-filter: blur(18px);
-    backdrop-filter: blur(18px)
+    backdrop-filter: blur(18px);
+    border: 1px solid var(--border-border-subtle,hsla(229,7%,45%,.12));
+    border-radius: 12px;
+    box-shadow: 0 12px 64px 0 rgba(0,0,0,.32)
 }
 
 .container__4d8b6 {
-    position: relative;
-    width: 250px;
-    padding: 16px;
+    align-items: center;
+    background: var(--bg-surface-overlay);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background: var(--bg-surface-overlay)
+    padding: 16px;
+    position: relative;
+    width: 250px
 }
 
 .orbAsset__4d8b6 {
@@ -147,20 +145,20 @@
 }
 
 .centerContent__4d8b6 {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .contentContainer__4d8b6 {
-    margin-top: 12px;
-    gap: 12px
+    gap: 12px;
+    margin-top: 12px
 }
 
 .contentContainer__4d8b6,.textContainer__4d8b6 {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .coachmarkTitle__4d8b6 {
@@ -168,16 +166,16 @@
 }
 
 .coachmarkDescription__4d8b6 {
-    line-height: 18px;
-    color: var(--header-secondary);
     align-self: stretch;
+    color: var(--header-secondary);
+    line-height: 18px;
     text-align: center
 }
 
 .ctaButton__4d8b6 {
-    width: 100%;
+    border-radius: var(--radius-sm);
     height: 40px;
-    border-radius: var(--radius-sm)
+    width: 100%
 }
 
 .theme-light .coachmarkTailSpine__4d8b6 {
@@ -190,24 +188,24 @@
 }
 
 .secondaryButton__4d8b6 {
+    background: var(--bg-mod-subtle);
     border: 1px solid var(--border-faint);
     border-radius: var(--radius-sm);
-    background: var(--bg-mod-subtle);
     color: var(--text-primary);
-    text-align: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    line-height: 16px;
     letter-spacing: .14px;
-    padding: 12px 0
+    line-height: 16px;
+    padding: 12px 0;
+    text-align: center
 }
 
 .coachmarkModalContainer__4d8b6 {
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
     gap: 12px
 }
 
-/*# sourceMappingURL=1f942e3fe4612140.css.map*/
+/*# sourceMappingURL=a5cdaa91e94aa254.css.map*/

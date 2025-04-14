@@ -1,17 +1,17 @@
 /**
   Module ID: 958
-  Original File Name: 805eafe368d865bf
+  Original File Name: 807b639ab57ffdab
 **/
 .header__8f3be {
-    text-align: center;
-    gap: var(--spacing-16)
+    gap: var(--spacing-16);
+    text-align: center
 }
 
 .header__8f3be,.heading__8f3be {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .heading__8f3be {
@@ -19,27 +19,27 @@
 }
 
 .footer__8f3be {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    gap: var(--spacing-8)
+    display: flex;
+    gap: var(--spacing-8);
+    justify-content: center
 }
 
 .notice__8f3be {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--elevation-low);
     display: flex;
     flex-direction: column;
     gap: var(--spacing-4);
-    padding: var(--spacing-24);
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary);
-    box-shadow: var(--elevation-low)
+    padding: var(--spacing-24)
 }
 
 .error__8f3be {
-    border-top-left-radius: var(--radius-xs);
-    border-top-right-radius: var(--radius-xs);
     border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0
+    border-bottom-right-radius: 0;
+    border-top-left-radius: var(--radius-xs);
+    border-top-right-radius: var(--radius-xs)
 }
 
 .visual-refresh .notice__8f3be {
@@ -60,19 +60,19 @@ html:not(.visual-refresh) .header__8f3be {
 }
 
 html:not(.visual-refresh) .content__8f3be {
+    margin-bottom: var(--spacing-24);
     padding-left: var(--spacing-24);
-    padding-right: var(--spacing-24);
-    margin-bottom: var(--spacing-24)
+    padding-right: var(--spacing-24)
 }
 
 .footer__4f15b {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .closeIcon__4f15b {
     color: var(--text-danger)
 }
 
-/*# sourceMappingURL=805eafe368d865bf.css.map*/
+/*# sourceMappingURL=807b639ab57ffdab.css.map*/

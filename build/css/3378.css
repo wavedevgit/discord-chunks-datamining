@@ -1,33 +1,33 @@
 /**
   Module ID: 3378
-  Original File Name: 9e821f72f7ebbad2
+  Original File Name: 5af98b8a21c15dde
 **/
 .confirmation__1051d {
-    display: flex;
     align-items: center;
+    background-color: var(--bg-surface-raised);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    display: flex;
     flex-direction: column;
+    gap: 24px;
     max-width: 400px;
     padding: 24px;
-    border-radius: 16px;
-    gap: 24px;
-    text-align: center;
-    background-color: var(--bg-surface-raised);
-    border: 1px solid var(--border-subtle)
+    text-align: center
 }
 
 .iconWrapper__1051d {
-    padding: 12px;
+    background: var(--bg-base-tertiary);
     border-radius: 50%;
-    background: var(--bg-base-tertiary)
+    padding: 12px
 }
 
 .statusTextContainer__1051d {
-    max-width: 100%;
-    overflow: hidden;
-    word-wrap: break-word;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    max-width: 100%;
+    overflow: hidden;
+    overflow-wrap: break-word
 }
 
 .incompleteButtonsContainer__1051d {
@@ -56,4 +56,4 @@
     width: 100%
 }
 
-/*# sourceMappingURL=9e821f72f7ebbad2.css.map*/
+/*# sourceMappingURL=5af98b8a21c15dde.css.map*/

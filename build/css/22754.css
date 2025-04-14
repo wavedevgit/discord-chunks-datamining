@@ -1,19 +1,19 @@
 /**
   Module ID: 22754
-  Original File Name: 5b0f04dabdde1420
+  Original File Name: 00114fa70a8f8cbd
 **/
 .container__5537c {
-    min-width: 100%;
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    min-width: 100%
 }
 
 .stepContainer__5537c {
-    width: 100%;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start
+    width: 100%
 }
 
 .stepContainer__5537c+.stepContainer__5537c {
@@ -21,11 +21,11 @@
 }
 
 .progressBar__5537c {
-    margin-bottom: 8px;
-    height: 4px;
-    width: 100%;
     background-color: var(--text-muted);
-    border-radius: 4px
+    border-radius: 4px;
+    height: 4px;
+    margin-bottom: 8px;
+    width: 100%
 }
 
 .selectedProgressBar__5537c {
@@ -41,18 +41,18 @@
 }
 
 .container__03b47 {
-    margin-top: 8px;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    background-color: var(--background-secondary);
-    border-radius: 4px
+    margin-top: 8px
 }
 
 .content__03b47 {
-    padding: 12px;
+    border-bottom: 1px solid var(--background-modifier-accent);
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid var(--background-modifier-accent)
+    padding: 12px
 }
 
 .textContainer__03b47 {
@@ -65,9 +65,9 @@
 }
 
 .image__03b47 {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .inlineText__03b47 {
@@ -76,9 +76,9 @@
 }
 
 .footer__03b47 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     padding: 12px
 }
 
@@ -87,9 +87,9 @@
 }
 
 .container__4eb6e {
-    margin-top: 24px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-top: 24px
 }
 
 .header__4eb6e,.text__4eb6e {
@@ -105,22 +105,22 @@
 }
 
 .channelOption__4eb6e {
-    display: flex;
     align-items: center;
+    display: flex;
     min-width: 0
 }
 
 .optionText__4eb6e {
-    margin-right: 8px;
     margin-left: 8px;
+    margin-right: 8px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
 }
 
 .channelOptionIcon__4eb6e {
-    flex-shrink: 0;
-    display: block
+    display: block;
+    flex-shrink: 0
 }
 
 .channelPrivate__4eb6e {
@@ -133,8 +133,8 @@
 }
 
 .container__270b2,.iconButton__270b2 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconButton__270b2 {
@@ -158,8 +158,8 @@
 }
 
 .innerButton__270b2 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
@@ -186,10 +186,10 @@
 }
 
 .container__04119 {
-    padding: 4px;
     border-radius: var(--radius-xs);
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 4px
 }
 
 .container__04119.canceled__04119 {
@@ -213,8 +213,8 @@
 }
 
 .iconButton__04119 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -267,8 +267,8 @@
 }
 
 .container__6cf35,.iconButton__6cf35 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconButton__6cf35 {
@@ -296,8 +296,8 @@
 }
 
 .innerButton__6cf35 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .button__6cf35,.button__6cf35+.button__6cf35 {
@@ -319,22 +319,21 @@
 
 .grid__28d93 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
     grid-auto-flow: row;
-    grid-gap: 8px;
-    gap: 8px
+    grid-template-columns: 1fr 1fr 1fr
 }
 
 .speakerContainer__28d93 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .avatar__28d93 {
     height: 20px!important;
-    width: 20px!important;
-    margin-right: 8px
+    margin-right: 8px;
+    width: 20px!important
 }
 
 .iconMicrophone__28d93,.speakerCount__28d93 {
@@ -342,14 +341,14 @@
 }
 
 .iconMicrophone__28d93 {
-    height: 20px;
-    width: 20px;
-    margin-right: 8px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    border-radius: 50%;
     color: var(--header-secondary);
-    border-radius: 50%
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-right: 8px;
+    width: 20px
 }
 
 .textInGridContainer__28d93 {
@@ -371,10 +370,10 @@
 
 .card__88264 {
     background-color: var(--background-secondary);
-    border-radius: 8px;
     border: 1px solid var(--background-secondary);
-    transition: border-color .5s;
-    cursor: pointer
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color .5s
 }
 
 .card__88264:hover {
@@ -407,15 +406,15 @@
 }
 
 .inline__88264 {
-    display: flex;
     align-items: center;
+    display: flex;
     overflow: hidden
 }
 
 .guildIcon__88264 {
-    margin-right: 8px;
+    background-color: var(--brand-500);
     color: var(--white-500);
-    background-color: var(--brand-500)
+    margin-right: 8px
 }
 
 .channelContainer__88264 {
@@ -428,7 +427,6 @@
 
 .channelContainerEnabled__88264:hover {
     color: var(--interactive-active);
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
@@ -449,8 +447,8 @@
     margin-left: 8px;
     margin-right: 8px;
     overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .spacing__88264 {
@@ -458,16 +456,16 @@
 }
 
 .dot__88264 {
-    border-radius: 50%;
     background-color: var(--red-360);
-    width: 8px;
-    height: 8px
+    border-radius: 50%;
+    height: 8px;
+    width: 8px
 }
 
 .divider__88264 {
-    height: 1px;
     background-color: var(--background-modifier-accent);
     border: none;
+    height: 1px;
     margin: 16px -16px 12px
 }
 
@@ -480,23 +478,21 @@
 }
 
 .channelLocation__88264:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .externalLocation__88264 {
-    display: flex;
     cursor: auto;
+    display: flex;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
 }
 
 .enable-forced-colors .channelContainer__88264 {
-    forced-color-adjust: none;
     background-color: ButtonFace;
     color: ButtonText;
-    -webkit-text-decoration: underline;
+    forced-color-adjust: none;
     text-decoration: underline
 }
 
@@ -513,21 +509,21 @@
 }
 
 .icon_f70348 {
-    margin: -4px 4px;
-    display: inline
+    display: inline;
+    margin: -4px 4px
 }
 
 .locationIcon_f70348 {
-    margin: -4px 4px -4px 2px;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    margin: -4px 4px -4px 2px
 }
 
 .textContainer_f70348 {
-    padding-top: 24px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center
+    padding-top: 24px
 }
 
 .subheader_f70348 {
@@ -551,25 +547,24 @@
 }
 
 .imageUploader_e4d0bf {
-    text-align: center;
-    font-size: 12px
+    font-size: 12px;
+    text-align: center
 }
 
 .imageUploader_e4d0bf .removeButton_e4d0bf {
-    margin-top: 10px;
+    cursor: pointer;
+    display: block;
     font-size: 14px;
     font-weight: 600;
-    display: block;
-    -webkit-text-decoration: none;
-    text-decoration: none;
-    cursor: pointer
+    margin-top: 10px;
+    text-decoration: none
 }
 
 .imageUploader_e4d0bf .sizeInfo_e4d0bf {
-    margin-top: 10px;
+    color: var(--text-muted);
     display: block;
     font-size: 10px;
-    color: var(--text-muted)
+    margin-top: 10px
 }
 
 .imageUploader_e4d0bf .sizeInfo_e4d0bf strong {
@@ -581,36 +576,36 @@
 }
 
 .imageUploaderIconWrapper_e4d0bf {
-    position: relative;
     display: inline-block;
+    position: relative;
     width: 100%
 }
 
 .imageUploaderInner_e4d0bf {
-    display: inline-block;
-    width: 138px;
-    height: 138px;
-    border-radius: 50%;
-    background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    position: relative;
+    background-size: cover;
+    border-radius: 50%;
     box-sizing: border-box;
+    display: inline-block;
+    flex-shrink: 0;
+    height: 138px;
+    position: relative;
     transition: box-shadow background-color .1s .1s;
-    flex-shrink: 0
+    width: 138px
 }
 
 .imageUploaderInner_e4d0bf>* {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    align-items: center;
     bottom: 0;
+    color: var(--white);
     display: flex;
     justify-content: center;
-    align-items: center;
+    left: 0;
     pointer-events: none;
-    color: var(--white)
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .imageUploaderInner_e4d0bf .imageUploaderFileInput_e4d0bf,.imageUploaderInner_e4d0bf input[type=file] {
@@ -643,40 +638,40 @@
 }
 
 .imageUploaderHint_e4d0bf {
-    left: 0;
     bottom: 0;
-    pointer-events: none;
     color: var(--white);
-    visibility: hidden;
     font-size: 10px;
     font-weight: 700;
-    text-transform: uppercase;
+    left: 0;
     line-height: 12px;
+    pointer-events: none;
+    text-transform: uppercase;
+    visibility: hidden;
     white-space: pre
 }
 
 .imageUploaderHint_e4d0bf,.imageUploaderIcon_e4d0bf {
-    position: absolute;
-    top: 0;
-    right: 0;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
 .imageUploaderIcon_e4d0bf {
-    left: auto;
-    width: 28px;
-    height: 28px;
-    background-repeat: no-repeat;
+    background-color: var(--bg-surface-raised);
     background-position: 50%;
+    background-repeat: no-repeat;
     border-radius: 50%;
     box-shadow: var(--shadow-border),var(--shadow-low);
-    background-color: var(--bg-surface-raised)
+    height: 28px;
+    left: auto;
+    width: 28px
 }
 
 .imageUploaderIconDisabled_e4d0bf {
-    opacity: 0.01
+    opacity: 50%
 }
 
 .removeButton_e4d0bf {
@@ -708,19 +703,19 @@
 }
 
 .avatarUploader_e04502 .avatarUploaderInner_e04502,.avatarUploaderDisabled_e04502 .avatarUploaderInner_e04502 {
-    width: 100px;
+    background-size: 100% 100%;
     height: 100px;
-    background-size: 100% 100%
+    width: 100px
 }
 
 .avatarUploaderInnerSquare_e04502 {
-    border-radius: 4px;
-    background-image: linear-gradient(45deg,var(--guild-boosting-blue),var(--guild-boosting-purple));
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(45deg,var(--guild-boosting-blue) 0,var(--guild-boosting-purple) 100%);
     background-position: 50%;
-    width: 100%;
-    height: 180px
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    height: 180px;
+    width: 100%
 }
 
 .avatarUploaderInnerSquareDisabled_e04502 {
@@ -729,8 +724,8 @@
 }
 
 .avatarUploadIcon_e04502 {
-    top: 16px;
-    right: 16px
+    right: 16px;
+    top: 16px
 }
 
 .avatarUploaderDisabled_e04502 {
@@ -746,16 +741,16 @@
 }
 
 .avatarUploadIcon_e04502.hideDefaultIcon_e04502 {
-    background-image: none;
-    background-color: var(--white-500)
+    background-color: var(--white-500);
+    background-image: none
 }
 
 .container__26abc {
     background-color: var(--background-floating);
-    padding: 8px;
     border-radius: 4px;
     box-shadow: var(--elevation-high);
-    max-height: 300px
+    max-height: 300px;
+    padding: 8px
 }
 
 .user__26abc {
@@ -764,8 +759,8 @@
 }
 
 .user__26abc,.username__26abc {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .username__26abc {
@@ -778,31 +773,31 @@
 }
 
 .blockedNotice__26abc {
-    display: flex;
     align-content: center;
     align-items: center;
+    display: flex;
     margin-bottom: 24px
 }
 
 .blockedButton__26abc {
-    font-size: 12px;
-    margin-left: 4px;
-    font-weight: 600;
     color: var(--text-link);
-    cursor: pointer
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 4px
 }
 
 .icon__26abc {
     background-clip: padding-box;
-    border-radius: 50%;
-    padding: 2px;
     background-color: var(--background-accent);
+    border-radius: 50%;
     color: var(--white-500);
-    width: 12px;
     height: 12px;
+    padding: 2px;
     position: absolute;
     right: -2px;
-    top: 0
+    top: 0;
+    width: 12px
 }
 
 .userInfo__26abc {
@@ -818,8 +813,8 @@
 .doubleInput__6dc4b {
     display: flex;
     flex-direction: row;
-    position: relative;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    position: relative
 }
 
 .doubleInput__6dc4b>div {
@@ -837,12 +832,12 @@
 
 .link__6dc4b {
     align-items: center;
-    justify-content: center;
+    color: var(--interactive-active);
     display: flex;
-    transition: opacity .2s;
     font-size: 16px;
     font-weight: 400;
-    color: var(--interactive-active)
+    justify-content: center;
+    transition: opacity .2s
 }
 
 .link__6dc4b:hover {
@@ -850,13 +845,13 @@
 }
 
 .addIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--brand-500)
+    color: var(--brand-500);
+    margin-right: 8px
 }
 
 .removeIcon__6dc4b {
-    margin-right: 8px;
-    color: var(--status-danger)
+    color: var(--status-danger);
+    margin-right: 8px
 }
 
 .blockedUsersContainer__97cfe {
@@ -870,13 +865,13 @@
 }
 
 .formItem__97cfe {
-    width: 100%;
-    margin-top: 24px
+    margin-top: 24px;
+    width: 100%
 }
 
 .topicFormItem__97cfe {
-    width: 100%;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    width: 100%
 }
 
 .textInput__97cfe {
@@ -890,10 +885,10 @@
 }
 
 .buttonsContainer__97cfe {
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
+    width: 100%
 }
 
 .speakerHint__97cfe {
@@ -901,14 +896,14 @@
 }
 
 .itemIcon__97cfe {
-    flex-shrink: 0;
-    color: var(--interactive-normal)
+    color: var(--interactive-normal);
+    flex-shrink: 0
 }
 
 .label__97cfe {
+    font-weight: 700;
     margin: 24px 0 8px;
-    text-transform: uppercase;
-    font-weight: 700
+    text-transform: uppercase
 }
 
 .warning__97cfe {
@@ -916,9 +911,9 @@
 }
 
 .optionLabel__97cfe {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .optionText__97cfe {
@@ -930,14 +925,14 @@
 }
 
 .notificationContent__97cfe {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .tooltipIcon__97cfe {
-    margin-left: 4px;
-    color: var(--interactive-active)
+    color: var(--interactive-active);
+    margin-left: 4px
 }
 
 .broadcastInfoDescription__97cfe {
@@ -958,10 +953,10 @@
 }
 
 .header__047bc {
-    margin: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+    margin: 24px
 }
 
 .header__047bc,.text__047bc {
@@ -978,8 +973,8 @@
 
 .scroller__67dba {
     max-height: 200px;
-    padding-top: 8px;
-    padding-left: 12px
+    padding-left: 12px;
+    padding-top: 8px
 }
 
 .modal__67dba {
@@ -989,10 +984,10 @@
 
 .closeButton__67dba {
     height: 12px;
-    width: 12px;
     position: absolute;
-    top: 12px;
     right: 28px;
+    top: 12px;
+    width: 12px;
     z-index: 3
 }
 
@@ -1001,9 +996,9 @@
 }
 
 .header__67dba {
-    width: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%
 }
 
 .headerText__67dba {
@@ -1011,17 +1006,17 @@
 }
 
 .headerChannelContainer__67dba {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 4px
 }
 
 .channelIcon__67dba {
+    color: var(--interactive-normal);
+    height: 20px;
     margin-right: 8px;
     margin-top: 4px;
-    height: 20px;
-    width: 20px;
-    color: var(--interactive-normal)
+    width: 20px
 }
 
 .searchBar__67dba {
@@ -1030,10 +1025,10 @@
 }
 
 .hubHeader__67dba {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
+    width: 100%
 }
 
 .hubInviteTitle__67dba {
@@ -1045,41 +1040,40 @@
 }
 
 .inviteRow__67dba {
-    justify-content: space-between;
     align-items: center;
-    display: flex;
-    box-sizing: border-box;
     border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
     margin-right: -10px;
-    padding: 7px 16px 7px 8px;
-    height: 44px
+    padding: 7px 16px 7px 8px
 }
 
 .inviteRowAvatar__67dba {
-    margin-top: 0;
     flex: none;
-    margin-right: 10px
+    margin-right: 10px;
+    margin-top: 0
 }
 
 .inviteRowInfo__67dba {
     align-items: center;
     display: flex;
-    overflow: hidden;
-    margin-right: 4px
+    margin-right: 4px;
+    overflow: hidden
 }
 
 .inviteRowName__67dba {
-    text-overflow: ellipsis;
+    color: var(--interactive-normal);
     overflow: hidden;
-    white-space: nowrap;
-    color: var(--interactive-normal)
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .inviteRowButton__67dba {
-    height: 32px;
-    transition: none 0s ease 0s;
-    transition: initial;
     flex: none;
+    height: 32px;
+    transition: unset;
     width: 72px
 }
 
@@ -1089,8 +1083,8 @@
 }
 
 .inviteRowEmptyState__67dba,.warningContainer__67dba {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .warningIcon__67dba {
@@ -1098,8 +1092,8 @@
 }
 
 .input__67dba {
-    border: none;
-    background-color: transparent
+    background-color: transparent;
+    border: none
 }
 
 .noPadding__67dba {
@@ -1112,10 +1106,10 @@
 
 .content__67dba:before {
     content: "";
-    width: 412px;
     height: 1px;
     margin-left: -6px;
-    transform: translateY(-20px)
+    transform: translateY(-20px);
+    width: 412px
 }
 
 .copyInput__67dba {
@@ -1128,22 +1122,22 @@
 }
 
 .subText__67dba {
-    margin-bottom: 12px;
-    color: var(--text-secondary)
+    color: var(--text-secondary);
+    margin-bottom: 12px
 }
 
 .formText__67dba {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 8px
 }
 
 .toggle__67dba {
-    display: flex;
-    max-width: 100%;
     align-items: flex-start;
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 0
+    margin-bottom: 0;
+    max-width: 100%
 }
 
 .noScroll__67dba {
@@ -1177,9 +1171,9 @@
 
 .welcomeImage__67dba {
     display: block;
-    width: auto;
     height: 148px;
-    margin: 8px auto 16px
+    margin: 8px auto 16px;
+    width: auto
 }
 
 .welcomeHeading__67dba {
@@ -1204,25 +1198,25 @@
 .premiumIcon__67dba {
     color: var(--guild-boosting-pink);
     flex: 0 0 auto;
-    position: relative;
+    height: 24px;
     margin: 0 12px;
+    position: relative;
     top: 1px;
-    width: 16px;
-    height: 24px
+    width: 16px
 }
 
 .acronym__67dba {
-    width: 32px;
-    height: 32px;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-secondary-alt);
-    white-space: nowrap;
-    margin-top: 0;
+    border-radius: 16px;
+    display: flex;
     flex: none;
+    height: 32px;
+    justify-content: center;
     margin-right: 10px;
-    border-radius: 16px
+    margin-top: 0;
+    white-space: nowrap;
+    width: 32px
 }
 
 .guestBody__67dba {
@@ -1240,10 +1234,10 @@
 }
 
 .divider__67dba {
-    height: 1px;
-    margin: 16px 0;
     align-self: stretch;
-    background: var(--border-subtle)
+    background: var(--border-subtle);
+    height: 1px;
+    margin: 16px 0
 }
 
 .container_a2844c {
@@ -1251,11 +1245,11 @@
 }
 
 .close_a2844c {
+    color: var(--interactive-normal);
+    cursor: pointer;
     position: absolute;
     right: 4px;
-    top: 4px;
-    color: var(--interactive-normal);
-    cursor: pointer
+    top: 4px
 }
 
 .close_a2844c:hover {
@@ -1263,13 +1257,13 @@
 }
 
 .iconContainer_a2844c {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
+    display: flex;
+    flex-direction: column;
     height: 64px;
+    justify-content: center;
     width: 64px
 }
 
@@ -1298,16 +1292,16 @@
 }
 
 .cannon_a2844c {
+    height: 100%;
     position: absolute;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .inline__99afd {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
 }
 
 .footer__99afd {
@@ -1324,10 +1318,10 @@
 }
 
 .cannon__99afd {
+    height: 100%;
     position: absolute;
     width: 100%;
-    height: 100%;
     z-index: 0
 }
 
-/*# sourceMappingURL=5b0f04dabdde1420.css.map*/
+/*# sourceMappingURL=00114fa70a8f8cbd.css.map*/

@@ -1,57 +1,57 @@
 /**
   Module ID: 61007
-  Original File Name: 9efe6fe974933e14
+  Original File Name: debccaa8bc327898
 **/
 .header__9f397 {
     padding: 24px 16px 0
 }
 
 .channelPrompt__9f397 {
-    padding: 16px;
-    margin-top: 8px;
+    flex-grow: 0;
     margin-bottom: 16px;
-    flex-grow: 0
+    margin-top: 8px;
+    padding: 16px
 }
 
 .closeButton__9f397 {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .guildName__9f397 {
-    margin-top: 8px;
     font-size: 14px;
-    line-height: 18px
+    line-height: 18px;
+    margin-top: 8px
 }
 
 .title__9f397 {
     font-size: 24px;
-    line-height: 30px;
-    font-weight: 700
+    font-weight: 700;
+    line-height: 30px
 }
 
 .subtitle__9f397 {
-    margin-top: 8px;
     font-size: 16px;
-    line-height: 20px
+    line-height: 20px;
+    margin-top: 8px
 }
 
 .skipButton__9f397 {
-    margin-right: 16px;
-    color: var(--text-primary)
+    color: var(--text-primary);
+    margin-right: 16px
 }
 
 .container_eb2cd2 {
-    border-radius: 8px;
-    border: 1px solid var(--background-modifier-accent);
-    background-color: var(--background-primary);
-    margin-bottom: 8px;
-    display: flex;
     align-items: center;
+    background-color: var(--background-primary);
+    border: 1px solid var(--background-modifier-accent);
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    padding: 0
+    display: flex;
+    margin-bottom: 8px;
+    padding: 0;
+    width: 100%
 }
 
 .container_eb2cd2:hover {
@@ -67,7 +67,6 @@
 }
 
 .icon_eb2cd2 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     margin: 8px 8px 8px 16px
 }
@@ -91,19 +90,19 @@
 }
 
 :where(.visual-refresh) .container_eb2cd2 {
-    border: 1px solid var(--border-subtle);
-    background-color: var(--background-mod-faint)
+    background-color: var(--background-mod-faint);
+    border: 1px solid var(--border-subtle)
 }
 
 .header__78f69 {
-    padding: 24px 16px 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 16px 0
 }
 
 .closeButton__78f69 {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .title__78f69 {
@@ -124,19 +123,18 @@
 }
 
 .backButton__78f69 {
+    color: var(--text-normal);
     height: 38px;
-    margin-right: auto;
-    color: var(--text-normal)
+    margin-right: auto
 }
 
 .skip__78f69 {
-    text-align: center;
+    margin-bottom: 16px;
     margin-top: 18px;
-    margin-bottom: 16px
+    text-align: center
 }
 
 .iconContainer__98cf7 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1));
     height: 80px;
     position: relative;
@@ -151,14 +149,14 @@
 }
 
 .header_b917ac {
-    padding: 24px 24px 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 24px 0
 }
 
 .closeButton_b917ac {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .visual-refresh .closeButton_b917ac {
@@ -166,8 +164,8 @@
 }
 
 .title_b917ac {
-    text-align: center;
-    font-weight: 700
+    font-weight: 700;
+    text-align: center
 }
 
 .backButton_b917ac {
@@ -180,15 +178,15 @@
 }
 
 .createGuild_b917ac {
-    margin: 16px 0;
-    flex-grow: 0
+    flex-grow: 0;
+    margin: 16px 0
 }
 
 .uploadIcon_b917ac {
-    padding-top: 4px;
+    color: var(--interactive-normal);
     display: flex;
     justify-content: center;
-    color: var(--interactive-normal)
+    padding-top: 4px
 }
 
 .nameInput_b917ac {
@@ -217,22 +215,22 @@
 }
 
 .header_c04f35 {
-    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 16px 0
 }
 
 .closeButton_c04f35 {
-    z-index: 1000;
     position: absolute;
+    right: 12px;
     top: 12px;
-    right: 12px
+    z-index: 1000
 }
 
 .templatesList_c04f35 {
+    height: 330px;
     margin-top: 24px;
-    padding: 0 8px 8px 16px;
-    height: 330px
+    padding: 0 8px 8px 16px
 }
 
 .title_c04f35 {
@@ -248,14 +246,14 @@
 }
 
 .optionHeader_c04f35 {
-    margin-top: 16px;
     margin-bottom: 8px;
+    margin-top: 16px;
     text-transform: uppercase
 }
 
 .footer_c04f35 {
-    flex-direction: column;
-    align-items: center
+    align-items: center;
+    flex-direction: column
 }
 
 .footerTitle_c04f35 {
@@ -278,12 +276,12 @@
     right: calc(var(--modal-horizontal-padding) - var(--space-8))
 }
 
-@media (max-width: 485px) {
+@media (max-width:485px) {
     .footer_c04f35 {
-        position: fixed;
         bottom: 0;
-        width: 100%;
-        box-sizing: border-box
+        box-sizing: border-box;
+        position: fixed;
+        width: 100%
     }
 }
 
@@ -300,8 +298,8 @@
 
 .closeButton__991a0 {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .inputForm__991a0 {
@@ -331,9 +329,9 @@ html:not(.visual-refresh) .inputInner__991a0 {
 }
 
 .sampleLink__991a0 {
+    color: var(--header-primary);
     font-size: 14px;
-    line-height: 18px;
-    color: var(--header-primary)
+    line-height: 18px
 }
 
 .footer__991a0 {
@@ -346,12 +344,12 @@ html:not(.visual-refresh) .inputInner__991a0 {
 }
 
 .rowContainer__991a0 {
-    border-radius: 8px;
-    background-color: var(--background-secondary);
-    margin-bottom: 16px;
-    display: flex;
     align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 8px;
     cursor: pointer;
+    display: flex;
+    margin-bottom: 16px;
     padding: 12px;
     text-align: left
 }
@@ -383,10 +381,10 @@ html:not(.visual-refresh) .inputInner__991a0 {
 }
 
 .container__024d4 {
-    width: 440px;
-    max-height: 580px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    max-height: 580px;
+    width: 440px
 }
 
 @media (max-width:440px) {
@@ -399,4 +397,4 @@ html:not(.visual-refresh) .inputInner__991a0 {
     width: var(--modal-width-small)
 }
 
-/*# sourceMappingURL=9efe6fe974933e14.css.map*/
+/*# sourceMappingURL=debccaa8bc327898.css.map*/

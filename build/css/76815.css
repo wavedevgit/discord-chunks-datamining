@@ -1,14 +1,14 @@
 /**
   Module ID: 76815
-  Original File Name: 8e339caed7fd4c4e
+  Original File Name: c299af8f77556cff
 **/
 .body__7ce16 {
     padding-top: var(--spacing-16)
 }
 
 .wumpus__7ce16 {
-    margin: -95px auto 0;
-    height: 187px
+    height: 187px;
+    margin: -95px auto 0
 }
 
 .textContainer__7ce16 {
@@ -33,11 +33,11 @@
 }
 
 .ringContainer__7ce16 {
+    height: 210px;
+    overflow: hidden;
     position: absolute;
     top: -211px;
-    overflow: hidden;
-    width: 440px;
-    height: 210px
+    width: 440px
 }
 
 .full-motion .iconButton__7ce16 {
@@ -49,20 +49,20 @@
 }
 
 .iconButton__7ce16 {
-    position: absolute;
-    top: var(--spacing-16);
-    right: var(--spacing-16);
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-tertiary);
+    border-radius: var(--radius-round);
+    display: flex;
+    justify-content: center;
     padding: var(--spacing-8);
-    border-radius: var(--radius-round)
+    position: absolute;
+    right: var(--spacing-16);
+    top: var(--spacing-16)
 }
 
 .iconButton__7ce16:hover {
-    cursor: pointer;
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    cursor: pointer
 }
 
 .iconButton__7ce16:hover .icon__7ce16 {
@@ -78,8 +78,8 @@
 }
 
 html:not(.visual-refresh) .body__7ce16 {
-    padding-top: var(--spacing-16);
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--spacing-16);
+    padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=8e339caed7fd4c4e.css.map*/
+/*# sourceMappingURL=c299af8f77556cff.css.map*/

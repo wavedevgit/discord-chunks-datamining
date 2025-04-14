@@ -1,12 +1,12 @@
 /**
   Module ID: 49027
-  Original File Name: 630c107928910abd
+  Original File Name: 9ee7a5d80cc1cff5
 **/
 .subscription_d970da {
-    display: flex;
     align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    display: flex;
     padding: 16px
 }
 
@@ -15,19 +15,19 @@
 }
 
 .tierInfo_d970da {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .tierPill_d970da {
-    display: inline-flex;
     align-items: center;
     align-self: flex-start;
-    padding: 4px 8px 4px 4px;
+    background-color: var(--background-secondary-alt);
     border-radius: 11px;
+    display: inline-flex;
     font-size: 12px;
     line-height: 14px;
-    background-color: var(--background-secondary-alt)
+    padding: 4px 8px 4px 4px
 }
 
 .tierPill_d970da,.tierPillStar_d970da {
@@ -35,9 +35,9 @@
 }
 
 .tierPillStar_d970da {
-    width: 16px;
     height: 16px;
-    margin-right: 5px
+    margin-right: 5px;
+    width: 16px
 }
 
 .guildIcon_d970da {
@@ -45,18 +45,18 @@
 }
 
 .guildName_d970da {
+    color: var(--header-primary);
     flex: 1;
-    margin-bottom: 8px;
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    color: var(--header-primary)
+    margin-bottom: 8px
 }
 
 .levelIcon_d970da {
-    width: 16px;
     height: 16px;
-    margin: 0 4px
+    margin: 0 4px;
+    width: 16px
 }
 
 .levelDownIcon_d970da {
@@ -80,9 +80,9 @@
 }
 
 .content__2cbe8 {
-    padding-bottom: 16px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    padding-bottom: 16px
 }
 
 .guildCard__2cbe8 {
@@ -90,26 +90,26 @@
 }
 
 .image__2cbe8 {
+    align-self: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    align-self: center;
-    margin: 20px 0;
-    flex-shrink: 0
+    flex-shrink: 0;
+    margin: 20px 0
 }
 
 .transferGuildCardHeader__2cbe8 {
-    text-transform: uppercase;
-    margin-top: 16px
+    margin-top: 16px;
+    text-transform: uppercase
 }
 
 .activeTransferGuildCardBorder__2cbe8 {
-    background: linear-gradient(270deg,var(--guild-boosting-purple),var(--guild-boosting-blue));
+    background: linear-gradient(to left,var(--guild-boosting-purple),var(--guild-boosting-blue));
     padding: 2px
 }
 
 .activeTransferGuildCardBorder__2cbe8,.transferFromGuildCard__2cbe8 {
-    margin-top: 8px;
-    border-radius: 8px
+    border-radius: 8px;
+    margin-top: 8px
 }
 
 .transferToGuildCard__2cbe8 {
@@ -121,13 +121,13 @@
 }
 
 .pendingCancellation__2cbe8 {
-    margin-top: 16px;
-    padding: 8px 16px;
+    align-items: center;
     background: var(--info-warning-background);
-    display: flex;
-    border-radius: 4px;
     border: 1px solid var(--info-warning-foreground);
-    align-items: center
+    border-radius: 4px;
+    display: flex;
+    margin-top: 16px;
+    padding: 8px 16px
 }
 
 .pendingCancellationIcon__2cbe8 {
@@ -145,10 +145,10 @@
 }
 
 .modalCloseButton__39466 {
+    opacity: .8;
     position: absolute;
     right: 12px;
-    top: 12px;
-    opacity: .8
+    top: 12px
 }
 
 .modalCloseButton__39466:hover {
@@ -160,10 +160,10 @@
 }
 
 .selectHeaderContainer__39466 {
-    z-index: auto;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start
+    z-index: auto
 }
 
 .selectHeader__39466 {
@@ -175,12 +175,12 @@
 }
 
 .selectGuild__39466 {
-    display: flex;
     align-items: center;
-    padding: 8px 6px;
-    margin: 0 0 0 8px;
+    border-radius: 4px;
     cursor: pointer;
-    border-radius: 4px
+    display: flex;
+    margin: 0 0 0 8px;
+    padding: 8px 6px
 }
 
 .selectGuild__39466:hover {
@@ -213,10 +213,10 @@
 
 .selectGuildPseudoCta__39466 {
     background: var(--brand-500);
+    border-radius: 4px;
     flex: 0 0 auto;
     margin-left: 6px;
-    padding: 6px 16px;
-    border-radius: 4px
+    padding: 6px 16px
 }
 
 .emptyStateWrapper__39466 {
@@ -229,16 +229,15 @@
 }
 
 .emptyStateWrapper__39466 a:hover {
-    -webkit-text-decoration: underline;
     text-decoration: underline
 }
 
 .upsellFooter__5e07c {
+    align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 18px;
     margin-top: 16px;
@@ -247,24 +246,24 @@
 
 .upsellFooterIcon__5e07c {
     flex-shrink: 0;
-    margin-right: 8px;
     height: 24px;
+    margin-right: 8px;
     width: 24px
 }
 
 .reverseTrialUpsellContainer__5e07c {
-    position: relative;
     border-radius: 4px;
-    box-shadow: 0 0 40px 0 rgba(229,85,211,.5)
+    box-shadow: 0 0 40px 0 rgba(229,85,211,.5);
+    position: relative
 }
 
 .unlockIcon__5e07c {
     height: 46px;
-    width: 46px;
+    left: 7px;
     pointer-events: none;
     position: absolute;
-    left: 7px;
-    top: -14px
+    top: -14px;
+    width: 46px
 }
 
 .upsellText__5e07c {
@@ -356,9 +355,9 @@
 }
 
 .confirmationAnimation__945b8 {
-    width: 400px;
     height: 140px;
-    margin-bottom: 32px
+    margin-bottom: 32px;
+    width: 400px
 }
 
 .confirmationText__945b8,.confirmationUpgradedBanner__945b8 {
@@ -382,31 +381,31 @@
 }
 
 .existingSlotNotice__945b8 {
+    align-items: center;
     background-color: var(--background-secondary);
     border-radius: 8px;
     color: var(--text-normal);
     display: flex;
-    align-items: center;
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 16px;
     margin-top: 16px;
-    padding: 8px;
-    margin-bottom: 16px
+    padding: 8px
 }
 
 .existingSlotIcon__945b8 {
     flex-shrink: 0;
-    margin-right: 8px;
     height: 24px;
+    margin-right: 8px;
     width: 24px
 }
 
 .existingSlotTooltipWarningIcon__945b8 {
+    cursor: pointer;
     height: 16px;
-    width: 14px;
-    vertical-align: text-bottom;
     margin-left: 6px;
-    cursor: pointer
+    vertical-align: text-bottom;
+    width: 14px
 }
 
 .loadingSpinner__945b8 {
@@ -436,25 +435,25 @@
 }
 
 .confirmImage__0f8ce {
-    width: 264px;
-    height: 134px
+    height: 134px;
+    width: 264px
 }
 
 .transferConfirmImage__0f8ce {
-    width: 216px;
-    height: 128px
+    height: 128px;
+    width: 216px
 }
 
 .successBody__0f8ce {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 20px
 }
 
 .successAnimation__0f8ce {
-    width: 300px;
-    height: 200px
+    height: 200px;
+    width: 300px
 }
 
 .quantitySelectorBody__0f8ce {
@@ -477,10 +476,10 @@
 }
 
 .modalCloseButton__0f8ce {
+    opacity: .8;
     position: absolute;
     right: 12px;
-    top: 12px;
-    opacity: .8
+    top: 12px
 }
 
 .modalCloseButton__0f8ce:hover {
@@ -508,4 +507,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=630c107928910abd.css.map*/
+/*# sourceMappingURL=9ee7a5d80cc1cff5.css.map*/

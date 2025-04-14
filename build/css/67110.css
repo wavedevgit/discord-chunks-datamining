@@ -1,6 +1,6 @@
 /**
   Module ID: 67110
-  Original File Name: d67ec2478985ef53
+  Original File Name: 870ee4c4cf64e352
 **/
 .activeWrapper__452c3,.wrapper__452c3 {
     height: 100%;
@@ -16,54 +16,54 @@
 }
 
 .videoWrapper__452c3 {
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
+    height: 100%;
     left: 50%;
-    z-index: 200;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
     width: auto;
-    height: 100%
+    z-index: 200
 }
 
 @media (min-aspect-ratio:45/32) {
     .videoWrapper__452c3 {
-        width: 100%;
-        height: auto
+        height: auto;
+        width: 100%
     }
 }
 
 .videoWrapperForHelper__452c3 {
-    z-index: 200;
+    left: 0;
     top: 0;
-    left: 0
+    z-index: 200
 }
 
 .gadientHighlight__452c3,.videoWrapperForHelper__452c3 {
-    position: absolute;
+    height: 100%;
     pointer-events: none;
-    width: 100%;
-    height: 100%
+    position: absolute;
+    width: 100%
 }
 
 .gadientHighlight__452c3 {
-    background-image: linear-gradient(90deg,var(--premium-tier-2-purple-for-gradients),var(--premium-tier-2-purple-for-gradients-2) 50%,var(--premium-tier-2-pink-for-gradients))
+    background-image: linear-gradient(90deg,var(--premium-tier-2-purple-for-gradients) 0,var(--premium-tier-2-purple-for-gradients-2) 50%,var(--premium-tier-2-pink-for-gradients) 100%)
 }
 
 .swipeWrapper__452c3 {
-    width: 100%;
-    pointer-events: none
+    pointer-events: none;
+    width: 100%
 }
 
 .swipe__452c3,.swipeWrapper__452c3 {
-    position: absolute;
-    height: 100%
+    height: 100%;
+    position: absolute
 }
 
 .swipe__452c3 {
     opacity: .1;
-    width: auto;
     right: 0;
-    top: 0
+    top: 0;
+    width: auto
 }
 
-/*# sourceMappingURL=d67ec2478985ef53.css.map*/
+/*# sourceMappingURL=870ee4c4cf64e352.css.map*/

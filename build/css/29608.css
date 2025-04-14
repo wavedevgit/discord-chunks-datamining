@@ -1,6 +1,6 @@
 /**
   Module ID: 29608
-  Original File Name: 60c32b84ed37e55b
+  Original File Name: a4b6ecdd55c5810e
 **/
 .section__999b5 {
     margin-top: 16px
@@ -16,17 +16,17 @@
 }
 
 .modalHeaderTitle_d295eb {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%;
+    display: flex;
+    height: 24px;
+    justify-content: space-between;
     margin-bottom: 16px;
-    height: 24px
+    width: 100%
 }
 
 .modalContent_d295eb {
-    padding: 16px;
-    height: 340px
+    height: 340px;
+    padding: 16px
 }
 
 .guildSelector_d295eb {
@@ -38,9 +38,9 @@
 }
 
 .channelRow_d295eb {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: 100%
 }
 
@@ -49,9 +49,9 @@
 }
 
 .channelName_d295eb {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 8px
 }
 
@@ -68,14 +68,14 @@
 }
 
 .modalFooter_d295eb {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
 }
 
 .goBackButton_d295eb {
     color: var(--interactive-normal)
 }
 
-/*# sourceMappingURL=60c32b84ed37e55b.css.map*/
+/*# sourceMappingURL=a4b6ecdd55c5810e.css.map*/

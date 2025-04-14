@@ -1,109 +1,107 @@
 /**
   Module ID: 10125
-  Original File Name: 9dd5784a37dcb4b8
+  Original File Name: d0c0e6f1d76a51bf
 **/
 .page__4c945 {
+    align-items: center;
+    background: #0c1522;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    justify-items: center;
-    align-items: center;
     height: 100%;
-    width: 100%;
-    background: #0c1522;
-    overflow: hidden
+    justify-items: center;
+    overflow: hidden;
+    width: 100%
 }
 
 .bgImg__4c945 {
-    grid-row: 1/4;
+    bottom: -40%;
     grid-column: 1;
-    width: 100%;
+    grid-row: 1/4;
     height: 50%;
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: 73% 50%;
     object-position: 73% 50%;
     position: relative;
-    bottom: -40%
+    width: 100%
 }
 
 .logoContainer__4c945 {
-    grid-row: 1;
-    grid-column: 1;
+    align-items: center;
     display: flex;
     flex-flow: column nowrap;
-    align-items: center
+    grid-column: 1;
+    grid-row: 1
 }
 
 .card__4c945 {
-    grid-row: 2;
-    grid-column: 1;
-    border-radius: 8px;
     background: var(--background-primary);
-    width: calc(100vw - 72px);
-    max-width: 480px;
+    border-radius: 8px;
     box-shadow: 0 8px 16px rgba(0,0,0,.2);
+    grid-column: 1;
+    grid-row: 2;
+    margin: 8px;
+    max-width: 480px;
     padding: 20px;
-    margin: 8px
+    width: calc(100vw - 72px)
 }
 
 @media (max-height:smallMobileBreakpoint) {
     .card__4c945 {
-        width: calc(100vw - 64px);
+        margin: 0;
         padding: 16px;
-        margin: 0
+        width: calc(100vw - 64px)
     }
 }
 
 .gameTile__4c945 {
-    width: 75px;
-    height: 75px;
     background: var(--background-secondary);
     border-radius: 8px;
-    margin: auto auto 16px
+    height: 75px;
+    margin: auto auto 16px;
+    width: 75px
 }
 
 .gameTileImg__4c945 {
+    border-radius: 8px;
     display: block;
-    max-width: 75px;
-    border-radius: 8px
+    max-width: 75px
 }
 
 .headingText__4c945 {
-    text-align: center;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    text-align: center
 }
 
 .bodyText__4c945 {
-    text-align: center;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    text-align: center
 }
 
 .mobileWebImage__4c945 {
+    height: 205px;
     margin-bottom: 16px;
-    width: 205px;
-    height: 205px
+    width: 205px
 }
 
 .container__4c945 {
-    position: relative;
-    width: 100vw;
-    min-height: 100vh;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center
+    min-height: 100vh;
+    position: relative;
+    width: 100vw
 }
 
 .backgroundArtwork__4c945 {
+    height: 100%;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .appOpenedTitle__4c945 {
     margin-bottom: 12px
 }
 
-/*# sourceMappingURL=9dd5784a37dcb4b8.css.map*/
+/*# sourceMappingURL=d0c0e6f1d76a51bf.css.map*/

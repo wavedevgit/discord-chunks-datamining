@@ -1,21 +1,21 @@
 /**
   Module ID: 4419
-  Original File Name: ee45ddbab2db42aa
+  Original File Name: 396b2fddd8f6fced
 **/
 .modal__4b2e7 {
     width: 408px
 }
 
 .container__4b2e7 {
-    max-height: 720px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    max-height: 720px
 }
 
 .header__4b2e7 {
-    padding: 24px 16px 0;
     flex-grow: 0;
-    overflow: hidden
+    overflow: hidden;
+    padding: 24px 16px 0
 }
 
 .stepHeader__4b2e7 {
@@ -28,10 +28,10 @@
 }
 
 .closeButton__4b2e7 {
-    z-index: 1000;
     position: absolute;
+    right: 12px;
     top: 12px;
-    right: 12px
+    z-index: 1000
 }
 
 .illustration__4b2e7 {
@@ -51,9 +51,9 @@
 }
 
 .footer__4b2e7 {
+    align-items: center;
     background-color: var(--background-tertiary);
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .footerButton__4b2e7 {
@@ -66,25 +66,25 @@
 }
 
 .valueProps__4b2e7 {
-    margin-top: 24px;
     background-color: var(--background-secondary);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    margin-top: 24px
 }
 
 .valueProp__4b2e7 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: left;
-    padding: 12px
+    padding: 12px;
+    text-align: left
 }
 
 .valuePropIconContainer__4b2e7 {
+    color: var(--interactive-normal);
     display: flex;
     justify-content: center;
     margin-right: 12px;
-    padding: 4px;
-    color: var(--interactive-normal)
+    padding: 4px
 }
 
 .valuePropText__4b2e7 {
@@ -93,26 +93,26 @@
 }
 
 .valuePropDivider__4b2e7 {
-    height: 1px;
+    background-color: var(--background-modifier-accent);
     flex: 1;
+    height: 1px;
     margin-left: 56px;
-    margin-right: 12px;
-    background-color: var(--background-modifier-accent)
+    margin-right: 12px
 }
 
 .slideContainer__4b2e7 {
     display: flex;
     flex-direction: column;
-    max-height: max(200px, min(calc(100vh - 80px), 720px))
+    max-height: clamp(200px,calc(100vh - 80px),720px)
 }
 
 .getCrunchyollApp__399a4 {
-    display: flex;
+    align-items: center;
     background: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
-    padding: 16px;
+    display: flex;
     margin-top: 24px;
-    align-items: center
+    padding: 16px
 }
 
 .getCrunchyollAppBody__399a4 {
@@ -128,18 +128,18 @@
 }
 
 .crunchyollLogoBox__399a4 {
-    display: flex;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    border-radius: var(--radius-xs);
     align-items: center;
-    justify-content: center
+    border-radius: var(--radius-xs);
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    margin-right: 10px;
+    width: 24px
 }
 
 .crunchyollLogoBox__399a4 img {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
-/*# sourceMappingURL=ee45ddbab2db42aa.css.map*/
+/*# sourceMappingURL=396b2fddd8f6fced.css.map*/

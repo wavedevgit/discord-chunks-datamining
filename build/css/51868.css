@@ -1,6 +1,6 @@
 /**
   Module ID: 51868
-  Original File Name: 8148737fbe33ee94
+  Original File Name: c13b9f9d33209745
 **/
 .title_feb59c {
     margin-bottom: 8px
@@ -8,14 +8,14 @@
 
 h1.title_feb59c {
     font-size: 20px;
-    line-height: 1.2;
-    font-weight: 500
+    font-weight: 500;
+    line-height: 1.2
 }
 
 h2.title_feb59c {
     font-size: 16px;
-    line-height: 1.25;
-    font-weight: 600
+    font-weight: 600;
+    line-height: 1.25
 }
 
 h3.title_feb59c {
@@ -50,15 +50,15 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .hljs {
+    border-radius: 4px;
     display: block;
     overflow-x: auto;
     padding: .5em;
-    border-radius: 4px;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
-    color: var(--text-normal);
-    background: var(--background-secondary)
+    background: var(--background-secondary);
+    color: var(--text-normal)
 }
 
 .theme-dark .hljs-doctag,.theme-dark .hljs-keyword,.theme-dark .hljs-meta .hljs-keyword,.theme-dark .hljs-template-tag,.theme-dark .hljs-template-variable,.theme-dark .hljs-type,.theme-dark .hljs-variable.language_ {
@@ -113,13 +113,13 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .theme-dark .hljs-addition {
-    color: #aff5b4;
-    background-color: #033a16
+    background-color: #033a16;
+    color: #aff5b4
 }
 
 .theme-dark .hljs-deletion {
-    color: #ffdcd7;
-    background-color: #67060c
+    background-color: #67060c;
+    color: #ffdcd7
 }
 
 .theme-light .hljs-doctag,.theme-light .hljs-keyword,.theme-light .hljs-meta .hljs-keyword,.theme-light .hljs-template-tag,.theme-light .hljs-template-variable,.theme-light .hljs-type,.theme-light .hljs-variable.language_ {
@@ -174,20 +174,20 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .theme-light .hljs-addition {
-    color: #22863a;
-    background-color: #f0fff4
+    background-color: #f0fff4;
+    color: #22863a
 }
 
 .theme-light .hljs-deletion {
-    color: #b31d28;
-    background-color: #ffeef0
+    background-color: #ffeef0;
+    color: #b31d28
 }
 
 .visual-refresh .hljs {
+    border-radius: 4px;
     display: block;
     overflow-x: auto;
     padding: .5em;
-    border-radius: 4px;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
     text-size-adjust: none;
@@ -246,13 +246,13 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .visual-refresh .hljs-addition {
-    color: var(--text-code-addition);
-    background-color: var(--background-code-addition)
+    background-color: var(--background-code-addition);
+    color: var(--text-code-addition)
 }
 
 .visual-refresh .hljs-deletion {
-    color: var(--text-code-deletion);
-    background-color: var(--background-code-deletion)
+    background-color: var(--background-code-deletion);
+    color: var(--text-code-deletion)
 }
 
 .markdown_d285a6 {
@@ -313,9 +313,9 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 td,.markdown_d285a6 th {
-    padding: 8px;
     border-left: 1px solid transparent;
     border-right: 1px solid transparent;
+    padding: 8px;
     text-align: left
 }
 
@@ -328,9 +328,9 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 .blockquote_d285a6 {
+    border-left: 4px solid transparent;
     display: block;
-    padding-left: 8px;
-    border-left: 4px solid transparent
+    padding-left: 8px
 }
 
 .markdown_d285a6 .blockquote_d285a6 p {
@@ -350,9 +350,9 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .theme-dark .markdown_d285a6 th {
-    color: var(--white-500);
     background-color: var(--primary-700);
-    border-color: var(--primary-500)
+    border-color: var(--primary-500);
+    color: var(--white-500)
 }
 
 .theme-dark .markdown_d285a6 td {
@@ -360,8 +360,8 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .theme-dark .markdown_d285a6 tr {
-    color: var(--primary-300);
-    border-color: var(--primary-500)
+    border-color: var(--primary-500);
+    color: var(--primary-300)
 }
 
 .theme-dark .markdown_d285a6 tr:nth-child(2n) {
@@ -390,4 +390,4 @@ h1.title_feb59c,h2.title_feb59c {
     padding-bottom: 30px
 }
 
-/*# sourceMappingURL=8148737fbe33ee94.css.map*/
+/*# sourceMappingURL=c13b9f9d33209745.css.map*/

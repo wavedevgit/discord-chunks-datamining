@@ -1,18 +1,18 @@
 /**
   Module ID: 86465
-  Original File Name: 71143b46875d1e2e
+  Original File Name: 2ec007beaef4b621
 **/
 .fullArt__86d5c {
-    margin: 38px 64px 20px;
     background: url(/assets/1d4665795a82cd30.svg);
-    width: 272px;
-    height: 93px;
     background-position: 50%;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 93px;
+    margin: 38px 64px 20px;
+    width: 272px
 }
 
 .header__86d5c {
     text-transform: uppercase
 }
 
-/*# sourceMappingURL=71143b46875d1e2e.css.map*/
+/*# sourceMappingURL=2ec007beaef4b621.css.map*/

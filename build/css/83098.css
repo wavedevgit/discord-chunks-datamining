@@ -1,6 +1,6 @@
 /**
   Module ID: 83098
-  Original File Name: 706bbd77765cdbaf
+  Original File Name: 028ee2b1ac4770b1
 **/
 .modalRoot__85e39 {
     background-color: var(--background-secondary);
@@ -9,18 +9,18 @@
 }
 
 .header__85e39 {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     gap: 12px;
     padding-bottom: 8px
 }
 
 .titleLine__85e39 {
-    flex: 1;
+    align-items: start;
     display: flex;
-    justify-content: space-between;
-    align-items: start
+    flex: 1;
+    justify-content: space-between
 }
 
 .title__85e39 {
@@ -34,9 +34,9 @@
 }
 
 .message__85e39 {
-    overflow: hidden;
-    margin-top: 8px;
     margin-bottom: 8px;
+    margin-top: 8px;
+    overflow: hidden;
     white-space: pre-line
 }
 
@@ -46,8 +46,8 @@
 }
 
 .modalContent__85e39 {
-    padding: 16px 0;
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    padding: 16px 0
 }
 
 .searchBar__85e39 {
@@ -55,10 +55,10 @@
 }
 
 .footer__85e39 {
+    background-color: var(--background-secondary-alt);
     display: flex;
     flex-direction: column;
-    padding: 0;
-    background-color: var(--background-secondary-alt)
+    padding: 0
 }
 
 .copySendBar__85e39 {
@@ -68,8 +68,8 @@
 }
 
 .copyButton__85e39,.copySendBar__85e39 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .copyButton__85e39 {
@@ -77,16 +77,16 @@
 }
 
 .destinationRow__85e39 {
-    display: flex;
-    min-height: 48px;
-    flex-direction: row;
     align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    padding: 0 8px;
     margin-left: 16px;
     margin-right: 8px;
-    border-radius: 4px;
-    cursor: pointer
+    min-height: 48px;
+    padding: 0 8px
 }
 
 .destinationRow__85e39.disabled__85e39 {
@@ -98,9 +98,9 @@
 }
 
 .identity__85e39 {
-    flex-shrink: 1;
-    flex-direction: row;
     align-items: center;
+    flex-direction: row;
+    flex-shrink: 1;
     gap: 12px
 }
 
@@ -123,14 +123,14 @@
 }
 
 .threadSubLabel__85e39 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .subLabelIcon__85e39 {
-    width: 12px;
     height: 12px;
-    margin-right: 2px
+    margin-right: 2px;
+    width: 12px
 }
 
 .subLabelSeparator__85e39 {
@@ -138,7 +138,7 @@
 }
 
 .disabled__85e39 .iconWrapper__85e39 {
-    opacity: 0.01
+    opacity: 50%
 }
 
 .disabled__85e39 .label__85e39 {
@@ -163,11 +163,11 @@
 }
 
 .noResults__85e39 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 16px;
+    justify-content: center;
     margin: 0 32px;
     text-align: center
 }
@@ -183,22 +183,22 @@
 }
 
 .sendWithMessage__85e39 {
-    max-height: 44px;
     align-self: flex-end;
+    border-radius: 8px;
+    max-height: 44px;
     min-width: 0;
-    padding: 2px 16px;
-    border-radius: 8px
+    padding: 2px 16px
 }
 
 .quote__85e39,.sendWithMessage__85e39 {
-    height: 100%;
-    flex-shrink: 0
+    flex-shrink: 0;
+    height: 100%
 }
 
 .quote__85e39 {
-    width: 4px;
     background-color: var(--border-subtle);
-    border-radius: 2px
+    border-radius: 2px;
+    width: 4px
 }
 
-/*# sourceMappingURL=706bbd77765cdbaf.css.map*/
+/*# sourceMappingURL=028ee2b1ac4770b1.css.map*/

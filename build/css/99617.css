@@ -1,6 +1,6 @@
 /**
   Module ID: 99617
-  Original File Name: b967fe7b272683e9
+  Original File Name: 64346d9ccf68c774
 **/
 .contentPadding__1db97 {
     padding-left: 16px;
@@ -12,13 +12,13 @@
 }
 
 .subtitle__1db97 {
-    padding-top: 8px;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    padding-top: 8px
 }
 
 .searchBar__1db97 {
-    margin-right: 16px;
-    margin-left: 16px
+    margin-left: 16px;
+    margin-right: 16px
 }
 
 .friendsList__1db97 {
@@ -31,35 +31,35 @@
 }
 
 .userRow__1db97 {
+    align-items: center;
     display: flex;
     height: 40px;
-    align-items: center;
-    padding-top: 6px;
+    overflow: hidden;
     padding-bottom: 6px;
-    white-space: nowrap;
+    padding-top: 6px;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .username__1db97 {
-    padding-left: 12px;
-    flex: 1 1 auto
+    flex: 1 1 auto;
+    padding-left: 12px
 }
 
 .radioIcon__1db97 {
     color: var(--interactive-normal);
-    padding-right: 8px;
-    padding-left: 8px
+    padding-left: 8px;
+    padding-right: 8px
 }
 
 .channelRow__1db97 {
-    display: flex;
     align-items: center;
     background: var(--background-secondary);
-    margin-bottom: 10px;
-    height: 46px;
     border-radius: 3px;
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    height: 46px;
+    margin-bottom: 10px
 }
 
 .icon__1db97 {
@@ -68,9 +68,9 @@
 }
 
 .divider__1db97 {
-    width: 100%;
+    background: var(--background-modifier-accent);
     height: 1px;
-    background: var(--background-modifier-accent)
+    width: 100%
 }
 
 .bottomDivider__1db97,.topDivider__1db97 {
@@ -79,10 +79,10 @@
 }
 
 .emptyStateContainer__1db97 {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    height: 200px
+    display: flex;
+    height: 200px;
+    justify-content: center
 }
 
-/*# sourceMappingURL=b967fe7b272683e9.css.map*/
+/*# sourceMappingURL=64346d9ccf68c774.css.map*/

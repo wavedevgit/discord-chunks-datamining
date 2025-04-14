@@ -1,22 +1,22 @@
 /**
   Module ID: 8246
-  Original File Name: e7991096ec7aba6c
+  Original File Name: 75941bdf9e158e48
 **/
 .closeButton_f21a24 {
     position: absolute;
-    top: 8px;
-    right: 8px
+    right: 8px;
+    top: 8px
 }
 
 .content_f21a24 {
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    margin-top: 16px
 }
 
 .visual-refresh .content_f21a24 {
     margin-bottom: 0
 }
 
-/*# sourceMappingURL=e7991096ec7aba6c.css.map*/
+/*# sourceMappingURL=75941bdf9e158e48.css.map*/

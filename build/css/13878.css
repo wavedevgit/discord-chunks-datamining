@@ -1,6 +1,6 @@
 /**
   Module ID: 13878
-  Original File Name: 2e5382d121844ccd
+  Original File Name: 97f2a719c87c46a2
 **/
 .container_f08fc1 {
     border-radius: 8px;
@@ -15,16 +15,16 @@
 }
 
 .content_f08fc1,.iconBackground_f08fc1 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconBackground_f08fc1 {
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
     background-color: var(--background-secondary);
-    justify-content: center
+    border-radius: 50%;
+    height: 64px;
+    justify-content: center;
+    width: 64px
 }
 
 .icon_f08fc1 {
@@ -32,20 +32,20 @@
 }
 
 .header_f08fc1 {
-    text-align: center;
+    margin-bottom: 4px;
     margin-top: 24px;
-    margin-bottom: 4px
+    text-align: center
 }
 
 .description_f08fc1 {
-    text-align: center;
+    flex-wrap: wrap;
     margin-bottom: 24px;
-    flex-wrap: wrap
+    text-align: center
 }
 
 .channel_f08fc1,.description_f08fc1 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -58,8 +58,8 @@
 }
 
 .channelName_f08fc1 {
-    text-overflow: ellipsis;
     overflow: hidden;
+    text-overflow: ellipsis;
     white-space: nowrap
 }
 
@@ -67,4 +67,4 @@
     margin-bottom: 8px
 }
 
-/*# sourceMappingURL=2e5382d121844ccd.css.map*/
+/*# sourceMappingURL=97f2a719c87c46a2.css.map*/

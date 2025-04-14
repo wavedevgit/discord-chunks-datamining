@@ -1,6 +1,6 @@
 /**
   Module ID: 4530
-  Original File Name: 6ba791a0c30f500b
+  Original File Name: 8f6e17873609bf18
 **/
 .modalRoot__4a43b {
     background-color: var(--background-secondary);
@@ -15,14 +15,14 @@
 }
 
 .headerTitle__4a43b {
-    width: 100%;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    width: 100%
 }
 
 .modalContent__4a43b {
-    padding: 16px 0;
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    padding: 16px 0
 }
 
 .searchBar__4a43b {
@@ -30,8 +30,8 @@
 }
 
 .rowDivider__4a43b {
-    height: 2px;
-    background-color: var(--background-primary)
+    background-color: var(--background-primary);
+    height: 2px
 }
 
 .rowContainer__4a43b,.rowDivider__4a43b {
@@ -40,12 +40,12 @@
 }
 
 .rowContainer__4a43b {
-    padding: 8px 16px 8px 0;
+    align-items: center;
+    background-color: var(--background-secondary);
+    cursor: pointer;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    background-color: var(--background-secondary)
+    padding: 8px 16px 8px 0
 }
 
 .rowContainer__4a43b.disabled__4a43b {
@@ -53,8 +53,8 @@
 }
 
 .rowLeft__4a43b {
-    display: flex;
     align-items: center;
+    display: flex;
     flex: 1;
     min-width: 0
 }
@@ -65,18 +65,18 @@
 }
 
 .rowNameContainer__4a43b {
-    flex: 1;
-    min-width: 0;
     display: flex;
+    flex: 1;
     flex-direction: column;
     margin-left: 12px;
-    margin-right: 8px
+    margin-right: 8px;
+    min-width: 0
 }
 
 .rowName__4a43b {
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .rowName__4a43b.disabled__4a43b {
@@ -84,10 +84,10 @@
 }
 
 .rowSubName__4a43b {
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    color: var(--header-secondary);
     overflow: hidden;
-    color: var(--header-secondary)
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .rowSubName__4a43b.disabled__4a43b {
@@ -99,21 +99,21 @@
 }
 
 .footer__4a43b {
-    display: block;
     background-color: transparent;
-    padding: 0;
-    margin: 0
+    display: block;
+    margin: 0;
+    padding: 0
 }
 
 .copySendBar__4a43b {
-    padding: 16px;
+    background-color: var(--background-secondary-alt);
     justify-content: space-between;
-    background-color: var(--background-secondary-alt)
+    padding: 16px
 }
 
 .copyButton__4a43b,.copySendBar__4a43b {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .copyButton__4a43b {
@@ -121,23 +121,23 @@
 }
 
 .acronym__4a43b {
-    width: 40px;
-    height: 40px;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-secondary-alt);
+    border-radius: 20px;
     color: var(--text-normal);
-    white-space: nowrap;
+    display: flex;
     flex: none;
-    border-radius: 20px
+    height: 40px;
+    justify-content: center;
+    white-space: nowrap;
+    width: 40px
 }
 
 .img__4a43b {
-    width: 100%;
     height: auto;
+    max-height: 250px;
     max-width: 400px;
-    max-height: 250px
+    width: 100%
 }
 
-/*# sourceMappingURL=6ba791a0c30f500b.css.map*/
+/*# sourceMappingURL=8f6e17873609bf18.css.map*/

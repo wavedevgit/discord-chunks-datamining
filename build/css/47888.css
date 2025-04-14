@@ -1,6 +1,6 @@
 /**
   Module ID: 47888
-  Original File Name: 1f8da4cf962fc5bb
+  Original File Name: b8349ac0ad38e9f2
 **/
 .container__1ce5d {
     position: relative
@@ -16,9 +16,9 @@
 
 .icon__2894c {
     display: block;
-    width: 20px;
+    flex: 0 0 auto;
     height: 20px;
-    flex: 0 0 auto
+    width: 20px
 }
 
 .iconWithGuildIcon__2894c {
@@ -39,21 +39,21 @@
 }
 
 .acronym__2894c {
-    font-weight: 500;
-    line-height: 1.2em;
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--bg-mod-strong);
-    color: var(--text-normal)
+    color: var(--text-normal);
+    display: flex;
+    font-weight: 500;
+    justify-content: center;
+    line-height: 1.2em;
+    white-space: nowrap
 }
 
 .footer__6be55 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 16px
+    gap: 16px;
+    justify-content: flex-start
 }
 
 .preview__6be55 {
@@ -61,21 +61,21 @@
 }
 
 .guildRow__6be55 {
+    align-items: center;
     display: flex;
-    gap: var(--space-sm);
-    align-items: center
+    gap: var(--space-sm)
 }
 
 .inviteIcon__6be55 {
-    height: 32px;
-    width: 32px;
     background-color: var(--bg-mod-faint);
-    border-radius: 8px
+    border-radius: 8px;
+    height: 32px;
+    width: 32px
 }
 
 .inviteTarget__6be55 {
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 2px;
     overflow: hidden
@@ -86,16 +86,16 @@
 }
 
 .inviteTargetHeading__6be55 {
-    flex: 1;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
     gap: var(--space-xxs);
     overflow: hidden
 }
 
 .inviteTargetContent__6be55 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 1ch
 }
 
@@ -105,15 +105,15 @@
 }
 
 .memberCount__6be55,.onlineCount__6be55 {
+    align-items: center;
     display: flex;
-    gap: 4px;
-    align-items: center
+    gap: 4px
 }
 
 .dot__6be55 {
-    width: 8px;
+    border-radius: 50%;
     height: 8px;
-    border-radius: 50%
+    width: 8px
 }
 
 .memberCount__6be55 .dot__6be55 {
@@ -125,13 +125,13 @@
 }
 
 .settingsButton__6be55 {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
     border-radius: 8px;
-    width: 32px;
-    height: 32px
+    cursor: pointer;
+    display: flex;
+    height: 32px;
+    justify-content: center;
+    width: 32px
 }
 
 .settingsButton__6be55.settingsOpen__6be55,.settingsButton__6be55:hover {
@@ -149,8 +149,8 @@
 }
 
 .advancedOption__6be55 {
-    height: 52px;
-    cursor: pointer
+    cursor: pointer;
+    height: 52px
 }
 
 .advancedOption__6be55:hover {
@@ -168,24 +168,24 @@
 }
 
 .advancedOption__6be55:not(:last-child):after {
+    border-bottom: 1px solid var(--border-subtle);
     content: "";
     display: block;
-    margin: 0 var(--space-sm);
-    border-bottom: 1px solid var(--border-subtle)
+    margin: 0 var(--space-sm)
 }
 
 .advancedOptionInner__6be55 {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 var(--space-sm) 0 var(--space-lg);
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 var(--space-sm) 0 var(--space-lg)
 }
 
 .advancedOptionContent__6be55 {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
@@ -199,9 +199,9 @@
 }
 
 .buttonInner__6be55 {
+    align-items: center;
     display: flex;
-    gap: var(--space-xxs);
-    align-items: center
+    gap: var(--space-xxs)
 }
 
 .wrapper__67dba {
@@ -210,8 +210,8 @@
 
 .scroller__67dba {
     max-height: 200px;
-    padding-top: 8px;
-    padding-left: 12px
+    padding-left: 12px;
+    padding-top: 8px
 }
 
 .modal__67dba {
@@ -221,10 +221,10 @@
 
 .closeButton__67dba {
     height: 12px;
-    width: 12px;
     position: absolute;
-    top: 12px;
     right: 28px;
+    top: 12px;
+    width: 12px;
     z-index: 3
 }
 
@@ -233,9 +233,9 @@
 }
 
 .header__67dba {
-    width: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%
 }
 
 .headerText__67dba {
@@ -243,17 +243,17 @@
 }
 
 .headerChannelContainer__67dba {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 4px
 }
 
 .channelIcon__67dba {
+    color: var(--interactive-normal);
+    height: 20px;
     margin-right: 8px;
     margin-top: 4px;
-    height: 20px;
-    width: 20px;
-    color: var(--interactive-normal)
+    width: 20px
 }
 
 .searchBar__67dba {
@@ -262,10 +262,10 @@
 }
 
 .hubHeader__67dba {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
+    width: 100%
 }
 
 .hubInviteTitle__67dba {
@@ -277,41 +277,40 @@
 }
 
 .inviteRow__67dba {
-    justify-content: space-between;
     align-items: center;
-    display: flex;
-    box-sizing: border-box;
     border-radius: 3px;
+    box-sizing: border-box;
+    display: flex;
+    height: 44px;
+    justify-content: space-between;
     margin-right: -10px;
-    padding: 7px 16px 7px 8px;
-    height: 44px
+    padding: 7px 16px 7px 8px
 }
 
 .inviteRowAvatar__67dba {
-    margin-top: 0;
     flex: none;
-    margin-right: 10px
+    margin-right: 10px;
+    margin-top: 0
 }
 
 .inviteRowInfo__67dba {
     align-items: center;
     display: flex;
-    overflow: hidden;
-    margin-right: 4px
+    margin-right: 4px;
+    overflow: hidden
 }
 
 .inviteRowName__67dba {
-    text-overflow: ellipsis;
+    color: var(--interactive-normal);
     overflow: hidden;
-    white-space: nowrap;
-    color: var(--interactive-normal)
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .inviteRowButton__67dba {
-    height: 32px;
-    transition: none 0s ease 0s;
-    transition: initial;
     flex: none;
+    height: 32px;
+    transition: unset;
     width: 72px
 }
 
@@ -321,8 +320,8 @@
 }
 
 .inviteRowEmptyState__67dba,.warningContainer__67dba {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .warningIcon__67dba {
@@ -330,8 +329,8 @@
 }
 
 .input__67dba {
-    border: none;
-    background-color: transparent
+    background-color: transparent;
+    border: none
 }
 
 .noPadding__67dba {
@@ -344,10 +343,10 @@
 
 .content__67dba:before {
     content: "";
-    width: 412px;
     height: 1px;
     margin-left: -6px;
-    transform: translateY(-20px)
+    transform: translateY(-20px);
+    width: 412px
 }
 
 .copyInput__67dba {
@@ -360,22 +359,22 @@
 }
 
 .subText__67dba {
-    margin-bottom: 12px;
-    color: var(--text-secondary)
+    color: var(--text-secondary);
+    margin-bottom: 12px
 }
 
 .formText__67dba {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 8px
 }
 
 .toggle__67dba {
-    display: flex;
-    max-width: 100%;
     align-items: flex-start;
+    display: flex;
     justify-content: space-between;
-    margin-bottom: 0
+    margin-bottom: 0;
+    max-width: 100%
 }
 
 .noScroll__67dba {
@@ -409,9 +408,9 @@
 
 .welcomeImage__67dba {
     display: block;
-    width: auto;
     height: 148px;
-    margin: 8px auto 16px
+    margin: 8px auto 16px;
+    width: auto
 }
 
 .welcomeHeading__67dba {
@@ -436,25 +435,25 @@
 .premiumIcon__67dba {
     color: var(--guild-boosting-pink);
     flex: 0 0 auto;
-    position: relative;
+    height: 24px;
     margin: 0 12px;
+    position: relative;
     top: 1px;
-    width: 16px;
-    height: 24px
+    width: 16px
 }
 
 .acronym__67dba {
-    width: 32px;
-    height: 32px;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-secondary-alt);
-    white-space: nowrap;
-    margin-top: 0;
+    border-radius: 16px;
+    display: flex;
     flex: none;
+    height: 32px;
+    justify-content: center;
     margin-right: 10px;
-    border-radius: 16px
+    margin-top: 0;
+    white-space: nowrap;
+    width: 32px
 }
 
 .guestBody__67dba {
@@ -472,29 +471,29 @@
 }
 
 .divider__67dba {
-    height: 1px;
-    margin: 16px 0;
     align-self: stretch;
-    background: var(--border-subtle)
+    background: var(--border-subtle);
+    height: 1px;
+    margin: 16px 0
 }
 
 .modal__28554 {
-    width: 480px;
+    height: 75vh;
     max-height: 640px;
-    height: 75vh
+    width: 480px
 }
 
 .header__28554 {
+    align-items: stretch;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
     gap: 16px
 }
 
 .titleLine__28554 {
+    align-items: start;
     flex: 1;
-    justify-content: space-between;
-    align-items: start
+    justify-content: space-between
 }
 
 .title__28554,.titleLine__28554 {
@@ -506,9 +505,9 @@
 }
 
 .body__28554.empty__28554 {
+    align-items: center;
     display: flex;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .recipientList__28554 {
@@ -516,14 +515,14 @@
 }
 
 .recipientRow__28554 {
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
     display: flex;
     gap: var(--space-sm);
-    align-items: center;
-    justify-content: space-between;
     height: var(--custom-recipient-row-height);
-    padding: 0 var(--space-sm);
-    border-radius: 8px;
-    cursor: pointer
+    justify-content: space-between;
+    padding: 0 var(--space-sm)
 }
 
 .recipientRow__28554:hover {
@@ -531,15 +530,15 @@
 }
 
 .recipientAsset__28554 {
-    width: 32px;
-    height: 32px
+    height: 32px;
+    width: 32px
 }
 
 .recipientLabels__28554 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
     gap: 2px;
     overflow: hidden
 }
@@ -557,8 +556,7 @@
 }
 
 .disabled__28554 .recipientRow__28554:hover {
-    background-color: transparent;
-    background-color: initial
+    background-color: unset
 }
 
 .disabled__28554 .recipientAsset__28554 {
@@ -574,9 +572,9 @@
 }
 
 .footer__28554 {
+    border-top: 1px solid var(--border-subtle);
     display: flex;
-    padding: var(--space-xl);
-    border-top: 1px solid var(--border-subtle)
+    padding: var(--space-xl)
 }
 
 .footerContent__28554 {
@@ -608,4 +606,4 @@
     background-color: var(--background-secondary)
 }
 
-/*# sourceMappingURL=1f8da4cf962fc5bb.css.map*/
+/*# sourceMappingURL=b8349ac0ad38e9f2.css.map*/

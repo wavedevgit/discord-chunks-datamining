@@ -1,11 +1,11 @@
 /**
   Module ID: 39143
-  Original File Name: 844b7aea4e4afba5
+  Original File Name: 1895409218de6965
 **/
 .closeButton_eb89ff {
     position: absolute;
-    top: 12px;
-    right: 12px
+    right: 12px;
+    top: 12px
 }
 
 .modalContents_eb89ff {
@@ -13,8 +13,8 @@
 }
 
 .headerText_eb89ff {
-    margin-top: 16px;
-    margin-bottom: 12px
+    margin-bottom: 12px;
+    margin-top: 16px
 }
 
 .formDescription_eb89ff {
@@ -28,9 +28,9 @@
 }
 
 .emojiSectionContainer_eb89ff {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-top: 16px
 }
 
@@ -39,25 +39,25 @@
 }
 
 .emoji_eb89ff {
-    width: var(--custom-create-welcome-channel-modal-emoji-size);
-    height: var(--custom-create-welcome-channel-modal-emoji-size)
+    height: var(--custom-create-welcome-channel-modal-emoji-size);
+    width: var(--custom-create-welcome-channel-modal-emoji-size)
 }
 
 .input_eb89ff {
-    padding-left: var(--custom-create-welcome-channel-modal-input-elements-padding);
-    padding-right: 36px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    padding-left: calc(var(--custom-create-welcome-channel-modal-input-elements-padding));
+    padding-right: 36px
 }
 
 .clearButton_eb89ff {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: var(--custom-create-welcome-channel-modal-input-elements-padding);
-    transition: opacity .2s ease-in-out;
-    opacity: .6;
+    height: 100%;
     line-height: 0;
-    height: 100%
+    opacity: .6;
+    padding: var(--custom-create-welcome-channel-modal-input-elements-padding);
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .2s ease-in-out
 }
 
 .clearButton_eb89ff:focus,.clearButton_eb89ff:hover {
@@ -65,9 +65,9 @@
 }
 
 .clearIcon_eb89ff {
-    width: 16px;
+    color: var(--interactive-normal);
     height: 16px;
-    color: var(--interactive-normal)
+    width: 16px
 }
 
 .footer_eb89ff {
@@ -75,12 +75,12 @@
 }
 
 .tooltip_eb89ff {
-    max-width: 150px;
-    margin-bottom: 2px
+    margin-bottom: 2px;
+    max-width: 150px
 }
 
 .channelTitleIcon_eb89ff {
     vertical-align: middle
 }
 
-/*# sourceMappingURL=844b7aea4e4afba5.css.map*/
+/*# sourceMappingURL=1895409218de6965.css.map*/

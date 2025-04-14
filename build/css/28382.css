@@ -1,11 +1,11 @@
 /**
   Module ID: 28382
-  Original File Name: 650d55d62c996863
+  Original File Name: 35942295ac3dc879
 **/
 .center__47458 {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .textCenter__47458 {
@@ -13,8 +13,8 @@
 }
 
 .radioGroup__47458 {
-    padding-top: 16px;
-    padding-bottom: 8px
+    padding-bottom: 8px;
+    padding-top: 16px
 }
 
 .button__47458 {
@@ -22,31 +22,31 @@
 }
 
 .options__47458 {
-    margin-top: 12px;
-    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    margin-bottom: 24px;
+    margin-top: 12px
 }
 
 .optionContainer__47458 {
     border: 1px solid var(--background-accent);
     border-radius: 4px;
-    padding: 12px;
-    display: flex
+    display: flex;
+    padding: 12px
 }
 
 .optionContainerOther__47458 {
-    flex-direction: column;
-    align-items: flex-start
+    align-items: flex-start;
+    flex-direction: column
 }
 
 .optionText__47458 {
-    width: 100%;
     align-items: center;
     display: flex;
     flex-direction: row;
-    gap: 14px
+    gap: 14px;
+    width: 100%
 }
 
 .textboxContainer__47458 {
@@ -54,9 +54,9 @@
 }
 
 .falseAlarmReasonText__47458 {
-    margin-top: 8px;
+    flex: 1;
     margin-left: 32px;
-    flex: 1
+    margin-top: 8px
 }
 
-/*# sourceMappingURL=650d55d62c996863.css.map*/
+/*# sourceMappingURL=35942295ac3dc879.css.map*/

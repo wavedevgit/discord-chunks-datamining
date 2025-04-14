@@ -1,31 +1,31 @@
 /**
   Module ID: 71704
-  Original File Name: b7a5685384231941
+  Original File Name: 886d406c7a1634fc
 **/
 .modal__038c3 {
     width: 650px
 }
 
 .modalContent__038c3 {
-    padding-left: 0;
-    margin-bottom: 0
+    margin-bottom: 0;
+    padding-left: 0
 }
 
 .previewContainerParent__038c3 {
-    padding: var(--spacing-32);
-    padding-bottom: 0;
+    background: var(--background-secondary);
     margin-bottom: -12px;
-    background: var(--background-secondary)
+    padding: var(--spacing-32);
+    padding-bottom: 0
 }
 
 .previewContainer__038c3 {
-    width: 240px;
-    text-align: left
+    text-align: start;
+    width: 240px
 }
 
 .container__0c185 {
-    border-radius: var(--radius-xs);
-    background: var(--background-secondary-alt)
+    background: var(--background-secondary-alt);
+    border-radius: var(--radius-xs)
 }
 
 .placeholderFill__7ffbc {
@@ -43,9 +43,9 @@
 }
 
 .circular__1df30 {
+    border-radius: var(--radius-round);
     display: block;
-    width: 56px;
-    border-radius: var(--radius-round)
+    width: 56px
 }
 
 .recentAvatarContainer__1df30 {
@@ -59,11 +59,10 @@
 }
 
 .recentAvatarSlots__1df30 {
-    position: relative;
     display: grid;
+    gap: var(--spacing-12);
     grid-template-columns: auto auto;
-    grid-gap: var(--spacing-12);
-    gap: var(--spacing-12)
+    position: relative
 }
 
 .recentAvatarSlots__1df30.withPremiumUpsell__1df30 {
@@ -81,19 +80,19 @@
 
 .recentAvatarButton__1df30 {
     position: relative;
-    overflow: hidden;
-    cursor: pointer
+    cursor: pointer;
+    overflow: hidden
 }
 
 .recentAvatarButton__1df30:after {
+    background-color: transparent;
     content: "";
+    height: 100%;
+    left: 0;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out
+    transition: background-color var(--custom-button-transition-duration) ease-in-out;
+    width: 100%
 }
 
 .recentAvatarButton__1df30:hover:after {
@@ -110,37 +109,36 @@
 }
 
 .recentAvatar__1df30 {
-    -o-object-fit: cover;
     object-fit: cover
 }
 
 .deleteButton__1df30 {
-    width: 28px;
-    height: 28px;
-    top: -6px;
-    right: -6px;
-    color: var(--text-danger);
     background-color: var(--bg-base-tertiary);
+    color: var(--text-danger);
+    cursor: pointer;
+    height: 28px;
     opacity: 0;
+    right: -6px;
+    top: -6px;
     transition: opacity var(--custom-button-transition-duration) ease-in-out;
     transition-delay: var(--custom-button-transition-duration);
-    cursor: pointer
+    width: 28px
 }
 
 .deleteButton__1df30,.deleteButton__1df30:after {
-    position: absolute;
-    border-radius: var(--radius-round)
+    border-radius: var(--radius-round);
+    position: absolute
 }
 
 .deleteButton__1df30:after {
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     background-color: transparent;
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
     transition: background-color var(--custom-button-transition-duration) ease-in-out;
-    transition-delay: var(--custom-button-transition-duration)
+    transition-delay: var(--custom-button-transition-duration);
+    width: 100%
 }
 
 .deleteButton__1df30:hover:after {
@@ -156,8 +154,8 @@
 }
 
 .deleteButtonInner__1df30 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center
 }
 
@@ -183,29 +181,29 @@
 }
 
 .premiumUpsellButton__1df30 {
-    position: relative;
-    display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--background-secondary-alt);
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: relative
 }
 
 .premiumUpsellButton__1df30 :after {
+    background-color: var(--modal-background);
+    border-radius: var(--radius-round);
+    bottom: -4px;
     content: "";
+    height: 24px;
     position: absolute;
     right: -4px;
-    bottom: -4px;
-    width: 24px;
-    height: 24px;
-    background-color: var(--modal-background);
-    border-radius: var(--radius-round)
+    width: 24px
 }
 
 .premiumUpsellLockIcon__1df30 {
+    bottom: 2px;
     position: absolute;
-    right: 2px;
-    bottom: 2px
+    right: 2px
 }
 
 .modal_edf440 {
@@ -213,16 +211,16 @@
 }
 
 .modalHeader_edf440 {
-    padding-bottom: 0;
-    justify-content: space-between
+    justify-content: space-between;
+    padding-bottom: 0
 }
 
 .modalContent_edf440 {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-24);
-    padding-top: var(--spacing-8);
-    padding-bottom: var(--modal-horizontal-padding)
+    padding-bottom: var(--modal-horizontal-padding);
+    padding-top: var(--spacing-8)
 }
 
 .modalCloseButton_edf440 {
@@ -238,30 +236,29 @@
 
 .optionsList_edf440 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--spacing-12);
-    gap: var(--spacing-12)
+    gap: var(--spacing-12);
+    grid-template-columns: 1fr 1fr
 }
 
 .option_edf440 {
-    position: relative;
-    z-index: 1;
-    aspect-ratio: 1;
-    display: flex;
     align-items: stretch;
-    justify-content: center;
-    row-gap: var(--spacing-12);
-    padding: var(--spacing-16);
+    aspect-ratio: 1;
     background-color: var(--background-secondary-alt);
     border-radius: var(--radius-sm);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
     overflow: hidden;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out
+    padding: var(--spacing-16);
+    position: relative;
+    row-gap: var(--spacing-12);
+    transition: background-color var(--custom-button-transition-duration) ease-in-out;
+    z-index: 1
 }
 
 .optionDescription_edf440 {
-    display: grid;
     align-items: center;
+    display: grid;
     justify-items: center
 }
 
@@ -276,22 +273,22 @@
 }
 
 .optionIconAndLabel_edf440 {
+    align-items: center;
+    color: var(--interactive-normal);
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: var(--spacing-8);
-    color: var(--interactive-normal);
     transition: color var(--custom-button-transition-duration) ease-in-out
 }
 
 .optionLabelText_edf440 {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    color: currentColor;
     -moz-column-gap: var(--spacing-4);
     column-gap: var(--spacing-4);
-    color: currentColor
+    display: flex;
+    flex-direction: row;
+    justify-content: center
 }
 
 .hasPremiumIcon_edf440 {
@@ -299,26 +296,23 @@
 }
 
 .gifGrid_edf440 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
-    z-index: -1;
     display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1
 }
 
 .gifGrid_edf440:after {
     content: "";
+    inset: 0;
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out
+    transition: background-color var(--custom-button-transition-duration) ease-in-out;
+    z-index: 1
 }
 
 .option_edf440:hover .optionIconAndLabel_edf440 {
@@ -326,15 +320,15 @@
 }
 
 .theme-dark .imageUploadOption_edf440:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
     background-color: transparent;
-    transition: background-color var(--custom-button-transition-duration) ease-in-out
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color var(--custom-button-transition-duration) ease-in-out;
+    z-index: -1
 }
 
 .theme-dark .gifGrid_edf440:after {
@@ -371,10 +365,10 @@
 }
 
 .boostingPill_edf440 {
-    padding: 4px;
-    border-radius: var(--radius-round);
     background-color: var(--bg-surface-overlay);
-    color: var(--interactive-normal)
+    border-radius: var(--radius-round);
+    color: var(--interactive-normal);
+    padding: 4px
 }
 
 .imagePickerContainer_edf440 {
@@ -387,8 +381,8 @@
 }
 
 .premiumUpsell_edf440 {
-    margin: 0;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    margin: 0
 }
 
-/*# sourceMappingURL=b7a5685384231941.css.map*/
+/*# sourceMappingURL=886d406c7a1634fc.css.map*/

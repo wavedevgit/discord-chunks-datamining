@@ -1,20 +1,20 @@
 /**
   Module ID: 45903
-  Original File Name: ac5bf64ff826c32a
+  Original File Name: 522f233ade8e00cd
 **/
 .label__33095 {
     gap: var(--spacing-8)
 }
 
 .iconWrapper__33095,.label__33095 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .iconWrapper__33095 {
+    height: 100%;
     justify-content: center;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .rootContainer_f4adbd {
@@ -32,14 +32,15 @@
 }
 
 .newBadge_f4adbd {
+    margin-bottom: var(--spacing-4);
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    margin-bottom: var(--spacing-4)
+    width: fit-content
 }
 
 .nitroWheel_f4adbd {
-    margin-top: 1px;
-    margin-left: var(--spacing-4)
+    margin-left: var(--spacing-4);
+    margin-top: 1px
 }
 
 .tooltip_f4adbd {
@@ -47,22 +48,22 @@
 }
 
 .labelContainer_f4adbd {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between
 }
 
 .playButton_f4adbd {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .mutedLabel_f4adbd {
-    width: 180px;
-    overflow: auto;
     color: currentColor;
-    white-space: normal
+    overflow: auto;
+    white-space: normal;
+    width: 180px
 }
 
 @keyframes outgoing-call-pulse__3751b {
@@ -84,32 +85,36 @@
 }
 
 .label__3751b,.subtext__3751b {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
 .ringing__3751b {
-    opacity: .3;
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    opacity: .3
 }
 
 .channelName__3751b {
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
+    color: var(--header-primary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
 .videoPaused_afb275 {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    align-items: center
+    justify-content: left
 }
 
 .warningCircle_afb275 {
     margin-right: 4px
 }
 
-/*# sourceMappingURL=ac5bf64ff826c32a.css.map*/
+/*# sourceMappingURL=522f233ade8e00cd.css.map*/

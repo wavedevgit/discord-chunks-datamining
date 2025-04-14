@@ -1,6 +1,6 @@
 /**
   Module ID: 21411
-  Original File Name: 07a9035c2ea7c331
+  Original File Name: 6c4f9362f2bc3211
 **/
 .actionButton__5d9ef {
     margin-left: auto
@@ -16,14 +16,14 @@
 }
 
 .appContainer_f37514 {
-    padding: 12px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 12px
 }
 
 .header_f37514 {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .appInfo_f37514 {
@@ -32,14 +32,14 @@
 
 .appIconMask_f37514 {
     margin-right: 16px;
-    min-width: 32px;
-    min-height: 32px
+    min-height: 32px;
+    min-width: 32px
 }
 
 .appIcon_f37514 {
-    width: 100%;
+    cursor: pointer;
     height: 100%;
-    cursor: pointer
+    width: 100%
 }
 
 .textContainer_f37514 {
@@ -53,11 +53,11 @@
 
 .row__19fd1 {
     align-items: center;
-    display: flex;
     border-bottom: 1px solid var(--background-modifier-accent);
+    display: flex;
+    gap: var(--spacing-16);
     margin: 0 var(--spacing-16);
-    padding: var(--spacing-16) 0;
-    gap: var(--spacing-16)
+    padding: var(--spacing-16) 0
 }
 
 .row__19fd1:last-child {
@@ -85,19 +85,19 @@
 }
 
 .button__19fd1 {
-    min-width: 75px;
-    margin-left: auto;
     flex-shrink: 0;
+    margin-left: auto;
+    min-width: 75px;
     padding: var(--spacing-8) var(--spacing-12)
 }
 
 .number__19fd1 {
-    border-radius: var(--radius-round);
+    align-items: center;
     background-color: var(--bg-mod-subtle);
-    min-width: 32px;
+    border-radius: var(--radius-round);
     height: 32px;
     justify-content: center;
-    align-items: center
+    min-width: 32px
 }
 
 .number__19fd1,.tableRowGroup__19fd1 {
@@ -111,12 +111,12 @@
 }
 
 .tableRowGroup__19fd1 .content__19fd1 {
-    overflow: hidden;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
     flex-grow: 1;
     flex-shrink: 0;
-    padding: 0;
-    border-radius: var(--radius-sm);
-    background-color: var(--background-secondary)
+    overflow: hidden;
+    padding: 0
 }
 
 .visual-refresh .row__19fd1 {
@@ -128,15 +128,15 @@
 }
 
 .buttonContainer__19fd1 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: var(--spacing-4)
 }
 
 .buttonIcon__19fd1 {
-    width: 16px;
-    height: 16px
+    height: 16px;
+    width: 16px
 }
 
 .container__0e308 {
@@ -153,56 +153,56 @@
 }
 
 .breadcrumbContainer__0e308:not(:last-child):after {
-    position: absolute;
     background-color: var(--background-tertiary);
-    width: 2px;
-    height: calc(100% + 4px);
-    top: .5em;
-    left: 1px;
     content: "";
+    height: calc(100% + 4px);
+    left: 1px;
+    position: absolute;
+    top: .5em;
+    width: 2px;
     z-index: -1
 }
 
 .breadcrumbDot__0e308 {
-    margin-right: 8px;
-    border-radius: 2px;
-    width: 4px;
-    height: 4px;
     background-color: var(--brand-500);
+    border-radius: 2px;
     flex-shrink: 0;
+    height: 4px;
+    margin-right: 8px;
     position: relative;
-    top: .5em
+    top: .5em;
+    width: 4px
 }
 
 .breadcrumbsHeader__0e308 {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .breadcrumbText__0e308 {
-    overflow: hidden;
     display: -webkit-box;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2
 }
 
 .container__527b1 {
-    min-height: 240px;
-    max-height: 70vh;
-    position: relative;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    max-height: 70vh;
+    min-height: 240px;
+    position: relative
 }
 
 .remediationElementsHeader__527b1 {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .closeButton__527b1 {
     position: absolute;
-    top: 8px;
     right: 8px;
+    top: 8px;
     z-index: 2
 }
 
@@ -220,21 +220,21 @@
 
 .visual-refresh .closeButton__527b1 {
     padding: 0;
-    top: 16px;
-    right: 16px
+    right: 16px;
+    top: 16px
 }
 
 .visual-refresh .header__527b1 {
-    padding: 40px 24px 8px;
-    align-items: flex-start
+    align-items: flex-start;
+    padding: 40px 24px 8px
 }
 
 .visual-refresh .listContainer__527b1 .listElement__527b1 {
     background-color: var(--background-surface-higher);
-    margin-bottom: 0;
-    padding: 0;
+    border-bottom: 1px solid var(--background-modifier-hover);
     border-radius: 0;
-    border-bottom: 1px solid var(--background-modifier-hover)
+    margin-bottom: 0;
+    padding: 0
 }
 
 .visual-refresh .listContainer__527b1 .listElement__527b1:hover {
@@ -252,20 +252,20 @@
 
 .visual-refresh .listContainer__527b1 .listElementWrapper__527b1:last-of-type>.listElement__527b1:last-of-type {
     border-bottom: none;
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px
 }
 
 .childButton__3ed08 {
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    cursor: pointer;
     margin-bottom: 8px;
-    padding: 0;
-    border-radius: 4px;
-    background-color: var(--background-secondary);
-    min-height: 64px
+    min-height: 64px;
+    padding: 0
 }
 
 .childButton__3ed08:hover {
@@ -287,10 +287,10 @@
 
 .childIcon__3ed08 {
     color: var(--interactive-normal);
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
-    margin: 0 16px 0 8px
+    height: 24px;
+    margin: 0 16px 0 8px;
+    width: 24px
 }
 
 .externalLinkWrapper__3ed08 {
@@ -303,21 +303,22 @@
 }
 
 .errorContainer__07ded {
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background-color: var(--status-danger);
-    padding: 8px 32px 8px 8px;
     border-radius: 4px;
+    bottom: 0;
+    box-shadow: var(--elevation-high);
     display: flex;
     font-weight: 600;
-    box-shadow: var(--elevation-high)
+    left: 0;
+    padding: 8px 32px 8px 8px;
+    position: -webkit-sticky;
+    position: sticky;
+    right: 0
 }
 
 .errorIcon__07ded {
-    margin-right: 8px;
-    flex-grow: 0
+    flex-grow: 0;
+    margin-right: 8px
 }
 
 .closeIcon__07ded,.errorIcon__07ded {
@@ -325,17 +326,17 @@
 }
 
 .closeIcon__07ded {
-    position: absolute;
-    right: 8px;
-    top: 8px;
-    height: 16px;
-    width: 16px;
     background: url(/assets/26a3dd69161dbf47.svg) no-repeat;
     background-position: 50% 55%;
     background-size: 10px 10px;
     cursor: pointer;
+    height: 16px;
     opacity: .5;
-    transition: opacity .2s
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transition: opacity .2s;
+    width: 16px
 }
 
 .closeIcon__07ded:hover {
@@ -351,14 +352,14 @@
 }
 
 .linkButton_b1585f {
+    align-items: center;
+    background-color: var(--background-secondary);
+    border-radius: 4px;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    cursor: pointer;
-    padding: 0;
-    border-radius: 4px;
-    background-color: var(--background-secondary);
-    min-height: 64px
+    min-height: 64px;
+    padding: 0
 }
 
 .linkButton_b1585f:hover {
@@ -380,10 +381,10 @@
 
 .linkIcon_b1585f {
     color: var(--interactive-normal);
-    width: 24px;
-    height: 24px;
     flex-shrink: 0;
-    margin: 0 16px 0 8px
+    height: 24px;
+    margin: 0 16px 0 8px;
+    width: 24px
 }
 
 .linksContainer_b1585f {
@@ -404,9 +405,9 @@
 }
 
 .guildContainer_f0c729 {
-    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 16px
 }
 
 .header_f0c729 {
@@ -419,8 +420,8 @@
 }
 
 .hubInfo_f0c729 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .hubIcon_f0c729 {
@@ -432,32 +433,32 @@
 }
 
 .guildContainer__14de9 {
-    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 16px
 }
 
 .header__14de9 {
-    margin-bottom: 8px;
     color: var(--header-secondary);
+    margin-bottom: 8px;
     text-transform: uppercase
 }
 
 .guildInfo__14de9 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .guildIconMask__14de9 {
     margin-right: 8px;
-    min-width: 32px;
-    min-height: 32px
+    min-height: 32px;
+    min-width: 32px
 }
 
 .guildIcon__14de9 {
-    width: 100%;
+    cursor: pointer;
     height: 100%;
-    cursor: pointer
+    width: 100%
 }
 
 .container__7c626 {
@@ -465,19 +466,19 @@
 }
 
 .guildContainer__7c626 {
-    padding: var(--spacing-16);
     border: 1px solid var(--background-modifier-accent);
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-16)
 }
 
 .header__7c626 {
-    margin-bottom: var(--spacing-8);
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: var(--spacing-8)
 }
 
 .guildInfo__7c626 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .guildIcon__7c626 {
@@ -489,19 +490,19 @@
 }
 
 .guildContainer__631c2 {
-    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 16px
 }
 
 .header__631c2 {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .guildInfo__631c2 {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 8px
 }
 
@@ -519,15 +520,15 @@
 }
 
 .infoBox_fbc3be {
-    margin-top: 16px;
-    font-weight: 400
+    font-weight: 400;
+    margin-top: 16px
 }
 
 .messagePreviewContainer_f96002 {
-    padding: 16px 16px 16px 0;
     border: 1px solid var(--background-modifier-accent);
     border-radius: 8px;
-    max-height: 100px
+    max-height: 100px;
+    padding: 16px 16px 16px 0
 }
 
 .messageScroller_f96002 {
@@ -539,8 +540,8 @@
 }
 
 .header_f96002 {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .attachmentIcon_f96002 {
@@ -566,19 +567,19 @@
 }
 
 .header__8f3cb {
-    margin-bottom: var(--spacing-8);
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: var(--spacing-8)
 }
 
 .upsellsContainer__8f3cb {
-    border-radius: var(--spacing-8);
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    border-radius: var(--spacing-8)
 }
 
 .visual-refresh .upsellsContainer__8f3cb {
-    border-radius: var(--radius-md);
     background-color: var(--background-surface-highest);
-    border: 1px solid var(--border-subtle)
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md)
 }
 
 .container__2c3b4 {
@@ -594,8 +595,8 @@
 }
 
 .upsellsContainer__2c3b4 {
-    border-radius: var(--spacing-8);
-    background-color: var(--background-secondary)
+    background-color: var(--background-secondary);
+    border-radius: var(--spacing-8)
 }
 
 .navLinkButton__2c3b4 {
@@ -607,19 +608,19 @@
 }
 
 .guildContainer__3eeee {
-    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 16px
 }
 
 .header__3eeee {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .guildInfo__3eeee {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 8px
 }
 
@@ -628,8 +629,8 @@
 }
 
 .successImg_f05c94 {
-    margin-bottom: 16px;
     height: 100px;
+    margin-bottom: 16px;
     width: 100px
 }
 
@@ -662,12 +663,12 @@
 }
 
 .smsNumberContainer_dba137 {
+    align-items: center;
+    border: 1px solid var(--background-tertiary);
+    border-radius: 4px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    border-radius: 4px;
-    border: 1px solid var(--background-tertiary);
     padding: 8px
 }
 
@@ -680,19 +681,19 @@
 }
 
 .userContainer__7bd4e {
-    padding: 16px;
     border: 1px solid var(--background-modifier-accent);
-    border-radius: 8px
+    border-radius: 8px;
+    padding: 16px
 }
 
 .header__7bd4e {
-    margin-bottom: 8px;
-    color: var(--header-secondary)
+    color: var(--header-secondary);
+    margin-bottom: 8px
 }
 
 .userInfo__7bd4e {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .userIcon__7bd4e {
@@ -702,7 +703,7 @@
 .slideContainer__01ce3 {
     display: flex;
     flex-direction: column;
-    max-height: max(200px, min(calc(100vh - 80px), 660px))
+    max-height: clamp(200px,calc(100vh - 80px),660px)
 }
 
-/*# sourceMappingURL=07a9035c2ea7c331.css.map*/
+/*# sourceMappingURL=6c4f9362f2bc3211.css.map*/

@@ -1,24 +1,25 @@
 /**
   Module ID: 55183
-  Original File Name: 472babd19097d16d
+  Original File Name: 5e922d4c843e2bb6
 **/
 .previewContainer__92e52 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: -moz-min-content;
-    width: min-content;
-    min-height: 560px;
     margin: 6.5px 3px 0 2px;
-    padding-left: 10px
+    min-height: 560px;
+    padding-left: 10px;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content
 }
 
 .effectDescriptionBorder__92e52 {
-    border-radius: 4px;
     border: 2px solid transparent;
+    border-radius: 4px;
     box-sizing: border-box;
-    width: 100%;
-    margin: 20px var(--custom-user-profile-theme-padding)
+    margin: 20px var(--custom-user-profile-theme-padding);
+    width: 100%
 }
 
 .effectDescriptionBorderWithGradient__92e52 {
@@ -31,63 +32,63 @@
 
 .effectDescriptionContainer__92e52 {
     background: var(--background-secondary) padding-box;
-    position: relative;
     border-radius: 2px;
-    padding-right: 4px
+    padding-right: 4px;
+    position: relative
 }
 
 .effectDescription__92e52 {
-    font-weight: 400;
     font-family: gg sans;
+    font-weight: 400;
     padding: 0 3px 8px 10px
 }
 
 .effectDescription__92e52,.effectName__92e52 {
-    text-align: left;
+    font-size: 14px;
     line-height: 18px;
-    font-size: 14px
+    text-align: start
 }
 
 .effectName__92e52 {
     font-weight: 600;
-    padding-top: 12px;
-    padding-left: 10px
+    padding-left: 10px;
+    padding-top: 12px
 }
 
 .effectPurchasedAt__92e52 {
-    text-align: left;
-    line-height: 12px;
-    font-weight: 400;
-    font-size: 10px;
     font-family: gg sans;
-    padding: 0 3px 10px 10px
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    padding: 0 3px 10px 10px;
+    text-align: start
 }
 
 .replayButton__92e52 {
-    margin: 15px 0 -8px 30px;
-    width: 149px;
+    display: flex;
     height: 24px;
-    display: flex
+    margin: 15px 0 -8px 30px;
+    width: 149px
 }
 
 .replayButtonText__92e52 {
     font-family: gg sans;
-    font-weight: 500;
     font-size: 13px;
+    font-weight: 500;
     line-height: 16px;
     text-align: center
 }
 
 .retryIcon__92e52 {
+    color: var(--text-normal);
     margin-left: 6px;
-    margin-right: 3px;
-    color: var(--text-normal)
+    margin-right: 3px
 }
 
 .icon_b4019a {
     height: 24px;
-    width: 24px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    width: 24px
 }
 
 .notAllowedIcon_b4019a {
@@ -95,16 +96,16 @@
 }
 
 .effectGridItem_b4019a {
-    cursor: pointer;
+    align-items: center;
+    background-color: var(--background-tertiary);
     border-radius: 4px;
-    transition: box-shadow .15s ease-out;
+    color: var(--header-primary);
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background-color: var(--background-tertiary);
-    color: var(--header-primary);
-    position: relative
+    position: relative;
+    transition: box-shadow .15s ease-out
 }
 
 .selected_b4019a {
@@ -119,10 +120,10 @@
 
 .list_b4019a {
     flex: 1;
-    width: 298px;
-    padding-bottom: 4px;
+    left: -12px;
     margin-top: 2px;
-    left: -12px
+    padding-bottom: 4px;
+    width: 298px
 }
 
 .shopIcon_b4019a {
@@ -145,11 +146,11 @@
 }
 
 .lockBadge_b4019a {
-    top: -6px;
-    width: 20px;
-    padding: 2px;
+    border-radius: 50%;
     height: 20px;
-    border-radius: 50%
+    padding: 2px;
+    top: -6px;
+    width: 20px
 }
 
 .lockBadge_b4019a,.newBadge_b4019a {
@@ -158,35 +159,32 @@
 }
 
 .newBadge_b4019a {
-    top: -4px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    top: -4px
 }
 
 .newBadgeText_b4019a {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 2px
+    display: flex;
+    gap: 2px;
+    justify-content: center
 }
 
 .presetEffectImg_b4019a {
-    -o-object-fit: cover;
     object-fit: cover;
-    -o-object-position: top;
     object-position: top
 }
 
 .presetEffectBackground_b4019a,.presetEffectImg_b4019a {
-    position: absolute;
     border-radius: 4px;
-    width: 100%;
-    height: 100%
+    height: 100%;
+    position: absolute;
+    width: 100%
 }
 
 .modal__20a09 {
     border-radius: var(--radius-sm);
-    width: auto;
-    width: initial
+    width: unset
 }
 
 .modalFooter__20a09 {
@@ -232,19 +230,19 @@
 }
 
 .newBadge__20a09 {
-    margin-left: 4px;
-    align-items: center
+    align-items: center;
+    margin-left: 4px
 }
 
 .spinner__20a09 {
-    margin: 8px;
-    align-self: center
+    align-self: center;
+    margin: 8px
 }
 
 .nitroUpsellContainer__20a09 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     margin-right: auto
 }
 
@@ -252,4 +250,4 @@
     margin-right: 6px
 }
 
-/*# sourceMappingURL=472babd19097d16d.css.map*/
+/*# sourceMappingURL=5e922d4c843e2bb6.css.map*/

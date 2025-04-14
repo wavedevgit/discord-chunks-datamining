@@ -1,12 +1,12 @@
 /**
   Module ID: 33312
-  Original File Name: ecc5b1d5326ccd84
+  Original File Name: a0c4e378ff50c33e
 **/
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
+    color: var(--status-danger);
     font-size: 14px;
     line-height: 20px;
-    margin-top: 8px;
-    color: var(--status-danger)
+    margin-top: 8px
 }
 
 .container_b0f4cc {
@@ -15,17 +15,17 @@
 }
 
 .title_b0f4cc {
-    margin-bottom: 8px;
-    text-transform: uppercase;
+    color: var(--interactive-normal);
     font-weight: 700;
-    color: var(--interactive-normal)
+    margin-bottom: 8px;
+    text-transform: uppercase
 }
 
 .inputs_b0f4cc {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    width: 100%
 }
 
 .day_b0f4cc {
@@ -45,9 +45,9 @@
 }
 
 .container__6faef {
-    text-align: center;
+    margin-bottom: 16px;
     margin-top: 16px;
-    margin-bottom: 16px
+    text-align: center
 }
 
 .title__6faef {
@@ -55,8 +55,8 @@
 }
 
 .img__6faef {
-    width: 149px;
-    height: 83px
+    height: 83px;
+    width: 149px
 }
 
 .birthday__6faef,.confirmContainer__6faef,.img__6faef {
@@ -64,8 +64,8 @@
 }
 
 .confirmContainer__6faef {
-    text-align: center;
-    margin-top: 24px
+    margin-top: 24px;
+    text-align: center
 }
 
 .confirmTitle__6faef {
@@ -78,4 +78,4 @@
     justify-content: space-between
 }
 
-/*# sourceMappingURL=ecc5b1d5326ccd84.css.map*/
+/*# sourceMappingURL=a0c4e378ff50c33e.css.map*/

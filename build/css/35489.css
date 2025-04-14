@@ -1,23 +1,23 @@
 /**
   Module ID: 35489
-  Original File Name: fec48e76a65b65d7
+  Original File Name: a571e4350e55d428
 **/
 .modal_c9e6eb {
     padding: var(--spacing-16)
 }
 
 .header_c9e6eb {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: var(--spacing-56);
-    padding-bottom: var(--spacing-16)
+    padding-bottom: var(--spacing-16);
+    padding-top: var(--spacing-56)
 }
 
 .headerImage_c9e6eb {
+    left: 38%;
     position: absolute;
     top: -68px;
-    left: 38%;
     width: 100px
 }
 
@@ -30,9 +30,9 @@
 }
 
 .content_c9e6eb {
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    align-items: center
+    flex-direction: column
 }
 
 .footer_c9e6eb {
@@ -44,16 +44,16 @@
 }
 
 .guildContainer_c9e6eb {
-    padding: var(--spacing-12);
+    background-color: var(--background-modifier-accent);
     border: 1px solid var(--background-modifier-accent);
     border-radius: var(--spacing-8);
-    background-color: var(--background-modifier-accent);
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--spacing-16);
+    padding: var(--spacing-12)
 }
 
 .guildInfo_c9e6eb {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .guildName_c9e6eb {
@@ -65,7 +65,7 @@
     width: 100%
 }
 
-@media (max-width: 485px) {
+@media (max-width:485px) {
     .header_c9e6eb {
         padding-top: 144px
     }
@@ -75,4 +75,4 @@
     }
 }
 
-/*# sourceMappingURL=fec48e76a65b65d7.css.map*/
+/*# sourceMappingURL=a571e4350e55d428.css.map*/

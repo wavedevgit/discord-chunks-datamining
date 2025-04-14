@@ -1,20 +1,20 @@
 /**
   Module ID: 66462
-  Original File Name: 013349d4fbf58116
+  Original File Name: d213f060d85261f8
 **/
 .content_fec266 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-bottom: 24px;
     padding-left: 30px;
     padding-right: 30px
 }
 
 .art_fec266 {
+    height: 153px;
     margin: -75px auto 12px;
-    width: 223px;
-    height: 153px
+    width: 223px
 }
 
 .header_fec266 {
@@ -22,12 +22,12 @@
 }
 
 .row_fec266 {
-    width: 100%;
-    padding: 16px;
     background-color: var(--background-secondary);
     border-radius: 8px;
+    flex-wrap: nowrap;
     margin-bottom: 8px;
-    flex-wrap: nowrap
+    padding: 16px;
+    width: 100%
 }
 
 .rowContent_fec266 {
@@ -35,16 +35,16 @@
 }
 
 .iconContainer_fec266 {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: var(--background-tertiary);
-    margin-right: 16px;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
     color: var(--text-brand);
-    flex-shrink: 0
+    display: flex;
+    flex-shrink: 0;
+    height: 35px;
+    justify-content: center;
+    margin-right: 16px;
+    width: 35px
 }
 
 .threadIcon_fec266 {
@@ -64,4 +64,4 @@
     border: 1px solid var(--border-subtle)
 }
 
-/*# sourceMappingURL=013349d4fbf58116.css.map*/
+/*# sourceMappingURL=d213f060d85261f8.css.map*/

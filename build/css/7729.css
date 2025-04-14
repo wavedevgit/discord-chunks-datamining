@@ -1,12 +1,12 @@
 /**
   Module ID: 7729
-  Original File Name: 66fb32544aa67012
+  Original File Name: e9c0eb1ba385e64a
 **/
 .select_d48ec6.error_d48ec6 .errorMessage_d48ec6 {
+    color: var(--status-danger);
     font-size: 14px;
     line-height: 20px;
-    margin-top: 8px;
-    color: var(--status-danger)
+    margin-top: 8px
 }
 
 .container_b0f4cc {
@@ -15,17 +15,17 @@
 }
 
 .title_b0f4cc {
-    margin-bottom: 8px;
-    text-transform: uppercase;
+    color: var(--interactive-normal);
     font-weight: 700;
-    color: var(--interactive-normal)
+    margin-bottom: 8px;
+    text-transform: uppercase
 }
 
 .inputs_b0f4cc {
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    width: 100%
 }
 
 .day_b0f4cc {
@@ -56,10 +56,10 @@
 }
 
 .image__5fa9f {
-    width: 148px;
-    height: 82px;
+    align-self: center;
     background-image: url(/assets/142df9b603ff6d7d.svg);
-    align-self: center
+    height: 82px;
+    width: 148px
 }
 
 .title__5fa9f {
@@ -76,4 +76,4 @@
     margin-bottom: 16px
 }
 
-/*# sourceMappingURL=66fb32544aa67012.css.map*/
+/*# sourceMappingURL=e9c0eb1ba385e64a.css.map*/

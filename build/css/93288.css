@@ -1,19 +1,19 @@
 /**
   Module ID: 93288
-  Original File Name: 2b2be88f1e1f8f1d
+  Original File Name: 1fc04e747b95611d
 **/
 .header__19497 {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: var(--spacing-24);
-    padding-bottom: var(--spacing-12)
+    padding-bottom: var(--spacing-12);
+    padding-top: var(--spacing-24)
 }
 
 .headerImage__19497 {
+    left: 140px;
     position: absolute;
     top: -68px;
-    left: 140px;
     width: 170px
 }
 
@@ -32,14 +32,14 @@
 
 .description__19497 {
     color: var(--text-normal);
-    text-align: center;
-    margin-top: var(--spacing-8)
+    margin-top: var(--spacing-8);
+    text-align: center
 }
 
 .modalCloseButton__19497 {
     position: absolute;
-    top: var(--spacing-16);
-    right: var(--spacing-16)
+    right: var(--spacing-16);
+    top: var(--spacing-16)
 }
 
 .content__19497 {
@@ -47,8 +47,8 @@
 }
 
 .help__19497 {
-    margin-top: var(--spacing-8);
-    margin-bottom: var(--spacing-8)
+    margin-bottom: var(--spacing-8);
+    margin-top: var(--spacing-8)
 }
 
 .password__19497 {
@@ -56,9 +56,9 @@
 }
 
 .buttons__19497 {
-    margin-top: var(--spacing-24);
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    margin-top: var(--spacing-24)
 }
 
-/*# sourceMappingURL=2b2be88f1e1f8f1d.css.map*/
+/*# sourceMappingURL=1fc04e747b95611d.css.map*/

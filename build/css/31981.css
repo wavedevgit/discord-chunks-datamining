@@ -1,28 +1,28 @@
 /**
   Module ID: 31981
-  Original File Name: b4dc505b26152769
+  Original File Name: 8aa79ec2a3d711e9
 **/
 .content_ce83f7 {
     align-items: center;
-    text-align: center;
     overflow: auto;
-    padding-bottom: 16px
+    padding-bottom: 16px;
+    text-align: center
 }
 
 .decoration_ce83f7 {
-    width: 94px;
-    height: 94px
+    height: 94px;
+    width: 94px
 }
 
 .decorationBackground_ce83f7 {
+    left: calc(50% - 220px);
     position: absolute;
-    top: -48px;
-    left: calc(50% - 220px)
+    top: -48px
 }
 
 .header_ce83f7 {
-    margin-top: 24px;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    margin-top: 24px
 }
 
-/*# sourceMappingURL=b4dc505b26152769.css.map*/
+/*# sourceMappingURL=8aa79ec2a3d711e9.css.map*/

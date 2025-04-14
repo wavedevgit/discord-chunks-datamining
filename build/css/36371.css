@@ -1,6 +1,6 @@
 /**
   Module ID: 36371
-  Original File Name: b41d683e41d0742a
+  Original File Name: f2dc248308c0691d
 **/
 .marker__9d896 {
     margin-left: 4px
@@ -32,6 +32,7 @@
 }
 
 .removeButton_e45886 {
+    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content
 }
@@ -42,8 +43,8 @@
 }
 
 .separator_e45886 {
-    height: 1px;
     background: var(--background-modifier-accent);
+    height: 1px;
     margin: 24px 0
 }
 
@@ -67,12 +68,12 @@
 }
 
 .uploadImage_e45886 {
-    height: 72px;
-    width: 72px;
-    border-radius: var(--radius-xs);
-    border: 1px solid var(--background-tertiary);
     background: var(--background-secondary-alt);
-    background-size: 72px 72px
+    background-size: 72px 72px;
+    border: 1px solid var(--background-tertiary);
+    border-radius: var(--radius-xs);
+    height: 72px;
+    width: 72px
 }
 
 .uploader_e45886:hover .uploadImageIcon_e45886 {
@@ -83,19 +84,19 @@
     background: var(--background-secondary-alt);
     background-image: none;
     border-radius: 0;
-    width: 24px;
-    height: 24px;
-    top: 24px;
-    left: 24px;
     color: var(--interactive-normal);
-    pointer-events: none
+    height: 24px;
+    left: 24px;
+    pointer-events: none;
+    top: 24px;
+    width: 24px
 }
 
 .iconUploadContainer_e45886 {
-    position: relative;
     display: flex;
     flex-direction: row;
-    gap: 8px
+    gap: 8px;
+    position: relative
 }
 
 .iconUploadContainer_e45886:hover .imageOverlay_e45886 {
@@ -103,12 +104,12 @@
 }
 
 .iconUpload_e45886 {
-    border-radius: var(--radius-sm);
-    border: 1px solid var(--background-tertiary);
     background-color: var(--background-secondary-alt);
-    padding: 8px;
+    border: 1px solid var(--background-tertiary);
+    border-radius: var(--radius-sm);
     color: var(--interactive-normal);
-    cursor: pointer
+    cursor: pointer;
+    padding: 8px
 }
 
 .iconUpload_e45886:hover {
@@ -124,15 +125,15 @@
 }
 
 .imageOverlay_e45886 {
-    display: none;
-    background-color: rgba(0,0,0,.5019607843137255);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: #00000080;
+    border-radius: var(--radius-sm);
     bottom: 0;
+    display: none;
+    left: 0;
     padding: 8px;
-    border-radius: var(--radius-sm)
+    position: absolute;
+    right: 0;
+    top: 0
 }
 
-/*# sourceMappingURL=b41d683e41d0742a.css.map*/
+/*# sourceMappingURL=f2dc248308c0691d.css.map*/

@@ -1,6 +1,6 @@
 /**
   Module ID: 64908
-  Original File Name: 4284cda93b6e7add
+  Original File Name: fad4108afb1898da
 **/
 .header__81f73 {
     text-align: center;
@@ -24,21 +24,20 @@
 }
 
 .modalContent__81f73 {
-    overflow: visible!important;
-    overflow: initial!important;
-    padding-right: 0!important;
-    padding-left: calc(16px - var(--custom-add-permissions-modal-focus-ring-width));
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    overflow: unset!important;
+    padding-left: calc(16px - var(--custom-add-permissions-modal-focus-ring-width));
+    padding-right: 0!important
 }
 
 .searchBar__81f73 {
     background-color: var(--background-secondary);
     border-color: var(--background-tertiary);
+    flex-shrink: 0;
     margin-bottom: 16px;
-    margin-right: 16px;
     margin-left: var(--custom-add-permissions-modal-focus-ring-width);
-    flex-shrink: 0
+    margin-right: 16px
 }
 
-/*# sourceMappingURL=4284cda93b6e7add.css.map*/
+/*# sourceMappingURL=fad4108afb1898da.css.map*/

@@ -1,22 +1,22 @@
 /**
   Module ID: 7232
-  Original File Name: 6d7ce7162e05737a
+  Original File Name: 604ca915bd01c6f4
 **/
 .modal__28393 {
     overflow: hidden
 }
 
 .closeIcon__28393 {
-    position: absolute;
-    top: 16px;
-    right: 16px;
+    color: var(--interactive-normal);
     cursor: pointer;
-    color: var(--interactive-normal)
+    position: absolute;
+    right: 16px;
+    top: 16px
 }
 
 .cancelButton__28393 {
-    padding: 0;
-    margin: 0 24px
+    margin: 0 24px;
+    padding: 0
 }
 
 .content__28393 {
@@ -57,4 +57,4 @@
     background-image: url(/assets/7b29b27004afacd0.svg)
 }
 
-/*# sourceMappingURL=6d7ce7162e05737a.css.map*/
+/*# sourceMappingURL=604ca915bd01c6f4.css.map*/

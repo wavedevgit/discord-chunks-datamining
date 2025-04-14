@@ -1,11 +1,12 @@
 /**
   Module ID: 11564
-  Original File Name: a5bce0d12b9faf97
+  Original File Name: 7836f1b48554330c
 **/
 .content__61700 {
-    padding-bottom: var(--spacing-16);
+    min-height: -webkit-min-content;
     min-height: -moz-min-content;
-    min-height: min-content
+    min-height: min-content;
+    padding-bottom: var(--spacing-16)
 }
 
 .radioItem__61700 {
@@ -17,23 +18,23 @@
 }
 
 .header_ad198f {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-top: 75px
 }
 
 .emailHeaderImg_ad198f {
+    left: 140px;
     position: absolute;
     top: -68px;
-    left: 140px;
     width: 180px
 }
 
 .wumpusExclamationImg_ad198f {
+    left: 110px;
     position: absolute;
     top: -78px;
-    left: 110px;
     width: 229px
 }
 
@@ -59,17 +60,17 @@
 }
 
 .tooltip_ad198f {
-    border-radius: 8px;
-    border: 1px solid hsla(0,0%,100%,.04);
     background: var(--background-accent);
+    border: 1px solid hsla(0,0%,100%,.04);
+    border-radius: 8px;
     box-shadow: var(--elevation-low);
     padding: 12px
 }
 
 .modalCloseButton_ad198f {
     position: absolute;
-    top: 16px;
-    right: 16px
+    right: 16px;
+    top: 16px
 }
 
 .modalFooter_ad198f {
@@ -89,4 +90,4 @@
     margin-top: 16px
 }
 
-/*# sourceMappingURL=a5bce0d12b9faf97.css.map*/
+/*# sourceMappingURL=7836f1b48554330c.css.map*/

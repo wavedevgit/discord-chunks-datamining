@@ -1,38 +1,38 @@
 /**
   Module ID: 58121
-  Original File Name: 2ed5f2f6d95ac92a
+  Original File Name: b37fae614cec45ee
 **/
 .coverContainer__2f300 {
-    height: 640px;
-    box-sizing: border-box;
     align-items: center;
-    justify-content: space-between;
     border-radius: 12px;
+    box-sizing: border-box;
+    height: 640px;
+    justify-content: space-between;
     padding: 0 24px
 }
 
 .centerArt__2f300,.coverContainer__2f300 {
-    position: relative;
-    display: flex
+    display: flex;
+    position: relative
 }
 
 .centerArt__2f300 {
-    width: 480px;
-    height: 256px
+    height: 256px;
+    width: 480px
 }
 
 .mainIsland__2f300 {
+    bottom: -18px;
     position: absolute;
-    width: 400px;
     right: -24px;
-    bottom: -18px
+    width: 400px
 }
 
 .balloonDog__2f300 {
-    position: absolute;
-    width: 160px;
     bottom: -24px;
-    left: 8px
+    left: 8px;
+    position: absolute;
+    width: 160px
 }
 
 .leftArt__2f300 {
@@ -43,36 +43,36 @@
 
 .grillingIsland__2f300 {
     position: absolute;
-    width: 220px;
-    top: -20px
+    top: -20px;
+    width: 220px
 }
 
 .rightArt__2f300 {
+    animation-delay: .4s;
     flex: 0 0 120px;
     height: 100%;
-    position: relative;
-    animation-delay: .4s
+    position: relative
 }
 
 .waffleIsland__2f300 {
     position: absolute;
-    width: 160px;
-    top: 40px
+    top: 40px;
+    width: 160px
 }
 
 .full-motion .float__2f300 {
-    animation-duration: 2s;
-    animation-name: float__2f300;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: float__2f300;
     transition: ease-in-out
 }
 
 .full-motion .altFloat__2f300 {
-    animation-duration: 2s;
-    animation-name: altFloat__2f300;
-    animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: altFloat__2f300;
     transition: ease-in-out
 }
 
@@ -97,14 +97,14 @@
 }
 
 .centerContent__2f300 {
-    z-index: 1;
+    align-items: center;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 24px;
-    height: 100%
+    height: 100%;
+    justify-content: center;
+    z-index: 1
 }
 
 .coverContent__2f300 {
@@ -114,17 +114,17 @@
 }
 
 .avatarContainer__2f300 {
-    height: 280px;
-    position: relative;
-    display: flex;
     align-items: center;
+    display: flex;
+    height: 280px;
     justify-content: center;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    position: relative
 }
 
 .avatarCloud__2f300 {
-    width: 300px;
-    position: absolute
+    position: absolute;
+    width: 300px
 }
 
 .userIconMask__2f300 {
@@ -145,8 +145,8 @@
 }
 
 :where(.visual-refresh) .coverTitle__2f300 {
-    opacity: 1;
-    margin-bottom: var(--spacing-16)
+    margin-bottom: var(--spacing-16);
+    opacity: 1
 }
 
 :where(.visual-refresh) .guildImage__2f300 {
@@ -162,37 +162,37 @@
 }
 
 .testimonialContainer__3e7e2 {
-    position: relative;
     background-color: var(--background-secondary);
-    padding: 32px;
     border-radius: 12px;
+    padding: 32px;
+    position: relative;
     text-align: center
 }
 
 .userContainer__3e7e2 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     gap: 4px;
+    justify-content: center;
     margin-top: 8px
 }
 
 .quotes__3e7e2 {
-    position: absolute;
-    top: 0;
-    left: 12px;
     color: var(--background-tertiary);
-    font-size: 64px
+    font-size: 64px;
+    left: 12px;
+    position: absolute;
+    top: 0
 }
 
 .heroQuotes__3e7e2 {
-    top: 24px;
-    left: 24px
+    left: 24px;
+    top: 24px
 }
 
 .arrow__3e7e2 {
-    position: absolute;
-    bottom: -22px
+    bottom: -22px;
+    position: absolute
 }
 
 .arrowRight__3e7e2 {
@@ -206,15 +206,15 @@
 
 .testimonialHeroContainer__3e7e2 {
     background-color: var(--background-secondary);
-    padding: 32px 40px;
-    text-align: center;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+    min-height: 150px;
     overflow: hidden;
-    min-height: 150px
+    padding: 32px 40px;
+    position: relative;
+    text-align: center
 }
 
 .visual-refresh .testimonialHeroContainer__3e7e2 {
@@ -222,22 +222,22 @@
 }
 
 .animatedContainer__3e7e2 {
-    position: relative;
-    min-height: 120px
+    min-height: 120px;
+    position: relative
 }
 
 .testimonial__3e7e2 {
+    min-height: 120px;
     padding: 32px;
-    position: absolute;
-    min-height: 120px
+    position: absolute
 }
 
 .testimonialsControls__3e7e2 {
-    margin: 8px 0;
     display: flex;
     flex-direction: row;
     gap: 16px;
-    justify-content: center
+    justify-content: center;
+    margin: 8px 0
 }
 
 .testimonialControl__3e7e2 {
@@ -251,15 +251,15 @@
 }
 
 .container_c66e86 {
-    padding: 16px 0;
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
+    padding: 16px 0
 }
 
 .action_c66e86 {
-    display: flex;
     align-items: center;
+    display: flex;
     padding: 12px 20px;
     transition: background-color .2s ease-in-out
 }
@@ -289,25 +289,25 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .channelIcon_c66e86 {
-    width: 20px;
+    color: var(--channel-icon);
     height: 20px;
-    color: var(--channel-icon)
+    width: 20px
 }
 
 .channelIconContainer_c66e86,.rulesIconContainer_c66e86,.tagIconContainer_c66e86 {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: var(--background-tertiary);
-    display: flex;
     align-items: center;
-    justify-content: center
+    background-color: var(--background-tertiary);
+    border-radius: 20px;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px
 }
 
 .rulesIcon_c66e86 {
-    width: 16px;
+    color: var(--channel-icon);
     height: 16px;
-    color: var(--channel-icon)
+    width: 16px
 }
 
 .checkCircle_c66e86 {
@@ -328,8 +328,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .welcomeMessageProfileContainer__6f212 {
-    overflow: visible;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    overflow: visible
 }
 
 .welcomeMessageProfileContainer__6f212.custom-user-profile-theme {
@@ -337,8 +337,8 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .welcomeMessageProfileContainer__6f212>div {
-    flex-grow: 0;
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    flex-grow: 0
 }
 
 .avatar__6f212 {
@@ -346,49 +346,49 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
 }
 
 .avatar__6f212,.avatarBackground__6f212 {
-    position: absolute;
     left: 20px;
+    position: absolute;
     top: -20px
 }
 
 .avatarBackground__6f212 {
-    width: 48px;
-    height: 48px;
+    background-color: var(--background-primary);
     border-radius: 1000px;
-    background-color: var(--background-primary)
+    height: 48px;
+    width: 48px
 }
 
 .avatarBorder__6f212 {
-    position: absolute;
-    width: 52px;
-    height: 52px;
     border-radius: 1000px;
-    z-index: -1;
+    height: 52px;
     left: 18px;
-    top: -22px
+    position: absolute;
+    top: -22px;
+    width: 52px;
+    z-index: -1
 }
 
 .adminUsernameContainer__6f212 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 4px;
     margin-bottom: 10px;
     padding-left: 58px
 }
 
 .welcomeMessageContent__6f212 {
-    padding: 4px 16px 16px;
-    word-wrap: anywhere;
-    min-height: 56px
+    min-height: 56px;
+    overflow-wrap: anywhere;
+    padding: 4px 16px 16px
 }
 
 .ownerIcon__6f212 {
+    color: var(--text-warning);
     flex: 0 0 auto;
-    position: relative;
-    top: 1px;
     flex-shrink: 0;
-    color: var(--text-warning)
+    position: relative;
+    top: 1px
 }
 
 html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
@@ -396,10 +396,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .visual-refresh .avatarBorder__6f212 {
-    width: 50px;
     height: 50px;
     left: 19px;
-    top: -21px
+    top: -21px;
+    width: 50px
 }
 
 .visual-refresh .welcomeMessageProfileContainer__6f212 {
@@ -415,9 +415,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .upsellHeader_d9161f {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 16px
 }
 
@@ -428,30 +428,30 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .mainIsland_d9161f {
-    width: 400px;
+    bottom: 0;
     height: 200px;
     left: 0;
-    bottom: 0
+    width: 400px
 }
 
 .balloonDog_d9161f {
+    bottom: 0;
     height: 130px;
-    width: 130px;
     left: -10px;
-    bottom: 0
+    width: 130px
 }
 
 .upsellHeaderText_d9161f {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px
+    gap: 8px;
+    text-align: center
 }
 
 .upsellButtons_d9161f {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 16px
 }
 
@@ -462,15 +462,15 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .valueContainer_d9161f {
+    align-items: center;
     display: flex;
     gap: 32px;
-    justify-content: center;
-    align-items: center
+    justify-content: center
 }
 
 .valueText_d9161f {
-    gap: 12px;
-    flex-basis: 50%
+    flex-basis: 50%;
+    gap: 12px
 }
 
 .upsellContainer_d9161f,.valueText_d9161f {
@@ -484,18 +484,18 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .upsellPreview_d9161f {
     background-color: var(--background-secondary);
-    padding: 16px;
     border-radius: var(--radius-sm);
-    flex-basis: 50%
+    flex-basis: 50%;
+    padding: 16px
 }
 
 .previewListItem_d9161f {
+    align-items: center;
     background-color: var(--background-secondary-alt);
-    padding: 8px 12px;
     border-radius: var(--radius-sm);
     display: flex;
     gap: 12px;
-    align-items: center;
+    padding: 8px 12px;
     position: relative
 }
 
@@ -521,13 +521,13 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .channelIcon_d9161f {
-    width: 16px;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    width: 16px
 }
 
 .channel_d9161f {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
@@ -536,11 +536,11 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .checkbox_d9161f {
+    align-items: center;
+    border: 2px solid var(--interactive-normal);
     border-radius: var(--radius-xs);
     height: 20px;
-    width: 20px;
-    border: 2px solid var(--interactive-normal);
-    align-items: center
+    width: 20px
 }
 
 .checkbox_d9161f.selected_d9161f {
@@ -549,22 +549,22 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .checkmark_d9161f {
+    color: var(--white-500);
     height: 16px;
-    width: 16px;
-    color: var(--white-500)
+    width: 16px
 }
 
 .checkboxCircle_d9161f {
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    width: 20px;
-    height: 20px;
+    align-items: center;
+    background-color: var(--brand-500);
     border-radius: 20px;
     display: flex;
-    align-items: center;
+    height: 20px;
     justify-content: center;
-    background-color: var(--brand-500)
+    position: absolute;
+    right: -8px;
+    top: -8px;
+    width: 20px
 }
 
 .tooltip_d9161f {
@@ -572,18 +572,18 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .container_bc0d35 {
-    position: relative;
     background-color: var(--background-tertiary);
     border-radius: 8px;
-    justify-content: space-between;
-    padding: 16px;
     gap: 16px;
-    margin-bottom: 24px
+    justify-content: space-between;
+    margin-bottom: 24px;
+    padding: 16px;
+    position: relative
 }
 
 .container_bc0d35,.nuxContent_bc0d35 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .adminUpsell_bc0d35.container_bc0d35 {
@@ -592,17 +592,17 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .adminUpsell_bc0d35 .closeButton_bc0d35 {
-    top: 8px;
+    color: #fff;
     right: 8px;
-    color: #fff
+    top: 8px
 }
 
 .closeButton_bc0d35 {
-    position: absolute;
-    top: 12px;
-    right: 12px;
     color: var(--interactive-normal);
-    cursor: pointer
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 12px
 }
 
 .image_bc0d35 {
@@ -611,10 +611,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .heading_bc0d35 {
-    display: flex;
     align-items: center;
-    margin-bottom: 8px;
-    gap: 8px
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px
 }
 
 .tip_bc0d35 {
@@ -626,9 +626,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .categoryRow_e4503a {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 24px 0 8px
 }
 
@@ -661,9 +661,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .selectAll_e4503a {
-    margin-right: 4px;
+    cursor: pointer;
     display: flex;
-    cursor: pointer
+    margin-right: 4px
 }
 
 .selectAllCheckbox_e4503a {
@@ -671,13 +671,13 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .channelRow_e4503a {
+    align-items: center;
+    background-color: var(--background-primary);
     display: flex;
     justify-content: space-between;
-    align-items: center;
     max-width: 100%;
     min-height: 36px;
-    padding: 12px 16px;
-    background-color: var(--background-primary)
+    padding: 12px 16px
 }
 
 .channelRow_e4503a:not(.disabled_e4503a) {
@@ -718,9 +718,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .visual-refresh .lastChannel_e4503a {
+    border-bottom: 1px solid var(--border-subtle);
     border-bottom-left-radius: var(--radius-sm);
-    border-bottom-right-radius: var(--radius-sm);
-    border-bottom: 1px solid var(--border-subtle)
+    border-bottom-right-radius: var(--radius-sm)
 }
 
 .visual-refresh .separator_e4503a {
@@ -728,22 +728,22 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .channelInfo_e4503a {
-    flex-shrink: 1;
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
     gap: 4px;
     overflow: hidden
 }
 
 .channelActions_e4503a {
-    flex-shrink: 0;
-    display: flex
+    display: flex;
+    flex-shrink: 0
 }
 
 .channelSubtitles_e4503a {
     display: flex;
-    overflow: hidden;
-    margin-right: 16px
+    margin-right: 16px;
+    overflow: hidden
 }
 
 .channelSubtitle_e4503a {
@@ -751,14 +751,14 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .subtitleSeparator_e4503a {
-    flex-shrink: 0;
-    margin: 0 8px;
-    color: var(--background-modifier-accent);
+    align-self: center;
     background-color: var(--background-modifier-accent);
-    width: 4px;
-    height: 4px;
     border-radius: 4px;
-    align-self: center
+    color: var(--background-modifier-accent);
+    flex-shrink: 0;
+    height: 4px;
+    margin: 0 8px;
+    width: 4px
 }
 
 .channelName_e4503a,.topic_e4503a {
@@ -767,8 +767,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .channelName_e4503a {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-right: 8px
 }
 
@@ -777,8 +777,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .separator_e4503a {
-    height: 1px;
     background-color: var(--background-modifier-accent);
+    height: 1px;
     margin: -1px 16px 0
 }
 
@@ -800,8 +800,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .viewChannelButton_e4503a {
-    margin-right: 16px;
-    display: none
+    display: none;
+    margin-right: 16px
 }
 
 .checkboxInner_e4503a {
@@ -825,11 +825,11 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .pageBody__41ed7 {
-    flex-direction: column;
-    padding: 16px 0 0 16px;
+    background: var(--bg-overlay-chat,var(--home-background));
     display: flex;
+    flex-direction: column;
     min-height: 0;
-    background: var(--bg-overlay-chat,var(--home-background))
+    padding: 16px 0 0 16px
 }
 
 .header__41ed7 {
@@ -838,30 +838,30 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .search__41ed7 {
-    flex-shrink: 0;
+    border-radius: 8px;
     flex-grow: 1;
-    border-radius: 8px
+    flex-shrink: 0
 }
 
 .visual-refresh .pageBody__41ed7 {
-    padding: var(--spacing-16) var(--spacing-8);
-    background-color: var(--background-base-lower)
+    background-color: var(--background-base-lower);
+    padding: var(--spacing-16) var(--spacing-8)
 }
 
 .visual-refresh .header__41ed7 {
+    margin-bottom: var(--space-md);
     margin-left: var(--spacing-8);
-    margin-right: var(--spacing-24);
-    margin-bottom: var(--space-md)
+    margin-right: var(--spacing-24)
 }
 
 .createButton__41ed7 {
-    margin-left: 16px;
-    border-radius: 8px
+    border-radius: 8px;
+    margin-left: 16px
 }
 
 .createButtonInner__41ed7 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .createIcon__41ed7 {
@@ -873,10 +873,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .returnButton__41ed7 {
-    margin-right: 16px;
     margin-left: 8px;
-    padding: 2px 8px;
-    max-width: 200px
+    margin-right: 16px;
+    max-width: 200px;
+    padding: 2px 8px
 }
 
 .returnButton__41ed7:hover .returnButtonText__41ed7,.returnButton__41ed7:hover .returnIcon__41ed7 {
@@ -898,9 +898,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .returnIcon__41ed7 {
     height: 16px;
-    width: 16px;
     margin-left: 4px;
-    margin-right: -2px
+    margin-right: -2px;
+    width: 16px
 }
 
 .scrollerInner__41ed7 {
@@ -908,11 +908,11 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .optionButtonWrapper__270d7 {
-    position: relative;
+    align-items: center;
     border: 2px solid var(--background-modifier-accent);
     border-radius: 12px;
     display: flex;
-    align-items: center
+    position: relative
 }
 
 .optionButtonWrapper__270d7:hover {
@@ -938,13 +938,13 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .visual-refresh .optionButtonWrapper__270d7.pressed__270d7 {
-    transform: none;
-    background-color: var(--background-mod-normal)
+    background-color: var(--background-mod-normal);
+    transform: none
 }
 
 .visual-refresh .optionButtonWrapper__270d7.selected__270d7 {
-    border-color: var(--bg-brand);
-    background-color: var(--opacity-blurple-8)
+    background-color: var(--opacity-blurple-8);
+    border-color: var(--bg-brand)
 }
 
 .visual-refresh .optionButtonWrapper__270d7.selected__270d7.pressed__270d7 {
@@ -952,11 +952,11 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .optionButton__270d7 {
+    align-items: center;
+    cursor: pointer;
     display: flex;
     flex-grow: 1;
-    padding: 12px 16px;
-    cursor: pointer;
-    align-items: center
+    padding: 12px 16px
 }
 
 .full-motion .optionButton__270d7 {
@@ -964,32 +964,32 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .checkIcon__270d7 {
+    border-radius: 50%;
     right: -10px;
-    width: 20px;
-    border-radius: 50%
+    width: 20px
 }
 
 .checkIcon__270d7,.memberCount__270d7 {
-    position: absolute;
-    top: -10px;
-    height: 20px;
+    align-items: center;
     background-color: var(--brand-500);
     box-sizing: border-box;
     display: flex;
-    align-items: center;
-    justify-content: center
+    height: 20px;
+    justify-content: center;
+    position: absolute;
+    top: -10px
 }
 
 .memberCount__270d7 {
-    right: 20px;
     border-radius: 10px;
     padding: 0 8px;
+    right: 20px;
     white-space: nowrap
 }
 
 .buttonEmoji__270d7 {
-    margin-right: 12px;
-    align-self: center
+    align-self: center;
+    margin-right: 12px
 }
 
 .buttonText__270d7 {
@@ -999,10 +999,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .newBadge__270d7 {
+    color: var(--brand-560);
     position: absolute;
-    top: -10px;
     right: -10px;
-    color: var(--brand-560)
+    top: -10px
 }
 
 .suffix__05934 {
@@ -1038,14 +1038,14 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .pageBody__5d7c9 {
-    flex-direction: column;
     flex: 1;
+    flex-direction: column;
     padding-right: 16px
 }
 
 .pageBody__5d7c9:after {
-    content: "";
-    border-bottom: 4px solid transparent
+    border-bottom: 4px solid transparent;
+    content: ""
 }
 
 .header__5d7c9 {
@@ -1054,10 +1054,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .returnButton__5d7c9 {
-    margin-right: 16px;
     margin-left: 8px;
-    padding: 2px 8px;
-    max-width: 200px
+    margin-right: 16px;
+    max-width: 200px;
+    padding: 2px 8px
 }
 
 .returnButtonText__5d7c9 {
@@ -1067,9 +1067,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .returnIcon__5d7c9 {
     height: 16px;
-    width: 16px;
     margin-left: 4px;
-    margin-right: -2px
+    margin-right: -2px;
+    width: 16px
 }
 
 @keyframes newBorder__5d7c9 {
@@ -1091,14 +1091,14 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .prompt__5d7c9 {
-    padding: 16px;
-    border-radius: 8px;
     background-color: var(--background-primary);
-    position: relative;
+    border: 2px solid transparent;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 16px;
-    border: 2px solid transparent
+    padding: 16px;
+    position: relative
 }
 
 .prompt__5d7c9[data-new=true] {
@@ -1112,41 +1112,43 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .newBadge__5d7c9 {
+    color: var(--brand-560);
     position: absolute;
-    top: -10px;
     right: -10px;
-    color: var(--brand-560)
+    top: -10px
 }
 
 .promptTitle__5d7c9 {
-    display: inline;
-    align-items: center
+    align-items: center;
+    display: inline
 }
 
 .required__5d7c9 {
-    margin-left: 4px;
     color: var(--status-danger);
-    -webkit-text-decoration: underline;
+    margin-left: 4px;
     text-decoration: underline;
+    -webkit-text-decoration-color: transparent;
     text-decoration-color: transparent;
-    transition: text-decoration-color .3s ease-in-out
+    transition: -webkit-text-decoration-color .3s ease-in-out;
+    transition: text-decoration-color .3s ease-in-out;
+    transition: text-decoration-color .3s ease-in-out,-webkit-text-decoration-color .3s ease-in-out
 }
 
 .required__5d7c9.error__5d7c9 {
+    -webkit-text-decoration-color: var(--status-danger);
     text-decoration-color: var(--status-danger)
 }
 
 .requiredBadge__5d7c9 {
-    margin-left: 8px;
-    background-color: var(--background-accent)
+    background-color: var(--background-accent);
+    margin-left: 8px
 }
 
 .promptOptions__5d7c9 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     grid-auto-rows: 1fr;
-    grid-gap: 8px;
-    gap: 8px
+    grid-template-columns: 1fr 1fr
 }
 
 @media (min-width:1672px) {
@@ -1162,9 +1164,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .sectionSeparator__5d7c9 {
+    background-color: var(--background-modifier-accent);
     margin: 16px 0;
-    min-height: 1px;
-    background-color: var(--background-modifier-accent)
+    min-height: 1px
 }
 
 .emptyContainer__5d7c9,.emptyPage__5d7c9 {
@@ -1173,8 +1175,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .emptyContainer__5d7c9 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .emptyIcon__5d7c9 {
@@ -1187,33 +1189,34 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .helpText__5d7c9 {
     display: flex;
-    gap: 2px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    gap: 2px
 }
 
 .profile__5d7c9 {
+    position: -webkit-sticky;
     position: sticky;
     top: 0
 }
 
 .profileCard__5d7c9 {
-    padding: 16px;
-    width: 256px;
     background-color: var(--background-primary);
     border-radius: 8px;
-    margin-top: 16px
+    margin-top: 16px;
+    padding: 16px;
+    width: 256px
 }
 
 .separator__5d7c9 {
-    border: 0;
     background-color: var(--background-modifier-accent);
+    border: 0;
     height: 1px;
     margin: 16px 0
 }
 
 .username__5d7c9 {
-    margin-top: 16px;
-    margin-bottom: 4px
+    margin-bottom: 4px;
+    margin-top: 16px
 }
 
 .bio__5d7c9 {
@@ -1222,8 +1225,8 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .title__5d7c9 {
-    text-transform: uppercase;
-    margin-bottom: 8px
+    margin-bottom: 8px;
+    text-transform: uppercase
 }
 
 .roles__5d7c9 {
@@ -1243,9 +1246,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .roleDot__5d7c9 {
-    width: 8px;
     height: 8px;
-    margin: 0
+    margin: 0;
+    width: 8px
 }
 
 .emptyPage__5d7c9 {
@@ -1253,10 +1256,10 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .returnButton__0b563 {
-    margin-right: 16px;
     margin-left: 8px;
-    padding: 2px 8px;
-    max-width: 200px
+    margin-right: 16px;
+    max-width: 200px;
+    padding: 2px 8px
 }
 
 .visual-refresh .returnButton__0b563 {
@@ -1270,9 +1273,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 
 .returnIcon__0b563 {
     height: 16px;
-    width: 16px;
     margin-left: 4px;
-    margin-right: -2px
+    margin-right: -2px;
+    width: 16px
 }
 
 .container__0b563 {
@@ -1281,16 +1284,16 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .tabBar__0b563 {
+    border-bottom: 2px solid var(--background-modifier-accent);
     gap: 24px;
-    margin: 32px 32px 0;
-    border-bottom: 2px solid var(--background-modifier-accent)
+    margin: 32px 32px 0
 }
 
 .tabBarItem__0b563 {
-    padding-bottom: 16px;
+    align-items: center;
     display: flex;
     gap: 8px;
-    align-items: center
+    padding-bottom: 16px
 }
 
 .newBadge__0b563 {
@@ -1319,9 +1322,9 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
 }
 
 .visual-refresh .returnIconContainer__0b563 {
-    width: 16px;
     height: 16px;
-    margin-right: 6px
+    margin-right: 6px;
+    width: 16px
 }
 
 .visual-refresh .header__0b563 {
@@ -1329,4 +1332,4 @@ html:not(.visual-refresh) .welcomeMessageProfileContainer__6f212 {
     height: calc(var(--custom-channel-header-height) + 1px)
 }
 
-/*# sourceMappingURL=2ed5f2f6d95ac92a.css.map*/
+/*# sourceMappingURL=b37fae614cec45ee.css.map*/

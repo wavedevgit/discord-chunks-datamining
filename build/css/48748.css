@@ -1,12 +1,12 @@
 /**
   Module ID: 48748
-  Original File Name: 98ff4c192f6de5f7
+  Original File Name: ac99e1ab0df35a53
 **/
 .missingEntitlementImage__65266 {
-    margin: 0 auto 20px;
-    width: 400px;
+    background-size: contain;
     height: 200px;
-    background-size: contain
+    margin: 0 auto 20px;
+    width: 400px
 }
 
 .text__65266 {
@@ -21,4 +21,4 @@
     background-image: url(/assets/b584f76d3ff86700.svg)
 }
 
-/*# sourceMappingURL=98ff4c192f6de5f7.css.map*/
+/*# sourceMappingURL=ac99e1ab0df35a53.css.map*/

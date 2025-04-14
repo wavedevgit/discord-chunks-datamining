@@ -1,34 +1,33 @@
 /**
   Module ID: 88806
-  Original File Name: b57ecb74b9af3ad9
+  Original File Name: 3a514ea6f423abf4
 **/
 .headerImage__96095 {
-    width: 100%;
+    background-color: var(--background-primary);
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
-    background-color: var(--background-primary)
+    width: 100%
 }
 
 .header__96095 {
-    padding: 0;
-    height: 284px
+    height: 284px;
+    padding: 0
 }
 
 .closeButtonContainer__96095 {
-    width: 24px;
-    height: 24px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 50%;
     background-color: var(--opacity-black-84);
-    cursor: pointer
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 24px;
+    justify-content: center;
+    width: 24px
 }
 
 .closeButtonContainer__96095:hover {
-    transition: .2s ease;
-    opacity: .75
+    opacity: .75;
+    transition: .2s ease
 }
 
 .closeButtonIcon__96095 {
@@ -45,4 +44,4 @@
     height: 146px
 }
 
-/*# sourceMappingURL=b57ecb74b9af3ad9.css.map*/
+/*# sourceMappingURL=3a514ea6f423abf4.css.map*/

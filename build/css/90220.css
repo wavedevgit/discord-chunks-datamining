@@ -1,18 +1,18 @@
 /**
   Module ID: 90220
-  Original File Name: 1df1fe947be53a64
+  Original File Name: dace876a374258b2
 **/
 .header__82995 {
     padding: 0
 }
 
 .imageContainer__82995 {
-    height: 120px;
-    width: 100%;
-    display: flex;
     align-items: center;
+    background-color: #1c3d50;
+    display: flex;
+    height: 120px;
     justify-content: center;
-    background-color: #1c3d50
+    width: 100%
 }
 
 .content__82995 {
@@ -24,8 +24,8 @@
 }
 
 .bulletItem__82995 {
-    display: flex;
-    align-items: flex-start
+    align-items: flex-start;
+    display: flex
 }
 
 .bulletImage__82995 {
@@ -37,4 +37,4 @@
     color: var(--text-normal)
 }
 
-/*# sourceMappingURL=1df1fe947be53a64.css.map*/
+/*# sourceMappingURL=dace876a374258b2.css.map*/

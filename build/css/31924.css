@@ -1,9 +1,8 @@
 /**
   Module ID: 31924
-  Original File Name: 035f78e6dcaa30db
+  Original File Name: fc57a86d5b8e2253
 **/
 .icon_f4b9b5 {
-    filter: saturate(1);
     filter: saturate(var(--saturation-factor,1))
 }
 
@@ -66,11 +65,10 @@
 .levelContainer__3dcc3 {
     background: var(--bg-base-tertiary);
     border-radius: var(--radius-sm);
-    padding: var(--spacing-16);
     display: grid;
+    gap: var(--spacing-12);
     grid-template-columns: 1fr 1fr;
-    grid-gap: var(--spacing-12);
-    gap: var(--spacing-12)
+    padding: var(--spacing-16)
 }
 
 .perkContainer__3dcc3 {
@@ -78,8 +76,8 @@
 }
 
 .perkIcon__3dcc3 {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .perkText__3dcc3 {
@@ -87,15 +85,15 @@
 }
 
 .modal_bc32e9 {
-    overflow: hidden;
-    margin: 0
+    margin: 0;
+    overflow: hidden
 }
 
 .modalContentContainer_bc32e9 {
-    padding: var(--spacing-16);
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-16)
+    gap: var(--spacing-16);
+    padding: var(--spacing-16)
 }
 
 .headerContainer_bc32e9 {
@@ -112,18 +110,18 @@
 }
 
 .exampleImage_bc32e9 {
-    height: 228px;
     background: linear-gradient(180deg,rgba(15,16,17,0),rgba(15,16,17,.4));
-    border-radius: var(--radius-sm)
+    border-radius: var(--radius-sm);
+    height: 228px
 }
 
 .warningContainer_bc32e9 {
-    padding: var(--spacing-16);
-    gap: var(--spacing-4);
-    border: 1px solid var(--border-faint);
-    box-shadow: var(--shadow-low);
     background: var(--bg-mod-subtle);
-    border-radius: var(--radius-sm)
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-low);
+    gap: var(--spacing-4);
+    padding: var(--spacing-16)
 }
 
 .warningContainer_bc32e9,.warningText_bc32e9 {
@@ -140,14 +138,14 @@
 }
 
 .footer_bc32e9 {
+    gap: var(--spacing-8);
     padding: 0 var(--spacing-16);
-    padding-bottom: var(--spacing-16);
-    gap: var(--spacing-8)
+    padding-bottom: var(--spacing-16)
 }
 
 .image_bc32e9 {
-    border-radius: var(--radius-sm);
-    background: var(--bg-base-tertiary)
+    background: var(--bg-base-tertiary);
+    border-radius: var(--radius-sm)
 }
 
-/*# sourceMappingURL=035f78e6dcaa30db.css.map*/
+/*# sourceMappingURL=fc57a86d5b8e2253.css.map*/

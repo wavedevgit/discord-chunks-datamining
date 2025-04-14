@@ -1,6 +1,6 @@
 /**
   Module ID: 83264
-  Original File Name: 15a7ceb4405130c8
+  Original File Name: 2e9234af7c5ff9ba
 **/
 .wrapper__8ea31 {
     width: 100%
@@ -11,19 +11,19 @@
 }
 
 .prompt__2e257 {
-    margin-bottom: 20px;
-    color: var(--header-primary)
+    color: var(--header-primary);
+    margin-bottom: 20px
 }
 
 .selectYourAnswer__2e257 {
+    color: var(--primary-360);
     margin-bottom: 8px;
-    margin-top: 20px;
-    color: var(--primary-360)
+    margin-top: 20px
 }
 
 .separator__2e257 {
-    border: 0;
     background-color: var(--primary-500);
+    border: 0;
     height: 1px;
     margin: 0
 }
@@ -47,9 +47,9 @@
 }
 
 .quizResultHeading__91747 {
+    color: var(--text-normal);
     margin-bottom: 24px;
-    text-align: center;
-    color: var(--text-normal)
+    text-align: center
 }
 
 .inputFirstName__91747,.nameFormPreface__91747 {
@@ -62,20 +62,20 @@
 
 .quizResultLogoWrapper__91747 {
     border-radius: 100%;
+    height: 160px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    width: 160px;
-    height: 160px
+    width: 160px
 }
 
 .quizResultLogo__91747 {
+    height: 115px;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
-    width: 115px;
-    height: 115px;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
+    width: 115px
 }
 
 .quizResultLogoWrapperHouse1__91747 {
@@ -94,4 +94,4 @@
     background-color: var(--hypesquad-house-3)
 }
 
-/*# sourceMappingURL=15a7ceb4405130c8.css.map*/
+/*# sourceMappingURL=2e9234af7c5ff9ba.css.map*/

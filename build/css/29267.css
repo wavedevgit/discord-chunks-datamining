@@ -1,6 +1,6 @@
 /**
   Module ID: 29267
-  Original File Name: ff437c97c5168259
+  Original File Name: 9debc1637e38561a
 **/
 .partnerBranding__83420 {
     align-items: center;
@@ -17,7 +17,6 @@
 .partnerBrandingLogotype__83420 {
     height: 24px;
     max-width: 92px;
-    -o-object-fit: contain;
     object-fit: contain
 }
 
@@ -66,14 +65,14 @@
 
 .borderBottom__311b6 {
     border-bottom: 1px solid var(--border-subtle);
-    padding-bottom: 2px;
-    margin-bottom: 2px
+    margin-bottom: 2px;
+    padding-bottom: 2px
 }
 
 .borderTop__311b6 {
     border-top: 1px solid var(--border-subtle);
-    padding-top: 2px;
-    margin-top: 2px
+    margin-top: 2px;
+    padding-top: 2px
 }
 
 .rewardsDisclosuresDurationPremiumExtendable__311b6:after {
@@ -83,16 +82,16 @@
 }
 
 .rewardsDisclosuresItemPremiumHighlight__311b6 {
-    background-image: linear-gradient(90deg,var(--premium-tier-2-purple),var(--premium-tier-2-pink));
     -webkit-background-clip: text;
     background-clip: text;
+    background-image: linear-gradient(90deg,var(--premium-tier-2-purple) 0,var(--premium-tier-2-pink) 100%);
     color: transparent
 }
 
 .desktopTooltip_fed3a2 {
     display: flex;
-    width: 100%;
-    padding: 4px 0
+    padding: 4px 0;
+    width: 100%
 }
 
 .infoIcon_fed3a2 {
@@ -128,8 +127,8 @@
     background-color: currentColor;
     border-radius: 4px;
     height: 100%;
-    position: absolute;
     left: 0;
+    position: absolute;
     top: 0
 }
 
@@ -172,8 +171,8 @@
 
 .container__0d029 {
     display: flex;
-    margin-top: 16px;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-top: 16px
 }
 
 .info__0d029 {
@@ -215,37 +214,40 @@
 }
 
 .questsCollectibleReward__16be0 {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     grid-area: cta-img;
     height: 64px;
+    justify-content: center;
     width: 64px
 }
 
 .outerContainer__2055a {
-    padding: 16px;
     display: grid;
+    grid-template: "cta-img text cta-buttons" -webkit-min-content "cta-img progress-bar progress-bar" -webkit-min-content/-webkit-min-content 1fr auto;
     grid-template: "cta-img text cta-buttons" min-content "cta-img progress-bar progress-bar" min-content/min-content 1fr auto;
+    padding: 16px;
     grid-column-gap: 16px;
     align-items: center
 }
 
 .outerContainerNoProgress__2055a {
+    grid-template: "cta-img text cta-buttons" -webkit-min-content/-webkit-min-content 1fr auto;
     grid-template: "cta-img text cta-buttons" min-content/min-content 1fr auto
 }
 
 .outerContainerSm__2055a {
-    max-height: none;
+    grid-template: "cta-img text" auto "progress-bar progress-bar" auto "cta-buttons cta-buttons" auto/-webkit-min-content 1fr;
     grid-template: "cta-img text" auto "progress-bar progress-bar" auto "cta-buttons cta-buttons" auto/min-content 1fr;
+    max-height: none;
     grid-row-gap: 6px;
     grid-column-gap: 12px
 }
 
 .outerContainerXs__2055a {
+    grid-template: "cta-img" auto "text" auto "progress-bar" auto "cta-buttons" auto/1fr;
     max-height: none;
     position: relative;
-    grid-template: "cta-img" auto "text" auto "progress-bar" auto "cta-buttons" auto/1fr;
     grid-row-gap: 6px;
     grid-column-gap: 12px
 }
@@ -282,15 +284,15 @@
 }
 
 .questRewardEmbedXs__2055a {
-    position: absolute;
+    bottom: 0;
     height: 50px;
-    width: 50px;
-    bottom: 0
+    position: absolute;
+    width: 50px
 }
 
 .innerContainer__2055a {
-    width: 100%;
-    flex-direction: column
+    flex-direction: column;
+    width: 100%
 }
 
 .innerContainer__2055a,.questCopyCta__2055a {
@@ -299,8 +301,8 @@
 }
 
 .questCopyCta__2055a {
-    gap: 16px;
     align-items: center;
+    gap: 16px;
     height: 100%
 }
 
@@ -313,9 +315,9 @@
 }
 
 .ctaButtonContainer__2055a {
+    align-items: center;
     display: flex;
     flex-wrap: wrap-reverse;
-    align-items: center;
     gap: 8px
 }
 
@@ -328,8 +330,8 @@
 }
 
 .ctaButtonInner__2055a {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .outerContainerSm__2055a .ctaButtonWrapper__2055a,.outerContainerXs__2055a .ctaButtonWrapper__2055a {
@@ -369,8 +371,8 @@
 }
 
 .rewardTileWrapper__2055a {
-    position: relative;
-    grid-area: cta-img
+    grid-area: cta-img;
+    position: relative
 }
 
 .rewardTileExpired__2055a {
@@ -391,9 +393,8 @@
 
 .inHouseButton__2055a {
     --custom-grapefruit: 255,70,85;
-    color: var(--white-500);
-    background-color: rgb(255,70,85);
-    background-color: rgb(var(--custom-grapefruit))
+    background-color: rgb(var(--custom-grapefruit));
+    color: var(--white-500)
 }
 
 .inHouseButton__2055a:hover {
@@ -405,18 +406,18 @@
 }
 
 .inHouseIcon__2055a {
-    width: 20px;
-    margin-right: 5px
+    margin-right: 5px;
+    width: 20px
 }
 
 .refreshIcon__2055a {
-    margin-left: 8px;
-    color: var(--white-500)
+    color: var(--white-500);
+    margin-left: 8px
 }
 
 .separator__2055a {
-    height: 1px;
-    background-color: var(--background-modifier-hover)
+    background-color: var(--background-modifier-hover);
+    height: 1px
 }
 
 .microphoneContainer__2055a {
@@ -426,9 +427,9 @@
 .outerContainer__092f9 {
     display: flex;
     flex-direction: column;
+    max-height: 185px;
     overflow: hidden;
-    position: relative;
-    max-height: 185px
+    position: relative
 }
 
 .outerContainerGiftInventory__092f9 {
@@ -440,19 +441,18 @@
 }
 
 .questSplash__092f9 {
-    -o-object-fit: cover;
+    max-width: 660px;
+    min-height: 100%;
     object-fit: cover;
     position: absolute;
-    max-width: 660px;
-    width: 100%;
-    min-height: 100%
+    width: 100%
 }
 
 .header__092f9 {
     box-sizing: border-box;
-    position: relative;
     flex: 1 1 auto;
     height: 100%;
+    position: relative;
     width: 100%;
     z-index: 1
 }
@@ -462,12 +462,12 @@
 }
 
 .headerContent__092f9 {
-    width: 100%;
-    position: absolute;
     bottom: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
+    position: absolute;
+    width: 100%
 }
 
 .headerContentEmbed__092f9 {
@@ -475,11 +475,11 @@
 }
 
 .headerExpandedContent__092f9 {
-    display: flex;
+    align-items: flex-start;
     box-sizing: border-box;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 20px 16px
 }
 
@@ -493,43 +493,43 @@
 }
 
 .headerCollapsedClickableContainer__092f9 {
-    height: 100%;
-    width: 100%;
+    align-items: center;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    height: 100%;
     padding: 8px;
-    cursor: pointer
+    width: 100%
 }
 
 .headerCollapsedContentRewardWrapper__092f9 {
-    display: flex;
-    background-color: var(--border-subtle);
-    flex-direction: column;
     align-items: center;
-    gap: 4px;
-    padding: 4px 4px 6px;
+    background-color: var(--border-subtle);
     border-radius: 8px;
-    margin-right: 20px
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: 20px;
+    padding: 4px 4px 6px
 }
 
 .headerCollapsedRewardTile__092f9 {
+    border-radius: 6px;
     height: 60px;
-    width: 60px;
-    border-radius: 6px
+    width: 60px
 }
 
 .headerCollapsedContentCopyWrapper__092f9 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 4px
 }
 
 .headerCollapsedContentCopyLogos__092f9,.iconLogotypeContainer__092f9 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .partnerBranding__092f9 {
@@ -550,46 +550,46 @@
 }
 
 .heading__092f9 {
-    white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .outerContainer__092f9:after {
+    background: linear-gradient(180deg,transparent,25%,rgba(0,0,0,.9));
     content: "";
-    position: absolute;
+    height: 100%;
     left: 0;
+    pointer-events: none;
+    position: absolute;
     top: 0;
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    background: linear-gradient(180deg,transparent,25%,rgba(0,0,0,.9))
+    z-index: 0
 }
 
 .iconsContainer__092f9 {
-    position: absolute;
-    right: 16px;
     flex-direction: row;
-    gap: 8px
+    gap: 8px;
+    position: absolute;
+    right: 16px
 }
 
-.iconsContainer__092f9,.iconWrapper__092f9 {
-    display: flex;
-    align-items: center
+.iconWrapper__092f9,.iconsContainer__092f9 {
+    align-items: center;
+    display: flex
 }
 
 .iconWrapper__092f9 {
-    justify-content: center;
     align-self: flex-start;
     background-color: rgba(0,0,0,.4);
     border-radius: 16px;
     cursor: pointer;
-    opacity: .9;
-    transition: background-color .125s, opacity .125s;
     height: 32px;
-    width: 32px;
-    line-height: 32px
+    justify-content: center;
+    line-height: 32px;
+    opacity: .9;
+    transition: background-color .125s,opacity .125s;
+    width: 32px
 }
 
 .iconWrapper__092f9:focus,.iconWrapper__092f9:hover {
@@ -614,11 +614,11 @@
 }
 
 .questsCard__72a00 {
-    width: 100%;
+    border-radius: 8px;
     max-width: 660px;
     min-width: 280px;
-    border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    width: 100%
 }
 
 .visual-refresh .questsCard__72a00 {
@@ -700,8 +700,8 @@
     position: absolute;
     text-align: center;
     top: 4px;
-    word-break: break-word;
-    width: calc(100% - 8px)
+    width: calc(100% - 8px);
+    word-break: break-word
 }
 
 .content_e9b191 {
@@ -745,8 +745,8 @@
 .submenuWrapper_e9b191 {
     cursor: pointer;
     position: absolute;
-    top: 8px;
-    right: 8px
+    right: 8px;
+    top: 8px
 }
 
 .submenuIcon_e9b191 {
@@ -766,15 +766,15 @@
 .container_c55cae {
     box-sizing: border-box;
     margin-bottom: 16px;
-    width: 100%;
     max-width: 660px;
-    min-width: 280px
+    min-width: 280px;
+    width: 100%
 }
 
 .wide_c55cae.container_c55cae {
-    height: 250px;
     display: flex;
-    flex-shrink: 0
+    flex-shrink: 0;
+    height: 250px
 }
 
 .tall_c55cae.container_c55cae {
@@ -783,12 +783,12 @@
 }
 
 .contentContainer_c55cae {
-    flex: 1;
-    padding: 38px 16px 16px;
     background: var(--background-tertiary);
     border-radius: 8px 0 0 8px;
     display: flex;
-    flex-direction: column
+    flex: 1;
+    flex-direction: column;
+    padding: 38px 16px 16px
 }
 
 .tall_c55cae .contentContainer_c55cae {
@@ -797,8 +797,8 @@
 }
 
 .buttonContainer_c55cae {
-    margin-top: auto;
-    align-self: flex-start
+    align-self: flex-start;
+    margin-top: auto
 }
 
 .tall_c55cae .buttonContainer_c55cae {
@@ -811,20 +811,19 @@
 }
 
 .imgContainer_c55cae {
-    flex: 1;
-    padding: 16px;
+    align-items: center;
     background: var(--background-secondary);
     border-radius: 0 8px 8px 0;
     display: flex;
-    align-items: center;
-    justify-content: center
+    flex: 1;
+    justify-content: center;
+    padding: 16px
 }
 
 .missingQuestImage_c55cae {
-    width: 100%;
     height: 180px;
-    -o-object-fit: contain;
-    object-fit: contain
+    object-fit: contain;
+    width: 100%
 }
 
 .theme-light .contentContainer_c55cae {
@@ -844,9 +843,9 @@
 }
 
 .modalBody_b83a17 {
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
     padding: 76px;
     position: relative
@@ -878,12 +877,12 @@
 }
 
 .rewardTile_b83a17 {
-    width: 240px;
-    height: 348px;
-    padding: 16px;
     border-radius: 8px;
+    box-shadow: var(--shadow-high);
+    height: 348px;
     margin-right: 40px;
-    box-shadow: var(--shadow-high)
+    padding: 16px;
+    width: 240px
 }
 
 .rewardTileWrapper_b83a17 {
@@ -923,15 +922,15 @@
 }
 
 .rewardSubheading_b83a17 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: center;
     margin-bottom: 4px
 }
 
 .rewardHeading_b83a17 {
-    text-align: center;
-    line-height: 1.2
+    line-height: 1.2;
+    text-align: center
 }
 
 .rewardSubheadingText_b83a17 {
@@ -943,8 +942,8 @@
 }
 
 .platformSelectionOptionLabelContainer_b83a17 {
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: flex-start
 }
 
@@ -953,9 +952,9 @@
 }
 
 .confettiCanvas_b83a17 {
+    height: 100%;
     position: absolute;
-    width: 100%;
-    height: 100%
+    width: 100%
 }
 
 .cosponsorFooter_b83a17 {
@@ -966,10 +965,10 @@
 
 .cosponsorLogotype_b83a17 {
     margin-bottom: 8px;
-    min-height: 24px;
     max-height: 32px;
-    width: auto;
-    max-width: 120px
+    max-width: 120px;
+    min-height: 24px;
+    width: auto
 }
 
 .cosponsorName_b83a17 {
@@ -980,4 +979,4 @@
     margin-top: 0
 }
 
-/*# sourceMappingURL=ff437c97c5168259.css.map*/
+/*# sourceMappingURL=9debc1637e38561a.css.map*/

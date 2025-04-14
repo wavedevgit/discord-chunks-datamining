@@ -1,14 +1,14 @@
 /**
   Module ID: 522
-  Original File Name: 2d66dbc2d441286d
+  Original File Name: d7e6e053a8e14c42
 **/
 .qrCodeOverlay_c28498 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
     align-items: center;
-    justify-content: center
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    width: 100%
 }
 
 .qrCodeOverlay_c28498 img {
@@ -16,25 +16,26 @@
 }
 
 .size-40_c28498 {
-    width: 40px;
-    height: 40px
+    height: 40px;
+    width: 40px
 }
 
 .size-60_c28498 {
-    width: 60px;
-    height: 60px
+    height: 60px;
+    width: 60px
 }
 
 .qrCodeOverlayContainer_c28498 {
     display: flex;
+    position: relative;
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    position: relative
+    width: fit-content
 }
 
 .qrCodeContainer_c28498 {
-    padding: var(--spacing-8);
-    border-radius: var(--radius-xs)
+    border-radius: var(--radius-xs);
+    padding: var(--spacing-8)
 }
 
 .modalRoot__3988c {
@@ -44,8 +45,8 @@
 .modalHeaderContainer__3988c {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 24px 52px 16px
+    padding: 24px 52px 16px;
+    text-align: center
 }
 
 .modalHeader__3988c {
@@ -53,16 +54,16 @@
 }
 
 .content__3988c {
-    padding-bottom: 16px;
-    margin-top: 16px
+    margin-top: 16px;
+    padding-bottom: 16px
 }
 
 .card__3988c {
     background-color: var(--background-secondary);
-    padding: 16px;
     border-radius: 8px;
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    padding: 16px
 }
 
 .cardText__3988c {
@@ -72,17 +73,17 @@
 }
 
 .cardRow__3988c {
-    display: flex;
     align-items: center;
+    display: flex;
     margin-bottom: 8px
 }
 
 .cardHeaderIcon__3988c {
-    margin-right: 8px;
-    padding: 4px;
-    border-radius: 4px;
     background-color: var(--xbox);
-    color: var(--white-500)
+    border-radius: 4px;
+    color: var(--white-500);
+    margin-right: 8px;
+    padding: 4px
 }
 
 .qrCode__3988c {
@@ -91,23 +92,23 @@
 
 .closeButton__3988c {
     position: absolute;
-    z-index: 1;
+    right: 16px;
     top: 16px;
-    right: 16px
+    z-index: 1
 }
 
 .learnMore__3988c {
-    margin-top: 2px;
-    display: inline-block
+    display: inline-block;
+    margin-top: 2px
 }
 
 .stepNumberContainer__3988c {
-    min-width: 24px;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
     background-color: var(--background-accent);
-    margin-right: 8px
+    border-radius: 12px;
+    height: 24px;
+    margin-right: 8px;
+    min-width: 24px;
+    width: 24px
 }
 
 .stepNumber__3988c {
@@ -120,4 +121,4 @@
     opacity: .6
 }
 
-/*# sourceMappingURL=2d66dbc2d441286d.css.map*/
+/*# sourceMappingURL=d7e6e053a8e14c42.css.map*/

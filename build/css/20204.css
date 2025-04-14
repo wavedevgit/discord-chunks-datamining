@@ -1,19 +1,19 @@
 /**
   Module ID: 20204
-  Original File Name: 60e2de9504135a83
+  Original File Name: 7ccdefa0425dab05
 **/
 .labelWrapper_abe771 {
-    display: flex;
+    align-items: center;
     -moz-column-gap: 8px;
     column-gap: 8px;
-    row-gap: 4px;
+    display: flex;
     flex-wrap: wrap;
-    align-items: center
+    row-gap: 4px
 }
 
 .label_abe771 {
-    text-overflow: ellipsis;
-    overflow: hidden
+    overflow: hidden;
+    text-overflow: ellipsis
 }
 
 .newBadge_abe771 {
@@ -30,19 +30,19 @@
 }
 
 .inviteGuestContainer_abe771 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .loadingWrapper__5a143 {
+    align-items: center;
+    border-radius: 2px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 8px 4px;
     height: 16px;
-    border-radius: 2px;
+    justify-content: center;
     margin: 2px 0;
-    justify-content: center
+    padding: 8px 4px
 }
 
 .list_c47777 {
@@ -68,28 +68,32 @@
 }
 
 .label__3751b,.subtext__3751b {
-    display: flex;
     align-items: center;
+    display: flex;
     gap: 4px
 }
 
 .ringing__3751b {
-    opacity: .3;
-    animation: outgoing-call-pulse__3751b 1s ease-out infinite
+    animation: outgoing-call-pulse__3751b 1s ease-out infinite;
+    opacity: .3
 }
 
 .channelName__3751b {
     color: var(--text-secondary)
 }
 
-:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b,:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
+:where(.visual-refresh) .menuItem__3751b:hover .channelName__3751b {
+    color: var(--header-primary)
+}
+
+:where(.visual-refresh) .menuItem__3751b:hover .subtext__3751b {
     color: var(--header-primary)
 }
 
 .videoPaused_afb275 {
+    align-items: center;
     display: flex;
-    justify-content: left;
-    align-items: center
+    justify-content: left
 }
 
 .warningCircle_afb275 {
@@ -97,13 +101,13 @@
 }
 
 .roleRow_b82947 {
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    align-items: center
+    flex-direction: row
 }
 
 .roleDot_b82947 {
     margin-right: 8px
 }
 
-/*# sourceMappingURL=60e2de9504135a83.css.map*/
+/*# sourceMappingURL=7ccdefa0425dab05.css.map*/
