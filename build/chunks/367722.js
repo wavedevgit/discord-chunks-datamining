@@ -1,11 +1,11 @@
 /** Chunk was on 99905 **/
 t.d(n, {
-  Z: () => c
+  Z: () => i
 });
 var r = t(466330),
   l = t(981631);
 
-function c(e, n, t) {
+function i(e, n, t) {
   return (0, r.Z)({
     guild: n,
     channel: e,

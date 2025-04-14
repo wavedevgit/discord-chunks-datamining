@@ -185,7 +185,7 @@ function w(e) {
   let {
     analyticsLocations: u
   } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, y.Q3)("SingleUserTile"), {
-    enabled: h
+    entrypoints: h
   } = (0, C._k)({
     location: "single_user_tile"
   }), {

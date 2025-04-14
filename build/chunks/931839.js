@@ -1,6 +1,6 @@
 /** Chunk was on 53512 **/
 s.d(t, {
-  O: () => o,
+  O: () => d,
   Z: () => m
 });
 var n, i = s(200651);
@@ -9,8 +9,8 @@ var r = s(120356),
   a = s.n(r),
   l = s(481060),
   c = s(388032),
-  d = s(923918),
-  o = ((n = {})[n.Intro = 0] = "Intro", n[n.Customize = 1] = "Customize", n[n.Tips = 2] = "Tips", n);
+  o = s(923918),
+  d = ((n = {})[n.Intro = 0] = "Intro", n[n.Customize = 1] = "Customize", n[n.Tips = 2] = "Tips", n);
 
 function m(e) {
   let {
@@ -19,7 +19,7 @@ function m(e) {
     submitted: n
   } = e;
   return (0, i.jsxs)("div", {
-    className: d.tabs,
+    className: o.tabs,
     children: [(0, i.jsx)(x, {
       tab: 0,
       selectedTab: t,
@@ -51,11 +51,11 @@ function x(e) {
     onClick: c
   } = e;
   return r ? (0, i.jsxs)("div", {
-    className: a()(d.tab, {
-      [d.current]: s === t
+    className: a()(o.tab, {
+      [o.current]: s === t
     }),
     children: [(0, i.jsx)("div", {
-      className: d.progressBar
+      className: o.progressBar
     }), (0, i.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: s === t ? "text-brand" : "text-muted",
@@ -63,11 +63,11 @@ function x(e) {
     })]
   }) : (0, i.jsxs)(l.P3F, {
     onClick: () => c(t),
-    className: a()(d.tab, {
-      [d.current]: s === t
+    className: a()(o.tab, {
+      [o.current]: s === t
     }),
     children: [(0, i.jsx)("div", {
-      className: d.progressBar
+      className: o.progressBar
     }), (0, i.jsx)(l.Text, {
       variant: "text-xs/medium",
       color: s === t ? "text-brand" : "text-muted",

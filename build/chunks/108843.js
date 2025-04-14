@@ -1,18 +1,18 @@
 /** Chunk was on 99905 **/
 t.d(n, {
-  Z: () => c
+  Z: () => i
 });
 var r = t(200651);
 t(192379);
 var l = t(906732);
 
-function c(e, n) {
+function i(e, n) {
   return function(t) {
     let {
-      analyticsLocations: c
+      analyticsLocations: i
     } = (0, l.ZP)(n);
     return (0, r.jsx)(l.Gt, {
-      value: c,
+      value: i,
       children: (0, r.jsx)(e, function(e) {
         for (var n = 1; n < arguments.length; n++) {
           var t = null != arguments[n] ? arguments[n] : {},

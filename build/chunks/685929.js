@@ -1,17 +1,17 @@
 /** Chunk was on 99905 **/
 t.d(n, {
-  C: () => i,
+  C: () => c,
   Y: () => o
 });
 var r = t(442837),
   l = t(496675),
-  c = t(981631);
+  i = t(981631);
 
-function i(e) {
+function c(e) {
   let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.Z;
-  return null != e && null != e.linkedLobby && n.can(c.Plq.MANAGE_CHANNELS, e) && n.can(c.Plq.VIEW_CHANNEL, e) && n.can(c.Plq.SEND_MESSAGES, e)
+  return null != e && null != e.linkedLobby && n.can(i.Plq.MANAGE_CHANNELS, e) && n.can(i.Plq.VIEW_CHANNEL, e) && n.can(i.Plq.SEND_MESSAGES, e)
 }
 
 function o(e) {
-  return (0, r.e7)([l.Z], () => i(e, l.Z))
+  return (0, r.e7)([l.Z], () => c(e, l.Z))
 }

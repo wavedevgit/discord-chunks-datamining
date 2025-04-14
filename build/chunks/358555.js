@@ -139,7 +139,7 @@ function C(e) {
     disableColor: n,
     disableBoostClick: i
   } = e, a = (0, c.Z)(t), f = (0, l.Q3)("GuildStatusBadge"), {
-    enabled: _
+    entrypoints: _
   } = (0, p._k)({
     location: "guild_status_badge"
   });

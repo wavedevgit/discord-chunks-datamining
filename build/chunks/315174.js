@@ -340,7 +340,7 @@ let A = i.memo(function(e) {
     },
     q = (0, d.Q3)("GuildHeader"),
     {
-      enabled: K
+      entrypoints: K
     } = (0, h._k)({
       location: "guild_header"
     }),

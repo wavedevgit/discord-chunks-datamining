@@ -220,7 +220,7 @@ class en extends V.ZP {
       shouldShowGuildVerificationPopout: Z
     } = this.state, E = (0, I.jW)({
       location: "voice_channel"
-    }), T = this.getVoiceStatesCount(), A = (0, r.jsxs)("li", {
+    }).entrypoints, T = this.getVoiceStatesCount(), A = (0, r.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [X.disabled]: this.isDisabled()

@@ -24,8 +24,8 @@ var l = n(200651),
   _ = n(933557),
   E = n(259473),
   S = n(600164),
-  b = n(687516),
-  T = n(266076),
+  T = n(687516),
+  b = n(266076),
   O = n(227672),
   y = n(810123),
   C = n(448486),
@@ -150,7 +150,7 @@ function ei(e) {
     disabled: o
   } = e, u = i.useCallback(() => s(r.id), [s, r.id]), d = null != (t = (0, _.ZP)(r)) ? t : "", c = null != (n = (0, C._)(r)) ? n : "";
   return (0, l.jsx)(en, {
-    icon: (0, l.jsx)(T.Z, {
+    icon: (0, l.jsx)(b.Z, {
       "aria-hidden": !0,
       size: h.EFr.SIZE_32,
       channel: r,
@@ -293,8 +293,8 @@ function ea(e) {
     streamUserId: p,
     applicationId: I,
     analyticsLocation: _
-  } = e, T = null;
-  null != I ? T = Y.Iq.EMBEDDED_APPLICATION : null != p && (T = Y.Iq.STREAM);
+  } = e, b = null;
+  null != I ? b = Y.Iq.EMBEDDED_APPLICATION : null != p && (b = Y.Iq.STREAM);
   let y = (0, E.Z)({
       guildId: r.id
     }),
@@ -306,8 +306,8 @@ function ea(e) {
       max_age: y
     }, null == I ? {} : {
       target_application_id: I
-    }, null == T ? {} : {
-      target_type: T
+    }, null == b ? {} : {
+      target_type: b
     }, null == p ? {} : {
       target_user_id: p
     })),
@@ -360,27 +360,27 @@ function ea(e) {
       canCreateApplicationBypassInvites: eE,
       isManualApprovalGuild: eS
     } = (0, G.R)(r),
-    eb = e_ && ej,
+    eT = e_ && ej,
     {
-      rows: eT,
+      rows: eb,
       showFriends: eO,
       initialCounts: ey
     } = (0, q.B)({
       guild: r,
       inviteChannel: eI,
-      inviteTargetType: T,
+      inviteTargetType: b,
       applicationId: I
     });
   (0, v.ZP)(() => {
     switch (eO && W.default.track(K.rMx.INVITE_SUGGESTION_OPENED, {
         location: d,
-        num_suggestions: eT.length,
+        num_suggestions: eb.length,
         num_friends: ey.numFriends,
         num_dms: ey.numDms,
         num_group_dms: ey.numGroupDms,
         guild_id: r.id,
         application_id: I
-      }), T) {
+      }), b) {
       case Y.Iq.EMBEDDED_APPLICATION:
         W.default.track(K.rMx.OPEN_MODAL, {
           type: "Instant Invite Modal",
@@ -392,7 +392,7 @@ function ea(e) {
       case Y.Iq.STREAM:
         if (null == p) break;
         let e = Z.Z.getStreamForUser(p, r.id),
-          t = (0, b.L2)(e, D.Z);
+          t = (0, T.L2)(e, D.Z);
         W.default.track(K.rMx.OPEN_MODAL, {
           type: "Send Stream Invite",
           source: d,
@@ -445,7 +445,7 @@ function ea(e) {
       try {
         let t = await eP();
         o()(null != t, "Invite key could not be determined.");
-        let n = eT.filter(e => C.includes(e.item.id)).map(e => {
+        let n = eb.filter(e => C.includes(e.item.id)).map(e => {
           var n;
           let l, i = eh[0],
             r = null != (n = R.Z.getSelectedInviteMetadata(e)) ? n : null;
@@ -496,7 +496,7 @@ function ea(e) {
         eu(e), ea(!1)
       }
       e && eC()
-    }, [er, el, ea, C, eT, eP, eh, eC]),
+    }, [er, el, ea, C, eb, eP, eh, eC]),
     ew = er || el;
   return (0, l.jsx)(f.Gt, {
     value: eh,
@@ -538,10 +538,10 @@ function ea(e) {
         })]
       }), (0, l.jsx)(h.hzk, {
         className: s()(J.body, {
-          [J.empty]: 0 === eT.length
+          [J.empty]: 0 === eb.length
         }),
         children: (0, l.jsx)(es, {
-          rows: eT,
+          rows: eb,
           onToggle: ex,
           scrollerRef: ec,
           selection: C,
@@ -562,8 +562,8 @@ function ea(e) {
           hasSelection: C.length > 0,
           options: ee,
           setOptions: ep,
-          isGuestInviteAllowed: eb,
-          isTemporaryInviteAllowed: !eb && !eS,
+          isGuestInviteAllowed: eT,
+          isTemporaryInviteAllowed: !eT && !eS,
           isApplicationBypassAllowed: eE,
           setError: eu,
           analyticsLocation: eh[0]

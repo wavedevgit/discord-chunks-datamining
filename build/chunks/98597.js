@@ -157,7 +157,7 @@ function A(e) {
     forceShowButtons: f,
     hasChannelInfo: b = !1
   } = e, {
-    enabled: O
+    entrypoints: O
   } = (0, p._k)({
     location: "channel_base"
   }), j = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), P = (0, s.e7)([g.Z], () => g.Z.getStageInstanceByChannel(t.id), [t.id]), Z = (0, s.e7)([d.ZP], () => d.ZP.getActiveEventByChannel(t.id), [t.id]), E = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, j, t, P)), w = (0, s.e7)([v.Z], () => v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? x.NW.string(x.t.zJrgTE) : x.NW.string(x.t.Sd8Ix8)), T = O ? x.NW.string(x.t["EE+P0N"]) : w, A = l.useRef(null);

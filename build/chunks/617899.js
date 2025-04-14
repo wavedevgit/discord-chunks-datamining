@@ -26,7 +26,7 @@ class g extends i.PureComponent {
   getInviteText() {
     return (0, o.jW)({
       location: "invite_notice"
-    }) ? p.NW.string(p.t.Sd8Ix8) : p.NW.string(p.t.BN75l5)
+    }).entrypoints ? p.NW.string(p.t.Sd8Ix8) : p.NW.string(p.t.BN75l5)
   }
   render() {
     let e = "".concat(p.NW.string(p.t.VWqWZW), "\n").concat(p.NW.string(p.t["0Lgb/P"])),

@@ -108,7 +108,7 @@ class k extends I.ZP {
       enableActivities: S
     } = this.props, P = (0, b.jW)({
       location: "text_channel"
-    }), I = S && null != j && j.length > 0, N = (0, g.D)(v), E = (0, r.jsx)("li", {
+    }).entrypoints, I = S && null != j && j.length > 0, N = (0, g.D)(v), E = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [A.disabled]: this.isDisabled(),
         [A.selected]: n

@@ -5,8 +5,8 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var l = t(442837),
-  c = t(481060),
-  i = t(787014),
+  i = t(481060),
+  c = t(787014),
   o = t(685929),
   a = t(496675),
   u = t(981631),
@@ -26,9 +26,9 @@ function b(e) {
     canAccessChannel: a.Z.can(e.accessPermissions, e),
     canUnlinkChannel: (0, o.C)(e, a.Z)
   }), [e]);
-  return !__OVERLAY__ && d && (n || t || b || f) ? (0, r.jsx)(c.sNh, {
+  return !__OVERLAY__ && d && (n || t || b || f) ? (0, r.jsx)(i.sNh, {
     id: "edit-channel",
     label: e.type === u.d4z.GUILD_CATEGORY ? s.NW.string(s.t.zdPFs7) : s.NW.string(s.t["3gUsJS"]),
-    action: () => i.ZP.open(e.id)
+    action: () => c.ZP.open(e.id)
   }) : null
 }

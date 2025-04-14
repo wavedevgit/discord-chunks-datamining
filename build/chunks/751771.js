@@ -15,8 +15,8 @@ var d, c, h, g = n(442837),
   _ = n(981631),
   E = n(245335);
 let S = new Set,
-  b = [],
-  T = new Map;
+  T = [],
+  b = new Map;
 
 function O(e) {
   let t = new Set,
@@ -36,8 +36,8 @@ function O(e) {
 }
 
 function y(e) {
-  b = e, T = new Map, e.forEach((e, t) => {
-    T.set(e, {
+  T = e, b = new Map, e.forEach((e, t) => {
+    b.set(e, {
       index: t
     })
   })
@@ -47,7 +47,7 @@ class C extends(d = g.ZP.Store) {
     this.waitFor(j.Z, v.Z)
   }
   getInviteSuggestionRows() {
-    return b
+    return T
   }
   getTotalSuggestionsCount() {
     return i
@@ -56,12 +56,12 @@ class C extends(d = g.ZP.Store) {
     return l
   }
   getSelectedInviteMetadata(e) {
-    let t = T.get(e),
+    let t = b.get(e),
       n = v.Z.getUserAffinitiesUserIds();
     return null != t ? {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: b.length,
+      numTotal: T.length,
       numAffinityConnections: n.size,
       isFiltered: r
     } : null
@@ -91,7 +91,7 @@ let P = new C(m.Z, {
       rows: g,
       counts: m
     } = O("");
-    y(g), l = m, i = b.length
+    y(g), l = m, i = T.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {

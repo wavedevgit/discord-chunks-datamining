@@ -42,7 +42,7 @@ function d(e, t, n, d) {
       }, p))
     },
     {
-      enabled: f
+      entrypoints: f
     } = (0, o._k)({
       location: "more_settings_invite_item"
     }),
