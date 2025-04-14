@@ -51,19 +51,19 @@ function E(e) {
     Z = (0, a.e7)([m.Z], () => !m.Z.isRoleHigher(T, R, P)),
     D = i.useRef(null),
     A = (0, a.e7)([x.Z], () => x.Z.getProps().integrations),
-    W = {
+    k = {
       role: P,
       editRoleId: n
     },
-    k = i.useRef(W);
+    W = i.useRef(k);
   if (i.useEffect(() => {
-      k.current = W
+      W.current = k
     }), i.useEffect(() => {
       var e, t;
       let {
         role: n,
         editRoleId: r
-      } = k.current, i = (0, b.UT)(E), s = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
+      } = W.current, i = (0, b.UT)(E), s = null != (t = null == (e = h.Z.getRoleMemberCount(T.id)) ? void 0 : e[r]) ? t : 0;
       g.default.track(y.rMx.ROLE_PAGE_VIEWED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

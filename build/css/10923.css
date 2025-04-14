@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 23b9383e7cd40240
+  Original File Name: a4be089f7151a2c6
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -5676,6 +5676,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     display: flex;
     gap: var(--spacing-8);
     margin-top: var(--spacing-16);
+    padding-bottom: var(--spacing-8);
     width: 100%
 }
 
@@ -5749,6 +5750,38 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     cursor: not-allowed;
     opacity: .3;
     pointer-events: none
+}
+
+.roleStyleUpsell__981c8 {
+    background-color: var(--bg-mod-subtle);
+    border: 1px solid var(--border-faint);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.14);
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    justify-content: space-between;
+    padding: var(--spacing-12)
+}
+
+.roleStyleUpsellMesssages__981c8 {
+    display: flex;
+    flex-direction: column
+}
+
+.roleStyleUpsellButton__981c8 {
+    background-color: var(--button-positive-background);
+    border-radius: var(--radius-xs)
+}
+
+.roleStyleUpsellButtonContents__981c8 {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-8)
+}
+
+.guildBoostBadge__981c8,.roleStyleUpsellButtonContents__981c8 {
+    color: var(--button-outline-positive-text-active)
 }
 
 .holographicInfoBox__981c8 {
@@ -12914,4 +12947,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=23b9383e7cd40240.css.map*/
+/*# sourceMappingURL=a4be089f7151a2c6.css.map*/

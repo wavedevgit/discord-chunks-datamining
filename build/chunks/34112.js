@@ -99,9 +99,9 @@ function A(e) {
       let {
         row: s
       } = e;
-      if (0 === x.length) return (0, r.jsx)(W, {}, "empty-role");
+      if (0 === x.length) return (0, r.jsx)(k, {}, "empty-role");
       let o = x[s];
-      return (0, r.jsx)(k, {
+      return (0, r.jsx)(W, {
         role: o,
         guild: n,
         highestRole: p,
@@ -125,7 +125,7 @@ function A(e) {
   })
 }
 
-function W() {
+function k() {
   return (0, r.jsxs)("div", {
     className: P.emptyRoles,
     children: [(0, r.jsx)("div", {
@@ -142,7 +142,7 @@ function W() {
   })
 }
 
-function k(e) {
+function W(e) {
   var t, s, c;
   let {
     role: d,
@@ -157,13 +157,13 @@ function k(e) {
     disableDrag: I,
     setEditRoleId: S,
     setSelectedSection: A
-  } = e, W = (0, y.T)(g, h, d), k = null != W, [M, G] = i.useState(!1), U = i.useMemo(() => ({
+  } = e, k = (0, y.T)(g, h, d), W = null != k, [M, G] = i.useState(!1), U = i.useMemo(() => ({
     type: D,
     item: () => (_(d.id), {
       id: d.id,
       position: b
     }),
-    canDrag: () => M && !k,
+    canDrag: () => M && !W,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -172,11 +172,11 @@ function k(e) {
       if (null == n) return void v();
       O(n.roleId)
     }
-  }), [d, _, v, O, k, M, b]), [{
+  }), [d, _, v, O, W, M, b]), [{
     isDragging: B
   }, F] = (0, a.c)(U), z = i.useMemo(() => ({
     accept: D,
-    canDrop: () => !k,
+    canDrop: () => !W,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -188,7 +188,7 @@ function k(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [k, d]), [{
+  }), [W, d]), [{
     dragSourcePosition: H
   }, V] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
@@ -231,7 +231,7 @@ function k(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: l()(P.dragIcon, w.dragSpacing, {
-        [P.dragIconHidden]: k || I
+        [P.dragIconHidden]: W || I
       }),
       onMouseEnter: () => G(!0),
       onMouseLeave: () => G(!1),
@@ -251,9 +251,9 @@ function k(e) {
         size: 24,
         className: P.roleIcon,
         defaultIconClassName: P.shield
-      }), null != W ? (0, r.jsx)(y.Z, {
+      }), null != k ? (0, r.jsx)(y.Z, {
         className: P.lock,
-        tooltipText: W
+        tooltipText: k
       }) : null, (0, r.jsx)(u.Text, {
         className: P.roleName,
         color: "header-primary",
@@ -288,10 +288,10 @@ function k(e) {
       className: l()(P.buttonsContainer, w.buttonsSpacing),
       children: [(0, r.jsx)(u.M0o, {
         className: l()(P.circleButton, P.editButton),
-        tooltip: k ? T.NW.string(T.t["HO/oXl"]) : T.NW.string(T.t.bt75u7),
+        tooltip: W ? T.NW.string(T.t["HO/oXl"]) : T.NW.string(T.t.bt75u7),
         color: u.YX$.SECONDARY,
         size: u.tT7.SIZE_36,
-        icon: k ? (0, r.jsx)(u.tEF, {
+        icon: W ? (0, r.jsx)(u.tEF, {
           size: "custom",
           color: "currentColor",
           width: 20,

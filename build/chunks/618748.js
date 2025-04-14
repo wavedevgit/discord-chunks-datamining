@@ -1,7 +1,7 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => k
+  Z: () => W
 }), n(953529);
 var r = n(200651);
 n(192379);
@@ -77,7 +77,7 @@ function A(e) {
   })
 }
 
-function W(e) {
+function k(e) {
   let {
     application: t
   } = e, {
@@ -101,7 +101,7 @@ function W(e) {
   }) : null
 }
 
-function k(e) {
+function W(e) {
   let t, {
       guild: n,
       application: s
@@ -138,7 +138,7 @@ function L(e) {
     O = (0, i.e7)([h.default], () => h.default.getCurrentUser()),
     I = (0, _.Z)(n.id),
     R = n.isOwner(O),
-    k = () => {
+    W = () => {
       let e = p.Z.getRole(n.id, n.getEveryoneRoleId());
       if (null == e) return;
       o.Z.close();
@@ -189,7 +189,7 @@ function L(e) {
         children: Z.NW.string(Z.t.KyGv0t)
       }), (0, r.jsx)(v.Z, {
         guild: n
-      }), c && (0, r.jsx)(W, {
+      }), c && (0, r.jsx)(k, {
         application: a
       }), (0, r.jsxs)("div", {
         className: D.tabBarContainer,
@@ -233,7 +233,7 @@ function L(e) {
                 disabled: I,
                 onMouseEnter: I ? t : void 0,
                 onMouseLeave: I ? n : void 0,
-                onClick: k,
+                onClick: W,
                 color: s.zxk.Colors.PRIMARY,
                 size: s.zxk.Sizes.SMALL,
                 grow: !I,

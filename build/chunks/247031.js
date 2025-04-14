@@ -188,7 +188,7 @@ class A extends i.PureComponent {
     })
   }
 }
-class W extends i.PureComponent {
+class k extends i.PureComponent {
   makeFilter(e) {
     if (null == e || 0 === e.length) return e => null != e;
     {
@@ -326,7 +326,7 @@ class W extends i.PureComponent {
     })
   }
 }
-let k = o.ZP.connectStores([O.Z, h.Z, f.Z], () => {
+let W = o.ZP.connectStores([O.Z, h.Z, f.Z], () => {
   let {
     bans: e,
     guild: t,
@@ -339,7 +339,7 @@ let k = o.ZP.connectStores([O.Z, h.Z, f.Z], () => {
     theme: h.Z.theme,
     streamerMode: f.Z.hidePersonalInformation
   }
-})(W);
+})(k);
 
 function L() {
   var e;
@@ -353,5 +353,5 @@ function L() {
   }, {
     autoTrackExposure: !0
   });
-  return n ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(k, {})
+  return n ? (0, r.jsx)(I.Z, {}) : (0, r.jsx)(W, {})
 }

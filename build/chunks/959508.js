@@ -44,8 +44,8 @@ function O(e) {
   } = (0, m.Ug)(n.id), R = (0, a.e7)([h.Z], () => h.Z.editedDefaultChannelIds), Z = w ? j.qm : j.M$, {
     drag: D,
     dragSourcePosition: A,
-    drop: W,
-    setIsDraggable: k
+    drop: k,
+    setIsDraggable: W
   } = (0, c.Z)({
     type: "ONBOARDING_PROMPT_CARD",
     index: O,
@@ -78,12 +78,12 @@ function O(e) {
         [_.containerFocused]: U
       }),
       ref: e => {
-        D(W(e))
+        D(k(e))
       },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
-        onMouseEnter: () => k(!0),
-        onMouseLeave: () => k(!1),
+        onMouseEnter: () => W(!0),
+        onMouseLeave: () => W(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
@@ -132,12 +132,12 @@ function O(e) {
         [_.containerFocused]: U
       }),
       ref: e => {
-        D(W(e))
+        D(k(e))
       },
       children: [(0, r.jsx)("div", {
         className: _.dragContainer,
-        onMouseEnter: () => k(!0),
-        onMouseLeave: () => k(!1),
+        onMouseEnter: () => W(!0),
+        onMouseLeave: () => W(!1),
         children: (0, r.jsx)(o.Vni, {
           size: "xs",
           color: "currentColor",
