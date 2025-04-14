@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: 446a080d63e0dfb8
+  Original File Name: 474d559f2fddc54b
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -12324,7 +12324,7 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .connectContainer_c7f964 {
-    background-color: var(--background-secondary-alt);
+    background-color: var(--bg-surface-raised);
     border-radius: var(--radius-sm);
     margin-bottom: 16px;
     padding: 16px
@@ -12342,7 +12342,7 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .accountButtonInner_c7f964 {
-    background-color: var(--background-primary);
+    background-color: var(--bg-mod-subtle);
     border: none
 }
 
@@ -12384,15 +12384,15 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
 }
 
 .connection_c7f964 {
-    background-color: var(--background-secondary);
+    background-color: var(--bg-surface-raised);
     border-radius: var(--radius-sm);
-    margin-bottom: 8px;
+    margin-bottom: var(--spacing-16);
     width: 100%
 }
 
 .connectionHeader_c7f964 {
     align-items: center;
-    background: var(--background-secondary-alt);
+    background: var(--bg-mod-subtle);
     border-radius: 8px 8px 0 0;
     display: grid;
     grid-template-columns: auto minmax(0,1fr) auto;
@@ -17105,4 +17105,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=446a080d63e0dfb8.css.map*/
+/*# sourceMappingURL=474d559f2fddc54b.css.map*/

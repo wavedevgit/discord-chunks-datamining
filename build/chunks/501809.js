@@ -1,28 +1,49 @@
 /** Chunk was on 1272 **/
-var r = n(442837),
-  i = n(570140),
-  l = n(38618);
-let a = Object.freeze({
+n(388685);
+var r, i = n(442837),
+  l = n(570140),
+  a = n(38618),
+  o = n(592125),
+  s = n(709054);
+
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+  }) : e[t] = n, e
+}
+let u = Object.freeze({
     online: null,
     total: null
   }),
-  o = {},
-  s = null;
-class c extends r.ZP.Store {
+  d = {},
+  p = {},
+  h = null;
+class f extends(r = i.ZP.PersistedStore) {
+  initialize(e) {
+    this.waitFor(a.Z, o.Z), p = null != e ? e : d
+  }
+  getState() {
+    return p
+  }
   getMemberCount(e) {
     var t;
-    return null != (t = o[e]) ? t : a
+    return null != (t = p[e]) ? t : u
   }
   requestCount(e, t) {
-    s = {
+    h = {
       guildId: e,
       channelId: t
-    }, l.Z.getSocket().requestChannelMemberCount(e, t)
+    }, a.Z.getSocket().requestChannelMemberCount(e, t)
   }
 }
-new c(i.Z, {
+c(f, "displayName", "ChannelMemberCountStore"), c(f, "persistKey", "channelMemberCounts"), new f(l.Z, {
   CONNECTION_OPEN: function() {
-    o = {}, null != s && l.Z.getSocket().requestChannelMemberCount(s.guildId, s.channelId)
+    null != h && a.Z.getSocket().requestChannelMemberCount(h.guildId, h.channelId), s.default.keys(p).forEach(e => {
+      null == o.Z.getChannel(e) && delete p[e]
+    })
   },
   CHANNEL_MEMBER_COUNT_UPDATE: function(e) {
     let {
@@ -30,7 +51,7 @@ new c(i.Z, {
       online: n,
       total: r
     } = e;
-    return (null != n || null != r) && (o[t] = {
+    return (null != n || null != r) && (p[t] = {
       online: n,
       total: r
     }), !0
