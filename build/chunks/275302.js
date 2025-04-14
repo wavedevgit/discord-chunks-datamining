@@ -13,5 +13,6 @@ e.exports = {
   roleStylePreviewContainer: "roleStylePreviewContainer__981c8",
   selected: "selected__981c8",
   roleStyleLabel: "roleStyleLabel__981c8",
-  disabled: "disabled__981c8"
+  disabled: "disabled__981c8",
+  holographicInfoBox: "holographicInfoBox__981c8"
 }

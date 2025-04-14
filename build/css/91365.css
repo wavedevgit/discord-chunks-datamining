@@ -1,6 +1,6 @@
 /**
   Module ID: 91365
-  Original File Name: 5f92a6b89adf15fc
+  Original File Name: 24f37c8d0d8aa265
 **/
 .badgeContainer__98c7b {
     position: relative;
@@ -1160,8 +1160,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1672,4 +1672,4 @@
     background-color: var(--bg-mod-subtle)
 }
 
-/*# sourceMappingURL=5f92a6b89adf15fc.css.map*/
+/*# sourceMappingURL=24f37c8d0d8aa265.css.map*/

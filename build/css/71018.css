@@ -1,6 +1,6 @@
 /**
   Module ID: 71018
-  Original File Name: e1a10bff480709d1
+  Original File Name: 506f6cd5a97b97cc
 **/
 .editCard_a25a68 {
     position: relative;
@@ -5752,6 +5752,10 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
     opacity: .3;
     cursor: not-allowed;
     pointer-events: none
+}
+
+.holographicInfoBox__981c8 {
+    margin-top: var(--spacing-8)
 }
 
 .container_e3077c {
@@ -12924,4 +12928,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=e1a10bff480709d1.css.map*/
+/*# sourceMappingURL=506f6cd5a97b97cc.css.map*/

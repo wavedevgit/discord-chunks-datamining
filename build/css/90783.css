@@ -1,6 +1,6 @@
 /**
   Module ID: 90783
-  Original File Name: 0c1548db20b12133
+  Original File Name: e4c240332e1ebe9c
 **/
 .text__87e56 {
     color: var(--premium-nitro-pink-text)
@@ -468,8 +468,8 @@
 
 .message_fcf29c {
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.25rem;
+    font-size: 16px;
+    line-height: 20px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden
@@ -1599,4 +1599,4 @@
     background-color: var(--bg-mod-subtle)
 }
 
-/*# sourceMappingURL=0c1548db20b12133.css.map*/
+/*# sourceMappingURL=e4c240332e1ebe9c.css.map*/
