@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   s: () => p
 }), n(388685);
@@ -15,7 +15,7 @@ var r = n(200651),
 function p(e, t, p, h) {
   let [f, m] = i.useState(!1), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = i.useCallback(() => {
     (0, o.showToast)((0, o.createToast)(d.NW.string(d.t.R0RpRU), o.ToastType.FAILURE))
-  }, []), _ = i.useCallback(async () => {
+  }, []), y = i.useCallback(async () => {
     if (!f && null != e && null != t && null != p) {
       if (null != g) return void a.default.selectPrivateChannel(g.id);
       if (!f) {
@@ -58,6 +58,6 @@ function p(e, t, p, h) {
       })
     },
     submitting: f,
-    handleOpenInterview: _
+    handleOpenInterview: y
   }
 }

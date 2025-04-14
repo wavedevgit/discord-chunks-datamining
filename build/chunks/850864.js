@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => I
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(399606),
-  a = n(780384),
-  l = n(481060),
+  l = n(780384),
+  a = n(481060),
   o = n(210887),
   c = n(430824),
   d = n(999382),
@@ -15,22 +15,22 @@ var r = n(200651),
   m = n(969632),
   g = n(998164),
   p = n(340189),
-  f = n(507317),
-  h = n(399614),
-  b = n(387960),
-  x = n(806742),
+  h = n(507317),
+  f = n(399614),
+  x = n(387960),
+  b = n(806742),
   j = n(388032),
   N = n(773100),
-  v = n(91716),
-  _ = n(470264),
-  y = n(710043),
-  O = n(847950);
+  _ = n(91716),
+  v = n(470264),
+  O = n(710043),
+  C = n(847950);
 
-function C(e) {
+function y(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, [c, d] = i.useState("new"), C = i.useMemo(() => [{
+  } = e, [c, d] = i.useState("new"), y = i.useMemo(() => [{
     value: "new",
     name: j.NW.string(j.t["4e5u3t"])
   }, {
@@ -41,36 +41,36 @@ function C(e) {
     let e = m.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let E = i.useMemo(() => (0, a.ap)(I) ? "existing" === c ? _ : O : "existing" === c ? v : y, [c, I]);
+  let E = i.useMemo(() => (0, l.ap)(I) ? "existing" === c ? v : C : "existing" === c ? _ : O, [c, I]);
   return (0, r.jsxs)("div", {
     className: N.page,
     children: [(0, r.jsxs)("div", {
       className: N.leftColumn,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         className: N.header,
         variant: "heading-lg/extrabold",
         children: j.NW.string(j.t.tbUZVl)
       }), (0, r.jsx)("div", {
         className: N.descriptionSection,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.NW.string(j.t.DvHCq6)
         })
       }), (0, r.jsx)("div", {
         className: N.section,
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(b.Z, {
           guildId: t.id
         })
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator
-      }), (0, r.jsx)(l.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         className: N.header,
         variant: "heading-lg/extrabold",
         children: j.NW.string(j.t["roY/ws"])
       }), (0, r.jsx)("div", {
         className: N.descriptionSection,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.NW.format(j.t["/lWYYW"], {})
@@ -82,34 +82,34 @@ function C(e) {
         guildId: t.id
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator
-      }), (0, r.jsx)(l.X6q, {
+      }), (0, r.jsx)(a.X6q, {
         className: N.header,
         variant: "heading-lg/extrabold",
         children: j.NW.string(j.t.hEjHyM)
       }), (0, r.jsxs)("div", {
         className: N.descriptionSection,
-        children: [(0, r.jsx)(l.Text, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.NW.string(j.t.YnvKVF)
         }), (0, r.jsxs)("ul", {
           className: N.bulletList,
           children: [(0, r.jsx)("li", {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-sm/medium",
               color: "header-secondary",
               children: j.NW.string(j.t["6jEvRU"])
             })
           }), (0, r.jsx)("li", {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-sm/medium",
               color: "header-secondary",
               children: j.NW.string(j.t["Fq+UsL"])
             })
           }), (0, r.jsx)("li", {
-            children: (0, r.jsx)(l.Text, {
+            children: (0, r.jsx)(a.Text, {
               tag: "span",
               variant: "text-sm/medium",
               color: "header-secondary",
@@ -119,21 +119,21 @@ function C(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: N.section,
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(x.Z, {
           guildId: t.id
-        }), (0, r.jsx)(h.Z, {
+        }), (0, r.jsx)(f.Z, {
           guildId: t.id
         })]
       }), (0, r.jsx)("div", {
         className: N.sectionSeparator
-      }), (0, r.jsx)(f.Z, {
+      }), (0, r.jsx)(h.Z, {
         guild: t
       })]
     }), (0, r.jsxs)("div", {
       className: N.rightColumn,
       children: [(0, r.jsx)("div", {
         className: N.centeredSection,
-        children: (0, r.jsx)(l.Text, {
+        children: (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
           children: j.NW.string(j.t.EVV6ub)
@@ -142,8 +142,8 @@ function C(e) {
         className: N.previewImage,
         src: E,
         alt: j.NW.string(j.t.ST4UOz)
-      }), (0, r.jsx)(l.sY7, {
-        options: C,
+      }), (0, r.jsx)(a.sY7, {
+        options: y,
         value: c,
         onChange: e => d(e.value),
         look: "pill"
@@ -159,7 +159,7 @@ function I(e) {
     let e = d.Z.getGuildId();
     return c.Z.getGuild(e)
   });
-  return null == n ? null : (0, r.jsx)(C, {
+  return null == n ? null : (0, r.jsx)(y, {
     guild: n,
     saveOnClose: t
   })

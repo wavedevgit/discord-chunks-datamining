@@ -1,15 +1,15 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   SR: () => o,
-  Vk: () => l,
+  Vk: () => a,
   xl: () => c
 });
 var r = n(544891),
   i = n(570140),
   s = n(981631);
 
-function a(e, t) {
+function l(e, t) {
   let n = new Date,
     i = new Date(n.getTime() - (n.getDay() + 1) * 864e5 - 36288e5);
   return r.tn.get({
@@ -24,8 +24,8 @@ function a(e, t) {
   })
 }
 
-function l(e) {
-  return a(e, s.ANM.GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW).then(t => {
+function a(e) {
+  return l(e, s.ANM.GUILD_ANALYTICS_ENGAGEMENT_OVERVIEW).then(t => {
     let {
       body: n
     } = t;
@@ -43,7 +43,7 @@ function l(e) {
 }
 
 function o(e) {
-  return a(e, s.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW).then(t => {
+  return l(e, s.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_OVERVIEW).then(t => {
     let {
       body: n
     } = t;
@@ -61,7 +61,7 @@ function o(e) {
 }
 
 function c(e) {
-  return a(e, s.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION).then(t => {
+  return l(e, s.ANM.GUILD_ANALYTICS_GROWTH_ACTIVATION_RETENTION).then(t => {
     let {
       body: n
     } = t, r = n.filter(e => e.hasOwnProperty("pct_retained")).map(e => {

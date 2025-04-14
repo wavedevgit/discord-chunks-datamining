@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  a = n(852860),
-  l = n(699553),
+  l = n(852860),
+  a = n(699553),
   o = n(314852),
   c = n(434404),
   d = n(999382);
@@ -27,15 +27,15 @@ function u() {
         badgeColorPrimary: u.badgeColorPrimary,
         badgeColorSecondary: u.badgeColorSecondary
       };
-      (0, l.pV)(e.id, t)
+      (0, a.pV)(e.id, t)
     }, [e, u]),
-    f = i.useCallback(() => {
+    h = i.useCallback(() => {
       null != t && c.Z.init(t)
     }, [t]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     submitting: m,
     errorMessage: g,
     onSave: p,
-    onReset: f
+    onReset: h
   })
 }

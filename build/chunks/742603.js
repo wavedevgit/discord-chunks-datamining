@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => H
 }), n(388685);
@@ -18,8 +18,8 @@ var i = n(120356),
   m = n(925329),
   g = n(554747),
   b = n(854698),
-  _ = n(897669),
-  y = n(665149),
+  y = n(897669),
+  _ = n(665149),
   C = n(984370),
   x = n(910611),
   v = n(454585),
@@ -122,7 +122,7 @@ function F(e) {
     c = null != s ? (0, b.DK)(s) : null,
     d = null != s;
   if ((null == i ? void 0 : i.type) === w.fO.ACTIVITY) null != n && (t = (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y.ZP.Divider, {
+    children: [(0, r.jsx)(_.ZP.Divider, {
       className: L.divider
     }), (0, r.jsx)(m.Z, {
       game: n,
@@ -141,7 +141,7 @@ function F(e) {
     let e = i.user,
       n = i.stream;
     t = (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(y.ZP.Divider, {
+      children: [(0, r.jsx)(_.ZP.Divider, {
         className: L.divider
       }), (0, r.jsx)(G, {
         user: e,
@@ -153,7 +153,7 @@ function F(e) {
         focusedParticipant: i
       })]
     })
-  } else d && (t = (0, r.jsx)(_.Z, {
+  } else d && (t = (0, r.jsx)(y.Z, {
     guildEvent: s,
     recurrenceId: c
   }));
@@ -176,7 +176,7 @@ function H(e) {
   } = (0, o.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), b = (0, h.ZP)(t), _ = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = M.NW.string(M.t.BVZqJi);
+  }), [t.id]), b = (0, h.ZP)(t), y = (0, f.KS)(t), [E] = (0, d.Z)((null == g ? void 0 : g.type) === w.fO.ACTIVITY ? [g.applicationId] : []), N = M.NW.string(M.t.BVZqJi);
   t.isDM() ? N = M.NW.string(M.t.jN2DfX) : t.isGroupDM() && (N = M.NW.string(M.t["e5y+go"]));
   let S = (0, o.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     T = t.isGuildVoice() && c && null != S && S.length > 0,
@@ -228,7 +228,7 @@ function H(e) {
     className: L.subtitleContainer,
     children: [(0, r.jsx)(a.f6W, {
       theme: k.BR.DARK,
-      children: e => (0, r.jsxs)(y.ZP, {
+      children: e => (0, r.jsxs)(_.ZP, {
         onDoubleClick: C.O,
         transparent: !0,
         className: e,
@@ -241,11 +241,11 @@ function H(e) {
           isChatOpen: u,
           exitFullScreen: m
         }),
-        children: [null != _ ? (0, r.jsx)(y.ZP.Icon, {
-          icon: _,
+        children: [null != y ? (0, r.jsx)(_.ZP.Icon, {
+          icon: y,
           disabled: !0,
           "aria-label": N
-        }) : null, (0, r.jsx)(y.ZP.Title, {
+        }) : null, (0, r.jsx)(_.ZP.Title, {
           children: (0, r.jsxs)(r.Fragment, {
             children: [b, V && (0, r.jsx)(a.ua7, {
               text: M.NW.string(M.t.QyZ4TU),

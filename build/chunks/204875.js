@@ -1,17 +1,17 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(697518);
 
-function a(e) {
+function l(e) {
   var t, n, {
-      children: a,
-      disabled: l,
+      children: l,
+      disabled: a,
       disabledTooltip: o,
       id: c
     } = e,
@@ -31,7 +31,7 @@ function a(e) {
       return i
     }(e, ["children", "disabled", "disabledTooltip", "id"]);
   return (0, r.jsx)(i.DY3, {
-    text: l ? o : null,
+    text: a ? o : null,
     children: (0, r.jsx)(i.njP.Item, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,9 +52,9 @@ function a(e) {
     }({
       className: s.tabBarItem,
       id: c,
-      disabled: l
+      disabled: a
     }, d), n = n = {
-      children: a
+      children: l
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => E
 }), n(997841), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(585483),
   g = n(630388),
   b = n(838440),
-  _ = n(930282),
-  y = n(955384),
+  y = n(930282),
+  _ = n(955384),
   C = n(981631),
   x = n(30804);
 
@@ -44,7 +44,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = _ && j, {
+  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), y = t.type === C.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.hasFeature(C.oNc.NEWS), E = y && j, {
     editingMessage: N,
     editingTextValue: I,
     editingRichValue: P
@@ -92,7 +92,7 @@ function j(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]), A = (0, u.R6)("EditorWrapper");
-  return null != I && null != P ? (0, r.jsx)(y.Z, {
+  return null != I && null != P ? (0, r.jsx)(_.Z, {
     ref: void 0,
     channel: t,
     message: n,
@@ -150,7 +150,7 @@ function E(e, t, n) {
   return n ? (0, r.jsx)(j, {
     channel: l,
     message: i
-  }) : (0, r.jsx)(_.ZP, {
+  }) : (0, r.jsx)(y.ZP, {
     message: i,
     content: t
   })

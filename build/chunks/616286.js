@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   T: () => O
 }), n(388685), n(539854);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(111583),
   g = n(459273),
   b = n(880831),
-  _ = n(774168),
-  y = n(871499),
+  y = n(774168),
+  _ = n(871499),
   C = n(981631),
   x = n(388032);
 
@@ -50,7 +50,7 @@ function j(e) {
     isTyping: o,
     voiceChannelIsSelected: a
   } = v(n);
-  return (0, r.jsx)(_.Z, {
+  return (0, r.jsx)(y.Z, {
     className: t,
     unreadCount: i,
     mentionCount: l,
@@ -68,7 +68,7 @@ function O(e) {
     onClick: h,
     inPopout: f,
     showRequestToSpeakSidebar: m,
-    toggleRequestToSpeakSidebar: _
+    toggleRequestToSpeakSidebar: y
   } = e, O = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -112,8 +112,8 @@ function O(e) {
       mentionCount: n
     }
   }(n), A = i.useCallback(() => {
-    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == _ || _()), c.Z.updateChatOpen(n, !P)
-  }, [n, P, h, m, _, E]), w = i.useCallback(e => {
+    (0, p.v)(E, p.d.CHAT, !P), null == h || h(), !P && m && (null == y || y()), c.Z.updateChatOpen(n, !P)
+  }, [n, P, h, m, y, E]), w = i.useCallback(e => {
     let {
       className: t
     } = e;
@@ -146,7 +146,7 @@ function O(e) {
   let D = [t = f && N ? x.NW.string(x.t.DPgc5u) : P ? x.NW.string(x.t.nthdxM) : x.NW.string(x.t["5KxXrK"])];
   return T > 0 && D.push(x.NW.formatToPlainString(x.t["3l1GOz"], {
     mentionCount: T
-  })), Z > 0 && D.push(x.NW.string(x.t.x5zAGR)), (0, r.jsx)(y.Z, function(e) {
+  })), Z > 0 && D.push(x.NW.string(x.t.x5zAGR)), (0, r.jsx)(_.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

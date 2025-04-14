@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => h
+  Z: () => f
 });
 var r = n(200651),
   i = n(192379),
   s = n(536982),
-  a = n(285318),
-  l = n(456677),
+  l = n(285318),
+  a = n(456677),
   o = n(55889),
   c = n(300453),
   d = n(620436),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,40 +47,40 @@ function f(e, t) {
   }), e
 }
 
-function h(e) {
-  var t, n, h;
+function f(e) {
+  var t, n, f;
   let {
-    rule: b,
-    onChangeRule: x
+    rule: x,
+    onChangeRule: b
   } = e, j = i.useCallback(e => {
-    x(f(p({}, b), {
-      triggerMetadata: f(p({}, b.triggerMetadata), {
+    b(h(p({}, x), {
+      triggerMetadata: h(p({}, x.triggerMetadata), {
         allowList: e
       })
     }))
-  }, [x, b]);
+  }, [b, x]);
   return (0, r.jsxs)("div", {
     className: g.cardContentsContainer,
     children: [(0, r.jsxs)(c.Z, {
       step: 1,
       header: m.NW.string(m.t.CX5YfX),
-      children: [(0, r.jsx)(a.Z, {
-        rule: b,
-        onChangeRule: x
+      children: [(0, r.jsx)(l.Z, {
+        rule: x,
+        onChangeRule: b
       }), (0, r.jsx)(s.Z, {
         onChange: j,
-        initialValue: null == (t = b.triggerMetadata) ? void 0 : t.allowList,
+        initialValue: null == (t = x.triggerMetadata) ? void 0 : t.allowList,
         maxWordCount: u.I3,
-        collapsed: (null == (n = b.triggerMetadata) ? void 0 : n.allowList) == null || (null == (h = b.triggerMetadata) ? void 0 : h.allowList.length) === 0
+        collapsed: (null == (n = x.triggerMetadata) ? void 0 : n.allowList) == null || (null == (f = x.triggerMetadata) ? void 0 : f.allowList.length) === 0
       })]
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(c.Z, {
       step: 2,
       header: m.NW.string(m.t["18TOiY"]),
-      children: (0, r.jsx)(l.Z, {
-        rule: b,
-        onChangeRule: x
+      children: (0, r.jsx)(a.Z, {
+        rule: x,
+        onChangeRule: b
       })
     }), (0, r.jsx)(d.Z, {
       type: d.Z.Type.CROSS
@@ -88,8 +88,8 @@ function h(e) {
       step: 3,
       header: m.NW.string(m.t.eq3gjo),
       children: (0, r.jsx)(o.Z, {
-        rule: b,
-        onChangeRule: x
+        rule: x,
+        onChangeRule: b
       })
     })]
   })

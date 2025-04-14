@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   l: () => d
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(793030),
   s = n(481060),
-  a = n(578053),
-  l = n(715224),
+  l = n(578053),
+  a = n(715224),
   o = n(388032),
   c = n(713811);
 
@@ -24,7 +24,7 @@ function d(e) {
       color: "text-secondary",
       className: c.description,
       children: o.NW.string(o.t.qxIcra)
-    }), (0, r.jsx)(l.W, {
+    }), (0, r.jsx)(a.W, {
       canManageGuild: t,
       guild: n,
       switchClassName: c.switch
@@ -41,7 +41,7 @@ function d(e) {
         })]
       }), (0, r.jsx)("div", {
         className: c.halfWidth,
-        children: (0, r.jsx)(a.u, {
+        children: (0, r.jsx)(l.u, {
           canManageGuild: t,
           guildId: n.id,
           systemChannelId: n.systemChannelId

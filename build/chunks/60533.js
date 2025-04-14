@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -7,18 +7,18 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   s = n(481060),
-  a = n(90815),
-  l = n(594174),
+  l = n(90815),
+  a = n(594174),
   o = n(675968);
 
 function c(e) {
   let {
     guild: t
-  } = e, n = (0, i.e7)([l.default], () => {
-    let e = l.default.getCurrentUser();
+  } = e, n = (0, i.e7)([a.default], () => {
+    let e = a.default.getCurrentUser();
     return null != e && (null == t ? void 0 : t.isOwner(e)) === !0
   }), c = () => {
-    (0, a.q)(t.id, {
+    (0, l.q)(t.id, {
       demonetized: !0
     })
   };

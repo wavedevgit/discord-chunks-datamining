@@ -1,0 +1,143 @@
+/**
+  Module ID: 95140
+  Original File Name: 3dbf1a78276e0f46
+**/
+.formItem_d48a51 {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px
+}
+
+.formItem_d48a51:last-child {
+    margin-bottom: 0
+}
+
+.wrapperBase_d48a51 {
+    border-radius: 4px;
+    padding: 8px 12px
+}
+
+.formFieldWrapper_d48a51 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-tertiary)
+}
+
+.verificationFieldWrapper_d48a51 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.verificationIcon_d48a51 {
+    color: var(--interactive-normal);
+    margin-right: 8px
+}
+
+.verificationLabel_d48a51 {
+    display: flex;
+    align-items: center
+}
+
+.verificationCheckmark_d48a51 {
+    color: var(--text-positive);
+    margin-right: 8px;
+    width: 16px;
+    height: 16px
+}
+
+.verificationConfirmation_d48a51 {
+    display: flex;
+    align-items: center;
+    flex-grow: 0
+}
+
+.termsRow_d48a51 {
+    display: flex;
+    align-items: flex-start;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--background-modifier-accent)
+}
+
+.termsRow_d48a51:first-child {
+    padding-top: 8px
+}
+
+.termsRow_d48a51:last-child {
+    border-bottom: none;
+    padding-bottom: 8px
+}
+
+.termsRowContent_d48a51 {
+    padding-left: 12px;
+    white-space: pre-wrap;
+    width: calc(100% - 12px);
+    word-wrap: break-word
+}
+
+.checkbox_d48a51 {
+    margin-top: 16px;
+    cursor: pointer;
+    opacity: 1
+}
+
+.formItemDescription_d48a51 {
+    margin-bottom: 8px
+}
+
+.verifyConfirmText_d48a51 {
+    box-sizing: border-box;
+    height: 32px;
+    padding: 8px
+}
+
+.settingsLink_d48a51 {
+    margin-top: 8px
+}
+
+.radioItem_d48a51 {
+    border: 1px solid var(--background-modifier-accent)
+}
+
+.disabledFieldBackground_d48a51 {
+    background-color: var(--bg-mod-subtle)
+}
+
+.termsFieldBody_d48a51 {
+    padding: 10px 17px;
+    border-radius: 8px
+}
+
+.paragraphFieldBody_d48a51 {
+    opacity: 1
+}
+
+.paragraphFieldBody_d48a51>textarea {
+    border: none;
+    background: none;
+    opacity: 1
+}
+
+.multipleChoiceIcon_d48a51 {
+    display: flex
+}
+
+.multipleChoiceIcon_d48a51>svg {
+    width: 20px;
+    height: 20px
+}
+
+.editableRequirementContainer_d48a51 {
+    margin-top: 40px;
+    margin-bottom: 12px
+}
+
+.multipleChoiceTitle_d48a51 {
+    overflow: hidden;
+    word-wrap: break-word
+}
+
+.multipleChoiceItem_d48a51 {
+    background-color: var(--bg-mod-subtle)
+}
+
+/*# sourceMappingURL=3dbf1a78276e0f46.css.map*/

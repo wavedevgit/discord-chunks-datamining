@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(314940), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -64,7 +64,7 @@ function b(e) {
     })
   })
 }
-let _ = i.memo(function(e) {
+let y = i.memo(function(e) {
   var t;
   let {
     messages: n,
@@ -74,7 +74,7 @@ let _ = i.memo(function(e) {
     collapsedReason: c
   } = e, {
     hasJumpTarget: p = !1
-  } = n, [f, _] = i.useState(p), y = i.useCallback(() => _(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
+  } = n, [f, y] = i.useState(p), _ = i.useCallback(() => y(e => !e), []), C = n.hasUnread ? n.content.length - 1 : n.content.length;
   return (0, r.jsxs)("div", {
     className: o()({
       [g.groupStart]: !0,
@@ -87,7 +87,7 @@ let _ = i.memo(function(e) {
       count: C,
       compact: a,
       expanded: f,
-      onClick: y,
+      onClick: _,
       collapsedReason: c
     }, "collapsed-message-item"), f ? n.content.map((e, t) => {
       if (e.type === h.ys_.DIVIDER && t > 0) {

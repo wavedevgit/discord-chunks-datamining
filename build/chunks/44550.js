@@ -1,16 +1,16 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => p
 });
-var r, i, s, a = n(442837),
-  l = n(570140);
+var r, i, s, l = n(442837),
+  a = n(570140);
 let o = null,
   c = 0,
   d = null,
   u = null,
   m = !1;
-class g extends(s = a.ZP.Store) {
+class g extends(s = l.ZP.Store) {
   hasChanges() {
     return o !== d
   }
@@ -42,7 +42,7 @@ i = "GuildSettingsVanityURLStore", (r = "displayName") in g ? Object.definePrope
   configurable: !0,
   writable: !0
 }) : g[r] = i;
-let p = new g(l.Z, {
+let p = new g(a.Z, {
   GUILD_SETTINGS_SET_VANITY_URL: function(e) {
     var t, n;
     d = o = null != (t = e.code) ? t : "", c = e.uses, u = null != (n = e.error) ? n : null, m = !0

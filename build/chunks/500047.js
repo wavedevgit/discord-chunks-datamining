@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   R: () => o
@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(690221),
-  a = n(431516);
+  l = n(431516);
 
-function l(e) {
+function a(e) {
   return e
 }
 
@@ -19,11 +19,11 @@ function o(e) {
   } = e, {
     isUserMFAEnabled: o,
     isModerationMFAEnabled: c
-  } = (0, a.N)(), d = i.useCallback(async () => {
+  } = (0, l.N)(), d = i.useCallback(async () => {
     await t(), null == n || n()
   }, [t, n]), u = i.useCallback(e => (0, r.jsx)(s.Z, {
     onClick: d,
     children: e
   }), [d]);
-  return o && c ? l : u
+  return o && c ? a : u
 }

@@ -1,15 +1,15 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(331595),
   s = n(267843);
 
-function a(e) {
-  var t, n, a, l, {
+function l(e) {
+  var t, n, l, a, {
       size: o = "sm",
       color: c = "#FF73FA",
       width: d,
@@ -31,8 +31,8 @@ function a(e) {
       return i
     }(e, ["size", "color", "width", "height"]);
   let g = (0, s.m)(o),
-    p = null != (a = null == g ? void 0 : g.width) ? a : d,
-    f = null != (l = null == g ? void 0 : g.height) ? l : u;
+    p = null != (l = null == g ? void 0 : g.width) ? l : d,
+    h = null != (a = null == g ? void 0 : g.height) ? a : u;
   return (0, r.jsxs)("svg", (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,7 +52,7 @@ function a(e) {
     return e
   }({
     width: p,
-    height: f,
+    height: h,
     viewBox: "0 0 10 16",
     fill: "string" == typeof c ? c : c.css
   }, (0, i.Z)(m)), n = n = {

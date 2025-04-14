@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => E
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(619753),
   g = n(433355),
   b = n(271383),
-  _ = n(594174),
-  y = n(189432),
+  y = n(594174),
+  _ = n(189432),
   C = n(356778),
   x = n(370595),
   v = n(50493),
@@ -36,7 +36,7 @@ function E(e) {
   } = e, S = i.useRef(null), Z = (0, s.e7)([g.ZP], () => g.ZP.getGuildSidebarState(E), [E]), T = i.useRef(0), [A, w] = i.useState(null != (t = null == Z ? void 0 : Z.details.additionalSearchQuery) ? t : {}), R = (0, C.z0)(l, E, {
     addtionalQuery: A,
     shouldDispatch: !0
-  }), k = (0, s.e7)([_.default], () => _.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
+  }), k = (0, s.e7)([y.default], () => y.default.getUser(l), [l]), M = (0, s.e7)([b.ZP], () => b.ZP.getMember(E, l), [E, l]);
   (0, u.Ng)(() => {
     let e = null == Z ? void 0 : Z.details.scrollOffset;
     if (null != e) {
@@ -48,7 +48,7 @@ function E(e) {
     }
   });
   let L = i.useCallback(e => {
-      null != Z && (T.current = e.target.scrollTop, (0, y.r)(E, l, Z.baseChannelId, {
+      null != Z && (T.current = e.target.scrollTop, (0, _.r)(E, l, Z.baseChannelId, {
         modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: A,
         scrollOffset: T.current
@@ -87,7 +87,7 @@ function E(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      w(r), (0, y.r)(E, l, Z.baseChannelId, {
+      w(r), (0, _.r)(E, l, Z.baseChannelId, {
         modViewPanel: v.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: T.current

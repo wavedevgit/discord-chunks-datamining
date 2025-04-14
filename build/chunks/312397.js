@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   O: () => Q,
@@ -7,26 +7,26 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(512722),
-  o = n.n(l),
+  l = n.n(s),
+  a = n(512722),
+  o = n.n(a),
   c = n(580685),
   d = n(442837),
   u = n(692547),
   m = n(780384),
   g = n(481060),
   p = n(852860),
-  f = n(902840),
-  h = n(410030),
-  b = n(100527),
-  x = n(906732),
+  h = n(902840),
+  f = n(410030),
+  x = n(100527),
+  b = n(906732),
   j = n(34586),
   N = n(600164),
-  v = n(699553),
-  _ = n(65361),
-  y = n(536442),
-  O = n(142497),
-  C = n(345861),
+  _ = n(699553),
+  v = n(65361),
+  O = n(536442),
+  C = n(142497),
+  y = n(345861),
   I = n(208567),
   E = n(496675),
   S = n(594174),
@@ -36,9 +36,9 @@ var r = n(200651),
   R = n(434404),
   Z = n(999382),
   D = n(67734),
-  k = n(375263),
-  W = n(586382),
-  A = n(594980),
+  A = n(375263),
+  k = n(586382),
+  W = n(594980),
   L = n(515025),
   M = n(760632),
   G = n(578053),
@@ -50,9 +50,9 @@ var r = n(200651),
   V = n(388032),
   Y = n(945745),
   K = n(935653),
-  q = n(449874);
+  X = n(449874);
 
-function X(e, t, n) {
+function q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -68,7 +68,7 @@ function J(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      X(e, t, n[t])
+      q(e, t, n[t])
     })
   }
   return e
@@ -79,15 +79,15 @@ let Q = () => {
     originalGuild: t,
     submitting: n,
     errors: s,
-    profile: a,
-    originalProfile: l
+    profile: l,
+    originalProfile: a
   } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), o = (0, d.e7)([Z.Z], () => Z.Z.getProfileError()), c = i.useMemo(() => {
     var e;
     let t = null == o ? void 0 : o.getAnyErrorMessage();
     return null != (e = (0, F.LG)(s)) ? e : t
   }, [s, o]), u = i.useCallback(async () => {
     if (null == e) return;
-    null != a && null != l && a.visibility !== l.visibility && await (0, v.xV)(e.id, a.visibility);
+    null != l && null != a && l.visibility !== a.visibility && await (0, _.xV)(e.id, l.visibility);
     let n = {
       name: e.name,
       icon: e.icon,
@@ -108,7 +108,7 @@ let Q = () => {
       profile: e.profile
     };
     (0, P.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), await R.Z.saveGuild(e.id, n)
-  }, [e, a, l, t.features]), m = i.useCallback(() => {
+  }, [e, l, a, t.features]), m = i.useCallback(() => {
     null != e && R.Z.init(e.id)
   }, [e]);
   return (0, r.jsx)(p.Z, {
@@ -177,11 +177,11 @@ class $ extends i.PureComponent {
               canAnimate: !0,
               size: 100
             }),
-            className: a()({
+            className: l()({
               [Y.avatarUploader]: n,
               [Y.avatarUploaderDisabled]: !n
             }),
-            imageClassName: a()(Y.avatarUploaderInner, {
+            imageClassName: l()(Y.avatarUploaderInner, {
               [Y.avatarUploaderInnerEmpty]: null == e.icon
             })
           }), null != t.icon ? (0, r.jsx)("div", {
@@ -198,7 +198,7 @@ class $ extends i.PureComponent {
             type: g.geA.DESCRIPTION,
             className: Y.marginBottom8,
             children: V.NW.string(V.t["R/9yQE"])
-          }), (0, r.jsx)(C.Z, {
+          }), (0, r.jsx)(y.Z, {
             look: g.iLD.OUTLINED,
             color: g.Ttl.PRIMARY,
             disabled: !n,
@@ -339,11 +339,11 @@ class $ extends i.PureComponent {
       guild: e,
       canManageGuild: t
     } = this.props;
-    return (0, f.Jc)(e, !1) ? (0, r.jsx)("div", {
+    return (0, h.Jc)(e, !1) ? (0, r.jsx)("div", {
       children: (0, r.jsx)(g.hjN, {
         className: Y.divider,
         children: (0, r.jsx)(g.j7V, {
-          className: a()(Y.marginTop8, Y.marginBottom8),
+          className: l()(Y.marginTop8, Y.marginBottom8),
           onChange: this.handleConversationSummariesToggle,
           value: e.hasFeature(z.oNc.SUMMARIES_ENABLED_BY_USER),
           hideBorder: !0,
@@ -383,7 +383,7 @@ class $ extends i.PureComponent {
               className: Y.flexFormTitle,
               children: [(0, r.jsx)("div", {
                 children: V.NW.string(V.t.tzGY0t)
-              }), (0, r.jsx)(W.hH, {
+              }), (0, r.jsx)(k.hH, {
                 guild: e
               })]
             }), (0, r.jsx)(g.R94, {
@@ -395,7 +395,7 @@ class $ extends i.PureComponent {
               children: V.NW.format(V.t.ZYA9PT, {
                 articleURL: w.Z.getArticleURL(z.BhN.GUILD_INVITE_SPLASH)
               })
-            }), (0, r.jsx)(A.c, {
+            }), (0, r.jsx)(W.c, {
               guild: e,
               canManageGuild: t,
               buttonClassName: Y.marginTop16
@@ -430,7 +430,7 @@ class $ extends i.PureComponent {
             className: Y.flexFormTitle,
             children: [(0, r.jsx)("div", {
               children: V.NW.string(V.t["0r0AzM"])
-            }), (0, r.jsx)(W.zA, {
+            }), (0, r.jsx)(k.zA, {
               guild: e
             })]
           }), (0, r.jsx)(g.R94, {
@@ -450,7 +450,7 @@ class $ extends i.PureComponent {
         }), (0, r.jsx)(N.Z.Child, {
           wrap: !0,
           basis: "50%",
-          children: (0, r.jsx)(k.O, {
+          children: (0, r.jsx)(A.O, {
             guild: e,
             canManageGuild: t
           })
@@ -472,7 +472,7 @@ class $ extends i.PureComponent {
           direction: N.Z.Direction.VERTICAL,
           align: N.Z.Align.STRETCH,
           children: [(0, r.jsx)(g.j7V, {
-            className: a()(Y.marginTop8, Y.marginBottom8),
+            className: l()(Y.marginTop8, Y.marginBottom8),
             onChange: this.handlePremiumProgressBarEnabledChange,
             value: e.premiumProgressBarEnabled,
             hideBorder: !0,
@@ -488,7 +488,7 @@ class $ extends i.PureComponent {
           basis: "50%",
           children: (0, r.jsx)("img", {
             alt: V.NW.string(V.t.UOJp5e),
-            src: (0, m.ap)(n) ? q : K,
+            src: (0, m.ap)(n) ? X : K,
             className: Y.progressBarImage
           })
         })]
@@ -536,11 +536,11 @@ class $ extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), X(this, "_displaySectionRef", i.createRef()), X(this, "_inviteSectionRef", i.createRef()), X(this, "_notificationSectionRef", i.createRef()), X(this, "handleIconChange", e => {
+    super(...e), q(this, "_displaySectionRef", i.createRef()), q(this, "_inviteSectionRef", i.createRef()), q(this, "_notificationSectionRef", i.createRef()), q(this, "handleIconChange", e => {
       R.Z.updateGuild({
         icon: e
       })
-    }), X(this, "handleOpenImageEditingModal", (e, t) => {
+    }), q(this, "handleOpenImageEditingModal", (e, t) => {
       (0, g.ZDy)(async () => {
         let {
           default: i
@@ -556,7 +556,7 @@ class $ extends i.PureComponent {
           file: t
         }, n))
       })
-    }), X(this, "handleHomeHeaderChange", (e, t) => {
+    }), q(this, "handleHomeHeaderChange", (e, t) => {
       if (null == e || void 0 === t) return void R.Z.updateGuild({
         homeHeader: null
       });
@@ -578,21 +578,21 @@ class $ extends i.PureComponent {
           uploadType: H.pC.HOME_HEADER
         }, n))
       })
-    }), X(this, "handleConversationSummariesToggle", e => {
+    }), q(this, "handleConversationSummariesToggle", e => {
       let {
         guild: t
       } = this.props, n = new Set(t.features);
       e ? n.add(z.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(z.oNc.SUMMARIES_ENABLED_BY_USER), R.Z.updateGuild({
         features: n
       })
-    }), X(this, "handleShowActivityFeedToggle", e => {
+    }), q(this, "handleShowActivityFeedToggle", e => {
       let {
         guild: t
       } = this.props, n = new Set(t.features);
       e ? (n.add(z.oNc.ACTIVITY_FEED_ENABLED_BY_USER), n.delete(z.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (n.add(z.oNc.ACTIVITY_FEED_DISABLED_BY_USER), n.delete(z.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), R.Z.updateGuild({
         features: n
       })
-    }), X(this, "handleProfileVisibilityChange", e => {
+    }), q(this, "handleProfileVisibilityChange", e => {
       let {
         guild: t
       } = this.props;
@@ -609,12 +609,12 @@ function ee() {
     errors: t,
     submitting: n,
     subsection: s,
-    profile: a
-  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), l = (0, h.ZP)(), {
+    profile: l
+  } = (0, d.cj)([Z.Z], () => Z.Z.getProps()), a = (0, f.ZP)(), {
     analyticsLocations: c
-  } = (0, x.ZP)(b.Z.OVERVIEW);
+  } = (0, b.ZP)(x.Z.OVERVIEW);
   i.useEffect(() => {
-    (0, O.Kw)(y.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
+    (0, C.Kw)(O.v6.ANIMATED_GUILD_BANNER_SETTINGS_NEW_PILL)
   }, []);
   let {
     canManageGuild: u,
@@ -622,12 +622,12 @@ function ee() {
   } = (0, d.cj)([E.Z], () => ({
     canManageGuild: E.Z.can(z.Plq.MANAGE_GUILD, e),
     isGuildAdmin: E.Z.can(z.Plq.ADMINISTRATOR, e)
-  })), g = (0, j.E)(e), p = (0, d.e7)([S.default], () => S.default.getCurrentUser()), f = null == e ? void 0 : e.id, {
+  })), g = (0, j.E)(e), p = (0, d.e7)([S.default], () => S.default.getCurrentUser()), h = null == e ? void 0 : e.id, {
     fetchGuildProfile: N
-  } = (0, _.u)(null == e ? void 0 : e.id);
+  } = (0, v.u)(null == e ? void 0 : e.id);
   return (i.useEffect(() => {
-    null != f && N()
-  }, [f, N]), o()(null != p, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(x.Gt, {
+    null != h && N()
+  }, [h, N]), o()(null != p, "GuildSettingsOverview: currentUser cannot be undefined"), null == e) ? null : (0, r.jsx)(b.Gt, {
     value: c,
     children: (0, r.jsx)($, {
       canManageGuild: u,
@@ -638,8 +638,8 @@ function ee() {
       submitting: n,
       currentUser: p,
       isInventoryFeedEnabled: g,
-      profile: a,
-      theme: l,
+      profile: l,
+      theme: a,
       analyticsLocations: c
     })
   })

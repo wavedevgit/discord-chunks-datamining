@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => m
 }), n(35282);
@@ -23,8 +23,8 @@ function m(e) {
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: _,
-    checked: y,
+    selected: y,
+    checked: _,
     onClick: C,
     onMouseEnter: x,
     "aria-setsize": v,
@@ -58,13 +58,13 @@ function m(e) {
     }
   }, E), n = n = {
     role: "option",
-    "aria-selected": y,
+    "aria-selected": _,
     "aria-setsize": v,
     "aria-posinset": j,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
-        [f.friendSelected]: _
+        [f.friendSelected]: y
       }),
       children: [(0, r.jsx)(u.Z, {
         user: i,
@@ -90,7 +90,7 @@ function m(e) {
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: !0,
         size: 22,
-        value: y,
+        value: _,
         className: f.checkbox
       })]
     })

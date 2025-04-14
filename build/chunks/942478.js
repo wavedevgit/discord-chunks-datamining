@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   R: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  a = n(852860),
-  l = n(823379),
+  l = n(852860),
+  a = n(823379),
   o = n(434404),
   c = n(999382),
   d = n(203377);
@@ -27,7 +27,7 @@ function u() {
       afkTimeout: e.afkTimeout,
       defaultMessageNotifications: e.defaultMessageNotifications
     };
-    if ((0, l.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.Z.hasChanges() && await o.Z.saveGuild(e.id, n), c.Z.widgetHasChanges()) {
+    if ((0, a.OL)(new Set(e.features), new Set(t.features)) || (n.features = e.features), c.Z.hasChanges() && await o.Z.saveGuild(e.id, n), c.Z.widgetHasChanges()) {
       let {
         enabled: t,
         channelId: n
@@ -38,7 +38,7 @@ function u() {
   }, [e, t]), p = i.useCallback(() => {
     null != e && o.Z.init(e.id)
   }, [e]);
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     submitting: n,
     errorMessage: m,
     onSave: g,

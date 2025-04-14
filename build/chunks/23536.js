@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => b
 });
@@ -22,8 +22,8 @@ function b(e) {
     channel: t,
     onJump: b
   } = e, {
-    messages: _,
-    loading: y
+    messages: y,
+    loading: _
   } = (0, l.cj)([d.Z], () => {
     let e = d.Z.getPinnedMessages(t.id),
       n = null != e ? e.messages : g;
@@ -33,7 +33,7 @@ function b(e) {
     }
   }), C = (0, l.e7)([p.ZP], () => p.ZP.hasUnreadPins(t.id));
   return (0, c.ZP)(() => {
-    _.some(u.k5) && s.Z.fetchPins(t.id, !0)
+    y.some(u.k5) && s.Z.fetchPins(t.id, !0)
   }), i.useEffect(() => {
     C && s.Z.ackPins(t.id)
   }, [C, t.id]), (0, r.jsx)(a.VqE, {
@@ -43,8 +43,8 @@ function b(e) {
         s.Z.ackPins(t.id), s.Z.fetchPins(t.id)
       },
       channel: t,
-      messages: _,
-      loading: y,
+      messages: y,
+      loading: _,
       analyticsName: "Channel Pins",
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? s.Z.unpinMessage(t, e.id) : f.Z.confirmUnpin(t, e))

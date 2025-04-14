@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => f
 });
@@ -22,8 +22,8 @@ function f(e) {
     m = (0, i.e7)([a.Z], () => a.Z.getStatus(t)),
     g = (0, i.e7)([a.Z], () => a.Z.isMobileOnline(t)),
     b = (0, i.e7)([s.Z], () => s.Z.getNickname(t)),
-    _ = u.ZP.useUserTag(f),
-    y = (0, o.m$)({
+    y = u.ZP.useUserTag(f),
+    _ = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -45,10 +45,10 @@ function f(e) {
       className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
-          text: _,
+          text: y,
           position: "bottom",
           children: null != b ? b : u.ZP.getName(f)
-        }), y && (0, r.jsx)(l.ua7, {
+        }), _ && (0, r.jsx)(l.ua7, {
           text: p.NW.string(p.t.QyZ4TU),
           children: e => {
             var t, n;

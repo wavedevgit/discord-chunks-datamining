@@ -1,15 +1,15 @@
-/** Chunk was on 12910 **/
+/** Chunk was on 86974 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
 var l = n(325767);
 
-function a(e) {
+function s(e) {
   var t, n, {
-      width: a = 16,
-      height: s = 16,
+      width: s = 16,
+      height: a = 16,
       color: o = "currentColor",
       foreground: i
     } = e,
@@ -18,13 +18,13 @@ function a(e) {
       var n, r, l = function(e, t) {
         if (null == e) return {};
         var n, r, l = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
         return l
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
       }
       return l
     }(e, ["width", "height", "color", "foreground"]);
@@ -46,8 +46,8 @@ function a(e) {
     }
     return e
   }({}, (0, l.Z)(E)), n = n = {
-    width: a,
-    height: s,
+    width: s,
+    height: a,
     viewBox: "0 0 16 16",
     fill: "none",
     xmlns: "http://www.w3.org/2000/svg",

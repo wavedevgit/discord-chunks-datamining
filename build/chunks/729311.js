@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => w,
@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  a = n(481060),
-  l = n(852860),
+  l = n(481060),
+  a = n(852860),
   o = n(111028),
   c = n(977258),
   d = n(45966),
@@ -16,17 +16,17 @@ var r = n(200651),
   m = n(454585),
   g = n(323502),
   p = n(958832),
-  f = n(324067),
-  h = n(984933),
-  b = n(259580),
-  x = n(999382),
+  h = n(324067),
+  f = n(984933),
+  x = n(259580),
+  b = n(999382),
   j = n(743475),
   N = n(889369),
-  v = n(570961),
-  _ = n(208665),
-  y = n(868814),
-  O = n(974513),
-  C = n(2348),
+  _ = n(570961),
+  v = n(208665),
+  O = n(868814),
+  C = n(974513),
+  y = n(2348),
   I = n(353890),
   E = n(716130),
   S = n(388032),
@@ -35,17 +35,17 @@ var r = n(200651),
 function P(e) {
   let {
     guild: t
-  } = e, l = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), f = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), h = (0, y.Z)(t), b = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), x = h.filter(e => !b.has(e.id)), [v, _] = i.useState(!1);
+  } = e, a = (0, s.e7)([d.Z], () => d.Z.getEnabled(t.id)), h = (0, s.e7)([p.Z], () => p.Z.hasFetched(t.id)), f = (0, O.Z)(t), x = (0, s.e7)([N.Z], () => N.Z.editedDefaultChannelIds), b = f.filter(e => !x.has(e.id)), [_, v] = i.useState(!1);
   i.useEffect(() => {
-    f || l || (0, g.S)(t.id)
-  }, [t.id, f, l]);
-  let O = e => {
-    (0, a.ZDy)(async () => {
+    h || a || (0, g.S)(t.id)
+  }, [t.id, h, a]);
+  let C = e => {
+    (0, l.ZDy)(async () => {
       let {
         default: i
       } = await n.e("35641").then(n.bind(n, 89216));
       return n => {
-        var s, a;
+        var s, l;
         return (0, r.jsx)(i, (s = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -63,42 +63,42 @@ function P(e) {
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, n), l = l = {
           guildId: t.id,
           startingChannelId: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
+        })(Object(l)).forEach(function(e) {
+          Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(l, e))
         }), s))
       }
     })
   };
-  return v || 0 === x.length ? null : (0, r.jsxs)("div", {
+  return _ || 0 === b.length ? null : (0, r.jsxs)("div", {
     className: T.recommendations,
-    children: [(0, r.jsx)(a.Text, {
+    children: [(0, r.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "header-primary",
       children: S.NW.string(S.t.NN7rDw)
     }), (0, r.jsxs)("div", {
       className: T.recsSubheader,
-      children: [(0, r.jsx)(a.Text, {
+      children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
         children: S.NW.string(S.t["3Uuql5"])
-      }), (0, r.jsxs)(a.P3F, {
+      }), (0, r.jsxs)(l.P3F, {
         className: T.dismissAll,
-        onClick: () => _(!0),
-        children: [(0, r.jsx)(a.dz2, {
+        onClick: () => v(!0),
+        children: [(0, r.jsx)(l.dz2, {
           size: "xxs",
           color: "currentColor",
           className: T.checkmark
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
           className: T.dismissAllText,
           variant: "text-xs/medium",
           color: "text-brand",
@@ -107,7 +107,7 @@ function P(e) {
       })]
     }), (0, r.jsx)("div", {
       className: T.recommendedChannels,
-      children: x.map((e, n) => (0, r.jsxs)(r.Fragment, {
+      children: b.map((e, n) => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           className: T.channelRow,
           children: [(0, r.jsxs)("div", {
@@ -119,7 +119,7 @@ function P(e) {
                 guild: t
               }), (0, r.jsx)(o.Z, {
                 className: T.__invalid_name,
-                children: (0, r.jsx)(a.Text, {
+                children: (0, r.jsx)(l.Text, {
                   className: T.__invalid_channelText,
                   variant: "text-md/medium",
                   lineClamp: 1,
@@ -128,7 +128,7 @@ function P(e) {
                 })
               })]
             }), null != e.topic && e.topic.length > 0 ? (0, r.jsx)(o.Z, {
-              children: (0, r.jsx)(a.Text, {
+              children: (0, r.jsx)(l.Text, {
                 className: T.topic,
                 variant: "text-xs/normal",
                 children: m.Z.parseTopic(e.topic, !0, {
@@ -136,27 +136,27 @@ function P(e) {
                 })
               })
             }, "topic") : null]
-          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.zxk, {
-            color: a.zxk.Colors.BRAND,
-            size: a.zxk.Sizes.SMALL,
+          }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(l.zxk, {
+            color: l.zxk.Colors.BRAND,
+            size: l.zxk.Sizes.SMALL,
             className: T.addChannelCTA,
             onClick: () => (0, j.pt)(e.id),
             children: S.NW.string(S.t.OYkgVl)
-          }) : (0, r.jsxs)(a.zxk, {
-            look: a.zxk.Looks.OUTLINED,
-            color: a.zxk.Colors.PRIMARY,
+          }) : (0, r.jsxs)(l.zxk, {
+            look: l.zxk.Looks.OUTLINED,
+            color: l.zxk.Colors.PRIMARY,
             className: T.lockedPill,
             innerClassName: T.lockedPillInner,
-            onClick: () => O(e.id),
-            children: [(0, r.jsx)(a.mBM, {
+            onClick: () => C(e.id),
+            children: [(0, r.jsx)(l.mBM, {
               size: "xs",
               color: "currentColor"
-            }), (0, r.jsx)(a.Text, {
+            }), (0, r.jsx)(l.Text, {
               variant: "text-sm/medium",
               children: S.NW.string(S.t.zA9d1N)
             })]
           })]
-        }), n < x.length - 1 ? (0, r.jsx)("div", {
+        }), n < b.length - 1 ? (0, r.jsx)("div", {
           className: T.separator
         }) : null]
       }))
@@ -169,7 +169,7 @@ function P(e) {
 function w(e) {
   let {
     saveOnClose: t = !1
-  } = e, n = (0, s.e7)([x.Z], () => x.Z.getGuild()), l = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([h.ZP], () => h.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([f.Z], () => f.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([_.Z], () => _.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
+  } = e, n = (0, s.e7)([b.Z], () => b.Z.getGuild()), a = (0, s.e7)([d.Z], () => d.Z.isLoading()), o = (0, s.e7)([f.ZP], () => f.ZP.getChannels(null == n ? void 0 : n.id)), c = (0, s.e7)([h.Z], () => h.Z.getCategories(null == n ? void 0 : n.id)), u = (0, s.e7)([v.Z], () => v.Z.advancedMode), m = i.useRef(null), [g, p] = i.useState(!1), N = i.useRef(n);
   return (i.useEffect(() => {
     N.current = n
   }), i.useEffect(() => {
@@ -179,39 +179,39 @@ function w(e) {
       } = N;
       return () => {
         null != e && (0, j.DO)(e).then(() => {
-          u && (0, v.rS)(e, {
+          u && (0, _.rS)(e, {
             ignoreDefaultPrompt: !0
           }).catch(() => {})
         }).catch(() => {})
       }
     }
-  }, [t, u]), null == n) ? null : l ? (0, r.jsx)(a.$jN, {}) : (0, r.jsxs)("div", {
+  }, [t, u]), null == n) ? null : a ? (0, r.jsx)(l.$jN, {}) : (0, r.jsxs)("div", {
     className: T.columns,
     children: [(0, r.jsxs)("div", {
       className: T.channelBrowser,
-      children: [(0, r.jsx)(a.P3F, {
+      children: [(0, r.jsx)(l.P3F, {
         className: T.collapseButton,
         onClick: () => p(e => !e),
-        children: (0, r.jsx)(b.Z, {
-          direction: g ? b.Z.Directions.DOWN : b.Z.Directions.UP,
+        children: (0, r.jsx)(x.Z, {
+          direction: g ? x.Z.Directions.DOWN : x.Z.Directions.UP,
           height: 16,
           width: 16
         })
-      }), (0, r.jsx)(a.X6q, {
+      }), (0, r.jsx)(l.X6q, {
         className: T.header,
         variant: "heading-lg/extrabold",
         children: S.NW.string(S.t["4GSygo"])
-      }), (0, r.jsx)(a.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         children: S.NW.string(S.t.Kq7FAQ)
-      }), (0, r.jsx)(O.Wu, {
+      }), (0, r.jsx)(C.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
       }), g ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P, {
           guild: n
-        }), (0, r.jsx)(C.Z, {
+        }), (0, r.jsx)(y.Z, {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,
@@ -221,11 +221,11 @@ function w(e) {
       }), u && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: T.largeSeparator
-        }), (0, r.jsx)(a.X6q, {
+        }), (0, r.jsx)(l.X6q, {
           className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
           children: S.NW.string(S.t.g2Rnpa)
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
           className: T.prejoinSubHeader,
           variant: "text-sm/normal",
           color: "header-secondary",
@@ -253,13 +253,13 @@ function w(e) {
 }
 
 function R() {
-  let e = (0, s.e7)([x.Z], () => x.Z.getProps().guild),
+  let e = (0, s.e7)([b.Z], () => b.Z.getProps().guild),
     t = (0, s.e7)([N.Z], () => N.Z.submitting),
-    n = (0, s.e7)([_.Z], () => _.Z.advancedMode);
-  return null == e ? null : (0, r.jsx)(l.Z, {
+    n = (0, s.e7)([v.Z], () => v.Z.advancedMode);
+  return null == e ? null : (0, r.jsx)(a.Z, {
     onSave: () => {
       (0, j.DO)(e).then(() => {
-        n && (0, v.rS)(e, {
+        n && (0, _.rS)(e, {
           ignoreDefaultPrompt: !0
         }).catch(() => {})
       }).catch(() => {})

@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Y: () => _
+  Y: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -48,19 +48,19 @@ function b(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     channelId: t,
-    warningId: _,
-    senderId: y
+    warningId: y,
+    senderId: _
   } = e, C = i.useCallback(() => {
-    (0, u.T)(t, [_])
-  }, [t, _]), x = (0, o.e7)([c.Z], () => c.Z.isBlocked(y)), v = i.useMemo(() => ({
+    (0, u.T)(t, [y])
+  }, [t, y]), x = (0, o.e7)([c.Z], () => c.Z.isBlocked(_)), v = i.useMemo(() => ({
     channelId: t,
-    warningId: _,
-    senderId: y,
+    warningId: y,
+    senderId: _,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2
-  }), [t, _, y]);
+  }), [t, y, _]);
   i.useEffect(() => {
     (0, p.KQ)(b(g({}, v), {
       viewName: p.pb.SAFETY_WARNING_BANNER
@@ -84,9 +84,9 @@ function _(e) {
             onClose: l
           } = n;
           return (0, r.jsx)(e, {
-            otherUserId: y,
+            otherUserId: _,
             channelId: t,
-            warningId: _,
+            warningId: y,
             warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
             transitionState: i,
             onClose: l
@@ -95,7 +95,7 @@ function _(e) {
       }, {
         modalKey: f.X_
       }), j(p.NM.USER_BANNER_OPEN_SAFETY_TOOLS)
-    }, [t, y, _, j]),
+    }, [t, _, y, j]),
     E = i.useCallback(() => {
       C(), j(p.NM.USER_BANNER_BLOCK_CONFIRM)
     }, [C, j]),
@@ -120,16 +120,16 @@ function _(e) {
               null == l || l(), j(p.NM.USER_BANNER_BLOCK_CANCEL)
             },
             onClose: l,
-            userId: y,
+            userId: _,
             channelId: t
           })
         }
       })
-    }, [E, N, y, t, j]);
+    }, [E, N, _, t, j]);
   return (0, r.jsx)(h.Q, {
     channelId: t,
-    warningId: _,
-    senderId: y,
+    warningId: y,
+    senderId: _,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
     header: m.NW.string(m.t.ZzlB5u),
     description: m.NW.string(m.t["D1aU+v"]),

@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(149765),
   i = n(700785),
   s = n(981631);
 
-function a(e, t) {
+function l(e, t) {
   let n = {
     [t.id]: t
   };
@@ -16,7 +16,7 @@ function a(e, t) {
         forceRoles: n,
         context: e
       }),
-      a = s.Plq.VIEW_CHANNEL;
-    return e.isGuildVocal() && (a = r.IH(a, s.Plq.CONNECT)), r.e$(t, a) && !i.Uu(a, e)
+      l = s.Plq.VIEW_CHANNEL;
+    return e.isGuildVocal() && (l = r.IH(l, s.Plq.CONNECT)), r.e$(t, l) && !i.Uu(l, e)
   })
 }

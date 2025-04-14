@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 }), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   m = n(918559),
   g = n(981631),
   b = n(388032),
-  _ = n(408912);
+  y = n(408912);
 
-function y(e) {
+function _(e) {
   var {
     channelId: t,
     className: n
-  } = e, y = function(e, t) {
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -79,7 +79,7 @@ function y(e) {
     S = O > 0 ? O : j,
     Z = S > 0;
   return (0, r.jsxs)("div", {
-    className: _.wrapper,
+    className: y.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -106,10 +106,10 @@ function y(e) {
       iconComponent: P === m.MI.NO_CHAT ? a.sXD : a.hic,
       themeable: !0,
       className: n
-    }, y)), Z ? (0, r.jsx)(s.Z, {
+    }, _)), Z ? (0, r.jsx)(s.Z, {
       hasMentions: O > 0,
       truncatedCount: S > 99 ? "99+" : S,
-      className: _.badge
+      className: y.badge
     }) : null]
   })
 }

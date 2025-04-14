@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(346163),
   s = n(587431),
-  a = n(539290),
-  l = n(981631),
+  l = n(539290),
+  a = n(981631),
   o = n(388032),
   c = n(289282);
 
@@ -22,18 +22,18 @@ function d(e) {
       createEnableRequest: m,
       resubmittedRequest: g,
       requestRejectedNoticeText: p,
-      reapplyNoticeText: f
+      reapplyNoticeText: h
     } = (0, i.Z)(n),
-    h = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_RESTRICTED),
-    b = n.hasFeature(l.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
+    f = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_RESTRICTED),
+    x = n.hasFeature(a.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING);
   if (null != u) return (0, r.jsx)(s.Z, {
     className: c.noticeContainer,
     children: u.getAnyErrorMessage()
   });
-  let x = null;
-  return null != p ? x = p : g ? x = o.NW.string(o.t.MyJpJS) : null != f ? (x = f, t = o.NW.string(o.t["YKw/NT"])) : b ? x = o.NW.string(o.t.e2g9sb) : h && (x = o.NW.string(o.t.rxI9sr)), null != x ? (0, r.jsx)(a.Z, {
+  let b = null;
+  return null != p ? b = p : g ? b = o.NW.string(o.t.MyJpJS) : null != h ? (b = h, t = o.NW.string(o.t["YKw/NT"])) : x ? b = o.NW.string(o.t.e2g9sb) : f && (b = o.NW.string(o.t.rxI9sr)), null != b ? (0, r.jsx)(l.Z, {
     className: c.noticeContainer,
-    notice: x,
+    notice: b,
     ctaLabel: t,
     ctaLoading: d,
     onClick: m

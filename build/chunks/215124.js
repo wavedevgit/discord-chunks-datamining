@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(399606),
   s = n(481060),
-  a = n(674180),
-  l = n(267101),
+  l = n(674180),
+  a = n(267101),
   o = n(430824),
   c = n(584825),
   d = n(198139),
@@ -20,15 +20,15 @@ function m(e) {
     allPeriods: m
   } = e, g = (0, i.e7)([o.Z], () => o.Z.getGuild(t)), p = (0, c.qi)(t, {
     includeSoftDeleted: !0
-  }), f = (0, l.ue)(t, {
+  }), h = (0, a.ue)(t, {
     publishedOnly: !1
   }), {
-    allowSelfRemoveMonetization: h
-  } = (0, a.gX)(t), b = m.filter(e => {
+    allowSelfRemoveMonetization: f
+  } = (0, l.gX)(t), x = m.filter(e => {
     var t;
     let n = Object.values(null != (t = e.ppgs) ? t : {})[0];
     return (null == n ? void 0 : n.status) === d.x_.OPEN || (null == n ? void 0 : n.status) === d.x_.PAYOUT_DEFERRED
-  }), x = p.length > 0, j = f.length > 0, N = b.length > 0;
+  }), b = p.length > 0, j = h.length > 0, N = x.length > 0;
   return null == g ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
@@ -38,7 +38,7 @@ function m(e) {
     }), (0, r.jsx)(s.LZC, {
       size: 16
     }), (0, r.jsx)(s.zxk, {
-      disabled: !h || x || j || N,
+      disabled: !f || b || j || N,
       look: s.zxk.Looks.FILLED,
       color: s.zxk.Colors.RED,
       onClick: () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => U,
   i: () => W
@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(644914),
   g = n(434404),
   b = n(330010),
-  _ = n(978946),
-  y = n(314897),
+  y = n(978946),
+  _ = n(314897),
   C = n(430824),
   x = n(594174),
   v = n(259580),
@@ -111,7 +111,7 @@ function W(e) {
 function U(e) {
   let {
     channel: t
-  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([y.default], () => (null == l ? void 0 : l.ownerId) === y.default.getId(), [l]), {
+  } = e, l = (0, s.e7)([C.Z], () => null != t ? C.Z.getGuild(t.getGuildId()) : null, [t]), p = null != l && N.default.extractTimestamp(l.id) < Date.now() - P._8R, v = (0, s.e7)([_.default], () => (null == l ? void 0 : l.ownerId) === _.default.getId(), [l]), {
     canInvite: U,
     canManageGuild: B,
     canMessage: G
@@ -159,7 +159,7 @@ function U(e) {
         h.ZP.trackWithMetadata(P.rMx.SERVER_SETUP_CTA_CLICKED, {
           setup_type: S.Ft.CHANNEL_WELCOME,
           action: S.j7.PERSONALIZE_SERVER
-        }), null != e && g.Z.open(e.id, (0, _.r)(e.id), {
+        }), null != e && g.Z.open(e.id, (0, y.r)(e.id), {
           section: P.jXE.CHANNEL_WELCOME_CTA
         })
       }, [e]);

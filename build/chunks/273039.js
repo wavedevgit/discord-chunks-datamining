@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(225433),
+  l = n.n(s),
+  a = n(225433),
   o = n(872194);
 
 function c(e) {
@@ -22,7 +22,7 @@ function c(e) {
     n(), g(!1)
   }, [n, g]);
   return (0, r.jsxs)("div", {
-    className: a()(o.container, c),
+    className: l()(o.container, c),
     onMouseEnter: () => {
       if (t) return void g(!0);
       g(!1)
@@ -30,9 +30,9 @@ function c(e) {
     onMouseLeave: () => {
       g(!1)
     },
-    children: [s, t && m ? (0, r.jsx)(l.Z, {
+    children: [s, t && m ? (0, r.jsx)(a.Z, {
       onClick: p,
-      className: a()(o.removeButton, d),
+      className: l()(o.removeButton, d),
       look: u
     }) : null]
   })

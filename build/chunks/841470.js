@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -7,13 +7,13 @@ var r = n(200651);
 n(192379);
 var i = n(692547),
   s = n(481060),
-  a = n(355011),
-  l = n(388032),
+  l = n(355011),
+  a = n(388032),
   o = n(193);
 let c = e => {
   let {
     title: t,
-    subtext: n = l.NW.string(l.t.jHpxws),
+    subtext: n = a.NW.string(a.t.jHpxws),
     localizedNumber: c,
     isTrendingUp: d,
     isTrendingDown: u,
@@ -68,20 +68,20 @@ let c = e => {
       children: (0, r.jsx)(s.X6q, {
         className: null != c ? o.analyticsCardNumber : o.analyticsCardNumberNotAvailable,
         variant: "heading-xl/semibold",
-        children: null != c ? c : l.NW.string(l.t.jHpxws)
+        children: null != c ? c : a.NW.string(a.t.jHpxws)
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
-      children: [d ? (0, r.jsx)(a.Z, {
+      children: [d ? (0, r.jsx)(l.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
-        "aria-label": l.NW.string(l.t["8mcccX"]),
+        "aria-label": a.NW.string(a.t["8mcccX"]),
         width: 14,
         height: 12
-      }) : null, u ? (0, r.jsx)(a.Z, {
+      }) : null, u ? (0, r.jsx)(l.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
-        "aria-label": l.NW.string(l.t.NLl6Q0),
+        "aria-label": a.NW.string(a.t.NLl6Q0),
         width: 14,
         height: 12
       }) : null, (0, r.jsx)(s.Text, {

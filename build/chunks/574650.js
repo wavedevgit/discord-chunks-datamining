@@ -87,7 +87,7 @@ let P = () => {
         (0, s.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("82075").then(n.bind(n, 76075));
+          } = await n.e("3378").then(n.bind(n, 76075));
           return t => (0, r.jsx)(e, A({
             guildId: P.id
           }, t))

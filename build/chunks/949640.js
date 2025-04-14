@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   E6: () => m,
@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651),
   i = n(481060),
   s = n(367907),
-  a = n(48217),
-  l = n(26323),
+  l = n(48217),
+  a = n(26323),
   o = n(267642),
   c = n(434404),
   d = n(981631);
@@ -18,8 +18,8 @@ function u(e) {
   let {
     uploadType: t,
     maxFileSizeBytes: s,
-    onComplete: a,
-    showUpsellHeader: l = !0,
+    onComplete: l,
+    showUpsellHeader: a = !0,
     analyticsLocation: o,
     analyticsLocations: c
   } = e;
@@ -46,9 +46,9 @@ function u(e) {
       return e
     }({
       maxFileSizeBytes: s,
-      onComplete: a,
+      onComplete: l,
       uploadType: t,
-      showUpsellHeader: l,
+      showUpsellHeader: a,
       analyticsLocation: o,
       analyticsLocations: c
     }, n))
@@ -61,7 +61,7 @@ function m(e) {
     analyticsLocations: n,
     analyticsSection: r,
     analyticsObject: i,
-    perks: a,
+    perks: l,
     targetPremiumGuildTier: c
   } = e;
   (0, s.yw)(d.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
@@ -72,7 +72,7 @@ function m(e) {
     },
     guild_id: t.id,
     location_stack: n
-  }), (0, l.Z)({
+  }), (0, a.Z)({
     analyticsLocations: n,
     analyticsSourceLocation: {
       section: r,
@@ -80,7 +80,7 @@ function m(e) {
       page: d.ZY5.GUILD_SETTINGS
     },
     guild: t,
-    perks: a
+    perks: l
   })
 }
 
@@ -94,7 +94,7 @@ function g(e, t, n, r) {
   if (null != i && null != n)
     if ("image/gif" !== i || e.hasFeature(d.oNc.ANIMATED_BANNER)) {
       if (!e.hasFeature(d.oNc.BANNER)) {
-        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
+        s.object = d.qAy.IMAGE_CROPPING_MODAL, (0, l.c)({
           guild: e,
           analyticsLocations: t,
           analyticsLocation: s,
@@ -104,7 +104,7 @@ function g(e, t, n, r) {
         return
       }
     } else {
-      s.object = d.qAy.GIF_CROPPING_MODAL, (0, a.c)({
+      s.object = d.qAy.GIF_CROPPING_MODAL, (0, l.c)({
         guild: e,
         analyticsLocations: t,
         analyticsLocation: s,

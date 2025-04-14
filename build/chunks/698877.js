@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   O: () => u
 });
@@ -21,8 +21,8 @@ function u(e) {
     onMouseLeave: m,
     premiumGlow: g,
     renderNUXHighlight: b,
-    buttonRef: _
-  } = e, y = function(e, t) {
+    buttonRef: y
+  } = e, _ = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -71,7 +71,7 @@ function u(e) {
     }
     return e
   }({
-    buttonRef: _,
+    buttonRef: y,
     label: t,
     disabled: !u,
     iconComponent: O,
@@ -85,5 +85,5 @@ function u(e) {
       null == m || m(e), E.onMouseLeave()
     },
     premiumGlow: g
-  }, y))
+  }, _))
 }

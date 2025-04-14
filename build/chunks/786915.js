@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => C
 });
@@ -18,9 +18,9 @@ var i = n(512722),
   m = n(496675),
   g = n(871499),
   b = n(981631),
-  _ = n(388032);
+  y = n(388032);
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -81,12 +81,12 @@ function C(e) {
       null != w && (0, p.v)(w, p.d.INVITE), c.h7(M, !1, A)
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
-    label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
+    label: null != t ? y.NW.string(y.t["OzOM/v"]) : y.NW.string(y.t["6F9ivr"]),
     iconClassName: I,
     look: P,
     size: S,
     buttonText: Z
-  }) : null != k && null != C && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(g.Z, y({
+  }) : null != k && null != C && m.Z.can(b.Plq.CREATE_INSTANT_INVITE, C) ? (0, r.jsx)(g.Z, _({
     onClick: () => {
       l()(null != k, "guild cannot be null"), l()(null != C, "channel cannot be null"), null != w && (0, p.v)(w, p.d.INVITE),
         function(e) {
@@ -106,7 +106,7 @@ function C(e) {
             } = await Promise.all([n.e("7654"), n.e("96814")]).then(n.bind(n, 560114));
             return n => {
               var a, s;
-              return (0, r.jsx)(e, (a = y({}, n), s = s = {
+              return (0, r.jsx)(e, (a = _({}, n), s = s = {
                 guild: t,
                 channel: i,
                 streamUserId: l,
@@ -141,7 +141,7 @@ function C(e) {
         })
     },
     iconComponent: null == t || E ? s.ejJ : s.gQj,
-    label: null != t ? _.NW.string(_.t["OzOM/v"]) : _.NW.string(_.t["6F9ivr"]),
+    label: null != t ? y.NW.string(y.t["OzOM/v"]) : y.NW.string(y.t["6F9ivr"]),
     iconClassName: I,
     look: P,
     size: S,

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => V
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(835473),
   g = n(95398),
   b = n(580747),
-  _ = n(135938),
-  y = n(160404),
+  y = n(135938),
+  _ = n(160404),
   C = n(765104),
   x = n(695346),
   v = n(314897),
@@ -98,7 +98,7 @@ let H = i.memo(function(e) {
       messages: m,
       unreadCount: g,
       showNewMessagesBar: b,
-      messageDisplayCompact: _,
+      messageDisplayCompact: y,
       channelStream: C,
       uploads: x,
       hasUnreads: v,
@@ -109,7 +109,7 @@ let H = i.memo(function(e) {
       showingQuarantineBanner: P,
       hideSummaries: S = !1,
       jumpBarClassName: T
-    } = e, [A, R] = i.useState(!1), H = i.useMemo(() => _ ? (0, w.aJ)({
+    } = e, [A, R] = i.useState(!1), H = i.useMemo(() => y ? (0, w.aJ)({
       compact: !0,
       messageGroups: 30,
       groupRange: 4,
@@ -123,10 +123,10 @@ let H = i.memo(function(e) {
       attachments: 8,
       fontSize: O,
       groupSpacing: l
-    }), [_, O, l]), V = (0, M.ZP)({
+    }), [y, O, l]), V = (0, M.ZP)({
       messages: m,
       channel: f,
-      compact: _,
+      compact: y,
       hasUnreads: v,
       focusId: j,
       placeholderHeight: H.totalHeight,
@@ -138,7 +138,7 @@ let H = i.memo(function(e) {
       isEditing: null != j,
       keyboardModeEnabled: E,
       hasMoreAfter: m.hasMoreAfter
-    }), Y = (0, s.e7)([y.Z], () => N.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : y.Z.getViewingRolesTimestamp(f.getGuildId())), {
+    }), Y = (0, s.e7)([_.Z], () => N.Z.can(D.Plq.READ_MESSAGE_HISTORY, f) ? null : _.Z.getViewingRolesTimestamp(f.getGuildId())), {
       channelStreamMarkup: q,
       newMessagesBar: K,
       jumpToPresentBar: X,
@@ -149,7 +149,7 @@ let H = i.memo(function(e) {
       messages: m,
       unreadCount: g,
       showNewMessagesBar: b,
-      messageDisplayCompact: _,
+      messageDisplayCompact: y,
       channelStream: C,
       uploads: x,
       loadMore: V.loadMore,
@@ -257,7 +257,7 @@ let H = i.memo(function(e) {
     let {
       canManageMessages: u,
       permissionVersion: p,
-      canChat: y
+      canChat: _
     } = function(e) {
       let t = e.getGuildId(),
         n = (0, s.e7)([O.Z], () => null == t || O.Z.canChatInGuild(t), [t]),
@@ -319,7 +319,7 @@ let H = i.memo(function(e) {
         }, [e.id]),
         {
           enabled: o
-        } = _.Z.useExperiment({
+        } = y.Z.useExperiment({
           location: "41de6d_1"
         }, {
           autoTrackExposure: !1
@@ -342,7 +342,7 @@ let H = i.memo(function(e) {
           return (0, m.Z)(t)
         }(r);
       (0, f.Z)(r, e);
-      let y = i.useMemo(() => (0, A.Z)({
+      let _ = i.useMemo(() => (0, A.Z)({
         channel: e,
         messages: r,
         oldestUnreadMessageId: l,
@@ -352,7 +352,7 @@ let H = i.memo(function(e) {
       }), [r, e, l, o, p, h, g, a]);
       return {
         messages: r,
-        channelStream: y,
+        channelStream: _,
         oldestUnreadMessageId: l,
         editingMessageId: (0, s.e7)([j.Z], () => {
           var t;
@@ -374,7 +374,7 @@ let H = i.memo(function(e) {
           uploads: (0, s.e7)([P.Z], () => P.Z.getFiles(t.id), [t]),
           unreadCount: (0, s.e7)([I.ZP], () => I.ZP.getUnreadCount(t.id), [t]),
           hasUnreads: null != V,
-          canChat: y,
+          canChat: _,
           editingMessageId: z,
           fontSize: w,
           keyboardModeEnabled: L,

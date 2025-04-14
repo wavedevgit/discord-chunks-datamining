@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  q: () => _,
+  q: () => y,
   s: () => b
 });
 var r = n(200651),
@@ -81,7 +81,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
     narrow: n

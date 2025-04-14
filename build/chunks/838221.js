@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => s
@@ -10,8 +10,8 @@ var i = n(325767);
 function s(e) {
   var t, n, {
       width: s = 17,
-      height: a = 16,
-      color: l = "currentColor",
+      height: l = 16,
+      color: a = "currentColor",
       foreground: o
     } = e,
     c = function(e, t) {
@@ -48,7 +48,7 @@ function s(e) {
     return e
   }({}, (0, i.Z)(c)), n = n = {
     width: s,
-    height: a,
+    height: l,
     viewBox: "0 0 17 16",
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("rect", {
@@ -57,14 +57,14 @@ function s(e) {
       width: "16",
       height: "2",
       rx: "1",
-      fill: l
+      fill: a
     }), (0, r.jsx)("rect", {
       className: o,
       y: "9",
       width: "8",
       height: "2",
       rx: "1",
-      fill: l
+      fill: a
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

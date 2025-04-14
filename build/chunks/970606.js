@@ -1,116 +1,63 @@
-/** Chunk was on 94400 **/
+/** Chunk was on 68031 **/
 n.d(t, {
-  Af: () => c,
-  GO: () => u,
-  Gh: () => p,
-  Pq: () => _,
-  Q2: () => E,
-  Qh: () => d,
-  Vr: () => s,
-  hx: () => o
+  Pq: () => s,
+  Q2: () => u,
+  Vr: () => o,
+  hx: () => a
 }), n(704215), n(605236);
-var r = n(314897);
+var l = n(314897);
 n(271383);
-var i = n(626135),
-  l = n(308083),
-  a = n(981631);
-
-function s(e) {
-  let {
-    guildId: t,
-    source: n,
-    location: l,
-    messageId: s,
-    tagUserId: o
-  } = e, u = r.default.getId();
-  i.default.track(a.rMx.CLAN_APPLY_TO_JOIN_VIEWED, {
-    guild_id: t,
-    source: n,
-    location: l,
-    viewing_user_id: u,
-    tag_owner_user_id: o,
-    message_id: s
-  })
-}
+var r = n(626135);
+n(308083);
+var i = n(981631);
 
 function o(e) {
   let {
     guildId: t,
+    source: n,
+    location: o,
+    messageId: a,
+    tagUserId: s
+  } = e, u = l.default.getId();
+  r.default.track(i.rMx.CLAN_APPLY_TO_JOIN_VIEWED, {
+    guild_id: t,
+    source: n,
+    location: o,
+    viewing_user_id: u,
+    tag_owner_user_id: s,
+    message_id: a
+  })
+}
+
+function a(e) {
+  let {
+    guildId: t,
     userId: n,
-    source: r
+    source: l
   } = e;
-  i.default.track(a.rMx.CLAN_ADOPT_IDENTITY, {
+  r.default.track(i.rMx.CLAN_ADOPT_IDENTITY, {
     guild_id: t,
     user_id: n,
-    source: r
+    source: l
   })
 }
 
-function u(e, t) {
-  i.default.track(a.rMx.CLAN_SETTINGS_VIEWED, {
-    guild_id: e,
-    page: t
-  })
-}
-
-function c(e) {
-  i.default.track(a.rMx.CLAN_SETTINGS_SAVED, {
+function s(e) {
+  r.default.track(i.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
     guild_id: e
   })
 }
 
-function d(e) {
-  switch (e) {
-    case l.Wy.GAMES:
-      return "games";
-    case l.Wy.PLAYSTYLE:
-      return "playstyle";
-    case l.Wy.UTILITY_TRAITS:
-      return "utility_traits";
-    case l.Wy.INTERESTS:
-      return "interests";
-    case l.Wy.DESCRIPTION:
-      return "description";
-    case l.Wy.CUSTOMIZE_TAG_BADGE:
-      return "tag";
-    case l.Wy.CUSTOMIZE_BANNER:
-      return "banner";
-    case l.Wy.MEMBER_APPLICATION:
-      return "member_application";
-    default:
-      return e
-  }
-}
-
-function _(e) {
-  i.default.track(a.rMx.MEMBER_VERIFICATION_APPLICATION_VIEWED, {
-    guild_id: e
-  })
-}
-
-function E(e) {
+function u(e) {
   let {
     guildId: t,
     source: n,
-    tab: r
+    tab: l
   } = e;
-  i.default.track(a.rMx.CLAN_APPLICATION_NAVIGATION, {
+  r.default.track(i.rMx.CLAN_APPLICATION_NAVIGATION, {
     guild_id: t,
     source: n,
-    tab: r
-  })
-}
-
-function p(e) {
-  let {
-    feature: t,
-    guildId: n,
-    position: r
-  } = e;
-  i.default.track(a.rMx.DISCOVERY_GUILD_CARD_INTERACTION, {
-    guild_id: n,
-    feature: t,
-    position: r
+    tab: l
   })
 }
 n(921944)

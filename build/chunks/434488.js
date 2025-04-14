@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   h: () => T
 });
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(100527),
   g = n(906732),
   b = n(895924),
-  _ = n(540059),
-  y = n(605236),
+  y = n(540059),
+  _ = n(605236),
   C = n(340541),
   x = n(448239),
   v = n(626135),
@@ -184,7 +184,7 @@ function w(e) {
   }, []);
   let {
     analyticsLocations: u
-  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, _.Q3)("SingleUserTile"), {
+  } = (0, g.ZP)(m.Z.VC_TILE_ACTIVITY_INVITE), p = (0, y.Q3)("SingleUserTile"), {
     enabled: h
   } = (0, C._k)({
     location: "single_user_tile"
@@ -196,7 +196,7 @@ function w(e) {
     autoTrackExposure: !0
   });
 
-  function y() {
+  function _() {
     (0, c.ZDy)(async () => {
       let {
         default: e
@@ -249,7 +249,7 @@ function w(e) {
               [N.button]: !p
             }),
             innerClassName: N.buttonContents,
-            onClick: y,
+            onClick: _,
             children: [(0, r.jsx)(A, {
               size: "xs",
               color: "currentColor"
@@ -280,7 +280,7 @@ function R(e) {
     handleClose: l,
     width: s,
     userParticipantCount: d
-  } = e, f = (0, _.Q3)("MultiUserTile");
+  } = e, f = (0, y.Q3)("MultiUserTile");
   (0, u.ZP)(() => {
     v.default.track(O.rMx.VC_TILE_ACTIVITIES_ENTRY_POINT_VIEWED, {
       tile_type: "activity suggestion",
@@ -331,7 +331,7 @@ function R(e) {
             tile_type: "activity suggestion",
             close_type: "permanent",
             n_participants: d
-          }), (0, y.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
+          }), (0, _.EW)(a.z.VC_TILE_ACTIVITIES_ENTRY_POINT)
         },
         children: [(0, r.jsx)(x.Z, {}), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",

@@ -1,4 +1,4 @@
-/** Chunk was on 99916 **/
+/** Chunk was on 58157 **/
 r.d(t, {
   i: () => s
 });
@@ -16,8 +16,8 @@ function s(e) {
     let r = o.Z.get(t),
       n = null == r ? void 0 : r.guild,
       s = i.Z.getGuild(t),
-      a = null == s ? void 0 : s.verificationLevel,
+      u = null == s ? void 0 : s.verificationLevel,
       c = null == n ? void 0 : n.verification_level;
-    return null != (e = null != a ? a : c) ? e : l.sFg.NONE
+    return null != (e = null != u ? u : c) ? e : l.sFg.NONE
   }, [t])
 }

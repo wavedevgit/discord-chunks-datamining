@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   A: () => m
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(63063),
-  a = n(586382),
-  l = n(594980),
+  l = n(586382),
+  a = n(594980),
   o = n(515025),
   c = n(981631),
   d = n(388032),
@@ -25,7 +25,7 @@ function m(e) {
       className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: u.title,
-        children: [d.NW.string(d.t.tzGY0t), (0, r.jsx)(a.hH, {
+        children: [d.NW.string(d.t.tzGY0t), (0, r.jsx)(l.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
@@ -40,7 +40,7 @@ function m(e) {
         children: d.NW.format(d.t.ZYA9PT, {
           articleURL: s.Z.getArticleURL(c.BhN.GUILD_INVITE_SPLASH)
         })
-      }), (0, r.jsx)(l.c, {
+      }), (0, r.jsx)(a.c, {
         guild: t,
         canManageGuild: n,
         buttonClassName: u.button

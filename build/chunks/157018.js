@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(201895),
   i = n(933557),
   s = n(592125),
-  a = n(699516),
-  l = n(594174),
+  l = n(699516),
+  a = n(594174),
   o = n(293810),
   c = n(981631),
   d = n(388032);
@@ -17,7 +17,7 @@ function u(e) {
     case o.Qs.CHANNEL: {
       let t = s.Z.getChannel(e.ref_id);
       return null != t ? function(e) {
-        let t = (0, i.F6)(e, l.default, a.Z);
+        let t = (0, i.F6)(e, a.default, l.Z);
         switch (e.type) {
           case c.d4z.GUILD_VOICE:
             return d.NW.formatToPlainString(d.t.bkpadH, {

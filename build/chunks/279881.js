@@ -1,18 +1,18 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  I: () => l
+  I: () => a
 }), n(388685);
 var r = n(290486),
   i = n(731965),
   s = n(699553);
-let a = new Map,
-  l = (0, r.U)((e, t) => ({
+let l = new Map,
+  a = (0, r.U)((e, t) => ({
     topGames: new Map,
     tryFetchTopGames: async n => {
       let r = t().topGames,
-        l = a.get(n);
-      if (null != l && Date.now() - l < 36e5) {
+        a = l.get(n);
+      if (null != a && Date.now() - a < 36e5) {
         var o;
         return null != (o = r.get(n)) ? o : {}
       }
@@ -22,6 +22,6 @@ let a = new Map,
         e({
           topGames: d
         })
-      }), a.set(n, Date.now()), c
+      }), l.set(n, Date.now()), c
     }
   }))

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => A
 }), n(413496), n(433524), n(35282), n(539854), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(243778),
   g = n(618857),
   b = n(488131),
-  _ = n(375954),
-  y = n(626135),
+  y = n(375954),
+  _ = n(626135),
   C = n(585483),
   x = n(403182),
   v = n(127654),
@@ -32,7 +32,7 @@ var r = n(200651),
 let Z = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function T() {
-  let e = (0, o.e7)([_.Z], () => _.Z.hasCurrentUserSentMessageSinceAppStart()),
+  let e = (0, o.e7)([y.Z], () => y.Z.hasCurrentUserSentMessageSinceAppStart()),
     t = [];
   e && t.push(a.z.ACTIVITIES_CHAT_MENU_NEW_BADGE);
   let [n] = (0, f.cv)(t);
@@ -60,7 +60,7 @@ function A(e) {
     options: o,
     onFileUpload: f,
     onClose: m,
-    onSelect: _,
+    onSelect: y,
     draftType: A,
     editorTextContent: w,
     setValue: R,
@@ -76,7 +76,7 @@ function A(e) {
   }
 
   function W() {
-    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
+    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_USE_APPS_CLICKED), R("/", (0, j.JM)("/"))
   }
 
   function U() {
@@ -128,7 +128,7 @@ function A(e) {
   }
 
   function G() {
-    y.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
+    _.default.track(E.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
       guild_id: t.guild_id
@@ -153,13 +153,13 @@ function A(e) {
     })
   }
   return i.useEffect(() => {
-    y.default.track(E.rMx.OPEN_POPOUT, {
+    _.default.track(E.rMx.OPEN_POPOUT, {
       type: "Send Attachment",
       channel_id: t.id,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id]), (0, r.jsx)(s.v2r, {
-    onSelect: _,
+    onSelect: y,
     navId: "channel-attach",
     onClose: m,
     "aria-label": P.NW.string(P.t.Xm41aW),

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => b
 });
@@ -20,7 +20,7 @@ var r = n(200651),
 function b(e) {
   let {
     threadId: t
-  } = e, n = (0, o.e7)([c.Z], () => c.Z.getChannel(t)), b = (0, o.e7)([c.Z], () => c.Z.getChannel(null == n ? void 0 : n.parent_id)), _ = i.useCallback(() => {
+  } = e, n = (0, o.e7)([c.Z], () => c.Z.getChannel(t)), b = (0, o.e7)([c.Z], () => c.Z.getChannel(null == n ? void 0 : n.parent_id)), y = i.useCallback(() => {
     null != n && null != b && ((0, s.yw)(f.rMx.MEDIA_POST_SHARE_PROMPT_CLICKED, {
       media_post_id: n.id
     }), (0, l.J)((0, u.EO)(n, b)))
@@ -44,7 +44,7 @@ function b(e) {
       }), (0, r.jsxs)(a.zxk, {
         className: g.sharePromptCta,
         innerClassName: g.ctaContent,
-        onClick: _,
+        onClick: y,
         children: [(0, r.jsx)(a.xPt, {
           color: "currentColor",
           size: "xs"

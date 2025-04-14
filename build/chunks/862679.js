@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => d
 });
@@ -21,8 +21,8 @@ let d = function(e) {
     onButtonClick: m,
     imageSrc: g,
     animationSrc: b,
-    secondaryButtonText: _,
-    onSecondaryButtonClick: y,
+    secondaryButtonText: y,
+    onSecondaryButtonClick: _,
     children: C,
     useReducedMotion: x = !1
   } = e, v = (0, o.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
@@ -57,14 +57,14 @@ let d = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: u.buttonContainer,
-      children: [null != _ && (0, r.jsx)(a.zxk, {
+      children: [null != y && (0, r.jsx)(a.zxk, {
         className: u.button,
         size: a.zxk.Sizes.SMALL,
-        onClick: y,
+        onClick: _,
         look: a.zxk.Looks.LINK,
         color: a.zxk.Colors.PRIMARY,
         submitting: f,
-        children: _
+        children: y
       }), null != p && (0, r.jsx)(a.zxk, {
         className: u.button,
         innerClassName: u.innerButton,

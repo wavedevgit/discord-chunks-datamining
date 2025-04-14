@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  a = n(481060),
-  l = n(434404),
+  l = n(481060),
+  a = n(434404),
   o = n(999382),
   c = n(388032);
 
@@ -16,15 +16,15 @@ function d(e) {
     profile: t,
     canManageGuild: n
   } = e, d = t.id, u = (0, s.e7)([o.Z], () => o.Z.getError("name")), m = i.useCallback(e => {
-    l.Z.updateGuild({
+    a.Z.updateGuild({
       name: e
-    }), l.Z.updateGuildProfile(d, {
+    }), a.Z.updateGuildProfile(d, {
       name: e
     })
   }, [d]);
-  return (0, r.jsx)(a.xJW, {
+  return (0, r.jsx)(l.xJW, {
     title: c.NW.string(c.t.X56QcH),
-    children: (0, r.jsx)(a.oil, {
+    children: (0, r.jsx)(l.oil, {
       type: "text",
       disabled: !n,
       value: t.name,

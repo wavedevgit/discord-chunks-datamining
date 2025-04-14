@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   AP: () => en,
   Ru: () => er,
@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(628238),
   g = n(911266),
   b = n(111810),
-  _ = n(235894),
-  y = n(367814),
+  y = n(235894),
+  _ = n(367814),
   C = n(807092),
   x = n(869765),
   v = n(703656),
@@ -138,9 +138,9 @@ function er(e) {
       setPopout: g
     } = (0, L.Z)(l.id, q.d$),
     b = (0, T.ZP)(l),
-    _ = (0, R.iG)(l),
+    y = (0, R.iG)(l),
     C = (0, R.Gx)(l),
-    v = (0, y.Z)(b),
+    v = (0, _.Z)(b),
     j = null != (n = l.getGuildId()) ? n : void 0;
   return l.type === K.uaV.THREAD_STARTER_MESSAGE && null != f && f.state === x.Y.LOADED ? (0, r.jsx)(ei, ee($({}, e), {
     viewingChannelId: l.channel_id,
@@ -164,7 +164,7 @@ function er(e) {
     }),
     childrenSystemMessage: (0, Y.Z)(e),
     childrenMessageContent: null,
-    "aria-labelledby": _,
+    "aria-labelledby": y,
     "aria-describedby": C,
     hasThread: !1,
     authorHasGradientRole: v,
@@ -185,7 +185,7 @@ function ei(e) {
       guild_id: g
     },
     compact: b = !1,
-    className: _,
+    className: y,
     groupId: C,
     viewingChannelId: O
   } = e, E = a.type === K.uaV.REPLY ? a.messageReference : void 0, N = (0, c.JA)(null != (t = e.id) ? t : ""), {
@@ -219,21 +219,21 @@ function ei(e) {
     allowLinks: !0,
     previewLinkTarget: !0,
     viewingChannelId: O
-  }), ef = (0, M.Z)(s, h, ec), em = (0, T.ZP)(a), eg = (0, R.iG)(a, C), eb = (0, R.Gx)(a), e_ = (0, H.Z)(e, ep, !1), ey = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
+  }), ef = (0, M.Z)(s, h, ec), em = (0, T.ZP)(a), eg = (0, R.iG)(a, C), eb = (0, R.Gx)(a), ey = (0, H.Z)(e, ep, !1), e_ = i.useCallback(() => (0, v.XU)(g, h, s), [g, h, s]), eC = (0, f.p9)({
     guildId: g,
     roleId: em.iconRoleId
-  }), ex = (0, y.Z)(em);
+  }), ex = (0, _.Z)(em);
   return (0, r.jsxs)("div", {
     className: Q.quotedChatMessage,
     children: [(0, r.jsx)(d.P3F, {
       className: Q.jump,
-      onClick: ey,
+      onClick: e_,
       "aria-label": X.NW.string(X.t.k5WiPT),
       children: X.NW.string(X.t.k5WiPT)
     }), (0, r.jsx)(w.Z, ee($({}, S), {
       id: l,
       compact: b,
-      className: o()(_, {
+      className: o()(y, {
         [Q.message]: !0,
         [Q.cozyMessage]: !b,
         [Q.mentioned]: a.mentioned,
@@ -273,7 +273,7 @@ function ei(e) {
         disableComponentInteractivity: !0
       }),
       childrenSystemMessage: (0, Y.Z)(e),
-      childrenMessageContent: e_,
+      childrenMessageContent: ey,
       onMouseMove: eo,
       onMouseLeave: ea,
       "aria-labelledby": eg,
@@ -316,9 +316,9 @@ let el = i.memo(function(e) {
     {
       popouts: eg,
       selected: eb,
-      setPopout: e_
+      setPopout: ey
     } = (0, L.Z)(v.id, q.d$),
-    ey = (0, k.qo)(v, J, e_),
+    e_ = (0, k.qo)(v, J, ey),
     eC = (0, k.Go)(v, J),
     {
       handleMouseEnter: ex,
@@ -387,7 +387,7 @@ let el = i.memo(function(e) {
     eX = null != eq,
     eQ = i.useMemo(() => Object.values(eg).some(e => e), [eg]);
   l = v.type === K.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, eW) : (0, H.Z)(e, eW, eT);
-  let eJ = (0, y.Z)(eG),
+  let eJ = (0, _.Z)(eG),
     e$ = v.id === eo,
     e0 = (0, r.jsx)(d.tEY, {
       offset: {
@@ -398,7 +398,7 @@ let el = i.memo(function(e) {
         id: a,
         className: Q.messageListItem,
         "aria-setsize": -1,
-        children: [(0, _.Uw)(v) && (0, r.jsx)(g.Z, {
+        children: [(0, y.Uw)(v) && (0, r.jsx)(g.Z, {
           compact: er,
           message: v,
           hovering: eO && !eT && !eQ
@@ -409,7 +409,7 @@ let el = i.memo(function(e) {
           "aria-describedby": eY,
           onFocus: eS,
           onBlur: eZ,
-          onContextMenu: ey,
+          onContextMenu: e_,
           onKeyDown: eB,
           onClick: eC,
           compact: er,
@@ -428,21 +428,21 @@ let el = i.memo(function(e) {
             [Q.automodMessage]: eX,
             [Q.editing]: eT,
             [Q.hasOpenPopouts]: eQ,
-            [Q.potioned]: (0, _.Uw)(v) && ep
+            [Q.potioned]: (0, y.Uw)(v) && ep
           }),
           zalgo: !eT,
           childrenRepliedMessage: ea || v.type !== K.uaV.REPLY ? void 0 : (0, z.Z)(ee($({}, e), {
-            setPopout: e_,
+            setPopout: ey,
             referencedUsernameProfile: eg.referencedUsernameProfile,
             referencedAvatarProfile: eg.referencedAvatarProfile,
             replyReference: es,
             replyMessage: em,
             isReplySpineClickable: !0
           })),
-          childrenExecutedCommand: (0, V.Z)(e, e_, eg),
+          childrenExecutedCommand: (0, V.Z)(e, ey, eg),
           childrenHeader: ea ? void 0 : (0, F.Z)({
             messageProps: e,
-            setPopout: e_,
+            setPopout: ey,
             messagePopouts: eg,
             replyReference: es,
             author: eG,
@@ -452,13 +452,13 @@ let el = i.memo(function(e) {
           childrenAccessories: (0, U.Z)({
             channelMessageProps: e,
             hasSpoilerEmbeds: eU,
-            handleContextMenu: ey,
+            handleContextMenu: e_,
             isInteracting: eR,
             isAutomodBlockedMessage: eX
           }),
           childrenButtons: ej || eN ? (0, G.Z)({
             buttonProps: e,
-            setPopout: e_,
+            setPopout: ey,
             messagePopouts: eg,
             isFocused: eO || eE
           }) : void 0,

@@ -1,4 +1,5 @@
-/** Chunk was on 58121 **/
+/** Chunk was on 71018 **/
+"use strict";
 e.exports = {
   container: "container_c66e86",
   action: "action_c66e86",
@@ -7,7 +8,6 @@ e.exports = {
   channelIcon: "channelIcon_c66e86",
   channelIconContainer: "channelIconContainer_c66e86",
   rulesIconContainer: "rulesIconContainer_c66e86",
-  tagIconContainer: "tagIconContainer_c66e86",
   rulesIcon: "rulesIcon_c66e86",
   checkCircle: "checkCircle_c66e86",
   checkCircleCompleted: "checkCircleCompleted_c66e86",

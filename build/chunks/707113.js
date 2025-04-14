@@ -39,9 +39,9 @@ function N(e) {
     className: n,
     onPageChange: i,
     onMemberSelect: s
-  } = e, N = t.id, C = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(N), [N]), p = (0, d.$j)(N), _ = (0, d.M3)(N), g = l.useCallback(e => {
+  } = e, N = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(N), [N]), C = (0, d.$j)(N), g = (0, d.M3)(N), v = l.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), v = (0, m.xb)(_, p, C), T = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
+  }, [s]), _ = (0, m.xb)(g, C, p), T = l.useRef(null), E = l.useRef(null), I = l.useCallback(() => {
     var e;
     null == (e = T.current) || e.resetSearchText()
   }, []);
@@ -58,10 +58,10 @@ function N(e) {
         guild: t
       }), (0, r.jsx)(x.Z, {
         guild: t,
-        onSelectRow: g,
-        searchState: v,
+        onSelectRow: v,
+        searchState: _,
         onResetForNewMembers: I
-      }), v !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
+      }), _ !== m.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(h.Z, {
         guildId: t.id,
         onPageChange: i
       })]

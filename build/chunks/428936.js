@@ -1,17 +1,17 @@
-/** Chunk was on 60696 **/
+/** Chunk was on 88256 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
 var r = n(200651),
   l = n(192379),
   o = n(399606),
-  a = n(481060),
-  i = n(823596),
+  i = n(481060),
+  a = n(823596),
   s = n(201070),
   c = n(893966),
   u = n(527379),
-  d = n(388032),
-  C = n(673285);
+  C = n(388032),
+  d = n(673285);
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -49,24 +49,24 @@ function p(e) {
   let {
     guildId: t,
     onPageChange: n
-  } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), g = (0, s.$j)(t), x = l.useMemo(() => i.LU.map(e => ({
+  } = e, [p, f] = l.useTransition(), h = (0, o.e7)([c.Z], () => c.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), j = (0, o.cj)([c.Z], () => c.Z.getPaginationStateByGuildId(t), [t]), g = (0, s.$j)(t), x = l.useMemo(() => a.LU.map(e => ({
     value: e,
     label: Number(e).toLocaleString()
-  })), []), O = new Intl.NumberFormat(d.NW.currentLocale).format(h), y = d.NW.formatToPlainString(d.t.RNDnQ0, {
+  })), []), O = new Intl.NumberFormat(C.NW.currentLocale).format(h), y = C.NW.formatToPlainString(C.t.RNDnQ0, {
     count: g ? "..." : O
-  }), v = h > j.pageSize || g, N = h > i.LU["0"];
+  }), v = h > j.pageSize || g, N = h > a.LU["0"];
   return (0, r.jsxs)("div", {
-    className: C.paginationContainer,
+    className: d.paginationContainer,
     children: [(0, r.jsx)("div", {
-      className: C.pageSizeSelection,
+      className: d.pageSizeSelection,
       children: N ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: d.NW.string(d.t.jNwLu7)
-        }), (0, r.jsx)(a.PhF, {
+          children: C.NW.string(C.t.jNwLu7)
+        }), (0, r.jsx)(i.PhF, {
           "aria-label": y,
-          className: C.pageSizeInput,
+          className: d.pageSizeInput,
           options: x,
           isSelected: e => e === j.pageSize,
           select: e => {
@@ -79,28 +79,28 @@ function p(e) {
           serialize: e => "".concat(e),
           popoutPosition: "top",
           popoutWidth: 72
-        }), (0, r.jsx)(a.ua7, {
-          text: d.NW.string(d.t.ZTNur6),
+        }), (0, r.jsx)(i.ua7, {
+          text: C.NW.string(C.t.ZTNur6),
           shouldShow: g,
-          children: e => (0, r.jsx)(a.Text, b(m({
+          children: e => (0, r.jsx)(i.Text, b(m({
             variant: "text-md/normal",
             color: "text-muted",
-            className: C.pageLabel
+            className: d.pageLabel
           }, e), {
             children: y
           }))
         })]
-      }) : (0, r.jsx)(a.Text, {
+      }) : (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: d.NW.format(d.t.GZpwMD, {
+        children: C.NW.format(C.t.GZpwMD, {
           count: h
         })
       })
     }), (0, r.jsx)("div", {
-      className: C.pagination,
-      children: v && (0, r.jsx)(a.DsT, {
-        className: C.paginationInput,
+      className: d.pagination,
+      children: v && (0, r.jsx)(i.DsT, {
+        className: d.paginationInput,
         totalCount: h,
         pageSize: j.pageSize,
         disablePaginationGap: !0,
@@ -115,7 +115,7 @@ function p(e) {
             })
           })
         },
-        maxVisiblePages: i.hW
+        maxVisiblePages: a.hW
       })
     })]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => C
 });
@@ -17,9 +17,9 @@ var r = n(200651),
   m = n(313692),
   g = n(596443),
   b = n(50493),
-  _ = n(981631);
+  y = n(981631);
 
-function y(e, t) {
+function _(e, t) {
   return n => {
     if (0 === n) return "auto";
     let r = "forwards" === t.current,
@@ -44,7 +44,7 @@ function C(e) {
       modViewPanel: e
     })
   }, [O, C, n]), T = i.useMemo(() => ({
-    [_.EkH.CLOSE_MODAL]: {
+    [y.EkH.CLOSE_MODAL]: {
       binds: ["esc"],
       comboKeysBindGlobal: !0,
       action: () => E === b.k.INFO ? x() : Z(b.k.INFO)
@@ -103,8 +103,8 @@ function C(e) {
         }, S.enabled ? {
           opacity: null == (o = e.value) ? void 0 : o.to(e => 1 - Math.abs(e))
         } : {
-          left: null == (a = e.value) ? void 0 : a.to(y("left", P)),
-          right: null == (s = e.value) ? void 0 : s.to(y("right", P))
+          left: null == (a = e.value) ? void 0 : a.to(_("left", P)),
+          right: null == (s = e.value) ? void 0 : s.to(_("right", P))
         }),
         children: function(e) {
           switch (e) {

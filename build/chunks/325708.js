@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _,
+  Z: () => y,
   y: () => g
 }), n(388685);
 var r, i = n(200651),
@@ -39,14 +39,14 @@ function b(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     sidebarType: t,
     maxWidth: n,
     onWidthChange: r,
     children: o,
     floatingLayer: p
-  } = e, g = l.useRef(null), _ = function(e) {
+  } = e, g = l.useRef(null), y = function(e) {
     switch (e) {
       case 0:
         return "postSidebarWidth";
@@ -61,14 +61,14 @@ function _(e) {
       case 5:
         return "callParticipantsSidebarWidth"
     }
-  }(t), [y, C] = l.useState(h.ZP[_]), x = l.useCallback(e => {
+  }(t), [_, C] = l.useState(h.ZP[y]), x = l.useCallback(e => {
     d.ZP.updatedUnsyncedSettings({
-      [_]: e
+      [y]: e
     })
-  }, [_]), v = 5 === t ? f.at : f.Co, j = (0, f.WL)({
+  }, [y]), v = 5 === t ? f.at : f.Co, j = (0, f.WL)({
     maxWidth: n,
     minWidth: v
-  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(y, v, n), N = j ? E : E + O;
+  }), O = (0, u.dQu)(c.Z.modules.chat.RESIZE_HANDLE_WIDTH), E = (0, s.clamp)(_, v, n), N = j ? E : E + O;
   l.useEffect(() => {
     null == r || r(E, j)
   }, [E, r, j]);

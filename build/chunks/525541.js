@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => u
 });
@@ -23,8 +23,8 @@ function u(e) {
     onReportSubmit: m,
     onMouseEnter: g,
     onMouseLeave: b
-  } = e, _ = (0, a.Q)(t), y = (0, s.V)(n.id, t);
-  if (!_ || null == y) return null;
+  } = e, y = (0, a.Q)(t), _ = (0, s.V)(n.id, t);
+  if (!y || null == _) return null;
   let C = () => {
     null == m || m(), l.Z.closePrivateChannel(n.id, h)
   };
@@ -32,9 +32,9 @@ function u(e) {
     className: d,
     size: u,
     color: i.zxk.Colors.RED,
-    disabled: null == y,
+    disabled: null == _,
     onClick: () => {
-      null == f || f(), (0, o.WL)(y, C)
+      null == f || f(), (0, o.WL)(_, C)
     },
     onMouseEnter: g,
     onMouseLeave: b,

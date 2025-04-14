@@ -1,8 +1,8 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   U2: () => i,
-  jb: () => a
+  jb: () => l
 });
 var r = n(388032);
 let i = {
@@ -25,7 +25,7 @@ let i = {
   },
   s = ["en-GB"];
 
-function a() {
+function l() {
   return (0, r.u5)().map(e => {
     let t, {
       value: i,

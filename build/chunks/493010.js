@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => x
 });
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(585483),
   g = n(909820),
   b = n(981631),
-  _ = n(921944),
-  y = n(388032),
+  y = n(921944),
+  _ = n(388032),
   C = n(591837);
 let x = function(e) {
   let {
@@ -28,7 +28,7 @@ let x = function(e) {
   } = e;
   i.useEffect(() => {
     (0, p.EW)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-      dismissAction: _.L.AUTO
+      dismissAction: y.L.AUTO
     })
   }, []);
   let v = i.useCallback(() => {
@@ -36,7 +36,7 @@ let x = function(e) {
     }, [t.id]),
     j = (0, r.jsx)(h.ZP.Icon, {
       icon: o.Dio,
-      tooltip: y.NW.string(y.t.cpT0Cg),
+      tooltip: _.NW.string(_.t.cpT0Cg),
       onClick: v
     });
   return (0, r.jsxs)(u.Z, {
@@ -48,11 +48,11 @@ let x = function(e) {
       draftType: f.d.ChannelMessage
     }), (0, r.jsxs)(h.ZP, {
       toolbar: j,
-      "aria-label": y.NW.string(y.t.BIYAqa),
+      "aria-label": _.NW.string(_.t.BIYAqa),
       children: [(0, r.jsx)(h.ZP.Icon, {
         icon: o.kBi,
         disabled: !0,
-        "aria-label": y.NW.string(y.t.Kx5kCA)
+        "aria-label": _.NW.string(_.t.Kx5kCA)
       }), (0, r.jsx)(h.ZP.Title, {
         children: t.name
       })]

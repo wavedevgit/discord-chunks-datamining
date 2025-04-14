@@ -1,19 +1,19 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(380544);
 
-function a(e) {
+function l(e) {
   let {
     label: t,
     sublabel: n,
-    value: a,
-    additionalContent: l,
+    value: l,
+    additionalContent: a,
     tooltip: o
   } = e;
   return (0, r.jsxs)("div", {
@@ -60,7 +60,7 @@ function a(e) {
       tag: "span",
       variant: "heading-xl/medium",
       color: "header-primary",
-      children: a
-    }), l]
+      children: l
+    }), a]
   })
 }

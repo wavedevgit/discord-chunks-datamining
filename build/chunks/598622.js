@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Q: () => m
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(740903),
   s = n(426434),
-  a = n(112824),
-  l = n(181339),
+  l = n(112824),
+  a = n(181339),
   o = n(195189),
   c = n(3896),
   d = n(981631),
@@ -44,7 +44,7 @@ let m = e => {
   }].filter(e => null != e);
   return {
     [i.u.CAPTCHA_AND_RAID_PROTECTION]: [{
-      renderComponent: () => (0, r.jsx)(l.Z, {
+      renderComponent: () => (0, r.jsx)(a.Z, {
         guild: e
       }, "raid-alerts"),
       enabled: !e.hasFeature(d.oNc.RAID_ALERTS_DISABLED)
@@ -66,10 +66,10 @@ let m = e => {
       }, "guild-mfa"),
       enabled: e.mfaLevel === d.BpS.ELEVATED
     }, {
-      renderComponent: () => (0, r.jsx)(a.Z, {
+      renderComponent: () => (0, r.jsx)(l.Z, {
         guild: e
       }, "disable-risky-perms"),
-      enabled: 0 === (0, a.R)(e).length
+      enabled: 0 === (0, l.R)(e).length
     }]
   }
 }

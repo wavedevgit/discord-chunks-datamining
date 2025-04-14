@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => b
+  Z: () => x
 });
 var r = n(200651),
   i = n(192379),
   s = n(399606),
-  a = n(481060),
-  l = n(710344),
+  l = n(481060),
+  a = n(710344),
   o = n(734893),
   c = n(8426),
   d = n(969632),
@@ -34,7 +34,7 @@ function p(e) {
   return e
 }
 
-function f(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -46,52 +46,52 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let h = [],
-  b = function(e) {
+let f = [],
+  x = function(e) {
     let {
       guildId: t
-    } = e, b = (0, s.Wu)([d.Z], () => {
+    } = e, x = (0, s.Wu)([d.Z], () => {
       var e;
-      return null != (e = d.Z.getSettings().resourceChannels) ? e : h
-    }), x = i.useMemo(() => b.map(e => f(p({}, e), {
+      return null != (e = d.Z.getSettings().resourceChannels) ? e : f
+    }), b = i.useMemo(() => x.map(e => h(p({}, e), {
       id: e.channelId
-    })), [b]), {
+    })), [x]), {
       handleDragStart: j,
       handleDragReset: N,
-      handleDragComplete: v
-    } = (0, l.Z)(x, c.lq), _ = i.useCallback((e, n) => {
+      handleDragComplete: _
+    } = (0, a.Z)(b, c.lq), v = i.useCallback((e, n) => {
       let r = d.Z.getSettings();
       null != r && ((0, c.r2)(e), (0, c.oo)(t, r).then(() => {
         (0, c.mM)(t, e.channelId, n)
       }))
-    }, [t]), y = i.useCallback(() => {
-      if (null != t) return (0, a.ZDy)(async () => {
+    }, [t]), O = i.useCallback(() => {
+      if (null != t) return (0, l.ZDy)(async () => {
         let {
           default: e
         } = await n.e("84725").then(n.bind(n, 462499));
-        return n => (0, r.jsx)(e, f(p({}, n), {
+        return n => (0, r.jsx)(e, h(p({}, n), {
           guildId: t,
           onSave: c.r2,
-          onIconUpload: _
+          onIconUpload: v
         }))
       })
-    }, [t, _]);
+    }, [t, v]);
     return (0, r.jsxs)("div", {
       className: g.editResources,
-      children: [b.map((e, n) => (0, r.jsx)(u.Z, {
+      children: [x.map((e, n) => (0, r.jsx)(u.Z, {
         guildId: t,
         resourceChannel: e,
         index: n,
         onDragStart: j,
         onDragReset: N,
-        onDragComplete: v
-      }, e.channelId)), b.length < o.x3 && (0, r.jsxs)(a.P3F, {
+        onDragComplete: _
+      }, e.channelId)), x.length < o.x3 && (0, r.jsxs)(l.P3F, {
         className: g.addActionItem,
-        onClick: y,
-        children: [(0, r.jsx)(a.oFk, {
+        onClick: O,
+        children: [(0, r.jsx)(l.oFk, {
           size: "xs",
           color: "currentColor"
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "none",
           children: m.NW.string(m.t["w9/qGR"])

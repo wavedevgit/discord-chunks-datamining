@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -6,19 +6,19 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   s = n(479531),
-  a = n(430824),
-  l = n(594174),
+  l = n(430824),
+  a = n(594174),
   o = n(53365),
   c = n(223892);
 
 function d(e, t) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getGuild(e)),
+  let n = (0, i.e7)([l.Z], () => l.Z.getGuild(e)),
     [d, u] = r.useState(),
     [m, g] = r.useState(!1),
     p = (0, c.Ob)(n);
   return {
-    canSubmitAcceptance: (0, i.e7)([l.default], () => {
-      let e = l.default.getCurrentUser();
+    canSubmitAcceptance: (0, i.e7)([a.default], () => {
+      let e = a.default.getCurrentUser();
       return (null == n ? void 0 : n.isOwner(e)) === !0
     }, [n]),
     error: d,

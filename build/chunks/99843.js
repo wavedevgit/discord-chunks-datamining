@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => O
 }), n(388685);
@@ -17,9 +17,9 @@ var r = n(200651),
   m = n(210975),
   g = n(981631),
   b = n(388032),
-  _ = n(791293);
+  y = n(791293);
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ let x = e => {
       channelId: t.id
     }) ? (0, r.jsx)(a.ua7, {
       text: b.NW.string(b.t.QyZ4TU),
-      children: e => (0, r.jsx)(a.tQf, C(y({}, e), {
+      children: e => (0, r.jsx)(a.tQf, C(_({}, e), {
         size: "xs",
         "aria-label": b.NW.string(b.t.VHXh8f),
         color: a.TVs.colors.INTERACTIVE_NORMAL
@@ -71,24 +71,24 @@ let x = e => {
       children: l
     } = e, u = t.id, p = t.name, h = (0, d.ZP)(t), f = (0, d.cO)(t), [m, v] = i.useState(!1);
     return (0, r.jsxs)("div", {
-      className: _.newWrapper,
+      className: y.newWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(_.hoverableContainer, {
-          [_.editing]: !1 !== m
+        className: o()(y.hoverableContainer, {
+          [y.editing]: !1 !== m
         }),
         onDoubleClick: e => e.stopPropagation(),
         children: [l, !1 === m ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.ua7, {
             text: b.NW.string(b.t.pYO54e),
             position: "bottom",
-            children: e => (0, r.jsxs)(a.P3F, C(y({}, e), {
-              className: _.clickableTitle,
+            children: e => (0, r.jsxs)(a.P3F, C(_({}, e), {
+              className: y.clickableTitle,
               onClick: () => v(p),
               onContextMenu: e => (0, c.jW)(e, () => Promise.all([n.e("79695"), n.e("20875"), n.e("70205"), n.e("53912"), n.e("518")]).then(n.bind(n, 354741)).then(e => {
                 let {
                   default: n
                 } = e;
-                return e => (0, r.jsx)(n, C(y({}, e), {
+                return e => (0, r.jsx)(n, C(_({}, e), {
                   channel: t,
                   selected: !0
                 }))
@@ -102,7 +102,7 @@ let x = e => {
                 color: "header-primary",
                 children: null != h ? h : ""
               }), (0, r.jsx)(a.vdY, {
-                className: _.editIcon,
+                className: y.editIcon,
                 size: "xs",
                 color: "currentColor"
               })]
@@ -117,7 +117,7 @@ let x = e => {
           children: (0, r.jsx)(a.oil, {
             autoFocus: !0,
             maxLength: g.HN8,
-            inputClassName: _.newInput,
+            inputClassName: y.newInput,
             name: "channel_name",
             autoComplete: "off",
             value: m,
@@ -128,7 +128,7 @@ let x = e => {
           })
         })]
       }), !1 !== m && (0, r.jsxs)("div", {
-        className: _.explainer,
+        className: y.explainer,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
@@ -136,7 +136,7 @@ let x = e => {
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "header-muted",
-          className: _.visibleLink,
+          className: y.visibleLink,
           children: b.NW.format(b.t.HVqAgI, {
             onCancel: () => v(!1)
           })
@@ -151,12 +151,12 @@ let x = e => {
     } = e, i = (0, d.ZP)(t);
     return (0, r.jsxs)(r.Fragment, {
       children: [n, (0, r.jsxs)("div", {
-        className: _.container,
+        className: y.container,
         onDoubleClick: e => e.stopPropagation(),
         children: [(0, r.jsx)(u.Z, {
           minLen: 1,
           maxLen: g.HN8,
-          className: _.channelName,
+          className: y.channelName,
           name: "channel_name",
           autoComplete: "off",
           value: null != i ? i : "",
@@ -178,7 +178,7 @@ let x = e => {
       channel: t,
       children: (0, r.jsx)(f.v, {
         channel: t,
-        className: i ? _.newGdmIcon : n,
+        className: i ? y.newGdmIcon : n,
         children: (0, r.jsx)(h.Z, {
           "aria-hidden": !0,
           channel: t,

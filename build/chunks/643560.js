@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   default: () => f
 });
@@ -52,15 +52,15 @@ function f(e) {
     hideEditButton: g = !1
   } = e, {
     isEntryAdmin: b,
-    canEdit: _,
-    canRemove: y
+    canEdit: y,
+    canRemove: _
   } = (0, u.Z)(t), C = (0, a.Z)({
     id: t.guildId,
     label: d.NW.string(d.t["94lLDw"]),
     onSuccess: m
   });
   i.useEffect(() => {
-    _ || y || null != C || (0, o.Zy)()
+    y || _ || null != C || (0, o.Zy)()
   });
   let x = () => {
     c.kx(t.channelId, t.guildId)
@@ -75,7 +75,7 @@ function f(e) {
     "aria-label": d.NW.string(d.t.HpQykZ),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [_ && !g ? (0, r.jsx)(l.sNh, {
+      children: [y && !g ? (0, r.jsx)(l.sNh, {
         id: "update-entry",
         label: d.NW.string(d.t.XnuOvL),
         action: function() {
@@ -88,7 +88,7 @@ function f(e) {
             }))
           }), v()
         }
-      }) : null, y ? (0, r.jsx)(l.sNh, {
+      }) : null, _ ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: d.NW.string(d.t.KUxYWF),
         action: function() {

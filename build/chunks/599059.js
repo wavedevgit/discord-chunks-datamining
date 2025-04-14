@@ -1,11 +1,11 @@
-/** Chunk was on 12910 **/
+/** Chunk was on 86974 **/
 n.d(t, {
   Z: () => c
 }), n(388685);
 var r = n(200651),
   l = n(192379),
-  a = n(120356),
-  s = n.n(a),
+  s = n(120356),
+  a = n.n(s),
   o = n(981631),
   i = n(516459);
 
@@ -32,7 +32,7 @@ class c extends l.Component {
         className: t,
         name: n,
         autoComplete: l,
-        maxLen: a,
+        maxLen: s,
         disabled: o
       } = this.props,
       E = {
@@ -45,7 +45,7 @@ class c extends l.Component {
       visibility: "hidden",
       pointerEvents: "none"
     } : E.opacity = 0, (0, r.jsx)("div", {
-      className: s()(i.outer, t),
+      className: a()(i.outer, t),
       children: (0, r.jsxs)("div", {
         className: i.container,
         children: [(0, r.jsx)("input", {
@@ -55,7 +55,7 @@ class c extends l.Component {
           style: E,
           value: this.state.value,
           name: n,
-          maxLength: a,
+          maxLength: s,
           autoComplete: l,
           onKeyPress: this.handleKeyPress,
           onChange: this.handleChange,

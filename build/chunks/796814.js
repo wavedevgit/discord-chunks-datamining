@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(192379),
   i = n(442837),
   s = n(80932),
-  a = n(110924),
-  l = n(471613),
+  l = n(110924),
+  a = n(471613),
   o = n(889564);
 let c = [];
 
@@ -15,10 +15,10 @@ function d(e) {
   let {
     revision: t,
     emojis: n
-  } = (0, i.cj)([l.Z], () => ({
-    revision: l.Z.getEmojiRevision(e),
-    emojis: l.Z.getEmojis(e)
-  })), d = (0, a.Z)(t);
+  } = (0, i.cj)([a.Z], () => ({
+    revision: a.Z.getEmojiRevision(e),
+    emojis: a.Z.getEmojis(e)
+  })), d = (0, l.Z)(t);
   return r.useEffect(() => {
     (0, s.OQ)(e)
   }, [e]), r.useEffect(() => {

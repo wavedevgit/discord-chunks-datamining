@@ -1,28 +1,28 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(587431),
   s = n(539290),
-  a = n(388032);
+  l = n(388032);
 
-function l(e) {
+function a(e) {
   let t, {
     resubmittingEnableRequest: n,
-    resubmissionError: l,
+    resubmissionError: a,
     createEnableRequest: o,
     requestRejectedNoticeText: c,
     reapplyNoticeText: d,
     isApplicationPending: u
   } = e;
-  if (null != l) return (0, r.jsx)(i.Z, {
-    children: l.getAnyErrorMessage()
+  if (null != a) return (0, r.jsx)(i.Z, {
+    children: a.getAnyErrorMessage()
   });
   let m = null;
-  return u ? m = a.NW.string(a.t.OrkTBg) : null != c ? m = c : null != d && (m = d, t = a.NW.string(a.t["YKw/NT"])), null != m ? (0, r.jsx)(s.Z, {
+  return u ? m = l.NW.string(l.t.OrkTBg) : null != c ? m = c : null != d && (m = d, t = l.NW.string(l.t["YKw/NT"])), null != m ? (0, r.jsx)(s.Z, {
     notice: m,
     ctaLabel: t,
     ctaLoading: n,

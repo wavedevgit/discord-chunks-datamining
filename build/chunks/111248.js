@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,27 +18,27 @@ var r = n(200651),
   g = n(20795);
 let b = "CameraPreviewPosition";
 
-function _(e) {
+function y(e) {
   let {
     width: t,
     onContextMenuParticipant: n,
     height: l,
-    channel: _,
-    participants: y,
+    channel: y,
+    participants: _,
     onSelectParticipant: C
   } = e, [x, v] = function() {
     let [e, t] = i.useState(() => s.K.get(b, h.VD2.BOTTOM_RIGHT));
     return [e, i.useCallback(e => {
       s.K.set(b, e), t(e)
     }, [])]
-  }(), j = i.useRef(null), O = null == _.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), N = y.length, I = E * N + 8 * (N - 1), P = i.useMemo(() => ({
+  }(), j = i.useRef(null), O = null == y.getGuildId() ? 70 : 50, E = (0, a.e7)([d.Z], () => d.Z.pipWidth(f.cL.CAMERA_PREVIEW)), N = _.length, I = E * N + 8 * (N - 1), P = i.useMemo(() => ({
     minWidth: f.Rv[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1),
     maxWidth: f.$i[f.cL.CAMERA_PREVIEW] * N + 8 * (N - 1)
   }), [N]);
   i.useLayoutEffect(() => {
     var e;
     null == (e = j.current) || e.ensureIsInPosition()
-  }, [y.length]);
+  }, [_.length]);
   let S = i.useCallback(e => {
       let t = 0 === N ? e : (e - 8 * (N - 1)) / N;
       c.d7(t, f.cL.CAMERA_PREVIEW)
@@ -64,9 +64,9 @@ function _(e) {
       resizeConfig: P,
       children: (0, r.jsx)("div", {
         className: m.tileContainer,
-        children: y.map(e => (0, r.jsx)(p.ZP, {
+        children: _.map(e => (0, r.jsx)(p.ZP, {
           participant: e,
-          channel: _,
+          channel: y,
           onContextMenu: n,
           className: o()(m.tile, g.elevationHigh),
           fit: p.BP.COVER,

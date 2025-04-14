@@ -1,12 +1,12 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  k: () => a
+  k: () => l
 });
 var r = n(544891),
   i = n(570140),
   s = n(981631);
-async function a(e) {
+async function l(e) {
   i.Z.dispatch({
     type: "DISCOVER_CHECKLIST_FETCH_START",
     guildId: e

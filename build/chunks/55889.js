@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(941524),
-  l = n(563115),
+  l = n(941524),
+  a = n(563115),
   o = n(388032),
   c = n(85761);
 
@@ -47,7 +47,7 @@ let m = i.memo(function(e) {
     rule: t,
     onlyRoles: n = !1,
     onChangeRule: i
-  } = e, m = (0, r.jsx)(a.Z, {
+  } = e, m = (0, r.jsx)(l.Z, {
     guildId: t.guildId,
     selectedChannelIds: t.exemptChannels,
     selectedRoleIds: t.exemptRoles,
@@ -58,7 +58,7 @@ let m = i.memo(function(e) {
     disableEveryoneRole: !0,
     includeRoleRestrictedPrivateChannels: !0
   });
-  return n && (m = (0, r.jsx)(l.Z, {
+  return n && (m = (0, r.jsx)(a.Z, {
     guildId: t.guildId,
     selectedRoleIds: t.exemptRoles,
     onChange: e => i(u(d({}, t), {

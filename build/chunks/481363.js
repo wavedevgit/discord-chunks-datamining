@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => c
 }), n(997841);
@@ -25,8 +25,8 @@ function c(e) {
       groupId: f,
       compact: m = !1
     }
-  } = e, g = p.state === a.yb.SENDING, b = p.id === f, _ = (0, i.yE)(p.flags, a.iLy.EPHEMERAL), y = p.state === a.yb.SEND_FAILED;
-  return g || _ && !y ? null : (0, r.jsx)(o.Z, {
+  } = e, g = p.state === a.yb.SENDING, b = p.id === f, y = (0, i.yE)(p.flags, a.iLy.EPHEMERAL), _ = p.state === a.yb.SEND_FAILED;
+  return g || y && !_ ? null : (0, r.jsx)(o.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
     isHeader: !m && b && !(0, l.Z)(p),

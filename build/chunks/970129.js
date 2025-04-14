@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   T: () => c,
@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(442837),
-  a = n(481060),
-  l = n(496675),
+  l = n(481060),
+  a = n(496675),
   o = n(388032);
 
 function c(e, t, n) {
-  let r = (0, s.e7)([l.Z], () => !l.Z.isRoleHigher(e, t, n), [e, t, n]);
+  let r = (0, s.e7)([a.Z], () => !a.Z.isRoleHigher(e, t, n), [e, t, n]);
   return i.useMemo(() => r && n.id === (null == t ? void 0 : t.id), [r, n, t]) ? o.NW.string(o.t.PQylOT) : r ? o.NW.string(o.t.UGIjx8) : null
 }
 
@@ -23,10 +23,10 @@ function d(e) {
     width: i = 16,
     height: s = 16
   } = e;
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(l.ua7, {
     text: n,
     children: e => {
-      var n, l;
+      var n, a;
       return (0, r.jsx)("div", (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -46,22 +46,22 @@ function d(e) {
         return e
       }({
         className: t
-      }, e), l = l = {
-        children: (0, r.jsx)(a.mBM, {
+      }, e), a = a = {
+        children: (0, r.jsx)(l.mBM, {
           size: "custom",
           color: "currentColor",
           width: i,
           height: s
         })
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }
   })

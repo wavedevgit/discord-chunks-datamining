@@ -1,16 +1,16 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   AL: () => o,
-  f3: () => l
+  f3: () => a
 }), n(415506);
 var r = n(200651),
   i = n(192379),
   s = n(674180);
-let a = i.createContext(void 0);
+let l = i.createContext(void 0);
 
-function l() {
-  let e = i.useContext(a);
+function a() {
+  let e = i.useContext(l);
   if (null == e) throw Error("useCreatorMonetizationSettingsDisabled must be used within a CreatorMonetizationSettingsDisabledContext");
   return e
 }
@@ -22,7 +22,7 @@ function o(e) {
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: i
   } = (0, s.gX)(t);
-  return (0, r.jsx)(a.Provider, {
+  return (0, r.jsx)(l.Provider, {
     value: i,
     children: n
   })

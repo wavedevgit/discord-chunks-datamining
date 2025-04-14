@@ -1,15 +1,16 @@
-/** Chunk was on 99916 **/
+/** Chunk was on 58157 **/
 r.d(t, {
-  l: () => u,
-  v: () => d
+  l: () => d,
+  v: () => f
 });
 var n = r(200651);
 r(192379);
 var i = r(481060),
   o = r(144114),
-  s = r(489813),
-  l = r(815660),
-  c = r(388032);
+  l = r(489813),
+  s = r(815660),
+  u = r(388032),
+  c = r(667084);
 
 function a(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -30,20 +31,21 @@ function a(e) {
   return e
 }
 
-function u() {
-  return (0, n.jsx)(s.PU, {
+function d() {
+  return (0, n.jsx)(l.PU, {
+    className: c.editableRequirementContainer,
     icon: i.AtH,
-    text: c.NW.string(c.t.woMjLS),
-    footnote: c.NW.string(c.t["jMh+TU"]),
+    text: u.NW.string(u.t.woMjLS),
+    footnote: u.NW.string(u.t["jMh+TU"]),
     meetsRequirement: !1,
     children: (0, n.jsx)(i.ua7, {
-      text: c.NW.string(c.t.mGlP39),
+      text: u.NW.string(u.t.mGlP39),
       children: e => {
         var t, r;
         return (0, n.jsx)(i.zxk, (t = a({}, e), r = r = {
           size: i.zxk.Sizes.SMALL,
           disabled: !0,
-          children: c.NW.string(c.t["13ofGh"])
+          children: u.NW.string(u.t["13ofGh"])
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -59,14 +61,15 @@ function u() {
   })
 }
 
-function d(e) {
+function f(e) {
   let {
     isUserVerified: t
-  } = e, u = t ? c.NW.string(c.t.WWzQtb) : c.NW.string(c.t.woMjLS);
-  return (0, n.jsx)(s.PU, {
+  } = e, d = t ? u.NW.string(u.t.WWzQtb) : u.NW.string(u.t.woMjLS);
+  return (0, n.jsx)(l.PU, {
+    className: c.editableRequirementContainer,
     icon: i.AtH,
-    text: u,
-    footnote: c.NW.string(c.t["jMh+TU"]),
+    text: d,
+    footnote: u.NW.string(u.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, n.jsx)(i.zxk, {
       size: i.zxk.Sizes.SMALL,
@@ -79,10 +82,10 @@ function d(e) {
             reason: o.L.GUILD_PHONE_REQUIRED
           }, t))
         }, {
-          modalKey: l.M
+          modalKey: s.M
         })
       },
-      children: c.NW.string(c.t["13ofGh"])
+      children: u.NW.string(u.t["13ofGh"])
     })
   })
 }

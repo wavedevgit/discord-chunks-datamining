@@ -1,14 +1,14 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => b
 }), n(388685);
 var r = n(200651);
 n(192379);
 var i = n(442837),
   s = n(481060),
-  a = n(430824),
-  l = n(723047),
+  l = n(430824),
+  a = n(723047),
   o = n(727843),
   c = n(290348),
   d = n(971792),
@@ -16,9 +16,9 @@ var i = n(442837),
   m = n(331146),
   g = n(798680),
   p = n(388032),
-  f = n(301849);
+  h = n(301849);
 
-function h(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function b(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,51 +50,51 @@ function b(e, t) {
   }), e
 }
 
-function x() {
+function b() {
   let {
     editStateId: e,
     guildId: t
-  } = (0, o.N)(), [x, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
-    setCurrentTab: v
-  } = (0, g.dw)(), _ = () => v(g.ue.EMOJIS), y = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), O = null == y ? void 0 : y.getMaxRoleSubscriptionEmojiSlots();
+  } = (0, o.N)(), [b, j] = c.XZ(e, t), N = (0, d.Z)(t, e), {
+    setCurrentTab: _
+  } = (0, g.dw)(), v = () => _(g.ue.EMOJIS), O = (0, i.e7)([l.Z], () => l.Z.getGuild(t)), C = null == O ? void 0 : O.getMaxRoleSubscriptionEmojiSlots();
 
-  function C(e) {
-    null == x ? j(new Set(e)) : j(new Set([...x, ...e]))
+  function y(e) {
+    null == b ? j(new Set(e)) : j(new Set([...b, ...e]))
   }
 
   function I(e) {
-    let t = new Set(x);
+    let t = new Set(b);
     t.delete(e), j(t)
   }
-  let E = (0, l.mY)();
+  let E = (0, a.mY)();
   return (0, r.jsxs)(s.hjN, {
     title: p.NW.string(p.t.D0qeOz),
     disabled: E,
     children: [(0, r.jsxs)(s.R94, {
       type: s.R94.Types.DESCRIPTION,
-      className: f.formDescription,
+      className: h.formDescription,
       disabled: E,
       children: [p.NW.format(p.t.zuwel5, {
-        premiumEmojiMaximum: O
+        premiumEmojiMaximum: C
       }), (0, r.jsx)("br", {}), p.NW.format(p.t.sEkgBg, {
-        handleTransitionToManageEmoji: _
+        handleTransitionToManageEmoji: v
       })]
     }), (0, r.jsx)(m.E, {
-      tierEmojiIds: x,
+      tierEmojiIds: b,
       guildId: t,
       onRemoveEmoji: function(e) {
         e.roles.filter(e => e !== (null == N ? void 0 : N.id)).length > 0 ? I(e.id) : (0, s.ZDy)(async () => {
           let {
             default: t
           } = await n.e("59128").then(n.bind(n, 28564));
-          return n => (0, r.jsx)(t, b(h({}, n), {
+          return n => (0, r.jsx)(t, x(f({}, n), {
             onConfirmDelete: () => {
               I(e.id), n.onClose()
             }
           }))
         })
       }
-    }), null != x && x.size > 0 ? (0, r.jsx)(s.LZC, {
+    }), null != b && b.size > 0 ? (0, r.jsx)(s.LZC, {
       size: 8
     }) : null, (0, r.jsx)(u.s, {
       onClick: function() {
@@ -102,12 +102,12 @@ function x() {
           let {
             EmojiAddModal: e
           } = await n.e("21112").then(n.bind(n, 301160));
-          return n => (0, r.jsx)(e, b(h({}, n), {
+          return n => (0, r.jsx)(e, x(f({}, n), {
             guildId: t,
-            initialTierEmojiIds: x,
-            onSubmit: C,
+            initialTierEmojiIds: b,
+            onSubmit: y,
             transitionToManageEmoji: () => {
-              _(), n.onClose()
+              v(), n.onClose()
             }
           }))
         })

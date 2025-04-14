@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685), n(361932), n(187205), n(953529);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(200100),
+  l = n.n(s),
+  a = n(200100),
   o = n(692547),
   c = n(481060),
   d = n(259580),
@@ -31,19 +31,19 @@ function p(e) {
       size: "md",
       color: "currentColor",
       secondaryColor: o.Z.unsafe_rawColors.WHITE_500.css,
-      className: a()(g.rowIcon, g.rowIconChecked)
+      className: l()(g.rowIcon, g.rowIconChecked)
     }) : (0, r.jsx)("div", {
-      className: a()(g.rowIcon, g.rowIconEmpty)
+      className: l()(g.rowIcon, g.rowIconEmpty)
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     children: t
-  } = e, [n, s] = i.useState(!1), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
+  } = e, [n, s] = i.useState(!1), l = t.flatMap(e => e.items.map(e => e.completed)), o = l.filter(e => e).length / l.length, h = 1 === o, f = (0, c.q_F)({
     width: "".concat(100 * o, "%")
-  }), b = [m.NW.format(m.t.wtQtXl, {
+  }), x = [m.NW.format(m.t.wtQtXl, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
   }), m.NW.format(m.t["0Fo0wc"], {
     caseStudiesUrl: u.iv.CASE_STUDIES
@@ -51,8 +51,8 @@ function f(e) {
     subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
   }), m.NW.format(m.t.zkXN6O, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
-  })], x = n ? null : (0, r.jsxs)(r.Fragment, {
-    children: [!f && t.map((e, t) => {
+  })], b = n ? null : (0, r.jsxs)(r.Fragment, {
+    children: [!h && t.map((e, t) => {
       let {
         title: n,
         items: s
@@ -73,7 +73,7 @@ function f(e) {
     }), (0, r.jsx)(c.vwX, {
       className: g.categoryTitle,
       children: m.NW.string(m.t.FO0AIS)
-    }), b.map((e, t) => (0, r.jsx)("div", {
+    }), x.map((e, t) => (0, r.jsx)("div", {
       className: g.row,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
@@ -96,13 +96,13 @@ function f(e) {
           direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
           className: g.headerCaret
         })]
-      }), !f && (0, r.jsx)("div", {
+      }), !h && (0, r.jsx)("div", {
         className: g.progressBarOuter,
-        children: (0, r.jsx)(l.animated.div, {
+        children: (0, r.jsx)(a.animated.div, {
           className: g.progressBarInner,
-          style: h
+          style: f
         })
-      }), x]
+      }), b]
     })
   })
 }

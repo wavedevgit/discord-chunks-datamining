@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(200100),
+  l = n.n(s),
+  a = n(200100),
   o = n(481060),
   c = n(386476);
 class d extends i.Component {
@@ -65,14 +65,14 @@ class d extends i.Component {
     }), e))
   }
 }
-let u = (0, l.animated)(d),
+let u = (0, a.animated)(d),
   m = function(e) {
     let {
       className: t,
       name: n,
       icon: i,
       iconClassName: s
-    } = e, l = (0, o.Yzy)({
+    } = e, a = (0, o.Yzy)({
       name: n,
       icon: i,
       iconClassName: s
@@ -90,15 +90,15 @@ let u = (0, l.animated)(d),
       }
     }, "animate-always");
     return (0, r.jsx)("div", {
-      className: a()(c.crossfade, t),
-      children: l((e, t) => {
+      className: l()(c.crossfade, t),
+      children: a((e, t) => {
         let {
           icon: n,
           iconClassName: i
         } = t;
         return (0, r.jsx)(u, {
           icon: n,
-          className: a()(c.icon, i),
+          className: l()(c.icon, i),
           style: e
         })
       })

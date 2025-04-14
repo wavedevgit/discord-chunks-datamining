@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
@@ -21,8 +21,8 @@ function m(e) {
     onConfirm: m,
     onCancel: g,
     channel: b,
-    analyticsType: _,
-    popoutText: y,
+    analyticsType: y,
+    popoutText: _,
     animation: C
   } = e;
   i.useEffect(() => {
@@ -44,9 +44,9 @@ function m(e) {
       }
       return e
     }({
-      type: _
+      type: y
     }, (0, s.v_)(b)))
-  }, [_, b]);
+  }, [y, b]);
   let x = i.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
@@ -90,7 +90,7 @@ function m(e) {
             id: "content-warning-popout-label",
             className: f.markup,
             variant: "text-sm/normal",
-            children: y.body
+            children: _.body
           }), (0, r.jsxs)("div", {
             className: h.buttonWrapper,
             children: [(0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function m(e) {
             })]
           })]
         })]
-      }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
+      }), null != _.footer && "" !== _.footer ? (0, r.jsxs)("div", {
         className: h.footer,
         children: [(0, r.jsx)(a.d3s, {
           size: "xs",
@@ -129,7 +129,7 @@ function m(e) {
           className: h.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: y.footer
+          children: _.footer
         })]
       }) : null]
     })

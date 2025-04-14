@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(481060),
+  l = n.n(s),
+  a = n(481060),
   o = n(456935),
   c = n(259580),
   d = n(981631),
@@ -18,8 +18,8 @@ function g(e) {
   let {
     guild: t
   } = e, s = t.verificationLevel, g = i.useMemo(() => (0, o.I9)(s), [s]);
-  return (0, r.jsxs)(l.P3F, {
-    onClick: () => (0, l.ZDy)(async () => {
+  return (0, r.jsxs)(a.P3F, {
+    onClick: () => (0, a.ZDy)(async () => {
       let {
         default: e
       } = await n.e("72458").then(n.bind(n, 694278));
@@ -57,29 +57,29 @@ function g(e) {
         }), i))
       }
     }),
-    className: a()(m.simpleItemWrapper, m.clickable),
+    className: l()(m.simpleItemWrapper, m.clickable),
     children: [(0, r.jsxs)("div", {
       className: m.itemContent,
-      children: [(0, r.jsx)(l.X6q, {
+      children: [(0, r.jsx)(a.X6q, {
         variant: "text-md/semibold",
         color: "header-primary",
         children: u.NW.string(u.t.DpRdYG)
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: u.NW.string(u.t.mA17eH)
       }), (0, r.jsx)("div", {
         className: m.__invalid_pillRow,
-        children: (0, r.jsxs)(l.Text, {
+        children: (0, r.jsxs)(a.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           className: m.valuePill,
-          children: [s === d.sFg.VERY_HIGH ? (0, r.jsx)(l.AtH, {
+          children: [s === d.sFg.VERY_HIGH ? (0, r.jsx)(a.AtH, {
             size: "custom",
             color: "currentColor",
             width: 16,
             height: 16
-          }) : (0, r.jsx)(l._XJ, {
+          }) : (0, r.jsx)(a._XJ, {
             size: "custom",
             color: "currentColor",
             width: 16,

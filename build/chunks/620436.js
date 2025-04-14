@@ -1,34 +1,34 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r, i = n(200651);
 n(192379);
 var s = n(481060),
-  a = n(808509);
+  l = n(808509);
 
-function l(e) {
+function a(e) {
   let {
     type: t
   } = e;
   return (0, i.jsx)("div", {
-    className: a.dividerContainer,
+    className: l.dividerContainer,
     children: (0, i.jsx)("div", {
-      className: a.dividerIconContainer,
+      className: l.dividerIconContainer,
       children: function(e) {
         switch (e) {
           case "arrow_down":
             return (0, i.jsx)(s.cQm, {
               size: "md",
               color: "currentColor",
-              className: a.dividierIcon
+              className: l.dividierIcon
             });
           case "cross":
             return (0, i.jsx)(s.Dio, {
               size: "md",
               color: "currentColor",
-              className: a.dividierIcon
+              className: l.dividierIcon
             });
           default:
             return null
@@ -37,4 +37,4 @@ function l(e) {
     })
   })
 }
-l.Type = ((r = {}).ARROW_DOWN = "arrow_down", r.CROSS = "cross", r)
+a.Type = ((r = {}).ARROW_DOWN = "arrow_down", r.CROSS = "cross", r)

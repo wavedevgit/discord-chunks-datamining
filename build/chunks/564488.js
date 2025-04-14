@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(236413),
-  a = n(866894),
-  l = n(65912),
+  l = n(866894),
+  a = n(65912),
   o = n(572456),
   c = n(59192),
   d = n(11265),
@@ -20,40 +20,40 @@ let m = i.memo(function(e) {
   } = e, {
     hasChanges: g,
     editingRule: p,
-    createNewEditingRule: f,
-    setEditingRule: h
-  } = (0, l.V)(), {
-    isLoading: b
-  } = (0, l.w)(), [x] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, a.U)(null == t ? void 0 : t.id), v = j && null != p ? p : t, _ = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), y = i.useCallback(() => {
-    f(t.guildId, t.triggerType)
-  }, [t.guildId, t.triggerType, f]), O = i.useCallback(e => {
-    b || h(e, !0)
-  }, [b, h]);
+    createNewEditingRule: h,
+    setEditingRule: f
+  } = (0, a.V)(), {
+    isLoading: x
+  } = (0, a.w)(), [b] = i.useState(() => !(0, s.Vb)(t)), j = (null == p ? void 0 : p.id) === t.id || n, N = (0, l.U)(null == t ? void 0 : t.id), _ = j && null != p ? p : t, v = i.useMemo(() => (0, o.af)(t.name), [null == t ? void 0 : t.name]), O = i.useCallback(() => {
+    h(t.guildId, t.triggerType)
+  }, [t.guildId, t.triggerType, h]), C = i.useCallback(e => {
+    x || f(e, !0)
+  }, [x, f]);
   i.useEffect(() => {
-    m && h(t, !0)
-  }, [m, t, h]);
-  let C = i.useCallback(() => {
-    j ? g || h(null) : g ? _(() => {
-      h(t)
-    }) : h(t)
-  }, [j, g, _, t, h]);
+    m && f(t, !0)
+  }, [m, t, f]);
+  let y = i.useCallback(() => {
+    j ? g || f(null) : g ? v(() => {
+      f(t)
+    }) : f(t)
+  }, [j, g, v, t, f]);
   return (0, r.jsx)(d.Z, {
     renderHeader: (0, r.jsx)(u.Z, {
-      rule: v,
-      forceSetup: x && !j && !N,
+      rule: _,
+      forceSetup: b && !j && !N,
       triggerType: t.triggerType,
       isEditMode: j,
       isDefaultRule: N,
-      onChangeRule: O,
-      onSetupRule: y
+      onChangeRule: C,
+      onSetupRule: O
     }),
     isStuck: j && g,
     isExpanded: j,
-    onExpand: C,
+    onExpand: y,
     children: j && (0, r.jsx)(c.Z, {
-      rule: v,
-      isLoading: b,
-      onChangeRule: O
+      rule: _,
+      isLoading: x,
+      onChangeRule: C
     })
   })
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(399606),
   s = n(481060),
-  a = n(430824),
-  l = n(594174),
+  l = n(430824),
+  a = n(594174),
   o = n(723047),
   c = n(388032);
 
@@ -16,7 +16,7 @@ function d(e) {
   let {
     guildId: t,
     application: d
-  } = e, u = (0, i.e7)([a.Z], () => a.Z.getGuild(t)), m = (0, i.e7)([l.default], () => l.default.getCurrentUser()), g = (0, o.mY)();
+  } = e, u = (0, i.e7)([l.Z], () => l.Z.getGuild(t)), m = (0, i.e7)([a.default], () => a.default.getCurrentUser()), g = (0, o.mY)();
   if (null == u || !u.isOwner(m)) return null;
   let p = d.team;
   return (0, r.jsxs)("div", {

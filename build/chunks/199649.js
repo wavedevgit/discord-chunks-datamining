@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => b
 });
@@ -21,13 +21,13 @@ var i = n(442837),
 function b(e) {
   var t, b;
   let {
-    channel: _,
-    children: y
-  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(_.getRecipientId()));
-  (0, a.Z)(_.id);
-  let x = (0, s.Z)(_.id),
-    v = _.isSystemDM(),
-    j = C && !v && !_.isMultiUserDM(),
+    channel: y,
+    children: _
+  } = e, C = (0, i.e7)([u.Z], () => u.Z.isBlocked(y.getRecipientId()));
+  (0, a.Z)(y.id);
+  let x = (0, s.Z)(y.id),
+    v = y.isSystemDM(),
+    j = C && !v && !y.isMultiUserDM(),
     O = {};
   if (v) {
     let e = x ? (0, r.jsxs)(r.Fragment, {
@@ -47,7 +47,7 @@ function b(e) {
       open(p.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
   } else j && (O.message = g.NW.string(g.t["9T6N5+"]), O.buttonText = g.NW.string(g.t.XyHpKC), O.onButtonClick = () => {
-    o.Z.unblockUser(_.getRecipientId())
+    o.Z.unblockUser(y.getRecipientId())
   });
   return (0, r.jsx)(h.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ function b(e) {
     }
     return e
   }({}, O), b = b = {
-    children: y
+    children: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(b)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {

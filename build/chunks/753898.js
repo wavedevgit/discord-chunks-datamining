@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -36,14 +36,14 @@ function b(e) {
   }) : null
 }
 
-function _(e) {
+function y(e) {
   var t, n, c;
   let {
     channel: d,
     children: p,
     user: m
-  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = null != (t = (0, s.ZP)(d)) ? t : "", {
-    avatarDecorationSrc: y,
+  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), y = null != (t = (0, s.ZP)(d)) ? t : "", {
+    avatarDecorationSrc: _,
     eventHandlers: C,
     isAnimating: x
   } = (0, h.Z)({
@@ -78,15 +78,15 @@ function _(e) {
         size: l.EFr.SIZE_80,
         experimentLocation: "empty_messages",
         animated: e,
-        "aria-label": _
+        "aria-label": y
       }) : (0, r.jsx)(l.qEK, {
-        "aria-label": _,
+        "aria-label": y,
         size: l.EFr.SIZE_80,
         src: (0, a.x)(d, 80, e),
-        avatarDecoration: y
+        avatarDecoration: _
       })
     })(), (0, r.jsx)(f.Ot, {
-      children: _
+      children: y
     }), (0, r.jsx)(f.jz, {
       children: p
     }), d.isMultiUserDM() && (0, r.jsx)(b, {

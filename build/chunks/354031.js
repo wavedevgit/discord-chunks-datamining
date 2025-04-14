@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   P: () => u
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(63063),
-  l = n(434404),
+  l = n(63063),
+  a = n(434404),
   o = n(981631),
   c = n(388032),
   d = n(307906);
@@ -18,7 +18,7 @@ function u(e) {
     canManageGuild: n
   } = e, u = i.useCallback(e => {
     let n = new Set(t);
-    e ? n.add(o.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(o.oNc.SUMMARIES_ENABLED_BY_USER), l.Z.updateGuild({
+    e ? n.add(o.oNc.SUMMARIES_ENABLED_BY_USER) : n.delete(o.oNc.SUMMARIES_ENABLED_BY_USER), a.Z.updateGuild({
       features: n
     })
   }, [t]);
@@ -34,7 +34,7 @@ function u(e) {
       color: "text-secondary",
       className: d.description,
       children: c.NW.format(c.t["c6Cy/v"], {
-        helpdeskArticle: a.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
+        helpdeskArticle: l.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
       })
     }), (0, r.jsx)(s.j7V, {
       className: d.switch,

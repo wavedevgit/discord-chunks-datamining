@@ -64,7 +64,7 @@ function u(e) {
       let [n] = e;
       return [(n + 1) % t.length, "right"]
     })
-  }, [d, t.length]), h = t[n], I = r.useCallback((e, t, n, r) => (0, l.jsx)(m, {
+  }, [d, t.length]), I = t[n], h = r.useCallback((e, t, n, r) => (0, l.jsx)(m, {
     item: t,
     state: n,
     cleanup: r,
@@ -75,8 +75,8 @@ function u(e) {
     children: [(0, l.jsx)("div", {
       className: c.animatedContainer,
       children: (0, l.jsx)(s.W3x, {
-        items: [h],
-        renderItem: I,
+        items: [I],
+        renderItem: h,
         getItemKey: e => e.adminTitle
       })
     }), (0, l.jsx)(s.Text, {

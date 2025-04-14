@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  f: () => a
+  f: () => l
 });
 var r = n(63063),
   i = n(981631),
   s = n(388032);
 
-function a() {
+function l() {
   return s.NW.format(s.t["+ALa7+"], {
     fullTermsUrl: r.Z.getArticleURL(i.BhN.CREATOR_TERMS),
     creatorRevenuePolicyUrl: r.Z.getArticleURL(i.BhN.CREATOR_POLICY)

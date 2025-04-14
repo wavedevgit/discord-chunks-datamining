@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => T,
   z: () => S
@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(905405),
   g = n(937889),
   b = n(739566),
-  _ = n(267128),
-  y = n(378233),
+  y = n(267128),
+  _ = n(378233),
   C = n(419922),
   x = n(375954),
   v = n(699516),
@@ -55,11 +55,11 @@ function Z(e) {
     renderedContent: T,
     trailingIcon: A,
     leadingIcon: w
-  } = (0, _.f)(n, S, l, a, P.messageContent, {
+  } = (0, y.f)(n, S, l, a, P.messageContent, {
     trailingIconClass: P.messageContentTrailingIcon,
     leadingIconClass: P.messageContentLeadingIcon,
     iconSize: I.WW
-  }), R = (0, y.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
+  }), R = (0, _.cv)(n), k = R.length > 0 ? R.map(e => (0, r.jsx)(C.Z, {
     className: P.sticker,
     size: 128,
     sticker: e,
@@ -140,11 +140,11 @@ function T(e) {
     isFrozen: l,
     count: 3,
     lingerMs: S
-  }), m = i.useRef({}), [g, b] = i.useState({}), _ = i.useCallback((e, t) => {
+  }), m = i.useRef({}), [g, b] = i.useState({}), y = i.useCallback((e, t) => {
     null == t ? delete m.current[e] : m.current[e] = t
-  }, []), y = i.useRef(g);
+  }, []), _ = i.useRef(g);
   i.useLayoutEffect(() => {
-    y.current = g
+    _.current = g
   }), i.useLayoutEffect(() => {
     let e = {},
       t = 0;
@@ -152,7 +152,7 @@ function T(e) {
       var n;
       let i = null != (n = m.current[r.id]) ? n : 0;
       e[r.id] = t, t += i + 8
-    }(0, a.isEqual)(e, y.current) || b(e)
+    }(0, a.isEqual)(e, _.current) || b(e)
   }, [f]);
   let C = f.map(e => ({
       message: e,
@@ -204,7 +204,7 @@ function T(e) {
         p(!1)
       },
       children: v((e, t) => (0, r.jsx)(s.animated.div, {
-        ref: e => _(t.message.id, null != e ? e.offsetHeight : null),
+        ref: e => y(t.message.id, null != e ? e.offsetHeight : null),
         className: P.toastWrapper,
         style: e,
         children: (0, r.jsx)(Z, {

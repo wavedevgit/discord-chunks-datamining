@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
-  a = n(186078),
-  l = n(137158),
+  l = n(186078),
+  a = n(137158),
   o = n(664305);
 let c = function(e) {
   let {
@@ -21,11 +21,11 @@ let c = function(e) {
     onRemove: m,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f
+    fieldStyle: h
   } = e, {
-    label: h
+    label: f
   } = t;
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(a.Z, {
     field: t,
     index: n,
     isDragEnabled: i,
@@ -33,11 +33,11 @@ let c = function(e) {
     onDrop: d,
     onEdit: u,
     onRemove: m,
-    title: h,
+    title: f,
     canRemove: g,
     actionsLocation: p,
-    fieldStyle: f,
-    children: (0, r.jsx)(a.BO, {
+    fieldStyle: h,
+    children: (0, r.jsx)(l.BO, {
       field: t,
       value: void 0,
       radioItemClassName: s()(o.fieldBackground, o.multipleChoiceFixedTextColor),

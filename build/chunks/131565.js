@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -29,19 +29,19 @@ function b(e) {
       wallpaperAssetUrl: (0, a.I)(e.default.asset),
       wallpaperThumbhashDataUrl: null != e.default.thumbhash ? (0, l.xS)(g.from(e.default.thumbhash, "base64")) : void 0
     }
-  }), [h, b] = i.useState(n), [_, y] = i.useState(d);
+  }), [h, b] = i.useState(n), [y, _] = i.useState(d);
   return (i.useEffect(() => {
     null == n && t.isViewable && u.Z.shouldFetchWallpapers && (0, p.k9)()
   }, [n, t.isViewable]), i.useEffect(() => {
     if (h === n) return;
     if (null == n) {
-      b(void 0), y(void 0);
+      b(void 0), _(void 0);
       return
     }
     let e = performance.now();
     (0, s.p)(n, t => {
       if (t === n) {
-        b(t), y(d);
+        b(t), _(d);
         let n = performance.now();
         c.default.track(f.rMx.CHAT_WALLPAPER_DOWNLOADED, {
           time_used_in_ms: n - e,
@@ -50,10 +50,10 @@ function b(e) {
       }
     })
   }, [h, n, d]), t.isViewable) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != _ && (0, r.jsx)("div", {
+    children: [null != y && (0, r.jsx)("div", {
       className: m.thumbhashContainer,
       children: (0, r.jsx)("img", {
-        src: _,
+        src: y,
         alt: "",
         "aria-hidden": !0
       })
@@ -66,7 +66,7 @@ function b(e) {
   }) : null
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t
   } = e, n = (0, h.Z)(t.id);

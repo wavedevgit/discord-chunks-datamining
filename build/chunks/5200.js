@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Y: () => C
 }), n(388685);
@@ -16,11 +16,11 @@ var r, i = n(200651),
   m = n(388032),
   g = n(968216);
 let b = ["embedded_cover"],
-  _ = {
+  y = {
     tension: 800,
     friction: 24
   };
-var y = ((r = y || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
+var _ = ((r = _ || {})[r.THIRTEEN_BY_ELEVEN = 0] = "THIRTEEN_BY_ELEVEN", r[r.SIXTEEN_BY_NINE = 1] = "SIXTEEN_BY_NINE", r);
 
 function C(e) {
   var t;
@@ -28,7 +28,7 @@ function C(e) {
     context: n,
     activityItem: r,
     onClick: o,
-    aspectRatio: y = 0,
+    aspectRatio: _ = 0,
     animatedDivClass: C,
     commandOrigin: x
   } = e, {
@@ -99,7 +99,7 @@ function C(e) {
     onMouseLeave: S,
     innerClassName: g.activityItemButtonInnerClass,
     children: (0, i.jsx)(c.AMe, {
-      config: _,
+      config: y,
       from: {
         value: 0
       },
@@ -114,8 +114,8 @@ function C(e) {
           theme: f.BRd.DARK,
           children: e => (0, i.jsxs)(s.animated.div, {
             className: a()(e, g.activityItem, C, {
-              [g.activityItem_13_11]: 0 === y,
-              [g.activityItem_16_9]: 1 === y
+              [g.activityItem_13_11]: 0 === _,
+              [g.activityItem_16_9]: 1 === _
             }),
             style: {
               transform: t.to([0, 1], [1, 1.05]).to(e => "scale(".concat(e, ")"))
@@ -132,4 +132,4 @@ function C(e) {
     })
   })
 }
-C.AspectRatio = y
+C.AspectRatio = _

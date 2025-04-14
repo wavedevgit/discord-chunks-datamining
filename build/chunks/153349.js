@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => M
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(665149),
   g = n(884902),
   b = n(670188),
-  _ = n(271383),
-  y = n(496675),
+  y = n(271383),
+  _ = n(496675),
   C = n(158776),
   x = n(471253),
   v = n(431328),
@@ -89,10 +89,10 @@ let A = i.memo(function(e) {
       channel: t,
       participant: l,
       tempDisableOnInit: a = !1
-    } = e, [m, y] = i.useState(a);
+    } = e, [m, _] = i.useState(a);
     (0, h.ZP)(() => {
       if (!m) return;
-      let e = setTimeout(() => y(!1), 1e3);
+      let e = setTimeout(() => _(!1), 1e3);
       return () => clearTimeout(e)
     });
     let v = t.getGuildId();
@@ -103,7 +103,7 @@ let A = i.memo(function(e) {
     } = (0, c.cj)([C.Z], () => ({
       isMobile: C.Z.isMobileOnline(l.user.id),
       status: C.Z.getStatus(l.user.id, v)
-    })), I = (0, c.e7)([_.ZP], () => _.ZP.getMember(v, l.user.id)), A = (0, g.X)(t.guild_id, null == I ? void 0 : I.colorStrings), w = i.useMemo(() => ({
+    })), I = (0, c.e7)([y.ZP], () => y.ZP.getMember(v, l.user.id)), A = (0, g.X)(t.guild_id, null == I ? void 0 : I.colorStrings), w = i.useMemo(() => ({
       [v]: [l.user.id]
     }), [v, l.user.id]);
     (0, f.$)(w);
@@ -226,7 +226,7 @@ function M(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([y.Z], () => y.Z.can(I.Pl.MANAGE_CHANNELS, t) || y.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), a = [+!!(0, c.e7)([_.Z], () => _.Z.can(I.Pl.MANAGE_CHANNELS, t) || _.Z.can(I.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: o()(S.container, {
       [S.chatOpen]: i

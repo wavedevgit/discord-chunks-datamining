@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  S: () => a
+  S: () => l
 });
 var r = n(544891),
   i = n(570140),
   s = n(981631);
 
-function a(e) {
+function l(e) {
   return r.tn.get({
     url: s.ANM.GUILD_TOP_READ_CHANNELS(e),
     oldFormErrors: !0,

@@ -1,6 +1,6 @@
-/** Chunk was on 51610 **/
+/** Chunk was on 4584 **/
 n.d(t, {
-  Z: () => f
+  Z: () => _
 }), n(388685);
 var r = n(570140),
   i = n(447543),
@@ -13,14 +13,14 @@ var r = n(570140),
   d = n(782605),
   p = n(621600),
   h = n(88658),
-  _ = n(981631);
-let f = {
+  f = n(981631);
+let _ = {
   acceptInvite(e) {
     let t = i.ZP.getInviteContext("Desktop Invite Modal", e),
       n = (0, a.y)(),
       u = (0, a.h6)(),
-      _ = (0, a.U1)(),
-      f = (0, a.yS)();
+      f = (0, a.U1)(),
+      _ = (0, a.yS)();
     i.ZP.acceptInvite({
       inviteKey: e.code,
       context: t,
@@ -41,7 +41,7 @@ let f = {
           let n = new Set((0, h.YK)());
           n.add(null == (t = e.guild) ? void 0 : t.id), c.h2.updateSetting(Array.from(n))
         }
-        if (_) {
+        if (f) {
           if (c.SE.getSetting().includes(e.guild.id)) {
             let t = new Set((0, h._o)());
             t.delete(e.guild.id), c.SE.updateSetting(Array.from(t))
@@ -55,7 +55,7 @@ let f = {
         }), (0, s.m4)({
           location: "acceptInvite"
         }) && o.Z.updateGuildNotificationSettings(e.guild.id, {
-          muted: f
+          muted: _
         }, p.ZB.Muted)
       }
       this.close()
@@ -77,7 +77,7 @@ let f = {
         i = (0, a.U1)(),
         o = (0, a.yS)(),
         l = (0, a.aP)();
-      u.default.track(_.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
+      u.default.track(f.rMx.INVITE_ACCEPT_JOIN_SETTINGS_SET, {
         invite_code: e,
         guild_id: t,
         nickname_present: null != n && n.length > 0,

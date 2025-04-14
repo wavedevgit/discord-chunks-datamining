@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(603074),
   g = n(861254),
   b = n(221241),
-  _ = n(82965),
-  y = n(294629),
+  y = n(82965),
+  _ = n(294629),
   C = n(390322),
   x = n(871499),
   v = n(131951),
@@ -80,7 +80,7 @@ function w(e) {
   } = (0, a.j)(), U = t.getGuildId(), {
     mute: B,
     suppress: G
-  } = (0, y.Z)(t), F = (0, l.e7)([v.Z], () => v.Z.isDeaf()), H = B || G || F, V = (0, h.sR)({
+  } = (0, _.Z)(t), F = (0, l.e7)([v.Z], () => v.Z.isDeaf()), H = B || G || F, V = (0, h.sR)({
     isSoundboardButtonDisabled: H
   }), [z, Y] = (0, p.cv)(V), {
     analyticsLocations: q
@@ -88,7 +88,7 @@ function w(e) {
     mode: K
   } = (0, g.ZP)({
     location: "ActionBarSoundboardButton"
-  }), X = (0, _.Z)({
+  }), X = (0, y.Z)({
     location: "ActionBarSoundboardButton"
   }), {
     coloredIconsEnabled: Q,

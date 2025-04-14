@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => p
 }), n(388685);
@@ -37,8 +37,8 @@ function p(e) {
     height: 0
   }), {
     width: b,
-    height: _
-  } = m, y = null != (t = null == l ? void 0 : l.length) ? t : 0, C = b - 16, x = _ - (h + f), {
+    height: y
+  } = m, _ = null != (t = null == l ? void 0 : l.length) ? t : 0, C = b - 16, x = y - (h + f), {
     tileStyle: v,
     tileWidth: j,
     rows: O,
@@ -79,7 +79,7 @@ function p(e) {
       rows: r,
       columns: i
     }
-  })(y, C, x), [y, C, x]), N = E + 1, I = N * j + (N - 1) * 8 <= b, P = Math.floor(j / c) + 8, S = Math.max(0, x - P * O) / 2;
+  })(_, C, x), [_, C, x]), N = E + 1, I = N * j + (N - 1) * 8 <= b, P = Math.floor(j / c) + 8, S = Math.max(0, x - P * O) / 2;
   return (0, r.jsx)(a.Z, {
     fade: !0,
     className: n,
@@ -97,7 +97,7 @@ function p(e) {
             className: o()(s.tile, {
               [s.padColumn]: I,
               [s.noVerticalMargin]: l >= (O - 1) * E,
-              [s.noHorizontalMargin]: (l + 1) % E == 0 || l === y - 1
+              [s.noHorizontalMargin]: (l + 1) % E == 0 || l === _ - 1
             }),
             children: (0, r.jsx)("div", {
               className: s.tileSizer,

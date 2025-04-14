@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => y,
+  Z: () => _,
   r: () => C
 });
 var r = n(200651),
@@ -18,9 +18,9 @@ var r = n(200651),
   m = n(403182),
   g = n(928477),
   b = n(981631),
-  _ = n(388032);
+  y = n(388032);
 
-function y(e) {
+function _(e) {
   let {
     parentChannel: t,
     parentMessageId: n,
@@ -124,14 +124,14 @@ function C(e) {
           } else if (i === b.evJ.ENTITY_TOO_LARGE) {
             let e = (0, m.dg)(t.getGuildId());
             s.Z.show({
-              title: _.NW.string(_.t["/tGlcn"]),
-              body: _.NW.formatToPlainString(_.t.fxEKdX, {
+              title: y.NW.string(y.t["/tGlcn"]),
+              body: y.NW.formatToPlainString(y.t.fxEKdX, {
                 maxSize: (0, m.Ng)(e)
               })
             })
           } else i === b.evJ.TOO_MANY_ATTACHMENTS && s.Z.show({
-            title: _.NW.string(_.t.wOr6hI),
-            body: _.NW.formatToPlainString(_.t["qqyp/f"], {
+            title: y.NW.string(y.t.wOr6hI),
+            body: y.NW.formatToPlainString(y.t["qqyp/f"], {
               limit: b.dN1
             })
           });

@@ -1,14 +1,14 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => x
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
 var i = n(852229),
   s = n(481060),
-  a = n(724598),
-  l = n(674180),
+  l = n(724598),
+  a = n(674180),
   o = n(495437),
   c = n(267101),
   d = n(863663),
@@ -16,18 +16,18 @@ var i = n(852229),
   m = n(613810),
   g = n(391181),
   p = n(388032),
-  f = n(520880);
-let h = "guild-product-listings-header";
+  h = n(520880);
+let f = "guild-product-listings-header";
 
-function b(e) {
+function x(e) {
   let {
     guildId: t,
     handleCreateOrEditProduct: u
-  } = e, b = (0, c.ue)(t, {
+  } = e, x = (0, c.ue)(t, {
     publishedOnly: !1
   }), {
-    shouldRestrictUpdatingCreatorMonetizationSettings: x
-  } = (0, l.gX)(t), j = e => {
+    shouldRestrictUpdatingCreatorMonetizationSettings: b
+  } = (0, a.gX)(t), j = e => {
     (0, o.Je)(t, e, {
       published: !1
     })
@@ -59,34 +59,34 @@ function b(e) {
         productName: i
       }, n))
     })
-  }, v = (e, t) => {
+  }, _ = (e, t) => {
     (0, i.J)((0, d.ar)(e, t))
-  }, _ = b.length > 0;
+  }, v = x.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.vwX, {
-      className: f.productListingsHeader,
-      id: h,
-      children: _ ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
-    }), _ ? (0, r.jsx)("ul", {
-      className: f.productListings,
-      "aria-labelledby": h,
-      children: b.map(e => (0, r.jsx)("li", {
+      className: h.productListingsHeader,
+      id: f,
+      children: v ? p.NW.string(p.t.RwuStb) : p.NW.string(p.t.WKMcMT)
+    }), v ? (0, r.jsx)("ul", {
+      className: h.productListings,
+      "aria-labelledby": f,
+      children: x.map(e => (0, r.jsx)("li", {
         children: (0, r.jsx)(g.Z, {
           guildId: t,
           product: e,
           onEditProduct: () => u(e.id),
           onUnpublishProduct: () => j(e.id),
           onDeleteProduct: () => N(e.id, e.name),
-          onCopyProductLink: () => v(t, e.id),
+          onCopyProductLink: () => _(t, e.id),
           onTestDownload: () => m.Z.open({
             guildId: t,
             productId: e.id
           }),
           onReportProduct: () => {},
-          disabled: x
+          disabled: b
         })
       }, e.id))
-    }) : (0, r.jsx)(a.Z, {
+    }) : (0, r.jsx)(l.Z, {
       guildId: t,
       showCTA: !1,
       responsive: !1
@@ -94,18 +94,18 @@ function b(e) {
   })
 }
 
-function x(e) {
+function b(e) {
   let {
     guildId: t
   } = e, {
     shouldRestrictUpdatingCreatorMonetizationSettings: n
-  } = (0, l.gX)(t), i = e => {
+  } = (0, a.gX)(t), i = e => {
     u.h(t, e)
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(s.zxk, {
-      className: f.addButton,
-      innerClassName: f.addButtonInner,
+      className: h.addButton,
+      innerClassName: h.addButtonInner,
       onClick: () => i(null),
       disabled: n,
       children: [(0, r.jsx)(s.qJs, {
@@ -120,7 +120,7 @@ function x(e) {
       }), p.NW.string(p.t.riG6DQ)]
     }), (0, r.jsx)(s.LZC, {
       size: 24
-    }), (0, r.jsx)(b, {
+    }), (0, r.jsx)(x, {
       guildId: t,
       handleCreateOrEditProduct: i
     })]

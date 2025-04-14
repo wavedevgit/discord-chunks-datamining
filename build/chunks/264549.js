@@ -1,4 +1,4 @@
-/** Chunk was on 51610 **/
+/** Chunk was on 4584 **/
 n.d(t, {
   Z: () => g
 }), n(539854), n(388685), n(953529);
@@ -21,11 +21,11 @@ function h(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let _ = {
+let f = {
     PRIMARY: () => !0,
     SECONDARY: () => !0
   },
-  f = () => (0, r.jsxs)("div", {
+  _ = () => (0, r.jsxs)("div", {
     className: p.symbol,
     children: [(0, r.jsx)("div", {
       className: p.symbolBackground
@@ -42,10 +42,10 @@ class m extends i.PureComponent {
       this.setState({
         renderSecondary: !0
       })
-    }, 120), this._doneTimeout = setTimeout(this.done, 1e3), _.PRIMARY()
+    }, 120), this._doneTimeout = setTimeout(this.done, 1e3), f.PRIMARY()
   }
   componentDidUpdate(e, t) {
-    this.state.renderSecondary && !t.renderSecondary && _.SECONDARY()
+    this.state.renderSecondary && !t.renderSecondary && f.SECONDARY()
   }
   componentWillUnmount() {
     clearTimeout(this._renderSecondaryTimeout), clearTimeout(this._doneTimeout)
@@ -198,7 +198,7 @@ class b extends i.PureComponent {
         })
       } else this.setTimeout(this.addSymbol, 750)
     }), h(this, "addSymbol", () => {
-      this.children = [(0, r.jsx)(f, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
+      this.children = [(0, r.jsx)(_, {}, "symbol")], this.forceUpdate(), this.setTimeout(this.delayedClose, 3e3)
     }), h(this, "delayedClose", () => {
       this.props.handleDemonClose()
     })

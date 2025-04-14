@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => w
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(933557),
   g = n(605436),
   b = n(185413),
-  _ = n(42311),
-  y = n(626786),
+  y = n(42311),
+  _ = n(626786),
   C = n(434404),
   x = n(454585),
   v = n(430824),
@@ -135,7 +135,7 @@ function w(e) {
         var i, l;
         let a = null != (l = e.colorString) ? l : (0, u.Rf)(Z.p6O),
           s = (null == (i = e.tags) ? void 0 : i.guild_connections) !== void 0;
-        return W ? (0, r.jsx)(_.Z, {
+        return W ? (0, r.jsx)(y.Z, {
           className: o()(A.role, {
             [A.last]: n === L.length - 1
           }),
@@ -146,7 +146,7 @@ function w(e) {
           onClick: () => {
             C.Z.open(t.guild_id, Z.pNK.MEMBERS), C.Z.selectRole(e.id)
           }
-        }, e.id) : (0, r.jsx)(y.Z, {
+        }, e.id) : (0, r.jsx)(_.Z, {
           className: o()(A.role, {
             [A.last]: n === L.length - 1
           }),

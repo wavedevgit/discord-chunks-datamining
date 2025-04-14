@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => m
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(556012),
-  a = n(862085),
-  l = n(769998),
+  l = n(862085),
+  a = n(769998),
   o = n(671066),
   c = n(273504),
   d = n(467397);
@@ -17,8 +17,8 @@ function u(e) {
   let {
     action: t,
     triggerType: n,
-    toggled: a,
-    onToggleAction: l
+    toggled: l,
+    onToggleAction: a
   } = e, o = (0, s.c)(t.type, t, n);
   if (null == o) return null;
   let {
@@ -49,8 +49,8 @@ function u(e) {
       children: (0, r.jsx)(i.XZJ, {
         disabled: !o.isEditable,
         type: i.XZJ.Types.INVERTED,
-        value: a,
-        onChange: () => l(!1),
+        value: l,
+        onChange: () => a(!1),
         className: d.__invalid_actionCheckbox
       })
     })]
@@ -74,7 +74,7 @@ function m(e) {
         onToggleAction: d
       });
     case c.jj.USER_COMMUNICATION_DISABLED:
-      return (0, r.jsx)(l.Z, {
+      return (0, r.jsx)(a.Z, {
         action: t,
         guildId: n,
         triggerType: i,
@@ -82,7 +82,7 @@ function m(e) {
         onToggleAction: d
       });
     case c.jj.BLOCK_MESSAGE:
-      return (0, r.jsx)(a.Z, {
+      return (0, r.jsx)(l.Z, {
         action: t,
         triggerType: i,
         toggled: s,

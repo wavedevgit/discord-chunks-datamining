@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => I
 }), n(388685);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(641015),
   g = n(983131),
   b = n(82965),
-  _ = n(131951),
-  y = n(213652),
+  y = n(131951),
+  _ = n(213652),
   C = n(320427),
   x = n(145010),
   v = n(933686),
@@ -48,7 +48,7 @@ function I(e) {
     location: "VoiceEffectsActionBar"
   }, {
     autoTrackExposure: !1
-  }), M = (0, s.Z)(_.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
+  }), M = (0, s.Z)(y.Z), L = (0, h.Zm)(t, "VoiceEffectsActionBar") ? [l.z.CONSUMABLE_HD_POTION_UPSELL] : [], [D, W] = (0, c.US)(L, void 0, !0), U = D === l.z.CONSUMABLE_HD_POTION_UPSELL, B = (0, g.Z)(t);
   if (null == t || null != w) return null;
   let G = (0, m.Z)(t),
     F = !Z && G,
@@ -64,7 +64,7 @@ function I(e) {
         themeable: P
       }), H && (0, r.jsx)(v.Z, {
         channel: t
-      }), V && (0, r.jsx)(y.Z, {
+      }), V && (0, r.jsx)(_.Z, {
         channel: t
       }), U && (0, r.jsx)(p.t, {
         potionRef: A,

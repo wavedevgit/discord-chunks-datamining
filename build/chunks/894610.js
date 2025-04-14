@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => d
@@ -6,21 +6,21 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(755930),
-  a = n(267101),
-  l = n(388032),
+  l = n(267101),
+  a = n(388032),
   o = n(963877);
 let c = (0, s.Yn)([(0, s.nn)({
   key: "LISTING_NAME",
   cellClassName: o.listingNameColumn,
   renderHeader: () => (0, r.jsx)(s.qN, {
-    children: l.NW.string(l.t.OGpGqK)
+    children: a.NW.string(a.t.OGpGqK)
   }),
   sort: (0, s.Qg)(e => e.listing.name.toLowerCase())
 }), (0, s.GW)({
   key: "PAYMENTS_COUNT",
   cellClassName: o.paymentsCountColumn,
   renderHeader: () => (0, r.jsx)(s.qN, {
-    children: l.NW.string(l.t.vpHXJy)
+    children: a.NW.string(a.t.vpHXJy)
   }),
   getCount: e => e.paymentsCount,
   sort: (0, s.Qg)(e => {
@@ -31,7 +31,7 @@ let c = (0, s.Yn)([(0, s.nn)({
   key: "PRICE",
   cellClassName: o.priceColumn,
   renderHeader: () => (0, r.jsx)(s.qN, {
-    children: l.NW.string(l.t.VodAGR)
+    children: a.NW.string(a.t.VodAGR)
   }),
   getAmount(e) {
     let {
@@ -49,9 +49,9 @@ function d(e) {
   let {
     earningsData: t,
     guildId: n
-  } = e, l = (0, a.ue)(n, {
+  } = e, a = (0, l.ue)(n, {
     publishedOnly: !1
-  }), o = t.currentPeriod, d = i.useMemo(() => l.map(e => {
+  }), o = t.currentPeriod, d = i.useMemo(() => a.map(e => {
     var t, n, r;
     let i = null == o ? void 0 : o.ppgs[e.id];
     return n = function(e) {
@@ -85,8 +85,8 @@ function d(e) {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }).filter(e => e.listing.published || e.paymentsCount > 0), [l, null == o ? void 0 : o.ppgs]);
-  return null == l || 0 === l.length ? null : (0, r.jsx)(s.ZP, {
+  }).filter(e => e.listing.published || e.paymentsCount > 0), [a, null == o ? void 0 : o.ppgs]);
+  return null == a || 0 === a.length ? null : (0, r.jsx)(s.ZP, {
     columns: c,
     data: d,
     initialSortKey: "LISTING_NAME"

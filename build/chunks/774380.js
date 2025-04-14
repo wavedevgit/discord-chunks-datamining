@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => p
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(442837),
   s = n(481060),
-  a = n(98278),
-  l = n(823188),
+  l = n(98278),
+  a = n(823188),
   o = n(594174),
   c = n(74538),
   d = n(474936),
@@ -21,7 +21,7 @@ let g = e => {
       className: m.tier0Button,
       color: s.zxk.Colors.BRAND_INVERTED,
       onClick: () => {
-        (0, a.z)(), null != t && t()
+        (0, l.z)(), null != t && t()
       },
       children: u.NW.string(u.t.hvVgAQ)
     });
@@ -31,10 +31,10 @@ let g = e => {
         className: m.tier0Heading,
         variant: "heading-xxl/extrabold",
         children: u.NW.string(u.t["qUl+Ky"])
-      }), (0, r.jsx)(l.wp, {
+      }), (0, r.jsx)(a.wp, {
         className: m.tier0Card,
         ctaButton: n,
-        featureSet: l.uZ.BOOSTING,
+        featureSet: a.uZ.BOOSTING,
         showWumpus: !0,
         showYearlyPrice: !0
       })]

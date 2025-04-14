@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   L: () => m
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(481060),
   s = n(962086),
-  a = n(225675),
-  l = n(671533),
+  l = n(225675),
+  a = n(671533),
   o = n(434404),
   c = n(981631),
   d = n(388032),
@@ -32,17 +32,17 @@ function m(e) {
       color: i.zxk.Colors.PRIMARY,
       onClick: () => {
         o.Z.close(), (0, s.iD)(t, {
-          type: a.z.ROLES,
+          type: l.z.ROLES,
           roles: {
             [n.id]: n
           },
           returnToSection: c.pNK.ROLES
         })
       },
-      children: [d.NW.string(d.t.arFPfH), (0, r.jsx)(l.Z, {
+      children: [d.NW.string(d.t.arFPfH), (0, r.jsx)(a.Z, {
         width: 16,
         height: 16,
-        direction: l.Z.Directions.RIGHT,
+        direction: a.Z.Directions.RIGHT,
         className: u.arrowIcon
       })]
     })]

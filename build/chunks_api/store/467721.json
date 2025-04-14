@@ -1,1 +1,1 @@
-{"id":"467721","type":"store","data":{"name":"HDStreamingViewerStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"cooldownIsActive","args":[]}],"events":["LOGOUT","HD_STREAMING_VIEWER_UPDATE_LAST_TRIGGERED"]},"fromModule":{"id":"51610"}}
+{"id":"467721","type":"store","data":{"name":"HDStreamingViewerStore","functions":[{"name":"initialize","args":["e"]},{"name":"getState","args":[]},{"name":"cooldownIsActive","args":[]}],"events":["LOGOUT","HD_STREAMING_VIEWER_UPDATE_LAST_TRIGGERED"]},"fromModule":{"id":"4584"}}

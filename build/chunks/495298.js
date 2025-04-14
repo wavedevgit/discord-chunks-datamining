@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 }), n(388685);
 var r = n(192379),
   i = n(584825),
   s = n(14263);
 
-function a(e) {
+function l(e) {
   let t = (0, i.qi)(e),
     n = (0, s.Z)(e);
   return r.useMemo(() => {

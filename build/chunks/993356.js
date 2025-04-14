@@ -42,12 +42,12 @@ function p(e) {
         mobilePush: c.ZP.isMobilePushEnabled(e.id),
         messageNotifications: c.ZP.getMessageNotifications(e.id),
         notifyHighlights: c.ZP.getNotifyHighlights(e.id)
-      }), [e.id]), O = f === d.gLR.DISABLED, N = (0, o.Z)(e.id);
+      }), [e.id]), O = f === d.gLR.DISABLED, h = (0, o.Z)(e.id);
 
-      function h(t, n) {
+      function E(t, n) {
         l.Z.updateGuildNotificationSettings(e.id, t, n)
       }
-      let E = (0, a.ng)(e.id, !0);
+      let N = (0, a.ng)(e.id, !0);
       return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(s.kSQ, {
           children: b().map(e => {
@@ -59,26 +59,26 @@ function p(e) {
               group: "guild-notifications",
               id: "".concat(t),
               label: n,
-              action: () => h({
+              action: () => E({
                 message_notifications: t
               }, u.UE.notifications(t)),
               checked: t === S
             }, t)
           })
-        }), null != E && (0, i.jsx)(s.kSQ, {
-          children: E
+        }), null != N && (0, i.jsx)(s.kSQ, {
+          children: N
         }), (0, i.jsxs)(s.kSQ, {
           children: [(0, i.jsx)(s.S89, {
             id: "suppress-everyone",
             label: g.NW.format(g.t.OWiWAg, {}),
-            action: () => h({
+            action: () => E({
               suppress_everyone: !t
             }, u.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(s.S89, {
             id: "suppress-roles",
             label: g.NW.string(g.t["O/QdoK"]),
-            action: () => h({
+            action: () => E({
               suppress_roles: !n
             }, u.UE.suppressRoles(!n)),
             checked: n
@@ -86,17 +86,17 @@ function p(e) {
             id: "suppress-highlights",
             label: g.NW.string(g.t.gPuteH),
             action: () => {
-              h({
+              E({
                 notify_highlights: O ? d.gLR.ENABLED : d.gLR.DISABLED
               }, u.UE.highlights(O))
             },
             checked: O
-          }), N]
+          }), h]
         }), (0, i.jsx)(s.kSQ, {
           children: (0, i.jsx)(s.S89, {
             id: "mobile-push",
             label: g.NW.string(g.t["h1DL6+"]),
-            action: () => h({
+            action: () => E({
               mobile_push: !p
             }, u.UE.mobilePush(!p)),
             checked: p
@@ -111,11 +111,11 @@ function p(e) {
       } = e;
       return t === f
     })) ? void 0 : t.label,
-    N = (0, a.U)();
+    h = (0, a.U)();
   return null != S ? (0, i.jsx)(s.sNh, {
     id: "guild-notifications",
     label: (0, i.jsxs)(i.Fragment, {
-      children: [N, g.NW.string(g.t.h850Sk)]
+      children: [h, g.NW.string(g.t.h850Sk)]
     }),
     subtext: O,
     action: () => (0, s.ZDy)(async () => {

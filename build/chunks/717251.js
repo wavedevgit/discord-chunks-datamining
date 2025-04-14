@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
-  a = n(481060),
-  l = n(2150),
+  l = n(481060),
+  a = n(2150),
   o = n(727001);
 
 function c(e) {
@@ -16,7 +16,7 @@ function c(e) {
     title: t,
     description: n,
     action: i,
-    highlightColor: c = l.q.NONE,
+    highlightColor: c = a.q.NONE,
     selected: d = !1,
     subsection: u = null,
     onClick: m,
@@ -25,7 +25,7 @@ function c(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: s()(o.container, g),
-    children: [(0, r.jsx)(a.P3F, {
+    children: [(0, r.jsx)(l.P3F, {
       className: s()(o.clickableContainer, {
         [o.noAction]: null == m,
         [o.disabled]: p
@@ -39,11 +39,11 @@ function c(e) {
         }),
         children: [(0, r.jsxs)("div", {
           className: o.settingsDescriptionContainer,
-          children: [(0, r.jsx)(a.Text, {
+          children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             color: "interactive-active",
             children: t
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "interactive-normal",
             className: o.description,

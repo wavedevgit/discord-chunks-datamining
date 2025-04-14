@@ -1,14 +1,14 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
 var i = n(990547),
   s = n(481060),
-  a = n(213609),
-  l = n(787051),
+  l = n(213609),
+  a = n(787051),
   o = n(696936),
   c = n(539290),
   d = n(975464),
@@ -22,8 +22,8 @@ function p(e) {
   } = e, {
     noticeText: n,
     ctaLabel: i,
-    ctaClickable: a,
-    onCtaClicked: l
+    ctaClickable: l,
+    onCtaClicked: a
   } = t;
   return (0, r.jsxs)("div", {
     className: m.__invalid_ctaContainer,
@@ -51,15 +51,15 @@ function p(e) {
         buttonPosition: c.E.RIGHT,
         notice: n,
         ctaLabel: i,
-        ctaDisabled: !a,
+        ctaDisabled: !l,
         ctaClassName: m.waitlistCtaButton,
-        onClick: l
+        onClick: a
       })]
     })]
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     config: n
@@ -67,8 +67,8 @@ function f(e) {
     isLoading: o,
     error: c,
     creatorMonetizationOnboardingMarketing: u
-  } = (0, l.Z)(t.id);
-  return ((0, a.Z)({
+  } = (0, a.Z)(t.id);
+  return ((0, l.Z)({
     type: i.ImpressionTypes.PANE,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_WAITLIST_LANDING,
     properties: {

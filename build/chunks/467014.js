@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => f
 });
@@ -22,7 +22,7 @@ function f(e) {
     messagesCount: m,
     linksCount: g,
     mediaCount: b
-  } = (0, c.P2)(t, n), _ = new Intl.NumberFormat(p.NW.currentLocale).format(m), y = new Intl.NumberFormat(p.NW.currentLocale).format(g), C = new Intl.NumberFormat(p.NW.currentLocale).format(b), x = i.useCallback(async e => {
+  } = (0, c.P2)(t, n), y = new Intl.NumberFormat(p.NW.currentLocale).format(m), _ = new Intl.NumberFormat(p.NW.currentLocale).format(g), C = new Intl.NumberFormat(p.NW.currentLocale).format(b), x = i.useCallback(async e => {
     if (null == f) return;
     let r = (0, c.Ow)(t, e, {
       include_nsfw: !0
@@ -54,7 +54,7 @@ function f(e) {
         }) : (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: _
+          children: y
         }),
         onNavigate: m > 0 ? () => x(c.mw.MESSAGES) : void 0
       }), (0, r.jsx)(u._2, {
@@ -74,7 +74,7 @@ function f(e) {
         }) : (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: y
+          children: _
         }),
         onNavigate: g > 0 ? () => x(c.mw.LINKS) : void 0
       }), (0, r.jsx)(u._2, {

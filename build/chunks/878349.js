@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -23,8 +23,8 @@ function b(e) {
     labelText: n,
     tooltipText: l,
     canToggle: b,
-    iconAltText: _,
-    onChange: y,
+    iconAltText: y,
+    onChange: _,
     tooltipColor: C,
     className: x,
     id: v = "fancybutton-toggle",
@@ -54,7 +54,7 @@ function b(e) {
       onChange: function() {
         if (b) {
           let e = !t;
-          P(!0), null == y || y(e)
+          P(!0), null == _ || _(e)
         }
         "function" == typeof O && O()
       },
@@ -77,7 +77,7 @@ function b(e) {
       }) : null, (0, r.jsx)("img", {
         ref: A,
         src: Z,
-        alt: _
+        alt: y
       }), (0, r.jsx)("span", {
         ref: R,
         children: (0, r.jsx)(c.Text, {

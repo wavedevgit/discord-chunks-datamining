@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   A: () => I
 });
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(785717),
   g = n(221292),
   b = n(687158),
-  _ = n(471879),
-  y = n(502762),
+  y = n(471879),
+  _ = n(502762),
   C = n(848780),
   x = n(907179);
 n(475413);
@@ -65,7 +65,7 @@ function I(e) {
       fetchStartedAt: null == I ? void 0 : I.fetchStartedAt,
       fetchEndedAt: null == I ? void 0 : I.fetchEndedAt,
       isLoaded: null == I ? void 0 : I.isLoaded,
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(_.Z, {
         ref: A,
         user: t,
         displayProfile: I,
@@ -83,7 +83,7 @@ function I(e) {
               className: o()(O.body, O.bodySpacing),
               children: [(0, r.jsxs)("div", {
                 className: O.headerContainer,
-                children: [(0, r.jsx)(_.i, {
+                children: [(0, r.jsx)(y.i, {
                   user: t
                 }), (0, r.jsx)(c.X6q, {
                   variant: "heading-lg/bold",

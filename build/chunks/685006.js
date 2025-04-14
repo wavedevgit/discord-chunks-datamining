@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   ZP: () => I,
   xL: () => N
@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(499254),
   g = n(827498),
   b = n(213459),
-  _ = n(541716),
-  y = n(540059),
+  y = n(541716),
+  _ = n(540059),
   C = n(61356),
   x = n(981631),
   v = n(314734),
@@ -50,16 +50,16 @@ function I(e) {
   }), c = null == a ? void 0 : a.id, f = (0, C.Z)({
     type: l
   }), {
-    sectionCommands: y
+    sectionCommands: _
   } = (0, b.If)(t, null != c ? c : ""), v = i.useCallback(() => {
-    f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, _.Ie.NORMAL, {
+    f ? m.yT(g.ti.DISMISSED) : (m.__(g._b.TEXT, y.Ie.NORMAL, {
       applicationId: c
     }), (0, p.yw)(x.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: c,
       location: d.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON,
       source: g._b.TEXT
     }))
-  }, [c, f]), j = null != y && y.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
+  }, [c, f]), j = null != _ && _.filter(e => e.type === u.yU.CHAT || e.type === u.yU.PRIMARY_ENTRY_POINT).length > 0, O = !o && null != a && !0 === j;
   return (i.useEffect(() => (E(O), () => {
     E(!1)
   }), [O]), O) ? (0, r.jsx)(P, {
@@ -89,7 +89,7 @@ function P(e) {
     isEmbeddedApp: m,
     currentEmbeddedActivity: g,
     channelRecipientUserId: b,
-    setIsExecutingLaunchInteraction: _,
+    setIsExecutingLaunchInteraction: y,
     analyticsLocations: x
   } = (0, f.Z)({
     context: t,
@@ -104,9 +104,9 @@ function P(e) {
     currentEmbeddedActivity: g,
     onOpenButtonPress: l,
     channelRecipientUserId: b,
-    setIsExecutingLaunchInteraction: _,
+    setIsExecutingLaunchInteraction: y,
     analyticsLocations: x
-  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, N = (0, y.Q3)("LoadedEntryPointCommandButton");
+  }), E = h ? c.zxk.Colors.RED : c.zxk.Colors.BRAND, N = (0, _.Q3)("LoadedEntryPointCommandButton");
   return (0, r.jsx)(c.zxk, {
     className: o()(j.entryPointAppCommandButton, v.Id),
     size: N ? c.zxk.Sizes.SMALL : c.zxk.Sizes.LARGE,

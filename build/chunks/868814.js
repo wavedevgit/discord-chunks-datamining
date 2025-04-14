@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -6,17 +6,17 @@ n.d(t, {
 var r = n(442837),
   i = n(977258),
   s = n(958832),
-  a = n(592125),
-  l = n(981631);
+  l = n(592125),
+  a = n(981631);
 
 function o(e) {
-  return (0, r.Wu)([s.Z, a.Z], () => {
+  return (0, r.Wu)([s.Z, l.Z], () => {
     var t;
-    let n = (null != (t = s.Z.getTopChannelIds(e.id)) ? t : []).map(e => a.Z.getChannel(e)).filter(t => null == t || t.id !== e.rulesChannelId),
+    let n = (null != (t = s.Z.getTopChannelIds(e.id)) ? t : []).map(e => l.Z.getChannel(e)).filter(t => null == t || t.id !== e.rulesChannelId),
       r = [],
       o = 0;
     return n.forEach(e => {
-      if (e.type === l.d4z.GUILD_ANNOUNCEMENT) {
+      if (e.type === a.d4z.GUILD_ANNOUNCEMENT) {
         if (o >= 2) return;
         o++
       }

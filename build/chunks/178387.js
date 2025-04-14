@@ -1,14 +1,14 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  I: () => b
+  I: () => x
 });
 var r = n(200651);
 n(192379);
 var i = n(793030),
   s = n(442837),
-  a = n(100527),
-  l = n(906732),
+  l = n(100527),
+  a = n(906732),
   o = n(496675),
   c = n(999382),
   d = n(92533),
@@ -16,43 +16,43 @@ var i = n(793030),
   m = n(464865),
   g = n(888125),
   p = n(981631),
-  f = n(388032),
-  h = n(162161);
+  h = n(388032),
+  f = n(162161);
 
-function b() {
+function x() {
   let {
     analyticsLocations: e
-  } = (0, l.ZP)(a.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, s.e7)([c.Z], () => c.Z.getProps().guild, []), {
+  } = (0, a.ZP)(l.Z.GUILD_SETTINGS_BOOST_PERKS_PAGE), t = (0, s.e7)([c.Z], () => c.Z.getProps().guild, []), {
     isGuildAdmin: n,
-    canManageGuild: b
+    canManageGuild: x
   } = (0, s.cj)([o.Z], () => ({
     isGuildAdmin: null != t && o.Z.can(p.Plq.ADMINISTRATOR, t),
     canManageGuild: null != t && o.Z.can(p.Plq.MANAGE_GUILD, t)
   }));
-  return null == t ? null : (0, r.jsx)(l.Gt, {
+  return null == t ? null : (0, r.jsx)(a.Gt, {
     value: e,
     children: (0, r.jsxs)("main", {
-      className: h.container,
+      className: f.container,
       children: [(0, r.jsx)(i.X6, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: f.NW.string(f.t.UKgg5O)
+        children: h.NW.string(h.t.UKgg5O)
       }), (0, r.jsx)(g.w, {
-        canManageGuild: b,
+        canManageGuild: x,
         premiumProgressBarEnabled: t.premiumProgressBarEnabled
       }), (0, r.jsx)("div", {
-        className: h.divider
+        className: f.divider
       }), (0, r.jsx)(d.A, {
         guild: t,
-        canManageGuild: b
+        canManageGuild: x
       }), (0, r.jsx)("div", {
-        className: h.divider
+        className: f.divider
       }), (0, r.jsx)(u.A, {
         guild: t,
-        canManageGuild: b
+        canManageGuild: x
       }), n ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-          className: h.divider
+          className: f.divider
         }), (0, r.jsx)(m.V, {
           guild: t
         })]

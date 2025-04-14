@@ -1,25 +1,25 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(205822),
   s = n(731994),
-  a = n(388032);
-let l = function(e) {
+  l = n(388032);
+let a = function(e) {
   let {
     className: t,
     style: n,
-    onDrop: l
+    onDrop: a
   } = e;
   return (0, r.jsx)(i.Z, {
     className: t,
     style: n,
-    title: a.NW.string(a.t.DU0dy8),
-    description: a.NW.string(a.t.bpycfH),
+    title: l.NW.string(l.t.DU0dy8),
+    description: l.NW.string(l.t.bpycfH),
     icons: s.pA,
-    onDrop: l
+    onDrop: a
   })
 }

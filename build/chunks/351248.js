@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => j
 }), n(539854), n(388685);
@@ -17,9 +17,9 @@ var r = n(200651),
   m = n(354459),
   g = n(95072),
   b = n(893354),
-  _ = n(565128);
+  y = n(565128);
 
-function y(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -125,8 +125,8 @@ class v extends i.PureComponent {
       children: t,
       className: n
     } = this.props, i = (0, u.wj)(e), l = o()(g.sprite, {
-      [_.crossWhite]: i,
-      [_.crossGrey]: !i
+      [y.crossWhite]: i,
+      [y.crossGrey]: !i
     });
     return (0, r.jsxs)(a.Z.div, {
       className: o()(g.transition, n),
@@ -144,7 +144,7 @@ class v extends i.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scaleAnimation", new a.Z.Value(0)), y(this, "spriteAnimation", new a.Z.Value(0)), y(this, "spriteOpacity", new a.Z.Value(0)), y(this, "widthAnimation", new a.Z.Value(0))
+    super(...e), _(this, "scaleAnimation", new a.Z.Value(0)), _(this, "spriteAnimation", new a.Z.Value(0)), _(this, "spriteOpacity", new a.Z.Value(0)), _(this, "widthAnimation", new a.Z.Value(0))
   }
 }
 
@@ -157,7 +157,7 @@ function j(e) {
     onClick: a,
     width: u,
     guildId: b
-  } = e, _ = (0, p.ZP)(), y = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
+  } = e, y = (0, p.ZP)(), _ = (t = n.length, ((0, d.pxk)(d.EFr.SIZE_80) + 16) * t > u ? d.EFr.SIZE_40 : d.EFr.SIZE_80), C = (0, s.e7)([h.Z], () => h.Z.isFocused()), x = n.map(e => {
     var t, n;
     if (e.type !== m.fO.USER) return null;
     let {
@@ -168,12 +168,12 @@ function j(e) {
     } = e;
     return (0, r.jsx)(v, {
       className: g.participant,
-      width: (0, d.pxk)(y),
-      theme: _,
+      width: (0, d.pxk)(_),
+      theme: y,
       children: (0, r.jsx)(f.Z, {
         userId: l.id,
-        src: l.getAvatarURL(b, (0, d.pxk)(y), s && C),
-        size: y,
+        src: l.getAvatarURL(b, (0, d.pxk)(_), s && C),
+        size: _,
         muted: null != (t = null == o ? void 0 : o.isVoiceMuted()) && t,
         deafen: null != (n = null == o ? void 0 : o.isVoiceDeafened()) && n,
         speaking: s,

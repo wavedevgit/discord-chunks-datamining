@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => h,
   r: () => p
@@ -24,8 +24,8 @@ function h(e) {
     activities: m,
     newClipsCount: g,
     canPostPolls: b,
-    canLaunchActivities: _,
-    appContext: y,
+    canLaunchActivities: y,
+    appContext: _,
     canSendScheduledMessages: C
   } = e, x = [];
   return t && (x.push({
@@ -36,7 +36,7 @@ function h(e) {
     type: "UPLOAD_TEXT_AS_FILE",
     icon: i.xD0,
     display: d.NW.string(d.t["G9s+EB"])
-  })), h && t && y !== u.IlC.POPOUT && x.push({
+  })), h && t && _ !== u.IlC.POPOUT && x.push({
     type: "CLIPS",
     icon: i.AlX,
     display: d.NW.string(d.t.o034cn),
@@ -54,7 +54,7 @@ function h(e) {
     type: "SLASH_COMMAND",
     icon: i.jje,
     display: d.NW.string(d.t.Bbvp6O)
-  }), _ && x.push({
+  }), y && x.push({
     type: "ACTIVITY",
     icon: i.nG3,
     display: d.NW.string(d.t["16Lfra"])

@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   m: () => b
 }), n(388685);
@@ -23,7 +23,7 @@ function b(e) {
     onAcceptSuccess: n,
     onRejectSuccess: i,
     onError: b
-  } = e, _ = (0, f.Z)(), [y, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = y || x || j, Z = r.useCallback(async e => {
+  } = e, y = (0, f.Z)(), [_, C] = r.useState(!1), [x, v] = r.useState(!1), [j, O] = r.useState(!1), [E, N] = r.useState(!1), [I, P] = r.useState(!1), S = _ || x || j, Z = r.useCallback(async e => {
     if (!S) {
       C(!0);
       try {
@@ -119,11 +119,11 @@ function b(e) {
     }) : r(i)
   }, [Z]);
   return {
-    acceptMessageRequest: _ ? w : Z,
+    acceptMessageRequest: y ? w : Z,
     rejectMessageRequest: T,
     rejectAll: A,
     markAsNotSpam: R,
-    isAcceptLoading: y,
+    isAcceptLoading: _,
     isRejectLoading: x,
     isUserProfileLoading: j,
     isOptimisticAccepted: E,

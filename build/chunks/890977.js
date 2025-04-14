@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  b: () => y
+  b: () => _
 }), n(49124);
 var r, i, l = n(200651),
   o = n(192379),
@@ -41,7 +41,7 @@ function b(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     className: t
   } = e;
@@ -50,7 +50,7 @@ function _(e) {
     className: s()(m.trinkets, t)
   })
 }
-let y = e => {
+let _ = e => {
   let {
     children: t,
     animationContainerClassName: n,
@@ -69,7 +69,7 @@ let y = e => {
     }), (0, l.jsx)("div", {
       className: m.entrypoint,
       children: t
-    }), (0, l.jsx)(_, {
+    }), (0, l.jsx)(y, {
       className: i
     })]
   })

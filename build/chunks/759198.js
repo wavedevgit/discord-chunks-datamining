@@ -1,11 +1,11 @@
-/** Chunk was on 51842 **/
+/** Chunk was on 90783 **/
 n.d(t, {
   Z: () => l
 });
-var r = n(200651);
+var o = n(200651);
 n(192379);
-var o = n(120356),
-  a = n.n(o),
+var r = n(120356),
+  a = n.n(r),
   i = n(481060),
   c = n(482107);
 
@@ -13,35 +13,35 @@ function l(e) {
   var {
     className: t,
     color: n
-  } = e, o = function(e, t) {
+  } = e, r = function(e, t) {
     if (null == e) return {};
-    var n, r, o = function(e, t) {
+    var n, o, r = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
+      var n, o, r = {},
         a = Object.keys(e);
-      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-      return o
+      for (o = 0; o < a.length; o++) n = a[o], t.indexOf(n) >= 0 || (r[n] = e[n]);
+      return r
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+      for (o = 0; o < a.length; o++) n = a[o], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
     }
-    return o
+    return r
   }(e, ["className", "color"]);
-  return (0, r.jsx)(i.Text, function(e) {
+  return (0, o.jsx)(i.Text, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        r = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        o = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (o = o.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), r.forEach(function(t) {
-        var r;
-        r = n[t], t in e ? Object.defineProperty(e, t, {
-          value: r,
+      }))), o.forEach(function(t) {
+        var o;
+        o = n[t], t in e ? Object.defineProperty(e, t, {
+          value: o,
           enumerable: !0,
           configurable: !0,
           writable: !0
-        }) : e[t] = r
+        }) : e[t] = o
       })
     }
     return e
@@ -50,5 +50,5 @@ function l(e) {
       [c.text]: null == n
     }, t),
     color: n
-  }, o))
+  }, r))
 }

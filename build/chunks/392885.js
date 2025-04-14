@@ -1,10 +1,10 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => f
+  Z: () => h
 });
-var r, i, s, a = n(442837),
-  l = n(570140),
+var r, i, s, l = n(442837),
+  a = n(570140),
   o = n(999382),
   c = n(740903),
   d = n(981631);
@@ -33,7 +33,7 @@ function g(e) {
       u = c.u.OVERVIEW
   }
 }
-class p extends(s = a.ZP.Store) {
+class p extends(s = l.ZP.Store) {
   getCurrentPage() {
     return u
   }
@@ -44,7 +44,7 @@ i = "GuildSettingsSafetyStore", (r = "displayName") in p ? Object.defineProperty
   configurable: !0,
   writable: !0
 }) : p[r] = i;
-let f = new p(l.Z, {
+let h = new p(a.Z, {
   GUILD_SETTINGS_INIT: function() {
     if (o.Z.getGuildId() === m) return !1;
     m = o.Z.getGuildId()

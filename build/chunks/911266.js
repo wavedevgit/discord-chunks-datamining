@@ -1,6 +1,6 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   m = n(111810),
   g = n(287941),
   b = n(235894),
-  _ = n(675479);
-let y = e => {
+  y = n(675479);
+let _ = e => {
   let {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = i.useRef((0, a.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, N] = i.useState(!1), I = i.useMemo(() => !n && !C && !x, [C, n, x]);
+  } = e, _ = i.useRef((0, a.random)(-6, 24)).current, C = (0, s.e7)([h.Z], () => h.Z.confettiMode), x = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), v = i.useRef(0), j = i.useRef(null), O = i.useRef(null), [E, N] = i.useState(!1), I = i.useMemo(() => !n && !C && !x, [C, n, x]);
   if (i.useEffect(() => {
       n || N(!1), n && C && N(!0)
     }, [n, C]), i.useEffect(() => {
@@ -55,7 +55,7 @@ let y = e => {
   let P = (0, b.Eq)(t);
   if (null == P) return null;
   if (l) return (0, r.jsx)("span", {
-    className: _.hidden,
+    className: y.hidden,
     "aria-hidden": "true"
   });
   let S = P.emoji[0],
@@ -67,24 +67,24 @@ let y = e => {
     });
   return (0, r.jsxs)("div", {
     ref: O,
-    className: _.emojiWrapper,
+    className: y.emojiWrapper,
     style: {
-      right: "".concat(256 + y, "px")
+      right: "".concat(256 + _, "px")
     },
     children: [(0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.left, I && _.shy, C && _.confettiMode]),
+      className: o()([y.emoji, y.left, I && y.shy, C && y.confettiMode]),
       width: 28
     }), (0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.right, I && _.shy, C && _.confettiMode]),
+      className: o()([y.emoji, y.right, I && y.shy, C && y.confettiMode]),
       width: 26
     }), (0, r.jsx)("img", {
       alt: "",
       src: Z,
-      className: o()([_.emoji, _.center, I && _.shy, C && _.confettiMode]),
+      className: o()([y.emoji, y.center, I && y.shy, C && y.confettiMode]),
       width: 32
     })]
   })

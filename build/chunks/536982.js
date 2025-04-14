@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => c
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(428760),
-  l = n(388032),
+  l = n(428760),
+  a = n(388032),
   o = n(283902);
 
 function c(e) {
@@ -19,12 +19,12 @@ function c(e) {
   } = e, [u, m] = i.useState(!d);
   return (0, r.jsx)(s.zF9, {
     isExpanded: u,
-    collapsibleContent: (0, r.jsx)(a.Z, {
+    collapsibleContent: (0, r.jsx)(l.Z, {
       onChangeText: t,
       maxWordCount: c,
       className: o.keywordTextAreaContainer,
       textAreaClassName: o.keywordTextArea,
-      subtitleText: l.NW.formatToMarkdownString(l.t.qm7UZ2, {}),
+      subtitleText: a.NW.formatToMarkdownString(a.t.qm7UZ2, {}),
       initialValue: n
     }),
     className: o.collapseable,
@@ -40,7 +40,7 @@ function c(e) {
           className: o.header,
           children: [(0, r.jsx)(s.X6q, {
             variant: "text-sm/medium",
-            children: l.NW.string(l.t.lbE2Nj)
+            children: a.NW.string(a.t.lbE2Nj)
           }), u ? (0, r.jsx)(s.u04, {
             size: "md",
             color: "currentColor",

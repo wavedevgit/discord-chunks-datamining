@@ -1,15 +1,15 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(192379),
   i = n(584825),
   s = n(14263);
 
-function a(e, t) {
+function l(e, t) {
   let n = (0, i.qi)(e),
-    a = (0, s.Z)(e);
+    l = (0, s.Z)(e);
   return r.useMemo(() => n.map(e => {
     var n, r, i;
     let s = null == e ? void 0 : e.role_id;
@@ -33,7 +33,7 @@ function a(e, t) {
     }({}, null != (n = null == t ? void 0 : t.ppgs[e.id]) ? n : {}), i = i = {
       key: e.id,
       subscriptionListing: e,
-      roleMemberCount: null == s || null == a ? void 0 : a[s]
+      roleMemberCount: null == s || null == l ? void 0 : l[s]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -44,5 +44,5 @@ function a(e, t) {
     })(Object(i)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
     }), r
-  }), [n, null == t ? void 0 : t.ppgs, a])
+  }), [n, null == t ? void 0 : t.ppgs, l])
 }

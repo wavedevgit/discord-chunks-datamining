@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => C
 }), n(388685), n(539854);
@@ -31,10 +31,10 @@ function b(e) {
   return t in f || t in m
 }
 
-function _() {
+function y() {
   f = {}, m = {}
 }
-class y extends(r = o.ZP.Store) {
+class _ extends(r = o.ZP.Store) {
   initialize() {
     this.waitFor(u.Z)
   }
@@ -42,13 +42,13 @@ class y extends(r = o.ZP.Store) {
     return b(e)
   }
 }
-l = "PresenceSubscriptionsStore", (i = "displayName") in y ? Object.defineProperty(y, i, {
+l = "PresenceSubscriptionsStore", (i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : y[i] = l;
-let C = new y(s.Z, {
+}) : _[i] = l;
+let C = new _(s.Z, {
   PRESENCE_SUBSCRIPTIONS_ADD: function(e) {
     let {
       subscription: t
@@ -78,8 +78,8 @@ let C = new y(s.Z, {
       expiresAt: u
     }, g.delay(), !0
   },
-  CONNECTION_OPEN: _,
-  CONNECTION_RESUMED: _,
+  CONNECTION_OPEN: y,
+  CONNECTION_RESUMED: y,
   LOGOUT: function() {
     f = {}, m = {}
   }

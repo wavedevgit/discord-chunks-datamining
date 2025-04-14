@@ -18,11 +18,11 @@ var r = n(200651),
   b = n(246364),
   f = n(98493),
   N = n(328977),
-  C = n(412222),
-  p = n(223312),
-  _ = n(768762),
-  g = n(171368),
-  v = n(598077),
+  p = n(412222),
+  C = n(223312),
+  g = n(768762),
+  v = n(171368),
+  _ = n(598077),
   T = n(430824),
   E = n(51144),
   I = n(388032),
@@ -76,12 +76,12 @@ function w(e) {
             variant: "eyebrow",
             color: "interactive-normal",
             children: I.NW.string(I.t.EZ5QWF)
-          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(_.Z, {
+          }), t === b.Nw.TIMESTAMP_ASC ? (0, r.jsx)(g.Z, {
             className: S.sortIcon,
-            direction: _.Z.Directions.UP
-          }) : (0, r.jsx)(_.Z, {
+            direction: g.Z.Directions.UP
+          }) : (0, r.jsx)(g.Z, {
             className: S.sortIcon,
-            direction: _.Z.Directions.DOWN
+            direction: g.Z.Directions.DOWN
           })]
         })
       }), (0, r.jsx)("th", {
@@ -103,7 +103,7 @@ let A = l.memo(function(e) {
       joinRequestId: i,
       guildId: a
     } = t, s = l.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, g.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, v.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i
       })
@@ -154,9 +154,9 @@ let A = l.memo(function(e) {
       guildId: s,
       createdAt: m,
       applicationStatus: x
-    } = t, h = l.useMemo(() => new v.Z(t.user), [t.user]), j = (0, N.L)({
+    } = t, h = l.useMemo(() => new _.Z(t.user), [t.user]), j = (0, N.L)({
       guildId: s
-    }), f = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), C = x === b.wB.SUBMITTED, p = e => {
+    }), f = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), p = x === b.wB.SUBMITTED, C = e => {
       (0, u.jW)(e, async () => {
         let {
           default: e
@@ -218,7 +218,7 @@ let A = l.memo(function(e) {
         })
       }), (0, r.jsx)("td", {
         className: S.moreOptionsCol,
-        children: C && (0, r.jsx)(d.ua7, {
+        children: p && (0, r.jsx)(d.ua7, {
           text: I.NW.string(I.t.x8Nn4O),
           children: e => {
             let {
@@ -228,7 +228,7 @@ let A = l.memo(function(e) {
             return (0, r.jsx)(d.P3F, {
               onMouseEnter: t,
               onMouseLeave: n,
-              onClick: p,
+              onClick: C,
               className: O.button,
               children: (0, r.jsx)(d.Huf, {
                 size: "custom",
@@ -289,11 +289,11 @@ function k(e) {
   let {
     guildId: t,
     currentTab: n
-  } = e, i = l.useRef(null), a = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), s = (0, C.C)({
+  } = e, i = l.useRef(null), a = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), s = (0, p.C)({
     guildId: t
   }), o = (0, c.e7)([j.Z], () => j.Z.isFetching()), {
     guildJoinRequests: u
-  } = (0, p.j)({
+  } = (0, C.j)({
     guildId: t,
     applicationStatus: n,
     sortOrder: s

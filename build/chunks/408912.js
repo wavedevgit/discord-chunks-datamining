@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 e.exports = {
   wrapper: "wrapper__92e4b",
   badge: "badge__92e4b"

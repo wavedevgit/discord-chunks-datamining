@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => o
@@ -7,8 +7,8 @@ var r = n(200651);
 n(192379);
 var i = n(120356),
   s = n.n(i),
-  a = n(481060),
-  l = n(296205);
+  l = n(481060),
+  a = n(296205);
 
 function o(e) {
   var t, n;
@@ -21,7 +21,7 @@ function o(e) {
   } = e, m = e => {
     e.stopPropagation(), e.preventDefault()
   };
-  return (0, r.jsx)(a.P3F, (t = function(e) {
+  return (0, r.jsx)(l.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -42,9 +42,9 @@ function o(e) {
     onClick: m,
     onMouseDown: m,
     onMouseUp: m,
-    className: s()(l.switch, d)
+    className: s()(a.switch, d)
   }, u), n = n = {
-    children: (0, r.jsx)(a.rsf, {
+    children: (0, r.jsx)(l.rsf, {
       checked: i,
       onChange: o,
       disabled: c

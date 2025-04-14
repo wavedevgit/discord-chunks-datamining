@@ -1,14 +1,14 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Q: () => g,
-  Z: () => b
+  Z: () => x
 }), n(388685);
 var r = n(200651),
   i = n(192379),
   s = n(481060),
-  a = n(957011),
-  l = n(587431),
+  l = n(957011),
+  a = n(587431),
   o = n(756066),
   c = n(388032),
   d = n(601781),
@@ -38,8 +38,8 @@ function p(e) {
   let {
     guild: t,
     eligibility: i,
-    eligibilityLoading: a,
-    eligibilityError: l,
+    eligibilityLoading: l,
+    eligibilityError: a,
     refreshEligibility: o
   } = e;
   return (0, r.jsxs)(s.zxk, {
@@ -56,8 +56,8 @@ function p(e) {
           var s, c;
           return (0, r.jsx)(e, (s = m({}, n), c = c = {
             eligibility: i,
-            eligibilityLoading: a,
-            eligibilityError: l,
+            eligibilityLoading: l,
+            eligibilityError: a,
             refreshEligibility: o,
             guildId: t.id
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
@@ -83,7 +83,7 @@ function p(e) {
   })
 }
 
-function f(e) {
+function h(e) {
   let {
     guild: t,
     checkboxText: n
@@ -92,11 +92,11 @@ function f(e) {
     error: u,
     loading: m,
     submitAcceptTermsRequest: g
-  } = (0, a.Z)(t.id), [p, f] = i.useState(!1);
+  } = (0, l.Z)(t.id), [p, h] = i.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.XZJ, {
       onChange: function() {
-        f(e => !e)
+        h(e => !e)
       },
       size: 20,
       type: s.XZJ.Types.INVERTED,
@@ -119,39 +119,39 @@ function f(e) {
     }), null != u && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(l.Z, {
+      }), (0, r.jsx)(a.Z, {
         children: u.getAnyErrorMessage()
       })]
     })]
   })
 }
 
-function h(e) {
+function f(e) {
   let {
     guild: t,
     monetizationEligibility: n
   } = e, {
     eligibilityLoading: i,
     eligibilityError: s,
-    refreshEligibility: a,
-    eligibility: l,
+    refreshEligibility: l,
+    eligibility: a,
     eligibleForMonetization: c,
     acceptTermsCheckboxText: d,
     wasRejectedInV1: u
   } = n;
-  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(f, {
+  return c ? u ? (0, r.jsx)(o.Z, m({}, n)) : (0, r.jsx)(h, {
     guild: t,
     checkboxText: d
   }) : (0, r.jsx)(p, {
     guild: t,
-    eligibility: l,
+    eligibility: a,
     eligibilityLoading: i,
     eligibilityError: s,
-    refreshEligibility: a
+    refreshEligibility: l
   })
 }
 
-function b(e) {
+function x(e) {
   let {
     guild: t,
     monetizationEligibility: n
@@ -176,7 +176,7 @@ function b(e) {
         children: c.NW.string(c.t["41wkMT"])
       }), (0, r.jsx)(s.LZC, {
         size: 24
-      }), (0, r.jsx)(h, {
+      }), (0, r.jsx)(f, {
         guild: t,
         monetizationEligibility: n
       })]

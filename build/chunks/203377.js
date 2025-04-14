@@ -1,16 +1,16 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  G7: () => a,
+  G7: () => l,
   LG: () => d,
   Pg: () => s,
   ZI: () => o,
-  _0: () => l
+  _0: () => a
 });
 var r, i = n(388032);
 let s = 5,
-  a = 10,
-  l = 30;
+  l = 10,
+  a = 30;
 var o = ((r = {})[r.DISPLAY = 0] = "DISPLAY", r[r.PERMISSIONS = 1] = "PERMISSIONS", r[r.MEMBERS = 2] = "MEMBERS", r[r.VERIFICATIONS = 3] = "VERIFICATIONS", r);
 let c = {
   afk_channel_id: () => i.NW.string(i.t.KuYcnZ),

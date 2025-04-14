@@ -1,15 +1,15 @@
-/** Chunk was on 88261 **/
+/** Chunk was on 53967 **/
 n.d(t, {
-  Z: () => m,
-  t: () => u
+  Z: () => f,
+  t: () => c
 }), n(953529);
-var r, i = n(392711),
-  l = n.n(i),
-  a = n(442837),
-  o = n(570140),
-  s = n(246364);
+var i, r = n(392711),
+  l = n.n(r),
+  o = n(442837),
+  s = n(570140),
+  a = n(246364);
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -17,38 +17,38 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let u = {
+let c = {
     version: "",
     description: "",
     formFields: []
   },
   d = {};
-class f extends(r = a.ZP.Store) {
+class E extends(i = o.ZP.Store) {
   get(e) {
     if (null != e) return d[e]
   }
   getRulesPrompt(e) {
     var t;
-    return l().find(null == (t = d[e]) ? void 0 : t.formFields, s.J)
+    return l().find(null == (t = d[e]) ? void 0 : t.formFields, a.J)
   }
 }
-c(f, "displayName", "MemberVerificationFormStore");
-let m = new f(o.Z, {
+u(E, "displayName", "MemberVerificationFormStore");
+let f = new E(s.Z, {
   INVITE_ACCEPT_SUCCESS: function(e) {
     let {
       invite: t
     } = e, {
       member_verification_form: n
     } = t, {
-      guild: r
+      guild: i
     } = t;
-    if (null != r && null != n) {
-      var i;
-      return d[r.id] = {
+    if (null != i && null != n) {
+      var r;
+      return d[i.id] = {
         version: n.version,
-        description: null != (i = n.description) ? i : "",
+        description: null != (r = n.description) ? r : "",
         formFields: n.form_fields,
-        guild: r
+        guild: i
       }, !0
     }
     return !1
@@ -58,18 +58,18 @@ let m = new f(o.Z, {
       form: t,
       guildId: n
     } = e;
-    if (null == t) d[n] = u;
+    if (null == t) d[n] = c;
     else {
-      var r;
-      let e = null != (r = d[n]) ? r : u;
+      var i;
+      let e = null != (i = d[n]) ? i : c;
       d[n] = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            i = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), r.forEach(function(t) {
-            c(e, t, n[t])
+          }))), i.forEach(function(t) {
+            u(e, t, n[t])
           })
         }
         return e
@@ -81,7 +81,7 @@ let m = new f(o.Z, {
     let {
       guildId: n
     } = e;
-    d[n] = null != (t = d[n]) ? t : u
+    d[n] = null != (t = d[n]) ? t : c
   },
   GUILD_DELETE: function(e) {
     let {

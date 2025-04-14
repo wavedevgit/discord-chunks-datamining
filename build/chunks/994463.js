@@ -1,11 +1,11 @@
-/** Chunk was on 12910 **/
+/** Chunk was on 86974 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
 var r = n(200651),
   l = n(192379),
-  a = n(525654),
-  s = n.n(a),
+  s = n(525654),
+  a = n.n(s),
   o = n(748780),
   i = n(782682);
 
@@ -38,7 +38,7 @@ class u extends l.Component {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== s().name && (o.Z.animate(e, {
+    "Firefox" !== a().name && (o.Z.animate(e, {
       loop: !0,
       toValueMin: -74,
       toValueMax: 95,

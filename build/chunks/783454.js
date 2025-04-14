@@ -1,4 +1,4 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
   Z: () => g
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651),
   i = n(192379),
   s = n(120356),
-  a = n.n(s),
-  l = n(481060),
+  l = n.n(s),
+  a = n(481060),
   o = n(313201),
   c = n(259580),
   d = n(404203),
@@ -20,27 +20,27 @@ function g(e) {
     title: n,
     description: s,
     children: g
-  } = e, [p, f] = i.useState(t), h = () => f(e => !e), b = (0, o.Dt)();
+  } = e, [p, h] = i.useState(t), f = () => h(e => !e), x = (0, o.Dt)();
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(d.Z, {
-      className: a()(m.header, {
+      className: l()(m.header, {
         [m.headerWithDescription]: p && null != s
       }),
-      onClick: h,
+      onClick: f,
       children: e => {
         let {
           areaRef: t,
           handleStopPropagation: i
         } = e;
         return (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(l.X6q, {
+          children: [(0, r.jsx)(a.X6q, {
             variant: "heading-md/semibold",
             children: n
-          }), (0, r.jsx)(l.P3F, {
-            onClick: i(h),
+          }), (0, r.jsx)(a.P3F, {
+            onClick: i(f),
             "aria-label": u.NW.string(u.t.e5eQOz),
-            "aria-controls": b,
+            "aria-controls": x,
             "aria-expanded": p,
             focusProps: {
               ringTarget: t
@@ -53,9 +53,9 @@ function g(e) {
         })
       }
     }), p && (0, r.jsxs)("div", {
-      id: b,
-      children: [null != s && (0, r.jsx)(l.R94, {
-        type: l.R94.Types.DESCRIPTION,
+      id: x,
+      children: [null != s && (0, r.jsx)(a.R94, {
+        type: a.R94.Types.DESCRIPTION,
         className: m.description,
         children: s
       }), (0, r.jsx)("div", {

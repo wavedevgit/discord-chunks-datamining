@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => e5
 }), n(388685), n(35282), n(781311), n(997841);
@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(144144),
   g = n(166459),
   b = n(966390),
-  _ = n(738619),
-  y = n(410575),
+  y = n(738619),
+  _ = n(410575),
   C = n(744061),
   x = n(857595),
   v = n(607070),
@@ -71,8 +71,8 @@ var r = n(200651),
   em = n(45251),
   eg = n(705533),
   eb = n(618857),
-  e_ = n(268350),
-  ey = n(155409),
+  ey = n(268350),
+  e_ = n(155409),
   eC = n(163612),
   ex = n(314897),
   ev = n(433355),
@@ -249,9 +249,9 @@ class e6 extends i.PureComponent {
       onCommandSentinelTyped: m,
       renderAppLauncherButton: g,
       renderAppCommandButton: b,
-      pendingScheduledMessage: _
+      pendingScheduledMessage: y
     } = this.props, {
-      contentWarningProps: y
+      contentWarningProps: _
     } = this.state, x = (0, r.jsx)(F.Z, {
       ref: this.props.refInstance,
       textValue: this.state.textValue,
@@ -277,24 +277,24 @@ class e6 extends i.PureComponent {
       highlighted: o,
       setEditorRef: e => this.editorRef = e,
       onCommandSentinelTyped: m,
-      pendingScheduledMessage: _
+      pendingScheduledMessage: y
     });
     return (0, r.jsx)(p.yRy, {
       position: "top",
       onRequestClose: () => {
         var e;
-        null == y || null == (e = y.onCancel) || e.call(y), this.setState({
+        null == _ || null == (e = _.onCancel) || e.call(_), this.setState({
           contentWarningProps: null
         })
       },
-      shouldShow: null != y,
+      shouldShow: null != _,
       renderPopout: e => {
         let {
           closePopout: t
         } = e;
-        return s()(null != y, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, r.jsx)(C.Z, e0({
+        return s()(null != _, "ChannelTextAreaForm > Popout > renderPopout: contentWarningProps cannot be null"), (0, r.jsx)(C.Z, e0({
           onClose: t
-        }, y))
+        }, _))
       },
       children: () => f ? (0, r.jsx)(p.UkV, {
         isShaking: h > 0,
@@ -482,13 +482,13 @@ class e6 extends i.PureComponent {
             shouldClear: !1,
             shouldRefocus: !1
           };
-        let _ = (0, er.g)(t, {
+        let y = (0, er.g)(t, {
           channel: c,
           isEdit: !1
         });
-        null != _ && (null != _.content && (t = _.content), null != _.tts && (p = _.tts));
-        let y = ei.ZP.parse(c, t);
-        y.tts = y.tts || p;
+        null != y && (null != y.content && (t = y.content), null != y.tts && (p = y.tts));
+        let _ = ei.ZP.parse(c, t);
+        _.tts = _.tts || p;
         let C = f.Z.getSendMessageOptions({
           content: t,
           channelId: c.id,
@@ -500,7 +500,7 @@ class e6 extends i.PureComponent {
           confettiPotionEmoji: i,
           scheduledTimestamp: null == (o = this.props.pendingScheduledMessage) ? void 0 : o.scheduledTimestamp
         });
-        if (a) return f.Z.sendMessage(c.id, y, void 0, C), (0, eh.A6)(c.id), {
+        if (a) return f.Z.sendMessage(c.id, _, void 0, C), (0, eh.A6)(c.id), {
           shouldClear: !1,
           shouldRefocus: !0
         };
@@ -515,7 +515,7 @@ class e6 extends i.PureComponent {
               channelId: c.id,
               uploads: n,
               draftType: eO.d.ChannelMessage,
-              parsedMessage: y,
+              parsedMessage: _,
               options: C,
               raiseEndpointErrors: null != t
             });
@@ -539,8 +539,8 @@ class e6 extends i.PureComponent {
             shouldClear: !1,
             shouldRefocus: !1
           }
-        } else null != r && r.length > 0 && "" === t ? f.Z.sendStickers(c.id, r, t, C, y.tts) : f.Z.sendMessage(c.id, y, void 0, C);
-        return this.setState((0, U.H2)()), (0, eh.A6)(c.id), (0, e_.qB)(c.id, d.drafts.type), {
+        } else null != r && r.length > 0 && "" === t ? f.Z.sendStickers(c.id, r, t, C, _.tts) : f.Z.sendMessage(c.id, _, void 0, C);
+        return this.setState((0, U.H2)()), (0, eh.A6)(c.id), (0, ey.qB)(c.id, d.drafts.type), {
           shouldClear: !0,
           shouldRefocus: !0
         }
@@ -625,7 +625,7 @@ class e8 extends i.PureComponent {
       }),
       M = (0, r.jsxs)("div", {
         className: eQ.channelBottomBarArea,
-        children: [(0, r.jsx)(ey.Z, {
+        children: [(0, r.jsx)(e_.Z, {
           childRef: this.channelTextAreaFormRef,
           tutorialId: "writing-messages",
           position: "left",
@@ -667,7 +667,7 @@ class e8 extends i.PureComponent {
         location: "ChannelChat"
       }),
       G = B && null != S && null != Z;
-    return (0, r.jsx)(y.Z, {
+    return (0, r.jsx)(_.Z, {
       page: (0, ew.mE)(this.props.channel),
       children: (0, r.jsx)(en.sW, {
         children: (0, r.jsx)(et.BV, {
@@ -739,7 +739,7 @@ class e8 extends i.PureComponent {
                   }) : (0, r.jsx)(eY.Z, {
                     channel: n,
                     children: D
-                  }), N ? null : (0, r.jsx)(_.Z, {
+                  }), N ? null : (0, r.jsx)(y.Z, {
                     channel: n,
                     poggermodeEnabled: C
                   })]
@@ -877,7 +877,7 @@ let e5 = i.memo(function(e) {
   }), c = (0, ep.S)(eT.default.getCurrentUser(), t), [u] = (0, J.AB)(null == n ? void 0 : n.id), h = (0, K.Ux)(null == n ? void 0 : n.id), f = (0, d.e7)([eT.default], () => eT.default.getCurrentUser()), m = (0, d.e7)([eN.ZP], () => {
     var e, t, r;
     return null != f && null != (r = null == (e = eN.ZP.getMember(null != (t = null == n ? void 0 : n.id) ? t : eK.lds, null == f ? void 0 : f.id)) ? void 0 : e.isPending) && r
-  }), g = (0, d.e7)([es.Z], () => es.Z.isEnabled()), b = (0, ed.Z)(t.id), _ = (0, ee.Z)(t.id), y = (0, S.R)({
+  }), g = (0, d.e7)([es.Z], () => es.Z.isEnabled()), b = (0, ed.Z)(t.id), y = (0, ee.Z)(t.id), _ = (0, S.R)({
     channel: t,
     chatInputType: l
   }), C = (0, L.h9)(t.id), x = (0, eg.k)(t.id), j = (0, z.Z)(t.id), {
@@ -923,9 +923,9 @@ let e5 = i.memo(function(e) {
     communicationDisabledUntil: u,
     shakeIntensity: b,
     poggermodeEnabled: g,
-    isSelectedResourceChannel: _,
+    isSelectedResourceChannel: y,
     showAutomodUserProfileChatBlocker: h && !m,
-    showAppLauncherButton: y,
+    showAppLauncherButton: _,
     showAppDMsUI: C,
     isInitialLoading: N,
     showEntryPointAppCommandButton: null != P,

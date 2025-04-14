@@ -1,4 +1,4 @@
-/** Chunk was on 9059 **/
+/** Chunk was on 3656 **/
 n.d(t, {
   Z: () => R
 }), n(388685), n(997841);
@@ -17,7 +17,7 @@ var r, i = n(442837),
   g = n(490897),
   b = n(526761);
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,7 +25,7 @@ function _(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let y = [{
+let _ = [{
     timeSinceJoin: +d.Z.Millis.HOUR,
     sends: 1,
     viewTime: +d.Z.Millis.MINUTE
@@ -42,7 +42,7 @@ let y = [{
     sends: 10,
     viewTime: 30 * d.Z.Millis.MINUTE
   }],
-  C = 5 * y[y.length - 1].viewTime,
+  C = 5 * _[_.length - 1].viewTime,
   x = d.Z.Millis.WEEK,
   v = {
     channels: {}
@@ -108,13 +108,13 @@ class A extends(r = i.ZP.PersistedStore) {
         i = Math.min(h.default.age(e.id), Date.now() - r.getTime()),
         l = v.channels[e.id];
       if (null == l || l.lastActionTime < Date.now() - x) return !1;
-      for (let e of y)
+      for (let e of _)
         if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) return !0;
       return !1
     }(t) && (delete v.channels[e], j.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), !0)
   }
 }
-_(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSettingNoticeStore2");
+y(A, "displayName", "UnreadSettingNoticeStore2"), y(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(l.Z, {
     CHANNEL_SELECT: function() {
       let e = I();

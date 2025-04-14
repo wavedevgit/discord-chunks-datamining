@@ -1,13 +1,13 @@
-/** Chunk was on 33472 **/
+/** Chunk was on 71018 **/
 "use strict";
 n.d(t, {
-  Z: () => h,
+  Z: () => f,
   n: () => g
 });
 var r, i = n(200651),
   s = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(748780),
   c = n(215569),
   d = n(65187);
@@ -39,7 +39,7 @@ let p = {
   tension: 40,
   overshootClamping: !0
 };
-class f extends s.PureComponent {
+class h extends s.PureComponent {
   componentWillEnter(e) {
     var t, n;
     null == (t = (n = this.props).onAnimationStart) || t.call(n), this._animated.setValue(-this.props.direction), o.Z.spring(this._animated, m({
@@ -78,21 +78,21 @@ class f extends s.PureComponent {
     super(e), u(this, "_animated", void 0), this._animated = new o.Z.Value(-1 * e.direction)
   }
 }
-let h = e => {
+let f = e => {
   let {
     children: t,
     step: n,
     direction: r,
     className: s,
-    onAnimationStart: a,
+    onAnimationStart: l,
     onAnimationEnd: o
   } = e;
   return (0, i.jsx)(c.W, {
     component: "div",
-    className: l()(d.animator, s),
-    children: (0, i.jsx)(f, {
+    className: a()(d.animator, s),
+    children: (0, i.jsx)(h, {
       direction: r,
-      onAnimationStart: a,
+      onAnimationStart: l,
       onAnimationEnd: o,
       children: t
     }, n)

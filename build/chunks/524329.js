@@ -1,16 +1,16 @@
-/** Chunk was on 12910 **/
+/** Chunk was on 86974 **/
 n.d(t, {
   Es: () => u,
   RM: () => o,
   VP: () => c,
   Xb: () => i,
   sm: () => E,
-  y0: () => s
+  y0: () => a
 }), n(953529);
 var r = n(544891),
   l = n(570140),
-  a = n(981631);
-let s = function(e) {
+  s = n(981631);
+let a = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     l.Z.dispatch({
       type: "WELCOME_SCREEN_VIEW",
@@ -24,7 +24,7 @@ let s = function(e) {
     });
     try {
       let t = await r.tn.get({
-        url: a.ANM.GUILD_WELCOME_SCREEN(e),
+        url: s.ANM.GUILD_WELCOME_SCREEN(e),
         oldFormErrors: !0,
         rejectWithError: !0
       });
@@ -57,7 +57,7 @@ let s = function(e) {
     });
     try {
       let n = await r.tn.patch({
-        url: a.ANM.GUILD_WELCOME_SCREEN(e),
+        url: s.ANM.GUILD_WELCOME_SCREEN(e),
         body: {
           description: t.description,
           welcome_channels: t.channels,
