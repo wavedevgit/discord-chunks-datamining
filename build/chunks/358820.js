@@ -94,18 +94,26 @@ function T(e) {
       analyticsContext: t
     }))
   }).catch(t => {
-    (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) ? I.info("User canceled the download for Voice Filter dependency", e): (I.error("Failed to fetch voice filter model", y({
-      reason: t
-    }, e)), _.Z.captureException(Error("Failed to fetch voice filter model", {
-      cause: t
-    }), {
-      tags: {
-        modelId: r
-      },
-      extra: {
+    if (null == t ? void 0 : t.USER_CANCELED_DOWNLOAD) I.info("User canceled the download for Voice Filter dependency", e);
+    else {
+      let n = "Failed to download voice filter dependency";
+      I.error(n, y({
         reason: t
-      }
-    })), s.Z.dispatch(O(y({
+      }, e)), u.default.track(E.rMx.VOICE_FILTER_ERROR, {
+        error_message: n,
+        cause: (0, d.X)(Error(t))
+      }), _.Z.captureException(Error(n, {
+        cause: t
+      }), {
+        tags: {
+          modelId: r
+        },
+        extra: {
+          reason: t
+        }
+      })
+    }
+    s.Z.dispatch(O(y({
       type: "VOICE_FILTER_DOWNLOAD_FAILED"
     }, e), {
       error: t
