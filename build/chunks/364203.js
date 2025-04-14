@@ -339,42 +339,46 @@ let z = function(e) {
   } = (0, O.B)(), m = (0, C.Z)(l), E = (0, g.m)(w.p9.TIER_2), [b, D] = i.useState(!1), x = (0, S.e)(), M = (0, A.u)();
   (0, T.W)();
   let k = (0, u.e7)([I.Z], () => I.Z.isFetchingWallpapers),
-    j = (0, u.e7)([I.Z], () => I.Z.getWallpaperById(null == m ? void 0 : m.wallpaperId));
-  i.useEffect(() => {
+    j = (0, u.e7)([I.Z], () => I.Z.getWallpaperById(null == m ? void 0 : m.wallpaperId)),
+    U = i.useRef(null),
+    G = i.useRef(null);
+  (0, d.Tbt)(G), i.useEffect(() => {
+    G.current = U.current
+  }, [U]), i.useEffect(() => {
     null != j && D(j.isBlurred && E)
   }, [j, E]);
-  let U = i.useCallback(() => {
+  let B = i.useCallback(() => {
       c()
     }, [c]),
     {
-      isUpdating: G,
-      updateChatWallpaper: B
+      isUpdating: Z,
+      updateChatWallpaper: z
     } = (0, N.x)({
       channelId: l,
-      onUpdateComplete: U
+      onUpdateComplete: B
     }),
-    Z = function() {
+    q = i.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R.L.USER_DISMISS;
       (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(e), c()
-    };
+    }, [c, o]);
   (0, f.ZP)(() => () => {
-    Z(R.L.INDIRECT_ACTION)
+    q(R.L.INDIRECT_ACTION)
   });
-  let z = i.useCallback(() => {
+  let Q = i.useCallback(() => {
       null != l && null != m && void 0 !== m.wallpaperId && (v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
         wallpaper_id: m.wallpaperId,
         is_blur_enabled: b,
         channel_id: l
-      }), B(l, m.wallpaperId))
-    }, [l, m, B, b]),
-    q = i.useCallback(e => {
+      }), z(l, m.wallpaperId))
+    }, [l, m, z, b]),
+    X = i.useCallback(e => {
       if ((null == j ? void 0 : j.designGroupId) != null) {
         var t;
         let n = M[j.designGroupId].find(t => t.isBlurred === e);
         h(null != (t = null == n ? void 0 : n.id) ? t : null)
       } else D(e)
     }, [null == j ? void 0 : j.designGroupId, M, h]),
-    Q = i.useCallback(e => {
+    J = i.useCallback(e => {
       let t = M[e];
       if (null == t) return;
       let n = t.find(e => e.isBlurred === b);
@@ -382,10 +386,21 @@ let z = function(e) {
         wallpaper_id: n.id,
         is_blurred: n.isBlurred
       }), h(n.id))
-    }, [b, M, h]);
-  if (0 === x.length || null == l && (null == o ? void 0 : o.pickerType) !== O.j.COACHMARK) return null;
-  let X = null;
-  return X = k ? (0, r.jsx)("div", {
+    }, [b, M, h]),
+    $ = i.useCallback(e => {
+      e.keyCode === P.yXg.ESCAPE && q()
+    }, [q]);
+  if (i.useEffect(() => {
+      let e = e => {
+        var t;
+        G.current = (null == (t = U.current) ? void 0 : t.contains(e.target)) ? U.current : null
+      };
+      return document.addEventListener("mousedown", e), () => {
+        document.removeEventListener("mousedown", e)
+      }
+    }, [U]), 0 === x.length || null == l && (null == o ? void 0 : o.pickerType) !== O.j.COACHMARK) return null;
+  let ee = null;
+  return ee = k ? (0, r.jsx)("div", {
     className: L.loadingContainer,
     children: (0, r.jsx)(d.$jN, {})
   }) : (0, r.jsxs)(r.Fragment, {
@@ -401,16 +416,16 @@ let z = function(e) {
         }
       }), x.map(e => (0, r.jsx)(H, {
         isSelected: (null == j ? void 0 : j.designGroupId) === e.designGroupId,
-        onSelect: Q,
+        onSelect: J,
         chatWallpaperMetadata: e
       }, e.id))]
     }), E ? (0, r.jsx)(Y, {
       canApply: (null == m ? void 0 : m.wallpaperId) !== void 0,
-      isUpdating: G,
+      isUpdating: Z,
       isBlurEnabled: b,
-      onBlurEnabledChange: q,
-      onClose: Z,
-      onApply: z
+      onBlurEnabledChange: X,
+      onClose: q,
+      onApply: Q
     }) : (0, r.jsx)(K, {})]
   }), (0, r.jsx)(p.Gt, {
     value: s,
@@ -420,15 +435,20 @@ let z = function(e) {
       topOffset: 88,
       children: (0, r.jsxs)("div", {
         className: L.container,
+        ref: U,
+        onKeyDown: $,
         children: [(null == o ? void 0 : o.pickerType) === O.j.COACHMARK ? (0, r.jsx)(V, {
-          handleClose: Z,
+          handleClose: q,
           isPremiumTier2Subscriber: E
         }) : (0, r.jsx)(F, {
-          handleClose: Z,
+          handleClose: q,
           isPremiumTier2Subscriber: E
         }), (0, r.jsx)("div", {
           className: L.divider
-        }), X]
+        }), (0, r.jsx)(d.JcV, {
+          containerRef: U,
+          children: ee
+        })]
       })
     })
   })
