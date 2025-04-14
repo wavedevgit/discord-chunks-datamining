@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 431951cd38c56bad
+  Original File Name: 602b0eed72eeb0c9
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -8210,14 +8210,18 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 
 .newInput__754bd {
     background-color: unset;
-    border: none!important;
     color: var(--interactive-active);
     font-family: var(--font-primary);
     font-size: 16px;
     font-weight: 600;
     height: auto;
-    outline: none!important;
-    padding: 0
+    min-width: 240px;
+    outline: none;
+    padding: 0 8px 0 0
+}
+
+.newInput__754bd,.newInput__754bd:hover {
+    border: none
 }
 
 .explainer__754bd {
@@ -12891,4 +12895,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=431951cd38c56bad.css.map*/
+/*# sourceMappingURL=602b0eed72eeb0c9.css.map*/
