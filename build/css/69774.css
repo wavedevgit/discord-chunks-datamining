@@ -1,6 +1,6 @@
 /**
   Module ID: 69774
-  Original File Name: b27424365fd5bbbf
+  Original File Name: a32dc70279ad6397
 **/
 .row__19fd1 {
     align-items: center;
@@ -704,11 +704,11 @@
     display: none
 }
 
-.messageTextButton__24502:has(+.messageIconButton__24502:last-child) {
+.messageTextButton__24502:has(+.messageIconButton__24502+span:last-child) {
     display: initial
 }
 
-.messageIconButton__24502:last-child {
+.messageIconButton__24502:has(+span:last-child) {
     display: none
 }
 
@@ -762,4 +762,4 @@
     gap: 4px
 }
 
-/*# sourceMappingURL=b27424365fd5bbbf.css.map*/
+/*# sourceMappingURL=a32dc70279ad6397.css.map*/

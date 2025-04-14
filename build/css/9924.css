@@ -1,6 +1,6 @@
 /**
   Module ID: 9924
-  Original File Name: cc7921e38c71d981
+  Original File Name: b9b909db2a05607f
 **/
 .formItem_d48a51 {
     margin-bottom: 24px;
@@ -243,21 +243,22 @@
     margin-top: 20px
 }
 
-.rejectionReasonContainer__6b102 {
+.actionContainer__6b102 {
     background-color: var(--background-modifier-accent);
     border: 1px solid var(--border-subtle);
     border-radius: var(--radius-sm);
-    display: flex;
-    flex-direction: row;
     gap: 12px;
     margin: 8px 16px 16px;
     padding: 12px
 }
 
+.actionContainer__6b102,.actionedInfo__6b102 {
+    display: flex;
+    flex-direction: row
+}
+
 .actionedInfo__6b102 {
     align-items: center;
-    display: flex;
-    flex-direction: row;
     gap: 8px
 }
 
@@ -609,4 +610,4 @@
     position: relative
 }
 
-/*# sourceMappingURL=cc7921e38c71d981.css.map*/
+/*# sourceMappingURL=b9b909db2a05607f.css.map*/
