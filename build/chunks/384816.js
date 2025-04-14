@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(250822),
   b = t(771362),
   m = t(280885),
-  I = t(819602),
-  g = t(78806),
+  g = t(819602),
+  I = t(78806),
   y = t(900927),
   h = t(678738),
   j = t(652853),
@@ -38,8 +38,7 @@ function Z(e) {
   } = (0, j.z)(), {
     trackUserProfileAction: S
   } = (0, f.KZ)(), T = null == Z ? void 0 : Z.guildId, C = (0, o.e7)([d.Z], () => null != T ? d.Z.getGuild(T) : null), A = (0, o.e7)([u.Z], () => u.Z.getGuildId()), L = (0, s.Y)({
-    userId: n.id,
-    location: "UserProfileModalInfo"
+    userId: n.id
   }), w = (0, o.e7)([a.default], () => a.default.locale), R = (0, b.Z)(n.id), M = (0, p.Z)(n.id);
   return (0, r.jsxs)(i.zJl, {
     fade: !0,
@@ -57,7 +56,7 @@ function Z(e) {
       headingColor: "header-secondary"
     }), L.length > 0 && (0, r.jsx)(h.Z, {
       heading: _.NW.string(_.t["Uv/eT0"]),
-      children: (0, r.jsx)(g.Z, {
+      children: (0, r.jsx)(I.Z, {
         applicationIds: L
       })
     }), (0, r.jsx)(h.Z, {
@@ -70,7 +69,7 @@ function Z(e) {
     }), R.length > 0 && (0, r.jsx)(h.Z, {
       heading: _.NW.string(_.t["3fe7U1"]),
       scrollIntoView: N === x.Tb.CONNECTIONS,
-      children: (0, r.jsx)(I.OA, {
+      children: (0, r.jsx)(g.OA, {
         connectedAccounts: R,
         className: O.connections,
         userId: n.id,
@@ -79,7 +78,7 @@ function Z(e) {
       })
     }), M.length > 0 && (0, r.jsx)(h.Z, {
       heading: _.NW.string(_.t.PHjkRE),
-      children: M.map(e => (0, r.jsx)(I.tH, {
+      children: M.map(e => (0, r.jsx)(g.tH, {
         className: O.appsConnections,
         applicationRoleConnection: e,
         locale: w,

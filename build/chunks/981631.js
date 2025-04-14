@@ -1269,7 +1269,8 @@ let eh = "@me",
     IGNORE_USER: e => "/users/@me/relationships/".concat(e, "/ignore"),
     SCHEDULED_MESSAGES: "/users/@me/scheduled-messages",
     SCHEDULED_MESSAGE: e => "/users/@me/scheduled-messages/".concat(e),
-    HOLIDAY_REDEEM_PRIZE: "/holidays/redeem-prize"
+    HOLIDAY_REDEEM_PRIZE: "/holidays/redeem-prize",
+    APPLIED_BOOST_MODIFY_END_DATE: e => "/debug/applied-boosts/".concat(e, "/ends-at")
   }),
   eS = Object.freeze({
     INDEX: "/",

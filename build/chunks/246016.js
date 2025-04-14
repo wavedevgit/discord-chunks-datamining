@@ -1,29 +1,25 @@
 /** Chunk was on 94989 **/
 r.d(t, {
-  Y: () => u
+  Y: () => o
 });
 var n = r(192379),
   l = r(442837),
   s = r(699516),
   i = r(594174),
-  a = r(372460),
-  c = r(320582);
-let o = [];
+  a = r(320582);
+let c = [];
 
-function u(e) {
+function o(e) {
   let {
-    userId: t,
-    location: r
-  } = e, u = (0, l.e7)([s.Z, i.default], () => {
+    userId: t
+  } = e, r = (0, l.e7)([s.Z, i.default], () => {
     var e;
     return s.Z.isFriend(t) || (null == (e = i.default.getUser(t)) ? void 0 : e.isProvisional)
-  }), d = (0, c.ML)(t), m = (0, a.wn)({
-    location: r
-  });
-  return n.useMemo(() => !m || u ? o : d.map(e => {
+  }), o = (0, a.ML)(t);
+  return n.useMemo(() => r ? c : o.map(e => {
     let {
       applicationId: t
     } = e;
     return t
-  }), [d, u, m])
+  }), [o, r])
 }

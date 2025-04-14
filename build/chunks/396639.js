@@ -274,7 +274,8 @@ let I = {
         analyticsSourceLocation: s,
         children: (0, r.jsx)(o.KB, {
           children: (0, r.jsx)(Z, S({
-            skuId: t
+            skuId: t,
+            analyticsLocations: a
           }, l))
         })
       })
