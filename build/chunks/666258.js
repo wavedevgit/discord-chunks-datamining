@@ -24,8 +24,8 @@ var l = n(200651),
   _ = n(626135),
   E = n(934415),
   S = n(572004),
-  T = n(971130),
-  b = n(366980),
+  b = n(971130),
+  T = n(366980),
   O = n(76234),
   y = n(981631),
   C = n(388032),
@@ -50,7 +50,7 @@ function Z(e) {
   return e
 }
 
-function A(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function A(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = e => {
+let A = e => {
     let {
       inviteIcon: t,
       channelIcon: n,
@@ -112,7 +112,7 @@ let w = e => {
       guildIcon: t.icon,
       iconSize: 32
     });
-    return (0, l.jsx)(w, {
+    return (0, l.jsx)(A, {
       inviteIcon: a,
       channelIcon: null == s ? null : (0, l.jsx)(s, {
         className: P.inviteTargetIcon,
@@ -164,7 +164,7 @@ let w = e => {
       guildIcon: n.icon,
       iconSize: 32
     });
-    return (0, l.jsx)(w, {
+    return (0, l.jsx)(A, {
       inviteIcon: a,
       heading: n.name,
       subheading: t
@@ -195,7 +195,7 @@ let w = e => {
         game: n,
         className: P.inviteIcon
       });
-    return (0, l.jsx)(w, {
+    return (0, l.jsx)(A, {
       inviteIcon: a,
       heading: r,
       subheading: s
@@ -240,7 +240,7 @@ function W(e) {
     htmlFor: a
   }) : null != o ? (t = h.P3F, n = {
     onClick: o
-  }) : (t = "div", n = {}), (0, l.jsx)(t, A(Z({
+  }) : (t = "div", n = {}), (0, l.jsx)(t, w(Z({
     className: P.advancedOption
   }, n), {
     children: (0, l.jsx)("div", {
@@ -262,13 +262,13 @@ function V(e) {
     disabled: N,
     hasSelection: f,
     options: E,
-    setOptions: w,
+    setOptions: A,
     isApplicationBypassAllowed: k,
     isGuestInviteAllowed: R,
     isTemporaryInviteAllowed: M,
     setError: V,
     analyticsLocation: U
-  } = e, [B, F] = i.useState(!1), [G, z] = i.useState(!1), H = i.useRef(null), [q] = (0, d.Wu)([j.Z], () => [j.Z.hideInstantInvites]), Y = (0, I.Dt)(), K = (0, I.Dt)(), X = (0, I.Dt)(), J = i.useMemo(() => x && null != r.vanityURLCode ? (0, b.Z)(r.vanityURLCode, !1) : null, [r, x]), Q = i.useCallback(async () => {
+  } = e, [F, B] = i.useState(!1), [G, z] = i.useState(!1), H = i.useRef(null), [q] = (0, d.Wu)([j.Z], () => [j.Z.hideInstantInvites]), Y = (0, I.Dt)(), K = (0, I.Dt)(), X = (0, I.Dt)(), J = i.useMemo(() => x && null != r.vanityURLCode ? (0, T.Z)(r.vanityURLCode, !1) : null, [r, x]), Q = i.useCallback(async () => {
     if (N) return;
     null !== H.current && clearTimeout(H.current);
     let e = !1;
@@ -276,7 +276,7 @@ function V(e) {
       var t, n;
       let l = await p();
       o()(null != l, "Invite key could not be determined.");
-      let i = (0, b.Z)(l);
+      let i = (0, T.Z)(l);
       (0, S.JG)(i), _.default.track(y.rMx.COPY_INSTANT_INVITE, {
         server: r.id,
         channel: null != (t = null == a ? void 0 : a.id) ? t : null,
@@ -288,30 +288,30 @@ function V(e) {
     } catch (e) {
       V(e)
     }
-    return e && (F(!0), H.current = setTimeout(() => {
-      F(!1)
+    return e && (B(!0), H.current = setTimeout(() => {
+      B(!1)
     }, 1e3)), () => {
       null !== H.current && clearTimeout(H.current)
     }
   }, [N, p, r, a, U, m, V]), $ = i.useCallback(e => {
-    w({
+    A({
       max_age: e
     })
-  }, [w]), ee = i.useCallback(e => {
-    w({
+  }, [A]), ee = i.useCallback(e => {
+    A({
       max_uses: e
     })
-  }, [w]), et = i.useCallback(e => {
-    E.flags === e ? w({
+  }, [A]), et = i.useCallback(e => {
+    E.flags === e ? A({
       flags: void 0
-    }) : w({
+    }) : A({
       flags: e
     })
-  }, [E, w]), en = i.useCallback(e => {
-    w({
+  }, [E, A]), en = i.useCallback(e => {
+    A({
       temporary: e
     })
-  }, [w]), el = i.useCallback(e => {
+  }, [A]), el = i.useCallback(e => {
     var t;
     let i = null == (t = e.currentTarget) ? void 0 : t.getBoundingClientRect(),
       {
@@ -322,7 +322,7 @@ function V(e) {
       let {
         default: e
       } = await n.e("84212").then(n.bind(n, 593851));
-      return t => (0, l.jsx)(e, A(Z({}, t), {
+      return t => (0, l.jsx)(e, w(Z({}, t), {
         initialOptions: E,
         onChangeMaxAge: $,
         onChangeMaxUses: ee
@@ -341,10 +341,10 @@ function V(e) {
         } = t;
         return n === e.max_uses
       });
-    return null == t || null == n ? null : t.value === T.ZP.INVITE_OPTIONS_FOREVER.value && n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.NW.string(C.t["5u4A6e"]) : t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.NW.formatToPlainString(C.t["Z5Vt5+"], {
+    return null == t || null == n ? null : t.value === b.ZP.INVITE_OPTIONS_FOREVER.value && n.value === b.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.NW.string(C.t["5u4A6e"]) : t.value !== b.ZP.INVITE_OPTIONS_FOREVER.value && n.value !== b.ZP.INVITE_OPTIONS_UNLIMITED.value ? C.NW.formatToPlainString(C.t["Z5Vt5+"], {
       maxAge: t.label,
       maxUses: n.label
-    }) : n.value === T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== T.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== T.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === T.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
+    }) : n.value === b.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value !== b.ZP.INVITE_OPTIONS_FOREVER.value ? t.label : n.value !== b.ZP.INVITE_OPTIONS_UNLIMITED.value && t.value === b.ZP.INVITE_OPTIONS_FOREVER.value ? n.label : null
   }(E);
   return (0, l.jsxs)("div", {
     className: s()(t, P.footer),
@@ -357,7 +357,7 @@ function V(e) {
       }), (0, l.jsx)(h.ua7, {
         position: "top",
         text: C.NW.string(C.t["4QuV7O"]),
-        children: e => (0, l.jsx)(h.P3F, A(Z({
+        children: e => (0, l.jsx)(h.P3F, w(Z({
           className: s()(P.settingsButton, {
             [P.settingsOpen]: G
           })
@@ -383,7 +383,7 @@ function V(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: C.NW.string(C.t.efLzgY),
-            children: e => (0, l.jsx)(h.idN, A(Z({}, e), {
+            children: e => (0, l.jsx)(h.idN, w(Z({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -409,7 +409,7 @@ function V(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: C.NW.string(C.t["jvd/LC"]),
-            children: e => (0, l.jsx)(h.idN, A(Z({}, e), {
+            children: e => (0, l.jsx)(h.idN, w(Z({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -429,7 +429,7 @@ function V(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: C.NW.string(C.t.pBOevb),
-            children: e => (0, l.jsx)(h.idN, A(Z({}, e), {
+            children: e => (0, l.jsx)(h.idN, w(Z({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -449,7 +449,7 @@ function V(e) {
           }), (0, l.jsx)(h.ua7, {
             position: "top",
             text: C.NW.string(C.t.cl1HNT),
-            children: e => (0, l.jsx)(h.idN, A(Z({}, e), {
+            children: e => (0, l.jsx)(h.idN, w(Z({}, e), {
               size: "xs",
               color: c.Z.colors.INTERACTIVE_NORMAL
             }))
@@ -466,7 +466,7 @@ function V(e) {
         position: "top",
         text: J,
         shouldShow: null !== J && !q,
-        children: e => (0, l.jsx)(h.zxk, A(Z({
+        children: e => (0, l.jsx)(h.zxk, w(Z({
           className: P.button,
           innerClassName: P.buttonInner,
           color: h.zxk.Colors.PRIMARY
@@ -476,7 +476,7 @@ function V(e) {
             null == e || null == (t = e.onClick) || t.call(e), Q()
           },
           disabled: N,
-          children: B ? (0, l.jsxs)(l.Fragment, {
+          children: F ? (0, l.jsxs)(l.Fragment, {
             children: [(0, l.jsx)(h.dz2, {
               size: "xs",
               color: "currentColor"

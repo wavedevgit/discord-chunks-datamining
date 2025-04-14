@@ -5,9 +5,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var c = n(481060),
-  l = n(239091),
-  o = n(108843),
-  i = n(100527),
+  o = n(239091),
+  i = n(108843),
+  l = n(100527),
   a = n(299206),
   u = n(398048),
   s = n(3689),
@@ -15,22 +15,22 @@ var c = n(481060),
   O = n(852245),
   f = n(367722),
   p = n(388032);
-let y = (0, o.Z)(function(e) {
+let y = (0, i.Z)(function(e) {
   let {
     channel: t,
     guild: n,
-    onSelect: o
-  } = e, i = (0, O.Z)(t), y = (0, f.Z)(t, n), d = (0, u.Z)(t, n), j = (0, s.Z)(t, n), g = (0, b.Z)(t), P = (0, a.Z)({
+    onSelect: i
+  } = e, l = (0, O.Z)(t), y = (0, f.Z)(t, n), d = (0, u.Z)(t, n), j = (0, s.Z)(t, n), g = (0, b.Z)(t), P = (0, a.Z)({
     id: t.id,
     label: p.NW.string(p.t.gFHI3t)
   });
   return (0, r.jsxs)(c.v2r, {
     navId: "channel-context",
-    onClose: l.Zy,
+    onClose: o.Zy,
     "aria-label": p.NW.string(p.t.Xm41aW),
-    onSelect: o,
+    onSelect: i,
     children: [(0, r.jsx)(c.kSQ, {
-      children: i
+      children: l
     }), (0, r.jsxs)(c.kSQ, {
       children: [y, d, j]
     }), (0, r.jsx)(c.kSQ, {
@@ -39,4 +39,4 @@ let y = (0, o.Z)(function(e) {
       children: P
     })]
   })
-}, [i.Z.CONTEXT_MENU, i.Z.CHANNEL_ACTIVITY_FEED_VOICE_MENU])
+}, [l.Z.CONTEXT_MENU, l.Z.CHANNEL_ACTIVITY_FEED_VOICE_MENU])

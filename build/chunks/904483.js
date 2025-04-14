@@ -4,14 +4,14 @@ n.d(t, {
 });
 var r = n(200651);
 n(192379);
-var l = n(442837),
-  i = n(481060),
+var i = n(442837),
+  l = n(481060),
   c = n(496675),
   a = n(981631),
   o = n(647086),
-  u = n(388032);
+  s = n(388032);
 
-function s(e) {
+function u(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -44,36 +44,36 @@ function d(e, t) {
 }
 
 function p(e) {
-  let t = (0, l.e7)([c.Z], () => c.Z.can(a.Plq.MANAGE_CHANNELS, e));
-  return __OVERLAY__ ? null : e.id === o._ ? (0, r.jsx)(i.sNh, {
+  let t = (0, i.e7)([c.Z], () => c.Z.can(a.Plq.MANAGE_CHANNELS, e));
+  return __OVERLAY__ ? null : e.id === o._ ? (0, r.jsx)(l.sNh, {
     id: "create-category",
-    label: u.NW.string(u.t["ISN+ND"]),
-    action: () => (0, i.ZDy)(async () => {
+    label: s.NW.string(s.t["ISN+ND"]),
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: e
       } = await n.e("1812").then(n.bind(n, 477782));
-      return t => (0, r.jsx)(e, s({}, t))
+      return t => (0, r.jsx)(e, u({}, t))
     })
-  }) : t ? [(0, r.jsx)(i.sNh, {
+  }) : t ? [(0, r.jsx)(l.sNh, {
     id: "create-channel",
-    label: u.NW.string(u.t["fUYU+v"]),
-    action: () => (0, i.ZDy)(async () => {
+    label: s.NW.string(s.t["fUYU+v"]),
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("7590"), n.e("45094"), n.e("7911")]).then(n.bind(n, 218613));
-      return n => (0, r.jsx)(t, d(s({}, n), {
+      return n => (0, r.jsx)(t, d(u({}, n), {
         channelType: a.d4z.GUILD_TEXT,
         guildId: e.id
       }))
     })
-  }, "create-channel"), (0, r.jsx)(i.sNh, {
+  }, "create-channel"), (0, r.jsx)(l.sNh, {
     id: "create-category",
-    label: u.NW.string(u.t["ISN+ND"]),
-    action: () => (0, i.ZDy)(async () => {
+    label: s.NW.string(s.t["ISN+ND"]),
+    action: () => (0, l.ZDy)(async () => {
       let {
         default: t
       } = await Promise.all([n.e("7590"), n.e("45094"), n.e("7911")]).then(n.bind(n, 218613));
-      return n => (0, r.jsx)(t, d(s({}, n), {
+      return n => (0, r.jsx)(t, d(u({}, n), {
         channelType: a.d4z.GUILD_CATEGORY,
         guildId: e.id
       }))
