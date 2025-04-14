@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: 1ed259488eeaaeb2
+  Original File Name: 4c9e91af7e819eb9
 **/
 .phoneFieldPopout__61a01 {
     width: 220px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 1rem;
+    font-size: 16px;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -2505,8 +2505,6 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .settingsTabBarItem_dc2e0e {
-    margin-right: 16px;
-    margin-left: 16px;
     padding-bottom: 14px;
     display: flex;
     align-items: center
@@ -10216,12 +10214,7 @@ html .invoiceCancelRow_b9f95d {
 }
 
 .tabBarItem_d6f9e9 {
-    padding-bottom: 16px;
-    margin-right: 16px
-}
-
-.tabBarItem_d6f9e9:not(:first-child) {
-    margin-left: 16px
+    padding-bottom: 16px
 }
 
 .newBadge_d6f9e9 {
@@ -10930,7 +10923,6 @@ div.nagbar_d74ef8 {
 
 .tabBar_f8303a {
     max-width: calc(100% - 60px);
-    gap: var(--spacing-32);
     border-bottom: 1px solid var(--background-modifier-accent)
 }
 
@@ -12673,49 +12665,78 @@ html:not(.visual-refresh) .phoneField_a0c54f .phoneFieldExpand_a0c54f {
     opacity: 1
 }
 
-.header_e4c2bc {
+.header_de8069 {
     background-color: var(--background-secondary);
-    border-radius: 8px;
-    padding: 16px
+    border-radius: var(--radius-sm)
 }
 
-.gameRelationships_e4c2bc {
-    display: flex
+.gameNamesHeader_de8069 {
+    gap: 24px;
+    justify-content: space-between;
+    padding: var(--spacing-8) var(--spacing-12);
+    min-height: 36px
 }
 
-.gameRelationshipsDetails_e4c2bc {
-    flex: 1
-}
-
-.gameRelationshipIcons_e4c2bc {
-    flex: 0;
+.gameIcons_de8069,.gameNamesHeader_de8069 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px
+    align-items: center
 }
 
-.divider_e4c2bc {
+.gameIcons_de8069 {
+    flex: 0;
+    flex-direction: row;
+    gap: var(--spacing-8);
+    padding: var(--spacing-12);
+    min-height: 56px
+}
+
+.divider_de8069 {
     width: 100%;
     height: 1px;
-    background-color: var(--divider-subtle);
-    margin: 8px 0
+    background-color: var(--divider-subtle)
 }
 
-.icon_e4c2bc {
+.icon_de8069 {
     height: 32px;
     width: 32px;
-    border-radius: 4px
+    border-radius: var(--radius-xs)
 }
 
-.manageGamesLink_e4c2bc {
+.moreIcon_de8069 {
+    justify-content: center;
+    background-color: var(--bg-base-tertiary)
+}
+
+.manageGamesLink_de8069,.moreIcon_de8069 {
     display: flex;
-    align-items: center;
+    align-items: center
+}
+
+.manageGamesLink_de8069 {
     cursor: pointer
 }
 
-.manageGamesChevron_e4c2bc {
+.manageGamesChevron_de8069 {
     margin-top: 1px
+}
+
+.emptyContainer_de8069 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-8);
+    padding: var(--spacing-48) 0;
+    border-radius: var(--radius-sm);
+    background-color: var(--background-secondary)
+}
+
+.noGamesConnectedText_de8069 {
+    text-transform: uppercase
+}
+
+.visual-refresh .emptyContainer_de8069,.visual-refresh .header_de8069 {
+    background-color: var(--background-surface-higher)
 }
 
 .radioGroup__963c3 {
@@ -17127,4 +17148,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=1ed259488eeaaeb2.css.map*/
+/*# sourceMappingURL=4c9e91af7e819eb9.css.map*/
