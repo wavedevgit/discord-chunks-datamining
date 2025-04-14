@@ -25,8 +25,8 @@ var l = n(120356),
   S = n(606925),
   P = n(719216),
   N = n(429589),
-  E = n(636245),
-  I = n(697761),
+  I = n(636245),
+  E = n(697761),
   Z = n(611459),
   x = n(544671),
   C = n(757182),
@@ -71,7 +71,7 @@ let L = e => {
     } = e, F = (0, s.e7)([b.default], () => {
       let e = b.default.getCurrentUser();
       return a()(null != e, "UserActivityActions: currentUser cannot be undefined"), e
-    }), Y = R === j.Y.STREAM_PREVIEW || null != o, B = (0, h.Z)(t), G = B || Y ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
+    }), Y = R === j.Y.STREAM_PREVIEW || null != o, G = (0, h.Z)(t), B = G || Y ? f.Z.Direction.HORIZONTAL : f.Z.Direction.VERTICAL;
     if ((null == t ? void 0 : t.application_id) === A.bO) {
       var z, H;
       return z = function(e) {
@@ -113,11 +113,11 @@ let L = e => {
         onAction: V
       })
     }
-    let J = G === f.Z.Direction.VERTICAL;
+    let J = B === f.Z.Direction.VERTICAL;
     return (0, r.jsx)(f.Z, {
       grow: 0,
       align: f.Z.Align.STRETCH,
-      direction: G,
+      direction: B,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
       className: i()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
       children: (() => {
@@ -135,7 +135,7 @@ let L = e => {
           onAction: V,
           Icon: O.Z
         }, "ConnectPlatformActivityButton");
-        if (B) {
+        if (G) {
           let e = (0, r.jsx)(x.Z, {
               activity: t,
               user: l,
@@ -160,7 +160,7 @@ let L = e => {
         }
         if ((0, m.dS)(t)) {
           let e = (0, m.rq)(t);
-          return null == e ? null : (0, r.jsx)(E.Z, {
+          return null == e ? null : (0, r.jsx)(I.Z, {
             guildId: e.guildId,
             channelId: e.channelId,
             color: M,
@@ -187,7 +187,7 @@ let L = e => {
             color: M,
             look: U,
             onAction: V
-          }, "join-activity-button"), (0, r.jsx)(I.Z, {
+          }, "join-activity-button"), (0, r.jsx)(E.Z, {
             activity: t,
             user: l,
             color: M,

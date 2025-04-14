@@ -1,6 +1,6 @@
 /**
   Module ID: 70371
-  Original File Name: f166854463cfd61b
+  Original File Name: de122ee735fa0b3d
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -2903,6 +2903,11 @@ h1.title_feb59c,h2.title_feb59c {
     margin-left: -1px;
     min-height: var(--custom-rtc-account-height);
     padding: var(--space-xs)
+}
+
+.visual-refresh .containerRtcOpened__37e49 {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0
 }
 
 .visual-refresh .avatarWrapper__37e49 {
@@ -17100,4 +17105,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=f166854463cfd61b.css.map*/
+/*# sourceMappingURL=de122ee735fa0b3d.css.map*/

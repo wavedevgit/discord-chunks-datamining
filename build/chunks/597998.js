@@ -26,8 +26,8 @@ var r = n(200651),
   S = n(314897),
   P = n(592125),
   N = n(979651),
-  E = n(574254),
-  I = n(374129),
+  I = n(574254),
+  E = n(374129),
   Z = n(639351),
   x = n(630388),
   C = n(51144),
@@ -88,7 +88,7 @@ function W(e) {
     voicePlatform: S,
     application: P,
     guildId: N,
-    channelId: E,
+    channelId: I,
     user: C,
     disconnected: k
   } = e, {
@@ -149,7 +149,7 @@ function W(e) {
     })
   }, "xbox")) : (j === A.YE.PLAYSTATION || S === w.wR.PLAYSTATION) && W.push((0, r.jsx)("div", {
     className: _.iconSpacing,
-    children: (0, r.jsx)(I.Z, {
+    children: (0, r.jsx)(E.Z, {
       className: o()(_.icon, h)
     })
   }, "playstation")), y && W.push((0, r.jsx)(s.DY3, {
@@ -178,7 +178,7 @@ function W(e) {
         application: P,
         iconClassName: h,
         guildId: N,
-        channelId: E,
+        channelId: I,
         userId: C.id
       }, "".concat(C.id, "-game"))
     })]
@@ -209,7 +209,7 @@ let M = l.forwardRef(function(e, t) {
       return l
     }(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay"]);
   let {
-    onClick: I,
+    onClick: E,
     onKeyDown: Z,
     onDoubleClick: x,
     onContextMenu: A,
@@ -220,8 +220,8 @@ let M = l.forwardRef(function(e, t) {
     collapsed: V,
     mute: F,
     serverMute: Y,
-    guildId: B,
-    nick: G,
+    guildId: G,
+    nick: B,
     isGuest: z,
     flipped: H,
     className: J,
@@ -240,23 +240,23 @@ let M = l.forwardRef(function(e, t) {
   return l.useEffect(() => {
     let e = !1,
       t = () => {
-        e !== E.Z.isOpen() && ((e = E.Z.isOpen()) || eo(!1))
+        e !== I.Z.isOpen() && ((e = I.Z.isOpen()) || eo(!1))
       };
-    return E.Z.addChangeListener(t), () => E.Z.removeChangeListener(t)
+    return I.Z.addChangeListener(t), () => I.Z.removeChangeListener(t)
   }, []), (0, r.jsx)(s.kL8, {
     ref: t,
     className: o()(J, {
       [_.voiceUser]: !0,
       [_.overlap]: X,
       [_.selected]: p,
-      [_.clickable]: null != I,
+      [_.clickable]: null != E,
       [_.userSmall]: d === T.ipw.SMALL,
       [_.userLarge]: d === T.ipw.LARGE,
       [_.disabled]: !p && f,
       [_.ringing]: q
     }),
     onClick: e => {
-      null == I || I(e, Q)
+      null == E || E(e, Q)
     },
     onDoubleClick: e => {
       null == x || x(e, Q)
@@ -271,7 +271,7 @@ let M = l.forwardRef(function(e, t) {
       null == M || M(e, Q)
     },
     onKeyDown: Z,
-    "aria-label": null != (n = null != K ? K : G) ? n : Q.username,
+    "aria-label": null != (n = null != K ? K : B) ? n : Q.username,
     focusProps: {
       offset: {
         right: 4
@@ -295,7 +295,7 @@ let M = l.forwardRef(function(e, t) {
           [_.avatarSpeaking]: R
         }),
         style: {
-          backgroundImage: "url(".concat(Q.getAvatarURL(B, d === T.ipw.LARGE ? 38 : 24), ")")
+          backgroundImage: "url(".concat(Q.getAvatarURL(G, d === T.ipw.LARGE ? 38 : 24), ")")
         }
       }), function() {
         var e, t;
@@ -304,7 +304,7 @@ let M = l.forwardRef(function(e, t) {
               [_.username]: !0,
               [_.usernameSpeaking]: !F && !Y && R
             }),
-            children: [null != G ? G : C.ZP.getName(Q), z ? (0, r.jsxs)("span", {
+            children: [null != B ? B : C.ZP.getName(Q), z ? (0, r.jsxs)("span", {
               className: _.guestSuffix,
               children: ["\xa0", D.NW.string(D.t["pFO/Pj"])]
             }) : ""]
@@ -312,7 +312,7 @@ let M = l.forwardRef(function(e, t) {
           l = {
             primaryGuild: Q.primaryGuild,
             userId: Q.id,
-            contextGuildId: B,
+            contextGuildId: G,
             isOverlay: O,
             disableTooltip: !0,
             className: o()(_.clanTag, O && _.isOverlay),
@@ -344,7 +344,7 @@ let M = l.forwardRef(function(e, t) {
             [_.optionsActive]: ei
           }),
           onClick: function(e) {
-            null != B && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, v.D)(e, Q, en, {
+            null != G && null != en && ((0, g.v)(ee, g.d.MORE), eo(!0), (0, v.D)(e, Q, en, {
               context: et
             }, (e, t) => {
               (0, b.o)({

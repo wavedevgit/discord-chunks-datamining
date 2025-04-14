@@ -69,7 +69,7 @@ function v(e) {
       } = e;
       return t !== j.ownerId
     }).length > 0
-  })), E = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [I, Z] = (0, u.wq)(E), x = (0, c.Aq)(), C = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
+  })), I = (0, l.e7)([p.Z], () => p.Z.getChannel(null == j ? void 0 : j.channelId)), [E, Z] = (0, u.wq)(I), x = (0, c.Aq)(), C = null != P && null != j && P.state !== g.jm8.ENDED && P.ownerId === j.ownerId, T = e => {
     null != j && (null == S || S(), a.default.selectVoiceChannel(j.channelId), C || (0, s.iV)(j, {
       forceMultiple: e
     }), x.dispatch(g.CkL.POPOUT_CLOSE), f.S.dispatch(g.CkL.MODAL_CLOSE), o.Z.popAll())
@@ -83,7 +83,7 @@ function v(e) {
   };
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(m.Z, h(y({
-      disabled: t || C || !I,
+      disabled: t || C || !E,
       onClick: () => T(!1)
     }, A), {
       fullWidth: !0,

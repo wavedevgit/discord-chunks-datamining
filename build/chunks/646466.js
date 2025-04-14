@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  O: () => j
+  O: () => y
 }), n(388685);
 var r = n(200651),
   a = n(192379),
@@ -35,7 +35,11 @@ let h = {
     label: "[none selected]",
     value: null
   },
-  p = () => {
+  p = {
+    label: "[preview all]",
+    value: null
+  },
+  b = () => {
     (0, l.nfh)(s.g) ? (0, l.Mr3)(s.g) : (0, l.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -46,7 +50,7 @@ let h = {
       onCloseRequest: () => (0, l.Mr3)(s.g)
     })
   },
-  b = () => {
+  f = () => {
     (0, l.nfh)(s.c) ? (0, l.Mr3)(s.c) : (0, l.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -57,7 +61,7 @@ let h = {
       onCloseRequest: () => (0, l.Mr3)(s.c)
     })
   },
-  f = () => {
+  _ = () => {
     let e = (0, o.lb)(),
       {
         previewProfileEffectId: t,
@@ -84,7 +88,7 @@ let h = {
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
-          onClick: b,
+          onClick: f,
           className: m.instructionsButton,
           children: (0, r.jsx)(l.idN, {
             color: l.TVs.colors.BG_BRAND
@@ -98,13 +102,13 @@ let h = {
       })]
     })
   },
-  _ = () => {
+  g = () => {
     let {
       previewAvatarDecorationId: e,
       setPreviewAvatarDecorationId: t
     } = (0, c.N9)(), {
       avatarDecorationAssets: n
-    } = (0, c.xq)(), i = a.useMemo(() => [h, ...n.map(e => ({
+    } = (0, c.xq)(), i = a.useMemo(() => [p, ...n.map(e => ({
       label: e.name,
       value: e.name
     }))], [n]);
@@ -114,7 +118,7 @@ let h = {
         size: 16
       }), (0, r.jsx)(l.X6q, {
         variant: "heading-md/bold",
-        children: "Preview Avatar Decoration"
+        children: "Preview Avatar Decorations"
       }), (0, r.jsx)(l.q4e, {
         options: i,
         value: e,
@@ -123,7 +127,7 @@ let h = {
       })]
     })
   },
-  g = e => {
+  v = e => {
     let {
       clearAssets: t,
       clearIgnoredFiles: n
@@ -171,7 +175,7 @@ let h = {
       })]
     })
   },
-  v = e => {
+  j = e => {
     let {
       ignoredFiles: t,
       handleClearIgnoredFiles: n
@@ -201,7 +205,7 @@ let h = {
       })]
     })
   },
-  j = () => {
+  y = () => {
     let {
       previewEnabled: e,
       setPreviewEnabled: t,
@@ -211,7 +215,7 @@ let h = {
       clearAssets: s,
       clearIgnoredFilenames: x,
       processAndUpsertAssets: h
-    } = (0, u.KI)(), b = a.useCallback(e => {
+    } = (0, u.KI)(), p = a.useCallback(e => {
       n(), h(e)
     }, [h, n]);
     return (0, r.jsxs)("div", {
@@ -219,7 +223,7 @@ let h = {
       children: [(0, r.jsx)(i.Z, {
         className: m.divider
       }), (0, r.jsx)(d.L, {
-        onDrop: b
+        onDrop: p
       }), (0, r.jsxs)("div", {
         className: m.previewToggleContainer,
         children: [(0, r.jsx)(l.rsf, {
@@ -231,7 +235,7 @@ let h = {
         }), (0, r.jsx)(l.zxk, {
           look: l.zxk.Looks.BLANK,
           size: l.zxk.Sizes.SMALL,
-          onClick: p,
+          onClick: b,
           className: m.instructionsButton,
           children: (0, r.jsx)(l.idN, {
             color: l.TVs.colors.BG_BRAND
@@ -240,10 +244,10 @@ let h = {
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Drop files in this panel to begin preview."
-      }), (0, r.jsx)(f, {}), (0, r.jsx)(_, {}), (0, r.jsx)(g, {
+      }), (0, r.jsx)(_, {}), (0, r.jsx)(g, {}), (0, r.jsx)(v, {
         clearAssets: s,
         clearIgnoredFiles: x
-      }), (0, r.jsx)(v, {
+      }), (0, r.jsx)(j, {
         ignoredFiles: o,
         handleClearIgnoredFiles: x
       }), (0, r.jsx)(l.LZC, {

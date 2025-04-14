@@ -47,13 +47,13 @@ function f(e) {
     message: t,
     usernameHook: i,
     compact: s
-  } = e, m = (0, c.ZP)(t), f = i(m), h = (0, l.I3)("GdmNameChangeSystemMessage", t.channel_id);
+  } = e, m = (0, c.ZP)(t), f = i(m), h = (0, l.I3)("GdmNameChangeSystemMessage", t.channel_id), g = "" === t.content ? d.t.AI1ZZm : d.t.geP3ra;
   return (0, r.jsx)(u.Z, {
     compact: s,
     className: p.channelNameChange,
     icon: n(819373),
     timestamp: t.timestamp,
-    children: h ? d.NW.format(d.t.geP3ra, {
+    children: h ? d.NW.format(g, {
       username: m.nick,
       usernameHook: f,
       channelName: t.content,

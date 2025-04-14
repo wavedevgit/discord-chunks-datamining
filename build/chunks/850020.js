@@ -33,5 +33,5 @@ function u(e) {
       h(O)
     }, g ? 100 : 1e3);
     return () => clearTimeout(e)
-  }, [O, g, f]), y
+  }, [O, g, f]), f ? O : y
 }

@@ -30,8 +30,8 @@ function P(e) {
     renderOutputDevices: n = !1,
     renderInputDevices: P = !1,
     renderInputModes: N = !1,
-    renderInputVolume: E = !1,
-    renderOutputVolume: I = !1,
+    renderInputVolume: I = !1,
+    renderOutputVolume: E = !1,
     renderDeafen: Z = !1,
     simplified: x = !1,
     onSelect: C,
@@ -70,7 +70,7 @@ function P(e) {
         label: j.NW.string(j.t["pS+K2N"]),
         children: L
       }) : null, (0, r.jsxs)(a.kSQ, {
-        children: [E ? W : null, I ? M : null, x ? (0, r.jsx)(a.Clw, {}) : null, x && Z ? (0, r.jsx)(a.S89, {
+        children: [I ? W : null, E ? M : null, x ? (0, r.jsx)(a.Clw, {}) : null, x && Z ? (0, r.jsx)(a.S89, {
           id: "deafen",
           label: j.NW.string(j.t.wjcRFR),
           action: () => s.Z.toggleSelfDeaf({

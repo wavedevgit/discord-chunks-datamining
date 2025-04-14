@@ -410,18 +410,21 @@ class e9 extends i.PureComponent {
   render() {
     let {
       currentUser: e,
-      nameplate: t
-    } = this.props, n = this.state.hovered;
+      nameplate: t,
+      voiceChannel: n
+    } = this.props, i = this.state.hovered;
     return null == e ? null : (0, r.jsx)(f.Wdt, {
       children: e => (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
           ref: this.containerRef,
-          className: eQ.container,
+          className: a()(eQ.container, {
+            [eQ.containerRtcOpened]: null != n
+          }),
           onMouseEnter: this.handleMouseEnter,
           onMouseLeave: this.handleMouseLeave,
           children: [(0, r.jsx)(ei.Z, {
             nameplate: t,
-            hovered: n,
+            hovered: i,
             placement: er.i.ACCOUNT
           }), this.renderNameZone(e), (0, r.jsx)(e5, e1(e0({}, this.props, this.state), {
             accountContainerRef: this.containerRef,
