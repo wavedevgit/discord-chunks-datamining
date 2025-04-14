@@ -28,7 +28,7 @@ var r, i = n(200651),
   I = n(981631),
   N = n(223203);
 
-function E(e, t, n) {
+function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -37,14 +37,14 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Z(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      Z(e, t, n[t])
     })
   }
   return e
@@ -71,11 +71,11 @@ function A(e) {
   switch (e) {
     case "height":
     case "opacity":
-      return Z({
+      return E({
         duration: 150
       }, T);
     case "scale":
-      return Z({}, T);
+      return E({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -189,7 +189,7 @@ class D extends(r = l.PureComponent) {
             },
             children: (0, i.jsx)(a.mh, {
               id: e.id,
-              children: r => (0, i.jsx)(c.LYs, Z({
+              children: r => (0, i.jsx)(c.LYs, E({
                 to: I.Z5c.CHANNEL(I.ME, e.id),
                 onMouseEnter: () => this.setState({
                   hovered: !0
@@ -217,7 +217,7 @@ class D extends(r = l.PureComponent) {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "state", {
+    super(...e), Z(this, "state", {
       hovered: !1,
       animating: !0,
       controller: new o.Controller({
@@ -226,7 +226,7 @@ class D extends(r = l.PureComponent) {
         opacity: 0,
         config: A
       })
-    }), E(this, "handleContextMenu", e => {
+    }), Z(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, r = t.type === I.d4z.DM ? O.default.getUser(t.getRecipientId()) : null;
@@ -234,7 +234,7 @@ class D extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("53912"), n.e("56826"), n.e("45903")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, w(E({}, n), {
           channel: t,
           user: r
         }))
@@ -242,7 +242,7 @@ class D extends(r = l.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("53912"), n.e("2016")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, w(Z({}, n), {
+        return n => (0, i.jsx)(e, w(E({}, n), {
           channel: t,
           selected: !1
         }))
@@ -250,7 +250,7 @@ class D extends(r = l.PureComponent) {
     })
   }
 }
-E(D, "defaultProps", {
+Z(D, "defaultProps", {
   badge: 0,
   audio: !1,
   video: !1,
@@ -277,7 +277,7 @@ let R = l.forwardRef(function(e, t) {
   O && (j = o === I.WtW.VOICE, C = o === I.WtW.VIDEO);
   let x = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE),
     S = (0, f.Q3)("DirectMessage");
-  return (0, i.jsx)(D, w(Z({}, e), {
+  return (0, i.jsx)(D, w(E({}, e), {
     ref: t,
     channelName: r,
     unread: p > 0,

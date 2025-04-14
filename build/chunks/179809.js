@@ -36,8 +36,8 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       mediaState: u,
       mentionCount: g = 0,
       isMentionLowImportance: N,
-      unread: E = !1,
-      defaultFolderName: Z,
+      unread: Z = !1,
+      defaultFolderName: E,
       useCircleMask: w = !1,
       draggable: T = !1,
       sorting: A = !1,
@@ -52,7 +52,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       id: U,
       name: W,
       children: V
-    } = t, H = (0, h.Q3)("FolderItem"), [F, z] = i.useState(!1), [Y, q] = i.useState(!1), K = F || Y;
+    } = t, F = (0, h.Q3)("FolderItem"), [H, z] = i.useState(!1), [Y, q] = i.useState(!1), K = H || Y;
     i.useEffect(() => {
       A && z(!1)
     }, [A]);
@@ -74,7 +74,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
       q(e)
     }, []), $ = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && L()
-    }, [L, s]), ee = null != W && "" !== W ? W : null != Z && "" !== Z ? Z : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
+    }, [L, s]), ee = null != W && "" !== W ? W : null != E && "" !== E ? E : C.NW.string(C.t.xV9hVl), et = (0, c.Ie)("".concat(U)), en = "folder-items-".concat(U), er = function(e) {
       let t = (0, d.dQu)(d.TVs.modules.guildbar.AVATAR_SIZE),
         n = (0, h.Q3)("FolderItem.useHeight"),
         r = (0, d.dQu)(d.TVs.space.SPACE_XS),
@@ -98,9 +98,9 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
     }), el = i.useCallback(e => null == n ? void 0 : n(U, e), [n, U]), eo = (0, r.jsxs)(O.H, {
       children: [(0, r.jsx)(b.Z, {
         disabled: Q || s,
-        hovered: F,
+        hovered: H,
         selected: l,
-        unread: E,
+        unread: Z,
         className: S.pill
       }), (0, r.jsx)(j.Z, {
         text: ee,
@@ -155,7 +155,7 @@ let P = (0, g.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
         } = n;
         return t && (0, r.jsx)(I, {
           as: "ul",
-          gap: H ? "xs" : 0,
+          gap: F ? "xs" : 0,
           id: en,
           style: {
             height: e.height.to(e => e * er),

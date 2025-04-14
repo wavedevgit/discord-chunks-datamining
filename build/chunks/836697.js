@@ -120,10 +120,10 @@ function C(e) {
   i.useEffect(() => {
     l && !S && d.Z.fetchRequestToJoinGuilds()
   }, [l, S]);
-  let E = null != x && P.includes(x);
+  let Z = null != x && P.includes(x);
   return (i.useEffect(() => {
-    !l && E && I !== x && C(!0)
-  }, [l, E, I, x]), 0 === P.length) ? null : (0, r.jsx)(j, {
+    !l && Z && I !== x && C(!0)
+  }, [l, Z, I, x]), 0 === P.length) ? null : (0, r.jsx)(j, {
     onActivate: t,
     children: (0, r.jsx)("div", {
       className: o()({
@@ -132,8 +132,8 @@ function C(e) {
       children: (0, r.jsx)(_.Z, {
         folderNode: N,
         expanded: l,
-        useCircleMask: !l && !E,
-        selected: E,
+        useCircleMask: !l && !Z,
+        selected: Z,
         draggable: !1,
         sorting: !1,
         onExpandCollapse: () => {

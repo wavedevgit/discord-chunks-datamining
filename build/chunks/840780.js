@@ -28,8 +28,8 @@ var r = n(200651),
   P = n(413523),
   I = n(933557),
   N = n(194082),
-  E = n(550532),
-  Z = n(436774),
+  Z = n(550532),
+  E = n(436774),
   w = n(605236),
   T = n(243778),
   A = n(594190),
@@ -43,8 +43,8 @@ var r = n(200651),
   U = n(690221),
   W = n(231664),
   V = n(759198),
-  H = n(970731),
-  F = n(131704),
+  F = n(970731),
+  H = n(131704),
   z = n(199902),
   Y = n(314897),
   q = n(592125),
@@ -174,7 +174,7 @@ class ey extends i.PureComponent {
           className: ef.perksDemoContainer,
           children: [(0, r.jsx)(p.SrA, {
             size: "xxs",
-            color: Z.JX.PREMIUM_TIER_2
+            color: E.JX.PREMIUM_TIER_2
           }), (0, r.jsx)(V.Z, {
             className: ef.perksDemoText,
             variant: "text-xxs/semibold",
@@ -228,7 +228,7 @@ class ey extends i.PureComponent {
         size: D.Z.Sizes.SMALL
       }), (0, r.jsxs)("div", {
         className: ef.info,
-        children: [t, null != l && (0, F.Qm)(l.type) ? b : (0, r.jsx)(e_, {
+        children: [t, null != l && (0, H.Qm)(l.type) ? b : (0, r.jsx)(e_, {
           timestamps: f
         })]
       })]
@@ -238,8 +238,8 @@ class ey extends i.PureComponent {
       align: "center",
       spacing: 16,
       shouldShow: u,
-      renderPopout: () => (0, r.jsx)(H.ZP, {
-        color: H.BD.PRIMARY,
+      renderPopout: () => (0, r.jsx)(F.ZP, {
+        color: F.BD.PRIMARY,
         header: eh.NW.string(eh.t.ON4pBg),
         content: eh.NW.string(eh.t["8PAfND"]),
         buttonCTA: eh.NW.string(eh.t.WAI6xs),
@@ -251,7 +251,7 @@ class ey extends i.PureComponent {
         onClick: () => {
           d(ep.L.USER_DISMISS)
         },
-        caretPosition: H.DF.BOTTOM_CENTER
+        caretPosition: F.DF.BOTTOM_CENTER
       }),
       children: e => (0, r.jsx)(p.P3F, eb(em({}, e), {
         className: o()(ef.gameWrapper, ef.clickableGameWrapper, {
@@ -303,10 +303,10 @@ class ey extends i.PureComponent {
       } = this.props;
       s()(null != t, "Channel is null during navigation click"), s()(null != n, "Activity null during navigation click"), g.Z.channelListScrollTo(null != (e = t.guild_id) ? e : eu.ME, t.id), !(0, y.R)({
         isContextless: n.location.kind === c.E.CONTEXTLESS
-      }) && ((0, F.vd)(t.type) && f.Z.selectParticipant(t.id, (0, P.gN)({
+      }) && ((0, H.vd)(t.type) && f.Z.selectParticipant(t.id, (0, P.gN)({
         applicationId: n.applicationId,
         instanceId: n.compositeInstanceId
-      })), (0, F.Qm)(t.type) && (0, O.tg)(ed.Ez.PANEL))
+      })), (0, H.Qm)(t.type) && (0, O.tg)(ed.Ez.PANEL))
     })
   }
 }
@@ -346,17 +346,17 @@ let ev = (0, b.Z)(function(e) {
     }),
     x = (0, u.e7)([Q.Z, X.Z, K.ZP], () => null != s ? L.JL(s, Q.Z, X.Z, !1) : !!C || null != n && L.h_(K.ZP.getChannels(n), Q.Z, X.Z).length > 0),
     [P] = (0, S.Z)([null != (t = null != m && null != m.id ? m.id : null != a && null != a.id ? a.id : null != O ? O.applicationId : void 0) ? t : ""]),
-    N = (0, u.e7)([E.Z], () => E.Z.getFakeGameData()),
-    Z = (0, u.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
-    D = (0, v.Z0)() && null != Z && (0, y.R)({
-      isContextless: Z.location.kind === c.E.CONTEXTLESS
+    N = (0, u.e7)([Z.Z], () => Z.Z.getFakeGameData()),
+    E = (0, u.e7)([j.ZP], () => j.ZP.getCurrentEmbeddedActivity()),
+    D = (0, v.Z0)() && null != E && (0, y.R)({
+      isContextless: E.location.kind === c.E.CONTEXTLESS
     }),
     M = (0, u.e7)([J.Z], () => (0, k.Z)(J.Z) && (0, el.isWindows)()),
     G = (0, u.e7)([$.Z], () => null != o ? $.Z.findActivity(o, e => e.type === eu.IIU.PLAYING) : null),
     U = null != g && g.ownerId === o && g.state !== eu.jm8.ENDED,
     V = (0, u.e7)([en.default, ee.Z], () => null != h ? (0, I.F6)(h, en.default, ee.Z) : void 0),
-    H = (0, W.Z)(),
-    [F, eo] = i.useState(!1),
+    F = (0, W.Z)(),
+    [H, eo] = i.useState(!1),
     {
       showsActivityPopoutQuickRefocusNUX: ea,
       markActivityPopoutQuickRefocusNUXAsDismissed: es
@@ -391,8 +391,8 @@ let ev = (0, b.Z)(function(e) {
     streamMetadata: m,
     channelName: V,
     guildForConnectedChannel: f,
-    streamQualityIndicator: H,
-    isForceShowSharingPopout: F,
+    streamQualityIndicator: F,
+    isForceShowSharingPopout: H,
     setIsForceShowSharingPopout: eo,
     showsActivityPopoutQuickRefocusNUX: ea,
     markActivityPopoutQuickRefocusNUXAsDismissed: es

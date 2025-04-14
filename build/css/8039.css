@@ -1,6 +1,6 @@
 /**
   Module ID: 8039
-  Original File Name: a425827316934f9f
+  Original File Name: 40793b74ecd8ceee
 **/
 .wrapper__00943 {
     background-color: var(--background-secondary);
@@ -2084,6 +2084,10 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     background-color: var(--background-modifier-accent)
 }
 
+.fullWidth__252b6 {
+    width: 100%
+}
+
 .visual-refresh .guildSeparator__252b6 {
     height: 1px;
     background-color: var(--app-border-frame)
@@ -2247,9 +2251,22 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 }
 
 .itemsContainer_ef3116,.tree_ef3116 {
-    display: flex;
-    flex-direction: column;
     height: 100%
+}
+
+.itemsContainer_ef3116,.topSection_ef3116,.tree_ef3116 {
+    display: flex;
+    flex-direction: column
+}
+
+.topSection_ef3116 {
+    padding-bottom: 8px;
+    gap: 8px
+}
+
+.bottomSection_ef3116 {
+    overflow: hidden;
+    position: relative
 }
 
 .scroller_ef3116 {
@@ -2337,6 +2354,11 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 .visual-refresh .scroller_ef3116 {
     padding-bottom: var(--space-xs);
     padding-top: 0
+}
+
+.visual-refresh .scrollerBottomSection_ef3116 {
+    height: 100%;
+    padding-top: var(--space-xs)
 }
 
 .visual-refresh .unreadMentionsFixedFooter_ef3116 {
@@ -6026,4 +6048,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     gap: var(--space-4)
 }
 
-/*# sourceMappingURL=a425827316934f9f.css.map*/
+/*# sourceMappingURL=40793b74ecd8ceee.css.map*/

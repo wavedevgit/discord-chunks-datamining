@@ -76,9 +76,9 @@ function S(e) {
         C(!1), P(c)
       }
     }, "animate-always"),
-    E = y ? N : void 0;
+    Z = y ? N : void 0;
   (y || S) && (t = (0, r.jsx)(a.animated.div, {
-    style: E,
+    style: Z,
     className: v.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
       size: u ? "sm" : "md",
@@ -88,7 +88,7 @@ function S(e) {
       }
     })
   })), (y || !S) && (n = (0, r.jsx)(a.animated.div, {
-    style: E,
+    style: Z,
     className: v.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(x, {
       index: t,
@@ -96,12 +96,12 @@ function S(e) {
       animate: o
     }, e))
   }));
-  let Z = {
+  let E = {
     backgroundColor: u && m ? d.TVs.colors.BG_MOD_SUBTLE.css : (0, s.br)(g, .4)
   };
   return (0, r.jsxs)("div", {
     "aria-hidden": !0,
-    style: c ? void 0 : Z,
+    style: c ? void 0 : E,
     className: v.folderIconWrapper,
     children: [t, n]
   })
@@ -128,7 +128,7 @@ function P(e) {
     treeItemProps: {
       onFocus: N
     }
-  } = e, E = function(e, t) {
+  } = e, Z = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -142,7 +142,7 @@ function P(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e.treeItemProps, ["onFocus"]), [Z, w] = i.useState(!1), T = i.useCallback(() => {
+  }(e.treeItemProps, ["onFocus"]), [E, w] = i.useState(!1), T = i.useCallback(() => {
     c || w(!0), null == P || P(!0)
   }, [c, P]), A = i.useCallback(() => {
     c || w(!1), null == P || P(!1)
@@ -178,7 +178,7 @@ function P(e) {
       return e
     }({
       className: o()(v.folder, {
-        [v.hover]: Z
+        [v.hover]: E
       }),
       onClick: C,
       onContextMenu: x,
@@ -195,14 +195,14 @@ function P(e) {
       focusProps: {
         enabled: !1
       }
-    }, E), n = n = {
+    }, Z), n = n = {
       role: "treeitem",
       children: null != j ? (0, r.jsx)("div", {
         className: o()(v.expandedFolderIconWrapper, O),
         children: j
       }) : (0, r.jsx)(S, {
         folderNode: l,
-        hovered: Z,
+        hovered: E,
         expanded: s
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

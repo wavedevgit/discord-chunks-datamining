@@ -33,8 +33,8 @@ function P(e, t, n) {
 let I = i.memo(function(e) {
   let t, l, d, I, {
       stream: N,
-      canGoLive: E,
-      guildId: Z,
+      canGoLive: Z,
+      guildId: E,
       isStreaming: w,
       channel: T,
       canStream: A,
@@ -68,12 +68,12 @@ let I = i.memo(function(e) {
         showFeedback: !0
       })
     }, [B]),
-    H = i.useCallback(() => {
+    F = i.useCallback(() => {
       (0, _.Z)(N)
     }, [N]),
-    F = i.useCallback(() => {
+    H = i.useCallback(() => {
       let e = null != T && (0, y.vd)(T.type) ? T : null,
-        t = null != e ? e.getGuildId() : Z;
+        t = null != e ? e.getGuildId() : E;
       if (G && null != D && null != v.Z.getVoiceChannelId()) {
         (0, m.s)("Activity Panel"), (0, b.Z)(D.pid);
         return
@@ -117,16 +117,16 @@ let I = i.memo(function(e) {
           }), i))
         }
       })
-    }, [T, Z, D, G]),
+    }, [T, E, D, G]),
     z = (null != D || null == R || (0, u.R)({
       isContextless: R.location.kind === a.E.CONTEXTLESS
-    })) && (w || E) ? (w ? (t = !1, l = () => {
-      H(), (0, f.v)(B, f.d.STREAM, !1)
+    })) && (w || Z) ? (w ? (t = !1, l = () => {
+      F(), (0, f.v)(B, f.d.STREAM, !1)
     }, d = s.g5r, I = x.NW.string(x.t.S5anIS)) : A ? (t = !1, l = () => {
-      F(), (0, f.v)(B, f.d.STREAM, !0)
+      H(), (0, f.v)(B, f.d.STREAM, !0)
     }, d = s.hGI, I = null != D ? x.NW.formatToPlainString(x.t.AB5gT0, {
       game: D.name
-    }) : x.NW.string(x.t.FeUKeH)) : (t = !0, l = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? x.NW.string(x.t.uQn9Bw) : null != Z ? x.NW.string(x.t.fBXEoK) : x.NW.string(x.t.n3feND)), (0, r.jsx)("div", {
+    }) : x.NW.string(x.t.FeUKeH)) : (t = !0, l = null, d = s.hGI, I = null != T && (0, y.vd)(T.type) ? x.NW.string(x.t.uQn9Bw) : null != E ? x.NW.string(x.t.fBXEoK) : x.NW.string(x.t.n3feND)), (0, r.jsx)("div", {
       className: S.panelButtonContainer,
       children: (0, r.jsx)(j.Z, {
         tooltipText: I,

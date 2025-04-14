@@ -204,7 +204,7 @@ function N(e) {
   })
 }
 
-function E() {
+function Z() {
   let e = h.G6.useSetting();
   return (0, i.jsxs)(x, {
     children: [(0, i.jsx)(C, {
@@ -221,7 +221,7 @@ function E() {
   })
 }
 
-function Z(e) {
+function E(e) {
   let {
     closePopout: t
   } = e;
@@ -296,9 +296,9 @@ function A(e) {
         closePopout: n
       });
     case 4:
-      return (0, i.jsx)(E, {});
+      return (0, i.jsx)(Z, {});
     case 5:
-      return (0, i.jsx)(Z, {
+      return (0, i.jsx)(E, {
         closePopout: n
       });
     case 6:
