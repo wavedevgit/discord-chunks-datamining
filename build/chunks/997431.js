@@ -1,12 +1,15 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  M: () => i,
-  u: () => o
+  MP: () => a,
+  lc: () => l,
+  up: () => s
 });
-var r = n(981631);
+var r = n(131704),
+  i = n(411198),
+  o = n(981631);
 
-function i(e, t) {
+function a(e, t) {
   if (null == e || "" === e) return null;
   let n = new Date(e);
   return !(n instanceof Date) || isNaN(n.getTime()) ? null : n.toLocaleDateString(t, {
@@ -15,6 +18,12 @@ function i(e, t) {
   })
 }
 
-function o(e) {
-  return e.hasFeature(r.oNc.GUILD_TAGS)
+function s(e) {
+  return e.hasFeature(o.oNc.GUILD_TAGS)
+}
+
+function l(e) {
+  if (null == e.guild || (0, i.Qs)(e.guild).hasFeature(o.oNc.HUB)) return !1;
+  let t = (null == e ? void 0 : e.channel) != null ? (0, r.jD)(e.channel) : null;
+  return null == t || !t.isGuildVocal()
 }
