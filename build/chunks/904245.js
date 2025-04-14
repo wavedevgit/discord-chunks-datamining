@@ -29,8 +29,8 @@ var r = n(278074),
   N = n(409059),
   A = n(264229),
   C = n(413605),
-  P = n(366980),
-  R = n(779832),
+  R = n(366980),
+  P = n(779832),
   w = n(786761),
   D = n(459618),
   L = n(541288),
@@ -142,7 +142,7 @@ function eC(e) {
       type: t,
       code: l
     } = e;
-    if (t === m.g.INVITE) eP({
+    if (t === m.g.INVITE) eR({
       inviteKey: l,
       channelId: n,
       messageId: r,
@@ -185,7 +185,7 @@ function eC(e) {
   })
 }
 
-function eP(e) {
+function eR(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -234,7 +234,7 @@ function eP(e) {
   }
 }
 
-function eR(e, t, n, r, i) {
+function eP(e, t, n, r, i) {
   (0, ef.Q_)(e).forEach(e => {
     let o = en.Z.getChannel(t);
     null != o && c.ZP.trackWithMetadata(eg.rMx.GIFT_CODE_SENT, {
@@ -684,7 +684,7 @@ let eD = {
       let o = await (0, K.Z)(e);
       if (null != o) return eL.sendMessage(o, t, r, i);
       let a = () => eL._sendMessage(e, t, i),
-        s = R.ZP.backgroundify(a, void 0),
+        s = P.ZP.backgroundify(a, void 0),
         l = null != (n = i.nonce) ? n : (0, M.r)();
       return (i = eI(ev({}, i), {
         nonce: l
@@ -749,7 +749,7 @@ let eD = {
       return ev({}, t, n, r, i)
     },
     sendInvite(e, t, n, r, i) {
-      let o = (0, P.Z)(t);
+      let o = (0, R.Z)(t);
       return null != i && (o = "".concat(i, "\n").concat(o)), eL._sendMessage(e, {
         content: o,
         tts: !1,
@@ -856,19 +856,19 @@ let eD = {
       N && (c = A, O = (0, ed.pj)(O, eg.iLy.SUPPRESS_NOTIFICATIONS));
       let C = (null == (r = n.messageReference) ? void 0 : r.type) === eg.Uvt.FORWARD;
       if ("" === c && null == _ && null == m && null == y && null == v && !C) return Promise.resolve();
-      let P = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
-        R = null != (o = n.nonce) ? o : (0, M.r)(),
-        w = R;
+      let R = null != E ? eg.uaV.REPLY : eg.uaV.DEFAULT,
+        P = null != (o = n.nonce) ? o : (0, M.r)(),
+        w = P;
       if (!1 !== n.eagerDispatch) {
         let t = (0, x.ZP)({
           channelId: e,
           content: c,
           tts: f,
-          type: P,
+          type: R,
           messageReference: E,
           allowedMentions: b,
           flags: 0 !== O ? O : void 0,
-          nonce: R,
+          nonce: P,
           poll: (0, B.x9)(y)
         });
         (0, U.EL)(e, t.id), null != m && (t.sticker_items = m.map(e => Q.Z.getStickerById(e)).filter(e => null != e)), eL.receiveMessage(e, t, !0, n)
@@ -887,7 +887,7 @@ let eD = {
         message: {
           channelId: e,
           content: c,
-          nonce: R,
+          nonce: P,
           tts: f,
           message_reference: E,
           allowed_mentions: b,
@@ -942,7 +942,7 @@ let eD = {
                 joinRequestUserId: n
               })
             }
-            D.Z.recordMessageSendApiResponse(R), a.Z.dispatch({
+            D.Z.recordMessageSendApiResponse(P), a.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: el.S.SendMessage,
               channelId: e
@@ -964,7 +964,7 @@ let eD = {
               messageId: s.body.id,
               location: null != p ? p : "chat_input",
               suggested: h
-            }), eR(c, e, s.body.id, null != p ? p : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), t(s)
+            }), eP(c, e, s.body.id, null != p ? p : "chat_input", !!n.isGiftLinkSentOnBehalfOfUser), t(s)
           } else {
             var f;
             eS.log("Failed to send message", {
@@ -1143,6 +1143,6 @@ let eD = {
         confirmText: eb.NW.string(eb.t.BddRzc)
       })
     }),
-    trackInvite: eP
+    trackInvite: eR
   },
   ex = eL

@@ -58,9 +58,9 @@ function O(e) {
     location: "UserSettingsAuthedApps"
   }, {
     autoTrackExposure: !0
-  }).enabled, C = (0, o.e7)([g.Z], () => g.Z.getUserProfile(t.id)), P = null == C ? void 0 : C.application, R = (0, f.Z)({
+  }).enabled, C = (0, o.e7)([g.Z], () => g.Z.getUserProfile(t.id)), R = null == C ? void 0 : C.application, P = (0, f.Z)({
     user: t,
-    application: null != P ? P : void 0,
+    application: null != R ? R : void 0,
     guildId: n,
     onItemClick: () => {
       S({
@@ -103,17 +103,17 @@ function O(e) {
       analyticsLocations: T
     })
   }), x = (0, d.Z)({
-    id: null == P ? void 0 : P.id,
+    id: null == R ? void 0 : R.id,
     label: b.NW.string(b.t["+NP/b2"]),
     onSuccess: () => S({
       action: "COPY_APP_ID",
       analyticsLocations: T
     })
   }), M = [
-    [y], A ? [R] : [],
+    [y], A ? [P] : [],
     [D, w, L],
     [(0, u.Z)({
-      application: P,
+      application: R,
       label: b.NW.string(b.t.WqhZsr),
       onSuccess: () => S({
         action: "COPY_APP_LINK",

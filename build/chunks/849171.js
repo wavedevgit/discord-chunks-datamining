@@ -34,8 +34,8 @@ var r, l = n(200651),
   Z = n(890280),
   x = n(835473),
   N = n(522474),
-  P = n(314897),
-  w = n(819640),
+  w = n(314897),
+  P = n(819640),
   R = n(594174),
   A = n(823379),
   T = n(5192),
@@ -99,7 +99,7 @@ function Y(e) {
     application: a,
     channel: E,
     width: h
-  } = e, v = U(h), [S] = W(h), b = (0, u.Wu)([R.default, P.default], () => Array.from(r).map(e => (0, p.J)(e, P.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), y = (0, u.e7)([f.ZP], () => {
+  } = e, v = U(h), [S] = W(h), b = (0, u.Wu)([R.default, w.default], () => Array.from(r).map(e => (0, p.J)(e, w.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), y = (0, u.e7)([f.ZP], () => {
     var e;
     return null != (e = f.ZP.getEmbeddedActivitiesForChannel(E.id).find(e => e.applicationId === a.id)) ? e : f.ZP.getEmbeddedActivitiesForStartingChannel(E.id).find(e => e.applicationId === a.id)
   }), {
@@ -108,7 +108,7 @@ function Y(e) {
     userId: null == (t = R.default.getCurrentUser()) ? void 0 : t.id,
     channelId: E.id,
     application: a
-  }) === g.Fw.CAN_JOIN, N = null != (n = E.getGuildId()) ? n : void 0, w = i.useId(), M = a.id, L = i.useMemo(() => ({
+  }) === g.Fw.CAN_JOIN, N = null != (n = E.getGuildId()) ? n : void 0, P = i.useId(), M = a.id, L = i.useMemo(() => ({
     channel: E,
     type: "channel"
   }), [E]), {
@@ -116,7 +116,7 @@ function Y(e) {
   } = (0, Z.Z)({
     applicationId: M,
     context: L,
-    launchingComponentId: w
+    launchingComponentId: P
   });
   return (0, l.jsxs)("div", {
     className: D.splash,
@@ -153,7 +153,7 @@ function Y(e) {
             activityChannelId: E.id,
             locationObject: I.location,
             analyticsLocations: O,
-            componentId: w,
+            componentId: P,
             instanceId: y.compositeInstanceId,
             isContextlessActivity: y.location.kind === s.E.CONTEXTLESS
           })
@@ -186,16 +186,16 @@ function H(e) {
     applicationId: c,
     names: k,
     size: L
-  }), g = !r && f, y = !f, Z = !f && !r, P = (0, u.e7)([w.Z, N.Z], () => (0, I.Z)({
-    LayerStore: w.Z,
+  }), g = !r && f, y = !f, Z = !f && !r, w = (0, u.e7)([P.Z, N.Z], () => (0, I.Z)({
+    LayerStore: P.Z,
     PopoutWindowStore: N.Z
   }));
   return i.useEffect(() => {
-    if (g && null != d && !P) {
+    if (g && null != d && !w) {
       let e = (0, O.Z)(d.location.id, d.applicationId);
       (0, b.jy)(e)
     }
-  }, [g, d, P]), (0, l.jsx)(j.Gt, {
+  }, [g, d, w]), (0, l.jsx)(j.Gt, {
     value: s,
     children: (0, l.jsxs)("div", {
       className: D.container,

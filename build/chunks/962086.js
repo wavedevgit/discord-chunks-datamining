@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Zm: () => I,
-  aq: () => P,
+  aq: () => R,
   iD: () => O,
   mL: () => S,
   og: () => C,
@@ -134,7 +134,7 @@ function C(e, t) {
   })
 }
 
-function P(e, t) {
+function R(e, t) {
   I(e, b({
     type: h.z.NEW_MEMBER
   }, t))

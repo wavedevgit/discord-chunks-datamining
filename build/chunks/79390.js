@@ -3,13 +3,13 @@
 n.d(t, {
   D$: () => D,
   N4: () => U,
-  UI: () => R,
+  UI: () => P,
   Uu: () => N,
   _N: () => w,
   cS: () => L,
   cZ: () => G,
   e1: () => F,
-  eQ: () => P,
+  eQ: () => R,
   fw: () => C,
   uY: () => x,
   x9: () => k
@@ -90,13 +90,13 @@ function C(e) {
   return e.replace(t, "")
 }
 
-function P(e) {
+function R(e) {
   for (let t of e.reactions)
     if (null == t.me_vote) return !0;
   return !1
 }
 
-function R(e) {
+function P(e) {
   return (0, l.e7)([h.Z], () => null != e && e.id !== c.V && !!y.TPd.POLLS.has(e.type) && (!!e.isPrivate() || h.Z.can(y.Plq.SEND_MESSAGES, e) && h.Z.can(y.Plq.SEND_POLLS, e)))
 }
 

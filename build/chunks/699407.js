@@ -90,15 +90,15 @@ let p = 1500,
       let {
         shouldFlushOnNextTick: t = !1
       } = e;
-      null == v && A() && (v = t ? setTimeout(P, 0) : g(P, {
+      null == v && A() && (v = t ? setTimeout(R, 0) : g(R, {
         timeout: m
       }))
     }
 
-    function P() {
+    function R() {
       if (v = null, !A()) return;
       let e = y.slice();
-      y = [], R(e).then(() => {
+      y = [], P(e).then(() => {
         e.forEach(e => {
           var t;
           null == (t = e.resolve) || t.call(e)
@@ -112,7 +112,7 @@ let p = 1500,
       })
     }
 
-    function R(e) {
+    function P(e) {
       let t = Date.now(),
         n = e.map(e => _(d({}, e), {
           properties: _(d({}, e.properties), {
@@ -138,9 +138,9 @@ let p = 1500,
         shouldFlushOnNextTick: !1
       }), !1
     }, b.handleConnectionClosed = function() {
-      return P(), r = null, i = null, !1
+      return R(), r = null, i = null, !1
     }, b.handleFingerprint = function() {
-      return P(), !1
+      return R(), !1
     }, b.handleTrack = function(e) {
       let {
         event: t,
@@ -173,7 +173,7 @@ let p = 1500,
         null != T && this.waitFor(...T)
       }
       constructor(...e) {
-        super(...e), u(this, "submitEventsImmediately", R)
+        super(...e), u(this, "submitEventsImmediately", P)
       }
     }
     return u(w, "displayName", "AnalyticsTrackingStore"), new w(n, o)

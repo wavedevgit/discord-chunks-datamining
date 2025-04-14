@@ -39,9 +39,9 @@ var i = n(772848),
   N = n(150560),
   A = n(46140),
   C = n(981631),
-  P = n(49898);
+  R = n(49898);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -57,7 +57,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -176,7 +176,7 @@ function V() {
   });
   let n = null != t ? "#".concat(t) : "";
   l.Z.setState({
-    selectedTab: P.GlobalDiscoveryTab.QUESTS
+    selectedTab: R.GlobalDiscoveryTab.QUESTS
   }), (0, u.uL)(C.Z5c.QUEST_HOME + n)
 }
 

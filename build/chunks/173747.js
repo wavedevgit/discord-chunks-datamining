@@ -36,14 +36,14 @@ let y = new Set,
   N = 10 * m.Z.Millis.MINUTE,
   A = 6 * m.Z.Millis.HOUR,
   C = 10 * m.Z.Millis.MINUTE,
-  P = new s.V7;
+  R = new s.V7;
 
-function R(e) {
-  P.start(e + Math.random() * N, c.o)
+function P(e) {
+  R.start(e + Math.random() * N, c.o)
 }
 
 function w() {
-  return R(A), D()
+  return P(A), D()
 }
 
 function D() {
@@ -157,15 +157,15 @@ function V(e) {
     }
     T[t] = r
   }
-  R(A)
+  P(A)
 }
 
 function F() {
-  R(C)
+  P(C)
 }
 
 function Z() {
-  P.stop()
+  R.stop()
 }
 
 function H(e) {

@@ -25,19 +25,19 @@ var r, i, o, a, s = n(127849),
 f(function() {
   r = s.location
 });
-var P = function(e) {
+var R = function(e) {
     if (d(A, e)) {
       var t = A[e];
       delete A[e], t()
     }
   },
-  R = function(e) {
+  P = function(e) {
     return function() {
-      P(e)
+      R(e)
     }
   },
   w = function(e) {
-    P(e.data)
+    R(e.data)
   },
   D = function(e) {
     s.postMessage(T(e), r.protocol + "//" + r.host)
@@ -52,15 +52,15 @@ b && y || (b = function(e) {
 }, y = function(e) {
   delete A[e]
 }, E ? i = function(e) {
-  v.nextTick(R(e))
+  v.nextTick(P(e))
 } : O && O.now ? i = function(e) {
-  O.now(R(e))
+  O.now(P(e))
 } : S && !g ? (a = (o = new S).port2, o.port1.onmessage = w, i = c(a.postMessage, a)) : s.addEventListener && u(s.postMessage) && !s.importScripts && r && "file:" !== r.protocol && !f(D) ? (i = D, s.addEventListener("message", w, !1)) : i = C in h("script") ? function(e) {
   _.appendChild(h("script"))[C] = function() {
-    _.removeChild(this), P(e)
+    _.removeChild(this), R(e)
   }
 } : function(e) {
-  setTimeout(R(e), 0)
+  setTimeout(P(e), 0)
 }), e.exports = {
   set: b,
   clear: y

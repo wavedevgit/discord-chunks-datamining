@@ -4,9 +4,9 @@ n.d(t, {
   $E: () => L,
   T6: () => w,
   TW: () => S,
-  U0: () => P,
+  U0: () => R,
   WO: () => x,
-  rU: () => R,
+  rU: () => P,
   wX: () => D
 });
 var r = n(544891),
@@ -127,7 +127,7 @@ function C(e, t, n) {
   let i = null != (r = n.id) ? r : n.name;
   return E.ANM.POLL_ANSWER_VOTERS(e, t, i)
 }
-async function P(e) {
+async function R(e) {
   let {
     channelId: t,
     messageId: n,
@@ -158,7 +158,7 @@ async function P(e) {
     reactionType: c
   }), f
 }
-async function R(e, t, n) {
+async function P(e, t, n) {
   let o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "Message",
     u = arguments.length > 4 ? arguments[4] : void 0,
     f = null != u && !!u.burst,
@@ -209,7 +209,7 @@ async function R(e, t, n) {
       name: n.name
     }))
   }).catch(r => {
-    T(r, () => R(e, t, n, o, {
+    T(r, () => P(e, t, n, o, {
       burst: f,
       isRetry: !0
     }), {

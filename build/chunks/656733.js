@@ -128,7 +128,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     query: t
   } = e;
@@ -136,7 +136,7 @@ function P(e) {
   E = t, b = []
 }
 
-function R(e) {
+function P(e) {
   let t = e.trendingCategories;
   y = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
@@ -194,8 +194,8 @@ let x = new L(a.Z, {
   GIF_PICKER_INITIALIZE: S,
   GIF_PICKER_QUERY: T,
   GIF_PICKER_QUERY_SUCCESS: C,
-  GIF_PICKER_QUERY_FAILURE: P,
-  GIF_PICKER_TRENDING_FETCH_SUCCESS: R,
+  GIF_PICKER_QUERY_FAILURE: R,
+  GIF_PICKER_TRENDING_FETCH_SUCCESS: P,
   GIF_PICKER_SUGGESTIONS_SUCCESS: w,
   GIF_PICKER_TRENDING_SEARCH_TERMS_SUCCESS: D
 })

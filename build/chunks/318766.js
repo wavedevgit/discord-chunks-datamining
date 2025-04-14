@@ -65,8 +65,8 @@ function C(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = 20,
-  R = 24,
+let R = 20,
+  P = 24,
   w = 18,
   D = 77,
   L = {
@@ -95,9 +95,9 @@ let P = 20,
 
 function M(e, t) {
   return {
-    "--custom-emoji-sprite-size": "".concat(t ? w : R, "px"),
-    "--custom-emoji-sprite-row": Math.floor(e / P),
-    "--custom-emoji-sprite-col": e % P
+    "--custom-emoji-sprite-size": "".concat(t ? w : P, "px"),
+    "--custom-emoji-sprite-row": Math.floor(e / R),
+    "--custom-emoji-sprite-col": e % R
   }
 }
 
@@ -107,8 +107,8 @@ function k(e, t) {
     className: o,
     renderButtonContents: T,
     active: A,
-    onClick: P,
-    "aria-controls": R,
+    onClick: R,
+    "aria-controls": P,
     focusProps: w,
     shouldShowSoundmojiCoachmark: k = !1
   } = e, [j, U] = i.useState(!1), [G, B] = i.useState(50), V = j || A, F = (0, b.l)(S, "emojiButton", V ? "Hovered" : "Normal"), Z = M(G, (0, f.Q3)("EmojiButton")), H = i.useCallback(() => {
@@ -156,10 +156,10 @@ function k(e, t) {
         onFocus: Y,
         onClick: e => {
           var t;
-          null == P || P(e), null == (t = i.onClick) || t.call(i)
+          null == R || R(e), null == (t = i.onClick) || t.call(i)
         },
         "aria-label": I.NW.string(I.t["59QgaG"]),
-        "aria-controls": R,
+        "aria-controls": P,
         "aria-expanded": A,
         "aria-haspopup": "dialog",
         focusProps: w,

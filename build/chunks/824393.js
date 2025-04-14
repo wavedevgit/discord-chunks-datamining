@@ -31,8 +31,8 @@ var r = n(200651),
   N = n(981631),
   A = n(675654),
   C = n(474936),
-  P = n(388032),
-  R = n(639220),
+  R = n(388032),
+  P = n(639220),
   w = n(499018),
   D = n(946790);
 
@@ -63,24 +63,24 @@ function L(e) {
       })
     })
   }, [m, g, I]);
-  let P = "loading" === N.state,
+  let R = "loading" === N.state,
     w = !O && !I && "claimed" === N.state,
     D = "claimed" === N.state && null != N.entitlements && N.entitlements.items.some(e => e.consumed);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.O_, {
       ref: y,
-      className: R.confettiCanvas,
+      className: P.confettiCanvas,
       environment: v.current
     }), (0, r.jsx)("div", {
       ref: E,
       children: (0, r.jsx)(c.Y0X, {
         transitionState: _,
         size: c.CgR.DYNAMIC,
-        className: a()(R.rootContainer, {
-          [R.rootContainerLoading]: P
+        className: a()(P.rootContainer, {
+          [P.rootContainerLoading]: R
         }),
         hideShadow: !0,
-        children: P ? (0, r.jsx)(c.$jN, {
+        children: R ? (0, r.jsx)(c.$jN, {
           type: c.$jN.Type.SPINNING_CIRCLE
         }) : "error" === N.state ? (0, r.jsx)(x, {
           errorReason: N.errorReason,
@@ -105,32 +105,32 @@ function L(e) {
 function x(e) {
   let {
     onClose: t
-  } = e, n = P.NW.string(P.t.PbaUtr);
+  } = e, n = R.NW.string(R.t.PbaUtr);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.xBx, {
       separator: !1,
-      className: R.errorHeader,
+      className: P.errorHeader,
       children: [(0, r.jsx)(c.X6q, {
-        className: R.errorTitle,
+        className: P.errorTitle,
         variant: "heading-xl/medium",
-        children: P.NW.string(P.t["UleS9/"])
+        children: R.NW.string(R.t["UleS9/"])
       }), (0, r.jsx)(c.olH, {
         onClick: t,
-        className: R.errorModalCloseButton
+        className: P.errorModalCloseButton
       })]
     }), (0, r.jsx)(c.hzk, {
-      className: R.errorContent,
+      className: P.errorContent,
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         children: n
       })
     }), (0, r.jsx)(c.mzw, {
-      className: R.errorModalFooter,
+      className: P.errorModalFooter,
       children: (0, r.jsx)(c.zxk, {
         color: c.zxk.Colors.BRAND,
         size: c.zxk.Sizes.MEDIUM,
         onClick: t,
-        children: P.NW.string(P.t.cpT0Cg)
+        children: R.NW.string(R.t.cpT0Cg)
       })
     })]
   })
@@ -139,9 +139,9 @@ function x(e) {
 function M(e) {
   let t = (0, I.xG)(e.map(e => e.skuId)),
     n = {
-      days: P.t.fYmir6,
-      hours: P.t["C3RO+v"],
-      minutes: P.t.r77oHR
+      days: R.t.fYmir6,
+      hours: R.t["C3RO+v"],
+      minutes: R.t.r77oHR
     },
     r = (0, y.TD)(0, t * v.Z.Millis.HOUR);
   return (0, y.QX)(r, n)
@@ -159,49 +159,49 @@ function k(e) {
     (0, g.$)(n)
   }, [n]);
   return a.fractionalState === C.a$.NONE ? (0, r.jsx)("div", {
-    className: R.spinnerContainer,
+    className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: R.nitroHeaderContainer,
+      className: P.nitroHeaderContainer,
       children: [(0, r.jsx)("div", {
-        className: R.nitroHeaderClouds
+        className: P.nitroHeaderClouds
       }), (0, r.jsx)(b.Z, {
-        className: R.nitroHeaderWordmark
+        className: P.nitroHeaderWordmark
       }), (0, r.jsx)(c.Eep, {
         src: D,
         width: 110,
         height: 82,
         zoomable: !1,
-        className: R.nitroHeaderWumpus
+        className: P.nitroHeaderWumpus
       }), (0, r.jsx)(c.olH, {
-        className: R.nitroHeaderClose,
+        className: P.nitroHeaderClose,
         onClick: n
       })]
     }), (0, r.jsxs)(c.mzw, {
-      className: R.footerContainer,
+      className: P.footerContainer,
       separator: !1,
       children: [(0, r.jsx)(m.Z, {
-        className: R.beta
+        className: P.beta
       }), (0, r.jsx)(E.C, {
-        className: R.nitroHeading,
+        className: P.nitroHeading,
         premiumType: C.p9.TIER_2,
         type: E.C.Types.PREMIUM_ACTIVATED,
         theme: o
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: R.text,
-        children: P.NW.format(P.t["jzW5/P"], {
+        className: P.text,
+        children: R.NW.format(R.t["jzW5/P"], {
           helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           date: s
         })
       }), (0, r.jsx)(c.zxk, {
-        className: R.cta,
+        className: P.cta,
         onClick: l,
-        children: P.NW.string(P.t["eQX+go"])
+        children: R.NW.string(R.t["eQX+go"])
       })]
     })]
   })
@@ -220,93 +220,93 @@ function j(e) {
   }, [n]);
   return s.fetched ? s.isFractionalPremiumActive ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: R.nitroHeaderContainer,
+      className: P.nitroHeaderContainer,
       children: [(0, r.jsx)("div", {
-        className: R.nitroHeaderClouds
+        className: P.nitroHeaderClouds
       }), (0, r.jsx)(b.Z, {
-        className: R.nitroHeaderWordmark
+        className: P.nitroHeaderWordmark
       }), (0, r.jsx)(c.Eep, {
         src: D,
         width: 110,
         height: 82,
         zoomable: !1,
-        className: R.nitroHeaderWumpus
+        className: P.nitroHeaderWumpus
       }), (0, r.jsx)(c.olH, {
-        className: R.nitroHeaderClose,
+        className: P.nitroHeaderClose,
         onClick: n
       })]
     }), (0, r.jsxs)(c.mzw, {
-      className: R.footerContainer,
+      className: P.footerContainer,
       separator: !1,
       children: [(0, r.jsx)(m.Z, {
-        className: R.beta
+        className: P.beta
       }), (0, r.jsx)(E.C, {
-        className: R.nitroHeading,
+        className: P.nitroHeading,
         premiumType: C.p9.TIER_2,
         type: E.C.Types.PREMIUM_UPDATED,
         theme: o
       }), (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
-        className: R.text,
-        children: P.NW.format(P.t.tft2ur, {
+        className: P.text,
+        children: R.NW.format(R.t.tft2ur, {
           expirationDate: l
         })
       }), (0, r.jsx)(c.zxk, {
-        className: R.cta,
+        className: P.cta,
         onClick: d,
-        children: P.NW.string(P.t.LnsQGR)
+        children: R.NW.string(R.t.LnsQGR)
       })]
     })]
   }) : (0, r.jsx)(c.f6W, {
     theme: N.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(R.claimedRootContainer, e),
+      className: a()(P.claimedRootContainer, e),
       children: [(0, r.jsxs)("div", {
-        className: R.headerContainer,
+        className: P.headerContainer,
         children: [(0, r.jsx)("img", {
-          className: R.headerBackground,
+          className: P.headerBackground,
           src: w,
-          alt: P.NW.string(P.t["8SsCa2"])
+          alt: R.NW.string(R.t["8SsCa2"])
         }), (0, r.jsx)(m.Z, {
-          className: R.beta
+          className: P.beta
         }), (0, r.jsxs)("div", {
-          className: R.headerForeground,
+          className: P.headerForeground,
           children: [(0, r.jsx)("div", {
-            className: R.iconBackgroundFractional,
+            className: P.iconBackgroundFractional,
             children: (0, r.jsx)(c.SrA, {
               size: "lg",
-              className: R.iconFractional,
+              className: P.iconFractional,
               color: h.JX.PREMIUM_GUILD_BADGE_V2_BACKGROUND
             })
           }), (0, r.jsx)(c.olH, {
-            className: R.close,
+            className: P.close,
             withCircleBackground: !0,
             onClick: n
           })]
         })]
       }), (0, r.jsxs)(c.mzw, {
-        className: a()(R.footerContainer, R.gradient),
+        className: a()(P.footerContainer, P.gradient),
         separator: !1,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-lg/bold",
-          className: R.heading,
-          children: P.NW.string(P.t.dOQ9RU)
+          className: P.heading,
+          children: R.NW.string(R.t.dOQ9RU)
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: R.text,
-          children: P.NW.format(P.t.KnH4jo, {
+          className: P.text,
+          children: R.NW.format(R.t.KnH4jo, {
             helpCenterLink: O.Z.getArticleURL(N.BhN.FRACTIONAL_PREMIUM_ABOUT),
             duration: t
           })
         }), (0, r.jsx)(c.zxk, {
-          className: R.cta2,
+          className: P.cta2,
           onClick: d,
-          children: P.NW.string(P.t.LnsQGR)
+          children: R.NW.string(R.t.LnsQGR)
         })]
       })]
     })
   }) : (0, r.jsx)("div", {
-    className: R.spinnerContainer,
+    className: P.spinnerContainer,
     children: (0, r.jsx)(c.$jN, {
       type: c.$jN.Type.SPINNING_CIRCLE
     })

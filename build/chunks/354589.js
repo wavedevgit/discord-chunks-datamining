@@ -28,8 +28,8 @@ var i = t(442837),
   T = t(570870),
   N = t(389052),
   S = t(24311),
-  P = t(915193),
-  x = t(332576),
+  x = t(915193),
+  P = t(332576),
   I = t(158508),
   w = t(710631),
   A = t(297047),
@@ -80,7 +80,7 @@ let B = (0, s.Z)((0, a.Z)(function(e) {
     userId: t.id,
     channelId: a.id,
     guildId: a.getGuildId()
-  }), es = (0, x.Z)(t.id, a.id), ec = (0, w.Z)({
+  }), es = (0, P.Z)(t.id, a.id), ec = (0, w.Z)({
     user: t
   }), eu = (0, u.Z)(null, t), ed = (0, v.Z)({
     user: t
@@ -103,7 +103,7 @@ let B = (0, s.Z)((0, a.Z)(function(e) {
     channel: a,
     guildId: void 0,
     onHeightUpdate: Q
-  }), eZ = (0, P.Z)(t, a), ej = t.isNonUserBot(), eT = a.isManaged(), eN = null == (n = a.recipients) ? void 0 : n.includes(t.id);
+  }), eZ = (0, x.Z)(t, a), ej = t.isNonUserBot(), eT = a.isManaged(), eN = null == (n = a.recipients) ? void 0 : n.includes(t.id);
   return (0, r.jsxs)(l.v2r, {
     navId: "user-context",
     onClose: o.Zy,

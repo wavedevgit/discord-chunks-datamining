@@ -45,7 +45,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +58,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -70,7 +70,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -196,7 +196,7 @@ function j(e) {
       analyticsLocations: [],
       analyticsSource: l.Z.QUEST_HOME_PAGE
     })
-  }, []), R = null == (t = (0, h.WD)()) ? void 0 : t.getId(), {
+  }, []), P = null == (t = (0, h.WD)()) ? void 0 : t.getId(), {
     launchInGameActivity: L
   } = (0, g.zB)(n);
   return i.useMemo(() => {
@@ -231,7 +231,7 @@ function j(e) {
             ctaContent: p.jZ.CONNECT_CONSOLE,
             position: s,
             rowIndex: u,
-            impressionId: R
+            impressionId: P
           })
         };
         if (_) return {
@@ -263,10 +263,10 @@ function j(e) {
           tooltipText: null,
           onClick: b
         };
-        if (o) return w(P({}, i), {
+        if (o) return w(R({}, i), {
           text: A.NW.string(A.t.MAS7uL)
         });
-        if ((0, y.vQ)(n.config)) return w(P({}, i), {
+        if ((0, y.vQ)(n.config)) return w(R({}, i), {
           text: A.NW.string(A.t.vTgCW1)
         });
         if ((0, y.Bg)(n.config)) return {
@@ -279,11 +279,11 @@ function j(e) {
           text: A.NW.string(A.t.WYchdX),
           onClick: C
         };
-        return w(P({}, i), {
+        return w(R({}, i), {
           text: A.NW.string(A.t.bAGFz8)
         })
     }
-  }, [r, _, v, f, b, o, n, a, s, u, R, O, I, C, E, L])
+  }, [r, _, v, f, b, o, n, a, s, u, P, O, I, C, E, L])
 }
 
 function U() {

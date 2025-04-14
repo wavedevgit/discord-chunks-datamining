@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(501655),
   A = n(517334),
   C = n(344185),
-  P = n(199902),
-  R = n(984933),
+  R = n(199902),
+  P = n(984933),
   w = n(699516),
   D = n(9156),
   L = n(594174),
@@ -83,7 +83,7 @@ function F(e, t) {
 
 function Z(e) {
   let t = e.id,
-    n = (0, c.Wu)([R.ZP, C.Z], () => [...R.ZP.getChannels(t)[R.Zb].filter(e => {
+    n = (0, c.Wu)([P.ZP, C.Z], () => [...P.ZP.getChannels(t)[P.Zb].filter(e => {
       let {
         channel: t
       } = e;
@@ -127,8 +127,8 @@ function Z(e) {
       for (let t of o) e += T.Z.getParticipantCount(t, N.pV.AUDIENCE);
       return e
     }),
-    g = (0, c.Wu)([P.Z], () => {
-      let e = P.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
+    g = (0, c.Wu)([R.Z], () => {
+      let e = R.Z.getAllApplicationStreams().filter(e => e.guildId === t).map(e => e.ownerId);
       return u ? (0, p._j)(e, s) : e
     }, [u, s, t]),
     E = (0, c.Wu)([f.ZP], () => {

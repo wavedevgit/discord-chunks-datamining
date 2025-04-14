@@ -75,7 +75,7 @@ function f(e) {
 }
 
 function _(e, n, r) {
-  if (e.customInspect && n && P(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
+  if (e.customInspect && n && R(n.inspect) && n.inspect !== t.inspect && !(n.constructor && n.constructor.prototype === n)) {
     var i, o = n.inspect(r, e);
     return I(o) || (o = _(e, o, r)), o
   }
@@ -85,7 +85,7 @@ function _(e, n, r) {
     l = f(s);
   if (e.showHidden && (s = Object.getOwnPropertyNames(n)), C(n) && (s.indexOf("message") >= 0 || s.indexOf("description") >= 0)) return h(n);
   if (0 === s.length) {
-    if (P(n)) {
+    if (R(n)) {
       var c = n.name ? ": " + n.name : "";
       return e.stylize("[Function" + c + "]", "special")
     }
@@ -96,7 +96,7 @@ function _(e, n, r) {
   var u = "",
     d = !1,
     y = ["{", "}"];
-  if (b(n) && (d = !0, y = ["[", "]"]), P(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
+  if (b(n) && (d = !0, y = ["[", "]"]), R(n) && (u = " [Function" + (n.name ? ": " + n.name : "") + "]"), T(n) && (u = " " + RegExp.prototype.toString.call(n)), A(n) && (u = " " + Date.prototype.toUTCString.call(n)), C(n) && (u = " " + h(n)), 0 === s.length && (!d || 0 == n.length)) return y[0] + u + y[1];
   if (r < 0)
     if (T(n)) return e.stylize(RegExp.prototype.toString.call(n), "regexp");
     else return e.stylize("[Object]", "special");
@@ -172,7 +172,7 @@ function S(e) {
 }
 
 function T(e) {
-  return N(e) && "[object RegExp]" === R(e)
+  return N(e) && "[object RegExp]" === P(e)
 }
 
 function N(e) {
@@ -180,18 +180,18 @@ function N(e) {
 }
 
 function A(e) {
-  return N(e) && "[object Date]" === R(e)
+  return N(e) && "[object Date]" === P(e)
 }
 
 function C(e) {
-  return N(e) && ("[object Error]" === R(e) || e instanceof Error)
-}
-
-function P(e) {
-  return "function" == typeof e
+  return N(e) && ("[object Error]" === P(e) || e instanceof Error)
 }
 
 function R(e) {
+  return "function" == typeof e
+}
+
+function P(e) {
   return Object.prototype.toString.call(e)
 }
 
@@ -235,7 +235,7 @@ t.debuglog = function(e) {
   return null == e
 }, t.isNumber = O, t.isString = I, t.isSymbol = function(e) {
   return "symbol" == typeof e
-}, t.isUndefined = S, t.isRegExp = T, t.types.isRegExp = T, t.isObject = N, t.isDate = A, t.types.isDate = A, t.isError = C, t.types.isNativeError = C, t.isFunction = P, t.isPrimitive = function(e) {
+}, t.isUndefined = S, t.isRegExp = T, t.types.isRegExp = T, t.isObject = N, t.isDate = A, t.types.isDate = A, t.isError = C, t.types.isNativeError = C, t.isFunction = R, t.isPrimitive = function(e) {
   return null === e || "boolean" == typeof e || "number" == typeof e || "string" == typeof e || "symbol" == typeof e || void 0 === e
 }, t.isBuffer = n(102439);
 var D = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];

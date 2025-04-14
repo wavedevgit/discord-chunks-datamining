@@ -30,8 +30,8 @@ var i = n(120356),
   N = n(373826),
   A = n(315324),
   C = n(262210),
-  P = n(670451),
-  R = n(881530),
+  R = n(670451),
+  P = n(881530),
   w = n(228168),
   D = n(981631),
   L = n(701488),
@@ -109,7 +109,7 @@ function B(e) {
   }), Q = (0, b.Z)(i), {
     largeImage: X,
     smallImage: J
-  } = (0, _.FO)(i, k), $ = (0, R.Z)({
+  } = (0, _.FO)(i, k), $ = (0, P.Z)({
     location: "UserProfileActivityCard",
     user: t,
     currentUser: n,
@@ -252,7 +252,7 @@ function B(e) {
       onAction: z,
       onClose: F,
       children: [(0, r.jsx)(T.Z, G(j({}, Q), {
-        contextMenu: (0, r.jsx)(P.Z, {
+        contextMenu: (0, r.jsx)(R.Z, {
           display: "live",
           user: t,
           activity: i,

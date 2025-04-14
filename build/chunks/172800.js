@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -89,7 +89,7 @@ let L = e => {
     emojiDescriptors: t,
     emojiSize: o,
     onSelect: A,
-    onSelectSoundmoji: P,
+    onSelectSoundmoji: R,
     onInspect: D,
     surrogateCodePoint: L,
     getEmojiItemProps: x,
@@ -140,7 +140,7 @@ let L = e => {
           } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = ea.rowIndex === _ && ea.columnIndex === p, v = () => {
             k.current || j.current || D(e)
           };
-          return (0, i.createElement)("li", R(C({}, b), {
+          return (0, i.createElement)("li", P(C({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
@@ -242,7 +242,7 @@ let L = e => {
           return
       }
     },
-    ep = e => (0, r.jsx)("ul", R(C({}, M(U)), {
+    ep = e => (0, r.jsx)("ul", P(C({}, M(U)), {
       className: a()(N.emojiListRow, {
         [N.emojiListRowLargeSize]: ed,
         [N.emojiListRowMediumSize]: ef
@@ -255,7 +255,7 @@ let L = e => {
     ref: eu,
     children: (0, r.jsx)(m.Z, {
       channelId: H,
-      onSelectSoundmoji: P
+      onSelectSoundmoji: R
     })
   });
   if (F !== I.En.TOP_GUILD_EMOJI) return ep(t);

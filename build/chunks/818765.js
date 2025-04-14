@@ -40,7 +40,7 @@ let g = (0, l.uk)("poggermode_applause", o.Z.getSoundpack()),
   },
   y = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1,
-      n = a.ZP.isConnected();
+      n = a.Z.isConnected();
     _.push([e, t * (n ? .1 : 1)]), L()
   };
 class T extends r.Z {

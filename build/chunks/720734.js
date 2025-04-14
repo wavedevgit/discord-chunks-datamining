@@ -704,8 +704,8 @@ function e7() {
       decoration: "never"
     }),
     g = (0, o.e7)([eZ.Z], () => eZ.Z.hidePersonalInformation),
-    p = (0, o.e7)([eP.ZP, eI.Z], () => {
-      let e = eP.ZP.getChannelId();
+    p = (0, o.e7)([eP.Z, eI.Z], () => {
+      let e = eP.Z.getChannelId();
       return null != e ? eI.Z.getChannel(e) : null
     }),
     {
@@ -882,7 +882,7 @@ function tt(e) {
     accountContainerRef: C
   } = e, O = t || s || n, S = i.useRef(null), v = i.useRef(null), T = (0, m.O)(O ? "unmute" : "mute"), I = (0, g.P)(O ? "unmute" : "mute"), {
     activeVoice: y
-  } = (0, ej.o)(), R = null != y, D = (0, eE.z)(y), Z = (0, o.e7)([eP.ZP], () => eP.ZP.isConnected()), {
+  } = (0, ej.o)(), R = null != y, D = (0, eE.z)(y), Z = (0, o.e7)([eP.Z], () => eP.Z.isConnected()), {
     Component: w,
     events: k,
     play: L

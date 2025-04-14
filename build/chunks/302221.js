@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  AZ: () => R,
+  AZ: () => P,
   BM: () => j,
   Cj: () => f,
   WY: () => A,
@@ -218,7 +218,7 @@ function C(e) {
   return .2126 * i[0] + .7152 * i[1] + .0722 * i[2]
 }
 
-function P(e) {
+function R(e) {
   let t = e[0],
     n = e[1],
     r = C(t),
@@ -226,7 +226,7 @@ function P(e) {
   return (Math.max(r, i) + .05) / (Math.min(r, i) + .05)
 }
 
-function R(e, t, n) {
+function P(e, t, n) {
   let r, i, o = Math.max(e /= 255, t /= 255, n /= 255),
     a = Math.min(e, t, n),
     s = (o + a) / 2;
@@ -269,7 +269,7 @@ function w(e, t, n) {
 
 function D(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-    r = R(e.red, e.green, e.blue);
+    r = P(e.red, e.green, e.blue);
   return n ? r.lightness = r.lightness + t > 1 ? .9 : r.lightness + t : r.lightness = r.lightness - t < 0 ? .1 : r.lightness - t, w(r.hue, r.saturation, r.lightness)
 }
 
@@ -285,15 +285,15 @@ function L(e) {
   if (null == a || null == i) return;
   let s = (0, o._i)(a.toHexString()),
     l = (0, o.Bd)(s) > .5,
-    c = P([i, a]),
-    u = R(i.red, i.green, i.blue);
+    c = R([i, a]),
+    u = P(i.red, i.green, i.blue);
   for (u.saturation *= r; c < n && null != u;) {
     if (l)
       if (u.lightness < .95) u.lightness += .05;
       else break;
     else if (u.lightness > .05) u.lightness -= .05;
     else break;
-    c = P([w(u.hue, u.saturation, u.lightness), t[1]])
+    c = R([w(u.hue, u.saturation, u.lightness), t[1]])
   }
   return w(u.hue, u.saturation, u.lightness)
 }
@@ -325,7 +325,7 @@ function k(e) {
     saturationFactor: r = 1
   } = e;
   if (null == n) return n;
-  let i = R(n.red, n.green, n.blue);
+  let i = P(n.red, n.green, n.blue);
   return null == i ? null == n ? void 0 : n.toHexString() : null == (t = w(i.hue, i.saturation * r, i.lightness)) ? void 0 : t.toHexString()
 }
 

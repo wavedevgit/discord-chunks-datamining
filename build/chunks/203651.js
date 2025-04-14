@@ -272,7 +272,7 @@ for (var A = 0, C = ["GET", "POST", "OPTIONS", "PATCH", "PUT", "DELETE"]; A < C.
   }
 }
 
-function P(e, t, n) {
+function R(e, t, n) {
   let r = E("DELETE", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }
@@ -285,7 +285,7 @@ m.prototype.del = m.prototype.delete, E.get = (e, t, n) => {
 }, E.options = (e, t, n) => {
   let r = E("OPTIONS", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
-}, E.del = P, E.delete = P, E.patch = (e, t, n) => {
+}, E.del = R, E.delete = R, E.patch = (e, t, n) => {
   let r = E("PATCH", e);
   return "function" == typeof t && (n = t, t = null), t && r.send(t), n && r.end(n), r
 }, E.post = (e, t, n) => {

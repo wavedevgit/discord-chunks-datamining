@@ -35,7 +35,7 @@ let d = 10,
   f = {
     getActiveErrors: () => {
       var e;
-      let t = null == (e = o.ZP.getRTCConnection()) ? void 0 : e.getMediaEngineConnectionId();
+      let t = null == (e = o.Z.getRTCConnection()) ? void 0 : e.getMediaEngineConnectionId();
       if (null == t || !i.Z.isVideoEnabled()) return null;
       let n = (0, l.hj)(t, r.default.getId());
       return null == n ? null : n.short.frameRate < d || n.long.frameRate < d ? [u({

@@ -75,7 +75,7 @@ class g extends i.PureComponent {
       memoizedMode: this.props.mode,
       clicked: !1
     }), h(this, "handleInstallDownload", () => {
-      u.ZP.isConnected() ? o.Z.show({
+      u.Z.isConnected() ? o.Z.show({
         title: m.NW.string(m.t.tiu1l5),
         body: m.NW.string(m.t["zK+lqa"]),
         onConfirm: this.doUpdate,

@@ -61,8 +61,8 @@ function h(e) {
 }
 
 function m(e, t, n) {
-  let s = o.ZP.getGuildId(),
-    l = o.ZP.getChannelId(),
+  let s = o.Z.getGuildId(),
+    l = o.Z.getChannelId(),
     u = i.Z.getChannel(l),
     d = (0, r.kO)(s, l, !0);
   a.default.track(c.rMx.VIDEO_EFFECT_UPDATED, {
@@ -75,8 +75,8 @@ function m(e, t, n) {
     guild_id: s,
     voice_state_count: d.voice_state_count,
     video_stream_count: d.video_stream_count,
-    media_session_id: o.ZP.getMediaSessionId(),
-    rtc_connection_id: o.ZP.getRTCConnectionId(),
+    media_session_id: o.Z.getMediaSessionId(),
+    rtc_connection_id: o.Z.getRTCConnectionId(),
     is_animated: f(e)
   })
 }

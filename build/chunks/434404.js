@@ -80,8 +80,8 @@ function C(e, t) {
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let P = new s.Z("GuildSettingsActionCreators"),
-  R = {
+let R = new s.Z("GuildSettingsActionCreators"),
+  P = {
     init(e, t, n, r) {
       o.Z.dispatch({
         type: "GUILD_SETTINGS_INIT",
@@ -96,7 +96,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
       await Promise.all([n.e("48835"), n.e("25292"), n.e("90508"), n.e("95477"), n.e("91245"), n.e("78228"), n.e("80284"), n.e("9710"), n.e("7654"), n.e("52066"), n.e("62117"), n.e("84926"), n.e("49049"), n.e("44156"), n.e("47347"), n.e("49286"), n.e("6850"), n.e("32652"), n.e("58227"), n.e("54408"), n.e("10923"), n.e("93375"), n.e("64679"), n.e("86974"), n.e("56534"), n.e("91365")]).then(n.bind(n, 994763)), t === y.pNK.OVERVIEW && i === y.KsC.INVITE && (0, E.i1)({
         guildId: e,
         location: "GuildSettingsActionCreators.open"
-      }) && (t = y.pNK.BOOST_PERKS, i = void 0), (null == (o = h.Z.getGuild(e)) ? void 0 : o.hasFeature(y.oNc.COMMUNITY)) && (t === y.pNK.GUILD_AUTOMOD && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_AUTOMOD), t === y.pNK.MEMBER_VERIFICATION && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), R.init(e, t, r, i), f.Z.closeGuildSidebar(e), (0, a.jN)(y.S9g.GUILD_SETTINGS)
+      }) && (t = y.pNK.BOOST_PERKS, i = void 0), (null == (o = h.Z.getGuild(e)) ? void 0 : o.hasFeature(y.oNc.COMMUNITY)) && (t === y.pNK.GUILD_AUTOMOD && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_AUTOMOD), t === y.pNK.MEMBER_VERIFICATION && (t = y.pNK.SAFETY, i = y.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), f.Z.closeGuildSidebar(e), (0, a.jN)(y.S9g.GUILD_SETTINGS)
     },
     close() {
       o.Z.dispatch({
@@ -231,7 +231,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         discoverySplash: T,
         publicUpdatesChannelId: A,
         premiumProgressBarEnabled: C,
-        profile: R
+        profile: P
       } = t, w = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, D = N(S({
         name: n,
         description: r,
@@ -255,7 +255,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
       }, null != C ? {
         premium_progress_bar_enabled: C
       } : null), {
-        profile: null != R ? (0, v.n1)(R) : R
+        profile: null != P ? (0, v.n1)(P) : P
       });
       return o.Z.dispatch({
         type: "GUILD_SETTINGS_SUBMIT"
@@ -276,7 +276,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         if (o.Z.dispatch({
             type: "GUILD_SETTINGS_SUBMIT_FAILURE",
             errors: e.body
-          }), P.error("Failed to save guild settings", {
+          }), R.error("Failed to save guild settings", {
             errors: e.body
           }), w.throwErr) throw e.body
       })
@@ -346,7 +346,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
       },
       checkEnabled: !1
     }).then(() => {
-      R.close()
+      P.close()
     }),
     async leaveGuild(e) {
       await i.tn.del({
@@ -356,7 +356,7 @@ let P = new s.Z("GuildSettingsActionCreators"),
         },
         oldFormErrors: !0,
         rejectWithError: !1
-      }), R.close()
+      }), P.close()
     },
     async updateMemberRoles(e, t, n, r, a) {
       if (u.Z.isFullServerPreview(e) && t === _.default.getId()) return void(0, c.og)(e, n);
@@ -428,4 +428,4 @@ let P = new s.Z("GuildSettingsActionCreators"),
       })
     }
   },
-  w = R
+  w = P

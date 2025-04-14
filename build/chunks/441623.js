@@ -55,8 +55,8 @@ function T() {
 let N = T(),
   A = [],
   C = new Set,
-  P = {},
-  R = null;
+  R = {},
+  P = null;
 
 function w(e, t) {
   let n = new Date,
@@ -73,7 +73,7 @@ function D(e) {
 }
 
 function L() {
-  if (null != R) return void q(R);
+  if (null != P) return void q(P);
   if (k(), !f.Z.hasConsented(g.pjP.PERSONALIZATION)) return;
   let {
     enabled: e
@@ -95,7 +95,7 @@ function L() {
         n = d.Z.getUserAffinity(e);
       if (_.Z.getRelationshipType(e) === g.OGo.FRIEND && !_.Z.isIgnored(e) && null != n && n.affinity > 0 && null != t) {
         let n = new Date(t);
-        D(n) && (A.push(e), P[e] = {
+        D(n) && (A.push(e), R[e] = {
           friendsSince: n
         })
       }
@@ -118,7 +118,7 @@ function M() {
 }
 
 function k() {
-  A.length = 0, C.clear(), P = {}
+  A.length = 0, C.clear(), R = {}
 }
 
 function j() {
@@ -179,7 +179,7 @@ function z(e) {
     total: t
   } = e;
   if (null == t) {
-    R = null, L();
+    P = null, L();
     return
   }
   q(t)
@@ -195,13 +195,13 @@ function q(e) {
     autoTrackExposure: !1
   });
   if (!t) return;
-  R = e;
+  P = e;
   let n = _.Z.getFriendIDs().filter(e => !_.Z.isIgnored(e));
   o().sampleSize(n, e).forEach(e => {
     let t = _.Z.getSince(e);
     if (null != t) {
       let n = new Date(t);
-      A.push(e), P[e] = {
+      A.push(e), R[e] = {
         friendsSince: n
       }
     }
@@ -235,14 +235,14 @@ class Q extends(r = l.ZP.PersistedStore) {
     return !(Date.now() - t <= I) && M()
   }
   getFriendAnniversaryYears(e) {
-    let t = P[e];
+    let t = R[e];
     return null == t ? 0 : x(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != N.messageGiftIntentLastShownMap[e]
   }
   getDevToolTotalFriendAnniversaries() {
-    return R
+    return P
   }
 }
 E(Q, "displayName", "PremiumGiftingIntentStore"), E(Q, "persistKey", "PremiumGiftingIntentStore"), E(Q, "migrations", [e => {

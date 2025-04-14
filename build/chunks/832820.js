@@ -55,10 +55,10 @@ let b = function(e) {
   let C = i.useCallback(() => {
       A(!1)
     }, []),
-    P = i.useCallback(e => {
+    R = i.useCallback(e => {
       v(e), A(!1)
     }, [v]),
-    R = i.useCallback(() => {
+    P = i.useCallback(() => {
       (0, f.s)({
         channelId: t.id,
         onRedeem: () => {},
@@ -72,7 +72,7 @@ let b = function(e) {
       channel: t,
       shouldShow: N,
       onRequestClose: C,
-      setEmojiConfetti: P,
+      setEmojiConfetti: R,
       position: "top",
       align: "left",
       children: () => (0, r.jsxs)(a.P3F, {
@@ -95,7 +95,7 @@ let b = function(e) {
       children: [(0, r.jsx)(a.zxk, {
         look: a.zxk.Looks.LINK,
         size: a.zxk.Sizes.SMALL,
-        onClick: R,
+        onClick: P,
         color: a.zxk.Colors.TRANSPARENT,
         className: g.learnMoreButton,
         children: (0, r.jsx)(o.xv, {

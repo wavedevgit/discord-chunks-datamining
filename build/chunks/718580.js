@@ -118,9 +118,9 @@ function T(e) {
   });
   let A = S.activeSlide,
     C = (0, d.Z)(S.activeSlide),
-    P = null != (t = S.directionOverride) ? t : O(null != C ? T[C] : null, T[A]),
+    R = null != (t = S.directionOverride) ? t : O(null != C ? T[C] : null, T[A]),
     {
-      reducedMotion: R
+      reducedMotion: P
     } = i.useContext(l.S),
     w = i.useContext(f.Z),
     D = T[A].impressionName,
@@ -139,7 +139,7 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(A), j = m({}, v, S.springConfig, R.enabled ? {
+  } = (0, u.Z)(A), j = m({}, v, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null != (n = S.width) ? n : M,
@@ -163,7 +163,7 @@ function T(e) {
       } = t;
       n === A && null != S.onSlideReady && S.onSlideReady(n)
     }
-  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(P), {
+  }, null == C ? "animate-never" : "respect-motion-settings"), B = (0, p.Z)(R), {
     width: V,
     centered: F = !0
   } = S, Z = s.tq ? "100%" : U.width.to(e => "string" == typeof e ? e : Math.round(e)), H = s.tq ? "100%" : U.height.to(e => Math.round(e)), W = s.tq ? {} : F ? {
@@ -194,7 +194,7 @@ function T(e) {
           flexDirection: "column",
           backfaceVisibility: "hidden",
           width: s.tq ? "100%" : V
-        }, W, R.enabled ? a : m({
+        }, W, P.enabled ? a : m({
           left: e.value.to(I("left", B)),
           right: e.value.to(I("right", B))
         }, y && a)),

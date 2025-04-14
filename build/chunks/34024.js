@@ -35,7 +35,7 @@ let u = {
     let {
       voiceChannelId: t,
       voiceState: n
-    } = e, l = r.Z.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = o.ZP.getMediaSessionId();
+    } = e, l = r.Z.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = 0 === Object.keys(i.Z.getInputDevices()).length, f = o.Z.getMediaSessionId();
     if (d && null != l && null != f && !u) return [c({
       type: a.u.NO_INPUT_DEVICES
     }, (0, s.Y9)())]

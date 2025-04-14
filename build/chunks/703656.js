@@ -8,9 +8,9 @@ n.d(t, {
   Wf: () => A,
   XU: () => y,
   dL: () => O,
-  eH: () => R,
+  eH: () => P,
   m1: () => N,
-  op: () => P,
+  op: () => R,
   s1: () => I,
   uL: () => b,
   uv: () => v
@@ -131,10 +131,10 @@ function C() {
   return h
 }
 
-function P() {
+function R() {
   g() && (i = null, r.goBack())
 }
 
-function R() {
+function P() {
   g() && (i = null, r.goForward())
 }

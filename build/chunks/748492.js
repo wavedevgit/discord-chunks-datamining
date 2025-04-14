@@ -33,8 +33,8 @@ var i = n(120356),
   N = n(131951),
   A = n(636449),
   C = n(884338),
-  P = n(349619),
-  R = n(981631),
+  R = n(349619),
+  P = n(981631),
   w = n(231338),
   D = n(388032),
   L = n(816083),
@@ -67,14 +67,14 @@ function k(e) {
     idle: D,
     selectedParticipant: M,
     embeddedActivity: k
-  } = e, j = (0, u.bp)() === R.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), V = (0, f.Z)([o])[0], F = (0, g.Z)(i), {
+  } = e, j = (0, u.bp)() === P.IlC.POPOUT, U = (0, s.e7)([N.Z], () => N.Z.isVideoEnabled()), G = (0, s.e7)([N.Z], () => Object.values(N.Z.getVideoDevices())[0]), B = !1 === (null == (t = null == G ? void 0 : G.disabled) || t), V = (0, f.Z)([o])[0], F = (0, g.Z)(i), {
     parentAnalyticsLocation: Z
   } = (0, d.ZP)(), H = e => {
     (0, p.v)(Z, p.d.CAMERA, e), c.Z.setVideoEnabled(e)
   }, W = () => {
     B ? H(!0) : (0, E.Z)()
   }, Y = () => {
-    (0, p.v)(Z, p.d.POPOUT, !0), (0, P.Z)(() => m.hP(i))
+    (0, p.v)(Z, p.d.POPOUT, !0), (0, R.Z)(() => m.hP(i))
   };
   return (0, r.jsxs)("div", {
     className: x.videoControls,

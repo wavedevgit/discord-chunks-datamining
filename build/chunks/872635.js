@@ -154,14 +154,14 @@ let b = i.forwardRef(function(e, t) {
       x: b + (y - b) / 2,
       y: Math.max(v, Math.min(p.y, d.y))
     }
-  }, [a, _, o]), [N, A] = i.useState(0), [C, P] = i.useState(0);
+  }, [a, _, o]), [N, A] = i.useState(0), [C, R] = i.useState(0);
   if (i.useLayoutEffect(() => {
       if (null == S || null == T || null == f.current) return;
       let e = f.current.getBoundingClientRect();
-      P(e.width / 2), A(e.height + 12)
+      R(e.width / 2), A(e.height + 12)
     }, [S, T]), null == S || null == T) return null;
-  let R = null == (n = o.current) ? void 0 : n.getSlateEditor();
-  return null == R ? null : (0, r.jsx)(u.ZP, {
+  let P = null == (n = o.current) ? void 0 : n.getSlateEditor();
+  return null == P ? null : (0, r.jsx)(u.ZP, {
     children: (0, r.jsxs)("div", {
       id: "slate-toolbar",
       ref: f,
@@ -177,7 +177,7 @@ let b = i.forwardRef(function(e, t) {
         e.stopPropagation()
       },
       children: [(0, r.jsx)(O, {
-        slateEditor: R
+        slateEditor: P
       }), (0, r.jsx)(E, {
         editorRef: o,
         options: l

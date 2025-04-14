@@ -42,7 +42,7 @@ let C = () => {
       subscriptionTier: T.Si.TIER_2
     })
   },
-  P = e => {
+  R = e => {
     let {
       markAsDismissed: t
     } = e, n = () => {
@@ -69,7 +69,7 @@ let C = () => {
       })]
     })
   },
-  R = e => {
+  P = e => {
     let {
       isCoachmark: t,
       markAsDismissed: n
@@ -119,7 +119,7 @@ function w(e) {
       className: a()(A.editor, m ? A.editorAnimate : null),
       "data-app-right-panel": !0,
       children: (0, r.jsxs)(l.y5t, {
-        children: [(0, r.jsx)(P, {
+        children: [(0, r.jsx)(R, {
           markAsDismissed: n
         }), (0, r.jsx)(l.Ttm, {
           className: A.editorBody,
@@ -127,7 +127,7 @@ function w(e) {
             className: A.selectionGroup,
             isEditor: !0
           })
-        }), (0, r.jsx)(R, {
+        }), (0, r.jsx)(P, {
           markAsDismissed: n,
           isCoachmark: t
         })]

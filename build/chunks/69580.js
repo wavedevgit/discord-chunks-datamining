@@ -34,8 +34,8 @@ var r = n(200651),
   N = n(424602),
   A = n(728345),
   C = n(979200),
-  P = n(388905),
-  R = n(560067),
+  R = n(388905),
+  P = n(560067),
   w = n(353926),
   D = n(341298),
   L = n(703656),
@@ -155,9 +155,9 @@ function eh() {
     }, [e.search, o]), _ && !1 !== d) {
     let e;
     return e = !0 === d ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(P.Dx, {
+      children: [(0, r.jsx)(R.Dx, {
         children: ea.NW.string(ea.t.csrAMD)
-      }), (0, r.jsx)(P.DK, {
+      }), (0, r.jsx)(R.DK, {
         children: ea.NW.string(ea.t["m1+IBg"])
       }), (0, r.jsx)(h.zx, {
         onClick: () => c(!0),
@@ -165,7 +165,7 @@ function eh() {
         children: ea.NW.string(ea.t.fIv16O)
       })]
     }) : (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(P.Dx, {
+      children: [(0, r.jsx)(R.Dx, {
         children: ea.NW.string(ea.t["Z+hCVV"])
       }), (0, r.jsx)(E.$, {})]
     }), (0, r.jsx)(ee.G, {
@@ -224,7 +224,7 @@ function em(e) {
 
 function eg(e) {
   var t, n, o, a, l;
-  let m, g, T, N, P, R, {
+  let m, g, T, N, R, P, {
       clientId: D,
       responseType: j,
       redirectUri: ee,
@@ -247,8 +247,8 @@ function eg(e) {
       callback: eN,
       callbackWithoutPost: eA,
       onClose: eC,
-      disclosures: eP,
-      isExternalStandaloneOAuthPage: eR = !1
+      disclosures: eR,
+      isExternalStandaloneOAuthPage: eP = !1
     } = e,
     ew = null != ey ? null == eh ? void 0 : eh.get(ey) : void 0,
     eD = (0, s.TH)(),
@@ -285,8 +285,8 @@ function eg(e) {
       return null != t ? t : G.Hn
     }, [null == e4 ? void 0 : e4.permissions, eg, e1]),
     e7 = i.useRef(!1),
-    [e9, te] = i.useState(null != eP ? eP : []),
-    [tt, tn] = i.useState(null != eP && eP.length > 0);
+    [e9, te] = i.useState(null != eR ? eR : []),
+    [tt, tn] = i.useState(null != eR && eR.length > 0);
   i.useEffect(() => {
     if (e7.current) return;
     let e = async () => {
@@ -308,11 +308,11 @@ function eg(e) {
         e7.current = !1
       }
     };
-    if (null == eP) {
+    if (null == eR) {
       if (!k.default.isAuthenticated()) return void(0, F.c$)(eD, "oauth2_error_not_authenticated");
       e()
     }
-  }, [D, eD, eP, te, eG, tn, ej]);
+  }, [D, eD, eR, te, eG, tn, ej]);
   let tr = i.useCallback(async e => {
       if (null != eA) {
         eV(!0), eA(e);
@@ -432,7 +432,7 @@ function eg(e) {
       e && eZ(!0)
     }, []),
     tc = (0, I.O)(tl);
-  if (eU instanceof Error) return eR ? {
+  if (eU instanceof Error) return eP ? {
     body: (0, r.jsx)(et.Lk, {
       message: eU.message
     })
@@ -571,7 +571,7 @@ function eg(e) {
       })]
     })
   }
-  return th && null != ex && null != eX && (P = (0, r.jsx)(J.Z, {
+  return th && null != ex && null != eX && (R = (0, r.jsx)(J.Z, {
     id: ep,
     user: eX,
     application: ex.application,
@@ -580,7 +580,7 @@ function eg(e) {
     showLogout: eO || !1,
     location: eD,
     scopes: e5
-  })), tm && (R = (0, r.jsxs)("div", {
+  })), tm && (P = (0, r.jsxs)("div", {
     className: es.footer,
     children: [null != g ? (0, r.jsx)(h.zx, {
       look: h.zx.Looks.FILLED,
@@ -621,9 +621,9 @@ function eg(e) {
       })
     }) : null]
   })), {
-    header: P,
+    header: R,
     body: m,
-    footer: R,
+    footer: P,
     nextStep: T,
     appDetails: N,
     sendAuthorize: tr,
@@ -679,7 +679,7 @@ function eE(e, t) {
 }
 
 function eb(e, t) {
-  if ((0, D.g)("create-guild-and-oauth2-modal")) return void R.Z.openCreateGuildModal({
+  if ((0, D.g)("create-guild-and-oauth2-modal")) return void P.Z.openCreateGuildModal({
     onSuccess: n => ey(ed(ec({}, e), {
       guildId: n
     }), t)

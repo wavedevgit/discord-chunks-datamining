@@ -32,8 +32,8 @@ var r = n(525654),
   N = n(82085),
   A = n(264229),
   C = n(652898),
-  P = n(895886),
-  R = n(143816),
+  R = n(895886),
+  P = n(143816),
   w = n(703656),
   D = n(922482),
   L = n(131704),
@@ -140,7 +140,7 @@ function ef(e, t) {
     welcomeModalChannelId: i,
     guildScheduledEvent: o
   } = null != t ? t : {}, a = n === J.d4z.GUILD_STAGE_VOICE, s = {
-    source: R.Z.INVITE_ACCEPT,
+    source: P.Z.INVITE_ACCEPT,
     navigationReplace: !0
   };
   return null != i && (s.welcomeModalChannelId = i), a && (s.state = en.Df), null != o && (s.guildScheduledEventId = o.id), e => null != r ? r(e, s) : (0, w.uL)(e, s)
@@ -423,7 +423,7 @@ let ey = {
       callback: o,
       skipOnboarding: a
     } = e, s = (0, A.fU)(r), l = s.baseCode, c = x.default.getSessionId(), d = eu(i, s), _ = Z.default.getCurrentUser();
-    return null != (t = null == _ ? void 0 : _.hasFlag(J.xW$.QUARANTINED)) && t ? ((0, P.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
+    return null != (t = null == _ ? void 0 : _.hasFlag(J.xW$.QUARANTINED)) && t ? ((0, R.default)(), new Promise((e, t) => t(Error()))) : (f.Z.dispatch({
       type: "INVITE_ACCEPT",
       code: l
     }), u.tn.post({

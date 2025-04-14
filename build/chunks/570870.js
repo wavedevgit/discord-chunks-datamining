@@ -35,16 +35,16 @@ let g = e => {
       guildId: null == Z ? void 0 : Z.id,
       context: N
     }),
-    P = i.useMemo(() => ({
+    R = i.useMemo(() => ({
       channel: g,
       type: "channel"
     }), [g]),
     {
-      commands: R,
-      sectionDescriptors: T,
+      commands: T,
+      sectionDescriptors: P,
       loading: _
     } = d.wi({
-      context: P,
+      context: R,
       filters: {
         commandTypes: [n]
       },
@@ -57,12 +57,12 @@ let g = e => {
       sections: S
     } = i.useMemo(() => {
       let e = {};
-      return T.forEach(t => {
+      return P.forEach(t => {
         e[t.id] = t
       }), {
         sections: e
       }
-    }, [T]),
+    }, [P]),
     j = i.useRef(_);
   i.useEffect(() => {
     _ !== j.current && (j.current = _, null == b || b())
@@ -98,11 +98,11 @@ let g = e => {
       id: "menu-commands-placeholder",
       render: () => (0, r.jsx)(p.Z, {}),
       disabled: !0
-    }, "menu-commands-placeholder") : (t = 0 === R.length ? (0, r.jsx)(u.sNh, {
+    }, "menu-commands-placeholder") : (t = 0 === T.length ? (0, r.jsx)(u.sNh, {
       id: "menu-commands-empty",
       label: O.NW.string(O.t.YSNlV1),
       disabled: !0
-    }, "menu-commands-empty") : R.map(U), null != I && I.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
+    }, "menu-commands-empty") : T.map(U), null != I && I.length > 0 && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(u.Clw, {}, "separator"), I]
     }))), !E.TPd.TEXTUAL.has(g.type))
     if (null == I) return null;

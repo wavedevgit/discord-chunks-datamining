@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(640963),
   A = n(628309),
   C = n(680783),
-  P = n(981631),
-  R = n(921944),
+  R = n(981631),
+  P = n(921944),
   w = n(474936),
   D = n(388032),
   L = n(874577);
@@ -93,7 +93,7 @@ function V(e) {
       }), (0, r.jsx)(d.olH, {
         className: L.coachmarkCloseIcon,
         onClick: () => {
-          v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+          v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
             cta_location: "coachmark_header"
           }), t()
         }
@@ -132,7 +132,7 @@ function F(e) {
     }), (0, r.jsx)(d.olH, {
       className: L.closeContainer,
       onClick: () => {
-        v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+        v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
           cta_location: "header"
         }), n()
       }
@@ -197,7 +197,7 @@ function Z(e) {
       children: (0, r.jsx)(d.P3F, j(M({}, e, p), {
         className: L.wallpaperSelectionClickableContainer,
         tabIndex: p.tabIndex,
-        onClick: t ? P.dG4 : () => n(o),
+        onClick: t ? R.dG4 : () => n(o),
         children: _
       }))
     })
@@ -270,7 +270,7 @@ function Y(e) {
       type: d.XZJ.Types.INVERTED,
       value: i,
       onChange: (e, t) => {
-        v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {
+        v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_BLUR_TOGGLED, {
           selected: t
         }), o(t)
       },
@@ -284,7 +284,7 @@ function Y(e) {
         size: d.zxk.Sizes.MEDIUM,
         color: d.zxk.Colors.PRIMARY,
         onClick: () => {
-          v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
+          v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_CANCEL_CLICKED, {
             cta_location: "footer"
           }), a()
         },
@@ -312,7 +312,7 @@ function K() {
       className: L.nonTier2FooterText,
       children: D.NW.format(D.t["0Tapv7"], {
         onClickNitro: () => {
-          v.default.track(P.rMx.CHAT_WALLPAPER_NITRO_LINK_CLICKED), (0, b.uL)(P.Z5c.NITRO_HOME)
+          v.default.track(R.rMx.CHAT_WALLPAPER_NITRO_LINK_CLICKED), (0, b.uL)(R.Z5c.NITRO_HOME)
         }
       })
     }), (0, r.jsx)(E.Z, {
@@ -328,7 +328,7 @@ function K() {
 let z = function(e) {
   let {
     className: t,
-    position: n = P.VD2.TOP_RIGHT,
+    position: n = R.VD2.TOP_RIGHT,
     config: o
   } = e, {
     analyticsLocations: s
@@ -358,14 +358,14 @@ let z = function(e) {
       onUpdateComplete: B
     }),
     q = i.useCallback(function() {
-      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R.L.USER_DISMISS;
+      let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P.L.USER_DISMISS;
       (null == o ? void 0 : o.markDismissed) != null && o.markDismissed(e), c()
     }, [c, o]);
   (0, f.ZP)(() => () => {
-    q(R.L.INDIRECT_ACTION)
+    q(P.L.INDIRECT_ACTION)
   });
   let Q = i.useCallback(() => {
-      null != l && null != m && void 0 !== m.wallpaperId && (v.default.track(P.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
+      null != l && null != m && void 0 !== m.wallpaperId && (v.default.track(R.rMx.CHAT_WALLPAPER_PICKER_APPLY_CLICKED, {
         wallpaper_id: m.wallpaperId,
         is_blur_enabled: b,
         channel_id: l
@@ -382,13 +382,13 @@ let z = function(e) {
       let t = M[e];
       if (null == t) return;
       let n = t.find(e => e.isBlurred === b);
-      null != n && (v.default.track(P.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
+      null != n && (v.default.track(R.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
         wallpaper_id: n.id,
         is_blurred: n.isBlurred
       }), h(n.id))
     }, [b, M, h]),
     $ = i.useCallback(e => {
-      e.keyCode === P.yXg.ESCAPE && q()
+      e.keyCode === R.yXg.ESCAPE && q()
     }, [q]);
   if (i.useEffect(() => {
       let e = e => {
@@ -409,7 +409,7 @@ let z = function(e) {
       children: [(0, r.jsx)(W, {
         isSelected: null == m || null === m.wallpaperId,
         onSelect: () => {
-          v.default.track(P.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
+          v.default.track(R.rMx.CHAT_WALLPAPER_WALLPAPER_OPTION_SELECTED, {
             wallpaper_id: null,
             is_blurred: !1
           }), h(null)

@@ -58,11 +58,11 @@ function x(e, t) {
   }), e
 }
 let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  P = {
+  w = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  w = {
+  P = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
@@ -91,8 +91,8 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
         shape: d,
         size: g,
         didTrackUpsellViewed: N,
-        setDidTrackUpsellViewed: P,
-        className: w,
+        setDidTrackUpsellViewed: w,
+        className: P,
         premiumIndicator: R
       } = e,
       A = (0, b.Wc)(o),
@@ -132,8 +132,8 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
           has_premium_stream_fps: t,
           has_premium_stream_resolution: i,
           location_stack: T
-        }), P(!0))
-      }, [t, i, D, N, P, T]), null == A) return null;
+        }), w(!0))
+      }, [t, i, D, N, w, T]), null == A) return null;
     let W = (0, r.jsx)(f.ua7, {
       text: C ? _.NW.string(_.t.q8TiVl) : D ? _.NW.string(_.t.IHgpEh) : _.NW.string(_.t.vLb0VV),
       position: "bottom",
@@ -157,7 +157,7 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(f.IGR, {
       text: W,
-      className: a()(w, j.qualityIndicatorBadge, {
+      className: a()(P, j.qualityIndicatorBadge, {
         [j.qualityIndicatorBadgePremium]: D && R
       }),
       color: c.Z.unsafe_rawColors.PRIMARY_500.css,
@@ -182,10 +182,10 @@ let N = (0, s.Mg)(d.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let S = (0, f.Yzy)(v, {
         enter: {
-          from: h.enabled ? R : P,
-          to: h.enabled ? A : w
+          from: h.enabled ? R : w,
+          to: h.enabled ? A : P
         },
-        leave: h.enabled ? R : P,
+        leave: h.enabled ? R : w,
         config: D
       }, "animate-always"),
       y = (0, f.q_F)({

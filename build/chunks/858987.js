@@ -99,8 +99,8 @@ function T(e) {
     isPrepaid: N,
     isTrial: A,
     makePurchase: C,
-    needsPaymentSource: P,
-    inReverseTrial: R,
+    needsPaymentSource: R,
+    inReverseTrial: P,
     onNext: w
   } = e, {
     application: D,
@@ -117,7 +117,7 @@ function T(e) {
     isGift: v,
     planGroup: T,
     isPrepaidPaymentSource: N,
-    inReverseTrial: R
+    inReverseTrial: P
   }), {
     analyticsLocations: B
   } = (0, l.ZP)();
@@ -126,7 +126,7 @@ function T(e) {
     disabled: !0,
     children: G
   });
-  if (P) return (0, r.jsx)(a.ua7, {
+  if (R) return (0, r.jsx)(a.ua7, {
     text: m.NW.string(m.t.L7jbQU),
     children: e => (0, r.jsx)(a.zxk, O(y({}, e), {
       color: a.zxk.Colors.GREEN,
@@ -168,7 +168,7 @@ function T(e) {
       children: G
     }))
   });
-  else if (R && null != j && null != k) return (0, r.jsx)(_.Z, {
+  else if (P && null != j && null != k) return (0, r.jsx)(_.Z, {
     activeSubscription: j,
     onNext: w,
     isSubmitting: h,

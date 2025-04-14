@@ -41,7 +41,7 @@ function C(e) {
     pendingPronouns: E,
     pendingAvatar: N,
     pendingAvatarDecoration: C,
-    pendingNickname: R,
+    pendingNickname: P,
     pendingGlobalName: w,
     pendingThemeColors: D,
     pendingProfileEffectId: L,
@@ -127,7 +127,7 @@ function C(e) {
         displayProfile: W,
         guild: n,
         pendingAvatar: N,
-        pendingNickname: R,
+        pendingNickname: P,
         pendingGlobalName: w,
         pendingBio: g,
         pendingPronouns: E,
@@ -142,11 +142,11 @@ function C(e) {
       }), null != z && (0, r.jsx)(d.Z, {
         profileEffectId: z
       })]
-    }), X && H && (0, r.jsx)(P, {})]
+    }), X && H && (0, r.jsx)(R, {})]
   })
 }
 
-function P() {
+function R() {
   var e;
   let t = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
     n = (0, s.e7)([g.Z], () => g.Z.getPendingNameplate()),

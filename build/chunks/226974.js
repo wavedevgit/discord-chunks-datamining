@@ -84,7 +84,7 @@ function I(e, n) {
   m = !1, g && (g = !1, b(N), N = -1), h = !0;
   var o = p;
   try {
-    for (v(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !P());) {
+    for (v(n), _ = r(u); null !== _ && (!(_.expirationTime > n) || e && !R());) {
       var a = _.callback;
       if ("function" == typeof a) {
         _.callback = null, p = _.priorityLevel;
@@ -110,11 +110,11 @@ var S = !1,
   A = 5,
   C = -1;
 
-function P() {
+function R() {
   return !(t.unstable_now() - C < A)
 }
 
-function R() {
+function P() {
   if (null !== T) {
     var e = t.unstable_now();
     C = e;
@@ -127,16 +127,16 @@ function R() {
   } else S = !1
 }
 if ("function" == typeof y) a = function() {
-  y(R)
+  y(P)
 };
 else if ("undefined" != typeof MessageChannel) {
   var w = new MessageChannel,
     D = w.port2;
-  w.port1.onmessage = R, a = function() {
+  w.port1.onmessage = P, a = function() {
     D.postMessage(null)
   }
 } else a = function() {
-  E(R, 0)
+  E(P, 0)
 };
 
 function L(e) {
@@ -219,7 +219,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
     expirationTime: s,
     sortIndex: -1
   }, o > a ? (e.sortIndex = o, n(d, e), null === r(u) && e === r(d) && (g ? (b(N), N = -1) : g = !0, x(O, o - a))) : (e.sortIndex = s, n(u, e), m || h || (m = !0, L(I))), e
-}, t.unstable_shouldYield = P, t.unstable_wrapCallback = function(e) {
+}, t.unstable_shouldYield = R, t.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {
     var n = p;

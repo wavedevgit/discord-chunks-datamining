@@ -113,19 +113,19 @@ let g = (e, t) => {
       interactive: m = !0,
       onClose: E,
       children: C
-    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
+    } = e, j = l.useRef(null), I = l.useRef([]), S = l.useRef(!1), P = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
       x: 0,
       y: 0
     }), R = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
       null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
-      S.current = t, v(f * e + t)
+      P.current = t, v(f * e + t)
     }, [v]), k = l.useCallback(() => {
-      S.current = null, v(null)
+      P.current = null, v(null)
     }, [v]), B = l.useCallback(e => {
-      k(), P.current = e
+      k(), S.current = e
     }, [k]), M = l.useCallback((e, t, n) => {
-      if (P.current) return void _({
+      if (S.current) return void _({
         x: 0,
         y: 0
       });
@@ -141,7 +141,7 @@ let g = (e, t) => {
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
     }, []), U = l.useCallback(e => {
-      null != S.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + S.current))
+      null != P.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + P.current))
     }, [x, T]), L = l.useMemo(() => (0, i.throttle)(e => {
       if (null == j.current) return;
       let r = j.current.getBoundingClientRect(),
@@ -153,7 +153,7 @@ let g = (e, t) => {
           x: e.clientX,
           y: e.clientY
         };
-      if (M(i, l, Math.max(t, n)), P.current) {
+      if (M(i, l, Math.max(t, n)), S.current) {
         null != b && k();
         return
       }
@@ -168,7 +168,7 @@ let g = (e, t) => {
     }, 16), [b, M, k, W, T, n, t]), G = l.useCallback(e => {
       if (!m) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
-      t >= 0 && t < A.length && (null != S.current && (A[t].length > S.current ? W(t, S.current) : k()), w(t))
+      t >= 0 && t < A.length && (null != P.current && (A[t].length > P.current ? W(t, P.current) : k()), w(t))
     }, [m, T, A, W, k]), V = l.useMemo(() => A[T].map((e, l) => {
       let i = h[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));

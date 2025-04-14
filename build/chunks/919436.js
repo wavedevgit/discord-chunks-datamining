@@ -259,7 +259,7 @@ Z(D, "defaultProps", {
 let R = l.forwardRef(function(e, t) {
   let n = e.channel.id,
     r = (0, h.ZP)(e.channel),
-    l = (0, s.e7)([_.ZP], () => _.ZP.getChannelId(), []),
+    l = (0, s.e7)([_.Z], () => _.Z.getChannelId(), []),
     o = (0, s.e7)([d.Z], () => null != l ? d.Z.getMode(l) : I.WtW.VOICE, [l]),
     a = (0, s.e7)([b.Z], () => b.Z.getAllApplicationStreamsForChannel(n).length > 0),
     u = (0, s.e7)([v.Z], () => v.Z.getChannelId(), []),

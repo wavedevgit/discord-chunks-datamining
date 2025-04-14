@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function P(e, t) {
+function R(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,8 +61,8 @@ function P(e, t) {
   return n
 }
 
-function R(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function P(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -153,9 +153,9 @@ let L = {
       [c, f] = (0, O.Ee)(e, t, a),
       b = [...o, ...a],
       A = b.map(e => _.Z.getChannel(e)).filter(E.lm),
-      P = (0, I.v)(e, new Set(b), A, !0).length,
+      R = (0, I.v)(e, new Set(b), A, !0).length,
       D = null == n ? [] : n.options.map(e => e.id);
-    if (m.default.track(S.rMx.GUILD_ONBOARDING_STEP_COMPLETED, R(C({}, (0, l.hH)(e)), {
+    if (m.default.track(S.rMx.GUILD_ONBOARDING_STEP_COMPLETED, P(C({}, (0, l.hH)(e)), {
         step: t.length - 1,
         options_selected: null == n ? 0 : r.filter(e => D.includes(e.id)).length,
         skipped: D.length > 0,
@@ -163,7 +163,7 @@ let L = {
         in_onboarding: !0,
         is_final_step: !0,
         roles_granted: i.size,
-        channels_granted: P,
+        channels_granted: R,
         guild_onboarding_covered_channel_ids: c.map(e => e.id),
         guild_onboarding_uncovered_channel_ids: f.map(e => e.id)
       })), (0, s.Ju)(e, N.W.GUILD_ONBOARDING_QUESTION, y.default.fromTimestamp(Date.now())), w(e, !0), d.Z.isFullServerPreview(e)) {

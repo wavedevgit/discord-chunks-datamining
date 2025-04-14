@@ -55,7 +55,7 @@ function v(e) {
     o = .8 * h;
   if (null != r && (null != r.timeout || r.prevSend + o > i)) return !1;
   let c = setTimeout(() => {
-    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, P(t) > g || a.tn.post({
+    null != r && r.channelId === t && n === u.default.getId() && null != r.timeout && (r.timeout = null, R(t) > g || a.tn.post({
       url: f.ANM.TYPING(t),
       oldFormErrors: !0,
       rejectWithError: !0
@@ -149,11 +149,11 @@ function C() {
   E = {}
 }
 
-function P(e) {
+function R(e) {
   let t = y(e);
   return t === b ? 0 : Object.keys(t).length
 }
-class R extends(i = o.ZP.Store) {
+class P extends(i = o.ZP.Store) {
   getTypingUsers(e) {
     return y(e)
   }
@@ -161,8 +161,8 @@ class R extends(i = o.ZP.Store) {
     return null != y(e)[t]
   }
 }
-_(R, "displayName", "TypingStore");
-let w = new R(s.Z, {
+_(P, "displayName", "TypingStore");
+let w = new P(s.Z, {
   TYPING_START: T,
   TYPING_STOP: N,
   TYPING_START_LOCAL: v,

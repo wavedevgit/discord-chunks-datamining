@@ -98,8 +98,8 @@ function T(e) {
     renderPopout: N,
     onRequestOpen: A,
     onRequestClose: C,
-    onClosePopout: P,
-    shouldShow: R,
+    onClosePopout: R,
+    shouldShow: P,
     shouldPreload: w = !0,
     shouldShowOnHover: D = !1
   } = e, L = y(e, ["children", "userId", "user", "guildId", "channelId", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload", "shouldShowOnHover"]);
@@ -131,7 +131,7 @@ function T(e) {
       channelId: E,
       openedAt: H.current,
       closePopout: () => {
-        e.closePopout(), null == P || P()
+        e.closePopout(), null == R || R()
       }
     }));
   return D ? (0, r.jsx)("div", {
@@ -154,7 +154,7 @@ function T(e) {
     },
     children: (0, r.jsx)(a.yRy, b(g({
       popoutKey: _.Tg,
-      shouldShow: !0 === R || k,
+      shouldShow: !0 === P || k,
       preload: !w || U || k ? void 0 : z,
       renderPopout: q,
       onRequestOpen: () => {
@@ -168,7 +168,7 @@ function T(e) {
     }))
   }) : (0, r.jsx)(a.yRy, b(g({
     popoutKey: _.Tg,
-    shouldShow: R,
+    shouldShow: P,
     preload: w ? z : void 0,
     renderPopout: q,
     onRequestOpen: () => {

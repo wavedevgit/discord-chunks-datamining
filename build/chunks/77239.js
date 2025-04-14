@@ -13,8 +13,8 @@ var r = n(754793),
   _ = [16, 16, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 64, 64];
 e.exports = function(e, t, n, p, h, m, g, E) {
   var b, y, v, O, I, S, T, N, A, C = E.bits,
-    P = 0,
     R = 0,
+    P = 0,
     w = 0,
     D = 0,
     L = 0,
@@ -29,30 +29,30 @@ e.exports = function(e, t, n, p, h, m, g, E) {
     F = new r.Buf16(i + 1),
     Z = null,
     H = 0;
-  for (P = 0; P <= i; P++) V[P] = 0;
-  for (R = 0; R < p; R++) V[t[n + R]]++;
+  for (R = 0; R <= i; R++) V[R] = 0;
+  for (P = 0; P < p; P++) V[t[n + P]]++;
   for (L = C, D = i; D >= 1 && 0 === V[D]; D--);
   if (L > D && (L = D), 0 === D) return h[m++] = 0x1400000, h[m++] = 0x1400000, E.bits = 1, 0;
   for (w = 1; w < D && 0 === V[w]; w++);
-  for (L < w && (L = w), k = 1, P = 1; P <= i; P++)
-    if (k <<= 1, (k -= V[P]) < 0) return -1;
+  for (L < w && (L = w), k = 1, R = 1; R <= i; R++)
+    if (k <<= 1, (k -= V[R]) < 0) return -1;
   if (k > 0 && (e === s || 1 !== D)) return -1;
-  for (P = 1, F[1] = 0; P < i; P++) F[P + 1] = F[P] + V[P];
-  for (R = 0; R < p; R++) 0 !== t[n + R] && (g[F[t[n + R]]++] = R);
-  if (e === s ? (G = Z = g, S = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, S = 256) : (G = f, Z = _, S = -1), U = 0, R = 0, P = w, I = m, x = L, M = 0, v = -1, O = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
+  for (R = 1, F[1] = 0; R < i; R++) F[R + 1] = F[R] + V[R];
+  for (P = 0; P < p; P++) 0 !== t[n + P] && (g[F[t[n + P]]++] = P);
+  if (e === s ? (G = Z = g, S = 19) : e === l ? (G = u, B -= 257, Z = d, H -= 257, S = 256) : (G = f, Z = _, S = -1), U = 0, P = 0, R = w, I = m, x = L, M = 0, v = -1, O = (j = 1 << L) - 1, e === l && j > o || e === c && j > a) return 1;
   for (;;) {
-    T = P - M, g[R] < S ? (N = 0, A = g[R]) : g[R] > S ? (N = Z[H + g[R]], A = G[B + g[R]]) : (N = 96, A = 0), b = 1 << P - M, w = y = 1 << x;
+    T = R - M, g[P] < S ? (N = 0, A = g[P]) : g[P] > S ? (N = Z[H + g[P]], A = G[B + g[P]]) : (N = 96, A = 0), b = 1 << R - M, w = y = 1 << x;
     do h[I + (U >> M) + (y -= b)] = T << 24 | N << 16 | A | 0; while (0 !== y);
-    for (b = 1 << P - 1; U & b;) b >>= 1;
-    if (0 !== b ? (U &= b - 1, U += b) : U = 0, R++, 0 == --V[P]) {
-      if (P === D) break;
-      P = t[n + g[R]]
+    for (b = 1 << R - 1; U & b;) b >>= 1;
+    if (0 !== b ? (U &= b - 1, U += b) : U = 0, P++, 0 == --V[R]) {
+      if (R === D) break;
+      R = t[n + g[P]]
     }
-    if (P > L && (U & O) !== v) {
-      for (0 === M && (M = L), I += w, k = 1 << (x = P - M); x + M < D && !((k -= V[x + M]) <= 0);) x++, k <<= 1;
+    if (R > L && (U & O) !== v) {
+      for (0 === M && (M = L), I += w, k = 1 << (x = R - M); x + M < D && !((k -= V[x + M]) <= 0);) x++, k <<= 1;
       if (j += 1 << x, e === l && j > o || e === c && j > a) return 1;
       h[v = U & O] = L << 24 | x << 16 | I - m | 0
     }
   }
-  return 0 !== U && (h[I + U] = P - M << 24 | 4194304), E.bits = L, 0
+  return 0 !== U && (h[I + U] = R - M << 24 | 4194304), E.bits = L, 0
 }

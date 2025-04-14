@@ -266,26 +266,26 @@ function C(e) {
     collectibleRewardDuration: f
   })
 }
-let P = e => {
+let R = e => {
   try {
     let t = "";
     if ("string" == typeof e) return e;
     if (Array.isArray(e)) {
-      for (let n of e) t += P(n.content);
+      for (let n of e) t += R(n.content);
       return t
     }
-    return P(e.content)
+    return R(e.content)
   } catch (e) {
     return b.error("Failed to convert ASTNode to string", e), ""
   }
 };
 
-function R(e) {
+function P(e) {
   var t;
   let n = C(E(m({}, e), {
     currentUser: null != (t = e.currentUser) ? t : o.default.getCurrentUser()
   }));
-  return e.withoutMarkdown ? P(n) : n
+  return e.withoutMarkdown ? R(n) : n
 }
 
 function w(e) {
@@ -297,7 +297,7 @@ function w(e) {
     quest: t,
     questContent: r
   }), l = (0, i.e7)([o.default], () => o.default.getCurrentUser()), u = (0, s.Jf)(t);
-  return R(E(m({}, e), {
+  return P(E(m({}, e), {
     connectedConsoleLinkOnClick: a,
     withoutMarkdown: !1,
     withSimplifiedCopy: (0, c.j)({

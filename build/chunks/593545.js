@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => R
+  Z: () => P
 }), n(35282), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -235,7 +235,7 @@ function A(e) {
     children: t => (0, r.jsx)(l.P3F, y(E({}, t), {
       className: h.openFullPreviewSection,
       onClick: () => {
-        (0, l.h7j)(t => (0, r.jsx)(P, E({}, e, t)))
+        (0, l.h7j)(t => (0, r.jsx)(R, E({}, e, t)))
       },
       children: (0, r.jsx)(l.bJT, {
         size: "xs",
@@ -264,8 +264,8 @@ function C(e) {
   }) : C += " " + p.NW.formatToPlainString(p.t["1+gGcH"], {
     formattedBytes: (0, _.IC)(g)
   }));
-  let P = (null == b ? void 0 : b.slice(0, v).join("\n")) + C,
-    R = (0, u.yx)(P),
+  let R = (null == b ? void 0 : b.slice(0, v).join("\n")) + C,
+    P = (0, u.yx)(R),
     w = c || v < y;
   return (0, r.jsxs)("div", {
     className: a()(E, h.container),
@@ -276,7 +276,7 @@ function C(e) {
       children: null == s ? (0, r.jsx)(l.$jN, {
         className: h.spinner
       }) : (0, r.jsx)(I, {
-        text: R,
+        text: P,
         language: f
       })
     }), (0, r.jsxs)(l.Text, {
@@ -311,7 +311,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     url: t,
     fileName: n,
@@ -356,7 +356,7 @@ function P(e) {
     })
   })
 }
-let R = i.memo(function(e) {
+let P = i.memo(function(e) {
   let {
     url: t,
     fileName: n,

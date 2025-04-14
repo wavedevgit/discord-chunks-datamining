@@ -271,12 +271,12 @@ function A(e) {
     onClose: b,
     onSelect: v,
     onInteraction: I
-  } = e, A = S(h), C = T(A), R = i.useRef([]);
-  l()(R.current, C) || (R.current = C);
+  } = e, A = S(h), C = T(A), P = i.useRef([]);
+  l()(P.current, C) || (P.current = C);
   let w = null == (t = A.find(e => null != e.key)) ? void 0 : t.key,
     D = (0, c.ZP)({
       navId: n,
-      items: R.current,
+      items: P.current,
       initialFocusPath: p.Z.keyboardModeEnabled && null != w ? [w] : [],
       closeMenu: b
     });
@@ -301,7 +301,7 @@ function A(e) {
         className: E.scroller,
         children: [0 === A.length && (0, r.jsx)(g.ck, {
           disabled: !0,
-          label: () => (0, r.jsx)(P, {}),
+          label: () => (0, r.jsx)(R, {}),
           menuItemProps: D.getItemProps({
             path: ["empty"]
           }),
@@ -321,7 +321,7 @@ function C() {
   })
 }
 
-function P() {
+function R() {
   let e = "♫ (つ｡◕‿‿◕｡)つ ♪",
     t = "♫ ⊂(｡◕‿‿◕｡⊂) ♪",
     [n, o] = i.useState(e);

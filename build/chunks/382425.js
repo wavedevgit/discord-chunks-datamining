@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(496675),
   A = n(158776),
   C = n(699516),
-  P = n(938475),
-  R = n(626135),
+  R = n(938475),
+  P = n(626135),
   w = n(960870),
   D = n(139793),
   L = n(510659),
@@ -73,7 +73,7 @@ function J(e) {
   }, {
     enabled: ea,
     analyticsEligible: es
-  } = (0, m.R4)("user-profile-stream-activity-card-web"), el = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), ec = (0, s.e7)([S.Z], () => S.Z.getChannel(null == o ? void 0 : o.channelId)), eu = (0, s.Wu)([P.ZP], () => null != ec ? P.ZP.getVoiceStatesForChannel(ec).map(e => {
+  } = (0, m.R4)("user-profile-stream-activity-card-web"), el = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), ec = (0, s.e7)([S.Z], () => S.Z.getChannel(null == o ? void 0 : o.channelId)), eu = (0, s.Wu)([R.ZP], () => null != ec ? R.ZP.getVoiceStatesForChannel(ec).map(e => {
     let {
       user: t
     } = e;
@@ -96,7 +96,7 @@ function J(e) {
   i.useEffect(() => {
     if (es) {
       var e;
-      R.default.track(Y.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+      P.default.track(Y.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
         discoverable: null == (e = o.discoverable) || e,
         surface: "user-profile-stream-activity-card",
@@ -231,7 +231,7 @@ function J(e) {
     }),
     eA = eg,
     eC = er === W.n_.ACTIVITY && ei === eA,
-    eP = null != ed ? K.NW.formatToPlainString(K.t["4CQq9f"], {
+    eR = null != ed ? K.NW.formatToPlainString(K.t["4CQq9f"], {
       name: ed.name
     }) : K.NW.string(K.t["Jpkr/v"]);
   return (0, r.jsx)(h.Gt, {
@@ -244,7 +244,7 @@ function J(e) {
         guildId: ee,
         profileType: et,
         sourceId: eA,
-        sourceDetails: eP,
+        sourceDetails: eR,
         sourceType: W.n_.ACTIVITY,
         onAction: e_,
         children: () => (0, r.jsx)(M.Z, {
@@ -270,7 +270,7 @@ function J(e) {
             onAction: e_,
             onClose: $,
             children: [(0, r.jsx)(G.Z, {
-              text: eP,
+              text: eR,
               tags: (0, r.jsx)(g.ZP, {
                 size: g.OH.SMALL
               })

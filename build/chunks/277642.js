@@ -21,8 +21,8 @@ function o(e) {
 }
 
 function c() {
-  return (0, n.e7)([s.ZP, i.default], () => {
-    let e = s.ZP.getUserIds();
+  return (0, n.e7)([s.Z, i.default], () => {
+    let e = s.Z.getUserIds();
     return null == e || a(e, i.default.getId())
   })
 }

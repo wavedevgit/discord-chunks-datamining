@@ -30,8 +30,8 @@ var r = n(200651),
   N = n(98528),
   A = n(770812),
   C = n(434404),
-  P = n(536442),
-  R = n(609218),
+  R = n(536442),
+  P = n(609218),
   w = n(695346),
   D = n(984933),
   L = n(594174),
@@ -235,8 +235,8 @@ let ec = (e, t) => {
         shouldShowSoundmojiInEmojiPicker: eC = !1
       } = e,
       {
-        onFocus: eP,
-        onKeyDown: eR,
+        onFocus: eR,
+        onKeyDown: eP,
         autoFocus: ew = !0,
         accessory: eD
       } = ev,
@@ -370,7 +370,7 @@ let ec = (e, t) => {
     }, [eg]), i.useEffect(() => (x.default.track(Q.rMx.OPEN_POPOUT, {
       type: null != eQ ? eQ : "Emoji Picker",
       guild_id: eV
-    }), I.kJ.resetStoreState), [eQ, eV]), i.useEffect(() => () => (0, P.Kw)(P.v6.FAVORITE_EMOJI_TOOLTIP), []), i.useLayoutEffect(() => {
+    }), I.kJ.resetStoreState), [eQ, eV]), i.useEffect(() => () => (0, R.Kw)(R.v6.FAVORITE_EMOJI_TOOLTIP), []), i.useLayoutEffect(() => {
       var e;
       let {
         columnIndex: t,
@@ -388,8 +388,8 @@ let ec = (e, t) => {
     let tc = null != eO ? eO : C ? "div" : _.VqE,
       tu = null != e5;
     if ((null == ex ? void 0 : ex.type) === H.Bg.PREMIUM) {
-      let e = R.p.NONE;
-      2 === k ? e = R.p.PARENT_CONTAINER : 1 === k && (e = R.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(z.Z, {
+      let e = P.p.NONE;
+      2 === k ? e = P.p.PARENT_CONTAINER : 1 === k && (e = P.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(z.Z, {
         onLearnMore: tr,
         emojiDescriptor: ex.emojiDescriptor,
         pickerIntention: l,
@@ -418,10 +418,10 @@ let ec = (e, t) => {
         pickerIntention: l,
         emojiListRef: eG,
         onKeyDown: e => {
-          null == ts || ts(e), null == eR || eR(e)
+          null == ts || ts(e), null == eP || eP(e)
         },
         searchBarRef: eB,
-        onFocus: eP,
+        onFocus: eR,
         autoFocus: ew,
         accessory: eD,
         headerClassName: eb,

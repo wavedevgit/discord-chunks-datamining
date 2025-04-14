@@ -132,21 +132,21 @@ e.exports = function(e) {
         }]
       }), e.C_BLOCK_COMMENT_MODE, e.C_LINE_COMMENT_MODE]
     },
-    P = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, N, A, {
+    R = [e.APOS_STRING_MODE, e.QUOTE_STRING_MODE, S, T, N, A, {
       match: /\$\d+/
     }, O];
-  I.contains = P.concat({
+  I.contains = R.concat({
     begin: /\{/,
     end: /\}/,
     keywords: E,
-    contains: ["self"].concat(P)
+    contains: ["self"].concat(R)
   });
-  let R = [].concat(C, I.contains),
-    w = R.concat([{
+  let P = [].concat(C, I.contains),
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
-      contains: ["self"].concat(R)
+      contains: ["self"].concat(P)
     }]),
     D = {
       className: "params",

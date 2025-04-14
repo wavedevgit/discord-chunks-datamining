@@ -50,23 +50,23 @@ function C(e) {
   return [s.tI.VIEW_CHANNEL, s.tI.VIEW_THREAD, s.tI.VIEW_MESSAGE_REQUEST].includes(e.type)
 }
 
-function P(e) {
+function R(e) {
   let t = !1;
   S && (S = !1, t = !0);
   let n = A(_.Z.getChannelId());
   return null != n && n in T && (delete T[n], t = !0), t && e ? e : !e
 }
 
-function R() {
-  O && (O = P(O)), v = P(v)
+function P() {
+  O && (O = R(O)), v = R(v)
 }
 
 function w() {
-  v && (v = P(v)), O = P(O)
+  v && (v = R(v)), O = R(O)
 }
 
 function D() {
-  I || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), I = P(I)
+  I || l.S.dispatch(m.CkL.SEARCH_RESULTS_CLOSE), I = R(I)
 }
 
 function L(e) {
@@ -231,7 +231,7 @@ class H extends(r = o.ZP.PersistedStore) {
 }
 b(H, "displayName", "ChannelSectionStore"), b(H, "persistKey", "ChannelSectionStore2");
 let W = new H(a.Z, {
-  CHANNEL_TOGGLE_MEMBERS_SECTION: R,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: P,
   PROFILE_PANEL_TOGGLE_SECTION: D,
   CHANNEL_TOGGLE_SUMMARIES_SECTION: w,
   SIDEBAR_VIEW_CHANNEL: M,

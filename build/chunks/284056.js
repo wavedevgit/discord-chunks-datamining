@@ -239,7 +239,7 @@ function j(e) {
       inputMode: p.Z.getMode(),
       isDeafened: p.Z.isSelfDeaf()
     }
-  }), f = (0, l.e7)([h.ZP], () => h.ZP.isConnected()), {
+  }), f = (0, l.e7)([h.Z], () => h.Z.isConnected()), {
     ref: b,
     width: N
   } = (0, m.Z)();

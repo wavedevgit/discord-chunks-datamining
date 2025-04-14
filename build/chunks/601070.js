@@ -63,11 +63,11 @@ let O = {},
   N = {},
   A = {},
   C = null,
-  P = {};
+  R = {};
 
-function R() {
-  for (let e in O = {}, N = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), P) clearTimeout(P[e]);
-  P = {}, p.Z.forEachGuild(e => {
+function P() {
+  for (let e in O = {}, N = {}, I = {}, S = {}, T = {}, C = f.Z.getChannelId(), R) clearTimeout(R[e]);
+  R = {}, p.Z.forEachGuild(e => {
     D(e)
   }), L()
 }
@@ -159,7 +159,7 @@ function U(e) {
     channels: t
   } = e;
   for (let e of t)
-    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) return void R();
+    if (e.isNSFW() !== G(e.guild_id, e.parent_id)) return void P();
   return !1
 }
 
@@ -295,7 +295,7 @@ function Q(e, t) {
 }
 
 function X(e) {
-  P[e.id] = setTimeout(() => {
+  R[e.id] = setTimeout(() => {
     let t = c.Z.getChannel(e.id);
     null != t && s.Z.dispatch({
       type: "THREAD_UPDATE",
@@ -305,7 +305,7 @@ function X(e) {
 }
 
 function J(e) {
-  e in P && (clearTimeout(P[e]), delete P[e])
+  e in R && (clearTimeout(R[e]), delete R[e])
 }
 
 function $(e, t, n, r) {
@@ -407,16 +407,16 @@ class el extends(r = a.ZP.Store) {
 }
 E(el, "displayName", "ActiveJoinedThreadsStore");
 let ec = new el(s.Z, {
-  CONNECTION_OPEN: R,
-  OVERLAY_INITIALIZE: R,
+  CONNECTION_OPEN: P,
+  OVERLAY_INITIALIZE: P,
   THREAD_LIST_SYNC: Y,
-  LOAD_THREADS_SUCCESS: R,
-  LOAD_ARCHIVED_THREADS_SUCCESS: R,
-  SEARCH_FINISH: R,
-  MOD_VIEW_SEARCH_FINISH: R,
+  LOAD_THREADS_SUCCESS: P,
+  LOAD_ARCHIVED_THREADS_SUCCESS: P,
+  SEARCH_FINISH: P,
+  MOD_VIEW_SEARCH_FINISH: P,
   GUILD_CREATE: W,
-  GUILD_DELETE: R,
-  CURRENT_USER_UPDATE: R,
+  GUILD_DELETE: P,
+  CURRENT_USER_UPDATE: P,
   THREAD_CREATE: j,
   THREAD_UPDATE: j,
   THREAD_DELETE: j,

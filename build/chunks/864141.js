@@ -30,8 +30,8 @@ var i = n(120356),
   N = n(788858),
   A = n(849755),
   C = n(384298),
-  P = n(670451),
-  R = n(228168),
+  R = n(670451),
+  P = n(228168),
   w = n(388032),
   D = n(227832);
 
@@ -84,7 +84,7 @@ function j(e) {
   } = e, {
     profileType: j
   } = (0, v.z)(), U = {
-    [D.fullSize]: j === R.y0.FULL_SIZE
+    [D.fullSize]: j === P.y0.FULL_SIZE
   }, {
     analyticsLocations: G
   } = (0, d.ZP)(u.Z.USER_PROFILE_VOICE_ACTIVITY_CARD), B = (0, b.Z)({
@@ -170,7 +170,7 @@ function j(e) {
       children: [(0, r.jsx)(I.Z, {
         text: Y(),
         tags: K(),
-        contextMenu: (0, r.jsx)(P.Z, {
+        contextMenu: (0, r.jsx)(R.Z, {
           display: "voice",
           user: t,
           onClose: M
@@ -182,9 +182,9 @@ function j(e) {
           children: [(0, r.jsx)(T.Z, {
             users: Z,
             channel: i
-          }), z(), j === R.y0.FULL_SIZE && q()]
+          }), z(), j === P.y0.FULL_SIZE && q()]
         })
-      }), j !== R.y0.FULL_SIZE && q()]
+      }), j !== P.y0.FULL_SIZE && q()]
     })
   })
 }

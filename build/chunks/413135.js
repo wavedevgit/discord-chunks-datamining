@@ -220,11 +220,11 @@ function C(e, t, n, r) {
   return A(e, t, n, r)
 }
 
-function P(e, t, n, r) {
+function R(e, t, n, r) {
   return Q(q(t), e, n, r)
 }
 
-function R(e, t, n, r) {
+function P(e, t, n, r) {
   return Q(z(t, e.length - n), e, n, r)
 }
 
@@ -388,12 +388,12 @@ r = 0x7fffffff, c.TYPED_ARRAY_SUPPORT = function e() {
     case "binary":
       return C(this, e, t, n);
     case "base64":
-      return P(this, e, t, n);
+      return R(this, e, t, n);
     case "ucs2":
     case "ucs-2":
     case "utf16le":
     case "utf-16le":
-      return R(this, e, t, n);
+      return P(this, e, t, n);
     default:
       if (o) throw TypeError("Unknown encoding: " + r);
       r = ("" + r).toLowerCase(), o = !0

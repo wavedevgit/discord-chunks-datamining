@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(496675),
   A = n(158776),
   C = n(699516),
-  P = n(938475),
-  R = n(626135),
+  R = n(938475),
+  P = n(626135),
   w = n(960870),
   D = n(139793),
   L = n(652853),
@@ -65,7 +65,7 @@ function z(e) {
   }, {
     enabled: $,
     analyticsEligible: ee
-  } = (0, m.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([S.Z], () => S.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([P.ZP], () => null != en ? P.ZP.getVoiceStatesForChannel(en).map(e => {
+  } = (0, m.R4)("user-profile-stream-activity-card-web"), et = (0, s.e7)([T.Z], () => T.Z.getGuild(null == o ? void 0 : o.guildId)), en = (0, s.e7)([S.Z], () => S.Z.getChannel(null == o ? void 0 : o.channelId)), er = (0, s.Wu)([R.ZP], () => null != en ? R.ZP.getVoiceStatesForChannel(en).map(e => {
     let {
       user: t
     } = e;
@@ -88,7 +88,7 @@ function z(e) {
   i.useEffect(() => {
     if (ee) {
       var e;
-      R.default.track(F.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+      P.default.track(F.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
         discoverable: null == (e = o.discoverable) || e,
         surface: "user-profile-stream-activity-card",

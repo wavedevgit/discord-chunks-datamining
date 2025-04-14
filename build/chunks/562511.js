@@ -27,7 +27,7 @@ function p(e) {
       var t;
       if (null === e) return !1;
       let n = u.Z.getGuild(e);
-      if (void 0 === n || !(0, h.u)(n) || null == n.profile) return !1;
+      if (void 0 === n || !(0, h.u)(n) || null == n.profile || null === n.profile.tag) return !1;
       let i = d.default.getCurrentUser();
       if (void 0 === i || (null == (t = i.primaryGuild) ? void 0 : t.identityGuildId) === n.id) return !1;
       let r = c.ZP.getMember(e, i.id);

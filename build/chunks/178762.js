@@ -33,8 +33,8 @@ var r = n(200651),
   N = n(678869),
   A = n(278399),
   C = n(886217),
-  P = n(555672),
-  R = n(644548),
+  R = n(555672),
+  P = n(644548),
   w = n(335326),
   D = n(268010),
   L = n(797342),
@@ -117,7 +117,7 @@ let W = e => {
           entry: t
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(P.ZP, G(j({}, n), {
+        return (0, r.jsx)(R.ZP, G(j({}, n), {
           entry: t
         }));
       case l.s.TOP_ARTIST:
@@ -175,7 +175,7 @@ let W = e => {
           entry: n
         }));
       case l.s.TOP_GAME:
-        return (0, r.jsx)(R.Z, G(j({}, i), {
+        return (0, r.jsx)(P.Z, G(j({}, i), {
           entry: n
         }));
       case l.s.TOP_ARTIST:
@@ -216,10 +216,10 @@ let W = e => {
       guildId: p.channel.guild_id,
       requestId: p.requestId,
       richPresenceName: O ? I : void 0
-    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [N, A] = i.useState(!1), [C, P] = i.useState(!1), R = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
+    }), [I, p.channel.guild_id, p.channel.id, p.entry, p.requestId, O]), T = i.useRef(!1), [N, A] = i.useState(!1), [C, R] = i.useState(!1), P = (0, c.e7)([_.Z], () => _.Z.keyboardModeEnabled);
     i.useEffect(() => {
-      N && R && P(!0)
-    }, [N, R]);
+      N && P && R(!0)
+    }, [N, P]);
     let w = i.useCallback(e => {
         v && (0, f.jW)(e, async () => {
           let {
@@ -246,7 +246,7 @@ let W = e => {
       }), []),
       V = () => {
         T.current = !1, setTimeout(() => {
-          T.current || (A(!1), P(R))
+          T.current || (A(!1), R(P))
         }, 100)
       };
     return (0, r.jsx)("div", {

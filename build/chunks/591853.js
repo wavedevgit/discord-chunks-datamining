@@ -35,8 +35,8 @@ var c = n(442837),
   N = n(258609),
   A = n(810568),
   C = n(168524),
-  P = n(102172),
-  R = n(871118),
+  R = n(102172),
+  P = n(871118),
   w = n(565138),
   D = n(66999),
   L = n(790642),
@@ -193,10 +193,10 @@ function ev(e) {
     buttons: h = [],
     header: m,
     onVoiceChannelPreview: g
-  } = e, [E, v] = i.useState(!1), [O, S] = i.useState(null), T = (0, c.e7)([B.Z], () => null != t && el.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && B.Z.can(el.Plq.SEND_MESSAGES, t)), [N, A] = i.useState(!1), [C, P] = i.useState(!1), {
-    voiceBar: R,
+  } = e, [E, v] = i.useState(!1), [O, S] = i.useState(null), T = (0, c.e7)([B.Z], () => null != t && el.TPd.CONTENT_ENTRY_EMBEDS.has(t.type) && B.Z.can(el.Plq.SEND_MESSAGES, t)), [N, A] = i.useState(!1), [C, R] = i.useState(!1), {
+    voiceBar: P,
     joinVoiceButton: w
-  } = eP({
+  } = eR({
     channel: t,
     entry: p,
     onVoiceChannelPreview: g
@@ -213,7 +213,7 @@ function ev(e) {
           surface_type: es.Kd.GUILD_MEMBER_LIST,
           channel_id: null == t ? void 0 : t.id,
           guild_id: null == t ? void 0 : t.guild_id
-        }), (0, I.EW)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(!0), P(!1), E) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
+        }), (0, I.EW)(u.z.CONTENT_INVENTORY_ONE_CLICK_REPLY_COACHTIP), A(!0), R(!1), E) l()(null != t, "shareToChannelMode should only be true if a valid channel is passed"), r = t;
       else {
         var i;
         let e = await _.Z.getOrEnsurePrivateChannel(n.id);
@@ -223,7 +223,7 @@ function ev(e) {
         reply: ":".concat(e.name, ":"),
         sendToChannel: r,
         onComplete: (e, t) => {
-          P(!0), setTimeout(() => {
+          R(!0), setTimeout(() => {
             A(!1), s(e, t)
           }, 600)
         },
@@ -271,7 +271,7 @@ function ev(e) {
       })
     }
     null == r || r(i, n)
-  }, Q = null != m ? m : null != R ? R : null != x ? x : void 0;
+  }, Q = null != m ? m : null != P ? P : null != x ? x : void 0;
   return i.useEffect(() => {
     G && (null == O || O.focus())
   }, [O, E, G]), (0, r.jsxs)("div", {
@@ -572,7 +572,7 @@ function eN(e) {
     } = e,
     g = eh(e, ["title", "subtitle", "badges", "stream", "onClickThumbnail", "onClickTitle", "onClickSubtitle", "onUserPopoutClosed", "trackRankingItemInteraction"]);
   let E = (0, c.e7)([U.Z], () => U.Z.getChannel(null == s ? void 0 : s.channelId)),
-    [b] = i.useMemo(() => (0, P.p9)(E, H.Z, G.Z, B.Z, N.Z), [E]),
+    [b] = i.useMemo(() => (0, R.p9)(E, H.Z, G.Z, B.Z, N.Z), [E]),
     {
       entry: y
     } = g,
@@ -614,7 +614,7 @@ function eN(e) {
         } : void 0,
         children: (0, r.jsxs)("div", {
           className: eu.streamingPopoutPreviewContainer,
-          children: [(0, r.jsx)(R.Z, {
+          children: [(0, r.jsx)(P.Z, {
             className: eu.streamingPopoutImg,
             stream: s
           }), b && (0, r.jsx)("div", {
@@ -736,7 +736,7 @@ function eC(e) {
   }) : null
 }
 
-function eP(e) {
+function eR(e) {
   let {
     channel: t,
     entry: n,

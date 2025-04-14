@@ -1,6 +1,6 @@
 /**
   Module ID: 96408
-  Original File Name: 8c3702e0ff7d5cc3
+  Original File Name: c4e1937794cb51f7
 **/
 .rootContainer_f4adbd {
     align-items: center;
@@ -463,9 +463,9 @@
 }
 
 .message_fcf29c {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1384,4 +1384,4 @@
     background-color: var(--bg-mod-subtle)
 }
 
-/*# sourceMappingURL=8c3702e0ff7d5cc3.css.map*/
+/*# sourceMappingURL=c4e1937794cb51f7.css.map*/

@@ -99,15 +99,15 @@ let I = {
     return (0, g.bc)("resolveSettingWithDefaults") ? w({
       isDm: n,
       isFriend: r
-    }) : (0, g.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? R({
+    }) : (0, g.g2)("resolveSettingWithDefaults") ? i.Q4.BLUR : (null == o ? void 0 : o.nsfwAllowed) === !1 ? P({
       isDm: n,
       isFriend: r
-    }) : P({
+    }) : R({
       isDm: n,
       isFriend: r
     })
   },
-  P = e => {
+  R = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1
@@ -116,7 +116,7 @@ let I = {
     let r = u.UP.getSetting();
     return n ? I[r] : S[r]
   },
-  R = e => {
+  P = e => {
     let {
       isDm: t = !1,
       isFriend: n = !1

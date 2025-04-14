@@ -29,9 +29,9 @@ var r = n(392711),
   N = n(51144),
   A = n(981631),
   C = n(185923),
-  P = n(388032);
+  R = n(388032);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -47,7 +47,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -330,7 +330,7 @@ let U = u.Z.RULES,
     spoiler: {
       match: a().anyScopeRegex(A.$92),
       parse: () => ({
-        content: "<".concat(P.NW.string(P.t["F+x38P"]).toLowerCase(), ">")
+        content: "<".concat(R.NW.string(R.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {

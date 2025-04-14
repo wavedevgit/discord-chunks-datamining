@@ -83,12 +83,12 @@ function C(e) {
   return [t, ...n]
 }
 
-function P(e) {
+function R(e) {
   return {
     id: e
   }
 }
-async function R(e) {
+async function P(e) {
   if (Array.isArray(e) || (e = [e]), c.Z.isDeveloper || (e = e.filter(e => null == e.thirdPartySkus || -1 === e.thirdPartySkus.findIndex(e => {
       let {
         distributor: t
@@ -125,8 +125,8 @@ let L = {
   waitConnected(e) {
     return new Promise(w.bind(this, () => l.Z.isConnected(e)))
   },
-  isLaunchable: e => R(C(e)).then(e => null != e).catch(() => !1),
-  launch: e => R(C(e)).then(D),
+  isLaunchable: e => P(C(e)).then(e => null != e).catch(() => !1),
+  launch: e => P(C(e)).then(D),
   launchDispatchApplication(e, t, n, i, a) {
     let {
       launchOptions: l,
@@ -173,8 +173,8 @@ let L = {
       return null != (s = null == (i = r.createShortcuts) ? void 0 : i.call(r, e, t, n, o, a)) && s
     })
   },
-  isGameLaunchable: e => R(P(e)).then(e => null != e).catch(() => !1),
-  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : R(P(e)).then(D),
+  isGameLaunchable: e => P(R(e)).then(e => null != e).catch(() => !1),
+  launchGame: e => l.Z.isConnected(e) ? Promise.resolve() : P(R(e)).then(D),
   isProtocolRegistered: e => A().then(t => {
     var n, r;
     return null != (r = null == (n = t.isProtocolSchemeRegistered) ? void 0 : n.call(t, e)) && r

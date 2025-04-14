@@ -6,7 +6,7 @@ n.d(t, {
   Fr: () => C,
   Fz: () => A,
   Ko: () => p,
-  Pe: () => P,
+  Pe: () => R,
   WU: () => N,
   cl: () => I,
   g9: () => b,
@@ -226,7 +226,7 @@ function C(e, t) {
   return (null != t || !n) && (null == t || !n || !!u.KA4.test(t.type))
 }
 
-function P() {
+function R() {
   (0, a.Pe)(), S.reset(), i()(a.ZP).forOwn((e, t) => S.addRule(_({
     type: t
   }, e)))

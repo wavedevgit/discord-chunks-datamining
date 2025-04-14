@@ -28,17 +28,17 @@ function s(e, t) {
       }
       let u = null != (l = null == (s = r.Z.getChannel(c)) ? void 0 : s.type) ? l : o.d4z.UNKNOWN;
       return {
-        timestamp: new Date, rtc_state: i.ZP.getState(), channelId: c, channelType: u
+        timestamp: new Date, rtc_state: i.Z.getState(), channelId: c, channelType: u
       };
     case o.rMx.GUILD_VIEWED_CLICKSTREAM:
       let d = (n = t).guildId;
       return {
-        timestamp: new Date, rtc_state: i.ZP.getState(), guildId: d
+        timestamp: new Date, rtc_state: i.Z.getState(), guildId: d
       };
     case o.rMx.FRIENDS_LIST_VIEWED_CLICKSTREAM:
       return n = t, {
         timestamp: new Date,
-        rtc_state: i.ZP.getState(),
+        rtc_state: i.Z.getState(),
         tab_opened: n.tab_opened,
         num_friends: n.num_friends,
         now_playing_visible: n.now_playing_visible,

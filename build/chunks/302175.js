@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(840969),
   C = n(501867);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -76,7 +76,7 @@ function L(e) {
     onClose: o
   } = e, {
     analyticsLocations: l
-  } = (0, f.ZP)(), c = null != (0, y.Z)(t, n), m = (0, v.Z)(t), [g, E] = i.useState(!1), [I, P] = i.useState(!1), w = I, L = i.useCallback(() => {
+  } = (0, f.ZP)(), c = null != (0, y.Z)(t, n), m = (0, v.Z)(t), [g, E] = i.useState(!1), [I, R] = i.useState(!1), w = I, L = i.useCallback(() => {
     let e = h.Z.getGuild(t);
     null != e && (0, _.u)({
       analyticsLocation: {
@@ -111,8 +111,8 @@ function L(e) {
     className: a()(C.topPerksCard, C.animatedTopPerksCard, A.powerupCard, {
       [C.animate]: g
     }),
-    onMouseEnter: () => P(!0),
-    onMouseLeave: () => P(!1),
+    onMouseEnter: () => R(!0),
+    onMouseLeave: () => R(!1),
     children: [(0, r.jsx)("div", {
       className: C.intObserver,
       ref: B
@@ -125,7 +125,7 @@ function L(e) {
         style: k
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: D(R({}, j), {
+      style: D(P({}, j), {
         transform: j.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: a()(C.contentContainer, A.contentContainer),

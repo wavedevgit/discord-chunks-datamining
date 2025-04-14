@@ -38,7 +38,7 @@ function m(e) {
   return e
 }
 let g = () => {
-  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.ZP], () => d.ZP.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), g = null != t && t.elevated && n && h && e, E = i.useRef(null);
+  let [e, t] = (0, o.Wu)([c.ZP], () => [c.ZP.canShowAdminWarning, c.ZP.getVisibleGame()], []), n = (0, o.e7)([d.Z], () => d.Z.isConnected(), []), h = (0, o.e7)([u.Z], () => u.Z.getMode() === _.pM4.PUSH_TO_TALK, []), g = null != t && t.elevated && n && h && e, E = i.useRef(null);
 
   function b() {
     null !== E.current && ((0, a.Mr3)(E.current), E.current = null)

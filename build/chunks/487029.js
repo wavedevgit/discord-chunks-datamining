@@ -31,8 +31,8 @@ function m(e) {
     keepOpen: C,
     interactive: j = !0,
     analyticsSource: I,
-    onClose: P
-  } = e, S = function(e) {
+    onClose: S
+  } = e, P = function(e) {
     let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
@@ -46,16 +46,16 @@ function m(e) {
         };
       return l.forEach(e => i(e, !0)), l.forEach(e => i(e, !1)), r
     }, [t, n, e])
-  }((0, y.h)(n, !0)), T = (0, N.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, o.e7)([d.ZP], () => d.ZP.getMediaSessionId()), {
+  }((0, y.h)(n, !0)), T = (0, N.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), R = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: A
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
-    (0, g.GN)(e, n.id, A), P()
-  }, [A, n.id, P]);
+    (0, g.GN)(e, n.id, A), S()
+  }, [A, n.id, S]);
   l.useEffect(() => {
     f.w(), u.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
-    0 === S.length && 0 === T.length && P()
-  }, [S.length, T, P]), l.useEffect(() => () => {
+    0 === P.length && 0 === T.length && S()
+  }, [P.length, T, S]), l.useEffect(() => () => {
     let e = w.current;
     C || null == e || D(e)
   }, [C, D]), (0, c.Z)({
@@ -74,22 +74,22 @@ function m(e) {
     }, []),
     k = l.useCallback(e => {
       if (null == e) return void W(null);
-      let t = S[e];
+      let t = P[e];
       null != t && W(t)
-    }, [W, S]),
+    }, [W, P]),
     B = l.useCallback(e => {
       if (null == e) return;
-      let t = S[e];
+      let t = P[e];
       null != t && D(t)
-    }, [S, D]),
-    M = l.useMemo(() => S.map(e => (0, r.jsx)(b.ZP, {
+    }, [P, D]),
+    M = l.useMemo(() => P.map(e => (0, r.jsx)(b.ZP, {
       interactive: j,
       className: x.soundButton,
       sound: e,
       focused: Z === e.soundId,
       channel: n
-    }, e.soundId)), [Z, n, j, S]);
-  return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
+    }, e.soundId)), [Z, n, j, P]);
+  return 0 === P.length ? null : (0, r.jsx)(s.Gt, {
     value: A,
     children: (0, r.jsx)(O.Z, {
       wheelWidth: m,
@@ -100,7 +100,7 @@ function m(e) {
       activeItem: Z,
       onItemSelect: k,
       onItemAction: B,
-      onClose: P,
+      onClose: S,
       interactive: j,
       children: M
     })

@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(453070),
   A = n(926491),
   C = n(457040),
-  P = n(740492),
-  R = n(585483),
+  R = n(740492),
+  P = n(585483),
   w = n(5967),
   D = n(28546),
   L = n(957825),
@@ -131,7 +131,7 @@ let K = L.Om + k.Su.MEDIUM,
       positionContainerRef: t,
       drawerRef: n,
       orientation: r
-    } = e, o = (0, d.e7)([P.ZP], () => P.ZP.expressionPickerWidth), [a, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != o ? o : L._j.MIN), f = i.useMemo(() => {
+    } = e, o = (0, d.e7)([R.ZP], () => R.ZP.expressionPickerWidth), [a, s] = i.useState(window.innerWidth), [c, u] = i.useState(null != o ? o : L._j.MIN), f = i.useMemo(() => {
       switch (c) {
         case L._j.MIN:
           return L.Om;
@@ -175,7 +175,7 @@ function Q(e) {
   let {
     positionTargetRef: l,
     hideGifFavorites: h,
-    includeCreateEmojiButton: P,
+    includeCreateEmojiButton: R,
     onSelectGIF: V,
     onSelectEmoji: F,
     onSelectSticker: Z,
@@ -212,7 +212,7 @@ function Q(e) {
       n = n.parentNode
     }(0, D._Q)();
     let r = null == (t = (0, w.uB)(e)) ? void 0 : t.activeElement;
-    (null == r || "BODY" === r.tagName) && R.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
+    (null == r || "BODY" === r.tagName) && P.S.dispatchToLastSubscribed(x.CkL.TEXTAREA_FOCUS)
   }, [$, ep, e_]), em = i.useCallback(() => {
     (0, D._Q)()
   }, []);
@@ -220,8 +220,8 @@ function Q(e) {
     let e = () => {
       es === L.X1.GIF && (0, D._Q)()
     };
-    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), R.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
-      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), R.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
+    return ec.addEventListener("mousedown", eh), ec.addEventListener("contextmenu", eh), eu.subscribe(x.CkL.POPOUT_CLOSE, em), P.S.subscribe(x.CkL.CLOSE_GIF_PICKER, e), () => {
+      ec.removeEventListener("mousedown", eh), ec.removeEventListener("contextmenu", eh), eu.unsubscribe(x.CkL.POPOUT_CLOSE, em), P.S.unsubscribe(x.CkL.CLOSE_GIF_PICKER, e)
     }
   }, [es, em, eh, ec, eu]), (0, p.Tbt)(et);
   let [eg, eE] = (0, y.US)(ef ? [f.z.SOUNDMOJI_BADGE] : [], void 0, !1), [eb, ey] = i.useState(!1);
@@ -352,7 +352,7 @@ function Q(e) {
                 persistSearch: !0,
                 channel: W,
                 containerWidth: eo,
-                includeCreateEmojiButton: P,
+                includeCreateEmojiButton: R,
                 emojiSize: null != eo && eo < K ? k.Su.MEDIUM : k.Su.LARGE,
                 pickerIntention: j.Hz.CHAT,
                 closePopout: em,

@@ -40,7 +40,7 @@ function E(e) {
     t !== I && (S(t), N(n), o(t))
   }
 
-  function P() {
+  function R() {
     return new Promise(e => {
       e({
         shouldClear: !1,
@@ -78,7 +78,7 @@ function E(e) {
           A.current = !0
         },
         focused: A.current,
-        onSubmit: P,
+        onSubmit: R,
         disableThemedBackground: O
       }), (0, r.jsx)(s.nn4, {
         children: h.NW.format(h.t["+DFxLS"], {

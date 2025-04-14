@@ -79,12 +79,12 @@ let T = 108e5,
   N = 18e6,
   A = 16,
   C = 2,
-  P = {
+  R = {
     friction: 13,
     tension: 240,
     duration: 150
   },
-  R = {
+  P = {
     duration: 150,
     friction: 3
   },
@@ -300,11 +300,11 @@ class Y extends o.Component {
     t && !e.selected ? null == i || i.update({
       spring: 1,
       immediate: !1,
-      config: P
+      config: R
     }).start() : !t && e.selected && (null == i || i.update({
       spring: 0,
       immediate: !1,
-      config: R
+      config: P
     }).start()), null != n && null == e.lowerBadge ? null == o || o.update({
       spring: 1,
       immediate: !document.hasFocus(),
@@ -412,8 +412,8 @@ class Y extends o.Component {
       }, "svg")
     }, "wrapper");
     let N = "".concat(y, "-upper_badge_masks"),
-      P = "".concat(y, "-lower_badge_masks"),
-      R = "".concat(y, "-blob_mask"),
+      R = "".concat(y, "-lower_badge_masks"),
+      P = "".concat(y, "-blob_mask"),
       w = "".concat(y, "-stroke_mask"),
       D = "".concat(y, "-highlight_mask"),
       L = (null == a ? void 0 : a.width) != null ? a.width : A,
@@ -444,7 +444,7 @@ class Y extends o.Component {
             id: D
           }), (0, i.jsx)(d.animated.path, {
             d: this.getPathInterpolation(),
-            id: R
+            id: P
           }), S ? (0, i.jsx)(d.animated.rect, {
             id: N,
             x: f - k + m,
@@ -455,7 +455,7 @@ class Y extends o.Component {
             ry: k / 2,
             transform: this.getBadgePositionInterpolation(O, -1)
           }) : null, S ? (0, i.jsx)(d.animated.rect, {
-            id: P,
+            id: R,
             x: f - (L + 2 * m) + m,
             y: f - (x + 2 * m) + m,
             width: L + 2 * m,
@@ -475,7 +475,7 @@ class Y extends o.Component {
             href: "#".concat(D),
             fill: "black"
           }), (0, i.jsx)("use", {
-            href: "#".concat(R),
+            href: "#".concat(P),
             fill: "white",
             className: s()({
               [E.isHighlighted]: u
@@ -485,7 +485,7 @@ class Y extends o.Component {
               href: "#".concat(N),
               fill: "black"
             }), (0, i.jsx)("use", {
-              href: "#".concat(P),
+              href: "#".concat(R),
               fill: "black"
             })]
           }) : null]
@@ -501,7 +501,7 @@ class Y extends o.Component {
             href: "#".concat(N),
             fill: "black"
           }), (0, i.jsx)("use", {
-            href: "#".concat(P),
+            href: "#".concat(R),
             fill: "black"
           })]
         }) : null, I ? (0, i.jsxs)(o.Fragment, {
@@ -509,14 +509,14 @@ class Y extends o.Component {
             className: E.focusStroke,
             mask: "url(#".concat(w, ")"),
             children: (0, i.jsx)("use", {
-              href: "#".concat(R)
+              href: "#".concat(P)
             })
           }), (0, i.jsxs)("g", {
             className: E.focusFill,
             children: [null != c ? (0, i.jsx)("use", {
               href: "#".concat(N)
             }) : null, null != r ? (0, i.jsx)("use", {
-              href: "#".concat(P)
+              href: "#".concat(R)
             }) : null]
           })]
         }) : null, u && (0, i.jsx)(d.animated.path, {
@@ -589,7 +589,7 @@ function K(e) {
     y(!0)
   }, O = () => {
     y(!1)
-  }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), P = "".concat(T, "-lower_badge_masks"), R = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
+  }, I = null != h, S = null != m, T = o.useId(), N = "".concat(T, "-upper_badge_masks"), R = "".concat(T, "-lower_badge_masks"), P = "".concat(T, "-blob_mask"), w = "".concat(T, "-stroke_mask"), D = "".concat(T, "-highlight_mask"), L = (null == u ? void 0 : u.width) != null ? u.width : A, x = (null == u ? void 0 : u.height) != null ? u.height : A, M = {
     width: n + 8,
     height: n + 8,
     x: -4,
@@ -614,7 +614,7 @@ function K(e) {
           id: D
         }), (0, i.jsx)("path", {
           d: G,
-          id: R
+          id: P
         }), null != h ? (0, i.jsx)("rect", {
           id: N,
           className: E.badgeStroke,
@@ -625,7 +625,7 @@ function K(e) {
           rx: U / 2,
           ry: U / 2
         }) : null, null != m ? (0, i.jsx)("rect", {
-          id: P,
+          id: R,
           className: E.badgeStroke,
           x: n - (L + 2 * f) + f,
           y: n - (x + 2 * f) + f,
@@ -645,7 +645,7 @@ function K(e) {
           href: "#".concat(D),
           fill: "black"
         }), (0, i.jsx)("use", {
-          href: "#".concat(R),
+          href: "#".concat(P),
           fill: "white",
           className: s()({
             [E.isHighlighted]: d
@@ -654,7 +654,7 @@ function K(e) {
           href: "#".concat(N),
           fill: "black"
         }) : null, S ? (0, i.jsx)("use", {
-          href: "#".concat(P),
+          href: "#".concat(R),
           fill: "black"
         }) : null]
       }), I || S ? (0, i.jsxs)("mask", {
@@ -669,7 +669,7 @@ function K(e) {
           href: "#".concat(N),
           fill: "black"
         }) : null, S ? (0, i.jsx)("use", {
-          href: "#".concat(P),
+          href: "#".concat(R),
           fill: "black"
         }) : null]
       }) : null, b ? (0, i.jsxs)(i.Fragment, {
@@ -677,14 +677,14 @@ function K(e) {
           className: E.focusStroke,
           mask: "url(#".concat(w, ")"),
           children: (0, i.jsx)("use", {
-            href: "#".concat(R)
+            href: "#".concat(P)
           })
         }), (0, i.jsxs)("g", {
           className: E.focusFill,
           children: [null != h ? (0, i.jsx)("use", {
             href: "#".concat(N)
           }) : null, null != m ? (0, i.jsx)("use", {
-            href: "#".concat(P)
+            href: "#".concat(R)
           }) : null]
         })]
       }) : null, d && (0, i.jsx)("path", {

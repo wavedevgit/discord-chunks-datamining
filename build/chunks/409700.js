@@ -3,7 +3,7 @@
 n.d(t, {
   Dp: () => A,
   Hh: () => C,
-  ZP: () => P,
+  ZP: () => R,
   hq: () => T
 }), n(388685);
 var r = n(200651),
@@ -206,7 +206,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   let {
     sound: t,
     channel: n,

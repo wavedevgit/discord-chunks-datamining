@@ -127,7 +127,7 @@ let I = e => {
       enableClick: u = !0,
       channelId: g,
       messageId: b
-    } = e, [v, I] = i.useState(String(Date.now())), [S, N] = i.useState(!1), [A, C] = i.useState(!1), P = i.useRef(null), R = function() {
+    } = e, [v, I] = i.useState(String(Date.now())), [S, N] = i.useState(!1), [A, C] = i.useState(!1), R = i.useRef(null), P = function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
       return (0, r.jsx)(c.Z, O(y({}, e), {
         emojiName: t.name,
@@ -152,7 +152,7 @@ let I = e => {
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, O(y({}, e), {
-        innerRef: P,
+        innerRef: R,
         onMouseEnter: () => {
           var t;
           null == e || null == (t = e.onMouseEnter) || t.call(e)
@@ -171,7 +171,7 @@ let I = e => {
           [E.emojiContainerClickable]: u,
           [E.emojiJumbo]: t.jumboable
         }),
-        children: R(n)
+        children: P(n)
       }))
     }));
     if (!u) return D();
@@ -193,7 +193,7 @@ let I = e => {
       position: "right",
       renderPopout: L,
       positionKey: v,
-      targetElementRef: P,
+      targetElementRef: R,
       children: D
     })
   },

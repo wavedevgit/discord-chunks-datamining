@@ -32,12 +32,12 @@ function O(e) {
     children: O
   } = e, {
     selectedSkuId: I
-  } = (0, p.JL)(), [S, T] = i.useState(n), [N, A] = i.useState(), [C, P] = i.useState(!1), R = (0, _.pO)(S), w = (0, l.TX)(), {
+  } = (0, p.JL)(), [S, T] = i.useState(n), [N, A] = i.useState(), [C, R] = i.useState(!1), P = (0, _.pO)(S), w = (0, l.TX)(), {
     enabled: D
   } = c.O.useExperiment({
     location: "gift card"
   }), L = E;
-  R && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != y ? y : g, D && (L = h.Cj.NITROWEEN_STANDARD));
+  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != y ? y : g, D && (L = h.Cj.NITROWEEN_STANDARD));
   let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [V, F] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
@@ -58,7 +58,7 @@ function O(e) {
       giftRecipientError: N,
       setGiftRecipientError: A,
       validatingGiftRecipient: C,
-      setValidatingGiftRecipient: P,
+      setValidatingGiftRecipient: R,
       soundEffect: V,
       setSoundEffect: F,
       emojiConfetti: Z,

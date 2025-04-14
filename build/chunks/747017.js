@@ -35,12 +35,12 @@ function O(e) {
     animate: N = !0,
     hasQuest: A = !1,
     hideEmoji: C = !1,
-    hideTooltip: P = !1
-  } = e, R = "activity-status-web", {
+    hideTooltip: R = !1
+  } = e, P = "activity-status-web", {
     blockeeExperimentEnabled: w,
     blockerExperimentEnabled: D
-  } = (0, u.NR)(R);
-  (0, d.Z)(null == t ? void 0 : t.id, R);
+  } = (0, u.NR)(P);
+  (0, d.Z)(null == t ? void 0 : t.id, P);
   let L = w && (null == o ? void 0 : o.discoverable) === !1 ? null : o,
     x = i.useMemo(() => {
       var e, t;
@@ -66,7 +66,7 @@ function O(e) {
         textClassName: I,
         hideText: j,
         hideIcon: k,
-        hideTooltip: P
+        hideTooltip: R
       });
       let e = null == n ? void 0 : n.find(e => {
         let {
@@ -80,13 +80,13 @@ function O(e) {
         textClassName: I,
         hideText: j,
         hideIcon: k,
-        hideTooltip: P
+        hideTooltip: R
       }) : null != O ? (0, r.jsx)(E.Z, {
         channel: O,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: I,
         hideText: j,
-        hideTooltip: P
+        hideTooltip: R
       }) : null
     },
     G = () => {
@@ -97,7 +97,7 @@ function O(e) {
         children: [null != e && !C && (0, r.jsx)(_.Z, {
           emoji: e,
           animate: N,
-          hideTooltip: P,
+          hideTooltip: R,
           className: S
         }), null != t && (0, r.jsx)(h.Z, {
           variant: "text-".concat(T, "/medium"),

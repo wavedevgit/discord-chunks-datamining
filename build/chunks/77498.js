@@ -80,11 +80,11 @@ function C() {
   r = !0
 }
 
-function P() {
+function R() {
   r = !1
 }
 
-function R(e) {
+function P(e) {
   let {
     games: t,
     etag: n
@@ -177,6 +177,6 @@ p(w, "displayName", "GameStore"), p(w, "persistKey", "GameStore"), p(w, "migrati
 let D = new w(l.Z, {
   OVERLAY_INITIALIZE: A,
   GAMES_DATABASE_FETCH: C,
-  GAMES_DATABASE_FETCH_FAIL: P,
-  GAMES_DATABASE_UPDATE: R
+  GAMES_DATABASE_FETCH_FAIL: R,
+  GAMES_DATABASE_UPDATE: P
 })

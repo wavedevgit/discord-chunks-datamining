@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Z: () => w,
-  j: () => R
+  j: () => P
 });
 var r = n(526167),
   i = n(621554),
@@ -30,11 +30,11 @@ var r = n(526167),
   N = n(34721),
   A = n(410693),
   C = n(185672),
-  P = n(235731);
+  R = n(235731);
 
-function R() {
+function P() {
   let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-  return e ? P : i
+  return e ? R : i
 }
 let w = {
   DEFAULT_AVATARS: [o, a, s, l, c, u],

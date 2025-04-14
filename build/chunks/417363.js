@@ -63,8 +63,8 @@ let S = 200,
   N = +_.Z.Millis.MINUTE,
   A = {},
   C = "content",
-  P = "file://",
-  R = !1,
+  R = "file://",
+  P = !1,
   w = 0,
   D = 0,
   L = 0,
@@ -74,7 +74,7 @@ let S = 200,
   j = !1;
 
 function U() {
-  R = !1
+  P = !1
 }
 
 function G(e, t) {
@@ -118,7 +118,7 @@ function B(e) {
                 } = n,
                 a = i,
                 s = l.Z.fileManager.join(e, r);
-              (0, h.isMac)() && !s.startsWith(P) && (s = "".concat(P).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = I(v({}, n), {
+              (0, h.isMac)() && !s.startsWith(R) && (s = "".concat(R).concat(s)), t = null != o ? l.Z.fileManager.join(e, o) : l.Z.fileManager.dirname(s), E[a] = I(v({}, n), {
                 id: a,
                 fullExecutablePath: s,
                 fullWorkingDir: t
@@ -245,7 +245,7 @@ function X(e) {
   let {
     state: t
   } = e;
-  R = !0;
+  P = !0;
   let n = {},
     r = t.applications,
     i = null != t.currentTask ? t.currentTask.branchId : null,
@@ -345,7 +345,7 @@ class J extends(r = a.ZP.Store) {
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {
-      if (R) return setImmediate(e), !1
+      if (P) return setImmediate(e), !1
     })
   }
 }

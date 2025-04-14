@@ -66,7 +66,7 @@ function A(e, t) {
 
 function C(e, t) {
   if (null == e) return {};
-  var n, r, i = P(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,14 +74,14 @@ function C(e, t) {
   return i
 }
 
-function P(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = 20,
+let P = 20,
   w = 125,
   D = (0, g.hQ)(),
   L = d.Z.convert.fromCodePoint("1f44f"),
@@ -169,7 +169,7 @@ let j = e => {
             children: p.map((e, t) => (0, r.jsx)(j, {
               index: t,
               fade: 0 !== t,
-              delay: t * R,
+              delay: t * P,
               surrogate: e,
               onClick: o
             }, t))

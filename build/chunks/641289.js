@@ -69,18 +69,18 @@ e.exports = function(e) {
       literal: d
     },
     C = [E, S, N],
-    P = [{
+    R = [{
       match: r(/\./, o(...p)),
       relevance: 0
     }, {
       className: "built_in",
       match: r(/\b/, o(...p), /(?=\()/)
     }],
-    R = {
+    P = {
       match: /->/,
       relevance: 0
     },
-    w = [R, {
+    w = [P, {
       className: "operator",
       relevance: 0,
       variants: [{
@@ -217,7 +217,7 @@ e.exports = function(e) {
       begin: /</,
       end: />/,
       keywords: A,
-      contains: [...h, ...C, ...K, R, z]
+      contains: [...h, ...C, ...K, P, z]
     };
   z.contains.push(q);
   let Q = {
@@ -229,7 +229,7 @@ e.exports = function(e) {
         match: r(y, /\s*:/),
         keywords: "_|0",
         relevance: 0
-      }, ...h, H, ...C, ...P, ...w, x, B, ...Y, ...K, z]
+      }, ...h, H, ...C, ...R, ...w, x, B, ...Y, ...K, z]
     },
     X = {
       begin: /</,
@@ -326,7 +326,7 @@ e.exports = function(e) {
   for (let e of B.variants) {
     let t = e.contains.find(e => "interpol" === e.label);
     t.keywords = A;
-    let n = [...C, ...P, ...w, x, B, ...Y];
+    let n = [...C, ...R, ...w, x, B, ...Y];
     t.contains = [...n, {
       begin: /\(/,
       end: /\)/,
@@ -341,6 +341,6 @@ e.exports = function(e) {
       end: /$/,
       contains: [...h],
       relevance: 0
-    }, H, ...C, ...P, ...w, x, B, ...Y, ...K, z, Q]
+    }, H, ...C, ...R, ...w, x, B, ...Y, ...K, z, Q]
   }
 }

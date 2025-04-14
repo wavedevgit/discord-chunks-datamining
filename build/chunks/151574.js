@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(280930),
   A = n(606301),
   C = n(278754),
-  P = n(981631),
-  R = n(388032),
+  R = n(981631),
+  P = n(388032),
   w = n(813567);
 
 function D(e, t, n) {
@@ -243,7 +243,7 @@ let W = i.memo(function(e) {
     }),
     es = (e, t) => {
       if (eo) {
-        if (T.default.track(P.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
+        if (T.default.track(R.rMx.AUTO_SUGGEST_EXPRESSION_SELECTED, {
             sticker_id: e.id,
             suggestion_trigger: Y
           }), t === E.eb.SENDABLE) x(!0), c(e, y.V0.EXPRESSION_SUGGESTIONS), et.cancel(), W("");
@@ -333,9 +333,9 @@ let W = i.memo(function(e) {
                 maxWidth: V
               },
               variant: "text-sm/normal",
-              children: null != j ? R.NW.format(R.t["5gglIi"], {
+              children: null != j ? P.NW.format(P.t["5gglIi"], {
                 stickerName: null == (t = J[+j]) ? void 0 : t.sticker.name
-              }) : R.NW.format(R.t["8DjNnJ"], {
+              }) : P.NW.format(P.t["8DjNnJ"], {
                 upHook: (e, t) => (0, r.jsx)(f.M2$, {
                   shortcut: "up",
                   className: w.keybind
@@ -343,15 +343,15 @@ let W = i.memo(function(e) {
               })
             }), (0, r.jsx)(f.P3F, {
               onClick: () => {
-                T.default.track(P.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
+                T.default.track(R.rMx.STICKER_SUGGESTIONS_ENABLED_TOGGLED, {
                   enabled: !1,
                   location: {
-                    section: P.jXE.EXPRESSION_PICKER
+                    section: R.jXE.EXPRESSION_PICKER
                   }
                 }), (0, C.AW)(!1)
               },
               children: (0, r.jsx)(f.ua7, {
-                text: R.NW.string(R.t.XNMs5u),
+                text: P.NW.string(P.t.XNMs5u),
                 children: e => (0, r.jsx)(f.Dio, M(L({
                   size: "md",
                   color: "currentColor"

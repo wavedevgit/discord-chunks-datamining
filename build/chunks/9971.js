@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Ji: () => D,
-  O_: () => R,
+  O_: () => P,
   qA: () => c,
   uR: () => L
 });
@@ -463,7 +463,7 @@ function C(e) {
   }))
 }
 
-function P(e, t, n, r, i) {
+function R(e, t, n, r, i) {
   var o = function(e, t) {
       return f(f({
         id: t
@@ -505,7 +505,7 @@ function P(e, t, n, r, i) {
     spriteHeight: n.spriteHeight
   })
 }
-var R = r.forwardRef(function(e, t) {
+var P = r.forwardRef(function(e, t) {
     var a = e.className,
       s = e.environment,
       l = e.onClick,
@@ -557,13 +557,13 @@ var R = r.forwardRef(function(e, t) {
         }), null == O.current && T()
       }, [T]),
       A = r.useCallback(function(e, t, n, r, o) {
-        var a, s = P(null != (a = e.id) ? a : (0, i.Z)(), e, n, r, o);
+        var a, s = R(null != (a = e.id) ? a : (0, i.Z)(), e, n, r, o);
         return N(s, t), s
       }, [N]),
       C = r.useCallback(function(e) {
         v.current.delete(e)
       }, []),
-      R = r.useCallback(function() {
+      P = r.useCallback(function() {
         return v.current.clear()
       }, []),
       w = r.useCallback(function() {
@@ -574,10 +574,10 @@ var R = r.forwardRef(function(e, t) {
         createConfetti: A,
         addConfetti: N,
         deleteConfetti: C,
-        clearConfetti: R,
+        clearConfetti: P,
         getCanvas: w
       }
-    }, [A, N, C, R, w]);
+    }, [A, N, C, P, w]);
     var D = r.useCallback(function(e, t) {
         var n, r, i = t.clickHandler,
           a = t.mouseHandler;

@@ -28,8 +28,8 @@ var r, i = n(658722),
   N = n(823379),
   A = n(780570),
   C = n(358085),
-  P = n(998502),
-  R = n(804739),
+  R = n(998502),
+  P = n(804739),
   w = n(7956),
   D = n(981631);
 
@@ -105,7 +105,7 @@ function q(e, t, n, r, i) {
     isNew: B(e, a),
     isLaunching: p.Z.launchingGames.has(e.id),
     isRunning: r.has(e.id),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: p.Z,
       DispatchApplicationStore: O.Z,
@@ -131,7 +131,7 @@ function Q(e, t, n, r) {
     isNew: !1,
     isLaunching: p.Z.launchingGames.has(e),
     isRunning: r.has(e),
-    isLaunchable: (0, R.t)({
+    isLaunchable: (0, P.t)({
       LibraryApplicationStore: E.Z,
       LaunchableGameStore: p.Z,
       DispatchApplicationStore: O.Z,
@@ -156,7 +156,7 @@ function X() {
     }),
     i = Object.values(E.Z.getAllLibraryApplications()).map(r => q(r, n, t, e, !0)).filter(N.lm),
     o = [...r.map(r => Q(r, n, t, e)).filter(N.lm), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, k) && (k = o, C.isPlatformEmbedded && P.ZP.setSystemTrayApplications(Z(k).map(e => e.application).slice(0, x)), !0)
+  return U = null != g.Z.lastFetched && E.Z.fetched, !s().isEqual(o, k) && (k = o, C.isPlatformEmbedded && R.ZP.setSystemTrayApplications(Z(k).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.ZP.Store) {
   initialize() {

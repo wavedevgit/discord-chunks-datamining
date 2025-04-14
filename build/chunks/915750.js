@@ -4,8 +4,8 @@ n.d(t, {
   B5: () => T,
   PI: () => v,
   WD: () => C,
-  aM: () => P,
-  ui: () => R
+  aM: () => R,
+  ui: () => P
 }), n(388685), n(642613), n(415506);
 var r = n(200651),
   i = n(192379),
@@ -180,12 +180,12 @@ function C() {
   return null == e ? void 0 : e.current
 }
 
-function P() {
+function R() {
   var e;
   return null == (e = C()) ? void 0 : e.getId()
 }
 
-function R(e) {
+function P(e) {
   let {
     visible: t,
     visibleChanged: n,

@@ -30,14 +30,14 @@ var r = n(200651),
   A = n(466988);
 let C = 250;
 
-function P(e) {
+function R(e) {
   return null != e && "animated" in e
 }
-let R = e => {
+let P = e => {
     let {
       inspectedEmoji: t,
       guild: n
-    } = e, r = P(t);
+    } = e, r = R(t);
     return null != n && r ? N.NW.format(N.t.KFW2aW, {
       guildName: n.name
     }) : null
@@ -92,7 +92,7 @@ let R = e => {
       F = (0, o.e7)([E.Z], () => E.Z.isFocused()),
       Z = (0, o.e7)([l.Z], () => l.Z.useReducedMotion, []),
       H = m.Yk.useSetting(),
-      W = (0, v.C1)(M, P(t) ? t : null),
+      W = (0, v.C1)(M, R(t) ? t : null),
       Y = (0, o.e7)([c.ZP], () => c.ZP.expandedSectionsByGuildIds),
       {
         newlyAddedEmojis: K
@@ -101,7 +101,7 @@ let R = e => {
     if (i.useEffect(() => {
         let e = Date.now();
         return () => {
-          Date.now() - e >= C && P(t) && z !== T.t0.NONE && (z === T.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, v.Gn)({
+          Date.now() - e >= C && R(t) && z !== T.t0.NONE && (z === T.t0.NEWLY_ADDED_EMOJI && null !== t && t.type === u.B.GUILD && (0, f.Zg)(t.guildId, K[0].id), null != G.source && (0, v.Gn)({
             emoji: t,
             subCategory: z,
             position: B.columnIndex + 1,
@@ -110,7 +110,7 @@ let R = e => {
         }
       }), null == t) return null;
     let q = h.Z.theme;
-    if (P(t)) {
+    if (R(t)) {
       var Q;
       let e = null != t.id ? b.ZP.getEmojiURL({
         id: t.id,
@@ -153,7 +153,7 @@ let R = e => {
       shouldAnimate: !Z && F
     }) : null;
     D = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? Y.has(t.guildId) ? N.NW.string(N.t["/K2RDA"]) : N.NW.string(N.t.NZI2Zm) : t.allNamesString;
-    let J = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t["Z/r7IS"]) : R({
+    let J = U && "CREATE_EMOJI" === t.type ? N.NW.string(N.t["Z/r7IS"]) : P({
       inspectedEmoji: t,
       channel: j,
       guildId: M,

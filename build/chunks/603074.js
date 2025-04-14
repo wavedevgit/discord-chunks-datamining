@@ -35,8 +35,8 @@ function E(e) {
     soundButtonOverlay: N,
     listPadding: A,
     renderHeader: C,
-    defaultSoundsOnly: P
-  } = e, R = (0, s.e7)([h.Z], () => h.Z.isFetchingSounds() || h.Z.isFetchingDefaultSounds()), {
+    defaultSoundsOnly: R
+  } = e, P = (0, s.e7)([h.Z], () => h.Z.isFetchingSounds() || h.Z.isFetchingDefaultSounds()), {
     analyticsLocations: w
   } = (0, u.ZP)(c.Z.SOUNDBOARD_POPOUT);
   i.useEffect(() => {
@@ -51,11 +51,11 @@ function E(e) {
     value: w,
     children: (0, r.jsx)(l.VqE, {
       className: a()(g.picker, {
-        [g.fetching]: R,
+        [g.fetching]: P,
         [g.inExpressionPicker]: T,
         [g.refresh]: D
       }),
-      children: R ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(m.Z, {
+      children: P ? (0, r.jsx)(l.$jN, {}) : (0, r.jsx)(m.Z, {
         guildId: t,
         channel: n,
         onClose: E,
@@ -68,7 +68,7 @@ function E(e) {
         soundButtonOverlay: N,
         listPadding: A,
         renderHeader: C,
-        defaultSoundsOnly: P,
+        defaultSoundsOnly: R,
         inExpressionPicker: T,
         refreshEnabled: D,
         analyticsSource: y

@@ -23,7 +23,7 @@ function h(e) {
     selected: o,
     content: l,
     placement: d
-  } = e, h = (0, f.p)(l, t, n, o, d), g = (0, u.C)(n, o), E = (0, s.e7)([c.ZP], () => c.ZP.getChannelId()), [b, y] = i.useState(t), [v, O] = i.useState(!0), I = null != t;
+  } = e, h = (0, f.p)(l, t, n, o, d), g = (0, u.C)(n, o), E = (0, s.e7)([c.Z], () => c.Z.getChannelId()), [b, y] = i.useState(t), [v, O] = i.useState(!0), I = null != t;
   i.useLayoutEffect(() => () => {
     O(!1)
   }, [I]), i.useEffect(() => {

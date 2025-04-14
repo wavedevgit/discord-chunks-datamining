@@ -19,9 +19,9 @@ var r = n(200651),
 function N(e) {
   let {
     channelId: t
-  } = e, n = (0, i.e7)([a.ZP], () => {
+  } = e, n = (0, i.e7)([a.Z], () => {
     var e;
-    return null == (e = a.ZP.getSecureFramesState()) ? void 0 : e.epochAuthenticator
+    return null == (e = a.Z.getSecureFramesState()) ? void 0 : e.epochAuthenticator
   }), N = (0, u.W)({
     fingerprintBase64: n,
     chunkSize: f.y6,

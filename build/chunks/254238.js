@@ -5,7 +5,7 @@ n.d(t, {
   On: () => T,
   Vv: () => I,
   _: () => S,
-  bp: () => P,
+  bp: () => R,
   ef: () => O,
   s6: () => v,
   sh: () => D
@@ -121,7 +121,7 @@ function T(e, t, n, r) {
 async function N() {
   let e;
   try {
-    let t = null != c.ZP.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
+    let t = null != c.Z.getRTCConnectionId() ? i.o.TRANSFER_EXISTING_CALL : i.o.CREATE_NEW_CALL;
     e = (await o.tn.post({
       url: m.ANM.CONNECT_REQUEST_CREATE,
       body: {
@@ -169,14 +169,14 @@ async function C(e) {
   }), n
 }
 
-function P(e, t) {
+function R(e, t) {
   a.Z.dispatch({
     type: "GAME_CONSOLE_SELECT_DEVICE",
     platform: e,
     deviceId: t
   })
 }
-async function R(e, t, n, i) {
+async function P(e, t, n, i) {
   let s;
   a.Z.dispatch({
     type: "GAME_CONSOLE_DEVICE_SEND_COMMAND_START",
@@ -241,5 +241,5 @@ async function w(e, t, n) {
 async function D(e, t, n) {
   await _.Z.maybeShowPTTAlert(e), await v();
   let r = await N();
-  await R(e, t, n, r), (0, h.Z)(n.id, e)
+  await P(e, t, n, r), (0, h.Z)(n.id, e)
 }

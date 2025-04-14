@@ -2,12 +2,12 @@
 "use strict";
 n.d(t, {
   CP: () => C,
-  T4: () => P,
+  T4: () => R,
   XK: () => D,
   g5: () => L,
   gZ: () => N,
   i6: () => A,
-  yC: () => R
+  yC: () => P
 }), n(388685);
 var r = n(261470),
   i = n(535655),
@@ -119,7 +119,7 @@ async function C() {
     categories: n.body
   })
 }
-async function P(e) {
+async function R(e) {
   var t;
   let {
     applicationId: n,
@@ -172,7 +172,7 @@ async function P(e) {
     }
   }
 }
-async function R(e) {
+async function P(e) {
   var t;
   let {
     query: n,

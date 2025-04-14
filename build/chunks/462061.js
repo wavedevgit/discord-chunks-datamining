@@ -29,8 +29,8 @@ var r = n(200651),
   Z = n(981631),
   x = n(65154),
   N = n(388032),
-  P = n(519417);
-let w = s.EFr.SIZE_80,
+  w = n(519417);
+let P = s.EFr.SIZE_80,
   R = s.EFr.SIZE_40;
 
 function A(e) {
@@ -62,7 +62,7 @@ function A(e) {
         }
         return e
       }({}, e), n = n = {
-        className: P.interactive,
+        className: w.interactive,
         children: (0, r.jsx)(s.P4T, {
           color: s.TVs.colors.STATUS_WARNING_BACKGROUND
         })
@@ -99,7 +99,7 @@ function T(e) {
     user: V,
     streamId: Y,
     speaking: H
-  } = t, z = V.id === F, G = (0, _.ZP)(t), K = (0, o.e7)([O.Z], () => O.Z.isFocused()), B = (0, o.e7)([g.Z], () => g.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), q = (0, o.e7)([y.Z], () => null != V.id && y.Z.isLocalVideoDisabled(V.id, (0, f.Z)(t.type)), [V.id, t.type]), J = (0, o.e7)([b.ZP], () => b.ZP.isGuestOrLurker(n.guild_id, V.id)), X = I.ZP.getName(n.getGuildId(), n.id, V) + (J ? " ".concat(N.NW.string(N.t["pFO/Pj"])) : ""), Q = H && (B || K), $ = s < 124 ? R : w, {
+  } = t, z = V.id === F, G = (0, _.ZP)(t), K = (0, o.e7)([O.Z], () => O.Z.isFocused()), B = (0, o.e7)([g.Z], () => g.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), q = (0, o.e7)([y.Z], () => null != V.id && y.Z.isLocalVideoDisabled(V.id, (0, f.Z)(t.type)), [V.id, t.type]), J = (0, o.e7)([b.ZP], () => b.ZP.isGuestOrLurker(n.guild_id, V.id)), X = I.ZP.getName(n.getGuildId(), n.id, V) + (J ? " ".concat(N.NW.string(N.t["pFO/Pj"])) : ""), Q = H && (B || K), $ = s < 124 ? R : P, {
     avatarSrc: ee,
     avatarDecorationSrc: et
   } = (0, h.Z)({
@@ -128,8 +128,8 @@ function T(e) {
     selected: A
   }) : (0, r.jsx)(E.Z, {
     onResize: C,
-    wrapperClassName: P.videoWrapper,
-    className: P.content,
+    wrapperClassName: w.videoWrapper,
+    className: w.content,
     mirror: z,
     streamId: Y,
     videoComponent: W,
@@ -138,8 +138,8 @@ function T(e) {
     videoSpinnerContext: V.id === F ? c.m.SELF_VIDEO : c.m.REMOTE_VIDEO,
     userId: V.id
   }, Y) : (0, r.jsx)("div", {
-    className: a()(P.content, {
-      [P.blockedAvatar]: D || M
+    className: a()(w.content, {
+      [w.blockedAvatar]: D || M
     }),
     children: (0, r.jsx)(p.Z, {
       "aria-label": X,

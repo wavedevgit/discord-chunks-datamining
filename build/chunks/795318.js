@@ -39,7 +39,7 @@ function u(e) {
     entrypoint: u,
     targetUserId: d,
     tileType: f
-  } = e, _ = o.ZP.getChannelId(), p = o.ZP.getGuildId(), h = null == (t = i.Z.getChannel(_)) ? void 0 : t.type, m = r.default.getId();
+  } = e, _ = o.Z.getChannelId(), p = o.Z.getGuildId(), h = null == (t = i.Z.getChannel(_)) ? void 0 : t.type, m = r.default.getId();
   a.default.track(l.rMx.CALL_MENU_ITEM_INTERACTED, {
     location: c,
     menu_name: s,

@@ -65,14 +65,14 @@ function C() {
   m.clear(), g.clear(), E = {}, b.clear(), y = {}, v = {}, O = {}, I = {}, S.clear()
 }
 
-function P(e) {
+function R(e) {
   let {
     settings: t
   } = e;
   y[t.guild_id] = t
 }
 
-function R(e) {
+function P(e) {
   let {
     guildId: t
   } = e;
@@ -234,8 +234,8 @@ class Y extends(r = a.ZP.Store) {
 u(Y, "displayName", "GuildRoleSubscriptionsStore");
 let K = new Y(l.Z, {
   CONNECTION_OPEN: C,
-  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: P,
-  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: R,
+  GUILD_ROLE_SUBSCRIPTIONS_UPDATE_SUBSCRIPTIONS_SETTINGS: R,
+  GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS: P,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_SUCCESS: w,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_LISTINGS_FAILURE: D,
   GUILD_ROLE_SUBSCRIPTIONS_UPDATE_GROUP_LISTING: L,

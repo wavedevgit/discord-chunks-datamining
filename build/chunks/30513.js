@@ -5,8 +5,8 @@ n.d(t, {
   WW: () => C,
   XO: () => N,
   Yp: () => T,
-  hC: () => R,
-  o9: () => P,
+  hC: () => P,
+  o9: () => R,
   zC: () => A
 });
 var r = n(692547),
@@ -138,11 +138,11 @@ function C() {
   return [g(), _(), m(l.Eu4.TIER_3), O()]
 }
 
-function P() {
+function R() {
   return [u(), h(), d(), O()]
 }
 
-function R() {
+function P() {
   return [h(), O()]
 }
 

@@ -30,8 +30,8 @@ var i = n(120356),
   N = n(64621),
   A = n(979038),
   C = n(448980),
-  P = n(336383),
-  R = n(194811),
+  R = n(336383),
+  P = n(194811),
   w = n(373826),
   D = n(315324),
   L = n(262210),
@@ -270,14 +270,14 @@ function Z(e) {
           onShowToolbar: () => et({
             action: "HOVER_ACTIVITY_CARD"
           }),
-          children: (0, r.jsxs)(P.Z, {
+          children: (0, r.jsxs)(R.Z, {
             ref: en,
             className: o()(K, {
               [B.hoisted]: eg
             }),
             onAction: et,
             onClose: z,
-            children: [(0, r.jsx)(R.Z, F({}, er)), (0, r.jsxs)("div", {
+            children: [(0, r.jsx)(P.Z, F({}, er)), (0, r.jsxs)("div", {
               className: B.body,
               children: [(0, r.jsxs)("div", {
                 className: o()(B.content, X),

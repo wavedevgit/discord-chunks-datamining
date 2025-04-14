@@ -29,8 +29,8 @@ var r = n(192379),
   N = n(430824),
   A = n(283595),
   C = n(496675),
-  P = n(699516),
-  R = n(944486),
+  R = n(699516),
+  P = n(944486),
   w = n(594174),
   D = n(979651),
   L = n(181106),
@@ -87,7 +87,7 @@ function B(e) {
       application: er
     }),
     ea = (0, u.GK)(null != er ? er : void 0),
-    es = (0, o.e7)([I.Z, N.Z, T.Z, P.Z, R.Z, D.Z, C.Z], () => null == F || ei ? (0, _.Z)({
+    es = (0, o.e7)([I.Z, N.Z, T.Z, R.Z, P.Z, D.Z, C.Z], () => null == F || ei ? (0, _.Z)({
       user: Z,
       activity: V,
       application: er,
@@ -97,8 +97,8 @@ function B(e) {
       ChannelStore: I.Z,
       GuildStore: N.Z,
       GuildMemberCountStore: T.Z,
-      RelationshipStore: P.Z,
-      SelectedChannelStore: R.Z,
+      RelationshipStore: R.Z,
+      SelectedChannelStore: P.Z,
       VoiceStateStore: D.Z,
       PermissionStore: C.Z
     }) : eo === m.Fw.CAN_JOIN),
@@ -121,7 +121,7 @@ function B(e) {
       var n, r;
       if (null == e_ || null == q) return;
       let i = (0, g.Z)(t, j.xjy.EMBEDDED),
-        o = R.Z.getVoiceChannelId(),
+        o = P.Z.getVoiceChannelId(),
         a = I.Z.getChannel(o);
       await s.Z.join({
         userId: e.id,

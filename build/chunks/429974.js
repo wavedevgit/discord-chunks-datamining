@@ -73,8 +73,8 @@ async function O(e) {
       friendToken: N,
       analyticsLocation: A,
       showGuildProfile: C = !0,
-      appContext: P,
-      customStatusPrompt: R
+      appContext: R,
+      customStatusPrompt: P
     } = e,
     w = E(e, ["userId", "section", "subsection", "guildId", "channelId", "friendToken", "analyticsLocation", "showGuildProfile", "appContext", "customStatusPrompt"]);
   let D = d.default.getUser(b);
@@ -106,11 +106,11 @@ async function O(e) {
       initialSubsection: I,
       channelId: T,
       showGuildProfile: C,
-      customStatusPrompt: R
+      customStatusPrompt: P
     }, t, w))
   }, {
     modalKey: v(b, C ? S : void 0),
-    contextKey: (0, i.VnL)(null != P ? P : p.IlC.APP)
+    contextKey: (0, i.VnL)(null != R ? R : p.IlC.APP)
   }), f.default.track(p.rMx.OPEN_MODAL, g({
     type: "Profile Modal",
     guild_id: S,

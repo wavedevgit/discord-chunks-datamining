@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(94795),
   A = n(327943),
   C = n(907459),
-  P = n(559407),
-  R = n(556766),
+  R = n(559407),
+  P = n(556766),
   w = n(514361),
   D = n(724145),
   L = n(195302),
@@ -159,15 +159,15 @@ let em = (0, et.Un)({
     }, [eT, eN, eS, o]);
     let eA = i.useRef(document.body),
       eC = ey || eN,
-      eP = ev && !eN,
-      eR = ef || ep,
+      eR = ev && !eN,
+      eP = ef || ep,
       {
         enabled: ew
       } = W.Z.useExperiment({
         location: "AppSkeleton"
       }, {
-        autoTrackExposure: eR && (eC || eP),
-        disable: !eR
+        autoTrackExposure: eP && (eC || eR),
+        disable: !eP
       }),
       eD = "".concat(J ? "enabled" : "disabled").concat(et);
     return (0, j.G)(), (0, r.jsx)(Y.w, {
@@ -198,12 +198,12 @@ let em = (0, et.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: a()(b ? ed.mobileApp : ed.app),
                                 children: t
-                              }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {})]
+                              }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {})]
                             })
                           })
                         })
                       })
-                    }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(h.Z, {}), eC && !ew && (0, r.jsx)(D.Z, {
+                    }), (0, r.jsx)(P.Z, {}), (0, r.jsx)(h.Z, {}), eC && !ew && (0, r.jsx)(D.Z, {
                       markAsDismissed: eN ? eS : () => {
                         (0, G.EW)(d.z.CLIENT_THEMES_COACHMARK, {
                           dismissAction: eu.L.INDIRECT_ACTION,
@@ -211,11 +211,11 @@ let em = (0, et.Un)({
                         })
                       },
                       showClientThemesCoachmark: eN
-                    }), eP && !ew && (0, r.jsx)(C.Z, {
+                    }), eR && !ew && (0, r.jsx)(C.Z, {
                       isCoachmark: eT,
                       markAsDismissed: eS
-                    }), (eC || eP) && ew && (0, r.jsx)(z.Z, {
-                      initialTab: eP ? z._.APP_ICONS : z._.CLIENT_THEMES,
+                    }), (eC || eR) && ew && (0, r.jsx)(z.Z, {
+                      initialTab: eR ? z._.APP_ICONS : z._.CLIENT_THEMES,
                       markAsDismissed: eS,
                       isCoachmark: eN
                     }), (0, r.jsx)(en.Z, {}), (0, r.jsx)(U.Z, {

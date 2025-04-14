@@ -59,7 +59,7 @@ function P(e) {
       guildId: _,
       instance: B
     }
-  }), q = (0, i.e7)([d.ZP], () => d.ZP.getChannelId()), K = (0, h.xt)(C), F = q === D && null != q && K, Q = V.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.CONNECT, X), [X]), ee = (0, f.ZP)(C), {
+  }), q = (0, i.e7)([d.Z], () => d.Z.getChannelId()), K = (0, h.xt)(C), F = q === D && null != q && K, Q = V.filter(e => e.type === c.Ui.VOICE), Y = Q.length, $ = (0, i.e7)([u.Z], () => u.Z.can(N.Plq.CONNECT, X), [X]), ee = (0, f.ZP)(C), {
     isMember: en,
     guild: et
   } = (0, m.Z)(_, T), er = (0, O.Z)({

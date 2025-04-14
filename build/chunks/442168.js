@@ -84,10 +84,10 @@ function b(e) {
         width: 268
       }
     },
-    P = (0, l.useRef)(null),
-    w = (0, s.Yzy)(j, {
+    w = (0, l.useRef)(null),
+    P = (0, s.Yzy)(j, {
       keys: e => e.timestamp,
-      ref: P,
+      ref: w,
       from: {
         opacity: .2
       },
@@ -125,11 +125,11 @@ function b(e) {
         null != t.item && null != j.find(e => e.timestamp === t.item.timestamp) && (0, c.Gh)(I, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, i.useChain)([P, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, i.useChain)([w, R], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: p.hidden,
       ref: y
-    }), w((e, t) => null != t && (0, r.jsx)(i.animated.div, {
+    }), P((e, t) => null != t && (0, r.jsx)(i.animated.div, {
       className: p.whiteFlash,
       style: e
     })), (0, r.jsx)(m.ZP, {

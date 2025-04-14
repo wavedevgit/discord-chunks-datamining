@@ -3,12 +3,12 @@
 n.d(t, {
   J9: () => l.J,
   Jt: () => x,
-  K0: () => R,
+  K0: () => P,
   Pd: () => g,
   f$: () => s.f$,
   lg: () => D,
   sX: () => s.Hx,
-  tn: () => P,
+  tn: () => R,
   yZ: () => c.H
 }), n(388685), n(704826), n(35282), n(415506), n(539854), n(49124);
 var r = n(203651),
@@ -222,7 +222,7 @@ let S = I.bind(null, "get"),
   N = I.bind(null, "put"),
   A = I.bind(null, "patch"),
   C = I.bind(null, "del"),
-  P = {
+  R = {
     get: S,
     post: T,
     put: N,
@@ -240,7 +240,7 @@ if (n.g.isServerRendering) {
   S = e, T = e, N = e, A = e, C = e
 }
 
-function R() {
+function P() {
   let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
   return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (e ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }

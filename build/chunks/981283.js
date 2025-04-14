@@ -54,7 +54,7 @@ class _ extends l.Z {
     } = e;
     if (t !== a.default.getId() || n !== a.default.getSessionId()) return;
     let r = o.Z.getAllActiveStreams(),
-      i = s.ZP.getChannelId();
+      i = s.Z.getChannelId();
     r.forEach(e => {
       e.channelId !== i && (0, u.Z)(e, !1)
     })

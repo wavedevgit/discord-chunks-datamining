@@ -29,8 +29,8 @@ var r = n(873546),
   N = n(540709),
   A = n(881706),
   C = n(701190),
-  P = n(944486),
-  R = n(914010),
+  R = n(944486),
+  P = n(914010),
   w = n(771845),
   D = n(626135),
   L = n(591759),
@@ -86,12 +86,12 @@ function B(e) {
     } : null != (i = (0, p.Q)(a)) ? i : {
       applicationId: void 0,
       skuId: void 0
-    }, c = null != (o = R.Z.getGuildId()) ? o : void 0;
+    }, c = null != (o = P.Z.getGuildId()) ? o : void 0;
     return null == s ? (0, x.Z)(e) : (D.default.track(M.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
-      channel_id: P.Z.getChannelId()
+      channel_id: R.Z.getChannelId()
     }), n.e("11866").then(n.bind(n, 749681)).then(e => {
       let {
         transitionToGlobalDiscovery: t
@@ -226,7 +226,7 @@ function B(e) {
   let H = (0, O.Ao)(B);
   if (null != B && Z && null != H) return e => {
     null == e || e.preventDefault();
-    let t = R.Z.getGuildId();
+    let t = P.Z.getGuildId();
     null != H.guildId && "" !== H.guildId && H.guildId !== t && (0, I.Z)(M.Z5c.CHANNEL(H.guildId));
     let n = y.ZP.getGuildScheduledEvent(H.guildEventId);
     return null != n && (0, b.bO)({

@@ -30,9 +30,9 @@ var r = n(200651),
   N = n(998502),
   A = n(981631),
   C = n(188785),
-  P = n(436620);
+  R = n(436620);
 
-function R(e, t, n) {
+function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -48,7 +48,7 @@ function w(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      R(e, t, n[t])
+      P(e, t, n[t])
     })
   }
   return e
@@ -192,7 +192,7 @@ class er extends i.Component {
       migrationStatus: n,
       skipsSettingDefaultPageTitle: i
     } = this.props;
-    return e = n === g.P.IN_PROGRESS ? null : P.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
+    return e = n === g.P.IN_PROGRESS ? null : R.KO ? T.isPlatformEmbedded ? (0, r.jsxs)(a.rs, {
       children: [t ? null : (0, r.jsx)(a.AW, {
         path: A.Z5c.ACCOUNT_STANDING,
         component: q

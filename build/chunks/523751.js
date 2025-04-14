@@ -30,7 +30,7 @@ var r = n(200651),
   A = n(388032),
   C = n(90235);
 
-function P(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -39,14 +39,14 @@ function P(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      P(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
@@ -209,7 +209,7 @@ function U(e) {
       className: O,
       flowerStarClassName: T,
       iconClassName: A,
-      badgeStrokeColor: P,
+      badgeStrokeColor: R,
       badgeColor: w,
       disableBoostClick: x,
       "aria-label": k = !1
@@ -246,7 +246,7 @@ function U(e) {
         guildTraits: Z
       }),
       tooltipContentClassName: C.tooltipRemovePadding,
-      children: t => (0, r.jsx)(u.P3F, D(R({}, t), {
+      children: t => (0, r.jsx)(u.P3F, D(P({}, t), {
         onClick: Y,
         className: a()(C.clanBadgeContainer, O),
         children: (0, r.jsx)(f.KQ, {
@@ -284,12 +284,12 @@ function U(e) {
     children: e => (0, r.jsx)(u.P3F, {
       onClick: Y,
       tabIndex: W ? 0 : -1,
-      children: (0, r.jsx)(m.Z, D(R({}, e), {
+      children: (0, r.jsx)(m.Z, D(P({}, e), {
         className: O,
         flowerStarClassName: T,
         allowFullSizedIcon: !0,
         color: null != n ? n : w,
-        stroke: P,
+        stroke: R,
         size: B,
         children: (0, r.jsx)(K, {
           size: "custom",

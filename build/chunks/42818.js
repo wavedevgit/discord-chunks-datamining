@@ -44,7 +44,7 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function P(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -57,7 +57,7 @@ function P(e) {
   return e
 }
 
-function R(e, t) {
+function P(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -69,7 +69,7 @@ function R(e, t) {
 }
 
 function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : R(Object(t)).forEach(function(n) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -153,7 +153,7 @@ function M(e) {
       text: N.NW.format(N.t.UDop9f, {}),
       "aria-label": N.NW.string(N.t.P68ePD),
       tooltipClassName: A.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(P({
+      children: e => (0, r.jsx)(u.idN, w(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -189,7 +189,7 @@ function k(e) {
       text: n,
       "aria-label": i,
       tooltipClassName: A.invoiceItemTooltip,
-      children: e => (0, r.jsx)(u.idN, w(P({
+      children: e => (0, r.jsx)(u.idN, w(R({
         size: "md",
         color: "currentColor"
       }, e), {
@@ -407,7 +407,7 @@ function H(e) {
     hideSubscriptionDetails: m = !1
   } = e, {
     analyticsLocations: g
-  } = (0, _.ZP)(), E = P({
+  } = (0, _.ZP)(), E = R({
     subscriptionId: null == t ? void 0 : t.id,
     renewal: !0,
     preventFetch: !s,

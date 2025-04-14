@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => P,
+  Z: () => R,
   b: () => C
 }), n(388685);
 var r = n(200651),
@@ -100,8 +100,8 @@ function C(e) {
     avatarOffsetX: T,
     avatarOffsetY: N,
     bannerWidth: C,
-    bannerHeight: P,
-    themePadding: R,
+    bannerHeight: R,
+    themePadding: P,
     pendingAccentColor: w,
     animateOnHover: D = !1
   } = e, L = (0, _.Dt)(), [x, M] = i.useState(!1), k = (0, l.e7)([m.Z], () => m.Z.isFocused()), j = h.QK.getSetting(), {
@@ -112,13 +112,13 @@ function C(e) {
     pendingBanner: v,
     size: C,
     canAnimate: D || !j ? x : k
-  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(S)), F = (0, s._i)((0, d.ZP)(V, B, !1)), Z = (0, f.Z)(null != (t = null != w ? w : null == o ? void 0 : o.primaryColor) ? t : F).hex, H = A(S), W = H + T - R, Y = P - N - R;
+  }), B = (0, u.dQu)(c.Z.unsafe_rawColors.PRIMARY_800).hex(), V = n.getAvatarURL(b, (0, u.pxk)(S)), F = (0, s._i)((0, d.ZP)(V, B, !1)), Z = (0, f.Z)(null != (t = null != w ? w : null == o ? void 0 : o.primaryColor) ? t : F).hex, H = A(S), W = H + T - P, Y = R - N - P;
   return (0, r.jsxs)("svg", {
     className: y.mask,
-    viewBox: "0 0 ".concat(C, " ").concat(P),
+    viewBox: "0 0 ".concat(C, " ").concat(R),
     style: {
       minWidth: C,
-      minHeight: P
+      minHeight: R
     },
     children: [(0, r.jsxs)("mask", {
       id: L,
@@ -146,8 +146,8 @@ function C(e) {
         onMouseMove: () => M(!0),
         onMouseLeave: () => M(!1),
         style: {
-          height: P,
-          minHeight: P,
+          height: R,
+          minHeight: R,
           backgroundImage: null != U ? "url(".concat(U, ")") : void 0,
           backgroundColor: "COMPLETE" !== G ? c.Z.unsafe_rawColors.PRIMARY_800.css : Z
         },
@@ -159,7 +159,7 @@ function C(e) {
   })
 }
 
-function P(e) {
+function R(e) {
   var {
     profileType: t,
     displayProfile: n,
