@@ -77,8 +77,9 @@ let O = (0, p.Mg)(d.Z.FULL_SCREEN_LAYER_ANIMATION_DURATION),
 
 function S(e) {
   let {
-    item: t
-  } = e, n = i.useRef(null);
+    item: t,
+    containerRef: n
+  } = e;
   return (0, f.Tbt)(n), i.useEffect(() => (_.Z.disable(), t.key !== m.CV && _.Z.enableTemp(P(t.key)), () => {
     _.Z.disableTemp()
   }), [t.key]), (0, r.jsx)(t.LayerComponent, {
@@ -114,25 +115,36 @@ let T = {
 function A() {
   let {
     reducedMotion: e
-  } = i.useContext(f.Sfi), t = e.enabled ? N : T, n = I(e => e.fullScreenLayers);
+  } = i.useContext(f.Sfi), t = e.enabled ? N : T, n = I(e => e.fullScreenLayers), o = n.map(e => ({
+    item: e,
+    nodeRef: i.createRef()
+  }));
   return (0, r.jsx)(s.Z, {
-    children: n.map(e => (0, r.jsx)(l.Z, {
-      classNames: t,
-      timeout: O,
-      onEntered: () => {
-        (0, u.j)(() => {
-          I.setState({
-            fullScreenLayers: n.map(t => t.key === e.key ? v(b({}, t), {
-              transitionState: 2
-            }) : t)
+    children: o.map(e => {
+      let {
+        item: i,
+        nodeRef: o
+      } = e;
+      return (0, r.jsx)(l.Z, {
+        nodeRef: o,
+        classNames: t,
+        timeout: O,
+        onEntered: () => {
+          (0, u.j)(() => {
+            I.setState({
+              fullScreenLayers: n.map(e => e.key === i.key ? v(b({}, e), {
+                transitionState: 2
+              }) : e)
+            })
           })
+        },
+        unmountOnExit: !0,
+        children: (0, r.jsx)(S, {
+          containerRef: o,
+          item: i
         })
-      },
-      unmountOnExit: !0,
-      children: (0, r.jsx)(S, {
-        item: e
-      })
-    }, e.key))
+      }, i.key)
+    })
   })
 }
 
