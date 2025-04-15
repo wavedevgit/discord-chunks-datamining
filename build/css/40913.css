@@ -1,6 +1,6 @@
 /**
   Module ID: 40913
-  Original File Name: a4f15e7bcc09b97e
+  Original File Name: 27b1d5cdbd4f9abd
 **/
 @value minColumnWidth: 460px;
 
@@ -919,10 +919,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .decorator__972a0 {
     margin-left: 4px
-}
-
-.platedWrapper__972a0 {
-    background-color: unset
 }
 
 @media (hover:hover) {
@@ -3466,4 +3462,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=a4f15e7bcc09b97e.css.map*/
+/*# sourceMappingURL=27b1d5cdbd4f9abd.css.map*/

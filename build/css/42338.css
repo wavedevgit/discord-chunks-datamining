@@ -1,6 +1,6 @@
 /**
   Module ID: 42338
-  Original File Name: 0c51a6fb188bdf0a
+  Original File Name: f25642f9d9121ca4
 **/
 .buttonsContainer_a8b931 {
     display: flex;
@@ -339,10 +339,6 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
 
 .decorator__972a0 {
     margin-left: 4px
-}
-
-.platedWrapper__972a0 {
-    background-color: unset
 }
 
 @media (hover:hover) {
@@ -1552,4 +1548,4 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=0c51a6fb188bdf0a.css.map*/
+/*# sourceMappingURL=f25642f9d9121ca4.css.map*/

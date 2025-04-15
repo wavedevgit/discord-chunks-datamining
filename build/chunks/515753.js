@@ -393,8 +393,7 @@ function ec(e) {
         }) : null, (0, l.jsxs)(f.vjx, {
           className: o()($.interactive, {
             [$.interactiveSystemDM]: ej && eZ,
-            [$.interactiveSelected]: d,
-            [$.platedWrapper]: eT
+            [$.interactiveSelected]: d
           }),
           as: "div",
           onClick: eb,
