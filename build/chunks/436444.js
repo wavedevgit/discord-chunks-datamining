@@ -135,9 +135,9 @@ let S = {
         guild: i
       }))
     }
-    let V = !x && P.fractionalState === h.a$.NONE,
-      F = V ? s.P3F : "div",
-      Z = V ? {
+    let F = !x && P.fractionalState === h.a$.NONE,
+      V = F ? s.P3F : "div",
+      Z = F ? {
         onClick: B
       } : {};
     return (0, r.jsx)(s.ua7, {
@@ -157,10 +157,10 @@ let S = {
         })
       }),
       shouldShow: N !== p.Eu4.NONE,
-      children: e => (0, r.jsxs)(F, O(y({
+      children: e => (0, r.jsxs)(V, O(y({
         className: o()(E.progressBarMarker, {
           [E.progressBarMarkerUnlocked]: x,
-          [E.progressBarMarkerLocked]: V,
+          [E.progressBarMarkerLocked]: F,
           [E.progressBarMarkerLower]: M,
           [E.progressBarMarkerCurrent]: k
         }),

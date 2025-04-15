@@ -47,8 +47,8 @@ var c = n(442837),
   U = n(592125),
   G = n(430824),
   B = n(496675),
-  V = n(699516),
-  F = n(9156),
+  F = n(699516),
+  V = n(9156),
   Z = n(594174),
   H = n(979651),
   W = n(938475),
@@ -202,10 +202,10 @@ function ev(e) {
     onVoiceChannelPreview: g
   }), {
     embeddedActivity: D
-  } = (0, ee.Z)(p), x = eC(D), M = null != w && 0 === h.length ? [w] : h, k = M.length > 0, j = M.length >= 2, [G, V] = i.useState(!k), F = z.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n), Z = null != t && E ? ec.NW.formatToPlainString(ec.t["8lzR/f"], {
+  } = (0, ee.Z)(p), x = eC(D), M = null != w && 0 === h.length ? [w] : h, k = M.length > 0, j = M.length >= 2, [G, F] = i.useState(!k), V = z.ZP.getName(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, n), Z = null != t && E ? ec.NW.formatToPlainString(ec.t["8lzR/f"], {
     channel: "#".concat(t.name)
   }) : ec.NW.formatToPlainString(ec.t["4c+CAw"], {
-    channel: "@".concat(F)
+    channel: "@".concat(V)
   }), H = E ? ec.NW.string(ec.t.Z2CUgo) : ec.NW.string(ec.t.XLGiTE), W = async e => {
     let r;
     if (null != e) {
@@ -318,7 +318,7 @@ function ev(e) {
           }))
         }) : void 0
       }), k && (0, r.jsx)(f.P3F, {
-        onClick: () => V(!1),
+        onClick: () => F(!1),
         className: eu.primaryActionPopoutMessageCloseIcon,
         children: (0, r.jsx)(f.Dio, {
           size: "custom",
@@ -333,7 +333,7 @@ function ev(e) {
         className: eu.secondaryButton,
         color: f.zxk.Colors.PRIMARY,
         look: f.zxk.Looks.FILLED,
-        onClick: () => V(!0),
+        onClick: () => F(!0),
         innerClassName: eu.iconButton,
         size: j ? f.zxk.Sizes.MIN : f.zxk.Sizes.MEDIUM,
         children: !j && (0, r.jsx)(f.Text, {
@@ -749,8 +749,8 @@ function eR(e) {
   } = (0, D.Z)(null == t ? void 0 : t.id), u = (0, c.e7)([G.Z], () => null != s ? G.Z.getGuild(s.guild_id) : void 0), _ = (0, c.Wu)([W.ZP], () => null != s ? W.ZP.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.e7)([H.Z], () => H.Z.isInChannel(null == s ? void 0 : s.id)), m = i.useMemo(() => {
     for (let e of _) {
       let t = U.Z.getDMFromUserId(e.user.id),
-        n = null != t && F.ZP.isChannelMuted(null, t),
-        r = V.Z.isBlockedOrIgnored(e.user.id);
+        n = null != t && V.ZP.isChannelMuted(null, t),
+        r = F.Z.isBlockedOrIgnored(e.user.id);
       if (n || r) return !0
     }
     return !1

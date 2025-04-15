@@ -506,7 +506,7 @@ function B(e, t, n) {
   return "translate(".concat(l, ", ").concat(c, ")")
 }
 
-function V(e) {
+function F(e) {
   let {
     fromIsMobile: t = !0,
     fromStatus: n,
@@ -525,8 +525,8 @@ function V(e) {
     "aria-hidden": D = !1,
     "aria-label": L,
     imageClassName: U,
-    pulseStatusIcon: V
-  } = e, F = (0, u.vj)(O, T), Z = i.useId(), H = i.useId(), [W] = i.useState(() => v({
+    pulseStatusIcon: F
+  } = e, V = (0, u.vj)(O, T), Z = i.useId(), H = i.useId(), [W] = i.useState(() => v({
     fill: o
   }, M({
     size: E,
@@ -534,13 +534,13 @@ function V(e) {
     isMobile: t,
     isTyping: !1
   }))), Y = i.useMemo(() => v({
-    fill: F
+    fill: V
   }, M({
     size: E,
     status: O,
     isMobile: l,
     isTyping: _
-  })), [F, E, O, l, _]), K = (0, f.q_F)({
+  })), [V, E, O, l, _]), K = (0, f.q_F)({
     config: N,
     from: W,
     to: Y
@@ -560,14 +560,14 @@ function V(e) {
     from: {
       scale: 1
     },
-    to: V ? [{
+    to: F ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, A() ? "animate-always" : "animate-never", [V, O]);
+  }, A() ? "animate-always" : "animate-never", [F, O]);
   return (0, r.jsx)(k, I(v({}, e), {
     ariaLabel: L,
     ariaHidden: D,
@@ -646,7 +646,7 @@ function V(e) {
   }))
 }
 
-function F(e, t, n, r, i) {
+function V(e, t, n, r, i) {
   return null != n && null != t && (!!e || t !== n || t === m.Skl.ONLINE && r !== i)
 }
 let Z = i.memo(function(e) {
@@ -657,10 +657,10 @@ let Z = i.memo(function(e) {
   let {
     isMobile: a = !1,
     isTyping: s = !1
-  } = o, l = i.useRef(n), c = i.useRef(a), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || F(s, n, l.current, a, c.current);
+  } = o, l = i.useRef(n), c = i.useRef(a), d = (0, u.vj)(n, t), f = i.useRef(d), _ = i.useRef(!1), p = _.current || V(s, n, l.current, a, c.current);
   return i.useLayoutEffect(() => {
     _.current = p, l.current = n, c.current = a, f.current = d
-  }, [n, a, d, p]), null != n && null != l.current && p ? (0, r.jsx)(V, I(v({}, o), {
+  }, [n, a, d, p]), null != n && null != l.current && p ? (0, r.jsx)(F, I(v({}, o), {
     status: n,
     statusColor: d,
     fromStatus: l.current,

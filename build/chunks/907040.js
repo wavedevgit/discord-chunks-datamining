@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(253696),
   G = n(199257),
   B = n(636411),
-  V = n(380331),
-  F = n(170762),
+  F = n(380331),
+  V = n(170762),
   Z = n(22363),
   H = n(784222),
   W = n(141507),
@@ -248,8 +248,8 @@ let ec = (e, t) => {
       eG = i.useRef(null),
       eB = i.useRef(null);
     null == c && null != eL && (c = eL);
-    let eV = null != (o = null != (n = null == c ? void 0 : c.getGuildId()) ? n : f) ? o : null,
-      [eF, eZ] = i.useState(!1),
+    let eF = null != (o = null != (n = null == c ? void 0 : c.getGuildId()) ? n : f) ? o : null,
+      [eV, eZ] = i.useState(!1),
       eH = L.default.getCurrentUser(),
       eW = (0, M.I5)(eH);
     i.useImperativeHandle(t, () => ({
@@ -294,20 +294,20 @@ let ec = (e, t) => {
       shouldShowSoundmojiInEmojiPicker: eC
     }), {
       newlyAddedEmojis: te
-    } = (0, G.Z)(eV, l);
+    } = (0, G.Z)(eF, l);
     (0, U.b)({
       intention: l,
-      isBurstReaction: eF,
+      isBurstReaction: eV,
       analyticsObject: eq
     });
     let tt = i.useCallback(() => {
         let e = te.length > 0 ? te[0].id : null;
-        (0, O.pr)(eV, e), (0, U.Z)({
+        (0, O.pr)(eF, e), (0, U.Z)({
           intention: l,
-          isBurstReaction: eF,
+          isBurstReaction: eV,
           analyticsObject: eq
         })
-      }, [te, eV, l, eF, eq]),
+      }, [te, eF, l, eV, eq]),
       tn = (0, H.rf)({
         pickerIntention: l,
         selectedChannel: c,
@@ -333,8 +333,8 @@ let ec = (e, t) => {
             category: e.category,
             subCategory: e.subCategory,
             position: e.columnIndex + 1,
-            newlyAddedHighlight: e.subCategory === q.t0.NEWLY_ADDED_EMOJI && v.Z.isNewerThanLastSeen(eV, e.emoji.id),
-            isBurstReaction: eF
+            newlyAddedHighlight: e.subCategory === q.t0.NEWLY_ADDED_EMOJI && v.Z.isNewerThanLastSeen(eF, e.emoji.id),
+            isBurstReaction: eV
           })
         },
         trackEmojiFavorited: e => {
@@ -362,15 +362,15 @@ let ec = (e, t) => {
         onSelectEmoji: en,
         emojiGrid: e7,
         emojiList: eG,
-        channelGuildId: eV,
-        isBurstReaction: eF
+        channelGuildId: eF,
+        isBurstReaction: eV
       });
     ed(ec, eG), ef(ec, e$, eB, ew), i.useEffect(() => {
       eg || (0, S.ql)("")
     }, [eg]), i.useEffect(() => (x.default.track(Q.rMx.OPEN_POPOUT, {
       type: null != eQ ? eQ : "Emoji Picker",
-      guild_id: eV
-    }), I.kJ.resetStoreState), [eQ, eV]), i.useEffect(() => () => (0, R.Kw)(R.v6.FAVORITE_EMOJI_TOOLTIP), []), i.useLayoutEffect(() => {
+      guild_id: eF
+    }), I.kJ.resetStoreState), [eQ, eF]), i.useEffect(() => () => (0, R.Kw)(R.v6.FAVORITE_EMOJI_TOOLTIP), []), i.useLayoutEffect(() => {
       var e;
       let {
         columnIndex: t,
@@ -402,17 +402,17 @@ let ec = (e, t) => {
       onClose: () => eM(null),
       guildId: ex.guildId,
       emojiId: ex.emojiId
-    }) : eF && !eW && (s = (0, r.jsx)(B.Z, {
+    }) : eV && !eW && (s = (0, r.jsx)(B.Z, {
       onDismiss: () => eZ(!1)
     }));
     let td = (e, t) => {
         tn(e, er(et({}, t), {
-          isBurst: eF
+          isBurst: eV
         }))
       },
       tf = () => {
         var e;
-        eZ(!eF), null == (e = eB.current) || e.focus()
+        eZ(!eV), null == (e = eB.current) || e.focus()
       },
       t_ = (0, r.jsx)(Z.Z, {
         pickerIntention: l,
@@ -427,12 +427,12 @@ let ec = (e, t) => {
         headerClassName: eb,
         hasTabWrapper: C,
         diversitySurrogate: e$,
-        isBurstReaction: eF,
+        isBurstReaction: eV,
         onBurstReactionToggle: tf,
         renderHeader: eT
       }),
       tp = [];
-    l === J.Hz.REACTION && tp.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), y.ZP.hasFavoriteEmojis(eV) || tp.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
+    l === J.Hz.REACTION && tp.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), y.ZP.hasFavoriteEmojis(eF) || tp.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
     let th = (0, r.jsx)(h.Z, er(et({}, eX), {
       children: (0, r.jsxs)(tc, {
         id: q.cZ,
@@ -440,7 +440,7 @@ let ec = (e, t) => {
         role: C ? "tabpanel" : void 0,
         className: a()($.wrapper, {
           [$.emojiPickerHasTabWrapper]: C,
-          [$.isBurstReactionPicker]: eF && eW
+          [$.isBurstReactionPicker]: eV && eW
         }),
         children: [C ? null : t_, (0, r.jsxs)("div", {
           className: a()($.emojiPicker, eE),
@@ -458,7 +458,7 @@ let ec = (e, t) => {
                   visibleContent: t,
                   markAsDismissed: n
                 } = e;
-                if (t === d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP) return (0, r.jsx)(F.Z, {
+                if (t === d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP) return (0, r.jsx)(V.Z, {
                   markAsDismissed: () => n(X.L.UNKNOWN)
                 })
               }
@@ -483,21 +483,21 @@ let ec = (e, t) => {
                 rowCountBySection: e6,
                 sectionDescriptors: e8,
                 setCollapsedSections: e4,
-                channelGuildId: eV,
+                channelGuildId: eF,
                 channelId: null == c ? void 0 : c.id,
                 messageId: eS,
-                isBurstReaction: eF,
+                isBurstReaction: eV,
                 listHeaderClassName: eN
               }) : null
             }))]
           }), (0, r.jsx)(W.k, {
             emojiGrid: e7,
             className: $.inspector,
-            guildId: eV,
+            guildId: eF,
             pickerIntention: l,
             channel: c
           }), s]
-        }), eI ? null : (0, r.jsx)(V.Z, {
+        }), eI ? null : (0, r.jsx)(F.Z, {
           className: a()($.categoryList, eA),
           emojiListRef: eG,
           sectionDescriptors: e8,

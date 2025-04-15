@@ -38,8 +38,8 @@ var r = n(127849),
   U = j && j[P],
   G = r[R],
   B = G && G[P],
-  V = Object.prototype,
-  F = r.Array,
+  F = Object.prototype,
+  V = r.Array,
   Z = r.RangeError,
   H = i(y),
   W = i([].reverse),
@@ -99,7 +99,7 @@ if (a) {
     return new k, new k(1.5), new k(NaN), 1 !== k.length || er && !A
   }) ? ((j = function(e) {
     return f(this, U), O(new k(h(e)), this, j)
-  })[P] = U, U.constructor = j, I(j, k)) : er && A && l(k, "name", C), b && E(B) !== V && b(B, V);
+  })[P] = U, U.constructor = j, I(j, k)) : er && A && l(k, "name", C), b && E(B) !== F && b(B, F);
   var ei = new G(new j(2)),
     eo = i(B.setInt8);
   ei.setInt8(0, 0x80000000), ei.setInt8(1, 0x80000001), (ei.getInt8(0) || !ei.getInt8(1)) && u(B, {
@@ -117,7 +117,7 @@ if (a) {
   var t = h(e);
   M(this, {
     type: C,
-    bytes: H(F(t), 0),
+    bytes: H(V(t), 0),
     byteLength: t
   }), o || (this.byteLength = t, this.detached = !1)
 })[P], B = (G = function(e, t, n) {

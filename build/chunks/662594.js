@@ -271,14 +271,14 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guild: t
   } = e;
   j.delete(t.id)
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t
   } = e;
@@ -333,8 +333,8 @@ let q = new z(u.Z, {
   OVERLAY_INITIALIZE: G,
   GUILD_MEMBER_LIST_UPDATE: U,
   GUILD_UPDATE: B,
-  GUILD_DELETE: V,
-  GUILD_ROLE_UPDATE: F,
+  GUILD_DELETE: F,
+  GUILD_ROLE_UPDATE: V,
   GUILD_MEMBER_UPDATE: Z,
   CHANNEL_UPDATES: K
 })

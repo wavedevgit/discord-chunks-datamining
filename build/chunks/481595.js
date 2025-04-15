@@ -66,8 +66,8 @@ function B(e) {
     handlePaymentSourceAdd: g
   } = e, {
     application: B,
-    purchaseState: V,
-    paymentSources: F,
+    purchaseState: F,
+    paymentSources: V,
     paymentSourceId: Z,
     setHasAcceptedTerms: H,
     skusById: W,
@@ -97,8 +97,8 @@ function B(e) {
   let el = (0, l.e7)([h.Z, N.Z], () => N.Z.inTestModeForApplication(B.id) || h.Z.inDevModeForApplication(B.id), [B.id]),
     ec = (0, l.e7)([O.Z], () => O.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(I.Z.ipCountryCodeWithFallback),
-    ed = V === D.A.PURCHASING || V === D.A.COMPLETED,
-    ef = (0, L.m)(F, Z),
+    ed = F === D.A.PURCHASING || F === D.A.COMPLETED,
+    ef = (0, L.m)(V, Z),
     e_ = null != ef ? ef.type : null,
     ep = (0, m.ed)("SKUInvoicePreview"),
     eh = ei.productLine === k.POd.COLLECTIBLES && ep;
@@ -158,7 +158,7 @@ function B(e) {
         tag: c.RB0.H5,
         children: j.NW.string(j.t.mmDvV1)
       }), (0, r.jsx)(_.Z, {
-        paymentSources: Object.values(F),
+        paymentSources: Object.values(V),
         selectedPaymentSourceId: Z,
         onChange: o,
         onPaymentSourceAdd: g,

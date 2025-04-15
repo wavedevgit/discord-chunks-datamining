@@ -103,7 +103,7 @@ function B(e) {
   r = null == i ? null : i
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     guildId: n
@@ -114,7 +114,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t
   } = e;
@@ -214,9 +214,9 @@ let q = new z(c.Z, {
   GUILD_CREATE: U,
   CHANNEL_SELECT: U,
   CHANNEL_DELETE: W,
-  THREAD_LIST_SYNC: V,
+  THREAD_LIST_SYNC: F,
   THREAD_CREATE: Z,
-  THREAD_UPDATE: F,
+  THREAD_UPDATE: V,
   THREAD_DELETE: H,
   RESORT_THREADS: Y,
   CHANNEL_ACK: K

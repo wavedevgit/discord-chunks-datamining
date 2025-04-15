@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   De: () => ef,
-  ZP: () => eV
+  ZP: () => eF
 }), n(388685), n(825670), n(413496), n(433524), n(35282), n(539854), n(642613), n(804061), n(704826);
 var r, i = n(392711),
   o = n.n(i),
@@ -41,8 +41,8 @@ var r, i = n(392711),
   U = n(856985),
   G = n(185923),
   B = n(981631),
-  V = n(149203),
-  F = n(526761);
+  F = n(149203),
+  V = n(526761);
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function Y(e, t) {
   }), e
 }
 let K = "original",
-  z = [V.UX.TOP_GUILD_EMOJI.toString(), V.UX.FAVORITES.toString(), V.UX.RECENT.toString(), V.UX.CUSTOM.toString()].concat(k.ZP.getCategories()),
+  z = [F.UX.TOP_GUILD_EMOJI.toString(), F.UX.FAVORITES.toString(), F.UX.RECENT.toString(), F.UX.CUSTOM.toString()].concat(k.ZP.getCategories()),
   q = {
     pendingUsages: [],
     emojiReactionPendingUsages: [],
@@ -183,7 +183,7 @@ function ed(e) {
       return null != (t = k.ZP.getByName(e)) ? t : es(e)
     },
     afterCompute: () => {
-      e(), et = z.slice(0), o().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(V.UX.CUSTOM), 1)
+      e(), et = z.slice(0), o().some(en, e => e.usableEmojis.length > 0) || et.splice(z.indexOf(F.UX.CUSTOM), 1)
     },
     numFrequentlyItems: X
   })
@@ -458,9 +458,9 @@ function eR(e, t) {
   });
   if (M.Xb.trackExposure({
       location: "populateInitialFrecencyData"
-    }), o().isEmpty(e) && o().isEmpty(q.pendingUsages) && O.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+    }), o().isEmpty(e) && o().isEmpty(q.pendingUsages) && O.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["thumbsup", "thumbsup", "eyes", "eyes", "laughing", "laughing", "watermelon", "fork_and_knife", "yum", "weary", "tired_face", "poop", "100"]) e_.track(e);
-  if ((n || r) && o().isEmpty(t) && o().isEmpty(q.emojiReactionPendingUsages) && O.Z.hasLoaded(F.yP.FRECENCY_AND_FAVORITES_SETTINGS))
+  if ((n || r) && o().isEmpty(t) && o().isEmpty(q.emojiReactionPendingUsages) && O.Z.hasLoaded(V.yP.FRECENCY_AND_FAVORITES_SETTINGS))
     for (let e of ["100", "100", "thumbsup", "thumbsup", "thumbsdown", "thumbsdown", "heart", "point_up", "eyes", "weary", "laughing", "white_check_mark", "x"]) ep.track(e)
 }
 
@@ -485,7 +485,7 @@ function ew(e) {
     },
     wasSaved: n
   } = e;
-  if (h.Z.setEmojiLocale(v.default.locale), t !== F.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
+  if (h.Z.setEmojiLocale(v.default.locale), t !== V.yP.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
   q.pendingUsages = [], q.emojiReactionPendingUsages = []
 }
 
@@ -727,7 +727,7 @@ class eB extends(r = c.ZP.PersistedStore) {
   }
 }
 Z(eB, "displayName", "EmojiStore"), Z(eB, "persistKey", "EmojiStoreV2"), Z(eB, "migrations", [e => H({}, e)]);
-let eV = new eB(u.Z, {
+let eF = new eB(u.Z, {
   LOGOUT: ev,
   BACKGROUND_SYNC: eO,
   CONNECTION_OPEN: eb,

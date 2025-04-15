@@ -99,8 +99,8 @@ let L = e => {
     rowIndex: U,
     allowAnimatedEmoji: G,
     showEmojiFavoriteTooltip: B,
-    channelGuildId: V,
-    category: F,
+    channelGuildId: F,
+    category: V,
     selectedItemClassName: Z,
     channelId: H,
     messageId: W,
@@ -225,7 +225,7 @@ let L = e => {
             selectedItemClassName: Z,
             onSelect: A,
             onInspect: D,
-            channelGuildId: V,
+            channelGuildId: F,
             getEmojiItemProps: x,
             isMediumSize: ef,
             isLargeSize: ed,
@@ -250,7 +250,7 @@ let L = e => {
       ref: eu,
       children: e.map(e_)
     }));
-  if (F === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
+  if (V === I.UX.SOUNDMOJI) return (0, r.jsx)("ul", {
     className: N.emojiListRow,
     ref: eu,
     children: (0, r.jsx)(m.Z, {
@@ -258,7 +258,7 @@ let L = e => {
       onSelectSoundmoji: R
     })
   });
-  if (F !== I.En.TOP_GUILD_EMOJI) return ep(t);
+  if (V !== I.En.TOP_GUILD_EMOJI) return ep(t);
   let eh = t.filter(e => {
       if (q && e.type === v.ld.CREATE_EMOJI) return !0;
       let t = e;

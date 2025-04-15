@@ -220,20 +220,20 @@ class j extends i.Component {
       "aria-labelledby": G,
       accessibilityLabel: B
     } = this.props, {
-      submitting: V,
-      popup: F
+      submitting: F,
+      popup: V
     } = this.state, Z = {
       channel: m,
       className: a()(R, P.textArea, {
         [P.textAreaSlate]: b,
-        [P.textAreaDisabled]: u || V
+        [P.textAreaDisabled]: u || F
       }),
       id: w,
       placeholder: this.getPlaceholder(),
       required: L,
       accessibilityLabel: B,
       disabled: u || !1,
-      submitting: V,
+      submitting: F,
       isEdit: g === O.Ie.EDIT,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
@@ -259,10 +259,10 @@ class j extends i.Component {
       useNewSlashCommands: S,
       disableAutoFocus: f.tq || null != (n = g.disableAutoFocus) && n,
       disableEnterToSubmit: null != (i = null == (e = g.submit) ? void 0 : e.disableEnterToSubmit) && i,
-      "aria-controls": null != (o = F.id) ? o : void 0,
+      "aria-controls": null != (o = V.id) ? o : void 0,
       "aria-haspopup": "listbox",
-      "aria-expanded": null !== F.id || void 0,
-      "aria-activedescendant": null != (s = F.activeDescendant) ? s : void 0,
+      "aria-expanded": null !== V.id || void 0,
+      "aria-activedescendant": null != (s = V.activeDescendant) ? s : void 0,
       "aria-invalid": l.length > M,
       "aria-describedby": U,
       "aria-labelledby": G,

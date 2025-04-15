@@ -2,8 +2,8 @@
 "use strict";
 n.r(t), n.d(t, {
   loadVideoQuestModal: () => Z,
-  maybeShowSurveyForQuest: () => F,
-  navigateToQuestHome: () => V,
+  maybeShowSurveyForQuest: () => V,
+  navigateToQuestHome: () => F,
   openAppWithQuest: () => Y,
   openDisclosureModal: () => B,
   openQuestInGameRewardModal: () => U,
@@ -163,7 +163,7 @@ function B(e, t) {
   })
 }
 
-function V() {
+function F() {
   let {
     fromContent: e,
     questId: t
@@ -180,7 +180,7 @@ function V() {
   }), (0, u.uL)(C.Z5c.QUEST_HOME + n)
 }
 
-function F(e) {
+function V(e) {
   let t = (0, I.T)({
       quest: e
     }),

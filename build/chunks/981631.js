@@ -62,7 +62,7 @@ n.d(t, {
   HeQ: () => g.He,
   Hqc: () => nv,
   HsE: () => rm,
-  IE4: () => V,
+  IE4: () => F,
   IIU: () => e5,
   IWh: () => rj,
   IXf: () => e7,
@@ -82,7 +82,7 @@ n.d(t, {
   KFR: () => nP,
   KJ3: () => rw,
   KsC: () => N,
-  L4X: () => eV,
+  L4X: () => eF,
   LAt: () => ta,
   LPv: () => tq,
   LYt: () => th,
@@ -121,7 +121,7 @@ n.d(t, {
   PyE: () => g.Py,
   QCD: () => nQ,
   QIO: () => tR,
-  QKv: () => F,
+  QKv: () => V,
   QL: () => g.QL,
   QR$: () => rf,
   QZA: () => y,
@@ -164,7 +164,7 @@ n.d(t, {
   V6Z: () => g.V6,
   V7H: () => ti,
   VD2: () => nG,
-  VKK: () => eF,
+  VKK: () => eV,
   V_K: () => tK,
   VqG: () => g.Vq,
   Vzj: () => g.Vz,
@@ -201,7 +201,7 @@ n.d(t, {
   ane: () => nx,
   apO: () => rt,
   b2L: () => nt,
-  b4C: () => rF,
+  b4C: () => rV,
   b8q: () => tM,
   bL: () => eC,
   c2C: () => nL,
@@ -268,7 +268,7 @@ n.d(t, {
   mBz: () => eX,
   mFx: () => e_,
   n8r: () => nY,
-  nkL: () => nF,
+  nkL: () => nV,
   o3l: () => no,
   oAB: () => tB,
   oCV: () => ni,
@@ -285,7 +285,7 @@ n.d(t, {
   pjP: () => n1,
   pmI: () => t4,
   q5t: () => tD,
-  q9n: () => nV,
+  q9n: () => nF,
   qAy: () => tj,
   qWG: () => rZ,
   qXD: () => rE,
@@ -311,7 +311,7 @@ n.d(t, {
   t_t: () => ee,
   tuJ: () => ns,
   u34: () => b,
-  uRl: () => tF,
+  uRl: () => tV,
   uaV: () => c.u,
   udG: () => nE,
   vB8: () => nA,
@@ -319,7 +319,7 @@ n.d(t, {
   vTt: () => nn,
   vbS: () => t1,
   vpv: () => tS,
-  vtS: () => tV,
+  vtS: () => tF,
   vuo: () => eZ,
   vxO: () => re,
   w2V: () => rC,
@@ -340,7 +340,7 @@ n.d(t, {
   yXt: () => g.yX,
   yYS: () => g.yY,
   yb: () => W,
-  ylB: () => rV,
+  ylB: () => rF,
   yqN: () => n_,
   ys_: () => e3,
   zMe: () => g.zM,
@@ -437,10 +437,10 @@ let G = Object.freeze({
 var B = function(e) {
     return e.DISCONNECTED = "DISCONNECTED", e.AWAITING_ENDPOINT = "AWAITING_ENDPOINT", e.AUTHENTICATING = "AUTHENTICATING", e.CONNECTING = "CONNECTING", e.RTC_DISCONNECTED = "RTC_DISCONNECTED", e.RTC_CONNECTING = "RTC_CONNECTING", e.RTC_CONNECTED = "RTC_CONNECTED", e.NO_ROUTE = "NO_ROUTE", e.ICE_CHECKING = "ICE_CHECKING", e.DTLS_CONNECTING = "DTLS_CONNECTING", e
   }({}),
-  V = function(e) {
+  F = function(e) {
     return e.UNKNOWN = "unknown", e.BAD = "bad", e.AVERAGE = "average", e.FINE = "fine", e
   }({}),
-  F = function(e) {
+  V = function(e) {
     return e.CONNECTED = "connected", e.CONNECTING = "connecting", e.ERROR = "error", e
   }({}),
   Z = function(e) {
@@ -1435,8 +1435,8 @@ let eR = 100,
   eU = 4e3,
   eG = 50,
   eB = 100,
-  eV = 1e3,
-  eF = 100,
+  eF = 1e3,
+  eV = 100,
   eZ = 256,
   eH = 32,
   eW = 190,
@@ -1688,10 +1688,10 @@ let tG = {
     SECURE_FRAMES_VERIFIED_DEVICES: "Secure Frames Verified Devices",
     WEB_SETTING_TREE_TOOL: "Web Setting Tree Tool"
   });
-var tV = function(e) {
+var tF = function(e) {
     return e.APPLICATION_STORE = "Application Store Verified Guild Invite - Lurker", e.CHAT_INPUT_BLOCKER = "Chat Input Blocker - Lurker Mode", e.NOTICE_BAR = "Notice - Lurker Mode", e.MOBILE_GUILD_DISCOVERY = "iOS Guild Discovery - Lurker", e.DIRECTORY_ENTRY = "Directory Channel Entry", e.DIRECTORY_EVENTS = "Directory Channel Events", e.POLL_ALERT = "Poll Alert", e.ICYMI = "ICYMI", e
   }({}),
-  tF = function(e) {
+  tV = function(e) {
     return e.QR_CODE = "QR Code Login", e.MOBILE_WEB_HANDOFF = "Mobile Web Handoff", e.DEFAULT = "The default username password Login", e.MFA = "MFA Login", e.PASSWORDLESS_CONDITIONAL_UI = "Passwordless Conditional UI", e
   }({}),
   tZ = function(e) {
@@ -1961,10 +1961,10 @@ var nj = function(e) {
   nB = function(e) {
     return e.VIDEO = "VIDEO", e.EMBED_IFRAME = "EMBED_IFRAME", e
   }({}),
-  nV = function(e) {
+  nF = function(e) {
     return e.GIF = "GIF", e.STICKER = "STICKER", e
   }({});
-let nF = Object.freeze({
+let nV = Object.freeze({
   GIF: {
     type: "GIF",
     command: "gif",
@@ -2495,10 +2495,10 @@ let rG = "discodoEasterEgg";
 var rB = function(e) {
     return e.INITIAL = "initial", e.ENTER = "enter", e.UPDATE = "update", e.LEAVE = "leave", e
   }({}),
-  rV = function(e) {
+  rF = function(e) {
     return e[e.INCOMING = 1] = "INCOMING", e[e.CHANNEL_FOLLOWER = 2] = "CHANNEL_FOLLOWER", e
   }({}),
-  rF = function(e) {
+  rV = function(e) {
     return e[e.APPLICATION = 0] = "APPLICATION", e[e.OVERVIEW = 1] = "OVERVIEW", e[e.CHANNEL_FOLLOWING = 2] = "CHANNEL_FOLLOWING", e[e.TWITCH = 3] = "TWITCH", e[e.YOUTUBE = 4] = "YOUTUBE", e[e.WEBHOOKS = 5] = "WEBHOOKS", e[e.LOBBIES_LINKED = 6] = "LOBBIES_LINKED", e
   }({});
 let rZ = 2500,

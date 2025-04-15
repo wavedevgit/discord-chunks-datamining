@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   ZP: () => W,
-  hU: () => V
+  hU: () => F
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -94,7 +94,7 @@ let k = "1",
   G = .01,
   B = 1e3;
 
-function V(e) {
+function F(e) {
   let {
     disabled: t = !1,
     onClick: n,
@@ -117,7 +117,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     sound: t,
     previewSound: n,
@@ -129,7 +129,7 @@ function F(e) {
   function s(e) {
     e.stopPropagation(), e.currentTarget.blur(), n()
   }
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     tooltipPosition: o,
     disabled: i,
     onClick: s,
@@ -154,7 +154,7 @@ function Z(e) {
   } = e, s = (0, l.e7)([v.Z], () => v.Z.isFavoriteSound(t.soundId), [t.soundId]), c = i.useCallback(e => {
     e.stopPropagation(), e.currentTarget.blur(), s ? (0, y.hs)(t.soundId) : (0, y.TB)(t.soundId)
   }, [s, t.soundId]);
-  return (0, r.jsx)(V, {
+  return (0, r.jsx)(F, {
     disabled: o,
     onClick: c,
     text: C.NW.formatToPlainString(s ? C.t.lQLsjY : C.t.Y5DOs7, {
@@ -188,7 +188,7 @@ function H(e, t) {
   }, [t, e])
 }
 let W = i.forwardRef(function(e, t) {
-  var n, o, u, y, v, P, D, M, V, W, {
+  var n, o, u, y, v, P, D, M, F, W, {
       sound: Y,
       channel: K,
       containerClassName: z,
@@ -225,7 +225,7 @@ let W = i.forwardRef(function(e, t) {
     isPreviewingSound: eS
   } = (0, S.Z)(Y, null != (v = null == K ? void 0 : K.id) ? v : null, null != (P = eu ? E.AY.getSetting() : null == (n = E.kU.getSetting()) ? void 0 : n.volume) ? P : 100, !eu && (null == K ? void 0 : K.isVocal()) ? A.w.VOICE : A.w.DEFAULT), {
     createMultipleConfettiAt: eT
-  } = i.useContext(p.h), eN = i.useRef(null), eA = H(Y.soundId, eN.current), eC = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eR = i.useRef(j), eP = i.useRef(new c.Xp), ew = Y.soundId === k, eD = "sound-".concat(Y.soundId), eL = (0, s.JA)(eD), ex = null != eg || null != eE, eM = !(0, I.Nq)(eb, Y, K) && !eu, ek = X || $ && !eM, ej = i.useRef(null), eU = (null != (D = null == (o = ej.current) ? void 0 : o.scrollHeight) ? D : 0) > (null != (M = null == (u = ej.current) ? void 0 : u.offsetHeight) ? M : 0), eG = null != (V = h.Wq.useStore().bottomPosition) ? V : 0, eB = (null != (W = null == (y = eN.current) ? void 0 : y.getBoundingClientRect().bottom) ? W : 0) + 50 > eG ? "top" : "bottom", [eV, eF] = i.useState(!1), eZ = eM && eo;
+  } = i.useContext(p.h), eN = i.useRef(null), eA = H(Y.soundId, eN.current), eC = (0, l.e7)([_.Z], () => _.Z.useReducedMotion), eR = i.useRef(j), eP = i.useRef(new c.Xp), ew = Y.soundId === k, eD = "sound-".concat(Y.soundId), eL = (0, s.JA)(eD), ex = null != eg || null != eE, eM = !(0, I.Nq)(eb, Y, K) && !eu, ek = X || $ && !eM, ej = i.useRef(null), eU = (null != (D = null == (o = ej.current) ? void 0 : o.scrollHeight) ? D : 0) > (null != (M = null == (u = ej.current) ? void 0 : u.offsetHeight) ? M : 0), eG = null != (F = h.Wq.useStore().bottomPosition) ? F : 0, eB = (null != (W = null == (y = eN.current) ? void 0 : y.getBoundingClientRect().bottom) ? W : 0) + 50 > eG ? "top" : "bottom", [eF, eV] = i.useState(!1), eZ = eM && eo;
 
   function eH() {
     ee || ev(er)
@@ -237,7 +237,7 @@ let W = i.forwardRef(function(e, t) {
       })), null != en) return void en(e);
     eH()
   }
-  let eY = F({
+  let eY = V({
       sound: Y,
       previewSound: eO,
       disabled: eM && !X,
@@ -280,7 +280,7 @@ let W = i.forwardRef(function(e, t) {
         children: ei === O.Pb.SOUNDMOJI ? (0, r.jsx)(m.ZP, {
           sound: Y,
           channel: K,
-          setTooltipShowing: eF
+          setTooltipShowing: eV
         }) : (0, r.jsxs)(r.Fragment, {
           children: [ek && eY, eK(), ek && ez]
         })
@@ -342,7 +342,7 @@ let W = i.forwardRef(function(e, t) {
       tooltipClassName: e_,
       tooltipContentClassName: ep,
       position: eB,
-      shouldShow: !eV,
+      shouldShow: !eF,
       delay: 500,
       children: e => (0, r.jsxs)(d.kL8, L(w(L(w({}, eh), {
         buttonProps: L(w({}, eL), {

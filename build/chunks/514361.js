@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(388685);
 var o, a = n(442837),
   s = n(704215),
@@ -149,7 +149,7 @@ class B extends(o = a.ZP.PersistedStore) {
   }
 }
 S(B, "displayName", "ClientThemesBackgroundStore"), S(B, "persistKey", "ClientThemesBackgroundStore");
-let V = new B(l.Z, {
+let F = new B(l.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: C,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   CLIENT_THEMES_EDITOR_OPEN: P,

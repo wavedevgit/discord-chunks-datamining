@@ -2,7 +2,7 @@
 "use strict";
 let r;
 n.d(t, {
-  ZP: () => eV,
+  ZP: () => eF,
   gF: () => ea,
   k1: () => eC
 }), n(35282), n(413496), n(433524), n(539854), n(642613), n(290780), n(704826), n(388685), n(583741);
@@ -43,8 +43,8 @@ var i = n(658722),
   U = n(158776),
   G = n(699516),
   B = n(944486),
-  V = n(914010),
-  F = n(594174),
+  F = n(914010),
+  V = n(594174),
   Z = n(55563),
   H = n(823379),
   W = n(892880),
@@ -168,7 +168,7 @@ function eD(e) {
     limit: r,
     filter: i,
     allowSnowflake: a
-  } = e, s = F.default.getUsers(), l = V.Z.getGuildId(), c = t.toLocaleLowerCase(), u = (0, q.Fv)(c), f = [], _ = [], p = n.length, h = 0, m = 0;
+  } = e, s = V.default.getUsers(), l = F.Z.getGuildId(), c = t.toLocaleLowerCase(), u = (0, q.Fv)(c), f = [], _ = [], p = n.length, h = 0, m = 0;
   for (; h < p;) {
     var g, E, b, y, v, O, I, S, T;
     let e, r, d = n[h];
@@ -286,7 +286,7 @@ function eG(e, t) {
 
 function eB(e, t) {
   let n = w.Z.getChannel(e);
-  return null == e || null == n ? [] : s()(k.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => F.default.getUser(e.author.id)).filter(e => {
+  return null == e || null == n ? [] : s()(k.Z.getMessages(e).toArray()).reverse().uniqBy(e => e.author.id).map(e => V.default.getUser(e.author.id)).filter(e => {
     if (null == e || e.isNonUserBot()) return !1;
     let t = n.getGuildId();
     return null == t || ew(x.ZP.getMember(t, e.id))
@@ -302,7 +302,7 @@ function eB(e, t) {
     }
   }).take(t).value()
 }
-let eV = {
+let eF = {
   queryFriends(e) {
     let {
       query: t,
@@ -312,7 +312,7 @@ let eV = {
     } = e;
     return eD({
       query: t,
-      members: G.Z.getFriendIDs().map(e => F.default.getUser(e)).filter(H.lm),
+      members: G.Z.getFriendIDs().map(e => V.default.getUser(e)).filter(H.lm),
       limit: n,
       filter: i
     })
@@ -325,7 +325,7 @@ let eV = {
     } = e;
     return eD({
       query: t,
-      members: w.Z.getDMUserIds().map(e => F.default.getUser(e)).filter(H.lm),
+      members: w.Z.getDMUserIds().map(e => V.default.getUser(e)).filter(H.lm),
       limit: n,
       filter: r
     })
@@ -352,7 +352,7 @@ let eV = {
           nick: null != (t = G.Z.getNickname(e)) ? t : null
         }
       });
-      let e = F.default.getCurrentUser();
+      let e = V.default.getCurrentUser();
       null != e && t.push({
         userId: e.id,
         nick: null
@@ -406,7 +406,7 @@ let eV = {
       r = arguments.length > 4 ? arguments[4] : void 0;
     return n && e.length > 0 && W.Z.requestMembers(null, e, t), eD({
       query: e,
-      members: s()(F.default.getUsers()).values().value(),
+      members: s()(V.default.getUsers()).values().value(),
       limit: t,
       filter: r
     })
@@ -449,7 +449,7 @@ let eV = {
           type: (0, R.bw)(e.type) ? J.h8.VOICE_CHANNEL : J.h8.TEXT_CHANNEL,
           record: e,
           score: eA(c, _[e.id]),
-          comparator: (0, f.F6)(e, F.default, G.Z),
+          comparator: (0, f.F6)(e, V.default, G.Z),
           sortable: i
         }))
       }
@@ -496,14 +496,14 @@ let eV = {
     }, c = s()(w.Z.getMutablePrivateChannels()).values().value(), u = [];
     for (let e of c) {
       if (!e.isMultiUserDM() || !i(e)) continue;
-      let t = (0, f.F6)(e, F.default, G.Z).toLocaleLowerCase(),
+      let t = (0, f.F6)(e, V.default, G.Z).toLocaleLowerCase(),
         n = (0, q._I)((0, q.Fv)(t)),
         a = eP(n, l, r);
       a > 0 && u.push({
         type: J.h8.GROUP_DM,
         record: e,
         score: eA(a, o[e.id]),
-        comparator: (0, f.F6)(e, F.default, G.Z),
+        comparator: (0, f.F6)(e, V.default, G.Z),
         sortable: n
       })
     }
@@ -842,7 +842,7 @@ let eV = {
       {
         stickerMetadata: i
       } = T.Z,
-      o = F.default.getCurrentUser(),
+      o = V.default.getCurrentUser(),
       a = new Set,
       l = [];
     for (let s of (C.DZ.loadIfNecessary(), e)) {
@@ -874,7 +874,7 @@ let eV = {
     return 0 === (l = s()(l).sortBy(e => -1 * e.score).value()).length && (l = eI), l
   },
   querySoundmoji(e, t) {
-    let n = F.default.getCurrentUser();
+    let n = V.default.getCurrentUser();
     v.Z.isFetching() || v.Z.hasFetchedAllSounds() || (0, y.w)(), C.DZ.loadIfNecessary();
     let r = Array.from(v.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
       (0, b.Z)(n, null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id) && e.push(n)

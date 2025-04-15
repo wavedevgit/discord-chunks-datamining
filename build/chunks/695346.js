@@ -72,7 +72,7 @@ n.d(t, {
   x4: () => ep,
   xM: () => er,
   xq: () => z,
-  zA: () => F
+  zA: () => V
 }), n(388685);
 var r = n(442837),
   i = n(524437),
@@ -197,8 +197,8 @@ let I = (0, u.Zc)("notifications", "reactionNotifications", e => null != e ? e :
   }, e => o.D5.create({
     value: e
   })),
-  V = [],
-  F = (0, u.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : V, e => e),
+  F = [],
+  V = (0, u.Zc)("privacy", "messageRequestRestrictedGuildIds", e => null != e ? e : F, e => e),
   Z = (0, u.Zc)("privacy", "defaultMessageRequestRestricted", e => null == e ? void 0 : e.value, e => o.D5.create({
     value: e
   })),

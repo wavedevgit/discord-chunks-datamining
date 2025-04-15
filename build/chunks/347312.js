@@ -154,19 +154,19 @@ function G(e) {
     activeFillColor: k,
     lastInactiveFillColor: G,
     inactiveFillColor: B
-  } = j(l, d), V = {
+  } = j(l, d), F = {
     currentTime: o,
     duration: s,
     played: l
-  }, F = i.useRef(V);
+  }, V = i.useRef(F);
   i.useEffect(() => {
-    F.current = V
+    V.current = F
   }), i.useEffect(() => {
     let {
       currentTime: e,
       duration: t,
       played: n
-    } = F.current, r = L({
+    } = V.current, r = L({
       showAll: !n,
       currentTime: e,
       duration: t,

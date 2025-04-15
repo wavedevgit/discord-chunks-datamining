@@ -170,14 +170,14 @@ let C = m(p({}, l().defaultRules.link), {
     if (null == j || null == U || 0 === N(j).trim().length) return u();
     let G = i().pick(t.rules, x),
       B = l().parserFor(G)(_.whitespaceSanitized, L),
-      V = h.whitespaceSanitized,
+      F = h.whitespaceSanitized,
       {
-        target: F
+        target: V
       } = P;
     return {
       content: B,
-      target: F,
-      title: V
+      target: V,
+      title: F
     }
   }
 })

@@ -9,7 +9,7 @@ n.d(t, {
   GI: () => e_,
   Gd: () => eC,
   I: () => eE,
-  J2: () => V,
+  J2: () => F,
   Jf: () => eo,
   KX: () => eh,
   KZ: () => eP,
@@ -76,7 +76,7 @@ var r = n(192379),
 let G = -1,
   B = 1;
 
-function V() {
+function F() {
   let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {
       fetchPolicy: "cache-only"
     },
@@ -102,7 +102,7 @@ function V() {
   }
 }
 
-function F(e) {
+function V(e) {
   return e.sort((e, t) => {
     var n, r, i, o, a, s;
     let l = !(0, P.zi)(e),
@@ -123,7 +123,7 @@ function H(e) {
   return r.useMemo(() => {
     if (0 === e.length) return [];
     if (t.current.length > 0 && t.current.length === e.length) return t.current;
-    let n = F(e).map(e => e.id);
+    let n = V(e).map(e => e.id);
     return t.current = n, n
   }, [e])
 }
@@ -155,7 +155,7 @@ function K(e) {
   let {
     quests: t,
     isFetchingCurrentQuests: n
-  } = V({
+  } = F({
     fetchPolicy: "cache-and-network"
   }), r = new Map(t.map(e => [e.id, e])), i = H(t), o = W(t), a = [], s = [];
   for (let t of a = "all" === e ? i : o) {
@@ -185,7 +185,7 @@ function Q() {
   let {
     quests: e,
     isFetchingCurrentQuests: t
-  } = V({
+  } = F({
     fetchPolicy: "cache-only"
   }), [n, i] = r.useState(() => new Map(e.map(e => [e.id, (0, P.zi)(e)])));
   return r.useEffect(() => {
@@ -331,7 +331,7 @@ function el() {
   let {
     quests: e,
     isFetchingCurrentQuests: t
-  } = V({
+  } = F({
     fetchPolicy: "cache-or-network"
   }), n = Q();
   return r.useMemo(() => {

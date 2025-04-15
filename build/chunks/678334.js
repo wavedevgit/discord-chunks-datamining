@@ -47,8 +47,8 @@ function N(e) {
     openInvoiceId: U,
     metadata: G,
     backButtonEligible: B,
-    disablePurchase: V,
-    isTrial: F = !1
+    disablePurchase: F,
+    isTrial: V = !1
   } = e, {
     selectedPlan: Z,
     priceOptions: H,
@@ -154,14 +154,14 @@ function N(e) {
       legalTermsNodeRef: A,
       invoiceError: R,
       planError: P,
-      disablePurchase: V,
+      disablePurchase: F,
       flashLegalTerms: C,
       isSubmitting: eg,
       premiumSubscription: t,
       isGift: er,
       planGroup: M,
       isPrepaid: eO,
-      isTrial: F,
+      isTrial: V,
       makePurchase: eC,
       needsPaymentSource: null == em && !eI,
       onNext: N,

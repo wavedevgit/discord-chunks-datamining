@@ -70,8 +70,8 @@ function M(e) {
   } = (0, O.z)(), B = {
     [D.fullSize]: G === w.y0.FULL_SIZE
   }, {
-    interactionSource: V,
-    interactionSourceId: F
+    interactionSource: F,
+    interactionSourceId: V
   } = (0, b.Xo)(), Z = (0, _.Z)({
     activity: L,
     user: n
@@ -135,7 +135,7 @@ function M(e) {
     });
   if (null === G) return null;
   let J = null != (t = L.application_id) ? t : L.name,
-    $ = V === w.n_.ACTIVITY && F === J;
+    $ = F === w.n_.ACTIVITY && V === J;
   return (0, r.jsx)(u.Gt, {
     value: Y,
     children: (0, r.jsx)(I.Z, {

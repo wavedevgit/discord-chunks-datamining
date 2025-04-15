@@ -156,7 +156,7 @@ function B() {
   T = Math.max(T - 1, 0)
 }
 
-function V(e) {
+function F(e) {
   var t, n;
   let {
     clip: r
@@ -176,7 +176,7 @@ function V(e) {
   }), I = [r, ...I], L.hasClips = !0
 }
 
-function F(e) {
+function V(e) {
   let {
     clip: t
   } = e;
@@ -450,8 +450,8 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
 })]);
 let ei = new er(o.Z, {
     CLIPS_SETTINGS_UPDATE: j,
-    CLIPS_SAVE_CLIP: V,
-    CLIPS_SAVE_CLIP_PLACEHOLDER: F,
+    CLIPS_SAVE_CLIP: F,
+    CLIPS_SAVE_CLIP_PLACEHOLDER: V,
     CLIPS_SAVE_CLIP_PLACEHOLDER_ERROR: Z,
     CLIPS_SAVE_CLIP_START: U,
     CLIPS_SAVE_CLIP_ERROR: B,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ZP: () => V,
+  ZP: () => F,
   dz: () => j
 }), n(388685);
 var r = n(200651),
@@ -232,7 +232,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     headingText: t,
     context: i,

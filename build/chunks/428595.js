@@ -77,7 +77,7 @@ let k = /^( *>>> +([\s\S]*))|^( *>(?!>>) +[^\n]*(\n *>(?!>>) +[^\n]*)*\n?)/,
   G = /^ *> ?/gm,
   B = /^((?:https?|steam):\/\/[^\s<]+[^<.,:;"'\]\s])/;
 
-function V(e) {
+function F(e) {
   let t = (0, b.yw)(e[1]);
   if (null == t) return {
     type: "text",
@@ -97,11 +97,11 @@ function V(e) {
     title: void 0
   }
 }
-let F = e => {
+let V = e => {
     let t = d.Z.getChannel(e);
     return null == t ? void 0 : t.getGuildId()
   },
-  Z = e => null != e.guildId ? f.Z.getGuild(e.guildId) : null != e.channelId ? f.Z.getGuild(F(e.channelId)) : null,
+  Z = e => null != e.guildId ? f.Z.getGuild(e.guildId) : null != e.channelId ? f.Z.getGuild(V(e.channelId)) : null,
   H = {
     newline: a().defaultRules.newline,
     paragraph: a().defaultRules.paragraph,
@@ -141,7 +141,7 @@ let F = e => {
     }),
     link: b.ZP,
     autolink: M(L({}, a().defaultRules.autolink), {
-      parse: V
+      parse: F
     }),
     mailto: M(L({}, a().defaultRules.mailto), {
       match: a().inlineRegex(/^<([^\s<>@]+@[^\s<>@]+\.[^\s<>@]+)>/),
@@ -183,7 +183,7 @@ let F = e => {
         }
         return n
       },
-      parse: V
+      parse: F
     }),
     strong: a().defaultRules.strong,
     em: a().defaultRules.em,
@@ -414,7 +414,7 @@ let F = e => {
           itemContent: l(s),
           itemId: o,
           id: i,
-          guildId: F(n.channelId),
+          guildId: V(n.channelId),
           channelId: i
         }
       }

@@ -61,8 +61,8 @@ function P(e) {
       modalContentClassName: U,
       artContainerClassName: G,
       headerClassName: B,
-      bodyClassName: V,
-      transitionState: F,
+      bodyClassName: F,
+      transitionState: V,
       onClose: Z,
       onSubscribeClick: H,
       onSubscribeFinish: W,
@@ -173,7 +173,7 @@ function P(e) {
   }) : null != ed.artElement && (eS = ed.artElement), (0, r.jsxs)(l.Y0X, {
     className: a()(N.root, !eh && j),
     "aria-label": R,
-    transitionState: F,
+    transitionState: V,
     children: [null != eS && (0, r.jsxs)("div", {
       className: eI,
       children: [eS, q ? (0, r.jsx)("img", {
@@ -210,7 +210,7 @@ function P(e) {
             affinities: eb
           }) : void 0, ea, (0, r.jsx)(l.Text, {
             variant: ec ? "text-sm/normal" : "text-md/normal",
-            className: a()(V, N.subHeader),
+            className: a()(F, N.subHeader),
             children: x
           })]
         })]

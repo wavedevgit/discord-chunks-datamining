@@ -92,8 +92,8 @@ function U(e, t) {
 }
 let G = 1.25,
   B = 36,
-  V = 144,
-  F = 150,
+  F = 144,
+  V = 150,
   Z = 150,
   H = 300,
   W = 14;
@@ -228,7 +228,7 @@ let z = i.forwardRef(function(e, t) {
     [D.panel]: h === P.y0.PANEL
   }, L = (0, g.p)({
     location: "CustomStatusBubble"
-  }), x = null != l ? G : 0, M = null != S ? W : 0, k = B + x + M, j = V + x + M, U = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(k), Q = i.useRef(j), X = null != l && null == p, [J, $] = i.useState(!1), [ee, et] = i.useState(!0), [en, er] = i.useState(!X && N), ei = !X && N && J;
+  }), x = null != l ? G : 0, M = null != S ? W : 0, k = B + x + M, j = F + x + M, U = i.useRef(null), K = i.useRef(null), z = i.useRef(null), q = i.useRef(k), Q = i.useRef(j), X = null != l && null == p, [J, $] = i.useState(!1), [ee, et] = i.useState(!0), [en, er] = i.useState(!X && N), ei = !X && N && J;
   i.useLayoutEffect(() => {
     if ($(!0), null == K.current || null == z.current || !ei) return;
     let e = K.current.getBoundingClientRect().height,
@@ -244,7 +244,7 @@ let z = i.forwardRef(function(e, t) {
     maxHeight: "".concat(q.current, "px"),
     config: {
       clamp: !0,
-      duration: F
+      duration: V
     }
   })), ec = e => {
     en && (e ? el({
@@ -252,7 +252,7 @@ let z = i.forwardRef(function(e, t) {
       delay: eo ? 0 : H,
       config: {
         clamp: !0,
-        duration: eo ? 0 : F
+        duration: eo ? 0 : V
       }
     }) : el({
       maxHeight: "".concat(Math.min(q.current, k), "px"),

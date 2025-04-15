@@ -31,16 +31,20 @@ function O(e) {
     guildBoostSlot: n,
     showAltText: a,
     isCanceled: o,
-    premiumSubscription: c
-  } = e, d = i.useMemo(() => {
-    if (o) return j.NW.format(j.t.Z4ULRE, {
-      date: c.currentPeriodEnd
-    });
+    premiumSubscription: c,
+    fractionalPremiumInfo: d
+  } = e, u = i.useMemo(() => {
+    if (o) {
+      let e = c.currentPeriodEnd;
+      return c.isPausedForFractionalPremium && (e = d.endsAt.toDate()), j.NW.format(j.t.Z4ULRE, {
+        date: e
+      })
+    }
     let e = null != n.premiumGuildSubscription ? f.default.extractTimestamp(n.premiumGuildSubscription.id) : 0;
     return j.NW.formatToPlainString(j.t.lY2Bur, {
       date: new Date(e)
     })
-  }, [n, o, c]), u = i.useMemo(() => (function(e) {
+  }, [n, o, c, d]), m = i.useMemo(() => (function(e) {
     if (null == e || e === x.Eu4.NONE) return "";
     let t = [j.NW.formatToPlainString(j.t.dLlKX1, {
       numEmojiSlots: E.HO[e].limits.emoji
@@ -63,7 +67,7 @@ function O(e) {
     return j.NW.format(j.t["/dOAmZ"], {
       perk: n
     })
-  })(t), [t]), m = (0, l.Yzy)(a, {
+  })(t), [t]), g = (0, l.Yzy)(a, {
     from: {
       opacity: 0
     },
@@ -79,15 +83,15 @@ function O(e) {
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: d
+      children: u
     })
-  }) : m((e, t) => (0, r.jsx)(s.animated.div, {
+  }) : g((e, t) => (0, r.jsx)(s.animated.div, {
     style: e,
     className: C.boostDescriptionInnerContainer,
     children: (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: t ? u : d
+      children: t ? m : u
     })
   }))
 }
@@ -100,9 +104,7 @@ function S(e) {
     hasCancelableGuildBoostSlot: u,
     showAltText: m,
     isLastGuildBoostSlot: h
-  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = i.useMemo(() => null != x && x > new Date, [x]), S = (0, p.tl)(n), {
-    fractionalState: v
-  } = (0, c.Z)();
+  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), N = (0, a.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => null != n.cooldownEndsAt ? new Date(n.cooldownEndsAt) : null, [n]), E = i.useMemo(() => null != x && x > new Date, [x]), S = (0, p.tl)(n), v = (0, c.Z)();
   return (0, r.jsxs)("div", {
     className: C.boostContainer,
     children: [(0, r.jsxs)("div", {
@@ -121,7 +123,8 @@ function S(e) {
           guildBoostSlot: n,
           showAltText: m,
           isCanceled: S,
-          premiumSubscription: s
+          premiumSubscription: s,
+          fractionalPremiumInfo: v
         })
       }), (0, r.jsx)(l.yRy, {
         renderPopout: function(e) {
@@ -133,7 +136,7 @@ function S(e) {
             guildBoostSlot: n,
             premiumSubscription: s,
             hasCancelableGuildBoostSlot: u,
-            fractionalState: v,
+            fractionalState: v.fractionalState,
             user: N
           })
         },

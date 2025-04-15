@@ -106,11 +106,11 @@ function B(e) {
   }), P = !1, w = t, x = (0, l.zO)(), L = !0
 }
 
-function V() {
+function F() {
   P = !1
 }
 
-function F(e) {
+function V(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if ((0, f.Z)(e) && !I.V$x.SELF_MENTIONABLE_SYSTEM.has(e.type)) return null;
   null == t && (t = e.channel_id);
@@ -145,7 +145,7 @@ function Z(e) {
       suppressRoles: !1,
       suppressEveryone: !1
     })) return !1;
-  let i = F(n, t);
+  let i = V(n, t);
   if (null == i) return !1;
   (A = A.slice()).unshift(i), R[i.id] = !0, j({
     addedMessages: [i]
@@ -204,7 +204,7 @@ function z(e) {
   R = {};
   let i = [];
   r && A.forEach(e => {
-    let t = F(e);
+    let t = V(e);
     null != t && (i.push(t), R[t.id] = !0)
   }), k(A = i), 0 === A.length && (L = !1)
 }
@@ -309,7 +309,7 @@ S(er, "displayName", "RecentMentionsStore");
 let ei = new er(c.Z, {
   LOAD_RECENT_MENTIONS: U,
   LOAD_RECENT_MENTIONS_SUCCESS: B,
-  LOAD_RECENT_MENTIONS_FAILURE: V,
+  LOAD_RECENT_MENTIONS_FAILURE: F,
   SET_RECENT_MENTIONS_FILTER: z,
   CLEAR_MENTIONS: ee,
   TRUNCATE_MENTIONS: et,

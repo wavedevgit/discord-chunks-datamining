@@ -228,7 +228,7 @@ function B() {
   (null == n ? void 0 : n.type) !== h.tI.VIEW_CHANNEL && G(t, e)
 }
 
-function V(e) {
+function F(e) {
   let {
     guildId: t,
     channelId: n,
@@ -240,7 +240,7 @@ function V(e) {
   }), G(t, n))
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     messageId: n
@@ -328,10 +328,10 @@ class z extends d.Z {
       OVERLAY_INITIALIZE: x,
       CHANNEL_SELECT: k,
       VOICE_CHANNEL_SELECT: j,
-      THREAD_CREATE: F,
+      THREAD_CREATE: V,
       THREAD_LIST_SYNC: () => M(),
-      CHANNEL_CREATE: F,
-      CHANNEL_PRELOAD: V,
+      CHANNEL_CREATE: V,
+      CHANNEL_PRELOAD: F,
       GUILD_CREATE: () => M(),
       MESSAGE_END_EDIT: Z,
       LOAD_MESSAGES_SUCCESS: W,

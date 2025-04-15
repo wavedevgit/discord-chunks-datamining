@@ -10,7 +10,7 @@ n.d(t, {
   BR: () => r.Z,
   BZ: () => z,
   Cw: () => w,
-  Cy: () => F,
+  Cy: () => V,
   EK: () => eh,
   ET: () => eg,
   Et: () => q,
@@ -36,7 +36,7 @@ n.d(t, {
   U9: () => _,
   Uk: () => A,
   V6: () => Y,
-  Vq: () => V,
+  Vq: () => F,
   Vz: () => y,
   X5: () => m,
   X6: () => W,
@@ -249,8 +249,8 @@ let G = Object.freeze({
   B = function() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
   },
-  V = () => null,
-  F = () => Promise.resolve(),
+  F = () => null,
+  V = () => Promise.resolve(),
   Z = [G.KICK_MEMBERS, G.BAN_MEMBERS, G.ADMINISTRATOR, G.MANAGE_CHANNELS, G.MANAGE_GUILD, G.MANAGE_ROLES, G.MANAGE_MESSAGES, G.MANAGE_THREADS, G.MODERATE_MEMBERS],
   H = i.$e(...Z),
   W = 1,

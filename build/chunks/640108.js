@@ -75,8 +75,8 @@ function U(e, t) {
 }
 let G = 3e3,
   B = 1e3,
-  V = "-:--",
-  F = {
+  F = "-:--",
+  V = {
     friction: 14,
     tension: 200
   },
@@ -115,7 +115,7 @@ let K = e => {
   let {
     current: t,
     duration: n
-  } = e, r = null != t ? W(t) : V, i = null != n ? W(n) : V;
+  } = e, r = null != t ? W(t) : F, i = null != n ? W(n) : F;
   return r = r.padStart(i.length, "0"), (0, o.jsxs)("div", {
     className: L.durationTimeWrapper,
     children: [(0, o.jsx)("span", {
@@ -155,7 +155,7 @@ class z extends(r = a.Component) {
     } = this.state;
     t ? d.Z.spring(n, k({
       toValue: e
-    }, F)).start() : n.setValue(e)
+    }, V)).start() : n.setValue(e)
   }
   getAnimatedStyle() {
     let {
@@ -362,7 +362,7 @@ class Q extends a.Component {
         duration: 200
       })]), d.Z.spring(t, U(k({
         toValue: 1.5
-      }, F), {
+      }, V), {
         friction: 80
       }))]).start()
     })

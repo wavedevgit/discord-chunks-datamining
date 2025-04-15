@@ -40,7 +40,7 @@ var r = n(507604),
   B = r && (!j || U || I || S || E(function() {
     return k[T] = !1, N(M) !== M || N(k) === k || "/a/i" !== String(N(M, "i"))
   })),
-  V = function(e) {
+  F = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = !1; r <= n; r++) {
       if ("\\" === (t = P(e, r))) {
         i += t + P(e, ++r);
@@ -50,7 +50,7 @@ var r = n(507604),
     }
     return i
   },
-  F = function(e) {
+  V = function(e) {
     for (var t, n = e.length, r = 0, i = "", o = [], a = c(null), s = !1, l = !1, u = 0, d = ""; r <= n; r++) {
       if ("\\" === (t = P(e, r))) t += P(e, ++r);
       else if ("]" === t) s = !1;
@@ -79,7 +79,7 @@ if (a("RegExp", B)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === Z) return e;
-      if ((h || d(A, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (o = F(e))[0], g = o[1]), a = s(N(e, t), u ? this : A, Z), (r || i || g.length) && (c = y(a), r && (c.dotAll = !0, c.raw = Z(V(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(A, e)) && (e = e.source, m && (t = p(E))), e = void 0 === e ? "" : _(e), t = void 0 === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > -1) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > -1) && G && (t = w(t, /y/g, "")), S && (e = (o = V(e))[0], g = o[1]), a = s(N(e, t), u ? this : A, Z), (r || i || g.length) && (c = y(a), r && (c.dotAll = !0, c.raw = Z(F(e), n)), i && (c.sticky = !0), g.length && (c.groups = g)), e !== E) try {
         l(a, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return a

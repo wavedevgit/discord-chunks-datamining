@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(584511),
   G = n(793865),
   B = n(522651),
-  V = n(795318),
-  F = n(354459),
+  F = n(795318),
+  V = n(354459),
   Z = n(981631),
   H = n(65154),
   W = n(388032),
@@ -163,8 +163,8 @@ function eo(e) {
         } = e;
         return (0, r.jsx)(G.Z, {
           onClose: t,
-          onInteraction: (0, V.u)("VideoDeviceMenu", s, {
-            entrypoint: F.A5.CARET
+          onInteraction: (0, F.u)("VideoDeviceMenu", s, {
+            entrypoint: V.A5.CARET
           })
         })
       },
@@ -242,7 +242,7 @@ function ea(e) {
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
   let B = L === Z.WtW.VIDEO && A && C > 0,
-    V = (0, r.jsxs)(r.Fragment, {
+    F = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == S ? (0, r.jsx)("div", {
         className: a()(K.icon, Y.wrapper, Y.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
@@ -279,7 +279,7 @@ function ea(e) {
         })]
       })]
     }),
-    F = B ? $ : ee,
+    V = B ? $ : ee,
     q = (0, l.e7)([x.Z], () => x.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
@@ -301,15 +301,15 @@ function ea(e) {
             [K.previewCamera]: v
           }, e),
           style: J(Q({}, n), {
-            width: G.value.interpolate([0, 1], [F.width, et]),
-            minHeight: G.value.interpolate([0, 1], [F.height, en]),
-            translateX: G.value.interpolate([0, 1], [0, -1 * Math.abs(et - F.width) / 2])
+            width: G.value.interpolate([0, 1], [V.width, et]),
+            minHeight: G.value.interpolate([0, 1], [V.height, en]),
+            translateX: G.value.interpolate([0, 1], [0, -1 * Math.abs(et - V.width) / 2])
           }),
           children: [v ? (0, r.jsx)(ei, {
-            header: V
+            header: F
           }) : (0, r.jsx)("div", {
             className: K.mainChannelInfo,
-            children: V
+            children: F
           }), (0, r.jsx)(eo, {
             canVideo: B,
             channel: h,

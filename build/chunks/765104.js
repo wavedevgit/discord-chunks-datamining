@@ -79,7 +79,7 @@ let P = {},
 function B() {
   k = h.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
-class V extends(s = u.ZP.PersistedStore) {
+class F extends(s = u.ZP.PersistedStore) {
   getState() {
     return {
       shouldShowTopicsBar: r
@@ -164,12 +164,12 @@ class V extends(s = u.ZP.PersistedStore) {
   }
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   let i = null == t || t < n;
   return !(null == e || e > r) && !i
 }
-N(V, "persistKey", "SummaryStore");
-let Z = new V(d.Z, {
+N(F, "persistKey", "SummaryStore");
+let Z = new F(d.Z, {
   CONNECTION_OPEN: () => !1,
   CHANNEL_SELECT(e) {
     let {
@@ -263,7 +263,7 @@ let Z = new V(d.Z, {
         o = null == e ? void 0 : e.findIndex(e => e.id === (null == i ? void 0 : i.summaryId))
       } else {
         var n;
-        o = null == (n = P[t]) ? void 0 : n.findIndex(t => F(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
+        o = null == (n = P[t]) ? void 0 : n.findIndex(t => V(e.topVisibleMessage, e.bottomVisibleMessage, t.startId, t.endId))
       }
   },
   SET_SELECTED_SUMMARY(e) {

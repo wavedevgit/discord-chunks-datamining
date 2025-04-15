@@ -71,11 +71,11 @@ function C(e) {
     channelId: C,
     messageId: R,
     roleId: P
-  }), U = (0, _.ZP)(t.id, N), G = (0, o.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), V = (0, s.Z)(B);
+  }), U = (0, _.ZP)(t.id, N), G = (0, o.e7)([u.Z], () => null != N ? u.Z.getGuild(N) : null), B = i.useRef(null), F = (0, s.Z)(B);
   i.useEffect(() => {
     null == L || L(null == B ? void 0 : B.current)
   }, [B, L]);
-  let F = e => {
+  let V = e => {
       null == D || D(), (0, y.openUserProfileModal)(A({
         sourceAnalyticsLocations: k
       }, j, e))
@@ -84,7 +84,7 @@ function C(e) {
       id: "view-profile",
       label: S.NW.string(S.t["+Xp3ho"]),
       action: () => {
-        F(), (0, f.pQ)(A({
+        V(), (0, f.pQ)(A({
           action: "PRESS_VIEW_PROFILE",
           analyticsLocations: k
         }, j))
@@ -126,7 +126,7 @@ function C(e) {
               guildId: N,
               channelId: C,
               profileType: I.y0.BITE_SIZE,
-              onOpenProfile: x ? void 0 : F
+              onOpenProfile: x ? void 0 : V
             }), (0, r.jsx)(b.Z, {
               location: "BotUserProfilePopout",
               user: t,
@@ -138,8 +138,8 @@ function C(e) {
             currentUser: n,
             displayProfile: U,
             guild: G,
-            isHovering: V,
-            onOpenProfile: x ? void 0 : F,
+            isHovering: F,
+            onOpenProfile: x ? void 0 : V,
             channelId: C,
             onClose: D
           }), (0, r.jsx)(O.Z, {

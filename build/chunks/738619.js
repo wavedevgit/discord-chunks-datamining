@@ -92,7 +92,7 @@ function G(e, t) {
   return i
 }
 let B = [];
-class V extends i.PureComponent {
+class F extends i.PureComponent {
   componentDidMount() {
     this.timeout = setTimeout(() => {
       this.setState({
@@ -147,7 +147,7 @@ class V extends i.PureComponent {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     channel: t,
     guild: n
@@ -180,11 +180,11 @@ function Z(e) {
   } = e, {
     rateLimitPerUser: E
   } = u, y = N.default.getCurrentUser(), v = O.Z.getGuild(t), S = E > 0, T = f ? [] : l()(s).keys().filter(e => e !== (null == y ? void 0 : y.id)).reject(e => I.Z.isBlockedOrIgnored(e)).map(e => N.default.getUser(e)).filter(R.lm).map(e => P.ZP.getName(t, u.id, e)).value(), A = (0, m.R6)("TypingUsers");
-  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(V, {
+  if (0 === T.length && !S && !g) return i && null != n ? (0, r.jsx)(F, {
     activity: n,
     isFocused: o,
     isRefreshChatInputEnabled: A
-  }) : (0, r.jsx)(F, {
+  }) : (0, r.jsx)(V, {
     channel: u,
     guild: v
   });

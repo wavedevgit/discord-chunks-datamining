@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(415506), n(388685);
 var r, i = n(442837),
   o = n(759174),
@@ -268,7 +268,7 @@ class B extends(r = i.ZP.Store) {
   }
 }
 u(B, "displayName", "SavedMessagesStore");
-let V = new B(a.Z, {
+let F = new B(a.Z, {
   POST_CONNECTION_OPEN: T,
   LOGOUT: N,
   SAVED_MESSAGES_UPDATE: A,

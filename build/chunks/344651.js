@@ -121,11 +121,11 @@ let U = new d.Z("ConnectionStore"),
       guildId: t.guild_id
     }))
   }), e), e => "SOUNDBOARD_SOUNDS" !== e),
-  V = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
+  F = new P.Z(w.Wb, (e, t) => ((e = null != e ? e : {
     type: "GUILD_MEMBERS_CHUNK_BATCH",
     chunks: []
   }).chunks.push(t), e), e => "GUILD_MEMBERS_CHUNK" !== e),
-  F = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
+  V = new P.Z(w.Wb, (e, t) => ((e = null == e ? {
     type: "PRESENCE_UPDATES",
     updates: []
   } : e).updates.push(t), e), e => "PRESENCE_UPDATE" !== e && "GUILD_MEMBERS_CHUNK" !== e),
@@ -229,7 +229,7 @@ function X(e) {
     clientStatus: a,
     processedAtTimestamp: s
   } = e;
-  F.add({
+  V.add({
     guildId: t,
     user: n,
     status: r,
@@ -658,7 +658,7 @@ W(["INITIAL_GUILD"], e => "full" === e.data_mode ? null : v.o.loadGuildIds([e.id
   })
 }), H(["GUILD_MEMBERS_CHUNK"], e => {
   o.ZP.Emitter.batched(() => {
-    V.add({
+    F.add({
       guildId: e.guild_id,
       members: e.members,
       notFound: e.not_found

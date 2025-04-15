@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  PF: () => F,
+  PF: () => V,
   R7: () => k,
   Tg: () => U,
   UU: () => G,
@@ -10,7 +10,7 @@ n.d(t, {
   iy: () => B,
   mO: () => x,
   t1: () => R,
-  uL: () => V,
+  uL: () => F,
   v2: () => M,
   yC: () => L
 }), n(704826), n(35282);
@@ -294,7 +294,7 @@ function B(e) {
   return null == t ? e : (0, u.MO)(t) ? (0, u.q5)(t).toString() : e
 }
 
-function V(e) {
+function F(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     var n;
     let r = null != (n = i().max(Object.values(t.gifs).map(e => e.order))) ? n : 0;
@@ -311,7 +311,7 @@ function V(e) {
   }, b.fy.INFREQUENT_USER_ACTION)
 }
 
-function F(e) {
+function V(e) {
   f.DZ.updateAsync("favoriteGifs", t => {
     e in t.gifs ? delete t.gifs[e] : delete t.gifs[B(e)], p.default.track(E.rMx.GIF_UNFAVORITED, {
       total_num_favorited: i().size(t.gifs)

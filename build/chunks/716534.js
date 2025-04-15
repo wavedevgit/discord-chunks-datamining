@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(459965),
   G = n(251660),
   B = n(474936),
-  V = n(981631),
-  F = n(231338),
+  F = n(981631),
+  V = n(231338),
   Z = n(388032),
   H = n(236691);
 
@@ -56,8 +56,8 @@ function W(e, t, n) {
       intervalCount: a
     } = N.ZP.getIntervalForInvoice(t), s = (0, A.og)((0, A.T4)(t.total, t.currency), e, a), l = null != n ? n : t.subscriptionPeriodEnd;
     r = Z.NW.format(Z.t.ZzmrTk, {
-      termsURL: V.EYA.TERMS,
-      paidURL: V.EYA.PAID_TERMS,
+      termsURL: F.EYA.TERMS,
+      paidURL: F.EYA.PAID_TERMS,
       rate: s,
       renewalDate: l
     }), i = H.trialCheckbox, o = H.trialCheckboxLabel
@@ -70,7 +70,7 @@ function W(e, t, n) {
 }
 
 function Y(e) {
-  var t, n, o, V;
+  var t, n, o, F;
   let Y, K, {
       selectedPlanId: z,
       planGroup: q,
@@ -153,7 +153,7 @@ function Y(e) {
       currency: X.currency,
       metadata: el
     }),
-    [eB, eV] = (0, R.o5)({
+    [eB, eF] = (0, R.o5)({
       paymentSourceId: X.paymentSourceId,
       skuId: eg,
       subscriptionPlanId: z,
@@ -164,8 +164,8 @@ function Y(e) {
   i.useEffect(() => {
     ev(eB)
   }, [ev, eB]);
-  let eF = eT && (0, T.pO)(eN),
-    eZ = null != (o = null != (n = null != eM ? eM : ej) ? n : eG) ? o : eV;
+  let eV = eT && (0, T.pO)(eN),
+    eZ = null != (o = null != (n = null != eM ? eM : ej) ? n : eG) ? o : eF;
   i.useEffect(() => {
     eS(eZ)
   }, [eZ, eS]);
@@ -207,7 +207,7 @@ function Y(e) {
     plan: ew,
     className: H.invoice,
     isPrepaidPaymentSource: eq,
-    isCustomGift: eF,
+    isCustomGift: eV,
     invoicePreview: eB
   });
   else if (null != e4) K = (0, r.jsxs)("div", {
@@ -273,7 +273,7 @@ function Y(e) {
     e9 = Z.NW.formatToPlainString(Z.t["sBpy9/"], {
       planName: ew.name
     });
-  return eT && !eF ? e9 = Z.NW.string(Z.t.J5a0eX) : eT && eF ? e9 = "" : (0, N.PV)(ew.id) && (e9 = N.ZP.getBillingReviewSubheader(null, ew)), eQ ? null : (0, r.jsxs)("div", {
+  return eT && !eV ? e9 = Z.NW.string(Z.t.J5a0eX) : eT && eV ? e9 = "" : (0, N.PV)(ew.id) && (e9 = N.ZP.getBillingReviewSubheader(null, ew)), eQ ? null : (0, r.jsxs)("div", {
     className: H.stepBody,
     children: [null != es && (0, r.jsxs)("div", {
       className: H.reviewWarningMessageContainer,
@@ -312,7 +312,7 @@ function Y(e) {
     }), !ef && "" !== e9 && (0, r.jsx)(u.vwX, {
       tag: u.RB0.H5,
       children: e9
-    }), eF && null != eA && (0, r.jsxs)(r.Fragment, {
+    }), eV && null != eA && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(M.Z, {
         defaultAnimationState: C.SR.LOOP,
         giftStyle: eA,
@@ -367,7 +367,7 @@ function Y(e) {
         checkboxLabel: e6,
         checkboxClassname: e8,
         checkboxLabelClassname: e7,
-        finePrint: null != (V = !eI && ea) ? V : (0, r.jsx)(f.Z, {
+        finePrint: null != (F = !eI && ea) ? F : (0, r.jsx)(f.Z, {
           hide: ef || e_,
           subscriptionPlan: ew,
           renewalInvoice: ek,
@@ -376,7 +376,7 @@ function Y(e) {
           isEmbeddedIAP: eh,
           basePrice: (0, N.aS)(ew.id, !1, eT, X)
         }),
-        showPricingLink: ew.currency !== F.pK.USD,
+        showPricingLink: ew.currency !== V.pK.USD,
         showWithdrawalWaiver: e5,
         disabled: eL,
         isTrial: ef && null == ea,

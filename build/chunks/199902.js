@@ -94,14 +94,14 @@ function B() {
   return e
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationStreamState: t
   } = e;
   i = t.streamsByUserAndGuild, r = new Map(t.activeStreams), o = t.rtcStreams, a = t.streamerActiveStreamMetadatas
 }
 
-function F(e) {
+function V(e) {
   let {
     voiceStates: t
   } = e;
@@ -444,8 +444,8 @@ class ei extends(c = u.ZP.PersistedStore) {
 R(ei, "displayName", "ApplicationStreamingStore"), R(ei, "persistKey", "ApplicationStreamingStore");
 let eo = new ei(d.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: Y,
-  OVERLAY_INITIALIZE: V,
-  VOICE_STATE_UPDATES: F,
+  OVERLAY_INITIALIZE: F,
+  VOICE_STATE_UPDATES: V,
   STREAM_WATCH: Z,
   STREAM_START: H,
   STREAM_STOP: K,

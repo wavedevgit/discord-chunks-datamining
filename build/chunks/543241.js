@@ -16,9 +16,9 @@ n.d(t, {
   jA: () => D,
   kI: () => R,
   nV: () => K,
-  q5: () => F,
+  q5: () => V,
   to: () => x,
-  wC: () => V,
+  wC: () => F,
   y$: () => L
 }), n(290780), n(539854), n(388685), n(314940), n(704826), n(35282);
 var r = n(192379),
@@ -52,8 +52,8 @@ let R = function(e, t) {
       i = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
     (0, d.O)(n);
     let o = (0, T.Gt)(e),
-      s = V(n),
-      _ = F(n),
+      s = F(n),
+      _ = V(n),
       {
         canSplitFrecencyList: g
       } = (0, c.S)({
@@ -391,13 +391,13 @@ function B(e, t, n) {
   }, [t, n, e, i], a.pF)
 }
 
-function V(e) {
+function F(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedEmojisWithoutFetchingLatest())
 }
 
-function F(e) {
+function V(e) {
   return r.useEffect(() => {
     _.DZ.loadIfNecessary()
   }, []), (0, a.Wu)([l.ZP], () => l.ZP.getDisambiguatedEmojiContext(e).getFrequentlyUsedReactionEmojisWithoutFetchingLatest())

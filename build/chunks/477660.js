@@ -805,13 +805,13 @@
         }
       }
     },
-    V = function(e, t) {
+    F = function(e, t) {
       return t || "undefined" == typeof console || console.warn("simple-markdown ruleOutput should take 'react' or 'html' as the second argument."),
         function(n, r, i) {
           return e[n.type][t](n, r, i)
         }
     },
-    F = function(e) {
+    V = function(e) {
       var t = function(n, r) {
         if (r = r || {}, !Array.isArray(n)) return e(n, t, r);
         for (var i = r.key, o = [], a = null, s = 0; s < n.length; s++) {
@@ -890,8 +890,8 @@
     htmlTag: d,
     reactElement: u,
     defaultRawParse: W,
-    ruleOutput: V,
-    reactFor: F,
+    ruleOutput: F,
+    reactFor: V,
     htmlFor: Z,
     defaultParse: function() {
       return "undefined" != typeof console && console.warn("defaultParse is deprecated, please use `defaultImplicitParse`"), z.apply(null, arguments)

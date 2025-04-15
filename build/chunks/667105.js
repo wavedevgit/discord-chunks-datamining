@@ -3,11 +3,11 @@
 n.d(t, {
   DH: () => B,
   Ks: () => G,
-  Ws: () => F,
+  Ws: () => V,
   g2: () => k,
   hf: () => x,
   k3: () => j,
-  qN: () => V,
+  qN: () => F,
   tP: () => M
 }), n(388685);
 var r = n(200651),
@@ -299,7 +299,7 @@ function B() {
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     location: n,
@@ -319,10 +319,10 @@ function V(e) {
   return i && !d && !u && !o
 }
 
-function F(e) {
+function V(e) {
   let {
     location: t
-  } = e, n = V({
+  } = e, n = F({
     location: t,
     quest: B()
   });

@@ -192,7 +192,7 @@ function B(e) {
   b = null, T = {}, N = !1
 }
 
-function V(e) {
+function F(e) {
   let {
     integrationId: t
   } = e, n = K(t);
@@ -200,7 +200,7 @@ function V(e) {
   y = n, b = null, v = null, T = {}, N = !1
 }
 
-function F() {
+function V() {
   y = null, T = {}, N = !1
 }
 
@@ -307,8 +307,8 @@ let Q = new q(c.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_SET_SECTION: R,
     INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
     INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: B,
-    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
-    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+    INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: V,
     INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: Z,

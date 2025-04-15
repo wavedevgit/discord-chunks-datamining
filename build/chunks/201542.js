@@ -86,7 +86,7 @@ let S = i.memo(function(e) {
     [M, k] = i.useState(!1),
     [j, U] = i.useState(!1),
     [G, B] = i.useState(!1),
-    [V, F] = i.useState(!1),
+    [F, V] = i.useState(!1),
     [Z, H] = i.useState("none"),
     [W, Y] = i.useState(() => "function" == typeof o ? o() : o),
     K = i.useRef(void 0),
@@ -102,7 +102,7 @@ let S = i.memo(function(e) {
     }, []),
     X = i.useCallback(() => {
       U(!1), null == K.current && (K.current = setTimeout(() => {
-        F(!1), K.current = void 0
+        V(!1), K.current = void 0
       }, 500))
     }, []),
     J = i.useCallback(() => {
@@ -131,14 +131,14 @@ let S = i.memo(function(e) {
       let t = P.current;
       if (null == L || null == t) return;
       let n = e * L;
-      D(n), t.currentTime = n, F(!0), clearTimeout(K.current), K.current = void 0
+      D(n), t.currentTime = n, V(!0), clearTimeout(K.current), K.current = void 0
     }, [L]);
   i.useEffect(() => {
-    !V && j && F(!0)
-  }, [j, V]);
+    !F && j && V(!0)
+  }, [j, F]);
   let eo = i.useRef(null),
     ea = {
-      played: V,
+      played: F,
       currentTime: w,
       onPause: C,
       onPlay: A
@@ -222,12 +222,12 @@ let S = i.memo(function(e) {
       currentTime: w,
       duration: null != L ? L : 1,
       playing: j,
-      played: V,
+      played: F,
       onDrag: ei,
       onDragStart: en,
       onDragEnd: er
     }), (0, r.jsx)(v, {
-      played: V,
+      played: F,
       currentTime: w,
       duration: L
     }), (0, r.jsx)(f.Z, {

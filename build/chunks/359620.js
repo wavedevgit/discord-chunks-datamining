@@ -224,7 +224,7 @@ e.exports = function(e) {
       className: "property",
       relevance: 0
     },
-    V = {
+    F = {
       match: [/get|set/, /\s+/, d, /(?=\()/],
       className: {
         1: "keyword",
@@ -234,9 +234,9 @@ e.exports = function(e) {
         begin: /\(\)/
       }, D]
     },
-    F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
+    V = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     Z = {
-      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(F)],
+      match: [/const|var|let/, /\s+/, d, /\s*/, /=\s*/, /(async\s*)?/, c.lookahead(V)],
       keywords: "async",
       className: {
         1: "keyword",
@@ -269,7 +269,7 @@ e.exports = function(e) {
       relevance: 0,
       contains: [C, e.REGEXP_MODE, {
         className: "function",
-        begin: F,
+        begin: V,
         returnBegin: !0,
         end: "\\s*=>",
         contains: [{
@@ -337,7 +337,7 @@ e.exports = function(e) {
         1: "title.function"
       },
       contains: [D]
-    }, G, j, L, V, {
+    }, G, j, L, F, {
       match: /\$[(.]/
     }]
   }

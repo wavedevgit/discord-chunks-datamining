@@ -3,7 +3,7 @@
 n.d(t, {
   Yk: () => W,
   ZP: () => ee,
-  yH: () => F
+  yH: () => V
 }), n(314940), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -80,7 +80,7 @@ function G(e, t) {
 
 function B(e, t) {
   if (null == e) return {};
-  var n, r, i = V(e, t);
+  var n, r, i = F(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -88,14 +88,14 @@ function B(e, t) {
   return i
 }
 
-function V(e, t) {
+function F(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
   for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-var F = function(e) {
+var V = function(e) {
   return e.EDITOR = "EDITOR", e.SETTINGS = "SETTINGS", e
 }({});
 let Z = Object.freeze({

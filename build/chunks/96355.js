@@ -337,10 +337,10 @@
   }
 
   function B(e) {
-    return V(e) ? e1(e) : [(e[0][0] + e[e.length - 1][0]) / 2, (e[0][1] + e[e.length - 1][1]) / 2]
+    return F(e) ? e1(e) : [(e[0][0] + e[e.length - 1][0]) / 2, (e[0][1] + e[e.length - 1][1]) / 2]
   }
 
-  function V(e) {
+  function F(e) {
     for (var t = 0; t < e.length - 2; t++) {
       var n = e[t],
         r = e[t + 1],
@@ -350,7 +350,7 @@
     return !1
   }
 
-  function F(e) {
+  function V(e) {
     return new to(e).abs()
   }
 
@@ -367,11 +367,11 @@
   }
 
   function W(e) {
-    return Z(F(e))
+    return Z(V(e))
   }
 
   function Y(e, t) {
-    var n = F(e);
+    var n = V(e);
     return K(n) || z(n, t)
   }
 
@@ -967,7 +967,7 @@
     })
   }
 
-  function eV(e, t, n) {
+  function eF(e, t, n) {
     void 0 === n && (n = {});
     var r = n.maxSegmentLength;
     void 0 === r && (r = 10);
@@ -989,7 +989,7 @@
     })
   }
 
-  function eF(e, t, n) {
+  function eV(e, t, n) {
     void 0 === n && (n = {});
     var r = n.maxSegmentLength;
     void 0 === r && (r = 10);
@@ -1911,7 +1911,7 @@
       });
       return eU(e, t, n)
     };
-  e.interpolate = tO, e.separate = eB, e.combine = eV, e.interpolateAll = eF, e.splitPathString = W, e.toPathString = H, e.fromCircle = eH, e.toCircle = eW, e.fromRect = eY, e.toRect = eK, Object.defineProperty(e, "__esModule", {
+  e.interpolate = tO, e.separate = eB, e.combine = eF, e.interpolateAll = eV, e.splitPathString = W, e.toPathString = H, e.fromCircle = eH, e.toCircle = eW, e.fromRect = eY, e.toRect = eK, Object.defineProperty(e, "__esModule", {
     value: !0
   })
 })

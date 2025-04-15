@@ -178,8 +178,8 @@ function O(e, t, n, o) {
       wrapSection: U,
       getAnchorId: G,
       paddingTop: B,
-      paddingBottom: V,
-      fade: F = !1,
+      paddingBottom: F,
+      fade: V = !1,
       customTheme: Z = !1,
       chunkSize: H,
       style: W,
@@ -222,7 +222,7 @@ function O(e, t, n, o) {
       sidebarHeight: P,
       listHeaderHeight: w,
       paddingTop: B,
-      paddingBottom: V,
+      paddingBottom: F,
       chunkSize: H,
       getScrollerState: ea,
       getAnchorId: G
@@ -282,7 +282,7 @@ function O(e, t, n, o) {
       onScroll: ev,
       className: a()(g, {
         [e]: !0,
-        [t]: F,
+        [t]: V,
         [n]: Z,
         [d.scrolling]: en
       }),

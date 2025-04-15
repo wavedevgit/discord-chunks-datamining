@@ -77,7 +77,7 @@ let U = 88,
   G = "remove-wallpaper",
   B = .5;
 
-function V(e) {
+function F(e) {
   let {
     handleClose: t
   } = e;
@@ -113,7 +113,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     isPremiumTier2Subscriber: t,
     handleClose: n
@@ -454,10 +454,10 @@ let z = function(e) {
         className: L.container,
         ref: Z,
         onKeyDown: en,
-        children: [(null == s ? void 0 : s.pickerType) === O.j.COACHMARK ? (0, r.jsx)(V, {
+        children: [(null == s ? void 0 : s.pickerType) === O.j.COACHMARK ? (0, r.jsx)(F, {
           handleClose: J,
           isPremiumTier2Subscriber: b
-        }) : (0, r.jsx)(F, {
+        }) : (0, r.jsx)(V, {
           handleClose: J,
           isPremiumTier2Subscriber: b
         }), (0, r.jsx)("div", {

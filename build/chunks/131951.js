@@ -37,8 +37,8 @@ var s, l = n(512722),
   U = n(529558),
   G = n(111672),
   B = n(441167),
-  V = n(580930),
-  F = n(338336),
+  F = n(580930),
+  V = n(338336),
   Z = n(751571),
   H = n(725380),
   W = n(581883),
@@ -187,8 +187,8 @@ let eU = (0, m.Mt)((0, m.jj)());
 ev.enableNativeLogger(!0);
 let eG = {},
   eB = new Set([eh.Yn.DEFAULT]),
-  eV = eU.supports(eh.AN.AUTO_ENABLE),
-  eF = !1,
+  eF = eU.supports(eh.AN.AUTO_ENABLE),
+  eV = !1,
   eZ = eh.Yn.STREAM,
   eH = performance.now(),
   eW = {
@@ -272,7 +272,7 @@ function tI(e) {
 
 function tS(e) {
   let t = tv(e.context),
-    n = !eV || t.mute || t.deaf;
+    n = !eF || t.mute || t.deaf;
   e.context === eh.Yn.DEFAULT ? n = n || ez || eq || eQ || !Z.Z.didHavePermission(e_.Eu.AUDIO) : e.context === eh.Yn.STREAM && (n = !0), e.setSelfMute(n), e.setSelfDeaf(t.deaf), e.context === eh.Yn.DEFAULT && O.Z.updateNativeMute()
 }
 
@@ -285,7 +285,7 @@ function tN() {
   let i = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : eJ,
     a = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o,
     s = o;
-  if ((null == s ? void 0 : s.desktopSource) != null && s.desktopSource.id !== (null == a || null == (e = a.desktopSource) ? void 0 : e.id) && (null != s.desktopSource.soundshareId && (0, X.isWindows)() && v.pn(s.desktopSource.soundshareId), eU.setGoLiveSource(null, eZ)), (null == s ? void 0 : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == a || null == (t = a.cameraSource) ? void 0 : t.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == a || null == (n = a.cameraSource) ? void 0 : n.audioDeviceGuid)) && eU.setGoLiveSource(null, eZ), (eJ || i) && (e$ = (eJ = i) ? tF(eK, tv().videoDeviceId) : eh.Av, eU.setVideoInputDevice(e$)), o = a, null != a) {
+  if ((null == s ? void 0 : s.desktopSource) != null && s.desktopSource.id !== (null == a || null == (e = a.desktopSource) ? void 0 : e.id) && (null != s.desktopSource.soundshareId && (0, X.isWindows)() && v.pn(s.desktopSource.soundshareId), eU.setGoLiveSource(null, eZ)), (null == s ? void 0 : s.cameraSource) != null && (s.cameraSource.videoDeviceGuid !== (null == a || null == (t = a.cameraSource) ? void 0 : t.videoDeviceGuid) || s.cameraSource.audioDeviceGuid !== (null == a || null == (n = a.cameraSource) ? void 0 : n.audioDeviceGuid)) && eU.setGoLiveSource(null, eZ), (eJ || i) && (e$ = (eJ = i) ? tV(eK, tv().videoDeviceId) : eh.Av, eU.setVideoInputDevice(e$)), o = a, null != a) {
     let e = {
       resolution: a.quality.resolution,
       frameRate: a.quality.frameRate
@@ -742,7 +742,7 @@ function tU() {
 }
 
 function tG() {
-  eV || eU.enable().then(() => b.Z.dispatch({
+  eF || eU.enable().then(() => b.Z.dispatch({
     type: "MEDIA_ENGINE_SET_AUDIO_ENABLED",
     enabled: !0,
     unmute: !1
@@ -760,7 +760,7 @@ function tB(e) {
   }
 }
 
-function tV(e, t) {
+function tF(e, t) {
   if (0 === e.length) {
     let e = tB(t);
     return {
@@ -778,7 +778,7 @@ function tV(e, t) {
   })).keyBy("id").value()
 }
 
-function tF(e, t) {
+function tV(e, t) {
   var n;
   let r = null != (n = e[t]) ? n : d()(e).values().first();
   return null != r ? r.id : t
@@ -786,18 +786,18 @@ function tF(e, t) {
 
 function tZ(e) {
   let t = eW;
-  if (eW = tV(e, em.NW.string(em.t["/QIjDA"])), !d().isEqual(eW, t)) {
+  if (eW = tF(e, em.NW.string(em.t["/QIjDA"])), !d().isEqual(eW, t)) {
     let e = tv(),
-      t = tF(eW, e.inputDeviceId);
+      t = tV(eW, e.inputDeviceId);
     eU.setAudioInputDevice(t)
   }
 }
 
 function tH(e) {
   let t = eY;
-  if (eY = tV(e, em.NW.string(em.t.xlUg0t)), !d().isEqual(eY, t)) {
+  if (eY = tF(e, em.NW.string(em.t.xlUg0t)), !d().isEqual(eY, t)) {
     let e = tv(),
-      t = tF(eY, e.outputDeviceId);
+      t = tV(eY, e.outputDeviceId);
     eU.setAudioOutputDevice(t)
   }
 }
@@ -805,7 +805,7 @@ function tH(e) {
 function tW(e) {
   e5 = e.length > 0;
   let t = eK;
-  if (eK = tV(e, em.NW.string(em.t.WKWARU)), eJ && !d().isEqual(eK, t)) {
+  if (eK = tF(e, em.NW.string(em.t.WKWARU)), eJ && !d().isEqual(eK, t)) {
     var n;
     let e = void 0 !== eK[e$],
       r = e$ === eh.w5 && (null == (n = t[eh.w5]) ? void 0 : n.disabled);
@@ -1019,12 +1019,12 @@ function t6(e) {
   let {
     videoToggleStateMap: I
   } = tv(l);
-  if (I[u] === ed.ZUi.AUTO_PROBING && d === ed.ZUi.AUTO_ENABLED && (0, F.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), I[u] = d, tk({
+  if (I[u] === ed.ZUi.AUTO_PROBING && d === ed.ZUi.AUTO_ENABLED && (0, V.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), I[u] = d, tk({
       videoToggleStateMap: I
     }, l, f), d === ed.ZUi.AUTO_PROBING ? null == (n = es.Z.getRTCConnection()) || n.pauseStatsCollectionForUser(u, !0) : null == (r = es.Z.getRTCConnection()) || r.pauseStatsCollectionForUser(u, !1), tf || (ev.info("isAutoDisableAllowed=".concat(tf, " - disabling VideoHealthManager")), null == (o = es.Z.getRTCConnection()) || null == (i = o.getVideoHealthManager()) || i.disable()), v) {
     if (!p && !g || p && !tf) return;
-    (0, F.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), p ? td.add(u) : td.delete(u)
-  } else O && (g && !p ? (ev.info("disallowing auto-disable for this session because of manual override by user"), tf = !1, null == (s = es.Z.getRTCConnection()) || null == (a = s.getVideoHealthManager()) || a.disable(), (0, F.Z)(u, eh.fC.MANUAL_REENABLE, E)) : (0, F.Z)(u, p ? eh.fC.MANUAL_DISABLE : eh.fC.MANUAL_ENABLE, E));
+    (0, V.Z)(u, p ? eh.fC.AUTO_DISABLE : eh.fC.AUTO_ENABLE, E), p ? td.add(u) : td.delete(u)
+  } else O && (g && !p ? (ev.info("disallowing auto-disable for this session because of manual override by user"), tf = !1, null == (s = es.Z.getRTCConnection()) || null == (a = s.getVideoHealthManager()) || a.disable(), (0, V.Z)(u, eh.fC.MANUAL_REENABLE, E)) : (0, V.Z)(u, p ? eh.fC.MANUAL_DISABLE : eh.fC.MANUAL_ENABLE, E));
   y && !p && td.delete(u), p ? h[u] = !0 : delete h[u], tk({
     disabledLocalVideos: h
   }, l, f), eU.eachConnection(e => {
@@ -1124,7 +1124,7 @@ function ni(e) {
   let {
     id: t
   } = e;
-  t = tF(eW, t), eH = performance.now(), tk({
+  t = tV(eW, t), eH = performance.now(), tk({
     inputDeviceId: t
   }), eU.setAudioInputDevice(t)
 }
@@ -1134,7 +1134,7 @@ function no(e) {
     id: t
   } = e;
   tk({
-    outputDeviceId: t = tF(eY, t)
+    outputDeviceId: t = tV(eY, t)
   }), eU.setAudioOutputDevice(t)
 }
 
@@ -1143,12 +1143,12 @@ function na(e) {
     id: t
   } = e;
   tk({
-    videoDeviceId: t = tF(eK, t)
+    videoDeviceId: t = tV(eK, t)
   }), tN()
 }
 
 function ns(e) {
-  return eF !== e.required && (eF = e.required, e.required || eU.interact(), !0)
+  return eV !== e.required && (eV = e.required, e.required || eU.interact(), !0)
 }
 
 function nl(e) {
@@ -1218,7 +1218,7 @@ function nh(e) {
 function nm() {
   let {
     voiceFiltersPreProcessMute: e
-  } = V.Z.getCurrentConfig({
+  } = F.Z.getCurrentConfig({
     location: "setMaybePreprocessMute"
   }, {
     autoTrackExposure: !0
@@ -1436,14 +1436,14 @@ function nB() {
   })
 }
 
-function nV(e) {
+function nF(e) {
   let {
     voiceFilterId: t
   } = e;
   ti = tn, to = tr, tn = t, tr = null === t ? null : Date.now()
 }
 
-function nF(e) {
+function nV(e) {
   nZ(e.subsystem)
 }
 
@@ -1505,7 +1505,7 @@ function nz(e) {
   } = e;
   if (!n) switch (t) {
     case "audio":
-      eV = !1, eU.eachConnection(tS);
+      eF = !1, eU.eachConnection(tS);
       break;
     case "video":
       tN(!1)
@@ -1513,7 +1513,7 @@ function nz(e) {
 }
 
 function nq(e) {
-  eV = e.enabled, e.unmute && tk({
+  eF = e.enabled, e.unmute && tk({
     mute: !1,
     deaf: !1
   }), eU.eachConnection(tS)
@@ -1775,7 +1775,7 @@ class rr extends(s = h.ZP.Store) {
     return eU.Camera
   }
   isEnabled() {
-    return eV
+    return eF
   }
   isMute() {
     return this.isSelfMute() || ez
@@ -1927,13 +1927,13 @@ class rr extends(s = h.ZP.Store) {
     }), e
   }
   getInputDeviceId() {
-    return tF(eW, tv().inputDeviceId)
+    return tV(eW, tv().inputDeviceId)
   }
   getOutputDeviceId() {
-    return tF(eY, tv().outputDeviceId)
+    return tV(eY, tv().outputDeviceId)
   }
   getVideoDeviceId() {
-    return tF(eK, tv().videoDeviceId)
+    return tV(eK, tv().videoDeviceId)
   }
   getInputDevices() {
     return eW
@@ -2033,7 +2033,7 @@ class rr extends(s = h.ZP.Store) {
     eU.eachConnection(n => n.setCanHavePriority(e, t))
   }
   isInteractionRequired() {
-    return eF
+    return eV
   }
   getVideoHook() {
     return tv().videoHook
@@ -2172,7 +2172,7 @@ let ro = r = new rr(b.Z, {
   AUDIO_VOLUME_CHANGE: nc,
   AUDIO_RESET: nP,
   AUDIO_INPUT_DETECTED: nw,
-  AUDIO_SET_SUBSYSTEM: nF,
+  AUDIO_SET_SUBSYSTEM: nV,
   MEDIA_ENGINE_SET_AUDIO_ENABLED: nq,
   MEDIA_ENGINE_SET_VIDEO_ENABLED: nQ,
   MEDIA_ENGINE_PERMISSION: nz,
@@ -2205,7 +2205,7 @@ let ro = r = new rr(b.Z, {
   MEDIA_ENGINE_SET_ENABLE_HARDWARE_MUTE_NOTICE: rn,
   VOICE_FILTER_REQUEST_SWITCH: nG,
   VOICE_FILTER_LOOPBACK_TOGGLE: nU,
-  VOICE_FILTER_APPLIED: nV,
+  VOICE_FILTER_APPLIED: nF,
   VOICE_FILTER_DOWNLOAD_FAILED: nB,
   VOICE_FILTER_APPLY_FAILED: nB
 })

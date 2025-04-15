@@ -101,11 +101,11 @@ let N = e => {
   }, {
     autoTrackExposure: G
   }), {
-    enabled: V
+    enabled: F
   } = _.O.useExperiment({
     location: "gift card"
-  }), F = null;
-  U && (F = G && B ? g.kJ : g.QI), V && (F = g.RQ);
+  }), V = null;
+  U && (V = G && B ? g.kJ : g.QI), F && (V = g.RQ);
   let Z = e => {
     null != R && R(null == e ? void 0 : e)
   };
@@ -146,7 +146,7 @@ let N = e => {
       "aria-label": E.NW.string(E.t.v54NrK),
       ref: x
     }, M), {
-      children: null != F && F.map((e, t) => (0, r.jsx)(m.m, {
+      children: null != V && V.map((e, t) => (0, r.jsx)(m.m, {
         isSelected: O === e,
         giftStyle: e,
         setSelectedGiftStyle: T,

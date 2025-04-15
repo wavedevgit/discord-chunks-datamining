@@ -267,7 +267,7 @@ function B(e) {
   return t = (null != c ? "".concat(location.protocol, "//").concat(c, "/banners/").concat(n, "/").concat(r, ".").concat(s) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_BANNER(n, r, s)) + "?size=".concat(o), "jpg" === s && (t += "&quality=lossless"), t
 }
 
-function V(e) {
+function F(e) {
   let t, {
     id: n,
     homeHeader: r
@@ -278,7 +278,7 @@ function V(e) {
   return (null != o ? "".concat(location.protocol, "//").concat(o, "/home-headers/").concat(n, "/").concat(r, ".png") : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.GUILD_HOME_HEADER(n, r)) + "?size=".concat(i)
 }
 
-function F(e) {
+function V(e) {
   let t, {
     id: n,
     splash: r,
@@ -291,7 +291,7 @@ function F(e) {
 }
 
 function Z(e) {
-  return et(F(e))
+  return et(V(e))
 }
 
 function H(e) {
@@ -465,10 +465,10 @@ let en = {
   getGuildIconURL: H,
   getGuildSplashURL: U,
   getGuildSplashSource: G,
-  getGuildDiscoverySplashURL: F,
+  getGuildDiscoverySplashURL: V,
   getGuildDiscoverySplashSource: Z,
   getGuildBannerURL: B,
-  getGuildHomeHeaderURL: V,
+  getGuildHomeHeaderURL: F,
   getResourceChannelIconURL: function e(e) {
     let {
       channelId: t,
@@ -510,7 +510,7 @@ let en = {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return et(B(e, t))
   },
-  getGuildHomeHeaderSource: e => et(V(e)),
+  getGuildHomeHeaderSource: e => et(F(e)),
   getChannelIconSource: e => et(Q(e)),
   getApplicationIconSource: e => et(Y(e)),
   makeSource: et,

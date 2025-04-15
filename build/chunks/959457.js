@@ -166,7 +166,7 @@ function B(e) {
   null != n && i.analyticsContext.trackViewerCount(n.length), i.streamUpdate(r)
 }
 
-function V(e) {
+function F(e) {
   let {
     streamKey: t
   } = e, n = P[t];
@@ -177,7 +177,7 @@ function V(e) {
   }), n.destroy("stream-end"), delete P[t]
 }
 
-function F(e) {
+function V(e) {
   let {
     layout: t
   } = e;
@@ -311,9 +311,9 @@ let q = new z(d.Z, !b.Z.isSupported() || __OVERLAY__ ? {} : {
   STREAM_CREATE: j,
   STREAM_SERVER_UPDATE: U,
   STREAM_UPDATE: B,
-  STREAM_DELETE: V,
+  STREAM_DELETE: F,
   MEDIA_ENGINE_CONNECTION_STATS: G,
-  STREAM_LAYOUT_UPDATE: F,
+  STREAM_LAYOUT_UPDATE: V,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: W,
   VIDEO_SIZE_UPDATE: Y
 })

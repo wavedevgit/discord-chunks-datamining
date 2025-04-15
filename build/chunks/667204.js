@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => F,
+  Z: () => V,
   d: () => H
 }), n(781311), n(539854), n(415506), n(388685), n(361932), n(187205), n(804061), n(704826), n(35282);
 var r = n(512722),
@@ -73,12 +73,12 @@ function B(e, t) {
   return n
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : B(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-async function F(e) {
+async function V(e) {
   var t, n, r, a, l, u, d, p, h, m, g, E, b, O, S, T, N;
   let {
     command: A,
@@ -88,12 +88,12 @@ async function F(e) {
     maxSizeCallback: U,
     commandOrigin: G = L.bB.CHAT,
     sectionName: B,
-    interactionLifecycleOptionsFactory: V = K,
-    source: F,
+    interactionLifecycleOptionsFactory: F = K,
+    source: V,
     clientSupportsContextlessActivityLaunch: H
   } = e;
   if (null == k.channel) return;
-  let Y = null != (r = D.Z.getSource(k.channel.id)) ? r : F,
+  let Y = null != (r = D.Z.getSource(k.channel.id)) ? r : V,
     q = null != (a = D.Z.getCommandOrigin(k.channel.id)) ? a : G;
   null == k.autocomplete && o.Z.dispatch({
     type: "APPLICATION_COMMAND_USED",
@@ -246,7 +246,7 @@ async function F(e) {
     analytics_location: z(q),
     sectionName: B,
     source: Y,
-    interactionLifecycleOptions: await V(A, k, $)
+    interactionLifecycleOptions: await F(A, k, $)
   }))
 }
 let Z = e => {
@@ -339,7 +339,7 @@ async function K(e, t, n) {
   if (null == s && null != i.botId) try {
     await l.PR(i.botId)
   } catch (e) {}
-  let u = V(G({}, (0, E.ZP)({
+  let u = F(G({}, (0, E.ZP)({
     channelId: t.channel.id,
     content: "",
     type: n.type === c.yU.CHAT ? M.uaV.CHAT_INPUT_COMMAND : M.uaV.CONTEXT_MENU_COMMAND,

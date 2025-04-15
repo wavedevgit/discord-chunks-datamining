@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(883661),
   G = n(880949),
   B = n(784222),
-  V = n(172800),
-  F = n(149203),
+  F = n(172800),
+  V = n(149203),
   Z = n(981631),
   H = n(957825),
   W = n(474936),
@@ -103,7 +103,7 @@ let z = 0,
         tab: H.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
-      }), e === F.UX.SOUNDMOJI && L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
+      }), e === V.UX.SOUNDMOJI && L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
         collapsed: !i
       }), g(r)
     }, [er, t, g]), ed = i.useCallback(e => {
@@ -123,7 +123,7 @@ let z = 0,
             animate: !0
           })
         };
-      return (0, r.jsx)(V.Z, {
+      return (0, r.jsx)(F.Z, {
         emojiDescriptors: n,
         emojiSize: s,
         surrogateCodePoint: es,
@@ -160,8 +160,8 @@ let z = 0,
           type: s,
           sectionId: l
         } = n;
-        if (s === F.En.SEARCH_RESULTS) return;
-        let c = s === F.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
+        if (s === V.En.SEARCH_RESULTS) return;
+        let c = s === V.En.GUILD ? null != i ? (0, r.jsx)(G.Z, {
             guild: i,
             height: en,
             width: en
@@ -177,7 +177,7 @@ let z = 0,
           f = n.isNitroLocked,
           p = f && !d,
           h = f && d,
-          g = s === F.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
+          g = s === V.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
             className: K.soundmojiViewMore,
             onClick: () => {
               (0, b.hr)(H.X1.SOUNDBOARD), L.default.track(Z.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
@@ -228,7 +228,7 @@ let z = 0,
       renderSectionHeader: ep,
       renderSectionFooter: eg,
       sectionMarginBottom: eb,
-      sectionHeaderHeight: i.useCallback(e => m[e].type === F.En.SEARCH_RESULTS ? 0 : ee, [m]),
+      sectionHeaderHeight: i.useCallback(e => m[e].type === V.En.SEARCH_RESULTS ? 0 : ee, [m]),
       sectionFooterHeight: eE
     }
   },
@@ -252,8 +252,8 @@ let z = 0,
       channelGuildId: j,
       channelId: U,
       messageId: G,
-      isBurstReaction: V,
-      listHeaderClassName: F
+      isBurstReaction: F,
+      listHeaderClassName: V
     } = e, H = i.useRef(!1), q = E.kJ.useStore(e => e.activeCategoryIndex), Q = (0, b.Iu)(e => e.searchQuery), X = w.Yk.useSetting(), J = (0, u.e7)([D.default], () => D.default.getCurrentUser()), $ = (0, x.I5)(J), {
       location: ee
     } = (0, h.O)(), {
@@ -292,8 +292,8 @@ let z = 0,
       channelGuildId: j,
       channelId: U,
       messageId: G,
-      isBurstReaction: V,
-      listHeaderClassName: F,
+      isBurstReaction: F,
+      listHeaderClassName: V,
       activeSectionIndex: en,
       upsellGlowOpacity: el,
       emojiListRef: o

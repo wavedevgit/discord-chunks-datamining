@@ -41,8 +41,8 @@ var r = n(278074),
   U = n(64078),
   G = n(351780),
   B = n(79390),
-  V = n(980463),
-  F = n(328908),
+  F = n(980463),
+  V = n(328908),
   Z = n(992970),
   H = n(576645),
   W = n(317951),
@@ -720,7 +720,7 @@ let eD = {
       return null != a && (0, H.tv)(n, r, i, o) ? {
         confettiPotionData: {
           emoji: a,
-          callback: () => (0, F.Hb)(t)
+          callback: () => (0, V.Hb)(t)
         }
       } : {}
     },
@@ -922,7 +922,7 @@ let eD = {
               poll: y
             });
             let r = (0, H.ZC)(s.body);
-            null != r && ((0, V.gA)(W.D1), (0, Y.I)({
+            null != r && ((0, F.gA)(W.D1), (0, Y.I)({
               name: r.name,
               id: r.id
             }, void 0, !0, Z.LL.MessageSent));

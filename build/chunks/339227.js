@@ -325,7 +325,7 @@ function U(e, t, n) {
       type: "paragraph",
       content: o(l, !0, i)
     };
-  V(r, l, c, 0, []);
+  F(r, l, c, 0, []);
   let u = B(r);
   return a.set(e, u), u
 }
@@ -372,7 +372,7 @@ function B(e) {
   return t
 }
 
-function V(e, t, n, r, o) {
+function F(e, t, n, r, o) {
   let {
     content: a,
     type: s,
@@ -489,7 +489,7 @@ function V(e, t, n, r, o) {
       let {
         before: n,
         after: i
-      } = F(t, s, r, l);
+      } = V(t, s, r, l);
       return r = H(e, t, n, r, "syntaxBefore"), o.push(s), r = Z(e, t, null != a ? a : "", r, o), o.pop(), r = H(e, t, i, r, "syntaxAfter"), Y(t, r)
     }
     default:
@@ -497,7 +497,7 @@ function V(e, t, n, r, o) {
   }
 }
 
-function F(e, t, n, r) {
+function V(e, t, n, r) {
   if ("inlineCode" === t) return {
     before: r[1],
     after: r[1]
@@ -524,7 +524,7 @@ function Z(e, t, n, r, i) {
     attributes: i,
     data: null
   }) : (n instanceof Array || (n = [n]), n.forEach(n => {
-    r = V(e, t, n, r, i)
+    r = F(e, t, n, r, i)
   })), Y(t, r)
 }
 

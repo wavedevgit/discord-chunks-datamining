@@ -89,7 +89,7 @@ function B(e, t) {
   })
 }
 
-function V(e) {
+function F(e) {
   var t;
   let {
     entitlements: n
@@ -97,14 +97,14 @@ function V(e) {
   return (null == r ? void 0 : r.tag) !== I.w.REWARD_CODE ? null : r.rewardCode
 }
 
-function F(e, t) {
+function V(e, t) {
   let n = new Map(h);
   n.set(e, t.items), h = n;
   let r = o.get(e),
     i = null == r ? void 0 : r.userStatus;
   if (null != i && null == i.claimedAt) {
     var a;
-    let n = V({
+    let n = F({
       entitlements: t
     });
     null != n && G(e, n), U(e, {
@@ -250,7 +250,7 @@ function el(e) {
     questId: t,
     entitlements: n
   } = e, r = new Set(u);
-  r.delete(t), u = r, F(t, n)
+  r.delete(t), u = r, V(t, n)
 }
 
 function ec(e) {

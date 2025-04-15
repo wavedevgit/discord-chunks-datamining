@@ -85,14 +85,14 @@ function B(e) {
   i = i.truncate(n, r), c.Z.commit(i)
 }
 
-function V(e) {
+function F(e) {
   let {
     channelId: t
   } = e;
   M.log("Clearing messages for ".concat(t)), c.Z.clear(t), x.clear()
 }
 
-function F(e) {
+function V(e) {
   let {
     channelId: t,
     jump: n,
@@ -444,11 +444,11 @@ let em = new eh(s.Z, {
   LOAD_MESSAGES: G,
   LOAD_MESSAGES_SUCCESS: Z,
   LOAD_MESSAGES_FAILURE: H,
-  LOAD_MESSAGES_SUCCESS_CACHED: F,
+  LOAD_MESSAGES_SUCCESS_CACHED: V,
   LOCAL_MESSAGES_LOADED: e_,
   LOAD_MESSAGE_INTERACTION_DATA_SUCCESS: $,
   TRUNCATE_MESSAGES: B,
-  CLEAR_MESSAGES: V,
+  CLEAR_MESSAGES: F,
   MESSAGE_CREATE: K,
   MESSAGE_SEND_FAILED: z,
   MESSAGE_SEND_FAILED_AUTOMOD: el,

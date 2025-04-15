@@ -104,7 +104,7 @@ function G(e) {
     onInvoiceError: G,
     priceOptions: p,
     preventFetch: el
-  }) : (0, N.R4)(n, P, W) ? (0, r.jsx)(V, {
+  }) : (0, N.R4)(n, P, W) ? (0, r.jsx)(F, {
     premiumSubscription: n,
     newPlan: ei,
     onInvoiceError: G,
@@ -164,7 +164,7 @@ function G(e) {
     }), (0, r.jsx)(w.Z, {
       isActive: j,
       ref: x,
-      children: null != n && (0, N.R4)(n, P, W) ? (0, r.jsx)(F, {
+      children: null != n && (0, N.R4)(n, P, W) ? (0, r.jsx)(V, {
         premiumSubscription: n,
         newPlan: ei,
         onInvoiceError: G,
@@ -224,7 +224,7 @@ function B(e) {
   }) : (0, r.jsx)(c.$jN, {})
 }
 
-function V(e) {
+function F(e) {
   let t, {
       premiumSubscription: n,
       newPlan: o,
@@ -308,7 +308,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let t, {
       premiumSubscription: n,
       newPlan: o,

@@ -190,14 +190,14 @@ function B(e) {
   T(t.id)
 }
 
-function V(e) {
+function F(e) {
   let {
     channel: t
   } = e;
   delete O[t.id]
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     optimistic: n,
@@ -322,9 +322,9 @@ let Q = new q(s.Z, {
   RELATIONSHIP_REMOVE: z,
   SEARCH_FINISH: G,
   MOD_VIEW_SEARCH_FINISH: G,
-  THREAD_DELETE: V,
+  THREAD_DELETE: F,
   CHANNEL_DELETE: B,
-  MESSAGE_CREATE: F,
+  MESSAGE_CREATE: V,
   MESSAGE_UPDATE: H,
   MESSAGE_DELETE: W,
   MESSAGE_DELETE_BULK: Y,

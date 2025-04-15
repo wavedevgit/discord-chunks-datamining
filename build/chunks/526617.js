@@ -42,8 +42,8 @@ var r = n(200651),
   U = n(421673),
   G = n(663215),
   B = n(835648),
-  V = n(650743),
-  F = n(495332),
+  F = n(650743),
+  V = n(495332),
   Z = n(343747),
   H = n(981631),
   W = n(474936),
@@ -247,7 +247,7 @@ function ef(e) {
     soundCounts: ek
   } = (0, G.ZP)(o, {
     shownAllGuildIds: eL
-  }, eh), [ej, eU] = i.useState([]), [eG, eB] = i.useState(!1), eV = (0, G.FS)(ex, ej, eP).filter(e => e.items.length > 0), eF = eV.some(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eZ = !eA && Q && eF, eH = N.T4.useSetting(), eW = i.useMemo(() => new Set(eH), [eH]), eY = null == o, eK = D.ZP.canUseCustomCallSounds(eN), ez = i.useCallback(e => {
+  }, eh), [ej, eU] = i.useState([]), [eG, eB] = i.useState(!1), eF = (0, G.FS)(ex, ej, eP).filter(e => e.items.length > 0), eV = eF.some(e => !!(0, D._O)(e.categoryInfo) && e.categoryInfo.isNitroLocked), eZ = !eA && Q && eV, eH = N.T4.useSetting(), eW = i.useMemo(() => new Set(eH), [eH]), eY = null == o, eK = D.ZP.canUseCustomCallSounds(eN), ez = i.useCallback(e => {
     eW.has(e) ? eW.delete(e) : eW.add(e), N.T4.updateSetting(Array.from(eW))
   }, [eW]), eq = i.useCallback((e, t, n) => {
     if (null != I && !P) return I(e, n);
@@ -273,15 +273,15 @@ function ef(e) {
         return g(), (0, Z.Z)(e.item.guild.id)
     }
   }, [ey, eq, g]), eX = i.useCallback((e, n, i, s, l) => {
-    let c = eV[i.sectionIndex],
+    let c = eF[i.sectionIndex],
       u = Q && ec(c.categoryInfo, eA, t) && eZ,
-      d = i.sectionIndex === eV.length - 1 && i.rowIndex === i.totalRowCount - 1;
+      d = i.sectionIndex === eF.length - 1 && i.rowIndex === i.totalRowCount - 1;
     return (0, r.jsx)("ul", X(q({}, n), {
       className: a()(K.soundRow, {
         [K.soundRowNitroLocked]: u,
         [K.lastSoundRow]: d
       }),
-      children: e.map((e, t) => (0, r.jsx)(F.Z, {
+      children: e.map((e, t) => (0, r.jsx)(V.Z, {
         descriptor: e,
         soundButtonProps: {
           channel: o,
@@ -303,17 +303,17 @@ function ef(e) {
         inExpressionPicker: em
       }, t))
     }), "row-".concat(n["aria-rowindex"]))
-  }, [eV, Q, eA, t, z, eQ, o, eY, eK, eR, ey, ef, eZ, eg, em]), eJ = i.useCallback((e, t) => {
+  }, [eF, Q, eA, t, z, eQ, o, eY, eK, eR, ey, ef, eZ, eg, em]), eJ = i.useCallback((e, t) => {
     if (e <= 0 || !Q) return !1;
-    let n = eV[e],
-      r = eV[e - 1],
+    let n = eF[e],
+      r = eF[e - 1],
       i = ec(n.categoryInfo, eA, t),
       o = ec(r.categoryInfo, eA, t);
     return i && !o
-  }, [eV, Q, eA]), e$ = i.useCallback(e => 0 === e ? ei : eJ(e, t) ? er : en, [t, eJ]), e0 = i.useCallback(e => {
-    let t = e === eV.length - 1;
+  }, [eF, Q, eA]), e$ = i.useCallback(e => 0 === e ? ei : eJ(e, t) ? er : en, [t, eJ]), e0 = i.useCallback(e => {
+    let t = e === eF.length - 1;
     return eZ && t ? es : 0
-  }, [eV, eZ]), e1 = i.useCallback((e, n) => {
+  }, [eF, eZ]), e1 = i.useCallback((e, n) => {
     let i = "".concat(e.key),
       o = Q && ec(e.categoryInfo, eA, t),
       a = eJ(n, t);
@@ -326,11 +326,11 @@ function ef(e) {
       showNitroDivider: a && eZ
     }, "header-".concat(i))
   }, [eW, ez, t, eJ, Q, eA, eZ]), e2 = i.useCallback((e, t) => {
-    let n = t === eV.length - 1;
+    let n = t === eF.length - 1;
     return eZ && n ? (0, r.jsx)("div", {
       className: K.sectionFooter
     }) : null
-  }, [eV, eZ]), e3 = i.useCallback(e => eU((0, U.cK)(e, Array.from(eM.values()).flat(), eN, o, ey)), [o, eN, eM, ey]), e4 = i.useCallback(e => {
+  }, [eF, eZ]), e3 = i.useCallback(e => eU((0, U.cK)(e, Array.from(eM.values()).flat(), eN, o, ey)), [o, eN, eM, ey]), e4 = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -384,7 +384,7 @@ function ef(e) {
     }
   }) : null, [e7, eG, eZ]), te = i.useCallback(e => {
     var t;
-    return (null == e ? void 0 : e.item.type) !== x.vB.SOUND ? null : (0, r.jsx)(V.Z, {
+    return (null == e ? void 0 : e.item.type) !== x.vB.SOUND ? null : (0, r.jsx)(F.Z, {
       closePicker: g,
       soundboardSound: null != (t = null == e ? void 0 : e.item.sound) ? t : null
     })
@@ -429,7 +429,7 @@ function ef(e) {
       onClose: () => eT(null),
       onDisplay: tn
     }) : void 0, (0, r.jsx)(y.Z, {
-      categories: eV,
+      categories: eF,
       collapsedCategories: eW,
       containerWidth: d,
       store: E.Wq,

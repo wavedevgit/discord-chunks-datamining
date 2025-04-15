@@ -94,7 +94,7 @@ function A(e) {
   i.useEffect(() => {
     null == E || E(null == G ? void 0 : G.current)
   }, [G, E]);
-  let V = async e => {
+  let F = async e => {
     if (null == e) return;
     f === y.n_.AVATAR ? C({
       action: "SEND_REPLY_AVATAR"
@@ -121,7 +121,7 @@ function A(e) {
       })
     } catch (e) {}
     D(y.P.REPLY)
-  }, F = {
+  }, V = {
     [I.biteSize]: s === y.y0.BITE_SIZE,
     [I.panel]: s === y.y0.PANEL,
     [I.fullSize]: s === y.y0.FULL_SIZE
@@ -134,7 +134,7 @@ function A(e) {
     ref: G,
     onKeyDown: B,
     children: (0, r.jsx)("div", {
-      className: a()(I.container, F, Z, {
+      className: a()(I.container, V, Z, {
         [I.customProfileTheme]: null != L
       }),
       children: (0, r.jsx)(d.Z, {
@@ -166,7 +166,7 @@ function A(e) {
             shouldRefocus: !1
           };
           try {
-            return await V(n), w(), null == R || R(), {
+            return await F(n), w(), null == R || R(), {
               shouldClear: !0,
               shouldRefocus: !1
             }

@@ -274,7 +274,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     guild: t
   } = e;
@@ -299,7 +299,7 @@ function V(e) {
   })
 }
 
-function F(e) {
+function V(e) {
   let {
     guild: t
   } = e;
@@ -473,8 +473,8 @@ let Q = new q(c.Z, {
   CONNECTION_OPEN: j,
   CONNECTION_OPEN_SUPPLEMENTAL: U,
   OVERLAY_INITIALIZE: G,
-  GUILD_CREATE: V,
-  GUILD_DELETE: F,
+  GUILD_CREATE: F,
+  GUILD_DELETE: V,
   GUILD_MEMBER_REMOVE: Z,
   PRESENCE_UPDATES: H,
   PRESENCES_REPLACE: B,

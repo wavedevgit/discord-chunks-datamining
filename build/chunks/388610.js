@@ -117,14 +117,14 @@ function B() {
   o = a, A = O.QZA.OPEN
 }
 
-function V(e) {
+function F(e) {
   var t;
   A = O.QZA.OPEN, C = Object.keys(null != (t = e.errors) ? t : {}).reduce((t, n) => {
     let r = e.errors[n];
     return (0, u.isArray)(r) ? t[n] = r.join("\n") : t[n] = r, t
   }, {})
 }
-let F = d().debounce(() => {
+let V = d().debounce(() => {
   if (null == a || null == o) return !1;
   let e = a.toJS(),
     t = o.toJS();
@@ -163,7 +163,7 @@ function Z(e) {
     locked: f
   }))), null != _ && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
     invitable: _
-  }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != v && (a = a.set("defaultForumLayout", v)), void 0 !== O && (a = a.set("iconEmoji", O)), null != I && (a = a.set("themeColor", I)), F()
+  }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != v && (a = a.set("defaultForumLayout", v)), void 0 !== O && (a = a.set("iconEmoji", O)), null != I && (a = a.set("themeColor", I)), V()
 }
 
 function H(e) {
@@ -286,7 +286,7 @@ let ee = new $(m.Z, {
     CHANNEL_SETTINGS_OPEN: M,
     CHANNEL_SETTINGS_SUBMIT: G,
     CHANNEL_SETTINGS_SUBMIT_SUCCESS: B,
-    CHANNEL_SETTINGS_SUBMIT_FAILURE: V,
+    CHANNEL_SETTINGS_SUBMIT_FAILURE: F,
     CHANNEL_SETTINGS_CLOSE: U,
     CHANNEL_PERMISSIONS_PUT_OVERWRITE_SUCCESS: Q,
     CHANNEL_PERMISSIONS_DELETE_OVERWRITE_SUCCESS: Q,

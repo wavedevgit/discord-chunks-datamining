@@ -182,8 +182,8 @@ function L(e) {
     serialize: U,
     clear: G,
     hideIcon: B = !1,
-    "aria-label": V,
-    "aria-labelledby": F
+    "aria-label": F,
+    "aria-labelledby": V
   } = e, [Z, H] = i.useState(!1), {
     ref: W,
     width: Y,
@@ -280,8 +280,8 @@ function L(e) {
         }),
         "aria-haspopup": "listbox",
         "aria-expanded": d,
-        "aria-label": V,
-        "aria-labelledby": F,
+        "aria-label": F,
+        "aria-labelledby": V,
         children: [$.length > 0 ? (0, r.jsx)(_.Text, {
           className: b.value,
           variant: "text-md/medium",

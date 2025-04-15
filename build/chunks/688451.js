@@ -54,11 +54,11 @@ function d(e, t) {
 }
 
 function f(e) {
-  return V && e instanceof Map
+  return F && e instanceof Map
 }
 
 function _(e) {
-  return F && e instanceof Set
+  return V && e instanceof Set
 }
 
 function p(e) {
@@ -260,8 +260,8 @@ n.d(t, {
   mv: () => i
 });
 var U, G, B = "undefined" != typeof Symbol && "symbol" == typeof Symbol("x"),
-  V = "undefined" != typeof Map,
-  F = "undefined" != typeof Set,
+  F = "undefined" != typeof Map,
+  V = "undefined" != typeof Set,
   Z = "undefined" != typeof Proxy && void 0 !== Proxy.revocable && "undefined" != typeof Reflect,
   H = B ? Symbol.for("immer-nothing") : ((U = {})["immer-nothing"] = !0, U),
   W = B ? Symbol.for("immer-draftable") : "__$immer_draftable",

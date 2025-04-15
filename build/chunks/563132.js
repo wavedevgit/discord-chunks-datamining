@@ -63,7 +63,7 @@ function B(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -74,8 +74,8 @@ function V(e, t) {
   return n
 }
 
-function F(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : V(Object(t)).forEach(function(n) {
+function V(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : F(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -86,7 +86,7 @@ function Y(e) {
   let {
     loadId: v,
     activeSubscription: G,
-    stepConfigs: V,
+    stepConfigs: F,
     breadcrumbs: H = [],
     skuIDs: W,
     isGift: Y = !1,
@@ -123,7 +123,7 @@ function Y(e) {
     breadcrumbsData: eb,
     previousStepRef: ey
   } = (0, x.Z)({
-    stepConfigs: V,
+    stepConfigs: F,
     breadcrumbs: H
   }), [ev, eO] = (0, w.Z)(em), {
     paymentError: eI,
@@ -147,7 +147,7 @@ function Y(e) {
     setSelectedSkuId: eD,
     setSelectedPlanId: eL,
     setSelectedPlanNotification: ex
-  } = (0, T.Z)(), [eM, ek] = (0, c.Wu)([E.Z], () => [E.Z.purchaseTokenAuthState, E.Z.purchaseTokenHash]), [ej, eU, eG, eB] = (0, c.Wu)([k.Z], () => [k.Z.browserCheckoutState, k.Z.loadId, k.Z.skuId, k.Z.planId]), [eV, eF] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(null), [eX, eJ] = i.useState(void 0), [e$, e0] = i.useState([]), e1 = i.useMemo(() => null == eP || (0, I.PV)(eP.id), [eP]), e2 = i.useRef(null != G ? G.planId : null);
+  } = (0, T.Z)(), [eM, ek] = (0, c.Wu)([E.Z], () => [E.Z.purchaseTokenAuthState, E.Z.purchaseTokenHash]), [ej, eU, eG, eB] = (0, c.Wu)([k.Z], () => [k.Z.browserCheckoutState, k.Z.loadId, k.Z.skuId, k.Z.planId]), [eF, eV] = i.useState(null), [eZ, eH] = i.useState(null), [eW, eY] = i.useState(null), [eK, ez] = i.useState(null), [eq, eQ] = i.useState(null), [eX, eJ] = i.useState(void 0), [e$, e0] = i.useState([]), e1 = i.useMemo(() => null == eP || (0, I.PV)(eP.id), [eP]), e2 = i.useRef(null != G ? G.planId : null);
   i.useEffect(() => {
     null == e2.current && null != G && (e2.current = G.planId)
   }, [G]);
@@ -190,7 +190,7 @@ function Y(e) {
     [td, tf] = i.useState(null),
     t_ = null != (a = null == G ? void 0 : G.inReverseTrial) && a && !Y;
   return (0, r.jsx)(Z.Provider, {
-    value: F(B({
+    value: V(B({
       stripe: $,
       contextMetadata: eC,
       blockedPayments: ee,
@@ -216,7 +216,7 @@ function Y(e) {
       step: em,
       setStep: eg,
       steps: eE,
-      stepConfigs: V,
+      stepConfigs: F,
       breadcrumbs: eb,
       previousStepRef: ey,
       purchaseState: ev,
@@ -234,8 +234,8 @@ function Y(e) {
       browserCheckoutStateLoadId: eU,
       browserCheckoutStateSkuId: eG,
       browserCheckoutStatePlanId: eB,
-      bodyNode: eV,
-      setBodyNode: eF,
+      bodyNode: eF,
+      setBodyNode: eV,
       footerNode: eZ,
       setFooterNode: eH,
       modalOverlayNode: eW,

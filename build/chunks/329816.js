@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(947519),
   G = n(605236),
   B = n(243778),
-  V = n(314910),
-  F = n(84615),
+  F = n(314910),
+  V = n(84615),
   Z = n(429142),
   H = n(813744),
   W = n(311476),
@@ -181,7 +181,7 @@ let em = (0, et.Un)({
               children: [(0, r.jsx)(ea.Co, {}), (0, r.jsx)(eo.ZP, {}), (0, r.jsx)(s.OU, {}), (0, r.jsx)(y.Wu, {
                 appContext: ec.IlC.APP,
                 renderWindow: window,
-                children: (0, r.jsxs)(V.yP, {
+                children: (0, r.jsxs)(F.yP, {
                   children: [null != f ? (0, r.jsx)(eE, {
                     type: f,
                     themeOverride: q
@@ -198,7 +198,7 @@ let em = (0, et.Un)({
                               children: [(0, r.jsx)("div", {
                                 className: a()(b ? ed.mobileApp : ed.app),
                                 children: t
-                              }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(F.Ox, {}), (0, r.jsx)(V.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {})]
+                              }), (0, r.jsx)(R.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(_.nKe, {}), (0, r.jsx)(g.Z, {}), (0, r.jsx)(V.Ox, {}), (0, r.jsx)(F.Un, {}), (0, r.jsx)(Z.ot, {}), (0, r.jsx)(_.Ixi, {}), (0, r.jsx)(T.Z, {}), (0, r.jsx)(H.Z, {}), (0, r.jsx)(em, {}), (0, r.jsx)(eg, {})]
                             })
                           })
                         })

@@ -231,7 +231,7 @@ function B(e) {
   return e.connection === r
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t,
     context: n,
@@ -240,7 +240,7 @@ function V(e) {
   null == r || r.setSimulcastDebugOverride(t, n, i)
 }
 
-function F(e) {
+function V(e) {
   let {
     streamId: t,
     width: n,
@@ -347,7 +347,7 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   RTC_CONNECTION_SECURE_FRAMES_UPDATE: G,
   RTC_CONNECTION_CLIENT_CONNECT: G,
   RTC_CONNECTION_CLIENT_DISCONNECT: G,
-  VIDEO_SIZE_UPDATE: F,
+  VIDEO_SIZE_UPDATE: V,
   VOICE_STATE_UPDATES: R,
   VOICE_CHANNEL_SELECT: k,
   VOICE_SERVER_UPDATE: P,
@@ -359,7 +359,7 @@ let H = new Z(s.Z, __OVERLAY__ ? {} : {
   THREAD_DELETE: M,
   CALL_DELETE: x,
   APP_STATE_UPDATE: j,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F
 });
 Promise.resolve().then(n.bind(n, 626135)).then(e => {
   let {

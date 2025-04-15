@@ -4,7 +4,7 @@ n.d(t, {
   Iu: () => G,
   Jw: () => j,
   _r: () => B,
-  cX: () => F,
+  cX: () => V,
   lv: () => U,
   v: () => x
 });
@@ -85,18 +85,18 @@ function B(e) {
   return null != i ? w.ZP.getURL(i.surrogates) : ""
 }
 
-function V(e, t) {
+function F(e, t) {
   return i()(e).map(e => {
     var n;
     return null != (n = e[t]) ? n : null
   }).filter(e => null != e).uniq().value()
 }
 
-function F(e) {
+function V(e) {
   var t, n, r, i, o, a;
   if (e.length < 1) return "";
-  let s = V(e, "userId"),
-    l = V(e, "emojiName"),
+  let s = F(e, "userId"),
+    l = F(e, "emojiName"),
     c = l.length < 2 ? null != (t = null == l ? void 0 : l[0]) ? t : "" : l.join(", ");
   return s.length < 1 ? "" : 1 === s.length ? L.NW.formatToPlainString(L.t.yZYxzM, {
     firstUsername: null == (n = R.default.getUser(s[0])) ? void 0 : n.username,

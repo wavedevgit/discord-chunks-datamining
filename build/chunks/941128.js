@@ -102,7 +102,7 @@ function j(e) {
 }
 
 function U(e) {
-  V(e), Z(e)
+  F(e), Z(e)
 }
 
 function G(e) {
@@ -122,7 +122,7 @@ function B(e) {
   M(t, n, r, "Patch")
 }
 
-function V(e) {
+function F(e) {
   let {
     applicationId: t,
     branchId: n
@@ -130,7 +130,7 @@ function V(e) {
   k(t, n)
 }
 
-function F(e) {
+function V(e) {
   let {
     applicationId: t,
     branchId: n
@@ -263,9 +263,9 @@ let J = new X(l.Z, {
   DISPATCH_APPLICATION_INSTALL: j,
   DISPATCH_APPLICATION_UPDATE: B,
   DISPATCH_APPLICATION_UNINSTALL: U,
-  DISPATCH_APPLICATION_CANCEL: V,
+  DISPATCH_APPLICATION_CANCEL: F,
   DISPATCH_APPLICATION_REPAIR: G,
-  DISPATCH_APPLICATION_MOVE_UP: F,
+  DISPATCH_APPLICATION_MOVE_UP: V,
   DISPATCH_APPLICATION_REMOVE_FINISHED: Z,
   DISPATCH_APPLICATION_STATE_UPDATE: H,
   DISPATCH_APPLICATION_ERROR: Y,

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => V
+  Z: () => F
 }), n(388685), n(997841);
 var r = n(481060),
   i = n(570140),
@@ -81,8 +81,8 @@ async function G(e) {
       uploads: j,
       draftType: G,
       parsedMessage: B,
-      options: V = {},
-      raiseEndpointErrors: F = !1
+      options: F = {},
+      raiseEndpointErrors: V = !1
     } = e,
     Z = new _.Z(L.ANM.MESSAGES(M)),
     H = new D.o,
@@ -91,15 +91,15 @@ async function G(e) {
       nonce: "",
       channel_id: M,
       type: L.uaV.DEFAULT,
-      sticker_ids: null == V ? void 0 : V.stickerIds,
-      poll: null == V ? void 0 : V.poll,
-      confetti_potion: (0, I.vY)(null == V ? void 0 : V.confettiPotionData),
-      scheduled_timestamp: null == V ? void 0 : V.scheduledTimestamp
+      sticker_ids: null == F ? void 0 : F.stickerIds,
+      poll: null == F ? void 0 : F.poll,
+      confetti_potion: (0, I.vY)(null == F ? void 0 : F.confettiPotionData),
+      scheduled_timestamp: null == F ? void 0 : F.scheduledTimestamp
     };
-  null != B && (W.content = null == B ? void 0 : B.content), null != A.Z.getPendingReply(M) && (W.type = L.uaV.REPLY, W.message_reference = V.messageReference, W.allowed_mentions = V.allowedMentions, (0, N.A6)(M));
+  null != B && (W.content = null == B ? void 0 : B.content), null != A.Z.getPendingReply(M) && (W.type = L.uaV.REPLY, W.message_reference = F.messageReference, W.allowed_mentions = F.allowedMentions, (0, N.A6)(M));
   let [Y, K] = (0, C.Z)(W.content);
   Y && (W.content = K, W.flags = (0, w.pj)(null != (n = W.flags) ? n : 0, L.iLy.SUPPRESS_NOTIFICATIONS));
-  let z = null != (r = V.nonce) ? r : (0, E.r)(),
+  let z = null != (r = F.nonce) ? r : (0, E.r)(),
     q = (0, g.ZP)({
       channelId: M,
       content: W.content,
@@ -108,7 +108,7 @@ async function G(e) {
       messageReference: W.message_reference,
       flags: W.flags,
       nonce: z,
-      poll: (0, y.x9)(V.poll)
+      poll: (0, y.x9)(F.poll)
     });
 
   function Q() {
@@ -163,7 +163,7 @@ async function G(e) {
       return
     }
     if (t !== L.evJ.GUILD_FILE_UPLOAD_RATE_LIMITED_ACCESS) {
-      if (F) H.reject(new c.Hx({
+      if (V) H.reject(new c.Hx({
         status: t,
         body: null != n ? n : {}
       }, t));
@@ -189,7 +189,7 @@ async function G(e) {
       name: n.name,
       id: n.id
     }, void 0, !0, O.LL.MessageSent))
-  }), null == V || null == (t = V.confettiPotionData) || t.callback(), await Z.uploadFiles(j, W), H.resolve(), H.promise
+  }), null == F || null == (t = F.confettiPotionData) || t.callback(), await Z.uploadFiles(j, W), H.resolve(), H.promise
 }
 
 function B(e) {
@@ -258,7 +258,7 @@ function B(e) {
     })
   }), h.upload(n, f)
 }
-let V = {
+let F = {
   instantBatchUpload: function(e) {
     let {
       channelId: t,

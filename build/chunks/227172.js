@@ -82,9 +82,9 @@ let x = {
       user: U,
       details: G,
       appName: B,
-      activity: V
+      activity: F
     } = (0, R.n)(n), {
-      primaryColor: F,
+      primaryColor: V,
       secondaryColor: Z
     } = (0, S.Z)(null == j ? void 0 : j.src), H = (0, a.e7)([_.default], () => _.default.locale), {
       streamPreviewUrl: W,
@@ -108,10 +108,10 @@ let x = {
         avatarSrcs: K.map(e => e.getAvatarURL(t.guild_id, 128)),
         description: r,
         timestamp: (0, y.yh)(n, H),
-        colors: [F, Z],
+        colors: [V, Z],
         channelId: e
       })
-    }, [null == j ? void 0 : j.src, t, K, n, H, Q, z, q, F, Z, U]);
+    }, [null == j ? void 0 : j.src, t, K, n, H, Q, z, q, V, Z, U]);
     if (null == U) return null;
     let en = (0, r.jsx)(N.Gk, {
         location: null == W ? N.Gt.POPOUT : N.Gt.STREAMING_POPOUT,
@@ -145,14 +145,14 @@ let x = {
         onUserPopoutClosed: M,
         trackRankingItemInteraction: k
       }),
-      ei = [(0, l.Z)(V, P.xjy.JOIN) || (0, c.Z)(V) ? (0, r.jsx)(d.Z, {
-        activity: V,
+      ei = [(0, l.Z)(F, P.xjy.JOIN) || (0, c.Z)(F) ? (0, r.jsx)(d.Z, {
+        activity: F,
         user: U,
         ButtonComponent: e => (0, r.jsx)(A.Ll, L({
           IconComponent: s.iWm
         }, e))
-      }) : null, (0, u.Z)(V) ? (0, r.jsx)(f.Z, {
-        activity: V,
+      }) : null, (0, u.Z)(F) ? (0, r.jsx)(f.Z, {
+        activity: F,
         ButtonComponent: e => (0, r.jsx)(A.Ll, L({
           IconComponent: s.tEF
         }, e))

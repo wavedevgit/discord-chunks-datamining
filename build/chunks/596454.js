@@ -102,8 +102,8 @@ function N(e) {
     x = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef", "registerInnerRef"]);
   let [M, k] = i.useState(!1), [j, U] = i.useState(void 0), G = i.useRef(void 0), {
     triggerAnimation: B,
-    untriggerAnimation: V
-  } = i.useContext(u.Rm), F = _.Yk.useSetting(), Z = T(), H = null == w ? F : w, W = E.kV[S], Y = i.useRef(null), K = i.useMemo(() => {
+    untriggerAnimation: F
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), Z = T(), H = null == w ? V : w, W = E.kV[S], Y = i.useRef(null), K = i.useMemo(() => {
     if (null != o) return o;
     if (null != f) {
       let e = !0 === A && H;
@@ -122,8 +122,8 @@ function N(e) {
   }, [K]), q = i.useCallback(e => {
     v && k(!0), null == f && B(p), null == C || C(e)
   }, [v, p, C, B, f]), Q = i.useCallback(e => {
-    v && k(!1), null == f && V(p), null == R || R(e)
-  }, [v, f, p, R, V]), X = i.useMemo(() => {
+    v && k(!1), null == f && F(p), null == R || R(e)
+  }, [v, f, p, R, F]), X = i.useMemo(() => {
     let e = null != f && "" !== f ? {
       "data-id": f
     } : {
@@ -156,7 +156,7 @@ function N(e) {
       channelId: g,
       messageId: b,
       emojiName: p,
-      disable: !1 === H || !1 === F,
+      disable: !1 === H || !1 === V,
       emojiRef: $
     }), P ? (0, r.jsx)("img", O(y({}, X), {
       ref: J,

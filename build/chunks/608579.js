@@ -84,11 +84,11 @@ function M(e) {
     giftRecipient: U,
     giftMessage: G,
     giftingOrigin: B,
-    analyticsLocations: V,
-    returnRef: F
+    analyticsLocations: F,
+    returnRef: V
   } = e, {
     analyticsLocations: Z
-  } = (0, d.ZP)([...V, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, A.UY)({
+  } = (0, d.ZP)([...F, u.Z.COLLECTIBLES_PAYMENT_MODAL]), H = i.useRef(new s.qA), [W, Y] = i.useState(null), [K, z] = i.useState(!1), q = i.useMemo(() => (0, A.UY)({
     purchaseType: C.o8.FIAT,
     skuId: k
   }), [k]), Q = (0, l.Wu)([f.Z], () => f.Z.recommendedGiftSkuIds, []), X = null != k ? [k] : Q, J = null != (t = X[0]) ? t : null, $ = null != k && p.Rm.has(k), ee = i.useCallback(() => {
@@ -151,7 +151,7 @@ function M(e) {
             analyticsLocations: Z,
             transitionState: L,
             renderHeader: en,
-            returnRef: F,
+            returnRef: V,
             onStepChange: w,
             skipConfirm: $,
             hideShadow: !0

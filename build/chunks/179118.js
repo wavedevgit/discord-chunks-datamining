@@ -50,9 +50,9 @@ function M(e) {
     isSendingMessage: y
   } = e, [O, S] = i.useState(u.kO8.Modes.DEFAULT), M = (0, c.e7)([I.Z], () => I.Z.enabled), j = f || null != l && null != h, U = (null == o ? void 0 : o.productLine) === P.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
-  } = (0, R.wD)(), V = null == G ? void 0 : G.giftPurchaseConfirmation, F = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != F && null != V, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
+  } = (0, R.wD)(), F = null == G ? void 0 : G.giftPurchaseConfirmation, V = (0, g.tK)(null == B ? void 0 : B.skuId), Z = (0, g.a5)(s) && null != V && null != F, H = () => null != s ? s.skuId : null != o ? o.id : null, W = () => {
     let e;
-    return null != b ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? V.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? V.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
+    return null != b ? D.NW.string(D.t.qB8ayc) : null == s ? null : (e = s.interval === w.rV.MONTH ? j ? Z ? F.monthGiftText : D.t["4ZJ+7e"] : D.t["P+z55e"] : j ? Z ? F.yearGiftText : D.t.p0pZXF : D.t.bXqk3t, D.NW.format(e, {
       skuName: (0, A.aq)(s.id),
       intervalCount: s.intervalCount
     }))

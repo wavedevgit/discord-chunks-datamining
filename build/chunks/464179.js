@@ -177,7 +177,7 @@ let M = {
     },
     renderInput: e => (0, i.jsx)(c.oil, m({}, e))
   }),
-  V = e => {
+  F = e => {
     let t, n;
     switch (e) {
       case v:
@@ -215,7 +215,7 @@ let M = {
       renderInput: e => (0, i.jsx)(c.oil, m({}, e))
     }
   },
-  F = e => {
+  V = e => {
     let t;
     switch (e) {
       case v:
@@ -278,15 +278,15 @@ let M = {
       [U],
       [G],
       [B],
-      [F, V]
+      [V, F]
     ],
     modalInternational: [
       [j],
       [U],
       [G],
       [B],
-      [F],
-      [V]
+      [V],
+      [F]
     ],
     modalUSWithName: [
       [j],
@@ -294,7 +294,7 @@ let M = {
       [U],
       [G],
       [B],
-      [F, V]
+      [V, F]
     ],
     modalInternationalWithName: [
       [j],
@@ -302,13 +302,13 @@ let M = {
       [U],
       [G],
       [B],
-      [F],
-      [V]
+      [V],
+      [F]
     ],
     settingsUS: [
       [k],
       [U, G],
-      [B, F, V],
+      [B, V, F],
       [j]
     ],
     settingsUSMobile: [
@@ -316,15 +316,15 @@ let M = {
       [U],
       [G],
       [B],
-      [F],
       [V],
+      [F],
       [j]
     ],
     settingsInternational: [
       [k],
       [U, G],
       [B],
-      [F, V],
+      [V, F],
       [j]
     ],
     settingsInternationalMobile: [
@@ -332,22 +332,22 @@ let M = {
       [U],
       [G],
       [B],
-      [F],
       [V],
+      [F],
       [j]
     ],
     settingsInternationalWithoutName: [
       [U, G],
       [B],
-      [F, V],
+      [V, F],
       [j]
     ],
     settingsInternationalWithoutNameMobile: [
       [U],
       [G],
       [B],
-      [F],
       [V],
+      [F],
       [j]
     ]
   };

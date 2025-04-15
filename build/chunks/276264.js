@@ -109,7 +109,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       })
     })
   }),
-  V = i.memo(function(e) {
+  F = i.memo(function(e) {
     let {
       user: t
     } = e;
@@ -121,7 +121,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       verified: t.isVerifiedBot()
     })
   }),
-  F = i.memo(function(e) {
+  V = i.memo(function(e) {
     let {
       user: t,
       isOwner: n,
@@ -131,7 +131,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       onClickPremiumGuildIcon: s
     } = e;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(V, {
+      children: [(0, r.jsx)(F, {
         user: t
       }), (0, r.jsx)(G, {
         isOwner: n,
@@ -262,7 +262,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       channel: j,
       guildId: G,
       className: B,
-      nameplate: V,
+      nameplate: F,
       hideClanTag: Y = !1,
       hideSubtext: K = !1,
       onMouseDown: z,
@@ -385,7 +385,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           typingRef: e_,
           currentUser: T
         }),
-        nameplate: V,
+        nameplate: F,
         subText: (0, r.jsx)(W, {
           hideSubtext: K,
           activities: N,
@@ -397,7 +397,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
           isHovering: ed,
           quest: eS
         }),
-        decorators: (0, r.jsx)(F, {
+        decorators: (0, r.jsx)(V, {
           user: b,
           isOwner: d,
           lostPermissionTooltipText: p,

@@ -7,13 +7,13 @@ n.d(t, {
   R2: () => L,
   T$: () => w,
   Uu: () => k,
-  ZC: () => F,
+  ZC: () => V,
   Zm: () => D,
   bK: () => j,
   mx: () => U,
   t6: () => x,
   tv: () => B,
-  vY: () => V
+  vY: () => F
 }), n(388685);
 var r = n(192379),
   i = n(525654),
@@ -156,7 +156,7 @@ function B(e, t, n, r) {
   return !t && null == n && ("" !== e || null != r && r.length > 0)
 }
 
-function V(e) {
+function F(e) {
   if (null != e) return {
     message_emoji: {
       id: e.emoji.id,
@@ -165,7 +165,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   if (null == e || null == e.potions || 0 === e.potions.length) return null;
   for (let r of e.potions) {
     var t, n;

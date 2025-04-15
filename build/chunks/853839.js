@@ -85,14 +85,14 @@ r({
 }, {
   DOMException: B ? D : T
 });
-var V = i(O),
-  F = V.prototype;
-for (var Z in j && (v || T === V) && u(F, "toString", h), U && y && T === V && d(F, "code", x(function() {
+var F = i(O),
+  V = F.prototype;
+for (var Z in j && (v || T === F) && u(V, "toString", h), U && y && T === F && d(V, "code", x(function() {
     return w(p(this).name)
   })), g)
   if (f(g, Z)) {
     var H = g[Z],
       W = H.s,
       Y = l(6, H.c);
-    f(V, W) || c(V, W, Y), f(F, W) || c(F, W, Y)
+    f(F, W) || c(F, W, Y), f(V, W) || c(V, W, Y)
   }

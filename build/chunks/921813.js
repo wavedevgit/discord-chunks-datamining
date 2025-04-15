@@ -52,8 +52,8 @@ function C(e) {
     hideCustomStatus: U = !1,
     hideBioSection: G = !1,
     hideMessageInput: B = !0,
-    hideExampleButton: V = !1,
-    pendingBadges: F,
+    hideExampleButton: F = !1,
+    pendingBadges: V,
     shouldOpenBadgeTooltip: Z,
     showNameplatePreview: H = !1
   } = e, W = (0, f.ZP)(t.id, null == n ? void 0 : n.id), {
@@ -133,12 +133,12 @@ function C(e) {
         pendingPronouns: E,
         isTryItOutFlow: k,
         hideBioSection: G,
-        pendingBadges: F,
+        pendingBadges: V,
         shouldOpenBadgeTooltip: Z
       }), (0, r.jsx)(I.Z, {
         user: t,
         hideMessageInput: B,
-        hideExampleButton: V
+        hideExampleButton: F
       }), null != z && (0, r.jsx)(d.Z, {
         profileEffectId: z
       })]

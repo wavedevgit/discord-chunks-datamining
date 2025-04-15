@@ -141,7 +141,7 @@ function B(e) {
   o()(null != i, "No render target for popout!"), C[e] = i, i.render(n(e))
 }
 
-function V(e) {
+function F(e) {
   let {
     key: t,
     features: n,
@@ -180,7 +180,7 @@ function V(e) {
   E.windowKey = t, i ? S.verbose("Opening out of process overlay window", t) : null == E || E.focus(), A[t] = E, R[t] = r, _.isPlatformEmbedded && (p.ZP.setAlwaysOnTop(t, f), N[t] = f, p.ZP.isAlwaysOnTop(t).then(e => N[t] = e)), P.add(t)
 }
 
-function F(e) {
+function V(e) {
   P.has(e) && (B(e), P.delete(e), X.emitChange())
 }
 
@@ -199,7 +199,7 @@ function H(e) {
   let n = t.discordPopoutEvent;
   if (null != n.key) switch (n.type) {
     case g.l9w.LOADED:
-      return F(n.key);
+      return V(n.key);
     case g.l9w.UNLOADED:
       return Z(n.key)
   }
@@ -289,7 +289,7 @@ class Q extends(r = c.ZP.PersistedStore) {
 }
 E(Q, "displayName", "PopoutWindowStore"), E(Q, "persistKey", "PopoutWindowStore");
 let X = new Q(u.Z, {
-    POPOUT_WINDOW_OPEN: V,
+    POPOUT_WINDOW_OPEN: F,
     POPOUT_WINDOW_ADD_STYLESHEET: q,
     POPOUT_WINDOW_CLOSE: Y,
     POPOUT_WINDOW_SET_ALWAYS_ON_TOP: z,

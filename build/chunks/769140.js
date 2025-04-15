@@ -41,8 +41,8 @@ var r = n(200651),
   U = n(788858),
   G = n(384298),
   B = n(670451),
-  V = n(228168),
-  F = n(981631),
+  F = n(228168),
+  V = n(981631),
   Z = n(388032),
   H = n(227832),
   W = n(162509),
@@ -60,8 +60,8 @@ function z(e) {
     profileType: Q,
     theme: X
   } = (0, L.z)(), J = {
-    [W.fullSize]: Q === V.y0.FULL_SIZE,
-    [H.fullSize]: Q === V.y0.FULL_SIZE
+    [W.fullSize]: Q === F.y0.FULL_SIZE,
+    [H.fullSize]: Q === F.y0.FULL_SIZE
   }, {
     enabled: $,
     analyticsEligible: ee
@@ -84,11 +84,11 @@ function z(e) {
   }), {
     previewUrl: el,
     isLoading: ec
-  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, y.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(F.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
+  } = (0, b.Z)(null == o ? void 0 : o.guildId, null == o ? void 0 : o.channelId, null == o ? void 0 : o.ownerId), [eu, ed] = (0, y.wq)(en), ef = (0, s.e7)([N.Z], () => null != en && N.Z.canBasicChannel(V.S7T.CONNECT, en)), e_ = (0, s.e7)([C.Z], () => C.Z.getRelationshipType(t.id));
   i.useEffect(() => {
     if (ee) {
       var e;
-      P.default.track(F.rMx.USER_VOICE_ACTIVITY_VIEWED, {
+      P.default.track(V.rMx.USER_VOICE_ACTIVITY_VIEWED, {
         activity_user_id: t.id,
         discoverable: null == (e = o.discoverable) || e,
         surface: "user-profile-stream-activity-card",
@@ -117,8 +117,8 @@ function z(e) {
         onClick: eu ? t : void 0,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: X === F.BRd.LIGHT ? K : Y
-        }), Q !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+          src: X === V.BRd.LIGHT ? K : Y
+        }), Q !== F.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -138,7 +138,7 @@ function z(e) {
           alt: "",
           src: eh,
           className: W.image
-        }), Q !== V.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
+        }), Q !== F.y0.FULL_SIZE && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.Text, {
             className: W.overlayText,
             variant: "text-sm/medium",
@@ -153,7 +153,7 @@ function z(e) {
       })
     },
     eg = () => {
-      if (Q !== V.y0.FULL_SIZE) return null;
+      if (Q !== F.y0.FULL_SIZE) return null;
       let e = e => {
           e.stopPropagation(), null == ea || ea({
             action: "OPEN_VOICE_CHANNEL"
@@ -206,7 +206,7 @@ function z(e) {
         })]
       })
     },
-    eE = () => Q === V.y0.FULL_SIZE ? null : (0, r.jsx)(j.Z, {
+    eE = () => Q === F.y0.FULL_SIZE ? null : (0, r.jsx)(j.Z, {
       user: t,
       guild: et,
       channel: en,
@@ -244,9 +244,9 @@ function z(e) {
         className: H.body,
         children: [(0, r.jsxs)("div", {
           className: a()(H.content, J),
-          children: [em(), eg(), Q === V.y0.FULL_SIZE && eb()]
+          children: [em(), eg(), Q === F.y0.FULL_SIZE && eb()]
         }), eE()]
-      }), Q !== V.y0.FULL_SIZE && eb()]
+      }), Q !== F.y0.FULL_SIZE && eb()]
     })
   })
 }

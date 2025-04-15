@@ -239,14 +239,14 @@ function B(e) {
   I = I.put(e.mediaEngineConnectionId, e.userId, e.videoSsrc, e.streamId)
 }
 
-function V(e) {
+function F(e) {
   let {
     value: t
   } = e;
   S = t
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t,
     context: n,
@@ -308,8 +308,8 @@ let H = new Z(a.Z, {
   RTC_DEBUG_MODAL_OPEN_REPLAY: U,
   RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH: G,
   RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT: B,
-  RTC_DEBUG_SET_RECORDING_FLAG: V,
-  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: F,
+  RTC_DEBUG_SET_RECORDING_FLAG: F,
+  RTC_DEBUG_SET_SIMULCAST_OVERRIDE: V,
   VOICE_CHANNEL_SELECT: D,
   RTC_CONNECTION_VIDEO: L,
   MEDIA_ENGINE_CONNECTION_STATS: k

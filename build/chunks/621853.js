@@ -109,14 +109,14 @@ function B() {
   O.clear(), I.clear(), A.clear(), C.clear(), w.clear(), D.clear(), L.clear(), k = !1
 }
 
-function V(e) {
+function F(e) {
   let {
     userId: t
   } = e;
   I.add(t)
 }
 
-function F(e) {
+function V(e) {
   let {
     userId: t
   } = e;
@@ -141,7 +141,7 @@ function H(e) {
 }
 
 function W(e) {
-  var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, B, V, F, H, W, K, z, q, Q, X, J, $;
+  var t, n, r, i, s, l, c, d, f, h, g, b, N, M, k, B, F, V, H, W, K, z, q, Q, X, J, $;
   let {
     userProfile: ee,
     fetchStartedAt: et
@@ -197,8 +197,8 @@ function W(e) {
       bio: null != (B = null == (c = ee.user_profile) ? void 0 : c.bio) ? B : "",
       profileEffectId: null == (f = ee.user_profile) || null == (d = f.profile_effect) ? void 0 : d.id,
       profileEffectExpiresAt: null == (g = ee.user_profile) || null == (h = g.profile_effect) ? void 0 : h.expires_at,
-      pronouns: null != (V = null == (b = ee.user_profile) ? void 0 : b.pronouns) ? V : "",
-      connectedAccounts: null != (F = ee.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? F : [],
+      pronouns: null != (F = null == (b = ee.user_profile) ? void 0 : b.pronouns) ? F : "",
+      connectedAccounts: null != (V = ee.connected_accounts.filter(e => a.Z.isSupported(e.type))) ? V : [],
       applicationRoleConnections: null != (H = ee.application_role_connections) ? H : [],
       premiumSince: er,
       premiumType: ee.premium_type,
@@ -485,9 +485,9 @@ class es extends f.Z {
       USER_PROFILE_UPDATE_SUCCESS: J,
       USER_PROFILE_UPDATE_FAILURE: $,
       USER_PROFILE_PIN_BADGES_ON_CLIENT: ee,
-      MUTUAL_FRIENDS_FETCH_START: V,
+      MUTUAL_FRIENDS_FETCH_START: F,
       MUTUAL_FRIENDS_FETCH_SUCCESS: H,
-      MUTUAL_FRIENDS_FETCH_FAILURE: F,
+      MUTUAL_FRIENDS_FETCH_FAILURE: V,
       USER_UPDATE: et,
       GUILD_MEMBER_UPDATE: et,
       GUILD_JOIN: en,

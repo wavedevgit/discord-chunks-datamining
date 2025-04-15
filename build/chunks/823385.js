@@ -48,12 +48,12 @@ let w = "seenQSTutorial",
   U = null,
   G = [],
   B = null,
-  V = 0,
-  F = [],
+  F = 0,
+  V = [],
   Z = [];
 
 function H() {
-  j = y.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, F = []
+  j = y.Z.getGuildCount() >= 3 || a().size(m.Z.getMutablePrivateChannels()) >= 20, V = []
 }
 
 function W(e) {
@@ -165,7 +165,7 @@ function z(e, t) {
     default:
       G = e
   }
-  if (t !== B) B = t, V = Math.max(t.length, V), M = (0, u.gJ)(u.a8.DOWN, -1, G);
+  if (t !== B) B = t, F = Math.max(t.length, F), M = (0, u.gJ)(u.a8.DOWN, -1, G);
   else {
     let e = G[M];
     null != e && e.type === u.h8.HEADER && (M = (0, u.gJ)(u.a8.DOWN, M, G))
@@ -182,7 +182,7 @@ function q(e) {
   null != o && a.add("guild:".concat(o)), r = null != r ? r : new u.ZP(J, x, null != i ? L : D, {
     frecencyBoosters: !0,
     blacklist: a
-  }), B = null, V = n.length, U = i, r.search(n)
+  }), B = null, F = n.length, U = i, r.search(n)
 }
 
 function Q(e) {
@@ -204,11 +204,11 @@ function X(e, t) {
 }
 
 function J(e, t) {
-  X(e = "" === (t = t.trim()).trim() ? K() : e, F) || (F = e, z(e, t))
+  X(e = "" === (t = t.trim()).trim() ? K() : e, V) || (V = e, z(e, t))
 }
 
 function $() {
-  B = null, V = 0, F = [], null != r && (r.destroy(), r = null)
+  B = null, F = 0, V = [], null != r && (r.destroy(), r = null)
 }
 
 function ee(e) {
@@ -282,7 +282,7 @@ class er extends(i = s.ZP.PersistedStore) {
       results: G,
       selectedIndex: M,
       seenTutorial: k,
-      maxQueryLength: V
+      maxQueryLength: F
     }
   }
 }

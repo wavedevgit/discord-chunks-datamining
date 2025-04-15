@@ -15,7 +15,7 @@ n.d(t, {
   Yk: () => z,
   _A: () => W,
   aq: () => S,
-  cR: () => F,
+  cR: () => V,
   iI: () => B,
   ik: () => R,
   kA: () => L,
@@ -192,12 +192,12 @@ function B(e, t, n, r) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !n.isOwner(e) && T(t, e.id, r) && (i(M(e, n)) || i(e.username) || i(e.discriminator))).map(e => U(e, n)).sort(G)
 }
 
-function V(e, t, n, r, i) {
+function F(e, t, n, r, i) {
   return e.map(c.default.getUser).filter(d.lm).filter(e => !T(t, e.id, r, i) || k(e, n))
 }
 
-function F(e, t, n, r, i) {
-  return V(e, t, n, r, i).map(e => U(e, n)).sort(G)
+function V(e, t, n, r, i) {
+  return F(e, t, n, r, i).map(e => U(e, n)).sort(G)
 }
 
 function Z(e, t) {

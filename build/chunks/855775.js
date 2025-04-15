@@ -141,11 +141,11 @@ function B() {
   O = null
 }
 
-function V(e) {
+function F(e) {
   N = e.isGift
 }
 
-function F(e) {
+function V(e) {
   let {
     locked: t
   } = e;
@@ -206,7 +206,7 @@ let H = new Z(s.Z, {
   SKU_PURCHASE_FAIL: U,
   SKU_PURCHASE_SHOW_CONFIRMATION_STEP: G,
   SKU_PURCHASE_CLEAR_ERROR: B,
-  SKU_PURCHASE_UPDATE_IS_GIFT: V,
-  OVERLAY_SET_INPUT_LOCKED: F,
+  SKU_PURCHASE_UPDATE_IS_GIFT: F,
+  OVERLAY_SET_INPUT_LOCKED: V,
   GIFT_CODE_CREATE: j
 })

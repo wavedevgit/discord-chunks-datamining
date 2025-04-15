@@ -140,7 +140,7 @@ function B(e) {
   return T(n, i.applicationStatus, a), G(i), !0
 }
 
-function V(e) {
+function F(e) {
   let {
     id: t,
     guildId: n
@@ -148,7 +148,7 @@ function V(e) {
   null != r && (T(n, y, r.applicationStatus), U(t))
 }
 
-function F(e) {
+function V(e) {
   let {
     guildId: t,
     action: n
@@ -233,10 +233,10 @@ let J = new X(l.Z, {
   GUILD_JOIN_REQUESTS_FETCH_SUCCESS: R,
   GUILD_JOIN_REQUESTS_FETCH_START: C,
   GUILD_JOIN_REQUESTS_FETCH_FAILURE: P,
-  GUILD_JOIN_REQUESTS_BULK_ACTION: F,
+  GUILD_JOIN_REQUESTS_BULK_ACTION: V,
   GUILD_JOIN_REQUEST_CREATE: B,
   GUILD_JOIN_REQUEST_UPDATE: B,
-  GUILD_JOIN_REQUEST_DELETE: V,
+  GUILD_JOIN_REQUEST_DELETE: F,
   GUILD_JOIN_REQUESTS_SET_APPLICATION_TAB: H,
   GUILD_JOIN_REQUESTS_SET_SORT_ORDER: Y,
   GUILD_JOIN_REQUESTS_SET_SELECTED: z

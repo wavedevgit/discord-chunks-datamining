@@ -142,7 +142,7 @@ function B() {
   }
 }
 
-function V(e) {
+function F(e) {
   let {
     error: t
   } = e;
@@ -152,7 +152,7 @@ function V(e) {
   }
 }
 
-function F(e) {
+function V(e) {
   let {
     style: t
   } = e;
@@ -169,7 +169,7 @@ O(U, "displayName", "NativeScreenSharePickerStore");
 let H = new U(s.Z, {
   NATIVE_SCREEN_SHARE_PICKER_UPDATE: G,
   NATIVE_SCREEN_SHARE_PICKER_CANCEL: B,
-  NATIVE_SCREEN_SHARE_PICKER_ERROR: V,
-  NATIVE_SCREEN_SHARE_PICKER_PRESENT: F,
+  NATIVE_SCREEN_SHARE_PICKER_ERROR: F,
+  NATIVE_SCREEN_SHARE_PICKER_PRESENT: V,
   NATIVE_SCREEN_SHARE_PICKER_RELEASE: Z
 })

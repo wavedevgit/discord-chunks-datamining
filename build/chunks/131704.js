@@ -34,7 +34,7 @@ n.d(t, {
   sR: () => j,
   tx: () => P,
   uC: () => H,
-  vc: () => F,
+  vc: () => V,
   vd: () => B,
   vg: () => et,
   xL: () => $,
@@ -139,10 +139,10 @@ let G = new Set([m.d4z.DM, m.d4z.GROUP_DM, m.d4z.GUILD_VOICE, m.d4z.GUILD_STAGE_
 function B(e) {
   return G.has(e)
 }
-let V = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD, m.d4z.GUILD_DIRECTORY, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA, m.d4z.DM, m.d4z.GROUP_DM]);
+let F = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD, m.d4z.GUILD_DIRECTORY, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA, m.d4z.DM, m.d4z.GROUP_DM]);
 
-function F(e) {
-  return V.has(e)
+function V(e) {
+  return F.has(e)
 }
 let Z = new Set([m.d4z.ANNOUNCEMENT_THREAD, m.d4z.PUBLIC_THREAD, m.d4z.PRIVATE_THREAD]),
   H = new Set([m.d4z.GUILD_TEXT, m.d4z.GUILD_ANNOUNCEMENT, m.d4z.GUILD_FORUM, m.d4z.GUILD_MEDIA]);

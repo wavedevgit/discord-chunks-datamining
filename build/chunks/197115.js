@@ -100,8 +100,8 @@ let A = function(e) {
     giftMessage: U,
     shinyButtonClassName: G,
     showGradient: B = !1,
-    confirmationFooter: V,
-    paymentModalBanner: F
+    confirmationFooter: F,
+    paymentModalBanner: V
   } = e, Z = T(e, ["isGift", "subscriptionTier", "onClick", "size", "className", "isTrialCTA", "buttonText", "buttonTextClassName", "subscribeButtonText", "iconClassName", "postSuccessGuild", "onSubscribeModalClose", "premiumModalAnalyticsLocation", "showIcon", "disableShine", "applicationId", "giftMessage", "shinyButtonClassName", "showGradient", "confirmationFooter", "paymentModalBanner"]);
   let H = (0, a.e7)([_.default], () => _.default.getCurrentUser()),
     W = (0, a.e7)([h.Z], () => h.Z.isFocused()),
@@ -169,8 +169,8 @@ let A = function(e) {
         onClose: L,
         applicationId: j,
         giftMessage: U,
-        confirmationFooter: V,
-        paymentModalBanner: F
+        confirmationFooter: F,
+        paymentModalBanner: V
       })
     };
   if (A) return (0, r.jsxs)(s.zxk, S(O({

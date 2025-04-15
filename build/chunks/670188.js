@@ -107,14 +107,14 @@ let O = (0, a.pxk)(a.EFr.SIZE_80),
       [k, j] = i.useState(!1),
       [U, G] = i.useState(!1),
       B = i.useRef(!1),
-      V = i.useRef(void 0),
       F = i.useRef(void 0),
+      V = i.useRef(void 0),
       Z = i.useRef(void 0),
       H = i.useRef(void 0),
       W = (0, u.Z)(),
       Y = (0, l.Z)(W),
       K = i.useCallback(() => {
-        clearTimeout(V.current), clearTimeout(F.current), clearTimeout(Z.current)
+        clearTimeout(F.current), clearTimeout(V.current), clearTimeout(Z.current)
       }, []);
     (0, s.zq)(K);
     let z = i.useCallback(() => null == M || null == x ? Promise.resolve() : null != T ? T() : (0, d.Z)(M.id, null != v ? v : M.getAvatarURL(m, O), {
@@ -134,13 +134,13 @@ let O = (0, a.pxk)(a.EFr.SIZE_80),
         }
       })), [M, U, N, L, m, E, R]),
       Q = i.useCallback(() => {
-        K(), B.current = !0, w && (V.current = setTimeout(async () => {
+        K(), B.current = !0, w && (F.current = setTimeout(async () => {
           if (B.current) try {
             G(!0), await z()
           } finally {
             G(!1)
           }
-        }, _.a6)), F.current = setTimeout(() => {
+        }, _.a6)), V.current = setTimeout(() => {
           (0, a.$sL)() || Y.current || B.current && (null == H.current && (H.current = Date.now()), j(!0))
         }, _.JX)
       }, [K, w, z, Y]),

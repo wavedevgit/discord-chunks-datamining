@@ -274,7 +274,7 @@ function G(e) {
           className: R.userWinnerImage,
           leaderboard: p
         })]
-      }) : null, v ? (0, r.jsx)(V, {
+      }) : null, v ? (0, r.jsx)(F, {
         rankChange: u - n
       }) : null]
     }), (0, r.jsxs)("div", {
@@ -326,7 +326,7 @@ function B(e) {
   })
 }
 
-function V(e) {
+function F(e) {
   let {
     rankChange: t
   } = e;

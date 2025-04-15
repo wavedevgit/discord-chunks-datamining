@@ -230,12 +230,12 @@ function B() {
   s.K.remove(y), I = {}
 }
 
-function V() {
+function F() {
   return null != S && w({
     searchId: S
   })
 }
-class F extends(r = a.ZP.Store) {
+class V extends(r = a.ZP.Store) {
   initialize() {
     this.waitFor(f.Z, d.Z);
     let e = s.K.get(y);
@@ -324,8 +324,8 @@ class F extends(r = a.ZP.Store) {
     }
   }
 }
-p(F, "displayName", "SearchStore");
-let Z = new F(l.Z, {
+p(V, "displayName", "SearchStore");
+let Z = new V(l.Z, {
   SEARCH_START: A,
   SEARCH_INDEXING: R,
   SEARCH_FINISH: P,
@@ -335,7 +335,7 @@ let Z = new F(l.Z, {
   SEARCH_SET_SHOW_BLOCKED_RESULTS: U,
   SEARCH_SCREEN_OPEN: x,
   CHANNEL_SELECT: L,
-  CHANNEL_TOGGLE_MEMBERS_SECTION: V,
+  CHANNEL_TOGGLE_MEMBERS_SECTION: F,
   SEARCH_CLEAR_HISTORY: M,
   SEARCH_REMOVE_HISTORY: k,
   SEARCH_ADD_HISTORY: C,

@@ -256,7 +256,7 @@ function B(e) {
   b(a.ZP.createFromServer(t.target_application))
 }
 
-function V(e) {
+function F(e) {
   let {
     storeListing: t
   } = e;
@@ -264,7 +264,7 @@ function V(e) {
   b(a.ZP.createFromServer(t.sku.application))
 }
 
-function F(e) {
+function V(e) {
   let {
     messages: t
   } = e;
@@ -371,8 +371,8 @@ let K = new Y(o.Z, {
   INVITE_RESOLVE_SUCCESS: B,
   GIFT_CODE_RESOLVE_SUCCESS: G,
   LIBRARY_FETCH_SUCCESS: R,
-  STORE_LISTING_FETCH_SUCCESS: V,
-  LOAD_MESSAGES_SUCCESS: F,
+  STORE_LISTING_FETCH_SUCCESS: F,
+  LOAD_MESSAGES_SUCCESS: V,
   APP_RECOMMENDATIONS_FETCH_RECOMMENDATIONS_SUCCESS: w,
   USER_PROFILE_FETCH_SUCCESS: D,
   APP_DM_OPEN: L,

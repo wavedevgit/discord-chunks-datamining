@@ -2,7 +2,7 @@
 "use strict";
 let r, i;
 n.d(t, {
-  Z: () => F
+  Z: () => V
 }), n(388685);
 var o, a = n(392711),
   s = n.n(a),
@@ -175,7 +175,7 @@ function B(e) {
   } = e;
   T(t)
 }
-class V extends(o = l.ZP.Store) {
+class F extends(o = l.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -247,8 +247,8 @@ class V extends(o = l.ZP.Store) {
     return p
   }
 }
-_(V, "displayName", "VoiceStateStore");
-let F = new V(c.Z, {
+_(F, "displayName", "VoiceStateStore");
+let V = new F(c.Z, {
   CONNECTION_OPEN: M,
   CONNECTION_OPEN_SUPPLEMENTAL: k,
   OVERLAY_INITIALIZE: j,
