@@ -44,15 +44,15 @@ let y = e => {
     analyticsContext: a
   } = e, {
     activeVoice: y,
-    mostRecentlyRequestedVoiceId: j
-  } = (0, p.o)(), x = (0, f.z)(t.id), C = t.id === y, I = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !C, O = !C && t.id === j, [E, P] = i.useState(!1);
+    mostRecentlyRequestedVoiceId: x
+  } = (0, p.o)(), j = (0, f.z)(t.id), C = t.id === y, I = !t.available && !t.temporarilyAvailable, N = t.temporarilyAvailable && !n && !C, O = !C && t.id === x, [E, P] = i.useState(!1);
   i.useEffect(() => {
     let e = O ? setTimeout(() => P(O), 200) : void 0;
     return () => {
       clearTimeout(e), P(!1)
     }
   }, [O]);
-  let S = null == x ? void 0 : x.previewSoundURLs,
+  let S = null == j ? void 0 : j.previewSoundURLs,
     [w, T] = i.useState(0),
     {
       isPlaying: L,
@@ -63,19 +63,19 @@ let y = e => {
       soundId: t.id
     }),
     A = v[t.styleKey],
-    M = i.useCallback(() => {
+    W = i.useCallback(() => {
       n || !I ? ((0, _.v6)(y === t.id ? null : t.id, a), N && u.default.track(g.rMx.VOICE_FILTER_LIMITED_TIME_VOICE_SELECTED, b({
         voice_filter_id: t.id
       }, (0, m.w)(a)))) : (0, c.i)()
     }, [n, I, y, t.id, a, N]),
-    W = i.useCallback(() => {
+    F = i.useCallback(() => {
       u.default.track(g.rMx.VOICE_FILTER_PREVIEW_PLAYED, b({
         voice_filter_id: t.id
       }, (0, m.w)(a))), k({
         volume: .5
       }), (.25 > Math.random() || w > 0) && null != S && T(e => (e + 1) % S.length)
     }, [a, k, w, S, t.id]),
-    F = null != x ? h.NW.string(x.name) : "";
+    M = null != j ? h.NW.string(j.name) : "";
   return (0, r.jsxs)("div", {
     className: o()(v.filter, A, {
       [v.selected]: C,
@@ -83,7 +83,7 @@ let y = e => {
     }),
     children: [(0, r.jsxs)(s.P3F, {
       className: v.selector,
-      onClick: M,
+      onClick: W,
       onMouseEnter: D,
       children: [(0, r.jsxs)("div", {
         className: v.iconTreatmentsWrapper,
@@ -94,7 +94,7 @@ let y = e => {
           children: [(0, r.jsx)("img", {
             className: v.thumbnail,
             alt: "",
-            src: null == x ? void 0 : x.iconURL,
+            src: null == j ? void 0 : j.iconURL,
             draggable: !1
           }), (0, r.jsx)("div", {
             className: v.insetBorder
@@ -140,7 +140,7 @@ let y = e => {
         className: v.filterName,
         variant: "text-xs/medium",
         color: t.underDevelopment ? "header-muted" : "header-primary",
-        children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", F]
+        children: [t.underDevelopment ? "\uD83D\uDEA7 " : "", M]
       })]
     }), null != S && (0, r.jsx)(s.ua7, {
       text: h.NW.string(L ? h.t.ItuPbm : h.t["0gtbEx"]),
@@ -150,9 +150,9 @@ let y = e => {
           className: o()([v.hoverButtonCircle, v.previewButton], {
             [v.visible]: L
           }),
-          onClick: L ? Z : W,
+          onClick: L ? Z : F,
           "aria-label": h.NW.formatToPlainString(h.t.gDzvjY, {
-            voiceFilterName: F
+            voiceFilterName: M
           }),
           children: L ? (0, r.jsx)(s.wNq, {
             size: "custom",

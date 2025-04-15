@@ -25,7 +25,7 @@ function b(e) {
   let {
     onClose: n,
     markAsDismissed: b
-  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), j = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? h.NW.string(h.t.jqO5Qk) : null == t ? h.NW.string(h.t.f2qjw8) : h.NW.string(h.t.SblICQ), x = _.ZP.canUseCustomCallSounds(y);
+  } = e, y = (0, i.e7)([u.default], () => u.default.getCurrentUser()), x = (t = null == y ? void 0 : y.premiumType) === p.p9.TIER_2 ? h.NW.string(h.t.jqO5Qk) : null == t ? h.NW.string(h.t.f2qjw8) : h.NW.string(h.t.SblICQ), j = _.ZP.canUseCustomCallSounds(y);
   return (0, r.jsxs)(d.Z, {
     isShown: !0,
     type: d.Y.PREMIUM,
@@ -52,8 +52,8 @@ function b(e) {
       })]
     }), (0, r.jsx)(o.x, {
       variant: "text-sm/normal",
-      children: j
-    }), x ? (0, r.jsx)(a.zx, {
+      children: x
+    }), j ? (0, r.jsx)(a.zx, {
       onClick: function() {
         s.Z.open(m.oAB.VOICE, g.GA), null == n || n(), null == b || b(f.L.PRIMARY)
       },

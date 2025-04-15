@@ -120,27 +120,27 @@ function T(e) {
     }))
   }))
 }
-
-function N(e) {
+async function N(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
   if (!m.Z.isNativeModuleLoaded()) return void I.warn("Voice Filter apply ignored, module not loaded.");
   let n = performance.now();
-  p.ZP.getVoiceFilters().setVoiceFilter({
-    name: e
-  }).then(() => {
-    s.Z.dispatch({
+  try {
+    let r = p.ZP.getVoiceFilters();
+    await r.setVoiceFilter({
+      name: e
+    }), s.Z.dispatch({
       type: "VOICE_FILTER_APPLIED",
       voiceFilterId: e,
       analyticsContext: t,
       activationDurationMs: performance.now() - n
     })
-  }, t => {
+  } catch (t) {
     I.error("failed to set voice filter", t), s.Z.dispatch({
       type: "VOICE_FILTER_APPLY_FAILED",
       voiceFilterId: e,
       error: t
     })
-  })
+  }
 }
 async function A() {
   if (!m.Z.isNativeModuleLoaded()) return void I.info("Voice Filter catalog refresh ignored, module not loaded.");
