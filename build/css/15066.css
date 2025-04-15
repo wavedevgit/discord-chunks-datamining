@@ -1,6 +1,6 @@
 /**
   Module ID: 15066
-  Original File Name: a84f56afeea956d2
+  Original File Name: 63418161dae9472b
 **/
 .left_caab99 {
     transform: rotate(270deg)
@@ -322,6 +322,26 @@
     cursor: pointer
 }
 
+.text__7b750 {
+    display: inline-block
+}
+
+.text__7b750,.text__7b750 a {
+    color: currentColor
+}
+
+.text__7b750 a {
+    text-decoration: underline
+}
+
+.premiumIcon__7b750 {
+    height: 24px;
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+    width: 24px
+}
+
 .notice__36c3e {
     align-items: center;
     display: flex;
@@ -454,26 +474,6 @@
     color: var(--white-500);
     display: inline;
     margin-right: 16px
-}
-
-.text__18089 {
-    display: inline-block
-}
-
-.text__18089,.text__18089 a {
-    color: currentColor
-}
-
-.text__18089 a {
-    text-decoration: underline
-}
-
-.premiumIcon__18089 {
-    height: 24px;
-    margin-right: 8px;
-    position: relative;
-    top: 6px;
-    width: 24px
 }
 
 .container__477aa {
@@ -1290,4 +1290,4 @@ h1.title_feb59c,h2.title_feb59c {
     margin-right: var(--spacing-32)
 }
 
-/*# sourceMappingURL=a84f56afeea956d2.css.map*/
+/*# sourceMappingURL=63418161dae9472b.css.map*/

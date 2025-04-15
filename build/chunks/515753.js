@@ -481,8 +481,7 @@ let eu = 12633 == n.j ? e => {
     {
       voiceChannel: g
     } = (0, N.Z)({
-      userId: c,
-      surface: "private-channel"
+      userId: c
     }),
     p = (0, w.K)({
       location: "PrivateChannel",

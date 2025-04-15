@@ -12,8 +12,8 @@ var r = n(200651),
   c = n(706619),
   d = n(695346),
   h = n(131951),
-  p = n(626135),
-  f = n(572004),
+  f = n(626135),
+  p = n(572004),
   g = n(63063),
   y = n(476221),
   O = n(981631),
@@ -38,12 +38,12 @@ let m = () => {
         }
         return n
       }).filter(e => e.length > 0), null, 2);
-      (0, f.JG)(t, () => (0, s.showToast)((0, s.createToast)(b.NW.string(b.t["t5VZ8/"]), s.ToastType.SUCCESS)))
+      (0, p.JG)(t, () => (0, s.showToast)((0, s.createToast)(b.NW.string(b.t["t5VZ8/"]), s.ToastType.SUCCESS)))
     })
   },
   x = function(e) {
     (0, l.useEffect)(() => {
-      p.default.track(O.rMx.OPEN_POPOUT, {
+      f.default.track(O.rMx.OPEN_POPOUT, {
         type: "RTC Connection"
       })
     }, []);
@@ -105,7 +105,7 @@ let m = () => {
         connectionState: i,
         connectionTypeText: a
       } = e,
-      f = d.Sb.getSetting(),
+      p = d.Sb.getSetting(),
       x = {
         [O.hes.AWAITING_ENDPOINT]: b.NW.format(b.t.Eu2vUV, {
           url: O.yXt.STATUS
@@ -141,7 +141,7 @@ let m = () => {
             color: s.TVs.colors.TEXT_POSITIVE.css,
             className: v.__invalid_icon
           }), a]
-        }), f && h.Z.supports(N.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
+        }), p && h.Z.supports(N.AN.DIAGNOSTICS) && !__OVERLAY__ && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(s.eee, {
             className: o()(v.debugButton, v.textWithIcon),
             onClick: t,
@@ -160,7 +160,7 @@ let m = () => {
               className: v.__invalid_icon
             })]
           })]
-        }), !f && !__OVERLAY__ && (0, r.jsx)(s.eee, {
+        }), !p && !__OVERLAY__ && (0, r.jsx)(s.eee, {
           className: v.debugButton,
           href: g.Z.getArticleURL(O.BhN.VOICE_VIDEO_TROUBLESHOOTING),
           children: b.NW.string(b.t.hvVgAQ)

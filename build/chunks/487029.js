@@ -12,8 +12,8 @@ var r = n(200651),
   c = n(675478),
   d = n(19780),
   h = n(709054),
-  p = n(208049),
-  f = n(763296),
+  f = n(208049),
+  p = n(763296),
   g = n(242291),
   y = n(174470),
   O = n(549771),
@@ -29,11 +29,11 @@ function x(e) {
     width: x,
     height: E,
     keepOpen: C,
-    interactive: I = !0,
-    analyticsSource: j,
+    interactive: j = !0,
+    analyticsSource: I,
     onClose: P
   } = e, S = function(e) {
-    let [t, n] = (0, o.Wu)([f.Z], () => [f.Z.getSounds(), f.Z.getFavorites()]);
+    let [t, n] = (0, o.Wu)([p.Z], () => [p.Z.getSounds(), p.Z.getFavorites()]);
     return l.useMemo(() => {
       let r = [],
         l = [...e, v.X8],
@@ -46,31 +46,31 @@ function x(e) {
         };
       return l.forEach(e => i(e, !0)), l.forEach(e => i(e, !1)), r
     }, [t, n, e])
-  }((0, O.h)(n, !0)), T = (0, y.j)(), w = l.useRef(null), [Z, _] = l.useState(void 0), A = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, O.h)(n, !0)), T = (0, y.j)(), Z = l.useRef(null), [w, _] = l.useState(void 0), A = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: R
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
     (0, g.GN)(e, n.id, R), P()
   }, [R, n.id, P]);
   l.useEffect(() => {
-    p.w(), c.DZ.loadIfNecessary()
+    f.w(), c.DZ.loadIfNecessary()
   }, []), l.useEffect(() => {
     0 === S.length && 0 === T.length && P()
   }, [S.length, T, P]), l.useEffect(() => () => {
-    let e = w.current;
+    let e = Z.current;
     C || null == e || D(e)
   }, [C, D]), (0, u.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
-      source: j,
+      source: I,
       guild_id: t,
       media_session_id: A
     }
   }, {
-    disableTrack: !I
+    disableTrack: !j
   });
   let W = l.useCallback(e => {
-      w.current = e, _(null == e ? void 0 : e.soundId)
+      Z.current = e, _(null == e ? void 0 : e.soundId)
     }, []),
     k = l.useCallback(e => {
       if (null == e) return void W(null);
@@ -83,12 +83,12 @@ function x(e) {
       null != t && D(t)
     }, [S, D]),
     U = l.useMemo(() => S.map(e => (0, r.jsx)(b.ZP, {
-      interactive: I,
+      interactive: j,
       className: m.soundButton,
       sound: e,
-      focused: Z === e.soundId,
+      focused: w === e.soundId,
       channel: n
-    }, e.soundId)), [Z, n, I, S]);
+    }, e.soundId)), [w, n, j, S]);
   return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
     value: R,
     children: (0, r.jsx)(N.Z, {
@@ -97,11 +97,11 @@ function x(e) {
       itemWidth: 96,
       itemHeight: 52,
       showDeadZoneIndicator: !C,
-      activeItem: Z,
+      activeItem: w,
       onItemSelect: k,
       onItemAction: M,
       onClose: P,
-      interactive: I,
+      interactive: j,
       children: U
     })
   })

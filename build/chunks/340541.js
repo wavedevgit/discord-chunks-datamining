@@ -1,10 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  _k: () => o,
-  jW: () => i
+  ZP: () => l,
+  _k: () => s,
+  jW: () => a
 });
-let r = (0, n(818083).B)({
+var r = n(818083),
+  i = n(987338);
+let o = (0, r.B)({
   kind: "user",
   id: "2025-03_invites_refresh",
   label: "Invites Refresh",
@@ -13,6 +16,7 @@ let r = (0, n(818083).B)({
     entrypoints: !1,
     modal: !1
   },
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 1,
     label: "Enabled - Treatment 1 (Full Invites Refresh)",
@@ -40,36 +44,37 @@ let r = (0, n(818083).B)({
   }]
 });
 
-function i(e) {
+function a(e) {
   let {
     location: t
   } = e, {
     enabled: n,
-    entrypoints: i,
-    modal: o
-  } = r.getCurrentConfig({
+    entrypoints: r,
+    modal: i
+  } = o.getCurrentConfig({
     location: t
   });
   return {
     enabled: n,
-    entrypoints: i,
-    modal: o
+    entrypoints: r,
+    modal: i
   }
 }
 
-function o(e) {
+function s(e) {
   let {
     location: t
   } = e, {
     enabled: n,
-    entrypoints: i,
-    modal: o
-  } = r.useExperiment({
+    entrypoints: r,
+    modal: i
+  } = o.useExperiment({
     location: t
   });
   return {
     enabled: n,
-    entrypoints: i,
-    modal: o
+    entrypoints: r,
+    modal: i
   }
 }
+let l = o

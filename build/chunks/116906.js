@@ -45,8 +45,7 @@ function _(e) {
     voiceActivity: A
   } = (0, f.Z)({
     userId: n.id,
-    guildId: O,
-    surface: "user-profile-modal-activity"
+    guildId: O
   }), L = (0, o.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), w = n.id === t.id, R = (0, o.e7)([a.Z, c.Z], () => {
     let e = w ? a.Z.getStatus() : c.Z.getStatus(n.id);
     return e === i.Skl.OFFLINE || e === i.Skl.INVISIBLE

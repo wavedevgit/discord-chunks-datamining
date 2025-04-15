@@ -12,8 +12,8 @@ var r = n(200651),
   c = n(476221),
   d = n(873596),
   h = n(423516),
-  p = n(981631),
-  f = n(683560);
+  f = n(981631),
+  p = n(683560);
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,21 +37,21 @@ function y(e) {
   return e
 }
 let O = {
-    [p.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
-    [p.IE4.BAD]: a.ua7.Colors.RED,
-    [p.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
-    [p.IE4.FINE]: a.ua7.Colors.GREEN
+    [f.IE4.UNKNOWN]: a.ua7.Colors.BLACK,
+    [f.IE4.BAD]: a.ua7.Colors.RED,
+    [f.IE4.AVERAGE]: a.ua7.Colors.YELLOW,
+    [f.IE4.FINE]: a.ua7.Colors.GREEN
   },
   N = {
-    [p.QKv.CONNECTED]: f.rtcConnectionStatusConnected,
-    [p.QKv.CONNECTING]: f.rtcConnectionStatusConnecting,
-    [p.QKv.ERROR]: f.rtcConnectionStatusError
+    [f.QKv.CONNECTED]: p.rtcConnectionStatusConnected,
+    [f.QKv.CONNECTING]: p.rtcConnectionStatusConnecting,
+    [f.QKv.ERROR]: p.rtcConnectionStatusError
   },
   b = {
-    [p.IE4.FINE]: f.rtcConnectionQualityFine,
-    [p.IE4.AVERAGE]: f.rtcConnectionQualityAverage,
-    [p.IE4.BAD]: f.rtcConnectionQualityBad,
-    [p.IE4.UNKNOWN]: null
+    [f.IE4.FINE]: p.rtcConnectionQualityFine,
+    [f.IE4.AVERAGE]: p.rtcConnectionQualityAverage,
+    [f.IE4.BAD]: p.rtcConnectionQualityBad,
+    [f.IE4.UNKNOWN]: null
   };
 class v extends l.PureComponent {
   renderPopoutTarget(e) {
@@ -100,19 +100,19 @@ class v extends l.PureComponent {
       className: s,
       children: u
     } = this.props;
-    return i === p.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
-      text: t !== p.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
+    return i === f.hes.RTC_CONNECTED && (e = (0, r.jsx)(a.ua7, {
+      text: t !== f.IE4.UNKNOWN && null != l ? "".concat(l.toFixed(0), " ms") : null,
       color: O[t],
       children: e => (0, r.jsx)(m, y({
         quality: t,
         smallPing: n
       }, e))
     })), (0, r.jsxs)("div", {
-      className: f.rtcConnectionStatusWrapper,
+      className: p.rtcConnectionStatusWrapper,
       children: [(0, r.jsxs)("div", {
-        className: o()(f.rtcConnectionStatus, b[t], s),
+        className: o()(p.rtcConnectionStatus, b[t], s),
         children: [e, (0, r.jsx)("div", {
-          className: f.labelWrapper,
+          className: p.labelWrapper,
           children: this.renderStatus()
         })]
       }), u]
@@ -157,14 +157,14 @@ function m(e) {
     return l
   }(e, ["quality", "smallPing"]);
   let i = {
-    [p.IE4.FINE]: a.B_b,
-    [p.IE4.AVERAGE]: a.hLg,
-    [p.IE4.BAD]: a.mbS,
-    [p.IE4.UNKNOWN]: a._3e
+    [f.IE4.FINE]: a.B_b,
+    [f.IE4.AVERAGE]: a.hLg,
+    [f.IE4.BAD]: a.mbS,
+    [f.IE4.UNKNOWN]: a._3e
   } [t];
   return (0, r.jsx)(i, y({
-    className: o()(f.ping, {
-      [f.smallPing]: n
+    className: o()(p.ping, {
+      [p.smallPing]: n
     })
   }, l))
 }

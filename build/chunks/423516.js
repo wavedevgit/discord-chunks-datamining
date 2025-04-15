@@ -18,15 +18,15 @@ let d = function(e) {
     text: l,
     hasConnectedChannel: d,
     textVariant: h = "text-md/medium"
-  } = e, p = (0, s.Q3)("RTCConnectionStatusText"), f = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
+  } = e, f = (0, s.Q3)("RTCConnectionStatusText"), p = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
   return (0, r.jsx)(a.Z, {
     className: i()(t, c.hoverableStatus),
-    hoverText: d ? p ? (0, r.jsx)(o.Text, {
+    hoverText: d ? f ? (0, r.jsx)(o.Text, {
       variant: h,
       color: "currentColor",
-      children: f
-    }) : f : null,
-    children: p ? (0, r.jsx)(o.Text, {
+      children: p
+    }) : p : null,
+    children: f ? (0, r.jsx)(o.Text, {
       variant: h,
       color: "currentColor",
       children: l

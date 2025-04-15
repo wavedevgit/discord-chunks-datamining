@@ -1,6 +1,6 @@
 /**
   Module ID: 27978
-  Original File Name: fcae1c925ea19a57
+  Original File Name: d1bf0489c684dd2a
 **/
 .textContainer__2215e {
     padding: 6px 0
@@ -1551,6 +1551,26 @@ html:not(.visual-refresh) .footer__7c901 {
     cursor: pointer
 }
 
+.text__7b750 {
+    display: inline-block
+}
+
+.text__7b750,.text__7b750 a {
+    color: currentColor
+}
+
+.text__7b750 a {
+    text-decoration: underline
+}
+
+.premiumIcon__7b750 {
+    height: 24px;
+    margin-right: 8px;
+    position: relative;
+    top: 6px;
+    width: 24px
+}
+
 .notice__36c3e {
     align-items: center;
     display: flex;
@@ -1683,26 +1703,6 @@ html:not(.visual-refresh) .footer__7c901 {
     color: var(--white-500);
     display: inline;
     margin-right: 16px
-}
-
-.text__18089 {
-    display: inline-block
-}
-
-.text__18089,.text__18089 a {
-    color: currentColor
-}
-
-.text__18089 a {
-    text-decoration: underline
-}
-
-.premiumIcon__18089 {
-    height: 24px;
-    margin-right: 8px;
-    position: relative;
-    top: 6px;
-    width: 24px
 }
 
 .container__477aa {
@@ -2543,4 +2543,4 @@ html:not(.visual-refresh) .footer__7c901 {
     height: 100px
 }
 
-/*# sourceMappingURL=fcae1c925ea19a57.css.map*/
+/*# sourceMappingURL=d1bf0489c684dd2a.css.map*/

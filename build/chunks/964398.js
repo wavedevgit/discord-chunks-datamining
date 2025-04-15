@@ -85,9 +85,9 @@ let h = [{
     x: .05,
     y: .2
   }],
-  p = h.length;
+  f = h.length;
 
-function f(e, t, n) {
+function p(e, t, n) {
   let r = e * t;
   return e > .5 ? r - n : e < .5 ? r : r - n / 2
 }
@@ -113,13 +113,13 @@ let g = (e, t) => {
       interactive: x = !0,
       onClose: E,
       children: C
-    } = e, I = l.useRef(null), j = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
+    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, Z] = l.useState(0), [w, _] = l.useState({
       x: 0,
       y: 0
-    }), A = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = l.useMemo(() => o().chunk(C, p), [C]), D = l.useCallback((e, t) => {
-      null == j.current[T] ? j.current[T] = [] : j.current[T][t] = e
+    }), A = Math.abs(w.x) + Math.abs(w.y) > 0, R = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
+      null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
-      S.current = t, v(p * e + t)
+      S.current = t, v(f * e + t)
     }, [v]), k = l.useCallback(() => {
       S.current = null, v(null)
     }, [v]), M = l.useCallback(e => {
@@ -141,10 +141,10 @@ let g = (e, t) => {
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
     }, []), L = l.useCallback(e => {
-      null != S.current && (e.preventDefault(), e.stopPropagation(), null == m || m(p * T + S.current))
+      null != S.current && (e.preventDefault(), e.stopPropagation(), null == m || m(f * T + S.current))
     }, [m, T]), B = l.useMemo(() => (0, i.throttle)(e => {
-      if (null == I.current) return;
-      let r = I.current.getBoundingClientRect(),
+      if (null == j.current) return;
+      let r = j.current.getBoundingClientRect(),
         l = {
           x: r.left + r.width / 2,
           y: r.top + r.height / 2
@@ -158,22 +158,22 @@ let g = (e, t) => {
         return
       }
       let o = (0, s.ld)(l, i, Math.max(t, n));
-      for (let e = 0; e < j.current[T].length; e++) {
-        let t = j.current[T][e];
+      for (let e = 0; e < I.current[T].length; e++) {
+        let t = I.current[T][e];
         if (null == t) continue;
         let n = t.getBoundingClientRect();
         if ((0, s.Vr)(l, o, n)) return void W(T, e)
       }
       k()
-    }, 16), [b, U, k, W, T, n, t]), V = l.useCallback(e => {
+    }, 16), [b, U, k, W, T, n, t]), G = l.useCallback(e => {
       if (!x) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
-      t >= 0 && t < R.length && (null != S.current && (R[t].length > S.current ? W(t, S.current) : k()), w(t))
-    }, [x, T, R, W, k]), G = l.useMemo(() => R[T].map((e, l) => {
+      t >= 0 && t < R.length && (null != S.current && (R[t].length > S.current ? W(t, S.current) : k()), Z(t))
+    }, [x, T, R, W, k]), V = l.useMemo(() => R[T].map((e, l) => {
       let i = h[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));
-      let o = f(i.x, t, y),
-        a = f(i.y, n, O);
+      let o = p(i.x, t, y),
+        a = p(i.y, n, O);
       return (0, r.jsx)("div", {
         ref: e => D(e, l),
         className: c.chatWheelItem,
@@ -189,10 +189,10 @@ let g = (e, t) => {
     return (0, r.jsx)(a.P3F, {
       className: c.chatWheelMouseInput,
       onMouseMove: B,
-      onWheel: V,
+      onWheel: G,
       onClick: L,
       children: (0, r.jsxs)("div", {
-        ref: I,
+        ref: j,
         className: c.chatWheel,
         style: {
           width: t,
@@ -248,8 +248,8 @@ let g = (e, t) => {
               r: 28.8
             }), A && (0, r.jsx)("circle", {
               className: c.chatWheelCenter,
-              cx: 144 + Z.x,
-              cy: 144 + Z.y,
+              cx: 144 + w.x,
+              cy: 144 + w.y,
               r: 28.8
             })]
           }), N && (0, r.jsx)("circle", {
@@ -273,7 +273,7 @@ let g = (e, t) => {
             className: c.paginationHint,
             children: u.NW.string(u.t["Xy+S09"])
           }) : null]
-        }), G]
+        }), V]
       })
     })
   })

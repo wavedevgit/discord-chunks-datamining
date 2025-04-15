@@ -26,8 +26,7 @@ let d = function(e) {
   }), {
     voiceChannel: m
   } = (0, a.Z)({
-    userId: null == h ? void 0 : h.id,
-    surface: "status-text"
+    userId: null == h ? void 0 : h.id
   }), b = g ? m : void 0;
   return f ? (0, r.jsx)("div", {
     className: u.text,

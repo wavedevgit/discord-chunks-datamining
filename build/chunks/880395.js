@@ -1,12 +1,12 @@
-/** Chunk was on 13368 **/
+/** Chunk was on 87934 **/
 n.d(t, {
-  D: () => l
+  D: () => a
 });
 var r = n(200651);
 n(192379);
-var a = n(239091);
+var i = n(239091);
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,26 +38,26 @@ function o(e, t) {
   }), e
 }
 
-function l(e, t, l, c, s) {
-  let u = l.getGuildId();
-  return null != u ? (0, a.jW)(e, async () => {
+function a(e, t, a, s, c) {
+  let u = a.getGuildId();
+  return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("97589"), n.e("80125"), n.e("42707")]).then(n.bind(n, 357823));
-    return n => (0, r.jsx)(e, o(i({}, n), {
+    return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: l,
+      channel: a,
       guildId: u,
-      onInteraction: e => s("GuildVoiceUserContextMenu", e)
+      onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
-  }, c) : (0, a.jW)(e, async () => {
+  }, s) : (0, i.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("80125"), n.e("47452")]).then(n.bind(n, 238296));
-    return n => (0, r.jsx)(e, o(i({}, n), {
+    return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: l,
-      onInteraction: e => s("BaseVoiceUserContextMenu", e)
+      channel: a,
+      onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
-  }, c)
+  }, s)
 }

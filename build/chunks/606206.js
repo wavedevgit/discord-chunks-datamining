@@ -11,8 +11,8 @@ var l, i = n(442837),
   c = n(592125),
   d = n(430824),
   h = n(293273),
-  p = n(158776),
-  f = n(699516),
+  f = n(158776),
+  p = n(699516),
   g = n(594174),
   y = n(55589),
   O = n(981631);
@@ -60,13 +60,13 @@ function C(e) {
   }), S.emitChange()
 }
 
-function I() {
+function j() {
   v = null, null != r && (r.destroy(), r = null), null != m && m()
 }
 
-function j() {
+function I() {
   let e = null != v && null != v.application_id ? h.Z.getApplicationActivity(v.application_id) : null;
-  if (null != v && (null == e || null == e.party || null == e.party.id)) return I()
+  if (null != v && (null == e || null == e.party || null == e.party.id)) return j()
 }
 class P extends(l = i.ZP.Store) {
   initialize() {
@@ -115,7 +115,7 @@ let S = new P(o.Z, {
               return {
                 type: s.h8.USER,
                 sent: x.includes(t.id),
-                status: p.Z.getStatus(t.id),
+                status: f.Z.getStatus(t.id),
                 data: e
               }
             }
@@ -126,7 +126,7 @@ let S = new P(o.Z, {
               return {
                 type: s.h8.TEXT_CHANNEL,
                 sent: x.includes(t.id),
-                categoryName: null != n ? (0, u.F6)(n, g.default, f.Z) : "",
+                categoryName: null != n ? (0, u.F6)(n, g.default, p.Z) : "",
                 guildName: null != r ? r.toString() : "",
                 data: e
               }
@@ -169,14 +169,14 @@ let S = new P(o.Z, {
         location: "Channel Text Area - Invite to Join Modal"
       }).then(() => C(n))
     },
-    ACTIVITY_INVITE_MODAL_CLOSE: I,
+    ACTIVITY_INVITE_MODAL_CLOSE: j,
     OVERLAY_SET_INPUT_LOCKED: function(e) {
       let {
         locked: t
       } = e;
-      return !!t && null != v && (I(), !0)
+      return !!t && null != v && (j(), !0)
     },
-    LOCAL_ACTIVITY_UPDATE: j,
-    RPC_APP_DISCONNECTED: j
+    LOCAL_ACTIVITY_UPDATE: I,
+    RPC_APP_DISCONNECTED: I
   }),
   T = 12633 == n.j ? S : null

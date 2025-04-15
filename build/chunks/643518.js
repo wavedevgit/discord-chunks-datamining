@@ -36,8 +36,7 @@ function g(e) {
     voiceActivity: O
   } = (0, a.Z)({
     userId: n.id,
-    guildId: g,
-    surface: "use-user-profile-modal-tab-bar-items"
+    guildId: g
   }), Z = n.id === (null == t ? void 0 : t.id), N = (0, r.e7)([l.Z, i.Z], () => {
     let e = Z ? l.Z.getStatus() : i.Z.getStatus(n.id);
     return e === b.Skl.OFFLINE || e === b.Skl.INVISIBLE

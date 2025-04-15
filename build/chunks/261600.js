@@ -1,6 +1,6 @@
 /** Chunk was on 97299 **/
 n.d(t, {
-  U: () => p
+  U: () => f
 });
 var r = n(200651),
   l = n(192379),
@@ -17,11 +17,11 @@ function h(e) {
   let {
     activity: h
   } = e, {
-    channelId: p
-  } = null != (t = (0, u.rq)(h)) ? t : {}, f = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(p), [p]), g = l.useRef(null), y = l.useCallback(() => {
-    let e = a.Z.getChannel(p);
+    channelId: f
+  } = null != (t = (0, u.rq)(h)) ? t : {}, p = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(f), [f]), g = l.useRef(null), y = l.useCallback(() => {
+    let e = a.Z.getChannel(f);
     null != e && s.Cq(e)
-  }, [p]), O = null != (n = null == f ? void 0 : f.topic) ? n : h.name, N = d.NW.formatToPlainString(d.t["T+DNAA"], {
+  }, [f]), O = null != (n = null == p ? void 0 : p.topic) ? n : h.name, N = d.NW.formatToPlainString(d.t["T+DNAA"], {
     channel: O
   });
   return (0, r.jsx)("div", {
@@ -38,7 +38,7 @@ function h(e) {
     })
   })
 }
-class p {
+class f {
   shouldShow(e) {
     return (0, u.JE)(e)
   }

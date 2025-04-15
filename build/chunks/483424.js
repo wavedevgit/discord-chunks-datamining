@@ -31,8 +31,7 @@ function p(e) {
     voiceChannel: v
   } = (0, c.Z)({
     userId: t.id,
-    guildId: h,
-    surface: "user-profile-featured-activity"
+    guildId: h
   }), O = t.id === n.id, I = (0, i.e7)([s.Z, a.Z], () => {
     let e = O ? s.Z.getStatus() : a.Z.getStatus(t.id, h);
     return e === _.Sk.OFFLINE || e === _.Sk.INVISIBLE

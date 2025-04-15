@@ -58,7 +58,7 @@ function R(e) {
     channel: a,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([y.Z], () => y.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
+  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([y.Z], () => y.Z.getNickname(t.id)), N = (0, h.Z)(t.id), Z = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e

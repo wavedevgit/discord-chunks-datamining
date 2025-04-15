@@ -281,8 +281,7 @@ let j = (0, N.Mg)(s.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PADDING),
       voiceChannel: eh
     } = (0, f.Z)({
       userId: es,
-      guildId: G,
-      surface: "member-list-item"
+      guildId: G
     }), {
       voiceActivityStatusEnabled: em
     } = (0, u.U)({

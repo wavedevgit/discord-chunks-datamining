@@ -1,6 +1,6 @@
 /** Chunk was on 97299 **/
 n.d(t, {
-  Z: () => I
+  Z: () => j
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -12,8 +12,8 @@ var r = n(200651),
   c = n(362446),
   d = n(571826),
   h = n(277642),
-  p = n(441894),
-  f = n(160038),
+  f = n(441894),
+  p = n(160038),
   g = n(586646),
   y = n(760373),
   O = n(388032),
@@ -64,7 +64,7 @@ function m(e) {
     pings: c.Z.getPings(),
     outboundLossRate: c.Z.getOutboundLossRate(t)
   }));
-  return (0, r.jsx)(f.Z, v(b({}, o), {
+  return (0, r.jsx)(p.Z, v(b({}, o), {
     closePopout: l,
     connectionTypeText: n
   }))
@@ -82,7 +82,7 @@ function x(e) {
     outboundLossRate: s.Z.getOutboundLossRate(),
     pings: s.Z.getPings()
   }));
-  return (0, r.jsx)(f.Z, v(b({}, l), {
+  return (0, r.jsx)(p.Z, v(b({}, l), {
     closePopout: t,
     connectionTypeText: n
   }))
@@ -94,7 +94,7 @@ function E(e) {
     isOverlay: n,
     lobbyId: l,
     closePopout: i
-  } = e, o = (0, p.J)({
+  } = e, o = (0, f.J)({
     channelId: t
   }) ? O.NW.string(O.t["3BogKS"]) : O.NW.string(O.t.ETIVvr);
   return n ? (0, r.jsx)(m, {
@@ -111,7 +111,7 @@ function C(e) {
   let t = (0, i.e7)([u.Z], () => u.Z.hasVideo(e.channelId)),
     [n, s] = l.useState(y.tu.RTC_DEBUG_PANEL),
     c = (0, a.Dt)(),
-    p = l.useMemo(() => {
+    f = l.useMemo(() => {
       switch (n) {
         case y.tu.RTC_DEBUG_PANEL:
           return (0, r.jsx)(E, b({}, e));
@@ -127,10 +127,10 @@ function C(e) {
       selectedTab: n
     })
   }, [e.channelId, n]);
-  let f = (0, h.r)();
+  let p = (0, h.r)();
   return l.useEffect(() => {
-    f && s(y.tu.RTC_DEBUG_PANEL)
-  }, [f]), (0, r.jsxs)("div", {
+    p && s(y.tu.RTC_DEBUG_PANEL)
+  }, [p]), (0, r.jsxs)("div", {
     className: N.container,
     children: [(0, r.jsx)(o.X6q, {
       className: N.title,
@@ -147,7 +147,7 @@ function C(e) {
         id: y.tu.RTC_DEBUG_PANEL,
         className: N.tabBarItem,
         children: O.NW.string(O.t.MBY1Pj)
-      }), f ? null : (0, r.jsx)(o.njP.Item, {
+      }), p ? null : (0, r.jsx)(o.njP.Item, {
         id: y.tu.RTC_SECURE_FRAMES,
         className: N.tabBarItem,
         children: O.NW.string(O.t.zC6o3t)
@@ -155,13 +155,13 @@ function C(e) {
     }), (0, r.jsx)(o.njP.Panel, {
       id: n,
       "aria-labelledby": c,
-      children: p
+      children: f
     })]
   })
 }
 
-function I(e) {
-  return (0, p.J)({
+function j(e) {
+  return (0, f.J)({
     channelId: e.channelId
   }) ? (0, r.jsx)(C, b({}, e)) : (0, r.jsx)("div", {
     className: N.debugPanelStandalone,

@@ -210,8 +210,7 @@ function Z(e) {
   }), {
     voiceChannel: m
   } = (0, d.Z)({
-    userId: null == n ? void 0 : n.id,
-    surface: "recents-channel-header"
+    userId: null == n ? void 0 : n.id
   }), f = s ? m : void 0;
   return (0, u.Z)({
     activities: a,

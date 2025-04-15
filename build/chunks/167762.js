@@ -122,8 +122,7 @@ let V = c.EFr.SIZE_32,
     }), z = (0, a.JA)("".concat(N)), [Y, H] = r.useState(!1), [B, J] = r.useState({}), K = l.filter(e => e.type === R.IIU.PLAYING && (0, h.Z)(e, R.xjy.JOIN)), X = (0, o.Wu)([x.Z], () => x.Z.getActivities().filter(e => e.type === R.IIU.PLAYING && (0, h.Z)(e, R.xjy.JOIN))), {
       voiceChannel: $
     } = (0, m.Z)({
-      userId: t.id,
-      surface: "friends-popout"
+      userId: t.id
     }), ee = (0, P.K)({
       location: "friends-popout",
       user: t
