@@ -95,17 +95,11 @@ class y extends i.PureComponent {
         giftCode: t,
         sku: n
       } = this.props;
-      (0, O.dM)(t, n);
-      try {
-        (0, j.JG)(e), this.setState({
-          copyMode: c.uA3.SUCCESS
-        })
-      } catch (e) {
-        this.setState({
-          copyMode: c.uA3.ERROR
-        })
-      }
-      this._copyModeTimeout.start(1e3, () => {
+      (0, O.dM)(t, n), (0, j.JG)(e, () => this.setState({
+        copyMode: c.uA3.SUCCESS
+      }), () => this.setState({
+        copyMode: c.uA3.ERROR
+      })), this._copyModeTimeout.start(1e3, () => {
         this.setState({
           copyMode: c.uA3.DEFAULT
         })

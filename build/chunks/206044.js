@@ -97,7 +97,9 @@ let I = (0, a.animated)(d.CJ0),
         questContent: n,
         questContentCTA: h.jZ.COPY_QUEST_URL,
         questContentPosition: o
-      }), (0, g.JG)((0, b.Rs)(t.id)), l(!0), c.current.start(1e3, () => l(!1))
+      }), (0, g.JG)((0, b.Rs)(t.id), () => {
+        l(!0), c.current.start(1e3, () => l(!1))
+      })
     };
     return (0, r.jsx)(d.ua7, {
       forceOpen: a,

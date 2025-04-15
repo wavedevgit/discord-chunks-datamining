@@ -169,7 +169,7 @@ function N(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(E), v(!0)
+        (0, x.JG)(E, () => v(!0))
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -187,7 +187,7 @@ function N(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(w), C(!0)
+        (0, x.JG)(w, () => C(!0))
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -344,7 +344,7 @@ function S(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(O), h(!0)
+        (0, x.JG)(O, () => h(!0))
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",
@@ -362,7 +362,7 @@ function S(e) {
     }), (0, r.jsxs)(c.P3F, {
       className: i()(g.row, g.idRow),
       onClick: () => {
-        (0, x.JG)(T), f(!0)
+        (0, x.JG)(T, () => f(!0))
       },
       children: [(0, r.jsxs)(c.Text, {
         variant: "eyebrow",

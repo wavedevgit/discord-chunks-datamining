@@ -12,8 +12,8 @@ var r, l = n(200651),
   d = n(745510),
   m = n(96698),
   h = n(313201),
-  x = n(433775),
-  g = n(984933),
+  g = n(433775),
+  x = n(984933),
   p = n(430824),
   f = n(971130),
   v = n(981888),
@@ -126,8 +126,8 @@ function M(e) {
     guildEventId: r,
     editBroadcastInfoData: c,
     isEdit: d,
-    formErrors: x,
-    transitionState: g,
+    formErrors: g,
+    transitionState: x,
     loading: p,
     error: f,
     onChange: v,
@@ -137,18 +137,18 @@ function M(e) {
   } = e, O = (0, h.Dt)(), E = i.useRef(n), S = !(0, a.isEqual)(E.current, n), W = i.useMemo(() => [{
     slideId: 0,
     label: D.NW.string(D.t["56QlKS"]),
-    valid: null == x.entity,
-    userErrorMessage: x.entity
+    valid: null == g.entity,
+    userErrorMessage: g.entity
   }, {
     slideId: 1,
     label: D.NW.string(D.t["w5/ntb"]),
-    valid: null == x.schedule && null == x.topic && (!d || S),
-    userErrorMessage: x.schedule
+    valid: null == g.schedule && null == g.topic && (!d || S),
+    userErrorMessage: g.schedule
   }, {
     slideId: 2,
     label: D.NW.string(D.t["8aJzT0"]),
     valid: !0
-  }], [x, d, S]), Z = Object.keys(L).length, k = (0, b.xt)(n), _ = e => Math.max(0, Math.min(e, Z - 1)), [A, z] = i.useState(+!!k), [M, G] = i.useState(!1), V = i.useMemo(() => W.slice(0, A + 1).map(e => e.valid).every(Boolean), [W, A]), F = A >= W.length ? 3 : W[_(A)].slideId, X = 3 === F;
+  }], [g, d, S]), Z = Object.keys(L).length, k = (0, b.xt)(n), _ = e => Math.max(0, Math.min(e, Z - 1)), [A, z] = i.useState(+!!k), [M, G] = i.useState(!1), V = i.useMemo(() => W.slice(0, A + 1).map(e => e.valid).every(Boolean), [W, A]), F = A >= W.length ? 3 : W[_(A)].slideId, X = 3 === F;
   (0, C.l)(e => e.onUpdateCanCloseModal)(X);
   let B = (0, s.e7)([u.Z], () => u.Z.useReducedMotion),
     Y = i.useRef(null),
@@ -169,7 +169,7 @@ function M(e) {
     },
     Q = D.NW.string(D.t.PDTjLC);
   return 2 === F && (Q = d ? D.NW.string(D.t.e5VEcH) : D.NW.string(D.t["60lJ0N"])), (0, l.jsxs)(o.Y0X, {
-    transitionState: g,
+    transitionState: x,
     "aria-labelledby": O,
     size: o.CgR.DYNAMIC,
     children: [!B && X ? (0, l.jsx)(U, {
@@ -194,7 +194,7 @@ function M(e) {
           children: (0, l.jsx)(P.Z, {
             guildId: t,
             guildEvent: n,
-            validationErrorMessage: x.entity,
+            validationErrorMessage: g.entity,
             isSlideReady: M,
             onChange: v
           })
@@ -207,7 +207,7 @@ function M(e) {
             editBroadcastInfoData: c,
             onChange: v,
             error: f,
-            validationErrorMessage: x.schedule,
+            validationErrorMessage: g.schedule,
             isSlideReady: M
           })
         }), (0, l.jsx)(o.Mi4, {
@@ -258,7 +258,7 @@ function G(e) {
     guildScheduledEventId: r,
     transitionState: a,
     onClose: u
-  } = e, d = (0, s.e7)([p.Z], () => p.Z.getGuild(t)), m = (0, s.e7)([b.ZP], () => b.ZP.getGuildScheduledEvent(r), [r]), h = (0, s.e7)([g.ZP], () => g.ZP.getDefaultChannel(t), [t]), f = (0, O.j$)(m, h), [C, P] = i.useState(f), [I] = i.useState((0, O.Ql)(m)), [T, w] = i.useState(null), R = e => {
+  } = e, d = (0, s.e7)([p.Z], () => p.Z.getGuild(t)), m = (0, s.e7)([b.ZP], () => b.ZP.getGuildScheduledEvent(r), [r]), h = (0, s.e7)([x.ZP], () => x.ZP.getDefaultChannel(t), [t]), f = (0, O.j$)(m, h), [C, P] = i.useState(f), [I] = i.useState((0, O.Ql)(m)), [T, w] = i.useState(null), R = e => {
     var t;
     let n = (0, y.so)(e),
       r = null != (t = e.channel_id) ? t : null == h ? void 0 : h.id;
@@ -266,7 +266,7 @@ function G(e) {
       max_age: A.value,
       max_uses: z.value
     }, k.t4x.GUILD_EVENTS), n ? w(e) : u()
-  }, L = (0, x.Z)(d, null == m ? void 0 : m.id, C), [U, {
+  }, L = (0, g.Z)(d, null == m ? void 0 : m.id, C), [U, {
     loading: G,
     error: V
   }] = (0, v.Z)(async () => {

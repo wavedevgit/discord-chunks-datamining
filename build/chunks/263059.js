@@ -65,32 +65,32 @@ function M(e) {
     profileGuildId: M,
     className: k,
     onClose: j
-  } = e, {
-    profileType: U
-  } = (0, O.z)(), G = {
-    [D.fullSize]: U === w.y0.FULL_SIZE
+  } = e, U = i.useRef(null), {
+    profileType: G
+  } = (0, O.z)(), B = {
+    [D.fullSize]: G === w.y0.FULL_SIZE
   }, {
-    interactionSource: B,
-    interactionSourceId: V
-  } = (0, b.Xo)(), F = (0, _.Z)({
+    interactionSource: V,
+    interactionSourceId: F
+  } = (0, b.Xo)(), Z = (0, _.Z)({
     activity: L,
     user: n
-  }), Z = (0, g.Z)(L), {
-    largeImage: H
+  }), H = (0, g.Z)(L), {
+    largeImage: W
   } = (0, d.FO)(L), {
-    analyticsLocations: W
-  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), Y = (0, h.Z)({
+    analyticsLocations: Y
+  } = (0, u.ZP)(c.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), K = (0, h.Z)({
     display: "live",
     user: n,
     activity: L,
-    entry: F,
-    analyticsLocations: W
-  }), K = (0, m.Z)({
+    entry: Z,
+    analyticsLocations: Y
+  }), z = (0, m.Z)({
     userId: n.id,
-    onAction: Y
+    onAction: K
   });
   if (!(0, l.Z)(L)) return null;
-  let z = () => {
+  let q = () => {
       var e, t;
       let o = null != (t = null == (e = L.state) ? void 0 : e.split(";")) ? t : [];
       return 0 === o.length ? null : null == L.sync_id ? (0, r.jsx)(A.Z, {
@@ -102,7 +102,7 @@ function M(e) {
           children: [(0, r.jsx)(s.P3F, {
             className: a()(D.clickableText, D.inline),
             onClick: e => {
-              e.stopPropagation(), Y({
+              e.stopPropagation(), K({
                 action: "OPEN_SPOTIFY_ARTIST"
               }), (0, p.d$)(L, n.id, t)
             },
@@ -111,7 +111,7 @@ function M(e) {
         }, t))
       })
     },
-    q = () => {
+    Q = () => {
       let {
         timestamps: e
       } = L;
@@ -125,65 +125,67 @@ function M(e) {
         end: n
       })
     },
-    Q = () => n.id === o.id ? null : (0, r.jsx)("div", {
-      className: a()(D.actions, G),
+    X = () => n.id === o.id ? null : (0, r.jsx)("div", {
+      className: a()(D.actions, B),
       children: (0, r.jsx)(R.Z, {
         user: n,
         activity: L,
-        onAction: Y
+        onAction: K
       })
     });
-  if (null === U) return null;
-  let X = null != (t = L.application_id) ? t : L.name,
-    J = B === w.n_.ACTIVITY && V === X;
+  if (null === G) return null;
+  let J = null != (t = L.application_id) ? t : L.name,
+    $ = V === w.n_.ACTIVITY && F === J;
   return (0, r.jsx)(u.Gt, {
-    value: W,
+    value: Y,
     children: (0, r.jsx)(I.Z, {
+      targetElementRef: U,
       sourceType: w.n_.ACTIVITY,
       user: n,
       children: (0, r.jsx)(y.Z, {
         user: n,
         guildId: M,
-        profileType: U,
-        sourceId: X,
-        sourceDetails: null == F ? (0, E.Z)(L) : null,
-        entry: F,
+        profileType: G,
+        sourceId: J,
+        sourceDetails: null == Z ? (0, E.Z)(L) : null,
+        entry: Z,
         sourceType: w.n_.ACTIVITY,
-        onAction: Y,
+        onAction: K,
         children: () => (0, r.jsx)(v.Z, {
+          ref: U,
           user: n,
           className: D.toolbarContainer,
           sourceType: w.n_.ACTIVITY,
-          interactionSourceId: X,
-          onAction: Y,
-          onShowToolbar: () => Y({
+          interactionSourceId: J,
+          onAction: K,
+          onShowToolbar: () => K({
             action: "HOVER_ACTIVITY_CARD"
           }),
           renderMoreButtonPopout: e => (0, r.jsx)(P.Z, {
             display: "live",
             user: n,
             activity: L,
-            entry: F,
+            entry: Z,
             onClose: j,
             children: e
           }),
           children: (0, r.jsxs)(T.Z, {
-            ref: K,
+            ref: z,
             className: a()(k, {
-              [D.hoisted]: J
+              [D.hoisted]: $
             }),
-            onAction: Y,
+            onAction: K,
             onClose: j,
-            children: [(0, r.jsx)(N.Z, x({}, Z)), (0, r.jsx)("div", {
+            children: [(0, r.jsx)(N.Z, x({}, H)), (0, r.jsx)("div", {
               className: D.body,
               children: (0, r.jsxs)("div", {
-                className: a()(D.content, G),
+                className: a()(D.content, B),
                 children: [(0, r.jsx)(f.E, {
-                  image: H,
+                  image: W,
                   size: f.J.SIZE_60,
                   className: D.clickableImage,
                   onClick: e => {
-                    e.stopPropagation(), Y({
+                    e.stopPropagation(), K({
                       action: "OPEN_SPOTIFY_ALBUM"
                     }), (0, p.Z5)(L, n.id)
                   }
@@ -194,19 +196,19 @@ function M(e) {
                       variant: "heading-sm/semibold",
                       text: L.details,
                       onClick: () => {
-                        Y({
+                        K({
                           action: "OPEN_SPOTIFY_TRACK"
                         }), (0, p.aG)(L)
                       }
-                    }), z()]
+                    }), q()]
                   }), (0, r.jsx)(S.Z, {
                     user: n,
                     activity: L,
                     className: D.badges
-                  }), q()]
-                }), U === w.y0.FULL_SIZE && Q()]
+                  }), Q()]
+                }), G === w.y0.FULL_SIZE && X()]
               })
-            }), U !== w.y0.FULL_SIZE && Q()]
+            }), G !== w.y0.FULL_SIZE && X()]
           })
         })
       })

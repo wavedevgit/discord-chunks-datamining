@@ -225,7 +225,9 @@ function v(e) {
     look: a.zxk.Looks.LINK,
     color: a.zxk.Colors.LINK,
     onClick: function() {
-      (0, h.JG)(t), n(), i(!0)
+      (0, h.JG)(t, () => {
+        n(), i(!0)
+      })
     },
     innerClassName: j.copyButton,
     children: [s ? (0, r.jsx)(a.owK, {

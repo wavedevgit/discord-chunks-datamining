@@ -1,4 +1,4 @@
-/** Chunk was on 86797 **/
+/** Chunk was on 56811 **/
 e.exports = {
   emoji: "emoji_e85ed6"
 }

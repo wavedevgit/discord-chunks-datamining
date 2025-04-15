@@ -1,22 +1,22 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => y
+  Z: () => v
 });
-var r = n(200651);
-n(192379);
-var i = n(120356),
-  o = n.n(i),
-  a = n(785717),
-  s = n(510659),
-  l = n(899007),
-  c = n(287954),
-  u = n(660579),
-  d = n(64621),
-  f = n(228168),
-  _ = n(487784);
+var r = n(200651),
+  i = n(192379),
+  o = n(120356),
+  a = n.n(o),
+  s = n(785717),
+  l = n(510659),
+  c = n(899007),
+  u = n(287954),
+  d = n(660579),
+  f = n(64621),
+  _ = n(228168),
+  p = n(487784);
 
-function p(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -25,20 +25,20 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      p(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function m(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,15 +49,15 @@ function m(e, t) {
   return n
 }
 
-function g(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function E(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = b(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var o = Object.getOwnPropertySymbols(e);
     for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +65,7 @@ function E(e, t) {
   return i
 }
 
-function b(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     o = Object.keys(e);
@@ -73,48 +73,51 @@ function b(e, t) {
   return i
 }
 
-function y(e) {
+function v(e) {
   var {
     user: t,
     profileType: n,
-    animateOnHover: i,
-    onOpenProfile: p
-  } = e, m = E(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
-  let b = f.n_.AVATAR,
+    animateOnHover: o,
+    onOpenProfile: h
+  } = e, g = b(e, ["user", "profileType", "animateOnHover", "onOpenProfile"]);
+  let y = i.useRef(null),
+    v = _.n_.AVATAR,
     {
-      trackUserProfileAction: y
-    } = (0, a.KZ)(),
+      trackUserProfileAction: O
+    } = (0, s.KZ)(),
     {
-      interactionSource: v
-    } = (0, s.Xo)(),
-    O = o()(_.avatar, {
-      [_.hoisted]: v === f.n_.AVATAR || v === f.n_.STATUS,
-      [_.biteSize]: n === f.y0.BITE_SIZE,
-      [_.fullSize]: n === f.y0.FULL_SIZE,
-      [_.panel]: n === f.y0.PANEL
+      interactionSource: I
+    } = (0, l.Xo)(),
+    S = a()(p.avatar, {
+      [p.hoisted]: I === _.n_.AVATAR || I === _.n_.STATUS,
+      [p.biteSize]: n === _.y0.BITE_SIZE,
+      [p.fullSize]: n === _.y0.FULL_SIZE,
+      [p.panel]: n === _.y0.PANEL
     });
-  return (0, r.jsx)(d.Z, {
-    sourceType: f.n_.AVATAR,
+  return (0, r.jsx)(f.Z, {
+    targetElementRef: y,
+    sourceType: _.n_.AVATAR,
     user: t,
-    children: (0, r.jsx)(c.Z, g(h({
+    children: (0, r.jsx)(u.Z, E(m({
       user: t,
-      className: O,
+      className: S,
       profileType: n,
-      sourceType: b,
-      onAction: y
-    }, m), {
-      children: () => (0, r.jsx)(u.Z, {
-        className: O,
+      sourceType: v,
+      onAction: O
+    }, g), {
+      children: () => (0, r.jsx)(d.Z, {
+        ref: y,
+        className: S,
         user: t,
-        sourceType: b,
-        onAction: y,
-        children: (0, r.jsx)(l.Z, h({
+        sourceType: v,
+        onAction: O,
+        children: (0, r.jsx)(c.Z, m({
           user: t,
-          animateOnHover: i,
-          onOpenProfile: p,
+          animateOnHover: o,
+          onOpenProfile: h,
           profileType: n,
-          className: _.withReactReply
-        }, m))
+          className: p.withReactReply
+        }, g))
       })
     }))
   })

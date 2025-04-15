@@ -14,8 +14,8 @@ var r = n(200651),
   d = n(914010),
   m = n(246946),
   h = n(626135),
-  x = n(630388),
-  g = n(971130),
+  g = n(630388),
+  x = n(971130),
   p = n(530436),
   f = n(245335),
   v = n(981631),
@@ -85,8 +85,8 @@ let N = o.ZP.connectStores([m.Z], () => ({
           className: j.divider
         }), (0, r.jsx)(c.j7V, {
           className: j.toggle,
-          value: (0, x.yE)(_, s.$.IS_APPLICATION_BYPASS),
-          onChange: e => O((0, x.mB)(_, s.$.IS_APPLICATION_BYPASS, e)),
+          value: (0, g.yE)(_, s.$.IS_APPLICATION_BYPASS),
+          onChange: e => O((0, g.mB)(_, s.$.IS_APPLICATION_BYPASS, e)),
           disabled: w,
           hideBorder: !0,
           children: (0, r.jsxs)("div", {
@@ -123,7 +123,7 @@ let N = o.ZP.connectStores([m.Z], () => ({
       }), n || R ? null : (0, r.jsxs)(c.Text, {
         variant: "text-xs/normal",
         className: a()(y.marginTop8, j.footerText),
-        children: [(0, g.Vg)(Z, k), " ", i ? (0, r.jsx)(c.eee, {
+        children: [(0, x.Vg)(Z, k), " ", i ? (0, r.jsx)(c.eee, {
           onClick: () => S(f.RV.SETTINGS),
           children: b.NW.string(b.t.VNe8Pz)
         }) : null]

@@ -1,23 +1,23 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 18437 **/
 n.d(t, {
   I6: () => f,
   V9: () => S,
-  Z6: () => j,
-  jp: () => N,
+  Z6: () => p,
+  jp: () => O,
   r5: () => d,
-  vT: () => c,
+  vT: () => s,
   vh: () => E,
-  yU: () => O
+  yU: () => j
 }), n(388685), n(997841), n(415506);
 var r, l, i = n(192379),
   a = n(467319),
   u = n(676317),
   o = n(273504),
-  s = n(388032),
-  c = ((r = {}).NEW = "new", r.RECOMMENDED = "recommended", r.BETA = "beta", r.ALPHA = "alpha", r);
+  c = n(388032),
+  s = ((r = {}).NEW = "new", r.RECOMMENDED = "recommended", r.BETA = "beta", r.ALPHA = "alpha", r);
 let f = {
   [o.fX.SPAM_LINK]: {
-    getDefaultRuleName: () => s.NW.string(s.t.ffR2cH),
+    getDefaultRuleName: () => c.NW.string(c.t.ffR2cH),
     type: o.fX.SPAM_LINK,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 0,
@@ -26,7 +26,7 @@ let f = {
     defaultActionTypes: new Set
   },
   [o.fX.KEYWORD]: {
-    getDefaultRuleName: () => s.NW.string(s.t.ffR2cH),
+    getDefaultRuleName: () => c.NW.string(c.t.ffR2cH),
     type: o.fX.KEYWORD,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 6,
@@ -35,7 +35,7 @@ let f = {
     defaultActionTypes: new Set([o.jj.BLOCK_MESSAGE])
   },
   [o.fX.ML_SPAM]: {
-    getDefaultRuleName: () => s.NW.string(s.t["puF/Oj"]),
+    getDefaultRuleName: () => c.NW.string(c.t["puF/Oj"]),
     type: o.fX.ML_SPAM,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -44,7 +44,7 @@ let f = {
     defaultActionTypes: new Set([o.jj.BLOCK_MESSAGE])
   },
   [o.fX.DEFAULT_KEYWORD_LIST]: {
-    getDefaultRuleName: () => s.NW.string(s.t.LnGhZm),
+    getDefaultRuleName: () => c.NW.string(c.t.LnGhZm),
     type: o.fX.DEFAULT_KEYWORD_LIST,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -53,7 +53,7 @@ let f = {
     defaultActionTypes: new Set([o.jj.BLOCK_MESSAGE])
   },
   [o.fX.MENTION_SPAM]: {
-    getDefaultRuleName: () => s.NW.string(s.t.pX7i6u),
+    getDefaultRuleName: () => c.NW.string(c.t.pX7i6u),
     type: o.fX.MENTION_SPAM,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -62,7 +62,7 @@ let f = {
     defaultActionTypes: new Set([o.jj.BLOCK_MESSAGE])
   },
   [o.fX.USER_PROFILE]: {
-    getDefaultRuleName: () => s.NW.string(s.t.q1L2v7),
+    getDefaultRuleName: () => c.NW.string(c.t.q1L2v7),
     type: o.fX.USER_PROFILE,
     eventType: o.q4.GUILD_MEMBER_JOIN_OR_UPDATE,
     perGuildMaxCount: 1,
@@ -71,7 +71,7 @@ let f = {
     defaultActionTypes: new Set([o.jj.QUARANTINE_USER])
   },
   [o.fX.SERVER_POLICY]: {
-    getDefaultRuleName: () => s.NW.string(s.t.ZQr92N),
+    getDefaultRuleName: () => c.NW.string(c.t.ZQr92N),
     type: o.fX.SERVER_POLICY,
     eventType: o.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -91,7 +91,7 @@ function S(e) {
   return Array.from(f[e].availableActionTypes)
 }
 
-function O(e, t) {
+function j(e, t) {
   let {
     id: n,
     eventType: r,
@@ -103,7 +103,7 @@ function O(e, t) {
   if (r !== a.eventType) throw Error("You have provided an event type that is not available for this trigger type")
 }
 
-function j(e) {
+function p(e) {
   let t = (0, u.oA)(e);
   return i.useMemo(() => Object.keys(g).reduce((e, n) => {
     let r = g[n].filter(e => e.type !== o.fX.SERVER_POLICY && (e.type !== o.fX.USER_PROFILE || !!t) && e.perGuildMaxCount > 0).map(e => e.type);
@@ -114,7 +114,7 @@ function j(e) {
   }), [t])
 }
 
-function N(e, t) {
+function O(e, t) {
   let n = (0, a.H)(t);
   switch (e) {
     case o.fX.DEFAULT_KEYWORD_LIST:

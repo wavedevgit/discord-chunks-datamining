@@ -447,8 +447,8 @@ class ed extends i.PureComponent {
       var e;
       let {
         location: t
-      } = this.props;
-      (0, G.JG)((e = t.pathname, "".concat(location.protocol, "//").concat(location.host).concat(e))), this.setState({
+      } = this.props, n = (e = t.pathname, "".concat(location.protocol, "//").concat(location.host).concat(e));
+      (0, G.JG)(n, () => this.setState({
         showLinkCopied: !0
       }, () => {
         this.showCopyLinkTextTimeout.start(1500, () => {
@@ -456,7 +456,7 @@ class ed extends i.PureComponent {
             showLinkCopied: !1
           })
         })
-      })
+      }))
     }), es(this, "handleCreateInstantInvite", () => {
       let {
         channel: e,

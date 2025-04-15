@@ -109,7 +109,9 @@ function en(e) {
     copyText: n,
     copyFeedbackText: r
   } = e, [a, l] = s.useState(!1), [o, c] = s.useState(!1), d = () => {
-    (0, W.JG)(t), c(!0), l(!0)
+    (0, W.JG)(t, () => {
+      c(!0), l(!0)
+    })
   };
   return (0, i.jsx)(g.ua7, {
     forceOpen: o,

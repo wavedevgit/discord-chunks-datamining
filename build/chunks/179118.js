@@ -60,13 +60,7 @@ function M(e) {
     null != o && (0, N.dM)(new v.Z({
       code: t,
       maxUses: 1
-    }), o);
-    try {
-      (0, T.JG)(e), S(u.kO8.Modes.SUCCESS)
-    } catch (e) {
-      S(u.kO8.Modes.ERROR)
-    }
-    setTimeout(() => {
+    }), o), (0, T.JG)(e, () => S(u.kO8.Modes.SUCCESS), () => S(u.kO8.Modes.ERROR)), setTimeout(() => {
       S(u.kO8.Modes.DEFAULT)
     }, x)
   }, z = () => {

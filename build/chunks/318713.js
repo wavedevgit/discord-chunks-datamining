@@ -6,8 +6,8 @@ var n = r(200651);
 r(192379);
 var l = r(120356),
   i = r.n(l),
-  a = r(481060),
-  o = r(55935),
+  o = r(481060),
+  a = r(55935),
   c = r(543388),
   s = r(223021),
   u = r(388032),
@@ -18,8 +18,8 @@ function p(e) {
   let {
     tooltipProps: l,
     timeFormatted: i,
-    children: a,
-    compact: o,
+    children: o,
+    compact: a,
     timestamp: c,
     id: s
   } = e;
@@ -43,12 +43,12 @@ function p(e) {
   }({}, l), r = r = {
     id: s,
     dateTime: c.toISOString(),
-    children: null != a ? a : (0, n.jsxs)(n.Fragment, {
+    children: null != o ? o : (0, n.jsxs)(n.Fragment, {
       children: [(0, n.jsx)("i", {
         className: m.separator,
         "aria-hidden": !0,
-        children: o ? "[" : " — "
-      }), i, o && (0, n.jsxs)("i", {
+        children: a ? "[" : " — "
+      }), i, a && (0, n.jsxs)("i", {
         className: m.separator,
         "aria-hidden": !0,
         children: ["]", " "]
@@ -79,7 +79,7 @@ let d = function(e) {
     isEdited: j = !1,
     application: v,
     tooltipPosition: h
-  } = e, x = new Date(d), P = (0, o.Hg)(x), S = null != f ? (0, o.vc)(x, f) : l ? (0, o.vc)(x, "LT") : (0, o.Y4)(x, !0), N = l ? (0, s.Z)(S) : null, w = j ? u.NW.formatToPlainString(u.t.CDzOFR, {
+  } = e, x = new Date(d), P = (0, a.Hg)(x), S = null != f ? (0, a.vc)(x, f) : l ? (0, a.vc)(x, "LT") : (0, a.Y4)(x, !0), N = l ? (0, s.Z)(S) : null, w = j ? u.NW.formatToPlainString(u.t.CDzOFR, {
     timeFormatted: P
   }) : P;
   return (0, n.jsx)("span", {
@@ -89,8 +89,8 @@ let d = function(e) {
       [m.timestampInline]: g,
       [m.alt]: y
     }),
-    children: null == v ? (0, n.jsx)(a.ua7, {
-      text: (0, o.vc)(x, "LLLL"),
+    children: null == v ? (0, n.jsx)(o.ua7, {
+      text: (0, a.vc)(x, "LLLL"),
       "aria-label": w,
       tooltipClassName: m.timestampTooltip,
       position: h,

@@ -18,8 +18,8 @@ function o(e) {
       multiple: d = !1,
       disabled: m = !1,
       submitting: h = !1,
-      maxFileSizeBytes: x,
-      filters: g,
+      maxFileSizeBytes: g,
+      filters: x,
       className: p
     } = e,
     f = function(e, t) {
@@ -82,8 +82,8 @@ function o(e) {
         onChange: o,
         onFileSizeError: c,
         multiple: d,
-        maxFileSizeBytes: x,
-        filters: g,
+        maxFileSizeBytes: g,
+        filters: x,
         "aria-label": null != u ? u : l,
         disabled: m
       })]

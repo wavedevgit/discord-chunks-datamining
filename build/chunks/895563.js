@@ -1,111 +1,111 @@
-/** Chunk was on 86797 **/
-n.d(t, {
-  P: () => g,
-  l: () => p
-}), n(388685);
-var i = n(200651);
-n(192379);
-var r = n(392711),
-  a = n.n(r),
-  l = n(442837),
-  o = n(481060),
-  d = n(984933),
-  u = n(853856),
-  s = n(117984),
-  c = n(593214),
-  f = n(362658),
-  h = n(981631),
-  v = n(388032);
+/** Chunk was on 56811 **/
+t.d(n, {
+  P: () => b,
+  l: () => y
+}), t(388685);
+var i = t(200651);
+t(192379);
+var r = t(392711),
+  a = t.n(r),
+  o = t(442837),
+  l = t(481060),
+  d = t(984933),
+  c = t(853856),
+  u = t(117984),
+  s = t(593214),
+  f = t(362658),
+  h = t(981631),
+  v = t(388032);
 
-function b(e, t) {
-  return e.type === h.d4z.GROUP_DM ? t ? v.NW.string(v.t["0BWmSE"]) : v.NW.string(v.t.uuVTOD) : e.type === h.d4z.DM ? t ? v.NW.string(v.t["2wfKGh"]) : v.NW.string(v.t.wPbAsb) : t ? v.NW.string(v.t.Bou7lZ) : v.NW.string(v.t["4wcdEx"])
+function p(e, n) {
+  return e.type === h.d4z.GROUP_DM ? n ? v.NW.string(v.t["0BWmSE"]) : v.NW.string(v.t.uuVTOD) : e.type === h.d4z.DM ? n ? v.NW.string(v.t["2wfKGh"]) : v.NW.string(v.t.wPbAsb) : n ? v.NW.string(v.t.Bou7lZ) : v.NW.string(v.t["4wcdEx"])
 }
 
-function p(e) {
-  let t = (0, l.e7)([d.ZP], () => d.ZP.getChannels(h.I_8))[h.d4z.GUILD_CATEGORY],
+function y(e) {
+  let n = (0, o.e7)([d.ZP], () => d.ZP.getChannels(h.I_8))[h.d4z.GUILD_CATEGORY],
     {
-      isFavoritesPerk: n
+      isFavoritesPerk: t
     } = (0, f.z)("58e21a_1"),
     {
       notifyFavoriteAdded: r
-    } = (0, c.up)();
-  if (!(0, c.li)(e)) return null;
+    } = (0, s.up)();
+  if (!(0, s.li)(e)) return null;
   let [
-    [u], v
-  ] = a().partition(t, e => "null" === e.channel.id);
+    [c], v
+  ] = a().partition(n, e => "null" === e.channel.id);
 
-  function p(t) {
-    r(), (0, s.kj)(e.id, t)
+  function y(n) {
+    r(), (0, u.kj)(e.id, n)
   }
-  return 0 === v.length ? (0, i.jsx)(o.sNh, {
+  return 0 === v.length ? (0, i.jsx)(l.sNh, {
     id: "favorite-channel",
-    label: b(e, !1),
-    action: () => p(null)
-  }) : (0, i.jsxs)(o.sNh, {
+    label: p(e, !1),
+    action: () => y(null)
+  }) : (0, i.jsxs)(l.sNh, {
     id: "favorite-channel",
-    label: b(e, !1),
-    action: () => p(null),
-    children: [n && (0, i.jsx)(o.kSQ, {
-      children: (0, i.jsx)(o.sNh, {
-        id: "favorite-".concat(u.channel.id),
-        label: u.channel.name,
-        action: () => p("null" === u.channel.id ? null : u.channel.id)
-      }, u.channel.id)
-    }), (0, i.jsx)(o.kSQ, {
-      children: v.map(e => (0, i.jsx)(o.sNh, {
+    label: p(e, !1),
+    action: () => y(null),
+    children: [t && (0, i.jsx)(l.kSQ, {
+      children: (0, i.jsx)(l.sNh, {
+        id: "favorite-".concat(c.channel.id),
+        label: c.channel.name,
+        action: () => y("null" === c.channel.id ? null : c.channel.id)
+      }, c.channel.id)
+    }), (0, i.jsx)(l.kSQ, {
+      children: v.map(e => (0, i.jsx)(l.sNh, {
         id: "favorite-".concat(e.channel.id),
         label: e.channel.name,
-        action: () => p(e.channel.id)
+        action: () => y(e.channel.id)
       }, e.channel.id))
     })]
   })
 }
 
-function g(e) {
-  let t = (0, l.e7)([u.Z], () => u.Z.isFavorite(e.id));
-  return __OVERLAY__ || !t ? null : (0, i.jsx)(o.sNh, {
+function b(e) {
+  let n = (0, o.e7)([c.Z], () => c.Z.isFavorite(e.id));
+  return __OVERLAY__ || !n ? null : (0, i.jsx)(l.sNh, {
     id: "favorite-channel",
-    label: b(e, !0),
+    label: p(e, !0),
     color: "danger",
-    action: () => e.type === h.d4z.GUILD_CATEGORY ? (0, o.ZDy)(async () => {
+    action: () => e.type === h.d4z.GUILD_CATEGORY ? (0, l.ZDy)(async () => {
       let {
-        default: t
-      } = await n.e("37720").then(n.bind(n, 357632));
-      return n => {
+        default: n
+      } = await t.e("37720").then(t.bind(t, 357632));
+      return t => {
         var r, a;
-        return (0, i.jsx)(t, (r = function(e) {
-          for (var t = 1; t < arguments.length; t++) {
-            var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
+        return (0, i.jsx)(n, (r = function(e) {
+          for (var n = 1; n < arguments.length; n++) {
+            var t = null != arguments[n] ? arguments[n] : {},
+              i = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), i.forEach(function(n) {
               var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
+              i = t[n], n in e ? Object.defineProperty(e, n, {
                 value: i,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = i
+              }) : e[n] = i
             })
           }
           return e
-        }({}, n), a = a = {
+        }({}, t), a = a = {
           onConfirm: () => {
-            n.onClose(), (0, s.oC)(e.id)
+            t.onClose(), (0, u.oC)(e.id)
           },
           channel: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-          var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
+          var t = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var i = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, i)
+            t.push.apply(t, i)
           }
-          return n
+          return t
         })(Object(a)).forEach(function(e) {
           Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
         }), r))
       }
-    }) : (0, s.oC)(e.id)
+    }) : (0, u.oC)(e.id)
   })
 }

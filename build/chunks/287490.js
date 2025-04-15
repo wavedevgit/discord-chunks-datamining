@@ -64,11 +64,13 @@ function N(e) {
     let [t, n] = e;
     return "".concat(new Date(n).toLocaleString(), " (").concat(t, ")")
   })), S = i.useCallback(e => {
-    (0, g.JG)((0, c.sZ)(s)) && ((0, o.showToast)({
-      id: "experiment-link-copied",
-      message: "Copied experiment link",
-      type: o.ToastType.SUCCESS
-    }), e.preventDefault(), e.stopPropagation())
+    (0, g.JG)((0, c.sZ)(s), () => {
+      (0, o.showToast)({
+        id: "experiment-link-copied",
+        message: "Copied experiment link",
+        type: o.ToastType.SUCCESS
+      }), e.preventDefault(), e.stopPropagation()
+    })
   }, [s]), v = (0, r.jsx)(o.kL8, {
     "aria-label": "Toggle visibility",
     onClick: E,

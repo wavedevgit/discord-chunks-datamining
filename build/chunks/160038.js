@@ -22,7 +22,7 @@ var r = n(200651),
   v = n(684680);
 let x = () => {
     h.Z.getMediaEngine().once(a.aB.ConnectionStats, e => {
-      let t = Object.values(O.Yn).map(t => {
+      let t = JSON.stringify(Object.values(O.Yn).map(t => {
         let n = e.filter(e => {
           let {
             connection: n
@@ -37,8 +37,8 @@ let x = () => {
           (null == e || null == (r = e.transport) ? void 0 : r.localAddress) != null && (e.transport.localAddress = "(redacted)")
         }
         return n
-      }).filter(e => e.length > 0);
-      (0, p.JG)(JSON.stringify(t, null, 2)), (0, s.showToast)((0, s.createToast)(b.NW.string(b.t["t5VZ8/"]), s.ToastType.SUCCESS))
+      }).filter(e => e.length > 0), null, 2);
+      (0, p.JG)(t, () => (0, s.showToast)((0, s.createToast)(b.NW.string(b.t["t5VZ8/"]), s.ToastType.SUCCESS)))
     })
   },
   m = function(e) {

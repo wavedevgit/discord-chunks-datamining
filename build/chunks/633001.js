@@ -113,7 +113,7 @@ function L(e) {
     color: c.zxk.Colors.LINK,
     size: c.zxk.Sizes.MIN,
     onClick: function() {
-      (0, y.JG)(t), l(!0)
+      (0, y.JG)(t, () => l(!0))
     },
     className: P.copyId,
     children: ["Application Id: ", t, " ", n ? E.NW.string(E.t["t5VZ8/"]) : null]

@@ -76,7 +76,7 @@ function j(t) {
           "aria-label": N.NW.string(N.t.WqhZsr),
           onClick: () => {
             let t = "".concat(location.protocol, "//").concat(location.host).concat(h.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(j, S.GlobalDiscoveryAppsSections.STORE));
-            (0, u.JG)(t), (0, c.showToast)((0, c.createToast)(N.NW.string(N.t["L/PwZW"]), c.ToastType.SUCCESS)), (0, _.X)(j, _.B.STORE_MODAL)
+            (0, u.JG)(t, () => (0, c.showToast)((0, c.createToast)(N.NW.string(N.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, _.X)(j, _.B.STORE_MODAL)
           },
           children: (0, r.jsx)(c.xPt, {
             size: "sm"

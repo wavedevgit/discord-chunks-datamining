@@ -1,6 +1,6 @@
 /** Chunk was on 64941 **/
 t.d(s, {
-  default: () => m
+  default: () => u
 }), t(388685), t(457542), t(953529);
 var n = t(200651),
   o = t(192379),
@@ -27,17 +27,17 @@ function N(e) {
       mode: i,
       supportsCopy: a.wS,
       onCopy: () => {
-        (0, a.JG)(t), r(l.uA3.SUCCESS)
+        (0, a.JG)(t, () => r(l.uA3.SUCCESS), () => r(l.uA3.ERROR))
       }
     })]
   })
 }
 
-function m(e) {
+function u(e) {
   let {
     onClose: s,
     transitionState: t
-  } = e, [a, m] = o.useState(""), [u, j] = o.useState(""), [k, _] = o.useState(null), [g, p] = o.useState(!1), [C, v] = o.useState("DOMAIN"), b = () => {
+  } = e, [a, u] = o.useState(""), [m, j] = o.useState(""), [k, _] = o.useState(null), [g, p] = o.useState(!1), [C, v] = o.useState("DOMAIN"), R = () => {
     p(!0), _(null), i.tn.post({
       url: d.ANM.CONNECTION(d.ABu.DOMAIN, a),
       body: {},
@@ -72,7 +72,7 @@ function m(e) {
         id: "DOMAIN",
         children: (0, n.jsxs)("form", {
           onSubmit: e => {
-            e.preventDefault(), b()
+            e.preventDefault(), R()
           },
           children: [(0, n.jsxs)(l.hzk, {
             className: h.content,
@@ -85,7 +85,7 @@ function m(e) {
               title: x.NW.string(x.t["4jIAa2"]),
               error: k,
               children: (0, n.jsx)(l.oil, {
-                onChange: m,
+                onChange: u,
                 placeholder: c.pL,
                 maxLength: 253,
                 value: a,
@@ -135,7 +135,7 @@ function m(e) {
                   value: "TXT"
                 }), (0, n.jsx)(N, {
                   name: x.NW.string(x.t.PVLriY),
-                  value: u
+                  value: m
                 })]
               })]
             })]
@@ -171,7 +171,7 @@ function m(e) {
               children: x.NW.string(x.t.CkfdNz)
             }), (0, n.jsx)(l.zxk, {
               submitting: g,
-              onClick: b,
+              onClick: R,
               children: x.NW.string(x.t["13ofGh"])
             })]
           })]
@@ -191,7 +191,7 @@ function m(e) {
               value: (0, c.F9)(a)
             }), (0, n.jsx)(N, {
               name: x.NW.string(x.t.PVLriY),
-              value: u
+              value: m
             })]
           }), null != k && (0, n.jsx)(l.Text, {
             variant: "text-sm/normal",
@@ -221,7 +221,7 @@ function m(e) {
               children: x.NW.string(x.t.RhJMVV)
             }), (0, n.jsx)(l.zxk, {
               submitting: g,
-              onClick: b,
+              onClick: R,
               children: x.NW.string(x.t["13ofGh"])
             })]
           })]

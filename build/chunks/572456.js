@@ -1,7 +1,7 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 18437 **/
 n.d(t, {
-  XN: () => s,
-  af: () => c,
+  XN: () => c,
+  af: () => s,
   gK: () => o
 });
 var r = n(200651);
@@ -58,7 +58,7 @@ let o = e => u(async (t, l) => {
       onCancel: () => l(n.onClose)
     }))
   }),
-  s = (e, t) => u(async (l, u) => {
+  c = (e, t) => u(async (l, u) => {
     let {
       default: o
     } = await n.e("92575").then(n.bind(n, 601787));
@@ -70,16 +70,16 @@ let o = e => u(async (t, l) => {
       onCancel: () => u(n.onClose)
     }))
   }),
-  c = e => t => u(async (l, u) => {
+  s = e => t => u(async (l, u) => {
     let {
       default: o
-    } = await n.e("83613").then(n.bind(n, 449675)), s = () => {
+    } = await n.e("83613").then(n.bind(n, 449675)), c = () => {
       t(), l()
     };
     return t => (0, r.jsx)(o, a(i({
       ruleName: e
     }, t), {
-      onConfirm: s,
+      onConfirm: c,
       onClose: () => u(t.onClose),
       onCancel: () => u(t.onClose)
     }))

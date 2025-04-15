@@ -1,28 +1,22 @@
-/** Chunk was on web.js **/
-"use strict";
-n.d(t, {
-  J: () => o,
-  a: () => i
+/** Chunk was on 98466 **/
+n.d(e, {
+  J: () => i
 }), n(415506);
-var r = n(231338);
+var a = n(231338);
 
-function i() {
-  return "object" == typeof window.navigator && "clipboard" in window.navigator
-}
-
-function o(e) {
-  let t = !1;
-  if (i()) try {
+function i(t) {
+  let e = !1;
+  if ("object" == typeof window.navigator && "clipboard" in window.navigator) try {
     let n = new ClipboardItem({
-      "text/plain": e
+      "text/plain": t
     });
-    window.navigator.clipboard.write([n]).catch(r.dG), t = !0
-  } catch (e) {}
-  if (t) return t;
+    window.navigator.clipboard.write([n]).catch(a.dG), e = !0
+  } catch (t) {}
+  if (e) return e;
   let n = document.body;
   if (null == n) throw Error("[Utils] ClipboardUtils.copy(): assert failed: document.body != null");
-  let o = document.createRange(),
-    a = window.getSelection(),
-    s = document.createElement("textarea");
-  return s.value = e, s.contentEditable = "true", s.style.visibility = "none", n.appendChild(s), o.selectNodeContents(s), null == a || a.removeAllRanges(), null == a || a.addRange(o), s.focus(), s.setSelectionRange(0, e.length), t = document.execCommand("copy"), n.removeChild(s), t
+  let i = document.createRange(),
+    l = window.getSelection(),
+    o = document.createElement("textarea");
+  return o.value = t, o.contentEditable = "true", o.style.visibility = "none", n.appendChild(o), i.selectNodeContents(o), null == l || l.removeAllRanges(), null == l || l.addRange(i), o.focus(), o.setSelectionRange(0, t.length), e = document.execCommand("copy"), n.removeChild(o), e
 }

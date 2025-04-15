@@ -5,8 +5,8 @@ r.d(t, {
 });
 var n, l = r(200651),
   i = r(192379),
-  a = r(120356),
-  o = r.n(a),
+  o = r(120356),
+  a = r.n(o),
   c = r(873546),
   s = r(442837),
   u = r(481060),
@@ -73,7 +73,7 @@ function T(e) {
   let {
     author: r,
     message: n,
-    channel: a,
+    channel: o,
     userOverride: f,
     compact: w = !1,
     withMentionPrefix: T = !1,
@@ -86,7 +86,7 @@ function T(e) {
     renderRemixTag: D = !1,
     decorations: _,
     previewGuildId: F
-  } = e, L = i.useRef(null), M = i.useContext(y.Z), G = null != (t = null == a ? void 0 : a.guild_id) ? t : M, {
+  } = e, L = i.useRef(null), M = i.useContext(y.Z), G = null != (t = null == o ? void 0 : o.guild_id) ? t : M, {
     analyticsLocations: B
   } = (0, d.ZP)(p.Z.USERNAME), z = T ? "@" : "", {
     nick: U,
@@ -100,9 +100,11 @@ function T(e) {
     text: {},
     gradient: {}
   }, en = {
-    className: o()([P.username, K && et.gradientClassName, K && er.gradientClassName]),
+    className: a()([P.username, K && et.gradientClassName, K && er.gradientClassName]),
     style: (() => {
-      if (X) return K && null != H ? S({}, et.gradientStyle) : null != W ? {
+      if (X) return K && null != H ? N(S({}, et.gradientStyle), {
+        textDecorationColor: null == H ? void 0 : H.primaryColor
+      }) : null != W ? {
         color: W
       } : void 0
     })(),
@@ -115,7 +117,7 @@ function T(e) {
     userId: n.author.id,
     contextGuildId: G,
     className: P.clanTagChiplet
-  }) : null, [w, r.primaryGuild, G, n.author.id]), ei = null != f ? f : n.author, ea = null != A && null != C ? (0, l.jsx)(j.Z, {
+  }) : null, [w, r.primaryGuild, G, n.author.id]), ei = null != f ? f : n.author, eo = null != A && null != C ? (0, l.jsx)(j.Z, {
     targetElementRef: L,
     user: ei,
     renderPopout: A,
@@ -153,29 +155,29 @@ function T(e) {
           tag: "span",
           innerRef: L
         }, r, en), {
-          className: o()(en.className, P.clickable, E)
+          className: a()(en.className, P.clickable, E)
         })), el]
       })
     }
   }) : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(u.P3F, N(S({}, en), {
-      className: o()(en.className, E)
+      className: a()(en.className, E)
     })), el]
-  }), eo = null != _ ? _[0] : null, ec = null != _ ? _[1] : null;
+  }), ea = null != _ ? _[0] : null, ec = null != _ ? _[1] : null;
   return (0, l.jsxs)(d.Gt, {
     value: B,
-    children: [null != eo && w ? (0, l.jsxs)(l.Fragment, {
-      children: [" ", eo, " "]
+    children: [null != ea && w ? (0, l.jsxs)(l.Fragment, {
+      children: [" ", ea, " "]
     }) : null, "dot" === V ? (0, l.jsx)(u.FhE, {
       color: W,
       colors: Q ? H : null,
       name: J,
       className: P.roleDot
-    }) : null, ea, !w && (0, l.jsx)(b.ZP, {
+    }) : null, eo, !w && (0, l.jsx)(b.ZP, {
       primaryGuild: r.primaryGuild,
       userId: n.author.id,
       contextGuildId: G,
       className: P.clanTagChiplet
-    }), null != ec ? ec : null, null == eo || w ? null : eo, null != n && (0, h.f)(n) && Y && D ? (0, l.jsx)(R, {}) : null]
+    }), null != ec ? ec : null, null == ea || w ? null : ea, null != n && (0, h.f)(n) && Y && D ? (0, l.jsx)(R, {}) : null]
   })
 }

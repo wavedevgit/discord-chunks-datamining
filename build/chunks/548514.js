@@ -227,7 +227,7 @@ let D = a.forwardRef(function(e, t) {
   } = (0, m.ZP)(), N = a.useCallback(() => {
     (0, O.zZ)(E.rMx.APP_DIRECTORY_APPLICATION_LINK_COPIED, {
       application_id: n.id
-    }), (0, I.JG)(f(n.id)), (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS))
+    }), (0, I.JG)(f(n.id), () => (0, c.showToast)((0, c.createToast)(T.NW.string(T.t["L/PwZW"]), c.ToastType.SUCCESS)))
   }, [n.id]), P = (0, s.e7)([C.default], () => C.default.locale), L = a.useCallback(() => {
     (0, d.Z)((0, S.G)({
       id: n.id,

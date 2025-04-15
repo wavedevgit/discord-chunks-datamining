@@ -32,8 +32,8 @@ function h(e) {
   }
   return e
 }
-let x = d.Ilk.PRIMARY_400,
-  g = d.Ilk.PRIMARY_500;
+let g = d.Ilk.PRIMARY_400,
+  x = d.Ilk.PRIMARY_500;
 
 function p(e) {
   var {
@@ -56,7 +56,7 @@ function p(e) {
     return l
   }(e, ["enabled", "imageClassName", "iconWrapperClassName"]);
   let p = (0, o.ZP)(),
-    f = (0, a.wj)(p) ? x : g,
+    f = (0, a.wj)(p) ? g : x,
     v = {
       height: 18,
       width: 18,

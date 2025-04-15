@@ -29,7 +29,9 @@ function v(e) {
   let {
     url: t
   } = e, [n, o] = i.useState(!1), s = i.useRef(void 0), l = i.useCallback(() => {
-    n || ((0, _.JG)(t) && o(!0), s.current = setTimeout(() => o(!1), 2e3))
+    n || (0, _.JG)(t, () => {
+      o(!0), s.current = setTimeout(() => o(!1), 2e3)
+    })
   }, [t, n]);
   return i.useEffect(() => () => clearTimeout(s.current), []), _.wS ? (0, r.jsxs)(c.P3F, {
     className: a()(b.copyLink, n ? b.copied : null),

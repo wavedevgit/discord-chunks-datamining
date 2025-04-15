@@ -14,8 +14,8 @@ var l = n(442837),
   d = n(430824),
   m = n(341165),
   h = n(626135),
-  x = n(572004),
-  g = n(971130),
+  g = n(572004),
+  x = n(971130),
   p = n(230900),
   f = n(981631),
   v = n(388032),
@@ -23,7 +23,7 @@ var l = n(442837),
 let {
   INVITE_OPTIONS_7_DAYS: j,
   INVITE_OPTIONS_UNLIMITED: y
-} = g.ZP;
+} = x.ZP;
 
 function N(e) {
   var t, n, N;
@@ -87,7 +87,7 @@ function N(e) {
         autoFocus: !1,
         onCopy: e => {
           if (k) return;
-          (0, x.JG)(e);
+          (0, g.JG)(e);
           let t = (0, p.xC)(E.entity_type);
           h.default.track(f.rMx.COPY_INSTANT_INVITE, {
             server: E.guild_id,
@@ -102,7 +102,7 @@ function N(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: b.inviteDetail,
-        children: (0, g.Vg)(R, _)
+        children: (0, x.Vg)(R, _)
       })]
     })]
   })

@@ -1,8 +1,8 @@
-/** Chunk was on 93375 **/
+/** Chunk was on 18437 **/
 n.d(t, {
-  I2: () => N,
-  RD: () => p,
-  mY: () => j,
+  I2: () => O,
+  RD: () => N,
+  mY: () => p,
   pH: () => A
 }), n(539854), n(388685);
 var r = n(192379),
@@ -11,8 +11,8 @@ var r = n(192379),
   a = n(731965),
   u = n(881052),
   o = n(36459),
-  s = n(866894),
-  c = n(273504),
+  c = n(866894),
+  s = n(273504),
   f = n(981631);
 
 function E(e) {
@@ -49,12 +49,12 @@ function g(e, t) {
 let d = {},
   S = e => {
     let t = {
-      [c.fX.KEYWORD]: [],
-      [c.fX.ML_SPAM]: [],
-      [c.fX.DEFAULT_KEYWORD_LIST]: [],
-      [c.fX.MENTION_SPAM]: [],
-      [c.fX.USER_PROFILE]: [],
-      [c.fX.SERVER_POLICY]: []
+      [s.fX.KEYWORD]: [],
+      [s.fX.ML_SPAM]: [],
+      [s.fX.DEFAULT_KEYWORD_LIST]: [],
+      [s.fX.MENTION_SPAM]: [],
+      [s.fX.USER_PROFILE]: [],
+      [s.fX.SERVER_POLICY]: []
     };
     return e.forEach(e => {
       var n;
@@ -64,7 +64,7 @@ let d = {},
       null == (n = t[r]) || n.push(e)
     }), t
   },
-  O = (0, i.F)((e, t) => ({
+  j = (0, i.F)((e, t) => ({
     rules: {},
     fetching: !1,
     error: null,
@@ -75,13 +75,13 @@ let d = {},
         id: u,
         triggerType: o
       } = n, {
-        rules: c
-      } = t(), f = null != (r = c[i]) ? r : {}, d = null != (l = f[o]) ? l : [], S = d.some(e => e.id === u), O = d.filter(e => !(0, s.U)(e.id) || e.triggerType !== o), j = S ? O.map(e => e.id === u ? n : e) : [...O, n];
+        rules: s
+      } = t(), f = null != (r = s[i]) ? r : {}, d = null != (l = f[o]) ? l : [], S = d.some(e => e.id === u), j = d.filter(e => !(0, c.U)(e.id) || e.triggerType !== o), p = S ? j.map(e => e.id === u ? n : e) : [...j, n];
       (0, a.j)(() => {
         e({
-          rules: g(E({}, c), {
+          rules: g(E({}, s), {
             [i]: g(E({}, f), {
-              [o]: j
+              [o]: p
             })
           }),
           error: null
@@ -136,13 +136,13 @@ let d = {},
       }
     }
   })),
-  j = (e, t) => {
+  p = (e, t) => {
     var n, r;
-    return (null != (r = null == (n = O.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
+    return (null != (r = null == (n = j.getState().rules[e]) ? void 0 : n[t]) ? r : []).length
   };
 
-function N(e) {
-  let [t, n] = r.useState(!1), [i, a] = O(e => [e.syncRules, e.fetching], l.X);
+function O(e) {
+  let [t, n] = r.useState(!1), [i, a] = j(e => [e.syncRules, e.fetching], l.X);
   return [t, r.useCallback(async () => {
     if (!a && null != e) try {
       n(!0), await i(e)
@@ -152,8 +152,8 @@ function N(e) {
   }, [e, a, i])]
 }
 
-function p(e) {
-  let [t, n] = N(e);
+function N(e) {
+  let [t, n] = O(e);
   return r.useEffect(() => {
     (async () => {
       await n()
@@ -162,7 +162,7 @@ function p(e) {
 }
 
 function A(e) {
-  return O(t => {
+  return j(t => {
     var n;
     return {
       rulesByTriggerType: null != (n = t.rules[null != e ? e : f.lds]) ? n : {},

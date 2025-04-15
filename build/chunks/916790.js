@@ -168,14 +168,15 @@ function k(e) {
         tooltip: "Copy event data",
         onClick: () => {
           var e;
-          (0, b.JG)(JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
+          let n = JSON.stringify(Object.keys(e = t.action).reduce((t, n) => {
             var r;
             return t[n] = (r = e[n], C.Jn9.test(r) ? "REDACTED" : r), t
-          }, {}), null, 2)), (0, d.showToast)({
+          }, {}), null, 2);
+          (0, b.JG)(n, () => (0, d.showToast)({
             id: "copy-action-log-name",
             type: d.ToastType.SUCCESS,
             message: "Copied action log data to clipboard"
-          })
+          }))
         }
       })]
     }), s({

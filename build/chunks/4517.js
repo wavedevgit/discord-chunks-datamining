@@ -417,6 +417,7 @@ function Q(e) {
     onAction: u,
     onClose: () => O(!1),
     children: () => (0, r.jsx)(C.Z, {
+      targetElementRef: g,
       sourceType: P.n_.STATUS,
       user: o,
       children: (0, r.jsx)(z, k(x({}, c), {
