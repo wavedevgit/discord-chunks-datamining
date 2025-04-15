@@ -1,7 +1,7 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  J: () => _,
-  Z: () => y
+  J: () => y,
+  Z: () => _
 }), n(388685), n(997841);
 var r = n(192379),
   i = n(252258),
@@ -19,13 +19,13 @@ var r = n(192379),
   g = n(981631),
   b = n(388032);
 
-function y(e) {
+function _(e) {
   let {
     context: t,
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: c = !1
-  } = e, [h, y] = r.useState(!1), _ = (0, l.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), C = c ? b.t.cpT0Cg : b.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), v = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), j = null != _ && _.applicationId === a.id && (_.location.kind === i.E.CONTEXTLESS || (0, s.pY)(_.location) === t.channel.id), {
+  } = e, [h, _] = r.useState(!1), y = (0, l.e7)([o.ZP], () => o.ZP.getCurrentEmbeddedActivity()), C = c ? b.t.cpT0Cg : b.t["0hKkS0"], x = r.useMemo(() => null != n ? (0, p.XZ)(n.displayName) : b.NW.string(b.t["3xjX0d"]), [n]), v = void 0 !== a.flags && (0, m.yE)(a.flags, g.udG.EMBEDDED), j = null != y && y.applicationId === a.id && (y.location.kind === i.E.CONTEXTLESS || (0, s.pY)(y.location) === t.channel.id), {
     analyticsLocations: O
   } = (0, d.ZP)(u.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), E = null != t.channel.recipients ? t.channel.recipients[0] : void 0;
   return {
@@ -37,14 +37,14 @@ function y(e) {
     }) && v ? j ? b.NW.string(b.t["Hi1/aW"]) : null != x ? x : b.NW.string(b.t.zKX8Nj) : b.NW.string(C),
     hasActiveMatchingEmbeddedActivity: j,
     isEmbeddedApp: v,
-    currentEmbeddedActivity: _,
+    currentEmbeddedActivity: y,
     channelRecipientUserId: E,
-    setIsExecutingLaunchInteraction: y,
+    setIsExecutingLaunchInteraction: _,
     analyticsLocations: O
   }
 }
 
-function _(e) {
+function y(e) {
   let {
     context: t,
     application: n,

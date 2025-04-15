@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   g = n(792379),
   b = n(177222);
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function y(e) {
   return e
 }
 
-function _(e) {
+function y(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -58,7 +58,7 @@ function _(e) {
   let l = (0, h.Z)();
   (0, s.t)();
   let {
-    withMutualFriendsCount: _
+    withMutualFriendsCount: y
   } = (0, p.j)({
     location: "UserProfilePanelWrapper"
   }), [C] = t.recipients, x = (0, a.e7)([d.default], () => d.default.getUser(C));
@@ -67,12 +67,12 @@ function _(e) {
   o()(null != v, "UserProfilePanelWrapper: currentUser cannot be undefined"), i.useEffect(() => {
     (0, f.Z)(x, {
       type: "panel",
-      withMutualFriendsCount: !x.bot && _,
-      withMutualFriends: !x.bot && !_,
+      withMutualFriendsCount: !x.bot && y,
+      withMutualFriends: !x.bot && !y,
       withMutualGuilds: !0,
       channelId: t.id
     })
-  }, [x, t.id, _]);
+  }, [x, t.id, y]);
   let {
     isBlocked: j,
     isIgnored: O
@@ -84,16 +84,16 @@ function _(e) {
     N(j || O || j)
   }, [j, O]);
   let I = c.Rt.useSetting();
-  return l ? null : E && !(O && I) ? (0, r.jsx)(m.A, y({
+  return l ? null : E && !(O && I) ? (0, r.jsx)(m.A, _({
     user: x,
     currentUser: v,
     channel: t,
     onViewBlockedProfileClick: () => N(!1)
-  }, n)) : x.isNonUserBot() ? (0, r.jsx)(g.Z, y({
+  }, n)) : x.isNonUserBot() ? (0, r.jsx)(g.Z, _({
     user: x,
     currentUser: v,
     channel: t
-  }, n)) : (0, r.jsx)(b.Z, y({
+  }, n)) : (0, r.jsx)(b.Z, _({
     user: x,
     currentUser: v,
     channel: t

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(530472),
   g = n(453687),
   b = n(930282),
-  y = n(318713),
-  _ = n(981631),
+  _ = n(318713),
+  y = n(981631),
   C = n(388032),
   x = n(684525),
   v = n(848697),
@@ -63,7 +63,7 @@ let O = i.memo(function(e) {
             tag: "span",
             className: x.learnMore,
             children: C.NW.format(C.t.Nd3Gh4, {
-              helpUrl: f.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
+              helpUrl: f.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
         })
@@ -78,13 +78,13 @@ let O = i.memo(function(e) {
       message: u,
       children: f,
       content: m,
-      onUpdate: _
+      onUpdate: y
     } = e, E = null == (t = u.editedTimestamp) ? void 0 : t.toString(), N = i.useRef(!1), I = (0, c.e7)([h.Z], () => h.Z.getMessage(u.id), [u.id]), P = i.useCallback(() => {
       (null == I ? void 0 : I.isBlockedEdit) ? (0, p.I)(u.id) : d.Z.deleteMessage(u.channel_id, u.id, !0)
     }, [u, I]);
     return i.useLayoutEffect(() => {
-      N.current ? null != _ && _() : N.current = !0
-    }, [_, u.content, m, E, f]), (0, r.jsxs)("div", {
+      N.current ? null != y && y() : N.current = !0
+    }, [y, u.content, m, E, f]), (0, r.jsxs)("div", {
       id: (0, g.ut)(u),
       className: o()(l, j.markup, {
         [v.messageContent]: !0,
@@ -93,7 +93,7 @@ let O = i.memo(function(e) {
         [x.blockedSend]: !(null == I ? void 0 : I.isBlockedEdit)
       }),
       children: [null != f ? f : (0, b.L5)(u, m), (null == I ? void 0 : I.isBlockedEdit) && null != u.timestamp && (0, r.jsxs)(r.Fragment, {
-        children: [" ", (0, r.jsx)(y.Z, {
+        children: [" ", (0, r.jsx)(_.Z, {
           timestamp: u.timestamp,
           isEdited: !0,
           isInline: !1,

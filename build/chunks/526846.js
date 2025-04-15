@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(100527),
   g = n(906732),
   b = n(783097),
-  y = n(226026),
-  _ = n(397698),
+  _ = n(226026),
+  y = n(397698),
   C = n(895924),
   x = n(471518),
   v = n(425986),
@@ -73,7 +73,7 @@ function D(e) {
     }, [null == h ? void 0 : h.application_directory_collection_items]),
     {
       trackItemImpressionRef: C
-    } = (0, y.Z)({
+    } = (0, _.Z)({
       applicationId: null != (t = null == g ? void 0 : g.application.id) ? t : "",
       applicationFlags: null == g ? void 0 : g.application.flags,
       sectionName: "app_launcher_in_voice_banner",
@@ -89,7 +89,7 @@ function D(e) {
     className: k.clickableBanner,
     innerRef: C,
     onClick: () => {
-      a(), (0, _.Z)({
+      a(), (0, y.Z)({
         context: {
           type: "channel",
           channel: l
@@ -118,8 +118,8 @@ let W = i.forwardRef(function(e, t) {
     closePopout: c,
     onMouseEnter: u,
     onMouseLeave: b,
-    onClick: y,
-    className: _
+    onClick: _,
+    className: y
   } = e, x = (0, d.e7)([f.Z], () => f.Z.useReducedMotion), {
     id: v,
     guild_id: j
@@ -159,8 +159,8 @@ let W = i.forwardRef(function(e, t) {
       channel: a,
       openInPopout: W,
       analyticsLocations: M
-    }), b(), y()
-  }, [M, a, y, b, W]), F = i.useCallback(e => {
+    }), b(), _()
+  }, [M, a, _, b, W]), F = i.useCallback(e => {
     u(), N.default.track(w.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: a.id,
       guild_id: a.getGuildId()
@@ -172,7 +172,7 @@ let W = i.forwardRef(function(e, t) {
       children: (0, r.jsxs)(p.VqE, {
         ref: t,
         "aria-labelledby": L,
-        className: _,
+        className: y,
         children: [(0, r.jsx)(p.y5t, {
           forceLevel: 2,
           children: (0, r.jsx)(p.nn4, {
@@ -215,7 +215,7 @@ let W = i.forwardRef(function(e, t) {
             openInPopout: W,
             channel: a,
             onClick: () => {
-              y(), c()
+              _(), c()
             }
           }), (0, r.jsxs)("div", {
             className: k.activityContainer,
@@ -226,7 +226,7 @@ let W = i.forwardRef(function(e, t) {
               },
               activityItem: e,
               onClick: () => {
-                c(), y()
+                c(), _()
               },
               aspectRatio: Z.Y.AspectRatio.THIRTEEN_BY_ELEVEN,
               animatedDivClass: k.activitySuggestion,

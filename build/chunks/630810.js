@@ -1,6 +1,6 @@
 /** Chunk was on 7654 **/
 n.d(t, {
-  Z: () => g,
+  Z: () => h,
   m: () => c
 });
 var l, i = n(493683),
@@ -11,7 +11,7 @@ var l, i = n(493683),
   u = n(651655);
 let d = +o.Z.Millis.SECOND + 10;
 var c = ((l = {})[l.GROUP_DM = 0] = "GROUP_DM", l[l.USER = 1] = "USER", l[l.CHANNEL = 2] = "CHANNEL", l);
-class h extends u.Z {
+class g extends u.Z {
   _sendInvite(e, t, n, l, i) {
     r.Z.sendInvite(e.id, t, n, l).then(() => i(null, !0), () => i(null, !1))
   }
@@ -36,4 +36,4 @@ class h extends u.Z {
     super(new s.Z("InviteQueue"), d)
   }
 }
-let g = new h
+let h = new g

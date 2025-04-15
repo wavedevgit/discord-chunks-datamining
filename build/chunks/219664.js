@@ -83,7 +83,7 @@ let z = a.memo(function(e) {
     gridSectionBoundaries: d,
     observePostVisibilityAnalytics: u
   } = e, m = (0, o.e7)([_.Z], () => _.Z.getChannel(n));
-  return null == m ? null : (0, r.jsx)(B, {
+  return null == m ? null : (0, r.jsx)(H, {
     id: t,
     channel: m,
     goToThread: a,
@@ -96,7 +96,7 @@ let z = a.memo(function(e) {
   })
 });
 
-function B(e) {
+function H(e) {
   let {
     id: t,
     channel: n,
@@ -111,7 +111,7 @@ function B(e) {
     firstMessage: D,
     loaded: z
   } = (0, O.cl)(n), {
-    firstMedia: B
+    firstMedia: H
   } = (0, N.mX)({
     firstMessage: D,
     formatInline: !1,
@@ -140,7 +140,7 @@ function B(e) {
     [er, ea] = (0, T.rI)(h.width - 2 * T.LT),
     ei = (0, N.xw)(n, s.z.CREATION_DATE, M.R6.POSTED_DURATION_AGO),
     el = (0, P.NN)(n),
-    es = (null == D ? void 0 : D.blocked) || null == (null != u ? u : B),
+    es = (null == D ? void 0 : D.blocked) || null == (null != u ? u : H),
     eo = (0, R.nX)({
       id: t,
       row: g.row,
@@ -247,7 +247,7 @@ function B(e) {
     }), (0, r.jsx)("div", {
       className: W.footer,
       children: (0, r.jsx)(d.Rny, {
-        children: (0, r.jsx)(H, {
+        children: (0, r.jsx)(B, {
           channel: n,
           firstMessage: D,
           facepileRef: K
@@ -257,7 +257,7 @@ function B(e) {
   })
 }
 
-function H(e) {
+function B(e) {
   let {
     channel: t,
     facepileRef: n,

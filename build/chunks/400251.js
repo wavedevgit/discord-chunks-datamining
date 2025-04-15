@@ -18,8 +18,8 @@ var r = n(200651),
   m = n(134432),
   g = n(769654),
   b = n(601964),
-  y = n(430824),
-  _ = n(768581),
+  _ = n(430824),
+  y = n(768581),
   C = n(683818),
   x = n(16853),
   v = n(981631),
@@ -170,7 +170,7 @@ let T = e => {
   var t;
   let {
     entry: l
-  } = e, [o, p] = i.useState(!1), C = null != (0, a.e7)([y.Z], () => y.Z.getGuild(l.guildId)), x = async () => {
+  } = e, [o, p] = i.useState(!1), C = null != (0, a.e7)([_.Z], () => _.Z.getGuild(l.guildId)), x = async () => {
     p(!0);
     try {
       C ? (0, g.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -179,11 +179,11 @@ let T = e => {
     } finally {
       p(!1)
     }
-  }, E = _.ZP.getGuildSplashURL({
+  }, E = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
-  }), P = null != (t = _.ZP.getGuildIconURL({
+  }), P = null != (t = y.ZP.getGuildIconURL({
     id: l.guildId,
     icon: l.icon,
     size: 40

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(566620),
   g = n(588580),
   b = n(119315),
-  y = n(367907),
-  _ = n(213609),
+  _ = n(367907),
+  y = n(213609),
   C = n(499254),
   x = n(541099),
   v = n(827498),
@@ -68,7 +68,7 @@ let U = i.forwardRef(function(e, t) {
   }), [T]);
   let F = (0, g.a)(h.eR.TEXT_LAUNCHER),
     H = i.useCallback(() => {
-      (0, y.yw)(R.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
+      (0, _.yw)(R.rMx.APP_LAUNCHER_ENTRYPOINT_BUTTON_CLICKED, {
         source: v._b.TEXT,
         badge_type: F ? I.valueOf() : null
       }), E ? C.yT(v.ti.DISMISSED) : ((0, S.EW)(c.z.DESKTOP_APP_LAUNCHER_ONBOARDING, {
@@ -77,7 +77,7 @@ let U = i.forwardRef(function(e, t) {
     }, [E, j, A, F, I]);
   i.useEffect(() => {
     let e = setTimeout(() => {
-      I !== f.O.NONE && F && (W(), B(), (0, _.h)({
+      I !== f.O.NONE && F && (W(), B(), (0, y.h)({
         type: a.ImpressionTypes.VIEW,
         name: a.ImpressionNames.APP_LAUNCHER_BADGE,
         properties: {

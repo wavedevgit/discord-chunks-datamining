@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(906732),
   g = n(541716),
   b = n(752305),
-  y = n(893718),
-  _ = n(303628),
+  _ = n(893718),
+  y = n(303628),
   C = n(313201),
   x = n(540059),
   v = n(967128),
@@ -141,8 +141,8 @@ function q(e) {
       updateThreadSettings: l
     }
   }(t, n), {
-    textAreaState: y,
-    setTextAreaState: _
+    textAreaState: _,
+    setTextAreaState: y
   } = function(e, t) {
     let [n, r] = i.useState((0, b.H2)());
     return i.useEffect(() => {
@@ -232,7 +232,7 @@ function q(e) {
     parentMessageId: n,
     threadSettings: f,
     privateThreadMode: C,
-    textAreaState: y,
+    textAreaState: _,
     location: l
   }), Z = (0, L.oD)(f, C) ? s.qtY : s.or_, T = (0, x.R6)("CreateThreadSidebar");
   return (0, r.jsx)("div", {
@@ -280,8 +280,8 @@ function q(e) {
           className: F.submitContainer,
           children: [(0, r.jsx)(Q, {
             parentChannel: t,
-            textAreaState: y,
-            setTextAreaState: _,
+            textAreaState: _,
+            setTextAreaState: y,
             submit: I,
             error: O,
             isRefreshChatInputEnabled: T
@@ -406,7 +406,7 @@ function Q(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(y.Z, {
       channelId: t.id,
       type: z,
       canAttachFiles: v
@@ -415,7 +415,7 @@ function Q(e) {
       children: (0, r.jsx)(s.pdY, {
         error: j
       })
-    }), (0, r.jsx)(y.Z, {
+    }), (0, r.jsx)(_.Z, {
       type: z,
       channel: t,
       placeholder: G.NW.string(G.t.taZfIC),

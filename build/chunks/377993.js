@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(850020),
   g = n(823415),
   b = n(670188),
-  y = n(158776),
-  _ = n(699516),
+  _ = n(158776),
+  y = n(699516),
   C = n(111583),
   x = n(594174),
   v = n(626135),
@@ -58,7 +58,7 @@ function R(e) {
     channel: a,
     status: u,
     activities: d
-  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([y.Z], () => y.Z.isMobileOnline(t.id)), O = (0, o.e7)([_.Z], () => _.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
+  } = e, p = (0, o.e7)([C.Z], () => null != C.Z.getTypingUsers(a.id)[t.id]), f = (0, o.e7)([x.default], () => x.default.getCurrentUser()), v = (0, o.e7)([_.Z], () => _.Z.isMobileOnline(t.id)), O = (0, o.e7)([y.Z], () => y.Z.getNickname(t.id)), N = (0, h.Z)(t.id, "private-channel-recipient"), Z = e => {
     (0, s.jW)(e, async () => {
       let {
         default: e
@@ -85,7 +85,9 @@ function R(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
+    j.S.dispatch(P.CkL.TEXTAREA_FOCUS, {
+      channelId: a.id
+    }), j.S.dispatchToLastSubscribed(P.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(a.id)
@@ -164,14 +166,14 @@ function M(e) {
     analyticsLocations: s
   } = (0, d.ZP)(u.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, o.e7)([_.Z, x.default, y.Z], () => {
+  } = (0, o.e7)([y.Z, x.default, _.Z], () => {
     let e = (0, O.T)(t.recipients, x.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      _.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
-        status: null != (i = y.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
-        activities: null != (l = y.Z.getActivities(t.id)) ? l : A
+      y.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? void 0 : r.id) ? n[t.id] = {
+        status: null != (i = _.Z.getStatus(t.id)) ? i : P.Skl.OFFLINE,
+        activities: null != (l = _.Z.getActivities(t.id)) ? l : A
       } : n[t.id] = {
         status: P.Skl.OFFLINE,
         activities: A

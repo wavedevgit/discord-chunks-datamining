@@ -23,8 +23,8 @@ function a(e) {
     onClick: m,
     onContextMenu: g,
     onDoubleClick: b,
-    onVideoResize: y,
-    paused: _,
+    onVideoResize: _,
+    paused: y,
     pulseSpeakingIndicator: C,
     participant: x,
     width: v
@@ -83,9 +83,9 @@ function a(e) {
         onClick: m,
         onContextMenu: g,
         onDoubleClick: b,
-        onVideoResize: y,
+        onVideoResize: _,
         participant: x,
-        paused: _,
+        paused: y,
         pulseSpeakingIndicator: C,
         videoComponent: O,
         width: v

@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
@@ -19,7 +19,7 @@ var i = n(120356),
   g = n(388032),
   b = n(613873);
 
-function y(e) {
+function _(e) {
   let {
     summary: t,
     channel: n
@@ -78,7 +78,7 @@ function y(e) {
   })
 }
 
-function _(e) {
+function y(e) {
   var t, n;
   let i, {
       item: o,
@@ -96,7 +96,7 @@ function _(e) {
       className: b.summaryStartIcon
     }), o.content]
   }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(y, {
+    children: [(0, r.jsx)(_, {
       summary: h,
       channel: u
     }), (0, r.jsx)(s.sVe, {

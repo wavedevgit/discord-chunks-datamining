@@ -50,16 +50,16 @@ let b = {
     messageCount: f,
     lastMessage: null
   },
-  y = (0, o.F)(() => new Map),
-  _ = (e, t) => {
+  _ = (0, o.F)(() => new Map),
+  y = (e, t) => {
     (0, a.j)(() => {
-      y.setState(n => {
+      _.setState(n => {
         let r = n.get(e);
         return null == r ? n.set(e, h({}, b, t)) : n.set(e, h({}, r, t)), n
       })
     })
   },
-  C = e => y(t => t.get(e), l.X);
+  C = e => _(t => t.get(e), l.X);
 
 function x(e, t, n) {
   let r = null != n ? n : {};
@@ -92,12 +92,12 @@ function v(e, t, n) {
     let {
       addtionalQuery: l,
       shouldDispatch: o = !1
-    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = C(a), m = (0, c.Z)(a), [y, v] = i.useState({});
+    } = r, a = i.useMemo(() => g(e, t, n, l), [e, t, n, l]), h = C(a), m = (0, c.Z)(a), [_, v] = i.useState({});
     return i.useEffect(() => {
       if (m !== a) {
         let r = x(e, n, l),
           i = new u.ZP(t, p.aib.GUILD, r);
-        _(a, {
+        y(a, {
           searchFetcher: i,
           messageCount: f,
           lastMessage: null
@@ -105,7 +105,7 @@ function v(e, t, n) {
           i.fetch(e => {
             let n = e.body,
               r = n.messages[0];
-            if (_(a, {
+            if (y(a, {
                 searchFetcher: i,
                 result: n,
                 messageCount: n.total_results,
@@ -128,7 +128,7 @@ function v(e, t, n) {
               })
             }
           }, e => {}, e => {
-            _(a, {
+            y(a, {
               messageCount: 0,
               lastMessage: null
             }), v({})
@@ -170,18 +170,18 @@ function O(e, t, n) {
     },
     track_exact_total_hits: !0,
     include_nsfw: !0
-  }), [e, g]), y = i.useCallback(e => {
+  }), [e, g]), _ = i.useCallback(e => {
     let t = e.messages,
       n = e.links,
       r = e.media;
-    _(a, t), _(c, n), _(h, r)
+    y(a, t), y(c, n), y(h, r)
   }, [c, h, a]), C = i.useCallback(e => {
-    y({
+    _({
       messages: e,
       links: e,
       media: e
     })
-  }, [y]);
+  }, [_]);
   i.useEffect(() => {
     let e = new u.tJ(t, p.aib.GUILD, g, b);
     C({
@@ -206,7 +206,7 @@ function O(e, t, n) {
         let e = t.tabs.messages,
           s = t.tabs.links,
           c = t.tabs.media;
-        y({
+        _({
           messages: {
             messageCount: null != (n = null == e ? void 0 : e.total_results) ? n : 0,
             lastMessage: null != (r = null == e ? void 0 : e.messages[0]) ? r : null
@@ -226,7 +226,7 @@ function O(e, t, n) {
     return () => {
       e.cancel(), clearTimeout(n)
     }
-  }, [e, t, g, b, C, y]);
+  }, [e, t, g, b, C, _]);
   let [v, O] = i.useState({});
   return {
     messagesCount: null != (r = null == s ? void 0 : s.messageCount) ? r : f,

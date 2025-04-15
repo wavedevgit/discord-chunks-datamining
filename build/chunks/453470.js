@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(177342),
   g = n(621600),
   b = n(276060),
-  y = n(870991),
-  _ = n(981631),
+  _ = n(870991),
+  y = n(981631),
   C = n(134612),
   x = n(388032);
 
@@ -27,7 +27,7 @@ function v(e) {
     channelId: t,
     warningId: v,
     senderId: j
-  } = e, O = (0, y.E4)(), E = i.useCallback(() => {
+  } = e, O = (0, _.E4)(), E = i.useCallback(() => {
     (0, p.T)(t, [v])
   }, [t, v]), N = (0, b.t)({
     location: C.zr
@@ -84,7 +84,7 @@ function v(e) {
               variant: "heading-sm/medium",
               color: "text-link",
               children: x.NW.format(x.t.UkH129, {
-                learnMoreLink: y.D8
+                learnMoreLink: _.D8
               })
             })
           })
@@ -93,7 +93,7 @@ function v(e) {
     })
   };
   return (i.useEffect(() => {
-    N && ((0, f.MC)(_.rMx.SAFETY_WARNING_VIEWED, {
+    N && ((0, f.MC)(y.rMx.SAFETY_WARNING_VIEWED, {
       channelId: t,
       warningId: v,
       senderId: j,

@@ -70,7 +70,7 @@ let p = i.forwardRef(function(e, t) {
     onPopoutOpen: m,
     onPopoutClose: g,
     onRequestClose: b
-  } = e, [y, _] = i.useState(!1), {
+  } = e, [_, y] = i.useState(!1), {
     isHovered: C,
     setIsHovered: x,
     onMouseEnter: v,
@@ -79,22 +79,22 @@ let p = i.forwardRef(function(e, t) {
   } = (0, a.Z)(200, 300);
 
   function E(e) {
-    "focus" === e.type || y || v()
+    "focus" === e.type || _ || v()
   }
 
   function N() {
-    y || j()
+    _ || j()
   }
 
   function I(e) {
-    O(), _(!y), y ? null == g || g() : null == m || m(), (!C || y) && e()
+    O(), y(!_), _ ? null == g || g() : null == m || m(), (!C || _) && e()
   }
   i.useImperativeHandle(t, () => ({
     hidePopout() {
-      x(!1), _(!1)
+      x(!1), y(!1)
     }
-  }), [x, _]);
-  let P = C && !f || y;
+  }), [x, y]);
+  let P = C && !f || _;
   return (0, r.jsx)(o.yRy, {
     animation: o.yRy.Animation.FADE,
     shouldShow: P,
@@ -104,11 +104,11 @@ let p = i.forwardRef(function(e, t) {
     spacing: 16,
     onRequestClose: () => {
       if ((null == b ? void 0 : b()) === l.F) return l.F;
-      x(!1), _(!1), null == g || g()
+      x(!1), y(!1), null == g || g()
     },
     renderPopout: e => (0, r.jsx)(d, u({
       isHovered: P,
-      onFocus: () => _(!0),
+      onFocus: () => y(!0),
       onMouseEnter: v,
       onMouseLeave: N,
       renderPopout: n
@@ -127,7 +127,7 @@ let p = i.forwardRef(function(e, t) {
           className: c.actionBarButton,
           onMouseEnter: E,
           onMouseLeave: N,
-          isActive: y
+          isActive: _
         })
       })
     }

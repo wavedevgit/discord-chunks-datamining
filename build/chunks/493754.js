@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  W: () => _,
+  W: () => y,
   Z: () => C
 });
 var r = n(200651);
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,7 +51,7 @@ function y(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     guild: t,
     channel: i,
@@ -66,7 +66,7 @@ function _(e) {
     let {
       default: e
     } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
-    return n => (0, r.jsx)(e, y(b({}, n), {
+    return n => (0, r.jsx)(e, _(b({}, n), {
       guild: t,
       channel: i,
       streamUserId: l,
@@ -113,11 +113,11 @@ function C(e) {
   if (!(null != I && null != o && h.Z.can(f.Plq.CREATE_INSTANT_INVITE, o))) return null;
   let S = m.NW.string(m.t.VINpSE);
   return null != n ? S = m.NW.string(m.t["6VQaqa"]) : null != i && (S = m.NW.string(m.t["OzOM/v"])), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(c.zxk, y(b({
+    children: [(0, r.jsx)(c.zxk, _(b({
       size: null != (t = O.size) ? t : c.zxk.Sizes.SMALL,
       color: g.buttonColor,
       onClick: () => {
-        a()(null != I, "guild cannot be null"), a()(null != o, "channel cannot be null"), _({
+        a()(null != I, "guild cannot be null"), a()(null != o, "channel cannot be null"), y({
           guild: I,
           channel: o,
           streamUserId: null == n ? void 0 : n.ownerId,

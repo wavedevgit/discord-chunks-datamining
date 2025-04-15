@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(221292),
   g = n(687158),
   b = n(510659),
-  y = n(113557),
-  _ = n(867176),
+  _ = n(113557),
+  y = n(867176),
   C = n(451834),
   x = n(502762),
   v = n(952124),
@@ -106,7 +106,7 @@ function R(e) {
               })]
             }), (0, r.jsxs)("header", {
               className: A.header,
-              children: [(0, r.jsx)(_.Z, {
+              children: [(0, r.jsx)(y.Z, {
                 user: t,
                 displayProfile: M,
                 profileType: Z.y0.PANEL,
@@ -115,7 +115,7 @@ function R(e) {
               }), (0, r.jsx)(C.Z, {
                 userId: t.id,
                 className: A.toast
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(_.Z, {
                 location: "UserProfilePanel",
                 user: t,
                 displayProfile: M,

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(273387),
   g = n(683818),
   b = n(102888),
-  y = n(65839),
-  _ = n(453879),
+  _ = n(65839),
+  y = n(453879),
   C = n(408310),
   x = n(75666),
   v = n(981631),
@@ -52,7 +52,7 @@ let O = e => {
       (0, s.In)(O.id, !0, !0, e)
     })
   }, [O.id]);
-  let T = i.useMemo(() => null != I ? (0, _.v)(Object.values(I), N) : null, [I, N]),
+  let T = i.useMemo(() => null != I ? (0, y.v)(Object.values(I), N) : null, [I, N]),
     {
       mostRecentQuery: A,
       searchFetching: w,
@@ -169,7 +169,7 @@ let O = e => {
       guild: E,
       onAddGuild: B
     })
-  }) : (0, r.jsx)(y.Z, {
+  }) : (0, r.jsx)(_.Z, {
     channel: O,
     searchQuery: k,
     setSearchQuery: M,

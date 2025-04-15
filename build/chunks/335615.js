@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(239091),
   g = n(941028),
   b = n(144144),
-  y = n(276264),
-  _ = n(607070),
+  _ = n(276264),
+  y = n(607070),
   C = n(100527),
   x = n(367907),
   v = n(906732),
@@ -104,7 +104,7 @@ function en(e, t) {
   return i
 }
 let er = K.ZP.getEnableHardwareAcceleration(),
-  ei = 44 + y.x,
+  ei = 44 + _.x,
   el = {
     origin: {
       x: 38,
@@ -130,7 +130,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       activities: h,
       applicationStream: f,
       status: g,
-      channel: _,
+      channel: y,
       guildId: C,
       isTyping: x,
       isMobileOnline: v,
@@ -145,20 +145,22 @@ let er = K.ZP.getEnableHardwareAcceleration(),
         return n => (0, r.jsx)(e, et(ee({}, n), {
           user: u,
           guildId: C,
-          channel: _,
+          channel: y,
           showMediaItems: t
         }))
       })
-    }, [u, C, _]), T = i.useCallback(() => {
+    }, [u, C, y]), T = i.useCallback(() => {
       let e = "@".concat(q.ZP.getUserTag(u, {
           decoration: "never"
         })),
         t = "<@".concat(u.id, ">");
-      z.S.dispatchToLastSubscribed(X.CkL.INSERT_TEXT, {
+      z.S.dispatch(X.CkL.TEXTAREA_FOCUS, {
+        channelId: y.id
+      }), z.S.dispatchToLastSubscribed(X.CkL.INSERT_TEXT, {
         plainText: e,
         rawText: t
-      }), b.Z.startTyping(_.id)
-    }, [u, _.id]), w = i.useCallback(e => {
+      }), b.Z.startTyping(y.id)
+    }, [u, y.id]), w = i.useCallback(e => {
       null != C && (e.stopPropagation(), (0, A.f)({
         guildId: C,
         location: {
@@ -170,7 +172,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
     return (0, r.jsx)(D.Z, {
       user: u,
       guildId: C,
-      channelId: _.id,
+      channelId: y.id,
       roleId: a,
       position: d.tq ? "window_center" : "left",
       spacing: 16,
@@ -185,7 +187,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
         let {
           onClick: n
         } = e, i = en(e, ["onClick"]);
-        return (0, r.jsx)(y.Z, ee({
+        return (0, r.jsx)(_.Z, ee({
           className: J.member,
           onContextMenu: Z,
           shouldAnimateStatus: er,
@@ -201,7 +203,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           colorStrings: l,
           colorRoleName: o,
           isTyping: x,
-          channel: _,
+          channel: y,
           guildId: C,
           isMobile: v,
           onClickPremiumGuildIcon: w,
@@ -275,7 +277,7 @@ function ec(e) {
   let {
     index: t
   } = e, n = (0, c.JA)("".concat(t));
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(_.Z, {
     itemProps: n
   })
 }
@@ -543,7 +545,7 @@ function ed(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(C.Z.MEMBER_LIST), a = (0, h.e7)([_.Z], () => _.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, v.ZP)(C.Z.MEMBER_LIST), a = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), s = (0, h.cj)([U.ZP], () => U.ZP.getProps(t.guild_id, t.id)), {
     rows: d,
     groups: p,
     version: m,
@@ -552,9 +554,9 @@ function ed(e) {
     memberStoreProps: s,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), y = (0, T.Q3)("ChannelMembers"), {
+  }), b = i.useRef(null), _ = (0, T.Q3)("ChannelMembers"), {
     density: x
-  } = (0, f.TCT)(), j = y ? "compact" === x ? 42 : 50 : ei, O = i.useCallback((e, t) => {
+  } = (0, f.TCT)(), j = _ ? "compact" === x ? 42 : 50 : ei, O = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),

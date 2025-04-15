@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(470956),
   g = n(597998),
   b = n(199902),
-  y = n(314897),
-  _ = n(271383),
+  _ = n(314897),
+  y = n(271383),
   C = n(131951),
   x = n(496675),
   v = n(158776),
@@ -41,10 +41,10 @@ let w = i.memo(e => {
     channel: g,
     sessionId: x,
     nick: A
-  } = e, w = s.id, R = (0, a.e7)([y.default], () => y.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
+  } = e, w = s.id, R = (0, a.e7)([_.default], () => _.default.getId() === w, [w]), [k, M, L] = (0, a.Wu)([C.Z], () => R ? [!C.Z.isSupported() || C.Z.isSelfMute() || C.Z.isSelfMutedTemporarily(), C.Z.isSelfDeaf(), !1] : [!C.Z.isSupported() || C.Z.isLocalMute(w), !1, C.Z.isLocalVideoDisabled(w)], [R, w]), D = (0, a.e7)([E.Z], () => E.Z.isPrioritySpeaker(w)), W = (0, c.Z)({
     userId: w,
     checkSoundSharing: !0
-  }), U = (0, a.e7)([_.ZP], () => _.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), G = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
+  }), U = (0, a.e7)([y.ZP], () => y.ZP.isGuestOrLurker(g.guild_id, w)), B = (0, a.e7)([h.Z], () => h.Z.getGuildRingingUsers(g.id).has(w)), G = (0, a.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(g.id).find(e => {
     let {
       userIds: t
     } = e;
@@ -91,7 +91,7 @@ let w = i.memo(e => {
       isStreaming: null != Y && Y.channelId === g.id,
       isWatching: null != q && q.state !== Z.jm8.ENDED,
       isGuest: U,
-      isSelf: y.default.getId() === s.id,
+      isSelf: _.default.getId() === s.id,
       application: H ? z : void 0
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
       var n = Object.keys(e);
@@ -118,7 +118,7 @@ let R = [],
       tabIndex: h,
       location: f,
       numAudience: b,
-      withGuildIcon: _ = !1,
+      withGuildIcon: y = !1,
       className: C,
       children: j
     } = e, [O, E] = i.useState(null), [N, I] = i.useState(!1), P = i.useRef(null), T = (0, m.Es)(l.id, null != c ? c : R), k = i.useRef(new s.sW(50, () => {
@@ -154,7 +154,7 @@ let R = [],
         return (0, r.jsx)(w, {
           user: i,
           nick: o,
-          isSelfOnOtherClient: y.default.getId() === i.id && a.sessionId !== y.default.getSessionId(),
+          isSelfOnOtherClient: _.default.getId() === i.id && a.sessionId !== _.default.getSessionId(),
           mute: a.isVoiceMuted(),
           deaf: a.isVoiceDeafened(),
           video: a.selfVideo,
@@ -182,7 +182,7 @@ let R = [],
     return null == U && null == j ? null : (0, r.jsxs)(g.eJ, {
       className: o()(C, A.list, {
         [A.collapsed]: u,
-        [A.withGuildIcon]: _
+        [A.withGuildIcon]: y
       }),
       collapsed: u,
       children: [U, j]

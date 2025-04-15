@@ -24,9 +24,9 @@ function m(e) {
     userId: m,
     context: g,
     currentWindow: b = window,
-    location: y
+    location: _
   } = e, {
-    currentVolume: _,
+    currentVolume: y,
     muted: C
   } = (0, o.cj)([u.Z], () => ({
     currentVolume: u.Z.getLocalVolume(m, g),
@@ -38,14 +38,14 @@ function m(e) {
       iconClassName: l()(n, f.controlIcon),
       sliderClassName: i,
       className: t,
-      value: (0, d.P)(_),
+      value: (0, d.P)(y),
       muted: C,
       maxValue: p.isPlatformEmbedded ? 200 : 100,
       onValueChange: e => {
         e > 0 && C && a.Z.toggleLocalMute(m, g), a.Z.setLocalVolume(m, (0, d.A)(e), g)
       },
       onToggleMute: () => {
-        null != y && (0, s.v)(y, s.d.VOLUME, C), a.Z.toggleLocalMute(m, g)
+        null != _ && (0, s.v)(_, s.d.VOLUME, C), a.Z.toggleLocalMute(m, g)
       }
     })
   })

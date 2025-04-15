@@ -22,8 +22,8 @@ function f(e) {
     m = (0, i.e7)([a.Z], () => a.Z.getStatus(t)),
     g = (0, i.e7)([a.Z], () => a.Z.isMobileOnline(t)),
     b = (0, i.e7)([s.Z], () => s.Z.getNickname(t)),
-    y = u.ZP.useUserTag(f),
-    _ = (0, o.m$)({
+    _ = u.ZP.useUserTag(f),
+    y = (0, o.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
@@ -45,10 +45,10 @@ function f(e) {
       className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.DY3, {
-          text: y,
+          text: _,
           position: "bottom",
           children: null != b ? b : u.ZP.getName(f)
-        }), _ && (0, r.jsx)(l.ua7, {
+        }), y && (0, r.jsx)(l.ua7, {
           text: p.NW.string(p.t.QyZ4TU),
           children: e => {
             var t, n;

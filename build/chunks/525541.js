@@ -23,8 +23,8 @@ function u(e) {
     onReportSubmit: m,
     onMouseEnter: g,
     onMouseLeave: b
-  } = e, y = (0, a.Q)(t), _ = (0, s.V)(n.id, t);
-  if (!y || null == _) return null;
+  } = e, _ = (0, a.Q)(t), y = (0, s.V)(n.id, t);
+  if (!_ || null == y) return null;
   let C = () => {
     null == m || m(), l.Z.closePrivateChannel(n.id, h)
   };
@@ -32,9 +32,9 @@ function u(e) {
     className: d,
     size: u,
     color: i.zxk.Colors.RED,
-    disabled: null == _,
+    disabled: null == y,
     onClick: () => {
-      null == f || f(), (0, o.WL)(_, C)
+      null == f || f(), (0, o.WL)(y, C)
     },
     onMouseEnter: g,
     onMouseLeave: b,

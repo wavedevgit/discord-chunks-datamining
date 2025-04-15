@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -40,7 +40,7 @@ function g(e) {
 function b(e) {
   return e.matches("a") || "highlight" === e.className || e.className.includes("mention")
 }
-class y extends i.Component {
+class _ extends i.Component {
   render() {
     let {
       channel: e
@@ -120,4 +120,4 @@ class y extends i.Component {
     })
   }
 }
-let _ = y
+let y = _

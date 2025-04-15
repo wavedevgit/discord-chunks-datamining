@@ -21,8 +21,8 @@ function u(e) {
     onMouseLeave: m,
     premiumGlow: g,
     renderNUXHighlight: b,
-    buttonRef: y
-  } = e, _ = function(e, t) {
+    buttonRef: _
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -71,7 +71,7 @@ function u(e) {
     }
     return e
   }({
-    buttonRef: y,
+    buttonRef: _,
     label: t,
     disabled: !u,
     iconComponent: O,
@@ -85,5 +85,5 @@ function u(e) {
       null == m || m(e), E.onMouseLeave()
     },
     premiumGlow: g
-  }, _))
+  }, y))
 }

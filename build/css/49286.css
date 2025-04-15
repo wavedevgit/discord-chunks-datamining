@@ -1,6 +1,6 @@
 /**
   Module ID: 49286
-  Original File Name: 89a995853ea80a60
+  Original File Name: 56f172540f194c78
 **/
 .imageUploader_e4d0bf {
     font-size: 12px;
@@ -1351,10 +1351,6 @@
     justify-content: flex-start
 }
 
-.preview__6be55 {
-    display: contents
-}
-
 .guildRow__6be55 {
     align-items: center;
     display: flex;
@@ -1373,7 +1369,7 @@
     flex: 1;
     flex-direction: column;
     gap: 2px;
-    overflow: hidden
+    min-width: 0
 }
 
 .inviteTargetIcon__6be55 {
@@ -1386,12 +1382,6 @@
     flex: 1;
     gap: var(--space-xxs);
     overflow: hidden
-}
-
-.inviteTargetContent__6be55 {
-    align-items: center;
-    display: flex;
-    gap: 1ch
 }
 
 .guildPresence__6be55 {
@@ -2032,4 +2022,4 @@
     box-shadow: 0 1px 0 0 hsl(var(--primary-500-hsl)/.04)
 }
 
-/*# sourceMappingURL=89a995853ea80a60.css.map*/
+/*# sourceMappingURL=56f172540f194c78.css.map*/

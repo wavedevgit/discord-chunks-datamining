@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(271383),
   g = n(430824),
   b = n(594174),
-  y = n(251625),
-  _ = n(823379),
+  _ = n(251625),
+  y = n(823379),
   C = n(665149),
   x = n(981631),
   v = n(228168),
@@ -69,14 +69,14 @@ class N {
     channelId: n,
     analyticsLocations: i
   }) {
-    E(this, "userId", void 0), E(this, "user", void 0), E(this, "channelId", void 0), E(this, "analyticsLocations", void 0), E(this, "generateNicknameGuildPairs", (0, y.oH)(e => {
+    E(this, "userId", void 0), E(this, "user", void 0), E(this, "channelId", void 0), E(this, "analyticsLocations", void 0), E(this, "generateNicknameGuildPairs", (0, _.oH)(e => {
       var t;
       return o()(m.ZP.getNicknameGuildsMapping(null != (t = null == e ? void 0 : e.id) ? t : this.userId)).toPairs().map(e => {
         let [t, n] = e;
         return [t, n.map(e => {
           var t;
           return null == (t = g.Z.getGuild(e)) ? void 0 : t.name
-        }).filter(_.lm)]
+        }).filter(y.lm)]
       }).value()
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.DY3, {
       text: j.NW.string(j.t.UTjREx),

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(12779),
   g = n(450369),
   b = n(388032),
-  y = n(816395);
-let _ = {
+  _ = n(816395);
+let y = {
     singleSpeaker: 424,
     twoSpeakers: 624,
     threeSpeakers: 824
@@ -31,7 +31,7 @@ let _ = {
       speakerTileHeight: r
     }
   },
-  x = (e, t) => e < _.singleSpeaker ? 1 : e < _.twoSpeakers ? 2 : e < _.threeSpeakers || t ? 3 : 4,
+  x = (e, t) => e < y.singleSpeaker ? 1 : e < y.twoSpeakers ? 2 : e < y.threeSpeakers || t ? 3 : 4,
   v = e => Math.floor((e - 32) / 102);
 
 function j(e) {
@@ -41,7 +41,7 @@ let O = (0, o.Z)(e => {
   var t, n;
   let {
     channel: o,
-    width: _,
+    width: y,
     onScroll: O
   } = e, {
     selectedParticipantId: E,
@@ -51,14 +51,14 @@ let O = (0, o.Z)(e => {
     selectedParticipantId: a.Z.getSelectedParticipantId(o.id),
     largeStream: a.Z.getStageStreamSize(o.id),
     chatOpen: a.Z.getChatOpen(o.id)
-  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(_), k = x(_, I), M = {
+  }), [o.id]), P = (0, c.Io)(o.id), S = (0, c.Rk)(o.id, u.pV.AUDIENCE), Z = (0, l.e7)([s.Z], () => null != E ? s.Z.getParticipant(o.id, E) : null), T = (0, c.w8)(o.id, u.pV.SPEAKER), A = T.filter(j), w = null != T.find(e => e.type === u.Ui.STREAM), R = v(y), k = x(y, I), M = {
     [u.pV.SPEAKER]: k,
     [u.pV.AUDIENCE]: R,
     [u.pV.SELECTED]: 1
   }, L = (0, d.Dx)(o.id), [D, W] = (0, d.aP)(o.id, M, L), U = [Math.max(null != (t = D[0]) ? t : 1, 1), Math.max(null != (n = D[1]) ? n : 1, 1), D[2]], {
     speakerTileWidth: B,
     speakerTileHeight: G
-  } = C(_, k), F = N ? _ - 32 : Math.min(_ - 64, 3 * B + 8), H = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
+  } = C(y, k), F = N ? y - 32 : Math.min(y - 64, 3 * B + 8), H = e => e === D.length - 1 || 0 === S && 1 === e, [V, z] = i.useState(!1), [Y, q] = i.useState(!1);
   return (0, r.jsx)(h.Z, {
     sections: U,
     renderSection: e => {
@@ -68,7 +68,7 @@ let O = (0, o.Z)(e => {
       return 1 === t ? 0 === P ? null : (0, r.jsx)(m.Z, {
         participantCount: P,
         label: b.NW.string(b.t.CduOk5),
-        className: y.header,
+        className: _.header,
         onClick: () => z(!V),
         collapsed: V,
         speakers: A,
@@ -77,7 +77,7 @@ let O = (0, o.Z)(e => {
       }, "speaker-header-".concat(t)) : 2 === t ? 0 === S ? null : (0, r.jsx)(m.Z, {
         participantCount: S,
         label: b.NW.string(b.t["3foUu7"]),
-        className: y.header,
+        className: _.header,
         onClick: () => q(!Y),
         collapsed: Y,
         channel: o
@@ -94,7 +94,7 @@ let O = (0, o.Z)(e => {
         case 0:
           if (0 === l.length || null == l[0]) return null;
           return (0, r.jsx)("div", {
-            className: y.focusedRow,
+            className: _.focusedRow,
             children: (0, r.jsx)(g.Z, {
               channel: o,
               participant: l[0],
@@ -128,11 +128,11 @@ let O = (0, o.Z)(e => {
         section: t
       } = e;
       return H(t) ? (0, r.jsx)("div", {
-        className: y.spacer
+        className: _.spacer
       }, "bottom-spacer") : null
     },
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!H(e),
-    className: y.scroller,
+    className: _.scroller,
     chunkSize: 60,
     onScroll: O
   })

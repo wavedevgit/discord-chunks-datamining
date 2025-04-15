@@ -23,8 +23,8 @@ function b(e) {
     channelId: t,
     onClose: n,
     appContext: b,
-    exitFullScreen: y,
-    onSelect: _,
+    exitFullScreen: _,
+    onSelect: y,
     onInteraction: C
   } = e, x = (0, i.e7)([s.Z], () => s.Z.getSelectedParticipant(t)), v = (null == x ? void 0 : x.type) === m.fO.STREAM ? x.stream : null, j = (0, i.e7)([o.Z], () => (null == x ? void 0 : x.type) === m.fO.ACTIVITY ? o.Z.getApplication(x.applicationId) : void 0), O = (0, c.Z)(t), E = (0, d.Z)(), N = (0, u.Z)(t), I = (0, f.Z)(t), P = (0, p.Z)(j, t), S = (0, a.Z)({
     id: null == j ? void 0 : j.id,
@@ -34,9 +34,9 @@ function b(e) {
     navId: "channel-call-overflow-popout",
     onClose: n,
     "aria-label": g.NW.string(g.t.pkYeAw),
-    onSelect: _,
+    onSelect: y,
     onInteraction: C,
-    children: [O, E, N, I, (0, h.Z)(v, b, y), P, (0, r.jsx)(l.kSQ, {
+    children: [O, E, N, I, (0, h.Z)(v, b, _), P, (0, r.jsx)(l.kSQ, {
       children: S
     })]
   })

@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -18,10 +18,10 @@ var r = n(200651),
   g = n(388032),
   b = n(12740);
 
-function y(e) {
+function _(e) {
   let {
     member: t
-  } = e, n = (0, l.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), y = (0, c.mh)(t.userId, t.guildId), _ = (0, c.mV)(t.userId, t.guildId), C = (0, c.LD)(t.userId), x = (0, c.wi)(t.userId, t.guildId);
+  } = e, n = (0, l.e7)([d.Z], () => d.Z.getGuild(t.guildId), [t.guildId]), _ = (0, c.mh)(t.userId, t.guildId), y = (0, c.mV)(t.userId, t.guildId), C = (0, c.LD)(t.userId), x = (0, c.wi)(t.userId, t.guildId);
   return (i.useEffect(() => {
     (0, s.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(o.xJW, {
@@ -39,7 +39,7 @@ function y(e) {
           color: "text-normal",
           children: g.NW.string(g.t.nzGai4)
         }),
-        description: y ? (0, r.jsx)(o.sV5, {
+        description: _ ? (0, r.jsx)(o.sV5, {
           size: "custom",
           width: f.Mn,
           height: f.Mn,
@@ -50,7 +50,7 @@ function y(e) {
           height: f.Mn,
           color: o.TVs.colors.INFO_DANGER_FOREGROUND
         })
-      }), _ !== c.qc.NO_GATE && (0, r.jsx)(f._2, {
+      }), y !== c.qc.NO_GATE && (0, r.jsx)(f._2, {
         icon: (0, r.jsx)(o.snC, {
           size: "custom",
           width: f.Mn,
@@ -61,7 +61,7 @@ function y(e) {
           color: "text-normal",
           children: g.NW.string(g.t["93hqlp"])
         }),
-        description: _ === c.qc.AGREED ? (0, r.jsx)(o.sV5, {
+        description: y === c.qc.AGREED ? (0, r.jsx)(o.sV5, {
           size: "custom",
           width: f.Mn,
           height: f.Mn,

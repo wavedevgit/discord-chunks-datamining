@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(937995),
   g = n(199902),
   b = n(131951),
-  y = n(594174),
-  _ = n(63063),
+  _ = n(594174),
+  y = n(63063),
   C = n(5192),
   x = n(823961),
   v = n(981631),
@@ -53,7 +53,7 @@ function S(e) {
     buyer: l,
     onClose: a,
     dismissibleContent: S
-  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([y.default], () => y.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
+  } = e, Z = (0, u.Wu)([g.Z], () => g.Z.getAllActiveStreams()), T = (0, u.e7)([_.default], () => _.default.getCurrentUser()), A = null != Z.find(e => e.ownerId === (null == T ? void 0 : T.id)), w = (0, u.e7)([x.Z], () => x.Z.getPreviousGoLiveSettings()), R = A && null != w && w.resolution !== j.LY.RESOLUTION_1440 && w.frameRate !== j.ws.FPS_60, [k, M] = (0, i.useState)(!1);
   (0, i.useEffect)(() => {
     M(!0)
   }, []);
@@ -89,10 +89,10 @@ function S(e) {
     V = S ? O.NW.format(O.t["6LrV9f"], {
       username: B,
       num: H,
-      helpCenterLink: _.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
+      helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : l.id === T.id ? O.NW.string(O.t.IjKvNT) : !0 === A ? O.NW.format(O.t.JkWoqK, {
       username: B,
-      helpCenterLink: _.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
+      helpCenterLink: y.Z.getArticleURL(v.BhN.HD_STREAMING_POTION)
     }) : O.NW.formatToPlainString(O.t.vNbVXF, {
       username: B
     }),

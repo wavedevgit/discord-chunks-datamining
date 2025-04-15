@@ -19,8 +19,8 @@ var r = n(200651),
   m = n(565138),
   g = n(703656),
   b = n(699516),
-  y = n(914010),
-  _ = n(594174),
+  _ = n(914010),
+  y = n(594174),
   C = n(768581),
   x = n(63063),
   v = n(946734),
@@ -131,7 +131,7 @@ function A(e) {
     handleParentClick: f,
     handleParentContextMenu: m,
     renderFollowButton: g
-  } = e, y = (0, h.KS)(t, a), {
+  } = e, _ = (0, h.KS)(t, a), {
     prefix: C,
     level: x
   } = function(e, t) {
@@ -198,14 +198,14 @@ function A(e) {
     case I.d4z.GUILD_MEDIA:
       return null != t.linkedLobby ? (0, r.jsxs)(T, {
         channel: t,
-        children: [k(y, t.type === I.d4z.GUILD_ANNOUNCEMENT ? S.NW.string(S.t.l1dkSE) : S.NW.string(S.t.Pnajj4)), (0, r.jsx)(E.Z.Title, {
+        children: [k(_, t.type === I.d4z.GUILD_ANNOUNCEMENT ? S.NW.string(S.t.l1dkSE) : S.NW.string(S.t.Pnajj4)), (0, r.jsx)(E.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
           children: v
         })]
       }) : (0, r.jsxs)(i.Fragment, {
-        children: [k(y, t.type === I.d4z.GUILD_ANNOUNCEMENT ? S.NW.string(S.t.l1dkSE) : S.NW.string(S.t.Pnajj4)), (0, r.jsx)(E.Z.Title, {
+        children: [k(_, t.type === I.d4z.GUILD_ANNOUNCEMENT ? S.NW.string(S.t.l1dkSE) : S.NW.string(S.t.Pnajj4)), (0, r.jsx)(E.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -214,7 +214,7 @@ function A(e) {
       });
     case I.d4z.GUILD_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [k(y, S.NW.string(S.t.BVZqJi)), (0, r.jsx)(E.Z.Title, {
+        children: [k(_, S.NW.string(S.t.BVZqJi)), (0, r.jsx)(E.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -223,7 +223,7 @@ function A(e) {
       });
     case I.d4z.GUILD_STAGE_VOICE:
       return (0, r.jsxs)(i.Fragment, {
-        children: [k(y, S.NW.string(S.t.EErMzM)), (0, r.jsx)(E.Z.Title, {
+        children: [k(_, S.NW.string(S.t.EErMzM)), (0, r.jsx)(E.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -242,13 +242,13 @@ function A(e) {
             onContextMenu: m,
             onClick: f,
             className: o()(Z.parentChannelName, Z.cursorPointer),
-            children: (0, p.F6)(l, _.default, b.Z)
+            children: (0, p.F6)(l, y.default, b.Z)
           }), (0, r.jsx)(E.Z.Caret, {})]
         })
       }
       let P = (null == l ? void 0 : l.type) != null && I.TPd.GUILD_THREADS_ONLY.has(l.type);
       return (0, r.jsxs)(i.Fragment, {
-        children: [O, k(P ? null : y, S.NW.string(S.t["7Xm5QE"])), (0, r.jsx)(E.Z.Title, {
+        children: [O, k(P ? null : _, S.NW.string(S.t["7Xm5QE"])), (0, r.jsx)(E.Z.Title, {
           level: x,
           onContextMenu: d,
           onClick: u,
@@ -264,9 +264,9 @@ function A(e) {
         guildName: n
       }) : n;
       return (0, r.jsxs)(i.Fragment, {
-        children: [null !== y ? (0, r.jsx)(E.Z.Icon, {
+        children: [null !== _ ? (0, r.jsx)(E.Z.Icon, {
           iconClassName: Z.__invalid_icon,
-          icon: y,
+          icon: _,
           "aria-hidden": !0
         }) : null, (0, r.jsxs)(E.Z.Title, {
           level: x,
@@ -284,7 +284,7 @@ function A(e) {
 let w = e => {
   let {
     channel: t
-  } = e, n = (0, a.e7)([_.default], () => _.default.getCurrentUser()), i = (0, a.e7)([_.default], () => _.default.getUser(t.getRecipientId()));
+  } = e, n = (0, a.e7)([y.default], () => y.default.getCurrentUser()), i = (0, a.e7)([y.default], () => y.default.getUser(t.getRecipientId()));
   return t.isDM() && (null == n ? void 0 : n.isStaff()) && (null == i ? void 0 : i.isStaff()) ? (0, r.jsx)(d.Z, {
     type: d.Z.Types.STAFF_ONLY_DM
   }) : null
@@ -332,7 +332,7 @@ function M(e) {
     channel: n,
     caretPosition: i = "left"
   } = e;
-  return (0, a.e7)([y.Z], () => y.Z.getGuildId()) !== I.I_8 || null == t ? null : (0, r.jsxs)("div", {
+  return (0, a.e7)([_.Z], () => _.Z.getGuildId()) !== I.I_8 || null == t ? null : (0, r.jsxs)("div", {
     className: Z.guildBreadcrumbContainer,
     children: ["left" === i && (0, r.jsx)(E.Z.Caret, {
       direction: "left"

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(320007),
   g = n(236091),
   b = n(540059),
-  y = n(569545),
-  _ = n(517525),
+  _ = n(569545),
+  y = n(517525),
   C = n(665149),
   x = n(6242),
   v = n(757692),
@@ -147,11 +147,11 @@ function $(e) {
   }), em = (0, b.Q3)("ChannelCallHeaderToolbar"), {
     preventIdle: eg,
     allowIdle: eb
-  } = (0, S.Y)("popup"), ey = [];
+  } = (0, S.Y)("popup"), e_ = [];
   if (ea && !ed && !ee) {
-    let e = (null == er ? void 0 : er.type) === z.fO.STREAM ? (0, y.my)(er.id) : void 0,
+    let e = (null == er ? void 0 : er.type) === z.fO.STREAM ? (0, _.my)(er.id) : void 0,
       t = (null == er ? void 0 : er.type) === z.fO.ACTIVITY ? er.applicationId : void 0;
-    ey.push((0, r.jsx)(R.Z, {
+    e_.push((0, r.jsx)(R.Z, {
       className: K.button,
       channel: n,
       applicationId: t,
@@ -161,22 +161,22 @@ function $(e) {
       shouldPrioritizeGroupPlusIcon: !0
     }, "invite-button"))
   }
-  return en && ey.push((0, r.jsx)(J, {
+  return en && e_.push((0, r.jsx)(J, {
     channelId: et,
     guildId: n.guild_id
-  }, "current-speaker")), ey.push((0, r.jsx)(g.Z, {
+  }, "current-speaker")), e_.push((0, r.jsx)(g.Z, {
     className: K.button,
     channelId: et
-  }, "clips-enabled-indicator")), (null == er ? void 0 : er.type) === z.fO.STREAM && (ey.push((0, r.jsx)(P.Z, {
+  }, "clips-enabled-indicator")), (null == er ? void 0 : er.type) === z.fO.STREAM && (e_.push((0, r.jsx)(P.Z, {
     className: K.button,
     participant: er
-  }, "warning")), ey.push((0, r.jsx)(_.Z, {
+  }, "warning")), e_.push((0, r.jsx)(y.Z, {
     size: f.ZP.Sizes.LARGE,
     className: K.button,
     participant: er,
     showQuality: !0,
     premiumIndicator: ec.enabled
-  }, "live-indicator"))), en && !ed && ey.push((0, r.jsx)(u.yRy, {
+  }, "live-indicator"))), en && !ed && e_.push((0, r.jsx)(u.yRy, {
     targetElementRef: L,
     position: "bottom",
     renderPopout: () => (0, r.jsx)(Z.Z, {
@@ -196,22 +196,22 @@ function $(e) {
         className: K.button
       }))
     }
-  }, "call-members-popout")), a && !ee && ey.push(null != er ? (0, r.jsx)(w.Z, {
+  }, "call-members-popout")), a && !ee && e_.push(null != er ? (0, r.jsx)(w.Z, {
     className: K.button,
     channelId: et
   }, "deselect-participant") : (0, r.jsx)(M.Z, {
     className: K.button,
     channelId: et,
     isHorizontal: !0
-  }, "select-participant")), !em && (t || ey.push((0, r.jsx)(m.Z, {
+  }, "select-participant")), !em && (t || e_.push((0, r.jsx)(m.Z, {
     className: K.button
-  }, "clips")), ee || ey.push((0, r.jsx)(j.Z, {
+  }, "clips")), ee || e_.push((0, r.jsx)(j.Z, {
     onOpen: eg,
     onClose: eb,
     className: K.button
-  }, "recents"))), eh && !ef && ey.push((0, r.jsx)(E.Z, {
+  }, "recents"))), eh && !ef && e_.push((0, r.jsx)(E.Z, {
     className: K.button
-  }, "for-later")), ee || ey.push((0, r.jsx)(u.yRy, {
+  }, "for-later")), ee || e_.push((0, r.jsx)(u.yRy, {
     targetElementRef: D,
     position: "bottom",
     renderPopout: e => {
@@ -242,14 +242,14 @@ function $(e) {
         className: K.lastButton
       }))
     }
-  }, "more-options-popout")), (ep || eu) && !ee && ey.push((0, r.jsx)(C.ZP.Divider, {
+  }, "more-options-popout")), (ep || eu) && !ee && e_.push((0, r.jsx)(C.ZP.Divider, {
     className: K.divider
-  }, "divider")), ep && ey.push((0, r.jsx)(k.Z, {
+  }, "divider")), ep && e_.push((0, r.jsx)(k.Z, {
     className: o()(K.button, {
       [K.lastButton]: s
     }),
     onClick: () => d.Z.toggleParticipantsList(n.id, !el)
-  }, "participants-list-button")), eu && ey.push((0, r.jsx)(T.T, {
+  }, "participants-list-button")), eu && e_.push((0, r.jsx)(T.T, {
     channelId: n.id,
     className: o()(K.button, {
       [K.lastButton]: el
@@ -257,6 +257,6 @@ function $(e) {
     disabled: s
   }, "chat-spacer")), (0, r.jsx)(h.Gt, {
     value: q,
-    children: ey
+    children: e_
   })
 }

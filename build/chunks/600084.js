@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(189156),
   g = n(878857),
   b = n(621853),
-  y = n(484459),
-  _ = n(131704),
+  _ = n(484459),
+  y = n(131704),
   C = n(881998),
   x = n(984933),
   v = n(496675),
@@ -51,7 +51,7 @@ function G(e) {
   if (n.isForumPost()) return (0, r.jsx)(I.Z, {
     channel: n
   });
-  if (_.Ec.has(n.type)) return (0, r.jsx)(k.Z, {
+  if (y.Ec.has(n.type)) return (0, r.jsx)(k.Z, {
     channel: n
   });
   if (o) return (0, r.jsx)(M.Z, {
@@ -70,7 +70,7 @@ function F(e) {
   let {
     channel: p,
     showingBanner: h
-  } = e, _ = (0, d.ZP)(p), {
+  } = e, y = (0, d.ZP)(p), {
     type: x
   } = p, I = (0, l.e7)([j.default], () => p.isPrivate() ? j.default.getUser(p.getRecipientId()) : null), A = O.ZP.useUserTag(I), {
     canManageRoles: R,
@@ -97,7 +97,7 @@ function F(e) {
     location: "EmptyMessages"
   }).enabledDesktop;
   if (i.useEffect(() => {
-      x === L.d4z.DM && null == M && null != I && a.Z.wait(() => (0, y.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
+      x === L.d4z.DM && null == M && null != I && a.Z.wait(() => (0, _.Z)(p.getRecipientId(), I.getAvatarURL(null, 80), {
         withMutualGuilds: !0
       }))
     }, [M, x, p, I]), i.useEffect(() => {
@@ -139,7 +139,7 @@ function F(e) {
         className: B.marginBottom20,
         children: A
       }), W.NW.format(W.t["Qvg+6+"], {
-        username: _
+        username: y
       }), (null == I ? void 0 : I.isProvisional) && (0, r.jsx)(m.qE, {
         userId: I.id
       }), e]
@@ -150,7 +150,7 @@ function F(e) {
       channelId: p.id,
       children: [(0, r.jsx)(N.Ot, {
         children: W.NW.format(W.t.I3R7Vl, {
-          channelName: _
+          channelName: y
         })
       }), (0, r.jsx)(N.jz, {
         children: W.NW.string(W.t.M8Ao6O)
@@ -162,7 +162,7 @@ function F(e) {
   else return (0, r.jsx)(T.Z, {
     channel: p,
     children: W.NW.format(W.t.MFwcqK, {
-      name: _
+      name: y
     })
   });
   return k ? (0, r.jsx)(G, {
@@ -172,7 +172,7 @@ function F(e) {
     channelId: p.id,
     children: (0, r.jsx)(N.jz, {
       children: W.NW.format(W.t.hPVEQE, {
-        channelName: _
+        channelName: y
       })
     })
   })

@@ -23,8 +23,8 @@ function m(e) {
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: y,
-    checked: _,
+    selected: _,
+    checked: y,
     onClick: C,
     onMouseEnter: x,
     "aria-setsize": v,
@@ -58,13 +58,13 @@ function m(e) {
     }
   }, E), n = n = {
     role: "option",
-    "aria-selected": _,
+    "aria-selected": y,
     "aria-setsize": v,
     "aria-posinset": j,
     children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
       className: l()(f.friend, {
-        [f.friendSelected]: y
+        [f.friendSelected]: _
       }),
       children: [(0, r.jsx)(u.Z, {
         user: i,
@@ -90,7 +90,7 @@ function m(e) {
       }), (0, r.jsx)(s.XZJ, {
         displayOnly: !0,
         size: 22,
-        value: _,
+        value: y,
         className: f.checkbox
       })]
     })

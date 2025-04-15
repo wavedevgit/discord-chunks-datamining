@@ -18,8 +18,8 @@ var i = n(120356),
   m = n(540059),
   g = n(359110),
   b = n(430824),
-  y = n(933557),
-  _ = n(354459),
+  _ = n(933557),
+  y = n(354459),
   C = n(388032),
   x = n(249671);
 
@@ -27,14 +27,14 @@ function v(e) {
   let {
     recipientUser: t,
     voiceChannel: n
-  } = e, i = (0, y.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
+  } = e, i = (0, _.ZP)(n), s = (0, h.s)(t, "RingToVoiceBanner", n.id), {
     userIsInCall: u,
     isUserRinging: m
   } = (0, a.cj)([p.Z], () => {
     let e = null;
     return s && null != n.id && (e = p.Z.getParticipant(n.id, t.id)), {
       userIsInCall: null != e,
-      isUserRinging: null != e && e.type === _.fO.USER && e.ringing
+      isUserRinging: null != e && e.type === y.fO.USER && e.ringing
     }
   }), g = (0, a.e7)([b.Z], () => b.Z.getGuild(n.guild_id)), v = null != g ? g.getIconURL(32, !0) : null, O = !s || u && !m;
   return ((0, d.Z)({

@@ -21,8 +21,8 @@ let d = function(e) {
     onButtonClick: m,
     imageSrc: g,
     animationSrc: b,
-    secondaryButtonText: y,
-    onSecondaryButtonClick: _,
+    secondaryButtonText: _,
+    onSecondaryButtonClick: y,
     children: C,
     useReducedMotion: x = !1
   } = e, v = (0, o.e7)([c.ZP], () => c.ZP.getState().isMembersOpen);
@@ -57,14 +57,14 @@ let d = function(e) {
       })]
     }), (0, r.jsxs)("div", {
       className: u.buttonContainer,
-      children: [null != y && (0, r.jsx)(a.zxk, {
+      children: [null != _ && (0, r.jsx)(a.zxk, {
         className: u.button,
         size: a.zxk.Sizes.SMALL,
-        onClick: _,
+        onClick: y,
         look: a.zxk.Looks.LINK,
         color: a.zxk.Colors.PRIMARY,
         submitting: f,
-        children: y
+        children: _
       }), null != p && (0, r.jsx)(a.zxk, {
         className: u.button,
         innerClassName: u.innerButton,

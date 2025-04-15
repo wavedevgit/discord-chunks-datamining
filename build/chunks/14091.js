@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(695346),
   g = n(768119),
   b = n(944486),
-  y = n(585483),
-  _ = n(251285),
+  _ = n(585483),
+  y = n(251285),
   C = n(406326),
   x = n(994463),
   v = n(619753),
@@ -101,10 +101,10 @@ let S = e => {
 };
 class Z extends i.PureComponent {
   componentDidMount() {
-    y.S.subscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    _.S.subscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentWillUnmount() {
-    y.S.unsubscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
+    _.S.unsubscribe(j.CkL.SEARCH_RESULTS_CLOSE, this.handleSearchResultsClose)
   }
   componentDidUpdate(e) {
     let {
@@ -296,7 +296,7 @@ function T(e) {
   }, (0, c.cj)([g.Z], () => ({
     searchAnalyticsId: g.Z.getAnalyticsId(i),
     searchType: g.Z.getSearchType()
-  }), [i]), (0, _.Z)(i)), n = n = {
+  }), [i]), (0, y.Z)(i)), n = n = {
     renderEmbeds: m.NA.useSetting(),
     developerMode: m.Sb.useSetting()
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

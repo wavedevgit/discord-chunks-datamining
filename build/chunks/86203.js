@@ -26,7 +26,7 @@ function c(e) {
     message: b
   } = (0, a.a)(t);
   if (null == b && (g || m)) return null;
-  let y = () => {
+  let _ = () => {
     null == p || p(), l.Z.closePrivateChannel(t.id)
   };
   return (0, r.jsx)(i.zxk, {
@@ -35,7 +35,7 @@ function c(e) {
     color: c,
     disabled: null == b,
     onClick: e => {
-      e.stopPropagation(), null == d || d(), null != b && (0, o.WL)(b, y)
+      e.stopPropagation(), null == d || d(), null != b && (0, o.WL)(b, _)
     },
     onMouseEnter: h,
     onMouseLeave: f,

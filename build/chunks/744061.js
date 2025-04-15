@@ -21,8 +21,8 @@ function m(e) {
     onConfirm: m,
     onCancel: g,
     channel: b,
-    analyticsType: y,
-    popoutText: _,
+    analyticsType: _,
+    popoutText: y,
     animation: C
   } = e;
   i.useEffect(() => {
@@ -44,9 +44,9 @@ function m(e) {
       }
       return e
     }({
-      type: y
+      type: _
     }, (0, s.v_)(b)))
-  }, [y, b]);
+  }, [_, b]);
   let x = i.useCallback(() => {
       null == m || m(), t()
     }, [m, t]),
@@ -90,7 +90,7 @@ function m(e) {
             id: "content-warning-popout-label",
             className: f.markup,
             variant: "text-sm/normal",
-            children: _.body
+            children: y.body
           }), (0, r.jsxs)("div", {
             className: h.buttonWrapper,
             children: [(0, r.jsxs)("div", {
@@ -121,7 +121,7 @@ function m(e) {
             })]
           })]
         })]
-      }), null != _.footer && "" !== _.footer ? (0, r.jsxs)("div", {
+      }), null != y.footer && "" !== y.footer ? (0, r.jsxs)("div", {
         className: h.footer,
         children: [(0, r.jsx)(a.d3s, {
           size: "xs",
@@ -129,7 +129,7 @@ function m(e) {
           className: h.icon
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: _.footer
+          children: y.footer
         })]
       }) : null]
     })

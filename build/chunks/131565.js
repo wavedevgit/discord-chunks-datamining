@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -62,7 +62,7 @@ function b(e) {
   }) : null
 }
 
-function y(e) {
+function _(e) {
   let {
     channel: t
   } = e, n = (0, h.Z)(t.id);

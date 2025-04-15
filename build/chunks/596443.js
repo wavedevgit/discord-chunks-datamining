@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(422559),
   g = n(271383),
   b = n(430824),
-  y = n(496675),
-  _ = n(594174),
+  _ = n(496675),
+  y = n(594174),
   C = n(233608),
   x = n(370595),
   v = n(351127),
@@ -32,13 +32,13 @@ function I(e) {
   let {
     permission: s,
     roleIds: g,
-    guild: _,
+    guild: y,
     specMap: C,
     categoryTitle: x,
     userId: E
-  } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(_.id)), P = j.Plq[s], S = null != (l = null == (t = C[P.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(P), Z = null != (a = null == (n = C[P.toString()]) ? void 0 : n.description) ? a : "", T = v._o.has(P), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([y.Z], () => y.Z.can(j.Plq.MANAGE_ROLES, _), [_]), k = i.useCallback(async e => {
-    R && (await f.Z.open(_.id, j.pNK.ROLES), await f.Z.selectRole(e))
-  }, [R, _.id]);
+  } = e, I = (0, c.e7)([b.Z], () => b.Z.getRoles(y.id)), P = j.Plq[s], S = null != (l = null == (t = C[P.toString()]) ? void 0 : t.title) ? l : (0, m.wt)(P), Z = null != (a = null == (n = C[P.toString()]) ? void 0 : n.description) ? a : "", T = v._o.has(P), A = v.Qn.includes(s), w = g.length, R = (0, c.e7)([_.Z], () => _.Z.can(j.Plq.MANAGE_ROLES, y), [y]), k = i.useCallback(async e => {
+    R && (await f.Z.open(y.id, j.pNK.ROLES), await f.Z.selectRole(e))
+  }, [R, y.id]);
   return (0, r.jsxs)("div", {
     className: o()(N.permissionItemContainer, {
       [N.elevatedPermission]: T
@@ -153,12 +153,12 @@ function I(e) {
         })
       }, e) : (0, r.jsx)(u.P3F, {
         className: o()(N.roleTooltipItem, {
-          [N.editable]: R && !(0, d.pM)(_.id, e)
+          [N.editable]: R && !(0, d.pM)(y.id, e)
         }),
         onClick: () => k(e),
         children: (0, r.jsx)(h.Z, {
           role: I[e],
-          guildId: _.id,
+          guildId: y.id,
           className: N.roleChiplet
         })
       }, e))
@@ -177,7 +177,7 @@ function S(e) {
     location: l,
     className: a,
     onNavigate: d
-  } = e, p = (0, c.e7)([_.default], () => _.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), y = (0, v.B2)(t, n, v.pd), S = Object.keys(y).length, Z = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, k] = i.useState(""), M = i.useMemo(() => s()(k, 300), []), L = i.useCallback(e => {
+  } = e, p = (0, c.e7)([y.default], () => y.default.getUser(t), [t]), h = (0, c.e7)([b.Z], () => b.Z.getGuild(n), [n]), f = (0, c.e7)([g.ZP], () => g.ZP.getMember(n, t), [n, t]), _ = (0, v.B2)(t, n, v.pd), S = Object.keys(_).length, Z = i.useMemo(() => null != h ? C.Z.getGuildPermissionSpecMap(h) : null, [h]), T = i.useMemo(() => null != h ? C.Z.generateGuildPermissionSpec(h) : null, [h]), [A, w] = i.useState(""), [R, k] = i.useState(""), M = i.useMemo(() => s()(k, 300), []), L = i.useCallback(e => {
     w(e), M(e)
   }, [M]), D = i.useCallback(() => {
     w(""), k("")
@@ -193,7 +193,7 @@ function S(e) {
         let l = i.flag,
           o = v.pd.find(e => j.Plq[e] === l);
         if (null == o) return;
-        let a = y[o];
+        let a = _[o];
         if (null != a) {
           if (R.length > 0) {
             var s, c, u, d, p;
@@ -206,8 +206,8 @@ function S(e) {
               f = P(R, e),
               g = P(R, t),
               b = P(R, r),
-              y = null != h && P(R, h);
-            if (!f && !g && !b && !y) return
+              _ = null != h && P(R, h);
+            if (!f && !g && !b && !_) return
           }
           e.push((0, r.jsx)(I, {
             permission: o,
@@ -220,7 +220,7 @@ function S(e) {
         }
       })
     }), e
-  }, [h, Z, f, S, T, y, R, t]);
+  }, [h, Z, f, S, T, _, R, t]);
   return null == p || null == f ? null : (0, r.jsxs)("div", {
     className: o()(E.container, a),
     children: [(0, r.jsx)(x.Z, {

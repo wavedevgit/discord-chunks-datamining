@@ -27,20 +27,20 @@ var r = n(200651),
   P = n(915298);
 
 function C(e) {
-  return e.isActiveThread() ? (0, r.jsx)(w, {
+  return e.isActiveThread() ? (0, r.jsx)(I, {
     channel: e
   }) : (0, r.jsx)(S, {
     channel: e
   })
 }
 
-function w(e) {
+function I(e) {
   let {
     channel: t
   } = e, n = (0, l.e7)([p.Z], () => p.Z.getMostRecentMessage(t.id));
   return null == n ? (0, r.jsx)(O, {
     channel: t
-  }) : (0, r.jsx)(I, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     message: n
   })
@@ -58,7 +58,7 @@ function O(e) {
   })
 }
 
-function I(e) {
+function w(e) {
   let {
     channel: t,
     message: n
@@ -83,11 +83,11 @@ function I(e) {
       isBlocked: j.Z.isBlockedForMessage(n),
       isIgnored: j.Z.isIgnoredForMessage(n)
     }), [n]),
-    w = (0, d.p)(),
+    I = (0, d.p)(),
     O = a.useMemo(() => {
       let e = null != n.content && "" !== n.content ? (0, u.ZP)(n, {
           formatInline: !0,
-          shouldFilterKeywords: w
+          shouldFilterKeywords: I
         }).content : null,
         {
           contentPlaceholder: t,
@@ -104,7 +104,7 @@ function I(e) {
           children: t
         }), l]
       })
-    }, [n, y, C, w]);
+    }, [n, y, C, I]);
   return (0, r.jsxs)(s.Text, {
     className: P.subtext,
     variant: "text-sm/normal",

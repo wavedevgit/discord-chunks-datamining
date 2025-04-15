@@ -32,12 +32,12 @@ function d(e) {
     maintainFocusPosition: m = !0,
     includeSetSizes: g = !0,
     focusOnMount: b = !0,
-    enabled: y = !0,
-    onDispatch: _
+    enabled: _ = !0,
+    onDispatch: y
   } = e, C = r.useCallback((e, t) => {
     let n = (0, i.Z)(e, t);
-    return null != _ && _(e, n, t), n
-  }, [_]), [x, v] = r.useReducer(C, {
+    return null != y && y(e, n, t), n
+  }, [y]), [x, v] = r.useReducer(C, {
     focusedIndex: d,
     itemCount: n
   }), {
@@ -61,16 +61,16 @@ function d(e) {
         dispatch: m,
         maintainFocusPosition: g,
         includeSetSizes: b,
-        focusOnMount: y,
-        enabled: _,
+        focusOnMount: _,
+        enabled: y,
         makeId: C = o.qR,
         getIndexFromId: x
       } = e, v = r.useRef(n), j = r.useRef(x);
       j.current = x, v.current = n;
-      let O = r.useRef(_);
+      let O = r.useRef(y);
       r.useEffect(() => {
-        O.current = _
-      }, [_]);
+        O.current = y
+      }, [y]);
       let [E, N] = r.useState(!1), [I] = r.useState(() => new o.$o(e => () => {
         let t = null != j.current && "string" == typeof e ? j.current(e) : e;
         "number" != typeof t || t < 0 || m({
@@ -84,7 +84,7 @@ function d(e) {
         }, [h]),
         [S, Z] = r.useState(!0);
       r.useEffect(() => {
-        if (S && !y) return void Z(!1);
+        if (S && !_) return void Z(!1);
         P(C(t, d), d)
       }, [d]);
       let T = r.useCallback(function() {
@@ -189,6 +189,6 @@ function d(e) {
       maintainFocusPosition: m,
       includeSetSizes: g,
       focusOnMount: b,
-      enabled: y
+      enabled: _
     })
 }

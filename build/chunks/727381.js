@@ -18,13 +18,13 @@ var i = n(120356),
   m = n(908474),
   g = n(467014),
   b = n(388032),
-  y = n(12740);
+  _ = n(12740);
 
-function _() {
+function y() {
   return (0, r.jsxs)("div", {
-    className: y.header,
+    className: _.header,
     children: [(0, r.jsxs)("div", {
-      className: y.headerTitle,
+      className: _.headerTitle,
       children: [(0, r.jsx)(u.Z, {
         width: 16,
         height: 16
@@ -35,8 +35,8 @@ function _() {
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.M2$, {
         shortcut: "esc",
-        keyClassName: y.keyComboInner,
-        className: y.keyComboContainer
+        keyClassName: _.keyComboInner,
+        className: _.keyComboContainer
       })
     })]
   })
@@ -51,9 +51,9 @@ function C(e) {
     onNavigate: b
   } = e, C = (0, o.e7)([c.default], () => c.default.getUser(t), [t]), x = (0, o.e7)([s.ZP], () => s.ZP.getMember(n, t), [n, t]);
   return null == C || null == x ? null : (0, r.jsxs)("div", {
-    className: l()(y.container, u),
-    children: [(0, r.jsx)(_, {}), (0, r.jsxs)(a.Ttm, {
-      className: y.innerContainer,
+    className: l()(_.container, u),
+    children: [(0, r.jsx)(y, {}), (0, r.jsxs)(a.Ttm, {
+      className: _.innerContainer,
       children: [(0, r.jsx)(m.Z, {
         member: x
       }), (0, r.jsx)(g.Z, {

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(333535),
   g = n(566006),
   b = n(443877),
-  y = n(60174),
-  _ = n(216337),
+  _ = n(60174),
+  y = n(216337),
   C = n(920888),
   x = n(287151),
   v = n(569471),
@@ -167,7 +167,7 @@ function M(e) {
           useChatFontScaling: !1,
           isForumToolbar: !0,
           forceHideReactionCreates: !0
-        }), !K && (0, r.jsx)(y.X, {
+        }), !K && (0, r.jsx)(_.X, {
           type: g.O.NORMAL,
           message: z,
           channel: V,
@@ -234,7 +234,7 @@ function M(e) {
       })]
     }), et && (0, r.jsx)(m.Z, {
       threadId: t
-    }), (0, r.jsx)(_.Z, {
+    }), (0, r.jsx)(y.Z, {
       channel: V,
       isLastItem: l
     })]

@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(592125),
   g = n(703558),
   b = n(430824),
-  y = n(228392),
-  _ = n(388032),
+  _ = n(228392),
+  y = n(388032),
   C = n(43200);
 
 function x(e) {
@@ -26,7 +26,7 @@ function x(e) {
     channelId: t
   } = e, x = (0, l.e7)([m.Z], () => m.Z.getChannel(t)), v = (0, l.e7)([m.Z], () => m.Z.getChannel(null == x ? void 0 : x.parent_id)), j = (0, l.e7)([b.Z], () => b.Z.getGuild(null == x ? void 0 : x.getGuildId())), O = (0, s.ZP)(x), E = i.useRef(!1);
   if (i.useEffect(() => {
-      null == x || E.current || (E.current = !0, (0, y.lN)(x))
+      null == x || E.current || (E.current = !0, (0, _.lN)(x))
     }, [x]), null == x || null == j) return null;
   let N = (0, r.jsx)(f.Z, {
     channel: x
@@ -37,7 +37,7 @@ function x(e) {
       draftType: g.d.ChannelMessage
     }), (0, r.jsx)(d.ZP, {
       toolbar: N,
-      "aria-label": _.NW.string(_.t.Pwe8tL),
+      "aria-label": y.NW.string(y.t.Pwe8tL),
       children: (0, p.ud)({
         channel: x,
         parentChannel: v,

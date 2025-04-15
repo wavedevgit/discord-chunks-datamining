@@ -50,9 +50,9 @@ function g(e, t) {
 function b(e) {
   let {
     channel: t
-  } = e, [n, b] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [y, _] = i.useState(!1);
+  } = e, [n, b] = (0, l.Wu)([s.ZP], () => [s.ZP.isChannelMuted(t.getGuildId(), t.id), s.ZP.resolvedMessageNotifications(t)], [t]), [_, y] = i.useState(!1);
   i.useEffect(() => {
-    let e = () => _(!0);
+    let e = () => y(!0);
     return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
       c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
@@ -60,16 +60,16 @@ function b(e) {
   let C = e => {
       e.shiftKey ? a.Z.updateChannelOverrideSettings(t.guild_id, t.id, {
         muted: !n
-      }, u.UE.muted(!n)) : _(e => !e)
+      }, u.UE.muted(!n)) : y(e => !e)
     },
     x = f.NW.string(f.t.h850Sk);
   return (0, r.jsx)(o.yRy, {
-    shouldShow: y,
+    shouldShow: _,
     animation: o.yRy.Animation.NONE,
     position: "bottom",
     align: "right",
     autoInvert: !1,
-    onRequestClose: () => _(!1),
+    onRequestClose: () => y(!1),
     renderPopout: e => (0, r.jsx)(p.Z, g(m({}, e), {
       channel: t,
       navId: "channel-context",

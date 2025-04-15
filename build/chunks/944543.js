@@ -1,6 +1,6 @@
 /** Chunk was on 3656 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 }), n(704826), n(35282), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -56,7 +56,7 @@ class b extends i.PureComponent {
     })
   }
 }
-class y extends i.PureComponent {
+class _ extends i.PureComponent {
   componentDidMount() {
     null == this.props.regions && c.Z.fetchRegions(null)
   }
@@ -121,6 +121,6 @@ class y extends i.PureComponent {
     })
   }
 }
-let _ = a.ZP.connectStores([d.Z], () => ({
+let y = a.ZP.connectStores([d.Z], () => ({
   regions: d.Z.getRegions(null)
-}))(y)
+}))(_)

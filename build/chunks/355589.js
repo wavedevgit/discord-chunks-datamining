@@ -74,11 +74,11 @@ function z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let B = {
+let H = {
     width: 28,
     height: 28
   },
-  H = {
+  B = {
     width: 20,
     height: 20,
     borderRadius: 10
@@ -453,12 +453,12 @@ let G = e => {
                 }) : e.isDone ? (0, r.jsx)(g.G2e, {
                   color: u.Z.STATUS_POSITIVE_BACKGROUND,
                   icon: g.dz2,
-                  style: H,
+                  style: B,
                   className: W.stepStatus
                 }) : (0, r.jsx)(g.G2e, {
                   disableColor: !0,
                   icon: (0, g.GSL)(_.Z),
-                  style: B,
+                  style: H,
                   className: l()(W.stepStatus, W.completed)
                 }), (0, r.jsxs)("div", {
                   className: W.step,

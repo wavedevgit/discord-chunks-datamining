@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(600084),
   g = n(62764),
   b = n(79712),
-  y = n(736052),
-  _ = n(359110),
+  _ = n(736052),
+  y = n(359110),
   C = n(359119),
   x = n(13279),
   v = n(248789),
@@ -130,8 +130,8 @@ function er(e) {
     em = () => es.isInitialized() || B.ready,
     eg = (0, U.$)(f),
     eb = B.length > 0 && (null == (t = B.first()) ? void 0 : t.isFirstMessageInForumPost(f)),
-    ey = (0, c.ts)(f),
-    e_ = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ep),
+    e_ = (0, c.ts)(f),
+    ey = (0, l.e7)([E.Z], () => E.Z.shouldShowTopicsBar() && !ep),
     eC = (0, j.P)(f.id),
     ex = (0, x.z)(f.id, J.zr),
     ev = (0, p.k)(f.id),
@@ -158,7 +158,7 @@ function er(e) {
     eE = f.isForumPost() && !eb ? (0, r.jsx)(g.Z, {
       postId: f.id
     }) : null,
-    eN = (0, y.Z)(f.id);
+    eN = (0, _.Z)(f.id);
   (0, q.Z)();
   let eI = null,
     eP = [],
@@ -250,23 +250,23 @@ function er(e) {
     let e, t, n = Z.ZP.getOldestUnreadTimestamp(f.id),
       l = 0 !== n ? n : k.default.extractTimestamp(f.id),
       a = (0, w.KC)(new Date, new Date(l));
-    if (Z.ZP.isEstimated(f.id) ? (e = a ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = a ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), ey && (0, c.tW)(f) && ej.includes(K.E.SUMMARIES)) {
+    if (Z.ZP.isEstimated(f.id) ? (e = a ? $.t.wvtbbG : $.t.tHqbtr, t = $.t.vaPWFR) : (e = a ? $.t.BctFHx : $.t["3wXb9P"], t = $.t["4H8ldH"]), e_ && (0, c.tW)(f) && ej.includes(K.E.SUMMARIES)) {
       let n = Z.ZP.ackMessageId(f.id),
         a = (0, N.q)(f.id, Z.ZP.getOldestUnreadMessageId(f.id));
       if ((0, d.yw)(Q.rMx.SUMMARIES_UNREAD_BAR_VIEWED, {
           num_unread_summaries: a,
           num_unread_messages: er,
           last_ack_message_id: n,
-          summaries_enabled_by_user: e_,
+          summaries_enabled_by_user: ey,
           summaries_enabled_for_channel: (0, c.Lp)(f)
         }), (0, c.Lp)(f)) {
-        let n = e_ ? $.NW.format(t, {
+        let n = ey ? $.NW.format(t, {
           count: er
         }) : $.NW.format(e, {
           count: er,
           timestamp: l
         });
-        if (e_) {
+        if (ey) {
           let e = a > 0 ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.Text, {
               variant: "text-sm/medium",
@@ -346,7 +346,7 @@ function er(e) {
       channelId: f.id
     }))
   }
-  if (null == i && (0, c.Lp)(f) && e_ && ej.includes(K.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
+  if (null == i && (0, c.Lp)(f) && ey && ej.includes(K.E.SUMMARIES) && (i = (0, r.jsx)(V.BO, {
       channel: f,
       scrollManager: es
     })), B.error) s = (0, r.jsx)(V.Rp, {
@@ -381,7 +381,7 @@ function er(e) {
       onClick: () => (function(e) {
         a.Z.jumpToPresent(e.id, Q.AQB);
         let t = T.Z.getChannelId();
-        e.id === t && (0, _.Kh)(e.id)
+        e.id === t && (0, y.Kh)(e.id)
       })(f),
       className: eh
     })

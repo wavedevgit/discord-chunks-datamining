@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function y(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,13 +49,13 @@ function y(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     channel: t,
     speaker: l,
     className: f
   } = e, {
-    newestAnalyticsLocation: _
+    newestAnalyticsLocation: y
   } = (0, d.ZP)(), C = (0, u.bp)(), {
     reducedMotion: x
   } = i.useContext(a.Sfi), v = (0, c.Z)({
@@ -65,14 +65,14 @@ function _(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("97589"), n.e("7717"), n.e("74800")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, y(b({}, n), {
+      return n => (0, r.jsx)(e, _(b({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
         showMediaItems: !0,
         showStageChannelItems: !0,
         showChatItems: !1,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", _)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", y)
       }))
     }, {
       context: C
@@ -86,7 +86,7 @@ function _(e) {
     children: e => (0, r.jsx)(a.ua7, {
       text: l.userNick,
       position: "bottom",
-      children: n => (0, r.jsx)(a.P3F, y(b({}, n, e), {
+      children: n => (0, r.jsx)(a.P3F, _(b({}, n, e), {
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -113,7 +113,7 @@ function C(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(_, {
+    renderUser: (e, t, i) => (0, r.jsx)(y, {
       channel: n,
       speaker: e,
       className: t

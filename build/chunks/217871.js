@@ -17,8 +17,8 @@ var r = n(200651),
   m = n(889901),
   g = n(64078),
   b = n(351780),
-  y = n(843693),
-  _ = n(641033),
+  _ = n(843693),
+  y = n(641033),
   C = n(989830),
   x = n(388032),
   v = n(837265);
@@ -26,11 +26,11 @@ let j = i.memo(function(e) {
     let {
       channelId: t,
       width: n
-    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), o = (0, s.e7)([y.ZP], () => y.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = i.useState(!1);
+    } = e, l = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), o = (0, s.e7)([_.ZP], () => _.ZP.getMostRecentMessageCombo(t), [t]), [u, p] = i.useState(!1);
     i.useEffect(() => {
       if (null == o ? void 0 : o.displayed) return;
       p(!1), setImmediate(() => {
-        p((null != o ? (0, _.Eo)(o.combo) : 0) > 0)
+        p((null != o ? (0, y.Eo)(o.combo) : 0) > 0)
       });
       let e = setTimeout(() => {
         p(!1), null != o && (0, g.ew)(o)
@@ -51,7 +51,7 @@ let j = i.memo(function(e) {
       children: (0, r.jsx)(c.Text, {
         className: v.comboScore,
         variant: "text-sm/bold",
-        children: (0, _.Eo)(o.combo)
+        children: (0, y.Eo)(o.combo)
       })
     })
   }),
@@ -63,7 +63,7 @@ let j = i.memo(function(e) {
       color: l,
       square: a,
       flair: s
-    } = i.useMemo(() => (0, _.yz)(n), [n]), u = (0, p.Lq)(l);
+    } = i.useMemo(() => (0, y.yz)(n), [n]), u = (0, p.Lq)(l);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Text, {
         className: v.comboValue,
@@ -120,13 +120,13 @@ let j = i.memo(function(e) {
   E = i.memo(function(e) {
     let {
       channelId: t
-    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
+    } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([_.ZP], () => _.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.ZP)(), [g, _] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
+    } = (0, u.ZP)(), [g, y] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
     i.useEffect(() => {
-      E && _(!0);
-      let e = setTimeout(() => _(E), 1e3);
+      E && y(!0);
+      let e = setTimeout(() => y(E), 1e3);
       return () => clearTimeout(e)
     }, [E]);
     let N = (0, c.q_F)({
