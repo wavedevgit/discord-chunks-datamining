@@ -1,12 +1,12 @@
 /** Chunk was on 88934 **/
 n.d(t, {
-  Z: () => o
+  Z: () => s
 });
 var r = n(200651),
   a = n(192379),
   i = n(481060),
   l = n(686519);
-let o = a.forwardRef(function(e, t) {
+let s = a.forwardRef(function(e, t) {
   let {
     onScroll: n,
     children: a

@@ -128,7 +128,7 @@ function P(e) {
   }(e, ["children", "cardChildren", "startAnimHeightPx", "innerStyle"]), [d, p] = i.useState(y(c)), {
     ref: h,
     height: g
-  } = (0, u.Z)(), m = (0, l.q_F)({
+  } = (0, u.ZP)(), m = (0, l.q_F)({
     height: null != g && 0 !== g ? "".concat(g, "px") : "".concat(a, "px"),
     config: o.config.stiff
   });

@@ -21,7 +21,7 @@ function u(e) {
     invitesDisabled: b,
     canCreateInvites: g
   } = e, f = i.useMemo(() => (0, l.debounce)(n, 100), [n]), h = i.useCallback(e => {
-    let t = null == e ? void 0 : e.getBoundingClientRect();
+    let t = e.contentRect;
     null != t && f(t.height)
   }, [f]), x = (0, s.y)(h);
   return (0, r.jsxs)("div", {

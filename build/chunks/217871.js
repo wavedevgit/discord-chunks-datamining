@@ -123,7 +123,7 @@ let j = i.memo(function(e) {
     } = e, n = (0, s.e7)([h.default], () => h.default.getId()), l = (0, s.e7)([f.Z], () => f.Z.isTyping(t, n), [t, n]), o = (0, s.e7)([b.Z], () => b.Z.isEnabled()), d = (0, s.e7)([y.ZP], () => y.ZP.isComboing(n, t), [t, n]), {
       ref: p,
       width: m = 0
-    } = (0, u.Z)(), [g, _] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
+    } = (0, u.ZP)(), [g, _] = i.useState(!1), x = (0, C.Z)(t), E = o && d && l;
     i.useEffect(() => {
       E && _(!0);
       let e = setTimeout(() => _(E), 1e3);

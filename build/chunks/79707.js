@@ -12,14 +12,14 @@ function l(e) {
     tabs: t,
     selectedTab: n,
     onTabSelect: l,
-    onClose: o
+    onClose: s
   } = e;
   return (0, r.jsx)(a.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
     "aria-label": i.NW.string(i.t.riPnr6),
     hideScroller: !0,
-    onClose: o,
-    onSelect: o,
+    onClose: s,
+    onSelect: s,
     children: (0, r.jsx)(a.kSQ, {
       children: t.map(e => {
         let {

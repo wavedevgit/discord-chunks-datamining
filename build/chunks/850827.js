@@ -35,8 +35,8 @@ var l = n(120356),
   A = n(477839),
   D = n(388032),
   _ = n(622802),
-  k = n(126485);
-let L = e => {
+  L = n(126485);
+let k = e => {
     let {
       user: t,
       color: n,
@@ -105,7 +105,7 @@ let L = e => {
         return n
       })(Object(H)).forEach(function(e) {
         Object.defineProperty(z, e, Object.getOwnPropertyDescriptor(H, e))
-      }), t = z, (0, r.jsx)(L, {
+      }), t = z, (0, r.jsx)(k, {
         user: l,
         color: M,
         look: U,
@@ -119,7 +119,7 @@ let L = e => {
       align: f.Z.Align.STRETCH,
       direction: B,
       wrap: J ? f.Z.Wrap.WRAP : f.Z.Wrap.NO_WRAP,
-      className: i()(u, k.buttonsWrapper, J ? k.vertical : k.horizontal),
+      className: i()(u, L.buttonsWrapper, J ? L.vertical : L.horizontal),
       children: (() => {
         if ((0, v.Z)(t)) return (0, r.jsx)(S.Z, {
           platform: d.Z.get(w.ABu.XBOX),

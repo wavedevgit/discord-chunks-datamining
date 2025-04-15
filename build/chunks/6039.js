@@ -60,7 +60,7 @@ let S = e => {
     ref: n,
     width: s,
     height: c
-  } = (0, o.Z)(), [p, h] = i.useState(y.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [p, h] = i.useState(y.hO.INITIAL), S = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), T = (0, l.e7)([d.Z], () => d.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: j
   } = (0, l.cj)([b.Z], () => ({

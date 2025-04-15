@@ -39,7 +39,7 @@ function w(e) {
   }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, I = B ? q : D, W = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: M,
     scrollHeight: L
-  } = (0, d.Z)(), Z = 104 !== L, {
+  } = (0, d.kE)(), Z = 104 !== L, {
     expansionSpring: V
   } = (0, c.q_F)({
     expansionSpring: +!!N,

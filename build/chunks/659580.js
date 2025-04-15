@@ -49,8 +49,8 @@ function P(e) {
   });
   let D = (0, h.Z)(T),
     _ = (0, O.Z)(A, x),
-    k = (0, y.Z)(A, x),
-    L = (0, p.Z)(A),
+    L = (0, y.Z)(A, x),
+    k = (0, p.Z)(A),
     W = (0, f.Z)(A),
     M = (0, m.Z)(A),
     U = o.Yn.DEFAULT,
@@ -66,9 +66,9 @@ function P(e) {
       onClose: t,
       navId: "audio-device-context",
       "aria-label": j.NW.string(j.t.ZR1Ss7),
-      children: [P ? _ : null, n ? k : null, !x && N ? (0, r.jsx)(a.kSQ, {
+      children: [P ? _ : null, n ? L : null, !x && N ? (0, r.jsx)(a.kSQ, {
         label: j.NW.string(j.t["pS+K2N"]),
-        children: L
+        children: k
       }) : null, (0, r.jsxs)(a.kSQ, {
         children: [I ? W : null, E ? M : null, x ? (0, r.jsx)(a.Clw, {}) : null, x && Z ? (0, r.jsx)(a.S89, {
           id: "deafen",

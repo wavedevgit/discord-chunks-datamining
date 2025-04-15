@@ -8,8 +8,8 @@ var n = r(200651),
   s = r.n(o),
   i = r(995899),
   l = r(442837),
-  c = r(692547),
-  d = r(780384),
+  d = r(692547),
+  c = r(780384),
   u = r(481060),
   p = r(484614),
   _ = r(211266),
@@ -46,7 +46,7 @@ function Z(e) {
     quest: r,
     rewardCode: a,
     hasTieredRewardCodes: o
-  } = e, i = (0, d.wj)((0, b.ZP)()), l = {
+  } = e, i = (0, c.wj)((0, b.ZP)()), l = {
     border: "1px solid ".concat(r.config.colors.primary),
     background: "\n    linear-gradient(\n      150deg,\n      transparent 68%,\n      ".concat((0, O.aD)(r.config.colors.primary, .2), " 85%,\n      transparent 100%\n    ),\n    linear-gradient(\n      150deg,\n      transparent 13%,\n      ").concat((0, O.aD)(r.config.colors.primary, .6), " 44%,\n      transparent 76%\n    ),\n    ").concat(i ? "var(--black)" : "var(--white)", "\n    ")
   }, p = (0, E.B)(r, !1), _ = (null == (t = r.userStatus) ? void 0 : t.claimedAt) != null || null != a, {
@@ -58,12 +58,12 @@ function Z(e) {
       quest: o,
       rewardCode: s,
       hasTieredRewardCodes: i
-    } = e, l = (null == (t = o.userStatus) ? void 0 : t.claimedAt) != null || null != s, c = i ? "" : q.NW.string(q.t.UUKbio), d = i ? (0, I.o9)({
+    } = e, l = (null == (t = o.userStatus) ? void 0 : t.claimedAt) != null || null != s, d = i ? "" : q.NW.string(q.t.UUKbio), c = i ? (0, I.o9)({
       quest: o,
       idx: null != (n = null == s ? void 0 : s.tier) ? n : null == (r = o.userStatus) ? void 0 : r.claimedTier
-    }) : null, u = R.r.build(o.config), p = null != d && null != (a = d.messages.name) ? a : u.defaultReward.messages.name, _ = i ? q.NW.string(q.t.cfY4PD) : u.defaultReward.messages.name;
+    }) : null, u = R.r.build(o.config), p = null != c && null != (a = c.messages.name) ? a : u.defaultReward.messages.name, _ = i ? q.NW.string(q.t.cfY4PD) : u.defaultReward.messages.name;
     return {
-      subHeader: l ? q.NW.string(q.t.YpswQk) : c,
+      subHeader: l ? q.NW.string(q.t.YpswQk) : d,
       header: l ? p : _
     }
   }({
@@ -99,7 +99,7 @@ function Z(e) {
       className: L.rewardSubheading,
       children: [_ && (0, n.jsx)(u.kmB, {
         size: "xs",
-        color: c.Z.colors.TEXT_MUTED,
+        color: d.Z.colors.TEXT_MUTED,
         className: L.rewardSubheadingIcon
       }), (0, n.jsx)(u.Text, {
         variant: "eyebrow",
@@ -164,8 +164,8 @@ function z(e) {
     transitionState: r,
     onClose: o,
     quest: s,
-    location: c,
-    questContentPosition: d,
+    location: d,
+    questContentPosition: c,
     impressionRef: b,
     preview: O
   } = e, E = (0, _.Z)(() => {
@@ -190,7 +190,7 @@ function z(e) {
     isClaimingReward: V,
     isFetchingRewardCode: Y,
     quest: s,
-    questContent: c,
+    questContent: d,
     requiresPlatformSelection: et,
     rewardCode: ee,
     selectedPlatformType: M,
@@ -215,7 +215,7 @@ function z(e) {
       className: L.heading,
       children: ei
     }) : null,
-    ec = function(e) {
+    ed = function(e) {
       let {
         quest: t,
         selectedPlatform: r,
@@ -252,7 +252,7 @@ function z(e) {
       rewardCode: ee,
       hasTieredRewardCodes: K
     }),
-    ed = a.useMemo(() => k.map(e => ({
+    ec = a.useMemo(() => k.map(e => ({
       label: (0, I.t2)(e),
       value: e
     })), [k]),
@@ -261,7 +261,7 @@ function z(e) {
     title: q.NW.string(q.t.vVcTtL),
     children: [(0, n.jsx)(u.PhF, {
       placeholder: q.NW.string(q.t.EMrUHR),
-      options: ed,
+      options: ec,
       select: e => {
         eo(!1), z(e)
       },
@@ -315,8 +315,8 @@ function z(e) {
       onCopy: () => {
         Q && (0, x.JG)(ee.code), $({
           questId: s.id,
-          questContent: c,
-          questContentPosition: d,
+          questContent: d,
+          questContentPosition: c,
           questContentCTA: j.jZ.COPY_REWARD_CODE
         })
       }
@@ -343,8 +343,8 @@ function z(e) {
       hasError: es,
       onDismiss: o,
       quest: s,
-      questContent: c,
-      questContentPosition: d,
+      questContent: d,
+      questContentPosition: c,
       requiresPlatformSelection: et,
       selectedPlatformType: M,
       redemptionLink: eb
@@ -384,7 +384,7 @@ function z(e) {
             })
           }), (0, n.jsxs)("div", {
             className: L.modalContent,
-            children: [el, ec, eu, e_, em, null != s.config.cosponsorMetadata && null != ej && (0, n.jsxs)("div", {
+            children: [el, ed, eu, e_, em, null != s.config.cosponsorMetadata && null != ej && (0, n.jsxs)("div", {
               className: L.cosponsorFooter,
               children: [(0, n.jsx)("img", {
                 className: L.cosponsorLogotype,

@@ -50,7 +50,7 @@ function D(e) {
   }), M = (0, _.a)(), [U, z] = a.useState(null != (t = null == M ? void 0 : M.state) ? t : ""), [L, F] = a.useState(null != (n = null == M ? void 0 : M.emoji) ? n : null), [H, Y] = a.useState((0, x.Z)()), K = a.useRef(null), G = a.useRef(null), q = a.useRef(null), [V, X] = a.useState(null != B ? B : null), $ = U.length > 0 || null != L, Q = A && null != V ? V.label() : w.NW.string(w.t["xod36+"]), [J, ee] = a.useState(Q), {
     ref: et,
     width: en
-  } = (0, c.Z)(Q);
+  } = (0, c.ZP)(Q);
   a.useEffect(() => {
     let e = q.current;
     if (null == en || null == e) return;

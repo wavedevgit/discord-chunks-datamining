@@ -159,7 +159,7 @@ let U = i.memo(function(e) {
     } = G(n, l), {
       ref: y,
       width: v
-    } = (0, g.Z)(), h = (0, s.e7)([b.Z], () => b.Z.useReducedMotion), j = f ? "entering" : "exiting", {
+    } = (0, g.ZP)(), h = (0, s.e7)([b.Z], () => b.Z.useReducedMotion), j = f ? "entering" : "exiting", {
       width: P
     } = (0, a.useSpring)(_(A({}, L[j]), {
       width: p ? v : u
@@ -259,7 +259,7 @@ let U = i.memo(function(e) {
     } = e, R = (0, s.e7)([w.default], () => w.default.getId() === a.id, [a.id]), {
       ref: Y,
       width: Q
-    } = (0, g.Z)(), {
+    } = (0, g.ZP)(), {
       showConnectedAnimation: B
     } = G(L, C), K = null == k ? void 0 : k.sessionId, q = t.id, H = a.id, [$] = (0, s.e7)([E.Z], () => {
       var e;

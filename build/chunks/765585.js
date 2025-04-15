@@ -44,7 +44,7 @@ let p = l.forwardRef(function(e, t) {
   } = e, U = N ? s.zxk.Sizes.LARGE : s.zxk.Sizes.MAX, [k, G] = l.useState(!1), {
     ref: W,
     width: F
-  } = (0, o.Z)();
+  } = (0, o.ZP)();
 
   function z(e) {
     (0, u.EW)(C, {

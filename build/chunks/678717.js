@@ -42,8 +42,8 @@ var g = n(392750),
   z = n(178821),
   M = n(958328),
   U = n(315384),
-  F = n(514866),
-  G = n(384207),
+  G = n(514866),
+  F = n(384207),
   H = n(264603),
   W = n(678639),
   V = n(351930),
@@ -101,12 +101,12 @@ function et() {
         id: "shop",
         name: "Shop",
         group: q.v0.BILLING,
-        render: () => (0, r.jsx)(G.C, {})
+        render: () => (0, r.jsx)(F.C, {})
       }), e.push({
         id: "quick_actions",
         name: "Quick Actions",
         group: q.v0.NONE,
-        render: () => (0, r.jsx)(F.Z, {})
+        render: () => (0, r.jsx)(G.Z, {})
       }), e.push({
         id: "end_to_end_encryption",
         name: "E2EE",

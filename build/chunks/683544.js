@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(209173),
   l = n(399606),
-  o = n(481060),
-  s = n(699682),
+  s = n(481060),
+  o = n(699682),
   c = n(471518),
   d = n(425986),
   u = n(177653),
@@ -52,7 +52,7 @@ let v = {
         var e;
         return null != (e = u.Z.getSearchResults(O)) ? e : v
       }),
-      E = null != (t = (0, s.Z)(S)) ? t : v,
+      E = null != (t = (0, o.Z)(S)) ? t : v,
       {
         results: T,
         totalPages: A,
@@ -115,7 +115,7 @@ let v = {
           }
           return null
         })
-      }), (0, r.jsx)(o.DsT, {
+      }), (0, r.jsx)(s.DsT, {
         className: x.paginationInput,
         totalCount: Math.min(A * f.PAGE_SIZE, f.MAX_PAGES * f.PAGE_SIZE),
         pageSize: f.PAGE_SIZE,

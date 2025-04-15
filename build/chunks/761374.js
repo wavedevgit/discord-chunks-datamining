@@ -53,7 +53,7 @@ function C(e) {
     width: M,
     height: V,
     ref: z
-  } = (0, c.Z)(), U = (0, o.e7)([g.Z], () => {
+  } = (0, c.ZP)(), U = (0, o.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
     return !!(0, _.ZL)(n) && (null == (e = n.meta.showAllStreams) || e)

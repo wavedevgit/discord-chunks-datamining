@@ -8,14 +8,14 @@ var r = n(200651),
   i = n.n(l),
   o = n(913527),
   s = n.n(o),
-  c = n(852229),
-  d = n(442837),
-  u = n(481060),
-  m = n(129861),
-  x = n(665149),
-  h = n(886118),
-  p = n(301801),
-  b = n(594174),
+  c = n(442837),
+  d = n(481060),
+  u = n(129861),
+  m = n(665149),
+  x = n(886118),
+  h = n(301801),
+  p = n(594174),
+  b = n(572004),
   f = n(55935),
   _ = n(120816),
   g = n(31336),
@@ -50,7 +50,7 @@ function E(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsx)(u.zJl, {
+  return (0, r.jsx)(d.zJl, {
     className: N.customPropertiesContainer,
     children: (0, r.jsx)("dl", {
       children: t
@@ -76,16 +76,16 @@ function P(e) {
       children: t
     }), (0, r.jsx)("dd", {
       children: n
-    }), (0, r.jsx)(u.P3F, {
+    }), (0, r.jsx)(d.P3F, {
       tag: "span",
       className: N.copyPropertyButton,
       onClick: () => {
-        (0, c.J)(JSON.stringify(l)), o(!0)
+        (0, b.JG)(JSON.stringify(l)), o(!0)
       },
-      children: i ? (0, r.jsx)(u.kmB, {
+      children: i ? (0, r.jsx)(d.kmB, {
         color: "currentColor",
         size: "sm"
-      }) : (0, r.jsx)(u.TIy, {
+      }) : (0, r.jsx)(d.TIy, {
         color: "currentColor",
         size: "sm"
       })
@@ -105,29 +105,29 @@ let k = [{
           fingerprint: l
         },
         onClose: o
-      } = e, d = b.default.getUser(l), h = s()(a);
+      } = e, c = p.default.getUser(l), x = s()(a);
       return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(x.ZP, {
+        children: [(0, r.jsxs)(m.ZP, {
           className: i()(S.headerBar, N.subPanelHeaderBar),
-          children: [(0, r.jsx)(x.ZP.Icon, {
-            icon: u.IeX,
+          children: [(0, r.jsx)(m.ZP.Icon, {
+            icon: d.IeX,
             tooltip: t
-          }), (0, r.jsxs)(x.ZP.Title, {
+          }), (0, r.jsxs)(m.ZP.Title, {
             wrapperClassName: N.headerTitle,
-            children: [t, (0, r.jsx)(u.P3F, {
+            children: [t, (0, r.jsx)(d.P3F, {
               tag: "span",
               className: N.copyEventButton,
-              onClick: () => (0, c.J)(t),
-              children: (0, r.jsx)(u.TIy, {
+              onClick: () => (0, b.JG)(t),
+              children: (0, r.jsx)(d.TIy, {
                 color: "currentColor",
                 size: "sm"
               })
             })]
-          }), (0, r.jsx)(x.ZP.Icon, {
-            icon: u.TIy,
+          }), (0, r.jsx)(m.ZP.Icon, {
+            icon: d.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, c.J)(JSON.stringify(function(e) {
+              (0, b.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -148,11 +148,11 @@ let k = [{
                 event: t,
                 timestamp: a,
                 fingerprint: l,
-                user: null == d ? void 0 : d.id
+                user: null == c ? void 0 : c.id
               }, n), (e, t) => void 0 === t ? null : t, 2))
             }
-          }), (0, r.jsx)(x.ZP.Icon, {
-            icon: u.k$p,
+          }), (0, r.jsx)(m.ZP.Icon, {
+            icon: d.k$p,
             tooltip: "Close",
             onClick: o
           })]
@@ -163,14 +163,14 @@ let k = [{
             copyValue: a.toISOString(),
             children: (0, r.jsxs)("time", {
               dateTime: a.toISOString(),
-              title: (0, f.vc)(h, "LLLL"),
-              children: ["(", s().locale(), ") ", (0, f.Y4)(h)]
+              title: (0, f.vc)(x, "LLLL"),
+              children: ["(", s().locale(), ") ", (0, f.Y4)(x)]
             })
-          }), null != d && (0, r.jsx)(v.Z9, {
+          }), null != c && (0, r.jsx)(v.Z9, {
             name: "User",
-            copyValue: d.id,
-            children: (0, r.jsx)(m.Z, {
-              user: d
+            copyValue: c.id,
+            children: (0, r.jsx)(u.Z, {
+              user: c
             })
           }), (0, r.jsx)(v.Z9, {
             name: "Fingerprint",
@@ -226,7 +226,7 @@ let k = [{
     }
   },
   I = {
-    searchType: h.S.REGEX,
+    searchType: x.S.REGEX,
     searchStringGenerator: e => {
       let {
         event: t,
@@ -240,20 +240,20 @@ let k = [{
 function R() {
   let e = a.useRef(null),
     [t, n] = a.useState(""),
-    l = (0, d.e7)([_.Z], () => _.Z.loggedEventsVersion),
+    l = (0, c.e7)([_.Z], () => _.Z.loggedEventsVersion),
     [o, s] = a.useState(() => Object.keys(w)),
-    [c, m] = a.useState(_.Z.loggedEvents),
+    [u, m] = a.useState(_.Z.loggedEvents),
     x = a.useCallback(e => {
       m(e)
     }, []);
-  (0, p.BO)(t, _.Z.loggedEvents, x, I, [l]);
-  let h = c.filter(e => {
+  (0, h.BO)(t, _.Z.loggedEvents, x, I, [l]);
+  let p = u.filter(e => {
       for (let t of o)
         if (w[t].filter(e)) return !0;
       return !1
     }),
     [b, f] = a.useState(void 0),
-    v = h.find(e => e.key === b),
+    v = p.find(e => e.key === b),
     {
       TabBar: E,
       renderSelectedTab: P
@@ -265,14 +265,14 @@ function R() {
     className: i()(S.panel, N.panel),
     children: [(0, r.jsxs)("div", {
       className: N.toolbar,
-      children: [(0, r.jsx)(u.zxk, {
+      children: [(0, r.jsx)(d.zxk, {
         className: N.toolbarButton,
-        look: u.zxk.Looks.BLANK,
-        size: u.zxk.Sizes.ICON,
+        look: d.zxk.Looks.BLANK,
+        size: d.zxk.Sizes.ICON,
         onClick: g.Zw,
         children: (0, r.jsx)("span", {
           title: O.NW.string(O.t.VkKicX),
-          children: (0, r.jsx)(u.XHJ, {
+          children: (0, r.jsx)(d.XHJ, {
             size: "md",
             color: "currentColor",
             "aria-label": O.NW.string(O.t.VkKicX)
@@ -284,7 +284,7 @@ function R() {
         className: N.filters,
         children: Object.entries(w).map(e => {
           let [t, n] = e;
-          return (0, r.jsx)(u.P3F, {
+          return (0, r.jsx)(d.P3F, {
             className: i()(N.filter, o.includes(t) && N.activeFilter),
             onClick: () => {
               s(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
@@ -295,7 +295,7 @@ function R() {
       })]
     }), (0, r.jsx)("div", {
       className: N.toolbar,
-      children: (0, r.jsx)(u.E1j, {
+      children: (0, r.jsx)(d.E1j, {
         className: N.searchBar,
         query: t,
         onChange: n,
@@ -304,7 +304,7 @@ function R() {
       })
     }), (0, r.jsx)(y.Z, {
       columns: T,
-      data: h,
+      data: p,
       selectedRowKey: b,
       onClickRow: e => f(e.key)
     }), null != v && (0, r.jsxs)(j.Z, {

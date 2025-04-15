@@ -1,10 +1,11 @@
-/** Chunk was on 93602 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  Z: () => l
+  Z: () => i
 }), n(388685);
 var r = n(192379);
 
-function l(e) {
+function i(e) {
   let t = r.useRef(e);
   return r.useInsertionEffect(() => {
     t.current = e

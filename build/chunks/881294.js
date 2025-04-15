@@ -9,8 +9,8 @@ var r = n(860911),
   a = n(442837),
   i = n(703656),
   l = n(314897),
-  o = n(594174),
-  s = n(626135),
+  s = n(594174),
+  o = n(626135),
   c = n(258971),
   d = n(981631);
 
@@ -19,7 +19,7 @@ function u(e, t) {
   let i = c.z8.getField("sessionId"),
     l = c.z8.getField("guildId"),
     d = null == (n = c.z8.getField("entrypoint")) ? void 0 : n.name,
-    u = o.default.getCurrentUser(),
+    u = s.default.getCurrentUser(),
     p = (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -52,7 +52,7 @@ function u(e, t) {
     })(Object(a)).forEach(function(e) {
       Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
     }), r);
-  return s.default.track(e, p)
+  return o.default.track(e, p)
 }
 
 function p() {

@@ -7,8 +7,8 @@ n(192379);
 var a = n(120356),
   i = n.n(a),
   l = n(780384),
-  o = n(481060),
-  s = n(794295),
+  s = n(481060),
+  o = n(794295),
   c = n(410030),
   d = n(726542),
   u = n(881294),
@@ -20,25 +20,25 @@ function h(e) {
   let {
     application: a,
     className: l,
-    innerClassName: s
+    innerClassName: o
   } = e, c = null != (n = null == (t = a.directory_entry) ? void 0 : t.external_urls) ? n : [];
   return null != a.terms_of_service_url || null != a.privacy_policy_url || c.length > 0 ? (0, r.jsxs)("div", {
     className: i()(m.container, l),
-    children: [(0, r.jsx)(o.X6q, {
+    children: [(0, r.jsx)(s.X6q, {
       variant: "heading-sm/semibold",
       color: "header-primary",
       children: p.NW.string(p.t.l6DP2t)
     }), (0, r.jsxs)("div", {
-      className: i()(m.list, s),
+      className: i()(m.list, o),
       children: [c.map((e, t) => (0, r.jsx)(g, {
         url: e.url,
         children: e.name
       }, t)), null != a.terms_of_service_url ? (0, r.jsx)(_, {
-        icon: o.aAW,
+        icon: s.aAW,
         url: a.terms_of_service_url,
         children: p.NW.string(p.t.s7STcX)
       }) : null, null != a.privacy_policy_url ? (0, r.jsx)(_, {
-        icon: o.mBM,
+        icon: s.mBM,
         url: a.privacy_policy_url,
         children: p.NW.string(p.t.kH3JR0)
       }) : null]
@@ -51,9 +51,9 @@ function g(e) {
   let {
     url: a,
     children: i
-  } = e, s = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(s) ? null == u || null == (t = u.icon) ? void 0 : t.darkSVG : null == u || null == (n = u.icon) ? void 0 : n.lightSVG;
+  } = e, o = (0, c.ZP)(), u = d.Z.getByUrl(a), p = (0, l.wj)(o) ? null == u || null == (t = u.icon) ? void 0 : t.darkSVG : null == u || null == (n = u.icon) ? void 0 : n.lightSVG;
   return (0, r.jsx)(_, {
-    icon: void 0 === p ? o.xPt : void 0,
+    icon: void 0 === p ? s.xPt : void 0,
     imageSrc: p,
     url: a,
     children: i
@@ -80,14 +80,14 @@ function _(e) {
     alt: ""
   }));
   let h = (0, r.jsxs)(r.Fragment, {
-    children: [p, (0, r.jsx)(o.Text, {
+    children: [p, (0, r.jsx)(s.Text, {
       className: m.listText,
       variant: "text-sm/medium",
       selectable: !0,
       children: c
     })]
   });
-  return (0, r.jsx)(s.Z, {
+  return (0, r.jsx)(o.Z, {
     href: l,
     className: i()(m.listItem, m.linkItem),
     trusted: !d,

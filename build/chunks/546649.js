@@ -1,34 +1,34 @@
 /** Chunk was on 9573 **/
-t.d(e, {
-  default: () => d
+l.d(t, {
+  default: () => o
 });
-var l = t(200651);
-t(192379);
-var i = t(481060),
-  o = t(239091),
-  a = t(299206),
-  r = t(461757),
-  c = t(388032);
+var e = l(200651);
+l(192379);
+var i = l(481060),
+  a = l(239091),
+  r = l(299206),
+  c = l(461757),
+  s = l(388032);
 
-function d(n) {
+function o(n) {
   let {
-    channel: e,
-    channelId: t,
-    originalLink: d,
-    messageId: s,
-    onSelect: u
-  } = n, h = (0, r.Z)(e, d, s), p = (0, a.Z)({
-    id: t,
-    label: c.NW.string(c.t.gFHI3t)
+    channel: t,
+    channelId: l,
+    originalLink: o,
+    messageId: u,
+    onSelect: d
+  } = n, h = (0, c.Z)(t, o, u), p = (0, r.Z)({
+    id: l,
+    label: s.NW.string(s.t.gFHI3t)
   });
-  return (0, l.jsxs)(i.v2r, {
+  return (0, e.jsxs)(i.v2r, {
     navId: "channel-mention-context",
-    onClose: o.Zy,
-    onSelect: u,
-    "aria-label": c.NW.string(c.t.feGACA),
-    children: [(0, l.jsx)(i.kSQ, {
+    onClose: a.Zy,
+    onSelect: d,
+    "aria-label": s.NW.string(s.t.feGACA),
+    children: [(0, e.jsx)(i.kSQ, {
       children: h
-    }, "channel-mention-actions"), (0, l.jsx)(i.kSQ, {
+    }, "channel-mention-actions"), (0, e.jsx)(i.kSQ, {
       children: p
     }, "developer-actions")]
   })

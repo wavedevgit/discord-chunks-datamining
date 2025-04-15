@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(120356),
   l = n.n(i),
-  o = n(442837),
-  s = n(607070),
+  s = n(442837),
+  o = n(607070),
   c = n(361213),
   d = n(778569),
   u = n(783097),
@@ -23,8 +23,8 @@ function b(e) {
     application: t,
     isHovered: n,
     botBannerUrl: i,
-    botBannerUrlAnimated: o,
-    iconURL: s
+    botBannerUrlAnimated: s,
+    iconURL: o
   } = e, m = (0, d.Z)({
     applicationId: t.id,
     size: 600,
@@ -39,8 +39,8 @@ function b(e) {
     imageUrl: m.url
   } : {
     imageUrl: i,
-    imageUrlAnimated: o
-  }, [m.state, m.url, i, o]), b = null != _, j = null != h;
+    imageUrlAnimated: s
+  }, [m.state, m.url, i, s]), b = null != _, j = null != h;
   return "loading" === m.state ? null : j ? (0, r.jsxs)(r.Fragment, {
     children: [b ? (0, r.jsx)(x, {
       isHovered: n,
@@ -60,7 +60,7 @@ function b(e) {
     url: _,
     animatedUrl: f
   }) : (0, r.jsx)(C, {
-    iconURL: s
+    iconURL: o
   })
 }
 
@@ -69,15 +69,15 @@ function x(e) {
     isHovered: t,
     url: n,
     animatedUrl: i
-  } = e, [o, s] = a.useState(!1);
+  } = e, [s, o] = a.useState(!1);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
       src: n,
       alt: "",
       className: l()(g.bannerImage, g.bannerContent, {
-        [g.loaded]: o
+        [g.loaded]: s
       }),
-      onLoad: () => s(!0)
+      onLoad: () => o(!0)
     }), null != i ? (0, r.jsx)(v, {
       isHovered: t,
       url: i,
@@ -91,13 +91,13 @@ function v(e) {
     isHovered: t,
     url: n,
     isVideo: i
-  } = e, [o, s] = a.useState(!1), [c, d] = a.useState(t);
+  } = e, [s, o] = a.useState(!1), [c, d] = a.useState(t);
   return (a.useEffect(() => {
     t && d(!0)
   }, [t]), c) ? (0, r.jsx)("div", {
     className: l()(g.bannerAnimatedContainer, {
       [g.videoFadeOut]: !t,
-      [g.videoFadeIn]: t && o
+      [g.videoFadeIn]: t && s
     }),
     onAnimationEnd: () => t ? null : d(!1),
     children: i ? (0, r.jsx)(p.Z, {
@@ -106,12 +106,12 @@ function v(e) {
       autoPlay: !0,
       muted: !0,
       className: g.bannerContent,
-      onLoadedData: () => s(!0)
+      onLoadedData: () => o(!0)
     }) : (0, r.jsx)("img", {
       src: n,
       alt: "",
       className: g.bannerContent,
-      onLoad: () => s(!0)
+      onLoad: () => o(!0)
     })
   }) : null
 }
@@ -137,7 +137,7 @@ let j = function(e) {
     application: t,
     bannerType: n,
     iconURL: i
-  } = e, l = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), [c, d] = a.useState(!1), p = a.useCallback(() => {
+  } = e, l = (0, s.e7)([o.Z], () => o.Z.useReducedMotion), [c, d] = a.useState(!1), p = a.useCallback(() => {
     d(!0)
   }, []), h = a.useCallback(() => d(!1), []), v = (0, u.ye)(t), j = t.bot, {
     botBannerUrl: y,

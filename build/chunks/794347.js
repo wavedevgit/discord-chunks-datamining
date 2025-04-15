@@ -35,7 +35,7 @@ function N(e) {
   } = e, {
     ref: p,
     width: h
-  } = (0, d.Z)(), N = s.useMemo(() => null != h ? b(h) : 0, [h]), x = s.useMemo(() => {
+  } = (0, d.ZP)(), N = s.useMemo(() => null != h ? b(h) : 0, [h]), x = s.useMemo(() => {
     let e = Math.abs(b(N * (100 - Math.max(0, Math.min(100, n))) / 100) - N);
     return {
       transform: "translateX(".concat(e, "px)")

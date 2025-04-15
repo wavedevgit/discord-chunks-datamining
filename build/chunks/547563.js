@@ -5,8 +5,8 @@ n.d(t, {
 var r, a, i = n(200651);
 n(192379);
 var l = n(477660),
-  o = n.n(l),
-  s = n(481060),
+  s = n.n(l),
+  o = n(481060),
   c = n(447543),
   d = n(15470),
   u = n(960904),
@@ -35,7 +35,7 @@ function g(e) {
 let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
   f = (r = g({}, h.Z.rules), a = a = {
     heading: g({}, d.i.heading),
-    image: g({}, o().defaultRules.image),
+    image: g({}, s().defaultRules.image),
     inviteLink: {
       order: h.Z.rules.link.order + 1,
       match: (e, t) => t.inline ? _.exec(e) : null,
@@ -61,7 +61,7 @@ let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
           }
         }
       },
-      react: (e, t, n) => (0, i.jsx)(s.eee, {
+      react: (e, t, n) => (0, i.jsx)(o.eee, {
         onClick: t => {
           t.preventDefault(), e.onClick()
         },

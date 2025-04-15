@@ -87,7 +87,7 @@ let D = e => {
     isVisualMediaType: d,
     channelId: h
   } = e, g = o.useRef(null), [f, y] = o.useState(0);
-  (0, u.P)(g, e => {
+  (0, u.PM)(g, e => {
     let {
       width: t
     } = e;

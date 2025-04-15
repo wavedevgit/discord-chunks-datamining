@@ -34,11 +34,11 @@ let P = (0, i.memo)(function(e) {
   } = e, [x, w] = (0, i.useState)(!1), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(!1), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), W = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: V,
     height: B = 0
-  } = (0, p.Z)(), H = (0, h.ZP)(), F = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
+  } = (0, p.ZP)(), H = (0, h.ZP)(), F = (0, E.B6)(null == (t = Z.userStatus) ? void 0 : t.claimedAt, {
     month: "numeric",
     day: "numeric"
   }), z = null != (j = null == (n = Z.userStatus) ? void 0 : n.claimedTier) ? j : 0, Y = Z.config.rewards[z], K = (null == Y ? void 0 : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? void 0 : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? void 0 : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? void 0 : l[0], J = (null == X ? void 0 : X.type) === o.Z.AVATAR_DECORATION ? X : null;
-  (0, p.P)(M, e => {
+  (0, p.PM)(M, e => {
     let {
       height: t
     } = e;

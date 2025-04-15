@@ -27,7 +27,7 @@ var r = n(200651),
   N = n(935032),
   k = n(413135).Buffer;
 
-function O(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function O(e) {
   return e
 }
 
-function P(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -84,7 +84,7 @@ function S(e) {
     let a = m.Z.getChannel(l);
     B("export"), null == (e = L.current) || e.pause();
     try {
-      let e = await (0, g.rO)(t, P(O({}, T), {
+      let e = await (0, g.rO)(t, O(P({}, T), {
         applicationAudio: I,
         voiceAudio: F
       }));
@@ -92,7 +92,7 @@ function S(e) {
         let {
           default: l
         } = await Promise.all([n.e("56035"), n.e("34057")]).then(n.bind(n, 758961)), i = (null == a ? void 0 : a.guild_id) != null ? p.Z.getGuild(a.guild_id) : null, o = null != i && (0, d.Gw)(i, f.Z, v.default).canCreateExpressions, s = null == S || "" === S ? (0, _.yl)(h.default.extractTimestamp(t.id)) : S, u = s.slice(0, w.Ek);
-        return t => (0, r.jsx)(l, P(O({}, t), {
+        return t => (0, r.jsx)(l, O(P({}, t), {
           showGuildPicker: !0,
           guildId: o ? null == a ? void 0 : a.guild_id : void 0,
           sourceFile: {
@@ -111,7 +111,7 @@ function S(e) {
     var e;
     B("export"), null == (e = L.current) || e.pause();
     try {
-      let e = await (0, g.rO)(t, P(O({}, T), {
+      let e = await (0, g.rO)(t, O(P({}, T), {
           applicationAudio: I,
           voiceAudio: F
         })),
@@ -128,7 +128,7 @@ function S(e) {
       let {
         default: e
       } = await n.e("15915").then(n.bind(n, 799677));
-      return n => (0, r.jsx)(e, P(O({
+      return n => (0, r.jsx)(e, O(P({
         clip: t
       }, n), {
         onClose: async () => {
@@ -186,7 +186,7 @@ function S(e) {
         color: s.zxk.Colors.BRAND,
         wrapperClassName: N.clipFormFooterButton,
         onClick: () => M({
-          clip: P(O({}, t), {
+          clip: O(P({}, t), {
             name: S
           }),
           cropData: T,
@@ -221,7 +221,7 @@ function S(e) {
             let {
               default: e
             } = await n.e("32157").then(n.bind(n, 151090));
-            return t => (0, r.jsx)(e, P(O({}, t), {
+            return t => (0, r.jsx)(e, O(P({}, t), {
               onExportToSoundboard: W,
               onExportToFile: z,
               onDelete: H,

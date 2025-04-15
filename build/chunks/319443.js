@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(120356),
   l = n.n(i),
-  o = n(392711),
-  s = n(442837),
+  s = n(392711),
+  o = n(442837),
   c = n(481060),
   d = n(456100),
   u = n(114851),
@@ -47,7 +47,7 @@ function W(e) {
     applicationId: t,
     hideDetailHeaderButtons: n,
     onClickBack: i
-  } = e, o = (0, s.e7)([N.Z], () => N.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
+  } = e, s = (0, o.e7)([N.Z], () => N.Z.getApplication(t)), [d, u] = a.useState(n), p = a.useCallback(() => {
     u(n)
   }, [n]);
   return (0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ function W(e) {
       color: "header-primary",
       className: B.detailHeader,
       lineClamp: 1,
-      children: null == o ? void 0 : o.name
+      children: null == s ? void 0 : s.name
     }), (0, r.jsx)("div", {
       className: l()(B.detailHeaderSection, B.detailHeaderButtonsContainer, {
         [B.visible]: !n,
@@ -71,8 +71,8 @@ function W(e) {
         [B.hidden]: n && d
       }),
       onTransitionEnd: p,
-      children: null != o ? (0, r.jsx)(k.Z, {
-        application: o,
+      children: null != s ? (0, r.jsx)(k.Z, {
+        application: s,
         size: "sm"
       }) : null
     })]
@@ -115,7 +115,7 @@ function U() {
 }
 let F = function() {
   var e, t;
-  let n = (0, s.e7)([v.default], () => !v.default.isAuthenticated()),
+  let n = (0, o.e7)([v.default], () => !v.default.isAuthenticated()),
     {
       onScroll: i,
       scrollPosition: N,
@@ -132,7 +132,7 @@ let F = function() {
       query: q,
       categoryId: K
     } = (null == F ? void 0 : F.type) === A.m_.SEARCH ? F : {},
-    Q = (0, s.e7)([O.Z], () => O.Z.getCategories()),
+    Q = (0, o.e7)([O.Z], () => O.Z.getCategories()),
     J = a.useMemo(() => [(0, P.KQ)(), ...Q], [Q]),
     $ = a.useMemo(() => J.find(e => e.id === Number(K)), [J, K]),
     {
@@ -143,9 +143,9 @@ let F = function() {
     [er, ea] = a.useState(!0),
     ei = A.z8.useField("trackedOpenedFromExternalEntrypoint"),
     el = A.z8.useField("sessionId"),
-    eo = (0, s.e7)([C.default], () => C.default.getCurrentUser()),
+    es = (0, o.e7)([C.default], () => C.default.getCurrentUser()),
     {
-      enabled: es
+      enabled: eo
     } = (0, x.W)({
       location: "global_discovery_apps"
     });
@@ -155,7 +155,7 @@ let F = function() {
       j.default.track(G.rMx.APP_DIRECTORY_OPENED, {
         source: A.xF.EXTERNAL,
         session_id: e,
-        user_id: null == eo ? void 0 : eo.id
+        user_id: null == es ? void 0 : es.id
       }), A.z8.setState({
         trackedOpenedFromExternalEntrypoint: !0,
         sessionId: e,
@@ -165,7 +165,7 @@ let F = function() {
         guildId: null
       })
     }
-  }, [el, ei, null == eo ? void 0 : eo.id]), a.useEffect(() => {
+  }, [el, ei, null == es ? void 0 : es.id]), a.useEffect(() => {
     y.CP()
   }, []), a.useEffect(() => {
     V && y.g5()
@@ -202,7 +202,7 @@ let F = function() {
     applicationId: e
   }), []), ej = ed || eu, ey = a.useCallback(() => {
     null != (0, A.Uc)() ? (0, b.op)() : (0, L.Yp)()
-  }, []), eI = (0, o.debounce)(e => {
+  }, []), eI = (0, s.debounce)(e => {
     let {
       scrollTop: t,
       offsetHeight: n,
@@ -227,7 +227,7 @@ let F = function() {
     }),
     children: [n ? (0, r.jsx)(U, {}) : null, (0, r.jsxs)("div", {
       className: B.innerContainer,
-      children: [es ? (0, r.jsxs)(h.a, {
+      children: [eo ? (0, r.jsxs)(h.a, {
         selectedTabId: et,
         handleTransition: ev,
         tabs: ee,

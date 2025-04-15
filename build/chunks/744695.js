@@ -6,10 +6,10 @@ var r = n(200651),
   a = n(192379),
   i = n(120356),
   l = n.n(i),
-  o = n(21260),
-  s = n(481060),
-  c = n(984370),
-  d = n(889711),
+  s = n(21260),
+  o = n(481060),
+  c = n(393903),
+  d = n(984370),
   u = n(79707),
   p = n(49898),
   m = n(388032),
@@ -53,7 +53,7 @@ function f(e) {
     label: n,
     selected: a,
     handleTransition: i
-  } = e, o = function(e, t) {
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, a = function(e, t) {
       if (null == e) return {};
@@ -68,7 +68,7 @@ function f(e) {
     }
     return a
   }(e, ["id", "label", "selected", "handleTransition"]);
-  return (0, r.jsx)(c.Z.Title, _(g({}, o), {
+  return (0, r.jsx)(d.Z.Title, _(g({}, s), {
     onClick: () => i(t),
     wrapperClassName: h.tabWrapper,
     className: l()(h.tab, {
@@ -85,7 +85,7 @@ function b(e) {
     selectedTab: a,
     selected: i
   } = e;
-  return (0, r.jsx)(s.yRy, {
+  return (0, r.jsx)(o.yRy, {
     renderPopout: e => {
       let {
         closePopout: i
@@ -103,16 +103,16 @@ function b(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsxs)(c.Z.Title, _(g({}, e), {
+      return (0, r.jsxs)(d.Z.Title, _(g({}, e), {
         wrapperClassName: h.tabWrapper,
         className: l()(h.tab, h.more, {
           [h.selected]: i
         }),
         id: p.GlobalDiscoverySharedTabId.MORE,
         "aria-label": m.NW.string(m.t.UKOtz8),
-        children: [m.NW.string(m.t.UKOtz8), n ? (0, r.jsx)(s.u04, {
+        children: [m.NW.string(m.t.UKOtz8), n ? (0, r.jsx)(o.u04, {
           size: "xs"
-        }) : (0, r.jsx)(s.CJ0, {
+        }) : (0, r.jsx)(o.CJ0, {
           size: "xs"
         })]
       }))
@@ -125,31 +125,26 @@ function x(e) {
     className: t,
     selectedTab: n,
     tabs: i,
-    onTabSelect: s,
-    onAvailableWidthChange: c
+    onTabSelect: o,
+    onAvailableWidthChange: d
   } = e, [u, p] = a.useState(0), m = a.useRef(u), {
     lastVisibleIndex: g,
     onItemLayout: _,
     overflowItemsRef: x,
     itemWidthsRef: v
-  } = (0, o.zP)({
+  } = (0, s.zP)({
     items: i,
     itemGapPx: 24,
     maxLines: 1,
     containerWidth: u
-  }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), I = a.useCallback(() => {
-    var e;
-    let t = null == (e = y.current) ? void 0 : e.getBoundingClientRect();
-    if (null == t || m.current === t.width) return;
-    p(t.width), m.current = t.width;
-    let n = v.current.reduce((e, t, n) => e + t + 24 * (0 !== n)),
-      r = t.width - n;
-    null == c || c(r)
-  }, [v, c]);
-  a.useEffect(() => {
-    let e = (0, d.pP)(I);
-    return (0, d.YP)(e, document.body), () => (0, d.UC)(e, document.body)
-  }, [I]);
+  }), C = a.useMemo(() => i.slice(0, g + 1), [g, i]), j = a.useMemo(() => i.slice(g + 1), [g, i]), y = a.useRef(null), I = a.useCallback(e => {
+    let t = e.contentRect.width;
+    if (null == t || m.current === t) return;
+    p(t), m.current = t;
+    let n = v.current.reduce((e, t, n) => e + t + 24 * (0 !== n));
+    null == d || d(t - n)
+  }, [v, d]);
+  (0, c.s)(y, I);
   let N = 0 !== u,
     O = j.some(e => e.id === n);
   return (0, r.jsxs)("div", {
@@ -157,20 +152,20 @@ function x(e) {
     ref: y,
     children: [(0, r.jsxs)("div", {
       className: h.measurements,
-      children: [i.map((e, t) => (0, r.jsx)(o.AJ, {
+      children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
         onItemLayout: _,
         children: (0, r.jsx)(f, {
           id: e.id,
           label: e.label,
           selected: n === e.id,
-          handleTransition: s
+          handleTransition: o
         }, e.id)
       }, e.id)), (0, r.jsx)("div", {
         ref: x,
         children: (0, r.jsx)(b, {
           tabs: j,
-          onTabSelect: s,
+          onTabSelect: o,
           selectedTab: n,
           selected: O
         })
@@ -181,10 +176,10 @@ function x(e) {
         id: e.id,
         label: e.label,
         selected: n === e.id,
-        handleTransition: s
+        handleTransition: o
       }, e.id)), 0 !== j.length ? (0, r.jsx)(b, {
         tabs: j,
-        onTabSelect: s,
+        onTabSelect: o,
         selectedTab: n,
         selected: O
       }) : null]

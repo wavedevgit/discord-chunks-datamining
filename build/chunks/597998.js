@@ -1,7 +1,7 @@
 /** Chunk was on 93602 **/
 n.d(t, {
   ZP: () => M,
-  eJ: () => L,
+  eJ: () => k,
   nm: () => W
 }), n(539854), n(997841), n(388685);
 var r = n(200651),
@@ -37,7 +37,7 @@ var r = n(200651),
   D = n(388032),
   _ = n(850999);
 
-function k(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -55,7 +55,7 @@ function k(e) {
   }
   return e
 }
-let L = e => {
+let k = e => {
   let {
     children: t,
     collapsed: n = !1,
@@ -90,9 +90,9 @@ function W(e) {
     guildId: N,
     channelId: I,
     user: C,
-    disconnected: k
+    disconnected: L
   } = e, {
-    enabled: L
+    enabled: k
   } = d.c.getCurrentConfig({
     location: "VoiceUserIcons"
   }, {
@@ -125,7 +125,7 @@ function W(e) {
       color: "currentColor",
       className: o()(_.icon, h)
     })
-  }, "video"))), k && W.push((0, r.jsx)(s.DY3, {
+  }, "video"))), L && W.push((0, r.jsx)(s.DY3, {
     className: _.iconSpacing,
     text: D.NW.string(D.t.HFwRpq),
     children: (0, r.jsx)(s.P4T, {
@@ -133,7 +133,7 @@ function W(e) {
       color: s.TVs.colors.STATUS_WARNING_BACKGROUND
     })
   }, "disconnected"));
-  let V = L ? s.iWm : s.nG3;
+  let V = k ? s.iWm : s.nG3;
   null != v && W.push((0, r.jsx)(s.DY3, {
     text: (0, p.Z)(v.name),
     className: _.iconSpacing,
@@ -213,7 +213,7 @@ let M = l.forwardRef(function(e, t) {
     onKeyDown: Z,
     onDoubleClick: x,
     onContextMenu: A,
-    onMouseLeave: L,
+    onMouseLeave: k,
     onMouseDown: M,
     priority: U,
     speaking: R,
@@ -265,7 +265,7 @@ let M = l.forwardRef(function(e, t) {
       null == A || A(e, Q)
     },
     onMouseLeave: e => {
-      null == L || L(e, Q)
+      null == k || k(e, Q)
     },
     onMouseDown: e => {
       null == M || M(e, Q)
@@ -283,7 +283,7 @@ let M = l.forwardRef(function(e, t) {
       }),
       children: [U && !V ? (0, r.jsx)(s.ua7, {
         text: D.NW.string(D.t.BVK71t),
-        children: e => (0, r.jsx)("div", k({
+        children: e => (0, r.jsx)("div", L({
           className: o()(_.iconPriortySpeaker, {
             [_.iconPriortySpeakerSpeaking]: !F && !Y && R
           })
@@ -320,7 +320,7 @@ let M = l.forwardRef(function(e, t) {
               source: O ? T.jXE.OVERLAY : T.Sbl.VOICE_PANEL
             }
           };
-        return !V || O ? (0, r.jsx)(y.Z, (e = k({}, l), t = t = {
+        return !V || O ? (0, r.jsx)(y.Z, (e = L({}, l), t = t = {
           children: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -332,7 +332,7 @@ let M = l.forwardRef(function(e, t) {
         })(Object(t)).forEach(function(n) {
           Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)) : null
-      }(), (0, r.jsx)(W, k({
+      }(), (0, r.jsx)(W, L({
         disabled: f
       }, h)), er && (!V && el ? (0, r.jsx)(s.DY3, {
         text: D.NW.string(D.t["+1H47u"]),

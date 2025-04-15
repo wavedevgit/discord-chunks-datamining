@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r, a, i = n(200651),
   l = n(192379),
-  o = n(120356),
-  s = n.n(o),
+  s = n(120356),
+  o = n.n(s),
   c = n(392711),
   d = n.n(c),
   u = n(846519),
@@ -47,18 +47,18 @@ class y extends(r = l.PureComponent) {
       arrowClassName: r,
       paginationDotClassName: a,
       paginationDotSelectedClassName: l,
-      paginationArrowIconType: o = "arrow"
-    } = this.props, c = s()(v.arrowHitbox, {
+      paginationArrowIconType: s = "arrow"
+    } = this.props, c = o()(v.arrowHitbox, {
       [v.arrowHitboxPadding]: n
     }, r);
     return (0, i.jsxs)("div", {
-      className: s()(v.controls, this.props.className),
+      className: o()(v.controls, this.props.className),
       children: [(0, i.jsx)(p.zxk, {
         look: p.zxk.Looks.BLANK,
         className: c,
         onClick: this.handlePrevious,
         "aria-label": x.NW.string(x.t.vgfxaG),
-        children: "caret" === o ? (0, i.jsx)(_.Z, {
+        children: "caret" === s ? (0, i.jsx)(_.Z, {
           className: v.arrow,
           direction: _.Z.Directions.LEFT
         }) : (0, i.jsx)(g.Z, {
@@ -71,7 +71,7 @@ class y extends(r = l.PureComponent) {
           look: p.zxk.Looks.BLANK,
           size: p.zxk.Sizes.NONE,
           onClick: () => this.handleDotClick(t),
-          className: t === e ? s()(v.dotSelected, l) : s()(v.dotNormal, a),
+          className: t === e ? o()(v.dotSelected, l) : o()(v.dotNormal, a),
           "aria-label": x.NW.formatToPlainString(x.t["2SXOrK"], {
             pageNumber: t + 1
           })
@@ -81,7 +81,7 @@ class y extends(r = l.PureComponent) {
         className: c,
         onClick: this.handleNext,
         "aria-label": x.NW.string(x.t.XiOHRU),
-        children: "caret" === o ? (0, i.jsx)(_.Z, {
+        children: "caret" === s ? (0, i.jsx)(_.Z, {
           className: v.arrow,
           direction: _.Z.Directions.RIGHT
         }) : (0, i.jsx)(g.Z, {
@@ -165,7 +165,7 @@ class I extends(a = l.PureComponent) {
       slideAnimatorClassName: r,
       slideAnimatorSpringSettings: a,
       slideAnimatorFadeInOut: l,
-      paginationClassName: o,
+      paginationClassName: s,
       paginationArrowClassName: c,
       paginationArrowIconType: d,
       paginationDotClassName: u,
@@ -181,7 +181,7 @@ class I extends(a = l.PureComponent) {
     return (0, i.jsxs)("div", {
       className: v.root,
       children: [(0, i.jsxs)("div", {
-        className: s()(v.carouselContainer, n),
+        className: o()(v.carouselContainer, n),
         style: _,
         onMouseEnter: this.handleMouseEnter,
         onMouseLeave: this.handleMouseLeave,
@@ -190,7 +190,7 @@ class I extends(a = l.PureComponent) {
             aspectRatio: f
           },
           children: (0, i.jsx)(h.Z, {
-            className: s()(v.carousel, r),
+            className: o()(v.carousel, r),
             step: x,
             direction: this.getCurrentDirection(),
             springSettings: a,
@@ -198,7 +198,7 @@ class I extends(a = l.PureComponent) {
             children: t(e[x], x)
           })
         }), e.length > 1 && (0, i.jsx)(y, {
-          className: s()(o, m ? v.themedPagination : v.pagination),
+          className: o()(s, m ? v.themedPagination : v.pagination),
           arrowClassName: c,
           includeHitboxPadding: g,
           current: x,

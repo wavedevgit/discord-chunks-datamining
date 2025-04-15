@@ -28,7 +28,7 @@ let j = a.memo(function(e) {
     onContextMenu: e => (0, i.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("22356"), n.e("56811")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("22356"), n.e("48334")]).then(n.bind(n, 422200));
       return t => {
         var n, a;
         return (0, r.jsx)(e, (n = function(e) {

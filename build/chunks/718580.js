@@ -139,7 +139,7 @@ function T(e) {
     ref: x,
     width: M = 0,
     height: k = 0
-  } = (0, u.Z)(A), j = m({}, v, S.springConfig, P.enabled ? {
+  } = (0, u.ZP)(A), j = m({}, v, S.springConfig, P.enabled ? {
     clamp: !0
   } : null), U = (0, c.q_F)({
     width: null != (n = S.width) ? n : M,

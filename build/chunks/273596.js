@@ -61,19 +61,16 @@ function j(e) {
     loadId: t
   }), Z = 0 === s.length && !h, x = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(!0), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), W = i.useRef(null), V = i.useCallback(e => {
     if (null != e && !Z && !h) 336 * (s.length / M) <= e.height && j()
-  }, [Z, h, s.length, M, j]), B = (0, u.y)(e => {
-    let t = null == e ? void 0 : e.getBoundingClientRect();
+  }, [Z, h, s.length, M, j]), B = i.useCallback(e => {
+    let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
     n < 1024 && k.current ? (k.current = !1, D(!1)) : n > 1024 && !k.current && (k.current = !0, D(!0));
     let r = 1;
     for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
     r !== G.current && (G.current = r, U(r)), V(t)
-  });
-  i.useLayoutEffect(() => {
-    var e;
-    V(null == (e = B.current) ? void 0 : e.getBoundingClientRect())
-  }, [B, V]), i.useEffect(() => {
+  }, [R, V]), H = (0, u.y)(B, [R, V]);
+  i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
     P({
@@ -85,9 +82,9 @@ function j(e) {
       categoryId: A
     })
   }, [x, s, t, A, w, I]);
-  let H = i.useCallback(e => n(e, A), [n, A]),
-    F = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
-    z = i.useCallback((e, n, i) => {
+  let F = i.useCallback(e => n(e, A), [n, A]),
+    z = i.useMemo(() => h ? [s.length, 0] : [s.length], [s.length, h]),
+    Y = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
           return (0, r.jsxs)("div", {
@@ -117,7 +114,7 @@ function j(e) {
           }, i)
       }
     }, [Z, R, t]),
-    Y = i.useCallback(e => {
+    K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
@@ -128,7 +125,7 @@ function j(e) {
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
     }, [Z, R]),
-    K = i.useCallback((e, t) => {
+    q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
           return s[t];
@@ -138,7 +135,7 @@ function j(e) {
           throw Error("[getItemKey] Failed for section: ".concat(e))
       }
     }, [s]),
-    q = i.useCallback(e => {
+    Q = i.useCallback(e => {
       switch (e) {
         case 0:
           return 320;
@@ -148,7 +145,7 @@ function j(e) {
           throw Error("[getItemHeight] Failed for section: ".concat(e))
       }
     }, []),
-    Q = i.useCallback(async (e, t, n, r) => {
+    X = i.useCallback(async (e, t, n, r) => {
       var i, a;
       await l(e, t, n, r);
       let o = null == (a = W.current) || null == (i = a.getScrollerState()) ? void 0 : i.scrollTop;
@@ -156,7 +153,7 @@ function j(e) {
         scrollPosition: o
       })
     }, [l]),
-    X = i.useCallback((e, t, n, i) => {
+    J = i.useCallback((e, t, n, i) => {
       if (0 !== e) return null;
       {
         let e = s[t];
@@ -164,12 +161,12 @@ function j(e) {
           style: n,
           children: (0, r.jsx)(y.ZP, {
             guildId: e,
-            onClick: async e => await Q(e, t, A, T),
-            onView: e => H(e)
+            onClick: async e => await X(e, t, A, T),
+            onView: e => F(e)
           })
         }, i)
       }
-    }, [s, Q, H, A]);
+    }, [s, X, F, A]);
   i.useEffect(() => {
     let e = W.current;
     return () => {
@@ -194,7 +191,7 @@ function j(e) {
       })
     })
   }, []);
-  let J = i.useMemo(() => (0, o.debounce)(() => {
+  let $ = i.useMemo(() => (0, o.debounce)(() => {
       var e;
       let t = null == (e = W.current) ? void 0 : e.getScrollerState();
       if (null == t) return;
@@ -203,24 +200,24 @@ function j(e) {
     }, 100, {
       leading: !0
     }), [j]),
-    $ = R ? C : S;
+    ee = R ? C : S;
   return (0, r.jsx)("div", {
     className: v.container,
-    ref: B,
+    ref: H,
     children: (0, r.jsx)(c.GMG, {
       ref: W,
       className: v.masonryList,
-      sections: F,
+      sections: z,
       columns: M,
       itemGutter: 16,
-      padding: $,
-      renderItem: X,
-      renderSection: z,
-      getSectionHeight: Y,
-      getItemKey: K,
-      getItemHeight: q,
+      padding: ee,
+      renderItem: J,
+      renderSection: Y,
+      getSectionHeight: K,
+      getItemKey: q,
+      getItemHeight: Q,
       chunkSize: 24,
-      onScroll: J,
+      onScroll: $,
       renderAccessory: e => R ? (0, r.jsx)("div", {
         className: v.sidebar,
         style: {

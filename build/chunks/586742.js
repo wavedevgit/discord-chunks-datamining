@@ -199,7 +199,7 @@ function D(e) {
       width: c,
       height: h,
       ref: f
-    } = (0, d.Z)(e.locked, e.widget.pinned),
+    } = (0, d.ZP)(e.locked, e.widget.pinned),
     {
       participantTileWidth: y,
       visibleParticipants: v

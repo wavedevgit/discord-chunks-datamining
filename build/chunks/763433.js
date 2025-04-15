@@ -6,8 +6,8 @@ n.d(t, {
 var r, a = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  s = n(442837),
+  s = n.n(l),
+  o = n(442837),
   c = n(481060),
   d = n(410030),
   u = n(984370),
@@ -26,7 +26,7 @@ function f(e) {
     onAvailableWidthChange: _,
     icon: f,
     children: b
-  } = e, x = (0, d.ZP)(), v = (0, s.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? void 0 : v.isStaff()) || (null == v ? void 0 : v.isStaffPersonal()), {
+  } = e, x = (0, d.ZP)(), v = (0, o.e7)([m.default], () => m.default.getCurrentUser()), C = (null == v ? void 0 : v.isStaff()) || (null == v ? void 0 : v.isStaffPersonal()), {
     enabled: j
   } = (0, p.W)({
     location: "global_discovery_header_bar"
@@ -34,7 +34,7 @@ function f(e) {
   return (0, a.jsx)(c.f6W, {
     theme: x,
     children: e => (0, a.jsxs)(u.Z, {
-      className: o()(e, g.headerBar),
+      className: s()(e, g.headerBar),
       innerClassname: j ? g.headerBarInner : void 0,
       toolbar: C ? (0, a.jsx)(i.Fragment, {}) : null,
       children: ["DEFAULT" === l && (0, a.jsxs)(a.Fragment, {
@@ -48,7 +48,7 @@ function f(e) {
           onAvailableWidthChange: _
         })]
       }), (0, a.jsx)("div", {
-        className: o()(g.headerBarContent, {
+        className: s()(g.headerBarContent, {
           [g.headerBarSearchContent]: "SEARCH" === l
         }),
         children: b

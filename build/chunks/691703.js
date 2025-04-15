@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(442837),
   l = n(481060),
-  o = n(703656),
-  s = n(314897),
+  s = n(703656),
+  o = n(314897),
   c = n(900849),
   d = n(881294),
   u = n(949507),
@@ -23,7 +23,7 @@ function g(e) {
     onGoToSupportServer: g
   } = function(e) {
     let t = (0, d.nu)(),
-      n = (0, i.e7)([s.default], () => s.default.getSessionId()),
+      n = (0, i.e7)([o.default], () => o.default.getSessionId()),
       r = a.useCallback(async () => {
         try {
           var t;
@@ -45,7 +45,7 @@ function g(e) {
       if (null != e && t && null != n && "true" === a.searchParams.get(h)) {
         a.searchParams.delete(h);
         let e = a.pathname + a.search;
-        (0, o.dL)(e), r()
+        (0, s.dL)(e), r()
       }
     }, [t, r, n, e]), {
       onGoToSupportServer: a.useCallback(() => {

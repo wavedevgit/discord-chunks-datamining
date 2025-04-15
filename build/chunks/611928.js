@@ -9,8 +9,8 @@ n.d(t, {
 var r, a = n(200651),
   i = n(192379),
   l = n(120356),
-  o = n.n(l),
-  s = n(200100),
+  s = n.n(l),
+  o = n(200100),
   c = n(481060),
   d = n(794916);
 
@@ -18,7 +18,7 @@ function u(e) {
   let {
     scrollPosition: t
   } = e;
-  return (0, a.jsx)(s.animated.div, {
+  return (0, a.jsx)(o.animated.div, {
     className: d.backdrop,
     style: {
       opacity: null == t ? void 0 : t.to([0, 100], [0, 1])
@@ -60,7 +60,7 @@ function g(e) {
     children: r
   } = e, l = i.useMemo(() => "overlay" === n ? d.overlay : d.relative, [n]);
   return (0, a.jsx)("div", {
-    className: o()(d.headerBar, l, t),
+    className: s()(d.headerBar, l, t),
     children: r
   })
 }

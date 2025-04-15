@@ -1,20 +1,20 @@
 /** Chunk was on 9573 **/
-t.d(e, {
-  Z: () => c
+l.d(t, {
+  Z: () => s
 });
-var l = t(200651);
-t(192379);
-var i = t(852229),
-  o = t(481060),
-  a = t(109764),
-  r = t(388032);
+var e = l(200651);
+l(192379);
+var i = l(481060),
+  a = l(572004),
+  r = l(109764),
+  c = l(388032);
 
-function c(n, e, t) {
-  return null != n ? (0, a.Z)(n, t, e) : (0, l.jsx)(o.sNh, {
+function s(n, t, l) {
+  return null != n ? (0, r.Z)(n, l, t) : (0, e.jsx)(i.sNh, {
     id: "channel-copy-link",
-    label: r.NW.string(r.t.WqhZsr),
+    label: c.NW.string(c.t.WqhZsr),
     action: () => {
-      (0, i.J)(null != e ? e : "")
+      (0, a.JG)(null != t ? t : "")
     }
   })
 }

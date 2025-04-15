@@ -147,7 +147,7 @@ function G(e) {
   } = e, {
     ref: g,
     width: E
-  } = (0, c.Z)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
+  } = (0, c.ZP)(), b = i.useMemo(() => P(s), [s]), y = i.useRef(void 0), v = M(n, E), O = i.useRef(l), S = i.useRef(d), N = i.useRef(null), C = window.devicePixelRatio, {
     lastBackgroundFillColor: R,
     backgroundFillColor: w,
     lastActiveFillColor: D,

@@ -33,8 +33,8 @@ var r, l, i = n(200651),
   A = n(833664),
   D = n(503438),
   _ = n(802856),
-  k = n(420660),
-  L = n(39628),
+  L = n(420660),
+  k = n(39628),
   W = n(701488),
   M = n(981631),
   U = n(388032),
@@ -110,7 +110,7 @@ class H extends(r = o.PureComponent) {
     return (0, C.l)(R, e, this.props.type, t)
   }
   isStreamerOnTypeActivityFeed() {
-    return (0, k.Z)(this.activity) && "ActivityFeed" === this.props.type
+    return (0, L.Z)(this.activity) && "ActivityFeed" === this.props.type
   }
   renderHeader(e) {
     let t, {
@@ -189,7 +189,7 @@ class H extends(r = o.PureComponent) {
         application_id: d
       } = e;
     if (null == u || null == u.large_image && null == u.small_image) return null;
-    (0, k.Z)(e) && (l = G[c]);
+    (0, L.Z)(e) && (l = G[c]);
     let f = (0, D.Z)(e),
       m = null != u.large_image ? (0, i.jsx)("img", {
         alt: null != (t = u.large_text) ? t : "",
@@ -337,7 +337,7 @@ class H extends(r = o.PureComponent) {
         l = null == (a = e.assets) ? void 0 : a.small_text
       }
     }
-    return null == l || "" === l ? null : ((0, k.Z)(e) && (l = U.NW.formatToPlainString(U.t.gmCZRU, {
+    return null == l || "" === l ? null : ((0, L.Z)(e) && (l = U.NW.formatToPlainString(U.t.gmCZRU, {
       game: l
     })), null != t) ? (0, i.jsx)(p.P3F, {
       onClick: t,
@@ -346,7 +346,7 @@ class H extends(r = o.PureComponent) {
       children: l
     }) : (0, i.jsx)("div", {
       title: null != o ? o : void 0,
-      className: (0, k.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details,
+      className: (0, L.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details,
       children: l
     })
   }
@@ -357,12 +357,12 @@ class H extends(r = o.PureComponent) {
       channel: r
     } = this.props;
     return n && null != t ? null == r ? (0, i.jsx)("div", {
-      className: (0, k.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details,
+      className: (0, L.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details,
       children: U.NW.format(U.t["hq/Qzc"], {
         guildName: t.name
       })
     }) : (0, i.jsxs)("div", {
-      className: s()((0, k.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details, R.guildDetails),
+      className: s()((0, L.Z)(e) || (0, D.Z)(e) ? R.detailsWrap : R.details, R.guildDetails),
       children: [(0, i.jsx)(S.Z, {
         guild: t,
         size: S.Z.Sizes.SMOL,
@@ -409,7 +409,7 @@ class H extends(r = o.PureComponent) {
       start: n,
       end: r
     } = t;
-    return null == n || null == r ? null : (0, i.jsx)(L.Z, {
+    return null == n || null == r ? null : (0, i.jsx)(k.Z, {
       start: n,
       end: r,
       className: this.getTypeClass("timeBar"),

@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(481060),
   l = n(581364),
-  o = n(761652),
-  s = n(388032),
+  s = n(761652),
+  o = n(388032),
   c = n(744939);
 
 function d(e) {
@@ -27,7 +27,7 @@ function d(e) {
     children: [(0, r.jsx)(i.X6q, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: s.NW.string(s.t.swIgTE)
+      children: o.NW.string(o.t.swIgTE)
     }), (0, r.jsx)("div", {
       className: c.contentContainer,
       children: n.map(e => (0, r.jsxs)("div", {
@@ -36,7 +36,7 @@ function d(e) {
           className: c.commandName,
           variant: "code",
           color: "header-primary",
-          children: [o.GI, e.displayName]
+          children: [s.GI, e.displayName]
         }), (0, r.jsx)(i.Text, {
           variant: "text-md/normal",
           color: "text-normal",

@@ -67,7 +67,7 @@ function N(e) {
 let y = i.memo(function() {
   let e = (0, c.Q3)("AppPanels"),
     t = i.useRef(null);
-  return (0, a.P)(t, e => {
+  return (0, a.PM)(t, e => {
     let {
       height: t
     } = e;

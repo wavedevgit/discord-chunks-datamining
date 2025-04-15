@@ -29,7 +29,7 @@ let x = e => {
   } = e, {
     ref: a,
     width: u
-  } = (0, c.Z)(), d = null != u && u <= 800;
+  } = (0, c.ZP)(), d = null != u && u <= 800;
   return (0, r.jsxs)("div", {
     ref: a,
     className: y.header,

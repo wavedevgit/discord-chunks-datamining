@@ -30,7 +30,7 @@ function y(e) {
     ref: l,
     width: y,
     height: I
-  } = (0, c.Z)(), v = (0, p.Q3)("GuildOnboardingBlockedPage"), C = i.useCallback(() => {
+  } = (0, c.ZP)(), v = (0, p.Q3)("GuildOnboardingBlockedPage"), C = i.useCallback(() => {
     null != t && null != n && ((0, b.I1)(t), (0, _.default)({
       guildId: t,
       returnChannelId: n

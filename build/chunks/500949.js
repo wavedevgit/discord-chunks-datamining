@@ -16,7 +16,7 @@ n.d(t, {
   h9: () => eo,
   iw: () => en,
   jC: () => H,
-  jQ: () => F,
+  jQ: () => G,
   lT: () => K,
   rd: () => ed,
   t4: () => ec,
@@ -117,11 +117,11 @@ let U = {
     XYZ_D50: k.Z,
     XYZ_D65: w.Z
   },
-  F = Object.fromEntries(Object.keys(U).map(e => [e, e]));
+  G = Object.fromEntries(Object.keys(U).map(e => [e, e]));
 Object.values(U).forEach(e => I.Z.register(e));
 let {
-  SemanticColors: G
-} = D.V, H = G, W = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
+  SemanticColors: F
+} = D.V, H = F, W = CSS.supports("color", "color(display-p3 1 0 0)") && CSS.supports("color", "color(display-p3 1 0 0 / 1)");
 
 function V(e, t) {
   let [n, r] = l.useState(() => {

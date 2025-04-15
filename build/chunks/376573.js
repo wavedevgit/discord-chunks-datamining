@@ -4,14 +4,14 @@ r.d(t, {
 });
 var n = r(200651);
 r(192379);
-var o = r(852229),
-  c = r(399606),
-  i = r(481060),
-  a = r(239091),
-  s = r(367907),
-  l = r(496675),
-  p = r(626135),
-  O = r(934415),
+var o = r(399606),
+  c = r(481060),
+  i = r(239091),
+  a = r(367907),
+  s = r(496675),
+  l = r(626135),
+  p = r(934415),
+  O = r(572004),
   b = r(629481),
   u = r(981631),
   y = r(176505),
@@ -21,19 +21,19 @@ function d(e) {
   let {
     guild: t,
     onSelect: r
-  } = e, d = (0, c.e7)([l.Z], () => null != t && l.Z.can(u.Plq.ADMINISTRATOR, t));
-  return (0, n.jsx)(i.v2r, {
+  } = e, d = (0, o.e7)([s.Z], () => null != t && s.Z.can(u.Plq.ADMINISTRATOR, t));
+  return (0, n.jsx)(c.v2r, {
     navId: "guild-shop-context",
     "aria-label": f.NW.string(f.t.g3KvYG),
-    onClose: a.Zy,
+    onClose: i.Zy,
     onSelect: r,
-    children: (0, n.jsx)(i.kSQ, {
-      children: (0, n.jsx)(i.sNh, {
+    children: (0, n.jsx)(c.kSQ, {
+      children: (0, n.jsx)(c.sNh, {
         id: "role-subscription-copy-link",
         label: f.NW.string(f.t.WqhZsr),
         action: () => {
           var e, r;
-          p.default.track(u.rMx.GUILD_SHOP_COPY_LINK, (e = function(e) {
+          l.default.track(u.rMx.GUILD_SHOP_COPY_LINK, (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);
@@ -50,7 +50,7 @@ function d(e) {
               })
             }
             return e
-          }({}, (0, s.hH)(t.id)), r = r = {
+          }({}, (0, a.hH)(t.id)), r = r = {
             is_admin_or_owner: d,
             copy_location: b.xv.CHANNEL_ROW_CONTEXT_MENU
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
@@ -62,7 +62,7 @@ function d(e) {
             return r
           })(Object(r)).forEach(function(t) {
             Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
-          }), e)), (0, o.J)((0, O.wR)(t.id, y.oC.GUILD_SHOP))
+          }), e)), (0, O.JG)((0, p.wR)(t.id, y.oC.GUILD_SHOP))
         }
       })
     })

@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(793030),
   l = n(442837),
-  o = n(481060),
-  s = n(794295),
+  s = n(481060),
+  o = n(794295),
   c = n(765717),
   d = n(283836),
   u = n(507608),
@@ -110,13 +110,13 @@ function I(e) {
         skuId: i
       }
     }
-  } = e, s = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : void 0, [i]), d = a.useId(), u = a.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
+  } = e, o = (0, l.e7)([h.Z], () => h.Z.get(i), [i]), c = (0, l.e7)([h.Z], () => null != i ? h.Z.getParentSKU(i) : void 0, [i]), d = a.useId(), u = a.useCallback(() => (0, _.Gp)(b.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(t, f.GlobalDiscoveryAppsSections.STORE)), [t]);
   return a.useLayoutEffect(() => {
     var e;
-    switch (null == s ? void 0 : s.type) {
+    switch (null == o ? void 0 : o.type) {
       case b.epS.CONSUMABLE:
       case b.epS.DURABLE:
-        return void(0, o.ZDy)(async () => {
+        return void(0, s.ZDy)(async () => {
           let {
             ItemDetailsModal: e
           } = await Promise.resolve().then(n.bind(n, 147496));
@@ -132,7 +132,7 @@ function I(e) {
         });
       case b.epS.SUBSCRIPTION:
         if ((null == c ? void 0 : c.flags) == null) return;
-        return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, o.ZDy)(async () => {
+        return e = (0, m.KW)(c.flags) ? "user" : "guild", void(0, s.ZDy)(async () => {
           let {
             SubscriptionDetailsModal: a
           } = await Promise.resolve().then(n.bind(n, 519896));
@@ -149,8 +149,8 @@ function I(e) {
           }
         })
     }
-  }, [t, d, u, null == c ? void 0 : c.flags, null == s ? void 0 : s.flags, null == s ? void 0 : s.type, i]), a.useLayoutEffect(() => () => {
-    (0, o.Mr3)(d)
+  }, [t, d, u, null == c ? void 0 : c.flags, null == o ? void 0 : o.flags, null == o ? void 0 : o.type, i]), a.useLayoutEffect(() => () => {
+    (0, s.Mr3)(d)
   }, [d]), null
 }
 
@@ -159,7 +159,7 @@ function N(e) {
     application: t
   } = e, n = (0, g.nu)(), a = t.terms_of_service_url, l = t.privacy_policy_url;
   if (null == a && null == l) return null;
-  let o = (e, t) => (0, r.jsx)(s.Z, {
+  let s = (e, t) => (0, r.jsx)(o.Z, {
     href: t,
     trusted: !n,
     children: e
@@ -170,12 +170,12 @@ function N(e) {
       color: "header-primary",
       variant: "text-sm/normal",
       children: null != a && null != l ? x.NW.format(x.t.nylPOT, {
-        termsHook: e => o(e, a),
-        privacyHook: e => o(e, l)
+        termsHook: e => s(e, a),
+        privacyHook: e => s(e, l)
       }) : null != a ? x.NW.format(x.t["0cPyDw"], {
-        termsHook: e => o(e, a)
+        termsHook: e => s(e, a)
       }) : null != l ? x.NW.format(x.t.loYGCw, {
-        privacyHook: e => o(e, l)
+        privacyHook: e => s(e, l)
       }) : null
     })
   })

@@ -1,8 +1,8 @@
 /** Chunk was on 88934 **/
 n.d(t, {
   Gp: () => u,
-  O4: () => s,
-  Yp: () => o,
+  O4: () => o,
+  Yp: () => s,
   pR: () => d,
   ph: () => c
 }), n(65234), n(111804), n(490233), n(97749), n(388685);
@@ -10,7 +10,7 @@ var r = n(703656),
   a = n(216780),
   i = n(258971),
   l = n(981631);
-let o = () => {
+let s = () => {
     let e = {
       previousView: (0, i.Xh)()
     };
@@ -18,7 +18,7 @@ let o = () => {
       state: e
     })
   },
-  s = e => {
+  o = e => {
     let {
       categoryId: t
     } = e, n = {
@@ -43,12 +43,12 @@ let o = () => {
       query: e,
       categoryId: t,
       page: n
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, o = {
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, s = {
       previousView: (0, i.Xh)()
-    }, s = new URLSearchParams;
-    null != e && "" !== e && s.set("q", e), null != t && t !== a.MU && s.set("category_id", t.toString()), null != n && n > 1 && s.set("page", n.toString()), (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, {
-      state: o,
-      search: s.toString()
+    }, o = new URLSearchParams;
+    null != e && "" !== e && o.set("q", e), null != t && t !== a.MU && o.set("category_id", t.toString()), null != n && n > 1 && o.set("page", n.toString()), (0, r.uL)(l.Z5c.GLOBAL_DISCOVERY_APPS_SEARCH, {
+      state: s,
+      search: o.toString()
     })
   },
   u = e => {

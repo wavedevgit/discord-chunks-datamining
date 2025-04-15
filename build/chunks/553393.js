@@ -84,7 +84,7 @@ function V(e) {
   }), W = (0, I.tP)(y), Y = (null == y || null == (t = y.userStatus) ? void 0 : t.claimedAt) != null, K = (null == y || null == (n = y.userStatus) ? void 0 : n.enrolledAt) != null, z = (null == y || null == (h = y.userStatus) ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: J,
     height: $
-  } = (0, f.Z)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, a.eg)();
+  } = (0, f.ZP)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, a.eg)();
   i.useEffect(() => {
     let e = er.current;
     return null == e || e.addEventListener("scroll", k), () => {

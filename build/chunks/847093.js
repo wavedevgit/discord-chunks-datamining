@@ -204,7 +204,7 @@ function M(e) {
   let t = (0, u.e7)([b.Z], () => b.Z.getPurchasedUpgradesForItem(O.yN.CLICKER_BUTTON)),
     {
       ref: n
-    } = (0, f.Z)(),
+    } = (0, f.ZP)(),
     o = null != t[O.uv.CLICKER_BUTTON_AFFIRMATIONS],
     [c, d] = (0, s.useState)([]),
     p = (0, s.useRef)([]),

@@ -6,12 +6,12 @@ var r = n(200651),
   a = n(192379),
   i = n(120356),
   l = n.n(i),
-  o = n(21260),
-  s = n(780384),
+  s = n(21260),
+  o = n(780384),
   c = n(481060),
-  d = n(410030),
-  u = n(540059),
-  p = n(889711),
+  d = n(393903),
+  u = n(410030),
+  p = n(540059),
   m = n(79707),
   h = n(388032),
   g = n(602791);
@@ -21,7 +21,7 @@ function _(e) {
     onTabSelect: t,
     tabs: n,
     selectedTab: i
-  } = e, o = (0, d.ZP)(), p = (0, s.wj)(o), _ = (0, u.Q3)("GlobalDiscoveryHeaderMoreTab"), f = a.useMemo(() => null != n.find(e => {
+  } = e, s = (0, u.ZP)(), d = (0, o.wj)(s), _ = (0, p.Q3)("GlobalDiscoveryHeaderMoreTab"), f = a.useMemo(() => null != n.find(e => {
     let {
       id: t
     } = e;
@@ -37,7 +37,7 @@ function _(e) {
   }({
     selected: f,
     isVisualRefreshEnabled: _,
-    isDarkTheme: p,
+    isDarkTheme: d,
     isHovered: b
   }), C = function(e) {
     let {
@@ -50,7 +50,7 @@ function _(e) {
   }({
     selected: f,
     isVisualRefreshEnabled: _,
-    isDarkTheme: p,
+    isDarkTheme: d,
     isHovered: b
   }), j = a.useCallback(() => x(!0), []), y = a.useCallback(() => x(!1), []);
   return (0, r.jsx)(c.yRy, {
@@ -132,39 +132,34 @@ function f(e) {
     className: t,
     selectedTab: n,
     tabs: i,
-    onTabSelect: s,
-    onAvailableWidthChange: d
+    onTabSelect: o,
+    onAvailableWidthChange: u
   } = e, [m, h] = a.useState(0), f = a.useRef(m), {
     lastVisibleIndex: b,
     onItemLayout: x,
     overflowItemsRef: v,
     itemWidthsRef: C
-  } = (0, o.zP)({
+  } = (0, s.zP)({
     items: i,
     itemGapPx: 20,
     maxLines: 1,
     containerWidth: m
-  }), j = a.useMemo(() => i.slice(0, b + 1), [b, i]), y = a.useMemo(() => i.slice(b + 1), [b, i]), I = a.useRef(null), N = a.useCallback(() => {
-    var e;
-    let t = null == (e = I.current) ? void 0 : e.getBoundingClientRect();
-    if (null == t || f.current === t.width) return;
-    h(t.width), f.current = t.width;
-    let n = C.current.reduce((e, t, n) => e + t + 20 * (0 !== n)),
-      r = t.width - n;
-    null == d || d(r)
-  }, [C, d]);
-  a.useEffect(() => {
-    let e = (0, p.pP)(N);
-    return (0, p.YP)(e, document.body), () => (0, p.UC)(e, document.body)
-  }, [N]);
+  }), j = a.useMemo(() => i.slice(0, b + 1), [b, i]), y = a.useMemo(() => i.slice(b + 1), [b, i]), I = a.useRef(null), N = a.useCallback(e => {
+    let t = e.contentRect.width;
+    if (null == t || f.current === t) return;
+    h(t), f.current = t;
+    let n = C.current.reduce((e, t, n) => e + t + 20 * (0 !== n));
+    null == u || u(t - n)
+  }, [C, u]);
+  (0, d.s)(I, N);
   let O = 0 !== m,
-    P = (0, u.Q3)("GlobalDiscoveryHeaderTabs");
+    P = (0, p.Q3)("GlobalDiscoveryHeaderTabs");
   return (0, r.jsxs)("div", {
     className: l()(g.container, t),
     ref: I,
     children: [(0, r.jsxs)("div", {
       className: g.measurements,
-      children: [i.map((e, t) => (0, r.jsx)(o.AJ, {
+      children: [i.map((e, t) => (0, r.jsx)(s.AJ, {
         index: t,
         onItemLayout: x,
         children: (0, r.jsx)(c.njP.Item, {
@@ -180,7 +175,7 @@ function f(e) {
         ref: v,
         children: (0, r.jsx)(_, {
           tabs: y,
-          onTabSelect: s,
+          onTabSelect: o,
           selectedTab: n
         })
       })]
@@ -188,7 +183,7 @@ function f(e) {
       type: "top",
       look: "brand",
       selectedItem: n,
-      onItemSelect: s,
+      onItemSelect: o,
       className: g.tabs,
       children: [j.map(e => (0, r.jsx)(c.njP.Item, {
         id: e.id,
@@ -200,7 +195,7 @@ function f(e) {
         children: e.label
       }, e.id)), 0 !== y.length ? (0, r.jsx)(_, {
         tabs: y,
-        onTabSelect: s,
+        onTabSelect: o,
         selectedTab: n
       }) : null]
     })]

@@ -39,7 +39,7 @@ function D(e) {
     ref: n,
     width: o,
     height: D
-  } = (0, m.Z)(), T = (0, p.Q3)("GuildOnboardingPage"), R = (0, a.Wu)([O.Z], () => O.Z.getOnboardingPromptsForOnboarding(t)), M = (0, a.e7)([O.Z], () => O.Z.getEnabled(t)), A = l.useCallback((e, n, r) => {
+  } = (0, m.ZP)(), T = (0, p.Q3)("GuildOnboardingPage"), R = (0, a.Wu)([O.Z], () => O.Z.getOnboardingPromptsForOnboarding(t)), M = (0, a.e7)([O.Z], () => O.Z.getEnabled(t)), A = l.useCallback((e, n, r) => {
     C.Z.selectOption(t, e, n, r)
   }, [t]), S = l.useCallback(() => {
     C.Z.completeOnboarding(t, R)

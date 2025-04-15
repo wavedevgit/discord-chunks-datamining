@@ -6,8 +6,8 @@ var r = n(200651),
   a = n(192379),
   i = n(512969),
   l = n(209173),
-  o = n(288385),
-  s = n(442837),
+  s = n(288385),
+  o = n(442837),
   c = n(481060),
   d = n(110924),
   u = n(374939),
@@ -35,7 +35,7 @@ function T(e) {
   let {
     onSelectApplication: n,
     onScroll: T
-  } = e, A = (0, s.e7)([m.default], () => m.default.isAuthenticated()), L = a.useRef(null), R = (0, i.TH)(), Z = a.useRef(null), {
+  } = e, A = (0, o.e7)([m.default], () => m.default.isAuthenticated()), L = a.useRef(null), R = (0, i.TH)(), Z = a.useRef(null), {
     query: k,
     page: w,
     categoryId: D
@@ -49,7 +49,7 @@ function T(e) {
       page: a,
       categoryId: null != (t = Number(n.get("category_id"))) ? t : P.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID
     }
-  }, [R.search]), M = (0, s.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? void 0 : M.find(e => e.id === D), [M, D]), z = a.useCallback(e => {
+  }, [R.search]), M = (0, o.e7)([f.Z], () => f.Z.getCategories()), G = a.useMemo(() => null == M ? void 0 : M.find(e => e.id === D), [M, D]), z = a.useCallback(e => {
     (0, v.zZ)(S.rMx.APP_DIRECTORY_SEARCHED, {
       search_term: k,
       num_results: e,
@@ -66,7 +66,7 @@ function T(e) {
     }), k !== Z.current && (Z.current = k, h.yC({
       query: k,
       options: {
-        source: o.F.APP_DIRECTORY
+        source: s.F.APP_DIRECTORY
       }
     })), h.yC({
       query: k,
@@ -74,7 +74,7 @@ function T(e) {
         categoryId: D,
         page: w,
         pageSize: P.PAGE_SIZE,
-        source: o.F.APP_DIRECTORY
+        source: s.F.APP_DIRECTORY
       },
       onSuccessCallback: z
     })
@@ -82,25 +82,25 @@ function T(e) {
   let {
     fetchState: B,
     searchResults: W
-  } = (0, s.cj)([b.Z], () => ({
+  } = (0, o.cj)([b.Z], () => ({
     fetchState: b.Z.getFetchState({
       query: k,
       categoryId: D,
       page: w,
       pageSize: P.PAGE_SIZE,
-      source: o.F.APP_DIRECTORY
+      source: s.F.APP_DIRECTORY
     }),
     searchResults: b.Z.getSearchResults({
       query: k,
       categoryId: D,
       page: w,
       pageSize: P.PAGE_SIZE,
-      source: o.F.APP_DIRECTORY
+      source: s.F.APP_DIRECTORY
     })
-  })), U = (0, s.cj)([b.Z], () => {
+  })), U = (0, o.cj)([b.Z], () => {
     let e = b.Z.getSearchResults({
       query: k,
-      source: o.F.APP_DIRECTORY
+      source: s.F.APP_DIRECTORY
     });
     return null != e ? function(e) {
       for (var t = 1; t < arguments.length; t++) {

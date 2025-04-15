@@ -75,10 +75,10 @@ function w(e) {
     ref: o,
     width: m,
     height: g
-  } = (0, c.Z)(), {
+  } = (0, c.ZP)(), {
     ref: O,
     height: w
-  } = (0, c.Z)(), E = (0, i.e7)([p.Z], () => p.Z.lifetimePoints > 0), S = (0, i.e7)([u.Z, l.Z], () => {
+  } = (0, c.ZP)(), E = (0, i.e7)([p.Z], () => p.Z.lifetimePoints > 0), S = (0, i.e7)([u.Z, l.Z], () => {
     let e = l.Z.getWindow(n);
     return null == e || !u.Z.isFocused((0, f.ZY)(e))
   });
