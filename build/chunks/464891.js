@@ -121,8 +121,7 @@ function q(e) {
     })]
   })
 }
-
-function Y(e) {
+let Y = o.memo(function(e) {
   let {
     message: t,
     author: n,
@@ -215,7 +214,7 @@ function Y(e) {
       }), " "]
     })]
   })
-}
+});
 
 function X(e, t, n) {
   let {

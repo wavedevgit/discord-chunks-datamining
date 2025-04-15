@@ -137,7 +137,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
       premiumSince: j,
       nameplate: O,
       shouldShowPopoutOnHover: E
-    } = e, N = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [I, P] = i.useState(!1), S = null != j ? new Date(j) : null, Z = e => {
+    } = e, N = en(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate", "shouldShowPopoutOnHover"]), [I, P] = i.useState(!1), S = null != j ? new Date(j) : null, Z = i.useCallback(e => {
       (0, m.jW)(e, async () => {
         let {
           default: e
@@ -149,7 +149,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           showMediaItems: t
         }))
       })
-    }, T = () => {
+    }, [u, C, _]), T = i.useCallback(() => {
       let e = "@".concat(q.ZP.getUserTag(u, {
           decoration: "never"
         })),
@@ -158,7 +158,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
         plainText: e,
         rawText: t
       }), b.Z.startTyping(_.id)
-    }, w = e => {
+    }, [u, _.id]), w = i.useCallback(e => {
       null != C && (e.stopPropagation(), (0, A.f)({
         guildId: C,
         location: {
@@ -166,7 +166,7 @@ let er = K.ZP.getEnableHardwareAcceleration(),
           object: X.qAy.BOOST_GEM_ICON
         }
       }))
-    };
+    }, [C]);
     return (0, r.jsx)(D.Z, {
       user: u,
       guildId: C,

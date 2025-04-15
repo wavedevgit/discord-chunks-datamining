@@ -15,35 +15,29 @@ var n = r(200651),
   u = r(845080),
   f = r(30804);
 let p = i.memo(function(e) {
-  var t, r, i, s;
+  var t, r;
   let {
-    message: p,
-    channel: d,
-    compact: b,
-    className: g,
-    isGroupStart: Z,
-    hideSimpleEmbedContent: j = !0,
-    disableInteraction: M,
-    previewGuildId: O,
-    preview: y,
-    author: m
-  } = e, H = null != (t = null != O ? O : p.getGuildId()) ? t : void 0, x = (0, a.Z)(m), V = (0, l.A)((null != (r = p.editedTimestamp) ? r : p.timestamp).valueOf()), {
-    content: w
-  } = (0, h.Z)(p, {
-    hideSimpleEmbedContent: j,
-    allowList: V,
-    allowHeading: V,
+    message: s,
+    channel: p,
+    compact: d,
+    className: b,
+    isGroupStart: g,
+    hideSimpleEmbedContent: Z = !0,
+    disableInteraction: j,
+    previewGuildId: M,
+    preview: O,
+    author: y
+  } = e, m = null != (t = null != M ? M : s.getGuildId()) ? t : void 0, H = (0, a.Z)(y), x = (0, l.A)((null != (r = s.editedTimestamp) ? r : s.timestamp).valueOf()), {
+    content: V
+  } = (0, h.Z)(s, {
+    hideSimpleEmbedContent: Z,
+    allowList: x,
+    allowHeading: x,
     allowLinks: !0,
     previewLinkTarget: !0
-  });
-  return (0, n.jsx)(c.Z, {
-    compact: b,
-    className: o()(g, {
-      [f.message]: !0,
-      [f.cozyMessage]: !b,
-      [f.groupStart]: Z
-    }),
-    childrenHeader: (0, u.Z)((i = function(e) {
+  }), w = i.useMemo(() => {
+    var t, r;
+    return (0, u.Z)((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var r = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(r);
@@ -60,23 +54,32 @@ let p = i.memo(function(e) {
         })
       }
       return e
-    }({}, e), s = s = {
-      channel: d,
-      guildId: H
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+    }({}, e), r = r = {
+      channel: p,
+      guildId: m
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var n = Object.getOwnPropertySymbols(e);
         r.push.apply(r, n)
       }
       return r
-    })(Object(s)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
-    }), i)),
-    childrenMessageContent: (0, v.Z)(e, w),
-    disableInteraction: M,
-    authorHasGradientRole: x,
-    guildId: H,
-    preview: y
+    })(Object(r)).forEach(function(e) {
+      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+    }), t))
+  }, [e, p, m]);
+  return (0, n.jsx)(c.Z, {
+    compact: d,
+    className: o()(b, {
+      [f.message]: !0,
+      [f.cozyMessage]: !d,
+      [f.groupStart]: g
+    }),
+    childrenHeader: w,
+    childrenMessageContent: (0, v.Z)(e, V),
+    disableInteraction: j,
+    authorHasGradientRole: H,
+    guildId: m,
+    preview: O
   })
 })

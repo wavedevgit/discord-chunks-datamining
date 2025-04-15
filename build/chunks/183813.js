@@ -29,34 +29,34 @@ function S(e) {
   } = e, {
     selectedPlan: l,
     selectedSkuId: S,
-    step: y
+    step: E
   } = (0, h.JL)(), {
-    setSelectedGiftingPromotionReward: E,
-    selectedGiftingPromotionReward: b,
-    claimableRewards: I
-  } = (0, x.wD)(), N = (0, o.e7)([p.default], () => p.default.getCurrentUser());
+    setSelectedGiftingPromotionReward: y,
+    selectedGiftingPromotionReward: I,
+    claimableRewards: N
+  } = (0, x.wD)(), b = (0, o.e7)([p.default], () => p.default.getCurrentUser());
   i.useEffect(() => {
-    let e = null != I && I.length > 0;
-    null == b && e && E(I[0])
-  }, [I, b, E]);
+    let e = null != N && N.length > 0;
+    null == I && e && y(N[0])
+  }, [N, I, y]);
   let T = e => {
       let t = e.skuId;
       return (0, r.jsx)(d.Z, {
         skuId: t,
         price: L.NW.string(L.t.QQsaCQ),
-        isSelected: t === (null == b ? void 0 : b.skuId),
-        onSelect: () => E(e),
+        isSelected: t === (null == I ? void 0 : I.skuId),
+        onSelect: () => y(e),
         className: g.giftSelectItem
       }, t)
     },
     M = (0, c.Q3)("PremiumPaymentFreeSKUSelectStep");
-  s()(null != l, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != y, "Step should be set");
-  let P = null == I ? void 0 : I.map(e => T(e)),
-    O = null != b && null != N ? (0, r.jsx)(C.Z, {
+  s()(null != l, "Expected plan to selected"), s()(null != S, "Expected selectedSkuId"), s()(null != E, "Step should be set");
+  let P = null == N ? void 0 : N.map(e => T(e)),
+    O = null != I && null != b ? (0, r.jsx)(C.Z, {
       avatarDecorationOverride: {
-        asset: b.assetId
+        asset: I.assetId
       },
-      user: N,
+      user: b,
       guildId: null,
       avatarSize: a.EFr.SIZE_152
     }) : null,
@@ -65,9 +65,9 @@ function S(e) {
         className: g.modalFooter,
         children: (0, r.jsx)(u.y, {
           onStepChange: e => {
-            null != N && null != b && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
-              user_id: N.id,
-              reward_sku_id: b.skuId
+            null != b && null != I && _.default.track(m.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+              user_id: b.id,
+              reward_sku_id: I.skuId
             }), t(e)
           },
           onBackClick: () => t(f.h8.PLAN_SELECT),

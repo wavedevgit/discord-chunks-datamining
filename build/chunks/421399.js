@@ -84,16 +84,16 @@ function T(e) {
     onPopoutRequestClose: I,
     renderPopout: A,
     renderRemixTag: D = !1,
-    decorations: _,
-    previewGuildId: F
-  } = e, L = i.useRef(null), M = i.useContext(y.Z), G = null != (t = null == o ? void 0 : o.guild_id) ? t : M, {
+    decorations: M,
+    previewGuildId: _
+  } = e, F = i.useRef(null), L = i.useContext(y.Z), G = null != (t = null == o ? void 0 : o.guild_id) ? t : L, {
     analyticsLocations: B
   } = (0, d.ZP)(p.Z.USERNAME), z = T ? "@" : "", {
     nick: U,
     colorString: W,
     colorStrings: H,
     colorRoleName: J
-  } = r, V = (0, s.e7)([m.Z], () => m.Z.roleStyle), X = "username" === V, Y = (0, O.X$)(), $ = (0, g.Z)(null != F ? F : G, "BaseUsername"), q = (0, x.Z)(n), Q = $ && null != H && null != H.primaryColor && null != H.secondaryColor, K = X && Q, ee = (0, u.Icv)(null == H ? void 0 : H.primaryColor, null == H ? void 0 : H.secondaryColor, null == H ? void 0 : H.tertiaryColor, "username"), {
+  } = r, V = (0, s.e7)([m.Z], () => m.Z.roleStyle), X = "username" === V, Y = (0, O.X$)(), $ = (0, g.Z)(null != _ ? _ : G, "BaseUsername"), q = (0, x.Z)(n), Q = $ && null != H && null != H.primaryColor && null != H.secondaryColor, K = X && Q, ee = (0, u.Icv)(null == H ? void 0 : H.primaryColor, null == H ? void 0 : H.secondaryColor, null == H ? void 0 : H.tertiaryColor, "username"), {
     text: et,
     gradient: er
   } = K ? ee : {
@@ -118,7 +118,7 @@ function T(e) {
     contextGuildId: G,
     className: P.clanTagChiplet
   }) : null, [w, r.primaryGuild, G, n.author.id]), ei = null != f ? f : n.author, eo = null != A && null != C ? (0, l.jsx)(j.Z, {
-    targetElementRef: L,
+    targetElementRef: F,
     user: ei,
     renderPopout: A,
     shouldShow: C,
@@ -153,7 +153,7 @@ function T(e) {
       return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(u.P3F, N(S({
           tag: "span",
-          innerRef: L
+          innerRef: F
         }, r, en), {
           className: a()(en.className, P.clickable, E)
         })), el]
@@ -163,7 +163,7 @@ function T(e) {
     children: [(0, l.jsx)(u.P3F, N(S({}, en), {
       className: a()(en.className, E)
     })), el]
-  }), ea = null != _ ? _[0] : null, ec = null != _ ? _[1] : null;
+  }), ea = null != M ? M[0] : null, ec = null != M ? M[1] : null;
   return (0, l.jsxs)(d.Gt, {
     value: B,
     children: [null != ea && w ? (0, l.jsxs)(l.Fragment, {

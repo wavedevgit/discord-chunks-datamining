@@ -53,7 +53,7 @@ function f(e, t) {
 function _(e) {
   var {
     streamId: t,
-    paused: n,
+    paused: n = !1,
     onReady: o,
     onResize: c,
     className: f
@@ -106,7 +106,4 @@ function _(e) {
     onCanPlayThrough: g,
     muted: !0
   }, _))
-}
-_.defaultProps = {
-  paused: !1
 }
