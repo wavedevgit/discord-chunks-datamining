@@ -36,7 +36,7 @@ function m(e) {
     }), f.getState().setLayoutType(t.id, e), n()
   }, j = e => {
     f.getState().setTagSetting(t.id, e), n()
-  };
+  }, v = null != t.availableTags && t.availableTags.length > 0;
   return (0, r.jsx)("div", {
     className: u.container,
     children: (0, r.jsxs)(s.v2r, {
@@ -60,7 +60,7 @@ function m(e) {
           action: () => x(l.z.CREATION_DATE),
           checked: m === l.z.CREATION_DATE
         })]
-      }), !t.isMediaChannel() && (0, r.jsxs)(s.kSQ, {
+      }), t.isMediaChannel() ? null : (0, r.jsxs)(s.kSQ, {
         label: d.NW.string(d.t.mFMDSk),
         children: [(0, r.jsx)(s.k5B, {
           id: "view-as-list",
@@ -75,7 +75,7 @@ function m(e) {
           action: () => b(a.X.GRID),
           checked: h === a.X.GRID
         })]
-      }), (0, r.jsxs)(s.kSQ, {
+      }), v ? (0, r.jsxs)(s.kSQ, {
         label: d.NW.string(d.t.Paxaur),
         children: [(0, r.jsx)(s.k5B, {
           id: "match-some",
@@ -90,7 +90,7 @@ function m(e) {
           action: () => j(i.z.MATCH_ALL),
           checked: g === i.z.MATCH_ALL
         })]
-      }), (0, r.jsx)(s.kSQ, {
+      }) : null, (0, r.jsx)(s.kSQ, {
         children: (0, r.jsx)(s.sNh, {
           id: "reset-all",
           className: u.clearText,
