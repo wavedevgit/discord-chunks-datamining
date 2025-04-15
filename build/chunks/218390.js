@@ -154,7 +154,7 @@ function ea() {
         })]
       }) : null, (0, r.jsx)(H.nT, {
         featureSet: g ? H.uZ.FRACTIONAL_PREMIUM : H.uZ.DEFAULT
-      }), g && !d && (0, B.$)("nitro-settings-hero", e) ? (0, r.jsxs)(r.Fragment, {
+      }), g && !d && (0, B.C)("nitro-settings-hero", e) ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(F.Z, {
           buttonText: Q.NW.string(Q.t["0b3YRk"]),
           buttonTextClassName: J.tierCardButtonCTA,

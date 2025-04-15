@@ -1,6 +1,7 @@
-/** Chunk was on 64213 **/
+/** Chunk was on web.js **/
+"use strict";
 n.d(t, {
-  $: () => i
+  C: () => i
 });
 let r = (0, n(818083).B)({
     kind: "user",

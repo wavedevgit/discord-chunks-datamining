@@ -1,6 +1,6 @@
-/** Chunk was on 38542 **/
+/** Chunk was on 97299 **/
 n.d(t, {
-  Z: () => N
+  Z: () => y
 }), n(388685), n(415506);
 var r = n(200651),
   l = n(192379),
@@ -8,8 +8,8 @@ var r = n(200651),
   o = n.n(i),
   a = n(481060),
   s = n(65205),
-  c = n(388032),
-  u = n(670161);
+  u = n(388032),
+  c = n(670161);
 
 function d(e) {
   let {
@@ -85,9 +85,9 @@ let h = [{
     x: .05,
     y: .2
   }],
-  f = h.length;
+  p = h.length;
 
-function p(e, t, n) {
+function f(e, t, n) {
   let r = e * t;
   return e > .5 ? r - n : e < .5 ? r : r - n / 2
 }
@@ -100,32 +100,32 @@ let g = (e, t) => {
       y: Math.max(l * Math.sin(2 * Math.PI * r / 360), 0)
     }
   },
-  N = l.memo(function(e) {
+  y = l.memo(function(e) {
     let {
       wheelWidth: t,
       wheelHeight: n,
-      itemWidth: N,
-      itemHeight: y,
-      showDeadZoneIndicator: O,
+      itemWidth: y,
+      itemHeight: O,
+      showDeadZoneIndicator: N,
       activeItem: b,
       onItemSelect: v,
-      onItemAction: x,
-      interactive: m = !0,
+      onItemAction: m,
+      interactive: x = !0,
       onClose: E,
       children: C
-    } = e, j = l.useRef(null), I = l.useRef([]), S = l.useRef(!1), P = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
+    } = e, I = l.useRef(null), j = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, w] = l.useState(0), [Z, _] = l.useState({
       x: 0,
       y: 0
-    }), R = Math.abs(Z.x) + Math.abs(Z.y) > 0, A = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
-      null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
+    }), A = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = l.useMemo(() => o().chunk(C, p), [C]), D = l.useCallback((e, t) => {
+      null == j.current[T] ? j.current[T] = [] : j.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
-      P.current = t, v(f * e + t)
+      S.current = t, v(p * e + t)
     }, [v]), k = l.useCallback(() => {
-      P.current = null, v(null)
-    }, [v]), B = l.useCallback(e => {
-      k(), S.current = e
-    }, [k]), M = l.useCallback((e, t, n) => {
-      if (S.current) return void _({
+      S.current = null, v(null)
+    }, [v]), M = l.useCallback(e => {
+      k(), P.current = e
+    }, [k]), U = l.useCallback((e, t, n) => {
+      if (P.current) return void _({
         x: 0,
         y: 0
       });
@@ -140,11 +140,11 @@ let g = (e, t) => {
         x: (l ? Math.max(r.x, -o.x) : Math.min(r.x, o.x)) / 2,
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
-    }, []), U = l.useCallback(e => {
-      null != P.current && (e.preventDefault(), e.stopPropagation(), null == x || x(f * T + P.current))
-    }, [x, T]), L = l.useMemo(() => (0, i.throttle)(e => {
-      if (null == j.current) return;
-      let r = j.current.getBoundingClientRect(),
+    }, []), L = l.useCallback(e => {
+      null != S.current && (e.preventDefault(), e.stopPropagation(), null == m || m(p * T + S.current))
+    }, [m, T]), B = l.useMemo(() => (0, i.throttle)(e => {
+      if (null == I.current) return;
+      let r = I.current.getBoundingClientRect(),
         l = {
           x: r.left + r.width / 2,
           y: r.top + r.height / 2
@@ -153,53 +153,53 @@ let g = (e, t) => {
           x: e.clientX,
           y: e.clientY
         };
-      if (M(i, l, Math.max(t, n)), S.current) {
+      if (U(i, l, Math.max(t, n)), P.current) {
         null != b && k();
         return
       }
       let o = (0, s.ld)(l, i, Math.max(t, n));
-      for (let e = 0; e < I.current[T].length; e++) {
-        let t = I.current[T][e];
+      for (let e = 0; e < j.current[T].length; e++) {
+        let t = j.current[T][e];
         if (null == t) continue;
         let n = t.getBoundingClientRect();
         if ((0, s.Vr)(l, o, n)) return void W(T, e)
       }
       k()
-    }, 16), [b, M, k, W, T, n, t]), G = l.useCallback(e => {
-      if (!m) return;
+    }, 16), [b, U, k, W, T, n, t]), V = l.useCallback(e => {
+      if (!x) return;
       let t = T + (e.deltaY > 0 ? 1 : -1);
-      t >= 0 && t < A.length && (null != P.current && (A[t].length > P.current ? W(t, P.current) : k()), w(t))
-    }, [m, T, A, W, k]), V = l.useMemo(() => A[T].map((e, l) => {
+      t >= 0 && t < R.length && (null != S.current && (R[t].length > S.current ? W(t, S.current) : k()), w(t))
+    }, [x, T, R, W, k]), G = l.useMemo(() => R[T].map((e, l) => {
       let i = h[l];
       if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));
-      let o = p(i.x, t, N),
-        a = p(i.y, n, y);
+      let o = f(i.x, t, y),
+        a = f(i.y, n, O);
       return (0, r.jsx)("div", {
         ref: e => D(e, l),
-        className: u.chatWheelItem,
+        className: c.chatWheelItem,
         style: {
           left: o,
           top: a,
-          width: N,
-          height: y
+          width: y,
+          height: O
         },
         children: e
       }, l)
-    }), [A, T, t, N, n, y, C.length, D]);
+    }), [R, T, t, y, n, O, C.length, D]);
     return (0, r.jsx)(a.P3F, {
-      className: u.chatWheelMouseInput,
-      onMouseMove: L,
-      onWheel: G,
-      onClick: U,
+      className: c.chatWheelMouseInput,
+      onMouseMove: B,
+      onWheel: V,
+      onClick: L,
       children: (0, r.jsxs)("div", {
-        ref: j,
-        className: u.chatWheel,
+        ref: I,
+        className: c.chatWheel,
         style: {
           width: t,
           height: n
         },
         children: [(0, r.jsxs)("svg", {
-          className: u.chatWheelBackground,
+          className: c.chatWheelBackground,
           viewBox: "0 0 288 288",
           xmlns: "http://www.w3.org/2000/svg",
           children: [(0, r.jsxs)("filter", {
@@ -234,46 +234,46 @@ let g = (e, t) => {
           }), (0, r.jsxs)("g", {
             filter: "url(#soundboard-wheel-background-shadow)",
             children: [(0, r.jsx)("circle", {
-              className: u.chatWheelBackground,
+              className: c.chatWheelBackground,
               cx: "144",
               cy: "144",
               r: "103.68",
               strokeWidth: "40.32"
-            }), O && (0, r.jsx)("circle", {
-              className: u.chatWheelDeadZone,
-              onMouseEnter: () => B(!0),
-              onMouseLeave: () => B(!1),
+            }), N && (0, r.jsx)("circle", {
+              className: c.chatWheelDeadZone,
+              onMouseEnter: () => M(!0),
+              onMouseLeave: () => M(!1),
               cx: 144,
               cy: 144,
               r: 28.8
-            }), R && (0, r.jsx)("circle", {
-              className: u.chatWheelCenter,
+            }), A && (0, r.jsx)("circle", {
+              className: c.chatWheelCenter,
               cx: 144 + Z.x,
               cy: 144 + Z.y,
               r: 28.8
             })]
-          }), O && (0, r.jsx)("circle", {
-            className: u.chatWheelDeadZone,
-            onMouseEnter: () => B(!0),
-            onMouseLeave: () => B(!1),
+          }), N && (0, r.jsx)("circle", {
+            className: c.chatWheelDeadZone,
+            onMouseEnter: () => M(!0),
+            onMouseLeave: () => M(!1),
             cx: 144,
             cy: 144,
             r: 28.8,
             stroke: "none"
           })]
         }), (0, r.jsxs)("div", {
-          className: u.innerContent,
-          children: [O && (0, r.jsx)(a.P3F, {
-            className: u.chatWheelDeadZoneIcon,
+          className: c.innerContent,
+          children: [N && (0, r.jsx)(a.P3F, {
+            className: c.chatWheelDeadZoneIcon,
             onClick: E,
             children: (0, r.jsx)(d, {
-              className: u.chatWheelDeadZoneIcon
+              className: c.chatWheelDeadZoneIcon
             })
-          }), m && A.length > 1 ? (0, r.jsx)("div", {
-            className: u.paginationHint,
-            children: c.NW.string(c.t["Xy+S09"])
+          }), x && R.length > 1 ? (0, r.jsx)("div", {
+            className: c.paginationHint,
+            children: u.NW.string(u.t["Xy+S09"])
           }) : null]
-        }), V]
+        }), G]
       })
     })
   })

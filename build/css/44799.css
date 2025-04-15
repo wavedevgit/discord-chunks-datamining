@@ -1,8 +1,9 @@
 /**
   Module ID: 44799
-  Original File Name: 1d3e18300bd4ed98
+  Original File Name: b57bdbf9973ca7a5
 **/
 .parentContainer__98cbd {
+    display: flex;
     flex: 1;
     max-width: 250px;
     min-width: 220px
@@ -548,4 +549,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=1d3e18300bd4ed98.css.map*/
+/*# sourceMappingURL=b57bdbf9973ca7a5.css.map*/

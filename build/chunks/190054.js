@@ -1,80 +1,80 @@
-/** Chunk was on 94904 **/
-r.d(t, {
-  H: () => u
-}), r(388685);
-var n = r(200651),
-  o = r(192379),
-  c = r(120356),
-  i = r.n(c),
-  s = r(481060),
-  l = r(572004),
-  a = r(388032),
-  d = r(798665);
+/** Chunk was on 97299 **/
+n.d(t, {
+  H: () => d
+}), n(388685);
+var r = n(200651),
+  l = n(192379),
+  i = n(120356),
+  o = n.n(i),
+  a = n(481060),
+  s = n(572004),
+  u = n(388032),
+  c = n(798665);
 
-function u(e) {
+function d(e) {
   var {
     chunks: t,
-    className: r,
-    onCopy: c
-  } = e, u = function(e, t) {
+    className: n,
+    onCopy: i
+  } = e, d = function(e, t) {
     if (null == e) return {};
-    var r, n, o = function(e, t) {
+    var n, r, l = function(e, t) {
       if (null == e) return {};
-      var r, n, o = {},
-        c = Object.keys(e);
-      for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-      return o
+      var n, r, l = {},
+        i = Object.keys(e);
+      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+      return l
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var c = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      var i = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
     }
-    return o
+    return l
   }(e, ["chunks", "className", "onCopy"]);
-  let h = o.useMemo(() => null == t ? void 0 : t.join(" "), [t]),
-    [f, p] = o.useState(!1),
-    m = o.useCallback(() => {
-      (0, l.JG)(h, () => {
-        p(!0), null == c || c()
+  let h = l.useMemo(() => null == t ? void 0 : t.join(" "), [t]),
+    [p, f] = l.useState(!1),
+    g = l.useCallback(() => {
+      (0, s.JG)(h, () => {
+        f(!0), null == i || i()
       })
-    }, [c, h]),
-    b = f ? s.owK : s.TIy;
-  return (0, n.jsx)(s.P3F, {
-    className: i()(d.container, r),
-    onClick: m,
-    children: (0, n.jsx)(s.ua7, {
-      text: f ? a.NW.string(a.t["t5VZ8/"]) : a.NW.string(a.t.OpuAlJ),
+    }, [i, h]),
+    y = p ? a.owK : a.TIy;
+  return (0, r.jsx)(a.P3F, {
+    className: o()(c.container, n),
+    onClick: g,
+    children: (0, r.jsx)(a.ua7, {
+      text: p ? u.NW.string(u.t["t5VZ8/"]) : u.NW.string(u.t.OpuAlJ),
       children: e => {
-        var t, r;
-        return (0, n.jsx)(b, (t = function(e) {
+        var t, n;
+        return (0, r.jsx)(y, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: !0,
                 configurable: !0,
                 writable: !0
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, u, e), r = r = {
+        }({}, d, e), n = n = {
           size: "xxs",
-          color: f ? s.TVs.colors.TEXT_POSITIVE : s.TVs.colors.INTERACTIVE_NORMAL
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-          var r = Object.keys(e);
+          color: p ? a.TVs.colors.TEXT_POSITIVE : a.TVs.colors.INTERACTIVE_NORMAL
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       }
     })

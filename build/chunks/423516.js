@@ -1,4 +1,4 @@
-/** Chunk was on 38542 **/
+/** Chunk was on 97299 **/
 n.d(t, {
   Z: () => d
 });
@@ -9,8 +9,8 @@ var l = n(120356),
   o = n(481060),
   a = n(570928),
   s = n(540059),
-  c = n(388032),
-  u = n(593210);
+  u = n(388032),
+  c = n(593210);
 let d = function(e) {
   let {
     className: t,
@@ -18,15 +18,15 @@ let d = function(e) {
     text: l,
     hasConnectedChannel: d,
     textVariant: h = "text-md/medium"
-  } = e, f = (0, s.Q3)("RTCConnectionStatusText"), p = n ? c.NW.string(c.t.IlHdW1) : c.NW.string(c.t.WsOisr);
+  } = e, p = (0, s.Q3)("RTCConnectionStatusText"), f = n ? u.NW.string(u.t.IlHdW1) : u.NW.string(u.t.WsOisr);
   return (0, r.jsx)(a.Z, {
-    className: i()(t, u.hoverableStatus),
-    hoverText: d ? f ? (0, r.jsx)(o.Text, {
+    className: i()(t, c.hoverableStatus),
+    hoverText: d ? p ? (0, r.jsx)(o.Text, {
       variant: h,
       color: "currentColor",
-      children: p
-    }) : p : null,
-    children: f ? (0, r.jsx)(o.Text, {
+      children: f
+    }) : f : null,
+    children: p ? (0, r.jsx)(o.Text, {
       variant: h,
       color: "currentColor",
       children: l

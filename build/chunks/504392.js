@@ -51,7 +51,6 @@ function E(e) {
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(d.Z.Icon, {
         icon: l.$Eu,
-        disabled: !0,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
         children: N.NW.string(b.Z.yv3DJC)

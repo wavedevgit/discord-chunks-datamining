@@ -1,30 +1,30 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 97299 **/
 n.d(t, {
-  Z: () => u
+  Z: () => d
 });
-var a, r, l, i = n(442837),
-  s = n(570140);
-let o = !1,
-  c = !1;
-class d extends(l = i.ZP.Store) {
+var r, l, i, o = n(442837),
+  a = n(570140);
+let s = !1,
+  u = !1;
+class c extends(i = o.ZP.Store) {
   get keepOpen() {
-    return c
+    return u
   }
   get enabled() {
-    return o
+    return s
   }
 }
-r = "SoundboardOverlayStore", (a = "displayName") in d ? Object.defineProperty(d, a, {
-  value: r,
+l = "SoundboardOverlayStore", (r = "displayName") in c ? Object.defineProperty(c, r, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : d[a] = r;
-let u = new d(s.Z, {
+}) : c[r] = l;
+let d = new c(a.Z, {
   SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
-    if (o = e.enabled, e.enabled) {
+    if (s = e.enabled, e.enabled) {
       var t;
-      c = null != (t = e.keepOpen) && t
+      u = null != (t = e.keepOpen) && t
     }
   }
 })
