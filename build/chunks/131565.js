@@ -29,19 +29,15 @@ function b(e) {
       wallpaperAssetUrl: (0, a.I)(e.default.asset),
       wallpaperThumbhashDataUrl: null != e.default.thumbhash ? (0, l.xS)(g.from(e.default.thumbhash, "base64")) : void 0
     }
-  }), [h, b] = i.useState(n), [y, _] = i.useState(d);
+  }), [h, b] = i.useState(d);
   return (i.useEffect(() => {
     null == n && t.isViewable && u.Z.shouldFetchWallpapers && (0, p.k9)()
   }, [n, t.isViewable]), i.useEffect(() => {
-    if (h === n) return;
-    if (null == n) {
-      b(void 0), _(void 0);
-      return
-    }
+    if (null == n) return void b(void 0);
     let e = performance.now();
-    (0, s.p)(n, t => {
+    b(d), (0, s.p)(n, t => {
       if (t === n) {
-        b(t), _(d);
+        b(void 0);
         let n = performance.now();
         c.default.track(f.rMx.CHAT_WALLPAPER_DOWNLOADED, {
           time_used_in_ms: n - e,
@@ -49,18 +45,18 @@ function b(e) {
         })
       }
     })
-  }, [h, n, d]), t.isViewable) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != y && (0, r.jsx)("div", {
+  }, [n, d]), t.isViewable) ? (0, r.jsxs)(r.Fragment, {
+    children: [null != h && (0, r.jsx)("div", {
       className: m.thumbhashContainer,
       children: (0, r.jsx)("img", {
-        src: y,
+        src: h,
         alt: "",
         "aria-hidden": !0
       })
     }), (0, r.jsx)("div", {
       className: m.wallpaperContainer,
       style: {
-        backgroundImage: null != h ? "url(".concat(h, ")") : void 0
+        backgroundImage: null != n ? "url(".concat(n, ")") : void 0
       }
     })]
   }) : null
