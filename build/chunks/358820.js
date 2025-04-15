@@ -187,7 +187,11 @@ async function R() {
         state: g.O.LOADING
       }), await p.ZP.ensureModule("discord_voice_filters");
       let t = p.ZP.getVoiceFilters();
-      await t.setupResources(), await s.Z.dispatch({
+      await t.setupResources(), await t.setVoiceFilterLaggingCallback(() => {
+        s.Z.dispatch({
+          type: "VOICE_FILTER_LAGGING"
+        })
+      }), await s.Z.dispatch({
         type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
         state: g.O.LOADED
       }), await A();
