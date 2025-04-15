@@ -22,8 +22,8 @@ var r = n(200651),
   x = n(678865),
   v = n(745579),
   O = n(875425),
-  _ = n(981631),
-  N = n(185923),
+  N = n(981631),
+  _ = n(185923),
   y = n(388032),
   C = n(403773);
 
@@ -78,16 +78,16 @@ class I extends a.PureComponent {
       sourceAnalyticsLocations: e,
       sourceAnalyticsContext: t
     } = this.props;
-    S.default.track(_.rMx.OPEN_MODAL, {
+    S.default.track(N.rMx.OPEN_MODAL, {
       source: null == t ? void 0 : t.location,
-      type: _.jXE.CUSTOM_STATUS_MODAL,
+      type: N.jXE.CUSTOM_STATUS_MODAL,
       load_id: null == t ? void 0 : t.loadId,
       location_stack: e
     })
   }
   get analyticsLocation() {
     return {
-      page: _.ZY5.CUSTOM_STATUS_MODAL
+      page: N.ZY5.CUSTOM_STATUS_MODAL
     }
   }
   getEmojiButtonRenderer() {
@@ -307,7 +307,7 @@ class I extends a.PureComponent {
         analyticsContext: e
       }), t()
     }), T(this, "handleKeyPress", e => {
-      e.which === _.yXg.ENTER && this.handleSaveStatus()
+      e.which === N.yXg.ENTER && this.handleSaveStatus()
     }), T(this, "renderEmojiPicker", e => {
       let {
         closePopout: t
@@ -319,7 +319,7 @@ class I extends a.PureComponent {
         onSelectEmoji: (e, n) => {
           this.handleEmojiChange(e), n && t()
         },
-        pickerIntention: N.Hz.STATUS,
+        pickerIntention: _.Hz.STATUS,
         onNavigateAway: n
       })
     })
