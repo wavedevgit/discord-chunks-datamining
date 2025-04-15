@@ -1,6 +1,6 @@
 /**
   Module ID: 44799
-  Original File Name: 6d63a607875f4f2b
+  Original File Name: 1d3e18300bd4ed98
 **/
 .parentContainer__98cbd {
     flex: 1;
@@ -305,6 +305,28 @@
     margin-bottom: var(--spacing-8)
 }
 
+.container__10ca6 {
+    margin-top: var(--spacing-16)
+}
+
+.container__10ca6,.staffContainer__10ca6 {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8)
+}
+
+.staffContainer__10ca6 {
+    background-color: var(--bg-mod-subtle);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    padding: var(--spacing-12)
+}
+
+.staffHeader__10ca6 {
+    display: flex;
+    gap: var(--spacing-8)
+}
+
 .container__3f864 {
     background-color: var(--bg-mod-faint);
     border-color: var(--border-faint);
@@ -447,21 +469,6 @@
     overflow: hidden
 }
 
-.staffContainer__89463 {
-    background-color: var(--bg-mod-subtle);
-    border: 1px solid var(--border-subtle);
-    border-radius: var(--radius-sm);
-    flex-direction: column;
-    margin: 0 var(--spacing-24);
-    margin-bottom: var(--spacing-32);
-    padding: var(--spacing-12)
-}
-
-.staffContainer__89463,.staffHeader__89463 {
-    display: flex;
-    gap: var(--spacing-8)
-}
-
 .powerupsContainer__89463 {
     display: flex;
     flex: 1;
@@ -541,4 +548,4 @@
     transition: padding-left .2s ease
 }
 
-/*# sourceMappingURL=6d63a607875f4f2b.css.map*/
+/*# sourceMappingURL=1d3e18300bd4ed98.css.map*/

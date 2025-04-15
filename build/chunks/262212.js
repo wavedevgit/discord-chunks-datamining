@@ -1,7 +1,7 @@
 /** Chunk was on 99014 **/
 n.d(t, {
-  Nn: () => x,
-  ZP: () => y,
+  Nn: () => I,
+  ZP: () => x,
   ms: () => v
 });
 var r = n(200651),
@@ -112,7 +112,7 @@ function v(e) {
   }))
 }
 
-function x(e) {
+function I(e) {
   var {
     guildId: t,
     powerup: n,
@@ -121,16 +121,16 @@ function x(e) {
   } = e, p = g(e, ["guildId", "powerup", "compact", "onError"]);
   let {
     onActivate: v,
-    isLoading: x,
-    error: y,
-    onShowDeactivate: I
+    isLoading: I,
+    error: x,
+    onShowDeactivate: y
   } = (0, d.ZP)(t, n), N = null != (0, l.Z)(t, n), {
     disabled: k,
     reason: h
   } = (0, i.Z)(t, n, N);
   return o.useEffect(() => {
-    null == u || u(y)
-  }, [y, u]), (0, r.jsx)(c.ua7, {
+    null == u || u(x)
+  }, [x, u]), (0, r.jsx)(c.ua7, {
     delay: 100,
     "aria-label": null != h ? h : N ? b.NW.string(f.Z.TZsu1d) : void 0,
     text: null != h ? h : N ? (0, r.jsxs)("div", {
@@ -154,8 +154,8 @@ function x(e) {
       color: N ? c.Ttl.PRIMARY : c.Ttl.BRAND,
       "aria-label": b.NW.string(N ? f.Z.TZsu1d : f.Z.gSxlHR),
       disabled: k,
-      onClick: N ? I : v,
-      submitting: x
+      onClick: N ? y : v,
+      submitting: I
     }), p), {
       children: (0, r.jsx)(_, {
         powerup: n,
@@ -166,7 +166,7 @@ function x(e) {
   })
 }
 
-function y(e) {
+function x(e) {
   let {
     className: t,
     guildId: n,
@@ -175,7 +175,7 @@ function y(e) {
   } = e, c = null != (0, l.Z)(n, o), i = !c;
   return (0, r.jsxs)("div", {
     className: s()(m.container, t),
-    children: [(0, r.jsx)(x, {
+    children: [(0, r.jsx)(I, {
       guildId: n,
       powerup: o,
       onError: a,
