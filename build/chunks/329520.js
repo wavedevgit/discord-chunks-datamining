@@ -20,26 +20,28 @@ function f(e) {
     game: n,
     textVariant: f,
     textClassName: _,
-    hideIcon: p = !1,
-    hideText: h = !1,
-    hideTooltip: m = !1
-  } = e, g = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId)), E = (0, s.ZP)(g);
-  if (p && h) return null;
-  let b = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name,
-    y = null != b ? d.NW.format(d.t["0wJXSk"], {
-      name: b
+    iconClassName: p,
+    hideIcon: h = !1,
+    hideText: m = !1,
+    hideTooltip: g = !1
+  } = e, E = (0, i.e7)([l.Z], () => l.Z.getChannel(t.channelId)), b = (0, s.ZP)(E);
+  if (h && m) return null;
+  let y = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name,
+    v = null != y ? d.NW.format(d.t["0wJXSk"], {
+      name: y
     }) : d.NW.string(d.t.eXan7O);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!p && (0, r.jsx)(c.Z, {
+    children: [!h && (0, r.jsx)(c.Z, {
       icon: o.ARS,
-      tooltipText: m || null == E ? void 0 : E,
-      tooltipAriaLabel: m || null == g ? void 0 : (0, a.ZP)({
-        channel: g
-      })
-    }), !h && (0, r.jsx)(u.Z, {
+      tooltipText: g || null == b ? void 0 : b,
+      tooltipAriaLabel: g || null == E ? void 0 : (0, a.ZP)({
+        channel: E
+      }),
+      className: p
+    }), !m && (0, r.jsx)(u.Z, {
       variant: f,
       className: _,
-      children: y
+      children: v
     })]
   })
 }

@@ -1,6 +1,6 @@
 /**
   Module ID: 64213
-  Original File Name: cf4e799b7b46b61e
+  Original File Name: 61da251cc3126845
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -3715,8 +3715,12 @@ button.button__67645.disabled__67645,span.button__67645.disabled__67645 {
     white-space: nowrap
 }
 
-.mutedEmoji__972a0 {
-    opacity: .5
+.mutedIcon__972a0 {
+    opacity: .3
+}
+
+.activityStatusText__972a0 {
+    color: inherit
 }
 
 .decorator__972a0 {
@@ -18195,4 +18199,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=cf4e799b7b46b61e.css.map*/
+/*# sourceMappingURL=61da251cc3126845.css.map*/

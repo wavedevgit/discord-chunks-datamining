@@ -24,37 +24,39 @@ function p(e) {
     activity: t,
     textVariant: n,
     textClassName: i,
-    hideIcon: a = !1,
-    hideText: f = !1,
-    hideTooltip: p = !1
+    iconClassName: a,
+    hideIcon: f = !1,
+    hideText: p = !1,
+    hideTooltip: h = !1
   } = e, {
-    enabled: h
+    enabled: m
   } = o.c.useExperiment({
     location: "PresenceActivityStatus"
   }, {
     autoTrackExposure: !0
   }), {
-    descriptiveTextEnabled: m
+    descriptiveTextEnabled: g
   } = (0, l.f)({
     location: "PresenceActivityStatus"
   }), {
-    enabled: g
+    enabled: E
   } = (0, s.C)({
     location: "PresenceActivityStatus"
   });
-  if (a && f) return null;
+  if (f && p) return null;
   let {
-    text: E,
-    tooltip: b
-  } = (0, c.Z)(t, m || g), y = _(t, h);
+    text: b,
+    tooltip: y
+  } = (0, c.Z)(t, g || E), v = _(t, m);
   return (0, r.jsxs)(r.Fragment, {
-    children: [!a && null != y && (0, r.jsx)(u.Z, {
-      icon: y,
-      tooltipText: f && !p ? b : void 0
-    }), !f && (0, r.jsx)(d.Z, {
+    children: [!f && null != v && (0, r.jsx)(u.Z, {
+      icon: v,
+      tooltipText: p && !h ? y : void 0,
+      className: a
+    }), !p && (0, r.jsx)(d.Z, {
       variant: n,
       className: i,
-      children: E
+      children: b
     })]
   })
 }

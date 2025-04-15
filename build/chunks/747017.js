@@ -30,7 +30,7 @@ function O(e) {
     applicationStream: o,
     voiceChannel: O,
     textClassName: I,
-    emojiClassName: S,
+    iconClassName: S,
     textSize: T = "xs",
     animate: N = !0,
     hasQuest: A = !1,
@@ -64,6 +64,7 @@ function O(e) {
         game: null == n ? void 0 : n.find(c.Z),
         textVariant: "text-".concat(T, "/medium"),
         textClassName: I,
+        iconClassName: S,
         hideText: j,
         hideIcon: k,
         hideTooltip: R
@@ -78,6 +79,7 @@ function O(e) {
         activity: e,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: I,
+        iconClassName: S,
         hideText: j,
         hideIcon: k,
         hideTooltip: R
@@ -85,6 +87,7 @@ function O(e) {
         channel: O,
         textVariant: "text-".concat(T, "/medium"),
         textClassName: I,
+        iconClassName: S,
         hideText: j,
         hideTooltip: R
       }) : null

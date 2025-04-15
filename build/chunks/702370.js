@@ -518,7 +518,6 @@ let eT = {
           status: h.Skl.ONLINE
         }),
         name: t.name,
-        selected: !1,
         innerClassName: eE.nameplateRightPanePreviewAvatarInner
       })
     })
