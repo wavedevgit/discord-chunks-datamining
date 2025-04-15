@@ -16,9 +16,9 @@ var i = n(442837),
 function Z(e, t, n) {
   let {
     canManageGuildEvent: Z
-  } = (0, o.XJ)(null != n ? n : t), f = (0, i.e7)([a.ZP], () => a.ZP.isActive(e)), b = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(e), [e]), O = Z(b);
-  if (null == e || !O || !f || (null == b ? void 0 : b.entity_type) === u.WX.EXTERNAL) return null;
-  let j = () => {
+  } = (0, o.XJ)(null != n ? n : t), f = (0, i.e7)([a.ZP], () => a.ZP.isActive(e)), b = (0, i.e7)([a.ZP], () => a.ZP.getGuildScheduledEvent(e), [e]), j = Z(b);
+  if (null == e || !j || !f || (null == b ? void 0 : b.entity_type) === u.WX.EXTERNAL) return null;
+  let O = () => {
     if (null == n ? void 0 : n.isGuildStageVoice()) return void(0, c.NZ)(n);
     null != e && s.Z.endEvent(e, t.id), (0, l.pTH)()
   };
@@ -49,7 +49,7 @@ function Z(e, t, n) {
           header: d.NW.string(d.t.qaYzPD),
           confirmText: d.NW.string(d.t.mjB9pa),
           cancelText: d.NW.string(d.t["ETE/oK"]),
-          onConfirm: j,
+          onConfirm: O,
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             children: d.NW.string(d.t.bnDQ7O)

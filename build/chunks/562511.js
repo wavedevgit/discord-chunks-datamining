@@ -1,7 +1,7 @@
-/** Chunk was on 69313 **/
+/** Chunk was on 12862 **/
 n.d(t, {
-  A2: () => f,
-  S3: () => p
+  A2: () => E,
+  S3: () => g
 });
 var i = n(192379),
   r = n(442837),
@@ -13,16 +13,16 @@ var i = n(192379),
   u = n(430824),
   d = n(594174),
   h = n(731722),
-  E = n(864133),
-  g = n(981631);
+  f = n(864133),
+  p = n(981631);
 
-function p(e) {
+function g(e) {
   let {
     fetchGuildProfile: t,
     fetchStatus: n,
-    guildProfile: p
-  } = (0, a.u)(e), f = function(e) {
-    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : g.lds);
+    guildProfile: g
+  } = (0, a.u)(e), E = function(e) {
+    let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
     return (0, r.e7)([u.Z, d.default, c.ZP], () => {
       var t;
       if (null === e) return !1;
@@ -33,8 +33,8 @@ function p(e) {
       let r = c.ZP.getMember(e, i.id);
       return null != r && !r.isPending
     }, [e]) && !t
-  }(e), _ = function(e, t) {
-    let n = (0, r.e7)([E.Z], () => null === e ? null : E.Z.getGuildLastSeenInfo(e)),
+  }(e), b = function(e, t) {
+    let n = (0, r.e7)([f.Z], () => null === e ? null : f.Z.getGuildLastSeenInfo(e)),
       i = (0, r.e7)([d.default], () => {
         var e;
         return null == (e = d.default.getCurrentUser()) ? void 0 : e.primaryGuild
@@ -43,12 +43,12 @@ function p(e) {
     let l = (null == i ? void 0 : i.identityGuildId) === e && (null == i ? void 0 : i.tag) === null,
       o = null !== n && n.tag === t.tag;
     return l && !o
-  }(e, p);
+  }(e, g);
   return (i.useEffect(() => {
     n === s.a.NOT_FETCHED && t()
-  }, [t, n]), null === p) ? null : _ ? "changed" : f ? "available" : null
+  }, [t, n]), null === g) ? null : b ? "changed" : E ? "available" : null
 }
 
-function f(e) {
-  return null !== p(e)
+function E(e) {
+  return null !== g(e)
 }

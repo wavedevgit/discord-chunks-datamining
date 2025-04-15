@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  V9: () => N,
+  V9: () => _,
   ek: () => b
 }), n(388685);
 var r = n(200651),
@@ -21,18 +21,18 @@ let b = {
     START: f.alignLeft,
     END: f.alignRight
   },
-  N = e => {
+  _ = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      isCoachmarkEnabled: N = !0,
-      linkText: x = h.NW.string(h.t.XRdyj4),
-      cardAlignment: _ = b.START,
+      isCoachmarkEnabled: _ = !0,
+      linkText: N = h.NW.string(h.t.XRdyj4),
+      cardAlignment: x = b.START,
       className: E
     } = e, {
       balance: j
-    } = (0, c.A)(), [O, C] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
+    } = (0, c.A)(), [C, O] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
       shouldOpen: A
     } = (0, g.lJ)({
       backgroundElementRef: y
@@ -40,18 +40,18 @@ let b = {
       shouldOpen: P
     } = (0, o.Mm)({
       backgroundElementRef: y,
-      isCoachmarkEnabled: N,
+      isCoachmarkEnabled: _,
       onCloseCallback: p.dG4,
       onClickPill: p.dG4
     }), R = P || A;
     i.useEffect(() => {
-      if (!N) return;
+      if (!_) return;
       let e = (0, o.wH)();
       (0, g.Pe)() || e || R ? (I(!0), v(!1)) : I(!1)
-    }, [N, R]);
+    }, [_, R]);
     let D = i.useCallback(() => {
         let e = !S;
-        C(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
+        O(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
       }, [S]),
       Z = i.useCallback(() => {
         S && D()
@@ -65,14 +65,14 @@ let b = {
       children: [(0, r.jsx)(m.A4, {
         ref: y,
         balance: j,
-        balanceWidgetMode: R ? d.b.DEFAULT : O,
+        balanceWidgetMode: R ? d.b.DEFAULT : C,
         onMouseDown: e => {
           e.stopPropagation()
         },
         onClick: D,
         showNotificationBadge: t
       }), S && (0, r.jsx)("div", {
-        className: a()(f.cardContainer, _, {
+        className: a()(f.cardContainer, x, {
           [f.hidden]: T,
           [f.visible]: !T
         }),
@@ -82,9 +82,9 @@ let b = {
           ctaOnClick: () => {
             D(), s()
           },
-          linkText: x
+          linkText: N
         })
       })]
     })
   };
-N.CardAlignment = b
+_.CardAlignment = b

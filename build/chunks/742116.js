@@ -1,4 +1,5 @@
-/** Chunk was on 96408 **/
+/** Chunk was on 64865 **/
+"use strict";
 e.exports = {
   customCircleAnimation: "customCircleAnimation__83ef9",
   glow: "glow__83ef9",

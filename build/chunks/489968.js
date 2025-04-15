@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => j
 });
@@ -17,9 +17,9 @@ var r = n(200651),
   h = n(981631),
   f = n(622802),
   b = n(388032),
-  N = n(753514),
-  x = n(450890),
-  _ = n(145133);
+  _ = n(753514),
+  N = n(450890),
+  x = n(145133);
 let E = (0, i.Un)({
   createPromise: () => Promise.all([n.e("3589"), n.e("67544")]).then(n.bind(n, 894308)),
   webpackId: 894308,
@@ -85,17 +85,17 @@ function j() {
       }) : i()
     };
   return (0, r.jsxs)("div", {
-    className: N.container,
+    className: _.container,
     children: [(0, r.jsx)("div", {
-      className: N.backgroundOverlay
+      className: _.backgroundOverlay
     }), (0, r.jsxs)("div", {
-      className: N.mainContent,
+      className: _.mainContent,
       children: [(0, r.jsx)("img", {
-        src: x,
+        src: N,
         alt: b.NW.string(f.Z["7qZdOz"])
       }), (0, r.jsxs)(g.Z, {
         muted: !0,
-        className: N.playButton,
+        className: _.playButton,
         color: "white",
         disabled: t,
         onClick: j,
@@ -110,7 +110,7 @@ function j() {
         })]
       }), (0, r.jsx)(g.Z, {
         muted: !0,
-        className: N.resetButton,
+        className: _.resetButton,
         color: "white",
         disabled: t || !e,
         onClick: () => {
@@ -123,14 +123,14 @@ function j() {
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: N.footer,
+      className: _.footer,
       children: [(0, r.jsx)(p.Z, {
-        className: N.availability,
+        className: _.availability,
         color: "always-white",
         variant: "text-xxs/medium",
         children: b.NW.string(f.Z.eZleys)
       }), (0, r.jsx)("div", {
-        className: N.footerCenter,
+        className: _.footerCenter,
         children: (0, r.jsx)(g.Z, {
           muted: !0,
           color: "white",
@@ -144,7 +144,7 @@ function j() {
           })
         })
       }), (0, r.jsx)("img", {
-        src: _,
+        src: x,
         alt: b.NW.string(f.Z.ABYTMz)
       })]
     })]

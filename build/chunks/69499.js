@@ -1,7 +1,7 @@
-/** Chunk was on 91348 **/
+/** Chunk was on 23202 **/
 n.d(t, {
   E: () => I,
-  Z: () => O
+  Z: () => N
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -11,8 +11,8 @@ var r = n(200651),
   s = n(585237),
   c = n(812206),
   u = n(55563),
-  E = n(73346),
-  d = n(388032);
+  d = n(73346),
+  E = n(388032);
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ let I = {
   Colors: s.Z.Colors,
   Looks: s.Z.Looks
 };
-class N extends i.PureComponent {
+class O extends i.PureComponent {
   render() {
     var e, t;
     let n = this.props,
@@ -92,7 +92,7 @@ class N extends i.PureComponent {
       return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": d.NW.string(d.t.ogxXGh),
+        "aria-label": E.NW.string(E.t.ogxXGh),
         onClose: a.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),
@@ -113,13 +113,13 @@ class N extends i.PureComponent {
     })
   }
 }
-let O = l.ZP.connectStores([u.Z, c.Z], e => {
+let N = l.ZP.connectStores([u.Z, c.Z], e => {
   var t;
   let {
     applicationId: n
-  } = e, r = (0, E.uF)(n, c.Z, u.Z);
+  } = e, r = (0, d.uF)(n, c.Z, u.Z);
   return {
     skus: (null != (t = u.Z.getForApplication(n)) ? t : []).sort((e, t) => null != r && e.id === r.id ? -1 : null != r && t.id === r.id ? 1 : e.name >= t.name ? -1 : 1),
     primarySKU: r
   }
-})(N)
+})(O)

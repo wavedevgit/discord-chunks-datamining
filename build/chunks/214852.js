@@ -1,14 +1,14 @@
-/** Chunk was on 68031 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  z: () => o
+  z: () => a
 }), n(388685);
-var l = n(192379),
-  r = n(442837),
-  i = n(353926);
+var r = n(192379),
+  i = n(442837),
+  s = n(353926);
 
-function o(e) {
-  let [t, n] = (0, r.Wu)([i.Z], () => [i.Z.getAllUserExperimentDescriptors(), i.Z.getGuildExperiments()]);
-  l.useEffect(() => {
+function a(e) {
+  let [t, n] = (0, i.Wu)([s.Z], () => [s.Z.getAllUserExperimentDescriptors(), s.Z.getGuildExperiments()]);
+  r.useEffect(() => {
     e.trigger()
   }, [e, t, n])
 }

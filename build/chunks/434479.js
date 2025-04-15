@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   m: () => f
 });
@@ -7,13 +7,13 @@ n(192379);
 var i = n(120356),
   l = n.n(i),
   o = n(91192),
-  a = n(589440),
-  s = n(481060),
+  s = n(589440),
+  a = n(481060),
   c = n(440185),
   u = n(915887),
   d = n(768107);
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -53,8 +53,8 @@ function f(e) {
       renderIcon: g,
       text: m,
       selected: b,
-      trailing: _,
-      background: y,
+      trailing: y,
+      background: _,
       showUnread: v = !1
     } = e,
     O = function(e, t) {
@@ -72,16 +72,16 @@ function f(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread"]);
-  let j = (0, o.JA)(n),
-    C = null != (t = (0, a.qg)(m)) ? t : "";
+  let C = (0, o.JA)(n),
+    S = null != (t = (0, s.qg)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    children: (0, r.jsxs)(s.kL8, h(p({}, O), {
-      buttonProps: h(p({}, j), {
+    children: (0, r.jsxs)(a.kL8, p(h({}, O), {
+      buttonProps: p(h({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": C,
+      "aria-label": S,
       focusProps: {
         offset: {
           top: 1,
@@ -95,7 +95,7 @@ function f(e) {
       className: l()(u.containerDefault, d.wrapper, {
         [d.modeSelected]: b
       }, i),
-      children: [y, v ? (0, r.jsx)("div", {
+      children: [_, v ? (0, r.jsx)("div", {
         className: l()(d.unread, d.unreadImportant)
       }) : null, (0, r.jsx)("div", {
         className: l()([d.link, d.basicChannelRowLink, f]),
@@ -108,7 +108,7 @@ function f(e) {
             className: d.name,
             "aria-hidden": !0,
             children: m
-          }), _]
+          }), y]
         })
       })]
     }))

@@ -48,7 +48,7 @@ function g(e) {
     selected: o,
     content: s,
     placement: l
-  } = e, u = (0, d.p)(s, t, n, o, l), p = (0, c.C)(n, o), h = i.useRef(null == t);
+  } = e, u = (0, d.p)(s, t, n, o, l, !0), p = (0, c.C)(n, o), h = i.useRef(null == t);
   return (i.useEffect(() => {
     h.current || null != t || (h.current = !0)
   }, [t]), null == t) ? null : (0, r.jsx)("div", {
@@ -60,11 +60,12 @@ function g(e) {
     },
     children: (0, r.jsx)(b, {
       nameplate: t,
-      className: a()(_.img, {
+      className: a()(_.img, _.updated, {
         [_.hover]: n,
         [_.selected]: o,
         [_.account]: l === f.i.ACCOUNT,
-        [_.preview]: l === f.i.PREVIEW
+        [_.preview]: l === f.i.PREVIEW,
+        [_.channel]: l === f.i.CHANNEL
       }),
       style: {
         maskImage: u.maskImage

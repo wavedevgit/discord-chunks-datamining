@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -17,9 +17,9 @@ var r = n(200651),
   h = n(865427),
   f = n(358085),
   b = n(210887),
-  N = n(981631),
-  x = n(388032),
-  _ = n(560030);
+  _ = n(981631),
+  N = n(388032),
+  x = n(560030);
 let E = [{
   label: "Latin alphabet",
   value: "aBcDeFgHiJkLmNoPqRsTuVwXyZ"
@@ -50,7 +50,7 @@ function j() {
   } = (0, l.cj)([b.Z, g.Z], () => ({
     theme: b.Z.theme,
     platformZoom: g.Z.zoom
-  })), [j, O] = i.useState("upright"), C = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
+  })), [j, C] = i.useState("upright"), O = ["normal", "medium", "semibold", "bold", "extrabold"], S = new Map([
     ["normal", 400],
     ["medium", 500],
     ["semibold", 600],
@@ -79,7 +79,7 @@ function j() {
       "" === e || null == e ? (P(E[0].value), y(null)) : null != t ? P(t.value) : (P("custom"), y(e))
     }, [y, P]);
   return (0, r.jsx)("div", {
-    className: _.fullscreen,
+    className: x.fullscreen,
     style: {
       "--playground-font-family": "mono" === j ? "gg mono" : "gg sans",
       "--playground-font-style": "italic" === j ? "italic" : "normal"
@@ -87,7 +87,7 @@ function j() {
     children: (0, r.jsxs)(o.hjN, {
       tag: o.RB0.H1,
       children: [(0, r.jsxs)("div", {
-        className: _.toolbar,
+        className: x.toolbar,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsxs)(o.Text, {
             tag: "div",
@@ -108,14 +108,14 @@ function j() {
           }) : null]
         }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)(o.q4e, {
-            className: _.select,
+            className: x.select,
             options: E,
             onChange: e => R(e),
             value: A
           })
         }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)("div", {
-            className: _.input,
+            className: x.input,
             children: (0, r.jsx)(o.oil, {
               placeholder: "Enter custom input...",
               value: null != I ? I : "",
@@ -125,14 +125,14 @@ function j() {
         }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)(o.FXm, {
             withTransparentBackground: !0,
-            className: _.theme,
+            className: x.theme,
             orientation: "horizontal",
             options: [{
-              name: x.NW.string(x.t.b8Cei4),
-              value: N.BRd.DARK
+              name: N.NW.string(N.t.b8Cei4),
+              value: _.BRd.DARK
             }, {
-              name: x.NW.string(x.t.K2sFfn),
-              value: N.BRd.LIGHT
+              name: N.NW.string(N.t.K2sFfn),
+              value: _.BRd.LIGHT
             }],
             onChange: e => {
               (0, d.ZI)({
@@ -144,7 +144,7 @@ function j() {
         }), (0, r.jsx)(o.xJW, {
           children: (0, r.jsx)(o.FXm, {
             withTransparentBackground: !0,
-            className: _.theme,
+            className: x.theme,
             orientation: "horizontal",
             options: [{
               name: "Upright",
@@ -157,7 +157,7 @@ function j() {
               value: "mono"
             }],
             onChange: e => {
-              O(e.value)
+              C(e.value)
             },
             value: j
           })
@@ -166,16 +166,16 @@ function j() {
           keybind: "ESC"
         })]
       }), (0, r.jsxs)("div", {
-        className: _.textGrid,
-        children: [(0, r.jsx)("div", {}), C.map(e => (0, r.jsx)("div", {
-          className: _.columnHeading,
+        className: x.textGrid,
+        children: [(0, r.jsx)("div", {}), O.map(e => (0, r.jsx)("div", {
+          className: x.columnHeading,
           children: (0, r.jsx)(o.X6q, {
             variant: "eyebrow",
             children: e
           })
         }, e)), [10, 12, 14, 15, 16, 18, 20, 24].map(e => (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsxs)("div", {
-            className: _.fontSize,
+            className: x.fontSize,
             children: [(0, r.jsxs)(o.X6q, {
               variant: "eyebrow",
               children: [e, "px"]
@@ -184,15 +184,15 @@ function j() {
               color: "text-muted",
               children: ["(", e * v / 100, ")"]
             }) : null]
-          }, e), C.map(t => {
+          }, e), O.map(t => {
             var n;
             let i = null != (n = "custom" === A ? I : A) ? n : "";
             return (0, r.jsx)("div", {
-              className: _.textSample,
+              className: x.textSample,
               children: (0, r.jsxs)("div", {
                 title: "".concat(e, "px at ").concat(t),
-                className: a()(_.text, {
-                  [_.breakAnywhere]: !i.includes(" ")
+                className: a()(x.text, {
+                  [x.breakAnywhere]: !i.includes(" ")
                 }),
                 style: {
                   fontSize: e,

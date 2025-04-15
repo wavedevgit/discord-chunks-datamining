@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => ed
 }), n(388685), n(49124), n(35282), n(781311), n(415506);
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(661111),
   f = n(179658),
   b = n(491428),
-  N = n(225433),
-  x = n(484614),
-  _ = n(615287),
+  _ = n(225433),
+  N = n(484614),
+  x = n(615287),
   E = n(386506),
   j = n(865427),
-  O = n(802098),
-  C = n(663993),
+  C = n(802098),
+  O = n(663993),
   S = n(600164),
   v = n(118012),
   T = n(482215),
@@ -82,8 +82,8 @@ function X(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
-  Q = [{
+let Q = ["discord_web", "discord_marketing", "discord_developers", "discord_ios", "discord_android"],
+  J = [{
     value: "branch",
     label: "Branch Name"
   }, {
@@ -106,7 +106,7 @@ class ee extends i.Component {
     return (0, r.jsxs)(S.Z, {
       direction: S.Z.Direction.VERTICAL,
       className: a()(F.buildOverrideGroup, z.marginBottom20, H.card, F.row),
-      children: [(0, r.jsx)(N.Z, {
+      children: [(0, r.jsx)(_.Z, {
         className: a()(F.removeBuildOverride, {
           [F.removeBuildOverrideDisabled]: i
         }),
@@ -119,7 +119,7 @@ class ee extends i.Component {
             title: "Override Type",
             className: F.item,
             children: (0, r.jsx)(g.q4e, {
-              options: Q,
+              options: J,
               onChange: this.handleOverrideTypeChanged,
               value: t,
               isDisabled: i
@@ -199,7 +199,7 @@ class et extends i.Component {
     } = this.state;
     if (null == e) return [];
     let t = Object.keys(e);
-    return o().without(J, ...t)
+    return o().without(Q, ...t)
   }
   renderEmpty() {
     return (0, r.jsxs)(g.ubH, {
@@ -573,7 +573,7 @@ class en extends i.Component {
   renderPayloadBlock() {
     let e = JSON.stringify(this.generatePayload(), null, 2),
       t = () => e,
-      i = (0, r.jsx)(C.GI, {
+      i = (0, r.jsx)(O.GI, {
         createPromise: () => Promise.resolve().then(n.bind(n, 364964)),
         webpackId: 364964,
         renderFallback: t,
@@ -608,7 +608,7 @@ class en extends i.Component {
           children: [(0, r.jsx)(S.Z.Child, {
             wrap: !0,
             basis: "75%",
-            children: (0, r.jsx)(x.Z, {
+            children: (0, r.jsx)(N.Z, {
               value: n
             })
           }), (0, r.jsx)(g.zxk, {
@@ -857,7 +857,7 @@ function es() {
     t = (0, d.e7)([A.default], () => A.default.getForcedRenderMode()),
     [n, s] = i.useState(!1),
     [a, l] = i.useState(""),
-    o = e || t === _.R5.OUT_OF_PROCESS_V2 || t === _.R5.OUT_OF_PROCESS_V3 || t === _.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
+    o = e || t === x.R5.OUT_OF_PROCESS_V3 || t === x.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return (i.useEffect(() => {
     (async () => {
       l(await (0, w.getOverlayURL)())
@@ -1160,8 +1160,8 @@ function el() {
 
 function eo() {
   var e;
-  let t = (0, d.e7)([O.Z], () => O.Z.overrideId()),
-    [n, s] = i.useState(null != (e = O.Z.overrideId()) ? e : "");
+  let t = (0, d.e7)([C.Z], () => C.Z.overrideId()),
+    [n, s] = i.useState(null != (e = C.Z.overrideId()) ? e : "");
   return (0, r.jsx)(R.F, {
     setting: U.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE,
     children: (0, r.jsx)(g.hjN, {

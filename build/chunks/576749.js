@@ -1,19 +1,19 @@
-/** Chunk was on 90783 **/
+/** Chunk was on 27434 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
-var o = n(481060),
-  r = n(40851),
-  a = n(334877),
-  i = n(981631);
+var r = n(481060),
+  l = n(40851),
+  i = n(334877),
+  o = n(981631);
 let c = "guild-event-modal",
-  l = () => {
-    let e = (0, r.bp)() === i.IlC.POPOUT ? o.u1M : o.z1l;
+  a = () => {
+    let e = (0, l.bp)() === o.IlC.POPOUT ? r.u1M : r.z1l;
     return {
       modalKey: c,
       contextKey: e,
       onCloseRequest: () => {
-        a.l.getState().canCloseModal && (0, o.Mr3)(c, e)
+        i.l.getState().canCloseModal && (0, r.Mr3)(c, e)
       }
     }
   }

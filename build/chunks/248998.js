@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => g
 }), n(953529);
@@ -28,9 +28,9 @@ function g(e) {
       onAction: f
     } = i,
     b = h && !a,
-    N = a ? "header-primary" : "text-muted",
-    x = a ? "header-secondary" : "text-muted",
-    _ = l()(n),
+    _ = a ? "header-primary" : "text-muted",
+    N = a ? "header-secondary" : "text-muted",
+    x = l()(n),
     E = null != f && a,
     j = E ? o.P3F : "div";
   return (0, r.jsxs)(j, {
@@ -51,14 +51,14 @@ function g(e) {
         variant: "text-xxs/semibold",
         color: "text-muted",
         className: m.unlocked,
-        children: (0, c.Y4)(_)
+        children: (0, c.Y4)(x)
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        color: N,
+        color: _,
         children: g()
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/normal",
-        color: x,
+        color: N,
         children: b ? "?????" : p()
       })]
     })]

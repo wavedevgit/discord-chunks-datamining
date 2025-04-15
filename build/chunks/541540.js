@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => _
+  Z: () => x
 }), n(388685), n(415506);
 var r = n(200651),
   i = n(192379),
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,14 +50,14 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class x extends i.Component {
+class N extends i.Component {
   get analyticsLocation() {
     let {
       analyticsContext: {
         location: e
       }
     } = this.props;
-    return N(b({}, e), {
+    return _(b({}, e), {
       object: g.qAy.BUTTON_CTA
     })
   }
@@ -133,7 +133,7 @@ class x extends i.Component {
         }), Error("Cannnot redeem promotion code as gift");
         u.default.track(g.rMx.OPEN_MODAL, {
           type: "gift_accept",
-          location: N(b({}, this.analyticsLocation), {
+          location: _(b({}, this.analyticsLocation), {
             object: g.qAy.BUTTON_CTA
           })
         }), (0, c.V)({
@@ -154,10 +154,10 @@ class x extends i.Component {
   }
 }
 
-function _() {
+function x() {
   let e = i.useContext(u.AnalyticsContext),
     t = (0, s.e7)([d.Z], () => d.Z.enabled);
-  return (0, r.jsx)(x, {
+  return (0, r.jsx)(N, {
     analyticsContext: e,
     obscureInput: t
   })

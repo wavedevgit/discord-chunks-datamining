@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  P: () => N
+  P: () => _
 }), n(290780);
 var r = n(200651);
 n(192379);
@@ -19,15 +19,15 @@ var i = n(524437),
   f = n(388032),
   b = n(298136);
 
-function N() {
+function _() {
   var e;
   let t = null == (e = (0, d.Z)()) || e,
     {
       explicitContentGuilds: n,
-      explicitContentFriendDm: N,
-      explicitContentNonFriendDm: x
+      explicitContentFriendDm: _,
+      explicitContentNonFriendDm: N
     } = (0, c.B)(),
-    _ = e => {
+    x = e => {
       let t = Object.values(e);
       if ((0, o.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal(l.cU.SENSITIVE_MEDIA_FILTER_SETTINGS);
       (0, o.zj)(e)
@@ -43,11 +43,11 @@ function N() {
       value: i.Q4.BLUR,
       label: f.NW.string(f.t.S49UaW)
     }],
-    O = {
+    C = {
       value: i.Q4.SHOW,
       label: f.NW.string(f.t["5k5OFh"])
     };
-  return t && (E.unshift(O), j.unshift(O)), (0, r.jsxs)(m.U, {
+  return t && (E.unshift(C), j.unshift(C)), (0, r.jsxs)(m.U, {
     setting: p.s6.PRIVACY_SENSITIVE_MEDIA_V2,
     scrollPosition: g.FY.EXPLICIT_MEDIA_REDACTION_V2,
     children: [(0, r.jsx)(m.H, {
@@ -61,8 +61,8 @@ function N() {
       titleClassName: b.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
-        value: N,
-        onChange: e => _({
+        value: _,
+        onChange: e => x({
           explicitContentFriendDm: e
         })
       })
@@ -72,8 +72,8 @@ function N() {
       titleClassName: b.selectItemTitle,
       children: (0, r.jsx)(s.q4e, {
         options: E,
-        value: x,
-        onChange: e => _({
+        value: N,
+        onChange: e => x({
           explicitContentNonFriendDm: e
         })
       })
@@ -84,7 +84,7 @@ function N() {
       children: (0, r.jsx)(s.q4e, {
         options: j,
         value: n,
-        onChange: e => _({
+        onChange: e => x({
           explicitContentGuilds: e
         })
       })

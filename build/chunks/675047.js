@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => j
 });
@@ -18,12 +18,12 @@ var i = n(924628),
   h = n(893996),
   f = n(266132),
   b = n(726985),
-  N = n(388032);
+  _ = n(388032);
 
-function x() {
+function N() {
   return (0, r.jsxs)(h.Z, {
-    title: N.NW.string(N.t.WWaFn5),
-    description: N.NW.format(N.t["/6sFWV"], {
+    title: _.NW.string(_.t.WWaFn5),
+    description: _.NW.format(_.t["/6sFWV"], {
       helpArticle: (0, a.uV)()
     }),
     webSetting: b.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
@@ -31,9 +31,9 @@ function x() {
   })
 }
 
-function _() {
+function x() {
   return (0, r.jsx)(h.Z, {
-    title: N.NW.string(N.t.BG7Qsb),
+    title: _.NW.string(_.t.BG7Qsb),
     webSetting: b.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, r.jsx)(c.Z, {})
   })
@@ -41,7 +41,7 @@ function _() {
 
 function E() {
   return (0, r.jsxs)(h.Z, {
-    title: N.NW.string(N.t.SRZyHh),
+    title: _.NW.string(_.t.SRZyHh),
     webSetting: b.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, r.jsx)(g.Z, {}), (0, r.jsx)(m.Z, {}), (0, r.jsx)(u.Z, {}), (0, r.jsx)(d.Z, {})]
   })
@@ -51,7 +51,7 @@ function j() {
   return (0, s.ZP)(() => {
     (0, i.I)(), (0, l.A)()
   }), (0, r.jsxs)(o.N, {
-    header: N.NW.string(N.t.OAuOHB),
-    children: [(0, r.jsx)(E, {}), (0, r.jsx)(_, {}), (0, r.jsx)(x, {})]
+    header: _.NW.string(_.t.OAuOHB),
+    children: [(0, r.jsx)(E, {}), (0, r.jsx)(x, {}), (0, r.jsx)(N, {})]
   })
 }

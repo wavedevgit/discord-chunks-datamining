@@ -1,4 +1,4 @@
-/** Chunk was on 41851 **/
+/** Chunk was on 78900 **/
 n.d(t, {
   Z: () => j
 }), n(388685);
@@ -110,10 +110,10 @@ let b = ["#51BC9D"],
           Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(i, e))
         }), a), 100)
       }
-    }, [v, P, q, S]), I = (0, u.Z)(y);
+    }, [v, P, q, S]), W = (0, u.Z)(y);
     return (o.useEffect(() => {
-      O && y && !I && (C(), D())
-    }, [y, O, C, D, I]), o.useEffect(() => {
+      O && y && !W && (C(), D())
+    }, [y, O, C, D, W]), o.useEffect(() => {
       O && !E && N && setTimeout(() => {
         C(), D()
       }, 200)

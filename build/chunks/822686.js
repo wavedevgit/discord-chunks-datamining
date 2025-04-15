@@ -1,4 +1,4 @@
-/** Chunk was on 21411 **/
+/** Chunk was on 21924 **/
 n.d(t, {
   Z: () => x
 }), n(388685);
@@ -20,13 +20,13 @@ let x = e => {
     p(!0), o.ZP.trackWithMetadata(u.rMx.IAR_DELETE_MESSAGE_BUTTON_CLICKED, {
       report_id: n
     }), a.Z.deleteMessage(t.getChannelId(), t.id)
-  }, [t, n]), f = l.useMemo(() => {
+  }, [t, n]), h = l.useMemo(() => {
     let e = c.Z.getChannel(t.getChannelId());
     return null != e && e.type !== u.d4z.DM && e.type !== u.d4z.GROUP_DM && d.Z.canWithPartialContext(u.Plq.MANAGE_MESSAGES, {
       channelId: e.id
     })
   }, [t]);
-  return null != t && f ? (0, r.jsx)(s.ZP, {
+  return null != t && h ? (0, r.jsx)(s.ZP, {
     title: m.NW.string(m.t.c9BHLy),
     description: m.NW.string(m.t.dK8S09),
     buttonText: x ? m.NW.string(m.t.f3pnLC) : m.NW.string(m.t.ch2xbm),

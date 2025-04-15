@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => T
 });
@@ -18,15 +18,15 @@ var i = n(442837),
   h = n(823087),
   f = n(232388),
   b = n(716210),
-  N = n(459674),
-  x = n(803567),
-  _ = n(269876),
+  _ = n(459674),
+  N = n(803567),
+  x = n(269876),
   E = n(976758),
   j = n(726985),
-  O = n(981631),
-  C = n(65154),
+  C = n(981631),
+  O = n(65154),
   S = n(388032);
-let v = "".concat(o.Z.getArticleURL(O.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
+let v = "".concat(o.Z.getArticleURL(C.BhN.VOICE_VIDEO_TROUBLESHOOTING), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-voice-video&utm_content=--t%3Apm");
 
 function T() {
   let {
@@ -59,13 +59,13 @@ function T() {
           children: (0, r.jsx)(p.Z, {})
         }), (0, r.jsx)(a.F, {
           setting: j.s6.VOICE_AND_VIDEO_SENSITIVITY,
-          children: e === C.pM.VOICE_ACTIVITY && (0, r.jsx)(_.Z, {})
+          children: e === O.pM.VOICE_ACTIVITY && (0, r.jsx)(x.Z, {})
         })]
       })]
     }), (0, r.jsx)(c.Z, {
       webSetting: j.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING,
       title: S.NW.string(S.t["6I6GUl"]),
-      children: (0, r.jsx)(x.Z, {
+      children: (0, r.jsx)(N.Z, {
         refreshStyles: !0
       })
     }), (0, r.jsx)(c.Z, {
@@ -74,7 +74,7 @@ function T() {
       children: (0, r.jsxs)(d.Z, {
         children: [(0, r.jsx)(b.Z, {
           refreshStyles: !0
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(_.Z, {
           refreshStyles: !0
         }), (0, r.jsx)(u.Z, {
           refreshStyles: !0

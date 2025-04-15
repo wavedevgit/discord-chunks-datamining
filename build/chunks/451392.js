@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => N
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -19,37 +19,37 @@ var i = n(120356),
   f = n(388032),
   b = n(732391);
 
-function N(e) {
+function _(e) {
   let {
     user: t,
     pendingAvatarSrc: n,
     pendingColors: i,
     onThemeColorsChange: a,
-    preventDisabled: N,
-    guildId: x,
-    className: _,
+    preventDisabled: _,
+    guildId: N,
+    className: x,
     showPremiumIcon: E = !0,
     showResetThemeButton: j = !1,
-    forcedDivider: O
-  } = e, C = (0, u.ZP)(t.id, x), {
+    forcedDivider: C
+  } = e, O = (0, u.ZP)(t.id, N), {
     primaryColor: S,
     secondaryColor: v
   } = (0, m.Z)({
     user: t,
-    displayProfile: C,
+    displayProfile: O,
     pendingThemeColors: i,
     isPreview: !0
-  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(x, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
+  }), T = g.ZP.canUsePremiumProfileCustomization(t), I = null != n ? n : t.getAvatarURL(N, 80), y = (0, c.dQu)(o.Z.unsafe_rawColors.PRIMARY_530).hex(), A = (0, d.Cf)(I, y, !1);
   if (null == S || null == v) return null;
   let P = e => {
-    a(l()(e, null == C ? void 0 : C.themeColors) ? void 0 : e)
+    a(l()(e, null == O ? void 0 : O.themeColors) ? void 0 : e)
   };
   return (0, r.jsx)(h.Z, {
     title: f.NW.string(f.t.DMeO2d),
-    disabled: !T && !N,
-    className: s()(b.__invalid_profileThemesSection, _),
+    disabled: !T && !_,
+    className: s()(b.__invalid_profileThemesSection, x),
     showPremiumIcon: E,
-    forcedDivider: O,
+    forcedDivider: C,
     children: (0, r.jsxs)("div", {
       className: b.sectionContainer,
       children: [(0, r.jsx)("div", {
@@ -82,7 +82,7 @@ function N(e) {
             children: f.NW.string(f.t["8elvy8"])
           })
         })
-      }), j && null != x && (0, r.jsx)(c.zxk, {
+      }), j && null != N && (0, r.jsx)(c.zxk, {
         className: b.resetButton,
         color: c.zxk.Colors.PRIMARY,
         look: c.zxk.Looks.LINK,

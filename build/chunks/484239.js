@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => h
 });
@@ -21,17 +21,17 @@ let h = e => {
       title: h,
       titleClassName: f,
       buttonClassName: b,
-      perkImage: N,
-      isCarousel: x,
-      onCtaClick: _,
+      perkImage: _,
+      isCarousel: N,
+      onCtaClick: x,
       perkComponent: E,
       subtitle: j = "",
-      descriptionCta: O = "",
-      cardVariant: C,
+      descriptionCta: C = "",
+      cardVariant: O,
       subtitleClassName: S,
       imageOverlayText: v
     } = e,
-    T = (0, o._)(C),
+    T = (0, o._)(O),
     I = (0, l.Er)(),
     y = (null == I ? void 0 : I.nitroTenureStatus) === d.EB.REDEEMABLE;
   switch (null == I ? void 0 : I.nitroTenureStatus) {
@@ -58,14 +58,14 @@ let h = e => {
       titleClassName: f,
       subtitle: j,
       subtitleClassName: S
-    }), null != N && (0, r.jsxs)("div", {
+    }), null != _ && (0, r.jsxs)("div", {
       className: s()(u.relative, {
-        [u.cardImage]: !x
+        [u.cardImage]: !N
       }),
       children: [(0, r.jsx)("img", {
-        src: N,
+        src: _,
         alt: "",
-        className: x ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
+        className: N ? A ? u.carouselCardImageGrayscale : u.carouselCardImage : ""
       }), A ? (0, r.jsx)("div", {
         className: u.imageOverlayTextContainer,
         children: (0, r.jsx)(a.Text, {
@@ -76,17 +76,17 @@ let h = e => {
       }) : null]
     }), null != E && (0, r.jsxs)("div", {
       className: u.cardIllustrationNoHover,
-      children: [E, 0 !== O.length && null != _ && (0, r.jsx)(a.zxk, {
+      children: [E, 0 !== C.length && null != x && (0, r.jsx)(a.zxk, {
         className: b,
         disabled: !y,
         fullWidth: !0,
-        onClick: _,
+        onClick: x,
         children: (0, r.jsxs)("div", {
           className: null == T || null == (t = T.descriptionCta) ? void 0 : t.className,
           children: [(0, r.jsx)("img", {
             alt: i,
             src: n
-          }), O]
+          }), C]
         })
       })]
     })]

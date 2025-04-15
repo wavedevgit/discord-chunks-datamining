@@ -1,30 +1,30 @@
-/** Chunk was on 91348 **/
+/** Chunk was on 56422 **/
 n.d(t, {
-  g: () => O,
-  mI: () => N
+  g: () => b,
+  mI: () => m
 }), n(388685);
 var r = n(149765),
   i = n(399606),
   l = n(581883),
-  o = n(430824),
+  s = n(430824),
   a = n(496675),
-  s = n(914010),
+  o = n(914010),
   c = n(594174),
   u = n(700785),
-  E = n(709054),
-  d = n(533244),
-  _ = n(487419),
-  I = n(676770);
+  d = n(709054),
+  g = n(533244),
+  p = n(487419),
+  f = n(676770);
 
-function N(e) {
-  let t = (0, i.e7)([o.Z, a.Z], () => {
-      let t = o.Z.getGuild(e);
+function m(e) {
+  let t = (0, i.e7)([s.Z, a.Z], () => {
+      let t = s.Z.getGuild(e);
       if (null == t) return !1;
       let n = a.Z.getGuildPermissions(t);
-      return null != n && r.Db(n, I.cv)
+      return null != n && r.Db(n, f.cv)
     }),
-    n = (0, i.e7)([_.Z], () => null != e ? _.Z.getGuildIncident(e) : null),
-    l = null != n && (0, d.ur)(n);
+    n = (0, i.e7)([p.Z], () => null != e ? p.Z.getGuildIncident(e) : null),
+    l = null != n && (0, g.ur)(n);
   return {
     shouldShowIncidentActions: t,
     incidentData: n,
@@ -32,22 +32,22 @@ function N(e) {
   }
 }
 
-function O() {
+function b() {
   var e;
   let t = function(e) {
       let t = c.default.getCurrentUser(),
-        n = _.Z.getIncidentsByGuild();
-      for (let i of E.default.keys(n).map(e => o.Z.getGuild(e))) {
+        n = p.Z.getIncidentsByGuild();
+      for (let i of d.default.keys(n).map(e => s.Z.getGuild(e))) {
         if (null == i) continue;
         let l = n[i.id];
-        if (!(null == l || !(0, d.i9)(l) && !(0, d.ur)(l) || (0, d.ur)(l) && i.id !== e) && r.Db(u.uB({
+        if (!(null == l || !(0, g.i9)(l) && !(0, g.ur)(l) || (0, g.ur)(l) && i.id !== e) && r.Db(u.uB({
             user: t,
             context: i,
             checkElevated: !1
-          }), I.cv)) return i.id
+          }), f.cv)) return i.id
       }
       return null
-    }(s.Z.getGuildId()),
+    }(o.Z.getGuildId()),
     n = null != (e = l.Z.getGuildsProto()) ? e : {},
     i = null != t ? n[t] : null,
     a = null != i && i.disableRaidAlertNag;

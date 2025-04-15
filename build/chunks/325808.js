@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => S
 });
@@ -17,17 +17,17 @@ var r = n(200651),
   h = n(358085),
   f = n(962100),
   b = n(981631),
-  N = n(388032),
-  x = n(285425),
-  _ = n(20493);
+  _ = n(388032),
+  N = n(285425),
+  x = n(20493);
 let E = !h.isPlatformEmbedded,
   j = (0, g.hQ)();
 
-function O(e) {
+function C(e) {
   return e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), " ms")
 }
 
-function C(e) {
+function O(e) {
   let t, {
       inputMode: n
     } = e,
@@ -37,24 +37,24 @@ function C(e) {
     } = (0, l.cj)([p.Z], () => p.Z.getModeOptions());
   return t = h.isPlatformEmbedded || n !== b.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(x.pttToolsMessage, _.marginBottom8),
-    children: N.NW.format(N.t.HVvn5e, {
+    className: a()(N.pttToolsMessage, x.marginBottom8),
+    children: _.NW.format(_.t.HVvn5e, {
       onClick: () => d.Z.setSection(b.oAB.KEYBINDS)
     })
   }) : (0, r.jsx)(o.R94, {
     type: o.R94.Types.DESCRIPTION,
-    className: a()(x.pttToolsMessage, x.pttToolsWarning, _.marginBottom8),
-    children: N.NW.format(N.t.zvMPOT, {
+    className: a()(N.pttToolsMessage, N.pttToolsWarning, x.marginBottom8),
+    children: _.NW.format(_.t.zvMPOT, {
       onDownloadClick: () => (0, f.y)("Help Text PTT")
     })
   }), (0, r.jsxs)("div", {
-    className: x.pttTools,
+    className: N.pttTools,
     children: [(0, r.jsxs)("div", {
-      className: x.pttToolsFlex,
+      className: N.pttToolsFlex,
       children: [(0, r.jsx)("div", {
-        className: x.column,
+        className: N.column,
         children: (0, r.jsx)(o.xJW, {
-          title: N.NW.string(N.t.YkDjVF),
+          title: _.NW.string(_.t.YkDjVF),
           children: (0, r.jsx)(u.Z, {
             defaultValue: i,
             onChange: e => c.Z.setMode(n, {
@@ -63,19 +63,19 @@ function C(e) {
           })
         })
       }), (0, r.jsx)("div", {
-        className: x.column,
+        className: N.column,
         children: (0, r.jsxs)(o.xJW, {
           children: [(0, r.jsx)(o.vwX, {
             id: j,
             tag: o.RB0.H5,
-            className: _.marginBottom8,
-            children: N.NW.string(N.t.y0ShVl)
+            className: x.marginBottom8,
+            children: _.NW.string(_.t.y0ShVl)
           }), (0, r.jsx)(o.iRW, {
             initialValue: s,
             onValueChange: e => c.Z.setMode(n, {
               delay: e
             }),
-            onValueRender: O,
+            onValueRender: C,
             maxValue: b.qhL,
             "aria-labelledby": j
           })]
@@ -90,10 +90,10 @@ function S() {
     analyticsLocations: e
   } = (0, m.ZP)(), t = (0, l.e7)([p.Z], () => p.Z.getMode()), s = [{
     value: b.pM4.VOICE_ACTIVITY,
-    name: N.NW.string(N.t.cHCEOD)
+    name: _.NW.string(_.t.cHCEOD)
   }, {
     value: b.pM4.PUSH_TO_TALK,
-    name: E ? N.NW.string(N.t["1AINrK"]) : N.NW.string(N.t.Q8gkVF)
+    name: E ? _.NW.string(_.t["1AINrK"]) : _.NW.string(_.t.Q8gkVF)
   }], a = i.useCallback(t => {
     let {
       value: i
@@ -120,11 +120,11 @@ function S() {
         }
         return e
       }({
-        title: N.NW.string(N.t.Kdt0GR),
-        confirmText: N.NW.string(N.t["1WjMbG"]),
-        cancelText: N.NW.string(N.t.BddRzc),
+        title: _.NW.string(_.t.Kdt0GR),
+        confirmText: _.NW.string(_.t["1WjMbG"]),
+        cancelText: _.NW.string(_.t.BddRzc),
         onConfirm: () => (0, f.y)("PTT Limited Modal"),
-        body: N.NW.string(N.t.NIozvr)
+        body: _.NW.string(_.t.NIozvr)
       }, t))
     }), c.Z.setMode(i, void 0, void 0, {
       analyticsLocations: e
@@ -132,14 +132,14 @@ function S() {
   }, [e]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.xJW, {
-      title: N.NW.string(N.t["pS+K2N"]),
-      className: _.marginBottom20,
+      title: _.NW.string(_.t["pS+K2N"]),
+      className: x.marginBottom20,
       children: (0, r.jsx)(o.FXm, {
         onChange: a,
         options: s,
         value: t
       })
-    }), t === b.pM4.PUSH_TO_TALK && (0, r.jsx)(C, {
+    }), t === b.pM4.PUSH_TO_TALK && (0, r.jsx)(O, {
       inputMode: t
     })]
   })

@@ -1,4 +1,5 @@
-/** Chunk was on 96408 **/
+/** Chunk was on 64865 **/
+"use strict";
 e.exports = {
   premiumLabel: "premiumLabel_e681d1",
   selected: "selected_e681d1",

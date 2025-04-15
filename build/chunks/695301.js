@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   Z: () => b
 });
@@ -6,13 +6,13 @@ var r = n(200651),
   i = n(192379),
   l = n(442837),
   o = n(481060),
-  a = n(746916),
-  s = n(965638),
+  s = n(746916),
+  a = n(965638),
   c = n(905423),
   u = n(486472),
   d = n(888369),
-  p = n(430824),
-  h = n(451478),
+  h = n(430824),
+  p = n(451478),
   f = n(61634),
   g = n(325257),
   m = n(240848);
@@ -20,16 +20,16 @@ let b = i.memo(function(e) {
   var t, n;
   let {
     guildNode: b,
-    lowerBadge: _
-  } = e, y = b.id, v = (0, l.e7)([p.Z], () => p.Z.getGuild(y)), O = (0, a.E)(v), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), C = (0, l.e7)([u.Z], () => u.Z.isUnavailable(y)), x = (0, c.Z)(e => e.guildId), S = (0, f.Z)(y), {
-    badge: P,
-    unread: I,
-    isMentionLowImportance: N
+    lowerBadge: y
+  } = e, _ = b.id, v = (0, l.e7)([h.Z], () => h.Z.getGuild(_)), O = (0, s.E)(v), C = (0, l.e7)([p.Z], () => p.Z.isFocused()), S = (0, l.e7)([u.Z], () => u.Z.isUnavailable(_)), j = (0, c.Z)(e => e.guildId), E = (0, f.Z)(_), {
+    badge: x,
+    unread: N,
+    isMentionLowImportance: I
   } = (0, l.cj)([d.default], () => ({
-    badge: d.default.getMentionCount(y),
-    isMentionLowImportance: d.default.getIsMentionLowImportance(y),
-    unread: d.default.hasUnread(y)
-  })), Z = (0, s.Ij)(v) && 0 === P, E = i.useMemo(() => null != _ ? _ : Z ? (0, r.jsx)("div", {
+    badge: d.default.getMentionCount(_),
+    isMentionLowImportance: d.default.getIsMentionLowImportance(_),
+    unread: d.default.hasUnread(_)
+  })), P = (0, a.Ij)(v) && 0 === x, w = i.useMemo(() => null != y ? y : P ? (0, r.jsx)("div", {
     className: m.pauseBackground,
     children: (0, r.jsx)(o.fpf, {
       size: "custom",
@@ -38,7 +38,7 @@ let b = i.memo(function(e) {
       width: 10,
       height: 10
     })
-  }) : null, [_, Z]);
+  }) : null, [y, P]);
   return (0, r.jsx)(g.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -58,14 +58,14 @@ let b = i.memo(function(e) {
     return e
   }({}, e), n = n = {
     guild: v,
-    unavailable: C,
-    animatable: j,
-    selected: x === y,
-    badge: P,
-    isMentionLowImportance: N,
-    lowerBadge: E,
-    unread: I,
-    mediaState: S,
+    unavailable: S,
+    animatable: C,
+    selected: j === _,
+    badge: x,
+    isMentionLowImportance: I,
+    lowerBadge: w,
+    unread: N,
+    mediaState: E,
     guildJoinRequestStatus: O
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

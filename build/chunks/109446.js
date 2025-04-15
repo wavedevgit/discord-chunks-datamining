@@ -1,54 +1,54 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => C
+  Z: () => S
 }), n(388685), n(642613), n(583741);
 var r = n(200651),
   i = n(192379),
   l = n(392711),
   o = n.n(l),
-  a = n(442837),
-  s = n(481060),
+  s = n(442837),
+  a = n(481060),
   c = n(99690),
   u = n(359110),
   d = n(601070),
-  p = n(91159),
-  h = n(488131),
+  h = n(91159),
+  p = n(488131),
   f = n(496675),
   g = n(306680),
   m = n(594174),
   b = n(768581),
-  _ = n(709054),
-  y = n(981631),
+  y = n(709054),
+  _ = n(981631),
   v = n(124368),
   O = n(388032),
-  j = n(571658);
+  C = n(571658);
 
-function C(e) {
+function S(e) {
   let {
     channel: t
-  } = e, l = (0, a.Wu)([d.Z, g.ZP, f.Z], () => {
+  } = e, l = (0, s.Wu)([d.Z, g.ZP, f.Z], () => {
     let e = d.Z.getActiveJoinedRelevantThreadsForParent(t.guild_id, t.id);
-    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(y.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
+    return o()(d.Z.getActiveJoinedThreadsForParent(t.guild_id, t.id)).values().map(e => e.channel).concat(o().values(d.Z.getActiveUnjoinedThreadsForParent(t.guild_id, t.id))).filter(t => !(t.id in e) && f.Z.can(_.Plq.VIEW_CHANNEL, t)).sort((e, t) => {
       let n = g.ZP.lastMessageId(e.id),
         r = g.ZP.lastMessageId(t.id);
-      return _.default.compare(n, r)
+      return y.default.compare(n, r)
     }).reverse().value()
   }), c = t.isForumLikeChannel() ? 5 : 3;
   return i.useEffect(() => {
-    (0, p.q)()
+    (0, h.q)()
   }, []), (0, r.jsxs)("div", {
-    className: j.popout,
-    children: [(0, r.jsx)(s.Text, {
-      className: j.title,
+    className: C.popout,
+    children: [(0, r.jsx)(a.Text, {
+      className: C.title,
       variant: "text-xs/bold",
       color: "header-secondary",
       children: t.isForumLikeChannel() ? O.NW.string(O.t.ioVdOz) : O.NW.string(O.t.VNYs2t)
-    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(x, {
+    }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(j, {
       thread: e
-    }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
-      className: j.more,
+    }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(a.P3F, {
+      className: C.more,
       onClick: () => {
-        t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, s.ZDy)(async () => {
+        t.isForumLikeChannel() ? (0, u.Kh)(t.id) : (0, a.ZDy)(async () => {
           let {
             default: e
           } = await n.e("36970").then(n.bind(n, 223901));
@@ -74,7 +74,7 @@ function C(e) {
           }, n))
         })
       },
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "none",
         children: O.NW.string(O.t["4qdZ9/"])
@@ -83,36 +83,36 @@ function C(e) {
   })
 }
 
-function x(e) {
+function j(e) {
   let {
     thread: t
-  } = e, n = (0, a.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, p.Ok)(t);
-  return (0, r.jsxs)(s.P3F, {
-    className: j.row,
+  } = e, n = (0, s.e7)([m.default], () => m.default.getUser(t.ownerId)), i = (0, h.Ok)(t);
+  return (0, r.jsxs)(a.P3F, {
+    className: C.row,
     onClick: e => {
-      (0, h.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, v.on.POPOUT)
+      (0, p.ok)(t, t.isForumPost() ? e.shiftKey : !e.shiftKey, v.on.POPOUT)
     },
     children: [null == n ? (0, r.jsx)("img", {
-      className: j.avatar,
+      className: C.avatar,
       src: b.ZP.getDefaultAvatarURL(void 0, void 0),
       alt: ""
     }) : (0, r.jsx)(c.Z, {
-      className: j.avatar,
+      className: C.avatar,
       user: n,
-      size: s.EFr.SIZE_16
-    }), (0, r.jsx)(s.Text, {
-      className: j.name,
+      size: a.EFr.SIZE_16
+    }), (0, r.jsx)(a.Text, {
+      className: C.name,
       variant: "text-sm/normal",
       color: "none",
       children: t.name
-    }), (0, r.jsxs)(s.Text, {
-      className: j.timestamp,
+    }), (0, r.jsxs)(a.Text, {
+      className: C.timestamp,
       variant: "text-sm/normal",
       color: "none",
       children: [(0, r.jsx)("span", {
-        className: j.bullet,
+        className: C.bullet,
         children: "•"
-      }), (0, p.Ye)(i)]
+      }), (0, h.Ye)(i)]
     })]
   })
 }

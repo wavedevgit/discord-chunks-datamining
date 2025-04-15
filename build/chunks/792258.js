@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => f
 });
@@ -24,22 +24,22 @@ let h = [18, 18, 16, 16, 14, 12, 10],
     let i = n.hasFeature(u.oNc.VERIFIED) || n.hasFeature(u.oNc.PARTNERED),
       f = n.toString(),
       b = n.getIconURL(40, !0),
-      N = null,
-      x = h[h.length - 1];
+      _ = null,
+      N = h[h.length - 1];
     if (null == n.icon && null != f) {
-      var _;
-      x = null != (_ = h[(N = (0, a.Zg)(f)).length - 1]) ? _ : h[h.length - 1]
+      var x;
+      N = null != (x = h[(_ = (0, a.Zg)(f)).length - 1]) ? x : h[h.length - 1]
     }
     return (0, r.jsxs)("div", {
       className: p.container,
       children: [(0, r.jsxs)("div", {
         style: {
-          fontSize: x
+          fontSize: N
         },
-        children: [null != N ? (0, r.jsx)("div", {
+        children: [null != _ ? (0, r.jsx)("div", {
           className: s()(p.childWrapper, p.acronym),
           "aria-hidden": !0,
-          children: N
+          children: _
         }) : null, null != b ? (0, r.jsx)(o.qEK, {
           src: n.getIconURL(40, !0),
           size: o.EFr.SIZE_40,

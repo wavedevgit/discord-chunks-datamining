@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   C: () => p,
   d: () => g
@@ -43,17 +43,17 @@ let m = (0, i.createContext)({
         product: f
       }
     }, [f, h]), {
-      redeemVirtualCurrency: N,
-      isSubmitting: x,
-      error: _
+      redeemVirtualCurrency: _,
+      isSubmitting: N,
+      error: x
     } = (0, u.f)(), E = (0, i.useCallback)(e => {
-      N(t, n => {
+      _(t, n => {
         g({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, N, g]);
+    }, [t, _, g]);
     return (0, r.jsx)(m.Provider, {
       value: {
         skuId: t,
@@ -61,8 +61,8 @@ let m = (0, i.createContext)({
         analyticsLocations: null != s ? s : [],
         orbProductContext: b,
         onRedeemVirtualCurrency: E,
-        isRedeeming: x,
-        orbRedemptionError: _
+        isRedeeming: N,
+        orbRedemptionError: x
       },
       children: p
     })

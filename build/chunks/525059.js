@@ -1,4 +1,5 @@
-/** Chunk was on 96408 **/
+/** Chunk was on 64865 **/
+"use strict";
 e.exports = {
   container: "container_e2461d",
   innerContainer: "innerContainer_e2461d",

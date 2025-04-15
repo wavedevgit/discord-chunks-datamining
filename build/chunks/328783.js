@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
@@ -17,20 +17,20 @@ var r = n(200651),
   h = n(526761),
   f = n(388032),
   b = n(989966);
-let N = (0, l.hQ)(),
-  x = i.memo(function(e) {
+let _ = (0, l.hQ)(),
+  N = i.memo(function(e) {
     let {
       availableClans: t
     } = e, n = i.useMemo(() => new Map(t.map(e => [e.id, e])), [t]), l = (0, s.e7)([d.default], () => {
       var e;
       return (0, m.Pb)(null == (e = d.default.getCurrentUser()) ? void 0 : e.primaryGuild).guildId
-    }), x = i.useMemo(() => t.reduce((e, t) => {
+    }), N = i.useMemo(() => t.reduce((e, t) => {
       var n;
       return (null == (n = t.profile) ? void 0 : n.tag) != null && e.push({
         label: t.name,
         value: t.id
       }), e
-    }, []), [t]), _ = i.useCallback(e => {
+    }, []), [t]), x = i.useCallback(e => {
       var t, i;
       if (null == e) return null;
       let s = n.get(e.value);
@@ -47,12 +47,12 @@ let N = (0, l.hQ)(),
     }, [n]), E = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
-        children: _(t)
+        children: x(t)
       })
-    }, [_]), j = i.useCallback(e => (0, u.nE)(e, !0, p.Sbl.USER_SETTINGS), []), O = i.useCallback(e => e === l, [l]), C = i.useCallback(e => e, []), S = i.useCallback(() => (0, u.nE)(null, !1), []), v = i.useRef(null);
+    }, [x]), j = i.useCallback(e => (0, u.nE)(e, !0, p.Sbl.USER_SETTINGS), []), C = i.useCallback(e => e === l, [l]), O = i.useCallback(e => e, []), S = i.useCallback(() => (0, u.nE)(null, !1), []), v = i.useRef(null);
     return (0, c.Z)(v, h.Y_.GUILD_TAG), (0, r.jsxs)(o.Z, {
       title: f.NW.string(f.t.Pdd1nZ),
-      titleId: N,
+      titleId: _,
       ref: v,
       children: [(0, r.jsx)(a.Text, {
         className: b.subtitle,
@@ -61,12 +61,12 @@ let N = (0, l.hQ)(),
       }), (0, r.jsx)(a.PhF, {
         className: b.select,
         optionClassName: b.selectPopout,
-        isSelected: O,
-        options: x,
+        isSelected: C,
+        options: N,
         select: j,
         renderOptionValue: E,
-        renderOptionLabel: _,
-        serialize: C,
+        renderOptionLabel: x,
+        serialize: O,
         clear: S,
         clearable: null != l
       })]

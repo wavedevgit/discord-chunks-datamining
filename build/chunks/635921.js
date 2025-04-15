@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   PK: () => T,
   ZP: () => A,
@@ -19,13 +19,13 @@ var r = n(200651),
   h = n(104494),
   f = n(639119),
   b = n(105759),
-  N = n(346497),
-  x = n(422034),
-  _ = n(206127),
+  _ = n(346497),
+  N = n(422034),
+  x = n(206127),
   E = n(710220),
   j = n(318747),
-  O = n(409100),
-  C = n(474936),
+  C = n(409100),
+  O = n(474936),
   S = n(388032),
   v = n(909176);
 let T = e => {
@@ -36,7 +36,7 @@ let T = e => {
       buttonClassName: s,
       isMarketingPageV2Enabled: l,
       isDarkMode: o
-    } = e, c = (0, r.jsx)(O.Z, {
+    } = e, c = (0, r.jsx)(C.Z, {
       forceInverted: o || !l,
       className: a()(v.button, v.subButton, s, {
         [v.extendedButton]: t && l,
@@ -74,7 +74,7 @@ function y(e) {
     variant: t = "text-lg/normal",
     withBottomMargin: n = !0,
     isMarketingPageV2Enabled: i
-  } = e, s = (0, _.$)();
+  } = e, s = (0, x.$)();
   return (0, r.jsx)(o.Text, {
     variant: t,
     color: i ? "header-secondary" : "always-white",
@@ -92,13 +92,13 @@ let A = i.forwardRef((e, t) => {
   let {
     isFullscreen: s,
     className: u,
-    buttonClassName: _,
-    subscriptionTier: O,
+    buttonClassName: x,
+    subscriptionTier: C,
     entrypoint: A,
     isDarkMode: P
   } = e, {
     analyticsLocations: R
-  } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p._O)(), Z = (0, h.Ng)(), w = (0, h.Wp)(Z, C.Si.TIER_2) ? C.Si.TIER_2 : void 0, k = (0, f.N)(), W = (0, g.Nx)(), L = (0, N.Vi)(), B = (0, l.e7)([m.Z], () => m.Z.affinities), M = (0, b.Z)(), U = A === C.EZ.ApplicationStoreHome && null != M, V = B.length > 0;
+  } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p._O)(), Z = (0, h.Ng)(), w = (0, h.Wp)(Z, O.Si.TIER_2) ? O.Si.TIER_2 : void 0, k = (0, f.N)(), W = (0, g.Nx)(), L = (0, _.Vi)(), B = (0, l.e7)([m.Z], () => m.Z.affinities), M = (0, b.Z)(), U = A === O.EZ.ApplicationStoreHome && null != M, V = B.length > 0;
   return (0, r.jsx)(d.Gt, {
     value: R,
     children: (0, r.jsxs)("div", {
@@ -118,20 +118,20 @@ let A = i.forwardRef((e, t) => {
           referrer: M
         }) : V ? (0, r.jsx)("div", {
           className: v.affinityDescription,
-          children: (0, r.jsx)(x.Z, {
+          children: (0, r.jsx)(N.Z, {
             textColor: "always-white",
             smallerText: !s
           })
         }) : (0, r.jsx)(y, {}), L || D ? (0, r.jsx)("div", {
           className: v.buttonContainer,
           children: (0, r.jsx)(j.Z, {
-            className: a()(v.button, _),
+            className: a()(v.button, x),
             forceWhite: !0
           })
         }) : (0, r.jsx)(T, {
-          subscriptionTier: null != (i = null != O ? O : null == k || null == (n = k.subscription_trial) ? void 0 : n.sku_id) ? i : w,
+          subscriptionTier: null != (i = null != C ? C : null == k || null == (n = k.subscription_trial) ? void 0 : n.sku_id) ? i : w,
           inOfferExperience: W,
-          buttonClassName: _,
+          buttonClassName: x,
           isDarkMode: P
         }), V && !U && (0, r.jsx)(y, {
           variant: "text-md/normal",

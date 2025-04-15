@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 e.exports = {
   nicknameDisabled: "nicknameDisabled__17e9b"
 }

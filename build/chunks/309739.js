@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => B
 }), n(388685), n(781311);
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(726542),
   f = n(116841),
   b = n(295377),
-  N = n(921801),
-  x = n(553795),
-  _ = n(430824),
+  _ = n(921801),
+  N = n(553795),
+  x = n(430824),
   E = n(63063),
   j = n(358085),
-  O = n(709054),
-  C = n(362352),
+  C = n(709054),
+  O = n(362352),
   S = n(413182),
   v = n(695346),
   T = n(726985),
@@ -34,7 +34,7 @@ var r = n(200651),
 
 function R(e) {
   let t = () => {
-    v.SE.updateSetting(e ? O.default.keys(_.Z.getGuilds()) : [])
+    v.SE.updateSetting(e ? C.default.keys(x.Z.getGuilds()) : [])
   };
   (0, m.h7j)(e => {
     var n, i;
@@ -82,7 +82,7 @@ function R(e) {
 function D() {
   let e = v.G6.useSetting(),
     t = v.Wz.useSetting(),
-    n = (0, C.Yd)("activity privacy tab"),
+    n = (0, O.Yd)("activity privacy tab"),
     i = j.isPlatformEmbedded ? y.NW.string(y.t.MznbeH) : y.NW.string(y.t.oKqC4u),
     s = e => {
       v.Wz.updateSetting(e ? d.E5.ON_FOR_LARGE_GUILDS : d.E5.OFF), R(e)
@@ -100,7 +100,7 @@ function D() {
       value: d.E5.OFF,
       label: y.NW.string(y.t.MIgNPD)
     }];
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(_.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS,
     children: (0, r.jsxs)(m.hjN, {
       children: [(0, r.jsx)(m.vwX, {
@@ -144,7 +144,7 @@ function D() {
 function Z() {
   let e = v.cP.useSetting(),
     t = v.Ou.useSetting();
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(_.F, {
     setting: T.s6.ACTIVITY_PRIVACY_RICH_PRESENCE,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,
@@ -168,7 +168,7 @@ function Z() {
 }
 
 function w() {
-  return (0, r.jsx)(N.F, {
+  return (0, r.jsx)(_.F, {
     setting: T.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, r.jsx)(m.hjN, {
       className: P.marginBottom40,
@@ -239,14 +239,14 @@ function W(e) {
 }
 
 function L() {
-  let e = (0, c.e7)([x.Z], () => x.Z.getAccounts()),
+  let e = (0, c.e7)([N.Z], () => N.Z.getAccounts()),
     t = i.useMemo(() => e.filter(e => h.Z.isSupported(e.type) && I.vbS.has(e.type)), [e]),
     [n, s] = i.useState(""),
     a = i.useMemo(() => {
       let e = n.trim().toLowerCase();
       return "" === e ? t : t.filter(t => o()(e, h.Z.get(t.type).name.toLowerCase()))
     }, [t, n]);
-  return 0 === t.length ? null : (0, r.jsx)(N.F, {
+  return 0 === t.length ? null : (0, r.jsx)(_.F, {
     setting: T.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY,
     children: (0, r.jsxs)(m.hjN, {
       className: P.marginBottom40,

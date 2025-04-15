@@ -1,31 +1,31 @@
 /**
   Module ID: 21607
-  Original File Name: 60f4bed351d2dea4
+  Original File Name: a121a85a719d00af
 **/
 .clipPill_d762d7 {
-    position: absolute;
-    top: 4px;
-    left: 4px;
-    padding: 4px 8px;
+    align-items: center;
     background-color: var(--brand-500);
     border-radius: var(--radius-xs);
-    z-index: 1;
-    text-transform: uppercase;
     display: flex;
-    align-items: center;
+    gap: 4px;
     justify-content: center;
-    gap: 4px
+    left: 4px;
+    padding: 4px 8px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 4px;
+    z-index: 1
 }
 
 .loadingWrapper__5a143 {
+    align-items: center;
+    border-radius: 2px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding: 8px 4px;
     height: 16px;
-    border-radius: 2px;
+    justify-content: center;
     margin: 2px 0;
-    justify-content: center
+    padding: 8px 4px
 }
 
 .flexRow_a9fc04 {
@@ -34,14 +34,14 @@
 }
 
 .flexRow_a9fc04,.title_a9fc04 {
-    display: flex;
-    align-items: center
+    align-items: center;
+    display: flex
 }
 
 .title_a9fc04 {
-    padding-top: 12px;
+    padding-bottom: 8px;
     padding-left: 4px;
-    padding-bottom: 8px
+    padding-top: 12px
 }
 
 .appIcon_a9fc04 {
@@ -51,8 +51,8 @@
 }
 
 .appIcon_a9fc04,.icon_a9fc04 {
-    width: var(--custom-icon-size);
-    height: var(--custom-icon-size)
+    height: var(--custom-icon-size);
+    width: var(--custom-icon-size)
 }
 
 .icon_a9fc04 {
@@ -61,8 +61,8 @@
 
 .name_a9fc04 {
     color: var(--header-primary);
-    text-transform: capitalize;
-    font-weight: 600
+    font-weight: 600;
+    text-transform: capitalize
 }
 
 .name_a9fc04.focused_a9fc04 {
@@ -70,9 +70,9 @@
 }
 
 .description_a9fc04 {
-    white-space: nowrap;
+    overflow: hidden;
     text-overflow: ellipsis;
-    overflow: hidden
+    white-space: nowrap
 }
 
 .inline__6c706 {
@@ -104,8 +104,8 @@
 }
 
 .obscureVideoSpacing__6c706 {
-    transition: bottom .1s ease-in-out;
-    bottom: 36px
+    bottom: 36px;
+    transition: bottom .1s ease-in-out
 }
 
 .mosaicItemContent__6c706 {
@@ -113,26 +113,26 @@
 }
 
 .removeMosaicItemButton__6c706 {
-    opacity: 0;
     align-self: flex-start;
-    flex: 0 0 auto;
-    cursor: pointer;
     color: var(--interactive-normal);
+    cursor: pointer;
+    flex: 0 0 auto;
+    opacity: 0;
     padding: 2px
 }
 
 .spoilerRemoveMosaicItemButton__6c706 {
     position: absolute;
-    top: -2px;
-    right: -20px
+    right: -20px;
+    top: -2px
 }
 
 .mosaicItem__6c706 {
+    align-items: start;
     display: flex;
     flex-flow: row nowrap;
-    align-items: start;
-    max-width: 100%;
-    height: 100%
+    height: 100%;
+    max-width: 100%
 }
 
 .mosaicItemNoJustify__6c706 {
@@ -140,14 +140,14 @@
 }
 
 .mosaicItemFullWidth__6c706 {
-    width: 100%;
-    align-items: center
+    align-items: center;
+    width: 100%
 }
 
 .mosaicItemMediaMosaic__6c706 {
-    position: relative;
+    border-radius: 2px;
     max-height: inherit;
-    border-radius: 2px
+    position: relative
 }
 
 .hasFooter__6c706 {
@@ -172,9 +172,9 @@
 }
 
 .nonMediaMosaicItem__6c706 {
-    top: -8px;
+    outline: 1px solid var(--background-secondary);
     right: -8px;
-    outline: 1px solid var(--background-secondary)
+    top: -8px
 }
 
 .removeMosaicItemHoverButton__6c706:hover,.keyboard-mode .removeMosaicItemHoverButton__6c706:focus {
@@ -188,8 +188,8 @@
 }
 
 .downloadHoverButtonIcon__6c706 {
-    width: 20px;
-    height: 20px
+    height: 20px;
+    width: 20px
 }
 
 .enable-forced-colors .removeMosaicItemButton__6c706 {
@@ -208,10 +208,10 @@
 }
 
 .hoverButton__06ab4 {
-    display: flex;
-    padding: 6px;
     color: var(--interactive-normal);
-    cursor: pointer
+    cursor: pointer;
+    display: flex;
+    padding: 6px
 }
 
 .hoverButton__06ab4.selected__06ab4,.hoverButton__06ab4:hover,.keyboard-mode .hoverButton__06ab4:focus {
@@ -225,42 +225,43 @@
 }
 
 .hoverButtonGroup__06ab4 {
+    background-color: var(--background-primary);
+    border-radius: 5px;
     display: flex;
     opacity: 0;
-    z-index: 2;
+    overflow: hidden;
     position: absolute;
-    border-radius: 5px;
-    top: 4px;
     right: 4px;
-    background-color: var(--background-primary);
-    overflow: hidden
+    top: 4px;
+    z-index: 2
 }
 
 .nonMediaMosaicItem__06ab4 {
-    top: -8px;
+    outline: 1px solid var(--background-secondary);
     right: -8px;
-    outline: 1px solid var(--background-secondary)
+    top: -8px
 }
 
 .sizer__06ab4 {
+    height: 0;
+    left: 0;
+    pointer-events: none;
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    pointer-events: none
+    width: 100%
 }
 
 .oneByOneGrid_f4758a {
     display: inline-block;
+    max-height: 350px;
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    max-height: 350px
+    width: fit-content
 }
 
 .oneByOneGridSingle_f4758a {
-    max-width: 100%;
     border-radius: 8px;
+    max-width: 100%;
     overflow: hidden
 }
 
@@ -301,8 +302,8 @@
 .twoByOneGrid_f4758a {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    gap: 4px
+    gap: 4px;
+    height: 100%
 }
 
 .twoByOneGridItem_f4758a {
@@ -335,11 +336,11 @@
 }
 
 .visualMediaItemContainer_f4758a {
-    width: 100%;
+    border-radius: 8px;
     height: 100%;
     max-width: 550px;
-    border-radius: 8px;
-    overflow: hidden
+    overflow: hidden;
+    width: 100%
 }
 
 .visualMediaItemContainer_f4758a.isInAppComponentsV2_f4758a {
@@ -347,15 +348,16 @@
 }
 
 .nonVisualMediaItemContainer_f4758a {
-    max-width: 100%;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
+    max-width: 100%
 }
 
 .nonVisualMediaItem_f4758a {
+    max-width: 100%;
+    width: -webkit-fit-content;
     width: -moz-fit-content;
-    width: fit-content;
-    max-width: 100%
+    width: fit-content
 }
 
 .nonVisualMediaItem_f4758a+.nonVisualMediaItem_f4758a,.nonVisualMediaItemContainer_f4758a {
@@ -363,8 +365,8 @@
 }
 
 .itemContentContainer_f4758a {
-    width: 100%;
-    height: 100%
+    height: 100%;
+    width: 100%
 }
 
 .hasFooter_f4758a {
@@ -373,11 +375,11 @@
 
 .classificationEvidenceCard_f57acb {
     background: var(--channeltextarea-background);
+    border: 1px solid var(--bg-base-tertiary);
     border-radius: var(--radius-sm);
-    padding: 20px var(--spacing-8) 20px var(--spacing-8);
     display: flex;
     flex-direction: row;
-    border: 1px solid var(--bg-base-tertiary)
+    padding: 20px var(--spacing-8) 20px var(--spacing-8)
 }
 
 .classificationEvidenceMessageAttachment_f57acb {
@@ -387,8 +389,8 @@
 .classificationEvidenceContainer_a2ffaf {
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-40);
-    gap: var(--spacing-12)
+    gap: var(--spacing-12);
+    margin-top: var(--spacing-40)
 }
 
 .visual-refresh .classificationEvidenceContainer_a2ffaf {
@@ -410,28 +412,28 @@
 }
 
 .classificationActionsTakenCard_a48d6b {
-    margin-top: 14px;
     border-radius: 4px;
-    padding-top: 8px;
-    padding-bottom: 8px
+    margin-top: 14px;
+    padding-bottom: 8px;
+    padding-top: 8px
 }
 
 .classificationActionsTakenRow_a48d6b {
     color: var(--text-primary);
     display: list-item;
-    margin-top: 10px;
-    margin-left: 4px
+    margin-left: 4px;
+    margin-top: 10px
 }
 
 .classificationActionsTakenRowIcon_a48d6b {
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 50%;
-    width: 24px;
+    display: flex;
     height: 24px;
-    margin-right: 12px
+    justify-content: center;
+    margin-right: 12px;
+    width: 24px
 }
 
 .classificationActionsTakenList_a48d6b {
@@ -459,17 +461,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 22px;
-    margin-bottom: 22px
+    margin-bottom: 22px;
+    margin-top: 22px
 }
 
 .classificationPolicyCard_a48d6b {
-    margin-top: 14px;
+    align-items: center;
     background: var(--bg-base-secondary);
     border-radius: 8px;
-    padding: var(--spacing-12) var(--spacing-16);
     display: flex;
-    align-items: center
+    margin-top: 14px;
+    padding: var(--spacing-12) var(--spacing-16)
 }
 
 .classificationPolicyCard_a48d6b:hover {
@@ -477,13 +479,13 @@
 }
 
 .classificationPolicyCardIcon_a48d6b {
-    display: flex;
-    justify-content: center;
     align-items: center;
     background-color: var(--background-tertiary);
     border-radius: 200px;
-    width: 40px;
-    height: 40px
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 40px
 }
 
 .classificationPolicyDescriptionContainer_a48d6b {
@@ -515,9 +517,9 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
 }
 
 .image__859a7 {
-    width: 141px;
+    filter: var(--shadow-ledge-filter);
     margin: -40px auto 12px;
-    filter: var(--shadow-ledge-filter)
+    width: 141px
 }
 
 .modalRoot__859a7 {
@@ -552,4 +554,4 @@ html:not(.visual-refresh) .classificationContainer_a48d6b {
     margin: 0 var(--spacing-40)
 }
 
-/*# sourceMappingURL=60f4bed351d2dea4.css.map*/
+/*# sourceMappingURL=a121a85a719d00af.css.map*/

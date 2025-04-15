@@ -1,17 +1,17 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  default: () => s
+  default: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(933557),
   o = n(388032),
-  a = n(331884);
+  s = n(331884);
 
-function s(e) {
+function a(e) {
   var t, n, {
-      channel: s,
+      channel: a,
       category: c
     } = e,
     u = function(e, t) {
@@ -29,8 +29,8 @@ function s(e) {
       }
       return i
     }(e, ["channel", "category"]);
-  let d = (0, l.ZP)(s, !0),
-    p = (0, l.ZP)(c);
+  let d = (0, l.ZP)(a, !0),
+    h = (0, l.ZP)(c);
   return (0, r.jsx)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -56,11 +56,11 @@ function s(e) {
   }, u), n = n = {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      className: a.message,
+      className: s.message,
       selectable: !1,
       children: o.NW.format(o.t["iKW+jY"], {
         channelName: d,
-        categoryName: p
+        categoryName: h
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

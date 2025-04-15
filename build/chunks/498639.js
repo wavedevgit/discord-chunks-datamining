@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => Z
 }), n(388685);
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(678558),
   f = n(730647),
   b = n(584825),
-  N = n(305342),
-  x = n(333867),
-  _ = n(963249),
+  _ = n(305342),
+  N = n(333867),
+  x = n(963249),
   E = n(87484),
   j = n(197115),
-  O = n(911367),
-  C = n(43747),
+  C = n(911367),
+  O = n(43747),
   S = n(970815),
   v = n(430824),
   T = n(78839),
@@ -69,7 +69,7 @@ function D(e) {
   } = e, n = (0, b.GG)(null == t ? void 0 : t.id)[0];
   return null != t && null != n ? (0, r.jsx)("div", {
     className: A.formItem,
-    children: n.subscription_listings_ids.map(e => (0, r.jsx)(N.Z, {
+    children: n.subscription_listings_ids.map(e => (0, r.jsx)(_.Z, {
       guildId: t.id,
       groupListingId: e,
       listingId: e
@@ -77,9 +77,9 @@ function D(e) {
   }) : null
 }
 let Z = function() {
-  let [e, t] = i.useState(y.Si.TIER_2), [n, b] = i.useState(null), [N] = (0, a.Wu)([v.Z], () => [v.Z.getGuilds()]), [Z] = (0, a.Wu)([T.ZP], () => [T.ZP.getPremiumSubscription()]);
-  (0, O.t)();
-  let w = Object.values(N).map(e => ({
+  let [e, t] = i.useState(y.Si.TIER_2), [n, b] = i.useState(null), [_] = (0, a.Wu)([v.Z], () => [v.Z.getGuilds()]), [Z] = (0, a.Wu)([T.ZP], () => [T.ZP.getPremiumSubscription()]);
+  (0, C.t)();
+  let w = Object.values(_).map(e => ({
       value: e,
       label: e.name
     })),
@@ -98,14 +98,14 @@ let Z = function() {
     [K, q] = i.useState(I.lds),
     {
       balance: X,
-      isFetching: J,
-      error: Q
-    } = (0, C.A)(),
+      isFetching: Q,
+      error: J
+    } = (0, O.A)(),
     {
       isSubmitting: $,
       responseMessage: ee,
       redeemVirtualCurrency: et
-    } = (0, C.f)(),
+    } = (0, O.f)(),
     [en, er] = i.useState(I.lds),
     [ei, es] = i.useState(""),
     [ea, el] = i.useState(I.lds),
@@ -164,7 +164,7 @@ let Z = function() {
           }],
           onChange: e => b(e)
         }), (0, r.jsx)(l.zxk, {
-          onClick: () => (0, _.Z)({
+          onClick: () => (0, x.Z)({
             subscriptionTier: n,
             analyticsLocations: H
           }),
@@ -283,16 +283,16 @@ let Z = function() {
           children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             children: "Virtual Currency Balance:"
-          }), J ? (0, r.jsx)("div", {
+          }), Q ? (0, r.jsx)("div", {
             className: A.loader,
             children: (0, r.jsx)(l.$jN, {
               type: l.RAz.SPINNING_CIRCLE
             })
           }) : (0, r.jsxs)("div", {
             className: A.balanceWidgetPillContainer,
-            children: [null !== Q && (0, r.jsxs)(l.Text, {
+            children: [null !== J && (0, r.jsxs)(l.Text, {
               variant: "text-sm/normal",
-              children: ["Error fetching Virtual Currency Balance: ", Q.message]
+              children: ["Error fetching Virtual Currency Balance: ", J.message]
             }), (0, r.jsx)(S.A4, {
               balance: null != X ? X : 0,
               balanceWidgetMode: S.b6.SELECTED
@@ -399,7 +399,7 @@ let Z = function() {
           value: eo,
           onChange: e => ec(e)
         }), (0, r.jsx)(l.zxk, {
-          onClick: () => (0, x.Z)({
+          onClick: () => (0, N.Z)({
             skuId: eo,
             analyticsLocations: H,
             variantsReturnStyle: ed

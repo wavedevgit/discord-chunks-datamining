@@ -1,13 +1,13 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Dp: () => g,
   Gw: () => h,
-  Op: () => _,
+  Op: () => x,
   gx: () => b,
   iG: () => f,
   mN: () => E,
   oo: () => p,
-  sP: () => x
+  sP: () => N
 }), n(539854), n(314940);
 var r = n(278074),
   i = n(442837),
@@ -68,7 +68,7 @@ function f(e, t) {
   }
 }
 let b = (e, t, n) => (0, s.wj)(e) ? t : n,
-  N = e => {
+  _ = e => {
     let {
       cards: t,
       perksCards: n,
@@ -108,7 +108,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
       card: n.unlimitedSuperReactions
     }), t
   },
-  x = e => {
+  N = e => {
     let {
       perksCards: t,
       variant: n,
@@ -130,7 +130,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
         }, () => [t.profiles, t.clientThemes, t.hdVideo]).otherwise(() => [t.profiles, t.clientThemes, t.serverBoosts]);
         break;
       case c.R0.WHATS_NEW:
-        u = N({
+        u = _({
           cards: u,
           perksCards: t,
           isFullScreen: i,
@@ -163,7 +163,7 @@ let b = (e, t, n) => (0, s.wj)(e) ? t : n,
     }
     return i || (u = u.filter(e => !e.hideOnNarrowScreen)), u
   },
-  _ = e => {
+  x = e => {
     let t = (0, i.e7)([l.ZP], () => l.ZP.getPremiumTypeSubscription()),
       n = null != t ? o.ZP.getPremiumPlanItem(t) : null,
       r = (null != n ? o.ZP.getSkuIdForPlan(n.planId) : null) === d.Si.TIER_2;

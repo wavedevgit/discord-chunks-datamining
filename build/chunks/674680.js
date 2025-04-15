@@ -1,6 +1,6 @@
-/** Chunk was on 69313 **/
+/** Chunk was on 12862 **/
 n.d(t, {
-  Z: () => p
+  Z: () => g
 });
 var i = n(200651);
 n(192379);
@@ -31,43 +31,43 @@ function h(e) {
   }
   return e
 }
-let E = {
+let f = {
     trophy: u.Il.PRIMARY_400,
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
   },
-  g = {
+  p = {
     trophy: u.Il.PRIMARY_400,
     locked: u.Il.PRIMARY_400,
     unlocked: u.Il.GREEN_330
   };
 
-function p(e) {
+function g(e) {
   var t;
   let {
     achievementId: n,
     unlocked: u,
-    size: p = l.EFr.SIZE_40
-  } = e, f = (0, o.ZP)(), _ = (0, c.oX)(n);
-  if (null == _) return null;
-  let O = (0, l.UCu)(p),
+    size: g = l.EFr.SIZE_40
+  } = e, E = (0, o.ZP)(), b = (0, c.oX)(n);
+  if (null == b) return null;
+  let O = (0, l.UCu)(g),
     {
       name: m,
-      rarity: C
-    } = _,
+      rarity: _
+    } = b,
     {
-      color: b
-    } = (0, c.F7)(C),
-    L = (0, r.wj)(f) ? E : g,
-    v = (O.size - O.offset - 2 * O.stroke) * .8,
-    y = O.size - O.stroke,
-    T = {
-      width: .4 * v,
-      height: .4 * v
-    },
+      color: C
+    } = (0, c.F7)(_),
+    v = (0, r.wj)(E) ? f : p,
+    y = (O.size - O.offset - 2 * O.stroke) * .8,
+    L = O.size - O.stroke,
     N = {
-      width: T.width + 1,
-      height: T.height + 1,
+      width: .4 * y,
+      height: .4 * y
+    },
+    T = {
+      width: N.width + 1,
+      height: N.height + 1,
       right: O.stroke + 1,
       bottom: O.stroke + 1,
       padding: 0
@@ -75,8 +75,8 @@ function p(e) {
   return (0, i.jsxs)("div", {
     className: d.container,
     style: {
-      width: y,
-      height: y,
+      width: L,
+      height: L,
       padding: O.stroke
     },
     "aria-label": "".concat(null != (t = m()) ? t : ""),
@@ -84,24 +84,24 @@ function p(e) {
       className: d.trophyIconContainer,
       children: (0, i.jsx)(l.rm8, {
         size: "custom",
-        color: u ? b : (0, s.Lq)(L.trophy),
-        width: v,
-        height: v
+        color: u ? C : (0, s.Lq)(v.trophy),
+        width: y,
+        height: y
       })
     }), !u && (0, i.jsx)("div", {
       className: d.lockContainer,
-      style: N,
+      style: T,
       children: (0, i.jsx)(l.mBM, h({
         size: "custom",
-        color: (0, s.Lq)(L.locked)
-      }, T))
-    }), u && C === c.EP.LEGENDARY && (0, i.jsx)("div", {
+        color: (0, s.Lq)(v.locked)
+      }, N))
+    }), u && _ === c.EP.LEGENDARY && (0, i.jsx)("div", {
       className: d.lockContainer,
-      style: N,
+      style: T,
       children: (0, i.jsx)(a.Z, h({
         className: d.confettiIcon
-      }, T))
+      }, N))
     })]
   })
 }
-p.Sizes = l.EFr
+g.Sizes = l.EFr

@@ -1,15 +1,15 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  C: () => o
+  C: () => s
 });
-var r = n(200651);
+var a = n(200651);
 n(192379);
-var a = n(646466),
+var r = n(646466),
   l = n(812381),
   i = n(590824);
-let o = () => (0, r.jsxs)(r.Fragment, {
-  children: [(0, r.jsx)(l.a, {}), (0, r.jsx)("div", {
+let s = () => (0, a.jsxs)(a.Fragment, {
+  children: [(0, a.jsx)(l.a, {}), (0, a.jsx)("div", {
     className: i.previewPanel,
-    children: (0, r.jsx)(a.O, {})
+    children: (0, a.jsx)(r.O, {})
   })]
 })

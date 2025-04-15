@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-e.exports = {
+/** Chunk was on 72425 **/
+t.exports = {
   container: "container__6e9b4",
   title: "title__6e9b4",
   description: "description__6e9b4",

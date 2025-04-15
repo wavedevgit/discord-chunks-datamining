@@ -1,42 +1,42 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
 var r = n(200651);
 n(192379);
 var i = n(120356),
   l = n.n(i),
   o = n(200100),
-  a = n(692547),
-  s = n(481060),
+  s = n(692547),
+  a = n(481060),
   c = n(565138),
   u = n(252686),
   d = n(728492);
 
-function p(e) {
+function h(e) {
   let {
     guild: t,
     show: n,
     active: i,
-    onAnimationStart: p,
-    onAnimationRest: h
+    onAnimationStart: h,
+    onAnimationRest: p
   } = e, f = {}, g = {};
   f.transform = "translate3d(10px, 10px, 0) scale3d(3, 3, 1)", g.transform = "translate3d(0, 0, 0) scale3d(1, 1, 1)";
-  let m = (0, s.dQu)(a.Z.unsafe_rawColors.BRAND_500).hex(),
-    b = (0, s.dQu)(a.Z.unsafe_rawColors.PRIMARY_630).hex();
+  let m = (0, a.dQu)(s.Z.unsafe_rawColors.BRAND_500).hex(),
+    b = (0, a.dQu)(s.Z.unsafe_rawColors.PRIMARY_630).hex();
   i && null == t.icon && (f.backgroundColor = m, g.backgroundColor = b);
-  let _ = (0, s.Yzy)(n, {
+  let y = (0, a.Yzy)(n, {
     from: f,
     enter: g,
     leave: f,
     config: {
       duration: 100
     },
-    onStart: p,
-    onRest: h
+    onStart: h,
+    onRest: p
   });
   return (0, r.jsx)(r.Fragment, {
-    children: _((e, n, i) => n && (0, r.jsx)("div", {
+    children: y((e, n, i) => n && (0, r.jsx)("div", {
       className: l()(d.folder, d.hover),
       children: (0, r.jsx)("div", {
         className: d.folderIconWrapper,

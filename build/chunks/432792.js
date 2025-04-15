@@ -1,33 +1,33 @@
 /** Chunk was on 82081 **/
 n.d(t, {
-  M: () => y,
+  M: () => R,
   VK: () => k,
-  WS: () => A,
-  t4: () => v,
-  tE: () => I
+  WS: () => T,
+  t4: () => j,
+  tE: () => w
 }), n(388685), n(953529);
 var r = n(200651),
-  o = n(192379),
-  a = n(120356),
-  i = n.n(a),
-  s = n(442837),
-  c = n(704215),
-  l = n(481060),
+  a = n(192379),
+  s = n(120356),
+  l = n.n(s),
+  o = n(442837),
+  i = n(704215),
+  c = n(481060),
   u = n(350810),
   d = n(607070),
-  b = n(70097),
-  m = n(605236),
-  f = n(930153),
-  p = n(822857),
-  h = n(622562),
-  _ = n(937860),
-  O = n(921944),
-  g = n(973792),
-  j = n(447489),
-  C = n(484885);
+  m = n(70097),
+  f = n(605236),
+  h = n(930153),
+  b = n(822857),
+  p = n(622562),
+  g = n(937860),
+  N = n(921944),
+  C = n(973792),
+  O = n(447489),
+  v = n(484885);
 
-function N() {
-  return (N = Object.assign || function(e) {
+function x() {
+  return (x = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
       for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -35,34 +35,34 @@ function N() {
     return e
   }).apply(this, arguments)
 }
-let v = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
-  x = {
-    discover: c.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
-    shop: c.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
+let j = () => (0, h.Lk)(document.body.style.getPropertyValue("--custom-app-panels-height"), 56) + 8,
+  y = {
+    discover: i.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK,
+    shop: i.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK
   },
-  y = e => {
+  R = e => {
     let {
       onboardingCoachmarkType: t,
       prevCoachmarksDismissed: n = !0,
       onShowCoachmarkHandler: r
-    } = e, a = (0, m.wE)(c.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
-      enabled: i
-    } = (0, p.W)({
+    } = e, s = (0, f.wE)(i.z.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL), {
+      enabled: l
+    } = (0, b.W)({
       location: "virtual_currency_onboarding_coachmark"
-    }), s = x[t], l = (0, m.wE)(s), u = i && a && n && !l, d = o.useCallback(function() {
+    }), o = y[t], c = (0, f.wE)(o), u = l && s && n && !c, d = a.useCallback(function() {
       let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
-      l || (0, m.EW)(x[t], {
+      c || (0, f.EW)(y[t], {
         forceTrack: !0,
-        dismissAction: "CTA_CLICK" === e ? O.L.TAKE_ACTION : O.L.USER_DISMISS,
-        groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
+        dismissAction: "CTA_CLICK" === e ? N.L.TAKE_ACTION : N.L.USER_DISMISS,
+        groupName: N.R.VIRTUAL_CURRENCY_ONBOARDING
       })
-    }, [l, t]), [b, f] = o.useState(!1);
-    return o.useEffect(() => {
-      u ? b || ((0, m.kk)(s, {
-        groupName: O.R.VIRTUAL_CURRENCY_ONBOARDING
-      }), void 0 !== r && r(), f(!0)) : b && f(!1)
-    }, [u, r, b, s]), {
-      shouldShow: b,
+    }, [c, t]), [m, h] = a.useState(!1);
+    return a.useEffect(() => {
+      u ? m || ((0, f.kk)(o, {
+        groupName: N.R.VIRTUAL_CURRENCY_ONBOARDING
+      }), void 0 !== r && r(), h(!0)) : m && h(!1)
+    }, [u, r, m, o]), {
+      shouldShow: m,
       closeCoachmarkIfOpen: d
     }
   },
@@ -70,20 +70,20 @@ let v = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
     let {
       invertTail: t,
       leftOffset: n,
-      rightOffset: o,
-      tailSpineClassName: a,
-      tailTargetInnerClassName: s
+      rightOffset: a,
+      tailSpineClassName: s,
+      tailTargetInnerClassName: o
     } = e;
     return (0, r.jsxs)("div", {
-      className: i()(g.tail, t ? g.tailPositionInverted : g.tailPositionNormal),
+      className: l()(C.tail, t ? C.tailPositionInverted : C.tailPositionNormal),
       style: {
         left: n,
-        right: o
+        right: a
       },
       children: [(0, r.jsx)("div", {
-        className: i()(g.tailSpine, a)
+        className: l()(C.tailSpine, s)
       }), (0, r.jsx)("div", {
-        className: i()(g.tailTargetOuter, t ? g.tailTargetPositionInverted : g.tailTargetPositionNormal),
+        className: l()(C.tailTargetOuter, t ? C.tailTargetPositionInverted : C.tailTargetPositionNormal),
         children: (0, r.jsx)("svg", {
           xmlns: "http://www.w3.org/2000/svg",
           width: "8",
@@ -94,82 +94,82 @@ let v = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
             cx: "50%",
             cy: "50%",
             r: "3",
-            className: i()(g.tailTargetInner, s)
+            className: l()(C.tailTargetInner, o)
           })
         })
       })]
     })
   },
-  T = e => {
+  A = e => {
     let {
       customIconSrcs: t
-    } = e, n = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), o = void 0 !== t ? t.animated : C.Z, a = void 0 !== t ? t.static : j.Z;
-    return n || null == o ? (0, r.jsx)("img", {
-      src: a,
-      className: g.orbAsset,
+    } = e, n = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), a = void 0 !== t ? t.animated : v.Z, s = void 0 !== t ? t.static : O.Z;
+    return n || null == a ? (0, r.jsx)("img", {
+      src: s,
+      className: C.orbAsset,
       alt: "Orb"
-    }) : (0, r.jsxs)(b.Z, {
+    }) : (0, r.jsxs)(m.Z, {
       autoPlay: !0,
       loop: !0,
-      className: g.orbAsset,
+      className: C.orbAsset,
       children: [(0, r.jsx)("source", {
-        src: C.Z,
+        src: v.Z,
         type: "video/webm"
       }), (0, r.jsx)("img", {
-        src: j.Z,
-        className: g.orbAsset,
+        src: O.Z,
+        className: C.orbAsset,
         alt: "Orb"
       })]
     })
   },
-  w = e => {
+  E = e => {
     let {
       titleText: t,
       descriptionText: n,
-      onClose: o,
-      onCtaClick: a,
-      ctaText: i,
-      iconComponent: s,
-      tailLeftOffset: c = 22,
+      onClose: a,
+      onCtaClick: s,
+      ctaText: l,
+      iconComponent: o,
+      tailLeftOffset: i = 22,
       renderTail: u,
       invertCoachmark: d = !1,
-      coachmarkRef: b
+      coachmarkRef: m
     } = e;
     return (0, r.jsxs)("div", {
-      className: g.container,
-      ref: b,
-      children: [(0, r.jsx)(_.s, {
-        onClick: o
-      }), s, (0, r.jsxs)("div", {
-        className: g.content,
-        children: [(0, r.jsx)(l.X6q, {
-          className: g.title,
+      className: C.container,
+      ref: m,
+      children: [(0, r.jsx)(g.s, {
+        onClick: a
+      }), o, (0, r.jsxs)("div", {
+        className: C.content,
+        children: [(0, r.jsx)(c.X6q, {
+          className: C.title,
           variant: "heading-md/bold",
           children: t
-        }), (0, r.jsx)(l.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
-          className: g.description,
+          className: C.description,
           children: n
         })]
-      }), void 0 !== i && (0, r.jsx)(l.zxk, {
-        className: g.ctaButton,
-        color: l.zxk.Colors.BRAND,
-        look: l.zxk.Looks.FILLED,
-        onClick: a,
+      }), void 0 !== l && (0, r.jsx)(c.zxk, {
+        className: C.ctaButton,
+        color: c.zxk.Colors.BRAND,
+        look: c.zxk.Looks.FILLED,
+        onClick: s,
         fullWidth: !0,
-        children: i
+        children: l
       }), u && (0, r.jsx)(k, {
-        leftOffset: c,
+        leftOffset: i,
         invertTail: d
       })]
     })
   },
-  I = e => {
-    var t = N({}, function(e) {
+  w = e => {
+    var t = x({}, function(e) {
       if (null == e) throw TypeError("Cannot destructure " + e);
       return e
     }(e));
-    return (0, r.jsx)(w, function(e) {
+    return (0, r.jsx)(E, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -187,70 +187,70 @@ let v = () => (0, f.Lk)(document.body.style.getPropertyValue("--custom-app-panel
       }
       return e
     }({
-      iconComponent: (0, r.jsx)(T, {
+      iconComponent: (0, r.jsx)(A, {
         customIconSrcs: t.customIconSrcs
       })
     }, t))
   };
 
-function A(e) {
+function T(e) {
   let {
     calculateVisibility: t,
     children: n,
-    popoutElement: a,
-    positionControlRef: i,
-    targetElementRef: s,
-    defaultCoachmarkPosition: c,
+    popoutElement: s,
+    positionControlRef: l,
+    targetElementRef: o,
+    defaultCoachmarkPosition: i,
     disableAutoInvert: d,
-    onGetTargetElementDimensions: b,
-    spacing: m
-  } = e, [f, p] = o.useState("bottom" === c), [_, O] = o.useState(!0), [g, j] = o.useState(String(Date.now())), C = (0, u.Z)(), N = o.useCallback(e => {
+    onGetTargetElementDimensions: m,
+    spacing: f
+  } = e, [h, b] = a.useState("bottom" === i), [g, N] = a.useState(!0), [C, O] = a.useState(String(Date.now())), v = (0, u.Z)(), x = a.useCallback(e => {
     let n = t(e);
-    n !== _ && O(n)
-  }, [_, t]), v = s.current, x = o.useCallback(() => {
-    null != i && null != i.current && i.current.updateElementPosition()
-  }, [i]);
-  o.useEffect(() => (null != v && v.ownerDocument.addEventListener("scroll", x, !0), () => {
-    null != v && v.ownerDocument.removeEventListener("scroll", x, !0)
-  }), [v, x]);
-  let y = o.useCallback(e => {
+    n !== g && N(n)
+  }, [g, t]), j = o.current, y = a.useCallback(() => {
+    null != l && null != l.current && l.current.updateElementPosition()
+  }, [l]);
+  a.useEffect(() => (null != j && j.ownerDocument.addEventListener("scroll", y, !0), () => {
+    null != j && j.ownerDocument.removeEventListener("scroll", y, !0)
+  }), [j, y]);
+  let R = a.useCallback(e => {
     let {
       height: t,
       width: n,
       elementBoundingRect: r,
-      hasElementPositionChanged: o
+      hasElementPositionChanged: a
     } = e;
-    if (null != b && b({
+    if (null != m && m({
         height: t,
         width: n
       }), null != r) {
-      if (N(r), o && j(String(Date.now())), d) return;
+      if (x(r), a && O(String(Date.now())), d) return;
       let e = r.top < window.innerHeight / 2;
-      if (e === f) return;
-      p(e), j(String(Date.now()))
+      if (e === h) return;
+      b(e), O(String(Date.now()))
     }
-  }, [f, N, b, d]);
-  (0, h.fu)({
-    onGetElementDimensionsAndBoundingRect: y,
-    positionControlRef: i,
+  }, [h, x, m, d]);
+  (0, p.fu)({
+    onGetElementDimensionsAndBoundingRect: R,
+    positionControlRef: l,
     shouldPollPositionOnMount: !0,
-    targetElementRef: s
+    targetElementRef: o
   });
-  let k = o.Children.map(a, e => o.cloneElement(e, {
-      invertCoachmark: f
+  let k = a.Children.map(s, e => a.cloneElement(e, {
+      invertCoachmark: h
     })),
-    T = o.useMemo(() => d ? null != c ? c : "bottom" : f ? "bottom" : "top", [d, c, f]),
-    w = _ && !C;
-  return (0, r.jsx)(l.yRy, {
+    A = a.useMemo(() => d ? null != i ? i : "bottom" : h ? "bottom" : "top", [d, i, h]),
+    E = g && !v;
+  return (0, r.jsx)(c.yRy, {
     autoInvert: !1,
     renderPopout: () => k,
-    position: T,
+    position: A,
     align: "left",
-    shouldShow: w,
-    spacing: m,
-    positionKey: g,
-    animation: l.yRy.Animation.TRANSLATE,
-    targetElementRef: s,
+    shouldShow: E,
+    spacing: f,
+    positionKey: C,
+    animation: c.yRy.Animation.TRANSLATE,
+    targetElementRef: o,
     children: () => n
   })
 }

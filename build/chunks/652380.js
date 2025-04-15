@@ -1,4 +1,4 @@
-/** Chunk was on 41851 **/
+/** Chunk was on 78900 **/
 n.d(t, {
   Z: () => F,
   b: () => L
@@ -69,9 +69,9 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let I = ["png", "gif", "webp"],
-  W = [...I, "jpg", "jpeg"],
-  M = Array.from(new Set([...W, "gif", "mp4", "webm"]));
+let W = ["png", "gif", "webp"],
+  I = [...W, "jpg", "jpeg"],
+  M = Array.from(new Set([...I, "gif", "mp4", "webm"]));
 
 function L(e) {
   var t, n;
@@ -398,13 +398,13 @@ function U() {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: el,
-        filters: [...W, "svg"],
+        filters: [...I, "svg"],
         initialValue: Y.config.assets.gameTile
       }), (0, r.jsx)(P.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: el,
-        filters: [...I, "svg"],
+        filters: [...W, "svg"],
         initialValue: Y.config.assets.logotype
       }), ex && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(P.Z, {
@@ -423,7 +423,7 @@ function U() {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: ec,
-          filters: W,
+          filters: I,
           initialValue: null == (L = Y.config.videoMetadata) || null == (k = L.assets) ? void 0 : k.videoPlayerThumbnail
         }), (0, r.jsx)(P.Z, {
           title: "Quest Bar Preview Video (optional)",

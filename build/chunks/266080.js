@@ -1,4 +1,4 @@
-/** Chunk was on 21411 **/
+/** Chunk was on 21924 **/
 n.d(t, {
   Z: () => m
 }), n(388685);
@@ -19,7 +19,7 @@ let m = e => {
   l.useEffect(() => {
     x(!b)
   }, [b]);
-  let f = l.useCallback(() => {
+  let h = l.useCallback(() => {
     x(!0), a.ZP.trackWithMetadata(d.rMx.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
       guild_id: t,
       report_id: n
@@ -59,7 +59,7 @@ let m = e => {
           }),
           confirmText: u.NW.string(u.t.J2TBi4),
           cancelText: u.NW.string(u.t["ETE/oK"]),
-          onConfirm: f
+          onConfirm: h
         }, e), n = n = {
           children: (0, r.jsx)(i.Text, {
             variant: "text-md/normal",

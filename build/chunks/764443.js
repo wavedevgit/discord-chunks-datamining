@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   F: () => E,
   I: () => j
@@ -36,7 +36,7 @@ let b = [{
     duration: void 0,
     label: () => h.NW.string(h.t["46dqJS"])
   }],
-  N = [{
+  _ = [{
     duration: u.Z.Millis.HOUR,
     label: () => h.NW.formatToPlainString(h.t.rhY1Rk, {
       hours: 1
@@ -56,11 +56,11 @@ let b = [{
     label: () => h.NW.string(h.t["46dqJS"])
   }];
 
-function x(e, t) {
+function N(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
-function _(e) {
+function x(e) {
   let {
     status: t,
     currentStatus: n,
@@ -71,7 +71,7 @@ function _(e) {
     hasButtonStyling: d
   } = l.Y.useExperiment({
     location: "AccountProfilePopout"
-  }), h = o && t !== p.Skl.ONLINE, [x, _] = i.useState(void 0), E = void 0 !== x && t === n, j = (0, r.jsx)(r.Fragment, {
+  }), h = o && t !== p.Skl.ONLINE, [N, x] = i.useState(void 0), E = void 0 !== N && t === n, j = (0, r.jsx)(r.Fragment, {
     children: b.map(e => {
       let {
         duration: i,
@@ -88,9 +88,9 @@ function _(e) {
         dontCloseOnAction: !0
       }, i)
     })
-  }), O = (0, r.jsx)("div", {
+  }), C = (0, r.jsx)("div", {
     className: f.durationButtons,
-    children: N.map(e => {
+    children: _.map(e => {
       let {
         duration: i,
         label: s
@@ -98,14 +98,14 @@ function _(e) {
       return (0, r.jsx)(a.zxk, {
         id: "".concat(t, "-").concat(i),
         onClick: e => {
-          e.stopPropagation(), _(i), (0, g.Z)({
+          e.stopPropagation(), x(i), (0, g.Z)({
             nextStatus: t,
             prevStatus: n,
             durationMillis: null != i ? i : void 0
           })
         },
         className: f.durationButton,
-        color: x === i ? a.Ttl.BRAND : a.Ttl.PRIMARY,
+        color: N === i ? a.Ttl.BRAND : a.Ttl.PRIMARY,
         size: a.PhG.NONE,
         grow: !1,
         children: s()
@@ -134,11 +134,11 @@ function _(e) {
         }), null != s && (0, r.jsx)("div", {
           className: f.description,
           children: s
-        }), h && d && E ? O : void 0]
+        }), h && d && E ? C : void 0]
       })
     },
     action: () => {
-      _(h ? u.Z.Millis.DAY : null), (0, g.Z)({
+      x(h ? u.Z.Millis.DAY : null), (0, g.Z)({
         nextStatus: t,
         prevStatus: n,
         durationMillis: c && h ? u.Z.Millis.DAY : void 0
@@ -152,10 +152,10 @@ function _(e) {
 function E(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = x(t, new Date),
+    n = N(t, new Date),
     r = new Date;
   r.setDate(r.getDate() + 1);
-  let i = x(t, r);
+  let i = N(t, r);
   return n ? h.NW.formatToPlainString(h.t.ZxxHIC, {
     timeString: h.NW.data.formatTime(t, {
       format: "short"
@@ -179,7 +179,7 @@ function j(e) {
     location: "AccountProfilePopout"
   }), n = d.Cr.useSetting(), i = (0, o.p)(), u = c.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || i, m = d.fv.useSetting(), g = e === p.Skl.DND, N = r => {
+  }).allowQuietMode || i, m = d.fv.useSetting(), g = e === p.Skl.DND, _ = r => {
     let i = E(n);
     if (e === r && null != i) return i;
     switch (r) {
@@ -190,7 +190,7 @@ function j(e) {
       default:
         return
     }
-  }, x = (0, r.jsx)(r.Fragment, {
+  }, N = (0, r.jsx)(r.Fragment, {
     children: b.map(t => {
       let {
         duration: n,
@@ -205,24 +205,24 @@ function j(e) {
         dontCloseOnAction: !0
       }, n)
     })
-  }), j = _({
+  }), j = x({
     status: p.Skl.ONLINE,
     currentStatus: e
-  }), O = _({
+  }), C = x({
     status: p.Skl.IDLE,
     currentStatus: e,
-    description: N(p.Skl.IDLE)
-  }), C = _({
+    description: _(p.Skl.IDLE)
+  }), O = x({
     status: p.Skl.DND,
     currentStatus: e,
-    description: N(p.Skl.DND)
-  }), S = _({
+    description: _(p.Skl.DND)
+  }), S = x({
     status: p.Skl.INVISIBLE,
     currentStatus: e,
-    description: N(p.Skl.INVISIBLE)
+    description: _(p.Skl.INVISIBLE)
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), O, C, S, u || i ? (0, r.jsxs)(r.Fragment, {
+    children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), C, O, S, u || i ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), (0, r.jsx)(a.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
@@ -256,7 +256,7 @@ function j(e) {
           (0, o.oW)(!i)
         },
         dontCloseOnAction: !0,
-        children: x
+        children: N
       }, "quiet-mode")]
     }) : null]
   })

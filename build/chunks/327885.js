@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => u
 });
@@ -33,6 +33,6 @@ function d(e) {
 function u(e) {
   let t = (0, a.XE)("user_settings"),
     n = (0, i.e7)([l.default], () => l.default.getForcedRenderMode()),
-    u = n === s.R5.OUT_OF_PROCESS_V2 || n === s.R5.OUT_OF_PROCESS_V3;
+    u = n === s.R5.OUT_OF_PROCESS_V3 || n === s.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION;
   return t || u ? (0, r.jsx)(c.Z, d({}, e)) : (0, r.jsx)(o.Z, d({}, e))
 }

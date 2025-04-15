@@ -3,8 +3,8 @@
 r.d(t, {
   S: () => c
 });
-var n = r(573654),
-  o = r(670543);
+var n = r(573654);
+if (12633 == r.j) var o = r(670543);
 
 function i(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,8 +14,8 @@ function i(e, t, r) {
     writable: !0
   }) : e[t] = r, e
 }
-var a = ["canDrop", "hover", "drop"],
-  s = function() {
+var a = 12633 == r.j ? ["canDrop", "hover", "drop"] : null,
+  s = 12633 == r.j ? function() {
     var e;
 
     function t(e, r, n) {
@@ -54,7 +54,7 @@ var a = ["canDrop", "hover", "drop"],
           n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
         }
       }(t.prototype, e), t
-  }();
+  }() : null;
 
 function c(e) {
   return Object.keys(e).forEach(function(t) {

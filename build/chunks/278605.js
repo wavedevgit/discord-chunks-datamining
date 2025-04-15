@@ -1,19 +1,19 @@
-/** Chunk was on 9710 **/
+/** Chunk was on 64865 **/
 "use strict";
-s.d(t, {
-  ah: () => i,
+r.d(t, {
+  ah: () => s,
   xP: () => o
 });
-var r = s(818083),
-  n = s(987338);
-let i = (0, r.B)({
+var n = r(818083),
+  i = r(987338);
+let s = (0, n.B)({
   kind: "user",
   id: "2024-11_marketing_page_v2_experiment",
   label: "Marketing Page V2 Experiment",
   defaultConfig: {
     enabled: !1
   },
-  commonTriggerPoint: n.$P.CONNECTION_OPEN,
+  commonTriggerPoint: i.$P.CONNECTION_OPEN,
   treatments: [{
     id: 0,
     label: "User see current marketing page",
@@ -32,7 +32,7 @@ let i = (0, r.B)({
 function o(e) {
   let {
     enabled: t
-  } = i.useExperiment({
+  } = s.useExperiment({
     location: e
   }, {
     autoTrackExposure: !1

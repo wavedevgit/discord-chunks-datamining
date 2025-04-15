@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => u
 }), n(388685);
@@ -27,13 +27,13 @@ let u = e => {
     g(e => f > p && e > f - p ? f - p : f <= p ? 0 : e)
   }, [f, p]);
   let b = m > 0,
-    N = i.useCallback(e => ({
+    _ = i.useCallback(e => ({
       x: (e - m) * 100
     }), [m]),
-    [x, _] = (0, o.bYB)(t.length, N);
+    [N, x] = (0, o.bYB)(t.length, _);
   return i.useEffect(() => {
-    _(N)
-  }, [_, N]), (0, r.jsx)("div", {
+    x(_)
+  }, [x, _]), (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsxs)("div", {
       className: d.cardContainer,
@@ -51,7 +51,7 @@ let u = e => {
         })
       }), (0, r.jsx)("div", {
         className: d.cardInnerContainer,
-        children: x.map((e, n) => {
+        children: N.map((e, n) => {
           var i, a;
           let {
             x: o

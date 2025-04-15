@@ -26,12 +26,12 @@ function u(e) {
       t = o.Z.isIgnored(u.getRecipientId()),
       n = o.Z.isBlocked(u.getRecipientId());
     return e || t || n
-  }), O = p && null != m && (f || g && !b) && !d ? m : void 0, [y, h] = (0, r.useState)(O);
+  }), O = p && null != m && (f || g && !b) && !d ? m : void 0, [h, y] = (0, r.useState)(O);
   return (0, r.useEffect)(() => {
     if (f) return;
     let e = setTimeout(() => {
-      h(O)
+      y(O)
     }, g ? 100 : 1e3);
     return () => clearTimeout(e)
-  }, [O, g, f]), f ? O : y
+  }, [O, g, f]), f ? O : h
 }

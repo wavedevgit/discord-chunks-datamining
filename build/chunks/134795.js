@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => m
 });
@@ -24,8 +24,8 @@ function m(e) {
     showPremiumIcon: h = !0,
     isTryItOutFlow: f = !1,
     forcedDivider: b,
-    withHighlight: N = !1
-  } = e, x = N ? a.gtL : a.zxk;
+    withHighlight: _ = !1
+  } = e, N = _ ? a.gtL : a.zxk;
   return (0, r.jsx)(o.Z, {
     className: g,
     title: d.NW.string(d.t.Vgdusr),
@@ -35,9 +35,9 @@ function m(e) {
     forcedDivider: b,
     children: (0, r.jsxs)("div", {
       className: u.buttonsContainer,
-      children: [(0, r.jsx)(x, {
+      children: [(0, r.jsx)(N, {
         className: s()({
-          [u.buttonHighlighted]: N
+          [u.buttonHighlighted]: _
         }),
         size: a.zxk.Sizes.SMALL,
         onClick: () => (0, l.$r)(c.pC.BANNER, m, f, void 0),

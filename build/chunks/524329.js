@@ -1,9 +1,9 @@
-/** Chunk was on 86974 **/
+/** Chunk was on 44606 **/
 n.d(t, {
-  Es: () => u,
-  RM: () => o,
-  VP: () => c,
-  Xb: () => i,
+  Es: () => c,
+  RM: () => i,
+  VP: () => u,
+  Xb: () => o,
   sm: () => E,
   y0: () => a
 }), n(953529);
@@ -18,7 +18,7 @@ let a = function(e) {
       isLurking: t
     })
   },
-  o = async e => {
+  i = async e => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_FETCH_START"
     });
@@ -38,7 +38,7 @@ let a = function(e) {
         type: "WELCOME_SCREEN_FETCH_FAIL"
       })
     }
-  }, i = () => {
+  }, o = () => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_RESET"
     })
@@ -46,12 +46,12 @@ let a = function(e) {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_CLEAR"
     })
-  }, c = e => {
+  }, u = e => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SETTINGS_UPDATE",
       settings: e
     })
-  }, u = async (e, t) => {
+  }, c = async (e, t) => {
     l.Z.dispatch({
       type: "WELCOME_SCREEN_SUBMIT"
     });

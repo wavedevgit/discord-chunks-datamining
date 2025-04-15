@@ -194,7 +194,6 @@ function J(e, t) {
       return {
         source: _.d.DEV_OVERRIDE, enabledOOP: !1, enabledLegacy: !0, overlayMethod: l.gl.Hook
       };
-    case l.R5.OUT_OF_PROCESS_V2:
     case l.R5.OUT_OF_PROCESS_V3:
       return {
         source: _.d.DEV_OVERRIDE, enabledOOP: !0, enabledLegacy: !1, overlayMethod: l.gl.OutOfProcess
@@ -370,7 +369,7 @@ async function eo(e) {
   }), z(e, "previousFullscreenType", n.fullscreenType), z(e, "fullscreenType", r), eC.emitChange(), t = !0);
   let i = J(n, r);
   if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== l.gl.Disabled || (x === m.UNSET_PID || null === x) && n.state === l.mM.OVERLAY_RENDERING) return t;
-  let o = P === l.R5.OUT_OF_PROCESS_V2 || P === l.R5.OUT_OF_PROCESS_V3 || P === l.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
+  let o = P === l.R5.OUT_OF_PROCESS_V3 || P === l.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     a = P === l.R5.IN_PROCESS_V2,
     s = (0, y.PD)(n, r, V()),
     c = (0, y.DH)(n, r, V());

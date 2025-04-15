@@ -1,4 +1,4 @@
-/** Chunk was on 69313 **/
+/** Chunk was on 12862 **/
 n.d(t, {
   Z: () => d
 });
@@ -16,12 +16,12 @@ let c = n(17702),
       shouldUseThemeColor: n = !1,
       loading: r,
       className: d
-    } = e, h = (0, s.ZP)(), E = n && (0, o.ap)(h) ? u : c;
+    } = e, h = (0, s.ZP)(), f = n && (0, o.ap)(h) ? u : c;
     return (0, i.jsx)("img", {
       className: l()(a.orbIconSVG, d, {
         [a.loading]: r
       }),
-      src: E,
+      src: f,
       alt: "Orb Icon",
       style: void 0 !== t ? {
         height: t

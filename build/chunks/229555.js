@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => h
 });
@@ -53,13 +53,13 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.NW.format(
         tenureReqNumMonths: f,
         hasWideArt: b
       } = t,
-      N = u.NW.string(h),
-      x = (0, l.q)(d, f);
+      _ = u.NW.string(h),
+      N = (0, l.q)(d, f);
     return (0, r.jsxs)("div", {
       className: s()(m.container, p(d)),
       children: [(0, r.jsx)("div", {}), " ", (0, r.jsx)("img", {
         src: i,
-        alt: N,
+        alt: _,
         className: s()(m.badgeImage, m.badgeImageV2, {
           [m.upcomingBadge]: t.status === o.Vq.UPCOMING,
           [m.wide]: b
@@ -69,11 +69,11 @@ let g = (e, t) => (null == e ? void 0 : e.status) === o.Vq.EARNED ? u.NW.format(
         children: [(0, r.jsx)(a.xv, {
           variant: "text-lg/semibold",
           className: m.badgeText,
-          children: N
+          children: _
         }), (0, r.jsx)(a.xv, {
           variant: "text-md/normal",
           className: m.badgeText,
-          children: x
+          children: N
         }), (0, r.jsx)(a.xv, {
           variant: "text-xs/normal",
           children: g(t, n)

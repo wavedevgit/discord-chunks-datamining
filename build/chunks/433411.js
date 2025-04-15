@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => b
 });
@@ -24,20 +24,20 @@ function b(e) {
     className: s,
     sectionTitle: m,
     forcedDivider: b = !1,
-    withTutorial: x = !1,
-    isTryItOutFlow: _ = !1
+    withTutorial: N = !1,
+    isTryItOutFlow: x = !1
   } = e, {
     analyticsLocations: E
   } = (0, o.ZP)(), j = null != n, {
-    userAvatarDecoration: O,
-    guildAvatarDecoration: C,
+    userAvatarDecoration: C,
+    guildAvatarDecoration: O,
     pendingAvatarDecoration: S,
     pendingErrors: v
   } = (0, g.$U)(t, n), T = (0, u.Z)("enable_avatar_decoration_uploads"), I = i.useCallback(() => (0, d.ps)({
     analyticsLocations: E,
-    isTryItOutFlow: _,
+    isTryItOutFlow: x,
     guild: n
-  }), [E, _, n]), y = _ || void 0 !== S ? null != S : (j ? C : O) != null, A = x ? l.gtL : l.zxk;
+  }), [E, x, n]), y = x || void 0 !== S ? null != S : (j ? O : C) != null, A = N ? l.gtL : l.zxk;
   return (0, r.jsxs)(p.Z, {
     className: s,
     forcedDivider: b,
@@ -50,7 +50,7 @@ function b(e) {
         size: l.zxk.Sizes.SMALL,
         onClick: I,
         className: a()({
-          [f.buttonHighlighted]: x
+          [f.buttonHighlighted]: N
         }),
         children: h.NW.string(h.t["Tna/TU"])
       }), y && (0, r.jsx)(l.zxk, {
@@ -63,12 +63,12 @@ function b(e) {
         },
         children: (0, c.ad)(t, n) ? h.NW.string(h.t["GsW4/v"]) : h.NW.string(h.t.GReZ6O)
       })]
-    }), t.isStaff() && T && (0, r.jsx)(N, {
+    }), t.isStaff() && T && (0, r.jsx)(_, {
       user: t
     })]
   })
 }
-let N = e => {
+let _ = e => {
   let {
     user: t
   } = e;

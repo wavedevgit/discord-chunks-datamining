@@ -1,29 +1,29 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => C
+  Z: () => S
 });
 var r = n(200651);
 n(192379);
 var i = n(399606),
   l = n(704215),
   o = n(481060),
-  a = n(239091),
-  s = n(906732),
+  s = n(239091),
+  a = n(906732),
   c = n(522651),
   u = n(765585),
   d = n(870569),
-  p = n(819640),
-  h = n(556296),
+  h = n(819640),
+  p = n(556296),
   f = n(13140),
   g = n(924557),
   m = n(435064),
   b = n(39604),
-  _ = n(981631),
-  y = n(388032),
+  y = n(981631),
+  _ = n(388032),
   v = n(856587);
 
 function O(e) {
-  (0, a.jW)(e, async () => {
+  (0, s.jW)(e, async () => {
     let {
       default: e
     } = await n.e("21960").then(n.bind(n, 999466));
@@ -47,7 +47,7 @@ function O(e) {
     }({}, t))
   })
 }
-let j = e => {
+let C = e => {
     let {
       keybindString: t,
       children: n
@@ -70,7 +70,7 @@ let j = e => {
           position: "top",
           header: (0, r.jsx)("div", {
             className: v.header,
-            children: y.NW.format(y.t["o+srEx"], {
+            children: _.NW.format(_.t["o+srEx"], {
               keybind: t,
               keybindHook: () => (0, r.jsx)("span", {
                 className: v.keybindHintKeys,
@@ -86,7 +86,7 @@ let j = e => {
             variant: "text-sm/normal",
             color: "always-white",
             className: v.bodyText,
-            children: y.NW.format(y.t.DWeRm5, {
+            children: _.NW.format(_.t.DWeRm5, {
               keybindHook: () => (0, r.jsx)("div", {
                 className: v.keyCombo,
                 children: t
@@ -102,25 +102,25 @@ let j = e => {
       children: () => n
     })
   },
-  C = () => {
+  S = () => {
     let {
       parentAnalyticsLocation: e
-    } = (0, s.ZP)(), t = (0, i.e7)([p.Z], () => p.Z.hasLayers()), n = (0, g.Go)(), {
+    } = (0, a.ZP)(), t = (0, i.e7)([h.Z], () => h.Z.hasLayers()), n = (0, g.Go)(), {
       clipsEnabled: l,
-      isAtMaxSavingClipsOperations: a
+      isAtMaxSavingClipsOperations: s
     } = (0, i.cj)([m.Z], () => ({
       clipsEnabled: m.Z.getSettings().clipsEnabled,
       isAtMaxSavingClipsOperations: m.Z.getIsAtMaxSaveClipOperations()
-    })), u = (0, i.e7)([h.ZP], () => h.ZP.getKeybindForAction(_.kg4.SAVE_CLIP));
+    })), u = (0, i.e7)([p.ZP], () => p.ZP.getKeybindForAction(y.kg4.SAVE_CLIP));
     if (!(n && l) || null == u || t) return null;
     let v = f.BB(u.shortcut, !0);
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(C, {
       keybindString: v,
       children: (0, r.jsx)(d.Z, {
-        disabled: a,
-        tooltipText: null != u ? y.NW.formatToPlainString(y.t.HIMcv7, {
+        disabled: s,
+        tooltipText: null != u ? _.NW.formatToPlainString(_.t.HIMcv7, {
           hotkey: f.BB(null == u ? void 0 : u.shortcut, !0)
-        }) : y.NW.string(y.t.s52pjo),
+        }) : _.NW.string(_.t.s52pjo),
         onClick: () => {
           (0, b.C1)(), (0, c.v)(e, c.d.CLIP)
         },

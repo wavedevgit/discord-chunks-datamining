@@ -1,30 +1,30 @@
-/** Chunk was on 45585 **/
+/** Chunk was on 63141 **/
 "use strict";
 n.d(t, {
-  Z: () => O
+  Z: () => v
 }), n(388685);
 var i = n(200651),
   r = n(192379),
   s = n(442837),
   o = n(481060),
-  l = n(13245),
-  a = n(313201),
+  a = n(13245),
+  l = n(313201),
   c = n(237997),
-  u = n(766032),
-  d = n(987650),
+  d = n(766032),
+  u = n(987650),
   h = n(981631),
   p = n(388032),
   f = n(225932);
-let g = Object.values(d.wF).map(e => 100 * e),
-  m = (0, a.hQ)();
+let g = Object.values(u.wF).map(e => 100 * e),
+  m = (0, l.hQ)();
 class y extends r.PureComponent {
   handleUpdateBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, u.Z)(e / 100)), l.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
+    a.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), a.Z.track(h.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
     })
   }
   handlePreviewBackgroundOpacity(e) {
-    l.Z.setTextWidgetOpacity((0, u.Z)(e / 100))
+    a.Z.setTextWidgetOpacity((0, d.Z)(e / 100))
   }
   render() {
     return (0, i.jsxs)("div", {
@@ -64,6 +64,6 @@ class y extends r.PureComponent {
     }) : this[t] = n
   }
 }
-let O = s.ZP.connectStores([c.default], () => ({
+let v = s.ZP.connectStores([c.default], () => ({
   opacity: c.default.getTextWidgetOpacity()
 }))(y)

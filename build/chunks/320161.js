@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => b
 }), n(388685);
@@ -24,36 +24,36 @@ function b(e) {
     children: d,
     onCopy: m,
     "aria-label": b,
-    delay: N = h
-  } = e, [x, _] = i.useState(0), [E, j] = i.useState(!1), [O, C] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
+    delay: _ = h
+  } = e, [N, x] = i.useState(0), [E, j] = i.useState(!1), [C, O] = i.useState(!1), [S] = i.useState(() => new a.V7), [v] = i.useState(() => new a.V7);
   if (i.useEffect(() => () => {
       S.stop(), v.stop()
     }, [S, v]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: d({})
   });
-  let T = x >= f.length - 1,
+  let T = N >= f.length - 1,
     I = T ? l.FGA.RED : l.FGA.GREEN,
     y = E ? I : l.FGA.PRIMARY,
     A = () => {
-      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), O || _(x + 1), C(!0), j(!0), S.start(g, () => C(!1)), v.start(p, () => _(0))
+      null == m || m(), (0, c.JG)(n), o.default.track(u.rMx.TEXT_COPIED), C || x(N + 1), O(!0), j(!0), S.start(g, () => O(!1)), v.start(p, () => x(0))
     };
   return (0, r.jsx)(l.ua7, {
     text: (() => {
       var e;
       if (!E) return t;
-      let n = (0, s.clamp)(x - 1, 0, f.length - 1),
+      let n = (0, s.clamp)(N - 1, 0, f.length - 1),
         i = null != (e = f[n]) ? e : f[0];
       return (0, r.jsx)(l.UkV, {
         isShaking: T,
         children: i()
       })
     })(),
-    delay: N,
+    delay: _,
     "aria-label": b,
     color: y,
-    forceOpen: O,
+    forceOpen: C,
     onAnimationRest: (e, t) => {
-      !O && E && t.phase === u.UkZ.LEAVE && j(!1)
+      !C && E && t.phase === u.UkZ.LEAVE && j(!1)
     },
     children: e => {
       var t, n, {
@@ -100,7 +100,7 @@ function b(e) {
             null == i || i();
             return
           }
-          S.stop(), C(!1)
+          S.stop(), O(!1)
         }
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

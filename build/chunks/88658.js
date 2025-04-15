@@ -1,38 +1,38 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   $6: () => x,
-  YK: () => s,
+  YK: () => o,
   _o: () => d,
   bL: () => m,
   gl: () => c,
   rr: () => u
 }), n(388685);
-var r = n(695346),
-  a = n(486472),
+var a = n(695346),
+  r = n(486472),
   l = n(430824);
 n(626135);
 var i = n(981631);
 n(388032);
-let o = 864e5 * i.eBq;
+let s = 864e5 * i.eBq;
 
-function s() {
-  let e = r.h2.getSetting();
-  return 0 === a.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
+function o() {
+  let e = a.h2.getSetting();
+  return 0 === r.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
 }
 
 function c() {
-  let e = r.zA.getSetting();
-  return 0 === a.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
+  let e = a.zA.getSetting();
+  return 0 === r.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
 }
 
 function d() {
-  let e = r.SE.getSetting();
-  return 0 === a.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
+  let e = a.SE.getSetting();
+  return 0 === r.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
 }
 
 function u() {
-  let e = r.iH.getSetting();
-  return 0 === a.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
+  let e = a.iH.getSetting();
+  return 0 === r.Z.totalUnavailableGuilds && (e = e.filter(e => null != l.Z.getGuild(e))), new Set(e)
 }
 
 function m(e) {
@@ -48,5 +48,5 @@ function m(e) {
 }
 
 function x(e, t) {
-  return !!(!t.verified || t.isStaff()) || null != e && o > Date.now() - new Date(e.created_at).getTime()
+  return !!(!t.verified || t.isStaff()) || null != e && s > Date.now() - new Date(e.created_at).getTime()
 }

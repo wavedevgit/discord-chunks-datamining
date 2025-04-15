@@ -1,8 +1,8 @@
 /** Chunk was on 23491 **/
 n.d(t, {
-  Bm: () => N,
-  P7: () => T,
-  X: () => D,
+  Bm: () => T,
+  P7: () => D,
+  X: () => M,
   ae: () => S
 });
 var i, r, l = n(192379),
@@ -11,19 +11,19 @@ var i, r, l = n(192379),
   a = n(442837),
   u = n(25209),
   d = n(481060),
-  s = n(2052),
-  p = n(542094),
+  p = n(2052),
+  s = n(542094),
   f = n(513202),
   v = n(367907),
-  E = n(213459),
+  y = n(213459),
   b = n(895924),
-  y = n(691424),
+  E = n(691424),
   O = n(428595),
   m = n(364458),
-  _ = n(585483),
-  P = n(499254),
-  g = n(541099),
-  Z = n(827498),
+  P = n(585483),
+  g = n(499254),
+  Z = n(541099),
+  _ = n(827498),
   h = n(346683),
   A = n(981631),
   w = n(388032);
@@ -60,13 +60,13 @@ let I = (i = function(e) {
   }), i),
   j = c().pick((0, m.Z)([O.Z.RULES, {
     commandMention: I
-  }, (0, y.Z)({
+  }, (0, E.Z)({
     enableBuildOverrides: !1,
     enableEmojiClick: !1
   })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
   S = u.w4(j);
 
-function T(e) {
+function D(e) {
   let {
     context: t,
     application: n,
@@ -75,20 +75,20 @@ function T(e) {
     commandName: o,
     autoDismissOnClick: c = !0,
     launchingComponentId: u,
-    submitting: y = !1,
+    submitting: E = !1,
     fetchesApplication: O = !0,
     onConfirmActivityLaunchChecksAlertOpen: m,
-    playSolo: _ = !1
-  } = e, I = (0, s.O)(), j = (0, p.Qv)({
+    playSolo: P = !1
+  } = e, I = (0, p.O)(), j = (0, s.Qv)({
     context: t,
     applicationId: n.id,
     fetchesApplication: O
-  }), S = (0, h.Q)(j), T = (0, a.e7)([g.Z], () => g.Z.entrypoint()), N = l.useMemo(() => {
+  }), S = (0, h.Q)(j), D = (0, a.e7)([Z.Z], () => Z.Z.entrypoint()), T = l.useMemo(() => {
     var e, i, r;
-    if ("channel" !== t.type || _) return null != (r = null == (e = n.bot) ? void 0 : e.id) ? r : null == (i = (0, E.If)(t, n.id).descriptor) ? void 0 : i.botId
-  }, [t, n.id, n.bot, _]), D = (0, p.w1)({
+    if ("channel" !== t.type || P) return null != (r = null == (e = n.bot) ? void 0 : e.id) ? r : null == (i = (0, y.If)(t, n.id).descriptor) ? void 0 : i.botId
+  }, [t, n.id, n.bot, P]), M = (0, s.w1)({
     applicationId: n.id,
-    botUserIdForAppDM: N,
+    botUserIdForAppDM: T,
     embeddedActivitiesManager: f.Z,
     context: t,
     locationObject: I.location,
@@ -96,31 +96,31 @@ function T(e) {
       let {
         applicationId: t
       } = e;
-      c && P.yT(Z.ti.ACTIVITY), (0, v.yw)(A.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
+      c && g.yT(_.ti.ACTIVITY), (0, v.yw)(A.rMx.APP_LAUNCHER_ACTIVITY_ITEM_SELECTED, {
         location: i,
         application_id: t,
         section_name: r,
         action: S,
-        source: T
+        source: D
       })
     },
     launchingComponentId: u,
     commandOrigin: b.bB.APPLICATION_LAUNCHER,
     sectionName: r,
-    source: T,
+    source: D,
     fetchesApplication: O,
     onConfirmActivityLaunchChecksAlertOpen: m
-  }), L = d.Ttl.BRAND, M = null != o ? o : w.NW.string(w.t.zKX8Nj);
-  return S === p.JS.JOIN ? (L = d.Ttl.GREEN, M = w.NW.string(w.t.d9PsMj)) : S !== p.JS.LEAVE || y || (L = d.Ttl.RED, M = w.NW.string(w.t["Hi1/aW"])), {
-    onActivityItemSelected: D,
+  }), L = d.Ttl.BRAND, N = null != o ? o : w.NW.string(w.t.zKX8Nj);
+  return S === s.JS.JOIN ? (L = d.Ttl.GREEN, N = w.NW.string(w.t.d9PsMj)) : S !== s.JS.LEAVE || E || (L = d.Ttl.RED, N = w.NW.string(w.t["Hi1/aW"])), {
+    onActivityItemSelected: M,
     activityAction: S,
     buttonColor: L,
-    buttonText: M
+    buttonText: N
   }
 }
 
-function N(e, t) {
-  let n = g.Z.entrypoint(),
+function T(e, t) {
+  let n = Z.Z.entrypoint(),
     i = l.useMemo(() => (0, o.debounce)((e, t) => {
       (0, v.yw)(A.rMx.APP_LAUNCHER_EMPTY_STATE_ENCOUNTERED, {
         type: e,
@@ -135,8 +135,8 @@ function N(e, t) {
   }, [e, t, n, i])
 }
 
-function D(e) {
-  _.S.dispatchToLastSubscribed(A.CkL.OPEN_APP_LAUNCHER, {
+function M(e) {
+  P.S.dispatchToLastSubscribed(A.CkL.OPEN_APP_LAUNCHER, {
     applicationId: e
   })
 }

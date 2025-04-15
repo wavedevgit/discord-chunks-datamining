@@ -62,19 +62,19 @@ function b(e) {
     D = e.containerDisplayName,
     k = e.getType,
     w = e.collect,
-    x = e.options.arePropsEqual,
-    C = void 0 === x ? i.w : x,
-    O = t.displayName || t.name || "Component",
-    j = function(e) {
+    j = e.options.arePropsEqual,
+    x = void 0 === j ? i.w : j,
+    C = t.displayName || t.name || "Component",
+    O = function(e) {
       if ("function" != typeof e && null !== e) throw TypeError("Super expression must either be null or a function");
-      j.prototype = Object.create(e && e.prototype, {
+      O.prototype = Object.create(e && e.prototype, {
         constructor: {
-          value: j,
+          value: O,
           writable: !0,
           configurable: !0
         }
-      }), e && h(j, e);
-      var p, D, x = (p = function() {
+      }), e && h(O, e);
+      var p, D, j = (p = function() {
         if ("undefined" == typeof Reflect || !Reflect.construct || Reflect.construct.sham) return !1;
         if ("function" == typeof Proxy) return !0;
         try {
@@ -83,7 +83,7 @@ function b(e) {
           return !1
         }
       }(), function() {
-        var e, t = y(j);
+        var e, t = y(O);
         return e = p ? Reflect.construct(t, arguments, y(this).constructor) : t.apply(this, arguments),
           function(e, t) {
             if (t && ("object" === f(t) || "function" == typeof t)) return t;
@@ -92,10 +92,10 @@ function b(e) {
           }(this, e)
       });
 
-      function j(e) {
+      function O(e) {
         var t;
-        if (!(this instanceof j)) throw TypeError("Cannot call a class as a function");
-        return g(v(t = x.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", void 0), g(v(t), "manager", void 0), g(v(t), "handlerMonitor", void 0), g(v(t), "handlerConnector", void 0), g(v(t), "handler", void 0), g(v(t), "disposable", void 0), g(v(t), "currentType", void 0), g(v(t), "handleChange", function() {
+        if (!(this instanceof O)) throw TypeError("Cannot call a class as a function");
+        return g(v(t = j.call(this, e)), "decoratedRef", (0, o.createRef)()), g(v(t), "handlerId", void 0), g(v(t), "manager", void 0), g(v(t), "handlerMonitor", void 0), g(v(t), "handlerConnector", void 0), g(v(t), "handler", void 0), g(v(t), "disposable", void 0), g(v(t), "currentType", void 0), g(v(t), "handleChange", function() {
           var e = t.getCurrentState();
           (0, i.w)(e, t.state) || t.setState(e)
         }), t.disposable = new c.M$, t.receiveProps(e), t.dispose(), t
@@ -113,7 +113,7 @@ function b(e) {
         }, {
           key: "shouldComponentUpdate",
           value: function(e, t) {
-            return !C(e, this.props) || !(0, i.w)(t, this.state)
+            return !x(e, this.props) || !(0, i.w)(t, this.state)
           }
         }, {
           key: "componentDidMount",
@@ -123,7 +123,7 @@ function b(e) {
         }, {
           key: "componentDidUpdate",
           value: function(e) {
-            C(this.props, e) || (this.receiveProps(this.props), this.handleChange())
+            x(this.props, e) || (this.receiveProps(this.props), this.handleChange())
           }
         }, {
           key: "componentWillUnmount",
@@ -209,7 +209,7 @@ function b(e) {
         }, {
           key: "receiveDragDropManager",
           value: function(e) {
-            void 0 === this.manager && ((0, a.k)(void 0 !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", O, O), void 0 !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef)))
+            void 0 === this.manager && ((0, a.k)(void 0 !== e, "Could not find the drag and drop manager in the context of %s. Make sure to render a DndProvider component in your top-level component. Read more: http://react-dnd.github.io/react-dnd/docs/troubleshooting#could-not-find-the-drag-and-drop-manager-in-the-context", C, C), void 0 !== e && (this.manager = e, this.handlerMonitor = d(e), this.handlerConnector = b(e.getBackend()), this.handler = r(this.handlerMonitor, this.decoratedRef)))
           }
         }],
         function(e, t) {
@@ -217,7 +217,7 @@ function b(e) {
             var n = t[r];
             n.enumerable = n.enumerable || !1, n.configurable = !0, "value" in n && (n.writable = !0), Object.defineProperty(e, n.key, n)
           }
-        }(j.prototype, D), j
+        }(O.prototype, D), O
     }(o.Component);
-  return g(j, "DecoratedComponent", t), g(j, "displayName", "".concat(D, "(").concat(O, ")")), p()(j, t)
+  return g(O, "DecoratedComponent", t), g(O, "displayName", "".concat(D, "(").concat(C, ")")), p()(O, t)
 }

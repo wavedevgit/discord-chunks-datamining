@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 e.exports = {
   premiumChannelIcon: "premiumChannelIcon__15e7f"
 }

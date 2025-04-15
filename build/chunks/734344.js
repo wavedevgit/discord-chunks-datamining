@@ -1,4 +1,5 @@
-/** Chunk was on 96408 **/
+/** Chunk was on 64865 **/
+"use strict";
 e.exports = {
   statusWarningBlock: "statusWarningBlock__1066d",
   statusWarningBlockWithCta: "statusWarningBlockWithCta__1066d",

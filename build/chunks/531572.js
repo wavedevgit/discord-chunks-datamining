@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   Z: () => c
 });
@@ -13,20 +13,20 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-let a = {};
-class s extends(r = i.ZP.PersistedStore) {
+let s = {};
+class a extends(r = i.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (a = e)
+    null != e && (s = e)
   }
   getState() {
-    return a
+    return s
   }
   getCountForGuild(e) {
-    return a[e]
+    return s[e]
   }
 }
-o(s, "displayName", "GuildBoostingProgressBarPersistedStore"), o(s, "persistKey", "PremiumGuildProgressBarPersistedStore");
-let c = new s(l.Z, {
+o(a, "displayName", "GuildBoostingProgressBarPersistedStore"), o(a, "persistKey", "PremiumGuildProgressBarPersistedStore");
+let c = new a(l.Z, {
   APPLIED_GUILD_BOOST_COUNT_UPDATE: e => {
     var t, n;
     let {
@@ -44,7 +44,7 @@ let c = new s(l.Z, {
         })
       }
       return e
-    }({}, a), n = n = {
+    }({}, s), n = n = {
       [r]: i
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -55,6 +55,6 @@ let c = new s(l.Z, {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), a = t
+    }), s = t
   }
 })

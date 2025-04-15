@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => h
 }), n(388685);
@@ -33,17 +33,17 @@ function h(e) {
     })
   }, 20), [n, s]);
   i.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [b, N] = (0, u.q_F)(() => ({
+  let [b, _] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: p
   }));
   return i.useEffect(() => {
-    N({
+    _({
       x: l.x,
       y: l.y
     })
-  }, [l.x, l.y, N]), (0, r.jsx)(c.animated.div, {
+  }, [l.x, l.y, _]), (0, r.jsx)(c.animated.div, {
     style: {
       transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },

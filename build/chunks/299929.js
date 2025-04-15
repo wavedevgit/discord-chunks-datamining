@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => m
 }), n(953529), n(388685);
@@ -22,7 +22,7 @@ let m = i.memo(function(e) {
     scrollPosition: c.Y_.GUILD_TAG
   }), [f, b] = i.useState(!1);
   if (null === n) return null;
-  async function N() {
+  async function _() {
     b(!0), await (0, a.nE)(t, !0), b(!1), null == p || p()
   }
   return (0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ let m = i.memo(function(e) {
     }), (0, r.jsx)(s.zxk, {
       className: u.adoptButton,
       submitting: f,
-      onClick: N,
+      onClick: _,
       children: d.NW.string(d.t.jwEaiY)
     }), (0, r.jsx)(s.zxk, {
       color: s.zxk.Colors.PRIMARY,

@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(981631),
   b = n(388032);
 
-function N(e) {
+function _(e) {
   let {
     ingress: t,
     guildId: n
@@ -43,12 +43,12 @@ function N(e) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     ingress: t = g.f4.USER_SETTINGS_PRIVACY_SAFETY,
     guildId: n
   } = e, i = (0, c.is)();
-  return (0, r.jsx)(N, {
+  return (0, r.jsx)(_, {
     ingress: t,
     guildId: null != n ? n : i
   })

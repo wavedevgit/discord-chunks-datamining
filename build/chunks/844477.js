@@ -1,4 +1,4 @@
-/** Chunk was on 49843 **/
+/** Chunk was on 74028 **/
 n.d(t, {
   z: () => m
 });
@@ -63,7 +63,7 @@ function m(e) {
     iconPosition: p = "end",
     iconOpticalOffsetMargin: g = 0,
     focusProps: h
-  } = e, b = function(e, t) {
+  } = e, v = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -79,7 +79,7 @@ function m(e) {
     return i
   }(e, ["role", "variant", "size", "text", "icon", "iconPosition", "iconOpticalOffsetMargin", "focusProps"]);
 
-  function v() {
+  function b() {
     if (null == f) return;
     let e = function() {
       if (0 === g) return {};
@@ -105,15 +105,15 @@ function m(e) {
     children: (0, r.jsxs)("button", d(c({
       role: t,
       className: a()(s.button, s[i], s[n])
-    }, b), {
-      children: [null != f && "start" === p && (0, r.jsx)(v, {}), (0, r.jsx)(l.x, {
+    }, v), {
+      children: [null != f && "start" === p && (0, r.jsx)(b, {}), (0, r.jsx)(l.x, {
         tag: "span",
         variant: u[i],
         color: "none",
         className: s.text,
         lineClamp: 1,
         children: m
-      }), null != f && "end" === p && (0, r.jsx)(v, {})]
+      }), null != f && "end" === p && (0, r.jsx)(b, {})]
     }))
   }))
 }

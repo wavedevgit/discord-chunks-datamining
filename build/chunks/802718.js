@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   U: () => v
 });
@@ -6,13 +6,13 @@ var r = n(200651),
   i = n(192379),
   l = n(91192),
   o = n(481060),
-  a = n(442837),
-  s = n(239091),
+  s = n(442837),
+  a = n(239091),
   c = n(410030),
   u = n(377171),
   d = n(682662),
-  p = n(662146),
-  h = n(678513),
+  h = n(662146),
+  p = n(678513),
   f = n(981631),
   g = n(388032),
   m = n(975812);
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,24 +49,24 @@ function _(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     target: t
-  } = e, a = (0, l.Ie)("fakedoor"), h = i.useCallback(() => {
+  } = e, s = (0, l.Ie)("fakedoor"), p = i.useCallback(() => {
     (0, o.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("22862"), n.e("20404")]).then(n.bind(n, 646202));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         target: t
       }))
     })
-  }, [t]), y = i.useCallback(e => {
-    (0, s.jW)(e, async () => {
+  }, [t]), _ = i.useCallback(e => {
+    (0, a.jW)(e, async () => {
       let {
         default: e
       } = await n.e("39612").then(n.bind(n, 761624));
-      return n => (0, r.jsx)(e, _(b({}, n), {
+      return n => (0, r.jsx)(e, y(b({}, n), {
         signupTarget: t
       }))
     })
@@ -84,24 +84,24 @@ function y(e) {
       variant: "text-xs/normal",
       children: g.NW.string(g.t.IIbwAg)
     })]
-  }), j = (0, c.Fg)();
+  }), C = (0, c.Fg)();
   return (0, r.jsxs)(d.H, {
     children: [(0, r.jsx)(o.ze6, {
       theme: f.BRd.DARK,
-      children: (0, r.jsx)(p.Z, {
+      children: (0, r.jsx)(h.Z, {
         text: O,
         tooltipClass: m.tooltip,
         tooltipContentClass: m.tooltipContent,
         children: (0, r.jsx)(o.ze6, {
-          theme: j,
+          theme: C,
           children: (0, r.jsx)(o.aRk, {
             lowerBadge: (0, r.jsx)(o.mAB, {
               count: 1,
               color: u.Z.BG_BRAND
             }),
-            children: (0, r.jsx)(o.LYs, _(b({}, a), {
-              onClick: h,
-              onContextMenu: y,
+            children: (0, r.jsx)(o.LYs, y(b({}, s), {
+              onClick: p,
+              onContextMenu: _,
               children: (0, r.jsx)(o.Dkj, {
                 color: u.Z.TEXT_NORMAL
               })
@@ -120,8 +120,8 @@ function y(e) {
 }
 
 function v() {
-  let e = (0, a.e7)([h.Z], () => h.Z.getActiveUserSignUp());
-  return null == e ? null : (0, r.jsx)(y, {
+  let e = (0, s.e7)([p.Z], () => p.Z.getActiveUserSignUp());
+  return null == e ? null : (0, r.jsx)(_, {
     target: e
   })
 }

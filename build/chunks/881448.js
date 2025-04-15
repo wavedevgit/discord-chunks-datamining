@@ -1,4 +1,4 @@
-/** Chunk was on 79879 **/
+/** Chunk was on 3656 **/
 e.exports = {
   wrapper: "wrapper_fc8177",
   compact: "compact_fc8177",

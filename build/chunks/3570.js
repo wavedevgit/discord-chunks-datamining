@@ -1,23 +1,23 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  T: () => s,
+  T: () => a,
   s: () => c
 });
 var r = n(536285),
   i = n(703656),
-  o = n(314897),
-  a = n(358085),
-  l = n(981631);
-let s = a.isPlatformEmbedded ? l.dG4 : (e, t) => {
-    if (!(0, i.DB)()) return r.default.request(l.Etm.DEEP_LINK, {
+  s = n(314897),
+  l = n(358085),
+  o = n(981631);
+let a = l.isPlatformEmbedded ? o.dG4 : (e, t) => {
+    if (!(0, i.DB)()) return r.default.request(o.Etm.DEEP_LINK, {
       type: e,
       params: t
     })
   },
-  c = a.isPlatformEmbedded ? l.dG4 : (e, t) => {
-    if (!o.default.isAuthenticated()) {
+  c = l.isPlatformEmbedded ? o.dG4 : (e, t) => {
+    if (!s.default.isAuthenticated()) {
       var n, r;
-      return s(e, (n = function(e) {
+      return a(e, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -35,7 +35,7 @@ let s = a.isPlatformEmbedded ? l.dG4 : (e, t) => {
         }
         return e
       }({}, t || {}), r = r = {
-        fingerprint: o.default.getFingerprint()
+        fingerprint: s.default.getFingerprint()
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

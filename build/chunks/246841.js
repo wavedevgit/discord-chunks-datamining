@@ -24,10 +24,10 @@ function s(e) {
     label: g,
     tooltip: b,
     loading: O,
-    disabled: y,
-    onClick: h
+    disabled: h,
+    onClick: y
   } = (0, o.Ih)(t, n, s), v = () => {
-    null == m || m(), h()
+    null == m || m(), y()
   };
   return (0, r.jsx)(l.ua7, {
     text: b,
@@ -46,7 +46,7 @@ function s(e) {
         onClick: v,
         onMouseEnter: t,
         onMouseLeave: n,
-        disabled: y,
+        disabled: h,
         submitting: O,
         children: [(0, r.jsx)(i.Z, {
           width: 16,

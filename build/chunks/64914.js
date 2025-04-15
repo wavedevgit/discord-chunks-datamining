@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => E
 }), n(388685), n(49124);
@@ -17,10 +17,10 @@ var r = n(200651),
   h = n(695346),
   f = n(399970),
   b = n(726985),
-  N = n(981631),
-  x = n(388032);
+  _ = n(981631),
+  N = n(388032);
 
-function _(e) {
+function x(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,24 +40,24 @@ function _(e) {
 }
 
 function E() {
-  let [e] = i.useState(() => g.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), E = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), j = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), O = i.useCallback(e => {
+  let [e] = i.useState(() => g.ZP.getEnableHardwareAcceleration()), t = h.bm.useSetting(), n = h.Sb.useSetting(), E = (0, s.e7)([m.Z], () => m.Z.testModeApplicationId), j = (0, s.e7)([p.ZP], () => p.ZP.showPlayAgain), C = i.useCallback(e => {
     h.bm.updateSetting(!e)
-  }, []), C = i.useCallback(e => {
-    e ? (0, a.h7j)(e => (0, r.jsx)(f.Z, _({}, e))) : l.mc()
+  }, []), O = i.useCallback(e => {
+    e ? (0, a.h7j)(e => (0, r.jsx)(f.Z, x({}, e))) : l.mc()
   }, []), S = i.useCallback(e => {
     (0, c.BV)(e, o.Z.USER_SETTINGS)
   }, []), v = i.useCallback(e => {
     (0, a.h7j)(t => {
       var n, i;
-      return (0, r.jsx)(a.ConfirmModal, (n = _({
-        header: x.NW.string(x.t.aqpAvr),
-        confirmText: x.NW.string(x.t.vT7ckp),
-        cancelText: x.NW.string(x.t["ETE/oK"]),
+      return (0, r.jsx)(a.ConfirmModal, (n = x({
+        header: N.NW.string(N.t.aqpAvr),
+        confirmText: N.NW.string(N.t.vT7ckp),
+        cancelText: N.NW.string(N.t["ETE/oK"]),
         onConfirm: () => g.ZP.setEnableHardwareAcceleration(e)
       }, t), i = i = {
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: x.NW.format(x.t.uDP3Ky, {})
+          children: N.NW.format(N.t.uDP3Ky, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
@@ -83,48 +83,48 @@ function E() {
   }, []);
   return (0, r.jsxs)(a.hjN, {
     tag: a.RB0.H1,
-    title: x.NW.string(x.t["8/udY2"]),
+    title: N.NW.string(N.t["8/udY2"]),
     children: [(0, r.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: n,
         onChange: h.Sb.updateSetting,
-        note: x.NW.format(x.t["CY6q/f"], {
-          apiDocsUrl: N.EYA.API_DOCS
+        note: N.NW.format(N.t["CY6q/f"], {
+          apiDocsUrl: _.EYA.API_DOCS
         }),
-        children: x.NW.string(x.t.ObIb1d)
+        children: N.NW.string(N.t.ObIb1d)
       })
     }), (0, r.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_HARDWARE_ACCELERATION,
       children: (0, r.jsx)(a.j7V, {
         value: e,
         onChange: v,
-        note: x.NW.string(x.t.Afc7l5),
-        children: x.NW.string(x.t["eOC/Fx"])
+        note: N.NW.string(N.t.Afc7l5),
+        children: N.NW.string(N.t["eOC/Fx"])
       })
     }), (0, r.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
       children: (0, r.jsx)(a.j7V, {
         value: !t,
-        onChange: O,
-        note: x.NW.string(x.t["8mYp39"]),
-        children: x.NW.string(x.t.fi3UQE)
+        onChange: C,
+        note: N.NW.string(N.t["8mYp39"]),
+        children: N.NW.string(N.t.fi3UQE)
       })
     }), (0, r.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
       children: (0, r.jsx)(a.j7V, {
         value: null != E,
-        note: x.NW.string(x.t["52hMnJ"]),
-        onChange: C,
-        children: x.NW.string(x.t.erOqlp)
+        note: N.NW.string(N.t["52hMnJ"]),
+        onChange: O,
+        children: N.NW.string(N.t.erOqlp)
       })
     }), (0, r.jsx)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
       children: (0, r.jsx)(a.j7V, {
         value: j,
-        note: x.NW.string(x.t["B/qU4O"]),
+        note: N.NW.string(N.t["B/qU4O"]),
         onChange: S,
-        children: x.NW.string(x.t.qDZryM)
+        children: N.NW.string(N.t.qDZryM)
       })
     }), (0, r.jsxs)(u.F, {
       setting: b.s6.SETTINGS_ADVANCED_CF_WARP,

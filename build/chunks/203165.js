@@ -1,8 +1,8 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  b: () => r
+  b: () => a
 });
-let r = {
+let a = {
   "red.100": {
     hex: "#fef8f9"
   },

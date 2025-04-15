@@ -8,8 +8,8 @@ var r = n(192379),
   a = n(626135),
   i = n(937889),
   s = n(761910),
-  c = n(981631),
-  l = n(388032),
+  l = n(981631),
+  c = n(388032),
   u = n(875231);
 
 function d(e, t) {
@@ -28,11 +28,11 @@ function d(e, t) {
   return r.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
-      content: l.NW.string(l.t.sWi5ER),
+      content: c.NW.string(c.t.sWi5ER),
       hasSpoilerEmbeds: !1
     };
-    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(c.iLy.LOADING)) return (0, s.Z)(e);
-    if (e.type === c.uaV.CHANGELOG) {
+    if (e.isCommandType() && 0 === e.content.length || e.hasFlag(l.iLy.LOADING)) return (0, s.Z)(e);
+    if (e.type === l.uaV.CHANGELOG) {
       let {
         renderChangelogMessageMarkup: t
       } = n(55406);

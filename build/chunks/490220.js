@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => m
 });
@@ -23,13 +23,13 @@ function m(e) {
   } = i.useContext(a.Sfi), {
     pendingAvatar: f,
     pendingBanner: b,
-    pendingThemeColors: N,
-    pendingPronouns: x,
-    pendingBio: _,
+    pendingThemeColors: _,
+    pendingPronouns: N,
+    pendingBio: x,
     tryItOutThemeColors: E,
     tryItOutAvatar: j,
-    tryItOutBanner: O,
-    tryItOutAvatarDecoration: C,
+    tryItOutBanner: C,
+    tryItOutAvatarDecoration: O,
     tryItOutProfileEffectId: S
   } = (0, s.cj)([c.Z], () => (function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -51,15 +51,15 @@ function m(e) {
   })({}, c.Z.getAllPending(), c.Z.getAllTryItOut())), v = (0, o.SD)({
     userId: m.id,
     image: null != j ? j : f
-  }), T = (0, l.Z)(C, !1);
+  }), T = (0, l.Z)(O, !1);
   return (0, r.jsx)(d.Z, {
     containerClassName: p,
     user: m,
-    pendingPronouns: x,
-    pendingBio: _,
-    pendingBanner: null != (t = null != O ? O : b) ? t : n(466045),
+    pendingPronouns: N,
+    pendingBio: x,
+    pendingBanner: null != (t = null != C ? C : b) ? t : n(466045),
     pendingAvatar: v,
-    pendingThemeColors: null != E ? E : N,
+    pendingThemeColors: null != E ? E : _,
     pendingAvatarDecoration: T,
     pendingProfileEffectId: S,
     avatarClassName: null != j || null != f || h.enabled ? void 0 : u.spinningAvatar,

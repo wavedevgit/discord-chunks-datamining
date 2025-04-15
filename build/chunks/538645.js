@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => b
 }), n(388685), n(35282), n(853839), n(570086), n(479048);
@@ -60,17 +60,17 @@ function b() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, u.n6)(), [n, s] = i.useState(), b = i.useRef(null), N = i.useCallback((e, n) => {
+  } = (0, u.n6)(), [n, s] = i.useState(), b = i.useRef(null), _ = i.useCallback((e, n) => {
     if (null == n || !e.type.startsWith("text/")) return (0, d.Eo)(p);
     let [r, i] = n.split(",");
     if (!r.includes("text/plain")) return (0, d.Eo)(p);
     let s = JSON.parse(atob(i));
     s.id = (0, l.Z)(), t(s), (0, d.XA)("Profile Effect (maybe??) imported!")
-  }, [t]), x = i.useCallback(e => {
+  }, [t]), N = i.useCallback(e => {
     var t;
     if ((null == (t = e.currentTarget) ? void 0 : t.files) == null) return void(0, d.Eo)("Error uploading file. Try again!");
-    (0, d.Kr)(e.currentTarget.files, N, d.Eo)
-  }, [N]);
+    (0, d.Kr)(e.currentTarget.files, _, d.Eo)
+  }, [_]);
   return (0, r.jsxs)("div", {
     className: g.root,
     children: [null == n && (0, r.jsxs)(r.Fragment, {
@@ -101,7 +101,7 @@ function b() {
             children: "Import Shared Config"
           }), (0, r.jsx)(c.Z, {
             ref: b,
-            onChange: x,
+            onChange: N,
             multiple: !1
           })]
         }), (0, r.jsx)(o.zxk, {

@@ -1,4 +1,4 @@
-/** Chunk was on 52066 **/
+/** Chunk was on 27146 **/
 n.d(t, {
   Z: () => y
 });
@@ -48,7 +48,7 @@ function h(e) {
   return g(t, n), !0
 }
 
-function C(e) {
+function N(e) {
   var t;
   let {
     channelId: n,
@@ -67,7 +67,7 @@ function C(e) {
     }, l);
   return null != o && I[i] !== o && (I[i] = o, !0)
 }
-class N extends(r = i.ZP.PersistedStore) {
+class C extends(r = i.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(c.Z), null != e && (_ = e.automodFailedMessages, O = e.mentionRaidDetectionByGuild)
   }
@@ -94,13 +94,13 @@ class N extends(r = i.ZP.PersistedStore) {
     return null != (t = I[e]) ? t : null
   }
 }
-f(N, "displayName", "GuildAutomodMessageStore"), f(N, "persistKey", "GuildAutomodMessages");
-let y = new N(l.Z, {
+f(C, "displayName", "GuildAutomodMessageStore"), f(C, "persistKey", "GuildAutomodMessages");
+let y = new C(l.Z, {
   CONNECTION_OPEN: function(e) {
     return _ = {}, S++, !0
   },
-  LOAD_MESSAGES_SUCCESS: C,
-  LOCAL_MESSAGES_LOADED: C,
+  LOAD_MESSAGES_SUCCESS: N,
+  LOCAL_MESSAGES_LOADED: N,
   MESSAGE_CREATE: function(e) {
     let {
       guildId: t,

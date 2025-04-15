@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => X
 }), n(388685), n(539854), n(457542);
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(23551),
   f = n(468026),
   b = n(410030),
-  N = n(726542),
-  x = n(122021),
-  _ = n(275759),
+  _ = n(726542),
+  N = n(122021),
+  x = n(275759),
   E = n(231757),
   j = n(888496),
-  O = n(605236),
-  C = n(565138),
+  C = n(605236),
+  O = n(565138),
   S = n(297700),
   v = n(553795),
   T = n(430824),
@@ -88,8 +88,8 @@ let F = e => {
     className: U.integrationWrapper,
     children: [(0, r.jsxs)("div", {
       className: U.integration,
-      children: [(0, r.jsx)(C.Z, {
-        size: C.Z.Sizes.SMALL,
+      children: [(0, r.jsx)(O.Z, {
+        size: O.Z.Sizes.SMALL,
         guild: s.guild,
         className: U.guildIcon
       }), (0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ let F = e => {
           color: "header-primary",
           children: s.guild.toString()
         }), (0, r.jsx)(u.eee, {
-          href: null == (n = N.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
+          href: null == (n = _.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -125,36 +125,36 @@ function H(e) {
       locale: p
     } = e,
     [h, b] = i.useState(o.friendSync),
-    [O, C] = i.useState(o.visibility),
+    [C, O] = i.useState(o.visibility),
     [v, T] = i.useState(o.metadataVisibility),
     [I, y] = i.useState(o.showActivity),
     [A, R] = i.useState(null),
     [B, V] = i.useState(null),
     [H, z] = i.useState(!1),
     [Y, K] = i.useState([]),
-    q = (0, x.rR)(o.type),
-    X = N.Z.get(q);
+    q = (0, N.rR)(o.type),
+    X = _.Z.get(q);
   i.useEffect(() => {
-    b(o.friendSync), C(o.visibility), T(o.metadataVisibility), y(o.showActivity)
+    b(o.friendSync), O(o.visibility), T(o.metadataVisibility), y(o.showActivity)
   }, [o]);
-  let J = {
+  let Q = {
       inProgressVisibility: A,
       inProgressMetadataVisibility: B
     },
-    Q = i.useRef(J);
+    J = i.useRef(Q);
   i.useEffect(() => {
-    Q.current = J
+    J.current = Q
   }), i.useEffect(() => {
     if (!1 === o.verified) return;
     let {
       inProgressVisibility: e,
       inProgressMetadataVisibility: t
-    } = Q.current;
-    null != e && (C(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (T(t), g.Z.setMetadataVisibility(o.type, o.id, t), V(null))
+    } = J.current;
+    null != e && (O(e), g.Z.setVisibility(o.type, o.id, e), R(null)), null != t && (T(t), g.Z.setMetadataVisibility(o.type, o.id, t), V(null))
   }, [o]);
 
   function $() {
-    let e = N.Z.get(o.type),
+    let e = _.Z.get(o.type),
       t = M.NW.string(M.t.apVJu7);
     (0, D.Z)(o) && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(Z.Z, {
@@ -177,8 +177,8 @@ function H(e) {
     className: U.connection,
     children: [function(e) {
       var t;
-      let n = N.Z.get(e.type),
-        i = N.Z.get(q),
+      let n = _.Z.get(e.type),
+        i = _.Z.get(q),
         s = "1" === (null != (t = e.metadata) ? t : {})[L.PC.TWITTER_VERIFIED],
         a = null;
       return n.type === W.ABu.TWITTER && s && (a = (0, r.jsx)(u.ua7, {
@@ -253,7 +253,7 @@ function H(e) {
       var t;
       let n = null != (t = e.metadata) ? t : {},
         i = null,
-        s = (0, _.FI)(n[L.PC.CREATED_AT], p);
+        s = (0, x.FI)(n[L.PC.CREATED_AT], p);
       switch (e.type) {
         case W.ABu.REDDIT:
           i = (0, j.oP)(n, U.metadataItem);
@@ -286,7 +286,7 @@ function H(e) {
       let a = Y.includes(e.id),
         l = M.NW.string(M.t.wzzjk5);
       if (null == i || 0 === i.length)
-        if (!0 !== N.Z.get(e.type).hasMetadata) return null;
+        if (!0 !== _.Z.get(e.type).hasMetadata) return null;
         else i = [(0, r.jsx)(u.IGR, {
           className: U.connectionMetadataUpsellTag,
           text: M.NW.string(M.t.y2b7CA)
@@ -340,7 +340,7 @@ function H(e) {
           platform: X.name
         })
       })
-    })), (null == (t = N.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
+    })), (null == (t = _.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
       className: U.connectionOptionSwitch,
       hideBorder: !0,
       value: 1 === v,
@@ -357,7 +357,7 @@ function H(e) {
         }
         T(n), g.Z.setMetadataVisibility(o.type, o.id, n)
       },
-      disabled: 1 !== O || null == o.metadata,
+      disabled: 1 !== C || null == o.metadata,
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
         children: M.NW.string(M.t.FYKGsL)
@@ -369,7 +369,7 @@ function H(e) {
         children: [(0, r.jsx)(u.j7V, {
           className: U.connectionOptionSwitch,
           hideBorder: !0,
-          value: 1 === O,
+          value: 1 === C,
           onChange: function(e) {
             let {
               verified: t
@@ -381,7 +381,7 @@ function H(e) {
               });
               return
             }
-            C(n), g.Z.setVisibility(o.type, o.id, n)
+            O(n), g.Z.setVisibility(o.type, o.id, n)
           },
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/semibold",
@@ -425,7 +425,7 @@ function H(e) {
 
 function z() {
   return i.useEffect(() => () => {
-    (0, O.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
+    (0, C.EW)(o.z.NEW_CRUNCHYROLL_CONNECTION, {
       dismissAction: B.L.AUTO
     })
   }, []), (0, r.jsxs)("div", {
@@ -446,7 +446,7 @@ function z() {
 }
 
 function Y(e) {
-  let t = N.Z.get(e);
+  let t = _.Z.get(e);
   (0, E.Z)({
     platformType: t.type
   }), A.default.track(W.rMx.ACCOUNT_LINK_STEP, {
@@ -463,7 +463,7 @@ function K() {
       onComplete: Y
     })
   }
-  let t = (0, x.fq)();
+  let t = (0, N.fq)();
   return (0, r.jsxs)("div", {
     className: U.connectionsContainer,
     children: [t.slice(0, 10).map(e => (0, r.jsx)(h.Z, {
@@ -522,7 +522,7 @@ function q(e) {
       note: M.NW.string(M.t.WenGZ2),
       children: M.NW.string(M.t["aoLS8/"])
     })]
-  }) : s.filter(e => N.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
+  }) : s.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
     theme: a,
     account: e,
     locale: l,

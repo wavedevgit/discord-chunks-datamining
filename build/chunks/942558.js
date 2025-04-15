@@ -1,4 +1,4 @@
-/** Chunk was on 96814 **/
+/** Chunk was on 49286 **/
 e.exports = {
   footer: "footer__6be55",
   preview: "preview__6be55",

@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => u
 }), n(388685);
@@ -31,7 +31,7 @@ function u(e) {
       }
       return i
     }(e, ["children", "lineClamp"]);
-  let [p, h] = i.useState(!1), [f, b] = i.useState(null), N = null != f && (0, r.jsx)("button", {
+  let [p, h] = i.useState(!1), [f, b] = i.useState(null), _ = null != f && (0, r.jsx)("button", {
     className: d.button,
     onClick: () => h(e => !e),
     children: (0, r.jsxs)(o.Text, {
@@ -46,17 +46,17 @@ function u(e) {
         size: "xs"
       })]
     })
-  }), [x, _] = i.useState(null), E = i.useCallback(() => {
-    if (null == x) return;
+  }), [N, x] = i.useState(null), E = i.useCallback(() => {
+    if (null == N) return;
     let {
       scrollHeight: e,
       clientHeight: t
-    } = x;
+    } = N;
     e > t && b({
       truncatedHeight: t,
       expandedHeight: e
     })
-  }, [x]);
+  }, [N]);
   i.useEffect(() => {
     requestAnimationFrame(E)
   }, [E, u, m]);
@@ -82,7 +82,7 @@ function u(e) {
     }({}, g), n = n = {
       className: d.content,
       lineClamp: p ? void 0 : m,
-      ref: _,
+      ref: x,
       style: {
         height: j
       },
@@ -96,6 +96,6 @@ function u(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t)), N]
+    }), t)), _]
   })
 }

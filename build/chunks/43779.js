@@ -1,4 +1,4 @@
-/** Chunk was on 41851 **/
+/** Chunk was on 78900 **/
 n.d(t, {
   Z: () => w
 }), n(953529);
@@ -36,7 +36,7 @@ function w(e) {
     onReceiveErrorHints: R
   } = e, B = (0, f.j)({
     location: v.dr.QUESTS_BAR_MOBILE
-  }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, I = B ? q : D, W = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
+  }), k = o.useMemo(() => g.r.build(P.config), [P.config]), q = k.defaultReward.messages.name, D = k.defaultReward.messages.nameWithArticle, W = B ? q : D, I = (null == (t = P.userStatus) ? void 0 : t.enrolledAt) != null, {
     ref: M,
     scrollHeight: L
   } = (0, d.kE)(), Z = 104 !== L, {
@@ -82,8 +82,8 @@ function w(e) {
     className: C.header,
     children: e
   }, "".concat(P.id, "_reward")), [P.id]), K = o.useMemo(() => U ? X(q) : _.NW.format(_.t["0IUT4e"], {
-    rewardWithArticleHook: () => X(I)
-  }), [q, U, X, I]), Y = o.useMemo(() => {
+    rewardWithArticleHook: () => X(W)
+  }), [q, U, X, W]), Y = o.useMemo(() => {
     if (null != z) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
@@ -102,7 +102,7 @@ function w(e) {
         className: C.assetWrapper,
         children: [!U && Q && (0, r.jsx)("div", {
           className: C.completionAnimation
-        }), W && !U ? (0, r.jsxs)("div", {
+        }), I && !U ? (0, r.jsxs)("div", {
           className: C.progressWrapper,
           children: [Q && (0, r.jsx)(c.Fmz, {
             importData: O,

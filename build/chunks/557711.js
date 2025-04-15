@@ -25,10 +25,10 @@ function u(e) {
     onAction: b
   } = e, {
     tooltip: O,
-    loading: y,
-    disabled: h,
+    loading: h,
+    disabled: y,
     onClick: v
-  } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), j = () => {
+  } = (0, s.Fe)(t, n, d, a.ZP.getNickname(u, l, n)), S = () => {
     null == b || b(), v()
   };
   return (0, r.jsx)(o.ua7, {
@@ -44,11 +44,11 @@ function u(e) {
         innerClassName: c.syncButtonInner,
         look: f,
         color: m,
-        onClick: j,
+        onClick: S,
         onMouseEnter: n,
         onMouseLeave: l,
-        disabled: h,
-        submitting: y,
+        disabled: y,
+        submitting: h,
         "aria-label": null != O ? O : t.name,
         children: (0, r.jsx)(o.iOO, {
           size: "xs",

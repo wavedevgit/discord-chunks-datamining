@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 }), n(388685), n(65234), n(111804), n(490233), n(97749), n(35282);
 var r = n(200651),
   i = n(192379),
@@ -17,17 +17,17 @@ var r = n(200651),
   h = n(342414),
   f = n(615042),
   b = n(391110),
-  N = n(71363),
-  x = n(781800),
-  _ = n(981631),
+  _ = n(71363),
+  N = n(781800),
+  x = n(981631),
   E = n(388032),
   j = n(614729),
-  O = n(865215);
-let C = () => {
+  C = n(865215);
+let O = () => {
   (0, d.z)(c.X), (0, f.u)();
   let e = i.useRef(null),
     t = i.useRef(null),
-    [n, C] = i.useState(!1),
+    [n, O] = i.useState(!1),
     {
       analyticsLocations: S
     } = (0, o.ZP)(l.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
@@ -55,23 +55,23 @@ let C = () => {
             className: j.perksDiscoverability,
             noBackground: !0,
             leftAlignHeaders: !0,
-            showAllPerksButton: (0, r.jsx)(x.Z, {
-              setIsAllPerksVisible: C,
+            showAllPerksButton: (0, r.jsx)(N.Z, {
+              setIsAllPerksVisible: O,
               previousComponent: b.MQ.HOME
             })
           }), (0, r.jsx)(p.Z, {
             className: j.giftNitro,
             location: l.Z.PREMIUM_MARKETING_GIFT_SECTION,
             analyticsLocation: {
-              page: _.ZY5.NITRO_HOME,
-              section: _.jXE.GIFT_BANNER
+              page: x.ZY5.NITRO_HOME,
+              section: x.jXE.GIFT_BANNER
             }
           }), (0, r.jsx)("div", {
             className: j.footerSpacing
           }), (0, r.jsx)(s.$, {
             innerRef: t,
             onChange: e => {
-              e && !v && (u.default.track(_.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+              e && !v && (u.default.track(x.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                 location_stack: S
               }), T(!0))
             },
@@ -80,7 +80,7 @@ let C = () => {
               className: j.bottomOfPageVisibilitySensor
             })
           }), (0, r.jsx)("img", {
-            src: O,
+            src: C,
             className: j.bottomIllustration,
             width: 112,
             height: 85,
@@ -88,9 +88,9 @@ let C = () => {
           })]
         })
       })
-    }), (0, r.jsx)(N.Z, {
+    }), (0, r.jsx)(_.Z, {
       isAllPerksVisible: n,
-      setIsAllPerksVisible: C,
+      setIsAllPerksVisible: O,
       previousComponent: b.MQ.HOME
     })]
   })

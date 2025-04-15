@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => C
+  Z: () => O
 });
 var r = n(200651),
   i = n(192379),
@@ -17,18 +17,18 @@ var r = n(200651),
   h = n(779618),
   f = n(39604),
   b = n(703288),
-  N = n(491758),
-  x = n(233685),
-  _ = n(388032),
+  _ = n(491758),
+  N = n(233685),
+  x = n(388032),
   E = n(922284),
   j = n(802454),
-  O = n(20493);
+  C = n(20493);
 
-function C(e) {
+function O(e) {
   let {
     className: t,
     showHeader: n = !0
-  } = e, C = u.tU.useSetting(), {
+  } = e, O = u.tU.useSetting(), {
     enableViewerClipping: S
   } = d.Z.useExperiment({
     location: "Clips Settings"
@@ -48,33 +48,33 @@ function C(e) {
       tag: l.RB0.H1,
       title: n ? (0, r.jsxs)("div", {
         className: E.headerContainer,
-        children: [_.NW.string(_.t.z2jK6e), (0, r.jsx)(b.Z, {})]
+        children: [x.NW.string(x.t.z2jK6e), (0, r.jsx)(b.Z, {})]
       }) : null,
       children: T && (0, r.jsxs)("form", {
         onSubmit: e => e.preventDefault(),
-        children: [(0, r.jsx)(N.Z, {}), (0, r.jsx)(x.Z, {})]
+        children: [(0, r.jsx)(_.Z, {}), (0, r.jsx)(N.Z, {})]
       })
     }), T && (0, r.jsx)(l.$i$, {}), (0, r.jsxs)(l.hjN, {
-      className: n || T ? O.marginTop20 : t,
+      className: n || T ? C.marginTop20 : t,
       children: [(0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
-        value: C,
-        note: _.NW.string(_.t["wW9/zc"]),
+        value: O,
+        note: x.NW.string(x.t["wW9/zc"]),
         onChange: e => f.yg({
           allowVoiceRecording: e
         }),
-        children: _.NW.string(_.t.AGDDkJ)
+        children: x.NW.string(x.t.AGDDkJ)
       }), S && y && (0, r.jsx)(l.j7V, {
         hideBorder: !0,
         className: j.formItem,
         value: I,
-        note: _.NW.string(_.t["0vjy8P"]),
+        note: x.NW.string(x.t["0vjy8P"]),
         onChange: e => f.yl({
           enabled: e,
           trackAnalytics: !0
         }),
-        children: _.NW.string(_.t.NWw7kZ)
+        children: x.NW.string(x.t.NWw7kZ)
       })]
     })]
   })

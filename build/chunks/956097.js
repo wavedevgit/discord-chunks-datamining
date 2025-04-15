@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r, i, s, a = n(200651),
   l = n(442837),
@@ -16,7 +16,7 @@ let h = {
   },
   f = [],
   b = ["discord.com", "discordapp.com", "discordapp.net", "dl.discordapp.net", "discordcdn.com", "discord.gg", "discord.media"];
-class N extends(r = l.ZP.Store) {
+class _ extends(r = l.ZP.Store) {
   initialize() {
     this.updateState(), this.addListener()
   }
@@ -146,10 +146,10 @@ class N extends(r = l.ZP.Store) {
     }), this.clientEnabled
   }
 }
-s = "WarpClientStore", (i = "displayName") in N ? Object.defineProperty(N, i, {
+s = "WarpClientStore", (i = "displayName") in _ ? Object.defineProperty(_, i, {
   value: s,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : N[i] = s;
-let x = new N(c.Z, {})
+}) : _[i] = s;
+let N = new _(c.Z, {})

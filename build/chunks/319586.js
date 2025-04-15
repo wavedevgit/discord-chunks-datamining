@@ -1,5 +1,6 @@
-/** Chunk was on 96408 **/
-o.r(e.exports = {
+/** Chunk was on 64865 **/
+"use strict";
+r.r(e.exports = {
   standardSidebarView: "standardSidebarView__23e6b",
   withUpsell: "withUpsell__23e6b",
   sidebarRegion: "sidebarRegion__23e6b",

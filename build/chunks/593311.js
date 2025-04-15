@@ -1,4 +1,5 @@
-/** Chunk was on 96408 **/
+/** Chunk was on 64865 **/
+"use strict";
 e.exports = {
   newBadge: "newBadge_f14037",
   badgeContainer: "badgeContainer_f14037",

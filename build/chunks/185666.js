@@ -1,30 +1,30 @@
-/** Chunk was on 4584 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   Z: () => f
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  o = n(570140),
-  l = n(317770),
+  l = n(570140),
+  o = n(317770),
   s = n(731971),
   a = n(626135),
   c = n(379164),
   u = n(590965),
   d = n(981631);
-let p = "INVITE_MODAL_KEY";
-class h extends l.Z {
+let h = "INVITE_MODAL_KEY";
+class p extends o.Z {
   _initialize() {
-    o.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), o.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    l.Z.subscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.subscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   _terminate() {
-    (0, i.Mr3)(p), o.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), o.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
+    (0, i.Mr3)(h), l.Z.unsubscribe("INVITE_MODAL_OPEN", this.handleOpenModal), l.Z.unsubscribe("INVITE_MODAL_CLOSE", this.handleCloseModal)
   }
   handleOpenModal(e) {
     let {
       context: t
     } = e;
-    u.Z.isOpen() && !(0, i.nfh)(p) && (0, i.ZDy)(async () => {
+    u.Z.isOpen() && !(0, i.nfh)(h) && (0, i.ZDy)(async () => {
       let {
         default: e
       } = await n.e("86872").then(n.bind(n, 472365));
@@ -47,7 +47,7 @@ class h extends l.Z {
         return e
       }({}, t))
     }, {
-      modalKey: p,
+      modalKey: h,
       contextKey: (0, i.VnL)(t),
       onCloseRequest: () => {
         let e = (0, s.e7)(),
@@ -60,7 +60,7 @@ class h extends l.Z {
     })
   }
   handleCloseModal() {
-    (0, i.Mr3)(p)
+    (0, i.Mr3)(h)
   }
 }
-let f = new h
+let f = new p

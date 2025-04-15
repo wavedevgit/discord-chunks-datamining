@@ -1,6 +1,6 @@
-/** Chunk was on 21411 **/
+/** Chunk was on 21924 **/
 n.d(t, {
-  Z: () => f
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -15,19 +15,19 @@ var r = n(200651),
   x = n(621600),
   p = n(981631),
   b = n(388032);
-let f = e => {
+let h = e => {
   let {
     user: t,
     channelId: n,
-    reportId: f
-  } = e, h = d.Z.getDMFromUserId(t.id), _ = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), g = l.useMemo(() => m.ZP.getName(null == _ ? void 0 : _.guild_id, null == _ ? void 0 : _.id, t), [_, t]), v = (0, i.e7)([u.ZP], () => null == h ? null : u.ZP.isChannelMuted(null, h)), [j, N] = l.useState(null != v && v), y = l.useCallback(() => {
-    null != h && (N(!0), o.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
+    reportId: h
+  } = e, _ = d.Z.getDMFromUserId(t.id), f = (0, i.e7)([d.Z], () => d.Z.getChannel(n), [n]), g = l.useMemo(() => m.ZP.getName(null == f ? void 0 : f.guild_id, null == f ? void 0 : f.id, t), [f, t]), v = (0, i.e7)([u.ZP], () => null == _ ? null : u.ZP.isChannelMuted(null, _)), [j, N] = l.useState(null != v && v), y = l.useCallback(() => {
+    null != _ && (N(!0), o.ZP.trackWithMetadata(p.rMx.IAR_MUTE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: f
-    }), a.Z.updateChannelOverrideSettings(null, h, {
+      report_id: h
+    }), a.Z.updateChannelOverrideSettings(null, _, {
       muted: !0
     }, x.ZB.Muted), s.Z.showMuteSuccessToast(t.id, n))
-  }, [h, n, t, f]);
+  }, [_, n, t, h]);
   return (0, r.jsx)(c.ZP, {
     title: b.NW.formatToPlainString(b.t.TRp5wc, {
       username: g

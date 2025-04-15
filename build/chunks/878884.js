@@ -1,6 +1,6 @@
 /** Chunk was on 93602 **/
 n.d(t, {
-  Z: () => Z
+  Z: () => I
 }), n(388685);
 var r, l, i, o = n(442837),
   a = n(46973),
@@ -14,20 +14,20 @@ var r, l, i, o = n(442837),
   g = n(979651),
   b = n(938475),
   O = n(981631),
-  y = n(354459);
-let h = new c.Z,
+  h = n(354459);
+let y = new c.Z,
   v = new c.Z,
-  j = new Set;
+  S = new Set;
 
-function S(e, t, n) {
+function j(e, t, n) {
   let r = new u.Z({
       userId: e.id,
       channelId: n
     }),
     l = (0, b.PH)(r, null != t ? t : O.ME, e.id);
-  h.set(e.id, l);
+  y.set(e.id, l);
   let i = {
-    type: y.fO.USER,
+    type: h.fO.USER,
     user: e,
     id: e.id,
     streamId: null,
@@ -43,64 +43,64 @@ function S(e, t, n) {
   v.set(e.id, i)
 }
 
-function P(e) {
-  let t = h.delete(e),
+function N(e) {
+  let t = y.delete(e),
     n = v.delete(e),
-    r = j.delete(e);
+    r = S.delete(e);
   return t || n || r
 }
 
-function N() {
+function P() {
   var e;
   let t = f.Z.getChannelId();
   if (null == t) return !1;
   let n = null == (e = p.Z.getChannel(t)) ? void 0 : e.getGuildId(),
     r = !1;
-  return j.forEach(e => {
-    if (null != g.Z.getVoiceStateForChannel(t, e)) return void j.delete(e);
+  return S.forEach(e => {
+    if (null != g.Z.getVoiceStateForChannel(t, e)) return void S.delete(e);
     let l = m.default.getUser(e);
-    null != l && (r = !0, j.delete(e), S(l, n, t))
+    null != l && (r = !0, S.delete(e), j(l, n, t))
   }), r
 }
 
-function I() {
-  h.clear(), v.clear(), j.clear()
+function E() {
+  y.clear(), v.clear(), S.clear()
 }
-class E extends(r = o.ZP.Store) {
+class Z extends(r = o.ZP.Store) {
   initialize() {
-    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], N)
+    this.waitFor(g.Z, m.default, p.Z, f.Z), this.syncWith([m.default], P)
   }
   get desyncedVoiceStatesCount() {
-    return h.size()
+    return y.size()
   }
   getDesyncedUserIds() {
-    return h.keys()
+    return y.keys()
   }
   getDesyncedVoiceStates() {
-    return h.values()
+    return y.values()
   }
   getDesyncedParticipants() {
     return v.values()
   }
 }
-i = "RTCConnectionDesyncStore", (l = "displayName") in E ? Object.defineProperty(E, l, {
+i = "RTCConnectionDesyncStore", (l = "displayName") in Z ? Object.defineProperty(Z, l, {
   value: i,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : E[l] = i;
-let Z = new E(s.Z, {
+}) : Z[l] = i;
+let I = new Z(s.Z, {
   CONNECTION_OPEN: function() {
-    I()
+    E()
   },
-  VOICE_CHANNEL_SELECT: I,
+  VOICE_CHANNEL_SELECT: E,
   RTC_CONNECTION_STATE: function(e) {
     let {
       state: t,
       context: n
     } = e;
     if (n !== a.Yn.DEFAULT || t !== O.hes.DISCONNECTED) return !1;
-    I()
+    E()
   },
   VOICE_STATE_UPDATES: function(e) {
     let {
@@ -111,7 +111,7 @@ let Z = new E(s.Z, {
         userId: r,
         channelId: l
       } = t;
-      return l === n && !!P(r) || e
+      return l === n && !!N(r) || e
     }, !1)
   },
   RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -124,7 +124,7 @@ let Z = new E(s.Z, {
     return l === a.Yn.DEFAULT && t.reduce((e, t) => {
       if (null != g.Z.getVoiceStateForChannel(r, t)) return e;
       let l = m.default.getUser(t);
-      return null == l ? (j.add(t), e) : (S(l, n, r), !0)
+      return null == l ? (S.add(t), e) : (j(l, n, r), !0)
     }, !1)
   },
   RTC_CONNECTION_CLIENT_DISCONNECT: function(e) {
@@ -132,6 +132,6 @@ let Z = new E(s.Z, {
       userId: t,
       context: n
     } = e;
-    return n === a.Yn.DEFAULT && P(t)
+    return n === a.Yn.DEFAULT && N(t)
   }
 })

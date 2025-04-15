@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  q: () => N
+  q: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -24,7 +24,7 @@ function f(e) {
     count: n
   } = e, d = (0, s.e7)([m.default], () => m.default.getUser(t)), f = g.ZP.getFormattedName(d), b = i.useCallback(() => {
     (0, c.Zn)(t)
-  }, [t]), N = i.useCallback(() => (0, u.openUserProfileModal)({
+  }, [t]), _ = i.useCallback(() => (0, u.openUserProfileModal)({
     userId: t
   }), [t]);
   return i.useEffect(() => {
@@ -39,7 +39,7 @@ function f(e) {
       className: h.text,
       children: [(0, r.jsx)(a.P3F, {
         className: h.username,
-        onClick: N,
+        onClick: _,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/semibold",
           color: "interactive-active",
@@ -97,7 +97,7 @@ function b(e) {
   })
 }
 
-function N(e) {
+function _(e) {
   let {
     userId: t
   } = e, n = (0, d._)(t);

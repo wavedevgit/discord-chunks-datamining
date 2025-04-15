@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -17,19 +17,19 @@ var r = n(200651),
   h = n(981631),
   f = n(474936),
   b = n(388032),
-  N = n(482470);
+  _ = n(482470);
 
-function x(e) {
+function N(e) {
   let {
     user: t,
     guild: n,
     className: s,
-    sectionTitle: x,
-    forcedDivider: _ = !1,
+    sectionTitle: N,
+    forcedDivider: x = !1,
     withTutorial: E = !1,
     showBorder: j = !1,
-    isTryItOutFlow: O = !1,
-    initialSelectedEffectId: C
+    isTryItOutFlow: C = !1,
+    initialSelectedEffectId: O
   } = e, S = (0, m.Kg)(t, n), v = u.ZP.canUsePremiumProfileCustomization(t), {
     analyticsLocations: T
   } = (0, o.ZP)(), {
@@ -37,9 +37,9 @@ function x(e) {
     errors: y
   } = (0, m.bd)(n), A = i.useCallback(() => (0, c.H)({
     analyticsLocations: T,
-    initialSelectedEffectId: C,
+    initialSelectedEffectId: O,
     guild: n
-  }), [T, C, n]);
+  }), [T, O, n]);
   i.useEffect(() => {
     v && d.default.track(h.rMx.PREMIUM_UPSELL_VIEWED, {
       type: f.cd.PROFILE_EFFECTS_INLINE_SETTINGS,
@@ -49,24 +49,24 @@ function x(e) {
   let P = null != n,
     R = E ? l.gtL : l.zxk;
   return (0, r.jsx)(g.Z, {
-    forcedDivider: _,
+    forcedDivider: x,
     borderType: p.Y.PREMIUM,
     hasBackground: !0,
-    title: x,
+    title: N,
     showBorder: j,
     errors: y,
     className: s,
     children: (0, r.jsxs)("div", {
-      className: N.buttonsContainer,
+      className: _.buttonsContainer,
       children: [(0, r.jsx)(R, {
         size: l.zxk.Sizes.SMALL,
         onClick: A,
         className: a()({
-          [N.buttonHighlighted]: E
+          [_.buttonHighlighted]: E
         }),
         children: b.NW.string(b.t["0nEVoK"])
-      }), (O || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
-        className: N.removeButton,
+      }), (C || void 0 !== I ? null != I : null != S) && (0, r.jsx)(l.zxk, {
+        className: _.removeButton,
         color: l.zxk.Colors.PRIMARY,
         look: l.zxk.Looks.LINK,
         size: l.zxk.Sizes.SMALL,

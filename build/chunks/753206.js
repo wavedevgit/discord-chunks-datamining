@@ -1,81 +1,82 @@
-/** Chunk was on 84926 **/
-n.d(t, {
-  Z: () => g
+/** Chunk was on 64865 **/
+"use strict";
+r.d(t, {
+  Z: () => p
 });
-var r = n(200651),
-  i = n(192379),
-  l = n(120356),
-  o = n.n(l),
-  a = n(628238),
-  s = n(367814),
-  u = n(492593),
-  c = n(25015),
-  d = n(963550),
-  f = n(845080),
-  p = n(30804);
-let g = i.memo(function(e) {
-  var t, n, i, l;
+var n = r(200651),
+  i = r(192379),
+  s = r(120356),
+  o = r.n(s),
+  l = r(628238),
+  a = r(367814),
+  c = r(492593),
+  h = r(25015),
+  v = r(963550),
+  u = r(845080),
+  f = r(30804);
+let p = i.memo(function(e) {
+  var t, r, i, s;
   let {
-    message: g,
-    channel: v,
-    compact: m,
-    className: b,
-    isGroupStart: h,
-    hideSimpleEmbedContent: O = !0,
-    disableInteraction: y,
-    previewGuildId: j,
-    preview: S,
-    author: E
-  } = e, D = null != (t = null != j ? j : g.getGuildId()) ? t : void 0, w = (0, s.Z)(E), P = (0, a.A)((null != (n = g.editedTimestamp) ? n : g.timestamp).valueOf()), {
-    content: _
-  } = (0, c.Z)(g, {
-    hideSimpleEmbedContent: O,
-    allowList: P,
-    allowHeading: P,
+    message: p,
+    channel: d,
+    compact: b,
+    className: g,
+    isGroupStart: Z,
+    hideSimpleEmbedContent: j = !0,
+    disableInteraction: M,
+    previewGuildId: O,
+    preview: y,
+    author: m
+  } = e, H = null != (t = null != O ? O : p.getGuildId()) ? t : void 0, x = (0, a.Z)(m), V = (0, l.A)((null != (r = p.editedTimestamp) ? r : p.timestamp).valueOf()), {
+    content: w
+  } = (0, h.Z)(p, {
+    hideSimpleEmbedContent: j,
+    allowList: V,
+    allowHeading: V,
     allowLinks: !0,
     previewLinkTarget: !0
   });
-  return (0, r.jsx)(u.Z, {
-    compact: m,
-    className: o()(b, {
-      [p.message]: !0,
-      [p.cozyMessage]: !m,
-      [p.groupStart]: h
+  return (0, n.jsx)(c.Z, {
+    compact: b,
+    className: o()(g, {
+      [f.message]: !0,
+      [f.cozyMessage]: !b,
+      [f.groupStart]: Z
     }),
-    childrenHeader: (0, f.Z)((i = function(e) {
+    childrenHeader: (0, u.Z)((i = function(e) {
       for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-          r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-          var r;
-          r = n[t], t in e ? Object.defineProperty(e, t, {
-            value: r,
+        var r = null != arguments[t] ? arguments[t] : {},
+          n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+          return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+          var n;
+          n = r[t], t in e ? Object.defineProperty(e, t, {
+            value: n,
             enumerable: !0,
             configurable: !0,
             writable: !0
-          }) : e[t] = r
+          }) : e[t] = n
         })
       }
       return e
-    }({}, e), l = l = {
-      channel: v,
-      guildId: D
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-      var n = Object.keys(e);
+    }({}, e), s = s = {
+      channel: d,
+      guildId: H
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      var r = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, r)
+        var n = Object.getOwnPropertySymbols(e);
+        r.push.apply(r, n)
       }
-      return n
-    })(Object(l)).forEach(function(e) {
-      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      return r
+    })(Object(s)).forEach(function(e) {
+      Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
     }), i)),
-    childrenMessageContent: (0, d.Z)(e, _),
-    disableInteraction: y,
-    authorHasGradientRole: w,
-    guildId: D,
-    preview: S
+    childrenMessageContent: (0, v.Z)(e, w),
+    disableInteraction: M,
+    authorHasGradientRole: x,
+    guildId: H,
+    preview: y
   })
 })

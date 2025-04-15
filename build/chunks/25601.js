@@ -1,6 +1,6 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => a
+  Z: () => s
 });
 var r = n(200651);
 n(192379);
@@ -8,7 +8,7 @@ var i = n(831209),
   l = n(481060),
   o = n(646094);
 
-function a(e) {
+function s(e) {
   let {
     mentionsCount: t,
     isMentionLowImportance: n

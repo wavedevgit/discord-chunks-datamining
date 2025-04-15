@@ -1,10 +1,10 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 23202 **/
 n.d(t, {
-  C: () => a,
+  C: () => i,
   W: () => l
 });
 var r = n(907584);
-let a = e => ({
+let i = e => ({
     enabled: r.Z.getCurrentConfig(e).enabled
   }),
   l = e => ({

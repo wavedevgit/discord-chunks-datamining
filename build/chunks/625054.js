@@ -1,11 +1,11 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(525654),
   i = n.n(r),
-  o = n(643191);
-let a = {
+  s = n(643191);
+let l = {
   dump(e) {
     let t;
     null != performance.memory && (t = {
@@ -24,5 +24,5 @@ let a = {
       memory: t
     })
   },
-  getTimeSinceNavigationStart: () => Date.now() - o.mb
+  getTimeSinceNavigationStart: () => Date.now() - s.mb
 }

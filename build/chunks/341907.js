@@ -93,7 +93,7 @@ function k(e) {
   (0, s.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("41851"), n.e("29267")]).then(n.bind(n, 985866));
+    } = await Promise.all([n.e("37447"), n.e("64838"), n.e("27458"), n.e("78900"), n.e("37560")]).then(n.bind(n, 985866));
     return n => (0, r.jsx)(e, L(w({}, n), {
       questId: t,
       questContentPosition: o,

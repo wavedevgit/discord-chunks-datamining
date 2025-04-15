@@ -1,16 +1,16 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => s
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
   l = n(603592),
   o = n(388032);
-let a = "DOWNLOAD_APPS";
+let s = "DOWNLOAD_APPS";
 
-function s() {
-  let e = (0, i.s9z)(e => (0, i.DEQ)(e, a));
+function a() {
+  let e = (0, i.s9z)(e => (0, i.DEQ)(e, s));
   return (0, r.jsx)(l.Z, {
     id: "app-download-button",
     onClick: () => {
@@ -39,7 +39,7 @@ function s() {
           source: "Guilds"
         }, t))
       }, {
-        modalKey: a
+        modalKey: s
       })
     },
     selected: e,

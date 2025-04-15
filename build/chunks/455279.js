@@ -1,7 +1,7 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => E,
-  c: () => N
+  c: () => _
 }), n(388685);
 var r, i = n(200651),
   s = n(192379),
@@ -25,12 +25,12 @@ function b(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-var N = ((r = {}).DEFAULT = "DEFAULT", r.RECORDING = "RECORDING", r);
-let x = {
+var _ = ((r = {}).DEFAULT = "DEFAULT", r.RECORDING = "RECORDING", r);
+let N = {
   DEFAULT: f.__invalid_default,
   RECORDING: f.recording
 };
-class _ extends s.PureComponent {
+class x extends s.PureComponent {
   componentWillUnmount() {
     null != this._unregisterNativeRecorder && this._unregisterNativeRecorder()
   }
@@ -66,7 +66,7 @@ class _ extends s.PureComponent {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: l()(f.recorderContainer, x[t], {
+        className: l()(f.recorderContainer, N[t], {
           [f.hasValue]: a,
           [f.containerDisabled]: r
         }),
@@ -134,4 +134,4 @@ class _ extends s.PureComponent {
     })
   }
 }
-let E = _
+let E = x

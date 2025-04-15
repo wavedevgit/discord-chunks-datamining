@@ -1,8 +1,8 @@
-/** Chunk was on 79879 **/
-n.d(t, {
+/** Chunk was on 94338 **/
+t.d(n, {
   P: () => i
 });
-let r = (0, n(818083).B)({
+let r = (0, t(818083).B)({
   kind: "user",
   id: "2023-08-30_open-in-popout",
   label: "Open Channel in Popout",

@@ -1,10 +1,10 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   NR: () => l,
-  Ob: () => s,
+  Ob: () => a,
   ZI: () => o,
   m1: () => c,
-  uc: () => a
+  uc: () => s
 });
 var r = n(987170),
   i = n(987338);
@@ -40,7 +40,7 @@ let l = (0, r.Z)({
       }
     }]
   }),
-  a = (0, r.Z)({
+  s = (0, r.Z)({
     kind: "user",
     id: "2024-08_ctp_dmgdm_list_render__multiple_buckets",
     label: "CTP DM/GDM List Render - A/A test - Multiple buckets",
@@ -62,7 +62,7 @@ let l = (0, r.Z)({
       }
     }]
   }),
-  s = (0, r.Z)({
+  a = (0, r.Z)({
     kind: "user",
     id: "2024-08_ctp_dmgdm_list_render__everyone",
     label: "CTP DM/GDM List Render - A/A test - Everyone",

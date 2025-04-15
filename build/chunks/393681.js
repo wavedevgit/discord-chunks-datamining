@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => J
+  Z: () => Q
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(279837),
   f = n(952306),
   b = n(600164),
-  N = n(690221),
-  x = n(346585),
-  _ = n(347649),
+  _ = n(690221),
+  N = n(346585),
+  x = n(347649),
   E = n(332473),
   j = n(303172),
-  O = n(518560),
-  C = n(921801),
+  C = n(518560),
+  O = n(921801),
   S = n(484459),
   v = n(430824),
   T = n(325067),
@@ -147,8 +147,8 @@ class X extends i.PureComponent {
       className: z.accountWarningBodyText,
       messageType: u.QYI.WARNING,
       children: [this.props.forceMigrationExperiment ? H.NW.format(H.t.zT1hgo, {
-        date: (0, x.IE)(this.props.locale)
-      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(N.Z, {
+        date: (0, N.IE)(this.props.locale)
+      }) : H.NW.format(H.t.pdYZys, {}), " ", "", (0, r.jsx)(_.Z, {
         className: z.noticeTextButton,
         onClick: () => (0, j.Z)(F.Kq.USER_SETTINGS),
         children: H.NW.string(H.t.LhlgY2)
@@ -185,7 +185,7 @@ class X extends i.PureComponent {
             src: n(511391)
           }), H.NW.string(H.t.FsmBy8)]
         })
-      }) : null, (0, r.jsx)(C.F, {
+      }) : null, (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.zxk, {
@@ -197,7 +197,7 @@ class X extends i.PureComponent {
             children: H.NW.string(H.t["FRep5+"])
           })
         })
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_MULTI_FACTOR_AUTHENTICATION,
         children: (0, r.jsxs)(b.Z, {
           align: b.Z.Align.STRETCH,
@@ -294,13 +294,13 @@ class X extends i.PureComponent {
   }
   renderSecuritySettingsRedesign() {
     return (0, r.jsxs)(r.Fragment, {
-      children: [this.renderConfirmModals(), (0, r.jsx)(C.F, {
+      children: [this.renderConfirmModals(), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_PROFILE,
         children: this.renderAccountSettings(!1)
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_PASSWORD_AND_AUTHENTICATION,
         children: this.renderSecuritySettings()
-      }), (0, r.jsx)(C.F, {
+      }), (0, r.jsx)(O.F, {
         setting: V.s6.ACCOUNT_REMOVAL,
         children: this.renderAccountRemovalSettings()
       })]
@@ -328,7 +328,7 @@ class X extends i.PureComponent {
           setting: V.s6.ACCOUNT_SECURITY_TAB
         }, {
           title: H.NW.string(H.t["Vov/9v"]),
-          component: O.Z,
+          component: C.Z,
           setting: V.s6.PRIVACY_AND_SAFETY_STANDING
         }]
       })
@@ -374,7 +374,7 @@ class X extends i.PureComponent {
     }
   }
 }
-let J = () => {
+let Q = () => {
   let e = (0, c.e7)([A.default], () => {
       let e = A.default.getCurrentUser();
       return o()(null != e, "ConnectedUserAccountSettings: currentUser cannot be undefined"), e
@@ -383,7 +383,7 @@ let J = () => {
     n = (0, c.e7)([I.Z], () => I.Z.hidePersonalInformation),
     i = (0, c.e7)([Z.Z], () => Z.Z.theme),
     s = (0, E.b)(),
-    a = (0, _.CC)(),
+    a = (0, x.CC)(),
     l = (0, c.e7)([D.default], () => D.default.locale),
     d = (0, c.e7)([y.Z], () => y.Z.getSubsection());
   return (0, r.jsx)(X, {

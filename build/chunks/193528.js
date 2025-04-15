@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -36,7 +36,7 @@ function b(e) {
   return e
 }
 
-function N(e, t) {
+function _(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -49,29 +49,29 @@ function N(e, t) {
   }), e
 }
 
-function x(e) {
+function N(e) {
   let {
     onChange: t,
     onClose: n,
     color: s,
-    suggestedColors: x,
-    disabled: _,
+    suggestedColors: N,
+    disabled: x,
     label: E,
     colorPickerMiddle: j,
-    colorPickerFooter: O,
-    showEyeDropper: C
-  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(O), [Z, w] = i.useState((0, l.Z)());
+    colorPickerFooter: C,
+    showEyeDropper: O
+  } = e, S = i.useRef(null), v = (0, d.dQu)(c.Z.colors.BACKGROUND_PRIMARY).hex(), T = c.Z.colors.BACKGROUND_ACCENT.css, I = (0, g.DP)(s), y = (0, o.Rf)(s), A = y === v ? T : y, P = (0, m.Lq)(I ? p.Ilk.WHITE_500 : p.Ilk.PRIMARY_530), R = (0, u.Z)(j), D = (0, u.Z)(C), [Z, w] = i.useState((0, l.Z)());
   return i.useEffect(() => {
-    (R !== j || D !== O) && w((0, l.Z)())
-  }, [O, j, D, R]), (0, r.jsx)(d.yRy, {
+    (R !== j || D !== C) && w((0, l.Z)())
+  }, [C, j, D, R]), (0, r.jsx)(d.yRy, {
     positionKey: Z,
-    renderPopout: e => (0, r.jsx)(d.Z$W, N(b({}, e), {
+    renderPopout: e => (0, r.jsx)(d.Z$W, _(b({}, e), {
       value: s,
       onChange: t,
-      suggestedColors: x,
+      suggestedColors: N,
       middle: j,
-      footer: O,
-      showEyeDropper: C
+      footer: C,
+      showEyeDropper: O
     })),
     onRequestClose: n,
     children: e => {
@@ -95,11 +95,11 @@ function x(e) {
       return (0, r.jsxs)("div", {
         ref: S,
         className: a()(f.colorSwatch, {
-          [f.disabled]: _
+          [f.disabled]: x
         }),
-        children: [(0, r.jsx)(d.P3F, N(b({}, n), {
-          tabIndex: _ ? -1 : 0,
-          onClick: _ ? p.dG4 : t,
+        children: [(0, r.jsx)(d.P3F, _(b({}, n), {
+          tabIndex: x ? -1 : 0,
+          onClick: x ? p.dG4 : t,
           style: {
             backgroundColor: y,
             borderColor: A

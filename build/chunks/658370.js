@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => b
 }), n(953529);
@@ -22,13 +22,13 @@ let b = e => {
   let n, {
       title: i,
       titleClassName: b = "",
-      buttonClassName: N = "",
-      subtitle: x = "",
-      description: _ = "",
+      buttonClassName: _ = "",
+      subtitle: N = "",
+      description: x = "",
       descriptionCta: E = "",
       isPremiumGetCta: j,
-      onCtaClick: O,
-      cardVariant: C
+      onCtaClick: C,
+      cardVariant: O
     } = e,
     S = (0, d.N)(),
     v = null == S ? void 0 : S.subscription_trial,
@@ -46,25 +46,25 @@ let b = e => {
         percent: null == T ? void 0 : T.discount.amount
       })
     }),
-    A = (0, u._)(C);
+    A = (0, u._)(O);
   return (0, r.jsxs)("div", {
     className: s()(f.cardDescription, null == A || null == (t = A.description) ? void 0 : t.className),
     children: [(0, r.jsx)(m.Z, {
       title: i,
       cardVariantStyleInfo: A,
       titleClassName: b,
-      subtitle: x,
-      description: _
+      subtitle: N,
+      description: x
     }), j && (0, r.jsx)(g.Z, {
-      className: N,
+      className: _,
       look: a.zxk.Looks.BLANK,
       color: a.zxk.Colors.CUSTOM,
       subscriptionTier: p.Si.TIER_2,
       buttonText: y,
       showGradient: !0
-    }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != O && (0, r.jsx)(a.zxk, {
-      className: N,
-      onClick: O,
+    }), 0 !== E.length && (null == (n = null == A ? void 0 : A.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, r.jsx)(a.zxk, {
+      className: _,
+      onClick: C,
       children: E
     })]
   })

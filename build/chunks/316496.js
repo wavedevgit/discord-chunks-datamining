@@ -1,4 +1,4 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
   SN: () => c,
   m_: () => d
@@ -7,8 +7,8 @@ var r = n(442837),
   i = n(818083),
   l = n(695346),
   o = n(885110),
-  a = n(231338);
-let s = (0, i.B)({
+  s = n(231338);
+let a = (0, i.B)({
   kind: "user",
   id: "2025-02_activity_sharing_popout",
   label: "Enables the rtc popout",
@@ -25,7 +25,7 @@ let s = (0, i.B)({
 });
 
 function c(e) {
-  return s.useExperiment({
+  return a.useExperiment({
     location: e
   }, {
     autoTrackExposure: !0
@@ -50,7 +50,7 @@ let u = (0, i.B)({
 function d(e) {
   let t = l.G6.useSetting(),
     n = (0, r.e7)([o.Z], () => o.Z.getStatus()),
-    i = !t || n === a.Sk.INVISIBLE;
+    i = !t || n === s.Sk.INVISIBLE;
   return u.useExperiment({
     location: e
   }, {

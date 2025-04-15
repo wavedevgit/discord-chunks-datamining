@@ -1,13 +1,13 @@
 /** Chunk was on 27978 **/
 n.d(t, {
-  Z: () => p
+  Z: () => h
 });
-var r, i, o, a = n(442837),
-  l = n(570140),
-  s = n(981631);
+var r, i, s, l = n(442837),
+  o = n(570140),
+  a = n(981631);
 let c = null,
   u = {};
-class d extends(o = a.ZP.Store) {
+class d extends(s = l.ZP.Store) {
   getState(e) {
     return u[e]
   }
@@ -21,23 +21,23 @@ i = "CodedLinkNativeAppStateStore", (r = "displayName") in d ? Object.defineProp
   configurable: !0,
   writable: !0
 }) : d[r] = i;
-let p = new d(l.Z, {
+let h = new d(o.Z, {
   NATIVE_APP_MODAL_OPENING: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPENING, null === c && (c = s.kEZ.OPENING)
+    u[t] = a.kEZ.OPENING, null === c && (c = a.kEZ.OPENING)
   },
   NATIVE_APP_MODAL_OPENED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPEN, c = s.kEZ.OPEN
+    u[t] = a.kEZ.OPEN, c = a.kEZ.OPEN
   },
   NATIVE_APP_MODAL_OPEN_FAILED: function(e) {
     let {
       code: t
     } = e;
-    u[t] = s.kEZ.OPEN_FAIL, (null === c || c === s.kEZ.OPENING) && (c = s.kEZ.OPEN_FAIL)
+    u[t] = a.kEZ.OPEN_FAIL, (null === c || c === a.kEZ.OPENING) && (c = a.kEZ.OPEN_FAIL)
   }
 })

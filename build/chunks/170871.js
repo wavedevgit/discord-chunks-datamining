@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => g
 }), n(388685);
@@ -23,10 +23,10 @@ function g(e) {
     guildName: h,
     guildIcon: f,
     guildIconSize: b,
-    memberCount: N
-  } = e, x = i.useRef(null), [_, E] = i.useState(!1);
+    memberCount: _
+  } = e, N = i.useRef(null), [x, E] = i.useState(!1);
   return i.useEffect(() => {
-    let e = x.current;
+    let e = N.current;
     null != e && null != e.offsetWidth && null != e.scrollWidth && E(e.offsetWidth < e.scrollWidth)
   }, []), (0, r.jsxs)("div", {
     className: a()(m.container, t),
@@ -44,7 +44,7 @@ function g(e) {
         children: [(0, r.jsx)(l.ua7, {
           text: h,
           color: l.ua7.Colors.PRIMARY,
-          shouldShow: _,
+          shouldShow: x,
           children: e => {
             var t, n;
             return (0, r.jsx)("span", (t = function(e) {
@@ -65,7 +65,7 @@ function g(e) {
               }
               return e
             }({
-              ref: x
+              ref: N
             }, e), n = n = {
               className: m.guildName,
               children: h
@@ -80,8 +80,8 @@ function g(e) {
               Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
             }), t))
           }
-        }), null != N && (0, r.jsx)(c.Z, {
-          count: N
+        }), null != _ && (0, r.jsx)(c.Z, {
+          count: _
         })]
       })]
     }), (0, r.jsx)("div", {

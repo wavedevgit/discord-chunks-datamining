@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => W
 }), n(388685);
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(144114),
   f = n(921801),
   b = n(607018),
-  N = n(778764),
-  x = n(314897),
-  _ = n(325067),
+  _ = n(778764),
+  N = n(314897),
+  x = n(325067),
   E = n(594174),
   j = n(572004),
-  O = n(287880),
-  C = n(714565),
+  C = n(287880),
+  O = n(714565),
   S = n(202858),
   v = n(726985),
   T = n(981631),
@@ -138,7 +138,7 @@ class k extends i.PureComponent {
       })
     });
     else {
-      let t = (0, C.c)(i);
+      let t = (0, O.c)(i);
       e = (0, r.jsxs)(p.Z, {
         className: a ? "" : P.marginTop8,
         children: [(0, r.jsx)(o.zxk, {
@@ -259,7 +259,7 @@ class k extends i.PureComponent {
         })]
       }), e, this.renderMFASMS(), (0, r.jsx)(f.F, {
         setting: v.s6.ACCOUNT_SECURITY_KEYS,
-        children: (0, r.jsx)(N.Z, {})
+        children: (0, r.jsx)(_.Z, {})
       })]
     })
   }
@@ -276,14 +276,14 @@ class k extends i.PureComponent {
           size: o.PhG.SMALL,
           children: y.NW.string(y.t.cDgKtb)
         })
-      }), (0, r.jsx)(N.Z, {})]
+      }), (0, r.jsx)(_.Z, {})]
     })
   }
   render() {
     let {
       currentUser: e
     } = this.props;
-    return O.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
+    return C.uZ ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(o.hjN, {
       title: y.NW.string(y.t.EPVq09),
       children: (0, r.jsx)(o.R94, {
         type: o.R94.Types.DESCRIPTION,
@@ -321,7 +321,7 @@ class k extends i.PureComponent {
         onConfirm: () => c.Z.disable()
       })
     }), R(this, "generateBackupCodes", async () => {
-      let e = _.Z.getVerificationKey();
+      let e = x.Z.getVerificationKey();
       await c.Z.confirmViewBackupCodes(e, !0)
     }), R(this, "sendMFABackupCodesVerificationKeyEmail", () => {
       (0, o.h7j)(e => (0, r.jsx)(g.default, Z(D({}, e), {
@@ -383,9 +383,9 @@ class k extends i.PureComponent {
 function W(e) {
   let t = (0, l.e7)([E.default], () => E.default.getCurrentUser());
   a()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-  let n = (0, l.cj)([_.Z, x.default], () => ({
-    togglingSMS: _.Z.togglingSMS,
-    hasTOTPEnabled: x.default.hasTOTPEnabled()
+  let n = (0, l.cj)([x.Z, N.default], () => ({
+    togglingSMS: x.Z.togglingSMS,
+    hasTOTPEnabled: N.default.hasTOTPEnabled()
   }));
   return (0, r.jsx)(k, D({
     currentUser: t

@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => g
 }), n(388685), n(704826), n(35282), n(539854);
@@ -17,12 +17,12 @@ var i = n(525654),
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "390099",
-    f = "3f0652af7043174594055a427730ad1618937aa2".substring(0, 7),
+    h = "390120",
+    f = "6ce32ff5f6433af0dab5cf45791fe6637693decd".substring(0, 7),
     b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
-    N = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
-    x = null === l.Z || void 0 === l.Z || null == (n = (i = l.Z.remoteApp).getAppArch) ? void 0 : n.call(i),
-    _ = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
+    _ = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
+    N = null === l.Z || void 0 === l.Z || null == (n = (i = l.Z.remoteApp).getAppArch) ? void 0 : n.call(i),
+    x = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
     E = function() {
       var e;
       let t = null === s() || void 0 === s() || null == (e = s().os) ? void 0 : e.toString();
@@ -32,7 +32,7 @@ function g() {
       return t.includes("Windows 10") && void 0 !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r - 9)), "".concat(t, " (").concat(n, ")")
     }(),
     j = [p, h, "(".concat(f, ")")];
-  return null != b && (j.push("Host ".concat(b)), null != x && j.push(x.toLowerCase()), null != N && j.push("(".concat(N, ")"))), j.push("Build Override: ".concat(null != _ ? _.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
+  return null != b && (j.push("Host ".concat(b)), null != N && j.push(N.toLowerCase()), null != _ && j.push("(".concat(_, ")"))), j.push("Build Override: ".concat(null != x ? x.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
     copyValue: j.join(" "),
     text: u.NW.string(u.t["9Al4QU"]),
     "aria-label": !1,
@@ -70,14 +70,14 @@ function g() {
               className: m.versionHash,
               children: ["(", f, ")"]
             })]
-          }), " ", null != _ && (0, r.jsx)(a.Text, {
+          }), " ", null != x && (0, r.jsx)(a.Text, {
             tag: "span",
             className: m.line,
             variant: "text-xs/normal",
             color: "text-muted",
             children: (0, r.jsxs)("span", {
               className: m.versionHash,
-              children: ["Build Override: ", _.id]
+              children: ["Build Override: ", x.id]
             })
           }), null != b ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(a.Text, {
@@ -85,11 +85,11 @@ function g() {
               className: m.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", b, " ", null != x ? (0, r.jsxs)("span", {
+              children: ["Host ", b, " ", null != N ? (0, r.jsxs)("span", {
                 className: m.appArch,
-                children: [x.toLowerCase(), " "]
-              }) : null, null != N ? (0, r.jsxs)("span", {
-                children: ["(", N, ")"]
+                children: [N.toLowerCase(), " "]
+              }) : null, null != _ ? (0, r.jsxs)("span", {
+                children: ["(", _, ")"]
               }) : null]
             }), " "]
           }) : null, null != E ? (0, r.jsx)(a.Text, {

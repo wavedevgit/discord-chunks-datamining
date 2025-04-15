@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => A
 });
@@ -17,13 +17,13 @@ var r = n(200651),
   h = n(556296),
   f = n(924557),
   b = n(435064),
-  N = n(894694),
-  x = n(779618),
-  _ = n(39604),
+  _ = n(894694),
+  N = n(779618),
+  x = n(39604),
   E = n(442334),
   j = n(356659),
-  O = n(981631),
-  C = n(37113),
+  C = n(981631),
+  O = n(37113),
   S = n(526761),
   v = n(388032),
   T = n(99645),
@@ -40,9 +40,9 @@ function A() {
       clipsQuality: P
     } = (0, l.cj)([b.Z], () => b.Z.getSettings()),
     R = (0, l.e7)([b.Z], () => b.Z.getHardwareClassification()),
-    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(O.kg4.SAVE_CLIP, !0)),
+    D = (0, l.e7)([h.ZP], () => h.ZP.getKeybindForAction(C.kg4.SAVE_CLIP, !0)),
     Z = b.Z.isDecoupledGameClippingEnabled(),
-    w = (0, x.Z)(p.Z),
+    w = (0, N.Z)(p.Z),
     {
       showClipsHeaderEntrypoint: k
     } = f.NV.useExperiment({
@@ -69,43 +69,43 @@ function A() {
       })
     }], [W]),
     B = i.useMemo(() => [{
-      value: C.LY.RESOLUTION_480,
+      value: O.LY.RESOLUTION_480,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_480
+        resolution: O.LY.RESOLUTION_480
       })
     }, {
-      value: C.LY.RESOLUTION_720,
+      value: O.LY.RESOLUTION_720,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_720
+        resolution: O.LY.RESOLUTION_720
       })
     }, {
-      value: C.LY.RESOLUTION_1080,
+      value: O.LY.RESOLUTION_1080,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_1080
+        resolution: O.LY.RESOLUTION_1080
       })
     }, {
-      value: C.LY.RESOLUTION_1440,
+      value: O.LY.RESOLUTION_1440,
       label: v.NW.formatToPlainString(v.t.TEOC0N, {
-        resolution: C.LY.RESOLUTION_1440
+        resolution: O.LY.RESOLUTION_1440
       })
     }, {
-      value: C.LY.RESOLUTION_SOURCE,
+      value: O.LY.RESOLUTION_SOURCE,
       label: v.NW.string(v.t.XjXqzs)
     }], [W]),
     M = i.useMemo(() => [{
-      value: C.ws.FPS_15,
+      value: O.ws.FPS_15,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_15
+        fps: O.ws.FPS_15
       })
     }, {
-      value: C.ws.FPS_30,
+      value: O.ws.FPS_30,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_30
+        fps: O.ws.FPS_30
       })
     }, {
-      value: C.ws.FPS_60,
+      value: O.ws.FPS_60,
       label: v.NW.formatToPlainString(v.t.Qb44XF, {
-        fps: C.ws.FPS_60
+        fps: O.ws.FPS_60
       })
     }], [W]),
     U = i.useCallback(e => {
@@ -147,11 +147,11 @@ function A() {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.format(v.t.kiaF4e, {
-          onClick: () => d.Z.open(O.oAB.VOICE, null, {
+          onClick: () => d.Z.open(C.oAB.VOICE, null, {
             scrollPosition: S.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION
           })
         })
-      }), R === N.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
+      }), R === _.x.BELOW_MINIMUM ? (0, r.jsx)(g.Z, {
         look: g.z.WARNING,
         className: I.formItem,
         children: v.NW.string(v.t.SIxrIC)
@@ -161,7 +161,7 @@ function A() {
         className: I.formItem,
         value: t,
         note: v.NW.string(v.t["4Qw3ND"]),
-        onChange: e => _.em({
+        onChange: e => x.em({
           clipsEnabled: e,
           trackAnalytics: !0
         }),
@@ -180,7 +180,7 @@ function A() {
           className: I.formItem,
           value: s,
           note: v.NW.string(v.t.YP3ujo),
-          onChange: e => _._Q({
+          onChange: e => x._Q({
             enabled: e,
             trackAnalytics: !0
           }),
@@ -195,7 +195,7 @@ function A() {
           className: I.formItem,
           value: n,
           note: v.NW.string(v.t.m4Cjj4),
-          onChange: e => _.N0(e),
+          onChange: e => x.N0(e),
           children: v.NW.string(v.t["3zwNf3"])
         })
       })]
@@ -203,14 +203,14 @@ function A() {
       className: y.marginTop20,
       children: [(0, r.jsx)(E.Q, {
         className: I.formItem,
-        select: _.eU,
+        select: x.eU,
         title: v.NW.string(v.t.OgfUio),
         note: v.NW.string(v.t.H7j4tb),
         value: A,
         options: L
       }), (0, r.jsx)(E.Q, {
         className: I.formItem,
-        select: e => _.yi({
+        select: e => x.yi({
           resolution: e,
           frameRate: P.frameRate
         }),
@@ -220,7 +220,7 @@ function A() {
         options: B
       }), (0, r.jsx)(E.Q, {
         className: I.formItem,
-        select: e => _.yi({
+        select: e => x.yi({
           resolution: P.resolution,
           frameRate: e
         }),

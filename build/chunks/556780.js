@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 e.exports = {
   accountProfileCard: "accountProfileCard__1fed1",
   userInfo: "userInfo__1fed1",

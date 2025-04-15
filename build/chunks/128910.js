@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 e.exports = {
   cardsContainer: "cardsContainer__50dce",
   container: "container__50dce",

@@ -1,8 +1,8 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Nv: () => x,
+  Nv: () => N,
   pd: () => f,
-  uX: () => _,
+  uX: () => x,
   wk: () => b
 });
 var r = n(350483),
@@ -54,21 +54,21 @@ let g = (e, t) => {
       }), !1
     }
   },
-  N = (e, t) => o.ZP.getMentionCount(t) > 0,
-  x = {
+  _ = (e, t) => o.ZP.getMentionCount(t) > 0,
+  N = {
     binds: ["mod+shift+alt+down"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(1, {
-      channelPredicate: N,
+      channelPredicate: _,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)
   },
-  _ = {
+  x = {
     binds: ["mod+shift+alt+up"],
     comboKeysBindGlobal: !0,
     action: () => ((0, r.Z)(-1, {
-      channelPredicate: N,
+      channelPredicate: _,
       ensureChatIsVisible: h,
       withVoiceChannels: !0
     }), !1)

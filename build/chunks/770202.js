@@ -1,24 +1,24 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => P
+  Z: () => x
 }), n(415506), n(388685);
 var r = n(200651),
   i = n(192379),
   l = n(120356),
   o = n.n(l),
-  a = n(442837),
-  s = n(493683),
+  s = n(442837),
+  a = n(493683),
   c = n(239091),
   u = n(146773),
   d = n(201895),
-  p = n(703656),
-  h = n(592125),
+  h = n(703656),
+  p = n(592125),
   f = n(430824),
   g = n(496675),
   m = n(98597),
   b = n(473403),
-  _ = n(981631),
-  y = n(490897),
+  y = n(981631),
+  _ = n(490897),
   v = n(915887);
 
 function O(e, t, n) {
@@ -30,7 +30,7 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,12 +43,12 @@ function j(e) {
   return e
 }
 
-function C(e, t) {
+function S(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
-  s.Z.preload(n, t.id)
+  a.Z.preload(n, t.id)
 }
-class x extends m.ZP {
+class j extends m.ZP {
   render() {
     let {
       channel: e,
@@ -56,8 +56,8 @@ class x extends m.ZP {
       connectChannelDropTarget: n,
       connectChannelDragSource: i,
       connectDragPreview: l,
-      canReorderChannel: a
-    } = this.props, s = (0, r.jsx)("li", {
+      canReorderChannel: s
+    } = this.props, a = (0, r.jsx)("li", {
       className: o()(this.getClassName(), {
         [v.disabled]: this.isDisabled()
       }),
@@ -67,17 +67,17 @@ class x extends m.ZP {
         channel: e,
         selected: t,
         onClick: this.handleClick,
-        onMouseDown: C,
+        onMouseDown: S,
         onContextMenu: this.handleContextMenu,
-        connectDragPreview: a ? l : null,
+        connectDragPreview: s ? l : null,
         "aria-label": (0, d.ZP)({
           channel: e
         }),
-        resolvedUnreadSetting: y.i.ONLY_MENTIONS,
+        resolvedUnreadSetting: _.i.ONLY_MENTIONS,
         children: [this.renderInviteButton(), this.renderEditButton()]
       })
     });
-    return a ? n(i(s)) : s
+    return s ? n(i(a)) : a
   }
   constructor(...e) {
     super(...e), O(this, "handleContextMenu", e => {
@@ -90,7 +90,7 @@ class x extends m.ZP {
         } = await n.e("99905").then(n.bind(n, 649400));
         return n => {
           var l, o;
-          return (0, r.jsx)(e, (l = j({}, n), o = o = {
+          return (0, r.jsx)(e, (l = C({}, n), o = o = {
             channel: t,
             guild: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
@@ -108,30 +108,30 @@ class x extends m.ZP {
     }), O(this, "handleClick", e => {
       let t = e.getGuildId();
       if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
-      (0, p.uL)(_.Z5c.CHANNEL(t, e.id), {
+      (0, h.uL)(y.Z5c.CHANNEL(t, e.id), {
         state: {
           analyticsSource: {
-            page: _.ZY5.GUILD_CHANNEL,
-            section: _.jXE.CHANNEL_LIST,
-            object: _.qAy.CHANNEL
+            page: y.ZY5.GUILD_CHANNEL,
+            section: y.jXE.CHANNEL_LIST,
+            object: y.qAy.CHANNEL
           }
         }
       })
     })
   }
 }
-let S = (0, u.B)(x),
-  P = i.memo(function(e) {
+let E = (0, u.B)(j),
+  x = i.memo(function(e) {
     let {
       channel: t,
       guild: n,
       disableSorting: i
-    } = e, l = (0, a.cj)([h.Z, g.Z], () => {
-      let e = h.Z.getChannel(t.parent_id);
+    } = e, l = (0, s.cj)([p.Z, g.Z], () => {
+      let e = p.Z.getChannel(t.parent_id);
       return {
-        canManageChannel: g.Z.can(_.Plq.MANAGE_CHANNELS, t),
-        canReorderChannel: !0 !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
+        canManageChannel: g.Z.can(y.Plq.MANAGE_CHANNELS, t),
+        canReorderChannel: !0 !== i && null != e ? g.Z.can(y.Plq.MANAGE_CHANNELS, e) : g.Z.can(y.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(S, j({}, l, e))
+    return (0, r.jsx)(E, C({}, l, e))
   })

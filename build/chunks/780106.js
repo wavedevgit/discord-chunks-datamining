@@ -1,10 +1,10 @@
 /** Chunk was on 93886 **/
 n.d(t, {
   O: () => i,
-  h: () => o
+  h: () => s
 });
-var r = n(593472),
-  a = n(70956),
+var a = n(593472),
+  r = n(70956),
   l = n(981631);
 let i = {
     None: void 0,
@@ -23,10 +23,10 @@ let i = {
       pid: 1234,
       pidPath: [],
       windowHandle: "13229",
-      fullscreenType: r.Jx.BORDERLESS_FULLSCREEN,
+      fullscreenType: a.Jx.BORDERLESS_FULLSCREEN,
       isLauncher: !1,
-      start: Date.now() - a.Z.Millis.HOUR,
+      start: Date.now() - r.Z.Millis.HOUR,
       distributor: l.GQo.STEAM
     }
   },
-  o = Object.keys(i)
+  s = Object.keys(i)

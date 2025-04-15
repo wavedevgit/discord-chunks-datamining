@@ -1,6 +1,6 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
-  Z: () => x
+  Z: () => N
 });
 var r = n(200651),
   i = n(192379),
@@ -18,7 +18,7 @@ var r = n(200651),
   f = n(495288),
   b = n(20493);
 
-function N(e) {
+function _(e) {
   let {
     label: t,
     onChange: n,
@@ -33,7 +33,7 @@ function N(e) {
   })
 }
 
-function x() {
+function N() {
   let e = (0, l.e7)([d.Z], () => d.Z.getSubsection()),
     t = i.createRef(),
     {
@@ -47,8 +47,8 @@ function x() {
       null == t || null == (n = t.current) || n.scrollIntoView(!0)
     }
   }, [s, t, e]);
-  let x = g.M0.reduce((e, t) => e || !!n[t], !1),
-    _ = {
+  let N = g.M0.reduce((e, t) => e || !!n[t], !1),
+    x = {
       [g.$Z.COMMUNICATION]: p.s6.NOTIFICATIONS_EMAILS_COMMUNICATION,
       [g.$Z.SOCIAL]: p.s6.NOTIFICATIONS_EMAILS_SOCIAL,
       [g.$Z.UPDATES_AND_ANNOUNCEMENTS]: p.s6.NOTIFICATIONS_EMAILS_ANNOUNCEMENTS_AND_UPDATES,
@@ -68,7 +68,7 @@ function x() {
           category: t,
           label: i,
           subLabel: s
-        } = e, a = _[t], l = (0, r.jsx)(N, {
+        } = e, a = x[t], l = (0, r.jsx)(_, {
           label: i(),
           subLabel: s(),
           enabled: n[t],
@@ -84,7 +84,7 @@ function x() {
         setting: p.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
         children: [(0, r.jsx)(o.zxk, {
           className: f.marketingUnsubscribeButton,
-          disabled: !x,
+          disabled: !N,
           look: o.iLD.LINK,
           color: o.Ttl.LINK,
           onClick: u.oc,

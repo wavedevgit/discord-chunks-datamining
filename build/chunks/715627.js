@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -26,14 +26,14 @@ let o = {
       offsetYPercentageMax: h,
       offsetYPercentageMin: f,
       customConfettiCanvas: b,
-      speedValues: N = o,
-      dragCoefficientValue: x = 1.66,
-      onAnimationEnd: _
+      speedValues: _ = o,
+      dragCoefficientValue: N = 1.66,
+      onAnimationEnd: x
     } = e, [E, j] = i.useState(null), {
-      confettiCanvas: O
-    } = i.useContext(a.h), C = (0, s.uR)(null != b ? b : O, E), [S, v] = i.useState(!1);
+      confettiCanvas: C
+    } = i.useContext(a.h), O = (0, s.uR)(null != b ? b : C, E), [S, v] = i.useState(!1);
     i.useEffect(() => {
-      S && (null == _ || _())
+      S && (null == x || x())
     });
     let T = i.useMemo(() => {
       if (null != d) return [{
@@ -45,7 +45,7 @@ let o = {
       if (null == t) return;
       let e = Array(null != u ? u : 4).fill(0);
       return e = e.map((n, r) => setTimeout(() => {
-        C.createMultipleConfetti(function(e, t, n, r, i) {
+        O.createMultipleConfetti(function(e, t, n, r, i) {
           var s, a;
           let d = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : o,
             u = arguments.length > 6 && void 0 !== arguments[6] ? arguments[6] : 1.66,
@@ -56,8 +56,8 @@ let o = {
             {
               xMin: f,
               xMax: b,
-              yMin: N,
-              yMax: x
+              yMin: _,
+              yMax: N
             } = d;
           return s = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -92,11 +92,11 @@ let o = {
               type: "static-random",
               minValue: {
                 x: f,
-                y: N
+                y: _
               },
               maxValue: {
                 x: b,
-                y: x
+                y: N
               }
             },
             size: {
@@ -118,11 +118,11 @@ let o = {
           })(Object(a)).forEach(function(e) {
             Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(a, e))
           }), s
-        }(t.getBoundingClientRect(), g, p, h, f, N, x), null != m ? m : 50), r === e.length - 1 && null != _ && v(!0)
+        }(t.getBoundingClientRect(), g, p, h, f, _, N), null != m ? m : 50), r === e.length - 1 && null != x && v(!0)
       }, 60 * r)), () => {
         for (let t of e) clearTimeout(t)
       }
-    }, [C, t, u, m, g, p, h, f, N, x, _]), (0, r.jsx)(s.Ji, {
+    }, [O, t, u, m, g, p, h, f, _, N, x]), (0, r.jsx)(s.Ji, {
       ref: j,
       sprites: null != T ? T : l.CA,
       colors: null != n ? n : l.Br,

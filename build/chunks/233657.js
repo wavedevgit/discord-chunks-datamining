@@ -1,19 +1,19 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => _
+  Z: () => y
 });
 var r = n(200651);
 n(192379);
 var i = n(442837),
   l = n(704215),
   o = n(481060),
-  a = n(239091),
-  s = n(605236),
+  s = n(239091),
+  a = n(605236),
   c = n(554747),
   u = n(306680),
   d = n(9156),
-  p = n(434479),
-  h = n(490897),
+  h = n(434479),
+  p = n(490897),
   f = n(388032),
   g = n(768107);
 
@@ -49,18 +49,18 @@ function b(e, t) {
   }), e
 }
 
-function _(e) {
+function y(e) {
   let {
     guild: t,
-    selected: _
+    selected: y
   } = e, {
-    hasUnread: y,
+    hasUnread: _,
     mentionCount: v
   } = (0, i.cj)([u.ZP], () => ({
-    hasUnread: u.ZP.hasUnread(t.id, h.W.GUILD_EVENT),
-    mentionCount: u.ZP.getMentionCount(t.id, h.W.GUILD_EVENT)
+    hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
+    mentionCount: u.ZP.getMentionCount(t.id, p.W.GUILD_EVENT)
   }), [t.id]), O = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function j() {
+  async function C() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
@@ -68,24 +68,24 @@ function _(e) {
       return n => (0, r.jsx)(e, b(m({}, n), {
         guildId: t.id
       }))
-    }), (0, s.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
+    }), (0, a.EW)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let C = (0, c.ZP)(t.id),
-    x = C.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
-      number: C.length
+  let S = (0, c.ZP)(t.id),
+    j = S.length > 0 ? f.NW.formatToPlainString(f.t.IBdqSk, {
+      number: S.length
     }) : f.NW.string(f.t.tlopTE);
-  return (0, r.jsx)(p.m, {
+  return (0, r.jsx)(h.m, {
     id: "upcoming-events-".concat(t.id),
     renderIcon: e => (0, r.jsx)(o.Que, {
       size: "md",
       color: "currentColor",
       className: e
     }),
-    text: x,
-    selected: _,
-    onClick: j,
+    text: j,
+    selected: y,
+    onClick: C,
     onContextMenu: e => {
-      (0, a.jW)(e, async () => {
+      (0, s.jW)(e, async () => {
         let {
           default: e
         } = await n.e("95307").then(n.bind(n, 867757));
@@ -94,7 +94,7 @@ function _(e) {
         }))
       })
     },
-    showUnread: y && !O,
+    showUnread: _ && !O,
     trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,

@@ -1,17 +1,17 @@
-/** Chunk was on 8039 **/
+/** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 }), n(583741), n(388685), n(539854);
 var r, i = n(200651),
   l = n(192379),
   o = n(120356),
-  a = n.n(o),
-  s = n(954955),
-  c = n.n(s),
+  s = n.n(o),
+  a = n(954955),
+  c = n.n(a),
   u = n(748780),
   d = n(902704),
-  p = n(481060),
-  h = n(161421);
+  h = n(481060),
+  p = n(161421);
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,14 +87,14 @@ class b extends l.Component {
       onClick: r
     } = this.props;
     return (0, i.jsx)(u.Z.div, {
-      className: a()(h.bar, e, {
-        [h.hidden]: n
+      className: s()(p.bar, e, {
+        [p.hidden]: n
       }),
       onClick: r,
       style: this.getAnimatedStyle(),
       "aria-hidden": n,
       children: (0, i.jsx)("span", {
-        className: h.text,
+        className: p.text,
         children: t
       })
     })
@@ -121,7 +121,7 @@ class b extends l.Component {
     }
   }
 }
-class _ extends(r = l.PureComponent) {
+class y extends(r = l.PureComponent) {
   componentDidMount() {
     this.calculateState()
   }
@@ -140,7 +140,7 @@ class _ extends(r = l.PureComponent) {
       textUnread: r,
       reverse: l,
       className: o,
-      barClassName: s,
+      barClassName: a,
       hide: c,
       animate: u
     } = this.props, {
@@ -150,7 +150,7 @@ class _ extends(r = l.PureComponent) {
       className: null != o ? o : void 0,
       children: (0, i.jsx)(b, {
         hide: !0 === c || null == e && null == t,
-        className: a()(s, null != t ? h.mention : h.unread),
+        className: s()(a, null != t ? p.mention : p.unread),
         text: null != t ? n : r,
         reverse: l,
         animate: u && !d.enabled,
@@ -171,22 +171,22 @@ class _ extends(r = l.PureComponent) {
         isMentioned: i,
         reverse: l,
         onCalculate: o
-      } = this.props, a = null, s = null, c = [];
+      } = this.props, s = null, a = null, c = [];
       e.forEach(e => {
         "string" == typeof e ? c.push(e) : "object" == typeof e && null != e.folderId ? null != t && t.has(e.folderId) ? (c.push("folder:".concat(e.folderId)), e.guildIds.forEach(e => c.push(e))) : c.push(e.guildIds) : c.push(e.guildIds[0])
       });
       let u = e => {
-          null == a && i(e, l, c) && (a = e), null == s && r(e, l, c) && (s = e)
+          null == s && i(e, l, c) && (s = e), null == a && r(e, l, c) && (a = e)
         },
         d = l ? c.length - 1 : 0,
-        p = c[d];
-      for (; null != p;) {
-        if ("string" == typeof p) {
-          if (n(p, l, c)) break;
-          u(p)
+        h = c[d];
+      for (; null != h;) {
+        if ("string" == typeof h) {
+          if (n(h, l, c)) break;
+          u(h)
         } else {
           let e = !1;
-          for (let t of p) {
+          for (let t of h) {
             if (n(t, l, c)) {
               e = !0;
               break
@@ -195,11 +195,11 @@ class _ extends(r = l.PureComponent) {
           }
           if (e) break
         }
-        d += l ? -1 : 1, p = c[d]
+        d += l ? -1 : 1, h = c[d]
       }
-      null != o && o(a, s, l), this.setState({
-        mention: a,
-        unread: s
+      null != o && o(s, a, l), this.setState({
+        mention: s,
+        unread: a
       })
     }, 200)), f(this, "handleClick", e => {
       e.preventDefault(), e.stopPropagation();
@@ -213,10 +213,10 @@ class _ extends(r = l.PureComponent) {
     })
   }
 }
-f(_, "contextType", p.Sfi), f(_, "defaultProps", {
-  className: h.container,
+f(y, "contextType", h.Sfi), f(y, "defaultProps", {
+  className: p.container,
   reverse: !1,
   hide: !1,
   animate: !0
 });
-let y = _
+let _ = y

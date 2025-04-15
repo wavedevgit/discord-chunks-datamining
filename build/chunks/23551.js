@@ -1,4 +1,4 @@
-/** Chunk was on 70371 **/
+/** Chunk was on 64213 **/
 n.d(t, {
   Z: () => h
 });
@@ -22,9 +22,9 @@ let h = e => {
     className: i,
     innerClassName: h,
     onConnect: f
-  } = e, b = (0, o.ZP)(), N = c.Z.get((0, d.rR)(n));
+  } = e, b = (0, o.ZP)(), _ = c.Z.get((0, d.rR)(n));
   return (0, r.jsx)(l.ua7, {
-    text: N.name,
+    text: _.name,
     children: e => {
       let {
         onMouseEnter: o,
@@ -40,7 +40,7 @@ let h = e => {
             type: "button",
             disabled: t,
             style: {
-              backgroundImage: "url('".concat((0, a.wj)(b) ? N.icon.darkSVG : N.icon.lightSVG, "')")
+              backgroundImage: "url('".concat((0, a.wj)(b) ? _.icon.darkSVG : _.icon.lightSVG, "')")
             },
             onClick: null != f ? f : () => (function(e) {
               let t = c.Z.get(e);
@@ -53,7 +53,7 @@ let h = e => {
                 platform_type: t.type
               })
             })(n),
-            "aria-label": N.name
+            "aria-label": _.name
           })
         })
       })

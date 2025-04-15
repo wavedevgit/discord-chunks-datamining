@@ -1,6 +1,6 @@
-/** Chunk was on 41851 **/
+/** Chunk was on 78900 **/
 n.d(t, {
-  Z: () => I
+  Z: () => W
 }), n(784620), n(973216);
 var r = n(200651),
   o = n(192379),
@@ -153,14 +153,14 @@ function D(e) {
   })
 }
 
-function I(e) {
+function W(e) {
   var t, n, s, i, u;
   let {
     quest: m,
     isHovering: C,
     errorHints: N,
-    warningHints: I,
-    onCtxMenuClose: W,
+    warningHints: W,
+    onCtxMenuClose: I,
     onCtxMenuOpen: M,
     onCtxMenuSelect: L
   } = e, Z = (0, j.q8)(m), V = o.useMemo(() => (0, y.fh)(m, y.eC.HERO), [m]), Q = (0, p.ZP)(), U = ((0, c.wj)(Q) ? T.BRd.DARK : T.BRd.LIGHT) === T.BRd.DARK, H = o.useContext(l.S).reducedMotion.enabled, F = (0, h.tP)(m), z = (null == (t = m.userStatus) ? void 0 : t.claimedAt) != null, X = o.useRef(C), K = o.useRef(null), Y = (0, h.B6)(m.config.expiresAt, {
@@ -246,7 +246,7 @@ function I(e) {
             }))
           }), (0, r.jsx)(S.r, {
             onOpen: M,
-            onClose: W,
+            onClose: I,
             onSelect: L,
             questContent: b.jn.QUEST_HOME_DESKTOP,
             quest: m,
@@ -288,7 +288,7 @@ function I(e) {
       }), (0, r.jsx)(q, {
         quest: m,
         errorHints: N,
-        warningHints: I,
+        warningHints: W,
         isDarkTheme: U
       })]
     })]

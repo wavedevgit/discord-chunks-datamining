@@ -1,4 +1,4 @@
-/** Chunk was on 86974 **/
+/** Chunk was on 44606 **/
 n.d(t, {
   Z: () => _
 }), n(388685);
@@ -6,8 +6,8 @@ var r = n(200651),
   l = n(192379),
   s = n(525654),
   a = n.n(s),
-  o = n(748780),
-  i = n(782682);
+  i = n(748780),
+  o = n(782682);
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -18,7 +18,7 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function c(e) {
+function u(e) {
   let t = e => e.interpolate({
     inputRange: [0, 1],
     outputRange: ["0px", "1px"]
@@ -31,14 +31,14 @@ function c(e) {
     }]
   }
 }
-class u extends l.Component {
+class c extends l.Component {
   componentDidMount() {
     this._isMounted = !0;
     let {
       x: e,
       y: t
     } = this.state;
-    "Firefox" !== a().name && (o.Z.animate(e, {
+    "Firefox" !== a().name && (i.Z.animate(e, {
       loop: !0,
       toValueMin: -74,
       toValueMax: 95,
@@ -46,7 +46,7 @@ class u extends l.Component {
       friction: 5,
       tension: 1,
       shouldLoop: this.shouldLoop
-    }), o.Z.animate(t, {
+    }), i.Z.animate(t, {
       loop: !0,
       toValueMin: -59,
       toValueMax: 75,
@@ -61,11 +61,11 @@ class u extends l.Component {
   }
   render() {
     return (0, r.jsxs)("div", {
-      className: i.searchIndexAnimation,
+      className: o.searchIndexAnimation,
       children: [(0, r.jsx)("div", {
-        className: i.searchIndexBackground
+        className: o.searchIndexBackground
       }), (0, r.jsxs)("svg", {
-        className: i.searchIndexForeground,
+        className: o.searchIndexForeground,
         width: "320",
         height: "280",
         children: [(0, r.jsx)("defs", {
@@ -83,9 +83,9 @@ class u extends l.Component {
             children: [(0, r.jsx)("mask", {
               id: "search-index-foreground-mask-b",
               fill: "#fff",
-              children: (0, r.jsx)(o.Z.use, {
-                style: c(this.state),
-                className: i.mask,
+              children: (0, r.jsx)(i.Z.use, {
+                style: u(this.state),
+                className: o.mask,
                 xlinkHref: "#search-index-foreground-mask-a"
               })
             }), (0, r.jsxs)("g", {
@@ -347,9 +347,9 @@ class u extends l.Component {
                 strokeLinejoin: "round"
               })]
             })]
-          }), (0, r.jsxs)(o.Z.g, {
-            className: i.magnifyingGlass,
-            style: c(this.state),
+          }), (0, r.jsxs)(i.Z.g, {
+            className: o.magnifyingGlass,
+            style: u(this.state),
             children: [(0, r.jsx)("path", {
               fill: "#C9D2F0",
               d: "M89.8311 190.9259c-2.441-2.441-2.441-6.4 0-8.841l36.771-36.771 8.841 8.841-36.771 36.771c-2.441 2.441-6.4 2.441-8.841 0"
@@ -393,9 +393,9 @@ class u extends l.Component {
   }
   constructor(...e) {
     super(...e), E(this, "state", {
-      x: new o.Z.Value(0),
-      y: new o.Z.Value(0)
+      x: new i.Z.Value(0),
+      y: new i.Z.Value(0)
     }), E(this, "_isMounted", !1), E(this, "shouldLoop", () => this._isMounted)
   }
 }
-let _ = u
+let _ = c
