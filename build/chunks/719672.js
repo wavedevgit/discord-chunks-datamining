@@ -51,8 +51,9 @@ function _() {
   let e = (0, i.e7)([c.Z], () => c.Z.getDCFEvents()),
     t = (0, u.ZP)(e => e.candidates),
     n = (0, u.ZP)(e => e.lastWinnerTime),
-    a = void 0 !== n ? l()(n).fromNow() : "n/a",
-    o = e.map(e => {
+    a = 0 !== n ? l()(n).fromNow() : "n/a",
+    _ = (0, u.ZP)(e => e.recentlyShown[0]),
+    g = e.map(e => {
       let {
         eventType: t,
         dismissibleContent: n
@@ -63,7 +64,7 @@ function _() {
         dismissibleContent: n
       }
     }),
-    _ = Array.from(t.keys()).map(e => ({
+    v = Array.from(t.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -87,16 +88,19 @@ function _() {
     }), (0, r.jsx)("br", {}), (0, r.jsxs)("div", {
       className: h.info,
       children: ["Last winner time: ", a]
+    }), (0, r.jsx)("br", {}), (0, r.jsxs)("div", {
+      className: h.info,
+      children: ["Last winner: ", null != _ ? o.z[_] : "None"]
     }), (0, r.jsx)("br", {}), (0, r.jsx)("div", {
       className: h.candidatesTableContainer,
       children: (0, r.jsx)(x.Z, {
         className: h.candidatesTable,
         columns: f,
-        data: _
+        data: v
       })
     }), (0, r.jsx)("br", {}), (0, r.jsx)(x.Z, {
       columns: b,
-      data: o
+      data: g
     })]
   })
 }

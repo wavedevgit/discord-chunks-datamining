@@ -17,14 +17,14 @@ function s(e) {
     return null == (n = a.Z.getChannel(t)) || null == (e = n.wallpaper) ? void 0 : e.wallpaperId
   }), d = r.useCallback(() => {
     s && (null == n || n(c.current), l(!1))
-  }, [n, s]), f = r.useCallback(async (e, t) => {
+  }, [n, s]), f = r.useCallback(async (e, t, n) => {
     l(!0), c.current = t;
     try {
-      await o.Z.setWallpaper(e, t);
-      let n = setTimeout(() => d(), 5e3);
-      return () => clearTimeout(n)
+      (await o.Z.setWallpaper(e, t)).ok || null == n || n();
+      let r = setTimeout(() => d(), 5e3);
+      return () => clearTimeout(r)
     } catch (e) {
-      l(!1)
+      null == n || n(), l(!1)
     }
   }, [l, d]);
   return r.useEffect(() => {
