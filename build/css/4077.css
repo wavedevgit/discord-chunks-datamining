@@ -1,6 +1,6 @@
 /**
   Module ID: 4077
-  Original File Name: 7838265b1e4d4e45
+  Original File Name: 442cbc2d4f9b000e
 **/
 @value minColumnWidth: 460px;
 
@@ -564,9 +564,9 @@
 }
 
 .message_fcf29c {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1125,4 +1125,4 @@
     padding-top: var(--spacing-16)
 }
 
-/*# sourceMappingURL=7838265b1e4d4e45.css.map*/
+/*# sourceMappingURL=442cbc2d4f9b000e.css.map*/

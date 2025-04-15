@@ -1,6 +1,6 @@
 /**
   Module ID: 4584
-  Original File Name: 8547ef210c9b652f
+  Original File Name: ae3ae74b9b70479a
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1763,9 +1763,9 @@
 }
 
 .message_fcf29c {
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 1.25rem;
+    line-height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -2680,4 +2680,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=8547ef210c9b652f.css.map*/
+/*# sourceMappingURL=ae3ae74b9b70479a.css.map*/
