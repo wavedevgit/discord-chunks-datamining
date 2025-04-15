@@ -143,12 +143,13 @@ function C(e) {
     hideImmediately: u.Z.hidePillOverlayImmediately
   })), {
     hasLayers: b,
-    hasNonShopLayer: y
+    lastLayerIsNotShop: y
   } = (0, o.cj)([s.Z], () => {
-    let e = s.Z.getLayers().some(e => e !== _.S9g.COLLECTIBLES_SHOP);
+    let e = s.Z.getLayers(),
+      t = e.length > 0 && e[e.length - 1] !== _.S9g.COLLECTIBLES_SHOP;
     return {
       hasLayers: s.Z.hasLayers(),
-      hasNonShopLayer: e
+      lastLayerIsNotShop: t
     }
   }), v = m || b && y;
   return (0, r.jsx)(f.E9, g(h({
