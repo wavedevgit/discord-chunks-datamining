@@ -1,111 +1,111 @@
-/** Chunk was on 64213 **/
-n.d(t, {
-  default: () => p
-}), n(388685);
-var r = n(200651),
-  i = n(192379),
-  s = n(442837),
-  a = n(481060),
-  l = n(809206),
-  o = n(118012),
-  c = n(25990),
-  d = n(155433),
-  u = n(981631),
-  m = n(388032),
-  g = n(132709);
+/** Chunk was on 48707 **/
+s.d(t, {
+  default: () => N
+}), s(388685);
+var l = s(200651),
+  n = s(192379),
+  o = s(442837),
+  r = s(481060),
+  a = s(809206),
+  i = s(118012),
+  c = s(25990),
+  u = s(155433),
+  d = s(981631),
+  x = s(388032),
+  h = s(132709);
 
-function p(e) {
-  var t, n, p, h;
+function N(e) {
+  var t, s, N, m;
   let {
-    transitionState: f,
-    onSuccess: b,
-    onClose: _,
-    requirementsUpdated: N,
-    noSkip: x = !1
-  } = e, [E, j] = i.useState(""), [C, O] = i.useState(""), [S, v] = i.useState(""), [T, I] = i.useState(null), [y, A] = i.useState(null), P = (0, s.e7)([c.Z], () => c.Z.getErrors()), R = (0, s.e7)([c.Z], () => c.Z.getFormState()), D = i.useRef(null);
-  async function Z(e) {
-    e.preventDefault(), (0, l.b9)();
+    transitionState: p,
+    onSuccess: g,
+    onClose: w,
+    requirementsUpdated: _,
+    noSkip: f = !1
+  } = e, [j, v] = n.useState(""), [W, k] = n.useState(""), [C, E] = n.useState(""), [z, S] = n.useState(null), [b, R] = n.useState(null), T = (0, o.e7)([c.Z], () => c.Z.getErrors()), Z = (0, o.e7)([c.Z], () => c.Z.getFormState()), I = n.useRef(null);
+  async function P(e) {
+    e.preventDefault(), (0, a.b9)();
     let t = !1;
-    if ("" === C ? (I(m.NW.string(m.t["/7/oPT"])), t = !0) : I(null), C !== S ? (A(m.NW.string(m.t.IEKYZ2)), t = !0) : A(null), t) return;
-    let n = await (0, l.Mn)({
-      password: E,
-      newPassword: C
+    if ("" === W ? (S(x.NW.string(x.t["/7/oPT"])), t = !0) : S(null), W !== C ? (R(x.NW.string(x.t.IEKYZ2)), t = !0) : R(null), t) return;
+    let s = await (0, a.Mn)({
+      password: j,
+      newPassword: W
     });
-    if (null == n ? void 0 : n.ok) b();
+    if (null == s ? void 0 : s.ok) g();
     else {
-      var r;
-      (null == n || null == (r = n.body) ? void 0 : r.username) != null && (0, d.P)()
+      var l;
+      (null == s || null == (l = s.body) ? void 0 : l.username) != null && (0, u.P)()
     }
   }
-  return i.useEffect(() => {
-    if (f === a.Dvm.ENTERED) {
+  return n.useEffect(() => {
+    if (p === r.Dvm.ENTERED) {
       var e;
-      null == (e = D.current) || e.focus()
+      null == (e = I.current) || e.focus()
     }
-  }, [f]), (0, r.jsxs)(a.Y0X, {
-    transitionState: f,
-    children: [(0, r.jsxs)(a.xBx, {
+  }, [p]), (0, l.jsxs)(r.Y0X, {
+    transitionState: p,
+    children: [(0, l.jsxs)(r.xBx, {
       separator: !1,
-      className: g.header,
-      children: [(0, r.jsx)(o.Z, {
-        color: o.Z.Colors.HEADER_PRIMARY,
-        size: o.Z.Sizes.SIZE_24,
-        className: g.title,
-        children: m.NW.string(m.t["geta7+"])
-      }), (0, r.jsx)(a.Text, {
+      className: h.header,
+      children: [(0, l.jsx)(i.Z, {
+        color: i.Z.Colors.HEADER_PRIMARY,
+        size: i.Z.Sizes.SIZE_24,
+        className: h.title,
+        children: x.NW.string(x.t["geta7+"])
+      }), (0, l.jsx)(r.Text, {
         color: "header-secondary",
         variant: "text-md/normal",
-        className: g.subtitle,
-        children: N ? m.NW.string(m.t["37iHbW"]) : m.NW.string(m.t.iOurYm)
-      }), !0 !== x && (0, r.jsx)(a.olH, {
-        onClick: _,
-        className: g.modalCloseButton
+        className: h.subtitle,
+        children: _ ? x.NW.string(x.t["37iHbW"]) : x.NW.string(x.t.iOurYm)
+      }), !0 !== f && (0, l.jsx)(r.olH, {
+        onClick: w,
+        className: h.modalCloseButton
       })]
-    }), (0, r.jsxs)("form", {
-      onSubmit: Z,
-      children: [(0, r.jsxs)(a.hzk, {
-        className: g.content,
-        children: [(0, r.jsx)(a.xJW, {
-          title: m.NW.string(m.t.WBqMRU),
-          error: null == P || null == (t = P.password) ? void 0 : t[0],
-          children: (0, r.jsx)(a.oil, {
+    }), (0, l.jsxs)("form", {
+      onSubmit: P,
+      children: [(0, l.jsxs)(r.hzk, {
+        className: h.content,
+        children: [(0, l.jsx)(r.xJW, {
+          title: x.NW.string(x.t.WBqMRU),
+          error: null == T || null == (t = T.password) ? void 0 : t[0],
+          children: (0, l.jsx)(r.oil, {
             type: "password",
-            value: E,
-            onChange: j,
-            inputRef: D
+            value: j,
+            onChange: v,
+            inputRef: I
           })
-        }), (0, r.jsx)(a.xJW, {
-          className: g.newPassword,
-          title: m.NW.string(m.t["8dM4FB"]),
-          error: null != (h = null != (p = null == P || null == (n = P.new_password) ? void 0 : n[0]) ? p : T) ? h : void 0,
-          children: (0, r.jsx)(a.oil, {
+        }), (0, l.jsx)(r.xJW, {
+          className: h.newPassword,
+          title: x.NW.string(x.t["8dM4FB"]),
+          error: null != (m = null != (N = null == T || null == (s = T.new_password) ? void 0 : s[0]) ? N : z) ? m : void 0,
+          children: (0, l.jsx)(r.oil, {
+            type: "password",
+            value: W,
+            onChange: k
+          })
+        }), (0, l.jsx)(r.xJW, {
+          className: h.newPassword,
+          title: x.NW.string(x.t.iQG2KC),
+          error: null != b ? b : void 0,
+          children: (0, l.jsx)(r.oil, {
             type: "password",
             value: C,
-            onChange: O
-          })
-        }), (0, r.jsx)(a.xJW, {
-          className: g.newPassword,
-          title: m.NW.string(m.t.iQG2KC),
-          error: null != y ? y : void 0,
-          children: (0, r.jsx)(a.oil, {
-            type: "password",
-            value: S,
-            onChange: v
+            onChange: E
           })
         })]
-      }), (0, r.jsxs)(a.mzw, {
-        children: [(0, r.jsx)(a.zxk, {
+      }), (0, l.jsxs)(r.mzw, {
+        children: [(0, l.jsx)(r.zxk, {
           type: "submit",
-          color: a.zxk.Colors.BRAND,
-          size: a.zxk.Sizes.MEDIUM,
-          submitting: R === u.QZA.SUBMITTING,
-          children: m.NW.string(m.t.i4jeWV)
-        }), !0 !== x && (0, r.jsx)(a.zxk, {
-          className: g.cancel,
-          look: a.zxk.Looks.LINK,
-          color: a.zxk.Colors.PRIMARY,
-          onClick: _,
-          children: m.NW.string(m.t["ETE/oK"])
+          color: r.zxk.Colors.BRAND,
+          size: r.zxk.Sizes.MEDIUM,
+          submitting: Z === d.QZA.SUBMITTING,
+          children: x.NW.string(x.t.i4jeWV)
+        }), !0 !== f && (0, l.jsx)(r.zxk, {
+          className: h.cancel,
+          look: r.zxk.Looks.LINK,
+          color: r.zxk.Colors.PRIMARY,
+          onClick: w,
+          children: x.NW.string(x.t["ETE/oK"])
         })]
       })]
     })]

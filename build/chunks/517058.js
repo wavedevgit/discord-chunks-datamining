@@ -1,4 +1,4 @@
-/** Chunk was on 64213 **/
+/** Chunk was on 44114 **/
 e.exports = {
   soundButtonSettingContainer: "soundButtonSettingContainer__84bad",
   emoji: "emoji__84bad",

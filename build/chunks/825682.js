@@ -38,7 +38,7 @@ let d = function(e) {
     applicationStream: d,
     voiceChannel: b
   }) ? (0, r.jsx)(o.Z, {
-    textClassName: u.text,
+    textClassName: u.statusText,
     activities: n,
     applicationStream: d,
     voiceChannel: b,

@@ -1,9 +1,9 @@
-/** Chunk was on 64213 **/
+/** Chunk was on 58120 **/
 n.d(t, {
-  Z: () => i
+  Z: () => s
 });
 var r = n(570140);
-let i = {
+let s = {
   addKeybind(e) {
     r.Z.dispatch({
       type: "KEYBINDS_ADD_KEYBIND",

@@ -1,6 +1,6 @@
 /**
   Module ID: 13368
-  Original File Name: a6796f99c9bd0ae7
+  Original File Name: 6455f11d2eeef488
 **/
 .debugMode_fa952e {
     background-color: rgba(255,0,0,.25);
@@ -846,10 +846,6 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
-}
-
-.activityText_e73f2a {
-    color: var(--channels-default)
 }
 
 .badgesContainer_e73f2a {
@@ -4294,4 +4290,4 @@ span.clanTag__07f91.isOverlay__07f91 {
     width: 96px
 }
 
-/*# sourceMappingURL=a6796f99c9bd0ae7.css.map*/
+/*# sourceMappingURL=6455f11d2eeef488.css.map*/

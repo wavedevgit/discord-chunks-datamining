@@ -93,7 +93,6 @@ let E = i.forwardRef(function(e, t) {
   w.className = a()(w.className, d.container, {
     [d.selected]: O,
     [d.highlighted]: R,
-    [d.active]: O,
     [null != N ? N : ""]: O,
     [d.clickable]: !O && (null != S || null != y)
   }), w["aria-selected"] = null != (n = w["aria-selected"]) ? n : O;
