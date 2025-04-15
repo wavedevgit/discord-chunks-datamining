@@ -273,17 +273,18 @@ let k = e => {
         listScrollerRef: t
       }),
       {
-        positionControlRef: o
+        positionControlRef: o,
+        onShopButtonClick: s
       } = a,
-      s = D(a, ["positionControlRef"]);
+      c = D(a, ["positionControlRef", "onShopButtonClick"]);
     return (0, r.jsx)(_.Rg, R(L({
       targetElementRef: l,
       positionControlRef: o
-    }, s), {
+    }, c), {
       children: (0, r.jsx)(U, R(L({}, n), {
         listItemRef: l,
         collectibleShopTab: j.AW.ORBS,
-        onClick: s.onClose
+        onClick: s
       }))
     }))
   },

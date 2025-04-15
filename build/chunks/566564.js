@@ -25,8 +25,8 @@ var r = n(200651),
   O = n(384067),
   j = n(215023),
   y = n(388032),
-  k = n(806734);
-let S = e => {
+  S = n(806734);
+let k = e => {
     let {
       handleTransition: t,
       numVisibleItems: n,
@@ -53,7 +53,7 @@ let S = e => {
       errorMessage: b.message
     });
     if (d || 0 === p.length) return (0, r.jsxs)("div", {
-      className: k.loadingContainer,
+      className: S.loadingContainer,
       children: [(0, r.jsx)(v.Z, {
         isLoading: d,
         handleTransition: t,
@@ -116,8 +116,8 @@ let S = e => {
           return null
       }
       return (0, r.jsx)("div", {
-        className: o()(k.blockContainer, {
-          [k.topBlockContainer]: 0 === l
+        className: o()(S.blockContainer, {
+          [S.topBlockContainer]: 0 === l
         }),
         children: c
       }, l)
@@ -141,7 +141,7 @@ let S = e => {
       refreshCategories: O
     } = (0, f.ZP)({
       location: "CollectiblesFeedShop"
-    }), P = null != (t = null != C ? C : v) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), w = (0, b.b)("Collectibles Shop Button"), B = (0, p.R)("CollectiblesFeedShop"), {
+    }), P = null != (t = null != C ? C : v) ? t : x, E = (0, s.e7)([u.default], () => u.default.getCurrentUser()), B = (0, b.b)("Collectibles Shop Button"), w = (0, p.R)("CollectiblesFeedShop"), {
       noCache: I,
       includeUnpublished: T
     } = (0, h.Z)(), N = l.useCallback(() => {
@@ -153,7 +153,7 @@ let S = e => {
       null != C ? e.push("shop load fetch categories error: ".concat(P.message)) : null != v ? e.push("shop load fetch purchase error: ".concat(P.message)) : e.push("shop load claim error: ".concat(P.message)), d.Z.captureMessage(e.join("\n"), {
         tags: {
           isStaff: E.isStaff().toString(),
-          preloadEnabled: w.toString(),
+          preloadEnabled: B.toString(),
           disableCache: I.toString(),
           includeUnpublished: T.toString()
         }
@@ -164,23 +164,23 @@ let S = e => {
       errorOrigin: m.i.SHOP_PAGE,
       errorMessage: C.message
     }) : (0, r.jsx)("div", {
-      className: o()(k.shop, {
-        [k.shopFullscreen]: n
+      className: o()(S.shop, {
+        [S.shopFullscreen]: n
       }),
       children: (0, r.jsxs)("div", {
-        className: o()(k.content, k.mainContent),
-        children: [(0, r.jsx)(S, {
+        className: o()(S.content, S.mainContent),
+        children: [(0, r.jsx)(k, {
           handleTransition: a,
           numVisibleItems: i,
           isFetchingCategories: _,
           tab: g
-        }), g !== j.AW.CATALOG && i >= B && (0, r.jsxs)("div", {
-          className: k.endOfFeed,
+        }), g !== j.AW.CATALOG && i >= w && (0, r.jsxs)("div", {
+          className: S.endOfFeed,
           children: [(0, r.jsx)(c.X6q, {
             variant: "heading-md/semibold",
             children: y.NW.string(y.t.Yr70c3)
           }), (0, r.jsx)(c.zxk, {
-            className: k.endOfFeedButton,
+            className: S.endOfFeedButton,
             onClick: () => {
               a("shop all bottom", void 0, !0)
             },

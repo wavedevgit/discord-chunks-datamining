@@ -1,6 +1,6 @@
 /** Chunk was on 5207 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -17,13 +17,13 @@ var r = n(200651),
   g = n(981631),
   m = n(490897),
   b = n(915887);
-let y = (0, c.B)(function(e) {
+let _ = (0, c.B)(function(e) {
   let {
     guild: t,
     selectedChannelId: l,
     position: c,
-    disableManageChannels: y,
-    sorting: _,
+    disableManageChannels: _,
+    sorting: y,
     sortingType: v,
     sortingPosition: O,
     connectChannelDragSource: C,
@@ -73,7 +73,7 @@ let y = (0, c.B)(function(e) {
   }, [E]);
   if (null == E) return null;
   let w = (0, p.jo)(c, O),
-    Z = (0, p.CN)(E, _, v),
+    Z = (0, p.CN)(E, y, v),
     T = (0, r.jsx)("div", {
       className: o()(w, {
         [b.disabled]: Z,
@@ -93,7 +93,7 @@ let y = (0, c.B)(function(e) {
           tabIndex: j
         }), (0, r.jsx)(p.hR, {
           channel: E,
-          disableManageChannels: y,
+          disableManageChannels: _,
           tabIndex: j
         })]
       })

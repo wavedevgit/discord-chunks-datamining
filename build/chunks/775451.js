@@ -1,90 +1,97 @@
 /** Chunk was on 64213 **/
 n.d(t, {
-  V9: () => _,
-  ek: () => b
+  V9: () => N,
+  ek: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
   s = n(120356),
   a = n.n(s),
   l = n(351773),
-  o = n(23547),
-  c = n(790542),
-  d = n(317257),
-  u = n(120786),
-  m = n(970815),
-  g = n(82856),
-  p = n(981631),
-  h = n(388032),
-  f = n(313008);
-let b = {
-    START: f.alignLeft,
-    END: f.alignRight
+  o = n(507808),
+  c = n(23547),
+  d = n(790542),
+  u = n(317257),
+  m = n(120786),
+  g = n(970815),
+  p = n(82856),
+  h = n(981631),
+  f = n(388032),
+  b = n(313008);
+let _ = {
+    START: b.alignLeft,
+    END: b.alignRight
   },
-  _ = e => {
+  N = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: s,
-      isCoachmarkEnabled: _ = !0,
-      linkText: N = h.NW.string(h.t.XRdyj4),
-      cardAlignment: x = b.START,
-      className: E
+      analyticsPage: N,
+      isCoachmarkEnabled: x = !0,
+      linkText: E = f.NW.string(f.t.XRdyj4),
+      cardAlignment: j = _.START,
+      className: C
     } = e, {
-      balance: j
-    } = (0, c.A)(), [C, O] = i.useState(d.b.DEFAULT), [S, v] = i.useState(!1), [T, I] = i.useState(!1), y = i.useRef(null), {
-      shouldOpen: A
-    } = (0, g.lJ)({
-      backgroundElementRef: y
+      balance: O
+    } = (0, d.A)(), [S, v] = i.useState(u.b.DEFAULT), [T, I] = i.useState(!1), [y, A] = i.useState(!1), P = i.useRef(null), {
+      shouldOpen: R
+    } = (0, p.lJ)({
+      backgroundElementRef: P
     }), {
-      shouldOpen: P
-    } = (0, o.Mm)({
-      backgroundElementRef: y,
-      isCoachmarkEnabled: _,
-      onCloseCallback: p.dG4,
-      onClickPill: p.dG4
-    }), R = P || A;
+      shouldOpen: D
+    } = (0, c.Mm)({
+      backgroundElementRef: P,
+      isCoachmarkEnabled: x,
+      onCloseCallback: h.dG4,
+      onClickPill: h.dG4
+    }), Z = D || R;
     i.useEffect(() => {
-      if (!_) return;
-      let e = (0, o.wH)();
-      (0, g.Pe)() || e || R ? (I(!0), v(!1)) : I(!1)
-    }, [_, R]);
-    let D = i.useCallback(() => {
-        let e = !S;
-        O(e ? d.b.SELECTED : d.b.DEFAULT), v(e)
-      }, [S]),
-      Z = i.useCallback(() => {
-        S && D()
-      }, [S, D]),
-      w = (0, l.Z)(null, Z);
+      if (!x) return;
+      let e = (0, c.wH)();
+      (0, p.Pe)() || e || Z ? (A(!0), I(!1)) : A(!1)
+    }, [x, Z]);
+    let w = i.useCallback(() => {
+        let e = !T;
+        e && null != N && (0, o.Y)({
+          pageType: N,
+          sectionType: h.jXE.ORBS_BALANCE_MENU,
+          ctaObject: h.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
+        }), v(e ? u.b.SELECTED : u.b.DEFAULT), I(e)
+      }, [T, N]),
+      k = i.useCallback(() => {
+        T && w()
+      }, [T, w]),
+      W = (0, l.Z)(null, k);
     return (0, r.jsxs)("div", {
-      className: a()(f.container, E, {
-        [f.hidden]: T,
-        [f.visible]: !T
+      className: a()(b.container, C, {
+        [b.hidden]: y,
+        [b.visible]: !y
       }),
-      children: [(0, r.jsx)(m.A4, {
-        ref: y,
-        balance: j,
-        balanceWidgetMode: R ? d.b.DEFAULT : C,
+      children: [(0, r.jsx)(g.A4, {
+        ref: P,
+        balance: O,
+        balanceWidgetMode: Z ? u.b.DEFAULT : S,
         onMouseDown: e => {
           e.stopPropagation()
         },
-        onClick: D,
+        onClick: w,
         showNotificationBadge: t
-      }), S && (0, r.jsx)("div", {
-        className: a()(f.cardContainer, x, {
-          [f.hidden]: T,
-          [f.visible]: !T
+      }), T && (0, r.jsx)("div", {
+        className: a()(b.cardContainer, j, {
+          [b.hidden]: y,
+          [b.visible]: !y
         }),
-        ref: w,
-        children: (0, r.jsx)(u.L, {
+        ref: W,
+        children: (0, r.jsx)(m.L, {
+          analyticsPage: N,
           ctaText: n,
           ctaOnClick: () => {
-            D(), s()
+            w(), s()
           },
-          linkText: N
+          linkText: E
         })
       })]
     })
   };
-_.CardAlignment = b
+N.CardAlignment = _

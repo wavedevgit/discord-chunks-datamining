@@ -18,7 +18,7 @@ var r = n(200651),
   m = n(388032),
   b = n(388298);
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function y(e) {
   }
   return e
 }
-let _ = {
+let y = {
     animation: {
       BEG: 0,
       END: 75
@@ -57,15 +57,15 @@ let _ = {
       var e;
       switch (null == v || null == (e = v.popout) ? void 0 : e.type) {
         case u.J.LEVEL_REACHED:
-          return (0, r.jsx)(h.jG, y({
+          return (0, r.jsx)(h.jG, _({
             guildId: t
           }, v.popout));
         case u.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(h.$h, y({
+          return (0, r.jsx)(h.$h, _({
             guildId: t
           }, v.popout));
         case u.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(h.yI, y({
+          return (0, r.jsx)(h.yI, _({
             guildId: t
           }, v.popout));
         default:
@@ -88,7 +88,7 @@ let _ = {
       onRequestClose: () => j(!0),
       children: e => {
         var i, c;
-        return (0, r.jsx)(a.m, (i = y({}, e), c = c = {
+        return (0, r.jsx)(a.m, (i = _({}, e), c = c = {
           className: b.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.$Eu, {
@@ -101,7 +101,7 @@ let _ = {
             children: (0, r.jsx)(s.kci, {
               nextScene: N,
               className: b.lottie,
-              sceneSegments: _,
+              sceneSegments: y,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: I,
               rendererSettings: {

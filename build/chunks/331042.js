@@ -370,7 +370,7 @@ let ec = 880,
             a(), (0, A.Y)({
               pageType: ee.ZY5.SHOP_ORBS_TAB,
               sectionType: ee.jXE.ORBS_BADGE_REDEMPTION_MODAL,
-              ctaObject: ee.qAy.EARN_MORE_ORBS_BUTTON
+              ctaObject: ee.qAy.CTA_TO_QUEST_HOME
             }), (0, T.navigateToQuestHome)()
           },
           children: er.NW.string(er.t["H57f4+"])

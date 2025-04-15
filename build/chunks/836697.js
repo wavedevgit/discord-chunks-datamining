@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(289090),
   m = n(727258),
   b = n(234383),
-  y = n(179809),
-  _ = n(588275),
+  _ = n(179809),
+  y = n(588275),
   v = n(388032),
   O = n(315268);
 
@@ -129,7 +129,7 @@ function S(e) {
       className: o()({
         [O.folderWrapperCollapsed]: !l
       }),
-      children: (0, r.jsx)(y.Z, {
+      children: (0, r.jsx)(_.Z, {
         folderNode: I,
         expanded: l,
         useCircleMask: !l && !P,
@@ -146,7 +146,7 @@ function S(e) {
           className: O.pendingIcon
         }),
         renderChildNode: function(e, t) {
-          return e.type !== m.eD.GUILD ? null : (0, r.jsx)(_.Z, {
+          return e.type !== m.eD.GUILD ? null : (0, r.jsx)(y.Z, {
             guildNode: e,
             height: t
           }, e.id)

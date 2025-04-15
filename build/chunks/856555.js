@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  EQ: () => E,
-  Rg: () => _
+  EQ: () => O,
+  Rg: () => E
 });
 var r = n(200651),
   i = n(192379),
@@ -9,13 +9,14 @@ var r = n(200651),
   a = n(540059),
   o = n(605236),
   s = n(930153),
-  c = n(822857),
-  u = n(432792),
-  d = n(981631),
-  p = n(388032),
-  h = n(326238);
+  c = n(507808),
+  u = n(822857),
+  d = n(432792),
+  p = n(981631),
+  h = n(388032),
+  f = n(326238);
 
-function f(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -34,7 +35,7 @@ function f(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -49,21 +50,21 @@ function g(e, t) {
   }
   return i
 }
-let m = e => {
+let b = e => {
     var {
       tailLeftOffset: t = 22
-    } = e, n = g(e, ["tailLeftOffset"]);
-    return (0, r.jsx)(u.tE, f({
-      titleText: p.NW.string(p.t["duN28/"]),
-      descriptionText: p.NW.string(p.t["Veu++f"]),
-      ctaText: p.NW.string(p.t.F4SoLC),
+    } = e, n = m(e, ["tailLeftOffset"]);
+    return (0, r.jsx)(d.tE, g({
+      titleText: h.NW.string(h.t["duN28/"]),
+      descriptionText: h.NW.string(h.t["Veu++f"]),
+      ctaText: h.NW.string(h.t.F4SoLC),
       tailLeftOffset: t,
       customIconSrcs: {
-        static: h.Z
+        static: f.Z
       }
     }, n))
   },
-  b = () => {
+  _ = () => {
     let e = (0, a.Q3)("VirtualCurrency: ShopOnboardingCoachmark"),
       t = i.useCallback(() => {
         let t = (0, s.Lk)(document.body.style.getPropertyValue("--custom-channel-header-height"), 48),
@@ -76,29 +77,29 @@ let m = e => {
       isVisualRefreshEnabled: e
     }
   },
-  _ = e => {
+  E = e => {
     var t, n, {
         positionControlRef: l,
         targetElementRef: a,
         children: o
       } = e,
-      s = g(e, ["positionControlRef", "targetElementRef", "children"]);
+      s = m(e, ["positionControlRef", "targetElementRef", "children"]);
     let {
       requiredSpacingFromTop: c,
-      tailLeftOffset: d
-    } = b(), p = i.useRef(null), h = i.useCallback(e => {
+      tailLeftOffset: u
+    } = _(), p = i.useRef(null), h = i.useCallback(e => {
       if ((e.bottom + e.top) / 2 <= c) return !1;
-      let t = window.innerHeight - (0, u.t4)();
+      let t = window.innerHeight - (0, d.t4)();
       return !(e.bottom > t)
     }, [c]);
-    return (0, r.jsx)(u.WS, {
+    return (0, r.jsx)(d.WS, {
       defaultCoachmarkPosition: "bottom",
       disableAutoInvert: !0,
       targetElementRef: a,
       positionControlRef: l,
-      popoutElement: (0, r.jsx)(m, (t = f({
+      popoutElement: (0, r.jsx)(b, (t = g({
         coachmarkRef: p,
-        tailLeftOffset: d
+        tailLeftOffset: u
       }, s), n = n = {
         renderTail: !0
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -116,12 +117,12 @@ let m = e => {
       children: o
     })
   },
-  E = e => {
+  O = e => {
     let {
       listScrollerRef: t
     } = e, {
       enabled: n
-    } = (0, c.W)({
+    } = (0, u.W)({
       location: "useShopOnboardingCoachmark"
     }), r = i.useRef(null), a = i.useCallback(() => {
       null !== r.current && r.current.updateElementPosition()
@@ -129,27 +130,35 @@ let m = e => {
       null != t && null != t.current && t.current.scrollToTop({
         animate: !0
       })
-    }, [t]), p = (0, o.wE)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
-      shouldShow: h,
-      closeCoachmarkIfOpen: f
-    } = (0, u.M)({
+    }, [t]), h = (0, o.wE)(l.z.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK), {
+      shouldShow: f,
+      closeCoachmarkIfOpen: g
+    } = (0, d.M)({
       onboardingCoachmarkType: "shop",
-      prevCoachmarksDismissed: p,
+      prevCoachmarksDismissed: h,
       onShowCoachmarkHandler: s
-    }), g = i.useCallback(() => f("CTA_CLICK"), [f]);
+    }), m = i.useCallback(() => g("CTA_CLICK"), [g]), b = i.useCallback(() => {
+      (0, c.Y)({
+        pageType: p.ZY5.PRIVATE_CHANNEL_LIST,
+        sectionType: p.jXE.ORBS_SHOP_ONBOARDING_COACHMARK,
+        ctaObject: p.qAy.SHOP_BUTTON_TO_SHOP_ORBS_TAB
+      }), g()
+    }, [g]);
     return n ? {
-      shouldShow: h,
-      closeCoachmarkIfOpen: f,
+      shouldShow: f,
+      closeCoachmarkIfOpen: g,
       onHandleScroll: a,
       positionControlRef: r,
-      onClose: f,
-      onCtaClick: g
+      onClose: g,
+      onCtaClick: m,
+      onShopButtonClick: b
     } : {
       shouldShow: !1,
-      closeCoachmarkIfOpen: d.dG4,
-      onHandleScroll: d.dG4,
+      closeCoachmarkIfOpen: p.dG4,
+      onHandleScroll: p.dG4,
       positionControlRef: r,
-      onClose: d.dG4,
-      onCtaClick: d.dG4
+      onClose: p.dG4,
+      onCtaClick: p.dG4,
+      onShopButtonClick: p.dG4
     }
   }

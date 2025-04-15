@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(474936),
   m = n(388032),
   b = n(706442),
-  y = n(777091);
-let _ = (e, t) => {
+  _ = n(777091);
+let y = (e, t) => {
     let n = null != t && !t.isPreview;
     return e ? e && !n ? "no-wallpaper-nitro" : "has-wallpaper-nitro" : "non-nitro"
   },
@@ -59,7 +59,7 @@ let _ = (e, t) => {
     let k = () => {
         P(f.L.USER_DISMISS)
       },
-      M = _(w, null != Z ? Z : null),
+      M = y(w, null != Z ? Z : null),
       U = v(M),
       G = O(M);
     return (0, r.jsx)("div", {
@@ -75,7 +75,7 @@ let _ = (e, t) => {
           buttonText: m.NW.string(m.t["+IrDzM"]),
           header: U,
           art: (0, r.jsx)("img", {
-            src: y.Z,
+            src: _.Z,
             alt: "",
             className: b.chatWallpaperDMListCoachmarkArt
           }),

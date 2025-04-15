@@ -74,7 +74,7 @@ let h = {
       color: O = a.Ttl.BRAND
     } = e, {
       analyticsLocations: j
-    } = (0, i.ZP)(), y = l.useRef(null), k = (0, o.Z)(y), S = (0, d.hv)("CollectiblesShopGiftButton");
+    } = (0, i.ZP)(), y = l.useRef(null), S = (0, o.Z)(y), k = (0, d.hv)("CollectiblesShopGiftButton");
     return (0, u.x6)(t) ? null : (0, r.jsx)(a.ua7, {
       text: g.NW.string(g.t["JCFN//"]),
       delay: v,
@@ -115,14 +115,14 @@ let h = {
               giftingOrigin: p.Wt.SHOP_PAGE,
               analyticsLocations: j,
               returnRef: _,
-              variantsReturnStyle: S,
+              variantsReturnStyle: k,
               onClose: null != C ? e => {
                 e && C()
               } : void 0
             })
           },
           children: x ? (0, r.jsx)(c.Z, {
-            hovered: k,
+            hovered: S,
             isContentDismissed: !0,
             themeOverride: f.BR.DARK,
             boxColors: h
