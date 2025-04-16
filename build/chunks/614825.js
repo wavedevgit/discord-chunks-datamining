@@ -123,7 +123,7 @@ class P extends i.Component {
       date: (0, b.vc)(s()(i), "LL")
     });
     if (e || void 0 === r.expires_at) return null;
-    let a = new Date("2025-03-27T10:00:00.000-07:00");
+    let a = s()(r.expires_at);
     return t ? C.NW.formatToPlainString(C.t.PuSHfX, {
       date: (0, b.vc)(s()(a), "LL")
     }) : (0, v.F)(a.valueOf())

@@ -2,7 +2,7 @@
 let r;
 n.d(t, {
   Z: () => T
-}), n(388685), n(539854), n(781311), n(415506), n(35282);
+}), n(388685), n(539854), n(781311), n(35282);
 var l, i = n(442837),
   o = n(570140),
   a = n(278323),
@@ -29,10 +29,10 @@ let b = [s.h8.TEXT_CHANNEL, s.h8.GROUP_DM, s.h8.USER],
   v = null,
   m = null,
   x = [],
-  E = [];
+  C = [];
 
-function C(e) {
-  x = [...x, e], E = E.map(e => {
+function E(e) {
+  x = [...x, e], C = C.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -80,14 +80,14 @@ class P extends(l = i.ZP.Store) {
     return null != (e = null == r ? void 0 : r.query) ? e : ""
   }
   getResults() {
-    return E
+    return C
   }
 }
 N(P, "displayName", "ActivityInviteModalStore");
 let S = new P(o.Z, {
     ACTIVITY_INVITE_MODAL_OPEN: function(e) {
       v = e.activity, m = e.resolve, x = [], null == r && (r = new s.ZP((e, t) => {
-        E = ("" === t.trim() ? function() {
+        C = ("" === t.trim() ? function() {
           let e = [];
           return y.Z.getPrivateChannelIds().forEach(t => {
             let n = c.Z.getChannel(t);
@@ -142,9 +142,9 @@ let S = new P(o.Z, {
               }
             }
             default:
-              throw Error("Unknown Result Type: ".concat(e.type))
+              return null
           }
-        }), S.emitChange()
+        }).filter(e => null != e), S.emitChange()
       }, b, 100)), r.search("")
     },
     ACTIVITY_INVITE_MODAL_QUERY: function(e) {
@@ -162,12 +162,12 @@ let S = new P(o.Z, {
         type: O.mFx.JOIN,
         activity: v,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => C(t)) : null != n && a.Z.sendActivityInviteUser({
+      }).then(() => E(t)) : null != n && a.Z.sendActivityInviteUser({
         userId: n,
         type: O.mFx.JOIN,
         activity: v,
         location: "Channel Text Area - Invite to Join Modal"
-      }).then(() => C(n))
+      }).then(() => E(n))
     },
     ACTIVITY_INVITE_MODAL_CLOSE: j,
     OVERLAY_SET_INPUT_LOCKED: function(e) {

@@ -111,12 +111,12 @@ let g = (e, t) => {
       onItemSelect: v,
       onItemAction: m,
       interactive: x = !0,
-      onClose: E,
-      children: C
-    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, Z] = l.useState(0), [w, _] = l.useState({
+      onClose: C,
+      children: E
+    } = e, j = l.useRef(null), I = l.useRef([]), P = l.useRef(!1), S = l.useRef(null), [T, Z] = l.useState(0), [_, w] = l.useState({
       x: 0,
       y: 0
-    }), A = Math.abs(w.x) + Math.abs(w.y) > 0, R = l.useMemo(() => o().chunk(C, f), [C]), D = l.useCallback((e, t) => {
+    }), A = Math.abs(_.x) + Math.abs(_.y) > 0, R = l.useMemo(() => o().chunk(E, f), [E]), D = l.useCallback((e, t) => {
       null == I.current[T] ? I.current[T] = [] : I.current[T][t] = e
     }, [T]), W = l.useCallback((e, t) => {
       S.current = t, v(f * e + t)
@@ -125,7 +125,7 @@ let g = (e, t) => {
     }, [v]), M = l.useCallback(e => {
       k(), P.current = e
     }, [k]), U = l.useCallback((e, t, n) => {
-      if (P.current) return void _({
+      if (P.current) return void w({
         x: 0,
         y: 0
       });
@@ -136,7 +136,7 @@ let g = (e, t) => {
         l = r.x < 0,
         i = r.y < 0,
         o = g(n, r);
-      _({
+      w({
         x: (l ? Math.max(r.x, -o.x) : Math.min(r.x, o.x)) / 2,
         y: (i ? Math.max(r.y, -o.y) : Math.min(r.y, o.y)) / 2
       })
@@ -171,7 +171,7 @@ let g = (e, t) => {
       t >= 0 && t < R.length && (null != S.current && (R[t].length > S.current ? W(t, S.current) : k()), Z(t))
     }, [x, T, R, W, k]), V = l.useMemo(() => R[T].map((e, l) => {
       let i = h[l];
-      if (null == i) throw Error("Too many items supplied ".concat(C.length, " expected max of ").concat(h.length));
+      if (null == i) throw Error("Too many items supplied ".concat(E.length, " expected max of ").concat(h.length));
       let o = p(i.x, t, y),
         a = p(i.y, n, O);
       return (0, r.jsx)("div", {
@@ -185,7 +185,7 @@ let g = (e, t) => {
         },
         children: e
       }, l)
-    }), [R, T, t, y, n, O, C.length, D]);
+    }), [R, T, t, y, n, O, E.length, D]);
     return (0, r.jsx)(a.P3F, {
       className: c.chatWheelMouseInput,
       onMouseMove: B,
@@ -248,8 +248,8 @@ let g = (e, t) => {
               r: 28.8
             }), A && (0, r.jsx)("circle", {
               className: c.chatWheelCenter,
-              cx: 144 + w.x,
-              cy: 144 + w.y,
+              cx: 144 + _.x,
+              cy: 144 + _.y,
               r: 28.8
             })]
           }), N && (0, r.jsx)("circle", {
@@ -265,7 +265,7 @@ let g = (e, t) => {
           className: c.innerContent,
           children: [N && (0, r.jsx)(a.P3F, {
             className: c.chatWheelDeadZoneIcon,
-            onClick: E,
+            onClick: C,
             children: (0, r.jsx)(d, {
               className: c.chatWheelDeadZoneIcon
             })

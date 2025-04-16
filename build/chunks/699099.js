@@ -1,59 +1,59 @@
 /** Chunk was on 79921 **/
-l.d(s, {
+t.d(s, {
   default: () => A
-}), l(388685);
-var t = l(200651),
-  r = l(192379),
-  a = l(120356),
-  n = l.n(a),
-  u = l(442837),
-  c = l(481060),
-  i = l(24124),
-  o = l(461745),
-  d = l(212819),
-  h = l(43267),
-  m = l(447003),
-  _ = l(933557),
-  x = l(606206),
-  N = l(592125),
-  p = l(944486),
-  g = l(585483),
-  k = l(5192),
-  C = l(51144),
-  v = l(981631),
-  S = l(388032),
-  E = l(944801),
-  j = l(20493);
+}), t(388685);
+var l = t(200651),
+  r = t(192379),
+  a = t(120356),
+  n = t.n(a),
+  u = t(442837),
+  c = t(481060),
+  i = t(24124),
+  o = t(461745),
+  d = t(212819),
+  h = t(43267),
+  m = t(447003),
+  _ = t(933557),
+  x = t(606206),
+  N = t(592125),
+  p = t(944486),
+  g = t(585483),
+  k = t(5192),
+  C = t(51144),
+  v = t(981631),
+  S = t(388032),
+  E = t(944801),
+  j = t(20493);
 
-function L(e, s, l) {
+function L(e, s, t) {
   return s in e ? Object.defineProperty(e, s, {
-    value: l,
+    value: t,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[s] = l, e
+  }) : e[s] = t, e
 }
 let b = e => {
     let {
       channel: s,
-      categoryName: l,
+      categoryName: t,
       guildName: r
     } = e, a = c.VL1;
-    return (0, m.Z)(s) ? a = c.W4G : s.isNSFW() && (a = c.z0B), (0, t.jsxs)("div", {
+    return (0, m.Z)(s) ? a = c.W4G : s.isNSFW() && (a = c.z0B), (0, l.jsxs)("div", {
       className: E.result,
-      children: [(0, t.jsx)(a, {
+      children: [(0, l.jsx)(a, {
         className: E.resultIcon,
         colorClass: E.resultIconBackground,
         size: "xs"
-      }), (0, t.jsxs)("div", {
+      }), (0, l.jsxs)("div", {
         className: E.resultText,
-        children: [(0, t.jsx)("span", {
+        children: [(0, l.jsx)("span", {
           children: s.name
-        }), (0, t.jsx)("span", {
+        }), (0, l.jsx)("span", {
           className: E.resultCategoryName,
-          children: l
+          children: t
         })]
-      }), (0, t.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: E.resultGuildName,
         children: r
       })]
@@ -62,42 +62,42 @@ let b = e => {
   f = e => {
     let {
       channel: s
-    } = e, l = (0, _.ZP)(s);
-    return (0, t.jsxs)("div", {
+    } = e, t = (0, _.ZP)(s);
+    return (0, l.jsxs)("div", {
       className: E.result,
-      children: [(0, t.jsx)(c.qEK, {
+      children: [(0, l.jsx)(c.qEK, {
         src: (0, h.x)(s),
-        "aria-label": null != l ? l : "",
+        "aria-label": null != t ? t : "",
         className: E.resultAvatar,
         size: c.EFr.SIZE_32
-      }), (0, t.jsx)("div", {
+      }), (0, l.jsx)("div", {
         className: E.resultText,
-        children: l
+        children: t
       })]
     })
   },
   R = e => {
     let {
       user: s,
-      status: l
+      status: t
     } = e, r = (0, u.e7)([p.Z, N.Z], () => {
       var e;
       let s = null != (e = p.Z.getVoiceChannelId()) ? e : p.Z.getChannelId();
       return null == s ? null : N.Z.getChannel(s)
     }), a = null == r ? void 0 : r.guild_id, n = null == r ? void 0 : r.id, i = k.ZP.useName(a, n, s), o = C.ZP.useName(s);
-    return (0, t.jsxs)("div", {
+    return (0, l.jsxs)("div", {
       className: E.result,
-      children: [(0, t.jsx)(c.qEK, {
+      children: [(0, l.jsx)(c.qEK, {
         src: s.getAvatarURL(void 0, 32),
         "aria-label": s.username,
         className: E.resultAvatar,
         size: c.EFr.SIZE_32,
-        status: l
-      }), (0, t.jsxs)("div", {
+        status: t
+      }), (0, l.jsxs)("div", {
         className: E.resultText,
-        children: [(0, t.jsx)("span", {
+        children: [(0, l.jsx)("span", {
           children: i
-        }), (0, t.jsx)("span", {
+        }), (0, l.jsx)("span", {
           className: E.resultUsername,
           children: o
         })]
@@ -107,23 +107,23 @@ let b = e => {
 class z extends r.Component {
   render() {
     let e, s, {
-      result: l,
+      result: t,
       selected: r,
       sending: a
     } = this.props;
-    switch (l.type) {
+    switch (t.type) {
       case d.h8.GROUP_DM:
-        e = (0, t.jsx)(f, {
-          channel: l.data.record
+        e = (0, l.jsx)(f, {
+          channel: t.data.record
         });
         break;
       case d.h8.TEXT_CHANNEL: {
         let {
           categoryName: s,
           guildName: r
-        } = l;
-        e = (0, t.jsx)(b, {
-          channel: l.data.record,
+        } = t;
+        e = (0, l.jsx)(b, {
+          channel: t.data.record,
           categoryName: s,
           guildName: r
         });
@@ -136,30 +136,29 @@ class z extends r.Component {
             record: r
           },
           status: a
-        } = l;
-        e = (0, t.jsx)(R, {
+        } = t;
+        e = (0, l.jsx)(R, {
           comparator: s,
           user: r,
           status: a
         })
       }
     }
-    return s = l.sent ? (0, t.jsx)(c.zxk, {
+    return s = t.sent ? (0, l.jsx)(c.zxk, {
       className: E.inviteButton,
       look: c.zxk.Looks.LINK,
       size: c.zxk.Sizes.SMALL,
       disabled: !0,
       color: c.zxk.Colors.WHITE,
       children: S.NW.string(S.t.i6A1X1)
-    }) : (0, t.jsx)(c.zxk, {
+    }) : (0, l.jsx)(c.zxk, {
       color: c.zxk.Colors.GREEN,
       look: r ? c.zxk.Looks.FILLED : c.zxk.Looks.OUTLINED,
       className: E.inviteButton,
       size: c.zxk.Sizes.SMALL,
       submitting: a,
-      onClick: this.handleClick,
       children: S.NW.string(S.t["6F9ivr"])
-    }), (0, t.jsxs)(c.P3F, {
+    }), (0, l.jsxs)(c.P3F, {
       className: n()(E.resultWrapper, {
         [E.resultWrapperSelected]: r
       }),
@@ -188,7 +187,7 @@ class z extends r.Component {
 function A(e) {
   let {
     transitionState: s,
-    onClose: l
+    onClose: t
   } = e, {
     results: a,
     query: n,
@@ -213,8 +212,8 @@ function A(e) {
   }), [R]), r.useEffect(() => (g.S.subscribe(v.CkL.SCROLL_PAGE_DOWN, A), () => {
     g.S.unsubscribe(v.CkL.SCROLL_PAGE_DOWN, A)
   }), [A]), r.useEffect(() => {
-    null == h && l()
-  }, [l, h]), r.useEffect(() => {
+    null == h && t()
+  }, [t, h]), r.useEffect(() => {
     var e;
     null == (e = f.current) || e.scrollToTop(), p(0)
   }, [f, a]);
@@ -223,11 +222,11 @@ function A(e) {
         data: s,
         data: {
           record: {
-            id: l
+            id: t
           }
         }
       } = a[e];
-      if (!(null == l || k.includes(l))) switch (C([...k, l]), s.type) {
+      if (!(null == t || k.includes(t))) switch (C([...k, t]), s.type) {
         case d.h8.GROUP_DM:
         case d.h8.TEXT_CHANNEL:
           (0, i.GG)(s.record.id);
@@ -245,27 +244,27 @@ function A(e) {
     Z = e => {
       _(e), (0, i.rh)(e)
     };
-  return null == h ? null : (0, t.jsxs)(c.Y0X, {
+  return null == h ? null : (0, l.jsxs)(c.Y0X, {
     transitionState: s,
     size: c.CgR.SMALL,
     "aria-label": S.NW.formatToPlainString(S.t["2tN7io"], {
       name: h.name
     }),
-    children: [(0, t.jsxs)(c.xBx, {
+    children: [(0, l.jsxs)(c.xBx, {
       separator: L,
       className: E.modalHeader,
-      children: [(0, t.jsx)(c.olH, {
+      children: [(0, l.jsx)(c.olH, {
         className: E.closeButton,
-        onClick: l
-      }), (0, t.jsxs)("div", {
+        onClick: t
+      }), (0, l.jsxs)("div", {
         className: E.header,
-        children: [(0, t.jsx)(c.vwX, {
+        children: [(0, l.jsx)(c.vwX, {
           tag: "h2",
           className: j.marginBottom8,
           children: S.NW.format(S.t["2tN7io"], {
             name: h.name
           })
-        }), (0, t.jsx)(o.ZP, {
+        }), (0, l.jsx)(o.ZP, {
           size: o.ZP.Sizes.MEDIUM,
           query: m,
           selectedSection: 0,
@@ -276,8 +275,8 @@ function A(e) {
             null == s ? T() : I(s)
           },
           onSelectionChange: (e, s) => {
-            var l;
-            p(s), null == (l = f.current) || l.scrollIntoViewRect({
+            var t;
+            p(s), null == (t = f.current) || t.scrollIntoViewRect({
               start: 48 * s,
               end: 48 * s + 48
             })
@@ -288,7 +287,7 @@ function A(e) {
           onClear: T
         })]
       })]
-    }), (0, t.jsx)(c.YAO, {
+    }), (0, l.jsx)(c.YAO, {
       scrollerRef: f,
       className: 0 === a.length ? E.noResults : E.results,
       paddingBottom: 12,
@@ -299,15 +298,15 @@ function A(e) {
       renderRow: e => {
         let {
           section: s,
-          row: l
+          row: t
         } = e;
         if (s > 0) return null;
-        let r = a[l];
-        return null == r ? null : (0, t.jsx)(z, {
-          row: l,
+        let r = a[t];
+        return null == r ? null : (0, l.jsx)(z, {
+          row: t,
           result: r,
           sending: null != r.data.record.id && k.includes(r.data.record.id),
-          selected: l === N,
+          selected: t === N,
           onMouseEnter: P,
           onInvite: I
         }, r.data.record.id)

@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 0f8b391ba9c230ba
+  Original File Name: 454f79bb25421f6b
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -8081,6 +8081,7 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
 }
 
 .hasWallpaper_f75fb0 {
+    --channels-default: var(--text-muted);
     --chat-text-muted: var(--text-muted);
     --text-low-contrast: var(--text-secondary)
 }
@@ -13049,4 +13050,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=0f8b391ba9c230ba.css.map*/
+/*# sourceMappingURL=454f79bb25421f6b.css.map*/

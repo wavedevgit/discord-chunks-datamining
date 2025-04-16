@@ -165,10 +165,8 @@ function R(e) {
           })), U && (0, p.lc)(M) && (z = (0, r.jsx)(S.Z, {
             onTransitionToInviteChannel: H,
             onAcceptInstantInvite: V,
-            guild: F,
-            invite: M,
-            author: n,
-            currentUserId: B
+            isMemberOfGuild: null != F,
+            invite: M
           }))
       }
   }

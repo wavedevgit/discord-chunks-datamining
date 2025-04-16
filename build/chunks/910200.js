@@ -104,7 +104,7 @@ function y(e) {
   } = e, u = null;
   return null != l ? u = l : a || (u = (0, r.jsx)(d.Z, {
     profile: t,
-    onClose: c
+    onComplete: c
   })), (0, r.jsxs)("div", {
     className: o()(m.container, i),
     children: [(0, r.jsx)(E, {

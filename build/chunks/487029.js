@@ -27,8 +27,8 @@ function x(e) {
     guildId: t,
     channel: n,
     width: x,
-    height: E,
-    keepOpen: C,
+    height: C,
+    keepOpen: E,
     interactive: j = !0,
     analyticsSource: I,
     onClose: P
@@ -46,7 +46,7 @@ function x(e) {
         };
       return l.forEach(e => i(e, !0)), l.forEach(e => i(e, !1)), r
     }, [t, n, e])
-  }((0, O.h)(n, !0)), T = (0, y.j)(), Z = l.useRef(null), [w, _] = l.useState(void 0), A = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, O.h)(n, !0)), T = (0, y.j)(), Z = l.useRef(null), [_, w] = l.useState(void 0), A = (0, o.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: R
   } = (0, s.ZP)(a.Z.SOUNDBOARD_WHEEL), D = l.useCallback(e => {
     (0, g.GN)(e, n.id, R), P()
@@ -57,8 +57,8 @@ function x(e) {
     0 === S.length && 0 === T.length && P()
   }, [S.length, T, P]), l.useEffect(() => () => {
     let e = Z.current;
-    C || null == e || D(e)
-  }, [C, D]), (0, u.Z)({
+    E || null == e || D(e)
+  }, [E, D]), (0, u.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.SOUNDBOARD_POPOUT,
     properties: {
@@ -70,7 +70,7 @@ function x(e) {
     disableTrack: !j
   });
   let W = l.useCallback(e => {
-      Z.current = e, _(null == e ? void 0 : e.soundId)
+      Z.current = e, w(null == e ? void 0 : e.soundId)
     }, []),
     k = l.useCallback(e => {
       if (null == e) return void W(null);
@@ -86,18 +86,18 @@ function x(e) {
       interactive: j,
       className: m.soundButton,
       sound: e,
-      focused: w === e.soundId,
+      focused: _ === e.soundId,
       channel: n
-    }, e.soundId)), [w, n, j, S]);
+    }, e.soundId)), [_, n, j, S]);
   return 0 === S.length ? null : (0, r.jsx)(s.Gt, {
     value: R,
     children: (0, r.jsx)(N.Z, {
       wheelWidth: x,
-      wheelHeight: E,
+      wheelHeight: C,
       itemWidth: 96,
       itemHeight: 52,
-      showDeadZoneIndicator: !C,
-      activeItem: w,
+      showDeadZoneIndicator: !E,
+      activeItem: _,
       onItemSelect: k,
       onItemAction: M,
       onClose: P,

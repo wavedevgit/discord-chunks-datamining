@@ -20,13 +20,13 @@ var r = n(268146),
   N = n(37113),
   b = n(761274);
 async function v(e, t) {
-  var n, v, m, x, E, C, j, I, P, S;
+  var n, v, m, x, C, E, j, I, P, S;
   let T = f.default.getCurrentUser(),
     Z = h.Z.getVoiceChannelId(),
-    w = u.Z.getChannel(Z),
-    _ = null == w ? void 0 : w.getGuildId(),
-    A = null == (n = c.Z.getGuild(_)) ? void 0 : n.premiumTier;
-  if (null == T || null == w || null == Z) return [!1, "no user or channel"];
+    _ = u.Z.getChannel(Z),
+    w = null == _ ? void 0 : _.getGuildId(),
+    A = null == (n = c.Z.getGuild(w)) ? void 0 : n.premiumTier;
+  if (null == T || null == _ || null == Z) return [!1, "no user or channel"];
   let R = null;
   if (null == (R = "number" == typeof e ? i.ZP.getGameForPID(e) : e)) return [!1, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(b.Eu.SCREEN_RECORDING, {
@@ -37,13 +37,13 @@ async function v(e, t) {
     resolution: W,
     fps: k,
     soundshareEnabled: M
-  } = s.Z.getState(), U = null != (m = null == t ? void 0 : t.preset) ? m : D, [L, B] = null != (x = (0, y.Z)(U, T, A)) ? x : [], G = null != (E = null != L ? L : null == t ? void 0 : t.resolution) ? E : W, V = null != (C = null != B ? B : null == t ? void 0 : t.fps) ? C : k, F = null != (j = null == t ? void 0 : t.previewDisabled) ? j : a.I0.getSetting(), K = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : M;
-  return (0, g.Z)(U, G, V, T, A, w) || (U = N.tI.PRESET_VIDEO, G = N.LY.RESOLUTION_720, V = N.ws.FPS_30), (0, l.Rc)({
+  } = s.Z.getState(), U = null != (m = null == t ? void 0 : t.preset) ? m : D, [L, B] = null != (x = (0, y.Z)(U, T, A)) ? x : [], G = null != (C = null != L ? L : null == t ? void 0 : t.resolution) ? C : W, V = null != (E = null != B ? B : null == t ? void 0 : t.fps) ? E : k, F = null != (j = null == t ? void 0 : t.previewDisabled) ? j : a.I0.getSetting(), K = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : M;
+  return (0, g.Z)(U, G, V, T, A, _) || (U = N.tI.PRESET_VIDEO, G = N.LY.RESOLUTION_720, V = N.ws.FPS_30), (0, l.Rc)({
     preset: U,
     resolution: G,
     frameRate: V,
     soundshareEnabled: K
-  }), (0, l.WH)(_, Z, (P = function(e) {
+  }), (0, l.WH)(w, Z, (P = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

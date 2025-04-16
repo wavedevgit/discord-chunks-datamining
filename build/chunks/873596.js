@@ -88,7 +88,7 @@ function x(e) {
   }))
 }
 
-function E(e) {
+function C(e) {
   let {
     channelId: t,
     isOverlay: n,
@@ -107,14 +107,14 @@ function E(e) {
   })
 }
 
-function C(e) {
+function E(e) {
   let t = (0, i.e7)([u.Z], () => u.Z.hasVideo(e.channelId)),
     [n, s] = l.useState(y.tu.RTC_DEBUG_PANEL),
     c = (0, a.Dt)(),
     f = l.useMemo(() => {
       switch (n) {
         case y.tu.RTC_DEBUG_PANEL:
-          return (0, r.jsx)(E, b({}, e));
+          return (0, r.jsx)(C, b({}, e));
         case y.tu.RTC_SECURE_FRAMES:
           return (0, r.jsx)(g.Z, {
             channelId: e.channelId
@@ -163,11 +163,11 @@ function C(e) {
 function j(e) {
   return (0, f.J)({
     channelId: e.channelId
-  }) ? (0, r.jsx)(C, b({}, e)) : (0, r.jsx)("div", {
+  }) ? (0, r.jsx)(E, b({}, e)) : (0, r.jsx)("div", {
     className: N.debugPanelStandalone,
     children: (0, r.jsx)("section", {
       className: N.debugPanelSection,
-      children: (0, r.jsx)(E, b({}, e))
+      children: (0, r.jsx)(C, b({}, e))
     })
   })
 }
