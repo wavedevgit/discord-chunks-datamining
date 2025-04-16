@@ -37,6 +37,7 @@ function N(e) {
   }
   return (0, r.jsx)(l.yRy, {
     position: "top",
+    spacing: 16,
     shouldShow: !0,
     onRequestClose: () => n(f.L.USER_DISMISS),
     renderPopout: () => (0, r.jsx)(h.Z, {
@@ -64,6 +65,7 @@ function x(e) {
   }
   return (0, r.jsx)(l.yRy, {
     position: "top",
+    spacing: 16,
     shouldShow: !0,
     onRequestClose: () => n(f.L.USER_DISMISS),
     renderPopout: () => (0, r.jsx)(h.Z, {
