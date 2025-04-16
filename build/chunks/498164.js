@@ -1,6 +1,6 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  Z: () => w
+  Z: () => L
 }), n(35282), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r = n(200651);
 n(192379);
@@ -60,7 +60,7 @@ function x(e, t) {
     link_type: t
   })
 }
-let w = {
+let L = {
   [A.Etm.INVITE_BROWSER]: {
     scope: j.cE,
     async handler(e) {

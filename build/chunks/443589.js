@@ -43,9 +43,9 @@ function P(e) {
     isHovered: A,
     setIsHovered: Z,
     onMouseEnter: x,
-    onMouseLeave: w
+    onMouseLeave: L
   } = (0, f.Z)(200, 300), {
-    enableEmojiCTA: L
+    enableEmojiCTA: w
   } = _.w.useExperiment({
     location: "GiftIntentActionButton"
   }, {
@@ -90,7 +90,7 @@ function P(e) {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
     M = () => n === y.hX.FRIEND_ANNIVERSARY ? v.NW.string(v.t["4LohBA"]) : (0, b.Ou)(n),
-    U = () => L ? (0, r.jsx)(u.P3F, {
+    U = () => w ? (0, r.jsx)(u.P3F, {
       "aria-label": M(),
       onClick: D,
       className: a()(S.actionButton, C.popoutButton, {
@@ -98,7 +98,7 @@ function P(e) {
         [S.actionButtonMobile]: c.tq
       }),
       onMouseEnter: R,
-      onMouseLeave: w,
+      onMouseLeave: L,
       children: (0, r.jsx)(o.animated.div, {
         className: C.spriteContainer,
         children: (0, r.jsx)("div", {
@@ -108,7 +108,7 @@ function P(e) {
     }) : (0, r.jsx)(u.zxk, {
       onClick: D,
       onMouseEnter: R,
-      onMouseLeave: w,
+      onMouseLeave: L,
       children: (0, r.jsxs)("div", {
         className: C.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {
@@ -140,7 +140,7 @@ function P(e) {
       premiumGiftIntentCardType: N.U.COACHMARK,
       recipientUser: t,
       onMouseEnter: x,
-      onMouseLeave: w,
+      onMouseLeave: L,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,

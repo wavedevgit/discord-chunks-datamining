@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(833435),
   Z = n(918701),
   x = n(150560),
-  w = n(558652),
-  L = n(736683),
+  L = n(558652),
+  w = n(736683),
   R = n(452081),
   D = n(46140),
   k = n(981631),
@@ -85,7 +85,7 @@ let F = function() {
     scrollPosition: s
   } = (0, m.M)(), u = x.Z.getState().getUtmCurrentContext(), g = (0, A._)({
     location: D.dr.QUEST_HOME_DESKTOP
-  }) ? L.Z : L.j, j = i.useRef(u);
+  }) ? w.Z : w.j, j = i.useRef(u);
   i.useEffect(() => {
     j.current = u
   }), i.useEffect(() => {
@@ -161,7 +161,7 @@ let F = function() {
       }), (0, r.jsx)(E.Z, {
         children: e === P.e5.CLAIMED ? (0, r.jsx)(g, {
           onSelectTab: t
-        }) : (0, r.jsx)(w.Z, {})
+        }) : (0, r.jsx)(L.Z, {})
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(N.ZP, {
@@ -200,7 +200,7 @@ let F = function() {
             })
           }), e === P.e5.CLAIMED ? (0, r.jsx)(g, {
             onSelectTab: t
-          }) : (0, r.jsx)(w.Z, {})]
+          }) : (0, r.jsx)(L.Z, {})]
         })]
       })]
     })

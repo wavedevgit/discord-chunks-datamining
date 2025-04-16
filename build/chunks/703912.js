@@ -74,8 +74,8 @@ async function P(e, t, n) {
     guild_id: A,
     channel_id: Z,
     prompt: x,
-    disable_guild_select: w,
-    integration_type: L,
+    disable_guild_select: L,
+    integration_type: w,
     pid: R,
     signal: D
   } = e;
@@ -92,7 +92,7 @@ async function P(e, t, n) {
   if ("string" == typeof P ? k = P.split(" ").filter(e => e.length > 0) : Array.isArray(P) && (k = P), null == b.default.getCurrentUser()) throw new O.Z({
     errorCode: I.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
-  if (null != L) l = Number(L);
+  if (null != w) l = Number(w);
   else {
     let e = e => {
         var t;
@@ -163,7 +163,7 @@ async function P(e, t, n) {
     guildId: A,
     channelId: Z,
     prompt: x,
-    disableGuildSelect: w,
+    disableGuildSelect: L,
     disclosures: s,
     integrationType: l,
     pid: R
@@ -180,8 +180,8 @@ async function j(e, t, n) {
     state: A,
     nonce: Z,
     scope: x,
-    permissions: w,
-    guild_id: L,
+    permissions: L,
+    guild_id: w,
     channel_id: R,
     prompt: D,
     disable_guild_select: k,
@@ -263,7 +263,7 @@ async function j(e, t, n) {
   null == n || n(N.application, R, U);
   let H = E.Hn;
   try {
-    H = a.vB(null != w ? w : 0)
+    H = a.vB(null != L ? L : 0)
   } catch (e) {}
   return null != N.integration_type && Object.values(i.Y).includes(N.integration_type) && (c = new Map).set(N.integration_type, N), t({
     clientId: C,
@@ -275,7 +275,7 @@ async function j(e, t, n) {
     codeChallenge: P,
     codeChallengeMethod: j,
     state: A,
-    guildId: L,
+    guildId: w,
     channelId: R,
     prompt: D,
     disableGuildSelect: k,

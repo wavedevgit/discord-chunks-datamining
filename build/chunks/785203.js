@@ -48,8 +48,8 @@ function C(e) {
     A = null != v && Date.now() - v <= I.Dge,
     Z = (0, y.Jh)(n) !== I.Eu4.NONE,
     x = !(null != r && Date.now() - r <= 432e5) && !A && j && Z,
-    w = (0, s.m)(n),
-    L = (0, l.e7)([E.Z], () => E.Z.isVisible(e)),
+    L = (0, s.m)(n),
+    w = (0, l.e7)([E.Z], () => E.Z.isVisible(e)),
     R = d.Z.useShouldShowChannelNotice(n),
     D = (0, h.h6)(e),
     {
@@ -71,8 +71,8 @@ function C(e) {
     }, [n, x]), T) return 0;
   if (C && !S) return 1;
   if (P) return 2;
-  if (w || null != G) return 3;
-  if (L) return 4;
+  if (L || null != G) return 3;
+  if (w) return 4;
   else if (R) return 5;
   else if (M) return 6;
   else if (U) return 7;

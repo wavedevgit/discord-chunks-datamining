@@ -1,6 +1,6 @@
 /**
   Module ID: 1272
-  Original File Name: d2c5b0676ace2a9e
+  Original File Name: e76dfb87f8894548
 **/
 .container__74da2 {
     align-items: center;
@@ -318,23 +318,6 @@
 .visual-refresh.enable-forced-colors .button__85643 {
     background-color: ButtonFace;
     color: ButtonText
-}
-
-.actionButtonsContainer__58de5 {
-    align-items: center;
-    display: flex;
-    justify-content: center
-}
-
-.forceButtonsShow__58de5 {
-    display: flex
-}
-
-.overflowIcon__58de5 {
-    display: block;
-    height: 20px;
-    object-fit: contain;
-    width: 20px
 }
 
 .icon__402f3 {
@@ -8633,4 +8616,4 @@ html .tabBadge__35e86 {
     margin-bottom: 18px
 }
 
-/*# sourceMappingURL=d2c5b0676ace2a9e.css.map*/
+/*# sourceMappingURL=e76dfb87f8894548.css.map*/

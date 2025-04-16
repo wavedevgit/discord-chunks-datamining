@@ -32,8 +32,8 @@ var r = n(200651),
   A = n(849862),
   Z = n(522558),
   x = n(795448),
-  w = n(441623),
-  L = n(457396),
+  L = n(441623),
+  w = n(457396),
   R = n(108989),
   D = n(51596),
   k = n(905423),
@@ -109,7 +109,7 @@ let el = e => {
     } = e, n = ei(e, ["selected"]);
     let l = (0, c.JA)("friends"),
       a = (0, A.If)(),
-      o = (0, d.e7)([w.Z], () => w.Z.canShowFriendsTabBadge()),
+      o = (0, d.e7)([L.Z], () => L.Z.canShowFriendsTabBadge()),
       u = (0, d.e7)([b.Z], () => b.Z.useReducedMotion),
       {
         enabled: p
@@ -339,7 +339,7 @@ let eh = i.memo(function(e) {
         hideGameUpdateProgressIndicator: l === Q.Z5c.APPLICATION_LIBRARY
       }, "library") : null, d ? (0, r.jsx)(es, {
         selected: null == m ? null != l && l.startsWith(Q.Z5c.MESSAGE_REQUESTS) : m === Q.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, c ? (0, r.jsx)(L.g, {
+      }, "message-requests") : null, c ? (0, r.jsx)(w.g, {
         selected: null == m ? o : m.startsWith(Q.Z5c.APPLICATION_STORE),
         route: Q.Z5c.APPLICATION_STORE,
         locationState: {
@@ -402,7 +402,7 @@ function eg() {
       } = e;
       return [t, n]
     }, o.X),
-    p = (0, L.i)({
+    p = (0, w.i)({
       selected: null == u ? t : u.startsWith(Q.Z5c.APPLICATION_STORE)
     }),
     h = (0, T.a)(),

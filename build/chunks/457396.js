@@ -33,8 +33,8 @@ var r = n(200651),
   A = n(924540),
   Z = n(474486),
   x = n(119850),
-  w = n(938736),
-  L = n(227140),
+  L = n(938736),
+  w = n(227140),
   R = n(474936),
   D = n(981631),
   k = n(921944),
@@ -82,7 +82,7 @@ let G = "NitroTabButton",
       er = (0, j.Vi)(),
       ei = (0, T.$_)(),
       el = (0, x.V)(),
-      ea = (0, w.Kn)(G),
+      ea = (0, L.Kn)(G),
       {
         fractionalState: eo,
         startsAt: es,
@@ -115,16 +115,16 @@ let G = "NitroTabButton",
       endsAt: ec,
       messageStyle: u.a.SHORT_TIME,
       upperCase: !0
-    })), !0 === eg ? E = em ? (0, r.jsx)(Z.Du, {}) : (0, r.jsx)(L.Z, {
+    })), !0 === eg ? E = em ? (0, r.jsx)(Z.Du, {}) : (0, r.jsx)(w.Z, {
       copy: M.NW.string(M.t.OS9KPj),
       showStars: !1
-    }) : er ? (E = (0, r.jsx)(S.Z, {}), V = 0) : null != eh && eh === o.z.REVERSE_TRIAL_NITRO_TAB_BADGE_V2 ? (E = (0, r.jsx)(L.Z, {
+    }) : er ? (E = (0, r.jsx)(S.Z, {}), V = 0) : null != eh && eh === o.z.REVERSE_TRIAL_NITRO_TAB_BADGE_V2 ? (E = (0, r.jsx)(w.Z, {
       copy: M.NW.string(M.t.HwUCnp),
       showStars: !1
-    }), V = 4) : null != ei ? (E = (0, r.jsx)(L.Z, {
+    }), V = 4) : null != ei ? (E = (0, r.jsx)(w.Z, {
       copy: ei,
       showStars: !1
-    }), V = 1) : null != el ? (E = (0, r.jsx)(L.Z, {
+    }), V = 1) : null != el ? (E = (0, r.jsx)(w.Z, {
       copy: el,
       showStars: !1
     }), V = 1) : null != ee ? (E = (0, r.jsx)(A.GN, {
