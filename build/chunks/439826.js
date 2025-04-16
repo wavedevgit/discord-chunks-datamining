@@ -131,19 +131,23 @@ function D(e) {
   var t;
   let {
     asset: n,
-    reducedMotionEnabled: s,
-    visible: i
-  } = e, l = o.useRef(null);
+    visible: s
+  } = e, i = o.useRef(null);
   return o.useEffect(() => {
-    null != l.current && i && l.current.play()
-  }, [i]), (0, r.jsx)(f.Z, {
-    ref: l,
-    autoPlay: !s,
+    if (null != i.current)
+      if (s) i.current.play();
+      else {
+        var e;
+        null == (e = i.current) || e.pause()
+      }
+  }, [s]), (0, r.jsx)(f.Z, {
+    ref: i,
+    autoPlay: !1,
     loop: !0,
     muted: !0,
     playsInline: !0,
     className: a()(R.videoOverlay, {
-      [R.videoOverlayVisible]: i
+      [R.videoOverlayVisible]: s
     }),
     controls: !1,
     children: (0, r.jsx)("source", {
@@ -211,7 +215,6 @@ function W(e) {
         })
       }), Z && !H && null != et && !$ && (0, r.jsx)(D, {
         asset: et,
-        reducedMotionEnabled: H,
         visible: C
       })]
     }), (0, r.jsx)("div", {
