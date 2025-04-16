@@ -67,8 +67,9 @@ function p(e) {
     availableTags: b,
     defaultSortOrder: y,
     defaultForumLayout: v,
-    iconEmoji: O,
-    themeColor: I
+    defaultTagSetting: O,
+    iconEmoji: I,
+    themeColor: S
   } = e;
   i.Z.dispatch({
     type: "CHANNEL_SETTINGS_UPDATE",
@@ -92,8 +93,9 @@ function p(e) {
     availableTags: b,
     defaultSortOrder: y,
     defaultForumLayout: v,
-    iconEmoji: O,
-    themeColor: I
+    defaultTagSetting: O,
+    iconEmoji: I,
+    themeColor: S
   })
 }
 async function h(e, t) {
@@ -120,9 +122,10 @@ async function h(e, t) {
     availableTags: A,
     defaultSortOrder: C,
     defaultForumLayout: R,
-    iconEmoji: P,
-    themeColor: w
-  } = t, D = s.Z.getChannel(e);
+    defaultTagSetting: P,
+    iconEmoji: w,
+    themeColor: D
+  } = t, L = s.Z.getChannel(e);
   return i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT"
   }), await a.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
@@ -159,11 +162,12 @@ async function h(e, t) {
       })),
       default_sort_order: C,
       default_forum_layout: R,
-      icon_emoji: null != P ? {
-        id: P.id,
-        name: P.name
-      } : null === P ? null : void 0,
-      theme_color: w
+      default_tag_setting: P,
+      icon_emoji: null != w ? {
+        id: w.id,
+        name: w.name
+      } : null === w ? null : void 0,
+      theme_color: D
     },
     oldFormErrors: !0,
     rejectWithError: !1
@@ -172,8 +176,8 @@ async function h(e, t) {
       type: "CHANNEL_SETTINGS_SUBMIT_SUCCESS",
       channelId: e
     });
-    let n = null == D ? void 0 : D.getGuildId();
-    return null == n || (null == D ? void 0 : D.isThread()) || o.Z.checkGuildTemplateDirty(n), t
+    let n = null == L ? void 0 : L.getGuildId();
+    return null == n || (null == L ? void 0 : L.isThread()) || o.Z.checkGuildTemplateDirty(n), t
   }, e => (i.Z.dispatch({
     type: "CHANNEL_SETTINGS_SUBMIT_FAILURE",
     errors: e.body

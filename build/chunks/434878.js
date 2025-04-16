@@ -42,8 +42,8 @@ var r = n(200651),
   F = n(961675),
   D = n(883429),
   z = n(238349),
-  H = n(109434),
-  B = n(456269),
+  B = n(109434),
+  H = n(456269),
   U = n(90372),
   V = n(985518),
   G = n(228392),
@@ -232,7 +232,7 @@ function e_(e) {
       tagFilter: n,
       layoutType: r,
       tagSetting: a
-    } = (0, H.H)(e.id), i = (0, B.vP)({
+    } = (0, B.H)(e.id), i = (0, H.vP)({
       channel: e,
       sortOrder: t,
       tagFilter: n,
@@ -250,10 +250,10 @@ function e_(e) {
     } = (0, T.qQ)(e, t, n, a), {
       searchResults: u,
       isSearchLoading: m
-    } = (0, B.XZ)({
+    } = (0, H.XZ)({
       channelId: e.id
     });
-    return (0, B.ES)(e, t, n, a), {
+    return (0, H.ES)(e, t, n, a), {
       activeThreadIds: i,
       archivedThreadIds: s,
       searchResults: u,
@@ -268,10 +268,10 @@ function e_(e) {
   }(t), L = m.length > 0, W = L || f.length > 0, z = (0, O.Z)(t), {
     tagFilter: X,
     tagSetting: K
-  } = (0, H.H)(t.id);
-  (0, B.ku)(t, X, K, u);
-  let Q = (0, B.jR)(t),
-    ee = (0, B.eZ)(t),
+  } = (0, B.H)(t.id);
+  (0, H.ku)(t, X, K, u);
+  let Q = (0, H.jR)(t),
+    ee = (0, H.eZ)(t),
     et = a.useRef(null),
     {
       observePostVisibilityAnalytics: er
@@ -387,21 +387,21 @@ function e_(e) {
   }, "archived-missing-reading-history-perm"), [eb, ee, b, Q, t, L, M, I, W]), eD = (0, g.e7)([F.Z], () => F.Z.hasHidden(t.id)), ez = {
     editorHeight: i,
     isGridLayout: eg
-  }, eH = a.useRef(ez);
+  }, eB = a.useRef(ez);
   a.useEffect(() => {
-    eH.current = ez
+    eB.current = ez
   }), a.useEffect(() => {
     var e, t;
     let {
       editorHeight: n,
       isGridLayout: r
-    } = eH.current, a = r ? eX : et, i = null == (e = a.current) ? void 0 : e.getScrollerState();
+    } = eB.current, a = r ? eX : et, i = null == (e = a.current) ? void 0 : e.getScrollerState();
     null != i && !eD && i.scrollTop > n && (null == (t = a.current) || t.scrollTo({
       to: 0
     }))
   }, [eD]);
   let {
-    updateListScrollerRef: eB,
+    updateListScrollerRef: eH,
     renderListSection: eU,
     renderListItem: eV,
     getListSectionHeight: eG,
@@ -698,7 +698,7 @@ function e_(e) {
                 ref: n
               } = t, a = eh(t, ["ref"]);
               return (0, r.jsx)(p._2F, em(eu({
-                ref: eB(n),
+                ref: eH(n),
                 className: ed.list,
                 sections: eZ,
                 sectionHeight: eG,
@@ -818,7 +818,7 @@ function eS(e) {
   }, c.X), {
     tagFilter: U,
     layoutType: V
-  } = (0, H.H)(s.id), q = (0, Y.AF)(), J = (0, H.v)(), $ = (0, g.e7)([M.Z], () => M.Z.canChatInGuild(s.guild_id)), ee = (0, B.r_)(s), en = (0, I.cD)(s), [ea, ei] = a.useState(en), [, el] = (0, _.AB)(null != (i = s.getGuildId()) ? i : void 0), eo = $ && (en || ea && el), eg = s.isMediaChannel();
+  } = (0, B.H)(s.id), q = (0, Y.AF)(), J = (0, B.v)(), $ = (0, g.e7)([M.Z], () => M.Z.canChatInGuild(s.guild_id)), ee = (0, H.r_)(s), en = (0, I.cD)(s), [ea, ei] = a.useState(en), [, el] = (0, _.AB)(null != (i = s.getGuildId()) ? i : void 0), eo = $ && (en || ea && el), eg = s.isMediaChannel();
   a.useEffect(() => {
     en && ei(!0)
   }, [en]);
@@ -839,7 +839,7 @@ function eS(e) {
     handler: ex
   });
   let eb = (0, g.e7)([A.Z], () => A.Z.getUploads(s.id, Z.d.FirstThreadMessage)),
-    ej = (0, B.ql)(s),
+    ej = (0, H.ql)(s),
     ev = a.useRef(null),
     eC = a.useRef(null),
     [e_, ey] = a.useState(0),

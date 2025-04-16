@@ -62,7 +62,7 @@ let A = O.QZA.CLOSED,
   P = !1,
   w = !1,
   D = null,
-  L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "iconEmoji", "themeColor"];
+  L = ["name", "type", "topic_", "bitrate_", "userLimit_", "nsfw_", "flags_", "rateLimitPerUser_", "defaultThreadRateLimitPerUser", "defaultAutoArchiveDuration", "template", "defaultReactionEmoji", "rtcRegion", "videoQualityMode", "threadMetadata", "banner", "availableTags", "defaultSortOrder", "defaultForumLayout", "defaultTagSetting", "iconEmoji", "themeColor"];
 
 function x(e) {
   if (null == o || o.id !== e) return !1;
@@ -153,8 +153,9 @@ function Z(e) {
     availableTags: b,
     defaultSortOrder: y,
     defaultForumLayout: v,
-    iconEmoji: O,
-    themeColor: I
+    defaultTagSetting: O,
+    iconEmoji: I,
+    themeColor: T
   } = e;
   if (null == a) return !1;
   null != t && (a = a.set("name", t)), null != r && (a = a.set("topic", r)), null != i && (a = a.set("bitrate", i)), null != o && (a = a.set("userLimit", o)), null != s && (a = a.set("nsfw", s)), null != l && (a = a.set("flags", l)), null != c && (a = a.set("rateLimitPerUser", c)), null != u && (a = a.set("defaultThreadRateLimitPerUser", u)), null != d && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
@@ -163,7 +164,7 @@ function Z(e) {
     locked: f
   }))), null != _ && (a = a.set("threadMetadata", N(S({}, a.threadMetadata), {
     invitable: _
-  }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != v && (a = a.set("defaultForumLayout", v)), void 0 !== O && (a = a.set("iconEmoji", O)), null != I && (a = a.set("themeColor", I)), V()
+  }))), null != p && (a = a.set("defaultAutoArchiveDuration", p)), null != h && (a = a.set("template", h)), null != n && (a = a.set("type", n)), void 0 !== g && (a = a.set("rtcRegion", g)), null != E && (a = a.set("videoQualityMode", E)), void 0 !== m && (a = a.set("defaultReactionEmoji", m)), null != b && (a = a.set("availableTags", b)), null != y && (a = a.set("defaultSortOrder", y)), null != O && (a = a.set("defaultTagSetting", O)), null != v && (a = a.set("defaultForumLayout", v)), void 0 !== I && (a = a.set("iconEmoji", I)), null != T && (a = a.set("themeColor", T)), V()
 }
 
 function H(e) {
