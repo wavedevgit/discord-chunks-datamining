@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 454f79bb25421f6b
+  Original File Name: 9177ab8c2e4736e0
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -7161,6 +7161,10 @@ html.keyboard-mode .root_bfe55a.idle_bfe55a:not(:focus-within) .bottomControls_b
     background: var(--chat-background-default)
 }
 
+.channelAppLauncherWordlePromo_e6e74f .lottieAnimationControllerFill {
+    fill: var(--interactive-normal)
+}
+
 .appLauncherGlow_e6e74f {
     overflow: hidden;
     position: fixed;
@@ -13050,4 +13054,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=454f79bb25421f6b.css.map*/
+/*# sourceMappingURL=9177ab8c2e4736e0.css.map*/
