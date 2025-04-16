@@ -1,6 +1,6 @@
 /**
   Module ID: 10923
-  Original File Name: 3e0e910e1e41b58a
+  Original File Name: dcfe2d5934750064
 **/
 .editCard_a25a68 {
     background-color: var(--background-secondary);
@@ -5687,6 +5687,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleStyleMessageContainer__981c8 {
+    background-color: var(--background-base-lowest);
     overflow: visible;
     padding: var(--spacing-8) var(--spacing-4);
     pointer-events: none;
@@ -5695,7 +5696,7 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleStyleMessageContainer__981c8:after {
-    background: linear-gradient(to right,transparent,var(--background-primary));
+    background: linear-gradient(to right,transparent,var(--background-base-lowest));
     bottom: 0;
     content: "";
     pointer-events: none;
@@ -5714,9 +5715,9 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 
 .roleStylePreviewContainer__981c8 {
     background-color: var(--background-primary);
-    border: 1px solid var(--bg-mod-faint);
+    border: 2px solid transparent;
     border-radius: var(--spacing-8);
-    box-shadow: 0 1px 2px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.15),0 3px 8px -3px rgba(0,0,0,.15),0 4px 12px -4px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px -1px rgba(0,0,0,.05),0 2px 4px -2px rgba(0,0,0,.07),0 3px 8px -3px rgba(0,0,0,.07),0 4px 12px -4px rgba(0,0,0,.07);
     display: flex;
     flex: 0 0 142px;
     flex-direction: column;
@@ -5733,8 +5734,8 @@ input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
 }
 
 .roleStyleLabel__981c8 {
-    background-color: var(--bg-mod-faint);
-    color: var(--text-muted);
+    background-color: var(--background-surface-higher);
+    color: var(--text-secondary);
     margin: -2px 0;
     padding: 6px;
     text-align: center;
@@ -12947,4 +12948,4 @@ html:not(.visual-refresh) .action_c66e86:hover,html:not(.visual-refresh) .clicka
     text-overflow: ellipsis
 }
 
-/*# sourceMappingURL=3e0e910e1e41b58a.css.map*/
+/*# sourceMappingURL=dcfe2d5934750064.css.map*/

@@ -339,6 +339,10 @@ let eI = (0, u.Un)({
             pathname: eg.Z5c.NITRO_HOME
           }
         });
+      case "connected-games":
+        return (0, r.jsx)(s.l_, {
+          to: eg.Z5c.SETTINGS("content-and-social", "connected-games")
+        });
       default:
         return (0, r.jsx)(s.l_, {
           to: eg.Z5c.ME
