@@ -42,8 +42,8 @@ function C(e) {
     pinned: P,
     anchorTop: T,
     anchorLeft: k,
-    showEmpty: D = !0
-  } = e, A = 2 * S + 2 * N, {
+    showEmpty: A = !0
+  } = e, D = 2 * S + 2 * N, {
     width: L,
     height: R
   } = {
@@ -51,8 +51,8 @@ function C(e) {
     height: "number" == typeof n.height ? n.height : 144
   }, W = (0, o.e7)([y.Z], () => y.Z.getVoiceChannelId()), {
     width: M,
-    height: V,
-    ref: z
+    height: z,
+    ref: V
   } = (0, c.ZP)(), U = (0, o.e7)([g.Z], () => {
     var e;
     let n = g.Z.getWidget(t);
@@ -109,11 +109,11 @@ function C(e) {
       layout: s,
       tileWidth: c
     }
-  }(!1, X.length, null != M ? M : L - A, null != V ? V : R - A, $), en = {
+  }(!1, X.length, null != M ? M : L - D, null != z ? z : R - D, $), en = {
     id: t,
     width: L,
     height: R,
-    sizeOffset: A,
+    sizeOffset: D,
     layout: et,
     padding: S,
     participants: X.length
@@ -220,7 +220,7 @@ function C(e) {
     s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !q)
   }, [q]), (0, u.ZP)(() => () => {
     s.Z.setGpuBoostRequested(b.zS.OVERLAY_VIDEO_STREAM_RENDERING, !1)
-  }), (q || !P) && C) ? null : q && !C ? D ? C ? null : (0, i.jsx)(O.E, {
+  }), (q || !P) && C) ? null : q && !C ? A ? C ? null : (0, i.jsx)(O.E, {
     emptyText: E.NW.string(E.t["T6+rX1"]),
     icon: l.hGI,
     absolute: !0
@@ -229,7 +229,7 @@ function C(e) {
     style: {
       opacity: Z
     },
-    ref: z,
+    ref: V,
     children: (0, i.jsx)(v.Z, {
       widgetId: t,
       tileWidth: ee,

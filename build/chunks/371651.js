@@ -527,7 +527,7 @@ function eO() {
 }
 
 function eI(e) {
-  x = e.pid
+  return x = e.pid, !(0, m.isValidGamePID)(e.pid) || ((0, m.setPID)(e.pid), !0)
 }
 
 function eS() {

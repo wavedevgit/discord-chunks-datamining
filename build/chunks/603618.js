@@ -35,14 +35,14 @@ var i = n(200651),
   P = n(199902),
   T = n(592125),
   k = n(293273),
-  D = n(158776),
-  A = n(699516),
+  A = n(158776),
+  D = n(699516),
   L = n(594174),
   R = n(801077),
   W = n(237997),
   M = n(630388),
-  V = n(5192),
-  z = n(709054),
+  z = n(5192),
+  V = n(709054),
   U = n(444295),
   G = n(388627),
   F = n(981631),
@@ -180,7 +180,7 @@ function X(e) {
   let {
     entry: n,
     currentUserActivity: o
-  } = e, l = (0, u.e7)([L.default], () => L.default.getUser(n.author_id)), a = null != (t = null == o ? void 0 : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([D.Z], () => null != l ? D.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, h] = r.useState("unsent");
+  } = e, l = (0, u.e7)([L.default], () => L.default.getUser(n.author_id)), a = null != (t = null == o ? void 0 : o.application_id) ? t : n.extra.application_id, s = (0, u.e7)([A.Z], () => null != l ? A.Z.getApplicationActivity(l.id, a) : null, [a, l]), [c, h] = r.useState("unsent");
   if (!(null != s && (0, v.Z)(s, F.xjy.JOIN))) return null;
   let f = async e => {
     if (null != l && "unsent" === c) {
@@ -233,12 +233,12 @@ function J(e) {
   } = e, o = (0, u.e7)([L.default], () => L.default.getUser(t.author_id)), l = (0, u.e7)([P.Z], () => null != o ? P.Z.getAnyStreamForUser(o.id) : null, [o]), {
     isMobileOnline: a,
     status: s
-  } = (0, u.cj)([D.Z], () => null == o ? {
+  } = (0, u.cj)([A.Z], () => null == o ? {
     isMobileOnline: void 0,
     status: void 0
   } : {
-    isMobileOnline: D.Z.isMobileOnline(o.id),
-    status: D.Z.getStatus(o.id)
+    isMobileOnline: A.Z.isMobileOnline(o.id),
+    status: A.Z.getStatus(o.id)
   }, [o]);
   return null == o ? null : (0, i.jsxs)("div", {
     className: H.row,
@@ -255,7 +255,7 @@ function J(e) {
           className: H.username,
           variant: "text-md/medium",
           color: "header-primary",
-          children: V.ZP.getName(void 0, void 0, o)
+          children: z.ZP.getName(void 0, void 0, o)
         }), null != l && (0, i.jsx)(_.ZP, {
           className: H.liveIndicator
         })]
@@ -338,7 +338,7 @@ function ee(e) {
     (0, S.W)(), (0, S._)()
   });
   let d = (0, u.e7)([k.Z], () => null == t ? null : k.Z.getApplicationActivity(t), [t]),
-    p = (0, u.Wu)([R.Z, A.Z, N.Z, Z.Z], () => {
+    p = (0, u.Wu)([R.Z, D.Z, N.Z, Z.Z], () => {
       if (null == t) return [];
       let e = R.Z.nowPlayingCards,
         n = {
@@ -354,7 +354,7 @@ function ee(e) {
       }, []).filter(e => {
         var t;
         let i = e.activityUser.id,
-          r = A.Z.isFriend(i);
+          r = D.Z.isFriend(i);
         return !! function(e, t, n) {
           let {
             v1: i
@@ -390,7 +390,7 @@ function ee(e) {
           var t, n, i, r, o, l, u;
           let d = null != (o = null == (n = e.activity) || null == (t = n.timestamps) ? void 0 : t.start) ? o : Date.now();
           return {
-            id: z.default.fromTimestamp(d),
+            id: V.default.fromTimestamp(d),
             author_id: e.activityUser.id,
             extra: {
               type: "played_game_extra",

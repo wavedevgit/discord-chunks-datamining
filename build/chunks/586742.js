@@ -1,6 +1,6 @@
 /** Chunk was on 89298 **/
 n.d(t, {
-  Z: () => D
+  Z: () => A
 }), n(388685);
 var i = n(200651),
   r = n(192379),
@@ -188,7 +188,7 @@ let P = r.memo(function(e) {
     }) : null
   });
 
-function D(e) {
+function A(e) {
   let t = (0, a.e7)([O.Z, g.Z], () => g.Z.getChannel(O.Z.getVoiceChannelId())),
     n = null == t ? void 0 : t.id,
     [o, l] = (0, a.e7)([p.Z], () => null == n ? [

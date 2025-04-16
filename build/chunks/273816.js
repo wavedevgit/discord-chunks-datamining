@@ -68,31 +68,31 @@ function v(e) {
       bufferFramecountRef: w,
       frameCheckerEffect: P
     } = (0, u.d6)(!0, E, !0),
-    [T, k, D] = (0, u.ZF)(v),
-    [A, L] = (0, u.Y5)(T, P, _),
+    [T, k, A] = (0, u.ZF)(v),
+    [D, L] = (0, u.Y5)(T, P, _),
     R = performance.now() - x.current < u.MC,
     W = k(j, w.current);
-  (0, c.ZP)(() => (A(), () => {
+  (0, c.ZP)(() => (D(), () => {
     L()
   }));
   let M = r.useCallback(() => {
-      S(), D(), A()
-    }, [S, D, A]),
-    [V, z] = r.useState(!0),
+      S(), A(), D()
+    }, [S, A, D]),
+    [z, V] = r.useState(!0),
     [U, G] = r.useState(!0),
     [F, B] = r.useState(!0),
     [H, Y] = r.useState(!0),
     [Q, K] = r.useState(!0);
   return t && !n ? null : (0, i.jsxs)("div", {
     className: l()(g.panelGroup, !o && g.rightAligned),
-    children: [(V || !t) && (0, i.jsxs)("div", {
+    children: [(z || !t) && (0, i.jsxs)("div", {
       className: g.measurement,
       children: [!t && (0, i.jsx)("div", {
         className: g.measurementCheckbox,
         children: (0, i.jsx)(s.XZJ, {
           size: 16,
-          value: V,
-          onChange: (e, t) => z(t)
+          value: z,
+          onChange: (e, t) => V(t)
         })
       }), (0, i.jsxs)(s.Text, {
         variant: "text-md/normal",

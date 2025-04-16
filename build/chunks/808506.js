@@ -218,7 +218,7 @@ function ep() {
 function eh(e, t) {
   let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
     r = Y.get(e);
-  (null === n || r === n) && r !== t && (null == t ? Y.delete(e) : Y.set(e, t), (null == t || "CRASHED" === t) && (X = null, ep()), ee.delete(e), ea.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), Y))
+  (null === n || r === n) && r !== t && (null == t ? Y.delete(e) : Y.set(e, t), (null == t || "CRASHED" === t) && (f.Z.setFocusedPID(null), ep()), ee.delete(e), ea.info("pid=".concat(e, " status transition ").concat(null != r ? r : "DISCONNECTED", " -> ").concat(null != t ? t : "DISCONNECTED"), Y))
 }
 async function em(e) {
   try {
@@ -479,7 +479,7 @@ function eM(e) {
   } = e;
   $ = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "60542939b407610d731665ceaee7031b8c9fe37b"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "a8eb4c19a6308dcde1d4463b42846a6bdc4cf2d6"), n.append("rpc", String(t)), n.append("rpc_auth_token", $), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function ek(e) {
@@ -517,7 +517,7 @@ function eG() {
 }
 
 function eB() {
-  Q = !1, X = null, ey(void 0), ea.verbose("OverlayBridgeStore: handleConnectionClosed")
+  Q = !1, f.Z.setFocusedPID(null), ey(void 0), ea.verbose("OverlayBridgeStore: handleConnectionClosed")
 }
 
 function eF() {
