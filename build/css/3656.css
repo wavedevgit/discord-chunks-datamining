@@ -1,6 +1,6 @@
 /**
   Module ID: 3656
-  Original File Name: 9177ab8c2e4736e0
+  Original File Name: 6667991bcf2140c1
 **/
 .content__79cbe {
     border-radius: 8px;
@@ -3644,19 +3644,19 @@ input[type=checked]:focus-visible+.label_df4aaf {
     animation-play-state: paused
 }
 
-.full-motion.app-focused.hardware-acceleration .backgroundDark__11664 {
+.full-motion.app-focused:not(.hardware-acceleration-disabled) .backgroundDark__11664 {
     animation-play-state: running
 }
 
-.full-motion.app-focused.hardware-acceleration .backgroundLight__11664 {
+.full-motion.app-focused:not(.hardware-acceleration-disabled) .backgroundLight__11664 {
     animation-play-state: running
 }
 
-.full-motion.app-focused.hardware-acceleration .foregroundRing__11664 {
+.full-motion.app-focused:not(.hardware-acceleration-disabled) .foregroundRing__11664 {
     animation-play-state: running
 }
 
-.full-motion.app-focused.hardware-acceleration .foregroundBase__11664 {
+.full-motion.app-focused:not(.hardware-acceleration-disabled) .foregroundBase__11664 {
     animation-play-state: running
 }
 
@@ -13054,4 +13054,4 @@ div.profileThemedContainer__656be {
     position: relative
 }
 
-/*# sourceMappingURL=9177ab8c2e4736e0.css.map*/
+/*# sourceMappingURL=6667991bcf2140c1.css.map*/
