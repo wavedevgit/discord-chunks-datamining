@@ -264,7 +264,7 @@ let ec = 880,
 
     function x() {
       if (I.skuId === d.a.PREMIUM_TIER_2_3_DAY) {
-        let e = er.NW.formatToPlainString(er.t.fYmir6, {
+        let e = er.NW.formatToPlainString(er.t["Cz1G9/"], {
           days: 3
         });
         return y ? (0, r.jsx)(S.j, {
