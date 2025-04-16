@@ -34,7 +34,7 @@ function u(e) {
           className: c.avatarWrapper,
           children: (0, r.jsx)(o.b, {
             guildId: t,
-            guildName: null != n ? n : l.NW.string(l.t.DmIUGB),
+            guildName: null != n ? n : l.NW.string(l.t.wZmuen),
             guildIcon: null,
             iconSize: 64
           })
@@ -45,7 +45,7 @@ function u(e) {
       children: (0, r.jsx)(i.X6q, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: null != n ? n : l.NW.string(l.t.DmIUGB)
+        children: null != n ? n : l.NW.string(l.t.wZmuen)
       })
     }), (0, r.jsx)("div", {
       className: c.body,

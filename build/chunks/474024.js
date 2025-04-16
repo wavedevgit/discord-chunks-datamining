@@ -65,7 +65,7 @@ function x(e) {
       }),
       children: (0, r.jsx)(m.Z, {
         guildId: x,
-        name: n.name
+        name: null
       })
     })]
   })

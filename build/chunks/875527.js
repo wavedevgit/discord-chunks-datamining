@@ -54,14 +54,16 @@ function d(e) {
   let {
     location: t,
     autoTrackExposure: n
-  } = e, {
+  } = e;
+  if (__OVERLAY__ || !u()) return !1;
+  let {
     enabled: r
   } = c.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: n
   });
-  return r && u()
+  return r
 }
 
 function f(e) {
