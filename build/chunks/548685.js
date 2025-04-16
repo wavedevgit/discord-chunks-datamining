@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(937510),
   f = n(38900),
   g = n(709999),
-  m = n(619899),
-  h = n(957058),
+  h = n(619899),
+  m = n(957058),
   _ = n(215023),
   C = n(388032),
   v = n(806734);
@@ -28,7 +28,7 @@ let x = e => {
     handleTransition: a,
     numVisibleItems: x,
     tab: O
-  } = e, j = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = l.createRef(), S = (0, h.u)(), k = l.useMemo(() => S(n), [t, S, n]), P = (0, b.a)()(k), E = (0, p.l)(P), w = (0, m.St)(E);
+  } = e, j = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = l.createRef(), S = (0, m.u)(), k = l.useMemo(() => S(n), [t, S, n]), E = (0, b.a)()(k), P = (0, p.l)(E), w = (0, h.St)(P);
   return null == j ? null : (0, r.jsxs)("div", {
     className: o()(v.popularPicksSection, v.centeredSection),
     children: [(0, r.jsxs)("div", {

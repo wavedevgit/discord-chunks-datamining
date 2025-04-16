@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  Z: () => m
+  Z: () => h
 }), n(388685);
 var r = n(200651),
   l = n(192379),
@@ -16,13 +16,13 @@ var r = n(200651),
   p = n(981631),
   f = n(388032),
   g = n(806734);
-let m = e => {
+let h = e => {
   var t, n, a;
   let {
-    wideBannerBlock: m,
-    handleTransition: h,
+    wideBannerBlock: h,
+    handleTransition: m,
     tab: _
-  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(m.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), x = l.useRef(null), [O, j] = l.useState();
+  } = e, C = null == (t = u.Z.getCategoryByStoreListingId(h.categoryStoreListingId)) ? void 0 : t.skuId, v = l.useRef(null), x = l.useRef(null), [O, j] = l.useState();
   l.useEffect(() => {
     let e = x.current;
     if (null == e) return;
@@ -37,7 +37,7 @@ let m = e => {
     {
       handleCardVisibilityChange: S
     } = (0, d.E)(y, "home", "marketing wide banner"),
-    k = m.bannerUrl;
+    k = h.bannerUrl;
   return null == k ? null : (0, r.jsx)(i.$, {
     innerRef: v,
     onChange: S,
@@ -50,7 +50,7 @@ let m = e => {
         children: (0, r.jsx)("img", {
           ref: x,
           src: k,
-          alt: m.title,
+          alt: h.title,
           style: {
             width: "100%",
             height: null != O ? "".concat(O, "px") : "auto",
@@ -68,25 +68,25 @@ let m = e => {
           className: g.wideBannerTextContainer,
           children: [(0, r.jsx)(s.X6q, {
             style: {
-              color: null != (n = m.bannerTextColor) ? n : "var(--text-normal)"
+              color: null != (n = h.bannerTextColor) ? n : "var(--text-normal)"
             },
             variant: _ === b.AW.ORBS ? "heading-xl/bold" : "heading-lg/semibold",
-            children: m.title
+            children: h.title
           }), (0, r.jsx)(s.Text, {
             style: {
-              color: null != (a = m.bannerTextColor) ? a : "var(--text-normal)"
+              color: null != (a = h.bannerTextColor) ? a : "var(--text-normal)"
             },
             lineClamp: 2,
             variant: _ === b.AW.ORBS ? "text-md/medium" : "text-sm/medium",
             children: _ === b.AW.ORBS ? f.NW.format(f.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
-            }) : m.body
+            }) : h.body
           })]
         })
-      }), !0 !== m.disableCta && (0, r.jsx)(s.zxk, {
+      }), !0 !== h.disableCta && (0, r.jsx)(s.zxk, {
         className: g.wideBannerBlockButton,
         color: s.Ttl.PRIMARY,
-        onClick: () => h("shop wide banner", y),
+        onClick: () => m("shop wide banner", y),
         children: f.NW.string(f.t.jVcuVV)
       })]
     })

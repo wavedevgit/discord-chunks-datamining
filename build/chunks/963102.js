@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(984370),
   f = n(341907),
   g = n(507808),
-  m = n(822857),
-  h = n(775451),
+  h = n(822857),
+  m = n(775451),
   _ = n(594174),
   C = n(471731),
   v = n(335131),
@@ -49,10 +49,10 @@ function k(e) {
     isLayer: n,
     onClose: a,
     selectedTab: k,
-    handleTransition: P
-  } = e, E = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
+    handleTransition: E
+  } = e, P = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
     enabled: I
-  } = (0, m.W)({
+  } = (0, h.W)({
     location: "collectibles_shop_header_bar"
   }), T = [{
     tab: x.AW.HOME,
@@ -67,7 +67,7 @@ function k(e) {
   });
   let N = n ? v.DR : a,
     L = k === x.AW.ORBS ? O.ZY5.SHOP_ORBS_TAB : O.ZY5.COLLECTIBLES_SHOP,
-    Z = l.useCallback(() => {
+    A = l.useCallback(() => {
       t && (N(), (0, u.Ou)()), (0, g.Y)({
         pageType: L,
         sectionType: O.jXE.ORBS_BALANCE_MENU,
@@ -77,7 +77,7 @@ function k(e) {
       })
     }, [N, t, L]);
   return (0, r.jsx)(c.f6W, {
-    theme: E,
+    theme: P,
     children: e => (0, r.jsxs)(p.Z, {
       className: o()(e, y.headerBar, {
         [y.fullscreenHeaderBar]: t
@@ -99,16 +99,16 @@ function k(e) {
             tab: t,
             displayText: n,
             selected: k === t,
-            handleTransition: P
+            handleTransition: E
           }, t)
         })
       }), (I || t) && (0, r.jsxs)("div", {
         className: y.alignedRightContent,
-        children: [I && (0, r.jsx)(h.V9, {
+        children: [I && (0, r.jsx)(m.V9, {
           analyticsPage: L,
-          cardAlignment: h.V9.CardAlignment.END,
+          cardAlignment: m.V9.CardAlignment.END,
           ctaText: j.NW.string(j.t.VC4Mq6),
-          ctaOnClick: Z,
+          ctaOnClick: A,
           className: y.balanceWidgetMenu
         }), t && (0, r.jsx)(d.Z, {
           closeAction: N,

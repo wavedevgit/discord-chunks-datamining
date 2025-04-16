@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(474936),
   f = n(231338),
   g = n(388032),
-  m = n(846165);
-let h = {
+  h = n(846165);
+let m = {
     dark: [{
       box: "#FFF19E",
       ribbon: "#FF484B"
@@ -99,11 +99,11 @@ let h = {
           return e
         }({}, e), o = o = {
           buttonRef: y,
-          className: m.giftButton,
+          className: h.giftButton,
           color: O,
           look: a.zxk.Looks.FILLED,
           size: a.PhG.ICON,
-          innerClassName: m.giftButtonInner,
+          innerClassName: h.giftButtonInner,
           "aria-label": g.NW.string(g.t.PEjaCw),
           onClick: e => {
             e.stopPropagation(), (0, s.Z)({
@@ -125,7 +125,7 @@ let h = {
             hovered: S,
             isContentDismissed: !0,
             themeOverride: f.BR.DARK,
-            boxColors: h
+            boxColors: m
           }) : (0, r.jsx)(a.OgN, {
             size: "md",
             color: "currentColor"

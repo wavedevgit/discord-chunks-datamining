@@ -1,7 +1,7 @@
 /** Chunk was on 45620 **/
 "use strict";
 n.d(t, {
-  $: () => m
+  $: () => h
 }), n(539854);
 var r = n(200651),
   l = n(192379),
@@ -40,7 +40,7 @@ function g(e) {
     })
   })
 }
-let m = l.memo(function(e) {
+let h = l.memo(function(e) {
   let {
     unpublishedAt: t,
     isVisible: n,

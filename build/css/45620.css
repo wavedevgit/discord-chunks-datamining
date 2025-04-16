@@ -1,6 +1,6 @@
 /**
   Module ID: 45620
-  Original File Name: f9885d339aa7c5bd
+  Original File Name: 88db736d6ca4a75e
 **/
 .countDownWrapper_a1b7b8 {
     align-items: center;
@@ -56,110 +56,6 @@
     bottom: -14px;
     height: 28px;
     right: 30px
-}
-
-.headerBar__80679 {
-    background-color: var(--bg-base-secondary);
-    border-bottom: 1px solid var(--border-subtle);
-    height: 48px;
-    padding: 0 12px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0
-}
-
-.headerBarInner__80679 {
-    overflow: visible
-}
-
-.visual-refresh .headerBar__80679 {
-    background-color: var(--background-base-lower);
-    border-bottom: 1px solid var(--border-subtle);
-    height: var(--custom-channel-header-height)
-}
-
-.fullscreenHeaderBar__80679 {
-    box-sizing: border-box;
-    display: flex;
-    height: 80px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0 72px
-}
-
-.visual-refresh .fullscreenHeaderBar__80679 {
-    border: none;
-    height: calc(64px + var(--custom-app-top-bar-height));
-    padding-top: var(--custom-app-top-bar-height)
-}
-
-.tabs__80679 {
-    flex-direction: row;
-    gap: 24px;
-    margin-left: 44px
-}
-
-.tabWrapper__80679,.tabs__80679 {
-    align-items: center;
-    display: flex;
-    height: 100%
-}
-
-.tabWrapper__80679 {
-    justify-content: center
-}
-
-.tab__80679 {
-    cursor: pointer;
-    height: 100%
-}
-
-.tab__80679:hover {
-    border-bottom: 2px solid var(--brand-500);
-    margin-bottom: -2px
-}
-
-.tab__80679.selected__80679 {
-    border-bottom: 2px solid var(--icon-primary);
-    margin-bottom: -2px
-}
-
-.discordLogoContainer__80679 {
-    align-items: center;
-    display: flex;
-    margin-top: 12px
-}
-
-.discordLogo__80679 {
-    color: var(--text-normal);
-    height: 20px;
-    margin-right: -6px
-}
-
-@media (max-width:1000px) {
-    .discordLogo__80679 {
-        display: none
-    }
-}
-
-.alignedRightContent__80679 {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    z-index: 1
-}
-
-.balanceWidgetMenu__80679 {
-    margin-right: 36px
-}
-
-.visual-refresh .closeIcon__80679 {
-    margin-top: 24px
-}
-
-.back__80679 {
-    cursor: pointer
 }
 
 .shopWrapper__6db1d {
@@ -997,6 +893,110 @@
     border: 1px solid #d0d0d1
 }
 
+.headerBar__80679 {
+    background-color: var(--bg-base-secondary);
+    border-bottom: 1px solid var(--border-subtle);
+    height: 48px;
+    padding: 0 12px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0
+}
+
+.headerBarInner__80679 {
+    overflow: visible
+}
+
+.visual-refresh .headerBar__80679 {
+    background-color: var(--background-base-lower);
+    border-bottom: 1px solid var(--border-subtle);
+    height: var(--custom-channel-header-height)
+}
+
+.fullscreenHeaderBar__80679 {
+    box-sizing: border-box;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 72px
+}
+
+.visual-refresh .fullscreenHeaderBar__80679 {
+    border: none;
+    height: calc(64px + var(--custom-app-top-bar-height));
+    padding-top: var(--custom-app-top-bar-height)
+}
+
+.tabs__80679 {
+    flex-direction: row;
+    gap: 24px;
+    margin-left: 44px
+}
+
+.tabWrapper__80679,.tabs__80679 {
+    align-items: center;
+    display: flex;
+    height: 100%
+}
+
+.tabWrapper__80679 {
+    justify-content: center
+}
+
+.tab__80679 {
+    cursor: pointer;
+    height: 100%
+}
+
+.tab__80679:hover {
+    border-bottom: 2px solid var(--brand-500);
+    margin-bottom: -2px
+}
+
+.tab__80679.selected__80679 {
+    border-bottom: 2px solid var(--icon-primary);
+    margin-bottom: -2px
+}
+
+.discordLogoContainer__80679 {
+    align-items: center;
+    display: flex;
+    margin-top: 12px
+}
+
+.discordLogo__80679 {
+    color: var(--text-normal);
+    height: 20px;
+    margin-right: -6px
+}
+
+@media (max-width:1000px) {
+    .discordLogo__80679 {
+        display: none
+    }
+}
+
+.alignedRightContent__80679 {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    z-index: 1
+}
+
+.balanceWidgetMenu__80679 {
+    margin-right: 36px
+}
+
+.visual-refresh .closeIcon__80679 {
+    margin-top: 24px
+}
+
+.back__80679 {
+    cursor: pointer
+}
+
 .snowflake_ca9710 {
     color: var(--white-500);
     cursor: default;
@@ -1567,4 +1567,4 @@
     opacity: 0
 }
 
-/*# sourceMappingURL=f9885d339aa7c5bd.css.map*/
+/*# sourceMappingURL=88db736d6ca4a75e.css.map*/

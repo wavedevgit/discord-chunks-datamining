@@ -18,15 +18,15 @@ var r = n(192379),
   p = n(410127),
   f = n(237031),
   g = n(956472),
-  m = n(981631);
-let h = "".concat("#").concat("itemSkuId", "="),
-  _ = new RegExp("^".concat(h, "(\\d+)$")),
-  C = [m.Z5c.COLLECTIBLES_SHOP, m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
+  h = n(981631);
+let m = "".concat("#").concat("itemSkuId", "="),
+  _ = new RegExp("^".concat(m, "(\\d+)$")),
+  C = [h.Z5c.COLLECTIBLES_SHOP, h.Z5c.COLLECTIBLES_SHOP_FULLSCREEN],
   v = e => {
     let t = (0, l.TH)();
     r.useEffect(() => {
       if (null != e && C.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(h) && window.location.replace("#")
+        window.location.hash.startsWith(m) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
@@ -80,9 +80,9 @@ let h = "".concat("#").concat("itemSkuId", "="),
       isFetchingCategories: t,
       isLayer: n,
       initialItemCardRef: u
-    } = e, b = (0, a.e7)([i.Z], () => i.Z.useReducedMotion), f = r.useRef(null), g = (0, l.TH)(), h = g.pathname === m.Z5c.COLLECTIBLES_SHOP ? s.Z.HOME_PAGE_SHOP_TAB : g.pathname === m.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? s.Z.COLLECTIBLES_SHOP_FULLSCREEN : s.Z.COLLECTIBLES_SHOP, {
+    } = e, b = (0, a.e7)([i.Z], () => i.Z.useReducedMotion), f = r.useRef(null), g = (0, l.TH)(), m = g.pathname === h.Z5c.COLLECTIBLES_SHOP ? s.Z.HOME_PAGE_SHOP_TAB : g.pathname === h.Z5c.COLLECTIBLES_SHOP_FULLSCREEN ? s.Z.COLLECTIBLES_SHOP_FULLSCREEN : s.Z.COLLECTIBLES_SHOP, {
       analyticsLocations: C
-    } = (0, c.ZP)(h), v = (0, p.Z)();
+    } = (0, c.ZP)(m), v = (0, p.Z)();
     (0, o.ZP)(() => {
       if (n) return;
       let e = _.exec(g.hash);
@@ -98,7 +98,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
             let n = x({
               productSkuId: e,
               analyticsLocations: C,
-              analyticsSource: h,
+              analyticsSource: m,
               initialItemCardRef: u,
               reducedMotion: b,
               tab: v
@@ -109,7 +109,7 @@ let h = "".concat("#").concat("itemSkuId", "="),
           t.forEach(e => e())
         }
       }
-    }, [n, C, h, t, O, u, b, v])
+    }, [n, C, m, t, O, u, b, v])
   },
   j = e => {
     let t = r.useRef({}),
