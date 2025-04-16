@@ -52,7 +52,9 @@ function d(e) {
       }))
     }
     handleMessageUser(e, t) {
-      return l.Z.openPrivateChannel(t.id)
+      return l.Z.openPrivateChannel({
+        recipientIds: t.id
+      })
     }
     handleUserContextMenu(e, t, i) {
       (0, a.jW)(e, async () => {

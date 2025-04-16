@@ -1,9 +1,10 @@
-/** Chunk was on 3656 **/
-n.d(t, {
-  p: () => r
-});
+/** Chunk was on web.js **/
+"use strict";
 
 function r(e, t) {
   let n = new Image;
   n.src = e, n.onload = () => null == t ? void 0 : t(e)
 }
+n.d(t, {
+  p: () => r
+})

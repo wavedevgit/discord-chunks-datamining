@@ -635,7 +635,10 @@ class ed extends(r = l.PureComponent) {
         recipient_ids: e,
         num_searches: t,
         affinity_score: this._getUserAffinities(e).affinities
-      })), b.Z.openPrivateChannel(e, !1, !1, "New Group DM")
+      })), b.Z.openPrivateChannel({
+        recipientIds: e,
+        location: "New Group DM"
+      })
     }), en(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
         r = (0, E.v_)(e),

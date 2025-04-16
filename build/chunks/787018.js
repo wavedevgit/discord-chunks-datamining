@@ -15,8 +15,8 @@ var r = t(200651),
   p = t(5192),
   b = t(785717),
   m = t(221292),
-  g = t(687158),
-  I = t(471879),
+  I = t(687158),
+  g = t(471879),
   y = t(502762),
   h = t(848780),
   j = t(907179);
@@ -74,7 +74,7 @@ function P(e) {
   }, {
     icon: c.owK,
     description: _.NW.string(R ? _.t.QxrDY2 : _.t.W6fjkZ)
-  }], B = (0, g.ZP)(n.id, A ? w : void 0), W = o.createRef();
+  }], B = (0, I.ZP)(n.id, A ? w : void 0), W = o.createRef();
   return (0, r.jsx)(d.Gt, {
     value: M,
     children: (0, r.jsx)(b.Mt, {
@@ -102,7 +102,7 @@ function P(e) {
               "aria-hidden": !0
             }), (0, r.jsxs)("div", {
               className: l()(O.body, O.bodySpacing),
-              children: [(0, r.jsx)(I.i, {
+              children: [(0, r.jsx)(g.i, {
                 user: n,
                 guildId: w
               }), (0, r.jsxs)("div", {

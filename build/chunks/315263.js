@@ -137,7 +137,9 @@ function B(e) {
     }).catch(() => {}), !0);
     {
       let e = null == o || null == (n = o.bot) ? void 0 : n.id;
-      return null != e && (a.Z.openPrivateChannel(e).then(async e => {
+      return null != e && (a.Z.openPrivateChannel({
+        recipientIds: e
+      }).then(async e => {
         let {
           customId: t
         } = await (0, d.ur)(r, l.searchParams.get("link_id"), l.searchParams.get("custom_id"));

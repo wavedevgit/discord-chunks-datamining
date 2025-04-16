@@ -31,7 +31,9 @@ function x(e) {
     return null != n.inviter && f.Z.isFriend(null == (e = n.inviter) ? void 0 : e.id)
   }), j = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", l.Z.openPrivateChannel([n.inviter.id])), (0, o.r$)(n, e, N)
+    null != n.inviter && null != m.Z.getDMFromUserId(n.inviter.id) && (e = "transition", l.Z.openPrivateChannel({
+      recipientIds: [n.inviter.id]
+    })), (0, o.r$)(n, e, N)
   }, [n, N]), C = i.useCallback(() => {
     (0, o.r$)(n, "accept", N);
     let e = x("Invite Button Embed");

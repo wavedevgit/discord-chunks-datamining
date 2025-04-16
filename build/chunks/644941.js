@@ -20,8 +20,8 @@ var n = r(200651),
   N = r(669764),
   h = r(706454),
   x = r(768581),
-  j = r(814225),
-  v = r(709054),
+  v = r(814225),
+  j = r(709054),
   b = r(810568),
   I = r(998058),
   y = r(839392),
@@ -57,7 +57,7 @@ function Z(e) {
     application: i,
     entries: s,
     viewId: u
-  } = e, m = a.useMemo(() => null == r ? void 0 : r.genres.map(j.P3).join(", "), [r]), g = a.useMemo(() => {
+  } = e, m = a.useMemo(() => null == r ? void 0 : r.genres.map(v.P3).join(", "), [r]), g = a.useMemo(() => {
     if (null == r) return "";
     let {
       artwork: e,
@@ -72,7 +72,7 @@ function Z(e) {
       return t[e]
     }
     return ""
-  }, [r]), f = null == i ? void 0 : i.getIconURL(160, x.$k ? "webp" : "png"), p = v.default.extractTimestamp(i.id), O = o()().diff(o()(p), "days") <= D.G, N = s.some(e => (0, E.ig)(e) === c.o.GLOBAL), h = null != (t = r.name) ? t : null == i ? void 0 : i.name;
+  }, [r]), f = null == i ? void 0 : i.getIconURL(160, x.$k ? "webp" : "png"), p = j.default.extractTimestamp(i.id), O = o()().diff(o()(p), "days") <= D.G, N = s.some(e => (0, E.ig)(e) === c.o.GLOBAL), h = null != (t = r.name) ? t : null == i ? void 0 : i.name;
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsx)("div", {
       className: k.gameArtHero,
@@ -209,8 +209,8 @@ let Y = e => e.filter(P.z6).slice(0, 5),
       onClose: c,
       appContext: x
     } = e, {
-      clientThemesClassName: j
-    } = (0, p.ZP)(), v = (0, u.e7)([h.default], () => h.default.locale), P = a.useMemo(() => (0, b.fP)(), []), S = (0, u.Wu)([y.Z], () => {
+      clientThemesClassName: v
+    } = (0, p.ZP)(), j = (0, u.e7)([h.default], () => h.default.locale), P = a.useMemo(() => (0, b.fP)(), []), S = (0, u.Wu)([y.Z], () => {
       var e;
       return (null != (e = y.Z.getSimilarGames(r)) ? e : []).slice(0, 25)
     }), [w, A] = a.useState(null), W = (0, _.Ns)(r), [C, M] = a.useState(null), R = (0, f.q)(r), T = (0, u.e7)([N.Z], () => N.Z.getGame(r)), L = null != (t = null == T ? void 0 : T.name) ? t : null == R ? void 0 : R.name, D = (e, t) => {
@@ -233,10 +233,10 @@ let Y = e => e.filter(P.z6).slice(0, 5),
         authorId: s
       }), (0, O.Jn)()
     }), (0, f.Z)(S), a.useEffect(() => {
-      v.startsWith("en") || (null == T ? void 0 : T.summaryLocalized) != null || m.Z.getDetectableGamesSupplemental([r], {
+      j.startsWith("en") || (null == T ? void 0 : T.summaryLocalized) != null || m.Z.getDetectableGamesSupplemental([r], {
         forceFetch: !0
       })
-    }, [r, null == T ? void 0 : T.summaryLocalized, v]), a.useEffect(() => {
+    }, [r, null == T ? void 0 : T.summaryLocalized, j]), a.useEffect(() => {
       (async () => {
         if (0 === S.length) {
           A(null);
@@ -251,7 +251,7 @@ let Y = e => e.filter(P.z6).slice(0, 5),
       var e;
       let t = Date.now(),
         n = W.map(e => {
-          let r = (0, E.kr)(e) ? (0, E.T_)(e, t) : (0, E.GL)(e, v);
+          let r = (0, E.kr)(e) ? (0, E.T_)(e, t) : (0, E.GL)(e, j);
           return JSON.stringify({
             item_id: e.id,
             trait: e.traits,
@@ -270,7 +270,7 @@ let Y = e => e.filter(P.z6).slice(0, 5),
     }), null == T || null == R) ? null : (0, n.jsx)(d.Y0X, {
       transitionState: o,
       size: d.CgR.DYNAMIC,
-      className: l()(j, k.gameProfileModal),
+      className: l()(v, k.gameProfileModal),
       children: (0, n.jsxs)(d.Ttm, {
         orientation: "auto",
         children: [(0, n.jsx)(Z, {

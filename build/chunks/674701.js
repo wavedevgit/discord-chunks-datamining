@@ -125,7 +125,9 @@ function k(e) {
             e.stopPropagation(), v.default.track(T.rMx.GIFT_INTENT_CARD_SECONDARY_CTA_CLICKED, {
               gift_intent_type: t,
               cta_type: W
-            }), W === I.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : W === I.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel(r.id).then(() => {
+            }), W === I.X2.VIEW_ALL ? ((0, y.uL)(T.Z5c.FRIENDS), m.Z.setSection(T.pJs.ALL)) : W === I.X2.SEND_MESSAGE && ((0, j.PV)(r.id), p.Z.openPrivateChannel({
+              recipientIds: r.id
+            }).then(() => {
               setTimeout(() => {
                 (0, b.PG)(A.X1.GIF, _.Ie.NORMAL), setTimeout(() => {
                   (0, b.ql)(w.NW.string(w.t.jrtJi4), !0)

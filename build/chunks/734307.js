@@ -30,13 +30,13 @@ let m = null,
   Z = null,
   H = new G.ZP;
 
-function x() {
+function p() {
   let n = P.Z.getChannelId(),
     e = P.Z.getVoiceChannelId();
   return m = n, Z = e, H.clear()
 }
 
-function p(n) {
+function x(n) {
   let {
     guild: {
       id: e
@@ -153,7 +153,7 @@ let K = new k(_.Z, {
   APPLICATIONS_FETCH_FAIL: V,
   APPLICATIONS_FETCH_SUCCESS: V,
   APPLICATIONS_FETCH: V,
-  BACKGROUND_SYNC: x,
+  BACKGROUND_SYNC: p,
   BULK_ACK: function(n) {
     let {
       channels: e
@@ -166,7 +166,7 @@ let K = new k(_.Z, {
     }), t
   },
   BULK_CLEAR_RECENTS: b,
-  CACHE_LOADED_LAZY: x,
+  CACHE_LOADED_LAZY: p,
   CATEGORY_COLLAPSE_ALL: b,
   CATEGORY_COLLAPSE: F,
   CATEGORY_EXPAND_ALL: b,
@@ -197,10 +197,10 @@ let K = new k(_.Z, {
     }), t
   },
   CONNECTION_OPEN_SUPPLEMENTAL: V,
-  CONNECTION_OPEN: x,
-  CURRENT_USER_UPDATE: x,
-  DECAY_READ_STATES: x,
-  DEV_TOOLS_DESIGN_TOGGLE_SET: x,
+  CONNECTION_OPEN: p,
+  CURRENT_USER_UPDATE: p,
+  DECAY_READ_STATES: p,
+  DEV_TOOLS_DESIGN_TOGGLE_SET: p,
   DISABLE_AUTOMATIC_ACK: M,
   DISMISS_FAVORITE_SUGGESTION: function(n) {
     let {
@@ -230,8 +230,8 @@ let K = new k(_.Z, {
   GAMES_DATABASE_FETCH: V,
   GAMES_DATABASE_UPDATE: V,
   GUILD_APPLICATIONS_FETCH_SUCCESS: V,
-  GUILD_CREATE: p,
-  GUILD_DELETE: p,
+  GUILD_CREATE: x,
+  GUILD_DELETE: x,
   GUILD_MEMBER_UPDATE: function(n) {
     let {
       guildId: e,
@@ -249,7 +249,7 @@ let K = new k(_.Z, {
   GUILD_SCHEDULED_EVENT_DELETE: Y,
   GUILD_SCHEDULED_EVENT_UPDATE: Y,
   GUILD_TOGGLE_COLLAPSE_MUTED: b,
-  GUILD_UPDATE: p,
+  GUILD_UPDATE: x,
   IMPERSONATE_STOP: b,
   IMPERSONATE_UPDATE: b,
   LOAD_CHANNELS: function(n) {
@@ -270,14 +270,14 @@ let K = new k(_.Z, {
   },
   MESSAGE_DELETE_BULK: M,
   MESSAGE_DELETE: M,
-  NOTIFICATION_SETTINGS_UPDATE: x,
-  OVERLAY_INITIALIZE: x,
+  NOTIFICATION_SETTINGS_UPDATE: p,
+  OVERLAY_INITIALIZE: p,
   PASSIVE_UPDATE_V2: function(n) {
     return H.clearGuildId(n.guildId)
   },
-  RECOMPUTE_READ_STATES: x,
+  RECOMPUTE_READ_STATES: p,
   RESORT_THREADS: M,
-  SET_RECENTLY_ACTIVE_COLLAPSED: x,
+  SET_RECENTLY_ACTIVE_COLLAPSED: p,
   THREAD_CREATE: j,
   THREAD_DELETE: function(n) {
     let {

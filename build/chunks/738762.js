@@ -49,7 +49,9 @@ function h(e) {
   return (m || t) && !b && 0 !== g.length ? (0, r.jsx)(l.sNh, {
     id: "message",
     action: function() {
-      a.Z.openPrivateChannel(g).then(t => {
+      a.Z.openPrivateChannel({
+        recipientIds: g
+      }).then(t => {
         var n, r;
         return o.ZP.trackWithMetadata(u.rMx.ACTIVITY_FEED_DM_VISITED, p({
           source: (n = p({}, f.location), r = r = {

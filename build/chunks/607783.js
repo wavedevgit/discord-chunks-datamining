@@ -1,10 +1,10 @@
-/** Chunk was on 98783 **/
+/** Chunk was on 98693 **/
 n.d(t, {
   B: () => f
 });
-var i = n(200651),
-  l = n(192379),
-  r = n(442837),
+var l = n(200651),
+  r = n(192379),
+  i = n(442837),
   a = n(481060),
   o = n(40851),
   s = n(352954),
@@ -19,16 +19,16 @@ function f(e) {
     channelId: n,
     guildId: f,
     simplified: b = !1
-  } = e, Z = (0, c.J)({
+  } = e, m = (0, c.J)({
     channelId: n
-  }), N = (0, r.e7)([d.default], () => d.default.getId() === t), m = (0, o.bp)(), v = l.useCallback(() => {
+  }), O = (0, i.e7)([d.default], () => d.default.getId() === t), Z = (0, o.bp)(), v = r.useCallback(() => {
     s.Z.openSecureFramesUserVerificationModal(t, n, () => (0, u.fz)({
       userId: t,
       channelId: n,
       guildId: f
-    }), m)
-  }, [m, n, f, t]);
-  return !Z || N ? null : (0, i.jsx)(a.sNh, {
+    }), Z)
+  }, [Z, n, f, t]);
+  return !m || O ? null : (0, l.jsx)(a.sNh, {
     id: "secure-frames-user-verification",
     label: g.NW.string(g.t["8ErYvb"]),
     action: v,

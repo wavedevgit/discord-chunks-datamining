@@ -1,5 +1,5 @@
 /** Chunk was on 69773 **/
 n.d(t, {
-  g: () => r
+  g: () => a
 }), n(388685);
-var a, r = ((a = {}).MOBILE = "mobile", a.DESKTOP = "desktop", a.WEB = "web", a.DEVICE_CODE = "device_code", a)
+var r, a = ((r = {}).MOBILE = "mobile", r.DESKTOP = "desktop", r.WEB = "web", r.DEVICE_CODE = "device_code", r)

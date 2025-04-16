@@ -19,36 +19,36 @@ let u = {
       useClockOptions: d = {}
     } = e, f = a.useMemo(() => Object.assign({
       minInterval: 1e3 / c
-    }, u, d), [c, d]), m = a.useRef(null), p = a.useRef(null);
+    }, u, d), [c, d]), m = a.useRef(null), h = a.useRef(null);
     a.useEffect(() => {
-      null != p.current && r.w > 0 && r.h > 0 && p.current.setSize(r)
+      null != h.current && r.w > 0 && r.h > 0 && h.current.setSize(r)
     }, [r]), a.useEffect(() => {
       if (null != m.current) {
         let e = new l.Z(m.current);
-        p.current = e, s && e.setupOffscreenCanvas()
+        h.current = e, s && e.setupOffscreenCanvas()
       }
     }, [m, s, r]);
     let {
-      ticking: h,
+      ticking: p,
       stop: y,
       reset: w
     } = (0, i.Z)(e => {
-      if (null != p.current) {
+      if (null != h.current) {
         let {
           width: r,
           height: n
-        } = p.current.canvas;
-        p.current.clearRect({
+        } = h.current.canvas;
+        h.current.clearRect({
           x: 0,
           y: 0,
           w: r,
           h: n
-        }), t(p.current, e / 1e3)
+        }), t(h.current, e / 1e3)
       }
     }, f);
     return a.useEffect(() => {
-      o && !h.current && w(), o || y()
-    }, [o, w, y, h]), (0, n.jsx)("div", {
+      o && !p.current && w(), o || y()
+    }, [o, w, y, p]), (0, n.jsx)("div", {
       children: (0, n.jsx)("canvas", {
         ref: m
       })

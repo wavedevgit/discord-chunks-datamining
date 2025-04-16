@@ -16,8 +16,8 @@ var o = t(442837),
   p = t(944043),
   b = t(502762),
   m = t(530),
-  g = t(740628),
-  I = t(643518),
+  I = t(740628),
+  g = t(643518),
   y = t(228168),
   h = t(981631),
   j = t(405666);
@@ -40,7 +40,7 @@ function v(e) {
   } = (0, o.cj)([l.Z], () => ({
     relationshipType: l.Z.getRelationshipType(t.id),
     originApplicationId: l.Z.getOriginApplicationId(t.id)
-  })), C = (0, i.vh)(t.id), A = t.id === v.id, L = (0, c.I5)(v), w = s.ZP.useName(null == O ? void 0 : O.guildId, _, t), R = (0, I.Z)({
+  })), C = (0, i.vh)(t.id), A = t.id === v.id, L = (0, c.I5)(v), w = s.ZP.useName(null == O ? void 0 : O.guildId, _, t), R = (0, g.Z)({
     user: t,
     currentUser: v,
     guildId: x,
@@ -89,7 +89,7 @@ function v(e) {
       className: j.bannerContainer,
       isPremiumUser: L,
       onInteraction: E
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsx)(I.Z, {
       user: t,
       currentUser: v,
       displayProfile: O,

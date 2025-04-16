@@ -1,102 +1,102 @@
-/** Chunk was on 70675 **/
-t.d(n, {
-  Z: () => N
+/** Chunk was on 78180 **/
+n.d(t, {
+  Z: () => m
 });
-var l = t(200651),
-  r = t(192379),
-  i = t(442837),
-  a = t(481060),
-  o = t(616780),
-  u = t(40851),
-  s = t(300284),
-  c = t(484459),
-  d = t(314897),
-  g = t(271383),
-  Z = t(430824),
-  b = t(496675),
-  f = t(594174),
-  p = t(981631),
-  m = t(388032),
-  O = t(965385);
+var r = n(200651),
+  l = n(192379),
+  i = n(442837),
+  o = n(481060),
+  a = n(616780),
+  u = n(40851),
+  s = n(300284),
+  c = n(484459),
+  d = n(314897),
+  b = n(271383),
+  g = n(430824),
+  Z = n(496675),
+  f = n(594174),
+  p = n(981631),
+  O = n(388032),
+  h = n(965385);
 
-function N(e) {
+function m(e) {
   let {
-    guildId: n,
-    userId: N,
-    analyticsLocation: h,
-    analyticsLocations: j,
-    context: P,
-    icon: x
-  } = e, v = Z.Z.getGuild(n), y = d.default.getId(), _ = (0, i.e7)([f.default], () => f.default.getUser(N)), E = (0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, N), [n, N]);
-  (0, i.e7)([b.Z], () => b.Z.getGuildVersion(n), [n]);
-  let C = r.useMemo(() => ({
-    [n]: [N]
-  }), [n, N]);
-  (0, o.$)(C);
-  let I = P === p.IlC.POPOUT,
-    S = (0, s.Z)({
-      guild: v,
-      analyticsLocation: h
+    guildId: t,
+    userId: m,
+    analyticsLocation: j,
+    analyticsLocations: P,
+    context: N,
+    icon: y
+  } = e, E = g.Z.getGuild(t), x = d.default.getId(), v = (0, i.e7)([f.default], () => f.default.getUser(m)), _ = (0, i.e7)([b.ZP], () => b.ZP.isGuestOrLurker(t, m), [t, m]);
+  (0, i.e7)([Z.Z], () => Z.Z.getGuildVersion(t), [t]);
+  let C = l.useMemo(() => ({
+    [t]: [m]
+  }), [t, m]);
+  (0, a.$)(C);
+  let S = N === p.IlC.POPOUT,
+    M = (0, s.Z)({
+      guild: E,
+      analyticsLocation: j
     }),
     T = (0, u.Aq)();
-  if (null == v || I) return null;
-  let U = y === N && (b.Z.can(p.Plq.CHANGE_NICKNAME, v) || b.Z.can(p.Plq.MANAGE_NICKNAMES, v)),
-    W = y === N,
-    A = b.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, N, v);
-  if (!(U || A || W) || null == _ || E) return null;
-  let R = v.hasFeature(p.oNc.HUB) ? m.NW.string(m.t["+MWrWl"]) : m.NW.string(m.t["PKQB/P"]),
-    w = W ? R : m.NW.string(m.t.dilOFx);
-  return (0, l.jsx)(a.sNh, {
+  if (null == E || S) return null;
+  let I = x === m && (Z.Z.can(p.Plq.CHANGE_NICKNAME, E) || Z.Z.can(p.Plq.MANAGE_NICKNAMES, E)),
+    w = x === m,
+    R = Z.Z.canManageUser(p.Plq.MANAGE_NICKNAMES, m, E);
+  if (!(I || R || w) || null == v || _) return null;
+  let A = E.hasFeature(p.oNc.HUB) ? O.NW.string(O.t["+MWrWl"]) : O.NW.string(O.t["PKQB/P"]),
+    U = w ? A : O.NW.string(O.t.dilOFx);
+  return (0, r.jsx)(o.sNh, {
     id: "change-nickname",
-    label: (0, l.jsx)("div", {
-      className: O.labelWrapper,
-      children: (0, l.jsx)("span", {
-        className: O.label,
-        children: w
+    label: (0, r.jsx)("div", {
+      className: h.labelWrapper,
+      children: (0, r.jsx)("span", {
+        className: h.label,
+        children: U
       })
     }),
-    icon: x,
+    icon: y,
     action: () => {
-      W ? ((0, c.Z)(_.id, _.getAvatarURL(n, 80), {
-        guildId: n
-      }), S(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, a.pTH)()) : (0, a.ZDy)(async () => {
+      w ? ((0, c.Z)(v.id, v.getAvatarURL(t, 80), {
+        guildId: t
+      }), M(), T.dispatch(p.CkL.POPOUT_CLOSE), (0, o.pTH)()) : (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await t.e("17712").then(t.bind(t, 620021));
-        return t => {
-          var r, i;
-          return (0, l.jsx)(e, (r = function(e) {
-            for (var n = 1; n < arguments.length; n++) {
-              var t = null != arguments[n] ? arguments[n] : {},
-                l = Object.keys(t);
-              "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                return Object.getOwnPropertyDescriptor(t, e).enumerable
-              }))), l.forEach(function(n) {
-                var l;
-                l = t[n], n in e ? Object.defineProperty(e, n, {
-                  value: l,
+        } = await n.e("17712").then(n.bind(n, 620021));
+        return n => {
+          var l, i;
+          return (0, r.jsx)(e, (l = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+              var n = null != arguments[t] ? arguments[t] : {},
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: !0,
                   configurable: !0,
                   writable: !0
-                }) : e[n] = l
+                }) : e[t] = r
               })
             }
             return e
-          }({}, t), i = i = {
-            guildId: n,
-            user: _,
-            analyticsSource: h,
-            analyticsLocations: j
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
-            var t = Object.keys(e);
+          }({}, n), i = i = {
+            guildId: t,
+            user: v,
+            analyticsSource: j,
+            analyticsLocations: P
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var l = Object.getOwnPropertySymbols(e);
-              t.push.apply(t, l)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
-            return t
+            return n
           })(Object(i)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
-          }), r))
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
+          }), l))
         }
       })
     }

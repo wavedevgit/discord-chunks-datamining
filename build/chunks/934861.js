@@ -55,7 +55,9 @@ function d(e) {
     icon: o.kBi,
     text: s.NW.string(s.t.zROXER),
     onClick: () => {
-      i.Z.openPrivateChannel(n), null == t || t()
+      i.Z.openPrivateChannel({
+        recipientIds: n
+      }), null == t || t()
     }
   }, d))
 }
@@ -70,7 +72,9 @@ function u(e) {
     icon: o.kBi,
     tooltipText: s.NW.string(s.t.zROXER),
     onClick: () => {
-      i.Z.openPrivateChannel(n), null == t || t()
+      i.Z.openPrivateChannel({
+        recipientIds: n
+      }), null == t || t()
     }
   }, d))
 }

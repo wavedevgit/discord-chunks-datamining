@@ -235,7 +235,9 @@ j(ed, "displayName", "NotificationStore"), new ed(o.Z, __OVERLAY__ ? {} : {
         playSoundIfDisabled: !1,
         volume: .4,
         onClick() {
-          u.Z.openPrivateChannel(t)
+          u.Z.openPrivateChannel({
+            recipientIds: t
+          })
         },
         isUserAvatar: !0
       }), !1

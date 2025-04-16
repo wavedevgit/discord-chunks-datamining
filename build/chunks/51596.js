@@ -200,7 +200,10 @@ function D(e) {
       }));
       break;
     case s.h8.USER:
-      i.Z.openPrivateChannel([I.id], !1, !1, "Quickswitcher"), a.Z.channelListScrollTo(S.ME, E.Z.getDMFromUserId(I.id));
+      i.Z.openPrivateChannel({
+        recipientIds: [I.id],
+        location: "Quickswitcher"
+      }), a.Z.channelListScrollTo(S.ME, E.Z.getDMFromUserId(I.id));
       break;
     case s.h8.GROUP_DM:
       (0, d.Kh)(I.id, {

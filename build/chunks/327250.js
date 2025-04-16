@@ -186,7 +186,9 @@ function w(e) {
       disabled: w,
       text: I.NW.string(I.t["g33r/P"]),
       onClick: () => {
-        s.Z.openPrivateChannel(t.id)
+        s.Z.openPrivateChannel({
+          recipientIds: t.id
+        })
       },
       children: (0, r.jsx)(a.kBi, {
         size: "custom",

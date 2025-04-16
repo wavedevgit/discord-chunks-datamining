@@ -82,7 +82,7 @@ function v() {
         children: [w ? (0, r.jsx)(a.njP.Item, {
           className: S.tabBarItem,
           id: j.NB.USER_PROFILE,
-          children: O.NW.string(O.t["OU3/Pj"])
+          children: O.NW.string(O.t["2p07FR"])
         }, j.NB.USER_PROFILE) : null, Z ? (0, r.jsx)(a.njP.Item, {
           className: S.tabBarItem,
           id: j.NB.GUILD,

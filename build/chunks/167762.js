@@ -195,7 +195,9 @@ let V = c.EFr.SIZE_32,
         }))
       })
     }, [t, A]), ec = r.useCallback(e => {
-      e.preventDefault(), e.stopPropagation(), (0, g.i)(A, !0), d.Z.openPrivateChannel(t.id), null != b && b()
+      e.preventDefault(), e.stopPropagation(), (0, g.i)(A, !0), d.Z.openPrivateChannel({
+        recipientIds: t.id
+      }), null != b && b()
     }, [t.id, b, A]), eu = r.useCallback(e => {
       e.preventDefault(), e.stopPropagation(), f.Z.addRelationship({
         userId: t.id,

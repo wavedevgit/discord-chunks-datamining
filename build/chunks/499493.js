@@ -25,8 +25,8 @@ let h = e => {
     onReaction: i,
     onRequestOpen: h,
     disableActivityProfileLinks: x,
-    customCTA: j,
-    popoutClassname: v,
+    customCTA: v,
+    popoutClassname: j,
     popoutPosition: b = "right"
   } = e, I = a.useRef(null), y = (0, s.e7)([u.Z, c.Z], () => c.Z.getChannel(u.Z.getChannelId())), _ = (0, s.e7)([d.default], () => d.default.getUser(t.author_id)), {
     nick: P,
@@ -47,7 +47,7 @@ let h = e => {
         updatePosition: l
       } = e;
       return (0, n.jsx)("div", {
-        className: v,
+        className: j,
         children: (0, n.jsx)(g.J, {
           entry: t,
           closePopout: a,
@@ -118,7 +118,7 @@ let h = e => {
                   }, r))
                 })]
               })
-            }), null != j ? j : (0, n.jsx)("div", {
+            }), null != v ? v : (0, n.jsx)("div", {
               className: E.reactions,
               children: (0, n.jsx)(o.n$P, {
                 size: "sm"

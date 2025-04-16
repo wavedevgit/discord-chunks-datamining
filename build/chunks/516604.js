@@ -17,9 +17,9 @@ let o = e => {
     tickRate: d,
     improvePerformance: f,
     shouldTick: m
-  } = (0, l.Z)(e), p = n.useMemo(() => new i.ZP, []), h = n.useCallback(e => {
-    e.assetMap = p, r(e)
-  }, [p, r]), [y, w] = n.useState(!1), v = n.useRef(null), x = n.useRef(null), E = n.useRef(s.Z.lastConfetti);
+  } = (0, l.Z)(e), h = n.useMemo(() => new i.ZP, []), p = n.useCallback(e => {
+    e.assetMap = h, r(e)
+  }, [h, r]), [y, w] = n.useState(!1), v = n.useRef(null), x = n.useRef(null), E = n.useRef(s.Z.lastConfetti);
   return n.useEffect(() => {
     async function e(e) {
       var t;
@@ -32,7 +32,7 @@ let o = e => {
         size: 64,
         forcePNG: !0
       });
-      await p.loadRemoteImage(i, l), o(i, n), w(!0), null != x.current && clearTimeout(x.current), x.current = setTimeout(() => {
+      await h.loadRemoteImage(i, l), o(i, n), w(!0), null != x.current && clearTimeout(x.current), x.current = setTimeout(() => {
         var e;
         let t = null == (e = s.Z.lastConfetti) ? void 0 : e.triggerTime;
         (null == t || Date.now() - t > 2500) && a.Z.dispatch({
@@ -43,7 +43,7 @@ let o = e => {
     }
     let t = E.current;
     return null != t && (E.current = void 0, e(t)), a.Z.subscribe("POTIONS_TRIGGER_MESSAGE_CONFETTI", e), () => a.Z.unsubscribe("POTIONS_TRIGGER_MESSAGE_CONFETTI", e)
-  }, [p, o]), n.useEffect(() => () => {
+  }, [h, o]), n.useEffect(() => () => {
     null != x.current && (a.Z.dispatch({
       type: "POTIONS_SET_CONFETTI_MODE",
       enabled: !1
@@ -60,7 +60,7 @@ let o = e => {
     }
   }, [y, m]), {
     update: t,
-    draw: h,
+    draw: p,
     tickRate: d,
     improvePerformance: f,
     playing: y

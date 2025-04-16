@@ -24,10 +24,10 @@ let b = (0, s.Z)(function(e) {
   } = e, b = (0, a.Z)({
     userId: l.id,
     guildId: n
-  }), Z = (0, f.Z)(l.id, n), O = (0, d.Z)({
+  }), Z = (0, f.Z)(l.id, n), p = (0, d.Z)({
     id: l.id,
     label: h.NW.string(h.t["/AXYnJ"])
-  }), p = (0, u.Z)(l.id), j = l.isNonUserBot();
+  }), O = (0, u.Z)(l.id), j = l.isNonUserBot();
   return (0, t.jsx)(o.Z, {
     context: s,
     object: g.qAy.CONTEXT_MENU,
@@ -37,11 +37,11 @@ let b = (0, s.Z)(function(e) {
       "aria-label": h.NW.string(h.t.liqwPD),
       onSelect: c,
       children: [(0, t.jsxs)(r.kSQ, {
-        children: [!j && b, !j && p]
+        children: [!j && b, !j && O]
       }), (0, t.jsx)(r.kSQ, {
         children: !j && Z
       }), (0, t.jsx)(r.kSQ, {
-        children: O
+        children: p
       })]
     })
   })

@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function g(e, n) {
+function I(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,7 +48,7 @@ function g(e, n) {
   }), e
 }
 
-function I(e) {
+function g(e) {
   var {
     user: n,
     analyticsLocation: t
@@ -71,11 +71,11 @@ function I(e) {
     user: n,
     analyticsLocation: t
   });
-  return 0 === i.length ? (0, r.jsx)(s.ef, g(m({}, o), {
+  return 0 === i.length ? (0, r.jsx)(s.ef, I(m({}, o), {
     disabled: !0
   })) : (0, r.jsx)(a.Z, {
     menuItems: i,
-    children: e => (0, r.jsx)("div", g(m({}, e), {
+    children: e => (0, r.jsx)("div", I(m({}, e), {
       children: (0, r.jsx)(s.ef, m({}, o))
     }))
   })
@@ -98,7 +98,7 @@ function y(e) {
     hasIncomingPendingGameFriends: t,
     hasOutgoingPendingGameFriends: o
   });
-  return (0, r.jsx)(I, {
+  return (0, r.jsx)(g, {
     tooltipText: a,
     ariaLabel: c,
     icon: u,
@@ -116,7 +116,7 @@ function h(e) {
     friendToken: d,
     onClose: m
   } = e, {
-    newestAnalyticsLocation: g
+    newestAnalyticsLocation: I
   } = (0, l.ZP)(), {
     gameFriends: h,
     hasOutgoingPendingGameFriends: j,
@@ -134,7 +134,7 @@ function h(e) {
     className: b.multipleButtons,
     children: [(0, r.jsx)(y, {
       user: t,
-      analyticsLocation: g,
+      analyticsLocation: I,
       gameFriends: h,
       hasIncomingPendingGameFriends: v,
       hasOutgoingPendingGameFriends: j
@@ -144,22 +144,22 @@ function h(e) {
     })]
   }) : a === f.OGo.PENDING_OUTGOING ? (0, r.jsxs)("div", {
     className: b.multipleButtons,
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(g, {
       icon: o.iHX,
       tooltipText: p.NW.string(p.t.zz2i8v),
       user: t,
-      analyticsLocation: g
+      analyticsLocation: I
     }), (0, r.jsx)(c.c, {
       userId: t.id,
       onClose: m
     })]
   }) : a === f.OGo.PENDING_INCOMING ? (0, r.jsxs)("div", {
     className: b.multipleButtons,
-    children: [(0, r.jsx)(I, {
+    children: [(0, r.jsx)(g, {
       icon: o.iHX,
       tooltipText: p.NW.string(p.t.ZOFd1N),
       user: t,
-      analyticsLocation: g
+      analyticsLocation: I
     }), (0, r.jsx)(c.c, {
       userId: t.id,
       onClose: m
@@ -178,7 +178,7 @@ function h(e) {
         i.Z.addRelationship({
           userId: t.id,
           context: {
-            location: g
+            location: I
           },
           friendToken: d
         })

@@ -1,44 +1,45 @@
-/** Chunk was on 92643 **/
-t.d(n, {
-  Z: () => h,
-  q: () => g
-}), t(388685);
-var r = t(200651);
-t(192379);
-var i = t(442837),
-  l = t(481060),
-  o = t(144144),
-  a = t(592125),
-  s = t(496675),
-  c = t(944486),
-  u = t(585483),
-  d = t(51144),
-  f = t(981631),
-  p = t(388032);
+/** Chunk was on 91245 **/
+"use strict";
+n.d(t, {
+  Z: () => f,
+  q: () => m
+}), n(388685);
+var r = n(200651);
+n(192379);
+var o = n(442837),
+  a = n(481060),
+  i = n(144144),
+  s = n(592125),
+  l = n(496675),
+  c = n(944486),
+  u = n(585483),
+  d = n(51144),
+  p = n(981631),
+  g = n(388032);
 
-function g(e, n) {
+function m(e, t) {
   let {
-    id: t
+    id: n
   } = e, r = "@".concat(d.ZP.getUserTag(e, {
     decoration: "never"
   }));
-  u.S.dispatchToLastSubscribed(f.CkL.INSERT_TEXT, {
+  u.S.dispatchToLastSubscribed(p.CkL.INSERT_TEXT, {
     plainText: r,
-    rawText: "<@".concat(t, ">")
-  }), null != n && o.Z.startTyping(n)
+    rawText: "<@".concat(n, ">")
+  }), null != t && i.Z.startTyping(t)
 }
 
-function h(e, n, t) {
-  let [o, u] = (0, i.Wu)([c.Z, a.Z, s.Z], () => {
-    let e = c.Z.getChannelId(n),
-      t = a.Z.getChannel(e);
-    return [e, null != t && (t.isMultiUserDM() || s.Z.can(f.Plq.SEND_MESSAGES, t))]
-  }, [n]), d = t === f.IlC.POPOUT;
-  return !u || d ? null : (0, r.jsx)(l.sNh, {
+function f(e, t, n) {
+  let [i, u] = (0, o.Wu)([c.Z, s.Z, l.Z], () => {
+    let e = c.Z.getChannelId(t),
+      n = s.Z.getChannel(e);
+    return [e, null != n && (n.isMultiUserDM() || l.Z.can(p.Plq.SEND_MESSAGES, n))]
+  }, [t]), d = n === p.IlC.POPOUT;
+  return !u || d ? null : (0, r.jsx)(a.sNh, {
     id: "mention",
-    label: p.NW.string(p.t.P8tvKC),
+    label: g.NW.string(g.t.P8tvKC),
     action: function() {
-      g(e, o)
+      m(e, i)
     }
   })
 }

@@ -1,19 +1,19 @@
 /** Chunk was on 56826 **/
-t.d(e, {
-  Z: () => a
+n.d(t, {
+  Z: () => d
 });
-var i = t(200651);
-t(192379);
-var l = t(481060),
-  r = t(493683),
-  d = t(592125),
-  s = t(388032);
+var i = n(200651);
+n(192379);
+var r = n(481060),
+  l = n(493683),
+  s = n(592125),
+  a = n(388032);
 
-function a(n, e) {
-  let t = d.Z.getChannel(n);
-  return null == t || t.isMultiUserDM() ? null : (0, i.jsx)(l.sNh, {
+function d(e, t) {
+  let n = s.Z.getChannel(e);
+  return null == n || n.isMultiUserDM() ? null : (0, i.jsx)(r.sNh, {
     id: "close-dm",
-    label: s.NW.string(s.t.jsvgc3),
-    action: () => r.Z.closePrivateChannel(n, e)
+    label: a.NW.string(a.t.jsvgc3),
+    action: () => l.Z.closePrivateChannel(e, t)
   })
 }

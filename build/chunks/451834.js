@@ -44,7 +44,9 @@ let g = e => {
             onClick: () => {
               a({
                 action: "PRESS_REACT_REPLY_TOAST"
-              }), null == i || i(), c.Z.openPrivateChannel(n)
+              }), null == i || i(), c.Z.openPrivateChannel({
+                recipientIds: n
+              })
             }
           })
         })]

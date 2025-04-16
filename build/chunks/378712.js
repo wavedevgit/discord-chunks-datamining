@@ -1,16 +1,16 @@
 /** Chunk was on 56826 **/
-t.d(e, {
-  J: () => d
+n.d(t, {
+  J: () => s
 });
-var i = t(544891),
-  l = t(359119),
-  r = t(981631);
+var i = n(544891),
+  r = n(359119),
+  l = n(981631);
 
-function d(n) {
+function s(e) {
   return i.tn.post({
-    url: r.ANM.ADD_SAFETY_WARNING(n),
+    url: l.ANM.ADD_SAFETY_WARNING(e),
     body: {
-      safety_warning_type: l.pj.LIKELY_ATO
+      safety_warning_type: r.pj.LIKELY_ATO
     },
     rejectWithError: !1
   })

@@ -41,7 +41,10 @@ async function E(e, t, n) {
     try {
       s = (0, a.R)({
         isContextless: (0, l.Kb)(e)
-      }) ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel([r.id], !1, !1, c.Z.APP_DMS_QUICK_LAUNCHER)
+      }) ? await i.Z.getOrEnsurePrivateChannel(r.id) : await i.Z.openPrivateChannel({
+        recipientIds: [r.id],
+        location: c.Z.APP_DMS_QUICK_LAUNCHER
+      })
     } catch (e) {
       t(void 0)
     }
