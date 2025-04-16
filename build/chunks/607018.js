@@ -43,7 +43,7 @@ let E = i.forwardRef(function(e, t) {
   }, [f, C]), w = i.useCallback(async e => {
     null != y && (u.Z.isPhoneReverification(f, g) ? await a.Z.reverifyPhone(y, e, R) : await a.Z.addPhone(y, e, R), null == n || n(), E())
   }, [n, E, y, R, f, g]);
-  return null != y ? (0, s.jsx)(o.default, {
+  return null != y ? (0, s.jsx)(o.Z, {
     onClose: E,
     transitionState: m,
     title: p.NW.string(p.t.ZtCDc3),

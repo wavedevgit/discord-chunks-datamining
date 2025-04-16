@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(497321),
   h = n(23551),
   f = n(468026),
-  b = n(410030),
-  _ = n(726542),
+  _ = n(410030),
+  b = n(726542),
   N = n(122021),
   x = n(275759),
   E = n(231757),
@@ -99,7 +99,7 @@ let F = e => {
           color: "header-primary",
           children: s.guild.toString()
         }), (0, r.jsx)(u.eee, {
-          href: null == (n = _.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
+          href: null == (n = b.Z.get(s.type)) || null == (t = n.getPlatformUserUrl) ? void 0 : t.call(n, s.account),
           children: (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
@@ -124,7 +124,7 @@ function H(e) {
       theme: m,
       locale: p
     } = e,
-    [h, b] = i.useState(o.friendSync),
+    [h, _] = i.useState(o.friendSync),
     [C, O] = i.useState(o.visibility),
     [v, T] = i.useState(o.metadataVisibility),
     [I, y] = i.useState(o.showActivity),
@@ -133,9 +133,9 @@ function H(e) {
     [H, z] = i.useState(!1),
     [Y, K] = i.useState([]),
     q = (0, N.rR)(o.type),
-    X = _.Z.get(q);
+    X = b.Z.get(q);
   i.useEffect(() => {
-    b(o.friendSync), O(o.visibility), T(o.metadataVisibility), y(o.showActivity)
+    _(o.friendSync), O(o.visibility), T(o.metadataVisibility), y(o.showActivity)
   }, [o]);
   let Q = {
       inProgressVisibility: A,
@@ -154,7 +154,7 @@ function H(e) {
   }, [o]);
 
   function $() {
-    let e = _.Z.get(o.type),
+    let e = b.Z.get(o.type),
       t = M.NW.string(M.t.apVJu7);
     (0, D.Z)(o) && (t = (0, r.jsxs)(r.Fragment, {
       children: [t, (0, r.jsx)(Z.Z, {
@@ -177,8 +177,8 @@ function H(e) {
     className: U.connection,
     children: [function(e) {
       var t;
-      let n = _.Z.get(e.type),
-        i = _.Z.get(q),
+      let n = b.Z.get(e.type),
+        i = b.Z.get(q),
         s = "1" === (null != (t = e.metadata) ? t : {})[L.PC.TWITTER_VERIFIED],
         a = null;
       return n.type === W.ABu.TWITTER && s && (a = (0, r.jsx)(u.ua7, {
@@ -286,7 +286,7 @@ function H(e) {
       let a = Y.includes(e.id),
         l = M.NW.string(M.t.wzzjk5);
       if (null == i || 0 === i.length)
-        if (!0 !== _.Z.get(e.type).hasMetadata) return null;
+        if (!0 !== b.Z.get(e.type).hasMetadata) return null;
         else i = [(0, r.jsx)(u.IGR, {
           className: U.connectionMetadataUpsellTag,
           text: M.NW.string(M.t.y2b7CA)
@@ -321,7 +321,7 @@ function H(e) {
       hideBorder: !0,
       value: h,
       onChange: function(e) {
-        b(e), g.Z.setFriendSync(o.type, o.id, e)
+        _(e), g.Z.setFriendSync(o.type, o.id, e)
       },
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/semibold",
@@ -340,7 +340,7 @@ function H(e) {
           platform: X.name
         })
       })
-    })), (null == (t = _.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
+    })), (null == (t = b.Z.get(o.type)) ? void 0 : t.hasMetadata) === !0 && (a = (0, r.jsx)(u.j7V, {
       className: U.connectionOptionSwitch,
       hideBorder: !0,
       value: 1 === v,
@@ -446,7 +446,7 @@ function z() {
 }
 
 function Y(e) {
-  let t = _.Z.get(e);
+  let t = b.Z.get(e);
   (0, E.Z)({
     platformType: t.type
   }), A.default.track(W.rMx.ACCOUNT_LINK_STEP, {
@@ -522,7 +522,7 @@ function q(e) {
       note: M.NW.string(M.t.WenGZ2),
       children: M.NW.string(M.t["aoLS8/"])
     })]
-  }) : s.filter(e => _.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
+  }) : s.filter(e => b.Z.isSupported(e.type)).map((e, t) => (0, r.jsx)(H, {
     theme: a,
     account: e,
     locale: l,
@@ -542,7 +542,7 @@ let X = () => {
   let e = (0, l.e7)([y.Z], () => y.Z.hidePersonalInformation),
     t = (0, l.e7)([v.Z], () => v.Z.isFetching()),
     n = (0, l.e7)([v.Z], () => v.Z.getAccounts()),
-    s = (0, b.ZP)();
+    s = (0, _.ZP)();
   (0, l.e7)([I.ZP], () => I.ZP.getFlattenedGuildIds());
   let a = (0, l.e7)([R.default], () => R.default.locale);
   return (i.useEffect(() => {

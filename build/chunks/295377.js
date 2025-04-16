@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(626135),
   h = n(358085),
   f = n(88658),
-  b = n(660243),
-  _ = n(981631),
+  _ = n(660243),
+  b = n(981631),
   N = n(703115),
   x = n(526761),
   E = n(676654),
@@ -59,9 +59,9 @@ function S(e, t) {
 function v(e) {
   let {
     guildId: t
-  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), b = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), v = (0, s.Ie)(null != t ? t : _.lds), T = i.useCallback(e => {
+  } = e, n = (0, c.Q3)("GuildItem"), l = (0, a.e7)([m.Z], () => m.Z.getGuild(t)), g = (0, a.e7)([u.Z], () => u.Z.getMemberCount(t)), h = !d.SE.useSetting().includes(t), _ = (0, o.dQu)(o.TVs.modules.guildbar.AVATAR_SIZE), v = (0, s.Ie)(null != t ? t : b.lds), T = i.useCallback(e => {
     let n = (0, f._o)();
-    e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(_.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+    e ? n.delete(t) : n.add(t), d.SE.updateSetting([...n]), p.default.track(b.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: N.Y.RESTRICT_GUILD_ACTIVITY_STATUS_TOGGLE,
       ingress: x.f4.USER_SETTINGS_ACTIVITY_PRIVACY,
       guild_id: t
@@ -83,7 +83,7 @@ function v(e) {
           children: (0, r.jsx)(o.LYs, S(O({
             ariaLabel: l.toString(),
             name: l.toString(),
-            icon: l.getIconURL(2 * b, !1, n)
+            icon: l.getIconURL(2 * _, !1, n)
           }, v), {
             role: "treeitem"
           }))
@@ -178,7 +178,7 @@ function I() {
   return (0, r.jsx)(o.hjN, {
     tag: o.RB0.H5,
     title: j.NW.string(E.Z["+RndDg"]),
-    children: (0, r.jsx)(b.r, {})
+    children: (0, r.jsx)(_.r, {})
   })
 }
 
@@ -242,8 +242,8 @@ function P() {
     children: (0, r.jsx)(o.ToO, {
       type: o.ToO.Types.PRIMARY,
       body: j.NW.format(j.t.xvCsx8, {
-        termsLink: _.EYA.TERMS,
-        privacyLink: _.EYA.PRIVACY
+        termsLink: b.EYA.TERMS,
+        privacyLink: b.EYA.PRIVACY
       })
     })
   })

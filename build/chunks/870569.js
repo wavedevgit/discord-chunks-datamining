@@ -21,8 +21,8 @@ let d = i.forwardRef(function(e, t) {
     innerClassName: p,
     className: h,
     redGlow: f,
-    tooltipClassName: b,
-    onMouseEnter: _,
+    tooltipClassName: _,
+    onMouseEnter: b,
     onMouseLeave: N,
     "aria-label": x,
     "aria-checked": E,
@@ -39,7 +39,7 @@ let d = i.forwardRef(function(e, t) {
     color: "currentColor"
   }) : m;
   return (0, r.jsx)(l.ua7, {
-    tooltipClassName: b,
+    tooltipClassName: _,
     text: n,
     "aria-label": x,
     color: C,
@@ -48,7 +48,7 @@ let d = i.forwardRef(function(e, t) {
     children: e => {
       var n, m, {
           onClick: g,
-          onMouseEnter: b,
+          onMouseEnter: _,
           onMouseLeave: x
         } = e,
         C = function(e, t) {
@@ -101,7 +101,7 @@ let d = i.forwardRef(function(e, t) {
           null != g && g(), null != d && d(e)
         },
         onMouseEnter: () => {
-          null == b || b(), null == _ || _()
+          null == _ || _(), null == b || b()
         },
         onMouseLeave: () => {
           null == x || x(), null == N || N()

@@ -19,8 +19,8 @@ var r = n(200651),
   p = n(230711),
   h = n(100527),
   f = n(906732),
-  b = n(17894),
-  _ = n(975298),
+  _ = n(17894),
+  b = n(975298),
   N = n(600164),
   x = n(925329),
   E = n(963249),
@@ -101,7 +101,7 @@ function L(e) {
       className: W.boostingDesktopAppBlurb,
       variant: "text-sm/normal",
       children: k.NW.format(k.t.k6haR0, {
-        openAppHook: () => (0, b.Z)("app")
+        openAppHook: () => (0, _.Z)("app")
       })
     })]
   })
@@ -250,8 +250,8 @@ function F(e) {
     renewal: !0,
     analyticsLocations: m,
     analyticsLocation: n
-  }, [b] = (0, I.ED)(p);
-  b = null != d ? d : b;
+  }, [_] = (0, I.ED)(p);
+  _ = null != d ? d : _;
   let N = null != u ? {} : {
       subscriptionId: t.id,
       renewal: !0,
@@ -261,19 +261,19 @@ function F(e) {
     },
     [x] = (0, I.ED)(N);
   x = null != u ? u : x;
-  let E = (0, _.Z)();
-  return null == b || null == x ? (0, r.jsx)(g.$jN, {}) : (0, r.jsxs)(r.Fragment, {
+  let E = (0, b.Z)();
+  return null == _ || null == x ? (0, r.jsx)(g.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: W.subscriptionRows,
       children: [(0, r.jsx)(P.Z, {
         subscription: t,
-        renewalInvoicePreview: b,
+        renewalInvoicePreview: _,
         paymentSource: i,
         busy: s,
         analyticsLocation: n
       }), (0, r.jsx)(L, {
         subscription: t,
-        renewalInvoicePreview: b,
+        renewalInvoicePreview: _,
         fromStandaloneBillingPage: l,
         className: W.guildSubscriptionRow,
         fractionalPremiumInfo: E
@@ -306,7 +306,7 @@ function F(e) {
               onPaymentSourceAdded: T.i1,
               highlightAddPaymentMethodButton: c || o,
               analyticsLocation: n,
-              currentInvoicePreview: b,
+              currentInvoicePreview: _,
               dropdownClassName: W.paymentDropdown
             })]
           })]
@@ -352,12 +352,12 @@ function Y(e) {
   null != s && null != s[0] && (i = s[0]);
   let {
     analyticsLocations: m
-  } = (0, f.ZP)(h.Z.SUBSCRIPTION_DETAILS), p = null != s ? s.slice(1) : [], [b] = (0, I.ED)({
+  } = (0, f.ZP)(h.Z.SUBSCRIPTION_DETAILS), p = null != s ? s.slice(1) : [], [_] = (0, I.ED)({
     subscriptionId: i.id,
     renewal: !0,
     analyticsLocations: m,
     analyticsLocation: c
-  }), [_] = (0, I.ED)({
+  }), [b] = (0, I.ED)({
     subscriptionId: i.id,
     renewal: !0,
     applyEntitlements: !0,
@@ -366,11 +366,11 @@ function Y(e) {
   }), N = null == a ? void 0 : a.invalid, x = (0, u.e7)([C.default], () => {
     var e;
     return null == (e = C.default.getCurrentUser()) ? void 0 : e.hasFreePremium()
-  }), E = d()(i.currentPeriodEnd), O = null != i.paymentSourceId, S = null != (t = null == _ ? void 0 : _.total) ? t : 0, v = !O && S > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !x && !i.isPurchasedExternally, T = N && i.status === Z.O0b.PAST_DUE && !x && !i.isPurchasedExternally, A = (0, y.U)(), P = !x && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [w] = (0, I.Ox)({
+  }), E = d()(i.currentPeriodEnd), O = null != i.paymentSourceId, S = null != (t = null == b ? void 0 : b.total) ? t : 0, v = !O && S > 0 && (7 >= E.diff(d()(), "days") || i.status === Z.O0b.PAST_DUE) && !x && !i.isPurchasedExternally, T = N && i.status === Z.O0b.PAST_DUE && !x && !i.isPurchasedExternally, A = (0, y.U)(), P = !x && A, R = (null == i ? void 0 : i.status) === Z.O0b.PAST_DUE ? d()().diff(d()(i.currentPeriodStart), "days") : 0, [w] = (0, I.Ox)({
     subscriptionId: i.id,
     preventFetch: !P
   });
-  return null == b || null == _ ? (0, r.jsx)(g.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, j.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
+  return null == _ || null == b ? (0, r.jsx)(g.$jN, {}) : (null != i.renewalMutations && (i.renewalMutations.planId !== i.planId && !(0, j.Q0)(i.renewalMutations.planId) || i.hasExternalPlanChange) && (n = (0, r.jsx)(D.Z, {
     subscription: i,
     renewalMutations: i.renewalMutations,
     className: W.renewalMutationNotice,
@@ -402,8 +402,8 @@ function Y(e) {
             fromStandaloneBillingPage: o,
             showNoPaymentMethod: v,
             showInvalidPaymentMethod: T,
-            fetchedCurrentInvoicePreview: b,
-            fetchedRenewalInvoicePreview: _
+            fetchedCurrentInvoicePreview: _,
+            fetchedRenewalInvoicePreview: b
           })
         }), p.map((e, t) => (0, r.jsxs)("div", {
           className: W.dupSubscriptionRow,

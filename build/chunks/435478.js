@@ -2,7 +2,7 @@
 n.d(t, {
   Mv: () => h,
   PB: () => f,
-  eq: () => b
+  eq: () => _
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -69,8 +69,8 @@ function h(e) {
     sublabel: c,
     icon: h,
     hint: f,
-    renderSubmenu: b
-  } = e, _ = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
+    renderSubmenu: _
+  } = e, b = p(e, ["id", "label", "sublabel", "icon", "hint", "renderSubmenu"]);
   let N = (0, a.JA)(t),
     {
       onFocus: x
@@ -80,13 +80,13 @@ function h(e) {
       id: j
     } = (0, a.f$)(),
     [C, O] = i.useState(!1),
-    S = null != b;
+    S = null != _;
   i.useLayoutEffect(() => {
     if (S) return (0, s.N)(j, e => {
       O(e === t)
     })
   }, [t, j, S]);
-  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, E, _), {
+  let v = e => (0, r.jsxs)(d.kF, g(m({}, e, E, b), {
     role: "button",
     look: o.zxk.Looks.BLANK,
     size: o.zxk.Sizes.NONE,
@@ -116,7 +116,7 @@ function h(e) {
   }));
   return S ? (0, r.jsx)(o.yRy, {
     spacing: 0,
-    renderPopout: b,
+    renderPopout: _,
     shouldShow: C,
     onRequestClose: () => O(!0),
     children: v
@@ -145,7 +145,7 @@ function f(e) {
   })
 }
 
-function b(e) {
+function _(e) {
   return (0, r.jsx)("div", {
     className: u.submenuPaddingContainer,
     children: (0, r.jsx)(o.v2r, m({

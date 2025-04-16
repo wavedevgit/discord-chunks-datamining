@@ -1,179 +1,175 @@
 /** Chunk was on 69422 **/
 "use strict";
-n.d(t, {
-  default: () => v
-}), n(388685);
-var r = n(200651),
-  o = n(192379),
-  i = n(512722),
-  a = n.n(i),
-  s = n(442837),
-  l = n(481060),
-  c = n(570140),
-  d = n(816814),
-  u = n(23645),
-  h = n(600164),
-  p = n(454585),
-  f = n(144114),
-  _ = n(607018),
-  N = n(325067),
-  m = n(594174),
-  b = n(279837),
-  E = n(981631),
-  y = n(815660),
-  g = n(388032),
-  S = n(664460);
+r.d(t, {
+  default: () => A
+}), r(388685);
+var n = r(200651),
+  o = r(192379),
+  i = r(512722),
+  a = r.n(i),
+  s = r(442837),
+  c = r(481060),
+  l = r(570140),
+  d = r(816814),
+  u = r(23645),
+  p = r(600164),
+  h = r(454585),
+  _ = r(144114),
+  f = r(607018),
+  E = r(325067),
+  S = r(594174),
+  N = r(981631),
+  y = r(815660),
+  b = r(388032),
+  m = r(664460);
 
-function O(e, t, n) {
+function O(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
-    value: n,
+    value: r,
     enumerable: !0,
     configurable: !0,
     writable: !0
-  }) : e[t] = n, e
+  }) : e[t] = r, e
 }
 
-function x(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      O(e, t, n[t])
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      O(e, t, r[t])
     })
   }
   return e
 }
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, r)
-    }
-    return n
-  })(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let P = e => {
-  var {
-    label: t,
-    text: n,
-    children: o
-  } = e, i = function(e, t) {
-    if (null == e) return {};
-    var n, r, o = function(e, t) {
+let M = e => {
+  var t, r, {
+      label: o,
+      text: i,
+      children: a
+    } = e,
+    s = function(e, t) {
       if (null == e) return {};
-      var n, r, o = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+      var r, n, o = function(e, t) {
+        if (null == e) return {};
+        var r, n, o = {},
+          i = Object.keys(e);
+        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+        return o
+      }(e, t);
+      if (Object.getOwnPropertySymbols) {
+        var i = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+      }
       return o
-    }(e, t);
-    if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
-    }
-    return o
-  }(e, ["label", "text", "children"]);
-  return (0, r.jsxs)(h.Z, w(x({
-    direction: h.Z.Direction.VERTICAL
-  }, i), {
-    children: [(0, r.jsx)(l.vwX, {
+    }(e, ["label", "text", "children"]);
+  return (0, n.jsxs)(p.Z, (t = g({
+    direction: p.Z.Direction.VERTICAL
+  }, s), r = r = {
+    children: [(0, n.jsx)(c.vwX, {
       tag: "h2",
-      children: t
-    }), null != n ? (0, r.jsx)(l.Text, {
-      variant: "text-md/normal",
-      className: S.sectionBody,
-      children: n
-    }) : null, (0, r.jsx)(h.Z.Child, {
-      wrap: !0,
       children: o
+    }), null != i ? (0, n.jsx)(c.Text, {
+      variant: "text-md/normal",
+      className: m.sectionBody,
+      children: i
+    }) : null, (0, n.jsx)(p.Z.Child, {
+      wrap: !0,
+      children: a
     })]
-  }))
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
+    var r = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var n = Object.getOwnPropertySymbols(e);
+      r.push.apply(r, n)
+    }
+    return r
+  })(Object(r)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+  }), t))
 };
 class C extends o.PureComponent {
   renderSMSSection() {
     let {
       currentUser: e
-    } = this.props, t = null != this.props.currentUser.phone, n = e.hasFlag(E.xW$.MFA_SMS), o = e.hasFlag(E.xW$.PARTNER) || e.hasFlag(E.xW$.STAFF);
-    return t ? (0, r.jsxs)(P, {
-      label: g.NW.string(g.t.DZQe29),
-      text: g.NW.string(g.t.fspJ4O),
-      children: [(0, r.jsxs)(l.Text, {
+    } = this.props, t = null != this.props.currentUser.phone, r = e.hasFlag(N.xW$.MFA_SMS), o = e.hasFlag(N.xW$.PARTNER) || e.hasFlag(N.xW$.STAFF);
+    return t ? (0, n.jsxs)(M, {
+      label: b.NW.string(b.t.DZQe29),
+      text: b.NW.string(b.t.fspJ4O),
+      children: [(0, n.jsxs)(c.Text, {
         variant: "text-md/normal",
-        className: S.sectionBody,
-        children: [(0, r.jsx)("strong", {
-          className: S.phoneNumber,
-          children: g.NW.format(g.t.PXVoEB, {
+        className: m.sectionBody,
+        children: [(0, n.jsx)("strong", {
+          className: m.phoneNumber,
+          children: b.NW.format(b.t.PXVoEB, {
             phoneNumber: e.phone
           })
-        }), (0, r.jsx)(l.zxk, {
-          look: l.zxk.Looks.LINK,
-          color: l.zxk.Colors.LINK,
-          size: l.zxk.Sizes.MIN,
-          className: S.linkButton,
+        }), (0, n.jsx)(c.zxk, {
+          look: c.zxk.Looks.LINK,
+          color: c.zxk.Colors.LINK,
+          size: c.zxk.Sizes.MIN,
+          className: m.linkButton,
           onClick: this.handleChangePhoneNumber,
-          children: g.NW.string(g.t.Ulqq6O)
+          children: b.NW.string(b.t.Ulqq6O)
         })]
-      }), (0, r.jsx)(l.zxk, {
+      }), (0, n.jsx)(c.zxk, {
         onClick: this.handleEnableSMS,
-        disabled: n || o,
-        color: l.zxk.Colors.GREEN,
-        size: l.zxk.Sizes.SMALL,
-        children: o ? g.NW.string(g.t.Sq6Q1t) : n ? g.NW.string(g.t.kSbHTE) : g.NW.string(g.t.DZQe29)
+        disabled: r || o,
+        color: c.zxk.Colors.GREEN,
+        size: c.zxk.Sizes.SMALL,
+        children: o ? b.NW.string(b.t.Sq6Q1t) : r ? b.NW.string(b.t.kSbHTE) : b.NW.string(b.t.DZQe29)
       })]
-    }) : (0, r.jsx)(P, {
-      label: g.NW.string(g.t.DZQe29),
-      text: g.NW.string(g.t.fspJ4O),
-      children: (0, r.jsx)(l.zxk, {
+    }) : (0, n.jsx)(M, {
+      label: b.NW.string(b.t.DZQe29),
+      text: b.NW.string(b.t.fspJ4O),
+      children: (0, n.jsx)(c.zxk, {
         onClick: this.handleEnableSMS,
-        color: l.zxk.Colors.GREEN,
-        size: l.zxk.Sizes.SMALL,
+        color: c.zxk.Colors.GREEN,
+        size: c.zxk.Sizes.SMALL,
         disabled: o,
-        children: o ? g.NW.string(g.t.Sq6Q1t) : g.NW.string(g.t["O5qS/v"])
+        children: o ? b.NW.string(b.t.Sq6Q1t) : b.NW.string(b.t["O5qS/v"])
       })
     })
   }
   renderBackupCodesSection() {
-    return (0, r.jsx)(P, {
-      label: g.NW.string(g.t.qZZUy8),
-      text: g.NW.format(g.t.M0Dogo, {}),
-      children: (0, r.jsx)(u.Z, {
+    return (0, n.jsx)(M, {
+      label: b.NW.string(b.t.qZZUy8),
+      text: b.NW.format(b.t.M0Dogo, {}),
+      children: (0, n.jsx)(u.Z, {
         fileContents: this.getDownloadFileContents,
         contentType: "text/plain",
         fileName: "discord_backup_codes.txt",
-        onDownload: () => c.Z.dispatch({
+        onDownload: () => l.Z.dispatch({
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }),
-        children: (0, r.jsx)(l.zxk, {
-          color: l.zxk.Colors.GREEN,
-          size: l.zxk.Sizes.SMALL,
-          children: g.NW.string(g.t.qZZUy8)
+        children: (0, n.jsx)(c.zxk, {
+          color: c.zxk.Colors.GREEN,
+          size: c.zxk.Sizes.SMALL,
+          children: b.NW.string(b.t.qZZUy8)
         })
       })
     })
   }
   renderHeader(e) {
-    return (0, r.jsxs)(l.xBx, {
+    return (0, n.jsxs)(c.xBx, {
       separator: !1,
-      children: [(0, r.jsxs)(h.Z.Child, {
+      children: [(0, n.jsxs)(p.Z.Child, {
         grow: 1,
         shrink: 1,
-        children: [(0, r.jsx)(l.X6q, {
+        children: [(0, n.jsx)(c.X6q, {
           variant: "heading-lg/semibold",
-          className: S.header,
-          children: p.Z.parse(g.NW.string(g.t["681MPT"]))
-        }), (0, r.jsx)(l.Text, {
+          className: m.header,
+          children: h.Z.parse(b.NW.string(b.t["681MPT"]))
+        }), (0, n.jsx)(c.Text, {
           variant: "text-xs/normal",
-          className: S.subHeader,
+          className: m.subHeader,
           children: e
         })]
-      }), (0, r.jsx)(h.Z.Child, {
+      }), (0, n.jsx)(p.Z.Child, {
         grow: 0,
-        children: (0, r.jsx)(l.olH, {
+        children: (0, n.jsx)(c.olH, {
           onClick: this.handleCloseModal
         })
       })]
@@ -183,20 +179,20 @@ class C extends o.PureComponent {
     let {
       onClose: t
     } = this.props;
-    return (0, r.jsx)(l.sYh, {
+    return (0, n.jsx)(c.sYh, {
       dismissable: !0,
-      header: g.NW.string(g.t.mwVXnJ),
-      confirmText: g.NW.string(g.t.MwSEo6),
-      cancelText: g.NW.string(g.t["ETE/oK"]),
+      header: b.NW.string(b.t.mwVXnJ),
+      confirmText: b.NW.string(b.t.MwSEo6),
+      cancelText: b.NW.string(b.t["ETE/oK"]),
       onCancel: () => this.setState({
         showConfirmModal: !1
       }),
       onConfirm: () => {
-        c.Z.dispatch({
+        l.Z.dispatch({
           type: "MFA_SEEN_BACKUP_CODE_PROMPT"
         }), t()
       },
-      children: (0, r.jsx)(l.Text, {
+      children: (0, n.jsx)(c.Text, {
         variant: "text-md/normal",
         color: "text-normal",
         children: e
@@ -215,15 +211,15 @@ class C extends o.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, r.jsxs)(l.Y0X, {
+    return (0, n.jsxs)(c.Y0X, {
       transitionState: e,
-      className: S.modal,
-      children: [this.renderHeader(g.NW.format(g.t.pQioMz, {})), (0, r.jsxs)(l.hzk, {
-        className: S.modalInner,
-        children: [this.renderSMSSection(), (0, r.jsx)(l.$i$, {
-          className: S.divider
+      className: m.modal,
+      children: [this.renderHeader(b.NW.format(b.t.pQioMz, {})), (0, n.jsxs)(c.hzk, {
+        className: m.modalInner,
+        children: [this.renderSMSSection(), (0, n.jsx)(c.$i$, {
+          className: m.divider
         }), this.renderBackupCodesSection()]
-      }), t && this.renderConfirmModal(g.NW.string(g.t.WJFPHB))]
+      }), t && this.renderConfirmModal(b.NW.string(b.t.WJFPHB))]
     })
   }
   renderWebAuthn() {
@@ -232,19 +228,19 @@ class C extends o.PureComponent {
     } = this.props, {
       showConfirmModal: t
     } = this.state;
-    return (0, r.jsxs)(l.Y0X, {
+    return (0, n.jsxs)(c.Y0X, {
       transitionState: e,
-      className: S.modal,
-      children: [this.renderHeader(g.NW.format(g.t.Xb5JGh, {})), (0, r.jsx)(l.hzk, {
-        className: S.modalInner,
+      className: m.modal,
+      children: [this.renderHeader(b.NW.format(b.t.Xb5JGh, {})), (0, n.jsx)(c.hzk, {
+        className: m.modalInner,
         children: this.renderBackupCodesSection()
-      }), t && this.renderConfirmModal(g.NW.string(g.t.aoNIXF))]
+      }), t && this.renderConfirmModal(b.NW.string(b.t.aoNIXF))]
     })
   }
   openPhoneVerificationModal() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    (0, l.h7j)(t => (0, r.jsx)(_.default, x({
-      reason: f.L.MFA_PHONE_UPDATE
+    (0, c.h7j)(t => (0, n.jsx)(f.default, g({
+      reason: _.L.MFA_PHONE_UPDATE
     }, t, e)), {
       modalKey: y.M
     })
@@ -264,11 +260,11 @@ class C extends o.PureComponent {
       let e = this.props.backupCodes.map(e => {
           let {
             consumed: t,
-            code: n
+            code: r
           } = e;
-          return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(".concat(g.NW.string(g.t["ycME+/"]), ")") : "")
+          return "* ".concat(r.substr(0, 4), "-").concat(r.substr(4), " ").concat(t ? "(".concat(b.NW.string(b.t["ycME+/"]), ")") : "")
         }).join("\r\n"),
-        t = g.NW.formatToPlainString(g.t.uYWwh4, {
+        t = b.NW.formatToPlainString(b.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
@@ -277,23 +273,18 @@ class C extends o.PureComponent {
     }), O(this, "handleEnableSMS", () => {
       let {
         currentUser: e
-      } = this.props, t = () => {
-        (0, l.h7j)(e => (0, r.jsx)(b.default, w(x({}, e), {
-          handleSubmit: e => d.Z.enableSMS(e),
-          title: g.NW.string(g.t.DZQe29)
-        })))
-      };
+      } = this.props;
       null == e.phone ? this.openPhoneVerificationModal({
-        onAddedPhone: t
-      }) : t()
+        onAddedPhone: d.Z.enableSMS
+      }) : d.Z.enableSMS()
     })
   }
 }
-let v = s.ZP.connectStores([m.default, N.Z], () => {
-  let e = m.default.getCurrentUser();
+let A = s.ZP.connectStores([S.default, E.Z], () => {
+  let e = S.default.getCurrentUser();
   return a()(null != e, "MFAEnableSuccess: currentUser cannot be undefined"), {
     currentUser: e,
-    backupCodes: N.Z.getBackupCodes(),
-    hasSeenBackupPrompt: N.Z.hasSeenBackupPrompt
+    backupCodes: E.Z.getBackupCodes(),
+    hasSeenBackupPrompt: E.Z.hasSeenBackupPrompt
   }
 })(C)

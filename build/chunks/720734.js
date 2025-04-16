@@ -17,8 +17,8 @@ var r = n(200651),
   p = n(789639),
   h = n(930295),
   f = n(481060),
-  b = n(355467),
-  _ = n(239091),
+  _ = n(355467),
+  b = n(239091),
   N = n(230711),
   x = n(410575),
   E = n(941129),
@@ -71,8 +71,8 @@ var r = n(200651),
   ep = n(52538),
   eh = n(670188),
   ef = n(861254),
-  eb = n(221241),
-  e_ = n(879815),
+  e_ = n(221241),
+  eb = n(879815),
   eN = n(294629),
   ex = n(875527),
   eE = n(56848),
@@ -160,10 +160,10 @@ function e4(e) {
     "data-jump-section": m
   } = e, g = i.useRef(null), p = (0, H.Q3)("RTC Avatar"), {
     coloredIconsEnabled: h
-  } = (0, eb.Z)({
+  } = (0, e_.Z)({
     location: "RTC Avatar"
-  }), b = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), _ = (0, eL.NZ)({
-    avatarDecoration: b,
+  }), _ = (0, R.Z)(null == s ? void 0 : s.avatarDecoration), b = (0, eL.NZ)({
+    avatarDecoration: _,
     size: (0, D.y9)(f.EFr.SIZE_32)
   }), N = (0, f.dQu)(f.TVs.modules.guildbar.AVATAR_SIZE), {
     updateOpenPopoutRef: E,
@@ -243,7 +243,7 @@ function e4(e) {
         children: [(0, r.jsx)(e2, {
           size: p ? f.EFr["SIZE_".concat(N)] : f.EFr.SIZE_32,
           src: s.getAvatarURL(void 0, p ? N - 4 : 32, !1),
-          avatarDecoration: _,
+          avatarDecoration: b,
           "aria-label": s.username,
           status: n ? eq.Skl.STREAMING : l,
           isSpeaking: t,
@@ -473,7 +473,7 @@ class e9 extends i.PureComponent {
       let {
         currentUser: t
       } = this.props;
-      null != t && (0, _.jW)(e, async () => {
+      null != t && (0, b.jW)(e, async () => {
         let {
           default: e
         } = await n.e("2535").then(n.bind(n, 923422));
@@ -485,20 +485,20 @@ class e9 extends i.PureComponent {
         }))
       })
     }), e$(this, "audioOnInteractionHandler", (0, U.u)("AudioDeviceMenu", A.Z.ACCOUNT)), e$(this, "handleInputAudioContextMenu", (e, t) => {
-      (0, _.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(P.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: _.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: _.Zy,
+            onClose: b.Zy,
             renderInputDevices: !0,
             renderInputModes: !0,
             renderInputVolume: !0,
@@ -507,20 +507,20 @@ class e9 extends i.PureComponent {
         })
       })
     }), e$(this, "handleOutputAudioContextMenu", (e, t) => {
-      (0, _.jW)(e, async () => {
+      (0, b.jW)(e, async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 659580));
         return () => (0, r.jsx)(P.Gt, {
           value: t,
           children: this.props.simplifiedCallSettingsEnabled ? (0, r.jsx)(e, {
-            onClose: _.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             simplified: !0,
             onInteraction: this.audioOnInteractionHandler
           }) : (0, r.jsx)(e, {
-            onClose: _.Zy,
+            onClose: b.Zy,
             renderOutputDevices: !0,
             renderOutputVolume: !0,
             onInteraction: this.audioOnInteractionHandler
@@ -633,8 +633,8 @@ function e5(e) {
     handleToggleSelfDeaf: g,
     handleToggleSelfMute: p,
     handleInputAudioContextMenu: h,
-    handleOutputAudioContextMenu: b,
-    handleOpenAccountSettings: _,
+    handleOutputAudioContextMenu: _,
+    handleOpenAccountSettings: b,
     handleOpenSettingsContextMenu: N,
     dismissibleContents: x,
     nameplate: E,
@@ -662,14 +662,14 @@ function e5(e) {
       selfDeaf: t,
       serverDeaf: a,
       onClick: g,
-      onContextMenu: b,
+      onContextMenu: _,
       awaitingRemote: i,
       iconForeground: null != E ? eJ.iconForeground : void 0,
       nameplate: E
     }), (0, r.jsx)(te, {
       isEligibleForPomelo: c,
       webBuildOverride: d,
-      onClick: _,
+      onClick: b,
       onContextMenu: N,
       dismissibleContents: x.settings,
       iconForeground: null != E ? eJ.iconForeground : void 0,
@@ -713,13 +713,13 @@ function e7() {
     }),
     {
       mute: h,
-      selfMute: _,
+      selfMute: b,
       suppress: N
     } = (0, eN.Z)(p),
     {
       selfDeaf: x,
       deaf: O
-    } = (0, e_.Z)(p),
+    } = (0, eb.Z)(p),
     v = (0, o.e7)([Z.C], () => {
       var e;
       return (0, w.fD)() ? null == (e = Z.C.getCurrentBuildOverride().overrides) ? void 0 : e.discord_web : null
@@ -742,7 +742,7 @@ function e7() {
     }),
     {
       simplifiedSettingsEnabled: G
-    } = (0, eb.Z)({
+    } = (0, e_.Z)({
       location: "Account"
     }),
     F = (0, J.m)(),
@@ -774,8 +774,8 @@ function e7() {
       return i.useEffect(() => {
         (async () => {
           if (!e && null == n && a) {
-            if (!r) return await (0, b.ou)();
-            !l && (t || await (0, b.l0)())
+            if (!r) return await (0, _.ou)();
+            !l && (t || await (0, _.l0)())
           }
         })()
       }, [a, n, e, r, t, l]), !e && !!a && !l && null != n && n
@@ -806,7 +806,7 @@ function e7() {
       occluded: R,
       premiumSubscription: T,
       selfDeaf: x,
-      selfMute: _,
+      selfMute: b,
       serverDeaf: O,
       serverMute: h,
       speaking: u,
@@ -836,18 +836,18 @@ function te(e) {
     nameplate: d
   } = e, u = i.useRef(null), m = f.ewm, g = (0, p.i)();
   m = null != t ? f.bgT : n ? f.Ncx : g.Component;
-  let [h, b] = (0, Y.US)(l);
+  let [h, _] = (0, Y.US)(l);
   return (0, r.jsx)(f.yRy, {
     targetElementRef: u,
     position: "top",
     align: "center",
     shouldShow: null != h,
     renderPopout: h === c.z.PROFILE_THEMES_FEATURE_EDUCATION_TOOLTIP_TAKE_2 ? () => (0, r.jsx)(eo.Z, {}) : h === c.z.USER_SAFETY_CONSUMER_EDUCATION_BLOCK ? () => (0, r.jsx)(ed.Z, {
-      markAsDismissed: b
+      markAsDismissed: _
     }) : h === c.z.USER_SAFETY_CONSUMER_EDUCATION_MUTE ? () => (0, r.jsx)(eu.Z, {
-      markAsDismissed: b
+      markAsDismissed: _
     }) : h === c.z.SOUNDBOARD_VOLUME_EDUCATION ? () => (0, r.jsx)(eg.Z, {
-      markAsDismissed: b
+      markAsDismissed: _
     }) : h === c.z.PER_GUILD_COLLECTIBLES_CUSTOMIZATION_COACHMARK ? () => (0, r.jsx)(ep.Z, {}) : () => (0, r.jsx)(r.Fragment, {}),
     children: () => (0, r.jsx)(ez.Z, e1(e0({
       ref: u,
@@ -876,8 +876,8 @@ function tt(e) {
     tooltipText: d,
     tooltipColor: u,
     tooltipForceOpen: p,
-    iconForeground: b,
-    onMouseEnter: _,
+    iconForeground: _,
+    onMouseEnter: b,
     onMouseLeave: N,
     onClick: x,
     onContextMenu: E,
@@ -895,7 +895,7 @@ function tt(e) {
     location: "RTC Microphone Button"
   }), {
     coloredIconsEnabled: U
-  } = (0, eb.Z)({
+  } = (0, e_.Z)({
     location: "RTC Microphone Button"
   }), V = null != d ? d : (0, W.Z)(t, n, s, c, M === ef.BK.GroupedButtonsRedMic), {
     analyticsLocations: G
@@ -932,7 +932,7 @@ function tt(e) {
         tooltipForceOpen: p,
         plated: null != j,
         onMouseEnter: () => {
-          _(), k.onMouseEnter()
+          b(), k.onMouseEnter()
         },
         onMouseLeave: () => {
           N(), k.onMouseLeave()
@@ -942,7 +942,7 @@ function tt(e) {
           width: 20,
           height: 20,
           color: O ? f.TVs.colors.STATUS_DANGER : "currentColor",
-          className: b
+          className: _
         }),
         onClick: x,
         onContextMenu: H,
@@ -1057,11 +1057,11 @@ function tn(e) {
     play: p,
     events: {
       onMouseEnter: h,
-      onMouseLeave: b
+      onMouseLeave: _
     }
-  } = (0, u.l)(m ? "undeafen" : "deafen"), _ = n ? f.Vm4 : g, {
+  } = (0, u.l)(m ? "undeafen" : "deafen"), b = n ? f.Vm4 : g, {
     coloredIconsEnabled: N
-  } = (0, eb.Z)({
+  } = (0, e_.Z)({
     location: "RTC Microphone Button"
   }), {
     analyticsLocations: x
@@ -1076,8 +1076,8 @@ function tn(e) {
       plated: null != d,
       tooltipText: (0, k.Z)(t, n, s),
       onMouseEnter: h,
-      onMouseLeave: b,
-      icon: (0, r.jsx)(_, {
+      onMouseLeave: _,
+      icon: (0, r.jsx)(b, {
         size: "custom",
         width: 20,
         height: 20,

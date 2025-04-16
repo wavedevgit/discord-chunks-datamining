@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(46140),
   h = n(981631),
   f = n(388032),
-  b = n(31903),
-  _ = n(66094);
+  _ = n(31903),
+  b = n(66094);
 
 function N() {
   let e = (0, s.wj)((0, o.ZP)()),
@@ -52,16 +52,16 @@ function N() {
       }, (0, d.mH)(u.jn.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
   return t === m.$.NEVER_SHOW ? null : (0, r.jsx)("div", {
-    className: b.container,
+    className: _.container,
     style: n,
     children: (0, r.jsxs)("div", {
-      className: b.textContainer,
+      className: _.textContainer,
       children: [(0, r.jsxs)("div", {
-        className: b.headerContainer,
+        className: _.headerContainer,
         children: [(0, r.jsx)("img", {
           alt: "",
-          src: _,
-          className: b.icon
+          src: b,
+          className: _.icon
         }), (0, r.jsx)(a.X6q, {
           variant: "heading-lg/bold",
           color: "always-white",
@@ -74,9 +74,9 @@ function N() {
       }), (0, r.jsx)(a.zxk, {
         size: "large",
         color: e ? a.Ttl.BRAND : a.Ttl.WHITE,
-        className: b.button,
+        className: _.button,
         onClick: N,
-        innerClassName: b.innerButton,
+        innerClassName: _.innerButton,
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/medium",
           color: e ? "always-white" : "text-normal",

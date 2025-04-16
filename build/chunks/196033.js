@@ -20,7 +20,7 @@ let f = () => {
     t = (0, c.zL)(d.jE.UPSELL_BANNER_POPOUT),
     n = (0, l.H)("upsell_banner"),
     f = (0, a.e7)([o.Z], () => o.Z.getMarketingBySurface(i.K.EDIT_PROFILE_SETTINGS)),
-    b = r.useMemo(() => n ? {
+    _ = r.useMemo(() => n ? {
       asset: g,
       popoutAsset: m,
       title: u.NW.string(u.t.QZVVBg),
@@ -54,10 +54,10 @@ let f = () => {
         })
       }
       return e
-    }({}, b), r = r = {
+    }({}, _), r = r = {
       type: s.Z.BANNER,
-      asset: null != e ? e : b.asset,
-      popoutAsset: null != t ? t : b.popoutAsset
+      asset: null != e ? e : _.asset,
+      popoutAsset: null != t ? t : _.popoutAsset
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -68,5 +68,5 @@ let f = () => {
     })(Object(r)).forEach(function(e) {
       Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
     }), n
-  }, [e, t, b])
+  }, [e, t, _])
 }

@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -19,15 +19,15 @@ let h = (0, c.hQ)(),
     id: "1",
     type: m.d4z.DM
   }),
-  b = (0, c.hQ)();
+  _ = (0, c.hQ)();
 
-function _(e) {
+function b(e) {
   let {
     sectionTitle: t,
     errors: n,
     onBioChange: c,
     pendingBio: d,
-    placeholder: _,
+    placeholder: b,
     currentBio: N,
     disabled: x = !1
   } = e, [E, j] = i.useState(null != d ? d : N), [C, O] = i.useState((0, l.JM)(E)), S = i.useRef(!1);
@@ -43,7 +43,7 @@ function _(e) {
     errors: n,
     disabled: x,
     children: [(0, r.jsx)(o.Z, {
-      "aria-describedby": b,
+      "aria-describedby": _,
       "aria-labelledby": h,
       className: p.bioTextAreaContainer,
       innerClassName: p.bioTextArea,
@@ -51,7 +51,7 @@ function _(e) {
       onChange: function(e, t, n) {
         t !== E && (j(t), O(n), c(t))
       },
-      placeholder: _,
+      placeholder: b,
       channel: f,
       textValue: E,
       richValue: C,
@@ -72,7 +72,7 @@ function _(e) {
         })
       }
     }), (0, r.jsx)(s.nn4, {
-      id: b,
+      id: _,
       children: g.NW.format(g.t["+DFxLS"], {
         maxLength: m.tPV
       })

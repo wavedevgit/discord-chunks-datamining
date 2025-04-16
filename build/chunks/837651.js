@@ -1,20 +1,20 @@
 /** Chunk was on 23746 **/
 "use strict";
 r.d(t, {
-  default: () => b
+  default: () => _
 }), r(388685);
 var n = r(200651),
   s = r(192379),
   i = r(481060),
-  a = r(816814),
+  o = r(816814),
   c = r(600164),
-  o = r(198993),
+  a = r(198993),
   l = r(594174),
   d = r(287880),
   u = r(388032),
   h = r(366293);
 
-function g(e, t, r) {
+function p(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: !0,
@@ -22,12 +22,12 @@ function g(e, t, r) {
     writable: !0
   }) : e[t] = r, e
 }
-let p = e => {
+let g = e => {
   let {
     image: t,
     label: r,
     text: s,
-    children: a
+    children: o
   } = e;
   return (0, n.jsxs)(c.Z, {
     className: h.spacing,
@@ -49,7 +49,7 @@ let p = e => {
         }), (0, n.jsx)(i.R94, {
           type: i.R94.Types.DESCRIPTION,
           children: s
-        }), a]
+        }), o]
       })
     })]
   })
@@ -61,16 +61,16 @@ class f extends s.PureComponent {
       transitionState: t,
       onClose: s
     } = this.props, {
-      totpSecret: a,
-      code: g,
+      totpSecret: o,
+      code: p,
       isVerifying: f
-    } = this.state, b = null == (e = l.default.getCurrentUser()) ? void 0 : e.email, x = (0, d.U0)(null != b ? b : "", a), m = (0, n.jsx)("form", {
+    } = this.state, _ = null == (e = l.default.getCurrentUser()) ? void 0 : e.email, C = (0, d.U0)(null != _ ? _ : "", o), E = (0, n.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, n.jsxs)(c.Z, {
         className: h.inputContainer,
         align: c.Z.Align.START,
         children: [(0, n.jsx)(i.oil, {
-          value: g,
+          value: p,
           className: h.input,
           placeholder: "000 000",
           maxLength: 7,
@@ -113,7 +113,7 @@ class f extends s.PureComponent {
           })
         })]
       }), (0, n.jsxs)(i.hzk, {
-        children: [(0, n.jsx)(p, {
+        children: [(0, n.jsx)(g, {
           image: (0, n.jsx)("img", {
             alt: "",
             src: r(340061),
@@ -127,9 +127,9 @@ class f extends s.PureComponent {
           })
         }), (0, n.jsx)(i.$i$, {
           className: h.divider
-        }), (0, n.jsx)(p, {
-          image: (0, n.jsx)(o.ZP, {
-            text: x
+        }), (0, n.jsx)(g, {
+          image: (0, n.jsx)(a.ZP, {
+            text: C
           }),
           label: u.NW.string(u.t["91InFx"]),
           text: u.NW.string(u.t.hFeBkp),
@@ -143,52 +143,49 @@ class f extends s.PureComponent {
               variant: "text-md/normal",
               className: h.secret,
               selectable: !0,
-              children: a
+              children: o
             })]
           })
         }), (0, n.jsx)(i.$i$, {
           className: h.divider
-        }), (0, n.jsx)(p, {
+        }), (0, n.jsx)(g, {
           image: (0, n.jsx)("img", {
             alt: "",
             src: r(308777)
           }),
           label: u.NW.string(u.t["SaD/LS"]),
           text: u.NW.string(u.t.vI1ziY),
-          children: m
+          children: E
         })]
       })]
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), p(this, "state", {
       code: "",
       totpSecret: (0, d.bV)(),
       error: null,
       isVerifying: !1
-    }), g(this, "handleCodeChange", e => {
+    }), p(this, "handleCodeChange", e => {
       this.setState({
         code: e
       })
-    }), g(this, "handleActivate", e => {
+    }), p(this, "handleActivate", e => {
       e.preventDefault();
       let {
-        password: t
-      } = this.props, {
-        totpSecret: r,
-        code: n
+        totpSecret: t,
+        code: r
       } = this.state;
       this.setState({
         isVerifying: !0
-      }), a.Z.enable({
-        password: t,
-        code: n,
-        secret: (0, d.Qe)(r)
+      }), o.Z.enable({
+        code: r,
+        secret: (0, d.Qe)(t)
       }).then(this.handleActivateSuccess, e => this.setState({
         error: e.body.message,
         isVerifying: !1
       }))
-    }), g(this, "handleActivateSuccess", () => {
+    }), p(this, "handleActivateSuccess", () => {
       let {
         onClose: e,
         handleEnableMFASuccess: t
@@ -199,4 +196,4 @@ class f extends s.PureComponent {
     })
   }
 }
-let b = f
+let _ = f

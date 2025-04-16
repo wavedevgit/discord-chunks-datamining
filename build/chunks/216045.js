@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(634894),
   h = n(100527),
   f = n(906732),
-  b = n(475977),
-  _ = n(605236),
+  _ = n(475977),
+  b = n(605236),
   N = n(243778),
   x = n(957730),
   E = n(442933),
@@ -83,10 +83,10 @@ function G() {
     J = (0, y.T)({
       location: "UserSettingsProfileCustomization"
     }),
-    $ = (0, _.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
+    $ = (0, b.wE)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE),
     ee = J && !$;
   i.useEffect(() => {
-    ee && (0, _.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
+    ee && (0, b.EW)(o.z.RECENT_AVATARS_SETTINGS_MENU_NEW_BADGE, {
       forceTrack: !0
     })
   }, [ee]);
@@ -111,7 +111,7 @@ function G() {
   }), ec = !X, ed = i.useRef(null);
   return s ? (0, r.jsx)(g.Z, {}) : (0, r.jsxs)(f.Gt, {
     value: Q,
-    children: [(0, r.jsx)(b.Z, {}), (0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(_.Z, {}), (0, r.jsx)(O.Z, {
       profilePreview: (0, r.jsx)(S.Z, (e = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

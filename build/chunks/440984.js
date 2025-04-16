@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(798769),
   h = n(474936),
   f = n(388032),
-  b = n(583532),
-  _ = n(982404),
+  _ = n(583532),
+  b = n(982404),
   N = n(299156);
 
 function x(e) {
@@ -28,7 +28,7 @@ function x(e) {
     confettiCanvas: E,
     userWasChurned: j = !1,
     userDiscountOffer: C
-  } = e, O = (0, o.ZP)(), S = (0, a.wj)(O) ? _ : N, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
+  } = e, O = (0, o.ZP)(), S = (0, a.wj)(O) ? b : N, v = i.useRef(null), [T, I] = i.useState(!1), y = (0, g._)(t, h.Xh.PREMIUM_MONTH_TIER_2, C), A = (0, u.aS)(h.Xh.PREMIUM_MONTH_TIER_2, !1, !1, {
     currency: t.currency,
     paymentSourceId: t.paymentSourceId
   }), P = (0, m.T4)(A.amount, A.currency), R = (0, s.e7)([c.Z], () => c.Z.useReducedMotion);
@@ -41,7 +41,7 @@ function x(e) {
       regularPrice: P
     }),
     Z = (0, r.jsx)("div", {
-      className: b.whatYouLoseButtonContainer,
+      className: _.whatYouLoseButtonContainer,
       children: (0, r.jsx)(l.zxk, {
         color: l.zxk.Colors.BRAND,
         onClick: x,
@@ -51,25 +51,25 @@ function x(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(p.Z, {
       premiumType: n,
-      className: b.cancellationHeader,
+      className: _.cancellationHeader,
       onClose: x
     }), (0, r.jsx)("div", {
       ref: v,
       children: (0, r.jsx)(l.hzk, {
-        className: b.body,
+        className: _.body,
         children: null != y ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)("div", {
-            className: b.discountAppliedBody,
+            className: _.discountAppliedBody,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: S,
-              className: b.nitroIcon
+              className: _.nitroIcon
             }), (0, r.jsx)(l.X6q, {
               variant: "heading-xl/bold",
               children: j ? f.NW.string(f.t.gOOPaG) : f.NW.string(f.t.PZSyRk)
             })]
           }), (0, r.jsx)("div", {
-            className: b.bodyString,
+            className: _.bodyString,
             children: D
           }), Z]
         }) : (0, r.jsx)(l.$jN, {})

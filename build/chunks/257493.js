@@ -30,7 +30,7 @@ let m = (0, i.createContext)({
       children: p
     } = e, h = (0, a.e7)([c.default], () => d.ZP.canUseCollectibles(c.default.getCurrentUser())), {
       product: f
-    } = (0, l.T)(t), b = (0, i.useMemo)(() => {
+    } = (0, l.T)(t), _ = (0, i.useMemo)(() => {
       if (null == f) return null;
       let e = (0, o.T4)({
           product: f,
@@ -43,23 +43,23 @@ let m = (0, i.createContext)({
         product: f
       }
     }, [f, h]), {
-      redeemVirtualCurrency: _,
+      redeemVirtualCurrency: b,
       isSubmitting: N,
       error: x
     } = (0, u.f)(), E = (0, i.useCallback)(e => {
-      _(t, n => {
+      b(t, n => {
         g({
           entitlements: n,
           skuId: t
         }), e()
       })
-    }, [t, _, g]);
+    }, [t, b, g]);
     return (0, r.jsx)(m.Provider, {
       value: {
         skuId: t,
         loadId: n,
         analyticsLocations: null != s ? s : [],
-        orbProductContext: b,
+        orbProductContext: _,
         onRedeemVirtualCurrency: E,
         isRedeeming: N,
         orbRedemptionError: x

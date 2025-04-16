@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(497321),
   h = n(100527),
   f = n(906732),
-  b = n(211242),
-  _ = n(15640),
+  _ = n(211242),
+  b = n(15640),
   N = n(89057),
   x = n(605236),
   E = n(433811),
@@ -46,7 +46,7 @@ let V = function(e) {
     entrypoint: t = L.EZ.UserSettings
   } = e;
   (0, j.z)(E.X);
-  let n = (0, b.Q)(),
+  let n = (0, _.Q)(),
     {
       sourceAnalyticsLocations: s,
       analyticsLocations: V
@@ -56,7 +56,7 @@ let V = function(e) {
     H = null == F ? void 0 : F.id,
     z = (0, Z.N)(),
     Y = (0, D.Ng)(),
-    K = (0, _.V)(),
+    K = (0, b.V)(),
     [q, X] = i.useState(!0),
     Q = i.useRef(0),
     J = (0, y.M5)(F, L.p9.TIER_2);

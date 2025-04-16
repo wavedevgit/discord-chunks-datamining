@@ -1,13 +1,13 @@
 /** Chunk was on 69422 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   Z: () => s
-}), n(388685);
-var r = n(192379),
-  o = n(817080),
-  i = n(579806),
-  a = n(358085);
-class s extends r.Component {
+}), r(388685);
+var n = r(192379),
+  o = r(817080),
+  i = r(579806),
+  a = r(358085);
+class s extends n.Component {
   getFileContents() {
     let {
       fileContents: e
@@ -18,34 +18,34 @@ class s extends r.Component {
     i.Z.fileManager.saveWithDialog(e, t)
   }
   downloadHtml5(e, t) {
-    let n = new Blob([e], {
+    let r = new Blob([e], {
       type: this.props.contentType
     });
-    (0, o.saveAs)(n, t)
+    (0, o.saveAs)(r, t)
   }
   render() {
     let {
       children: e
-    } = this.props, t = r.Children.only(e);
-    return r.cloneElement(t, {
+    } = this.props, t = n.Children.only(e);
+    return n.cloneElement(t, {
       onClick: this.handleFileDownload
     })
   }
   constructor(...e) {
-    var t, n;
-    super(...e), t = "handleFileDownload", n = e => {
+    var t, r;
+    super(...e), t = "handleFileDownload", r = e => {
       e.preventDefault();
       let t = this.getFileContents(),
         {
-          fileName: n,
-          onDownload: r
+          fileName: r,
+          onDownload: n
         } = this.props;
-      a.isPlatformEmbedded ? this.downloadNative(t, n) : this.downloadHtml5(t, n), null == r || r()
+      a.isPlatformEmbedded ? this.downloadNative(t, r) : this.downloadHtml5(t, r), null == n || n()
     }, t in this ? Object.defineProperty(this, t, {
-      value: n,
+      value: r,
       enumerable: !0,
       configurable: !0,
       writable: !0
-    }) : this[t] = n
+    }) : this[t] = r
   }
 }

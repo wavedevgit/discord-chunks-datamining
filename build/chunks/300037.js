@@ -17,8 +17,8 @@ var i = n(120356),
   p = n(430824),
   h = n(594174),
   f = n(709586),
-  b = n(267642),
-  _ = n(981631),
+  _ = n(267642),
+  b = n(981631),
   N = n(388032),
   x = n(939400);
 let E = function(e) {
@@ -66,7 +66,7 @@ let E = function(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/bold",
           color: "text-muted",
-          children: (0, b.nW)(E.premiumTier, {
+          children: (0, _.nW)(E.premiumTier, {
             useLevels: !1
           })
         })]
@@ -74,10 +74,10 @@ let E = function(e) {
     }), i ? (0, r.jsx)(u.Z, {
       guild: E,
       analyticsLocation: {
-        page: _.ZY5.GUILD_BOOSTING_USER_SETTINGS,
-        section: _.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
-        object: _.qAy.BUTTON_CTA,
-        objectType: _.Qqv.BUY
+        page: b.ZY5.GUILD_BOOSTING_USER_SETTINGS,
+        section: b.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
+        object: b.qAy.BUTTON_CTA,
+        objectType: b.Qqv.BUY
       },
       pauseAnimation: !0,
       size: l.zxk.Sizes.MEDIUM,
@@ -90,7 +90,7 @@ let E = function(e) {
         (0, d.f)({
           guildId: E.id,
           location: {
-            section: _.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
+            section: b.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_GO_TO_SERVER_CTA
           }
         })
       },

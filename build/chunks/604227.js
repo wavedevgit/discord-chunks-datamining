@@ -17,10 +17,10 @@ var i = n(525654),
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "390536",
-    f = "6dfd12f7c4fc60e08be628f8403ee24ecb594652".substring(0, 7),
-    b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
-    _ = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
+    h = "390542",
+    f = "e08c5105e254c058940838d12d15014949b269c7".substring(0, 7),
+    _ = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
+    b = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
     N = null === l.Z || void 0 === l.Z || null == (n = (i = l.Z.remoteApp).getAppArch) ? void 0 : n.call(i),
     x = null == (g = o.C.getCurrentBuildOverride().overrides) ? void 0 : g.discord_web,
     E = function() {
@@ -32,7 +32,7 @@ function g() {
       return t.includes("Windows 10") && void 0 !== a && a >= 22e3 && (t = t.replace("Windows 10", "Windows 11")), t.includes("OS X 10.15.7") && void 0 !== r && r >= 20 && (t = "macOS ".concat(r - 9)), "".concat(t, " (").concat(n, ")")
     }(),
     j = [p, h, "(".concat(f, ")")];
-  return null != b && (j.push("Host ".concat(b)), null != N && j.push(N.toLowerCase()), null != _ && j.push("(".concat(_, ")"))), j.push("Build Override: ".concat(null != x ? x.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
+  return null != _ && (j.push("Host ".concat(_)), null != N && j.push(N.toLowerCase()), null != b && j.push("(".concat(b, ")"))), j.push("Build Override: ".concat(null != x ? x.id : "N/A")), null != E && j.push(E), (0, r.jsx)(c.Z, {
     copyValue: j.join(" "),
     text: u.NW.string(u.t["9Al4QU"]),
     "aria-label": !1,
@@ -79,17 +79,17 @@ function g() {
               className: m.versionHash,
               children: ["Build Override: ", x.id]
             })
-          }), null != b ? (0, r.jsxs)(r.Fragment, {
+          }), null != _ ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)(a.Text, {
               tag: "span",
               className: m.line,
               variant: "text-xs/normal",
               color: "text-muted",
-              children: ["Host ", b, " ", null != N ? (0, r.jsxs)("span", {
+              children: ["Host ", _, " ", null != N ? (0, r.jsxs)("span", {
                 className: m.appArch,
                 children: [N.toLowerCase(), " "]
-              }) : null, null != _ ? (0, r.jsxs)("span", {
-                children: ["(", _, ")"]
+              }) : null, null != b ? (0, r.jsxs)("span", {
+                children: ["(", b, ")"]
               }) : null]
             }), " "]
           }) : null, null != E ? (0, r.jsx)(a.Text, {
