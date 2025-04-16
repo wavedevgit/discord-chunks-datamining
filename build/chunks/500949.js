@@ -1,6 +1,6 @@
 /** Chunk was on 93886 **/
 n.d(t, {
-  $R: () => X,
+  $R: () => K,
   A0: () => et,
   GU: () => Y,
   H8: () => J,
@@ -17,7 +17,7 @@ n.d(t, {
   iw: () => en,
   jC: () => V,
   jQ: () => F,
-  lT: () => K,
+  lT: () => X,
   rd: () => ed,
   t4: () => ec,
   uF: () => em,
@@ -133,7 +133,7 @@ function W(e, t) {
   }, [e, n]), [n, a]
 }
 
-function X(e) {
+function K(e) {
   let t = V[e];
   return {
     name: e,
@@ -145,7 +145,7 @@ function X(e) {
   }
 }
 
-function K(e, t, n, a, r) {
+function X(e, t, n, a, r) {
   return {
     name: t,
     colors: U(M({}, e.colors), {

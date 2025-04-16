@@ -37,6 +37,9 @@ function b() {
         name: "App",
         children: e
       }), (0, a.jsx)(h.Z9, {
+        name: "System",
+        children: p.Kj
+      }), (0, a.jsx)(h.Z9, {
         name: "@discord/intl",
         children: p.NW.currentLocale
       }), (0, a.jsx)(h.Z9, {
