@@ -29,8 +29,8 @@ var r = n(200651),
   N = n(174827),
   b = n(846464),
   T = n(184160),
-  M = n(48175),
-  P = n(981631),
+  P = n(48175),
+  M = n(981631),
   O = n(474936),
   Z = n(388032),
   v = n(236691);
@@ -74,7 +74,7 @@ function U(e) {
     postSuccessGuild: N,
     followupSKUInfo: b,
     renderHeader: T,
-    applicationId: M,
+    applicationId: P,
     guildId: Z,
     referralTrialOfferId: v,
     skuId: A,
@@ -99,7 +99,7 @@ function U(e) {
     analyticsLocation: t,
     analyticsObject: n,
     analyticsSourceLocation: l,
-    analyticsSubscriptionType: P.NYc.PREMIUM,
+    analyticsSubscriptionType: M.NYc.PREMIUM,
     onComplete: a,
     transitionState: d,
     initialPlanId: u,
@@ -117,7 +117,7 @@ function U(e) {
     postSuccessGuild: N,
     followupSKUInfo: b,
     renderHeader: T,
-    applicationId: M,
+    applicationId: P,
     guildId: Z,
     referralTrialOfferId: v,
     skuId: A,
@@ -157,7 +157,7 @@ function R(e) {
   } = (0, x.JL)(), {
     isGift: c,
     claimableRewards: u
-  } = (0, _.wD)(), p = w((0, M.Z)({
+  } = (0, _.wD)(), p = w((0, P.Z)({
     isGift: c,
     skuId: a,
     referralTrialOfferId: s

@@ -28,15 +28,15 @@ let N = e => {
     locationSection: b,
     transitionState: y,
     onClose: S
-  } = e, O = (0, h.vx)(m.Z.boostSlots);
+  } = e, P = (0, h.vx)(m.Z.boostSlots);
   i()(null != s || null != N, "Must either provide slots or an initial selected guild"), i()(!(null == s ? void 0 : s.some(e => e.isOnCooldown())), "If slots are provided, they must not be on cooldown");
-  let P = [null == s ? "UNUSED_QUANTITY_SELECT" : null, null == N ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
+  let O = [null == s ? "UNUSED_QUANTITY_SELECT" : null, null == N ? "GUILD_SELECT" : null, "CONFIRM", "SUCCESS"].filter(e => null != e),
     [E, T] = (0, o.Wu)([d.Z], () => [d.Z.isModifyingAppliedBoost, d.Z.applyBoostError]),
     [L, Z] = r.useState(""),
-    [w, I] = r.useState(P[0]),
+    [w, I] = r.useState(O[0]),
     [k, W] = r.useState(!1),
     [M, G] = r.useState(N),
-    [D, U] = r.useState(null != s ? s : O.slice(0, 1)),
+    [D, U] = r.useState(null != s ? s : P.slice(0, 1)),
     z = r.useMemo(() => null == D ? [] : D.map(e => {
       let {
         premiumGuildSubscription: t
@@ -55,7 +55,7 @@ let N = e => {
     },
     F = {
       UNUSED_QUANTITY_SELECT: {
-        body: () => (i()(null != s || 0 !== O.length, "Cannot provide no slots if there are no other available slots"), (0, n.jsxs)("div", {
+        body: () => (i()(null != s || 0 !== P.length, "Cannot provide no slots if there are no other available slots"), (0, n.jsxs)("div", {
           className: v.quantitySelectorBody,
           children: [(0, n.jsx)(a.X6q, {
             variant: "heading-md/semibold",
@@ -69,9 +69,9 @@ let N = e => {
             className: v.quantitySelectorWrapper,
             children: [(0, n.jsx)(a.FiK, {
               value: D.length,
-              onChange: e => U(O.slice(0, e)),
+              onChange: e => U(P.slice(0, e)),
               minValue: 1,
-              maxValue: O.length
+              maxValue: P.length
             }), (0, n.jsx)(a.Text, {
               className: v.quantitySelectorLabel,
               variant: "text-md/normal",
@@ -142,7 +142,7 @@ let N = e => {
         },
         footer() {
           let e = D.length,
-            t = "CONFIRM" === P[0] ? B : () => I(P[P.indexOf(w) - 1]),
+            t = "CONFIRM" === O[0] ? B : () => I(O[O.indexOf(w) - 1]),
             l = async () => {
               if (null != M && (null == D ? void 0 : D.length) !== 0) {
                 i()(!D.some(e => e.isOnCooldown()), "Cannot use a premium guild subscription slot while on cooldown");
@@ -185,7 +185,8 @@ let N = e => {
           guild: M,
           isTransfer: R,
           guildBoostQuantity: D.length,
-          onClose: B
+          onClose: B,
+          didPurchaseOnFractionalPremium: !1
         })
       }
     };
@@ -204,7 +205,7 @@ let N = e => {
       className: _.bodyClass,
       children: (0, n.jsx)(a.qBt, {
         step: w,
-        steps: P,
+        steps: O,
         children: _.body()
       })
     }), null == (l = _.footer) ? void 0 : l.call(_), (0, n.jsx)(a.olH, {

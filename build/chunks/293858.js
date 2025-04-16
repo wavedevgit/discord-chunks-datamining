@@ -35,8 +35,8 @@ function S(e) {
     {
       activeSubscription: b,
       paymentSources: T,
-      paymentSourceId: M,
-      selectedPlan: P,
+      paymentSourceId: P,
+      selectedPlan: M,
       selectedSkuId: O,
       step: Z,
       updatedSubscription: v,
@@ -57,13 +57,13 @@ function S(e) {
       confirmationFooter: D
     } = (0, h.zb)(),
     Y = null != D,
-    z = (0, C.id)(P, U, W),
+    z = (0, C.id)(M, U, W),
     K = (0, d.Z)(),
-    X = (0, C.a5)(P),
+    X = (0, C.a5)(M),
     V = (0, C.tK)(null == G ? void 0 : G.skuId),
-    Q = (0, m.$)(T, M),
+    Q = (0, m.$)(T, P),
     q = U && null != G && X;
-  s()(null != P, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
+  s()(null != M, "Expected plan to selected"), s()(null != O, "Expected selectedSkuId"), s()(null != Z, "Step should be set");
   let J = i.useCallback(() => {
     n(), null == S || S()
   }, [n, S]);
@@ -75,11 +75,11 @@ function S(e) {
     null != K && null != K.reminderNotice && z && (0, a.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: g.L.INDIRECT_ACTION
     })
-  }, [K, z]), t = null != E ? E(P, J, v) : null != N ? (0, r.jsx)(c.VY, {}) : U ? (0, r.jsx)(c.TB, {
-    planId: P.id,
+  }, [K, z]), t = null != E ? E(M, J, v) : null != N ? (0, r.jsx)(c.VY, {}) : U ? (0, r.jsx)(c.TB, {
+    planId: M.id,
     onClose: J
-  }) : A.current === P.id ? (0, r.jsx)(c.ZP, {
-    planId: P.id,
+  }) : A.current === M.id ? (0, r.jsx)(c.ZP, {
+    planId: M.id,
     postSuccessGuild: y,
     onClose: J,
     paymentSourceType: Q,
@@ -88,9 +88,9 @@ function S(e) {
   }) : (0, r.jsx)(c.ZP, {
     followupSKUInfo: I,
     startingPremiumSubscriptionPlanId: A.current,
-    planId: P.id,
+    planId: M.id,
     onClose: J,
-    isDowngrade: null != b && (0, p.GY)(b, P.id, l),
+    isDowngrade: null != b && (0, p.GY)(b, M.id, l),
     paymentSourceType: Q,
     hideClose: Y,
     startingFractionalPremiumEndsAt: k.current
