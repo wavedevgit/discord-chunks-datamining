@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(430824),
   m = n(624138),
   b = n(674552),
-  _ = n(981631),
-  y = n(388032),
+  y = n(981631),
+  _ = n(388032),
   v = n(728492);
 let O = (0, m.Mg)(u.Z.FOLDER_ITEM_ANIMATION_DURATION),
   C = (0, m.Mg)(u.Z.FOLDER_ITEM_GUILD_ICON_SIZE),
@@ -58,10 +58,10 @@ function E(e) {
       color: h,
       children: f
     } = l,
-    g = null != h ? h : _.Wyy,
-    m = g === _.Wyy,
+    g = null != h ? h : y.Wyy,
+    m = g === y.Wyy,
     b = f.map(e => e.id),
-    [y, S] = i.useState(!1),
+    [_, S] = i.useState(!1),
     [E, x] = i.useState(c),
     N = u ? c ? 22 : -11 : c ? 0 : -C,
     I = (0, d.q_F)({
@@ -76,8 +76,8 @@ function E(e) {
         S(!1), x(c)
       }
     }, "animate-always"),
-    P = y ? I : void 0;
-  (y || E) && (t = (0, r.jsx)(s.animated.div, {
+    P = _ ? I : void 0;
+  (_ || E) && (t = (0, r.jsx)(s.animated.div, {
     style: P,
     className: v.expandedFolderIconWrapper,
     children: (0, r.jsx)(d.ROc, {
@@ -87,7 +87,7 @@ function E(e) {
         color: (0, a.Rf)(g)
       }
     })
-  })), (y || !E) && (n = (0, r.jsx)(s.animated.div, {
+  })), (_ || !E) && (n = (0, r.jsx)(s.animated.div, {
     style: P,
     className: v.closedFolderIconWrapper,
     children: b.slice(0, 4).map((e, t) => (0, r.jsx)(j, {
@@ -118,7 +118,7 @@ function x(e) {
     mentionCount: f = 0,
     isMentionLowImportance: g,
     tooltipName: m,
-    folderGroupId: _,
+    folderGroupId: y,
     folderIconContentClassName: O,
     folderIconContent: C,
     onClick: S,
@@ -186,12 +186,12 @@ function x(e) {
       onMouseLeave: A,
       onKeyDown: N,
       onFocus: I,
-      "aria-label": y.NW.formatToPlainString(y.t["90/DwM"], {
+      "aria-label": _.NW.formatToPlainString(_.t["90/DwM"], {
         folderName: m,
         mentions: f
       }),
       "aria-expanded": a,
-      "aria-owns": _,
+      "aria-owns": y,
       focusProps: {
         enabled: !1
       }

@@ -1,6 +1,6 @@
 /** Chunk was on 38662 **/
 n.d(t, {
-  ZP: () => _,
+  ZP: () => y,
   dt: () => m,
   eo: () => b
 }), n(539854), n(388685);
@@ -60,7 +60,7 @@ function b(e, t, n) {
   } = (0, d.ie)(t, n, e);
   return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(i ? "-voice-summary" : "")
 }
-let _ = i.memo(function(e) {
+let y = i.memo(function(e) {
   let {
     sectionIndex: t,
     guildChannels: n,
@@ -68,12 +68,12 @@ let _ = i.memo(function(e) {
     voiceStates: p,
     guildId: m,
     selectedChannelId: b,
-    selectedVoiceChannelId: _,
-    optInEnabled: y
+    selectedVoiceChannelId: y,
+    optInEnabled: _
   } = e, {
     hasDivider: v,
     canHaveVoiceSummary: O
-  } = i.useMemo(() => (0, d.ie)(n, y, t), [n, y, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), S = (0, s.DM)(m), j = (0, l.Wu)([a.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, _, t), [n, _, t, h]), C = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, h]), S = (0, s.DM)(m), j = (0, l.Wu)([a.ZP], () => {
     if (null == C || !C.isCollapsed || !O) return [];
     let e = C.getChannelRecords(),
       t = [];
@@ -86,9 +86,9 @@ let _ = i.memo(function(e) {
   }, [C, O, m, S]), E = i.useMemo(() => (0, c.c4)({
     channels: j,
     selectedChannelId: b,
-    selectedVoiceChannelId: _,
+    selectedVoiceChannelId: y,
     voiceStates: p
-  }), [j, b, _, p]);
+  }), [j, b, y, p]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: h

@@ -1,6 +1,6 @@
 /**
   Module ID: 38662
-  Original File Name: efd646f0e1e2a29c
+  Original File Name: 292b458299d4120a
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1628,8 +1628,13 @@
     padding: var(--spacing-8)
 }
 
+.container_a1bfef.caretLeftTop_a1bfef {
+    margin-left: 8px
+}
+
 .container_a1bfef.caretLeftTop_a1bfef:after {
-    border-right-color: var(--bg-surface-overlay)!important
+    border-right-color: var(--bg-surface-overlay)!important;
+    left: 0
 }
 
 .container_a1bfef.caretTopCenter_a1bfef:after {
@@ -1650,9 +1655,15 @@
 }
 
 .close_a1bfef {
+    color: #fff!important;
+    opacity: .75!important;
     position: absolute;
     right: var(--spacing-8);
     top: var(--spacing-8)
+}
+
+.close_a1bfef:hover {
+    opacity: 1!important
 }
 
 .header_a1bfef {
@@ -1661,6 +1672,10 @@
 
 .description_a1bfef {
     margin-top: var(--spacing-4)
+}
+
+.theme-light .container_a1bfef {
+    box-shadow: var(--shadow-high)
 }
 
 .container__877f0 {
@@ -6459,4 +6474,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=efd646f0e1e2a29c.css.map*/
+/*# sourceMappingURL=292b458299d4120a.css.map*/

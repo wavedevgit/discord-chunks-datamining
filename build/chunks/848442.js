@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(550951),
   m = n(886176),
   b = n(605236),
-  _ = n(703656),
-  y = n(984933),
+  y = n(703656),
+  _ = n(984933),
   v = n(430824),
   O = n(626135),
   C = n(434479),
@@ -99,7 +99,7 @@ function w(e) {
               action_taken: E.mz.DISMISS_CHANNEL_ROW
             })), !u || !j) {
             var n;
-            (0, _.dL)(S.Z5c.CHANNEL(t, null == (n = y.ZP.getDefaultChannel(t)) ? void 0 : n.id))
+            (0, y.dL)(S.Z5c.CHANNEL(t, null == (n = _.ZP.getDefaultChannel(t)) ? void 0 : n.id))
           }
         },
         "aria-label": x.NW.string(x.t.cpT0Cg),
@@ -117,7 +117,7 @@ function Z(e) {
     guild: t,
     selected: i
   } = e, l = (0, g.g)(t, "guild_shop_channel_row"), o = () => {
-    a.K.set(E.tM, "true"), (0, _.uL)(S.Z5c.CHANNEL(t.id, j.oC.GUILD_SHOP))
+    a.K.set(E.tM, "true"), (0, y.uL)(S.Z5c.CHANNEL(t.id, j.oC.GUILD_SHOP))
   };
   return l ? (0, r.jsx)(w, {
     guildId: t.id,

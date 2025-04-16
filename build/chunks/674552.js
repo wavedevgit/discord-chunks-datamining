@@ -3,7 +3,7 @@ n.d(t, {
   Ne: () => f,
   Ny: () => g,
   Or: () => b,
-  jt: () => _
+  jt: () => y
 }), n(388685);
 var r = n(200651);
 n(192379);
@@ -81,13 +81,13 @@ function b(e) {
     if (!n) return null;
     t = o.gj8
   }
-  return y({
+  return _({
     icon: t,
     isCurrentUserConnected: l
   })
 }
 
-function _(e) {
+function y(e) {
   let {
     guildJoinRequestStatus: t
   } = e, [n, r] = function(e) {
@@ -102,13 +102,13 @@ function _(e) {
         return [void 0, o.vdY]
     }
   }(t);
-  return y({
+  return _({
     icon: r,
     color: n
   })
 }
 
-function y(e) {
+function _(e) {
   let {
     icon: t,
     color: n,

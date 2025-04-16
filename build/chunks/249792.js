@@ -25,7 +25,7 @@ function h(e) {
   let m = (0, a.dQu)(s.Z.unsafe_rawColors.BRAND_500).hex(),
     b = (0, a.dQu)(s.Z.unsafe_rawColors.PRIMARY_630).hex();
   i && null == t.icon && (f.backgroundColor = m, g.backgroundColor = b);
-  let _ = (0, a.Yzy)(n, {
+  let y = (0, a.Yzy)(n, {
     from: f,
     enter: g,
     leave: f,
@@ -36,7 +36,7 @@ function h(e) {
     onRest: p
   });
   return (0, r.jsx)(r.Fragment, {
-    children: _((e, n, i) => n && (0, r.jsx)("div", {
+    children: y((e, n, i) => n && (0, r.jsx)("div", {
       className: l()(d.folder, d.hover),
       children: (0, r.jsx)("div", {
         className: d.folderIconWrapper,

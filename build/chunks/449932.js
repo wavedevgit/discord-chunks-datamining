@@ -18,8 +18,8 @@ var i = n(120356),
   g = n(314897),
   m = n(594174),
   b = n(768581),
-  _ = n(51144),
-  y = n(754231),
+  y = n(51144),
+  _ = n(754231),
   v = n(302708);
 
 function O(e) {
@@ -54,7 +54,7 @@ function O(e) {
         src: null != o ? o : n.user.getAvatarURL(t, 16),
         size: s.EFr.SIZE_16,
         className: l()(i, v.partyAvatar),
-        "aria-label": null != (a = n.nick) ? a : _.ZP.getName(n.user)
+        "aria-label": null != (a = n.nick) ? a : y.ZP.getName(n.user)
       }, e))
     }
   })
@@ -88,21 +88,21 @@ let S = e => {
     members: i,
     embeddedApp: l,
     onAction: p
-  } = e, b = (0, d.Q3)("ChannelActivityRow"), _ = null != l, O = _ ? Array.from(l.embeddedActivity.userIds) : [], S = (0, o.e7)([m.default, g.default], () => {
-    if (_) return m.default.getUser(O[0]);
+  } = e, b = (0, d.Q3)("ChannelActivityRow"), y = null != l, O = y ? Array.from(l.embeddedActivity.userIds) : [], S = (0, o.e7)([m.default, g.default], () => {
+    if (y) return m.default.getUser(O[0]);
     if (null != i) {
       var e, t;
       return i.length <= 0 ? null : null != (t = null == (e = i.find(e => e.user.id !== g.default.getId())) ? void 0 : e.user) ? t : i[0].user
     }
   });
   if (null == S) return null;
-  let j = _ || (0, c.Z)(n),
+  let j = y || (0, c.Z)(n),
     E = (0, f.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: v.activity,
     children: [(0, r.jsx)("div", {
       className: v.channelActivityContainer,
-      children: j ? (0, r.jsx)(y.Z, {
+      children: j ? (0, r.jsx)(_.Z, {
         activity: n,
         embeddedApp: l,
         user: S,

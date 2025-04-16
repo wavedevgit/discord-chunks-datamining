@@ -18,11 +18,11 @@ var r = n(200651),
 let m = "app-download-item",
   b = "add-server-item";
 
-function _() {
+function y() {
   return !1
 }
 
-function y(e) {
+function _(e) {
   var t;
   let n = a.default.getMutableGuildStates();
   return e === f.x8Z.SERVER_DISCOVERY_BADGE && !d.Z.hasViewed(f.x8Z.SERVER_DISCOVERY_BADGE) || e !== m && e !== b && (null == (t = n[null != e ? e : "null"]) ? void 0 : t.highImportanceMentionCount) > 0
@@ -53,10 +53,10 @@ let v = (0, p.oH)((e, t, n) => ["null", ...t, ...e, b, f.x8Z.E3_SERVER_DISCOVERY
     }({}, e), i = i = {
       ref: t,
       items: d,
-      isUnread: _,
+      isUnread: y,
       textUnread: g.NW.string(g.t.y2b7CA),
       textMention: g.NW.string(g.t.y2b7CA),
-      isMentioned: y,
+      isMentioned: _,
       animate: p,
       expandedFolders: f
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
