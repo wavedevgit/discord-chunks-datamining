@@ -28,7 +28,7 @@ let x = e => {
     handleTransition: a,
     numVisibleItems: x,
     tab: O
-  } = e, j = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = l.createRef(), S = (0, h.u)(), k = l.useMemo(() => S(n), [t, S, n]), P = (0, b.a)()(k), E = (0, p.l)(P), B = (0, m.St)(E);
+  } = e, j = (0, i.e7)([c.default], () => c.default.getCurrentUser()), y = l.createRef(), S = (0, h.u)(), k = l.useMemo(() => S(n), [t, S, n]), P = (0, b.a)()(k), E = (0, p.l)(P), w = (0, m.St)(E);
   return null == j ? null : (0, r.jsxs)("div", {
     className: o()(v.popularPicksSection, v.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -48,7 +48,7 @@ let x = e => {
       children: t ? (0, r.jsx)(r.Fragment, {
         children: [...Array(12)].map((e, t) => (0, r.jsx)(f.K, {}, t + 1))
       }) : (0, r.jsx)(r.Fragment, {
-        children: B.slice(0, x).map((e, t) => {
+        children: w.slice(0, x).map((e, t) => {
           let n = d.Z.getCategoryForProduct(e.skuId);
           return null == e || null == n ? null : (0, r.jsx)(u.k0, {
             newValue: {
