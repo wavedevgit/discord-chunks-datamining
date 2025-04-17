@@ -1,16 +1,16 @@
 /** Chunk was on 91259 **/
 n.d(t, {
   $B: () => s,
-  GF: () => a,
+  GF: () => l,
   XL: () => o,
   pE: () => c
 }), n(415506);
 var r = n(200651),
   i = n(192379);
-let l = i.createContext(void 0);
+let a = i.createContext(void 0);
 
-function a() {
-  let e = i.useContext(l);
+function l() {
+  let e = i.useContext(a);
   if (null == e) throw Error("No PollContextProvider found");
   return e
 }
@@ -19,12 +19,12 @@ function o(e) {
   let {
     children: t,
     message: n,
-    poll: a
+    poll: l
   } = e, o = i.useMemo(() => ({
     message: n,
-    poll: a
-  }), [n, a]);
-  return (0, r.jsx)(l.Provider, {
+    poll: l
+  }), [n, l]);
+  return (0, r.jsx)(a.Provider, {
     value: o,
     children: t
   })
@@ -34,7 +34,7 @@ function s(e) {
   return function() {
     let {
       poll: e
-    } = a();
+    } = l();
     return e.resources
   }().styles[e]
 }
@@ -42,7 +42,7 @@ function s(e) {
 function c() {
   let {
     message: e
-  } = a(), t = e.getChannelId();
+  } = l(), t = e.getChannelId();
   return i.useMemo(() => ({
     channelId: t,
     messageId: e.id

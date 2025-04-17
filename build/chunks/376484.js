@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  l = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  l = n(481060),
   o = n(446411),
   s = n(454585),
   c = n(834129),
@@ -23,24 +23,24 @@ function f(e) {
   } = e, s = null != t.embeds && t.embeds.length > 0;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Z, {
-      className: l()(m.mainContainer, {
+      className: a()(m.mainContainer, {
         [m.compact]: o
       }),
       icon: n(570111),
       compact: o,
       children: (0, r.jsx)("div", {
-        className: l()(m.__invalid_content, {
+        className: a()(m.__invalid_content, {
           [m.compact]: o
         }),
         children: (0, r.jsx)("div", {
-          className: l()(m.__invalid_messageContent, {
+          className: a()(m.__invalid_messageContent, {
             [m.compact]: o
           }),
           children: t.content
         })
       })
     }), (0, r.jsx)("div", {
-      className: l()(m.__invalid_embedContent, {
+      className: a()(m.__invalid_embedContent, {
         [m.compact]: o
       }),
       children: (0, r.jsx)(h, {
@@ -48,8 +48,8 @@ function f(e) {
       })
     }), (0, r.jsx)("div", {
       className: m.actions,
-      children: (0, r.jsx)(a.zxk, {
-        color: a.zxk.Colors.PRIMARY,
+      children: (0, r.jsx)(l.zxk, {
+        color: l.zxk.Colors.PRIMARY,
         onClick: () => {
           s ? (0, u.z$)(t) : (0, u.XP)(i.guild_id, i.id, t.id)
         },

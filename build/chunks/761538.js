@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  l = n(388032),
-  a = n(499632);
+  a = n(388032),
+  l = n(499632);
 
 function o(e) {
   let {
@@ -41,14 +41,14 @@ function o(e) {
         }, n))
       })
     },
-    className: a.accessory,
+    className: l.accessory,
     children: [(0, r.jsx)(i.d3s, {
       size: "xs",
       color: "currentColor"
     }), (0, r.jsx)(i.Text, {
       variant: "text-xs/normal",
-      className: a.accessoryText,
-      children: l.NW.string(l.t["2aXnfX"])
+      className: l.accessoryText,
+      children: a.NW.string(a.t["2aXnfX"])
     })]
   })
 }

@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => _
 }), n(415506), n(781311);
 var r, i = n(200651),
-  l = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  a = n(192379),
+  l = n(120356),
+  o = n.n(l),
   s = n(481060),
   c = n(388032),
   u = n(953928);
@@ -58,14 +58,14 @@ function h(e, t, n) {
     "aria-selected": n
   }
 }
-class g extends(r = l.PureComponent) {
+class g extends(r = a.PureComponent) {
   renderQuery(e) {
     let {
       query: t,
       navId: n,
       focusedIndex: r,
-      onSelectQuery: l,
-      onSelectSearchEverywhere: a,
+      onSelectQuery: a,
+      onSelectSearchEverywhere: l,
       onHighlightQuery: d,
       hideQuery: f,
       searchFavorites: g
@@ -79,7 +79,7 @@ class g extends(r = l.PureComponent) {
         })
       }, h(n, -1, _)), {
         onMouseEnter: d,
-        onClick: l,
+        onClick: a,
         children: [(0, i.jsx)("div", {
           className: u.queryText,
           children: g ? c.NW.string(c.t["6RVtLC"]) : c.NW.format(c.t.ub226e, {
@@ -100,7 +100,7 @@ class g extends(r = l.PureComponent) {
         })
       }, h(n, -1, _)), {
         onMouseEnter: d,
-        onClick: a,
+        onClick: l,
         children: [(0, i.jsx)("div", {
           className: u.queryText,
           children: c.NW.string(c.t.FtSUxc)
@@ -122,14 +122,14 @@ class g extends(r = l.PureComponent) {
       renderNoResults: n,
       renderInitialState: r,
       renderResult: i,
-      renderCustomResults: l
+      renderCustomResults: a
     } = this.props;
     if (e) return r();
     if (0 === t) return n();
     if (null != i) return Array.from({
       length: t
     }).map((e, t) => i(t));
-    if (null != l) return l();
+    if (null != a) return a();
     throw Error("SearchResultsPopout.renderResults: Flow should never allow this...")
   }
   render() {
@@ -138,7 +138,7 @@ class g extends(r = l.PureComponent) {
       focusedIndex: t,
       navId: n,
       width: r
-    } = this.props, l = "" === e.trim();
+    } = this.props, a = "" === e.trim();
     return (0, i.jsxs)("div", {
       className: u.container,
       style: {
@@ -149,7 +149,7 @@ class g extends(r = l.PureComponent) {
       id: n,
       tabIndex: -1,
       "aria-activedescendant": "".concat(n, "-").concat(t),
-      children: [this.renderQuery(l), this.renderResults(l)]
+      children: [this.renderQuery(a), this.renderResults(a)]
     })
   }
 }

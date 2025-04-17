@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  l = n.n(i),
-  a = n(481060),
+  a = n.n(i),
+  l = n(481060),
   o = n(100527),
   s = n(670188),
   c = n(463618),
@@ -34,8 +34,8 @@ let p = e => {
         position: "left",
         clickTrap: !0,
         children: e => {
-          var n, l;
-          return (0, r.jsx)(a.qEK, (n = function(e) {
+          var n, a;
+          return (0, r.jsx)(l.qEK, (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -52,20 +52,20 @@ let p = e => {
               })
             }
             return e
-          }({}, e), l = l = {
+          }({}, e), a = a = {
             src: t.getAvatarURL(i, 24),
             "aria-label": t.username,
-            size: a.EFr.SIZE_24,
+            size: l.EFr.SIZE_24,
             className: d.partyMember
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
+          })(Object(a)).forEach(function(e) {
+            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
           }), n))
         }
       })
@@ -76,7 +76,7 @@ let p = e => {
       partySize: t,
       members: n,
       minAvatarsShown: i = 1,
-      maxAvatarsShown: a = 2,
+      maxAvatarsShown: l = 2,
       guildId: o
     } = e, {
       unknownSize: s,
@@ -84,21 +84,21 @@ let p = e => {
       knownSize: m
     } = t;
     if (c < i) return null;
-    let f = l()(n).filter(u.lm).take(a).map(e => (0, r.jsx)(p, {
+    let f = a()(n).filter(u.lm).take(l).map(e => (0, r.jsx)(p, {
       member: e,
       guildId: o
     }, e.id)).value();
-    for (let e = 0; e < s && f.length < a; e++) f.push((0, r.jsx)(p, {
+    for (let e = 0; e < s && f.length < l; e++) f.push((0, r.jsx)(p, {
       guildId: o
     }, "unknown-member-".concat(e)));
     let h = c - m - s;
-    for (let e = 0; e < h && f.length < a; e++) f.push((0, r.jsx)(p, {
+    for (let e = 0; e < h && f.length < l; e++) f.push((0, r.jsx)(p, {
       empty: !0,
       guildId: o
     }, "empty-member-".concat(e)));
     let g = Math.max(Math.min(c - f.length, 99), 0);
     if (1 === g) {
-      let e = n[a];
+      let e = n[l];
       f.push((0, r.jsx)(p, {
         member: e,
         guildId: o

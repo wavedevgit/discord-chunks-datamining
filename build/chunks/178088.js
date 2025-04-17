@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(849057),
-  a = n(442837),
+  a = n(849057),
+  l = n(442837),
   o = n(524437),
   s = n(481060),
   c = n(100527),
@@ -37,7 +37,7 @@ function S(e) {
     popoutAlign: P
   } = e, {
     analyticsLocations: A
-  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [w, Z] = i.useState(!1), [R, k] = [(0, a.e7)([g.Z], () => {
+  } = (0, u.ZP)(c.Z.NOTIFICATION_CENTER), [w, Z] = i.useState(!1), [R, k] = [(0, l.e7)([g.Z], () => {
     var e, t;
     return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.currentTab) ? t : o.X.UNREADS
   }), i.useCallback(e => {
@@ -49,7 +49,7 @@ function S(e) {
     showTutorial: D,
     setSeenTutorial: L
   } = function(e) {
-    let t = (0, a.e7)([g.Z], () => {
+    let t = (0, l.e7)([g.Z], () => {
         var e, t;
         return null != (t = null == (e = g.Z.settings.inbox) ? void 0 : e.viewedTutorial) && t
       }),
@@ -77,7 +77,7 @@ function S(e) {
     inInbox: B
   } = p.Z.useExperiment({
     location: "RecentsPopout"
-  }), G = (0, a.e7)([m.Z], () => m.Z.hasOverdueReminder(), []) && F && B, {
+  }), G = (0, l.e7)([m.Z], () => m.Z.hasOverdueReminder(), []) && F && B, {
     enabled: H
   } = d.Z.useExperiment({
     location: "RecentsPopout"
@@ -124,7 +124,7 @@ function S(e) {
           }) : R === o.X.SCHEDULED ? (0, r.jsx)(v._, {
             setTab: k,
             closePopout: M
-          }) : (0, r.jsx)(l.SV, {
+          }) : (0, r.jsx)(a.SV, {
             fallback: (0, r.jsx)(N.h, {
               setTab: k,
               closePopout: M,

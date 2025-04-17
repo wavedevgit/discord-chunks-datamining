@@ -96,10 +96,10 @@ function N(e) {
       onMouseLeave: R,
       canSelect: P = !0,
       autoplay: w,
-      registerAnimatedElementRef: D,
-      registerInnerRef: L
+      registerInnerRef: D,
+      registerAnimatedElementRef: L
     } = e,
-    x = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerAnimatedElementRef", "registerInnerRef"]);
+    x = I(e, ["src", "alt", "className", "emojiId", "emojiName", "channelId", "messageId", "animated", "size", "isInteracting", "shouldAnimate", "onMouseEnter", "onMouseLeave", "canSelect", "autoplay", "registerInnerRef", "registerAnimatedElementRef"]);
   let [M, k] = i.useState(!1), [j, U] = i.useState(void 0), G = i.useRef(void 0), {
     triggerAnimation: B,
     untriggerAnimation: F
@@ -145,8 +145,8 @@ function N(e) {
     return null == (e = G.current) ? void 0 : e.call(G)
   }, []);
   let J = i.useCallback(e => {
-      Y.current = e, null == D || D(e)
-    }, [D]),
+      Y.current = e, null == D || D(e), null == L || L(e)
+    }, [D, L]),
     $ = (0, l.Z)(Y);
   return null == K || "" === K ? (0, r.jsx)("span", {
     className: a()("emoji", "emoji-text"),
@@ -178,22 +178,17 @@ function N(e) {
 }
 
 function A(e) {
-  var {
-    registerInnerRef: t
-  } = e, n = I(e, ["registerInnerRef"]);
   let {
-    useThoughtfullyAnimated: o
+    useThoughtfullyAnimated: t
   } = i.useContext(f.q), {
-    animate: a,
-    registerRef: s
-  } = o(), {
-    disableAnimations: l
-  } = i.useContext(c.G), u = i.useCallback(e => {
-    s(e), null == t || t(e)
-  }, [t, s]);
-  return (0, r.jsx)(N, O(y({}, n), {
-    registerAnimatedElementRef: u,
-    shouldAnimate: a && !l
+    animate: n,
+    registerRef: o
+  } = t(), {
+    disableAnimations: a
+  } = i.useContext(c.G);
+  return (0, r.jsx)(N, O(y({}, e), {
+    registerAnimatedElementRef: o,
+    shouldAnimate: n && !a
   }))
 }
 

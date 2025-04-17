@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(392711),
-  l = n.n(i),
-  a = n(661824),
+  a = n.n(i),
+  l = n(661824),
   o = n(289481),
   s = n(809780),
   c = n(388032),
@@ -20,19 +20,19 @@ function d(e, t, n) {
     toggle: m,
     getNumUnreadChannels: f
   } = t, h = null;
-  return l().flatMap(e, e => {
+  return a().flatMap(e, e => {
     let t = e.sortOrder !== h;
     h = e.sortOrder;
-    let l = [];
-    return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? l.push((0, r.jsx)(a.Z, {
+    let a = [];
+    return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? a.push((0, r.jsx)(l.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.NW.string(c.t.roBMzs)
-    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && l.push((0, r.jsx)(a.Z, {
+    }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && a.push((0, r.jsx)(l.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
       children: c.NW.string(c.t["2Ys7np"])
-    }, "disabled-divider"))), l.push((0, r.jsx)(o.Z, {
+    }, "disabled-divider"))), a.push((0, r.jsx)(o.Z, {
       channel: e,
       markChannelRead: i,
       markGuildRead: d,
@@ -40,6 +40,6 @@ function d(e, t, n) {
       deleteChannel: p,
       onJump: n,
       getNumUnreadChannels: f
-    }, e.channelId)), l
+    }, e.channelId)), a
   })
 }

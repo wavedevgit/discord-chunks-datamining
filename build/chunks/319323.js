@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  l = n(481060),
-  a = n(283836),
+  a = n(481060),
+  l = n(283836),
   o = n(728345),
   s = n(388032),
   c = n(75905);
@@ -28,9 +28,9 @@ function d(e) {
     app: t,
     guildId: o
   } = e;
-  (0, a.q)(t.id);
+  (0, l.q)(t.id);
   let u = i.useCallback(() => {
-    (0, l.ZDy)(async () => {
+    (0, a.ZDy)(async () => {
       let {
         default: e
       } = await Promise.all([n.e("77803"), n.e("83372")]).then(n.bind(n, 7225));
@@ -57,13 +57,13 @@ function d(e) {
       }, n))
     })
   }, [t, o]);
-  return (0, r.jsx)(l.zxk, {
-    color: l.zxk.Colors.BRAND,
-    size: l.zxk.Sizes.SMALL,
+  return (0, r.jsx)(a.zxk, {
+    color: a.zxk.Colors.BRAND,
+    size: a.zxk.Sizes.SMALL,
     onClick: u,
     children: (0, r.jsxs)("div", {
       className: c.button,
-      children: [(0, r.jsx)(l.QJP, {
+      children: [(0, r.jsx)(a.QJP, {
         size: "xs",
         color: "white"
       }), s.NW.format(s.t.XDRjs7, {

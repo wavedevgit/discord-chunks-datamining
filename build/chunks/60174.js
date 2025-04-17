@@ -4,8 +4,8 @@ n.d(t, {
 }), n(997841), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(954955),
   s = n.n(o),
   c = n(507274),
@@ -56,7 +56,7 @@ class P extends i.Component {
       message: t,
       className: n,
       children: i,
-      useChatFontScaling: l,
+      useChatFontScaling: a,
       tabIndex: o = 0
     } = this.props, {
       isReactionPickerActive: s
@@ -68,7 +68,7 @@ class P extends i.Component {
     !h && m && (g = (0, r.jsx)(p.X, {
       tooltipText: j.NW.string(j.t.Kfcszs)
     }));
-    let O = l ? S : C,
+    let O = a ? S : C,
       {
         canShowImprovedReactionButton: I
       } = y.Z.getCurrentConfig({
@@ -79,7 +79,7 @@ class P extends i.Component {
       P = {
         size: "sm",
         color: "currentColor",
-        className: a()(O.icon, {
+        className: l()(O.icon, {
           [O.largeIcon]: I
         })
       };
@@ -90,7 +90,7 @@ class P extends i.Component {
       renderPopout: this.renderReactionPopout,
       position: "right",
       children: (e, t) => {
-        var l, s;
+        var a, s;
         let {
           isShown: c
         } = t;
@@ -99,7 +99,7 @@ class P extends i.Component {
           color: u.FGA.PRIMARY,
           "aria-label": m ? j.NW.string(j.t.Kfcszs) : j.NW.string(j.t.lfIHs7),
           tooltipClassName: O.__invalid_addReactionTooltip,
-          children: (0, r.jsxs)(u.P3F, (l = T({}, e), s = s = {
+          children: (0, r.jsxs)(u.P3F, (a = T({}, e), s = s = {
             innerRef: this.ref,
             tabIndex: o,
             onClick: e => {
@@ -107,12 +107,12 @@ class P extends i.Component {
             },
             onMouseEnter: () => (0, d.x)(N.qR.AddReactionPopoutMouseEntered),
             onFocus: () => (0, d.x)(N.qR.AddReactionPopoutFocused),
-            className: a()(O.reactionBtn, {
+            className: l()(O.reactionBtn, {
               [O.active]: c,
               [O.largeReactionBtn]: I
             }, n),
             children: [m ? (0, r.jsx)(u.Pt5, T({}, P)) : (0, r.jsx)(u.EO4, T({}, P)), i]
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
@@ -120,8 +120,8 @@ class P extends i.Component {
             }
             return n
           })(Object(s)).forEach(function(e) {
-            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(s, e))
-          }), l))
+            Object.defineProperty(a, e, Object.getOwnPropertyDescriptor(s, e))
+          }), a))
         })
       }
     })
@@ -164,8 +164,8 @@ class P extends i.Component {
       } = e, {
         type: n,
         channel: i,
-        message: l
-      } = this.props, a = T({
+        message: a
+      } = this.props, l = T({
         openPopoutType: "message_reaction_emoji_picker"
       }, n === E.O.BURST && {
         openPopoutType: "message_super_reaction_emoji_picker",
@@ -178,8 +178,8 @@ class P extends i.Component {
         onSelectEmoji: (e, n, r) => {
           this.onAddReaction(e, r), n && (r ? s()(t, 150)() : t())
         },
-        analyticsOverride: a,
-        messageId: l.id
+        analyticsOverride: l,
+        messageId: a.id
       });
       return (0, r.jsx)(c.M.Consumer, {
         children: e => {

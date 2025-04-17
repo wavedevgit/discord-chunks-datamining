@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => w
 }), n(388685);
-var r, i, l, a = n(913527),
-  o = n.n(a),
+var r, i, a, l = n(913527),
+  o = n.n(l),
   s = n(442837),
   c = n(846519),
   u = n(570140),
@@ -118,12 +118,12 @@ class P extends(r = s.ZP.Store) {
     return b
   }
 }
-l = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
-  value: l,
+a = "GiftCodeStore", (i = "displayName") in P ? Object.defineProperty(P, i, {
+  value: a,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : P[i] = l;
+}) : P[i] = a;
 let A = new P(u.Z, {
     CONNECTION_OPEN: function() {
       return N.clear(), !1

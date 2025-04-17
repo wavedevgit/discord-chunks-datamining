@@ -1,23 +1,23 @@
 /** Chunk was on 91259 **/
 n.d(t, {
   E: () => o,
-  _: () => a
+  _: () => l
 }), n(314940);
 var r = n(278074),
   i = n(263568),
-  l = n(228127);
+  a = n(228127);
 
-function a(e, t) {
-  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => l.normalStylesImageOnlyAnswers).otherwise(() => l.normalStylesDefault);
+function l(e, t) {
+  let n = (0, r.EQ)(t).with(i.C.IMAGE_ONLY_ANSWERS, () => a.normalStylesImageOnlyAnswers).otherwise(() => a.normalStylesDefault);
   return {
     styles: {
       loserSelected: n,
       normal: n,
       notVoted: n,
       selected: n,
-      voted: l.votedStyles,
-      victorSelected: l.victorStyles,
-      victorNotSelected: l.victorStyles,
+      voted: a.votedStyles,
+      victorSelected: a.victorStyles,
+      victorNotSelected: a.victorStyles,
       normalVote: n
     }
   }
