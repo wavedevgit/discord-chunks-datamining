@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(496675),
   x = n(594174),
   y = n(55935),
-  E = n(655354),
-  v = n(809780),
-  N = n(981631),
-  O = n(388032),
+  v = n(655354),
+  E = n(809780),
+  O = n(981631),
+  N = n(388032),
   j = n(563142);
 let C = {
   left: 4,
@@ -68,7 +68,7 @@ function S(e) {
       className: j.messageContainer,
       onKeyDown: g
     }, f), a = a = {
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(v.Z, {
         className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
@@ -107,11 +107,11 @@ function I(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), E = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(N.Plq.CREATE_INSTANT_INVITE, a)), I = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(N.xW$.SPAMMER)) && n, w = [];
+  }), v = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(O.Plq.CREATE_INSTANT_INVITE, a)), I = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(O.xW$.SPAMMER)) && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
-      n = i.messages.slice(0, v.hC);
+      n = i.messages.slice(0, E.hC);
     n.forEach(n => {
       if (!(0, d.Z)(n, C)) {
         if (!P && (null == e || !e.isSame(n.timestamp, "day"))) {
@@ -125,17 +125,17 @@ function I(e) {
         t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(S, {
           channel: a,
           message: n,
-          compact: E,
+          compact: v,
           isGroupStart: i,
           treatSpam: !A && h && (0, m.DQ)(n) && I,
           gotoChannel: o
         }, n.id))
       }
-    }), i.messages.length >= v.hC && w.push((0, r.jsxs)(c.zxk, {
+    }), i.messages.length >= E.hC && w.push((0, r.jsxs)(c.zxk, {
       color: c.zxk.Colors.LINK,
       look: c.zxk.Looks.LINK,
       onClick: e => o(e, n[n.length - 1].id),
-      children: [O.NW.string(O.t["9OB9ho"]), " ›"]
+      children: [N.NW.string(N.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === w.length && (w = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return T && I && u.Z.trackExposure({

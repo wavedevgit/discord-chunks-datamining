@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(100527),
   x = n(906732),
   y = n(783097),
-  E = n(581364),
-  v = n(592180),
-  N = n(726033),
-  O = n(598077),
+  v = n(581364),
+  E = n(592180),
+  O = n(726033),
+  N = n(598077),
   j = n(594174),
   C = n(768581),
   S = n(585483),
@@ -104,8 +104,8 @@ function W(e, t, n, i, a) {
     onClickAvatar: b,
     onUserContextMenu: x,
     onClickTargetAvatar: y,
-    onTargetUserContextMenu: E,
-    onPopoutRequestClose: v
+    onTargetUserContextMenu: v,
+    onPopoutRequestClose: E
   } = e;
   if (d && 1 === n) return null;
   if (d && null == u.activityInstance || f || h) return (0, r.jsx)("div", {
@@ -114,12 +114,12 @@ function W(e, t, n, i, a) {
       className: k.commandIcon
     })
   });
-  let N = null != (c = C.ZP.getGuildMemberAvatarURL({
+  let O = null != (c = C.ZP.getGuildMemberAvatarURL({
       avatar: null != (o = i.guildMemberAvatar) ? o : void 0,
       userId: t.id,
       guildId: null != (s = null == m ? void 0 : m.guild_id) ? s : ""
     })) ? c : void 0,
-    O = () => (function(e) {
+    N = () => (function(e) {
       let {
         user: t,
         guildId: n,
@@ -142,18 +142,18 @@ function W(e, t, n, i, a) {
     })({
       user: t,
       guildId: m.guild_id,
-      guildAvatar: N,
+      guildAvatar: O,
       onClick: 1 === n ? y : b,
-      onContextMenu: 1 === n ? E : x
+      onContextMenu: 1 === n ? v : x
     }),
     j = 1 === n ? _ : g;
   return null != a && null != j ? (0, r.jsx)(p.yRy, {
     renderPopout: a,
     shouldShow: j,
     position: "right",
-    onRequestClose: v,
-    children: O
-  }) : O()
+    onRequestClose: E,
+    children: N
+  }) : N()
 }
 
 function U(e, t, n, i, a) {
@@ -209,7 +209,7 @@ function G(e) {
       analyticsLocations: c
     } = (0, x.ZP)(b.Z.EXECUTED_COMMAND),
     f = (0, d.e7)([j.default], () => j.default.getCurrentUser()),
-    C = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(N.Z, L(D({}, e), {
+    C = i.useMemo(() => (e, t, n) => (s()(null != t, "ExecutedCommand: user cannot be undefined"), s()(null != f, "ExecutedCommand: currentUser cannot be undefined"), s()(null != o, "ExecutedCommand: channel cannot be undefined"), (0, r.jsx)(O.Z, L(D({}, e), {
       user: t,
       currentUser: f,
       guildId: o.guild_id,
@@ -222,8 +222,8 @@ function G(e) {
       messageId: a.id,
       interactionData: a.interactionData
     }))), [o, a.id, a.interactionData]),
-    M = (0, E.t0)(a),
-    G = (null == M ? void 0 : M.type) === m.B8.APPLICATION_COMMAND && null != M.target_user ? new O.Z(M.target_user) : null,
+    M = (0, v.t0)(a),
+    G = (null == M ? void 0 : M.type) === m.B8.APPLICATION_COMMAND && null != M.target_user ? new N.Z(M.target_user) : null,
     H = (null == M ? void 0 : M.type) === m.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     V = (0, T.Sw)(null == (t = a.interaction) ? void 0 : t.user, o),
     z = (0, T.Sw)(G, o),
@@ -238,7 +238,7 @@ function G(e) {
       children: [t, n]
     }, "user")
   };
-  if ((null == a ? void 0 : a.activityInstance) === null || (0, v.g)(a)) n = R.NW.format(R.t["rg7U+P"], {
+  if ((null == a ? void 0 : a.activityInstance) === null || (0, E.g)(a)) n = R.NW.format(R.t["rg7U+P"], {
     userHook: q,
     commandHook: () => {
       let t = function(e, t) {
@@ -288,7 +288,7 @@ function G(e) {
                 }), s]
               })
             }));
-            if (!(0, v.g)(i)) return (0, r.jsx)("div", {
+            if (!(0, E.g)(i)) return (0, r.jsx)("div", {
               className: k.commandName,
               children: s
             });

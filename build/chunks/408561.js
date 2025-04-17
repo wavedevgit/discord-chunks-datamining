@@ -22,7 +22,7 @@ function b(e) {
     transitionState: t,
     onClose: b,
     channel: x
-  } = e, g = (0, i.Z)(h.TL), p = (0, r.e7)([d.default], () => d.default.getUser(x.getRecipientId()));
+  } = e, g = (0, i.Z)(h.TL), v = (0, r.e7)([d.default], () => d.default.getUser(x.getRecipientId()));
   return o.useEffect(() => {
     _.default.track(f.rMx.OPEN_MODAL, {
       type: "DM Mute Feedback Modal"
@@ -31,7 +31,7 @@ function b(e) {
     hasCloseButton: !0,
     header: N.NW.string(N.t.SxsBFB),
     body: N.NW.formatToPlainString(N.t["7kb7z8"], {
-      username: null == p ? void 0 : p.username
+      username: null == v ? void 0 : v.username
     }),
     problems: g,
     feedbackProblems: {

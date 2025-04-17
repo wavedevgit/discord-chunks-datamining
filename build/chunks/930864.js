@@ -125,11 +125,11 @@ function x(e) {
           } = t;
           return n === e.type && l === e.id
         });
-        if (-1 === n) return V ? t : (q(""), W.current += 1, [e, ...t]);
+        if (-1 === n) return V ? t : (q(""), X(""), W.current += 1, [e, ...t]);
         let l = [...t];
         return l.splice(n, 1), W.current += 1, l
       })
-    }, [j, V, Z, B, M]),
+    }, [j, V, Z, B, X, M]),
     el = r.useCallback(async function(e) {
       var r;
       let {

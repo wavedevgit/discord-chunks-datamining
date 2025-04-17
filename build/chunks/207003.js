@@ -22,8 +22,8 @@ var r = n(200651),
   x = n(131704),
   O = n(592125),
   v = n(430824),
-  S = n(496675),
-  _ = n(158776),
+  _ = n(496675),
+  S = n(158776),
   N = n(306680),
   E = n(699516),
   P = n(594174),
@@ -146,7 +146,7 @@ function A(e) {
       decoration: "never"
     }),
     i = (0, c.e7)([E.Z], () => E.Z.getNickname(t.id)),
-    o = (0, c.e7)([_.Z], () => _.Z.getStatus(t.id));
+    o = (0, c.e7)([S.Z], () => S.Z.getStatus(t.id));
   return (0, r.jsx)(W, M(R({}, l), {
     icon: (0, r.jsx)(f.Z, {
       "aria-hidden": !0,
@@ -261,7 +261,7 @@ function H(e) {
         },
         c = (0, j.hC)(u),
         d = function(e) {
-          if (e instanceof x.Sf && (0, x.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(S.Z.can(w.Plq.MANAGE_CHANNELS, e) || S.Z.can(w.Plq.MANAGE_MESSAGES, e))) return {
+          if (e instanceof x.Sf && (0, x.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(_.Z.can(w.Plq.MANAGE_CHANNELS, e) || _.Z.can(w.Plq.MANAGE_MESSAGES, e))) return {
             label: T.NW.string(T.t.Icu3bW)
           }
         }(o),

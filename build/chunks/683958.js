@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(617266),
   g = n(333861),
   y = n(388032),
-  v = n(120575),
-  j = n(621054);
+  j = n(120575),
+  v = n(621054);
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,11 +67,11 @@ function S(e) {
     i()
   }, [i]);
   return (0, r.jsx)(a.mzw, {
-    className: v.footerWithMessage,
+    className: j.footerWithMessage,
     children: (0, r.jsx)("div", {
-      className: v.footerButtons,
+      className: j.footerButtons,
       children: (0, r.jsx)(a.zxk, {
-        className: v.sendWithMessage,
+        className: j.sendWithMessage,
         submitting: s,
         disabled: !n,
         onClick: o,
@@ -199,15 +199,15 @@ function P(e) {
       })
     }, [$, A]);
   if (k) return (0, r.jsx)(a.Y0X, O(x({
-    className: v.modal,
+    className: j.modal,
     "aria-label": y.NW.string(y.t.fuFvw8)
   }, Z), {
     children: (0, r.jsx)(a.$jN, {
-      className: v.spinnerContainer
+      className: j.spinnerContainer
     })
   }));
   if (K) return (0, r.jsx)(a.Y0X, O(x({
-    className: v.modal,
+    className: j.modal,
     "aria-label": y.NW.string(y.t.fuFvw8)
   }, Z), {
     children: (0, r.jsx)(a.hzk, {
@@ -223,10 +223,10 @@ function P(e) {
     disableSelection: F,
     originDestination: L
   }) : (0, r.jsxs)(a.hzk, {
-    className: v.noResults,
+    className: j.noResults,
     children: [(0, r.jsx)("img", {
-      className: v.noResultsImg,
-      src: j,
+      className: j.noResultsImg,
+      src: v,
       alt: ""
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
@@ -235,15 +235,15 @@ function P(e) {
     })]
   });
   return (0, r.jsxs)(a.Y0X, O(x({
-    className: v.modal,
+    className: j.modal,
     "aria-label": y.NW.string(y.t.fuFvw8)
   }, Z), {
     children: [(0, r.jsxs)(a.xBx, {
-      className: v.header,
+      className: j.header,
       children: [(0, r.jsxs)("div", {
-        className: v.titleLine,
+        className: j.titleLine,
         children: [(0, r.jsx)("div", {
-          className: v.title,
+          className: j.title,
           children: (0, r.jsxs)(a.y5t, {
             component: (0, r.jsxs)(a.X6q, {
               variant: "heading-lg/semibold",
@@ -262,13 +262,13 @@ function P(e) {
             })]
           })
         }), (0, r.jsx)(a.olH, {
-          className: v.closeButton,
+          className: j.closeButton,
           onClick: X
         })]
       }), void 0 !== C ? (0, r.jsx)(m.z, {
         previewMessage: C
       }) : null, (0, r.jsx)(a.E1j, {
-        className: v.search,
+        className: j.search,
         ref: Y,
         size: a.E1j.Sizes.MEDIUM,
         query: q,

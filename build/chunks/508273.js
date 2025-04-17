@@ -1,6 +1,6 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => O
+  Z: () => N
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
@@ -20,21 +20,21 @@ var r = n(200651),
   b = n(723776),
   x = n(910200),
   y = n(358595),
-  E = n(981631),
-  v = n(388032),
-  N = n(583136);
+  v = n(981631),
+  E = n(388032),
+  O = n(583136);
 
-function O(e) {
+function N(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
     onTransitionToInviteChannel: a,
     onAcceptInstantInvite: c
-  } = e, d = i.useRef(null), [p, f] = i.useState(!0), [h, O] = i.useState(!1), C = t.state === E.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
+  } = e, d = i.useRef(null), [p, f] = i.useState(!0), [h, N] = i.useState(!1), C = t.state === v.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
     var e, t;
-    O((null != (t = null == (e = d.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
-  }, [O]);
+    N((null != (t = null == (e = d.current) ? void 0 : e.clientHeight) ? t : 0) > 328)
+  }, [N]);
   let I = (0, m.PC)(t),
     T = i.useCallback(() => {
       h && p && f(!1)
@@ -50,23 +50,23 @@ function O(e) {
       } : {}
     }, [p, h, S]);
   return null == I ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: l()(N.guildInviteContainer, {
-      [N.clickable]: h && p
+    className: l()(O.guildInviteContainer, {
+      [O.clickable]: h && p
     }),
     onClick: T,
     style: A,
     children: [(0, r.jsxs)("div", {
-      className: N.cardHeightMeasure,
+      className: O.cardHeightMeasure,
       ref: d,
       children: [(0, r.jsx)(x.Z7, {
         profile: I,
-        className: N.banner
+        className: O.banner
       }), (0, r.jsx)(x.N3, {
         profile: I
       }), (0, r.jsx)(_.Z, {
         profile: I
       }), (0, r.jsxs)("div", {
-        className: N.mainContent,
+        className: O.mainContent,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
@@ -82,25 +82,25 @@ function O(e) {
       color: s.zxk.Colors.TRANSPARENT,
       size: s.zxk.Sizes.NONE,
       onClick: P,
-      className: N.hideDetailsButton,
-      innerClassName: N.hideDetailsButtonInner,
+      className: O.hideDetailsButton,
+      innerClassName: O.hideDetailsButtonInner,
       children: (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "interactive-normal",
-        children: v.NW.string(v.t.xdCLeH)
+        children: E.NW.string(E.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: l()(N.footer, {
-        [N.floatingFooter]: h
+      className: l()(O.footer, {
+        [O.floatingFooter]: h
       }),
       children: [h && p ? (0, r.jsx)("div", {
-        className: N.gradient
+        className: O.gradient
       }) : null, (0, r.jsxs)("div", {
-        className: N.footerContent,
+        className: O.footerContent,
         children: [(0, r.jsx)("div", {
-          className: N.separator
+          className: O.separator
         }), (0, r.jsx)("div", {
-          className: N.buttonContainer,
+          className: O.buttonContainer,
           children: (0, r.jsx)(j, {
             invite: t,
             profile: I,

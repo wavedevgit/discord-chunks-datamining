@@ -20,10 +20,10 @@ var r = n(200651),
   b = n(400445),
   x = n(153209),
   y = n(956961),
-  E = n(903672),
-  v = n(711165),
-  N = n(946443),
-  O = n(264233),
+  v = n(903672),
+  E = n(711165),
+  O = n(946443),
+  N = n(264233),
   j = n(981631),
   C = n(388032);
 
@@ -104,12 +104,12 @@ function S(e) {
             setTab: k,
             badgeState: I,
             closePopout: M
-          }) : R === o.X.MENTIONS ? (0, r.jsx)(E.Z, {
+          }) : R === o.X.MENTIONS ? (0, r.jsx)(v.Z, {
             setTab: k,
             onJump: V,
             badgeState: I,
             closePopout: M
-          }) : H && R === o.X.GAME_INVITES ? (0, r.jsx)(O.Z, {
+          }) : H && R === o.X.GAME_INVITES ? (0, r.jsx)(N.Z, {
             setTab: k,
             badgeState: I,
             closePopout: M
@@ -121,16 +121,16 @@ function S(e) {
             setTab: k,
             badgeState: I,
             closePopout: M
-          }) : R === o.X.SCHEDULED ? (0, r.jsx)(v._, {
+          }) : R === o.X.SCHEDULED ? (0, r.jsx)(E._, {
             setTab: k,
             closePopout: M
           }) : (0, r.jsx)(a.SV, {
-            fallback: (0, r.jsx)(N.h, {
+            fallback: (0, r.jsx)(O.h, {
               setTab: k,
               closePopout: M,
               badgeState: I
             }),
-            children: (0, r.jsx)(N.Z, {
+            children: (0, r.jsx)(O.Z, {
               setTab: k,
               onJump: V,
               showTutorial: D,

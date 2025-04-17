@@ -18,8 +18,8 @@ var r = n(200651),
   p = n(933557),
   g = n(266076),
   y = n(810123),
-  v = n(448486),
-  j = n(987509),
+  j = n(448486),
+  v = n(987509),
   x = n(131704),
   O = n(592125),
   _ = n(430824),
@@ -171,7 +171,7 @@ function q(e) {
     subLabel: n
   } = e, l = R(e, ["channel", "subLabel"]);
   let a = (0, p.ZP)(t),
-    s = (0, v._)(t);
+    s = (0, j._)(t);
   return (0, r.jsx)(I, A(W({}, l), {
     icon: (0, r.jsx)(g.Z, {
       "aria-hidden": !0,
@@ -246,7 +246,7 @@ function z(e) {
     f = l.useCallback(() => 48, []),
     b = l.useMemo(() => {
       var e;
-      return null != (e = null == n ? void 0 : n.map(j.hC)) ? e : []
+      return null != (e = null == n ? void 0 : n.map(v.hC)) ? e : []
     }, [n]),
     p = l.useCallback(e => {
       let {
@@ -266,7 +266,7 @@ function z(e) {
           type: "channel",
           id: u.id
         },
-        d = (0, j.hC)(c),
+        d = (0, v.hC)(c),
         f = null != i ? function(e, t) {
           if (t instanceof x.Sf && (0, x.Km)(t.type)) {
             if (null != t.rateLimitPerUser && t.rateLimitPerUser > 0 && !(N.Z.can(D.Plq.MANAGE_CHANNELS, t) || N.Z.can(D.Plq.MANAGE_MESSAGES, t))) return {
@@ -275,7 +275,7 @@ function z(e) {
             if (t.isThread() || t.isForumPost() || !N.Z.can(D.Plq.USE_APPLICATION_COMMANDS, t)) return {
               label: T.NW.string(T.t.v8MLq6)
             };
-            let n = (0, j.dL)(t.id);
+            let n = (0, v.dL)(t.id);
             if (e.id === n.id) return {
               label: T.NW.string(T.t.mD4gqa)
             }

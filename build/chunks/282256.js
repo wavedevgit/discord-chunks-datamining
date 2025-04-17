@@ -1,4 +1,4 @@
-/** Chunk was on 87934 **/
+/** Chunk was on 40419 **/
 n.d(t, {
   Z: () => d
 }), n(388685);
@@ -49,7 +49,7 @@ let d = i.memo(function(e) {
     O({
       maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
     })
-  }), R = (0, a.y)(S), p = (0, c.p0)(N.userId, _);
+  }), R = (0, a.y)(S), A = (0, c.p0)(N.userId, _);
   return (0, r.jsxs)("div", {
     className: o()(E.container, d && E.isOverlayContainer),
     ref: R,
@@ -59,7 +59,7 @@ let d = i.memo(function(e) {
     }), (0, r.jsx)("div", {
       className: E.chipletParent,
       children: (0, r.jsx)("span", {
-        className: o()(E.chipletContainer, !p && d && E.noPadding),
+        className: o()(E.chipletContainer, !A && d && E.noPadding),
         ref: T,
         style: I,
         children: (0, r.jsx)(u.ZP, (t = function(e) {

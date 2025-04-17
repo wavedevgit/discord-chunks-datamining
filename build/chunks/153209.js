@@ -20,22 +20,22 @@ var r = n(200651),
   b = n(709054),
   x = n(791914),
   y = n(981631),
-  E = n(388032),
-  v = n(929968),
-  N = n(413813);
+  v = n(388032),
+  E = n(929968),
+  O = n(413813);
 
-function O(e) {
+function N(e) {
   let {
     onClick: t
   } = e;
   return (0, r.jsx)(c.M0o, {
-    tooltip: E.NW.string(E.t["8k+6QU"]),
+    tooltip: v.NW.string(v.t["8k+6QU"]),
     color: c.YX$.TERTIARY,
     icon: (0, r.jsx)(c.W6s, {
       size: "xs",
       color: "currentColor"
     }),
-    className: N.controlButton,
+    className: O.controlButton,
     onClick: t
   })
 }
@@ -47,12 +47,12 @@ function j(e) {
     closePopout: a
   } = e, {
     initialized: c,
-    items: E,
-    loading: N,
+    items: v,
+    loading: O,
     loadMore: j
   } = (0, m.y6)(), C = (0, o.e7)([u.Z], () => u.Z.localItems), S = (0, h.Us)({
     location: "ForYou"
-  }), I = i.useMemo(() => [...[...E, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [E, C]), T = E.length > 0 ? E[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
+  }), I = i.useMemo(() => [...[...v, ...C].sort((e, t) => -1 * b.default.compare(e.id, t.id))], [v, C]), T = v.length > 0 ? v[0] : null, P = g.d$.useSetting(), A = i.useMemo(() => {
     if (null != T && 0 >= b.default.compare(T.id, P)) return !1;
     for (let e of I) {
       if (0 >= b.default.compare(e.id, P)) break;
@@ -61,15 +61,15 @@ function j(e) {
     return !1
   }, [T, P, I]);
   return (0, r.jsxs)("div", {
-    className: l()(v.container, {
-      [v.widerInbox]: S
+    className: l()(E.container, {
+      [E.widerInbox]: S
     }),
     children: [(0, r.jsx)(x.Z, {
       tab: s.X.FOR_YOU,
       setTab: t,
       badgeState: n,
       closePopout: a,
-      children: A ? (0, r.jsx)(O, {
+      children: A ? (0, r.jsx)(N, {
         onClick: () => {
           null != T && (g.d$.updateSetting(T.id), _.default.track(y.rMx.NOTIFICATION_CENTER_ACTION, {
             action_type: d.ud.MARK_ALL_READ
@@ -79,7 +79,7 @@ function j(e) {
     }), (0, r.jsx)(f.Z, {
       initialized: c,
       items: I,
-      loading: N,
+      loading: O,
       loadMore: j
     })]
   })

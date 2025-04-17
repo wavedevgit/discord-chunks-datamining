@@ -43,19 +43,18 @@ function p(e) {
     results: g
   } = (0, d.Z)(h), [j, x] = r.useState(b("")), O = r.useCallback(e => x(b(e)), [x]), {
     queryMode: v
-  } = j, [S, _] = r.useState(null != n ? n : []), N = r.useRef(n);
+  } = j, _ = r.useRef(), S = r.useRef(n), N = y !== _.current ? n : S.current;
   r.useEffect(() => {
-    N.current = n
-  }), r.useLayoutEffect(() => {
-    var e;
+    y !== _.current && (S.current = n), _.current = y
+  }, [y, n]), r.useLayoutEffect(() => {
     let {
-      query: t,
-      resultTypes: n
+      query: e,
+      resultTypes: t
     } = j;
     m({
-      query: t,
-      resultTypes: n
-    }), _(null != (e = N.current) ? e : [])
+      query: e,
+      resultTypes: t
+    })
   }, [m, j]), (0, i.D)();
   let E = (0, l.e7)([u.Z], () => u.Z.getFrequentlyWithoutFetchingLatest()),
     P = (0, l.e7)([s.Z], () => s.Z.isConnected()),
@@ -68,11 +67,11 @@ function p(e) {
       targetDestination: t,
       frequentChannels: E,
       selectedDestinations: n,
-      pinnedDestinations: S,
+      pinnedDestinations: N,
       originDestination: a,
       includeMissingDMs: f,
       isConnected: P
-    }), [g, Z, v, t, E, n, S, a, f, P]),
+    }), [g, Z, v, t, E, n, N, a, f, P]),
     updateSearchText: O
   }
 }

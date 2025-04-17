@@ -1,4 +1,4 @@
-/** Chunk was on 90652 **/
+/** Chunk was on 84921 **/
 n.d(t, {
   O: () => L,
   Z: () => j
@@ -101,10 +101,10 @@ function Z(e) {
   } = T.Z.useExperiment({
     location: "HeaderBar"
   }), {
-    hasParticipantsPanel: Y
+    hasParticipantsPanel: z
   } = (0, _.Z)({
     location: "HeaderBar"
-  }), z = (0, O.Q3)("HeaderBar");
+  }), Y = (0, O.Q3)("HeaderBar");
   return (0, r.jsx)(C.ZP, {
     className: n,
     innerClassName: u,
@@ -114,9 +114,9 @@ function Z(e) {
       return o.tq ? U : (0, r.jsxs)(r.Fragment, {
         children: [f, e ? (0, r.jsx)(p.Z, {
           className: b.search
-        }, null != c ? c : i) : null, F && (0, r.jsx)(C.ZP.Divider, {}), !z && (0, r.jsx)(y.Z, {}), !z && (0, r.jsx)(I.Z, {
+        }, null != c ? c : i) : null, F && (0, r.jsx)(C.ZP.Divider, {}), !Y && (0, r.jsx)(y.Z, {}), !Y && (0, r.jsx)(I.Z, {
           canShowReminder: !0
-        }), !z && (0, r.jsx)(N.Z, {}), W && !B ? (0, r.jsx)(S.Z, {}) : null, !z && (w ? (0, r.jsx)(g.Z, {}) : (0, r.jsx)(D.Z, {})), Y && V && null != x && !G && l === m.d4z.GROUP_DM && (0, r.jsxs)("div", {
+        }), !Y && (0, r.jsx)(N.Z, {}), W && !B ? (0, r.jsx)(S.Z, {}) : null, !Y && (w ? (0, r.jsx)(g.Z, {}) : (0, r.jsx)(D.Z, {})), z && V && null != x && !G && l === m.d4z.GROUP_DM && (0, r.jsxs)("div", {
           className: b.controlButtonWrapper,
           children: [(0, r.jsx)(C.ZP.Divider, {}), (0, r.jsx)(A.Z, {
             onClick: () => s.Z.toggleParticipantsList(x, !G)
