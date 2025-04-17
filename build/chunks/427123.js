@@ -2,8 +2,8 @@
 n.d(t, {
   Z: () => C
 }), n(388685), n(539854);
-var r, i, a, l = n(392711),
-  o = n.n(l),
+var r, i, l, a = n(392711),
+  o = n.n(a),
   s = n(442837),
   c = n(433517),
   u = n(570140),
@@ -55,12 +55,12 @@ class j extends(r = s.ZP.Store) {
     return o().values(E)
   }
 }
-a = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
-  value: a,
+l = "DetectedOffPlatformPremiumPerksStore", (i = "displayName") in j ? Object.defineProperty(j, i, {
+  value: l,
   enumerable: !0,
   configurable: !0,
   writable: !0
-}) : j[i] = a;
+}) : j[i] = l;
 let C = new j(u.Z, {
   LOGOUT: function() {
     E = {}, v = {}

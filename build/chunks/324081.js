@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  l = n(91192),
+  l = n.n(i),
+  a = n(91192),
   o = n(442837),
   s = n(481060),
   c = n(468363),
@@ -38,12 +38,12 @@ function I(e) {
   var t, n;
   let {
     channel: i,
-    children: a,
+    children: l,
     gotoChannel: o,
     mentionCount: c,
     channelState: u,
     toggleCollapsed: d
-  } = e, p = (0, l.JA)("recents-header-".concat(i.id, "-").concat((0, _.Dt)()));
+  } = e, p = (0, a.JA)("recents-header-".concat(i.id, "-").concat((0, _.Dt)()));
   return (0, r.jsx)(s.tEY, {
     offset: S,
     children: (0, r.jsxs)("div", (t = function(e) {
@@ -78,7 +78,7 @@ function I(e) {
         channel: i,
         gotoChannel: o,
         mentionCount: c
-      }), a]
+      }), l]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -110,13 +110,13 @@ function P(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, o.e7)([O.default], () => t.isDM() ? O.default.getUser(t.getRecipientId()) : null), a = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
+  } = e, i = (0, o.e7)([O.default], () => t.isDM() ? O.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, m.x)(t) : i.getAvatarURL(void 0, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: -1,
     children: (0, r.jsx)("img", {
       className: C.dmIcon,
-      src: a,
+      src: l,
       alt: "",
       "aria-hidden": !0
     })
@@ -144,12 +144,12 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t.guild_id)), c = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, o.e7)([N.ZP], () => N.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, l), p = (0, f.ZP)(t, !1), m = null == c ? null == l ? void 0 : l.name : "".concat(null == l ? void 0 : l.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? j.NW.formatToPlainString(j.t.CxSA5O, {
+  } = e, a = (0, o.e7)([E.Z], () => E.Z.getGuild(t.guild_id)), c = (0, o.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, o.e7)([N.ZP], () => N.ZP.getIsMentionLowImportance(t.id)), d = (0, h.KS)(t, a), p = (0, f.ZP)(t, !1), m = null == c ? null == a ? void 0 : a.name : "".concat(null == a ? void 0 : a.name, " › ").concat(c.name), _ = t.isMultiUserDM() ? j.NW.formatToPlainString(j.t.CxSA5O, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t
   }) : (0, r.jsx)(s.P3F, {
-    className: a()(C.subtext, C.guildName),
+    className: l()(C.subtext, C.guildName),
     onClick: n,
     children: m
   });
@@ -193,8 +193,8 @@ function Z(e) {
   } = e, {
     user: n,
     status: i,
-    activities: a,
-    applicationStream: l
+    activities: l,
+    applicationStream: a
   } = (0, o.cj)([O.default, v.Z, x.Z], () => {
     let e = O.default.getUser(t.getRecipientId());
     return {
@@ -213,14 +213,14 @@ function Z(e) {
     userId: null == n ? void 0 : n.id
   }), f = s ? m : void 0;
   return (0, u.Z)({
-    activities: a,
+    activities: l,
     status: i,
-    applicationStream: l,
+    applicationStream: a,
     voiceChannel: f
   }) ? (0, r.jsx)(p.Z, {
     user: n,
-    activities: a,
-    applicationStream: l,
+    activities: l,
+    applicationStream: a,
     voiceChannel: f,
     hideTooltip: !0
   }) : null

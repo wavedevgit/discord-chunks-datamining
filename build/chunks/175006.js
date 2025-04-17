@@ -1,12 +1,12 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(594174),
   i = n(111361),
-  a = n(474936);
+  l = n(474936);
 
-function l() {
+function a() {
   let e = r.default.getCurrentUser();
-  return (0, i.I5)(e, a.p9.TIER_2)
+  return (0, i.I5)(e, l.p9.TIER_2)
 }

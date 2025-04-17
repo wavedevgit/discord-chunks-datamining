@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(873546),
-  l = n(399606),
+  l = n(873546),
+  a = n(399606),
   o = n(434650),
   s = n(230171),
   c = n(955415),
@@ -23,7 +23,7 @@ function b(e) {
     code: t,
     message: n,
     embedUrl: b
-  } = e, [x, y, E] = (0, l.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, l.e7)([d.Z], () => {
+  } = e, [x, y, E] = (0, a.Wu)([f.Z], () => [f.Z.getApplication(t), f.Z.isInvalidApplication(t), f.Z.getApplicationFetchState(t)], [t]), v = (0, a.e7)([d.Z], () => {
     var e;
     return null != (e = d.Z.getGuildId()) ? e : void 0
   }), [N, O] = i.useState(!1), j = i.useCallback(e => {
@@ -31,7 +31,7 @@ function b(e) {
   }, []), C = (0, o.O)(j), S = i.useCallback(() => {
     p.default.track(h.rMx.APP_DIRECTORY_PROFILE_EMBED_VIEWED, {
       application_id: t,
-      device_platform: a.tq ? "mobile_web" : "desktop_web",
+      device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id
@@ -43,7 +43,7 @@ function b(e) {
     N && E === f.M.FETCHED && S()
   }, [N, E, S]), i.useEffect(() => {
     N && y && p.default.track(h.rMx.APP_DIRECTORY_PROFILE_INVALID_EMBED_VIEWED, {
-      device_platform: a.tq ? "mobile_web" : "desktop_web",
+      device_platform: l.tq ? "mobile_web" : "desktop_web",
       sender_user_id: n.author.id,
       guild_id: v,
       channel_id: n.channel_id

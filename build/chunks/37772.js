@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(442837),
   s = n(481060),
   c = n(25610),
@@ -72,7 +72,7 @@ function U(e, t) {
 }
 let F = i.memo(function e(t) {
   var n, i;
-  let a, {
+  let l, {
       channel: s,
       message: R,
       compact: L = !1,
@@ -97,7 +97,7 @@ let F = i.memo(function e(t) {
     } = (0, O.Z)(s),
     {
       content: ei,
-      hasSpoilerEmbeds: ea
+      hasSpoilerEmbeds: el
     } = (0, S.Z)(R, {
       hideSimpleEmbedContent: J && $,
       allowList: et,
@@ -105,12 +105,12 @@ let F = i.memo(function e(t) {
       allowLinks: !0,
       previewLinkTarget: !0
     }),
-    el = (0, N.ZP)(R),
+    ea = (0, N.ZP)(R),
     eo = null != (i = R.getGuildId()) ? i : void 0,
-    es = (0, m.Z)(el),
+    es = (0, m.Z)(ea),
     ec = (0, o.e7)([g.Z], () => R.hasFlag(k.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(R.id))),
     eu = R.type === k.uaV.THREAD_STARTER_MESSAGE && X.state === f.Y.LOADED && null != q,
-    ed = !eu && void 0 === a,
+    ed = !eu && void 0 === l,
     ep = (0, I.Z)({
       message: R,
       channel: s,
@@ -123,27 +123,27 @@ let F = i.memo(function e(t) {
     message: X.message,
     channel: q,
     hasThread: !1
-  })) : (_.Z.isBlockedForMessage(R) ? a = D.t["+FcYMz"] : _.Z.isIgnoredForMessage(R) ? a = D.t.VFWjc3 : (0, E.DQ)(R) && K && (a = D.t.xfkfTE), void 0 !== a) ? (0, r.jsx)(B, {
+  })) : (_.Z.isBlockedForMessage(R) ? l = D.t["+FcYMz"] : _.Z.isIgnoredForMessage(R) ? l = D.t.VFWjc3 : (0, E.DQ)(R) && K && (l = D.t.xfkfTE), void 0 !== l) ? (0, r.jsx)(B, {
     className: F,
     compact: L,
     count: 1,
-    collapsedReason: a
+    collapsedReason: l
   }) : (0, r.jsx)(j.Z, {
     compact: L,
-    className: l()(F, {
+    className: a()(F, {
       [M.ephemeral]: (0, y.Pv)(R),
       [M.disableInteraction]: V,
       [M.groupStart]: t.isGroupStart
     }),
     childrenRepliedMessage: (0, Z.Z)(R, s, Y, X, L),
     childrenHeader: (0, P.Z)(U(W({}, t), {
-      author: el,
+      author: ea,
       guildId: s.guild_id
     })),
     childrenAccessories: (0, r.jsx)(C.BB, {
       channel: s,
       message: R,
-      hasSpoilerEmbeds: ea,
+      hasSpoilerEmbeds: el,
       compact: L,
       canSuppressEmbeds: !1,
       canDeleteAttachments: !1,
@@ -182,7 +182,7 @@ function B(e) {
     className: t,
     count: n,
     compact: i,
-    collapsedReason: a
+    collapsedReason: l
   } = e;
   return (0, r.jsx)(j.Z, {
     className: t,
@@ -198,7 +198,7 @@ function B(e) {
       }),
       children: (0, r.jsx)("div", {
         className: L.blockedMessageText,
-        children: D.NW.format(a, {
+        children: D.NW.format(l, {
           count: n
         })
       })

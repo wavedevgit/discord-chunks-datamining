@@ -1,6 +1,6 @@
 /**
   Module ID: 64865
-  Original File Name: da27b2b6faaeb9ce
+  Original File Name: c9b5fa8ee28acaa5
 **/
 .badgeContainer__98c7b {
     display: flex;
@@ -800,9 +800,9 @@
 
 .message_fcf29c {
     color: var(--text-normal);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    line-height: 20px;
+    line-height: 1.25rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap
@@ -1687,4 +1687,4 @@
     opacity: 1
 }
 
-/*# sourceMappingURL=da27b2b6faaeb9ce.css.map*/
+/*# sourceMappingURL=c9b5fa8ee28acaa5.css.map*/

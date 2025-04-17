@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(793030),
-  l = n(442837),
+  l = n(793030),
+  a = n(442837),
   o = n(902704),
   s = n(692547),
   c = n(481060),
@@ -35,7 +35,7 @@ function I() {
       size: "xs",
       className: S.headerIcon,
       color: s.Z.colors.TEXT_LOW_CONTRAST
-    }), (0, r.jsx)(a.xv, {
+    }), (0, r.jsx)(l.xv, {
       className: S.headerText,
       variant: "text-sm/semibold",
       color: "text-low-contrast",
@@ -49,7 +49,7 @@ function T(e) {
     message: t,
     snapshot: n,
     index: d
-  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, l.e7)([g.Z, E.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, E.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
+  } = e, p = i.useMemo(() => new v.r(t, n, d), [t, n, d]), m = (0, a.e7)([g.Z, E.default, y.Z, x.Z, b.Z, u.Z], () => p.getForwardInfo(g.Z, E.default, y.Z, x.Z, b.Z, u.Z).footerInfo, [p], o.Z), f = i.useCallback(() => {
     (0, N.Z)(t)
   }, [t]);
   return null == m ? null : (0, r.jsxs)(c.P3F, {
@@ -59,7 +59,7 @@ function T(e) {
       className: S.originIcon,
       src: m.originIconUrl,
       alt: ""
-    }) : null, (0, r.jsx)(a.xv, {
+    }) : null, (0, r.jsx)(l.xv, {
       className: S.footerText,
       variant: "text-sm/medium",
       color: "none",
@@ -75,9 +75,9 @@ function P(e) {
   var t;
   let {
     message: n,
-    snapshot: a,
+    snapshot: l,
     index: o
-  } = e, s = i.useMemo(() => (0, O.Z)(n, a), [n, a]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, l.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
+  } = e, s = i.useMemo(() => (0, O.Z)(n, l), [n, l]), c = h.RS.useSetting(), u = h.NA.useSetting(), b = (0, a.e7)([_.Z], () => _.Z.isDeveloper), x = (0, d.A)((null != (t = s.editedTimestamp) ? t : s.timestamp).valueOf()), {
     content: y,
     hasSpoilerEmbeds: E
   } = (0, m.Z)(s, {
@@ -89,7 +89,7 @@ function P(e) {
     allowLinks: !0,
     allowDevLinks: b,
     previewLinkTarget: !0
-  }), v = (0, l.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), N = h.jU.useSetting();
+  }), v = (0, a.e7)([g.Z], () => g.Z.getChannel(n.channel_id)), N = h.jU.useSetting();
   return null == v ? null : (0, r.jsxs)("div", {
     className: S.container,
     children: [(0, r.jsx)("div", {
@@ -111,7 +111,7 @@ function P(e) {
         renderThreadAccessory: !1
       }), (0, r.jsx)(T, {
         message: n,
-        snapshot: a,
+        snapshot: l,
         index: o
       })]
     })]

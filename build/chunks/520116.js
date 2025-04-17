@@ -4,8 +4,8 @@ n.d(t, {
 }), n(539854);
 var r = n(200651),
   i = n(192379),
-  a = n(913527),
-  l = n.n(a),
+  l = n(913527),
+  a = n.n(l),
   o = n(91192),
   s = n(442837),
   c = n(481060),
@@ -31,9 +31,9 @@ let C = {
 };
 
 function S(e) {
-  var t, n, a;
+  var t, n, l;
   let {
-    channel: l,
+    channel: a,
     message: s,
     compact: u,
     isGroupStart: d,
@@ -42,9 +42,9 @@ function S(e) {
   } = e, f = (0, o.JA)(null != (t = s.id) ? t : ""), g = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
-      null == (t = document.querySelector('[data-recents-channel="'.concat(l.id, '"]'))) || t.focus()
+      null == (t = document.querySelector('[data-recents-channel="'.concat(a.id, '"]'))) || t.focus()
     }
-  }, [l.id]);
+  }, [a.id]);
   return (0, r.jsx)(c.tEY, {
     offset: C,
     children: (0, r.jsxs)("div", (n = function(e) {
@@ -67,14 +67,14 @@ function S(e) {
     }({
       className: j.messageContainer,
       onKeyDown: g
-    }, f), a = a = {
+    }, f), l = l = {
       children: [(0, r.jsx)(E.Z, {
         className: j.jumpButton,
         onJump: e => m(e, s.id)
       }), (0, r.jsx)(h.Z, {
         id: s.id,
         message: s,
-        channel: l,
+        channel: a,
         className: j.message,
         compact: u,
         animateAvatar: !1,
@@ -82,15 +82,15 @@ function S(e) {
         onKeyDown: g,
         treatSpam: p
       })]
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(a)).forEach(function(e) {
-      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
+    })(Object(l)).forEach(function(e) {
+      Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(l, e))
     }), n), s.id)
   })
 }
@@ -99,7 +99,7 @@ function I(e) {
   var t, n;
   let {
     channel: i,
-    channelRecord: a,
+    channelRecord: l,
     gotoChannel: o
   } = e, {
     enabled: h
@@ -107,7 +107,7 @@ function I(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: !1
-  }), E = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(N.Plq.CREATE_INSTANT_INVITE, a)), I = (0, m.P1)(a), T = !1, P = 0 === i.messages.length || l()(i.messages[0].timestamp).isSame(l()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(N.xW$.SPAMMER)) && n, w = [];
+  }), E = g.jU.useSetting(), C = (0, s.e7)([b.Z], () => b.Z.can(N.Plq.CREATE_INSTANT_INVITE, l)), I = (0, m.P1)(l), T = !1, P = 0 === i.messages.length || a()(i.messages[0].timestamp).isSame(a()(), "day"), A = null != (n = null == (t = x.default.getUser(_.default.getId())) ? void 0 : t.hasFlag(N.xW$.SPAMMER)) && n, w = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -119,11 +119,11 @@ function I(e) {
           w.push((0, r.jsx)(f.Z, {
             className: j.divider,
             children: t
-          }, t)), e = l()(n.timestamp)
+          }, t)), e = a()(n.timestamp)
         }
-        let i = null == t || (0, p.Z)(a, t, n);
+        let i = null == t || (0, p.Z)(l, t, n);
         t = n, T = T || (0, m.DQ)(n), w.push((0, r.jsx)(S, {
-          channel: a,
+          channel: l,
           message: n,
           compact: E,
           isGroupStart: i,

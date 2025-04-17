@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(392711),
   i = n.n(r),
-  a = n(723454),
-  l = n(428595),
+  l = n(723454),
+  a = n(428595),
   o = n(454585);
 
 function s(e) {
@@ -39,14 +39,14 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let u = i().omit(l.Z.RULES, ["codeBlock", "heading"]),
-  d = c(s({}, a.Z), {
+let u = i().omit(a.Z.RULES, ["codeBlock", "heading"]),
+  d = c(s({}, l.Z), {
     parse: function(e, t, n) {
       var r;
-      let i = a.Z.parse(e, t, n),
-        l = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
+      let i = l.Z.parse(e, t, n),
+        a = Math.min(6, (null != (r = n.initialHeaderLevel) ? r : 3) + i.level);
       return c(s({}, i), {
-        level: l
+        level: a
       })
     }
   }),

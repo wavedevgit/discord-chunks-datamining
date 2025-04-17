@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(525654),
   s = n.n(o),
   c = n(91192),
@@ -30,7 +30,7 @@ var r = n(200651),
   S = n(128406);
 
 function I(e) {
-  var t, n, a, o, I, P, A;
+  var t, n, l, o, I, P, A;
   let {
     setTab: w,
     onJump: Z,
@@ -45,19 +45,19 @@ function I(e) {
     maybeLoadMore: G,
     markAllRead: H
   } = U;
-  t = M, n = W, a = U, i.useLayoutEffect(() => {
+  t = M, n = W, l = U, i.useLayoutEffect(() => {
     var e;
     let {
       scrollToChannelIndex: r
     } = n;
-    a.clearScrollToChannelIndex();
+    l.clearScrollToChannelIndex();
     let {
       current: i
     } = t;
     if (null == i || null == r) return;
-    let l = null == (e = i.getScrollerNode()) ? void 0 : e.children;
-    if (null == l) return;
-    let o = l[r];
+    let a = null == (e = i.getScrollerNode()) ? void 0 : e.children;
+    if (null == a) return;
+    let o = a[r];
     if (null == o) return;
     let {
       scrollTop: s,
@@ -95,7 +95,7 @@ function I(e) {
     K = (0, h.Z)("unreads", M);
   if (0 === B.length) {
     return (0, r.jsxs)("div", {
-      className: l()(S.container, {
+      className: a()(S.container, {
         [S.widerInbox]: z
       }),
       children: [(0, r.jsx)(v.Z, {
@@ -111,7 +111,7 @@ function I(e) {
     })
   }
   return (0, r.jsxs)("div", {
-    className: l()(S.container, "group-spacing-".concat(V), {
+    className: a()(S.container, "group-spacing-".concat(V), {
       [S.widerInbox]: z
     }),
     "aria-label": C.NW.string(C.t.sRUdBw),
@@ -131,18 +131,18 @@ function I(e) {
           var t, n, {
               ref: i
             } = e,
-            a = function(e, t) {
+            l = function(e, t) {
               if (null == e) return {};
               var n, r, i = function(e, t) {
                 if (null == e) return {};
                 var n, r, i = {},
-                  a = Object.keys(e);
-                for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+                  l = Object.keys(e);
+                for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
                 return i
               }(e, t);
               if (Object.getOwnPropertySymbols) {
-                var a = Object.getOwnPropertySymbols(e);
-                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+                var l = Object.getOwnPropertySymbols(e);
+                for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
               }
               return i
             }(e, ["ref"]);
@@ -168,7 +168,7 @@ function I(e) {
               var t;
               M.current = e, i.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
             }
-          }, a), n = n = {
+          }, l), n = n = {
             onScroll: F === O.jd.Done ? void 0 : G,
             className: S.scroller,
             children: [R ? (0, r.jsx)(T, {
