@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   statusDiv: "statusDiv__5cda9",
   hoverable: "hoverable__5cda9",

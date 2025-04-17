@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   footer: "footer__214dc",
   gradient: "gradient__214dc",

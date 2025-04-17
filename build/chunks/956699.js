@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(570140),
   h = n(661111),
   f = n(179658),
-  _ = n(491428),
-  b = n(225433),
+  b = n(491428),
+  _ = n(225433),
   N = n(484614),
   x = n(615287),
   E = n(386506),
@@ -106,7 +106,7 @@ class ee extends i.Component {
     return (0, r.jsxs)(S.Z, {
       direction: S.Z.Direction.VERTICAL,
       className: a()(F.buildOverrideGroup, z.marginBottom20, H.card, F.row),
-      children: [(0, r.jsx)(b.Z, {
+      children: [(0, r.jsx)(_.Z, {
         className: a()(F.removeBuildOverride, {
           [F.removeBuildOverrideDisabled]: i
         }),
@@ -984,7 +984,7 @@ let ea = d.ZP.connectStores([D.default], () => ({
     isIdleStatusIndicatorEnabled: m,
     onlyShowPreviewAppCollections: p,
     disableAppCollectionsCache: h,
-    preventPopoutClose: _
+    preventPopoutClose: b
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(R.F, {
@@ -1085,7 +1085,7 @@ let ea = d.ZP.connectStores([D.default], () => ({
         }), (0, r.jsx)(R.F, {
           setting: U.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE,
           children: (0, r.jsx)(g.j7V, {
-            value: _,
+            value: b,
             note: "This is to enable viewing console logs for popout crashes. This may leave your app/popout in a weird state.",
             onChange: e => (0, f.y)({
               preventPopoutClose: e
@@ -1143,7 +1143,7 @@ function el() {
       }), (0, r.jsxs)("form", {
         className: F.surveyOverride,
         onSubmit: e => {
-          e.preventDefault(), t.length > 0 ? _.Xq(t) : _.Xq(null)
+          e.preventDefault(), t.length > 0 ? b.Xq(t) : b.Xq(null)
         },
         children: [(0, r.jsx)(g.oil, {
           className: F.surveyOverrideInput,

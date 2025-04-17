@@ -17,7 +17,7 @@ var r = n(200651),
   p = n(981631),
   h = n(388032),
   f = n(659233);
-let _ = [{
+let b = [{
     duration: 15 * u.Z.Millis.MINUTE,
     label: () => h.NW.string(h.t["8ot6go"])
   }, {
@@ -36,7 +36,7 @@ let _ = [{
     duration: void 0,
     label: () => h.NW.string(h.t["46dqJS"])
   }],
-  b = [{
+  _ = [{
     duration: u.Z.Millis.HOUR,
     label: () => h.NW.formatToPlainString(h.t.rhY1Rk, {
       hours: 1
@@ -72,7 +72,7 @@ function x(e) {
   } = l.Y.useExperiment({
     location: "AccountProfilePopout"
   }), h = o && t !== p.Skl.ONLINE, [N, x] = i.useState(void 0), E = void 0 !== N && t === n, j = (0, r.jsx)(r.Fragment, {
-    children: _.map(e => {
+    children: b.map(e => {
       let {
         duration: i,
         label: s
@@ -90,7 +90,7 @@ function x(e) {
     })
   }), C = (0, r.jsx)("div", {
     className: f.durationButtons,
-    children: b.map(e => {
+    children: _.map(e => {
       let {
         duration: i,
         label: s
@@ -179,7 +179,7 @@ function j(e) {
     location: "AccountProfilePopout"
   }), n = d.Cr.useSetting(), i = (0, o.p)(), u = c.e.useExperiment({
     location: "AccountProfilePopout"
-  }).allowQuietMode || i, m = d.fv.useSetting(), g = e === p.Skl.DND, b = r => {
+  }).allowQuietMode || i, m = d.fv.useSetting(), g = e === p.Skl.DND, _ = r => {
     let i = E(n);
     if (e === r && null != i) return i;
     switch (r) {
@@ -191,7 +191,7 @@ function j(e) {
         return
     }
   }, N = (0, r.jsx)(r.Fragment, {
-    children: _.map(t => {
+    children: b.map(t => {
       let {
         duration: n,
         label: i
@@ -211,15 +211,15 @@ function j(e) {
   }), C = x({
     status: p.Skl.IDLE,
     currentStatus: e,
-    description: b(p.Skl.IDLE)
+    description: _(p.Skl.IDLE)
   }), O = x({
     status: p.Skl.DND,
     currentStatus: e,
-    description: b(p.Skl.DND)
+    description: _(p.Skl.DND)
   }), S = x({
     status: p.Skl.INVISIBLE,
     currentStatus: e,
-    description: b(p.Skl.INVISIBLE)
+    description: _(p.Skl.INVISIBLE)
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [j, (0, r.jsx)(a.Clw, {}, "menu-separator-statuses"), C, O, S, u || i ? (0, r.jsxs)(r.Fragment, {

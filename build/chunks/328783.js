@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(981631),
   h = n(526761),
   f = n(388032),
-  _ = n(989966);
-let b = (0, l.hQ)(),
+  b = n(989966);
+let _ = (0, l.hQ)(),
   N = i.memo(function(e) {
     let {
       availableClans: t
@@ -52,15 +52,15 @@ let b = (0, l.hQ)(),
     }, [x]), j = i.useCallback(e => (0, u.nE)(e, !0, p.Sbl.USER_SETTINGS), []), C = i.useCallback(e => e === l, [l]), O = i.useCallback(e => e, []), S = i.useCallback(() => (0, u.nE)(null, !1), []), v = i.useRef(null);
     return (0, c.Z)(v, h.Y_.GUILD_TAG), (0, r.jsxs)(o.Z, {
       title: f.NW.string(f.t.Pdd1nZ),
-      titleId: b,
+      titleId: _,
       ref: v,
       children: [(0, r.jsx)(a.Text, {
-        className: _.subtitle,
+        className: b.subtitle,
         variant: "text-sm/normal",
         children: f.NW.string(f.t.mlZ6Jy)
       }), (0, r.jsx)(a.PhF, {
-        className: _.select,
-        optionClassName: _.selectPopout,
+        className: b.select,
+        optionClassName: b.selectPopout,
         isSelected: C,
         options: N,
         select: j,

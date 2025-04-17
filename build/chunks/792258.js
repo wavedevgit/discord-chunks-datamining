@@ -23,12 +23,12 @@ let h = [18, 18, 16, 16, 14, 12, 10],
     if (void 0 === n) return null;
     let i = n.hasFeature(u.oNc.VERIFIED) || n.hasFeature(u.oNc.PARTNERED),
       f = n.toString(),
-      _ = n.getIconURL(40, !0),
-      b = null,
+      b = n.getIconURL(40, !0),
+      _ = null,
       N = h[h.length - 1];
     if (null == n.icon && null != f) {
       var x;
-      N = null != (x = h[(b = (0, a.Zg)(f)).length - 1]) ? x : h[h.length - 1]
+      N = null != (x = h[(_ = (0, a.Zg)(f)).length - 1]) ? x : h[h.length - 1]
     }
     return (0, r.jsxs)("div", {
       className: p.container,
@@ -36,11 +36,11 @@ let h = [18, 18, 16, 16, 14, 12, 10],
         style: {
           fontSize: N
         },
-        children: [null != b ? (0, r.jsx)("div", {
+        children: [null != _ ? (0, r.jsx)("div", {
           className: s()(p.childWrapper, p.acronym),
           "aria-hidden": !0,
-          children: b
-        }) : null, null != _ ? (0, r.jsx)(o.qEK, {
+          children: _
+        }) : null, null != b ? (0, r.jsx)(o.qEK, {
           src: n.getIconURL(40, !0),
           size: o.EFr.SIZE_40,
           "aria-hidden": !0

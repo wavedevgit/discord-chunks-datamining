@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 }), n(388685), n(953529), n(49124), n(539854), n(642613);
 var r = n(200651),
   i = n(192379),
@@ -17,7 +17,7 @@ var r = n(200651),
   h = n(987338),
   f = n(516370);
 
-function _() {
+function b() {
   let e = (0, l.cj)([u.Z], () => u.Z.getAllExperimentOverrideDescriptors()),
     t = (0, l.cj)([u.Z], () => u.Z.getRegisteredExperiments()),
     [n, s] = i.useState(""),
@@ -31,7 +31,7 @@ function _() {
       onChange: s,
       onClear: () => s("")
     }), a.length > 0 ? a.map(t => {
-      let n = t.experiment.type === h.xY.GUILD ? N : b;
+      let n = t.experiment.type === h.xY.GUILD ? N : _;
       return (0, r.jsx)(n, {
         experiment: t.experiment,
         experimentId: t.id,
@@ -48,15 +48,15 @@ function _() {
   })
 }
 
-function b(e) {
+function _(e) {
   var t;
   let {
     experiment: n,
     experimentId: s,
     overrideDescriptor: m,
     defaultOpen: p
-  } = e, [_, b] = i.useState(p), [N, x] = i.useState(!1), E = i.useCallback(() => {
-    b(e => !e)
+  } = e, [b, _] = i.useState(p), [N, x] = i.useState(!1), E = i.useCallback(() => {
+    _(e => !e)
   }, []), j = (0, l.e7)([u.Z], () => u.Z.getUserExperimentDescriptor(s)), C = (0, l.e7)([u.Z], () => u.Z.getLoadedUserExperiment(s)), O = (0, l.Wu)([u.Z], () => a().sortBy(u.Z.getRecentExposures(h.xY.USER, s), e => {
     let [t, n] = e;
     return -n
@@ -99,7 +99,7 @@ function b(e) {
       })]
     })
   });
-  return _ ? (0, r.jsxs)("div", {
+  return b ? (0, r.jsxs)("div", {
     className: f.group,
     children: [(0, r.jsxs)(o.hjN, {
       children: [v, (0, r.jsxs)("div", {
@@ -175,7 +175,7 @@ function N(e) {
     experiment: t,
     experimentId: n,
     overrideDescriptor: s
-  } = e, [c, g] = i.useState(null != s), [p, _] = i.useState(!1), b = i.useCallback(() => {
+  } = e, [c, g] = i.useState(null != s), [p, b] = i.useState(!1), _ = i.useCallback(() => {
     g(e => !e)
   }, []), N = (0, l.e7)([u.Z], () => u.Z.getLoadedGuildExperiment(n)), x = (0, l.Wu)([u.Z], () => a().sortBy(u.Z.getRecentExposures(h.xY.GUILD, n), e => {
     let [t, n] = e;
@@ -196,7 +196,7 @@ function N(e) {
     let s = a()(t).keys().map(Number).sort().map(e => "".concat(t[e], " guilds in bucket ").concat(e)).join(", ");
     return [r.join("\n"), s]
   }), C = (0, r.jsx)(o.P3F, {
-    onClick: b,
+    onClick: _,
     children: (0, r.jsxs)(o.vwX, {
       tag: o.RB0.H3,
       className: f.title,
@@ -279,7 +279,7 @@ function N(e) {
         className: f.debugButton,
         size: o.zxk.Sizes.SMALL,
         look: o.zxk.Looks.BLANK,
-        onClick: () => _(!0),
+        onClick: () => b(!0),
         children: "More Details \xbb"
       })]
     }), (0, r.jsx)(o.$i$, {

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(780771),
   h = n(4242),
   f = n(996746),
-  _ = n(711325),
-  b = n(852630),
+  b = n(711325),
+  _ = n(852630),
   N = n(731994),
   x = n(396921);
 
@@ -57,7 +57,7 @@ function C() {
   var e;
   let [t, n] = (0, i.useState)(!1), [s, a] = (0, i.useState)(!1), [l, c] = (0, i.useState)(null), m = (0, g.ZP)(e => e.toolsCache), {
     setToolsCache: f,
-    removeToolsCache: b
+    removeToolsCache: _
   } = (0, g.L3)(), {
     setImgCache: C
   } = (0, g.W_)(), A = (0, i.useCallback)(e => {
@@ -80,8 +80,8 @@ function C() {
       preview: !0
     }))
   }, []), R = (0, i.useCallback)(e => {
-    b(e)
-  }, [b]);
+    _(e)
+  }, [_]);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: x.controls,
@@ -106,7 +106,7 @@ function C() {
         })]
       }), (0, r.jsxs)("div", {
         className: x.themePicker,
-        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(_.Z, {
+        children: [t && (0, r.jsx)(u.i, {}), " ", s && (0, r.jsx)(b.Z, {
           selected: null == l || null == (e = l.palette) ? void 0 : e.name,
           onSelect: e => {
             (null == l ? void 0 : l.src) != null && f(l.src, l.src, e), P(e)
@@ -297,17 +297,17 @@ function I(e) {
         className: x.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, r.jsx)(b.Z, {
+      }), (0, r.jsx)(_.Z, {
         nameplate: t
       }), (0, r.jsx)(o.Text, {
         className: x.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsx)(b.Z, {
+        children: [(0, r.jsx)(_.Z, {
           selected: !0,
           nameplate: t
-        }), (0, r.jsx)(b.Z, {
+        }), (0, r.jsx)(_.Z, {
           selected: !0
         })]
       })]

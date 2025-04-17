@@ -38,6 +38,7 @@ function o(e) {
     simplifiedCallSettingsEnabled: !1,
     nameplate: t,
     voiceChannel: null,
-    voiceActivityStatusEnabled: !1
+    voiceActivityStatusEnabled: !1,
+    customStatusRTCEntrypointEnabled: !1
   })
 }

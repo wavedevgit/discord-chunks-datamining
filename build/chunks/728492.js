@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   wrapper: "wrapper__48112",
   expandedFolderBackground: "expandedFolderBackground__48112",

@@ -16,14 +16,14 @@ var r = n(200651),
   p = n(899667),
   h = n(853872),
   f = n(78839),
-  _ = n(783739),
-  b = n(981631),
+  b = n(783739),
+  _ = n(981631),
   N = n(117527);
 
 function x() {
   i.useEffect(() => {
     c.Z.wait(() => {
-      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, b.JjL.DISCOVERY), (0, u.tH)(!0)
+      d.jg(), d.tZ(), (0, u.X8)(), (0, m.Y2)(null, null, _.JjL.DISCOVERY), (0, u.tH)(!0)
     })
   }, []);
   let {
@@ -39,7 +39,7 @@ function x() {
       className: N.background
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: (0, r.jsx)(_.Z, {
+      children: (0, r.jsx)(b.Z, {
         premiumSubscription: t
       })
     })]

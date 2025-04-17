@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   pendingIcon: "pendingIcon__93fc9",
   container: "container__93fc9",

@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(104494),
   h = n(639119),
   f = n(105759),
-  _ = n(346497),
-  b = n(422034),
+  b = n(346497),
+  _ = n(422034),
   N = n(710220),
   x = n(318747),
   E = n(635921),
@@ -51,7 +51,7 @@ let S = e => {
       isDarkMode: A
     } = e, {
       analyticsLocations: P
-    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, _.Vi)(), L = (0, l.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === j.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
+    } = (0, d.ZP)(c.Z.PREMIUM_MARKETING_HERO_CTA), R = (0, g._O)(), D = (0, p.Ng)(), Z = (0, p.Wp)(D, j.Si.TIER_2) ? j.Si.TIER_2 : void 0, w = (0, h.N)(), k = (0, m.Nx)(), W = (0, b.Vi)(), L = (0, l.e7)([u.Z], () => u.Z.affinities), B = (0, f.Z)(), M = y === j.EZ.ApplicationStoreHome && null != B, U = L.length > 0;
     return (0, r.jsx)(d.Gt, {
       value: P,
       children: (0, r.jsx)("div", {
@@ -73,7 +73,7 @@ let S = e => {
             isMarketingPageV2Enabled: !0
           }) : U && (0, r.jsx)("div", {
             className: O.affinityDescriptionV2,
-            children: (0, r.jsx)(b.Z, {
+            children: (0, r.jsx)(_.Z, {
               textColor: "text-normal",
               smallerText: !s,
               isMarketingPageV2Enabled: !0

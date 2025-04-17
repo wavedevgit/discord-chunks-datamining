@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => b
+  Z: () => _
 }), n(997841);
 var r = n(200651);
 n(192379);
@@ -17,15 +17,15 @@ var i = n(442837),
   p = n(63487),
   h = n(981631),
   f = n(388032),
-  _ = n(831169);
+  b = n(831169);
 
-function b(e) {
+function _(e) {
   var t;
   let {
     app: n,
     currentSubscription: g,
     currentListing: h,
-    alternativeListings: b,
+    alternativeListings: _,
     navigateToHome: x,
     subscriptionGroup: E,
     renewalSkuId: j
@@ -34,10 +34,10 @@ function b(e) {
   }, [j]), A = (0, p.p)(g.currentPeriodEnd);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsxs)("div", {
-      className: _.header,
+      className: b.header,
       children: [null != C && (0, r.jsx)(s.Eep, {
         src: C.href,
-        imageClassName: _.appIcon,
+        imageClassName: b.appIcon,
         width: 48,
         height: 48
       }), (0, r.jsxs)("div", {
@@ -45,10 +45,10 @@ function b(e) {
           variant: "heading-xl/semibold",
           children: n.name
         }), (0, r.jsxs)("div", {
-          className: _.subInfo,
+          className: b.subInfo,
           children: [(0, r.jsxs)(s.X6q, {
             variant: "heading-md/normal",
-            className: _.subInfoType,
+            className: b.subInfoType,
             children: [(0, r.jsx)(S, {
               size: "xs",
               color: "currentColor"
@@ -58,7 +58,7 @@ function b(e) {
               variant: "text-md/normal",
               children: "•"
             }), (0, r.jsxs)("span", {
-              className: _.guildSubscription,
+              className: b.guildSubscription,
               children: [(0, r.jsx)(c.Z, {
                 guild: I,
                 size: c.Z.Sizes.SMOL
@@ -75,7 +75,7 @@ function b(e) {
       })]
     }), (0, r.jsx)(l.Z, {
       children: e => (0, r.jsxs)("div", {
-        className: _.planNotice,
+        className: b.planNotice,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           children: f.NW.string(f.t["goe+ho"])
@@ -92,12 +92,12 @@ function b(e) {
         })]
       })
     }), (0, r.jsxs)("div", {
-      className: _.subscriptions,
+      className: b.subscriptions,
       children: [(0, r.jsx)(o.Z, {
         storeListing: h,
-        className: _.activeSubscriptionCard,
+        className: b.activeSubscriptionCard,
         cta: (0, r.jsxs)("div", {
-          className: _.activeSubscriptionCTA,
+          className: b.activeSubscriptionCTA,
           children: [(0, r.jsx)(s.Text, {
             variant: "eyebrow",
             color: "text-brand",
@@ -110,7 +110,7 @@ function b(e) {
             })
           })]
         })
-      }), b.map(e => e.skuId === j ? (0, r.jsx)(o.Z, {
+      }), _.map(e => e.skuId === j ? (0, r.jsx)(o.Z, {
         storeListing: e,
         cta: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",

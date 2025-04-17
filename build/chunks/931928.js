@@ -18,9 +18,9 @@ var r = n(200651),
   p = n(981631),
   h = n(921944),
   f = n(46140),
-  _ = n(388032);
+  b = n(388032);
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,12 +38,12 @@ function b(e) {
   }
   return e
 }
-let N = e => (0, r.jsx)(g.tE, b({
-    titleText: _.NW.string(_.t.KnWRQU),
-    descriptionText: _.NW.format(_.t["xYx+WV"], {
+let N = e => (0, r.jsx)(g.tE, _({
+    titleText: b.NW.string(b.t.KnWRQU),
+    descriptionText: b.NW.format(b.t["xYx+WV"], {
       quantity: 200
     }),
-    ctaText: _.NW.string(_.t.v4HbPz),
+    ctaText: b.NW.string(b.t.v4HbPz),
     renderTail: !0
   }, e)),
   x = [p.Z5c.ME, p.Z5c.COLLECTIBLES_SHOP, p.Z5c.NITRO_HOME],
@@ -70,7 +70,7 @@ let N = e => (0, r.jsx)(g.tE, b({
       return i
     }(e, ["onClose", "onCtaClick", "targetElementRef", "isGuildBarScrolling", "children"]);
     let f = i.useRef(null),
-      [_, j] = i.useState(22),
+      [b, j] = i.useState(22),
       C = i.useRef(null),
       O = (0, o.Q3)("VirtualCurrency: DiscoveryOnboardingCoachmark"),
       S = i.useCallback(e => {
@@ -92,8 +92,8 @@ let N = e => (0, r.jsx)(g.tE, b({
       }, [T, n]),
       y = i.useCallback(e => {
         let t = Math.floor(e.width / 2) - 2;
-        _ !== t && j(t)
-      }, [_]);
+        b !== t && j(t)
+      }, [b]);
     return (0, r.jsx)(g.WS, {
       positionControlRef: f,
       targetElementRef: l,
@@ -101,10 +101,10 @@ let N = e => (0, r.jsx)(g.tE, b({
       calculateVisibility: S,
       onGetTargetElementDimensions: y,
       defaultCoachmarkPosition: "bottom",
-      popoutElement: (0, r.jsx)(N, b({
+      popoutElement: (0, r.jsx)(N, _({
         onClose: t,
         onCtaClick: I,
-        tailLeftOffset: _,
+        tailLeftOffset: b,
         coachmarkRef: C
       }, h)),
       spacing: 8,
@@ -128,25 +128,25 @@ let j = e => {
   } = (0, g.M)({
     onboardingCoachmarkType: "discover",
     onShowCoachmarkHandler: a
-  }), _ = i.useCallback(function() {
+  }), b = i.useCallback(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "CLOSE";
     (0, c.EW)(l.z.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK, {
       dismissAction: h.L.INDIRECT_ACTION,
       groupName: h.R.VIRTUAL_CURRENCY_ONBOARDING
     }), u(e)
-  }, [u]), b = i.useCallback(() => u("CTA_CLICK"), [u]), N = i.useCallback(() => {
-    _("CTA_CLICK"), (0, m.Y)({
+  }, [u]), _ = i.useCallback(() => u("CTA_CLICK"), [u]), N = i.useCallback(() => {
+    b("CTA_CLICK"), (0, m.Y)({
       pageType: p.ZY5.GUILD_LIST,
       sectionType: p.jXE.ORBS_DISCOVERY_ONBOARDING_COACHMARK,
       ctaObject: p.qAy.DISCOVERY_BUTTON_TO_ORB_INTRO_QUEST
     })
-  }, [_]);
+  }, [b]);
   return t ? {
     shouldShow: d,
     questId: f.V6,
     closeCoachmarkIfOpen: u,
-    onClose: _,
-    onCtaClick: b,
+    onClose: b,
+    onCtaClick: _,
     onDiscoveryButtonClick: N
   } : {
     shouldShow: !1,

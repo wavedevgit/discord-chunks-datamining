@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   container: "container_f37cb1",
   clickable: "clickable_f37cb1",

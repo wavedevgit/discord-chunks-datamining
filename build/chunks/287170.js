@@ -1,4 +1,4 @@
-/** Chunk was on 38662 **/
+/** Chunk was on 13778 **/
 e.exports = {
   guildSeparator: "guildSeparator__252b6",
   fullWidth: "fullWidth__252b6"

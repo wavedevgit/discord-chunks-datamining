@@ -16,8 +16,8 @@ var r = n(200651),
   p = n(230916),
   h = n(798769),
   f = n(474936),
-  _ = n(981631),
-  b = n(388032),
+  b = n(981631),
+  _ = n(388032),
   N = n(828576),
   x = n(982404),
   E = n(299156);
@@ -31,7 +31,7 @@ let j = function(e) {
   } = e, [O, S] = i.useState(!1), [v, T] = i.useState(!1), I = async e => {
     try {
       T(!0), S(!1), await l.tn.post({
-        url: _.ANM.USER_OFFER_REDEEM,
+        url: b.ANM.USER_OFFER_REDEEM,
         body: {
           user_discount_offer_id: e
         },
@@ -55,7 +55,7 @@ let j = function(e) {
         className: N.confirmDiscountContent,
         children: [(0, r.jsx)(c.X6q, {
           variant: "heading-xl/bold",
-          children: b.NW.format(b.t.q9Vxu7, {
+          children: _.NW.format(_.t.q9Vxu7, {
             percent: C.discount.amount
           })
         }), (0, r.jsxs)("div", {
@@ -66,7 +66,7 @@ let j = function(e) {
             className: N.confirmDiscountIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: b.NW.format(b.t.Eq1RHB, {
+            children: _.NW.format(_.t.Eq1RHB, {
               percent: C.discount.amount,
               numMonths: C.discount.user_usage_limit,
               price: D
@@ -77,12 +77,12 @@ let j = function(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: N.confirmDiscountLegaleseText,
-            children: b.NW.format(b.t.hrGTjI, {
+            children: _.NW.format(_.t.hrGTjI, {
               discountedPrice: P,
               billingPeriod: (0, m.JP)(C.discount.user_usage_limit_interval),
               numMonths: C.discount.user_usage_limit,
               fullPrice: D,
-              helpdeskArticle: u.Z.getArticleURL(_.BhN.PAID_TERMS)
+              helpdeskArticle: u.Z.getArticleURL(b.BhN.PAID_TERMS)
             })
           })
         }), O && (0, r.jsx)("div", {
@@ -90,7 +90,7 @@ let j = function(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/semibold",
             className: N.redemptionFailedMessageCopy,
-            children: b.NW.string(b.t.AD6odn)
+            children: _.NW.string(_.t.AD6odn)
           })
         }), (0, r.jsxs)("div", {
           className: a()(N.confirmDiscountButtons, {
@@ -100,12 +100,12 @@ let j = function(e) {
           children: [(0, r.jsx)(c.zxk, {
             look: c.iLD.LINK,
             onClick: () => s(),
-            children: b.NW.string(b.t.zl7LZm)
+            children: _.NW.string(_.t.zl7LZm)
           }), (0, r.jsx)(c.zxk, {
             size: c.PhG.SMALL,
             submitting: v,
             onClick: () => I(C.id),
-            children: b.NW.string(b.t.CKSuZG)
+            children: _.NW.string(_.t.CKSuZG)
           })]
         })]
       })

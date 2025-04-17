@@ -1,6 +1,6 @@
 /** Chunk was on 44114 **/
 n.d(t, {
-  Z: () => _
+  Z: () => b
 });
 var r = n(200651);
 n(192379);
@@ -18,7 +18,7 @@ var i = n(442837),
   h = n(388032),
   f = n(881328);
 
-function _() {
+function b() {
   let e = (0, m.b)(),
     t = (0, i.e7)([o.Z], () => o.Z.getSubsection()),
     n = null != t && e.some(e => e.id === t) ? t : e[0].id;
