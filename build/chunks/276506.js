@@ -1,20 +1,23 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  n: () => s
+  n: () => c
 }), n(388685);
 var r = n(442837),
-  i = n(136015),
-  o = n(91896),
-  a = n(388032);
+  i = n(699516),
+  o = n(136015),
+  a = n(91896),
+  s = n(981631),
+  l = n(388032);
 
-function s(e) {
+function c(e) {
   let {
     userId: t
-  } = e, [n] = (0, r.e7)([o.Z], () => {
-    let e = o.Z.getGameRelationshipsForUser(t),
-      n = o.Z.getGameRelationshipsVersion();
-    return [e.length > 0 ? a.NW.string(a.t.LAcY7u) : a.NW.string(a.t.w5uwoK), n]
-  }, [t], i.Q);
+  } = e, [n] = (0, r.e7)([a.Z, i.Z], () => {
+    let e = i.Z.getRelationshipType(t),
+      n = a.Z.getGameRelationshipsForUser(t),
+      r = a.Z.getGameRelationshipsVersion();
+    return e === s.OGo.PENDING_INCOMING ? [l.NW.string(l.t["wPI56+"]), r] : [n.length > 0 ? l.NW.string(l.t.LAcY7u) : l.NW.string(l.t.w5uwoK), r]
+  }, [t], o.Q);
   return n
 }
