@@ -38,8 +38,8 @@ var i = n(200651),
   k = n(29380),
   Z = n(783685),
   M = n(981631),
-  W = n(206583),
-  D = n(388032),
+  D = n(206583),
+  W = n(388032),
   B = n(449549),
   U = n(73433);
 
@@ -112,7 +112,7 @@ function F(e) {
       var e, n, i, r;
       if (0 === t.length) return "";
       let l = u().sample(1 === t.length ? K : $);
-      return s()(l, "intl message arrays should not be empty"), D.NW.format(l, {
+      return s()(l, "intl message arrays should not be empty"), W.NW.format(l, {
         friendCount: t.length,
         count: t.length,
         friendCountMinusOne: t.length - 1,
@@ -121,7 +121,7 @@ function F(e) {
         thirdFriendName: null != (r = null == (n = t[2]) ? void 0 : n.username) ? r : ""
       })
     }, [t])),
-    ee = (0, d.e7)([g.Z], () => g.Z.getFeed(W.YN.GLOBAL_FEED)),
+    ee = (0, d.e7)([g.Z], () => g.Z.getFeed(D.YN.GLOBAL_FEED)),
     et = r.useMemo(() => {
       if (null == ee) return [];
       let e = ee.entries.reduce((e, t) => V(H({}, e), {
@@ -159,7 +159,7 @@ function F(e) {
       children: [(0, i.jsx)(m.njP.Item, {
         id: "overview",
         className: B.tabItem,
-        children: D.NW.string(D.t["/dp6yc"])
+        children: W.NW.string(W.t["/dp6yc"])
       }), (0, i.jsx)(m.njP.Item, {
         id: "friends",
         "aria-label": (0, w.d)(!1, U).toString(),
@@ -197,7 +197,7 @@ function F(e) {
         }) : null, (0, i.jsx)("img", {
           className: B.videoCover,
           src: c,
-          "aria-label": D.NW.string(D.t.X4IxWF)
+          "aria-label": W.NW.string(W.t.X4IxWF)
         })]
       }) : null, (0, i.jsxs)("div", {
         className: E ? B.overviewContainerWithVideo : B.overviewContainerNoVideo,
@@ -252,7 +252,7 @@ function G(e) {
       }), (0, i.jsx)(m.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: D.NW.string(D.t["8z5B2d"])
+        children: W.NW.string(W.t["8z5B2d"])
       })]
     }) : null, r ? (0, i.jsxs)("div", {
       className: B.monetizationDisclosureStyle,
@@ -262,7 +262,7 @@ function G(e) {
       }), (0, i.jsx)(m.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: D.NW.string(D.t["5khEk5"])
+        children: W.NW.string(W.t["5khEk5"])
       })]
     }) : null]
   }) : null
@@ -284,7 +284,7 @@ function X(e) {
       children: (0, i.jsx)(m.Text, {
         variant: "text-xs/medium",
         color: "text-normal",
-        children: D.NW.string(D.t.LO4f0N)
+        children: W.NW.string(W.t.LO4f0N)
       })
     }) : null]
   })
@@ -389,8 +389,8 @@ function Q(e) {
           children: (0, i.jsxs)(m.Text, {
             variant: "text-sm/medium",
             className: B.entryPointCheckboxLabel,
-            children: [D.NW.string(D.t["e+CzPj"]), (0, i.jsx)(m.ua7, {
-              text: D.NW.string(D.t.QOZI8f),
+            children: [W.NW.string(W.t["e+CzPj"]), (0, i.jsx)(m.ua7, {
+              text: W.NW.string(W.t.QOZI8f),
               children: e => (0, i.jsx)(p.d, V(H({}, e), {
                 size: "xs"
               }))
@@ -410,7 +410,7 @@ function Q(e) {
   }) : c && !s && (0, S.ye)(l) ? (0, i.jsx)(m.Wn, {
     className: B.primaryEntryPointWarningMessage,
     messageType: m.QYI.WARNING,
-    children: D.NW.format(D.t["s/3hjI"], {})
+    children: W.NW.format(W.t["s/3hjI"], {})
   }) : null
 }
 
@@ -482,7 +482,7 @@ function J(e) {
       children: [(0, i.jsx)(m.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: b ? D.NW.string(D.t.u4YJ8v) : D.NW.string(D.t["N/tajI"])
+        children: b ? W.NW.string(W.t.u4YJ8v) : W.NW.string(W.t["N/tajI"])
       }), b ? (0, i.jsx)(m.u04, {
         size: "sm",
         color: m.TVs.colors.TEXT_BRAND
@@ -493,5 +493,5 @@ function J(e) {
     }) : null]
   })
 }
-let K = [D.t.eCLLn5, D.t.d8pkUF],
-  $ = [D.t.d8pkUF, D.t.MbWAxs, D.t["8kiRMT"], D.t.GRL3Nj]
+let K = [W.t.eCLLn5, W.t.d8pkUF],
+  $ = [W.t.d8pkUF, W.t.MbWAxs, W.t["8kiRMT"], W.t.GRL3Nj]

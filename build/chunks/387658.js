@@ -79,7 +79,7 @@ function Z(e) {
     children: [(0, i.jsx)(u.Rny, {
       className: w.commandFocusBlock,
       children: h
-    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(W, {
+    }), p ? (0, i.jsx)(a.F, {}) : (0, i.jsx)(D, {
       context: l,
       command: o,
       sectionName: c
@@ -134,7 +134,7 @@ function M() {
   })
 }
 
-function W(e) {
+function D(e) {
   let {
     context: t,
     command: n,
@@ -193,7 +193,7 @@ function W(e) {
   })
 }
 
-function D(e) {
+function W(e) {
   let {
     context: t,
     commands: n,
@@ -270,13 +270,13 @@ function B(e) {
     s(y.length > 0)
   }, [s, y]), m || 0 !== y.length) ? (0, i.jsxs)("ul", {
     className: w.contentContainer,
-    children: [(0, i.jsx)(D, {
+    children: [(0, i.jsx)(W, {
       context: n,
       section: f,
       commands: C,
       headerName: T.NW.string(T.t.acSE0t),
       sectionName: o
-    }), (0, i.jsx)(D, {
+    }), (0, i.jsx)(W, {
       context: n,
       section: f,
       commands: m ? k : y,

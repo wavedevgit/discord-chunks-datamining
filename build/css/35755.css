@@ -1,6 +1,6 @@
 /**
   Module ID: 35755
-  Original File Name: 83a61ff5a9c24008
+  Original File Name: 05fb29d34998b1c6
 **/
 .brokenImageIcon_f68fcb {
     color: var(--background-accent);
@@ -641,7 +641,8 @@
 }
 
 .joinButton__18453 {
-    width: 32px
+    padding: 0;
+    width: auto
 }
 
 .friendsWhoPlay__4daa6 {
@@ -1605,4 +1606,4 @@
     border: 3px solid CanvasText
 }
 
-/*# sourceMappingURL=83a61ff5a9c24008.css.map*/
+/*# sourceMappingURL=05fb29d34998b1c6.css.map*/

@@ -62,16 +62,16 @@ function C(e) {
     playSolo: !!L.altLayout && N
   }), {
     disabled: M,
-    reason: W
+    reason: D
   } = (0, m.Z)({
     context: t,
     application: n,
     activityAction: T
-  }), D = L.enabled ? y.NW.string(y.t["1KxmJi"]) : Z;
+  }), W = L.enabled ? y.NW.string(y.t["1KxmJi"]) : Z;
   return (0, i.jsx)(l.ua7, {
-    shouldShow: null != W,
+    shouldShow: null != D,
     tooltipContentClassName: x.tooltipContent,
-    text: W,
+    text: D,
     children: e => {
       var t, r, {
           onClick: o
@@ -121,10 +121,10 @@ function C(e) {
           })
         },
         "aria-label": y.NW.formatToPlainString(y.t["XjP/R0"], {
-          buttonText: D,
+          buttonText: W,
           applicationName: n.name
         }),
-        children: D
+        children: W
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

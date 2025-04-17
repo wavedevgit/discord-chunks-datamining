@@ -39,8 +39,8 @@ var i, r = n(200651),
   k = n(226026),
   Z = n(570949),
   M = n(753972),
-  W = n(635753),
-  D = n(981631),
+  D = n(635753),
+  W = n(981631),
   B = n(217702),
   U = n(388032),
   H = n(860901),
@@ -248,14 +248,14 @@ function K(e) {
   }), [t]), g = l.useMemo(() => null == C ? null : (0, R.ae)(C), [C]), j = (0, N.ZP)(y, ""), [P, O] = l.useState(!1), A = l.useCallback(() => {
     !0 === o && O(!0)
   }, [o]), I = h || (0, L.lf)(t), T = "large_banner" === n || "medium_banner" === n, w = l.useCallback(() => O(!1), []), k = (0, s.e7)([f.Z, E.Z], () => f.Z.inDevModeForApplication(t.id) || E.Z.inTestModeForApplication(t.id), [t.id]), Z = (0, L.WA)(t), {
-    enabled: D
+    enabled: W
   } = S.X.useExperiment({
     location: "AppLauncherAppCard"
   }, {
     autoTrackExposure: !0
   }), {
     friends: B
-  } = (0, b.Z)(t), F = D && (0, L.ye)(t) && B.length > 0;
+  } = (0, b.Z)(t), F = W && (0, L.ye)(t) && B.length > 0;
   return (0, r.jsxs)(r.Fragment, {
     children: [T ? (0, r.jsxs)("div", {
       onMouseEnter: A,
@@ -321,7 +321,7 @@ function K(e) {
           }) : null, (0, r.jsx)(ee, {
             application: t
           })]
-        }), F ? (0, r.jsx)(W.Z, {
+        }), F ? (0, r.jsx)(D.Z, {
           friends: B,
           onClick: _,
           shortText: !0,
@@ -498,7 +498,7 @@ function el(e) {
   } = (0, w.hH)(), {
     friends: c
   } = (0, b.Z)(t), u = l.useCallback(e => {
-    e.stopPropagation(), (0, g.yw)(D.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    e.stopPropagation(), (0, g.yw)(W.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
@@ -514,7 +514,7 @@ function el(e) {
       sectionName: n
     })
   }, [t, o, a, s, r, i, n, c]), d = l.useCallback(e => {
-    e.stopPropagation(), (0, g.yw)(D.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
+    e.stopPropagation(), (0, g.yw)(W.rMx.APPLICATION_COMMAND_SECTION_SELECTED, {
       application_id: t.id,
       section_name: n,
       search_results_position: i,
