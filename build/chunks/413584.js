@@ -37,7 +37,7 @@ var r = n(200651),
   D = n(388032),
   A = n(983459);
 
-function W(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function W(e) {
   return e
 }
 
-function k(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -130,7 +130,7 @@ let L = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("68535").then(n.bind(n, 602320));
-          return t => (0, r.jsx)(e, k(W({}, t), {
+          return t => (0, r.jsx)(e, W(k({}, t), {
             guildId: a,
             welcomeChannel: o,
             onChannelReorder: f,
@@ -166,7 +166,7 @@ let L = "WELCOME_CHANNEL",
           let {
             default: e
           } = await n.e("39143").then(n.bind(n, 737868));
-          return t => (0, r.jsx)(e, k(W({}, t), {
+          return t => (0, r.jsx)(e, W(k({}, t), {
             welcomeChannel: o,
             guildId: a,
             onSave: h
@@ -230,7 +230,7 @@ let L = "WELCOME_CHANNEL",
       let {
         default: e
       } = await n.e("39143").then(n.bind(n, 737868));
-      return n => (0, r.jsx)(e, k(W({}, n), {
+      return n => (0, r.jsx)(e, W(k({}, n), {
         guildId: t.id,
         onSave: B
       }))
@@ -284,7 +284,7 @@ let L = "WELCOME_CHANNEL",
             let {
               default: e
             } = await n.e("90542").then(n.bind(n, 184782));
-            return n => (0, r.jsx)(e, k(W({}, n), {
+            return n => (0, r.jsx)(e, W(k({}, n), {
               guildId: t.id,
               isPreview: !0
             }))
@@ -364,7 +364,7 @@ let L = "WELCOME_CHANNEL",
               let {
                 default: e
               } = await n.e("39143").then(n.bind(n, 737868));
-              return n => (0, r.jsx)(e, k(W({}, n), {
+              return n => (0, r.jsx)(e, W(k({}, n), {
                 guildId: t.id,
                 onSave: B
               }))

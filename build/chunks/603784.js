@@ -95,14 +95,14 @@ let P = i.forwardRef((e, t) => {
       onUserContextMenu: D,
       theme: A
     } = e,
-    W = function() {
+    k = function() {
       let {
         changes: e
       } = i;
       return (i.actionType !== C.vB8.DELETE || i.action === C.rsA.MEMBER_BAN_ADD || i.action === C.rsA.MEMBER_KICK || i.action === C.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, O.xO)(i, e))
     }(),
-    k = I.headerDefault;
-  o ? k = I.headerExpanded : W && (k = I.headerClickable);
+    W = I.headerDefault;
+  o ? W = I.headerExpanded : k && (W = I.headerClickable);
   let L = i.timestampStart.calendar(),
     M = i.timestampEnd.calendar();
   n = L === M ? (0, r.jsx)(d.Text, {
@@ -114,14 +114,14 @@ let P = i.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [L, "—", M]
   });
-  let G = W ? R : C.dG4;
+  let G = k ? R : C.dG4;
   return (0, r.jsx)(a.mh, {
     id: i.id,
     children: e => (0, r.jsxs)("div", {
       ref: t,
       className: l()(I.auditLog, s),
       children: [(0, r.jsxs)(d.P3F, S(E({
-        className: k,
+        className: W,
         "aria-expanded": o,
         onClick: G
       }, e), {
@@ -212,7 +212,7 @@ let P = i.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), W ? (0, r.jsx)(j.Z, {
+        }), k ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: o,

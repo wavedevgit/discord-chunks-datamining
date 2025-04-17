@@ -198,7 +198,7 @@ class A extends i.PureComponent {
     })
   }
 }
-let W = i.forwardRef(function(e, t) {
+let k = i.forwardRef(function(e, t) {
   let {
     guild: n,
     sortedBans: s,
@@ -234,7 +234,7 @@ let W = i.forwardRef(function(e, t) {
   })
 });
 
-function k(e) {
+function W(e) {
   let {
     guildId: t,
     storedSearchQuery: n
@@ -344,12 +344,12 @@ function L() {
   }, [B, M.currentPage]);
   return null == c ? null : (0, r.jsxs)("div", {
     className: P.container,
-    children: [(0, r.jsx)(k, {
+    children: [(0, r.jsx)(W, {
       guildId: O,
       storedSearchQuery: u
     }), (0, r.jsxs)("div", {
       className: P.scrollerContainer,
-      children: [!L && (0, r.jsx)(W, {
+      children: [!L && (0, r.jsx)(k, {
         guild: c,
         bans: x,
         sortedBans: H,

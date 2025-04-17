@@ -57,7 +57,7 @@ function A(e) {
   return e
 }
 
-function W(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +70,7 @@ function W(e, t) {
   }), e
 }
 
-function k(e, t) {
+function W(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -90,8 +90,8 @@ let L = i.forwardRef((e, t) => {
     onHeaderClick: i,
     guildId: s,
     guild: l
-  } = e, a = k(e, ["onHeaderClick", "guildId", "guild"]);
-  return null == s ? null : (0, r.jsx)(S.Z, W(A({
+  } = e, a = W(e, ["onHeaderClick", "guildId", "guild"]);
+  return null == s ? null : (0, r.jsx)(S.Z, k(A({
     ref: t
   }, a), {
     guildId: s,
@@ -112,7 +112,7 @@ let L = i.forwardRef((e, t) => {
         let {
           default: e
         } = await n.e("50929").then(n.bind(n, 595011));
-        return t => (0, r.jsx)(e, W(A({}, t), {
+        return t => (0, r.jsx)(e, k(A({}, t), {
           guildId: s,
           user: i
         }))
@@ -126,7 +126,7 @@ let L = i.forwardRef((e, t) => {
         let {
           default: e
         } = await n.e("51529").then(n.bind(n, 228620));
-        return n => null != t.options.channel ? (0, r.jsx)(e, W(A({}, n), {
+        return n => null != t.options.channel ? (0, r.jsx)(e, k(A({}, n), {
           channel: t.options.channel
         })) : null
       })
@@ -144,7 +144,7 @@ let L = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("51529").then(n.bind(n, 228620));
-            return t => (0, r.jsx)(e, W(A({}, t), {
+            return t => (0, r.jsx)(e, k(A({}, t), {
               channel: i
             }))
           });
@@ -152,7 +152,7 @@ let L = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("5396").then(n.bind(n, 731646));
-            return n => (0, r.jsx)(e, W(A({}, n), {
+            return n => (0, r.jsx)(e, k(A({}, n), {
               id: t.targetId,
               label: P.NW.string(P.t.rCaznZ)
             }))
@@ -163,7 +163,7 @@ let L = i.forwardRef((e, t) => {
             let {
               default: e
             } = await n.e("50929").then(n.bind(n, 595011));
-            return t => (0, r.jsx)(e, W(A({}, t), {
+            return t => (0, r.jsx)(e, k(A({}, t), {
               guildId: s,
               user: o
             }))
@@ -197,8 +197,8 @@ function M(e) {
       children: e => {
         var {
           ref: i
-        } = e, a = k(e, ["ref"]);
-        return (0, r.jsx)("div", W(A({
+        } = e, a = W(e, ["ref"]);
+        return (0, r.jsx)("div", k(A({
           ref: i
         }, a), {
           className: w.list,
