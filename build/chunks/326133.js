@@ -86,7 +86,7 @@ let w = 490,
   D = 490,
   L = 245,
   x = 200,
-  M = 175,
+  M = 120,
   k = i.forwardRef(function(e, t) {
     var n, o, T, A, P;
     let {
@@ -140,8 +140,10 @@ let w = 490,
         [S.autocompleteTop]: Q
       },
       ee = w;
-    null != q && (ee = (null == (T = j.autocomplete) ? void 0 : T.small) ? x : (null == (A = Z.query) ? void 0 : A.type) === y.eq.EMOJIS_AND_STICKERS ? D : L), ee = Math.min(window.innerHeight - M, ee);
-    let et = (0, r.jsx)(_.ZP, {
+    null != q && (ee = (null == (T = j.autocomplete) ? void 0 : T.small) ? x : (null == (A = Z.query) ? void 0 : A.type) === y.eq.EMOJIS_AND_STICKERS ? D : L);
+    let et = Math.min(.5 * window.innerHeight, U);
+    ee = Math.min(window.innerHeight - M - et, ee);
+    let en = (0, r.jsx)(_.ZP, {
       id: B,
       className: a()(S.autocomplete, $),
       innerClassName: S.autocompleteInner,
@@ -182,7 +184,7 @@ let w = 490,
         spacing: 8,
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
-        children: () => et
+        children: () => en
       })
-    }) : et
+    }) : en
   })
