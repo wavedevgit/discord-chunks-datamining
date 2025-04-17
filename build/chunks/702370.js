@@ -679,7 +679,7 @@ let ey = {
         location_stack: I,
         sku_id: w.skuId,
         product_type: S
-      }), w.items.map(z.oK)
+      }), w.items.forEach(z.oK)
     }, [c, I, w.skuId, w.items, S]);
     let y = (0, R.r)(),
       Z = t === h.Dvm.EXITING;
