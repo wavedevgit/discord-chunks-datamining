@@ -96,8 +96,7 @@ function v(e) {
           })
         },
         onUserClick: e => e.stopPropagation(),
-        disableUserPopout: !!P || (e => e === t.id),
-        overflowCountVariant: "text-xs/normal"
+        disableUserPopout: !!P || (e => e === t.id)
       })]
     })]
   })

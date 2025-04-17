@@ -163,10 +163,12 @@ function S(e) {
               children: null != (i = t.user.globalName) ? i : t.user.username
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
-              textVariant: "text-xs/medium"
+              textVariant: "text-xs/medium",
+              textClassName: I.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
-              textVariant: "text-xs/medium"
+              textVariant: "text-xs/medium",
+              textClassName: I.statusText
             })]
           }))
         }

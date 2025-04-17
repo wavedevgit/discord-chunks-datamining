@@ -189,7 +189,6 @@ function q(e) {
           },
           onUserClick: e => e.stopPropagation(),
           disableUserPopout: e => e === t.id,
-          overflowCountVariant: "text-xxs/semibold",
           overflowCountColor: "text-muted"
         })]
       })

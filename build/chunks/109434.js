@@ -86,7 +86,7 @@ class b {
     }, this.setTagSetting = (e, t) => {
       this.setChannelState(e, {
         tagSetting: t
-      })
+      }), h.Z.setTagSetting(t)
     }, this.setScrollPosition = (e, t) => {
       this.setChannelState(e, {
         scrollPosition: t
