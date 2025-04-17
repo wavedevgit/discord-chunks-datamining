@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(460181),
   m = n(155409),
   b = n(944486),
-  y = n(594174),
-  _ = n(431),
+  _ = n(594174),
+  y = n(431),
   v = n(774343),
   O = n(417363),
   C = n(941128),
@@ -52,8 +52,8 @@ function D(e) {
     selected: p,
     user: f,
     badge: b,
-    link: y,
-    showProgressBadge: _
+    link: _,
+    showProgressBadge: y
   } = e, v = (0, o.e7)([u.Z], () => u.Z.isEditorOpen), [O, C] = i.useState(!1), [S, j] = i.useState(!1), [w, D] = i.useState(null), [L, k] = i.useState(0), M = (0, l.Ie)("home"), U = (0, h.Q3)("DefaultHomeButton"), G = () => {
     D(null), k(0), clearTimeout(w)
   };
@@ -61,7 +61,7 @@ function D(e) {
   let B = T.NW.string(T.t.YUU0RE);
   S && (B = s.K.get(P.wli) ? T.NW.string(T.t.nkq1l5) : T.NW.string(T.t.Be8Q5O));
   let W = null;
-  !p && _ && (W = (0, r.jsx)(c.Z, {
+  !p && y && (W = (0, r.jsx)(c.Z, {
     className: A.downloadProgress,
     determineOwnVisibility: !1
   }));
@@ -106,7 +106,7 @@ function D(e) {
         ariaLabel: T.NW.string(T.t.YUU0RE)
       }, M), n = n = {
         to: {
-          pathname: y,
+          pathname: _,
           state: {
             analyticsSource: {
               page: P.ZY5.GUILD_CHANNEL,
@@ -166,12 +166,12 @@ function L() {
     {
       unviewedTrialCount: l,
       unviewedDiscountCount: s
-    } = (0, o.cj)([_.Z], () => ({
-      unviewedTrialCount: _.Z.getUnacknowledgedOffers(i).length,
-      unviewedDiscountCount: _.Z.getUnacknowledgedDiscountOffers().length
+    } = (0, o.cj)([y.Z], () => ({
+      unviewedTrialCount: y.Z.getUnacknowledgedOffers(i).length,
+      unviewedDiscountCount: y.Z.getUnacknowledgedDiscountOffers().length
     })),
     a = l + s,
-    u = (0, o.e7)([y.default], () => y.default.getCurrentUser()),
+    u = (0, o.e7)([_.default], () => _.default.getCurrentUser()),
     d = (0, p.q)(),
     h = n + a + d,
     g = h === a && a > 0 && n + d === 0,

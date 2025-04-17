@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(873696),
   m = n(66999),
   b = n(340541),
-  y = n(22082),
-  _ = n(665906),
+  _ = n(22082),
+  y = n(665906),
   v = n(592125),
   O = n(430824),
   C = n(496675),
@@ -98,8 +98,8 @@ class k extends N.ZP {
       connectChannelDragSource: h,
       connectDragPreview: p,
       canReorderChannel: m,
-      isSubscriptionGated: y,
-      isFavoriteSuggestion: _,
+      isSubscriptionGated: _,
+      isFavoriteSuggestion: y,
       subtitle: v,
       forceTopLevelThread: O,
       embeddedApps: C,
@@ -128,7 +128,7 @@ class k extends N.ZP {
           className: A.iconVisibility,
           channel: e,
           guild: t,
-          selected: !_ && n,
+          selected: !y && n,
           muted: i,
           unread: l,
           mentionCount: u,
@@ -138,7 +138,7 @@ class k extends N.ZP {
           onMouseDown: this.handleMouseDown,
           onContextMenu: this.handleContextMenu,
           connectDragPreview: m ? p : null,
-          isFavoriteSuggestion: _,
+          isFavoriteSuggestion: y,
           channelTypeOverride: O ? Z.d4z.GUILD_TEXT : void 0,
           resolvedUnreadSetting: S,
           withGuildIcon: j,
@@ -146,11 +146,11 @@ class k extends N.ZP {
             channel: e,
             unread: l,
             mentionCount: u,
-            isSubscriptionGated: y
+            isSubscriptionGated: _
           }),
-          children: [_ && (0, r.jsxs)(r.Fragment, {
+          children: [y && (0, r.jsxs)(r.Fragment, {
             children: [this.renderAcceptSuggestionButton(), this.renderRemoveSuggestionButton()]
-          }), !_ && (0, r.jsxs)(r.Fragment, {
+          }), !y && (0, r.jsxs)(r.Fragment, {
             children: [this.renderChannelInfo(), x && this.renderOptionsButton({
               onContextMenu: this.handleContextMenu
             }), !x && (0, r.jsxs)(r.Fragment, {
@@ -265,7 +265,7 @@ function U(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, _.JQ)(t), d = (0, s.cj)([S.ZP], () => ({
+  } = (0, y.JQ)(t), d = (0, s.cj)([S.ZP], () => ({
     unread: S.ZP.hasUnread(t.id),
     ackMessageId: S.ZP.ackMessageId(t.id),
     isLowImportanceMention: S.ZP.getIsMentionLowImportance(t.id)
@@ -275,7 +275,7 @@ function U(e) {
       canManageChannel: C.Z.can(Z.Plq.MANAGE_CHANNELS, t),
       canReorderChannel: !0 !== i && (n.id === T._ || (null != e ? C.Z.can(Z.Plq.MANAGE_CHANNELS, e) : C.Z.can(Z.Plq.MANAGE_CHANNELS, n)))
     }
-  }), b = (0, s.e7)([y.Z], () => y.Z.shouldIndicateNewChannel(n.id, t.id)), {
+  }), b = (0, s.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: O,
     isSubscriptionGated: x
   } = (0, m.Z)(t.id), N = (0, s.e7)([j.ZP], () => j.ZP.isFavorite(n.id, t.id)), P = (0, s.e7)([E.default], () => {

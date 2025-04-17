@@ -24,8 +24,8 @@ let m = i.memo(function(e) {
     withGuildIcon: m
   } = e, {
     density: b
-  } = (0, a.TCT)(), y = (0, c.Q3)("GuildSidebarThreadList"), _ = (0, s.Wu)([u.Z], () => l.map(e => u.Z.getChannel(e)).filter(h.lm), [l]), v = (0, s.e7)([d.ZP], () => {
-    let e = _[_.length - 1];
+  } = (0, a.TCT)(), _ = (0, c.Q3)("GuildSidebarThreadList"), y = (0, s.Wu)([u.Z], () => l.map(e => u.Z.getChannel(e)).filter(h.lm), [l]), v = (0, s.e7)([d.ZP], () => {
+    let e = y[y.length - 1];
     if (null == e) return 0;
     let t = d.ZP.getVoiceStates(e.guild_id)[e.id];
     return null == t || 0 === t.length ? 0 : i !== e.id ? 40 : 32 * t.length + 8
@@ -42,13 +42,13 @@ let m = i.memo(function(e) {
           [g.spineBorderWithGuildIcon]: m
         }),
         style: {
-          bottom: (y && "cozy" === b ? 28 : 24) + v
+          bottom: (_ && "cozy" === b ? 28 : 24) + v
         }
-      }), _.map((e, t) => (0, r.jsx)(p.Z, {
+      }), y.map((e, t) => (0, r.jsx)(p.Z, {
         thread: e,
         isSelectedChannel: (null == n ? void 0 : n.id) === e.id,
         isSelectedVoice: i === e.id,
-        isLast: t === _.length - 1,
+        isLast: t === y.length - 1,
         withGuildIcon: m
       }, e.id))]
     })

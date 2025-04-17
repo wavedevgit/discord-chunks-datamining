@@ -1,6 +1,6 @@
 /** Chunk was on 38662 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651),
   i = n(192379),
@@ -18,18 +18,18 @@ var r = n(200651),
   m = n(981631),
   b = n(388032);
 
-function y(e) {
+function _(e) {
   let {
     guild: t,
     selected: n
-  } = e, y = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), _ = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = y && null != _ ? _ : 0;
+  } = e, _ = (0, l.e7)([f.Z], () => f.Z.can(m.Plq.KICK_MEMBERS, t)), y = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), v = _ && null != y ? y : 0;
   i.useEffect(() => {
-    y && t.hasFeature(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    _ && t.hasFeature(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.hasFeature(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
       limit: h.p
     })
-  }, [y, t]);
+  }, [_, t]);
   let O = i.useCallback(() => {
       (0, g._X)(t.id)
     }, [t.id]),

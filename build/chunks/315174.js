@@ -18,8 +18,8 @@ var r = n(200651),
   g = n(210887),
   m = n(695346),
   b = n(496675),
-  y = n(768581),
-  _ = n(358555),
+  _ = n(768581),
+  y = n(358555),
   v = n(981631),
   O = n(647086),
   C = n(388032),
@@ -85,7 +85,7 @@ function x(e) {
         className: o()(S.bannerImg, {
           [S.bannerImgFullWidth]: a.tq
         }),
-        src: null != (t = y.ZP.getGuildBannerURL({
+        src: null != (t = _.ZP.getGuildBannerURL({
           id: i.id,
           banner: c
         }, u)) ? t : "",
@@ -184,7 +184,7 @@ function Z(e) {
     children: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(_.Z, {
+    children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
     }), i.id === O._ && (0, r.jsx)(I, {}), (0, r.jsx)(w, {
@@ -273,7 +273,7 @@ function T(e) {
           },
           children: [(0, r.jsxs)("div", {
             className: S.guildBadgeAndName,
-            children: [(0, r.jsx)(_.Z, {
+            children: [(0, r.jsx)(y.Z, {
               guild: l,
               isBannerVisible: t
             }), l.id === O._ && (0, r.jsx)(I, {}), (0, r.jsx)(w, {
@@ -313,7 +313,7 @@ let A = i.memo(function(e) {
     onMouseDown: f,
     disableBannerAnimation: g,
     "aria-expanded": b,
-    "aria-controls": _,
+    "aria-controls": y,
     guild: O,
     guildBanner: C,
     animationOverlayHeight: I,
@@ -321,7 +321,7 @@ let A = i.memo(function(e) {
     headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
-  } = e, L = O.hasFeature(v.oNc.ANIMATED_BANNER), k = (0, h.Z)(O), M = !k && O.hasCommunityInfoSubheader(), U = !k && A, G = (0, y.xR)(C) && L && !g, [B, W] = i.useState(!1), V = i.useRef(!1), H = i.useRef(null), F = i.useRef(void 0), z = m.QK.getSetting();
+  } = e, L = O.hasFeature(v.oNc.ANIMATED_BANNER), k = (0, h.Z)(O), M = !k && O.hasCommunityInfoSubheader(), U = !k && A, G = (0, _.xR)(C) && L && !g, [B, W] = i.useState(!1), V = i.useRef(!1), H = i.useRef(null), F = i.useRef(void 0), z = m.QK.getSetting();
   i.useEffect(() => {
     if (G && t && !V.current && z) return W(!0), F.current = setTimeout(() => {
       W(!1)
@@ -349,7 +349,7 @@ let A = i.memo(function(e) {
       guild: O,
       onClick: s,
       onContextMenu: c,
-      ariaControls: _,
+      ariaControls: y,
       ariaExpanded: b,
       guildHeaderRef: H
     };

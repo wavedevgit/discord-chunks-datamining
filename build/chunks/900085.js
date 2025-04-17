@@ -16,8 +16,8 @@ var r, i = n(200651),
   g = n(815372),
   m = n(14429),
   b = n(576855),
-  y = n(313201),
-  _ = n(991346),
+  _ = n(313201),
+  y = n(991346),
   v = n(592125),
   O = n(888369),
   C = n(430824),
@@ -285,7 +285,7 @@ class q extends l.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, y.hQ)()), k(this, "state", {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "inputRef", l.createRef()), k(this, "_listId", (0, _.hQ)()), k(this, "state", {
       query: this.props.query,
       mouseFocusDisabled: !0
     }), k(this, "handleInputChange", () => {
@@ -569,7 +569,7 @@ class q extends l.PureComponent {
 
 function Q(e) {
   let t = (0, c.cj)([w.Z], () => w.Z.getProps()),
-    n = (0, _.Pt)(),
+    n = (0, y.Pt)(),
     r = A.Z.useExperiment({
       location: "QuickSwitcher"
     }).enabled,

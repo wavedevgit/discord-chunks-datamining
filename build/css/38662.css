@@ -1,6 +1,6 @@
 /**
   Module ID: 38662
-  Original File Name: 292b458299d4120a
+  Original File Name: e11dc2e9fbc1de47
 **/
 .ragingDemon_ac6454 {
     color: var(--white-500);
@@ -1652,6 +1652,10 @@
     margin-bottom: var(--spacing-16);
     object-fit: cover;
     width: 100%
+}
+
+.newPerksImage_a1bfef {
+    height: 190px
 }
 
 .close_a1bfef {
@@ -6474,4 +6478,4 @@
     background-image: url(/assets/05207174d5432737.svg)
 }
 
-/*# sourceMappingURL=292b458299d4120a.css.map*/
+/*# sourceMappingURL=e11dc2e9fbc1de47.css.map*/

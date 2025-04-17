@@ -1,6 +1,6 @@
 /** Chunk was on 38662 **/
 n.d(t, {
-  Z: () => y
+  Z: () => _
 });
 var r = n(200651);
 n(192379);
@@ -49,12 +49,12 @@ function b(e, t) {
   }), e
 }
 
-function y(e) {
+function _(e) {
   let {
     guild: t,
-    selected: y
+    selected: _
   } = e, {
-    hasUnread: _,
+    hasUnread: y,
     mentionCount: v
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, p.W.GUILD_EVENT),
@@ -82,7 +82,7 @@ function y(e) {
       className: e
     }),
     text: j,
-    selected: y,
+    selected: _,
     onClick: C,
     onContextMenu: e => {
       (0, s.jW)(e, async () => {
@@ -94,7 +94,7 @@ function y(e) {
         }))
       })
     },
-    showUnread: _ && !O,
+    showUnread: y && !O,
     trailing: !O && v > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: !0,

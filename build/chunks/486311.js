@@ -17,8 +17,8 @@ var r = n(200651),
   g = n(332538),
   m = n(921944),
   b = n(680278),
-  y = n(388032),
-  _ = n(388298);
+  _ = n(388032),
+  y = n(388298);
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -89,7 +89,7 @@ let O = {
       children: e => {
         var i, s;
         return (0, r.jsx)(c.m, (i = v({}, e), s = s = {
-          className: _.container,
+          className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(a.$Eu, {
             size: "md",
@@ -97,10 +97,10 @@ let O = {
             color: "currentColor"
           }),
           background: (null == C ? void 0 : C.popout) != null && (0, r.jsx)("div", {
-            className: _.lottieContainer,
+            className: y.lottieContainer,
             children: (0, r.jsx)(a.kci, {
               nextScene: P,
-              className: _.lottie,
+              className: y.lottie,
               sceneSegments: O,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: w,
@@ -111,9 +111,9 @@ let O = {
           }),
           text: (0, r.jsx)("span", {
             className: o()({
-              [_.textImportant]: (null == C ? void 0 : C.showUnread) === !0
+              [y.textImportant]: (null == C ? void 0 : C.showUnread) === !0
             }),
-            children: y.NW.string(b.Z.yv3DJC)
+            children: _.NW.string(b.Z.yv3DJC)
           }),
           selected: l,
           onClick: S,

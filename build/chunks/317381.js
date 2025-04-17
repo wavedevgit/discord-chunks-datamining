@@ -71,7 +71,8 @@ let D = {
     everLaunchedActivities: new Set,
     seenNewActivities: {},
     seenUpdatedActivities: {},
-    surfacesToShowNewActivityIndicator: new Set
+    surfacesToShowNewActivityIndicator: new Set,
+    lastCheckedForBadgeableActivities: null
   },
   L = [],
   x = [],
@@ -376,7 +377,7 @@ function em(e) {
     r.label_type === l.ww.UPDATED && (!u || d) && (Object.values(l.eR).forEach(e => {
       r.omit_badge_from_surfaces.includes(e) || D.surfacesToShowNewActivityIndicator.add(e)
     }), D.seenUpdatedActivities[t] = r.label_until)
-  })
+  }), D.lastCheckedForBadgeableActivities = new Date(n).toISOString()
 }
 
 function eg(e) {
@@ -630,7 +631,9 @@ C(eP, "displayName", "EmbeddedActivitiesStore"), C(eP, "persistKey", "EmbeddedAc
   return w(R({}, e), {
     everLaunchedActivities: n
   })
-}, e => (delete e.usersHavePlayedByApp, R({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(l.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, R({}, e))]);
+}, e => (delete e.usersHavePlayedByApp, R({}, e)), e => (e.surfacesToShowNewActivityIndicator = new Set, e.shouldShowNewActivityIndicator && e.surfacesToShowNewActivityIndicator.add(l.eR.VOICE_LAUNCHER), delete e.shouldShowNewActivityIndicator, R({}, e)), e => w(R({}, e), {
+  lastCheckedForBadgeableActivities: null
+})]);
 let ew = new eP(s.Z, {
     ACTIVITY_LAYOUT_MODE_UPDATE: eN,
     CONNECTION_OPEN_SUPPLEMENTAL: eo,

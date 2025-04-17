@@ -16,9 +16,9 @@ var i, l = n(442837),
   g = n(594174),
   m = n(998502),
   b = n(981631),
-  y = n(176505);
+  _ = n(176505);
 
-function _(e, t, n) {
+function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -34,7 +34,7 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      _(e, t, n[t])
+      y(e, t, n[t])
     })
   }
   return e
@@ -63,7 +63,7 @@ class x extends(i = l.ZP.Store) {
     }
   }
 }
-_(x, "displayName", "InviteModalStore");
+y(x, "displayName", "InviteModalStore");
 let N = new x(o.Z, {
   OVERLAY_INITIALIZE: E,
   CONNECTION_OPEN: E,
@@ -85,7 +85,7 @@ let N = new x(o.Z, {
         if (null == n) return !1;
         if (null != h.Z.getGuild(n.id) && !(0, s.TY)(t)) {
           let e = function(e) {
-            if ((0, s.W6)(e)) return y.oC.ROLE_SUBSCRIPTIONS;
+            if ((0, s.W6)(e)) return _.oC.ROLE_SUBSCRIPTIONS;
             let {
               channel: t
             } = e;

@@ -28,7 +28,7 @@ function f(e) {
     opacity: 0
   }), b = (0, c.dQu)(h).spring({
     opacity: 1
-  }), [y, _] = (0, c.q_F)(() => ({
+  }), [_, y] = (0, c.q_F)(() => ({
     from: {
       backgroundColor: f,
       borderColor: f
@@ -56,7 +56,7 @@ function f(e) {
     } = O.current, {
       useReducedMotion: o
     } = d.Z, s = 200 * !o;
-    _({
+    y({
       reset: !0,
       immediate: !1,
       to: {
@@ -67,7 +67,7 @@ function f(e) {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), _({
+    }), y({
       delay: l,
       immediate: o,
       to: [{
@@ -78,7 +78,7 @@ function f(e) {
         duration: s,
         easing: a.Z.Easing.ease
       }
-    }), _({
+    }), y({
       delay: l + 200 + 200,
       immediate: o,
       to: [{
@@ -91,8 +91,8 @@ function f(e) {
       },
       onRest: t
     })
-  }, [_]), (0, r.jsx)(s.animated.div, {
-    style: y,
+  }, [y]), (0, r.jsx)(s.animated.div, {
+    style: _,
     className: o()(p.settingsItemHighlight, n),
     children: t
   })
