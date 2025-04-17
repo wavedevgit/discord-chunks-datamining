@@ -1,15 +1,15 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(406877);
+  l = n(406877);
 
-function l(e) {
+function a(e) {
   var t, n, {
-      guildId: l,
+      guildId: a,
       productId: o,
       attachmentId: s
     } = e,
@@ -18,20 +18,20 @@ function l(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          a = Object.keys(e);
-        for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var a = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["guildId", "productId", "attachmentId"]);
   let {
     isLoading: u,
     downloadAttachment: d
-  } = (0, a.Z)(l, o);
+  } = (0, l.Z)(a, o);
   return (0, r.jsx)(i.zxk, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

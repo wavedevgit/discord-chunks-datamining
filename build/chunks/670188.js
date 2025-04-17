@@ -12,7 +12,7 @@ var r = n(200651),
   c = n(594174),
   u = n(122521),
   d = n(184301),
-  f = n(347475),
+  f = n(726033),
   _ = n(228168),
   p = n(231338),
   h = n(744790);
@@ -123,16 +123,16 @@ let O = (0, a.pxk)(a.EFr.SIZE_80),
         guildId: m,
         channelId: E
       }), [T, x, M, v, m, E]),
-      q = i.useCallback(e => null == M ? null : (null == H.current && (H.current = Date.now()), U) ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, L, e), {
-        userId: M.id,
+      q = i.useCallback(e => null == M || null == x ? null : (null == H.current && (H.current = Date.now()), U) ? (0, r.jsx)(a.xxz, {}) : null != N ? N(e) : (0, r.jsx)(f.Z, b(g({}, L, e), {
         user: M,
+        currentUser: x,
         guildId: m,
         channelId: E,
         openedAt: H.current,
         closePopout: () => {
           e.closePopout(), null == R || R()
         }
-      })), [M, U, N, L, m, E, R]),
+      })), [M, x, U, N, L, m, E, R]),
       Q = i.useCallback(() => {
         K(), B.current = !0, w && (F.current = setTimeout(async () => {
           if (B.current) try {

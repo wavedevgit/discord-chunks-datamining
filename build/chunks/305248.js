@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(642613);
 var r = n(200651),
   i = n(192379),
-  a = n(392711),
-  l = n.n(a),
+  l = n(392711),
+  a = n.n(l),
   o = n(442837),
   s = n(570140),
   c = n(45114),
@@ -23,8 +23,8 @@ function x(e) {
   let {
     channel: t,
     channelRecord: n,
-    deleteChannel: a
-  } = e, x = (0, o.Wu)([p.Z, f.Z], () => l()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
+    deleteChannel: l
+  } = e, x = (0, o.Wu)([p.Z, f.Z], () => a()(p.Z.getThreadsForParent(n.guild_id, n.id)).values().filter(e => {
     let {
       id: n
     } = e;
@@ -39,7 +39,7 @@ function x(e) {
   }, []);
   return i.useEffect(() => {
     null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== x.length || s.Z.wait(() => {
-      (0, c.In)(t.channelId, !0), a(t.channelId)
+      (0, c.In)(t.channelId, !0), l(t.channelId)
     })
   }), (0, r.jsx)("div", {
     className: b.container,

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(834129),
-  l = n(388032),
+  l = n(834129),
+  a = n(388032),
   o = n(794446);
 
 function s(e) {
@@ -18,12 +18,12 @@ function s(e) {
     compact: i,
     onClick: s
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     icon: n(508933),
     timestamp: t.timestamp,
     compact: i,
     contentClassName: o.messageContent,
-    children: l.NW.format(l.t.bYdG3d, {
+    children: a.NW.format(a.t.bYdG3d, {
       onClick: s
     })
   })
@@ -34,12 +34,12 @@ function c(e) {
     message: t,
     compact: i
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     icon: n(324606),
     timestamp: t.timestamp,
     compact: i,
     contentClassName: o.messageContent,
-    children: l.NW.string(l.t.tu6tOT)
+    children: a.NW.string(a.t.tu6tOT)
   })
 }
 
@@ -48,7 +48,7 @@ function u(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     iconNode: (0, r.jsx)(i.P4T, {
       size: "custom",
       width: 20,
@@ -59,7 +59,7 @@ function u(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: o.messageContent,
-    children: l.NW.string(l.t.vzfXqq)
+    children: a.NW.string(a.t.vzfXqq)
   })
 }
 
@@ -68,7 +68,7 @@ function d(e) {
     message: t,
     compact: n
   } = e;
-  return (0, r.jsx)(a.Z, {
+  return (0, r.jsx)(l.Z, {
     iconNode: (0, r.jsx)(i.P4T, {
       size: "custom",
       width: 20,
@@ -79,6 +79,6 @@ function d(e) {
     timestamp: t.timestamp,
     compact: n,
     contentClassName: o.messageContent,
-    children: l.NW.string(l.t["/Tfvyc"])
+    children: a.NW.string(a.t["/Tfvyc"])
   })
 }

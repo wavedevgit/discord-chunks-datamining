@@ -4,9 +4,9 @@ n.d(t, {
   u: () => v
 }), n(190126), n(368063), n(65234), n(111804), n(490233), n(97749), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  a = n(120356),
+  o = n.n(a),
   s = n(442837),
   c = n(481060),
   u = n(434650),
@@ -51,7 +51,7 @@ function E(e) {
 var v = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
 
 function N(e) {
-  var t, n, r, l;
+  var t, n, r, a;
   let {
     title: v,
     header: N,
@@ -67,7 +67,7 @@ function N(e) {
   A = {
     id: null != (n = null == (t = A) ? void 0 : t.id) ? n : "0",
     linkType: null != (r = null == t ? void 0 : t.linkType) ? r : g.Un.UNKNOWN,
-    referrerId: null != (l = null == t ? void 0 : t.referrerId) ? l : f.default.getId(),
+    referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : f.default.getId(),
     activityCustomId: null == t ? void 0 : t.activityCustomId,
     onView: null == t ? void 0 : t.onView,
     onLinkCopied: null == t ? void 0 : t.onLinkCopied
@@ -75,7 +75,7 @@ function N(e) {
   let {
     primaryColor: w,
     secondaryColor: Z
-  } = (0, p.Z)(null != I ? I : j), R = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = a.useRef(!1), L = (0, u.O)(e => {
+  } = (0, p.Z)(null != I ? I : j), R = "linear-gradient(45deg, ".concat(w, ", ").concat(Z, ")"), k = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), D = l.useRef(!1), L = (0, u.O)(e => {
     if (!1 === D.current && e) {
       var t;
       null == A || null == (t = A.onView) || t.call(A), (0, g.GF)(A.id, A.linkType, A.referrerId, A.activityCustomId), D.current = !0
@@ -92,10 +92,10 @@ function N(e) {
       size: "xs",
       color: "currentColor"
     })
-  }) : null, W = null != j, U = null != C && !1 === k, F = W || U, B = 0 === S ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = a.useRef(null), H = a.useCallback(() => {
+  }) : null, W = null != j, U = null != C && !1 === k, F = W || U, B = 0 === S ? x.bannerAspectRatioBot : x.bannerAspectRatioActivity, G = l.useRef(null), H = l.useCallback(() => {
     let e = G.current;
     null != e && ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
-  }, []), V = a.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
+  }, []), V = l.useMemo(() => !!U && new URL(C).pathname.endsWith(".gif"), [U, C]);
   return (0, i.jsxs)("div", {
     ref: L,
     className: o()(x.embed, {
@@ -156,21 +156,21 @@ function N(e) {
           let {
             label: n,
             onClick: r,
-            disabledReason: a,
-            submitting: l,
+            disabledReason: l,
+            submitting: a,
             trackingArea: o
-          } = e, s = null != a, u = 0 === t, d = {
+          } = e, s = null != l, u = 0 === t, d = {
             color: u ? c.zxk.Colors.WHITE : c.zxk.Colors.TRANSPARENT,
             className: u ? x.primaryButton : x.alwaysWhiteText,
             disabled: s,
-            submitting: l,
+            submitting: a,
             children: n,
             onClick(e) {
               r(e), (0, g.KX)(A.id, A.linkType, o, A.referrerId, A.activityCustomId)
             }
           };
           return s ? (0, i.jsx)(c.ua7, {
-            text: a,
+            text: l,
             children: e => {
               var t = y({}, function(e) {
                 if (null == e) throw TypeError("Cannot destructure " + e);

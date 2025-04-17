@@ -1,11 +1,11 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  F: () => a
+  F: () => l
 });
 var r = n(70956),
   i = n(388032);
 
-function a(e) {
+function l(e) {
   let t = (e - Date.now()) / r.Z.Millis.HOUR;
   return t > 24 ? i.NW.formatToPlainString(i.t["g9s+dH"], {
     numDays: Math.floor(t / 24)

@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(442837),
-  a = n(45114),
-  l = n(733427),
+  l = n(45114),
+  a = n(733427),
   o = n(455199),
   s = n(833592),
   c = n(140155),
@@ -40,9 +40,9 @@ let p = e => {
       roleFilter: o.Z.roleFilter
     }));
     r.useEffect(() => ((0, s.Vk)(!0), () => (0, s.Vk)(!1)), []), r.useEffect(() => {
-      x && t && (0, a.FT)(d.W.NOTIFICATION_CENTER)
+      x && t && (0, l.FT)(d.W.NOTIFICATION_CENTER)
     }, [t, x]);
-    let S = (0, l.Z)();
+    let S = (0, a.Z)();
     r.useEffect(() => () => {
       p ? !S() && (O || E.length > 100) && (0, s.jF)() : n && E.length > 100 && (0, s.jF)()
     }, [n, E, p, S, O]), r.useEffect(() => {

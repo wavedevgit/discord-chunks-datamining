@@ -4,8 +4,8 @@ n.r(t), n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(525654),
   s = n.n(o),
   c = n(873546),
@@ -60,13 +60,13 @@ let N = [{
       url: t,
       text: n,
       onClick: i
-    } = e, a = (0, h.Q3)("DownloadButton"), o = (0, p.nYM)({
+    } = e, l = (0, h.Q3)("DownloadButton"), o = (0, p.nYM)({
       grow: !0
     });
     return (0, r.jsx)(p.eee, {
       useDefaultUnderlineStyles: !1,
       href: t,
-      className: a ? l()(o, v.refreshDownloadButton) : v.downloadButton,
+      className: l ? a()(o, v.refreshDownloadButton) : v.downloadButton,
       onClick: i,
       children: n
     })
@@ -75,7 +75,7 @@ let N = [{
     let t, {
         platform: n,
         onClick: i,
-        onMouseEnter: a,
+        onMouseEnter: l,
         isActive: o,
         claimed: s
       } = e,
@@ -86,7 +86,7 @@ let N = [{
         platformKey: m
       } = n,
       f = c(),
-      h = l()(v.icon, u);
+      h = a()(v.icon, u);
     if (Array.isArray(d)) t = d.map((e, t) => {
       let n = s ? e.url() : "";
       return (0, r.jsx)(j, {
@@ -104,10 +104,10 @@ let N = [{
       })
     }
     return (0, r.jsx)("li", {
-      className: l()(v.platform, {
+      className: a()(v.platform, {
         [v.active]: o
       }),
-      onMouseEnter: () => a(m),
+      onMouseEnter: () => l(m),
       children: (0, r.jsxs)("div", {
         className: v.contentWrapper,
         children: [(0, r.jsxs)("div", {
@@ -115,7 +115,7 @@ let N = [{
           children: [(0, r.jsx)("div", {
             className: h
           }), (0, r.jsx)("div", {
-            className: l()(v.active, h)
+            className: a()(v.active, h)
           })]
         }), (0, r.jsxs)("div", {
           children: [(0, r.jsx)(p.X6q, {
@@ -123,7 +123,7 @@ let N = [{
             variant: "heading-lg/semibold",
             children: f
           }), (0, r.jsx)("div", {
-            className: l()(v.downloadButtons, {
+            className: a()(v.downloadButtons, {
               [v.list]: Array.isArray(t)
             }),
             children: t
@@ -137,7 +137,7 @@ function S(e) {
   let {
     source: t,
     onClose: n,
-    transitionState: a
+    transitionState: l
   } = e, o = (0, d.e7)([_.default], () => _.default.getCurrentUser()), x = (0, d.e7)([g.default], () => g.default.getFingerprint()), j = null == o || o.isClaimed(), [S, I] = i.useState(function() {
     var e;
     switch (null == (e = s().os) ? void 0 : e.family) {
@@ -188,8 +188,8 @@ function S(e) {
   return (0, r.jsx)(p.f6W, {
     theme: y.BRd.LIGHT,
     children: e => (0, r.jsxs)(p.Y0X, {
-      className: l()(v.downloadApps, w ? void 0 : e),
-      transitionState: a,
+      className: a()(v.downloadApps, w ? void 0 : e),
+      transitionState: l,
       "aria-labelledby": A,
       children: [(0, r.jsx)(p.olH, {
         onClick: n,

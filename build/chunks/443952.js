@@ -319,36 +319,36 @@ let B = {
   }),
   [G.Etm.SHARE_INTERACTION]: (0, a.S)(G.Etm.SHARE_INTERACTION, {
     scope: {
-      [U.Gp.ANY]: [U.wE]
+      [U.Gp.ANY]: [U.wE, U.lH]
     },
     handler(e) {
       var t;
       let n, {
-        socket: r,
-        args: {
-          command: i,
-          preview_image: l,
-          components: a,
-          require_launch_channel: o,
-          content: s
-        }
-      } = e;
-      (0, w.bu)(r.transport);
-      let c = r.application.id;
-      if (null == c) throw new L.Z({
+          socket: r,
+          args: {
+            command: i,
+            preview_image: l,
+            components: a,
+            require_launch_channel: s,
+            content: c,
+            pid: u
+          }
+        } = e,
+        d = r.application.id;
+      if (null == d) throw new L.Z({
         errorCode: G.lTL.INVALID_COMMAND
       }, "No application.");
-      if (!W.Cr.includes(c)) throw new L.Z({
+      if (!W.Cr.includes(d)) throw new L.Z({
         errorCode: G.lTL.INVALID_COMMAND
       }, "Unsupported application.");
       if (!(0, P.yE)(null != (t = r.application.flags) ? t : 0, G.udG.EMBEDDED)) throw new L.Z({
         errorCode: G.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
-      let u = (0, D.Z)();
-      if (null == u) throw new L.Z({
+      let p = (0, D.Z)();
+      if (null == p && s) throw new L.Z({
         errorCode: G.lTL.INVALID_COMMAND
       }, "No channel found");
-      if (null !== l || null !== a || null !== s) {
+      if (null !== l || null !== a || null !== c) {
         let e = [];
         void 0 !== l && (e = [{
           id: A.default.cast(A.default.fromTimestamp(Date.now())),
@@ -360,25 +360,28 @@ let B = {
           width: l.width
         }]), n = new y.ZP({
           id: A.default.cast(A.default.fromTimestamp(Date.now())),
-          applicationId: c,
-          content: s,
+          applicationId: d,
+          content: c,
           components: a,
           attachments: e
         })
       }
       return new Promise(e => {
-        let t = !1;
-        (0, O.M)({
-          applicationId: c,
-          channel: u,
+        let t = !1,
+          r = (0, M.jU)(u),
+          l = o.z1l;
+        (N.Z.getWindowOpen(G.KJ3.ACTIVITY_POPOUT) || r.context === G.IlC.POPOUT) && (l = o.u1M), (0, O.M)({
+          applicationId: d,
+          channel: p,
           command: i,
-          requireLaunchChannel: !0 === o,
+          requireLaunchChannel: !0 === s,
           onShareResult: n => {
-            t || (t = n), e({
+            t || (t = n), r.lock(), e({
               success: t
             })
           },
-          previewMessage: n
+          previewMessage: n,
+          contextKey: l
         })
       })
     }

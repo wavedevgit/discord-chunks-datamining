@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(442837),
-  l = n(481060),
+  l = n(442837),
+  a = n(481060),
   o = n(904245),
   s = n(541716),
   c = n(419922),
@@ -32,7 +32,7 @@ function y(e) {
   let {
     currentUser: t,
     channel: n,
-    message: a,
+    message: l,
     buttonLabels: u,
     stickers: d,
     event: p,
@@ -40,12 +40,12 @@ function y(e) {
   } = e, [h, _] = i.useState(!1), y = i.useMemo(() => x({
     assets: d,
     currentUser: t,
-    message: a
-  }), [d, t, a]), E = i.useMemo(() => x({
+    message: l
+  }), [d, t, l]), E = i.useMemo(() => x({
     assets: u,
     currentUser: t,
-    message: a
-  }), [u, t, a]), v = i.useCallback(async () => {
+    message: l
+  }), [u, t, l]), v = i.useCallback(async () => {
     let {
       valid: e
     } = await (0, g.v)({
@@ -67,14 +67,14 @@ function y(e) {
       }))
     }({
       channel: n,
-      message: a,
+      message: l,
       sticker: y
     }), function(e) {
       var t, n;
       let {
         sticker: r,
         event: i,
-        eventProperties: a
+        eventProperties: l
       } = e;
       null != i && f.default.track(i, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ function y(e) {
           })
         }
         return e
-      }({}, a), n = n = {
+      }({}, l), n = n = {
         sticker_id: r.id
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -110,11 +110,11 @@ function y(e) {
       event: p,
       eventProperties: m
     }))
-  }, [n, a, y, p, m]);
-  return (0, r.jsxs)(l.zxk, {
+  }, [n, l, y, p, m]);
+  return (0, r.jsxs)(a.zxk, {
     className: b.CTAMessageButtonOuter,
     innerClassName: b.CTAMessageButton,
-    color: l.Ttl.PRIMARY,
+    color: a.Ttl.PRIMARY,
     onMouseEnter: () => _(!0),
     onMouseLeave: () => _(!1),
     onClick: v,
@@ -132,7 +132,7 @@ function E(e) {
     channel: t,
     message: n,
     buttonLabels: i,
-    stickers: l,
+    stickers: a,
     event: o,
     eventProperties: s
   } = e, c = m.default.getCurrentUser(), f = function(e) {
@@ -141,15 +141,15 @@ function E(e) {
       message: n,
       currentUser: r
     } = e;
-    return (0, a.e7)([p.Z, d.ZP], () => {
+    return (0, l.e7)([p.Z, d.ZP], () => {
       var e;
       let i = t.guild_id;
       if (null == r || null == i) return !1;
-      let a = (0, u.xl)(t),
-        l = p.Z.can(_.Plq.SEND_MESSAGES, t),
+      let l = (0, u.xl)(t),
+        a = p.Z.can(_.Plq.SEND_MESSAGES, t),
         o = null == (e = d.ZP.getMember(i, r.id)) ? void 0 : e.isPending,
         s = n.author.bot;
-      return l && !a && !o && !s
+      return a && !l && !o && !s
     })
   }({
     channel: t,
@@ -163,7 +163,7 @@ function E(e) {
       channel: t,
       message: n,
       buttonLabels: i,
-      stickers: l,
+      stickers: a,
       event: o,
       eventProperties: s
     })

@@ -3,9 +3,9 @@ n.d(t, {
   ZP: () => U
 }), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  l = n(120356),
-  o = n.n(l),
+  l = n(192379),
+  a = n(120356),
+  o = n.n(a),
   s = n(995899),
   c = n(772848),
   u = n(468194),
@@ -159,8 +159,8 @@ function W(e) {
     onAnimationComplete: t,
     onClick: n,
     position: r,
-    size: l
-  } = e, u = a.useRef(null), [d, m] = a.useState(null), [h] = a.useState(null != r ? r : function() {
+    size: a
+  } = e, u = l.useRef(null), [d, m] = l.useState(null), [h] = l.useState(null != r ? r : function() {
     switch (Math.floor(Math.random() * Object.keys(I).length)) {
       case 0:
         return "TOP_LEFT";
@@ -174,7 +174,7 @@ function W(e) {
   }()), {
     createMultipleConfettiAt: g,
     confettiCanvas: _
-  } = a.useContext(f.h), [b, x] = a.useState(null), y = (0, s.uR)(_, b), E = function(e, t) {
+  } = l.useContext(f.h), [b, x] = l.useState(null), y = (0, s.uR)(_, b), E = function(e, t) {
     if (null == e) return "enter";
     switch (e) {
       case "enter":
@@ -189,14 +189,14 @@ function W(e) {
       case "exit":
         return "enter"
     }
-  }(d, h), v = T.includes(h), N = v && "exit" === d, j = a.useCallback(e => {
+  }(d, h), v = T.includes(h), N = v && "exit" === d, j = l.useCallback(e => {
     m(e)
-  }, []), C = a.useCallback(() => {
+  }, []), C = l.useCallback(() => {
     "exit" === d && (null == t || t())
-  }, [t, d]), A = a.useCallback(e => {
+  }, [t, d]), A = l.useCallback(e => {
     u.current = e
   }, []);
-  return a.useEffect(() => {
+  return l.useEffect(() => {
     if ("confetti" === d) {
       let {
         confettiVelocityDirection: e
@@ -212,7 +212,7 @@ function W(e) {
           x: r.left + i.x,
           y: r.top + i.y
         }
-      }(u.current, h, l);
+      }(u.current, h, a);
       g(t.x, t.y, {
         velocity: {
           type: "static-random",
@@ -227,7 +227,7 @@ function W(e) {
         }
       })
     }
-  }, [g, h, d, l]), a.useEffect(() => {
+  }, [g, h, d, a]), l.useEffect(() => {
     if (v && "leaf_fall" === d) {
       let e = w[h].leafRotationDirection;
       y.createConfetti({
@@ -313,7 +313,7 @@ function U(e) {
   let t, {
       message: n,
       compact: r,
-      guild: l,
+      guild: a,
       usernameHook: o,
       onClickMessage: s
     } = e,
@@ -332,16 +332,16 @@ function U(e) {
     {
       createMultipleConfettiAt: d,
       addClickListener: j
-    } = a.useContext(f.h),
-    [C, S] = a.useState(!1),
-    I = a.useRef(null),
+    } = l.useContext(f.h),
+    [C, S] = l.useState(!1),
+    I = l.useRef(null),
     {
       reducedMotion: T
-    } = a.useContext(p.Sfi),
+    } = l.useContext(p.Sfi),
     P = (0, y.ZH)(n),
     A = P.nick,
     w = o(P);
-  t = null == c || null == l ? u > 1 ? N.NW.format(N.t.yfC9dn, {
+  t = null == c || null == a ? u > 1 ? N.NW.format(N.t.yfC9dn, {
     username: A,
     usernameHook: w,
     numSubscriptions: u
@@ -352,15 +352,15 @@ function U(e) {
     username: A,
     usernameHook: w,
     numSubscriptions: u,
-    guildName: l.name,
+    guildName: a.name,
     newTierName: (0, x.nW)(c)
   }) : N.NW.format(N.t.cUfTTE, {
     username: A,
     usernameHook: w,
-    guildName: l.name,
+    guildName: a.name,
     newTierName: (0, x.nW)(c)
   });
-  let R = a.useCallback(() => {
+  let R = l.useCallback(() => {
       if (!T.enabled)
         if (C || 0 !== Math.floor(50 * Math.random())) {
           var e;
@@ -369,18 +369,18 @@ function U(e) {
           d(t.left + t.width / 2, t.top + t.height / 2)
         } else S(!0)
     }, [d, T, C]),
-    k = a.useCallback(() => {
+    k = l.useCallback(() => {
       S(!1)
     }, []),
-    D = a.useCallback(() => {
+    D = l.useCallback(() => {
       (0, g.AI)({
         settingsVisible: !0
       }), m.Z.open(v.oAB.POGGERMODE), S(!1)
     }, []),
-    L = a.useCallback((e, t) => {
+    L = l.useCallback((e, t) => {
       (null == t ? void 0 : t.id.startsWith(Z)) && D()
     }, [D]);
-  a.useEffect(() => j(L));
+  l.useEffect(() => j(L));
   let M = (0, i.jsx)(p.P3F, {
     className: O.iconWrapper,
     innerRef: I,

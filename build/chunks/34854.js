@@ -1,13 +1,13 @@
-/** Chunk was on 69774 **/
+/** Chunk was on 54636 **/
 t.d(n, {
   Z: () => i
 });
-var r = t(544891),
-  o = t(981631);
+var o = t(544891),
+  r = t(981631);
 let i = {
   updateNote(e, n) {
-    r.tn.put({
-      url: o.ANM.NOTE(e),
+    o.tn.put({
+      url: r.ANM.NOTE(e),
       body: {
         note: n
       },

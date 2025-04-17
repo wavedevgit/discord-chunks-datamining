@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(392711),
-  l = n.n(a),
+  l = n(392711),
+  a = n.n(l),
   o = n(442837),
   s = n(524437),
   c = n(481060),
@@ -20,9 +20,9 @@ var r = n(200651),
 function _(e) {
   let {
     setTab: t,
-    badgeState: a,
+    badgeState: l,
     closePopout: _
-  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => l().partition(x, e => {
+  } = e, x = (0, o.Wu)([u.Z], () => u.Z.getInvites()), y = (0, o.e7)([u.Z], () => u.Z.getInviteStatuses()), [E, v] = i.useMemo(() => a().partition(x, e => {
     var t;
     return (null == (t = y[e.invite_id]) ? void 0 : t.joinable) !== !1 && (Date.now() - new Date(e.created_at).getTime()) / 1e3 < e.ttl
   }), [x, y]);
@@ -33,7 +33,7 @@ function _(e) {
     children: [(0, r.jsx)(m.Z, {
       tab: s.X.GAME_INVITES,
       setTab: t,
-      badgeState: a,
+      badgeState: l,
       closePopout: _
     }), (0, r.jsx)("div", {
       className: g.__invalid_emptyStateContainer,
@@ -48,7 +48,7 @@ function _(e) {
     children: [(0, r.jsx)(m.Z, {
       tab: s.X.GAME_INVITES,
       setTab: t,
-      badgeState: a,
+      badgeState: l,
       closePopout: _,
       children: (0, r.jsx)(c.M0o, {
         className: g.__invalid_deleteButton,

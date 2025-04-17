@@ -1,6 +1,6 @@
 /**
   Module ID: 77025
-  Original File Name: 4ad4dbf481c3212e
+  Original File Name: 3ae45a5235375c72
 **/
 :root {
     --legacy-elevation-low: 0 1px 5px var(--opacity-black-20);
@@ -86,6 +86,7 @@
 }
 
 .message_fcf29c {
+    color: var(--text-normal);
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
@@ -759,4 +760,4 @@ div:has(>div>.container_b962dc) {
     background-color: var(--bg-base-tertiary)!important
 }
 
-/*# sourceMappingURL=4ad4dbf481c3212e.css.map*/
+/*# sourceMappingURL=3ae45a5235375c72.css.map*/

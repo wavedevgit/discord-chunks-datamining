@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(529103),
-  l = n(377171),
+  l = n(529103),
+  a = n(377171),
   o = n(497089),
   s = n(849862),
   c = n(703656),
@@ -26,14 +26,14 @@ function f(e) {
       onClick: () => {
         u.default.track(d.rMx.NOTIFICATION_CENTER_ACTION, {
           action_type: o.ud.FRIEND_REQUESTS_BUTTON_CLICK
-        }), (0, c.uL)(d.Z5c.FRIENDS), a.Z.setSection(d.pJs.PENDING), t()
+        }), (0, c.uL)(d.Z5c.FRIENDS), l.Z.setSection(d.pJs.PENDING), t()
       },
       children: [(0, r.jsx)(i.iFz, {
         size: "xs",
         color: "currentColor"
       }), (0, r.jsx)(i.mAB, {
         count: n,
-        color: l.Z.BACKGROUND_ACCENT
+        color: a.Z.BACKGROUND_ACCENT
       })]
     })
   })

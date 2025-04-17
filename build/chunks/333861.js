@@ -1,24 +1,23 @@
 /** Chunk was on 1272 **/
 n.d(t, {
-  M: () => s,
-  s: () => o
+  M: () => a,
+  s: () => l
 });
 var r = n(200651);
 n(192379);
-var i = n(481060),
-  l = n(522474),
-  a = n(981631);
-let o = "command-share-modal";
+var i = n(481060);
+let l = "command-share-modal";
 
-function s(e) {
+function a(e) {
   let {
     applicationId: t,
-    channel: s,
-    command: c,
-    previewMessage: u,
-    requireLaunchChannel: d,
-    onShareResult: p
-  } = e, h = l.Z.getWindowOpen(a.KJ3.ACTIVITY_POPOUT) ? i.u1M : i.z1l;
+    channel: a,
+    command: o,
+    previewMessage: s,
+    requireLaunchChannel: c,
+    contextKey: u,
+    onShareResult: d
+  } = e;
   (0, i.ZDy)(async () => {
     let {
       ApplicationCommandShareModal: e
@@ -42,17 +41,17 @@ function s(e) {
       return e
     }({
       applicationId: t,
-      channel: s,
-      command: c,
-      previewMessage: u,
-      onShareResult: p,
-      requireLaunchChannel: d
+      channel: a,
+      command: o,
+      previewMessage: s,
+      onShareResult: d,
+      requireLaunchChannel: c
     }, n))
   }, {
-    modalKey: o,
-    contextKey: h,
+    modalKey: l,
+    contextKey: u,
     onCloseCallback: () => {
-      p(!1)
+      d(!1)
     }
   })
 }

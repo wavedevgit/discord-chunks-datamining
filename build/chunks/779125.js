@@ -5,8 +5,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  l = n(475179),
+  l = n(481060),
+  a = n(475179),
   o = n(287734),
   s = n(933557),
   c = n(124072),
@@ -28,7 +28,7 @@ function x(e) {
     className: y,
     openChatWithoutConnecting: E
   } = e, v = (0, i.e7)([h.default, f.Z], () => null == t ? "" : (0, s.F6)(t, h.default, f.Z), [t]);
-  return (0, r.jsx)(a.ua7, {
+  return (0, r.jsx)(l.ua7, {
     text: v,
     position: "top",
     children: e => {
@@ -40,7 +40,7 @@ function x(e) {
         role: "link",
         className: y,
         onClick: e => {
-          e.stopPropagation(), null != n ? n() : (null != x && x(), (0, a.pTH)(), function(e, t) {
+          e.stopPropagation(), null != n ? n() : (null != x && x(), (0, l.pTH)(), function(e, t) {
             let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
             if (null == e || null == t) return;
             let r = m.Z.getGuild(e);
@@ -50,7 +50,7 @@ function x(e) {
             let i = p.Z.getChannel(t);
             if (null != i && (0, d.bw)(i.type)) {
               if (n) {
-                l.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
+                a.Z.updateChatOpen(i.id, !0), (0, u.uL)(b.Z5c.CHANNEL(e, t));
                 return
               }
               o.default.selectVoiceChannel(i.id);

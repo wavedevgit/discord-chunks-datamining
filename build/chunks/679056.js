@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => c
 }), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  l = n(846519);
+  l = n(192379),
+  a = n(846519);
 
 function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -14,7 +14,7 @@ function o(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class s extends(r = a.Component) {
+class s extends(r = l.Component) {
   static getDerivedStateFromProps(e) {
     return e.disable ? {
       hovered: !1
@@ -33,8 +33,8 @@ class s extends(r = a.Component) {
   componentDidUpdate(e, t) {
     let {
       props: n
-    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), a = r(e, t);
-    i && !a || e.interval !== n.interval ? this.startTimer() : !i && a && this.stopTimer()
+    } = this, r = (e, t) => !e.disable && !(t.hovered && e.pauseOnHover), i = r(n, this.state), l = r(e, t);
+    i && !l || e.interval !== n.interval ? this.startTimer() : !i && l && this.stopTimer()
   }
   startTimer() {
     let {
@@ -54,8 +54,8 @@ class s extends(r = a.Component) {
     let {
       children: n,
       className: r,
-      disable: a
-    } = this.props, l = a ? null : {
+      disable: l
+    } = this.props, a = l ? null : {
       onMouseEnter: this.handlePause,
       onFocus: this.handlePause,
       onMouseLeave: this.handleResume,
@@ -72,7 +72,7 @@ class s extends(r = a.Component) {
         })
       }
       return e
-    }({}, l), t = t = {
+    }({}, a), t = t = {
       className: r,
       children: n
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
@@ -87,7 +87,7 @@ class s extends(r = a.Component) {
     }), e))
   }
   constructor(...e) {
-    super(...e), o(this, "timer", new l.Xp), o(this, "state", {
+    super(...e), o(this, "timer", new a.Xp), o(this, "state", {
       hovered: !1
     }), o(this, "handlePause", () => {
       this.state.hovered || this.setState({

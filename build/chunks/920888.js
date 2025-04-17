@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(539854);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(215569),
   s = n(481060),
   c = n(833803),
@@ -75,7 +75,7 @@ class O extends i.PureComponent {
       disableReactionCreates: t,
       disableReactionUpdates: n,
       isLurking: i,
-      isGuest: a,
+      isGuest: l,
       isPendingMember: b,
       isForumToolbar: x,
       channel: y,
@@ -100,7 +100,7 @@ class O extends i.PureComponent {
     }), Z = v || A;
     return (0, r.jsxs)(o.W, {
       component: "div",
-      className: l()(P.reactions, E, {
+      className: a()(P.reactions, E, {
         [P.largeReactions]: w
       }),
       transitionAppear: !T,
@@ -118,7 +118,7 @@ class O extends i.PureComponent {
         message: e,
         readOnly: n,
         isLurking: i,
-        isGuest: a,
+        isGuest: l,
         isPendingMember: b,
         isForumToolbar: x,
         useChatFontScaling: O,
@@ -128,7 +128,7 @@ class O extends i.PureComponent {
         onClick: t => {
           t.stopPropagation(), (0, f.op)(y, e)
         },
-        className: l()(P.reaction, N, P.remainingReactions),
+        className: a()(P.reaction, N, P.remainingReactions),
         "aria-label": h.NW.string(h.t.lfIHs7),
         children: (0, r.jsxs)(s.Text, {
           className: P.reactionInner,
@@ -142,7 +142,7 @@ class O extends i.PureComponent {
         channel: y,
         useChatFontScaling: O,
         isHovered: this.state.isHovered,
-        className: l()({
+        className: a()({
           [P.forceShow]: Z
         })
       })]
@@ -160,16 +160,16 @@ let j = e => {
   let {
     message: t,
     maxReactions: n,
-    hoistReaction: a
+    hoistReaction: l
   } = e, {
-    combinedReactions: l,
+    combinedReactions: a,
     remainingReactions: o,
     visibleReactionsCount: s
   } = i.useMemo(() => {
     let e = [],
-      r = N(t.reactions, a),
+      r = N(t.reactions, l),
       i = null != n && n < r.length ? r.slice(0, n) : r,
-      l = r.length - i.length,
+      a = r.length - i.length,
       o = r.length;
     return i.forEach(t => {
       t.burst_count > 0 && e.push(y(x({}, t), {
@@ -180,12 +180,12 @@ let j = e => {
     }), {
       combinedReactions: e,
       visibleReactionsCount: o,
-      remainingReactions: l
+      remainingReactions: a
     }
-  }, [a, n, t.reactions]);
+  }, [l, n, t.reactions]);
   return (0, r.jsx)(O, y(x({}, e), {
     visibleReactionsCount: s,
-    combinedReactions: l,
+    combinedReactions: a,
     remainingReactions: o
   }))
 }

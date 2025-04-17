@@ -1,12 +1,12 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(544891),
   i = n(900849),
-  a = n(981631);
-let l = e => r.tn.get({
-  url: a.ANM.STICKER_GUILD_DATA(e),
+  l = n(981631);
+let a = e => r.tn.get({
+  url: l.ANM.STICKER_GUILD_DATA(e),
   oldFormErrors: !0,
   rejectWithError: !0
 }).then(e => (null == e ? void 0 : e.body) != null ? (0, i.PP)(e.body) : null).catch(() => null)

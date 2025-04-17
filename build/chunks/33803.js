@@ -4,8 +4,8 @@ n.d(t, {
 }), n(642613);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  l = n.n(a),
+  l = n(120356),
+  a = n.n(l),
   o = n(913527),
   s = n.n(o),
   c = n(91192),
@@ -21,7 +21,7 @@ var r = n(200651),
   x = n(36459),
   y = n(336197),
   E = n(359110),
-  v = n(347475),
+  v = n(726033),
   N = n(496675),
   O = n(594174),
   j = n(5192),
@@ -80,13 +80,13 @@ function V(e, t) {
   var n, r, i = function(e, t) {
     if (null == e) return {};
     var n, r, i = {},
-      a = Object.keys(e);
-    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      l = Object.keys(e);
+    for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var l = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -95,37 +95,37 @@ function z(e, t) {
   let {
     popouts: n,
     selected: r,
-    setPopout: a
+    setPopout: l
   } = (0, R.Z)(e.id, L.d$), {
-    usernameProfile: l,
+    usernameProfile: a,
     avatarProfile: o
-  } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), u = (0, Z.XO)(e, t, l, a);
+  } = n, s = (0, Z.wq)(e.author.id, t.id), c = (0, Z.RN)(e.author.id, t.id, e.id), u = (0, Z.XO)(e, t, a, l);
   return {
     selected: r,
     onContextMenu: s,
     onContextMenuModerateUser: c,
     onClickUsername: u,
-    onClickAvatar: (0, Z.R9)(o, a),
-    onPopoutRequestClose: i.useCallback(() => a({
+    onClickAvatar: (0, Z.R9)(o, l),
+    onPopoutRequestClose: i.useCallback(() => l({
       usernameProfile: !1,
       avatarProfile: !1,
       referencedUsernameProfile: !1
-    }), [a]),
+    }), [l]),
     renderPopout: w.Z,
     showAvatarPopout: o,
-    showUsernamePopout: l
+    showUsernamePopout: a
   }
 }
 
-function K(e, t) {
+function K(e, t, n) {
   return i.useMemo(() => {
-    if (null != t) return n => (0, r.jsx)(v.Z, H(G({}, n), {
-      userId: t.id,
+    if (null != t && null != n) return i => (0, r.jsx)(v.Z, H(G({}, i), {
       user: t,
-      channelId: e.id,
-      guildId: e.guild_id
+      currentUser: n,
+      guildId: e.guild_id,
+      channelId: e.id
     }))
-  }, [e, t])
+  }, [e, t, n])
 }
 
 function Y(e) {
@@ -135,7 +135,7 @@ function Y(e) {
     compact: i
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(B.footerContainer, n, {
+    className: a()(B.footerContainer, n, {
       [B.compact]: i
     }),
     children: t
@@ -148,7 +148,7 @@ function X(e) {
     className: n
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(B.annotationRow, n),
+    className: a()(B.annotationRow, n),
     children: t
   })
 }
@@ -165,7 +165,7 @@ function q(e, t) {
       return (0, r.jsx)(p.dz2, G({
         size: "xs",
         color: "currentColor",
-        className: l()(B.alertActionIcon, B.alertActionSetCompletedIcon)
+        className: a()(B.alertActionIcon, B.alertActionSetCompletedIcon)
       }, t));
     case g.d.SUBMIT_FEEDBACK:
       return (0, r.jsx)(p.U65, G({
@@ -186,37 +186,37 @@ function Q(e) {
   try {
     let e = parseInt(t.actionType);
     if (null == i) return q(e, {});
-    let a = function(e, t, n) {
+    let l = function(e, t, n) {
       var r;
       let i = null != (r = j.ZP.getNickname(n, null, t)) ? r : C.ZP.getUserTag(t),
-        a = s()(e.ts),
-        l = "".concat(i, " ").concat(a.fromNow());
+        l = s()(e.ts),
+        a = "".concat(i, " ").concat(l.fromNow());
       try {
         switch (parseInt(e.actionType)) {
           case g.d.DELETE_USER_MESSAGE:
             return F.NW.formatToPlainString(F.t.BtKE9v, {
               userName: i,
-              timestamp: a.fromNow()
+              timestamp: l.fromNow()
             });
           case g.d.SET_COMPLETED:
             return F.NW.formatToPlainString(F.t.dyo9UV, {
               userName: i,
-              timestamp: a.fromNow()
+              timestamp: l.fromNow()
             });
           case g.d.SUBMIT_FEEDBACK:
             return F.NW.formatToPlainString(F.t["C9/kIC"], {
               userName: i,
-              timestamp: a.fromNow()
+              timestamp: l.fromNow()
             });
           default:
-            return l
+            return a
         }
       } catch (e) {
-        return l
+        return a
       }
     }(t, i, n);
     return (0, r.jsx)(p.ua7, {
-      text: a,
+      text: l,
       children: t => q(e, t)
     })
   } catch (e) {
@@ -241,8 +241,8 @@ let $ = i.memo(function(e) {
   let t, {
       message: n,
       channel: i,
-      embedChannel: a,
-      compact: l,
+      embedChannel: l,
+      compact: a,
       interactionUserId: o
     } = e,
     s = z(n, i),
@@ -253,11 +253,11 @@ let $ = i.memo(function(e) {
       channel: i,
       author: u,
       guildId: null == i ? void 0 : i.guild_id,
-      compact: l
+      compact: a
     }, s), c),
     m = O.default.getUser(o),
     f = z(n, i),
-    h = K(i, m);
+    h = K(i, m, O.default.getCurrentUser());
   if (null != m) {
     let e = (0, I.ij)(m, i),
       r = (0, A.CF)(G({
@@ -265,7 +265,7 @@ let $ = i.memo(function(e) {
         channel: i,
         author: e,
         guildId: null == i ? void 0 : i.guild_id,
-        compact: l
+        compact: a
       }, f), h);
     t = () => r
   }
@@ -274,10 +274,10 @@ let $ = i.memo(function(e) {
     color: "header-primary",
     tag: "span",
     className: B.spanCorrection,
-    children: (0, _.Mq)(n, a, () => (0, r.jsx)("div", {
+    children: (0, _.Mq)(n, l, () => (0, r.jsx)("div", {
       className: B.channelNameContainer,
       children: (0, r.jsx)(T.Z, {
-        channel: a,
+        channel: l,
         className: B.channelName,
         openChatWithoutConnecting: !0
       })
@@ -289,7 +289,7 @@ function ee(e) {
   var t;
   let {
     id: n,
-    compact: a,
+    compact: l,
     message: o,
     channel: s
   } = e, {
@@ -311,8 +311,8 @@ function ee(e) {
     keywordMatchedContent: en,
     keyword: er,
     content: ei,
-    flaggedMessageId: ea,
-    timeoutDuration: el,
+    flaggedMessageId: el,
+    timeoutDuration: ea,
     decisionReason: eo,
     alertActionsExecution: es,
     quarantineType: ec,
@@ -322,8 +322,8 @@ function ee(e) {
   } = ep, ef = V(ep, ["selected"]), eh = i.useCallback(() => {
     (0, b._s)(o.id, ei, et, s)
   }, [o.id, ei, et, s]), eg = i.useCallback(e => {
-    null != ea && null != ee && (e.stopPropagation(), e.preventDefault(), (0, y.Z)(M.Z5c.CHANNEL(null == ee ? void 0 : ee.guild_id, null == ee ? void 0 : ee.id, ea)))
-  }, [ee, ea]), e_ = i.useCallback(e => {
+    null != el && null != ee && (e.stopPropagation(), e.preventDefault(), (0, y.Z)(M.Z5c.CHANNEL(null == ee ? void 0 : ee.guild_id, null == ee ? void 0 : ee.id, el)))
+  }, [ee, el]), e_ = i.useCallback(e => {
     null != ee && (m.default.selectChannel({
       guildId: ee.guild_id,
       channelId: e,
@@ -331,28 +331,28 @@ function ee(e) {
     }), (0, E.Kh)(e))
   }, [o, ee]), eb = i.useCallback(() => {
     (0, x.Xx)(o.id, s, g.d.DELETE_USER_MESSAGE)
-  }, [s, o.id]), ex = (0, U.L9)(Number(el)), ey = null != eo, eE = q && null != ea && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, eN = null != ev;
+  }, [s, o.id]), ex = (0, U.L9)(Number(ea)), ey = null != eo, eE = q && null != el && (null == es || !es.actions.hasOwnProperty(g.d.DELETE_USER_MESSAGE)), ev = o.embeds.length > 0 ? null == (t = o.embeds[0].fields.find(e => "channel_id" === e.rawName)) ? void 0 : t.rawValue : null, eN = null != ev;
   return (0, r.jsx)("div", {
     onMouseEnter: O,
     onMouseLeave: j,
     children: (0, r.jsx)(D.Z, {
-      className: l()(B.mainContainer, {
-        [B.compact]: a
+      className: a()(B.mainContainer, {
+        [B.compact]: l
       }),
-      iconNode: a ? null : (0, r.jsx)(k.S, {
+      iconNode: l ? null : (0, r.jsx)(k.S, {
         src: v
       }),
       iconContainerClassName: B.iconContainer,
-      compact: a,
+      compact: l,
       children: (0, r.jsxs)("div", {
-        className: l()(B.content, {
-          [B.compact]: a
+        className: a()(B.content, {
+          [B.compact]: l
         }),
         children: [(0, r.jsx)(A.nD, {
           message: o,
           messageClassname: B.spanCorrection,
-          className: l()(B.usernameContainer, B.spanCorrection, {
-            [B.compact]: a
+          className: a()(B.usernameContainer, B.spanCorrection, {
+            [B.compact]: l
           }),
           username: (0, r.jsxs)("div", {
             className: B.spanCorrection,
@@ -369,27 +369,27 @@ function ee(e) {
               message: o,
               channel: s,
               embedChannel: ee,
-              compact: a,
+              compact: l,
               interactionUserId: eu
             })]
           }),
-          compact: a,
+          compact: l,
           showTimestamp: !0
         }), (0, r.jsx)("div", {
-          className: l()(B.messageContent, {
-            [B.compact]: a
+          className: a()(B.messageContent, {
+            [B.compact]: l
           }),
           children: (0, r.jsx)(P.Z, H(G({}, T), {
             message: o,
             channel: ee,
             content: ed,
-            compact: a,
+            compact: l,
             withFooter: !0,
             hideTimestamp: !0,
-            className: l()(B.embedCard, {
-              [B.compact]: a,
+            className: a()(B.embedCard, {
+              [B.compact]: l,
               [B.selected]: em || K && w,
-              [B.isClickable]: null != ea && null != ee
+              [B.isClickable]: null != el && null != ee
             }),
             childrenAccessories: (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsxs)("div", {
@@ -403,7 +403,7 @@ function ee(e) {
                       keyword: er
                     })
                   }), (0, r.jsx)("div", {
-                    className: l()(B.dot, B.dotMargin)
+                    className: a()(B.dot, B.dotMargin)
                   })]
                 }), null != Q && (0, r.jsx)(p.Text, {
                   variant: "text-xs/medium",
@@ -414,7 +414,7 @@ function ee(e) {
                   })
                 }), null != ex && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: l()(B.dot, B.dotMargin)
+                    className: a()(B.dot, B.dotMargin)
                   }), (0, r.jsx)(p.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -426,7 +426,7 @@ function ee(e) {
                   })]
                 }), null != ec && (0, r.jsxs)(r.Fragment, {
                   children: [(0, r.jsx)("div", {
-                    className: l()(B.dot, B.dotMargin)
+                    className: a()(B.dot, B.dotMargin)
                   }), (0, r.jsx)(p.Text, {
                     variant: "text-xs/medium",
                     color: "text-muted",
@@ -453,10 +453,10 @@ function ee(e) {
             onClick: eg
           }))
         }), (0, r.jsx)(Y, {
-          compact: a,
+          compact: l,
           children: (0, r.jsxs)("div", {
-            className: l()(B.centeredRowContainer, B.buttonContainer, {
-              [B.compact]: a
+            className: a()(B.centeredRowContainer, B.buttonContainer, {
+              [B.compact]: l
             }),
             children: [(0, r.jsx)(p.zxk, {
               onClick: e => {
