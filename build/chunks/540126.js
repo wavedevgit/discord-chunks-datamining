@@ -783,7 +783,7 @@ function ep(e, t, i) {
         type: "voice",
         text: l
       };
-      let r = h.ZP.getEmbeddedActivitiesForChannel(e.id).concat(h.ZP.getEmbeddedActivitiesForStartingChannel(e.id)).map(e => {
+      let r = h.ZP.getEmbeddedActivitiesForChannel(e.id).map(e => {
         var t;
         return null == (t = a.Z.getApplication(e.applicationId)) ? void 0 : t.name
       }).filter(G.lm);
