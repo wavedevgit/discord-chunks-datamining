@@ -1,8 +1,9 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  KB: () => O,
-  wD: () => y
+  KB: () => I,
+  b6: () => T,
+  wD: () => v
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -16,18 +17,19 @@ var r = n(200651),
   f = n(975104),
   _ = n(669079),
   p = n(563132),
-  h = n(474936),
-  m = n(388032);
-let g = h.Cj.STANDARD_BOX,
-  E = void 0,
-  [b, y, v] = (0, f.Z)();
+  h = n(981631),
+  m = n(474936),
+  g = n(388032);
+let E = m.Cj.STANDARD_BOX,
+  b = void 0,
+  [y, v, O] = (0, f.Z)();
 
-function O(e) {
+function I(e) {
   let {
     isGift: t = !1,
     giftRecipient: n,
     giftMessage: f,
-    giftStyle: y,
+    giftStyle: h,
     giftingOrigin: v,
     children: O
   } = e, {
@@ -36,9 +38,9 @@ function O(e) {
     enabled: D
   } = c.O.useExperiment({
     location: "gift card"
-  }), L = E;
-  P && (L = w ? h.Cj.SEASONAL_STANDARD_BOX : null != y ? y : g, D && (L = h.Cj.NITROWEEN_STANDARD));
-  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? m.NW.string(m.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
+  }), L = b;
+  P && (L = w ? m.Cj.SEASONAL_STANDARD_BOX : null != h ? h : E, D && (L = m.Cj.NITROWEEN_STANDARD));
+  let [x, M] = i.useState(L), k = (0, d.iE)(), [j, U] = i.useState(), [G, B] = i.useState(t && (0, _.MY)(S) === _.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD && null == f ? g.NW.string(g.t.ZkOo1d) : f), [F, V] = i.useState(void 0), [Z, H] = i.useState(void 0), W = (0, _.E5)(I, t), [Y, K] = i.useState(!1), [z, q] = i.useState(!1), [Q, X] = i.useState(), J = i.useCallback(e => {
     let {
       onSubscriptionConfirmation: t
     } = e;
@@ -48,7 +50,7 @@ function O(e) {
       q(!1), X(e), K(!0)
     })
   }, [S, W, q, K, X]), $ = (0, u.x8)(), ee = (0, o.Wu)([a.Z], () => a.Z.recommendedGiftSkuIds);
-  return (0, r.jsx)(b.Provider, {
+  return (0, r.jsx)(y.Provider, {
     value: {
       isGift: t,
       giftCode: W,
@@ -81,3 +83,29 @@ function O(e) {
     children: O
   })
 }
+let S = {
+    isGift: !1,
+    setGiftRecipient: h.dG4,
+    setGiftRecipientError: h.dG4,
+    setValidatingGiftRecipient: h.dG4,
+    selectedGiftStyle: void 0,
+    setSelectedGiftStyle: h.dG4,
+    giftCode: null,
+    sendGiftMessage: h.dG4,
+    hasSentMessage: !1,
+    isSendingMessage: !1,
+    giftMessageError: void 0,
+    alreadyHasHalloweenDeco: void 0,
+    recommendedGiftSkuIds: [],
+    claimableRewards: void 0,
+    setSelectedGiftingPromotionReward: h.dG4
+  },
+  T = e => {
+    let {
+      children: t
+    } = e;
+    return (0, r.jsx)(y.Provider, {
+      value: S,
+      children: t
+    })
+  }
