@@ -13,14 +13,14 @@ var r = n(512722),
   u = n(906732),
   d = n(299206),
   g = n(894059),
-  b = n(340541),
-  p = n(423589),
-  S = n(837949),
-  f = n(122074),
-  O = n(314897),
-  h = n(984933),
-  E = n(594174),
-  N = n(241851),
+  b = n(434404),
+  p = n(340541),
+  S = n(423589),
+  f = n(837949),
+  O = n(122074),
+  h = n(314897),
+  E = n(984933),
+  N = n(594174),
   y = n(976192),
   j = n(904483),
   _ = n(429824),
@@ -72,12 +72,12 @@ function G(e) {
     guild: t,
     onSelect: r,
     hideSettings: c
-  } = e, u = t.id, G = h.ZP.getDefaultChannel(u), {
+  } = e, u = t.id, G = E.ZP.getDefaultChannel(u), {
     entrypoints: k
-  } = (0, b._k)({
+  } = (0, p._k)({
     location: "guild_context_menu"
-  }), U = (0, l.e7)([E.default], () => {
-    let e = E.default.getCurrentUser();
+  }), U = (0, l.e7)([N.default], () => {
+    let e = N.default.getCurrentUser();
     return s()(null != e, "GuildContextMenu: user cannot be undefined"), t.isOwner(e)
   }, [t]), C = (0, Z.Z)({
     guild: t,
@@ -85,7 +85,7 @@ function G(e) {
     channel: k ? null : G
   }), R = (0, I.Z)(u), W = (0, v.Z)(t), B = (0, m.Z)(t), Y = (0, L.Z)(t), Q = (0, y.Z)({
     guildId: t.id,
-    userId: O.default.getId(),
+    userId: h.default.getId(),
     analyticsLocation: {
       page: D.ZY5.GUILD_CHANNEL,
       section: D.jXE.CHAT_USERNAME,
@@ -96,12 +96,10 @@ function G(e) {
     label: M.NW.string(M.t["94lLDw"])
   }), q = (0, P.Z)(t, {
     section: D.jXE.GUILD_LIST
-  }), X = (0, S.Z)(t.id), K = (0, x.Z)(t.id), z = (0, f.ng)(t.id, !1), J = (0, _.Z)(t), $ = (0, p.Mn)("GuildContextMenu"), ee = (0, A.p)(t);
+  }), X = (0, f.Z)(t.id), K = (0, x.Z)(t.id), z = (0, O.ng)(t.id, !1), J = (0, _.Z)(t), $ = (0, S.Mn)("GuildContextMenu"), ee = (0, A.p)(t);
 
   function et() {
-    (0, o.h7j)(e => (0, i.jsx)(N.g, w(T({}, e), {
-      guild: t
-    })))
+    b.Z.leaveGuild(t.id, !0)
   }
   return t.hasFeature(D.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
     navId: "guild-context",

@@ -1,4 +1,4 @@
-/** Chunk was on 74920 **/
+/** Chunk was on 10620 **/
 e.exports = {
   headerContainer: "headerContainer__4da69",
   headerBody: "headerBody__4da69",
