@@ -5,8 +5,8 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var o = t(793030),
-  s = t(442837),
-  i = t(481060),
+  i = t(442837),
+  s = t(481060),
   a = t(678558),
   l = t(343649),
   c = t(430824),
@@ -22,7 +22,7 @@ var o = t(793030),
 function g(e) {
   let {
     guildId: n
-  } = e, t = (0, s.e7)([c.Z], () => c.Z.getGuild(n)), {
+  } = e, t = (0, i.e7)([c.Z], () => c.Z.getGuild(n)), {
     available: g,
     spent: j,
     total: h
@@ -60,13 +60,13 @@ function g(e) {
         page: x.ZY5.GUILD_POWERUPS_OVERVIEW,
         section: x.jXE.GUILD_POWERUPS_OVERVIEW_SIDEBAR
       },
-      color: i.Ttl.CUSTOM,
-      size: i.PhG.LARGE,
+      color: s.Ttl.CUSTOM,
+      size: s.PhG.LARGE,
       intent: l.P.NONE,
-      icon: (0, r.jsx)(i.$Eu, {
+      icon: (0, r.jsx)(s.$Eu, {
         className: f.boostButtonIcon,
         size: "sm",
-        color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
       })
     }), (0, r.jsx)(p.Z, {
       guildId: n

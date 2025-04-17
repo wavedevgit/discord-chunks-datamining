@@ -4,8 +4,8 @@ t.d(n, {
 }), t(642613);
 var r = t(200651),
   o = t(192379),
-  s = t(597312),
-  i = t(793030),
+  i = t(597312),
+  s = t(793030),
   a = t(442837),
   l = t(179360),
   c = t(899667),
@@ -27,11 +27,11 @@ function x(e) {
   return (o.useEffect(() => {
     _ !== t.length && (0, l.C0)(n)
   }, [n, _, t.length]), 0 === x.length) ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(i.X6, {
+    children: [(0, r.jsx)(s.X6, {
       className: m.header,
       variant: "eyebrow",
       children: p.NW.string(p.t.yM9Krq)
-    }), (0, r.jsx)(s.zJ, {
+    }), (0, r.jsx)(i.zJ, {
       className: m.container,
       fade: !0,
       children: x.map((e, n) => (0, r.jsx)(u.Z, {

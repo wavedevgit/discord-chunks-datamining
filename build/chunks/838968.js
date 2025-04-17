@@ -6,8 +6,8 @@ t.d(n, {
 var r = t(200651);
 t(192379);
 var o = t(120356),
-  s = t.n(o),
-  i = t(481060),
+  i = t.n(o),
+  s = t(481060),
   a = t(477415),
   l = t(690786),
   c = t(192371),
@@ -22,10 +22,10 @@ function x(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: m.inline,
-    children: [(0, r.jsx)(i.owK, {
+    children: [(0, r.jsx)(s.owK, {
       size: "xs",
-      color: i.TVs.colors.STATUS_WARNING
-    }), (0, r.jsx)(i.Text, {
+      color: s.TVs.colors.STATUS_WARNING
+    }), (0, r.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
       children: p.NW.formatToMarkdownString(u.Z["ol/ao6"], {
@@ -42,13 +42,13 @@ function _(e) {
     className: o
   } = e, a = (0, l.Z)(n, t);
   return (0, r.jsxs)("div", {
-    className: s()(m.labelContainer, o),
+    className: i()(m.labelContainer, o),
     children: [(0, r.jsxs)("div", {
-      className: s()(m.inline, m.inlineBoost),
-      children: [(0, r.jsx)(i.$Eu, {
+      className: i()(m.inline, m.inlineBoost),
+      children: [(0, r.jsx)(s.$Eu, {
         size: "sm",
-        color: i.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, r.jsx)(i.Text, {
+        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, r.jsx)(s.Text, {
         tag: "div",
         variant: "heading-md/bold",
         children: t.cost
@@ -57,10 +57,10 @@ function _(e) {
       dateString: a.ends_at
     }) : (0, r.jsxs)("div", {
       className: m.inline,
-      children: [(0, r.jsx)(i.owK, {
+      children: [(0, r.jsx)(s.owK, {
         size: "xs",
-        color: i.TVs.colors.STATUS_POSITIVE
-      }), (0, r.jsx)(i.Text, {
+        color: s.TVs.colors.STATUS_POSITIVE
+      }), (0, r.jsx)(s.Text, {
         color: "text-positive",
         variant: "text-sm/bold",
         children: p.NW.string(u.Z.FFLkm5)
@@ -81,12 +81,12 @@ function v(e) {
   } = (0, d.ZP)(n, t);
   return (0, r.jsx)("div", {
     className: m.parentContainer,
-    children: (0, r.jsx)(i.kL8, {
+    children: (0, r.jsx)(s.kL8, {
       "aria-label": t.title,
       onClick: f,
       onMouseOver: () => null == c ? void 0 : c(!0),
       onMouseLeave: () => null == c ? void 0 : c(!1),
-      className: s()(m.container, {
+      className: i()(m.container, {
         [m.active]: _,
         [m.warning]: v
       }, o),
