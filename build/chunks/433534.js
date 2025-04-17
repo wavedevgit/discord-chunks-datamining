@@ -37,10 +37,7 @@ function l(e) {
     channel: n,
     commandIntegrationTypes: a
   } = e;
-  return !(null != a && !a.includes(r.Y.USER_INSTALL) || t === o.bi.BUILT_IN || i.ZP.hasUserStateApplication({
-    applicationId: t,
-    authorizedOnly: !0
-  }) || null != n && i.ZP.hasContextStateApplication({
+  return !(null != a && !a.includes(r.Y.USER_INSTALL) || t === o.bi.BUILT_IN || i.ZP.hasUserStateApplication(t) || null != n && i.ZP.hasContextStateApplication({
     applicationId: t,
     channelId: n.id,
     guildId: n.guild_id

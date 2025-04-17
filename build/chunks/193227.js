@@ -27,9 +27,9 @@ var r = n(200651),
   y = n(302800),
   S = n(215023),
   k = n(474936),
-  E = n(484920);
+  P = n(484920);
 
-function P(e) {
+function E(e) {
   let {
     products: t,
     handleShopCardMount: n,
@@ -40,14 +40,14 @@ function P(e) {
   } = e, u = (0, i.e7)([b.default], () => b.default.getCurrentUser()), d = (0, j.St)(t);
   return null == u || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != l ? (0, r.jsx)(s.Text, {
-      className: E.itemTypeTitle,
+      className: P.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: l
     }) : (0, r.jsx)(s.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
-      className: E.cardsContainer,
+      className: P.cardsContainer,
       children: d.map((e, t) => (0, r.jsx)(p.k0, {
         newValue: {
           tilePosition: t
@@ -92,7 +92,7 @@ function w(e) {
       var r;
       (e.skuId === c || (null == (r = e.variants) ? void 0 : r.some(e => e.skuId === c)) === !0) && (n.current = t.current)
     }, [c, n]);
-  return (0, r.jsx)(P, function(e) {
+  return (0, r.jsx)(E, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -129,11 +129,11 @@ function B(e) {
     m(e && null != v)
   }, f ? .13 : .15);
   return (0, r.jsxs)("div", {
-    className: E.categoryWrapper,
+    className: P.categoryWrapper,
     ref: x,
     children: [p && (0, r.jsx)(s.P3F, {
-      className: o()(E.hiddenWumpus, {
-        [E.hiddenWumpusEnabled]: i
+      className: o()(P.hiddenWumpus, {
+        [P.hiddenWumpusEnabled]: i
       }),
       onClick: () => b(!0),
       style: {
@@ -194,7 +194,7 @@ function I(e) {
       cacheDisabled: g
     })
   }, [f, d, h, g, n, a.length]), n) ? (0, r.jsx)(v.Z, {}) : (0, r.jsx)("div", {
-    className: E.categories,
+    className: P.categories,
     children: a.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
       let {
         products: t

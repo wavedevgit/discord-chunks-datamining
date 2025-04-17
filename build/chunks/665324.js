@@ -37,7 +37,7 @@ var r = n(200651),
   D = n(388032),
   A = n(832183);
 
-function k(e) {
+function W(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function k(e) {
   return e
 }
 
-function W(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -121,7 +121,7 @@ function U(e) {
           })
         },
         tabIndex: -1,
-        children: (0, r.jsx)(y.Z, k({}, e))
+        children: (0, r.jsx)(y.Z, W({}, e))
       })
     }), D.NW.format(D.t.HHCdvb, {
       slots: n,
@@ -154,7 +154,7 @@ let B = e => {
     }, [o]), m = i.useCallback(() => {
       o.start(200, () => a(!1))
     }, [o]);
-    return (0, r.jsx)(u.yRy, W(k({
+    return (0, r.jsx)(u.yRy, k(W({
       shouldShow: l,
       renderPopout: e => (0, r.jsx)(u.VqE, {
         className: A.browserUnsupportedDialog,
@@ -172,7 +172,7 @@ let B = e => {
       color: "header-secondary",
       children: D.NW.format(D.t.bGXPVl, {})
     }),
-    renderPopoutChildren: e => (0, r.jsx)(u.zxk, W(k({}, e), {
+    renderPopoutChildren: e => (0, r.jsx)(u.zxk, k(W({}, e), {
       disabled: !0,
       children: D.NW.string(D.t["/uNYPD"])
     }))
@@ -209,7 +209,7 @@ function z(e) {
         let {
           default: e
         } = await Promise.all([n.e("56035"), n.e("15878")]).then(n.bind(n, 758961));
-        return n => (0, r.jsx)(e, W(k({}, n), {
+        return n => (0, r.jsx)(e, k(W({}, n), {
           guildId: t.id
         }))
       })
@@ -370,7 +370,7 @@ function H(e) {
             let {
               default: e
             } = await Promise.all([n.e("56035"), n.e("15878")]).then(n.bind(n, 758961));
-            return n => (0, r.jsx)(e, W(k({}, n), {
+            return n => (0, r.jsx)(e, k(W({}, n), {
               guildId: o.id,
               existingSound: t
             }))
@@ -385,7 +385,7 @@ function H(e) {
       }), (0, r.jsx)(u.P3F, {
         className: A.soundRemove,
         onClick: function(e) {
-          e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, W(k({
+          e.stopPropagation(), (0, u.h7j)(e => (0, r.jsx)(u.ConfirmModal, k(W({
             header: D.NW.formatToPlainString(D.t["PR/VbG"], {
               soundName: p
             }),

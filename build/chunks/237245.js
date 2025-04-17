@@ -68,9 +68,9 @@ function I(e) {
     settingsProfile: S
   } = e, T = I.id, [P, w] = i.useState(!1), [R, Z] = i.useState(null), D = I.hasFeature(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, g.A)({
     guildId: I.id
-  })) ? t : 0, k = i.useCallback(() => {
+  })) ? t : 0, W = i.useCallback(() => {
     Z(null), h.Z.init(T, _.pNK.ACCESS)
-  }, [T]), W = i.useCallback(async e => {
+  }, [T]), k = i.useCallback(async e => {
     try {
       w(!0), await e(), Z(null)
     } finally {
@@ -106,7 +106,7 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = s, n = t.map(e => e.value.trim()).filter(e => "" !== e);
-      W(async () => {
+      k(async () => {
         if (I.hasFeature(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
           e.delete(_.oNc.DISCOVERABLE), await L({
@@ -120,7 +120,7 @@ function I(e) {
         pendingVerificationFields: e
       } = s;
       if (null == e) return;
-      W(async () => {
+      k(async () => {
         if (I.hasFeature(_.oNc.DISCOVERABLE)) {
           let e = new Set(I.features);
           e.delete(_.oNc.DISCOVERABLE), await L({
@@ -136,7 +136,7 @@ function I(e) {
         requireTerms: e,
         termRules: t = []
       } = s, n = t.map(e => e.value.trim()).filter(e => "" !== e);
-      W(async () => {
+      k(async () => {
         if (f.verificationDirty && await G(e, n), f.guildDirty) {
           (0, x.UA)(I, b);
           let e = new Set(I.features);
@@ -156,7 +156,7 @@ function I(e) {
         }
       })
     }
-  }, [s, W, I, f, L, G, S, M, b, E]), B = i.useCallback(() => {
+  }, [s, k, I, f, L, G, S, M, b, E]), B = i.useCallback(() => {
     var e;
     let t = e => {
         if (s.joinType === j.A.DISCOVERABLE && s.settingsView === N.U.ELIGIBLE_DISABLED) return void(0, l.ZDy)(async () => {
@@ -198,7 +198,7 @@ function I(e) {
     onSaveText: F ? O.NW.string(O.t["qjtt/v"]) : void 0,
     submitting: P,
     errorMessage: R,
-    onReset: k,
+    onReset: W,
     onSave: B,
     disabled: F && !z
   })

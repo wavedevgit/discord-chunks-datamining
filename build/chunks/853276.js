@@ -161,11 +161,11 @@ function f(e) {
       let n = t.trim().length <= 0;
       u.ye.has(e.key) ? (e.preventDefault(), e.stopPropagation(), D(!0)) : "Backspace" === e.key && n && (e.preventDefault(), e.stopPropagation(), D(!0))
     }, [D, t]),
-    k = i.useCallback(e => {
+    W = i.useCallback(e => {
       let t = e.metaKey || e.ctrlKey;
       g(t), t ? e.preventDefault() : O(!0), e.stopPropagation()
     }, [g]),
-    W = i.useCallback(e => {
+    k = i.useCallback(e => {
       p()
     }, [p]);
   return (0, r.jsx)("div", {
@@ -182,7 +182,7 @@ function f(e) {
       children: [(0, r.jsxs)(o.P3F, {
         tag: "div",
         onBlur: () => D(!1),
-        onClick: k,
+        onClick: W,
         ignoreKeyPress: !0,
         onMouseEnter: () => P(!0),
         onMouseLeave: () => P(!1),
@@ -213,7 +213,7 @@ function f(e) {
         })]
       }), !v && (0, r.jsx)(o.P3F, {
         className: m.closeIconContainer,
-        onClick: W,
+        onClick: k,
         children: (0, r.jsx)(o.Dio, {
           size: "xxs",
           color: "currentColor",

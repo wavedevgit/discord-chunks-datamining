@@ -47,8 +47,8 @@ let j = e => {
     }, []);
     let {
       isFetchingShopHome: k,
-      fetchShopHomeError: E,
-      shopBlocks: P,
+      fetchShopHomeError: P,
+      shopBlocks: E,
       refreshShopHome: w
     } = (0, d.E)(u, {
       noCache: x,
@@ -58,7 +58,7 @@ let j = e => {
       w()
     }, [w]);
     if (l.useEffect(() => {
-        null != E || k || 0 === P.length || (0, b.n)({
+        null != P || k || 0 === E.length || (0, b.n)({
           sessionId: S,
           checkpoint: b.a.SHOP_RENDERED,
           tab: u,
@@ -66,12 +66,12 @@ let j = e => {
           unpublishedCategoriesShown: j,
           cacheDisabled: x
         })
-      }, [E, k, P.length, j, x, S, u, v]), null != E) return (0, r.jsx)(p.Z, {
+      }, [P, k, E.length, j, x, S, u, v]), null != P) return (0, r.jsx)(p.Z, {
       onRetry: B,
       errorOrigin: p.i.SHOP_PAGE,
-      errorMessage: E.message
+      errorMessage: P.message
     });
-    if (k || 0 === P.length) return (0, r.jsxs)("div", {
+    if (k || 0 === E.length) return (0, r.jsxs)("div", {
       className: O.loadingContainer,
       children: [(0, r.jsx)(m.Z, {
         isLoading: k,
@@ -142,7 +142,7 @@ let j = e => {
       }, t)
     };
     return (0, r.jsx)(r.Fragment, {
-      children: P.map((e, t) => I(e, t))
+      children: E.map((e, t) => I(e, t))
     })
   },
   y = e => {

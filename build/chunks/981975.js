@@ -102,18 +102,18 @@ function w(e) {
   }, [n.id, t.id]), A = (0, c.Wu)([x.Z], () => {
     var e;
     return null != (e = x.Z.getEditedRoleConnectionConfigurationsMap().get(n.id)) ? e : []
-  }), k = A.length > 1 ? m.O1.OR : m.O1.AND, W = i.useMemo(() => k === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [k, A]), L = i.useMemo(() => new Set(W.map(e => e.connectionType)), [W]);
+  }), W = A.length > 1 ? m.O1.OR : m.O1.AND, k = i.useMemo(() => W === m.O1.OR ? A.flat() : null != A && A.length > 0 ? A[0] : [], [W, A]), L = i.useMemo(() => new Set(k.map(e => e.connectionType)), [k]);
 
   function M(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : void 0,
-      r = [...W];
+      r = [...k];
     r.push({
       connectionType: e,
       connectionMetadataField: void 0,
       applicationId: t,
       operator: void 0,
       value: void 0
-    }), (0, f.d_)(n.id, T(r, k))
+    }), (0, f.d_)(n.id, T(r, W))
   }
 
   function G() {
@@ -126,14 +126,14 @@ function w(e) {
     })
   }
   let U = null;
-  if (0 === W.length) U = (0, r.jsx)(P, {
+  if (0 === k.length) U = (0, r.jsx)(P, {
     handleAddVerificationClicked: G,
     locked: s
   });
-  else if (W.length > 0) {
+  else if (k.length > 0) {
     var B;
     let e = null;
-    W.length < 10 && (e = (0, r.jsx)(d.zxk, {
+    k.length < 10 && (e = (0, r.jsx)(d.zxk, {
       className: l()(y.addVerificationButton, y.addVerificationButtonAppend),
       size: d.zxk.Sizes.LARGE,
       look: d.zxk.Looks.BLANK,
@@ -191,7 +191,7 @@ function w(e) {
             "aria-labelledby": S
           })
         })
-      }(s, n.id, k, W, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
+      }(s, n.id, W, k, (e, t) => (0, f.d_)(n.id, T(e, t))), function(e, t, n, i, s) {
         function l(n, r) {
           let i = [];
           for (let t of e) i.push(E({}, t));
@@ -252,7 +252,7 @@ function w(e) {
             integrations: s
           }, e[0].configuration.connectionType + ":" + e[0].index))
         })
-      }(W, e => (0, f.d_)(n.id, T(e, k)), s, n.id, o), e]
+      }(k, e => (0, f.d_)(n.id, T(e, W)), s, n.id, o), e]
     })
   }
   return (0, r.jsx)(d.yWw, {

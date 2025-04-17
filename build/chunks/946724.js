@@ -42,7 +42,7 @@ let y = new Set,
   D = new Map,
   A = new Map;
 
-function k() {
+function W() {
   if (null == r || null == T) return [];
   let e = c()(f.Z.getRoles(r.id)).values().sortBy(e => {
     let {
@@ -69,7 +69,7 @@ function k() {
   })
 }
 
-function W(e) {
+function k(e) {
   let {
     section: t
   } = e;
@@ -126,7 +126,7 @@ function M(e) {
 }
 let G = c().debounce(() => {
   let e = !1;
-  S && ((S = k().length > 0) || (e = !0)), [...y].forEach(t => {
+  S && ((S = W().length > 0) || (e = !0)), [...y].forEach(t => {
     var n;
     c().isEqual(B(t), (n = t, P.find(e => {
       let {
@@ -229,7 +229,7 @@ class z extends(l = m.ZP.Store) {
     return I
   }
   getSortDeltas() {
-    return k()
+    return W()
   }
   showNotice() {
     return this.hasChanges()
@@ -247,8 +247,8 @@ class z extends(l = m.ZP.Store) {
 O(z, "displayName", "GuildSettingsRolesStore");
 let H = new z(g.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => L(),
-    GUILD_SETTINGS_INIT: W,
-    GUILD_SETTINGS_SET_SECTION: W,
+    GUILD_SETTINGS_INIT: k,
+    GUILD_SETTINGS_SET_SECTION: k,
     GUILD_SETTINGS_ROLES_SORT_UPDATE: function(e) {
       let {
         roles: t

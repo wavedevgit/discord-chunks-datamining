@@ -49,8 +49,8 @@ function k(e) {
     isLayer: n,
     onClose: a,
     selectedTab: k,
-    handleTransition: E
-  } = e, P = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
+    handleTransition: P
+  } = e, E = (0, b.ZP)(), w = (0, s.e7)([_.default], () => _.default.getCurrentUser()), B = (null == w ? void 0 : w.isStaff()) || (null == w ? void 0 : w.isStaffPersonal()) || !1, {
     enabled: I
   } = (0, h.W)({
     location: "collectibles_shop_header_bar"
@@ -77,7 +77,7 @@ function k(e) {
       })
     }, [N, t, L]);
   return (0, r.jsx)(c.f6W, {
-    theme: P,
+    theme: E,
     children: e => (0, r.jsxs)(p.Z, {
       className: o()(e, y.headerBar, {
         [y.fullscreenHeaderBar]: t
@@ -99,7 +99,7 @@ function k(e) {
             tab: t,
             displayText: n,
             selected: k === t,
-            handleTransition: E
+            handleTransition: P
           }, t)
         })
       }), (I || t) && (0, r.jsxs)("div", {

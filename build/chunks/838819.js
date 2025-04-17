@@ -27,8 +27,8 @@ var r = n(200651),
   y = n(74538),
   S = n(960048),
   k = n(381585),
-  E = n(597688),
-  P = n(328347),
+  P = n(597688),
+  E = n(328347),
   w = n(744112),
   B = n(139668),
   I = n(223143),
@@ -81,7 +81,7 @@ let K = e => {
     let {
       analyticsSource: u,
       analyticsLocations: q
-    } = (0, s.cj)([P.Z], () => P.Z.getAnalytics()), J = l.useMemo(() => {
+    } = (0, s.cj)([E.Z], () => E.Z.getAnalytics()), J = l.useMemo(() => {
       switch (a) {
         case U.AW.ORBS:
           return p.Z.COLLECTIBLES_SHOP_ORBS_TAB;
@@ -123,12 +123,12 @@ let K = e => {
         isFetchingCategories: ey,
         fetchCategoriesError: eS,
         fetchPurchasesError: ek,
-        claimError: eE,
-        refreshCategories: eP
+        claimError: eP,
+        refreshCategories: eE
       } = (0, I.ZP)({
         location: "CollectiblesShop.web"
       }),
-      ew = null != (t = null != eS ? eS : ek) ? t : eE;
+      ew = null != (t = null != eS ? eS : ek) ? t : eP;
     (0, C.P)();
     let eB = (0, T.O)(ej),
       eI = l.useRef(null),
@@ -146,7 +146,7 @@ let K = e => {
           source: t,
           page_session_id: et,
           page_type: el === U.AW.CATALOG ? "full" : el,
-          category: el === U.AW.HOME || null == (e = E.Z.getCategory(eb)) ? void 0 : e.name
+          category: el === U.AW.HOME || null == (e = P.Z.getCategory(eb)) ? void 0 : e.name
         })
       }
     }, [Q, u, et, eb, ep, ef, ea, el, J, ee]), l.useEffect(() => {
@@ -167,8 +167,8 @@ let K = e => {
       n || (0, b.Y)(G.Z5c.COLLECTIBLES_SHOP)
     }, [n]);
     let eA = l.useCallback(() => {
-        eP()
-      }, [eP]),
+        eE()
+      }, [eE]),
       {
         setCategoryRef: eZ,
         handleScrollToCategory: eR
@@ -189,9 +189,9 @@ let K = e => {
         eg(e), ep(t), t === i.T.ORB ? await eo(U.AW.ORBS, r) : (await eo(U.AW.CATALOG, l), t && eR(t))
       }, [eR, n, eF.enabled, eo]),
       eM = (0, w.b)("Collectibles Shop Button"),
-      eV = (0, s.e7)([E.Z], () => {
+      eV = (0, s.e7)([P.Z], () => {
         var e;
-        return null == (e = E.Z.getCategory(eb)) ? void 0 : e.name
+        return null == (e = P.Z.getCategory(eb)) ? void 0 : e.name
       });
     return (0, r.jsx)(f.Gt, {
       value: Q,

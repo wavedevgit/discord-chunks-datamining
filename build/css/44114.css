@@ -1,6 +1,6 @@
 /**
   Module ID: 44114
-  Original File Name: fe8acd54956080a7
+  Original File Name: 2994bbc2752c3ee2
 **/
 .phoneFieldPopout__61a01 {
     height: 240px;
@@ -336,7 +336,7 @@ h1.title_feb59c,h2.title_feb59c {
 }
 
 .markdown_d285a6 {
-    font-size: 16px;
+    font-size: 1rem;
     -webkit-user-select: text;
     -moz-user-select: text;
     user-select: text
@@ -10897,6 +10897,10 @@ html .invoiceCancelRow_b9f95d {
     gap: 8px
 }
 
+.newBadge_d541c3 {
+    margin-left: var(--spacing-4)
+}
+
 .section__25879 {
     display: flex;
     gap: 4px
@@ -18240,4 +18244,4 @@ html:not(.visual-refresh) .inputSensitivityBar_ac7648,html:not(.visual-refresh) 
     overflow: visible
 }
 
-/*# sourceMappingURL=fe8acd54956080a7.css.map*/
+/*# sourceMappingURL=2994bbc2752c3ee2.css.map*/

@@ -1,17 +1,19 @@
 /** Chunk was on 91245 **/
 "use strict";
 n.d(t, {
-  Z: () => d
+  Z: () => g
 });
 var r = n(200651);
 n(192379);
 var o = n(120356),
   a = n.n(o),
   i = n(481060),
-  s = n(477747),
-  l = n(848697);
+  s = n(442837),
+  l = n(607070),
+  c = n(477747),
+  u = n(848697);
 
-function c(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -30,7 +32,7 @@ function c(e) {
   return e
 }
 
-function u(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -42,34 +44,34 @@ function u(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = function(e) {
+let g = function(e) {
   var {
     className: t,
     compact: n = !1,
     contentOnly: o = !1,
-    zalgo: d = !0,
-    preview: p = !1,
-    disableInteraction: g = !1,
-    childrenRepliedMessage: m,
-    childrenExecutedCommand: f,
-    childrenHeader: b,
-    childrenSystemMessage: h,
-    childrenButtons: y,
-    childrenMessageContent: _,
-    childrenAccessories: O,
-    messageRef: v,
-    focusProps: j = {
+    zalgo: g = !0,
+    preview: m = !1,
+    disableInteraction: f = !1,
+    childrenRepliedMessage: b,
+    childrenExecutedCommand: h,
+    childrenHeader: y,
+    childrenSystemMessage: _,
+    childrenButtons: O,
+    childrenMessageContent: v,
+    childrenAccessories: j,
+    messageRef: x,
+    focusProps: C = {
       offset: {
         left: 4,
         right: 4
       }
     },
-    hasThread: x,
-    isSystemMessage: C,
-    hasReply: P,
-    authorHasGradientRole: N = !1,
-    guildId: T
-  } = e, w = function(e, t) {
+    hasThread: P,
+    isSystemMessage: N,
+    hasReply: T,
+    authorHasGradientRole: w = !1,
+    guildId: S
+  } = e, I = function(e, t) {
     if (null == e) return {};
     var n, r, o = function(e, t) {
       if (null == e) return {};
@@ -84,34 +86,36 @@ let d = function(e) {
     }
     return o
   }(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "authorHasGradientRole", "guildId"]);
-  let S = (0, s.Z)(T, "BaseMessage"),
-    I = (0, r.jsx)(i.tEY, u(c({}, j), {
-      children: (0, r.jsxs)("div", u(c({
+  let k = (0, c.Z)(S, "BaseMessage"),
+    M = (0, s.e7)([l.Z], () => l.Z.useReducedMotion),
+    R = (0, r.jsx)(i.tEY, p(d({}, C), {
+      children: (0, r.jsxs)("div", p(d({
         className: a()(t, {
-          [l.gradient]: !!S && N,
-          [l.wrapper]: !0,
-          [l.contentOnly]: o,
-          [l.compact]: n,
-          [l.preview]: p,
-          [l.cozy]: !n,
-          [l.zalgo]: d,
-          [l.hasThread]: x,
-          [l.isSystemMessage]: C,
-          [l.hasReply]: P
+          [u.gradient]: !!k && w,
+          [u.reducedMotion]: M,
+          [u.wrapper]: !0,
+          [u.contentOnly]: o,
+          [u.compact]: n,
+          [u.preview]: m,
+          [u.cozy]: !n,
+          [u.zalgo]: g,
+          [u.hasThread]: P,
+          [u.isSystemMessage]: N,
+          [u.hasReply]: T
         }),
-        ref: v
-      }, w), {
+        ref: x
+      }, I), {
         role: "article",
-        children: [m, f, (0, r.jsxs)("div", {
-          className: l.contents,
-          children: [h, b, null == h && _]
-        }), O, null != y ? (0, r.jsx)("div", {
-          className: l.buttonContainer,
-          children: y
+        children: [b, h, (0, r.jsxs)("div", {
+          className: u.contents,
+          children: [_, y, null == _ && v]
+        }), j, null != O ? (0, r.jsx)("div", {
+          className: u.buttonContainer,
+          children: O
         }) : null]
       }))
     }));
-  return g ? (0, r.jsx)(i.Rny, {
-    children: I
-  }) : I
+  return f ? (0, r.jsx)(i.Rny, {
+    children: R
+  }) : R
 }

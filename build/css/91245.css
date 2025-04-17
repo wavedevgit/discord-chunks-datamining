@@ -1,6 +1,6 @@
 /**
   Module ID: 91245
-  Original File Name: dfb3bb7d0fe81ca3
+  Original File Name: 3d7224519c7ea82a
 **/
 @use postcss-pxtorem;
 
@@ -927,7 +927,7 @@
     margin: 0 0 0 .25rem
 }
 
-.gradient_c19a55:hover [class*=gradientText] {
+.gradient_c19a55:not(.reducedMotion_c19a55):hover [class*=gradientText] {
     animation: gradient_c19a55 2.5s linear infinite
 }
 
@@ -1368,4 +1368,4 @@
     color: var(--primary-500)
 }
 
-/*# sourceMappingURL=dfb3bb7d0fe81ca3.css.map*/
+/*# sourceMappingURL=3d7224519c7ea82a.css.map*/

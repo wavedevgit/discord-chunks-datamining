@@ -1,7 +1,7 @@
 /** Chunk was on 10923 **/
 "use strict";
 n.d(t, {
-  Z: () => W
+  Z: () => k
 }), n(388685);
 var r = n(200651),
   i = n(192379),
@@ -55,7 +55,7 @@ function A(e) {
   return e
 }
 
-function k(e, t) {
+function W(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -68,7 +68,7 @@ function k(e, t) {
   }), e
 }
 
-function W() {
+function k() {
   let e = (0, o.e7)([b.Z], () => b.Z.getGuild());
   return null == e ? null : (0, r.jsx)(L, {
     guild: e
@@ -78,7 +78,7 @@ function W() {
 function L(e) {
   let {
     guild: t
-  } = e, s = t.id, b = (0, o.e7)([y.Z], () => y.Z.getCurrentPage()), W = (0, E.Z)(s), {
+  } = e, s = t.id, b = (0, o.e7)([y.Z], () => y.Z.getCurrentPage()), k = (0, E.Z)(s), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: M,
     hasErrors: G
@@ -120,7 +120,7 @@ function L(e) {
       range: [0, 1],
       output: [K, (0, m.dQu)(c.Z.colors.STATUS_DANGER).hex()]
     });
-  if (W) {
+  if (k) {
     if (b === I.PG.DEFAULT_CHANNELS) return (0, r.jsx)(T.j, {});
     else if (b === I.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(P.Zm, {});
     else if (b === I.PG.HOME_SETTINGS) return (0, r.jsx)(w.Z, {})
@@ -144,13 +144,13 @@ function L(e) {
       }
       return !0
     }, $ = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, W(A({}, (0, p.hH)(s)), {
         step: I.PG[b],
         back: !1,
         skip: !L
       })), (0, N.Nb)((0, I.lg)(b)), await Q() && (0, N.IG)(s, b)
     }, ee = async () => {
-      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, k(A({}, (0, p.hH)(s)), {
+      f.default.track(R.rMx.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, W(A({}, (0, p.hH)(s)), {
         step: I.PG[b],
         back: !0,
         skip: !1

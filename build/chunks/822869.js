@@ -1,6 +1,6 @@
 /** Chunk was on 58593 **/
 n.d(t, {
-  Ad: () => g,
+  Ad: () => _,
   Lb: () => l,
   ZF: () => p,
   gP: () => d,
@@ -103,7 +103,7 @@ function m() {
   }), [])
 }
 
-function g() {
+function _() {
   return a.useMemo(() => (0, r.once)((e, t) => {
     c.default.track(s.rMx.FORWARD_EDIT_CONTEXT_MESSAGE, {
       channel_id: e,

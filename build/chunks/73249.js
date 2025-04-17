@@ -13,8 +13,8 @@ var a = n(200651),
   d = n(868643),
   p = n(912332),
   m = n(378409),
-  g = n(850908),
-  _ = n(695346),
+  _ = n(850908),
+  g = n(695346),
   f = n(572004),
   y = n(424218),
   b = n(49012),
@@ -225,7 +225,7 @@ function R(e) {
   } = e, d = (null == (n = r.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? r.sourceMetadata.identifier.attachmentId : null, p = (0, u.Z)({
     id: d,
     label: T.NW.string(T.t.nwg3lZ)
-  }), _ = function(e) {
+  }), g = function(e) {
     var t;
     let {
       alt: n,
@@ -238,7 +238,7 @@ function R(e) {
       subtextLineClamp: 2
     });
     if ((null == r || null == (t = r.identifier) ? void 0 : t.type) !== "attachment") return null;
-    let d = (0, g.Z)(r.identifier),
+    let d = (0, _.Z)(r.identifier),
       p = (0, y.BU)(r.identifier.size / 1e3);
     return (0, a.jsxs)(s.sNh, {
       id: "media-viewer-details",
@@ -281,7 +281,7 @@ function R(e) {
           (0, f.JG)(t, () => (0, s.showToast)((0, s.createToast)(T.NW.string(T.t["L/PwZW"]), s.ToastType.SUCCESS)))
         }
       }, "media-viewer-copy-link")]
-    }), _, p]
+    }), g, p]
   })
 }
 
@@ -305,7 +305,7 @@ function Z(e) {
   var t, n;
   let {
     item: o
-  } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = _.Sb.useSetting(), d = "IMAGE" === o.type && O.isPlatformEmbedded && null == o.children && h.ZP.canCopyImage() && (0, m.Lz)(o.url), p = (0, m.Jj)(o.url);
+  } = e, i = r.useRef(null), [c, l] = r.useState(!1), u = g.Sb.useSetting(), d = "IMAGE" === o.type && O.isPlatformEmbedded && null == o.children && h.ZP.canCopyImage() && (0, m.Lz)(o.url), p = (0, m.Jj)(o.url);
   return u || d || p || (null == (n = o.sourceMetadata) || null == (t = n.identifier) ? void 0 : t.type) === "attachment" ? (0, a.jsx)(s.yRy, {
     targetElementRef: i,
     shouldShow: c,
