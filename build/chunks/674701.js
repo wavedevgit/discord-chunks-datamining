@@ -4,9 +4,9 @@ n.d(t, {
   Z: () => k
 });
 var r, i = n(200651),
-  l = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  a = n(192379),
+  l = n(120356),
+  o = n.n(l),
   s = n(990547),
   c = n(442837),
   u = n(692547),
@@ -40,7 +40,7 @@ function k(e) {
     giftIntentType: t,
     premiumGiftIntentCardType: n,
     recipientUser: r,
-    onMouseEnter: a,
+    onMouseEnter: l,
     onMouseLeave: R,
     popoutPosition: k,
     analyticsPage: D,
@@ -50,7 +50,7 @@ function k(e) {
   } = e, U = (0, c.e7)([E.default], () => E.default.getCurrentUser()), {
     analyticsLocations: F
   } = (0, h.ZP)(), B = (0, c.e7)([C.Z], () => C.Z.getFriendAnniversaryYears(r.id));
-  l.useEffect(() => {
+  a.useEffect(() => {
     (0, g.h)({
       name: s.ImpressionNames.GIFT_INTENT_CARD,
       type: s.ImpressionTypes.VIEW,
@@ -79,7 +79,7 @@ function k(e) {
       [Z.outerGlow]: M,
       [Z.contentCoachmark]: H
     }),
-    onMouseEnter: a,
+    onMouseEnter: l,
     onMouseLeave: R,
     children: (0, i.jsxs)("div", {
       className: o()(V, {

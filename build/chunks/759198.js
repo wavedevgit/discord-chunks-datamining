@@ -1,15 +1,15 @@
-/** Chunk was on 33177 **/
+/** Chunk was on 31084 **/
 n.d(t, {
-  Z: () => o
+  Z: () => u
 });
 var r = n(200651);
 n(192379);
 var a = n(120356),
-  i = n.n(a),
+  o = n.n(a),
   l = n(481060),
-  u = n(482107);
+  i = n(482107);
 
-function o(e) {
+function u(e) {
   var {
     className: t,
     color: n
@@ -18,13 +18,13 @@ function o(e) {
     var n, r, a = function(e, t) {
       if (null == e) return {};
       var n, r, a = {},
-        i = Object.keys(e);
-      for (r = 0; r < i.length; r++) n = i[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
+        o = Object.keys(e);
+      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
       return a
     }(e, t);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+      var o = Object.getOwnPropertySymbols(e);
+      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
     }
     return a
   }(e, ["className", "color"]);
@@ -46,8 +46,8 @@ function o(e) {
     }
     return e
   }({
-    className: i()({
-      [u.text]: null == n
+    className: o()({
+      [i.text]: null == n
     }, t),
     color: n
   }, a))

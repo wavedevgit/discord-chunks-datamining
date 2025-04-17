@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(772848),
   s = n(831209),
   c = n(399606),
@@ -69,7 +69,7 @@ function L(e, t) {
 }
 
 function M(e) {
-  var t, n, l;
+  var t, n, a;
   let {
     embedUrl: M,
     message: W,
@@ -84,7 +84,7 @@ function M(e) {
     return [null != (e = null == J ? void 0 : J.colorString) ? e : "inherit", null == J ? void 0 : J.colorStrings, null == J ? void 0 : J.colorRoleId]
   }, [J]), er = (0, E.X)(null == J ? void 0 : J.guildId, et), {
     reducedMotion: ei
-  } = i.useContext(u.Sfi), [el, ea] = i.useState(!1), eo = i.useCallback(() => {
+  } = i.useContext(u.Sfi), [ea, el] = i.useState(!1), eo = i.useCallback(() => {
     K(!0)
   }, [K]), es = i.useCallback(() => {
     K(!1)
@@ -102,11 +102,11 @@ function M(e) {
   let eu = (0, C.NZ)({
       avatarDecoration: $,
       size: (0, h.y9)(u.EFr.SIZE_40),
-      canAnimate: el
+      canAnimate: ea
     }),
-    ed = null == (n = F.user) ? void 0 : n.getAvatarURL(F.guildId, 40, el),
+    ed = null == (n = F.user) ? void 0 : n.getAvatarURL(F.guildId, 40, ea),
     ep = () => {
-      ei.enabled || ea(e => !e)
+      ei.enabled || el(e => !e)
     },
     em = F.coverImage,
     ef = null != em && (0, b.d$)(em);
@@ -119,7 +119,7 @@ function M(e) {
       children: [!Y && (!0 === F.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: k,
         alt: Z.NW.string(Z.t.rIbh8P),
-        className: a()(R.thumbnail, {
+        className: l()(R.thumbnail, {
           [R.spoiler]: F.shouldSpoiler
         }),
         onContextMenu: G,
@@ -129,7 +129,7 @@ function M(e) {
         backgroundSrc: "".concat(em, "?format=png"),
         alt: Z.NW.string(Z.t.rIbh8P),
         aspectRatio: 16 / 9,
-        className: a()(R.thumbnail, {
+        className: l()(R.thumbnail, {
           [R.spoiler]: F.shouldSpoiler
         }),
         imageChildClassName: R.thumbnailImage,
@@ -163,7 +163,7 @@ function M(e) {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          className: a()(R.descriptionHeaderText, R.descriptionSubtitle),
+          className: l()(R.descriptionHeaderText, R.descriptionSubtitle),
           children: F.subtitle
         })]
       }), (0, r.jsxs)("div", {
@@ -201,7 +201,7 @@ function M(e) {
               children: (0, r.jsx)(u.X6q, {
                 variant: "heading-md/semibold",
                 color: "header-primary",
-                children: null != (l = F.channelName) ? l : F.guildName
+                children: null != (a = F.channelName) ? a : F.guildName
               })
             })]
           }), null != F.authorName && (0, r.jsx)(u.Text, {
@@ -243,7 +243,7 @@ function M(e) {
         }) : (0, r.jsx)(u.gtL, {
           pauseAnimation: q,
           onClick: ec,
-          className: a()(R.__invalid_ctaButtonContent, R.subscribeButton),
+          className: l()(R.__invalid_ctaButtonContent, R.subscribeButton),
           color: u.zxk.Colors.CUSTOM,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/medium",

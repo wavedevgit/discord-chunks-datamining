@@ -1,16 +1,16 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => a
+  Z: () => l
 });
 var r = n(200651);
 n(192379);
 var i = n(955415),
-  l = n(388032);
+  a = n(388032);
 
-function a() {
+function l() {
   return (0, r.jsxs)(i.Z, {
     children: [(0, r.jsx)(i.Z.Header, {
-      text: l.NW.string(l.t["N/g9Z2"])
+      text: a.NW.string(a.t["N/g9Z2"])
     }), (0, r.jsx)(i.Z.Body, {
       resolving: !0
     })]

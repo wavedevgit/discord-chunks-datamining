@@ -1,11 +1,11 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  Z: () => l
+  Z: () => a
 });
 var r = n(192379),
   i = n(192720);
 
-function l() {
+function a() {
   r.useEffect(() => {
     (0, i.sE)()
   }, [])

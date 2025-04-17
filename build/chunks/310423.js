@@ -4,8 +4,8 @@ n.d(t, {
 }), n(467055), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(442837),
   s = n(481060),
   c = n(911969),
@@ -60,7 +60,7 @@ let j = {
     color: "header-secondary"
   },
   C = {
-    className: a()("mention", v.mention)
+    className: l()("mention", v.mention)
   };
 
 function S(e) {
@@ -70,7 +70,7 @@ function S(e) {
   }))
 }
 let I = i.memo(function(e) {
-  var t, n, l, a, I, T;
+  var t, n, a, l, I, T;
   let P, {
       channel: A,
       messageId: w,
@@ -92,9 +92,9 @@ let I = i.memo(function(e) {
   });
   else {
     let e = [],
-      t = Object.fromEntries((null != (a = null == (n = Z.application_command) ? void 0 : n.options) ? a : []).map(e => [e.name, e]));
+      t = Object.fromEntries((null != (l = null == (n = Z.application_command) ? void 0 : n.options) ? l : []).map(e => [e.name, e]));
     for (let n of null != (I = Z.options) ? I : []) e = e.concat(function e(t) {
-      var n, l, a, o, u, d, p;
+      var n, a, l, o, u, d, p;
       let v, {
           option: I,
           channel: T,
@@ -108,10 +108,10 @@ let I = i.memo(function(e) {
       if (I.type === c.jw.SUB_COMMAND || I.type === c.jw.SUB_COMMAND_GROUP) {
         let t = [(0, r.jsxs)(i.Fragment, {
             children: [" ", (0, r.jsx)(s.Text, O(N({}, j), {
-              children: null != (l = null == Z ? void 0 : Z.name_localized) ? l : I.name
+              children: null != (a = null == Z ? void 0 : Z.name_localized) ? a : I.name
             }))]
           }, k)],
-          c = Object.fromEntries(null == (n = null != (a = null == Z ? void 0 : Z.options) ? a : []) ? void 0 : n.map(e => [e.name, e]));
+          c = Object.fromEntries(null == (n = null != (l = null == Z ? void 0 : Z.options) ? l : []) ? void 0 : n.map(e => [e.name, e]));
         for (let n of null != (o = I.options) ? o : []) t = t.concat(e({
           option: n,
           channel: T,
@@ -210,7 +210,7 @@ let I = i.memo(function(e) {
     }));
     P = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(s.Text, O(N({}, j), {
-        children: ["/", null != (T = null == (l = Z.application_command) ? void 0 : l.name_localized) ? T : Z.name]
+        children: ["/", null != (T = null == (a = Z.application_command) ? void 0 : a.name_localized) ? T : Z.name]
       })), e]
     })
   }

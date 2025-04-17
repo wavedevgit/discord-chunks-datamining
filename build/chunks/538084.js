@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(913527),
-  a = n.n(l),
+  a = n(913527),
+  l = n.n(a),
   o = n(481060),
   s = n(45251),
   c = n(388032),
@@ -17,15 +17,15 @@ function p(e) {
   let {
     channel: t,
     transitionState: n,
-    onClose: l,
+    onClose: a,
     prefilledTime: p
-  } = e, m = a()(), f = a()().add(365, "days"), [h, g] = i.useState(null != p ? a()(p.substring(0, 200)) : m);
+  } = e, m = l()(), f = l()().add(365, "days"), [h, g] = i.useState(null != p ? l()(p.substring(0, 200)) : m);
   return (0, r.jsxs)(o.Y0X, {
     transitionState: n,
     size: o.CgR.SMALL,
     "aria-label": c.NW.string(c.t.WbFpq6),
     children: [(0, r.jsx)(o.olH, {
-      onClick: l,
+      onClick: a,
       className: u.closeButton
     }), (0, r.jsx)(o.xBx, {
       separator: !1,
@@ -72,7 +72,7 @@ function p(e) {
       className: u.footer,
       children: [(0, r.jsx)(o.zxk, {
         color: o.zxk.Colors.PRIMARY,
-        onClick: l,
+        onClick: a,
         className: u.cancelButton,
         children: c.NW.string(c.t["ETE/oK"])
       }), (0, r.jsx)(o.zxk, {

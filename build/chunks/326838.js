@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(913527),
-  a = n.n(l),
+  a = n(913527),
+  l = n.n(a),
   o = n(442837),
   s = n(481060),
   c = n(727637),
@@ -21,10 +21,10 @@ function _(e) {
   let {
     invite: t,
     expired: n
-  } = e, l = (0, o.e7)([m.default], () => {
+  } = e, a = (0, o.e7)([m.default], () => {
     var e, n;
     return null != (n = null == (e = m.default.getUser(t.inviter_id)) ? void 0 : e.username) ? n : ""
-  }), u = (0, f.vc)(a()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
+  }), u = (0, f.vc)(l()(t.created_at), "LT"), d = i.useRef(null), _ = (0, c.Z)(d);
   return i.useEffect(() => {
     n || (0, p.Br)(t)
   }, [t, n]), (0, r.jsxs)("div", {
@@ -41,7 +41,7 @@ function _(e) {
         variant: "text-md/semibold",
         color: "interactive-active",
         children: h.NW.format(h.t.vtUO3d, {
-          username: l
+          username: a
         })
       }), (0, r.jsxs)("div", {
         className: g.buttonContainer,
@@ -87,8 +87,8 @@ function b(e) {
   let {
     expired: t,
     invite: n,
-    isHoveringInvite: l
-  } = e, a = (0, o.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, o.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
+    isHoveringInvite: a
+  } = e, l = (0, o.e7)([d.Z], () => d.Z.isInviteGameInstalled(n)), c = (0, o.e7)([d.Z], () => d.Z.isInviteJoinable(n)), [m, f] = i.useState(!1), _ = i.useCallback(async () => {
     f(!0);
     try {
       await (0, p.MH)(n)
@@ -102,7 +102,7 @@ function b(e) {
     f(!1)
   }, [n]);
   if (t)
-    if (a && l) return (0, r.jsx)(s.zxk, {
+    if (l && a) return (0, r.jsx)(s.zxk, {
       className: g.primaryButton,
       color: s.Ttl.TRANSPARENT,
       disabled: m,
@@ -111,7 +111,7 @@ function b(e) {
       children: h.NW.string(h.t["s+J8Dg"])
     });
     else return null;
-  return a && c ? (0, r.jsx)(s.zxk, {
+  return l && c ? (0, r.jsx)(s.zxk, {
     className: g.primaryButton,
     color: s.Ttl.GREEN,
     disabled: m,

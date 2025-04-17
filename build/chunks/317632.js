@@ -3,8 +3,8 @@ n.d(t, {
   Z: () => g
 }), n(388685);
 var r, i = n(442837),
-  l = n(570140),
-  a = n(823379),
+  a = n(570140),
+  l = n(823379),
   o = n(981631);
 
 function s(e, t, n) {
@@ -43,11 +43,11 @@ function f(e) {
   if (e.platform_type === o.ABu.XBOX) {
     var n, r;
     let i = null == t ? void 0 : t.titleId,
-      l = null == t ? void 0 : t.inviteToken;
-    return null == i || null == l ? null : (n = c({}, e), r = r = {
+      a = null == t ? void 0 : t.inviteToken;
+    return null == i || null == a ? null : (n = c({}, e), r = r = {
       parsed_launch_parameters: {
         titleId: i,
-        inviteToken: l
+        inviteToken: a
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
       var n = Object.keys(e);
@@ -85,12 +85,12 @@ class h extends(r = i.ZP.Store) {
   }
 }
 s(h, "displayName", "GameInviteStore");
-let g = new h(l.Z, {
+let g = new h(a.Z, {
   CONNECTION_OPEN_SUPPLEMENTAL: function(e) {
     let {
       gameInvites: t
     } = e;
-    u = t.map(f).filter(a.lm)
+    u = t.map(f).filter(l.lm)
   },
   GAME_INVITE_CREATE: function(e) {
     let {

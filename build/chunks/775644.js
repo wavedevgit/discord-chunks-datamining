@@ -4,8 +4,8 @@ n.d(t, {
 });
 var r = n(544891),
   i = n(570140),
-  l = n(881052),
-  a = n(122289),
+  a = n(881052),
+  l = n(122289),
   o = n(981631);
 let s = Object.freeze({}),
   c = {
@@ -29,7 +29,7 @@ let s = Object.freeze({}),
           body: {
             channel_id: d,
             payment_source_id: null == p ? void 0 : p.id,
-            gateway_checkout_context: await (0, a.cn)(p)
+            gateway_checkout_context: await (0, l.cn)(p)
           },
           oldFormErrors: !0,
           rejectWithError: !1
@@ -43,7 +43,7 @@ let s = Object.freeze({}),
           entitlement: e
         }
       } catch (n) {
-        let e = new l.HF(n);
+        let e = new a.HF(n);
         throw i.Z.dispatch({
           type: "GIFT_CODE_REDEEM_FAILURE",
           code: t,

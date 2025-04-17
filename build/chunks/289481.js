@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(200100),
   s = n(442837),
   c = n(481060),
@@ -46,13 +46,13 @@ let j = i.memo(function(e) {
     let {
       channel: t,
       deleteChannel: n
-    } = e, l = i.useRef(null), [
-      [a, s], u
-    ] = i.useState([0, 0]), d = t.deleted && a > 0;
-    if (t.deleted && 0 === a && null != l.current) {
-      let e = l.current.offsetHeight,
-        t = l.current.offsetTop,
-        n = l.current.parentElement.scrollTop,
+    } = e, a = i.useRef(null), [
+      [l, s], u
+    ] = i.useState([0, 0]), d = t.deleted && l > 0;
+    if (t.deleted && 0 === l && null != a.current) {
+      let e = a.current.offsetHeight,
+        t = a.current.offsetTop,
+        n = a.current.parentElement.scrollTop,
         r = n > t ? e - (n - t) : e;
       u([e, e - r])
     }
@@ -74,11 +74,11 @@ let j = i.memo(function(e) {
       opacity: p,
       height: m.to(e => {
         var t, n;
-        return d ? (t = a, (n = s) + (t - n) * e) : "auto"
+        return d ? (t = l, (n = s) + (t - n) * e) : "auto"
       })
     };
     return (0, r.jsx)(o.animated.div, {
-      ref: l,
+      ref: a,
       style: f,
       children: (0, r.jsx)(C, O({}, e))
     })
@@ -87,12 +87,12 @@ let j = i.memo(function(e) {
     let {
       channel: t,
       onJump: n,
-      deleteChannel: l,
-      toggle: a
+      deleteChannel: a,
+      toggle: l
     } = e, o = (0, s.e7)([h.Z], () => h.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
         null == o || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || u.Z.wait(() => {
-          (0, d.In)(t.channelId, !0), l(t.channelId)
+          (0, d.In)(t.channelId, !0), a(t.channelId)
         })
       }), null == o || !t.hasLoadedAnything) return null;
     let m = (e, r) => {
@@ -110,7 +110,7 @@ let j = i.memo(function(e) {
           channel: o,
           gotoChannel: m,
           mentionCount: t.mentionCount,
-          toggleCollapsed: a,
+          toggleCollapsed: l,
           channelState: t,
           children: [(0, r.jsx)(_.Z, {
             channel: o
@@ -123,7 +123,7 @@ let j = i.memo(function(e) {
         }) : "forum" === t.type ? (0, r.jsx)(x.Z, {
           channel: t,
           channelRecord: o,
-          deleteChannel: l
+          deleteChannel: a
         }) : null
       })
     })
@@ -134,13 +134,13 @@ function S(e) {
     channel: t,
     markChannelRead: n,
     markGuildRead: i,
-    getNumUnreadChannels: l
-  } = e, a = (0, m.Z)() && null != t.guildId;
+    getNumUnreadChannels: a
+  } = e, l = (0, m.Z)() && null != t.guildId;
   return (0, r.jsx)(c.M0o, {
     className: N.markReadButton,
-    tooltip: a ? v.NW.string(v.t["5lLMhI"]) : v.NW.string(v.t.e6RscX),
+    tooltip: l ? v.NW.string(v.t["5lLMhI"]) : v.NW.string(v.t.e6RscX),
     color: c.YX$.TERTIARY,
-    icon: a ? (0, r.jsx)(c.W6s, {
+    icon: l ? (0, r.jsx)(c.W6s, {
       size: "xs",
       color: "currentColor"
     }) : (0, r.jsx)(c.dz2, {
@@ -148,11 +148,11 @@ function S(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      a && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(E.rMx.INBOX_CHANNEL_ACKED, {
+      l && null != t.guildId ? i(t.guildId) : n(t), (0, p.yw)(E.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: !1,
-        num_unread_channels_remaining: l() - 1
+        num_unread_channels_remaining: a() - 1
       })
     }
   })
@@ -165,7 +165,7 @@ function I(e) {
     getNumUnreadChannels: i
   } = e;
 
-  function l() {
+  function a() {
     n(t), (0, p.yw)(E.rMx.INBOX_CHANNEL_COLLAPSED, {
       channel_id: t.channelId,
       guild_id: t.guildId,
@@ -178,10 +178,10 @@ function I(e) {
     children: e => {
       var n, i;
       return (0, r.jsx)(c.P3F, (n = O({}, e), i = i = {
-        className: a()(N.collapseButton, {
+        className: l()(N.collapseButton, {
           [N.collapsed]: t.collapsed
         }),
-        onClick: l,
+        onClick: a,
         children: (0, r.jsx)(g.Z, {
           width: 16,
           height: 16

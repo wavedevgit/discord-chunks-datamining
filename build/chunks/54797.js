@@ -1,12 +1,12 @@
 /** Chunk was on 91259 **/
 n.d(t, {
-  x: () => l
+  x: () => a
 });
 var r = n(200651);
 n(192379);
 var i = n(481060);
 
-function l(e) {
+function a(e) {
   let {
     listing: t
   } = e;

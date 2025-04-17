@@ -4,8 +4,8 @@ n.d(t, {
 }), n(388685), n(953529);
 var r = n(200651),
   i = n(192379),
-  l = n(120356),
-  a = n.n(l),
+  a = n(120356),
+  l = n.n(a),
   o = n(442837),
   s = n(481060),
   c = n(447543),
@@ -28,7 +28,7 @@ function O(e) {
   let {
     invite: t,
     isMemberOfGuild: n,
-    onTransitionToInviteChannel: l,
+    onTransitionToInviteChannel: a,
     onAcceptInstantInvite: c
   } = e, d = i.useRef(null), [p, f] = i.useState(!0), [h, O] = i.useState(!1), C = t.state === E.r2o.ACCEPTING, S = (0, o.e7)([u.Z], () => u.Z.useReducedMotion);
   i.useLayoutEffect(() => {
@@ -50,7 +50,7 @@ function O(e) {
       } : {}
     }, [p, h, S]);
   return null == I ? (0, r.jsx)(y.Z, {}) : (0, r.jsxs)(s.P3F, {
-    className: a()(N.guildInviteContainer, {
+    className: l()(N.guildInviteContainer, {
       [N.clickable]: h && p
     }),
     onClick: T,
@@ -90,7 +90,7 @@ function O(e) {
         children: v.NW.string(v.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
-      className: a()(N.footer, {
+      className: l()(N.footer, {
         [N.floatingFooter]: h
       }),
       children: [h && p ? (0, r.jsx)("div", {
@@ -106,7 +106,7 @@ function O(e) {
             profile: I,
             isMemberOfGuild: n,
             submitting: C,
-            onTransitionToInviteChannel: l,
+            onTransitionToInviteChannel: a,
             onAcceptInstantInvite: c
           })
         })]
@@ -119,8 +119,8 @@ function j(e) {
   let {
     invite: t,
     profile: n,
-    isMemberOfGuild: l,
-    submitting: a,
+    isMemberOfGuild: a,
+    submitting: l,
     onTransitionToInviteChannel: o,
     onAcceptInstantInvite: s
   } = e, {
@@ -129,13 +129,13 @@ function j(e) {
   } = (0, f.ZP)(n, f.F3.INVITE), {
     analyticsLocations: g
   } = (0, p.ZP)(d.Z.INVITE_EMBED), _ = i.useCallback(() => {
-    let e = l ? "transition" : "accept";
+    let e = a ? "transition" : "accept";
     (0, c.r$)(t, e, g)
-  }, [t, g, l]);
+  }, [t, g, a]);
   return null == m ? null : (0, r.jsx)(h.o, {
     guildId: u,
     ctaType: m,
-    submitting: a,
+    submitting: l,
     onGoToGuild: o,
     onAcceptInvite: s,
     onStartApplication: s,
