@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(906280),
   l = n.n(s),
   c = n(186325),
@@ -39,7 +39,7 @@ function h(e) {
 
 function m(e, t) {
   let {
-    color: a,
+    color: o,
     useLottieDefaultColors: s,
     src: p,
     size: m = "md",
@@ -96,10 +96,10 @@ function m(e, t) {
     null == (e = N.current) || e.destroy()
   }), [O, v]), (0, r.jsx)("div", {
     style: h({
-      "--__lottieIconColor": null != a && "string" == typeof a ? a : null == a ? void 0 : a.css,
+      "--__lottieIconColor": null != o && "string" == typeof o ? o : null == o ? void 0 : o.css,
       display: "flex"
     }, A),
-    className: o()(_.lottieIcon, s ? void 0 : _.lottieIconColors, b),
+    className: a()(_.lottieIcon, s ? void 0 : _.lottieIconColors, b),
     ref: S
   })
 }

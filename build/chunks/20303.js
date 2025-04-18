@@ -3,8 +3,8 @@
 n.d(t, {
   Z: () => v
 }), n(388685), n(704826), n(35282);
-var r, i, a = n(442837),
-  o = n(433517),
+var r, i, o = n(442837),
+  a = n(433517),
   s = n(570140),
   l = n(591759),
   c = n(902676),
@@ -48,7 +48,7 @@ function E(e) {
     url: t
   } = e;
   if (m(t)) return !1;
-  _.add((0, c.F)(t)), o.K.set(f, {
+  _.add((0, c.F)(t)), a.K.set(f, {
     trustedDomains: _,
     trustedProtocols: p
   })
@@ -59,15 +59,15 @@ function b(e) {
     url: t
   } = e;
   if (g(t)) return !1;
-  p.add((0, c.E)(t)), o.K.set(f, {
+  p.add((0, c.E)(t)), a.K.set(f, {
     trustedDomains: _,
     trustedProtocols: p
   })
 }
-class y extends(i = a.ZP.Store) {
+class y extends(i = o.ZP.Store) {
   initialize() {
     var e;
-    let t = null != (e = o.K.get(f)) ? e : {};
+    let t = null != (e = a.K.get(f)) ? e : {};
     if (Array.isArray(t)) _ = new Set(null != t ? Array.from(t) : null), p = new Set;
     else {
       let {

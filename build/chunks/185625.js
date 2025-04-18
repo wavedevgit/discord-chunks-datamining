@@ -18,8 +18,8 @@ n.d(t, {
 }), n(415506), n(467055), n(388685);
 var r = n(192379),
   i = n(544891),
-  a = n(570140),
-  o = n(367907),
+  o = n(570140),
+  a = n(367907),
   s = n(432877),
   l = n(82554),
   c = n(981631);
@@ -65,26 +65,26 @@ function _(e, t) {
 async function p(e, t) {
   var n;
   let r = S(e),
-    a = await i.tn.get({
+    o = await i.tn.get({
       url: c.ANM.GET_REPORT_MENU(r),
       query: (null == t ? void 0 : t.variant) != null ? {
         variant: t.variant
       } : void 0,
       rejectWithError: !1
     });
-  return null != (n = a.body) ? n : JSON.parse(a.text)
+  return null != (n = o.body) ? n : JSON.parse(o.text)
 }
 async function h(e, t) {
   var n;
   let r = I(e),
-    a = await i.tn.get({
+    o = await i.tn.get({
       url: c.ANM.GET_UNAUTHENTICATED_REPORT_MENU(r),
       query: (null == t ? void 0 : t.variant) != null ? {
         variant: t.variant
       } : void 0,
       rejectWithError: !1
     });
-  return null != (n = a.body) ? n : JSON.parse(a.text)
+  return null != (n = o.body) ? n : JSON.parse(o.text)
 }
 async function m(e, t) {
   let n = S(e),
@@ -109,9 +109,9 @@ function g(e, t, n) {
 
 function E(e, t, n, r) {
   if (s.ZP.get("iar_skip_api_report_submit")) return Promise.resolve();
-  let a = I(t);
+  let o = I(t);
   return i.tn.post({
-    url: c.ANM.SUBMIT_UNAUTHENTICATED_REPORT_MENU(a),
+    url: c.ANM.SUBMIT_UNAUTHENTICATED_REPORT_MENU(o),
     body: T(e, t, n, r),
     rejectWithError: !1
   })
@@ -168,8 +168,8 @@ function S(e) {
 let T = (e, t, n, r) => {
   let {
     version: i,
-    variant: a,
-    language: o
+    variant: o,
+    language: a
   } = e, s = {
     channel_id: void 0,
     message_id: void 0,
@@ -182,8 +182,8 @@ let T = (e, t, n, r) => {
     entrypoint: void 0
   }, c = {
     version: i,
-    variant: a,
-    language: null != o ? o : "en",
+    variant: o,
+    language: null != a ? a : "en",
     breadcrumbs: n.map(e => e.nodeRef),
     elements: n.reduce((e, t) => {
       let {
@@ -286,7 +286,7 @@ let T = (e, t, n, r) => {
 };
 
 function N(e, t, n) {
-  o.ZP.trackWithMetadata(c.rMx.IAR_MODAL_CLOSE, {
+  a.ZP.trackWithMetadata(c.rMx.IAR_MODAL_CLOSE, {
     report_type: e.name,
     report_id: n,
     navigation_history: t,
@@ -300,7 +300,7 @@ function N(e, t, n) {
 }
 
 function A(e, t) {
-  a.Z.dispatch({
+  o.Z.dispatch({
     type: "IN_APP_REPORTS_SHOW_FEEDBACK",
     reportId: t,
     reportType: e.name
@@ -319,7 +319,7 @@ var R = function(e) {
 
 function P(e, t, n) {
   return r.useCallback(r => i => {
-    o.ZP.trackWithMetadata(c.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
+    a.ZP.trackWithMetadata(c.rMx.IAR_SETTINGS_UPSELLS_ACTION, {
       report_id: n,
       report_type: e.name,
       report_subtype: t,

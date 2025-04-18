@@ -3,8 +3,8 @@
 var n = "function" == typeof Symbol && Symbol.for,
   r = n ? Symbol.for("react.element") : 60103,
   i = n ? Symbol.for("react.portal") : 60106,
-  a = n ? Symbol.for("react.fragment") : 60107,
-  o = n ? Symbol.for("react.strict_mode") : 60108,
+  o = n ? Symbol.for("react.fragment") : 60107,
+  a = n ? Symbol.for("react.strict_mode") : 60108,
   s = n ? Symbol.for("react.profiler") : 60114,
   l = n ? Symbol.for("react.provider") : 60109,
   c = n ? Symbol.for("react.context") : 60110,
@@ -28,9 +28,9 @@ function v(e) {
         switch (e = e.type) {
           case u:
           case d:
-          case a:
-          case s:
           case o:
+          case s:
+          case a:
           case _:
             return e;
           default:
@@ -54,7 +54,7 @@ function v(e) {
 function O(e) {
   return v(e) === d
 }
-t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider = l, t.Element = r, t.ForwardRef = f, t.Fragment = a, t.Lazy = m, t.Memo = h, t.Portal = i, t.Profiler = s, t.StrictMode = o, t.Suspense = _, t.isAsyncMode = function(e) {
+t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider = l, t.Element = r, t.ForwardRef = f, t.Fragment = o, t.Lazy = m, t.Memo = h, t.Portal = i, t.Profiler = s, t.StrictMode = a, t.Suspense = _, t.isAsyncMode = function(e) {
   return O(e) || v(e) === u
 }, t.isConcurrentMode = O, t.isContextConsumer = function(e) {
   return v(e) === c
@@ -65,7 +65,7 @@ t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider 
 }, t.isForwardRef = function(e) {
   return v(e) === f
 }, t.isFragment = function(e) {
-  return v(e) === a
+  return v(e) === o
 }, t.isLazy = function(e) {
   return v(e) === m
 }, t.isMemo = function(e) {
@@ -75,9 +75,9 @@ t.AsyncMode = u, t.ConcurrentMode = d, t.ContextConsumer = c, t.ContextProvider 
 }, t.isProfiler = function(e) {
   return v(e) === s
 }, t.isStrictMode = function(e) {
-  return v(e) === o
+  return v(e) === a
 }, t.isSuspense = function(e) {
   return v(e) === _
 }, t.isValidElementType = function(e) {
-  return "string" == typeof e || "function" == typeof e || e === a || e === d || e === s || e === o || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === y || e.$$typeof === g)
+  return "string" == typeof e || "function" == typeof e || e === o || e === d || e === s || e === a || e === _ || e === p || "object" == typeof e && null !== e && (e.$$typeof === m || e.$$typeof === h || e.$$typeof === l || e.$$typeof === c || e.$$typeof === f || e.$$typeof === E || e.$$typeof === b || e.$$typeof === y || e.$$typeof === g)
 }, t.typeOf = v

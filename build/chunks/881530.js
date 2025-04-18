@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(394821),
   i = n(841784),
-  a = n(833664),
-  o = n(499254),
+  o = n(833664),
+  a = n(499254),
   s = n(827498),
   l = n(541716),
   c = n(810568),
@@ -55,10 +55,10 @@ function h(e) {
     entry: g
   }))), y = (0, i.Z)(h);
   return y && null != m ? () => {
-    null == E || E(), o.__(s._b.TEXT, l.Ie.NORMAL, {
+    null == E || E(), a.__(s._b.TEXT, l.Ie.NORMAL, {
       applicationId: m.id
     })
-  } : !y && (0, a.Z)(h) ? b : (0, r.Z)(h) && n.id !== _.id ? () => (0, d.s)({
+  } : !y && (0, o.Z)(h) ? b : (0, r.Z)(h) && n.id !== _.id ? () => (0, d.s)({
     activity: h,
     user: n,
     index: 0

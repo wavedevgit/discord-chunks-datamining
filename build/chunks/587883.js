@@ -2,7 +2,7 @@
 "use strict";
 Object.defineProperty(t, "__esModule", {
   value: !0
-}), t.markdownFormatter = void 0, t.formatToMarkdownString = o;
+}), t.markdownFormatter = void 0, t.formatToMarkdownString = a;
 let r = n(162711),
   i = {
     $b: e => "**" + e.join("") + "**",
@@ -12,7 +12,7 @@ let r = n(162711),
     $link: (e, t, [n]) => "[" + e.join("") + "](" + n + ")",
     $p: e => e.join("") + "\n\n"
   };
-class a extends r.StringBuilder {
+class o extends r.StringBuilder {
   constructor() {
     super(...arguments), this.result = ""
   }
@@ -21,10 +21,10 @@ class a extends r.StringBuilder {
   }
 }
 
-function o(e, t, n = a) {
+function a(e, t, n = o) {
   return "string" == typeof e ? e : this.bindFormatValues(n, e, t)[0]
 }
 t.markdownFormatter = {
-  format: o,
-  builder: a
+  format: a,
+  builder: o
 }

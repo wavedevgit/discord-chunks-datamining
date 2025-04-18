@@ -7,8 +7,8 @@ n.d(t, {
 }), n(388685), n(415506), n(49124), n(35282), n(704826), n(413496), n(433524), n(539854);
 var r = n(392711),
   i = n.n(r),
-  a = n(336317),
-  o = n(176354),
+  o = n(336317),
+  a = n(176354),
   s = n(906411);
 
 function l(e, t, n) {
@@ -84,7 +84,7 @@ class N {
   }
   get url() {
     let e = this.defaultDiversityChild;
-    return null != e ? o.ZP.getURL(e.surrogates) : o.ZP.getURL(this.surrogates)
+    return null != e ? a.ZP.getURL(e.surrogates) : a.ZP.getURL(this.surrogates)
   }
   get name() {
     if (this.hasDiversity && null != c) {
@@ -123,7 +123,7 @@ function A(e) {
 }
 
 function C(e) {
-  let t = a.Z.convert.toCodePoint(e);
+  let t = o.Z.convert.toCodePoint(e);
   return null != t ? t : ""
 }
 
@@ -149,7 +149,7 @@ function x(e) {
   let t = L.get(e);
   if (null == t) {
     let n = b[e];
-    t = o.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(A), L.set(e, t)
+    t = a.ZP.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(A), L.set(e, t)
   }
   return t
 }
@@ -186,9 +186,9 @@ function F(e, t) {
   }];
   let r = "",
     i = [],
-    a = null != (n = e.match(g)) ? n : [];
-  for (let e = 0; e < a.length; e++) {
-    let t = a[e];
+    o = null != (n = e.match(g)) ? n : [];
+  for (let e = 0; e < o.length; e++) {
+    let t = o[e];
     if (null != r && "" !== r)
       if (t === U) t = r + t, r = "";
       else if (B.test(t)) {
@@ -232,8 +232,8 @@ function W(e) {
   var t, n;
   let r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
     i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "",
-    a = null != (n = null == (t = T(e)) ? void 0 : t.names[0]) ? n : i;
-  return r ? ":".concat(a, ":") : a
+    o = null != (n = null == (t = T(e)) ? void 0 : t.names[0]) ? n : i;
+  return r ? ":".concat(o, ":") : o
 }
 
 function Y(e) {

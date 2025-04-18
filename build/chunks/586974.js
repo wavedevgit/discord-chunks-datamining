@@ -8,13 +8,13 @@ e.exports = function(e) {
       keyword: ["after", "alias", "and", "case", "catch", "cond", "defstruct", "defguard", "do", "else", "end", "fn", "for", "if", "import", "in", "not", "or", "quote", "raise", "receive", "require", "reraise", "rescue", "try", "unless", "unquote", "unquote_splicing", "use", "when", "with|0"],
       literal: ["false", "nil", "true"]
     },
-    a = {
+    o = {
       className: "subst",
       begin: /#\{/,
       end: /\}/,
       keywords: i
     },
-    o = {
+    a = {
       className: "number",
       begin: "(\\b0o[0-7_]+)|(\\b0b[01_]+)|(\\b0x[0-9a-fA-F_]+)|(-?\\b[0-9][0-9_]*(\\.[0-9_]+([eE][-+]?[0-9]+)?)?)",
       relevance: 0
@@ -59,7 +59,7 @@ e.exports = function(e) {
       className: "string",
       begin: "~[a-z](?=" + l + ")",
       contains: c.map(t => e.inherit(t, {
-        contains: [u(t.end), s, a]
+        contains: [u(t.end), s, o]
       }))
     },
     f = {
@@ -75,7 +75,7 @@ e.exports = function(e) {
         begin: "~r(?=" + l + ")",
         contains: c.map(n => e.inherit(n, {
           end: t.concat(n.end, /[uismxfU]{0,7}/),
-          contains: [u(n.end), s, a]
+          contains: [u(n.end), s, o]
         }))
       }, {
         begin: "~R(?=" + l + ")",
@@ -87,7 +87,7 @@ e.exports = function(e) {
     },
     p = {
       className: "string",
-      contains: [e.BACKSLASH_ESCAPE, a],
+      contains: [e.BACKSLASH_ESCAPE, o],
       variants: [{
         begin: /"""/,
         end: /"""/
@@ -149,11 +149,11 @@ e.exports = function(e) {
       className: "title.class",
       begin: /(\b[A-Z][a-zA-Z0-9_]+)/,
       relevance: 0
-    }, o, {
+    }, a, {
       className: "variable",
       begin: "(\\$\\W)|((\\$|@@?)(\\w+))"
     }];
-  return a.contains = g, {
+  return o.contains = g, {
     name: "Elixir",
     aliases: ["ex", "exs"],
     keywords: i,

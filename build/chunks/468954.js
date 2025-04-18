@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(28546),
-  o = n(98528),
+  o = n(28546),
+  a = n(98528),
   s = n(429155),
   l = n(810462),
   c = n(783459);
@@ -82,7 +82,7 @@ function p(e) {
     renderHeader: j,
     renderUpsell: U,
     setShowUpsell: G
-  } = e, B = i.useRef(null), F = i.useRef(null), V = i.useRef(null), Z = 0 === t.length, H = (0, a.Iu)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), Y = (0, o.ep)({
+  } = e, B = i.useRef(null), F = i.useRef(null), V = i.useRef(null), Z = 0 === t.length, H = (0, o.Iu)(e => e.searchQuery), W = f.useStore(e => e.inspectedExpressionPosition), Y = (0, a.ep)({
     gridWrapperRef: B,
     containerWidth: u,
     showingEmptyState: Z
@@ -92,7 +92,7 @@ function p(e) {
     rowCountBySection: q,
     columnCounts: Q,
     gutterWidth: X
-  } = (0, o.yi)({
+  } = (0, a.yi)({
     categories: t,
     collapsedCategories: n,
     gridWidth: Y,
@@ -105,7 +105,7 @@ function p(e) {
     gridContainerProps: ee,
     handleGridContainerKeyDown: et,
     isUsingKeyboardNavigation: en
-  } = (0, o.t$)({
+  } = (0, a.t$)({
     columnCounts: Q,
     expressionsListRef: F,
     expressionsGrid: K,
@@ -118,7 +118,7 @@ function p(e) {
     rowIndex: e,
     totalRowCount: z,
     sectionIndex: t.sectionIndex
-  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, y, f, z]), ei = i.useCallback(e => null == v ? void 0 : v(t[e]), [t, v]), ea = i.useCallback(e => null == O ? void 0 : O(t[e], e), [t, O]), eo = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
+  }, t => J(e, t), t => f.setInspectedExpressionPosition(t, e)), [K, J, $, X, en, y, f, z]), ei = i.useCallback(e => null == v ? void 0 : v(t[e]), [t, v]), eo = i.useCallback(e => null == O ? void 0 : O(t[e], e), [t, O]), ea = i.useCallback(e => null == I ? void 0 : I(t[e], e), [t, I]), es = i.useCallback(() => {
     var e;
     return null == S ? void 0 : S(null == K || null == (e = K[W.rowIndex]) ? void 0 : e[W.columnIndex])
   }, [K, W.columnIndex, W.rowIndex, S]);
@@ -164,8 +164,8 @@ function p(e) {
           listPadding: x,
           renderRow: er,
           renderSection: null != v ? ei : void 0,
-          renderSectionHeader: null != O ? ea : void 0,
-          renderSectionFooter: null != I ? eo : void 0,
+          renderSectionHeader: null != O ? eo : void 0,
+          renderSectionFooter: null != I ? ea : void 0,
           renderInspector: null != S ? es : void 0,
           renderEmptySearchState: T,
           rowCount: z,

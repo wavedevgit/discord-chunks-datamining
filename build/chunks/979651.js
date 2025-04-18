@@ -4,8 +4,8 @@ let r, i;
 n.d(t, {
   Z: () => V
 }), n(388685);
-var a, o = n(392711),
-  s = n.n(o),
+var o, a = n(392711),
+  s = n.n(a),
   l = n(442837),
   c = n(570140),
   u = n(189786),
@@ -66,8 +66,8 @@ function C(e, t) {
 function R(e, t, n) {
   let r = S(m, null != e ? e : d.ME),
     i = r[t],
-    a = n(i);
-  return i === a ? [!1, a, i] : (null != i && (delete r[t], null != i.channelId && (delete S(b, i.channelId)[t], delete S(y, i.channelId)[t]), null != i.sessionId && delete S(v, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != a && (r[t] = a, null != a.channelId && (S(b, a.channelId)[t] = a, a.selfVideo && (S(y, a.channelId)[t] = a, A(null != e ? e : d.ME, t))), null != a.sessionId && (S(v, t)[a.sessionId] = a)), [!0, a, i])
+    o = n(i);
+  return i === o ? [!1, o, i] : (null != i && (delete r[t], null != i.channelId && (delete S(b, i.channelId)[t], delete S(y, i.channelId)[t]), null != i.sessionId && delete S(v, t)[i.sessionId], C(null != e ? e : d.ME, t)), null != o && (r[t] = o, null != o.channelId && (S(b, o.channelId)[t] = o, o.selfVideo && (S(y, o.channelId)[t] = o, A(null != e ? e : d.ME, t))), null != o.sessionId && (S(v, t)[o.sessionId] = o)), [!0, o, i])
 }
 
 function P(e) {
@@ -75,8 +75,8 @@ function P(e) {
     voiceStates: t
   } = e;
   return t.reduce((e, t) => {
-    let [n, r, a] = L(t.guildId, t);
-    return n ? (t.sessionId === i && null != r && null != a && a.channelId !== r.channelId && (p += 1), h++, !0) : e
+    let [n, r, o] = L(t.guildId, t);
+    return n ? (t.sessionId === i && null != r && null != o && o.channelId !== r.channelId && (p += 1), h++, !0) : e
   }, !1)
 }
 
@@ -134,8 +134,8 @@ function M(e) {
   let {
     user: t,
     sessionId: n
-  } = e, a = null != r && r !== t.id;
-  return a && (m = {}, b = {}, v = {}, y = {}, E.clear()), r = t.id, i = n, a
+  } = e, o = null != r && r !== t.id;
+  return o && (m = {}, b = {}, v = {}, y = {}, E.clear()), r = t.id, i = n, o
 }
 
 function k() {
@@ -146,11 +146,11 @@ function j(e) {
   let {
     voiceStates: t,
     user: n,
-    sessionId: a
+    sessionId: o
   } = e;
   for (let [e, n] of(m = {}, b = {}, v = {}, y = {}, Object.entries(t)))
     for (let [t, r] of Object.entries(n)) R(e, t, () => new u.Z(r));
-  r = n.id, i = a
+  r = n.id, i = o
 }
 
 function U(e) {
@@ -175,7 +175,7 @@ function B(e) {
   } = e;
   T(t)
 }
-class F extends(a = l.ZP.Store) {
+class F extends(o = l.ZP.Store) {
   getAllVoiceStates() {
     return m
   }
@@ -239,9 +239,9 @@ class F extends(a = l.ZP.Store) {
     return Object.values(S(y, e)).length > 0
   }
   getVoicePlatformForChannel(e, t) {
-    var n, a;
-    let o = null != i && (null == (a = v[r]) || null == (n = a[i]) ? void 0 : n.channelId);
-    return t === r && e === o ? f.wR.DESKTOP : O[I(t, e)]
+    var n, o;
+    let a = null != i && (null == (o = v[r]) || null == (n = o[i]) ? void 0 : n.channelId);
+    return t === r && e === a ? f.wR.DESKTOP : O[I(t, e)]
   }
   get userHasBeenMovedVersion() {
     return p

@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685), n(35282);
 var r = n(818083);
 let i = "bandwidth_estimation",
-  a = (0, r.B)({
+  o = (0, r.B)({
     kind: "user",
     id: "2024-06_rtc_pacer__simulcast",
     label: "RTC Pacer & Golive Simulcast",
@@ -64,9 +64,9 @@ let i = "bandwidth_estimation",
       }
     }]
   }),
-  o = {
+  a = {
     getConfig(e, t) {
-      let n = a.getCurrentConfig({
+      let n = o.getCurrentConfig({
         location: "e1c55b_1"
       }, {
         autoTrackExposure: e

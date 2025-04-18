@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(692547),
+  o = n.n(i),
+  a = n(692547),
   s = n(481060),
   l = n(388032),
   c = n(760858),
@@ -38,13 +38,13 @@ function _(e) {
   } = e;
   return "RED" === u ? (0, r.jsx)(s.IGR, {
     text: l.NW.string(l.t.dI3q4u),
-    className: a()(t, c.live, _),
-    color: o.Z.unsafe_rawColors.RED_400.css,
+    className: o()(t, c.live, _),
+    color: a.Z.unsafe_rawColors.RED_400.css,
     shape: f[i],
     style: n
   }) : (0, r.jsx)(s.IGR, {
     text: l.NW.string(l.t.dI3q4u),
-    className: a()(t, c.live, _, c.grey),
+    className: o()(t, c.live, _, c.grey),
     disableColor: !0,
     shape: f[i],
     style: n

@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(359110),
-  o = n(922482),
+  o = n(359110),
+  a = n(922482),
   s = n(146085),
   l = n(750154),
   c = n(592125),
@@ -29,7 +29,7 @@ function p(e) {
   let v = e => {
     e.stopPropagation(), null == n || n({
       action: "PRESS_STAGE_CHANNEL_LISTEN_BUTTON"
-    }), o.AC(g, m), (0, a.Kh)(m), null == p || p()
+    }), a.AC(g, m), (0, o.Kh)(m), null == p || p()
   };
   return (0, r.jsx)(f.tG, {
     text: _.NW.string(_.t.ZYO5OD),

@@ -6,9 +6,9 @@ n.d(t, {
 }), n(388685), n(314940);
 var r = n(200651),
   i = n(192379),
-  a = n(995899),
-  o = n(512722),
-  s = n.n(o),
+  o = n(995899),
+  a = n(512722),
+  s = n.n(a),
   l = n(200100),
   c = n(278074),
   u = n(979554),
@@ -61,7 +61,7 @@ var r = n(200651),
   er = n(388032),
   ei = n(854402);
 
-function ea(e, t, n) {
+function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -70,14 +70,14 @@ function ea(e, t, n) {
   }) : e[t] = n, e
 }
 
-function eo(e) {
+function ea(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ea(e, t, n[t])
+      eo(e, t, n[t])
     })
   }
   return e
@@ -104,7 +104,7 @@ let ec = 880,
     let {
       product: t,
       pairedProduct: n
-    } = e, [i] = t.items, a = null == n ? void 0 : n.items[0], o = (0, f.e7)([C.default], () => {
+    } = e, [i] = t.items, o = null == n ? void 0 : n.items[0], a = (0, f.e7)([C.default], () => {
       let e = C.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
     });
@@ -114,12 +114,12 @@ let ec = 880,
         forCollectedModal: !0,
         profileEffectId: i.id
       })
-    })).with(u.Z.AVATAR_DECORATION, () => (s()(i.type === u.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != a && a.type === u.Z.AVATAR_DECORATION) ? (0, r.jsxs)("div", {
+    })).with(u.Z.AVATAR_DECORATION, () => (s()(i.type === u.Z.AVATAR_DECORATION, "ts-match already checked the type"), null != o && o.type === u.Z.AVATAR_DECORATION) ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: ei.avatarDecorationPairOne,
         children: (0, r.jsx)(K.R, {
           item: i,
-          user: o,
+          user: a,
           avatarSize: _.EFr.SIZE_120,
           isPurchased: !1,
           isHighlighted: !0
@@ -127,7 +127,7 @@ let ec = 880,
       }), (0, r.jsx)("div", {
         className: ei.avatarDecorationPairTwo,
         children: (0, r.jsx)(K.R, {
-          item: a,
+          item: o,
           avatarSize: _.EFr.SIZE_120,
           isPurchased: !1
         })
@@ -136,7 +136,7 @@ let ec = 880,
       className: ei.avatarDecoration,
       children: (0, r.jsx)(K.R, {
         item: i,
-        user: o,
+        user: a,
         avatarSize: _.EFr.SIZE_120,
         isPurchased: !1,
         isHighlighted: !0
@@ -145,14 +145,14 @@ let ec = 880,
       className: ei.nameplate,
       children: (0, r.jsx)(q.Z, {
         nameplate: i,
-        user: o,
+        user: a,
         isHighlighted: !0
       })
     })).with(u.Z.BUNDLE, () => (0, r.jsx)("div", {
       className: ei.bundlePreview,
       children: (0, r.jsx)(z.d, {
         product: t,
-        user: o,
+        user: a,
         isPurchased: !1,
         isHighlighted: !0,
         profileEffectClassName: ei.bundleProfileEffectCard
@@ -168,7 +168,7 @@ let ec = 880,
     let {
       reducedMotion: t,
       displayOptions: n
-    } = e, [a, o] = i.useState(!1), s = (0, _.q_F)({
+    } = e, [o, a] = i.useState(!1), s = (0, _.q_F)({
       from: {
         transform: "translateX(100%)",
         right: "-100%"
@@ -180,7 +180,7 @@ let ec = 880,
       config: {
         duration: 1550
       },
-      onRest: () => setTimeout(() => o(!0), 100)
+      onRest: () => setTimeout(() => a(!0), 100)
     }), c = (0, _.q_F)({
       from: {
         transform: "translateX(100%)",
@@ -193,7 +193,7 @@ let ec = 880,
       config: {
         duration: 1550
       },
-      reverse: a
+      reverse: o
     }), u = (0, _.q_F)({
       from: {
         transform: "translateX(50%)",
@@ -214,7 +214,7 @@ let ec = 880,
       children: [(0, r.jsx)(l.animated.div, {
         className: ei.easterEggContainer,
         style: s,
-        children: (0, r.jsx)(eu, eo({}, e))
+        children: (0, r.jsx)(eu, ea({}, e))
       }), (0, r.jsx)(l.animated.div, {
         className: ei.easterEggContainer,
         style: t ? u : c,
@@ -229,16 +229,16 @@ let ec = 880,
   },
   ef = e => {
     let t = (0, J.v)(e.product.categorySkuId);
-    return null != t ? (0, r.jsx)(ed, el(eo({}, e), {
+    return null != t ? (0, r.jsx)(ed, el(ea({}, e), {
       displayOptions: t
-    })) : (0, r.jsx)(eu, eo({}, e))
+    })) : (0, r.jsx)(eu, ea({}, e))
   },
   e_ = e => {
     let {
       product: t,
       onClose: n,
-      confettiTarget: a,
-      confettiCanvas: o,
+      confettiTarget: o,
+      confettiCanvas: a,
       hideConfetti: s = !1,
       analyticsLocations: l,
       overrideTitle: c,
@@ -314,8 +314,8 @@ let ec = 880,
         ref: P,
         children: x()
       }), !s && !R && (0, r.jsx)(F.Z, {
-        confettiTarget: null != a ? a : P.current,
-        confettiCanvas: o,
+        confettiTarget: null != o ? o : P.current,
+        confettiCanvas: a,
         sprites: (0, Z.vK)(I.categorySkuId),
         colors: null == A ? void 0 : A.map(e => e.toHexString())
       })]
@@ -326,19 +326,19 @@ let ec = 880,
     var t;
     let {
       product: n,
-      pairedProduct: a,
-      onClose: o,
+      pairedProduct: o,
+      onClose: a,
       analyticsLocations: s,
       overrideTitle: l,
       overrideDescription: d,
       shouldShowPromotionalExperience: f
-    } = e, p = (0, k.ed)("CollectiblesCollectedModal"), h = (0, U.k)(n), m = (0, U.k)(a), g = null != a, E = (0, y.Z)(), b = null == E || null == (t = E.giftPurchaseConfirmation) ? void 0 : t.rewardCollectedText(), {
+    } = e, p = (0, k.ed)("CollectiblesCollectedModal"), h = (0, U.k)(n), m = (0, U.k)(o), g = null != o, E = (0, y.Z)(), b = null == E || null == (t = E.giftPurchaseConfirmation) ? void 0 : t.rewardCollectedText(), {
       handleUseNow: v,
       isApplying: O
     } = (0, j.W)({
       product: n,
-      onSuccess: o,
-      onError: o
+      onSuccess: a,
+      onError: a
     }), {
       firstAvatarDecoration: I,
       firstProfileEffect: S
@@ -361,13 +361,13 @@ let ec = 880,
         children: [(0, r.jsx)(_.zxk, {
           color: _.Ttl.BRAND,
           onClick: () => {
-            o(), P.S.dispatch(ee.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+            a(), P.S.dispatch(ee.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
           },
           children: er.NW.string(en.Z.yfwZu7)
         }), (0, r.jsx)(_.zxk, {
           color: _.Ttl.PRIMARY,
           onClick: () => {
-            o(), (0, A.Y)({
+            a(), (0, A.Y)({
               pageType: ee.ZY5.SHOP_ORBS_TAB,
               sectionType: ee.jXE.ORBS_BADGE_REDEMPTION_MODAL,
               ctaObject: ee.qAy.CTA_TO_QUEST_HOME
@@ -375,7 +375,7 @@ let ec = 880,
           },
           children: er.NW.string(er.t["H57f4+"])
         })]
-      }) : null, [o, n.skuId]);
+      }) : null, [a, n.skuId]);
     return (0, r.jsxs)("div", {
       className: ei.collectedInfoContainer,
       children: [(0, r.jsxs)("div", {
@@ -390,12 +390,12 @@ let ec = 880,
       }), (0, r.jsxs)("div", {
         className: ei.buttons,
         children: [g ? (0, r.jsx)(em, {
-          onClose: o,
-          product: a,
+          onClose: a,
+          product: o,
           analyticsLocations: s
         }) : null != D ? D : (0, r.jsx)(eg, {
           product: n,
-          onClose: o,
+          onClose: a,
           isPrimary: C,
           analyticsLocations: s
         }), C ? (0, r.jsx)(_.zxk, {
@@ -410,19 +410,19 @@ let ec = 880,
     let {
       onClose: t,
       product: n,
-      analyticsLocations: a
-    } = e, o = (0, k.hv)("CollectiblesShopGiftButton"), s = i.useCallback(e => {
+      analyticsLocations: o
+    } = e, a = (0, k.hv)("CollectiblesShopGiftButton"), s = i.useCallback(e => {
       e.stopPropagation(), (0, b.Z)({
         skuId: n.skuId,
         isGift: !0,
         giftingOrigin: et.Wt.SHOP_PAGE,
-        analyticsLocations: a,
-        variantsReturnStyle: o,
+        analyticsLocations: o,
+        variantsReturnStyle: a,
         onClose: e => {
           e && t()
         }
       })
-    }, [n.skuId, a, o, t]);
+    }, [n.skuId, o, a, t]);
     return (0, r.jsxs)(_.zxk, {
       color: _.Ttl.PRIMARY,
       onClick: s,
@@ -437,26 +437,26 @@ let ec = 880,
     let {
       product: t,
       onClose: n,
-      isPrimary: a,
-      analyticsLocations: o,
+      isPrimary: o,
+      analyticsLocations: a,
       text: l
     } = e, c = (0, v.Z)({
-      analyticsLocations: o
+      analyticsLocations: a
     }), [d] = t.items, f = i.useCallback(() => {
       if (n(), (0, p.xf)(), c(), t.type === u.Z.AVATAR_DECORATION) {
         s()(d.type === u.Z.AVATAR_DECORATION, "product type and item type are the same"), (0, E.ps)({
           initialSelectedDecoration: d,
-          analyticsLocations: o
+          analyticsLocations: a
         });
         return
       }
       t.type === u.Z.PROFILE_EFFECT && (0, I.H)({
         initialSelectedEffectId: d.id,
-        analyticsLocations: o
+        analyticsLocations: a
       })
-    }, [n, c, t.type, d, o]);
+    }, [n, c, t.type, d, a]);
     return (0, r.jsx)(_.zxk, {
-      color: a ? _.Ttl.PRIMARY : _.Ttl.BRAND,
+      color: o ? _.Ttl.PRIMARY : _.Ttl.BRAND,
       onClick: f,
       children: null != l ? l : er.NW.string(er.t["2p2aY2"])
     })
@@ -465,14 +465,14 @@ let ec = 880,
     let {
       transitionState: t,
       product: n,
-      onClose: o,
+      onClose: a,
       analyticsLocations: s,
       overrideTitle: l,
       overrideDescription: c,
       shouldShowPromotionalExperience: u,
       itemConsumed: d,
       purchaseType: p = $.o8.FIAT
-    } = e, h = (0, f.e7)([D.Z], () => D.Z.purchases), E = (0, L.o)(n, h), b = (0, Q.W)(n, E), y = i.useRef(new a.qA), [v, O] = i.useState(null), I = (0, J.UY)({
+    } = e, h = (0, f.e7)([D.Z], () => D.Z.purchases), E = (0, L.o)(n, h), b = (0, Q.W)(n, E), y = i.useRef(new o.qA), [v, O] = i.useState(null), I = (0, J.UY)({
       purchaseType: p,
       skuId: b.skuId
     }), {
@@ -486,7 +486,7 @@ let ec = 880,
         product_type: T
       })
     }, [S, b.skuId, b.items, T]), (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(a.O_, {
+      children: [(0, r.jsx)(o.O_, {
         ref: O,
         className: ei.confettiCanvas,
         environment: y.current
@@ -502,7 +502,7 @@ let ec = 880,
           scrollbarType: "none",
           children: (0, r.jsx)(e_, {
             product: b,
-            onClose: o,
+            onClose: a,
             confettiCanvas: v,
             hideConfetti: null != I,
             analyticsLocations: S,

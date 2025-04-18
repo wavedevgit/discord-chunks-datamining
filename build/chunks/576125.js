@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => a
+  Z: () => o
 }), n(192379);
 var r = n(399606),
   i = n(351780);
 
-function a(e) {
+function o(e) {
   let {
     children: t,
     confettiLocation: n

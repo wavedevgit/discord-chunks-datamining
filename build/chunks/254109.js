@@ -8,8 +8,8 @@ n.d(t, {
 }), n(467055);
 var r = n(290486),
   i = n(731965),
-  a = n(626135),
-  o = n(981631);
+  o = n(626135),
+  a = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -69,7 +69,7 @@ function p(e) {
 
 function h() {
   let e = _.getState();
-  a.default.track(o.rMx.MEDIA_VIEWER_SESSION_COMPLETED, l({
+  o.default.track(a.rMx.MEDIA_VIEWER_SESSION_COMPLETED, l({
     source: e.source,
     guild_id: e.guildId,
     channel_id: e.channelId,

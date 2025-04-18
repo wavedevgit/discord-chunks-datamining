@@ -6,8 +6,8 @@ n.d(t, {
 }), n(415506);
 var r = n(544891),
   i = n(570140),
-  a = n(355467),
-  o = n(987032),
+  o = n(355467),
+  a = n(987032),
   s = n(559407),
   l = n(122289),
   c = n(439041),
@@ -24,7 +24,7 @@ async function _() {
   try {
     let {
       enabledPaymentTypes: e
-    } = o.ZP.getCurrentConfig({
+    } = a.ZP.getCurrentConfig({
       location: "40c266_2"
     }, {
       autoTrackExposure: !1
@@ -34,7 +34,7 @@ async function _() {
       {
         default: r
       } = await Promise.all([n.e("50448"), n.e("23357")]).then(n.bind(n, 175145)),
-      a = await r({
+      o = await r({
         environment: u.Ai1.ADYEN.KEY.startsWith("live_") ? "live" : "test",
         clientKey: u.Ai1.ADYEN.KEY,
         analytics: {
@@ -44,8 +44,8 @@ async function _() {
       });
     i.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_SUCCESS",
-      client: a
-    }), p(a)
+      client: o
+    }), p(o)
   } catch (e) {
     (0, l.q2)(e), i.Z.dispatch({
       type: "ADYEN_CREATE_CLIENT_FAIL"
@@ -72,7 +72,7 @@ function p(e) {
         type: "ADYEN_CASH_APP_PAY_SUBMIT_SUCCESS",
         data: t
       });
-      else throw (0, a.SQ)("Cash App Pay setup attempt is not valid.")
+      else throw (0, o.SQ)("Cash App Pay setup attempt is not valid.")
     },
     onError: e => {
       let t, n = !0;
@@ -83,7 +83,7 @@ function p(e) {
             break;
           case "Something went wrong during customerRequest creation":
             n = !1, t = d.NW.string(d.t.TJ8dDA)
-        }(0, a.SQ)(e.message, n, t)
+        }(0, o.SQ)(e.message, n, t)
       }
     }
   }).mount("#".concat(s.F));

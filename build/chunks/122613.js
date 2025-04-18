@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(592125),
   i = n(594174),
-  a = n(585483),
-  o = n(636449),
+  o = n(585483),
+  a = n(636449),
   s = n(774226),
   l = n(337682),
   c = n(566620),
@@ -57,13 +57,13 @@ async function g(e) {
   if (null == e.targetApplicationId) return !1;
   let n = !1;
   try {
-    t = await (0, u.Z)(e.targetApplicationId, e.channelId), n = (0, o.R)({
+    t = await (0, u.Z)(e.targetApplicationId, e.channelId), n = (0, a.R)({
       isContextless: (0, s.Kb)(t)
     })
   } catch (e) {
     return !1
   }
-  return (0, o.C)(n, () => E(m(p({}, e), {
+  return (0, a.C)(n, () => E(m(p({}, e), {
     targetApplication: t
   })))
 }
@@ -71,7 +71,7 @@ async function E(e) {
   let {
     targetApplication: t,
     locationObject: n,
-    channelId: o,
+    channelId: a,
     analyticsLocations: s,
     componentId: u,
     commandOrigin: _,
@@ -83,10 +83,10 @@ async function E(e) {
     inviterUserId: b,
     onConfirmActivityLaunchChecksAlertOpen: y
   } = e, v = (0, d.Z)(), O = i.default.getCurrentUser();
-  return null == o ? (a.S.dispatch(f.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
+  return null == a ? (o.S.dispatch(f.CkL.SHOW_ACTIVITIES_CHANNEL_SELECTOR, {
     applicationId: t.id
-  }), !1) : null != r.Z.getChannel(o) && null != O && null != t && (l.tZ(t.id), await (0, c.G6)({
-    channelId: o,
+  }), !1) : null != r.Z.getChannel(a) && null != O && null != t && (l.tZ(t.id), await (0, c.G6)({
+    channelId: a,
     applicationId: t.id,
     isStart: !0,
     embeddedActivitiesManager: v,

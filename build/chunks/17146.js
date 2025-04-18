@@ -15,8 +15,8 @@ n.d(t, {
   ug: () => u,
   vE: () => i
 });
-let a = 34028234663852886e22,
-  o = -34028234663852886e22,
+let o = 34028234663852886e22,
+  a = -34028234663852886e22,
   s = 0xffffffff,
   l = 0x7fffffff,
   c = -0x80000000;
@@ -33,5 +33,5 @@ function d(e) {
 
 function f(e) {
   if ("number" != typeof e) throw Error("invalid float 32: " + typeof e);
-  if (Number.isFinite(e) && (e > a || e < o)) throw Error("invalid float 32: " + e)
+  if (Number.isFinite(e) && (e > o || e < a)) throw Error("invalid float 32: " + e)
 }

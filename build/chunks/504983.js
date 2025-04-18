@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(933282),
   l = function(e) {
     return e.PREMIUM = "premium", e.LIMITED = "limited", e
@@ -26,21 +26,21 @@ let c = {
     let {
       children: n,
       type: i = "premium",
-      isShown: a,
+      isShown: o,
       hasBackground: l = !1,
       className: u,
       backgroundClassName: d
     } = e;
-    if (!a) return n;
+    if (!o) return n;
     let {
       border: f,
       background: _
     } = c[i];
     return (0, r.jsx)("div", {
       ref: t,
-      className: o()(f, u),
+      className: a()(f, u),
       children: (0, r.jsx)("div", {
-        className: o()(l ? _ : s.background, d),
+        className: a()(l ? _ : s.background, d),
         children: n
       })
     })

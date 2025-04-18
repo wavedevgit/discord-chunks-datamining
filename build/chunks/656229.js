@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(222062),
-  o = n(867176),
+  o = n(222062),
+  a = n(867176),
   s = n(654904),
   l = n(486324),
   c = n(228168),
@@ -25,13 +25,13 @@ function f(e) {
     isTryItOutFlow: m,
     disabledInputs: g,
     onUpsellClick: E
-  } = e, b = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, y = b ? i.vdY : i.SrA, v = (0, a.M)(b), O = () => {
+  } = e, b = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, y = b ? i.vdY : i.SrA, v = (0, o.M)(b), O = () => {
     if (!b && !v) {
       null == E || E();
       return
     }(0, s.$r)(l.pC.BANNER, f, m)
   };
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(a.Z, {
     user: t,
     displayProfile: n,
     guildId: f,

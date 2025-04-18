@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  ME: () => a,
+  ME: () => o,
   ZD: () => r
 });
 var r = function(e) {
@@ -48,7 +48,7 @@ let i = [{
   secondary: "#cccccc"
 }];
 i[0].primary, i[0].secondary;
-let a = {
+let o = {
   0: 2,
   1: 1,
   2: 1,

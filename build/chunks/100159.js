@@ -6,7 +6,7 @@ n.d(t, {
 var r = n(812206),
   i = n(981631);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -15,14 +15,14 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 
-function o(e) {
+function a(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      a(e, t, n[t])
+      o(e, t, n[t])
     })
   }
   return e
@@ -31,14 +31,14 @@ function o(e) {
 function s(e) {
   let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
     n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-    a = r.Z.getApplication(e.applicationId),
+    o = r.Z.getApplication(e.applicationId),
     s = e.getPrice(),
     l = e.getPrice(null, !1),
     c = {
       sku_id: e.id,
       sku_type: e.type,
       application_id: e.applicationId,
-      application_name: null != a ? a.name : null,
+      application_name: null != o ? o.name : null,
       store_title: e.name,
       distribution_type: e.premium ? "premium" : "distribution"
     },
@@ -63,5 +63,5 @@ function s(e) {
     has_controller_support: e.hasFeature(i.Qa3.CONTROLLER_SUPPORT),
     has_cloud_saves: e.hasFeature(i.Qa3.CLOUD_SAVES),
     has_secure_networking: e.hasFeature(i.Qa3.SECURE_NETWORKING)
-  }), o({}, c, u, d)
+  }), a({}, c, u, d)
 }

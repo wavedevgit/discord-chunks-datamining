@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  b: () => a
+  b: () => o
 });
 var r = n(815790),
   i = n(588215);
 
-function a(e, t) {
+function o(e, t) {
   let n = (0, r.Dw)(e.joinedAt);
   switch (t) {
     case i.d$.ORDER_BY_GUILD_JOINED_AT_ASC:

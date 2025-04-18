@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(388032);
-let o = (e, t) => {
+  o = n(388032);
+let a = (e, t) => {
     let n = {
       display: "flex",
       gap: "4px",
@@ -28,8 +28,8 @@ let o = (e, t) => {
   },
   s = {
     getForumChannelPermissionText: function() {
-      return a.NW.format(a.t.zlXUVV, {
-        warningHook: o
+      return o.NW.format(o.t.zlXUVV, {
+        warningHook: a
       })
     }
   }

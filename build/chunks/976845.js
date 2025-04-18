@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(60488),
-  o = n(934248),
+  o = n(60488),
+  a = n(934248),
   s = n(780384),
   l = n(410030),
   c = n(738134);
@@ -56,8 +56,8 @@ function p(e, t) {
   if (null == e) return {};
   var n, r, i = h(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -65,8 +65,8 @@ function p(e, t) {
 function h(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let m = {
@@ -83,12 +83,12 @@ let m = {
       currentAnimationType: t,
       animationTypeRef: n,
       onSetAnimationDurationMS: r,
-      play: a,
-      getDuration: o
-    } = e, s = o(), l = null != s ? 1e3 * s : g;
+      play: o,
+      getDuration: a
+    } = e, s = a(), l = null != s ? 1e3 * s : g;
     (0, i.useEffect)(() => {
-      null !== t && t !== n.current && (n.current = t, a())
-    }, [t, a, n]), (0, i.useEffect)(() => {
+      null !== t && t !== n.current && (n.current = t, o())
+    }, [t, o, n]), (0, i.useEffect)(() => {
       r(l)
     }, [r, l])
   },
@@ -96,13 +96,13 @@ let m = {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
-    let i = (0, o.D)(null != t ? t : "earn"),
+    let i = (0, a.D)(null != t ? t : "earn"),
       {
-        Component: a
+        Component: o
       } = i;
     return b(d({
       currentAnimationType: t
-    }, n, p(i, ["Component"]))), (0, r.jsx)(a, _(d({}, m), {
+    }, n, p(i, ["Component"]))), (0, r.jsx)(o, _(d({}, m), {
       size: "custom",
       className: c.orbsLottie,
       useLottieDefaultColors: !0
@@ -112,13 +112,13 @@ let m = {
     var {
       currentAnimationType: t
     } = e, n = p(e, ["currentAnimationType"]);
-    let i = (0, a.v)(null != t ? t : "earn"),
+    let i = (0, o.v)(null != t ? t : "earn"),
       {
-        Component: o
+        Component: a
       } = i;
     return b(d({
       currentAnimationType: t
-    }, n, p(i, ["Component"]))), (0, r.jsx)(o, _(d({}, m), {
+    }, n, p(i, ["Component"]))), (0, r.jsx)(a, _(d({}, m), {
       size: "custom",
       className: c.orbsLottie,
       useLottieDefaultColors: !0

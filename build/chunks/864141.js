@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(793030),
+  o = n.n(i),
+  a = n(793030),
   s = n(442837),
   l = n(481060),
   c = n(287734),
@@ -125,7 +125,7 @@ function j(e) {
     return (0, r.jsxs)("div", {
       className: D.details,
       children: [(0, r.jsxs)("div", {
-        children: [(0, r.jsxs)(o.X6, {
+        children: [(0, r.jsxs)(a.X6, {
           variant: "heading-sm/semibold",
           color: "text-normal",
           className: D.voiceChannelHeading,
@@ -135,7 +135,7 @@ function j(e) {
             color: l.TVs.colors.TEXT_NORMAL,
             className: D.voiceIcon
           }), (0, r.jsx)(l.P3F, {
-            className: a()(D.clickableText, D.inline),
+            className: o()(D.clickableText, D.inline),
             onClick: e,
             children: H
           })]
@@ -153,7 +153,7 @@ function j(e) {
       })]
     })
   }, q = () => (0, r.jsx)("div", {
-    className: a()(D.actions, U),
+    className: o()(D.actions, U),
     children: (0, r.jsx)(C.Z, {
       channel: i,
       onAction: B,
@@ -164,7 +164,7 @@ function j(e) {
     value: G,
     children: (0, r.jsxs)(O.Z, {
       ref: F,
-      className: a()(D.card, L),
+      className: o()(D.card, L),
       onAction: B,
       onClose: M,
       children: [(0, r.jsx)(I.Z, {
@@ -178,7 +178,7 @@ function j(e) {
       }), (0, r.jsx)("div", {
         className: D.body,
         children: (0, r.jsxs)("div", {
-          className: a()(D.content, U),
+          className: o()(D.content, U),
           children: [(0, r.jsx)(T.Z, {
             users: Z,
             channel: i

@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(512722),
   i = n.n(r);
 
-function a(e, t, n) {
+function o(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: !0,
@@ -14,7 +14,7 @@ function a(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class o {
+class a {
   setExporter(e) {
     this.exporter = e
   }
@@ -24,6 +24,6 @@ class o {
     return i()(null != t, "DiscordCanvas: Couldn't get a canvas for export."), this.exporter.exportCanvas(t, e)
   }
   constructor(e, t) {
-    a(this, "canvas", void 0), a(this, "exporter", void 0), this.canvas = e, this.exporter = t
+    o(this, "canvas", void 0), o(this, "exporter", void 0), this.canvas = e, this.exporter = t
   }
 }

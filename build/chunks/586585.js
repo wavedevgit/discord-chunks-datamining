@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(600164),
-  o = n(612853),
+  o = n(600164),
+  a = n(612853),
   s = n(388032),
   l = n(240150);
 
@@ -105,9 +105,9 @@ let p = e => {
     children: null != n ? n : s.NW.string(s.t["13/7kZ"])
   });
   return (0, r.jsxs)(i.mzw, {
-    justify: a.Z.Justify.BETWEEN,
-    align: a.Z.Align.CENTER,
-    children: [v(), O(), (0, r.jsx)(o.Z, {}), I()]
+    justify: o.Z.Justify.BETWEEN,
+    align: o.Z.Align.CENTER,
+    children: [v(), O(), (0, r.jsx)(a.Z, {}), I()]
   })
 };
 p.CTAType = _;

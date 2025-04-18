@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(704215),
-  o = n(481060),
+  o = n(704215),
+  a = n(481060),
   s = n(194359),
   l = n(377171),
   c = n(243778),
@@ -58,7 +58,7 @@ function b(e, t) {
 }
 
 function y() {
-  return (0, r.jsx)(o.IGR, {
+  return (0, r.jsx)(a.IGR, {
     color: l.Z.BG_BRAND,
     text: p.NW.string(p.t.y2b7CA)
   })
@@ -85,8 +85,8 @@ function v(e) {
   } = (0, i.cj)([u.Z], () => ({
     isIgnored: u.Z.isIgnored(T),
     isBlocked: u.Z.isBlocked(T)
-  }), [T]), R = [a.z.IGNORE_USER_NEW_BADGE], [P, w] = (0, c.US)(R), D = P === a.z.IGNORE_USER_NEW_BADGE;
-  return N || C ? null : (0, r.jsx)(o.sNh, {
+  }), [T]), R = [o.z.IGNORE_USER_NEW_BADGE], [P, w] = (0, c.US)(R), D = P === o.z.IGNORE_USER_NEW_BADGE;
+  return N || C ? null : (0, r.jsx)(a.sNh, {
     id: "ignore",
     color: "default",
     label: A ? p.NW.string(p.t["8wXU9P"]) : (0, r.jsxs)("div", {
@@ -96,7 +96,7 @@ function v(e) {
     action: A ? () => {
       null == O || O(), s.Z.unignoreUser(T, null != I ? I : "use-ignore-user-item-web", null != m ? m : void 0)
     } : () => {
-      D && w(_.L.TAKE_ACTION), (0, o.ZDy)(async () => {
+      D && w(_.L.TAKE_ACTION), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("97652"), n.e("25784")]).then(n.bind(n, 240515));
@@ -109,7 +109,7 @@ function v(e) {
           location: I
         }))
       }, {
-        contextKey: (0, o.VnL)(S)
+        contextKey: (0, a.VnL)(S)
       })
     }
   })

@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Dj: () => a,
+  Dj: () => o,
   i1: () => i
 });
 let r = (0, n(987170).Z)({
@@ -26,28 +26,28 @@ function i(e) {
     location: n,
     autoTrackExposure: i = !0
   } = e, {
-    enabled: a
+    enabled: o
   } = r.getCurrentConfig({
     guildId: t,
     location: n
   }, {
     autoTrackExposure: i
   });
-  return a
+  return o
 }
 
-function a(e) {
+function o(e) {
   let {
     guildId: t,
     location: n,
     autoTrackExposure: i = !0
   } = e, {
-    enabled: a
+    enabled: o
   } = r.useExperiment({
     guildId: t,
     location: n
   }, {
     autoTrackExposure: i
   });
-  return a
+  return o
 }

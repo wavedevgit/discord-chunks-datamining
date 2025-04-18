@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(663507),
-  a = n(924428),
-  o = n(151973);
+  o = n(924428),
+  a = n(151973);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,12 +73,12 @@ function f(e) {
     paddingVertical: y,
     paddingHorizontal: v,
     dir: O
-  } = e, I = (0, a.Z)(), S = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), N = p(), A = Math.min(null != h ? h : 1 / 0, N.offsetWidth), C = null != h ? Math.max(0, N.offsetWidth - h) : 0, {
+  } = e, I = (0, o.Z)(), S = (0, r.useRef)(d), [T] = (0, r.useState)(() => new i.ZP), N = p(), A = Math.min(null != h ? h : 1 / 0, N.offsetWidth), C = null != h ? Math.max(0, N.offsetWidth - h) : 0, {
     dirty: R,
     chunkStart: P,
     chunkEnd: w,
     forceUpdateOnChunkChange: D
-  } = (0, o.Z)({
+  } = (0, a.Z)({
     chunkSize: _,
     getScrollerState: p,
     forceUpdate: I

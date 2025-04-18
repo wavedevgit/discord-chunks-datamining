@@ -2,8 +2,8 @@
 "use strict";
 var r = n(127849),
   i = n(507604),
-  a = n(573078),
-  o = n(503463),
+  o = n(573078),
+  a = n(503463),
   s = n(621523),
   l = r.RegExp,
   c = l.prototype;
@@ -24,16 +24,16 @@ i && s(function() {
         }
       })
     },
-    a = {
+    o = {
       dotAll: "s",
       global: "g",
       ignoreCase: "i",
       multiline: "m",
       sticky: "y"
     };
-  for (var o in e && (a.hasIndices = "d"), a) i(o, a[o]);
+  for (var a in e && (o.hasIndices = "d"), o) i(a, o[a]);
   return Object.getOwnPropertyDescriptor(c, "flags").get.call(t) !== r || n !== r
-}) && a(c, "flags", {
+}) && o(c, "flags", {
   configurable: !0,
-  get: o
+  get: a
 })

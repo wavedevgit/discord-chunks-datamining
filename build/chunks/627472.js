@@ -5,8 +5,8 @@ n.d(t, {
 }), n(415506);
 var r = n(200651),
   i = n(192379),
-  a = n(803997),
-  o = n.n(a),
+  o = n(803997),
+  a = n.n(o),
   s = n(928873),
   l = n(780900);
 
@@ -53,8 +53,8 @@ function _(e, t) {
   if (null == e) return {};
   var n, r, i = p(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -62,14 +62,14 @@ function _(e, t) {
 function p(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 
 function h(e, t) {
   let n = (0, l.G6)(e);
-  return i.forwardRef(function(a, c) {
+  return i.forwardRef(function(o, c) {
     var {
       children: d,
       className: p,
@@ -79,7 +79,7 @@ function h(e, t) {
       fade: E = !1,
       onScroll: b,
       style: y
-    } = a, v = _(a, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
+    } = o, v = _(o, ["children", "className", "dir", "orientation", "paddingFix", "fade", "onScroll", "style"]);
     let O = i.useRef(null),
       I = (0, l.tT)({
         paddingFix: g,
@@ -93,7 +93,7 @@ function h(e, t) {
       ref: e => {
         "function" == typeof c ? c(e) : null != c && (c.current = e), O.current = e
       },
-      className: o()(p, {
+      className: a()(p, {
         [e]: !0,
         [t]: E
       }),

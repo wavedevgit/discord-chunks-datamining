@@ -4,9 +4,9 @@ n.d(t, {
   U: () => u
 }), n(388685);
 var r, i = n(200651),
-  a = n(192379),
-  o = n(392711),
-  s = n.n(o),
+  o = n(192379),
+  a = n(392711),
+  s = n.n(a),
   l = n(607070);
 
 function c(e, t, n) {
@@ -17,7 +17,7 @@ function c(e, t, n) {
     writable: !0
   }) : e[t] = n, e
 }
-class u extends(r = a.Component) {
+class u extends(r = o.Component) {
   componentDidMount() {
     this.props.isShaking && this.startShaking()
   }
@@ -47,7 +47,7 @@ class u extends(r = a.Component) {
     })
   }
   constructor(...e) {
-    super(...e), c(this, "ref", a.createRef()), c(this, "animationFrame", void 0), c(this, "shouldRenderFrame", !0), c(this, "animate", () => {
+    super(...e), c(this, "ref", o.createRef()), c(this, "animationFrame", void 0), c(this, "shouldRenderFrame", !0), c(this, "animate", () => {
       let {
         intensity: e,
         isShaking: t

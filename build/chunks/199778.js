@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(481060),
   l = n(927359),
   c = n(975298),
@@ -67,7 +67,7 @@ function O(e) {
   } = e, {
     fractionalState: E,
     endsAt: y
-  } = (0, c.Z)(), O = (0, o.e7)([_.default], () => _.default.getCurrentUser()), I = (0, l.Z)(y, l.a.LONG_TIME_LEFT);
+  } = (0, c.Z)(), O = (0, a.e7)([_.default], () => _.default.getCurrentUser()), I = (0, l.Z)(y, l.a.LONG_TIME_LEFT);
   if (!0 === t || !(0, d.y)("guild_boosting_fractional_premium_pill", O, E)) return null;
   let S = m.NW.format(m.t["4RgA6O"], {
     helpCenterLink: p.Z.getArticleURL(h.BhN.FRACTIONAL_PREMIUM_ABOUT)
@@ -76,9 +76,9 @@ function O(e) {
     text: S,
     "aria-label": null == S ? void 0 : S.toString(),
     tooltipClassName: g.tooltip,
-    className: a()(g.unavailableCounterContainer, i),
+    className: o()(g.unavailableCounterContainer, i),
     children: e => (0, r.jsxs)("div", v(b({}, e), {
-      className: a()(g.unavailableCounterPill, n),
+      className: o()(g.unavailableCounterPill, n),
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/bold",
         className: g.unavailableCounterPillText,

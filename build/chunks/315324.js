@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(442837),
-  a = n(481060),
-  o = n(287734),
+  o = n(481060),
+  a = n(287734),
   s = n(111028),
   l = n(318374),
   c = n(565138),
@@ -41,7 +41,7 @@ function v(e) {
       }), null == I || I()
     },
     A = e => {
-      e.stopPropagation(), o.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == O || O({
+      e.stopPropagation(), a.default.selectVoiceChannel(v.id), (0, u.Kh)(v.id), null == O || O({
         action: "OPEN_VOICE_CHANNEL"
       }), null == I || I()
     },
@@ -53,7 +53,7 @@ function v(e) {
       className: b.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: b.voiceChannel,
-      children: [(0, r.jsx)(a.DY3, {
+      children: [(0, r.jsx)(o.DY3, {
         text: n.name,
         "aria-label": !1,
         children: (0, r.jsx)(c.Z, {
@@ -62,20 +62,20 @@ function v(e) {
           className: b.guildIcon,
           onClick: N
         })
-      }), (0, r.jsx)(a.Fbu, {
+      }), (0, r.jsx)(o.Fbu, {
         size: "xxs",
-        color: a.TVs.colors.INTERACTIVE_NORMAL
+        color: o.TVs.colors.INTERACTIVE_NORMAL
       }), (0, r.jsxs)("div", {
         className: b.voiceChannelText,
         children: [(0, r.jsx)(m.Z, {
           channel: v,
           size: "xxs",
-          color: a.TVs.colors.INTERACTIVE_NORMAL,
+          color: o.TVs.colors.INTERACTIVE_NORMAL,
           className: b.voiceIcon
-        }), (0, r.jsx)(a.P3F, {
+        }), (0, r.jsx)(o.P3F, {
           onClick: A,
           className: b.clickableText,
-          children: (0, r.jsx)(a.Text, {
+          children: (0, r.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "interactive-normal",
             lineClamp: 1,
@@ -89,7 +89,7 @@ function v(e) {
         guildId: n.id,
         channelId: v.id,
         maxUsers: y,
-        size: a.EFr.SIZE_16,
+        size: o.EFr.SIZE_16,
         onClick: e => {
           e.stopPropagation(), null == O || O({
             action: "PRESS_VOICE_CHANNEL_AVATARS"

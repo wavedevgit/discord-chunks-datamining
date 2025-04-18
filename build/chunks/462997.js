@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  q: () => a
+  q: () => o
 });
 var r = n(481060),
   i = n(228168);
-let a = {
+let o = {
   [i.y0.BITE_SIZE]: {
     avatarSize: r.EFr.SIZE_80,
     avatarOffsetX: 10,

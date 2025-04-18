@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(668781),
-  o = n(355467),
+  o = n(668781),
+  a = n(355467),
   s = n(821849),
   l = n(78839),
   c = n(626135),
@@ -32,7 +32,7 @@ async function p(e) {
     intent: T
   } = e, N = I ? i.u1M : i.z1l, A = l.ZP.getPremiumTypeSubscription();
   if (null != A && A.isPurchasedExternally && null != A.paymentGateway) {
-    null != g && g(), a.Z.show({
+    null != g && g(), o.Z.show({
       title: f.NW.formatToPlainString(f.t.rTk9v7, {
         paymentGatewayName: d.Vzj[A.paymentGateway]
       }),
@@ -43,7 +43,7 @@ async function p(e) {
     });
     return
   }
-  Promise.all([(0, o.tZ)(), (0, s.Y2)()]);
+  Promise.all([(0, a.tZ)(), (0, s.Y2)()]);
   let C = () => {
     c.default.track(d.rMx.MODAL_DISMISSED, {
       type: d.jXE.PREMIUM_GUILD_PURCHASE_MODAL,
@@ -57,12 +57,12 @@ async function p(e) {
     return n => {
       let {
         transitionState: i,
-        onClose: a
+        onClose: o
       } = n;
       return (0, r.jsx)(e, {
         transitionState: i,
         onClose: e => {
-          a(), null == E || E(e)
+          o(), null == E || E(e)
         },
         analyticsLocations: t,
         analyticsLocation: p,

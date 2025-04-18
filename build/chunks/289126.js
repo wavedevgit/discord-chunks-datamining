@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 var r = n(657398),
   i = n(406705),
-  a = n(389109),
-  o = "[object Arguments]",
+  o = n(389109),
+  a = "[object Arguments]",
   s = "[object Array]",
   l = "[object Boolean]",
   c = "[object Date]",
@@ -26,6 +26,6 @@ var r = n(657398),
   A = "[object Uint16Array]",
   C = "[object Uint32Array]",
   R = {};
-R["[object Float32Array]"] = R[v] = R[O] = R[I] = R[S] = R[T] = R[N] = R[A] = R[C] = !0, R[o] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[_] = R[p] = R[h] = R[m] = R[g] = R[E] = !1, e.exports = function(e) {
-  return a(e) && i(e.length) && !!R[r(e)]
+R["[object Float32Array]"] = R[v] = R[O] = R[I] = R[S] = R[T] = R[N] = R[A] = R[C] = !0, R[a] = R[s] = R[b] = R[l] = R[y] = R[c] = R[u] = R[d] = R[f] = R[_] = R[p] = R[h] = R[m] = R[g] = R[E] = !1, e.exports = function(e) {
+  return o(e) && i(e.length) && !!R[r(e)]
 }

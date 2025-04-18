@@ -9,8 +9,8 @@ n.d(t, {
 }), n(388685), n(642613), n(415506);
 var r = n(200651),
   i = n(192379),
-  a = n(772848),
-  o = n(286379),
+  o = n(772848),
+  a = n(286379),
   s = n(493773),
   l = n(110924),
   c = n(797614),
@@ -156,13 +156,13 @@ class T {
           trackGuildAndChannelMetadata: this.trackGuildAndChannelMetadata
         })
       }), (0, _.a)("QuestImpressionTracker") && c.Z.increment({
-        name: o.V.QUEST_CONTENT_IMPRESSION,
+        name: a.V.QUEST_CONTENT_IMPRESSION,
         tags: ["quest_content:".concat((0, u._b)(this.questContent))]
       }), this.isRunning = !0
     }), m(this, "stop", function() {
       let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
       e && E.beat(!0), E.lastBeatTime = void 0, clearInterval(E.heartbeatTimeoutId), clearTimeout(E.minViewTimeReachedTimeoutId), E.isRunning = !1
-    }), this.id = (0, a.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = d, this.minViewportPercentage = O, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = l
+    }), this.id = (0, o.Z)(), this.adDecisionData = n, this.questContent = t, this.questContentPosition = s, this.minViewTimeSeconds = d, this.minViewportPercentage = O, this.quests = Array.isArray(e) ? e : [e], this.trackGuildAndChannelMetadata = i, this.triggeredByStatusChange = r, this.questContentRowIndex = l
   }
 }
 let N = (e, t) => {
@@ -190,17 +190,17 @@ function w(e) {
   let {
     visible: t,
     visibleChanged: n,
-    focused: a,
-    reference: o,
+    focused: o,
+    reference: a,
     focusedChanged: l
   } = e, c = A(e.questOrQuests), u = (0, d.KZ)(e.questContent), f = i.useRef(null);
   return (0, s.ZP)(() => () => {
     null != f.current && f.current.stop()
   }), i.useEffect(() => {
-    let r = a && t,
+    let r = o && t,
       i = (n || l || c) && r,
-      o = (n || l) && !r || c;
-    (i || o) && null != f.current && f.current.stop(), i && (f.current = new T({
+      a = (n || l) && !r || c;
+    (i || a) && null != f.current && f.current.stop(), i && (f.current = new T({
       adDecisionData: u,
       questOrQuests: e.questOrQuests,
       questContent: e.questContent,
@@ -210,8 +210,8 @@ function w(e) {
       trackGuildAndChannelMetadata: e.trackGuildAndChannelMetadata,
       minViewTimeSeconds: e.minViewTimeSeconds
     }), f.current.start())
-  }, [a, t, l, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, u]), (0, r.jsx)(C.Provider, {
+  }, [o, t, l, n, e.questOrQuests, e.questContent, e.questContentPosition, e.questContentRowIndex, e.trackGuildAndChannelMetadata, c, e.minViewTimeSeconds, u]), (0, r.jsx)(C.Provider, {
     value: f,
-    children: e.children(o, f)
+    children: e.children(a, f)
   })
 }

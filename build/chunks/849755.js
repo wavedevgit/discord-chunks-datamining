@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(481060),
   c = n(906732),
@@ -27,7 +27,7 @@ function O(e) {
   let {
     voiceChannel: t,
     onAction: n,
-    onClose: a
+    onClose: o
   } = e, {
     profileType: O
   } = (0, m.z)(), {
@@ -45,7 +45,7 @@ function O(e) {
   let C = e => {
     e.stopPropagation(), n({
       action: "PRESS_VOICE_CHANNEL_STATUS"
-    }), O === E.y0.BITE_SIZE && (null == a || a()), (0, d.Z)({
+    }), O === E.y0.BITE_SIZE && (null == o || o()), (0, d.Z)({
       channel: t,
       sourceAnalyticsLocations: I
     })
@@ -61,7 +61,7 @@ function O(e) {
     }), (0, r.jsx)(l.vdY, {
       color: "currentColor",
       size: "xxs",
-      className: o()(v.pencilIcon, null != A ? v.hidden : void 0),
+      className: a()(v.pencilIcon, null != A ? v.hidden : void 0),
       "aria-label": y.NW.string(y.t.bt75u7)
     })]
   }) : null != A ? (0, r.jsx)(g.Z, {

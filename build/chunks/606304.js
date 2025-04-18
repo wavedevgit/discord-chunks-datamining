@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => A
 }), n(388685), n(997841);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(700785),
+  o = n(570140),
+  a = n(700785),
   s = n(592125),
   l = n(131951),
   c = n(19780),
@@ -40,8 +40,8 @@ function b(e, t) {
 }
 
 function y(e, t, n) {
-  var r, i, a;
-  return ((null != (a = null == (i = p.get(e)) || null == (r = i.get(t)) ? void 0 : r.flags) ? a : f.Dg.NONE) & n) === n
+  var r, i, o;
+  return ((null != (o = null == (i = p.get(e)) || null == (r = i.get(t)) ? void 0 : r.flags) ? o : f.Dg.NONE) & n) === n
 }
 
 function v(e, t) {
@@ -57,16 +57,16 @@ function v(e, t) {
 
 function O(e, t, n) {
   var r, i;
-  let a = E(e),
-    o = a.get(t),
-    s = null != (r = null == o ? void 0 : o.flags) ? r : 0;
+  let o = E(e),
+    a = o.get(t),
+    s = null != (r = null == a ? void 0 : a.flags) ? r : 0;
   if (0 === s && 0 === n) return !1;
-  if (0 === n) a.delete(t), 0 === a.size && p.delete(e);
+  if (0 === n) o.delete(t), 0 === o.size && p.delete(e);
   else {
-    let e = null != (i = null == o ? void 0 : o.since) ? i : null,
+    let e = null != (i = null == a ? void 0 : a.since) ? i : null,
       r = (s & f.Dg.VOICE) === f.Dg.VOICE,
       l = (n & f.Dg.VOICE) === f.Dg.VOICE;
-    r !== l && (e = l ? Date.now() : null), a.set(t, {
+    r !== l && (e = l ? Date.now() : null), o.set(t, {
       flags: n,
       since: e
     })
@@ -90,7 +90,7 @@ function S(e) {
   } = e;
   if ((r & f.Dg.PRIORITY) === f.Dg.PRIORITY) {
     let e = s.Z.getChannel(u.Z.getVoiceChannelId());
-    null != e && o.BT({
+    null != e && a.BT({
       permission: d.Plq.PRIORITY_SPEAKER,
       user: n,
       context: e
@@ -108,8 +108,8 @@ function T(e) {
       userId: n,
       channelId: r,
       sessionId: i
-    } = t, a = !1, o = g;
-    return n === h && i === m && (g = null != r ? r : null), o !== g && (a = p.delete(f.Yn.DEFAULT) || a), null == r ? a = n === h && i === m ? p.delete(f.Yn.DEFAULT) || a : b(f.Yn.DEFAULT, n) || a : n === h && i !== m ? a = p.delete(f.Yn.DEFAULT) || a : n !== h && r !== c.Z.getChannelId() && (a = b(f.Yn.DEFAULT, n) || a), a || e
+    } = t, o = !1, a = g;
+    return n === h && i === m && (g = null != r ? r : null), a !== g && (o = p.delete(f.Yn.DEFAULT) || o), null == r ? o = n === h && i === m ? p.delete(f.Yn.DEFAULT) || o : b(f.Yn.DEFAULT, n) || o : n === h && i !== m ? o = p.delete(f.Yn.DEFAULT) || o : n !== h && r !== c.Z.getChannelId() && (o = b(f.Yn.DEFAULT, n) || o), o || e
   }, !1)
 }
 class N extends(r = i.ZP.Store) {
@@ -119,8 +119,8 @@ class N extends(r = i.ZP.Store) {
   getSpeakingDuration(e, t) {
     var n, r;
     let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : f.Yn.DEFAULT,
-      a = null == (r = p.get(i)) || null == (n = r.get(e)) ? void 0 : n.since;
-    return null != a ? t - a : 0
+      o = null == (r = p.get(i)) || null == (n = r.get(e)) ? void 0 : n.since;
+    return null != o ? t - o : 0
   }
   getSpeakers() {
     var e, t;
@@ -157,7 +157,7 @@ class N extends(r = i.ZP.Store) {
   }
 }
 _(N, "displayName", "SpeakingStore");
-let A = new N(a.Z, {
+let A = new N(o.Z, {
   CONNECTION_OPEN: I,
   OVERLAY_INITIALIZE: I,
   SPEAKING: S,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(268146),
   i = n(433517),
-  a = n(131951),
-  o = n(594174),
+  o = n(131951),
+  a = n(594174),
   s = n(626135),
   l = n(729345),
   c = n(981631);
@@ -42,35 +42,35 @@ async function p() {
   let n = await t(),
     {
       didCrashReporterSeeCrash: r,
-      didCrashOrUncleanExit: a
+      didCrashOrUncleanExit: o
     } = h(i.K.get(_, {}), n),
-    o = g(r, a, n);
-  s.default.track(c.rMx.APP_NATIVE_CRASH, o), i.K.set(_, {
+    a = g(r, o, n);
+  s.default.track(c.rMx.APP_NATIVE_CRASH, a), i.K.set(_, {
     lastId: null == n ? void 0 : n.id
-  }), a && setTimeout(async () => await m(), 1e4)
+  }), o && setTimeout(async () => await m(), 1e4)
 }
 
 function h(e, t) {
   var n;
   let r = (null == e ? void 0 : e.lastId) !== (null == t ? void 0 : t.id) && (null == t ? void 0 : t.id) != null,
     i = null != (n = null == t ? void 0 : t.rendererCrashExitCode) ? n : null,
-    a = r || null != i && 0 !== i;
+    o = r || null != i && 0 !== i;
   return {
     didCrashReporterSeeCrash: r,
-    didCrashOrUncleanExit: a
+    didCrashOrUncleanExit: o
   }
 }
 async function m() {
   var e, t;
-  if (null != (t = null == (e = o.default.getCurrentUser()) ? void 0 : e.isStaff()) && t) try {
-    await a.Z.getMediaEngine().writeAudioDebugState(), await (0, l.E)(c.GU0.RTC), console.log("Successfully uploaded debug files")
+  if (null != (t = null == (e = a.default.getCurrentUser()) ? void 0 : e.isStaff()) && t) try {
+    await o.Z.getMediaEngine().writeAudioDebugState(), await (0, l.E)(c.GU0.RTC), console.log("Successfully uploaded debug files")
   } catch (e) {
     console.log("Failed to upload debug files")
   }
 }
 
 function g(e, t, n) {
-  var i, a, o, s, l, c, u, f, _, p, h, m, g, E, b, y, v, O, I;
+  var i, o, a, s, l, c, u, f, _, p, h, m, g, E, b, y, v, O, I;
 
   function S(e) {
     return (null == n ? void 0 : n.storedInformation) != null && 1 === n.storedInformation[e]
@@ -91,8 +91,8 @@ function g(e, t, n) {
     video_media_session_id: T(r.X4.VideoMediaSessionId),
     stream_media_session_id: T(r.X4.StreamMediaSessionId),
     last_memory_usage_kb: null != (_ = null == n || null == (i = n.lastMemoryInformation) ? void 0 : i.memoryUsageKB) ? _ : null,
-    last_used_js_heap_size_kb: null != (p = null == n || null == (a = n.lastMemoryInformation) ? void 0 : a.usedJSHeapSizeKB) ? p : null,
-    last_memory_usage_uptime: null != (h = null == n || null == (o = n.lastMemoryInformation) ? void 0 : o.uptimeSeconds) ? h : null,
+    last_used_js_heap_size_kb: null != (p = null == n || null == (o = n.lastMemoryInformation) ? void 0 : o.usedJSHeapSizeKB) ? p : null,
+    last_memory_usage_uptime: null != (h = null == n || null == (a = n.lastMemoryInformation) ? void 0 : a.uptimeSeconds) ? h : null,
     highest_memory_usage_kb: null != (m = null == n || null == (s = n.highestMemoryInformation) ? void 0 : s.memoryUsageKB) ? m : null,
     highest_used_js_heap_size_kb: null != (g = null == n || null == (l = n.highestMemoryInformation) ? void 0 : l.usedJSHeapSizeKB) ? g : null,
     highest_memory_usage_uptime: null != (E = null == n || null == (c = n.highestMemoryInformation) ? void 0 : c.uptimeSeconds) ? E : null

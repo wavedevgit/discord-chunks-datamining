@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  u: () => a
+  u: () => o
 });
 var r = {
     ceil: Math.ceil,
@@ -13,6 +13,6 @@ var r = {
   },
   i = "trunc";
 
-function a(e) {
+function o(e) {
   return e ? r[e] : r[i]
 }

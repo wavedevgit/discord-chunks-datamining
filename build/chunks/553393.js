@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(200100),
-  o = n(91192),
+  o = n(200100),
+  a = n(91192),
   s = n(442837),
   l = n(780384),
   c = n(481060),
@@ -84,7 +84,7 @@ function F(e) {
   }), W = (0, I.tP)(y), Y = (null == y || null == (t = y.userStatus) ? void 0 : t.claimedAt) != null, K = (null == y || null == (n = y.userStatus) ? void 0 : n.enrolledAt) != null, z = (null == y || null == (h = y.userStatus) ? void 0 : h.completedAt) != null, q = (0, s.e7)([g.Z], () => g.Z.getState().theme), Q = (0, l.wj)(q) ? D.BR.DARK : D.BR.LIGHT, X = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: J,
     height: $
-  } = (0, f.ZP)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, o.eg)();
+  } = (0, f.ZP)(), [ee, et] = i.useState(X), en = (0, _.Aq)(), er = (0, a.eg)();
   i.useEffect(() => {
     let e = er.current;
     return null == e || e.addEventListener("scroll", k), () => {
@@ -113,7 +113,7 @@ function F(e) {
       },
       onRest: () => et(!0)
     }),
-    ea = (0, c.Yzy)(ee, {
+    eo = (0, c.Yzy)(ee, {
       from: {
         opacity: 0,
         scale: 0
@@ -123,7 +123,7 @@ function F(e) {
         scale: 1
       }
     }),
-    eo = () => {
+    ea = () => {
       en.dispatch(w.CkL.POPOUT_CLOSE)
     },
     es = "top" === M ? "".concat(j, " ").concat(j, " 0 0") : "0 0 ".concat(j, " ").concat(j);
@@ -183,7 +183,7 @@ function F(e) {
       handleClickCta: ec,
       tileAssetType: "game"
     };
-  return (0, r.jsx)(a.animated.div, {
+  return (0, r.jsx)(o.animated.div, {
     ref: e => {
       V.current = e
     },
@@ -213,7 +213,7 @@ function F(e) {
           }), (0, r.jsxs)(c.P3F, {
             className: x.help,
             onClick: e => {
-              eo(), eu(e)
+              ea(), eu(e)
             },
             children: [(0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
@@ -234,7 +234,7 @@ function F(e) {
           className: x.right,
           children: (0, r.jsxs)("div", {
             className: x.imgWrapper,
-            children: [ea((e, t) => t && (0, r.jsx)(a.animated.div, {
+            children: [eo((e, t) => t && (0, r.jsx)(o.animated.div, {
               style: e,
               className: x.imgUnderlay
             })), "game" === ef.tileAssetType && (0, r.jsx)("img", {
@@ -250,13 +250,13 @@ function F(e) {
               questContent: S.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",
               location: P.dr.MEMBERS_LIST,
-              onClick: eo
+              onClick: ea
             })]
           })
         })]
       }), (0, r.jsx)(c.zxk, {
         onClick: () => {
-          eo(), ef.handleClickCta()
+          ea(), ef.handleClickCta()
         },
         color: c.zxk.Colors.CUSTOM,
         className: x.ctaButton,

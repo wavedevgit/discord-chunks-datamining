@@ -7,8 +7,8 @@ n.d(t, {
 }), n(953529), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(442837),
   l = n(692547),
   c = n(780384),
@@ -81,7 +81,7 @@ function U() {
     children: [(0, r.jsx)("div", {
       className: N.splashPlaceholder
     }), (0, r.jsxs)("div", {
-      className: o()(N.body, N.hasSplash),
+      className: a()(N.body, N.hasSplash),
       children: [(0, r.jsx)("div", {
         className: N.iconPlaceholder
       }), (0, r.jsx)("div", {
@@ -136,7 +136,7 @@ function G() {
 function B(e) {
   var t, n;
   let {
-    guild: a,
+    guild: o,
     channelId: c,
     messageId: d
   } = e, {
@@ -148,7 +148,7 @@ function B(e) {
     presenceCount: C,
     memberCount: R,
     emojis: w
-  } = a, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [F, V] = i.useState(!1), Z = e => {
+  } = o, U = v, G = (0, s.e7)([m.default], () => m.default.getId()), B = (0, s.e7)([g.ZP], () => g.ZP.isMember(U, G), [U, G]), [F, V] = i.useState(!1), Z = e => {
     if (e.stopPropagation(), B)(0, h.XU)(U, c, d);
     else {
       let e = {
@@ -176,11 +176,11 @@ function B(e) {
       alt: "",
       className: N.splashImage
     }) : null, (0, r.jsxs)("div", {
-      className: o()(N.body, {
+      className: a()(N.body, {
         [N.hasSplash]: null != H
       }),
       children: [(0, r.jsx)("div", {
-        className: o()({
+        className: a()({
           [N.iconWithSplash]: null != H
         }),
         children: (0, r.jsx)(u.P3F, {
@@ -208,7 +208,7 @@ function B(e) {
         className: N.guildNameWrapper,
         children: [(0, r.jsx)(_.Z, {
           className: N.badge,
-          guild: a,
+          guild: o,
           tooltipPosition: "top",
           tooltipColor: u.ua7.Colors.PRIMARY,
           badgeColor: l.Z.unsafe_rawColors.PRIMARY_500.css
@@ -257,7 +257,7 @@ function B(e) {
           color: "header-secondary",
           children: T.NW.string(T.t.Q60n1N)
         }), (0, r.jsxs)("div", {
-          className: o()(N.emojiContainer, {
+          className: a()(N.emojiContainer, {
             [N.withCounter]: null != K
           }),
           children: [Y.map(e => {
@@ -272,7 +272,7 @@ function B(e) {
                 width: j,
                 height: j,
                 src: t,
-                className: o()({
+                className: a()({
                   [N.emoji]: null == K
                 }),
                 alt: ""
@@ -302,9 +302,9 @@ function F(e) {
   let {
     guildId: t,
     channelId: n,
-    messageId: a
+    messageId: o
   } = e, {
-    loading: o,
+    loading: a,
     unavailable: l,
     guild: c
   } = (0, s.cj)([v.Z], () => ({
@@ -313,15 +313,15 @@ function F(e) {
     unavailable: v.Z.hasFetchFailed(t)
   }), [t]);
   return (i.useEffect(() => {
-    null != c || o || l || (0, y.P)(t)
-  }, [c, t, o, l]), o) ? (0, r.jsx)(u.VqE, {
+    null != c || a || l || (0, y.P)(t)
+  }, [c, t, a, l]), a) ? (0, r.jsx)(u.VqE, {
     "aria-label": T.NW.string(T.t.ZTNur6),
     className: N.guildPopout,
     children: (0, r.jsx)(U, {})
   }) : null == c || l ? (0, r.jsx)(G, {}) : (0, r.jsx)(B, {
     guild: c,
     channelId: n,
-    messageId: a
+    messageId: o
   })
 }
 

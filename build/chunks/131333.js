@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(35282), n(413496), n(433524);
 var r = n(200651),
   i = n(192379),
-  a = n(995899),
-  o = n(481060),
+  o = n(995899),
+  a = n(481060),
   s = n(40851),
   l = n(745510),
   c = n(661637),
@@ -119,9 +119,9 @@ function M(e) {
 let k = i.forwardRef(function(e, t) {
   let {
     sprites: n
-  } = e, [o, s] = i.useState(null), {
+  } = e, [a, s] = i.useState(null), {
     confettiCanvas: c
-  } = i.useContext(l.h), u = (0, a.uR)(c, o);
+  } = i.useContext(l.h), u = (0, o.uR)(c, a);
   return i.useImperativeHandle(t, () => ({
     fireConfetti: (e, t) => {
       u.createMultipleConfetti(E(m({}, _.We), {
@@ -154,7 +154,7 @@ let k = i.forwardRef(function(e, t) {
         }
       }), N)
     }
-  }), [u]), (0, r.jsx)(a.Ji, {
+  }), [u]), (0, r.jsx)(o.Ji, {
     ref: s,
     colors: b,
     sprites: n,
@@ -166,7 +166,7 @@ let k = i.forwardRef(function(e, t) {
 function j(e) {
   let {
     children: t
-  } = e, n = i.useRef({}), [a, l] = i.useState(null), c = M(a), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
+  } = e, n = i.useRef({}), [o, l] = i.useState(null), c = M(o), _ = i.useRef(null), [h, m] = i.useState(!1), g = i.useRef("jack_o_lantern"), E = (0, s.bp)(), b = i.useCallback(e => {
     if (!h) {
       let t = D(e);
       null != t && (g.current = t, m(!0), l(null))
@@ -182,7 +182,7 @@ function j(e) {
     _.current = e
   }, []);
   return (i.useEffect(() => {
-    if ("confetti" === a) {
+    if ("confetti" === o) {
       if (null == _.current) return;
       let e = _.current.getBoundingClientRect(),
         t = e.left - S,
@@ -190,7 +190,7 @@ function j(e) {
         i = n.current[g.current];
       null == i || i.fireConfetti(t, r)
     }
-  }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
+  }, [o]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
     children: [t, Object.keys(w).map(e => {
       let t = w[e];
@@ -203,7 +203,7 @@ function j(e) {
     }), h ? (0, r.jsx)(u.ZP, {
       children: (0, r.jsx)("div", {
         className: p.animationWrapper,
-        children: (0, r.jsx)(o.kci, {
+        children: (0, r.jsx)(a.kci, {
           animationRef: I,
           className: p.lottieAnimation,
           nextScene: c,

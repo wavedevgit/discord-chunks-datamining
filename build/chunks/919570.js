@@ -1,19 +1,19 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  GR: () => a,
+  GR: () => o,
   HQ: () => s,
-  gK: () => o,
+  gK: () => a,
   wu: () => r
 });
 let r = ["click", "mousedown", "mouseup", "keydown", "keyup", "keypress", "contextmenu"],
   i = null;
 
-function a() {
+function o() {
   return i
 }
 
-function o(e) {
+function a(e) {
   i = e
 }
 

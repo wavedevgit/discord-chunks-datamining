@@ -1,11 +1,11 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(544891),
   i = n(388032);
-class a extends r.sX {
+class o extends r.sX {
   constructor(e, t) {
     var n;
     super(e, t, i.NW.string(i.t.Mt8yDA));
@@ -13,4 +13,4 @@ class a extends r.sX {
     null != r && (null == (n = r[0]) ? void 0 : n.code) === "BINARY_TYPE_MAX_SIZE" && (this.message = i.NW.string(i.t.mrlScX))
   }
 }
-let o = a
+let a = o

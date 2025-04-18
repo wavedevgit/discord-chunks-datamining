@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(192379),
   i = n(392711),
-  a = n(442837),
-  o = n(545957),
+  o = n(442837),
+  a = n(545957),
   s = n(353647),
   l = n(26033),
   c = n(180335),
@@ -23,7 +23,7 @@ function g(e) {
     recentActivityTabEnabled: t
   } = (0, _.O)({
     location: "useUserProfileActivity"
-  }), n = (0, a.e7)([d.default], () => d.default.getId() === e), g = (0, o.Z)(e), E = (0, a.e7)([f.Z], () => f.Z.getActivities(e)), b = (0, a.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : void 0), {
+  }), n = (0, o.e7)([d.default], () => d.default.getId() === e), g = (0, a.Z)(e), E = (0, o.e7)([f.Z], () => f.Z.getActivities(e)), b = (0, o.e7)([s.Z], () => n || t ? s.Z.getUserOutbox(e) : void 0), {
     live: y,
     recent: v
   } = (0, r.useMemo)(() => {

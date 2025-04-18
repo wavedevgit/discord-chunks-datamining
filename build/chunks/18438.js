@@ -12,7 +12,7 @@ n.d(t, {
   b9: () => v,
   cV: () => d,
   g_: () => _,
-  iq: () => o,
+  iq: () => a,
   pG: () => b,
   sr: () => m,
   xn: () => f,
@@ -21,11 +21,11 @@ n.d(t, {
 var r = n(544891),
   i = n(570140);
 n(37234);
-var a = n(981631);
-async function o(e, t) {
+var o = n(981631);
+async function a(e, t) {
   let {
     nick: n,
-    avatar: o,
+    avatar: a,
     avatarDescription: s,
     avatarId: l,
     avatarDecoration: c
@@ -36,7 +36,7 @@ async function o(e, t) {
   });
   let u = {
     nick: n,
-    avatar: o,
+    avatar: a,
     avatar_description: s,
     avatar_id: l,
     avatar_decoration_id: null === c ? null : null == c ? void 0 : c.id,
@@ -44,7 +44,7 @@ async function o(e, t) {
   };
   try {
     let t = await r.tn.patch({
-        url: a.ANM.SET_GUILD_MEMBER(e),
+        url: o.ANM.SET_GUILD_MEMBER(e),
         body: u,
         oldFormErrors: !0,
         rejectWithError: !1
@@ -56,7 +56,7 @@ async function o(e, t) {
       type: "GUILD_MEMBER_PROFILE_UPDATE",
       guildMember: n,
       guildId: e
-    }), (null != o || null != l) && i.Z.dispatch({
+    }), (null != a || null != l) && i.Z.dispatch({
       type: "RECENT_AVATARS_UPDATE"
     }), t
   } catch (t) {

@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  U: () => o
+  U: () => a
 });
 var r = n(570140),
   i = n(709054),
-  a = n(981631);
+  o = n(981631);
 
-function o(e, t, n) {
+function a(e, t, n) {
   r.Z.dispatch({
     type: "MESSAGE_CREATE",
     channelId: e,
@@ -30,8 +30,8 @@ function s(e) {
   } = e;
   return {
     id: i.default.fromTimestamp(Date.parse(r)),
-    type: a.uaV.STAGE_RAISE_HAND,
-    flags: a.iLy.EPHEMERAL,
+    type: o.uaV.STAGE_RAISE_HAND,
+    flags: o.iLy.EPHEMERAL,
     content: "",
     channel_id: t,
     author: n,
@@ -43,7 +43,7 @@ function s(e) {
     mention_roles: [],
     mention_everyone: !1,
     timestamp: r,
-    state: a.yb.SENT,
+    state: o.yb.SENT,
     tts: !1
   }
 }

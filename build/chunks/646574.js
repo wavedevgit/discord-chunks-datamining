@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(200100),
   l = n(442837),
   c = n(704215),
@@ -30,22 +30,22 @@ function y(e) {
     tooltipText: t,
     headingText: n,
     textColor: i
-  } = e, a = null != n;
+  } = e, o = null != n;
   return (0, r.jsxs)("span", {
-    className: a ? void 0 : g.tooltipContainer,
+    className: o ? void 0 : g.tooltipContainer,
     children: [(0, r.jsxs)("span", {
       className: g.tooltipContainer,
       children: [(0, r.jsx)(u.SrA, {
         size: "md",
         color: "currentColor",
         className: g.nitroWheel
-      }), a ? (0, r.jsx)(u.X6q, {
+      }), o ? (0, r.jsx)(u.X6q, {
         color: null != i ? i : "text-normal",
         variant: "heading-sm/semibold",
         children: n
       }) : null]
     }), (0, r.jsx)(u.Text, {
-      variant: a ? "text-xs/normal" : "text-sm/medium",
+      variant: o ? "text-xs/normal" : "text-sm/medium",
       color: null != i ? i : "text-normal",
       children: t
     })]
@@ -60,7 +60,7 @@ function O(e) {
   let {
     checked: t,
     onClick: n,
-    id: a = "burst-reaction-toggle-button"
+    id: o = "burst-reaction-toggle-button"
   } = e, O = (0, l.e7)([d.Z], () => d.Z.useReducedMotion), I = _.default.getCurrentUser(), S = null == I || (0, p.I5)(I) ? [c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [T, N] = (0, f.US)(S), [A, C] = i.useState(!1), [R, P] = (0, u.q_F)(() => ({})), w = (0, s.animated)(u.Pt5);
 
   function D() {
@@ -95,11 +95,11 @@ function O(e) {
       className: g.visuallyHidden,
       checked: t,
       onChange: D,
-      id: a,
+      id: o,
       type: "checkbox"
     }), (0, r.jsxs)("label", {
-      htmlFor: a,
-      className: o()(g.label, {
+      htmlFor: o,
+      className: a()(g.label, {
         [g.labelChecked]: t
       }),
       children: [t ? (0, r.jsx)(u.ZX5, {

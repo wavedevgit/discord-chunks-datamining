@@ -5,8 +5,8 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(481060),
   l = n(906732),
   c = n(785717),
@@ -60,8 +60,8 @@ function y(e, t) {
   if (null == e) return {};
   var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
-    var a = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+    var o = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
@@ -69,15 +69,15 @@ function y(e, t) {
 function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
-    a = Object.keys(e);
-  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+    o = Object.keys(e);
+  for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
 let O = i.forwardRef(function(e, t) {
   var {
     children: n,
     className: i,
-    subsection: a,
+    subsection: o,
     onAction: m,
     onClose: E
   } = e, v = y(e, ["children", "className", "subsection", "onAction", "onClose"]);
@@ -90,7 +90,7 @@ let O = i.forwardRef(function(e, t) {
   } = (0, c.KZ)();
   return O === _.y0.FULL_SIZE || (null == S ? void 0 : S.userId) == null ? (0, r.jsx)(u.Z.Overlay, b(g({
     ref: t,
-    className: o()(h.card, i)
+    className: a()(h.card, i)
   }, v), {
     children: n
   })) : (0, r.jsx)(s.kL8, {
@@ -105,12 +105,12 @@ let O = i.forwardRef(function(e, t) {
       }), (0, f.openUserProfileModal)(g({
         section: _.oh.ACTIVITY,
         sourceAnalyticsLocations: I,
-        subsection: a
+        subsection: o
       }, S)), null == E || E()
     },
     children: (0, r.jsx)(u.Z.Overlay, b(g({
       ref: t,
-      className: o()(h.card, i)
+      className: a()(h.card, i)
     }, v), {
       children: n
     }))

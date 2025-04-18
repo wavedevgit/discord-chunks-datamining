@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685);
 var r = n(147913),
   i = n(2818),
-  a = n(192720),
-  o = n(742989);
+  o = n(192720),
+  a = n(742989);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -22,11 +22,11 @@ function l() {
     location: "saved_messages_manager"
   }, {
     autoTrackExposure: !1
-  }).enabled || o.Z.getCurrentConfig({
+  }).enabled || a.Z.getCurrentConfig({
     location: "saved_messages_manager"
   }, {
     autoTrackExposure: !1
-  }).showReminders) && (0, a.sE)()
+  }).showReminders) && (0, o.sE)()
 }
 class c extends r.Z {
   constructor(...e) {

@@ -15,12 +15,12 @@ e.exports = function(e) {
         begin: "@[A-Za-z]+"
       }]
     })]),
-    a = {
+    o = {
       className: "regexp",
       begin: /~?\/[^\/\n]+\//,
       contains: [e.BACKSLASH_ESCAPE]
     },
-    o = t([e.BINARY_NUMBER_MODE, e.C_NUMBER_MODE]),
+    a = t([e.BINARY_NUMBER_MODE, e.C_NUMBER_MODE]),
     s = t([{
       begin: /"""/,
       end: /"""/
@@ -52,7 +52,7 @@ e.exports = function(e) {
     contains: [e.SHEBANG({
       binary: "groovy",
       relevance: 10
-    }), i, s, a, o, l, {
+    }), i, s, o, a, l, {
       className: "meta",
       begin: "@[A-Za-z]+",
       relevance: 0
@@ -64,7 +64,7 @@ e.exports = function(e) {
       begin: /\?/,
       end: /:/,
       relevance: 0,
-      contains: [i, s, a, o, "self"]
+      contains: [i, s, o, a, "self"]
     }, {
       className: "symbol",
       begin: "^[ 	]*" + n.lookahead(r + ":"),

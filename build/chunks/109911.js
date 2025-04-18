@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(818083),
   i = n(638395);
 n(171393);
-var a = n(987338);
-let o = (0, r.B)({
+var o = n(987338);
+let a = (0, r.B)({
     kind: "user",
     id: "2024-07_icymi",
     label: "In-case-you-missed-it tab",
-    commonTriggerPoint: a.$P.CONNECTION_OPEN_MOBILE,
+    commonTriggerPoint: o.$P.CONNECTION_OPEN_MOBILE,
     defaultConfig: {
       enabled: !1
     },
@@ -103,8 +103,8 @@ function l(e) {
   let {
     location: t,
     autoTrackExposure: n = !0
-  } = e, r = i.Z.get("hide_icymi_tab"), a = c(t, !1), {
-    enabled: o,
+  } = e, r = i.Z.get("hide_icymi_tab"), o = c(t, !1), {
+    enabled: a,
     tabBadgeVariant: l,
     removeHomeMentionBadges: u
   } = s.getCurrentConfig({
@@ -114,7 +114,7 @@ function l(e) {
     disable: !0
   });
   return {
-    enabled: o && !r && a,
+    enabled: a && !r && o,
     tabBadgeVariant: l,
     removeHomeMentionBadges: u
   }
@@ -122,7 +122,7 @@ function l(e) {
 
 function c(e) {
   let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
-  return o.getCurrentConfig({
+  return a.getCurrentConfig({
     location: e
   }, {
     disable: !0,

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(392711),
   i = n.n(r),
-  a = n(442837),
-  o = n(544891),
+  o = n(442837),
+  a = n(544891),
   s = n(570140),
   l = n(592125),
   c = n(709054),
@@ -84,7 +84,7 @@ function v(e) {
   let {
     loaded: t,
     firstMessage: n
-  } = (0, a.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, a.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
+  } = (0, o.cj)([d.Z], () => d.Z.getMessage(e.id)), r = (0, o.e7)([l.Z], () => l.Z.getChannel(e.parent_id));
   return null != r && y(t, n) && S(r, e.id), {
     loaded: t,
     firstMessage: n
@@ -131,7 +131,7 @@ async function N(e) {
       body: {
         threads: i
       }
-    } = await o.tn.post({
+    } = await a.tn.post({
       url: f.ANM.FORUM_POSTS(e),
       body: {
         thread_ids: t

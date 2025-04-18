@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(997841);
 var r = n(481060),
   i = n(570140),
-  a = n(430742),
-  o = n(904245),
+  o = n(430742),
+  a = n(904245),
   s = n(166459),
   l = n(531643),
   c = n(881052),
@@ -112,7 +112,7 @@ async function G(e) {
     });
 
   function Q() {
-    "" !== W.content && "" === R.Z.getDraft(M, G) && a.Z.saveDraft(M, W.content, G), 0 === P.Z.getUploadCount(M, G) && s.Z.setUploads({
+    "" !== W.content && "" === R.Z.getDraft(M, G) && o.Z.saveDraft(M, W.content, G), 0 === P.Z.getUploadCount(M, G) && s.Z.setUploads({
       channelId: M,
       uploads: j,
       draftType: G
@@ -144,7 +144,7 @@ async function G(e) {
         fileItems: e.items,
         failureCode: t,
         errorMessage: null == r ? void 0 : r.msg
-      }), t === L.evJ.EXPLICIT_CONTENT) return void o.Z.sendExplicitMediaClydeError(M, null == n ? void 0 : n.attachments, p.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
+      }), t === L.evJ.EXPLICIT_CONTENT) return void a.Z.sendExplicitMediaClydeError(M, null == n ? void 0 : n.attachments, p.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
     if (t === L.evJ.AUTOMOD_MESSAGE_BLOCKED) {
       let e = {
           code: t,
@@ -168,10 +168,10 @@ async function G(e) {
         body: null != n ? n : {}
       }, t));
       else {
-        var a;
+        var o;
         (0, l.openUploadError)({
           title: x.NW.string(x.t.B3vFdX),
-          help: null != (a = null == n ? void 0 : n.message) ? a : x.NW.string(x.t.zMEjJi)
+          help: null != (o = null == n ? void 0 : n.message) ? o : x.NW.string(x.t.zMEjJi)
         })
       }
       Q()
@@ -210,7 +210,7 @@ function B(e) {
     f.content = c.content, f.tts = c.tts, f.channel_id = c.channel_id;
     let e = A.Z.getPendingReply(t);
     if (null != e) {
-      let n = o.Z.getSendMessageOptionsForReply(e);
+      let n = a.Z.getSendMessageOptionsForReply(e);
       f.type = L.uaV.REPLY, f.message_reference = n.messageReference, f.allowed_mentions = n.allowedMentions, (0, N.A6)(t)
     }
   }
@@ -236,7 +236,7 @@ function B(e) {
       }), (0, b.x)({
         fileItems: e.items,
         failureCode: u
-      }), u === L.evJ.EXPLICIT_CONTENT) return void o.Z.sendExplicitMediaClydeError(t, null == d ? void 0 : d.attachments, p.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
+      }), u === L.evJ.EXPLICIT_CONTENT) return void a.Z.sendExplicitMediaClydeError(t, null == d ? void 0 : d.attachments, p.UU.EXPLICIT_MEDIA_MESSAGE_SEND_BLOCKED);
     (0, l.openUploadError)({
       title: x.NW.string(x.t.B3vFdX),
       help: x.NW.format(x.t.gIlRx8, {
@@ -249,7 +249,7 @@ function B(e) {
           })
         }
       })
-    }), "" !== f.content && "" === R.Z.getDraft(t, s) && a.Z.saveDraft(t, f.content, s)
+    }), "" !== f.content && "" === R.Z.getDraft(t, s) && o.Z.saveDraft(t, f.content, s)
   }), h.on("complete", e => {
     i.Z.dispatch({
       type: "UPLOAD_COMPLETE",
@@ -265,9 +265,9 @@ let F = {
       files: n,
       draftType: r,
       isThumbnail: i = !1,
-      filesMetadata: a = []
-    } = e, o = Array.from(n).map((e, n) => {
-      let r = null != a ? a[n] : {};
+      filesMetadata: o = []
+    } = e, a = Array.from(n).map((e, n) => {
+      let r = null != o ? o[n] : {};
       return new d.n(k({
         file: e,
         platform: f.ow.WEB,
@@ -276,7 +276,7 @@ let F = {
     });
     G({
       channelId: t,
-      uploads: o,
+      uploads: a,
       draftType: r
     })
   },

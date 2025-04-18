@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(120356),
-  a = n.n(i),
-  o = n(481060),
+  o = n.n(i),
+  a = n(481060),
   s = n(388032),
   l = n(584235);
 
@@ -55,13 +55,13 @@ function _(e) {
     text: t = s.NW.string(s.t["5AFxuL"]),
     className: n
   } = e;
-  return (0, r.jsx)(o.ua7, {
+  return (0, r.jsx)(a.ua7, {
     text: t,
-    children: e => (0, r.jsx)(o.P3F, f(u({}, e), {
-      children: (0, r.jsx)(o.SrA, {
+    children: e => (0, r.jsx)(a.P3F, f(u({}, e), {
+      children: (0, r.jsx)(a.SrA, {
         size: "md",
         color: "currentColor",
-        className: a()(l.nitroWheel, n)
+        className: o()(l.nitroWheel, n)
       })
     }))
   })

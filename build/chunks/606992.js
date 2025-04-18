@@ -1,24 +1,24 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 }), n(388685);
 var r = n(192379),
   i = n(40851),
-  a = n(590921);
+  o = n(590921);
 
-function o(e) {
+function a(e) {
   let {
     editorHeight: t,
     type: n,
-    state: o,
+    state: a,
     isInPopoutExperiment: s = !1
-  } = e, [l, c] = r.useState(void 0), u = null == o ? void 0 : o.query, d = null == o ? void 0 : o.isVisible, {
+  } = e, [l, c] = r.useState(void 0), u = null == a ? void 0 : a.query, d = null == a ? void 0 : a.isVisible, {
     renderWindow: f
   } = r.useContext(i.ZP), _ = r.useCallback(() => {
     var e, t, r, i;
-    if (null != o && (null == u || !d)) return void c(void 0);
-    if ((null == u ? void 0 : u.type) === a.eq.GIFS || null != n && !s && !(null == (e = n.autocomplete) ? void 0 : e.alwaysUseLayer)) return void c(null);
+    if (null != a && (null == u || !d)) return void c(void 0);
+    if ((null == u ? void 0 : u.type) === o.eq.GIFS || null != n && !s && !(null == (e = n.autocomplete) ? void 0 : e.alwaysUseLayer)) return void c(null);
     let l = f.document.getSelection(),
       _ = null != l && l.rangeCount > 0 ? l.getRangeAt(0) : null;
     if (null == _) return;
@@ -38,7 +38,7 @@ function o(e) {
     m.setStart(p, h), m.setEnd(p, h);
     let g = m.getBoundingClientRect();
     (null == g ? void 0 : g.height) !== 0 && c(null != g ? g : null)
-  }, [s, f.document, o, d, u, n]);
+  }, [s, f.document, a, d, u, n]);
   return r.useEffect(() => (f.document.addEventListener("selectionchange", _), () => f.document.removeEventListener("selectionchange", _)), [f.document, _]), r.useEffect(() => {
     _()
   }, [_, t]), l

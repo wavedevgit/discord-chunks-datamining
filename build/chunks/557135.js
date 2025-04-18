@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(481060),
-  a = n(287734),
-  o = n(258609),
+  o = n(287734),
+  a = n(258609),
   s = n(703656),
   l = n(414509),
   c = n(452369),
@@ -62,7 +62,7 @@ let O = {
       bypassGuildIdCheck: N = !1
     } = e;
     t.isThread() && (await d.Z.unarchiveThreadIfNecessary(t.id), u.Z.hasJoined(t.id) || await d.Z.joinThread(t, "Join Voice"));
-    let A = o.Z.getRemoteSessionId(),
+    let A = a.Z.getRemoteSessionId(),
       C = p.Z.getVoiceStateForSession(f.default.getId(), A),
       R = (null == C ? void 0 : C.channelId) === t.id || _.Z.getChannelId() === p.Z.getCurrentClientVoiceChannelId(t.guild_id),
       P = c.Z.getBlockedUsersForVoiceChannel(t.id),
@@ -84,22 +84,22 @@ let O = {
           }))
         }, n))
       })
-    }) : (O || s || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || b || I) && v(t, N), !0) : new Promise(e => {
+    }) : (O || s || o.default.selectVoiceChannel(t.id), !__OVERLAY__ && (s || R || b || I) && v(t, N), !0) : new Promise(e => {
       (0, i.ZDy)(async () => {
         let {
           default: i
         } = await n.e("12858").then(n.bind(n, 404339));
         return n => {
           let {
-            onClose: a,
-            transitionState: o
+            onClose: o,
+            transitionState: a
           } = n;
           return (0, r.jsx)(i, {
             channelId: t.id,
             blockedUserIds: P,
             ignoredUserIds: w,
-            transitionState: o,
-            onClose: a,
+            transitionState: a,
+            onClose: o,
             onJoin: () => e(this.handleVoiceConnect({
               channel: t,
               connected: s,

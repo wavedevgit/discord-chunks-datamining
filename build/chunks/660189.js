@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => R
 }), n(388685);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(786761),
+  o = n(570140),
+  a = n(786761),
   s = n(797316),
   l = n(594174),
   c = n(709054);
@@ -80,7 +80,7 @@ function E(e) {
 }
 
 function b(e, t) {
-  let n = null == t ? null : (0, o.e5)(t);
+  let n = null == t ? null : (0, a.e5)(t);
   p[e] = {
     loaded: !0,
     firstMessage: n
@@ -92,7 +92,7 @@ function y(e) {
   let t = p[c.default.castMessageIdAsChannelId(e.message.id)];
   if (null == t || null == t.firstMessage) return !1;
   p[c.default.castMessageIdAsChannelId(e.message.id)] = _(d({}, t), {
-    firstMessage: (0, o.wi)(t.firstMessage, e.message)
+    firstMessage: (0, a.wi)(t.firstMessage, e.message)
   })
 }
 
@@ -118,15 +118,15 @@ function I(e) {
     channelId: n,
     messageId: r,
     userId: i,
-    emoji: a,
-    optimistic: o,
+    emoji: o,
+    optimistic: a,
     reactionType: s
   } = e, c = p[n];
   if (null == c || null == c.firstMessage || r !== c.firstMessage.id) return !1;
   let u = l.default.getCurrentUser(),
     f = null != u && u.id === i;
-  if (o && !f) return !1;
-  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(a, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(a, f, s)
+  if (a && !f) return !1;
+  p[n] = d({}, c), "MESSAGE_REACTION_ADD" === t ? p[n].firstMessage = c.firstMessage.addReaction(o, f, e.colors, s) : p[n].firstMessage = c.firstMessage.removeReaction(o, f, s)
 }
 
 function S(e) {
@@ -136,10 +136,10 @@ function S(e) {
     reactions: r
   } = e, i = p[t];
   if (null == i || null == i.firstMessage || n !== i.firstMessage.id) return !1;
-  let a = l.default.getCurrentUser(),
-    o = i.firstMessage.addReactionBatch(r, null == a ? void 0 : a.id);
+  let o = l.default.getCurrentUser(),
+    a = i.firstMessage.addReactionBatch(r, null == o ? void 0 : o.id);
   p[t] = _(d({}, i), {
-    firstMessage: o
+    firstMessage: a
   })
 }
 
@@ -173,7 +173,7 @@ function A(e) {
   } = e, r = n[n.length - 1];
   null != r && r.id === c.default.castChannelIdAsMessageId(t) && (p[t] = {
     loaded: !0,
-    firstMessage: (0, o.e5)(r)
+    firstMessage: (0, a.e5)(r)
   })
 }
 class C extends(r = i.ZP.Store) {
@@ -192,7 +192,7 @@ class C extends(r = i.ZP.Store) {
   }
 }
 u(C, "displayName", "ForumPostMessagesStore");
-let R = new C(a.Z, {
+let R = new C(o.Z, {
   CONNECTION_OPEN: h,
   MESSAGE_CREATE: E,
   MESSAGE_UPDATE: y,

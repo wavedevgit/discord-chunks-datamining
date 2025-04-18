@@ -3,12 +3,12 @@
 n.d(t, {
   Ul: () => u,
   YE: () => l,
-  ZP: () => o
+  ZP: () => a
 }), n(388685);
 var r = n(818083),
   i = n(981631),
-  a = n(388032);
-let o = (0, r.B)({
+  o = n(388032);
+let a = (0, r.B)({
     kind: "user",
     id: "2021-08_regional_payment_methods",
     label: "Regional Payment Methods",
@@ -166,7 +166,7 @@ let o = (0, r.B)({
   ]);
 
 function l(e) {
-  return void 0 !== e && s.has(e) ? s.get(e) : a.NW.string(a.t.jdPblp)
+  return void 0 !== e && s.has(e) ? s.get(e) : o.NW.string(o.t.jdPblp)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],
@@ -199,5 +199,5 @@ let c = new Map([
 ]);
 
 function u(e) {
-  return void 0 !== e && c.has(e) ? c.get(e) : a.NW.string(a.t.jdPblp)
+  return void 0 !== e && c.has(e) ? c.get(e) : o.NW.string(o.t.jdPblp)
 }

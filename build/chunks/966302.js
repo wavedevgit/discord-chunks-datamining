@@ -1,12 +1,12 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => eo
+  Z: () => ea
 }), n(388685);
 var r = n(200651),
   i = n(192379),
-  a = n(120356),
-  o = n.n(a),
+  o = n(120356),
+  a = n.n(o),
   s = n(200100),
   l = n(442837),
   c = n(481060),
@@ -103,22 +103,22 @@ let $ = {
 function ei(e) {
   let {
     header: t
-  } = e, n = D.Z.getCameraComponent(), a = (0, l.e7)([D.Z], () => D.Z.getVideoDeviceId()), o = (0, I.Z)();
+  } = e, n = D.Z.getCameraComponent(), o = (0, l.e7)([D.Z], () => D.Z.getVideoDeviceId()), a = (0, I.Z)();
   return i.useEffect(() => {
     let e = L.default.getCurrentUser();
-    if (o && null != e) {
+    if (a && null != e) {
       let t = (0, v.P)(e);
-      (0, O.FU)(t, a, {
+      (0, O.FU)(t, o, {
         track: !1
       }).catch(Z.dG4)
     }
-  }, [o, a]), (0, r.jsxs)("div", {
+  }, [a, o]), (0, r.jsxs)("div", {
     className: K.previewRoot,
     children: [(0, r.jsx)(c.$jN, {}), (0, r.jsx)("div", {
       className: K.preview,
       children: (0, r.jsx)(n, {
         disabled: !1,
-        deviceId: a,
+        deviceId: o,
         width: et,
         height: en
       })
@@ -129,11 +129,11 @@ function ei(e) {
   })
 }
 
-function ea(e) {
+function eo(e) {
   let {
     canVideo: t,
     channel: n,
-    numVideoDevices: a
+    numVideoDevices: o
   } = e, {
     parentAnalyticsLocation: s
   } = (0, m.ZP)(), {
@@ -141,9 +141,9 @@ function ea(e) {
     enabled: d
   } = (0, S.Z)(), _ = (0, N.Z)(n), p = (0, T.Z)({
     location: "CallActionButtons"
-  }), g = i.useRef(null), E = a > 1;
+  }), g = i.useRef(null), E = o > 1;
   return (0, r.jsxs)("div", {
-    className: o()(K.wrapper, p ? K.experimentActions : K.actions),
+    className: a()(K.wrapper, p ? K.experimentActions : K.actions),
     children: [(0, r.jsx)(C.Z, {
       iconComponent: c.Dio,
       label: W.NW.string(W.t.WAI6xs),
@@ -175,13 +175,13 @@ function ea(e) {
         let {
           onClick: i
         } = e, {
-          isShown: a
+          isShown: o
         } = t;
         return (0, r.jsx)(P.C, {
           buttonRef: g,
           join: !0,
           enabled: d,
-          className: o()(K.actionButton, {
+          className: a()(K.actionButton, {
             [K.fullRegionDropdownButtonOverride]: E && p
           }),
           color: "green",
@@ -190,7 +190,7 @@ function ea(e) {
           cameraUnavailable: l,
           channel: n,
           onPopoutClick: E ? i : null,
-          popoutOpen: a,
+          popoutOpen: o,
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
@@ -214,11 +214,11 @@ function ea(e) {
   })
 }
 
-function eo(e) {
+function ea(e) {
   var t;
   let {
     animatedStyle: n,
-    y: a,
+    y: o,
     x: f,
     channel: h
   } = e, {
@@ -244,14 +244,14 @@ function eo(e) {
   let B = L === Z.WtW.VIDEO && A && C > 0,
     F = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == S ? (0, r.jsx)("div", {
-        className: o()(K.icon, Y.wrapper, Y.ringingIncoming),
+        className: a()(K.icon, Y.wrapper, Y.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
           className: K.mask,
           mask: b.QS.AVATAR_DEFAULT,
           width: v ? 40 : 80,
           height: v ? 40 : 80,
           children: (0, r.jsx)("div", {
-            className: o()(K.guildIcon, K.guildIconWithoutImage),
+            className: a()(K.guildIcon, K.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
               className: K.guildAcronym,
               children: I.acronym
@@ -288,7 +288,7 @@ function eo(e) {
       selector: ".".concat(K.root),
       initialPosition: {
         left: f,
-        top: a
+        top: o
       },
       maxX: q.width,
       maxY: q.height,
@@ -297,7 +297,7 @@ function eo(e) {
       children: (0, r.jsx)(c.f6W, {
         theme: v ? Z.BRd.DARK : void 0,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: o()(K.root, z.elevationHigh, {
+          className: a()(K.root, z.elevationHigh, {
             [K.previewCamera]: v
           }, e),
           style: J(Q({}, n), {
@@ -310,7 +310,7 @@ function eo(e) {
           }) : (0, r.jsx)("div", {
             className: K.mainChannelInfo,
             children: F
-          }), (0, r.jsx)(ea, {
+          }), (0, r.jsx)(eo, {
             canVideo: B,
             channel: h,
             numVideoDevices: C

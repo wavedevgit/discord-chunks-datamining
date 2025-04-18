@@ -4,8 +4,8 @@ n.d(t, {
   Z: () => J
 }), n(388685), n(539854);
 var r, i = n(442837),
-  a = n(570140),
-  o = n(314897),
+  o = n(570140),
+  a = n(314897),
   s = n(271383),
   l = n(430824),
   c = n(594174),
@@ -81,7 +81,7 @@ function A(e) {
 function C(e) {
   let {
     guildId: t
-  } = e, n = o.default.getId();
+  } = e, n = a.default.getId();
   return y(t).updateMembersByMemberIds([n])
 }
 
@@ -159,14 +159,14 @@ function M(e) {
   } = e, r = Object.values(n);
   if (0 === r.length) return !1;
   let i = y(t),
-    a = r.reduce((e, t) => {
+    o = r.reduce((e, t) => {
       if (null != t.owner) {
         let n = t.owner.user.id;
         e.push(n)
       }
       return e
     }, []);
-  return i.updateMembersByMemberIds(a)
+  return i.updateMembersByMemberIds(o)
 }
 
 function k(e) {
@@ -194,13 +194,13 @@ function U(e) {
     let {
       id: n,
       activity_instances: r
-    } = e, i = y(n), a = [];
+    } = e, i = y(n), o = [];
     null == r || r.forEach(e => {
       var t;
       null == (t = e.participants) || t.forEach(e => {
-        (0, u.lm)(e.member) && a.push(e.member)
+        (0, u.lm)(e.member) && o.push(e.member)
       })
-    }), t = i.updateServerMembers(a) || t
+    }), t = i.updateServerMembers(o) || t
   }), t
 }
 
@@ -290,7 +290,7 @@ function q(e) {
 }
 
 function Q(e) {
-  var t, n, r, i, a, o;
+  var t, n, r, i, o, a;
   let s, l, {
       guildId: c,
       members: u,
@@ -305,13 +305,13 @@ function Q(e) {
         member: n,
         source_invite_code: r,
         join_source_type: i,
-        inviter_id: a
-      } = t, o = n.user;
-      return e.memberIds.push(o.id), e.memberSupplementals.push({
-        userId: o.id,
+        inviter_id: o
+      } = t, a = n.user;
+      return e.memberIds.push(a.id), e.memberSupplementals.push({
+        userId: a.id,
         sourceInviteCode: r,
         joinSourceType: i,
-        inviterId: a
+        inviterId: o
       }), e
     }, {
       memberIds: [],
@@ -326,11 +326,11 @@ function Q(e) {
     elasticSearchCursor: {
       before: (0, _.si)({
         joinedAt: null == s || null == (t = s.member) ? void 0 : t.joined_at,
-        userId: null != (a = null == s || null == (n = s.member) ? void 0 : n.user.id) ? a : m.lds
+        userId: null != (o = null == s || null == (n = s.member) ? void 0 : n.user.id) ? o : m.lds
       }),
       after: (0, _.si)({
         joinedAt: null == l || null == (r = l.member) ? void 0 : r.joined_at,
-        userId: null != (o = null == l || null == (i = l.member) ? void 0 : i.user.id) ? o : m.lds
+        userId: null != (a = null == l || null == (i = l.member) ? void 0 : i.user.id) ? a : m.lds
       })
     }
   }, !1);
@@ -338,7 +338,7 @@ function Q(e) {
 }
 class X extends(r = i.ZP.Store) {
   initialize() {
-    this.waitFor(o.default, s.ZP, c.default)
+    this.waitFor(a.default, s.ZP, c.default)
   }
   isInitialized(e) {
     return y(e).isInitialized
@@ -393,7 +393,7 @@ class X extends(r = i.ZP.Store) {
   }
 }
 g(X, "displayName", "MemberSafetyStore");
-let J = new X(a.Z, {
+let J = new X(o.Z, {
   CONNECTION_OPEN: G,
   CONNECTION_OPEN_SUPPLEMENTAL: B,
   LOCAL_MESSAGES_LOADED: V,

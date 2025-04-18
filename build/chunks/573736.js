@@ -2,7 +2,7 @@
 "use strict";
 n.d(t, {
   Cy: () => d,
-  HD: () => o,
+  HD: () => a,
   J8: () => u,
   PO: () => s,
   V9: () => f,
@@ -24,16 +24,16 @@ function i(e) {
   }
 }
 
-function a(e, t) {
+function o(e, t) {
   return r.call(e) === `[object ${t}]`
 }
 
-function o(e) {
-  return a(e, "String")
+function a(e) {
+  return o(e, "String")
 }
 
 function s(e) {
-  return a(e, "Object")
+  return o(e, "Object")
 }
 
 function l(e) {

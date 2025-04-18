@@ -2,16 +2,16 @@
 "use strict";
 n.d(t, {
   G: () => s,
-  N: () => a
+  N: () => o
 }), n(410992), n(227481), n(730884), n(20464), n(341884), n(364341), n(629680), n(505025), n(918970), n(121784), n(644351), n(146733);
 var r = n(998502);
 let i = null;
 
-function a() {
-  return null == i && (i = o()), i
+function o() {
+  return null == i && (i = a()), i
 }
 
-function o() {
+function a() {
   if (null == window.DiscordNative || void 0 === window.Uint8Array || void 0 === window.TextDecoder) return !1;
   try {
     let e = r.ZP.requireModule("discord_zstd");
@@ -24,7 +24,7 @@ function o() {
 }
 
 function s() {
-  if (!a()) return;
+  if (!o()) return;
   let {
     createContext: e
   } = r.ZP.requireModule("discord_zstd");

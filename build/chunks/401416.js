@@ -6,8 +6,8 @@ n.d(t, {
 }), n(388685);
 var r = n(544891),
   i = n(147913),
-  a = n(25733),
-  o = n(981631);
+  o = n(25733),
+  a = n(981631);
 
 function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -19,7 +19,7 @@ function s(e, t, n) {
 }
 class l extends i.Z {
   handleDmSettingsUpsellShow(e) {
-    a.Z.openDmSettingsUpsellModal(e.guildId)
+    o.Z.openDmSettingsUpsellModal(e.guildId)
   }
   constructor(...e) {
     super(...e), s(this, "actions", {
@@ -30,7 +30,7 @@ class l extends i.Z {
 
 function c(e) {
   return r.tn.post({
-    url: o.ANM.DM_SETTINGS_UPSELL_ACK(e),
+    url: a.ANM.DM_SETTINGS_UPSELL_ACK(e),
     rejectWithError: !1
   })
 }

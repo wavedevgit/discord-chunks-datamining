@@ -5,8 +5,8 @@ n.d(t, {
 }), n(539854), n(388685);
 var r = n(192379),
   i = n(392711),
-  a = n.n(i),
-  o = n(442837),
+  o = n.n(i),
+  a = n(442837),
   s = n(846519),
   l = n(224706),
   c = n(669764);
@@ -28,7 +28,7 @@ class f {
     let e = [];
     this._pending.forEach(t => {
       this._fetched.add(t), e.push(t)
-    }), this._pending.clear(), a().chunk(e, d).forEach(e => {
+    }), this._pending.clear(), o().chunk(e, d).forEach(e => {
       l.Z.getDetectableGamesSupplemental(e)
     })
   }
@@ -46,7 +46,7 @@ function p(e, t) {
     width: t.coverImageWidth,
     height: t.coverImageHeight
   } : void 0, [t]);
-  return (0, o.cj)([c.Z], () => null == e ? {
+  return (0, a.cj)([c.Z], () => null == e ? {
     isFetching: !1,
     localizedName: void 0,
     themes: void 0,

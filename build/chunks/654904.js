@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(866442),
-  a = n(481060);
+  o = n(481060);
 n(531643);
-var o = n(643879),
+var a = n(643879),
   s = n(768581);
 n(403182);
 var l = n(51144),
@@ -43,26 +43,26 @@ function p(e) {
 }
 
 function h(e, t, i, s) {
-  (0, a.ZDy)(async () => {
+  (0, o.ZDy)(async () => {
     let {
-      default: a
+      default: o
     } = await Promise.all([n.e("91689"), n.e("89289"), n.e("36016")]).then(n.bind(n, 28130));
-    return n => (0, r.jsx)(a, p({
+    return n => (0, r.jsx)(o, p({
       filters: s,
       maxFileSizeBytes: u.B,
       imageSpecifications: e === d.pC.BANNER ? f.NW.string(f.t.IhzZlp) : void 0,
       onComplete: n => {
         let {
           assetOrigin: r,
-          imageUri: a,
+          imageUri: o,
           file: s,
           originalAsset: l
-        } = n, u = s.name.replace(/\.[^/.]+$/, ""), d = (0, o.Z1)({
+        } = n, u = s.name.replace(/\.[^/.]+$/, ""), d = (0, a.Z1)({
           filename: u,
           assetOrigin: r
-        }), f = (0, o.cN)({
+        }), f = (0, a.cN)({
           assetOrigin: r,
-          imageUri: a,
+          imageUri: o,
           description: d,
           originalAsset: l
         });
@@ -85,9 +85,9 @@ function m(e, t, n) {
   if (null != e) return e;
   let {
     size: i = 80,
-    canAnimate: a = !0
-  } = r, o = null === e;
-  return o && null == t ? s.ZP.getDefaultAvatarURL(n.id, n.discriminator) : o || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, i, a) : n.getAvatarURL(null == t ? void 0 : t.guildId, i, a)
+    canAnimate: o = !0
+  } = r, a = null === e;
+  return a && null == t ? s.ZP.getDefaultAvatarURL(n.id, n.discriminator) : a || (null == t ? void 0 : t.avatar) == null ? n.getAvatarURL(void 0, i, o) : n.getAvatarURL(null == t ? void 0 : t.guildId, i, o)
 }
 
 function g(e) {
@@ -96,9 +96,9 @@ function g(e) {
     pendingNickname: n,
     pendingGlobalName: r,
     user: i,
-    guildMember: a
-  } = e, o = "" === n ? null : null != n ? n : null == a ? void 0 : a.nick, s = "" === r ? i.username : r;
-  return null != (t = null != o ? o : s) ? t : l.ZP.getName(i)
+    guildMember: o
+  } = e, a = "" === n ? null : null != n ? n : null == o ? void 0 : o.nick, s = "" === r ? i.username : r;
+  return null != (t = null != a ? a : s) ? t : l.ZP.getName(i)
 }
 
 function E(e) {

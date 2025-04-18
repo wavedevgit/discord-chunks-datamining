@@ -5,8 +5,8 @@ n.d(t, {
 }), n(388685), n(781311);
 var r = n(200651),
   i = n(192379),
-  a = n(906732),
-  o = n(541716),
+  o = n(906732),
+  a = n(541716),
   s = n(752305),
   l = n(893718),
   c = n(131704),
@@ -29,13 +29,13 @@ function g(e) {
     onClose: _
   } = e, {
     newestAnalyticsLocation: g
-  } = (0, a.ZP)(), {
+  } = (0, o.ZP)(), {
     trackUserProfileAction: E
   } = (0, d.KZ)(), [b, y] = i.useState(""), [v, O] = i.useState((0, s.JM)(b)), I = i.useRef(!1);
   return (0, r.jsx)(l.Z, {
     className: h.container,
     editorClassName: h.editor,
-    type: o.Ie.USER_PROFILE,
+    type: a.Ie.USER_PROFILE,
     placeholder: p.NW.formatToPlainString(p.t["0ZQw/f"], {
       name: u.ZP.getName(n, c, t)
     }),

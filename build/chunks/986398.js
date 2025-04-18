@@ -1,20 +1,20 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Z: () => o
+  Z: () => a
 });
 var r = n(200651),
   i = n(81063),
-  a = n(388032);
+  o = n(388032);
 
-function o(e) {
+function a(e) {
   let {
     leaderboard: t,
     className: n
-  } = e, o = (0, i.xF)(t.settings.application_id, t.settings.winner_asset_id);
-  return null == o ? null : (0, r.jsx)("img", {
+  } = e, a = (0, i.xF)(t.settings.application_id, t.settings.winner_asset_id);
+  return null == a ? null : (0, r.jsx)("img", {
     className: n,
-    src: o,
-    alt: a.NW.string(a.t.QyRmzc)
+    src: a,
+    alt: o.NW.string(o.t.QyRmzc)
   })
 }

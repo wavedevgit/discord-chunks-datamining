@@ -6,11 +6,11 @@ n.d(t, {
 });
 var r = n(200651),
   i = n(192379),
-  a = n(541049),
-  o = n(210887);
+  o = n(541049),
+  a = n(210887);
 let s = i.createContext({
   profileType: null,
-  theme: o.Z.themePreferenceForSystemTheme((0, a.Z)()),
+  theme: a.Z.themePreferenceForSystemTheme((0, o.Z)()),
   primaryColor: null,
   secondaryColor: null
 });
@@ -19,15 +19,15 @@ function l(e) {
   let {
     profileType: t,
     theme: n,
-    primaryColor: a,
-    secondaryColor: o,
+    primaryColor: o,
+    secondaryColor: a,
     children: l
   } = e, c = i.useMemo(() => ({
     profileType: t,
     theme: n,
-    primaryColor: a,
-    secondaryColor: o
-  }), [t, n, a, o]);
+    primaryColor: o,
+    secondaryColor: a
+  }), [t, n, o, a]);
   return (0, r.jsx)(s.Provider, {
     value: c,
     children: l

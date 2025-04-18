@@ -1,13 +1,13 @@
 /** Chunk was on web.js **/
 "use strict";
 n.d(t, {
-  Q: () => o,
+  Q: () => a,
   s: () => s
 });
 var r = n(418793),
   i = n(460597),
-  a = n(608591);
-let o = e => ({
+  o = n(608591);
+let a = e => ({
   id: e.id,
   configVersion: 2,
   startsAt: e.starts_at,
@@ -37,7 +37,7 @@ let o = e => ({
   },
   taskConfig: (0, i.f)(e.task_config),
   rewardsConfig: (0, r.v)(e.rewards_config),
-  videoMetadata: (0, a.F)(e.video_metadata),
+  videoMetadata: (0, o.F)(e.video_metadata),
   cosponsorMetadata: s(e.cosponsor_metadata)
 });
 

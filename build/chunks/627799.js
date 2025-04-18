@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(200651);
 n(192379);
 var i = n(243814),
-  a = n(993365),
-  o = n(481060),
+  o = n(993365),
+  a = n(481060),
   s = n(63063),
   l = n(981631),
   c = n(388032),
@@ -17,43 +17,43 @@ function d(e) {
   let t, {
       accountScopes: n
     } = e,
-    a = [];
+    o = [];
   return (n.includes(i.x.SDK_SOCIAL_LAYER) ? (t = c.NW.format(c.t.DfBeUl, {
     learnMoreURL: s.Z.getArticleURL(l.BhN.SOCIAL_LAYER_CONNECTIONS)
-  }), a.push({
-    icon: o.iFz,
+  }), o.push({
+    icon: a.iFz,
     text: c.NW.formatToPlainString(c.t.WNKzo6, {
       maxFriends: l.L4X
     })
   }, {
-    icon: o.mrm,
+    icon: a.mrm,
     text: c.NW.string(c.t.j7peBg)
   }, {
-    icon: o.iWm,
+    icon: a.iWm,
     text: c.NW.string(c.t["feD3+v"])
   }, {
-    icon: o.ewm,
+    icon: a.ewm,
     text: c.NW.string(c.t.YFFVMz)
   })) : n.includes(i.x.SDK_SOCIAL_LAYER_PRESENCE) && (t = c.NW.format(c.t.DfBeUl, {
     learnMoreURL: s.Z.getArticleURL(l.BhN.SOCIAL_LAYER_CONNECTIONS)
-  }), a.push({
-    icon: o.iFz,
+  }), o.push({
+    icon: a.iFz,
     text: c.NW.formatToPlainString(c.t.WNKzo6, {
       maxFriends: l.L4X
     })
   }, {
-    icon: o.iWm,
+    icon: a.iWm,
     text: c.NW.string(c.t["feD3+v"])
   }, {
-    icon: o.ewm,
+    icon: a.ewm,
     text: c.NW.string(c.t.YFFVMz)
-  })), 0 === a.length) ? null : (0, r.jsxs)("div", {
+  })), 0 === o.length) ? null : (0, r.jsxs)("div", {
     className: u.applicationEducation,
-    children: [null != t ? (0, r.jsx)(o.X6q, {
+    children: [null != t ? (0, r.jsx)(a.X6q, {
       variant: "heading-sm/normal",
       className: u.sectionLabel,
       children: t
-    }) : null, a.map((e, t) => {
+    }) : null, o.map((e, t) => {
       let {
         icon: n,
         text: i
@@ -76,7 +76,7 @@ function f(e) {
     children: [(0, r.jsx)(t, {
       className: u.entryIcon,
       color: "currentColor"
-    }), (0, r.jsx)(a.x, {
+    }), (0, r.jsx)(o.x, {
       variant: "text-md/normal",
       className: u.entryText,
       children: n
