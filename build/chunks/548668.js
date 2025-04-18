@@ -10,8 +10,8 @@ var s, r = a(200651),
   c = a(622535),
   d = a(213919),
   u = a(982905),
-  p = a(794010),
-  _ = a(66037),
+  _ = a(794010),
+  p = a(66037),
   h = a(231338),
   m = a(436620),
   N = a(330711),
@@ -217,8 +217,8 @@ class b extends(s = l.PureComponent) {
       children: N.Z.Messages.NAVIGATION_DOWNLOAD
     });
     let d = null != o ? h.$w.REGISTER_WITH_REDIRECT(o) : h.$w.REGISTER,
-      p = N.Z.Messages.COMMON_SIGN_UP_NOW;
-    return e && (d = h.$w.ME, p = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
+      _ = N.Z.Messages.COMMON_SIGN_UP_NOW;
+    return e && (d = h.$w.ME, _ = N.Z.Messages.COMMON_OPEN_DISCORD), (0, r.jsx)(n, {
       eventName: k,
       className: (0, u.l)(I, "button", this.props.variant),
       data: {
@@ -226,7 +226,7 @@ class b extends(s = l.PureComponent) {
         googleAnalytics: !0
       },
       href: d,
-      children: p
+      children: _
     })
   }
   render() {
@@ -238,7 +238,7 @@ class b extends(s = l.PureComponent) {
       showWave: i
     } = this.props, {
       animateBackground: d,
-      token: p
+      token: _
     } = this.state, m = A().map(e => {
       let t = e.routes.map((e, t) => e.external ? (0, r.jsx)(n, {
         className: I.route,
@@ -248,7 +248,7 @@ class b extends(s = l.PureComponent) {
         },
         href: e.link,
         children: e.title
-      }, e.link || t) : (0, r.jsx)(_.Z, {
+      }, e.link || t) : (0, r.jsx)(p.Z, {
         avoidRouter: l,
         to: e.link,
         from: "footer_navigation",
@@ -314,7 +314,7 @@ class b extends(s = l.PureComponent) {
                   num: h.vS
                 })
               })]
-            }), this.renderAppButton(p)]
+            }), this.renderAppButton(_)]
           })]
         })]
       })
@@ -330,7 +330,7 @@ class b extends(s = l.PureComponent) {
       this.setState({
         animateBackground: e
       })
-    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(p.Z, function(e) {
+    }), null != e.locale && N.Z.setLocale(e.locale), n = t => (0, r.jsx)(_.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);

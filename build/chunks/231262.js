@@ -1,6 +1,6 @@
 /** Chunk was on 87626 **/
 a.d(t, {
-  h: () => _
+  h: () => p
 });
 var n = a(200651),
   s = a(192379),
@@ -11,8 +11,8 @@ var n = a(200651),
   c = a(388755),
   d = a(330711),
   u = a(316202);
-let p = null;
-class _ extends s.PureComponent {
+let _ = null;
+class p extends s.PureComponent {
   render() {
     let {
       token: e,
@@ -21,18 +21,18 @@ class _ extends s.PureComponent {
       mainContentId: r,
       mobileClassName: i,
       avoidRouter: d,
-      authRedirectTo: _,
+      authRedirectTo: p,
       openNavAriaLabel: h,
       hideNavAriaLabel: m,
       skipToContentLabel: N
     } = this.props;
-    return null == p ? null : (0, n.jsxs)(s.Fragment, {
+    return null == _ ? null : (0, n.jsxs)(s.Fragment, {
       children: [(0, n.jsx)(o.a, {
         className: l()(u.desktopHeader, t),
-        TrackClick: p,
+        TrackClick: _,
         token: e,
         avoidRouter: d,
-        authRedirectTo: _,
+        authRedirectTo: p,
         onChangeLocale: a,
         mainContentId: r,
         skipToContentLabel: N
@@ -40,7 +40,7 @@ class _ extends s.PureComponent {
         className: l()(u.mobileHeader, i),
         token: e,
         avoidRouter: d,
-        TrackClick: p,
+        TrackClick: _,
         onChangeLocale: a,
         openNavAriaLabel: h,
         hideNavAriaLabel: m
@@ -48,7 +48,7 @@ class _ extends s.PureComponent {
     })
   }
   constructor(e) {
-    super(e), null != e.locale && d.Z.setLocale(e.locale), p = t => (0, n.jsx)(i.Z, function(e) {
+    super(e), null != e.locale && d.Z.setLocale(e.locale), _ = t => (0, n.jsx)(i.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var a = null != arguments[t] ? arguments[t] : {},
           n = Object.keys(a);
