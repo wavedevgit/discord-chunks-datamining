@@ -1,6 +1,6 @@
 /**
   Module ID: 87427
-  Original File Name: dfa533312a4b4c83
+  Original File Name: c38569ce8d8995e3
 **/
 .loadingWrapper__5a143 {
     align-items: center;
@@ -963,7 +963,7 @@
 }
 
 .content__487be a {
-    color: hsl(200,calc(var(--saturation-factor, 1)*100%),49.4%);
+    color: var(--blue-345);
     text-decoration: none;
     transition: .05s
 }
@@ -973,19 +973,19 @@
 }
 
 .theme-dark .content__487be ol,.theme-dark .content__487be p,.theme-dark .content__487be ul li {
-    color: hsl(210,calc(var(--saturation-factor, 1)*9.3%),78.8%)
+    color: var(--primary-300)
 }
 
 .theme-dark .content__487be ul li:before {
-    background-color: hsl(216,calc(var(--saturation-factor, 1)*9.8%),90%)
+    background-color: var(--primary-200)
 }
 
 .theme-light .content__487be ol,.theme-light .content__487be p,.theme-light .content__487be ul li {
-    color: hsl(223,calc(var(--saturation-factor, 1)*5.8%),52.9%)
+    color: var(--primary-400)
 }
 
 .theme-light .content__487be ul li:before {
-    background-color: hsl(223,calc(var(--saturation-factor, 1)*5.8%),52.9%)
+    background-color: var(--primary-400)
 }
 
 .empty__01a6a {
@@ -997,4 +997,4 @@
     text-align: center
 }
 
-/*# sourceMappingURL=dfa533312a4b4c83.css.map*/
+/*# sourceMappingURL=c38569ce8d8995e3.css.map*/
