@@ -1,6 +1,8 @@
-/** Chunk was on 97951 **/
-t.exports = {
-  root: "root_ead72e",
-  content: "content_ead72e",
-  footer: "footer_ead72e"
+/** Chunk was on 9924 **/
+e.exports = {
+  mainTableContainer: "mainTableContainer__09a38",
+  horizatonalScroller: "horizatonalScroller__09a38",
+  loaderContainer: "loaderContainer__09a38",
+  loaderBar: "loaderBar__09a38",
+  loadingBar: "loadingBar__09a38"
 }

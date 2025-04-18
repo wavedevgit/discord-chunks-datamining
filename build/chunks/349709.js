@@ -17,7 +17,7 @@ var n = l(200651),
   p = l(903749),
   j = l(185923),
   x = l(388032),
-  v = l(705462);
+  v = l(207844);
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -61,21 +61,21 @@ function b(e) {
     isRequiredField: I = !0,
     shouldUpdateBothEmojiFields: E = !1,
     setEmojiId: O,
-    setEmojiName: k
-  } = e, w = (0, p.Z)({
+    setEmojiName: w
+  } = e, S = (0, p.Z)({
     emojiId: b,
     emojiName: y
-  }), S = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.createRef(), D = (0, d.Z)(C), P = () => {
-    k(void 0), O(void 0)
+  }), k = (0, r.e7)([g.ZP], () => null != l ? g.ZP.getDefaultChannel(l) : null), C = i.createRef(), D = (0, d.Z)(C), P = () => {
+    w(void 0), O(void 0)
   }, Z = e => (t, l) => {
     let n = (null == t ? void 0 : t.id) == null;
-    P(), n ? k(null == t ? void 0 : t.optionallyDiverseSequence) : (E && k(null == t ? void 0 : t.name), O(null == t ? void 0 : t.id)), l && e()
-  }, z = e => {
+    P(), n ? w(null == t ? void 0 : t.optionallyDiverseSequence) : (E && w(null == t ? void 0 : t.name), O(null == t ? void 0 : t.id)), l && e()
+  }, T = e => {
     e.stopPropagation(), P()
-  }, R = i.useMemo(() => {
+  }, z = i.useMemo(() => {
     let e = null != b && "" !== b,
       t = null != y && "" !== y,
-      l = null != w && "" !== w,
+      l = null != S && "" !== S,
       n = t && !Number.isNaN(parseInt(y)) && !l && !e;
     return {
       hasEmojiId: e,
@@ -83,7 +83,7 @@ function b(e) {
       hasEmojiDisplayName: l,
       isDeletedCustomEmoji: n
     }
-  }, [b, y, w]);
+  }, [b, y, S]);
   return (0, n.jsx)(o.xJW, {
     required: I,
     title: x.NW.string(x.t["3BQmiI"]),
@@ -102,7 +102,7 @@ function b(e) {
           onNavigateAway: t,
           onSelectEmoji: Z(t),
           guildId: l,
-          channel: S
+          channel: k
         })
       },
       children: (e, t) => {
@@ -116,17 +116,17 @@ function b(e) {
             className: v.emojiButton,
             active: l,
             tabIndex: 0,
-            renderButtonContents: !R.isDeletedCustomEmoji && (R.hasEmojiId || R.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
+            renderButtonContents: !z.isDeletedCustomEmoji && (z.hasEmojiId || z.hasEmojiName) ? () => (0, n.jsx)(u.Z, {
               emojiName: y,
               emojiId: b
             }) : null
           }), (0, n.jsx)(o.oil, {
             inputClassName: v.emojiText,
             placeholder: x.NW.string(x.t.QTK0TE),
-            value: !R.isDeletedCustomEmoji && R.hasEmojiDisplayName ? ":".concat(w, ":") : "",
+            value: !z.isDeletedCustomEmoji && z.hasEmojiDisplayName ? ":".concat(S, ":") : "",
             readOnly: !0
-          }), !R.isDeletedCustomEmoji && R.hasEmojiDisplayName && D && (0, n.jsx)(c.Z, h(N({}, e), {
-            onClick: z,
+          }), !z.isDeletedCustomEmoji && z.hasEmojiDisplayName && D && (0, n.jsx)(c.Z, h(N({}, e), {
+            onClick: T,
             className: v.removeButton
           }))]
         }))

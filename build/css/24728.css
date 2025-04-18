@@ -1,0 +1,57 @@
+/**
+  Module ID: 24728
+  Original File Name: 90883aab80a83505
+**/
+.labelWrapper_abe771 {
+    align-items: center;
+    -moz-column-gap: 8px;
+    column-gap: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 4px
+}
+
+.label_abe771 {
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.newBadge_abe771 {
+    display: inline-block;
+    vertical-align: middle
+}
+
+.badgeSpacing_abe771,.betaBadge_abe771 {
+    margin-left: 8px
+}
+
+.betaBadge_abe771 {
+    display: inline
+}
+
+.inviteGuestContainer_abe771 {
+    align-items: center;
+    display: flex
+}
+
+.videoPaused_afb275 {
+    align-items: center;
+    display: flex;
+    justify-content: left
+}
+
+.warningCircle_afb275 {
+    margin-right: 4px
+}
+
+.roleRow_b82947 {
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.roleDot_b82947 {
+    margin-right: 8px
+}
+
+/*# sourceMappingURL=90883aab80a83505.css.map*/

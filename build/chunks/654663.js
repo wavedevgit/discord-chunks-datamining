@@ -1,4 +1,4 @@
-/** Chunk was on 78180 **/
+/** Chunk was on 25920 **/
 n.d(t, {
   default: () => W
 });

@@ -1,25 +1,25 @@
-/** Chunk was on 44114 **/
-n.d(t, {
-  g: () => c
-}), n(415506), n(388685);
-var r = n(512722),
-  i = n.n(r),
-  s = n(509545),
-  a = n(74538),
-  l = n(474936),
-  o = n(981631);
+/** Chunk was on 41183 **/
+t.d(n, {
+  g: () => s
+}), t(415506), t(388685);
+var o = t(512722),
+  r = t.n(o),
+  i = t(509545),
+  a = t(74538),
+  l = t(474936),
+  c = t(981631);
 
-function c(e, t) {
-  let n = s.Z.get(e.planId);
-  i()(null != n, "missing premium subscription plan");
-  let r = s.Z.getForSkuAndInterval((0, a.Wz)(l.Si.GUILD), n.interval, n.intervalCount);
-  i()(null != r, "missing premium guild plan");
-  let c = null != e.renewalMutations ? e.renewalMutations.additionalPlans : e.additionalPlans,
-    d = (e.status === o.O0b.CANCELED ? 0 : (0, a.uV)(c)) + t,
-    u = c.filter(e => e.planId !== r.id);
-  if (d < 0) throw Error("Invalid adjustment");
-  return 0 === d ? u : [...u, {
-    planId: r.id,
-    quantity: d
+function s(e, n) {
+  let t = i.Z.get(e.planId);
+  r()(null != t, "missing premium subscription plan");
+  let o = i.Z.getForSkuAndInterval((0, a.Wz)(l.Si.GUILD), t.interval, t.intervalCount);
+  r()(null != o, "missing premium guild plan");
+  let s = null != e.renewalMutations ? e.renewalMutations.additionalPlans : e.additionalPlans,
+    p = (e.status === c.O0b.CANCELED ? 0 : (0, a.uV)(s)) + n,
+    _ = s.filter(e => e.planId !== o.id);
+  if (p < 0) throw Error("Invalid adjustment");
+  return 0 === p ? _ : [..._, {
+    planId: o.id,
+    quantity: p
   }]
 }

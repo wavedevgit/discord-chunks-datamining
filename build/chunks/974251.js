@@ -1,4 +1,4 @@
-/** Chunk was on 3656 **/
+/** Chunk was on 73344 **/
 n.d(t, {
   Z: () => G
 }), n(388685), n(415506);
@@ -38,7 +38,7 @@ var r = n(200651),
   M = n(356659),
   L = n(921944),
   D = n(388032),
-  W = n(911777);
+  W = n(390927);
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -100,7 +100,7 @@ let G = i.memo(function(e) {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("2668"), n.e("71248")]).then(n.bind(n, 542055));
+      } = await Promise.all([n.e("2668"), n.e("76646")]).then(n.bind(n, 542055));
       return t => (0, r.jsx)(e, B(U({}, t), {
         channelId: F.id
       }))

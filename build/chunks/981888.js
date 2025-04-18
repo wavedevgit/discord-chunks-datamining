@@ -1,20 +1,20 @@
-/** Chunk was on 74367 **/
+/** Chunk was on 96811 **/
 t.d(n, {
-  Z: () => r
+  Z: () => i
 }), t(388685);
-var i = t(192379),
+var r = t(192379),
   a = t(881052);
 
-function r(e, n) {
-  let [t, r] = i.useState(!1), [o, d] = i.useState(null);
+function i(e, n) {
+  let [t, i] = r.useState(!1), [o, l] = r.useState(null);
   return [async () => {
-    r(!0), d(null);
+    i(!0), l(null);
     try {
       let n = await e();
-      return r(!1), d(null), n
+      return i(!1), l(null), n
     } catch (t) {
       let e = new a.Hx(t);
-      return null == n || n(e), d(e), r(!1), null
+      return null == n || n(e), l(e), i(!1), null
     }
   }, {
     loading: t,

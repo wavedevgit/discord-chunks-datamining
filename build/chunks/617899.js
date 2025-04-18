@@ -51,7 +51,7 @@ class g extends i.PureComponent {
       (0, l.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("17439")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("99060")]).then(n.bind(n, 560114));
         return n => {
           var i, l;
           return (0, r.jsx)(t, (i = function(e) {

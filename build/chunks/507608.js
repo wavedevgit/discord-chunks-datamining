@@ -36,7 +36,7 @@ var r = t(200651),
   R = t(955335),
   M = t(981631),
   D = t(388032),
-  _ = t(695025);
+  _ = t(239092);
 
 function A(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -234,7 +234,7 @@ function L(e) {
       (0, a.ZDy)(async () => {
         let {
           SubscriptionDetailsModal: e
-        } = await Promise.all([t.e("86282"), t.e("93287")]).then(t.bind(t, 519896));
+        } = await Promise.all([t.e("86282"), t.e("60158")]).then(t.bind(t, 519896));
         return n => (0, r.jsx)(e, A({
           appId: s,
           subscriptionType: p,

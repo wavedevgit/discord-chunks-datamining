@@ -1,13 +1,6 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 35726 **/
+"use strict";
 e.exports = {
-  searchResultGroup: "searchResultGroup_c68065",
-  channelNameContainer: "channelNameContainer_c68065",
-  channelNameText: "channelNameText_c68065",
-  parentChannelName: "parentChannelName_c68065",
-  parentChannelNameClickable: "parentChannelNameClickable_c68065",
-  parentChannelNameText: "parentChannelNameText_c68065",
-  channelNameIcon: "channelNameIcon_c68065",
-  parentChannelNameIcon: "parentChannelNameIcon_c68065",
-  resultsBlocked: "resultsBlocked_c68065",
-  resultsBlockedImage: "resultsBlockedImage_c68065"
+  modal: "modal__487be",
+  content: "content__487be"
 }

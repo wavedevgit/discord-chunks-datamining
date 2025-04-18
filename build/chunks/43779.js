@@ -1,4 +1,4 @@
-/** Chunk was on 78900 **/
+/** Chunk was on 88708 **/
 n.d(t, {
   Z: () => w
 }), n(953529);
@@ -22,7 +22,7 @@ var r = n(200651),
   v = n(46140),
   y = n(642145),
   _ = n(388032),
-  C = n(882067);
+  C = n(19020);
 let O = async () => await n.e("67963").then(n.t.bind(n, 145193, 19));
 
 function w(e) {

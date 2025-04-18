@@ -13,7 +13,7 @@ var l = n(200651),
   d = n(622594),
   f = n(174727),
   m = n(710111),
-  h = n(891694);
+  h = n(675096);
 let g = {
     startPositionMs: 0,
     endPositionMs: 2 * (10 * o.Z.Millis.SECOND),
@@ -26,30 +26,30 @@ let g = {
       disabled: r = !1,
       onChange: p
     } = e, {
-      audio: b
-    } = (0, c.p)(), [y, v] = a.useState(!1), [x, j] = a.useState(g), {
+      audio: y
+    } = (0, c.p)(), [b, v] = a.useState(!1), [x, j] = a.useState(g), {
       playheadPositionMs: N,
       endPositionMs: w,
       startPositionMs: C
-    } = x, S = null != b, O = w - C, P = O > m.YW * o.Z.Millis.SECOND;
+    } = x, S = null != y, O = w - C, P = O > m.YW * o.Z.Millis.SECOND;
     a.useEffect(() => {
-      if (null != b) return j({
+      if (null != y) return j({
         playheadPositionMs: 0,
-        endPositionMs: b.duration * o.Z.Millis.SECOND,
+        endPositionMs: y.duration * o.Z.Millis.SECOND,
         startPositionMs: 0
       }), () => {
-        b.pause(), v(!1)
+        y.pause(), v(!1)
       }
-    }, [b]);
+    }, [y]);
     let E = a.useCallback(e => {
-        null != b && (b.pause(), null != e && (b.currentTime = e), v(!1))
-      }, [b]),
+        null != y && (y.pause(), null != e && (y.currentTime = e), v(!1))
+      }, [y]),
       k = a.useCallback(() => {
-        if (null != b) {
-          if (y) return void E();
-          N >= w ? b.currentTime = (0, f.my)(C) : b.currentTime = (0, f.my)(N), b.volume = (0, u.Z)(n), b.play(), v(!0)
+        if (null != y) {
+          if (b) return void E();
+          N >= w ? y.currentTime = (0, f.my)(C) : y.currentTime = (0, f.my)(N), y.volume = (0, u.Z)(n), y.play(), v(!0)
         }
-      }, [b, w, E, N, y, C, n]),
+      }, [y, w, E, N, b, C, n]),
       Z = a.useCallback(e => {
         j(e), null == p || p({
           startMs: e.startPositionMs,
@@ -57,8 +57,8 @@ let g = {
         })
       }, [p]),
       M = a.useCallback(e => {
-        null != b && (b.currentTime = e)
-      }, [b]);
+        null != y && (y.currentTime = e)
+      }, [y]);
     return (0, l.jsxs)("div", {
       className: i()(h.container, {
         [h.initialized]: S,
@@ -69,7 +69,7 @@ let g = {
         children: [(0, l.jsx)(s.P3F, {
           className: h.playButton,
           onClick: S ? k : void 0,
-          children: y ? (0, l.jsx)(s.wNq, {
+          children: b ? (0, l.jsx)(s.wNq, {
             size: "xs",
             color: "currentColor",
             className: h.playButtonIcon
@@ -88,7 +88,7 @@ let g = {
           })
         })]
       }), (0, l.jsx)(d.Z, {
-        playing: y,
+        playing: b,
         onPlaybackChange: M,
         onPausePlayback: E,
         onChangePosition: Z,

@@ -1,76 +1,76 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 90111 **/
 "use strict";
-n.d(t, {
+r.d(t, {
   T: () => s,
   v: () => c
 });
-var r = n(200651);
-n(192379);
-var l = n(481060),
-  a = n(82856);
+var n = r(200651);
+r(192379);
+var i = r(481060),
+  o = r(82856);
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-      }) : e[t] = r
+      }) : e[t] = n
     })
   }
   return e
 }
-let o = "collectibles shop product details modal",
+let a = "collectibles shop product details modal",
   s = e => {
     let {
       product: t,
       category: s,
       shouldCheckoutWithOrbs: u,
       analyticsSource: d,
-      analyticsLocations: b,
-      returnRef: p,
-      tab: f
+      analyticsLocations: p,
+      returnRef: b,
+      tab: v
     } = e;
-    u && (0, a.S6)(), (0, l.ZDy)(async () => {
+    u && (0, o.S6)(), (0, i.ZDy)(async () => {
       let {
         default: e
-      } = await n.e("2026").then(n.bind(n, 702370));
-      return n => {
-        var l, a;
-        return (0, r.jsx)(e, (l = i({}, n), a = a = {
+      } = await r.e("2026").then(r.bind(r, 702370));
+      return r => {
+        var i, o;
+        return (0, n.jsx)(e, (i = l({}, r), o = o = {
           product: t,
           category: s,
           shouldCheckoutWithOrbs: u,
           analyticsSource: d,
-          analyticsLocations: b,
-          returnRef: p,
-          tab: f
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-          var n = Object.keys(e);
+          analyticsLocations: p,
+          returnRef: b,
+          tab: v
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+          var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var r = Object.getOwnPropertySymbols(e);
-            n.push.apply(n, r)
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
           }
-          return n
-        })(Object(a)).forEach(function(e) {
-          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(a, e))
-        }), l))
+          return r
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
+        }), i))
       }
-    }, i({
-      modalKey: o
+    }, l({
+      modalKey: a
     }, u ? {
       onCloseRequest() {
-        c(), (0, a.vp)()
+        c(), (0, o.vp)()
       }
     } : {}))
   },
   c = () => {
-    (0, l.Mr3)(o)
+    (0, i.Mr3)(a)
   }

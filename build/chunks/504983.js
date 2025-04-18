@@ -8,7 +8,7 @@ var r = n(200651),
   i = n(192379),
   a = n(120356),
   o = n.n(a),
-  s = n(933282),
+  s = n(92242),
   l = function(e) {
     return e.PREMIUM = "premium", e.LIMITED = "limited", e
   }({});

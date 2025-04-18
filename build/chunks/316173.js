@@ -13,7 +13,7 @@ var r = n(200651),
   d = n(865427),
   p = n(820254),
   h = n(388032),
-  f = n(545549);
+  f = n(396873);
 let g = "isHideDevBanner",
   m = () => {
     var e;
@@ -45,7 +45,7 @@ let g = "isHideDevBanner",
       children: [(0, r.jsx)(p.Z, {
         className: f.icon
       }), h.NW.format(h.t.uyrfYG, {
-        buildNumber: "391574"
+        buildNumber: "391579"
       }), (0, r.jsx)(b, {})]
     }) : null
   }

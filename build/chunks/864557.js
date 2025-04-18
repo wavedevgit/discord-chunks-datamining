@@ -1,5 +1,5 @@
-/** Chunk was on 63141 **/
+/** Chunk was on 46746 **/
 e.exports = {
-  base: "base_e3f659",
-  widget: "widget_e3f659"
+  attribution: "attribution__83f6c",
+  img: "img__83f6c"
 }

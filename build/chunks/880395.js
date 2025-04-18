@@ -1,6 +1,6 @@
-/** Chunk was on 40419 **/
+/** Chunk was on 48791 **/
 n.d(t, {
-  D: () => a
+  D: () => s
 });
 var r = n(200651);
 n(192379);
@@ -38,26 +38,26 @@ function o(e, t) {
   }), e
 }
 
-function a(e, t, a, s, c) {
-  let u = a.getGuildId();
+function s(e, t, s, a, c) {
+  let u = s.getGuildId();
   return null != u ? (0, i.jW)(e, async () => {
     let {
       default: e
-    } = await Promise.all([n.e("98693"), n.e("35794"), n.e("42707")]).then(n.bind(n, 357823));
+    } = await Promise.all([n.e("98693"), n.e("35794"), n.e("18619")]).then(n.bind(n, 357823));
     return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: a,
+      channel: s,
       guildId: u,
       onInteraction: e => c("GuildVoiceUserContextMenu", e)
     }))
-  }, s) : (0, i.jW)(e, async () => {
+  }, a) : (0, i.jW)(e, async () => {
     let {
       default: e
     } = await Promise.all([n.e("35794"), n.e("62747")]).then(n.bind(n, 238296));
     return n => (0, r.jsx)(e, o(l({}, n), {
       user: t,
-      channel: a,
+      channel: s,
       onInteraction: e => c("BaseVoiceUserContextMenu", e)
     }))
-  }, s)
+  }, a)
 }

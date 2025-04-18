@@ -1,7 +1,14 @@
-/** Chunk was on 59288 **/
+/** Chunk was on 63977 **/
 e.exports = {
-  embed: "embed_fb5def",
-  text: "text_fb5def",
-  title: "title_fb5def",
-  parentContainer: "parentContainer_fb5def"
+  header: "header__7c901",
+  subtitle: "subtitle__7c901",
+  closeButton: "closeButton__7c901",
+  content: "content__7c901",
+  smsInputContainer: "smsInputContainer__7c901",
+  smsInput: "smsInput__7c901",
+  error: "error__7c901",
+  footer: "footer__7c901",
+  listItemContainer: "listItemContainer__7c901",
+  listItemText: "listItemText__7c901",
+  listItemArrow: "listItemArrow__7c901"
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 44114 **/
+/** Chunk was on 40790 **/
 n.d(t, {
   Z: () => E
 });
@@ -20,7 +20,7 @@ var i = n(120356),
   b = n(474936),
   _ = n(981631),
   N = n(388032),
-  x = n(669792);
+  x = n(672959);
 let E = function(e) {
   let {
     isFullScreen: t,

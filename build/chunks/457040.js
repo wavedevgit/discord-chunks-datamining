@@ -38,7 +38,7 @@ var r = n(200651),
   M = n(15350),
   k = n(611480),
   j = n(981631),
-  U = n(655304);
+  U = n(751947);
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -159,7 +159,7 @@ let Z = (0, O.Mg)(c.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
             }), (0, u.ZDy)(async () => {
               let {
                 default: t
-              } = await Promise.all([n.e("93626"), n.e("61547")]).then(n.bind(n, 136735));
+              } = await Promise.all([n.e("93626"), n.e("52784")]).then(n.bind(n, 136735));
               return n => (0, r.jsx)(t, B({
                 guildId: e.guild_id
               }, n))

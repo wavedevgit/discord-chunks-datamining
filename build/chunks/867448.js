@@ -1,15 +1,14 @@
-/** Chunk was on 86331 **/
+/** Chunk was on 97502 **/
+"use strict";
 e.exports = {
-  container: "container_ecf309",
-  iframe: "iframe_ecf309",
-  clickShield: "clickShield_ecf309",
-  splashImage: "splashImage_ecf309",
-  splash: "splash_ecf309",
-  avatar: "avatar_ecf309",
-  subheader: "subheader_ecf309",
-  medium: "medium_ecf309",
-  small: "small_ecf309",
-  header: "header_ecf309",
-  buttons: "buttons_ecf309",
-  button: "button_ecf309"
+  container: "container__11014",
+  unfocusedMessage: "unfocusedMessage__11014",
+  badgeContainer: "badgeContainer__11014",
+  tagText: "tagText__11014",
+  badgePreview: "badgePreview__11014",
+  messageContainer: "messageContainer__11014",
+  avatarContainer: "avatarContainer__11014",
+  contentContainer: "contentContainer__11014",
+  usernameContainer: "usernameContainer__11014",
+  decorationsContainer: "decorationsContainer__11014"
 }

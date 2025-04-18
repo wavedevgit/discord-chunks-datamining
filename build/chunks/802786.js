@@ -1,0 +1,2 @@
+/** Chunk was on 92104 **/
+p.exports = JSON.parse('{"Poezn5":"В режим \xabУ мережі\xbb","qKDqen":"Перейдіть в режим \xabУ мережі\xbb, щоб ділитися активністю","a3AofX":"Встановлює статус \xabУ мережі\xbb"}')

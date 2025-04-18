@@ -9,7 +9,7 @@ var r = n(200651),
   o = n(600164),
   s = n(981631),
   c = n(388032),
-  u = n(719656);
+  u = n(43650);
 class d extends i.PureComponent {
   renderContentRatingImage() {
     let {

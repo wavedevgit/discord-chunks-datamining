@@ -1,5 +1,5 @@
-/** Chunk was on 52272 **/
+/** Chunk was on 93243 **/
+"use strict";
 e.exports = {
-  channel: "channel__8f92d",
-  channelLeft: "channelLeft__8f92d"
+  card: "card_b846e5"
 }

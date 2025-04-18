@@ -8,7 +8,7 @@ var r = n(200651),
   a = n(120356),
   o = n.n(a),
   s = n(481060),
-  l = n(34663);
+  l = n(863318);
 let c = (e, t) => (0, r.jsx)("div", {
     ref: t,
     className: o()(l.nitroRewardTileAssetContainer, e.className),

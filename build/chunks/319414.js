@@ -1,4 +1,4 @@
-/** Chunk was on 89298 **/
+/** Chunk was on 58861 **/
 n.d(t, {
   Z: () => f
 }), n(388685);
@@ -13,7 +13,7 @@ var r = n(442837),
   u = n(554174),
   d = n(333031),
   p = n(710111),
-  h = n(975539);
+  h = n(103377);
 
 function f() {
   let [e, t] = (0, r.Wu)([o.Z], () => [o.Z.enabled, o.Z.keepOpen]), n = (0, r.e7)([c.Z], () => c.Z.getVoiceChannelId()), f = (0, r.e7)([s.Z], () => s.Z.getChannel(n), [n]), m = null == f ? void 0 : f.getGuildId();

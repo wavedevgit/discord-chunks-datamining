@@ -1,9 +1,9 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 90111 **/
 "use strict";
-n.d(t, {
-  B: () => l
+r.d(t, {
+  B: () => i
 });
-let r = (0, n(818083).B)({
+let n = (0, r(818083).B)({
     kind: "user",
     id: "2024-10_shop_tile_impression_logging",
     label: "Shop tile impressions logging",
@@ -18,6 +18,6 @@ let r = (0, n(818083).B)({
       }
     }]
   }),
-  l = e => r.useExperiment({
+  i = e => n.useExperiment({
     location: e
   }).enabled

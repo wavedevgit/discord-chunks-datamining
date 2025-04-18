@@ -1,4 +1,4 @@
-/** Chunk was on 44114 **/
+/** Chunk was on 40790 **/
 n.d(t, {
   Z: () => g
 }), n(388685), n(704826), n(35282), n(539854);
@@ -12,13 +12,13 @@ var i = n(525654),
   c = n(320161),
   d = n(998502),
   u = n(388032),
-  m = n(980832);
+  m = n(858165);
 
 function g() {
   var e, t, n, i, g;
   let p = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    h = "391574",
-    f = "b55d4466124dc70c20764e55c0493fe09b0d0121".substring(0, 7),
+    h = "391579",
+    f = "3dc26f4564ba84e71e16939ece22fd0a9c102d7b".substring(0, 7),
     b = null === l.Z || void 0 === l.Z ? void 0 : l.Z.remoteApp.getVersion(),
     _ = null === l.Z || void 0 === l.Z || null == (e = (t = l.Z.remoteApp).getBuildNumber) ? void 0 : e.call(t),
     N = null === l.Z || void 0 === l.Z || null == (n = (i = l.Z.remoteApp).getAppArch) ? void 0 : n.call(i),

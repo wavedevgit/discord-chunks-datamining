@@ -1,9 +1,15 @@
-/** Chunk was on 69015 **/
+/** Chunk was on 73344 **/
 e.exports = {
-  header: "header__8f3be",
-  heading: "heading__8f3be",
-  footer: "footer__8f3be",
-  notice: "notice__8f3be",
-  error: "error__8f3be",
-  content: "content__8f3be"
+  avatar: "avatar__49508",
+  divider: "divider__49508",
+  participants: "participants__49508",
+  channelStatusClickable: "channelStatusClickable__49508",
+  channelStatus: "channelStatus__49508",
+  hoverable: "hoverable__49508",
+  subtitleContainer: "subtitleContainer__49508",
+  pencilIcon: "pencilIcon__49508",
+  secureFramesIcon: "secureFramesIcon__49508",
+  playingText: "playingText__49508",
+  container: "container__49508",
+  activityIcon: "activityIcon__49508"
 }

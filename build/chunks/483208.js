@@ -1,6 +1,6 @@
-/** Chunk was on 31649 **/
+/** Chunk was on 27978 **/
 e.exports = {
-  profilePreviewContainer: "profilePreviewContainer__8771c",
-  usernameContainer: "usernameContainer__8771c",
-  avatar: "avatar__8771c"
+  image: "image__74f72",
+  header: "header__74f72",
+  usagePill: "usagePill__74f72"
 }

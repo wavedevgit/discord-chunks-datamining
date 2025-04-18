@@ -1,12 +1,9 @@
-/** Chunk was on web.js **/
-"use strict";
-var r = {
-  scopes: "scopes__29337",
-  scope: "scope__29337",
-  scopeInner: "scopeInner__29337",
-  sectionLabel: "sectionLabel__29337",
-  fakeScopeIcon: "fakeScopeIcon__29337",
-  scopeIcon: "scopeIcon__29337",
-  icon: "icon__29337"
-};
-e.exports = r
+/** Chunk was on 81767 **/
+e.exports = {
+  confirmation: "confirmation__2db04",
+  banner: "banner__2db04",
+  text: "text__2db04",
+  button: "button__2db04",
+  redirectConfirmation: "redirectConfirmation__2db04",
+  redirectBody: "redirectBody__2db04"
+}

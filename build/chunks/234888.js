@@ -1,7 +1,7 @@
-/** Chunk was on 37560 **/
-r.d(t, {
-  A: () => o,
+/** Chunk was on 36514 **/
+a.d(t, {
+  A: () => c,
   i: () => n
 });
 let n = 3e4,
-  o = "Captcha"
+  c = "Captcha"

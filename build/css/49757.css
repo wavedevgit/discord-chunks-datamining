@@ -1,0 +1,247 @@
+/**
+  Module ID: 49757
+  Original File Name: 7c5553eae3923f77
+**/
+.grid__28d93 {
+    display: grid;
+    gap: 8px;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr
+}
+
+.speakerContainer__28d93 {
+    align-items: center;
+    display: flex;
+    flex-direction: row
+}
+
+.avatar__28d93 {
+    height: 20px!important;
+    margin-right: 8px;
+    width: 20px!important
+}
+
+.iconMicrophone__28d93,.speakerCount__28d93 {
+    background-color: var(--background-tertiary)
+}
+
+.iconMicrophone__28d93 {
+    align-items: center;
+    border-radius: 50%;
+    color: var(--header-secondary);
+    display: flex;
+    height: 20px;
+    justify-content: center;
+    margin-right: 8px;
+    width: 20px
+}
+
+.textInGridContainer__28d93 {
+    max-width: 164px
+}
+
+.textInGrid__28d93 {
+    max-width: 124px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+@media (max-width:1200px) {
+    .textInGrid__28d93 {
+        max-width: 120px
+    }
+}
+
+.card__88264 {
+    background-color: var(--background-secondary);
+    border: 1px solid var(--background-secondary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: border-color .5s
+}
+
+.card__88264:hover {
+    background-color: var(--background-secondary-alt)
+}
+
+.visual-refresh .card__88264 {
+    background-color: var(--background-mod-subtle);
+    border-color: var(--border-subtle)
+}
+
+.visual-refresh .card__88264:hover {
+    background-color: var(--background-mod-normal)
+}
+
+.lurking__88264 {
+    cursor: default
+}
+
+.padding__88264 {
+    padding: 16px
+}
+
+.padding__88264.isRecurring__88264 {
+    padding-bottom: 0
+}
+
+.joined__88264 {
+    border-color: var(--status-positive-background)
+}
+
+.inline__88264 {
+    align-items: center;
+    display: flex;
+    overflow: hidden
+}
+
+.guildIcon__88264 {
+    background-color: var(--brand-500);
+    color: var(--white-500);
+    margin-right: 8px
+}
+
+.channelContainer__88264 {
+    color: var(--header-secondary)
+}
+
+.channelContainerEnabled__88264 {
+    cursor: pointer
+}
+
+.channelContainerEnabled__88264:hover {
+    color: var(--interactive-active);
+    text-decoration: underline
+}
+
+.channelContainerDisabled__88264 {
+    cursor: not-allowed
+}
+
+.live__88264 {
+    color: var(--green-360);
+    margin-bottom: 16px
+}
+
+.icon__88264 {
+    min-width: 20px
+}
+
+.label__88264 {
+    margin-left: 8px;
+    margin-right: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.spacing__88264 {
+    margin-top: 16px
+}
+
+.dot__88264 {
+    background-color: var(--red-360);
+    border-radius: 50%;
+    height: 8px;
+    width: 8px
+}
+
+.divider__88264 {
+    background-color: var(--background-modifier-accent);
+    border: none;
+    height: 1px;
+    margin: 16px -16px 12px
+}
+
+.footer__88264 {
+    justify-content: space-between
+}
+
+.channelLocation__88264 {
+    cursor: pointer
+}
+
+.channelLocation__88264:hover {
+    text-decoration: underline
+}
+
+.externalLocation__88264 {
+    cursor: auto;
+    display: flex;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    user-select: text
+}
+
+.enable-forced-colors .channelContainer__88264 {
+    background-color: ButtonFace;
+    color: ButtonText;
+    forced-color-adjust: none;
+    text-decoration: underline
+}
+
+.content__735fb {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 24px
+}
+
+.previewCard__735fb {
+    margin-bottom: 24px;
+    width: 100%
+}
+
+.inline__735fb {
+    align-items: center;
+    display: flex
+}
+
+.header__735fb {
+    margin-top: 8px;
+    max-width: 400px;
+    min-height: 32px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.icon__735fb {
+    background-color: var(--background-tertiary);
+    border-radius: 50%;
+    color: var(--interactive-normal);
+    margin-bottom: 24px;
+    padding: 8px
+}
+
+.privacyLevel__735fb {
+    margin: 0 4px
+}
+
+.buttons__735fb {
+    align-self: stretch
+}
+
+.button__735fb {
+    flex-grow: 1
+}
+
+.publicIcon__735fb {
+    margin-right: 4px
+}
+
+.spacing__735fb {
+    margin-right: 8px
+}
+
+.verticalSpacing__735fb {
+    margin-top: 24px
+}
+
+.errorMessage__735fb {
+    margin-top: 8px
+}
+
+/*# sourceMappingURL=7c5553eae3923f77.css.map*/

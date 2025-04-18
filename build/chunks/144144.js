@@ -1,10 +1,9 @@
-/** Chunk was on 91245 **/
-"use strict";
+/** Chunk was on 87918 **/
 n.d(t, {
-  Z: () => o
+  Z: () => l
 });
 var r = n(570140);
-let o = {
+let l = {
   startTyping(e) {
     r.Z.dispatch({
       type: "TYPING_START_LOCAL",

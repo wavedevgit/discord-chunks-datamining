@@ -1,8 +1,9 @@
-/** Chunk was on 38062 **/
+/** Chunk was on 1272 **/
 e.exports = {
-  viewContents: "viewContents__6eb1d",
-  caretIcon: "caretIcon__6eb1d",
-  contentsContainer: "contentsContainer__6eb1d",
-  separator: "separator__6eb1d",
-  attachmentGrid: "attachmentGrid__6eb1d"
+  root: "root__26095",
+  header: "header__26095",
+  section: "section__26095",
+  sectionContent: "sectionContent__26095",
+  unit: "unit__26095",
+  review: "review__26095"
 }
