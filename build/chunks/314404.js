@@ -321,7 +321,7 @@ function et(e) {
       })
     }) : null,
     e5 = null != g && null != U && (0, S.R4)(g, U, z),
-    e6 = ex.isFractionalPremiumActive && (null == g || e5) && !e_;
+    e6 = ex.isFractionalPremiumActive && (null == g || e5) && !e_ && null != U && V.dJ.has(U);
   return (0, r.jsxs)("div", {
     className: o()(eO ? K.stepBodyCustomGift : K.stepBody, {
       [K.paddingForHalloweenBanner]: eS
