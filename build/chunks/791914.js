@@ -27,13 +27,13 @@ function b(e) {
     badgeState: x,
     closePopout: y
   } = e, {
-    showReminders: E
+    showReminders: v
   } = m.Z.useExperiment({
     location: "RecentsHeader"
   }, {
     autoTrackExposure: !1
   }), {
-    enabled: v,
+    enabled: E,
     inInbox: O
   } = d.Z.useExperiment({
     location: "RecentsPopout"
@@ -96,14 +96,14 @@ function b(e) {
             color: s.Z.STATUS_DANGER,
             className: _.iconBadge
           }) : null]
-        }) : null, v && O ? (0, r.jsx)(l.njP.Item, {
+        }) : null, E && O ? (0, r.jsx)(l.njP.Item, {
           "aria-label": g.NW.string(g.t["2pAkDA"]),
           id: a.X.BOOKMARKS,
           className: _.tab,
           children: 0 === S ? g.NW.string(g.t["2pAkDA"]) : g.NW.formatToPlainString(g.t.I4fryM, {
             count: S
           })
-        }) : null, E && !v ? (0, r.jsx)(l.njP.Item, {
+        }) : null, v && !E ? (0, r.jsx)(l.njP.Item, {
           "aria-label": "todos",
           id: a.X.TODOS,
           className: _.tab,

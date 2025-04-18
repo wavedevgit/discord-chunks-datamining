@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(739566),
   x = n(492593),
   y = n(453687),
-  E = n(25015),
-  v = n(689674),
+  v = n(25015),
+  E = n(689674),
   O = n(438075),
   N = n(963550),
   j = n(845080),
@@ -94,7 +94,7 @@ let Z = i.memo(function(e) {
   }(e, ["message", "compact", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory", "trackAnnouncementViews"]), V = a.type === T.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, z = a.isFirstMessageInForumPost(M), K = (0, u.A)((null != (n = a.editedTimestamp) ? n : a.timestamp).valueOf()), {
     content: Y,
     hasSpoilerEmbeds: X
-  } = (0, E.Z)(a, {
+  } = (0, v.Z)(a, {
     hideSimpleEmbedContent: L,
     allowList: z || K,
     allowHeading: z || K,
@@ -103,7 +103,7 @@ let Z = i.memo(function(e) {
   }), q = a.type === T.uaV.REPLY ? a.messageReference : void 0, Q = (0, s.e7)([p.Z], () => p.Z.getMessageByReference(q)), J = (0, o.JA)(a.id), $ = (0, b.ZP)(a), ee = null != (i = a.getGuildId()) ? i : void 0, et = (0, d.Z)($), en = (0, s.e7)([m.Z], () => a.hasFlag(T.iLy.HAS_THREAD) && m.Z.getChannel(h.default.castMessageIdAsChannelId(a.id))), er = (0, c.p9)({
     guildId: M.guild_id,
     roleId: $.iconRoleId
-  }), ei = (0, s.e7)([f.Z], () => f.Z.can(T.Plq.CREATE_INSTANT_INVITE, M)), ea = (0, v.Z)({
+  }), ei = (0, s.e7)([f.Z], () => f.Z.can(T.Plq.CREATE_INSTANT_INVITE, M)), ea = (0, E.Z)({
     message: a,
     channel: M,
     enabled: G

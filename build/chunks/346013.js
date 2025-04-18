@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(406432),
   x = n(348238),
   y = n(38267),
-  E = n(884902),
-  v = n(670188),
+  v = n(884902),
+  E = n(670188),
   O = n(695346),
   N = n(271383),
   j = n(594174),
@@ -82,7 +82,7 @@ function M(e) {
   }, [F]), J = (0, c.e7)([N.ZP], () => (null == F ? void 0 : F.authorId) != null ? N.ZP.getMember(F.guildId, F.authorId) : null), $ = (0, f.Z)((null == J ? void 0 : J.avatarDecoration) != null ? null == J ? void 0 : J.avatarDecoration : null == F || null == (t = F.user) ? void 0 : t.avatarDecoration), [ee, et, en] = i.useMemo(() => {
     var e;
     return [null != (e = null == J ? void 0 : J.colorString) ? e : "inherit", null == J ? void 0 : J.colorStrings, null == J ? void 0 : J.colorRoleId]
-  }, [J]), er = (0, E.X)(null == J ? void 0 : J.guildId, et), {
+  }, [J]), er = (0, v.X)(null == J ? void 0 : J.guildId, et), {
     reducedMotion: ei
   } = i.useContext(u.Sfi), [ea, el] = i.useState(!1), eo = i.useCallback(() => {
     K(!0)
@@ -168,7 +168,7 @@ function M(e) {
         })]
       }), (0, r.jsxs)("div", {
         className: R.descriptionFooter,
-        children: [null != F.authorId && null != ed && (0, r.jsx)(v.Z, {
+        children: [null != F.authorId && null != ed && (0, r.jsx)(E.Z, {
           userId: F.authorId,
           guildId: F.guildId,
           channelId: U.id,
@@ -215,7 +215,7 @@ function M(e) {
                 color: ee,
                 roleColors: er,
                 className: R.authorName
-              }) : (0, r.jsx)(v.Z, {
+              }) : (0, r.jsx)(E.Z, {
                 userId: F.authorId,
                 guildId: F.guildId,
                 channelId: U.id,

@@ -20,8 +20,8 @@ var r = n(200651),
   b = n(314897),
   x = n(430824),
   y = n(701190),
-  E = n(411198),
-  v = n(610699),
+  v = n(411198),
+  E = n(610699),
   O = n(313876),
   N = n(778333),
   j = n(949981),
@@ -68,7 +68,7 @@ function R(e) {
     },
     V = () => {
       if (null == F && (null == k ? void 0 : k.guild) != null) {
-        let e = E.Qs(k.guild);
+        let e = v.Qs(k.guild);
         if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, s.mN)(Z.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, g.yU)() ? (0, _.Z)({
         analyticsSource: {
@@ -133,6 +133,7 @@ function R(e) {
               onTransitionToInviteChannel: H,
               onAcceptInstantInvite: V,
               currentUserId: B,
+              inviterId: n.id,
               guild: F,
               invite: M
             });
@@ -155,18 +156,21 @@ function R(e) {
               stageInstance: M.stage_instance,
               guild: M.guild,
               isMember: null != F,
+              inviterId: n.id,
               onTransitionToInviteChannel: H,
               onAcceptInstantInvite: V
             });
             break
-          }(0, h.P1)(M) && (z = (0, r.jsx)(v.Z, {
+          }(0, h.P1)(M) && (z = (0, r.jsx)(E.Z, {
             invite: M,
-            getAcceptInviteContext: R
+            getAcceptInviteContext: R,
+            inviterId: n.id
           })), U && (0, p.lc)(M) && (z = (0, r.jsx)(S.Z, {
             onTransitionToInviteChannel: H,
             onAcceptInstantInvite: V,
             isMemberOfGuild: null != F,
-            invite: M
+            invite: M,
+            inviterId: n.id
           }))
       }
   }
